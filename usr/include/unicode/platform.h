@@ -1,7 +1,7 @@
 /*
 ******************************************************************************
 *
-*   Copyright (C) 1997-2010, International Business Machines
+*   Copyright (C) 1997-2011, International Business Machines
 *   Corporation and others.  All Rights Reserved.
 *
 ******************************************************************************
@@ -39,6 +39,10 @@
  */
 #ifndef UCLN_NO_AUTO_CLEANUP
 #define UCLN_NO_AUTO_CLEANUP 1
+#endif
+
+#if 0
+#define CYGWINMSVC
 #endif
 
 /* Need platform.h when using CYGWINMSVC to get definitions above. Ignore everything else. */
@@ -149,11 +153,6 @@
 /* 1 or 0 to enable or disable threads.  If undefined, default is: enable threads. */
 #ifndef ICU_USE_THREADS 
 #define ICU_USE_THREADS 1
-#endif
-
-/* On strong memory model CPUs (e.g. x86 CPUs), we use a safe & quick double check lock. */
-#if defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
-#define UMTX_STRONG_MEMORY_MODEL 1
 #endif
 
 #ifndef U_DEBUG
@@ -298,7 +297,9 @@
 /** @{ Symbol import-export control                                              */
 /*===========================================================================*/
 
-#if 1
+#ifdef U_STATIC_IMPLEMENTATION
+#define U_EXPORT
+#elif 1
 #define U_EXPORT __attribute__((visibility("default")))
 #elif (defined(__SUNPRO_CC) && __SUNPRO_CC >= 0x550) \
    || (defined(__SUNPRO_C) && __SUNPRO_C >= 0x550) 
@@ -392,7 +393,7 @@
 #if U_HAVE_LIB_SUFFIX
 # ifndef U_ICU_ENTRY_POINT_RENAME
 /* Renaming pattern:    u_strcpy_41_suffix */
-#  define U_ICU_ENTRY_POINT_RENAME(x)    x ## _ ## 46 ## 
+#  define U_ICU_ENTRY_POINT_RENAME(x)    x ## _ ## 48 ## 
 #  define U_DEF_ICUDATA_ENTRY_POINT(major, minor) icudt####major##minor##_dat
 
 # endif

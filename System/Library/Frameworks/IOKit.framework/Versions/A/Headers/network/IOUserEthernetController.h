@@ -34,6 +34,21 @@ typedef struct __IOEthernetController * IOEthernetControllerRef;
 typedef void (*IOEthernetControllerCallback)(IOEthernetControllerRef controller, void * refcon);
 
 extern CFTypeRef kIOEthernetHardwareAddress;
+extern CFTypeRef kIOUserEthernetInterfaceRole;
+
+/*!
+ * @const kIOUserEthernetInterfaceMergeProperties
+ * @abstract
+ * The key for a dictionary of properties to merge into the property table
+ * of the Ethernet interface.
+ * @discussion
+ * The properties supplied to <code>IOEthernetControllerCreate</code> may
+ * contain a dictionary stored using this key. The contents of the dictionary
+ * are merged to the property table of the IOEthernetInterface when it is
+ * initialized, before the interface object is registered and attached as
+ * a child of the Ethernet controller.
+ */
+extern CFTypeRef kIOUserEthernetInterfaceMergeProperties;
 
 /*!
 	@function   IOEthernetControllerGetTypeID

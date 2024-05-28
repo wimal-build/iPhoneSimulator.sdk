@@ -1,0 +1,48 @@
+<xmlui>
+    <script>
+        <![CDATA[
+function validateForm() {
+
+    var selection = xmlui.getFieldValue('security-question');
+    
+    if (!selection) {
+        xmlui.alert("No question selected!");
+        return false;
+    } else if (selection == 'custom-question') {
+        var customQuestion = xmlui.getFieldValue('custom-question');
+        if (!customQuestion || customQuestion.length < 6) {
+            xmlui.alert("Custom Question too short!");
+            return false;
+        }
+    }
+
+    var answer = xmlui.getFieldValue('security-answer');
+    if (!answer || answer.length < 6) {
+        xmlui.alert("Answer too short!");
+        return false;
+    }
+
+    return true;
+}
+        ]]>
+    </script>
+
+    <clientInfo customSecurityQuestionLabel="Custom" customSecurityQuestionPlaceholder="Enter a question" customSecurityQuestionValueID="custom-question"/>
+    <page>
+        <navigationBar title="Security Info">
+            <linkBarItem position="right" label="Next" url="t_c-simple.xml" httpMethod="POST" validationFunction="validateForm"/>
+        </navigationBar>
+        <tableView>
+            <section footer="With your birthday, a secret question is used to retrieve your password.">
+                <selectRow id="security-question" label="Question" leftAlignDetailLabel="true" placeholder="Choose a question...">
+                    <option label="First celebrity met?" value="celebrity"/>
+                    <option label="First best friend?" value="bestFriend"/>
+                    <option label="Favorite teacher?" value="teacher"/>
+                    <option label="First car?" value="car"/>
+                    <option label="Custom question..." value="custom-question"/>
+                </selectRow>
+                <editableTextRow label="Answer" placeholder="Enter an answer" id="security-answer"/>
+            </section>
+        </tableView>
+    </page>
+</xmlui>

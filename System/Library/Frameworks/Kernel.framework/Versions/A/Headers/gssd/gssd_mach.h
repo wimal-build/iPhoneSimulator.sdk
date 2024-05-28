@@ -29,7 +29,7 @@ typedef function_table_entry   *function_table_t;
 #endif /* AUTOTEST */
 
 #ifndef	gssd_mach_MSG_COUNT
-#define	gssd_mach_MSG_COUNT	5
+#define	gssd_mach_MSG_COUNT	7
 #endif	/* gssd_mach_MSG_COUNT */
 
 #include <mach/std_types.h>
@@ -179,6 +179,40 @@ kern_return_t mach_gss_accept_sec_context_v2
 	uint32_t *minor_stat
 );
 
+/* Routine mach_gss_hold_cred */
+#ifdef	mig_external
+mig_external
+#else
+extern
+#endif	/* mig_external */
+kern_return_t mach_gss_hold_cred
+(
+	mach_port_t server,
+	gssd_mechtype mech,
+	gssd_nametype nt,
+	gssd_byte_buffer princ,
+	mach_msg_type_number_t princCnt,
+	uint32_t *major_stat,
+	uint32_t *minor_stat
+);
+
+/* Routine mach_gss_unhold_cred */
+#ifdef	mig_external
+mig_external
+#else
+extern
+#endif	/* mig_external */
+kern_return_t mach_gss_unhold_cred
+(
+	mach_port_t server,
+	gssd_mechtype mech,
+	gssd_nametype nt,
+	gssd_byte_buffer princ,
+	mach_msg_type_number_t princCnt,
+	uint32_t *major_stat,
+	uint32_t *minor_stat
+);
+
 __END_DECLS
 
 /********************** Caution **************************/
@@ -316,6 +350,42 @@ __END_DECLS
 #ifdef  __MigPackStructs
 #pragma pack()
 #endif
+
+#ifdef  __MigPackStructs
+#pragma pack(4)
+#endif
+	typedef struct {
+		mach_msg_header_t Head;
+		/* start of the kernel processed data */
+		mach_msg_body_t msgh_body;
+		mach_msg_ool_descriptor_t princ;
+		/* end of the kernel processed data */
+		NDR_record_t NDR;
+		gssd_mechtype mech;
+		gssd_nametype nt;
+		mach_msg_type_number_t princCnt;
+	} __Request__mach_gss_hold_cred_t;
+#ifdef  __MigPackStructs
+#pragma pack()
+#endif
+
+#ifdef  __MigPackStructs
+#pragma pack(4)
+#endif
+	typedef struct {
+		mach_msg_header_t Head;
+		/* start of the kernel processed data */
+		mach_msg_body_t msgh_body;
+		mach_msg_ool_descriptor_t princ;
+		/* end of the kernel processed data */
+		NDR_record_t NDR;
+		gssd_mechtype mech;
+		gssd_nametype nt;
+		mach_msg_type_number_t princCnt;
+	} __Request__mach_gss_unhold_cred_t;
+#ifdef  __MigPackStructs
+#pragma pack()
+#endif
 #endif /* !__Request__gssd_mach_subsystem__defined */
 
 /* union of all requests */
@@ -328,6 +398,8 @@ union __RequestUnion__gssd_mach_subsystem {
 	__Request__mach_gss_log_error_t Request_mach_gss_log_error;
 	__Request__mach_gss_init_sec_context_v2_t Request_mach_gss_init_sec_context_v2;
 	__Request__mach_gss_accept_sec_context_v2_t Request_mach_gss_accept_sec_context_v2;
+	__Request__mach_gss_hold_cred_t Request_mach_gss_hold_cred;
+	__Request__mach_gss_unhold_cred_t Request_mach_gss_unhold_cred;
 };
 #endif /* !__RequestUnion__gssd_mach_subsystem__defined */
 /* typedefs for all replies */
@@ -449,6 +521,34 @@ union __RequestUnion__gssd_mach_subsystem {
 #ifdef  __MigPackStructs
 #pragma pack()
 #endif
+
+#ifdef  __MigPackStructs
+#pragma pack(4)
+#endif
+	typedef struct {
+		mach_msg_header_t Head;
+		NDR_record_t NDR;
+		kern_return_t RetCode;
+		uint32_t major_stat;
+		uint32_t minor_stat;
+	} __Reply__mach_gss_hold_cred_t;
+#ifdef  __MigPackStructs
+#pragma pack()
+#endif
+
+#ifdef  __MigPackStructs
+#pragma pack(4)
+#endif
+	typedef struct {
+		mach_msg_header_t Head;
+		NDR_record_t NDR;
+		kern_return_t RetCode;
+		uint32_t major_stat;
+		uint32_t minor_stat;
+	} __Reply__mach_gss_unhold_cred_t;
+#ifdef  __MigPackStructs
+#pragma pack()
+#endif
 #endif /* !__Reply__gssd_mach_subsystem__defined */
 
 /* union of all replies */
@@ -461,6 +561,8 @@ union __ReplyUnion__gssd_mach_subsystem {
 	__Reply__mach_gss_log_error_t Reply_mach_gss_log_error;
 	__Reply__mach_gss_init_sec_context_v2_t Reply_mach_gss_init_sec_context_v2;
 	__Reply__mach_gss_accept_sec_context_v2_t Reply_mach_gss_accept_sec_context_v2;
+	__Reply__mach_gss_hold_cred_t Reply_mach_gss_hold_cred;
+	__Reply__mach_gss_unhold_cred_t Reply_mach_gss_unhold_cred;
 };
 #endif /* !__RequestUnion__gssd_mach_subsystem__defined */
 
@@ -470,7 +572,9 @@ union __ReplyUnion__gssd_mach_subsystem {
     { "mach_gss_accept_sec_context", 1000 },\
     { "mach_gss_log_error", 1001 },\
     { "mach_gss_init_sec_context_v2", 1002 },\
-    { "mach_gss_accept_sec_context_v2", 1003 }
+    { "mach_gss_accept_sec_context_v2", 1003 },\
+    { "mach_gss_hold_cred", 1004 },\
+    { "mach_gss_unhold_cred", 1005 }
 #endif
 
 #ifdef __AfterMigUserHeader

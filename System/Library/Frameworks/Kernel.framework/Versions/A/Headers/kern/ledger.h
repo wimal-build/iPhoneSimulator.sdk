@@ -32,16 +32,16 @@
 #ifndef _KERN_LEDGER_H_
 #define _KERN_LEDGER_H_
 
-#ifdef CONFIG_LEDGER_SUPPORT
+#if CONFIG_LEDGER_SUPPORT
 #define	LEDGER_PARAMETER
 #else
 #define	LEDGER_PARAMETER __unused
 #endif
 
-#define	LEDGER_UNBIND		0
-#define	LEDGER_LIMIT		1
-#define	LEDGER_INFO		2
-#define	LEDGER_ENTRY_INFO	3
+#define	LEDGER_INFO		0
+#define	LEDGER_ENTRY_INFO	1
+#define	LEDGER_TEMPLATE_INFO	2
+#define	LEDGER_LIMIT		3
 
 #define	LEDGER_NAME_MAX	32
 
@@ -51,9 +51,13 @@ struct ledger_info {
 	int64_t	li_entries;
 };
 
+struct ledger_template_info {
+	char		lti_name[LEDGER_NAME_MAX];
+	char		lti_group[LEDGER_NAME_MAX];
+	char		lti_units[LEDGER_NAME_MAX];
+};
+
 struct ledger_entry_info {
-	char		lei_name[LEDGER_NAME_MAX];
-	uint64_t	lei_type;
         int64_t		lei_balance;
         int64_t		lei_credit;
         int64_t		lei_debit;
@@ -62,8 +66,11 @@ struct ledger_entry_info {
 	uint64_t	lei_last_refill;	/* Time since last refill */
 };
 
-#define	ENTRY_TYPE_DECLINING	0x0001	/* tracks a declining resource */
-#define	ENTRY_TYPE_DOUBLE	0x0002	/* tracks a fluctuating resource */
-#define	ENTRY_TYPE_MASK		0x000f
+struct ledger_limit_args {
+	char		lla_name[LEDGER_NAME_MAX];
+        uint64_t	lla_limit;
+        uint64_t	lla_refill_period;
+};
+
 
 #endif	/* _KERN_LEDGER_H_ */

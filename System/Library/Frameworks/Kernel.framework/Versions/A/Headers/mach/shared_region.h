@@ -107,6 +107,7 @@ struct shared_file_mapping_np {
 };
 #define VM_PROT_COW  0x8  /* must not interfere with normal prot assignments */
 #define VM_PROT_ZF  0x10  /* must not interfere with normal prot assignments */
+#define VM_PROT_SLIDE  0x20  /* must not interfere with normal prot assignments */
 
 
 #endif /* _MACH_SHARED_REGION_H_ */

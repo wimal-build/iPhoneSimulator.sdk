@@ -13,13 +13,28 @@
 	<key>CFBundleName</key>
 	<string>Japanese-English</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>DCSBuildToolVersion</key>
 	<integer>2</integer>
 	<key>DCSDictionaryCSS</key>
 	<string>DefaultStyle.css</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Copyright 2006 Shogakukan Inc.</string>
+	<string>プログレッシブ英和中辞典／和英中辞典 Copyright 2010 Shogakukan Inc.</string>
+	<key>DCSDictionaryLanguages</key>
+	<array>
+		<dict>
+			<key>DCSDictionaryDescriptionLanguage</key>
+			<string>ja</string>
+			<key>DCSDictionaryIndexLanguage</key>
+			<string>ja</string>
+		</dict>
+		<dict>
+			<key>DCSDictionaryDescriptionLanguage</key>
+			<string>ja</string>
+			<key>DCSDictionaryIndexLanguage</key>
+			<string>en</string>
+		</dict>
+	</array>
 	<key>DCSDictionaryManufacturerName</key>
 	<string>Apple Inc.</string>
 	<key>DCSDictionaryPrivateFonts</key>

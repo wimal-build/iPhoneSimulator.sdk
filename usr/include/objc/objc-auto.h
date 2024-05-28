@@ -71,7 +71,6 @@ enum {
     OBJC_CLEAR_RESIDENT_STACK = (1 << 0)
 };
 
-
 #ifndef OBJC_NO_GC
 
 
@@ -102,21 +101,21 @@ OBJC_EXPORT void objc_setCollectionRatio(size_t ratio)
 
 /* Atomic update, with write barrier. */
 OBJC_EXPORT BOOL objc_atomicCompareAndSwapPtr(id predicate, id replacement, volatile id *objectLocation) 
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA) OBJC_ARC_UNAVAILABLE;
 /* "Barrier" version also includes memory barrier. */
 OBJC_EXPORT BOOL objc_atomicCompareAndSwapPtrBarrier(id predicate, id replacement, volatile id *objectLocation) 
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA) OBJC_ARC_UNAVAILABLE;
 
 // atomic update of a global variable
 OBJC_EXPORT BOOL objc_atomicCompareAndSwapGlobal(id predicate, id replacement, volatile id *objectLocation)
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA) OBJC_ARC_UNAVAILABLE;
 OBJC_EXPORT BOOL objc_atomicCompareAndSwapGlobalBarrier(id predicate, id replacement, volatile id *objectLocation)
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA) OBJC_ARC_UNAVAILABLE;
 // atomic update of an instance variable
 OBJC_EXPORT BOOL objc_atomicCompareAndSwapInstanceVariable(id predicate, id replacement, volatile id *objectLocation)
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA) OBJC_ARC_UNAVAILABLE;
 OBJC_EXPORT BOOL objc_atomicCompareAndSwapInstanceVariableBarrier(id predicate, id replacement, volatile id *objectLocation)
-    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_NA) OBJC_ARC_UNAVAILABLE;
 
 
 // 
@@ -138,9 +137,6 @@ OBJC_EXPORT id objc_read_weak(id *location)
     __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_NA);
 OBJC_EXPORT id objc_assign_weak(id value, id *location)
     __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_NA);
-
-OBJC_EXPORT id objc_read_strong(id *source)
-    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 
 
 //
@@ -218,6 +214,12 @@ static OBJC_INLINE void objc_setCollectionThreshold(size_t threshold __unused) {
 static OBJC_INLINE void objc_setCollectionRatio(size_t ratio __unused) { }
 static OBJC_INLINE void objc_startCollectorThread(void) { }
 
+#if __has_feature(objc_arr)
+
+/* Covers for GC memory operations are unavailable in ARC */
+
+#else
+
 #if TARGET_OS_WIN32
 static OBJC_INLINE BOOL objc_atomicCompareAndSwapPtr(id predicate, id replacement, volatile id *objectLocation) 
     { void *original = InterlockedCompareExchangePointer((void * volatile *)objectLocation, (void *)replacement, (void *)predicate); return (original == predicate); }
@@ -254,17 +256,17 @@ static OBJC_INLINE id objc_assign_global(id val, id *dest)
 static OBJC_INLINE id objc_assign_ivar(id val, id dest, ptrdiff_t offset) 
     { return (*(id*)((char *)dest+offset) = val); }
 
-static OBJC_INLINE void *objc_memmove_collectable(void *dst, const void *src, size_t size) 
-    { return memmove(dst, src, size); }
-
 static OBJC_INLINE id objc_read_weak(id *location) 
     { return *location; }
 
 static OBJC_INLINE id objc_assign_weak(id value, id *location) 
     { return (*location = value); }
 
-static OBJC_INLINE id objc_read_strong(id *location) 
-    { return *location; }
+/* MRC */
+#endif
+
+static OBJC_INLINE void *objc_memmove_collectable(void *dst, const void *src, size_t size) 
+    { return memmove(dst, src, size); }
 
 static OBJC_INLINE void objc_finalizeOnMainThread(Class cls __unused) { }
 static OBJC_INLINE BOOL objc_is_finalized(void *ptr __unused) { return NO; }
@@ -275,10 +277,14 @@ static OBJC_INLINE void objc_set_collection_threshold(size_t threshold __unused)
 static OBJC_INLINE void objc_set_collection_ratio(size_t ratio __unused) { } 
 static OBJC_INLINE void objc_start_collector_thread(void) { }
 
+#if __has_feature(objc_arc)
+extern id objc_allocate_object(Class cls, int extra) UNAVAILABLE_ATTRIBUTE;
+#else
 OBJC_EXPORT id class_createInstance(Class cls, size_t extraBytes)
     __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
 static OBJC_INLINE id objc_allocate_object(Class cls, int extra) 
     { return class_createInstance(cls, extra); }
+#endif
 
 static OBJC_INLINE void objc_registerThreadWithCollector() { }
 static OBJC_INLINE void objc_unregisterThreadWithCollector() { }

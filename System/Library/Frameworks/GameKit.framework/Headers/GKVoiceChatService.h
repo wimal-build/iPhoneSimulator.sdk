@@ -148,5 +148,5 @@ GK_EXTERN_CLASS @interface GKVoiceChatService : NSObject {
 
 @end
 
-GK_EXTERN	NSString *  const GKVoiceChatServiceErrorDomain;
+GK_EXTERN_WEAK	NSString *  const GKVoiceChatServiceErrorDomain;
 

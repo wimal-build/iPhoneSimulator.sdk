@@ -2,7 +2,7 @@
 //  UITabBarController.h
 //  UIKit
 //
-//  Copyright 2007-2010 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2011, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,8 +31,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITabBarController : UIViewController <UIT
     
     UIView                 *_containerView;
     UIView                 *_viewControllerTransitionView;
-    
-    NSMutableArray         *_viewControllers;
+
     id                      _tabBarItemsToViewControllers;
     UIViewController       *_selectedViewController;
 

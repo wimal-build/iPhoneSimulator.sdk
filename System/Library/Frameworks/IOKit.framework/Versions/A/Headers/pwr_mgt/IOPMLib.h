@@ -117,12 +117,12 @@ io_connect_t IORegisterApp( void * refcon,
                             io_object_t * notifier )
                             AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER;
 
-/*! @function IORegisterForSystemPower
-    @abstract Connects the caller to the Root Power Domain IOService for the purpose of receiving sleep & wake notifications for the system.
-				Does not provide system shutdown and restart notifications.
-    @discussion Provides sleep/wake notifications to applications. Requires that applications acknowledge
-        some, but not all notifications. Register for sleep/wake notifications will deliver these messages
-        over the sleep/wake lifecycle:
+/*! @function       IORegisterForSystemPower
+    @abstract       Connects the caller to the Root Power Domain IOService for the purpose of receiving sleep & wake notifications for the system.
+				    Does not provide system shutdown and restart notifications.
+    @discussion     Provides sleep/wake notifications to applications. Requires that applications acknowledge
+                    some, but not all notifications. Register for sleep/wake notifications will deliver these messages
+                    over the sleep/wake lifecycle:
 
             - kIOMessageSystemWillSleep is delivered at the point the system is initiating a 
                 non-abortable sleep.
@@ -130,64 +130,72 @@ io_connect_t IORegisterApp( void * refcon,
                 If a caller does not acknowledge the sleep notification, the sleep will continue anyway after
                 a 30 second timeout (resulting in bad user experience). 
                 Delivered before any hardware is powered off.
+
             - kIOMessageSystemWillPowerOn is delivered at early wakeup time, before most hardware has been
                 powered on. Be aware that any attempts to access disk, network, the display, etc. may result
                 in errors or blocking your process until those resources become available.
                 Caller must NOT acknowledge kIOMessageSystemWillPowerOn; the caller must simply return from its handler.
+            
             - kIOMessageSystemHasPoweredOn is delivered at wakeup completion time, after all device drivers and
                 hardware have handled the wakeup event. Expect this event 1-5 or more seconds after initiating
                 system wakeup.
                 Caller must NOT acknowledge kIOMessageSystemHasPoweredOn; the caller must simply return from its handler.
+
             - kIOMessageCanSystemSleep indicates the system is pondering an idle sleep, but gives apps the
                 chance to veto that sleep attempt. 
                 Caller must acknowledge kIOMessageCanSystemSleep by calling @link IOAllowPowerChange @/link
                 or @link IOCancelPowerChange @/link. Calling IOAllowPowerChange will not veto the sleep; any
                 app that calls IOCancelPowerChange will veto the idle sleep. A kIOMessageCanSystemSleep 
                 notification will be followed up to 30 seconds later by a kIOMessageSystemWillSleep message.
-                or a kIOMessageSystemWillNotPowerOn message.
-            - kIOMessageSystemWillNotPowerOn is delivered when some app client has vetoed an idle sleep
-                request. kIOMessageSystemWillNotPowerOn may follow a kIOMessageCanSystemSleep notification,
+                or a kIOMessageSystemWillNotSleep message.
+
+            - kIOMessageSystemWillNotSleep is delivered when some app client has vetoed an idle sleep
+                request. kIOMessageSystemWillNotSleep may follow a kIOMessageCanSystemSleep notification,
                 but will not otherwise be sent.
-                Caller must NOT acknowledge kIOMessageSystemWiillNotPowerOn; the caller must simply return from its handler.
+                Caller must NOT acknowledge kIOMessageSystemWillNotSleep; the caller must simply return from its handler.
                 
         To deregister for sleep/wake notifications, the caller must make two calls, in this order:
             - Call IODeregisterForSystemPower with the 'notifier' argument returned here.
             - Then call IONotificationPortDestroy passing the 'thePortRef' argument
                 returned here.
   
-  @param refcon Caller may provide data to receive s an argument to 'callback' on power state changes.
-    @param thePortRef On return, thePortRef is a pointer to a port on which the caller will receive power state change notifications. The port is allocated by this function and must be later released by the caller (after IODeregisterForSystemPower). 
-    @param callback  A c-function which is called during the notification.
-    @param notifier  On success, returns a pointer to a unique notifier which caller must keep and pass to a subsequent call to IODeregisterForSystemPower.
-    @result Returns a io_connect_t session for the IOPMrootDomain or MACH_PORT_NULL if request failed. Caller must close return value via IOServiceClose() after calling IODeregisterForSystemPower on the notifier argument.
+    @param refcon       Caller may provide data to receive s an argument to 'callback' on power state changes.
+    @param thePortRef   On return, thePortRef is a pointer to an IONotificationPortRef, which will deliver the power notifications. 
+                        The port is allocated by this function and must be later released by the caller (after calling <code>@link IODeregisterForSystemPower @/link</code>). 
+                        The caller should also enable IONotificationPortRef by calling <code>@link IONotificationPortGetRunLoopSource @/link</code>, or 
+                        <code>@link IONotificationPortGetMachPort @/link</code>, or <code>@link IONotificationPortSetDispatchQueue @/link</code>.
+    @param callback     A c-function which is called during the notification.
+    @param notifier     On success, returns a pointer to a unique notifier which caller must keep and pass to a subsequent call to IODeregisterForSystemPower.
+    @result             Returns a io_connect_t session for the IOPMrootDomain or MACH_PORT_NULL if request failed. 
+                        Caller must close return value via IOServiceClose() after calling IODeregisterForSystemPower on the notifier argument.
  */
 io_connect_t IORegisterForSystemPower ( void * refcon,
                                         IONotificationPortRef * thePortRef,
                                         IOServiceInterestCallback callback,
                                         io_object_t * notifier )
                                         AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER;                                        
-/*! @function IODeregisterApp
-    @abstract Disconnects the caller from an IOService after receiving power state change notifications from the IOService. (Caller must also release IORegisterApp's return io_connect_t and returned IONotificationPortRef for complete clean-up).
-    @param notifier  An object from IORegisterApp.
-    @result Returns kIOReturnSuccess or an error condition if request failed.
+/*! @function           IODeregisterApp
+    @abstract           Disconnects the caller from an IOService after receiving power state change notifications from the IOService. (Caller must also release IORegisterApp's return io_connect_t and returned IONotificationPortRef for complete clean-up).
+    @param notifier     An object from IORegisterApp.
+    @result             Returns kIOReturnSuccess or an error condition if request failed.
  */
 IOReturn IODeregisterApp ( io_object_t * notifier ) AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER;
 
-/*! @function IODeregisterForSystemPower
-    @abstract Disconnects the caller from the Root Power Domain IOService after receiving system power state change notifications. (Caller must also destroy the IONotificationPortRef returned from IORegisterForSystemPower.)
-    @param notifier  The object returned from IORegisterForSystemPower.
-    @result Returns kIOReturnSuccess or an error condition if request failed.
+/*! @function           IODeregisterForSystemPower
+    @abstract           Disconnects the caller from the Root Power Domain IOService after receiving system power state change notifications. (Caller must also destroy the IONotificationPortRef returned from IORegisterForSystemPower.)
+    @param notifier     The object returned from IORegisterForSystemPower.
+    @result             Returns kIOReturnSuccess or an error condition if request failed.
 */
 IOReturn IODeregisterForSystemPower ( io_object_t * notifier )
                             AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER;
                             
-/*! @function IOAllowPowerChange
-    @abstract The caller acknowledges notification of a power state change on a device it has registered for notifications for via IORegisterForSystemPower or IORegisterApp.
-    @discussion Must be used when handling kIOMessageCanSystemSleep and kIOMessageSystemWillSleep messages from IOPMrootDomain system power. The caller should not call IOAllowPowerChange in response to any messages 
-    except for these two.
-    @param kernelPort  Port used to communicate to the kernel,  from IORegisterApp or IORegisterForSystemPower.
+/*! @function           IOAllowPowerChange
+    @abstract           The caller acknowledges notification of a power state change on a device it has registered for notifications for via IORegisterForSystemPower or IORegisterApp.
+    @discussion         Must be used when handling kIOMessageCanSystemSleep and kIOMessageSystemWillSleep messages from IOPMrootDomain system power. The caller should not call IOAllowPowerChange in response to any messages 
+                        except for these two.
+    @param kernelPort   Port used to communicate to the kernel,  from IORegisterApp or IORegisterForSystemPower.
     @param notificationID A copy of the notification ID which came as part of the power state change notification being acknowledged.
-    @result Returns kIOReturnSuccess or an error condition if request failed.
+    @result             Returns kIOReturnSuccess or an error condition if request failed.
 */
 IOReturn IOAllowPowerChange ( io_connect_t kernelPort, long notificationID )
                             AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER;
@@ -440,26 +448,25 @@ CFArrayRef IOPMCopyScheduledPowerEvents(void);
 /*!
  * @define          kIOPMAssertionTypeKey
  *
- * @deprecated      Not for use in dictionary arguments to <code>@link IOPMAssertionCreateWithProperties@/link</code>
- *                  or <code>@link IOPMAssertionSetProperties @/link</code>
+ * @abstract        The CFDictionary key for assertion type in an assertion info dictionary.
  *
- * @abstract        The CFDictionary key for assertion type in a deprecated assertion info dictionary; this key will only
- *                  be present for assertions created with the deprecated <code>IOPMAssertionCreate</code> 
- *                  and <code>IOPMAssertionCreateWithName</code>. There's no reason to use this key in new code.
- *                  API.
+ * @discussion      The value for this key will be a CFStringRef, with the value of the assertion
+ *                  type specified at creation time.
+ *                  Note that OS X may substitute a support assertion type string if the caller
+ *                  specifies a deprecated assertion type; in that case the value for this key could
+ *                  differ from the caller-provided assertion type.
  */
 #define kIOPMAssertionTypeKey                   CFSTR("AssertType")
 
 /*!
  * @define          kIOPMAssertionLevelKey
  *
- * @deprecated      Not for use in dictionary arguments to <code>@link IOPMAssertionCreateWithProperties@/link</code>
- *                  or <code>@link IOPMAssertionSetProperties @/link</code>
+ * @abstract        The CFDictionary key for assertion level in an assertion info dictionary.
  *
- * @abstract        The CFDictionary key for assertion level in a deprecated assertion info dictionary; this key will only
- *                  be present for assertions created with the deprecated <code>IOPMAssertionCreate</code> 
- *                  and <code>IOPMAssertionCreateWithName</code>. There's no reason to use this key in new code.
- *                  API.
+ * @discussion      The value for this key will be a CFNumber, kCFNumberIntType with value
+ *                  <code>kIOPMAssertionLevelOff</code> or <code>kIOPMAssertionLevelOn</code>.
+ *                  The level reflects the assertion's level set at creation, or adjusted via
+ *                  <code>@link IOPMAssertionSetLevel@/link</code>
  */
 #define kIOPMAssertionLevelKey                  CFSTR("AssertLevel")
 
@@ -620,46 +627,43 @@ enum {
  */    
 
     
-/*! @function   IOPMAssertionCreateWithDescription
+/*! @function           IOPMAssertionCreateWithDescription
  *
- * @description Creates an IOPMAssertion. This is the preferred API to call to create an assertion. 
- *      It allows the caller to specify the Name, Details, and HumanReadableReason at creation time.
+ * @description         Creates an IOPMAssertion. This is the preferred API to call to create an assertion.
+ *                      It allows the caller to specify the Name, Details, and HumanReadableReason at creation time.
+ *                      There are other keys that can further describe an assertion, but most developers don't need
+ *                      to use them. Use <code>@link IOPMAssertionSetProperties @/link</code> or 
+ *                      <code>@link IOPMAssertionCreateWithProperties @/link</code> if you need to specify properties
+ *                      that aren't avilable here.
  * 
- * @param   AssertionType
- *	An assertion type constant. 
- *	Caller must specify this argument.
+ * @param AssertionType An assertion type constant. 
+ *	                    Caller must specify this argument.
  *
- * @param   Name
- *	A CFString value to correspond to key <code>@link kIOPMAssertionNameKey@/link</code>.
- *	Caller must specify this argument.
+ * @param Name          A CFString value to correspond to key <code>@link kIOPMAssertionNameKey@/link</code>.
+ *	                    Caller must specify this argument.
  *
- * @param   Details
- *	A CFString value to correspond to key <code>@link kIOPMAssertionDetailsKey@/link</code>.
- *	Caller my pass NULL, but it helps power users and administrators identify the
- *          reasons for this assertion.
+ * @param Details 	    A CFString value to correspond to key <code>@link kIOPMAssertionDetailsKey@/link</code>.
+ *	                    Caller my pass NULL, but it helps power users and administrators identify the
+ *                      reasons for this assertion.
  *
- * @param   HumanReadableReason
- *	A CFString value to correspond to key <code>@link kIOPMAssertionHumanReadableReasonKey@/link</code>.
- *	Caller may pass NULL, but if it's specified OS X may display it to users 
- *          to describe the active assertions on their sysstem.
+ * @param HumanReadableReason
+ *	                    A CFString value to correspond to key <code>@link kIOPMAssertionHumanReadableReasonKey@/link</code>.
+ *	                    Caller may pass NULL, but if it's specified OS X may display it to users 
+ *                      to describe the active assertions on their sysstem.
  *
- * @param   LocalizationBundlePath
- *	A CFString value to correspond to key <code>@link kIOPMAssertionLocalizationBundlePathKey@/link</code>.
- *          This bundle path should include a localization for the string <code>HumanReadableReason</code>
- *          Caller may pass NULL, but this argument is required if caller specifies <code>HumanReadableReason</code> 
+ * @param LocalizationBundlePath
+ *	                    A CFString value to correspond to key <code>@link kIOPMAssertionLocalizationBundlePathKey@/link</code>.
+ *                      This bundle path should include a localization for the string <code>HumanReadableReason</code>
+ *                      Caller may pass NULL, but this argument is required if caller specifies <code>HumanReadableReason</code> 
  *
- * @param   Timeout
- *	Specifies a timeout for this assertion. Pass 0 for no timeout.
+ * @param Timeout       Specifies a timeout for this assertion. Pass 0 for no timeout.
  *
- * @param   TimeoutAction
- *      Specifies a timeout action. Caller my pass NULL. If a timeout is specified but a TimeoutAction is not, 
- *      the default timeout action is <code>kIOPMAssertionTimeoutActionTurnOff</code>
+ * @param TimeoutAction Specifies a timeout action. Caller my pass NULL. If a timeout is specified but a TimeoutAction is not, 
+ *                      the default timeout action is <code>kIOPMAssertionTimeoutActionTurnOff</code>
  *
- * @param AssertionID           
- *      (Output) On successful return, contains a unique reference to a PM assertion.
+ * @param AssertionID   (Output) On successful return, contains a unique reference to a PM assertion.
  *
- * @result  
- *		kIOReturnSuccess, or another IOKit return code on error.
+ * @result              kIOReturnSuccess, or another IOKit return code on error.
  */
 IOReturn	IOPMAssertionCreateWithDescription(
                                            CFStringRef  AssertionType, 
@@ -677,7 +681,7 @@ __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
 /*!
  * @function                    IOPMAssertionCreateWithProperties
  *
- * @abstract                    The preferred way to create a PM Assertion.
+ * @abstract                    Creates an IOPMAssertion with more flexibility than <code>@link IOPMAssertionCreateWithDescription @/link</code>.
  * @param AssertionType         The CFString assertion type to request from the PM system.
  * @param AssertionLevel        Pass <code>@link kIOPMAssertionLevelOn@/link</code> or <code>@link kIOPMAssertionLevelOff@/link</code>.
  * @param AssertionProperties   Caller must describe the assertion to be created, and the caller itself.
@@ -961,6 +965,53 @@ IOSystemLoadAdvisoryLevel IOGetSystemLoadAdvisory( void );
  */
 CFDictionaryRef IOCopySystemLoadAdvisoryDetailed(void);
 
+
+/*!
+ * @functiongroup CPU Power & Thermal
+ */
+/*! 
+ * @define      kIOPMCPUPowerNotificationKey
+ * @abstract    Key to register for BSD style notifications on CPU power or thermal change.
+ */
+
+#define kIOPMCPUPowerNotificationKey            "com.apple.system.power.CPU"
+/*! 
+ * @define      kIOPMThermalWarningNotificationKey
+ * @abstract    Key to register for BSD style notifications on system thermal warnings.
+ */
+#define kIOPMThermalWarningNotificationKey      "com.apple.system.power.thermal_warning"
+    
+/*!
+ * @function    IOPMCopyCPUPowerStatus
+ * @abstract    Copy status of all current CPU power levels.
+ * @discussion  The returned dictionary may define some of these keys, 
+ *              as defined in IOPM.h:
+ *                  - kIOPMCPUPowerLimitProcessorSpeedKey
+ *                  - kIOPMCPUPowerLimitProcessorCountKey
+ *                  - kIOPMCPUPowerLimitSchedulerTimeKey        
+ * @param       cpuPowerStatus Upon success, a pointer to a dictionary defining CPU power; 
+ *              otherwise NULL. Pointer will be populated with a newly created dictionary 
+ *              upon successful return. Caller must release dictionary.
+ * @result      kIOReturnSuccess, or other error report. Returns kIOReturnNotFound if 
+ *              CPU PowerStatus has not been published.
+ */
+IOReturn IOPMCopyCPUPowerStatus(CFDictionaryRef *cpuPowerStatus);
+    
+/*! 
+ * @function    IOPMGetThermalWarningLevel
+ * @abstract    Get thermal warning level of the system.
+ * @result      An integer pointer declaring the power warning level of the system. 
+ *              The value of the integer is one of (defined in IOPM.h):
+ *                  kIOPMThermalWarningLevelNormal
+ *                  kIOPMThermalWarningLevelDanger
+ *                  kIOPMThermalWarningLevelCrisis
+ *              Upon success the thermal level value will be found at the 
+ *              pointer argument.
+ * @result      kIOReturnSuccess, or other error report. Returns kIOReturnNotFound if 
+ *              thermal warning level has not been published.
+ */
+IOReturn IOPMGetThermalWarningLevel(uint32_t *thermalLevel);
+    
 
 
 #ifdef __cplusplus

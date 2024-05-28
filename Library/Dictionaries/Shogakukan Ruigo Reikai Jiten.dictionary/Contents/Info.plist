@@ -13,15 +13,24 @@
 	<key>CFBundleName</key>
 	<string>Japanese Synonyms</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>DCSBuildToolVersion</key>
 	<integer>2</integer>
 	<key>DCSDictionaryCSS</key>
 	<string>DefaultStyle.css</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Copyright 2006 Shogakukan Inc.</string>
+	<string>使い方の分かる類語例解辞典 Copyright 2010 Shogakukan Inc.</string>
 	<key>DCSDictionaryFrontMatterReferenceID</key>
 	<string>RUIGO</string>
+	<key>DCSDictionaryLanguages</key>
+	<array>
+		<dict>
+			<key>DCSDictionaryDescriptionLanguage</key>
+			<string>ja</string>
+			<key>DCSDictionaryIndexLanguage</key>
+			<string>ja</string>
+		</dict>
+	</array>
 	<key>DCSDictionaryManufacturerName</key>
 	<string>Apple Inc.</string>
 	<key>DCSDictionaryPrivateFonts</key>

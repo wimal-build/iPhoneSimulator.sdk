@@ -109,7 +109,6 @@
         font-size: 18px;
         font-weight: bold;
         min-width: 90px;
-        margin-right: 10px;
         margin-bottom: 5px;
         vertical-align: bottom;
         padding-left: 12px;
@@ -329,6 +328,11 @@
                         --fontSize;
                         element.style.setProperty("font-size", fontSize + "px", "");
                     } while (element.offsetHeight > element.parentNode.offsetHeight);
+                }
+
+                // Update direction based on the user default language.
+                if (PhishingAlertController.isRTL()) {
+                    document.body.style.direction = "rtl";
                 }
             },
         };

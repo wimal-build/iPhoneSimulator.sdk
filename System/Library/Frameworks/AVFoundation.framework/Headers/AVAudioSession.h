@@ -3,7 +3,7 @@
 	
 	Framework:  AVFoundation
 	
-	Copyright 2009-2010 Apple Inc. All rights reserved.
+	Copyright 2009-2011 Apple Inc. All rights reserved.
 	
 */
 
@@ -17,12 +17,18 @@
 @class NSError, NSString;
 
 /* values for the category property */
-extern NSString *const AVAudioSessionCategoryAmbient;
-extern NSString *const AVAudioSessionCategorySoloAmbient;
-extern NSString *const AVAudioSessionCategoryPlayback;
-extern NSString *const AVAudioSessionCategoryRecord;
-extern NSString *const AVAudioSessionCategoryPlayAndRecord;
-extern NSString *const AVAudioSessionCategoryAudioProcessing;
+AVF_EXPORT NSString *const AVAudioSessionCategoryAmbient;
+AVF_EXPORT NSString *const AVAudioSessionCategorySoloAmbient;
+AVF_EXPORT NSString *const AVAudioSessionCategoryPlayback;
+AVF_EXPORT NSString *const AVAudioSessionCategoryRecord;
+AVF_EXPORT NSString *const AVAudioSessionCategoryPlayAndRecord;
+AVF_EXPORT NSString *const AVAudioSessionCategoryAudioProcessing;
+
+AVF_EXPORT NSString *const AVAudioSessionModeDefault NS_AVAILABLE_IOS(5_0);
+AVF_EXPORT NSString *const AVAudioSessionModeVoiceChat NS_AVAILABLE_IOS(5_0);
+AVF_EXPORT NSString *const AVAudioSessionModeGameChat NS_AVAILABLE_IOS(5_0);
+AVF_EXPORT NSString *const AVAudioSessionModeVideoRecording NS_AVAILABLE_IOS(5_0);
+AVF_EXPORT NSString *const AVAudioSessionModeMeasurement NS_AVAILABLE_IOS(5_0);
 
 /* flags passed to you when endInterruptionWithFlags: is called on the delegate */
 enum {
@@ -47,13 +53,15 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 
 /* set the session active or inactive */
 - (BOOL)setActive:(BOOL)beActive error:(NSError**)outError;
-- (BOOL)setActive:(BOOL)beActive withFlags:(NSInteger)flags error:(NSError**)outError NS_AVAILABLE_IPHONE(4_0);
+- (BOOL)setActive:(BOOL)beActive withFlags:(NSInteger)flags error:(NSError**)outError NS_AVAILABLE_IOS(4_0);
 
 - (BOOL)setCategory:(NSString*)theCategory error:(NSError**)outError; /* set session category */
+- (BOOL)setMode:(NSString*)theMode error:(NSError**)outError NS_AVAILABLE_IOS(5_0); /* set session mode */
 - (BOOL)setPreferredHardwareSampleRate:(double)sampleRate error:(NSError**)outError;
 - (BOOL)setPreferredIOBufferDuration:(NSTimeInterval)duration error:(NSError**)outError;
 
 @property(readonly) NSString* category; /* get session category */
+@property(readonly) NSString* mode NS_AVAILABLE_IOS(5_0); /* get session mode */
 @property(readonly) double preferredHardwareSampleRate;
 @property(readonly) NSTimeInterval preferredIOBufferDuration;
 
@@ -72,7 +80,7 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 - (void)beginInterruption; /* something has caused your audio session to be interrupted */
 
 /* the interruption is over */
-- (void)endInterruptionWithFlags:(NSUInteger)flags NS_AVAILABLE_IPHONE(4_0); /* Currently the only flag is AVAudioSessionInterruptionFlags_ShouldResume. */
+- (void)endInterruptionWithFlags:(NSUInteger)flags NS_AVAILABLE_IOS(4_0); /* Currently the only flag is AVAudioSessionInterruptionFlags_ShouldResume. */
 		
 - (void)endInterruption; /* endInterruptionWithFlags: will be called instead if implemented. */
 

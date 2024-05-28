@@ -19,7 +19,7 @@
 	The notification object is the AVCaptureSession instance that encountered a runtime error.
     The userInfo dictionary contains an NSError for the key AVCaptureSessionErrorKey.
 */
-extern NSString *const AVCaptureSessionRuntimeErrorNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionRuntimeErrorNotification NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionErrorKey
@@ -33,7 +33,7 @@ extern NSString *const AVCaptureSessionRuntimeErrorNotification NS_AVAILABLE(10_
     notification gives greater detail on the nature of the error, and in some cases
     recovery suggestions. 
 */
-extern NSString *const AVCaptureSessionErrorKey NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionErrorKey NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionDidStartRunningNotification
@@ -44,7 +44,7 @@ extern NSString *const AVCaptureSessionErrorKey NS_AVAILABLE(10_7, 4_0);
 	Clients may observe the AVCaptureSessionDidStartRunningNotification to know
     when an instance of AVCaptureSession starts running.
 */
-extern NSString *const AVCaptureSessionDidStartRunningNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionDidStartRunningNotification NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionDidStopRunningNotification
@@ -57,7 +57,7 @@ extern NSString *const AVCaptureSessionDidStartRunningNotification NS_AVAILABLE(
     may stop running automatically due to external system conditions, such as the
     device going to sleep, or being locked by a user.
 */
-extern NSString *const AVCaptureSessionDidStopRunningNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionDidStopRunningNotification NS_AVAILABLE(10_7, 4_0);
 
 #if TARGET_OS_IPHONE
 
@@ -73,7 +73,7 @@ extern NSString *const AVCaptureSessionDidStopRunningNotification NS_AVAILABLE(1
     needed hardware resources.  When appropriate, the AVCaptureSession instance
     will stop running automatically in response to an interruption.
 */
-extern NSString *const AVCaptureSessionWasInterruptedNotification NS_AVAILABLE_IPHONE(4_0);
+AVF_EXPORT NSString *const AVCaptureSessionWasInterruptedNotification NS_AVAILABLE_IOS(4_0);
 
 /*!
  @constant  AVCaptureSessionInterruptionEndedNotification
@@ -88,7 +88,7 @@ extern NSString *const AVCaptureSessionWasInterruptedNotification NS_AVAILABLE_I
     stopped in response to an interruption will automatically restart once the
     interruption ends.
 */
-extern NSString *const AVCaptureSessionInterruptionEndedNotification NS_AVAILABLE_IPHONE(4_0);
+AVF_EXPORT NSString *const AVCaptureSessionInterruptionEndedNotification NS_AVAILABLE_IOS(4_0);
 
 #endif // TARGET_OS_IPHONE
 
@@ -124,7 +124,7 @@ typedef NSInteger AVCaptureVideoOrientation;
 	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPresetPhoto
     for full resolution photo quality output.
 */
-extern NSString *const AVCaptureSessionPresetPhoto NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionPresetPhoto NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionPresetHigh
@@ -136,7 +136,7 @@ extern NSString *const AVCaptureSessionPresetPhoto NS_AVAILABLE(10_7, 4_0);
     to achieve high quality video and audio output.  AVCaptureSessionPresetHigh is the
     default sessionPreset value.
 */
-extern NSString *const AVCaptureSessionPresetHigh NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionPresetHigh NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionPresetMedium
@@ -147,7 +147,7 @@ extern NSString *const AVCaptureSessionPresetHigh NS_AVAILABLE(10_7, 4_0);
 	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPresetMedium
     to achieve output video and audio bitrates suitable for sharing over WiFi.
 */
-extern NSString *const AVCaptureSessionPresetMedium NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionPresetMedium NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionPresetLow
@@ -158,7 +158,18 @@ extern NSString *const AVCaptureSessionPresetMedium NS_AVAILABLE(10_7, 4_0);
 	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPresetLow
     to achieve output video and audio bitrates suitable for sharing over 3G.
 */
-extern NSString *const AVCaptureSessionPresetLow NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionPresetLow NS_AVAILABLE(10_7, 4_0);
+
+/*!
+ @constant  AVCaptureSessionPreset352x288
+ @abstract
+ An AVCaptureSession preset suitable for 352x288 video output.
+ 
+ @discussion
+ Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPreset352x288
+ to achieve CIF quality (352x288) output.
+ */
+AVF_EXPORT NSString *const AVCaptureSessionPreset352x288 NS_AVAILABLE(10_7, 5_0);
 
 /*!
  @constant  AVCaptureSessionPreset640x480
@@ -169,7 +180,7 @@ extern NSString *const AVCaptureSessionPresetLow NS_AVAILABLE(10_7, 4_0);
 	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPreset640x480
     to achieve VGA quality (640x480) output.
 */
-extern NSString *const AVCaptureSessionPreset640x480 NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionPreset640x480 NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureSessionPreset1280x720
@@ -178,9 +189,44 @@ extern NSString *const AVCaptureSessionPreset640x480 NS_AVAILABLE(10_7, 4_0);
  
  @discussion
 	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPreset1280x720
-    to achieve 720p quality (1280x720) output.
+    to achieve 1280x720 output.
 */
-extern NSString *const AVCaptureSessionPreset1280x720 NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureSessionPreset1280x720 NS_AVAILABLE(10_7, 4_0);
+
+/*!
+ @constant  AVCaptureSessionPreset1920x1080
+ @abstract
+    An AVCaptureSession preset suitable for 1920x1080 video output.
+ 
+ @discussion
+    Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPreset1920x1080
+    to achieve 1920x1080 output.
+ */
+AVF_EXPORT NSString *const AVCaptureSessionPreset1920x1080 NS_AVAILABLE(NA, 5_0);
+
+/*!
+@constant  AVCaptureSessionPresetiFrame960x540
+@abstract
+	An AVCaptureSession preset producing 960x540 Apple iFrame video and audio content.
+
+@discussion
+	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPresetiFrame960x540
+	to achieve 960x540 quality iFrame H.264 video at ~30 Mbits/sec with AAC audio.  QuickTime
+	movies captured in iFrame format are optimal for editing applications.
+*/
+AVF_EXPORT NSString *const AVCaptureSessionPresetiFrame960x540 NS_AVAILABLE(NA, 5_0);
+
+/*!
+@constant  AVCaptureSessionPresetiFrame1280x720
+@abstract
+	An AVCaptureSession preset producing 1280x720 Apple iFrame video and audio content.
+
+@discussion
+	Clients may set an AVCaptureSession instance's sessionPreset to AVCaptureSessionPresetiFrame1280x720
+   	to achieve 1280x720 quality iFrame H.264 video at ~40 Mbits/sec with AAC audio.  QuickTime
+	movies captured in iFrame format are optimal for editing applications.
+*/
+AVF_EXPORT NSString *const AVCaptureSessionPresetiFrame1280x720 NS_AVAILABLE(NA, 5_0);
 
 @class AVCaptureInput;
 @class AVCaptureOutput;
@@ -576,6 +622,83 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     orientation is handled using Exif tags.
 */
 @property(nonatomic) AVCaptureVideoOrientation videoOrientation;
+
+/*!
+ @property supportsVideoMinFrameDuration
+ @abstract
+ Indicates whether the connection supports setting the videoMinFrameDuration property.
+ 
+ @discussion
+ This property is only applicable to AVCaptureConnection instances involving
+ video.  In such connections, the videoMinFrameDuration property may only be set if
+ -isVideoMinFrameDurationSupported returns YES.
+ */
+@property(nonatomic, readonly, getter=isVideoMinFrameDurationSupported) BOOL supportsVideoMinFrameDuration NS_AVAILABLE(10_7, 5_0);
+
+/*!
+ @property videoMinFrameDuration
+ @abstract
+ Indicates the minimum time interval at which the receiver should output consecutive video frames.
+ 
+ @discussion
+ The value of this property is a CMTime specifying the minimum duration of each video frame output by the receiver,
+ placing a lower bound on the amount of time that should separate consecutive frames. This is equivalent to
+ the reciprocal of the maximum frame rate. A value of kCMTimeZero or kCMTimeInvalid indicates an unlimited maximum frame
+ rate. The default value is kCMTimeInvalid.
+ */
+@property(nonatomic) CMTime videoMinFrameDuration NS_AVAILABLE(10_7, 5_0);
+
+/*!
+ @property supportsVideoMaxFrameDuration
+ @abstract
+ Indicates whether the connection supports setting the videoMaxFrameDuration property.
+ 
+ @discussion
+ This property is only applicable to AVCaptureConnection instances involving
+ video.  In such connections, the videoMaxFrameDuration property may only be set if
+ -isVideoMaxFrameDurationSupported returns YES.
+ */
+@property(nonatomic, readonly, getter=isVideoMaxFrameDurationSupported) BOOL supportsVideoMaxFrameDuration NS_AVAILABLE(NA, 5_0);
+
+/*!
+ @property videoMaxFrameDuration
+ @abstract
+ Indicates the maximum time interval at which the receiver should output consecutive video frames.
+ 
+ @discussion
+ The value of this property is a CMTime specifying the maximum duration of each video frame output by the receiver,
+ placing an upper bound on the amount of time that should separate consecutive frames. This is equivalent to
+ the reciprocal of the minimum frame rate. A value of kCMTimeZero or kCMTimeInvalid indicates an unlimited minimum frame
+ rate. The default value is kCMTimeInvalid.
+ */
+@property(nonatomic) CMTime videoMaxFrameDuration NS_AVAILABLE(NA, 5_0);
+
+/*!
+ @property videoMaxScaleAndCropFactor
+ @abstract
+ Indicates the maximum video scale and crop factor supported by the receiver.
+ 
+ @discussion
+ This property is only applicable to AVCaptureConnection instances involving
+ video.  In such connections, the videoMaxScaleAndCropFactor property specifies
+ the maximum CGFloat value that may be used when setting the videoScaleAndCropFactor
+ property.
+ */
+@property(nonatomic, readonly) CGFloat videoMaxScaleAndCropFactor NS_AVAILABLE_IOS(5_0);
+
+/*!
+ @property videoScaleAndCropFactor
+ @abstract
+ Indicates the current video scale and crop factor in use by the receiver.
+ 
+ @discussion
+ This property is only applicable to AVCaptureConnection instances involving
+ video.  In such connections, the videoScaleAndCropFactor property may be set
+ to a value in the range of 1.0 to videoMaxScaleAndCropFactor.  At a factor of
+ 1.0, the image is its original size.  At a factor greater than 1.0, the image
+ is scaled by the factor and center-cropped to its original dimensions.
+ */
+@property(nonatomic) CGFloat videoScaleAndCropFactor NS_AVAILABLE_IOS(5_0);
 
 @end
 

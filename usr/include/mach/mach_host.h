@@ -26,7 +26,7 @@ typedef function_table_entry   *function_table_t;
 #endif /* AUTOTEST */
 
 #ifndef	mach_host_MSG_COUNT
-#define	mach_host_MSG_COUNT	21
+#define	mach_host_MSG_COUNT	22
 #endif	/* mach_host_MSG_COUNT */
 
 #include <mach/std_types.h>

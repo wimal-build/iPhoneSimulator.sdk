@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -559,7 +559,8 @@ struct __msfilterreq {
 	struct sockaddr_storage	 msfr_group;	/* group address */
 	struct sockaddr_storage	*msfr_srcs;
 };
-#endif
+
+#endif /* __MSFILTERREQ_DEFINED */
 
 #pragma pack()
 struct sockaddr;

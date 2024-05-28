@@ -119,6 +119,17 @@ struct vnode;
 struct vnode_attr;
 struct vop_setlabel_args;
 
+#ifndef __IOKIT_PORTS_DEFINED__
+#define __IOKIT_PORTS_DEFINED__
+#ifdef __cplusplus
+class OSObject;
+typedef OSObject *io_object_t;
+#else
+struct OSObject;
+typedef struct OSObject *io_object_t;
+#endif
+#endif /* __IOKIT_PORTS_DEFINED__ */
+
 /*@ macros */
 #define	VNODE_LABEL_CREATE	1
 
@@ -209,8 +220,9 @@ int	mac_inpcb_label_init(struct inpcb *inp, int flag);
 void	mac_inpcb_label_recycle(struct inpcb *inp);
 void	mac_inpcb_label_update(struct socket *so);
 int	mac_iokit_check_device(char *devtype, struct mac_module_data *mdata);
-int	mac_iokit_check_open(kauth_cred_t cred, const char *device_path, const char *user_client_class, unsigned int user_client_type);
-int	mac_iokit_check_set_properties(kauth_cred_t cred, const char *device_path, const char *const *device_inheritance);
+int	mac_iokit_check_open(kauth_cred_t cred, io_object_t user_client, unsigned int user_client_type);
+int	mac_iokit_check_set_properties(kauth_cred_t cred, io_object_t registry_entry, io_object_t properties);
+int	mac_iokit_check_hid_control(kauth_cred_t cred);
 void	mac_ipq_label_associate(struct mbuf *fragment, struct ipq *ipq);
 int	mac_ipq_label_compare(struct mbuf *fragment, struct ipq *ipq);
 void	mac_ipq_label_destroy(struct ipq *ipq);
@@ -319,6 +331,7 @@ int	mac_proc_check_getaudit(proc_t proc);
 int	mac_proc_check_getauid(proc_t proc);
 int     mac_proc_check_getlcid(proc_t proc1, proc_t proc2,
 	    pid_t pid);
+int     mac_proc_check_ledger(proc_t curp, proc_t target, int op);
 int	mac_proc_check_map_anon(proc_t proc, user_addr_t u_addr,
 	    user_size_t u_size, int prot, int flags, int *maxprot);
 int	mac_proc_check_mprotect(proc_t proc,
@@ -522,6 +535,8 @@ void	mac_vnode_label_update_extattr(struct mount *mp, struct vnode *vp,
 	    const char *name);
 int	mac_vnode_notify_create(vfs_context_t ctx, struct mount *mp,
 	    struct vnode *dvp, struct vnode *vp, struct componentname *cnp);
+void	mac_vnode_notify_rename(vfs_context_t ctx, struct vnode *vp,
+	    struct vnode *dvp, struct componentname *cnp);
 int	vnode_label(struct mount *mp, struct vnode *dvp, struct vnode *vp,
 	    struct componentname *cnp, int flags, vfs_context_t ctx);
 void	vnode_relabel(struct vnode *vp);

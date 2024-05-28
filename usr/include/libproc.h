@@ -107,6 +107,8 @@ int proc_libversion(int *major, int * minor) __OSX_AVAILABLE_STARTING(__MAC_10_5
 #define PROC_SETPC_TERMINATE	3
 
 int proc_setpcontrol(const int control) __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_2);
+int proc_setpcontrol(const int control);
+
 __END_DECLS
 
 #endif /*_LIBPROC_H_ */

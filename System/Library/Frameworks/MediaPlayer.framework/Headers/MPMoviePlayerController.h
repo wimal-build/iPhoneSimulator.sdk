@@ -155,8 +155,11 @@ MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPMoviePlayerController : NSObject <MP
 // The end time of movie playback. Defaults to NaN, which indicates natural end time of the movie.
 @property(nonatomic) NSTimeInterval endPlaybackTime;
 
-// Indicates if the movie player allows AirPlay video playback. Defaults to NO.
+// Indicates whether the movie player allows AirPlay video playback. Defaults to YES on iOS 5.0 and later.
 @property(nonatomic) BOOL allowsAirPlay NS_AVAILABLE_IPHONE(4_3);
+
+// Indicates whether the movie player is currently playing video via AirPlay.
+@property(nonatomic, readonly, getter=isAirPlayVideoActive) BOOL airPlayVideoActive NS_AVAILABLE_IPHONE(5_0);
 
 @end
 
@@ -187,6 +190,9 @@ MP_EXTERN NSString *const MPMoviePlayerWillExitFullscreenNotification NS_AVAILAB
 MP_EXTERN NSString *const MPMoviePlayerDidExitFullscreenNotification NS_AVAILABLE_IPHONE(3_2);
 MP_EXTERN NSString *const MPMoviePlayerFullscreenAnimationDurationUserInfoKey NS_AVAILABLE_IPHONE(3_2); // NSNumber of double (NSTimeInterval)
 MP_EXTERN NSString *const MPMoviePlayerFullscreenAnimationCurveUserInfoKey NS_AVAILABLE_IPHONE(3_2);     // NSNumber of NSUInteger (UIViewAnimationCurve)
+
+// Posted when the movie player begins or ends playing video via AirPlay.
+MP_EXTERN NSString *const MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification NS_AVAILABLE_IPHONE(5_0);
 
 // -----------------------------------------------------------------------------
 // Movie Property Notifications

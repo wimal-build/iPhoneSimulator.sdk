@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2004 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Computer, Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -201,9 +201,17 @@ struct tcphdr {
 #define TCP_KEEPALIVE           0x10    /* idle time used when SO_KEEPALIVE is enabled */
 #define TCP_CONNECTIONTIMEOUT   0x20    /* connection timeout */
 #define PERSIST_TIMEOUT		0x40	/* time after which a connection in
-									 *  persist timeout will terminate.
-					 				 *  see draft-ananth-tcpm-persist-02.txt
-									 */
+					 *  persist timeout will terminate.
+					 *  see draft-ananth-tcpm-persist-02.txt
+					 */
+#define TCP_RXT_CONNDROPTIME	0x80	/* time after which tcp retransmissions will be 
+					 * stopped and the connection will be dropped
+					 */
+#define TCP_RXT_FINDROP	0x100	/* when this option is set, drop a connection 
+					 * after retransmitting the FIN 3 times. It will
+					 * prevent holding too many mbufs in socket 
+					 * buffer queues.
+					 */
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
 
 #endif

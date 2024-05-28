@@ -139,8 +139,10 @@ enum vtagtype	{
 #define IO_BACKGROUND IO_PASSIVE /* used for backward compatibility.  to be removed after IO_BACKGROUND is no longer
 								  * used by DiskImages in-kernel mode */
 #define	IO_NOAUTH	0x8000		/* No authorization checks. */
-#define IO_NODIRECT    0x10000		/* don't use direct synchronous writes if IO_NOCACHE is specified */
-
+#define IO_NODIRECT     0x10000		/* don't use direct synchronous writes if IO_NOCACHE is specified */
+#define IO_ENCRYPTED	0x20000		/* Retrieve encrypted blocks from the filesystem */
+#define IO_RETURN_ON_THROTTLE	0x40000
+#define IO_SINGLE_WRITER	0x80000
 
 /*
  * Component Name: this structure describes the pathname
@@ -186,8 +188,8 @@ struct componentname {
 #define	ISDOTDOT	0x00002000 /* current component name is .. */
 #define	MAKEENTRY	0x00004000 /* entry is to be added to name cache */
 #define	ISLASTCN	0x00008000 /* this is last component of pathname */
-#define	ISWHITEOUT	0x00020000 /* found whiteout */
-#define	DOWHITEOUT	0x00040000 /* do whiteouts */
+#define	ISWHITEOUT	0x00020000 /* OBSOLETE: found whiteout */
+#define	DOWHITEOUT	0x00040000 /* OBSOLETE: do whiteouts */
 
 
 /* The following structure specifies a vnode for creation */
@@ -225,7 +227,7 @@ struct vnode_fsparam {
  * Note that this structure may be extended, but existing fields must not move.
  */
 
-#define VATTR_INIT(v)			do {(v)->va_supported = (v)->va_active = 0ll; (v)->va_vaflags = 0;} while(0)
+#define VATTR_INIT(v)			do {(v)->va_supported = (v)->va_active = 0ll; (v)->va_vaflags = 0; } while(0)
 #define VATTR_SET_ACTIVE(v, a)		((v)->va_active |= VNODE_ATTR_ ## a)
 #define VATTR_SET_SUPPORTED(v, a)	((v)->va_supported |= VNODE_ATTR_ ## a)
 #define VATTR_IS_SUPPORTED(v, a)	((v)->va_supported & VNODE_ATTR_ ## a)
@@ -275,6 +277,9 @@ struct vnode_fsparam {
 #define VNODE_ATTR_va_guuid		(1LL<<27)	/* 08000000 */
 #define VNODE_ATTR_va_nchildren		(1LL<<28)       /* 10000000 */
 #define VNODE_ATTR_va_dirlinkcount	(1LL<<29)       /* 20000000 */
+#define VNODE_ATTR_va_addedtime		(1LL<<30)		/* 40000000 */
+#define VNODE_ATTR_va_dataprotect_class		(1LL<<31)		/* 80000000 */
+#define VNODE_ATTR_va_dataprotect_flags		(1LL<<32)		/* 100000000 */
 
 #define VNODE_ATTR_BIT(n)	(VNODE_ATTR_ ## n)
 /*
@@ -295,7 +300,8 @@ struct vnode_fsparam {
 				VNODE_ATTR_BIT(va_name) |		\
 				VNODE_ATTR_BIT(va_type) |		\
 				VNODE_ATTR_BIT(va_nchildren) |		\
-				VNODE_ATTR_BIT(va_dirlinkcount)) 
+				VNODE_ATTR_BIT(va_dirlinkcount) |	\
+				VNODE_ATTR_BIT(va_addedtime)) 
 /*
  * Attributes that can be applied to a new file object.
  */
@@ -311,7 +317,9 @@ struct vnode_fsparam {
 				VNODE_ATTR_BIT(va_encoding) |		\
 				VNODE_ATTR_BIT(va_type) |		\
 				VNODE_ATTR_BIT(va_uuuid) |		\
-				VNODE_ATTR_BIT(va_guuid))
+				VNODE_ATTR_BIT(va_guuid) |		\
+				VNODE_ATTR_BIT(va_dataprotect_class) |	\
+				VNODE_ATTR_BIT(va_dataprotect_flags))
 
 
 struct vnode_attr {
@@ -370,8 +378,13 @@ struct vnode_attr {
 
 	/* add new fields here only */
 	void * 		va_reserved1;
+	struct timespec va_addedtime;	/* timestamp when item was added to parent directory */
 		
+	/* Data Protection fields */
+	uint32_t va_dataprotect_class;	/* class specified for this file if it didn't exist */
+	uint32_t va_dataprotect_flags;	/* flags from NP open(2) to the filesystem */
 };
+
 
 /*
  * Flags for va_vaflags.
@@ -749,6 +762,14 @@ int	vnode_isnocache(vnode_t);
  @return Nonzero if vnode is marked for rapid aging, 0 otherwise
  */
 int	vnode_israge(vnode_t);
+
+/*!
+ @function vnode_needssnapshots
+ @abstract Check if a vnode needs snapshots events (regardless of its ctime status)
+ @param vp The vnode to test.
+ @return Nonzero if vnode needs snapshot events, 0 otherwise
+ */
+int	vnode_needssnapshots(vnode_t);
 
 /*!
  @function vnode_setnocache
@@ -1210,7 +1231,7 @@ int vn_getpath(struct vnode *vp, char *pathbuf, int *len);
  */
 #define VNODE_LOOKUP_NOFOLLOW		0x01
 #define	VNODE_LOOKUP_NOCROSSMOUNT	0x02
-#define VNODE_LOOKUP_DOWHITEOUT		0x04
+#define VNODE_LOOKUP_DOWHITEOUT		0x04	/* OBSOLETE */
 /*!
  @function vnode_lookup
  @abstract Convert a path into a vnode.

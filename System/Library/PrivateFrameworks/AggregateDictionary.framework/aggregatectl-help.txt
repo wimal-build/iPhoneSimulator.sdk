@@ -3,7 +3,6 @@ aggregatectl OPTIONS - a utility to send data to the AggregateDictionary server
 General:
 --name NAME - look up the service named NAME and use it as the aggregation 
     server instead of the default server.
---significantTimeChanged - ask the server to perform periodic tasks if necessary
 
 Committing data:
 --commit - tell the server to commit to the db once before aggregatectl exits.

@@ -3,7 +3,7 @@
 
 	Framework:  CoreMedia
  
-    Copyright 2005-2010 Apple Inc. All rights reserved.
+    Copyright 2005-2011 Apple Inc. All rights reserved.
 
 */
 
@@ -988,6 +988,7 @@ enum {
     kCMTextDisplayFlag_continuousKaraoke           = 0x00000800,
     kCMTextDisplayFlag_writeTextVertically         = 0x00020000,
     kCMTextDisplayFlag_fillTextRegion              = 0x00040000,
+    kCMTextDisplayFlag_obeySubtitleFormatting      = 0x20000000,
     kCMTextDisplayFlag_forcedSubtitlesPresent      = 0x40000000,
     kCMTextDisplayFlag_allSubtitlesForced          = 0x80000000,
 };

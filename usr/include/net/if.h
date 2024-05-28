@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -97,6 +97,7 @@
 #define KEV_DL_WAKEFLAGS_CHANGED	17
 #define KEV_DL_IF_IDLE_ROUTE_REFCNT	18
 #define KEV_DL_IFCAP_CHANGED		19
+#define	KEV_DL_LINK_QUALITY_METRIC_CHANGED	20
 
 #include <net/if_var.h>
 #include <sys/types.h>
@@ -305,7 +306,7 @@ struct	ifreq {
 		int	ifru_mtu;
 		int	ifru_phys;
 		int	ifru_media;
-		int 	ifru_intval;
+		int	ifru_intval;
 		caddr_t	ifru_data;
 		struct	ifdevmtu ifru_devmtu;
 		struct	ifkpi	ifru_kpi;
@@ -431,6 +432,7 @@ struct if_laddrreq {
 	struct sockaddr_storage	addr;   /* in/out */
 	struct sockaddr_storage	dstaddr; /* out */
 };
+
 
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
 

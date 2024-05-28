@@ -54,12 +54,15 @@ class OSSerialize;
 /*! @parseOnly */
 #define APPLE_KEXT_COMPATIBILITY
 
-#ifdef __arm__
+#include <TargetConditionals.h>
+
+#if TARGET_OS_EMBEDDED
 #define APPLE_KEXT_VTABLE_PADDING   0
-#else
+#else /* TARGET_OS_EMBEDDED */
 /*! @parseOnly */
 #define APPLE_KEXT_VTABLE_PADDING   1
-#endif
+#endif /* TARGET_OS_EMBEDDED */
+
 
 #if defined(__LP64__)
 /*! @parseOnly */
@@ -68,16 +71,6 @@ class OSSerialize;
 #define APPLE_KEXT_LEGACY_ABI  0
 #else
 #define APPLE_KEXT_LEGACY_ABI  1
-#endif
-
-#if APPLE_KEXT_VTABLE_PADDING
-/*! @parseOnly */
-#define APPLE_KEXT_PAD_METHOD  virtual
-/*! @parseOnly */
-#define APPLE_KEXT_PAD_IMPL(index)  gMetaClass.reservedCalled(index)
-#else
-#define APPLE_KEXT_PAD_METHOD  static
-#define APPLE_KEXT_PAD_IMPL(index)  
 #endif
 
 #if defined(__LP64__)
@@ -789,12 +782,14 @@ protected:
         const int    freeWhen) const = 0;
 
 private:
+#if APPLE_KEXT_VTABLE_PADDING
     // Virtual Padding
     virtual void _RESERVEDOSMetaClassBase3();
     virtual void _RESERVEDOSMetaClassBase4();
     virtual void _RESERVEDOSMetaClassBase5();
     virtual void _RESERVEDOSMetaClassBase6();
     virtual void _RESERVEDOSMetaClassBase7();
+#endif
 } APPLE_KEXT_COMPATIBILITY;
 
 
@@ -1983,9 +1978,13 @@ public:
     * <code>@link OSMetaClassDeclareReservedUsed
     *       OSMetaClassDeclareReservedUsed@/link</code>.
     */
+#if APPLE_KEXT_VTABLE_PADDING
 #define OSMetaClassDeclareReservedUnused(className, index)        \
     private:                                                      \
-    APPLE_KEXT_PAD_METHOD void _RESERVED ## className ## index ()
+    virtual void _RESERVED ## className ## index ()
+#else
+#define OSMetaClassDeclareReservedUnused(className, index)
+#endif
 
 
    /*!
@@ -2045,9 +2044,13 @@ public:
     * <code>@link OSMetaClassDefineReservedUsed
     *       OSMetaClassDefineReservedUsed@/link</code>.
     */
+#if APPLE_KEXT_VTABLE_PADDING
 #define OSMetaClassDefineReservedUnused(className, index)       \
 void className ::_RESERVED ## className ## index ()             \
-    { APPLE_KEXT_PAD_IMPL(index); }
+	{ gMetaClass.reservedCalled(index); }
+#else
+#define OSMetaClassDefineReservedUnused(className, index)
+#endif
 
 
    /*!

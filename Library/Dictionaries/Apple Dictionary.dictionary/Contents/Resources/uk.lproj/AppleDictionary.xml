@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" localizable="true">
+
+<d:entry id="802.11">
+	<d:index><d:index_value>802.11</d:index_value><d:index_title>802.11</d:index_title></d:index>
+	<h1>802.11</h1>
+	<p>Стандарт для програмного та апаратного забезпечення бездротових мереж, розроблений Комітетом із стандартів IEEE LAN/MAN (IEEE 802). До цього стандарту входять 802.11a, 802.11b, 802.11g та 802.11n.</p>
+</d:entry>
+
+<d:entry id="access_control_lists">
+	<d:index><d:index_value>списки контролю доступу</d:index_value><d:index_title>списки контролю доступу</d:index_title></d:index>
+	<h1>списки контролю доступу</h1>
+	<p>Списки дозволів, де вказано, які користувачі можуть мати доступ до файлу, папки або диска та які дії дозволено виконувати кожному користувачу. Наприклад, у дозволах папки зазначається, чи може певний користувач переглядати вміст папки (тільки перегляд), додавати файли в папку, але не бачити її вміст (тільки запис), або те й інше (перегляд і запис).</p>
+</d:entry>
+
+<d:entry id="account">
+	<d:index><d:index_value>обліковий запис</d:index_value><d:index_title>обліковий запис</d:index_title></d:index>
+	<h1>обліковий запис</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X усі особи, які використовують комп’ютер, можуть мати індивідуальний обліковий запис із власною домашньою папкою. Існують різні типи облікових записів: обліковий запис адміністратора, користувача, групи та гостьовий обліковий запис.</p>
+</d:entry>
+
+<d:entry id="account_password">
+	<d:index><d:index_value>пароль облікового запису</d:index_value><d:index_title>пароль облікового запису</d:index_title></d:index>
+	<h1>пароль облікового запису</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X користувачі можуть створювати паролі для доступу до своїх облікових записів користувача. Паролі облікових записів часто називають «паролями входу в систему». До інших важливих паролів у Mac OS X відносять паролі в’язки та мастер-пароль.</p>
+</d:entry>
+
+<d:entry id="ACLs">
+	<d:index><d:index_value>ACLs</d:index_value><d:index_title>ACLs</d:index_title></d:index>
+	<h1>ACLs</h1>
+	<p>Див. <a href='x-dictionary:r:access_control_lists:com.apple.dictionary.AppleDictionary'><b>Списки контролю доступу</b></a>.</p>
+</d:entry>
+
+<d:entry id="Address_Book">
+	<d:index><d:index_value>Адресна книга</d:index_value><d:index_title>Адресна книга</d:index_title></d:index>
+	<h1>Адресна книга</h1>
+	<p>Програма в Mac OS X. За допомогою програми Address Book можна зберігати дані про свої контакти, включаючи ім’я та звернення, номер телефону та адреси, а також адресу електронної пошти, дані iChat і відомості про веб-сайт. Оскільки програма Address Book інтегрована з іншими програмами Mac OS X, усі відомості з адресної книги також доступні з програм Mail, iChat і Safari.</p>
+</d:entry>
+
+<d:entry id="administrator_account">
+	<d:index><d:index_value>обліковий запис адміністратора</d:index_value><d:index_title>обліковий запис адміністратора</d:index_title></d:index>
+	<h1>обліковий запис адміністратора</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X усі особи, які використовують комп’ютер, можуть мати індивідуальний обліковий запис із власною домашньою папкою. Принаймні один із цих облікових записів повинен бути обліковим записом адміністратора з можливість створювати, видаляти та змінювати інші облікові записи, встановлювати програмне забезпечення та змінювати системні параметри. Якщо комп’ютер із Mac OS X має лише один обліковий запис, цей запис автоматично є обліковим записом адміністратора. Інші типи облікових записів: обліковий запис користувача, гостьовий обліковий запис та обліковий запис групи.</p>
+</d:entry>
+
+<d:entry id="administrator_password">
+	<d:index><d:index_value>пароль адміністратора</d:index_value><d:index_title>пароль адміністратора</d:index_title></d:index>
+	<h1>пароль адміністратора</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X пароль до облікового запису адміністратора комп’ютера. До інших важливих паролів у Mac OS X відносять паролі в’язки та мастер-пароль.</p>
+</d:entry>
+
+<d:entry id="AFP">
+	<d:index><d:index_value>AFP</d:index_value><d:index_title>AFP</d:index_title></d:index>
+	<h1>AFP</h1>
+	<p>Apple Filing Protocol. Клієнт-серверний протокол, який файлова служба Apple використовує для надання доступу до файлів та мережних служб. AFP використовує TCP/IP та інші протоколи для підтримки зв’язку між комп’ютерами в мережі.</p>
+</d:entry>
+
+<d:entry id="AirDrop">
+	<d:index><d:index_value>AirDrop</d:index_value><d:index_title>AirDrop</d:index_title></d:index>
+	<h1>AirDrop</h1>
+	<p>Функція Mac OS X, за допомогою якої можна легко надати спільний доступ до файлів для інших користувачів AirDrop, що перебувають поблизу.</p>
+</d:entry>
+
+<d:entry id="AIM">
+	<d:index><d:index_value>AIM</d:index_value><d:index_title>AIM</d:index_title></d:index>
+	<h1>AIM</h1>
+	<p>AOL Instant Messenger, програма для обміну миттєвими повідомленнями в Інтернеті від AOL LLC (раніше America Online, Inc.).</p>
+</d:entry>
+
+<d:entry id="AirPort">
+	<d:index><d:index_value>AirPort</d:index_value><d:index_title>AirPort</d:index_title></d:index>
+	<h1>AirPort</h1>
+	<p>Пристрої та програмне забезпечення бездротового зв’язку від Apple Inc., за допомогою якого комп’ютер може підключитися без жодних дротів до мережі або Інтернету. Система AirPort включає маршрутизатор під назвою «базова станція AirPort», підключений до мережі. Базова станція надає доступ до свого мережного підключення, транслюючи сигнал, отриманий за допомогою карти AirPort Card або іншої карти бездротового підключення, яка знаходиться всередині або підключена до комп’ютера. До базових станцій AirPort відносяться AirPort Extreme і AirPort Express.</p>
+</d:entry>
+
+<d:entry id="AirPort_Disk">
+	<d:index><d:index_value>AirPort Disk</d:index_value><d:index_title>AirPort Disk</d:index_title></d:index>
+	<h1>AirPort Disk</h1>
+	<p>Програмне забезпечення Apple, за допомогою якого комп’ютер у мережі AirPort може надати відкритий доступ до зовнішнього жорсткого диска, підключеного до USB-порту базової станції Apple Extreme.</p>
+</d:entry>
+
+<d:entry id="AirPort_Express_Base_Station">
+	<d:index><d:index_value>Базова станція AirPort Express</d:index_value><d:index_title>Базова станція AirPort Express</d:index_title></d:index>
+	<h1>Базова станція AirPort Express</h1>
+	<p>Компактна базова станція AirPort від Apple Inc. забезпечує безпроводовий доступ до Інтернету для щонайбільше десяти комп’ютерів. AirPort Express постачається з програмою AirPlay, за допомогою якої підключений комп’ютер через програму iTunes може передавати музики на три музичні системи. Станцію AirPort Express можна підключити до USB-принтера, який автоматично стає доступним для всіх комп’ютерів у мережі, використовуючи технологію Bonjour. Станцію також можна використовувати для розширення області дії існуючої мережі AirPort Extreme.</p>
+</d:entry>
+
+<d:entry id="AirPort_Extreme_Base_Station">
+	<d:index><d:index_value>Базова станція AirPort Extreme</d:index_value><d:index_title>Базова станція AirPort Extreme</d:index_title></d:index>
+	<h1>Базова станція AirPort Extreme</h1>
+	<p>Базова станція AirPort від Apple Inc., яка забезпечує високошвидкісне бездротове підключення до Інтернету для щонайбільше 50 комп’ютерів. Станція також підтримує Ethernet-підключення. Базову станцію AirPort Extreme можна підключити до USB-принтера, щоб автоматично зробити його доступним для всіх комп’ютерів у мережі за допомогою технології Bonjour.</p>
+</d:entry>
+
+<d:entry id="AirPlay">
+	<d:index><d:index_value>AirPlay</d:index_value><d:index_title>AirPlay</d:index_title></d:index>
+	<h1>AirPlay</h1>
+	<p>Програма від Apple, через яку комп’ютер, iPod, iPad або iPhone в мережі AirPort використовуює iTunes для безпроводового передавання музики й відео на такі пристрої, як AirPort Express або Apple TV.</p>
+</d:entry>
+
+<d:entry id="album">
+	<d:index><d:index_value>альбом</d:index_value><d:index_title>альбом</d:index_title></d:index>
+	<h1>альбом</h1>
+	<p>Функція програми iPhoto на комп’ютерах Macintosh. Колекція iPhoto — це збірка фотографій, вибраних з фототеки iPhoto та впорядкованих у потрібному порядку. Можна створити звичайний альбом, вибравши окремі фотографії, або «розумний альбом», який автоматично оновлюватиметься відповідно до вибраних критеріїв, коли фототека iPhoto змінюється. Одну фотографію можна включити в кілька різних альбомів без створення додаткових копій файлу.</p>
+</d:entry>
+
+<d:entry id="alias">
+	<d:index><d:index_value>псевдонім</d:index_value><d:index_title>псевдонім</d:index_title></d:index>
+	<h1>псевдонім</h1>
+	<p>На комп’ютерах Macintosh маленький файл, що не має власного вмісту і який вказує на документ, папку, програму або пристрій, які, як правило, знаходяться в іншому розташуванні. Після подвійного натискання псевдоніма вихідний елемент відкривається або запускається.</p>
+</d:entry>
+
+<d:entry id="anti-alias">
+	<d:index><d:index_value>згладжування країв</d:index_value><d:index_title>згладжування країв</d:index_title></d:index>
+	<h1>згладжування країв</h1>
+	<p>У комп’ютерній графіці технологія мінімізації викривлення в тексті та графічних зображеннях за допомогою згладжування нерівних країв, коли елементи з високою роздільною здатністю відображаються у зменшеному вигляді.</p>
+</d:entry>
+
+<d:entry id="Aperture">
+	<d:index><d:index_value>Aperture</d:index_value><d:index_title>Aperture</d:index_title></d:index>
+	<h1>Aperture</h1>
+	<p>Програма Apple для комп’ютерів Macintosh. Програму Aperture використовують багато професійних фотографів для монтажних робіт.</p>
+</d:entry>
+
+<d:entry id="Apple_Inc.">
+	<d:index><d:index_value>Apple Inc.</d:index_value><d:index_title>Apple Inc.</d:index_title></d:index>
+	<h1>Apple Inc.</h1>
+	<p>Apple Inc. — це технологічна корпорація, заснована в Каліфорнії у 1976 році. Штаб-квартира корпорації знаходиться в місті Купертіно, штат Каліфорнія. Найпопулярнішою продукцією Apple Inc. є персональні комп’ютери Macintosh, портативні музичні плеєри iPod, операційна система Mac OS та програмне забезпечення iLife та iTunes.</p>
+</d:entry>
+
+<d:entry id="AppleCare">
+	<d:index><d:index_value>AppleCare</d:index_value><d:index_title>AppleCare</d:index_title></d:index>
+	<h1>AppleCare</h1>
+	<p>Службова програма підтримки Apple для комп’ютерів Macintosh, музичних плеєрів iPod та інших виробів.</p>
+</d:entry>
+
+<d:entry id="Apple_Mail">
+	<d:index><d:index_value>Apple Mail</d:index_value><d:index_title>Apple Mail</d:index_title></d:index>
+	<h1>Apple Mail</h1>
+	<p>Див. <a href='x-dictionary:r:Mail:com.apple.dictionary.AppleDictionary'><b>Mail</b></a>.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote">
+	<d:index><d:index_value>Apple Remote</d:index_value><d:index_title>Apple Remote</d:index_title></d:index>
+	<h1>Apple Remote</h1>
+	<p>Пульт дистанційного керування для використання з виробами Apple, включаючи Apple TV.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote_Desktop">
+	<d:index><d:index_value>Apple Remote Desktop</d:index_value><d:index_title>Apple Remote Desktop</d:index_title></d:index>
+	<h1>Apple Remote Desktop</h1>
+	<p>Програма Apple, за допомогою якої користувач, наприклад викладач або системний адміністратор, може стежити зі свого комп’ютера Macintosh за діяльністю інших користувачів комп’ютерів Macintosh у мережі.</p>
+</d:entry>
+
+<d:entry id="AppleScript">
+	<d:index><d:index_value>AppleScript</d:index_value><d:index_title>AppleScript</d:index_title></d:index>
+	<h1>AppleScript</h1>
+	<p>Мова написання скриптів, вбудована в Mac OS. Мова AppleScript складається з команд, які можна застосувати для автоматичного виконання задач, що повторюються, або складних задач у багатьох програмах, включаючи Mail, Safari, iCal та інші.</p>
+</d:entry>
+
+<d:entry id="AppleShare">
+	<d:index><d:index_value>AppleShare</d:index_value><d:index_title>AppleShare</d:index_title></d:index>
+	<h1>AppleShare</h1>
+	<p>Програмне забезпечення для серверів файлів і друку, яке працювало з мережним програмним забезпеченням AppleTalk. Програму AppleShare замінили на програму Mac OS X Server.</p>
+</d:entry>
+
+<d:entry id="AppleTalk">
+	<d:index><d:index_value>AppleTalk</d:index_value><d:index_title>AppleTalk</d:index_title></d:index>
+	<h1>AppleTalk</h1>
+	<p>Набір програмних інструментів від Apple Inc. для мережних настройок комп’ютера. Система зв’язку AppleTalk була замінена на TCP/IP на комп’ютерах Macintosh, які використовують Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Apple_TV">
+	<d:index><d:index_value>Apple TV</d:index_value><d:index_title>Apple TV</d:index_title></d:index>
+	<h1>Apple TV</h1>
+	<p>Телевізійна приставка від Apple Inc., яка через бездротовий зв’язок отримує відеосигнал та відтворює його на будь-якому широкоекранному телевізорі з розширеною або високою роздільною здатністю. Apple TV відтворює фільми, телепередачі, музику, подкасти з медіатеки iTunes, включаючи трейлери до фільмів з веб-сайту www.apple.com, а також слайд-шоу цифрових фотографій на комп’ютері. Apple TV можна синхронізувати з комп’ютерами Macintosh з Mac OS X версії 10.3.9 або 10.4.9 чи пізнішої версії, або комп’ютерами з ОС Window XP Home, Professional (SP2) чи Vista. Докладніше на <a href='http://www.apple.com/appletv/'>веб-сторінці Apple TV</a>.</p>
+</d:entry>
+
+<d:entry id="AppleWorks">
+	<d:index><d:index_value>AppleWorks</d:index_value><d:index_title>AppleWorks</d:index_title></d:index>
+	<h1>AppleWorks</h1>
+	<p>Програмне забезпечення Apple, до якого входять програми для обробки тексту, електронних таблиць, графічних об’єктів та баз даних. Оригінальна програма AppleWorks працювала на комп’ютерах сім’ї Apple II. Пізніша версія програми AppleWorks була створена для комп’ютерів Macintosh, які використовують Mac OS X. AppleWorks була замінена на набір програм iWork.</p>
+</d:entry>
+
+<d:entry id="Aqua">
+	<d:index><d:index_value>Aqua</d:index_value><d:index_title>Aqua</d:index_title></d:index>
+	<h1>Aqua</h1>
+	<p>Візуальна тема графічного інтерфейсу користувача Mac OS X.</p>
+</d:entry>
+
+<d:entry id="archive">
+	<d:index><d:index_value>архівувати</d:index_value><d:index_title>архівувати</d:index_title></d:index>
+	<h1>архівувати</h1>
+	<p>У Mac OS X стиснути файл або зменшити його розмір, чи повторно встановити програмне забезпечення системи, зберігши свої файли та параметри користувача («архівувати та встановити»).</p>
+</d:entry>
+
+<d:entry id="argument">
+	<d:index><d:index_value>аргумент</d:index_value><d:index_title>аргумент</d:index_title></d:index>
+	<h1>аргумент</h1>
+	<p>У програмі Numbers аргументи надають значення, які функція Numbers потребує для виконання задачі. Наприклад, наведена нижче формула містить функцію під назвою SUM з одним аргументом (діапазон чарунок), який додає значення в стовпець A, рядки від 2 до 10: =SUM(A2:A10). Кількість та типи аргументів залежать від різних функцій.</p>
+</d:entry>
+
+<d:entry id="audiobook">
+	<d:index><d:index_value>аудіокнига</d:index_value><d:index_title>аудіокнига</d:index_title></d:index>
+	<h1>аудіокнига</h1>
+	<p>Записана аудіопередача, наприклад, книга, прочитана вголос. Аудіокниги та інші аудіопередачі можна додавати у фонотеку iTunes.</p>
+</d:entry>
+
+<d:entry id="audio_driver">
+	<d:index><d:index_value>аудіодрайвер</d:index_value><d:index_title>аудіодрайвер</d:index_title></d:index>
+	<h1>аудіодрайвер</h1>
+	<p>Програма для конвертації аудіоданих у формат, який звукова карта вашого комп’ютера зможе обробити та відтворити через динаміки. Драйвер звукової карти комп’ютера повинен бути сумісний із звуковою картою. Звуковий драйвер Mac OS X — це Core Audio.</p>
+</d:entry>
+
+<d:entry id="AutoFill">
+	<d:index><d:index_value>Автозаповнення</d:index_value><d:index_title>Автозаповнення</d:index_title></d:index>
+	<h1>Автозаповнення</h1>
+	<p>Функція веб-браузера Safari, за допомогою якої автоматично заповнюються форми на веб-сторінках із використанням відомостей із вашої адресної книги та попередньо заповнених форм.</p>
+</d:entry>
+
+<d:entry id="Automator">
+	<d:index><d:index_value>Automator</d:index_value><d:index_title>Automator</d:index_title></d:index>
+	<h1>Automator</h1>
+	<p>Програма в Mac OS X, за допомогою якої можна створювати сценарії для автоматизації завдань, що повторюються. Програма Automator співпрацює з багатьма іншими програмами, включаючи Finder, Safari, iCal, Address Book, Microsoft Office і Adobe Photoshop.</p>
+</d:entry>
+
+<d:entry id="autoplay_DVD">
+	<d:index><d:index_value>автовідтворення DVD</d:index_value><d:index_title>автовідтворення DVD</d:index_title></d:index>
+	<h1>автовідтворення DVD</h1>
+	<p>DVD-фільм або слайдшоу, які автоматично відтворюються, після того як глядач вставляє DVD-диск в оптичний дисковод комп’ютера. На комп’ютерах Macintosh можна створювати меню автовідтворення DVD-дисків за допомогою програми iDVD.</p>
+</d:entry>
+
+<d:entry id="A/UX">
+	<d:index><d:index_value>A/UX</d:index_value><d:index_title>A/UX</d:index_title></d:index>
+	<h1>A/UX</h1>
+	<p>Версія операційної системи UNIX для певних моделей комп’ютерів Macintosh. Перша версія операційної системи A/UX побачила світ у 1988 році, а остання версія вийшла в 1995 році.</p>
+</d:entry>
+
+<d:entry id="background">
+	<d:index><d:index_value>тло</d:index_value><d:index_title>тло</d:index_title></d:index>
+	<h1>тло</h1>
+	<p>В операційній системі Mac OS X можна встановлювати власне тло на різних екранах, включаючи робочий стіл, вікна Finder і проекти iDVD. Також див. <a href='x-dictionary:r:desktop_picture:com.apple.dictionary.AppleDictionary'><b>Рисунок робочого стола</b></a> та <a href='x-dictionary:r:iDVD_themes:com.apple.dictionary.AppleDictionary'><b>Теми iDVD</b></a>.</p>
+</d:entry>
+
+<d:entry id="Backup">
+	<d:index><d:index_value>Архівація</d:index_value><d:index_title>Архівація</d:index_title></d:index>
+	<h1>Архівація</h1>
+	<p>Програмне забезпечення Apple, доступне для користувачів служби MobileMe. За допомогою програми «Архівація» можна запланувати регулярні автоматичні сеанси резервного копіювання на комп’ютері Macintosh, включаючи фотографії, музику, домашню папку тощо.</p>
+</d:entry>
+
+<d:entry id="badge_overlay">
+	<d:index><d:index_value>оверлей значка</d:index_value><d:index_title>оверлей значка</d:index_title></d:index>
+	<h1>оверлей значка</h1>
+	<p>Маленький графічний об’єкт, який з’являється під час наведення курсора на зображення, вікно, піктограму або інший об’єкт. Оверлей значка містить додаткові дані про об’єкт. У програмі цифрової фотографії Aperture на комп’ютерах Macintosh, коли до зображення застосовуються настройки, ключові слова, оцінки або інші зміни, програма додає до зображення оверлей значка. Оверлеї можна побачити лише на екрані, а не на друкованих копіях.</p>
+</d:entry>
+
+<d:entry id="Bonjour">
+	<d:index><d:index_value>Bonjour</d:index_value><d:index_title>Bonjour</d:index_title></d:index>
+	<h1>Bonjour</h1>
+	<p>Програмне забезпечення в Mac OS X. Програма Bonjour підключає комп’ютер до найближчих веб-сайтів та пристроїв, наприклад принтерів та інших комп’ютерів. Вона також знаходить друзів з iChat та відкриту інформацію, наприклад музику та фотографії з відкритим доступом, у локальній мережі.</p>
+</d:entry>
+
+<d:entry id="browser">
+	<d:index><d:index_value>веб-браузер</d:index_value><d:index_title>веб-браузер</d:index_title></d:index>
+	<h1>веб-браузер</h1>
+	<p>Програма, за допомогою якої можна знаходити, відображати та виконувати інтерактивні операції з текстом, зображеннями, звуком та іншими даними. Веб-браузер використовується для перегляду веб-сторінок в Інтернеті. Програма Safari на комп’ютерах Macintosh є прикладом веб-браузера.</p>
+</d:entry>
+
+<d:entry id="browsing_history">
+	<d:index><d:index_value>журнал</d:index_value><d:index_title>журнал</d:index_title></d:index>
+	<h1>журнал</h1>
+	<p>Список адрес відвіданих веб-сторінок, збережених у веб-браузері Safari або іншому веб-браузері. Журнал, як правило, містить адреси веб-сторінок, відвіданих приблизно протягом тижня.</p>
+</d:entry>
+
+<d:entry id="buddy_list">
+	<d:index><d:index_value>список друзів</d:index_value><d:index_title>список друзів</d:index_title></d:index>
+	<h1>список друзів</h1>
+	<p>У програмах для обміну миттєвими повідомленнями список осіб, з якими ви можете вести бесіди. Зазвичай, список друзів містить імена осіб, з якими ви найбільше контактуєте. Як правило, у списку друзів відображається поточний стан друзів (в онлайні та доступний або недоступний).</p>
+</d:entry>
+
+<d:entry id="burn_folder">
+	<d:index><d:index_value>папка для записування</d:index_value><d:index_title>папка для записування</d:index_title></d:index>
+	<h1>папка для записування</h1>
+	<p>Тип папок на комп’ютерах Macintosh із Mac OS X. Папка для записування містить елементи, які потрібно записати на компакт-диск або DVD-диск. Після подвійного натискання піктограми папки для записування та натискання кнопки «Burn» усі елементи в папці для записування будуть скопійовані на диск.</p>
+</d:entry>
+
+<d:entry id="Calculator">
+	<d:index><d:index_value>Калькулятор</d:index_value><d:index_title>Калькулятор</d:index_title></d:index>
+	<h1>Калькулятор</h1>
+	<p>Калькулятор, що постачається разом з Mac OS X. Калькулятор має базовий режим, науковий режим та режим програміста, а також підтримує польський інверсний запис.</p>
+</d:entry>
+
+<d:entry id="CalDAV">
+	<d:index><d:index_value>CalDAV</d:index_value><d:index_title>CalDAV</d:index_title></d:index>
+	<h1>CalDAV</h1>
+	<p>Програмне забезпечення, за допомогою якого кілька користувачів можуть публікувати та абонувати групові календарі, а також синхронізувати їх з іншими пристроями. CalDAV-сервери керують календарями з відкритим доступом.</p>
+</d:entry>
+
+<d:entry id="candidate_window">
+	<d:index><d:index_value>вікно варіантів</d:index_value><d:index_title>вікно варіантів</d:index_title></d:index>
+	<h1>вікно варіантів</h1>
+	<p>У програмі для введення символів вікно для введення символів, наприклад китайських ідеограм, яких немає на клавіатурі. Вікно варіантів з’являється, якщо введено код, з яким пов’язано більше одного символу. Для введення символу, його потрібно вибрати у вікні варіантів.</p>
+</d:entry>
+
+<d:entry id="Carbon">
+	<d:index><d:index_value>Carbon</d:index_value><d:index_title>Carbon</d:index_title></d:index>
+	<h1>Carbon</h1>
+	<p>Набір інструментів, які називаються прикладними програмними інтерфейсами (API), призначеними для розробників програмного забезпечення для Mac OS. Програмне забезпечення Carbon включає комплект інструментів інтерфейсу користувача, компонент обробки подій, бібліотеку графічних елементів Quartz 2D та підтримку багатозадачності.</p>
+</d:entry>
+
+<d:entry id="CDDB">
+	<d:index><d:index_value>CDDB</d:index_value><d:index_title>CDDB</d:index_title></d:index>
+	<h1>CDDB</h1>
+	<p>Банк даних компакт-дисків. CDDB — це ліцензійний торговий знак Gracenote, Inc. Програми використовують CDDB для пошуку даних про компакт-диски в Інтернеті. Після запиту в CDDB програма може відображати назву, ім’я виконавця, список пісень та інші відомості для більшості компакт-дисків.</p>
+</d:entry>
+
+<d:entry id="cell_reference">
+	<d:index><d:index_value>посилання на клітинку</d:index_value><d:index_title>посилання на клітинку</d:index_title></d:index>
+	<h1>посилання на клітинку</h1>
+	<p>У програмі Numbers посилання на клітинки вказують на певні клітинки у формулах. Можна створити посилання на клітинки за допомогою букв і цифр відповідних вкладок або заголовків клітинок. Якщо таблиця має рядок заголовка та стовпець заголовка, клітинку можна означити за допомогою імені стовпця та імені рядка.</p>
+</d:entry>
+
+<d:entry id="cell_value_format">
+	<d:index><d:index_value>формат значення клітинки</d:index_value><d:index_title>формат значення клітинки</d:index_title></d:index>
+	<h1>формат значення клітинки</h1>
+	<p>У програмі Numbers до клітинки можна застосувати певний формат, щоб її значення відображалося відповідним чином. Наприклад, чарунки з грошовими значеннями можна форматувати так, щоб перед числами у цих чарунках з’являвся символ валюти (наприклад $, £ або ¥). Також можна оздобити чарунки елементами керування, наприклад прапорцями або повзунками для додавання або змінення значень чарунок.</p>
+</d:entry>
+
+<d:entry id="certificate">
+	<d:index><d:index_value>сертифікат</d:index_value><d:index_title>сертифікат</d:index_title></d:index>
+	<h1>сертифікат</h1>
+	<p>Додаток до електронного документа, який забезпечує безпечне передавання інформації через Інтернет. Веб-браузери, поштові кліенти та програми для обміну миттєвими повідомленнями використовують сертифікати для шифрування інформації під час обміну із захищеним веб-сайтом. Сертифікати захищають ваші дані входу в систему, номери кредитних карт, адреси та інші важливі дані. Сертифікати випускаються надійними організаціями, наприклад VeriSign, Inc. або RSA Data Security, Inc. Зайшовши на захищений веб-сайт, Mac OS X перевіряє його сертифікат та порівнює з відомими перевіреними сертифікатами. Якщо сертифікат веб-сайту не пройшов перевірку чи його взагалі немає, про це надходить повідомлення.</p>
+</d:entry>
+
+<d:entry id="chapter_marker">
+	<d:index><d:index_value>маркер розділу</d:index_value><d:index_title>маркер розділу</d:index_title></d:index>
+	<h1>маркер розділу</h1>
+	<p>Маркери, що вставляються у фільм у цифровому форматі для створення меню вибору сцен, щоб глядачі могли перейти безпосередньо до вибраної сцени.</p>
+</d:entry>
+
+<d:entry id="character_palette">
+	<d:index><d:index_value>символи</d:index_value><d:index_title>символи</d:index_title></d:index>
+	<h1>символи</h1>
+	<p>Функція Mac OS X, за допомогою якої можна вставляти спеціальні символи, наприклад математичні символи, букви із знаками наголосу, стрілки та інші графічні мітки або символи з інших мов у свої документи.</p>
+</d:entry>
+
+<d:entry id="Chooser">
+	<d:index><d:index_value>Селектор</d:index_value><d:index_title>Селектор</d:index_title></d:index>
+	<h1>Селектор</h1>
+	<p>Функція в попередніх версіях Mac OS, яка надавала можливість підключатися до принтерів і серверів, а також вмикати та вимикати протокол AppleTalk. У Mac OS X замінено на панелі «Друк і факс» і «Мережа» в «Системних параметрах».</p>
+</d:entry>
+
+<d:entry id="Cinema_Tools">
+	<d:index><d:index_value>Кіноінстурменти</d:index_value><d:index_title>Кіноінстурменти</d:index_title></d:index>
+	<h1>Кіноінстурменти</h1>
+	<p>Набір програмних інструментів від Apple Inc., що постачається разом із Final Cut Pro, професійною програмою для редагування відео. Програмне забезпечення Cinema Tools використовується для відстеження зв’язку між оригінальним фільмом і звуком та їхніми цифровими аналогами.</p>
+</d:entry>
+
+<d:entry id="Classic">
+	<d:index><d:index_value>Classic</d:index_value><d:index_title>Classic</d:index_title></d:index>
+	<h1>Classic</h1>
+	<p>Попередні версії операційної системи Macintosh, замінені на Mac OS X.</p>
+</d:entry>
+
+<d:entry id="clip">
+	<d:index><d:index_value>кліп</d:index_value><d:index_title>кліп</d:index_title></d:index>
+	<h1>кліп</h1>
+	<p>Уривок аудіо або відеофайлу. У програмі iMovie можна працювати з кліпами в декілька різних способів для здобуття потрібного результату, включаючи переміщення кліпів, встановлення точок початку та кінця музичного кліпу, додавання переходів між кліпами тощо.</p>
+</d:entry>
+
+<d:entry id="Cocoa">
+	<d:index><d:index_value>Cocoa</d:index_value><d:index_title>Cocoa</d:index_title></d:index>
+	<h1>Cocoa</h1>
+	<p>Набір інструментів, які називаються прикладними програмними інтерфейсами (API), призначеними для розробників програмного забезпечення для Mac OS. Програмне забезпечення Cocoa — це об’єктно орієнтоване програмне середовище для розроблення програм для Mac OS X. Програми Cocoa відповідають вимогам Apple щодо людського інтерфейсу, тобто їхній вигляд та принцип роботи знайомі користувачам комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="Cocoa_Touch">
+	<d:index><d:index_value>Cocoa Touch</d:index_value><d:index_title>Cocoa Touch</d:index_title></d:index>
+	<h1>Cocoa Touch</h1>
+	<p>Набір інструментів, які називаються прикладними програмними інтерфейсами (API), призначеними для розробників програмного забезпечення для iPhone та iPod touch. Програмне забезпечення Cocoa Touch створене на основі інструментів Cocoa для створення програм Mac OS X.</p>
+</d:entry>
+
+<d:entry id="ColorSync">
+	<d:index><d:index_value>ColorSync</d:index_value><d:index_title>ColorSync</d:index_title></d:index>
+	<h1>ColorSync</h1>
+	<p>Програм для підбору кольорів Apple. Програма ColorSync об’єднує всі пристрої для роботи із зображеннями, наприклад екрани дисплеїв, принтери, сканери та цифрові камери, щоб колір відображений на екрані збігався з тим, який друкується. Програма ColorSync є компонентом Mac OS X.</p>
+</d:entry>
+
+<d:entry id="ColorSync_profile">
+	<d:index><d:index_value>профіль ColorSync</d:index_value><d:index_title>профіль ColorSync</d:index_title></d:index>
+	<h1>профіль ColorSync</h1>
+	<p>Дані, які програма ColorSync зберігає для всіх пристроїв для роботи із зображеннями, підключених до комп’ютера, наприклад сканерів, принтерів та моніторів. Профіль використовується для відтворення зображень якомога точніше. Наприклад, після сканування зображення файл зображення включає копію профілю сканера. Коли зображення друкується, відбувається конвертація даних про кольори із профілю сканера у профіль принтера.</p>
+</d:entry>
+
+<d:entry id="combo_drive">
+	<d:index><d:index_value>дисковод «комбо»</d:index_value><d:index_title>дисковод «комбо»</d:index_title></d:index>
+	<h1>дисковод «комбо»</h1>
+	<p>Тип дисковода. Дисковод «комбо» може читати та записувати (копіювати) компакт-диски, а також читати, але не записувати, DVD-диски.</p>
+</d:entry>
+
+<d:entry id="Common_Access_Card_Viewer">
+	<d:index><d:index_value>Засіб для перегляду картки загального доступу</d:index_value><d:index_title>Засіб для перегляду картки загального доступу</d:index_title></d:index>
+	<h1>Засіб для перегляду картки загального доступу</h1>
+	<p>Пристрій контролю доступу. Після передавання картки загального доступу через пристрій для зчитування карт можна ввійти в систему комп’ютера, отримати доступ до комп’ютера, коли діє екранний ефект, робити зміни на певних панелях «Системних параметрів» та встановлювати програмне забезпечення.</p>
+</d:entry>
+
+<d:entry id="conditional_formatting">
+	<d:index><d:index_value>умовне форматування</d:index_value><d:index_title>умовне форматування</d:index_title></d:index>
+	<h1>умовне форматування</h1>
+	<p>Функція, за допомогою якої можна форматувати клітинку в електронній таблиці Numbers таким чином, щоб за певних умов вона відображалася відповідно визначеним чином. Наприклад, можна задати, щоб колір тла клітинки змінювався на червоний, коли її значення перевищує певне число.</p>
+</d:entry>
+
+<d:entry id="control_panel">
+	<d:index><d:index_value>панель керування</d:index_value><d:index_title>панель керування</d:index_title></d:index>
+	<h1>панель керування</h1>
+	<p>На комп’ютерах Windows панель керування містить маленькі програми, за допомогою яких можна змінити такі параметри, як тло робочого стола або спосіб підключення до Інтернету. На комп’ютерах Macintosh для зміни параметрів використовують «Системні параметри».</p>
+</d:entry>
+
+<d:entry id="control_strip">
+	<d:index><d:index_value>стрічка керування</d:index_value><d:index_title>стрічка керування</d:index_title></d:index>
+	<h1>стрічка керування</h1>
+	<p>Використовувалася в ранніх версіях Mac OS для перегляду стану акумулятора, перевірки мережного підключення, зміни системного тому, налаштування роздільної здатності екрана та виконання інших функцій. У Mac OS X меню смуги меню замінили стрічку керування.</p>
+</d:entry>
+
+<d:entry id="cookie">
+	<d:index><d:index_value>cookie-файл</d:index_value><d:index_title>cookie-файл</d:index_title></d:index>
+	<h1>cookie-файл</h1>
+	<p>Маленький файл, який веб-сайт розмістив на вашому комп’ютері для збереження інформації. Після повернення на цей веб-сайт ваш веб-браузер надсилає відповідні cookie-файли назад на нього, де вони повідомляють про вас, щоб веб-сайт міг відобразити інформацію, що найбільше відповідає вашим вимогам. Cookie-файли можуть містити відомості, за якими можна вас ідентифікувати, наприклад ім’я та адресу електронної пошти. Веб-сайт має доступ лише до відомостей, які ви надаєте. Веб-сайт не може використовувати cookie-файли для доступу до іншої інформації на вашому комп’ютері.</p>
+</d:entry>
+
+<d:entry id="Core_Audio">
+	<d:index><d:index_value>Core Audio</d:index_value><d:index_title>Core Audio</d:index_title></d:index>
+	<h1>Core Audio</h1>
+	<p>Аудіодрайвер на комп’ютерах Macintosh.</p>
+</d:entry>
+
+<d:entry id="Cover_Flow">
+	<d:index><d:index_value>Cover Flow</d:index_value><d:index_title>Cover Flow</d:index_title></d:index>
+	<h1>Cover Flow</h1>
+	<p>Функція програми Finder в Mac OS X та мультимедійного програвача iTunes. У програмі iTunes функція перегляду Cover Flow відображає на екрані комп’ютера обкладинку альбому у збірці музики iTunes для швидкого пошуку альбомів. У програмі Finder функція перегляду Cover Flow є однією з чотирьох функцій перегляду та пошуку файлів, папок та програм, які відображаються у вікні програми Finder.</p>
+</d:entry>
+
+<d:entry id="crop">
+	<d:index><d:index_value>обтинати</d:index_value><d:index_title>обтинати</d:index_title></d:index>
+	<h1>обтинати</h1>
+	<p>Змінювати зображення, наприклад фотографію, зберігши лише потрібну частину та вилучивши все інше.</p>
+</d:entry>
+
+<d:entry id="Dashboard">
+	<d:index><d:index_value>Dashboard</d:index_value><d:index_title>Dashboard</d:index_title></d:index>
+	<h1>Dashboard</h1>
+	<p>Програмне забезпечення Apple у Mac OS X з маленькими програмами, які називаються «віджетами». Віджети мають різні застосування, наприклад, можна перевіряти котирування акцій, шукати прогнози погоди вдома та в світі, дивитися словникові статті тощо.</p>
+</d:entry>
+
+<d:entry id="Dashcode">
+	<d:index><d:index_value>Dashcode</d:index_value><d:index_title>Dashcode</d:index_title></d:index>
+	<h1>Dashcode</h1>
+	<p>Програма для розроблення програмного забезпечення від Apple, за допомогою якої можна створювати віджети Dashboard та веб-програми (веб-сторінки, оптимізовані для Safari на iPhone). Віджети та веб-програми, створені за допомогою Dashcode, застосовують стандартні веб-технології, наприклад Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) і JavaScript.</p>
+</d:entry>
+
+<d:entry id="desktop">
+	<d:index><d:index_value>робочий стіл</d:index_value><d:index_title>робочий стіл</d:index_title></d:index>
+	<h1>робочий стіл</h1>
+	<p>Тло комп’ютерного екрана. На робочому столі розміщуються піктограми, вікна, панелі інструментів, файли та папки, які можна створювати, змінювати, переміщувати та видаляти.</p>
+</d:entry>
+
+<d:entry id="desktop_picture">
+	<d:index><d:index_value>зображення робочого стола</d:index_value><d:index_title>зображення робочого стола</d:index_title></d:index>
+	<h1>зображення робочого стола</h1>
+	<p>Колір, візерунок або малюнок для персоналізації тла вашого екрана. Малюнок робочого стола можна вибрати на панелі «Робочий стіл та екранні ефекти» у «Системних параметрах».</p>
+</d:entry>
+
+<d:entry id="Dictionary">
+	<d:index><d:index_value>Словник</d:index_value><d:index_title>Словник</d:index_title></d:index>
+	<h1>Словник</h1>
+	<p>Програма в Mac OS X. За допомогою програми «Словник» можна подивитися визначення або синоніми з кількох джерел, включаючи Oxford American Dictionaries та Apple Dictionary.</p>
+</d:entry>
+
+<d:entry id="digital_certificate">
+	<d:index><d:index_value>цифровий сертифікат</d:index_value><d:index_title>цифровий сертифікат</d:index_title></d:index>
+	<h1>цифровий сертифікат</h1>
+	<p>Також відомий як сертифікат відкритого ключа, електронний документ, який пов’язує ваш цифровий підпис з іншими даними, наприклад вашим іменем, адресою електронної пошти або компанією. Веб-програми, наприклад веб-браузер Safari, Mail та iChat, використовують сертифікати для безпечного передавання інформації в Інтернеті.</p>
+</d:entry>
+
+<d:entry id="disk_image">
+	<d:index><d:index_value>образ диска</d:index_value><d:index_title>образ диска</d:index_title></d:index>
+	<h1>образ диска</h1>
+	<p>Єдиний файл, який містить увесь вміст та структуру всіх файлів і папок на пристрої зберігання даних, наприклад жорсткому або оптичному диску. За допомогою програми Disk Utility можна створити образ диска. Образи дисків можна використовувати для архівації старих даних, надсилання файлів іншим, шифрування важливої інформації, а також створення копій дисків.</p>
+</d:entry>
+
+<d:entry id="Disk_Utility">
+	<d:index><d:index_value>Disk Utility</d:index_value><d:index_title>Disk Utility</d:index_title></d:index>
+	<h1>Disk Utility</h1>
+	<p>Програма для виконання операцій із дисками у Mac OS X. За допомогою програми Disk Utility можна створювати образи дисків, а також монтувати, видаляти, переформатовувати, ділити на розділи, записувати та виправляти диски.</p>
+</d:entry>
+
+<d:entry id="Dock">
+	<d:index><d:index_value>Dock</d:index_value><d:index_title>Dock</d:index_title></d:index>
+	<h1>Dock</h1>
+	<p>Програмне забезпечення для запуску програм у Mac OS X. Панель Dock розташована вдовж краю екрана. Вона містить піктограми багатьох програм, доступних на комп’ютері, також можна перетягувати піктограми на панель Dock і вилучати їх із неї.</p>
+</d:entry>
+
+<d:entry id="dogcow">
+	<d:index><d:index_value>dogcow</d:index_value><d:index_title>dogcow</d:index_title></d:index>
+	<h1>dogcow</h1>
+	<p>Символ із шрифту Cairo dingbat (орнамент) «dogcow» використовувався для відображення орієнтації та кольору паперу в діалогових вікнах параметрів сторінок на комп’ютерах Mac. З часом символ dogcow отримав додаткові точки та набув більш коров’ячого вигляду. Символ dogcow (пес-корова) вигукує «муф» (му-гав).</p>
+</d:entry>
+
+<d:entry id="domain">
+	<d:index><d:index_value>домен</d:index_value><d:index_title>домен</d:index_title></d:index>
+	<h1>домен</h1>
+	<p>Частина імені домену комп’ютера, підключеного до Інтернету. Ім’я «www.example.com» складається з субдомену або імені хоста «www», домену «example» та домену вищого рівня «com».</p>
+</d:entry>
+
+<d:entry id="DOM">
+	<d:index><d:index_value>DOM</d:index_value><d:index_title>DOM</d:index_title></d:index>
+	<h1>DOM</h1>
+	<p>Об’єктна модель документу. Інтерфейс, за допомогою якого програми можуть отримати доступ та оновлювати вміст, структуру та стиль документів, включаючи веб-сторінки. Інтерфейс DOM для веб-сторінки наводить список усіх елементів, які існують на веб-сторінці, разом із вмістом, посиланнями, специфікаціями стилів та скриптами (маленькими програмами), і вказує порядок, за яким елементи з’являються на сторінці.</p>
+</d:entry>
+
+<d:entry id="DOM_navigation">
+	<d:index><d:index_value>навігація DOM</d:index_value><d:index_title>навігація DOM</d:index_title></d:index>
+	<h1>навігація DOM</h1>
+	<p>Навігація на веб-сторінці на основі об’єктної моделі документа (DOM).</p>
+</d:entry>
+
+<d:entry id="DRAM">
+	<d:index><d:index_value>DRAM</d:index_value><d:index_title>DRAM</d:index_title></d:index>
+	<h1>DRAM</h1>
+	<p>Динамічна оперативна пам’ять. Найпоширеніший тип пам’яті, який використовується в персональних комп’ютерах. Для пам’яті DRAM кожні кілька мілісекунд потрібний новий електричний заряд.</p>
+</d:entry>
+
+<d:entry id="DVD_or_CD_sharing">
+	<d:index><d:index_value>відкритий доступ до DVD або CD</d:index_value><d:index_title>відкритий доступ до DVD або CD</d:index_title></d:index>
+	<h1>відкритий доступ до DVD або CD</h1>
+	<p>Функція Mac OS X, за допомогою якої можна відкривати спільний доступ до DVD-дисків та компакт-дисків через бездротову мережу або мережу Ethernet. Якщо інший комп’ютер у мережі не оснащений оптичним дисководом, він може використовувати диск в оптичному дисководі вашого комп’ютера. Комп’ютер з оптичним дисководом повинен мати Mac OS X версії 10.4.10 або пізнішої версії, або ОС Windows XP чи Vista.</p>
+</d:entry>
+
+<d:entry id="dynamic_prompt">
+	<d:index><d:index_value>динамічна підказка</d:index_value><d:index_title>динамічна підказка</d:index_title></d:index>
+	<h1>динамічна підказка</h1>
+	<p>У програмі для введення символів, наприклад китайських ідеограм, яких немає на клавіатурі, увімкніть функцію динамічної підказки, щоб під час набору у вікні варіантів автоматично з’являлися можливі символи.</p>
+</d:entry>
+
+<d:entry id="eMac">
+	<d:index><d:index_value>eMac</d:index_value><d:index_title>eMac</d:index_title></d:index>
+	<h1>eMac</h1>
+	<p>«Освітній Mac» — це бюджетний повноцінний комп’ютер із 17-дюймовим екраном та процесором PowerPC G4. Apple Inc. випустила комп’ютер eMac у 2002 році та скасувала його виробництво у 2006 році, замінивши на модель iMac.</p>
+</d:entry>
+
+<d:entry id="enhance">
+	<d:index><d:index_value>вдосконалити</d:index_value><d:index_title>вдосконалити</d:index_title></d:index>
+	<h1>вдосконалити</h1>
+	<p>Функція програми iPhoto на комп’ютерах Macintosh. Якщо натиснути кнопку «Enhance» під час редагування фотографії, буде збільшено яскравість фотографії або змінено контрастність відповідно до попередньо встановлених критеріїв.</p>
+</d:entry>
+
+<d:entry id="EPS">
+	<d:index><d:index_value>EPS</d:index_value><d:index_title>EPS</d:index_title></d:index>
+	<h1>EPS</h1>
+	<p>Див. <a href='x-dictionary:r:Encapsulated_Postscript:com.apple.dictionary.AppleDictionary'><b>Капсульований Postscript</b></a></p>
+</d:entry>
+
+<d:entry id="Encapsulated_Postscript">
+	<d:index><d:index_value>Encapsulated Postscript</d:index_value><d:index_title>Encapsulated Postscript</d:index_title></d:index>
+	<h1>Encapsulated Postscript</h1>
+	<p>Скорочено EPS. Формат файлів на основі мови PostScript, який використовується для друку текстів і графічних зображень. EPS-файли містять опис тексту та графічних зображень, який використовується принтерами і можна копіювати та надіслати на кілька комп’ютерів і програм.</p>
+</d:entry>
+
+<d:entry id="equalizer">
+	<d:index><d:index_value>еквалайзер</d:index_value><d:index_title>еквалайзер</d:index_title></d:index>
+	<h1>еквалайзер</h1>
+	<p>Скорочено EQ. Елемент керування звуком, який діє як елементи керування високими та низькими частотами, але з більшою амплітудою та гнучкістю. Еквалайзер можна використовувати для тонкого налаштування певних частот звукового діапазону для різних музичних жанрів, середовищ прослуховування (наприклад різних приміщень у вашому домі) та способів виводу звука (наприклад динаміків або навушників). У програмі iTunes можна настроїти параметри еквалайзера вручну або, вибравши з більш як 20 попередньо встановлених режимів найпоширеніших настройок еквалайзера.</p>
+</d:entry>
+
+<d:entry id="Event">
+	<d:index><d:index_value>Подія</d:index_value><d:index_title>Подія</d:index_title></d:index>
+	<h1>Подія</h1>
+	<p>Програми iMovie та iPhoto на комп’ютерах Macintosh впорядковують відеотеки та фототеки за подіями. Подія групує відеофайли або фотографії, зроблені в певний проміжок часу, наприклад фотографії, зроблені під час весілля опівдні або суботнього відпочинку на пляжі. Відеофайли та фотографії можна впорядковувати, об’єднуючи та розділяючи події, а також створюючи власні назви для подій.</p>
+</d:entry>
+
+<d:entry id="EXIF">
+	<d:index><d:index_value>EXIF</d:index_value><d:index_title>EXIF</d:index_title></d:index>
+	<h1>EXIF</h1>
+	<p>Exchangeable Image File; специфікація формату файлу зображення, який використовується цифровими камерами.</p>
+</d:entry>
+
+<d:entry id="Exchangeable_Image_File">
+	<d:index><d:index_value>Exchangeable Image File</d:index_value><d:index_title>Exchangeable Image File</d:index_title></d:index>
+	<h1>Exchangeable Image File</h1>
+	<p>Див. <a href='x-dictionary:r:EXIF:com.apple.dictionary.AppleDictionary'><b>EXIF</b></a>.</p>
+</d:entry>
+
+<d:entry id="Exposé">
+	<d:index><d:index_value>Exposé</d:index_value><d:index_title>Exposé</d:index_title></d:index>
+	<h1>Exposé</h1>
+	<p>Функція Mac OS X, за допомогою якої можна тимчасово прибрати вікна зі свого шляху або з екрана взагалі, зазвичай, натисканням клавіші F11. Функція Exposé допомагає побачити потрібне вікно або робочий стіл.</p>
+</d:entry>
+
+<d:entry id="ExpressCard">
+	<d:index><d:index_value>ExpressCard</d:index_value><d:index_title>ExpressCard</d:index_title></d:index>
+	<h1>ExpressCard</h1>
+	<p>Карта розширення для комп’ютерів, включаючи портативні комп’ютери Macintosh. Додавши ExpressCard до свого комп’ютера, він збільшує свої можливості. Карту ExpressCard можна використовувати для підключення жорстких дисків, компактних пристроїв для зчитування флеш-карт тощо. Портативні комп’ютери Macintosh використовують ExpressCard/34.</p>
+</d:entry>
+
+<d:entry id="extended_desktop">
+	<d:index><d:index_value>розширений робочий стіл</d:index_value><d:index_title>розширений робочий стіл</d:index_title></d:index>
+	<h1>розширений робочий стіл</h1>
+	<p>Функція «Системних параметрів« Mac OS X. Якщо комп’ютер підключений до кількох пристроїв, включаючи телевізори та проектори, на панелі «Дисплеї» в «Системних параметрах» можна налагодити зображення так, щоб зображення робочого стола відповідно ділилося між усіма пристроями.</p>
+</d:entry>
+
+<d:entry id="family_controls">
+	<d:index><d:index_value>сімейний контроль</d:index_value><d:index_title>сімейний контроль</d:index_title></d:index>
+	<h1>сімейний контроль</h1>
+	<p>Див. <a href='x-dictionary:r:parental_controls:com.apple.dictionary.AppleDictionary'><b>Батьківський контроль</b></a>.</p>
+</d:entry>
+
+<d:entry id="fast_user_switching">
+	<d:index><d:index_value>швидкий перехід між користувачами</d:index_value><d:index_title>швидкий перехід між користувачами</d:index_title></d:index>
+	<h1>швидкий перехід між користувачами</h1>
+	<p>Функція Mac OS X, яка дозволяє залишатися в системі комп’ютера одночасно більше ніж одному користувачеві. Коли ввімкнено швидкий перехід між користувачами, у правому верхньому куті смуги меню з’являються доступні облікові записи користувачів. Перейти на інший обліковий запис можна, вибравши його в меню. Попередні облікові записи залишаються в системі, а поточні програми та документи відкритими для миттєвого повернення до потрібного облікового запису.</p>
+</d:entry>
+
+<d:entry id="FileVault">
+	<d:index><d:index_value>FileVault</d:index_value><d:index_title>FileVault</d:index_title></d:index>
+	<h1>FileVault</h1>
+	<p>Програма в Mac OS X для шифрування та захисту файлів на комп’ютерах Macintosh.</p>
+</d:entry>
+
+<d:entry id="Final_Cut">
+	<d:index><d:index_value>Final Cut</d:index_value><d:index_title>Final Cut</d:index_title></d:index>
+	<h1>Final Cut</h1>
+	<p>Набір програм Apple для редагування відео, отриманого з професійного відеообладнання або домашньої цифрової відеокамери. Програми Final Cut використовують професійні оператори та любителі. За допомогою програм Final Cut можна завантажити та відтворити відео на комп’ютері Macintosh, де його можна редагувати та обробляти.</p>
+</d:entry>
+
+<d:entry id="Finder">
+	<d:index><d:index_value>Finder</d:index_value><d:index_title>Finder</d:index_title></d:index>
+	<h1>Finder</h1>
+	<p>Складова Mac OS. Програма Finder впорядковує та відображає перегляди файлів і папок на комп’ютері та будь-яких дисках підключених до нього. За допомогою програми Finder також можна шукати та керувати інформацією на дисках.</p>
+</d:entry>
+
+<d:entry id="FireWire">
+	<d:index><d:index_value>FireWire</d:index_value><d:index_title>FireWire</d:index_title></d:index>
+	<h1>FireWire</h1>
+	<p>Тип кабелю, з’єднувача та програмного забезпечення, який забезпечує високошвидкісне підключення між двома комп’ютермами або комп’ютером та підключеним до нього пристроєм, наприклад цифровою відеокамерою.</p>
+</d:entry>
+
+<d:entry id="floating_object">
+	<d:index><d:index_value>плаваючий об’єкт</d:index_value><d:index_title>плаваючий об’єкт</d:index_title></d:index>
+	<h1>плаваючий об’єкт</h1>
+	<p>У програмі Pages зображення, графічний елемент або інший об’єкт, закріплений у певному положенні на сторінці. Положення плаваючого об’єкта не змінюється після додавання тексту або інших графічних елементів на сторінці. Також див. вбудований об’єкт.</p>
+</d:entry>
+
+<d:entry id="Font_Book">
+	<d:index><d:index_value>Font Book</d:index_value><d:index_title>Font Book</d:index_title></d:index>
+	<h1>Font Book</h1>
+	<p>Програма керування шрифтами в Mac OS X. За допомогою програми Font Book можна переглянути та встановити шрифти, розділити шрифти на збірки, увімкнути або вимкнути окремі шрифти чи збірки та експортувати шрифти на інший комп’ютер.</p>
+</d:entry>
+
+<d:entry id="formula">
+	<d:index><d:index_value>формула</d:index_value><d:index_title>формула</d:index_title></d:index>
+	<h1>формула</h1>
+	<p>Математичний вираз, який використовує операції для отримання значення. У програмі Numbers можна додавати формулу в клітинку таблиці для відображення значення, отриманого зі значень в інших клітинках таблиці.</p>
+</d:entry>
+
+<d:entry id="frame_range">
+	<d:index><d:index_value>діапазон кадрів</d:index_value><d:index_title>діапазон кадрів</d:index_title></d:index>
+	<h1>діапазон кадрів</h1>
+	<p>Набір відеокадрів, які складають частину відеокліпу або цілий кліп. У програмі iMovie можна вибирати та працювати з діапазоном кадрів.</p>
+</d:entry>
+
+<d:entry id="Front_Row">
+	<d:index><d:index_value>Front Row</d:index_value><d:index_title>Front Row</d:index_title></d:index>
+	<h1>Front Row</h1>
+	<p>Програма, яка постачалася з певними версіями Mac OS X. За допомогою програми Front Row можна шукати фільми, музику та фотографії на своєму комп’ютері, використовуючи пульт дистанційного керування Apple Remote.</p>
+</d:entry>
+
+<d:entry id="full_screen">
+	<d:index><d:index_value>повноекранний режим</d:index_value><d:index_title>повноекранний режим</d:index_title></d:index>
+	<h1>повноекранний режим</h1>
+	<p>У програмі iPhoto спосіб перегляду фотографій, коли використовується весь екран, а не його частина.</p>
+</d:entry>
+
+<d:entry id="function">
+	<d:index><d:index_value>функція</d:index_value><d:index_title>функція</d:index_title></d:index>
+	<h1>функція</h1>
+	<p>У програмі Numbers операція із назвою, яку можна включити у формулу для обчислень або маніпуляцій із даними в клітинці таблиці. Програма Numbers має функції для виконання звичайних математичних або фінансових операцій, отримання значень клітинок на основі пошуку, керування рядками тексту або отримання поточної дати і часу серед іншого. Кожна функція має ім’я, за яким іде один або кілька аргументів, закритих в лапки.</p>
+</d:entry>
+
+<d:entry id="GarageBand">
+	<d:index><d:index_value>GarageBand</d:index_value><d:index_title>GarageBand</d:index_title></d:index>
+	<h1>GarageBand</h1>
+	<p>Входить до набору творчих програм iLife від Apple Inc. За допомогою програми GarageBand можна створювати, виконувати та записувати оригінальну музику. Докладніше на <a href='http://www.apple.com/garageband/'>веб-сторінці GarageBand</a>.</p>
+</d:entry>
+
+<d:entry id="Grab">
+	<d:index><d:index_value>Grab</d:index_value><d:index_title>Grab</d:index_title></d:index>
+	<h1>Grab</h1>
+	<p>Програма для захоплення екрану в Mac OS X. Програма Grab призначена для створення знімків (зображень) всього екрана або його частини.</p>
+</d:entry>
+
+<d:entry id="Gracenote,_Inc.">
+	<d:index><d:index_value>Gracenote, Inc.</d:index_value><d:index_title>Gracenote, Inc.</d:index_title></d:index>
+	<h1>Gracenote, Inc.</h1>
+	<p>Компанія, яка утримує банк даних вмісту аудіокомпакт-дисків. Компанія Gracenote надає програмне забезпечення та дані для керування цифровими мультимедійними файлами та їхнього пошуку. Кілька комп’ютерних програм, разом з iTunes, використовують банк даних компакт-дисків (CDDB) компанії Gracenote.</p>
+</d:entry>
+
+<d:entry id="group_account">
+	<d:index><d:index_value>обліковий запис групи</d:index_value><d:index_title>обліковий запис групи</d:index_title></d:index>
+	<h1>обліковий запис групи</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X тип облікового запису, що складається з одного або кількох інших облікових записів користувача. Обліковий запис групи (інша назва «груповий обліковий запис») використовується для надання прав на відкритий доступ до файлів між двома або більше користувачами. Не можна входити в систему комп’ютера за допомогою імені облікового запису групи, на відміну від більшості інших облікових записів користувача.</p>
+</d:entry>
+
+<d:entry id="GSM">
+	<d:index><d:index_value>GSM</d:index_value><d:index_title>GSM</d:index_title></d:index>
+	<h1>GSM</h1>
+	<p>Скорочення для Global System for Mobile Communications, найпоширеніший стандарт для мобільних телефонів.</p>
+</d:entry>
+
+<d:entry id="guest_account">
+	<d:index><d:index_value>гостьовий обліковий запис</d:index_value><d:index_title>гостьовий обліковий запис</d:index_title></d:index>
+	<h1>гостьовий обліковий запис</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X тип облікового запису, створеного з метою надання тимчасового доступу для використання комп’ютера без створення окремого облікового запису користувача для кожного гостя. Гість може ввійти в систему комп’ютера без пароля. Для керування гостьовим обліковим записом можна використовувати параметри батьківського контролю. Гість не може змінювати інші облікові записи, настройки комп’ютера або входити в систему дистанційно. Файли, створені гостем у гостьовому обліковому записі, видаляються після виходу гостя із системи.</p>
+</d:entry>
+
+<d:entry id="GUID">
+	<d:index><d:index_value>GUID</d:index_value><d:index_title>GUID</d:index_title></d:index>
+	<h1>GUID</h1>
+	<p>Глобальний унікальний ідентифікатор. Шістнадцятковий рядок, який забезпечує унікальне значення для облікового запису користувача, групи записів або комп’ютерного списку. Також використовується для цифрового підпису користувача і групи для дозволів списку контролю доступу (ACL), щоб поєднати певних користувачів із участю в групі та вкладеній групі. Ідентифікатори GUID мають 128-розрядні значення, що майже унеможливлює генерування однакових ідентифікаторів.</p>
+</d:entry>
+
+<d:entry id="GUID_partition">
+	<d:index><d:index_value>розділ GUID</d:index_value><d:index_title>розділ GUID</d:index_title></d:index>
+	<h1>розділ GUID</h1>
+	<p>Схема розділів, що базується на глобальному унікальному ідентифікаторі (GUID). На комп’ютерах Macintosh із процесорами Intel операційну систему Mac OS X можна встановити лише на диски з схемою розділів GUID.</p>
+</d:entry>
+
+<d:entry id="Gutenprint">
+	<d:index><d:index_value>Gutenprint</d:index_value><d:index_title>Gutenprint</d:index_title></d:index>
+	<h1>Gutenprint</h1>
+	<p>Раніше відоме під назвою Gimp-Print, збірка програмного забезпечення для роботи з принтерами з відкритим вихідним кодом, до якої входять файли Printer PostScript Description (PPD) як складова Mac OS X. Програму Gutenprint можна використовувати, якщо для вашого принтера немає іншого програмного забезпечення або воно працює неналежним чином.</p>
+</d:entry>
+
+<d:entry id="hardware_port">
+	<d:index><d:index_value>апаратний порт</d:index_value><d:index_title>апаратний порт</d:index_title></d:index>
+	<h1>апаратний порт</h1>
+	<p>Будь-який із роз’ємів на комп’ютері, до якого можна підключити такі пристрої, як клавіатури та принтери. До звичайних апаратних портів відносяться USB, Firewire і Ethernet.</p>
+</d:entry>
+
+<d:entry id="HFS">
+	<d:index><d:index_value>HFS</d:index_value><d:index_title>HFS</d:index_title></d:index>
+	<h1>HFS</h1>
+	<p>Див. <a href='x-dictionary:r:Mac_OS_Standard_format:com.apple.dictionary.AppleDictionary'><b>Формат Mac OS Standard</b></a>.</p>
+</d:entry>
+
+<d:entry id="HFS_Plus">
+	<d:index><d:index_value>HFS Plus</d:index_value><d:index_title>HFS Plus</d:index_title></d:index>
+	<h1>HFS Plus</h1>
+	<p>Див. <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>Формат Mac OS Extended</b></a>.</p>
+</d:entry>
+
+<d:entry id="home_folder">
+	<d:index><d:index_value>домашня папка</d:index_value><d:index_title>домашня папка</d:index_title></d:index>
+	<h1>домашня папка</h1>
+	<p>Папка, яка створюється для кожного користувача комп’ютера під час першого налагодження облікового запису користувача. Домашня папка насправді не називається «домашньою», її ім’я відповідає короткому імені користувача, указаному в обліковому записі. Якщо ви єдиний користувач комп’ютера, створюється лише один обліковий запис користувача та одна домашня папка. У домашній папці зберігаються документи, музика, зображення, параметри та настройки тощо.</p>
+</d:entry>
+
+<d:entry id="HyperCard">
+	<d:index><d:index_value>HyperCard</d:index_value><d:index_title>HyperCard</d:index_title></d:index>
+	<h1>HyperCard</h1>
+	<p>Програма Apple, вперше випущена у 1987 році та скасована у 2004 році. Програма HyperCard була однією з перших успішних програм для роботи в гіперсередовищі.</p>
+</d:entry>
+
+<d:entry id="HyperTalk">
+	<d:index><d:index_value>HyperTalk</d:index_value><d:index_title>HyperTalk</d:index_title></d:index>
+	<h1>HyperTalk</h1>
+	<p>Мова програмування, яка використовується з HyperCard, вперше випущена в 1987 році і скасована в 2004 році. Мовою HyperTalk здебільшого користувалися програмісти-початківці. Програми HyperTalk (називаються «скрипти») написані мовою, що не відрізняються від письмової англійської.</p>
+</d:entry>
+
+<d:entry id="iBook">
+	<d:index><d:index_value>iBook</d:index_value><d:index_title>iBook</d:index_title></d:index>
+	<h1>iBook</h1>
+	<p>Лінійка портативних комп’ютерів від Apple Inc., які випускалися з 1999 по 2006 рр. Комп’ютери iBook призначалися для домашнього використання та навчання. У 2006 році лінія iBook була замінена на MacBook.</p>
+</d:entry>
+
+<d:entry id="iBooks_app">
+	<d:index><d:index_value>Програма iBooks</d:index_value><d:index_title>Програма iBooks</d:index_title></d:index>
+	<h1>Програма iBooks</h1>
+	<p>Програма Apple, доступна для iPhone, iPod touch та iPad, за допомогою якої можна завантажувати та читати e-книги (електронні книги у форматі ePub).</p>
+</d:entry>
+
+<d:entry id="iCal">
+	<d:index><d:index_value>iCal</d:index_value><d:index_title>iCal</d:index_title></d:index>
+	<h1>iCal</h1>
+	<p>Програма-календар Apple у Mac OS X, за допомогою якої можна керувати списками зустрічей і задач. Також програму iCal можна використовувати для синхронізації інформації між комп’ютерами, телефонами та іншими пристроями.</p>
+</d:entry>
+
+<d:entry id="iChat">
+	<d:index><d:index_value>iChat</d:index_value><d:index_title>iChat</d:index_title></d:index>
+	<h1>iChat</h1>
+	<p>Програма для обміну миттєвими повідомленнями Apple у Mac OS X. За допомогою iChat можна обмінюватися повідомленнями з учасниками служби MobileMe, а також користувачами інших програм для обміну миттєвими повідомленнями, наприклад AOL Instant Messenger (AIM), Bonjour, Google Talk і Jabber.</p>
+</d:entry>
+
+<d:entry id="iChat_Theater">
+	<d:index><d:index_value>iChat Theater</d:index_value><d:index_title>iChat Theater</d:index_title></d:index>
+	<h1>iChat Theater</h1>
+	<p>Функція програми iChat, за допомогою якої можна показувати файли, фотографії, слайд-шоу та фільми у відеовікні програми iChat. Ви керуєте презентацією зі свого комп’ютера, а ваші друзі переглядають її на своїх.</p>
+</d:entry>
+
+<d:entry id="iCloud">
+	<d:index><d:index_value>iCloud</d:index_value><d:index_title>iCloud</d:index_title></d:index>
+	<h1>iCloud</h1>
+	<p>Послуга «хмари» від Apple для зберігання вашої музики, фотографій, програм, контактів, календарів тощо, а також передавання їх через безпроводовий зв’язок на всі ваші пристрої за технологією Push. Служба iCloud повністю підтримується вашими програмами, отже все відбувається автоматично. Додаткові відомості можна знайти на веб-сторінці <a href='http://www.apple.com/icloud/'>www.apple.com/icloud</a>.</p>
+</d:entry>
+
+<d:entry id="icon">
+	<d:index><d:index_value>піктограма</d:index_value><d:index_title>піктограма</d:index_title></d:index>
+	<h1>піктограма</h1>
+	<p>Символ, що представляє програму, файл або папку.</p>
+</d:entry>
+
+<d:entry id="iDisk">
+	<d:index><d:index_value>iDisk</d:index_value><d:index_title>iDisk</d:index_title></d:index>
+	<h1>iDisk</h1>
+	<p>Індивідуальний простір для зберігання даних на серверах Apple в Інтернеті, доступний для користувачів служби MobileMe. За допомогою iDisk можна розміщувати веб-сайти, зберігати або робити резервні копії документів та обмінюватися файлами з будь-ким, хто підключений до Інтернету.</p>
+</d:entry>
+
+<d:entry id="iDVD">
+	<d:index><d:index_value>iDVD</d:index_value><d:index_title>iDVD</d:index_title></d:index>
+	<h1>iDVD</h1>
+	<p>Програма Apple для створення власних DVD-дисків із фільмами та цифровими фотографіями. Програма iDVD містить теми та шаблони, розроблені професіоналами. Програма iDVD входить до набору програмного забезпечення iLife. Докладніше на <a href='http://www.apple.com/ilife/idvd/'>веб-сторінц iDVD</a>.</p>
+</d:entry>
+
+<d:entry id="iDVD_themes">
+	<d:index><d:index_value>теми iDVD</d:index_value><d:index_title>теми iDVD</d:index_title></d:index>
+	<h1>теми iDVD</h1>
+	<p>Функція програми iDVD на комп’ютерах Macintosh. Теми iDVD надають меню проектів iDVD професійного вигляду. Теми включають групу або «родину» меню, які використовують спільний набір елементів дизайну. Типова родина тем має розкладки для головного меню проекту, меню вибору сцен та меню «додаткових функцій».</p>
+</d:entry>
+
+<d:entry id="iLife">
+	<d:index><d:index_value>iLife</d:index_value><d:index_title>iLife</d:index_title></d:index>
+	<h1>iLife</h1>
+	<p>Набір програм Apple для створення музики, фільмів, цифрових фотографій, власних DVD-дисків та веб-сайтів. До iLife входять програми GarageBand, iPhoto, iMovie, iDVD, iTunes та iWeb. Докладніше на <a href='http://www.apple.com/ilife/'>веб-сторінці iLife</a>.</p>
+</d:entry>
+
+<d:entry id="iMac">
+	<d:index><d:index_value>iMac</d:index_value><d:index_title>iMac</d:index_title></d:index>
+	<h1>iMac</h1>
+	<p>Лінійка настільних комп’ютерів від Apple Inc. Комп’ютери iMac випускаються з 1998 року.</p>
+</d:entry>
+
+<d:entry id="Image_Capture">
+	<d:index><d:index_value>Image Capture</d:index_value><d:index_title>Image Capture</d:index_title></d:index>
+	<h1>Image Capture</h1>
+	<p>Програма Apple, за допомогою якої можна відвантажувати зображення з цифрової камери або сканера, підключеного до комп’ютера або мережі.</p>
+</d:entry>
+
+<d:entry id="iMix">
+	<d:index><d:index_value>iMix</d:index_value><d:index_title>iMix</d:index_title></d:index>
+	<h1>iMix</h1>
+	<p>Підбірка iTunes, до якої надано відкритий доступ для інших.</p>
+</d:entry>
+
+<d:entry id="iMovie">
+	<d:index><d:index_value>iMovie</d:index_value><d:index_title>iMovie</d:index_title></d:index>
+	<h1>iMovie</h1>
+	<p>Програма Apple, за допомогою якої можна імпортувати цифровий відеоматеріал з камери, редагувати його, додавати звукову доріжку та ефекти і зберігати його у вигляді фільму, який можна опублікувати на веб-сайти чи передати на диск. Програма iMovie входить до набору програмного забезпечення iLife. Докладніше на <a href='http://www.apple.com/imovie/'>веб-сторінці iMovie</a>.</p>
+</d:entry>
+
+<d:entry id="infrared_receiver">
+	<d:index><d:index_value>інфрачервоний приймач</d:index_value><d:index_title>інфрачервоний приймач</d:index_title></d:index>
+	<h1>інфрачервоний приймач</h1>
+	<p>Скорочено «ІЧ». Пристрій, який використовує інфрачервоний електромагнітний спектр для бездротового зв’язку. Більшість комп’ютерів Macintosh оснащена інфрачервоним портом для отримання сигналу від Apple Remote.</p>
+</d:entry>
+
+<d:entry id="Ink">
+	<d:index><d:index_value>Ink</d:index_value><d:index_title>Ink</d:index_title></d:index>
+	<h1>Ink</h1>
+	<p>Технологія розпізнавання рукопису на комп’ютерах Macintosh. Технологія Ink працює разом із графічним планшетом та стилусом, підключеними до комп’ютера. Ink перекладає рукописні слова, написані на планшеті, у друковані.</p>
+</d:entry>
+
+<d:entry id="Inkwell">
+	<d:index><d:index_value>Inkwell</d:index_value><d:index_title>Inkwell</d:index_title></d:index>
+	<h1>Inkwell</h1>
+	<p>Див. <b><a href='x-dictionary:r:Ink:com.apple.dictionary.AppleDictionary'>Ink</a></b>.</p>
+</d:entry>
+
+<d:entry id="inline_object">
+	<d:index><d:index_value>вбудований об’єкт</d:index_value><d:index_title>вбудований об’єкт</d:index_title></d:index>
+	<h1>вбудований об’єкт</h1>
+	<p>У програмі Pages зображення, графічний елемент або інший об’єкт, вбудований у текст. Положення вбудованого об’єкта змінюється після додавання тексту або інших графічних елементів на сторінці. Якщо додати більше тексту над вбудованим об’єктом, він буде відсуватися із введенням тексту.</p>
+</d:entry>
+
+<d:entry id="Input_menu">
+	<d:index><d:index_value>Меню вводу</d:index_value><d:index_title>Меню вводу</d:index_title></d:index>
+	<h1>Меню вводу</h1>
+	<p>Меню для переходу між методами вводу, якщо на комп’ютері використовується більше одного метода вводу.</p>
+</d:entry>
+
+<d:entry id="input_method">
+	<d:index><d:index_value>спосіб вводу</d:index_value><d:index_title>спосіб вводу</d:index_title></d:index>
+	<h1>спосіб вводу</h1>
+	<p>Програма, за допомогою якої користувачі комп’ютерів можуть вводити складні символи, наприклад китайські, японські або корейські ієрогліфи, використовуючи західну клавіатуру.</p>
+</d:entry>
+
+<d:entry id="inspector">
+	<d:index><d:index_value>оглядач</d:index_value><d:index_title>оглядач</d:index_title></d:index>
+	<h1>оглядач</h1>
+	<p>У програмному забезпечення вікно, в якому відображаються поточні параметри вибраного тексту або графіки, та, за допомогою якого можна швидко змінити ці параметри, переглядаючи результати. Багато програм Mac OS X застосовують вікно оглядача, включаючи Pages, Keynote і Numbers.</p>
+</d:entry>
+
+<d:entry id="installer">
+	<d:index><d:index_value>інсталятор</d:index_value><d:index_title>інсталятор</d:index_title></d:index>
+	<h1>інсталятор</h1>
+	<p>Програма в Mac OS X. Інсталятор видобуває та встановлює файли з «пакетів», файлів з розширенням .pkg. Програмне забезпечення для комп’ютерів Macintosh з Mac OS X, як правило, постачається у форматі файлів із розширенням .pkg.</p>
+</d:entry>
+
+<d:entry id="Instant_Alpha">
+	<d:index><d:index_value>Instant Alpha</d:index_value><d:index_title>Instant Alpha</d:index_title></d:index>
+	<h1>Instant Alpha</h1>
+	<p>Функція, доступна в програмах Mac OS X, включаючи Pages, Aperture та Preview. На зображеннях з однотонним тлом, наприклад людина на тлі чистого синього неба, за допомогою функції Instant Alpha можна вилучити тло, щоб частина зображення, що залишиться, мала прозоре тло.</p>
+</d:entry>
+
+<d:entry id="Interface_Builder">
+	<d:index><d:index_value>Interface Builder</d:index_value><d:index_title>Interface Builder</d:index_title></d:index>
+	<h1>Interface Builder</h1>
+	<p>Програма від Apple Inc., яку розробники можуть використовувати для створення графічних інтерфейсів користувача для програм Mac OS X та iPhone.</p>
+</d:entry>
+
+<d:entry id="Internet_Connect">
+	<d:index><d:index_value>Internet Connect</d:index_value><d:index_title>Internet Connect</d:index_title></d:index>
+	<h1>Internet Connect</h1>
+	<p>Програма в Mac OS X. За допомогою програми Internet Connect можна створити комутоване, Ethernet (PPPoE) або Virtual Private Network (VPN) підключення, чи підключитися до Інтернету через базову станцію AirPort. Також програму Internet Connect можна використовувати для керування підключеннями до Bluetooth-пристроїв, наприклад принтерів.</p>
+</d:entry>
+
+<d:entry id="Internet_port">
+	<d:index><d:index_value>Інтернет-порт</d:index_value><d:index_title>Інтернет-порт</d:index_title></d:index>
+	<h1>Інтернет-порт</h1>
+	<p>Число, яке вказує на протокол, що використовується сервером в Інтернеті. Веб-сервери, зазвичай, використовують порт 80.</p>
+</d:entry>
+
+<d:entry id="invisibles">
+	<d:index><d:index_value>невидимі символи</d:index_value><d:index_title>невидимі символи</d:index_title></d:index>
+	<h1>невидимі символи</h1>
+	<p>У програмі Pages та інших програмах для обробки тексту знаки форматування, які, як правило, не відображаються. Невидимі символи включають табуляцію, абзаци, розриви сторінок і розділів, пробіли та інші знаки форматування. Можна зробити так, щоб невидимі символи відображалися.</p>
+</d:entry>
+
+<d:entry id="iOS">
+	<d:index><d:index_value>iOS</d:index_value><d:index_title>iOS</d:index_title></d:index>
+	<h1>iOS</h1>
+	<p>Операційна система для iPhone, iPod touch, iPad і Apple TV.</p>
+</d:entry>
+
+<d:entry id="iPad">
+	<d:index><d:index_value>iPad</d:index_value><d:index_title>iPad</d:index_title></d:index>
+	<h1>iPad</h1>
+	<p>Комп’ютер-планшет від Apple Inc. iPad не має звичайної клавіатури або панелі клавіш, натомість у нього є екран Multi-Touch із віртуальною клавіатурою та кнопками. iPad працює під керівництвом операційної системи iOS та підтримує багато програм для iPhone і iPod touch.</p>
+</d:entry>
+
+<d:entry id="iPhone">
+	<d:index><d:index_value>iPhone</d:index_value><d:index_title>iPhone</d:index_title></d:index>
+	<h1>iPhone</h1>
+	<p>Пристрій, в якому поєднано мобільний телефон, мультимедійний плеєр та інструмент бездротового підключення до Інтернету від Apple Inc. iPhone не має звичайної клавіатури або панелі клавіш, натомість у нього є сенсорний екран із віртуальною клавіатурою та кнопками. Докладніше на <a href='http://www.apple.com/iphone/'>веб-сторінці iPhone</a>.</p>
+</d:entry>
+
+<d:entry id="iPhoto">
+	<d:index><d:index_value>iPhoto</d:index_value><d:index_title>iPhoto</d:index_title></d:index>
+	<h1>iPhoto</h1>
+	<p>Програма Apple для зберігання цифрових фотографій, впорядкування та публікації на веб-сайтах, записування на диск та друку альбомів. Програма iPhoto входить до набору програмного забезпечення iLife. Докладніше на <a href='http://www.apple.com/iphoto/'>веб-сторінці iPhoto</a>.</p>
+</d:entry>
+
+<d:entry id="iPod">
+	<d:index><d:index_value>iPod</d:index_value><d:index_title>iPod</d:index_title></d:index>
+	<h1>iPod</h1>
+	<p>Лінійка портативних музичних плеєрів від Apple Inc. Плеєри iPod бувають різних розмірів, починаючи з iPod shuffle і закінчуючи плеєрами iPod, які відтворюють відео. Плеєри iPod можуть імпортувати музику з магазину Apple iTunes Store та з компакт-дисків. Плеєри розроблені для роботи з програмою iTunes, доступною на комп’ютерах Macintosh та Windows.</p>
+</d:entry>
+
+<d:entry id="iPod_classic">
+	<d:index><d:index_value>iPod classic</d:index_value><d:index_title>iPod classic</d:index_title></d:index>
+	<h1>iPod classic</h1>
+	<p>Портативний музичний плеєр із лінійки iPod від Apple Inc. Серед усіх моделей iPod classic має найбільший об’єм пам’яті для зберігання даних.</p>
+</d:entry>
+
+<d:entry id="iPod_nano">
+	<d:index><d:index_value>iPod nano</d:index_value><d:index_title>iPod nano</d:index_title></d:index>
+	<h1>iPod nano</h1>
+	<p>Портативний музичний плеєр із лінійки iPod від Apple Inc. Плеєр iPod nano має сенсорний екран та FM-радіо приймач.</p>
+</d:entry>
+
+<d:entry id="iPod_shuffle">
+	<d:index><d:index_value>iPod shuffle</d:index_value><d:index_title>iPod shuffle</d:index_title></d:index>
+	<h1>iPod shuffle</h1>
+	<p>Найменший портативний музичний плеєр лінійки продуктів iPod від Apple Inc.</p>
+</d:entry>
+
+<d:entry id="iPod_touch">
+	<d:index><d:index_value>iPod touch</d:index_value><d:index_title>iPod touch</d:index_title></d:index>
+	<h1>iPod touch</h1>
+	<p>Портативний музичний плеєр із лінійки iPod від Apple Inc. Плеєр iPod touch має сенсорний екран та веб-браузер Safari.</p>
+</d:entry>
+
+<d:entry id="IR">
+	<d:index><d:index_value>ІЧ</d:index_value><d:index_title>ІЧ</d:index_title></d:index>
+	<h1>ІЧ</h1>
+	<p>Див. <a href='x-dictionary:r:infrared_receiver:com.apple.dictionary.AppleDictionary'><b>Інфрачервоний приймач</b></a>.</p>
+</d:entry>
+
+<d:entry id="iSight">
+	<d:index><d:index_value>iSight</d:index_value><d:index_title>iSight</d:index_title></d:index>
+	<h1>iSight</h1>
+	<p>Цифрова камера від Apple Inc. Деякі комп’ютери Macintosh мають вбудовану маленьку камери iSight.</p>
+</d:entry>
+
+<d:entry id="iSync">
+	<d:index><d:index_value>iSync</d:index_value><d:index_title>iSync</d:index_title></d:index>
+	<h1>iSync</h1>
+	<p>Програма в Mac OS X. Програма iSync синхронізує дані в iCal і Address Book з MobileMe та з пристроями, включаючи портативні музичні плеєри iPod, мобільні телефони та кишенькові органайзери.</p>
+</d:entry>
+
+<d:entry id="iTunes">
+	<d:index><d:index_value>iTunes</d:index_value><d:index_title>iTunes</d:index_title></d:index>
+	<h1>iTunes</h1>
+	<p>Програма Apple у Mac OS X, за допомогою якої можна імпортувати музику, подкасти та відео з компакт-дисків або магазину iTunes Store, впорядковувати мультимедійні файли у власні альбоми та підбірки, і записувати їх на диски або передавати на плеєр iPod чи інші мультимедійні плеєри. Програма iTunes також широко застосовується на комп’ютерах з ОС Windows.</p>
+</d:entry>
+
+<d:entry id="iWeb">
+	<d:index><d:index_value>iWeb</d:index_value><d:index_title>iWeb</d:index_title></d:index>
+	<h1>iWeb</h1>
+	<p>Програма Apple для створення та публікації веб-сторінок без жодного знання мов веб-програмування. Програма iWeb має професійні шаблони для блогів та інших веб-сторінок, а також дозволяє перетягувати такі мультимедійні файли, як фотографії та фільми. Програма iWeb входить до набору програмного забезпечення iLife. Докладніше на <a href='http://www.apple.com/iweb/'>веб-сторінці iWeb</a>.</p>
+</d:entry>
+
+<d:entry id="iWork">
+	<d:index><d:index_value>iWork</d:index_value><d:index_title>iWork</d:index_title></d:index>
+	<h1>iWork</h1>
+	<p>Набір офісних програм Apple для створення та виготовлення документів і презентацій. iWork містить програми Keynote для створення високоякісних презентацій, Pages для роботи з текстом і Numbers для створення електронних таблиць. Докладніше на <a href='http://www.apple.com/iwork/'>веб-сторінці iWork</a>.</p>
+</d:entry>
+
+<d:entry id="Jabber">
+	<d:index><d:index_value>Jabber</d:index_value><d:index_title>Jabber</d:index_title></d:index>
+	<h1>Jabber</h1>
+	<p>Програма для обміну миттєвими повідомленнями в Інтернеті з відкритим вихідним кодом.</p>
+</d:entry>
+
+<d:entry id="Jaguar">
+	<d:index><d:index_value>Jaguar</d:index_value><d:index_title>Jaguar</d:index_title></d:index>
+	<h1>Jaguar</h1>
+	<p>Торгова марка для Mac OS X версії 10.2, третій масштабний випуск операційної системи для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="Java">
+	<d:index><d:index_value>Java</d:index_value><d:index_title>Java</d:index_title></d:index>
+	<h1>Java</h1>
+	<p>Родина програмних продуктів та технічних стандартів від компанії Sun Microsystems для розроблення програм, здатних функціонувати на різних типах комп’ютерів.</p>
+</d:entry>
+
+<d:entry id="Javascript">
+	<d:index><d:index_value>JavaScript</d:index_value><d:index_title>JavaScript</d:index_title></d:index>
+	<h1>JavaScript</h1>
+	<p>Мова для написання скриптів, зазвичай, використовується на веб-сторінках для керування спеціальними ефектами та створення інтерактивності.</p>
+</d:entry>
+
+<d:entry id="Journaled_format">
+	<d:index><d:index_value>формат Journaled</d:index_value><d:index_title>формат Journaled</d:index_title></d:index>
+	<h1>формат Journaled</h1>
+	<p>Див. <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>Формат Mac OS Extended</b></a>.</p>
+</d:entry>
+
+<d:entry id="Ken_Burns_effect">
+	<d:index><d:index_value>ефект Ken Burns</d:index_value><d:index_title>ефект Ken Burns</d:index_title></d:index>
+	<h1>ефект Ken Burns</h1>
+	<p>Спеціальний ефект, названий на честь американського документаліста Кена Бернса, створює рух поверх нерухомого зображення, ніби камера рухається вдовж об’єкта (панарама) або наближається чи віддаляється від нього (зум). Ефект Ken Burns можна використовувати в програмі iMovie.</p>
+</d:entry>
+
+<d:entry id="Kerberos">
+	<d:index><d:index_value>Kerberos</d:index_value><d:index_title>Kerberos</d:index_title></d:index>
+	<h1>Kerberos</h1>
+	<p>Протокол автентифікації для комп’ютерних мереж, за допомогою якого користувачі, що спілкуються через незахищену мережу, можуть підтверджувати свою особу одне одному в безпечний спосіб.</p>
+</d:entry>
+
+<d:entry id="kernel">
+	<d:index><d:index_value>ядро</d:index_value><d:index_title>ядро</d:index_title></d:index>
+	<h1>ядро</h1>
+	<p>Частина операційної системи, яка керує пам’ятю, розподіленням ресурсів та іншими службами нижчого рівня, необхідними для системи.</p>
+</d:entry>
+
+<d:entry id="kernel_panic">
+	<d:index><d:index_value>паніка ядра</d:index_value><d:index_title>паніка ядра</d:index_title></d:index>
+	<h1>паніка ядра</h1>
+	<p>Тип помилки, яка виникає, коли ядро операційної системи отримує команду в неочікуваному форматі або, яку воно не може обробити належним чином. Паніка ядра також може виникнути, коли операційна система нездатна відновитися після інших типів помилок. Паніку ядра може спричинити пошкоджене або несумісне програмне забезпечення чи, рідше, пошкоджене або несумісне обладнання.</p>
+</d:entry>
+
+<d:entry id="Keyboard_Viewer">
+	<d:index><d:index_value>Keyboard Viewer</d:index_value><d:index_title>Keyboard Viewer</d:index_title></d:index>
+	<h1>Keyboard Viewer</h1>
+	<p>Програма в Mac OS X. За допомогою програми Keyboard Viewer можна переглянути розкладку символів на клавіатурі для вибраної мови, а також бачити та вводити символи, які використовуються в інших мовах.</p>
+</d:entry>
+
+<d:entry id="keychain">
+	<d:index><d:index_value>в’язка</d:index_value><d:index_title>в’язка</d:index_title></d:index>
+	<h1>в’язка</h1>
+	<p>Збережений набір паролів. Наприклад, одна в’язка може зберігати паролі програм, серверів та веб-сайтів, які використовуються для роботи, інша — усі паролі, які ви використовуєте для здійснення покупок в Інтернеті. В’язки допомагають зменшити кількість паролів, які потрібно пам’ятати.</p>
+</d:entry>
+
+<d:entry id="Keychain_Access">
+	<d:index><d:index_value>Keychain Access</d:index_value><d:index_title>Keychain Access</d:index_title></d:index>
+	<h1>Keychain Access</h1>
+	<p>Система керування паролями Apple, вбудована в Mac OS X. У в’язці зберігаються усі паролі, ключі та сертифікати, потрібні для програм, серверів і веб-сайтів. Після відкривання елемента або підключення до пристрою, який вимагає пароль, в’язка пропонує його, тобто його не потрібно вводити вручну.</p>
+</d:entry>
+
+<d:entry id="keychain_password">
+	<d:index><d:index_value>пароль для в’язки</d:index_value><d:index_title>пароль для в’язки</d:index_title></d:index>
+	<h1>пароль для в’язки</h1>
+	<p>Пароль для блокування та розблокування в’язки. Ваш пароль в’язки такий самий, як пароль входу в систему, допоки ви не створите інший пароль за допомогою програми Keychain Access.</p>
+</d:entry>
+
+<d:entry id="Keynote">
+	<d:index><d:index_value>Keynote</d:index_value><d:index_title>Keynote</d:index_title></d:index>
+	<h1>Keynote</h1>
+	<p>Програма Apple для створення професійних презентацій із слайд-шоу високої якості. Програма Keynote включає шаблони, теми, кінопереходи та анімований текст. Програма Keynote входить до набору офісних програм iWork. Докладніше на a href='http://www.apple.com/iwork/keynote/'>веб-сторінці Keynote</a>.</p>
+</d:entry>
+
+<d:entry id="kiosk_mode">
+	<d:index><d:index_value>режим «кіоск»</d:index_value><d:index_title>режим «кіоск»</d:index_title></d:index>
+	<h1>режим «кіоск»</h1>
+	<p>DVD-диск, який автоматично починає відтворення та не зупиняється після вставлення в мультимедійний програвач. Диски в режимі «кіоску» можна створити за допомогою програми iDVD від Apple для створення власних DVD-дисків.</p>
+</d:entry>
+
+<d:entry id="Launchpad">
+	<d:index><d:index_value>Launchpad</d:index_value><d:index_title>Launchpad</d:index_title></d:index>
+	<h1>Launchpad</h1>
+	<p>Засіб запуску програм, що постачається разом із Mac OS X. Доступ до Launchpad можна отримати з Dock, клацнувши піктограму Launchpad. Launchpad включає піктограми всіх програм, які містяться в папці «Програми».</p>
+</d:entry>
+
+<d:entry id="Leopard">
+	<d:index><d:index_value>Leopard</d:index_value><d:index_title>Leopard</d:index_title></d:index>
+	<h1>Leopard</h1>
+	<p>Торгова марка для Mac OS X версії 10.5, шостий масштабний випуск операційної системи для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="Lion">
+	<d:index><d:index_value>Lion</d:index_value><d:index_title>Lion</d:index_title></d:index>
+	<h1>Lion</h1>
+	<p>Назва Mac OS X версії 10.7, яка є торговельною маркою, восьмий масштабний випуск операційної системи для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="lock_icon">
+	<d:index><d:index_value>піктограма замка</d:index_value><d:index_title>піктограма замка</d:index_title></d:index>
+	<h1>піктограма замка</h1>
+	<p>Піктограма, яка використовується програмами Mac OS. У програмі Finder замок вказує на те, що файл або папка захищені паролем. На панелі програми Safari замок свідчить про те, що обмін даними з веб-сайтом буде шифруватися. Піктограма замка використовується в багатьох інших програмах, щоб указати, що потрібно ввести пароль для відкривання елемента або підключення до сервера.</p>
+</d:entry>
+
+<d:entry id="looping">
+	<d:index><d:index_value>безперервне відтворення</d:index_value><d:index_title>безперервне відтворення</d:index_title></d:index>
+	<h1>безперервне відтворення</h1>
+	<p>Режим, коли фільм або слайд-шоу починають відтворюватися знову після свого завершення та відтворюються безперервно. Безперервне відтворення для фільмів і слайд-шоу можна встановити за допомогою програми iDVD від Apple для створення власних DVD-дисків.</p>
+</d:entry>
+
+<d:entry id=".Mac">
+	<d:index><d:index_value>.Mac</d:index_value><d:index_title>.Mac</d:index_title></d:index>
+	<h1>.Mac</h1>
+	<p>Набір Інтернет-служб, створених для користувачів комп’ютерів Macintosh (вимовляється як «дот мак»). Замінено на <a href='x-dictionary:r:MobileMe:com.apple.dictionary.AppleDictionary'><b>MobileMe</b></a>.</p>
+</d:entry>
+
+<d:entry id="Mac">
+	<d:index><d:index_value>Mac</d:index_value><d:index_title>Mac</d:index_title></d:index>
+	<h1>Mac</h1>
+	<p>Комп’ютер Apple, також відомий як комп’ютер Macintosh. Також див. <a href='x-dictionary:r:Macintosh:com.apple.dictionary.AppleDictionary'><b>Macintosh</b></a>.</p>
+</d:entry>
+
+<d:entry id="MacBook">
+	<d:index><d:index_value>MacBook, MacBook Pro</d:index_value><d:index_title>MacBook, MacBook Pro</d:index_title></d:index>
+	<h1>MacBook, MacBook Pro</h1>
+	<p>Лінійка портативних комп’ютерів від Apple Inc., оснащених процесорами Intel Core Duo або Intel Core 2 Duo. Після випуску в 2006 році комп’ютери MacBook замінили серії комп’ютерів iBook G4 та PowerBook.</p>
+</d:entry>
+
+<d:entry id="MacBook_Air">
+	<d:index><d:index_value>MacBook Air</d:index_value><d:index_title>MacBook Air</d:index_title></d:index>
+	<h1>MacBook Air</h1>
+	<p>Легкий портативний комп’ютер від Apple Inc., обладнаний процесорами Intel Core Duo або Intel Core 2 Duo та твердотілим жорстким диском за бажанням. Комп’ютер MacBook Air має вагу 3 фунти (1,36 кг), його товщина складає 0,76 дюйма (1,93 см) на найтовстішій ділянці та 0,16 дюйма (0,4 см) на найтоншій. Випущений у 2008 році.</p>
+</d:entry>
+
+<d:entry id="Macintosh">
+	<d:index><d:index_value>Macintosh</d:index_value><d:index_title>Macintosh</d:index_title></d:index>
+	<h1>Macintosh</h1>
+	<p>Лінійка персональних комп’ютерів від Apple Inc. Після випуску в 1984 році комп’ютер Macintosh став першим персональним комп’ютером, у якому замість командного рядка використовувався графічний інтерфейс користувача (GUI) і миша, що принесло комерційний успіх.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Extended_format">
+	<d:index><d:index_value>формат Mac OS Extended</d:index_value><d:index_title>формат Mac OS Extended</d:index_title></d:index>
+	<h1>формат Mac OS Extended</h1>
+	<p>Формат жорсткого диска, що підтримується Mac OS версії 8.1 або пізнішої версії та збільшує кількість елементарних блоків (одиниць зберігання) на диску, у порівнянні з попередніми форматами дисків, які використовувалися Mac OS. Цей формат вміщує більше 65 000 файлів на жорсткому диску. Формат Mac OS Extended оптимізує здатність зберігання великих жорстких дисків, зменшуючи мінімальний розмір одного файлу. На томі у форматі Mac OS Extended може виконуватися «ведення журналу», коли операційна система веде безперервний журнал змін файлів, розміщених у томі. За допомогою цього журналу операційна система може відновити том до стану, коли його можна використовувати, якщо через перебій живлення чи іншу проблему роботу диска було перервано та пошкоджено файли.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Standard_format">
+	<d:index><d:index_value>формат Mac OS Standard</d:index_value><d:index_title>формат Mac OS Standard</d:index_title></d:index>
+	<h1>формат Mac OS Standard</h1>
+	<p>Формат жорсткого диска, який підтримується Mac OS версії 8.0 та попередніх версій.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X">
+	<d:index><d:index_value>Mac OS X</d:index_value><d:index_title>Mac OS X</d:index_title></d:index>
+	<h1>Mac OS X</h1>
+	<p>Операційна система для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X_Server">
+	<d:index><d:index_value>Mac OS X Server</d:index_value><d:index_title>Mac OS X Server</d:index_title></d:index>
+	<h1>Mac OS X Server</h1>
+	<p>Серверна платформа, що підтримує готові клієнти Mac, Windows, UNIX та Linux та надає набір гнучких групових і мережних служб разом із вдосконаленими інструментами дистанційного керування.</p>
+</d:entry>
+
+<d:entry id="MacTCP">
+	<d:index><d:index_value>MacTCP</d:index_value><d:index_title>MacTCP</d:index_title></d:index>
+	<h1>MacTCP</h1>
+	<p>Стандартний TCP/IP (мережний протокол) для комп’ютерів Macintosh до версії 7.5.1 Mac OS. Його було замінено у 1995 році на Open Transport.</p>
+</d:entry>
+
+<d:entry id="Mail">
+	<d:index><d:index_value>Mail</d:index_value><d:index_title>Mail</d:index_title></d:index>
+	<h1>Mail</h1>
+	<p>Програма для роботи з електронною поштою Apple у Mac OS X.</p>
+</d:entry>
+
+<d:entry id="masking">
+	<d:index><d:index_value>накладання маски</d:index_value><d:index_title>накладання маски</d:index_title></d:index>
+	<h1>накладання маски</h1>
+	<p>Спосіб обтинання зображення, коли область, яку потрібно зберегти, накривається («накладається маска»). У програмі для оброблення тексту та форматування сторінок Pages можна накласти маску на зображення у вигляді прямокутника або іншій вибраній формі.</p>
+</d:entry>
+
+<d:entry id="master_object">
+	<d:index><d:index_value>шаблонний об’єкт</d:index_value><d:index_title>шаблонний об’єкт</d:index_title></d:index>
+	<h1>шаблонний об’єкт</h1>
+	<p>У програмі Pages водяний знак, логотип або інше зображення на тлі, яке повторюється у певному місці на кожній сторінці всього документа у певному місці всього документа.</p>
+</d:entry>
+
+<d:entry id="master_password">
+	<d:index><d:index_value>мастер-пароль</d:index_value><d:index_title>мастер-пароль</d:index_title></d:index>
+	<h1>мастер-пароль</h1>
+	<p>Пароль, який надає доступ до облікового запису, захищеного програмою FileVault. Якщо користувач забув свій пароль до облікового запису, захищеного FileVault, адміністратор може використати мастер-пароль для доступу до цього облікового запису та змінити пароль FileVault. Якщо ви забули мастер-пароль, іншого способу отримати доступ до облікових записів, захищених FileVault, не існує, а файли та настройки в них втрачено.</p>
+</d:entry>
+
+<d:entry id="media_placeholder">
+	<d:index><d:index_value>мультимедійна мітка-заповнювач</d:index_value><d:index_title>мультимедійна мітка-заповнювач</d:index_title></d:index>
+	<h1>мультимедійна мітка-заповнювач</h1>
+	<p>У шаблонах програм Pages і Keynote файл, який можна замінити на свій файл, перетягнувши на його місце. Мультимедійну мітку-заповнювач можна розпізнати, навівши на неї курсор; з’явиться довідкова інструкція перетягнути свій файл на місце мітки.</p>
+</d:entry>
+
+<d:entry id="Migration_Assistant">
+	<d:index><d:index_value>Migration Assistant</d:index_value><d:index_title>Migration Assistant</d:index_title></d:index>
+	<h1>Migration Assistant</h1>
+	<p>Програма Mac OS X, за допомогою якої можна перенести файли та потрібні настройки із старого комп’ютера Mac на новий. Для використання програми Migration Assistant обидва комп’ютери повинні мати Mac OS X та порти FireWire або бути підключеними до одної бездротової мережі.</p>
+</d:entry>
+
+<d:entry id="mirrored_displays">
+	<d:index><d:index_value>дзеркальні дисплеї</d:index_value><d:index_title>дзеркальні дисплеї</d:index_title></d:index>
+	<h1>дзеркальні дисплеї</h1>
+	<p>Функція «Системних параметрів« Mac OS X. Якщо комп’ютер підключений до кількох пристроїв, включаючи телевізори та проектори, на панелі «Дисплеї» в «Системних параметрах» можна налагодити зображення так, щоб зображення робочого стола відображалося на всіх пристроях у повний розмір, аніж відповідно ділилося між ними.</p>
+</d:entry>
+
+<d:entry id="Mission_Control">
+	<d:index><d:index_value>Mission Control</d:index_value><d:index_title>Mission Control</d:index_title></d:index>
+	<h1>Mission Control</h1>
+	<p>Функція Mac OS X, за допомогою якої можна побачити все, що запущено на вашому Mac, включаючи вікна, програми на весь екран, робочі області і консоль приладів Dashboard.</p>
+</d:entry>
+
+<d:entry id="MobileMe">
+	<d:index><d:index_value>MobileMe</d:index_value><d:index_title>MobileMe</d:index_title></d:index>
+	<h1>MobileMe</h1>
+	<p>Набір Інтернет-служб від Apple Inc. для комп’ютерів Macintosh пристроїв iPhone, iPod touch та ПК. Передплата на MobileMe автоматично оновлює пошту, контакти та календар на всіх ваших пристроях. MobileMe також надає набір веб-програм, за допомогою яких можна оцінювати свої дані через веб-браузер, ділитися фотографіями та фільмами, розміщувати веб-сайт та користуватися службою iDisk для зберігання файлів в Інтернеті. Докладніше на <a href='http://www.apple.com/mobileme/'>веб-сторінці MobileMe</a>.</p>
+</d:entry>
+
+<d:entry id="MobileMe_Gallery">
+	<d:index><d:index_value>Галерея MobileMe</d:index_value><d:index_title>Галерея MobileMe</d:index_title></d:index>
+	<h1>Галерея MobileMe</h1>
+	<p>Функція набору служб MobileMe від Apple Inc. Із передплатою на MobileMe можна публікувати фотографії та фільми з програм iPhoto та iMovie безпосередньо в свою галерею MobileMe в Інтернеті. Альбоми фотографій та фільми з галереї MobileMe можна додавати на будь-які свої веб-сторінки. Після оновлення фотоальбому в галереї MobileMe, ваш веб-сайт автоматично оновлюється новим вмістом.</p>
+</d:entry>
+
+<d:entry id="motion_playhead">
+	<d:index><d:index_value>бігунок</d:index_value><d:index_title>бігунок</d:index_title></d:index>
+	<h1>бігунок</h1>
+	<p>У програмі iDVD піктограма у вигляді ромбу на стрічці відтворення, яка вказує на поточне положення музичного або відеофайлу, який ви редагуєте. Бігунок можна перетягувати в будь-яке положення на стрічці.</p>
+</d:entry>
+
+<d:entry id="MS-DOS_(FAT)_format">
+	<d:index><d:index_value>формат MS-DOS (FAT)</d:index_value><d:index_title>формат MS-DOS (FAT)</d:index_title></d:index>
+	<h1>формат MS-DOS (FAT)</h1>
+	<p>Формат жорсткого диска для дисків, що використовуються на комп’ютерах з ОС Windows. За допомогою програми Disk Utility можна відформатувати диски MS-DOS (FAT) для комп’ютерів з ОС Windows.</p>
+</d:entry>
+
+<d:entry id="Multi-Touch">
+	<d:index><d:index_value>Multi-Touch</d:index_value><d:index_title>Multi-Touch</d:index_title></d:index>
+	<h1>Multi-Touch</h1>
+	<p>Технологія взаємодії сенсорного екрана з комп’ютером або іншим пристроєм. Сенсорний екран, оснащений технологією Multi-Touch, розпізнає кілька одночасних «точок торкання». Це дозволяє використовувати обидві руки або кілька пальців для виконання рухів. Інтуїтивні рухи, наприклад використання двох пальців або рук для наближення або віддалення, є функцією технології Multi-Touch. Сенсорні екрани пристроїв iPhone від Apple застосовують технологію Multi-Touch.</p>
+</d:entry>
+
+<d:entry id="Network_File_System">
+	<d:index><d:index_value>Мережна файлова система</d:index_value><d:index_title>Мережна файлова система</d:index_title></d:index>
+	<h1>Мережна файлова система</h1>
+	<p>Див. <a href='x-dictionary:r:NFS:com.apple.dictionary.AppleDictionary'><b>NFS</b></a>.</p>
+</d:entry>
+
+<d:entry id="NFS">
+	<d:index><d:index_value>NFS</d:index_value><d:index_title>NFS</d:index_title></d:index>
+	<h1>NFS</h1>
+	<p>Мережна файлова систем (NFS). Клієнт-серверний протокол, який використовує Internet Protocol (IP), щоб віддалені користувачі мали доступ до файлів як до локальних. NFS експортує відкриті томи на комп’ютери за IP-адресами, а не іменем і паролем.</p>
+</d:entry>
+
+<d:entry id="Numbers">
+	<d:index><d:index_value>Numbers</d:index_value><d:index_title>Numbers</d:index_title></d:index>
+	<h1>Numbers</h1>
+	<p>Програма Apple для створення електронних таблиць. Програма Numbers має простий набір інструментів для складання таблиць, графіків, карт, текстових даних тощо. Програма Numbers входить до набору офісних програм iWork. Докладніше на <a href='http://www.apple.com/iwork/numbers'>веб-сторінці Numbers</a>.</p>
+</d:entry>
+
+<d:entry id="NVRAM">
+	<d:index><d:index_value>NVRAM</d:index_value><d:index_title>NVRAM</d:index_title></d:index>
+	<h1>NVRAM</h1>
+	<p>Енергонезалежна оперативна пам’ять. Тип пам’яті, який зберігає інформацію після вимкнення комп’ютера.</p>
+</d:entry>
+
+<d:entry id="Open_Transport">
+	<d:index><d:index_value>Open Transport</d:index_value><d:index_title>Open Transport</d:index_title></d:index>
+	<h1>Open Transport</h1>
+	<p>Мережний протокол для комп’ютерів Macintosh, які використовують Mac OS версій до Mac OS X.</p>
+</d:entry>
+
+<d:entry id="operator">
+	<d:index><d:index_value>оператор</d:index_value><d:index_title>оператор</d:index_title></d:index>
+	<h1>оператор</h1>
+	<p>Арифметичні оператори виконують арифметичні операції, наприклад додавання та віднімання, та видають результати в числовому вигляді. Оператори порівняння порівнюють два значення та видають результат: «вірно» або «невірно». У програмі для роботи з електронними таблицями Numbers можна використовувати оператори у формулах для виконання арифметичних операцій та порівняння значень.</p>
+</d:entry>
+
+<d:entry id="optical_drive">
+	<d:index><d:index_value>оптичний дисковод</d:index_value><d:index_title>оптичний дисковод</d:index_title></d:index>
+	<h1>оптичний дисковод</h1>
+	<p>Дисковод, здатний зчитувати дані з оптичних дисків, включаючи компакт-диски та DVD-диски. До оптичних дисководів відносять CD-ROM, CD-RW, DVD-ROM, DVD-RW та Blu-ray.</p>
+</d:entry>
+
+<d:entry id="package">
+	<d:index><d:index_value>пакет</d:index_value><d:index_title>пакет</d:index_title></d:index>
+	<h1>пакет</h1>
+	<p>Набір пов’язаних файлів (шаблонів, настройок або інших файлів окремої програми), зведених у папку, яка виглядає як один файл. Оновлення програмного забезпечення для комп’ютерів Macintosh постачаються у вигляді пакетів, які «розпаковуються», а потім встановлюються.</p>
+</d:entry>
+
+<d:entry id="package_file">
+	<d:index><d:index_value>файл пакета</d:index_value><d:index_title>файл пакета</d:index_title></d:index>
+	<h1>файл пакета</h1>
+	<p>Файл, який містить пакет програмного забезпечення. Файл пакета, як правило, має піктограму, яка виглядає, як відкрита коробка. Також файл пакету можна визначити, переглянувши його «Досьє» — поле «Тип» містить слово «пакет».</p>
+</d:entry>
+
+<d:entry id="Pages">
+	<d:index><d:index_value>Pages</d:index_value><d:index_title>Pages</d:index_title></d:index>
+	<h1>Pages</h1>
+	<p>Програма Apple для роботи з текстом, яка має розширені типографські функції та професійні шаблони для створення звітів, запрошень, інформаційних бюлетенів тощо. Програма Pages входить до набору офісних програм iWork. Докладніше на <a href='http://www.apple.com/pages/'>веб-сторінці Pages</a>.</p>
+</d:entry>
+
+<d:entry id="Panther">
+	<d:index><d:index_value>Panther</d:index_value><d:index_title>Panther</d:index_title></d:index>
+	<h1>Panther</h1>
+	<p>Торгова марка для Mac OS X версії 10.3, четвертий масштабний випуск операційної системи для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="parental_controls">
+	<d:index><d:index_value>батьківський контроль</d:index_value><d:index_title>батьківський контроль</d:index_title></d:index>
+	<h1>батьківський контроль</h1>
+	<p>Параметри комп’ютера, за допомогою яких адміністратор може контролювати, до яких програм і даних інші користувачі мають доступ. У Mac OS X параметри батьківського контролю можна встановити на панелі «Батьківський контроль» у Системних параметрах.</p>
+</d:entry>
+
+<d:entry id="partition">
+	<d:index><d:index_value>розділ</d:index_value><d:index_title>розділ</d:index_title></d:index>
+	<h1>розділ</h1>
+	<p>Підрозділ жорсткого диска. На комп’ютерах Macintosh можна вибрати, скільки розділів потрібно під час форматування жорсткого диска за допомогою програми Disk Utility. Усі розділі з’являються на робочому столі як окремі диски.</p>
+</d:entry>
+
+<d:entry id="personal_file_sharing">
+	<d:index><d:index_value>персональний файл-сервер</d:index_value><d:index_title>персональний файл-сервер</d:index_title></d:index>
+	<h1>персональний файл-сервер</h1>
+	<p>Система, за допомогою якої користувачі комп’ютерів Macintosh можуть швидко копіювати елементи з одного комп’ютера на інший або використовувати один комп’ютер для доступу до файлів і програм, збережених на іншому.</p>
+</d:entry>
+
+<d:entry id="personal_web_sharing">
+	<d:index><d:index_value>персональний веб-сервер</d:index_value><d:index_title>персональний веб-сервер</d:index_title></d:index>
+	<h1>персональний веб-сервер</h1>
+	<p>Функція Mac OS X, за допомогою якої можна відображати документи в Інтернеті або в локальній мережі, перетягнувши їх в папку «Веб-сайти» на жорсткому диску свого комп’ютера. Документ повинен бути в HTML-форматі.</p>
+</d:entry>
+
+<d:entry id="Photo_Booth">
+	<d:index><d:index_value>Photo Booth</d:index_value><d:index_title>Photo Booth</d:index_title></d:index>
+	<h1>Photo Booth</h1>
+	<p>Програма Apple для виготовлення знімків за допомогою камери iSight. Програма Photo Booth має вбудовані ефекти, які можна застосовувати до фотографій, включаючи відтінки та фільтри, а також операції із зображеннями, наприклад «розтягування» або «риб’яче око».</p>
+</d:entry>
+
+<d:entry id="photo_browser">
+	<d:index><d:index_value>фото-браузер</d:index_value><d:index_title>фото-браузер</d:index_title></d:index>
+	<h1>фото-браузер</h1>
+	<p>Комп’ютерне програмне забезпечення, за допомогою якого можна переглядати та шукати вибрані фотографії. Програма iPhoto включає фото-браузер для проектів, наприклад книг або слайд-шоу, з відображенням мініатюр фотографій, вибраних для включення.</p>
+</d:entry>
+
+<d:entry id="Pixlet">
+	<d:index><d:index_value>Pixlet</d:index_value><d:index_title>Pixlet</d:index_title></d:index>
+	<h1>Pixlet</h1>
+	<p>Програмне забезпечення Apple для стискання відео. Програма Pixlet (кодер-декодер) дозволяє дивитися фільми з високою роздільною здатністю та чіткістю на комп’ютерах Macintosh з Mac OS X Panther версії 10.3 або пізнішої версії.</p>
+</d:entry>
+
+<d:entry id="placeholder_image">
+	<d:index><d:index_value>мітка-заповнювач зображення</d:index_value><d:index_title>мітка-заповнювач зображення</d:index_title></d:index>
+	<h1>мітка-заповнювач зображення</h1>
+	<p>У шаблонах програм Pages і Keynote зображення, яке можна замінити на своє зображення, перетягнувши на його місце. Мітку-заповнювач для зображень можна розпізнати, навівши на неї курсор; з’явиться довідкова інструкція перетягнути свій файл на місце мітки.</p>
+</d:entry>
+
+<d:entry id="placeholder_text">
+	<d:index><d:index_value>мітка-заповнювач тексту</d:index_value><d:index_title>мітка-заповнювач тексту</d:index_title></d:index>
+	<h1>мітка-заповнювач тексту</h1>
+	<p>У шаблонах програм Pages і Keynote текст, який можна замінити на свій перетягуванням вставлянням або введенням. Мітку-заповнювач для тексту можна розпізнати, клацнувши його; одне клацання виділить весь блок тексту, щоб його можна було з легкістю замінити.</p>
+</d:entry>
+
+<d:entry id="playlist">
+	<d:index><d:index_value>підбірка</d:index_value><d:index_title>підбірка</d:index_title></d:index>
+	<h1>підбірка</h1>
+	<p>У музичному програвачі iTunes від Apple список пісень або музичних композицій, які відтворюватимуться одна за іншою.</p>
+</d:entry>
+
+<d:entry id="plug-in">
+	<d:index><d:index_value>компонент plug-in</d:index_value><d:index_title>компонент plug-in</d:index_title></d:index>
+	<h1>компонент plug-in</h1>
+	<p>Програма, яку можна додати до програмного забезпечення для розширення його можливостей. Наприклад, можна додати мультимедійний компонент plug-in до веб-браузера для відтворення мультимедійного вмісту на веб-сторінках.</p>
+</d:entry>
+
+<d:entry id="podcast">
+	<d:index><d:index_value>подкаст</d:index_value><d:index_title>подкаст</d:index_title></d:index>
+	<h1>подкаст</h1>
+	<p>Аудіо або відеотрансляція, доступна в Інтернеті, яку можна відтворити на портативному пристрої або комп’ютері, наприклад iPod, iPad чи Mac.</p>
+</d:entry>
+
+<d:entry id="Podcast_Producer_2">
+	<d:index><d:index_value>Podcast Producer 2</d:index_value><d:index_title>Podcast Producer 2</d:index_title></d:index>
+	<h1>Podcast Producer 2</h1>
+	<p>Програма Apple для записування, публікації та розповсюдження високоякісних подкастів.</p>
+</d:entry>
+
+<d:entry id="port">
+	<d:index><d:index_value>номер порту</d:index_value><d:index_title>номер порту</d:index_title></d:index>
+	<h1>номер порту</h1>
+	<p>Число, яке сервер використовує як адресу для визначення, яка програма повинна отримувати пакети даних. Брандмауери використовують номери портів для того, щоб визначити, чи мають пакети даних дозвіл на транспортування через локальну мережу.</p>
+</d:entry>
+
+<d:entry id="PowerBook">
+	<d:index><d:index_value>PowerBook</d:index_value><d:index_title>PowerBook</d:index_title></d:index>
+	<h1>PowerBook</h1>
+	<p>Лінійка портативних комп’ютерів від Apple Inc., які випускалися з 1991 по 2006 рр. Комп’ютери PowerBook були націлені на професійних користувачів і бізнес. У 2006 році лінія комп’ютерів PowerBook була замінена на MacBook Pro.</p>
+</d:entry>
+
+<d:entry id="Power_Mac">
+	<d:index><d:index_value>Power Mac, Power Macintosh</d:index_value><d:index_title>Power Mac, Power Macintosh</d:index_title></d:index>
+	<h1>Power Mac, Power Macintosh</h1>
+	<p>Лінійка персональних комп’ютерів від Apple Inc., які випускалися з 1994 по 2006 рр. та оснащувалися мікропроцесорами PowerPC від компанії Motorola.</p>
+</d:entry>
+
+<d:entry id="PowerPC">
+	<d:index><d:index_value>PowerPC</d:index_value><d:index_title>PowerPC</d:index_title></d:index>
+	<h1>PowerPC</h1>
+	<p>Мікропроцесор від Motorola Corporation. Лінійка комп’ютерів Power Macintosh від Apple Inc. була оснащена мікропроцесорами PowerPC.</p>
+</d:entry>
+
+<d:entry id="PPD_file">
+	<d:index><d:index_value>файл PPD</d:index_value><d:index_title>файл PPD</d:index_title></d:index>
+	<h1>файл PPD</h1>
+	<p>Файл Postscript Printer Description. Файл, що містить відомості про можливості конкретної моделі принтера. У файлі PPD містяться елементи керування, потрібні для використання спеціальних функцій принтера, наприклад кілька лотків для паперу, особливі розміри паперу або друк з обох сторін. Під час додавання принтера вибрана модель принтера вказує файл PPD, який слід використовувати з цим принтером. </p>
+</d:entry>
+
+<d:entry id="PPP">
+	<d:index><d:index_value>PPP</d:index_value><d:index_title>PPP</d:index_title></d:index>
+	<h1>PPP</h1>
+	<p>Протокол спілкування між двома вузлами в мережі для підключення через послідовні кабелі, телефонні лінії, мережі мобільного зв’язку тощо. Протокол PPP звичайно використовується для комутованого доступу в Інтернет.</p>
+</d:entry>
+
+<d:entry id="PPPoE">
+	<d:index><d:index_value>PPPoE</d:index_value><d:index_title>PPPoE</d:index_title></d:index>
+	<h1>PPPoE</h1>
+	<p>Протокол Point to Point через Ethernet. Мережний протокол, схожий на PPP, який використовує переваги підвищеної швидкості мереж Ethernet.</p>
+</d:entry>
+
+<d:entry id="PRAM">
+	<d:index><d:index_value>PRAM</d:index_value><d:index_title>PRAM</d:index_title></d:index>
+	<h1>PRAM</h1>
+	<p>Параметрична оперативна пам’ять. Тип пам’яті на комп’ютерах Macintosh для зберігання системних параметрів, включаючи вибраний стартовий диск, роздільну здатність екрана, часовий пояс, гучність динаміків та інші настройки.</p>
+</d:entry>
+
+<d:entry id="Preview">
+	<d:index><d:index_value>Preview</d:index_value><d:index_title>Preview</d:index_title></d:index>
+	<h1>Preview</h1>
+	<p>Програма Apple, за допомогою якої можна переглядати PDF-файли, зображення, текстові документи та багато інших типів файлів на комп’ютерах Macintosh з Mac OS X.</p>
+</d:entry>
+
+<d:entry id="printer_pool">
+	<d:index><d:index_value>пул принтерів</d:index_value><d:index_title>пул принтерів</d:index_title></d:index>
+	<h1>пул принтерів</h1>
+	<p>Збірка принтерів, що створюється для автоматичного друку документа за допомогою першого доступного принтера з пулу. У Mac OS X для встановлення пулу принтерів можна використовувати панель «Друк і факс» в «Системних параметрах».</p>
+</d:entry>
+
+<d:entry id="ProCare">
+	<d:index><d:index_value>ProCare</d:index_value><d:index_title>ProCare</d:index_title></d:index>
+	<h1>ProCare</h1>
+	<p>Програма для індивідуального тренування, доступна для користувачів комп’ютерів Macintosh, яка пропонується в магазинах роздрібної торгівлі Apple.</p>
+</d:entry>
+
+<d:entry id="protocol">
+	<d:index><d:index_value>протокол</d:index_value><d:index_title>протокол</d:index_title></d:index>
+	<h1>протокол</h1>
+	<p>Набір правил, який визначає, яким чином дані транспортуються між двома програмами.</p>
+</d:entry>
+
+<d:entry id="proxy_server">
+	<d:index><d:index_value>проксі-сервер</d:index_value><d:index_title>проксі-сервер</d:index_title></d:index>
+	<h1>проксі-сервер</h1>
+	<p>Сервер, який надає непряме мережне підключення. Комп’ютер підключається до проксі-сервера та видає запит на підключення до мережі, після чого проксі-сервер підключається до вказаної мережі. Проксі-сервери, як правило, використовуються для забезпечення мережної безпеки. У Mac OS X можна вказати дані проксі-сервера на панелі «Мережа» в «Системних параметрах».</p>
+</d:entry>
+
+<d:entry id="Quartz">
+	<d:index><d:index_value>Quartz, Quartz Extreme</d:index_value><d:index_title>Quartz, Quartz Extreme</d:index_title></d:index>
+	<h1>Quartz, Quartz Extreme</h1>
+	<p>Графічне програмне забезпечення Apple у Mac OS X. Quartz забезпечує миттєву зміну розміру вікон та прокручування, екранну анімацію та інші спеціальні ефекти.</p>
+</d:entry>
+
+<d:entry id="QuickDraw">
+	<d:index><d:index_value>QuickDraw</d:index_value><d:index_title>QuickDraw</d:index_title></d:index>
+	<h1>QuickDraw</h1>
+	<p>Графічне програмне забезпечення Apple. QuickDraw замінено на Quartz у Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Quick_Look">
+	<d:index><d:index_value>Quick Look</d:index_value><d:index_title>Quick Look</d:index_title></d:index>
+	<h1>Quick Look</h1>
+	<p>Програма для попереднього перегляду в Mac OS X. За допомогою програми Quick Look можна переглянути уривок документу, зображення, фільму або іншого файлу, не відкриваючи відповідну програму.</p>
+</d:entry>
+
+<d:entry id="QuickTime">
+	<d:index><d:index_value>QuickTime</d:index_value><d:index_title>QuickTime</d:index_title></d:index>
+	<h1>QuickTime</h1>
+	<p>Програма Apple для роботи з мультимедійними файлами, за допомогою якої можна виконувати операції з відеофайлами, мультимедійними кліпами, звуком, текстом, анімацією, музикою та кількома типами зображень на комп’ютерах Macintosh.</p>
+</d:entry>
+
+<d:entry id="RAM">
+	<d:index><d:index_value>RAM</d:index_value><d:index_title>RAM</d:index_title></d:index>
+	<h1>RAM</h1>
+	<p>Оперативна пам’ять. Компонент комп’ютера, де зберігаються програми та файли, які використовуються у теперішній момент. До пам’яті RAM здійснюється значно швидший доступ, ніж до інших типів пам’яті на комп’ютері, наприклад жорсткого диска або DVD-диска. Існує кілька типів RAM, включаючи DRAM, NVRAM, PRAM і SRAM.</p>
+</d:entry>
+
+<d:entry id="Remote_Install_Mac_OS_X">
+	<d:index><d:index_value>Віддалене встановлення Mac OS X</d:index_value><d:index_title>Віддалене встановлення Mac OS X</d:index_title></d:index>
+	<h1>Віддалене встановлення Mac OS X</h1>
+	<p>Програма Apple, за допомогою якої можна встановити Mac OS X на комп’ютер з інсталяційного диска в оптичному дисководі іншого комп’ютера. Обидва комп’ютера повинні бути в одній бездротовій або Ethernet-мережі.</p>
+</d:entry>
+
+<d:entry id="repartition">
+	<d:index><d:index_value>повторний поділ+</d:index_value><d:index_title>повторний поділ+</d:index_title></d:index>
+	<h1>повторний поділ+</h1>
+	<p>Зміна схеми поділу диска. Також див. <a href='x-dictionary:r:partition:com.apple.dictionary.AppleDictionary'><b>розділ</b></a>.</p>
+</d:entry>
+
+<d:entry id="Rosetta">
+	<d:index><d:index_value>Rosetta</d:index_value><d:index_title>Rosetta</d:index_title></d:index>
+	<h1>Rosetta</h1>
+	<p>Програмне забезпечення на комп’ютерах Macintosh з процесорами Intel, за допомогою якого можна запускати програми, створені для PowerPC.</p>
+</d:entry>
+
+<d:entry id="router">
+	<d:index><d:index_value>маршрутизатор</d:index_value><d:index_title>маршрутизатор</d:index_title></d:index>
+	<h1>маршрутизатор</h1>
+	<p>Пристрій маршрутизації комп’ютерних мереж, який приймає сигнал із мережі та транслює його на один або кілька комп’ютерів, принтерів та інших пристроїв. Маршрутизатори, зазвичай, використовується для надання доступу до Інтернету для кількох користувачів. Базова станція AirPort Extreme від Apple Inc. є прикладом маршрутизатора.</p>
+</d:entry>
+
+<d:entry id="RSS">
+	<d:index><d:index_value>RSS</d:index_value><d:index_title>RSS</d:index_title></d:index>
+	<h1>RSS</h1>
+	<p>Скорочення для Really Simple Syndication, альтернативного методу перегляду веб-сторінок. Веб-сайти, вміст яких часто змінюється, наприклад веб-сайти новин, звичайно мають можливість перегляду RSS. RSS-сторінка у веб-браузері Safari відображає заголовки нових і нещодавніх статей у вигляді списку з одним або двома рядками вмісту кожної статті. Якщо веб-браузер Safari виявляє можливість перегляду RSS на веб-сторінці, в адресній панелі з’являється кнопка RSS, яку можна натиснути для перегляду стрічки. Термін RSS є тотожним з такими термінами як стрічка, стрічка новин, RSS-стрічка та XML-стрічка.</p>
+</d:entry>
+
+<d:entry id="Safari">
+	<d:index><d:index_value>Safari</d:index_value><d:index_title>Safari</d:index_title></d:index>
+	<h1>Safari</h1>
+	<p>Веб-браузер від Apple Inc.</p>
+</d:entry>
+
+<d:entry id="safe_sleep">
+	<d:index><d:index_value>глибокий сон</d:index_value><d:index_title>глибокий сон</d:index_title></d:index>
+	<h1>глибокий сон</h1>
+	<p>У режимі безпечного сну поточний стан комп’ютера зберігається на жорсткому диску разом із відкритими програмами та документами. Це захищає вас від втрати інформації, якщо комп’ютер повністю вимкнеться у режимі сну, що може статися у випадку розряджання акумулятора чи під час його заміни.</p>
+</d:entry>
+
+<d:entry id="screen_name">
+	<d:index><d:index_value>екранне ім’я</d:index_value><d:index_title>екранне ім’я</d:index_title></d:index>
+	<h1>екранне ім’я</h1>
+	<p>Ім’я, вибране для спілкування з іншими в Інтернеті. Екранним ім’ям може бути ваше реальне ім’я або псевдонім. Екранне ім’я використовується у програмі iChat для надсилання та отримання миттєвих повідомлень в Інтернеті.</p>
+</d:entry>
+
+<d:entry id="screen_sharing">
+	<d:index><d:index_value>спільне використання екрана</d:index_value><d:index_title>спільне використання екрана</d:index_title></d:index>
+	<h1>спільне використання екрана</h1>
+	<p>Функція Mac OS X, за допомогою якої можна підключитися до іншого комп’ютера в мережі та відобразити його екран на своєму комп’ютері. У режимі спільного екрана можна контролювати все, що відбувається на іншому комп’ютері, наприклад відкривати документи або програми, відкривати, переміщати або закривати вікна, а також вимкнути комп’ютер.</p>
+</d:entry>
+
+<d:entry id="scrubber_bar">
+	<d:index><d:index_value>стрічка відтворення</d:index_value><d:index_title>стрічка відтворення</d:index_title></d:index>
+	<h1>стрічка відтворення</h1>
+	<p>Часова шкала під відео або аудіокліпом, на якій відображено положення бігунка відтворення.</p>
+</d:entry>
+
+<d:entry id="secure_virtual_memory">
+	<d:index><d:index_value>захищена віртуальна пам’ять</d:index_value><d:index_title>захищена віртуальна пам’ять</d:index_title></d:index>
+	<h1>захищена віртуальна пам’ять</h1>
+	<p>Віртуальна пам’ять, зашифрована для цілей безпеки. Оскільки дані зберігаються на жорсткому диску, допоки їх не буде замінено іншими даним, можна знизити ризик того, що важливі відомості залишаться на жорсткому диску, використовуючи захищену віртуальну пам’ять.</p>
+</d:entry>
+
+<d:entry id="server">
+	<d:index><d:index_value>сервер</d:index_value><d:index_title>сервер</d:index_title></d:index>
+	<h1>сервер</h1>
+	<p>Комп’ютер, який оперує службами (наприклад службами обміну файлами, поштовими службами або веб-службами) для інших комп’ютерів або мережних пристроїв.</p>
+</d:entry>
+
+<d:entry id="Shake">
+	<d:index><d:index_value>Shake</d:index_value><d:index_title>Shake</d:index_title></d:index>
+	<h1>Shake</h1>
+	<p>Програмне забезпечення від Apple Inc. для створення цифрових ефектів, яке використовується для художніх фільмів, трансляцій та інтерактивних ігор.</p>
+</d:entry>
+
+<d:entry id="Sherlock">
+	<d:index><d:index_value>Sherlock</d:index_value><d:index_title>Sherlock</d:index_title></d:index>
+	<h1>Sherlock</h1>
+	<p>Програмний інструмент, який здійснював пошук на локальних дисках, підключених до комп’ютера та веб-сторінках в Інтернеті. Інструмент Sherlock було впроваджено Apple Inc. разом із Mac OS версії 8.5.</p>
+</d:entry>
+
+<d:entry id="short_name">
+	<d:index><d:index_value>коротке ім’я</d:index_value><d:index_title>коротке ім’я</d:index_title></d:index>
+	<h1>коротке ім’я</h1>
+	<p>Ім’я, за яким ідентифікується індивідуальний обліковий запис користувача на комп’ютерах Macintosh. Під час створення облікового запису користувача на основі введеного імені облікового запису автоматично генерується коротке ім’я. Коротке ім’я можна змінити під час створення облікового запису, але його не можна змінити після того, як процедуру створення облікового запису завершено.</p>
+</d:entry>
+
+<d:entry id="sidebar">
+	<d:index><d:index_value>бічна панель</d:index_value><d:index_title>бічна панель</d:index_title></d:index>
+	<h1>бічна панель</h1>
+	<p>Ділянка збоку вікна Finder та програмних вікон, на якій відображаються кнопки, посилання, піктограми та інші дані. На бічній панелі вікна Finder відображаються піктограми елементів, які часто використовуються, включаючи диски, сервери та папки.</p>
+</d:entry>
+
+<d:entry id="Simple_Finder">
+	<d:index><d:index_value>Simple Finder</d:index_value><d:index_title>Simple Finder</d:index_title></d:index>
+	<h1>Simple Finder</h1>
+	<p>Спрощена версія програми Finder Mac OS X з обмеженою кількість меню та прав доступу до об’єктів на жорсткому диску. Програма Simple Finder обмежує доступ окремого облікового запису до файлів і програм на комп’ютері.</p>
+</d:entry>
+
+<d:entry id="skim">
+	<d:index><d:index_value>перегортати</d:index_value><d:index_title>перегортати</d:index_title></d:index>
+	<h1>перегортати</h1>
+	<p>У програмах iMovie і iPhoto повільний рух курсором миші над мініатюрами відеокліпів або подій для пошуку одного кадру або зображення.</p>
+</d:entry>
+
+<d:entry id="sleep">
+	<d:index><d:index_value>сон</d:index_value><d:index_title>сон</d:index_title></d:index>
+	<h1>сон</h1>
+	<p>Режим, в якому дисплей комп’ютера не світиться, а дисковод вимкнений. У цьому режимі комп’ютер залишається ввімкненим, проте споживає менше енергії. Для того, щоб повернути комп’ютер із режиму сну, потрібно менше часу, ніж для запуску після того, як його було вимкнено.</p>
+</d:entry>
+
+<d:entry id="sleep_indicator_light">
+	<d:index><d:index_value>світловий індикатор сну</d:index_value><d:index_title>світловий індикатор сну</d:index_title></d:index>
+	<h1>світловий індикатор сну</h1>
+	<p>Світловий індикатор на комп’ютері, який повільно пульсує, коли комп’ютер перебуває в режимі сну.</p>
+</d:entry>
+
+<d:entry id="S.M.A.R.T.">
+	<d:index><d:index_value>S.M.A.R.T.</d:index_value><d:index_title>S.M.A.R.T.</d:index_title></d:index>
+	<h1>S.M.A.R.T.</h1>
+	<p>Self-Monitoring Analysis and Reporting Technology (технологія самоаналізу та звітності). Програмне забезпечення, за допомогою якого стартова програма комп’ютера оцінює стан жорсткого диска. Технологія S.M.A.R.T. може попередити вас про можливі неполадки диска, щоб ви могли провести запобіжні заходи, наприклад резервне копіювання даних.</p>
+</d:entry>
+
+<d:entry id="Smart_Address">
+	<d:index><d:index_value>Розумна адреса</d:index_value><d:index_title>Розумна адреса</d:index_title></d:index>
+	<h1>Розумна адреса</h1>
+	<p>Ім’я або адреса, які з’являються в синій бульбашці в полі адреси повідомлення, яке надсилається.</p>
+</d:entry>
+
+<d:entry id="Smart_Album">
+	<d:index><d:index_value>Розумний альбом</d:index_value><d:index_title>Розумний альбом</d:index_title></d:index>
+	<h1>Розумний альбом</h1>
+	<p>Тип альбому (папки), який використовує програма iPhoto від Apple Inc. «Розумний альбом» автоматично знаходить фотографії, які відповідають одному або кільком заданим критеріям. Наприклад, можна створити розумний альбом із вказівниками до фотографій, зроблених у жовтні, або який містить усі фотографії з позначкою «Париж».</p>
+</d:entry>
+
+<d:entry id="Smart_Folder">
+	<d:index><d:index_value>Розумна папка</d:index_value><d:index_title>Розумна папка</d:index_title></d:index>
+	<h1>Розумна папка</h1>
+	<p>Тип папок на комп’ютерах Macintosh. «Розумна папка» автоматично шукає елементи, які відповідають одному або кільком заданим критеріям. Наприклад, можна створити розумну папку з вказівниками до всіх електронних таблиць на комп’ютері. Реальне розташування файлів у розумній папці не змінюється, тобто один елемент може бути представлений у кількох розумних папках.</p>
+</d:entry>
+
+<d:entry id="Smart_Group">
+	<d:index><d:index_value>Розумна група</d:index_value><d:index_title>Розумна група</d:index_title></d:index>
+	<h1>Розумна група</h1>
+	<p>Збірка контактів, до якої адресна книга автоматично додає нові контакти, що відповідають вказаним вами критеріям.</p>
+</d:entry>
+
+<d:entry id="Smart_Mailbox">
+	<d:index><d:index_value>Розумна поштова скринька</d:index_value><d:index_title>Розумна поштова скринька</d:index_title></d:index>
+	<h1>Розумна поштова скринька</h1>
+	<p>Тип поштової скриньки (поштової папки), який застосовується програмою Mail на комп’ютерах Macintosh. «Розумна поштова скринька» автоматично знаходить листи електронної пошти, які відповідають одному або кільком заданим критеріям. Наприклад, можна створити розумну поштову скриньку, яка містить вказівники до всіх листів від членів родини або всі листи з темою «Крим». Реальне розташування електронних листів у розумній поштовій скриньці не змінюється, тобто один елемент може бути представлений у кількох розумних поштових скриньках.</p>
+</d:entry>
+
+<d:entry id="Smart_Playlist">
+	<d:index><d:index_value>Розумна підбірка</d:index_value><d:index_title>Розумна підбірка</d:index_title></d:index>
+	<h1>Розумна підбірка</h1>
+	<p>Тип підбірки (папки), який застосовується програмою iTunes від Apple Inc. «Розумна підбірка» автоматично знаходить музику, яка відповідає одному або кільком заданим критеріям. Наприклад, можна створити розумну підбірку, яка містить вказівники до всіх джазових композицій або всі пісні, що належать до певної групи.</p>
+</d:entry>
+
+<d:entry id="SMB">
+	<d:index><d:index_value>SMB</d:index_value><d:index_title>SMB</d:index_title></d:index>
+	<h1>SMB</h1>
+	<p>Server Message Block. Протокол, за допомогою якого комп’ютери-клієнти можуть отримати доступ до файлів та мережних служб. Він діє через TCP/IP, Інтернет та інші мережні протоколи. Служби SMB застосовують протокол SMB для забезпечення доступу до серверів, принтерів та інших мережних ресурсів.</p>
+</d:entry>
+
+<d:entry id="SMB/CIFS">
+	<d:index><d:index_value>SMB/CIFS</d:index_value><d:index_title>SMB/CIFS</d:index_title></d:index>
+	<h1>SMB/CIFS</h1>
+	<p>Протокол для відкритого доступу до файлів, принтерів, послідовних портів та іншої інформації та пристроїв між вузлами в мережі. Здебільшого застосовується на комп’ютерах із ОС Windows.</p>
+</d:entry>
+
+<d:entry id="SnapBack">
+	<d:index><d:index_value>SnapBack</d:index_value><d:index_title>SnapBack</d:index_title></d:index>
+	<h1>SnapBack</h1>
+	<p>Оранжева кнопка з прямою білою стрілкою, розташована на правому краї полів розташування та пошуку програми Safari, веб-браузера від Apple Inc. Після натискання кнопки «SnapBack» повернеться потрібна сторінка або список результатів пошуку.</p>
+</d:entry>
+
+<d:entry id="Snow_Leopard">
+	<d:index><d:index_value>Snow Leopard</d:index_value><d:index_title>Snow Leopard</d:index_title></d:index>
+	<h1>Snow Leopard</h1>
+	<p>Торгова марка для Mac OS X версії 10.6, сьомий масштабний випуск операційної системи для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="Software_Update">
+	<d:index><d:index_value>Оновлення ПЗ</d:index_value><d:index_title>Оновлення ПЗ</d:index_title></d:index>
+	<h1>Оновлення ПЗ</h1>
+	<p>Програма на комп’ютерах Macintosh, яка виконує перевірку на наявність оновлень для програмного забезпечення. Програму Software Update можна налагодити на автоматичне сповіщенняcan про доступні оновлення.</p>
+</d:entry>
+
+<d:entry id="Source_list">
+	<d:index><d:index_value>Список джерел</d:index_value><d:index_title>Список джерел</d:index_title></d:index>
+	<h1>Список джерел</h1>
+	<p>У програмі iPhoto список альбомів, папок, подій, слайд-шоу тощо на бічній панелі на лівій стороні вікна iPhoto. Список Source збільшується, коли ви додаєте фотографії. Першим елементом у списку Source є iPhoto Library (Фототека), який містить усі ваші фотографії.</p>
+</d:entry>
+
+<d:entry id="source_video">
+	<d:index><d:index_value>вихідний відеофайл</d:index_value><d:index_title>вихідний відеофайл</d:index_title></d:index>
+	<h1>вихідний відеофайл</h1>
+	<p>У програмі iMovie файл, який містить відеокліп, що використовується в проекті.</p>
+</d:entry>
+
+<d:entry id="Spaces">
+	<d:index><d:index_value>Spaces</d:index_value><d:index_title>Spaces</d:index_title></d:index>
+	<h1>Spaces</h1>
+	<p>Функція Mac OS X від Apple Inc. За допомогою функцій Spaces можна впорядкувати вікна за групами, які відповідають певним задачам. Наприклад, можна створити групу для ділових задач, а потім перейти в іншу групу, щоб грати в ігри. Можна створити щонайбільше 16 груп.</p>
+</d:entry>
+
+<d:entry id="spoken_commands">
+	<d:index><d:index_value>голосові команди</d:index_value><d:index_title>голосові команди</d:index_title></d:index>
+	<h1>голосові команди</h1>
+	<p>Функція комп’ютерів Macintosh, яка дозволяє комп’ютеру розпізнавати та виконувати певні команди, що ви вимовляєте.</p>
+</d:entry>
+
+<d:entry id="Spotlight">
+	<d:index><d:index_value>Spotlight</d:index_value><d:index_title>Spotlight</d:index_title></d:index>
+	<h1>Spotlight</h1>
+	<p>Програмне забезпечення для пошуку, вбудоване в комп’ютери Macintosh. Програма Spotlight створює базу даних про всі файли на комп’ютері, будуючи каталоги всіх елементів, знайдених під час першого запуску та доданих пізніше. Під час вводу запиту в поле Spotlight програма звіряється зі своєю базою даних на наявність будь-яких файлів, пов’язаних із запитом, та представляє збіги у вигляді списку. Початкова побудова каталогу може зайняти кілька хвилин, проте подальші результати запитів у Spotlight з’являються миттєво.</p>
+</d:entry>
+
+<d:entry id="SRAM">
+	<d:index><d:index_value>SRAM</d:index_value><d:index_title>SRAM</d:index_title></d:index>
+	<h1>SRAM</h1>
+	<p>Статична оперативна пам’ять. Тип пам’яті, який зберігає інформацію, допоки постачається живлення. На відміну від DRAM SRAM не потребує новий електричний заряд кожні кілька мілісекунд.</p>
+</d:entry>
+
+<d:entry id="stacks">
+	<d:index><d:index_value>стоси</d:index_value><d:index_title>стоси</d:index_title></d:index>
+	<h1>стоси</h1>
+	<p>Функція Mac OS X від Apple Inc. Функція Stacks з’являється в панелі Dock та слугує для миттєвого доступу до папок і файлів. Натиснувши на стіс, файли в ньому пружно розкриваються у вигляді віяла або сітки.</p>
+</d:entry>
+
+<d:entry id="startup_disk">
+	<d:index><d:index_value>стартовий диск</d:index_value><d:index_title>стартовий диск</d:index_title></d:index>
+	<h1>стартовий диск</h1>
+	<p>Системна настройка на комп’ютерах Macintosh, яка використовується для визначення внутрішнього жорсткого диска, зовнішнього диска, розділу, компакт-диска, DVD-диска чи іншого пристрою як стартового диска.</p>
+</d:entry>
+
+<d:entry id="Stickies">
+	<d:index><d:index_value>Нотатки</d:index_value><d:index_title>Нотатки</d:index_title></d:index>
+	<h1>Нотатки</h1>
+	<p>Програм Apple, за допомогою якої можна робити маленькі нотатки, на зразок нотаток Post-it, на екрані комп’ютера. У Mac OS X програма «Нотатки» входить до віджетів Dashboard.</p>
+</d:entry>
+
+<d:entry id="SuperDrive">
+	<d:index><d:index_value>SuperDrive</d:index_value><d:index_title>SuperDrive</d:index_title></d:index>
+	<h1>SuperDrive</h1>
+	<p>Тип дисководу від Apple Inc. Оригінальний пристрій SuperDrive представляв собою дисковод гнучких дисків високої ємності (1,44 Мб). Сучасний SuperDrive — це дисковод, який може читати та записувати (копіювати) компакт-диски та DVD-диски.</p>
+</d:entry>
+
+<d:entry id="System_Folder">
+	<d:index><d:index_value>Системна папка</d:index_value><d:index_title>Системна папка</d:index_title></d:index>
+	<h1>Системна папка</h1>
+	<p>У Mac OS 9 та старіших версіях Mac OS папка, яка містить файли, потрібні для роботи системи, наприклад шрифти та настройки. У Mac OS X немає системної папки.</p>
+</d:entry>
+
+<d:entry id="System_Preferences">
+	<d:index><d:index_value>Системні параметри</d:index_value><d:index_title>Системні параметри</d:index_title></d:index>
+	<h1>Системні параметри</h1>
+	<p>Набір елементів керування програмним забезпеченням у Mac OS X. «Системні параметри» використовуються для керування багатьма видами параметрів, наприклад моделями робочого стола, комбінаціями клавіш, мережними настройками, параметрами живлення тощо. «Системні параметри» замінили панелі керування, які використовувалися у версіях Mac OS до Mac OS X.</p>
+</d:entry>
+
+<d:entry id="System_Profiler">
+	<d:index><d:index_value>Системний інспектор</d:index_value><d:index_title>Системний інспектор</d:index_title></d:index>
+	<h1>Системний інспектор</h1>
+	<p>Програма в Mac OS X. Програма «Системний інспектор» надає докладні відомості про встановлене на комп’ютері програмне забезпечення, вбудоване обладнання та підключені пристрої.</p>
+</d:entry>
+
+<d:entry id="Terminal">
+	<d:index><d:index_value>Термінал</d:index_value><d:index_title>Термінал</d:index_title></d:index>
+	<h1>Термінал</h1>
+	<p>Програма в Mac OS X. Програма «Термінал» має вікно з командним рядком, в якому можна вводити команди для операційної системи. Програма «Термінал» відноситься до типу програм, які називаються «імітаторами терміналу», які, зазвичай, присутні на комп’ютерах з ОС UNIX.</p>
+</d:entry>
+
+<d:entry id="TextEdit">
+	<d:index><d:index_value>TextEdit</d:index_value><d:index_title>TextEdit</d:index_title></d:index>
+	<h1>TextEdit</h1>
+	<p>Програма для обробки тексту в Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Text_to_Speech">
+	<d:index><d:index_value>Читання тексту</d:index_value><d:index_title>Читання тексту</d:index_title></d:index>
+	<h1>Читання тексту</h1>
+	<p>Функція комп’ютерів Macintosh, за допомогою якої комп’ютер читає вголос виділений на екрані текст.</p>
+</d:entry>
+
+<d:entry id="thumbnail">
+	<d:index><d:index_value>мініатюра</d:index_value><d:index_title>мініатюра</d:index_title></d:index>
+	<h1>мініатюра</h1>
+	<p>Маленька картинка зображення, сторінки або відеокадру, яка представляє більший оригінал.</p>
+</d:entry>
+
+<d:entry id="Thunderbolt">
+	<d:index><d:index_value>Thunderbolt</d:index_value><d:index_title>Thunderbolt</d:index_title></d:index>
+	<h1>Thunderbolt</h1>
+	<p>Тип кабелю, з’єднувача та програмного забезпечення, який забезпечує високошвидкісне підключення між комп’ютером і дисплеєм або зовнішнім пристроєм для високошвидкісного передавання даних.</p>
+</d:entry>
+
+<d:entry id="Tiger">
+	<d:index><d:index_value>Tiger</d:index_value><d:index_title>Tiger</d:index_title></d:index>
+	<h1>Tiger</h1>
+	<p>Торгова марка для Mac OS X версії 10.4, п’ятий масштабний випуск операційної системи для комп’ютерів Macintosh.</p>
+</d:entry>
+
+<d:entry id="Time_Capsule">
+	<d:index><d:index_value>Time Capsule</d:index_value><d:index_title>Time Capsule</d:index_title></d:index>
+	<h1>Time Capsule</h1>
+	<p>Пристрій для резервного копіювання даних від Apple Inc., який через бездротовий зв’язок співпрацює з програмою архівації Time Machine в Mac OS X. Time Capsule також є базовою станцією AirPort Extreme. Кілька комп’ютерів можуть підключатися до безпроводової мережі та виконувати резервне копіювання на одному пристрої Time Capsule.</p>
+</d:entry>
+
+<d:entry id="Time_Machine">
+	<d:index><d:index_value>Time Machine</d:index_value><d:index_title>Time Machine</d:index_title></d:index>
+	<h1>Time Machine</h1>
+	<p>Програма для резервного копіювання файлів Apple у Mac OS X. Програма Time Machine регулярно архівує всі файли на комп’ютері, включаючи всі дані, програмне забезпечення та файли операційної системи. Програма Time Machine використовує метафору «політ в минуле крізь час», щоб показати вам зображення попередніх версій активного вікна або робочого стола, щоб ви могли вибрати і відновити потрібну вам версію.</p>
+</d:entry>
+
+<d:entry id="titles">
+	<d:index><d:index_value>заголовки</d:index_value><d:index_title>заголовки</d:index_title></d:index>
+	<h1>заголовки</h1>
+	<p>У програмі iMovie текст, який можна додати до свого відеопроекта.</p>
+</d:entry>
+
+<d:entry id="Trash">
+	<d:index><d:index_value>Смітник</d:index_value><d:index_title>Смітник</d:index_title></d:index>
+	<h1>Смітник</h1>
+	<p>Спеціальна папка, розташована в кінці панелі Dock на комп’ютерах Macintosh. Щоб видалити елемент із диска, перетягніть його на «Смітник», а потім виберіть Finder > Empty Trash або Finder > Secure Empty Trash.</p>
+</d:entry>
+
+<d:entry id="Tremor">
+	<d:index><d:index_value>Tremor</d:index_value><d:index_title>Tremor</d:index_title></d:index>
+	<h1>Tremor</h1>
+	<p>Програмне забезпечення від Apple Inc. для створення цифрових ефектів, яке використовується для художніх фільмів, трансляцій та інтерактивних ігор.</p>
+</d:entry>
+
+<d:entry id="TrueType">
+	<d:index><d:index_value>TrueType</d:index_value><d:index_title>TrueType</d:index_title></d:index>
+	<h1>TrueType</h1>
+	<p>Стандарт, розроблений Apple Inc. для екранних шрифтів.</p>
+</d:entry>
+
+<d:entry id="Universal_Access">
+	<d:index><d:index_value>Універсальний доступ</d:index_value><d:index_title>Універсальний доступ</d:index_title></d:index>
+	<h1>Універсальний доступ</h1>
+	<p>Властивість виробів та послуг, коли всі особи можуть їх використовувати, не зважаючи на фізичні вади.</p>
+</d:entry>
+
+<d:entry id="user_account">
+	<d:index><d:index_value>обліковий запис користувача</d:index_value><d:index_title>обліковий запис користувача</d:index_title></d:index>
+	<h1>обліковий запис користувача</h1>
+	<p>На комп’ютерах Macintosh із Mac OS X усі особи, які використовують комп’ютер, можуть мати індивідуальний обліковий запис із власною домашньою папкою. На комп’ютерах із кількома користувачами звичайні облікові записи користувача дозволяють встановлювати програмне забезпечення для власного використання та змінювати параметри, пов’язані із своїм обліковим записом. Кожен користувач може змінювати параметри системи без втручання до інших облікових записів. Користувачі із звичайними обліковими записами користувача не можуть змінювати інші облікові записи. Інші типи облікових записів: обліковий запис адміністратора, гостьовий обліковий запис та обліковий запис групи.</p>
+</d:entry>
+
+<d:entry id="VCD">
+	<d:index><d:index_value>VCD</d:index_value><d:index_title>VCD</d:index_title></d:index>
+	<h1>VCD</h1>
+	<p>Див. <a href='x-dictionary:r:video_compact_disc:com.apple.dictionary.AppleDictionary'><b>Відеокомпакт-диск</b></a>.</p>
+</d:entry>
+
+<d:entry id="video_compact_disc">
+	<d:index><d:index_value>відеокомпкт-диск</d:index_value><d:index_title>відеокомпкт-диск</d:index_title></d:index>
+	<h1>відеокомпкт-диск</h1>
+	<p>Оптичний диск, який містить більше інформації ніж компакт-диск, але менше ніж DVD-диск. На відеокомпакт-диску (VCD) зберігається відеоматеріал нижчої якості, ніж на DVD-диску, яка відповідає якості відеоматеріалу на відеоплівці VHS. VCD кодується у форматі MPEG-1. Для перегляду вмісту VCD можна використовувати програвач QuickTime та оптичний дисковод на комп’ютері або, підключений напряму до нього. </p>
+</d:entry>
+
+<d:entry id="virtual_memory">
+	<d:index><d:index_value>віртуальна пам’ять</d:index_value><d:index_title>віртуальна пам’ять</d:index_title></d:index>
+	<h1>віртуальна пам’ять</h1>
+	<p>Частина жорсткого диска, яка використовується для розширення оперативної пам’яті комп’ютера.</p>
+</d:entry>
+
+<d:entry id="VO">
+	<d:index><d:index_value>VO</d:index_value><d:index_title>VO</d:index_title></d:index>
+	<h1>VO</h1>
+	<p>Див. <a href='x-dictionary:r:VoiceOver:com.apple.dictionary.AppleDictionary'><b>VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VO_keys">
+	<d:index><d:index_value>клавіші VO</d:index_value><d:index_title>клавіші VO</d:index_title></d:index>
+	<h1>клавіші VO</h1>
+	<p>Див. <a href='x-dictionary:r:VoiceOver_keys:com.apple.dictionary.AppleDictionary'><b>Клавіші VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VoiceOver">
+	<d:index><d:index_value>VoiceOver</d:index_value><d:index_title>VoiceOver</d:index_title></d:index>
+	<h1>VoiceOver</h1>
+	<p>Додатковий інтерфейс взаємодії на комп’ютерах Macintosh для людей з вадами зору та інших осіб, яким потрібно чути, що відображено на екрані. Функція VoiceOver вголос описує все, що з’являється на екрані, а також читає текст у документах і вікнах. За допомогою VoiceOver можна керувати комп’ютером, використовуючи здебільшого клавіатуру, аніж мишу.</p>
+</d:entry>
+
+<d:entry id="VoiceOver_keys">
+	<d:index><d:index_value>клавіші VoiceOver</d:index_value><d:index_title>клавіші VoiceOver</d:index_title></d:index>
+	<h1>клавіші VoiceOver</h1>
+	<p>Клавіші Control та Option, що натискаються одночасно разом з іншими клавішами для вводу команд VoiceOver, називаються клавішами VoiceOver або скорочено «VO». У документації вони згадуються як «VO».</p>
+</d:entry>
+
+<d:entry id="volume">
+	<d:index><d:index_value>том</d:index_value><d:index_title>том</d:index_title></d:index>
+	<h1>том</h1>
+	<p>Розділ зберігання даних, який можна змонтувати, і який, залежно від індивідуальних вподобань користувача, має характеристики локального жорсткого диска, тому жорсткого диска або мережного тому.</p>
+</d:entry>
+
+<d:entry id="web_browser">
+	<d:index><d:index_value>веб-браузер</d:index_value><d:index_title>веб-браузер</d:index_title></d:index>
+	<h1>веб-браузер</h1>
+	<p>Див. <a href='x-dictionary:r:browser:com.apple.dictionary.AppleDictionary'><b>веб-браузер</b></a>.</p>
+</d:entry>
+
+<d:entry id="Web_Clip">
+	<d:index><d:index_value>Веб-кліп</d:index_value><d:index_title>Веб-кліп</d:index_title></d:index>
+	<h1>Веб-кліп</h1>
+	<p>Програмне забезпечення Apple, за допомогою якого можна створювати власні віджети Dashboard, використовуючи вміст веб-сторінок.</p>
+</d:entry>
+
+<d:entry id="WebDAV_server">
+	<d:index><d:index_value>WebDAV-сервер</d:index_value><d:index_title>WebDAV-сервер</d:index_title></d:index>
+	<h1>WebDAV-сервер</h1>
+	<p>Програмне забезпечення Web-based Distributed Authoring and Versioning. Середовище для розробки веб-сайтів, за допомогою якого користувачі можуть переглядати веб-сторінки, вносити зміни та повертати веб-сторінки на веб-сайт, коли веб-сайт залишається активним і доступним для користувачів.</p>
+</d:entry>
+
+<d:entry id="Web_Gallery">
+	<d:index><d:index_value>Веб-галерея</d:index_value><d:index_title>Веб-галерея</d:index_title></d:index>
+	<h1>Веб-галерея</h1>
+	<p>Див. <a href='x-dictionary:r:MobileMe_Gallery:com.apple.dictionary.AppleDictionary'><b>Галерея MobileMe</b></a>.</p>
+</d:entry>
+
+<d:entry id="WebKit">
+	<d:index><d:index_value>WebKit</d:index_value><d:index_title>WebKit</d:index_title></d:index>
+	<h1>WebKit</h1>
+	<p>Набір інструментів, за допомогою якого розробники програмного забезпечення можуть відображати веб-вміст (наприклад веб-сторінки) в програмах. Програма WebKit спрощує процес запиту вмісту з HTTP-сервера в мережі та відображення вмісту для перегляду користувачів.</p>
+</d:entry>
+
+<d:entry id="WebObjects">
+	<d:index><d:index_value>WebObjects</d:index_value><d:index_title>WebObjects</d:index_title></d:index>
+	<h1>WebObjects</h1>
+	<p>Середовище для розробників від Apple Inc., за допомогою якого можна швидко створювати веб-програми.</p>
+</d:entry>
+
+<d:entry id="web_page">
+	<d:index><d:index_value>веб-сторінка</d:index_value><d:index_title>веб-сторінка</d:index_title></d:index>
+	<h1>веб-сторінка</h1>
+	<p>Див. <a href='x-dictionary:r:webpage:com.apple.dictionary.AppleDictionary'><b>веб-сторінка</b></a>.</p>
+</d:entry>
+
+<d:entry id="webpage">
+	<d:index><d:index_value>веб-сторінка</d:index_value><d:index_title>веб-сторінка</d:index_title></d:index>
+	<h1>веб-сторінка</h1>
+	<p>Сторінка в Інтернеті, яку може переглянути будь-хто, підключений до Інтернету, через веб-браузер.</p>
+</d:entry>
+
+<d:entry id="web_widget">
+	<d:index><d:index_value>веб-віджет</d:index_value><d:index_title>веб-віджет</d:index_title></d:index>
+	<h1>веб-віджет</h1>
+	<p>Частина вмісту веб-сторінки, яку можна додати на свій власний веб-сайт. Багато веб-сайтів пропонують веб-віджети, які можна розміщувати в себе, включаючи Інтернет-відеоролики, заголовки новин, котирування акцій, потокові слайд-шоу тощо.</p>
+</d:entry>
+
+<d:entry id="widget">
+	<d:index><d:index_value>віджет</d:index_value><d:index_title>віджет</d:index_title></d:index>
+	<h1>віджет</h1>
+	<p>Міні-програми на комп’ютерах Macintosh. Віджети постачаються разом з Dashboard як складова операційної системи Mac OS X. Серед багатьох інших віджетів є «Годинник», «Калькулятор», «Календар», «Словник», «Погода» та «Біржі». У Dashboard уже є кілька попередньо встановлених віджетів. Інші можна завантажити на <a href='http://www.apple.com/downloads/dashboard/'>веб-сайті Apple</a>.</p>
+</d:entry>
+
+<d:entry id="Wi-Fi">
+	<d:index><d:index_value>Wi-Fi</d:index_value><d:index_title>Wi-Fi</d:index_title></d:index>
+	<h1>Wi-Fi</h1>
+	<p>Програмне або апаратне забезпечення для бездротових мереж, що працює на основі одного із стандартів 802.11.</p>
+</d:entry>
+
+<d:entry id="Xcode">
+	<d:index><d:index_value>Xcode</d:index_value><d:index_title>Xcode</d:index_title></d:index>
+	<h1>Xcode</h1>
+	<p>Набір інструментів для розробки програмного забезпечення Mac OS X, який використовується для створення програм для платформ Mac, iPhone і iPad від Apple Inc. До збірки включено програму Xcode.app IDE (Integrated Development Environment), конструктор інтерфейсу Interface Builder, програму Instruments для аналізу продуктивності, компілятори, зневаджувачі та інші інструменти.</p>
+</d:entry>
+
+<d:entry id="Xgrid">
+	<d:index><d:index_value>Xgrid</d:index_value><d:index_title>Xgrid</d:index_title></d:index>
+	<h1>Xgrid</h1>
+	<p>Програма Apple, за допомогою якої адміністратор може використовувати зведені обчислювальні потужності групи комп’ютерів, об’єднаних у мережу, для виконання однієї здачі.</p>
+</d:entry>
+
+<d:entry id="Xsan">
+	<d:index><d:index_value>Xsan</d:index_value><d:index_title>Xsan</d:index_title></d:index>
+	<h1>Xsan</h1>
+	<p>64-розрядна файлова система, яка дає можливість кільком комп’ютерам з ОС Mac та Xserve спільно використовувати RAID-масиви для зберігання даних через високошвидкісну мережу. Усі комп’ютери можуть зчитувати та записувати дані безпосередньо в централізованій файловій системі.</p>
+</d:entry>
+
+</d:dictionary>

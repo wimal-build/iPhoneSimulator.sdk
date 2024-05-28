@@ -464,7 +464,7 @@ public:
     static void     flushNonloadedKexts(Boolean flushPrelinkedKexts);
     static void     setKextdActive(Boolean active = true);
     static void     setDeferredLoadSucceeded(Boolean succeeded = true);
-    static void     considerRebuildOfPrelinkedKernel(void);
+    static void     considerRebuildOfPrelinkedKernel(OSString * moduleName);
 
     virtual bool    setAutounloadEnabled(bool flag);
 

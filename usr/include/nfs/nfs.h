@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -181,6 +181,8 @@ __private_extern__ int nfs_ticks;
 #define NFS_MATTR_DEAD_TIMEOUT		19	/* how long until unresponsive mount is considered dead */
 #define NFS_MATTR_FH			20	/* file handle for mount directory */
 #define NFS_MATTR_FS_LOCATIONS		21	/* list of locations for the file system */
+#define NFS_MATTR_MNTFLAGS		22	/* VFS mount flags (MNT_*) */
+#define NFS_MATTR_MNTFROM		23	/* fixed string to use for "f_mntfromname" */
 
 /* NFS mount flags */
 #define NFS_MFLAG_SOFT			0	/* soft mount (requests fail if unresponsive) */
@@ -198,6 +200,9 @@ __private_extern__ int nfs_ticks;
 #define NFS_MFLAG_NOACL			12	/* don't support ACLs */
 #define NFS_MFLAG_ACLONLY		13	/* only support ACLs - not mode */
 #define NFS_MFLAG_NFC			14	/* send NFC strings */
+#define NFS_MFLAG_NOQUOTA		15	/* don't support QUOTA requests */
+#define NFS_MFLAG_MNTUDP		16	/* MOUNT protocol should use UDP */
+#define NFS_MFLAG_MNTQUICK		17	/* use short timeouts while mounting */
 
 /* NFS advisory file locking modes */
 #define NFS_LOCK_MODE_ENABLED		0	/* advisory file locking enabled */
@@ -274,6 +279,27 @@ struct nfs_args {
 #define	NFSMNT_SECFLAVOR	0x01000000  /* Use security flavor */
 #define	NFSMNT_SECSYSOK		0x02000000  /* Server can support auth sys */
 #define	NFSMNT_MUTEJUKEBOX	0x04000000  /* don't treat jukebox errors as unresponsive */
+#define	NFSMNT_NOQUOTA		0x08000000  /* don't support QUOTA requests */
+
+
+/*
+ * fs.nfs sysctl(3) NFS_MOUNTINFO defines
+ */
+#define NFS_MOUNT_INFO_VERSION	0	/* nfsstat mount information version */
+#define NFS_MIATTR_BITMAP_LEN	1	/* length of mount info attributes bitmap */
+#define NFS_MIFLAG_BITMAP_LEN	1	/* length of mount info flags bitmap */
+
+/* NFS mount info attributes */
+#define NFS_MIATTR_FLAGS		0	/* mount info flags bitmap (MIFLAG_*) */
+#define NFS_MIATTR_ORIG_ARGS		1	/* original mount args passed into mount call */
+#define NFS_MIATTR_CUR_ARGS 		2	/* current mount args values */
+#define NFS_MIATTR_CUR_LOC_INDEX	3	/* current fs location index */
+
+/* NFS mount info flags */
+#define NFS_MIFLAG_DEAD		0	/* mount is dead */
+#define NFS_MIFLAG_NOTRESP	1	/* server is unresponsive */
+#define NFS_MIFLAG_RECOVERY	2	/* mount in recovery */
+
 
 /*
  * Structures for the nfssvc(2) syscall. Not that anyone but nfsd
@@ -483,6 +509,7 @@ struct nfsstats {
 #define NFS_EXPORTSTATS 3	/* gets exported directory stats */
 #define NFS_USERSTATS	4	/* gets exported directory active user stats */
 #define NFS_USERCOUNT	5	/* gets current count of active nfs users */
+#define NFS_MOUNTINFO	6	/* gets information about an NFS mount */
 
 #ifndef NFS_WDELAYHASHSIZ
 #define	NFS_WDELAYHASHSIZ 16	/* and with this */

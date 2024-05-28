@@ -76,6 +76,12 @@ subsystem
 #include <mach/mach_types.defs>
 #include <mach_debug/mach_debug_types.defs>
 
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+#define PREFIX(NAME) _kernelrpc_ ## NAME
+#else
+#define PREFIX(NAME) NAME
+#endif
+
 /*
  *	Allocate zero-filled memory in the address space
  *	of the target task, either at the specified address,
@@ -84,9 +90,9 @@ subsystem
  *	allocation actually took place is returned.
  */
 #if !defined(_MACH_VM_PUBLISH_AS_LOCAL_)
-routine mach_vm_allocate(
+routine PREFIX(mach_vm_allocate) (
 #else
-routine vm_allocate(
+routine PREFIX(vm_allocate) (
 #endif
 		target		: vm_task_entry_t;
 	inout	address		: mach_vm_address_t;
@@ -98,9 +104,9 @@ routine vm_allocate(
  *	address space of the target virtual memory map.
  */
 #if !defined(_MACH_VM_PUBLISH_AS_LOCAL_)
-routine mach_vm_deallocate(
+routine PREFIX(mach_vm_deallocate) (
 #else
-routine vm_deallocate(
+routine PREFIX(vm_deallocate) (
 #endif
 		target		: vm_task_entry_t;
 		address		: mach_vm_address_t;
@@ -117,9 +123,9 @@ routine vm_deallocate(
  *	*permissions*.
  */
 #if !defined(_MACH_VM_PUBLISH_AS_LOCAL_)
-routine mach_vm_protect(
+routine PREFIX(mach_vm_protect) (
 #else
-routine vm_protect(
+routine PREFIX(vm_protect) (
 #endif
 		target_task	: vm_task_entry_t;
 		address		: mach_vm_address_t;

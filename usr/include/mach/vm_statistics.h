@@ -276,6 +276,10 @@ typedef struct vm_statistics64	vm_statistics64_data_t;
 #define VM_MEMORY_DYLIB	33
 #define VM_MEMORY_OBJC_DISPATCHERS 34
 
+/* Was a nested pmap (VM_MEMORY_SHARED_PMAP) which has now been unnested */
+#define	VM_MEMORY_UNSHARED_PMAP	35
+
+
 // Placeholders for now -- as we analyze the libraries and find how they
 // use memory, we can make these labels more specific.
 #define VM_MEMORY_APPKIT 40
@@ -334,6 +338,9 @@ typedef struct vm_statistics64	vm_statistics64_data_t;
 
 /* CoreProfile memory */
 #define VM_MEMORY_COREPROFILE	71
+
+/* assetsd / MobileSlideShow memory */
+#define VM_MEMORY_ASSETSD	72
 
 /* Reserve 240-255 for application */
 #define VM_MEMORY_APPLICATION_SPECIFIC_1 240

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -147,6 +147,7 @@ xb_init(struct xdrbuf *xbp, xdrbuf_type type)
 {
 	bzero(xbp, sizeof(*xbp));
 	xbp->xb_type = type;
+	xbp->xb_flags |= XB_CLEANUP;
 }
 
 /*
@@ -162,6 +163,8 @@ xb_init_buffer(struct xdrbuf *xbp, char *buf, size_t buflen)
 	xbp->xb_growsize = 512;
 	xbp->xb_ptr = buf;
 	xbp->xb_left = buflen;
+	if (buf) /* when using an existing buffer, xb code should skip cleanup */
+		xbp->xb_flags &= ~XB_CLEANUP;
 }
 
 /*

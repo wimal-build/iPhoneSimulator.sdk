@@ -17,7 +17,7 @@
 							The constant is a small, non-zero, positive value which avoids CoreAnimation
 							from replacing 0.0 with CACurrentMediaTime().
 */
-extern const CFTimeInterval AVCoreAnimationBeginTimeAtZero NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT const CFTimeInterval AVCoreAnimationBeginTimeAtZero NS_AVAILABLE(10_7, 4_0);
 
 
 /*!
@@ -26,7 +26,7 @@ extern const CFTimeInterval AVCoreAnimationBeginTimeAtZero NS_AVAILABLE(10_7, 4_
 	@discussion		AVLayerVideoGravityResizeAspect may be used when setting the videoGravity
                     property of an AVPlayerLayer or AVCaptureVideoPreviewLayer instance.
  */
-extern NSString *const AVLayerVideoGravityResizeAspect NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVLayerVideoGravityResizeAspect NS_AVAILABLE(10_7, 4_0);
 
 
 /*!
@@ -35,7 +35,7 @@ extern NSString *const AVLayerVideoGravityResizeAspect NS_AVAILABLE(10_7, 4_0);
     @discussion     AVLayerVideoGravityResizeAspectFill may be used when setting the videoGravity
                     property of an AVPlayerLayer or AVCaptureVideoPreviewLayer instance.
  */
-extern NSString *const AVLayerVideoGravityResizeAspectFill NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVLayerVideoGravityResizeAspectFill NS_AVAILABLE(10_7, 4_0);
 
 /*!
 	@constant		AVLayerVideoGravityResize
@@ -43,4 +43,4 @@ extern NSString *const AVLayerVideoGravityResizeAspectFill NS_AVAILABLE(10_7, 4_
     @discussion     AVLayerVideoGravityResize may be used when setting the videoGravity
                     property of an AVPlayerLayer or AVCaptureVideoPreviewLayer instance.
  */
-extern NSString *const AVLayerVideoGravityResize NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVLayerVideoGravityResize NS_AVAILABLE(10_7, 4_0);

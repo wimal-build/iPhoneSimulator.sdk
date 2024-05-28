@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2008-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -189,6 +189,10 @@ struct sockaddr_in6 {
  * Local definition for masks
  */
 #define IN6MASK0	{{{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }}}
+#define IN6MASK7	{{{ 0xfe, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
+			    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }}}
+#define IN6MASK16	{{{ 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
+			    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }}}
 #define IN6MASK32	{{{ 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, \
 			    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }}}
 #define IN6MASK64	{{{ 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, \
@@ -247,6 +251,9 @@ struct sockaddr_in6 {
 #define IN6ADDR_LINKLOCAL_ALLV2ROUTERS_INIT \
 	{{{ 0xff, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
 	    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16 }}}
+#define IN6ADDR_V4MAPPED_INIT \
+	{{{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
+	    0x00, 0x00, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00 }}}
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
 
 extern const struct in6_addr in6addr_any;
@@ -308,6 +315,11 @@ extern const struct in6_addr in6addr_linklocal_allv2routers;
 	((*(const __uint32_t *)(const void *)(&(a)->s6_addr[0]) == 0) && \
 	 (*(const __uint32_t *)(const void *)(&(a)->s6_addr[4]) == 0) && \
 	 (*(const __uint32_t *)(const void *)(&(a)->s6_addr[8]) == ntohl(0x0000ffff)))
+
+/*
+ * 6to4
+ */
+#define	IN6_IS_ADDR_6TO4(x)	(ntohs((x)->s6_addr16[0]) == 0x2002)
 
 /*
  * KAME Scope Values
@@ -389,22 +401,37 @@ extern const struct in6_addr in6addr_linklocal_allv2routers;
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
 
 /*
- * To use the definition of the IPv6 Sockets options
- * introduced by RFC 3542 define the constant __APPLE_USE_RFC_3542.
- *
- * Note: For the time being, to maintain source code 
- * compatibility, RFC 2292 is selected by default. 
- * Eventually  RFC 3542 is going to be the 
- * default and RFC 2292 will be obsolete.
- */
-#define __APPLE_USE_RFC_3542 1
-
-/*
  * Options for use with [gs]etsockopt at the IPV6 level.
  * First word of comment is data type; bool is stored in int.
  */
 /* no hdrincl */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
+/*
+ * RFC 3542 define the following socket options in a manner incompatible 
+ * with RFC 2292:
+ *   IPV6_PKTINFO
+ *   IPV6_HOPLIMIT
+ *   IPV6_NEXTHOP
+ *   IPV6_HOPOPTS
+ *   IPV6_DSTOPTS
+ *   IPV6_RTHDR
+ * 
+ * To use the new IPv6 Sockets options introduced by RFC 3542
+ * the constant __APPLE_USE_RFC_3542 must be defined before 
+ * including <netinet/in.h>
+ *
+ * To use the old IPv6 Sockets options from RFC 2292
+ * the constant __APPLE_USE_RFC_2292 must be defined before
+ * including <netinet/in.h>
+ *
+ * Note that eventually RFC 3542 is going to be the 
+ * default and RFC 2292 will be obsolete.
+ */
+
+#if defined(__APPLE_USE_RFC_3542) && defined(__APPLE_USE_RFC_2292)
+#error "__APPLE_USE_RFC_3542 and __APPLE_USE_RFC_2292 cannot be both defined"
+#endif
+
 #if 0 /* the followings are relic in IPv4 and hence are disabled */
 #define IPV6_OPTIONS		1  /* buf/ip6_opts; set/get IP6 options */
 #define IPV6_RECVOPTS		5  /* bool; receive all IP6 opts w/dgram */
@@ -431,8 +458,9 @@ extern const struct in6_addr in6addr_linklocal_allv2routers;
 #define IPV6_2292DSTOPTS	23 /* bool; destinaion option */
 #define IPV6_2292RTHDR		24 /* ip6_rthdr: routing header */
 #define IPV6_2292PKTOPTIONS	25 /* buf/cmsghdr; set/get IPv6 options */
+				   /* obsoleted by RFC3542 */
 
-#ifndef __APPLE_USE_RFC_3542
+#ifdef __APPLE_USE_RFC_2292
 #define IPV6_PKTINFO        IPV6_2292PKTINFO
 #define IPV6_HOPLIMIT       IPV6_2292HOPLIMIT
 #define IPV6_NEXTHOP        IPV6_2292NEXTHOP
@@ -440,8 +468,7 @@ extern const struct in6_addr in6addr_linklocal_allv2routers;
 #define IPV6_DSTOPTS        IPV6_2292DSTOPTS
 #define IPV6_RTHDR          IPV6_2292RTHDR
 #define IPV6_PKTOPTIONS     IPV6_2292PKTOPTIONS
-#endif /* __APPLE_USE_RFC_3542 */
-
+#endif /* __APPLE_USE_RFC_2292 */
 
 #define IPV6_CHECKSUM		26 /* int; checksum offset for raw socket */
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
@@ -503,7 +530,6 @@ extern const struct in6_addr in6addr_linklocal_allv2routers;
 #define IPV6_3542HOPOPTS	49 /* ip6_hbh; send hop-by-hop option */
 #define IPV6_3542DSTOPTS	50 /* ip6_dest; send dst option befor rthdr */
 #define IPV6_3542RTHDR		51 /* ip6_rthdr; send routing header */
-#define IPV6_3542PKTOPTIONS	52 /* buf/cmsghdr; set/get IPv6 options */
 
 #define IPV6_PKTINFO        IPV6_3542PKTINFO
 #define IPV6_HOPLIMIT       IPV6_3542HOPLIMIT
@@ -511,9 +537,6 @@ extern const struct in6_addr in6addr_linklocal_allv2routers;
 #define IPV6_HOPOPTS        IPV6_3542HOPOPTS
 #define IPV6_DSTOPTS        IPV6_3542DSTOPTS
 #define IPV6_RTHDR          IPV6_3542RTHDR
-#define IPV6_PKTOPTIONS     IPV6_3542PKTOPTIONS
-				   /* obsoleted by RFC3542 */
-
 
 #define IPV6_AUTOFLOWLABEL	59 /* bool; attach flowlabel automagically */
 
@@ -637,7 +660,7 @@ struct ip6_mtuinfo {
 #define IPV6CTL_RTMINEXPIRE	26	/* min value for expiration time */
 #define IPV6CTL_RTMAXCACHE	27	/* trigger level for dynamic expire */
 
-#define IPV6CTL_USETEMPADDR	32	/* use temporary addresses (RFC3041) */
+#define IPV6CTL_USETEMPADDR	32	/* use temporary addresses [RFC 4941] */
 #define IPV6CTL_TEMPPLTIME	33	/* preferred lifetime for tmpaddrs */
 #define IPV6CTL_TEMPVLTIME	34	/* valid lifetime for tmpaddrs */
 #define IPV6CTL_AUTO_LINKLOCAL	35	/* automatic link-local addr assign */

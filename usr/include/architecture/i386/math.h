@@ -30,7 +30,7 @@
 #ifndef __MATH__
 #define __MATH__
 
-#include "sys/cdefs.h" /* For definition of __DARWIN_UNIX03 et al */
+#include <sys/cdefs.h> /* For definition of __DARWIN_UNIX03 et al */
 
 #ifdef __cplusplus
 extern "C" {
@@ -111,7 +111,7 @@ extern unsigned int __math_errhandling ( void );
 *                                                                               *
 *                              Inquiry macros                                   *
 *                                                                               *
-*   fpclassify      Returns one of the FP_Å values.                             *
+*   fpclassify      Returns one of the FP_â‰ˆ values.                             *
 *   isnormal        Non-zero if and only if the argument x is normalized.       *
 *   isfinite        Non-zero if and only if the argument x is finite.           *
 *   isnan           Non-zero if and only if the argument x is a NaN.            *
@@ -383,17 +383,14 @@ extern float roundf ( float );
 
 extern long int lround ( double );
 extern long int lroundf ( float );
-
-#if ( defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L ) || ! defined( __STRICT_ANSI__ )  || ! defined( __GNUC__ )
-
+    
+#if !(__DARWIN_NO_LONG_LONG)
     /* long long is not part of C90. Make sure you are passing -std=c99 or -std=gnu99 or better if you need this. */
     extern long long int llrint ( double );
     extern long long int llrintf ( float );
-
     extern long long int llround ( double );
     extern long long int llroundf ( float );
-
-#endif /* #if ( defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L ) || ! defined( __STRICT_ANSI__ )  || ! defined( __GNUC__ ) */
+#endif /* if !(__DARWIN_NO_LONG_LONG) */
 
 extern double trunc ( double );
 extern float truncf ( float );
@@ -479,11 +476,11 @@ extern long int lrintl(long double);
 extern long double roundl(long double);
 extern long int lroundl(long double);
 
-#if ( defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L ) || ! defined( __STRICT_ANSI__ )  || ! defined( __GNUC__ )
+#if !(__DARWIN_NO_LONG_LONG)
     /* long long is not part of C90. Make sure you are passing -std=c99 or -std=gnu99 or better if you need this. */
     extern long long int llrintl(long double);
     extern long long int llroundl(long double);
-#endif /* #if ( defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L ) || ! defined( __STRICT_ANSI__ )  || ! defined( __GNUC__ ) */
+#endif /* if !(__DARWIN_NO_LONG_LONG) */
 
 extern long double truncl(long double);
 extern long double fmodl(long double, long double);

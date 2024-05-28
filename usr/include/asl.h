@@ -129,6 +129,7 @@ typedef struct __aslresponse *aslresponse;
 #define ASL_KEY_AUX_TITLE   "ASLAuxTitle"   /* Auxiliary title string */
 #define ASL_KEY_AUX_UTI     "ASLAuxUTI"     /* Auxiliary Uniform Type ID */
 #define ASL_KEY_AUX_URL     "ASLAuxURL"     /* Auxiliary Uniform Resource Locator */
+#define ASL_KEY_AUX_DATA    "ASLAuxData"    /* Auxiliary in-line data */
 #define ASL_KEY_OPTION      "ASLOption"     /* Internal */
 #define ASL_KEY_SENDER_INSTANCE	"SenderInstance"	/* Sender instance UUID. */
 /*! @/defineblock */
@@ -445,7 +446,7 @@ void aslresponse_free(aslresponse r);
  * @result Returns 0 for success, non-zero for failure
  */
 int asl_create_auxiliary_file(aslmsg msg, const char *title, const char *uti, int *out_fd)
-__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0);
 
 /*!
  * Close an auxiliary file opened by asl_create_auxiliary_file() when writing is complete.
@@ -457,7 +458,7 @@ __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
  * @result Returns 0 for success, non-zero for failure
  */
 int asl_close_auxiliary_file(int fd)
-__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0);
 
 /*!
  * Sends an ASL message to syslogd along with a title string, Uniform Resource Locator, 
@@ -476,7 +477,7 @@ __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
  * @result Returns 0 for success, non-zero for failure
  */
 int asl_log_auxiliary_location(aslmsg msg, const char *title, const char *uti, const char *url)
-__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0);
 
 /*!
  * Creates an aslclient for logging to a file descriptor.  The file must be opened for read and
@@ -502,7 +503,7 @@ __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
  * @result An aslclient
  */
 aslclient asl_open_from_file(int fd, const char *ident, const char *facility)
-__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0);
 
 __END_DECLS
 

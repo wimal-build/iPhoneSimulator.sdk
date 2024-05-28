@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HopefullyExitsFirst</key>
+	<true/>
+	<key>Disabled</key>
+	<false/>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.BTServer</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.server.bluetooth</key>
+		<string>true</string>
+		<key>com.apple.server.bluetooth.xpc</key>
+		<string>true</string>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/sbin/BTServer</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/BTServer_stderr.log</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/BTServer_stdout.log</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>MallocScribble</key>
+		<string>1</string>
+		<key>MallocErrorAbort</key>
+		<string>1</string>
+		<key>MallocStackLogging</key>
+		<string>1</string>
+		<key>BT_HCI_TRANSPORT</key>
+		<string>USB</string>
+	</dict>
+</dict>
+</plist>

@@ -28,6 +28,10 @@
 #include <AvailabilityMacros.h>
 #include <TargetConditionals.h>
 
+#ifndef __has_feature
+#   define __has_feature(x) 0
+#endif
+
 /*
  * OBJC_API_VERSION 0 or undef: Tiger and earlier API only
  * OBJC_API_VERSION 2: Leopard and later API available
@@ -46,6 +50,15 @@
 #       define OBJC2_UNAVAILABLE UNAVAILABLE_ATTRIBUTE
 #   else
 #       define OBJC2_UNAVAILABLE DEPRECATED_IN_MAC_OS_X_VERSION_10_5_AND_LATER
+#   endif
+#endif
+
+/* OBJC_ARC_UNAVAILABLE: unavailable with -fobjc-arc */
+#if !defined(OBJC_ARC_UNAVAILABLE)
+#   if __has_feature(objc_arr)
+#       define OBJC_ARC_UNAVAILABLE __attribute__((unavailable("not available in automatic reference counting mode")))
+#   else
+#       define OBJC_ARC_UNAVAILABLE
 #   endif
 #endif
 

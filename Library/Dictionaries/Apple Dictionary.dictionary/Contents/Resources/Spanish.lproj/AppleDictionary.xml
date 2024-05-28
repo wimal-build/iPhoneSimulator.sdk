@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" localizable="true">
+
+<d:entry id="802.11">
+	<d:index><d:index_value>802.11</d:index_value><d:index_title>802.11</d:index_title></d:index>
+	<h1>802.11</h1>
+	<p>Estándar para el software y hardware de red inalámbrica, desarrollado por el IEEE LAN/MAN Standards Committee (IEEE 802). El estándar incluye los tipos 802.11a, 802.11b, 802.11g y 802.11n.</p>
+</d:entry>
+
+<d:entry id="access_control_lists">
+	<d:index><d:index_value>listas de control de acceso</d:index_value><d:index_title>listas de control de acceso</d:index_title></d:index>
+	<h1>listas de control de acceso</h1>
+	<p>Listas de permisos que especifican qué usuarios pueden acceder a un archivo, carpeta o disco, y qué operaciones tiene permitido realizar cada usuario. Por ejemplo, los permisos de una carpeta determinan si un usuario en particular puede visualizar el contenido de la carpeta (solo leer), si puede añadir archivos a la carpeta pero no visualizar su contenido (solo escribir), o ambas cosas (leer y escribir).</p>
+</d:entry>
+
+<d:entry id="account">
+	<d:index><d:index_value>cuenta</d:index_value><d:index_title>cuenta</d:index_title></d:index>
+	<h1>cuenta</h1>
+	<p>En ordenadores Macintosh que usan Mac OS X, cada persona que usa el ordenador puede tener una cuenta individual con una carpeta de inicio independiente. Existen varios tipos de cuenta: “usuario”, “administrador”, “grupo” e “invitado”.</p>
+</d:entry>
+
+<d:entry id="account_password">
+	<d:index><d:index_value>contraseña de cuenta</d:index_value><d:index_title>contraseña de cuenta</d:index_title></d:index>
+	<h1>contraseña de cuenta</h1>
+	<p>En ordenadores Macintosh que usan Mac OS X, los usuarios pueden especificar una contraseña para controlar el acceso a sus cuentas de usuario. Las contraseñas de cuenta suelen denominarse “contraseñas de inicio de sesión”. Otras contraseñas importantes en Mac OS X son las contraseñas de llavero y la contraseña maestra.</p>
+</d:entry>
+
+<d:entry id="ACLs">
+	<d:index><d:index_value>ACL</d:index_value><d:index_title>ACL</d:index_title></d:index>
+	<h1>ACL</h1>
+	<p>Véase <a href='x-dictionary:r:access_control_lists:com.apple.dictionary.AppleDictionary'><b>listas de control de acceso</b></a>.</p>
+</d:entry>
+
+<d:entry id="Address_Book">
+	<d:index><d:index_value>Agenda</d:index_value><d:index_title>Agenda</d:index_title></d:index>
+	<h1>Agenda</h1>
+	<p>Aplicación incluida en Mac OS X. La aplicación Agenda le permite almacenar información acerca de sus contactos, como pueden ser nombre y tratamiento, números de teléfono, direcciones, e información sobre direcciones de correo electrónico, iChat o páginas web. Dado que Agenda se integra en otras aplicaciones de Mac OS X, toda la información de la Agenda está también disponible en Mail, iChat y Safari.</p>
+</d:entry>
+
+<d:entry id="administrator_account">
+	<d:index><d:index_value>cuenta de administrador</d:index_value><d:index_title>cuenta de administrador</d:index_title></d:index>
+	<h1>cuenta de administrador</h1>
+	<p>En ordenadores Macintosh que usan Mac OS X, cada persona que usa el ordenador puede tener una cuenta individual con una carpeta de inicio independiente. Al menos una de las cuentas debe ser una cuenta de administrador con capacidad para crear, eliminar y modificar otras cuentas, instalar software y modificar los ajustes del sistema. Si un ordenador con Mac OS X solo tiene una cuenta, esta se convierte de forma automática en la cuenta de administrador. Los otros tipos de cuenta son “usuario”, “grupo” e “invitado”.</p>
+</d:entry>
+
+<d:entry id="administrator_password">
+	<d:index><d:index_value>contraseña de administrador</d:index_value><d:index_title>contraseña de administrador</d:index_title></d:index>
+	<h1>contraseña de administrador</h1>
+	<p>En ordenadores Macintosh que usan Mac OS X, la contraseña de la cuenta de administrador del ordenador. Otras contraseñas importantes de Mac OS X son las contraseñas de llavero y la contraseña maestra.</p>
+</d:entry>
+
+<d:entry id="AFP">
+	<d:index><d:index_value>AFP</d:index_value><d:index_title>AFP</d:index_title></d:index>
+	<h1>AFP</h1>
+	<p>Protocolo de archivos de Apple. Un protocolo para cliente y servidor empleado por el servicio de archivos de Apple para compartir archivos y servicios de red. AFP usa TCP/IP y otros protocolos para permitir la comunicación entre los equipos de una red.</p>
+</d:entry>
+
+<d:entry id="AirDrop">
+	<d:index><d:index_value>AirDrop</d:index_value><d:index_title>AirDrop</d:index_title></d:index>
+	<h1>AirDrop</h1>
+	<p>Característica de Mac OS X que permite compartir archivos fácilmente con otros usuarios cercanos de AirDrop.</p>
+</d:entry>
+
+<d:entry id="AIM">
+	<d:index><d:index_value>AIM</d:index_value><d:index_title>AIM</d:index_title></d:index>
+	<h1>AIM</h1>
+	<p>AOL Instant Messenger, una aplicación de mensajería instantánea en línea de AOL LLC (anteriormente America Online, Inc.).</p>
+</d:entry>
+
+<d:entry id="AirPort">
+	<d:index><d:index_value>AirPort</d:index_value><d:index_title>AirPort</d:index_title></d:index>
+	<h1>AirPort</h1>
+	<p>Dispositivos y software para redes inalámbricas de Apple Inc., que permiten que un ordenador se conecte a una red o a Internet sin necesidad de cables. Un sistema AirPort incluye un router, denominado estación base AirPort, que se conecta a la red. La estación base comparte su conexión de red, transmitiendo una señal que recibe una tarjeta AirPort situada dentro o conectada a un ordenador. Las estaciones base AirPort comprenden la estación base AirPort Extreme y la estación base AirPort Express.</p>
+</d:entry>
+
+<d:entry id="AirPort_Disk">
+	<d:index><d:index_value>Disco AirPort</d:index_value><d:index_title>Disco AirPort</d:index_title></d:index>
+	<h1>Disco AirPort</h1>
+	<p>Software de Apple que permite a un ordenador conectado a una red AirPort compartir un disco rígido externo que esté conectado a un puerto USB de una estación base AirPort Extreme.</p>
+</d:entry>
+
+<d:entry id="AirPort_Express_Base_Station">
+	<d:index><d:index_value>Estación base AirPort Express</d:index_value><d:index_title>Estación base AirPort Express</d:index_title></d:index>
+	<h1>Estación base AirPort Express</h1>
+	<p>Estación base AirPort compacta de Apple Inc. que proporciona conexión inalámbrica a Internet a hasta diez ordenadores. La estación base AirPort Express incluye AirPlay, un software que permite que el ordenador conectado utilice iTunes para enviar música a hasta tres equipos de música. La AirPort Express puede conectarse a una impresora USB que estará disponible de forma automática para todos los ordenadores de la red mediante la tecnología Bonjour. También puede usarse para ampliar el alcance de una red AirPort Extreme existente.</p>
+</d:entry>
+
+<d:entry id="AirPort_Extreme_Base_Station">
+	<d:index><d:index_value>Estación base AirPort Extreme</d:index_value><d:index_title>Estación base AirPort Extreme</d:index_title></d:index>
+	<h1>Estación base AirPort Extreme</h1>
+	<p>Estación base AirPort de Apple Inc. que proporciona conexión inalámbrica a Internet a hasta un máximo de 50 ordenadores. También puede incorporar una conexión Ethernet por cable. La estación base AirPort Extreme puede conectarse a una impresora USB para que esta pase a estar disponible para todos los ordenadores de la red mediante tecnología Bonjour.</p>
+</d:entry>
+
+<d:entry id="AirPlay">
+	<d:index><d:index_value>AirPlay</d:index_value><d:index_title>AirPlay</d:index_title></d:index>
+	<h1>AirPlay</h1>
+	<p>Aplicación de Apple Inc. que permite a un ordenador, iPod, iPad o iPhone conectado a una red AirPort usar iTunes para enviar música o vídeos de forma inalámbrica a varios dispositivos, como una AirPort Express o un Apple TV.</p>
+</d:entry>
+
+<d:entry id="album">
+	<d:index><d:index_value>álbum</d:index_value><d:index_title>álbum</d:index_title></d:index>
+	<h1>álbum</h1>
+	<p>Característica de la aplicación iPhoto de los ordenadores Macintosh. Un álbum de iPhoto es una colección de fotos que se selecciona en la fototeca de iPhoto y se ordena de la forma que desee. Puede crear un álbum estándar seleccionando fotos concretas, o bien un álbum inteligente que se actualice de forma automática siguiendo los criterios que usted elija, a medida que cambie la fototeca. Puede incluir la misma foto en distintos álbumes sin necesidad de crear múltiples copias de ella.</p>
+</d:entry>
+
+<d:entry id="alias">
+	<d:index><d:index_value>alias</d:index_value><d:index_title>alias</d:index_title></d:index>
+	<h1>alias</h1>
+	<p>Pequeño archivo sin contenido en los ordenadores Macintosh que dirige a un documento, una carpeta, una aplicación o un dispositivo que normalmente está situado en otra ubicación. Al hacer doble clic en el alias, el elemento original se abre o se arranca.</p>
+</d:entry>
+
+<d:entry id="anti-alias">
+	<d:index><d:index_value>difuminado</d:index_value><d:index_title>difuminado</d:index_title></d:index>
+	<h1>difuminado</h1>
+	<p>En el ámbito de los gráficos de ordenador, la técnica consistente en minimizar la distorsión del texto y los gráficos, suavizando los bordes irregulares cuando los elementos de alta resolución se visualizan con una resolución menor.</p>
+</d:entry>
+
+<d:entry id="Aperture">
+	<d:index><d:index_value>Aperture</d:index_value><d:index_title>Aperture</d:index_title></d:index>
+	<h1>Aperture</h1>
+	<p>Aplicación de Apple para ordenadores Macintosh. Aperture es una aplicación de fotografía profesional empleada por muchos fotógrafos profesionales para realizar tareas de posproducción.</p>
+</d:entry>
+
+<d:entry id="Apple_Inc.">
+	<d:index><d:index_value>Apple Inc.</d:index_value><d:index_title>Apple Inc.</d:index_title></d:index>
+	<h1>Apple Inc.</h1>
+	<p>Apple Inc. es una corporación tecnológica fundada en California en 1976, y con sede principal en Cupertino, California. Los productos más conocidos de Apple Inc. son el ordenador Macintosh, el reproductor de música portátil iPod, Mac OS y el software iLife, donde se incluye iTunes.</p>
+</d:entry>
+
+<d:entry id="AppleCare">
+	<d:index><d:index_value>AppleCare</d:index_value><d:index_title>AppleCare</d:index_title></d:index>
+	<h1>AppleCare</h1>
+	<p>Programa de servicio y soporte de Apple para ordenadores Macintosh, reproductores iPod y otros productos.</p>
+</d:entry>
+
+<d:entry id="Apple_Mail">
+	<d:index><d:index_value>Mail de Apple</d:index_value><d:index_title>Mail de Apple</d:index_title></d:index>
+	<h1>Mail de Apple</h1>
+	<p>Véase <a href='x-dictionary:r:Mail:com.apple.dictionary.AppleDictionary'><b>Mail</b></a>.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote">
+	<d:index><d:index_value>Apple Remote</d:index_value><d:index_title>Apple Remote</d:index_title></d:index>
+	<h1>Apple Remote</h1>
+	<p>Mando a distancia que se utiliza con varios productos Apple, entre ellos Apple TV.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote_Desktop">
+	<d:index><d:index_value>Apple Remote Desktop</d:index_value><d:index_title>Apple Remote Desktop</d:index_title></d:index>
+	<h1>Apple Remote Desktop</h1>
+	<p>Aplicación de Apple que permite que un usuario (por ejemplo, un profesor o un administrador de sistemas) pueda controlar desde su ordenador Macintosh la actividad de otros usuarios de ordenadores Macintosh dentro de una red.</p>
+</d:entry>
+
+<d:entry id="AppleScript">
+	<d:index><d:index_value>AppleScript</d:index_value><d:index_title>AppleScript</d:index_title></d:index>
+	<h1>AppleScript</h1>
+	<p>Lenguaje de script integrado en el Mac OS. El lenguaje AppleScript consiste en una serie de comandos que pueden usarse para automatizar tareas repetitivas o complejas dentro de gran número de aplicaciones, como pueden ser Mail, Safari o iCal, entre otras.</p>
+</d:entry>
+
+<d:entry id="AppleShare">
+	<d:index><d:index_value>AppleShare</d:index_value><d:index_title>AppleShare</d:index_title></d:index>
+	<h1>AppleShare</h1>
+	<p>Software de servidor de archivos e impresión que se utilizaba con el software de redes AppleTalk. La aplicación AppleShare ha sido sustituida por Mac OS X Server.</p>
+</d:entry>
+
+<d:entry id="AppleTalk">
+	<d:index><d:index_value>AppleTalk</d:index_value><d:index_title>AppleTalk</d:index_title></d:index>
+	<h1>AppleTalk</h1>
+	<p>Conjunto de herramientas de software de Apple Inc. para el establecimiento y conexión de redes. En ordenadores Macintosh con Mac OS X, el sistema AppleTalk se ha sustituido por los protocolos TCP/IP.</p>
+</d:entry>
+
+<d:entry id="Apple_TV">
+	<d:index><d:index_value>Apple TV</d:index_value><d:index_title>Apple TV</d:index_title></d:index>
+	<h1>Apple TV</h1>
+	<p>Decodificador de Apple Inc. que recibe de forma inalámbrica una señal de vídeo y la reproduce en cualquier televisor panorámico de definición mejorada o alta definición. El Apple TV puede reproducir películas, programas de TV, música y podcasts desde una biblioteca de iTunes, así como tráilers de películas desde www.apple.com o pases de diapositivas con fotos digitales del ordenador. El Apple TV puede sincronizarse con un ordenador Macintosh que use Mac OS X 10.3.9, Mac OS X 10.4.9 o una versión posterior, o bien un ordenador con Windows que utilice Windows XP Home, Windows XP Professional (SP2) o Windows Vista. Para obtener más información, visite la <a href='http://www.apple.com/es/appletv/'>página web del Apple TV</a>.</p>
+</d:entry>
+
+<d:entry id="AppleWorks">
+	<d:index><d:index_value>AppleWorks</d:index_value><d:index_title>AppleWorks</d:index_title></d:index>
+	<h1>AppleWorks</h1>
+	<p>Aplicación de Apple que incluye aplicaciones de procesamiento de textos, hoja de cálculo, gráficos y bases de datos. El programa AppleWorks original lo utilizaba la familia de ordenadores Apple II. Más tarde se crearía una nueva versión para ordenadores Macintosh con Mac OS X. AppleWorks ha sido sustituida por el paquete de aplicaciones iWork.</p>
+</d:entry>
+
+<d:entry id="Aqua">
+	<d:index><d:index_value>Aqua</d:index_value><d:index_title>Aqua</d:index_title></d:index>
+	<h1>Aqua</h1>
+	<p>Interfaz gráfica de usuario y tema visual de Mac OS X.</p>
+</d:entry>
+
+<d:entry id="archive">
+	<d:index><d:index_value>archivo comprimido</d:index_value><d:index_title>archivo comprimido</d:index_title></d:index>
+	<h1>archivo comprimido</h1>
+	<p>En Mac OS X, opción para comprimir un archivo para reducir su tamaño, o para reinstalar el software de sistema manteniendo intactos sus archivos y ajustes de usuarios (“archivar e instalar”).</p>
+</d:entry>
+
+<d:entry id="argument">
+	<d:index><d:index_value>argumento</d:index_value><d:index_title>argumento</d:index_title></d:index>
+	<h1>argumento</h1>
+	<p>En la aplicación de hoja de cálculo Numbers, los argumentos proporcionan los valores que una función de Numbers necesita para llevar a cabo una tarea. Por ejemplo, la siguiente fórmula contiene una función denominada SUM con un único argumento (un intervalo de celdas) que suma los valores de la columna A, de la fila 2 a la 10: =SUM(A2:A10). El número y los tipos de argumentos varían para las diferentes funciones. </p>
+</d:entry>
+
+<d:entry id="audiobook">
+	<d:index><d:index_value>audiolibro</d:index_value><d:index_title>audiolibro</d:index_title></d:index>
+	<h1>audiolibro</h1>
+	<p>Programa de habla grabada, como puede ser un libro leído en voz alta. Pueden incluirse audiolibros y otros programas de habla grabada en la biblioteca de iTunes.</p>
+</d:entry>
+
+<d:entry id="audio_driver">
+	<d:index><d:index_value>driver de audio</d:index_value><d:index_title>driver de audio</d:index_title></d:index>
+	<h1>driver de audio</h1>
+	<p>Programa de software que convierte datos de audio a un formato que pueda ser procesado por la tarjeta de sonido del ordenador y reproducirse a través de los altavoces. El driver de audio del ordenador debe ser compatible con su tarjeta de sonido. El driver de audio de Mac OS X es Core Audio.</p>
+</d:entry>
+
+<d:entry id="AutoFill">
+	<d:index><d:index_value>Autorrelleno</d:index_value><d:index_title>Autorrelleno</d:index_title></d:index>
+	<h1>Autorrelleno</h1>
+	<p>Característica del navegador web Safari de Apple que le permite rellenar automáticamente los formularios de una página web con información obtenida de su agenda y de otros formularios rellenados con anterioridad.</p>
+</d:entry>
+
+<d:entry id="Automator">
+	<d:index><d:index_value>Automator</d:index_value><d:index_title>Automator</d:index_title></d:index>
+	<h1>Automator</h1>
+	<p>Aplicación incluida en Mac OS X que permite crear flujos de trabajo para automatizar tareas repetitivas. Automator es compatible con muchas otras aplicaciones, como es el caso de Finder, Safari, iCal, Agenda, Microsoft Office y Adobe Photoshop.</p>
+</d:entry>
+
+<d:entry id="autoplay_DVD">
+	<d:index><d:index_value>DVD con reproducción automática</d:index_value><d:index_title>DVD con reproducción automática</d:index_title></d:index>
+	<h1>DVD con reproducción automática</h1>
+	<p>Película en DVD o pase de diapositivas que se reproduce de forma automática cuando un usuario introduce el DVD en la unidad de discos ópticos del ordenador. En los ordenadores Macintosh, es posible crear un DVD con reproducción automática mediante la aplicación iDVD.</p>
+</d:entry>
+
+<d:entry id="A/UX">
+	<d:index><d:index_value>A/UX</d:index_value><d:index_title>A/UX</d:index_title></d:index>
+	<h1>A/UX</h1>
+	<p>Versión del sistema operativo UNIX para determinados modelos de Macintosh. La primera versión del sistema operativo A/UX apareció en 1988, y su versión definitiva es de 1995.</p>
+</d:entry>
+
+<d:entry id="background">
+	<d:index><d:index_value>fondo</d:index_value><d:index_title>fondo</d:index_title></d:index>
+	<h1>fondo</h1>
+	<p>En Mac OS X, puede definirse un fondo personalizado en muchos lugares, como por ejemplo el escritorio, las ventanas del Finder y los proyectos de iDVD. Véase también <a href='x-dictionary:r:desktop_picture:com.apple.dictionary.AppleDictionary'><b>imagen del escritorio</b></a> y <a href='x-dictionary:r:iDVD_themes:com.apple.dictionary.AppleDictionary'><b>temas de iDVD</b></a>.</p>
+</d:entry>
+
+<d:entry id="Backup">
+	<d:index><d:index_value>Backup</d:index_value><d:index_title>Backup</d:index_title></d:index>
+	<h1>Backup</h1>
+	<p>Software de Apple para miembros de MobileMe. La aplicación Backup permite programar copias de seguridad automatizadas de los archivos de su ordenador Macintosh (fotos, música, carpeta de inicio y otros).</p>
+</d:entry>
+
+<d:entry id="badge_overlay">
+	<d:index><d:index_value>superposición de emblema</d:index_value><d:index_title>superposición de emblema</d:index_title></d:index>
+	<h1>superposición de emblema</h1>
+	<p>Pequeño gráfico que aparece al mover el cursor sobre una imagen, ventana, icono u otro objeto. Un emblema superpuesto ofrece información adicional acerca del objeto. En la aplicación de fotografía digital Aperture para ordenadores Macintosh, al aplicar ajustes, palabras clave, puntuaciones u otros cambios a una imagen, Aperture marca la imagen con un emblema superpuesto. La superposición de emblema solo aparece en pantalla y no en las copias impresas.</p>
+</d:entry>
+
+<d:entry id="Bonjour">
+	<d:index><d:index_value>Bonjour</d:index_value><d:index_title>Bonjour</d:index_title></d:index>
+	<h1>Bonjour</h1>
+	<p>Software integrado en Mac OS X. El software Bonjour conecta un ordenador a páginas web y dispositivos cercanos, como impresoras u otros ordenadores. También permite buscar en una red de área local contactos de iChat e información compartida, como música compartida o fotos.</p>
+</d:entry>
+
+<d:entry id="browser">
+	<d:index><d:index_value>navegador</d:index_value><d:index_title>navegador</d:index_title></d:index>
+	<h1>navegador</h1>
+	<p>Aplicación que le ayuda a buscar, visualizar e interactuar con texto, imágenes, sonido y otra información. Un navegador web se emplea para navegar por las páginas web de Internet. La aplicación Safari que incorporan los ordenadores Macintosh es un ejemplo de navegador web.</p>
+</d:entry>
+
+<d:entry id="browsing_history">
+	<d:index><d:index_value>historial de navegación</d:index_value><d:index_title>historial de navegación</d:index_title></d:index>
+	<h1>historial de navegación</h1>
+	<p>Lista de Safari u otros navegadores que registra las direcciones de las páginas web que se visitan. Normalmente, el historial de navegación recuerda las direcciones web visitadas durante la última semana.</p>
+</d:entry>
+
+<d:entry id="buddy_list">
+	<d:index><d:index_value>lista de contactos</d:index_value><d:index_title>lista de contactos</d:index_title></d:index>
+	<h1>lista de contactos</h1>
+	<p>En aplicaciones de mensajería instantánea, lista de personas que puede seleccionar para hablar con ellas. Normalmente, una lista de contactos contiene los nombres de las personas que se conectan más a menudo. Las listas de contactos suelen mostrar el estado de cada contacto (conectado y disponible o no disponible).</p>
+</d:entry>
+
+<d:entry id="burn_folder">
+	<d:index><d:index_value>carpeta de grabación</d:index_value><d:index_title>carpeta de grabación</d:index_title></d:index>
+	<h1>carpeta de grabación</h1>
+	<p>Tipo de carpeta que se usa en ordenadores Macintosh con Mac OS X. Una carpeta de grabación contiene todos los ítems que desea grabar en un disco CD o DVD. Al hacer doble clic en el icono de la carpeta de grabación y, después, clic en el botón Grabar, todos los ítems de la carpeta de grabación se graban en el disco.</p>
+</d:entry>
+
+<d:entry id="Calculator">
+	<d:index><d:index_value>Calculadora</d:index_value><d:index_title>Calculadora</d:index_title></d:index>
+	<h1>Calculadora</h1>
+	<p>Aplicación de calculadora que viene incluida en el Mac OS X. La aplicación Calculadora funciona en modo básico, científico y de programación y es compatible con la notación polaca inversa (RPN).</p>
+</d:entry>
+
+<d:entry id="CalDAV">
+	<d:index><d:index_value>CalDAV</d:index_value><d:index_title>CalDAV</d:index_title></d:index>
+	<h1>CalDAV</h1>
+	<p>Software que permite que varios usuarios publiquen y se suscriban a calendarios colaborativos, y a que los sincronicen con diversos dispositivos. Los calendarios compartidos son gestionados por un servidor CalDAV.</p>
+</d:entry>
+
+<d:entry id="candidate_window">
+	<d:index><d:index_value>ventana de candidato</d:index_value><d:index_title>ventana de candidato</d:index_title></d:index>
+	<h1>ventana de candidato</h1>
+	<p>En el software de método de entrada, la ventana empleada para introducir caracteres que, como los ideogramas chinos, no aparecen en el teclado. La ventana de candidatos aparece cuando se introduce un código de entrada que tiene más de un carácter asociado a él. A continuación, puede elegir en la ventana de candidatos el carácter que desea introducir en el texto.</p>
+</d:entry>
+
+<d:entry id="Carbon">
+	<d:index><d:index_value>Carbon</d:index_value><d:index_title>Carbon</d:index_title></d:index>
+	<h1>Carbon</h1>
+	<p>Conjunto de herramientas denominadas API (interfaces de programación de aplicaciones) para desarrolladores de software que creen aplicaciones para Mac OS. Carbon incluye un conjunto de herramientas de interfaz de usuario, gestión de eventos, la biblioteca de gráficos 2D Quartz y compatibilidad con multiprocesamiento.</p>
+</d:entry>
+
+<d:entry id="CDDB">
+	<d:index><d:index_value>CDDB</d:index_value><d:index_title>CDDB</d:index_title></d:index>
+	<h1>CDDB</h1>
+	<p>Base de datos de discos compactos. CDDB es una marca comercial bajo licencia de Gracenote, Inc. Las aplicaciones de software usan la CDDB para buscar información sobre CD de audio en Internet. Tras consultar la CDDB, una aplicación puede mostrar el título, nombre de artista, lista de pistas y otra información sobre la mayoría de los CD.</p>
+</d:entry>
+
+<d:entry id="cell_reference">
+	<d:index><d:index_value>referencia de celda</d:index_value><d:index_title>referencia de celda</d:index_title></d:index>
+	<h1>referencia de celda</h1>
+	<p>En la aplicación de hoja de cálculo Numbers, las referencias de celda identifican celdas específicas en fórmulas. Puede crear referencias de celda usando las letras y números de las pestañas de referencia o bien usando nombres de celdas de cabecera. Si la tabla tiene tanto una fila de cabecera como una columna de cabecera, puede identificar una celda usando el nombre de columna seguido del nombre de fila.</p>
+</d:entry>
+
+<d:entry id="cell_value_format">
+	<d:index><d:index_value>formato de valor de celda</d:index_value><d:index_title>formato de valor de celda</d:index_title></d:index>
+	<h1>formato de valor de celda</h1>
+	<p>En la aplicación de hoja de cálculo Numbers, puede aplicar un formato a una celda de modo que su valor se visualice de una forma concreta. Por ejemplo, puede formatear celdas que contengan valores monetarios de modo que aparezca un símbolo de divisa (como $, £,o ¥) después de los números en las celdas. También puede formatear celdas para que contengan controles, como por ejemplo casillas de verificación y reguladores, los cuales se usan para añadir o cambiar los valores de celda.</p>
+</d:entry>
+
+<d:entry id="certificate">
+	<d:index><d:index_value>certificado</d:index_value><d:index_title>certificado</d:index_title></d:index>
+	<h1>certificado</h1>
+	<p>Adjunto de un documento electrónico que permite la transferencia segura de información a través de Internet. Los navegadores web, las aplicaciones de correo y las de mensajería instantánea, usan certificados para encriptar la información que intercambian con un sitio seguro. Los certificados protegen su información de inicio de sesión, números de tarjetas de crédito, direcciones y otros datos seguros. Los certificados son emitidos por organizaciones de confianza, como VeriSign, Inc. o RSA Data Security, Inc. Al entrar en una página web segura, Mac OS X comprueba el certificado de la página y lo compara con certificados de conocida legitimidad. Si no se reconoce el certificado de la página, o si esta no cuenta con un certificado, el usuario recibe un mensaje.</p>
+</d:entry>
+
+<d:entry id="chapter_marker">
+	<d:index><d:index_value>marcador de capítulo</d:index_value><d:index_title>marcador de capítulo</d:index_title></d:index>
+	<h1>marcador de capítulo</h1>
+	<p>Marcadores insertados en una película digital para crear un menú de selección de escena que permita a los espectadores acceder directamente a escenas concretas.</p>
+</d:entry>
+
+<d:entry id="character_palette">
+	<d:index><d:index_value>paleta de caracteres</d:index_value><d:index_title>paleta de caracteres</d:index_title></d:index>
+	<h1>paleta de caracteres</h1>
+	<p>Característica de Mac OS X que le permite insertar en sus documentos caracteres especiales, como símbolos matemáticos, letras con acentos, flechas y otros caracteres especiales o de otros idiomas.</p>
+</d:entry>
+
+<d:entry id="Chooser">
+	<d:index><d:index_value>Selector</d:index_value><d:index_title>Selector</d:index_title></d:index>
+	<h1>Selector</h1>
+	<p>Característica de versiones anteriores de Mac OS que le permite conectarse a impresoras y servidores, así como activar o desactivar las funciones de red de AppleTalk. En Mac OS X fue sustituida por los paneles “Impresión y Fax” y “Red” de las Preferencias del Sistema.</p>
+</d:entry>
+
+<d:entry id="Cinema_Tools">
+	<d:index><d:index_value>Cinema Tools</d:index_value><d:index_title>Cinema Tools</d:index_title></d:index>
+	<h1>Cinema Tools</h1>
+	<p>Conjunto de herramientas de software de Apple Inc. que se incluye con la aplicación de edición de vídeo profesional Final Cut Pro. El software Cinema Tools permite efectuar el seguimiento de la relación entre la película y el sonido originales y su equivalente en forma de vídeo digitalizado.</p>
+</d:entry>
+
+<d:entry id="Classic">
+	<d:index><d:index_value>Classic</d:index_value><d:index_title>Classic</d:index_title></d:index>
+	<h1>Classic</h1>
+	<p>Versiones anteriores del sistema operativo de Macintosh. Sustituida por Mac OS X.</p>
+</d:entry>
+
+<d:entry id="clip">
+	<d:index><d:index_value>clip</d:index_value><d:index_title>clip</d:index_title></d:index>
+	<h1>clip</h1>
+	<p>Segmento de audio o vídeo. En la aplicación iMovie es posible trabajar con clips de muchas maneras para lograr los efectos deseados, como por ejemplo, mover clips, ajustar los puntos de inicio y fin de clips musicales, añadir transiciones entre clips, etc.</p>
+</d:entry>
+
+<d:entry id="Cocoa">
+	<d:index><d:index_value>Cocoa</d:index_value><d:index_title>Cocoa</d:index_title></d:index>
+	<h1>Cocoa</h1>
+	<p>Conjunto de herramientas denominadas API (interfaces de programación de aplicaciones) para desarrolladores de software que creen aplicaciones para Mac OS. Cocoa es un entorno de aplicación orientado a objetos para el desarrollo de aplicaciones nativas para Mac OS X. Las aplicaciones desarrolladas con Cocoa siguen las directrices para interfaces humanas de Apple, lo cual hace que su apariencia y funcionamiento resulte familiar a los usuarios de Macintosh.</p>
+</d:entry>
+
+<d:entry id="Cocoa_Touch">
+	<d:index><d:index_value>Cocoa Touch</d:index_value><d:index_title>Cocoa Touch</d:index_title></d:index>
+	<h1>Cocoa Touch</h1>
+	<p>Conjunto de herramientas denominadas API (interfaces de programación de aplicaciones) para desarrolladores de software que creen aplicaciones para el iPhone y el iPod touch. Cocoa Touch se basa en las herramientas de Cocoa para la creación de aplicaciones para Mac OS.</p>
+</d:entry>
+
+<d:entry id="ColorSync">
+	<d:index><d:index_value>ColorSync</d:index_value><d:index_title>ColorSync</d:index_title></d:index>
+	<h1>ColorSync</h1>
+	<p>Aplicación de ajuste de color de Apple. ColorSync unifica todos los dispositivos de imagen, tales como pantallas, impresoras, escáneres y cámaras digitales, para que el color que se visualice en pantalla sea el mismo que el color que se imprima. ColorSync forma parte de Mac OS X.</p>
+</d:entry>
+
+<d:entry id="ColorSync_profile">
+	<d:index><d:index_value>Perfil ColorSync</d:index_value><d:index_title>Perfil ColorSync</d:index_title></d:index>
+	<h1>Perfil ColorSync</h1>
+	<p>Información que guarda la aplicación ColorSync para todos los dispositivos de imagen conectados al ordenador, como pueden ser escáneres, impresoras y pantallas. El perfil se emplea para reproducir imágenes de la manera más precisa posible. Por ejemplo, cuando una imagen se escanea, el archivo de imagen incluye una copia del perfil del escáner. Cuando se imprime la imagen, un proceso de coincidencia convierte la información de color del perfil de escáner en el perfil de impresora.</p>
+</d:entry>
+
+<d:entry id="combo_drive">
+	<d:index><d:index_value>unidad combinada</d:index_value><d:index_title>unidad combinada</d:index_title></d:index>
+	<h1>unidad combinada</h1>
+	<p>Tipo de unidad de discos. Una unidad combinada permite leer y grabar (copiar) en discos CD y también leer, pero no grabar, discos DVD.</p>
+</d:entry>
+
+<d:entry id="Common_Access_Card_Viewer">
+	<d:index><d:index_value>Visor de tarjetas de acceso común</d:index_value><d:index_title>Visor de tarjetas de acceso común</d:index_title></d:index>
+	<h1>Visor de tarjetas de acceso común</h1>
+	<p>Dispositivo de control de acceso. Al pasar una tarjeta de acceso común por un lector de tarjeta se puede iniciar una sesión en el ordenador, acceder a él cuando el salvapantallas está activado, realizar cambios en determinados paneles de las Preferencias del Sistema e instalar software.</p>
+</d:entry>
+
+<d:entry id="conditional_formatting">
+	<d:index><d:index_value>formato condicional</d:index_value><d:index_title>formato condicional</d:index_title></d:index>
+	<h1>formato condicional</h1>
+	<p>Característica que le permite formatear una celda de una hoja de cálculo de Numbers de modo que la celda se visualice de una forma concreta cuando se cumpla una condición. Por ejemplo, puede hacer que el fondo de una celda se vuelva rojo cuando su valor exceda un número determinado.</p>
+</d:entry>
+
+<d:entry id="control_panel">
+	<d:index><d:index_value>panel de control</d:index_value><d:index_title>panel de control</d:index_title></d:index>
+	<h1>panel de control</h1>
+	<p>En los ordenadores con Windows, el panel de control contiene pequeños programas que le permite seleccionar ajustes como el fondo de escritorio o el método de conexión a Internet. En los ordenadores Macintosh, las Preferencias del Sistema se usan para seleccionar ajustes.</p>
+</d:entry>
+
+<d:entry id="control_strip">
+	<d:index><d:index_value>tira de control</d:index_value><d:index_title>tira de control</d:index_title></d:index>
+	<h1>tira de control</h1>
+	<p>Se empleaba en versiones anteriores de Mac OS para visualizar el estado de la batería, comprobar la conexión de red, cambiar el volumen del sistema, ajustar la resolución de pantalla y llevar a cabo otras funciones. En Mac OS X, los menús de la barra de menús reemplazan a la tira de control.</p>
+</d:entry>
+
+<d:entry id="cookie">
+	<d:index><d:index_value>cookie</d:index_value><d:index_title>cookie</d:index_title></d:index>
+	<h1>cookie</h1>
+	<p>Pequeño archivo colocado en el ordenador por una página web para almacenar información. Al volver a la página más adelante, el navegador web reenvía de vuelta las cookies que pertenecen a dicha página. Las cookies informan a la página de quién es, a fin de poder mostrarle información relevante. Las cookies pueden almacenar información que le identifique, como su nombre y su dirección de correo electrónico. Una página web solo tiene acceso a la información que usted le proporciona, y no puede usar las cookies para tener acceso a otra información del ordenador.</p>
+</d:entry>
+
+<d:entry id="Core_Audio">
+	<d:index><d:index_value>Core Audio</d:index_value><d:index_title>Core Audio</d:index_title></d:index>
+	<h1>Core Audio</h1>
+	<p>Driver de audio usado en ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Cover_Flow">
+	<d:index><d:index_value>Cover Flow</d:index_value><d:index_title>Cover Flow</d:index_title></d:index>
+	<h1>Cover Flow</h1>
+	<p>Característica del Finder en Mac OS X y del reproductor multimedia iTunes. En iTunes, Cover Flow muestra en una pantalla de ordenador las ilustraciones de portada de cada álbum de una colección de música de iTunes, permitiendo moverse rápidamente por los distintos álbumes. En el Finder, la vista de Cover Flow es una de las cuatro opciones para navegar por los archivos, carpetas y aplicaciones que aparecen en una ventana del Finder.</p>
+</d:entry>
+
+<d:entry id="crop">
+	<d:index><d:index_value>recortar</d:index_value><d:index_title>recortar</d:index_title></d:index>
+	<h1>recortar</h1>
+	<p>Permite editar una imagen, como por ejemplo una foto, conservando solo la porción deseada y eliminando el resto.</p>
+</d:entry>
+
+<d:entry id="Dashboard">
+	<d:index><d:index_value>Dashboard</d:index_value><d:index_title>Dashboard</d:index_title></d:index>
+	<h1>Dashboard</h1>
+	<p>Software de Apple integrado en Mac OS X y que incluye pequeñas aplicaciones llamadas “widgets”, que ofrecen una gran variedad de utilidades: comprobación de cotizaciones en bolsa, búsqueda de información meteorológica nacional o internacional, consulta de términos en un diccionario, etc.</p>
+</d:entry>
+
+<d:entry id="Dashcode">
+	<d:index><d:index_value>Dashcode</d:index_value><d:index_title>Dashcode</d:index_title></d:index>
+	<h1>Dashcode</h1>
+	<p>Programa de desarrollo de software de Apple que le permite crear widgets del Dashboard y aplicaciones web (páginas web optimizadas para Safari en un iPhone). Los widgets y aplicaciones web creados mediante Dashcode usan tecnologías web estándar como HTML, CSS o JavaScript.</p>
+</d:entry>
+
+<d:entry id="desktop">
+	<d:index><d:index_value>escritorio</d:index_value><d:index_title>escritorio</d:index_title></d:index>
+	<h1>escritorio</h1>
+	<p>Área que comprende el fondo de la pantalla del ordenador. Un escritorio contiene iconos, ventanas, barras de herramientas, archivos y carpetas que el usuario puede crear, modificar, mover y eliminar.</p>
+</d:entry>
+
+<d:entry id="desktop_picture">
+	<d:index><d:index_value>imagen del escritorio</d:index_value><d:index_title>imagen del escritorio</d:index_title></d:index>
+	<h1>imagen del escritorio</h1>
+	<p>Color, trama o imagen que se emplea para personalizar la zona del fondo de la pantalla. Puede elegir una imagen de escritorio mediante el panel Escritorio y Salvapantallas de las Preferencias del Sistema.</p>
+</d:entry>
+
+<d:entry id="Dictionary">
+	<d:index><d:index_value>Diccionario</d:index_value><d:index_title>Diccionario</d:index_title></d:index>
+	<h1>Diccionario</h1>
+	<p>Aplicación incluida en el sistema Mac OS X. Diccionario le permite buscar definiciones y sinónimos en diversas fuentes, entre ellas los diccionarios Oxford American y el Diccionario Apple.</p>
+</d:entry>
+
+<d:entry id="digital_certificate">
+	<d:index><d:index_value>certificado digital</d:index_value><d:index_title>certificado digital</d:index_title></d:index>
+	<h1>certificado digital</h1>
+	<p>Conocido también como certificado de clave pública, se trata de un documento electrónico que asocia la identidad digital del usuario con otra información, como su nombre, dirección de correo electrónico u ocupación. Las aplicaciones web, como el navegador web Safari, Mail o iChat, usan certificados para permitir la transferencia segura de información a través de la Red.</p>
+</d:entry>
+
+<d:entry id="disk_image">
+	<d:index><d:index_value>imagen de disco</d:index_value><d:index_title>imagen de disco</d:index_title></d:index>
+	<h1>imagen de disco</h1>
+	<p>Un único archivo que contiene todo el contenido y la organización de todos los archivos y carpetas de un dispositivo de almacenamiento, como un disco rígido o un disco óptico. Puede usar el programa Utilidad de Discos para crear una imagen de disco. Con una imagen de disco pueden archivarse datos antiguos, compartir archivos con otras personas, encriptar la información delicada y realizar copias de discos.</p>
+</d:entry>
+
+<d:entry id="Disk_Utility">
+	<d:index><d:index_value>Utilidad de Discos</d:index_value><d:index_title>Utilidad de Discos</d:index_title></d:index>
+	<h1>Utilidad de Discos</h1>
+	<p>Aplicación incluida en el Mac OS X para realizar operaciones relacionadas con los discos. Utilidad de Discos le permite crear imágenes de disco, así como montar, eliminar, reformatear, dividir en particiones, grabar o reparar discos.</p>
+</d:entry>
+
+<d:entry id="Dock">
+	<d:index><d:index_value>Dock</d:index_value><d:index_title>Dock</d:index_title></d:index>
+	<h1>Dock</h1>
+	<p>Componente para la apertura de aplicaciones incluido en Mac OS X. El Dock está situado a lo largo del borde de la pantalla y contiene iconos para muchas de las aplicaciones disponibles en el ordenador. Es posible arrastrar iconos al y desde el Dock.</p>
+</d:entry>
+
+<d:entry id="dogcow">
+	<d:index><d:index_value>dogcow</d:index_value><d:index_title>dogcow</d:index_title></d:index>
+	<h1>dogcow</h1>
+	<p>Originariamente era un carácter del tipo de letra Cairo (que contiene “dingbats” u ornamentos). El dogcow (palabra inglesa que literalmente significa “perro-vaca”) se usaba para mostrar la orientación y el color del papel en los cuadros de diálogo de ajuste de página en los ordenadores Mac. Con el paso del tiempo, se le añadieron manchas y adquirió un aspecto más bovino. El sonido del dogcow es “muau”.</p>
+</d:entry>
+
+<d:entry id="domain">
+	<d:index><d:index_value>dominio</d:index_value><d:index_title>dominio</d:index_title></d:index>
+	<h1>dominio</h1>
+	<p>Parte del nombre de dominio de un ordenador que está conectado a Internet. El nombre “www.ejemplo.com” está compuesto por el subdominio o nombre de host “www,” el dominio “ejemplo” y el dominio de máximo nivel “com”.</p>
+</d:entry>
+
+<d:entry id="DOM">
+	<d:index><d:index_value>DOM</d:index_value><d:index_title>DOM</d:index_title></d:index>
+	<h1>DOM</h1>
+	<p>Modelo de objeto de documento (del inglés “Document Object Model”). Interfaz que permite que los programas de software accedan y actualicen el contenido, estructura y estilo de los documentos, incluidas las páginas web. El DOM para una página web enumera cada elemento que aparece en la misma, incluido su contenido, enlaces, especificaciones de estilo y scripts (pequeños programas), y especifica el orden en el que los elementos aparecen en la página.</p>
+</d:entry>
+
+<d:entry id="DOM_navigation">
+	<d:index><d:index_value>navegación DOM</d:index_value><d:index_title>navegación DOM</d:index_title></d:index>
+	<h1>navegación DOM</h1>
+	<p>Navegación de una página web basada en el modelo de objeto de documento (DOM) de la página.</p>
+</d:entry>
+
+<d:entry id="DRAM">
+	<d:index><d:index_value>DRAM</d:index_value><d:index_title>DRAM</d:index_title></d:index>
+	<h1>DRAM</h1>
+	<p>Memoria dinámica de acceso aleatorio. El tipo de memoria más común para los ordenadores personales. La DRAM requiere una nueva carga eléctrica cada pocos milisegundos.</p>
+</d:entry>
+
+<d:entry id="DVD_or_CD_sharing">
+	<d:index><d:index_value>Compartir DVD o CD</d:index_value><d:index_title>Compartir DVD o CD</d:index_title></d:index>
+	<h1>Compartir DVD o CD</h1>
+	<p>Característica de Mac OS X que permite compartir discos DVD o CD en una red Ethernet o inalámbrica. Si otro ordenador de la red no cuenta con una unidad de discos ópticos, puede dejar que dicho ordenador use un disco en la unidad de discos ópticos de su ordenador. El ordenador con la unidad de discos ópticos debe usar Mac OS X v10.4.10 o posterior, o bien Windows XP o Windows Vista.</p>
+</d:entry>
+
+<d:entry id="dynamic_prompt">
+	<d:index><d:index_value>sugerencia dinámica</d:index_value><d:index_title>sugerencia dinámica</d:index_title></d:index>
+	<h1>sugerencia dinámica</h1>
+	<p>En el software de método de entrada empleado para introducir caracteres que, como en el caso de los ideogramas chinos, no aparecen en el teclado, active la sugerencia dinámica para que los caracteres aparezcan de forma automática en la ventana de candidatos a medida que escribe.</p>
+</d:entry>
+
+<d:entry id="eMac">
+	<d:index><d:index_value>eMac</d:index_value><d:index_title>eMac</d:index_title></d:index>
+	<h1>eMac</h1>
+	<p>Su nombre procede de la denominación en inglés “education Mac” (Mac para el sector educativo). Es un ordenador integrado de bajo coste, equipado con una pantalla de 17 pulgadas y un procesador PowerPC G4. Apple Inc. lanzó el eMac al mercado en 2002 y dejó de distribuirlo en 2006 al sustituirlo por un modelo de iMac.</p>
+</d:entry>
+
+<d:entry id="enhance">
+	<d:index><d:index_value>mejorar</d:index_value><d:index_title>mejorar</d:index_title></d:index>
+	<h1>mejorar</h1>
+	<p>Característica de la aplicación iPhoto de los ordenadores Macintosh. Al hacer clic en el botón Mejorar durante la edición de una foto, el brillo de la foto aumenta o ajusta sus niveles de contraste de acuerdo con criterios predefinidos.</p>
+</d:entry>
+
+<d:entry id="EPS">
+	<d:index><d:index_value>EPS</d:index_value><d:index_title>EPS</d:index_title></d:index>
+	<h1>EPS</h1>
+	<p>Véase <a href='x-dictionary:r:Encapsulated_Postscript:com.apple.dictionary.AppleDictionary'><b>Postscript encapsulado</b></a></p>
+</d:entry>
+
+<d:entry id="Encapsulated_Postscript">
+	<d:index><d:index_value>Postscript encapsulado</d:index_value><d:index_title>Postscript encapsulado</d:index_title></d:index>
+	<h1>Postscript encapsulado</h1>
+	<p>Abreviado como EPS. Formato de archivo basado en el lenguaje PostScript empleado para la impresión de texto y gráficos. Un archivo EPS contiene una descripción de texto y gráficos que pueden ser usados por una impresora y que pueden copiarse y compartirse con varios equipos y aplicaciones.</p>
+</d:entry>
+
+<d:entry id="equalizer">
+	<d:index><d:index_value>ecualizador</d:index_value><d:index_title>ecualizador</d:index_title></d:index>
+	<h1>ecualizador</h1>
+	<p>Abreviado como EQ. Control de audio que funciona como los controles de agudos y bajos de un equipo estéreo, pero con mayor potencia y flexibilidad. Puede usar un ecualizador para ajustar de forma precisa frecuencias específicas del espectro de sonido para personalizar la música según sus distintos géneros, entornos de escucha (distintas habitaciones de su hogar, por ejemplo) y métodos de salida (altavoces o auriculares, por ejemplo). En la aplicación iTunes puede ajustar los parámetros de l ecualizador manualmente o elegir entre más de 20 preajustes con los parámetros de ecualizador más frecuentes.</p>
+</d:entry>
+
+<d:entry id="Event">
+	<d:index><d:index_value>Evento</d:index_value><d:index_title>Evento</d:index_title></d:index>
+	<h1>Evento</h1>
+	<p>Las aplicaciones iMovie e iPhoto de los ordenadores Macintosh organizan las fototecas y videotecas por eventos. Un evento agrupa vídeos o fotos tomados durante un cierto período de tiempo, como por ejemplo las fotos tomadas durante una boda al atardecer o de un sábado de playa. Puede organizar sus vídeos y fotos combinando y dividiendo eventos, además de creando eventos con nombres de su elección.</p>
+</d:entry>
+
+<d:entry id="EXIF">
+	<d:index><d:index_value>EXIF</d:index_value><d:index_title>EXIF</d:index_title></d:index>
+	<h1>EXIF</h1>
+	<p>Archivo de imagen intercambiable; una especificación para el formato de archivo usado por las cámaras digitales.</p>
+</d:entry>
+
+<d:entry id="Exchangeable_Image_File">
+	<d:index><d:index_value>Archivo de imagen intercambiable</d:index_value><d:index_title>Archivo de imagen intercambiable</d:index_title></d:index>
+	<h1>Archivo de imagen intercambiable</h1>
+	<p>Véase <a href='x-dictionary:r:EXIF:com.apple.dictionary.AppleDictionary'><b>EXIF</b></a>.</p>
+</d:entry>
+
+<d:entry id="Exposé">
+	<d:index><d:index_value>Exposé</d:index_value><d:index_title>Exposé</d:index_title></d:index>
+	<h1>Exposé</h1>
+	<p>Característica del Mac OS X que le permite ocultar temporalmente todas las ventanas de la pantalla del ordenador pulsando la tecla F11 del teclado (tecla por omisión). Además, la función Exposé le permite ver determinadas ventanas o el escritorio.</p>
+</d:entry>
+
+<d:entry id="ExpressCard">
+	<d:index><d:index_value>ExpressCard</d:index_value><d:index_title>ExpressCard</d:index_title></d:index>
+	<h1>ExpressCard</h1>
+	<p>Tarjeta de expansión disponible para ordenadores, incluidos los ordenadores Macintosh portátiles. La adición de una ExpressCard al ordenador le permite ampliar sus capacidades. Puede usar una ExpressCard para conectar unidades de disco, lectores de tarjetas Compact Flash y un largo etcétera. Los ordenadores portátiles Macintosh usan la ExpressCard/34.</p>
+</d:entry>
+
+<d:entry id="extended_desktop">
+	<d:index><d:index_value>escritorio ampliado</d:index_value><d:index_title>escritorio ampliado</d:index_title></d:index>
+	<h1>escritorio ampliado</h1>
+	<p>Característica de las Preferencias del Sistema de Mac OS X. Si el ordenador está conectado a varios dispositivos de visualización, incluidos televisores y proyectores, puede ajustar su configuración en el panel Pantallas de las Preferencias del Sistema, de modo que la imagen de su escritorio se muestre como una imagen continua dividida entre todos los dispositivos.</p>
+</d:entry>
+
+<d:entry id="family_controls">
+	<d:index><d:index_value>controles familiares</d:index_value><d:index_title>controles familiares</d:index_title></d:index>
+	<h1>controles familiares</h1>
+	<p>Véase <a href='x-dictionary:r:parental_controls:com.apple.dictionary.AppleDictionary'><b>controles parentales</b></a>.</p>
+</d:entry>
+
+<d:entry id="fast_user_switching">
+	<d:index><d:index_value>cambio rápido de usuario</d:index_value><d:index_title>cambio rápido de usuario</d:index_title></d:index>
+	<h1>cambio rápido de usuario</h1>
+	<p>Característica de Mac OS X que permite que más de un usuario mantenga abierta una sesión simultáneamente en un ordenador. Cuando el cambio rápido de usuario está activado, las cuentas de usuario disponibles aparecen en un menú en la esquina superior derecha de la barra de menús. Puede cambiar a otra cuenta seleccionándola en el menú. La cuenta anterior mantiene su sesión abierta y con todas las aplicaciones y documentos que tuviera abiertos, de modo que puede volver a ella rápidamente.</p>
+</d:entry>
+
+<d:entry id="FileVault">
+	<d:index><d:index_value>FileVault</d:index_value><d:index_title>FileVault</d:index_title></d:index>
+	<h1>FileVault</h1>
+	<p>Aplicación incluida en Mac OS X y que permite encriptar y proteger los archivos de los ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Final_Cut">
+	<d:index><d:index_value>Final Cut</d:index_value><d:index_title>Final Cut</d:index_title></d:index>
+	<h1>Final Cut</h1>
+	<p> Paquete de aplicaciones de edición de vídeo que puede usarse para editar vídeo obtenido mediante equipos de vídeo profesional o cámaras de vídeo digitales. Los productos de Final Cut son utilizados por videógrafos profesionales y aficionados. Las aplicaciones de Final Cut cargan y visualizan vídeo en un equipo Macintosh desde donde se puede editar y procesar el vídeo.</p>
+</d:entry>
+
+<d:entry id="Finder">
+	<d:index><d:index_value>Finder</d:index_value><d:index_title>Finder</d:index_title></d:index>
+	<h1>Finder</h1>
+	<p>Parte del sistema operativo Mac OS. El Finder organiza y muestra distintas visualizaciones de los archivos y las carpetas del ordenador y de los discos conectados a él. Asimismo, el Finder permite buscar y gestionar la información de los discos.</p>
+</d:entry>
+
+<d:entry id="FireWire">
+	<d:index><d:index_value>FireWire</d:index_value><d:index_title>FireWire</d:index_title></d:index>
+	<h1>FireWire</h1>
+	<p>Tipo de cable, conector y software que permite una conexión de alta velocidad entre dos ordenadores o entre un ordenador y un dispositivo al que esté conectado, como un cámara de vídeo digital.</p>
+</d:entry>
+
+<d:entry id="floating_object">
+	<d:index><d:index_value>objeto flotante</d:index_value><d:index_title>objeto flotante</d:index_title></d:index>
+	<h1>objeto flotante</h1>
+	<p>En la aplicación de procesamiento de textos y maquetación de páginas Pages, una imagen, gráfico u objeto que se fija a una posición específica de una página. La posición de un objeto flotante no varía cuando se añade más texto u otros gráficos a la página. Véase también objeto integrado.</p>
+</d:entry>
+
+<d:entry id="Font_Book">
+	<d:index><d:index_value>Catálogo Tipográfico</d:index_value><d:index_title>Catálogo Tipográfico</d:index_title></d:index>
+	<h1>Catálogo Tipográfico</h1>
+	<p>Aplicación de gestión de tipos de letra que se incluye en el Mac OS X. El programa Catálogo Tipográfico le permite visualizar e instalar tipos de letra, agrupar tipografías en colecciones, activar o desactivar determinados tipos de letra o colecciones tipográficas y exportar tipos a otro ordenador.</p>
+</d:entry>
+
+<d:entry id="formula">
+	<d:index><d:index_value>fórmula</d:index_value><d:index_title>fórmula</d:index_title></d:index>
+	<h1>fórmula</h1>
+	<p>Expresión matemática que usa operaciones para derivar un valor. En la aplicación de hoja de cálculo Numbers, puede añadir una fórmula a una celda de tabla para visualizar un valor derivado de valores de otras celdas de tabla.</p>
+</d:entry>
+
+<d:entry id="frame_range">
+	<d:index><d:index_value>intervalo de fotogramas</d:index_value><d:index_title>intervalo de fotogramas</d:index_title></d:index>
+	<h1>intervalo de fotogramas</h1>
+	<p>Serie de fotogramas de vídeo que conforman parte de un clip de vídeo o la totalidad de este. En la aplicación iMovie puede seleccionar y trabajar con intervalos de fotogramas.</p>
+</d:entry>
+
+<d:entry id="Front_Row">
+	<d:index><d:index_value>Front Row</d:index_value><d:index_title>Front Row</d:index_title></d:index>
+	<h1>Front Row</h1>
+	<p>Aplicación incluida en algunas versiones de Mac OS X. Front Row le permite navegar por las películas, la música y las fotos almacenadas en su ordenador mediante el mando a distancia Apple Remote.</p>
+</d:entry>
+
+<d:entry id="full_screen">
+	<d:index><d:index_value>pantalla completa</d:index_value><d:index_title>pantalla completa</d:index_title></d:index>
+	<h1>pantalla completa</h1>
+	<p>En iPhoto, una forma de visualizar las fotos usando toda la pantalla en lugar de mostrar solo una parte de ella.</p>
+</d:entry>
+
+<d:entry id="function">
+	<d:index><d:index_value>función</d:index_value><d:index_title>función</d:index_title></d:index>
+	<h1>función</h1>
+	<p>En la aplicación de hoja de cálculo Numbers, una operacion nominal que puede incluir en una fórmula para realizar un cálculo o manipular los datos de una celda de tabla. La aplicación Numbers proporciona funciones que llevan a cabo operaciones matemáticas o financieras comunes, obtienen valores de celda en base a una búsqueda, manipulan cadenas de texto u obtienen la fecha y hora actuales, por ejemplo. Cada función tiene un nombre seguido de uno o más argumentos indicados entre paréntesis.</p>
+</d:entry>
+
+<d:entry id="GarageBand">
+	<d:index><d:index_value>GarageBand</d:index_value><d:index_title>GarageBand</d:index_title></d:index>
+	<h1>GarageBand</h1>
+	<p>Parte del paquete de aplicaciones de creatividad iLife de Apple Inc. GarageBand le permite crear, interpretar y grabar música original. Para obtener más información, visite la <a href='http://www.apple.com/es/garageband/'>página web de GarageBand</a>.</p>
+</d:entry>
+
+<d:entry id="Grab">
+	<d:index><d:index_value>Instantánea</d:index_value><d:index_title>Instantánea</d:index_title></d:index>
+	<h1>Instantánea</h1>
+	<p>Aplicación de capturas de pantalla que se incluye en el Mac OS X. Instantánea se usa para realizar fotografías de toda la pantalla del ordenador o de una parte de ella.</p>
+</d:entry>
+
+<d:entry id="Gracenote,_Inc.">
+	<d:index><d:index_value>Gracenote, Inc.</d:index_value><d:index_title>Gracenote, Inc.</d:index_title></d:index>
+	<h1>Gracenote, Inc.</h1>
+	<p>Empresa que mantiene una base de datos de información acerca de los contenidos de los CD de audio. Gracenote ofrece aplicaciones de software y datos que permiten gestionar y buscar contenidos digitales. Muchas aplicaciones de ordenador, incluido iTunes, utilizan la base de datos de discos compactos de Gracenote (CDDB).</p>
+</d:entry>
+
+<d:entry id="group_account">
+	<d:index><d:index_value>cuenta de grupo</d:index_value><d:index_title>cuenta de grupo</d:index_title></d:index>
+	<h1>cuenta de grupo</h1>
+	<p>En ordenadores Macintosh que usan Mac OS X, un tipo de cuenta compuesta por una o varias cuentas de usuario más. Una cuenta de grupo (denominada también “grupo de cuentas”) se usa para definir privilegios para archivos compartidos entre dos o más usuarios. A diferencia de lo que sucede con la mayoría de las cuentas, no es posible iniciar sesión usando una cuenta de grupo.</p>
+</d:entry>
+
+<d:entry id="GSM">
+	<d:index><d:index_value>GSM</d:index_value><d:index_title>GSM</d:index_title></d:index>
+	<h1>GSM</h1>
+	<p>Sigla de “Global System for Mobile Communications”, el estándar de comunicación en telefonía móvil más utilizado.</p>
+</d:entry>
+
+<d:entry id="guest_account">
+	<d:index><d:index_value>cuenta de invitado</d:index_value><d:index_title>cuenta de invitado</d:index_title></d:index>
+	<h1>cuenta de invitado</h1>
+	<p>En ordenadores Macintosh con Mac OS X, tipo de cuenta que puede crearse para permitir que otras personas usen su ordenador temporalmente, sin crear una cuennta de usuario individual para cada invitado. Un invitado puede iniciar sesión en el ordenador sin una contraseña. Puede usar los controles parentales para gestionar una cuenta de invitado. Un invitado no puede modificar otras cuentas, alterar la configuración del equipo ni iniciar sesión de forma remota. Los archivos que un invitado crea mediante una cuenta de invitado se eliminan cuando este cierra su sesión.</p>
+</d:entry>
+
+<d:entry id="GUID">
+	<d:index><d:index_value>GUID</d:index_value><d:index_title>GUID</d:index_title></d:index>
+	<h1>GUID</h1>
+	<p>Identificador único global. Cadena hexadecimal que identifica unívocamente una cuenta de usuario, cuenta de grupo o lista de equipos. También se utiliza para proporcionar identidades de usuario y de grupo para permisos de listas de control de acceso (ACL), y para asociar a usuarios concretos con pertenencias a grupos y grupos anidados. Los GUID son valores de 128 bits que hacen que sea extremadamente improbable que se generen GUID duplicados.</p>
+</d:entry>
+
+<d:entry id="GUID_partition">
+	<d:index><d:index_value>partición GUID</d:index_value><d:index_title>partición GUID</d:index_title></d:index>
+	<h1>partición GUID</h1>
+	<p>Esquema de particiones basado en un identificador único global (GUID). En los ordenadores Macintosh con procesador Intel, Mac OS X solo puede instalarse en discos con el esquema de particiones GUID.</p>
+</d:entry>
+
+<d:entry id="Gutenprint">
+	<d:index><d:index_value>Gutenprint</d:index_value><d:index_title>Gutenprint</d:index_title></d:index>
+	<h1>Gutenprint</h1>
+	<p>Conocida anteriormente bajo el nombre de “impresión Gimp”, se trata de una colección de programas de software de código abierto para impresora, incluidos los archivos de descripción de impresora PostScript (PPD) que forman parte de Mac OS X. Utilice el software Gutenprint si no hay otro software disponible para su impresora o si parece que el software de la impresora no funciona correctamente.</p>
+</d:entry>
+
+<d:entry id="hardware_port">
+	<d:index><d:index_value>puerto de hardware</d:index_value><d:index_title>puerto de hardware</d:index_title></d:index>
+	<h1>puerto de hardware</h1>
+	<p>Cualquiera de los conectores de un ordenador a los que pueden conectarse otros dispositivos, como teclados o impresoras. Los puertos de hardware habituales incluyen USB, Firewire y Ethernet.</p>
+</d:entry>
+
+<d:entry id="HFS">
+	<d:index><d:index_value>HFS</d:index_value><d:index_title>HFS</d:index_title></d:index>
+	<h1>HFS</h1>
+	<p>Véase <a href='x-dictionary:r:Mac_OS_Standard_format:com.apple.dictionary.AppleDictionary'><b>formato Mac OS estándar</b></a>.</p>
+</d:entry>
+
+<d:entry id="HFS_Plus">
+	<d:index><d:index_value>HFS Plus</d:index_value><d:index_title>HFS Plus</d:index_title></d:index>
+	<h1>HFS Plus</h1>
+	<p>Véase <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>formato Mac OS Plus</b></a>.</p>
+</d:entry>
+
+<d:entry id="home_folder">
+	<d:index><d:index_value>carpeta de inicio</d:index_value><d:index_title>carpeta de inicio</d:index_title></d:index>
+	<h1>carpeta de inicio</h1>
+	<p>Carpeta creada para cada usuario de un ordenador al configurar por primera vez su cuenta de usuario. La carpeta de inicio no se llama realmente “Inicio”, sino que su nombre es igual que el nombre corto de usuario especificado en la cuenta de usuario. Si es usted el único usuario de su ordenador, solo tendrá una cuenta de usuario y una carpeta de inicio. La carpeta de inicio almacena sus documentos, música, imágenes, ajustes de preferencias y mucho más.</p>
+</d:entry>
+
+<d:entry id="HyperCard">
+	<d:index><d:index_value>HyperCard</d:index_value><d:index_title>HyperCard</d:index_title></d:index>
+	<h1>HyperCard</h1>
+	<p>Aplicación de Apple distribuida entre 1987 y 2004. HyperCard, que fue una de las primeras aplicaciones multimedia que tuvo éxito en el mercado, se utilizaba para crear bases de datos, presentaciones, juegos, material didáctico, etc.</p>
+</d:entry>
+
+<d:entry id="HyperTalk">
+	<d:index><d:index_value>HyperTalk</d:index_value><d:index_title>HyperTalk</d:index_title></d:index>
+	<h1>HyperTalk</h1>
+	<p>Lenguaje de programación usado con el software HyperCard de Apple, distribuido entre 1987 y 2004. El lenguaje HyperTalk iba dirigido principalmente a programadores poco experimentados. Los programas HyperTalk (llamados “scripts”) contienen comandos similares al inglés escrito.</p>
+</d:entry>
+
+<d:entry id="iBook">
+	<d:index><d:index_value>iBook</d:index_value><d:index_title>iBook</d:index_title></d:index>
+	<h1>iBook</h1>
+	<p>Línea de ordenadores portátiles de Apple Inc. que se distribuyeron entre 1999 y 2006. Los ordenadores iBook fueron diseñados para uso particular y académico. La gama iBook fue sustituida por la gama MacBook en 2006.</p>
+</d:entry>
+
+<d:entry id="iBooks_app">
+	<d:index><d:index_value>Aplicación iBooks</d:index_value><d:index_title>Aplicación iBooks</d:index_title></d:index>
+	<h1>Aplicación iBooks</h1>
+	<p>Aplicación de Apple disponible para el iPhone, iPod touch y iPad que permite descargar y leer libros electrónicos en formato ePub.</p>
+</d:entry>
+
+<d:entry id="iCal">
+	<d:index><d:index_value>iCal</d:index_value><d:index_title>iCal</d:index_title></d:index>
+	<h1>iCal</h1>
+	<p>Aplicación de calendario de Apple incluida en Mac OS X y que le permite guardar un registro de sus citas y listas de tareas pendientes. También puede usar iCal para sincronizar información entre ordenadores, teléfonos y otros dispositivos.</p>
+</d:entry>
+
+<d:entry id="iChat">
+	<d:index><d:index_value>iChat</d:index_value><d:index_title>iChat</d:index_title></d:index>
+	<h1>iChat</h1>
+	<p>Aplicación de mensajería instantánea integrada en Mac OS X. iChat le permite intercambiar mensajes con miembros de MobileMe, así como con otras personas que utilicen otras aplicaciones de mensajería instantánea, como AOL Instant Messenger (AIM), Bonjour, Google Talk o Jabber.</p>
+</d:entry>
+
+<d:entry id="iChat_Theater">
+	<d:index><d:index_value>iChat Theater</d:index_value><d:index_title>iChat Theater</d:index_title></d:index>
+	<h1>iChat Theater</h1>
+	<p>Característica de la aplicación iChat que le permite presentar archivos, fotografías, pases de diapositivas y películas en una ventana de vídeo de iChat. Puede controlar la presentación desde su escritorio mientras sus colegas la ven en los suyos.</p>
+</d:entry>
+
+<d:entry id="iCloud">
+	<d:index><d:index_value>iCloud</d:index_value><d:index_title>iCloud</d:index_title></d:index>
+	<h1>iCloud</h1>
+	<p>Servicio de Apple en la nube, que permite guardar música, fotos, aplicaciones, contactos, calendarios y mucho más, y enviarlo de manera inalámbrica a todos sus dispositivos. iCloud se integra perfectamente con las aplicaciones, de modo que todo se sincroniza automáticamente. Más información disponible en <a href='http://www.apple.com/es/icloud/'>www.apple.com/es/icloud</a>.</p>
+</d:entry>
+
+<d:entry id="icon">
+	<d:index><d:index_value>icono</d:index_value><d:index_title>icono</d:index_title></d:index>
+	<h1>icono</h1>
+	<p>Símbolo que representa una aplicación, archivo o carpeta.</p>
+</d:entry>
+
+<d:entry id="iDisk">
+	<d:index><d:index_value>iDisk</d:index_value><d:index_title>iDisk</d:index_title></d:index>
+	<h1>iDisk</h1>
+	<p>Espacio de almacenamiento personal en los servidores de Apple en Internet que está disponible para los miembros de MobileMe. El iDisk puede usarse para albergar sitios web, guardar documentos o almacenar copias de seguridad y compartir archivos con cualquier persona que disponga de acceso a Internet.</p>
+</d:entry>
+
+<d:entry id="iDVD">
+	<d:index><d:index_value>iDVD</d:index_value><d:index_title>iDVD</d:index_title></d:index>
+	<h1>iDVD</h1>
+	<p>Aplicación de Apple que le permite crear sus propios discos DVD personalizados con películas y fotos digitales. iDVD incluye temas y plantillas diseñados profesionalmente. iDVD forma parte del paquete de software iLife. Para obtener más información, visite la <a href='http://www.apple.com/es/ilife/idvd/'>página web de iDVD</a>.</p>
+</d:entry>
+
+<d:entry id="iDVD_themes">
+	<d:index><d:index_value>temas de iDVD</d:index_value><d:index_title>temas de iDVD</d:index_title></d:index>
+	<h1>temas de iDVD</h1>
+	<p>Característica de la aplicación iDVD de los ordenadores Macintosh. Los temas de iDVD dotan a los menús de los proyectos de iDVD de un aspecto profesional. Los temas incluyen un grupo, o “familia”, de menús que usan un conjunto unificado de elementos de diseño. Una familia de temas típica incluye disposiciones para el menú principal de un proyecto, el menú de selección de escena y un menú de “extras”.</p>
+</d:entry>
+
+<d:entry id="iLife">
+	<d:index><d:index_value>iLife</d:index_value><d:index_title>iLife</d:index_title></d:index>
+	<h1>iLife</h1>
+	<p>Conjunto de aplicaciones de Apple que proporciona herramientas para crear música, películas, fotografías digitales, discos DVD personalizados y sitios web. El paquete iLife incluye las aplicaciones GarageBand, iPhoto, iMovie, iDVD, iTunes e iWeb. Para obtener más información, visite la <a href='http://www.apple.com/es/ilife/'>página web de iLife</a>.</p>
+</d:entry>
+
+<d:entry id="iMac">
+	<d:index><d:index_value>iMac</d:index_value><d:index_title>iMac</d:index_title></d:index>
+	<h1>iMac</h1>
+	<p>Línea de ordenadores de sobremesa de Apple Inc. Los ordenadores iMac se presentaron en 1998.</p>
+</d:entry>
+
+<d:entry id="Image_Capture">
+	<d:index><d:index_value>Captura de Imagen</d:index_value><d:index_title>Captura de Imagen</d:index_title></d:index>
+	<h1>Captura de Imagen</h1>
+	<p>Aplicación de Apple que permite importar las imágenes de una cámara digital o de un escáner que esté conectado al ordenador o a una red.</p>
+</d:entry>
+
+<d:entry id="iMix">
+	<d:index><d:index_value>iMix</d:index_value><d:index_title>iMix</d:index_title></d:index>
+	<h1>iMix</h1>
+	<p>Lista de reproducción de iTunes que se ha publicado para compartirla con otros usuarios.</p>
+</d:entry>
+
+<d:entry id="iMovie">
+	<d:index><d:index_value>iMovie</d:index_value><d:index_title>iMovie</d:index_title></d:index>
+	<h1>iMovie</h1>
+	<p>Aplicación de Apple que permite importar las grabaciones de vídeo digital de un cámara al ordenador, editarlas, añadir sonido y efectos, y guardarlas en forma de película para su publicación en un sitio web o en un disco. iMovie forma parte del paquete de software iLife. Para obtener más información, visite la <a href='http://www.apple.com/es/imovie/'>página web de iMovie</a>.</p>
+</d:entry>
+
+<d:entry id="infrared_receiver">
+	<d:index><d:index_value>receptor de infrarrojos</d:index_value><d:index_title>receptor de infrarrojos</d:index_title></d:index>
+	<h1>receptor de infrarrojos</h1>
+	<p>Abreviado como “IR”. Dispositivo que usa el espectro electromagnético infrarrojo para establecer comunicaciones inalámbricas. La mayoría de los ordenadores Macintosh incluyen un puerto de infrarrojos para recibir señales del mando a distancia Apple Remote.</p>
+</d:entry>
+
+<d:entry id="Ink">
+	<d:index><d:index_value>Ink</d:index_value><d:index_title>Ink</d:index_title></d:index>
+	<h1>Ink</h1>
+	<p>Tecnología de reconocimiento de escritura integrada en los ordenadores Macintosh. Para usar el programa Ink, se necesita una tableta gráfica y un lápiz óptico conectados al ordenador. Al escribir sobre la tableta gráfica, Ink transforma la escritura manual en palabras tecleadas en el ordenador.</p>
+</d:entry>
+
+<d:entry id="Inkwell">
+	<d:index><d:index_value>Inkwell</d:index_value><d:index_title>Inkwell</d:index_title></d:index>
+	<h1>Inkwell</h1>
+	<p>Véase  <b><a href='x-dictionary:r:Ink:com.apple.dictionary.AppleDictionary'>Ink</a></b>.</p>
+</d:entry>
+
+<d:entry id="inline_object">
+	<d:index><d:index_value>objeto integrado</d:index_value><d:index_title>objeto integrado</d:index_title></d:index>
+	<h1>objeto integrado</h1>
+	<p>En la aplicación de procesamiento de textos y maquetación de páginas Pages, una imagen, gráfico u objeto que se incrusta en el flujo del texto. La posición de un objeto integrado cambia cuando se añade más texto u otros gráficos a la página. Si escribe más texto por encima de un objeto integrado, este se ve empujado a medida que crece el texto.</p>
+</d:entry>
+
+<d:entry id="Input_menu">
+	<d:index><d:index_value>Menú Teclado</d:index_value><d:index_title>Menú Teclado</d:index_title></d:index>
+	<h1>Menú Teclado</h1>
+	<p>Menú usado para cambiar de método de entrada del teclado cuando se usa más de uno en un ordenador.</p>
+</d:entry>
+
+<d:entry id="input_method">
+	<d:index><d:index_value>método de entrada</d:index_value><d:index_title>método de entrada</d:index_title></d:index>
+	<h1>método de entrada</h1>
+	<p>Aplicación que permite a los usuarios introducir caracteres complejos (caracteres chinos, japoneses o coreanos) con un teclado occidental.</p>
+</d:entry>
+
+<d:entry id="inspector">
+	<d:index><d:index_value>inspector</d:index_value><d:index_title>inspector</d:index_title></d:index>
+	<h1>inspector</h1>
+	<p>En las aplicaciones de software, una ventana que muestra los ajustes actuales para el texto o gráficos seleccionados, y que le permite modificar rápidamente los ajustes mientras visualiza los resultados. Muchas aplicaciones de Mac OS X usan ventanas de inspector, como es el caso de Pages, Keynote y Numbers.</p>
+</d:entry>
+
+<d:entry id="installer">
+	<d:index><d:index_value>instalador</d:index_value><d:index_title>instalador</d:index_title></d:index>
+	<h1>instalador</h1>
+	<p>Programa que se incluye en Mac OS X. El programa de instalación extrae e instala archivos a partir de “paquetes”, archivos con la extensión .pkg añadida a sus nombres. El software para ordenadores Macintosh que usan Mac OS X suele distribuirse en forma de archivos .pkg.</p>
+</d:entry>
+
+<d:entry id="Instant_Alpha">
+	<d:index><d:index_value>Alfa instantáneo</d:index_value><d:index_title>Alfa instantáneo</d:index_title></d:index>
+	<h1>Alfa instantáneo</h1>
+	<p>Característica disponible en aplicaciones de Mac OS X como Pages, Aperture o Vista Previa. A la hora de procesar una imagen con un fondo de un único color, como, por ejemplo, una persona con un despejado cielo azul a su espalda, “Alfa instantáneo” le permite eliminar el fondo, conservando el resto de la imagen sobre un fondo transparente.</p>
+</d:entry>
+
+<d:entry id="Interface_Builder">
+	<d:index><d:index_value>Interface Builder</d:index_value><d:index_title>Interface Builder</d:index_title></d:index>
+	<h1>Interface Builder</h1>
+	<p>Programa de Apple Inc. que los desarrolladores pueden usar a fin de crear interfaces de usuario gráficas para aplicaciones de iPhone y Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Internet_Connect">
+	<d:index><d:index_value>Conexión a Internet</d:index_value><d:index_title>Conexión a Internet</d:index_title></d:index>
+	<h1>Conexión a Internet</h1>
+	<p>Aplicación incluida en Mac OS X. Conexión a Internet le permite iniciar una conexión mediante acceso telefónico, Ethernet (PPPoE) o red privada virtual (VPN). Conexión a Internet también le permite conectar su estación base AirPort a Internet y gestionar las conexiones con equipos Bluetooth (como por ejemplo, impresoras).</p>
+</d:entry>
+
+<d:entry id="Internet_port">
+	<d:index><d:index_value>puerto de Internet</d:index_value><d:index_title>puerto de Internet</d:index_title></d:index>
+	<h1>puerto de Internet</h1>
+	<p>Número que indica el protocolo que está usando un servidor de Internet. Los servidores web suelen usar el puerto 80.</p>
+</d:entry>
+
+<d:entry id="invisibles">
+	<d:index><d:index_value>caracteres invisibles</d:index_value><d:index_title>caracteres invisibles</d:index_title></d:index>
+	<h1>caracteres invisibles</h1>
+	<p>En la aplicación de procesamiento de textos y maquetación de páginas Pages, y en otras aplicaciones de edición de texto, marcas de formato que no son visibles normalmente. Los caracteres invisibles incluyen tabuladores, marcas de párrafo, saltos de página y de sección, espacios y otras marcas de formato. Puede ajustar las preferencias para que se muestren los caracteres invisibles.</p>
+</d:entry>
+
+<d:entry id="iOS">
+	<d:index><d:index_value>iOS</d:index_value><d:index_title>iOS</d:index_title></d:index>
+	<h1>iOS</h1>
+	<p>Sistema operativo del iPhone, iPod touch, iPad y Apple TV.</p>
+</d:entry>
+
+<d:entry id="iPad">
+	<d:index><d:index_value>iPad</d:index_value><d:index_title>iPad</d:index_title></d:index>
+	<h1>iPad</h1>
+	<p>Ordenador en formato tableta de Apple Inc. En lugar de un teclado alfabético o numérico físico, el iPad incorpora una pantalla táctil Multi-Touch con un teclado y botones virtuales. El iPad utiliza el sistema operativo iOS y muchas de las aplicaciones disponibles para el iPhone y el iPod touch.</p>
+</d:entry>
+
+<d:entry id="iPhone">
+	<d:index><d:index_value>iPhone</d:index_value><d:index_title>iPhone</d:index_title></d:index>
+	<h1>iPhone</h1>
+	<p>Combinación de teléfono móvil, reproductor multimedia y dispositivo con conexión inalámbrica a Internet creado por Apple Inc. En lugar de un teclado numérico físico, el iPhone emplea una pantalla táctil con teclado y botones virtuales. Para obtener más información, visite la <a href='http://www.apple.com/es/iphone/'>página web del iPhone</a>.</p>
+</d:entry>
+
+<d:entry id="iPhoto">
+	<d:index><d:index_value>iPhoto</d:index_value><d:index_title>iPhoto</d:index_title></d:index>
+	<h1>iPhoto</h1>
+	<p>Aplicación de Apple que le permite guardar fotografías digitales, organizarlas en álbumes y publicarlas en sitios web, discos y álbumes impresos. iPhoto forma parte del paquete de software iLife. Para obtener más información, visite la <a href='http://www.apple.com/es/iphoto/'>página web de iPhoto</a>.</p>
+</d:entry>
+
+<d:entry id="iPod">
+	<d:index><d:index_value>iPod</d:index_value><d:index_title>iPod</d:index_title></d:index>
+	<h1>iPod</h1>
+	<p>Línea de reproductores musicales portátiles de Apple Inc. Los reproductores iPod abarcan una gama de tamaños que va desde el reproductor iPod shuffle hasta reproductores iPod capaces de reproducir vídeo. Los reproductores iPod pueden importar música de la tienda iTunes Store de Apple y desde CD. Están diseñados para su uso con iTunes, una aplicación disponible tanto para ordenadores Macintosh como Windows.</p>
+</d:entry>
+
+<d:entry id="iPod_classic">
+	<d:index><d:index_value>iPod classic</d:index_value><d:index_title>iPod classic</d:index_title></d:index>
+	<h1>iPod classic</h1>
+	<p>Reproductor de música portátil de la línea de productos iPod de Apple Inc. El iPod classic es el modelo de iPod que ofrece más capacidad de almacenamiento.</p>
+</d:entry>
+
+<d:entry id="iPod_nano">
+	<d:index><d:index_value>iPod nano</d:index_value><d:index_title>iPod nano</d:index_title></d:index>
+	<h1>iPod nano</h1>
+	<p>Reproductor de música portátil de la línea de productos iPod de Apple Inc. El iPod nano incorpora una pantalla táctil y un sintonizador de radio FM.</p>
+</d:entry>
+
+<d:entry id="iPod_shuffle">
+	<d:index><d:index_value>iPod shuffle</d:index_value><d:index_title>iPod shuffle</d:index_title></d:index>
+	<h1>iPod shuffle</h1>
+	<p>El reproductor de música portátil más pequeño de la línea de productos iPod de Apple Inc.</p>
+</d:entry>
+
+<d:entry id="iPod_touch">
+	<d:index><d:index_value>iPod touch</d:index_value><d:index_title>iPod touch</d:index_title></d:index>
+	<h1>iPod touch</h1>
+	<p>Reproductor de música portátil de la línea de productos iPod de Apple Inc. El iPod touch incorpora una pantalla táctil y el navegador web Safari.</p>
+</d:entry>
+
+<d:entry id="IR">
+	<d:index><d:index_value>IR</d:index_value><d:index_title>IR</d:index_title></d:index>
+	<h1>IR</h1>
+	<p>Véase <a href='x-dictionary:r:infrared_receiver:com.apple.dictionary.AppleDictionary'><b>receptor de infrarrojos</b></a>.</p>
+</d:entry>
+
+<d:entry id="iSight">
+	<d:index><d:index_value>iSight</d:index_value><d:index_title>iSight</d:index_title></d:index>
+	<h1>iSight</h1>
+	<p>Cámara digital de Apple Inc. Algunos ordenadores Macintosh llevan integrada una versión reducida de la cámara iSight.</p>
+</d:entry>
+
+<d:entry id="iSync">
+	<d:index><d:index_value>iSync</d:index_value><d:index_title>iSync</d:index_title></d:index>
+	<h1>iSync</h1>
+	<p>Aplicación que se incluye en el Mac OS X. El programa iSync sincroniza los datos de las aplicaciones iCal y Agenda con MobileMe y con diversos dispositivos, como reproductores musicales portátiles iPod, teléfonos móviles o PDA.</p>
+</d:entry>
+
+<d:entry id="iTunes">
+	<d:index><d:index_value>iTunes</d:index_value><d:index_title>iTunes</d:index_title></d:index>
+	<h1>iTunes</h1>
+	<p>Aplicación de Apple incluida en Mac OS X y que le permite importar música, podcasts y vídeo desde CD o desde la tienda iTunes Store. Con ella también puede organizar sus archivos multimedia en álbumes y listas de reproducción personalizados, o grabarlos en discos o transferirlos a un iPod u otro reproductor multimedia. iTunes es muy utilizado en ordenadores con Windows.</p>
+</d:entry>
+
+<d:entry id="iWeb">
+	<d:index><d:index_value>iWeb</d:index_value><d:index_title>iWeb</d:index_title></d:index>
+	<h1>iWeb</h1>
+	<p>Aplicación de Apple que le permite crear y publicar páginas web sin necesidad de tener conocimientos sobre lenguajes de programación para web. iWeb contiene plantillas de diseño profesional para blogs y otros tipos de páginas, y permite incorporar archivos multimedia, como fotos y películas, con sólo arrastrar y soltar. iWeb forma parte del paquete de software iLife. Para obtener más información, visite la <a href='http://www.apple.com/es/iweb/'>página web de iWeb</a>.</p>
+</d:entry>
+
+<d:entry id="iWork">
+	<d:index><d:index_value>iWork</d:index_value><d:index_title>iWork</d:index_title></d:index>
+	<h1>iWork</h1>
+	<p>Conjunto de aplicaciones de productividad de Apple para la creación y publicación de documentos y presentaciones. El paquete iWork incluye Keynote, para crear presentaciones de alta calidad, Pages, para el procesamiento de textos, y Numbers, para la creación de hojas de cálculo. Para obtener más información, visite la <a href='http://www.apple.com/es/iwork/'>página web de iWork</a>.</p>
+</d:entry>
+
+<d:entry id="Jabber">
+	<d:index><d:index_value>Jabber</d:index_value><d:index_title>Jabber</d:index_title></d:index>
+	<h1>Jabber</h1>
+	<p>Aplicación de código abierto para mensajería instantánea en línea.</p>
+</d:entry>
+
+<d:entry id="Jaguar">
+	<d:index><d:index_value>Jaguar</d:index_value><d:index_title>Jaguar</d:index_title></d:index>
+	<h1>Jaguar</h1>
+	<p>Nombre de marca registrada de Mac OS X 10.2, la tercera versión principal del sistema operativo para ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Java">
+	<d:index><d:index_value>Java</d:index_value><d:index_title>Java</d:index_title></d:index>
+	<h1>Java</h1>
+	<p>Gama de productos de software y especificaciones informáticas de Sun Microsystems para el desarrollo de aplicaciones ejecutables en distintos tipos de ordenadores.</p>
+</d:entry>
+
+<d:entry id="Javascript">
+	<d:index><d:index_value>JavaScript</d:index_value><d:index_title>JavaScript</d:index_title></d:index>
+	<h1>JavaScript</h1>
+	<p>Lenguaje de programación utilizado habitualmente en páginas web para manejar efectos especiales y proporcionar interactividad.</p>
+</d:entry>
+
+<d:entry id="Journaled_format">
+	<d:index><d:index_value>formato con registro</d:index_value><d:index_title>formato con registro</d:index_title></d:index>
+	<h1>formato con registro</h1>
+	<p>Véase <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>formato Mac OS Plus</b></a>.</p>
+</d:entry>
+
+<d:entry id="Ken_Burns_effect">
+	<d:index><d:index_value>efecto Ken Burns</d:index_value><d:index_title>efecto Ken Burns</d:index_title></d:index>
+	<h1>efecto Ken Burns</h1>
+	<p>Efecto especial bautizado en honor del documentalista americano Ken Burns, que crea movimiento sobre una imagen fija, de tal modo que la cámara parece realizar barridos sobre el sujeto (panoramización) o acercarse o alejarse (zoom). Puede usar el efecto Ken Burns en la aplicación iMovie.</p>
+</d:entry>
+
+<d:entry id="Kerberos">
+	<d:index><d:index_value>Kerberos</d:index_value><d:index_title>Kerberos</d:index_title></d:index>
+	<h1>Kerberos</h1>
+	<p>Protocolo de autenticación de red que permite que usuarios que se comuniquen a través de una red no segura confirmen su identidad entre sí de forma segura.</p>
+</d:entry>
+
+<d:entry id="kernel">
+	<d:index><d:index_value>kernel</d:index_value><d:index_title>kernel</d:index_title></d:index>
+	<h1>kernel</h1>
+	<p>La parte de un sistema operativo que ocupa de gestionar la memoria, de asignarrecursos y de otros servicios de bajo nivel esenciales para el sistema.</p>
+</d:entry>
+
+<d:entry id="kernel_panic">
+	<d:index><d:index_value>fallo de kernel</d:index_value><d:index_title>fallo de kernel</d:index_title></d:index>
+	<h1>fallo de kernel</h1>
+	<p>Tipo de error que se produce cuando el núcleo (kernel) de un sistema operativo recibe una instrucción en un formato inesperado o que no puede procesar correctamente. Un fallo de kernel (“kernel panic” en inglés) también puede ocurrir cuando el sistema operativo es incapaz de recuperarse de otros tipos de errores. Un fallo de kernel puede deberse a software dañado o incompatible o, en raras ocasiones, a un hardware dañado o incompatible.</p>
+</d:entry>
+
+<d:entry id="Keyboard_Viewer">
+	<d:index><d:index_value>Visor de Teclado</d:index_value><d:index_title>Visor de Teclado</d:index_title></d:index>
+	<h1>Visor de Teclado</h1>
+	<p>Aplicación incluida en Mac OS X. Puede usar el Visor de Teclado para ver la disposición de los caracteres de su teclado en el idioma de su elección, así como para ver y escribir caracteres usados en otros idiomas.</p>
+</d:entry>
+
+<d:entry id="keychain">
+	<d:index><d:index_value>llavero</d:index_value><d:index_title>llavero</d:index_title></d:index>
+	<h1>llavero</h1>
+	<p>Conjunto de contraseñas almacenadas. Por ejemplo, un llavero puede almacenar contraseñas de aplicaciones, servidores y páginas web que use para su trabajo, mientras que otro llavero podría almacenar todas las contraseñas que emplea para comprar por Internet. Los llaveros reducen el número de contraseñas que debe recordar.</p>
+</d:entry>
+
+<d:entry id="Keychain_Access">
+	<d:index><d:index_value>Acceso a Llaveros</d:index_value><d:index_title>Acceso a Llaveros</d:index_title></d:index>
+	<h1>Acceso a Llaveros</h1>
+	<p>El sistema de gestión de contraseñas de Apple integrado en Mac OS X. Un llavero almacena todas las contraseñas, claves y certificados solicitados por aplicaciones, servidores y páginas web. Al abrir un ítem o conectarse a un dispositivo que requiere una contraseña, el llavero se la proporciona, de modo que no tenga que escribirla.</p>
+</d:entry>
+
+<d:entry id="keychain_password">
+	<d:index><d:index_value>contraseña de llavero</d:index_value><d:index_title>contraseña de llavero</d:index_title></d:index>
+	<h1>contraseña de llavero</h1>
+	<p>Contraseña empleada para bloquear y desbloquear un llavero. La contraseña de su llavero será la misma que su contraseña de inicio de sesión, salvo que utilice Acceso a Llaveros para crear una contraseña distinta.</p>
+</d:entry>
+
+<d:entry id="Keynote">
+	<d:index><d:index_value>Keynote</d:index_value><d:index_title>Keynote</d:index_title></d:index>
+	<h1>Keynote</h1>
+	<p>Aplicación de Apple para la creación de presentaciones de diapositivas de calidad profesional. Keynote incluye plantillas, temas, transiciones de estilo cinematográfico y animaciones de texto. Keynote forma parte del paquete de aplicaciones de productividad iWork. Para obtener más información, visite la <a href='http://www.apple.com/es/iwork/keynote/'>página web de Keynote</a>.</p>
+</d:entry>
+
+<d:entry id="kiosk_mode">
+	<d:index><d:index_value>modo quiosco</d:index_value><d:index_title>modo quiosco</d:index_title></d:index>
+	<h1>modo quiosco</h1>
+	<p>DVD que se empieza a reproducir de forma automática y continua tras insertarlo en un reproductor multimedia. Puede crear discos en modo quiosco mediante iDVD, una aplicación Apple que le permite crear DVD personalizados.</p>
+</d:entry>
+
+<d:entry id="Launchpad">
+	<d:index><d:index_value>Launchpad</d:index_value><d:index_title>Launchpad</d:index_title></d:index>
+	<h1>Launchpad</h1>
+	<p>Componente para la apertura de aplicaciones incluido en Mac OS X. Se puede acceder a Launchpad haciendo clic en su icono situado en el Dock. Launchpad contiene iconos para todas las aplicaciones de la carpeta Aplicaciones.</p>
+</d:entry>
+
+<d:entry id="Leopard">
+	<d:index><d:index_value>Leopard</d:index_value><d:index_title>Leopard</d:index_title></d:index>
+	<h1>Leopard</h1>
+	<p>Nombre de marca registrada del Mac OS X 10.5, la sexta versión principal del sistema operativo para ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Lion">
+	<d:index><d:index_value>Lion</d:index_value><d:index_title>Lion</d:index_title></d:index>
+	<h1>Lion</h1>
+	<p>Nombre de marca registrada de la versión 10.7 de Mac OS X, la octava versión principal del sistema operativo para ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="lock_icon">
+	<d:index><d:index_value>icono de candado</d:index_value><d:index_title>icono de candado</d:index_title></d:index>
+	<h1>icono de candado</h1>
+	<p>Icono usado en aplicaciones de Mac OS. En el Finder, un icono de candado indica que un archivo o carpeta está protegido por contraseña. En la barra de herramientas de Safari, un icono de candado indica que se encriptarán las comunicaciones con la página web. El icono de candado se usa en muchas otras aplicaciones para indicar que es necesario introducir una contraseña para poder abrir un ítem o conectarse a un servidor.</p>
+</d:entry>
+
+<d:entry id="looping">
+	<d:index><d:index_value>en bucle</d:index_value><d:index_title>en bucle</d:index_title></d:index>
+	<h1>en bucle</h1>
+	<p>Ajustar una película o pase de diapositivas para que vuelva a reproducirse tan pronto como finalice y que haga esto de forma continua. Puede crear películas y pases de diapositivas en bucle mediante iDVD, una aplicación de Apple que le permite crear DVD personalizados.</p>
+</d:entry>
+
+<d:entry id=".Mac">
+	<d:index><d:index_value>.Mac</d:index_value><d:index_title>.Mac</d:index_title></d:index>
+	<h1>.Mac</h1>
+	<p>Conjunto de servicios de Internet diseñados para los usuarios de ordenadores Macintosh (pronunciado “punto Mac”). Reemplazado por <a href='x-dictionary:r:MobileMe:com.apple.dictionary.AppleDictionary'><b>MobileMe</b></a>.</p>
+</d:entry>
+
+<d:entry id="Mac">
+	<d:index><d:index_value>Mac</d:index_value><d:index_title>Mac</d:index_title></d:index>
+	<h1>Mac</h1>
+	<p>Ordenador de Apple, también conocido como “Mac”. Véase también: <a href='x-dictionary:r:Macintosh:com.apple.dictionary.AppleDictionary'><b>Macintosh</b></a>.</p>
+</d:entry>
+
+<d:entry id="MacBook">
+	<d:index><d:index_value>MacBook, MacBook Pro</d:index_value><d:index_title>MacBook, MacBook Pro</d:index_title></d:index>
+	<h1>MacBook, MacBook Pro</h1>
+	<p>Línea de ordenadores portátiles de Apple Inc. equipados con procesadores Intel Core Duo e Intel Core 2 Duo. Los ordenadores MacBook salieron al mercado en 2006 en sustitución de las gamas de ordenadores iBook G4 y PowerBook.</p>
+</d:entry>
+
+<d:entry id="MacBook_Air">
+	<d:index><d:index_value>MacBook Air</d:index_value><d:index_title>MacBook Air</d:index_title></d:index>
+	<h1>MacBook Air</h1>
+	<p>Ordenador portátil ligero de Apple Inc., basado en los procesadores Intel Core Duo e Intel Core 2 Duo y que incluye una unidad de disco de estado sólido opcional. El MacBook Air pesa 1,36 kg y tiene una altura de 1,93 en el punto más grueso y de 0,4 cm en el punto más delgado. Lanzado al mercado en 2008.</p>
+</d:entry>
+
+<d:entry id="Macintosh">
+	<d:index><d:index_value>Macintosh</d:index_value><d:index_title>Macintosh</d:index_title></d:index>
+	<h1>Macintosh</h1>
+	<p>Línea de ordenadores personales de Apple Inc. El ordenador Macintosh, que salió al mercado en 1984, fue el primer ordenador personal con éxito comercial que utilizó una interfaz gráfica de usuario (GUI) y un ratón en vez de una interfaz de línea de comandos.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Extended_format">
+	<d:index><d:index_value>formato Mac OS Plus</d:index_value><d:index_title>formato Mac OS Plus</d:index_title></d:index>
+	<h1>formato Mac OS Plus</h1>
+	<p>Formato de disco rígido compatible con Mac OS 8.1 y versiones posteriores, que incrementa el número de bloques de asignación (unidades de almacenamiento) de un disco respecto a los formatos de disco anteriores usados por Mac OS. Este formato admite más de 65.000 archivos en un disco rígido. El formato Mac OS Plus optimiza la capacidad de almacenamiento de los discos rígidos de gran tamaño al reducir el tamaño mínimo de cada archivo individual. Un volumen con Mac OS Plus puede además utilizar un registro, en el que el sistema operativo registra de forma continua los cambios realizados en los archivos del volumen. Esto ayuda al sistema operativo a restaurar el volumen a un estado usable cuando se produce un corte de alimentación o cuando otro problema interrumpe el funcionamiento del disco y daña archivos.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Standard_format">
+	<d:index><d:index_value>formato Mac OS estándar</d:index_value><d:index_title>formato Mac OS estándar</d:index_title></d:index>
+	<h1>formato Mac OS estándar</h1>
+	<p>El formato de disco rígido admitido por Mac OS 8.0 y versiones anteriores.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X">
+	<d:index><d:index_value>Mac OS X</d:index_value><d:index_title>Mac OS X</d:index_title></d:index>
+	<h1>Mac OS X</h1>
+	<p>Sistema operativo de los ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X_Server">
+	<d:index><d:index_value>Mac OS X Server</d:index_value><d:index_title>Mac OS X Server</d:index_title></d:index>
+	<h1>Mac OS X Server</h1>
+	<p>Plataforma de servidor compatible directamente con clientes Mac, Windows, UNIX y Linux, y que proporciona un paquete de servicios de grupo de trabajo y de red escalables con herramientas de gestión avanzadas. </p>
+</d:entry>
+
+<d:entry id="MacTCP">
+	<d:index><d:index_value>MacTCP</d:index_value><d:index_title>MacTCP</d:index_title></d:index>
+	<h1>MacTCP</h1>
+	<p>Protocolo estándar de conexión a redes TCP/IP de los ordenadores Macintosh hasta la versión 7.5.1 de Mac OS. En 1995 fue sustituido por Open Transport.</p>
+</d:entry>
+
+<d:entry id="Mail">
+	<d:index><d:index_value>Mail</d:index_value><d:index_title>Mail</d:index_title></d:index>
+	<h1>Mail</h1>
+	<p>Aplicación de correo electrónico de Apple integrada en Mac OS X.</p>
+</d:entry>
+
+<d:entry id="masking">
+	<d:index><d:index_value>máscara</d:index_value><d:index_title>máscara</d:index_title></d:index>
+	<h1>máscara</h1>
+	<p>Método de recorte de imagen mediante la cobertura (“enmascaramiento”) de la porción de la imagen que se desea conservar. En la aplicación de procesador de textos y maquetación de páginas Pages, puede enmascararse una imagen por medio de un rectángulo o una forma personalizada de su elección.</p>
+</d:entry>
+
+<d:entry id="master_object">
+	<d:index><d:index_value>objeto maestro</d:index_value><d:index_title>objeto maestro</d:index_title></d:index>
+	<h1>objeto maestro</h1>
+	<p>En la aplicación de procesamiento de textos y maquetación de páginas Pages, una marca de agua, logotipo u otra imagen de fondo que aparece en la misma posición en cada una de las páginas de un documento.</p>
+</d:entry>
+
+<d:entry id="master_password">
+	<d:index><d:index_value>contraseña maestra</d:index_value><d:index_title>contraseña maestra</d:index_title></d:index>
+	<h1>contraseña maestra</h1>
+	<p>Contraseña que le permite acceder a una cuenta protegida con FileVault. Si un usuario olvida su contraseña para una cuenta protegida con FileVault, un administrador puede usar la contraseña maestra para acceder a la cuenta y modificar la contraseña de FileVault. Si se pierde u olvida una contraseña maestra, no se podrá acceder de ningún modo a las cuentas protegidas con FileVault y se perderán todos los archivos y ajustes que contengan.</p>
+</d:entry>
+
+<d:entry id="media_placeholder">
+	<d:index><d:index_value>marcador de posición multimedia</d:index_value><d:index_title>marcador de posición multimedia</d:index_title></d:index>
+	<h1>marcador de posición multimedia</h1>
+	<p>En las plantillas de Pages y Keynote, un archivo que puede reemplazarse arrastrando un archivo propio hasta él. Es posible reconocer un marcador de posición situando el puntero sobre él: aparecerá una etiqueta de ayuda indicándole que arrastre su propio archivo hasta su ubicación.</p>
+</d:entry>
+
+<d:entry id="Migration_Assistant">
+	<d:index><d:index_value>Asistente de Migración</d:index_value><d:index_title>Asistente de Migración</d:index_title></d:index>
+	<h1>Asistente de Migración</h1>
+	<p>Aplicación de Mac OS X que le ayuda a transferir sus archivos y ajustes importantes desde un Mac antiguo a uno nuevo. Para usar el Asistente de Migración, ambos ordenadores deben utilizar Mac OS X y deben estar equipados con puertos FireWire o estar conectados a la misma red inalámbrica.</p>
+</d:entry>
+
+<d:entry id="mirrored_displays">
+	<d:index><d:index_value>pantallas duplicadas</d:index_value><d:index_title>pantallas duplicadas</d:index_title></d:index>
+	<h1>pantallas duplicadas</h1>
+	<p>Característica de las Preferencias del Sistema de Mac OS X. Si el ordenador está conectado a varios dispositivos de visualización, incluidos televisores y proyectores, puede ajustar su configuración en el panel Pantallas de las Preferencias del Sistema, de modo que toda la imagen de su escritorio se muestre en cada uno de los dispositivos, en lugar de mostrar una imagen continua dividida entre todos los dispositivos.</p>
+</d:entry>
+
+<d:entry id="Mission_Control">
+	<d:index><d:index_value>Mission Control</d:index_value><d:index_title>Mission Control</d:index_title></d:index>
+	<h1>Mission Control</h1>
+	<p>Característica de Mac OS X que permite ver todo lo que se está ejecutando en el Mac, incluidas las ventanas, las aplicaciones a pantalla completa, los espacios de trabajo y el Dashboard.</p>
+</d:entry>
+
+<d:entry id="MobileMe">
+	<d:index><d:index_value>MobileMe</d:index_value><d:index_title>MobileMe</d:index_title></d:index>
+	<h1>MobileMe</h1>
+	<p>Paquete de servicios de Internet de Apple Inc. para ordenadores Macintosh, iPhone, iPod touch y PC. Una suscripción a MobileMe mantiene actualizados automáticamente su correo, contactos y calendario en todos sus dispositivos. MobileMe también proporciona una serie de aplicaciones web que le permite acceder a su información mediante un navegador web, compartir fotos y películas, alojar una página web y usar un iDisk para el almacenamiento de archivos en línea. Para obtener más información, visite la <a href='http://www.apple.com/es/mobileme/'>página web de MobileMe</a>.</p>
+</d:entry>
+
+<d:entry id="MobileMe_Gallery">
+	<d:index><d:index_value>Galería MobileMe</d:index_value><d:index_title>Galería MobileMe</d:index_title></d:index>
+	<h1>Galería MobileMe</h1>
+	<p>Característica de la gama de servicios MobileMe de Apple Inc. Una suscripción a MobileMe le permite publicar fotos y películas de iPhoto e iMovie directamente en su galería MobileMe en Internet. Puede añadir álbumes de fotos y películas de la galería MobileMe a cualquiera de sus páginas web. Cuando se actualiza un álbum de fotos de la galería MobileMe, su página web se actualiza automáticamente con el nuevo contenido.</p>
+</d:entry>
+
+<d:entry id="motion_playhead">
+	<d:index><d:index_value>cursor de reproducción de animación</d:index_value><d:index_title>cursor de reproducción de animación</d:index_title></d:index>
+	<h1>cursor de reproducción de animación</h1>
+	<p>En iDVD, un icono en forma de diamante en la barra de arrastre que marca la posición actual de la música o vídeo que está editando. Puede arrastrar el cursor de reproducción para detenerlo donde desee.</p>
+</d:entry>
+
+<d:entry id="MS-DOS_(FAT)_format">
+	<d:index><d:index_value>formato MS-DOS (FAT)</d:index_value><d:index_title>formato MS-DOS (FAT)</d:index_title></d:index>
+	<h1>formato MS-DOS (FAT)</h1>
+	<p>Formato de disco rígido para los discos que se usan con ordenadores con Windows. Puede usar la Utilidad de Discos para formatear discos MS-DOS (FAT) para ordenadores Windows.</p>
+</d:entry>
+
+<d:entry id="Multi-Touch">
+	<d:index><d:index_value>multitáctil</d:index_value><d:index_title>multitáctil</d:index_title></d:index>
+	<h1>multitáctil</h1>
+	<p>Interacción mediante pantalla táctil con un ordenador u otro dispositivo. Una pantalla táctil equipada con multitáctil reconoce varios “puntos de contacto” simultáneos. Esto permite realizar gestos con ambas manos y con varios dedos a la vez. Los gestos intuitivos, como el de usar dos dedos o las dos manos para acercar o alejar el zoom, son una característica de la tecnología multitáctil. La pantalla táctil integrada en el iPhone de Apple usa la tecnología multitáctil.</p>
+</d:entry>
+
+<d:entry id="Network_File_System">
+	<d:index><d:index_value>sistema de archivos de red</d:index_value><d:index_title>sistema de archivos de red</d:index_title></d:index>
+	<h1>sistema de archivos de red</h1>
+	<p>Véase <a href='x-dictionary:r:NFS:com.apple.dictionary.AppleDictionary'><b>NFS</b></a>.</p>
+</d:entry>
+
+<d:entry id="NFS">
+	<d:index><d:index_value>NFS</d:index_value><d:index_title>NFS</d:index_title></d:index>
+	<h1>NFS</h1>
+	<p>Sistema de archivos de red (NFS). Protocolo de cliente y servidor que usa el protocolo de Internet (IP) para permitir que usuarios remotos accedan a los archivos como si fueran archivos locales. El NFS exporta volúmenes compartidos a ordenadores de acuerdo con su dirección IP en lugar de hacerlo en base al nombre de usuario y contraseña.  </p>
+</d:entry>
+
+<d:entry id="Numbers">
+	<d:index><d:index_value>Numbers</d:index_value><d:index_title>Numbers</d:index_title></d:index>
+	<h1>Numbers</h1>
+	<p>Aplicación de Apple para la creación de hojas de cálculo. Numbers incluye una sencilla interfaz para configurar tablas, gráficas, mapas, etiquetas y muchas cosas más. Numbers forma parte del paquete de aplicaciones de productividad iWork. Para obtener más información, visite la <a href='http://www.apple.com/es/iwork/numbers/'>página web de Numbers</a>.</p>
+</d:entry>
+
+<d:entry id="NVRAM">
+	<d:index><d:index_value>NVRAM</d:index_value><d:index_title>NVRAM</d:index_title></d:index>
+	<h1>NVRAM</h1>
+	<p>Memoria de acceso aleatorio no volátil. Un tipo de memoria que retiene la información cuando se apaga el ordenador.</p>
+</d:entry>
+
+<d:entry id="Open_Transport">
+	<d:index><d:index_value>Open Transport</d:index_value><d:index_title>Open Transport</d:index_title></d:index>
+	<h1>Open Transport</h1>
+	<p>Protocolo de conexión a redes para ordenadores Macintosh que utilizan versiones de Mac OS anteriores a Mac OS X.</p>
+</d:entry>
+
+<d:entry id="operator">
+	<d:index><d:index_value>operador</d:index_value><d:index_title>operador</d:index_title></d:index>
+	<h1>operador</h1>
+	<p>Los operadores aritméticos llevan a cabo operaciones aritméticas, como sumas y restas, y devuelven resultados numéricos. Los operadores de comparación comparan dos valores y devuelven VERDADERO o FALSO. En la aplicación de hoja de cálculo Numbers, puede usar operadores en las fórmulas para llevar a cabo operaciones aritméticas y comparar valores.</p>
+</d:entry>
+
+<d:entry id="optical_drive">
+	<d:index><d:index_value>unidad de discos ópticos</d:index_value><d:index_title>unidad de discos ópticos</d:index_title></d:index>
+	<h1>unidad de discos ópticos</h1>
+	<p>Unidad de disco que puede leer datos de discos ópticos, como por ejemplo CD o DVD. Las unidades de discos ópticos incluyen unidades de CD-ROM, CD-RW, DVD-ROM, DVD-RW y Blu-ray.</p>
+</d:entry>
+
+<d:entry id="package">
+	<d:index><d:index_value>paquete</d:index_value><d:index_title>paquete</d:index_title></d:index>
+	<h1>paquete</h1>
+	<p>Serie de archivos relacionados (plantillas, preferencias u otros archivos específicos de aplicaciones), combinados en una carpeta que parece un único archivo. Las actualizaciones de software para ordenadores Macintosh vienen en forma de paquetes que se “desempaquetan” y luego se instalan.</p>
+</d:entry>
+
+<d:entry id="package_file">
+	<d:index><d:index_value>archivo de paquete</d:index_value><d:index_title>archivo de paquete</d:index_title></d:index>
+	<h1>archivo de paquete</h1>
+	<p>Archivo que contiene un paquete de software. Un archivo de paquete suele tener un icono que parece un paquete abierto. También puede identificar un archivo de paquete revisando su ventana de información, donde el campo “Tipo” contiene la palabra “paquete”.</p>
+</d:entry>
+
+<d:entry id="Pages">
+	<d:index><d:index_value>Pages</d:index_value><d:index_title>Pages</d:index_title></d:index>
+	<h1>Pages</h1>
+	<p>Aplicación de procesamiento de textos de Apple que incluye funciones tipográficas avanzadas y plantillas profesionales para la creación de informes, invitaciones, revistas y otros tipos de documentos. Pages forma parte del paquete de aplicaciones de productividad iWork. Para obtener más información, visite la <a href='http://www.apple.com/es/pages/'>página web de Pages</a>.</p>
+</d:entry>
+
+<d:entry id="Panther">
+	<d:index><d:index_value>Panther</d:index_value><d:index_title>Panther</d:index_title></d:index>
+	<h1>Panther</h1>
+	<p>Nombre de marca registrada de Mac OS X 10.3, la cuarta versión principal del sistema operativo para ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="parental_controls">
+	<d:index><d:index_value>controles parentales</d:index_value><d:index_title>controles parentales</d:index_title></d:index>
+	<h1>controles parentales</h1>
+	<p>Ajustes de configuración del ordenador que permiten a un administrador controlar las aplicaciones y la información a la que pueden acceder otros usuarios. En Mac OS X, los controles parentales se configuran en el panel “Controles parentales” de Preferencias del Sistema.</p>
+</d:entry>
+
+<d:entry id="partition">
+	<d:index><d:index_value>particionar</d:index_value><d:index_title>particionar</d:index_title></d:index>
+	<h1>particionar</h1>
+	<p>Subdivisión de un disco duro. En los ordenadores Macintosh puede elegir cuántas particiones desea tener al formatear un disco rígido mediante Utilidad de Discos. Cada partición aparece en el escritorio como un disco independiente.</p>
+</d:entry>
+
+<d:entry id="personal_file_sharing">
+	<d:index><d:index_value>compartir archivos</d:index_value><d:index_title>compartir archivos</d:index_title></d:index>
+	<h1>compartir archivos</h1>
+	<p>Sistema que permite a los usuarios de ordenadores Macintosh copiar rápidamente ítems de un ordenador a otro, o bien usar un ordenador para acceder a los archivos y aplicaciones guardados en otro equipo.</p>
+</d:entry>
+
+<d:entry id="personal_web_sharing">
+	<d:index><d:index_value>compartir web</d:index_value><d:index_title>compartir web</d:index_title></d:index>
+	<h1>compartir web</h1>
+	<p>Característica de Mac OS X que le permite publicar documentos en Internet o en una red local arrastrándolos a la carpeta Web del disco rígido del ordenador. Los documentos deben tener formato HTML.</p>
+</d:entry>
+
+<d:entry id="Photo_Booth">
+	<d:index><d:index_value>Photo Booth</d:index_value><d:index_title>Photo Booth</d:index_title></d:index>
+	<h1>Photo Booth</h1>
+	<p>Aplicación de Apple para hacer fotos con una cámara iSight. Photo Booth incorpora efectos que pueden aplicarse a las fotos (tintes y filtros, como por ejemplo “sepia”) y opciones de manipulación de imágenes, como “estirar” y “ojo de pez”.</p>
+</d:entry>
+
+<d:entry id="photo_browser">
+	<d:index><d:index_value>navegador de fotos</d:index_value><d:index_title>navegador de fotos</d:index_title></d:index>
+	<h1>navegador de fotos</h1>
+	<p>Software que le permite visualizar y buscar dentro de una selección de fotos. iPhoto incluye un navegador de fotos para proyectos como libros o pases de diapositivas, en el que se muestran miniaturas de las fotos seleccionadas para su inclusión.</p>
+</d:entry>
+
+<d:entry id="Pixlet">
+	<d:index><d:index_value>Pixlet</d:index_value><d:index_title>Pixlet</d:index_title></d:index>
+	<h1>Pixlet</h1>
+	<p>Software de compresión de vídeo de Apple. El software de códec (compresión/descompresión) Pixlet permite visualizar películas de alta definición con la máxima resolución en ordenadores Macintosh equipados con Mac OS X 10.3 (Panther) o posterior.</p>
+</d:entry>
+
+<d:entry id="placeholder_image">
+	<d:index><d:index_value>imagen de marcador de posición</d:index_value><d:index_title>imagen de marcador de posición</d:index_title></d:index>
+	<h1>imagen de marcador de posición</h1>
+	<p>En las plantillas de Pages y Keynote, una imagen que puede reemplazarse arrastrando una imagen propia hasta ella. Es posible reconocer una imagen de marcador de posición situando el puntero sobre él: aparecerá una etiqueta de ayuda indicándole que arrastre su propio archivo hasta su ubicación.</p>
+</d:entry>
+
+<d:entry id="placeholder_text">
+	<d:index><d:index_value>texto de botón de marcador de posición</d:index_value><d:index_title>texto de botón de marcador de posición</d:index_title></d:index>
+	<h1>texto de botón de marcador de posición</h1>
+	<p>En las plantilas de Pages y Keynote, texto que puede reemplazarse arrastrando, pegando o escribiendo su propio texto encima. Es posible reconocer el texto de marcador de posición haciendo clic en él: un solo clic resalta todo el bloque de texto, de modo que pueda reemplazarlo fácilmente.</p>
+</d:entry>
+
+<d:entry id="playlist">
+	<d:index><d:index_value>lista de reproducción</d:index_value><d:index_title>lista de reproducción</d:index_title></d:index>
+	<h1>lista de reproducción</h1>
+	<p>En el programa de reproducción de música iTunes de Apple, lista de canciones o piezas musicales que se reproducen secuencialmente.</p>
+</d:entry>
+
+<d:entry id="plug-in">
+	<d:index><d:index_value>módulo</d:index_value><d:index_title>módulo</d:index_title></d:index>
+	<h1>módulo</h1>
+	<p>Programa que puede añadirse a una aplicación de software para ampliar sus capacidades. Por ejemplo, puede añadirse un complemento multimedia a un navegador web para hacer que el navegador pueda reproducir el contenido multimedia de las páginas web.</p>
+</d:entry>
+
+<d:entry id="podcast">
+	<d:index><d:index_value>podcast</d:index_value><d:index_title>podcast</d:index_title></d:index>
+	<h1>podcast</h1>
+	<p>Grabación de audio o vídeo disponible en Internet que puede reproducirse en un ordenador o dispositivo portátil, como por ejemplo un iPod, un iPad o un Mac.</p>
+</d:entry>
+
+<d:entry id="Podcast_Producer_2">
+	<d:index><d:index_value>Podcast Producer 2</d:index_value><d:index_title>Podcast Producer 2</d:index_title></d:index>
+	<h1>Podcast Producer 2</h1>
+	<p>Aplicación de Apple para la grabación, publicación y distribución de podcasts de alta calidad.</p>
+</d:entry>
+
+<d:entry id="port">
+	<d:index><d:index_value>número de puerto</d:index_value><d:index_title>número de puerto</d:index_title></d:index>
+	<h1>número de puerto</h1>
+	<p>Número usado a modo de dirección por un servidor para determinar qué aplicación debería recibir paquetes de datos. Los firewalls usan números de puerto para determinar si se debe permitir que los paquetes de datos entren en una red local.</p>
+</d:entry>
+
+<d:entry id="PowerBook">
+	<d:index><d:index_value>PowerBook</d:index_value><d:index_title>PowerBook</d:index_title></d:index>
+	<h1>PowerBook</h1>
+	<p>Línea de ordenadores portátiles de Apple Inc. que se distribuyeron entre 1991 y 2006. Los ordenadores PowerBook estaban diseñados para empresas y profesionales. La gama PowerBook fue sustituida por la gama MacBook Pro en 2006.</p>
+</d:entry>
+
+<d:entry id="Power_Mac">
+	<d:index><d:index_value>Power Mac, Power Macintosh</d:index_value><d:index_title>Power Mac, Power Macintosh</d:index_title></d:index>
+	<h1>Power Mac, Power Macintosh</h1>
+	<p>Línea de ordenadores personales de Apple Inc. distribuidos entre 1994 y 2006, equipados con microprocesadores PowerPC de Motorola.</p>
+</d:entry>
+
+<d:entry id="PowerPC">
+	<d:index><d:index_value>PowerPC</d:index_value><d:index_title>PowerPC</d:index_title></d:index>
+	<h1>PowerPC</h1>
+	<p>Microprocesador de Motorola Corporation. La línea de ordenadores Power Macintosh de Apple Inc. incorporaba microprocesadores PowerPC.</p>
+</d:entry>
+
+<d:entry id="PPD_file">
+	<d:index><d:index_value>archivo PPD</d:index_value><d:index_title>archivo PPD</d:index_title></d:index>
+	<h1>archivo PPD</h1>
+	<p>Archivo de descripción de impresora PostScript. Archivo que contiene información acerca de las capacidades de un modelo de impresora concreto. El archivo PPD proporciona los controles necesarios para poder aprovechar características especiales como múltiples bandejas para papel, tamaños de papel especiales o impresión a doble cara (dúplex). El modelo de impresora que se selecciona al añadir un impresora especifica el archivo PPD usado con dicha impresora.</p>
+</d:entry>
+
+<d:entry id="PPP">
+	<d:index><d:index_value>PPP</d:index_value><d:index_title>PPP</d:index_title></d:index>
+	<h1>PPP</h1>
+	<p>Protocolo de comunicación entre dos nodos de una red, que se emplea en las conexiones mediante cables serie, líneas telefónicas, redes de telefonía móvil, etc. El PPP suele usarse para el acceso a Internet mediante conexión telefónica.</p>
+</d:entry>
+
+<d:entry id="PPPoE">
+	<d:index><d:index_value>PPPoE</d:index_value><d:index_title>PPPoE</d:index_title></d:index>
+	<h1>PPPoE</h1>
+	<p>Protocolo punto a punto sobre Ethernet. Protocolo de red similar al PPP, pero que aprovecha la mayor velocidad con que cuentan las redes Ethernet.</p>
+</d:entry>
+
+<d:entry id="PRAM">
+	<d:index><d:index_value>PRAM</d:index_value><d:index_title>PRAM</d:index_title></d:index>
+	<h1>PRAM</h1>
+	<p>Memoria de acceso aleatorio para parámetros. Un tipo de memoria usado en los ordenadores Macintosh para almacenar los ajustes de sistema, como pueden ser el disco de arranque seleccionado, la resolución de pantalla, la zona horaria, el volumen de los altavoces y otros ajustes.</p>
+</d:entry>
+
+<d:entry id="Preview">
+	<d:index><d:index_value>Vista Previa</d:index_value><d:index_title>Vista Previa</d:index_title></d:index>
+	<h1>Vista Previa</h1>
+	<p>Aplicación de Apple que permite visualizar archivos PDF, imágenes, documentos de texto y muchos otros tipos de archivo en ordenadores Macintosh que usen Mac OS X.</p>
+</d:entry>
+
+<d:entry id="printer_pool">
+	<d:index><d:index_value>grupo de impresoras</d:index_value><d:index_title>grupo de impresoras</d:index_title></d:index>
+	<h1>grupo de impresoras</h1>
+	<p>Colección de impresoras que puede crearse para permitir que un documento se imprima de forma automática en la primera impresora disponible del grupo. En Mac OS X, puede usar el panel “Impresión y Fax” de las Preferencias del Sistema para configurar un grupo de impresoras. </p>
+</d:entry>
+
+<d:entry id="ProCare">
+	<d:index><d:index_value>ProCare</d:index_value><d:index_title>ProCare</d:index_title></d:index>
+	<h1>ProCare</h1>
+	<p>Programa personal de aprendizaje disponible para los usuarios de ordenadores Macintosh en las tiendas Apple Retail Store.</p>
+</d:entry>
+
+<d:entry id="protocol">
+	<d:index><d:index_value>protocolo</d:index_value><d:index_title>protocolo</d:index_title></d:index>
+	<h1>protocolo</h1>
+	<p>Conjunto de reglas que determina cómo se reciben y envían los datos entre dos aplicaciones.</p>
+</d:entry>
+
+<d:entry id="proxy_server">
+	<d:index><d:index_value>servidor proxy</d:index_value><d:index_title>servidor proxy</d:index_title></d:index>
+	<h1>servidor proxy</h1>
+	<p>Servidor que proporciona conexión a una red de forma indirecta. Primero, un ordenador se conecta al servidor proxy y solicita conexión a la red. A continuación, el proxy se conecta a la red especificada. Los servidores proxy suelen utilizarse para proporcionar seguridad a las conexiones. En Mac OS X, los datos de los servidores proxy se especifican en el panel Red de Preferencias del Sistema. </p>
+</d:entry>
+
+<d:entry id="Quartz">
+	<d:index><d:index_value>Quartz, Quartz Extreme</d:index_value><d:index_title>Quartz, Quartz Extreme</d:index_title></d:index>
+	<h1>Quartz, Quartz Extreme</h1>
+	<p>Software gráfico de Apple incluido en Mac OS X. Quartz proporciona un rápido redimensionamiento y desplazamiento de ventas, así como animación en pantalla y otros efectos especiales.</p>
+</d:entry>
+
+<d:entry id="QuickDraw">
+	<d:index><d:index_value>QuickDraw</d:index_value><d:index_title>QuickDraw</d:index_title></d:index>
+	<h1>QuickDraw</h1>
+	<p>Software gráfico de Apple. En Mac OS X, QuickDraw ha sido sustituido por Quartz.</p>
+</d:entry>
+
+<d:entry id="Quick_Look">
+	<d:index><d:index_value>Vista Rápida</d:index_value><d:index_title>Vista Rápida</d:index_title></d:index>
+	<h1>Vista Rápida</h1>
+	<p>Aplicación de previsualización incluida Mac OS X. Vista Rápida permite visualizar muestras de sus documentos, fotografías, películas y otros archivos sin necesidad de abrir la aplicación.</p>
+</d:entry>
+
+<d:entry id="QuickTime">
+	<d:index><d:index_value>QuickTime</d:index_value><d:index_title>QuickTime</d:index_title></d:index>
+	<h1>QuickTime</h1>
+	<p>Aplicación multimedia de Apple Inc. para la gestión de vídeo, clips multimedia, sonido, texto, animaciones, música y diversos tipos de imágenes en ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="RAM">
+	<d:index><d:index_value>RAM</d:index_value><d:index_title>RAM</d:index_title></d:index>
+	<h1>RAM</h1>
+	<p>Memoria de acceso aleatorio. La parte del ordenador donde se guardan las aplicaciones y los archivos que están en uso. El acceso a la memoria RAM es más rápido que el acceso a otros tipos de almacenamiento disponibles en el ordenador, como el disco rígido o un DVD. Hay varios tipos de memoria RAM, como la DRAM, la NVRAM, la PRAM y la SRAM.</p>
+</d:entry>
+
+<d:entry id="Remote_Install_Mac_OS_X">
+	<d:index><d:index_value>Instalación remota de Mac OS X</d:index_value><d:index_title>Instalación remota de Mac OS X</d:index_title></d:index>
+	<h1>Instalación remota de Mac OS X</h1>
+	<p>Programa de Apple que le permite instalar Mac OS X en su ordenador a partir de un disco de instalación situado en la unidad de discos ópticos de otro ordenador. Los dos ordenadores deben encontrarse en la misma red Ethernet o inalámbrica.</p>
+</d:entry>
+
+<d:entry id="repartition">
+	<d:index><d:index_value>reparticionar</d:index_value><d:index_title>reparticionar</d:index_title></d:index>
+	<h1>reparticionar</h1>
+	<p>Cambiar el esquema de particiones de un disco. Véase también <a href='x-dictionary:r:partición:com.apple.dictionary.AppleDictionary'><b>partición</b></a>.</p>
+</d:entry>
+
+<d:entry id="Rosetta">
+	<d:index><d:index_value>Rosetta</d:index_value><d:index_title>Rosetta</d:index_title></d:index>
+	<h1>Rosetta</h1>
+	<p>Software incluido en ordenadores con procesador Intel que permite ejecutar aplicaciones desarrolladas para procesadores PowerPC.</p>
+</d:entry>
+
+<d:entry id="router">
+	<d:index><d:index_value>router</d:index_value><d:index_title>router</d:index_title></d:index>
+	<h1>router</h1>
+	<p>Dispositivo de red informática que recibe una señal de red y la reenvía a uno o más ordenadores, impresoras y otros dispositivos. Los routers suelen proporcionar conexión a Internet a varios usuarios. La estación base AirPort Extreme de Apple Inc. es un ejemplo de router.</p>
+</d:entry>
+
+<d:entry id="RSS">
+	<d:index><d:index_value>RSS</d:index_value><d:index_title>RSS</d:index_title></d:index>
+	<h1>RSS</h1>
+	<p>Abreviación de “Really Simple Syndication” (“sindicación realmente sencilla” en español), una forma alternativa de visualizar una página web. Las páginas web que cambian con frecuencia, como puede ser el caso de las páginas de noticias, suelen contar con visualizaciones RSS. Una página RSS visualizada a través del navegador web Safari presenta los títulos de los artículos nuevos y recientes en una lista, mostrando solo una línea o dos del contenido de cada artículo. Si Safari detecta una visualización RSS para una página web, aparece en la barra de direcciones un botón RSS en el que puede hacer clic para visualizar el contenido RSS. El término RSS se usa indistintamente como sinónimo de “feed” (origen de contenidos), “feed de noticias”, “feed RSS” y “feed XML”.</p>
+</d:entry>
+
+<d:entry id="Safari">
+	<d:index><d:index_value>Safari</d:index_value><d:index_title>Safari</d:index_title></d:index>
+	<h1>Safari</h1>
+	<p>Navegador web de Apple Inc.</p>
+</d:entry>
+
+<d:entry id="safe_sleep">
+	<d:index><d:index_value>reposo seguro</d:index_value><d:index_title>reposo seguro</d:index_title></d:index>
+	<h1>reposo seguro</h1>
+	<p>Durante el reposo seguro, el estado actual del ordenador se guarda en el disco rígido, incluidas las aplicaciones y documentos abiertos. Esto evita que la información se pierda en caso de que el ordenador se apague por completo durante el reposo, lo cual podría ocurrir si se agotara o se reemplazara la batería.</p>
+</d:entry>
+
+<d:entry id="screen_name">
+	<d:index><d:index_value>nombre de usuario</d:index_value><d:index_title>nombre de usuario</d:index_title></d:index>
+	<h1>nombre de usuario</h1>
+	<p>Nombre elegido por el usuario para comunicarse con otras personas a través de Internet. Un nombre de pantalla puede ser su nombre real o un seudónimo. Puede usar un nombre de pantalla en la aplicación iChat para enviar y recibir mensajes instantáneos a través de Internet.</p>
+</d:entry>
+
+<d:entry id="screen_sharing">
+	<d:index><d:index_value>compartir pantalla</d:index_value><d:index_title>compartir pantalla</d:index_title></d:index>
+	<h1>compartir pantalla</h1>
+	<p>Característica de Mac OS X que le permite conectarse a otro ordenador de la red y visualizar su pantalla en su ordenador. Mientras comparte la pantalla del ordenador, puede controlar todo lo que sucede en dicho ordenador, pudiendo abrir documentos o aplicaciones, abrir, mover o cerrar ventanas, o incluso apagar el ordenador.</p>
+</d:entry>
+
+<d:entry id="scrubber_bar">
+	<d:index><d:index_value>barra de arrastre</d:index_value><d:index_title>barra de arrastre</d:index_title></d:index>
+	<h1>barra de arrastre</h1>
+	<p>Barra de control temporal situada bajo un clip de vídeo o audio y que muestra la posición del cursor de reproducción.</p>
+</d:entry>
+
+<d:entry id="secure_virtual_memory">
+	<d:index><d:index_value>memoria virtual segura</d:index_value><d:index_title>memoria virtual segura</d:index_title></d:index>
+	<h1>memoria virtual segura</h1>
+	<p>Memoria virtual que se encripta con fines de seguridad. Dado que la información almacenada en el disco rígido se conserva hasta ser sobrescrita, puede usar la memoria virtual segura para reducir el riesgo de que quede información delicada en el disco rígido.</p>
+</d:entry>
+
+<d:entry id="server">
+	<d:index><d:index_value>servidor</d:index_value><d:index_title>servidor</d:index_title></d:index>
+	<h1>servidor</h1>
+	<p>Ordenador que proporciona servicios (servicios de archivos, servicios de correo, servicios web, etc.) a otros ordenadores o dispositivos de red.</p>
+</d:entry>
+
+<d:entry id="Shake">
+	<d:index><d:index_value>Shake</d:index_value><d:index_title>Shake</d:index_title></d:index>
+	<h1>Shake</h1>
+	<p>Software de efectos digitales de Apple Inc. que se utiliza para películas, programas y juegos interactivos.</p>
+</d:entry>
+
+<d:entry id="Sherlock">
+	<d:index><d:index_value>Sherlock</d:index_value><d:index_title>Sherlock</d:index_title></d:index>
+	<h1>Sherlock</h1>
+	<p>Herramienta de software que realiza búsquedas tanto en discos locales conectados al ordenador como en páginas web. Apple Inc. introdujo la herramienta Sherlock en la versión 8.5 del sistema Mac OS.</p>
+</d:entry>
+
+<d:entry id="short_name">
+	<d:index><d:index_value>nombre corto</d:index_value><d:index_title>nombre corto</d:index_title></d:index>
+	<h1>nombre corto</h1>
+	<p>Nombre que identifica a una cuenta de usuario individual en los ordenadores Macintosh. Cuando se crea una cuenta de usuario, el nombre corto se genera automáticamente a partir del nombre introducido para la cuenta. El nombre corto puede modificarse durante la creación de la cuenta, pero no puede cambiarse una vez creada la cuenta.</p>
+</d:entry>
+
+<d:entry id="sidebar">
+	<d:index><d:index_value>barra lateral</d:index_value><d:index_title>barra lateral</d:index_title></d:index>
+	<h1>barra lateral</h1>
+	<p>Zona del lateral de las ventanas del Finder y de las aplicaciones que incluye botones, enlaces, iconos y otra información. La barra lateral de la ventana del Finder muestra iconos para elementos de uso frecuente, como discos, servidores y carpetas.</p>
+</d:entry>
+
+<d:entry id="Simple_Finder">
+	<d:index><d:index_value>Finder Simple</d:index_value><d:index_title>Finder Simple</d:index_title></d:index>
+	<h1>Finder Simple</h1>
+	<p>Versión simplificada del Finder de Mac OS X, con un menor número de menús y acceso limitado a los ítems del disco rígido. Finder Simple restringe el acceso de una cuenta a los archivos y aplicaciones del ordenador.</p>
+</d:entry>
+
+<d:entry id="skim">
+	<d:index><d:index_value>ojear</d:index_value><d:index_title>ojear</d:index_title></d:index>
+	<h1>ojear</h1>
+	<p>En las aplicaciones iMovie e iPhoto, mover el puntero lentamente sobre las miniaturas de un clip de vídeo o un evento para buscar un fotograma o imagen en particular.</p>
+</d:entry>
+
+<d:entry id="sleep">
+	<d:index><d:index_value>reposo</d:index_value><d:index_title>reposo</d:index_title></d:index>
+	<h1>reposo</h1>
+	<p>Estado en el que la pantalla de un ordenador se atenúa y su unidad de disco se apaga. Cuando el ordenador está en reposo, permanece encendido pero consume menos energía. Se tarda menos tiempo en hacer que el ordenador salga del modo de reposo que en encenderlo tras haberlo apagado.</p>
+</d:entry>
+
+<d:entry id="sleep_indicator_light">
+	<d:index><d:index_value>indicador luminoso de reposo</d:index_value><d:index_title>indicador luminoso de reposo</d:index_title></d:index>
+	<h1>indicador luminoso de reposo</h1>
+	<p>Indicador luminoso del ordenador que oscila lentamente cuando el ordenador está en modo de reposo.</p>
+</d:entry>
+
+<d:entry id="S.M.A.R.T.">
+	<d:index><d:index_value>S.M.A.R.T.</d:index_value><d:index_title>S.M.A.R.T.</d:index_title></d:index>
+	<h1>S.M.A.R.T.</h1>
+	<p>Tecnología de análisis y generación de informes de autodiagnóstico. Software que permite que el programa de arranque del ordenador evalúe el estado del disco rígido del mismo. La tecnología S.M.A.R.T. puede advertirle de fallos inminentes de una unidad de modo que pueda adoptar medidas de prevención, como puede ser realizar una copia de seguridad de sus datos.</p>
+</d:entry>
+
+<d:entry id="Smart_Address">
+	<d:index><d:index_value>agenda predictiva</d:index_value><d:index_title>agenda predictiva</d:index_title></d:index>
+	<h1>agenda predictiva</h1>
+	<p>Nombre o dirección que aparece en un bocadillo azul en el campo de dirección de un mensaje que se dispone a enviar.</p>
+</d:entry>
+
+<d:entry id="Smart_Album">
+	<d:index><d:index_value>Álbum inteligente</d:index_value><d:index_title>Álbum inteligente</d:index_title></d:index>
+	<h1>Álbum inteligente</h1>
+	<p>Tipo de álbum (carpeta) utilizado por la aplicación iPhoto de Apple Inc. Un álbum inteligente encuentra automáticamente las fotos que cumplan uno o varios de los criterios especificados. Por ejemplo, puede crear un álbum inteligente que contenga todas las fotos tomadas durante el mes de octubre, o bien todas las fotos con la etiqueta “París”.</p>
+</d:entry>
+
+<d:entry id="Smart_Folder">
+	<d:index><d:index_value>Carpeta inteligente</d:index_value><d:index_title>Carpeta inteligente</d:index_title></d:index>
+	<h1>Carpeta inteligente</h1>
+	<p>Tipo de carpeta de los ordenadores Macintosh. Una carpeta inteligente encuentra de forma automática aquellos ítems que cumplan uno o varios criterios especificados. Por ejemplo, puede crear una carpeta inteligente que contenga referencias a todas las hojas de cálculo de un ordenador. La ubicación real de los archivos listados en una carpeta inteligente no cambia, de modo que un mismo ítem podría figurar en varias carpetas inteligentes.</p>
+</d:entry>
+
+<d:entry id="Smart_Group">
+	<d:index><d:index_value>grupo inteligente</d:index_value><d:index_title>grupo inteligente</d:index_title></d:index>
+	<h1>grupo inteligente</h1>
+	<p>Colección de contactos que Agenda actualiza automáticamente con nuevos contactos cuando los contactos cumplen los criterios especificados.</p>
+</d:entry>
+
+<d:entry id="Smart_Mailbox">
+	<d:index><d:index_value>Buzón inteligente</d:index_value><d:index_title>Buzón inteligente</d:index_title></d:index>
+	<h1>Buzón inteligente</h1>
+	<p>Tipo de buzón (carpeta de correo) que usa la aplicación Mail en los ordenadores Macintosh. Un buzón inteligente encuentra de forma automática aquellos mensajes de correo electrónico que cumplan uno o varios criterios especificados. Por ejemplo, puede crear un buzón inteligente que contenga referencias a todos los mensajes de los miembros de su familia, o a todos los mensajes con el asunto “Hawaii”. La ubicación real de los mensajes de correo listados en un buzón inteligente no cambia, de modo que un mismo ítem podría figurar en varios buzones inteligentes.</p>
+</d:entry>
+
+<d:entry id="Smart_Playlist">
+	<d:index><d:index_value>Lista de reproducción inteligente</d:index_value><d:index_title>Lista de reproducción inteligente</d:index_title></d:index>
+	<h1>Lista de reproducción inteligente</h1>
+	<p>Tipo de lista de reproducción (carpeta) utilizado por la aplicación iTunes de Apple Inc. Una lista de reproducción inteligente encuentra automáticamente música que coincide con uno o varios criterios especificados. Por ejemplo, puede crear una lista de reproducción inteligente que contenga todos los temas de jazz o todas las canciones de un grupo determinado.</p>
+</d:entry>
+
+<d:entry id="SMB">
+	<d:index><d:index_value>SMB</d:index_value><d:index_title>SMB</d:index_title></d:index>
+	<h1>SMB</h1>
+	<p>Bloque de mensajes de servidor. Protocolo que permite que los ordenadores cliente accedan a archivos y servicios de red. Puede usarse sobre TCP/IP, a través de Internet o mediante otros protocolos de red. Los servicios SMB usan el SMB para proporcionar acceso a servidores, impresoras y otros recursos de red.  </p>
+</d:entry>
+
+<d:entry id="SMB/CIFS">
+	<d:index><d:index_value>SMB/CIFS</d:index_value><d:index_title>SMB/CIFS</d:index_title></d:index>
+	<h1>SMB/CIFS</h1>
+	<p>Protocolo para compartir el acceso a archivos, impresoras, puertos serie y otra información y dispositivos a través de los nodos de una red. Se usa principalmente en ordenadores con Windows.</p>
+</d:entry>
+
+<d:entry id="SnapBack">
+	<d:index><d:index_value>SnapBack</d:index_value><d:index_title>SnapBack</d:index_title></d:index>
+	<h1>SnapBack</h1>
+	<p>Botón naranja con un flecha blanca situado en el extremo derecho de los campos de dirección y búsqueda de Safari, el navegador web de Apple Inc. Al hacer clic en el botón SnapBack, el navegador regresa a la página designada o a la lista de resultados de la búsqueda.</p>
+</d:entry>
+
+<d:entry id="Snow_Leopard">
+	<d:index><d:index_value>Snow Leopard</d:index_value><d:index_title>Snow Leopard</d:index_title></d:index>
+	<h1>Snow Leopard</h1>
+	<p>Nombre de marca registrada de Mac OS X 10.6, la séptima versión principal del sistema operativo para ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Software_Update">
+	<d:index><d:index_value>Actualización de Software</d:index_value><d:index_title>Actualización de Software</d:index_title></d:index>
+	<h1>Actualización de Software</h1>
+	<p>Aplicación de los ordenadores Macintosh que busca actualizaciones para las aplicaciones de software. Actualización de Software se puede configurar para que avise de las actualizaciones encontradas automáticamente.</p>
+</d:entry>
+
+<d:entry id="Source_list">
+	<d:index><d:index_value>lista Fuente</d:index_value><d:index_title>lista Fuente</d:index_title></d:index>
+	<h1>lista Fuente</h1>
+	<p>En iPhoto, la lista de álbumes, carpetas, eventos, pases de diapositivas y otros elementos que aparecen en la barra lateral de la parte izquierda de la ventana de iPhoto. La lista Fuente crece a medida que se añaden fotos. El primer ítem de la lista Fuente es la fototeca de iPhoto, que contiene todas sus fotos.</p>
+</d:entry>
+
+<d:entry id="source_video">
+	<d:index><d:index_value>vídeo de origen</d:index_value><d:index_title>vídeo de origen</d:index_title></d:index>
+	<h1>vídeo de origen</h1>
+	<p>En la aplicación iMovie, el archivo que contiene un clip de vídeo que está usando en un proyecto.</p>
+</d:entry>
+
+<d:entry id="Spaces">
+	<d:index><d:index_value>Spaces</d:index_value><d:index_title>Spaces</d:index_title></d:index>
+	<h1>Spaces</h1>
+	<p>Característica de Mac OS X. La característica Spaces le permite organizar sus ventanas en grupos adaptados a fines específicos. Por ejemplo, puede configurar un espacio principalmente para negocios y cambiar a un espacio distinto para jugar a juegos. Puede crear hasta 16 espacios.</p>
+</d:entry>
+
+<d:entry id="spoken_commands">
+	<d:index><d:index_value>comandos hablados</d:index_value><d:index_title>comandos hablados</d:index_title></d:index>
+	<h1>comandos hablados</h1>
+	<p>Característica de los ordenadores Macintosh que permite al ordenador entender y ejecutar determinados comandos hablados.</p>
+</d:entry>
+
+<d:entry id="Spotlight">
+	<d:index><d:index_value>Spotlight</d:index_value><d:index_title>Spotlight</d:index_title></d:index>
+	<h1>Spotlight</h1>
+	<p>Software de búsqueda integrado en los ordenadores Macintosh. Spotlight genera una base de datos con información acerca de todos los archivos de un ordenador, catalogando todos los ítems encontrados cuando el ordenador se inicia por primera vez y cualquier ítem añadido posteriormente. Cuando escribe un término de búsqueda en el campo Spotlight, Spotlight revisa su base de datos en busca de archivos relacionados con dicho término y le presenta una lista. Aunque la catalogacióni inicial puede llevar algunos minutos, las búsquedas subsiguientes aparecen de forma instantánea.</p>
+</d:entry>
+
+<d:entry id="SRAM">
+	<d:index><d:index_value>SRAM</d:index_value><d:index_title>SRAM</d:index_title></d:index>
+	<h1>SRAM</h1>
+	<p>Memoria estática de acceso aleatorio. Un tipo de memoria que retiene la información mientras se suministre alimentación. A diferencia de la memoria DRAM, la SRAM no requiere una nueva carga eléctrica cada pocos milisegundos.</p>
+</d:entry>
+
+<d:entry id="stacks">
+	<d:index><d:index_value>pilas</d:index_value><d:index_title>pilas</d:index_title></d:index>
+	<h1>pilas</h1>
+	<p>Característica de Mac OS X. Las pilas aparecen en el Dock y le proporcionan acceso rápido a carpetas de archivos. Al hacer clic en una pila, los archivos que contiene se abren formando un abanico o una cuadrícula.</p>
+</d:entry>
+
+<d:entry id="startup_disk">
+	<d:index><d:index_value>disco de arranque</d:index_value><d:index_title>disco de arranque</d:index_title></d:index>
+	<h1>disco de arranque</h1>
+	<p>Preferencia de sistema de los ordenadores Macintosh que se utiliza para configurar un disco rígido interno o externo, una partición, un CD, un DVD u otro dispositivo como disco de arranque.</p>
+</d:entry>
+
+<d:entry id="Stickies">
+	<d:index><d:index_value>Notas Adhesivas</d:index_value><d:index_title>Notas Adhesivas</d:index_title></d:index>
+	<h1>Notas Adhesivas</h1>
+	<p>Aplicación de Apple que permite colocar pequeñas notas similares a los Post-It en la pantalla del ordenador. En Mac OS X, Notas Adhesivas es uno de los widgets que se incluyen en el Dashboard.</p>
+</d:entry>
+
+<d:entry id="SuperDrive">
+	<d:index><d:index_value>SuperDrive</d:index_value><d:index_title>SuperDrive</d:index_title></d:index>
+	<h1>SuperDrive</h1>
+	<p>Tipo de unidad de disco de Apple Inc. El primer dispositivo SuperDrive era una unidad de disco flexible de alta capacidad (1,44 MB). La SuperDrive actual es una unidad combinada que puede leer y escribir (copiar) tanto discos CD como DVD.</p>
+</d:entry>
+
+<d:entry id="System_Folder">
+	<d:index><d:index_value>carpeta del sistema</d:index_value><d:index_title>carpeta del sistema</d:index_title></d:index>
+	<h1>carpeta del sistema</h1>
+	<p>En Mac OS 9 y versiones anteriores de Mac OS, una carpeta que contiene los archivos necesarios para el funcionamiento del sistema, como pueden ser los tipos de letra y las preferencias. Mac OS X no tiene una carpeta de sistema.</p>
+</d:entry>
+
+<d:entry id="System_Preferences">
+	<d:index><d:index_value>Preferencias del Sistema</d:index_value><d:index_title>Preferencias del Sistema</d:index_title></d:index>
+	<h1>Preferencias del Sistema</h1>
+	<p>Conjunto de controles de software que incorpora Mac OS X. Las Preferencias del Sistema se usan para controlar muchos tipos de ajustes, como patrones de escritorio, funciones rápidas de teclado, configuraciones de red, gestión del consumo de energía y mucho más. Preferencias del Sistema sustituye a los paneles de control presentes en versiones de Mac OS anteriores a Mac OS X.</p>
+</d:entry>
+
+<d:entry id="System_Profiler">
+	<d:index><d:index_value>Perfil de Sistema</d:index_value><d:index_title>Perfil de Sistema</d:index_title></d:index>
+	<h1>Perfil de Sistema</h1>
+	<p>Aplicación incluida en Mac OS X. Perfil de Sistema proporciona información detallada acerca del software instalado en el ordenador, el hardware integrado y los dispositivos conectados.</p>
+</d:entry>
+
+<d:entry id="Terminal">
+	<d:index><d:index_value>Terminal</d:index_value><d:index_title>Terminal</d:index_title></d:index>
+	<h1>Terminal</h1>
+	<p>Aplicación incluida en Mac OS X. Terminal proporciona una ventana con línea de comandos donde puede introducir comandos para que los ejecute el sistema operativo del ordenador. Terminal es un tipo de programa denominado “emulador de terminal”, que suele encontrarse en aquellos ordenadores basados en UNIX.</p>
+</d:entry>
+
+<d:entry id="TextEdit">
+	<d:index><d:index_value>TextEdit</d:index_value><d:index_title>TextEdit</d:index_title></d:index>
+	<h1>TextEdit</h1>
+	<p>Aplicación de procesamiento de texto incorporada en Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Text_to_Speech">
+	<d:index><d:index_value>Texto a voz</d:index_value><d:index_title>Texto a voz</d:index_title></d:index>
+	<h1>Texto a voz</h1>
+	<p>Característica de los ordenadores Macintosh que permite que el ordenador lea el texto resaltado en pantalla.</p>
+</d:entry>
+
+<d:entry id="thumbnail">
+	<d:index><d:index_value>miniatura</d:index_value><d:index_title>miniatura</d:index_title></d:index>
+	<h1>miniatura</h1>
+	<p>Pequeña imagen que representa a una imagen, página o fotograma de vídeo original de mayor tamaño.</p>
+</d:entry>
+
+<d:entry id="Thunderbolt">
+	<d:index><d:index_value>Thunderbolt</d:index_value><d:index_title>Thunderbolt</d:index_title></d:index>
+	<h1>Thunderbolt</h1>
+	<p>Tipo de cable, conector y software que permite una conexión de alta velocidad entre un ordenador y un monitor o un dispositivo externo para la transferencia de datos a alta velocidad.</p>
+</d:entry>
+
+<d:entry id="Tiger">
+	<d:index><d:index_value>Tiger</d:index_value><d:index_title>Tiger</d:index_title></d:index>
+	<h1>Tiger</h1>
+	<p>Nombre de marca registrada del Mac OS X 10.4, la quinta versión principal del sistema operativo para ordenadores Macintosh.</p>
+</d:entry>
+
+<d:entry id="Time_Capsule">
+	<d:index><d:index_value>Time Capsule</d:index_value><d:index_title>Time Capsule</d:index_title></d:index>
+	<h1>Time Capsule</h1>
+	<p>Dispositivo de Apple Inc. para realizar copias de seguridad de ordenadores, y que funciona de forma inalámbrica mediante la aplicación de copia de seguridad Time Machine de Mac OS X. Time Capsule es también una estación base AirPort Extreme. Es posible conectar varios ordenadores a una red inalámbrica y realizar copias de seguridad inalámbricas con un único Time Capsule.</p>
+</d:entry>
+
+<d:entry id="Time_Machine">
+	<d:index><d:index_value>Time Machine</d:index_value><d:index_title>Time Machine</d:index_title></d:index>
+	<h1>Time Machine</h1>
+	<p>Aplicación de copia de seguridad de archivos de Apple incluida en Mac OS X. Time Machine crea copias de seguridad periódicas de todos los archivos del ordenador, incluidos todos los datos, software y archivos del sistema operativo. Time Machine emplea la metáfora “volar hacia atrás en el tiempo” para mostrarle imágenes de versiones anteriores de la ventana activa o del escritorio, de modo que pueda recuperar y restaurar la versión que desee.</p>
+</d:entry>
+
+<d:entry id="titles">
+	<d:index><d:index_value>títulos</d:index_value><d:index_title>títulos</d:index_title></d:index>
+	<h1>títulos</h1>
+	<p>En la aplicación iMovie, texto que puede añadirse al proyecto de vídeo.</p>
+</d:entry>
+
+<d:entry id="Trash">
+	<d:index><d:index_value>Papelera</d:index_value><d:index_title>Papelera</d:index_title></d:index>
+	<h1>Papelera</h1>
+	<p>Carpeta especial ubicada al final del Dock en los ordenadores Macintosh. Para eliminar un ítem del disco, arrástrelo a la Papelera y, a continuación, seleccione Finder > Vaciar Papelera o Finder > Vaciar Papelera de forma segura.</p>
+</d:entry>
+
+<d:entry id="Tremor">
+	<d:index><d:index_value>Tremor</d:index_value><d:index_title>Tremor</d:index_title></d:index>
+	<h1>Tremor</h1>
+	<p>Software de efectos digitales de Apple Inc. que se utiliza para películas, programas y juegos interactivos.</p>
+</d:entry>
+
+<d:entry id="TrueType">
+	<d:index><d:index_value>TrueType</d:index_value><d:index_title>TrueType</d:index_title></d:index>
+	<h1>TrueType</h1>
+	<p>Estándar de tipo de letra en pantalla desarrollado por Apple Inc.</p>
+</d:entry>
+
+<d:entry id="Universal_Access">
+	<d:index><d:index_value>Acceso Universal</d:index_value><d:index_title>Acceso Universal</d:index_title></d:index>
+	<h1>Acceso Universal</h1>
+	<p>Característica de productos y servicios, diseñada para que todo el mundo pueda usarlos, a pesar de sus discapacidades físicas.</p>
+</d:entry>
+
+<d:entry id="user_account">
+	<d:index><d:index_value>cuenta de usuario</d:index_value><d:index_title>cuenta de usuario</d:index_title></d:index>
+	<h1>cuenta de usuario</h1>
+	<p>En ordenadores Macintosh que usan Mac OS X, cada persona que usa el ordenador puede tener una cuenta individual con una carpeta de inicio independiente. En un ordenador con varios usuarios, las cuentas de usuario estándar permiten que los usuarios instalen software para su propio uso y que modifiquen ajustes relacionados con sus propias cuentas. Cada individuo puede ajustar sus preferencias sin afectar a otros usuarios. Los usuarios con cuentas de usuario estándar no pueden administrar otras cuentas. Los otros tipos de cuent son “administrador”, “grupo” e “invitado”.</p>
+</d:entry>
+
+<d:entry id="VCD">
+	<d:index><d:index_value>VCD</d:index_value><d:index_title>VCD</d:index_title></d:index>
+	<h1>VCD</h1>
+	<p>Véase <a href='x-dictionary:r:video_compact_disc:com.apple.dictionary.AppleDictionary'><b>disco compacto de vídeo</b></a>.</p>
+</d:entry>
+
+<d:entry id="video_compact_disc">
+	<d:index><d:index_value>disco de vídeo compacto</d:index_value><d:index_title>disco de vídeo compacto</d:index_title></d:index>
+	<h1>disco de vídeo compacto</h1>
+	<p>Disco óptico con mayor capacidad que un CD, pero menos que un DVD. El vídeo almacenado en un VCD es de menor calidad que el de un DVD, y similar en calidad a una cinta de vídeo VHS. El vídeo VCD se codifica en formato MPEG-1. Para visualizar el contenido de un VCD, utilice QuickTime Player y una unidad de discos ópticos de su ordenador o que esté conectada directamente a su ordenador. </p>
+</d:entry>
+
+<d:entry id="virtual_memory">
+	<d:index><d:index_value>memoria virtual</d:index_value><d:index_title>memoria virtual</d:index_title></d:index>
+	<h1>memoria virtual</h1>
+	<p>Porción del disco rígido del ordenador que se usa para aumentar la memoria del ordenador.</p>
+</d:entry>
+
+<d:entry id="VO">
+	<d:index><d:index_value>VO</d:index_value><d:index_title>VO</d:index_title></d:index>
+	<h1>VO</h1>
+	<p>Véase <a href='x-dictionary:r:VoiceOver:com.apple.dictionary.AppleDictionary'><b>VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VO_keys">
+	<d:index><d:index_value>teclas VO</d:index_value><d:index_title>teclas VO</d:index_title></d:index>
+	<h1>teclas VO</h1>
+	<p>Véase <a href='x-dictionary:r:VoiceOver_keys:com.apple.dictionary.AppleDictionary'><b>teclas de VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VoiceOver">
+	<d:index><d:index_value>VoiceOver</d:index_value><d:index_title>VoiceOver</d:index_title></d:index>
+	<h1>VoiceOver</h1>
+	<p>Interfaz alternativa disponible en los ordenadores Macintosh para aquellos usuarios con problemas de visión o que necesiten oír lo que aparece en pantalla. VoiceOver describe en voz alta lo que se muestra en la pantalla y lee el texto presente en documentos y ventanas. VoiceOver permite controlar el ordenador usando principalmente el teclado en lugar del ratón.</p>
+</d:entry>
+
+<d:entry id="VoiceOver_keys">
+	<d:index><d:index_value>teclas de VoiceOver</d:index_value><d:index_title>teclas de VoiceOver</d:index_title></d:index>
+	<h1>teclas de VoiceOver</h1>
+	<p>Las teclas Control y Opción, cuando se pulsan junto con otras teclas para introducir comandos de VoiceOver, se denominan teclas de VoiceOver, o “teclas VO” para abreviar. En la documentación se hace referencia a ellas como “VO”.</p>
+</d:entry>
+
+<d:entry id="volume">
+	<d:index><d:index_value>volumen</d:index_value><d:index_title>volumen</d:index_title></d:index>
+	<h1>volumen</h1>
+	<p>Asignación de almacenamiento montable que se comporta, desde el punto de vista de un usuario individual, como un disco rígido local, una partición de disco o un volumen de red.</p>
+</d:entry>
+
+<d:entry id="web_browser">
+	<d:index><d:index_value>navegador web</d:index_value><d:index_title>navegador web</d:index_title></d:index>
+	<h1>navegador web</h1>
+	<p>Véase <a href='x-dictionary:r:navegador:com.apple.dictionary.AppleDictionary'><b>navegador</b></a>.</p>
+</d:entry>
+
+<d:entry id="Web_Clip">
+	<d:index><d:index_value>Web Clip</d:index_value><d:index_title>Web Clip</d:index_title></d:index>
+	<h1>Web Clip</h1>
+	<p>Software de Apple que le permite crear sus propios widgets de Dashboard a partir del contenido de páginas web.</p>
+</d:entry>
+
+<d:entry id="WebDAV_server">
+	<d:index><d:index_value>servidor WebDAV</d:index_value><d:index_title>servidor WebDAV</d:index_title></d:index>
+	<h1>servidor WebDAV</h1>
+	<p>Software de creación de contenidos y control de versiones distribuido basado en web. Un entorno de creación de contenidos que permite que los usuarios cliente extraigan páginas web, realicen cambios y devuelvan las páginas a su lugar sin que el sitio web deje de estar activo y disponible para los usuarios en ningún momento.</p>
+</d:entry>
+
+<d:entry id="Web_Gallery">
+	<d:index><d:index_value>Galería web</d:index_value><d:index_title>Galería web</d:index_title></d:index>
+	<h1>Galería web</h1>
+	<p>Véase <a href='x-dictionary:r:MobileMe_Gallery:com.apple.dictionary.AppleDictionary'><b>galería MobileMe</b></a>.</p>
+</d:entry>
+
+<d:entry id="WebKit">
+	<d:index><d:index_value>WebKit</d:index_value><d:index_title>WebKit</d:index_title></d:index>
+	<h1>WebKit</h1>
+	<p>Conjunto de herramientas para ayudar a los desarrolladores de software a visualizar contenidos web (como por ejemplo páginas web) dentro de aplicaciones. WebKit simplifica el proceso para solicitar contenidos de un servidor HTTP de una red y mostrarlos de forma que los usuarios puedan visualizarlos.</p>
+</d:entry>
+
+<d:entry id="WebObjects">
+	<d:index><d:index_value>WebObjects</d:index_value><d:index_title>WebObjects</d:index_title></d:index>
+	<h1>WebObjects</h1>
+	<p>Entorno de desarrollo de Apple Inc. que permite a los desarrolladores web crear de forma rápida aplicaciones web.</p>
+</d:entry>
+
+<d:entry id="web_page">
+	<d:index><d:index_value>página web</d:index_value><d:index_title>página web</d:index_title></d:index>
+	<h1>página web</h1>
+	<p>Véase <a href='x-dictionary:r:página web:com.apple.dictionary.AppleDictionary'><b>página web</b></a>.</p>
+</d:entry>
+
+<d:entry id="webpage">
+	<d:index><d:index_value>página web</d:index_value><d:index_title>página web</d:index_title></d:index>
+	<h1>página web</h1>
+	<p>Página de la Red, visible por cualquier que esté conectado a Internet y utilice un navegador web.</p>
+</d:entry>
+
+<d:entry id="web_widget">
+	<d:index><d:index_value>widget de web</d:index_value><d:index_title>widget de web</d:index_title></d:index>
+	<h1>widget de web</h1>
+	<p>Porción de contenido de una página web que puede añadir a su propia página web. Muchas páginas web ofrecen widgets web para ayudarle a publicar vídeos de Internet, titulares de noticias, valores bursátiles, secuencias fotográficas y mucho más.</p>
+</d:entry>
+
+<d:entry id="widget">
+	<d:index><d:index_value>widget</d:index_value><d:index_title>widget</d:index_title></d:index>
+	<h1>widget</h1>
+	<p>Miniaplicación de los ordenadores Macintosh. Los widgets se incluyen en el Dashboard como parte de Mac OS X. Encontramos entre ellos 'Reloj mundial', 'Calculadora', 'iCal', 'Dictionary', 'Weather', 'Stocks' y muchos más. El Dashboard incorpora numerosos widgets ya instalados, y pueden obtenerse otros en la <a href='http://www.apple.com/downloads/dashboard/'>página web de Apple</a>.</p>
+</d:entry>
+
+<d:entry id="Wi-Fi">
+	<d:index><d:index_value>Wi-Fi</d:index_value><d:index_title>Wi-Fi</d:index_title></d:index>
+	<h1>Wi-Fi</h1>
+	<p>Software o hardware para redes inalámbricas basado en uno de los estándares 802.11.</p>
+</d:entry>
+
+<d:entry id="Xcode">
+	<d:index><d:index_value>Xcode</d:index_value><d:index_title>Xcode</d:index_title></d:index>
+	<h1>Xcode</h1>
+	<p>Conjunto de herramientas para Mac OS X para el desarrollo de software usado para crear aplicaciones para las plataformas del Mac, iPhone y iPad de Apple Inc. El paquete incluye el entorno de desarrollo integrado de Xcode, Interface Builder, la aplicación Instruments para el análisis del rendimiento, compiladores, depuradores y otras herramientas.</p>
+</d:entry>
+
+<d:entry id="Xgrid">
+	<d:index><d:index_value>Xgrid</d:index_value><d:index_title>Xgrid</d:index_title></d:index>
+	<h1>Xgrid</h1>
+	<p>Aplicación de Apple que permite a un administrador usar la potencia de procesamiento combinada de un grupo de ordenadores en red para trabajar en una misma tarea.</p>
+</d:entry>
+
+<d:entry id="Xsan">
+	<d:index><d:index_value>Xsan</d:index_value><d:index_title>Xsan</d:index_title></d:index>
+	<h1>Xsan</h1>
+	<p>Sistema de archivos de clúster de 64 bits que permite que varios ordenadores Mac y Xserve compartan volúmenes de almacenamiento RAID a través de una red de alta velocidad. Cada ordenador puede leer y escribir directamente en el sistema de archivos centralizado.</p>
+</d:entry>
+
+</d:dictionary>

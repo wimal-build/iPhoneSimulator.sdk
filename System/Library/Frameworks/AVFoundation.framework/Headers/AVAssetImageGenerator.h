@@ -36,19 +36,19 @@
 	@constant		AVAssetImageGeneratorApertureModeCleanAperture
 	@abstract		Both pixel aspect ratio and clean aperture will be applied.
 */
-extern NSString *const AVAssetImageGeneratorApertureModeCleanAperture NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVAssetImageGeneratorApertureModeCleanAperture NS_AVAILABLE(10_7, 4_0);
 
 /*!
 	@constant		AVAssetImageGeneratorApertureModeProductionAperture
 	@abstract		Only pixel aspect ratio will be applied.
 */
-extern NSString *const AVAssetImageGeneratorApertureModeProductionAperture NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVAssetImageGeneratorApertureModeProductionAperture NS_AVAILABLE(10_7, 4_0);
 
 /*!
 	@constant		AVAssetImageGeneratorApertureModeEncodedPixels
 	@abstract		Neither pixel aspect ratio nor clean aperture will be applied.
 */
-extern NSString *const AVAssetImageGeneratorApertureModeEncodedPixels NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVAssetImageGeneratorApertureModeEncodedPixels NS_AVAILABLE(10_7, 4_0);
 
 enum
 {
@@ -81,6 +81,12 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
    If no videoComposition is specified, only the first enabled video track will be used.
    If a videoComposition is specified, the value of appliesPreferredTrackTransform is ignored. */
 @property (nonatomic, copy) AVVideoComposition *videoComposition;
+
+/* The actual time of the generated images will be within the range [requestedTime-toleranceBefore, requestedTime+toleranceAfter] and may differ from the requested time for efficiency.
+   Pass kCMTimeZero for both toleranceBefore and toleranceAfter to request frame-accurate image generation; this may incur additional decoding delay.
+   Default is kCMTimePositiveInfinity. */
+@property (nonatomic) CMTime requestedTimeToleranceBefore NS_AVAILABLE(10_7, 5_0);
+@property (nonatomic) CMTime requestedTimeToleranceAfter NS_AVAILABLE(10_7, 5_0);
 
 /*!
 	@method			assetImageGeneratorWithAsset:

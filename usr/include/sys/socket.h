@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -313,7 +313,10 @@ struct so_np_extensions {
 #define	AF_NETGRAPH	32		/* Netgraph sockets */
 #endif
 #define AF_IEEE80211    37              /* IEEE 802.11 protocol */
-#define	AF_MAX		38
+#ifdef __APPLE__
+#define AF_UTUN		38
+#endif
+#define	AF_MAX		39
 #endif	/* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 
 /*
@@ -409,6 +412,9 @@ struct sockaddr_storage {
 #define	PF_NETGRAPH	AF_NETGRAPH
 #endif
 
+#ifdef __APPLE__
+#define PF_UTUN		AF_UTUN
+#endif
 #define	PF_MAX		AF_MAX
 
 /*
@@ -439,14 +445,14 @@ struct sockaddr_storage {
  *	Fifth: type of info, defined below
  *	Sixth: flag(s) to mask with for NET_RT_FLAGS
  */
-#define NET_RT_DUMP			1		/* dump; may limit to a.f. */
-#define NET_RT_FLAGS		2		/* by flags, e.g. RESOLVING */
-#define NET_RT_IFLIST		3		/* survey interface list */
-#define NET_RT_STAT			4		/* routing statistics */
-#define NET_RT_TRASH		5		/* routes not in table but not freed */
-#define NET_RT_IFLIST2	6		/* interface list with addresses */
-#define NET_RT_DUMP2                     7               /* dump; may limit to a.f. */
-#define	NET_RT_MAXID		8
+#define NET_RT_DUMP		1	/* dump; may limit to a.f. */
+#define NET_RT_FLAGS		2	/* by flags, e.g. RESOLVING */
+#define NET_RT_IFLIST		3	/* survey interface list */
+#define NET_RT_STAT		4	/* routing statistics */
+#define NET_RT_TRASH		5	/* routes not in table but not freed */
+#define NET_RT_IFLIST2		6	/* interface list with addresses */
+#define NET_RT_DUMP2		7	/* dump; may limit to a.f. */
+#define	NET_RT_MAXID		10
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
 
 
@@ -481,7 +487,9 @@ struct msghdr {
 #define	MSG_DONTWAIT	0x80		/* this message should be nonblocking */
 #define	MSG_EOF		0x100		/* data completes connection */
 #ifdef __APPLE__
+#ifdef __APPLE_API_OBSOLETE
 #define MSG_WAITSTREAM  0x200           /* wait up to full request.. may return partial */
+#endif
 #define MSG_FLUSH	0x400		/* Start of 'hold' seq; dump so_temp */
 #define MSG_HOLD	0x800		/* Hold frag in so_temp */
 #define MSG_SEND	0x1000		/* Send the packet in so_temp */

@@ -43,6 +43,10 @@
 #include <mach/kmod.h>
 #include <libkern/OSAtomic.h>
 
+#if defined(__i386__) || defined(__x86_64__)
+#include <i386/mp.h>
+#endif
+
 /*
  * cmn_err
  */
@@ -100,17 +104,17 @@ extern lck_mtx_t mod_lock;
 /*
  * Per-CPU data.
  */
-typedef struct cpu {
+typedef struct dtrace_cpu {
 	processorid_t   cpu_id;                    /* CPU number */
-	struct cpu      *cpu_next;                 /* next existing CPU */
+	struct dtrace_cpu *cpu_next;                 /* next existing CPU */
 	lck_rw_t        cpu_ft_lock;               /* DTrace: fasttrap lock */
 	uintptr_t       cpu_dtrace_caller;         /* DTrace: caller, if any */
 	hrtime_t        cpu_dtrace_chillmark;      /* DTrace: chill mark time */
 	hrtime_t        cpu_dtrace_chilled;        /* DTrace: total chill time */
 	boolean_t       cpu_dtrace_invop_underway; /* DTrace gaurds against invalid op re-entrancy */
-} cpu_t;
+} dtrace_cpu_t;
 
-extern cpu_t *cpu_list;
+extern dtrace_cpu_t *cpu_list;
 
 /*
  * The cpu_core structure consists of per-CPU state available in any context.
@@ -130,7 +134,11 @@ typedef struct cpu_core {
 } cpu_core_t;
 
 extern cpu_core_t *cpu_core;
+
+#if defined(__arm__)
 extern unsigned int real_ncpus;
+#endif
+
 extern int cpu_number(void); /* From #include <kern/cpu_number.h>. Called from probe context, must blacklist. */
 
 #define	CPU		(&(cpu_list[cpu_number()]))	/* Pointer to current CPU */
@@ -293,8 +301,8 @@ typedef struct cyc_handler {
 } cyc_handler_t;
 
 typedef struct cyc_omni_handler {
-	void (*cyo_online)(void *, cpu_t *, cyc_handler_t *, cyc_time_t *);
-	void (*cyo_offline)(void *, cpu_t *, void *);
+	void (*cyo_online)(void *, dtrace_cpu_t *, cyc_handler_t *, cyc_time_t *);
+	void (*cyo_offline)(void *, dtrace_cpu_t *, void *);
 	void *cyo_arg;
 } cyc_omni_handler_t;
 

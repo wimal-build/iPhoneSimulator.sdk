@@ -76,7 +76,7 @@ enum {
 
     Useful only as a Capability.
     
-    @constant kIOPMSleepCapability 
+    @constant kIOPMSleepCapability
     Used only by certain IOKit Families (USB). Not defined or used by generic Power Management. Read your family documentation to see if you should define a powerstate using these capabilities.
     
     @constant kIOPMRestartCapability
@@ -87,6 +87,9 @@ enum {
 
     @constant kIOPMRestart
     Used only by certain IOKit Families (USB). Not defined or used by generic Power Management. Read your family documentation to see if you should define a powerstate using these capabilities.
+
+    @constant kIOPMInitialDeviceState
+    Indicates the initial power state for the device. If <code>initialPowerStateForDomainState()</code> returns a power state with this flag set in the capability field, then the initial power change is performed without calling the driver's <code>setPowerState()</code>.
 */
 typedef unsigned long IOPMPowerFlags;
 enum {
@@ -97,7 +100,8 @@ enum {
     kIOPMSleepCapability            = 0x00000004,
     kIOPMRestartCapability          = 0x00000080,
     kIOPMSleep                      = 0x00000001,
-    kIOPMRestart                    = 0x00000080
+    kIOPMRestart                    = 0x00000080,
+    kIOPMInitialDeviceState         = 0x00000100
 };
 
 /*
@@ -116,7 +120,6 @@ enum {
     kIOPMChildClamp2                = 0x0200,
     kIOPMNotPowerManaged            = 0x0800
 };
-
 
 /*
  * Deprecated IOPMPowerFlags
@@ -226,14 +229,23 @@ enum {
  *  false       == Deep Sleep is disabled
  *  not present == Deep Sleep is not supported on this hardware
  */
-#define kIOPMDeepSleepEnabledKey            "DeepSleep Enabled"
+#define kIOPMDeepSleepEnabledKey            "Standby Enabled"
 
 /* kIOPMDeepSleepDelayKey
  * Key refers to a CFNumberRef that represents the delay in seconds before
  * entering Deep Sleep state. The property is not present if Deep Sleep is
  * unsupported.
  */
-#define kIOPMDeepSleepDelayKey              "DeepSleep Delay"
+#define kIOPMDeepSleepDelayKey              "Standby Delay"
+
+/* kIOPMDestroyFVKeyOnStandbyKey
+ * Specifies if FileVault key can be stored when going to standby mode
+ * It has a boolean value,
+ *  true        == Destroy FV key when going to standby mode
+ *  false       == Retain FV key when going to standby mode
+ *  not present == Retain FV key when going to standby mode
+ */
+#define kIOPMDestroyFVKeyOnStandbyKey            "DestroyFVKeyOnStandby"
 
 /*******************************************************************************
  *
@@ -266,8 +278,16 @@ enum {
      */
     kIOPMDriverAssertionExternalMediaMountedBit     = 0x10,
 
+    /*! kIOPMDriverAssertionReservedBit5
+     * Reserved for Thunderbolt.
+     */
     kIOPMDriverAssertionReservedBit5                = 0x20,
-    kIOPMDriverAssertionReservedBit6                = 0x40,
+
+    /*! kIOPMDriverAssertionPreventDisplaySleepBit
+     * When set, the display should remain powered on while the system's awake.
+     */
+    kIOPMDriverAssertionPreventDisplaySleepBit      = 0x40,
+
     kIOPMDriverAssertionReservedBit7                = 0x80
 };
 
@@ -276,7 +296,7 @@ enum {
   * a bitfield describing the aggregate PM assertion levels.
   * Example: A value of 0 indicates that no driver has asserted anything.
   * Or, a value of <link>kIOPMDriverAssertionCPUBit</link>
-  *   indicates that a driver (or drivers) have asserted a need fro CPU and video.
+  *   indicates that a driver (or drivers) have asserted a need for CPU and video.
   */
 #define kIOPMAssertionsDriverKey            "DriverPMAssertions"
 
@@ -285,7 +305,7 @@ enum {
   * a bitfield describing the aggregate PM assertion levels.
   * Example: A value of 0 indicates that no driver has asserted anything.
   * Or, a value of <link>kIOPMDriverAssertionCPUBit</link>
-  *   indicates that a driver (or drivers) have asserted a need fro CPU and video.
+  *   indicates that a driver (or drivers) have asserted a need for CPU and video.
   */
 #define kIOPMAssertionsDriverDetailedKey    "DriverPMAssertionsDetailed"
 
@@ -491,6 +511,8 @@ enum {
 #define kIOPMPSCapacityEstimatedKey	                "CapacityEstimated"
 #define kIOPMPSBatteryChargeStatusKey               "ChargeStatus"
 #define kIOPMPSBatteryTemperatureKey                "Temperature"
+#define kIOPMPSAdapterDetailsKey		    "AdapterDetails"
+#define kIOPMPSChargerConfigurationKey		    "ChargerConfiguration"
 
 // kIOPMPSBatteryChargeStatusKey may have one of the following values, or may have
 // no value. If kIOPMBatteryChargeStatusKey has a NULL value (or no value) associated with it
@@ -498,6 +520,7 @@ enum {
 // then the charge may have been interrupted.
 #define kIOPMBatteryChargeStatusTooHot              "HighTemperature"
 #define kIOPMBatteryChargeStatusTooCold             "LowTemperature"
+#define kIOPMBatteryChargeStatusTooHotOrCold	    "HighOrLowTemperature"
 #define kIOPMBatteryChargeStatusGradient            "BatteryTemperatureGradient"
 
 // Definitions for battery location, in case of multiple batteries.
@@ -516,6 +539,16 @@ enum {
     kIOPMFairValue      = 2,
     kIOPMGoodValue      = 3
 };
+
+// Keys for kIOPMPSAdapterDetailsKey dictionary
+#define kIOPMPSAdapterDetailsIDKey		    "AdapterID"
+#define kIOPMPSAdapterDetailsWattsKey		    "Watts"
+#define kIOPMPSAdapterDetailsRevisionKey	    "AdapterRevision"
+#define kIOPMPSAdapterDetailsSerialNumberKey	    "SerialNumber"
+#define kIOPMPSAdapterDetailsFamilyKey		    "FamilyCode"
+#define kIOPMPSAdapterDetailsAmperageKey	    "Amperage"
+#define kIOPMPSAdapterDetailsDescriptionKey	    "Description"
+#define kIOPMPSAdapterDetailsPMUConfigurationKey    "PMUConfiguration"
 
 // Battery's time remaining estimate is invalid this long (seconds) after a wake
 #define kIOPMPSInvalidWakeSecondsKey           "BatteryInvalidWakeSeconds"

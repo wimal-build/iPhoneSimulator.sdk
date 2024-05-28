@@ -462,6 +462,7 @@ struct vfsioattr {
 };
 
 #define VFS_IOATTR_FLAGS_FUA	0x01	/* Write-through cache supported */
+#define VFS_IOATTR_FLAGS_UNMAP		0x02	/* Unmap (trim) supported */
 
 /*
  * Filesystem Registration information

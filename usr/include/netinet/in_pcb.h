@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -338,7 +338,6 @@ struct	xinpgen {
 #define	INP_PKTINFO		0x8000000 /* receive and send PKTINFO for IPv4 */
 
 #define	INP_NO_IFT_CELLULAR	0x20000000 /* do not use IFT_CELLULAR route */
-
 
 
 #endif /* !_NETINET_IN_PCB_H_ */

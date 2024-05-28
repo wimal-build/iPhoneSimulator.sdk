@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2009 Apple Inc. All rights reserved.
+ * Copyright (c) 2008-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_APACHE_LICENSE_HEADER_START@
  * 
@@ -284,11 +284,11 @@ __BEGIN_DECLS
  * this argument is determined by the constant provided in the type parameter.
  * @param queue
  * The dispatch queue to which the event handler block will be submitted.
- * If queue is NULL, the source will submit the event handler block to the
- * default priority global queue.
+ * If queue is DISPATCH_TARGET_QUEUE_DEFAULT, the source will submit the event
+ * handler block to the default priority global queue.
  */
 __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
-DISPATCH_EXPORT DISPATCH_MALLOC DISPATCH_NOTHROW
+DISPATCH_EXPORT DISPATCH_MALLOC DISPATCH_WARN_RESULT DISPATCH_NOTHROW
 dispatch_source_t
 dispatch_source_create(dispatch_source_type_t type,
 	uintptr_t handle,
@@ -438,7 +438,7 @@ dispatch_source_cancel(dispatch_source_t source);
  * Non-zero if canceled and zero if not canceled.
  */
 __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
-DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_WARN_RESULT DISPATCH_PURE DISPATCH_NOTHROW
 long
 dispatch_source_testcancel(dispatch_source_t source);
 

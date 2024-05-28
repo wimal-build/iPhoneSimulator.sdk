@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
 
-body { 
+body {
 	font-family: 'Hiragino Mincho ProN';
 	font-weight:normal;
-//	font-size: 100%;
-//	margin-left: 0em;
+	/*
+	font-size: 100%;
+	margin-left: 0em;
+	*/
 	margin-right: 1em;
 	margin-top: 0.4em;
 	margin-bottom: 10px;
@@ -82,7 +84,9 @@ span.no-katsuyou:before {
 
 
 *.entry {
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-weight:normal;
 	font-size: 100%;
 	display: block;
@@ -126,7 +130,8 @@ span.rekishi {
 span.meaning {
 	display: block;
 	margin-left: 0em;
-	margin-bottom: 0.１em;
+	margin-bottom: 0.1em;
+	text-align: justify;
 }
 
 span.meaning[type="head"] {
@@ -158,6 +163,12 @@ span.meaning[type="補説"],span.meaning[type="類語例解"],span.meaning[type=
 	font-size:80%;
 }
 
+span.meaning table.meaningtbl {
+	margin-left: 0px;
+	text-indent: 0em;
+}
+
+
 span.example {
 	display: block;
 	margin-left: 2em;
@@ -176,7 +187,9 @@ span.sn {
 	font-weight:bold;
 	line-height: 0;
 	position: relative;
-	top: 1.3em;
+	top: 0.9em;
+	text-align: right;
+	width:1.1em;
 }
 
 span.hatsuon {
@@ -271,4 +284,97 @@ span.shogakukan_gaiji {
 	font-family: 'ShogakukanDictionaries';
 	font-weight:normal;
 	font-style:normal;
+}
+
+span.shogakukan_gaiji_roman {
+	font-family: 'ShogakukanDictionaries';
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+span.yosuji {
+	display: inline;
+}
+
+span.kansuji {
+	display: none;
+}
+
+/*
+	============================
+	Lookup -- Common part
+*/
+html.apple_client-panel {
+	background-color: transparent;
+}
+html.apple_client-panel body {
+	/*font-family:'Baskerville';*/
+	font-size: 14px;
+	
+	margin-top: 0px;
+	margin-left: 1em;
+	margin-bottom: 0px;
+	margin-right: 1em;
+	
+	color: #111111;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	line-height: 18px;
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+html.apple_client-panel a,
+html.apple_client-panel a:link,
+html.apple_client-panel a:visited,
+html.apple_client-panel a:hover,
+html.apple_client-panel a:active
+{
+	color: #000000;
+	text-decoration: none;
+}
+html.apple_client-panel div.lineart {
+	display: none;
+}
+html.apple_client-panel img {
+	display: none;
+}
+
+/*
+	============================
+	Lookup -- Shogakukan specific
+*/
+
+html.apple_client-panel span.headword, 
+html.apple_client-panel span.hyouki
+{
+	font-size: 100%;
+	color: #777777;
+}
+html.apple_client-panel span.rekishi
+{
+	font-weight: bold;
+	font-size: 80%;
+	color: #909090;
+	vertical-align: 5%;
+}
+
+html.apple_client-panel span.hinshi
+{
+	font-size: 90%;
+}
+
+html.apple_client-panel span.meaning[type="head"]
+{
+	margin-top: 0.5em;
+}
+
+html.apple_client-panel span.meaning, 
+html.apple_client-panel span.subheadword, 
+html.apple_client-panel span.example
+{
+	display: block;
+	padding-bottom: 2px;
+	padding-left: 1em;
+	text-indent: -1em;
 }

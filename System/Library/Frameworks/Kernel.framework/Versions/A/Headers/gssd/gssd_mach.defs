@@ -53,64 +53,64 @@ routine mach_gss_init_sec_context(
 	server			: mach_port_t;
 	in  mech		: gssd_mechtype;
 	in  intoken		: gssd_byte_buffer;
-	in  uid		: uint32_t;
+	in  uid			: uint32_t;
 	in  princ_namestr	: gssd_string;
-	in  svc_namestr	: gssd_string;
+	in  svc_namestr		: gssd_string;
 	in  flags		: uint32_t;
-	in  gssd_flags	: uint32_t;
+	in  gssd_flags		: uint32_t;
 	inout context		: gssd_ctx;
 	inout cred_handle	: gssd_cred;
-	out  ret_flags	: uint32_t;
+	out  ret_flags		: uint32_t;
 	out  key		: gssd_byte_buffer, dealloc;
 	out outtoken		: gssd_byte_buffer, dealloc;
-	out major_stat	: uint32_t;
-	out minor_stat	: uint32_t
+	out major_stat		: uint32_t;
+	out minor_stat		: uint32_t
 );
 
 routine mach_gss_accept_sec_context(
 	server			: mach_port_t;
 	in  intoken		: gssd_byte_buffer;
-	in  svc_namestr	: gssd_string;
-	in  gssd_flags	: uint32_t;
+	in  svc_namestr		: gssd_string;
+	in  gssd_flags		: uint32_t;
 	inout context		: gssd_ctx;
 	inout cred_handle	: gssd_cred;
 	out flags		: uint32_t;
-	out uid		: uint32_t;
+	out uid			: uint32_t;
 	out gids		: gssd_gid_list;
-	out key		: gssd_byte_buffer, dealloc;
+	out key			: gssd_byte_buffer, dealloc;
 	out outtoken		: gssd_byte_buffer, dealloc;
-	out major_stat	: uint32_t;
-	out minor_stat	: uint32_t
+	out major_stat		: uint32_t;
+	out minor_stat		: uint32_t
 );
 
 simpleroutine mach_gss_log_error(
 	server			: mach_port_t;
-	in  mnt		: gssd_string;
-	in  uid		: uint32_t;
+	in  mnt			: gssd_string;
+	in  uid			: uint32_t;
 	in  source		: gssd_string;
-	in  major_stat	: uint32_t;
-	in  minor_stat	: uint32_t
+	in  major_stat		: uint32_t;
+	in  minor_stat		: uint32_t
 );
 
 routine mach_gss_init_sec_context_v2(
 	server			: mach_port_t;
 	in  mech		: gssd_mechtype;
 	in  intoken		: gssd_byte_buffer;
-	in  uid		: uint32_t;
+	in  uid			: uint32_t;
 	in  clnt_nt		: gssd_nametype;
-	in  clnt_princ	: gssd_byte_buffer;
+	in  clnt_princ		: gssd_byte_buffer;
 	in  svc_nt		: gssd_nametype;
 	in  svc_princ		: gssd_byte_buffer;
 	in  flags		: uint32_t;
 	inout gssd_flags	: uint32_t;
 	inout context		: gssd_ctx;
 	inout cred_handle	: gssd_cred;
-	out  ret_flags	: uint32_t;
+	out  ret_flags		: uint32_t;
 	out  key		: gssd_byte_buffer, dealloc;
 	out outtoken		: gssd_byte_buffer, dealloc;
-	out displayname	: gssd_dstring; 
-	out major_stat	: uint32_t;
-	out minor_stat	: uint32_t
+	out displayname		: gssd_dstring;
+	out major_stat		: uint32_t;
+	out minor_stat		: uint32_t
 );
 
 routine mach_gss_accept_sec_context_v2(
@@ -122,10 +122,28 @@ routine mach_gss_accept_sec_context_v2(
 	inout context		: gssd_ctx;
 	inout cred_handle	: gssd_cred;
 	out flags		: uint32_t;
-	out uid		: uint32_t;
+	out uid			: uint32_t;
 	out gids		: gssd_gid_list;
-	out key		: gssd_byte_buffer, dealloc;
+	out key			: gssd_byte_buffer, dealloc;
 	out outtoken		: gssd_byte_buffer, dealloc;
-	out major_stat	: uint32_t;
-	out minor_stat	: uint32_t
+	out major_stat		: uint32_t;
+	out minor_stat		: uint32_t
+);
+
+routine mach_gss_hold_cred(
+	server			: mach_port_t;
+	in  mech		: gssd_mechtype;
+	in  nt			: gssd_nametype;
+	in  princ		: gssd_byte_buffer;
+	out major_stat		: uint32_t;
+	out minor_stat		: uint32_t
+);
+
+routine mach_gss_unhold_cred(
+	server			: mach_port_t;
+	in  mech		: gssd_mechtype;
+	in  nt			: gssd_nametype;
+	in  princ		: gssd_byte_buffer;
+	out major_stat		: uint32_t;
+	out minor_stat		: uint32_t
 );

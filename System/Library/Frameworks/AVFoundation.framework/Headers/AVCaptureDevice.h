@@ -24,7 +24,7 @@
  @discussion
 	The notification object is an AVCaptureDevice instance representing the device that became available.
 */
-extern NSString *const AVCaptureDeviceWasConnectedNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureDeviceWasConnectedNotification NS_AVAILABLE(10_7, 4_0);
 
 /*!
  @constant  AVCaptureDeviceWasDisconnectedNotification
@@ -34,7 +34,21 @@ extern NSString *const AVCaptureDeviceWasConnectedNotification NS_AVAILABLE(10_7
  @discussion
 	The notification object is an AVCaptureDevice instance representing the device that became unavailable.
 */
-extern NSString *const AVCaptureDeviceWasDisconnectedNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureDeviceWasDisconnectedNotification NS_AVAILABLE(10_7, 4_0);
+
+/*!
+ @constant  AVCaptureDeviceSubjectAreaDidChangeNotification
+ @abstract
+	Posted when the instance of AVCaptureDevice has detected a substantial change
+	to the video subject area.
+ 
+ @discussion
+	Clients may observe the AVCaptureDeviceSubjectAreaDidChangeNotification to know
+	when an instance of AVCaptureDevice has detected a substantial change
+	to the video subject area.  This notification is only sent if you first set
+	subjectAreaChangeMonitoringEnabled to YES.
+ */
+AVF_EXPORT NSString *const AVCaptureDeviceSubjectAreaDidChangeNotification NS_AVAILABLE_IOS(5_0);
 
 @class AVCaptureDeviceInternal;
 
@@ -282,7 +296,7 @@ typedef NSInteger AVCaptureDevicePosition;
 	Indicates that the flash should always be off.
  @constant AVCaptureFlashModeOn
 	Indicates that the flash should always be on.
- @constant AVCaptureFlashModeOn
+ @constant AVCaptureFlashModeAuto
 	Indicates that the flash should be used automatically depending on ambient light conditions.
 */
 enum {
@@ -304,6 +318,30 @@ typedef NSInteger AVCaptureFlashMode;
 	can only be set when this property returns YES.
 */
 @property(nonatomic, readonly) BOOL hasFlash;
+
+/*!
+ @property flashAvailable
+ @abstract
+ Indicates whether the receiver's flash is currently available for use.
+ 
+ @discussion
+ The value of this property is a BOOL indicating whether the receiver's flash is 
+ currently available. The flash may become unavailable if, for example, the device
+ overheats and needs to cool off. This property is key-value observable.
+ */
+@property(nonatomic, readonly, getter=isFlashAvailable) BOOL flashAvailable NS_AVAILABLE_IOS(5_0);
+
+/*!
+ @property flashActive
+ @abstract
+ Indicates whether the receiver's flash is currently active.
+ 
+ @discussion
+ The value of this property is a BOOL indicating whether the receiver's flash is 
+ currently active. When the flash is active, it will flash if a still image is
+ captured. This property is key-value observable.
+ */
+@property(nonatomic, readonly, getter=isFlashActive) BOOL flashActive NS_AVAILABLE_IOS(5_0);
 
 /*!
  @method isFlashModeSupported:
@@ -367,6 +405,29 @@ typedef NSInteger AVCaptureTorchMode;
 	can only be set when this property returns YES.
 */
 @property(nonatomic, readonly) BOOL hasTorch;
+
+/*!
+ @property torchAvailable
+ @abstract
+ Indicates whether the receiver's torch is currently available for use.
+ 
+ @discussion
+ The value of this property is a BOOL indicating whether the receiver's torch is 
+ currently available. The torch may become unavailable if, for example, the device
+ overheats and needs to cool off. This property is key-value observable.
+ */
+@property(nonatomic, readonly, getter=isTorchAvailable) BOOL torchAvailable NS_AVAILABLE_IOS(5_0);
+
+/*!
+ @property torchLevel
+ @abstract
+ Indicates the receiver's current torch brightness level as a floating point value.
+ 
+ @discussion
+ The value of this property is a float indicating the receiver's torch level 
+ from 0.0 (off) -> 1.0 (full). This property is key-value observable.
+ */
+@property(nonatomic, readonly) float torchLevel NS_AVAILABLE_IOS(5_0);
 
 /*!
  @method isTorchModeSupported:
@@ -647,5 +708,26 @@ typedef NSInteger AVCaptureWhiteBalanceMode;
 	whether the camera white balance is stable or is being automatically adjusted.
 */
 @property(nonatomic, readonly, getter=isAdjustingWhiteBalance) BOOL adjustingWhiteBalance;
+
+@end
+
+@interface AVCaptureDevice (AVCaptureDeviceSubjectAreaChangeMonitoring)
+
+/*!
+ @property subjectAreaChangeMonitoringEnabled
+ @abstract
+	Indicates whether the receiver should monitor the subject area for changes.
+ 
+ @discussion
+	The value of this property is a BOOL indicating whether the receiver should
+	monitor the video subject area for changes, such as lighting changes, substantial
+	movement, etc.  If subject area change monitoring is enabled, the receiver
+	sends an AVCaptureDeviceSubjectAreaDidChangeNotification whenever it detects
+	a change to the subject area, at which time an interested client may wish
+	to re-focus, adjust exposure, white balance, etc.  The receiver must be locked 
+	for configuration using lockForConfiguration: before clients can set
+	the value of this property.
+ */
+@property(nonatomic, getter=isSubjectAreaChangeMonitoringEnabled) BOOL subjectAreaChangeMonitoringEnabled NS_AVAILABLE_IOS(5_0);
 
 @end

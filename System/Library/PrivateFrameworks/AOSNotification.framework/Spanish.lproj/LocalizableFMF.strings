@@ -1,0 +1,27 @@
+/* 
+   Localizable.strings
+   AOSNotification
+   iOS Version
+
+   Created by Stu Slack.
+   Copyright 2011 Apple, Inc. All rights reserved.
+ */
+
+
+/*
+ * Find My Friends Auth Dialog Strings
+ * This dialog is presented when the server returns an authentication failure back from
+ * a request to the fmip servers for the FMF service.
+ */
+
+/* Message Title when the auth credentials are bad */
+"FMFAuthMessageTitleKey" = "Imposible acceder a “Buscar a mis amigos”";
+
+/* Message Text */
+"FMFAuthMessageTextKey" = "Abra la aplicación y revise sus datos de inicio de sesión para continuar compartiendo su ubicación.";
+
+/* Settings Message Button */
+"FMFAuthMessageGotoSettingsKey" = "Abrir";
+
+/* Ignore Message Button */
+"FMFAuthMessageIgnoreKey" = "Más tarde";

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CameraShutterAlwaysHeard</key>
+	<real>0</real>
+	<key>BeginVideoRecordingAlwaysHeard</key>
+	<real>0</real>
+	<key>Default</key>
+	<real>1</real>
+	<key>MailReceived</key>
+	<real>0.1</real>
+	<key>SMSReceived_Alert</key>
+	<real>0.1</real>
+	<key>CalendarAlert</key>
+	<real>0.1</real>
+	<key>ReminderAlert</key>
+	<real>0.1</real>
+	<key>VoicemailReceived</key>
+	<real>0.1</real>
+	<key>SystemSoundPreview</key>
+	<real>0.1</real>
+	<key>KeyPressClickPreview</key>
+	<real>0.1</real>
+	<key>ShakeToShuffle</key>
+	<real>0.1</real>
+	<key>UserAlert</key>
+	<real>0.1</real>
+</dict>
+</plist>

@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
 
-body { 
+body {
 	font-family: 'Hiragino Mincho ProN';
 	font-weight:normal;
-//	font-size:100%;
-//	margin-left: 0em;
+	/*
+	font-size:100%;
+	margin-left: 0em;
+	*/
 	line-height:1.33em;
 	margin-right: 1em;
 	margin-top: 0.4em;
@@ -48,7 +50,9 @@ td {
 }
 
 *.spej_entry, *.spje_entry {
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-weight:normal;
 	font-size:100%;
 	display: block;
@@ -61,10 +65,13 @@ td {
 	elements in head line
 ****************************************/
 *.spej_entry span.headword {
-//	font-family: 'Baskerville';
+	/*
+	font-family: 'Baskerville';
+	*/
 	font-family: 'Hiragino Mincho ProN';
 	font-weight:normal;
 	font-size:150%;
+	line-height:1.5;
 	margin-bottom: 0.2em;
 }
 
@@ -81,21 +88,28 @@ span.別見The {
 }
 
 span.発音 {
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-weight:normal;
 	font-size:100%;
 	margin-left: 0.5em;
 }
 
 *.spje_entry span.headword {
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-weight:bold;
 	font-size:150%;
+	line-height:1.5;
 	margin-bottom: 0.2em;
 }
 
 span.表記 {
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-weight:normal;
 	font-size:120%;
 	vertical-align:10%;
@@ -142,14 +156,18 @@ span.meaning, span.meaning[level="4"] {
 *.spje_entry span.meaning[level="1"] {
 	margin-left: 0em; 
 	margin-top: 0.5em;
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-size:100%;
 }
 
 *.spje_entry span.meaning[level="2"] {
 	margin-left: 0.2em; 
 	margin-top: 0.5em;
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-size:100%;
 }
 
@@ -185,12 +203,15 @@ span.meaning[type="別品詞"] {
 }
 
 *.spej_entry span.subheadword {
-//	display: block;
+	/*
+	display: block;
+	*/
 	display: inline;
 	font-family: 'Baskerville';
 	font-style:italic;
 	font-weight:bold;
 	font-size:120%;
+	line-height:1.4;
 	margin-top: 0.5em;
 	margin-left: 0.5em;
 }
@@ -213,7 +234,9 @@ span.meaning[type="別品詞"] {
 
 *.spje_entry span.subheadword {
 	display: block;
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	margin-top: 0.5em;
 	margin-left: 0.5em;
 }
@@ -331,7 +354,9 @@ span[class="・"]:before	{
 	content:'•'; 
 	font-family: 'Baskerville';font-weight:normal;
 	font-size:80%;
-//	vertical-align:-9%;
+	/*
+	vertical-align:-9%;
+	*/
 }
 
 /*
@@ -385,4 +410,87 @@ span.shogakukan_gaiji {
 	font-family: 'ShogakukanDictionaries';
 	font-weight:normal;
 	font-style:normal;
+}
+
+/*
+	============================
+	Lookup -- Common part
+*/
+html.apple_client-panel {
+	background-color: transparent;
+}
+html.apple_client-panel body {
+	/*font-family:'Baskerville';*/
+	font-size: 14px;
+	
+	margin-top: 0px;
+	margin-left: 1em;
+	margin-bottom: 0px;
+	margin-right: 1em;
+	
+	color: #111111;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	line-height: 18px;
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+html.apple_client-panel a,
+html.apple_client-panel a:link,
+html.apple_client-panel a:visited,
+html.apple_client-panel a:hover,
+html.apple_client-panel a:active
+{
+	color: #000000;
+	text-decoration: none;
+}
+html.apple_client-panel div.lineart {
+	display: none;
+}
+html.apple_client-panel img {
+	display: none;
+}
+
+/*
+	============================
+	Lookup -- Shogakukan specific
+*/
+
+html.apple_client-panel span.headword, 
+html.apple_client-panel span.hyouki, 
+html.apple_client-panel span.表記 
+{
+	font-size: 100%;
+	color: #777777;
+}
+
+html.apple_client-panel span.発音 , 
+html.apple_client-panel span.hatsuon
+{
+	font-size: 90%;
+	color: #777777;
+}
+html.apple_client-panel span.hinshi
+{
+	font-size: 90%;
+	vertical-align: 7%;
+}
+
+html.apple_client-panel *.spej_entry span.meaning[level="0"], 
+html.apple_client-panel *.spej_entry span.meaning[level="1"], 
+html.apple_client-panel *.spej_entry span.meaning[level="2"]
+{
+	font-size: 100%;
+}
+
+
+
+html.apple_client-panel span.meaning,
+html.apple_client-panel span.subheadword,
+html.apple_client-panel span.example
+{
+	display: block;
+	padding-left: 1em;
+	padding-bottom: 2px;
+	text-indent: -1em;
 }

@@ -115,6 +115,16 @@ struct vnode;
 typedef struct ucred *kauth_cred_t;
 #endif	/* !_KAUTH_CRED_T */
 
+#ifndef __IOKIT_PORTS_DEFINED__
+#define __IOKIT_PORTS_DEFINED__
+#ifdef __cplusplus
+class OSObject;
+typedef OSObject *io_object_t;
+#else
+struct OSObject;
+typedef struct OSObject *io_object_t;
+#endif
+#endif /* __IOKIT_PORTS_DEFINED__ */
 
 /*-
  * MAC entry points are generally named using the following template:
@@ -1203,7 +1213,7 @@ typedef int mpo_iokit_check_device_t(
   @brief Access control check for opening an I/O Kit device
   @param cred Subject credential
   @param device_path Device path
-  @param user_client_class User client class
+  @param user_client User client instance
   @param user_client_type User client type
 
   Determine whether the subject identified by the credential can open an
@@ -1215,27 +1225,39 @@ typedef int mpo_iokit_check_device_t(
 */
 typedef int mpo_iokit_check_open_t(
 	kauth_cred_t cred,
-	const char *device_path,
-	const char *user_client_class,
+	io_object_t user_client,
 	unsigned int user_client_type
 );
 /**
   @brief Access control check for setting I/O Kit device properties
   @param cred Subject credential
-  @param device_path Device path
-  @param device_inheritance NULL-terminated array of device classes
+  @param registry_entry Target device
+  @param properties Property list
 
   Determine whether the subject identified by the credential can set
-  properties on an I/O Kit device at the passed path inheriting from
-  the passed list of classes.
+  properties on an I/O Kit device.
 
   @return Return 0 if access is granted, or an appropriate value for
   errno should be returned.
 */
 typedef int mpo_iokit_check_set_properties_t(
 	kauth_cred_t cred,
-	const char *device_path,
-	const char *const *device_inheritance
+	io_object_t entry,
+	io_object_t properties
+);
+/**
+  @brief Access control check for software HID control
+  @param cred Subject credential
+
+  Determine whether the subject identified by the credential can
+  control the HID (Human Interface Device) subsystem, such as to
+  post synthetic keypresses, pointer movement and clicks.
+
+  @return Return 0 if access is granted, or an appropriate value for
+  errno.
+*/
+typedef int mpo_iokit_check_hid_control_t(
+	kauth_cred_t cred
 );
 /**
   @brief Create an IP reassembly queue label
@@ -3100,6 +3122,25 @@ typedef int mpo_proc_check_getlcid_t(
 	struct proc *p0,
 	struct proc *p,
 	pid_t pid
+);
+/**
+  @brief Access control check for retrieving ledger information
+  @param cred Subject credential
+  @param target Object process
+  @param op ledger operation
+
+  Determine if ledger(2) system call is permitted.
+
+  Information returned by this system call is similar to that returned via
+  process listings etc.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.
+*/
+typedef int mpo_proc_check_ledger_t(
+	kauth_cred_t cred,
+	struct proc *target,
+	int op
 );
 /**
   @brief Access control check for mmap MAP_ANON
@@ -5917,6 +5958,26 @@ typedef int mpo_vnode_notify_create_t(
 	struct componentname *cnp
 );
 
+/**
+  @brief Inform MAC policies that a vnode has been renamed
+  @param cred User credential for the renaming process
+  @param vp Vnode that's being renamed
+  @param label Policy label for vp
+  @param dvp Parent directory for the destination
+  @param dlabel Policy label for dvp
+  @param cnp Component name for the destination
+
+  Inform MAC policies that a vnode has been renamed.
+ */
+typedef void mpo_vnode_notify_rename_t(
+	kauth_cred_t cred,
+	struct vnode *vp,
+	struct label *label,
+	struct vnode *dvp,
+	struct label *dlabel,
+	struct componentname *cnp
+);
+
 /*
  * Placeholder for future events that may need mac hooks.
  */
@@ -5925,7 +5986,7 @@ typedef void mpo_reserved_hook_t(void);
 /*!
   \struct mac_policy_ops
 */
-#define MAC_POLICY_OPS_VERSION 8 /* inc when new reserved slots are taken */
+#define MAC_POLICY_OPS_VERSION 12 /* inc when new reserved slots are taken */
 struct mac_policy_ops {
 	mpo_audit_check_postselect_t		*mpo_audit_check_postselect;
 	mpo_audit_check_preselect_t		*mpo_audit_check_preselect;
@@ -6178,7 +6239,7 @@ struct mac_policy_ops {
 	mpo_task_label_init_t			*mpo_task_label_init;
 	mpo_task_label_internalize_t		*mpo_task_label_internalize;
 	mpo_task_label_update_t			*mpo_task_label_update;
-	mpo_reserved_hook_t			*mpo_reserved30;      /* was mpo_thread_userret */
+	mpo_iokit_check_hid_control_t	*mpo_iokit_check_hid_control;
 	mpo_vnode_check_access_t		*mpo_vnode_check_access;
 	mpo_vnode_check_chdir_t			*mpo_vnode_check_chdir;
 	mpo_vnode_check_chroot_t		*mpo_vnode_check_chroot;
@@ -6236,7 +6297,7 @@ struct mac_policy_ops {
 	mpo_vnode_check_uipc_connect_t		*mpo_vnode_check_uipc_connect;
 	mac_proc_check_run_cs_invalid_t		*mpo_proc_check_run_cs_invalid;
 	mpo_proc_check_suspend_resume_t		*mpo_proc_check_suspend_resume;
-	mpo_iokit_check_open_t			*mpo_iokit_check_open;
+	mpo_reserved_hook_t			*mpo_reserved12;
 	mpo_iokit_check_set_properties_t	*mpo_iokit_check_set_properties;
 	mpo_system_check_chud_t			*mpo_system_check_chud;
 	mpo_vnode_check_searchfs_t		*mpo_vnode_check_searchfs;
@@ -6244,9 +6305,9 @@ struct mac_policy_ops {
 	mpo_priv_grant_t			*mpo_priv_grant;
 	mpo_proc_check_map_anon_t		*mpo_proc_check_map_anon;
 	mpo_vnode_check_fsgetpath_t		*mpo_vnode_check_fsgetpath;
-	mpo_reserved_hook_t			*mpo_reserved12;
-	mpo_reserved_hook_t			*mpo_reserved13;
-	mpo_reserved_hook_t			*mpo_reserved14;
+	mpo_iokit_check_open_t			*mpo_iokit_check_open;
+ 	mpo_proc_check_ledger_t			*mpo_proc_check_ledger;
+	mpo_vnode_notify_rename_t		*mpo_vnode_notify_rename;
 	mpo_reserved_hook_t			*mpo_reserved15;
 	mpo_reserved_hook_t			*mpo_reserved16;
 	mpo_reserved_hook_t			*mpo_reserved17;

@@ -77,7 +77,7 @@
  */
 
 #ifndef _DNS_SD_H
-#define _DNS_SD_H 2900300
+#define _DNS_SD_H 3290600
 
 #ifdef  __cplusplus
     extern "C" {
@@ -351,7 +351,7 @@ enum
 	 * "hostname".
 	 */
 
-    kDNSServiceFlagsTimeout            = 0x10000
+    kDNSServiceFlagsTimeout            = 0x10000,
 	/*
 	 * When kDNServiceFlagsTimeout is passed to DNSServiceQueryRecord or DNSServiceGetAddrInfo, the query is
 	 * stopped after a certain number of seconds have elapsed. The time at which the query will be stopped
@@ -359,6 +359,17 @@ enum
 	 * of whether a response was given earlier or not. When the query is stopped, the callback will be called
 	 * with an error code of kDNSServiceErr_Timeout and a NULL sockaddr will be returned for DNSServiceGetAddrInfo
 	 * and zero length rdata will be returned for DNSServiceQueryRecord.
+	 */
+
+    kDNSServiceFlagsIncludeP2P          = 0x20000,
+	/*
+	 * Include P2P interfaces when kDNSServiceInterfaceIndexAny is specified.
+	 * By default, specifying kDNSServiceInterfaceIndexAny does not include P2P interfaces.
+	 */
+	kDNSServiceFlagsWakeOnResolve      = 0x40000
+	/*
+	 * This flag is meaningful only in DNSServiceResolve. When set, it tries to send a magic packet
+	 * to wake up the client.
 	 */
     };
 
@@ -609,10 +620,10 @@ enum
  *   interface via which the service can be accessed.
  *
  * If applications pass kDNSServiceInterfaceIndexAny to DNSServiceBrowse
- * or DNSServiceQueryRecord, the operation will also include P2P. In this
- * case, if a service instance or the record being queried is found over P2P,
- * the resulting ADD event will indicate kDNSServiceInterfaceIndexP2P as the
- * interface index.
+ * or DNSServiceQueryRecord, they must set the kDNSServiceFlagsIncludeP2P flag
+ * to include P2P. In this case, if a service instance or the record being queried 
+ * is found over P2P, the resulting ADD event will indicate kDNSServiceInterfaceIndexP2P 
+ * as the interface index.
  */
 
 #define kDNSServiceInterfaceIndexAny 0

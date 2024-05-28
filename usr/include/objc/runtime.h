@@ -82,9 +82,11 @@ typedef struct {
 /* Functions */
 
 OBJC_EXPORT id object_copy(id obj, size_t size)
-    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+    OBJC_ARC_UNAVAILABLE;
 OBJC_EXPORT id object_dispose(id obj)
-    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+    OBJC_ARC_UNAVAILABLE;
 
 OBJC_EXPORT Class object_getClass(id obj) 
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
@@ -94,7 +96,8 @@ OBJC_EXPORT Class object_setClass(id obj, Class cls)
 OBJC_EXPORT const char *object_getClassName(id obj)
     __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
 OBJC_EXPORT void *object_getIndexedIvars(id obj)
-    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+    OBJC_ARC_UNAVAILABLE;
 
 OBJC_EXPORT id object_getIvar(id obj, Ivar ivar) 
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
@@ -102,9 +105,11 @@ OBJC_EXPORT void object_setIvar(id obj, Ivar ivar, id value)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 
 OBJC_EXPORT Ivar object_setInstanceVariable(id obj, const char *name, void *value)
-    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+    OBJC_ARC_UNAVAILABLE;
 OBJC_EXPORT Ivar object_getInstanceVariable(id obj, const char *name, void **outValue)
-    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+    OBJC_ARC_UNAVAILABLE;
 
 OBJC_EXPORT id objc_getClass(const char *name)
     __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
@@ -125,7 +130,7 @@ OBJC_EXPORT Class *objc_copyClassList(unsigned int *outCount)
 
 OBJC_EXPORT Protocol *objc_getProtocol(const char *name)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
-OBJC_EXPORT Protocol **objc_copyProtocolList(unsigned int *outCount)
+OBJC_EXPORT Protocol * __unsafe_unretained *objc_copyProtocolList(unsigned int *outCount)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 
 OBJC_EXPORT const char *class_getName(Class cls) 
@@ -167,7 +172,7 @@ OBJC_EXPORT Method *class_copyMethodList(Class cls, unsigned int *outCount)
 
 OBJC_EXPORT BOOL class_conformsToProtocol(Class cls, Protocol *protocol) 
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
-OBJC_EXPORT Protocol **class_copyProtocolList(Class cls, unsigned int *outCount)
+OBJC_EXPORT Protocol * __unsafe_unretained *class_copyProtocolList(Class cls, unsigned int *outCount)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 
 OBJC_EXPORT objc_property_t class_getProperty(Class cls, const char *name)
@@ -181,7 +186,14 @@ OBJC_EXPORT const uint8_t *class_getWeakIvarLayout(Class cls)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 
 OBJC_EXPORT id class_createInstance(Class cls, size_t extraBytes)
-    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+    OBJC_ARC_UNAVAILABLE;
+OBJC_EXPORT id objc_constructInstance(Class cls, void *bytes) 
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_0)
+    OBJC_ARC_UNAVAILABLE;
+OBJC_EXPORT void *objc_destructInstance(id obj) 
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_0)
+    OBJC_ARC_UNAVAILABLE;
 
 OBJC_EXPORT Class objc_allocateClassPair(Class superclass, const char *name, 
                                          size_t extraBytes) 
@@ -271,7 +283,7 @@ OBJC_EXPORT objc_property_t protocol_getProperty(Protocol *proto, const char *na
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 OBJC_EXPORT objc_property_t *protocol_copyPropertyList(Protocol *proto, unsigned int *outCount)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
-OBJC_EXPORT Protocol **protocol_copyProtocolList(Protocol *proto, unsigned int *outCount)
+OBJC_EXPORT Protocol * __unsafe_unretained *protocol_copyProtocolList(Protocol *proto, unsigned int *outCount)
      __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 
 OBJC_EXPORT Protocol *objc_allocateProtocol(const char *name) 
@@ -336,6 +348,15 @@ OBJC_EXPORT id objc_getAssociatedObject(id object, const void *key)
     __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_1);
 OBJC_EXPORT void objc_removeAssociatedObjects(id object)
     __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_1);
+
+
+// API to be called by clients of objects
+
+OBJC_EXPORT id objc_loadWeak(id *location)
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_5_0);
+// returns value stored (either obj or NULL)
+OBJC_EXPORT id objc_storeWeak(id *location, id obj) 
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_5_0);
 
 
 #define _C_ID       '@'
@@ -526,7 +547,9 @@ OBJC_EXPORT BOOL class_respondsToMethod(Class cls, SEL sel)
 OBJC_EXPORT void _objc_flush_caches(Class cls) 
     __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5, __IPHONE_2_0,__IPHONE_2_0);
 
-OBJC_EXPORT id object_copyFromZone(id anObject, size_t nBytes, void *z) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5, __IPHONE_NA,__IPHONE_NA);
+OBJC_EXPORT id object_copyFromZone(id anObject, size_t nBytes, void *z) 
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5, __IPHONE_NA,__IPHONE_NA)
+    OBJC_ARC_UNAVAILABLE;
 OBJC_EXPORT id object_realloc(id anObject, size_t nBytes)    OBJC2_UNAVAILABLE;
 OBJC_EXPORT id object_reallocFromZone(id anObject, size_t nBytes, void *z) OBJC2_UNAVAILABLE;
 
@@ -536,7 +559,9 @@ OBJC_EXPORT void objc_addClass(Class myClass)                OBJC2_UNAVAILABLE;
 OBJC_EXPORT void objc_setClassHandler(int (*)(const char *)) OBJC2_UNAVAILABLE;
 OBJC_EXPORT void objc_setMultithreaded (BOOL flag)           OBJC2_UNAVAILABLE;
 
-OBJC_EXPORT id class_createInstanceFromZone(Class, size_t idxIvars, void *z)  __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5, __IPHONE_NA,__IPHONE_NA);
+OBJC_EXPORT id class_createInstanceFromZone(Class, size_t idxIvars, void *z)  
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5, __IPHONE_NA,__IPHONE_NA)
+    OBJC_ARC_UNAVAILABLE;
 
 OBJC_EXPORT void class_addMethods(Class, struct objc_method_list *) OBJC2_UNAVAILABLE;
 OBJC_EXPORT void class_removeMethods(Class, struct objc_method_list *) OBJC2_UNAVAILABLE;

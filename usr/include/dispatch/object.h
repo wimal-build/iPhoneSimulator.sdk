@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2009 Apple Inc. All rights reserved.
+ * Copyright (c) 2008-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_APACHE_LICENSE_HEADER_START@
  * 
@@ -33,6 +33,13 @@ __BEGIN_DECLS
  *
  * @abstract
  * Programmatically log debug information about a dispatch object.
+ *
+ * @discussion
+ * Programmatically log debug information about a dispatch object. By default,
+ * the log output is sent to syslog at notice level. In the debug version of
+ * the library, the log output is sent to a file in /var/tmp.
+ * The log output destination can be configured via the LIBDISPATCH_LOG
+ * environment variable, valid values are: YES, NO, syslog, stderr, file.
  *
  * @param object
  * The object to introspect.

@@ -447,6 +447,7 @@ struct kauth_acl_eval {
 	int			ae_options;
 #define KAUTH_AEVAL_IS_OWNER	(1<<0)		/* authorizing operation for owner */
 #define KAUTH_AEVAL_IN_GROUP	(1<<1)		/* authorizing operation for groupmember */
+#define KAUTH_AEVAL_IN_GROUP_UNKNOWN	(1<<2)		/* authorizing operation for unknown group membership */
 	/* expansions for 'generic' rights bits */
 	kauth_ace_rights_t	ae_exp_gall;
 	kauth_ace_rights_t	ae_exp_gread;

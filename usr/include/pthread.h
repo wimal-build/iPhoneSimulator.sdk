@@ -223,6 +223,11 @@ __BEGIN_DECLS
 
 #define PTHREAD_MUTEX_INITIALIZER {_PTHREAD_MUTEX_SIG_init, {0}}
 
+#if (!defined(_POSIX_C_SOURCE) && !defined(_XOPEN_SOURCE)) || defined(_DARWIN_C_SOURCE)
+#define PTHREAD_ERRORCHECK_MUTEX_INITIALIZER {_PTHREAD_ERRORCHECK_MUTEX_SIG_init, {0}}
+#define PTHREAD_RECURSIVE_MUTEX_INITIALIZER {_PTHREAD_RECURSIVE_MUTEX_SIG_init, {0}}
+#endif /* (!_POSIX_C_SOURCE && !_XOPEN_SOURCE) || _DARWIN_C_SOURCE */
+
 /*
  * Condition variable attributes
  */
@@ -359,7 +364,6 @@ int		pthread_is_threaded_np(void);
 
 int pthread_threadid_np(pthread_t,__uint64_t*) __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_2);
 
-#if defined(__i386__) || defined(__x86_64__)
 int pthread_rwlock_longrdlock_np(pthread_rwlock_t *) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 int pthread_rwlock_yieldwrlock_np(pthread_rwlock_t *) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 int pthread_rwlock_downgrade_np(pthread_rwlock_t *);
@@ -368,7 +372,6 @@ int pthread_rwlock_tryupgrade_np(pthread_rwlock_t *);
 int pthread_rwlock_held_np(pthread_rwlock_t *);
 int pthread_rwlock_rdheld_np(pthread_rwlock_t *);
 int pthread_rwlock_wrheld_np(pthread_rwlock_t *);
-#endif /* __i386__ || __x86_64__ */
 
 /*SPI to set and get pthread name*/
 int		pthread_getname_np(pthread_t,char*,size_t) __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_2);

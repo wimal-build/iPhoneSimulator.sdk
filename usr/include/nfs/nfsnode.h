@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -340,6 +340,7 @@ struct nfs_vattr {
 #define NFS_FFLAG_HIDDEN		0x0002
 #define NFS_FFLAG_HAS_NAMED_ATTRS	0x0004	/* file has named attributes */
 #define NFS_FFLAG_TRIGGER		0x0008	/* node is a trigger/mirror mount point */
+#define NFS_FFLAG_TRIGGER_REFERRAL	0x0010	/* trigger is a referral */
 #define NFS_FFLAG_IS_ATTR		0x8000	/* file is a named attribute file/directory */
 
 /* flags for nfs_getattr() */

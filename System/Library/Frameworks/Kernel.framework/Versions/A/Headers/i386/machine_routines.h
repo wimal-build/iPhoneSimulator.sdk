@@ -67,6 +67,4 @@ void ml_get_csw_threads(thread_t * /*old*/, thread_t * /*new*/);
 
 __END_DECLS
 
-boolean_t ml_fpu_avx_enabled(void);
-
 #endif /* _I386_MACHINE_ROUTINES_H_ */

@@ -62,6 +62,8 @@ typedef UInt32 IOMessage;
 
 #define kIOMessageServiceBusyStateChange   iokit_common_msg(0x120)
 
+#define kIOMessageConsoleSecurityChange    iokit_common_msg(0x128)
+
 #define kIOMessageServicePropertyChange    iokit_common_msg(0x130)
 
 #define kIOMessageCopyClientID             iokit_common_msg(0x330)
@@ -110,6 +112,17 @@ typedef UInt32 IOMessage;
  *                  Never delivered to user space notification clients.
  */
 #define kIOMessageSystemWillRestart        iokit_common_msg(0x310)
+
+/*!
+ * @defined         kIOMessageSystemPagingOff
+ * @discussion      Indicates an imminent system shutdown, paging device now unavailable.
+ *					Recipients have a limited amount of time to respond, otherwise the
+ *					system will timeout and shutdown even without a response.
+ *                  Delivered to clients of <code>registerPrioritySleepWakeInterest()</code>.
+ *                  Never delivered to user space notification clients.
+ */
+#define kIOMessageSystemPagingOff       iokit_common_msg(0x255)
+
 
 /*! @group          System sleep and wake notifications
  */

@@ -92,7 +92,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 
 @interface AVMetadataItem (AVAsynchronousKeyValueLoading)
 
-/* The following two methods of the AVAsynchronousKeyValueLoading protocol are re-declared here so that we can annotate them with availability information. See AVAsynchronousKeyValueLoading.h for documentation. */
+/* The following two methods of the AVAsynchronousKeyValueLoading protocol are re-declared here so that they can be annotated with availability information. See AVAsynchronousKeyValueLoading.h for documentation. */
 
 - (AVKeyValueStatus)statusOfValueForKey:(NSString *)key error:(NSError **)outError NS_AVAILABLE(10_7, 4_2);
 

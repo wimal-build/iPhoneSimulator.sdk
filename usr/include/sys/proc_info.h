@@ -114,7 +114,7 @@ struct proc_bsdshortinfo {
 #define PROC_FLAG_PA_THROTTLE	0x800	/* The process is currently throttled due to resource starvation */
 #define PROC_FLAG_PA_SUSP	0x1000	/* The process is currently suspended due to resource starvation */
 #define PROC_FLAG_PSUGID        0x2000	 /* process has set privileges since last exec */
-#define PROC_FLAG_EXEC         0x4000	 /* process has called exec  */
+#define PROC_FLAG_EXEC		0x4000	 /* process has called exec  */
 
 
 struct proc_taskinfo {
@@ -219,8 +219,15 @@ struct proc_workqueueinfo {
 	uint32_t	pwq_nthreads;		/* total number of workqueue threads */
 	uint32_t	pwq_runthreads;		/* total number of running workqueue threads */
 	uint32_t	pwq_blockedthreads;	/* total number of blocked workqueue threads */
-	uint32_t	reserved[1];		/* reserved for future use */
+	uint32_t	pwq_state;
 };
+
+/*
+ *	workqueue state (pwq_state field)
+ */
+#define WQ_EXCEEDED_CONSTRAINED_THREAD_LIMIT	0x1
+#define WQ_EXCEEDED_TOTAL_THREAD_LIMIT		0x2
+
 
 struct proc_fileinfo {
 	uint32_t		fi_openflags;
@@ -631,6 +638,9 @@ struct proc_fileportinfo {
 #define PROC_PIDLISTFILEPORTS		14
 #define PROC_PIDLISTFILEPORTS_SIZE	(sizeof(struct proc_fileportinfo))
 
+#define PROC_PIDTHREADID64INFO		15
+#define PROC_PIDTHREADID64INFO_SIZE	(sizeof(struct proc_threadinfo))
+
 /* Flavors for proc_pidfdinfo */
 
 #define PROC_PIDFDVNODEINFO		1
@@ -677,6 +687,8 @@ struct proc_fileportinfo {
 
 #define PROC_SELFSET_THREADNAME		2
 #define PROC_SELFSET_THREADNAME_SIZE	(MAXTHREADNAMESIZE -1)
+
+#define PROC_SELFSET_VMRSRCOWNER	3
 
 
 __END_DECLS

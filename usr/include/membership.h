@@ -207,7 +207,7 @@ int mbr_string_to_sid(const char *string, nt_sid_t *sid);
 				otherwise 0 is returned
 	@result		returns 0 on success or appropriate errno code.
 */
-int mbr_check_membership(uuid_t user, uuid_t group, int* ismember);
+int mbr_check_membership(const uuid_t user, const uuid_t group, int* ismember);
 
 /*!
 	@function	mbr_check_service_membership

@@ -13,8 +13,8 @@ CREATE TABLE messages (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
                        size INTEGER,
                        encoding,
                        content_type,
-                       message_id,
-                       conversation_id,
+                       message_id INTEGER,
+                       conversation_id INTEGER,
                        sequence_identifier INTEGER DEFAULT 0,
                        external_id TEXT);
 CREATE INDEX date_index ON messages(date_received);
@@ -33,7 +33,7 @@ CREATE TABLE mailboxes (ROWID INTEGER PRIMARY KEY,
 
 CREATE TABLE threads (ROWID INTEGER PRIMARY KEY,
                       message_id INTEGER,
-                      reference,
+                      reference INTEGER,
                       is_originator);
 CREATE INDEX references_mid_reference_index ON threads(message_id, reference);
 CREATE INDEX references_reference_mid_index ON threads(reference, message_id);
@@ -66,3 +66,19 @@ CREATE TABLE properties (ROWID INTEGER PRIMARY KEY,
                          
 CREATE TABLE messages_deleted (message_id INTEGER PRIMARY KEY);
 CREATE TABLE message_data_deleted (message_data_id INTEGER PRIMARY KEY);
+
+CREATE TABLE accounts (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+                       text_id TEXT,
+                       UNIQUE(text_id));
+                       
+CREATE TABLE offline_cache_operations (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+                                       account_id INTEGER,
+                                       completed,
+                                       last_temporary_id INTEGER,
+                                       operation_data);
+CREATE INDEX offline_cache_operations_account_index ON offline_cache_operations(account_id, ROWID ASC);
+
+CREATE TABLE offline_cache_replay_data (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+                                        account_id INTEGER,
+                                        replay_data);
+CREATE INDEX offline_cache_replay_data_account_index ON offline_cache_operations(account_id, ROWID ASC);

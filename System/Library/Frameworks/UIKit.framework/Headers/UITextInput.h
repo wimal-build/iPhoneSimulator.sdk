@@ -2,7 +2,7 @@
 //  UITextInput.h
 //  UIKit
 //
-//  Copyright 2009-2010 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2011, Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -168,7 +168,7 @@ UIKIT_CLASS_AVAILABLE(3_2) @interface UITextRange : NSObject
 @end
 
 /* The input delegate must be notified of changes to the selection and text. */
-@protocol UITextInputDelegate
+@protocol UITextInputDelegate <NSObject>
 
 - (void)selectionWillChange:(id <UITextInput>)textInput;
 - (void)selectionDidChange:(id <UITextInput>)textInput;
@@ -179,7 +179,7 @@ UIKIT_CLASS_AVAILABLE(3_2) @interface UITextRange : NSObject
 
 
 /* A tokenizer allows the text input system to evaluate text units of varying granularity. */
-@protocol UITextInputTokenizer
+@protocol UITextInputTokenizer <NSObject>
 
 @required
 
@@ -207,6 +207,7 @@ UIKIT_CLASS_AVAILABLE(4_2) @interface UITextInputMode : NSObject
 @property (nonatomic, readonly, retain) NSString *primaryLanguage; // The primary language, if any, of the input mode.  A BCP 47 language identifier such as en-US
 
 + (UITextInputMode *)currentInputMode; // The current input mode.  Nil if unset.
++ (NSArray *)activeInputModes; // The activate input modes.
 
 @end
 

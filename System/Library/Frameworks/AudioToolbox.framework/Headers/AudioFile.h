@@ -981,7 +981,10 @@ AudioFileRemoveUserData ( AudioFileID			inAudioFile,
 	@constant	kAudioFilePropertySourceBitDepth
 					For encoded data this property returns the bit depth of the source as an SInt32, if known.
 					The bit depth is expressed as a negative number if the source was floating point, e.g. -32 for float, -64 for double.
-*/
+	@constant	kAudioFilePropertyAlbumArtwork
+					returns a CFDataRef filled with the Album Art. Data will formatted as either JFIF (JPEG) or PNG (PNG) 
+					The caller is responsible for releasing the CFObject.
+ */
 enum
 {
 	kAudioFilePropertyFileFormat			=	'ffmt',
@@ -1010,7 +1013,8 @@ enum
 	kAudioFilePropertyEstimatedDuration		=	'edur',
 	kAudioFilePropertyBitRate				=	'brat',
 	kAudioFilePropertyID3Tag				=	'id3t',
-	kAudioFilePropertySourceBitDepth		=	'sbtd'
+	kAudioFilePropertySourceBitDepth		=	'sbtd',
+	kAudioFilePropertyAlbumArtwork			=	'aart'
 };
 
 

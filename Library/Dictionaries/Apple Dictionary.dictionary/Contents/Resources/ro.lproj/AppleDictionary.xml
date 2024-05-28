@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" localizable="true">
+
+<d:entry id="802.11">
+	<d:index><d:index_value>802.11</d:index_value><d:index_title>802.11</d:index_title></d:index>
+	<h1>802.11</h1>
+	<p>Un standard pentru programe software și echipamente hardware pentru rețele wireless, dezvoltat de Comitetul pentru Standarde IEEE LAN/MAN (IEEE 802). Standardul include 802.11a, 802.11b, 802.11g și 802.11n.</p>
+</d:entry>
+
+<d:entry id="access_control_lists">
+	<d:index><d:index_value>liste de control al accesului</d:index_value><d:index_title>liste de control al accesului</d:index_title></d:index>
+	<h1>liste de control al accesului</h1>
+	<p>Liste de permisiuni specificând ce utilizatori pot accesa un fișier, un dosar sau un disc și ce operațiuni poate efectua fiecare utilizator. De exemplu, permisiunile unui dosar determină dacă un anumit utilizator poate să vizualizeze conținutul dosarului (doar citire), să adauge fișiere în dosar fără a-i vedea conținutul (doar scriere) sau ambele (citire și scriere).</p>
+</d:entry>
+
+<d:entry id="account">
+	<d:index><d:index_value>cont</d:index_value><d:index_title>cont</d:index_title></d:index>
+	<h1>cont</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, fiecare persoană care utilizează computerul poate avea un cont individual cu un dosar de reședință separat. Există diferite tipuri de conturi, inclusiv conturi de utilizator, de administrator, de grup și de vizitator.</p>
+</d:entry>
+
+<d:entry id="account_password">
+	<d:index><d:index_value>parolă de cont</d:index_value><d:index_title>parolă de cont</d:index_title></d:index>
+	<h1>parolă de cont</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, utilizatorii pot specifica o parolă pentru a controla accesul la conturile lor de utilizatori. Parolele de cont sunt frecvent referite drept “parole de login”. Ale parole importante din Mac OS X includ parolele de portchei și parola Master.</p>
+</d:entry>
+
+<d:entry id="ACLs">
+	<d:index><d:index_value>ACL</d:index_value><d:index_title>ACL</d:index_title></d:index>
+	<h1>ACL</h1>
+	<p>A se vedea  <a href='x-dictionary:r:access_control_lists:com.apple.dictionary.AppleDictionary'><b>liste de control al accesului</b></a>.</p>
+</d:entry>
+
+<d:entry id="Address_Book">
+	<d:index><d:index_value>Agendă</d:index_value><d:index_title>Agendă</d:index_title></d:index>
+	<h1>Agendă</h1>
+	<p>O aplicație inclusă cu Mac OS X. Aplicația Agendă vă permite să stocați informații despre contactele dvs, inclusiv nume și titlu, numere de telefon și adrese, precum și informații referitoare la e-mail, iChat și site web. Deoarece aplicația Agendă este integrată cu aplicațiile Mac OS X, toate informațiile din agenda dvs. vor fi disponibile, de asemenea, din Mail, iChat și Safari.</p>
+</d:entry>
+
+<d:entry id="administrator_account">
+	<d:index><d:index_value>cont de administrator</d:index_value><d:index_title>cont de administrator</d:index_title></d:index>
+	<h1>cont de administrator</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, fiecare persoană care utilizează computerul poate avea un cont individual cu un dosar de reședință separat. Cel puțin unul dintre conturi trebuie să fie un cont de administrator, având capacitatea să creeze, să șteargă și să modifice alte conturi, să instaleze software și să modifice configurări ale sistemului. Dacă un computer Mac OS X are un singur cont, acesta este automat contul de administrator. Alte tipuri de conturi includ conturile de utilizator, de grup și de vizitator.</p>
+</d:entry>
+
+<d:entry id="administrator_password">
+	<d:index><d:index_value>parolă de administrator</d:index_value><d:index_title>parolă de administrator</d:index_title></d:index>
+	<h1>parolă de administrator</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, parola de cont pentru contul de administrator al computerului. Alte parole importante din Mac OS X includ parolele de portchei și parola Master.</p>
+</d:entry>
+
+<d:entry id="AFP">
+	<d:index><d:index_value>AFP</d:index_value><d:index_title>AFP</d:index_title></d:index>
+	<h1>AFP</h1>
+	<p>Apple Filing Protocol. Un protocol client-server utilizat de serviciul de fișiere Apple pentru a partaja fișiere și servicii de rețea. AFP utilizează TCP/IP și alte protocoale pentru a susține comunicațiile între computerele dintr-o rețea.</p>
+</d:entry>
+
+<d:entry id="AirDrop">
+	<d:index><d:index_value>AirDrop</d:index_value><d:index_title>AirDrop</d:index_title></d:index>
+	<h1>AirDrop</h1>
+	<p>O funcționalitate din Mac OS X care vă permite să partajați cu ușurință fișiere cu alți utilizatori AirDrop aflați în apropiere.</p>
+</d:entry>
+
+<d:entry id="AIM">
+	<d:index><d:index_value>AIM</d:index_value><d:index_title>AIM</d:index_title></d:index>
+	<h1>AIM</h1>
+	<p>AOL Instant Messenger, o aplicație de mesagerie instantanee online de la AOL LLC (formerly America Online, Inc.).</p>
+</d:entry>
+
+<d:entry id="AirPort">
+	<d:index><d:index_value>AirPort</d:index_value><d:index_title>AirPort</d:index_title></d:index>
+	<h1>AirPort</h1>
+	<p>Dispozitive și software de rețea wireless de la Apple Inc. care permit conectarea unui computer la o rețea sau la Internet fără cabluri. Un sistem AirPort include un ruter, numit stație de bază AirPort, care este conectat la o rețea. Stația de bază partajează conexiunea sa de rețea prin difuzarea unui semnal care este recepționat de o cartelă AirPort sau de un alt tip de cartelă de rețea wireless aflată în interiorul unui computer sau atașată la acesta. Stațiile de bază AirPort includ AirPort Extreme Base Station și AirPort Express Base Station.</p>
+</d:entry>
+
+<d:entry id="AirPort_Disk">
+	<d:index><d:index_value>Disc AirPort</d:index_value><d:index_title>Disc AirPort</d:index_title></d:index>
+	<h1>Disc AirPort</h1>
+	<p>Software Apple care permite unui computer dintr-o rețea AirPort să partajaze un hard disc extern conectat la un port USB al unui dispozitiv Apple Extreme Base Station.</p>
+</d:entry>
+
+<d:entry id="AirPort_Express_Base_Station">
+	<d:index><d:index_value>AirPort Express Base Station</d:index_value><d:index_title>AirPort Express Base Station</d:index_title></d:index>
+	<h1>AirPort Express Base Station</h1>
+	<p>O stație de bază AirPort compactă de la Apple Inc. care furnizează o conexiune wireless la Internet pentru un număr de maxim zece computere. AirPort Express Base Station include AirPlay - un software care îi permite unui computer conectat să utilizeze iTunes pentru a transmite muzică pe un număr de maxim trei sisteme audio. AirPort Express se poate conecta la o imprimantă USB care este pusă automat la dispoziția tuturor computerelor din rețea prin tehnologia Bonjour. De asemenea, dispozitivul poate fi utilizat pentru a extinde raza de acțiune a unei rețele AirPort Extreme existente.</p>
+</d:entry>
+
+<d:entry id="AirPort_Extreme_Base_Station">
+	<d:index><d:index_value>AirPort Extreme Base Station</d:index_value><d:index_title>AirPort Extreme Base Station</d:index_title></d:index>
+	<h1>AirPort Extreme Base Station</h1>
+	<p>O stație de bază AirPort de la Apple Inc. care furnizează o conexiune Internet wireless de mare viteză pentru un număr de maxim 50 de computere. De asemenea, poate accepta o conexiune Ethernet prin fir. AirPort Extreme Base Station se poate conecta la o imprimantă USB care este pusă automat la dispoziția tuturor computerelor din rețea prin tehnologia Bonjour.</p>
+</d:entry>
+
+<d:entry id="AirPlay">
+	<d:index><d:index_value>AirPlay</d:index_value><d:index_title>AirPlay</d:index_title></d:index>
+	<h1>AirPlay</h1>
+	<p>O aplicație Apple care permite unui computer, iPod, iPad sau iPhone dintr-o rețea AirPort să utilizeze iTunes pentru a transmite wireless muzică și video pe multiple dispozitive, precum AirPort Express sau Apple TV.</p>
+</d:entry>
+
+<d:entry id="album">
+	<d:index><d:index_value>album</d:index_value><d:index_title>album</d:index_title></d:index>
+	<h1>album</h1>
+	<p>O funcționalitate a aplicației iPhoto de pe computerele Macintosh. Un album iPhoto este o colecție de poze pe care le selectați din biblioteca dvs. iPhoto și le aranjați în ordinea dorită. Puteți crea un album standard prin selectarea de poze individuale, sau un album inteligent care este actualizat automat, pe baza criteriilor pentru care optați, pe măsură ce bliblioteca dvs. iPhoto se modifică. Puteți include aceeași poză în diferite albume fără a realiza mai multe copii ale acesteia.</p>
+</d:entry>
+
+<d:entry id="alias">
+	<d:index><d:index_value>alias</d:index_value><d:index_title>alias</d:index_title></d:index>
+	<h1>alias</h1>
+	<p>Pe computerele Macintosh, un mic fișier fără conținut propriu care indică spre un document, un dosar, o aplicație sau un dispozitiv, aflate de obicei într-un loc diferit. Atunci când faceți dublu-clic pe alias, articolul sursă se deschide sau se inițializează.</p>
+</d:entry>
+
+<d:entry id="anti-alias">
+	<d:index><d:index_value>netezire</d:index_value><d:index_title>netezire</d:index_title></d:index>
+	<h1>netezire</h1>
+	<p>În grafica computerizată, tehnica de minimizare a deformărilor din text și grafică prin atenuarea marginilor zimțate atunci când elementele de înaltă rezoluție sunt afișate la o rezoluție mai redusă.</p>
+</d:entry>
+
+<d:entry id="Aperture">
+	<d:index><d:index_value>Aperture</d:index_value><d:index_title>Aperture</d:index_title></d:index>
+	<h1>Aperture</h1>
+	<p>O aplicație Apple pentru computere Macintosh. Aplicația Aperture este utilizată de numeroși fotografi profesioniști în activitatea de post-producție.</p>
+</d:entry>
+
+<d:entry id="Apple_Inc.">
+	<d:index><d:index_value>Apple Inc.</d:index_value><d:index_title>Apple Inc.</d:index_title></d:index>
+	<h1>Apple Inc.</h1>
+	<p>Apple Inc. este o corporație activând în domeniul tehnologiei fondată în California în 1976. Printre cele populare produse ale companiei Apple, având sediul în Cupertino, California, se numără computerul personal Macintosh, playerul muzical portabil iPod, Mac OS și suita software iLife incluzând iTunes.</p>
+</d:entry>
+
+<d:entry id="AppleCare">
+	<d:index><d:index_value>AppleCare</d:index_value><d:index_title>AppleCare</d:index_title></d:index>
+	<h1>AppleCare</h1>
+	<p>Programul Apple de service și asistență pentru computere Macintosh, playere muzicale iPod și alte produse.</p>
+</d:entry>
+
+<d:entry id="Apple_Mail">
+	<d:index><d:index_value>Apple Mail</d:index_value><d:index_title>Apple Mail</d:index_title></d:index>
+	<h1>Apple Mail</h1>
+	<p>A se vedea <a href='x-dictionary:r:Mail:com.apple.dictionary.AppleDictionary'><b>Mail</b></a>.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote">
+	<d:index><d:index_value>Apple Remote</d:index_value><d:index_title>Apple Remote</d:index_title></d:index>
+	<h1>Apple Remote</h1>
+	<p>O telecomandă concepută pentru utilizarea cu produse Apple, inclusiv Apple TV.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote_Desktop">
+	<d:index><d:index_value>Apple Remote Desktop</d:index_value><d:index_title>Apple Remote Desktop</d:index_title></d:index>
+	<h1>Apple Remote Desktop</h1>
+	<p>O aplicație Apple care permite unui utilizator, precum un profesor sau un administrator de sistem, să monitorizeze de pe propriul computer Macintosh activitatea altor utilizatori pe computerele lor Macintosh într-o rețea.</p>
+</d:entry>
+
+<d:entry id="AppleScript">
+	<d:index><d:index_value>AppleScript</d:index_value><d:index_title>AppleScript</d:index_title></d:index>
+	<h1>AppleScript</h1>
+	<p>Un limbaj de programare integrat în Mac OS. Limbajul AppleScript constă în comenzi care pot fi utilizate pentru a automatiza sarcini repetitive sau complexe în cadrul multor aplicații, inclusiv Mail, Safari, iCal și alte aplicații.</p>
+</d:entry>
+
+<d:entry id="AppleShare">
+	<d:index><d:index_value>AppleShare</d:index_value><d:index_title>AppleShare</d:index_title></d:index>
+	<h1>AppleShare</h1>
+	<p>Software de tip server de fișiere și tipărire care funcționa cu software-ul de rețea AppleTalk. Aplicația AppleShare a fost înlocuită de aplicația Mac OS X Server.</p>
+</d:entry>
+
+<d:entry id="AppleTalk">
+	<d:index><d:index_value>AppleTalk</d:index_value><d:index_title>AppleTalk</d:index_title></d:index>
+	<h1>AppleTalk</h1>
+	<p>Un set de instrumente software de la Apple Inc. pentru rețelele de computere. Sistemul de rețea AppleTalk a fost înlocuit de protocolul de rețea TCP/IP pe computerele Macintosh utilizând Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Apple_TV">
+	<d:index><d:index_value>Apple TV</d:index_value><d:index_title>Apple TV</d:index_title></d:index>
+	<h1>Apple TV</h1>
+	<p>Un dispozitiv decodor de la Apple Inc., care recepționează wireless un semnal video și îl redă pe orice televizor panoramic cu definiție îmbunătățită sau cu definiție înaltă. Apple TV poate reda filme, emisiuni TV, muzică și podcasturi dintr-o bibliotecă iTunes, precum și trailere cinematografice de la www.apple.com și diaporame de fotografii digitale de pe computer. Apple TV se poate sincroniza cu un computer Macintosh utilizând Mac OS X v10.3.9 sau v10.4.9 sau o versiune ulterioră, sau cu un computer bazat pe Windows, utilizând Windows XP Home sau Professional (SP2), sau Windows Vista. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/appletv/'>pagina web Apple TV</a>.</p>
+</d:entry>
+
+<d:entry id="AppleWorks">
+	<d:index><d:index_value>AppleWorks</d:index_value><d:index_title>AppleWorks</d:index_title></d:index>
+	<h1>AppleWorks</h1>
+	<p>O aplicație Apple care include aplicații pentru procesare de text, foi de calcul tabelar, grafică și baze de date. Programul AppleWorks rula inițial pe familia de computere Apple II. O versiune ulterioară de AppleWorks a fost creată pentru computerele Macintosh utilizând Mac OS X. AppleWorks a fost înlocuit de suita de aplicații iWork.</p>
+</d:entry>
+
+<d:entry id="Aqua">
+	<d:index><d:index_value>Aqua</d:index_value><d:index_title>Aqua</d:index_title></d:index>
+	<h1>Aqua</h1>
+	<p>Interfața grafică de utilizare și tema vizuală din Mac OS X.</p>
+</d:entry>
+
+<d:entry id="archive">
+	<d:index><d:index_value>arhiva</d:index_value><d:index_title>arhiva</d:index_title></d:index>
+	<h1>arhiva</h1>
+	<p>În Mac OS X, fie a comprima un fișier pentru a-i reduce dimensiunile, fie a reinstala software-ului de sistem menținând intacte fișierele și configurările utilizatorului (“arhivare și instalare”).</p>
+</d:entry>
+
+<d:entry id="argument">
+	<d:index><d:index_value>argument</d:index_value><d:index_title>argument</d:index_title></d:index>
+	<h1>argument</h1>
+	<p>În aplicația de calcul tabelar Numbers, argumentele furnizează valorile necesare unei funcții Numbers pentru efectuarea unei sarcini. De exemplu, următoarea formulă conține o funcție numită SUM cu un singur argument (un interval de celule) care adună valorile din coloana A, între rândurile 2 și 10: =SUM(A2:A10). Numărul și tipurile argumentelor variază pentru diferitele funcții. </p>
+</d:entry>
+
+<d:entry id="audiobook">
+	<d:index><d:index_value>carte audio</d:index_value><d:index_title>carte audio</d:index_title></d:index>
+	<h1>carte audio</h1>
+	<p>Un program enunțat înregistrat, precum o carte citită cu voce tare. Puteți include cărți audio și alte programe enunțate în biblioteca dvs. iTunes.</p>
+</d:entry>
+
+<d:entry id="audio_driver">
+	<d:index><d:index_value>driver audio</d:index_value><d:index_title>driver audio</d:index_title></d:index>
+	<h1>driver audio</h1>
+	<p>Un program software care convertește datele audio într-o formă care poate fi procesată de către placa de sunet a computerului dvs. și redată prin intermediul difuzoarelor. Driverul audio al unui computer trebuie să fie compatibil cu placa de sunet a acestuia. Driverul audio Mac OS X este Core Audio.</p>
+</d:entry>
+
+<d:entry id="AutoFill">
+	<d:index><d:index_value>Auto-completare</d:index_value><d:index_title>Auto-completare</d:index_title></d:index>
+	<h1>Auto-completare</h1>
+	<p>O funcționalitate a browserului web Safari de la Apple care completează automat formularele dintr-o pagină web, utilizând informații din agenda dvs. și din formularele pe care le-ați completat în prealabil.</p>
+</d:entry>
+
+<d:entry id="Automator">
+	<d:index><d:index_value>Automator</d:index_value><d:index_title>Automator</d:index_title></d:index>
+	<h1>Automator</h1>
+	<p>O aplicație care este inclusă cu Mac OS X și vă permite să creați fluxuri de lucru pentru automatizarea sarcinilor repetitive. Automator funcționează cu multe alte aplicații, inclusiv cu Finder, Safari, iCal, Agendă, Microsoft Office și Adobe Photoshop.</p>
+</d:entry>
+
+<d:entry id="autoplay_DVD">
+	<d:index><d:index_value>DVD cu redare automată</d:index_value><d:index_title>DVD cu redare automată</d:index_title></d:index>
+	<h1>DVD cu redare automată</h1>
+	<p>Un film sau o diaporamă DVD care rulează automat atunci când un spectator introduce DVD-ul în unitatea optică a computerului. Pe computerele Macintosh, puteți crea un DVD cu redare automată utilizând aplicația iDVD.</p>
+</d:entry>
+
+<d:entry id="A/UX">
+	<d:index><d:index_value>A/UX</d:index_value><d:index_title>A/UX</d:index_title></d:index>
+	<h1>A/UX</h1>
+	<p>O versiune a sistemului de operare UNIX pentru anumite modele de computere Macintosh. Prima versiune a sistemului de operare A/UX a fost lansată în 1988, iar versiunea finală a fost lansată în 1995.</p>
+</d:entry>
+
+<d:entry id="background">
+	<d:index><d:index_value>fundal</d:index_value><d:index_title>fundal</d:index_title></d:index>
+	<h1>fundal</h1>
+	<p>În Mac OS X, puteți configura un fundal personalizat în multe locuri, inclusiv pe Desktop, în ferestrele Finder și în proiectele iDVD. A se vedea și <a href='x-dictionary:r:desktop_picture:com.apple.dictionary.AppleDictionary'><b>imagine de fundal</b></a> și <a href='x-dictionary:r:iDVD_themes:com.apple.dictionary.AppleDictionary'><b>teme iDVD</b></a>.</p>
+</d:entry>
+
+<d:entry id="Backup">
+	<d:index><d:index_value>Backup</d:index_value><d:index_title>Backup</d:index_title></d:index>
+	<h1>Backup</h1>
+	<p>Software Apple disponibil abonaților MobileMe. Aplicația Backup vă permite să configurați backupuri automate, programate regulat, pentru fișierele de pe computerul dvs. Macintosh, inclusiv pentru poze, muzică, dosarul de reședință și altele.</p>
+</d:entry>
+
+<d:entry id="badge_overlay">
+	<d:index><d:index_value>ecuson suprapus</d:index_value><d:index_title>ecuson suprapus</d:index_title></d:index>
+	<h1>ecuson suprapus</h1>
+	<p>Un mic element grafic care apare atunci când mutați cursorul peste o imagine, o fereastră, o pictogramă sau un alt obiect. Un ecuson suprapus furnizează informații suplimentare despre obiect. În aplicația pentru fotografie digitală Aperture de pe computerele Macintosh, atunci când aplicați ajustări, cuvinte cheie, evaluări sau alte modificări unei imagini, Aperture marchează imaginea cu un ecuson suprapus. Ecusoanele suprapuse apar doar pe ecran, nu și pe exemplarele tipărite.</p>
+</d:entry>
+
+<d:entry id="Bonjour">
+	<d:index><d:index_value>Bonjour</d:index_value><d:index_title>Bonjour</d:index_title></d:index>
+	<h1>Bonjour</h1>
+	<p>Software integrat în Mac OS X. Software-ul Bonjour conectează un computer la site-uri web și la dispozitive precum imprimante și alte computere din apropiere. De asemenea, găsește prieteni iChat și informații partajate, precum melodii sau poze partajate, într-o rețea locală.</p>
+</d:entry>
+
+<d:entry id="browser">
+	<d:index><d:index_value>browser</d:index_value><d:index_title>browser</d:index_title></d:index>
+	<h1>browser</h1>
+	<p>O aplicație care vă ajută să găsiți, să afișați și să interacționați cu text, imagini, sunet și ate informații. Un browser web este utilizat pentru a naviga pagini web pe Internet. Aplicația Safari, utilizată pe computere Macintosh, este un exemplu de browser web.</p>
+</d:entry>
+
+<d:entry id="browsing_history">
+	<d:index><d:index_value>istoric de navigare</d:index_value><d:index_title>istoric de navigare</d:index_title></d:index>
+	<h1>istoric de navigare</h1>
+	<p>O listă a adreselor paginilor web pe care le-ați vizitat, salvată de Safari sau de alt browser web. Un istoric de navigare conține uzual adresele paginilor web vizitate în decurs de aproximativ o săptămână.</p>
+</d:entry>
+
+<d:entry id="buddy_list">
+	<d:index><d:index_value>listă de prieteni</d:index_value><d:index_title>listă de prieteni</d:index_title></d:index>
+	<h1>listă de prieteni</h1>
+	<p>În aplicațiile pentru mesagerie instantanee, o listă de persoane pe care le puteți selecta pentru a purta conversații. În mod normal, o listă de prieteni conține numele celor mai frecvent contactate persoane. Uzual, o listă de prieteni indică statusul fiecărui prieten (online și disponibil, sau indisponibil).</p>
+</d:entry>
+
+<d:entry id="burn_folder">
+	<d:index><d:index_value>dosar de inscripționare</d:index_value><d:index_title>dosar de inscripționare</d:index_title></d:index>
+	<h1>dosar de inscripționare</h1>
+	<p>Un tip de dosar întâlnit pe computerele Macintosh utilizând Mac OS X. Un dosar de inscripționare conține articolele pe care doriți să le inscripționați pe un CD sau pe un DVD. Acțiunea de dublu-clic pe pictograma dosarului de inscripționare și clic pe butonul Inscripționează copiază toate articolele din dosarul de inscripționare pe disc.</p>
+</d:entry>
+
+<d:entry id="Calculator">
+	<d:index><d:index_value>Calculator</d:index_value><d:index_title>Calculator</d:index_title></d:index>
+	<h1>Calculator</h1>
+	<p>O aplicație de tip calculator inclusă cu Mac OS X. Calculator include modurile simplu, științific și programator și acceptă notația poloneză inversă.</p>
+</d:entry>
+
+<d:entry id="CalDAV">
+	<d:index><d:index_value>CalDAV</d:index_value><d:index_title>CalDAV</d:index_title></d:index>
+	<h1>CalDAV</h1>
+	<p>Software care la permite mai multor utilizatori publicarea și abonarea la calendare colaborative, precum și sincronizarea acestora între multiple dispozitive. Calendarele partajate sunt gestionate de un server CalDAV.</p>
+</d:entry>
+
+<d:entry id="candidate_window">
+	<d:index><d:index_value>fereastra candidaților</d:index_value><d:index_title>fereastra candidaților</d:index_title></d:index>
+	<h1>fereastra candidaților</h1>
+	<p>În software-ul pentru metoda de introducere, fereastra utilizată pentru a introduce caractere, precum ideogramele chinezești, care nu se găsesc pe tastatură. Fereastra candidaților apare atunci când introduceți un cod de intrare cu care sunt asociate mai multe caractere. Dvs. alegeți caracterul dorit din fereastra candidaților pentru a-l introduce în text.</p>
+</d:entry>
+
+<d:entry id="Carbon">
+	<d:index><d:index_value>Carbon</d:index_value><d:index_title>Carbon</d:index_title></d:index>
+	<h1>Carbon</h1>
+	<p>Un set de instrumente numite interfețe de programare a aplicațiilor (API-uri) pentru dezvoltatorii software care creează aplicații pentru Mac OS. Carbon include un kit de instrumente pentru interfața de utilizare, gestionarea evenimentelor, biblioteca grafică 2D Quartz și resurse pentru multiprocesare.</p>
+</d:entry>
+
+<d:entry id="CDDB">
+	<d:index><d:index_value>CDDB</d:index_value><d:index_title>CDDB</d:index_title></d:index>
+	<h1>CDDB</h1>
+	<p>Compact disc database (Baza de date a compact-discurilor). CDDB este o marcă comercială licențiată aparținând Gracenote, Inc. Aplicațiile software utilizează CDDB pentru a căuta pe Internet informații despre CD-urile audio. După interogarea CDDB, o aplicație poate afișa titlul, numele artistului, lista pistelor și alte informații pentru majoritatea CD-urilor.</p>
+</d:entry>
+
+<d:entry id="cell_reference">
+	<d:index><d:index_value>referință de celulă</d:index_value><d:index_title>referință de celulă</d:index_title></d:index>
+	<h1>referință de celulă</h1>
+	<p>În aplicația de calcul tabelar Numbers, referințele celulelor identifică individual celulele în cadrul formulelor. Puteți crea referințe de celule utilizând literele și numerele filelor de referință sau utilizând numele celulelor de antet. Dacă tabelul dvs. are și un rând de antet și o coloană de antet, puteți identifica o celulă utilizând numele coloanei urmat de numele rândului.</p>
+</d:entry>
+
+<d:entry id="cell_value_format">
+	<d:index><d:index_value>format al valorii celulei</d:index_value><d:index_title>format al valorii celulei</d:index_title></d:index>
+	<h1>format al valorii celulei</h1>
+	<p>În aplicația de calcul tabelar Numbers, puteți aplica un format unei celule astfel încât valoarea acesteia să fie afișată într-un anumit mod. De exemplu, puteți formata celulele care includ valori monetare astfel încât după numerele din celule să apară un simbol monetar (precum $, £ sau ¥). De asemenea, puteți formata celulele pentru a conține controale, precum casete de validare și glisoare, care sunt utilizate pentru adăugarea sau modificarea valorilor celulelor.</p>
+</d:entry>
+
+<d:entry id="certificate">
+	<d:index><d:index_value>certificat</d:index_value><d:index_title>certificat</d:index_title></d:index>
+	<h1>certificat</h1>
+	<p>Un fișier atașat unui document electronic care permite transferul securizat al informațiilor pe Internet. Bowserele web, aplicațiile de e-mail și aplicațiile de mesagerie instantanee utilizează certificatele pentru a cripta informațiile schimbate cu un site securizat. Certificatele vă protejează informațiile de login, numerele cardurilor de credit, adresele și alte date securizate. Certificatele sunt emise de organizații de încredere precum VeriSign, Inc. sau RSA Data Security, Inc. Atunci când accesați un site securizat, Mac OS X verifică certificatul site-ului și îl compară cu certificatele cunoscute ca fiind legitime. Dacă certificatul site-ului web nu este recunoscut sau dacă site-ul nu are un certificat, veți recepționa un mesaj.</p>
+</d:entry>
+
+<d:entry id="chapter_marker">
+	<d:index><d:index_value>marcaj de capitol</d:index_value><d:index_title>marcaj de capitol</d:index_title></d:index>
+	<h1>marcaj de capitol</h1>
+	<p>Marcaje inserate într-un film digital pentru a crea un meniu de selecție a scenelor, astfel încât spectatorii să poată accesa direct anumite scene.</p>
+</d:entry>
+
+<d:entry id="character_palette">
+	<d:index><d:index_value>paletă de caractere</d:index_value><d:index_title>paletă de caractere</d:index_title></d:index>
+	<h1>paletă de caractere</h1>
+	<p>O funcționalitate Mac OS X care vă permite să inserați caractere speciale, precum simboluri matematice, litere cu accente, săgeți și alte ornamente sau caractere din alte limbi în documentele dvs.</p>
+</d:entry>
+
+<d:entry id="Chooser">
+	<d:index><d:index_value>Chooser</d:index_value><d:index_title>Chooser</d:index_title></d:index>
+	<h1>Chooser</h1>
+	<p>O funcționalitate a versiunilor mai vechi de Mac OS care vă permite conectarea la imprimante și servere, precum și activarea și dezactivarea protocolului de rețea AppleTalk. Înlocuită în Mac OS X cu panourile Tipărire și fax și Rețea din Preferințe sistem.</p>
+</d:entry>
+
+<d:entry id="Cinema_Tools">
+	<d:index><d:index_value>Cinema Tools</d:index_value><d:index_title>Cinema Tools</d:index_title></d:index>
+	<h1>Cinema Tools</h1>
+	<p>Un set de instrumente software de la Apple Inc. incluse cu Final Cut Pro, o aplicație de editare video profesională. Software-ul Cinema Tools este utilizat pentru a urmări relația dintre filmul și sunetul originale și echivalentul video digitizat al acestora.</p>
+</d:entry>
+
+<d:entry id="Classic">
+	<d:index><d:index_value>Classic</d:index_value><d:index_title>Classic</d:index_title></d:index>
+	<h1>Classic</h1>
+	<p>Versiuni anterioare ale sistemului de operare Macintosh, înlocuite de Mac OS X.</p>
+</d:entry>
+
+<d:entry id="clip">
+	<d:index><d:index_value>clip</d:index_value><d:index_title>clip</d:index_title></d:index>
+	<h1>clip</h1>
+	<p>Un segment de conținut audio sau video. În aplicația iMovie, puteți lucra cu clipuri în diverse moduri pentru a obține efectele dorite, inclusiv mutarea clipurilor, configurarea punctelor de pornire și oprire a clipurilor muzicale, adăugarea de tranziții între clipuri și altele.</p>
+</d:entry>
+
+<d:entry id="Cocoa">
+	<d:index><d:index_value>Cocoa</d:index_value><d:index_title>Cocoa</d:index_title></d:index>
+	<h1>Cocoa</h1>
+	<p>Un set de instrumente numite interfețe de programare a aplicațiilor (API-uri) pentru dezvoltatorii software care creează aplicații pentru Mac OS. Cocoa este un mediu de aplicații orientate pe obiect pentru pentru dezvoltarea de aplicații Mac OS X native. Aplicațile Cocoa respectă liniile directoare Apple pentru interfața umană, astfel încât aspectul și operarea lor sunt familiare utilizatorilor Macintosh.</p>
+</d:entry>
+
+<d:entry id="Cocoa_Touch">
+	<d:index><d:index_value>Cocoa Touch</d:index_value><d:index_title>Cocoa Touch</d:index_title></d:index>
+	<h1>Cocoa Touch</h1>
+	<p>Un set de instrumente numite interfețe de programare a aplicațiilor (API-uri) pentru dezvoltatorii software care creează aplicații pentru iPhone și iPod touch. Cocoa Touch se bazează pe instrumentele Cocoa pentru crearea aplicațiilor Mac OS X.</p>
+</d:entry>
+
+<d:entry id="ColorSync">
+	<d:index><d:index_value>ColorSync</d:index_value><d:index_title>ColorSync</d:index_title></d:index>
+	<h1>ColorSync</h1>
+	<p>O aplicație Apple pentru potrivirea culorilor. ColorSync integrează toate dispozitivele grafice precum ecranele monitoarelor, imprimantele, scanerele și camerele digitale astfel încât culorile vizualizate pe ecran să își păstreze consistența la tipărire. ColorSync face parte din Mac OS X.</p>
+</d:entry>
+
+<d:entry id="ColorSync_profile">
+	<d:index><d:index_value>profil ColorSync</d:index_value><d:index_title>profil ColorSync</d:index_title></d:index>
+	<h1>profil ColorSync</h1>
+	<p>Informații salvate de aplicația ColorSync pentru toate dispozitivele grafice atașate la un computer, precum scanere, imprimante și monitoare. Profilul este utilizat pentru a reproduce imaginile cu cea mai mare acuratețe posibilă. De exemplu, atunci când o imagine este scanată, fișierul de imagine include o copie a profilului scanerului. Atunci când imaginea este tipărită, un proces de potrivire a culorilor convertește informațiile colorimetrice între profilul scanerului și profilul imprimantei.</p>
+</d:entry>
+
+<d:entry id="combo_drive">
+	<d:index><d:index_value>unitate combo</d:index_value><d:index_title>unitate combo</d:index_title></d:index>
+	<h1>unitate combo</h1>
+	<p>Un tip de unitate de disc. O unitate combo poate citi și scrie (copia) pe CD-uri și poate citi dar nu poate scrie pe DVD-uri.</p>
+</d:entry>
+
+<d:entry id="Common_Access_Card_Viewer">
+	<d:index><d:index_value>Vizualizor card de acces comun</d:index_value><d:index_title>Vizualizor card de acces comun</d:index_title></d:index>
+	<h1>Vizualizor card de acces comun</h1>
+	<p>Un dispozitiv de control al accesului. Trecerea unui card de acces comun printr-un cititor de card vă permite să realizați login la computer, să accesați computerul atunci când screensaverul este pornit, să faceți modificări în anumite panouri din Preferințe sistem și să instalați software.</p>
+</d:entry>
+
+<d:entry id="conditional_formatting">
+	<d:index><d:index_value>formatare condițională</d:index_value><d:index_title>formatare condițională</d:index_title></d:index>
+	<h1>formatare condițională</h1>
+	<p>O funcționalitate care vă permite să formatați o celulă dintr-o foaie de calcul tabelar Numbers astfel încât celula să fie afișată într-un anumit mod atunci când este satisfăcută o condiție. De exemplu, puteți opta ca fundalul unei celule să devină roșru atunci când valoarea sa depășește un anumit număr.</p>
+</d:entry>
+
+<d:entry id="control_panel">
+	<d:index><d:index_value>panou de control</d:index_value><d:index_title>panou de control</d:index_title></d:index>
+	<h1>panou de control</h1>
+	<p>Pe computerele Windows, panoul de control conține mici programe care vă permit să selectați configurări precum fundalul desktopului sau metoda de conectare la Internet. Pe computerele Macintosh, panourile din Preferințe sistem sunt utilizate pentru a selecta configurări.</p>
+</d:entry>
+
+<d:entry id="control_strip">
+	<d:index><d:index_value>bandă de control</d:index_value><d:index_title>bandă de control</d:index_title></d:index>
+	<h1>bandă de control</h1>
+	<p>Utilizată în versiuni mai vechi de Mac OS pentru vizulizarea stării bateriei, verificarea conexiunii de rețea, modificarea volumului sistemului, ajustarea rezoluției ecranului și efectuarea altor funcții. În Mac OS X, meniurile din bara de meniu înlocuiesc banda de control.</p>
+</d:entry>
+
+<d:entry id="cookie">
+	<d:index><d:index_value>cookie</d:index_value><d:index_title>cookie</d:index_title></d:index>
+	<h1>cookie</h1>
+	<p>Un mic fișier plasat pe computerul dvs. de către un site web pentru a stoca informații. Atunci când reveniți ulterior la site, browserul dvs. web returnează cookie-urile care aparțin site-ului. Cookie-urile îi comunică site-ului cine sunteți, astfel încât site-ul să vă poate prezenta informații adecvate pentru dvs. Cookie-urile pot stoca informații care vă identifică, precum numele și adresa dvs. de e-mail. Un site web are acces doar la informațiile pe care dvs. le furnizați. Un site web nu poate utiliza cookie-uri pentru a dobândi acces la alte informați de pe computerul dvs.</p>
+</d:entry>
+
+<d:entry id="Core_Audio">
+	<d:index><d:index_value>Core Audio</d:index_value><d:index_title>Core Audio</d:index_title></d:index>
+	<h1>Core Audio</h1>
+	<p>Un driver audio utilizat pe computerele Macintosh.</p>
+</d:entry>
+
+<d:entry id="Cover_Flow">
+	<d:index><d:index_value>Cover Flow</d:index_value><d:index_title>Cover Flow</d:index_title></d:index>
+	<h1>Cover Flow</h1>
+	<p>O funcționalitate a aplicației Finder din Mac OS X și a playerului multimedia iTunes. În iTunes, funcționalitatea Cover Flow afișează pe ecranul computerului ilustrațiile albumelor dintr-o colecție muzicală iTunes, permițând explorarea rapidă a albumelor. În Finder, vizualizarea Cover Flow este una dintre cele patru opțiuni pentru explorarea fișierelor, dosarelor și aplicațiilor afișate într-o fereastră din Finder.</p>
+</d:entry>
+
+<d:entry id="crop">
+	<d:index><d:index_value>decupare</d:index_value><d:index_title>decupare</d:index_title></d:index>
+	<h1>decupare</h1>
+	<p>A edita o imagine, precum o poză, păstrând doar porțiunea dorită și eliminând restul.</p>
+</d:entry>
+
+<d:entry id="Dashboard">
+	<d:index><d:index_value>Dashboard</d:index_value><d:index_title>Dashboard</d:index_title></d:index>
+	<h1>Dashboard</h1>
+	<p>Software Apple care este inclus cu Mac OS X și furnizează mici aplicații numite “widgeturi”. Widgeturile au o gamă largă de utilizare, cum ar fi verificarea prețurilor acțiunilor bursiere, aflarea de informații meteo locale sau globale, căutarea cuvintelor într-un dicționar și așa mai departe.</p>
+</d:entry>
+
+<d:entry id="Dashcode">
+	<d:index><d:index_value>Dashcode</d:index_value><d:index_title>Dashcode</d:index_title></d:index>
+	<h1>Dashcode</h1>
+	<p>Un program de dezvoltare software de la Apple care vă permite să creați widgeturi Dashboard și aplicații web (pagini web optimizate pentru Safari pe iPhone). Widgeturile și aplicațiile web create cu Dashcode utilizează tehnologii web standard precum Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) și JavaScript.</p>
+</d:entry>
+
+<d:entry id="desktop">
+	<d:index><d:index_value>desktop</d:index_value><d:index_title>desktop</d:index_title></d:index>
+	<h1>desktop</h1>
+	<p>Zona de fundal a ecranului unui computer. Un desktop furnizează pictograme, ferestre, bare de instrumente, fișiere și dosare pe care le puteți crea, edita, muta și șterge.</p>
+</d:entry>
+
+<d:entry id="desktop_picture">
+	<d:index><d:index_value>imagine desktop</d:index_value><d:index_title>imagine desktop</d:index_title></d:index>
+	<h1>imagine desktop</h1>
+	<p>Culoarea, modelul sau imaginea pe care o utilizați pentru a personaliza zona de fundal a ecranului dvs. Puteți selecta o imagine desktop utilizând panoul Desktop și screensaver din Preferințe sistem.</p>
+</d:entry>
+
+<d:entry id="Dictionary">
+	<d:index><d:index_value>Dicționar</d:index_value><d:index_title>Dicționar</d:index_title></d:index>
+	<h1>Dicționar</h1>
+	<p>O aplicație inclusă cu Mac OS X. Dicționar vă permite să căutați definiții și sinonime dintr-o varietate de surse, inclusiv Oxford American Dictionaries și Dicționar Apple.</p>
+</d:entry>
+
+<d:entry id="digital_certificate">
+	<d:index><d:index_value>certificat digital</d:index_value><d:index_title>certificat digital</d:index_title></d:index>
+	<h1>certificat digital</h1>
+	<p>Cunoscut și drept certificat de cheie publică, un document electronic care asociază identitatea dvs. digitală cu alte informații, precum numele, adresa de e-mail sau compania dvs. Aplicațiile web, precum browserul web Safari, Mail și iChat utilizează certificate pentru transferul securizat al informațiilor pe web.</p>
+</d:entry>
+
+<d:entry id="disk_image">
+	<d:index><d:index_value>imagine de disc</d:index_value><d:index_title>imagine de disc</d:index_title></d:index>
+	<h1>imagine de disc</h1>
+	<p>Un singur fișier care include integral conținutul și organizarea tuturor fișierelor și dosarelor de pe un dispozitiv de stocare precum un hard disc sau un disc optic. Puteți utiliza programul Disk Utility pentru a crea o imagine de disc. Utilizând o imagine de disc, puteți să arhivați date vechi, să partajați fișiere cu alții, să criptați informații confidențiale și să realizați copii pentru discuri.</p>
+</d:entry>
+
+<d:entry id="Disk_Utility">
+	<d:index><d:index_value>Disk Utility</d:index_value><d:index_title>Disk Utility</d:index_title></d:index>
+	<h1>Disk Utility</h1>
+	<p>O aplicație pentru realizarea de sarcini referitoare la discuri inclusă cu Mac OS X. Disk Utility vă permite crearea de imagini de disc și montarea, eliminarea, reformatarea, partiționarea, inscripționarea și repararea discurilor.</p>
+</d:entry>
+
+<d:entry id="Dock">
+	<d:index><d:index_value>Dock</d:index_value><d:index_title>Dock</d:index_title></d:index>
+	<h1>Dock</h1>
+	<p>Un lansator de aplicații inclus cu Mac OS X. Dock-ul este localizat de-a lungul marginii ecranului. Conține pictograme pentru multe dintre aplicațiile disponibile pe computer și puteți trage pictograme în Dock și în afara acestuia.</p>
+</d:entry>
+
+<d:entry id="dogcow">
+	<d:index><d:index_value>dogcow</d:index_value><d:index_title>dogcow</d:index_title></d:index>
+	<h1>dogcow</h1>
+	<p>Inițial un caracter din fontul ornamental Cairo, “dogcow” (câine-vacă) a fost utilizat pentru a prezenta orientarea și culoarea hârtiei în dialogurile de configurare a paginii pe computerele Mac. În decursul timpului, dogcow a dobândit pete suplimentare și un aspect mai bovin. Sunetul facut de dogcow este “moof.”</p>
+</d:entry>
+
+<d:entry id="domain">
+	<d:index><d:index_value>domeniu</d:index_value><d:index_title>domeniu</d:index_title></d:index>
+	<h1>domeniu</h1>
+	<p>Parte din numele de domeniu al unui computer care este conectat la Internet. Numele “www.exemplu.com” este alcătuit din subdomeniul sau numele de gazdă “www”, domeniul “exemplu” și domeniul de prim nivel “com”.</p>
+</d:entry>
+
+<d:entry id="DOM">
+	<d:index><d:index_value>DOM</d:index_value><d:index_title>DOM</d:index_title></d:index>
+	<h1>DOM</h1>
+	<p>Document Object Model (model orientat pe obiect al documentului). O interfață care permite programelor software să acceseze și să actualizeze conținutul, structura și stilul documentelor, inclusiv paginilor web. DOM pentru o pagină web listează fiecare element care apare în pagina web, inclusiv conținutul, linkurile, specificațiile de stil și scripturile (programe mici), și specifică ordinea în care elementele apar în pagină.</p>
+</d:entry>
+
+<d:entry id="DOM_navigation">
+	<d:index><d:index_value>navigare DOM</d:index_value><d:index_title>navigare DOM</d:index_title></d:index>
+	<h1>navigare DOM</h1>
+	<p>Navigarea unei pagini web pe bază de DOM al paginii (Document Object Model - model orientat pe obiect al documentului).</p>
+</d:entry>
+
+<d:entry id="DRAM">
+	<d:index><d:index_value>DRAM</d:index_value><d:index_title>DRAM</d:index_title></d:index>
+	<h1>DRAM</h1>
+	<p>Dynamic random-access memory (memorie dinamică cu acces aleatoriu). Cel mai uzual tip de memorie utilizat în computerele personale. DRAM necesită câte o nouă încărcare electrică la interval de câteva milisecunde.</p>
+</d:entry>
+
+<d:entry id="DVD_or_CD_sharing">
+	<d:index><d:index_value>partajare DVD sau CD</d:index_value><d:index_title>partajare DVD sau CD</d:index_title></d:index>
+	<h1>partajare DVD sau CD</h1>
+	<p>O funcționalitate din Mac OS X care vă permite să partajați discuri DVD sau CD într-o rețea Ethernet sau wireless. Dacă un alt computer din rețeaua dvs. nu are o unitate optică, puteți permite acelui computer să utilizeze un disc din unitatea optică a computerului dvs. Computerul cu unitatea optică trebuie să aibă Mac OS X v10.4.10 sau o versiunea ulterioră, sau Windows XP sau Windows Vista.</p>
+</d:entry>
+
+<d:entry id="dynamic_prompt">
+	<d:index><d:index_value>sugestie dinamică</d:index_value><d:index_title>sugestie dinamică</d:index_title></d:index>
+	<h1>sugestie dinamică</h1>
+	<p>În software-ul pentru metoda de introducere utilizat pentru introducerea caracterelor care nu se găsesc pe tastatură, precum ideogramele chinezești, activați sugestiile dinamice pentru ca acestea să apară automat în fereastra candidaților pe măsură de scrieți.</p>
+</d:entry>
+
+<d:entry id="eMac">
+	<d:index><d:index_value>eMac</d:index_value><d:index_title>eMac</d:index_title></d:index>
+	<h1>eMac</h1>
+	<p>Un “Mac educativ” - un computer “all-in-one” cu preț redus având un ecran de 17 inch, bazat pe un procesor PowerPC G4. Apple Inc. a lansat computerul eMac în 2002 și a întrerupt fabricarea acestuia în 2006, înlocuindu-l cu un model iMac.</p>
+</d:entry>
+
+<d:entry id="enhance">
+	<d:index><d:index_value>amplificare</d:index_value><d:index_title>amplificare</d:index_title></d:index>
+	<h1>amplificare</h1>
+	<p>O funcționalitate a aplicației iPhoto de pe computerele Macintosh. Un clic pe butonul Amplifică în timpul editării unei poze o luminează sau îi ajustează nivelurile de contrast pe baza criteriilor preconfigurate.</p>
+</d:entry>
+
+<d:entry id="EPS">
+	<d:index><d:index_value>EPS</d:index_value><d:index_title>EPS</d:index_title></d:index>
+	<h1>EPS</h1>
+	<p>A se vedea <a href='x-dictionary:r:Encapsulated_Postscript:com.apple.dictionary.AppleDictionary'><b>Encapsulated Postscript</b></a></p>
+</d:entry>
+
+<d:entry id="Encapsulated_Postscript">
+	<d:index><d:index_value>Encapsulated Postscript</d:index_value><d:index_title>Encapsulated Postscript</d:index_title></d:index>
+	<h1>Encapsulated Postscript</h1>
+	<p>Abreviat EPS. Un format de fișier bazat pe limbajul PostScript utilizat pentru tipărirea de text și grafică. Un fișier EPS conține o descriere a textului și graficii care poate fi utilizată de o imprimantă, și poate fi copiat și partajat de multiple computere aplicații.</p>
+</d:entry>
+
+<d:entry id="equalizer">
+	<d:index><d:index_value>egalizor</d:index_value><d:index_title>egalizor</d:index_title></d:index>
+	<h1>egalizor</h1>
+	<p>Abreviat EQ. Un control audio care funcționează asemenea controalelor pentru sunete înalte și joase ale unui sistem stereo, dar cu mai multă putere și flexibilitate. Utilizați un egalizor pentru a realiza acordul fin al anumitor frecvențe din spectrul sonor pentru a personaliza muzica pentru diferite genuri, medii de audiție (diferite încăperi din casa dvs, de exemplu) și metode de reproducere (precum difuzoare sau căști). În alicația iTunes, puteți ajusta configurările egalizorului manual sau puteți alege dintre peste 20 de preconfigurări ale celor mai frecvent utilizate configurări EQ.</p>
+</d:entry>
+
+<d:entry id="Event">
+	<d:index><d:index_value>Eveniment</d:index_value><d:index_title>Eveniment</d:index_title></d:index>
+	<h1>Eveniment</h1>
+	<p>Aplicațiile iMovie și iPhoto de pe computerele Macintosh organizează bibliotecile dvs. video și fotografice după evenimente. Un eveniment grupează videoclipurile sau pozele realizate într-o anumită perioadă de timp, precum pozele făcute în decursul unei petreceri de nuntă sau a unei duminici petrecute la plajă. Vă puteți organiza videoclipurile și pozele prin comasarea și divizarea evenimentelor, precum și prin crearea propriilor dvs. nume pentru evenimente.</p>
+</d:entry>
+
+<d:entry id="EXIF">
+	<d:index><d:index_value>EXIF</d:index_value><d:index_title>EXIF</d:index_title></d:index>
+	<h1>EXIF</h1>
+	<p>Exchangeable Image File; o specificație pentru formatul fișierelor de imagine utilizat de camerele digitale.</p>
+</d:entry>
+
+<d:entry id="Exchangeable_Image_File">
+	<d:index><d:index_value>Exchangeable Image File</d:index_value><d:index_title>Exchangeable Image File</d:index_title></d:index>
+	<h1>Exchangeable Image File</h1>
+	<p>A se vedea <a href='x-dictionary:r:EXIF:com.apple.dictionary.AppleDictionary'><b>EXIF</b></a>.</p>
+</d:entry>
+
+<d:entry id="Exposé">
+	<d:index><d:index_value>Exposé</d:index_value><d:index_title>Exposé</d:index_title></d:index>
+	<h1>Exposé</h1>
+	<p>O funcționalitate din Mac OS X care vă permite degajați ecranul prin ordonarea sau ascunderea temporară a ferestrelor, uzual prin apăsarea tastei F11 de pe tastatură. Funcționalitatea Exposé vă ajută să vizualizați anumite ferestre sau desktopul.</p>
+</d:entry>
+
+<d:entry id="ExpressCard">
+	<d:index><d:index_value>ExpressCard</d:index_value><d:index_title>ExpressCard</d:index_title></d:index>
+	<h1>ExpressCard</h1>
+	<p>Un card de extensie disponibil pentru computere, inclusiv computere portabile Macintosh. Adăugarea unui ExpressCard la computerul dvs. vă permite să-i extindeți capacitățile. Puteți utiliza un ExpressCard pentru a conecta unități de hard disc, cititoare de carduri compact Flash și multe altele. Computerele portabile Macintosh utilizează standardul ExpressCard/34.</p>
+</d:entry>
+
+<d:entry id="extended_desktop">
+	<d:index><d:index_value>desktop extins</d:index_value><d:index_title>desktop extins</d:index_title></d:index>
+	<h1>desktop extins</h1>
+	<p>O funcționalitate din aplicația Preferințe sistem din Mac OS X. În cazul în care computerul dvs. este conectat la multiple dispozitive de afișaj, inclusiv televizoare și proiectoare, puteți configura panoul Afișaje din Preferințe pentru a afișa imaginea de pe desktopul dvs. ca o imagine continuă de-a lungul tuturor dispozitivelor.</p>
+</d:entry>
+
+<d:entry id="family_controls">
+	<d:index><d:index_value>controale familiale</d:index_value><d:index_title>controale familiale</d:index_title></d:index>
+	<h1>controale familiale</h1>
+	<p>A se vedea <a href='x-dictionary:r:parental_controls:com.apple.dictionary.AppleDictionary'><b>controale parentale</b></a>.</p>
+</d:entry>
+
+<d:entry id="fast_user_switching">
+	<d:index><d:index_value>comutare rapidă a utilizatorului</d:index_value><d:index_title>comutare rapidă a utilizatorului</d:index_title></d:index>
+	<h1>comutare rapidă a utilizatorului</h1>
+	<p>O funcționalitate Mac OS X care permite mai multor utilizatori să rămână autentificați pe un computer simultan. Atunci când comutarea rapidă a utilizatorilor este activată, conturile de utilizator disponibile apar într-un meniu din colțul din dreapta sus a barei de meniu. Puteți comuta la un cont diferit prin selectarea acestuia din meniu. Contul anterior rămâne autentificat, cu toate aplicațiile și documentele curente deschise, astfel încât să puteți comuta înapoi cu ușurință.</p>
+</d:entry>
+
+<d:entry id="FileVault">
+	<d:index><d:index_value>FileVault</d:index_value><d:index_title>FileVault</d:index_title></d:index>
+	<h1>FileVault</h1>
+	<p>O aplicație care este inclusă cu Mac OS X pentru criptarea și protejarea fișierelor de pe computerele Macintosh.</p>
+</d:entry>
+
+<d:entry id="Final_Cut">
+	<d:index><d:index_value>Final Cut</d:index_value><d:index_title>Final Cut</d:index_title></d:index>
+	<h1>Final Cut</h1>
+	<p> O suită de aplicații de editare video de la Apple, care poate fi utilizată pentru a edita conținut video provenit de la echipamente video profesionale și de la camere video digitale de uz personal. Produsele Final Cut sunt utilizate de videaști profesioniști și amatori. Aplicațiile Final Cut applications încarcă și afișează conținut video pe un computer Macintosh, acolo unde poate fi editat și procesat.</p>
+</d:entry>
+
+<d:entry id="Finder">
+	<d:index><d:index_value>Finder</d:index_value><d:index_title>Finder</d:index_title></d:index>
+	<h1>Finder</h1>
+	<p>Parte din Mac OS. Finder organizează și afișează vizualizări ale fișierelor și dosarelor de pe computerul dvs. și de pe orice discuri atașate la computerul dvs. De asemenea, Finder permite căutarea și gestionarea informațiilor de pe discuri.</p>
+</d:entry>
+
+<d:entry id="FireWire">
+	<d:index><d:index_value>FireWire</d:index_value><d:index_title>FireWire</d:index_title></d:index>
+	<h1>FireWire</h1>
+	<p>Un tip de cablu, conector și software care permite o conexiune de mare viteză între două computere sau între un computer și un dispozitiv atașat la acesta, precum o cameră video digitală.</p>
+</d:entry>
+
+<d:entry id="floating_object">
+	<d:index><d:index_value>obiect flotant</d:index_value><d:index_title>obiect flotant</d:index_title></d:index>
+	<h1>obiect flotant</h1>
+	<p>În aplicația de procesare de text și machetare Pages, o imagine, un element grafic sau un alt obiect care este fixat într-o anumită poziție dintr-o pagină. Poziția unui obiect flotant nu se modifică atunci când adăugați text sau elemente grafice suplimentare în pagină. A se vedea și obiect intern.</p>
+</d:entry>
+
+<d:entry id="Font_Book">
+	<d:index><d:index_value>Font Book</d:index_value><d:index_title>Font Book</d:index_title></d:index>
+	<h1>Font Book</h1>
+	<p>O aplicație de gestionare a fonturilor inclusă cu Mac OS X. Font Book vă permite previzualizarea și instalarea fonturilor, gruparea fonturilor în colecții, activarea sau dezactivarea fonturilor individuale sau a colecțiilor și exportarea fonturilor pe un alt computer.</p>
+</d:entry>
+
+<d:entry id="formula">
+	<d:index><d:index_value>formulă</d:index_value><d:index_title>formulă</d:index_title></d:index>
+	<h1>formulă</h1>
+	<p>O expresie matematică utilizând operații pentru a deduce o valoare. În aplicația de calcul tabelar Numbers, puteți adăuga o formulă într-o celulă de tabel pentru a afișa o valoare derivată din valorile din alte celule de tabel.</p>
+</d:entry>
+
+<d:entry id="frame_range">
+	<d:index><d:index_value>interval de cadre</d:index_value><d:index_title>interval de cadre</d:index_title></d:index>
+	<h1>interval de cadre</h1>
+	<p>O serie de cadre video care constituie o parte dintr-un clip video sau întregul clip. În aplicația iMovie, puteți selecta și lucra cu intervale de cadre.</p>
+</d:entry>
+
+<d:entry id="Front_Row">
+	<d:index><d:index_value>Front Row</d:index_value><d:index_title>Front Row</d:index_title></d:index>
+	<h1>Front Row</h1>
+	<p>O alicație care era inclusă cu unele versiuni Mac OS X. Front Row vă permite să explorați filme, muzică și poze pe de computerul dvs. utilizând Apple Remote.</p>
+</d:entry>
+
+<d:entry id="full_screen">
+	<d:index><d:index_value>mod de afișare pe tot ecranul</d:index_value><d:index_title>mod de afișare pe tot ecranul</d:index_title></d:index>
+	<h1>mod de afișare pe tot ecranul</h1>
+	<p>În iPhoto, o modalitate de vizualizare a pozelor dvs. care utilizează pentru afișare întregul ecran, în locul unei părți a acestuia.</p>
+</d:entry>
+
+<d:entry id="function">
+	<d:index><d:index_value>funcție</d:index_value><d:index_title>funcție</d:index_title></d:index>
+	<h1>funcție</h1>
+	<p>În aplicația pentru calcul tabelar Numbers, o operație denumită pe care o puteți include într-o formulă pentru a efectua un calcul sau pentru a manipula datele dintr-o celulă de tabel. Aplicația Numbers furnizeză funcții pentru efectuarea de operații matematice sau financiare uzuale, extragerea valorilor celulelor în urma unei căutări, manipularea șirurilor de text sau obținerea datei și orei curente, printre altele. Fiecare funcție are un nume urmat de unul sau mai multe argumente între paranteze.</p>
+</d:entry>
+
+<d:entry id="GarageBand">
+	<d:index><d:index_value>GarageBand</d:index_value><d:index_title>GarageBand</d:index_title></d:index>
+	<h1>GarageBand</h1>
+	<p>Parte din suita de aplicații creative iLife de la Apple Inc. GarageBand vă permite să creați, să interpretați și să înregistrați muzică originală. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/ilife/garageband/'>pagina web GarageBand</a>.</p>
+</d:entry>
+
+<d:entry id="Grab">
+	<d:index><d:index_value>Grab</d:index_value><d:index_title>Grab</d:index_title></d:index>
+	<h1>Grab</h1>
+	<p>O aplicație de capturare a imaginilor de pe ecran inclusă cu Mac OS X. Aplicația Grab este utilizată pentru a realiza instantanee (poze) ale ecranului computerului, integral sau parțial.</p>
+</d:entry>
+
+<d:entry id="Gracenote,_Inc.">
+	<d:index><d:index_value>Gracenote, Inc.</d:index_value><d:index_title>Gracenote, Inc.</d:index_title></d:index>
+	<h1>Gracenote, Inc.</h1>
+	<p>O companie care întreține o bază de date de informații despre conținutul CD-urilor audio. Gracenote furnizează aplicații și date software care permit gestionarea și căutarea fișierelor multimedia digitale. Diferite aplicații software pentru computer, inclusiv iTunes, utilizează baza de date de compact-discuri Gracenote (CDDB).</p>
+</d:entry>
+
+<d:entry id="group_account">
+	<d:index><d:index_value>cont de grup</d:index_value><d:index_title>cont de grup</d:index_title></d:index>
+	<h1>cont de grup</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, un tip de cont care constă într-unul sau mai multe conturi de utilizator. Un cont de grup (numit și “grup de coturi”) este utilizat pentru configurarea privilegiilor pentru fișierele partajate într doi sau mai mulți utilizatori. Nu puteți face login la un computer utilizând numele unui cont de grup așa cum puteți cu majoritatea celorlalte conturi de utilizatori.</p>
+</d:entry>
+
+<d:entry id="GSM">
+	<d:index><d:index_value>GSM</d:index_value><d:index_title>GSM</d:index_title></d:index>
+	<h1>GSM</h1>
+	<p>Abreviere pentru Global System for Mobile Communications, standardul cel mai răspândit pentru utilizarea telefoanelor mobile.</p>
+</d:entry>
+
+<d:entry id="guest_account">
+	<d:index><d:index_value>cont de vizitator</d:index_value><d:index_title>cont de vizitator</d:index_title></d:index>
+	<h1>cont de vizitator</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, un tip de cont pe care îl puteți crea pentru a permite altora să utilizeze computerul dvs. temporar, fără a crea un cont de utilizator separat pentru fiecare vizitator. Un vizitator poate face login la computer fără o parolă. Puteți utiliza controalele parentale pentru a gestiona un cont de vizitator. Un vizitator nu poate să modifice alte conturi, să altereze configurările computerului sau să facă login de la distanță. Fișierele create de un vizitator utilizând un cont de vizitator sunt șterse atunci când vizitatorul face logout.</p>
+</d:entry>
+
+<d:entry id="GUID">
+	<d:index><d:index_value>GUID</d:index_value><d:index_title>GUID</d:index_title></d:index>
+	<h1>GUID</h1>
+	<p>Globally unique identifier (Identificator unic global). Un șir hexazecimal care identifică în mod unic un cont de utilizator, un cont de grup sau o listă de computere. Este utilizat și pentru a furniza identitatea utilizatorului și a grupului pentru permisiunile listei ce control al accesului (ACL) și pentru a asocia utilizatorii individuali cu apartenențele la grupuri și grupuri imbricate. GUID-urile sunt valori pe 128 de biți, ceea ce face ca generarea de GUID-uri duplicate să fie extrem de improbabilă.</p>
+</d:entry>
+
+<d:entry id="GUID_partition">
+	<d:index><d:index_value>partiție GUID</d:index_value><d:index_title>partiție GUID</d:index_title></d:index>
+	<h1>partiție GUID</h1>
+	<p>O schemă de partiționare bazată pe un identificator unic global (GUID). Pe computerele Macintosh bazate pe Intel, Mac OS X poate fi instalat doar pe discuri cu schema de partiționare GUID.</p>
+</d:entry>
+
+<d:entry id="Gutenprint">
+	<d:index><d:index_value>Gutenprint</d:index_value><d:index_title>Gutenprint</d:index_title></d:index>
+	<h1>Gutenprint</h1>
+	<p>Cunoscută anterior sub numele Gimp-Print, este o colecție de programe software de tipărire “open source” incluzând fișiere PPD (Printer PostScript Description) care face parte din Mac OS X. Utilizați software-ul Gutenprint dacă pentru imprimanta dvs. nu este disponibil un alt software sau dacă se pare că software-ul imprimantei nu funcționează corespunzător.</p>
+</d:entry>
+
+<d:entry id="hardware_port">
+	<d:index><d:index_value>port hardware</d:index_value><d:index_title>port hardware</d:index_title></d:index>
+	<h1>port hardware</h1>
+	<p>Oricare dintre conectorii unui computer unde pot fi atașate dispozitive, precum tastaturi și imprimante. Porturile hardware uzuale includ USB, Firewire și Ethernet.</p>
+</d:entry>
+
+<d:entry id="HFS">
+	<d:index><d:index_value>HFS</d:index_value><d:index_title>HFS</d:index_title></d:index>
+	<h1>HFS</h1>
+	<p>A se vedea <a href='x-dictionary:r:Mac_OS_Standard_format:com.apple.dictionary.AppleDictionary'><b>formatul Mac OS Standard</b></a>.</p>
+</d:entry>
+
+<d:entry id="HFS_Plus">
+	<d:index><d:index_value>HFS Plus</d:index_value><d:index_title>HFS Plus</d:index_title></d:index>
+	<h1>HFS Plus</h1>
+	<p>A se vedea <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>formatul Mac OS Extended</b></a>.</p>
+</d:entry>
+
+<d:entry id="home_folder">
+	<d:index><d:index_value>dosar de reședință</d:index_value><d:index_title>dosar de reședință</d:index_title></d:index>
+	<h1>dosar de reședință</h1>
+	<p>Un dosar creat pentru fiecare utilizator al unui computer atunci când contul utilizatorului este configurat pentru prima dată. Dosarul de reședință nu este numit de fapt “Reședință”; numele său este același cu numele scurt al utilizatorului specificat în contul de utilizator. Dacă sunteți singurul utilizator al computerului dvs, există un singur cont de utilizator și un dosar de reședință. Dosarul de reședință stochează fișierele dvs. personale, inclusiv documente, muzică, imagini, configurări ale preferințelor și altele.</p>
+</d:entry>
+
+<d:entry id="HyperCard">
+	<d:index><d:index_value>HyperCard</d:index_value><d:index_title>HyperCard</d:index_title></d:index>
+	<h1>HyperCard</h1>
+	<p>O aplicație Apple, lansată inițial în 1987 și abandonată în 2004. HyperCard a fost una dintre primele aplicații hypermedia de succes. Era utilizată pentru a crea baze de date, prezentări, jocuri, materiale didactice și altele.</p>
+</d:entry>
+
+<d:entry id="HyperTalk">
+	<d:index><d:index_value>HyperTalk</d:index_value><d:index_title>HyperTalk</d:index_title></d:index>
+	<h1>HyperTalk</h1>
+	<p>Un limbaj de programare utilizat cu Apple HyperCard, lansat inițial în 1987 și abandonat în 2004. Audiența limbajului HyperTalk consta în principal în programatorii începători. Programele HyperTalk (numite “scripturi”) sunt similare cu limba engleză scrisă.</p>
+</d:entry>
+
+<d:entry id="iBook">
+	<d:index><d:index_value>iBook</d:index_value><d:index_title>iBook</d:index_title></d:index>
+	<h1>iBook</h1>
+	<p>O linie de computere portabile disponibile de la Apple Inc. între 1999 și 2006. Computerele iBook erau destinate utilizării casnice și educaționale. Linia iBook a fost înlocuită de MacBook în 2006.</p>
+</d:entry>
+
+<d:entry id="iBooks_app">
+	<d:index><d:index_value>iBooks (aplicație)</d:index_value><d:index_title>iBooks (aplicație)</d:index_title></d:index>
+	<h1>iBooks (aplicație)</h1>
+	<p>O aplicație Apple disponibilă pentru iPhone, iPod touch și iPad, care vă permite să descărcați și să citiți conținut de tip “e-book” (cărți electronice în formatul ePub).</p>
+</d:entry>
+
+<d:entry id="iCal">
+	<d:index><d:index_value>iCal</d:index_value><d:index_title>iCal</d:index_title></d:index>
+	<h1>iCal</h1>
+	<p>O aplicație Apple tip calendar care este inclusă cu Mac OS X și vă permite să țineți evidența programărilor și a listelor cu lucruri de făcut. De asemenea, puteți utiliza iCal pentru a sincroniza informații între computere, telefoane și alte dispozitive.</p>
+</d:entry>
+
+<d:entry id="iChat">
+	<d:index><d:index_value>iChat</d:index_value><d:index_title>iChat</d:index_title></d:index>
+	<h1>iChat</h1>
+	<p>O aplicație Apple pentru mesagerie instantanee inclusă cu Mac OS X. Utilizând iChat, puteți schimba mesaje cu abonații MobileMe, precum și cu persoane utilizând alte programe pentru mesagerie instantanee precum AOL Instant Messenger (AIM), Bonjour, Google Talk și Jabber.</p>
+</d:entry>
+
+<d:entry id="iChat_Theater">
+	<d:index><d:index_value>iChat Theater</d:index_value><d:index_title>iChat Theater</d:index_title></d:index>
+	<h1>iChat Theater</h1>
+	<p>O funcționalitate a aplicației iChat care vă permite să prezentați fișiere, poze, diaporame și filme într-o fereastră de video iChat. Dvs. controlați prezentarea de pe sistemul dvs, în vreme ce prietenii dvs. o vizionează pe ecranele lor.</p>
+</d:entry>
+
+<d:entry id="iCloud">
+	<d:index><d:index_value>iCloud</d:index_value><d:index_title>iCloud</d:index_title></d:index>
+	<h1>iCloud</h1>
+	<p>Serviciul “cloud” de la Apple, care stochează, printre altele, muzica, pozele, aplicațiile, contactele și calendarele dvs. și le transmite wireless pe toate dispozitivele dvs. iCloud este perfect integrat cu aplicațiile dvs, astfel încât totul se petrece automat. Mai multe informații sunt disponibile la <a href='http://www.apple.com/ro/icloud/'>www.apple.com/ro/icloud</a>.</p>
+</d:entry>
+
+<d:entry id="icon">
+	<d:index><d:index_value>pictogramă</d:index_value><d:index_title>pictogramă</d:index_title></d:index>
+	<h1>pictogramă</h1>
+	<p>Un simbol care reprezintă o aplicație, un fișier sau un dosar.</p>
+</d:entry>
+
+<d:entry id="iDisk">
+	<d:index><d:index_value>iDisk</d:index_value><d:index_title>iDisk</d:index_title></d:index>
+	<h1>iDisk</h1>
+	<p>Spațiu de stocare personal de pe serverele Internet Apple, disponibil abonaților MobileMe. Puteți utiliza iDisk-ul propriu pentru găzduirea site-urilor web, stocarea sau backupul documentelor și partajarea fișierelor cu oricine dispune de o conexiune Internet.</p>
+</d:entry>
+
+<d:entry id="iDVD">
+	<d:index><d:index_value>iDVD</d:index_value><d:index_title>iDVD</d:index_title></d:index>
+	<h1>iDVD</h1>
+	<p>O aplicație Apple care vă permite să creați DVD-uri personalizate conținând filme și fotografii digitale. iDVD include teme și șabloane concepute profesional. iDVD face parte din suita software iLife. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ilife/idvd/'>pagina web iDVD</a>.</p>
+</d:entry>
+
+<d:entry id="iDVD_themes">
+	<d:index><d:index_value>teme iDVD</d:index_value><d:index_title>teme iDVD</d:index_title></d:index>
+	<h1>teme iDVD</h1>
+	<p>O funcționalitate a aplicației iDVD de pe computerele Macintosh. Temele iDVD conferă un aspect profesional meniurilor din proiectele iDVD. Temele includ un grup (sau o “familie”) de meniuri care utilizează un set unitar de elemente de design. O familie tematică tipică include aranjamentele pentru meniul principal al unui proiect, meniul de selectare a scenelor și un meniu pentru conținutul suplimentar.</p>
+</d:entry>
+
+<d:entry id="iLife">
+	<d:index><d:index_value>iLife</d:index_value><d:index_title>iLife</d:index_title></d:index>
+	<h1>iLife</h1>
+	<p>O suită de aplicații Apple, care furnizează instrumente pentru a crea muzică, filme, fotografii digitale, DVD-uri personalizate și site-uri web. Suita iLife include aplicațiile GarageBand, iPhoto, iMovie, iDVD, iTunes și iWeb. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/ilife/'>pagina web iLife</a>.</p>
+</d:entry>
+
+<d:entry id="iMac">
+	<d:index><d:index_value>iMac</d:index_value><d:index_title>iMac</d:index_title></d:index>
+	<h1>iMac</h1>
+	<p>O linie de computere desktop disponibile de la Apple Inc. Computerele iMac au fost lansate în 1998.</p>
+</d:entry>
+
+<d:entry id="Image_Capture">
+	<d:index><d:index_value>Achiziție imagine</d:index_value><d:index_title>Achiziție imagine</d:index_title></d:index>
+	<h1>Achiziție imagine</h1>
+	<p>O aplicație Apple care vă permite să transferați imagini de pe camere digitale sau scanere atașate la computerul dvs. sau conectate la o rețea.</p>
+</d:entry>
+
+<d:entry id="iMix">
+	<d:index><d:index_value>iMix</d:index_value><d:index_title>iMix</d:index_title></d:index>
+	<h1>iMix</h1>
+	<p>O listă de redare iTunes care este publicată pentru a fi partajată cu alții.</p>
+</d:entry>
+
+<d:entry id="iMovie">
+	<d:index><d:index_value>iMovie</d:index_value><d:index_title>iMovie</d:index_title></d:index>
+	<h1>iMovie</h1>
+	<p>O aplicație Apple care vă permite să importați materiale video digitale de pe o cameră, să editați conținutul video, să adăugați sunet și efecte și să îl salvați sub forma unui film care poate fi publicat pe un site web sau pe un disc. iMovie face parte din suita software iLife. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/ilife/imovie/'>pagina web iMovie</a>.</p>
+</d:entry>
+
+<d:entry id="infrared_receiver">
+	<d:index><d:index_value>receptor infraroșu</d:index_value><d:index_title>receptor infraroșu</d:index_title></d:index>
+	<h1>receptor infraroșu</h1>
+	<p>Abreviat “IR”. Un dispozitiv care utilizează spectrul electromagnetic infraroșu pentry comunicații wireless. Majoritatea computerelor Macintosh includ un port infraroșu pentru a recepționa semnale de la Apple Remote.</p>
+</d:entry>
+
+<d:entry id="Ink">
+	<d:index><d:index_value>Ink</d:index_value><d:index_title>Ink</d:index_title></d:index>
+	<h1>Ink</h1>
+	<p>Tehnologie de recunoaștere a scrierii de mână integrată în computerele Macintosh. Ink funcționează cu o tabletă grafică și un stilou atașate la computer. Atunci când scrieți pe tabletă, Ink traduce scrierea în caractere tipografice.</p>
+</d:entry>
+
+<d:entry id="Inkwell">
+	<d:index><d:index_value>Inkwell</d:index_value><d:index_title>Inkwell</d:index_title></d:index>
+	<h1>Inkwell</h1>
+	<p>A se vedea <b><a href='x-dictionary:r:Ink:com.apple.dictionary.AppleDictionary'>Ink</a></b>.</p>
+</d:entry>
+
+<d:entry id="inline_object">
+	<d:index><d:index_value>obiect intern</d:index_value><d:index_title>obiect intern</d:index_title></d:index>
+	<h1>obiect intern</h1>
+	<p>În aplicația de procesare de text și machetare Pages, o imagine, un element grafic sau un alt obiect care este încorporat în fluxul de text. Poziția unui obiect intern se modifică atunci când adăugați text sau elemente grafice suplimentare în pagină. Dacă introduceți mai mult text deasupra unui obiect intern, acesta este împins continuu pe măsură ce cantitatea de text sporește.</p>
+</d:entry>
+
+<d:entry id="Input_menu">
+	<d:index><d:index_value>Meniu de introducere</d:index_value><d:index_title>Meniu de introducere</d:index_title></d:index>
+	<h1>Meniu de introducere</h1>
+	<p>Meniul utilizat pentru comutarea între metodele de introducere, atunci când mai multe metode de introducere sunt utilizate pe un computer.</p>
+</d:entry>
+
+<d:entry id="input_method">
+	<d:index><d:index_value>metodă de introducere</d:index_value><d:index_title>metodă de introducere</d:index_title></d:index>
+	<h1>metodă de introducere</h1>
+	<p>O aplicație care le permite utilizatorilor de computer introducerea de caractere complexe, precum caractere din limba chineză, japoneză și coreeană, utilizând o tastatură occidentală.</p>
+</d:entry>
+
+<d:entry id="inspector">
+	<d:index><d:index_value>inspector</d:index_value><d:index_title>inspector</d:index_title></d:index>
+	<h1>inspector</h1>
+	<p>În aplicațiile software, o fereastră care afișează configurările curente pentru textul sau elementele grafice selectate și vă permite să modificați rapid configurările concomitent cu vizualizarea rezultatelor. Numeroase aplicații Mac OS X utilizează ferestre inspector, inclusiv Pages, Keynote și Numbers.</p>
+</d:entry>
+
+<d:entry id="installer">
+	<d:index><d:index_value>program de instalare</d:index_value><d:index_title>program de instalare</d:index_title></d:index>
+	<h1>program de instalare</h1>
+	<p>Un program inclus cu Mac OS X. Programul de instalare extrage și instalează fișierele din “pachete” - fișiere cu extensia .pkg adăugată numelor lor. Software-ul pentru computerele Macintosh utilizând Mac OS X este disponibil uzual sub forma fișierelor .pkg.</p>
+</d:entry>
+
+<d:entry id="Instant_Alpha">
+	<d:index><d:index_value>Alfa instantaneu</d:index_value><d:index_title>Alfa instantaneu</d:index_title></d:index>
+	<h1>Alfa instantaneu</h1>
+	<p>O funcționalitate disponibilă în aplicații Mac OS X precum Pages, Aperture și Previzualizare. Pentru o imagine care are un fundal monocolor simplu, precum o persoană pe fondul unui cer albastru senin, Alfa instantaneu vă permite să eliminați fundalul astfel încât partea rămasă din imagine să aibă un fundal transparent.</p>
+</d:entry>
+
+<d:entry id="Interface_Builder">
+	<d:index><d:index_value>Interface Builder</d:index_value><d:index_title>Interface Builder</d:index_title></d:index>
+	<h1>Interface Builder</h1>
+	<p>Un program de la Apple Inc. pe care dezvoltatorii îl pot utiliza pentru a crea interfețe grafice de utilizare pentru aplicațiile Mac OS X și iPhone.</p>
+</d:entry>
+
+<d:entry id="Internet_Connect">
+	<d:index><d:index_value>Conectare Internet</d:index_value><d:index_title>Conectare Internet</d:index_title></d:index>
+	<h1>Conectare Internet</h1>
+	<p>O aplicație inclusă cu Mac OS X. Aplicația Conectare Internet vă permite să inițați o conexiune dial-up, PPPoE (Ethernet), sau VPN (Virtual Private Network), sau să conectați o stație de bază AirPort la Internet. De asemenea, puteți utiliza Conectare Internet pentru gestionarea conexiunilor la echipamente Bluetooth precum imprimantele.</p>
+</d:entry>
+
+<d:entry id="Internet_port">
+	<d:index><d:index_value>port Internet</d:index_value><d:index_title>port Internet</d:index_title></d:index>
+	<h1>port Internet</h1>
+	<p>Un număr care indică protocolul utilizat de un server de pe Internet. Serverele web utilizeză în mod normal portul 80.</p>
+</d:entry>
+
+<d:entry id="invisibles">
+	<d:index><d:index_value>invizibile</d:index_value><d:index_title>invizibile</d:index_title></d:index>
+	<h1>invizibile</h1>
+	<p>În aplicația de procesare de text și machetare Pages, precum și în alte aplicații de procesare de text, marcaje de formatare pe care în mod normal nu le vedeți. Invizibilele includ tabulatori, marcaje de paragrafe, întreruperi de pagină și de secțiune, spații și alte marcaje de formatare. Vă puteți ajusta preferințele pentru a afișa invizibilele.</p>
+</d:entry>
+
+<d:entry id="iOS">
+	<d:index><d:index_value>iOS</d:index_value><d:index_title>iOS</d:index_title></d:index>
+	<h1>iOS</h1>
+	<p>Sistemul de operare pentru iPhone, iPod touch, iPad și Apple TV.</p>
+</d:entry>
+
+<d:entry id="iPad">
+	<d:index><d:index_value>iPad</d:index_value><d:index_title>iPad</d:index_title></d:index>
+	<h1>iPad</h1>
+	<p>Un computer tabletă de la Apple Inc. În locul unei tastaturi sau claviaturi fizice, iPad include un ecran Multi-Touch și o tastatură și butoane virtuale. iPad rulează sistemul de operare iOS și multe dintre aplicațiile rulate de iPhone și iPod touch.</p>
+</d:entry>
+
+<d:entry id="iPhone">
+	<d:index><d:index_value>iPhone</d:index_value><d:index_title>iPhone</d:index_title></d:index>
+	<h1>iPhone</h1>
+	<p>O combinație între un telefon mobil, un player multimedia și un dispozitiv wireless pentru Internet de la Apple Inc. În locul unei tastaturi sau claviaturi fizice, iPhone include un ecran tactil, o tastatură și butoane virtuale. Pentru mai multe informații, consultați <a href='http://www.apple.com/ro/iphone/'>pagina web iPhone</a>.</p>
+</d:entry>
+
+<d:entry id="iPhoto">
+	<d:index><d:index_value>iPhoto</d:index_value><d:index_title>iPhoto</d:index_title></d:index>
+	<h1>iPhoto</h1>
+	<p>O aplicație Apple care vă permite să salvați fotografii digitale, să organizați pozele dvs. și să publicați pozele dvs. pe site-uri web, pe discuri și în albume tipărite. iPhoto face parte din suita software iLife. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/ilife/iphoto/'>pagina web iPhoto</a>.</p>
+</d:entry>
+
+<d:entry id="iPod">
+	<d:index><d:index_value>iPod</d:index_value><d:index_title>iPod</d:index_title></d:index>
+	<h1>iPod</h1>
+	<p>O linie de playere muzicale de la Apple Inc. Playerele iPod variază în dimensiune între playerul iPod shuffle și playerele iPod care acceptă redarea video. Playerele iPod pot importa muzică din Apple iTunes Store și de pe CD-uri. Sunt concepute pentru a funcționa cu iTunes, o aplicație disponibilă disponibilă atât pentru computere Macintosh cât și Windows.</p>
+</d:entry>
+
+<d:entry id="iPod_classic">
+	<d:index><d:index_value>iPod classic</d:index_value><d:index_title>iPod classic</d:index_title></d:index>
+	<h1>iPod classic</h1>
+	<p>Un player muzical portabil din linia de produse iPod de la Apple Inc. iPod classic oferă cel mai mult spațiu de stocare dintre modelele iPod.</p>
+</d:entry>
+
+<d:entry id="iPod_nano">
+	<d:index><d:index_value>iPod nano</d:index_value><d:index_title>iPod nano</d:index_title></d:index>
+	<h1>iPod nano</h1>
+	<p>Un player muzical portabil din linia de produse iPod de la Apple Inc. iPod nano include un ecran tactil și un tuner radio FM.</p>
+</d:entry>
+
+<d:entry id="iPod_shuffle">
+	<d:index><d:index_value>iPod shuffle</d:index_value><d:index_title>iPod shuffle</d:index_title></d:index>
+	<h1>iPod shuffle</h1>
+	<p>Cel mai mic player muzical portabil din linia de produse iPod de la Apple Inc.</p>
+</d:entry>
+
+<d:entry id="iPod_touch">
+	<d:index><d:index_value>de pe iPod touch-ul dvs.</d:index_value><d:index_title>de pe iPod touch-ul dvs.</d:index_title></d:index>
+	<h1>de pe iPod touch-ul dvs.</h1>
+	<p>Un player muzical portabil din linia de produse iPod de la Apple Inc. iPod touch beneficiază de un ecran tactil și include browserul web Safari.</p>
+</d:entry>
+
+<d:entry id="IR">
+	<d:index><d:index_value>IR</d:index_value><d:index_title>IR</d:index_title></d:index>
+	<h1>IR</h1>
+	<p>A se vedea <a href='x-dictionary:r:infrared_receiver:com.apple.dictionary.AppleDictionary'><b>receptor infraroșu</b></a>.</p>
+</d:entry>
+
+<d:entry id="iSight">
+	<d:index><d:index_value>iSight</d:index_value><d:index_title>iSight</d:index_title></d:index>
+	<h1>iSight</h1>
+	<p>O cameră digitală de la Apple Inc. O versiune mică a camerei iSight este integrată în unele computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="iSync">
+	<d:index><d:index_value>iSync</d:index_value><d:index_title>iSync</d:index_title></d:index>
+	<h1>iSync</h1>
+	<p>O aplicație inclusă cu Mac OS X. iSync sincronizează datele din iCal și Agendă cu MobileMe și cu diferite dispozitive, inclusiv playere muzicale portabile iPod, telefoane mobile și PDA-uri.</p>
+</d:entry>
+
+<d:entry id="iTunes">
+	<d:index><d:index_value>iTunes</d:index_value><d:index_title>iTunes</d:index_title></d:index>
+	<h1>iTunes</h1>
+	<p>O aplicația Apple care este inclusă cu Mac OS X și vă permite să importați muzică, podcasturi și video de pe CD-uri sau din iTunes Store; să organizați conținutul multimedia în albume și liste de redare personalizate; și să inscripționați acestea pe discuri sau să le transferați pe un iPod sau alt player multimedia. iTunes este utilizat frecvent și pe computerele bazate pe Windows.</p>
+</d:entry>
+
+<d:entry id="iWeb">
+	<d:index><d:index_value>iWeb</d:index_value><d:index_title>iWeb</d:index_title></d:index>
+	<h1>iWeb</h1>
+	<p>O aplicație Apple care vă permite să creați și să publicați pagini web fără a necesita cunoștințe în domeniul limbajelor de programare web. iWeb conține șabloane concepute profesional pentru bloguri și alte tipuri de pagini, și permite tragerea și plasarea de fișiere multimedia precum pozele și filmele. iWeb face parte din suita software iLife. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/ilife/iweb/'>pagina web iWeb</a>.</p>
+</d:entry>
+
+<d:entry id="iWork">
+	<d:index><d:index_value>iWork</d:index_value><d:index_title>iWork</d:index_title></d:index>
+	<h1>iWork</h1>
+	<p>O suită de aplicații de productivitate Apple concepute pentru crearea și publicarea documentelor și prezentărilor. Suita iWork include Keynote pentru crearea de prezentări de calitate cinematografică, Pages pentru procesarea de text și Numbers pentru crearea de foi de calcul tabelar. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/iwork/'>pagina web iWork</a>.</p>
+</d:entry>
+
+<d:entry id="Jabber">
+	<d:index><d:index_value>Jabber</d:index_value><d:index_title>Jabber</d:index_title></d:index>
+	<h1>Jabber</h1>
+	<p>O aplicație “open source” de mesagerie instantanee online.</p>
+</d:entry>
+
+<d:entry id="Jaguar">
+	<d:index><d:index_value>Jaguar</d:index_value><d:index_title>Jaguar</d:index_title></d:index>
+	<h1>Jaguar</h1>
+	<p>Numele de marcă pentru Mac OS X versiunea 10.2, cea de-a treia versiune majoră a sistemului de operare pentru computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="Java">
+	<d:index><d:index_value>Java</d:index_value><d:index_title>Java</d:index_title></d:index>
+	<h1>Java</h1>
+	<p>O gamă de produse și specificații software pentru computere de la Sun Microsystems pentru dezvoltarea de aplicații care pot rula pe numeroase tipuri diferite de computere.</p>
+</d:entry>
+
+<d:entry id="Javascript">
+	<d:index><d:index_value>JavaScript</d:index_value><d:index_title>JavaScript</d:index_title></d:index>
+	<h1>JavaScript</h1>
+	<p>Un limbaj de scripting utilizat deseori în paginile web pentru a gestiona efecte speciale și pentru a furniza interactivitate.</p>
+</d:entry>
+
+<d:entry id="Journaled_format">
+	<d:index><d:index_value>format jurnalizat</d:index_value><d:index_title>format jurnalizat</d:index_title></d:index>
+	<h1>format jurnalizat</h1>
+	<p>A se vedea <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>formatul Mac OS Extended</b></a>.</p>
+</d:entry>
+
+<d:entry id="Ken_Burns_effect">
+	<d:index><d:index_value>efect Ken Burns</d:index_value><d:index_title>efect Ken Burns</d:index_title></d:index>
+	<h1>efect Ken Burns</h1>
+	<p>Un efect special, numit după documentaristul american Ken Burns, care creează mișcare peste o imagine statică astfel încât camera pare să gliseze de-a lungul subiectului (panoramare), sau să se apropie sau să se îndepărteze de acesta (zoom). Puteți utiliza efectul Ken Burns în aplicația iMovie.</p>
+</d:entry>
+
+<d:entry id="Kerberos">
+	<d:index><d:index_value>Kerberos</d:index_value><d:index_title>Kerberos</d:index_title></d:index>
+	<h1>Kerberos</h1>
+	<p>Un protocol de autentificare pentru rețelele de computere care permite utilizatorilor comunicând printr-o rețea nesecurizată să își confirme reciproc identitatea într-o manieră securizată.</p>
+</d:entry>
+
+<d:entry id="kernel">
+	<d:index><d:index_value>kernel</d:index_value><d:index_title>kernel</d:index_title></d:index>
+	<h1>kernel</h1>
+	<p>Partea unui sistem de operare responsabilă de gestionarea memoriei, alocarea resurselor și alte servicii de nivel jos esențiale pentru sistem.</p>
+</d:entry>
+
+<d:entry id="kernel_panic">
+	<d:index><d:index_value>panică de kernel</d:index_value><d:index_title>panică de kernel</d:index_title></d:index>
+	<h1>panică de kernel</h1>
+	<p>Un tip de eroare care survine atunci când nucleul (kernelul) unui sistem de operare recepționează o instrucțiune care este într-un format neprevăzut, sau pe care nu o poate procesa corespunzător. O panică de kernel poate surverni, de asemenea, atunci când sistemul de operare este incapabil să se recupereze în urma altor tipuri de erori. O panică de kernel poate fi cauzată de software deteriorat sau incompatibil sau, mai rar, de hardware deteriorat sau incompatibil.</p>
+</d:entry>
+
+<d:entry id="Keyboard_Viewer">
+	<d:index><d:index_value>Vizualizare tastatură</d:index_value><d:index_title>Vizualizare tastatură</d:index_title></d:index>
+	<h1>Vizualizare tastatură</h1>
+	<p>O aplicație inclusă cu Mac OS X. Puteți utiliza Vizualizare tastatură pentru a vedea aranjamentul caracterelor pe tastatură pentru limba dvs. selectată și pentru a vedea și introduce caractere utilizate în alte limbi decât limba selectată de dvs.</p>
+</d:entry>
+
+<d:entry id="keychain">
+	<d:index><d:index_value>portchei</d:index_value><d:index_title>portchei</d:index_title></d:index>
+	<h1>portchei</h1>
+	<p>Un set stocat de parole. De exemplu, un portchei ar putea stoca parolele pentru aplicații, servere și site-uri web pe care le utilizați la serviciu, în timp ce un alt portchei ar putea stoca toate parolele pe care le utilizați pentru cumpărături online. Portcheile reduc numărul de parole pentru care trebuie să țineți evidența.</p>
+</d:entry>
+
+<d:entry id="Keychain_Access">
+	<d:index><d:index_value>Keychain Access</d:index_value><d:index_title>Keychain Access</d:index_title></d:index>
+	<h1>Keychain Access</h1>
+	<p>Sistemul Apple de gestionare a parolelor inegrat în Mac OS X. Un portchei (keychain) stochează toate parolele, cheile și certificatele necesare pentru aplicații, servere și site-uri web. Atunci când deschideți un articol sau vă conectați la un dispozitiv care necesită o parolă, portcheiul o furnizează astfel încât să nu trebuiască să o introduceți personal.</p>
+</d:entry>
+
+<d:entry id="keychain_password">
+	<d:index><d:index_value>parolă de portchei</d:index_value><d:index_title>parolă de portchei</d:index_title></d:index>
+	<h1>parolă de portchei</h1>
+	<p>O parolă utilizată pentru blocarea și deblocarea unui portchei. Parola de portchei este aceeași cu parola dvs. de login cu excepția cazului în care utilizați Keychain Access pentru a crea o parolă diferită.</p>
+</d:entry>
+
+<d:entry id="Keynote">
+	<d:index><d:index_value>Keynote</d:index_value><d:index_title>Keynote</d:index_title></d:index>
+	<h1>Keynote</h1>
+	<p>O aplicație Apple pentru crearea de prezentări sub formă de diaporame de calitate profesională. Keynote include șabloane, teme, tranziții cinematice și text animat. Keynote face parte din setul de aplicații de productivitate iWork. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/iwork/keynote/'>pagina web Keynote</a>.</p>
+</d:entry>
+
+<d:entry id="kiosk_mode">
+	<d:index><d:index_value>mod chioșc</d:index_value><d:index_title>mod chioșc</d:index_title></d:index>
+	<h1>mod chioșc</h1>
+	<p>Un DVD care își începe redarea automat și este redat continuu după ce este introdus într-un player multimedia. Puteți crea discuri în modul chioșc utilizând iDVD, o aplicație Apple care vă permite crearea de DVD-uri personalizate.</p>
+</d:entry>
+
+<d:entry id="Launchpad">
+	<d:index><d:index_value>Launchpad</d:index_value><d:index_title>Launchpad</d:index_title></d:index>
+	<h1>Launchpad</h1>
+	<p>Un lansator de aplicații inclus în Mac OS X. Launchpad se accesează din Dock prin clic pe pictograma Launchpad. Launchpad conține pictogramele tuturor aplicațiilor aflate în dosarul Aplicații.</p>
+</d:entry>
+
+<d:entry id="Leopard">
+	<d:index><d:index_value>Leopard</d:index_value><d:index_title>Leopard</d:index_title></d:index>
+	<h1>Leopard</h1>
+	<p>Numele de marcă pentru Mac OS X versiunea 10.5, cea de-a șasea versiune majoră a sistemului de operare pentru computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="Lion">
+	<d:index><d:index_value>Lion</d:index_value><d:index_title>Lion</d:index_title></d:index>
+	<h1>Lion</h1>
+	<p>Numele de marcă pentru Mac OS X versiunea 10.7, cea de-a opta versiune majoră a sistemului de operare pentru computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="lock_icon">
+	<d:index><d:index_value>pictogramă lacăt</d:index_value><d:index_title>pictogramă lacăt</d:index_title></d:index>
+	<h1>pictogramă lacăt</h1>
+	<p>O pictogramă utilizată în aplicațiile Mac OS. În Finder, o pictogramă lacăt indică faptul că un fișier sau un dosar este protejat prin parolă. În bara de instrumente Safari, o pictogramă lacăt indică faptul că se vor cripta comunicațiile cu pagina web. O pictogramă lacăt este utilizată în multe alte aplicații pentru a indica faptul că trebuie introdusă o parolă pentru deschiderea unui articol sau pentru conectarea la un server.</p>
+</d:entry>
+
+<d:entry id="looping">
+	<d:index><d:index_value>buclă</d:index_value><d:index_title>buclă</d:index_title></d:index>
+	<h1>buclă</h1>
+	<p>Configurarea unui film sau a unei diaporame de a-și relua redarea imediat ce se termină și de a se repeta încontinuu. Puteți crea filme și diaporame în buclă utilizând iDVD, o aplicație Apple care vă permite să creați DVD-uri personalizate.</p>
+</d:entry>
+
+<d:entry id=".Mac">
+	<d:index><d:index_value>.Mac</d:index_value><d:index_title>.Mac</d:index_title></d:index>
+	<h1>.Mac</h1>
+	<p>O suită de servicii Internet concepută pentru utilizatorii computerelor Macintosh (se pronunță “dot Mac”). Înlocuită de <a href='x-dictionary:r:MobileMe:com.apple.dictionary.AppleDictionary'><b>MobileMe</b></a>.</p>
+</d:entry>
+
+<d:entry id="Mac">
+	<d:index><d:index_value>.Mac</d:index_value><d:index_title>.Mac</d:index_title></d:index>
+	<h1>.Mac</h1>
+	<p>Un computer Apple, cunoscut și cu numele de computer Macintosh. A se vedea și <a href='x-dictionary:r:Macintosh:com.apple.dictionary.AppleDictionary'><b>Macintosh</b></a>.</p>
+</d:entry>
+
+<d:entry id="MacBook">
+	<d:index><d:index_value>MacBook, MacBook Pro</d:index_value><d:index_title>MacBook, MacBook Pro</d:index_title></d:index>
+	<h1>MacBook, MacBook Pro</h1>
+	<p>O linie de computere portabile disponibile de la Apple Inc., bazate pe procesoarele Intel Core Duo și Intel Core 2 Duo. Lansat în 2006, computerul MacBook înlocuiește seriile de computere iBook G4 și PowerBook.</p>
+</d:entry>
+
+<d:entry id="MacBook_Air">
+	<d:index><d:index_value>MacBook Air</d:index_value><d:index_title>MacBook Air</d:index_title></d:index>
+	<h1>MacBook Air</h1>
+	<p>Un computer portabil extrem de ușor de la Apple Inc., bazat pe procesoarele Intel Core Duo și Intel Core 2 Duo și beneficiind de o unitate de stocare SSD (solid-state drive) opțională. MacBook Air cântărește 1,36 kg și are doar 1,93 cm în punctul de grosime maximă și 0,4 cm în punctul de grosime minimă. Lansat în 2008.</p>
+</d:entry>
+
+<d:entry id="Macintosh">
+	<d:index><d:index_value>Macintosh</d:index_value><d:index_title>Macintosh</d:index_title></d:index>
+	<h1>Macintosh</h1>
+	<p>O linie de computere personale disponibile de la Apple Inc. Lansat în 1984, computerul Macintosh a fost primul computer personal cu succes comercial care să utilizeze o interfață grafică de utilizare (GUI) și un maus în locul unei interfețe în linie de comandă.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Extended_format">
+	<d:index><d:index_value>format Mac OS Extended</d:index_value><d:index_title>format Mac OS Extended</d:index_title></d:index>
+	<h1>format Mac OS Extended</h1>
+	<p>Un format de hard disc,  acceptat de Mac OS 8.1 și versiunile ulterioare, care sporește numărul de blocuri de alocare (unități de stocare) de pe un disc față de formatele de disc anterioare utilizate de Mac OS. Acest format admite peste 65.000 de fișiere pe un hard disc. Formatul Mac OS Extended optimizează capacitatea de stocare a hard discurilor mari prin reducerea dimensiunii minime a unui fișier individual. Un volum Mac OS Extended poate fi “jurnalizat”, ceea ce înseamnă că sistemul de operare menține un jurnal continuu al modificărilor aduse fișierelor de pe volum. Aceasta ajută sistemul de operare să restaureze volumul la o stare utilizabilă atunci când o pană de curent sau o altă problemă întrerupe operarea discului și deteriorează fișierele.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Standard_format">
+	<d:index><d:index_value>format Mac OS Standard</d:index_value><d:index_title>format Mac OS Standard</d:index_title></d:index>
+	<h1>format Mac OS Standard</h1>
+	<p>Formatul de hard disc acceptat de Mac OS 8.0 și versiuni anterioare.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X">
+	<d:index><d:index_value>Mac OS</d:index_value><d:index_title>Mac OS</d:index_title></d:index>
+	<h1>Mac OS</h1>
+	<p>Sistemul de operare pentru computerele Macintosh.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X_Server">
+	<d:index><d:index_value>Mac OS X Server</d:index_value><d:index_title>Mac OS X Server</d:index_title></d:index>
+	<h1>Mac OS X Server</h1>
+	<p>O platformă server care acceptă din start clienți Mac, Windows, UNIX și Linux și furnizează o suită de servicii scalabile pentru grupuri de lucru și rețele cu instrumente avansate de administrare de la distanță. </p>
+</d:entry>
+
+<d:entry id="MacTCP">
+	<d:index><d:index_value>MacTCP</d:index_value><d:index_title>MacTCP</d:index_title></d:index>
+	<h1>MacTCP</h1>
+	<p>Protocolul de rețea TCP/IP standard pentru computerele Macintosh până la versiunea 7.5.1 de Mac OS. A fost înlocuit în 1995 de Open Transport.</p>
+</d:entry>
+
+<d:entry id="Mail">
+	<d:index><d:index_value>E-mail</d:index_value><d:index_title>E-mail</d:index_title></d:index>
+	<h1>E-mail</h1>
+	<p>O aplicație Apple pentru e-mail inclusă cu Mac OS X.</p>
+</d:entry>
+
+<d:entry id="masking">
+	<d:index><d:index_value>mascare</d:index_value><d:index_title>mascare</d:index_title></d:index>
+	<h1>mascare</h1>
+	<p>O metodă de decupare a unei imagini prin acoperirea (“mascarea”) porțiunii de imagine pe care doriți să o rețineți. În aplicația de machetare și procesare de text Pages, puteți masca o imagine utilizând un dreptunghi sau o formă personalizată la alegere.</p>
+</d:entry>
+
+<d:entry id="master_object">
+	<d:index><d:index_value>obiect master</d:index_value><d:index_title>obiect master</d:index_title></d:index>
+	<h1>obiect master</h1>
+	<p>În aplicația de procesare de text și machetare Pages, un filigran, un logo sau altă imagine de fundal care apare în același loc pe fiecare pagină dintr-un document.</p>
+</d:entry>
+
+<d:entry id="master_password">
+	<d:index><d:index_value>parolă master</d:index_value><d:index_title>parolă master</d:index_title></d:index>
+	<h1>parolă master</h1>
+	<p>O parolă care vă permite să accesați un cont protejat prin FileVault. Dacă un utilizator își uită parola pentru un cont protejat prin FileVault, un administrator poate utiliza parola master pentru accesarea contului și schimbarea parolei FileVault. dacă o parolă master este uitată, nu există nicio modalitate de a accesa conturi protejate prin FileVault, iar fișierele și configurările din acestea sunt pierdute.</p>
+</d:entry>
+
+<d:entry id="media_placeholder">
+	<d:index><d:index_value>substituent multimedia</d:index_value><d:index_title>substituent multimedia</d:index_title></d:index>
+	<h1>substituent multimedia</h1>
+	<p>În șaboanele Pages și Keynote, un fișier pe care îl puteți înlocui prin tragerea propriului dvs. fișier peste acesta. Puteți recunoaște un substituent multimedia plasând cursorul deasupra acestuia; va apărea un balon de asistență cu instrucțiuni despre tragerea fișierului dvs. propriu în locul respectiv.</p>
+</d:entry>
+
+<d:entry id="Migration_Assistant">
+	<d:index><d:index_value>Migration Assistant</d:index_value><d:index_title>Migration Assistant</d:index_title></d:index>
+	<h1>Migration Assistant</h1>
+	<p>O aplicație Mac OS X care vă ajută să vă transferați fișierele și configurările importante de pe un Mac mai vechi pe unul nou. Pentru a utiliza Migration Assistant, ambele computere trebuie să utilizeze Mac OS X și trebuie să fie echipate cu FireWire sau să fie conectate în aceeași rețea wireless.</p>
+</d:entry>
+
+<d:entry id="mirrored_displays">
+	<d:index><d:index_value>afișaje în oglindă</d:index_value><d:index_title>afișaje în oglindă</d:index_title></d:index>
+	<h1>afișaje în oglindă</h1>
+	<p>O funcționalitate din aplicația Preferințe sistem din Mac OS X. În cazul în care computerul dvs. este conectat la multiple dispozitive de afișaj, inclusiv televizoare și proiectoare, puteți ajusta configurările din panoul Afișaje din Preferințe sistem astfel încât întreaga imagine a desktopului dvs. să fie afișată pe fiecare dispozitiv, în locul afișării unei imagini continue de-a lungul tuturor dispozitivelor.</p>
+</d:entry>
+
+<d:entry id="Mission_Control">
+	<d:index><d:index_value>Mission Control</d:index_value><d:index_title>Mission Control</d:index_title></d:index>
+	<h1>Mission Control</h1>
+	<p>O funcționalitate din Mac OS X care vă permite să vizualizați tot ce rulează pe Mac-ul dvs, inclusiv ferestrele, aplicațiile pe tot ecranul, spațiile de lucru și Dashboard.</p>
+</d:entry>
+
+<d:entry id="MobileMe">
+	<d:index><d:index_value>MobileMe</d:index_value><d:index_title>MobileMe</d:index_title></d:index>
+	<h1>MobileMe</h1>
+	<p>O suită de servicii Internet de la Apple Inc. pentru computere Macintosh, iPhone, iPod touch și PC-uri. Un abonament MobileMe vă menține automat informațiile pentru e-mail, contacte și calendar actualizate pe toate dispozitivele dvs. De asemenea, MobileMe furnizează o suită de aplicații web care vă permit să vă accesați informațiile utilizând un browser web, să partajați poze și filme, să găzduiți un site web și să utilizați un iDisk pentru stocarea fișierelor online. Pentru informații suplimentare, consultați <a href='http://www.apple.com/mobileme/'>pagina web MobileMe</a>.</p>
+</d:entry>
+
+<d:entry id="MobileMe_Gallery">
+	<d:index><d:index_value>Galerie MobileMe</d:index_value><d:index_title>Galerie MobileMe</d:index_title></d:index>
+	<h1>Galerie MobileMe</h1>
+	<p>O funcționalitate a suitei de servicii MobileMe de la Apple Inc. Cu un abonament MobileMe, puteți publica poze și filme din iPhoto și iMovie direct în galeria dvs. MobileMe de pe Internet. Puteți adăuga albume foto și filme din galeria MobileMe în oricare dintre paginile dvs. web. Atunci când un album foto din galeria MobileMe este actualizat, site-ul dvs. web este acualizat automat cu noul conținut.</p>
+</d:entry>
+
+<d:entry id="motion_playhead">
+	<d:index><d:index_value>cap de redare</d:index_value><d:index_title>cap de redare</d:index_title></d:index>
+	<h1>cap de redare</h1>
+	<p>În iDVD, o pictogramă în formă de romb din bara de derulare care marchează poziția curentă în cadrul conținutului audio sau video pe care îl editați. Puteți trage capul de redare, oprindu-vă oriunde doriți.</p>
+</d:entry>
+
+<d:entry id="MS-DOS_(FAT)_format">
+	<d:index><d:index_value>format MS-DOS (FAT)</d:index_value><d:index_title>format MS-DOS (FAT)</d:index_title></d:index>
+	<h1>format MS-DOS (FAT)</h1>
+	<p>Un format de hard disc pentru discurile utilizate pe computerele Windows. Puteți utiliza Disk Utility pentru a formata discuri MS-DOS (FAT) pentru computere Windows.</p>
+</d:entry>
+
+<d:entry id="Multi-Touch">
+	<d:index><d:index_value>Multi-Touch</d:index_value><d:index_title>Multi-Touch</d:index_title></d:index>
+	<h1>Multi-Touch</h1>
+	<p>Interacțiunea cu ecranul tactil al unui computer sau altui dispozitiv. Un ecran tactil echipat cu Multi-Touch recunoaște simultan mai multe “puncte de atingere”. Aceasta permite realizarea de gesturi cu ambele mâini și cu mai multe degete. Gesturile intuitive, precum utilizarea a două degete sau mâini pentru apropiere sau depărtare prin zoom, sunt posibile datorită tehnologiei Multi-Touch. Ecranul tactil integrat în Apple iPhone utilizează tehnologia Multi-Touch.</p>
+</d:entry>
+
+<d:entry id="Network_File_System">
+	<d:index><d:index_value>Network File System</d:index_value><d:index_title>Network File System</d:index_title></d:index>
+	<h1>Network File System</h1>
+	<p>A se vedea <a href='x-dictionary:r:NFS:com.apple.dictionary.AppleDictionary'><b>NFS</b></a>.</p>
+</d:entry>
+
+<d:entry id="NFS">
+	<d:index><d:index_value>NFS</d:index_value><d:index_title>NFS</d:index_title></d:index>
+	<h1>NFS</h1>
+	<p>Network File System. Un protocol client-server care utilizează IP (Internet Protocol) pentru a le permite utilizatorilor de la distanță să acceseze fișiere ca și cum ar fi locale. NFS exportă volumele partajate către computere pe baza adresei IP, în loc să utilizeze numele de utilizator și parola. </p>
+</d:entry>
+
+<d:entry id="Numbers">
+	<d:index><d:index_value>Numbers</d:index_value><d:index_title>Numbers</d:index_title></d:index>
+	<h1>Numbers</h1>
+	<p>O aplicație Apple pentru crearea de foi de calcul tabelar. Numbers include o interfață simplă pentru configurarea de tabele, diagrame, hărți, etichete și altele. Numbers face parte din suita de aplicații de productivitate iWork. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/iwork/numbers'>pagina web Numbers</a>.</p>
+</d:entry>
+
+<d:entry id="NVRAM">
+	<d:index><d:index_value>NVRAM</d:index_value><d:index_title>NVRAM</d:index_title></d:index>
+	<h1>NVRAM</h1>
+	<p>Non-volatile random access memory (memorie nevolatilă cu acces aleatoriu). Un tip de memorie care reține informațiile atunci când alimentarea computerului este oprită.</p>
+</d:entry>
+
+<d:entry id="Open_Transport">
+	<d:index><d:index_value>Open Transport</d:index_value><d:index_title>Open Transport</d:index_title></d:index>
+	<h1>Open Transport</h1>
+	<p>Un protocol de rețea pentru computerele Macintosh utilizând versiuni de Mac OS anterioare Mac OS X.</p>
+</d:entry>
+
+<d:entry id="operator">
+	<d:index><d:index_value>operator</d:index_value><d:index_title>operator</d:index_title></d:index>
+	<h1>operator</h1>
+	<p>Operatorii aritmetici efectuează operații aritmetice, precum adunarea și scăderea, și returnează rezultate numerice. Operatorii comparativi compară două valori și returnează ADEVĂRAT sau FALS. În aplicația de calcul tabelar Numbers, puteți utiliza operatori în formule pentru a efectua operații aritmetice și pentru a compara valorile.</p>
+</d:entry>
+
+<d:entry id="optical_drive">
+	<d:index><d:index_value>unitate optică</d:index_value><d:index_title>unitate optică</d:index_title></d:index>
+	<h1>unitate optică</h1>
+	<p>O unitate de disc care poate citi date de pe discuri optice, inclusiv CD-uri și DVD-uri. Unitățile optice includ unități CD-ROM, CD-RW, DVD-ROM, DVD-RW și Blu-ray.</p>
+</d:entry>
+
+<d:entry id="package">
+	<d:index><d:index_value>pachet</d:index_value><d:index_title>pachet</d:index_title></d:index>
+	<h1>pachet</h1>
+	<p>O serie de fișiere asociate (șaboane, preferințe sau alte fișiere specifice unei aplicații), combinate într-un dosar care arată precum un singur fișier. Actualizările software pentru computerele Macintosh sunt livrate în pachete care sunt “despachetate” și apoi instalate.</p>
+</d:entry>
+
+<d:entry id="package_file">
+	<d:index><d:index_value>fișier pachet</d:index_value><d:index_title>fișier pachet</d:index_title></d:index>
+	<h1>fișier pachet</h1>
+	<p>Un fișier care conține un pachet software. Un fișier pachet are uzual o pictogramă care arată asemenea unui ambalaj deschis. De asemenea, puteți identifica un fișier pachet privind în fereastra Informații a acestuia: câmpul Tip conține cuvântul “pachet”.</p>
+</d:entry>
+
+<d:entry id="Pages">
+	<d:index><d:index_value>Pages</d:index_value><d:index_title>Pages</d:index_title></d:index>
+	<h1>Pages</h1>
+	<p>O aplicație de procesare de text Apple care include funcționalități tipografice avansate și șabloane profesionale pentru crearea de rapoarte, invitații, buletine informative și altele. Pages face parte din suita de aplicații de productivitate iWork. Pentru informații suplimentare, consultați <a href='http://www.apple.com/ro/iwork/pages/'>pagina web Pages</a>.</p>
+</d:entry>
+
+<d:entry id="Panther">
+	<d:index><d:index_value>Panther</d:index_value><d:index_title>Panther</d:index_title></d:index>
+	<h1>Panther</h1>
+	<p>Numele de marcă pentru Mac OS X versiunea 10.3, cea de-a patra versiune majoră a sistemului de operare pentru computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="parental_controls">
+	<d:index><d:index_value>controale parentale</d:index_value><d:index_title>controale parentale</d:index_title></d:index>
+	<h1>controale parentale</h1>
+	<p>Configurări ale computerului care permit unui administrator să controleze aplicațiile și informațiile accesate de alți utilizatori. În Mac OS X, controalele parentale sunt configurate utilizând panoul Controale parentale din Preferințe sistem.</p>
+</d:entry>
+
+<d:entry id="partition">
+	<d:index><d:index_value>partiție</d:index_value><d:index_title>partiție</d:index_title></d:index>
+	<h1>partiție</h1>
+	<p>O subdiviziune a unui hard disc. Pe computerele Macintosh, puteți alege câte partiții doriți atunci când formatați un hard disc utilizând Disk Utility. Fiecare partiție apare pe desktopul dvs. ca un hard disc separat.</p>
+</d:entry>
+
+<d:entry id="personal_file_sharing">
+	<d:index><d:index_value>partajare fișiere personale</d:index_value><d:index_title>partajare fișiere personale</d:index_title></d:index>
+	<h1>partajare fișiere personale</h1>
+	<p>Un sistem care permite utilizatorilor de computere Macintosh să copieze rapid articole de pe un computer pe altul, sau să utilizeze un computer pentru a acesa fișiere și aplicații stocate pe un altul.</p>
+</d:entry>
+
+<d:entry id="personal_web_sharing">
+	<d:index><d:index_value>partajare web personal</d:index_value><d:index_title>partajare web personal</d:index_title></d:index>
+	<h1>partajare web personal</h1>
+	<p>O funcționalitate Mac OS X care vă permite să afișați documente pe web sau într-o rețea locală prin plasarea acestora în dosarul Site-uri de pe hard discul computerului dvs. Documentele trebuie să fie în format HTML.</p>
+</d:entry>
+
+<d:entry id="Photo_Booth">
+	<d:index><d:index_value>Photo Booth</d:index_value><d:index_title>Photo Booth</d:index_title></d:index>
+	<h1>Photo Booth</h1>
+	<p>O aplicație Apple pentru fotografierea cu o cameră iSight. Photo Booth beneficiază de efecte integrate care pot fi aplicate fotografiilor, inclusiv colorații și filtre precum sepia, și manipulări de imagine precum “întindere” și “ochi de pește”.</p>
+</d:entry>
+
+<d:entry id="photo_browser">
+	<d:index><d:index_value>browser de poze</d:index_value><d:index_title>browser de poze</d:index_title></d:index>
+	<h1>browser de poze</h1>
+	<p>Software pentru computer care vă permite vizualizarea și investigarea unei selecții de poze. iPhoto include un browser de poze pentru proiecte precum cărți sau diaporame, care afișează miniaturile pozelor selectate pentru includere.</p>
+</d:entry>
+
+<d:entry id="Pixlet">
+	<d:index><d:index_value>Pixlet</d:index_value><d:index_title>Pixlet</d:index_title></d:index>
+	<h1>Pixlet</h1>
+	<p>Software Apple pentru comprimare video. Software-ul de tip codec (comprimare/decomprimare) Pixlet vă permite vizualizarea de filme de înaltă definiție la rezoluție integrală pe computerele Macintosh utilizând Mac OS X versiunea 10.3 Panther sau o versiune ulterioară.</p>
+</d:entry>
+
+<d:entry id="placeholder_image">
+	<d:index><d:index_value>imagine substituent</d:index_value><d:index_title>imagine substituent</d:index_title></d:index>
+	<h1>imagine substituent</h1>
+	<p>În șaboanele Pages și Keynote, o imagine pe care o puteți înlocui prin tragerea propriei dvs. imagini peste aceasta. Puteți recunoaște o imagine substituent plasând cursorul deasupra acesteia; va apărea un balon de asistență cu instrucțiuni despre tragerea fișierului dvs. propriu în locul respectiv.</p>
+</d:entry>
+
+<d:entry id="placeholder_text">
+	<d:index><d:index_value>text substituent</d:index_value><d:index_title>text substituent</d:index_title></d:index>
+	<h1>text substituent</h1>
+	<p>În șabloanele Pages și Keynote, un text pe care îl puteți înlocui prin tragerea, lipirea sau scrierea propriului dvs. text peste acesta. Puteți recunoaște un text substituent făcând clic pe acesta; un singur clic evidențiază întregul bloc de text astfel încât să îl puteți înlocui cu ușurință.</p>
+</d:entry>
+
+<d:entry id="playlist">
+	<d:index><d:index_value>listă de redare</d:index_value><d:index_title>listă de redare</d:index_title></d:index>
+	<h1>listă de redare</h1>
+	<p>În playerul muzical Apple iTunes, o listă de melodii sau fragmente muzicale de redat consecutiv.</p>
+</d:entry>
+
+<d:entry id="plug-in">
+	<d:index><d:index_value>plug-in</d:index_value><d:index_title>plug-in</d:index_title></d:index>
+	<h1>plug-in</h1>
+	<p>Un program pe care îl puteți adăuga unei aplicații software pentru a-i extinde posibilitățile. De exemplu, puteți adăuga un plug-in multimedia unui browser web pentru a-i da browserului posibilitatea de a reda conținut multimedia din pagini web.</p>
+</d:entry>
+
+<d:entry id="podcast">
+	<d:index><d:index_value>podcast</d:index_value><d:index_title>podcast</d:index_title></d:index>
+	<h1>podcast</h1>
+	<p>O emisiune audio sau video disponibilă pe Internet, pe care o puteți reda pe un dispozitiv portabil sau pe un computer, precum un iPod, un iPad sau un Mac.</p>
+</d:entry>
+
+<d:entry id="Podcast_Producer_2">
+	<d:index><d:index_value>Podcast Producer 2</d:index_value><d:index_title>Podcast Producer 2</d:index_title></d:index>
+	<h1>Podcast Producer 2</h1>
+	<p>O aplicație Apple pentru înregistrarea, publicarea și distribuirea de podcasturi de înaltă calitate.</p>
+</d:entry>
+
+<d:entry id="port">
+	<d:index><d:index_value>număr de port</d:index_value><d:index_title>număr de port</d:index_title></d:index>
+	<h1>număr de port</h1>
+	<p>Un număr utilizat ca o adresă de către un server pentru a determina ce aplicație ar trebui să recepționeze pachetele de date. Firewallurile utilizează numerele porturilor pentru a determina dacă pachetelor de date le este permisă traversarea unei rețele locale.</p>
+</d:entry>
+
+<d:entry id="PowerBook">
+	<d:index><d:index_value>PowerBook</d:index_value><d:index_title>PowerBook</d:index_title></d:index>
+	<h1>PowerBook</h1>
+	<p>O linie de computere portabile disponibile de la Apple Inc. între 1991 și 2006. Computerele PowerBook erau orientate către utilizarea business și profesională. Linia PowerBook a fost înlocuită de MacBook Pro în 2006.</p>
+</d:entry>
+
+<d:entry id="Power_Mac">
+	<d:index><d:index_value>Power Mac, Power Macintosh</d:index_value><d:index_title>Power Mac, Power Macintosh</d:index_title></d:index>
+	<h1>Power Mac, Power Macintosh</h1>
+	<p>O linie de computere personale disponibile de la Apple Inc. între 1994 și 2006, bazate pe microprocesoarele Motorola PowerPC.</p>
+</d:entry>
+
+<d:entry id="PowerPC">
+	<d:index><d:index_value>PowerPC</d:index_value><d:index_title>PowerPC</d:index_title></d:index>
+	<h1>PowerPC</h1>
+	<p>Un microprocesor de la Motorola Corporation. Linia de computere Power Macintosh de la Apple Inc. a fost bazată pe microprocesoare PowerPC.</p>
+</d:entry>
+
+<d:entry id="PPD_file">
+	<d:index><d:index_value>fișier PPD</d:index_value><d:index_title>fișier PPD</d:index_title></d:index>
+	<h1>fișier PPD</h1>
+	<p>Fișier Postscript Printer Description. Un fișier care conține informații despre capacitățile unui model specific de imprimantă. Fișierul PPD furnizează controalele de care aveți nevoie pentru a profita de funcționalitățile speciale precum tăvi de hârtie multiple, dimensiuni speciale de hârtie sau tipărire duplex. Modelul de imprimantă pe care îl selectați atunci când adăugați o imprimantă specifică fișierul PPD utilizat cu imprimanta. </p>
+</d:entry>
+
+<d:entry id="PPP">
+	<d:index><d:index_value>PPP</d:index_value><d:index_title>PPP</d:index_title></d:index>
+	<h1>PPP</h1>
+	<p>Un protocol pentru comunicarea dintre două noduri dintr-o rețea, utilizat pentru conectarea prin cabluri seriale, linii telefonice, rețele celulare și altele. PPP este utilizat de obicei pentru accesul dial-up la Internet.</p>
+</d:entry>
+
+<d:entry id="PPPoE">
+	<d:index><d:index_value>PPPoE</d:index_value><d:index_title>PPPoE</d:index_title></d:index>
+	<h1>PPPoE</h1>
+	<p>Point to Point Protocol over Ethernet. Un protocol de rețea care este similar cu PPP, dar profită de viteza superioară disponibilă în rețelele Ethernet.</p>
+</d:entry>
+
+<d:entry id="PRAM">
+	<d:index><d:index_value>PRAM</d:index_value><d:index_title>PRAM</d:index_title></d:index>
+	<h1>PRAM</h1>
+	<p>Parameter random-access memory (memorie de parametru cu acces aleatoriu). Un tip de memorie utilizat în computerele Macintosh pentru stocarea configurărilor de sistem, inclusiv discul de inițializare selectat, rezoluția ecranului, fusul orar, volumul difuzorului și alte configurări.</p>
+</d:entry>
+
+<d:entry id="Preview">
+	<d:index><d:index_value>Previzualizare</d:index_value><d:index_title>Previzualizare</d:index_title></d:index>
+	<h1>Previzualizare</h1>
+	<p>O aplicație Apple care vă permite să vizualizați fișiere PDF, imagini, documente de text și multe alte tipuri de fișiere pe computere Macintosh utilizând Mac OS X.</p>
+</d:entry>
+
+<d:entry id="printer_pool">
+	<d:index><d:index_value>grup de imprimante</d:index_value><d:index_title>grup de imprimante</d:index_title></d:index>
+	<h1>grup de imprimante</h1>
+	<p>O colecție de imprimante pe care o puteți crea astfel încât documentul dvs. să fie tipărit automat pe prima imprimantă disponibilă din grup. În Mac OS X, utilizați panoul Tipărire și fax din Preferințe sistem pentru a configura un grup de imprimante. </p>
+</d:entry>
+
+<d:entry id="ProCare">
+	<d:index><d:index_value>ProCare</d:index_value><d:index_title>ProCare</d:index_title></d:index>
+	<h1>ProCare</h1>
+	<p>Un program de instruire unul la unul disponibil utilizatorilor de computere Macintosh, oferit în magazinele Apple Retail.</p>
+</d:entry>
+
+<d:entry id="protocol">
+	<d:index><d:index_value>protocol</d:index_value><d:index_title>protocol</d:index_title></d:index>
+	<h1>protocol</h1>
+	<p>Un set de reguli care determină modul în care datele sunt transferate bidirecțional între două aplicații.</p>
+</d:entry>
+
+<d:entry id="proxy_server">
+	<d:index><d:index_value>server proxy</d:index_value><d:index_title>server proxy</d:index_title></d:index>
+	<h1>server proxy</h1>
+	<p>Un server care furnizeză o conexiune indirectă de rețea. Un computer se conectează la serverul proxy și solicită o conexiune la o rețea. Proxy-ul se conectează apoi la rețeaua specificată. Serverele proxy sunt deseori utilizate pentru a furniza securitate rețelei. În Mac OS X, informațiile pentru servere proxy sunt specificate utilizând panoul Rețea din Preferințe sistem. </p>
+</d:entry>
+
+<d:entry id="Quartz">
+	<d:index><d:index_value>Quartz, Quartz Extreme</d:index_value><d:index_title>Quartz, Quartz Extreme</d:index_title></d:index>
+	<h1>Quartz, Quartz Extreme</h1>
+	<p>Software Apple pentru grafică inclus cu Mac OS X. Quartz furnizează redimensionarea și derularea rapidă a ferestrelor, animațiile de pe ecran și alte efecte speciale.</p>
+</d:entry>
+
+<d:entry id="QuickDraw">
+	<d:index><d:index_value>QuickDraw</d:index_value><d:index_title>QuickDraw</d:index_title></d:index>
+	<h1>QuickDraw</h1>
+	<p>Software Apple pentru grafică. QuickDraw a fost înlocuit de Quartz în Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Quick_Look">
+	<d:index><d:index_value>Privire rapidă</d:index_value><d:index_title>Privire rapidă</d:index_title></d:index>
+	<h1>Privire rapidă</h1>
+	<p>O aplicație de previzualizare inclusă cu Mac OS X. Aplicația Privire rapidă vă permite să vizualizați un eșantion dintr-un fișier (document, imagine, film sau de alt tip) fără a deschide o aplicație.</p>
+</d:entry>
+
+<d:entry id="QuickTime">
+	<d:index><d:index_value>QuickTime</d:index_value><d:index_title>QuickTime</d:index_title></d:index>
+	<h1>QuickTime</h1>
+	<p>O aplicație Apple pentru multimedia care manipulează video, cipuri multimedia, sunet, text, animație, muzică și diferite tipuri de imagini pe computerele Macintosh.</p>
+</d:entry>
+
+<d:entry id="RAM">
+	<d:index><d:index_value>RAM</d:index_value><d:index_title>RAM</d:index_title></d:index>
+	<h1>RAM</h1>
+	<p>Random-access memory (memorie cu acces aleatoriu). Partea unui computer unde sunt păstrate aplicațiile și fișierele aflate în uz curent. RAM este accesat mai rapid decât alte tipuri de medii de stocare dintr-un computer, precum hard discul sau un DVD. Există diferite tipuri de RAM, inclusiv DRAM, NVRAM, PRAM și SRAM.</p>
+</d:entry>
+
+<d:entry id="Remote_Install_Mac_OS_X">
+	<d:index><d:index_value>Instalare Mac OS X la distanță</d:index_value><d:index_title>Instalare Mac OS X la distanță</d:index_title></d:index>
+	<h1>Instalare Mac OS X la distanță</h1>
+	<p>Un program Apple care vă permite să instalați Mac OS X pe computerul dvs. de pe un disc de instalare din unitatea optică a unui alt computer. Cele două computere trebuie să fie în aceeași rețea Ethernet sau wireless.</p>
+</d:entry>
+
+<d:entry id="repartition">
+	<d:index><d:index_value>repartiționare</d:index_value><d:index_title>repartiționare</d:index_title></d:index>
+	<h1>repartiționare</h1>
+	<p>Schimbarea schemei de partiționare a unui disc. A se vedea și <a href='x-dictionary:r:partition:com.apple.dictionary.AppleDictionary'><b>partiție</b></a>.</p>
+</d:entry>
+
+<d:entry id="Rosetta">
+	<d:index><d:index_value>Rosetta</d:index_value><d:index_title>Rosetta</d:index_title></d:index>
+	<h1>Rosetta</h1>
+	<p>Software inclus pe computerele Macintosh bazate pe Intel care le permite să ruleze aplicații PowerPC.</p>
+</d:entry>
+
+<d:entry id="router">
+	<d:index><d:index_value>ruter</d:index_value><d:index_title>ruter</d:index_title></d:index>
+	<h1>ruter</h1>
+	<p>Un echipament de rețea care recepționează un semnal de rețea și îl redirecționează către unul sau mai multe computere, imprimante și alte dispozitive. Uzual, ruterele furnizează conexiuni Internet pentru mai mulți utilizatori. AirPort Extreme Base Station de la Apple Inc. este un exemplu de ruter.</p>
+</d:entry>
+
+<d:entry id="RSS">
+	<d:index><d:index_value>RSS</d:index_value><d:index_title>RSS</d:index_title></d:index>
+	<h1>RSS</h1>
+	<p>Abreviere pentru Really Simple Syndication, o modalitate alternativă de vizualizare a unei pagini web. Site-urile web care se modifică frecvent, precum site-urile de știri, au deseori vizualizări RSS. O pagină RSS vizualizată prin intermediul browserului web Safari prezintă titlurile articolelor noi și recente într-o listă, afișând câte un rând sau două din conținutul fiecărui articol. Dacă Safari detectează o vizualizare RSS pentru un site web, în bara de adresă apare un buton RSS pe care puteți face clic pentru a vizualiza fluxul.  Termenul RSS poate fi întânlnit și sub denumirea de flux, flux de știri, flux RSS și flux XML.</p>
+</d:entry>
+
+<d:entry id="Safari">
+	<d:index><d:index_value>Safari</d:index_value><d:index_title>Safari</d:index_title></d:index>
+	<h1>Safari</h1>
+	<p>Un browser web de la Apple Inc.</p>
+</d:entry>
+
+<d:entry id="safe_sleep">
+	<d:index><d:index_value>mod adormire securizată</d:index_value><d:index_title>mod adormire securizată</d:index_title></d:index>
+	<h1>mod adormire securizată</h1>
+	<p>În timpul modului de adormire securizată, starea curentă a computerului este salvată pe hard disc, inclusiv aplicațiile  și documentele deschise. Aceasta previne pierderea informațiilor dvs. în cazul în care computerul este oprit complet în timpul adormirii, ceea ce s-ar putea întâmpla dacă bateria se epuizează sau este înlocuită.</p>
+</d:entry>
+
+<d:entry id="screen_name">
+	<d:index><d:index_value>nume de ecran</d:index_value><d:index_title>nume de ecran</d:index_title></d:index>
+	<h1>nume de ecran</h1>
+	<p>Un nume pe care îl alegeți pentru comunicarea online cu alte persoane. Un nume de ecran poate fi numele dvs. real sau un pseudonim. În aplicația iChat, utilizați un nume de ecran pentru expedierea și recepționarea online de mesaje instantanee.</p>
+</d:entry>
+
+<d:entry id="screen_sharing">
+	<d:index><d:index_value>partajare de ecran</d:index_value><d:index_title>partajare de ecran</d:index_title></d:index>
+	<h1>partajare de ecran</h1>
+	<p>O funcționalitate din Mac OS X care vă permite conectarea la alt computer din rețea și afișarea ecranului acestuia pe computerul dvs. În timp ce partajați ecranul computerului, dvs. controlați tot ce se petrece pe acel computer, inclusiv deschiderea documentelor sau a aplicațiilor; deschiderea, mutarea sau închiderea ferestrelor; și oprirea computerului.</p>
+</d:entry>
+
+<d:entry id="scrubber_bar">
+	<d:index><d:index_value>bară de derulare</d:index_value><d:index_title>bară de derulare</d:index_title></d:index>
+	<h1>bară de derulare</h1>
+	<p>O bară de cronologie aflată dedesubtul unui clip video sau audio care indică poziția capului de redare.</p>
+</d:entry>
+
+<d:entry id="secure_virtual_memory">
+	<d:index><d:index_value>memorie virtuală securizată</d:index_value><d:index_title>memorie virtuală securizată</d:index_title></d:index>
+	<h1>memorie virtuală securizată</h1>
+	<p>Memorie virtuală care este criptată pentru siguranță. Deoarece informațiile stocate pe hard disc se conservă până când sunt rescrise, puteți reduce riscul ca pe hard discul dvs. să rămână informații confidențiale prin utilizarea memoriei virtuale securizate.</p>
+</d:entry>
+
+<d:entry id="server">
+	<d:index><d:index_value>server</d:index_value><d:index_title>server</d:index_title></d:index>
+	<h1>server</h1>
+	<p>Un computer care furnizează servicii (precum servicii de fișiere, servicii de e-mail sau servicii web) altor computere sau echipamente de rețea.</p>
+</d:entry>
+
+<d:entry id="Shake">
+	<d:index><d:index_value>Shake</d:index_value><d:index_title>Shake</d:index_title></d:index>
+	<h1>Shake</h1>
+	<p>Software pentru efecte digitale disponibil de la Apple Inc. și utilizat pentru filme de lung metraj, emisiuni și jocuri interactive.</p>
+</d:entry>
+
+<d:entry id="Sherlock">
+	<d:index><d:index_value>Sherlock</d:index_value><d:index_title>Sherlock</d:index_title></d:index>
+	<h1>Sherlock</h1>
+	<p>Un instrument software care realiza căutări atât pe discurile locale atașate la un computer, cât și în paginile de pe web. Instrumentul Sherlock a fost lansat de Apple Inc. împreună cu Mac OS 8.5.</p>
+</d:entry>
+
+<d:entry id="short_name">
+	<d:index><d:index_value>nume scurt</d:index_value><d:index_title>nume scurt</d:index_title></d:index>
+	<h1>nume scurt</h1>
+	<p>Numele care identifică un cont de utilizator individual pe computerele Macintosh. Atunci când creați un cont de utilizator, numele scurt este generat automat pe baza numelui pe care l-ați introdus pentru cont. Puteți să modificați numele scurt în timp ce creați contul, dar nu puteți să îl modificați după ce contul a fost creat.</p>
+</d:entry>
+
+<d:entry id="sidebar">
+	<d:index><d:index_value>bară laterală</d:index_value><d:index_title>bară laterală</d:index_title></d:index>
+	<h1>bară laterală</h1>
+	<p>Zona din partea laterală a ferestrelor de Finder și de aplicații care afișează butoane, linkuri, pictograme și alte informații. Bara laterală din Finder afișează pictograme pentru lucruri fecvent utilizate, inclusiv discuri, servere și doasare.</p>
+</d:entry>
+
+<d:entry id="Simple_Finder">
+	<d:index><d:index_value>Simple Finder</d:index_value><d:index_title>Simple Finder</d:index_title></d:index>
+	<h1>Simple Finder</h1>
+	<p>O versiune simplificată pentru Mac OS X Finder, cu mai puține meniuri și acces limitat la articolele de pe hard disc. Simple Finder restricționează accesul unui cont la fișierele și aplicațiile de pe computer.</p>
+</d:entry>
+
+<d:entry id="skim">
+	<d:index><d:index_value>survola</d:index_value><d:index_title>survola</d:index_title></d:index>
+	<h1>survola</h1>
+	<p>În aplicațiile iMovie și iPhoto, a deplasa cursorul masului încet peste miniaturi în cadrul unui clip video sau a unui eveniment pentru a găsi un cadru sau o imagine individuală.</p>
+</d:entry>
+
+<d:entry id="sleep">
+	<d:index><d:index_value>mod adormire</d:index_value><d:index_title>mod adormire</d:index_title></d:index>
+	<h1>mod adormire</h1>
+	<p>O stare în care ecranul unui computer este întunecat și unitatea sa de hard disc este oprită. Atunci când computerul dvs. este în modul adormire, este pornit dar consumă mai puțină energie. Trezirea computerul dvs. din adormire durează mai puțin decât inițializarea acestuia după ce a fost oprit.</p>
+</d:entry>
+
+<d:entry id="sleep_indicator_light">
+	<d:index><d:index_value>indicator luminos adormire</d:index_value><d:index_title>indicator luminos adormire</d:index_title></d:index>
+	<h1>indicator luminos adormire</h1>
+	<p>Un indicator luminos de pe computerul dvs. care pulsează încet atunci când computerul este în modul adormire.</p>
+</d:entry>
+
+<d:entry id="S.M.A.R.T.">
+	<d:index><d:index_value>S.M.A.R.T.</d:index_value><d:index_title>S.M.A.R.T.</d:index_title></d:index>
+	<h1>S.M.A.R.T.</h1>
+	<p>Self-Monitoring Analysis and Reporting Technology (tehnologie de analiză și raportare cu auto-monitorizare). Software care permite programului de inițializare al computerului să evalueze starea hard discurilor computerului. Tehnologia S.M.A.R.T. vă poate avertiza în legătură cu o defectarea iminentă a unităților de hard disc astfel încât să puteți acționa preventiv, efectuând, de exemplu, backupul datelor dvs.</p>
+</d:entry>
+
+<d:entry id="Smart_Address">
+	<d:index><d:index_value>adresă inteligentă</d:index_value><d:index_title>adresă inteligentă</d:index_title></d:index>
+	<h1>adresă inteligentă</h1>
+	<p>Un nume sau o adresă care apare într-un balon albastru în câmpul de adresă al unui mesaj pe care îl expediați.</p>
+</d:entry>
+
+<d:entry id="Smart_Album">
+	<d:index><d:index_value>album inteligent</d:index_value><d:index_title>album inteligent</d:index_title></d:index>
+	<h1>album inteligent</h1>
+	<p>Un tip de album (dosar) utilizat de aplicația iPhoto de la Apple Inc. Un album inteligent găsește automat pozele care corespund unuia sau mai multor criterii specificate. De exemplu, puteți crea un album inteligent care să conțină pointeri către poze făcute în luma octombrie, sau către toate pozele etichetate “Paris”.</p>
+</d:entry>
+
+<d:entry id="Smart_Folder">
+	<d:index><d:index_value>dosar inteligent</d:index_value><d:index_title>dosar inteligent</d:index_title></d:index>
+	<h1>dosar inteligent</h1>
+	<p>Un tip de dosar de pe computerele Macintosh. Un dosar inteligent găsește automat articolele care corespund unuia sau mai multor criterii specificate. De exemplu, puteți crea un dosar inteligent care să conțină pointeri către toate foile de calcul tabelar de pe un computer. Amplasamentul efectiv al fișierelor listate într-un dosar inteligent nu se modifică, astfel încât un articol poate fi listat în mai multe dosare inteligente.</p>
+</d:entry>
+
+<d:entry id="Smart_Group">
+	<d:index><d:index_value>grup inteligent</d:index_value><d:index_title>grup inteligent</d:index_title></d:index>
+	<h1>grup inteligent</h1>
+	<p>O colecție de contacte pe care aplicația Agendă o actualizează automat cu noi contacte atunci când acestea respectă criteriile pe care le specificați.</p>
+</d:entry>
+
+<d:entry id="Smart_Mailbox">
+	<d:index><d:index_value>cutie poștală inteligentă</d:index_value><d:index_title>cutie poștală inteligentă</d:index_title></d:index>
+	<h1>cutie poștală inteligentă</h1>
+	<p>Un tip de cutie poștală (dosar de e-mail) utilizat de aplicația Mail de pe computerele Macintosh. O cutie poștală inteligentă găsește automat mesajele de e-mail care corespund unuia sau mai multor criterii specificate. De exemplu, puteți crea o cutie poștală inteligentă care să conțină pointeri către toate mesajele de la membrii familiei, sau toate mesajele cu subiectul “Hawaii”. Amplasamentul efectiv al mesajelor de e-mail listate într-o cutie poștală inteligent nu se modifică, astfel încât un articol poate fi listat în mai multe cutii poștale inteligente.</p>
+</d:entry>
+
+<d:entry id="Smart_Playlist">
+	<d:index><d:index_value>listă de redare inteligentă</d:index_value><d:index_title>listă de redare inteligentă</d:index_title></d:index>
+	<h1>listă de redare inteligentă</h1>
+	<p>Un tip de listă de redare (dosar) utilizat de aplicația iTunes de la Apple Inc. O listă de redare inteligentă găsește automat melodiile care corespund unuia sau mai multor criterii specificate. De exemplu, puteți crea o listă de redare inteligentă care să conțină pointeri către toate piesele de jazz, sau către toate melodiile unei anumite formații.</p>
+</d:entry>
+
+<d:entry id="SMB">
+	<d:index><d:index_value>SMB</d:index_value><d:index_title>SMB</d:index_title></d:index>
+	<h1>SMB</h1>
+	<p>Server Message Block. Un protocol care permite computerelor client să acceseze fișiere și servicii de rețea. Poate fi utilizat prin TCP/IP, pe Internet și prin alte protocoale de rețea. Serviciile SMB utilizează SMB pentru a furniza acces la servere, imprimante și alte resurse de rețea. </p>
+</d:entry>
+
+<d:entry id="SMB/CIFS">
+	<d:index><d:index_value>SMB/CIFS</d:index_value><d:index_title>SMB/CIFS</d:index_title></d:index>
+	<h1>SMB/CIFS</h1>
+	<p>Un protocol pentru partajarea acesului la fișiere, imprimante, porturi seriale și alte informații și dispozitive între nodurile dintr-o rețea. Utilizat în principal pe computere Windows.</p>
+</d:entry>
+
+<d:entry id="SnapBack">
+	<d:index><d:index_value>SnapBack</d:index_value><d:index_title>SnapBack</d:index_title></d:index>
+	<h1>SnapBack</h1>
+	<p>Un buton portocaliu cu o săgeată albă întâlnit în extremitatea dreaptă a câmpurilor de adresă și de căutare din Safari, un browser web de la Apple Inc. Atunci când faceți clic pe butonul SnapBack, reveniți la o pagină sau la o listă cu rezultate de căutare desemnată.</p>
+</d:entry>
+
+<d:entry id="Snow_Leopard">
+	<d:index><d:index_value>Snow Leopard</d:index_value><d:index_title>Snow Leopard</d:index_title></d:index>
+	<h1>Snow Leopard</h1>
+	<p>Numele de marcă pentru Mac OS X versiunea 10.6, cea de-a șaptea versiune majoră a sistemului de operare pentru computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="Software_Update">
+	<d:index><d:index_value>Actualizare software</d:index_value><d:index_title>Actualizare software</d:index_title></d:index>
+	<h1>Actualizare software</h1>
+	<p>O aplicație de pe computerele Macintosh care verifică disponibilitatea actualizărilor pentru aplicațiile software. Aplicația Actualizare software poate fi configurată pentru a vă înștiința automat atunci când este găsită o actualizare.</p>
+</d:entry>
+
+<d:entry id="Source_list">
+	<d:index><d:index_value>listă de surse</d:index_value><d:index_title>listă de surse</d:index_title></d:index>
+	<h1>listă de surse</h1>
+	<p>În iPhoto, lista albumelor, dosarelor, evenimentelor, diaporamelor etc. din bara laterală din partea stângă a ferestrei iPhoto. Lista surselor crește pe măsură ce adăugați poze. Primul articol din lista surselor este biblioteca iPhoto, care conține toate pozele dvs.</p>
+</d:entry>
+
+<d:entry id="source_video">
+	<d:index><d:index_value>video sursă</d:index_value><d:index_title>video sursă</d:index_title></d:index>
+	<h1>video sursă</h1>
+	<p>În aplicația iMovie, fișierul care conține un clip video pe care îl utilizați într-un proiect.</p>
+</d:entry>
+
+<d:entry id="Spaces">
+	<d:index><d:index_value>Spaces</d:index_value><d:index_title>Spaces</d:index_title></d:index>
+	<h1>Spaces</h1>
+	<p>O funcționalitate din Mac OS X. Funcționalitatea Spaces vă permite să vă organizați ferestrele în grupuri adecvate unor anumite scopuri. De exemplu, puteți să configurați un spațiu destinal în principal activității profesionale, și să comutați la un alt spațiu pentru rularea jocurilor. Puteți crea un număr maxim de 16 spații.</p>
+</d:entry>
+
+<d:entry id="spoken_commands">
+	<d:index><d:index_value>comenzi enunțate</d:index_value><d:index_title>comenzi enunțate</d:index_title></d:index>
+	<h1>comenzi enunțate</h1>
+	<p>O funcționalitate a computerelor Macintosh care permite computerului să înțeleagă și să îndeplinească anumite comenzi pe care le enunțați.</p>
+</d:entry>
+
+<d:entry id="Spotlight">
+	<d:index><d:index_value>Spotlight</d:index_value><d:index_title>Spotlight</d:index_title></d:index>
+	<h1>Spotlight</h1>
+	<p>Software de căutare integrat în computerele Macintosh. Spotlight construiește o bază de date de informații despre toate fișierele de pe un computer prin catalogarea tuturor articlelor găsite atunci când computerul este pornit pentru prima dată și a oricăror alte articole adăugate ulterior. Atunci când introduceți un terme de căutare în câmpul Spotlight, Spotlight verifică în baza de date proprie existența oricăror fișiere asociate acelui termen și prezintă o listă. Deși catalogarea inițială poate dura câteva minute, căutările Spotlight următoare apar instantaneu.</p>
+</d:entry>
+
+<d:entry id="SRAM">
+	<d:index><d:index_value>SRAM</d:index_value><d:index_title>SRAM</d:index_title></d:index>
+	<h1>SRAM</h1>
+	<p>Static random-access memory (memorie statică cu acces aleatoriu). Un tip de memorie care reține informațiile atâta vreme cât este alimentată. Spre deosebire de DRAM, SRAM nu necesită câte o nouă încărcare electrică la interval de câteva milisecunde.</p>
+</d:entry>
+
+<d:entry id="stacks">
+	<d:index><d:index_value>stive</d:index_value><d:index_title>stive</d:index_title></d:index>
+	<h1>stive</h1>
+	<p>O funcționalitate din Mac OS X. Stivele apar în Dock și vă oferă acces rapid la dosarele de fișiere. Când faceți clic pe o stivă, fișierele din stivă se desfășoară într-un evantai sau într-o grilă.</p>
+</d:entry>
+
+<d:entry id="startup_disk">
+	<d:index><d:index_value>disc de inițializare</d:index_value><d:index_title>disc de inițializare</d:index_title></d:index>
+	<h1>disc de inițializare</h1>
+	<p>O preferință de sistem pe computerele Macintosh care este utilizată pentru a desemna ca disc de inițializare un hard disc intern, un disc extern, o partiție, un CD sau un DVD, sau un alt dispozitiv.</p>
+</d:entry>
+
+<d:entry id="Stickies">
+	<d:index><d:index_value>Note adezive</d:index_value><d:index_title>Note adezive</d:index_title></d:index>
+	<h1>Note adezive</h1>
+	<p>O aplicație Apple care vă permite să afișați mici notițe, similare notițelor Post-it, pe ecranul computerului dvs. În Mac OS X, Note adezive este unul dintre widgeturile incluse cu Dashboard.</p>
+</d:entry>
+
+<d:entry id="SuperDrive">
+	<d:index><d:index_value>SuperDrive</d:index_value><d:index_title>SuperDrive</d:index_title></d:index>
+	<h1>SuperDrive</h1>
+	<p>Un tip de unitate de disc de la Apple Inc. Dispozitivul SuperDrive inițial a fost o unitate de dischetă de mare capacitate (1,44 MB). Actualul SuperDrive este o unitate combinată care poate citi și scrie (copia) atât pe CD-uri, cât și pe DVD-uri.</p>
+</d:entry>
+
+<d:entry id="System_Folder">
+	<d:index><d:index_value>System Folder</d:index_value><d:index_title>System Folder</d:index_title></d:index>
+	<h1>System Folder</h1>
+	<p>În Mac OS 9 și versiunile mai vechi de Mac OS, un dosar care stochează fișierele necesare pentru operarea sistemului, precum fonturile și preferințele. Mac OS X nu are un System Folder.</p>
+</d:entry>
+
+<d:entry id="System_Preferences">
+	<d:index><d:index_value>Preferințe sistem</d:index_value><d:index_title>Preferințe sistem</d:index_title></d:index>
+	<h1>Preferințe sistem</h1>
+	<p>Un set de controale software incluse cu Mac OS X. Preferințele sistemului sunt utilizate pentru a controla multe tipuri de configurări, precum tiparele utilizate pe desktop, scurtăturile din tastatură, opțiunile de rețea, managementul energetic și altele. Preferințele sistemului înlocuiesc panourile de control întâlnite în versiunile de Mac OS anterioare Mac OS X.</p>
+</d:entry>
+
+<d:entry id="System_Profiler">
+	<d:index><d:index_value>System Profiler</d:index_value><d:index_title>System Profiler</d:index_title></d:index>
+	<h1>System Profiler</h1>
+	<p>O aplicație inclusă cu Mac OS X. System Profiler furnizează informații detaliate despre computerul dvs, inclusiv despre software-ul instalat, hardware-ul integrat și dispozitivele atașate.</p>
+</d:entry>
+
+<d:entry id="Terminal">
+	<d:index><d:index_value>Terminal</d:index_value><d:index_title>Terminal</d:index_title></d:index>
+	<h1>Terminal</h1>
+	<p>O aplicație inclusă cu Mac OS X. Terminal furnizează o fereastră cu o linie de comandă unde puteți introduce comenzi de efectuat de către sistemul de operare al computerului. Terminal este un program de tip “emulator de terminal”, întâlnit uzual pe computerele bazate pe UNIX.</p>
+</d:entry>
+
+<d:entry id="TextEdit">
+	<d:index><d:index_value>TextEdit</d:index_value><d:index_title>TextEdit</d:index_title></d:index>
+	<h1>TextEdit</h1>
+	<p>O aplicație de procesare de text inclusă cu Mac OS X.</p>
+</d:entry>
+
+<d:entry id="Text_to_Speech">
+	<d:index><d:index_value>Text enunțat</d:index_value><d:index_title>Text enunțat</d:index_title></d:index>
+	<h1>Text enunțat</h1>
+	<p>O funcționalitate a computerelor Macintosh care vă permite să puneți computerul să citescă cu voce tare textul evidențiat de pe ecran.</p>
+</d:entry>
+
+<d:entry id="thumbnail">
+	<d:index><d:index_value>miniatură</d:index_value><d:index_title>miniatură</d:index_title></d:index>
+	<h1>miniatură</h1>
+	<p>O versiune mică a unei imagini, a unei pagini sau a unui cadru video, care reprezintă originalul mai mare.</p>
+</d:entry>
+
+<d:entry id="Thunderbolt">
+	<d:index><d:index_value>Thunderbolt</d:index_value><d:index_title>Thunderbolt</d:index_title></d:index>
+	<h1>Thunderbolt</h1>
+	<p>Un tip de cablu, de conector și de software care permite o conexiune de mare viteză între un computer și un monitor sau un dispozitiv extern pentru transfer ultra-rapid de date.</p>
+</d:entry>
+
+<d:entry id="Tiger">
+	<d:index><d:index_value>Tiger</d:index_value><d:index_title>Tiger</d:index_title></d:index>
+	<h1>Tiger</h1>
+	<p>Numele de marcă pentru Mac OS X versiunea 10.4, cea de-a cincea versiune majoră a sistemului de operare pentru computere Macintosh.</p>
+</d:entry>
+
+<d:entry id="Time_Capsule">
+	<d:index><d:index_value>Time Capsule</d:index_value><d:index_title>Time Capsule</d:index_title></d:index>
+	<h1>Time Capsule</h1>
+	<p>Un dispozitiv de backup pentru computer de la Apple Inc. care funcționează wireless cu aplicația de backup Time Machine din Mac OS X. Time Capsule este și o stație de bază AirPort. Mai multe computere se pot conecta la o rețea wireless și pot efectua wireless backupuri utilizând un singur dispozitiv Time Capsule.</p>
+</d:entry>
+
+<d:entry id="Time_Machine">
+	<d:index><d:index_value>Time Machine</d:index_value><d:index_title>Time Machine</d:index_title></d:index>
+	<h1>Time Machine</h1>
+	<p>O aplicație Apple pentru backupul fișierelor inclusă cu Mac OS X. Time Machine creează backupuri regulate pentru fiecare fișier de pe computerul dvs, inclusiv pentru toate fișierele de date, software și sistem de operare. Time Machine utilizează metafora “călătoriei în timp” pentru a vă prezenta imagini ale precedentelor versiuni ale feresteri active sau a desktopului astfel încât să puteți recupera și restaura versiunea dorită.</p>
+</d:entry>
+
+<d:entry id="titles">
+	<d:index><d:index_value>titraje</d:index_value><d:index_title>titraje</d:index_title></d:index>
+	<h1>titraje</h1>
+	<p>În aplicația iMovie, textul pe care îl puteți adăuga în proiectul dvs. video.</p>
+</d:entry>
+
+<d:entry id="Trash">
+	<d:index><d:index_value>Coș</d:index_value><d:index_title>Coș</d:index_title></d:index>
+	<h1>Coș</h1>
+	<p>Un dosar special aflat la extremitatea Dock-ului pe computerele Macintosh. Pentru a elimina un articol de pe discul dvs, trăgeți-l în Coș, apoi selectați Finder > Golește Coș sau Finder > Golește Coș în mod securizat.</p>
+</d:entry>
+
+<d:entry id="Tremor">
+	<d:index><d:index_value>Tremor</d:index_value><d:index_title>Tremor</d:index_title></d:index>
+	<h1>Tremor</h1>
+	<p>Software pentru efecte digitale disponibil de la Apple Inc. și utilizat pentru filme de lung metraj, emisiuni și jocuri interactive.</p>
+</d:entry>
+
+<d:entry id="TrueType">
+	<d:index><d:index_value>TrueType</d:index_value><d:index_title>TrueType</d:index_title></d:index>
+	<h1>TrueType</h1>
+	<p>Un standard dezvoltat de Apple Inc. pentru fonturile de ecran.</p>
+</d:entry>
+
+<d:entry id="Universal_Access">
+	<d:index><d:index_value>Acces universal</d:index_value><d:index_title>Acces universal</d:index_title></d:index>
+	<h1>Acces universal</h1>
+	<p>O caracteristică a produselor și serviciilor concepute astfel încât toate persoanele să le poată utiliza, indiferent de dizabilitățile fizice.</p>
+</d:entry>
+
+<d:entry id="user_account">
+	<d:index><d:index_value>cont de utilizator</d:index_value><d:index_title>cont de utilizator</d:index_title></d:index>
+	<h1>cont de utilizator</h1>
+	<p>Pe computerele Macintosh utilizând Mac OS X, fiecare persoană care utilizează computerul poate avea un cont individual cu un dosar de reședință separat. Pe un computer cu mai mulți utilizatori, conturile de utilizator standard permit utilizatorilor să instaleze software pentru propria folosință și să modifice configurări asociate cu propriile lor conturi. Fiecare utilizator individual își poate ajusta preferințele proprii fără a-i afecta pe ceilalți utilizatori. Utilizatorii cu conturi de utilizator standard nu pot administra alte conturi. Alte tipuri de conturi includ conturile de administrator, de grup și de vizitator.</p>
+</d:entry>
+
+<d:entry id="VCD">
+	<d:index><d:index_value>VCD</d:index_value><d:index_title>VCD</d:index_title></d:index>
+	<h1>VCD</h1>
+	<p>A se vedea <a href='x-dictionary:r:video_compact_disc:com.apple.dictionary.AppleDictionary'><b>compact-disc video</b></a>.</p>
+</d:entry>
+
+<d:entry id="video_compact_disc">
+	<d:index><d:index_value>video compact-disc</d:index_value><d:index_title>video compact-disc</d:index_title></d:index>
+	<h1>video compact-disc</h1>
+	<p>Un disc optic care stochează mai multe informații decât un CD, dar mai puțin decât un DVD. Conținutul video stocat pe un VCD este de o calitate inferioară celui de pe un DVD, și similar din punct de vedere al calității cu conținutul video de pe o casetă VHS. Conținutul video VCD este codat în formatul MPEG-1. Pentru a viziona conținutul unui VCD, utilizați QuickTime Player și o unitate optică din computerul dvs. sau conectată direct la computerul dvs. </p>
+</d:entry>
+
+<d:entry id="virtual_memory">
+	<d:index><d:index_value>memorie virtuală</d:index_value><d:index_title>memorie virtuală</d:index_title></d:index>
+	<h1>memorie virtuală</h1>
+	<p>O porțiune a hard discului computerului care este utilizată pentru a spori memoria computerului.</p>
+</d:entry>
+
+<d:entry id="VO">
+	<d:index><d:index_value>VO</d:index_value><d:index_title>VO</d:index_title></d:index>
+	<h1>VO</h1>
+	<p>A se vedea <a href='x-dictionary:r:VoiceOver:com.apple.dictionary.AppleDictionary'><b>VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VO_keys">
+	<d:index><d:index_value>taste VO</d:index_value><d:index_title>taste VO</d:index_title></d:index>
+	<h1>taste VO</h1>
+	<p>A se vedea <a href='x-dictionary:r:VoiceOver_keys:com.apple.dictionary.AppleDictionary'><b>taste VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VoiceOver">
+	<d:index><d:index_value>VoiceOver</d:index_value><d:index_title>VoiceOver</d:index_title></d:index>
+	<h1>VoiceOver</h1>
+	<p>O interfață alternativă disponibilă pe computerele Macintosh pentru persoanele cu dizabilități vizuale și alte persoane care au nevoie să audă ceea ce se află pe ecran. VoiceOver descrie cu voce tare ceea ce apare pe ecran și enunță textul din documente și ferestre. Utilizând VoiceOver, controlați computerul în principal din tastatură în locul masului.</p>
+</d:entry>
+
+<d:entry id="VoiceOver_keys">
+	<d:index><d:index_value>taste VoiceOver</d:index_value><d:index_title>taste VoiceOver</d:index_title></d:index>
+	<h1>taste VoiceOver</h1>
+	<p>Tastele Control și Opțiune, apăsate simultan cu alte taste pentru introducerea de comenzi VoiceOver, sunt numite taste VoiceOver, sau, pe scurt, “taste VO”. Sunt indicate drept “VO” în documentații.</p>
+</d:entry>
+
+<d:entry id="volume">
+	<d:index><d:index_value>volum</d:index_value><d:index_title>volum</d:index_title></d:index>
+	<h1>volum</h1>
+	<p>O alocare de stocare montabilă care se comportă, din perspectiva unui utilizator individual, precum un hard disc local, o partiție de hard disc sau un volum de rețea.</p>
+</d:entry>
+
+<d:entry id="web_browser">
+	<d:index><d:index_value>browser web</d:index_value><d:index_title>browser web</d:index_title></d:index>
+	<h1>browser web</h1>
+	<p>A se vedea <a href='x-dictionary:r:browser:com.apple.dictionary.AppleDictionary'><b>browser</b></a>.</p>
+</d:entry>
+
+<d:entry id="Web_Clip">
+	<d:index><d:index_value>Web Clip</d:index_value><d:index_title>Web Clip</d:index_title></d:index>
+	<h1>Web Clip</h1>
+	<p>Software Apple care vă permite să vă creați propriile widgeturi Dashboard utilizând conținut din pagini web.</p>
+</d:entry>
+
+<d:entry id="WebDAV_server">
+	<d:index><d:index_value>server WebDAV</d:index_value><d:index_title>server WebDAV</d:index_title></d:index>
+	<h1>server WebDAV</h1>
+	<p>Software de tip “Web-based Distributed Authoring and Versioning”. Un mediu de creație live care permite utilizatorilor client să rezerve pagini web, să facă modificări și apoi să re-publice paginile în site în timp ce site-ul este activ și disponibil utilizatorilor.</p>
+</d:entry>
+
+<d:entry id="Web_Gallery">
+	<d:index><d:index_value>galerie web</d:index_value><d:index_title>galerie web</d:index_title></d:index>
+	<h1>galerie web</h1>
+	<p>A se vedea <a href='x-dictionary:r:MobileMe_Gallery:com.apple.dictionary.AppleDictionary'><b>Galeria MobileMe</b></a>.</p>
+</d:entry>
+
+<d:entry id="WebKit">
+	<d:index><d:index_value>WebKit</d:index_value><d:index_title>WebKit</d:index_title></d:index>
+	<h1>WebKit</h1>
+	<p>Un set de instrumente concepute pentru a ajuta dezvoltatorii software să afișeze conținut web (precum pagini web) în cadrul aplicațiilor. WebKit simplifică procesul de solicitare a conținutului de la un server HTTP dintr-o rețea și afișarea conținutului pentru a fi vizualizat de către utilizatori.</p>
+</d:entry>
+
+<d:entry id="WebObjects">
+	<d:index><d:index_value>WebObjects</d:index_value><d:index_title>WebObjects</d:index_title></d:index>
+	<h1>WebObjects</h1>
+	<p>Un mediu de dezvoltare de la Apple Inc. care permite dezvoltatorilor web să construiască rapid aplicații web.</p>
+</d:entry>
+
+<d:entry id="web_page">
+	<d:index><d:index_value>pagină web</d:index_value><d:index_title>pagină web</d:index_title></d:index>
+	<h1>pagină web</h1>
+	<p>A se vedea <a href='x-dictionary:r:webpage:com.apple.dictionary.AppleDictionary'><b>pagină web</b></a>.</p>
+</d:entry>
+
+<d:entry id="webpage">
+	<d:index><d:index_value>pagină web</d:index_value><d:index_title>pagină web</d:index_title></d:index>
+	<h1>pagină web</h1>
+	<p>O pagină pe World Wide Web, care poate fi vizualizată de către oricine este conectat Internet și utilizează un browser web.</p>
+</d:entry>
+
+<d:entry id="web_widget">
+	<d:index><d:index_value>widget web</d:index_value><d:index_title>widget web</d:index_title></d:index>
+	<h1>widget web</h1>
+	<p>O parte a conținutului unei pagini web pe care o puteți adăuga în propriul dvs. site web. Numeroase site-uri web furnizează wigeturi web pe care le puteți publica, inclusiv videoclipuri de pe Internet, titluri de știri, cotații bursiere, fluxuri de poze și altele.</p>
+</d:entry>
+
+<d:entry id="widget">
+	<d:index><d:index_value>widget</d:index_value><d:index_title>widget</d:index_title></d:index>
+	<h1>widget</h1>
+	<p>O mini-aplicație pe computere Macintosh. Widgeturile sunt incluse cu Dashboard ca parte din Mac OS X. Widgeturile includ World Clock, Calculator, Calendar, Dictionary, Weather și Stocks, printre multe altele. Dashboard vine cu diverse widgeturi deja instalate; mai multe sunt disponibile de pe <a href='http://www.apple.com/downloads/dashboard/'>site-ul web Apple</a>.</p>
+</d:entry>
+
+<d:entry id="Wi-Fi">
+	<d:index><d:index_value>Wi-Fi</d:index_value><d:index_title>Wi-Fi</d:index_title></d:index>
+	<h1>Wi-Fi</h1>
+	<p>Programe software sau echipamente hardware de rețea wireless bazate pe unul dintre standardele 802.11.</p>
+</d:entry>
+
+<d:entry id="Xcode">
+	<d:index><d:index_value>Xcode</d:index_value><d:index_title>Xcode</d:index_title></d:index>
+	<h1>Xcode</h1>
+	<p>Un set de instrumente de dezvoltare software pentru Mac OS X, utilizat pentru a crea aplicații pentru platformele Mac, iPhone și iPad de la Apple Inc. Colecția include IDE-ul (Integrated Development Environment) Xcode.app, Interface Builder, aplicația Instruments pentru analize de performanță, compilatoare, depanatoare și alte instrumente.</p>
+</d:entry>
+
+<d:entry id="Xgrid">
+	<d:index><d:index_value>Xgrid</d:index_value><d:index_title>Xgrid</d:index_title></d:index>
+	<h1>Xgrid</h1>
+	<p>An aplicație Apple care îi permite unui administrator să utilizeze puterea de procesare combinată a unui grup de computere din rețea pentru a efectua o singură sarcină.</p>
+</d:entry>
+
+<d:entry id="Xsan">
+	<d:index><d:index_value>Xsan</d:index_value><d:index_title>Xsan</d:index_title></d:index>
+	<h1>Xsan</h1>
+	<p>Un sistem de fișiere cluster pe 64 de biți care permite mai multor computere desktop Mac și Xserve să partajeze volume de stocare RAID într-o rețea de mare viteză. Fiecare computer poate citi și scrie direct în sistemul de fișiere centralizat.</p>
+</d:entry>
+
+</d:dictionary>

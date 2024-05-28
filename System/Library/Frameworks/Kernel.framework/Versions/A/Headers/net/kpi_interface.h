@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2004-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2004-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -34,11 +34,20 @@
 
 #ifndef __KPI_INTERFACE__
 #define __KPI_INTERFACE__
+
+#include <TargetConditionals.h>
+
 #include <sys/kernel_types.h>
 
 #ifndef _SA_FAMILY_T
 #define _SA_FAMILY_T
 typedef __uint8_t		sa_family_t;
+#endif
+
+#if TARGET_OS_EMBEDDED
+	#define KPI_INTERFACE_EMBEDDED 1
+#else
+	#define KPI_INTERFACE_EMBEDDED 0
 #endif
 
 struct timeval;
@@ -307,6 +316,10 @@ typedef void (*ifnet_event_func)(ifnet_t interface, const struct kev_msg *msg);
 		protocol's pre-output function.
 	@param frame_type The frame type as determined by the protocol's
 		pre-output function.
+	@param prepend_len The length of prepended bytes to the mbuf. 
+		(ONLY used if KPI_INTERFACE_EMBEDDED is defined to 1)
+	@param postpend_len The length of the postpended bytes to the mbuf.
+		(ONLY used if KPI_INTERFACE_EMBEDDED is defined to 1)
 	@result
 		If the result is zero, processing will continue normally.
 		If the result is EJUSTRETURN, processing will stop but the
@@ -315,8 +328,11 @@ typedef void (*ifnet_event_func)(ifnet_t interface, const struct kev_msg *msg);
 			the packet will be freed.
  */
 typedef errno_t (*ifnet_framer_func)(ifnet_t interface, mbuf_t *packet,
-    const struct sockaddr *dest, const char *desk_linkaddr,
-    const char *frame_type);
+	const struct sockaddr *dest, const char *desk_linkaddr, const char *frame_type
+#if KPI_INTERFACE_EMBEDDED
+	, u_int32_t *prepend_len, u_int32_t *postpend_len
+#endif /* KPI_INTERFACE_EMBEDDED */
+	);
 
 /*!
 	@typedef ifnet_add_proto_func
@@ -848,7 +864,7 @@ extern const char *ifnet_name(ifnet_t interface);
 	@function ifnet_family
 	@discussion Returns the family of the interface.
 	@param interface Interface to retrieve the unit number from.
-	@result Unit number.
+	@result Interface family type.
  */
 extern ifnet_family_t ifnet_family(ifnet_t interface);
 

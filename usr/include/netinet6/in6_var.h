@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -254,6 +254,7 @@ struct	in6_ifreq {
 		int	ifru_flags;
 		int	ifru_flags6;
 		int	ifru_metric;
+		int	ifru_intval;
 		caddr_t	ifru_data;
 		struct in6_addrlifetime ifru_lifetime;
 		struct in6_ifstat ifru_stat;

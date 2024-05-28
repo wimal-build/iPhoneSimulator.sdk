@@ -729,8 +729,6 @@ public:
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#if !defined(__LP64) || defined(_IOMEMORYDESCRIPTOR_INTERNAL_)
-
 // The following classes are private implementation of IOMemoryDescriptor - they
 // should not be referenced directly, just through the public API's in the 
 // IOMemoryDescriptor class. For example, an IOGeneralMemoryDescriptor instance
@@ -887,8 +885,6 @@ public:
 	withPersistentMemoryDescriptor(IOGeneralMemoryDescriptor *originalMD);
 
 };
-
-#endif /* !defined(__LP64) || defined(_IOMEMORYDESCRIPTOR_INTERNAL_) */
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 

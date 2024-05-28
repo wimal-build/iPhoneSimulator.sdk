@@ -3,37 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>(MAC_OS_X_PRODUCT_BUILD_VERSION)</string>
+	<string>10H575</string>
 	<key>CanonicalName</key>
-	<string>iphonesimulator4.3</string>
+	<string>iphonesimulator5.0</string>
 	<key>CustomProperties</key>
 	<dict/>
 	<key>DTCompiler</key>
-	<string>(GCC_VERSION)</string>
+	<string></string>
 	<key>DTPlatformBuild</key>
-	<string>(PLATFORM_PRODUCT_BUILD_VERSION)</string>
+	<string>4C175</string>
 	<key>DTPlatformVersion</key>
-	<string>PG</string>
+	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>(SDK_PRODUCT_BUILD_VERSION)</string>
+	<string>10H575</string>
 	<key>DTSDKName</key>
-	<string>(SDK_NAME)</string>
+	<string></string>
 	<key>DTXcode</key>
-	<string>(XCODE_VERSION_ACTUAL)</string>
+	<string>0420</string>
 	<key>DTXcodeBuild</key>
-	<string>(XCODE_PRODUCT_BUILD_VERSION)</string>
+	<string>4C175</string>
 	<key>DefaultProperties</key>
 	<dict>
-		<key>GCC_VERSION</key>
-		<string>4.2</string>
 		<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-		<string>4.3</string>
+		<string>5.0</string>
 		<key>MACOSX_DEPLOYMENT_TARGET</key>
 		<string>10.6</string>
 		<key>PLATFORM_NAME</key>
 		<string>iphonesimulator</string>
 		<key>PLATFORM_VERSION_AVAILABILITY_H_FORMAT</key>
-		<string>40300</string>
+		<string>50000</string>
 		<key>SUPPORTED_DEVICE_FAMILIES</key>
 		<array>
 			<string>1</string>
@@ -41,7 +39,7 @@
 		</array>
 	</dict>
 	<key>DisplayName</key>
-	<string>Simulator - iOS 4.3</string>
+	<string>Simulator - iOS 5.0</string>
 	<key>DocSetFeedName</key>
 	<string>Apple iPhone OS</string>
 	<key>DocSetFeedURL</key>
@@ -49,11 +47,11 @@
 	<key>MaximumDeploymentTarget</key>
 	<string>10.6</string>
 	<key>MinimalDisplayName</key>
-	<string>Simulator - 4.3</string>
+	<string>Simulator - 5.0</string>
 	<key>MinimumSupportedToolsVersion</key>
 	<string>3.2.3</string>
 	<key>Version</key>
-	<string>4.3</string>
+	<string>5.0</string>
 	<key>isBaseSDK</key>
 	<string>YES</string>
 </dict>

@@ -50,6 +50,21 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 */
 @property(nonatomic, readonly) NSArray *connections;
 
+/*!
+ @property connectionWithMediaType:
+ @abstract
+	Returns the first connection in the connections array with an inputPort of the specified mediaType.
+	
+ @param mediaType
+	An AVMediaType constant from AVMediaFormat.h, e.g. AVMediaTypeVideo.
+
+ @discussion
+	This convenience method returns the first AVCaptureConnection in the receiver's
+	connections array that has an AVCaptureInputPort of the specified mediaType.  If no
+	connection with the specified mediaType is found, nil is returned.
+*/
+- (AVCaptureConnection *)connectionWithMediaType:(NSString *)mediaType NS_AVAILABLE(10_7, 5_0);
+
 @end
 
 
@@ -146,6 +161,29 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 @property(nonatomic, copy) NSDictionary *videoSettings;
 
 /*!
+  @property availableVideoCVPixelFormatTypes
+  @abstract
+    Indicates the supported video pixel formats that can be specified in videoSettings.
+
+  @discussion
+	The value of this property is an NSArray of NSNumbers that can be used as values for the 
+	kCVPixelBufferPixelFormatTypeKey in the receiver's videoSettings property.  The first
+    format in the returned list is the most efficient output format.
+*/
+@property(nonatomic, readonly) NSArray *availableVideoCVPixelFormatTypes NS_AVAILABLE(10_7, 5_0);
+
+/*!
+  @property availableVideoCodecTypes
+  @abstract
+	Indicates the supported video codec formats that can be specified in videoSettings.
+
+  @discussion
+	The value of this property is an NSArray of NSStrings that can be used as values for the 
+	AVVideoCodecKey in the receiver's videoSettings property.
+*/
+@property(nonatomic, readonly) NSArray *availableVideoCodecTypes NS_AVAILABLE(10_7, 5_0);
+
+/*!
  @property minFrameDuration
  @abstract
 	Specifies the minimum time interval between which the receiver should output consecutive video frames.
@@ -154,9 +192,10 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 	The value of this property is a CMTime specifying the minimum duration of each video frame output by the receiver,
 	placing a lower bound on the amount of time that should separate consecutive frames. This is equivalent to the
 	inverse of the maximum frame rate. A value of kCMTimeZero or kCMTimeInvalid indicates an unlimited maximum frame
-	rate. The default value is kCMTimeInvalid 
+	rate. The default value is kCMTimeInvalid.  As of iOS 5.0, minFrameDuration is deprecated.  Use AVCaptureConnection's
+	minVideoFrameDuration property instead.
 */
-@property(nonatomic) CMTime minFrameDuration;
+@property(nonatomic) CMTime minFrameDuration NS_DEPRECATED_IOS(4_0, 5_0);
 
 /*!
  @property alwaysDiscardsLateVideoFrames
@@ -658,6 +697,18 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 	AVVideoCodecKey in the receiver's outputSettings property.
 */
 @property(nonatomic, readonly) NSArray *availableImageDataCodecTypes;
+
+/*!
+ @property capturingStillImage
+ @abstract
+	A boolean value that becomes true when a still image is being captured.
+
+ @discussion
+	The value of this property is a BOOL that becomes true when a still image is being
+	captured, and false when no still image capture is underway.  This property is
+	key-value observable.
+*/
+@property(readonly, getter=isCapturingStillImage) BOOL capturingStillImage NS_AVAILABLE_IOS(5_0);
 
 /*!
  @method captureStillImageAsynchronouslyFromConnection:completionHandler:

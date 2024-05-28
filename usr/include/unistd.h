@@ -708,6 +708,7 @@ int	 iruserok_sa(const void *, int, int, const char *, const char *);
 int	 issetugid(void);
 char	*mkdtemp(char *);
 int	 mknod(const char *, mode_t, dev_t);
+int	 mkpath_np(char *path, mode_t omode) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_5_0); /* returns errno */
 int	 mkstemp(char *);
 int	 mkstemps(char *, int);
 char	*mktemp(char *);

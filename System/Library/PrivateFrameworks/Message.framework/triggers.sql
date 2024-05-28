@@ -30,4 +30,9 @@ CREATE TRIGGER after_update_message AFTER UPDATE ON messages
     UPDATE mailboxes SET deleted_count = deleted_count - 1 WHERE mailboxes.ROWID = new.mailbox AND old.flags&2 > 0 AND new.flags&2 = 0;
     UPDATE mailboxes SET deleted_count = deleted_count + 1 WHERE mailboxes.ROWID = new.mailbox AND old.flags&2 = 0 AND new.flags&2 > 0;
   END;
-  
+
+CREATE TRIGGER after_delete_account AFTER DELETE ON accounts
+  BEGIN
+    DELETE FROM offline_cache_operations WHERE account_id = old.rowid;
+    DELETE FROM offline_cache_replay_data WHERE account_id = old.rowid;
+  END;

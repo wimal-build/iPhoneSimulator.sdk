@@ -146,6 +146,7 @@
  * CR4
  */
 #define CR4_OSXSAVE 0x00040000	/* OS supports XSAVE */
+#define CR4_PCIDE   0x00020000	/* PCID Enable */
 #define CR4_SMXE    0x00004000	/* Enable SMX operation */
 #define CR4_VMXE    0x00002000	/* Enable VMX operation */
 #define CR4_OSXMM   0x00000400  /* SSE/SSE2 exceptions supported in OS */
@@ -170,6 +171,9 @@
 #define XFEM_SSE XCR0_SSE
 #define XFEM_X87 XCR0_X87
 #define XCR0 (0)
+
+#define	PMAP_PCID_PRESERVE (1ULL << 63)
+#define	PMAP_PCID_MASK (0xFFF)
 #ifndef	ASSEMBLER
 
 #include <sys/cdefs.h>
@@ -258,6 +262,19 @@ static inline uintptr_t get_cr2(void)
 	return(cr2);
 }
 
+static inline uintptr_t get_cr3_raw(void)
+{
+	register uintptr_t cr3;
+	__asm__ volatile("mov %%cr3, %0" : "=r" (cr3));
+	return(cr3);
+}
+
+static inline void set_cr3_raw(uintptr_t value)
+{
+	__asm__ volatile("mov %0, %%cr3" : : "r" (value));
+}
+
+#if	defined(__i386__)
 static inline uintptr_t get_cr3(void)
 {
 	register uintptr_t cr3;
@@ -269,7 +286,20 @@ static inline void set_cr3(uintptr_t value)
 {
 	__asm__ volatile("mov %0, %%cr3" : : "r" (value));
 }
+#else
+static inline uintptr_t get_cr3_base(void)
+{
+	register uintptr_t cr3;
+	__asm__ volatile("mov %%cr3, %0" : "=r" (cr3));
+	return(cr3 & ~(0xFFFULL));
+}
 
+static inline void set_cr3_composed(uintptr_t base, uint16_t pcid, uint32_t preserve)
+{
+	__asm__ volatile("mov %0, %%cr3" : : "r" (base | pcid | ( ( (uint64_t)preserve) << 63) ) );
+}
+
+#endif
 static inline uintptr_t get_cr4(void)
 {
 	uintptr_t cr4;

@@ -30,7 +30,12 @@
 
 #include <objc/Object.h>
 
-/* Warning: All of these methods will disappear in 64-bit. */
+#if __OBJC2__
+
+// All methods of class Protocol are unavailable. 
+// Use the functions in objc/runtime.h instead.
+
+#else
 
 __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
 @interface Protocol : Object
@@ -58,5 +63,7 @@ __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
     DEPRECATED_IN_MAC_OS_X_VERSION_10_5_AND_LATER;
 
 @end
+
+#endif
 
 #endif /* _OBJC_PROTOCOL_H_ */

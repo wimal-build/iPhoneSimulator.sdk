@@ -332,10 +332,10 @@ typedef struct {
 /* PM RootDomain tracePoints
  *
  * In the sleep/wake process, we expect the sleep trace points to proceed
- * in increasing order. Once sleep begins with code kIOPMTracePointSleepStarted = 0x11,
+ * in increasing order. Once sleep begins with code kIOPMTracePointSleepStarted,
  * we expect sleep to continue in a monotonically increasing order of tracepoints
- * to kIOPMTracePointSystemLoginwindowPhase = 0x30. After trace point SystemLoginWindowPhase,
- * the system will return to kIOPMTracePointSystemUp = 0x00.
+ * to kIOPMTracePointSystemLoginwindowPhase. After trace point SystemLoginWindowPhase,
+ * the system will return to kIOPMTracePointSystemUp.
  *
  * If the trace point decreases (instead of increasing) before reaching kIOPMTracePointSystemUp,
  * that indicates that the sleep process was cancelled. The cancel reason shall be indicated
@@ -344,94 +344,215 @@ typedef struct {
 
 enum {
 /* When kTracePointSystemUp is the latest tracePoint,
-   the system is awake. It is not asleep, sleeping, or waking.
-   
-   * Phase begins: At boot, at completion of wake from sleep,
-          immediately following kIOPMTracePointSystemLoginwindowPhase.
-   * Phase ends: When a sleep attempt is initiated.
+ * the system is awake. It is not asleep, sleeping, or waking.
+ *
+ * Phase begins: At boot, at completion of wake from sleep,
+ *      immediately following kIOPMTracePointSystemLoginwindowPhase.
+ * Phase ends: When a sleep attempt is initiated.
  */
     kIOPMTracePointSystemUp                     = 0,
 
-/* When kIOPMTracePointSleepStarted we have just initiated sleep.
-
-    Note: The state prior to kIOPMTracePointSleepStarted may be only one of:
-        * kIOPMTracePointSystemUp
-        * kIOPMTracePointSystemLoginwindowPhase or 
-
-   * Phase begins: At initiation of system sleep (idle or forced).
-   * Phase ends: As we start to notify applications of system sleep.
+/* When kIOPMTracePointSleepStarted is the latest tracePoint,
+ * sleep has been initiated.
+ *
+ * Phase begins: At initiation of system sleep (idle or forced).
+ * Phase ends: PM starts to notify applications of system sleep.
  */
-    kIOPMTracePointSleepStarted             = 0x11,
+    kIOPMTracePointSleepStarted                 = 0x10,
 
-/* When kTracePointSystemSleepAppsPhase is the latest tracePoint,
-   a system sleep has been irrevocably inititated and PM waits
-   for responses from notified applications.
-
-   * Phase begins: Begin to asynchronously fire kIOMessageSystemWillSleep notifications,
-   *        and in the case of an idle sleep kIOMessageCanSystemSleep as well.
-   * Phase ends: When we have received all user & interested kernel acknowledgements.
+/* When kIOPMTracePointSleepApplications is the latest tracePoint,
+ * a system sleep has been initiated and PM waits for responses
+ * from notified applications.
+ *
+ * Phase begins: Begin to asynchronously fire kIOMessageSystemWillSleep
+ *      notifications, and also kIOMessageCanSystemSleep for the idle sleep case.
+ * Phase ends: When PM has received all application responses.
  */
-    kIOPMTracePointSystemSleepAppsPhase         = 0x12,
+    kIOPMTracePointSleepApplications            = 0x11,
 
-
-/* When kIOPMTracePointSystemHibernatePhase is the latest tracePoint,
-    PM is writing the hiernate image to disk.
+/* When kIOPMTracePointSleepPriorityClients is the latest tracePoint,
+ * PM is notifying priority clients and in-kernel system capability
+ * clients, and waiting for any asynchronous completions.
+ *
+ * Phase begins: Synchronous delivery of kIOMessageSystemWillSleep notifications.
+ * Phase ends: All notified clients have acknowledged.
  */
-    kIOPMTracePointSystemHibernatePhase         = 0x13,
-
-/* When kTracePointSystemSleepDriversPhase is the latest tracePoint,
-    PM is iterating the driver tree powering off devices individually.
-
-   * Phase begins: When IOPMrootDomain has received all of its power acknowledgements and begins
-   *        executing IOService::powerDomainWillChangeTo()
-   * Phase ends: When IOPMrootDomain::powerChangeDone begins executing CPU shutoff code.
+    kIOPMTracePointSleepPriorityClients         = 0x12,
+    
+/* When kIOPMTracePointSleepWillChangeInterests is the latest tracePoint,
+ * PM is calling powerStateWillChangeTo() on interested drivers of root domain.
+ *
+ * Phase begins: Dispatch a callout thread to call interested drivers.
+ * Phase ends: Callout thread work done, and acknowledgePowerChange() called
+ *      by drivers that indicated asynchronous completion.
  */
-    kIOPMTracePointSystemSleepDriversPhase      = 0x14,
+    kIOPMTracePointSleepWillChangeInterests     = 0x13,
 
-/* When kTracePointSystemSleepPlatformPhase is the latest tracePoint,
-    all apps and drivers have notified of sleep. Plotfarm is powering
-    off CPU; or system is asleep; or low level wakeup is underway.
-
-    Note: If a system is asleep and then loses power, and it does not have a hibernate
-        image to restore from (e.g. hibernatemode = 0), then OS X may interpret this power
-        loss as a system crash in the kTracePointSystemSleepPlatformPhase, since the
-        power loss resembles a hang or crash, and the power being removed by the user.
-
-   * Phase begins: IOPMrootDomain has already shut off drivers, and is now powering off CPU.
-   * Phase ends: Immediately after CPU's are powered back on during wakeup.
+/* When kIOPMTracePointSleepPowerPlaneDrivers is the latest tracePoint,
+ * PM is directing power plane drivers to power off in leaf-to-root order.
+ *
+ * Phase begins: Root domain informs its power children that it will drop to
+ *      sleep state. This has a cascade effect and triggers all drivers in
+ *      the power plane to transition to a lower power state if necessary.
+ * Phase ends: All power transitions in response to the root domain power
+ *      change have completed.
  */
-    kIOPMTracePointSystemSleepPlatformPhase     = 0x15,
-
-/* When kTracePointSystemWakeDriversPhase is the latest tracePoint,
-    System CPU is powered, PM is notifying drivers of system wake.
-
-   * Phase begins: CPU's have successfully powered up and OS is executing.
-   * Phase ends: All drivers have handled power events & acknowledged completion.
-        IOPMrootDomain is about to deliver kIOMessageSystemHasPoweredOn.
+    kIOPMTracePointSleepPowerPlaneDrivers       = 0x14,
+    
+/* When kIOPMTracePointSleepDidChangeInterests is the latest tracePoint,
+ * PM is calling powerStateDidChangeTo() on interested drivers of root domain.
+ *
+ * Phase begins: Dispatch a callout thread to call interested drivers.
+ * Phase ends: Callout thread work done, and acknowledgePowerChange() called
+ *      by drivers that indicated asynchronous completion.
  */
-    kIOPMTracePointSystemWakeDriversPhase       = 0x21,
+    kIOPMTracePointSleepDidChangeInterests      = 0x15,
 
-/* When kTracePointSystemWakeAppsPhase is the latest tracePoint,
-   System CPU is powered, PM has powered on each driver.
-
-   * Phase begins: IOPMrootDomain::tellChangeUp before sending asynchronous 
-        kIOMessageSystemHasPoweredOn notifications
-   * Phase ends: IOPMrootDomain::tellChangeUp after sending asynchronous notifications
+/* When kIOPMTracePointSleepCapabilityClients is the latest tracePoint,
+ * PM is notifying system capability clients about system sleep.
+ *
+ * Phase begins: Send kIOMessageSystemCapabilityChange notifications to inform
+ *      capability clients that system has lost all capabilities.
+ * Phase ends: Finished sending notifications.
  */
-    kIOPMTracePointSystemWakeAppsPhase          = 0x22,
+    kIOPMTracePointSleepCapabilityClients       = 0x16,
+
+/* When kIOPMTracePointSleepPlatformActions is the latest tracePoint,
+ * PM is calling drivers that have registered a platform sleep action.
+ */
+    kIOPMTracePointSleepPlatformActions         = 0x17,
+
+/* When kIOPMTracePointSleepCPUs is the latest tracePoint,
+ * PM is shutting down all non-boot processors.
+ *
+ * Phase begins: Shutdown all non-boot processors.
+ * Phase ends: Reduced to only the boot processor running.
+ */
+    kIOPMTracePointSleepCPUs                    = 0x18,
+
+/* When kIOPMTracePointSleepPlatformDriver is the latest tracePoint,
+ * PM is executing platform dependent code to prepare for system sleep.
+ */
+    kIOPMTracePointSleepPlatformDriver          = 0x19,
+
+/* When kIOPMTracePointHibernate is the latest tracePoint,
+ * PM is writing the hibernate image to disk.
+ */
+    kIOPMTracePointHibernate                    = 0x1a,
+
+/* When kIOPMTracePointSystemSleep is the latest tracePoint,
+ * PM has recorded the final trace point before the hardware platform
+ * enters sleep state, or low level wakeup is underway - such as restoring
+ * the hibernate image from disk.
+ *
+ * Note: If a system is asleep and then loses power, and it does not have a
+ * hibernate image to restore from (e.g. hibernatemode = 0), then OS X will
+ * interpret this power loss as a failure in kIOPMTracePointSystemSleep.
+ *
+ * Phase begins: Before the OS directs the hardware to enter sleep state.
+ * Phase ends: Control returns to the OS on wake, but before recording the first
+ *      wake trace point.
+ */
+    kIOPMTracePointSystemSleep                  = 0x1f,
+
+/* When kIOPMTracePointWakePlatformDriver is the latest tracePoint,
+ * PM is executing platform dependent code to prepare for system wake.
+ */
+    kIOPMTracePointWakePlatformDriver           = 0x21,
+
+/* When kIOPMTracePointWakePlatformActions is the latest tracePoint,
+ * PM is calling drivers that have registered a platform wake action.
+ */
+    kIOPMTracePointWakePlatformActions          = 0x22,
+
+/* When kIOPMTracePointWakeCPUs is the latest tracePoint,
+ * PM is bringing all non-boot processors online.
+ */
+    kIOPMTracePointWakeCPUs                     = 0x23,
+
+/* When kIOPMTracePointWakeWillPowerOnClients is the latest tracePoint,
+ * PM is sending kIOMessageSystemWillPowerOn to both kernel clients and
+ * applications. PM also notifies system capability clients about the
+ * proposed capability change.
+ *
+ * Phase begins: Send kIOMessageSystemWillPowerOn and
+ *      kIOMessageSystemCapabilityChange notifications.
+ * Phase ends: Finished sending notifications.
+ */
+    kIOPMTracePointWakeWillPowerOnClients       = 0x24,
+
+/* When kIOPMTracePointWakeWillChangeInterests is the latest tracePoint,
+ * PM is calling powerStateWillChangeTo() on interested drivers of root domain.
+ *
+ * Phase begins: Dispatch a callout thread to call interested drivers.
+ * Phase ends: Callout thread work done, and acknowledgePowerChange() called
+ *      by drivers that indicated asynchronous completion.
+ */
+    kIOPMTracePointWakeWillChangeInterests      = 0x25,
+
+/* When kIOPMTracePointWakeDidChangeInterests is the latest tracePoint,
+ * PM is calling powerStateDidChangeTo() on interested drivers of root domain.
+ *
+ * Phase begins: Dispatch a callout thread to call interested drivers.
+ * Phase ends: Callout thread work done, and acknowledgePowerChange() called
+ *      by drivers that indicated asynchronous completion.
+ */
+    kIOPMTracePointWakeDidChangeInterests       = 0x26,
+
+/* When kIOPMTracePointWakePowerPlaneDrivers is the latest tracePoint,
+ * PM is directing power plane drivers to power up in root-to-leaf order.
+ *
+ * Phase begins: Root domain informs its power children that it transitioned
+ *      to ON state. This has a cascade effect and triggers all drivers in
+ *      the power plane to re-evaluate and potentially change power state.
+ * Phase ends: All power transitions in response to the root domain power
+ *      change have completed.
+ */
+    kIOPMTracePointWakePowerPlaneDrivers        = 0x27,
+
+/* When kIOPMTracePointWakeCapabilityClients is the latest tracePoint,
+ * PM is notifying system capability clients about system wake, and waiting
+ * for any asynchronous completions.
+ *
+ * Phase begins: Inform capability clients that system has gained capabilities.
+ * Phase ends: All notified clients have acknowledged.
+ */
+    kIOPMTracePointWakeCapabilityClients        = 0x28,
+
+/* When kIOPMTracePointWakeApplications is the latest tracePoint,
+ * System CPU is powered, PM has powered on each driver.
+ *
+ * Phase begins: Send asynchronous kIOMessageSystemHasPoweredOn notifications.
+ * Phase ends: Finished sending asynchronous notifications.
+ */
+    kIOPMTracePointWakeApplications             = 0x29,
 
 /* kIOPMTracePointSystemLoginwindowPhase
-    This phase represents a several minute window after the system has powered on.
-    Higher levels of system diagnostics are in a heightened state of alert in this phase,
-    in case any user errors occurred that we could not detect in software.
-    
-    This several minute window  
-
-   * Phase begins: After IOPMrootDomain sends kIOMessageSystemHasPoweredOn message.
-   * Phase ends: When loginwindow calls IOPMSleepWakeSetUUID(NULL) the system shall 
-        be considered awake and usable. The next phase shall be kIOPMTracePointSystemUp.
+ * This phase represents a several minute window after the system has powered on.
+ * Higher levels of system diagnostics are in a heightened state of alert in this phase,
+ * in case any user errors occurred that we could not detect in software.
+ *
+ * Phase begins: After IOPMrootDomain sends kIOMessageSystemHasPoweredOn message.
+ * Phase ends: When loginwindow calls IOPMSleepWakeSetUUID(NULL) the system shall 
+ *      be considered awake and usable. The next phase shall be kIOPMTracePointSystemUp.
  */
-    kIOPMTracePointSystemLoginwindowPhase       = 0x30 
+    kIOPMTracePointSystemLoginwindowPhase       = 0x30,
+
+/* When kIOPMTracePointDarkWakeEntry is the latest tracePoint,
+ * PM has started a transition from full wake to dark wake.
+ *
+ * Phase begins: Start transition to dark wake.
+ * Phase ends: System in dark wake. Before recording kIOPMTracePointSystemUp.
+ */
+    kIOPMTracePointDarkWakeEntry                = 0x31,
+
+/* When kIOPMTracePointDarkWakeExit is the latest tracePoint,
+ * PM has started a transition from dark wake to full wake.
+ *
+ * Phase begins: Start transition to full wake.
+ * Phase ends: System in full wake. Before recording kIOPMTracePointSystemUp.
+ */
+    kIOPMTracePointDarkWakeExit                 = 0x32
 };
 
 /*****************************************************************************/

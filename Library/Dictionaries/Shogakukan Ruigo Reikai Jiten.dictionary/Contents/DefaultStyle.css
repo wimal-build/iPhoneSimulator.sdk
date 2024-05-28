@@ -1,10 +1,12 @@
 @charset "UTF-8";
 @namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
 
-body { 
+body {
 	font-family: 'Hiragino Mincho ProN';
 	font-weight:normal;
-//	margin-left: 0em;
+	/*
+	margin-left: 0em;
+	*/
 	margin-right: 1em;
 	margin-top: 0.4em;
 	margin-bottom: 10px;
@@ -81,7 +83,9 @@ th {
 }
 
 *.entry {
-//	font-family: 'Hiragino Mincho ProN';
+	/*
+	font-family: 'Hiragino Mincho ProN';
+	*/
 	font-weight:normal;
 	display: block;
 	margin: 0em 0em 0em 0em; 
@@ -279,4 +283,66 @@ div.sub-item * span:first-child, div.sub-sub-item * span:first-child {
 /* To show sub-sub-list, comment out the next. */
 div.sub-sub-item {
 	display: none;
+}
+
+/*
+	============================
+	Lookup -- Common part
+*/
+html.apple_client-panel {
+	background-color: transparent;
+}
+html.apple_client-panel body {
+	/*font-family:'Baskerville';*/
+	font-size: 14px;
+	
+	margin-top: 0px;
+	margin-left: 1em;
+	margin-bottom: 0px;
+	margin-right: 1em;
+	
+	color: #111111;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	line-height: 18px;
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+html.apple_client-panel a,
+html.apple_client-panel a:link,
+html.apple_client-panel a:visited,
+html.apple_client-panel a:hover,
+html.apple_client-panel a:active
+{
+	color: #000000;
+	text-decoration: none;
+}
+html.apple_client-panel div.lineart {
+	display: none;
+}
+html.apple_client-panel img {
+	display: none;
+}
+
+/*
+	============================
+	Lookup -- Shogakukan specific
+*/
+
+html.apple_client-panel span.headword
+{
+	font-size: 100%;
+	color: #777777;
+	display: inline;
+	padding-right: 0.5em;
+}
+
+html.apple_client-panel span.meaning,
+html.apple_client-panel span.subheadword,
+html.apple_client-panel span.example
+{
+	display: block;
+	padding-left: 1em;
+	padding-bottom: 2px;
+	text-indent: -1em;
 }

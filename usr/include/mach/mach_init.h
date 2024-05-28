@@ -73,7 +73,6 @@ extern mach_port_t mach_thread_self(void);
 extern kern_return_t host_page_size(host_t, vm_size_t *);
 
 extern mach_port_t	mach_task_self_;
-extern mach_port_t	mach_host_self_;
 #define	mach_task_self() mach_task_self_
 #define	current_task()	mach_task_self()
 

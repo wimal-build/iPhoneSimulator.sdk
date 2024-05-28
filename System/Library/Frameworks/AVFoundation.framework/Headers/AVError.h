@@ -10,19 +10,19 @@
 #import <AVFoundation/AVBase.h>
 #import <Foundation/Foundation.h>
 
-extern NSString *const AVFoundationErrorDomain                  NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVFoundationErrorDomain                  NS_AVAILABLE(10_7, 4_0);
 
-extern NSString *const AVErrorDeviceKey                         NS_AVAILABLE(10_7, 4_0);
-extern NSString *const AVErrorTimeKey                           NS_AVAILABLE(10_7, 4_0);
-extern NSString *const AVErrorFileSizeKey                       NS_AVAILABLE(10_7, 4_0);
-extern NSString *const AVErrorPIDKey                            NS_AVAILABLE(10_7, 4_0);
-extern NSString *const AVErrorRecordingSuccessfullyFinishedKey  NS_AVAILABLE(10_7, 4_0);
-extern NSString *const AVErrorMediaTypeKey                      NS_AVAILABLE(10_7, 4_3); // an NSString, as defined in AVMediaFormat.h
-extern NSString *const AVErrorMediaSubTypeKey                   NS_AVAILABLE(10_7, 4_3); // an NSArray of NSNumbers carrying four character codes (4ccs) as defined in CoreAudioTypes.h for audio media and in CMFormatDescription.h for video media.
+AVF_EXPORT NSString *const AVErrorDeviceKey                         NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVErrorTimeKey                           NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVErrorFileSizeKey                       NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVErrorPIDKey                            NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVErrorRecordingSuccessfullyFinishedKey  NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVErrorMediaTypeKey                      NS_AVAILABLE(10_7, 4_3); // an NSString, as defined in AVMediaFormat.h
+AVF_EXPORT NSString *const AVErrorMediaSubTypeKey                   NS_AVAILABLE(10_7, 4_3); // an NSArray of NSNumbers carrying four character codes (4ccs) as defined in CoreAudioTypes.h for audio media and in CMFormatDescription.h for video media.
 
 #if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
 
-extern NSString *const AVErrorDiscontinuityFlagsKey				NS_AVAILABLE(10_7, NA);
+AVF_EXPORT NSString *const AVErrorDiscontinuityFlagsKey				NS_AVAILABLE(10_7, NA);
 
 #endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
 
@@ -67,4 +67,10 @@ enum {
 #if TARGET_OS_IPHONE
 	AVErrorDeviceIsNotAvailableInBackground				= -11837,
 #endif
+	AVErrorOperationNotSupportedForAsset				= -11838,
+	
+	AVErrorDecoderTemporarilyUnavailable				= -11839,  // userInfo may contain AVErrorMediaTypeKey & AVErrorMediaSubTypeKey, if available
+	AVErrorEncoderTemporarilyUnavailable				= -11840,  // userInfo may contain AVErrorMediaTypeKey & AVErrorMediaSubTypeKey, if available
+	AVErrorInvalidVideoComposition						= -11841,
+	AVErrorReferenceForbiddenByReferencePolicy			= -11842,
 };

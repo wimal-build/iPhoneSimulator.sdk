@@ -35,20 +35,7 @@
 #include <stdarg.h>
 #import <objc/objc-runtime.h>
 
-#if __OBJC2__
-
-__OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_NA)
-@interface Object
-{
-	Class isa;	/* A pointer to the instance's class structure */
-}
-
-+class;
--(BOOL) isEqual:anObject;
-
-@end
-
-#else
+#if ! __OBJC2__
 
 __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_NA)
 @interface Object

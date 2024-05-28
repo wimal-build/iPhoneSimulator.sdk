@@ -49,6 +49,7 @@
 /* The following option only valid when requesting ATTR_CMN_RETURNED_ATTRS */
 #define FSOPT_PACK_INVAL_ATTRS	0x00000008
 
+
 /* we currently aren't anywhere near this amount for a valid
  * fssearchblock.sizeofsearchparams1 or fssearchblock.sizeofsearchparams2
  * but we put a sanity check in to avoid abuse of the value passed in from
@@ -341,13 +342,15 @@ typedef struct vol_attributes_attr {
 #define ATTR_CMN_FILEID				0x02000000
 #define ATTR_CMN_PARENTID			0x04000000
 #define ATTR_CMN_FULLPATH			0x08000000
+#define ATTR_CMN_ADDEDTIME			0x10000000
+
 /*
  * ATTR_CMN_RETURNED_ATTRS is only valid with getattrlist(2).
  * It is always the first attribute in the return buffer.
  */
 #define ATTR_CMN_RETURNED_ATTRS			0x80000000
 
-#define ATTR_CMN_VALIDMASK			0x8FE7FFFF
+#define ATTR_CMN_VALIDMASK			0x9FE7FFFF
 #define ATTR_CMN_SETMASK			0x01C7FF00
 #define ATTR_CMN_VOLSETMASK			0x00006700
 

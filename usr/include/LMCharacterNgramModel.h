@@ -43,6 +43,12 @@ CFStringRef LMCharacterNgramModelGetPath(LMCharacterNgramModelRef lm);
 extern
 int LMCharacterNgramModelGetOrder(LMCharacterNgramModelRef lm);
 
+extern
+bool LMCharacterNgramModelContainsNgram(LMCharacterNgramModelRef lm, const UniChar *str, CFIndex len);
+    
+extern
+int LMCharacterNgramModelGetPredictions(LMCharacterNgramModelRef lm, UniChar *history, CFIndex history_length, UniChar *predictions, double *scores, CFIndex max_count);
+    
 /* -log10(Pr(current|history)) */
 extern
 double LMCharacterNgramModelScore(LMCharacterNgramModelRef lm, UniChar current, UniChar *history, CFIndex history_length);

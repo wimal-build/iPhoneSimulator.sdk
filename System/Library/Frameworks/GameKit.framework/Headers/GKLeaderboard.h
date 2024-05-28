@@ -30,7 +30,7 @@ NS_CLASS_AVAILABLE(NA, 4_1)
 
 @property(nonatomic, assign)            GKLeaderboardTimeScope      timeScope;
 @property(nonatomic, assign)            GKLeaderboardPlayerScope    playerScope;        // Filter on friends. Does not apply to leaderboard initialized with players.
-@property(nonatomic, retain)            NSString                    *category;          // leaderboard category.
+@property(nonatomic, retain)            NSString                    *category;          // leaderboard category.  If nil, then it will fetch the aggregate leaderboard
 @property(nonatomic, readonly, retain)  NSString                    *title;             // Localized category title. Defalts to nil until loaded.
 @property(nonatomic, assign)            NSRange                     range;              // Leaderboards start at index 1 and the length should be less than 100. Does not apply to leaderboards initialized with players.  Exception will be thrown if developer tries to set an invalid range
 
@@ -60,5 +60,12 @@ NS_CLASS_AVAILABLE(NA, 4_1)
 // 2. Unauthenticated player
 // 3. Leaderboard not present
 + (void)loadCategoriesWithCompletionHandler:(void(^)(NSArray *categories, NSArray *titles, NSError *error))completionHandler;
+
+// Set the default leaderboard for the local player per game
+// Possible reasons for error:
+// 1. Communications problem
+// 2. Unauthenticated player
+// 3. Leaderboard not present
++ (void)setDefaultLeaderboard:(NSString *)categoryID withCompletionHandler:(void(^)(NSError *error))completionHandler __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
 @end

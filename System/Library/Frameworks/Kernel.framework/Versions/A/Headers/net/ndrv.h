@@ -109,7 +109,7 @@ struct ndrv_demux_desc
  * Field:
  *	version		:	must be NDRV_PROTOCOL_DESC_VERS
  *	protocol_family	:	unique identifier for this protocol
- *	demux_count	:	number of demux_list descriptors in demux_list
+ *	demux_count	:	number of demux_list descriptors in demux_list; maximum of 10
  *	demux_list	:	pointer to array of demux descriptors
  */
 struct ndrv_protocol_desc
@@ -149,5 +149,13 @@ struct ndrv_protocol_desc
  * If you need a chance to do something, please file a bug and we can give
  * you a second or two.
  */
+
+/* Max number of descriptions allowed by default */
+#define NDRV_DMUX_MAX_DESCR	1024
+ 
+/*
+ * sysctl MIB tags at the kern.ipc.nrdv level
+ */
+#define NRDV_MULTICAST_ADDRS_PER_SOCK 1	/* to toggle NDRV_DMUX_MAX_DESCR value */
 
 #endif	/* _NET_NDRV_H */

@@ -546,7 +546,7 @@ AudioConverterReset(    AudioConverterRef   inAudioConverter)                   
     @param      inPropertyID
                     The property to query.
     @param      outSize
-                    If non-null, on exit, the size of the property value in bytes.
+                    If non-null, on exit, the maximum size of the property value in bytes.
     @param      outWritable
                     If non-null, on exit, indicates whether the property value is writable.
     @result     An OSStatus result code.
@@ -799,6 +799,37 @@ AudioConverterFillComplexBuffer(    AudioConverterRef                   inAudioC
                                     AudioBufferList*                    outOutputData,
                                     AudioStreamPacketDescription*       outPacketDescription)
                                                                                 __OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+
+
+//-----------------------------------------------------------------------------
+/*!
+    @function   AudioConverterConvertComplexBuffer
+    @abstract   Converts PCM data from an input buffer list to an output buffer list.
+
+    @param      inAudioConverter
+                    The AudioConverter to use.
+    @param      inNumberPCMFrames
+                    The number of PCM frames to convert.
+    @param      inInputData
+                    The source audio buffer list.
+    @param      outOutputData
+                    The converted output data is written to this buffer list.
+    @result     An OSStatus result code.
+
+                <b>WARNING:</b> this function will fail for any conversion where there is a
+                variable relationship between the input and output data buffer sizes. This
+                includes sample rate conversions and most compressed formats. In these cases,
+                use AudioConverterFillComplexBuffer. Generally this function is only appropriate for
+                PCM-to-PCM conversions where there is no sample rate conversion.
+
+    @discussion
+*/
+extern OSStatus
+AudioConverterConvertComplexBuffer( AudioConverterRef               inAudioConverter,
+                                    UInt32                          inNumberPCMFrames,
+                                    const AudioBufferList *         inInputData,
+                                    AudioBufferList *               outOutputData)
+                                                                                __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
 #if defined(__cplusplus)
 }

@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" localizable="true">
+
+<d:entry id="802.11">
+	<d:index><d:index_value>802.11</d:index_value><d:index_title>802.11</d:index_title></d:index>
+	<h1>802.11</h1>
+	<p>Kablosuz ağ yazılımı ve donanımı için, IEEE LAN/MAN Standartlar Komitesi (IEEE 802) tarafından geliştirilmiş bir standart. 802.11a, 802.11b, 802.11g ve 802.11n standarda dahildir.</p>
+</d:entry>
+
+<d:entry id="access_control_lists">
+	<d:index><d:index_value>erişim denetimi listeleri</d:index_value><d:index_title>erişim denetimi listeleri</d:index_title></d:index>
+	<h1>erişim denetimi listeleri</h1>
+	<p>Bir dosyaya, klasöre veya diske hangi kullanıcıların erişebileceğini ve her bir kullanıcının hangi işlemleri gerçekleştirebileceğini belirten izinler listesi. Örneğin; bir klasörün izinleri, belirli bir kullanıcının klasörün içeriğini görüntüleyebileceğini (salt okuma), klasöre dosya ekleyebileceğini ama içeriğini görüntüleyemeyeceğini (salt yazma) veya her ikisini birden yapabileceğini (okuma ve yazma) belirler.</p>
+</d:entry>
+
+<d:entry id="account">
+	<d:index><d:index_value>hesap</d:index_value><d:index_title>hesap</d:index_title></d:index>
+	<h1>hesap</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda, bilgisayarı kullanan her kişi ayrı bir ana klasörü olan bireysel hesaba sahip olabilir. Kullanıcı, yönetici, grup ve konuk gibi çeşitli hesap türleri vardır.</p>
+</d:entry>
+
+<d:entry id="account_password">
+	<d:index><d:index_value>hesap parolası</d:index_value><d:index_title>hesap parolası</d:index_title></d:index>
+	<h1>hesap parolası</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda, kullanıcılar kendi hesaplarına erişimi denetlemek için parola belirtebilirler. Hesap parolalarına çoğunlukla “oturum açma parolaları” denir. Mac OS X’teki diğer önemli parolalar arasında anahtar zinciri parolaları ve Ana parola sayılabilir.</p>
+</d:entry>
+
+<d:entry id="ACLs">
+	<d:index><d:index_value>ACL’ler</d:index_value><d:index_title>ACL’ler</d:index_title></d:index>
+	<h1>ACL’ler</h1>
+	<p>Bakınız:  <a href='x-dictionary:r:access_control_lists:com.apple.dictionary.AppleDictionary'><b>erişim denetimi listeleri</b></a>.</p>
+</d:entry>
+
+<d:entry id="Address_Book">
+	<d:index><d:index_value>Adres Defteri</d:index_value><d:index_title>Adres Defteri</d:index_title></d:index>
+	<h1>Adres Defteri</h1>
+	<p>Mac OS X ile gelen bir uygulama. Adres Defteri uygulaması; kişileriniz hakkında ad, ünvan, telefon numaraları ve adresler gibi bilgileri ve bunun yanında e-posta, iChat ve web sitesi bilgilerini de saklamanızı sağlar. Adres Defteri diğer Mac OS X uygulamalarıyla tümleşik çalıştığı için, adres defterinizdeki bilgilerin tümü Mail, iChat ve Safari uygulamalarında da kullanılabilir.</p>
+</d:entry>
+
+<d:entry id="administrator_account">
+	<d:index><d:index_value>yönetici hesabı</d:index_value><d:index_title>yönetici hesabı</d:index_title></d:index>
+	<h1>yönetici hesabı</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda, bilgisayarı kullanan her kişi ayrı bir ana klasörü olan bireysel hesaba sahip olabilir. Hesaplardan en az birinin; diğer hesapları yaratabilen, silebilen ve değiştirebilen, yazılım yükleyebilen ve sistem ayarlarını değiştirebilen bir yönetici hesabı olması gerekir. Mac OS X bilgisayarda tek bir hesap varsa; o, otomatik olarak yönetici hesabı olur. Diğer hesap türleri arasında kullanıcı, grup ve konuk sayılabilir.</p>
+</d:entry>
+
+<d:entry id="administrator_password">
+	<d:index><d:index_value>yönetici parolası</d:index_value><d:index_title>yönetici parolası</d:index_title></d:index>
+	<h1>yönetici parolası</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda, bilgisayarın yönetici hesabı için olan hesap parolası. Mac OS X’teki diğer önemli parolalar arasında anahtar zinciri parolaları ve Ana parola sayılabilir.</p>
+</d:entry>
+
+<d:entry id="AFP">
+	<d:index><d:index_value>AFP</d:index_value><d:index_title>AFP</d:index_title></d:index>
+	<h1>AFP</h1>
+	<p>Apple Dosyalama Protokolü. Dosyaları ve ağ servislerini paylaşmak için Apple dosya servisi tarafından kullanılan bir istemci ve sunucu protokolü. AFP, ağdaki bilgisayarlar arasında iletişimi desteklemek için TCP/IP’yi ve diğer protokolleri kullanır.</p>
+</d:entry>
+
+<d:entry id="AirDrop">
+	<d:index><d:index_value>AirDrop</d:index_value><d:index_title>AirDrop</d:index_title></d:index>
+	<h1>AirDrop</h1>
+	<p>Dosyaları, yakında bulunan diğer AirDrop kullanıcılarıyla kolayca paylaşmanızı sağlayan bir Mac OS X özelliği.</p>
+</d:entry>
+
+<d:entry id="AIM">
+	<d:index><d:index_value>AIM</d:index_value><d:index_title>AIM</d:index_title></d:index>
+	<h1>AIM</h1>
+	<p>AOL Anında Mesajlaşma, AOL LLC’nin (daha önce America Online, Inc. olan) çevrimiçi anında mesajlaşma uygulaması.</p>
+</d:entry>
+
+<d:entry id="AirPort">
+	<d:index><d:index_value>AirPort</d:index_value><d:index_title>AirPort</d:index_title></d:index>
+	<h1>AirPort</h1>
+	<p>Bir bilgisayarın ağa veya Internet’e kablo olmadan bağlanmasını sağlayan Apple Inc.’e ait kablosuz ağ aygıtları ve yazılımları. AirPort sistemi, AirPort baz istasyonu adı verilen ve ağa bağlı olan bir yöneltici içerir. Baz istasyonu, bilgisayarın içinde bulunan veya bilgisayara takılı olan AirPort kartı veya başka bir kablosuz iletişim kartı tarafından alınan bir sinyal yayımlayarak ağ bağlantısını paylaşır. AirPort baz istasyonları arasında AirPort Extreme baz istasyonu ve AirPort Express baz istasyonu sayılabilir.</p>
+</d:entry>
+
+<d:entry id="AirPort_Disk">
+	<d:index><d:index_value>AirPort Diski</d:index_value><d:index_title>AirPort Diski</d:index_title></d:index>
+	<h1>AirPort Diski</h1>
+	<p>AirPort ağındaki bir bilgisayarın, Apple Extreme baz istasyonunun USB kapısına bağlı bir harici sabit diski paylaşmasını sağlayan Apple yazılımı.</p>
+</d:entry>
+
+<d:entry id="AirPort_Express_Base_Station">
+	<d:index><d:index_value>AirPort Express Baz İstasyonu</d:index_value><d:index_title>AirPort Express Baz İstasyonu</d:index_title></d:index>
+	<h1>AirPort Express Baz İstasyonu</h1>
+	<p>Apple Inc.’in en fazla on bilgisayara kablosuz Internet bağlantısı sağlayan küçük AirPort baz istasyonu. AirPort Express baz istasyonu, AirPlay’i içerir—bağlı bir bilgisayarın en fazla üç müzik sistemine müzik göndermek için iTunes’u kullanmasını sağlayan yazılım. AirPort Express, Bonjour teknolojisi yoluyla ağdaki tüm bilgisayarların otomatik olarak kullanabilecekleri bir USB yazıcıya bağlanabilir. Aynı zamanda, var olan bir AirPort Extreme ağının aralığını genişletmek için de kullanılabilir.</p>
+</d:entry>
+
+<d:entry id="AirPort_Extreme_Base_Station">
+	<d:index><d:index_value>AirPort Extreme Baz İstasyonu</d:index_value><d:index_title>AirPort Extreme Baz İstasyonu</d:index_title></d:index>
+	<h1>AirPort Extreme Baz İstasyonu</h1>
+	<p>Apple Inc.’in, en fazla 50 bilgisayara yüksek hızlı kablosuz Internet bağlantısı sağlayan AirPort baz istasyonu. Kablolu Ethernet bağlantısı da sağlayabilir. AirPort Extreme baz istasyonu, Bonjour teknolojisi yoluyla ağdaki tüm bilgisayarların otomatik olarak kullanabilecekleri bir USB yazıcıya bağlanabilir.</p>
+</d:entry>
+
+<d:entry id="AirPlay">
+	<d:index><d:index_value>AirPlay</d:index_value><d:index_title>AirPlay</d:index_title></d:index>
+	<h1>AirPlay</h1>
+	<p>AirPort ağındaki bir bilgisayarın, iPod’un, iPad’in veya iPhone’un müzikleri ve videoları birden fazla aygıta (AirPort Express veya Apple TV gibi) kablosuz olarak göndermesini sağlayan bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="album">
+	<d:index><d:index_value>albüm</d:index_value><d:index_title>albüm</d:index_title></d:index>
+	<h1>albüm</h1>
+	<p>Macintosh bilgisayarlardaki iPhoto uygulamasının bir özelliği. iPhoto albümü, iPhoto arşivinizden seçtiğiniz ve istediğiniz sırada düzenlediğiniz fotoğraflar koleksiyonudur. Belirli fotoğrafları seçerek standart bir albüm veya iPhoto arşiviniz değiştikçe seçtiğiniz ölçütlere göre güncellenen bir Akıllı Albüm yaratabilirsiniz. Aynı fotoğrafın birden fazla kopyasını oluşturmadan onu birçok albüme koyabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="alias">
+	<d:index><d:index_value>arma</d:index_value><d:index_title>arma</d:index_title></d:index>
+	<h1>arma</h1>
+	<p>Macintosh bilgisayarlarda, kendi içeriği olmayan ama genellikle farklı bir yerdeki belgeye, klasöre, uygulamaya veya aygıta işaret eden küçük dosya. Armayı çift tıkladığınızda, kaynak öğe açılır veya başlar.</p>
+</d:entry>
+
+<d:entry id="anti-alias">
+	<d:index><d:index_value>metni düzgünleştir (anti-alias)</d:index_value><d:index_title>metni düzgünleştir (anti-alias)</d:index_title></d:index>
+	<h1>metni düzgünleştir (anti-alias)</h1>
+	<p>Bilgisayar grafiklerinde, yüksek çözünürlüklü öğeler düşük çözünürlükte görüntülenirken tırtıklı kenarları düzelterek metin ve grafiklerdeki bozulmaları en aza indirme tekniği.</p>
+</d:entry>
+
+<d:entry id="Aperture">
+	<d:index><d:index_value>Aperture</d:index_value><d:index_title>Aperture</d:index_title></d:index>
+	<h1>Aperture</h1>
+	<p>Macintosh bilgisayarlar için bir Apple uygulaması. Aperture uygulaması, birçok profesyonel fotoğrafçı tarafından prodüksiyon sonrası işlerde kullanılır.</p>
+</d:entry>
+
+<d:entry id="Apple_Inc.">
+	<d:index><d:index_value>Apple Inc.</d:index_value><d:index_title>Apple Inc.</d:index_title></d:index>
+	<h1>Apple Inc.</h1>
+	<p>Apple Inc., 1976 yılında Kaliforniya’da kurulmuş olan bir teknoloji firmasıdır. Merkezi Cupertino, Kaliforniya’da olan Apple Inc.’in en iyi bilinen ürünleri Macintosh kişisel bilgisayar, iPod taşınabilir müzik çalar, Mac OS ve iTunes’u da içeren iLife yazılımıdır.</p>
+</d:entry>
+
+<d:entry id="AppleCare">
+	<d:index><d:index_value>AppleCare</d:index_value><d:index_title>AppleCare</d:index_title></d:index>
+	<h1>AppleCare</h1>
+	<p>Macintosh bilgisayarlar, iPod müzik çalarlar ve diğer ürünler için Apple’ın servis ve destek programı.</p>
+</d:entry>
+
+<d:entry id="Apple_Mail">
+	<d:index><d:index_value>Apple Mail</d:index_value><d:index_title>Apple Mail</d:index_title></d:index>
+	<h1>Apple Mail</h1>
+	<p>Bakınız: <a href='x-dictionary:r:Mail:com.apple.dictionary.AppleDictionary'><b>Mail</b></a>.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote">
+	<d:index><d:index_value>Apple Remote</d:index_value><d:index_title>Apple Remote</d:index_title></d:index>
+	<h1>Apple Remote</h1>
+	<p>Apple TV de dahil olmak üzere Apple ürünleriyle kullanılabilecek bir uzaktan kumanda.</p>
+</d:entry>
+
+<d:entry id="Apple_Remote_Desktop">
+	<d:index><d:index_value>Apple Remote Desktop</d:index_value><d:index_title>Apple Remote Desktop</d:index_title></d:index>
+	<h1>Apple Remote Desktop</h1>
+	<p>Öğretmen veya sistem yöneticisi gibi bir kullanıcının kendi Macintosh bilgisayarından ağdaki diğer kullanıcıların Macintosh bilgisayarlarındaki etkinliklerini izlemesine olanak veren bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="AppleScript">
+	<d:index><d:index_value>AppleScript</d:index_value><d:index_title>AppleScript</d:index_title></d:index>
+	<h1>AppleScript</h1>
+	<p>Mac OS’ta yerleşik olan betik yazma dili. AppleScript dili; Mail, Safari, iCal ve diğer uygulamalar da dahil olmak üzere birçok uygulamada yinelenen veya karmaşık görevleri otomatikleştirmek için kullanılabilecek komutlardan oluşur.</p>
+</d:entry>
+
+<d:entry id="AppleShare">
+	<d:index><d:index_value>AppleShare</d:index_value><d:index_title>AppleShare</d:index_title></d:index>
+	<h1>AppleShare</h1>
+	<p>AppleTalk ağ yazılımıyla çalışan dosya ve baskı sunucusu yazılımı. AppleShare uygulaması, Mac OS X Server uygulamasıyla değiştirilmiştir.</p>
+</d:entry>
+
+<d:entry id="AppleTalk">
+	<d:index><d:index_value>AppleTalk</d:index_value><d:index_title>AppleTalk</d:index_title></d:index>
+	<h1>AppleTalk</h1>
+	<p>Bilgisayar ağları için Apple Inc.’e ait yazılım araçları kümesi. AppleTalk ağ sistemi, Mac OS X kullanan Macintosh bilgisayarlarda TCP/IP ağ sistemiyle değiştirilmiştir.</p>
+</d:entry>
+
+<d:entry id="Apple_TV">
+	<d:index><d:index_value>Apple TV</d:index_value><d:index_title>Apple TV</d:index_title></d:index>
+	<h1>Apple TV</h1>
+	<p>Kablosuz olarak aldığı video sinyalini, herhangi bir geliştirilmiş çözünürlüklü (EDTV) veya yüksek çözünürlüklü (HDTV) geniş ekran televizyonda oynatan Apple Inc.’e ait set üstü kutusu. Apple TV; bir iTunes arşivindeki müzikleri çalabilir, filmleri, TV şovlarını ve podcast’leri, www.apple.com adresindeki film tanıtımlarını ve bilgisayardaki sayısal fotoğrafların slayt sunularını oynatabilir. Apple TV; Mac OS X 10.3.9, 10.4.9 ya da daha yenisini kullanan bir Macintosh bilgisayarla veya Windows XP Home, Professional (SP2) ya da Windows Vista kullanan bir Windows tabanlı bilgisayarla eşzamanlanabilir. Daha fazla bilgi için <a href='http://www.apple.com/tr/appletv/'>Apple TV web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="AppleWorks">
+	<d:index><d:index_value>AppleWorks</d:index_value><d:index_title>AppleWorks</d:index_title></d:index>
+	<h1>AppleWorks</h1>
+	<p>Sözcük işlem, hesap tablosu, grafik ve veri tabanı uygulamalarını içeren bir Apple uygulaması. İlk çıkan AppleWorks programı, Apple II ailesindeki bilgisayarlarda çalışıyordu. Mac OS X kullanan Macintosh bilgisayarlar için AppleWorks’ün daha yeni bir sürümü yaratıldı. AppleWorks, iWork uygulamalar paketiyle değiştirildi.</p>
+</d:entry>
+
+<d:entry id="Aqua">
+	<d:index><d:index_value>Akua</d:index_value><d:index_title>Akua</d:index_title></d:index>
+	<h1>Akua</h1>
+	<p>Mac OS X’in grafiksel kullanıcı arayüzü ve görsel teması.</p>
+</d:entry>
+
+<d:entry id="archive">
+	<d:index><d:index_value>arşivleme</d:index_value><d:index_title>arşivleme</d:index_title></d:index>
+	<h1>arşivleme</h1>
+	<p>Mac OS X’te, dosyanın büyüklüğünü azaltmak için onu sıkıştırma veya dosyalarınızı ve kullanıcı ayarlarınızı değiştirmeden sistem yazılımını yeniden yükleme (“arşivle ve yükle”) anlamına gelir.</p>
+</d:entry>
+
+<d:entry id="argument">
+	<d:index><d:index_value>değişken</d:index_value><d:index_title>değişken</d:index_title></d:index>
+	<h1>değişken</h1>
+	<p>Numbers hesap tablosu uygulamasında; değişkenler, Numbers işlevinin bir görevi gerçekleştirmek için gereksinim duyduğu değerleri sağlar. Örneğin, şu formül A sütunundaki 2. ile 10. satırlar arasındaki değerleri toplayan ve tek bir değişkene (hücre aralığı) sahip olan TOPLA adlı işlevi içerir: =TOPLA(A2:A10). Farklı işlevler için değişken sayısı ve türü farklılık gösterebilir. </p>
+</d:entry>
+
+<d:entry id="audiobook">
+	<d:index><d:index_value>sesli kitap</d:index_value><d:index_title>sesli kitap</d:index_title></d:index>
+	<h1>sesli kitap</h1>
+	<p>Bir kitabın sesli okunması gibi kaydedilmiş bir sesli programdır. Sesli kitapları ve diğer sesli programları iTunes arşivinize koyabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="audio_driver">
+	<d:index><d:index_value>ses sürücüsü</d:index_value><d:index_title>ses sürücüsü</d:index_title></d:index>
+	<h1>ses sürücüsü</h1>
+	<p>Ses verisini, bilgisayarınızın ses kartının işleyebileceği ve hoparlörler yoluyla çalabileceği bir biçime dönüştüren bir yazılım programı. Bilgisayarın ses sürücüsünün bilgisayardaki ses kartıyla uyumlu olması gerekir. Mac OS X ses sürücüsü Core Audio’dur.</p>
+</d:entry>
+
+<d:entry id="AutoFill">
+	<d:index><d:index_value>Otomatik Doldur</d:index_value><d:index_title>Otomatik Doldur</d:index_title></d:index>
+	<h1>Otomatik Doldur</h1>
+	<p>Apple’ın Safari web tarayıcısının, adres defterinizdeki ve daha önce doldurduğunuz formlardaki bilgileri kullanarak web sayfasındaki formları otomatik olarak dolduran bir özelliği.</p>
+</d:entry>
+
+<d:entry id="Automator">
+	<d:index><d:index_value>Automator</d:index_value><d:index_title>Automator</d:index_title></d:index>
+	<h1>Automator</h1>
+	<p>Mac OS X ile gelen ve yinelenen görevleri otomatikleştirmek için iş akışları yaratmanızı sağlayan bir uygulama. Automator; Finder, Safari, iCal, Adres Defteri, Microsoft Office ve Adobe Photoshop da dahil olmak üzere birçok uygulamayla çalışır.</p>
+</d:entry>
+
+<d:entry id="autoplay_DVD">
+	<d:index><d:index_value>otomatik oynatılan DVD</d:index_value><d:index_title>otomatik oynatılan DVD</d:index_title></d:index>
+	<h1>otomatik oynatılan DVD</h1>
+	<p>Bir izleyici, bilgisayarın optik sürücüsüne DVD’yi taktığında otomatik olarak oynatılan bir DVD filmi veya slayt sunusu. Macintosh bilgisayarlarda, iDVD uygulamasını kullanarak otomatik oynatılan bir DVD yaratabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="A/UX">
+	<d:index><d:index_value>A/UX</d:index_value><d:index_title>A/UX</d:index_title></d:index>
+	<h1>A/UX</h1>
+	<p>Macintosh bilgisayarların belirli modelleri için bir UNIX işletim sistemi sürümü. A/UX işletim sisteminin ilk sürümü 1988 yılında, son sürümü de 1995 yılında yayımlandı.</p>
+</d:entry>
+
+<d:entry id="background">
+	<d:index><d:index_value>arkaplan</d:index_value><d:index_title>arkaplan</d:index_title></d:index>
+	<h1>arkaplan</h1>
+	<p>Mac OS X’de; masaüstü, Finder pencereleri ve iDVD projeleri de dahil olmak üzere birçok yerde özelleştirilmiş arkaplan ayarlayabilirsiniz. Ayrıca bakınız: <a href='x-dictionary:r:desktop_picture:com.apple.dictionary.AppleDictionary'><b>masaüstü resmi</b></a> ve <a href='x-dictionary:r:iDVD_themes:com.apple.dictionary.AppleDictionary'><b>iDVD temaları</b></a>.</p>
+</d:entry>
+
+<d:entry id="Backup">
+	<d:index><d:index_value>Backup</d:index_value><d:index_title>Backup</d:index_title></d:index>
+	<h1>Backup</h1>
+	<p>MobileMe üyelerinin kullanabildiği bir Apple yazılımı. Backup uygulaması; fotoğraflarınız, müzikleriniz, ana klasörünüz ve daha birçok şey de dahil olmak üzere Macintosh bilgisayarınızdaki dosyaların düzenli aralıklarla otomatik olarak yedeklenmesini ayarlamanızı sağlar.</p>
+</d:entry>
+
+<d:entry id="badge_overlay">
+	<d:index><d:index_value>kimlik katmanı</d:index_value><d:index_title>kimlik katmanı</d:index_title></d:index>
+	<h1>kimlik katmanı</h1>
+	<p>İmleci bir görüntünün, pencerenin, simgenin veya başka bir nesnenin üzerine getirdiğinizde görünen küçük grafik. Kimlik katmanı, nesne hakkında ek bilgiler sunar. Macintosh bilgisayarlardaki Aperture sayısal fotoğrafçılık uygulamasında; bir görüntüye düzenlemeleri, anahtar sözcükleri, beğeni düzeylerini veya diğer değişiklikleri uyguladığınızda, Aperture görüntüyü kimlik katmanıyla işaretler. Kimlik katmanları, yalnızca ekranda görünür, basılan kopyalarda görünmez.</p>
+</d:entry>
+
+<d:entry id="Bonjour">
+	<d:index><d:index_value>Bonjour</d:index_value><d:index_title>Bonjour</d:index_title></d:index>
+	<h1>Bonjour</h1>
+	<p>Mac OS X’te yerleşik olan yazılım. Bonjour yazılımı, bir bilgisayarı yakındaki web sitelerine ve yazıcılar ve diğer bilgisayarlar gibi aygıtlara bağlar. Aynı zamanda, yerel alan ağındaki iChat arkadaşlarını ve paylaşılan müzikler ve fotoğraflar gibi paylaşılan bilgileri de bulur.</p>
+</d:entry>
+
+<d:entry id="browser">
+	<d:index><d:index_value>tarayıcı</d:index_value><d:index_title>tarayıcı</d:index_title></d:index>
+	<h1>tarayıcı</h1>
+	<p>Metinleri, görüntüleri, sesleri ve diğer bilgileri bulmanıza, görüntülemenize ve onlarla etkileşimde bulunmanıza yardımcı olan bir uygulama. Web tarayıcı, Internet’teki web sayfaları arasında dolaşmak için kullanılır. Macintosh bilgisayarlarda kullanılan Safari uygulaması web tarayıcıya bir örnektir.</p>
+</d:entry>
+
+<d:entry id="browsing_history">
+	<d:index><d:index_value>tarama tarihçesi</d:index_value><d:index_title>tarama tarihçesi</d:index_title></d:index>
+	<h1>tarama tarihçesi</h1>
+	<p>Safari veya başka bir web tarayıcı tarafından kaydedilen ve ziyaret ettiğiniz web sayfalarının adreslerinden oluşan bir liste. Tarama tarihçesi genellikle bir haftalık zaman diliminde ziyaret edilmiş web sayfası adreslerini içerir.</p>
+</d:entry>
+
+<d:entry id="buddy_list">
+	<d:index><d:index_value>arkadaş listesi</d:index_value><d:index_title>arkadaş listesi</d:index_title></d:index>
+	<h1>arkadaş listesi</h1>
+	<p>Anında mesajlaşma uygulamalarında, sohbet etmek için aralarından seçim yapabileceğiniz kişi listesi. Genellikle, arkadaş listesi en sık iletişim kurulan kişilerin adlarından oluşur. Arkadaş listesi çoğunlukla her bir arkadaşın durumunu (çevrimiçi, ulaşılabilir veya ulaşılamaz) gösterir.</p>
+</d:entry>
+
+<d:entry id="burn_folder">
+	<d:index><d:index_value>diske basılabilir klasör</d:index_value><d:index_title>diske basılabilir klasör</d:index_title></d:index>
+	<h1>diske basılabilir klasör</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda bulunan bir klasör türü. Diske basılabilir klasör, CD’ye veya DVD’ye basmak istediğiniz öğeleri içerir. Diske basılabilir klasörün simgesini çift tıkladıktan sonra Diske Bas düğmesini tıklamak, diske basılabilir klasördeki öğelerin tümünü diske kopyalar.</p>
+</d:entry>
+
+<d:entry id="Calculator">
+	<d:index><d:index_value>Hesap Makinesi</d:index_value><d:index_title>Hesap Makinesi</d:index_title></d:index>
+	<h1>Hesap Makinesi</h1>
+	<p>Mac OS X ile gelen hesap makinesi uygulaması. Hesap Makinesi; temel, bilimsel ve programcı modlarını içerir ve Ters Polonya Notasyonu’nu (RPN) destekler.</p>
+</d:entry>
+
+<d:entry id="CalDAV">
+	<d:index><d:index_value>CalDAV</d:index_value><d:index_title>CalDAV</d:index_title></d:index>
+	<h1>CalDAV</h1>
+	<p>Birden fazla kullanıcının ortak çalışma takvimleri yayımlamasını, onlara abone olmasını ve onları birden fazla aygıtla eşzamanlamasını sağlayan yazılım. Paylaşılan takvimler CalDAV sunucusu tarafından yönetilir.</p>
+</d:entry>
+
+<d:entry id="candidate_window">
+	<d:index><d:index_value>aday penceresi</d:index_value><d:index_title>aday penceresi</d:index_title></d:index>
+	<h1>aday penceresi</h1>
+	<p>Giriş yöntemi yazılımında, Çince ideogramlar gibi klavyede bulunmayan karakterleri girmek için kullanılan pencere. Kendisiyle ilişkili birden fazla karakterin olduğu bir giriş kodu girdiğinizde aday penceresi görünür. İstediğiniz karakteri aday penceresinden seçer ve metne girersiniz.</p>
+</d:entry>
+
+<d:entry id="Carbon">
+	<d:index><d:index_value>Carbon</d:index_value><d:index_title>Carbon</d:index_title></d:index>
+	<h1>Carbon</h1>
+	<p>Mac OS için uygulama yaratan yazılım geliştiriciler için API (uygulama programlama arayüzleri) adı verilen araçlar kümesi. Carbon; kullanıcı arayüzü araç takımı, olay işleme, Quartz 2B grafik arşivi ve çoklu işlem desteği içerir.</p>
+</d:entry>
+
+<d:entry id="CDDB">
+	<d:index><d:index_value>CDDB</d:index_value><d:index_title>CDDB</d:index_title></d:index>
+	<h1>CDDB</h1>
+	<p>CD veri tabanı. CDDB; Gracenote, Inc.’in lisanslı ticari markasıdır. Yazılım uygulamaları, Internet üzerinde ses CD’si bilgilerini aramak için CDDB’yi kullanır. Uygulama CDDB’yi sorguladıktan sonra, çoğu CD’nin başlığını, sanatçı adını, iz listesini ve diğer bilgilerini görüntüleyebilir.</p>
+</d:entry>
+
+<d:entry id="cell_reference">
+	<d:index><d:index_value>hücre referansı</d:index_value><d:index_title>hücre referansı</d:index_title></d:index>
+	<h1>hücre referansı</h1>
+	<p>Numbers hesap tablosu uygulamasında, hücre referansları formüllerde belirli hücreleri tanımlar. Referans sekmelerinin harflerini ve sayılarını ya da başlık hücresi adlarını kullanarak hücre referansları yaratabilirsiniz. Tablonuzda hem başlık satırı hem de başlık sütunu varsa, bir hücreyi sütun adını takip eden satır adını kullanarak tanımlayabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="cell_value_format">
+	<d:index><d:index_value>hücre değeri biçimi</d:index_value><d:index_title>hücre değeri biçimi</d:index_title></d:index>
+	<h1>hücre değeri biçimi</h1>
+	<p>Numbers hesap tablosu uygulamasında, bir hücre değerinin belirli bir şekilde görüntülenmesi için hücreye biçim uygulayabilirsiniz. Örneğin; parasal değer içeren hücreleri, hücredeki sayıların önünde para birimi sembolü ($, £ veya ¥ gibi) görüntülenecek şekilde biçimleyebilirsiniz. Veya hücreleri, hücre değerleri eklemek ya da hücre değerlerini değiştirmek için kullanılan onay kutuları ve sürgüler gibi denetimler içerecek şekilde biçimleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="certificate">
+	<d:index><d:index_value>sertifika</d:index_value><d:index_title>sertifika</d:index_title></d:index>
+	<h1>sertifika</h1>
+	<p>Bilgilerin Internet üzerinden güvenli bir şekilde aktarılmasını sağlayan elektronik belge ilişiği. Web tarayıcılar, posta uygulamaları ve anında mesajlaşma uygulamaları; güvenli bir siteyle yapılan bilgi alışverişlerinde bilgileri şifrelemek için sertifikaları kullanır. Sertifikalar; oturum açma bilgilerinizi, kredi kartı numaralarınızı, adresleri ve diğer güvenli verileri korur. Sertifikalar; VeriSign, Inc. veya RSA Data Security, Inc. gibi güvenilir kurumlar tarafından verilir. Güvenli bir web sitesine gittiğinizde; Mac OS X, sitenin sertifikasını denetler ve onu yasal olduğu bilinen sertifikalarla karşılaştırır. Web sitesinin sertifikası tanınmazsa veya sitenin sertifikası yoksa bir ileti alırsınız.</p>
+</d:entry>
+
+<d:entry id="chapter_marker">
+	<d:index><d:index_value>bölüm işareti</d:index_value><d:index_title>bölüm işareti</d:index_title></d:index>
+	<h1>bölüm işareti</h1>
+	<p>İzleyicilerin doğrudan belirli sahnelere gidebilmeleri amacıyla sahne seçimi menüsü yaratmak için sayısal filme eklenen işaretler.</p>
+</d:entry>
+
+<d:entry id="character_palette">
+	<d:index><d:index_value>karakter paleti</d:index_value><d:index_title>karakter paleti</d:index_title></d:index>
+	<h1>karakter paleti</h1>
+	<p>Belgelerinize matematiksel sembolleri, aksan işaretli harfleri, okları ve diğer “şekilleri” veya diğer dillerdeki karakterleri eklemenizi sağlayan bir Mac OS X özelliği.</p>
+</d:entry>
+
+<d:entry id="Chooser">
+	<d:index><d:index_value>Seçici</d:index_value><d:index_title>Seçici</d:index_title></d:index>
+	<h1>Seçici</h1>
+	<p>Mac OS’un daha önceki sürümlerinde yazıcılara ve sunuculara bağlanmanızı ve AppleTalk ağ yazılımını açmanızı ve kapatmanızı sağlayan bir özellik. Mac OS X’te, Sistem Tercihleri’nin Kağıda Dökme ve Faks ve Ağ bölümleriyle değiştirilmiştir.</p>
+</d:entry>
+
+<d:entry id="Cinema_Tools">
+	<d:index><d:index_value>Cinema Tools</d:index_value><d:index_title>Cinema Tools</d:index_title></d:index>
+	<h1>Cinema Tools</h1>
+	<p>Profesyonel video düzenleme uygulaması olan Final Cut Pro ile gelen Apple Inc.’e ait yazılım araçları kümesi. Cinema Tools yazılımı; özgün filmle ve sesle, sayısallaştırılmış video karşılıkları arasındaki ilişkiyi izlemek için kullanılır.</p>
+</d:entry>
+
+<d:entry id="Classic">
+	<d:index><d:index_value>Classic</d:index_value><d:index_title>Classic</d:index_title></d:index>
+	<h1>Classic</h1>
+	<p>Macintosh işletim sisteminin Mac OS X ile değiştirilen daha eski sürümleri.</p>
+</d:entry>
+
+<d:entry id="clip">
+	<d:index><d:index_value>klip</d:index_value><d:index_title>klip</d:index_title></d:index>
+	<h1>klip</h1>
+	<p>Ses veya video bölümü. iMovie uygulamasında, istediğiniz efektleri elde etmek için kliplerle çeşitli şekillerde (klipleri taşıma, müzik kliplerinin başlangıç ve bitiş noktalarını ayarlama, klipler arasına geçişler ekleme ve benzeri gibi) çalışabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Cocoa">
+	<d:index><d:index_value>Cocoa</d:index_value><d:index_title>Cocoa</d:index_title></d:index>
+	<h1>Cocoa</h1>
+	<p>Mac OS için uygulama yaratan yazılım geliştiriciler için API (uygulama programlama arayüzleri) adı verilen araçlar kümesi. Cocoa, Mac OS X’e özgü uygulamalar geliştirmek için kullanılan nesneye dayalı uygulama ortamıdır. Cocoa uygulamaları Apple’ın kullanıcı arayüzü kılavuzlarına uyar; bu yüzden görünüşleri ve çalışmaları Macintosh kullanıcılarının alışık olduğu biçimdedir.</p>
+</d:entry>
+
+<d:entry id="Cocoa_Touch">
+	<d:index><d:index_value>Cocoa Touch</d:index_value><d:index_title>Cocoa Touch</d:index_title></d:index>
+	<h1>Cocoa Touch</h1>
+	<p>iPhone ve iPod touch uygulamaları yaratan yazılım geliştiriciler için API (uygulama programlama arayüzleri) adı verilen araçlar kümesi. Cocoa Touch, Mac OS X uygulamaları yaratmak için kullanılan Cocoa araçlarını taban alır.</p>
+</d:entry>
+
+<d:entry id="ColorSync">
+	<d:index><d:index_value>ColorSync</d:index_value><d:index_title>ColorSync</d:index_title></d:index>
+	<h1>ColorSync</h1>
+	<p>Apple’ın renk eşleme uygulaması. ColorSync; ekranlar, yazıcılar, tarayıcılar ve sayısal kameralar gibi tüm görüntüleme aygıtlarını bütünleştirir; böylece ekranda görüntülenen renk basılan renkle aynı olur. ColorSync, Mac OS X’in bir parçasıdır.</p>
+</d:entry>
+
+<d:entry id="ColorSync_profile">
+	<d:index><d:index_value>ColorSync profili</d:index_value><d:index_title>ColorSync profili</d:index_title></d:index>
+	<h1>ColorSync profili</h1>
+	<p>ColorSync uygulamasının; tarayıcılar, yazıcılar ve ekranlar gibi bilgisayara bağlı tüm görüntüleme aygıtları için kaydettiği bilgiler. Profil, görüntüleri mümkün olduğunca doğru bir şekilde yeniden üretmek için kullanılır. Örneğin; bir görüntü tarandığında görüntü dosyası, tarayıcı profilinin bir kopyasını içerir. Görüntü kağıda döküldüğünde, eşleme işlemi renk bilgilerini tarayıcı profilinden yazıcı profiline dönüştürür.</p>
+</d:entry>
+
+<d:entry id="combo_drive">
+	<d:index><d:index_value>combo sürücü</d:index_value><d:index_title>combo sürücü</d:index_title></d:index>
+	<h1>combo sürücü</h1>
+	<p>Disk sürücüsü türü. Combo sürücü; CD’leri okuyabilir ve CD’lere yazabilir (kopyalayabilir), DVD’leri okuyabilir ama DVD’lere yazamaz.</p>
+</d:entry>
+
+<d:entry id="Common_Access_Card_Viewer">
+	<d:index><d:index_value>Common Access Card Görüntüleyici</d:index_value><d:index_title>Common Access Card Görüntüleyici</d:index_title></d:index>
+	<h1>Common Access Card Görüntüleyici</h1>
+	<p>Bir erişim denetimi aygıtı. Bir Common Access Card’ı kart okuyucudan geçirme; bilgisayarda oturum açmanıza, ekran koruyucu açıkken bilgisayara erişmenize, belirli Sistem Tercihleri bölümlerinde değişiklik yapmanıza ve yazılım yüklemenize olanak sağlar.</p>
+</d:entry>
+
+<d:entry id="conditional_formatting">
+	<d:index><d:index_value>koşullu biçimleme</d:index_value><d:index_title>koşullu biçimleme</d:index_title></d:index>
+	<h1>koşullu biçimleme</h1>
+	<p>Numbers hesap tablosunda, bir koşul gerçekleştiğinde hücrenin belirli bir şekilde görüntülenmesini sağlayacak şekilde hücreyi biçimlemenizi sağlayan özellik. Örneğin, hücrenin değeri belirli bir sayıyı geçtiğinde hücrenin arkaplanının kırmıza dönmesini sağlayabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="control_panel">
+	<d:index><d:index_value>denetim masası</d:index_value><d:index_title>denetim masası</d:index_title></d:index>
+	<h1>denetim masası</h1>
+	<p>Windows bilgisayarlarda denetim masası, masaüstü arkaplanınız veya Internet’e bağlanma yöntemi gibi ayarları seçmenizi sağlayan küçük programlar içerir. Macintosh bilgisayarlarda, ayarları seçmek için Sistem Tercihleri kullanılır.</p>
+</d:entry>
+
+<d:entry id="control_strip">
+	<d:index><d:index_value>denetim çubuğu</d:index_value><d:index_title>denetim çubuğu</d:index_title></d:index>
+	<h1>denetim çubuğu</h1>
+	<p>Mac OS’un eski sürümlerinde pil durumunu görüntülemek, ağ bağlantısını denetlemek, sistemin ses yüksekliğini değiştirmek, ekran çözünürlüğünü ayarlamak ve diğer işlevleri gerçekleştirmek için kullanılır. Mac OS X’te, menü çubuğundaki menüler denetim çubuğunun yerine geçer.</p>
+</d:entry>
+
+<d:entry id="cookie">
+	<d:index><d:index_value>çerez</d:index_value><d:index_title>çerez</d:index_title></d:index>
+	<h1>çerez</h1>
+	<p>Bir web sitesi tarafından bilgi saklamak amacıyla bilgisayarınıza yerleştirilen küçük bir dosya. Daha sonra siteye döndüğünüzde, web tarayıcınız siteye ait olan çerezleri geri gönderir. Çerezler, sitenin size uygun bilgileri gösterebilmesi için siteye kim olduğunuzu söyler. Çerezler, adınız ve e-posta adresiniz gibi sizi tanımlayan bilgiler saklayabilir. Bir web sitesi yalnızca sizin sağladığınız bilgilere erişebilir. Bir web sitesi, bilgisayarınızdaki diğer bilgilere erişmek için çerezleri kullanamaz.</p>
+</d:entry>
+
+<d:entry id="Core_Audio">
+	<d:index><d:index_value>Core Audio</d:index_value><d:index_title>Core Audio</d:index_title></d:index>
+	<h1>Core Audio</h1>
+	<p>Macintosh bilgisayarlarda kullanılan ses sürücüsü.</p>
+</d:entry>
+
+<d:entry id="Cover_Flow">
+	<d:index><d:index_value>Cover Flow</d:index_value><d:index_title>Cover Flow</d:index_title></d:index>
+	<h1>Cover Flow</h1>
+	<p>Mac OS X’deki Finder’ın ve iTunes ortam çalarının bir özelliği. iTunes’daki Cover Flow özelliği, iTunes müzik koleksiyonundaki albüm kapaklarını bilgisayar ekranında görüntüleyerek albümler arasında hızlı bir şekilde tarama yapmanıza olanak sağlar. Finder’daki Cover Flow görüntüsü, Finder penceresinde görüntülenen dosyaları, klasörleri ve uygulamaları taramak için kullanılan dört seçenekten biridir.</p>
+</d:entry>
+
+<d:entry id="crop">
+	<d:index><d:index_value>kırpma</d:index_value><d:index_title>kırpma</d:index_title></d:index>
+	<h1>kırpma</h1>
+	<p>Fotoğraf gibi bir görüntünün sadece istediğiniz bölümünü tutup kalan bölümünü silerek onu düzenleme.</p>
+</d:entry>
+
+<d:entry id="Dashboard">
+	<d:index><d:index_value>Dashboard</d:index_value><d:index_title>Dashboard</d:index_title></d:index>
+	<h1>Dashboard</h1>
+	<p>Mac OS X ile gelen ve “araç takımları” olarak adlandırılan küçük uygulamalar sunan Apple yazılımı. Araç takımları; hisse senedi fiyatlarını denetleme, yerel veya küresel hava durumu bilgilerini bulma, sözlükte sözcük arama ve benzeri gibi çok geniş kullanım alanlarına sahiptir.</p>
+</d:entry>
+
+<d:entry id="Dashcode">
+	<d:index><d:index_value>Dashcode</d:index_value><d:index_title>Dashcode</d:index_title></d:index>
+	<h1>Dashcode</h1>
+	<p>Dashboard araç takımları ve web uygulamaları (iPhone’daki Safari için en iyi duruma getirilmiş web sayfaları) yaratmanızı sağlayan Apple’ın yazılım geliştirme programı. Dashcode kullanılarak yaratılan araç takımları ve web uygulamaları; HTML (Bağlantılı Metin İşaretleme Dili), CSS (Basamaklı Stil Sayfaları) ve JavaScript gibi standart web teknolojilerini kullanır.</p>
+</d:entry>
+
+<d:entry id="desktop">
+	<d:index><d:index_value>masaüstü</d:index_value><d:index_title>masaüstü</d:index_title></d:index>
+	<h1>masaüstü</h1>
+	<p>Bilgisayar ekranının arkaplan alanı. Masaüstü; yaratabileceğiniz, düzenleyebileceğiniz, taşıyabileceğiniz ve silebileceğiniz simgeler, pencereler, araç çubukları, dosyalar ve klasörler sağlar.</p>
+</d:entry>
+
+<d:entry id="desktop_picture">
+	<d:index><d:index_value>masaüstü resmi</d:index_value><d:index_title>masaüstü resmi</d:index_title></d:index>
+	<h1>masaüstü resmi</h1>
+	<p>Ekranınızın arkaplan alanını özelleştirmek için kullandığınız renk, desen veya resim. Sistem Tercihleri’nin Masaüstü ve Ekran Koruyucu bölümünü kullanarak bir masaüstü resmi seçebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Dictionary">
+	<d:index><d:index_value>Sözlük</d:index_value><d:index_title>Sözlük</d:index_title></d:index>
+	<h1>Sözlük</h1>
+	<p>Mac OS X ile gelen bir uygulama. Sözlük; Oxford Amerikan Sözlükleri ve Apple Sözlüğü de dahil olmak üzere çeşitli kaynaklarda tanımları ve eş anlamlıları aramanızı sağlar.</p>
+</d:entry>
+
+<d:entry id="digital_certificate">
+	<d:index><d:index_value>sayısal sertifika</d:index_value><d:index_title>sayısal sertifika</d:index_title></d:index>
+	<h1>sayısal sertifika</h1>
+	<p>Açık anahtar sertifikası olarak da bilinen ve sayısal kimliğinizi adınız, e-posta adresiniz veya işiniz gibi diğer bilgilerle ilişkilendiren bir elektronik belge. Safari web tarayıcısı, Mail ve iChat gibi web uygulamaları bilgilerin web üzerinden güvenli aktarımını sağlamak için sertifikaları kullanır.</p>
+</d:entry>
+
+<d:entry id="disk_image">
+	<d:index><d:index_value>disk görüntüsü</d:index_value><d:index_title>disk görüntüsü</d:index_title></d:index>
+	<h1>disk görüntüsü</h1>
+	<p>Sabit disk veya optik disk gibi bir saklama aygıtında bulunan tüm dosyaların ve klasörlerin tam içeriğini ve düzenini içeren tek bir dosya. Disk görüntüsü yaratmak için Disk İzlencesi’ni kullanabilirsiniz. Disk görüntüsüyle; eski verileri arşivleyebilir, dosyaları diğer kişilerle paylaşabilir, hassas bilgileri şifreleyebilir ve disklerin kopyalarını oluşturabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Disk_Utility">
+	<d:index><d:index_value>Disk İzlencesi</d:index_value><d:index_title>Disk İzlencesi</d:index_title></d:index>
+	<h1>Disk İzlencesi</h1>
+	<p>Mac OS X ile gelen ve diskle ilgili görevleri gerçekleştirmek için kullanılan bir uygulama. Disk İzlencesi; disk görüntüleri yaratmanızı ve diskleri masaüstüne bağlamanızı, masaüstünden kaldırmanızı, yeniden biçimlemenizi, bölüntülemenizi, diske basmanızı ve onarmanızı sağlar.</p>
+</d:entry>
+
+<d:entry id="Dock">
+	<d:index><d:index_value>Dock</d:index_value><d:index_title>Dock</d:index_title></d:index>
+	<h1>Dock</h1>
+	<p>Mac OS X ile gelen bir uygulama başlatıcı. Dock, ekranın kenarı boyunca yerleştirilmiştir. Bilgisayarda bulunan birçok uygulamanın simgesini içerir. Dock’a simge sürükleyebilir veya Dock’taki simgeleri çıkarabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="dogcow">
+	<d:index><d:index_value>dogcow</d:index_value><d:index_title>dogcow</d:index_title></d:index>
+	<h1>dogcow</h1>
+	<p>İlk olarak Cairo şekil (süsleme) fontunda bir karakter olan “dogcow”, Mac bilgisayarlardaki sayfa düzeni sorgu kutularında kağıdın yönünü ve rengini göstermek için kullanılıyordu. Zaman içerisinde, “dogcow” ek özellikler kazandı ve daha çok ineğe benzer bir görünüş aldı. “Dogcow”, “moof” sesi çıkarır. </p>
+</d:entry>
+
+<d:entry id="domain">
+	<d:index><d:index_value>alan</d:index_value><d:index_title>alan</d:index_title></d:index>
+	<h1>alan</h1>
+	<p>Internet’e bağlı olan bir bilgisayarın alan adının parçası. “www.ornek.com” adı; “www” alt alanı veya sunucu adından, “ornek” alanından ve en üst düzeydeki “com” alanından oluşur.</p>
+</d:entry>
+
+<d:entry id="DOM">
+	<d:index><d:index_value>DOM</d:index_value><d:index_title>DOM</d:index_title></d:index>
+	<h1>DOM</h1>
+	<p>Belge Nesnesi Modeli. Yazılım programlarının, web sayfaları da dahil olmak üzere belgelerin içeriğine, yapısına ve stiline erişmesini ve onları güncellemesini sağlayan bir arayüz. Bir web sayfası için olan DOM; içerikler, bağlantılar, stil belirtimleri ve betikler (küçük programlar) de dahil olmak üzere web sayfasında görünen her bir öğeyi listeler ve öğelerin sayfada hangi sırada görüneceklerini belirtir.</p>
+</d:entry>
+
+<d:entry id="DOM_navigation">
+	<d:index><d:index_value>DOM tabanlı dolaşma</d:index_value><d:index_title>DOM tabanlı dolaşma</d:index_title></d:index>
+	<h1>DOM tabanlı dolaşma</h1>
+	<p>Sayfanın Belge Nesnesi Modeli’ni (DOM) taban alarak web sayfasında dolaşma.</p>
+</d:entry>
+
+<d:entry id="DRAM">
+	<d:index><d:index_value>DRAM</d:index_value><d:index_title>DRAM</d:index_title></d:index>
+	<h1>DRAM</h1>
+	<p>Dinamik rasgele erişimli bellek. Kişisel bilgisayarlarda en sık kullanılan bellek türü. DRAM, birkaç milisaniyede bir yeni elektriksel yük gerektirir.</p>
+</d:entry>
+
+<d:entry id="DVD_or_CD_sharing">
+	<d:index><d:index_value>DVD veya CD paylaşma</d:index_value><d:index_title>DVD veya CD paylaşma</d:index_title></d:index>
+	<h1>DVD veya CD paylaşma</h1>
+	<p>DVD veya CD diskleri bir Ethernet ağında veya kablosuz ağda paylaşmanızı sağlayan Mac OS X özelliği. Ağınızdaki diğer bilgisayarın optik sürücüsü yoksa; o bilgisayarın, sizin bilgisayarınızdaki optik sürücüde bulunan diski kullanmasına izin verebilirsiniz. Optik sürücüye sahip bilgisayarda Mac OS X 10.4.10 veya daha yenisi ya da Windows XP veya Windows Vista olmalıdır.</p>
+</d:entry>
+
+<d:entry id="dynamic_prompt">
+	<d:index><d:index_value>dinamik bilgi istemi</d:index_value><d:index_title>dinamik bilgi istemi</d:index_title></d:index>
+	<h1>dinamik bilgi istemi</h1>
+	<p>Klavyede bulunmayan Çince ideogramlar gibi karakterleri girmek için kullanılan giriş yöntemi yazılımında, karakterlerin siz yazdıkça otomatik olarak aday penceresinde görünmesi için dinamik bilgi istemini açın.</p>
+</d:entry>
+
+<d:entry id="eMac">
+	<d:index><d:index_value>eMac</d:index_value><d:index_title>eMac</d:index_title></d:index>
+	<h1>eMac</h1>
+	<p>PowerPC G4 işlemcisini taban alan 17 inç ekranlı hepsi bir arada düşük fiyatlı “eğitim Mac”i. Apple Inc., 2002 yılında tanıttığı eMac bilgisayarını 2006 yılında kaldırarak yerine iMac modelini çıkardı.</p>
+</d:entry>
+
+<d:entry id="enhance">
+	<d:index><d:index_value>iyileştirme</d:index_value><d:index_title>iyileştirme</d:index_title></d:index>
+	<h1>iyileştirme</h1>
+	<p>Macintosh bilgisayarlardaki iPhoto uygulamasının bir özelliği. Fotoğrafı düzenlerken İyileştir düğmesini tıklama, önceden ayarlanmış ölçütleri taban alarak fotoğrafı parlaklaştırır veya kontrast düzeylerini ayarlar.</p>
+</d:entry>
+
+<d:entry id="EPS">
+	<d:index><d:index_value>EPS</d:index_value><d:index_title>EPS</d:index_title></d:index>
+	<h1>EPS</h1>
+	<p>Bakınız: <a href='x-dictionary:r:Encapsulated_Postscript:com.apple.dictionary.AppleDictionary'><b>Encapsulated Postscript</b></a></p>
+</d:entry>
+
+<d:entry id="Encapsulated_Postscript">
+	<d:index><d:index_value>Encapsulated Postscript</d:index_value><d:index_title>Encapsulated Postscript</d:index_title></d:index>
+	<h1>Encapsulated Postscript</h1>
+	<p>EPS olarak kısaltılır. Metni ve grafikleri kağıda dökmek için kullanılan PostScript dilini taban alan bir dosya biçimi. Bir EPS dosyası, metnin ve grafiklerin yazıcı tarafından kullanılabilecek açıklamasını içerir ve birden fazla bilgisayar ve uygulama tarafından kopyalanabilir ve paylaşılabilir.</p>
+</d:entry>
+
+<d:entry id="equalizer">
+	<d:index><d:index_value>ekolayzer</d:index_value><d:index_title>ekolayzer</d:index_title></d:index>
+	<h1>ekolayzer</h1>
+	<p>EQ olarak kısaltılır. Müzik setindeki tiz ve bas denetimleri gibi çalışan ama daha güçlü ve esnek olan bir ses denetimi. Müziği; farklı türler, dinleme ortamları (örneğin evinizdeki farklı odalar) ve çıkış yöntemleri (hoparlörler veya kulaklıklar gibi) için özelleştirmek amacıyla ses spektrumunun belirli frekanslarında ince ayarlar yapmak için ekolayzeri kullanırsınız. iTunes uygulamasında, ekolayzer ayarlarını elle düzenleyebilir veya 20’den fazla önceden ayarlanmış, en yaygın kullanılan EQ ayarından birini seçebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Event">
+	<d:index><d:index_value>Etkinlik</d:index_value><d:index_title>Etkinlik</d:index_title></d:index>
+	<h1>Etkinlik</h1>
+	<p>Macintosh bilgisayarlardaki iMovie ve iPhoto uygulamaları, video ve fotoğraf arşivlerinizi etkinliğe göre düzenler. Etkinlik, belirli bir zaman aralığında çekilen videoları veya fotoğrafları gruplar (örneğin öğleden sonra düğününde veya cumartesi kumsalda güneşlenme sırasında çekilen fotoğraflar gibi). Etkinlikleri birleştirerek veya bölerek ve onlara yeni adlar vererek videolarınızı ve fotoğraflarınızı düzenleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="EXIF">
+	<d:index><d:index_value>EXIF</d:index_value><d:index_title>EXIF</d:index_title></d:index>
+	<h1>EXIF</h1>
+	<p>Takas Edilebilir Görüntü Dosyası; sayısal fotoğraf makineleri tarafından kullanılan görüntü dosyası biçimi için belirtim.</p>
+</d:entry>
+
+<d:entry id="Exchangeable_Image_File">
+	<d:index><d:index_value>Takas Edilebilir Görüntü Dosyası</d:index_value><d:index_title>Takas Edilebilir Görüntü Dosyası</d:index_title></d:index>
+	<h1>Takas Edilebilir Görüntü Dosyası</h1>
+	<p>Bakınız: <a href='x-dictionary:r:EXIF:com.apple.dictionary.AppleDictionary'><b>EXIF</b></a>.</p>
+</d:entry>
+
+<d:entry id="Exposé">
+	<d:index><d:index_value>Exposé</d:index_value><d:index_title>Exposé</d:index_title></d:index>
+	<h1>Exposé</h1>
+	<p>F11 klavye tuşuna basarak pencereleri geçici olarak kenara çekmenizi veya ekrandan kaldırmanızı sağlayan bir Mac OS X özelliği. Exposé özelliği belirli pencereleri veya masaüstünü görmenize yardımcı olur.</p>
+</d:entry>
+
+<d:entry id="ExpressCard">
+	<d:index><d:index_value>ExpressCard</d:index_value><d:index_title>ExpressCard</d:index_title></d:index>
+	<h1>ExpressCard</h1>
+	<p>Taşınabilir Macintosh bilgisayarlar da dahil olmak üzere bilgisayarların kullanabildiği bir genişletme kartı. Bilgisayarınıza bir ExpressCard takma, bilgisayarın yeteneklerini genişletmenizi sağlar. Sabit sürücüler, küçük Flash kart okuyucuları ve daha birçok şey bağlamak için ExpressCard kullanabilirsiniz. Macintosh taşınabilir bilgisayarlar ExpressCard/34 kullanır.</p>
+</d:entry>
+
+<d:entry id="extended_desktop">
+	<d:index><d:index_value>genişletilmiş masaüstü</d:index_value><d:index_title>genişletilmiş masaüstü</d:index_title></d:index>
+	<h1>genişletilmiş masaüstü</h1>
+	<p>Mac OS X Sistem Tercihleri’nin bir özelliği. Bilgisayarınız; TV’ler ve projektörler de dahil olmak üzere birden fazla görüntüleme aygıtına bağlıysa, Sistem Tercihleri’nin Ekranlar bölümünü masaüstünüzdeki görüntüyü aygıtların tümünde kesintisiz görüntüleyecek şekilde ayarlayabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="family_controls">
+	<d:index><d:index_value>aile denetimleri</d:index_value><d:index_title>aile denetimleri</d:index_title></d:index>
+	<h1>aile denetimleri</h1>
+	<p>Bakınız: <a href='x-dictionary:r:parental_controls:com.apple.dictionary.AppleDictionary'><b>ebeveyn denetimleri</b></a>.</p>
+</d:entry>
+
+<d:entry id="fast_user_switching">
+	<d:index><d:index_value>kullanıcılar arası hızlı geçiş</d:index_value><d:index_title>kullanıcılar arası hızlı geçiş</d:index_title></d:index>
+	<h1>kullanıcılar arası hızlı geçiş</h1>
+	<p>Belli bir anda birden fazla kullanıcının bilgisayarda oturum açmış olarak kalabilmesini sağlayan bir Mac OS X özelliği. Kullanıcılar arası hızlı geçiş açıkken, kullanılabilir kullanıcı hesapları menü çubuğunun sağ üst köşesindeki bir menüde görünür. Farklı bir hesabı menüden seçerek ona geçebilirsiniz. Önceki hesap, o anki tüm uygulamaları ve belgeleri açık olarak oturum açmış durumda kalır; böylece hızlı bir şekilde yeniden ona geçebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="FileVault">
+	<d:index><d:index_value>FileVault</d:index_value><d:index_title>FileVault</d:index_title></d:index>
+	<h1>FileVault</h1>
+	<p>Macintosh bilgisayarlarda dosyaları şifrelemek ve korumak için kullanılan ve Mac OS X ile gelen bir uygulama.</p>
+</d:entry>
+
+<d:entry id="Final_Cut">
+	<d:index><d:index_value>Final Cut</d:index_value><d:index_title>Final Cut</d:index_title></d:index>
+	<h1>Final Cut</h1>
+	<p> Profesyonel video aygıtlarından veya evde kullanılan sayısal video kameralardan alınan videoları düzenlemek için kullanılan Apple video düzenleme uygulamaları paketi. Final Cut ürünleri, profesyonel ve amatör video grafikçiler tarafından kullanılır. Final Cut uygulamaları, videoyu düzenleyebilmeniz ve işleyebilmeniz için Macintosh bilgisayara yükler ve orada görüntüler.</p>
+</d:entry>
+
+<d:entry id="Finder">
+	<d:index><d:index_value>Finder</d:index_value><d:index_title>Finder</d:index_title></d:index>
+	<h1>Finder</h1>
+	<p>Mac OS’un bir parçası. Finder, bilgisayarınızdaki ve bilgisayarınıza bağlı disklerdeki dosyaları ve klasörleri düzenler ve görüntüler. Finder, disklerdeki bilgilerde arama yapmanıza ve onları yönetmenize de olanak sağlar.</p>
+</d:entry>
+
+<d:entry id="FireWire">
+	<d:index><d:index_value>FireWire</d:index_value><d:index_title>FireWire</d:index_title></d:index>
+	<h1>FireWire</h1>
+	<p>İki bilgisayar veya bir bilgisayar ve sayısal video kamera gibi bilgisayara bağlı bir aygıt arasında yüksek hızlı bağlantı sağlayan bir kablo, bağlayıcı ve yazılım türü.</p>
+</d:entry>
+
+<d:entry id="floating_object">
+	<d:index><d:index_value>kayan nesne</d:index_value><d:index_title>kayan nesne</d:index_title></d:index>
+	<h1>kayan nesne</h1>
+	<p>Pages sözcük işlem ve sayfa yerleşimi uygulamasında, sayfanın belirli bir konumuna sabitlenmiş olan resim, grafik veya başka bir nesne. Kayan nesnenin konumu, siz sayfaya daha fazla metin veya grafik ekledikçe değişmez. Satır içi nesneye de bakın.</p>
+</d:entry>
+
+<d:entry id="Font_Book">
+	<d:index><d:index_value>Font İzlencesi</d:index_value><d:index_title>Font İzlencesi</d:index_title></d:index>
+	<h1>Font İzlencesi</h1>
+	<p>Mac OS X ile gelen font yönetimi uygulaması. Font İzlencesi; fontların önizlemelerini görmenizi ve onları yüklemenizi, fontları koleksiyonlar halinde gruplamanızı, fontları veya koleksiyonları tek tek etkinleştirmenizi veya etkisizleştirmenizi ve fontları başka bir bilgisayara aktarmanızı sağlar.</p>
+</d:entry>
+
+<d:entry id="formula">
+	<d:index><d:index_value>formül</d:index_value><d:index_title>formül</d:index_title></d:index>
+	<h1>formül</h1>
+	<p>Bir değeri elde etmek için işlemleri kullanan matematiksel bir ifade. Numbers hesap tablosu uygulamasında, diğer tablo hücrelerindeki değerlerden elde edilen bir değeri görüntülemek için tablo hücresine formül ekleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="frame_range">
+	<d:index><d:index_value>kare aralığı</d:index_value><d:index_title>kare aralığı</d:index_title></d:index>
+	<h1>kare aralığı</h1>
+	<p>Bir video klibin parçasını veya klibin tamamını oluşturan video kareleri serisi. iMovie uygulamasında, kare aralıklarını seçebilir ve onlarla çalışabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Front_Row">
+	<d:index><d:index_value>Front Row</d:index_value><d:index_title>Front Row</d:index_title></d:index>
+	<h1>Front Row</h1>
+	<p>Mac OS X’in bazı sürümleriyle gelen bir uygulama. Front Row, Apple Remote’u kullanarak bilgisayarınızdaki filmleri, müzikleri ve fotoğrafları taramanızı sağlar.</p>
+</d:entry>
+
+<d:entry id="full_screen">
+	<d:index><d:index_value>tam ekran</d:index_value><d:index_title>tam ekran</d:index_title></d:index>
+	<h1>tam ekran</h1>
+	<p>iPhoto’da; ekranınızın bir bölümü yerine tamamını kullanan, fotoğraflarınızı görüntüleme şekli.</p>
+</d:entry>
+
+<d:entry id="function">
+	<d:index><d:index_value>işlev</d:index_value><d:index_title>işlev</d:index_title></d:index>
+	<h1>işlev</h1>
+	<p>Numbers hesap tablosu uygulamasında, bir hesaplamayı gerçekleştirmek veya bir tablo hücresindeki değeri işlemek için formüle dahil edebileceğiniz adlandırılmış işlem. Örneğin Numbers uygulaması; yaygın matematiksel veya finansal işlemleri gerçekleştiren, bir aramayı taban alarak hücre değerlerini getiren, metin dizgilerini işleyen veya o anki tarihi ve saati alan işlevler sunar. Her bir işlevin bir adı ve onu takip eden parantez içinde en az bir değişkeni vardır.</p>
+</d:entry>
+
+<d:entry id="GarageBand">
+	<d:index><d:index_value>GarageBand</d:index_value><d:index_title>GarageBand</d:index_title></d:index>
+	<h1>GarageBand</h1>
+	<p>Apple Inc.’e ait iLife üretkenlik uygulamaları paketinin bir parçası. GarageBand; özgün müzikler yaratmanızı, onları çalmanızı ve kaydını yapmanızı sağlar. Daha fazla bilgi için <a href='http://www.apple.com/tr/ilife/garageband/'>GarageBand web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="Grab">
+	<d:index><d:index_value>Grab</d:index_value><d:index_title>Grab</d:index_title></d:index>
+	<h1>Grab</h1>
+	<p>Mac OS X ile gelen bir ekran yakalama uygulaması. Grab; bilgisayar ekranının tümünün veya bir bölümünün resmini oluşturmak için kullanılır.</p>
+</d:entry>
+
+<d:entry id="Gracenote,_Inc.">
+	<d:index><d:index_value>Gracenote, Inc.</d:index_value><d:index_title>Gracenote, Inc.</d:index_title></d:index>
+	<h1>Gracenote, Inc.</h1>
+	<p>Ses CD’lerinin içerikleri hakkındaki bilgilerden oluşan bir veri tabanını barındıran şirket. Gracenote, sayısal ortamların yönetimine ve aranmasına izin veren yazılım uygulamalarını ve verilerini sağlar. iTunes da dahil olmak üzere birçok bilgisayar yazılımı uygulaması, Gracenote’un CD veri tabanını (CDDB) kullanır.</p>
+</d:entry>
+
+<d:entry id="group_account">
+	<d:index><d:index_value>grup hesabı</d:index_value><d:index_title>grup hesabı</d:index_title></d:index>
+	<h1>grup hesabı</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda, bir veya daha fazla başka kullanıcı hesabından oluşan bir hesap türü. Grup hesabı (“hesap grubu” da denir), iki veya daha fazla kullanıcı arasında paylaşılan dosyaların izinlerini ayarlamak için kullanılır. Diğer çoğu kullanıcı hesabında yapabildiğinizin aksine grup hesabı adıyla bilgisayarda oturum açamazsınız.</p>
+</d:entry>
+
+<d:entry id="GSM">
+	<d:index><d:index_value>GSM</d:index_value><d:index_title>GSM</d:index_title></d:index>
+	<h1>GSM</h1>
+	<p>Cep telefonlarında en yaygın kullanılan standart olan Global System for Mobile Communications’ın (Mobil İletişim İçin Küresel Sistem) kısaltması.</p>
+</d:entry>
+
+<d:entry id="guest_account">
+	<d:index><d:index_value>konuk hesabı</d:index_value><d:index_title>konuk hesabı</d:index_title></d:index>
+	<h1>konuk hesabı</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda, diğer kişilerin bilgisayarınızı geçici olarak kullanmalarına izin vermek için yaratabileceğiniz bir hesap türü (her bir konuğa ayrı bir kullanıcı hesabı yaratmadan). Konuk, bilgisayarda parola olmadan oturum açabilir. Konuk hesabını yönetmek için ebeveyn denetimlerini kullanabilirsiniz. Konuk; diğer hesapları değiştiremez, bilgisayarın ayarlarında değişiklik yapamaz veya uzaktan oturum açamaz. Konuğun, konuk hesabını kullanarak yarattığı dosyalar oturum kapatıldığında silinir.</p>
+</d:entry>
+
+<d:entry id="GUID">
+	<d:index><d:index_value>GUID</d:index_value><d:index_title>GUID</d:index_title></d:index>
+	<h1>GUID</h1>
+	<p>Genel benzersiz tanımlayıcı. Bir kullanıcı hesabını, grup hesabını veya bilgisayar listesini benzersiz olarak tanımlayan onaltılık düzendeki bir dizgi. Erişim denetimi listesi (ACL) izinleri için kullanıcı ve grup kimliği sağlamak ve belirli kullanıcıları, grup ve iç içe grup üyelikleriyle ilişkilendirmek için de kullanılır. GUID’ler 128 bitlik değerler olduğu için yinelenen GUID’lerin oluşturulması oldukça düşük olasılıklıdır.</p>
+</d:entry>
+
+<d:entry id="GUID_partition">
+	<d:index><d:index_value>GUID bölüntüsü</d:index_value><d:index_title>GUID bölüntüsü</d:index_title></d:index>
+	<h1>GUID bölüntüsü</h1>
+	<p>Genel benzersiz tanımlayıcı’yı (GUID) taban alan bir bölüntüleme düzeni. Intel tabanlı Macintosh bilgisayarlarda, Mac OS X yalnızca GUID bölüntü düzenine sahip disklere yüklenebilir.</p>
+</d:entry>
+
+<d:entry id="Gutenprint">
+	<d:index><d:index_value>Gutenprint</d:index_value><d:index_title>Gutenprint</d:index_title></d:index>
+	<h1>Gutenprint</h1>
+	<p>Daha önce Gimp-Print olarak bilinen ve Mac OS X’in parçası olan Yazıcı PostScript Açıklama (PPD) dosyaları da dahil olmak üzere açık kaynak kodlu yazıcı yazılımı programlarının bir koleksiyonu. Yazıcınız için kullanabileceğiniz başka bir yazılım yoksa veya yazıcı yazılımı düzgün çalışmıyor gibi görünüyorsa Gutenprint yazılımını kullanın.</p>
+</d:entry>
+
+<d:entry id="hardware_port">
+	<d:index><d:index_value>donanım kapısı</d:index_value><d:index_title>donanım kapısı</d:index_title></d:index>
+	<h1>donanım kapısı</h1>
+	<p>Bilgisayarda klavye ve yazıcı gibi aygıtların takılabileceği prizlerden biri. Yaygın donanım kapıları arasında USB, Firewire ve Ethernet sayılabilir.</p>
+</d:entry>
+
+<d:entry id="HFS">
+	<d:index><d:index_value>HFS</d:index_value><d:index_title>HFS</d:index_title></d:index>
+	<h1>HFS</h1>
+	<p>Bakınız: <a href='x-dictionary:r:Mac_OS_Standard_format:com.apple.dictionary.AppleDictionary'><b>Mac OS Standart biçimi</b></a>.</p>
+</d:entry>
+
+<d:entry id="HFS_Plus">
+	<d:index><d:index_value>HFS Plus</d:index_value><d:index_title>HFS Plus</d:index_title></d:index>
+	<h1>HFS Plus</h1>
+	<p>Bakınız: <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>Mac OS Genişletilmiş biçimi</b></a>.</p>
+</d:entry>
+
+<d:entry id="home_folder">
+	<d:index><d:index_value>ana klasör</d:index_value><d:index_title>ana klasör</d:index_title></d:index>
+	<h1>ana klasör</h1>
+	<p>Bilgisayarın her bir kullanıcısı için, kullanıcı hesabı ilk kez ayarlanırken yaratılan klasör. Ana klasörün adı aslında “Ana” değildir; adı, kullanıcı hesabında belirtilen kısa adla aynıdır. Bilgisayarınızdaki tek kullanıcı sizseniz, tek bir kullanıcı hesabı ve tek bir ana klasör vardır. Ana klasör; belgelerinizi, müziklerinizi, resimlerinizi, tercih ayarlarınızı ve daha birçok şeyi saklar.</p>
+</d:entry>
+
+<d:entry id="HyperCard">
+	<d:index><d:index_value>HyperCard</d:index_value><d:index_title>HyperCard</d:index_title></d:index>
+	<h1>HyperCard</h1>
+	<p>İlk olarak 1987 yılında yayımlanan ve 2004 yılında yayımdan kaldırılan bir Apple uygulaması. HyperCard, ilk başarılı bağlantılı ortam (hypermedia) uygulamalarından biriydi. Veri tabanları, sunular, oyunlar, eğitim araçları ve daha birçok şey yaratmak için kullanılırdı.</p>
+</d:entry>
+
+<d:entry id="HyperTalk">
+	<d:index><d:index_value>HyperTalk</d:index_value><d:index_title>HyperTalk</d:index_title></d:index>
+	<h1>HyperTalk</h1>
+	<p>Apple’ın ilk olarak 1987 yılında yayımlanan ve 2004 yılında yayımdan kaldırılan HyperCard uygulamasıyla kullanılan bir programlama dili. HyperTalk dilinin hitap ettiği kitle, programlamaya yeni başlayanlardı. HyperTalk programları (“betik” olarak adlandırılan) İngilizce yazılan metinlere benzerdir.</p>
+</d:entry>
+
+<d:entry id="iBook">
+	<d:index><d:index_value>iBook</d:index_value><d:index_title>iBook</d:index_title></d:index>
+	<h1>iBook</h1>
+	<p>Apple Inc.’in 1999 ve 2006 yılları arasında kullanıma sunduğu taşınabilir bilgisayar serisi. iBook bilgisayarları evlerde ve sınıflarda kullanım için hedeflenmişti. 2006 yılında iBook serisi yerine MacBook gelmiştir.</p>
+</d:entry>
+
+<d:entry id="iBooks_app">
+	<d:index><d:index_value>iBooks uygulaması</d:index_value><d:index_title>iBooks uygulaması</d:index_title></d:index>
+	<h1>iBooks uygulaması</h1>
+	<p>iPhone’da, iPod touch’ta ve iPad’de kullanılabilen ve e-kitapları (ePub biçimindeki elektronik kitapları) indirmenizi ve okumanızı sağlayan bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="iCal">
+	<d:index><d:index_value>iCal</d:index_value><d:index_title>iCal</d:index_title></d:index>
+	<h1>iCal</h1>
+	<p>Apple’ın Mac OS X ile gelen ve randevularınızı ve yapılacak listelerinizi takip etmenizi sağlayan takvim uygulaması. iCal’ı; bilgisayarlar, telefonlar ve diğer aygıtlar arasında bilgileri eşzamanlamak için de kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="iChat">
+	<d:index><d:index_value>iChat</d:index_value><d:index_title>iChat</d:index_title></d:index>
+	<h1>iChat</h1>
+	<p>Apple’ın Mac OS X ile gelen anında mesajlaşma uygulaması. iChat’i kullanarak MobileMe üyeleriyle mesaj alışverişi yapmanın yanı sıra; AOL Instant Messenger (AIM), Bonjour, Google Talk ve Jabber gibi diğer anında mesajlaşma yazılımlarını kullanan kişilerle de mesaj alışverişi yapabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="iChat_Theater">
+	<d:index><d:index_value>iChat Theater</d:index_value><d:index_title>iChat Theater</d:index_title></d:index>
+	<h1>iChat Theater</h1>
+	<p>iChat uygulamasının; dosyaları, fotoğrafları, slayt sunularını ve filmleri iChat video penceresinde sunmanızı sağlayan bir özelliği. Diğer kişiler sunuyu kendi masaüstlerinde izlerken siz de onu kendi masaüstünüzden denetleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="iCloud">
+	<d:index><d:index_value>iCloud</d:index_value><d:index_title>iCloud</d:index_title></d:index>
+	<h1>iCloud</h1>
+	<p>Apple’ın müziklerinizi, fotoğraflarınızı, uygulamalarınızı, kişilerinizi, takvimlerinizi ve daha birçok şeyi saklayan ve aygıtlarınızın tümüne kablosuz olarak ileten bulut servisi. iCloud uygulamalarınızla benzersiz bir şekilde tümleşik olarak çalıştığı için her şey otomatik olarak gerçekleşir. Daha fazla bilgi <a href='http://www.apple.com/icloud/'>www.apple.com/icloud</a> adresinde bulunabilir.</p>
+</d:entry>
+
+<d:entry id="icon">
+	<d:index><d:index_value>simge</d:index_value><d:index_title>simge</d:index_title></d:index>
+	<h1>simge</h1>
+	<p>Bir uygulamayı, dosyayı veya klasörü temsil eden sembol.</p>
+</d:entry>
+
+<d:entry id="iDisk">
+	<d:index><d:index_value>iDisk</d:index_value><d:index_title>iDisk</d:index_title></d:index>
+	<h1>iDisk</h1>
+	<p>Apple’ın Internet sunucularında MobileMe üyelerinin kullanabileceği kişisel saklama alanı. Web siteleri barındırmak, belgeleri saklamak veya yedeklemek ve Internet bağlantısı olan herhangi bir kişiyle dosya paylaşmak için iDisk’inizi kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="iDVD">
+	<d:index><d:index_value>iDVD</d:index_value><d:index_title>iDVD</d:index_title></d:index>
+	<h1>iDVD</h1>
+	<p>Filmler ve sayısal fotoğraflar içeren özel DVD’ler yazmanızı sağlayan bir Apple uygulaması. iDVD, profesyonel olarak tasarlanmış temalar ve şablonlar içerir. iDVD, iLife yazılım paketinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/ilife/idvd/'>iDVD web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="iDVD_themes">
+	<d:index><d:index_value>iDVD temaları</d:index_value><d:index_title>iDVD temaları</d:index_title></d:index>
+	<h1>iDVD temaları</h1>
+	<p>Macintosh bilgisayarlardaki iDVD uygulamasının bir özelliği. iDVD temaları, iDVD projelerindeki menülere profesyonel bir görünüm verir. Temalar, birleşik tasarım öğeleri kümesini kullanan menüler grubunu veya “ailesini” içerir. Tipik bir tema ailesi; projenin ana menüsü için, sahne seçimi menüsü için ve “ekler” menüsü için yerleşimler içerir.</p>
+</d:entry>
+
+<d:entry id="iLife">
+	<d:index><d:index_value>iLife</d:index_value><d:index_title>iLife</d:index_title></d:index>
+	<h1>iLife</h1>
+	<p>Müzikler, filmler, sayısal fotoğraflar, özel DVD’ler ve web siteleri yaratmak için araçlar sunan Apple uygulamaları paketi. iLife paketi; GarageBand, iPhoto, iMovie, iDVD, iTunes ve iWeb uygulamalarını içerir. Daha fazla bilgi için <a href='http://www.apple.com/tr/ilife/'>iLife web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="iMac">
+	<d:index><d:index_value>iMac</d:index_value><d:index_title>iMac</d:index_title></d:index>
+	<h1>iMac</h1>
+	<p>Apple Inc.’in kullanıma sunduğu masaüstü bilgisayar serisi. iMac bilgisayarları 1998 yılında tanıtılmıştır.</p>
+</d:entry>
+
+<d:entry id="Image_Capture">
+	<d:index><d:index_value>Görüntü Yakalama</d:index_value><d:index_title>Görüntü Yakalama</d:index_title></d:index>
+	<h1>Görüntü Yakalama</h1>
+	<p>Resimleri, bilgisayarınıza veya ağa bağlı sayısal fotoğraf makinelerinden veya tarayıcılardan bilgisayarınıza yüklemenizi sağlayan bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="iMix">
+	<d:index><d:index_value>iMix</d:index_value><d:index_title>iMix</d:index_title></d:index>
+	<h1>iMix</h1>
+	<p>Diğer kişilerle paylaşmak için yayımlanan iTunes listesi.</p>
+</d:entry>
+
+<d:entry id="iMovie">
+	<d:index><d:index_value>iMovie</d:index_value><d:index_title>iMovie</d:index_title></d:index>
+	<h1>iMovie</h1>
+	<p>Bir kameradaki sayısal video çekimini içe aktarmanızı, videoyu düzenlemenizi, ses ve efektler eklemenizi ve onu bir web sitesinde ya da diskte yayımlanabilecek bir film olarak kaydetmenizi sağlayan Apple uygulaması. iMovie, iLife yazılım paketinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/tr/ilife/imovie/'>iMovie web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="infrared_receiver">
+	<d:index><d:index_value>kızılötesi alıcı</d:index_value><d:index_title>kızılötesi alıcı</d:index_title></d:index>
+	<h1>kızılötesi alıcı</h1>
+	<p>“IR” olarak kısaltılır. Kablosuz iletişim için kızılötesi elektromanyetik spektrumu kullanan bir aygıt. Çoğu Macintosh bilgisayarı, Apple Remote sinyallerini almak için kızılötesi (infrared) kapısına sahiptir.</p>
+</d:entry>
+
+<d:entry id="Ink">
+	<d:index><d:index_value>Ink</d:index_value><d:index_title>Ink</d:index_title></d:index>
+	<h1>Ink</h1>
+	<p>Macintosh bilgisayarlarda yerleşik olan el yazısı tanıma teknolojisi. Ink, bilgisayara bağlı bir grafik tablet ve ekran kalemiyle (stylus) çalışır. Siz tablete yazarsınız; Ink de yazılanları bilgisayarda yazılmış sözcüklere çevirir.</p>
+</d:entry>
+
+<d:entry id="Inkwell">
+	<d:index><d:index_value>Inkwell</d:index_value><d:index_title>Inkwell</d:index_title></d:index>
+	<h1>Inkwell</h1>
+	<p>Bakınız: <b><a href='x-dictionary:r:Ink:com.apple.dictionary.AppleDictionary'>Ink</a></b>.</p>
+</d:entry>
+
+<d:entry id="inline_object">
+	<d:index><d:index_value>satır içi nesne</d:index_value><d:index_title>satır içi nesne</d:index_title></d:index>
+	<h1>satır içi nesne</h1>
+	<p>Pages sözcük işlem ve sayfa yerleşimi uygulamasında, metin akışına gömülü olan olan resim, grafik veya başka bir nesne. Satır içi nesnenin konumu, siz sayfaya daha fazla metin veya grafik ekledikçe değişir. Satır içi nesnenin yukarısına daha fazla metin eklerseniz, metin arttıkça o da ileriye itilir.</p>
+</d:entry>
+
+<d:entry id="Input_menu">
+	<d:index><d:index_value>Giriş menüsü</d:index_value><d:index_title>Giriş menüsü</d:index_title></d:index>
+	<h1>Giriş menüsü</h1>
+	<p>Bilgisayarda birden fazla giriş yöntemi kullanılırken giriş yöntemleri arasında geçiş yapmayı sağlayan menü.</p>
+</d:entry>
+
+<d:entry id="input_method">
+	<d:index><d:index_value>giriş yöntemi</d:index_value><d:index_title>giriş yöntemi</d:index_title></d:index>
+	<h1>giriş yöntemi</h1>
+	<p>Bilgisayar kullanıcılarının Batı dillerindeki bir klavyeyi kullanarak Çince, Japonca ve Korece karakterler gibi karmaşık karakterleri girmesini sağlayan bir uygulama.</p>
+</d:entry>
+
+<d:entry id="inspector">
+	<d:index><d:index_value>denetçi</d:index_value><d:index_title>denetçi</d:index_title></d:index>
+	<h1>denetçi</h1>
+	<p>Yazılım uygulamalarında, seçili metin veya grafikler için o anki ayarları gösteren ve ayarları hızlı bir şekilde değiştirerek sonuçları görmenizi sağlayan bir pencere. Pages, Keynote ve Numbers da dahil olmak üzere birçok Mac OS X uygulaması denetçi pencerelerini kullanır.</p>
+</d:entry>
+
+<d:entry id="installer">
+	<d:index><d:index_value>yükleyici</d:index_value><d:index_title>yükleyici</d:index_title></d:index>
+	<h1>yükleyici</h1>
+	<p>Mac OS X ile gelen bir program. Yükleyici programı, “paketler”deki (adlarının sonuna .pkg uzantısı eklenmiş dosyalar) dosyaları seçip çıkarır ve yükler. Mac OS X kullanan Macintosh bilgisayarlar için olan yazılımlar genellikle .pkg dosyaları biçiminde kullanıma sunulur.</p>
+</d:entry>
+
+<d:entry id="Instant_Alpha">
+	<d:index><d:index_value>Instant Alpha</d:index_value><d:index_title>Instant Alpha</d:index_title></d:index>
+	<h1>Instant Alpha</h1>
+	<p>Pages, Aperture ve Önizleme de dahil olmak üzere Mac OS X uygulamalarında kullanılabilen bir özellik. Yalnızca tek bir renkten oluşan arkaplana sahip bir görüntü için (bulutsuz mavi bir gökyüzünün önünde duran bir kişi gibi); Instant Alpha, arkaplanı kaldırmanıza olanak sağlar böylece görüntünün kalan bölümü saydam bir arkaplana sahip olur.</p>
+</d:entry>
+
+<d:entry id="Interface_Builder">
+	<d:index><d:index_value>Interface Builder</d:index_value><d:index_title>Interface Builder</d:index_title></d:index>
+	<h1>Interface Builder</h1>
+	<p>Geliştiricilerin, Mac OS X ve iPhone uygulamaları için grafiksel kullanıcı arayüzü yaratmak amacıyla kullanabileceği Apple Inc.’e ait bir program.</p>
+</d:entry>
+
+<d:entry id="Internet_Connect">
+	<d:index><d:index_value>Internet’e Bağlan</d:index_value><d:index_title>Internet’e Bağlan</d:index_title></d:index>
+	<h1>Internet’e Bağlan</h1>
+	<p>Mac OS X ile gelen bir uygulama. Internet’e Bağlan; çevirmeli bağlantı ya da Ethernet (PPPoE) veya Sanal Özel Ağ (VPN) bağlantısı başlatmanızı ya da AirPort baz istasyonunuzun Internet’e bağlanmasını sağlar. Yazıcılar gibi Bluetooth ekipmanı bağlantılarını yönetmek için de Internet’e Bağlan’ı kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Internet_port">
+	<d:index><d:index_value>Internet kapısı</d:index_value><d:index_title>Internet kapısı</d:index_title></d:index>
+	<h1>Internet kapısı</h1>
+	<p>Internet’teki bir sunucunun kullandığı protokolü belirten bir sayı. Web sunucuları genellikle 80. kapıyı kullanır.</p>
+</d:entry>
+
+<d:entry id="invisibles">
+	<d:index><d:index_value>görünmeyen karakterler</d:index_value><d:index_title>görünmeyen karakterler</d:index_title></d:index>
+	<h1>görünmeyen karakterler</h1>
+	<p>Pages sözcük işlem ve sayfa yerleşimi uygulamasında ve diğer metin düzenleme uygulamalarında, normal olarak görmediğiniz biçimleme işaretleri. Görünmeyen karakterler içinde tab’lar, paragraf işaretleri, sayfa ve bölüm sonu işaretleri, boşluklar ve diğer biçimleme işaretleri sayılabilir. Tercihlerinizi, görünmeyen karakterleri gösterecek şekilde düzenleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="iOS">
+	<d:index><d:index_value>iOS</d:index_value><d:index_title>iOS</d:index_title></d:index>
+	<h1>iOS</h1>
+	<p>iPhone, iPod touch, iPad ve Apple TV için işletim sistemi.</p>
+</d:entry>
+
+<d:entry id="iPad">
+	<d:index><d:index_value>iPad</d:index_value><d:index_title>iPad</d:index_title></d:index>
+	<h1>iPad</h1>
+	<p>Apple Inc.’in tablet bilgisayarı. iPad, fiziksel klavye veya tuş takımı yerine çoklu dokunmatik (Multi-Touch) ekranın yanı sıra sanal klavye ve düğmeler içerir. iPad, iOS’i (işletim sistemi) ve iPhone’daki ve iPod touch’taki çoğu uygulamayı çalıştırır.</p>
+</d:entry>
+
+<d:entry id="iPhone">
+	<d:index><d:index_value>iPhone</d:index_value><d:index_title>iPhone</d:index_title></d:index>
+	<h1>iPhone</h1>
+	<p>Apple Inc.’in cep telefonu, çoklu ortam çaları/oynatıcısı ve kablosuz Internet aygıtı birleşimidir. iPhone, fiziki bir klavye veya tuş takımı yerine dokunmatik bir ekran, sanal klavye ve düğmeler içerir. Daha fazla bilgi için <a href='http://www.apple.com/tr/iphone/'>iPhone web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="iPhoto">
+	<d:index><d:index_value>iPhoto</d:index_value><d:index_title>iPhoto</d:index_title></d:index>
+	<h1>iPhoto</h1>
+	<p>Sayısal fotoğraflar kaydetmenizi, fotoğraflarınızı düzenlemenizi ve web sitelerinde, disklerde ve basılı albümlerde yayımlamanızı sağlayan bir Apple uygulaması. iPhoto, iLife yazılım paketinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/tr/ilife/iphoto/'>iPhoto web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="iPod">
+	<d:index><d:index_value>iPod</d:index_value><d:index_title>iPod</d:index_title></d:index>
+	<h1>iPod</h1>
+	<p>Apple Inc.’in taşınabilir müzik çalar serisi. iPod çalar büyüklükleri, iPod shuffle’dan video oynatımını destekleyen iPod’lara uzanır. iPod çalarlar, Apple’ın iTunes Store’undan ve CD’lerden müzik aktarabilir. iPod’lar, hem Macintosh hem de Windows bilgisayarlarda kullanılabilen bir uygulama olan iTunes ile çalışacak şekilde tasarlanmıştır.</p>
+</d:entry>
+
+<d:entry id="iPod_classic">
+	<d:index><d:index_value>iPod classic</d:index_value><d:index_title>iPod classic</d:index_title></d:index>
+	<h1>iPod classic</h1>
+	<p>Apple Inc.’in iPod ürün hattındaki taşınabilir müzik çaları. iPod classic, iPod’lar arasında en çok saklama alanı sunan modeldir.</p>
+</d:entry>
+
+<d:entry id="iPod_nano">
+	<d:index><d:index_value>iPod nano</d:index_value><d:index_title>iPod nano</d:index_title></d:index>
+	<h1>iPod nano</h1>
+	<p>Apple Inc.’in iPod ürün hattındaki taşınabilir müzik çaları. iPod nano, dokunmatik ekran ve FM radyo içerir.</p>
+</d:entry>
+
+<d:entry id="iPod_shuffle">
+	<d:index><d:index_value>iPod shuffle</d:index_value><d:index_title>iPod shuffle</d:index_title></d:index>
+	<h1>iPod shuffle</h1>
+	<p>Apple Inc.’in iPod ürün hattındaki en küçük taşınabilir müzik çaları.</p>
+</d:entry>
+
+<d:entry id="iPod_touch">
+	<d:index><d:index_value>iPod touch</d:index_value><d:index_title>iPod touch</d:index_title></d:index>
+	<h1>iPod touch</h1>
+	<p>Apple Inc.’in iPod ürün hattındaki taşınabilir müzik çaları. iPod touch, dokunmatik ekran özelliğine sahiptir ve Safari web tarayıcısını içerir.</p>
+</d:entry>
+
+<d:entry id="IR">
+	<d:index><d:index_value>IR</d:index_value><d:index_title>IR</d:index_title></d:index>
+	<h1>IR</h1>
+	<p>Bakınız: <a href='x-dictionary:r:infrared_receiver:com.apple.dictionary.AppleDictionary'><b>kızılötesi alıcı</b></a>.</p>
+</d:entry>
+
+<d:entry id="iSight">
+	<d:index><d:index_value>iSight</d:index_value><d:index_title>iSight</d:index_title></d:index>
+	<h1>iSight</h1>
+	<p>Apple Inc.’in sayısal kamerası. Bazı Macintosh bilgisayarlarda iSight kameranın küçük bir sürümü yerleşiktir.</p>
+</d:entry>
+
+<d:entry id="iSync">
+	<d:index><d:index_value>iSync</d:index_value><d:index_title>iSync</d:index_title></d:index>
+	<h1>iSync</h1>
+	<p>Mac OS X ile gelen bir uygulama. iSync, iCal’daki ve Adres Defteri’ndeki verileri MobileMe’yle ve iPod taşınabilir müzik çalarlar, cep telefonları ve elde taşınan elektronik ajandalar gibi aygıtlarla eşzamanlar.</p>
+</d:entry>
+
+<d:entry id="iTunes">
+	<d:index><d:index_value>iTunes</d:index_value><d:index_title>iTunes</d:index_title></d:index>
+	<h1>iTunes</h1>
+	<p>Mac OS X ile gelen ve müzikleri, podcast’leri ve videoları CD’lerden veya iTunes Store’dan aktarmanızı, ortamları özel albümler ve listeler halinde düzenlemenizi ve onları disklere basmanızı veya bir iPod’a ya da başka bir ortam çalara aktarmanızı sağlayan bir Apple uygulaması. iTunes, Windows tabanlı bilgisayarlarda da yaygın olarak kullanılır.</p>
+</d:entry>
+
+<d:entry id="iWeb">
+	<d:index><d:index_value>iWeb</d:index_value><d:index_title>iWeb</d:index_title></d:index>
+	<h1>iWeb</h1>
+	<p>Web programlama dili bilgisi olmadan web sayfaları yaratmanızı ve yayımlamanızı sağlayan bir Apple uygulaması. iWeb; web günlükleri ve diğer sayfalar için profesyonel olarak tasarlanmış şablonlar içerir ve fotoğraflar ve filmler gibi ortam dosyalarının sürüklenip bırakılmasına izin verir. iWeb, iLife yazılım paketinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/tr/ilife/iweb/'>iWeb web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="iWork">
+	<d:index><d:index_value>iWork</d:index_value><d:index_title>iWork</d:index_title></d:index>
+	<h1>iWork</h1>
+	<p>Belgeler ve sunular yaratmak ve yayımlamak için kullanılan Apple üretkenlik uygulamaları paketi. iWork paketi, sinema kalitesinde sunular yaratmak için Keynote’u, sözcük işlem için Pages’ı ve hesap tabloları yaratmak için Numbers’ı içerir. Daha fazla bilgi için <a href='http://www.apple.com/tr/iwork/'>iWork web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="Jabber">
+	<d:index><d:index_value>Jabber</d:index_value><d:index_title>Jabber</d:index_title></d:index>
+	<h1>Jabber</h1>
+	<p>Açık kaynak kodlu, çevrimiçi anında mesajlaşma uygulaması.</p>
+</d:entry>
+
+<d:entry id="Jaguar">
+	<d:index><d:index_value>Jaguar</d:index_value><d:index_title>Jaguar</d:index_title></d:index>
+	<h1>Jaguar</h1>
+	<p>Macintosh bilgisayarlar için üçüncü büyük işletim sistemi sürümü olan Mac OS X sürüm 10.2’nin ticari markalı adı.</p>
+</d:entry>
+
+<d:entry id="Java">
+	<d:index><d:index_value>Java</d:index_value><d:index_title>Java</d:index_title></d:index>
+	<h1>Java</h1>
+	<p>Birçok farklı bilgisayar türünde çalışabilen uygulamalar geliştirmek için Sun Microsystems tarafından sunulan bilgisayar yazılımı ürünleri ve belirtimleri ailesi.</p>
+</d:entry>
+
+<d:entry id="Javascript">
+	<d:index><d:index_value>JavaScript</d:index_value><d:index_title>JavaScript</d:index_title></d:index>
+	<h1>JavaScript</h1>
+	<p>Özel efektleri işlemek ve etkileşim sağlamak amacıyla çoğunlukla web sayfalarında kullanılan betik yazma dili.</p>
+</d:entry>
+
+<d:entry id="Journaled_format">
+	<d:index><d:index_value>Günlüklü biçim</d:index_value><d:index_title>Günlüklü biçim</d:index_title></d:index>
+	<h1>Günlüklü biçim</h1>
+	<p>Bakınız: <a href='x-dictionary:r:Mac_OS_Extended_format:com.apple.dictionary.AppleDictionary'><b>Mac OS Genişletilmiş biçimi</b></a>.</p>
+</d:entry>
+
+<d:entry id="Ken_Burns_effect">
+	<d:index><d:index_value>Ken Burns efekti</d:index_value><d:index_title>Ken Burns efekti</d:index_title></d:index>
+	<h1>Ken Burns efekti</h1>
+	<p>Adını Amerikan belgeselci Ken Burns’den alan ve hareketsiz görüntü üzerinde hareket yaratarak kameranın nesnenin üzerinde gezer gibi (kaydırma) veya yakından ya da uzaktan çekermiş gibi (büyütme/küçültme) görünmesine neden olan özel bir efekt. Ken Burns efektini iMovie uygulamasında kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Kerberos">
+	<d:index><d:index_value>Kerberos</d:index_value><d:index_title>Kerberos</d:index_title></d:index>
+	<h1>Kerberos</h1>
+	<p>Güvenli olmayan bir ağ üzerinden iletişim kuran kişilerin, kimliklerini kendi aralarında güvenli bir şekilde doğrulamalarını sağlayan bilgisayar ağı kimlik doğrulama protokolü.</p>
+</d:entry>
+
+<d:entry id="kernel">
+	<d:index><d:index_value>çekirdek</d:index_value><d:index_title>çekirdek</d:index_title></d:index>
+	<h1>çekirdek</h1>
+	<p>İşletim sisteminin; bellek yönetimini, kaynak ayrımını ve sistem için önemli olan diğer alt düzey servisleri işleyen parçasıdır.</p>
+</d:entry>
+
+<d:entry id="kernel_panic">
+	<d:index><d:index_value>çekirdek hatası</d:index_value><d:index_title>çekirdek hatası</d:index_title></d:index>
+	<h1>çekirdek hatası</h1>
+	<p>İşletim sistemi çekirdeği, beklenmeyen bir biçimde olan veya düzgün olarak işleyemediği bir yönerge aldığında oluşan hata türü. İşletim sistemi, diğer türlerdeki hataları çözemediğinde de çekirdek hatası oluşabilir. Çekirdek hatasına, hasar görmüş veya uyumsuz bir yazılım ya da nadiren de olsa hasar görmüş veya uyumsuz bir donanım neden olabilir.</p>
+</d:entry>
+
+<d:entry id="Keyboard_Viewer">
+	<d:index><d:index_value>Klavye Görüntüleyici</d:index_value><d:index_title>Klavye Görüntüleyici</d:index_title></d:index>
+	<h1>Klavye Görüntüleyici</h1>
+	<p>Mac OS X ile gelen bir uygulama. Klavyenizdeki karakterlerin seçtiğiniz dildeki yerleşimini görmek ve seçtiğiniz dilin dışındaki dillerde kullanılan karakterleri görmek ve yazmak için Klavye Görüntüleyici’yi kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="keychain">
+	<d:index><d:index_value>anahtar zinciri</d:index_value><d:index_title>anahtar zinciri</d:index_title></d:index>
+	<h1>anahtar zinciri</h1>
+	<p>Parolaların kaydedilmiş bir kümesi. Örneğin; bir anahtar zinciri işiniz için kullandığınız uygulama, sunucu ve web sitesi parolalarını tutarken, başka bir anahtar zinciri çevrimiçi alışveriş için kullandığınız tüm parolaları saklayabilir. Anahtar zincirleri, takip etmek zorunda olduğunuz parola sayısını azaltır.</p>
+</d:entry>
+
+<d:entry id="Keychain_Access">
+	<d:index><d:index_value>Anahtar Zinciri Erişimi</d:index_value><d:index_title>Anahtar Zinciri Erişimi</d:index_title></d:index>
+	<h1>Anahtar Zinciri Erişimi</h1>
+	<p>Mac OS X’te yerleşik olan Apple parola yönetimi sistemi. Anahtar zinciri; uygulamalar, sunucular ve web siteleri için gerekli olan tüm parolaları, anahtarları ve sertifikaları saklar. Parola gerektiren bir öğeyi açtığınızda veya bir aygıta bağlandığınızda, anahtar zinciri parolayı sağlar böylece onu yeniden yazmanız gerekmez.</p>
+</d:entry>
+
+<d:entry id="keychain_password">
+	<d:index><d:index_value>anahtar zinciri parolası</d:index_value><d:index_title>anahtar zinciri parolası</d:index_title></d:index>
+	<h1>anahtar zinciri parolası</h1>
+	<p>Anahtar zincirini kilitlemek veya anahtar zincirinin kilidini açmak için kullanılan parola. Anahtar Zinciri Erişimi’ni kullanarak farklı bir parola yaratmadığınız sürece anahtar zinciri parolanız, oturum açma parolanızla aynıdır.</p>
+</d:entry>
+
+<d:entry id="Keynote">
+	<d:index><d:index_value>Keynote</d:index_value><d:index_title>Keynote</d:index_title></d:index>
+	<h1>Keynote</h1>
+	<p>Profesyonel kalitede slayt sunuları yaratmak için kullanılan bir Apple uygulaması. Keynote; şablonları, temaları, sinemaya özgü geçişleri ve hareketleri metinleri içerir. Keynote, iWork üretkenlik uygulamaları kümesinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/tr/iwork/keynote/'>Keynote web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="kiosk_mode">
+	<d:index><d:index_value>kiosk modu</d:index_value><d:index_title>kiosk modu</d:index_title></d:index>
+	<h1>kiosk modu</h1>
+	<p>Bir ortam oynatıcıya takıldıktan sonra otomatik olarak oynamaya başlayan ve kesintisiz oynamaya devam eden bir DVD. Apple’ın özel DVD’ler yazmanızı sağlayan uygulaması iDVD’yi kullanarak kiosk modunda diskler yaratabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Launchpad">
+	<d:index><d:index_value>Launchpad</d:index_value><d:index_title>Launchpad</d:index_title></d:index>
+	<h1>Launchpad</h1>
+	<p>Mac OS X ile gelen bir uygulama başlatıcı. Launchpad’e Dock’taki Launchpad simgesini tıklayarak erişilebilir. Launchpad, Uygulamalar klasöründe bulunan tüm uygulamaların simgelerini içerir.</p>
+</d:entry>
+
+<d:entry id="Leopard">
+	<d:index><d:index_value>Leopard</d:index_value><d:index_title>Leopard</d:index_title></d:index>
+	<h1>Leopard</h1>
+	<p>Macintosh bilgisayarlar için altıncı büyük işletim sistemi sürümü olan Mac OS X sürüm 10.5’in ticari markalı adı.</p>
+</d:entry>
+
+<d:entry id="Lion">
+	<d:index><d:index_value>Lion</d:index_value><d:index_title>Lion</d:index_title></d:index>
+	<h1>Lion</h1>
+	<p>Macintosh bilgisayarlar için sekizinci büyük işletim sistemi sürümü olan Mac OS X sürüm 10.7’nin ticari markalı adı.</p>
+</d:entry>
+
+<d:entry id="lock_icon">
+	<d:index><d:index_value>kilit simgesi</d:index_value><d:index_title>kilit simgesi</d:index_title></d:index>
+	<h1>kilit simgesi</h1>
+	<p>Mac OS uygulamalarında kullanılan bir simge. Finder’da, kilit simgesi dosyanın veya klasörün parolayla korunduğunu gösterir. Safari araç çubuğundaki kilit simgesi, web sayfasıyla olan iletişimin şifreleneceğini belirtir. Diğer birçok uygulamada kilit simgesi, öğeyi açmak veya sunucuya bağlanmak için parola girilmesi gerektiğini göstermek amacıyla kullanılır.</p>
+</d:entry>
+
+<d:entry id="looping">
+	<d:index><d:index_value>döngüye alma</d:index_value><d:index_title>döngüye alma</d:index_title></d:index>
+	<h1>döngüye alma</h1>
+	<p>Bir filmi veya slayt sunusunu biter bitmez yeniden başlamaya ve sürekli yinelenmeye ayarlama. Apple’ın özel DVD’ler yazmanızı sağlayan uygulaması iDVD’yi kullanarak döngüye alınmış filmler ve slayt sunuları yaratabilirsiniz.</p>
+</d:entry>
+
+<d:entry id=".Mac">
+	<d:index><d:index_value>.Mac</d:index_value><d:index_title>.Mac</d:index_title></d:index>
+	<h1>.Mac</h1>
+	<p>Macintosh bilgisayar kullanıcıları için tasarlanmış Internet servisleri paketi (“nokta Mac” olarak okunur). Yerine <a href='x-dictionary:r:MobileMe:com.apple.dictionary.AppleDictionary'><b>MobileMe</b></a> gelmiştir.</p>
+</d:entry>
+
+<d:entry id="Mac">
+	<d:index><d:index_value>Mac</d:index_value><d:index_title>Mac</d:index_title></d:index>
+	<h1>Mac</h1>
+	<p>Macintosh bilgisayar olarak da bilinen bir Apple bilgisayarı. Ayrıca bakınız: <a href='x-dictionary:r:Macintosh:com.apple.dictionary.AppleDictionary'><b>Macintosh</b></a>.</p>
+</d:entry>
+
+<d:entry id="MacBook">
+	<d:index><d:index_value>MacBook, MacBook Pro</d:index_value><d:index_title>MacBook, MacBook Pro</d:index_title></d:index>
+	<h1>MacBook, MacBook Pro</h1>
+	<p>Apple Inc.’in Intel Core Duo ve Intel Core 2 Duo işlemcilerini taban alan taşınabilir bilgisayarlar serisi. 2006 yılında tanıtılan MacBook bilgisayarı, iBook G4’ün ve PowerBook serisi bilgisayarların yerine gelmiştir.</p>
+</d:entry>
+
+<d:entry id="MacBook_Air">
+	<d:index><d:index_value>MacBook Air</d:index_value><d:index_title>MacBook Air</d:index_title></d:index>
+	<h1>MacBook Air</h1>
+	<p>Apple Inc.’in, Intel Core Duo ve Intel Core 2 Duo işlemcilerini taban alan ve isteğe bağlı katı hal sabit sürücü olanağı sunan hafif, taşınabilir bilgisayarı. 1,36 kg ağırlığında olan MacBook Air; en kalın noktasında 1,93 cm ve en ince noktasında 0,4 cm’dir. 2008 yılında tanıtılmıştır.</p>
+</d:entry>
+
+<d:entry id="Macintosh">
+	<d:index><d:index_value>Macintosh</d:index_value><d:index_title>Macintosh</d:index_title></d:index>
+	<h1>Macintosh</h1>
+	<p>Apple Inc.’in kişisel bilgisayar serisi. 1984 yılında tanıtılan Macintosh bilgisayarı, komut satırı arayüzü yerine grafik kullanıcı arayüzü (GUI) ve fare kullanan ticari olarak başarılı ilk kişisel bilgisayardır.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Extended_format">
+	<d:index><d:index_value>Mac OS Genişletilmiş biçimi</d:index_value><d:index_title>Mac OS Genişletilmiş biçimi</d:index_title></d:index>
+	<h1>Mac OS Genişletilmiş biçimi</h1>
+	<p>Mac OS 8.1 ve daha yenisi tarafından desteklenen ve Mac OS’un daha önce kullandığı disk biçimlerine göre diskteki ayrım bloklarının (saklama birimlerinin) sayısını artıran bir sabit disk biçimi. Bu biçim, sabit diskte 65.000’den fazla dosyanın bulunmasına izin verir. Mac OS Genişletilmiş biçimi, tek bir dosyanın minimum büyüklüğünü azaltarak büyük sabit disklerin saklama kapasitesini en iyi duruma getirir. Mac OS Genişletilmiş biçimindeki bir disk bölümü “günlüklü” olabilir yani işletim sistemi, disk bölümündeki dosyalara yapılan değişikliklerin sürekli günlüğünü tutar. Bu; bir güç kesintisinin veya başka bir sorunun diskin çalışmasını kesintiye uğratıp dosyalara hasar verdiği zamanlarda işletim sisteminin, disk bölümünü kullanılabilir bir duruma döndürmesine yardımcı olur.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_Standard_format">
+	<d:index><d:index_value>Mac OS Standart biçimi</d:index_value><d:index_title>Mac OS Standart biçimi</d:index_title></d:index>
+	<h1>Mac OS Standart biçimi</h1>
+	<p>Mac OS 8.0 ve daha eski sürümler tarafından desteklenen bir sabit disk biçimi.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X">
+	<d:index><d:index_value>Mac OS X</d:index_value><d:index_title>Mac OS X</d:index_title></d:index>
+	<h1>Mac OS X</h1>
+	<p>Macintosh bilgisayarların işletim sistemi.</p>
+</d:entry>
+
+<d:entry id="Mac_OS_X_Server">
+	<d:index><d:index_value>Mac OS X Server</d:index_value><d:index_title>Mac OS X Server</d:index_title></d:index>
+	<h1>Mac OS X Server</h1>
+	<p>Mac, Windows, UNIX ve Linux istemci desteğiyle kullanıma hazır olan ve gelişmiş uzaktan yönetim araçlarıyla ölçeklenebilir çalışma grubu ve ağ servisleri paketi sunan bir sunucu platformu. </p>
+</d:entry>
+
+<d:entry id="MacTCP">
+	<d:index><d:index_value>MacTCP</d:index_value><d:index_title>MacTCP</d:index_title></d:index>
+	<h1>MacTCP</h1>
+	<p>Mac OS’un 7.5.1 sürümünden itibaren Macintosh bilgisayarlar için standart TCP/IP’dir (ağ yazılımı protokolü). 1995 yılında yerine Open Transport gelmiştir.</p>
+</d:entry>
+
+<d:entry id="Mail">
+	<d:index><d:index_value>Mail</d:index_value><d:index_title>Mail</d:index_title></d:index>
+	<h1>Mail</h1>
+	<p>Apple’ın Mac OS X ile gelen e-posta uygulamasıdır.</p>
+</d:entry>
+
+<d:entry id="masking">
+	<d:index><d:index_value>maskeleme</d:index_value><d:index_title>maskeleme</d:index_title></d:index>
+	<h1>maskeleme</h1>
+	<p>Görüntünün kalmasını istediğiniz bölümünü kapatarak (“maskeleyerek”) görüntüyü kırpma yöntemi. Pages sözcük işlem ve sayfa yerleşimi uygulamasında, bir dikdörtgeni veya seçtiğiniz özel bir şekli kullanarak görüntüyü maskeleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="master_object">
+	<d:index><d:index_value>ana nesne</d:index_value><d:index_title>ana nesne</d:index_title></d:index>
+	<h1>ana nesne</h1>
+	<p>Pages sözcük işlem ve sayfa yerleşimi uygulamasında, belgenin her sayfasında aynı alanda görünen filigran, logo veya başka bir arkaplan görüntüsü.</p>
+</d:entry>
+
+<d:entry id="master_password">
+	<d:index><d:index_value>ana parola</d:index_value><d:index_title>ana parola</d:index_title></d:index>
+	<h1>ana parola</h1>
+	<p>FileVault tarafından korunan bir hesaba erişmenizi sağlayan bir parola. Kullanıcı, FileVault ile korunan hesabın parolasını unutursa; yönetici, hesaba erişip FileVault parolasını değiştirmek için ana parolayı kullanabilir. Ana parola unutulursa, FileVault ile korunan hesaplara erişmenin hiçbir yolu yoktur ve bunların içindeki dosyalar ve ayarlar kaybolur.</p>
+</d:entry>
+
+<d:entry id="media_placeholder">
+	<d:index><d:index_value>ortam yer tutucusu</d:index_value><d:index_title>ortam yer tutucusu</d:index_title></d:index>
+	<h1>ortam yer tutucusu</h1>
+	<p>Pages ve Keynote şablonlarında, üzerine kendi dosyanızı sürükleyerek değiştirebileceğiniz bir dosya. Ortam yer tutucusunu, imleci bir süre üzerinde tutarak tanıyabilirsiniz; ortam yer tutucusunun yerine kendi dosyanızı sürüklemenizi söyleyen bir yardım etiketi görünür.</p>
+</d:entry>
+
+<d:entry id="Migration_Assistant">
+	<d:index><d:index_value>Geçiş Yardımcısı</d:index_value><d:index_title>Geçiş Yardımcısı</d:index_title></d:index>
+	<h1>Geçiş Yardımcısı</h1>
+	<p>Dosyalarınızı ve önemli ayarlarınızı eski bir Mac’ten yenisine aktarmanıza yardımcı olan bir Mac OS X uygulaması. Geçiş Yardımcısı’nı kullanmak için, her iki bilgisayarın da Mac OS X kullanıyor olması ve FireWire donanımına sahip ya da aynı kablosuz ağ üzerinde olması gerekir.</p>
+</d:entry>
+
+<d:entry id="mirrored_displays">
+	<d:index><d:index_value>ikizlenmiş ekranlar</d:index_value><d:index_title>ikizlenmiş ekranlar</d:index_title></d:index>
+	<h1>ikizlenmiş ekranlar</h1>
+	<p>Mac OS X Sistem Tercihleri’nin bir özelliği. Bilgisayarınız; TV’ler ve projektörler de dahil olmak üzere birden fazla görüntüleme aygıtına bağlıysa, Sistem Tercihleri’nin Ekranlar bölümündeki ayarları masaüstünüzdeki görüntüyü aygıtların tümünde kesintisiz görüntülemek yerine her bir aygıtta aynı görüntüleyecek şekilde ayarlayabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Mission_Control">
+	<d:index><d:index_value>Mission Control</d:index_value><d:index_title>Mission Control</d:index_title></d:index>
+	<h1>Mission Control</h1>
+	<p>Pencereler, tam ekran uygulamalar, çalışma alanları ve Dashboard da dahil olmak üzere Mac’inizde çalışan her şeyi görüntülemenizi sağlayan bir Mac OS X özelliği.</p>
+</d:entry>
+
+<d:entry id="MobileMe">
+	<d:index><d:index_value>MobileMe</d:index_value><d:index_title>MobileMe</d:index_title></d:index>
+	<h1>MobileMe</h1>
+	<p>Apple Inc.’in Macintosh bilgisayarlar, iPhone, iPod touch ve PC’ler için Internet servisleri paketi. MobileMe aboneliği; postalarınızı, kişilerinizi ve takviminizi aygıtlarınızın tümünde otomatik olarak güncel tutar. MobileMe aynı zamanda; bilgilerinize web tarayıcı kullanarak erişmenize, fotoğrafları ve filmleri paylaşmanıza, web sitesi barındırmanıza ve çevrimiçi dosya saklama için iDisk kullanmanıza olanak sağlayan web uygulamaları paketini de sunar. Daha fazla bilgi için <a href='http://www.apple.com/tr/mobileme/'>MobileMe web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="MobileMe_Gallery">
+	<d:index><d:index_value>MobileMe Galeri</d:index_value><d:index_title>MobileMe Galeri</d:index_title></d:index>
+	<h1>MobileMe Galeri</h1>
+	<p>Apple Inc.’in MobileMe servis paketinin bir özelliği. MobileMe aboneliğiyle, iPhoto ve iMovie uygulamalarındaki fotoğraflarınızı ve filmlerinizi doğrudan Internet’teki MobileMe galerinizde yayımlayabilirsiniz. MobileMe Galeri fotoğraf albümlerinizi ve filmlerinizi web sayfalarınıza ekleyebilirsiniz. Bir MobileMe Galeri fotoğraf albümü güncellendiğinde, web siteniz de yeni içerikle otomatik olarak güncellenir.</p>
+</d:entry>
+
+<d:entry id="motion_playhead">
+	<d:index><d:index_value>oynatma çubuğu</d:index_value><d:index_title>oynatma çubuğu</d:index_title></d:index>
+	<h1>oynatma çubuğu</h1>
+	<p>iDVD’de; düzenlediğiniz müziğin veya videonun o anki konumunu işaret eden, ilerleme çubuğundaki baklava şeklinde bir simge. Oynatma çubuğunu sürükleyebilir ve istediğiniz yerde durdurabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="MS-DOS_(FAT)_format">
+	<d:index><d:index_value>MS-DOS (FAT) biçimi</d:index_value><d:index_title>MS-DOS (FAT) biçimi</d:index_title></d:index>
+	<h1>MS-DOS (FAT) biçimi</h1>
+	<p>Windows bilgisayarlarla kullanılan diskler için bir sabit disk biçimi. Windows bilgisayarlar için MS-DOS (FAT) disklerini biçimlemek amacıyla Disk İzlencesi’ni kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Multi-Touch">
+	<d:index><d:index_value>Multi-Touch</d:index_value><d:index_title>Multi-Touch</d:index_title></d:index>
+	<h1>Multi-Touch</h1>
+	<p>Bilgisayarla veya başka bir aygıtla dokunmatik ekran etkileşimi. Multi-Touch özelliğine sahip bir dokunmatik ekran aynı anda birden fazla “dokunma noktasını” algılar. Bu, her iki el ve birden fazla parmak kullanılarak yapılan hareketlere izin verir. Büyütmek veya küçültmek için iki parmak veya el kullanılarak yapılan sezgisel hareketler, Multi-Touch teknolojisinin bir özelliğidir. Apple iPhone’da yerleşik olan dokunmatik ekran Multi-Touch teknolojisini kullanır.</p>
+</d:entry>
+
+<d:entry id="Network_File_System">
+	<d:index><d:index_value>Ağ Dosya Sistemi</d:index_value><d:index_title>Ağ Dosya Sistemi</d:index_title></d:index>
+	<h1>Ağ Dosya Sistemi</h1>
+	<p>Bakınız: <a href='x-dictionary:r:NFS:com.apple.dictionary.AppleDictionary'><b>NFS</b></a>.</p>
+</d:entry>
+
+<d:entry id="NFS">
+	<d:index><d:index_value>NFS</d:index_value><d:index_title>NFS</d:index_title></d:index>
+	<h1>NFS</h1>
+	<p>Ağ Dosya Sistemi. Uzaktaki kullanıcıların, dosyalara yerel olarak eriştikleri gibi erişmesine izin vermek için Internet Protokolünü (IP) kullanan bir istemci ve sunucu protokolü. NFS, paylaşılan disk bölümlerini kullanıcı adı ve parola yerine IP adreslerini taban alarak bilgisayarlara aktarır. </p>
+</d:entry>
+
+<d:entry id="Numbers">
+	<d:index><d:index_value>Numbers</d:index_value><d:index_title>Numbers</d:index_title></d:index>
+	<h1>Numbers</h1>
+	<p>Apple’ın hesap tablosu yaratma uygulaması. Numbers’ın; tablo, grafik, harita, etiket ve daha birçok şey oluşturmak için basit bir arayüzü vardır. Numbers, iWork üretkenlik uygulamaları paketinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/tr/iwork/numbers'>Numbers web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="NVRAM">
+	<d:index><d:index_value>NVRAM</d:index_value><d:index_title>NVRAM</d:index_title></d:index>
+	<h1>NVRAM</h1>
+	<p>Kalıcı rasgele erişimli bellek. Bilgisayar kapatıldığında bilgileri koruyan bir bellek türü.</p>
+</d:entry>
+
+<d:entry id="Open_Transport">
+	<d:index><d:index_value>Open Transport</d:index_value><d:index_title>Open Transport</d:index_title></d:index>
+	<h1>Open Transport</h1>
+	<p>Mac OS X’ten önceki Mac OS sürümlerini kullanan Macintosh bilgisayarlar için ağ yazılımı protokolü.</p>
+</d:entry>
+
+<d:entry id="operator">
+	<d:index><d:index_value>işleç</d:index_value><d:index_title>işleç</d:index_title></d:index>
+	<h1>işleç</h1>
+	<p>Aritmetik işleçler, toplama ve çıkarma gibi aritmetik işlemleri gerçekleştirir ve sayısal sonuçlar döndürür. Karşılaştırma işleçleri iki değeri karşılaştırır ve DOĞRU veya YANLIŞ döndürür. Numbers hesap tablosu uygulamasında, aritmetik işlemler gerçekleştirmek ve değerleri karşılaştırmak için formüllerde işleçler kullanabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="optical_drive">
+	<d:index><d:index_value>optik sürücü</d:index_value><d:index_title>optik sürücü</d:index_title></d:index>
+	<h1>optik sürücü</h1>
+	<p>CD’ler ve DVD’ler de dahil olmak üzere optik disklerdeki verileri okuyabilen bir disk sürücü. Optik sürücüler arasında CD-ROM, CD-RW, DVD-ROM, DVD-RW ve Blu-ray sürücüler sayılabilir.</p>
+</d:entry>
+
+<d:entry id="package">
+	<d:index><d:index_value>paket</d:index_value><d:index_title>paket</d:index_title></d:index>
+	<h1>paket</h1>
+	<p>Tek bir dosya gibi görünen bir klasörde birleştirilmiş ilişkili dosyalar (şablonlar, tercihler veya uygulamaya özel diğer dosyalar) serisi. Macintosh bilgisayarlar için olan yazılım güncellemeleri, “açılan” ve daha sonra yüklenen paketler olarak gelir.</p>
+</d:entry>
+
+<d:entry id="package_file">
+	<d:index><d:index_value>paket dosyası</d:index_value><d:index_title>paket dosyası</d:index_title></d:index>
+	<h1>paket dosyası</h1>
+	<p>Yazılım paketini içeren bir dosya. Bir paket dosyasının, genellikle açılmış pakete benzeyen bir simgesi vardır. Bir paket dosyasını, ona ait Bilgi penceresine bakarak da belirleyebilirsiniz: Tür alanı “paket” sözcüğünü içerir.</p>
+</d:entry>
+
+<d:entry id="Pages">
+	<d:index><d:index_value>Pages</d:index_value><d:index_title>Pages</d:index_title></d:index>
+	<h1>Pages</h1>
+	<p>Apple’ın; gelişmiş tipografi özelliklerine sahip ve raporlar, davetler, bültenler ve daha birçok şey yaratmak için profesyonel şablonlar içeren sözcük işlem uygulaması. Pages, iWork üretkenlik uygulamaları paketinin bir parçasıdır. Daha fazla bilgi için <a href='http://www.apple.com/tr/iwork/pages/'>Pages web sayfasına</a> bakın.</p>
+</d:entry>
+
+<d:entry id="Panther">
+	<d:index><d:index_value>Panther</d:index_value><d:index_title>Panther</d:index_title></d:index>
+	<h1>Panther</h1>
+	<p>Macintosh bilgisayarlar için dördüncü büyük işletim sistemi sürümü olan Mac OS X sürüm 10.3’ün ticari markalı adı.</p>
+</d:entry>
+
+<d:entry id="parental_controls">
+	<d:index><d:index_value>ebeveyn denetimleri</d:index_value><d:index_title>ebeveyn denetimleri</d:index_title></d:index>
+	<h1>ebeveyn denetimleri</h1>
+	<p>Bir yöneticinin, diğer kullanıcılar tarafından erişilen uygulamaları ve bilgileri denetlemesini sağlayan bilgisayar ayarları. Mac OS X’de; ebeveyn denetimleri, Sistem Tercihleri’nin Ebeveyn Denetimleri bölümü kullanılarak ayarlanır.</p>
+</d:entry>
+
+<d:entry id="partition">
+	<d:index><d:index_value>bölüntü</d:index_value><d:index_title>bölüntü</d:index_title></d:index>
+	<h1>bölüntü</h1>
+	<p>Bir sabit diskin alt bölümü. Macintosh bilgisayarlarda, Disk İzlencesi’ni kullanarak bir sabit diski biçimlerken kaç bölüntü olmasını istediğinizi seçebilirsiniz. Her bir bölüntü, masaüstünüzde ayrı bir disk gibi görünür.</p>
+</d:entry>
+
+<d:entry id="personal_file_sharing">
+	<d:index><d:index_value>kişisel dosya paylaşma</d:index_value><d:index_title>kişisel dosya paylaşma</d:index_title></d:index>
+	<h1>kişisel dosya paylaşma</h1>
+	<p>Macintosh bilgisayar kullanıcılarının, öğeleri bir bilgisayardan diğerine hızlı bir şekilde kopyalamalarını veya bilgisayarı, başka bir bilgisayarda saklanan dosyalara ve uygulamalara erişmek için kullanmalarını sağlayan sistem.</p>
+</d:entry>
+
+<d:entry id="personal_web_sharing">
+	<d:index><d:index_value>kişisel web paylaşma</d:index_value><d:index_title>kişisel web paylaşma</d:index_title></d:index>
+	<h1>kişisel web paylaşma</h1>
+	<p>Belgeleri bilgisayarınızın sabit diskindeki Siteler klasörüne sürükleyerek onları web üzerinde veya yerel alan ağında görüntülemenizi sağlayan bir Mac OS X özelliği. Belgelerin HTML biçiminde olması gerekir.</p>
+</d:entry>
+
+<d:entry id="Photo_Booth">
+	<d:index><d:index_value>Photo Booth</d:index_value><d:index_title>Photo Booth</d:index_title></d:index>
+	<h1>Photo Booth</h1>
+	<p>iSight kamerayla fotoğraf çekmek için kullanılan bir Apple uygulaması. Photo Booth; sepya gibi renk tonlamaları ve filtreler ve “uzatma” ve “balık gözü” gibi görüntü düzenlemeleri de dahil olmak üzere fotoğraflara uygulanabilecek yerleşik efektler içerir.</p>
+</d:entry>
+
+<d:entry id="photo_browser">
+	<d:index><d:index_value>fotoğraf tarayıcı</d:index_value><d:index_title>fotoğraf tarayıcı</d:index_title></d:index>
+	<h1>fotoğraf tarayıcı</h1>
+	<p>Fotoğraflardan oluşan bir seçimi görüntülemenizi ve seçimde arama yapmanızı sağlayan bilgisayar yazılımı. iPhoto; kitaplar veya slayt sunuları gibi projelerde, dahil edilmek üzere seçilen fotoğrafların küçük resimlerini gösteren fotoğraf tarayıcıyı içerir.</p>
+</d:entry>
+
+<d:entry id="Pixlet">
+	<d:index><d:index_value>Pixlet</d:index_value><d:index_title>Pixlet</d:index_title></d:index>
+	<h1>Pixlet</h1>
+	<p>Apple’ın video sıkıştırma yazılımı. Pixlet çözücü (sıkıştırma/sıkıştırılanı açma) yazılımı, Mac OS X sürüm 10.3 Panther veya daha yenisini kullanan Macintosh bilgisayarlarda tam çözünürlükteki yüksek kaliteli filmlerin görüntülenmesini sağlar.</p>
+</d:entry>
+
+<d:entry id="placeholder_image">
+	<d:index><d:index_value>yer tutucu görüntü</d:index_value><d:index_title>yer tutucu görüntü</d:index_title></d:index>
+	<h1>yer tutucu görüntü</h1>
+	<p>Pages ve Keynote şablonlarında, üzerine kendi görüntünüzü sürükleyerek değiştirebileceğiniz bir görüntü. Yer tutucu görüntüyü, imleci bir süre üzerinde tutarak tanıyabilirsiniz; yer tutucu görüntünün yerine kendi dosyanızı sürüklemenizi söyleyen bir yardım etiketi görünür.</p>
+</d:entry>
+
+<d:entry id="placeholder_text">
+	<d:index><d:index_value>yer tutucu metin</d:index_value><d:index_title>yer tutucu metin</d:index_title></d:index>
+	<h1>yer tutucu metin</h1>
+	<p>Pages ve Keynote şablonlarında, üzerine kendi metninizi sürükleyerek, yapıştırarak veya yazarak değiştirebileceğiniz metin. Yer tutucu metni, onu tıklayarak tanıyabilirsiniz; tek bir tıklamayla metin bloğunun tamamı seçilir böylece onu kolaylıkla değiştirebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="playlist">
+	<d:index><d:index_value>liste</d:index_value><d:index_title>liste</d:index_title></d:index>
+	<h1>liste</h1>
+	<p>Apple’ın iTunes müzik çalarında, sırayla çalınacak müzik parçalarının listesi.</p>
+</d:entry>
+
+<d:entry id="plug-in">
+	<d:index><d:index_value>yazılım eki</d:index_value><d:index_title>yazılım eki</d:index_title></d:index>
+	<h1>yazılım eki</h1>
+	<p>Bir yazılım uygulamasının yeteneklerini genişletmek amacıyla ona ekleyebileceğiniz bir program. Örneğin, web tarayıcının web sayfalarındaki çoklu ortam içeriğini oynatmasını sağlamak için ona ortam yazılım eki ekleyebilirsiniz.</p>
+</d:entry>
+
+<d:entry id="podcast">
+	<d:index><d:index_value>podcast</d:index_value><d:index_title>podcast</d:index_title></d:index>
+	<h1>podcast</h1>
+	<p>iPod, iPad veya Mac gibi taşınabilir bir aygıtta ya da bilgisayarda çalabileceğiniz veya oynatabileceğiniz Internet üzerinde bulunan ses veya video yayını.</p>
+</d:entry>
+
+<d:entry id="Podcast_Producer_2">
+	<d:index><d:index_value>Podcast Producer 2</d:index_value><d:index_title>Podcast Producer 2</d:index_title></d:index>
+	<h1>Podcast Producer 2</h1>
+	<p>Yüksek kalitede podcast’ler kaydetmek, yayımlamak ve dağıtmak için kullanılan bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="port">
+	<d:index><d:index_value>kapı numarası</d:index_value><d:index_title>kapı numarası</d:index_title></d:index>
+	<h1>kapı numarası</h1>
+	<p>Veri paketlerini hangi uygulamanın alması gerektiğini belirlemek için sunucu tarafından adres olarak kullanılan bir numara. Güvenlik duvarları, veri paketlerinin yerel ağa geçmelerine izin verilip verilmediğini belirlemek için kapı numaralarını kullanır.</p>
+</d:entry>
+
+<d:entry id="PowerBook">
+	<d:index><d:index_value>PowerBook</d:index_value><d:index_title>PowerBook</d:index_title></d:index>
+	<h1>PowerBook</h1>
+	<p>Apple Inc.’in 1991 ve 2006 yılları arasında kullanıma sunduğu taşınabilir bilgisayar serisi. PowerBook bilgisayarları iş amaçlı ve profesyonel kullanım için hedeflenmişti. 2006 yılında PowerBook serisi yerine MacBook Pro gelmiştir.</p>
+</d:entry>
+
+<d:entry id="Power_Mac">
+	<d:index><d:index_value>Power Mac, Power Macintosh</d:index_value><d:index_title>Power Mac, Power Macintosh</d:index_title></d:index>
+	<h1>Power Mac, Power Macintosh</h1>
+	<p>Apple Inc.’in 1994 ve 2006 yılları arasında kullanıma sunduğu, Motorola’nın PowerPC mikroişlemcilerini taban alan kişisel bilgisayar serisi.</p>
+</d:entry>
+
+<d:entry id="PowerPC">
+	<d:index><d:index_value>PowerPC</d:index_value><d:index_title>PowerPC</d:index_title></d:index>
+	<h1>PowerPC</h1>
+	<p>Motorola Corporation’ın bir mikroişlemcisi. Apple Inc.’in Power Macintosh bilgisayar serisi PowerPC mikroişlemcisini taban alıyordu.</p>
+</d:entry>
+
+<d:entry id="PPD_file">
+	<d:index><d:index_value>PPD dosyası</d:index_value><d:index_title>PPD dosyası</d:index_title></d:index>
+	<h1>PPD dosyası</h1>
+	<p>Postscript yazıcı açıklama dosyası. Belirli bir yazıcı modelinin yetenekleri hakkında bilgiler içeren dosya. PPD dosyası; çoklu kağıt tepsileri, özel kağıt boyutları ve çift taraflı baskı gibi yazıcı özelliklerinden yararlanmak için gereken denetimleri sağlar. Yazıcıyı eklerken seçtiğiniz yazıcı modeli, yazıcıyla kullanılacak PPD dosyasını belirtir. </p>
+</d:entry>
+
+<d:entry id="PPP">
+	<d:index><d:index_value>PPP</d:index_value><d:index_title>PPP</d:index_title></d:index>
+	<h1>PPP</h1>
+	<p>Ağda bulunan iki düğüm arasındaki iletişim protokolü; seri kablolar, telefon hatları, hücresel telefon ağları ve daha birçok şey üzerinden bağlanırken kullanılır. PPP, çoğunlukla Internet’e çevirmeli erişimlerde kullanılır.</p>
+</d:entry>
+
+<d:entry id="PPPoE">
+	<d:index><d:index_value>PPPoE</d:index_value><d:index_title>PPPoE</d:index_title></d:index>
+	<h1>PPPoE</h1>
+	<p>Ethernet üzerinden Noktadan Noktaya İletişim Protokolü. PPP’ye benzer olan ama Ethernet ağlarındaki yüksek hızdan yararlanabilen bir ağ protokolü.</p>
+</d:entry>
+
+<d:entry id="PRAM">
+	<d:index><d:index_value>PRAM</d:index_value><d:index_title>PRAM</d:index_title></d:index>
+	<h1>PRAM</h1>
+	<p>Rasgele erişimli parametre belleği. Macintosh bilgisayarlarda; seçilen başlangıç diski, ekran çözünürlüğü, saat dilimi, hoparlör ses yüksekliği ve diğer ayarlar da dahil olmak üzere sistem ayarlarını saklamak için kullanılan bellek türü.</p>
+</d:entry>
+
+<d:entry id="Preview">
+	<d:index><d:index_value>Önizleme</d:index_value><d:index_title>Önizleme</d:index_title></d:index>
+	<h1>Önizleme</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda PDF dosyaları, görüntüleri, metin belgelerini ve daha birçok dosya türünü görüntülemenizi sağlayan bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="printer_pool">
+	<d:index><d:index_value>yazıcı havuzu</d:index_value><d:index_title>yazıcı havuzu</d:index_title></d:index>
+	<h1>yazıcı havuzu</h1>
+	<p>Bir yazıcı koleksiyonu yaratabilirsiniz; böylece belgeniz, havuzda kullanılabilen ilk yazıcıdan otomatik olarak basılır. Mac OS X’te, yazıcı havuzu ayarlamak için Sistem Tercihleri’nin Kağıda Dökme ve Faks bölümünü kullanırsınız. </p>
+</d:entry>
+
+<d:entry id="ProCare">
+	<d:index><d:index_value>ProCare</d:index_value><d:index_title>ProCare</d:index_title></d:index>
+	<h1>ProCare</h1>
+	<p>Apple perakende satış mağazalarında sunulan ve Macintosh bilgisayar kullanıcılarının yararlanabildiği bire bir eğitim programı.</p>
+</d:entry>
+
+<d:entry id="protocol">
+	<d:index><d:index_value>protokol</d:index_value><d:index_title>protokol</d:index_title></d:index>
+	<h1>protokol</h1>
+	<p>Verilerin, iki uygulama arasında nasıl gönderilip alınacağını belirleyen kurallar kümesi.</p>
+</d:entry>
+
+<d:entry id="proxy_server">
+	<d:index><d:index_value>proxy sunucu</d:index_value><d:index_title>proxy sunucu</d:index_title></d:index>
+	<h1>proxy sunucu</h1>
+	<p>Dolaylı bir ağ bağlantısı sunan sunucu. Bir bilgisayar proxy sunucuya bağlanır ve ağ bağlantısı ister. Daha sonra proxy, belirtilen ağa bağlanır. Proxy sunucular çoğunlukla ağ güvenliğini sağlamak için kullanılır. Mac OS X’te, Sistem Tercihleri’nin Ağ bölümünü kullanarak proxy sunucu bilgilerini belirtirsiniz. </p>
+</d:entry>
+
+<d:entry id="Quartz">
+	<d:index><d:index_value>Quartz, Quartz Extreme</d:index_value><d:index_title>Quartz, Quartz Extreme</d:index_title></d:index>
+	<h1>Quartz, Quartz Extreme</h1>
+	<p>Mac OS X ile gelen Apple grafik yazılımı. Quartz, hızlı bir şekilde pencere büyüklüğünü değiştirmeyi ve kaydırmayı, ekran üstü canlandırmayı ve diğer özel efektleri sağlar.</p>
+</d:entry>
+
+<d:entry id="QuickDraw">
+	<d:index><d:index_value>QuickDraw</d:index_value><d:index_title>QuickDraw</d:index_title></d:index>
+	<h1>QuickDraw</h1>
+	<p>Apple grafik yazılımı. Mac OS X’te QuickDraw yerine Quartz gelmiştir.</p>
+</d:entry>
+
+<d:entry id="Quick_Look">
+	<d:index><d:index_value>Göz At</d:index_value><d:index_title>Göz At</d:index_title></d:index>
+	<h1>Göz At</h1>
+	<p>Mac OS X ile gelen önizleme uygulaması. Göz At; uygulamayı açmadan belgenin, resmin, filmin veya başka bir dosyanın örneğini görüntülemenizi sağlar.</p>
+</d:entry>
+
+<d:entry id="QuickTime">
+	<d:index><d:index_value>QuickTime</d:index_value><d:index_title>QuickTime</d:index_title></d:index>
+	<h1>QuickTime</h1>
+	<p>Apple’ın; Macintosh bilgisayarlarda videoları, ortam kliplerini, sesleri, metinleri, canlandırmaları, müzikleri ve birçok görüntü türünü işleyen çoklu ortam uygulaması.</p>
+</d:entry>
+
+<d:entry id="RAM">
+	<d:index><d:index_value>RAM</d:index_value><d:index_title>RAM</d:index_title></d:index>
+	<h1>RAM</h1>
+	<p>Rasgele erişimli bellek. O anda kullanılan uygulamaların ve dosyaların bilgisayarda tutulduğu bölüm. Bilgisayardaki sabit disk veya DVD gibi saklama alanı türlerine göre RAM’e daha hızlı erişilir. DRAM, NVRAM, PRAM ve SRAM dahil olmak üzere birçok RAM türü vardır.</p>
+</d:entry>
+
+<d:entry id="Remote_Install_Mac_OS_X">
+	<d:index><d:index_value>Remote Install Mac OS X</d:index_value><d:index_title>Remote Install Mac OS X</d:index_title></d:index>
+	<h1>Remote Install Mac OS X</h1>
+	<p>Mac OS X’i başka bir bilgisayarın optik sürücüsündeki yükleme diskinden kendi bilgisayarınıza yüklemenizi sağlayan bir Apple programı. İki bilgisayarın aynı Ethernet ağında veya kablosuz ağda olması gerekir.</p>
+</d:entry>
+
+<d:entry id="repartition">
+	<d:index><d:index_value>yeniden bölüntüleme</d:index_value><d:index_title>yeniden bölüntüleme</d:index_title></d:index>
+	<h1>yeniden bölüntüleme</h1>
+	<p>Diskin bölüntüleme düzenini değiştirme. Ayrıca bakınız: <a href='x-dictionary:r:partition:com.apple.dictionary.AppleDictionary'><b>bölüntü</b></a>.</p>
+</d:entry>
+
+<d:entry id="Rosetta">
+	<d:index><d:index_value>Rosetta</d:index_value><d:index_title>Rosetta</d:index_title></d:index>
+	<h1>Rosetta</h1>
+	<p>Intel tabanlı Macintosh bilgisayarlarla gelen ve onların PowerPC uygulamalarını çalıştırmasını sağlayan yazılım.</p>
+</d:entry>
+
+<d:entry id="router">
+	<d:index><d:index_value>yöneltici</d:index_value><d:index_title>yöneltici</d:index_title></d:index>
+	<h1>yöneltici</h1>
+	<p>Bir ağ sinyali alıp onu bir veya daha fazla bilgisayara, yazıcıya ve diğer aygıta ileten bilgisayar ağı aygıtı. Yönelticiler çoğunlukla birden fazla kullanıcıya Internet bağlantısı sağlar. Apple Inc.’in AirPort Extreme baz istasyonu yönelticiye bir örnektir.</p>
+</d:entry>
+
+<d:entry id="RSS">
+	<d:index><d:index_value>RSS</d:index_value><d:index_title>RSS</d:index_title></d:index>
+	<h1>RSS</h1>
+	<p>Really Simple Syndication’ın (Çok Basit Dağıtım) kısaltması olan RSS, web sayfalarını görüntülemenin alternatif yoludur. Haber siteleri gibi çok sık değişen web sitelerinin çoğunlukla RSS görüntüleri olur. Safari web tarayıcısı yoluyla görüntülenen bir RSS sayfası; her bir makale içeriğinden bir iki satır göstererek yeni ve en son makalelerin başlıklarını liste halinde sunar. Safari; bir web sitesi için RSS görüntüsü algılarsa, adres çubuğunda kaynağı görüntülemek için tıklayabileceğiniz bir RSS düğmesi görünür.  RSS terimi yerine kaynak, haber kaynağı, RSS kaynağı ve XML kaynağı da kullanılabilir.</p>
+</d:entry>
+
+<d:entry id="Safari">
+	<d:index><d:index_value>Safari</d:index_value><d:index_title>Safari</d:index_title></d:index>
+	<h1>Safari</h1>
+	<p>Apple Inc.’in web tarayıcısı.</p>
+</d:entry>
+
+<d:entry id="safe_sleep">
+	<d:index><d:index_value>güvenli uyku durumu</d:index_value><d:index_title>güvenli uyku durumu</d:index_title></d:index>
+	<h1>güvenli uyku durumu</h1>
+	<p>Güvenli uyku durumu sırasında, açık uygulamalar ve açık belgeler de dahil olmak üzere bilgisayarın o anki durumu sabit diske kaydedilir. Bu, uyku durumu sırasında bilgisayar tamamen kapatılırsa (pilin bitmesi veya değiştirilmesi durumunda olabilir) bilgilerinizin kaybolmasına engel olur.</p>
+</d:entry>
+
+<d:entry id="screen_name">
+	<d:index><d:index_value>ekran adı</d:index_value><d:index_title>ekran adı</d:index_title></d:index>
+	<h1>ekran adı</h1>
+	<p>Diğer kişilerle çevrimiçi iletişim için seçtiğiniz ad. Ekran adı, gerçek adınız veya takma bir ad olabilir. Ekran adını, iChat uygulamasıyla çevrimiçi olarak anında mesajlar gönderip almak için kullanırsınız.</p>
+</d:entry>
+
+<d:entry id="screen_sharing">
+	<d:index><d:index_value>ekran paylaşma</d:index_value><d:index_title>ekran paylaşma</d:index_title></d:index>
+	<h1>ekran paylaşma</h1>
+	<p>Ağdaki başka bir bilgisayara bağlanıp ekranını bilgisayarınızda görüntülemenizi sağlayan bir Mac OS X özelliği. Bilgisayarın ekranını paylaşırken; o bilgisayarda olan her şeyi (belgeleri veya uygulamaları açma; pencereleri açma, taşıma veya kapatma ve bilgisayarı kapatma gibi) denetlersiniz.</p>
+</d:entry>
+
+<d:entry id="scrubber_bar">
+	<d:index><d:index_value>ilerleme çubuğu</d:index_value><d:index_title>ilerleme çubuğu</d:index_title></d:index>
+	<h1>ilerleme çubuğu</h1>
+	<p>Bir video klibin veya ses klibinin altındaki, oynatma çubuğunun konumunu gösteren zaman ekseni çubuğu.</p>
+</d:entry>
+
+<d:entry id="secure_virtual_memory">
+	<d:index><d:index_value>güvenli sanal bellek</d:index_value><d:index_title>güvenli sanal bellek</d:index_title></d:index>
+	<h1>güvenli sanal bellek</h1>
+	<p>Güvenlik için şifrelenmiş sanal bellek. Sabit diskteki bilgiler üzerlerine yazılana dek orada kaldıkları için, güvenli sanal bellek kullanarak sabit diskinizde hassas bilgilerin bırakılmış olması riskini azaltabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="server">
+	<d:index><d:index_value>sunucu</d:index_value><d:index_title>sunucu</d:index_title></d:index>
+	<h1>sunucu</h1>
+	<p>Diğer bilgisayarlara veya ağ aygıtlarına servisler (dosya servisleri, posta servisleri veya web servisleri gibi) sağlayan bir bilgisayar.</p>
+</d:entry>
+
+<d:entry id="Shake">
+	<d:index><d:index_value>Shake</d:index_value><d:index_title>Shake</d:index_title></d:index>
+	<h1>Shake</h1>
+	<p>Apple Inc.’in; uzun metrajlı filmler, televizyon yayınları ve etkileşimli oyunlar için kullanılan sayısal efekt yazılımı.</p>
+</d:entry>
+
+<d:entry id="Sherlock">
+	<d:index><d:index_value>Sherlock</d:index_value><d:index_title>Sherlock</d:index_title></d:index>
+	<h1>Sherlock</h1>
+	<p>Hem bilgisayara bağlı yerel disklerde hem de web üzerinde arama yapabilen bir yazılım aracı. Sherlock aracı, Apple Inc. tarafından Mac OS 8.5 ile kullanıma sunuldu.</p>
+</d:entry>
+
+<d:entry id="short_name">
+	<d:index><d:index_value>kısa ad</d:index_value><d:index_title>kısa ad</d:index_title></d:index>
+	<h1>kısa ad</h1>
+	<p>Macintosh bilgisayarlarda bireysel kullanıcı hesabını tanımlayan ad . Bir kullanıcı hesabı yarattığınızda; kısa ad, hesap için girdiğiniz ad taban alınarak otomatik olarak oluşturulur. Hesabı yaratırken kısa adı değiştirebilirsiniz ama hesap yaratıldıktan sonra onu değiştiremezsiniz.</p>
+</d:entry>
+
+<d:entry id="sidebar">
+	<d:index><d:index_value>kenar çubuğu</d:index_value><d:index_title>kenar çubuğu</d:index_title></d:index>
+	<h1>kenar çubuğu</h1>
+	<p>Finder ve uygulama pencerelerinin yan tarafında; düğmeleri, bağlantıları, simgeleri ve diğer bilgileri görüntüleyen alan. Finder penceresinin kenar çubuğu; diskler, sunucular ve klasörler gibi sık kullandığınız öğelerin simgelerini görüntüler.</p>
+</d:entry>
+
+<d:entry id="Simple_Finder">
+	<d:index><d:index_value>Basit Finder</d:index_value><d:index_title>Basit Finder</d:index_title></d:index>
+	<h1>Basit Finder</h1>
+	<p>Mac OS X Finder’ın daha az menü içeren ve sabit diskteki öğelere sınırlı erişim sunan basitleştirilmiş sürümü. Basit Finder; bir hesabın, bilgisayardaki dosyalara ve uygulamalara erişimini sınırlar.</p>
+</d:entry>
+
+<d:entry id="skim">
+	<d:index><d:index_value>göz gezdirme</d:index_value><d:index_title>göz gezdirme</d:index_title></d:index>
+	<h1>göz gezdirme</h1>
+	<p>iMovie ve iPhoto uygulamalarında; tek bir kareyi veya görüntüyü bulmak amacıyla farenin imlecini, video klibin ya da etkinliğin içindeki küçük resimler üzerinde yavaş yavaş hareket ettirme.</p>
+</d:entry>
+
+<d:entry id="sleep">
+	<d:index><d:index_value>uyku durumu</d:index_value><d:index_title>uyku durumu</d:index_title></d:index>
+	<h1>uyku durumu</h1>
+	<p>Bilgisayarın ekranının soluk ve disk sürücüsünün kapatılmış olduğu bir durum. Bilgisayarınız uyku durumundayken açıktır ama daha az güç tüketir. Bilgisayarı uyku durumundan uyandırma, kapattıktan sonra açmaya göre daha kısa sürer.</p>
+</d:entry>
+
+<d:entry id="sleep_indicator_light">
+	<d:index><d:index_value>uyuma göstergesi ışığı</d:index_value><d:index_title>uyuma göstergesi ışığı</d:index_title></d:index>
+	<h1>uyuma göstergesi ışığı</h1>
+	<p>Bilgisayar uyku durumundayken bilgisayarınızda yavaş yavaş yanıp sönen gösterge ışığı.</p>
+</d:entry>
+
+<d:entry id="S.M.A.R.T.">
+	<d:index><d:index_value>S.M.A.R.T.</d:index_value><d:index_title>S.M.A.R.T.</d:index_title></d:index>
+	<h1>S.M.A.R.T.</h1>
+	<p>Kendi kendini izleme, çözümleme ve raporlama teknolojisi. Bilgisayarın başlangıç programının bilgisayarın sabit disk durumunu değerlendirmesini sağlayan bir yazılım. S.M.A.R.T. teknolojisi, gerçekleşmek üzere olan sürücü hataları konusunda sizi uyarabilir böylece siz de verilerinizi yedekleme gibi önleyici eylemler alabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Smart_Address">
+	<d:index><d:index_value>Akıllı Adres</d:index_value><d:index_title>Akıllı Adres</d:index_title></d:index>
+	<h1>Akıllı Adres</h1>
+	<p>Gönderdiğiniz iletinin adres alanında mavi bir baloncuk içinde görünen ad veya adres.</p>
+</d:entry>
+
+<d:entry id="Smart_Album">
+	<d:index><d:index_value>Akıllı Albüm</d:index_value><d:index_title>Akıllı Albüm</d:index_title></d:index>
+	<h1>Akıllı Albüm</h1>
+	<p>Apple Inc.’in iPhoto uygulaması tarafından kullanılan bir albüm (klasör) türü. Akıllı Albüm, belirtilen ölçütlerin en az biriyle eşleşen fotoğrafları otomatik olarak bulur. Örneğin, Ekim ayında çekilen fotoğraflara veya “Paris” etiketli tüm fotoğraflara işaret içeren bir Akıllı Albüm yaratabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="Smart_Folder">
+	<d:index><d:index_value>Akıllı Klasör</d:index_value><d:index_title>Akıllı Klasör</d:index_title></d:index>
+	<h1>Akıllı Klasör</h1>
+	<p>Macintosh bilgisayarlardaki bir klasör türü. Akıllı Klasör, belirtilen ölçütlerin en az biriyle eşleşen öğeleri otomatik olarak bulur. Örneğin, bilgisayardaki tüm hesap tablolarına işaret içeren bir Akıllı Klasör yaratabilirsiniz. Akıllı Klasör’de listelenen dosyaların gerçek yeri değişmez; bu yüzden aynı öğe birden fazla Akıllı Klasör’de listelenebilir.</p>
+</d:entry>
+
+<d:entry id="Smart_Group">
+	<d:index><d:index_value>Akıllı Grup</d:index_value><d:index_title>Akıllı Grup</d:index_title></d:index>
+	<h1>Akıllı Grup</h1>
+	<p>Yeni kişiler belirttiğiniz ölçütlere uyduğunda Adres Defteri’nin bu kişilerle otomatik olarak güncellediği kişiler koleksiyonu.</p>
+</d:entry>
+
+<d:entry id="Smart_Mailbox">
+	<d:index><d:index_value>Akıllı Posta Kutusu</d:index_value><d:index_title>Akıllı Posta Kutusu</d:index_title></d:index>
+	<h1>Akıllı Posta Kutusu</h1>
+	<p>Macintosh bilgisayarlarda Mail uygulaması tarafından kullanılan bir posta kutusu (posta klasörü) türü. Akıllı Posta Kutusu, belirtilen ölçütlerin en az biriyle eşleşen e-posta iletilerini otomatik olarak bulur. Örneğin, aile üyelerinden gelen tüm iletilere veya konu başlığında “Hawaii” geçen tüm iletilere işaret içeren bir Akıllı Posta Kutusu yaratabilirsiniz. Akıllı Posta Kutusu’nda listelenen e-posta iletilerinin gerçek yeri değişmez; bu yüzden aynı öğe birden fazla Akıllı Posta Kutusu’nda listelenebilir.</p>
+</d:entry>
+
+<d:entry id="Smart_Playlist">
+	<d:index><d:index_value>Akıllı Liste</d:index_value><d:index_title>Akıllı Liste</d:index_title></d:index>
+	<h1>Akıllı Liste</h1>
+	<p>Apple Inc.’in iTunes uygulaması tarafından kullanılan bir liste (klasör) türü. Akıllı Liste, belirtilen ölçütlerin en az biriyle eşleşen müzik parçalarını otomatik olarak bulur. Örneğin, tüm caz melodilerine veya belirli bir gruba ait tüm parçalara işaret içeren bir Akıllı Liste yaratabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="SMB">
+	<d:index><d:index_value>SMB</d:index_value><d:index_title>SMB</d:index_title></d:index>
+	<h1>SMB</h1>
+	<p>Sunucu ileti bloğu. İstemci bilgisayarların dosyalara ve ağ servislerine erişmesini sağlayan bir protokol. TCP/IP, Internet ve diğer ağ protokolleri üzerinden kullanılabilir. SMB servisleri; sunuculara, yazıcılara ve diğer ağ kaynaklarına erişim sunmak için SMB’yi kullanır. </p>
+</d:entry>
+
+<d:entry id="SMB/CIFS">
+	<d:index><d:index_value>SMB/CIFS</d:index_value><d:index_title>SMB/CIFS</d:index_title></d:index>
+	<h1>SMB/CIFS</h1>
+	<p>Ağ üzerindeki düğümler arasında bulunan dosyalara, yazıcılara, seri kapılara ve diğer bilgilere ve aygıtlara erişimi paylaşmak için kullanılan bir protokol. En çok Windows bilgisayarlarda kullanılır.</p>
+</d:entry>
+
+<d:entry id="SnapBack">
+	<d:index><d:index_value>Geri Dön</d:index_value><d:index_title>Geri Dön</d:index_title></d:index>
+	<h1>Geri Dön</h1>
+	<p>Apple Inc.’in web tarayıcısı olan Safari’de konum ve arama alanlarının sağ ucunda bulunan beyaz oklu turuncu düğme. Geri Dön düğmesine tıkladığınızda, belirlenmiş bir sayfaya veya arama sonuçları listesine dönersiniz.</p>
+</d:entry>
+
+<d:entry id="Snow_Leopard">
+	<d:index><d:index_value>Snow Leopard</d:index_value><d:index_title>Snow Leopard</d:index_title></d:index>
+	<h1>Snow Leopard</h1>
+	<p>Macintosh bilgisayarlar için yedinci büyük işletim sistemi sürümü olan Mac OS X sürüm 10.6’nın ticari markalı adı.</p>
+</d:entry>
+
+<d:entry id="Software_Update">
+	<d:index><d:index_value>Yazılım Güncelleme</d:index_value><d:index_title>Yazılım Güncelleme</d:index_title></d:index>
+	<h1>Yazılım Güncelleme</h1>
+	<p>Macintosh bilgisayarlarda yazılım uygulamalarındaki güncellemeleri denetleyen bir uygulama. Yazılım Güncelleme, bir güncelleme bulunduğunda otomatik olarak size bildirecek şekilde ayarlanabilir.</p>
+</d:entry>
+
+<d:entry id="Source_list">
+	<d:index><d:index_value>Kaynak listesi</d:index_value><d:index_title>Kaynak listesi</d:index_title></d:index>
+	<h1>Kaynak listesi</h1>
+	<p>iPhoto’da; iPhoto penceresinin sol tarafındaki kenar çubuğunda bulunan albümlerin, klasörlerin, etkinliklerin, slayt sunularının ve daha birçok şeyin listesi. Kaynak listesi siz fotoğraf ekledikçe büyür. Kaynak listesindeki ilk öğe fotoğraflarınızın tümünü içeren iPhoto Arşivi’dir.</p>
+</d:entry>
+
+<d:entry id="source_video">
+	<d:index><d:index_value>kaynak video</d:index_value><d:index_title>kaynak video</d:index_title></d:index>
+	<h1>kaynak video</h1>
+	<p>iMovie uygulamasında, projede kullandığınız video klibi içeren dosya.</p>
+</d:entry>
+
+<d:entry id="Spaces">
+	<d:index><d:index_value>Spaces</d:index_value><d:index_title>Spaces</d:index_title></d:index>
+	<h1>Spaces</h1>
+	<p>Bir Mac OS X özelliği. Spaces özelliği, pencerelerinizi belirli amaçlara uygun gruplar halinde düzenlemenizi sağlar. Örneğin, esas olarak iş için kullandığınız bir alan ayarlayabilir ve oyun oynamak için farklı bir alana geçebilirsiniz. En fazla 16 alan yaratabilirsiniz.</p>
+</d:entry>
+
+<d:entry id="spoken_commands">
+	<d:index><d:index_value>sesli komutlar</d:index_value><d:index_title>sesli komutlar</d:index_title></d:index>
+	<h1>sesli komutlar</h1>
+	<p>Macintosh bilgisayarların, söylediğiniz belirli komutları bilgisayarın anlamasını ve yerine getirmesini sağlayan özelliği.</p>
+</d:entry>
+
+<d:entry id="Spotlight">
+	<d:index><d:index_value>Spotlight</d:index_value><d:index_title>Spotlight</d:index_title></d:index>
+	<h1>Spotlight</h1>
+	<p>Macintosh bilgisayarlarda yerleşik olan arama yazılımı. Spotlight; bilgisayar ilk başlatıldığında bulunan ve daha sonra eklenen tüm öğeleri kataloglayarak bilgisayardaki tüm dosyalar hakkındaki bilgilerden oluşan bir veri tabanı yaratır. Spotlight alanına bir arama terimi yazdığınızda; Spotlight, veri tabanında o terimle ilgili dosya olup olmadığına bakar ve bir liste sunar. İlk kataloglamanın birkaç dakika sürmesine rağmen daha sonraki Spotlight aramalarının sonuçları anında görünür.</p>
+</d:entry>
+
+<d:entry id="SRAM">
+	<d:index><d:index_value>SRAM</d:index_value><d:index_title>SRAM</d:index_title></d:index>
+	<h1>SRAM</h1>
+	<p>Statik rasgele erişimli bellek. Güç sağlandığı sürece bilgileri koruyan bellek türü. DRAM’den farklı olarak SRAM, birkaç milisaniyede bir yeni elektriksel yük gerektirmez.</p>
+</d:entry>
+
+<d:entry id="stacks">
+	<d:index><d:index_value>yığınlar</d:index_value><d:index_title>yığınlar</d:index_title></d:index>
+	<h1>yığınlar</h1>
+	<p>Bir Mac OS X özelliği. Yığınlar, Dock’ta görünür ve dosya klasörlerine hızlı bir şekilde erişmenizi sağlar. Bir yığını tıkladığınızda yığının içindeki dosyalar yelpaze veya ızgara görüntüsünde yaylanarak açılır.</p>
+</d:entry>
+
+<d:entry id="startup_disk">
+	<d:index><d:index_value>başlangıç diski</d:index_value><d:index_title>başlangıç diski</d:index_title></d:index>
+	<h1>başlangıç diski</h1>
+	<p>Macintosh bilgisayarlarda; dahili bir sabit diski, harici diski, bölüntüyü, CD’yi veya DVD’yi ya da başka bir aygıtı başlangıç diski olarak göstermek için kullanılan bir sistem tercihi.</p>
+</d:entry>
+
+<d:entry id="Stickies">
+	<d:index><d:index_value>Yapışkan Notlar</d:index_value><d:index_title>Yapışkan Notlar</d:index_title></d:index>
+	<h1>Yapışkan Notlar</h1>
+	<p>Bilgisayar ekranınıza Post-it notlarına benzeyen küçük notlar yapıştırmanızı sağlayan bir Apple uygulaması. Mac OS X’te; Yapışkan Notlar, Dashboard’da bulunan araç takımlarından biridir.</p>
+</d:entry>
+
+<d:entry id="SuperDrive">
+	<d:index><d:index_value>SuperDrive</d:index_value><d:index_title>SuperDrive</d:index_title></d:index>
+	<h1>SuperDrive</h1>
+	<p>Apple Inc.’e ait bir disk sürücüsü türü. İlk çıkan SuperDrive aygıtı yüksek kapasiteli (1,44 MB) bir disket sürücüydü. Şu anki SuperDrive, CD’leri ve DVD’leri okuyabilen ve onlara yazabilen bir birleşik sürücüdür.</p>
+</d:entry>
+
+<d:entry id="System_Folder">
+	<d:index><d:index_value>Sistem Klasörü</d:index_value><d:index_title>Sistem Klasörü</d:index_title></d:index>
+	<h1>Sistem Klasörü</h1>
+	<p>Mac OS 9’da ve Mac OS’un daha eski sürümlerinde, fontlar ve tercihler gibi sistemin çalışması için gerekli dosyaları tutan bir klasör. Mac OS X’te Sistem Klasörü yoktur.</p>
+</d:entry>
+
+<d:entry id="System_Preferences">
+	<d:index><d:index_value>Sistem Tercihleri</d:index_value><d:index_title>Sistem Tercihleri</d:index_title></d:index>
+	<h1>Sistem Tercihleri</h1>
+	<p>Mac OS X ile gelen yazılım denetimleri kümesi. Sistem Tercihleri; masaüstü desenleri, klavye kestirmeleri, ağ yazılımı seçenekleri, güç yönetimi ve daha birçok şey gibi farklı türlerdeki ayarları denetlemek için kullanılır. Sistem Tercihleri, Mac OS X’ten önceki Mac OS sürümlerinde bulunan denetim masalarının yerine geçer.</p>
+</d:entry>
+
+<d:entry id="System_Profiler">
+	<d:index><d:index_value>Sistem Bilgisi Verici</d:index_value><d:index_title>Sistem Bilgisi Verici</d:index_title></d:index>
+	<h1>Sistem Bilgisi Verici</h1>
+	<p>Mac OS X ile gelen bir uygulama. Sistem Bilgisi Verici; bilgisayarınızda yüklü yazılımlar, yerleşik donanımlar ve bağlı aygıtlar hakkında ayrıntılı bilgiler sunar.</p>
+</d:entry>
+
+<d:entry id="Terminal">
+	<d:index><d:index_value>Terminal</d:index_value><d:index_title>Terminal</d:index_title></d:index>
+	<h1>Terminal</h1>
+	<p>Mac OS X ile gelen bir uygulama. Terminal, bilgisayarın işletim sisteminin gerçekleştirmesi için komutlar yazabileceğiniz bir pencere sunar. Terminal, çoğunlukla UNIX tabanlı bilgisayarlarda bulunan ve “terminal öykünücüsü” adı verilen bir program türüdür.</p>
+</d:entry>
+
+<d:entry id="TextEdit">
+	<d:index><d:index_value>TextEdit</d:index_value><d:index_title>TextEdit</d:index_title></d:index>
+	<h1>TextEdit</h1>
+	<p>Mac OS X ile gelen sözcük işlem uygulamasıdır.</p>
+</d:entry>
+
+<d:entry id="Text_to_Speech">
+	<d:index><d:index_value>Metin Okuma</d:index_value><d:index_title>Metin Okuma</d:index_title></d:index>
+	<h1>Metin Okuma</h1>
+	<p>Macintosh bilgisayarların, ekrandaki vurgulanmış metni bilgisayara yüksek sesle okutmanızı sağlayan özelliği.</p>
+</d:entry>
+
+<d:entry id="thumbnail">
+	<d:index><d:index_value>küçük resim</d:index_value><d:index_title>küçük resim</d:index_title></d:index>
+	<h1>küçük resim</h1>
+	<p>Bir görüntünün, sayfanın veya video karesinin daha büyük olan özgününü temsil eden küçük resmi.</p>
+</d:entry>
+
+<d:entry id="Thunderbolt">
+	<d:index><d:index_value>Thunderbolt</d:index_value><d:index_title>Thunderbolt</d:index_title></d:index>
+	<h1>Thunderbolt</h1>
+	<p>Bir bilgisayar ile bir ekran veya harici bir aygıt arasında süratli veri aktarımı için yüksek hızlı bağlantı sağlayan bir kablo türü, bağlayıcı ve yazılım.</p>
+</d:entry>
+
+<d:entry id="Tiger">
+	<d:index><d:index_value>Tiger</d:index_value><d:index_title>Tiger</d:index_title></d:index>
+	<h1>Tiger</h1>
+	<p>Macintosh bilgisayarlar için beşinci büyük işletim sistemi sürümü olan Mac OS X sürüm 10.4’ün ticari markalı adı.</p>
+</d:entry>
+
+<d:entry id="Time_Capsule">
+	<d:index><d:index_value>Time Capsule</d:index_value><d:index_title>Time Capsule</d:index_title></d:index>
+	<h1>Time Capsule</h1>
+	<p>Apple Inc.’in, Mac OS X’deki Time Machine yedekleme uygulamasıyla kablosuz olarak çalışan bilgisayar yedekleme aygıtı. Time Capsule aynı zamanda bir AirPort Extreme baz istasyonudur. Birden fazla bilgisayar tek bir Time Capsule’ü kullanarak kablosuz ağa bağlanabilir ve yedeklemeleri kablosuz olarak gerçekleştirebilir.</p>
+</d:entry>
+
+<d:entry id="Time_Machine">
+	<d:index><d:index_value>Time Machine</d:index_value><d:index_title>Time Machine</d:index_title></d:index>
+	<h1>Time Machine</h1>
+	<p>Mac OS X ile gelen Apple’ın dosya yedekleme uygulaması. Time Machine; verilerin, yazılımların ve işletim sistemi dosyalarının tümü dahil olmak üzere bilgisayarınızdaki her bir dosyanın düzenli aralıklarla yedeklemesini yaratır. Time Machine, istediğiniz sürüme erişip geri yükleyebilmeniz için etkin pencerenin veya masaüstünün önceki sürümlerinin görüntülerini gösteren “zamanda geriye doğru yolculuk yapma” metaforunu kullanır.</p>
+</d:entry>
+
+<d:entry id="titles">
+	<d:index><d:index_value>başlıklar</d:index_value><d:index_title>başlıklar</d:index_title></d:index>
+	<h1>başlıklar</h1>
+	<p>iMovie uygulamasında, video projenize ekleyebileceğiniz metinler.</p>
+</d:entry>
+
+<d:entry id="Trash">
+	<d:index><d:index_value>Çöp Sepeti</d:index_value><d:index_title>Çöp Sepeti</d:index_title></d:index>
+	<h1>Çöp Sepeti</h1>
+	<p>Macintosh bilgisayarlarda Dock’un sonunda bulunan özel bir klasör. Diskinizdeki bir öğeyi silmek için, onu Çöp Sepeti’ne sürükleyin ve daha sonra Finder > Çöpü Boşalt’ı ya da Finder > Çöpü Güvenli Boşalt’ı seçin.</p>
+</d:entry>
+
+<d:entry id="Tremor">
+	<d:index><d:index_value>Tremor</d:index_value><d:index_title>Tremor</d:index_title></d:index>
+	<h1>Tremor</h1>
+	<p>Apple Inc.’in; uzun metrajlı filmler, televizyon yayınları ve etkileşimli oyunlar için kullanılan sayısal efekt yazılımı.</p>
+</d:entry>
+
+<d:entry id="TrueType">
+	<d:index><d:index_value>TrueType</d:index_value><d:index_title>TrueType</d:index_title></d:index>
+	<h1>TrueType</h1>
+	<p>Ekran fontları için Apple Inc. tarafından geliştirilen bir standart.</p>
+</d:entry>
+
+<d:entry id="Universal_Access">
+	<d:index><d:index_value>Evrensel Erişim</d:index_value><d:index_title>Evrensel Erişim</d:index_title></d:index>
+	<h1>Evrensel Erişim</h1>
+	<p>Fiziksel engellilikleri ne olursa olsun herkesin kullanabileceği şekilde tasarlanmış ürünlerin ve servislerin karakteristiği.</p>
+</d:entry>
+
+<d:entry id="user_account">
+	<d:index><d:index_value>kullanıcı hesabı</d:index_value><d:index_title>kullanıcı hesabı</d:index_title></d:index>
+	<h1>kullanıcı hesabı</h1>
+	<p>Mac OS X kullanan Macintosh bilgisayarlarda; bilgisayarı kullanan her kişi, ayrı bir ana klasörü olan bir bireysel hesaba sahip olabilir. Birden fazla kullanıcının olduğu bir bilgisayarda; standart kullanıcı hesapları, kullanıcıların kendi kullanımları için yazılım yüklemesine ve kendi hesaplarıyla ilgili ayarları değiştirmelerine izin verir. Her bir kullanıcı, diğer kullanıcıları etkilemeden kendi tercihlerini düzenleyebilir. Standart kullanıcı hesabına sahip olanlar, diğer hesapları yönetemezler. Diğer hesap türleri arasında yönetici, grup ve konuk sayılabilir.</p>
+</d:entry>
+
+<d:entry id="VCD">
+	<d:index><d:index_value>VCD</d:index_value><d:index_title>VCD</d:index_title></d:index>
+	<h1>VCD</h1>
+	<p>Bakınız: <a href='x-dictionary:r:video_compact_disc:com.apple.dictionary.AppleDictionary'><b>video CD</b></a>.</p>
+</d:entry>
+
+<d:entry id="video_compact_disc">
+	<d:index><d:index_value>video CD</d:index_value><d:index_title>video CD</d:index_title></d:index>
+	<h1>video CD</h1>
+	<p>CD’den daha fazla ama DVD’den daha az bilgi tutan bir optik disk. VCD’de saklanan bir videonun kalitesi, DVD’deki videodan düşük ve VHS video kasetteki videonun kalitesine benzerdir. VCD video, MPEG-1 biçiminde kodlanmıştır. VCD’nin içeriğini görüntülemek için, QuickTime Player’ı ve bilgisayarınızdaki ya da doğrudan bilgisayarınıza bağlı olan optik sürücüyü kullanın. </p>
+</d:entry>
+
+<d:entry id="virtual_memory">
+	<d:index><d:index_value>sanal bellek</d:index_value><d:index_title>sanal bellek</d:index_title></d:index>
+	<h1>sanal bellek</h1>
+	<p>Bilgisayarın sabit diskinin, bilgisayarın belleğini artırmak amacıyla kullanılan bölümü.</p>
+</d:entry>
+
+<d:entry id="VO">
+	<d:index><d:index_value>VO</d:index_value><d:index_title>VO</d:index_title></d:index>
+	<h1>VO</h1>
+	<p>Bakınız: <a href='x-dictionary:r:VoiceOver:com.apple.dictionary.AppleDictionary'><b>VoiceOver</b></a>.</p>
+</d:entry>
+
+<d:entry id="VO_keys">
+	<d:index><d:index_value>VO tuşları</d:index_value><d:index_title>VO tuşları</d:index_title></d:index>
+	<h1>VO tuşları</h1>
+	<p>Bakınız: <a href='x-dictionary:r:VoiceOver_keys:com.apple.dictionary.AppleDictionary'><b>VoiceOver tuşları</b></a>.</p>
+</d:entry>
+
+<d:entry id="VoiceOver">
+	<d:index><d:index_value>VoiceOver</d:index_value><d:index_title>VoiceOver</d:index_title></d:index>
+	<h1>VoiceOver</h1>
+	<p>Görme engelli kişiler ve ekrandakilerin okunmasını isteyen diğer kişiler için Macintosh bilgisayarlarda bulunan alternatif arayüz. VoiceOver, ekranda görünenleri sesli olarak açıklar ve belgelerdeki ve pencerelerdeki metinleri seslendirir. VoiceOver’ı kullanarak; bilgisayarı, fare yerine öncelikli olarak klavyeyi kullanarak denetlersiniz.</p>
+</d:entry>
+
+<d:entry id="VoiceOver_keys">
+	<d:index><d:index_value>VoiceOver tuşları</d:index_value><d:index_title>VoiceOver tuşları</d:index_title></d:index>
+	<h1>VoiceOver tuşları</h1>
+	<p>VoiceOver komutlarını girmek için diğer tuşlarla birlikte basılan Kontrol ve Option tuşlarına VoiceOver tuşları veya kısaca “VO tuşları” denir. Bunlar belgelerde “VO” olarak gösterilir.</p>
+</d:entry>
+
+<d:entry id="volume">
+	<d:index><d:index_value>disk bölümü</d:index_value><d:index_title>disk bölümü</d:index_title></d:index>
+	<h1>disk bölümü</h1>
+	<p>Kullanıcı açısından bakıldığında yerel bir sabit disk, sabit disk bölüntüsü veya ağ disk bölümü gibi davranan masaüstüne bağlanabilir saklama yeri.</p>
+</d:entry>
+
+<d:entry id="web_browser">
+	<d:index><d:index_value>web tarayıcı</d:index_value><d:index_title>web tarayıcı</d:index_title></d:index>
+	<h1>web tarayıcı</h1>
+	<p>Bakınız: <a href='x-dictionary:r:browser:com.apple.dictionary.AppleDictionary'><b>tarayıcı</b></a>.</p>
+</d:entry>
+
+<d:entry id="Web_Clip">
+	<d:index><d:index_value>Web Klibi</d:index_value><d:index_title>Web Klibi</d:index_title></d:index>
+	<h1>Web Klibi</h1>
+	<p>Web sayfalarındaki içeriği kullanarak kendi Dashboard araç takımlarınızı yaratmanızı sağlayan Apple yazılımı.</p>
+</d:entry>
+
+<d:entry id="WebDAV_server">
+	<d:index><d:index_value>WebDAV sunucusu</d:index_value><d:index_title>WebDAV sunucusu</d:index_title></d:index>
+	<h1>WebDAV sunucusu</h1>
+	<p>Web tabanlı dağıtılmış yazma ve sürüm oluşturma yazılımı. İstemci kullanıcıların web sayfalarını denetlemesini, değişiklik yapmasını ve daha sonra site etkinken ve kullanıcılar tarafından kullanılabiliyorken sayfaları yeniden siteye koymasını sağlayan canlı yazma ortamı.</p>
+</d:entry>
+
+<d:entry id="Web_Gallery">
+	<d:index><d:index_value>Web Galeri</d:index_value><d:index_title>Web Galeri</d:index_title></d:index>
+	<h1>Web Galeri</h1>
+	<p>Bakınız: <a href='x-dictionary:r:MobileMe_Gallery:com.apple.dictionary.AppleDictionary'><b>MobileMe Galeri</b></a>.</p>
+</d:entry>
+
+<d:entry id="WebKit">
+	<d:index><d:index_value>WebKit</d:index_value><d:index_title>WebKit</d:index_title></d:index>
+	<h1>WebKit</h1>
+	<p>Yazılım geliştiricilerin web içeriğini (web sayfaları gibi) uygulamalarının içinde görüntülemesine yardımcı olan araçlar kümesi. WebKit, ağ üzerindeki HTTP sunucusundan içerik isteme ve içeriği kullanıcılara görüntüleme işlemini basitleştirir.</p>
+</d:entry>
+
+<d:entry id="WebObjects">
+	<d:index><d:index_value>WebObjects</d:index_value><d:index_title>WebObjects</d:index_title></d:index>
+	<h1>WebObjects</h1>
+	<p>Web için yazılım geliştirenlerin web uygulamalarını hızlı bir şekilde oluşturmalarını sağlayan Apple Inc.’e ait geliştirme ortamı.</p>
+</d:entry>
+
+<d:entry id="web_page">
+	<d:index><d:index_value>web sayfası</d:index_value><d:index_title>web sayfası</d:index_title></d:index>
+	<h1>web sayfası</h1>
+	<p>Bakınız: <a href='x-dictionary:r:webpage:com.apple.dictionary.AppleDictionary'><b>web sayfası</b></a>.</p>
+</d:entry>
+
+<d:entry id="webpage">
+	<d:index><d:index_value>web sayfası</d:index_value><d:index_title>web sayfası</d:index_title></d:index>
+	<h1>web sayfası</h1>
+	<p>Internet’e bağlı olan ve bir web tarayıcı kullanan herkesin görüntüleyebileceği World Wide Web üzerindeki bir sayfa.</p>
+</d:entry>
+
+<d:entry id="web_widget">
+	<d:index><d:index_value>web araç takımı</d:index_value><d:index_title>web araç takımı</d:index_title></d:index>
+	<h1>web araç takımı</h1>
+	<p>Bir web sayfası içeriğinin, kendi web sitenize ekleyebileceğiniz bölümü. Birçok web sitesi; Internet videoları, haber başlıkları, hisse senedi fiyatları, fotoğraf yayınları ve daha birçok şey de dahil olmak üzere aktarabileceğiniz web araç takımları sunar.</p>
+</d:entry>
+
+<d:entry id="widget">
+	<d:index><d:index_value>araç takımı</d:index_value><d:index_title>araç takımı</d:index_title></d:index>
+	<h1>araç takımı</h1>
+	<p>Macintosh bilgisayarlardaki küçük bir uygulama. Araç takımları, Mac OS X’in bir parçası olarak Dashboard ile gelir. Araç takımları arasında; Dünya Saati, Hesap Makinesi, Takvim, Sözlük, Hava Durumu, Borsa ve daha birçok şey sayılabilir. Dashboard, birçok araç takımı yüklü olarak gelir; daha fazlası <a href='http://www.apple.com/downloads/dashboard/'>Apple web sitesinde</a> bulunabilir.</p>
+</d:entry>
+
+<d:entry id="Wi-Fi">
+	<d:index><d:index_value>Wi-Fi</d:index_value><d:index_title>Wi-Fi</d:index_title></d:index>
+	<h1>Wi-Fi</h1>
+	<p>802.11 standartlarından birini taban alan kablosuz ağ yazılımı veya donanımı.</p>
+</d:entry>
+
+<d:entry id="Xcode">
+	<d:index><d:index_value>Xcode</d:index_value><d:index_title>Xcode</d:index_title></d:index>
+	<h1>Xcode</h1>
+	<p>Apple Inc.’in; Mac, iPhone ve iPad platformları için uygulamalar yaratmak amacıyla kullanılan Mac OS X için yazılım geliştirme araçları kümesi. Koleksiyon; Xcode.app IDE (Tümleşik Geliştirme Ortamı) yazılımını, Interface Builder’ı, performans analizi için Instruments uygulamasını, derleyicileri, hata ayıklayıcıları ve diğer araçları içerir.</p>
+</d:entry>
+
+<d:entry id="Xgrid">
+	<d:index><d:index_value>Xgrid</d:index_value><d:index_title>Xgrid</d:index_title></d:index>
+	<h1>Xgrid</h1>
+	<p>Yöneticinin, ağ üzerindeki bilgisayarlar grubunun birleştirilmiş işleme gücünü tek bir görevde kullanmasını sağlayan bir Apple uygulaması.</p>
+</d:entry>
+
+<d:entry id="Xsan">
+	<d:index><d:index_value>Xsan</d:index_value><d:index_title>Xsan</d:index_title></d:index>
+	<h1>Xsan</h1>
+	<p>Birden fazla Mac masaüstü ve Xserve bilgisayarının yüksek hızlı bir ağ üzerinden RAID saklama disklerini paylaşmasını sağlayan 64 bitlik küme dosya sistemi. Her bir bilgisayar, merkezi dosya sistemini doğrudan okuyabilir ve ona yazabilir.</p>
+</d:entry>
+
+</d:dictionary>

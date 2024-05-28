@@ -57,7 +57,8 @@ enum {
   kPEHangCPU,
   kPEUPSDelayHaltCPU,
   kPEPanicRestartCPU,
-  kPEPanicSync
+  kPEPanicSync,
+  kPEPagingOff
 };
 extern int (*PE_halt_restart)(unsigned int type);
 extern int PEHaltRestart(unsigned int type);

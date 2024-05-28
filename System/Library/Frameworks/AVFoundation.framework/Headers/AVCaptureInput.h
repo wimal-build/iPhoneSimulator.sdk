@@ -56,7 +56,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @discussion
 	The notification object is the AVCaptureInputPort instance whose format description changed.
 */
-extern NSString *const AVCaptureInputPortFormatDescriptionDidChangeNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureInputPortFormatDescriptionDidChangeNotification NS_AVAILABLE(10_7, 4_0);
 
 @class AVCaptureInputPortInternal;
 

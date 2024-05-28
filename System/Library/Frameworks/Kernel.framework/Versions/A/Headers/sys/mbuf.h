@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1999-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 1999-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
@@ -194,6 +194,7 @@ typedef struct mb_stat {
 #endif /* KERNEL || __LP64__ */
 	mb_class_stat_t	mbs_class[1];	/* class array */
 } mb_stat_t;
+
 
 
 #include <sys/kpi_mbuf.h>

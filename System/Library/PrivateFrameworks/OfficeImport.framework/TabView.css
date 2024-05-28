@@ -105,11 +105,11 @@ input, textarea, pre{
 	text-indent: 200px;
 	width: 100%;
 	height: 9px;
-	background: url('cid:ClipIndicator.png') no-repeat left 0;
+	background: url('cid:ClipIndicator_1only_.png') no-repeat left 0;
 	margin-right:0px;
 }
 .TabViewOverflowMask.selected .TabViewOverflowPopUp{
-	background: url('cid:ClipIndicator.png') no-repeat left -9px;
+	background: url('cid:ClipIndicator_1only_.png') no-repeat left -9px;
 	opacity:0.8;/* Because image is too dark*/
 }
 .TabViewOverflowPopUp:focus{

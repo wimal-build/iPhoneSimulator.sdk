@@ -79,7 +79,7 @@ NS_CLASS_AVAILABLE(10_7, 3_0)
 
 /* audioRecorderEndInterruption:withFlags: is called when the audio session interruption has ended and this recorder had been interrupted while recording. */
 /* Currently the only flag is AVAudioSessionInterruptionFlags_ShouldResume. */
-- (void)audioRecorderEndInterruption:(AVAudioRecorder *)recorder withFlags:(NSUInteger)flags NS_AVAILABLE_IPHONE(4_0);
+- (void)audioRecorderEndInterruption:(AVAudioRecorder *)recorder withFlags:(NSUInteger)flags NS_AVAILABLE_IOS(4_0);
 
 /* audioRecorderEndInterruption: is called when the preferred method, audioRecorderEndInterruption:withFlags:, is not implemented. */
 - (void)audioRecorderEndInterruption:(AVAudioRecorder *)recorder;

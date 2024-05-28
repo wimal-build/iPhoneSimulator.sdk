@@ -8,9 +8,9 @@
 */
 
 /*!
-    @class			AVAssetTrackSegment
+	@class			AVAssetTrackSegment
 
-    @abstract		AVAssetTrackSegment represents a segment of an AVAssetTrack, comprising of a
+	@abstract		AVAssetTrackSegment represents a segment of an AVAssetTrack, comprising of a
 					time mapping from the source to the asset track timeline.
 */
 

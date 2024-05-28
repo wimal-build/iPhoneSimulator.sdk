@@ -168,6 +168,16 @@ typedef __darwin_pid_t	pid_t;
 #define	O_CLOEXEC	0x1000000	/* implicitly set FD_CLOEXEC */
 #endif
 
+#define FENCRYPTED	0x2000000
+
+#define FSINGLE_WRITER	0x4000000       /* fcntl(F_SINGLE_WRITER, 1) */
+
+/* Data Protection Flags */
+#if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
+#define O_DP_GETRAWENCRYPTED	0x0001
+#endif
+
+
 /* convert from open() flags to/from fflags; convert O_RD/WR to FREAD/FWRITE */
 #define	FFLAGS(oflags)	((oflags) + 1)
 #define	OFLAGS(fflags)	((fflags) - 1)
@@ -252,6 +262,23 @@ typedef __darwin_pid_t	pid_t;
 
 #define	F_GETLKPID		66		/* get record locking information, per-process */
 
+/* See F_DUPFD_CLOEXEC below for 67 */
+
+
+#define F_SETBACKINGSTORE	70	/* Mark the file as being the backing store for another filesystem */
+#define F_GETPATH_MTMINFO	71 	/* return the full path of the FD, but error in specific mtmd circumstances */
+
+/* 72 is free.  It used to be F_GETENCRYPTEDDATA, which is now removed. */
+
+#define F_SETNOSIGPIPE		73	/* No SIGPIPE generated on EPIPE */
+#define F_GETNOSIGPIPE		74	/* Status of SIGPIPE for this fd */
+
+#define F_TRANSCODEKEY		75 	/* For some cases, we need to rewrap the key for AKS/MKB */
+
+#define F_SINGLE_WRITER		76	/* file being written to a by single writer... if throttling enabled, writes */
+                                        /* may be broken into smaller chunks with throttling in between */
+
+
 // FS-specific fcntl()'s numbers begin at 0x00010000 and go up
 #define FCNTL_FS_SPECIFIC_BASE  0x00010000
 
@@ -299,7 +326,7 @@ typedef __darwin_pid_t	pid_t;
 #define	S_IFLNK		0120000		/* [XSI] symbolic link */
 #define	S_IFSOCK	0140000		/* [XSI] socket */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#define	S_IFWHT		0160000		/* whiteout */
+#define	S_IFWHT		0160000		/* OBSOLETE: whiteout */
 #endif
 
 /* File mode */
@@ -355,7 +382,6 @@ struct flock {
 	short	l_type;		/* lock type: read/write, etc. */
 	short	l_whence;	/* type of l_start */
 };
-
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 /*

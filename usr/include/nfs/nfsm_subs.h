@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -689,7 +689,7 @@ int nfsm_chain_trim_data(struct nfsm_chain *, int, int *);
 		struct nfs_vattr ttvattr; \
 		if (E) break; \
 		if ((VERS) == NFS_VER4) { \
-			(E) = nfs4_parsefattr((NMC), NULL, &ttvattr, NULL, NULL); \
+			(E) = nfs4_parsefattr((NMC), NULL, &ttvattr, NULL, NULL, NULL); \
 		} else { \
 			(E) = nfs_parsefattr((NMC), (VERS), &ttvattr); \
 		} \

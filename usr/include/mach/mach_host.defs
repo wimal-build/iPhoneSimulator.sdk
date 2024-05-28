@@ -267,5 +267,6 @@ routine mach_zone_info(
 	out	info		: mach_zone_info_array_t,
 					Dealloc);
 
+skip;
 
 /* vim: set ft=c : */

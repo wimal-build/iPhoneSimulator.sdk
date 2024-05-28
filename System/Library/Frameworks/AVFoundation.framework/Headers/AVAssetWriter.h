@@ -213,7 +213,7 @@ NS_CLASS_AVAILABLE(10_7, 4_1)
 	format. For example, video compression settings that specify H.264 compression are not compatible with file formats
 	that cannot contain H.264-compressed video.
  
-	Attempting to add an output with output settings and a media type for which this method returns NO will cause an
+	Attempting to add an input with output settings and a media type for which this method returns NO will cause an
 	exception to be thrown.
 */
 - (BOOL)canApplyOutputSettings:(NSDictionary *)outputSettings forMediaType:(NSString *)mediaType;
@@ -259,12 +259,18 @@ NS_CLASS_AVAILABLE(10_7, 4_1)
 	A BOOL indicating whether writing successfully started.
  
  @discussion
-	This method must be called after all inputs have added and other configuration properties have been set in order to
-	tell the receiver to prepare for writing. After this method is called, clients can start writing sessions using
+	This method must be called after all inputs have been added and other configuration properties have been set in order
+	to tell the receiver to prepare for writing. After this method is called, clients can start writing sessions using
 	startSessionAtSourceTime: and can write media samples using the methods provided by each of the receiver's inputs.
  
 	If writing cannot be started, this method returns NO. Clients can check the values of the status and error properties
 	for more information on why writing could not be started.
+ 
+	On iOS, if the status of an AVAssetWriter is AVAssetWriterStatusWriting when the client app goes into the background,
+	its status will change to AVAssetWriterStatusFailed and appending to any of its inputs will fail.  You may want to
+	use -[UIApplication beginBackgroundTaskWithExpirationHandler:] to avoid being interrupted in the middle of a writing
+	session and to finish writing the data that has already been appended.  For more information about executing code in
+	the background, see the iOS Application Programming Guide.
  */
 - (BOOL)startWriting;
 
@@ -389,6 +395,6 @@ NS_CLASS_AVAILABLE(10_7, 4_1)
  
 	This property cannot be set after writing has started.
  */
-@property (nonatomic) CMTimeScale movieTimeScale;
+@property (nonatomic) CMTimeScale movieTimeScale NS_AVAILABLE(10_7, 4_3);
 
 @end

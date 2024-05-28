@@ -292,7 +292,7 @@ struct stat64 __DARWIN_STRUCT_STAT64;
 #define	S_IFLNK		0120000		/* [XSI] symbolic link */
 #define	S_IFSOCK	0140000		/* [XSI] socket */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#define	S_IFWHT		0160000		/* whiteout */
+#define	S_IFWHT		0160000		/* OBSOLETE: whiteout */
 #endif
 
 /* File mode */
@@ -338,7 +338,7 @@ struct stat64 __DARWIN_STRUCT_STAT64;
 #define	S_ISLNK(m)	(((m) & S_IFMT) == S_IFLNK)	/* symbolic link */
 #define	S_ISSOCK(m)	(((m) & S_IFMT) == S_IFSOCK)	/* socket */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#define	S_ISWHT(m)	(((m) & S_IFMT) == S_IFWHT)	/* whiteout */
+#define	S_ISWHT(m)	(((m) & S_IFMT) == S_IFWHT)	/* OBSOLETE: whiteout */
 #endif
 
 /*

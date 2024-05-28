@@ -8,9 +8,9 @@
 */
 
 /*!
-    @class			AVCompositionTrackSegment
+	@class			AVCompositionTrackSegment
 
-    @abstract		AVCompositionTrackSegment represents a segment of an AVCompositionTrack, comprising
+	@abstract		AVCompositionTrackSegment represents a segment of an AVCompositionTrack, comprising
 					a URL, and track identifier, and a time mapping from the source track to the composition
 					track.
 	

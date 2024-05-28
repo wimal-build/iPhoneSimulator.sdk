@@ -92,6 +92,7 @@ typedef struct nfs_lock_msg {
 #define LOCKD_MSG_CANCEL	0x0008  /* cancelling blocked request */
 #define LOCKD_MSG_DENIED_GRACE	0x0010	/* lock denied due to grace period */
 #define LOCKD_MSG_RECLAIM	0x0020  /* lock reclaim request */
+#define LOCKD_MSG_TCP		0x0040  /* (try to) use TCP for request */
 
 /* The structure used to maintain the pending request queue */
 typedef struct nfs_lock_msg_request {

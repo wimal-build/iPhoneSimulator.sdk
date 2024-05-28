@@ -71,8 +71,6 @@ extern Boolean OSCompareAndSwap64(
 
 #endif /* defined(__i386__) || defined(__x86_64__) */
 
-#if defined(__i386__) || defined(__x86_64__) || defined(__arm__)
-
 /*!
  * @function OSAddAtomic64
  *
@@ -115,8 +113,6 @@ inline static SInt64 OSDecrementAtomic64(volatile SInt64 * address)
 {
     return OSAddAtomic64(-1LL, address);
 }
-
-#endif  /* defined(__i386__) || defined(__x86_64__) || defined(__arm__) */
 
 
 /*!
@@ -519,6 +515,29 @@ extern Boolean OSTestAndClear(
     volatile UInt8 * startAddress);
 
 /*!
+ * @defined OS_SPINLOCK_INIT
+ *
+ * @abstract
+ * The default value for an OSSpinLock.
+ *
+ * @discussion
+ * The convention is that unlocked is zero, locked is nonzero.
+ */
+#define	OS_SPINLOCK_INIT 0
+
+/*! 
+ * @typedef OSSpinLock
+ *
+ * @abstract
+ * Data type for a spinlock.
+ *
+ * @discussion
+ * You should always initialize a spinlock to OS_SPINLOCK_INIT before using it.
+ */
+typedef SInt32 OSSpinLock;
+
+
+/*!
  * @function OSSynchronizeIO
  *
  * @abstract
@@ -534,7 +553,6 @@ static __inline__ void OSSynchronizeIO(void)
 {
 }
 #endif
-
 #if defined(__cplusplus)
 }
 #endif

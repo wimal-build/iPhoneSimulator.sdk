@@ -2,7 +2,7 @@
 //  UISplitViewController.h
 //  UIKit
 //
-//  Copyright 2009-2010 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2011, Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -20,12 +20,11 @@ UIKIT_CLASS_AVAILABLE(3_2) @interface UISplitViewController : UIViewController {
     float                   _gutterWidth;
     float                   _cornerRadius;
     UIInterfaceOrientation  _rotatingFromOrientation;
+    UIInterfaceOrientation  _lastPresentedOrientation;
     CGRect                  _rotatingFromMasterViewFrame;
     CGRect                  _rotatingToMasterViewFrame;
     
     NSArray                 *_cornerImageViews;
-    
-    unsigned int            _hidesMasterViewInPortrait:1;
 }
 
 @property(nonatomic, copy) NSArray *viewControllers;  
@@ -45,6 +44,10 @@ UIKIT_CLASS_AVAILABLE(3_2) @interface UISplitViewController : UIViewController {
 
 // Called when the view controller is shown in a popover so the delegate can take action like hiding other popovers.
 - (void)splitViewController: (UISplitViewController*)svc popoverController: (UIPopoverController*)pc willPresentViewController:(UIViewController *)aViewController;
+
+// Returns YES if a view controller should be hidden by the split view controller in a given orientation.
+// (This method is only called on the leftmost view controller and only discriminates portrait from landscape.)
+- (BOOL)splitViewController: (UISplitViewController*)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
 @end
 

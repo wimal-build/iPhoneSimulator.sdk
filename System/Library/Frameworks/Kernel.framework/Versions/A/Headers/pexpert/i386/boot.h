@@ -145,8 +145,11 @@ typedef struct boot_args {
 
     uint32_t    keyStoreDataStart; /* physical address of key store data */
     uint32_t    keyStoreDataSize;
-    uint32_t	__reserved3[4];
-    uint32_t    __reserved4[738];
+    uint64_t	bootMemStart;
+    uint64_t	bootMemSize;
+    uint64_t    PhysicalMemorySize;
+    uint64_t    FSBFrequency;
+    uint32_t    __reserved4[734];
 
 } boot_args;
 

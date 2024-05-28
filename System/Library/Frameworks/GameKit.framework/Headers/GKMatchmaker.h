@@ -6,8 +6,6 @@
 //
 
 
-@class GKConnection;
-@class GKSession;
 @class GKPlayer;
 @class GKMatch;
 

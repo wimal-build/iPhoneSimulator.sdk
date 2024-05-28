@@ -220,6 +220,19 @@ struct kevent64_s {
 #define	NOTE_REAP	0x10000000		/* process reaped */
 #define	NOTE_SIGNAL	0x08000000		/* shared with EVFILT_SIGNAL */
 #define	NOTE_EXITSTATUS	0x04000000		/* exit status to be returned, valid for child process only */
+#define	NOTE_RESOURCEEND 0x02000000		/* resource limit reached, resource type returned */
+
+#if CONFIG_EMBEDDED
+/* 0x01000000  is reserved for future use */
+
+/* App states notification */
+#define	NOTE_APPACTIVE		0x00800000	/* app went to active state */
+#define	NOTE_APPBACKGROUND	0x00400000	/* app went to background */
+#define	NOTE_APPNONUI		0x00200000	/* app went to active with no UI */
+#define	NOTE_APPINACTIVE	0x00100000	/* app went to inactive state */
+#define NOTE_APPALLSTATES	0x00f00000
+#endif /* CONFIG_EMBEDDED */
+
 #define	NOTE_PDATAMASK	0x000fffff		/* mask for pid/signal */
 #define	NOTE_PCTRLMASK	(~NOTE_PDATAMASK)
 

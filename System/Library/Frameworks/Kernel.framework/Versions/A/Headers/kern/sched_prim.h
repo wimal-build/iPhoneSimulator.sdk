@@ -107,7 +107,14 @@ extern wait_result_t	assert_wait_deadline(
 extern kern_return_t	thread_wakeup_prim(
 							event_t				event,
 							boolean_t			one_thread,
-							wait_result_t		result);
+							wait_result_t			result);
+
+extern kern_return_t    thread_wakeup_prim_internal(
+	                                                event_t				event,
+							boolean_t			one_thread,
+							wait_result_t			result,
+							int				priority);
+
 
 #define thread_wakeup(x)					\
 			thread_wakeup_prim((x), FALSE, THREAD_AWAKENED)
@@ -115,6 +122,7 @@ extern kern_return_t	thread_wakeup_prim(
 			thread_wakeup_prim((x), FALSE, (z))
 #define thread_wakeup_one(x)				\
 			thread_wakeup_prim((x), TRUE, THREAD_AWAKENED)
+
 
 extern boolean_t		preemption_enabled(void);
 

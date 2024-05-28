@@ -1,0 +1,70 @@
+<xmlui>
+    <script>
+        <![CDATA[
+            function validateForm() {
+            var someVal = xmlui.getFieldValue('someVal');
+            var someValCorrect = false;
+            if (someVal == 'Secret') {
+            xmlui.setFieldInvalid('someVal', false);
+            someValCorrect = true;
+            } else {    
+            xmlui.setFieldInvalid('someVal');
+            someValCorrect = false;
+            }
+            var radioCorrect = false;
+            var radioChoice = xmlui.getFieldValue('radio');
+            xmlui.setFieldInvalid('or', false);
+            xmlui.setFieldInvalid('ap', false);
+            xmlui.setFieldInvalid('ba', false);
+            if (radioChoice == 'ba') {
+            radioCorrect = true;
+            } else {
+            xmlui.setFieldInvalid(radioChoice);
+            radioCorrect = false;
+            }
+            var dateCorrect = false;
+            var dateChoice = xmlui.getFieldValue('dob');
+            if (dateChoice - new Date('2007/01/09') == 0) {
+            xmlui.setFieldInvalid('dob', false);
+            dateCorrect = true;
+            } else {
+            xmlui.setFieldInvalid('dob');
+            dateCorrect = false;
+            }
+            var selectCorrect = false;
+            var selectChoice = xmlui.getFieldValue('selectField');
+            if (selectChoice == 'o') {
+            xmlui.setFieldInvalid('selectField', false);
+            selectCorrect = true;
+            } else {
+            xmlui.setFieldInvalid('selectField');
+            selectCorrect = false;
+            }
+            return (someValCorrect && radioCorrect && selectCorrect && dateCorrect);
+            }
+        ]]>
+    </script>
+    <navigationBar title="Validation Test">
+        <linkBarItem position="right" label="Validate!" url="done2.xml" enabledFunction="validateForm"/>
+    </navigationBar>
+    <tableView>
+        <section header="Form Validation">
+            <editableTextRow id="someVal" placeholder="Type 'Secret' here"/>
+        </section>
+        <section header="Radio Validation" footer="Choose 'Banana'">
+            <labelRow label="Orange" value="or" id="or" radioGroup="radio"/>
+            <labelRow label="Apple" value="ap" id="ap" radioGroup="radio" checked="true"/>
+            <labelRow label="Banana" value="ba" id="ba" radioGroup="radio"/>
+        </section>
+        <section header="Pickers" footer="Default is good!">
+            <datePickerRow label="Date Picker" id="dob" value="2007-01-09"/>
+            <selectRow id="selectField" label="Select" placeholder="placeholder" value="o">
+                <option label="Apple" value="a"/>
+                <option label="Orange" value="o"/>
+                <option label="Banana" value="b"/>
+                <option label="Grape" value="g"/>
+            </selectRow>
+        </section>
+    </tableView>
+</xmlui>
+

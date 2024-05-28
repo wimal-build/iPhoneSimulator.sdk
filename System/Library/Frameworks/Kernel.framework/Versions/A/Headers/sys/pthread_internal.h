@@ -125,6 +125,8 @@ struct workqueue {
 
 #define WQL_ATIMER_BUSY		0x01
 #define WQL_ATIMER_WAITING	0x02
+#define WQL_EXCEEDED_CONSTRAINED_THREAD_LIMIT    0x04
+#define WQL_EXCEEDED_TOTAL_THREAD_LIMIT          0x08
 
 
 #define WQ_VECT_SET_BIT(vector, bit)	\

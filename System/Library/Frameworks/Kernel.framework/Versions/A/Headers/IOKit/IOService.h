@@ -134,6 +134,7 @@ extern const OSSymbol *		gIOBusyInterest;
 extern const OSSymbol *		gIOOpenInterest;
 extern const OSSymbol *		gIOAppPowerStateInterest;
 extern const OSSymbol *		gIOPriorityPowerStateInterest;
+extern const OSSymbol *		gIOConsoleSecurityInterest;
 
 extern const OSSymbol *		gIODeviceMemoryKey;
 extern const OSSymbol *		gIOInterruptControllersKey;
@@ -726,6 +727,14 @@ public:
     @result An instance of an iterator over a set of IOService objects. To be released by the caller. */
 
     static OSIterator * getMatchingServices( OSDictionary * matching );
+
+/*! @function copyMatchingService
+    @abstract Finds one of the current published IOService objects matching a matching dictionary.
+    @discussion Provides a method to find one member of the set of published IOService objects matching the supplied matching dictionary.   
+    @param matching The matching dictionary describing the desired IOService object.
+    @result The IOService object or NULL. To be released by the caller. */
+
+    static IOService * copyMatchingService( OSDictionary * matching );
 
 public:
     /* Helpers to make matching dictionaries for simple cases,

@@ -32,6 +32,7 @@
 #import <AVFoundation/AVCompositionTrackSegment.h>
 #import <AVFoundation/AVError.h>
 #import <AVFoundation/AVMediaFormat.h>
+#import <AVFoundation/AVMediaSelectionGroup.h>
 #import <AVFoundation/AVMetadataFormat.h>
 #import <AVFoundation/AVMetadataItem.h>
 #import <AVFoundation/AVPlayer.h>

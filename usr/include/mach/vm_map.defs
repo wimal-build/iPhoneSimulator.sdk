@@ -71,6 +71,12 @@ subsystem
 #include <mach/mach_types.defs>
 #include <mach_debug/mach_debug_types.defs>
 
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+#define PREFIX(NAME) _kernelrpc_ ## NAME
+#else
+#define PREFIX(NAME) NAME
+#endif
+
 /*
  *      Returns information about the contents of the virtual
  *      address space of the target task at the specified
@@ -99,7 +105,7 @@ routine vm_region(
  *	of the specified size.  The address at which the
  *	allocation actually took place is returned.
  */
-routine vm_allocate(
+routine PREFIX(vm_allocate)(
 		target_task	: vm_task_entry_t;
 	inout	address		: vm_address_t;
 		size		: vm_size_t;
@@ -109,7 +115,7 @@ routine vm_allocate(
  *	Deallocate the specified range from the virtual
  *	address space of the target task.
  */
-routine vm_deallocate(
+routine PREFIX(vm_deallocate)(
 		target_task	: vm_task_entry_t;
 		address		: vm_address_t;
 		size		: vm_size_t);
@@ -124,7 +130,7 @@ routine vm_deallocate(
  *	Protections are specified as a set of {read, write, execute}
  *	*permissions*.
  */
-routine vm_protect(
+routine PREFIX(vm_protect)(
 		target_task	: vm_task_entry_t;
 		address		: vm_address_t;
 		size		: vm_size_t;

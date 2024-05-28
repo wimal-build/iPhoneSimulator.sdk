@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2009 Apple Inc. All rights reserved.
+ * Copyright (c) 2008-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_APACHE_LICENSE_HEADER_START@
  * 
@@ -322,6 +322,13 @@ dispatch_apply_f(size_t iterations, dispatch_queue_t queue,
  * When dispatch_get_current_queue() is called outside of the context of a
  * submitted block, it will return the default concurrent queue.
  *
+ * Recommended for debugging and logging purposes only:
+ * The code must not make any assumptions about the queue returned, unless it
+ * is one of the global queues or a queue the code has itself created.
+ * The code must not assume that synchronous execution onto a queue is safe
+ * from deadlock if that queue is not the one returned by
+ * dispatch_get_current_queue().
+ *
  * @result
  * Returns the current queue.
  */
@@ -406,7 +413,7 @@ typedef long dispatch_queue_priority_t;
  * Returns the requested global queue.
  */
 __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
-DISPATCH_EXPORT DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
+DISPATCH_EXPORT DISPATCH_CONST DISPATCH_WARN_RESULT DISPATCH_NOTHROW
 dispatch_queue_t
 dispatch_get_global_queue(dispatch_queue_priority_t priority, unsigned long flags);
 
@@ -447,6 +454,9 @@ struct dispatch_queue_attr_s _dispatch_queue_attr_concurrent;
  * hold a reference to that queue. Therefore a queue will not be deallocated
  * until all pending blocks have finished.
  *
+ * The target queue of a newly created dispatch queue is the default priority
+ * global concurrent queue.
+ *
  * @param label
  * A string label to attach to the queue.
  * This parameter is optional and may be NULL.
@@ -481,6 +491,14 @@ const char *
 dispatch_queue_get_label(dispatch_queue_t queue);
 
 /*!
+ * @const DISPATCH_TARGET_QUEUE_DEFAULT
+ * @discussion Constant to pass to the dispatch_set_target_queue() and
+ * dispatch_source_create() functions to indicate that the default target queue
+ * for the given object type should be used.
+ */
+#define DISPATCH_TARGET_QUEUE_DEFAULT NULL
+
+/*!
  * @function dispatch_set_target_queue
  *
  * @abstract
@@ -489,11 +507,7 @@ dispatch_queue_get_label(dispatch_queue_t queue);
  * @discussion
  * An object's target queue is responsible for processing the object.
  *
- * Only dispatch queues and dispatch sources can have their target queue
- * modified, the result of calling dispatch_set_target_queue() on any other
- * type of dispatch object is undefined.
- *
- * A dispatch queue's priority is inherited by its target queue. Use the
+ * A dispatch queue's priority is inherited from its target queue. Use the
  * dispatch_get_global_queue() function to obtain suitable target queue
  * of the desired priority.
  *
@@ -507,17 +521,24 @@ dispatch_queue_get_label(dispatch_queue_t queue);
  * A dispatch source's target queue specifies where its event handler and
  * cancellation handler blocks will be submitted.
  *
+ * A dispatch I/O channel's target queue specifies where where its I/O
+ * operations are executed.
+ *
+ * For all other dispatch object types, the only function of the target queue
+ * is to determine where an object's finalizer function is invoked.
+ *
  * @param       object
  * The object to modify.
  * The result of passing NULL in this parameter is undefined.
  *
  * @param       queue
  * The new target queue for the object. The queue is retained, and the
- * previous one, if any, is released.
- * The result of passing NULL in this parameter is undefined.
+ * previous target queue, if any, is released.
+ * If queue is DISPATCH_TARGET_QUEUE_DEFAULT, set the object's target queue
+ * to the default target queue for the given object type.
  */
 __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
-DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
+DISPATCH_EXPORT DISPATCH_NOTHROW // DISPATCH_NONNULL1
 void
 dispatch_set_target_queue(dispatch_object_t object, dispatch_queue_t queue);
 
@@ -741,6 +762,102 @@ void
 dispatch_barrier_sync_f(dispatch_queue_t queue,
 	void *context,
 	dispatch_function_t work);
+
+/*!
+ * @functiongroup Dispatch queue-specific contexts
+ * This API allows different subsystems to associate context to a shared queue
+ * without risk of collision and to retrieve that context from blocks executing
+ * on that queue or any of its child queues in the target queue hierarchy.
+ */
+
+/*!
+ * @function dispatch_queue_set_specific
+ *
+ * @abstract
+ * Associates a subsystem-specific context with a dispatch queue, for a key
+ * unique to the subsystem.
+ *
+ * @discussion
+ * The specified destructor will be invoked with the context on the default
+ * priority global concurrent queue when a new context is set for the same key,
+ * or after all references to the queue have been released.
+ *
+ * @param queue
+ * The dispatch queue to modify.
+ * The result of passing NULL in this parameter is undefined.
+ *
+ * @param key
+ * The key to set the context for, typically a pointer to a static variable
+ * specific to the subsystem. Keys are only compared as pointers and never
+ * dereferenced. Passing a string constant directly is not recommended.
+ * The NULL key is reserved and attemps to set a context for it are ignored.
+ *
+ * @param context
+ * The new subsystem-specific context for the object. This may be NULL.
+ *
+ * @param destructor
+ * The destructor function pointer. This may be NULL and is ignored if context
+ * is NULL.
+ */
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0)
+DISPATCH_EXPORT DISPATCH_NONNULL1 DISPATCH_NONNULL2 DISPATCH_NOTHROW
+void
+dispatch_queue_set_specific(dispatch_queue_t queue, const void *key,
+	void *context, dispatch_function_t destructor);
+
+/*!
+ * @function dispatch_queue_get_specific
+ *
+ * @abstract
+ * Returns the subsystem-specific context associated with a dispatch queue, for
+ * a key unique to the subsystem.
+ *
+ * @discussion
+ * Returns the context for the specified key if it has been set on the specified
+ * queue.
+ *
+ * @param queue
+ * The dispatch queue to query.
+ * The result of passing NULL in this parameter is undefined.
+ *
+ * @param key
+ * The key to get the context for, typically a pointer to a static variable
+ * specific to the subsystem. Keys are only compared as pointers and never
+ * dereferenced. Passing a string constant directly is not recommended.
+ *
+ * @result
+ * The context for the specified key or NULL if no context was found.
+ */
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
+void *
+dispatch_queue_get_specific(dispatch_queue_t queue, const void *key);
+
+/*!
+ * @function dispatch_get_specific
+ *
+ * @abstract
+ * Returns the current subsystem-specific context for a key unique to the
+ * subsystem.
+ *
+ * @discussion
+ * When called from a block executing on a queue, returns the context for the
+ * specified key if it has been set on the queue, otherwise returns the result
+ * of dispatch_get_specific() executed on the queue's target queue or NULL
+ * if the current queue is a global concurrent queue.
+ *
+ * @param key
+ * The key to get the context for, typically a pointer to a static variable
+ * specific to the subsystem. Keys are only compared as pointers and never
+ * dereferenced. Passing a string constant directly is not recommended.
+ *
+ * @result
+ * The context for the specified key or NULL if no context was found.
+ */
+__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
+void *
+dispatch_get_specific(const void *key);
 
 __END_DECLS
 

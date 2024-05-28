@@ -93,17 +93,22 @@
 	@constant		kAudioUnitScope_Note	A scope that can be used to apply changes to an individual note. The 
 											elementID used with this scope is the unique note ID returned from
 											a started note (see MusicDeviceStartNote)
+	@constant		kAudioUnitScope_Layer	A context which functions as a layer within a part and allows
+											grouped control of LayerItem-scope parameters.
+											An example is the percussive attack layer for an electric organ instrument
+	@constant		kAudioUnitScope_LayerItem	A scope which represents an indivual element within a particular Layer scope.
+											The individual sample zones, envelope generators, and filters within a synth are
+											examples of this.
 */
 enum {
-	kAudioUnitScope_Global	= 0,
-	kAudioUnitScope_Input	= 1,
-	kAudioUnitScope_Output	= 2
-#if !TARGET_OS_IPHONE
-	,
-	kAudioUnitScope_Group	= 3,
-	kAudioUnitScope_Part	= 4,
-	kAudioUnitScope_Note	= 5
-#endif
+	kAudioUnitScope_Global		= 0,
+	kAudioUnitScope_Input		= 1,
+	kAudioUnitScope_Output		= 2,
+	kAudioUnitScope_Group		= 3,
+	kAudioUnitScope_Part		= 4,
+	kAudioUnitScope_Note		= 5,
+	kAudioUnitScope_Layer		= 6,
+	kAudioUnitScope_LayerItem	= 7
 };
 
 
@@ -713,11 +718,13 @@ enum
 	kAudioUnitProperty_SampleRate					= 2,
 	kAudioUnitProperty_ParameterList				= 3,
 	kAudioUnitProperty_ParameterInfo				= 4,
+	kAudioUnitProperty_CPULoad						= 6,
 	kAudioUnitProperty_StreamFormat					= 8,
 	kAudioUnitProperty_ElementCount					= 11,
 	kAudioUnitProperty_Latency						= 12,
 	kAudioUnitProperty_SupportedNumChannels			= 13,
 	kAudioUnitProperty_MaximumFramesPerSlice		= 14,
+	kAudioUnitProperty_ParameterValueStrings		= 16,
 	kAudioUnitProperty_AudioChannelLayout			= 19,  
 	kAudioUnitProperty_TailTime						= 20,
 	kAudioUnitProperty_BypassEffect					= 21,
@@ -725,6 +732,7 @@ enum
 	kAudioUnitProperty_SetRenderCallback			= 23,
 	kAudioUnitProperty_FactoryPresets				= 24,
 	kAudioUnitProperty_RenderQuality				= 26,
+	kAudioUnitProperty_HostCallbacks				= 27,
 	kAudioUnitProperty_InPlaceProcessing			= 29,
 	kAudioUnitProperty_ElementName					= 30,
 	kAudioUnitProperty_SupportedChannelLayoutTags	= 32,
@@ -735,12 +743,9 @@ enum
 #if !TARGET_OS_IPHONE
 	,
 	kAudioUnitProperty_FastDispatch					= 5,
-	kAudioUnitProperty_CPULoad						= 6,
 	kAudioUnitProperty_SetExternalBuffer			= 15,
-	kAudioUnitProperty_ParameterValueStrings		= 16,
 	kAudioUnitProperty_GetUIComponentList			= 18,
 	kAudioUnitProperty_ContextName					= 25,
-	kAudioUnitProperty_HostCallbacks				= 27,
 	kAudioUnitProperty_CocoaUI						= 31,
 	kAudioUnitProperty_ParameterIDName				= 34,
 	kAudioUnitProperty_ParameterClumpName			= 35,
@@ -869,7 +874,6 @@ enum {
 };
 
 
-#if !TARGET_OS_IPHONE
 /*!
 	@enum			kNumberOfResponseFrequencies
 	@abstract		The maximum number of frequency response bins for kAudioUnitProperty_FrequencyResponse.
@@ -895,7 +899,6 @@ typedef struct AudioUnitFrequencyResponseBin
 	Float64		mFrequency;
 	Float64		mMagnitude;
 } AudioUnitFrequencyResponseBin;
-
 
 /*!
 	@typedef		HostCallback_GetBeatAndTempo
@@ -968,6 +971,7 @@ typedef struct HostCallbackInfo {
 } HostCallbackInfo;
 
 
+#if !TARGET_OS_IPHONE
 /*!
 	@struct			AudioUnitCocoaViewInfo
 	@abstract		The name and how many, NSView objects an audio unit publishes as a custom Cocoa view.
@@ -2058,59 +2062,41 @@ typedef struct AudioOutputUnitStartAtTimeParams {
 						Access: read/write
 							Mutes the output of the voice processing unit. 
 							0 (default) = muting off. 1 = mute output.  
-
-	@constant		kAUVoiceIOProperty_FarEndVersionInfo
-	@discussion			Scope: Global
-						Value Type: VoiceIOFarEndVersionInfo
-						Access: read/write
-							The remote end's version information - hardware model, operating system version and voice processing unit component version.
- 
 */
 enum {
 	kAUVoiceIOProperty_BypassVoiceProcessing		= 2100,
 	kAUVoiceIOProperty_VoiceProcessingEnableAGC		= 2101,
 	kAUVoiceIOProperty_DuckNonVoiceAudio			= 2102,
 	kAUVoiceIOProperty_VoiceProcessingQuality		= 2103, 
-	kAUVoiceIOProperty_MuteOutput					= 2104, 
-	kAUVoiceIOProperty_FarEndVersionInfo			= 2105
+	kAUVoiceIOProperty_MuteOutput					= 2104 
 	
 };
 
+//=====================================================================================================================
+#pragma mark - AUNBandEQ unit
 /*!
- @struct		VoiceIOFarEndVersionInfo
- @field			farEndHwModel; 
- @discussion			A UTF-8 encoded string containing the hardware model of the device being used on the remote end.
-						If the field is unknown, the length of the string should be 0.
- @field			farEndOSVersion;
- @discussion			A UTF-8 encoded string containing the operating system version running on the device being used on the remote end.
-						If the field is unknown, the length of the string should be 0.
- @field			farEndAUVersion
- @discussion			If the remote end is iOS v4.2 or later or Mac OS X v10.7 or later, this field should contain the component version
-						of the voice processing audio unit being used on the remote end. Otherwise set to one of the farEndAUVersion
-						default values defined below.
- */
-typedef struct VoiceIOFarEndVersionInfo
-{
-	UInt8		farEndHwModel[64];
-	UInt8		farEndOSVersion[64];
-	UInt32 		farEndAUVersion;
-} VoiceIOFarEndVersionInfo;
-
-/*!
- @enum			VoiceIOFarEndVersionInfo - farEndAUVersion defaults
- @discussion		
- @constant		kVoiceIOFarEndAUVersion_RequiresBackwardCompatibility
- @discussion			Set the farEndAUVersion field of the VoiceIOFarEndVersionInfo struct to this value if the remote end is a 
-						device running a pre iOS v4.2 or pre Mac OS X v10.7 operating system.
- @constant		kVoiceIOFarEndAUVersion_ThirdParty
- @discussion			Set the farEndAUVersion field of the VoiceIOFarEndVersionInfo struct to this value if the remote end is a
-						3rd party following Open FaceTime standards.
- */
+	@enum           Apple N-Band EQ Audio Unit Property IDs
+	@abstract       The collection of property IDs for the Apple N-Band EQ Audio Unit. These properties are only available with iOS 5.0 or greater.
+	
+	@constant		kAUNBandEQProperty_NumberOfBands
+	@discussion			Scope: Global
+						Value Type: UInt32
+						Access: read/write
+							Specifies the number of equalizer bands. If more than kAUNBandEQProperty_MaxNumberOfBands
+							are specified, an error is returned.
+							Can only be set if the unit is uninitialized.
+	
+	@constant		kAUNBandEQProperty_MaxNumberOfBands
+	@discussion			Scope: Global
+						Value Type: UInt32
+						Access: read-only
+							Returns the maximum number of equalizer bands.
+*/
 enum {
-	kVoiceIOFarEndAUVersion_RequiresBackwardCompatibility = 1,
-	kVoiceIOFarEndAUVersion_ThirdParty	= 2
+	kAUNBandEQProperty_NumberOfBands			= 2200,
+	kAUNBandEQProperty_MaxNumberOfBands			= 2201
 };
-#endif
+#endif // TARGET_OS_IPHONE
 
 
 //=====================================================================================================================
@@ -2127,9 +2113,12 @@ enum {
 						Enable or disable metering on a particular scope/element
 
 	@constant		kAudioUnitProperty_MatrixLevels
-	@discussion			Scope:			Global
+	@discussion			This property can be used for both the AUMatrixMixer and AUMultiChannelMixer.
+	
+						AUMatrixMixer
+						Scope:			Global
 						Value Type:		Float32 array
-						Access:			Read
+						Access:			read/write
 						
 						This property is used to retrieve the entire state of a matrix mixer. The size required is
 						the number of (input  channels + 1) * (output channels + 1) - see _MatrixDimensions
@@ -2140,6 +2129,18 @@ enum {
 						Input volumes are stored in the last column (volumes[0][2] for the first input channel,  volumes[1][2] for the second)
 						Output volumes are stored in the last row (volumes [2][0] and [2][1])
 						Cross point volumes are stored at their expected locations ([0][1], etc)
+						
+						AUMultiChannelMixer
+						Scope:			Input
+						Value Type:		Float32 array
+						Access:			read/write
+						
+						Gets/sets the matrix levels for one input element. This allows arbitrary mixing configurations
+						from all input channels to all output channels.
+						The size required is the number of (input channels) * (output channels).
+						The matrix stores only the crosspoint gains, there are no overall input or output channel gains.
+						
+						
 						
 	@constant		kAudioUnitProperty_MatrixDimensions
 	@discussion			Scope:			Global
@@ -2255,6 +2256,9 @@ typedef struct AudioUnitMeterClipping
 
 */
 enum {
+	kAudioUnitProperty_ReverbRoomType				= 10,
+	kAudioUnitProperty_UsesInternalReverb			= 1005,
+
 	kAudioUnitProperty_3DMixerDistanceParams		= 3010,
 	kAudioUnitProperty_3DMixerAttenuationCurve		= 3013,
 	kAudioUnitProperty_SpatializationAlgorithm		= 3000,
@@ -2262,6 +2266,27 @@ enum {
 	kAudioUnitProperty_3DMixerRenderingFlags		= 3003,
 	kAudioUnitProperty_3DMixerDistanceAtten			= 3004,
 	kAudioUnitProperty_ReverbPreset					= 3012
+};
+
+/*!
+	@enum	Reverb Room Types
+	@discussion Used to specify room type (as identified by a factory preset number) on Apple audio 
+				units that use internal reverb.
+*/
+enum {
+	kReverbRoomType_SmallRoom		= 0,
+	kReverbRoomType_MediumRoom		= 1,
+	kReverbRoomType_LargeRoom		= 2,
+	kReverbRoomType_MediumHall		= 3,
+	kReverbRoomType_LargeHall		= 4,
+	kReverbRoomType_Plate			= 5,
+	kReverbRoomType_MediumChamber	= 6,
+	kReverbRoomType_LargeChamber	= 7,
+	kReverbRoomType_Cathedral		= 8,
+	kReverbRoomType_LargeRoom2		= 9,
+	kReverbRoomType_MediumHall2		= 10,
+	kReverbRoomType_MediumHall3		= 11,
+	kReverbRoomType_LargeHall2		= 12	
 };
 
 /*!
@@ -2308,6 +2333,8 @@ enum {
 	k3DMixerRenderingFlags_LinearDistanceAttenuation	= (1L << 5),
 	k3DMixerRenderingFlags_ConstantReverbBlend		= (1L << 6)
 };
+
+
 
 //=====================================================================================================================
 #pragma mark -
@@ -2368,11 +2395,6 @@ enum {
 						Access:
 */
 enum {
-	kAudioUnitProperty_ReverbRoomType				= 10,
-
-	// 3DMixer, DLSMusicDevice
-	kAudioUnitProperty_UsesInternalReverb			= 1005,
-
 	// DLS Music Device
 	kMusicDeviceProperty_InstrumentName				= 1001,
 	kMusicDeviceProperty_InstrumentNumber 			= 1004,
@@ -2384,26 +2406,74 @@ enum {
 	kMusicDeviceProperty_SoundBankURL				= 1100
 };
 
+#endif	// !TARGET_OS_IPHONE
+
+//=====================================================================================================================
+#pragma mark - AUSampler
 /*!
-	@enum	Reverb Room Types
-	@discussion Used to specify room type (as identified by a factory preset number) on Apple audio 
-				units that use internal reverb.
+	@enum			Apple AUSampler Property IDs
+	@abstract		The collection of property IDs for the Apple AUSampler audio unit.
+
+	@discussion		The AUSampler audio unit lets a client create an editable, interactive
+					sampler synthesizer instrument.
+
+	@constant		kAUSamplerProperty_LoadPresetFromBank
+	@discussion		Scope:			Global
+					Value Type:		AUSamplerBankPresetData
+					Access:			Write
+						Load a preset from an external DLS or Soundfont2 bank file.
+ 
+	@constant		kAUSamplerProperty_LoadAudioFiles
+	@discussion		Scope:			Global
+					Value Type:		CFArrayRef
+					Access:			Write
+						Create a new preset from a list of audio file paths.  The CFArray should contain a set
+						of CFURLRefs, one per file.  The previous preset will be completely cleared.
 */
 enum {
-	kReverbRoomType_SmallRoom		= 0,
-	kReverbRoomType_MediumRoom		= 1,
-	kReverbRoomType_LargeRoom		= 2,
-	kReverbRoomType_MediumHall		= 3,
-	kReverbRoomType_LargeHall		= 4,
-	kReverbRoomType_Plate			= 5,
-	kReverbRoomType_MediumChamber	= 6,
-	kReverbRoomType_LargeChamber	= 7,
-	kReverbRoomType_Cathedral		= 8,
-	kReverbRoomType_LargeRoom2		= 9,
-	kReverbRoomType_MediumHall2		= 10,
-	kReverbRoomType_MediumHall3		= 11,
-	kReverbRoomType_LargeHall2		= 12	
+// range (4100->4999)
+	kAUSamplerProperty_LoadPresetFromBank			= 4100,
+	kAUSamplerProperty_LoadAudioFiles				= 4101
 };
+
+/*
+	@struct			AUSamplerBankPresetData
+	@abstract		Used for loading a preset from an external bank file (i.e. DLS or SoundFont).  
+					The property accepts an AUSamplerBankPresetData struct. The fields of this struct represent values for MIDI controllers 0 and 32 
+					and the MIDI present change message that would be sent to a GM2-compatible synth for program changes.
+					Use the provided constants (kAUSampler_DefaultMelodicBankMSB , kAUSampler_DefaultPercussionBankMSB) to designate 
+					melodic or percussion banks per the GM2 specification (GM-compatible DLS or Soundfont banks).
+					For custom non-GM-compatible DLS and Soundfont banks, use the actual MSB/LSB values associated with the desired preset.
+
+	@field			bankURL
+						The URL of the path to the bank file.   Caller is responsible for releasing the provided CFURLRef.
+	@field			bankMSB
+						The most significant byte value for a particular bank variation within that file.  Range is 0 to 127.  
+						Use kAUSampler_DefaultMelodicBankMSB by default.
+	@field			bankLSB
+						The least significant byte value for a particular bank variation within that file.  Range is 0 to 127.
+						Use kAUSampler_DefaultBankLSB by default.
+	@field			presetID
+						The numeric ID of a particular preset within that bank to load.  Range is 0 to 127.
+	@field			reserved
+						Reserved for future use
+ */
+
+enum 
+{
+	kAUSampler_DefaultPercussionBankMSB	=	0x78,
+	kAUSampler_DefaultMelodicBankMSB	=	0x79,
+	kAUSampler_DefaultBankLSB			=	0x00
+};
+
+typedef struct AUSamplerBankPresetData {
+	CFURLRef				bankURL;
+	UInt8					bankMSB;
+	UInt8					bankLSB;
+	UInt8					presetID;
+	UInt8					reserved;
+} AUSamplerBankPresetData;
+
 
 //=====================================================================================================================
 #pragma mark - AUScheduledSoundPlayer
@@ -2733,6 +2803,8 @@ struct ScheduledAudioFileRegion {
 	SInt64						mStartFrame;
 	UInt32						mFramesToPlay;
 };
+
+#if !TARGET_OS_IPHONE
 
 //=====================================================================================================================
 #pragma mark - AUDeferredRenderer

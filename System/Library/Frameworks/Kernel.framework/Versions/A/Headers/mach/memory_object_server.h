@@ -172,11 +172,21 @@ kern_return_t memory_object_data_reclaim
 	boolean_t reclaim_backing_store
 );
 
-extern boolean_t memory_object_server(
+#ifdef	mig_external
+mig_external
+#else
+extern
+#endif	/* mig_external */
+boolean_t memory_object_server(
 		mach_msg_header_t *InHeadP,
 		mach_msg_header_t *OutHeadP);
 
-extern mig_routine_t memory_object_server_routine(
+#ifdef	mig_external
+mig_external
+#else
+extern
+#endif	/* mig_external */
+mig_routine_t memory_object_server_routine(
 		mach_msg_header_t *InHeadP);
 
 

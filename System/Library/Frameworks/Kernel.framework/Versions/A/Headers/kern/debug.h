@@ -45,6 +45,8 @@ struct thread_snapshot {
 	uint64_t 		user_time;
 	uint64_t 		system_time;
 	int32_t  		state;
+	int32_t			sched_pri;   // scheduled (current) priority
+	int32_t			sched_flags; // scheduler flags
 	char			ss_flags;
 } __attribute__ ((packed));
 

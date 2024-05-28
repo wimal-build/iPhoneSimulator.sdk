@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2009 Apple Inc. All rights reserved.
+ * Copyright (c) 2008-2011 Apple Inc. All rights reserved.
  *
  * @APPLE_APACHE_LICENSE_HEADER_START@
  * 
@@ -36,7 +36,7 @@
 #define	__OSX_AVAILABLE_STARTING(x, y)
 #endif
 
-#define DISPATCH_API_VERSION 20101110
+#define DISPATCH_API_VERSION 20110201
 
 #ifndef __DISPATCH_BUILDING_DISPATCH__
 
@@ -52,6 +52,8 @@
 #include <dispatch/group.h>
 #include <dispatch/semaphore.h>
 #include <dispatch/once.h>
+#include <dispatch/data.h>
+#include <dispatch/io.h>
 
 #undef __DISPATCH_INDIRECT__
 
