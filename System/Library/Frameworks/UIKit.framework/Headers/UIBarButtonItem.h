@@ -38,8 +38,13 @@ typedef enum {
     UIBarButtonSystemItemPause,
     UIBarButtonSystemItemRewind,
     UIBarButtonSystemItemFastForward,
-    UIBarButtonSystemItemUndo,		// available in iPhone 3.0
-    UIBarButtonSystemItemRedo,		// available in iPhone 3.0
+#if __IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+    UIBarButtonSystemItemUndo,
+    UIBarButtonSystemItemRedo,
+#endif
+#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+    UIBarButtonSystemItemPageCurl,
+#endif
 } UIBarButtonSystemItem;
 
 @class UIImage, UIView;
@@ -64,6 +69,7 @@ UIKIT_EXTERN_CLASS @interface UIBarButtonItem : UIBarItem {
         unsigned int isMinibarView:1;
         unsigned int avoidBezeling:1;
         unsigned int disableAutosizing:1;
+        unsigned int selected:1;
     } _barButtonItemFlags;
 }
 

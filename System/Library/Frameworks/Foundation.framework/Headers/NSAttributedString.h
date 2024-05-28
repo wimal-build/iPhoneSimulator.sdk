@@ -1,5 +1,5 @@
 /*	NSAttributedString.h
-	Copyright (c) 1994-2007, Apple Inc. All rights reserved.
+	Copyright (c) 1994-2010, Apple Inc. All rights reserved.
 */
 
 #if MAC_OS_X_VERSION_10_0 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
@@ -28,6 +28,17 @@
 - (id)initWithString:(NSString *)str;
 - (id)initWithString:(NSString *)str attributes:(NSDictionary *)attrs;
 - (id)initWithAttributedString:(NSAttributedString *)attrStr;
+
+#if NS_BLOCKS_AVAILABLE
+enum {
+  NSAttributedStringEnumerationReverse = (1UL << 1),
+  NSAttributedStringEnumerationLongestEffectiveRangeNotRequired = (1UL << 20)
+};
+typedef NSUInteger NSAttributedStringEnumerationOptions;
+
+- (void)enumerateAttributesInRange:(NSRange)enumerationRange options:(NSAttributedStringEnumerationOptions)opts usingBlock:(void (^)(NSDictionary *attrs, NSRange range, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+- (void)enumerateAttribute:(NSString *)attrName inRange:(NSRange)enumerationRange options:(NSAttributedStringEnumerationOptions)opts usingBlock:(void (^)(id value, NSRange range, BOOL *stop))block NS_AVAILABLE(10_6, 4_0);
+#endif
 
 @end
 

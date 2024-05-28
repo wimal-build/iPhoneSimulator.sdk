@@ -121,7 +121,8 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
     NSRange                     _visibleRows;
     NSMutableArray             *_visibleCells;
     NSIndexPath                *_firstResponderIndexPath;
-    UITableViewCell            *_firstResponderCell;
+    UIView                     *_firstResponderView;
+    NSUInteger                  _firstResponderViewType;    
     NSMutableDictionary        *_reusableTableCells;
     UITableViewCell            *_topSeparatorCell;
     id                          _topSeparator;
@@ -165,6 +166,7 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
     UIColor                    *_separatorTopShadowColor;
     UIColor                    *_separatorBottomShadowColor;
     UIColor                    *_checkmarkColor;
+    UIColor                    *_sectionBorderColor;
     
     NSArray                    *_defaultSectionIndexTitles;
 
@@ -258,6 +260,7 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
         unsigned int tableHeaderViewWasHidden:1;
         unsigned int hideScrollIndicators:1;
         unsigned int sendReloadFinished:1;
+        unsigned int keepFirstResponderWhenInteractionDisabled:1;
     } _tableFlags;
     
     unsigned int _selectedSection;
@@ -306,7 +309,7 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
 // Row insertion/deletion/reloading.
 
 - (void)beginUpdates;   // allow multiple insert/delete of rows and sections to be animated simultaneously. Nestable
-- (void)endUpdates;     // only call insert/delete/reload calls inside an update block.  otherwise things like row count, etc. may be invalid.
+- (void)endUpdates;     // only call insert/delete/reload calls or change the editing state inside an update block.  otherwise things like row count, etc. may be invalid.
 
 - (void)insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
 - (void)deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;

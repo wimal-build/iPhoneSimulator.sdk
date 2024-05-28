@@ -6,15 +6,9 @@
 	<string>RequireOneRecognized</string>
 	<key>ValidBrands</key>
 	<array>
-		<string>M4V </string>
-		<string>M4A </string>
-		<string>M4B </string>
 		<string>M4P1</string>
 		<string>M4P2</string>
 		<string>M4PP</string>
-		<string>M4V1</string>
-		<string>M4V2</string>
-		<string>M4VP</string>
 	</array>
 	<key>TrackTypes</key>
 	<array>
@@ -45,6 +39,7 @@
 		<string>h263</string>
 		<string>dmb1</string>
 		<string>jpeg</string>
+		<string>drmi</string>
 	</array>
 	<key>VideoCodecProfiles</key>
 	<dict>

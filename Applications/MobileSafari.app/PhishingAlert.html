@@ -32,6 +32,19 @@
         margin: 0 auto;
     }
 
+    .alert.phishing .userinfo {
+        display:none;
+    }
+    
+    .alert.userinfo .malware {
+        display:none;
+    }
+    
+    .alert.userinfo .phishing {
+        display:none;
+    }
+
+    
     .alert-body {
         /* Gray background image for alert body (PhishingAlertBase.png) */
         -webkit-border-image: url(data:image/png;base64,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) 0 0 10 0;
@@ -176,7 +189,7 @@
         }
         
         const defaultReportAnErrorURL = "http://www.google.com/safebrowsing/report_error/?tpl=generic&continue=http%3A%2F%2Fwww.apple.com%2Fsafari%2Fantiphishing%2Freport_submitted.html";
-        const defaultLearnMoreAboutPhishingURL = "http://www.google.com/support/bin/answer.py?answer=106318";
+        const defaultLearnMoreAboutPhishingFromGoogleURL = "http://www.google.com/support/bin/answer.py?answer=106318";
 
         var PhishingAlert = {
             _host: undefined,
@@ -242,13 +255,16 @@
                     this.type = type;
                 }
 
-                if (type === "phishing")
+                if (type === "phishing") {
                     document.title = PhishingAlertController.UIString("Suspected Phishing Site", "Title of warning page for suspected phishing site");
-                else
-                    console.error("Unknown type (%s) passed to updateUI.", type);
-
-                document.getElementById("phishing_warning").innerHTML = PhishingAlertController.UIString("Warning: Suspected phishing site", "Header for warning page for suspected phishing site");
-                document.getElementById("phishing_details").innerHTML = PhishingAlertController.UIString("The website you are visiting has been reported as a “phishing” website. These websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank.", "Detail text for phishing warning");
+                    document.getElementById("phishing_warning").innerHTML = PhishingAlertController.UIString("Warning: Suspected phishing site", "Header for warning page for suspected phishing site");
+                    document.getElementById("phishing_details").innerHTML = PhishingAlertController.UIString("The website you are visiting has been reported as a “phishing” website. These websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank.", "Detail text for phishing warning");
+                } else if (type == "userinfo") {
+                    document.title = PhishingAlertController.UIString("Possible Phishing Site", "Title of warning page for possible phishing site");
+                    document.getElementById("userinfo_warning").innerHTML = PhishingAlertController.UIString("Warning: Possible phishing site", "Header for warning page for possible phishing site");
+                    document.getElementById("userinfo_details").innerHTML = PhishingAlertController.UIString("The address for the website you’re visiting contains a username or password. This may be a “phishing” website. Phishing websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank’s.", "Detail text for username and password phishing warning");
+                }
+                
                 document.getElementById("learn-more-phishing").innerHTML = PhishingAlertController.UIString("Learn more about phishing scams", "Display text for link to learn about phishing scams");
                 document.getElementById("report-an-error").innerHTML = PhishingAlertController.UIString("Report an error", "Display text for link to report an error about phishing warnings to google");
                 document.getElementById("ignore_this_warning").innerHTML = PhishingAlertController.UIString("Ignore this Warning", "Title of button to ignore a fraud warning");
@@ -293,7 +309,7 @@
                     document.getElementById("report-an-error").href = reportAnErrorURL;
 
                 if (learnMoreAboutPhishingURL === "")
-                    document.getElementById("learn-more-phishing").href = "%@&hl=%@".format(defaultLearnMoreAboutPhishingURL, navigator.language);
+                    document.getElementById("learn-more-phishing").href = "%@&hl=%@".format(defaultLearnMoreAboutPhishingFromGoogleURL, navigator.language);
                 else
                     document.getElementById("learn-more-phishing").href = learnMoreAboutPhishingURL;
 
@@ -323,12 +339,14 @@
 <body>
 <div id="alert" class="alert phishing google">
     <h1 class="phishing" id="phishing_warning"><span class="l12n size-font-to-fit"></span></h1>
+    <h1 class="userinfo" id="userinfo_warning"><span class="l12n size-font-to-fit"></span></h1>
     <div class="alert-body">
         <p class="phishing l12n" id="phishing_details"></p>
         <p class="phishing google">
             <a class="l12n" id="learn-more-phishing"></a><br>
             <a class="l12n" id="report-an-error"></a>
         </p>
+        <p class="userinfo l12n" id="userinfo_details"></p>
         <div class="button-bar goBack closePage" id="button-bar">
             <button type="submit" class="l12n" onClick="PhishingAlertController.goBackSelected();" id="go_back"></button>
             <button type="submit" class="l12n" onClick="PhishingAlertController.closePageSelected();" id="close_page"></button>

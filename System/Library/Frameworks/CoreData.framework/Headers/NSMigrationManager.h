@@ -11,7 +11,7 @@
 #import <Foundation/NSObject.h>
 #import <Foundation/NSString.h>
 
-#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5
+#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5 || __IPHONE_3_0 <=  __IPHONE_OS_VERSION_MAX_ALLOWED
 
 @class NSEntityDescription;
 @class NSEntityMapping;
@@ -110,5 +110,6 @@ implementation of NSEntityMigrationPolicy's createDestinationInstancesForSourceI
 
 @end
 
-#endif /* MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5 */
+#endif /* MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_5 || __IPHONE_3_0 <=  __IPHONE_OS_VERSION_MAX_ALLOWED
+ */
 

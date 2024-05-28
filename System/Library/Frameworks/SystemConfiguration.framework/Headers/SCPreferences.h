@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000, 2001, 2004, 2005, 2007-2009 Apple Inc. All rights reserved.
+ * Copyright (c) 2000, 2001, 2004, 2005, 2007-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -30,9 +30,7 @@
 #include <Availability.h>
 #include <TargetConditionals.h>
 #include <sys/cdefs.h>
-#if	!TARGET_OS_IPHONE
 #include <dispatch/dispatch.h>
-#endif	// !TARGET_OS_IPHONE
 #include <CoreFoundation/CoreFoundation.h>
 #include <SystemConfiguration/SCDynamicStore.h>
 
@@ -85,12 +83,12 @@ typedef const struct __SCPreferences *	SCPreferencesRef;
 		request has been made to apply the currently saved
 		preferences to the active system configuration.
  */
-#if	(__MAC_OS_X_VERSION_MIN_REQUIRED >= 1040)
+#if	(defined(__MAC_OS_X_VERSION_MAX_ALLOWED)  && (__MAC_10_4   <= __MAC_OS_X_VERSION_MAX_ALLOWED))
 enum {
 	kSCPreferencesNotificationCommit	= 1<<0,
 	kSCPreferencesNotificationApply		= 1<<1
 };
-#endif	(__MAC_OS_X_VERSION_MIN_REQUIRED >= 1040)
+#endif
 
 typedef	uint32_t	SCPreferencesNotification;
 
@@ -437,7 +435,6 @@ SCPreferencesUnscheduleFromRunLoop	(
 					CFStringRef		runLoopMode
 					)			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_NA);
 
-#if	!TARGET_OS_IPHONE
 /*!
 	@function SCPreferencesSetDispatchQueue
 	@discussion Schedule commit and apply notifications for the specified
@@ -452,7 +449,6 @@ SCPreferencesSetDispatchQueue		(
 					 SCPreferencesRef	prefs,
 					 dispatch_queue_t	queue
 					 )			__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_NA);
-#endif	// !TARGET_OS_IPHONE
 
 /*!
 	@function SCPreferencesSynchronize

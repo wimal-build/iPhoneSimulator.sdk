@@ -71,6 +71,8 @@ UIKIT_EXTERN_CLASS @interface UIDevice : NSObject {
 @property(nonatomic,getter=isProximityMonitoringEnabled) BOOL proximityMonitoringEnabled __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0); // default is NO
 @property(nonatomic,readonly)                            BOOL proximityState __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);  // always returns NO if no proximity detector
 
+@property(nonatomic,readonly,getter=isMultitaskingSupported) BOOL multitaskingSupported __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
 @property(nonatomic,readonly) UIUserInterfaceIdiom userInterfaceIdiom __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2);
 
 @end

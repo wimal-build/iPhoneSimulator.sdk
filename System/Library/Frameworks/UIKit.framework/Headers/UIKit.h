@@ -31,11 +31,13 @@
 #import <UIKit/UIImageView.h>
 #import <UIKit/UIInterface.h>
 #import <UIKit/UILabel.h>
+#import <UIKit/UILocalNotification.h>
 #import <UIKit/UILocalizedIndexedCollation.h>
 #import <UIKit/UILongPressGestureRecognizer.h>
 #import <UIKit/UIMenuController.h>
 #import <UIKit/UINavigationBar.h>
 #import <UIKit/UINavigationController.h>
+#import <UIKit/UINib.h>
 #import <UIKit/UINibDeclarations.h>
 #import <UIKit/UINibLoading.h>
 #import <UIKit/UIPageControl.h>

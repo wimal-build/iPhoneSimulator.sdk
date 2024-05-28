@@ -106,8 +106,9 @@ enum {
 	/*
 	 * SCNetworkConnection error codes
 	 */
-#if	(__MAC_OS_X_VERSION_MIN_REQUIRED >= 1060) || (__IPHONE_OS_VERSION_MIN_REQUIRED >= 20000)
-	kSCStatusConnectionNoService		= 5001	/* Network service for connection not available */
+#if	(defined(__MAC_OS_X_VERSION_MAX_ALLOWED)  && (__MAC_10_6   <= __MAC_OS_X_VERSION_MAX_ALLOWED)) ||	\
+	(defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_2_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED))
+	kSCStatusConnectionNoService		= 5001,	/* Network service for connection not available */
 #endif
 };
 

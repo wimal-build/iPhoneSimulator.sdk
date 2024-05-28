@@ -2,7 +2,7 @@
 //  SKPaymentQueue.h
 //  StoreKit
 //
-//  Copyright 2009 Apple, Inc. All rights reserved.
+//  Copyright 2009-2010 Apple, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

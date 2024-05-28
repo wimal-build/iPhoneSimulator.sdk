@@ -11,9 +11,10 @@ This class is intended to efficiently manage the results returned from a Core Da
 
 You configure an instance of this class using a fetch request that specifies the entity, optionally a filter predicate, and an array containing at least one sort ordering. When you execute the fetch, the instance efficiently collects information about the results without the need to bring all the result objects into memory at the same time. As you access the results, objects are automatically faulted into memory in batches to match likely access patterns, and objects from previous accessed disposed of. This behavior further serves to keep memory requirements low, so even if you traverse a collection containing tens of thousands of objects, you should never have more than tens of them in memory at the same time.
 
-This class is tailored to work in conjunction with UITableView. UITableView expects its data source to present the results as an array of sections made up of rows. NSFetchedResultsController can efficiently analyze the result of the fetch request and pre-compute all the information about sections in the result set. Moreover, the controller can cache the results of this computation so that if the same data is subsequently re-displayed, the work does not have to be repeated. In addition:
+This class is tailored to work in conjunction with UITableView, however you are free to use it with your own views. UITableView expects its data source to present the results as an array of sections made up of rows. NSFetchedResultsController can efficiently analyze the result of the fetch request and pre-compute all the information about sections in the result set. Moreover, the controller can cache the results of this computation so that if the same data is subsequently re-displayed, the work does not have to be repeated. In addition:
 * The controller monitors changes to objects in its associated managed object context, and updates the results accordingly. It reports changes in the results set to its delegate.
 * The controller automatically purges unneeded objects if it receives an application low memory notification.
+* The controller maintains a persistent cache of the section information across application launches if the cacheName is not nil.  If caching is enabled, you must not mutate the fetch request, its predicate, or its sort descriptor without first calling +deleteCacheWithName:
 
 Typical use
 ===========
@@ -29,8 +30,14 @@ Typical use
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index; 
 
 	The instance of NSFetchedResultsController also registers to receive change notifications on the managed object context that holds the fetched objects. Any change in the context that affects the result set or section information is properly processed. A delegate can be set on the class so that it's also notified when the result objects have changed. This would typically be used to update the display of the table view.  
-	NOTE: The controller only performs change tracking (listening to changes in the managed object context) if a delegate is set and such delegate responds to any of the change tracking notification methods. 
+	WARNING: The controller only performs change tracking if a delegate is set and responds to any of the change tracking notification methods.  See the NSFetchedResultsControllerDelegate protocol for which delegate methods are change tracking.
 
+Handling of Invalidated Objects
+===============================
+	
+		When a managed object context notifies the NSFetchedResultsController of individual objects being invalidated (NSInvalidatedObjectsKey), the controller treats these as deleted objects and sends the proper delegate calls.
+		It's possible for all the objects in a managed object context to be invalidated simultaneously. This can happen as a result of calling -reset on NSManagedObjectContext, or if a store is removed from the the NSPersistentStoreCoordinator. When this happens, NSFetchedResultsController currently does not invalidate all objects, nor does it send individual notifications for object deletions. Instead, developers must call performFetch: again to reset the state of the controller if all the objects in a context have been invalidated. They should also reload all their data in the UITableView.
+		
 */
 
 #import <Foundation/Foundation.h>
@@ -47,7 +54,7 @@ Typical use
 	NSString *_sectionNameKeyPath;
 	NSString *_sectionNameKey;
 	NSString *_cacheName;
-	id		 _cachePath;
+	void	  *_cache;
 	struct _fetchResultsControllerFlags {
 	  unsigned int _sendObjectChangeNotifications:1;
 	  unsigned int _sendSectionChangeNotifications:1;
@@ -58,7 +65,9 @@ Typical use
 	  unsigned int _hasMutableFetchedResults:1;
 	  unsigned int _hasBatchedArrayResults:1;
 	  unsigned int _hasSections:1;
-	  unsigned int _reservedFlags:23;
+	  unsigned int _usesNonpersistedProperties:1;
+	  unsigned int _includesSubentities:1;
+	  unsigned int _reservedFlags:21;
 	} _flags;
 	id _delegate;
 	id _sortKeys;
@@ -78,7 +87,7 @@ Typical use
 	fetchRequest - the fetch request used to get the objects. It's expected that the sort descriptor used in the request groups the objects into sections.
 	context - the context that will hold the fetched objects
 	sectionNameKeyPath - keypath on resulting objects that returns the section name. This will be used to pre-compute the section information.
-	cacheName - Pre computed section info is cached to a private directory under this name. If there is pre computed section info stored under this name, it is checked to see if it matches the fetchRequest. If the cached info doesn't match the request, it's deleted and recomputed when the fetch happens.
+	cacheName - Section info is cached persistently to a private file under this name. Cached sections are checked to see if the time stamp matches the store, but not if you have illegally mutated the readonly fetch request, predicate, or sort descriptor.
 */
 - (id)initWithFetchRequest:(NSFetchRequest *)fetchRequest managedObjectContext: (NSManagedObjectContext *)context sectionNameKeyPath:(NSString *)sectionNameKeyPath cacheName:(NSString *)name;
 
@@ -93,7 +102,7 @@ Typical use
 /* ====================== CONFIGURATION ===================*/
 /* ========================================================*/
 
-/* NSFetchRequest instance used to do the fetching. It's expected that the sort descriptor used in the request groups objects into sections. 
+/* NSFetchRequest instance used to do the fetching. You must not change it, its predicate, or its sort descriptor after initialization without disabling caching or calling +deleteCacheWithName.  The sort descriptor used in the request groups objects into sections. 
 */
 @property (nonatomic, readonly) NSFetchRequest *fetchRequest;
 
@@ -105,7 +114,7 @@ Typical use
 */
 @property (nonatomic, readonly) NSString *sectionNameKeyPath;
 
-/* Name of the cached section information. This is stored in a private directory and can only be accesed by name. 
+/* Name of the persistent cached section information. Use nil to disable persistent caching, or +deleteCacheWithName to clear a cache.
 */
 @property (nonatomic, readonly) NSString *cacheName;
 
@@ -215,7 +224,7 @@ enum {
 };
 typedef NSUInteger NSFetchedResultsChangeType;
 
-/* Notifies the delegate that a fetched object has been changed due to an add, remove, move, or update. 
+/* Notifies the delegate that a fetched object has been changed due to an add, remove, move, or update. Enables NSFetchedResultsController change tracking.
 	controller - controller instance that noticed the change on its fetched objects
 	anObject - changed object
 	indexPath - indexPath of changed object (nil for inserts)
@@ -231,7 +240,7 @@ typedef NSUInteger NSFetchedResultsChangeType;
 @optional
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath;
 
-/* Notifies the delegate of added or removed sections. 
+/* Notifies the delegate of added or removed sections.  Enables NSFetchedResultsController change tracking.
 
 	controller - controller instance that noticed the change on its sections
 	sectionInfo - changed section
@@ -243,15 +252,23 @@ typedef NSUInteger NSFetchedResultsChangeType;
 @optional
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type;
 
-/* Notifies the delegate that section and object changes are about to be processed and notifications will be sent. 
+/* Notifies the delegate that section and object changes are about to be processed and notifications will be sent.  Enables NSFetchedResultsController change tracking.
    Clients utilizing a UITableView may prepare for a batch of updates by responding to this method with -beginUpdates
 */
 @optional
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller;
 
-/* Notifies the delegate that all section and object changes have been sent. 
+/* Notifies the delegate that all section and object changes have been sent. Enables NSFetchedResultsController change tracking.
+   Providing an empty implementation will enable change tracking if you do not care about the individual callbacks.
 */
 @optional
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller;
+
+/* Asks the delegate to return the corresponding section index entry for a given section name.	Does not enable NSFetchedResultsController change tracking.
+    If this method isn't implemented by the delegate, the default implementation returns the capitalized first letter of the section name (seee NSFetchedResultsController sectionIndexTitleForSectionName:)
+    Only needed if a section index is used.
+*/
+@optional
+- (NSString *)controller:(NSFetchedResultsController *)controller sectionIndexTitleForSectionName:(NSString *)sectionName __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
 @end

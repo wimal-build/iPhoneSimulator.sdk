@@ -73,7 +73,7 @@ MP_EXTERN_CLASS @interface MPMusicPlayerController : NSObject {
 // Setting the nowPlayingItem to an item in the current queue will begin playback at that item.
 @property(nonatomic, copy) MPMediaItem *nowPlayingItem;
 
-// Call -play to begin playback after setting an item queue source.
+// Call -play to begin playback after setting an item queue source. Setting a query will implicitly use MPMediaGroupingTitle.
 - (void)setQueueWithQuery:(MPMediaQuery *)query;
 - (void)setQueueWithItemCollection:(MPMediaItemCollection *)itemCollection;
 
@@ -83,7 +83,7 @@ MP_EXTERN_CLASS @interface MPMusicPlayerController : NSObject {
 // Pauses playback if the music player is playing.
 - (void)pause;
 
-// Ends playback. Calling -play again will start from the beginnning of the queue.
+// Ends playback. Calling -play again will start from the beginning of the queue.
 - (void)stop;
 
 // The current time of the now playing item in seconds.

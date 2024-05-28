@@ -74,5 +74,13 @@ COREDATA_EXTERN double NSCoreDataVersionNumber;
 #define NSCoreDataVersionNumber10_4_3     77.0
 #define NSCoreDataVersionNumber10_5       185.0
 #define NSCoreDataVersionNumber10_5_3     186.0
+#define NSCoreDataVersionNumber10_6		 246.0
+#define NSCoreDataVersionNumber10_6_2		 250.0
+#define NSCoreDataVersionNumber10_6_3		 251.0
+
+#define NSCoreDataVersionNumber_iPhoneOS_3_0		241.0
+#define NSCoreDataVersionNumber_iPhoneOS_3_1		248.0
+#define NSCoreDataVersionNumber_iPhoneOS_3_2		310.2
+
 
 #endif // _COREDATADEFINES_H

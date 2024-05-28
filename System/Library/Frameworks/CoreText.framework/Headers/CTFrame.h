@@ -17,6 +17,7 @@
 #ifndef __CTFRAME__
 #define __CTFRAME__
 
+#include <CoreText/CTDefines.h>
 #include <CoreFoundation/CFArray.h>
 #include <CoreFoundation/CFDictionary.h>
 #include <CoreFoundation/CFNumber.h>
@@ -40,7 +41,7 @@ typedef const struct __CTFrame * CTFrameRef;
 	@abstract	Returns the CFType of the frame object
 */
 
-CFTypeID CTFrameGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFTypeID CTFrameGetTypeID( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -84,7 +85,7 @@ typedef uint32_t CTFrameProgression;
 	@seealso	CTFramesetterCreateFrame
 */
 
-extern const CFStringRef kCTFrameProgressionAttributeName AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFrameProgressionAttributeName CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -106,7 +107,7 @@ extern const CFStringRef kCTFrameProgressionAttributeName AVAILABLE_MAC_OS_X_VER
 */
 
 CFRange CTFrameGetStringRange(
-	CTFrameRef frame ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTFrameRef frame ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -129,7 +130,7 @@ CFRange CTFrameGetStringRange(
 */
 
 CFRange CTFrameGetVisibleStringRange(
-	CTFrameRef frame ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTFrameRef frame ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -141,7 +142,7 @@ CFRange CTFrameGetVisibleStringRange(
 */
 
 CGPathRef CTFrameGetPath(
-	CTFrameRef frame ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTFrameRef frame ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -163,7 +164,7 @@ CGPathRef CTFrameGetPath(
 */
 
 CFDictionaryRef CTFrameGetFrameAttributes(
-	CTFrameRef frame ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTFrameRef frame ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -185,7 +186,7 @@ CFDictionaryRef CTFrameGetFrameAttributes(
 */
 
 CFArrayRef CTFrameGetLines(
-	CTFrameRef frame ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTFrameRef frame ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -222,7 +223,7 @@ CFArrayRef CTFrameGetLines(
 void CTFrameGetLineOrigins(
 	CTFrameRef frame,
 	CFRange range,
-	CGPoint origins[] ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGPoint origins[] ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -245,7 +246,7 @@ void CTFrameGetLineOrigins(
 
 void CTFrameDraw(
 	CTFrameRef frame,
-	CGContextRef context ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGContextRef context ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 #if defined(__cplusplus)

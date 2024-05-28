@@ -11,7 +11,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0
 
-@class MPMediaItemArtworkInternal, MPMediaItemInternal, UIImage;
+@class AVAsset, MPMediaItemArtworkInternal, MPMediaItemInternal, UIImage;
 
 enum {
     // audio
@@ -38,6 +38,10 @@ MP_EXTERN_CLASS @interface MPMediaItem : NSObject <NSCoding> {
 // Returns the value for the given item property, see the item properties listing below.
 - (id)valueForProperty:(NSString *)property;
 
+// Executes a provided block with the fetched values for the given item properties, or nil if no value is available for a property.
+// In some cases, enumerating the values for multiple properties can be more efficient than fetching each individual property with -valueForProperty:.
+- (void)enumerateValuesForProperties:(NSSet *)properties usingBlock:(void (^)(NSString *property, id value, BOOL *stop))block __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+
 @end
 
 //-----------------------------------------------------
@@ -47,10 +51,11 @@ MP_EXTERN_CLASS @interface MPMediaItemArtwork : NSObject {
     MPMediaItemArtworkInternal *_internal;
 }
 
+// Returns the artwork image for an item at a given size (in points).
 - (UIImage *)imageWithSize:(CGSize)size;
 
-@property(nonatomic, readonly) CGRect bounds; // the bounds of the full size image
-@property(nonatomic, readonly) CGRect imageCropRect; // in the bounds of the full size image
+@property(nonatomic, readonly) CGRect bounds; // The bounds of the full size image (in points).
+@property(nonatomic, readonly) CGRect imageCropRect; // The actual content area of the artwork, in the bounds of the full size image (in points).
 
 @end
 
@@ -76,6 +81,12 @@ MP_EXTERN NSString *const MPMediaItemPropertyDiscCount;        // @"discCount", 
 MP_EXTERN NSString *const MPMediaItemPropertyArtwork;          // @"artwork",             MPMediaItemArtwork
 MP_EXTERN NSString *const MPMediaItemPropertyLyrics;           // @"lyrics",              NSString
 MP_EXTERN NSString *const MPMediaItemPropertyIsCompilation;    // @"isCompilation",       NSNumber of BOOL,                             filterable
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
+MP_EXTERN NSString *const MPMediaItemPropertyReleaseDate;      // @"releaseDate",         NSDate
+MP_EXTERN NSString *const MPMediaItemPropertyBeatsPerMinute;   // @"beatsPerMinute",      NSNumber of NSUInteger
+MP_EXTERN NSString *const MPMediaItemPropertyComments;         // @"comments",            NSString
+MP_EXTERN NSString *const MPMediaItemPropertyAssetURL;         // @"assetURL",            NSURL
+#endif //__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
 
 // Podcast properties
 MP_EXTERN NSString *const MPMediaItemPropertyPodcastTitle;     // @"podcastTitle",        NSString,                                     filterable
@@ -85,5 +96,8 @@ MP_EXTERN NSString *const MPMediaItemPropertyPlayCount;        // @"playCount", 
 MP_EXTERN NSString *const MPMediaItemPropertySkipCount;        // @"skipCount",           NSNumber of NSUInteger
 MP_EXTERN NSString *const MPMediaItemPropertyRating;           // @"rating",              NSNumber of NSUInteger, 0...5
 MP_EXTERN NSString *const MPMediaItemPropertyLastPlayedDate;   // @"lastPlayedDate",      NSDate
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
+MP_EXTERN NSString *const MPMediaItemPropertyUserGrouping;     // @"userGrouping",        NSString
+#endif //__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
 
 #endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0

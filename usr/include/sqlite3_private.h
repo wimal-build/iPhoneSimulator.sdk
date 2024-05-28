@@ -38,4 +38,10 @@ extern int _sqlite3_lockstate(const char *path, pid_t pid);
 */
 extern void _sqlite3_purgeEligiblePagerCacheMemory(void);
 
+/*
+** Pass the SQLITE_TRUNCATE_DATABASE operation code to sqlite3_file_control() 
+** to truncate a database and its associated journal file to zero length.
+*/
+#define SQLITE_TRUNCATE_DATABASE      101
+
 #endif

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/var/mobile/Library/Caches/com.apple.aps.tcpdump.en0.plist</key>
+			<true/>
+			<key>/var/mobile/Library/Preferences/com.apple.aps.tcpdump.en0.plist</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.aps.tcpdump.en0</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/sbin/tcpdump</string>
+		<string>-i</string>
+		<string>en0</string>
+		<string>-s</string>
+		<string>0</string>
+		<string>-w</string>
+		<string>/var/mobile/Library/Logs/tcpdump_en0-</string>
+		<string>-C</string>
+		<string>1</string>
+		<string>-W</string>
+		<string>2</string>
+		<string>(ip proto \tcp and port 5223) or (ip proto \udp and port 53) or (ip proto \udp and port 16402) or (ip proto \icmp)</string>
+	</array>
+</dict>
+</plist>

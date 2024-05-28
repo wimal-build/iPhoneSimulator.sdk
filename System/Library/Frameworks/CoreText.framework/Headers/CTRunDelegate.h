@@ -11,6 +11,7 @@
 
 #if TARGET_OS_IPHONE
 
+#include <CoreText/CTDefines.h>
 #include <CoreText/CTRun.h>
 
 #if defined(__cplusplus)
@@ -28,7 +29,7 @@ typedef const struct __CTRunDelegate * CTRunDelegateRef;
 	@abstract	Returns the CFType of CTRunDelegate objects.
 */
 
-CFTypeID CTRunDelegateGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFTypeID CTRunDelegateGetTypeID( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -169,7 +170,7 @@ enum {
 
 CTRunDelegateRef CTRunDelegateCreate(
 	const CTRunDelegateCallbacks* callbacks,
-	void* refCon ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	void* refCon ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -190,7 +191,7 @@ CTRunDelegateRef CTRunDelegateCreate(
 */
 
 void* CTRunDelegateGetRefCon(
-	CTRunDelegateRef runDelegate ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTRunDelegateRef runDelegate ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 #if defined(__cplusplus)

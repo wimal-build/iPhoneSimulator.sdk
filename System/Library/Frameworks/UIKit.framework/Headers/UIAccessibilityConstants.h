@@ -73,6 +73,18 @@ UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitNotEnabled;
  */
 UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitUpdatesFrequently;
 
+/*
+ Used when activating an element starts a media session (e.g. playing a movie, recording audio) 
+ that should not be interrupted by output from an assistive technology, like VoiceOver.
+ */
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitStartsMediaSession __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+
+/*
+ Used when an element can be "adjusted" (e.g. a slider). The element must also 
+ implement accessibilityIncrement and accessibilityDecrement.
+ */
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitAdjustable __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+
 
 /*
  Accessibility Notifications
@@ -95,5 +107,12 @@ UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityScreenChangedNotificati
  No argument.
  */
 UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityLayoutChangedNotification;
+
+/*
+ Should be posted when an announcement needs to be conveyed to the assistive technology. 
+ The assistive technology will output the announcement string that is used as the argument.
+ The argument is a NSString.
+ */
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityAnnouncementNotification __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 
 #endif

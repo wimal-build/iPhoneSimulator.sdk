@@ -78,6 +78,7 @@ UIKIT_EXTERN_CLASS @interface UITableViewCell : UIView <NSCoding> {
     UIColor     *_separatorColor;
     UIColor     *_topShadowColor;
     UIColor     *_bottomShadowColor;
+    UIColor     *_sectionBorderColor;
     UIView      *_floatingSeparatorView;
     UIView      *_topShadowAnimationView;
     UIView      *_bottomShadowAnimationView;
@@ -112,8 +113,8 @@ UIKIT_EXTERN_CLASS @interface UITableViewCell : UIView <NSCoding> {
         unsigned int showingMenu:1;
         unsigned int clipsContents:1;
         unsigned int animatingSelection:1;
-        unsigned int allowsIsolatedLayout:1;
         unsigned int backgroundColorSet:1;
+        unsigned int needsSetup:1;
     } _tableCellFlags;
     
     UIButton *_accessoryView;

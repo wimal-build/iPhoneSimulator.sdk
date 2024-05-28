@@ -9,7 +9,7 @@
  *
  * The spline is described using a CGPath object and may have both fill
  * and stroke components (in which case the stroke is composited over
- * the fill.) The shape as a whole is composited between the layer's
+ * the fill). The shape as a whole is composited between the layer's
  * contents and its first sublayer.
  *
  * The path object may be animated using any of the concrete subclasses
@@ -33,7 +33,9 @@
 /* The path defining the shape to be rendered. If the path extends
  * outside the layer bounds it will not automatically be clipped to the
  * layer, only if the normal layer masking rules cause that. Defaults
- * to null. Animatable. */
+ * to null. Animatable. (Note that although the path property is
+ * animatable, no implicit animation will be created when the property
+ * is changed.) */
 
 @property CGPathRef path;
 

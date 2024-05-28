@@ -64,6 +64,8 @@ UIKIT_EXTERN_CLASS @interface UITextView : UIScrollView <UITextInputTraits>
     BOOL                m_passMouseDownToOther;
     BOOL                m_scrollOnMouseUp;
     BOOL                m_reentrancyGuard;
+    BOOL                m_readyForScroll;
+    BOOL                m_hasExplicitTextAlignment;
     
     // Gesture recognition.
     UITextInteractionAssistant *m_interactionAssistant;

@@ -41,6 +41,7 @@ message ClientPropertiesRequestProto {
     MEDIUM = 2;
     // For >= 280 dpi (e.g. 2.8in with 640x480 pixels).
     HIGH = 3;
+    VERY_HIGH = 4;
   }
 
   // User cohort.  This value is assigned by the server in the

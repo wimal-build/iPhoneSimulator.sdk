@@ -60,6 +60,7 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
     UIViewController *_parentModalViewController;
     UIView           *_modalTransitionView;
     UIResponder		 *_modalPreservedFirstResponder;
+    UIResponder      *_defaultFirstResponder;
     UIDimmingView    *_dimmingView;
     UIDropShadowView *_dropShadowView;
     UIView           *_presentationSuperview;
@@ -74,6 +75,7 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
     UISearchDisplayController   *_searchDisplayController;
     
     UIPopoverController*    _popoverController;
+
     
     UIModalTransitionStyle _modalTransitionStyle;
     UIModalPresentationStyle _modalPresentationStyle;
@@ -98,12 +100,15 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
         unsigned int searchControllerRetained:1;
 	unsigned int oldModalInPopover:1;
 	unsigned int isModalInPopover:1;
+        unsigned int restoreDeepestFirstResponder:1;
     } _viewControllerFlags;
 }
 
 // The designated initializer. If you subclass UIViewController, you must call the super implementation of this method, even if you aren't using a NIB.
-// In the specified NIB, the File's Owner proxy should have its class set to your view controller subclass, with the view outlet connected to the main view.
-// If you pass in a nil nib name, then you must either call -setView: before -view is invoked, or override -loadView to set up your views.
+// (As a convenience, the default init method will do this for you, and specify nil for both of this methods arguments.) In the specified NIB, the File's Owner proxy should
+// have its class set to your view controller subclass, with the view outlet connected to the main view. If you invoke this method with a nil nib name, then this class' -loadView 
+// method will attempt to load a NIB whose name is the same as your view controller's class. If no such NIB in fact exists then you must either call -setView: before -view is 
+// invoked, or override the -loadView method to set up your views programatically.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 
 @property(nonatomic,retain) UIView *view; // The getter first invokes [self loadView] if the view hasn't been set yet. Subclasses must call super if they override the setter or getter.
@@ -130,7 +135,7 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
 @property(nonatomic,readonly) UIViewController *modalViewController;
 
 // Defines the transition style that will be used for this view controller when it is presented modally. Set this property on the view controller to be presented, not the presenter.
-// Defaults to UIModalTransitionStyleSlideVertical.
+// Defaults to UIModalTransitionStyleCoverVertical.
 @property(nonatomic,assign) UIModalTransitionStyle modalTransitionStyle __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 @property(nonatomic,assign) UIModalPresentationStyle modalPresentationStyle __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2);
 

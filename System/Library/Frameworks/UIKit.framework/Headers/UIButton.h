@@ -32,6 +32,7 @@ UIKIT_EXTERN_CLASS @interface UIButton : UIControl <NSCoding> {
     UIImageView           *_backgroundView;
     UIImageView           *_imageView;
     UILabel               *_titleView;
+    BOOL                  _initialized;
     struct {
         unsigned int reversesTitleShadowWhenHighlighted:1;
         unsigned int adjustsImageWhenHighlighted:1;

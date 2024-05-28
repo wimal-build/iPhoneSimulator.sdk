@@ -3,7 +3,7 @@
  *  CLLocation.h
  *  CoreLocation
  *
- *  Copyright 2008 Apple Computer, Inc. All rights reserved.
+ *  Copyright (c) 2008-2010 Apple Inc. All rights reserved.
  *
  */
 
@@ -89,11 +89,44 @@ extern const CLLocationDistance kCLDistanceFilterNone;
  *    power performance, be sure to specify an appropriate accuracy for your usage scenario (eg,
  *    use a large accuracy value when only a coarse location is needed).
  */
+extern const CLLocationAccuracy kCLLocationAccuracyBestForNavigation;
 extern const CLLocationAccuracy kCLLocationAccuracyBest;
 extern const CLLocationAccuracy kCLLocationAccuracyNearestTenMeters;
 extern const CLLocationAccuracy kCLLocationAccuracyHundredMeters;
 extern const CLLocationAccuracy kCLLocationAccuracyKilometer;
 extern const CLLocationAccuracy kCLLocationAccuracyThreeKilometers;
+
+/*
+ *  kCLLocationCoordinate2DInvalid
+ *  
+ *  Discussion:
+ *    Used to specify an invalid CLLocationCoordinate2D.
+ */
+extern const CLLocationCoordinate2D kCLLocationCoordinate2DInvalid __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+#ifdef __cplusplus
+extern "C" {
+#endif    
+
+/*
+ *  CLLocationCoordinate2DIsValid
+ *  
+ *  Discussion:
+ *    Returns YES if the specified coordinate is valid, NO otherwise.
+ */
+BOOL CLLocationCoordinate2DIsValid(CLLocationCoordinate2D coord) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+/*
+ *  CLLocationCoordinate2DMake:
+ *
+ *  Discussion:
+ *    Returns a new CLLocationCoordinate2D at the given latitude and longitude
+ */
+CLLocationCoordinate2D CLLocationCoordinate2DMake(CLLocationDegrees latitude, CLLocationDegrees longitude) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+#ifdef __cplusplus
+}
+#endif
 
 /*
  *  CLLocation

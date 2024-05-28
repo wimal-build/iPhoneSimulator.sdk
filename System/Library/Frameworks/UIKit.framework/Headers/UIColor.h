@@ -11,7 +11,9 @@
 
 @class UIImage;
 
-UIKIT_EXTERN_CLASS @interface UIColor : NSObject <NSCoding>
+UIKIT_EXTERN_CLASS @interface UIColor : NSObject <NSCoding> {
+  @private
+}
 
 // Convenience methods for creating autoreleased colors
 + (UIColor *)colorWithWhite:(CGFloat)white alpha:(CGFloat)alpha;

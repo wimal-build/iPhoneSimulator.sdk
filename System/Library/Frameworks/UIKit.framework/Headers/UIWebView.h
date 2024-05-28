@@ -53,6 +53,9 @@ UIKIT_EXTERN_CLASS @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate
 @property(nonatomic) BOOL detectsPhoneNumbers __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA, __MAC_NA, __IPHONE_2_0, __IPHONE_3_0);
 @property(nonatomic) UIDataDetectorTypes dataDetectorTypes __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_0);
 
+@property (nonatomic) BOOL allowsInlineMediaPlayback __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0); // iPhone Safari defaults to NO. iPad Safari defaults to YES
+@property (nonatomic) BOOL mediaPlaybackRequiresUserAction __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0); // iPhone and iPad Safari both default to YES
+
 @end
 
 @protocol UIWebViewDelegate <NSObject>

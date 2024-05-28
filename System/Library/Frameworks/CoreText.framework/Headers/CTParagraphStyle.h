@@ -17,6 +17,7 @@
 #ifndef __CTPARAGRAPHSTYLE__
 #define __CTPARAGRAPHSTYLE__
 
+#include <CoreText/CTDefines.h>
 #include <CoreFoundation/CFArray.h>
 #include <CoreGraphics/CGBase.h>
 #include <AvailabilityMacros.h>
@@ -37,7 +38,7 @@ typedef const struct __CTParagraphStyle * CTParagraphStyleRef;
 	@abstract	Returns the CFType of the paragraph style object
 */
 
-CFTypeID CTParagraphStyleGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFTypeID CTParagraphStyleGetTypeID( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -377,7 +378,7 @@ typedef struct CTParagraphStyleSetting
 
 CTParagraphStyleRef CTParagraphStyleCreate(
 	const CTParagraphStyleSetting* settings,
-	CFIndex settingCount ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CFIndex settingCount ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -395,7 +396,7 @@ CTParagraphStyleRef CTParagraphStyleCreate(
 */
 
 CTParagraphStyleRef CTParagraphStyleCreateCopy(
-	CTParagraphStyleRef paragraphStyle ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTParagraphStyleRef paragraphStyle ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -443,7 +444,7 @@ bool CTParagraphStyleGetValueForSpecifier(
 	CTParagraphStyleRef paragraphStyle,
 	CTParagraphStyleSpecifier spec,
 	size_t valueBufferSize,
-	void* valueBuffer ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	void* valueBuffer ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 #if defined(__cplusplus)

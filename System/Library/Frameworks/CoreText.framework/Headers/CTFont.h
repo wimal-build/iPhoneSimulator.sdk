@@ -17,6 +17,7 @@
 #ifndef __CTFONT__
 #define __CTFONT__
 
+#include <CoreText/CTDefines.h>
 #include <CoreText/CTFontDescriptor.h>
 
 #if !TARGET_OS_IPHONE
@@ -45,7 +46,7 @@ typedef const struct __CTFont * CTFontRef;
     @abstract   Returns the type identifier for Core Text font references.
     @result     The identifier for the opaque type CTFontRef.
 */
-CFTypeID CTFontGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFTypeID CTFontGetTypeID( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Constants
@@ -56,94 +57,94 @@ CFTypeID CTFontGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
     @defined    kCTFontCopyrightNameKey
     @abstract   The name specifier for the copyright name.
 */
-extern const CFStringRef kCTFontCopyrightNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontCopyrightNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFamilyNameKey
     @abstract   The name specifier for the family name.
 */
-extern const CFStringRef kCTFontFamilyNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFamilyNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontSubFamilyNameKey
     @abstract   The name specifier for the subfamily name.
 */
-extern const CFStringRef kCTFontSubFamilyNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontSubFamilyNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontStyleNameKey
     @abstract   The name specifier for the style name.
 */
-extern const CFStringRef kCTFontStyleNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontStyleNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontUniqueNameKey
     @abstract   The name specifier for the unique name.
     @discussion Note that this name is often not unique and should not be
                 assumed to be truly unique.
 */
-extern const CFStringRef kCTFontUniqueNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontUniqueNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFullNameKey
     @abstract   The name specifier for the full name.
 */
-extern const CFStringRef kCTFontFullNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFullNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontVersionNameKey
     @abstract   The name specifier for the version name.
 */
-extern const CFStringRef kCTFontVersionNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVersionNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontPostScriptNameKey
     @abstract   The name specifier for the Postscript name.
 */
-extern const CFStringRef kCTFontPostScriptNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontPostScriptNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontTrademarkNameKey
     @abstract   The name specifier for the trademark name.
 */
-extern const CFStringRef kCTFontTrademarkNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontTrademarkNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontManufacturerNameKey
     @abstract   The name specifier for the manufacturer name.
 */
-extern const CFStringRef kCTFontManufacturerNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontManufacturerNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontDesignerNameKey
     @abstract   The name specifier for the designer name.
 */
-extern const CFStringRef kCTFontDesignerNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontDesignerNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontDescriptionNameKey
     @abstract   The name specifier for the description name.
 */
-extern const CFStringRef kCTFontDescriptionNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontDescriptionNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontVendorURLNameKey
     @abstract   The name specifier for the vendor url name.
 */
-extern const CFStringRef kCTFontVendorURLNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVendorURLNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontDesignerURLNameKey
     @abstract   The name specifier for the designer url name.
 */
-extern const CFStringRef kCTFontDesignerURLNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontDesignerURLNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontLicenseNameKey
     @abstract   The name specifier for the license name.
 */
-extern const CFStringRef kCTFontLicenseNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontLicenseNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontLicenseURLNameKey
     @abstract   The name specifier for the license url name.
 */
-extern const CFStringRef kCTFontLicenseURLNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontLicenseURLNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontSampleTextNameKey
     @abstract   The name specifier for the sample text name string.
 */
-extern const CFStringRef kCTFontSampleTextNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontSampleTextNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontPostScriptCIDNameKey
     @abstract   The name specifier for the Postscript CID name.
 */
-extern const CFStringRef kCTFontPostScriptCIDNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontPostScriptCIDNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Creation
@@ -167,7 +168,7 @@ extern const CFStringRef kCTFontPostScriptCIDNameKey AVAILABLE_MAC_OS_X_VERSION_
 CTFontRef CTFontCreateWithName(
     CFStringRef                 name,
     CGFloat                     size,
-    const CGAffineTransform     *matrix ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    const CGAffineTransform     *matrix ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateWithFontDescriptor
@@ -187,7 +188,7 @@ CTFontRef CTFontCreateWithName(
 CTFontRef CTFontCreateWithFontDescriptor(
     CTFontDescriptorRef     descriptor,
     CGFloat                 size,
-    const CGAffineTransform *matrix ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    const CGAffineTransform *matrix ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @enum       CTFontOptions
@@ -227,7 +228,7 @@ CTFontRef CTFontCreateWithNameAndOptions(
     CFStringRef                 name,
     CGFloat                     size,
     const CGAffineTransform     *matrix,
-    CTFontOptions               options ) AVAILABLE_MAC_OS_X_VERSION_10_6_AND_LATER;
+    CTFontOptions               options ) CT_AVAILABLE_STARTING( __MAC_10_6, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateWithFontDescriptorAndOptions
@@ -251,7 +252,7 @@ CTFontRef CTFontCreateWithFontDescriptorAndOptions(
     CTFontDescriptorRef     descriptor,
     CGFloat                 size,
     const CGAffineTransform *matrix,
-    CTFontOptions           options ) AVAILABLE_MAC_OS_X_VERSION_10_6_AND_LATER;
+    CTFontOptions           options ) CT_AVAILABLE_STARTING( __MAC_10_6, __IPHONE_3_2);
 
 /*!
     @enum       UI Type constants
@@ -308,7 +309,7 @@ typedef uint32_t CTFontUIFontType;
 CTFontRef CTFontCreateUIFontForLanguage(
     CTFontUIFontType    uiType,
     CGFloat             size,
-    CFStringRef         language ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFStringRef         language ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateCopyWithAttributes
@@ -334,7 +335,7 @@ CTFontRef CTFontCreateCopyWithAttributes(
     CTFontRef                   font,
     CGFloat                     size,
     const CGAffineTransform     *matrix,
-    CTFontDescriptorRef         attributes ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontDescriptorRef         attributes ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateCopyWithSymbolicTraits
@@ -362,7 +363,7 @@ CTFontRef CTFontCreateCopyWithSymbolicTraits(
     CGFloat                     size,
     const CGAffineTransform     *matrix,
     CTFontSymbolicTraits        symTraitValue,
-    CTFontSymbolicTraits        symTraitMask ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontSymbolicTraits        symTraitMask ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateCopyWithFamily
@@ -386,7 +387,7 @@ CTFontRef CTFontCreateCopyWithFamily(
     CTFontRef                   font,
     CGFloat                     size,
     const CGAffineTransform     *matrix,
-    CFStringRef                 family ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFStringRef                 family ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Cascading
@@ -410,7 +411,7 @@ CTFontRef CTFontCreateCopyWithFamily(
 CTFontRef CTFontCreateForString(
     CTFontRef       currentFont,
     CFStringRef     string,
-    CFRange         range ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFRange         range ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Accessors
@@ -426,7 +427,7 @@ CTFontRef CTFontCreateForString(
     @result     This function returns a normalized font descriptor for a font. The font descriptor contains enough information to recreate this font at a later time.
 */
 CTFontDescriptorRef CTFontCopyFontDescriptor(
-    CTFontRef       font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontRef       font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyAttribute
@@ -442,7 +443,7 @@ CTFontDescriptorRef CTFontCopyFontDescriptor(
 */
 CFTypeRef CTFontCopyAttribute(
     CTFontRef       font,
-    CFStringRef     attribute ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFStringRef     attribute ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetSize
@@ -453,7 +454,7 @@ CFTypeRef CTFontCopyAttribute(
 
     @result     This function returns the point size of the given font reference. This is the point size provided when the font was created.
 */
-CGFloat CTFontGetSize( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetSize( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetMatrix
@@ -464,7 +465,7 @@ CGFloat CTFontGetSize( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATE
 
     @result     This function returns the transformation matrix for this given font reference. This is the matrix that was provided when the font was created.
 */
-CGAffineTransform CTFontGetMatrix( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGAffineTransform CTFontGetMatrix( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetSymbolicTraits
@@ -475,7 +476,7 @@ CGAffineTransform CTFontGetMatrix( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_1
 
     @result     This function returns the symbolic traits of the font. This is equivalent to the kCTFontSymbolicTrait of traits dictionary. See CTFontTraits.h for a definition of the font traits.
 */
-CTFontSymbolicTraits CTFontGetSymbolicTraits( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CTFontSymbolicTraits CTFontGetSymbolicTraits( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyTraits
@@ -486,7 +487,7 @@ CTFontSymbolicTraits CTFontGetSymbolicTraits( CTFontRef font ) AVAILABLE_MAC_OS_
 
     @result     This function returns a retained reference to the font traits dictionary. Individual traits can be accessed with the trait key constants. See CTFontTraits.h for a definition of the font traits.
 */
-CFDictionaryRef CTFontCopyTraits( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFDictionaryRef CTFontCopyTraits( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Names
@@ -501,7 +502,7 @@ CFDictionaryRef CTFontCopyTraits( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10
 
     @result     This function returns a retained reference to the PostScript name of the font.
 */
-CFStringRef CTFontCopyPostScriptName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFStringRef CTFontCopyPostScriptName( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyFamilyName
@@ -512,7 +513,7 @@ CFStringRef CTFontCopyPostScriptName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSIO
 
     @result     This function returns a retained reference to the family name of the font.
 */
-CFStringRef CTFontCopyFamilyName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFStringRef CTFontCopyFamilyName( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyFullName
@@ -523,7 +524,7 @@ CFStringRef CTFontCopyFamilyName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10
 
     @result     This function returns a retained reference to the full name of the font.
 */
-CFStringRef CTFontCopyFullName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFStringRef CTFontCopyFullName( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyDisplayName
@@ -534,7 +535,7 @@ CFStringRef CTFontCopyFullName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5
 
     @result     This function returns a retained reference to the localized display name of the font.
 */
-CFStringRef CTFontCopyDisplayName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFStringRef CTFontCopyDisplayName( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyName
@@ -550,7 +551,7 @@ CFStringRef CTFontCopyDisplayName( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_1
 */
 CFStringRef CTFontCopyName(
     CTFontRef       font,
-    CFStringRef     nameKey ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFStringRef     nameKey ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyLocalizedName
@@ -570,7 +571,7 @@ CFStringRef CTFontCopyName(
 CFStringRef CTFontCopyLocalizedName(
     CTFontRef       font,
     CFStringRef     nameKey,
-    CFStringRef     *language ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFStringRef     *language ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Encoding
@@ -585,7 +586,7 @@ CFStringRef CTFontCopyLocalizedName(
 
     @result     This function returns a retained reference to the font's character set. This character set covers the nominal referenced by the font's Unicode cmap table (or equivalent).
 */
-CFCharacterSetRef CTFontCopyCharacterSet( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFCharacterSetRef CTFontCopyCharacterSet( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetStringEncoding
@@ -596,7 +597,7 @@ CFCharacterSetRef CTFontCopyCharacterSet( CTFontRef font ) AVAILABLE_MAC_OS_X_VE
 
     @result     This function returns the best string encoding for the font.
 */
-CFStringEncoding CTFontGetStringEncoding( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFStringEncoding CTFontGetStringEncoding( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopySupportedLanguages
@@ -607,7 +608,7 @@ CFStringEncoding CTFontGetStringEncoding( CTFontRef font ) AVAILABLE_MAC_OS_X_VE
 
     @result     This function returns a retained reference to an array of languages supported by the font. The array contains language identifier strings as CFStringRefs. The format of the language identifier will conform to the BCP 47 standard.
 */
-CFArrayRef CTFontCopySupportedLanguages( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFArrayRef CTFontCopySupportedLanguages( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetGlyphsForCharacters
@@ -635,7 +636,7 @@ bool CTFontGetGlyphsForCharacters(
     CTFontRef       font,
     const UniChar   characters[],
     CGGlyph         glyphs[],
-    CFIndex         count ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFIndex         count ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Metrics
@@ -650,7 +651,7 @@ bool CTFontGetGlyphsForCharacters(
 
     @result     This function returns the font ascent metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetAscent( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetAscent( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetDescent
@@ -661,7 +662,7 @@ CGFloat CTFontGetAscent( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LA
 
     @result     This function returns the font descent metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetDescent( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetDescent( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetLeading
@@ -672,7 +673,7 @@ CGFloat CTFontGetDescent( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_L
 
     @result     This function returns the font leading metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetLeading( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetLeading( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetUnitsPerEm
@@ -683,7 +684,7 @@ CGFloat CTFontGetLeading( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_L
 
     @result     This function returns the units per em of the font.
 */
-unsigned CTFontGetUnitsPerEm( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+unsigned CTFontGetUnitsPerEm( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetGlyphCount
@@ -694,7 +695,7 @@ unsigned CTFontGetUnitsPerEm( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_A
 
     @result     This function returns the number of glyphs in the font.
 */
-CFIndex CTFontGetGlyphCount( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFIndex CTFontGetGlyphCount( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetBoundingBox
@@ -705,7 +706,7 @@ CFIndex CTFontGetGlyphCount( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AN
 
     @result     This will return the design bounding box of the font, which is the rectangle defined by xMin, yMin, xMax, and yMax values for the font.
 */
-CGRect CTFontGetBoundingBox( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGRect CTFontGetBoundingBox( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetUnderlinePosition
@@ -716,7 +717,7 @@ CGRect CTFontGetBoundingBox( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AN
 
     @result     This function returns the font underline position metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetUnderlinePosition( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetUnderlinePosition( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetUnderlineThickness
@@ -727,7 +728,7 @@ CGFloat CTFontGetUnderlinePosition( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_
 
     @result     This function returns the font underline thickness metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetUnderlineThickness( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetUnderlineThickness( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetSlantAngle
@@ -738,7 +739,7 @@ CGFloat CTFontGetUnderlineThickness( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION
 
     @result     This function returns the transformed slant angle of the font. This is equivalent to the italic or caret angle with any skew from the transformation matrix applied.
 */
-CGFloat CTFontGetSlantAngle( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetSlantAngle( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetCapHeight
@@ -749,7 +750,7 @@ CGFloat CTFontGetSlantAngle( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AN
 
     @result     This function returns the font cap height metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetCapHeight( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetCapHeight( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetXHeight
@@ -760,7 +761,7 @@ CGFloat CTFontGetCapHeight( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND
 
     @result     This function returns the font X height metric scaled based on the point size and matrix of the font reference.
 */
-CGFloat CTFontGetXHeight( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CGFloat CTFontGetXHeight( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Glyphs
@@ -780,7 +781,7 @@ CGFloat CTFontGetXHeight( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_L
 */
 CGGlyph CTFontGetGlyphWithName(
     CTFontRef           font,
-    CFStringRef         glyphName ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFStringRef         glyphName ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -809,7 +810,7 @@ CGRect CTFontGetBoundingRectsForGlyphs(
     CTFontOrientation   orientation,
     const CGGlyph       glyphs[],
     CGRect              boundingRects[],
-    CFIndex             count ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFIndex             count ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetAdvancesForGlyphs
@@ -837,7 +838,7 @@ double CTFontGetAdvancesForGlyphs(
     CTFontOrientation   orientation,
     const CGGlyph       glyphs[],
     CGSize              advances[],
-    CFIndex             count ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFIndex             count ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontGetVerticalTranslationsForGlyphs
@@ -859,7 +860,7 @@ void CTFontGetVerticalTranslationsForGlyphs(
     CTFontRef       font,
     const CGGlyph   glyphs[],
     CGSize          translations[],
-    CFIndex         count ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFIndex         count ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreatePathForGlyph
@@ -881,10 +882,10 @@ void CTFontGetVerticalTranslationsForGlyphs(
 CGPathRef CTFontCreatePathForGlyph(
     CTFontRef                   font,
     CGGlyph                     glyph,
-    const CGAffineTransform *   transform ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    const CGAffineTransform *   transform ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
-    @group Font Variations
+    @group Font Variations  (this functionality is not supported on iPhone OS)
 *///--------------------------------------------------------------------------
 
 /*!
@@ -892,31 +893,31 @@ CGPathRef CTFontCreatePathForGlyph(
     @abstract   Key to get the variation axis identifier.
     @discussion This key is used with a variation axis dictionary to get the axis identifier value as a CFNumberRef.
 */
-extern const CFStringRef kCTFontVariationAxisIdentifierKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVariationAxisIdentifierKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontVariationAxisMinimumValueKey
     @abstract   Key to get the variation axis minimum value.
     @discussion This key is used with a variation axis dictionary to get the minimum axis value as a CFNumberRef.
 */
-extern const CFStringRef kCTFontVariationAxisMinimumValueKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVariationAxisMinimumValueKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontVariationAxisMaximumValueKey
     @abstract   Key to get the variation axis maximum value.
     @discussion This key is used with a variation axis dictionary to get the maximum axis value as a CFNumberRef.
 */
-extern const CFStringRef kCTFontVariationAxisMaximumValueKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVariationAxisMaximumValueKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontVariationAxisDefaultValueKey
     @abstract   Key to get the variation axis default value.
     @discussion This key is used with a variation axis dictionary to get the default axis value as a CFNumberRef.
 */
-extern const CFStringRef kCTFontVariationAxisDefaultValueKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVariationAxisDefaultValueKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontVariationAxisNameKey
     @abstract   Key to get the variation axis name string.
     @discussion This key is used with a variation axis dictionary to get the localized variation axis name.
 */
-extern const CFStringRef kCTFontVariationAxisNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontVariationAxisNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyVariationAxes
@@ -927,7 +928,7 @@ extern const CFStringRef kCTFontVariationAxisNameKey AVAILABLE_MAC_OS_X_VERSION_
 
     @result     This function returns an array of variation axis dictionaries. Each variation axis dictionary contains the five variation axis keys above.
 */
-CFArrayRef CTFontCopyVariationAxes( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFArrayRef CTFontCopyVariationAxes( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyVariation
@@ -938,10 +939,10 @@ CFArrayRef CTFontCopyVariationAxes( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_
 
     @result     This function returns the current variation instance as a dictionary. The keys for each variation correspond to the variation identifier obtained via kCTVariationAxisIdentifierKey which represents the axis' four character code as a CFNumber.
 */
-CFDictionaryRef CTFontCopyVariation( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFDictionaryRef CTFontCopyVariation( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
-    @group Font Features
+    @group Font Features     (only AAT features are supported on iPhone OS)
 *///--------------------------------------------------------------------------
 
 /*!
@@ -949,49 +950,49 @@ CFDictionaryRef CTFontCopyVariation( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION
     @abstract   Key to get the font feature type value.
     @discussion This key can be used with a font feature dictionary to get the type identifier as a CFNumberRef.
 */
-extern const CFStringRef kCTFontFeatureTypeIdentifierKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureTypeIdentifierKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureTypeNameKey
     @abstract   Key to get the font feature name.
     @discussion This key can be used with a font feature dictionary to get the localized type name string as a CFString.
 */
-extern const CFStringRef kCTFontFeatureTypeNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureTypeNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureTypeExclusiveKey
     @abstract   Key to get the font feature exclusive setting.
     @discussion This key can be used with a font feature dictionary to get the the exclusive setting of the feature as a CFBoolean. The value associated with this key indicates whether the feature selectors associated with this type should be mutually exclusive.
 */
-extern const CFStringRef kCTFontFeatureTypeExclusiveKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureTypeExclusiveKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureTypeSelectorsKey
     @abstract   Key to get the font feature selectors.
     @discussion This key can be used with a font feature dictionary to get the array of font feature selectors as a CFArrayRef. This is an array of selector dictionaries that contain the values for the following selector keys.
 */
-extern const CFStringRef kCTFontFeatureTypeSelectorsKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureTypeSelectorsKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureSelectorIdentifierKey
     @abstract   Key to get the font feature selector identifier.
     @discussion This key can be used with a selector dictionary corresponding to a feature type to obtain the selector identifier value as a CFNumberRef.
 */
-extern const CFStringRef kCTFontFeatureSelectorIdentifierKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureSelectorIdentifierKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureSelectorNameKey
     @abstract   Key to get the font feature selector name.
     @discussion This key is used with a selector dictionary to get the localized name string for the selector as a CFStringRef.
 */
-extern const CFStringRef kCTFontFeatureSelectorNameKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureSelectorNameKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureSelectorDefaultKey
     @abstract   Key to get the font feature selector default setting value.
     @discussion This key is used with a selector dictionary to get the default indicator for the selector. This value is a CFBooleanRef which if present and true indicates that this selector is the default setting for the current feature type.
 */
-extern const CFStringRef kCTFontFeatureSelectorDefaultKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureSelectorDefaultKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 /*!
     @defined    kCTFontFeatureSelectorSettingKey
     @abstract   Key to get or specify the current feature setting.
     @discussion This key is used with a selector dictionary to get or specify the current setting for the selector. This value is a CFBooleanRef to indicate whether this selector is on or off. If this key is not present, the default setting is used.
 */
-extern const CFStringRef kCTFontFeatureSelectorSettingKey AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontFeatureSelectorSettingKey CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyFeatures
@@ -1002,7 +1003,7 @@ extern const CFStringRef kCTFontFeatureSelectorSettingKey AVAILABLE_MAC_OS_X_VER
 
     @result     This function returns an array of font feature dictionaries for the font reference.
 */
-CFArrayRef CTFontCopyFeatures( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFArrayRef CTFontCopyFeatures( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyFeatureSettings
@@ -1015,7 +1016,7 @@ CFArrayRef CTFontCopyFeatures( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_
 
     @result     This function returns a normalized array of font feature setting dictionaries. The array will only contain the non-default settings that should be applied to the font, or NULL if the default settings should be used.
 */
-CFArrayRef CTFontCopyFeatureSettings( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFArrayRef CTFontCopyFeatureSettings( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Font Conversion
@@ -1035,7 +1036,7 @@ CFArrayRef CTFontCopyFeatureSettings( CTFontRef font ) AVAILABLE_MAC_OS_X_VERSIO
 */
 CGFontRef CTFontCopyGraphicsFont(
     CTFontRef           font,
-    CTFontDescriptorRef *attributes ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontDescriptorRef *attributes ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateWithGraphicsFont
@@ -1059,7 +1060,7 @@ CTFontRef CTFontCreateWithGraphicsFont(
     CGFontRef                   graphicsFont,
     CGFloat                     size,
     const CGAffineTransform     *matrix,
-    CTFontDescriptorRef         attributes ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontDescriptorRef         attributes ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 #if !TARGET_OS_IPHONE
 /*!
@@ -1077,7 +1078,7 @@ CTFontRef CTFontCreateWithGraphicsFont(
 
 ATSFontRef CTFontGetPlatformFont(
     CTFontRef               font,
-    CTFontDescriptorRef     *attributes ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontDescriptorRef     *attributes ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateWithPlatformFont
@@ -1101,7 +1102,7 @@ CTFontRef CTFontCreateWithPlatformFont(
     ATSFontRef                  platformFont,
     CGFloat                     size,
     const CGAffineTransform     *matrix,
-    CTFontDescriptorRef         attributes ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontDescriptorRef         attributes ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCreateWithQuickdrawInstance
@@ -1127,7 +1128,7 @@ CTFontRef CTFontCreateWithQuickdrawInstance(
     ConstStr255Param    name,
     int16_t             identifier,
     uint8_t             style,
-    CGFloat             size ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CGFloat             size ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 #endif // !TARGET_OS_IPHONE
 /*! --------------------------------------------------------------------------
@@ -1211,7 +1212,7 @@ typedef uint32_t CTFontTableOptions;
 */
 CFArrayRef CTFontCopyAvailableTables(
     CTFontRef           font,
-    CTFontTableOptions  options ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontTableOptions  options ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCopyTable
@@ -1230,7 +1231,7 @@ CFArrayRef CTFontCopyAvailableTables(
 CFDataRef CTFontCopyTable(
     CTFontRef           font,
     CTFontTableTag      table,
-    CTFontTableOptions  options ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CTFontTableOptions  options ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 #if defined(__cplusplus)
 }

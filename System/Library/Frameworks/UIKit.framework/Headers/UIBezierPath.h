@@ -51,6 +51,7 @@ UIKIT_EXTERN_CLASS @interface UIBezierPath : NSObject<NSCopying, NSCoding> {
 - (void)addLineToPoint:(CGPoint)point;
 - (void)addCurveToPoint:(CGPoint)endPoint controlPoint1:(CGPoint)controlPoint1 controlPoint2:(CGPoint)controlPoint2;
 - (void)addQuadCurveToPoint:(CGPoint)endPoint controlPoint:(CGPoint)controlPoint;
+- (void)addArcWithCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(BOOL)clockwise __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 - (void)closePath;
 
 - (void)removeAllPoints;

@@ -35,12 +35,13 @@
         
         id                      _insertionValue;
         ABPropertyID            _insertionProperty;
-
+    
         struct {
             unsigned            allowsEditing:1;
             unsigned            allowsCancel:1;
             unsigned            allowsActions:1;
             unsigned            allowsSound:1;
+            unsigned            hidesSearchableStores:1;
         } _flags;
 }
 

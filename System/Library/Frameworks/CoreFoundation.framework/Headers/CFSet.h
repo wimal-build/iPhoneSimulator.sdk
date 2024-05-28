@@ -1,5 +1,5 @@
 /*	CFSet.h
-	Copyright (c) 1998-2007, Apple Inc. All rights reserved.
+	Copyright (c) 1998-2010, Apple Inc. All rights reserved.
 */
 /*!
         @header CFSet
@@ -296,7 +296,7 @@ CFIndex CFSetGetCount(CFSetRef theSet);
 	@function CFSetGetCountOfValue
 	Counts the number of times the given value occurs in the set. Since 
         sets by definition contain only one instance of a value, this function
-        is synomous to SFSetContainsValue.
+        is synonymous to CFSetContainsValue.
 	@param theSet The set to be searched. If this parameter is not a
 		valid CFSet, the behavior is undefined.
 	@param value The value for which to find matches in the set. The

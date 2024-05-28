@@ -13,12 +13,13 @@
 
 typedef CGFloat UIWindowLevel;
 
-@class UIEvent, UIScreen, NSUndoManager;
+@class UIEvent, UIScreen, NSUndoManager, UIViewController;
 
 UIKIT_EXTERN_CLASS @interface UIWindow : UIView {
   @package
     id                       _delegate;
     CGFloat                  _windowLevel;
+    CGFloat                  _windowSublevel;
     id                       _layerContext;
     UIView                  *_lastMouseDownView;
     UIView                  *_lastMouseEnteredView;
@@ -30,8 +31,15 @@ UIKIT_EXTERN_CLASS @interface UIWindow : UIView {
     NSUndoManager           *_undoManager;
     UIScreen                *_screen;
     CALayer                 *_transformLayer;
-    NSMutableArray          *_rootViewControllers;
+    NSMutableArray          *_rotationViewControllers;
+    UIViewController        *_rootViewController;
+	UIColor					*_savedBackgroundColor;
     struct {
+	unsigned int delegateWillRotate:1;
+        unsigned int delegateDidRotate:1;
+        unsigned int delegateWillAnimateFirstHalf:1;
+        unsigned int delegateDidAnimationFirstHalf:1;
+        unsigned int delegateWillAnimateSecondHalf:1;
         unsigned int autorotatesToPortrait:1;
         unsigned int autorotatesToPortraitUpsideDown:1;
         unsigned int autorotatesToLandscapeLeft:1;
@@ -45,13 +53,17 @@ UIKIT_EXTERN_CLASS @interface UIWindow : UIView {
         unsigned int autorotates:1;
         unsigned int isRotating:1;
         unsigned int isUsingOnePartRotationAnimation:1;
+        unsigned int isHandlingContentRotation:1;
         unsigned int disableAutorotationCount:4;
         unsigned int needsAutorotationWhenReenabled:1;
         unsigned int forceTwoPartRotationAnimation:1;
         unsigned int orderKeyboardInAfterRotating:1;
         unsigned int roundedCorners:4;
         unsigned int resizesToFullScreen:1;
+        unsigned int keepContextInBackground:1;
         unsigned int ignoreSetHidden:1;
+        unsigned int forceVisibleOnInit:1;
+        unsigned int settingFirstResponder:1;
     } _windowFlags;
     
     id _windowController;
@@ -66,6 +78,8 @@ UIKIT_EXTERN_CLASS @interface UIWindow : UIView {
 
 - (void)makeKeyWindow;
 - (void)makeKeyAndVisible;                             // convenience. most apps call this to show the main window and also make it key. otherwise use view hidden property
+
+@property(nonatomic,retain) UIViewController *rootViewController __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);  // default is nil
 
 - (void)sendEvent:(UIEvent *)event;                    // called by UIApplication to dispatch events to views inside the window
 

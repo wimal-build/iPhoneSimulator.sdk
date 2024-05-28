@@ -15,6 +15,7 @@
 
 #include <AddressBook/ABAddressBook.h>
 #include <AddressBook/ABRecord.h>
+#include <AddressBook/ABSource.h>
 
 #include <Availability.h>
 
@@ -22,7 +23,15 @@
 extern "C" {
 #endif
 
+// ABPersonCreate creates a new person in the default source
 extern ABRecordRef ABPersonCreate(void);
+extern ABRecordRef ABPersonCreateInSource(ABRecordRef source) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+extern ABRecordRef ABPersonCopySource(ABRecordRef person) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+// Returns an array of all the linked people, including the person passed in. If the person is not linked, returns an array with the person passed in.
+extern CFArrayRef ABPersonCopyArrayOfAllLinkedPeople(ABRecordRef person) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
 extern ABPropertyType ABPersonGetTypeOfProperty(ABPropertyID property);
 extern CFStringRef ABPersonCopyLocalizedPropertyName(ABPropertyID property);
 
@@ -54,7 +63,11 @@ extern CFComparisonResult ABPersonComparePeopleByName(ABRecordRef person1, ABRec
 // Finding people
 extern CFIndex ABAddressBookGetPersonCount(ABAddressBookRef addressBook);
 extern ABRecordRef ABAddressBookGetPersonWithRecordID(ABAddressBookRef addressBook, ABRecordID recordID);
-extern CFArrayRef ABAddressBookCopyArrayOfAllPeople(ABAddressBookRef addressBook);	
+
+extern CFArrayRef ABAddressBookCopyArrayOfAllPeople(ABAddressBookRef addressBook);
+extern CFArrayRef ABAddressBookCopyArrayOfAllPeopleInSource(ABAddressBookRef addressBook, ABRecordRef source) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+extern CFArrayRef ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering(ABAddressBookRef addressBook, ABRecordRef source, ABPersonSortOrdering sortOrdering) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
 extern CFArrayRef ABAddressBookCopyPeopleWithName(ABAddressBookRef addressBook, CFStringRef name);
 
 // Generic labels

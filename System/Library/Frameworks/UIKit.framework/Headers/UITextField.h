@@ -121,7 +121,7 @@ UIKIT_EXTERN_CLASS @interface UITextField : UIControl <UITextInputTraits, NSCodi
 @property(nonatomic,retain) UIColor                *textColor;            // default is nil. use opaque black
 @property(nonatomic,retain) UIFont                 *font;                 // default is nil. use system font 12 pt
 @property(nonatomic)        UITextAlignment         textAlignment;        // default is UITextAlignmentLeft
-@property(nonatomic)        UITextBorderStyle       borderStyle;          // default is UITextBorderStyleNone. ignored if custom background image set.
+@property(nonatomic)        UITextBorderStyle       borderStyle;          // default is UITextBorderStyleNone. If set to UITextBorderStyleRoundedRect, custom background images are ignored.
 @property(nonatomic,copy)   NSString               *placeholder;          // default is nil. string is drawn 70% gray
 @property(nonatomic)        BOOL                    clearsOnBeginEditing; // default is NO which moves cursor to location clicked. if YES, all text cleared
 @property(nonatomic)        BOOL                    adjustsFontSizeToFitWidth; // default is NO. if YES, text will shrink to minFontSize along baseline

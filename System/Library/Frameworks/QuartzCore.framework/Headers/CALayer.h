@@ -22,7 +22,7 @@ enum CAEdgeAntialiasingMask
 
 /** The base layer class. **/
 
-@interface CALayer : NSObject <CAMediaTiming>
+@interface CALayer : NSObject <NSCoding, CAMediaTiming>
 {
 @private
   struct _CALayerIvars {
@@ -52,7 +52,7 @@ enum CAEdgeAntialiasingMask
 /* This initializer is used by CoreAnimation to create shadow copies of
  * layers, e.g. for use as presentation layers. Subclasses can override
  * this method to copy their instance variables into the presentation
- * layer (subclasses should call the superclass afterwards.). Calling this
+ * layer (subclasses should call the superclass afterwards). Calling this
  * method in any other situation will result in undefined behavior. */
 
 - (id)initWithLayer:(id)layer;
@@ -118,6 +118,13 @@ enum CAEdgeAntialiasingMask
 
 + (BOOL)needsDisplayForKey:(NSString *)key;
 
+/* Called by the object's implementation of -encodeWithCoder:, returns
+ * false if the named property should not be archived. The base
+ * implementation returns true. Subclasses should call super for
+ * unknown properties. */
+
+- (BOOL)shouldArchiveValueForKey:(NSString *)key;
+
 /** Geometry and layer hierarchy properties. **/
 
 /* The bounds of the layer. Defaults to the null rectangle. Animatable. */
@@ -178,7 +185,7 @@ enum CAEdgeAntialiasingMask
  * flipped vertically. Defaults to false. Note that even when geometry
  * is flipped, image orientation remains the same (i.e. a CGImageRef
  * stored in the `contents' property will display the same with both
- * flipped=false and flipped=true, assuming no transform on the layer.) */
+ * flipped=false and flipped=true, assuming no transform on the layer). */
 
 @property(getter=isGeometryFlipped) BOOL geometryFlipped;
 
@@ -186,11 +193,11 @@ enum CAEdgeAntialiasingMask
  * will be implicitly flipped when rendered in relation to the local
  * coordinate space (e.g. if there are an odd number of layers with
  * flippedGeometry=YES from the receiver up to and including the
- * implicit container of the root layer.) Subclasses should not attempt
+ * implicit container of the root layer). Subclasses should not attempt
  * to redefine this method. When this method returns true the
  * CGContextRef object passed to -drawInContext: by the default
  * -display method will have been y- flipped (and rectangles passed to
- * -setNeedsDisplayInRect: will be similarly flipped.) */
+ * -setNeedsDisplayInRect: will be similarly flipped). */
 
 - (BOOL)contentsAreFlipped;
 
@@ -277,7 +284,7 @@ enum CAEdgeAntialiasingMask
  * Siblings are searched in top-to-bottom order. 'p' is defined to be
  * in the coordinate space of the receiver's nearest ancestor that
  * isn't a CATransformLayer (transform layers don't have a 2D
- * coordinate space in which the point could be specified.) */
+ * coordinate space in which the point could be specified). */
 
 - (CALayer *)hitTest:(CGPoint)p;
 
@@ -310,6 +317,16 @@ enum CAEdgeAntialiasingMask
  * `resize'. */
 
 @property(copy) NSString *contentsGravity;
+
+/* Defines the scale factor applied to the contents of the layer. If
+ * the physical size of the contents is '(w, h)' then the logical size
+ * (i.e. for contentsGravity calculations) is defined as '(w /
+ * contentsScale, h / contentsScale)'. Applies to both images provided
+ * explicitly and content provided via -drawInContext: (i.e. if
+ * contentsScale is two -drawInContext: will draw into a buffer twice
+ * as large as the layer bounds). Defaults to one. Animatable. */
+
+@property CGFloat contentsScale;
 
 /* A rectangle in normalized image coordinates defining the scaled
  * center part of the `contents' image.
@@ -552,7 +569,7 @@ enum CAEdgeAntialiasingMask
 /** Action methods. **/
 
 /* An "action" is an object that responds to an "event" via the
- * CAAction protocol (see below.) Events are named using standard
+ * CAAction protocol (see below). Events are named using standard
  * dot-separated key paths. Each layer defines a mapping from event key
  * paths to action objects. Events are posted by looking up the action
  * object associated with the key path and sending it the method
@@ -567,7 +584,7 @@ enum CAEdgeAntialiasingMask
  * the same name as each property is posted whenever the value of the
  * property is modified. A suitable CAAnimation object is associated by
  * default with each implicit event (CAAnimation implements the action
- * protocol.)
+ * protocol).
  *
  * The layer class also defines the following events that are not
  * linked directly to properties:
@@ -692,7 +709,7 @@ enum CAEdgeAntialiasingMask
 
 /* If defined, called by the default implementation of the -display
  * method, in which case it should implement the entire display
- * process (typically by setting the `contents' property.) */
+ * process (typically by setting the `contents' property). */
 
 - (void)displayLayer:(CALayer *)layer;
 
@@ -710,8 +727,8 @@ enum CAEdgeAntialiasingMask
  * -actionForKey: method. Should return an object implementating the
  * CAAction protocol. May return 'nil' if the delegate doesn't specify
  * a behavior for the current event. Returning the null object (i.e.
- * '[NSNull null]') explicitly forces no further search. (i.e. the
- * +defaultActionForKey: method will not be called) */
+ * '[NSNull null]') explicitly forces no further search. (I.e. the
+ * +defaultActionForKey: method will not be called.) */
 
 - (id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)event;
 

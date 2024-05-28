@@ -9,7 +9,8 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIEvent.h>
 
-UIKIT_EXTERN_CLASS @interface UIResponder : NSObject {    
+UIKIT_EXTERN_CLASS @interface UIResponder : NSObject {
+  @private
 }
 
 - (UIResponder*)nextResponder;
@@ -35,6 +36,8 @@ UIKIT_EXTERN_CLASS @interface UIResponder : NSObject {
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 @property(nonatomic,readonly) NSUndoManager *undoManager __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);

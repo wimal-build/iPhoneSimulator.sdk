@@ -17,6 +17,7 @@
 #ifndef __CTFONTCOLLECTION__
 #define __CTFONTCOLLECTION__
 
+#include <CoreText/CTDefines.h>
 #include <CoreText/CTFontDescriptor.h>
 
 #if defined(__cplusplus)
@@ -29,17 +30,24 @@ extern "C" {
 
 /*!
     @typedef    CTFontCollectionRef
-    @abstract   The Core Text Font Collection reference.
+    @abstract   The Core Text font collection reference.
     @discussion An opaque reference to an immutable font collection.
 */
 typedef const struct __CTFontCollection * CTFontCollectionRef;
 
 /*!
+    @typedef    CTMutableFontCollectionRef
+    @abstract   The Core Text mutable font collection reference.
+    @discussion An opaque reference to a mutable font collection.
+*/
+typedef struct __CTFontCollection * CTMutableFontCollectionRef;
+
+/*!
     @function   CTFontCollectionGetTypeID
     @abstract   Returns the type identifier for Core Text font collection references.
-    @result     The identifier for the opaque type CTFontCollectionRef.
+    @result     The identifier for the opaque types CTFontCollectionRef or CTMutableFontCollectionRef.
 */
-CFTypeID CTFontCollectionGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFTypeID CTFontCollectionGetTypeID( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @typedef    CTFontCollectionSortDescriptorsCallback
@@ -57,7 +65,7 @@ typedef CFComparisonResult (*CTFontCollectionSortDescriptorsCallback)(CTFontDesc
     @abstract   Option key to specify filtering of duplicates.
     @discussion Specify this option key in the options dictionary with a non- zero value to enable automatic filtering of duplicate font descriptors.
 */
-extern const CFStringRef kCTFontCollectionRemoveDuplicatesOption    AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+extern const CFStringRef kCTFontCollectionRemoveDuplicatesOption    CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Collection Creation
@@ -72,7 +80,7 @@ extern const CFStringRef kCTFontCollectionRemoveDuplicatesOption    AVAILABLE_MA
 
     @result     This function creates a new collection containing all fonts available to the current application.
 */
-CTFontCollectionRef CTFontCollectionCreateFromAvailableFonts( CFDictionaryRef options ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CTFontCollectionRef CTFontCollectionCreateFromAvailableFonts( CFDictionaryRef options ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCollectionCreateWithFontDescriptors
@@ -88,7 +96,7 @@ CTFontCollectionRef CTFontCollectionCreateFromAvailableFonts( CFDictionaryRef op
 */
 CTFontCollectionRef CTFontCollectionCreateWithFontDescriptors(
     CFArrayRef          queryDescriptors,
-    CFDictionaryRef     options ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFDictionaryRef     options ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCollectionCreateCopyWithFontDescriptors
@@ -108,7 +116,7 @@ CTFontCollectionRef CTFontCollectionCreateWithFontDescriptors(
 CTFontCollectionRef CTFontCollectionCreateCopyWithFontDescriptors(
     CTFontCollectionRef original,
     CFArrayRef          queryDescriptors,
-    CFDictionaryRef     options ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+    CFDictionaryRef     options ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
     @group Retrieving Matching Descriptors
@@ -123,7 +131,7 @@ CTFontCollectionRef CTFontCollectionCreateCopyWithFontDescriptors(
 
     @result     This function returns a retained reference to an array of normalized font descriptors   matching the collection definition.
 */
-CFArrayRef CTFontCollectionCreateMatchingFontDescriptors( CTFontCollectionRef collection ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFArrayRef CTFontCollectionCreateMatchingFontDescriptors( CTFontCollectionRef collection ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*!
     @function   CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback
@@ -143,8 +151,7 @@ CFArrayRef CTFontCollectionCreateMatchingFontDescriptors( CTFontCollectionRef co
 CFArrayRef CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback(
     CTFontCollectionRef                     collection,
     CTFontCollectionSortDescriptorsCallback sortCallback,
-    void                                    *refCon ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
-
+    void                                    *refCon ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 #if defined(__cplusplus)
 }

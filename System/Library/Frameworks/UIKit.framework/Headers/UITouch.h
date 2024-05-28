@@ -19,9 +19,17 @@ typedef enum {
     UITouchPhaseCancelled,         // whenever a touch doesn't end but we need to stop tracking (e.g. putting device to face)
 } UITouchPhase;
 
+/* Instance variables of any UIKit class should be considered private. For binary compatibility reasons, we cannot remove the UITouch instance variable symbols from UIKit at this time. However, applications which use iPhone OS 4.0 and later must not access UITouch instance variables.
+ */
+#if defined (UITOUCH_INSTANCE_VARIABLE_GUARD)
+#define UITOUCH_IVARS_PRIVATE
+#else
+#define UITOUCH_IVARS_PRIVATE @package
+#endif
+
 UIKIT_EXTERN_CLASS @interface UITouch : NSObject
 {
-  // Note: all instance variables will become private in the future. Do not access directly.
+UITOUCH_IVARS_PRIVATE
     NSTimeInterval  _timestamp;
     UITouchPhase    _phase;
     UITouchPhase    _savedPhase;

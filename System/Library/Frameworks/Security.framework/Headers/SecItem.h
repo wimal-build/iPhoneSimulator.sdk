@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006-2009 Apple Inc. All Rights Reserved.
+ * Copyright (c) 2006-2010 Apple Inc. All Rights Reserved.
  * 
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -81,6 +81,7 @@ extern CFTypeRef kSecClassIdentity
         below lists the currently defined attributes for each item class:
 
     kSecClassGenericPassword item attributes:
+        kSecAttrAccessible
         kSecAttrAccessGroup
         kSecAttrCreationDate
         kSecAttrModificationDate
@@ -96,6 +97,7 @@ extern CFTypeRef kSecClassIdentity
         kSecAttrGeneric
 
     kSecClassInternetPassword item attributes:
+        kSecAttrAccessible
         kSecAttrAccessGroup
         kSecAttrCreationDate
         kSecAttrModificationDate
@@ -115,6 +117,7 @@ extern CFTypeRef kSecClassIdentity
         kSecAttrPath
 
     kSecClassCertificate item attributes:
+        kSecAttrAccessible
         kSecAttrAccessGroup
         kSecAttrCertificateType
         kSecAttrCertificateEncoding
@@ -126,6 +129,7 @@ extern CFTypeRef kSecClassIdentity
         kSecAttrPublicKeyHash
 
     kSecClassKey item attributes:
+        kSecAttrAccessible
         kSecAttrAccessGroup
         kSecAttrKeyClass
         kSecAttrLabel
@@ -148,7 +152,12 @@ extern CFTypeRef kSecClassIdentity
         certificate, this class shares attributes of both kSecClassKey and
         kSecClassCertificate.
 
-    @constant kSecAttrAccessGroup Specifies a dictionary key whole value is
+    @constant kSecAttrAccessible Specifies a dictionary key whose value
+        indicates when your application needs access to an items data.  You
+        should choose the most restrictive option that meets your applications
+        needs to allow the system to protect that item in the best way
+        possible.
+    @constant kSecAttrAccessGroup Specifies a dictionary key whose value is
         a CFStringRef indicating which access group an item is in.  The access
         groups that a particular application has access to are determined by
         two entitlements for that application.  The application-identifier
@@ -321,6 +330,8 @@ extern CFTypeRef kSecClassIdentity
         CFBooleanRef indicating whether the key in question can be used to
         unwrap another key.
 */
+extern CFTypeRef kSecAttrAccessible
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 extern CFTypeRef kSecAttrAccessGroup
     __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_0);
 extern CFTypeRef kSecAttrCreationDate
@@ -401,6 +412,58 @@ extern CFTypeRef kSecAttrCanWrap
     __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
 extern CFTypeRef kSecAttrCanUnwrap
     __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
+
+/*!
+    @enum kSecAttrAccessible Value Constants
+    @discussion Predefined item attribute constants used to get or set values
+        in a dictionary. The kSecAttrAccessible constant is the key and its
+        value is one of the constants defined here.
+        When ask SecItemCopyMatching to return the items data the error
+        errSecInteractionNotAllowed will be returned if the items data is not
+        available until a device unlock occurs.
+    @constant kSecAttrAccessibleWhenUnlocked item's data can only be accessed
+        while the device is unlocked. This is recommended for items that only
+        need be accesible while the application is in the foreground.  Items
+        with this attribute will migrate to a new device when using encrypted
+        backups.
+    @constant kSecAttrAccessibleAfterFirstUnlock item's data can only be
+        accessed once the device has been unlocked after a restart.  This is
+        recommended for items that need to be accesible by background
+        applications. Items with this attribute will migrate to a new device
+        when using encrypted backups.
+    @constant kSecAttrAccessibleAlways item's data can always be accessed
+        regardless of the lock state of the device.  This is not recommended
+        for anything except system use. Items with this attribute will migrate
+        to a new device when using encrypted backups.
+    @constant kSecAttrAccessibleWhenUnlockedThisDeviceOnly item's data can only
+        be accessed while the device is unlocked. This is recommended for items
+        that only need be accesible while the application is in the foreground.
+        Items with this attribute will never migrate to a new device, so after
+        a backup is restored to a new device these items will be missing.
+    @constant kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly item's data can
+        only be accessed once the device has been unlocked after a restart.
+        This is recommended for items that need to be accessible by background
+        applications. Items with this attribute will never migrate to a new
+        device, so after a backup is restored to a new device these items will
+        be missing.
+    @constant kSecAttrAccessibleAlwaysThisDeviceOnly item's data can
+        always be accessed regardless of the lock state of the device.  This
+        is not recommended for anything except system use. Items with this
+        attribute will never migrate to a new device, so after a backup is
+        restored to a new device these items will be missing.
+*/
+extern CFTypeRef kSecAttrAccessibleWhenUnlocked
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessibleAfterFirstUnlock
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessibleAlways
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessibleWhenUnlockedThisDeviceOnly
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessibleAlwaysThisDeviceOnly
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 
 /*!
     @enum kSecAttrProtocol Value Constants
@@ -555,9 +618,12 @@ extern CFTypeRef kSecAttrKeyClassSymmetric
 		in a dictionary. The kSecAttrKeyType constant is the key
 		and its value is one of the constants defined here.
     @constant kSecAttrKeyTypeRSA.
+    @constant kSecAttrKeyTypeEC.
 */
 extern CFTypeRef kSecAttrKeyTypeRSA
     __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
+extern CFTypeRef kSecAttrKeyTypeEC
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 
 /*!
     @enum Search Constants

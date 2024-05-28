@@ -14,11 +14,27 @@
 typedef enum {
     UIEventTypeTouches,
     UIEventTypeMotion,
+    UIEventTypeRemoteControl,
 } UIEventType;
 
 typedef enum {
-    UIEventSubtypeNone        = 0,  // available in iPhone 3.0
-    UIEventSubtypeMotionShake = 1,  // for UIEventTypeMotion. 		// available in iPhone 3.0
+    // available in iPhone OS 3.0
+    UIEventSubtypeNone                              = 0,
+    
+    // for UIEventTypeMotion, available in iPhone OS 3.0
+    UIEventSubtypeMotionShake                       = 1,
+    
+    // for UIEventTypeRemoteControl, available in iPhone OS 4.0
+    UIEventSubtypeRemoteControlPlay                 = 100,
+    UIEventSubtypeRemoteControlPause                = 101,
+    UIEventSubtypeRemoteControlStop                 = 102,
+    UIEventSubtypeRemoteControlTogglePlayPause      = 103,
+    UIEventSubtypeRemoteControlNextTrack            = 104,
+    UIEventSubtypeRemoteControlPreviousTrack        = 105,
+    UIEventSubtypeRemoteControlBeginSeekingBackward = 106,
+    UIEventSubtypeRemoteControlEndSeekingBackward   = 107,
+    UIEventSubtypeRemoteControlBeginSeekingForward  = 108,
+    UIEventSubtypeRemoteControlEndSeekingForward    = 109,
 } UIEventSubtype;
 
 UIKIT_EXTERN_CLASS @interface UIEvent : NSObject

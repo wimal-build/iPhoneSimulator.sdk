@@ -17,6 +17,7 @@
 #ifndef __CTLINE__
 #define __CTLINE__
 
+#include <CoreText/CTDefines.h>
 #include <CoreFoundation/CFArray.h>
 #include <CoreFoundation/CFAttributedString.h>
 #include <CoreGraphics/CGContext.h>
@@ -66,7 +67,7 @@ typedef uint32_t CTLineTruncationType;
 	@abstract	Returns the CFType of the line object
 */
 
-CFTypeID CTLineGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+CFTypeID CTLineGetTypeID( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -92,7 +93,7 @@ CFTypeID CTLineGetTypeID( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
 */
 
 CTLineRef CTLineCreateWithAttributedString(
-	CFAttributedStringRef string ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CFAttributedStringRef string ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -128,7 +129,7 @@ CTLineRef CTLineCreateTruncatedLine(
 	CTLineRef line,
 	double width,
 	CTLineTruncationType truncationType,
-	CTLineRef truncationToken ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTLineRef truncationToken ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -158,7 +159,7 @@ CTLineRef CTLineCreateTruncatedLine(
 CTLineRef CTLineCreateJustifiedLine(
 	CTLineRef line,
 	CGFloat justificationFactor,
-	double justificationWidth ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	double justificationWidth ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -179,7 +180,7 @@ CTLineRef CTLineCreateJustifiedLine(
 */
 
 CFIndex CTLineGetGlyphCount(
-	CTLineRef line ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTLineRef line ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -193,7 +194,7 @@ CFIndex CTLineGetGlyphCount(
 */
 
 CFArrayRef CTLineGetGlyphRuns(
-	CTLineRef line ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTLineRef line ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -210,7 +211,7 @@ CFArrayRef CTLineGetGlyphRuns(
 */
 
 CFRange CTLineGetStringRange(
-	CTLineRef line ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTLineRef line ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -237,7 +238,7 @@ CFRange CTLineGetStringRange(
 double CTLineGetPenOffsetForFlush(
 	CTLineRef line,
 	CGFloat flushFactor,
-	double flushWidth ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	double flushWidth ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -259,7 +260,7 @@ double CTLineGetPenOffsetForFlush(
 
 void CTLineDraw(
 	CTLineRef line,
-	CGContextRef context ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGContextRef context ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -285,7 +286,7 @@ void CTLineDraw(
 
 CGRect CTLineGetImageBounds(
 	CTLineRef line,
-	CGContextRef context ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGContextRef context ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -315,7 +316,7 @@ double CTLineGetTypographicBounds(
 	CTLineRef line,
 	CGFloat* ascent,
 	CGFloat* descent,
-	CGFloat* leading ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGFloat* leading ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -335,7 +336,7 @@ double CTLineGetTypographicBounds(
 */
 
 double CTLineGetTrailingWhitespaceWidth(
-	CTLineRef line ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CTLineRef line ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /* --------------------------------------------------------------------------- */
@@ -367,7 +368,7 @@ double CTLineGetTrailingWhitespaceWidth(
 
 CFIndex CTLineGetStringIndexForPosition(
 	CTLineRef line,
-	CGPoint position ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGPoint position ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 /*!
@@ -405,7 +406,7 @@ CFIndex CTLineGetStringIndexForPosition(
 CGFloat CTLineGetOffsetForStringIndex(
 	CTLineRef line,
 	CFIndex charIndex,
-	CGFloat* secondaryOffset ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+	CGFloat* secondaryOffset ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 
 #if defined(__cplusplus)

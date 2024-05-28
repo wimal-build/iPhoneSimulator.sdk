@@ -24,6 +24,17 @@
 		<key>LineOut</key>
 		<real>0.6</real>
 	</dict>
+	<key>CameraShutterAlwaysHeard</key>
+	<dict>
+		<key>Default</key>
+		<real>1</real>
+		<key>Headphone</key>
+		<real>0.6</real>
+		<key>Headset</key>
+		<real>0.6</real>
+		<key>LineOut</key>
+		<real>0.6</real>
+	</dict>
 	<key>KeyPressed</key>
 	<dict>
 		<key>Default</key>

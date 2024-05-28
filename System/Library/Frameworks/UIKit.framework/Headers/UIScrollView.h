@@ -77,6 +77,8 @@ UIKIT_EXTERN_CLASS @interface UIScrollView : UIView <NSCoding> {
         unsigned int pagingRight:1;
         unsigned int pagingUp:1;
         unsigned int pagingDown:1;
+        unsigned int lastHorizontalDirection:1;
+        unsigned int lastVerticalDirection:1;
         unsigned int dontScrollToTop:1;
         unsigned int scrollingToTop:1;
         unsigned int useGestureRecognizers:1;
@@ -139,6 +141,7 @@ UIKIT_EXTERN_CLASS @interface UIScrollView : UIView <NSCoding> {
     CFTimeInterval    _fastScrollEndTime;
     CGPoint           _parentAdjustment;
     CGPoint           _rotationCenterPoint;
+    CGFloat           _accuracy;
     CGFloat           _hysteresis;
 }
 

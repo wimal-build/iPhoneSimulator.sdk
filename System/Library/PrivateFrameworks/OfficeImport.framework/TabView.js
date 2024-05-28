@@ -158,8 +158,8 @@ TabView.prototype = {
 		this.indexOfSelectedTab = this.tabs.indexOf(newTab);
 		this.fixOverflowIfNeeded();//quick hack to get the overflow in selected mode.
         var address = newTab.getElementsByTagName('a')[0].href;
-        var excelView = document.getElementById('ExcelView');
-		excelView.src = address;
+        var sheetFrame = document.getElementById('SheetFrame');
+        sheetFrame.src = address;
 	},
 	
 	fixOverflowIfNeeded : function(){

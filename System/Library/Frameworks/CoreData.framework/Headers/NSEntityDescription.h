@@ -45,7 +45,9 @@
         unsigned int _skipValidation:1;
         unsigned int _hasPropertiesIndexedBySpotlight:1;
         unsigned int _hasPropertiesStoredInTruthFile:1;
-        unsigned int _reservedEntityDescription:25;
+        unsigned int _rangesAreInDataBlob:1; 
+		unsigned int _hasAttributesWithExternalDataReferences:1;
+        unsigned int _reservedEntityDescription:23;
     } _entityDescriptionFlags;
     __strong void *_extraIvars;
     NSMutableDictionary *_userInfo;

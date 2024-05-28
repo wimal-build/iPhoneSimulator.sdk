@@ -19,6 +19,7 @@
 
 @interface NSFetchRequest : NSObject <NSCoding, NSCopying> {
 @private
+	NSArray *_affectedStores;
 	NSArray *_groupByProperties;
 	NSPredicate *_havingPredicate;
 	NSUInteger _offset;
@@ -28,7 +29,6 @@
     NSArray *_sortDescriptors;
     NSUInteger _batchSize;
     unsigned long _fetchLimit;
-    NSArray *_affectedStores;
     NSArray *_relationshipKeyPathsForPrefetching;
     struct _fetchRequestFlags {
         unsigned int distinctValuesOnly:1;

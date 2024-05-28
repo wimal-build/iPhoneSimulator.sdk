@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TuningParameters</key>
+	<dict>
+		<key>PortTypeBack</key>
+		<dict>
+			<key>0x3650</key>
+			<dict>
+				<key>ToneCurvesBlack</key>
+				<real>0.04</real>
+				<key>ToneCurvesS0</key>
+				<real>0.3</real>
+				<key>ToneCurvesS1</key>
+				<real>0.2</real>
+				<key>SaturationMin</key>
+				<real>0.75</real>
+				<key>SaturationMax</key>
+				<real>1.05</real>
+				<key>AEConvergenceVideo</key>
+				<integer>28</integer>
+				<key>AEConvergenceStill</key>
+				<integer>128</integer>
+				<key>StillInfinityPosition</key>
+				<integer>0</integer>
+				<key>VideoInfinityPosition</key>
+				<integer>60</integer>
+				<key>ExposureWindowSize</key>
+				<real>0.75</real>
+				<key>FocusCenterWindowSize</key>
+				<real>0.40</real>
+				<key>MinimalFaceSize</key>
+				<integer>100</integer>
+				<key>SharpDark</key>
+				<integer>5</integer>
+				<key>SharpBright</key>
+				<integer>10</integer>
+				<key>SigmaDark</key>
+				<integer>40</integer>
+				<key>SigmaBright</key>
+				<integer>4</integer>
+				<key>YLPFDark</key>
+				<integer>8</integer>
+				<key>YLPFBright</key>
+				<integer>0</integer>
+				<key>CLPFDark</key>
+				<integer>16</integer>
+				<key>CLPFBright</key>
+				<integer>8</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -2,13 +2,27 @@
 //  MKAnnotationView.h
 //  MapKit
 //
-//  Copyright 2009 Apple Inc. All rights reserved.
+//  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 // Post this notification to re-query callout information.
 UIKIT_EXTERN NSString *MKAnnotationCalloutInfoDidChangeNotification;
+
+#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+
+enum {
+    MKAnnotationViewDragStateNone = 0,      // View is at rest, sitting on the map.
+    MKAnnotationViewDragStateStarting,      // View is beginning to drag (e.g. pin lift)
+    MKAnnotationViewDragStateDragging,      // View is dragging ("lift" animations are complete)
+    MKAnnotationViewDragStateCanceling,     // View was not dragged and should return to it's starting position (e.g. pin drop)
+    MKAnnotationViewDragStateEnding         // View was dragged, new coordinate is set and view should return to resting position (e.g. pin drop)
+};
+
+typedef NSUInteger MKAnnotationViewDragState;
+
+#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 
 @class MKAnnotationViewInternal;
 @protocol MKAnnotation;
@@ -56,6 +70,14 @@ UIKIT_EXTERN NSString *MKAnnotationCalloutInfoDidChangeNotification;
 
 // The right accessory view to be used in the standard callout.
 @property (retain, nonatomic) UIView *rightCalloutAccessoryView;
+
+// If YES and the underlying id<MKAnnotation> responds to setCoordinate:, 
+// the user will be able to drag this annotation view around the map.
+@property (nonatomic, getter=isDraggable) BOOL draggable __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+// Automatically set to MKAnnotationViewDragStateStarting, Canceling, and Ending when necessary.
+// Implementer is responsible for transitioning to Dragging and None states as appropriate.
+@property (nonatomic) MKAnnotationViewDragState dragState __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
 
 @end

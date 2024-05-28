@@ -18,6 +18,7 @@ extern "C" {
 #import <AddressBookUI/ABPersonViewController.h>
 #import <AddressBookUI/ABNewPersonViewController.h>
 #import <AddressBookUI/ABUnknownPersonViewController.h>
+#import <AddressBookUI/ABAddressFormatting.h>
 
 #if defined(__cplusplus)
 }

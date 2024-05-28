@@ -17,6 +17,8 @@
 #ifndef __CORETEXT__
 #define __CORETEXT__
 
+#include <AvailabilityMacros.h>
+#include <CoreText/CTDefines.h>
 #include <CoreText/CTFont.h>
 #include <CoreText/CTFontCollection.h>
 #include <CoreText/CTFontDescriptor.h>
@@ -33,7 +35,9 @@
 #include <CoreText/CTStringAttributes.h>
 #include <CoreText/CTTextTab.h>
 #include <CoreText/CTTypesetter.h>
-#include <AvailabilityMacros.h>
+#if TARGET_OS_IPHONE
+#include <CoreText/CTRunDelegate.h>
+#endif // TARGET_OS_IPHONE
 
 #if defined(__cplusplus)
 extern "C" {
@@ -58,16 +62,18 @@ extern "C" {
 				constants beginning with kCTVersionNumber.
 */
 
-uint32_t CTGetCoreTextVersion( void ) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
+uint32_t CTGetCoreTextVersion( void ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 #define kCTVersionNumber10_5 0x00020000
 #define kCTVersionNumber10_5_2 0x00020001
 #define kCTVersionNumber10_5_3 0x00020002
 #define kCTVersionNumber10_5_5 0x00020003
 #define kCTVersionNumber10_6 0x00030000
+#define kCTVersionNumber10_7 0x00040000
 
 #if defined(__cplusplus)
 }
 #endif
 
 #endif // __CORETEXT__
+

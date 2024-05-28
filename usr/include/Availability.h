@@ -123,6 +123,7 @@
 #define __IPHONE_3_0     30000  
 #define __IPHONE_3_1     30100  
 #define __IPHONE_3_2     30200  
+#define __IPHONE_4_0     40000  
 #define __IPHONE_NA      99999  /* not available */
 
 #include <AvailabilityInternal.h>

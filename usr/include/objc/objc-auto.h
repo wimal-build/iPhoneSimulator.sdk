@@ -123,7 +123,10 @@ OBJC_GC_EXPORT id objc_assign_weak(id value, id *location);
 
 /* Tells runtime to issue finalize calls on the main thread only. */
 OBJC_GC_EXPORT void objc_finalizeOnMainThread(Class cls)
-    AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER_BUT_DEPRECATED;
+#ifndef OBJC_NO_GC
+    AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER_BUT_DEPRECATED
+#endif
+    ;
 
 
 /* Returns true if object has been scheduled for finalization.  Can be used to avoid operations that may lead to resurrection, which are fatal. */

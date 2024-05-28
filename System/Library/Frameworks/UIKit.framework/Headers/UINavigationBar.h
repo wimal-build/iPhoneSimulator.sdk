@@ -96,6 +96,7 @@ UIKIT_EXTERN_CLASS @interface UINavigationItem : NSObject <NSCoding> {
     UIView          *_customLeftView;
     UIView          *_customRightView;
     BOOL             _hidesBackButton;
+    UIImageView     *_frozenTitleView;
 }
 
 - (id)initWithTitle:(NSString *)title;

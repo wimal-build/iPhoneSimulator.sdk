@@ -109,7 +109,7 @@ extern "C" {
 */
 #define SQLITE_VERSION        "3.6.22"
 #define SQLITE_VERSION_NUMBER 3006022
-#define SQLITE_SOURCE_ID      "2010-01-06 13:12:48 541e2b488e4e40706e457c6d3b5647d53da02ce9"
+#define SQLITE_SOURCE_ID      "2010-02-26 20:54:10 62dfb44b3b66c4acb1a7a10c44cbee1022a88883"
 
 /*
 ** CAPI3REF: Run-Time Library Version Numbers
@@ -3662,6 +3662,7 @@ SQLITE_API int sqlite3_collation_needed16(
   void(*)(void*,sqlite3*,int eTextRep,const void*)
 );
 
+#if SQLITE_HAS_CODEC
 /*
 ** Specify the key for an encrypted database.  This routine should be
 ** called right after sqlite3_open().
@@ -3686,6 +3687,25 @@ SQLITE_API int sqlite3_rekey(
   sqlite3 *db,                   /* Database to be rekeyed */
   const void *pKey, int nKey     /* The new key */
 );
+
+/*
+** Specify the activation key for a SEE database.  Unless 
+** activated, none of the SEE routines will work.
+*/
+SQLITE_API void sqlite3_activate_see(
+  const char *zPassPhrase        /* Activation phrase */
+);
+#endif
+
+#ifdef SQLITE_ENABLE_CEROD
+/*
+** Specify the activation key for a CEROD database.  Unless 
+** activated, none of the CEROD routines will work.
+*/
+SQLITE_API void sqlite3_activate_cerod(
+  const char *zPassPhrase        /* Activation phrase */
+);
+#endif
 
 /*
 ** CAPI3REF: Suspend Execution For A Short Time

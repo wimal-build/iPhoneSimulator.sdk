@@ -11,6 +11,7 @@
 #import <UIKit/UIView.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UILabel.h>
+#import <UIKit/UITableView.h>
 
 @class UISearchBar, UITableView, UIViewController, UIPopoverController;
 @protocol UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate;
@@ -28,7 +29,9 @@ UIKIT_EXTERN_CLASS @interface UISearchDisplayController : NSObject {
     id<UITableViewDelegate>     _tableViewDelegate;
     CFMutableArrayRef           _containingScrollViews;
     CGFloat                     _lastKeyboardAdjustment;
+    CGFloat                     _lastFooterAdjustment;
     UIPopoverController        *_popoverController;
+    UITableViewStyle            _searchResultsTableViewStyle;
     struct {
         unsigned int visible:1;
         unsigned int animating:1;

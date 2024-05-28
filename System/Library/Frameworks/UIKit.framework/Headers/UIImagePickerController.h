@@ -20,11 +20,31 @@ enum {
 typedef NSUInteger UIImagePickerControllerSourceType;
 
 enum {
-    UIImagePickerControllerQualityTypeHigh,
-    UIImagePickerControllerQualityTypeMedium,
-    UIImagePickerControllerQualityTypeLow
+    UIImagePickerControllerQualityTypeHigh = 0,       // highest quality 
+    UIImagePickerControllerQualityType640x480 = 3,    // VGA quality
+    UIImagePickerControllerQualityTypeMedium = 1,     // medium quality, suitable for transmission via Wi-Fi 
+    UIImagePickerControllerQualityTypeLow = 2         // lowest quality, suitable for tranmission via cellular network
 };
 typedef NSUInteger UIImagePickerControllerQualityType;
+
+enum {
+    UIImagePickerControllerCameraCaptureModePhoto,
+    UIImagePickerControllerCameraCaptureModeVideo
+};
+typedef NSUInteger UIImagePickerControllerCameraCaptureMode;
+
+enum {
+    UIImagePickerControllerCameraDeviceRear,
+    UIImagePickerControllerCameraDeviceFront
+};
+typedef NSUInteger UIImagePickerControllerCameraDevice;
+
+enum {
+    UIImagePickerControllerCameraFlashModeOff  = -1,
+    UIImagePickerControllerCameraFlashModeAuto = 0,
+    UIImagePickerControllerCameraFlashModeOn   = 1
+};
+typedef NSInteger UIImagePickerControllerCameraFlashMode;
 
 // info dictionary keys
 UIKIT_EXTERN NSString *const UIImagePickerControllerMediaType;      // an NSString (UTI, i.e. kUTTypeImage)
@@ -53,6 +73,10 @@ UIKIT_EXTERN_CLASS @interface UIImagePickerController : UINavigationController <
 + (BOOL)isSourceTypeAvailable:(UIImagePickerControllerSourceType)sourceType;                 // returns YES if source is available (i.e. camera present)
 + (NSArray *)availableMediaTypesForSourceType:(UIImagePickerControllerSourceType)sourceType; // returns array of available media types (i.e. kUTTypeImage)
 
++ (BOOL)isCameraDeviceAvailable:(UIImagePickerControllerCameraDevice)cameraDevice                   __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); // returns YES if camera device is available 
++ (BOOL)isFlashAvailableForCameraDevice:(UIImagePickerControllerCameraDevice)cameraDevice           __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); // returns YES if camera device supports flash and torch.
++ (NSArray *)availableCaptureModesForCameraDevice:(UIImagePickerControllerCameraDevice)cameraDevice __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); // returns array of NSNumbers (UIImagePickerControllerCameraCaptureMode)
+
 @property(nonatomic,assign)    id <UINavigationControllerDelegate, UIImagePickerControllerDelegate> delegate;
 
 @property(nonatomic)           UIImagePickerControllerSourceType     sourceType;                                                        // default value is UIImagePickerControllerSourceTypePhotoLibrary.
@@ -72,6 +96,14 @@ UIKIT_EXTERN_CLASS @interface UIImagePickerController : UINavigationController <
 - (void)takePicture __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_1);                                                   
 // programatically initiates still image capture. ignored if image capture is in-flight.
 // clients can initiate additional captures after receiving -imagePickerController:didFinishPickingMediaWithInfo: delegate callback
+
+- (BOOL)startVideoCapture __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+- (void)stopVideoCapture  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+@property(nonatomic) UIImagePickerControllerCameraCaptureMode cameraCaptureMode __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); // default is UIImagePickerControllerCameraCaptureModePhoto
+@property(nonatomic) UIImagePickerControllerCameraDevice      cameraDevice      __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); // default is UIImagePickerControllerCameraDeviceRear
+@property(nonatomic) UIImagePickerControllerCameraFlashMode   cameraFlashMode   __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); // default is UIImagePickerControllerCameraFlashModeAuto. 
+// cameraFlashMode controls the still-image flash when cameraCaptureMode is Photo. cameraFlashMode controls the video torch when cameraCaptureMode is Video.
 
 @end
 

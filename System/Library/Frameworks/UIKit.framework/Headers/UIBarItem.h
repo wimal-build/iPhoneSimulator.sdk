@@ -12,6 +12,7 @@
 @class UIImage;
 
 UIKIT_EXTERN_CLASS @interface UIBarItem : NSObject {
+  @private
 }
 
 @property(nonatomic,getter=isEnabled) BOOL         enabled;      // default is YES
