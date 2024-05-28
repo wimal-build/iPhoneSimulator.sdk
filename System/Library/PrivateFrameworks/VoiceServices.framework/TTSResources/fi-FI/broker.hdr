@@ -9,10 +9,10 @@ defaultvoice:Satu
     <language>Finnish</language>
     <langcode>FIF</langcode>
     <langid>9</langid>
-    <langversion>5.2.3.13304</langversion>
+    <langversion>5.2.4.13304</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Satu</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.14090</voiceversion>
     <gender>Male</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -83,7 +83,17 @@ defaultvoice:Satu
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/fif/cfg1
+    </RESOURCE>
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/fif
+    </RESOURCE>
     
     
     

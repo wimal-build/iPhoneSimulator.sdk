@@ -1,0 +1,1 @@
+The CompanionFindMy framework runs on the companion device and provides an IPC interface for leashing, proximity detection and FMiP.

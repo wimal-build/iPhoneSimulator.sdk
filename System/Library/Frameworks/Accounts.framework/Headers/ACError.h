@@ -30,5 +30,5 @@ typedef enum ACErrorCode {
     ACErrorCoreDataSaveFailed,              // Something broke below us when we tried to the CoreData store.
     ACErrorFailedSerializingAccountInfo,
     ACErrorInvalidCommand,
-    ACErrorMissingMessageID,
+    ACErrorMissingTransportMessageID,
 } ACErrorCode;

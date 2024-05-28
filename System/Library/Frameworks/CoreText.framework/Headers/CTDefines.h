@@ -9,6 +9,8 @@
 #ifndef __CTDEFINES__
 #define __CTDEFINES__
 
+#include <Availability.h>
+
 #ifndef __has_feature
 # define __has_feature(x) 0
 #endif
@@ -25,7 +27,6 @@
 # define CT_DEPRECATED_MAC(_macIntro, _macDep)
 # define CT_DEPRECATED_IOS(_iosIntro, _iosDep)
 #else /* defined(CT_BUILDING_CoreText) */
-# include <Availability.h>
 # define CT_AVAILABLE(_mac, _ios) __OSX_AVAILABLE_STARTING(__MAC_##_mac, __IPHONE_##_ios)
 # define CT_AVAILABLE_MAC(_mac) __OSX_AVAILABLE_STARTING(__MAC_##_mac, __IPHONE_NA)
 # define CT_AVAILABLE_IOS(_ios) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_##_ios)
@@ -49,5 +50,22 @@
 # define CT_ENUM_DEPRECATED_MAC(_macIntro, _macDep)
 # define CT_ENUM_DEPRECATED_IOS(_iosIntro, _iosDep)
 #endif /* __has_feature(enumerator_attributes) && __has_attribute(availability) */
+
+#if __has_attribute(objc_bridge)
+# if defined(__OBJC__)
+#  if TARGET_OS_IPHONE
+@class UIFont;
+@class UIFontDescriptor;
+#  else
+@class NSFont;
+@class NSFontCollection;
+@class NSFontDescriptor;
+@class NSGlyphInfo;
+#  endif /* TARGET_OS_IPHONE */
+# endif /* defined(__OBJC__) */
+# define CT_BRIDGED_TYPE(T) __attribute__((objc_bridge(T)))
+#else
+# define CT_BRIDGED_TYPE(T)
+#endif /*  __has_attribute(objc_bridge) */
 
 #endif

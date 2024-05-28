@@ -93,7 +93,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : NSObject
  *	@seealso		CBCentralManagerOptionRestoreIdentifierKey
  *
  */
-- (instancetype)initWithDelegate:(id<CBCentralManagerDelegate>)delegate queue:(dispatch_queue_t)queue options:(NSDictionary *)options NS_AVAILABLE(NA, 7_0);
+- (instancetype)initWithDelegate:(id<CBCentralManagerDelegate>)delegate queue:(dispatch_queue_t)queue options:(NSDictionary *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER;
 
 /*!
  *  @method retrievePeripherals:

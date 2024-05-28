@@ -91,6 +91,6 @@ CB_EXTERN_CLASS @interface CBMutableService : CBService
  *  @discussion			Returns a service, initialized with a service type and UUID.
  *
  */
-- (instancetype)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary;
+- (instancetype)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary NS_DESIGNATED_INITIALIZER;
 
 @end

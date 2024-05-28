@@ -1,0 +1,54 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG:RLS_FE.JPJ_6.0.7
+
+
+[header]
+language = JPJ
+
+[data]
+#Fix Bugzilla16074 Radar8755964
+/—/ --> "--"
+
+
+#Fix Bugzilla43318
+/PLACEHOLDERSPELLTAG/ --> "\x1b\\tn=spell\\"
+/PLACEHOLDERNORMALTAG/ --> "\x1b\\tn=normal\\"
+
+
+#Fix Bugzilla11559
+/feat\./ --> "featuring"
+
+#FB 48291
+/１日平均/ --> "\e\\toi=lhp\\i.t&c~i.n~i.t&c~i_he:.ki.N\e\\toi=orth\\"
+
+#FB 48290
+/総２階建て/ --> "\e\\toi=lhp\\so:.n~i.kA.i.dA.te\e\\toi=orth\\"
+
+#FB 45875 (udct not OK)
+/セットしますか/ --> "\e\\toi=lhp\\se.'t:o_c~i.mA.'su-%>.kA\e\\toi=orth\\"
+
+#FB 48147 (udct not OK)
+/お調べしましょう/ --> "\e\\toi=lhp\\o.c~i.r6A.be.c~i.mA.So:.'\e\\toi=orth\\"
+
+/ちょっと遅い昼食をとるためファミリーレストランに入ったのです/ --> "\e\\toi=lhp\\t&c~jo.'t:o_o.so.i.t&c~ju-:.So.ku-.o_to.'r6u-.tA.me#PA.mi.r6i:.r6e.'su-%>.to.r6A.N.n~i_hA.'i.t:A.no.de.su-%>\e\\toi=orth\\"
+/笑う門には福来る/ --> "\e\\toi=lhp\\wA.r6A.u-.kA.'do.n~i.wA_Pu-%>.'ku-_ki.tA.'r6u-\e\\toi=orth\\"
+/お待ちください/ --> "\e\\toi=lhp\\o.mA.t&c~i%>.ku-.dA.sA.'i\e\\toi=orth\\"
+/お待ち下さい/ --> "\e\\toi=lhp\\o.mA.t&c~i%>.ku-.dA.sA.'i\e\\toi=orth\\"
+/チェックしています/ --> "\e\\toi=lhp\\t&c~je.'k:u-.c~i.te.i.mA.su-%>\e\\toi=orth\\"
+/位置情報サービス設定/ --> "\e\\toi=lhp\\i.t&c~i.Zo:.ho:.sA:.bi.su-%>.se.'t:e:\e\\toi=orth\\"
+/なにを検索しますか/ --> "\e\\toi=lhp\\nA.'n~i.o_ke.N.sA.ku-%>.c~i.mA.'su-.kA\e\\toi=orth\\"
+
+#FB 48634 US highway names
+/\b([A-Z])([A-Z])(-)([0-9]{1,3})\b/ --> "$1 $2 \e\\pause=5\\$4"
+
+/環七通り/ --> "\e\\toi=lhp\\kA.N.nA.nA.do:.'ri\e\\toi=orth\\ "
+/環八通り/ --> "\e\\toi=lhp\\kA.N.pA.t&c~i.do:.'ri\e\\toi=orth\\ "
+
+/4分の1/ --> "\e\\toi=lhp\\jo.N.bu-.N.no.i.t&c~i\e\\toi=orth\\ "
+/2分の1/ --> "\e\\toi=lhp\\n~i.bu-.N.no.i.t&c~i\e\\toi=orth\\ "
+/4分の3/ --> "\e\\toi=lhp\\jo.N.bu-.N.no.sA.N\e\\toi=orth\\ "
+
+/¥/ --> "+Fe'N"

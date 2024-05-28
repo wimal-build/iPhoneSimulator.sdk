@@ -1,0 +1,51 @@
+﻿# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.ENE_6.0.4 & RLS_FE-tuning.ENE_6.0.4
+
+[header]
+language = ENE
+
+[data]
+#FB35994
+/(I don't understand) '([A-Za-z0-9]+(?:\s[A-Za-z0-9]+)*)'/ --> "$1 \x1b\\pause=50\\$2"
+
+#FB48072/FB48073
+/\b(apple\.com)\/uk/i --> "$1 \x1b\\pause=50\\ slash U K"
+/\b(apple\.com)\/au/i --> "$1 \x1b\\pause=50\\ slash A U"
+
+#State name Ex.New York, NY
+
+/([A-Za-z0-9]+), NY/ --> "$1, N Y"
+/([A-Za-z0-9]+), MS/ --> "$1, M S"
+/([A-Za-z0-9]+), VA/ --> "$1, V A"
+/([A-Za-z0-9]+), RI/ --> "$1, R I"
+/([A-Za-z0-9]+), KS/ --> "$1, K S"
+/([A-Za-z0-9]+), WI/ --> "$1, W I"
+/([A-Za-z0-9]+), AL/ --> "$1, A L"
+/([A-Za-z0-9]+), PA/ --> "$1, P A"
+/([A-Za-z0-9]+), IA/ --> "$1, I A"
+/([A-Za-z0-9]+), OR/ --> "$1, O R"
+/([A-Za-z0-9]+), IN/ --> "$1, I N"
+/([A-Za-z0-9]+), CO/ --> "$1, C O"
+/([A-Za-z0-9]+), OH/ --> "$1, O H"
+/([A-Za-z0-9]+), UT/ --> "$1, U T"
+/([A-Za-z0-9]+), IL/ --> "$1, I L"
+/([A-Za-z0-9]+), AK/ --> "$1, A K"
+/([A-Za-z0-9]+), MO/ --> "$1, M O"
+/([A-Za-z0-9]+), KY/ --> "$1, K Y"
+/([A-Za-z0-9]+), HI/ --> "$1, H I"
+/AMC/ --> "A M C"
+
+#'Toy Story 3', 'District 9'
+/['‘](Toy Story \d)['’]/ --> "$1"
+/['‘](District 9)['’]/ --> "$1"
+
+#FB41262
+/(\d)' ([\d]+\.\d\d)"/ --> "$1 ft $2 inches"
+
+
+#FB41267
+/[Ww]ar of 1812/ --> "war of 18 12"
+

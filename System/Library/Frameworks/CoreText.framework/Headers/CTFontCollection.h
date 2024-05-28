@@ -35,7 +35,11 @@ extern "C" {
     @abstract   The Core Text font collection reference.
     @discussion An opaque reference to an immutable font collection.
 */
+#if TARGET_OS_IPHONE
 typedef const struct __CTFontCollection * CTFontCollectionRef;
+#else
+typedef const struct CT_BRIDGED_TYPE(NSFontCollection) __CTFontCollection * CTFontCollectionRef;
+#endif
 
 /*!
     @typedef    CTMutableFontCollectionRef

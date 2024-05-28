@@ -13,25 +13,33 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>IMTransferAgent.app/IMTransferAgent</key>
+		<data>
+		JYDsXud3jFkemDFN9mCKJN99o4s=
+		</data>
+		<key>IMTransferAgent.app/Info.plist</key>
+		<data>
+		217G/Vuy6n8t5hTVDVpWWichYz8=
+		</data>
+		<key>IMTransferAgent.app/PkgInfo</key>
+		<data>
+		ssrOB9z511qOIYldDzBF6IO915A=
+		</data>
+		<key>IMTransferAgent.app/_CodeSignature/CodeResources</key>
+		<data>
+		cF6DnivgUZTBbXvEG0sqiufxzmo=
+		</data>
+		<key>IMTransferAgent.app/com.apple.private.alloy.idstransfers.plist</key>
+		<data>
+		B214tdtzpI/lNzubjcao6eVO9ac=
+		</data>
+		<key>IMTransferAgent.app/version.plist</key>
+		<data>
+		9FKxT3GogQ+hn02wwPbE41eqgzA=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		Blrq8I9KVOiHpx6hsuGGv1HeIXo=
-		</data>
-		<key>XPCServices/IMTransferAgent.xpc/IMTransferAgent</key>
-		<data>
-		KZEspTp4AQC0+E3xQM1Lvi5Td+A=
-		</data>
-		<key>XPCServices/IMTransferAgent.xpc/Info.plist</key>
-		<data>
-		5bxYxM2zV72+Csa8vezvXo4Ex1A=
-		</data>
-		<key>XPCServices/IMTransferAgent.xpc/_CodeSignature/CodeResources</key>
-		<data>
-		TKdHpxzDNJWlmfGv/uuRDGt49Ps=
-		</data>
-		<key>XPCServices/IMTransferAgent.xpc/version.plist</key>
-		<data>
-		+PlGIczmyjSMi6a96QY3RxR4ZCw=
+		dfOBpLovuZGs/XCzsKWB1+7dYWY=
 		</data>
 		<key>framework.sb</key>
 		<data>
@@ -39,7 +47,7 @@
 		</data>
 		<key>version.plist</key>
 		<data>
-		qqH6ghCwwOyX8G/p5icJsAKrkqM=
+		2kzhcPGOPh8zmDqpUCost6otOOU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -53,21 +61,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>XPCServices/IMTransferAgent.xpc/IMTransferAgent</key>
+		<key>IMTransferAgent.app/IMTransferAgent</key>
 		<data>
-		KZEspTp4AQC0+E3xQM1Lvi5Td+A=
+		JYDsXud3jFkemDFN9mCKJN99o4s=
 		</data>
-		<key>XPCServices/IMTransferAgent.xpc/Info.plist</key>
+		<key>IMTransferAgent.app/Info.plist</key>
 		<data>
-		5bxYxM2zV72+Csa8vezvXo4Ex1A=
+		217G/Vuy6n8t5hTVDVpWWichYz8=
 		</data>
-		<key>XPCServices/IMTransferAgent.xpc/_CodeSignature/CodeResources</key>
+		<key>IMTransferAgent.app/PkgInfo</key>
 		<data>
-		TKdHpxzDNJWlmfGv/uuRDGt49Ps=
+		ssrOB9z511qOIYldDzBF6IO915A=
 		</data>
-		<key>XPCServices/IMTransferAgent.xpc/version.plist</key>
+		<key>IMTransferAgent.app/_CodeSignature/CodeResources</key>
 		<data>
-		+PlGIczmyjSMi6a96QY3RxR4ZCw=
+		cF6DnivgUZTBbXvEG0sqiufxzmo=
+		</data>
+		<key>IMTransferAgent.app/com.apple.private.alloy.idstransfers.plist</key>
+		<data>
+		B214tdtzpI/lNzubjcao6eVO9ac=
+		</data>
+		<key>IMTransferAgent.app/version.plist</key>
+		<data>
+		9FKxT3GogQ+hn02wwPbE41eqgzA=
 		</data>
 		<key>framework.sb</key>
 		<data>
@@ -75,7 +91,7 @@
 		</data>
 		<key>version.plist</key>
 		<data>
-		qqH6ghCwwOyX8G/p5icJsAKrkqM=
+		2kzhcPGOPh8zmDqpUCost6otOOU=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -1,0 +1,38 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.RUR_6.0.4
+
+[header]
+language = RUR
+
+[data]
+# improved rule for "dot com" bug  radar://6779706 to fix radar://7699944 & 7702531
+# rewrite this rule/\.([a-zA-Z]+)\b/ --> " точка $1 "
+/([a-zA-Z])\.org\b/ --> "$1 точка org"
+/([a-zA-Z])\.net\b/ --> "$1 точка net"
+/([a-zA-Z])\.gov\b/ --> "$1 точка gov"
+/([a-zA-Z])\.edu\b/ --> "$1 точка edu"
+/([a-zA-Z])\.info\b/ --> "$1 точка info"
+/([a-zA-Z])\.biz\b/ --> "$1 точка biz"
+/([a-zA-Z])\.jobs\b/ --> "$1 точка jobs"
+/([a-zA-Z])\.coop\b/ --> "$1 точка coop"
+/([a-zA-Z])\.ac\b/ --> "$1 точка A C"
+/([a-zA-Z])\.us\b/ --> "$1 точка U S"
+/([a-zA-Z])\.uk\b/ --> "$1 точка U K"
+/([a-zA-Z])\.eu\b/ --> "$1 точка E U"
+/([a-zA-Z])\.int\b/ --> "$1 точка int"
+/([a-zA-Z])\.co\b/ --> "$1 точка co"
+/([a-zA-Z])\.es\b/ --> "$1 точка E S"
+/([a-zA-Z])\.de\b/ --> "$1 точка D E"
+/([a-zA-Z])\.fr\b/ --> "$1 точка F R"
+/([a-zA-Z])\.it\b/ --> "$1 точка I T"
+/([a-zA-Z])\.be\b/ --> "$1 точка B E"
+/([a-zA-Z])\.nl\b/ --> "$1 точка N L"
+/([a-zA-Z])\.gr\b/ --> "$1 точка G R "
+/([a-zA-Z])\.ru\b/ --> "$1 точка ru"
+/([a-zA-Z])\.mx\b/ --> "$1 точка M X"
+/([a-zA-Z])\.ca\b/ --> "$1 точка C A"
+
+

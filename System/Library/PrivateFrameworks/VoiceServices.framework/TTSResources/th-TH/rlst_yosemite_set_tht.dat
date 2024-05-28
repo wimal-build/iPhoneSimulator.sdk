@@ -1,0 +1,14 @@
+﻿# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.THT_6.0.3 & RLS_FE-tuning.THT_6.0.3
+
+[header]
+language = THT
+
+[data]
+
+#FB15657
+/(?<!\w)ID(?!\w)/ --> "I D"
+/(?<!\w)PC(?!\w)/ --> "P C"

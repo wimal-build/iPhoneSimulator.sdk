@@ -1,0 +1,21 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.FRF_6.0.8
+
+[header]
+language = FRF
+charset = utf-8
+
+[data]
+/\xa0/   -->   " "
+#25688
+/([lu\.|lun|lundi|ma.|mar|mardi|me\.|mer|merc|mercr|mercredi|je\.|jeu|jeudi|ve\.|ven|vendr|vendredi|sa\.|sam|samedi|di\.|dim|dimanche]) (\d[\d]?:\d\d)/i   -->   "$1 - $2"
+#29844
+/(\b|^)plus (\d)/  -->  "$1\x1b\/+plyz\x1b\/+ $2"
+#29515
+/(\b|^)([A-ZÉÀÈÙËÏÜŸÇ][A-ZÉÀÈÙËÏÜŸÇa-zéàèùëïüÿç]+) St/   -->   "$1$2 street"
+
+#FB39245
+/(\x1b\\tn=address\\\d{0,5}\s?[A-Z][a-z]+(?:\s[A-Za-z])*) Dr\b/ --> "$1 drive"

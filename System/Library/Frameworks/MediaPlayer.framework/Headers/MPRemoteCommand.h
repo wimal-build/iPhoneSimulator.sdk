@@ -66,6 +66,11 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 /// A localized string briefly describing the context of the command.
 @property (nonatomic, copy) NSString *localizedTitle;
 
+/// An optional shorter version of the localized title for this feedback
+/// command. MediaPlayer uses this property to display this command's title on
+/// remote control interfaces with little screen space.
+@property (nonatomic, copy) NSString *localizedShortTitle NS_AVAILABLE_IOS(8_0);
+
 @end
 
 MP_EXTERN_CLASS_AVAILABLE(7_1)

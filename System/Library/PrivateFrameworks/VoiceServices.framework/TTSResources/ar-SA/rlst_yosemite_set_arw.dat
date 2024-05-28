@@ -1,0 +1,15 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.ARW_6.0.7 & RLS_FE-tuning.ARW_6.0.7 and RLS_FE.ARW_7.0.1 & RLS_FE-tuning.ARW_9.0.0
+
+[header]
+language = ARW
+
+[data]
+
+/["'!\(\),۔؛؟?;٬]/   -->   ""
+/÷/   -->   " مَقْسُومْ عَلَى "
+# Radar 15363314 (case 44706)
+/([a-zA-Z])\-([\x{0600}-\x{06ff}])/   -->   "$1 $2"

@@ -1,0 +1,13 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.CZC_6.0.4
+
+[header]
+language = CZC
+
+[data]
+#Put meters and kilometers in Acc / Gen case after preposition "po"
+/([Pp][Oo] [0-9]+ )km[.]? /i   -->   "$1kilometrů "
+/([Pp][Oo] [0-9]+ )m[.]? /i   -->   "$1metrů "

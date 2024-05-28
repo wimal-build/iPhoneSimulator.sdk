@@ -8,7 +8,7 @@
 #import <HealthKit/HKDefines.h>
 
 HK_CLASS_AVAILABLE_IOS(8_0)
-@interface HKUnit : NSObject <NSSecureCoding>
+@interface HKUnit : NSObject <NSSecureCoding, NSCopying>
 
 /// Returns a unique string representation for the unit that could be used with +unitFromString:
 @property (readonly, strong) NSString *unitString;

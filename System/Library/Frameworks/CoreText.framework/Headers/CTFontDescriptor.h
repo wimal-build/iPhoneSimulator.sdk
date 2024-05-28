@@ -42,7 +42,11 @@ extern "C" {
     @abstract   The Core Text Font Descriptor reference.
     @discussion This is a opaque reference to a font descriptor.
 */
-typedef const struct __CTFontDescriptor * CTFontDescriptorRef;
+#if TARGET_OS_IPHONE
+typedef const struct CT_BRIDGED_TYPE(UIFontDescriptor) __CTFontDescriptor * CTFontDescriptorRef;
+#else
+typedef const struct CT_BRIDGED_TYPE(NSFontDescriptor) __CTFontDescriptor * CTFontDescriptorRef;
+#endif
 
 /*!
     @function   CTFontDescriptorGetTypeID

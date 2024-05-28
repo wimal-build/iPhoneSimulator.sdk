@@ -1,0 +1,6 @@
+framework module HelpKit {
+  umbrella header "HelpKit.h"
+
+  export *
+  module * { export * }
+}

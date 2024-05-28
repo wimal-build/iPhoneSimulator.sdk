@@ -67,7 +67,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 @required
 
 /*!
- @method        pushRegistry:didUpdatePushToken:forType:
+ @method        pushRegistry:didUpdatePushCredentials:forType:
  @abstract      This method is invoked when new credentials (including push token) have been received for the specified
                 PKPushType.
  @param         registry

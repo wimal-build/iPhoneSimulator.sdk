@@ -68,9 +68,10 @@ typedef NS_ENUM(NSInteger, HKAuthorizationStatus) {
  */
 typedef NS_ENUM(NSInteger, HKBiologicalSex) {
     HKBiologicalSexNotSet = 0,
-    HKBiologicalSexFemale,
-    HKBiologicalSexMale,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+    HKBiologicalSexFemale NS_ENUM_AVAILABLE_IOS(8_0),
+    HKBiologicalSexMale NS_ENUM_AVAILABLE_IOS(8_0),
+    HKBiologicalSexOther NS_ENUM_AVAILABLE_IOS(8_2),
+};
 
 /*!
  @enum       HKBloodType
@@ -91,6 +92,12 @@ typedef NS_ENUM(NSInteger, HKBloodType) {
 /*!
  @enum          HKCategoryValueSleepAnalysis
  @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryTypeIdentifierSleepAnalysis type.
+ @discussion    To represent the user being both in bed and asleep, use two or more samples with overlapping times. By comparing the 
+                start and end times of these samples, it is possible to calculate a number of secondary statistics: 
+                1) The amount of time it took for the user to fall asleep
+                2) The percentage of time in bed that the user actually spent sleeping,
+                3) The number of times the user woke while in bed
+                4) The total amount of time spent both in bed and asleep.
  */
 typedef NS_ENUM(NSInteger, HKCategoryValueSleepAnalysis) {
     HKCategoryValueSleepAnalysisInBed,

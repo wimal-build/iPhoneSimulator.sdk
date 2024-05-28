@@ -1,0 +1,29 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.PTB_6.0.3
+
+[header]
+language = PTB
+
+[data]
+
+#  expansion of Portuguese month abbreviations followed by .
+/Jan\./ --> "Janeiro" 
+/Fev\./ --> "Fevereiro" 
+/Mar\./ --> "Março" 
+/Abr\./ --> "Abril" 
+/Mai\./ --> "Maio" 
+/Jun\./ --> "Junho" 
+/Jul\./ --> "Julho" 
+/Ago\./ --> "Agosto" 
+/Set\./ --> "Setembro" 
+/Out\./ --> "Outubro" 
+/Nov\./ --> "Novembro" 
+/Dez\./ --> "Dezembro" 
+
+
+
+
+

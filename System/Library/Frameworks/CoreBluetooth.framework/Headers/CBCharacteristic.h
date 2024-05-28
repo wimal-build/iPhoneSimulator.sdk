@@ -177,6 +177,6 @@ CB_EXTERN_CLASS @interface CBMutableCharacteristic : CBCharacteristic
  *  @discussion			Returns an initialized characteristic.
  *
  */
-- (instancetype)initWithType:(CBUUID *)UUID properties:(CBCharacteristicProperties)properties value:(NSData *)value permissions:(CBAttributePermissions)permissions;
+- (instancetype)initWithType:(CBUUID *)UUID properties:(CBCharacteristicProperties)properties value:(NSData *)value permissions:(CBAttributePermissions)permissions NS_DESIGNATED_INITIALIZER;
 
 @end

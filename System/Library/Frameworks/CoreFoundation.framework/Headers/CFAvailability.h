@@ -45,6 +45,7 @@
 #define __NSi_7_1 introduced=7.1
 #define __NSi_8_0 introduced=8.0
 #define __NSi_8_1 introduced=8.1
+#define __NSi_8_2 introduced=8.2
 #define __NSi_9_0 introduced=9.0
 #define __NSi_9_1 introduced=9.1
 #define __NSi_10_0 introduced=10.0
@@ -77,6 +78,7 @@
 #define __NSd_7_1 ,deprecated=7.1
 #define __NSd_8_0 ,deprecated=8.0
 #define __NSd_8_1 ,deprecated=8.1
+#define __NSd_8_2 ,deprecated=8.2
 #define __NSd_9_0 ,deprecated=9.0
 #define __NSd_9_1 ,deprecated=9.1
 #define __NSd_10_0 ,deprecated=10.0

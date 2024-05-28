@@ -9,10 +9,10 @@ defaultvoice:Moira
     <language>Irish English</language>
     <langcode>ENE</langcode>
     <langid>60</langid>
-    <langversion>5.2.3.13318</langversion>
+    <langversion>5.2.4.14122</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Moira</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.14097</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -83,7 +83,17 @@ defaultvoice:Moira
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/ene/cfg1
+    </RESOURCE>
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/ene
+    </RESOURCE>
     
     
     

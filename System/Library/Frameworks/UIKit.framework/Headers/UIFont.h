@@ -25,9 +25,15 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIFont : NSObject <NSCopying>
 + (NSArray *)fontNamesForFamilyName:(NSString *)familyName;
 
 // Some convenience methods to create system fonts
+// Think carefully before using these methods. In most cases, a font returned by +preferredFontForTextStyle: will be more appropriate, and will respect the user's selected content size category.
 + (UIFont *)systemFontOfSize:(CGFloat)fontSize;
 + (UIFont *)boldSystemFontOfSize:(CGFloat)fontSize;
 + (UIFont *)italicSystemFontOfSize:(CGFloat)fontSize;
+
+// Weights used here are analogous to those used with UIFontDescriptor's UIFontWeightTrait.
+// See the UIFontWeight... constants in UIFontDescriptor.h for suggested values.
+// The caveat above about the use of ...systemFont... methods applies to this method too.
++ (UIFont *)systemFontOfSize:(CGFloat)fontSize weight:(CGFloat)weight NS_AVAILABLE_IOS(8_2);
 
 // Font attributes
 @property(nonatomic,readonly,retain) NSString *familyName;

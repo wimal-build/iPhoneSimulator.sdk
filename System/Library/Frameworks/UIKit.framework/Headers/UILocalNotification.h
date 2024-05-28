@@ -35,6 +35,7 @@ NS_CLASS_AVAILABLE_IOS(4_0) @interface UILocalNotification : NSObject<NSCopying,
 @property(nonatomic) BOOL hasAction;                // defaults to YES. pass NO to hide launching button/slider
 @property(nonatomic,copy) NSString *alertAction;    // used in UIAlert button or 'slide to unlock...' slider in place of unlock
 @property(nonatomic,copy) NSString *alertLaunchImage;   // used as the launch image (UILaunchImageFile) when launch button is tapped
+@property(nonatomic,copy) NSString *alertTitle NS_AVAILABLE_IOS(8_2);  // defaults to nil. pass a string or localized string key
 
 // sound
 @property(nonatomic,copy) NSString *soundName;      // name of resource in app's bundle to play or UILocalNotificationDefaultSoundName

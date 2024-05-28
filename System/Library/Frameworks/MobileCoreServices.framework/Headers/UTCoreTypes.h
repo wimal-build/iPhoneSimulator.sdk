@@ -1115,7 +1115,7 @@ extern const CFStringRef kUTTypeDatabase                             __OSX_AVAIL
  *    VCard format
  *
  *    UTI: public.vcard
- *    conforms to: public.data, public.contact
+ *    conforms to: public.text, public.contact
  *
  *
  *  kUTTypeToDoItem

@@ -72,6 +72,8 @@ typedef NS_ENUM(NSUInteger, HKWorkoutActivityType) {
     HKWorkoutActivityTypeWaterSports, // Water Skiing, Wake Boarding, etc.
     HKWorkoutActivityTypeWrestling,
     HKWorkoutActivityTypeYoga,
+    
+    HKWorkoutActivityTypeOther = 3000,
 } NS_ENUM_AVAILABLE_IOS(8_0);
 
 typedef NS_ENUM(NSInteger, HKWorkoutEventType) {
@@ -138,7 +140,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @discussion    This metric should represent the total distance traveled during the course of the workout. It should be a
                 quantity with a unit representing length.
  */
-@property (readonly, strong) HKQuantity *totalDistance;
+@property (readonly, strong) HKQuantity *totalDistance; 
 
 /*!
  @method        workoutWithActivityType:startDate:endDate:

@@ -24,7 +24,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @property      samplePredicates
  @abstract      A dictionary of predicates for the HKCorrelation's objects
  @discussion    samplePredicates maps HKSampleTypes to NSPredicates. The predicate value will apply
-                to objects the key type. 
+                to objects of the key type. 
  
  */
 @property (readonly, copy) NSDictionary *samplePredicates;

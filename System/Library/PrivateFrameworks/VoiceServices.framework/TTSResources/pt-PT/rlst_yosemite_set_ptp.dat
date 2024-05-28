@@ -1,0 +1,40 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.PTP_6.0.4 & RLS_FE-tuning.PTP_6.0.4
+
+[header]
+language = PTP
+
+[data]
+
+#FB35658 radar13830338
+/PLACEHOLDERSPELLTAG/ --> "\x1b\\tn=spell\\"
+/PLACEHOLDERNORMALTAG/ --> "\x1b\\tn=normal\\"
+
+#  expansion of Portuguese month abbreviations followed by .
+/Jan\./ --> "Janeiro" 
+/Fev\./ --> "Fevereiro" 
+/Mar\./ --> "Março" 
+/Abr\./ --> "Abril" 
+/Mai\./ --> "Maio" 
+/Jun\./ --> "Junho" 
+/Jul\./ --> "Julho" 
+/Ago\./ --> "Agosto" 
+/Set\./ --> "Setembro" 
+/Out\./ --> "Outubro" 
+/Nov\./ --> "Novembro" 
+/Dez\./ --> "Dezembro" 
+
+
+# correct expansion of 1 and 2 with particular words
+/^1 (colectânea|fotografia|lista|música|gravação|milha|hora)/ --> "uma $1"
+/\D1 (colectânea|fotografia|lista|música|gravação|milha|hora)/ --> "uma $1"
+/([23456789])1 (colectâneas|fotografias|listas|músicas|gravações|milhas|horas)/ --> "$1\x30\-e-uma $2"
+/^2 (colectâneas|fotografias|listas|músicas|gravações|milhas|horas)/ --> "duas $1"
+/\D2 (colectâneas|fotografias|listas|músicas|gravações|milhas|horas)/ --> "duas $1"
+/([23456789])2 (colectâneas|fotografias|listas|músicas|gravações|milhas|horas)/ --> "$1\x30\-e-duas $2"
+
+#FB35658 radar13830338
+/(?<=(?:\x1b\\eos=[01]\\)|^)([\s]*)M([\s]*)(?=(?:\x1b\\eos=[01]\\)|$)/ --> "$1\x1b/+'Em.ma0.'juS.ku.lu\x1b/+$2"

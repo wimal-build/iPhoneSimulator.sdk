@@ -19,7 +19,8 @@
  @class         HKObjectType
  @abstract      An abstract class representing a type of object that can be stored by HealthKit.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS(8_0)\
+
 @interface HKObjectType : NSObject <NSSecureCoding, NSCopying>
 
 /*!

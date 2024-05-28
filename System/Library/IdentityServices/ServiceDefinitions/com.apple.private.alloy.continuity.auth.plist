@@ -20,5 +20,12 @@
 	<integer>2</integer>
 	<key>LaunchDarwinNotification</key>
 	<string>com.apple.continuity.idslaunchnotification</string>
+	<key>DataProtectionClass</key>
+	<string>D</string>
+	<key>AllowedTrafficClasses</key>
+	<array>
+		<string>com.apple.ids.trafficclass.nanoregistry.update</string>
+		<string>com.apple.ids.trafficclass.nanoregistry.configure</string>
+	</array>
 </dict>
 </plist>

@@ -1,0 +1,1 @@
+? [= Facility com.apple.NanoRegistry] file /var/mobile/Library/Logs/com.apple.NanoRegistry.log rotate=local-basic file_max=1000M compress uid=501 gid=501

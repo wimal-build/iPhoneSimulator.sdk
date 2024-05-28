@@ -141,7 +141,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder <UIActionShee
         unsigned int launchEventReceived:1;
         unsigned int activateEventReceived:1;
         unsigned int systemIsAnimatingApplicationLifecycleEvent:1; // suspension, resumption, or system gesture
-        unsigned int isResuming:1;
+        unsigned int isActivating:1; //launch or resume
         unsigned int isSuspendedUnderLock:1;
         unsigned int shouldExitAfterSendSuspend:1;
         unsigned int terminating:1;
@@ -170,6 +170,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder <UIActionShee
         unsigned int delegateSupportsStateRestoration:1;
         unsigned int delegateSupportedInterfaceOrientations:1;        
         unsigned int delegateHandleSiriTask:1;
+        unsigned int delegateSupportsWatchKitRequests:1;
         unsigned int userDefaultsSyncDisabled:1;
         unsigned int headsetButtonClickCount:4;
         unsigned int isHeadsetButtonDown:1;
@@ -427,6 +428,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder <UIActionShee
 // callbacks. If such a session has already been created (if the app is being resumed, for instance), then the delegate will start receiving
 // callbacks without any action by the application. You should call the completionHandler as soon as you're finished handling the callbacks.
 - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler NS_AVAILABLE_IOS(7_0);
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply NS_AVAILABLE_IOS(8_2);
 
 - (void)applicationDidEnterBackground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
 - (void)applicationWillEnterForeground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);

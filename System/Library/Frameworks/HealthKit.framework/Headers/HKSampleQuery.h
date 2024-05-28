@@ -8,6 +8,7 @@
 #import <HealthKit/HealthKit.h>
 #import <HealthKit/HKQuery.h>
 
+// The query returns all samples that match the given sampleType and predicate.
 #define HKObjectQueryNoLimit (0)
 
 /*!

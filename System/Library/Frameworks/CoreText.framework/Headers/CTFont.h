@@ -2,7 +2,7 @@
  *  CTFont.h
  *  CoreText
  *
- *  Copyright (c) 2006-2013 Apple Inc. All rights reserved.
+ *  Copyright (c) 2006-2014 Apple Inc. All rights reserved.
  *
  */
 
@@ -39,7 +39,11 @@ extern "C" {
     @abstract   The Core Text Font reference.
     @discussion This is a opaque reference to a core font object.
 */
-typedef const struct __CTFont * CTFontRef;
+#if TARGET_OS_IPHONE
+typedef const struct CT_BRIDGED_TYPE(UIFont) __CTFont * CTFontRef;
+#else
+typedef const struct CT_BRIDGED_TYPE(NSFont) __CTFont * CTFontRef;
+#endif
 
 /*!
     @function   CTFontGetTypeID

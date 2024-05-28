@@ -49,18 +49,18 @@ typedef NS_ENUM(int, CLAuthorizationStatus) {
 	// location services are disabled in Settings.
 	kCLAuthorizationStatusDenied,
 
-	// This value is deprecated, but was equivalent to the new -Always value.
-	kCLAuthorizationStatusAuthorized NS_ENUM_DEPRECATED(10_6, NA, 2_0, 8_0, "Use kCLAuthorizationStatusAuthorizedAlways"),
-
 	// User has granted authorization to use their location at any time,
 	// including monitoring for regions, visits, or significant location changes.
-	kCLAuthorizationStatusAuthorizedAlways NS_ENUM_AVAILABLE(NA, 8_0) = kCLAuthorizationStatusAuthorized,
+	kCLAuthorizationStatusAuthorizedAlways NS_ENUM_AVAILABLE(NA, 8_0),
 
 	// User has granted authorization to use their location only when your app
 	// is visible to them (it will be made visible to them if you continue to
 	// receive location updates while in the background).  Authorization to use
 	// launch APIs has not been granted.
-	kCLAuthorizationStatusAuthorizedWhenInUse NS_ENUM_AVAILABLE(NA, 8_0)
+	kCLAuthorizationStatusAuthorizedWhenInUse NS_ENUM_AVAILABLE(NA, 8_0),
+
+	// This value is deprecated, but was equivalent to the new -Always value.
+	kCLAuthorizationStatusAuthorized NS_ENUM_DEPRECATED(10_6, NA, 2_0, 8_0, "Use kCLAuthorizationStatusAuthorizedAlways") = kCLAuthorizationStatusAuthorizedAlways
 };
 
 /*

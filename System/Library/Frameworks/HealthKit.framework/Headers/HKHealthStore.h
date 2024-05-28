@@ -9,8 +9,10 @@
 
 @class HKBiologicalSexObject;
 @class HKBloodTypeObject;
+@class HKUnit;
 @class HKObject;
 @class HKObjectType;
+@class HKQuantityType;
 @class HKQuery;
 @class HKWorkout;
 
@@ -49,6 +51,10 @@ NS_EXTENSION_UNAVAILABLE_IOS("HealthKit is not supported in extensions")
                 The success parameter of the completion indicates whether prompting the user, if necessary, completed
                 successfully and was not cancelled by the user.  It does NOT indicate whether the application was
                 granted authorization.
+ 
+                To customize the messages displayed on the authorization sheet, set the following keys in your app's
+                Info.plist file. Set the NSHealthShareUsageDescription key to customize the message for reading data. Set
+                the NSHealthUpdateUsageDescription key to customize the message for writing data.
  */
 - (void)requestAuthorizationToShareTypes:(NSSet *)typesToShare
                                readTypes:(NSSet *)typesToRead
@@ -135,7 +141,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("HealthKit is not supported in extensions")
  @abstract      Associates samples with a given workout
  @discussion    This will associate the given samples with the given workout. These samples will then be returned by a
                 query that contains this workout as a predicate. If a sample is added that is not saved yet, then it will be
-                saved for you. The workout provided has to either be an HKWorkout that has already been saved to HealthKit.
+                saved for you. The workout provided has to be an HKWorkout that has already been saved to HealthKit.
  */
 - (void)addSamples:(NSArray *)samples toWorkout:(HKWorkout *)workout completion:(void(^)(BOOL success, NSError *error))completion;
 
@@ -161,6 +167,32 @@ NS_EXTENSION_UNAVAILABLE_IOS("HealthKit is not supported in extensions")
 
 @end
 
+/*!
+ @constant      HKUserPreferencesDidChangeNotification
+ @abstract      Posted every time the user updates their preferred units.
+ @discussion    Each HKHealthStore will post their HKUserPreferencesDidChangeNotification. To guarantee only one received notification it is
+                necessary to specify an HKHealthStore to the object field in NSNotificationCenter's addObserver methods.
+ */
+HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification NS_AVAILABLE_IOS(8_2);
+
+@interface HKHealthStore (HKUserPreferences)
+
+/*!
+ @method        preferredUnitsForQuantityTypes:completion:
+ @abstract      Calls the completion with the preferred HKUnits for a given set of HKQuantityTypes.
+ @discussion    A preferred unit is either the unit that the user has chosen in Health for displaying samples of the given quantity type or the 
+                default unit for that type in the current locale of the device. To access the user's preferences it is necessary to request 
+                read or share authorization for the set of HKQuantityTypes provided. If neither read nor share authorization has been granted to 
+                the app, then the default unit for the locale is provided.
+ 
+                An error will be returned when preferred units are inaccessible because protected health data is unavailable or authorization status 
+                is not determined for one or more of the provided types.
+ 
+                The returned dictionary will map HKQuantityType to HKUnit.
+ */
+- (void)preferredUnitsForQuantityTypes:(NSSet *)quantityTypes completion:(void(^)(NSDictionary *preferredUnits, NSError *error))completion NS_AVAILABLE_IOS(8_2);
+
+@end
 
 /*!
  @class     HKBiologicalSexObject

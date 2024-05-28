@@ -1,0 +1,41 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.SPM_6.0.3
+
+[header]
+language = SPM
+
+[data]
+# improved rule for "dot com" bug  radar://6779706 to fix radar://7699944 & 7702531
+# rewrite this rule /\.([a-zA-Z]+)\b/ --> " punto $1 "
+/([a-zA-Z])\.com([^\/a-z]|$)/ --> "$1 punto com$2"
+/([a-zA-Z])\.org([^\/a-z]|$)/ --> "$1 punto org$2"
+/([a-zA-Z])\.net([^\/a-z]|$)/ --> "$1 punto net$2"
+/([a-zA-Z])\.gov([^\/a-z]|$)/ --> "$1 punto gov$2"
+/([a-zA-Z])\.edu([^\/a-z]|$)/ --> "$1 punto edu$2"
+/([a-zA-Z])\.info([^\/a-z]|$)/ --> "$1 punto info$2"
+/([a-zA-Z])\.biz([^\/a-z]|$)/ --> "$1 punto biz$2"
+/([a-zA-Z])\.jobs([^\/a-z]|$)/ --> "$1 punto jobs$2"
+/([a-zA-Z])\.coop([^\/a-z]|$)/ --> "$1 punto coop$2"
+/([a-zA-Z])\.ac([^\/a-z]|$)/ --> "$1 punto A C$2"
+/([a-zA-Z])\.us([^\/a-z]|$)/ --> "$1 punto U S$2"
+/([a-zA-Z])\.uk([^\/a-z]|$)/ --> "$1 punto U K$2"
+/([a-zA-Z])\.eu([^\/a-z]|$)/ --> "$1 punto E U$2"
+/([a-zA-Z])\.int([^\/a-z]|$)/ --> "$1 punto int$2"
+/([a-zA-Z])\.co([^\/a-z]|$)/ --> "$1 punto co$2"
+/([a-zA-Z])\.es([^\/a-z]|$)/ --> "$1 punto es$2"
+/([a-zA-Z])\.de([^\/a-z]|$)/ --> "$1 punto D E$2"
+/([a-zA-Z])\.fr([^\/a-z]|$)/ --> "$1 punto F R$2"
+/([a-zA-Z])\.it([^\/a-z]|$)/ --> "$1 punto I T$2"
+/([a-zA-Z])\.be([^\/a-z]|$)/ --> "$1 punto B E$2"
+/([a-zA-Z])\.nl([^\/a-z]|$)/ --> "$1 punto N L$2"
+/([a-zA-Z])\.gr([^\/a-z]|$)/ --> "$1 punto G R$2"
+/([a-zA-Z])\.ru([^\/a-z]|$)/ --> "$1 punto ru$2"
+/([a-zA-Z])\.mx([^\/a-z]|$)/ --> "$1 punto M X$2"
+/([a-zA-Z])\.ca([^\/a-z]|$)/ --> "$1 punto C A$2"
+
+#FB42394
+#Insert pause in De acuerdo. 25 minutos
+/(acuerdo)\.(\s[\d]*\s(?:minuto|segundo|hora)(?:s)?)/i --> "$1, $2"

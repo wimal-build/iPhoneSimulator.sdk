@@ -27,4 +27,16 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 // Key in userInfo. Value is a dictionary of NSExtensionItems and associated NSError instances.
 FOUNDATION_EXTERN NSString *const NSExtensionItemsAndErrorsKey NS_AVAILABLE(10_10, 8_0);
 
+// The host process will enter the foreground
+FOUNDATION_EXTERN NSString *const NSExtensionHostWillEnterForegroundNotification NS_AVAILABLE_IOS(8_2);
+
+// The host process did enter the background
+FOUNDATION_EXTERN NSString *const NSExtensionHostDidEnterBackgroundNotification NS_AVAILABLE_IOS(8_2);
+
+// The host process will resign active status (stop receiving events), the extension may be suspended
+FOUNDATION_EXTERN NSString *const NSExtensionHostWillResignActiveNotification NS_AVAILABLE_IOS(8_2);
+
+// The host process did become active (begin receiving events)
+FOUNDATION_EXTERN NSString *const NSExtensionHostDidBecomeActiveNotification NS_AVAILABLE_IOS(8_2);
+
 #endif

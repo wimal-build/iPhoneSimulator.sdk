@@ -9,10 +9,10 @@ defaultvoice:Paulina
     <language>Mexican Spanish</language>
     <langcode>SPM</langcode>
     <langid>83</langid>
-    <langversion>5.2.3.13323</langversion>
+    <langversion>5.2.4.14055</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Paulina</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13289</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -82,8 +82,18 @@ defaultvoice:Paulina
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/spm
+    </RESOURCE>
     
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/spm
+    </RESOURCE>
     
     
     

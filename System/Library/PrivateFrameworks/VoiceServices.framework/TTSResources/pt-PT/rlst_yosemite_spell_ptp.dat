@@ -1,0 +1,20 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.PTP_6.0.4 & RLS_FE-tuning.PTP_6.0.4
+
+[header]
+language = PTP
+type = spell
+
+[data]
+
+
+#FB35658 radar13830338
+/M/ --> "PLACEHOLDERNORMALTAG \x1b/+'Em.ma0.'juS.ku.lu\x1b/+ \x1b\\pause=100\\ PLACEHOLDERSPELLTAG"
+/^/ --> "PLACEHOLDERSPELLTAG"
+
+
+
+

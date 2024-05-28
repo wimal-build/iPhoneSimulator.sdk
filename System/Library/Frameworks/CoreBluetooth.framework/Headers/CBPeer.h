@@ -14,6 +14,11 @@ CB_EXTERN_CLASS @interface CBPeer : NSObject <NSCopying>
 
 @property(readonly, nonatomic) CFUUIDRef UUID NS_DEPRECATED(NA, NA, 5_0, 7_0);
 
+/*!
+ *  @property identifier
+ *
+ *  @discussion The unique, persistent identifier associated with the peer.
+ */
 @property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
 
 @end

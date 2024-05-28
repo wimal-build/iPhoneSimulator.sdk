@@ -18,5 +18,9 @@
 	<integer>3</integer>
 	<key>AllowMagnetDelivery</key>
 	<true/>
+    <key>AllowDuplicateMessages</key>
+    <true/>
+	<key>DataProtectionClass</key>
+	<string>D</string>
 </dict>
 </plist>
