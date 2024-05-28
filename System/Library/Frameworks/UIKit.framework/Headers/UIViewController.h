@@ -57,7 +57,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIViewController : UIResponder <NSCoding> 
     NSHashTable      *_childViewControllers; // Nonretained
     
     UIViewController *_childModalViewController;
-    UIViewController *_parentModalViewController; // This may be vestigal.
+    UIViewController *_parentModalViewController; // This is vestigial.
     UIView           *_modalTransitionView;
     UIResponder		 *_modalPreservedFirstResponder;
     UIResponder      *_defaultFirstResponder;
@@ -103,7 +103,8 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIViewController : UIResponder <NSCoding> 
 	unsigned int isModalInPopover:1;
         unsigned int restoreDeepestFirstResponder:1;
         unsigned int isInWillRotateCallback:1;
-        unsigned int disallowMixedOrientationPresentations:1;        
+        unsigned int disallowMixedOrientationPresentations:1;
+        unsigned int modalPresentationsAreCurrentContext:1;                
     } _viewControllerFlags;
 }
 
@@ -141,6 +142,9 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIViewController : UIResponder <NSCoding> 
 // Defaults to UIModalTransitionStyleCoverVertical.
 @property(nonatomic,assign) UIModalTransitionStyle modalTransitionStyle __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 @property(nonatomic,assign) UIModalPresentationStyle modalPresentationStyle __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2);
+
+// Presentation modes may keep the keyboard visible when not required. Default implementation affects UIModalPresentationFormSheet visibility.
+- (BOOL)disablesAutomaticKeyboardDismissal __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_3);
 
 @property(nonatomic,assign) BOOL wantsFullScreenLayout __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 

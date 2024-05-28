@@ -163,7 +163,12 @@ typedef unsigned int	IOAlignment;
 
 #ifndef __IOKIT_PORTS_DEFINED__
 #define __IOKIT_PORTS_DEFINED__
+#ifdef __cplusplus
+class OSObject;
+typedef OSObject * io_object_t;
+#else
 typedef struct OSObject * io_object_t;
+#endif
 #endif /* __IOKIT_PORTS_DEFINED__ */
 
 #include <device/device_types.h>
@@ -188,7 +193,8 @@ enum {
     kIOInhibitCache		= 1,
     kIOWriteThruCache		= 2,
     kIOCopybackCache		= 3,
-    kIOWriteCombineCache	= 4
+    kIOWriteCombineCache	= 4,
+    kIOCopybackInnerCache	= 5
 };
 
 // IOMemory mapping options
@@ -197,11 +203,12 @@ enum {
 
     kIOMapCacheMask		= 0x00000700,
     kIOMapCacheShift		= 8,
-    kIOMapDefaultCache		= kIODefaultCache      << kIOMapCacheShift,
-    kIOMapInhibitCache		= kIOInhibitCache      << kIOMapCacheShift,
-    kIOMapWriteThruCache	= kIOWriteThruCache    << kIOMapCacheShift,
-    kIOMapCopybackCache		= kIOCopybackCache     << kIOMapCacheShift,
-    kIOMapWriteCombineCache	= kIOWriteCombineCache << kIOMapCacheShift,
+    kIOMapDefaultCache		= kIODefaultCache       << kIOMapCacheShift,
+    kIOMapInhibitCache		= kIOInhibitCache       << kIOMapCacheShift,
+    kIOMapWriteThruCache	= kIOWriteThruCache     << kIOMapCacheShift,
+    kIOMapCopybackCache		= kIOCopybackCache      << kIOMapCacheShift,
+    kIOMapWriteCombineCache	= kIOWriteCombineCache  << kIOMapCacheShift,
+    kIOMapCopybackInnerCache	= kIOCopybackInnerCache << kIOMapCacheShift,
 
     kIOMapUserOptionsMask	= 0x00000fff,
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2007 Apple Inc. All rights reserved.
+ * Copyright (c) 1998-2009 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -25,14 +25,6 @@
  * 
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-/*
-Copyright (c) 1998 Apple Computer, Inc.	 All rights reserved.
-HISTORY
-    1998-7-13	Godfrey van der Linden(gvdl)
-	Created.
-    1998-10-30	Godfrey van der Linden(gvdl)
-	Converted to C++
-*/
 
 #ifndef __IOKIT_IOWORKLOOP_H
 #define __IOKIT_IOWORKLOOP_H
@@ -91,7 +83,14 @@ private:
     @abstract Static function that calls the threadMain function. 
 */
     static void threadMainContinuation(IOWorkLoop *self);
-
+	
+/*! @function eventSourcePerformsWork
+	@abstract Checks if the event source passed in overrides checkForWork() to perform any work.
+IOWorkLoop uses this to determine if the event source should be polled in runEventSources() or not.
+	@param inEventSource The event source to check.
+*/
+	bool eventSourcePerformsWork(IOEventSource *inEventSource);
+	
 protected:
 
 /*! @typedef maintCommandEnum
@@ -142,6 +141,10 @@ protected:
 */    
     struct ExpansionData {
 	IOOptionBits options;
+	IOEventSource *passiveEventChain;
+#if DEBUG
+	void * allocationBacktrace[16];
+#endif /* DEBUG */
 #if IOKITSTATS
 	struct IOWorkLoopCounter *counter;
 #else
@@ -246,13 +249,13 @@ public:
 
 /*! @function enableAllInterrupts
     @abstract Calls enable() in all interrupt event sources.
-    @discussion For all event sources (ES) for which IODynamicCast(IOInterruptEventSource, ES) is valid, in eventChain call enable() function.  See IOEventSource::enable().
+    @discussion For all event sources (ES) for which OSDynamicCast(IOInterruptEventSource, ES) is valid, in eventChain call enable() function.  See IOEventSource::enable().
 */
     virtual void enableAllInterrupts() const;
 
 /*! @function disableAllInterrupts
     @abstract Calls disable() in all interrupt event sources.
-    @discussion For all event sources (ES) for which IODynamicCast(IOInterruptEventSource, ES) is valid,  in eventChain call disable() function.  See IOEventSource::disable().
+    @discussion For all event sources (ES) for which OSDynamicCast(IOInterruptEventSource, ES) is valid,  in eventChain call disable() function.  See IOEventSource::disable().
 */
     virtual void disableAllInterrupts() const;
 

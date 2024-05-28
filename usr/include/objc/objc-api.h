@@ -57,16 +57,20 @@
 #   endif
 #endif
 
-#if !defined(OBJC_EXPORT)
+#if !defined(OBJC_VISIBLE)
 #   if TARGET_OS_WIN32
 #       if defined(BUILDING_OBJC)
-#           define OBJC_EXPORT OBJC_EXTERN __declspec(dllexport)
+#           define OBJC_VISIBLE __declspec(dllexport)
 #       else
-#           define OBJC_EXPORT OBJC_EXTERN __declspec(dllimport)
+#           define OBJC_VISIBLE __declspec(dllimport)
 #       endif
 #   else
-#       define OBJC_EXPORT OBJC_EXTERN
+#       define OBJC_VISIBLE  __attribute__((visibility("default")))
 #   endif
+#endif
+
+#if !defined(OBJC_EXPORT)
+#   define OBJC_EXPORT  OBJC_EXTERN OBJC_VISIBLE
 #endif
 
 #if !defined(OBJC_IMPORT)
@@ -78,7 +82,7 @@
 #endif
 
 #if !defined(OBJC_INLINE)
-#       define OBJC_INLINE __inline
-#   endif
+#   define OBJC_INLINE __inline
+#endif
 
 #endif

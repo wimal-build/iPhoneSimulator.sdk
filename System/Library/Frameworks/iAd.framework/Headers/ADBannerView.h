@@ -17,7 +17,10 @@ enum {
 #endif
 #if __IPHONE_4_1 <= __IPHONE_OS_VERSION_MAX_ALLOWED
     ADErrorConfigurationError = 4,
-    ADErrorBannerVisibleWithoutContent = 5
+    ADErrorBannerVisibleWithoutContent = 5,
+#endif
+#if __IPHONE_4_3 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+    ADErrorApplicationInactive = 6,
 #endif
 };
 typedef NSUInteger ADError;

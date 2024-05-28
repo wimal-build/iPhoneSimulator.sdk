@@ -83,6 +83,7 @@ enum {
     kIOMemoryMapperNone		= 0x00000800,
     kIOMemoryPersistent		= 0x00010000,
     kIOMemoryThreadSafe		= 0x00100000,	// Shared with Buffer MD
+    kIOMemoryClearEncrypt	= 0x00200000,	// Shared with Buffer MD
 };
 
 #define kIOMapperSystem	((IOMapper *) 0)
@@ -98,6 +99,9 @@ enum
 {
     kIOMemoryIncoherentIOFlush	 = 1,
     kIOMemoryIncoherentIOStore	 = 2,
+
+    kIOMemoryClearEncrypted      = 50,
+    kIOMemorySetEncrypted        = 51,
 };
 
 #define	IOMEMORYDESCRIPTOR_SUPPORTS_DMACOMMAND	1
@@ -120,19 +124,10 @@ class IOMemoryDescriptor : public OSObject
     OSDeclareDefaultStructors(IOMemoryDescriptor);
 
 protected:
-/*! @struct ExpansionData
-    @discussion This structure will be used to expand the capablilties of this class in the future.
-    */    
-    struct ExpansionData {
-        void *				devicePager;
-        unsigned int			pagerContig:1;
-        unsigned int			unused:31;
-	IOMemoryDescriptor *		memory;
-    };
 
 /*! @var reserved
     Reserved for future use.  (Internal use only)  */
-    ExpansionData * reserved;
+    struct IOMemoryDescriptorReserved * reserved;
 
 protected:
     OSSet *		_mappings;
@@ -224,6 +219,8 @@ typedef IOOptionBits DMACommandOps;
 #endif /* !__LP64__ */
 
     virtual uint64_t getPreparationID( void );
+    void             setPreparationID( void );
+
 	
 private:
     OSMetaClassDeclareReservedUsed(IOMemoryDescriptor, 0);
@@ -306,7 +303,7 @@ public:
     @param withLength The length of memory.
     @param options
         kIOMemoryDirectionMask (options:direction)	This nibble indicates the I/O direction to be associated with the descriptor, which may affect the operation of the prepare and complete methods on some architectures. 
-    @param task The task the virtual ranges are mapped into. Note that unlike IOMemoryDescriptor::withAddress(), kernel_task memory must be explicitly prepared when passed to this api.
+    @param task The task the virtual ranges are mapped into. Note that unlike IOMemoryDescriptor::withAddress(), kernel_task memory must be explicitly prepared when passed to this api. The task argument may be NULL to specify memory by physical address.
     @result The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure. */
 
     static IOMemoryDescriptor * withAddressRange(
@@ -323,7 +320,7 @@ public:
     @param options
         kIOMemoryDirectionMask (options:direction)	This nibble indicates the I/O direction to be associated with the descriptor, which may affect the operation of the prepare and complete methods on some architectures. 
         kIOMemoryAsReference	For options:type = Virtual or Physical this indicate that the memory descriptor need not copy the ranges array into local memory.  This is an optimisation to try to minimise unnecessary allocations.
-    @param task The task each of the virtual ranges are mapped into. Note that unlike IOMemoryDescriptor::withAddress(), kernel_task memory must be explicitly prepared when passed to this api.
+    @param task The task each of the virtual ranges are mapped into. Note that unlike IOMemoryDescriptor::withAddress(), kernel_task memory must be explicitly prepared when passed to this api. The task argument may be NULL to specify memory by physical address.
     @result The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure. */
 
     static IOMemoryDescriptor * withAddressRanges(
@@ -611,7 +608,7 @@ protected:
 public:
 /*! @function getVirtualAddress
     @abstract Accessor to the virtual address of the first byte in the mapping.
-    @discussion This method returns the virtual address of the first byte in the mapping.
+    @discussion This method returns the virtual address of the first byte in the mapping. Since the IOVirtualAddress is only 32bit in 32bit kernels, the getAddress() method should be used for compatibility with 64bit task mappings.
     @result A virtual address. */
 
     virtual IOVirtualAddress 	getVirtualAddress();
@@ -696,9 +693,25 @@ public:
 					 mach_vm_size_t       offset = 0);
 
 #ifdef __LP64__
+/*! @function getAddress
+    @abstract Accessor to the virtual address of the first byte in the mapping.
+    @discussion This method returns the virtual address of the first byte in the mapping.
+    @result A virtual address. */
+/*! @function getSize
+    @abstract Accessor to the length of the mapping.
+    @discussion This method returns the length of the mapping.
+    @result A byte count. */
     inline mach_vm_address_t 	getAddress() __attribute__((always_inline));
     inline mach_vm_size_t 	getSize() __attribute__((always_inline));
 #else /* !__LP64__ */
+/*! @function getAddress
+    @abstract Accessor to the virtual address of the first byte in the mapping.
+    @discussion This method returns the virtual address of the first byte in the mapping.
+    @result A virtual address. */
+/*! @function getSize
+    @abstract Accessor to the length of the mapping.
+    @discussion This method returns the length of the mapping.
+    @result A byte count. */
     virtual mach_vm_address_t 	getAddress();
     virtual mach_vm_size_t 	getSize();
 #endif /* !__LP64__ */

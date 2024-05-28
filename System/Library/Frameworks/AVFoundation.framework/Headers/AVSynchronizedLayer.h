@@ -47,6 +47,7 @@
 @class AVPlayerItem;
 @class AVSynchronizedLayerInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVSynchronizedLayer : CALayer
 {
 	AVSynchronizedLayerInternal		*_syncLayer;

@@ -405,7 +405,8 @@ struct stat64 __DARWIN_STRUCT_STAT64;
  */
 /* #define UF_NOUNLINK	0x00000010 */	/* file may not be removed or renamed */
 #define UF_COMPRESSED	0x00000020	/* file is hfs-compressed */
-/* Bits 0x0040 through 0x4000 are currently undefined. */
+#define UF_TRACKED		0x00000040	/* file renames and deletes are tracked */
+/* Bits 0x0080 through 0x4000 are currently undefined. */
 #define UF_HIDDEN	0x00008000	/* hint that this item should not be */
 					/* displayed in a GUI */
 /*

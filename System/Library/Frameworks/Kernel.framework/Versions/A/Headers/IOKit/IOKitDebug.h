@@ -82,6 +82,8 @@ enum {
     kOSRegistryModsMode =         0x00040000ULL,  // Change default registry modification handling - panic vs. log
     kIOTraceIOService   =         0x00080000ULL,
     kIOLogHibernate     =         0x00100000ULL,
+    kIOLogDriverPower1  =         0x01000000ULL,
+    kIOLogDriverPower2  =         0x02000000ULL,
     kIOStatistics       =         0x04000000ULL,
 
     // debug aids - change behaviour
@@ -98,8 +100,17 @@ extern SInt64    gIOKitDebug;
 extern "C" {
 #endif
 
-struct IORegistryPlane;
-extern void    IOPrintPlane( const struct IORegistryPlane * plane );
+#ifdef __cplusplus
+class IORegistryPlane;
+#endif
+
+extern void    IOPrintPlane(
+#ifdef __cplusplus
+                            const IORegistryPlane * plane
+#else
+                            const struct IORegistryPlane * plane
+#endif
+                           );
 #ifndef _OSCPPDEBUG_H
 extern void    OSPrintMemory( void );
 #endif

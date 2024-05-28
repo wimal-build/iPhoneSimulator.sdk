@@ -193,6 +193,7 @@ struct proc_regioninfo {
 #define SM_TRUESHARED      5
 #define SM_PRIVATE_ALIASED 6
 #define SM_SHARED_ALIASED  7
+#define SM_LARGE_PAGE      8
 
 
 /*
@@ -580,6 +581,11 @@ struct proc_fdinfo {
 	uint32_t		proc_fdtype;	
 };
 
+struct proc_fileportinfo {
+	uint32_t		proc_fileport;
+	uint32_t		proc_fdtype;
+};
+
 /* Flavors for proc_pidinfo() */
 #define PROC_PIDLISTFDS			1
 #define PROC_PIDLISTFD_SIZE		(sizeof(struct proc_fdinfo))
@@ -622,6 +628,9 @@ struct proc_fdinfo {
 #define PROC_PIDT_SHORTBSDINFO		13
 #define PROC_PIDT_SHORTBSDINFO_SIZE	(sizeof(struct proc_bsdshortinfo))
 
+#define PROC_PIDLISTFILEPORTS		14
+#define PROC_PIDLISTFILEPORTS_SIZE	(sizeof(struct proc_fileportinfo))
+
 /* Flavors for proc_pidfdinfo */
 
 #define PROC_PIDFDVNODEINFO		1
@@ -647,6 +656,21 @@ struct proc_fdinfo {
 
 #define PROC_PIDFDATALKINFO		8
 #define PROC_PIDFDATALKINFO_SIZE	(sizeof(struct appletalk_fdinfo))
+
+/* Flavors for proc_pidfileportinfo */
+
+#define PROC_PIDFILEPORTVNODEPATHINFO	2	/* out: vnode_fdinfowithpath */
+#define PROC_PIDFILEPORTVNODEPATHINFO_SIZE	\
+					PROC_PIDFDVNODEPATHINFO_SIZE
+
+#define PROC_PIDFILEPORTSOCKETINFO	3	/* out: socket_fdinfo */
+#define PROC_PIDFILEPORTSOCKETINFO_SIZE	PROC_PIDFDSOCKETINFO_SIZE
+
+#define PROC_PIDFILEPORTPSHMINFO	5	/* out: pshm_fdinfo */
+#define PROC_PIDFILEPORTPSHMINFO_SIZE	PROC_PIDFDPSHMINFO_SIZE
+
+#define PROC_PIDFILEPORTPIPEINFO	6	/* out: pipe_fdinfo */
+#define PROC_PIDFILEPORTPIPEINFO_SIZE	PROC_PIDFDPIPEINFO_SIZE
 
 /* used for proc_setcontrol */
 #define PROC_SELFSET_PCONTROL		1

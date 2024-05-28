@@ -55,9 +55,11 @@ struct task_snapshot {
 	uint64_t		user_time_in_terminated_threads;
 	uint64_t		system_time_in_terminated_threads;
 	int				suspend_count; 
-	int				task_size;    // bytes
+	int				task_size;    // pages
+	int				faults;	 	// number of page faults
+	int				pageins; 	// number of actual pageins
+	int				cow_faults;	// number of copy-on-write faults
 	char			ss_flags;
-
 	/* We restrict ourselves to a statically defined
 	 * (current as of 2009) length for the
 	 * p_comm string, due to scoping issues (osfmk/bsd and user/kernel
@@ -67,7 +69,7 @@ struct task_snapshot {
 } __attribute__ ((packed));
 
 
-struct mem_snapshot {
+struct mem_and_io_snapshot {
 	uint32_t	snapshot_magic;
 	uint32_t	free_pages;
 	uint32_t	active_pages;
@@ -75,12 +77,18 @@ struct mem_snapshot {
 	uint32_t	purgeable_pages;
 	uint32_t	wired_pages;
 	uint32_t	speculative_pages;
+	uint32_t	throttled_pages;
+        int		busy_buffer_count;
 } __attribute__((packed));
+
 
 enum {
 	kUser64_p = 0x1,
 	kKernel64_p = 0x2,
-	kHasDispatchSerial = 0x4
+	kHasDispatchSerial = 0x4,
+	kTerminatedSnapshot = 0x8,
+	kPidSuspended = 0x10,  // true for suspended task
+	kFrozen = 0x20         // true for hibernated task (along with pidsuspended)
 };
 
 enum {
@@ -89,10 +97,9 @@ enum {
 	STACKSHOT_GET_GLOBAL_MEM_STATS = 0x4
 };
 
-
-#define STACKSHOT_THREAD_SNAPSHOT_MAGIC 0xfeedface
-#define STACKSHOT_TASK_SNAPSHOT_MAGIC 0xdecafbad
-#define STACKSHOT_MEM_SNAPSHOT_MAGIC  0xabcddcba
+#define STACKSHOT_THREAD_SNAPSHOT_MAGIC 	0xfeedface
+#define STACKSHOT_TASK_SNAPSHOT_MAGIC   	0xdecafbad
+#define STACKSHOT_MEM_AND_IO_SNAPSHOT_MAGIC	0xbfcabcde
 
 #endif /* __APPLE_API_UNSTABLE */
 #endif /* __APPLE_API_PRIVATE */

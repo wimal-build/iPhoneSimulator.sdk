@@ -135,6 +135,27 @@ struct AudioFormatInfo
 typedef struct AudioFormatInfo AudioFormatInfo;
 
 /*!
+    @struct		ExtendedAudioFormatInfo
+    @abstract   this struct is used as a specifier for the kAudioFormatProperty_FormatList property
+    @field      mASBD 
+					an AudioStreamBasicDescription
+    @field      mMagicCookie 
+					a pointer to the decompression info for the data described in mASBD
+    @field      mMagicCookieSize 
+					the size in bytes of mMagicCookie
+	@field		mClassDescription
+					an AudioClassDescription specifying the codec to be used in answering the question.
+*/
+struct ExtendedAudioFormatInfo
+{
+	AudioStreamBasicDescription		mASBD;
+	const void*						mMagicCookie;
+	UInt32							mMagicCookieSize;
+	AudioClassDescription			mClassDescription;
+};
+typedef struct ExtendedAudioFormatInfo ExtendedAudioFormatInfo;
+
+/*!
     @struct		AudioFormatListItem
     @abstract   this struct is used as output from the kAudioFormatProperty_FormatList property
     @field      mASBD 
@@ -243,7 +264,7 @@ typedef struct AudioFormatListItem AudioFormatListItem;
 	@constant   kAudioFormatProperty_ValidateChannelLayout
 					The specifier is an AudioChannelLayout. The property value and size are not used and must be set to NULL.
 					This property validates an AudioChannelLayout. This is useful if the layout has come from an untrusted source such as a file.
-					It returns noErr if the AudioChannelLayout is OK, paramErr if there is a structural problem with the layout,
+					It returns noErr if the AudioChannelLayout is OK, kAudio_ParamError if there is a structural problem with the layout,
 					or kAudioFormatUnknownFormatError for unrecognized layout tags or channel labels.
 	@constant   kAudioFormatProperty_ChannelLayoutForTag
 					Returns the channel descriptions for a standard channel layout.
@@ -385,9 +406,9 @@ enum
 	kAudioFormatProperty_ChannelLayoutForTag			= 'cmpl',
 	kAudioFormatProperty_TagForChannelLayout			= 'cmpt',
 	kAudioFormatProperty_ChannelLayoutName				= 'lonm',
+	kAudioFormatProperty_ChannelLayoutSimpleName		= 'lsnm',
 	kAudioFormatProperty_ChannelLayoutForBitmap			= 'cmpb',
 	kAudioFormatProperty_ChannelName					= 'cnam',
-	kAudioFormatProperty_ChannelLayoutSimpleName		= 'lsnm',
 	kAudioFormatProperty_ChannelShortName				= 'csnm',
 
 	kAudioFormatProperty_TagsForNumberOfChannels		= 'tagc',				

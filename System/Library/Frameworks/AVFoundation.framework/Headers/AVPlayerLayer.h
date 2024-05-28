@@ -42,6 +42,7 @@
 @class AVPlayer;
 @class AVPlayerLayerInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVPlayerLayer : CALayer
 {
 	AVPlayerLayerInternal		*_playerLayer;

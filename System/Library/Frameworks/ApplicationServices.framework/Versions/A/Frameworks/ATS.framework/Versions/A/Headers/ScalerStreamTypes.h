@@ -3,14 +3,22 @@
  
      Contains:   Scaler streaming data structures and constants for OFA 1.x
  
-     Version:    ATS-183.7~9
+     Copyright:  © 1994-2008 by Apple Inc., all rights reserved.
  
-     Copyright:  © 1994-2005 by Apple Computer, Inc., all rights reserved.
+     Warning:    *** APPLE INTERNAL USE ONLY ***
+                 This file may contain unreleased API's
  
-     Bugs?:      For bug reports, consult the following page on
-                 the World Wide Web:
+     BuildInfo:  Built by:            root
+                 On:                  Wed Jul  7 01:55:59 2010
+                 With Interfacer:     3.0d46   (Mac OS X for PowerPC)
+                 From:                ScalerStreamTypes.i
+                     Revision:        1.5
+                     Dated:           2007/01/15 23:28:27
+                     Last change by:  kurita
+                     Last comment:    <rdar://problem/4916090> updated copyright.
  
-                     http://developer.apple.com/bugreporter/
+     Bugs:       Report bugs to Radar component "System Interfaces", "Latest"
+                 List the version information (from above) in the Problem Description.
  
 */
 #ifndef __SCALERSTREAMTYPES__
@@ -32,7 +40,7 @@
 #pragma once
 #endif
 
-#pragma options align=mac68k
+#pragma pack(push, 2)
 
 /* ScalerStream input/output types */
 enum {
@@ -51,11 +59,11 @@ enum {
   eexecBinaryModifierStreamType = 0x00010000, /* encrypted portion of Type1Stream to be binary */
   unicodeMappingModifierStreamType = 0x00020000, /* include glyph ID to unicode mapping info for PDF */
   scalerSpecifcModifierMask     = 0x0000F000, /* for scaler's internal use */
-  streamTypeModifierMask        = (long)0xFFFFF000 /* 16 bits for Apple, 4 bits for scaler */
+  streamTypeModifierMask        = (int)0xFFFFF000 /* 16 bits for Apple, 4 bits for scaler */
 };
 
 /* Possible streamed font formats */
-typedef unsigned long                   scalerStreamTypeFlag;
+typedef UInt32                          scalerStreamTypeFlag;
 enum {
   downloadStreamAction          = 0,    /* Transmit the (possibly sparse) font data */
   asciiDownloadStreamAction     = 1,    /* Transmit font data to a 7-bit ASCII destination */
@@ -67,14 +75,14 @@ enum {
   variationPSOperatorStreamAction = 7   /* Transmit Postscript code necessary to effect variation of a font */
 };
 
-typedef long                            scalerStreamAction;
+typedef SInt32                          scalerStreamAction;
 enum {
   selectAllVariations           = -1    /* Special variationCount value meaning include all variation data */
 };
 
 struct scalerPrerequisiteItem {
-  long                enumeration;            /* Shorthand tag identifying the item */
-  long                size;                   /* Worst case vm in printer item requires */
+  SInt32              enumeration;            /* Shorthand tag identifying the item */
+  SInt32              size;                   /* Worst case vm in printer item requires. Never > than 16-bit quantity */
   unsigned char       name[1];                /* Name to be used by the client when emitting the item (Pascal string) */
 };
 typedef struct scalerPrerequisiteItem   scalerPrerequisiteItem;
@@ -83,37 +91,37 @@ struct scalerStream {
   const char *        targetVersion;          /* <- e.g. Postscript printer name (C string) */
   scalerStreamTypeFlag  types;                /* <->    Data stream formats desired/supplied */
   scalerStreamAction  action;                 /* <-     What action to take */
-  unsigned long       memorySize;             /* -> Worst case memory use (vm) in printer or as sfnt */
-  long                variationCount;         /* <- The number of variations, or selectAllVariations */
+  UInt32              memorySize;             /* -> Worst case memory use (vm) in printer or as sfnt */
+  SInt32              variationCount;         /* <- The number of variations, or selectAllVariations */
   const void *        variations;             /* <- A pointer to an array of the variations (gxFontVariation) */
   union {
                                               /* Normal font streaming information*/
     struct {
       const unsigned short * encoding;        /* <- Intention is * unsigned short[256] */
-      long *              glyphBits;          /* <->    Bitvector: a bit for each glyph, 1 = desired/supplied */
-      char *              name;               /* <->    The printer font name to use/used (C string) */
+      SInt32 *            glyphBits;          /* <->    Bitvector: a bit for each glyph, 1 = desired/supplied */
+      const char *        name;               /* <->    The printer font name to use/used (C string) */
     }                       font;
 
                                               /* Used to obtain a list of prerequisites from the scaler*/
     struct {
-      long                size;               /* ->     Size of the prereq. list in bytes (0 indicates no prerequisites)*/
-      void *              list;               /* <- Pointer to client block to hold list (nil = list size query only) */
+      SInt32              size;               /* ->     Size of the prereq. list in bytes (0 indicates no prerequisites)*/
+      const void *        list;               /* <- Pointer to client block to hold list (nil = list size query only) */
     }                       prerequisiteQuery;
 
-    long                prerequisiteItem;     /* <-     Enumeration value for the prerequisite item to be streamed.*/
+    SInt32              prerequisiteItem;     /* <-     Enumeration value for the prerequisite item to be streamed.*/
 
-    long                variationQueryResult; /* -> Output from the variationQueryStreamAction */
+    SInt32              variationQueryResult; /* -> Output from the variationQueryStreamAction */
   }                       info;
 };
 typedef struct scalerStream             scalerStream;
 struct scalerStreamData {
-  long                hexFlag;                /* Indicates that the data is to be interpreted as hex, versus binary */
-  long                byteCount;              /* Number of bytes in the data being streamed */
+  SInt32              hexFlag;                /* Indicates that the data is to be interpreted as hex, versus binary */
+  SInt32              byteCount;              /* Number of bytes in the data being streamed */
   const void *        data;                   /* Pointer to the data being streamed */
 };
 typedef struct scalerStreamData         scalerStreamData;
 
-#pragma options align=reset
+#pragma pack(pop)
 
 
 #endif /* __SCALERSTREAMTYPES__ */

@@ -29,6 +29,7 @@
 #define _OBJC_OBJC_H_
 
 #include <sys/types.h>      // for __DARWIN_NULL
+#include <Availability.h>
 #include <objc/objc-api.h>
 
 
@@ -61,10 +62,18 @@ typedef signed char		BOOL;
 #define __strong /* empty */
 #endif
 
-OBJC_EXPORT const char *sel_getName(SEL sel);
-OBJC_EXPORT SEL sel_registerName(const char *str);
-OBJC_EXPORT const char *object_getClassName(id obj);
-OBJC_EXPORT void *object_getIndexedIvars(id obj);
+OBJC_EXPORT const char *sel_getName(SEL sel)
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+OBJC_EXPORT SEL sel_registerName(const char *str)
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+OBJC_EXPORT const char *object_getClassName(id obj)
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+OBJC_EXPORT void *object_getIndexedIvars(id obj)
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+OBJC_EXPORT BOOL sel_isMapped(SEL sel)
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
+OBJC_EXPORT SEL sel_getUid(const char *str)
+    __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
 
 
 #if !__OBJC2__
@@ -80,9 +89,6 @@ OBJC_EXPORT void *object_getIndexedIvars(id obj);
     typedef unsigned uarith_t;
 #   define ARITH_SHIFT 16
 #endif
-
-OBJC_EXPORT BOOL sel_isMapped(SEL sel);
-OBJC_EXPORT SEL sel_getUid(const char *str);
 
 typedef char *STR;
 

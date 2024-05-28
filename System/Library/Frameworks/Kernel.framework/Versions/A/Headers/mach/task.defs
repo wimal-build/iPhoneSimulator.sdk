@@ -70,6 +70,8 @@ subsystem
 
 #include <mach/std_types.defs>
 #include <mach/mach_types.defs>
+#include <mach_debug/mach_debug_types.defs>
+
 /*
  *	Create a new task with an empty set of IPC rights,
  *	and having an address space constructed from the
@@ -332,7 +334,16 @@ routine task_set_ras_pc(
 		boundspc        : vm_address_t);
 
 
-skip; /* was kernel_task_create() */
+/*
+ * Return zone info as seen/used by this task.
+ */
+routine task_zone_info(
+		target_task	: task_t;
+	out	names		: mach_zone_name_array_t,
+					Dealloc;
+	out	info		: task_zone_info_array_t,
+					Dealloc);
+
 
 /* 
  * JMM - Want to eliminate processor_set so keep them at the end.

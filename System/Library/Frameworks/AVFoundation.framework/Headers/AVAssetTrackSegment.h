@@ -18,6 +18,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CMTimeRange.h>
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAssetTrackSegment : NSObject
 {
 @private

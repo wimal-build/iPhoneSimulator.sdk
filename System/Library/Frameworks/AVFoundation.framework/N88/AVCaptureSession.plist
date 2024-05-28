@@ -45,6 +45,8 @@
 			<dict>
 				<key>PresetName</key>
 				<string>v</string>
+				<key>OverridePrefixes</key>
+				<string>V:,V_ALL:</string>
 				<key>VideoCodec</key>
 				<string>avc1</string>
 				<key>LiveSourceOptions</key>
@@ -72,6 +74,8 @@
 			<dict>
 				<key>PresetName</key>
 				<string>p</string>
+				<key>OverridePrefixes</key>
+				<string>P:</string>
 				<key>ExcludedOutputs</key>
 				<dict>
 					<key>AVCaptureAudioDataOutput</key>
@@ -278,63 +282,6 @@
 					<integer>1</integer>
 					<key>AverageDataRate</key>
 					<integer>16000</integer>
-				</dict>
-			</dict>
-			<key>AVCaptureSessionPresetiFrame</key>
-			<dict>
-				<key>Description</key>
-				<string>iFrame Video</string>
-				<key>LiveSourceOptions</key>
-				<dict>
-					<key>Sensor</key>
-					<dict>
-						<key>Width</key>
-						<integer>960</integer>
-						<key>Height</key>
-						<integer>540</integer>
-						<key>PixelFormatType</key>
-						<string>420v</string>
-					</dict>
-					<key>Preview</key>
-					<dict>
-						<key>Width</key>
-						<integer>480</integer>
-						<key>Height</key>
-						<integer>270</integer>
-					</dict>
-					<key>Capture</key>
-					<dict>
-						<key>Width</key>
-						<integer>960</integer>
-						<key>Height</key>
-						<integer>540</integer>
-					</dict>
-					<key>MinFrameRate</key>
-					<integer>30</integer>
-					<key>MaxFrameRate</key>
-					<integer>30</integer>
-					<key>Binned</key>
-					<true/>
-					<key>TemporalNoiseReductionMode</key>
-					<integer>1</integer>
-				</dict>
-				<key>VideoCompressionProperties</key>
-				<dict>
-					<key>FrameLevelRateControl</key>
-					<integer>2</integer>
-					<key>ProfileLevel</key>
-					<string>H264_Baseline_3_1</string>
-					<key>MaxKeyFrameIntervalDuration</key>
-					<real>0.01</real>
-					<key>AverageDataRate</key>
-					<integer>3125000</integer>
-					<key>ConvergenceDurationForAverageDataRate</key>
-					<integer>60</integer>
-					<key>DataRateLimits</key>
-					<array>
-						<integer>0</integer>
-						<integer>0</integer>
-					</array>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset640x480</key>

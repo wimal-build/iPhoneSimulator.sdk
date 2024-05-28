@@ -41,6 +41,9 @@ __BEGIN_DECLS
  */
 #define kIOPSNotifyLowBattery   "com.apple.system.powersources.lowbattery"
 
+/*! @enum Low battery warning types
+    @discussion
+ */
 typedef enum {
 /*! @constant kIOPSLowBatteryWarningNone
     @abstract The system is not in a low battery situation, or is on drawing from an external power source.
@@ -131,7 +134,7 @@ CFDictionaryRef IOPSGetPowerSourceDescription(CFTypeRef blob, CFTypeRef ps);
     @result Returns NULL if an error was encountered, otherwise a CFRunLoopSource. Caller must
         release the CFRunLoopSource.
 */
-CFRunLoopSourceRef IOPSNotificationCreateRunLoopSource(IOPowerSourceCallbackType, void *);
+CFRunLoopSourceRef IOPSNotificationCreateRunLoopSource(IOPowerSourceCallbackType callback, void *context);
 
 
 /*! @function IOPSCopyExternalPowerAdapterDetails

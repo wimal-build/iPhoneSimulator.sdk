@@ -35,7 +35,6 @@
 				<string>DropUpdateItemAlbumBlankTrigger</string>
 				<string>DropUpdateItemComposerBlankTrigger</string>
 				<string>DropUpdateItemGroupingBlankTrigger</string>
-				<string>DropUpdateItemViewMembershipTrigger</string>
 				<string>DropUpdateItemSortTitleTrigger</string>
 				<string>DropUpdateItemMediaKindTrigger</string>
 				<string>Drop_trigger_avformat_info_insert</string>
@@ -54,6 +53,7 @@
 				<string>RemoveNullFromAlbumName</string>
 				<string>RemoveNullFromArtistName</string>
 				<string>RemoveNullFromComposerName</string>
+				<string>PopulateEmptyTVShowArtistsWithShowName</string>
 				<string>Artist2RenameArtistTable</string>
 				<string>Artist2CreateTable</string>
 				<string>Artist2PopulateTableWithArtistName</string>
@@ -70,6 +70,7 @@
 				<string>FixupTVShowsWithoutAlbum</string>
 				<string>MarkMusicVideosAsSongs</string>
 				<string>MarkExplicitGroupingContentRatingAsExplicit</string>
+				<string>PopulateMissingEpisodeSortIDs</string>
 				<string>PopulateMissingEpisodeIDs</string>
 				<string>AddTitleBlankColumn</string>
 				<string>AddArtistBlankColumn</string>
@@ -98,6 +99,8 @@
 				<string>AddAlbumTableSortArtistColumn</string>
 				<string>AddAlbumTableSortArtistSectionColumn</string>
 				<string>AddAlbumArtistPidColumn</string>
+				<string>AddItemIsDownloadingColumn</string>
+				<string>AddItemDownloadIdentifierColumn</string>
 				<string>DenormalizeItemAlbum</string>
 				<string>DropSortMap</string>
 				<string>CreateSortMap</string>
@@ -141,12 +144,8 @@
 				<string>NormalizeItemArtistStringProperties</string>
 				<string>NormalizeComposerStringProperties</string>
 				<string>UpdateAlbumArtistPidColumn</string>
-				<string>CreateUpdateItemViewMembershipTrigger</string>
 				<string>CreateUpdateItemSortTitleTrigger</string>
 				<string>CreateUpdateItemMediaKindTrigger</string>
-				<string>DropExtItemViewMembershipTable</string>
-				<string>CreateExtItemViewMembershipTable</string>
-				<string>PopulateExtItemViewMembershipTable</string>
 				<string>AddAlbumArtistNameBlankColumn</string>
 				<string>UpdateAlbumArtistNameBlankColumn</string>
 				<string>AddItemArtistNameBlankColumn</string>
@@ -194,11 +193,11 @@
 				<string>CreateIndex_PodcastVideosSections</string>
 				<string>CreateIndex_TVShowEpisodes</string>
 				<string>CreateIndex_Rentals</string>
-                <string>CreateIndex_iTunesUExistence</string>
-                <string>CreateIndex_MovieExistence</string>
-                <string>CreateIndex_ItemsInContainer</string>
-                <string>CreateIndex_ItemGeniusID</string>
-                <string>CreateIndex_RemoteUIGenreAlbum</string>
+				<string>CreateIndex_iTunesUExistence</string>
+				<string>CreateIndex_MovieExistence</string>
+				<string>CreateIndex_ItemsInContainer</string>
+				<string>CreateIndex_ItemGeniusID</string>
+				<string>CreateIndex_RemoteUIGenreAlbum</string>
 				<string>Analyze</string>
 				<string>MarkITunesCommandsExecuted_CurrentVersion</string>
 			</array>
@@ -206,12 +205,8 @@
 	</dict>
 	<key>SQLCommands</key>
 	<dict>
-		<key>DropExtItemViewMembershipTable</key>
-		<string>DROP TABLE IF EXISTS ext_item_view_membership;</string>
-		<key>CreateExtItemViewMembershipTable</key>
-		<string>CREATE TABLE ext_item_view_membership (item_pid INTEGER PRIMARY KEY, movie_mbr INTEGER, movie_rental_mbr INTEGER );</string>
-		<key>PopulateExtItemViewMembershipTable</key>
-		<string>INSERT INTO ext_item_view_membership (item_pid, movie_mbr, movie_rental_mbr) SELECT pid, (is_movie AND (NOT is_rental) AND (NOT is_podcast)), (is_movie AND is_rental) FROM item;</string>
+		<key>PopulateEmptyTVShowArtistsWithShowName</key>
+		<string>UPDATE item SET artist = (SELECT series_name FROM video_info WHERE item.pid = video_info.item_pid), sort_artist = (SELECT sort_series_name FROM video_info WHERE item.pid = video_info.item_pid) WHERE is_tv_show AND artist = &apos;&apos; ;</string>
 		<key>DropItemArtistTable</key>
 		<string>DROP TABLE IF EXISTS item_artist;</string>
 		<key>DropAlbumArtistTable</key>
@@ -246,8 +241,10 @@
 		<string>UPDATE item SET is_song = 1 WHERE is_music_video = 1;</string>
 		<key>MarkExplicitGroupingContentRatingAsExplicit</key>
 		<string>UPDATE item SET content_rating = 1, content_rating_level = 1000 WHERE grouping LIKE &apos;explicit&apos;;</string>
+		<key>PopulateMissingEpisodeSortIDs</key>
+		<string>UPDATE video_info SET episode_sort_id = (SELECT track_number FROM item WHERE pid=item_pid) WHERE (episode_sort_id IS NULL) AND (SELECT is_tv_show FROM item WHERE pid=item_pid) = 1;</string>
 		<key>PopulateMissingEpisodeIDs</key>
-		<string>UPDATE video_info SET episode_id = (SELECT track_number FROM item WHERE pid=item_pid), episode_sort_id = IFNULL((SELECT track_number FROM item WHERE pid=item_pid), 0) WHERE (episode_id IS NULL) AND (SELECT is_tv_show FROM item WHERE pid=item_pid) = 1;</string>
+		<string>UPDATE video_info SET episode_id = episode_sort_id WHERE (episode_id IS NULL) AND (SELECT is_tv_show FROM item WHERE pid=item_pid) = 1;</string>
 		<key>RemoveNullFromItemArtist</key>
 		<string>UPDATE item SET artist = &apos;&apos; WHERE artist IS NULL;</string>
 		<key>RemoveNullFromItemAlbum</key>
@@ -270,6 +267,10 @@
 		<string>CREATE TABLE IF NOT EXISTS extras.chapter (item_pid INTEGER NOT NULL, data BLOB, PRIMARY KEY (item_pid));</string>
 		<key>AddAlbumArtistPidColumn</key>
 		<string>ALTER TABLE item ADD COLUMN album_artist_pid INTEGER NOT NULL DEFAULT 0;</string>
+		<key>AddItemIsDownloadingColumn</key>
+		<string>ALTER TABLE item ADD COLUMN is_downloading INTEGER NOT NULL DEFAULT 0;</string>
+		<key>AddItemDownloadIdentifierColumn</key>
+		<string>ALTER TABLE item ADD COLUMN download_identifier TEXT;</string>
 		<key>UpdateAlbumArtistPidColumn</key>
 		<string>UPDATE item SET album_artist_pid = (SELECT album_artist.pid FROM album_artist JOIN album ON album.artist_pid = album_artist.pid WHERE album.pid = item.album_pid);</string>
 		<key>AddInSongsCollectionColumn</key>
@@ -376,12 +377,6 @@ WHERE item.pid = new.item_pid;
 END;</string>
 		<key>Drop_trigger_avformat_info_insert</key>
 		<string>DROP TRIGGER IF EXISTS trigger_avformat_info_insert;</string>
-		<key>DropUpdateItemViewMembershipTrigger</key>
-		<string>DROP TRIGGER IF EXISTS update_is_kind_of_field;</string>
-		<key>CreateUpdateItemViewMembershipTrigger</key>
-		<string>CREATE TRIGGER IF NOT EXISTS update_is_kind_of_field AFTER UPDATE OF is_song, is_audio_book, is_music_video, is_movie, is_tv_show, is_ringtone, is_podcast, is_rental ON item BEGIN
-INSERT OR REPLACE INTO ext_item_view_membership(item_pid, movie_mbr, movie_rental_mbr) VALUES(new.pid, (new.is_movie AND (NOT new.is_rental) AND (NOT new.is_podcast)), (new.is_movie AND new.is_rental));
-END;</string>
 		<key>UpdateItemToContainerForEditing</key>
 		<string>UPDATE item_to_container SET physical_order = (CASE WHEN ((-4294967296 &lt; physical_order) AND (physical_order &lt; 4294967296)) THEN (physical_order * 4294967296) ELSE physical_order END);</string>
 		<key>CreateBackupItemToContainerTable</key>
@@ -556,37 +551,37 @@ END;</string>
 		<key>UpdateSortMapNameSection</key>
 		<string>UPDATE sort_map SET name_section = iPhoneSortSection(sort_key);</string>
 		<key>CreateIndex_ItemDefaultOrdering</key>
-		<string>CREATE INDEX ItemDefaultOrdering ON item (title_order, artist_order, album_order, album_pid, disc_number, track_number);</string>
+		<string>CREATE INDEX ItemDefaultOrdering ON item (title_order, artist_order, album_order, album_pid, disc_number, track_number, is_song, title_blank);</string>
 		<key>CreateIndex_ItemAlbumsDefaultOrdering</key>
-		<string>CREATE INDEX ItemAlbumsDefaultOrdering ON item (album_order, album_pid, disc_number, track_number, title_order);</string>
+		<string>CREATE INDEX ItemAlbumsDefaultOrdering ON item (album_order, album_pid, disc_number, track_number, title_order, is_song, album_blank);</string>
 		<key>CreateIndex_ArtistsDefaultOrdering</key>
-		<string>CREATE INDEX ArtistsDefaultOrdering ON item (artist_order, artist_pid, album_pid);</string>
+		<string>CREATE INDEX ArtistsDefaultOrdering ON item (artist_order, artist_pid, album_pid, is_song, artist_blank);</string>
 		<key>CreateIndex_AlbumAllArtistsDefaultOrdering</key>
 		<string>CREATE INDEX AlbumAllArtistsDefaultOrdering ON item (disc_number, track_number, title_order, artist_order);</string>
 		<key>CreateIndex_AlbumArtistsDefaultOrdering</key>
 		<string>CREATE INDEX AlbumArtistsDefaultOrdering ON item (album_artist_order, album_order, title_order);</string>
 		<key>CreateIndex_ComposersDefaultOrdering</key>
-		<string>CREATE INDEX ComposersDefaultOrdering ON item (composer_order, album_order, disc_number, track_number, title_order);</string>
+		<string>CREATE INDEX ComposersDefaultOrdering ON item (composer_order, album_order, title_order, is_song, composer_blank);</string>
 		<key>CreateIndex_GenresDefaultOrdering</key>
-		<string>CREATE INDEX GenresDefaultOrdering ON item (genre_order, genre_id, album_pid);</string>
+		<string>CREATE INDEX GenresDefaultOrdering ON item (genre_order, genre_id, album_pid, is_song);</string>
 		<key>CreateIndex_PodcastEpisodesDefaultOrdering</key>
 		<string>CREATE INDEX PodcastEpisodesDefaultOrdering ON item (track_number, title_order);</string>
 		<key>CreateIndex_SongItems_Sections</key>
 		<string>CREATE INDEX SongsItems_Sections ON item (is_song, title_blank, title_order_section);</string>
 		<key>CreateIndex_SongArtists_Sections</key>
-		<string>CREATE INDEX SongArtists_Sections ON item (is_song, artist_blank, artist_order_section, artist_pid);</string>
+		<string>CREATE INDEX SongArtists_Sections ON item (artist_order_section, artist_pid, is_song, artist_blank);</string>
 		<key>CreateIndex_SongAlbums_Sections</key>
-		<string>CREATE INDEX SongAlbums_Sections ON item (is_song, album_blank, album_order_section);</string>
+		<string>CREATE INDEX SongAlbums_Sections ON item (album_order_section, album_pid, is_song, album_blank);</string>
 		<key>CreateIndex_SongAlbumArtists_Sections</key>
 		<string>CREATE INDEX SongAlbumArtists_Sections ON item (is_song, album_artist_blank, album_artist_order_section);</string>
 		<key>CreateIndex_SongGenres_Sections</key>
-		<string>CREATE INDEX SongGenres_Sections ON item (is_song, genre_blank, genre_order_section);</string>
+		<string>CREATE INDEX SongGenres_Sections ON item (genre_order_section, genre_id, is_song);</string>
 		<key>CreateIndex_SongComposers_Sections</key>
-		<string>CREATE INDEX SongComposers_Sections ON item (is_song, composer_blank, composer_order_section);</string>
+		<string>CREATE INDEX SongComposers_Sections ON item (composer_order_section, composer_pid, is_song, composer_blank);</string>
 		<key>CreateIndex_ArtistItems_Sections</key>
 		<string>CREATE INDEX ArtistItems_Sections ON item (is_song, artist_pid, title_order_section);</string>
 		<key>CreateIndex_ArtistAlbums_Sections</key>
-		<string>CREATE INDEX ArtistItems_Sections ON item (is_song, artist_pid, album_order_section);</string>
+		<string>CREATE INDEX ArtistAlbums_Sections ON item (is_song, album_blank, artist_pid, album_order_section);</string>
 		<key>CreateIndex_GenreItems_Sections</key>
 		<string>CREATE INDEX GenreItems_Sections ON item (is_song, title_blank, genre_id, title_order_section);</string>
 		<key>CreateIndex_GenreArtists_Sections</key>
@@ -612,9 +607,9 @@ END;</string>
 		<key>CreateIndex_RemoteUIGenreAlbum</key>
 		<string>CREATE INDEX RemoteUIGenreAlbum ON item (artist, album_order, album_pid, disc_number, track_number, title_order);</string>
 		<key>MarkITunesCommandsExecuted_CurrentVersion</key>
-		<string>INSERT OR REPLACE INTO ml_database_status (key, value) VALUES (&apos;iTunesCommandsExecuted&apos;, &apos;141&apos;);</string>
+		<string>INSERT OR REPLACE INTO ml_database_status (key, value) VALUES (&apos;iTunesCommandsExecuted&apos;, &apos;142&apos;);</string>
 		<key>Version</key>
-		<integer>141</integer>
+		<integer>142</integer>
 	</dict>
 </dict>
 </plist>

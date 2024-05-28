@@ -216,6 +216,13 @@ CM_EXPORT const CMBufferCallbacks *CMBufferQueueGetCallbacksForUnsortedSampleBuf
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 
 /*!
+	 @function	CMBufferQueueGetCallbacksForOutputPTSSortedSampleBuffers
+	 @abstract	Returns a pointer to a callback struct for CMSampleBuffers sorted by output presentation timestamp, provided as a convenience.
+ */
+CM_EXPORT const CMBufferCallbacks *CMBufferQueueGetCallbacksForSampleBuffersSortedByOutputPTS(void)
+							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_3);
+
+/*!
 	@function	CMBufferQueueCreate
 	@abstract	Creates a CMBufferQueue object.
 	@discussion	On return, the caller owns the returned CMBufferQueue, and must release it when done with it.

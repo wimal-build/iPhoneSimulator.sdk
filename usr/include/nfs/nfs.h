@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2009 Apple Inc.  All rights reserved.
+ * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -146,14 +146,66 @@ __private_extern__ int nfs_ticks;
  * (These sizes are always a power of 2. If the kernel malloc() changes
  *  to one that does not allocate space in powers of 2 size, then this all
  *  becomes bunk!).
- * Note that some of these structures come out of there own nfs zones.
-*/
+ * Note that some of these structures come out of their own nfs zones.
+ */
 #define NFS_NODEALLOC	1024
 #define NFS_MNTALLOC	1024
 #define NFS_SVCALLOC	512
 
+#define NFS_ARGSVERSION_XDR	88	/* NFS mount args are in XDR format */
+
+#define NFS_XDRARGS_VERSION_0	0
+#define NFS_MATTR_BITMAP_LEN	1		/* length of mount attributes bitmap */
+#define NFS_MFLAG_BITMAP_LEN	1		/* length of mount flags bitmap */
+
+/* NFS mount attributes */
+#define NFS_MATTR_FLAGS			0	/* mount flags (NFS_MATTR_*) */
+#define NFS_MATTR_NFS_VERSION		1	/* NFS protocol version */
+#define NFS_MATTR_NFS_MINOR_VERSION	2	/* NFS protocol minor version */
+#define NFS_MATTR_READ_SIZE		3	/* READ RPC size */
+#define NFS_MATTR_WRITE_SIZE		4	/* WRITE RPC size */
+#define NFS_MATTR_READDIR_SIZE		5	/* READDIR RPC size */
+#define NFS_MATTR_READAHEAD		6	/* block readahead count */
+#define NFS_MATTR_ATTRCACHE_REG_MIN	7	/* minimum attribute cache time */
+#define NFS_MATTR_ATTRCACHE_REG_MAX	8	/* maximum attribute cache time */
+#define NFS_MATTR_ATTRCACHE_DIR_MIN	9	/* minimum attribute cache time for dirs */
+#define NFS_MATTR_ATTRCACHE_DIR_MAX	10	/* maximum attribute cache time for dirs */
+#define NFS_MATTR_LOCK_MODE		11	/* advisory file locking mode (NFS_LOCK_MODE_*) */
+#define NFS_MATTR_SECURITY		12	/* RPC security flavors to use */
+#define NFS_MATTR_MAX_GROUP_LIST	13	/* max # of RPC AUTH_SYS groups */
+#define NFS_MATTR_SOCKET_TYPE		14	/* socket transport type as a netid-like string */
+#define NFS_MATTR_NFS_PORT		15	/* port # to use for NFS protocol */
+#define NFS_MATTR_MOUNT_PORT		16	/* port # to use for MOUNT protocol */
+#define NFS_MATTR_REQUEST_TIMEOUT	17	/* initial RPC request timeout value */
+#define NFS_MATTR_SOFT_RETRY_COUNT	18	/* max RPC retransmissions for soft mounts */
+#define NFS_MATTR_DEAD_TIMEOUT		19	/* how long until unresponsive mount is considered dead */
+#define NFS_MATTR_FH			20	/* file handle for mount directory */
+#define NFS_MATTR_FS_LOCATIONS		21	/* list of locations for the file system */
+
+/* NFS mount flags */
+#define NFS_MFLAG_SOFT			0	/* soft mount (requests fail if unresponsive) */
+#define NFS_MFLAG_INTR			1	/* allow operations to be interrupted */
+#define NFS_MFLAG_RESVPORT		2	/* use a reserved port */
+#define NFS_MFLAG_NOCONNECT		3	/* don't connect the socket (UDP) */
+#define NFS_MFLAG_DUMBTIMER		4	/* don't estimate RTT dynamically */
+#define NFS_MFLAG_CALLUMNT		5	/* call MOUNTPROC_UMNT on unmount */
+#define NFS_MFLAG_RDIRPLUS		6	/* request additional info when reading directories */
+#define NFS_MFLAG_NONEGNAMECACHE	7	/* don't do negative name caching */
+#define NFS_MFLAG_MUTEJUKEBOX		8	/* don't treat jukebox errors as unresponsive */
+#define NFS_MFLAG_EPHEMERAL		9	/* ephemeral (mirror) mount */
+#define NFS_MFLAG_NOCALLBACK		10	/* don't provide callback RPC service */
+#define NFS_MFLAG_NONAMEDATTR		11	/* don't use named attributes */
+#define NFS_MFLAG_NOACL			12	/* don't support ACLs */
+#define NFS_MFLAG_ACLONLY		13	/* only support ACLs - not mode */
+#define NFS_MFLAG_NFC			14	/* send NFC strings */
+
+/* NFS advisory file locking modes */
+#define NFS_LOCK_MODE_ENABLED		0	/* advisory file locking enabled */
+#define NFS_LOCK_MODE_DISABLED		1	/* do not support advisory file locking */
+#define NFS_LOCK_MODE_LOCAL		2	/* perform advisory file locking locally */
+
 /*
- * Arguments to mount NFS
+ * Old-style arguments to mount NFS
  */
 #define NFS_ARGSVERSION	6		/* change when nfs_args changes */
 struct nfs_args {
@@ -185,83 +237,15 @@ struct nfs_args {
 	/* NFS_ARGSVERSION 5 ends here */
 	uint32_t	deadtimeout;	/* secs until unresponsive mount considered dead */
 };
-struct nfs_args5 {
-	int		version;	/* args structure version number */
-	struct sockaddr	*addr;		/* file server address */
-	int		addrlen;	/* length of address */
-	int		sotype;		/* Socket type */
-	int		proto;		/* and Protocol */
-	u_char		*fh;		/* File handle to be mounted */
-	int		fhsize;		/* Size, in bytes, of fh */
-	int		flags;		/* flags */
-	int		wsize;		/* write size in bytes */
-	int		rsize;		/* read size in bytes */
-	int		readdirsize;	/* readdir size in bytes */
-	int		timeo;		/* initial timeout in .1 secs */
-	int		retrans;	/* times to retry send */
-	int		maxgrouplist;	/* Max. size of group list */
-	int		readahead;	/* # of blocks to readahead */
-	int		leaseterm;	/* obsolete: Term (sec) of lease */
-	int		deadthresh;	/* obsolete: Retrans threshold */
-	char		*hostname;	/* server's name */
-	/* NFS_ARGSVERSION 3 ends here */
-	int		acregmin;	/* reg file min attr cache timeout */
-	int		acregmax;	/* reg file max attr cache timeout */
-	int		acdirmin;	/* dir min attr cache timeout */
-	int		acdirmax;	/* dir max attr cache timeout */
-	/* NFS_ARGSVERSION 4 ends here */
-	uint32_t	auth;		/* security mechanism flavor */
-};
-struct nfs_args4 {
-	int		version;	/* args structure version number */
-	struct sockaddr	*addr;		/* file server address */
-	int		addrlen;	/* length of address */
-	int		sotype;		/* Socket type */
-	int		proto;		/* and Protocol */
-	u_char		*fh;		/* File handle to be mounted */
-	int		fhsize;		/* Size, in bytes, of fh */
-	int		flags;		/* flags */
-	int		wsize;		/* write size in bytes */
-	int		rsize;		/* read size in bytes */
-	int		readdirsize;	/* readdir size in bytes */
-	int		timeo;		/* initial timeout in .1 secs */
-	int		retrans;	/* times to retry send */
-	int		maxgrouplist;	/* Max. size of group list */
-	int		readahead;	/* # of blocks to readahead */
-	int		leaseterm;	/* obsolete: Term (sec) of lease */
-	int		deadthresh;	/* obsolete: Retrans threshold */
-	char		*hostname;	/* server's name */
-	/* NFS_ARGSVERSION 3 ends here */
-	int		acregmin;	/* reg file min attr cache timeout */
-	int		acregmax;	/* reg file max attr cache timeout */
-	int		acdirmin;	/* dir min attr cache timeout */
-	int		acdirmax;	/* dir max attr cache timeout */
-};
 
-struct nfs_args3 {
-	int		version;	/* args structure version number */
-	struct sockaddr	*addr;		/* file server address */
-	int		addrlen;	/* length of address */
-	int		sotype;		/* Socket type */
-	int		proto;		/* and Protocol */
-	u_char		*fh;		/* File handle to be mounted */
-	int		fhsize;		/* Size, in bytes, of fh */
-	int		flags;		/* flags */
-	int		wsize;		/* write size in bytes */
-	int		rsize;		/* read size in bytes */
-	int		readdirsize;	/* readdir size in bytes */
-	int		timeo;		/* initial timeout in .1 secs */
-	int		retrans;	/* times to retry send */
-	int		maxgrouplist;	/* Max. size of group list */
-	int		readahead;	/* # of blocks to readahead */
-	int		leaseterm;	/* obsolete: Term (sec) of lease */
-	int		deadthresh;	/* obsolete: Retrans threshold */
-	char		*hostname;	/* server's name */
-};
+/* incremental size additions in each version of nfs_args */
+#define NFS_ARGSVERSION4_INCSIZE	(4 * sizeof(int))
+#define NFS_ARGSVERSION5_INCSIZE	(sizeof(uint32_t))
+#define NFS_ARGSVERSION6_INCSIZE	(sizeof(uint32_t))
 
 
 /*
- * NFS mount option flags
+ * Old-style NFS mount option flags
  */
 #define	NFSMNT_SOFT		0x00000001  /* soft mount (hard is default) */
 #define	NFSMNT_WSIZE		0x00000002  /* set write size */
@@ -490,6 +474,7 @@ struct nfsstats {
  * Flags for nfsclnt() system call.
  */
 #define NFSCLNT_LOCKDANS	0x200
+#define NFSCLNT_LOCKDNOTIFY	0x400
 
 /*
  * fs.nfs sysctl(3) identifiers

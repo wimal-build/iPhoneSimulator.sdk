@@ -37,7 +37,7 @@ enum {
     ALAssetsGroupEvent          = (1 << 2),         // All the events synced from iTunes.
     ALAssetsGroupFaces          = (1 << 3),         // All the faces albums synced from iTunes.
     ALAssetsGroupSavedPhotos    = (1 << 4),         // The Saved Photos album.
-    ALAssetsGroupAll            = 0xFFFFFFFF,       // The same as ORing together all the group types.
+    ALAssetsGroupAll            = 0xFFFFFFFF,       // The same as ORing together all the available group types.
 };
 typedef NSUInteger ALAssetsGroupType;
 

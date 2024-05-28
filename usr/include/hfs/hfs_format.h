@@ -576,9 +576,9 @@ enum {
 	 * HFS only has 16 bits of attributes in the MDB, but HFS Plus has 32 bits.
 	 * Therefore, bits 16-31 can only be used on HFS Plus.
 	 */
-	kHFSUnusedNodeFixBit		= 31,		/* Unused nodes in the Catalog B-tree have been zero-filled.  See Radar #6947811. */
-	kHFSContentProtectionBit	= 30,		/* Volume has per-file content protection. */
-	
+	kHFSUnusedNodeFixBit = 31,				/* Unused nodes in the Catalog B-tree have been zero-filled.  See Radar #6947811. */
+	kHFSContentProtectionBit = 30,			/* Volume has per-file content protection */
+
 	kHFSVolumeHardwareLockMask	= 1 << kHFSVolumeHardwareLockBit,
 	kHFSVolumeUnmountedMask		= 1 << kHFSVolumeUnmountedBit,
 	kHFSVolumeSparedBlocksMask	= 1 << kHFSVolumeSparedBlocksBit,
@@ -590,7 +590,6 @@ enum {
 	kHFSVolumeSoftwareLockMask	= 1 << kHFSVolumeSoftwareLockBit,
 	kHFSUnusedNodeFixMask = 1 << kHFSUnusedNodeFixBit,
 	kHFSContentProtectionMask = 1 << kHFSContentProtectionBit,
-	
 	kHFSMDBAttributesMask		= 0x8380
 };
 

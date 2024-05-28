@@ -185,8 +185,6 @@ struct tcphdr {
 
 #define TCP_MAX_WINSHIFT	14	/* maximum window shift */
 
-#define TCP_MAXBURST		4 	/* maximum segments in a burst */
-
 #define TCP_MAXHLEN	(0xf<<2)	/* max length of header in bytes */
 #define TCP_MAXOLEN	(TCP_MAXHLEN - sizeof(struct tcphdr))
 					/* max space left for options */
@@ -202,6 +200,10 @@ struct tcphdr {
 #define TCP_NOOPT               0x08    /* don't use TCP options */
 #define TCP_KEEPALIVE           0x10    /* idle time used when SO_KEEPALIVE is enabled */
 #define TCP_CONNECTIONTIMEOUT   0x20    /* connection timeout */
+#define PERSIST_TIMEOUT		0x40	/* time after which a connection in
+									 *  persist timeout will terminate.
+					 				 *  see draft-ananth-tcpm-persist-02.txt
+									 */
 #endif /* (_POSIX_C_SOURCE && !_DARWIN_C_SOURCE) */
 
 #endif

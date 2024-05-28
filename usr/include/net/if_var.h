@@ -214,8 +214,8 @@ struct if_data64 {
 	struct IF_DATA_TIMEVAL ifi_lastchange;	/* time of last administrative change */
 };
 
-#pragma pack()
 
+#pragma pack()
 
 /*
  * Structure defining a queue for a network interface.

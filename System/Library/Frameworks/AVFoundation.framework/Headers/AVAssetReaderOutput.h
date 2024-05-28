@@ -7,8 +7,6 @@
 
 */
 
-#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <AVFoundation/AVBase.h>
 #import <AVFoundation/AVVideoComposition.h>
 #import <CoreMedia/CMTime.h>
@@ -31,6 +29,7 @@
 	Clients can read the media data of an asset by adding one or more concrete instances of AVAssetReaderOutput to an
 	AVAssetReader using the -[AVAssetReader addOutput:] method.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetReaderOutput : NSObject
 {
 @private
@@ -79,6 +78,7 @@
 	AVAssetReader using the -[AVAssetReader addOutput:] method. The track's media samples can either be read in the
 	format in which they are stored in the asset, or they can be converted to a different format.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetReaderTrackOutput : AVAssetReaderOutput
 {
 @private
@@ -177,6 +177,7 @@
 	Clients can read the audio data mixed from one or more asset tracks by adding an instance of
 	AVAssetReaderAudioMixOutput to an AVAssetReader using the -[AVAssetReader addOutput:] method.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetReaderAudioMixOutput : AVAssetReaderOutput
 {
 @private
@@ -282,6 +283,7 @@
 	Clients can read the video frames composited from one or more asset tracks by adding an instance of
 	AVAssetReaderVideoCompositionOutput to an AVAssetReader using the -[AVAssetReader addOutput:] method.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetReaderVideoCompositionOutput : AVAssetReaderOutput
 {
 @private
@@ -371,5 +373,3 @@
 @property (nonatomic, copy) AVVideoComposition *videoComposition;
 
 @end
-
-#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED

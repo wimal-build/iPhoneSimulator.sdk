@@ -62,6 +62,7 @@
 @class AVMutableCompositionTrack;
 @class AVCompositionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVComposition : AVAsset <NSMutableCopying>
 {
 @private
@@ -79,6 +80,7 @@
 @class AVMutableCompositionInternal;
 
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableComposition : AVComposition
 {
 @private

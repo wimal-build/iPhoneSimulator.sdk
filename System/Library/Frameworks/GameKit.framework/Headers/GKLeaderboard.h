@@ -30,7 +30,7 @@ NS_CLASS_AVAILABLE(NA, 4_1)
 
 @property(nonatomic, assign)            GKLeaderboardTimeScope      timeScope;
 @property(nonatomic, assign)            GKLeaderboardPlayerScope    playerScope;        // Filter on friends. Does not apply to leaderboard initialized with players.
-@property(nonatomic, retain)            NSString                    *category;          // leaderboard category.  If nil, then it will fetch the aggregate leaderboard
+@property(nonatomic, retain)            NSString                    *category;          // leaderboard category.
 @property(nonatomic, readonly, retain)  NSString                    *title;             // Localized category title. Defalts to nil until loaded.
 @property(nonatomic, assign)            NSRange                     range;              // Leaderboards start at index 1 and the length should be less than 100. Does not apply to leaderboards initialized with players.  Exception will be thrown if developer tries to set an invalid range
 

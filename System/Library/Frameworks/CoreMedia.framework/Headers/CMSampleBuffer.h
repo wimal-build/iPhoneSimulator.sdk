@@ -751,6 +751,17 @@ CM_EXPORT const CFStringRef kCMSampleBufferConduitNotification_ResetOutput
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 
 /*!
+	@constant	kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged
+	@abstract	Posted on a conduit of video CMSampleBuffers (eg, a CMBufferQueue) to report information about the range of upcoming CMSampleBuffer output presentation timestamps.
+*/
+CM_EXPORT const CFStringRef kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged  // payload: CFDictionary containing:
+							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_3);
+CM_EXPORT const CFStringRef kCMSampleBufferConduitNotificationParameter_UpcomingOutputPTSRangeMayOverlapQueuedOutputPTSRange  // payload: CFBoolean
+							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_3);
+CM_EXPORT const CFStringRef kCMSampleBufferConduitNotificationParameter_MinUpcomingOutputPTS  // payload: CFDictionary(CMTime)
+							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_3);
+
+/*!
 	@constant	kCMSampleBufferConsumerNotification_BufferConsumed
 	@abstract	Posted when a CMSampleBuffer that has kCMSampleBufferAttachmentKey_PostNotificationWhenConsumed is consumed.
 	@discussion
@@ -1085,7 +1096,7 @@ CM_EXPORT const CFStringRef kCMSampleAttachmentKey_DependsOnOthers  // kCFBoolea
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 CM_EXPORT const CFStringRef kCMSampleAttachmentKey_EarlierDisplayTimesAllowed  // CFBoolean
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-// Instead of testing kCMSampleAttachmentKey_Droppable against kCFBooleanTrue, test kCMSampleAttachmentKey_IsDependedOnByOthers against kCFBooleanFalse.
+// A frame is considered droppable if and only if kCMSampleAttachmentKey_IsDependedOnByOthers is present and set to kCFBooleanFalse.
 
 CM_EXPORT const CFStringRef kCMSampleAttachmentKey_DisplayImmediately  // CFBoolean
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
@@ -1251,6 +1262,15 @@ CM_EXPORT const CFStringRef kCMSampleBufferAttachmentKey_SampleReferenceURL  // 
 */
 CM_EXPORT const CFStringRef kCMSampleBufferAttachmentKey_SampleReferenceByteOffset  // CFNumber, byte offset from beginning of URL to contiguous data
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+
+/*!
+	@constant	kCMSampleBufferAttachmentKey_GradualDecoderRefresh
+	@abstract	Indicates the decoder refresh count.
+	@discussion
+		Sample buffers with this attachment may be used to identify the audio decoder refresh count.
+*/
+CM_EXPORT const CFStringRef kCMSampleBufferAttachmentKey_GradualDecoderRefresh  // CFNumber, audio decoder refresh count
+							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_3);
 
 // Use CMAttachmentBearer APIs to set, get, and remove buffer-level attachments on the CMSampleBuffer itself
 

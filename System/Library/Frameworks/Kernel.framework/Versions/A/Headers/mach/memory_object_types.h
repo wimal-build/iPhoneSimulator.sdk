@@ -253,6 +253,7 @@ typedef struct memory_object_attr_info	memory_object_attr_info_data_t;
 #define MAP_MEM_WTHRU		3
 #define MAP_MEM_WCOMB		4	/* Write combining mode */
 					/* aka store gather     */
+#define MAP_MEM_INNERWBACK	5
 
 #define GET_MAP_MEM(flags)	\
 	((((unsigned int)(flags)) >> 24) & 0xFF)
@@ -262,10 +263,10 @@ typedef struct memory_object_attr_info	memory_object_attr_info_data_t;
 			& 0xFF000000) | ((flags) & 0xFFFFFF));
 
 /* leave room for vm_prot bits */
-#define MAP_MEM_ONLY		0x10000	/* change processor caching  */
-#define MAP_MEM_NAMED_CREATE	0x20000 /* create extant object      */
-#define MAP_MEM_PURGABLE	0x40000	/* create a purgable VM object */
-#define MAP_MEM_NAMED_REUSE	0x80000	/* reuse provided entry if identical */
+#define MAP_MEM_ONLY		0x010000 /* change processor caching  */
+#define MAP_MEM_NAMED_CREATE	0x020000 /* create extant object      */
+#define MAP_MEM_PURGABLE	0x040000 /* create a purgable VM object */
+#define MAP_MEM_NAMED_REUSE	0x080000 /* reuse provided entry if identical */
 
 
 /*
@@ -380,6 +381,7 @@ typedef uint32_t	upl_size_t;	/* page-aligned byte size */
 /*
  *
  */
+#define UPL_PAGING_ENCRYPTED	0x20
 
 /*
  * this pageout is being originated as part of an explicit
@@ -420,8 +422,9 @@ typedef uint32_t	upl_size_t;	/* page-aligned byte size */
 #define UPL_COMMIT_CS_VALIDATED		0x40
 #define UPL_COMMIT_CLEAR_PRECIOUS	0x80
 #define UPL_COMMIT_SPECULATE		0x100
+#define UPL_COMMIT_FREE_ABSENT		0x200
 
-#define UPL_COMMIT_KERNEL_ONLY_FLAGS	(UPL_COMMIT_CS_VALIDATED)
+#define UPL_COMMIT_KERNEL_ONLY_FLAGS	(UPL_COMMIT_CS_VALIDATED | UPL_COMMIT_FREE_ABSENT)
 
 /* flags for return of state from vm_map_get_upl,  vm_upl address space */
 /* based call */

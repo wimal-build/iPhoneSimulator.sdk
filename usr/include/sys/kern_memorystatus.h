@@ -124,10 +124,10 @@ enum {
 	kJetsamFlagsKilledHiwat =      (1 << 2),
  	kJetsamFlagsHibernated =       (1 << 3),
  	kJetsamFlagsKilledVnodes =     (1 << 4),
- 	kJetsamFlagsKilledSwap  =      (1 << 5),
-  	kJetsamFlagsThawed      =      (1 << 6),
-	kJetsamFlagsKilledVM    =      (1 << 7),
-	kJetsamFlagsSuspForDiagnosis = (1 << 8),
+ 	kJetsamFlagsKilledSwap =       (1 << 5),
+  	kJetsamFlagsThawed =           (1 << 6),
+  	kJetsamFlagsKilledVM =         (1 << 7),
+	kJetsamFlagsSuspForDiagnosis = (1 << 8)
 };
 
 #endif /* SYS_KERN_MEMORYSTATUS_H */

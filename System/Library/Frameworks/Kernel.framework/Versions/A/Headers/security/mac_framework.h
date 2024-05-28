@@ -308,6 +308,8 @@ void	mac_posixshm_label_associate(kauth_cred_t cred,
 	    struct pshminfo *pshm, const char *name);
 void	mac_posixshm_label_destroy(struct pshminfo *pshm);
 void	mac_posixshm_label_init(struct pshminfo *pshm);
+int	mac_priv_check(kauth_cred_t cred, int priv);
+int	mac_priv_grant(kauth_cred_t cred, int priv);
 int	mac_proc_check_debug(proc_t proc1, proc_t proc2);
 int	mac_proc_check_fork(proc_t proc);
 int	mac_proc_check_suspend_resume(proc_t proc, int sr);
@@ -428,7 +430,6 @@ void	mac_sysvshm_label_associate(kauth_cred_t cred,
 void	mac_sysvshm_label_destroy(struct shmid_kernel *shmsegptr);
 void	mac_sysvshm_label_init(struct shmid_kernel* shmsegptr);
 void	mac_sysvshm_label_recycle(struct shmid_kernel *shmsegptr);
-void	mac_thread_userret(int code, int error, struct thread *thread);
 int	mac_vnode_check_access(vfs_context_t ctx, struct vnode *vp,
 	    int acc_mode);
 int	mac_vnode_check_chdir(vfs_context_t ctx, struct vnode *dvp);
@@ -442,6 +443,7 @@ int	mac_vnode_check_exchangedata(vfs_context_t ctx, struct vnode *v1,
 	    struct vnode *v2);
 int	mac_vnode_check_exec(vfs_context_t ctx, struct vnode *vp,
 	    struct image_params *imgp);
+int	mac_vnode_check_fsgetpath(vfs_context_t ctx, struct vnode *vp);
 int	mac_vnode_check_signature(struct vnode *vp, unsigned char *sha1,
 	    void * signature, size_t size);
 int     mac_vnode_check_getattrlist(vfs_context_t ctx, struct vnode *vp,
@@ -470,6 +472,8 @@ int	mac_vnode_check_rename_from(vfs_context_t ctx, struct vnode *dvp,
 int	mac_vnode_check_rename_to(vfs_context_t ctx, struct vnode *dvp,
 	    struct vnode *vp, int samedir, struct componentname *cnp);
 int	mac_vnode_check_revoke(vfs_context_t ctx, struct vnode *vp);
+int	mac_vnode_check_searchfs(vfs_context_t ctx, struct vnode *vp,
+	    struct attrlist *alist);
 int     mac_vnode_check_select(vfs_context_t ctx, struct vnode *vp,
 	    int which);
 int     mac_vnode_check_setattrlist(vfs_context_t ctxd, struct vnode *vp,

@@ -49,6 +49,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UINavigationBar : UIView <NSCoding> {
         unsigned int crossfadeItems:1;
         unsigned int autoAdjustTitle:1;
         unsigned int disableCustomTint:1;
+        unsigned int animationCleanupCancelled:1;
     } _navbarFlags;
 }
 

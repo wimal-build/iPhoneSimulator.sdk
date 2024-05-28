@@ -12,6 +12,7 @@
 @protocol MKAnnotation <NSObject>
 
 // Center latitude and longitude of the annotion view.
+// The implementation of this property must be KVO compliant.
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
 @optional

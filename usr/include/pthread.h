@@ -144,6 +144,7 @@ typedef __darwin_sigset_t		sigset_t;
  */
 
 #include <sys/cdefs.h>
+#include <Availability.h>
 
 __BEGIN_DECLS
 /*
@@ -356,13 +357,22 @@ void      pthread_testcancel(void) __DARWIN_ALIAS(pthread_testcancel);
 /* returns non-zero if pthread_create or cthread_fork have been called */
 int		pthread_is_threaded_np(void);
 
+int pthread_threadid_np(pthread_t,__uint64_t*) __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_2);
+
 #if defined(__i386__) || defined(__x86_64__)
-int		pthread_threadid_np(pthread_t,__uint64_t*);
-#endif
+int pthread_rwlock_longrdlock_np(pthread_rwlock_t *) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+int pthread_rwlock_yieldwrlock_np(pthread_rwlock_t *) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+int pthread_rwlock_downgrade_np(pthread_rwlock_t *);
+int pthread_rwlock_upgrade_np(pthread_rwlock_t *);
+int pthread_rwlock_tryupgrade_np(pthread_rwlock_t *);
+int pthread_rwlock_held_np(pthread_rwlock_t *);
+int pthread_rwlock_rdheld_np(pthread_rwlock_t *);
+int pthread_rwlock_wrheld_np(pthread_rwlock_t *);
+#endif /* __i386__ || __x86_64__ */
 
 /*SPI to set and get pthread name*/
-int		pthread_getname_np(pthread_t,char*,size_t);
-int		pthread_setname_np(const char*);
+int		pthread_getname_np(pthread_t,char*,size_t) __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_2);
+int		pthread_setname_np(const char*) __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_3_2);
 /* returns non-zero if the current thread is the main thread */
 int		pthread_main_np(void);
 
@@ -386,7 +396,7 @@ int       pthread_create_suspended_np(pthread_t *,
                          void *);
 int       pthread_kill(pthread_t, int);
 
-pthread_t pthread_from_mach_thread_np(mach_port_t);
+pthread_t pthread_from_mach_thread_np(mach_port_t) __OSX_AVAILABLE_STARTING(__MAC_10_5, __IPHONE_2_0);
 
 int       pthread_sigmask(int, const sigset_t *, sigset_t *) __DARWIN_ALIAS(pthread_sigmask);
 void	  pthread_yield_np(void);

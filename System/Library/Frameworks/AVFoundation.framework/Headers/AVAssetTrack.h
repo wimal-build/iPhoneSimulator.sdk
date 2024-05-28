@@ -22,6 +22,7 @@
 
 @class AVAssetTrackInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAssetTrack : NSObject <NSCopying, AVAsynchronousKeyValueLoading>
 {
 @private
@@ -77,7 +78,7 @@
 @interface AVAssetTrack (AVAssetTrackTemporalProperties)
 
 /* Indicates the timeRange of the track within the overall timeline of the asset;
-   a track with CMTimeCompare(timeRange.start, kCMTimeZero) == 1 will initially present an empty timeRange. */
+   a track with CMTIME_COMPARE_INLINE(timeRange.start, >, kCMTimeZero) will initially present an empty interval. */
 @property (nonatomic, readonly) CMTimeRange timeRange;
 
 /*	indicates a timescale in which time values for the track can be operated upon without extraneous numerical conversion  */

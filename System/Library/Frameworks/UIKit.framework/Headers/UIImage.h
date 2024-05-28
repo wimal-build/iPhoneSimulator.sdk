@@ -31,6 +31,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIImage : NSObject {
 	unsigned int cached:1;
 	unsigned int stretchable:1;
 	unsigned int hasBeenCached:1;
+	unsigned int hasPattern:1;
     } _imageFlags;
 }
 

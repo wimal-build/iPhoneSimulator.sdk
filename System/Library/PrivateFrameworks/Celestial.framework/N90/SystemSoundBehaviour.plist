@@ -298,6 +298,7 @@
 		<key>RingVibrateIgnore,SilentVibrateIgnore,RingerSwitchIgnore</key>
 		<array>
 			<string>Beep</string>
+			<string>Vibrate</string>
 		</array>
 	</dict>
 	<key>SMSSent</key>
@@ -425,7 +426,9 @@
 	<key>Headset_AnswerCall</key>
 	<dict>
 		<key>RingVibrateIgnore,SilentVibrateIgnore,RingerSwitchIgnore</key>
-		<array/>
+		<array>
+			<string>Beep</string>
+		</array>
 	</dict>
 	<key>Headset_EndCall</key>
 	<dict>

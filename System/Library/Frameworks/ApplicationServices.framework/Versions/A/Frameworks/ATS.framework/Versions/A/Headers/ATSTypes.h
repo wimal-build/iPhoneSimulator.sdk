@@ -3,14 +3,22 @@
  
      Contains:   Public interfaces for Apple Type Services components.
  
-     Version:    ATS-183.7~9
+     Copyright:  © 1997-2008 by Apple Inc., all rights reserved.
  
-     Copyright:  © 1997-2005 by Apple Computer, Inc., all rights reserved.
+     Warning:    *** APPLE INTERNAL USE ONLY ***
+                 This file may contain unreleased API's
  
-     Bugs?:      For bug reports, consult the following page on
-                 the World Wide Web:
+     BuildInfo:  Built by:            root
+                 On:                  Wed Jul  7 01:55:59 2010
+                 With Interfacer:     3.0d46   (Mac OS X for PowerPC)
+                 From:                ATSTypes.i
+                     Revision:        1.14
+                     Dated:           2007/04/24 03:44:18
+                     Last change by:  juliog
+                     Last comment:    <rdar://problem/5152407> File based filter for 64bit causes binary
  
-                     http://developer.apple.com/bugreporter/
+     Bugs:       Report bugs to Radar component "System Interfaces", "Latest"
+                 List the version information (from above) in the Problem Description.
  
 */
 #ifndef __ATSTYPES__
@@ -19,6 +27,11 @@
 #ifndef __CORESERVICES__
 #include <CoreServices/CoreServices.h>
 #endif
+
+#ifndef __CGGEOMETRY__
+#include <CoreGraphics/CGGeometry.h>
+#endif
+
 
 
 #include <AvailabilityMacros.h>
@@ -31,8 +44,49 @@
 extern "C" {
 #endif
 
-#pragma options align=mac68k
+#pragma pack(push, 2)
 
+#ifndef CGFLOAT_DEFINED
+#ifdef __LP64__
+typedef double                          CGFloat;
+#else
+typedef float                           CGFloat;
+#endif  /* defined(__LP64__) */
+
+/* For the time being CGFLOAT_DEFINED will also serve to indicate the presence 
+       of new RefCon types in CoreServices. If new headers and associated typedefs
+       are not present then URefCon is declared here.
+    */
+#ifdef __LP64__
+typedef void *                          URefCon;
+#else
+typedef unsigned long                   URefCon;
+#endif  /* defined(__LP64__) */
+
+#endif  /* !defined(CGFLOAT_DEFINED) */
+
+#ifdef __LP64__
+typedef CGPoint                         ATSPoint;
+#else
+typedef Float32Point                    ATSPoint;
+#endif  /* defined(__LP64__) */
+
+#ifdef __LP64__
+/*
+   ATSFSSpec serves as a temporary place holder for the FSSpec data type which is deprecated for 64-bit. 
+   A 64-bit replacement for FSSpec based APIs will be introduced.  
+*/
+struct ATSFSSpec {
+  FSVolumeRefNum      vRefNum;
+  SInt32              parID;
+  StrFileName         name;
+};
+typedef struct ATSFSSpec                ATSFSSpec;
+#else
+typedef FSSpec                          ATSFSSpec;
+#endif  /* defined(__LP64__) */
+
+/* FMGeneration */
 typedef UInt32                          FMGeneration;
 /* The FMFontFamily reference represents a collection of fonts with the same design
    characteristics. It replaces the standard QuickDraw font identifer and may be used
@@ -70,23 +124,24 @@ struct FMFontFamilyInstanceIterator {
 };
 typedef struct FMFontFamilyInstanceIterator FMFontFamilyInstanceIterator;
 enum {
-  kInvalidGeneration            = 0L,
+  kInvalidGeneration            = 0,
   kInvalidFontFamily            = -1,
-  kInvalidFont                  = 0L
+  kInvalidFont                  = 0
 };
 
 enum {
-  kFMCurrentFilterFormat        = 0L
+  kFMCurrentFilterFormat        = 0
 };
 
 typedef UInt32 FMFilterSelector;
 enum {
-  kFMFontTechnologyFilterSelector = 1L,
-  kFMFontContainerFilterSelector = 2L,
-  kFMGenerationFilterSelector   = 3L,
-  kFMFontFamilyCallbackFilterSelector = 4L,
-  kFMFontCallbackFilterSelector = 5L,
-  kFMFontDirectoryFilterSelector = 6L
+  kFMFontTechnologyFilterSelector = 1,
+  kFMFontContainerFilterSelector = 2,
+  kFMGenerationFilterSelector   = 3,
+  kFMFontFamilyCallbackFilterSelector = 4,
+  kFMFontCallbackFilterSelector = 5,
+  kFMFontDirectoryFilterSelector = 6,
+  kFMFontFileRefFilterSelector  = 10
 };
 
 enum {
@@ -170,21 +225,44 @@ InvokeFMFontCallbackFilterUPP(
   void *                   iRefCon,
   FMFontCallbackFilterUPP  userUPP)                           AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER;
 
+#if __MACH__
+  #ifdef __cplusplus
+    inline FMFontFamilyCallbackFilterUPP                        NewFMFontFamilyCallbackFilterUPP(FMFontFamilyCallbackFilterProcPtr userRoutine) { return userRoutine; }
+    inline FMFontCallbackFilterUPP                              NewFMFontCallbackFilterUPP(FMFontCallbackFilterProcPtr userRoutine) { return userRoutine; }
+    inline void                                                 DisposeFMFontFamilyCallbackFilterUPP(FMFontFamilyCallbackFilterUPP) { }
+    inline void                                                 DisposeFMFontCallbackFilterUPP(FMFontCallbackFilterUPP) { }
+    inline OSStatus                                             InvokeFMFontFamilyCallbackFilterUPP(FMFontFamily iFontFamily, void * iRefCon, FMFontFamilyCallbackFilterUPP userUPP) { return (*userUPP)(iFontFamily, iRefCon); }
+    inline OSStatus                                             InvokeFMFontCallbackFilterUPP(FMFont iFont, void * iRefCon, FMFontCallbackFilterUPP userUPP) { return (*userUPP)(iFont, iRefCon); }
+  #else
+    #define NewFMFontFamilyCallbackFilterUPP(userRoutine)       ((FMFontFamilyCallbackFilterUPP)userRoutine)
+    #define NewFMFontCallbackFilterUPP(userRoutine)             ((FMFontCallbackFilterUPP)userRoutine)
+    #define DisposeFMFontFamilyCallbackFilterUPP(userUPP)
+    #define DisposeFMFontCallbackFilterUPP(userUPP)
+    #define InvokeFMFontFamilyCallbackFilterUPP(iFontFamily, iRefCon, userUPP) (*userUPP)(iFontFamily, iRefCon)
+    #define InvokeFMFontCallbackFilterUPP(iFont, iRefCon, userUPP) (*userUPP)(iFont, iRefCon)
+  #endif
+#endif
+
 struct FMFontDirectoryFilter {
   SInt16              fontFolderDomain;
   UInt32              reserved[2];
 };
 typedef struct FMFontDirectoryFilter    FMFontDirectoryFilter;
+/*
+   Note: The fontContainerFilter member is not available in 64-bit. Use fontFileRefFilter
+   and the kFMFontFileRefFilterSelector enum instead.
+*/
 struct FMFilter {
   UInt32              format;
   FMFilterSelector    selector;
   union {
     FourCharCode        fontTechnologyFilter;
-    FSSpec              fontContainerFilter;
+    ATSFSSpec           fontContainerFilter;
     FMGeneration        generationFilter;
     FMFontFamilyCallbackFilterUPP  fontFamilyCallbackFilter;
     FMFontCallbackFilterUPP  fontCallbackFilter;
     FMFontDirectoryFilter  fontDirectoryFilter;
+    const FSRef *       fontFileRefFilter;
   }                       filter;
 };
 typedef struct FMFilter                 FMFilter;
@@ -195,32 +273,41 @@ typedef UInt32                          ATSFontContainerRef;
 typedef UInt32                          ATSFontFamilyRef;
 typedef UInt32                          ATSFontRef;
 typedef UInt16                          ATSGlyphRef;
-typedef Float32                         ATSFontSize;
+typedef CGFloat                         ATSFontSize;
+typedef UInt32                          ATSFontFormat;
 enum {
-  kATSGenerationUnspecified     = 0L,
-  kATSFontContainerRefUnspecified = 0L,
-  kATSFontFamilyRefUnspecified  = 0L,
-  kATSFontRefUnspecified        = 0L
+  kATSFontFormatUnspecified     = 0
 };
 
+enum {
+  kATSGenerationUnspecified     = 0,
+  kATSFontContainerRefUnspecified = 0,
+  kATSFontFamilyRefUnspecified  = 0,
+  kATSFontRefUnspecified        = 0
+};
+
+/*
+    ATSFontMetrics measurements are relative to a font's point size.
+    For example, when a font with an ATSFontMetrics ascent of 0.6 is drawn at 18 points, its actual ascent is (0.6 * 18) = 10.8 points.
+*/
 struct ATSFontMetrics {
   UInt32              version;
-  Float32             ascent;                 /* Maximum height above baseline reached by the glyphs in the font */
+  CGFloat             ascent;                 /* Maximum height above baseline reached by the glyphs in the font */
                                               /* or maximum distance to the right of the centerline reached by the glyphs in the font */
-  Float32             descent;                /* Maximum depth below baseline reached by the glyphs in the font */
+  CGFloat             descent;                /* Maximum depth below baseline reached by the glyphs in the font */
                                               /* or maximum distance to the left of the centerline reached by the glyphs in the font */
-  Float32             leading;                /* Desired spacing between lines of text */
-  Float32             avgAdvanceWidth;
-  Float32             maxAdvanceWidth;        /* Maximum advance width or height of the glyphs in the font */
-  Float32             minLeftSideBearing;     /* Minimum left or top side bearing */
-  Float32             minRightSideBearing;    /* Minimum right or bottom side bearing */
-  Float32             stemWidth;              /* Width of the dominant vertical stems of the glyphs in the font */
-  Float32             stemHeight;             /* Vertical width of the dominant horizontal stems of glyphs in the font */
-  Float32             capHeight;              /* Height of a capital letter from the baseline to the top of the letter */
-  Float32             xHeight;                /* Height of lowercase characters in a font, specifically the letter x, excluding ascenders and descenders */
-  Float32             italicAngle;            /* Angle in degrees counterclockwise from the vertical of the dominant vertical strokes of the glyphs in the font */
-  Float32             underlinePosition;      /* Distance from the baseline for positioning underlining strokes */
-  Float32             underlineThickness;     /* Stroke width for underlining */
+  CGFloat             leading;                /* Desired spacing between lines of text */
+  CGFloat             avgAdvanceWidth;
+  CGFloat             maxAdvanceWidth;        /* Maximum advance width or height of the glyphs in the font */
+  CGFloat             minLeftSideBearing;     /* Minimum left or top side bearing */
+  CGFloat             minRightSideBearing;    /* Minimum right or bottom side bearing */
+  CGFloat             stemWidth;              /* Width of the dominant vertical stems of the glyphs in the font */
+  CGFloat             stemHeight;             /* Vertical width of the dominant horizontal stems of glyphs in the font */
+  CGFloat             capHeight;              /* Height of a capital letter from the baseline to the top of the letter */
+  CGFloat             xHeight;                /* Height of lowercase characters in a font, specifically the letter x, excluding ascenders and descenders */
+  CGFloat             italicAngle;            /* Angle in degrees counterclockwise from the vertical of the dominant vertical strokes of the glyphs in the font */
+  CGFloat             underlinePosition;      /* Distance from the baseline for positioning underlining strokes */
+  CGFloat             underlineThickness;     /* Stroke width for underlining */
 };
 typedef struct ATSFontMetrics           ATSFontMetrics;
 enum {
@@ -249,7 +336,7 @@ enum {
 struct ATSUCurvePath {
   UInt32              vectors;
   UInt32              controlBits[1];
-  Float32Point        vector[1];
+  ATSPoint            vector[1];
 };
 typedef struct ATSUCurvePath            ATSUCurvePath;
 struct ATSUCurvePaths {
@@ -259,26 +346,26 @@ struct ATSUCurvePaths {
 typedef struct ATSUCurvePaths           ATSUCurvePaths;
 /* Glyph ideal metrics */
 struct ATSGlyphIdealMetrics {
-  Float32Point        advance;
-  Float32Point        sideBearing;
-  Float32Point        otherSideBearing;
+  ATSPoint            advance;
+  ATSPoint            sideBearing;
+  ATSPoint            otherSideBearing;
 };
 typedef struct ATSGlyphIdealMetrics     ATSGlyphIdealMetrics;
 /* Glyph screen metrics */
 struct ATSGlyphScreenMetrics {
-  Float32Point        deviceAdvance;
-  Float32Point        topLeft;
+  ATSPoint            deviceAdvance;
+  ATSPoint            topLeft;
   UInt32              height;
   UInt32              width;
-  Float32Point        sideBearing;
-  Float32Point        otherSideBearing;
+  ATSPoint            sideBearing;
+  ATSPoint            otherSideBearing;
 };
 typedef struct ATSGlyphScreenMetrics    ATSGlyphScreenMetrics;
 /* Glyph References */
 
 typedef ATSGlyphRef                     GlyphID;
 
-#pragma options align=reset
+#pragma pack(pop)
 
 #ifdef __cplusplus
 }

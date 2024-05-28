@@ -87,7 +87,7 @@ MecabraRef MecabraCreate(const char* language, CFURLRef learningDictionaryDirect
     @discussion
               If successful, use MecabraGetNextCandidate to get the candidates.
 */
-extern 
+extern
 Boolean MecabraAnalyzeString(MecabraRef mecabra, CFStringRef string, MecabraAnalysisOption options);
 
 /*! @function MecabraGetNextCandidate
@@ -195,6 +195,83 @@ Boolean MecabraBuildLearningDictionary(MecabraRef mecabra, CFArrayRef readings, 
 */ 
 extern 
 void MecabraRelease(MecabraRef mecabra);
+
+/*
+===============================================================================
+Mecabra Word Completion
+===============================================================================
+*/
+
+/*!
+    @typedef MecabraWordCompletionRef
+    @abstract Opaque object that represents mecabra word completion engine
+ */
+typedef const struct __MecabraWordCompletion* MecabraWordCompletionRef;
+
+/*! @enum     MecabraWordCompletionOption
+    @abstract Options for word completion
+    @constant MecabraWordCompletionDefault
+              Default option
+    @constant MecabraWordCompletionSearchForSubstringsMask
+              Consider both the string and its all substrings for potential completion.
+    @constant MecabraWordCompletionRerankUsingLanguageModelMask
+              Rerank completion candidates using system language model.
+ */
+enum {
+    MecabraWordCompletionDefault                            = 0,
+    MecabraWordCompletionSearchForSubstringsMask            = 1 << 1,
+    MecabraWordCompletionUseLanguageModelMask               = 1 << 2,
+};
+typedef CFOptionFlags MecabraWordCompletionOption;
+
+/*! @function MecabraWordCompletionCreate
+    @abstract Create a mecabra word completion object.
+    @param    language
+              Language to be analyzed.
+              Simplified Chinese: "zh-Hans",
+              Traditional Chinese: "zh-Hant"
+    @result   Return a created MecabraWordCompletionRef object.
+*/
+extern
+MecabraWordCompletionRef MecabraWordCompletionCreate(const char* language);
+
+
+/*! @function MecabraWordCompletionAnalyzeString
+    @abstract Analyze a character string to find word completion candidates.
+    @param    mecabraWordCompletion
+              MecabraWordCompletion object
+    @param    prefix
+              String to be analyzed
+    @param    maxNumberOfCandidates
+              Maximum number of completion candidats to be returned. If it's 0, all available candidates are returned.
+    @param    options
+              Options for word completion.
+    @result   Return true if the specified mecabra object supports word completion and the analysis is successful.
+    @discussion
+              If successful, use MecabraWordCompletionGetNextCandidate to get the candidates.
+ */
+extern
+Boolean MecabraWordCompletionAnalyzeString(MecabraWordCompletionRef mecabraWordCompletion, CFStringRef prefix, CFIndex maxNumberOfCandidates, MecabraWordCompletionOption option);
+
+/*! @function MecabraWordCompletionGetNextCandidate
+    @abstract Enumerate to get next candidate.
+    @param    mecabraWordCompletion
+              MecabraWordCompletion object
+    @result   Return the next candidate being enumerated, or NULL when all
+              the candidates have been enumerated.
+    @discussion
+              The returned candidates have been sorted by their priority.
+*/
+extern
+MecabraCandidateRef MecabraWordCompletionGetNextCandidate(MecabraWordCompletionRef mecabraWordCompletion);
+
+/*! @function MecabraWordCompletionRelease
+    @abstract Release mecabra word completion object.
+    @param    mecabraWordCompletion
+              MecabraWordCompletion object
+ */
+extern
+void MecabraWordCompletionRelease(MecabraWordCompletionRef mecabraWordCompletion);
 
 /*
 ===============================================================================

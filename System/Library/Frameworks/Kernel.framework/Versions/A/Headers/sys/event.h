@@ -70,9 +70,10 @@
 #define EVFILT_MACHPORT         (-8)	/* Mach portsets */
 #define EVFILT_FS		(-9)	/* Filesystem events */
 #define EVFILT_USER             (-10)   /* User events */
-#define	EVFILT_SESSION		(-11)	/* Audit session events */
+					/* (-11) unused */
+#define EVFILT_VM		(-12)	/* Virtual memory events */
 
-#define EVFILT_SYSCOUNT		11
+#define EVFILT_SYSCOUNT		12
 #define EVFILT_THREADMARKER	EVFILT_SYSCOUNT /* Internal use only */
 
 #pragma pack(4)
@@ -170,7 +171,6 @@ struct kevent64_s {
  * On input, NOTE_TRIGGER causes the event to be triggered for output.
  */
 #define NOTE_TRIGGER	0x01000000
-#define EV_TRIGGER      0x0100 /*deprecated--for backwards compatibility only*/
 
 /*
  * On input, the top two bits of fflags specifies how the lower twenty four 
@@ -224,6 +224,14 @@ struct kevent64_s {
 #define	NOTE_PCTRLMASK	(~NOTE_PDATAMASK)
 
 /*
+ * data/hint fflags for EVFILT_VM, shared with userspace.
+ */
+#define NOTE_VM_PRESSURE			0x80000000              /* will react on memory pressure */
+#define NOTE_VM_PRESSURE_TERMINATE		0x40000000              /* will quit on memory pressure, possibly after cleaning up dirty state */
+#define NOTE_VM_PRESSURE_SUDDEN_TERMINATE	0x20000000		/* will quit immediately on memory pressure */
+#define NOTE_VM_ERROR				0x10000000              /* there was an error */
+
+/*
  * data/hint fflags for EVFILT_TIMER, shared with userspace.
  * The default is a (repeating) interval timer with the data
  * specifying the timeout interval in milliseconds.
@@ -238,7 +246,7 @@ struct kevent64_s {
 /*
  * data/hint fflags for EVFILT_MACHPORT, shared with userspace.
  *
- * Only portsets are support at this time.
+ * Only portsets are supported at this time.
  *
  * The fflags field can optionally contain the MACH_RCV_MSG, MACH_RCV_LARGE,
  * and related trailer receive options as defined in <mach/message.h>.
@@ -254,29 +262,6 @@ struct kevent64_s {
  * message is received by this call. Instead, on output, the data field simply
  * contains the name of the actual port detected with a message waiting.
  */
-
-/*
- * data/hint fflags for EVFILT_SESSION, shared with userspace.
- *
- * The kevent ident field should be set to AU_SESSION_ANY_ASID if interested
- * in events for any session.
- *
- * NOTE_AS_UPDATE may be going away since struct auditinfo_addr may become 
- * immutable once initially set.
- */
-#define	NOTE_AS_START	0x00000001		/* start of new session */
-#define	NOTE_AS_END	0x00000002		/* start of new session */
-#define	NOTE_AS_ERR	0x00000004		/* error tracking new session */
-#define	NOTE_AS_CLOSE	0x00000008		/* currently unsupported */
-#define	NOTE_AS_UPDATE	0x00000010		/* session data updated */
-
-/*
- * Kevent ident value for any session.
- */
-#define	AS_ANY_ASID	0xFFFFFFFF
-
-struct au_sentry;	/* Audit session entry */
-
 
 /*
  * DEPRECATED!!!!!!!!!

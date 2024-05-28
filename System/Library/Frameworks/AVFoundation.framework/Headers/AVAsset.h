@@ -14,8 +14,8 @@
     				Each asset contains a collection of tracks that are intended to be presented or processed together, each of a uniform media type,
     				including but not limited to audio, video, text, closed captions, and subtitles.
 
-	@discussion		AVAssets are often instantiated via its concrete subclass AVURLAsset with NSURLs that refer to audiovisual media files,
-					such as QuickTime movie files, MP3 files, or files of other types.
+	@discussion		AVAssets are often instantiated via its concrete subclass AVURLAsset with NSURLs that refer to audiovisual media resources,
+					such as streams (including HTTP live streams), QuickTime movie files, MP3 files, and files of other types.
 					
 					They can also be instantiated using other concrete subclasses that extend the basic model for audiovisual media 
 					in useful ways, as AVComposition does for temporal editing.
@@ -60,6 +60,7 @@
 
 @class AVAssetInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAsset : NSObject <NSCopying, AVAsynchronousKeyValueLoading>
 {
 @private
@@ -171,15 +172,61 @@
 @end
 
 
-@interface AVAsset (AVAssetProtectedContent)
+@interface AVAsset (AVAssetChapterInspection)
 
-/*! Indicates whether or not the asset has protected content. */
-@property (nonatomic, readonly) BOOL hasProtectedContent;
+/* array of NSLocale */
+@property (readonly) NSArray *availableChapterLocales NS_AVAILABLE(10_7, 4_3);
+
+/*!
+	@method			chapterMetadataGroupsWithTitleLocale:containingMetadataItemsWithCommonKeys:
+	@abstract		Provides an array of chapters.
+	@param			locale
+					Locale of the metadata items carrying chapter titles to be returned (supports the IETF BCP 47 specification).
+	@param			commonKeys
+					Array of common keys of AVMetadataItem to be included; can be nil. 
+					AVMetadataCommonKeyArtwork is the only support key for now.
+	@result			An NSArray of AVTimedMetadataGroup.
+	@discussion		This method returns an array of AVTimedMetadataGroup objects. Each object in the array
+					always contain an AVMetadataItem representing the chapter title and the timeRange property
+					of the AVTimedMetadataGroup object is equal to the time range of the chapter title item.
+						
+					An AVMetadataItem with the specified common key will be added to an existing AVTimedMetadataGroup
+					object if the time range (timestamp and duration) of the metadata item and the metadata group overlaps.
+					The locale of items not carrying chapter titles need not match the specified locale parameter.
+					
+					Further filtering of the returned items based on locale can be accomplished using +[AVMetadataItem metadataItemsFromArray:withLocale:].
+*/
+- (NSArray *)chapterMetadataGroupsWithTitleLocale:(NSLocale *)locale containingItemsWithCommonKeys:(NSArray *)commonKeys NS_AVAILABLE(10_7, 4_3);
 
 @end
 
 
-// Keys for options dictionary for use with -initWithURL:options:
+@interface AVAsset (AVAssetProtectedContent)
+
+/*! Indicates whether or not the asset has protected content. */
+@property (nonatomic, readonly) BOOL hasProtectedContent NS_AVAILABLE(10_7, 4_2);
+
+@end
+
+
+@interface AVAsset (AVAssetUsability)
+
+/* indicates whether an AVPlayerItem can be initialized with the receiver or with its URL */
+@property (nonatomic, readonly, getter=isPlayable) BOOL playable NS_AVAILABLE(10_7, 4_3);
+
+/* indicates whether an AVAssetExportSession can be used with the receiver for export */
+@property (nonatomic, readonly, getter=isExportable) BOOL exportable NS_AVAILABLE(10_7, 4_3);
+
+/* indicates whether an AVAssetReader can be used with the receiver for extracting media data */
+@property (nonatomic, readonly, getter=isReadable) BOOL readable NS_AVAILABLE(10_7, 4_3);
+
+/* indicates whether the receiver can be used within a segment of an AVCompositionTrack */
+@property (nonatomic, readonly, getter=isComposable) BOOL composable NS_AVAILABLE(10_7, 4_3);
+
+@end
+
+
+// Keys for options dictionary for use with -[AVURLAsset initWithURL:options:]
 
 /*!
 	@constant		AVURLAssetPreferPreciseDurationAndTimingKey
@@ -197,10 +244,23 @@
 					If the asset is intended to be inserted into an AVMutableComposition,
 					precise random access is typically desirable and the value of YES is recommended.
  */
-extern NSString *const AVURLAssetPreferPreciseDurationAndTimingKey __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVURLAssetPreferPreciseDurationAndTimingKey NS_AVAILABLE(10_7, 4_0);
 
+/*!
+    @class			AVURLAsset
+
+    @abstract		AVURLAsset provides access to the AVAsset model for timed audiovisual media referenced by URL.
+
+    @discussion		AVURLAssets can be initialized with NSURLs that refer to audiovisual media resources, such as streams (including HTTP live streams),
+					QuickTime movie files, MP3 files, and files of other types.
+								
+					Note that members of class AVURLAsset are static, in that they provide access only to information about timed media resources that persists
+					independently of operations that can be performed on them, such as playback. AVPlayerItem provides access to information that can change
+					during playback; see AVPlayerItem.duration and AVPlayerItem.tracks.
+*/
 @class AVURLAssetInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVURLAsset : AVAsset
 {
 @private
@@ -253,5 +313,3 @@ extern NSString *const AVURLAssetPreferPreciseDurationAndTimingKey __OSX_AVAILAB
 - (AVAssetTrack *)compatibleTrackForCompositionTrack:(AVCompositionTrack *)compositionTrack;
 
 @end
-
-

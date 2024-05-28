@@ -101,6 +101,16 @@ struct user_mac {
 	user_addr_t	m_string;
 };
 
+struct user32_mac {
+	uint32_t	m_buflen;
+	uint32_t	m_string;
+};
+
+struct user64_mac {
+	uint64_t	m_buflen;
+	uint64_t	m_string;
+};
+
 /*
  * Flags to control which MAC subsystems are enforced
  * on a per-process/thread/credential basis.

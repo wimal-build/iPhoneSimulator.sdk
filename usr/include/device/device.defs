@@ -593,8 +593,8 @@ routine io_connect_method(
 	in  ool_input		: mach_vm_address_t;
 	in  ool_input_size	: mach_vm_size_t;
 
-	out scalar_output	: io_scalar_inband64_t, CountInOut;
 	out inband_output	: io_struct_inband_t, CountInOut;
+	out scalar_output	: io_scalar_inband64_t, CountInOut;
 	in  ool_output		: mach_vm_address_t;
 	inout ool_output_size	: mach_vm_size_t
 	);
@@ -610,8 +610,8 @@ routine io_connect_async_method(
 	in  ool_input		: mach_vm_address_t;
 	in  ool_input_size	: mach_vm_size_t;
 
-	out scalar_output	: io_scalar_inband64_t, CountInOut;
 	out inband_output	: io_struct_inband_t, CountInOut;
+	out scalar_output	: io_scalar_inband64_t, CountInOut;
 	in  ool_output		: mach_vm_address_t;
 	inout  ool_output_size	: mach_vm_size_t
 	);
@@ -659,6 +659,12 @@ routine FUNC_NAME(io_service_add_notification_ool)(
 	out notification	: io_object_t
 	);
 
+#else
+
+    skip;
+    skip;
+    skip;
+    skip;
 
 #endif /* KERNEL_SERVER || __LP64__ */
 

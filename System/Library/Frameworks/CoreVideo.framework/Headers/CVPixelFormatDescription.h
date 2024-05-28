@@ -35,6 +35,10 @@ CV_EXPORT const CFStringRef kCVPixelFormatCodecType __OSX_AVAILABLE_STARTING(__M
 /* This is the equivalent Microsoft FourCC code for this pixel format */
 CV_EXPORT const CFStringRef kCVPixelFormatFourCC __OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_4_0);
 
+/* kCFBooleanTrue indicates that the format contains alpha and some images may be considered transparent;
+   kCFBooleanFalse indicates that there is no alpha and images are always opaque. */
+CV_EXPORT const CFStringRef kCVPixelFormatContainsAlpha __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_3);
+
 /* All buffers have one or more image planes.  Each plane may contain a single or an interleaved set of components */   
 /* For simplicity sake, pixel formats that are not planar may place the required format keys at the top
    level dictionary. */

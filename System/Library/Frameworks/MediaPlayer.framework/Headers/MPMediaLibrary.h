@@ -13,10 +13,7 @@
 // MPMediaLibrary represents a collection of media on a device, and can be used to fetch items and playlists from the user's synced iTunes library.
 // See MPMediaQuery.h for a list of common queries or to build a custom query from a chain of filter predicates.
 
-MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaLibrary : NSObject <NSCoding> {
-@private
-    void *_internal;
-}
+MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaLibrary : NSObject <NSCoding>
 
 + (MPMediaLibrary *)defaultMediaLibrary;
 

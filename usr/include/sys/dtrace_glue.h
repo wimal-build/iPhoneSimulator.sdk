@@ -188,6 +188,55 @@ extern void unregister_cpu_setup_func(cpu_setup_func_t *, void *);
 #define	CPU_DTRACE_ERROR	(CPU_DTRACE_FAULT | CPU_DTRACE_DROP)
 
 /*
+ * Loadable Modules
+ */
+
+/* Keep the compiler happy */
+struct dtrace_module_symbols;
+
+/* Solaris' modctl structure, greatly simplified, shadowing parts of xnu kmod structure. */
+typedef struct modctl {
+	struct modctl	*mod_next;
+	struct modctl	*mod_stale;     // stale module chain
+	uint32_t	mod_id;		// the kext unique identifier
+	char		mod_modname[KMOD_MAX_NAME];
+	int		mod_loadcnt;
+	char		mod_loaded;
+	char		mod_flags;	// See flags below
+	int		mod_nenabled;	// # of enabled DTrace probes in module
+	vm_address_t	mod_address;	// starting address (of Mach-o header blob)
+	vm_size_t	mod_size;	// total size (of blob)
+	UUID		mod_uuid;
+	struct dtrace_module_symbols* mod_user_symbols;
+} modctl_t;
+
+/* Definitions for mod_flags */
+#define MODCTL_IS_MACH_KERNEL			0x01 // This module represents /mach_kernel
+#define MODCTL_HAS_KERNEL_SYMBOLS		0x02 // Kernel symbols (nlist) are available
+#define MODCTL_FBT_PROBES_PROVIDED      	0x04 // fbt probes have been provided
+#define MODCTL_FBT_INVALID			0x08 // Module is invalid for fbt probes
+#define MODCTL_SDT_PROBES_PROVIDED		0x10 // sdt probes have been provided
+#define MODCTL_SDT_INVALID			0x20 // Module is invalid for sdt probes
+#define MODCTL_HAS_UUID				0x40 // Module has UUID
+
+/* Simple/singular mod_flags accessors */
+#define MOD_IS_MACH_KERNEL(mod)			(mod->mod_flags & MODCTL_IS_MACH_KERNEL)
+#define MOD_HAS_KERNEL_SYMBOLS(mod)		(mod->mod_flags & MODCTL_HAS_KERNEL_SYMBOLS)
+#define MOD_HAS_USERSPACE_SYMBOLS(mod)		(mod->mod_user_symbols) /* No point in duplicating state in the flags bits */
+#define MOD_FBT_PROBES_PROVIDED(mod)   		(mod->mod_flags & MODCTL_FBT_PROBES_PROVIDED)
+#define MOD_FBT_INVALID(mod)			(mod->mod_flags & MODCTL_FBT_INVALID)
+#define MOD_SDT_PROBES_PROVIDED(mod)   		(mod->mod_flags & MODCTL_SDT_PROBES_PROVIDED)
+#define MOD_SDT_INVALID(mod)			(mod->mod_flags & MODCTL_SDT_INVALID)
+#define MOD_HAS_UUID(mod)			(mod->mod_flags & MODCTL_HAS_UUID)
+
+/* Compound accessors */
+#define MOD_FBT_DONE(mod)			(MOD_FBT_PROBES_PROVIDED(mod) || MOD_FBT_INVALID(mod))
+#define MOD_SDT_DONE(mod)			(MOD_SDT_PROBES_PROVIDED(mod) || MOD_SDT_INVALID(mod))
+#define MOD_SYMBOLS_DONE(mod)			(MOD_FBT_DONE(mod) && MOD_SDT_DONE(mod))
+
+extern modctl_t *dtrace_modctl_list;
+
+/*
  * cred_t
  */
 /* Privileges */
@@ -390,25 +439,6 @@ extern void kmem_cache_destroy(kmem_cache_t *);
 typedef struct _kthread kthread_t; /* For dtrace_vtime_switch(), dtrace_panicked and dtrace_errthread */
 
 /*
- * Loadable Modules
- */
-
-#if 0 /* kmod_lock has been removed */
-decl_simple_lock_data(extern,kmod_lock)
-#endif /* 0 */
-
-/* Want to use Darwin's kmod_info in place of the Solaris modctl.
-   Can't typedef since the (many) usages in the code are "struct modctl *" */
-extern kmod_info_t *kmod;
-#define modctl kmod_info
-
-#define mod_modname name
-#define mod_loadcnt id
-#define mod_next next
-#define mod_loaded info_version /* XXX Is always > 0, hence TRUE */
-#define modules kmod
-
-/*
  * proc
  */
 
@@ -472,15 +502,6 @@ static inline void atomic_add_64( uint64_t *theValue, int64_t theAmount )
 {
 	(void)OSAddAtomic64( theAmount, (SInt64 *)theValue );
 }
-#elif defined(__ppc__)
-static inline void atomic_add_64( uint64_t *theValue, int64_t theAmount )
-{
-	// FIXME
-	// atomic_add_64() is at present only called from fasttrap.c to increment
-	// or decrement a 64bit counter. Narrow to 32bits since ppc32 (G4) has
-	// no convenient 64bit atomic op.
-	(void)OSAddAtomic( (int32_t)theAmount, &(((SInt32 *)theValue)[1]));
-}
 #elif defined(__arm__)
 static inline void atomic_add_64( uint64_t *theValue, int64_t theAmount )
 {
@@ -488,7 +509,7 @@ static inline void atomic_add_64( uint64_t *theValue, int64_t theAmount )
 	// atomic_add_64() is at present only called from fasttrap.c to increment
 	// or decrement a 64bit counter. Narrow to 32bits since arm has
 	// no convenient 64bit atomic op.
-	(void)OSAddAtomic( (int32_t)theAmount, &(((SInt32 *)theValue)[1]));
+	(void)OSAddAtomic( (int32_t)theAmount, &(((SInt32 *)theValue)[0]));
 }
 #endif
 

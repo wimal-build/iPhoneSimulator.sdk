@@ -151,7 +151,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIView : UIResponder<NSCoding> {
 @property(nonatomic,getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled;   // default is NO
 @property(nonatomic,getter=isExclusiveTouch) BOOL       exclusiveTouch;         // default is NO
 
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event;   // recursively calls -pointInside:withEvent:. point is in frame coordinates
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event;   // recursively calls -pointInside:withEvent:. point is in the receiver's coordinate system
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event;   // default returns YES if point is in bounds
 
 - (CGPoint)convertPoint:(CGPoint)point toView:(UIView *)view;

@@ -73,7 +73,7 @@
 #include <sys/uio.h>
 #include <sys/vm.h>		/* XXX */
 #include <sys/sysctl.h>
- 
+
 
 /*
  * Per process structure containing data that isn't needed in core

@@ -1108,15 +1108,8 @@ AudioSessionAddPropertyListener(    AudioSessionPropertyID              inID,
 
 /*!
     @function       AudioSessionRemovePropertyListener
-    @abstract       Remove a property listener.
-    @discussion     This function can be called to remove the listener for a property.
-                    Valid properties are listed above.
-    @param          inID
-                        The AudioSessionPropertyID for which we want to remove the listener.
-    @return         kAudioSessionNoError if the operation was successful.  If the property does
-                    not support listeners, kAudioSessionUnsupportedPropertyError will be returned.  
-                    Other error codes listed under AudioSession Error Constants also apply to 
-                    this function.
+    @abstract       see AudioSessionRemovePropertyListenerWithUserData
+    @discussion     see AudioSessionRemovePropertyListenerWithUserData
 */
 extern OSStatus
 AudioSessionRemovePropertyListener(	AudioSessionPropertyID          inID)                           
@@ -1125,10 +1118,17 @@ AudioSessionRemovePropertyListener(	AudioSessionPropertyID          inID)
 /*!
     @function       AudioSessionRemovePropertyListener
     @abstract       Remove a property listener.
-    @discussion     This function can be called to remove the listener for a property.
+    @discussion     This function can be called to remove the listener for a property. The caller
+                    provides the same proc and user data that was used to add the listener. This ensures
+                    that there can be more than one listener established for a given property ID,
+                    and each listener can be removed as requested.
                     Valid properties are listed above.
     @param          inID
                         The AudioSessionPropertyID for which we want to remove the listener.
+    @param          inProc
+                        The proc that was used to add the listener that needs to be removed.
+    @param          inClientData
+                        The client data that was used to add the listener that needs to be removed.
     @return         kAudioSessionNoError if the operation was successful.  If the property does
                     not support listeners, kAudioSessionUnsupportedPropertyError will be returned.  
                     Other error codes listed under AudioSession Error Constants also apply to 

@@ -10,14 +10,21 @@
 #import <AVFoundation/AVBase.h>
 #import <Foundation/Foundation.h>
 
-extern NSString *const AVFoundationErrorDomain                  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVFoundationErrorDomain                  NS_AVAILABLE(10_7, 4_0);
 
-extern NSString *const AVErrorDeviceKey                         __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVErrorTimeKey                           __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVErrorFileSizeKey                       __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVErrorPIDKey                            __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVErrorRecordingSuccessfullyFinishedKey  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVErrorDiscontinuityFlagsKey				__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+extern NSString *const AVErrorDeviceKey                         NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVErrorTimeKey                           NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVErrorFileSizeKey                       NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVErrorPIDKey                            NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVErrorRecordingSuccessfullyFinishedKey  NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVErrorMediaTypeKey                      NS_AVAILABLE(10_7, 4_3); // an NSString, as defined in AVMediaFormat.h
+extern NSString *const AVErrorMediaSubTypeKey                   NS_AVAILABLE(10_7, 4_3); // an NSArray of NSNumbers carrying four character codes (4ccs) as defined in CoreAudioTypes.h for audio media and in CMFormatDescription.h for video media.
+
+#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+
+extern NSString *const AVErrorDiscontinuityFlagsKey				NS_AVAILABLE(10_7, NA);
+
+#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
 
 enum {
 	AVErrorUnknown                                      = -11800,
@@ -53,4 +60,11 @@ enum {
     AVErrorMaximumStillImageCaptureRequestsExceeded     = -11830,
 	AVErrorContentIsProtected							= -11831,
 	AVErrorNoImageAtTime								= -11832,
+	AVErrorDecoderNotFound								= -11833,  // userInfo may contain AVErrorMediaTypeKey & AVErrorMediaSubTypeKey, if available
+	AVErrorEncoderNotFound								= -11834,  // userInfo may contain AVErrorMediaTypeKey & AVErrorMediaSubTypeKey, if available
+	AVErrorContentIsNotAuthorized						= -11835,
+	AVErrorApplicationIsNotAuthorized					= -11836,
+#if TARGET_OS_IPHONE
+	AVErrorDeviceIsNotAvailableInBackground				= -11837,
+#endif
 };

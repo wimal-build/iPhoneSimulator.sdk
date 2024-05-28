@@ -23,6 +23,7 @@
 
 @class AVAudioMixInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAudioMix : NSObject <NSCopying, NSMutableCopying> {
 @private
     AVAudioMixInternal    *_audioMix;
@@ -36,6 +37,7 @@
 
 @class AVMutableAudioMixInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableAudioMix : AVAudioMix {
 @private
     AVMutableAudioMixInternal    *_mutableAudioMix;
@@ -75,6 +77,7 @@
 
 @class AVAudioMixInputParametersInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAudioMixInputParameters : NSObject <NSCopying, NSMutableCopying> {
 @private
     AVAudioMixInputParametersInternal    *_inputParameters;
@@ -107,6 +110,7 @@
 @class AVPlayerItemTrack;
 @class AVMutableAudioMixInputParametersInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableAudioMixInputParameters : AVAudioMixInputParameters {
 @private
     AVMutableAudioMixInputParametersInternal    *_mutableInputParameters;

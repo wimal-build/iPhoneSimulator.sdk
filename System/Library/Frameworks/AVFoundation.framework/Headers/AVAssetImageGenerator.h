@@ -36,19 +36,19 @@
 	@constant		AVAssetImageGeneratorApertureModeCleanAperture
 	@abstract		Both pixel aspect ratio and clean aperture will be applied.
 */
-extern NSString *const AVAssetImageGeneratorApertureModeCleanAperture __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVAssetImageGeneratorApertureModeCleanAperture NS_AVAILABLE(10_7, 4_0);
 
 /*!
 	@constant		AVAssetImageGeneratorApertureModeProductionAperture
 	@abstract		Only pixel aspect ratio will be applied.
 */
-extern NSString *const AVAssetImageGeneratorApertureModeProductionAperture __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVAssetImageGeneratorApertureModeProductionAperture NS_AVAILABLE(10_7, 4_0);
 
 /*!
 	@constant		AVAssetImageGeneratorApertureModeEncodedPixels
 	@abstract		Neither pixel aspect ratio nor clean aperture will be applied.
 */
-extern NSString *const AVAssetImageGeneratorApertureModeEncodedPixels __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVAssetImageGeneratorApertureModeEncodedPixels NS_AVAILABLE(10_7, 4_0);
 
 enum
 {
@@ -58,6 +58,7 @@ enum
 };
 typedef NSInteger AVAssetImageGeneratorResult;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAssetImageGenerator : NSObject
 {
 @private

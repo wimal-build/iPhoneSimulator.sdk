@@ -21,6 +21,12 @@
       Visual content of items played by an instance of AVPlayer can be displayed in a CoreAnimation layer
       of class AVPlayerLayer.
 
+	  To allow clients to add and remove their objects as key-value observers safely, AVPlayer serializes notifications of
+	  changes that occur dynamically during playback on a dispatch queue. By default, this queue is the main queue. See dispatch_get_main_queue().
+	  
+	  To ensure safe access to AVPlayer's nonatomic properties while dynamic changes in playback state may be reported, clients must
+	  serialize their access with the receiver's notification queue. In the common case, such serialization is naturally achieved
+	  by invoking AVPlayer's various methods on the main thread or queue.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -52,16 +58,32 @@ enum {
 };
 typedef NSInteger AVPlayerStatus;
 
+/*!
+ @enum AVPlayerActionAtItemEnd
+ @abstract
+	These constants are the allowable values of AVPlayer's actionAtItemEnd property.
+ 
+ @constant	 AVPlayerActionAtItemEndAdvance
+	Indicates that when an AVPlayerItem reaches its end time the player will automatically advance to the next item in its queue.
+	This value is supported only for players of class AVQueuePlayer. An AVPlayer that's not an AVQueuePlayer will raise an NSInvalidArgumentException if an attempt is made to set its actionAtItemEnd to AVPlayerActionAtItemEndAdvance.
+ @constant	 AVPlayerActionAtItemEndPause
+	Indicates that when an AVPlayerItem reaches its end time the player will automatically pause (which is to say, the player's
+	rate will automatically be set to 0).
+ @constant	 AVPlayerActionAtItemEndNone
+	Indicates that when an AVPlayerItem reaches its end time the player will take no action (which is to say, the player's rate
+	will not change, its currentItem will not change, and its currentTime will continue to be incremented or decremented as time
+	elapses, according to its rate). After this, if the player's actionAtItemEnd is set to a value other than AVPlayerActionAtItemEndNone,
+	the player will immediately take the action appropriate to that value.
+*/
 enum
 {
-#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
     AVPlayerActionAtItemEndAdvance	= 0,
-#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 	AVPlayerActionAtItemEndPause	= 1,
 	AVPlayerActionAtItemEndNone		= 2,
 };
 typedef NSInteger AVPlayerActionAtItemEnd;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVPlayer : NSObject 
 {
 @private
@@ -164,6 +186,16 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 /* indicates the current rate of playback; 0.0 means "stopped", 1.0 means "play at the natural rate of the current item" */
 @property (nonatomic) float rate;
 
+#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+
+/* indicates the current audio volume of the player; 0.0 means "silence all audio", 1.0 means "play at the full volume of the current item" */
+@property (nonatomic) float volume NS_AVAILABLE(10_7, NA);
+
+/* indicates whether or not audio output of the player is muted */
+@property (nonatomic, getter=isMuted) BOOL muted NS_AVAILABLE(10_7, NA);
+
+#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+
 /* indicates the action that the player should perform when playback of an item reaches its end time */
 @property (nonatomic) AVPlayerActionAtItemEnd actionAtItemEnd;
 
@@ -264,8 +296,6 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 @end
 
 
-#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 /*!
 	@class			AVQueuePlayer
  
@@ -285,6 +315,7 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 
 @class AVQueuePlayerInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVQueuePlayer : AVPlayer 
 {
 @private
@@ -367,5 +398,3 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 - (void)removeAllItems;
 
 @end
-
-#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED

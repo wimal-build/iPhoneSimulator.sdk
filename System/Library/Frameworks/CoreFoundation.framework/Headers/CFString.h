@@ -532,6 +532,8 @@ void CFStringGetParagraphBounds(CFStringRef string, CFRange range, CFIndex *parB
 CF_EXPORT
 CFIndex CFStringGetHyphenationLocationBeforeIndex(CFStringRef string, CFIndex location, CFRange limitRange, CFOptionFlags options, CFLocaleRef locale, UTF32Char *character) CF_AVAILABLE(NA, 4_2);
 
+CF_EXPORT
+Boolean CFStringIsHyphenationAvailableForLocale(CFLocaleRef locale) CF_AVAILABLE(NA, 4_3);
 
 /*** Exploding and joining strings with a separator string ***/
 

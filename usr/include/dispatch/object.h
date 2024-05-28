@@ -1,5 +1,21 @@
 /*
  * Copyright (c) 2008-2009 Apple Inc. All rights reserved.
+ *
+ * @APPLE_APACHE_LICENSE_HEADER_START@
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ * @APPLE_APACHE_LICENSE_HEADER_END@
  */
 
 #ifndef __DISPATCH_OBJECT__
@@ -24,13 +40,13 @@ __BEGIN_DECLS
  * @param message
  * The message to log above and beyond the introspection.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL2 DISPATCH_NOTHROW __attribute__((__format__(printf,2,3)))
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL2 DISPATCH_NOTHROW __attribute__((__format__(printf,2,3)))
 void
 dispatch_debug(dispatch_object_t object, const char *message, ...);
 
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL2 DISPATCH_NOTHROW __attribute__((__format__(printf,2,0)))
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL2 DISPATCH_NOTHROW __attribute__((__format__(printf,2,0)))
 void
 dispatch_debugv(dispatch_object_t object, const char *message, va_list ap);
 
@@ -48,8 +64,8 @@ dispatch_debugv(dispatch_object_t object, const char *message, va_list ap);
  * The object to retain.
  * The result of passing NULL in this parameter is undefined.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_retain(dispatch_object_t object);
 
@@ -69,8 +85,8 @@ dispatch_retain(dispatch_object_t object);
  * The object to release.
  * The result of passing NULL in this parameter is undefined.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_release(dispatch_object_t object);
 
@@ -86,8 +102,8 @@ dispatch_release(dispatch_object_t object);
  * @result
  * The context of the object; may be NULL.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL_ALL DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
 void *
 dispatch_get_context(dispatch_object_t object);
 
@@ -104,8 +120,8 @@ dispatch_get_context(dispatch_object_t object);
  * The new client defined context for the object. This may be NULL.
  *
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NOTHROW //DISPATCH_NONNULL1
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NOTHROW //DISPATCH_NONNULL1
 void
 dispatch_set_context(dispatch_object_t object, void *context);
 
@@ -130,8 +146,8 @@ dispatch_set_context(dispatch_object_t object, void *context);
  * The context parameter passed to the finalizer function is the current
  * context of the dispatch object at the time the finalizer call is made.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NOTHROW //DISPATCH_NONNULL1
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NOTHROW //DISPATCH_NONNULL1
 void
 dispatch_set_finalizer_f(dispatch_object_t object,
 	dispatch_function_t finalizer);
@@ -154,8 +170,8 @@ dispatch_set_finalizer_f(dispatch_object_t object,
  * The object to be suspended.
  * The result of passing NULL in this parameter is undefined.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_suspend(dispatch_object_t object);
 
@@ -169,8 +185,8 @@ dispatch_suspend(dispatch_object_t object);
  * The object to be resumed.
  * The result of passing NULL in this parameter is undefined.
  */
-__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_2)
-DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
+__OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_4_0)
+DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_resume(dispatch_object_t object);
 

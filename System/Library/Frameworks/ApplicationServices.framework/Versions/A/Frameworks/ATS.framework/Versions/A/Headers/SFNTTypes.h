@@ -3,14 +3,22 @@
  
      Contains:   Font file structures.
  
-     Version:    ATS-183.7~9
+     Copyright:  © 1994-2008 by Apple Inc., all rights reserved.
  
-     Copyright:  © 1994-2005 by Apple Computer, Inc., all rights reserved.
+     Warning:    *** APPLE INTERNAL USE ONLY ***
+                 This file may contain unreleased API's
  
-     Bugs?:      For bug reports, consult the following page on
-                 the World Wide Web:
+     BuildInfo:  Built by:            root
+                 On:                  Wed Jul  7 01:55:59 2010
+                 With Interfacer:     3.0d46   (Mac OS X for PowerPC)
+                 From:                SFNTTypes.i
+                     Revision:        1.4
+                     Dated:           2006/09/13 22:38:46
+                     Last change by:  ntaylor
+                     Last comment:    Fix last checkin comment.
  
-                     http://developer.apple.com/bugreporter/
+     Bugs:       Report bugs to Radar component "System Interfaces", "Latest"
+                 List the version information (from above) in the Problem Description.
  
 */
 #ifndef __SFNTTYPES__
@@ -27,7 +35,7 @@
 #pragma once
 #endif
 
-#pragma options align=mac68k
+#pragma pack(push, 2)
 
 struct sfntDirectoryEntry {
   FourCharCode        tableTag;
@@ -66,7 +74,10 @@ enum {
 enum {
   kFontUnicodeDefaultSemantics  = 0,
   kFontUnicodeV1_1Semantics     = 1,
-  kFontISO10646_1993Semantics   = 2
+  kFontISO10646_1993Semantics   = 2,
+  kFontUnicodeV2_0BMPOnlySemantics = 3,
+  kFontUnicodeV2_0FullCoverageSemantics = 4,
+  kFontUnicodeV4_0VariationSequenceSemantics = 5
 };
 
 enum {
@@ -240,10 +251,11 @@ enum {
 };
 
 /* The following are special "don't care" values to be used in interfaces */
+
 enum {
-  kFontNoPlatformCode           = (unsigned long)(-1),
-  kFontNoScriptCode             = (unsigned long)(-1),
-  kFontNoLanguageCode           = (unsigned long)(-1)
+    kFontNoPlatformCode                 = (unsigned int)(~0),
+  kFontNoScriptCode                   = (unsigned int)(~0),
+  kFontNoLanguageCode                 = (unsigned int)(~0)
 };
 
 struct sfntCMapSubHeader {
@@ -308,12 +320,18 @@ enum {
   kFontDesignerURLName          = 12,
   kFontLicenseDescriptionName   = 13,
   kFontLicenseInfoURLName       = 14,
+  kFontPreferredFamilyName      = 16,
+  kFontPreferredSubfamilyName   = 17,
+  kFontMacCompatibleFullName    = 18,
+  kFontSampleTextName           = 19,
+  kFontPostScriptCIDName        = 20,
   kFontLastReservedName         = 255
 };
 
 /* The following is a special "don't care" value to be used in interfaces */
+
 enum {
-  kFontNoNameCode               = (unsigned long)(-1)
+    kFontNoNameCode                 = (unsigned int)(~0)
 };
 
 struct sfntNameRecord {
@@ -379,9 +397,9 @@ struct sfntVariationHeader {
   UInt16              axisSize;
   UInt16              instanceCount;
   UInt16              instanceSize;
-                                              /* Éother <count,size> pairs */
+                                              /* â€¦other <count,size> pairs */
   sfntVariationAxis   axis[1];                /* [axisCount] */
-  sfntInstance        instance[1];            /* [instanceCount]  Éother arrays of data */
+  sfntInstance        instance[1];            /* [instanceCount]  â€¦other arrays of data */
 };
 typedef struct sfntVariationHeader      sfntVariationHeader;
 enum {
@@ -448,21 +466,20 @@ enum {
 
 /*  Special invalid glyph ID value, useful as a sentinel value, for example */
 enum {
-  nonGlyphID                    = 65535L
+  nonGlyphID                    = 65535
 };
 
 
 /*   Deprecated "don't care" values - use kFontNoPlatformCode, kFontNoScriptCode, 
      kFontNoLanguageCode, kFontNoName instead
 */
+
 enum {
-  kFontNoPlatform               = -1,
-  kFontNoScript                 = -1,
-  kFontNoLanguage               = -1,
-  kFontNoName                   = -1
+    kFontNoPlatform                 = (unsigned int)(~0),
+  kFontNoScript                   = (unsigned int)(~0),
+  kFontNoLanguage                 = (unsigned int)(~0),
+  kFontNoName                     = (unsigned int)(~0)
 };
-
-
 
 /*  Data type used to access names from font name table */
 
@@ -481,7 +498,7 @@ struct FontVariation {
 };
 typedef struct FontVariation            FontVariation;
 
-#pragma options align=reset
+#pragma pack(pop)
 
 
 #endif /* __SFNTTYPES__ */

@@ -111,6 +111,7 @@
 #define i386_btop(x)		((ppnum_t)((x) >> I386_PGSHIFT))
 #define machine_btop(x)		i386_btop(x)
 #define i386_ptob(x)		(((pmap_paddr_t)(x)) << I386_PGSHIFT)
+#define machine_ptob(x)		i386_ptob(x)
 
 /*
  *	Round off or truncate to the nearest page.  These will work

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2008 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -117,6 +117,7 @@ extern kern_return_t	thread_wakeup_prim(
 			thread_wakeup_prim((x), TRUE, THREAD_AWAKENED)
 
 extern boolean_t		preemption_enabled(void);
+
 
 
 __END_DECLS

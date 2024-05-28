@@ -18,6 +18,7 @@
 @class AVVideoCompositionCoreAnimationTool;
 @class AVVideoCompositionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVVideoComposition : NSObject <NSCopying, NSMutableCopying> {
 @private
     AVVideoCompositionInternal    *_videoComposition;
@@ -48,6 +49,7 @@
 
 @class AVMutableVideoCompositionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableVideoComposition : AVVideoComposition {
 @private
     AVMutableVideoCompositionInternal    *_mutableVideoComposition;
@@ -87,6 +89,7 @@
 
 @class AVVideoCompositionInstructionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVVideoCompositionInstruction : NSObject <NSCoding, NSCopying, NSMutableCopying> {
 @private
 	AVVideoCompositionInstructionInternal	*_instruction;
@@ -115,6 +118,7 @@
 
 @class AVMutableVideoCompositionInstructionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableVideoCompositionInstruction : AVVideoCompositionInstruction {
 @private
 	AVMutableVideoCompositionInstructionInternal	*_mutableInstruction;
@@ -151,6 +155,7 @@
 
 @class AVVideoCompositionLayerInstructionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVVideoCompositionLayerInstruction : NSObject <NSCoding, NSCopying, NSMutableCopying> {
 @private
 	AVVideoCompositionLayerInstructionInternal	*_layerInstruction;
@@ -198,6 +203,7 @@
 
 @class AVMutableVideoCompositionLayerInstructionInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableVideoCompositionLayerInstruction : AVVideoCompositionLayerInstruction {
 @private
 	AVMutableVideoCompositionLayerInstructionInternal	*_mutableLayerInstruction;
@@ -313,6 +319,7 @@
 @class CALayer;
 @class AVVideoCompositionCoreAnimationToolInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVVideoCompositionCoreAnimationTool : NSObject {
 @private
 	AVVideoCompositionCoreAnimationToolInternal	*_videoCompositionTool;
@@ -323,8 +330,9 @@
 	@abstract					Add a Core Animation layer to the video composition
 	@discussion					Include a Core Animation layer as an individual track input in video composition.
 								This layer should not come from, or be added to, another layer tree.
-								trackID should not match any real trackID in the source. AVVideoCompositionInstructions 
-								should reference trackID where the rendered animation should be included.
+								trackID should not match any real trackID in the source. Use -[AVAsset unusedTrackID] 
+								to obtain a trackID that's guaranteed not to coincide with the trackID of any track of the asset.
+								AVVideoCompositionInstructions should reference trackID where the rendered animation should be included.
 								For best performance, no transform should be set in the AVVideoCompositionLayerInstruction for this trackID.
 */
 + (AVVideoCompositionCoreAnimationTool *)videoCompositionCoreAnimationToolWithAdditionalLayer:(CALayer *)layer asTrackID:(CMPersistentTrackID)trackID;

@@ -25,6 +25,7 @@
 
 @class AVCompositionTrackSegmentInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVCompositionTrackSegment : AVAssetTrackSegment
 {
 @private

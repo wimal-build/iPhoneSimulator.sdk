@@ -195,6 +195,20 @@ typedef struct task_absolutetime_info	*task_absolutetime_info_t;
 #define TASK_ABSOLUTETIME_INFO_COUNT	((mach_msg_type_number_t) \
 		(sizeof (task_absolutetime_info_data_t) / sizeof (natural_t)))
 
+#define TASK_KERNELMEMORY_INFO	7
+
+struct task_kernelmemory_info {
+	uint64_t		total_palloc;	/* private kernel mem alloc'ed */
+	uint64_t		total_pfree;	/* private kernel mem freed */
+	uint64_t		total_salloc;	/* shared kernel mem alloc'ed */
+	uint64_t		total_sfree;	/* shared kernel mem freed */
+};
+
+typedef struct task_kernelmemory_info	task_kernelmemory_info_data_t;
+typedef struct task_kernelmemory_info	*task_kernelmemory_info_t;
+#define TASK_KERNELMEMORY_INFO_COUNT	((mach_msg_type_number_t) \
+		(sizeof (task_kernelmemory_info_data_t) / sizeof (natural_t)))
+
 #define TASK_SECURITY_TOKEN		13
 #define TASK_SECURITY_TOKEN_COUNT	((mach_msg_type_number_t) \
 		(sizeof(security_token_t) / sizeof(natural_t)))

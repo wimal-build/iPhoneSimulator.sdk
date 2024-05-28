@@ -92,6 +92,7 @@ struct sockutil;
 typedef	u_quad_t so_gen_t;
 
 
+
 /*
  * Socket state bits.
  */
@@ -123,13 +124,13 @@ typedef	u_quad_t so_gen_t;
 #pragma pack(4)
 
 struct xsockbuf {
-		u_int32_t	sb_cc;
-		u_int32_t	sb_hiwat;
-		u_int32_t	sb_mbcnt;
-		u_int32_t	sb_mbmax;
-		int32_t		sb_lowat;
-		short		sb_flags;
-		short		sb_timeo;
+	u_int32_t	sb_cc;
+	u_int32_t	sb_hiwat;
+	u_int32_t	sb_mbcnt;
+	u_int32_t	sb_mbmax;
+	int32_t		sb_lowat;
+	short		sb_flags;
+	short		sb_timeo;
 };
 
 /*
@@ -182,6 +183,7 @@ struct	xsocket64 {
 };
 
 #endif /* !CONFIG_EMBEDDED */
+
 
 #pragma pack()
 

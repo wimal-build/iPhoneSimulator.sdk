@@ -99,6 +99,8 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIScrollView : UIView <NSCoding> {
         unsigned int isAnimatingScroll:1;
         unsigned int isAnimatingZoom:1;
         unsigned int staysCenteredDuringPinch:1;
+        unsigned int wasDelayingPinchForSystemGestures:1;
+        unsigned int systemGesturesRecognitionPossible:1;
     } _scrollViewFlags;
     CGFloat           _farthestDistance;
     CGPoint           _initialTouchPosition;

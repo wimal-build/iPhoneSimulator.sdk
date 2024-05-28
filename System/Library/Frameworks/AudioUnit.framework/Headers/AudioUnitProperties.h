@@ -695,6 +695,15 @@ enum {
 						with the mFrequency field filled in. The array is returned with the mMagnitude fields filled in.
 						If fewer than kNumberOfResponseFrequencies are needed, then the first unused bin should be marked with 
 						a negative frequency.
+	
+	@constant		kAudioUnitProperty_ParameterHistoryInfo
+						Scope:			Global
+						Value Type:		AudioUnitParameterHistoryInfo
+						Access: 		read
+						
+						For parameters which have kAudioUnitParameterFlag_PlotHistory set, getting this property fills out the 
+						AudioUnitParameterHistoryInfo struct containing the recommended update rate and history duration.
+
  */	
 enum
 {
@@ -720,7 +729,8 @@ enum
 	kAudioUnitProperty_ElementName					= 30,
 	kAudioUnitProperty_SupportedChannelLayoutTags	= 32,
 	kAudioUnitProperty_PresentPreset				= 36,
-	kAudioUnitProperty_ShouldAllocateBuffer			= 51
+	kAudioUnitProperty_ShouldAllocateBuffer			= 51,
+	kAudioUnitProperty_ParameterHistoryInfo			= 53
 
 #if !TARGET_OS_IPHONE
 	,
@@ -887,7 +897,6 @@ typedef struct AudioUnitFrequencyResponseBin
 } AudioUnitFrequencyResponseBin;
 
 
-
 /*!
 	@typedef		HostCallback_GetBeatAndTempo
 	@abstract		Retrieve information about the current beat and/or tempo
@@ -1028,6 +1037,22 @@ typedef struct AUInputSamplesInOutputCallbackStruct {
 } AUInputSamplesInOutputCallbackStruct;
 
 #endif //!TARGET_OS_IPHONE
+
+/*!
+	@struct			AudioUnitParameterHistoryInfo
+	@abstract		This structure contains the suggested update rate and history duration for parameters which have the kAudioUnitParameterFlag_PlotHistory flag set.
+					The structure is filled out by getting kAudioUnitProperty_ParameterHistoryInfo.
+	@field			updatesPerSecond
+						This is the number of times per second that it is suggested that the host get the value of this parameter.
+	@field			historyDurationInSeconds
+						This is the duration in seconds of history that should be plotted.
+*/
+typedef struct AudioUnitParameterHistoryInfo
+{
+	Float32		updatesPerSecond;
+	Float32		historyDurationInSeconds;
+} AudioUnitParameterHistoryInfo;
+
 
 //=====================================================================================================================
 #pragma mark - Parameter Definitions
@@ -1171,6 +1196,7 @@ typedef struct AudioUnitParameterInfo
 	@enum			Audio Unit Parameter Flags
 	@discussion		Bit positions 18, 17, and 16 are set aside for display scales. Bit 19 is reserved.
 	@constant		kAudioUnitParameterFlag_CFNameRelease
+	@constant		kAudioUnitParameterFlag_PlotHistory
 	@constant		kAudioUnitParameterFlag_MeterReadOnly
 	@constant		kAudioUnitParameterFlag_DisplayMask
 	@constant		kAudioUnitParameterFlag_DisplaySquareRoot
@@ -1195,6 +1221,7 @@ enum
 {
 	kAudioUnitParameterFlag_CFNameRelease		= (1L << 4),
 
+	kAudioUnitParameterFlag_PlotHistory			= (1L << 14),
 	kAudioUnitParameterFlag_MeterReadOnly		= (1L << 15),
 	
 	// bit positions 18,17,16 are set aside for display scales. bit 19 is reserved.

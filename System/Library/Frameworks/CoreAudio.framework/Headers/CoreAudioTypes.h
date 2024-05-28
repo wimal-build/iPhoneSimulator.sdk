@@ -63,9 +63,11 @@ extern "C"
     @enum           General Audio error codes
     @abstract       These are the error codes returned from the APIs found through Core Audio related frameworks.
     @constant       kAudio_UnimplementedError 
-                        unimplemented core routine.
+                        Unimplemented core routine.
+    @constant       kAudio_FileNotFoundError 
+                        File not found.
     @constant       kAudio_ParamError 
-                        error in user parameter list.
+                        Error in user parameter list.
     @constant       kAudio_MemFullError 
                         Not enough room in heap zone.
 */
@@ -73,6 +75,7 @@ extern "C"
 enum 
 {
     kAudio_UnimplementedError   = -4,
+    kAudio_FileNotFoundError    = -43,
     kAudio_ParamError           = -50,
     kAudio_MemFullError         = -108
 };
@@ -374,7 +377,11 @@ enum
                         kAudioFormatFlagIsFloat is clear.
     @constant       kAudioFormatFlagIsPacked
                         Set if the sample bits occupy the entire available bits for the channel,
-                        clear if they are high or low aligned within the channel.
+                        clear if they are high or low aligned within the channel. Note that even if
+                        this flag is clear, it is implied that this flag is set if the
+                        AudioStreamBasicDescription is filled out such that the fields have the
+                        following relationship:
+                           ((mBitsPerSample / 8) * mChannelsPerFrame) == mBytesPerFrame
     @constant       kAudioFormatFlagIsAlignedHigh
                         Set if the sample bits are placed into the high bits of the channel, clear
                         for low bit placement. This is only valid if kAudioFormatFlagIsPacked is
@@ -524,7 +531,7 @@ enum
     @result     A UInt32 containing the format flags.
 */
 #if defined(__cplusplus)
-inline UInt32    CalculateLPCMFlags(UInt32 inValidBitsPerChannel, UInt32 inTotalBitsPerChannel, bool inIsFloat, bool inIsBigEndian, bool inIsNonInterleaved = false) { return (inIsFloat ? kAudioFormatFlagIsFloat : kAudioFormatFlagIsSignedInteger) | (inIsBigEndian ? ((UInt32)kAudioFormatFlagIsBigEndian) : 0) | ((!inIsFloat && (inValidBitsPerChannel == inTotalBitsPerChannel)) ? kAudioFormatFlagIsPacked : kAudioFormatFlagIsAlignedHigh) | (inIsNonInterleaved ? ((UInt32)kAudioFormatFlagIsNonInterleaved) : 0); }
+inline UInt32    CalculateLPCMFlags(UInt32 inValidBitsPerChannel, UInt32 inTotalBitsPerChannel, bool inIsFloat, bool inIsBigEndian, bool inIsNonInterleaved = false) { return (inIsFloat ? kAudioFormatFlagIsFloat : kAudioFormatFlagIsSignedInteger) | (inIsBigEndian ? ((UInt32)kAudioFormatFlagIsBigEndian) : 0) | ((inValidBitsPerChannel == inTotalBitsPerChannel) ? kAudioFormatFlagIsPacked : kAudioFormatFlagIsAlignedHigh) | (inIsNonInterleaved ? ((UInt32)kAudioFormatFlagIsNonInterleaved) : 0); }
 #endif
 
 /*!

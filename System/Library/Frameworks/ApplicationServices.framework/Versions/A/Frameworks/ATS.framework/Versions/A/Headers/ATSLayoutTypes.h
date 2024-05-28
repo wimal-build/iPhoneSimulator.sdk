@@ -3,14 +3,22 @@
  
      Contains:   Apple Type Services layout public structures and constants.
  
-     Version:    ATS-183.7~9
+     Copyright:  © 1994-2008 by Apple Inc., all rights reserved.
  
-     Copyright:  © 1994-2005 by Apple Computer, Inc., all rights reserved.
+     Warning:    *** APPLE INTERNAL USE ONLY ***
+                 This file may contain unreleased API's
  
-     Bugs?:      For bug reports, consult the following page on
-                 the World Wide Web:
+     BuildInfo:  Built by:            root
+                 On:                  Wed Jul  7 01:55:59 2010
+                 With Interfacer:     3.0d46   (Mac OS X for PowerPC)
+                 From:                ATSLayoutTypes.i
+                     Revision:        1.5
+                     Dated:           2007/01/15 23:28:25
+                     Last change by:  kurita
+                     Last comment:    <rdar://problem/4916090> updated copyright.
  
-                     http://developer.apple.com/bugreporter/
+     Bugs:       Report bugs to Radar component "System Interfaces", "Latest"
+                 List the version information (from above) in the Problem Description.
  
 */
 #ifndef __ATSLAYOUTTYPES__
@@ -39,7 +47,7 @@
 extern "C" {
 #endif
 
-#pragma options align=mac68k
+#pragma pack(push, 2)
 
 /* --------------------------------------------------------------------------- */
 /* CONSTANTS and related scalar types */
@@ -50,7 +58,7 @@ extern "C" {
 enum {
   kATSUseGlyphAdvance           = 0x7FFFFFFF, /* assignment to use natural glyph advance value */
   kATSUseLineHeight             = 0x7FFFFFFF, /* assignment to use natural line ascent/descent values */
-  kATSNoTracking                = (long)0x80000000 /* negativeInfinity */
+  kATSNoTracking                = (int)0x80000000 /* negativeInfinity */
 };
 
 /* --------------------------------------------------------------------------- */
@@ -137,7 +145,7 @@ enum {
    * layout operations.
    */
   kATSULayoutOperationPostLayoutAdjustment = 0x00000020,
-  kATSULayoutOperationAppleReserved = (unsigned long)0xFFFFFFC0
+  kATSULayoutOperationAppleReserved = (UInt32)0xFFFFFFC0
 };
 
 /* ---------------------------------------------------------------------------- */
@@ -327,7 +335,7 @@ enum {
    * These bits are reserved by Apple and will result in a invalid
    * value error if attemped to set. Obsolete constants:
    */
-  kATSLineAppleReserved         = (unsigned long)0xFCE00000
+  kATSLineAppleReserved         = (UInt32)0xFCE00000
 };
 
 /* --------------------------------------------------------------------------- */
@@ -372,7 +380,7 @@ enum {
    * These bits are reserved by Apple and will result in a invalid
    * value error if attemped to set.
    */
-  kATSStyleAppleReserved        = (unsigned long)0xFFFFFFF8,
+  kATSStyleAppleReserved        = (UInt32)0xFFFFFFF8,
 
   /*
    * (OBSOLETE) Specifies that ATS produce "hinted" glyph outlines (the
@@ -407,7 +415,7 @@ enum {
   /*
    * The glyph attaches to another glyph.
    */
-  kATSGlyphInfoIsAttachment     = (unsigned long)0x80000000,
+  kATSGlyphInfoIsAttachment     = (UInt32)0x80000000,
 
   /*
    * The glyph can hang off left/top edge of line.
@@ -595,7 +603,7 @@ typedef struct ATSGlyphVector*          ATSULineRef;
  *    error. ATSULayoutOperationSelector and
  *    ATSULayoutOperationCallbackStatus are defined in ATSLayoutTypes.i.
  */
-typedef CALLBACK_API_C( OSStatus , ATSUDirectLayoutOperationOverrideProcPtr )(ATSULayoutOperationSelector iCurrentOperation, ATSULineRef iLineRef, UInt32 iRefCon, void *iOperationCallbackParameterPtr, ATSULayoutOperationCallbackStatus *oCallbackStatus);
+typedef CALLBACK_API_C( OSStatus , ATSUDirectLayoutOperationOverrideProcPtr )(ATSULayoutOperationSelector iCurrentOperation, ATSULineRef iLineRef, URefCon iRefCon, void *iOperationCallbackParameterPtr, ATSULayoutOperationCallbackStatus *oCallbackStatus);
 typedef STACK_UPP_TYPE(ATSUDirectLayoutOperationOverrideProcPtr)  ATSUDirectLayoutOperationOverrideUPP;
 /*
  *  NewATSUDirectLayoutOperationOverrideUPP()
@@ -631,10 +639,22 @@ extern OSStatus
 InvokeATSUDirectLayoutOperationOverrideUPP(
   ATSULayoutOperationSelector           iCurrentOperation,
   ATSULineRef                           iLineRef,
-  UInt32                                iRefCon,
+  URefCon                               iRefCon,
   void *                                iOperationCallbackParameterPtr,
   ATSULayoutOperationCallbackStatus *   oCallbackStatus,
   ATSUDirectLayoutOperationOverrideUPP  userUPP)              AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER;
+
+#if __MACH__
+  #ifdef __cplusplus
+    inline ATSUDirectLayoutOperationOverrideUPP                 NewATSUDirectLayoutOperationOverrideUPP(ATSUDirectLayoutOperationOverrideProcPtr userRoutine) { return userRoutine; }
+    inline void                                                 DisposeATSUDirectLayoutOperationOverrideUPP(ATSUDirectLayoutOperationOverrideUPP) { }
+    inline OSStatus                                             InvokeATSUDirectLayoutOperationOverrideUPP(ATSULayoutOperationSelector iCurrentOperation, ATSULineRef iLineRef, URefCon iRefCon, void * iOperationCallbackParameterPtr, ATSULayoutOperationCallbackStatus * oCallbackStatus, ATSUDirectLayoutOperationOverrideUPP userUPP) { return (*userUPP)(iCurrentOperation, iLineRef, iRefCon, iOperationCallbackParameterPtr, oCallbackStatus); }
+  #else
+    #define NewATSUDirectLayoutOperationOverrideUPP(userRoutine) ((ATSUDirectLayoutOperationOverrideUPP)userRoutine)
+    #define DisposeATSUDirectLayoutOperationOverrideUPP(userUPP)
+    #define InvokeATSUDirectLayoutOperationOverrideUPP(iCurrentOperation, iLineRef, iRefCon, iOperationCallbackParameterPtr, oCallbackStatus, userUPP) (*userUPP)(iCurrentOperation, iLineRef, iRefCon, iOperationCallbackParameterPtr, oCallbackStatus)
+  #endif
+#endif
 
 /* ---------------------------------------------------------------------------- */
 
@@ -660,7 +680,7 @@ struct ATSULayoutOperationOverrideSpecifier {
 };
 typedef struct ATSULayoutOperationOverrideSpecifier ATSULayoutOperationOverrideSpecifier;
 
-#pragma options align=reset
+#pragma pack(pop)
 
 #ifdef __cplusplus
 }

@@ -34,7 +34,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UISegmentedControl : UIControl <NSCoding>
     id              _delegate;
     UIColor        *_tintColor;
     UIBarStyle      _barStyle;
-    void           *_appearance;
+    id              _appearance;
     struct {
         unsigned int style:3;
         unsigned int size:2;

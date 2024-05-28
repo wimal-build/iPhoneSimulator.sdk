@@ -87,6 +87,7 @@ struct image_params {
 	int		ip_argc;		/* argument count */
 	char		*ip_argv;		/* argument vector beginning */
 	int		ip_envc;		/* environment count */
+	int		ip_applec;		/* apple vector count */
 	char		*ip_strings;		/* base address for strings */
 	char		*ip_strendp;		/* current end pointer */
 	char		*ip_strendargvp;	/* end of argv/start of envp */
@@ -122,5 +123,6 @@ struct image_params {
 #define	IMGPF_IS_64BIT		0x00000008	/* exec to a 64Bit binary */
 #define	IMGPF_SPAWN		0x00000010	/* spawn (without setexec) */
 #define	IMGPF_DISABLE_ASLR	0x00000020	/* disable ASLR */
+#define	IMGPF_DISALLOW_DATA_EXEC	0x00000040	/* forcibly disallow data execution */
 
 #endif	/* !_SYS_IMGACT */

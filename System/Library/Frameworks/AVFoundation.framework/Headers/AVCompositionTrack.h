@@ -25,6 +25,7 @@
 
 @class AVCompositionTrackInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVCompositionTrack : AVAssetTrack
 {
 @private
@@ -52,6 +53,7 @@
 
 @class AVMutableCompositionTrackInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVMutableCompositionTrack : AVCompositionTrack
 {
 @private

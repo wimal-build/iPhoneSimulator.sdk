@@ -124,10 +124,10 @@ enum {
 	kJetsamFlagsKilledHiwat =      (1 << 2),
  	kJetsamFlagsHibernated =       (1 << 3),
  	kJetsamFlagsKilledVnodes =     (1 << 4),
- 	kJetsamFlagsKilledSwap  =      (1 << 5),
-  	kJetsamFlagsThawed      =      (1 << 6),
-	kJetsamFlagsKilledVM    =      (1 << 7),
-	kJetsamFlagsSuspForDiagnosis = (1 << 8),
+ 	kJetsamFlagsKilledSwap =       (1 << 5),
+  	kJetsamFlagsThawed =           (1 << 6),
+  	kJetsamFlagsKilledVM =         (1 << 7),
+	kJetsamFlagsSuspForDiagnosis = (1 << 8)
 };
 
 extern void kern_memorystatus_init(void) __attribute__((section("__TEXT, initcode")));
@@ -143,9 +143,17 @@ extern unsigned int kern_memorystatus_delta;
 extern void kern_hibernation_init(void) __attribute__((section("__TEXT, initcode")));
 extern int kern_hibernation_wakeup;
 
+int kern_hibernation_set_process_state_busy(int pid);
+
 void kern_hibernation_on_pid_suspend(int pid);
-void kern_hibernation_on_pid_resume(int pid, task_t task);
+void kern_hibernation_on_pid_resume(int pid);
 void kern_hibernation_on_pid_hibernate(int pid);
+#endif
+
+#if CONFIG_MEMORYSTATUS
+#define VM_CHECK_MEMORYSTATUS do { vm_check_memorystatus(); } while(0)
+#else /* CONFIG_MEMORYSTATUS */
+#define VM_CHECK_MEMORYSTATUS do {} while(0)
 #endif
 
 #endif /* SYS_KERN_MEMORYSTATUS_H */

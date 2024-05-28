@@ -7,8 +7,6 @@
 
 */
 
-#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <AVFoundation/AVBase.h>
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CMBase.h>
@@ -64,6 +62,7 @@ typedef NSInteger AVAssetWriterStatus;
 	A single instance of AVAssetWriter can be used once to write to a single file. Clients that wish to write to files
 	multiple times must use a new instance of AVAssetWriter each time.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetWriter : NSObject
 {
 @private
@@ -162,19 +161,17 @@ typedef NSInteger AVAssetWriterStatus;
 @property (readonly) NSError *error;
 
 /*!
- @property movieFragmentInterval
+ @property metadata
  @abstract
-	For the QuickTime movie file type, specifies the frequency with which movie fragments should be written.
- 
- @discussion
-	When movie fragments are used, a partially written QuickTime movie file whose writing is unexpectedly interrupted can
-	be successfully opened and played up to multiples of the specified time interval. The default value of this property
-	is kCMTimeInvalid, which indicates that movie fragments should not be used, but that only a movie atom describing all
-	of the media in the file should be written.
+	A collection of metadata to be written to the receiver's output file.
 
+ @discussion
+	The value of this property is an array of AVMetadataItem objects representing the collection of top-level metadata to
+	be written in the output file.
+	
 	This property cannot be set after writing has started.
  */
-@property (nonatomic) CMTime movieFragmentInterval;
+@property (nonatomic, copy) NSArray *metadata;
 
 /*!
  @property shouldOptimizeForNetworkUse
@@ -252,19 +249,6 @@ typedef NSInteger AVAssetWriterStatus;
 	Inputs cannot be added after writing has started.
  */
 - (void)addInput:(AVAssetWriterInput *)input;
-
-/*!
- @property metadata
- @abstract
-	A collection of metadata to be written to the receiver's output file.
-
- @discussion
-	The value of this property is an array of AVMetadataItem objects representing the collection of top-level metadata to
-	be written in the output file.
-	
-	This property cannot be set after writing has started.
- */
-@property (nonatomic, copy) NSArray *metadata;
 
 /*!
  @method startWriting
@@ -377,4 +361,34 @@ typedef NSInteger AVAssetWriterStatus;
 
 @end
 
-#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+
+@interface AVAssetWriter (AVAssetWriterFileTypeSpecificProperties)
+
+/*!
+ @property movieFragmentInterval
+ @abstract
+	For file types that support movie fragments, specifies the frequency at which movie fragments should be written.
+ 
+ @discussion
+	When movie fragments are used, a partially written asset whose writing is unexpectedly interrupted can be
+	successfully opened and played up to multiples of the specified time interval. The default value of this property is
+	kCMTimeInvalid, which indicates that movie fragments should not be used.
+
+	This property cannot be set after writing has started.
+ */
+@property (nonatomic) CMTime movieFragmentInterval;
+
+/*!
+ @property movieTimeScale
+ @abstract
+	For file types that contain a 'moov' atom, such as QuickTime Movie files, specifies the asset-level time scale to be
+	used. 
+
+ @discussion
+	The default value is 0, which indicates that the receiver should choose a convenient value, if applicable.
+ 
+	This property cannot be set after writing has started.
+ */
+@property (nonatomic) CMTimeScale movieTimeScale;
+
+@end

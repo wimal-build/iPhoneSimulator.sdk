@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2007 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -139,6 +139,7 @@ enum vtagtype	{
 #define IO_BACKGROUND IO_PASSIVE /* used for backward compatibility.  to be removed after IO_BACKGROUND is no longer
 								  * used by DiskImages in-kernel mode */
 #define	IO_NOAUTH	0x8000		/* No authorization checks. */
+#define IO_NODIRECT    0x10000		/* don't use direct synchronous writes if IO_NOCACHE is specified */
 
 
 /*
@@ -151,8 +152,8 @@ struct componentname {
 	 */
 	uint32_t	cn_nameiop;	/* lookup operation */
 	uint32_t	cn_flags;	/* flags (see below) */
-	void * obsolete1;	/* use vfs_context_t */
-	void * obsolete2;	/* use vfs_context_t */
+	void * cn_reserved1;	/* use vfs_context_t */
+	void * cn_reserved2;	/* use vfs_context_t */
 	/*
 	 * Shared between lookup and commit routines.
 	 */
@@ -211,6 +212,9 @@ struct vnode_fsparam {
 
 #define VNCREATE_FLAVOR	0
 #define VCREATESIZE sizeof(struct vnode_fsparam)
+
+
+
 
 /*
  * Vnode attributes, new-style.
@@ -365,14 +369,17 @@ struct vnode_attr {
 	uint64_t	va_dirlinkcount;  /* Real references to dir (i.e. excluding "." and ".." refs) */
 
 	/* add new fields here only */
+	void * 		va_reserved1;
 		
 };
 
 /*
  * Flags for va_vaflags.
  */
-#define	VA_UTIMES_NULL	0x010000	/* utimes argument was NULL */
-#define VA_EXCLUSIVE	0x020000	/* exclusive create request */
+#define	VA_UTIMES_NULL		0x010000	/* utimes argument was NULL */
+#define VA_EXCLUSIVE		0x020000	/* exclusive create request */
+#define VA_NOINHERIT		0x040000	/* Don't inherit ACLs from parent */
+#define VA_NOAUTH		0x080000	
 
 /*
  *  Modes.  Some values same as Ixxx entries from inode.h for now.
@@ -1027,6 +1034,7 @@ int 	vnode_get(vnode_t);
  */
 int 	vnode_getwithvid(vnode_t, uint32_t);
 
+
 /*!
  @function vnode_getwithref
  @abstract Increase the iocount on a vnode on which a usecount (persistent reference) is held.
@@ -1435,6 +1443,7 @@ void	vnode_putname(const char *name);
  @return Parent if available, else NULL.
  */
 vnode_t	vnode_getparent(vnode_t vp);
+
 
 
 __END_DECLS

@@ -29,11 +29,12 @@
 #ifndef _IOKIT_IONVRAM_H
 #define _IOKIT_IONVRAM_H
 
+#ifdef __cplusplus
 #include <IOKit/IOKitKeys.h>
 #include <IOKit/IOService.h>
 #include <IOKit/IODeviceTreeSupport.h>
 #include <IOKit/nvram/IONVRAMController.h>
-
+#endif /* __cplusplus */
 
 #define kIODTNVRAMOFPartitionName       "common"
 #define kIODTNVRAMXPRAMPartitionName    "APL,MacOS75"
@@ -61,6 +62,8 @@ enum {
   kOFVariablePermUserWrite,
   kOFVariablePermKernelOnly
 };
+
+#ifdef __cplusplus
 
 class IODTNVRAM : public IOService
 {
@@ -166,7 +169,9 @@ public:
 				       IOByteCount length);  
   
   virtual IOByteCount savePanicInfo(UInt8 *buffer, IOByteCount length);
-  virtual bool SafeToSync(void);
+  virtual bool safeToSync(void);
 };
+
+#endif /* __cplusplus */
 
 #endif /* !_IOKIT_IONVRAM_H */

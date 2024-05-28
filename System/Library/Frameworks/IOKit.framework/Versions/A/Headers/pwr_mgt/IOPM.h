@@ -32,10 +32,6 @@
 #include <IOKit/IOMessage.h>
 #include <IOKit/IOReturn.h>
 
-#ifdef __ppc__
-#include <IOKit/pwr_mgt/IOPMDeprecated.h>
-#endif
-
 /*! @header IOPM.h
     @abstract Defines power management constants and keys used by both in-kernel and user space power management.
     @discussion IOPM.h defines a range of power management constants used in several in-kernel and user space APIs. Most significantly, the IOPMPowerFlags used to specify the fields of an IOPMPowerState struct are defined here.
@@ -223,6 +219,92 @@ enum {
  */
  #define kIOPMSleepWakeUUIDKey              "SleepWakeUUID"
 
+/* kIOPMDeepSleepEnabledKey
+ * Indicates the Deep Sleep enable state.
+ * It has a boolean value.
+ *  true        == Deep Sleep is enabled
+ *  false       == Deep Sleep is disabled
+ *  not present == Deep Sleep is not supported on this hardware
+ */
+#define kIOPMDeepSleepEnabledKey            "DeepSleep Enabled"
+
+/* kIOPMDeepSleepDelayKey
+ * Key refers to a CFNumberRef that represents the delay in seconds before
+ * entering Deep Sleep state. The property is not present if Deep Sleep is
+ * unsupported.
+ */
+#define kIOPMDeepSleepDelayKey              "DeepSleep Delay"
+
+/*******************************************************************************
+ *
+ * Driver PM Assertions
+ *
+ ******************************************************************************/
+
+/* Driver Assertion bitfield description
+ * Driver PM assertions are defined by these bits.
+ */
+enum {
+    /*! kIOPMDriverAssertionCPUBit
+     * When set, PM kernel will prefer to leave the CPU and core hardware
+     * running in "Dark Wake" state, instead of sleeping.
+     */
+    kIOPMDriverAssertionCPUBit                      = 0x01,
+
+    /*! kIOPMDriverAssertionUSBExternalDeviceBit
+     * When set, driver is informing PM that an external USB device is attached.
+     */
+    kIOPMDriverAssertionUSBExternalDeviceBit        = 0x04,
+
+    /*! kIOPMDriverAssertionBluetoothHIDDevicePairedBit
+     * When set, driver is informing PM that a Bluetooth HID device is paired.
+     */
+    kIOPMDriverAssertionBluetoothHIDDevicePairedBit = 0x08,
+
+    /*! kIOPMDriverAssertionExternalMediaMountedBit
+     * When set, driver is informing PM that an external media is mounted.
+     */
+    kIOPMDriverAssertionExternalMediaMountedBit     = 0x10,
+
+    kIOPMDriverAssertionReservedBit5                = 0x20,
+    kIOPMDriverAssertionReservedBit6                = 0x40,
+    kIOPMDriverAssertionReservedBit7                = 0x80
+};
+
+ /* kIOPMAssertionsDriverKey
+  * This kIOPMrootDomain key refers to a CFNumberRef property, containing
+  * a bitfield describing the aggregate PM assertion levels.
+  * Example: A value of 0 indicates that no driver has asserted anything.
+  * Or, a value of <link>kIOPMDriverAssertionCPUBit</link>
+  *   indicates that a driver (or drivers) have asserted a need fro CPU and video.
+  */
+#define kIOPMAssertionsDriverKey            "DriverPMAssertions"
+
+ /* kIOPMAssertionsDriverKey
+  * This kIOPMrootDomain key refers to a CFNumberRef property, containing
+  * a bitfield describing the aggregate PM assertion levels.
+  * Example: A value of 0 indicates that no driver has asserted anything.
+  * Or, a value of <link>kIOPMDriverAssertionCPUBit</link>
+  *   indicates that a driver (or drivers) have asserted a need fro CPU and video.
+  */
+#define kIOPMAssertionsDriverDetailedKey    "DriverPMAssertionsDetailed"
+
+/*******************************************************************************
+ *
+ * Kernel Driver assertion detailed dictionary keys
+ *
+ * Keys decode the Array & dictionary data structure under IOPMrootDomain property 
+ *  kIOPMAssertionsDriverKey.
+ *
+ */
+#define kIOPMDriverAssertionIDKey               "ID"
+#define kIOPMDriverAssertionCreatedTimeKey      "CreatedTime"
+#define kIOPMDriverAssertionModifiedTimeKey     "ModifiedTime"
+#define kIOPMDriverAssertionOwnerStringKey      "Owner"
+#define kIOPMDriverAssertionOwnerServiceKey     "ServicePtr"
+#define kIOPMDriverAssertionLevelKey            "Level"
+#define kIOPMDriverAssertionAssertedKey         "Assertions"
+
 /*******************************************************************************
  *
  * Root Domain general interest messages
@@ -300,6 +382,12 @@ enum {
  */
 #define kIOPMMessageSleepWakeUUIDCleared                ((void *)0)
 
+/*! kIOPMMessageDriverAssertionsChanged
+ *  Sent when kernel PM driver assertions have changed.
+ */
+#define kIOPMMessageDriverAssertionsChanged  \
+                iokit_family_msg(sub_iokit_powermanagement, 0x150)
+
 /*******************************************************************************
  *
  * Power commands issued to root domain
@@ -308,6 +396,7 @@ enum {
  * These commands are issued from system drivers only:
  *      ApplePMU, AppleSMU, IOGraphics, AppleACPIFamily
  *
+ * TODO: deprecate kIOPMAllowSleep and kIOPMPreventSleep
  ******************************************************************************/
 enum {
   kIOPMSleepNow                 = (1<<0),  // put machine to sleep now
@@ -590,7 +679,6 @@ enum {
     kIOBatteryChargerConnect    = (1 << 0)
 };
 
-
 // Private power management message indicating battery data has changed
 // Indicates new data resides in the IORegistry
 #define kIOPMMessageBatteryStatusHasChanged         iokit_family_msg(sub_iokit_pmu, 0x100)
@@ -616,7 +704,6 @@ enum {
   kIOPMClamshellStateOnWake = (1<<10)     // used only by Platform Expert
 };
 
-
 // **********************************************
 // Internal power management data structures
 // **********************************************
@@ -633,7 +720,7 @@ enum {
     kIOPMSuperclassPolicy1
 };
 
-struct stateChangeNote{
+struct stateChangeNote {
     IOPMPowerFlags    stateFlags;
     unsigned long    stateNum;
     void *         powerRef;
@@ -650,5 +737,54 @@ typedef struct IOPowerStateChangeNotification IOPowerStateChangeNotification;
 typedef IOPowerStateChangeNotification sleepWakeNote;
 #endif /* KERNEL && __cplusplus */
 
-#endif /* ! _IOKIT_IOPM_H */
+/*! @struct IOPMSystemCapabilityChangeParameters
+    @abstract A structure describing a system capability change.
+    @discussion A system capability change is a system level transition from a set
+        of system capabilities to a new set of system capabilities. Power management
+        sends a <code>kIOMessageSystemCapabilityChange</code> message and provides
+        this structure as the message data (by reference) to
+        <code>gIOPriorityPowerStateInterest</code> clients when system capability
+        changes.
+    @field notifyRef An identifier for this message notification. Clients with pending
+        I/O can signal completion by calling <code>allowPowerChange()</code> with this
+        value as the argument. Clients that are able to process the notification
+        synchronously should ignore this field.
+    @field maxWaitForReply A return value to the caller indicating the maximum time in
+        microseconds to wait for the <code>allowPowerChange()</code> call. The default
+        value is zero, which indicates the client processing has finished, and power
+        management should not wait for an <code>allowPowerChange()</code> call.
+    @field changeFlags Flags will be set to indicate whether the notification precedes
+        the capability change (<code>kIOPMSystemCapabilityWillChange</code>), or after
+        the capability change has occurred (<code>kIOPMSystemCapabilityDidChange</code>).
+    @field __reserved1 Set to zero.
+    @field fromCapabilities The system capabilities at the start of the transition.
+    @field toCapabilities The system capabilities at the end of the transition.
+    @field __reserved2 Set to zero.
+ */
+struct IOPMSystemCapabilityChangeParameters {
+    uint32_t    notifyRef;
+    uint32_t    maxWaitForReply;
+    uint32_t    changeFlags;
+    uint32_t    __reserved1;
+    uint32_t    fromCapabilities;
+    uint32_t    toCapabilities;
+    uint32_t    __reserved2[4];
+};
 
+/*! @enum IOPMSystemCapabilityChangeFlags
+    @constant kIOPMSystemCapabilityWillChange Indicates the system capability will change.
+    @constant kIOPMSystemCapabilityDidChange Indicates the system capability has changed.
+*/
+enum {
+    kIOPMSystemCapabilityWillChange = 0x01,
+    kIOPMSystemCapabilityDidChange  = 0x02
+};
+
+enum {
+    kIOPMSystemCapabilityCPU        = 0x01,
+    kIOPMSystemCapabilityGraphics   = 0x02,
+    kIOPMSystemCapabilityAudio      = 0x04,
+    kIOPMSystemCapabilityNetwork    = 0x08
+};
+
+#endif /* ! _IOKIT_IOPM_H */

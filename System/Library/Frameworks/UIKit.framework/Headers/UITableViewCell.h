@@ -96,6 +96,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITableViewCell : UIView <NSCoding> {
         unsigned int showsReorderControl:1;
         unsigned int showDisclosure:1;
         unsigned int showTopSeparator:1;
+        unsigned int hideTopSeparatorDuringReordering:1;
         unsigned int disclosureClickable:1;
         unsigned int disclosureStyle:1;
         unsigned int showingRemoveControl:1;
@@ -115,6 +116,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITableViewCell : UIView <NSCoding> {
         unsigned int animatingSelection:1;
         unsigned int backgroundColorSet:1;
         unsigned int needsSetup:1;
+        unsigned int dontDrawTopShadow:1;
     } _tableCellFlags;
     
     UIButton *_accessoryView;

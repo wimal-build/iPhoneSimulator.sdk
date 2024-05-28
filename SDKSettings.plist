@@ -2,22 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildMachineOSBuild</key>
+	<string>(MAC_OS_X_PRODUCT_BUILD_VERSION)</string>
 	<key>CanonicalName</key>
-	<string>iphonesimulator4.2</string>
+	<string>iphonesimulator4.3</string>
 	<key>CustomProperties</key>
 	<dict/>
+	<key>DTCompiler</key>
+	<string>(GCC_VERSION)</string>
+	<key>DTPlatformBuild</key>
+	<string>(PLATFORM_PRODUCT_BUILD_VERSION)</string>
+	<key>DTPlatformVersion</key>
+	<string>PG</string>
+	<key>DTSDKBuild</key>
+	<string>(SDK_PRODUCT_BUILD_VERSION)</string>
+	<key>DTSDKName</key>
+	<string>(SDK_NAME)</string>
+	<key>DTXcode</key>
+	<string>(XCODE_VERSION_ACTUAL)</string>
+	<key>DTXcodeBuild</key>
+	<string>(XCODE_PRODUCT_BUILD_VERSION)</string>
 	<key>DefaultProperties</key>
 	<dict>
 		<key>GCC_VERSION</key>
 		<string>4.2</string>
 		<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-		<string>4.2</string>
+		<string>4.3</string>
 		<key>MACOSX_DEPLOYMENT_TARGET</key>
 		<string>10.6</string>
 		<key>PLATFORM_NAME</key>
 		<string>iphonesimulator</string>
 		<key>PLATFORM_VERSION_AVAILABILITY_H_FORMAT</key>
-		<string>40200</string>
+		<string>40300</string>
 		<key>SUPPORTED_DEVICE_FAMILIES</key>
 		<array>
 			<string>1</string>
@@ -25,7 +41,7 @@
 		</array>
 	</dict>
 	<key>DisplayName</key>
-	<string>Simulator - iOS 4.2</string>
+	<string>Simulator - iOS 4.3</string>
 	<key>DocSetFeedName</key>
 	<string>Apple iPhone OS</string>
 	<key>DocSetFeedURL</key>
@@ -33,11 +49,11 @@
 	<key>MaximumDeploymentTarget</key>
 	<string>10.6</string>
 	<key>MinimalDisplayName</key>
-	<string>Simulator - 4.2</string>
+	<string>Simulator - 4.3</string>
 	<key>MinimumSupportedToolsVersion</key>
 	<string>3.2.3</string>
 	<key>Version</key>
-	<string>4.2</string>
+	<string>4.3</string>
 	<key>isBaseSDK</key>
 	<string>YES</string>
 </dict>

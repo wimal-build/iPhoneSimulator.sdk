@@ -10,13 +10,20 @@
 /*!
 	@class			AVPlayerItem
 
-	@abstract		An AVPlayerItem carries a reference to an AVAsset as well as presentation settings for that asset,
-					including track enabled state.
+	@abstract
+	  An AVPlayerItem carries a reference to an AVAsset as well as presentation settings for that asset.
 
-	@discussion		Note that inspection of media assets is provided by AVAsset.
-					This class is intended to represent presentation state for an asset that's played by an AVPlayer
-					and to permit observation of that state.
+	@discussion
+	  Note that inspection of media assets is provided by AVAsset.
+	  This class is intended to represent presentation state for an asset that's played by an AVPlayer and to permit observation of that state.
 
+	  To allow clients to add and remove their objects as key-value observers safely, AVPlayerItem serializes notifications of
+	  changes that occur dynamically during playback on the same dispatch queue on which notifications of playback state changes
+	  are serialized by its associated AVPlayer. By default, this queue is the main queue. See dispatch_get_main_queue().
+	  
+	  To ensure safe access to AVPlayerItem's nonatomic properties while dynamic changes in playback state may be reported, clients must
+	  serialize their access with the associated AVPlayer's notification queue. In the common case, such serialization is naturally
+	  achieved by invoking AVPlayerItem's various methods on the main thread or queue.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -31,9 +38,13 @@
 
 /* Note that NSNotifications posted by AVPlayerItem may be posted on a different thread from the one on which the observer was registered. */
 
-// notification                                                                description
-extern NSString *const AVPlayerItemDidPlayToEndTimeNotification				// item has played to its end time
-							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+// notifications                                                                                description
+extern NSString *const AVPlayerItemDidPlayToEndTimeNotification      NS_AVAILABLE(10_7, 4_0);   // item has played to its end time
+extern NSString *const AVPlayerItemFailedToPlayToEndTimeNotification NS_AVAILABLE(10_7, 4_3);   // item has failed to play to its end time
+
+// notification userInfo key                                                                    type
+extern NSString *const AVPlayerItemFailedToPlayToEndTimeErrorKey     NS_AVAILABLE(10_7, 4_3);   // NSError
+
 /*!
  @enum AVPlayerItemStatus
  @abstract
@@ -62,6 +73,7 @@ typedef NSInteger AVPlayerItemStatus;
 @class AVVideoComposition;
 @class AVPlayerItemInternal;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVPlayerItem : NSObject <NSCopying>
 {
 @private
@@ -158,11 +170,15 @@ typedef NSInteger AVPlayerItemStatus;
  */
 - (void)seekToTime:(CMTime)time toleranceBefore:(CMTime)toleranceBefore toleranceAfter:(CMTime)toleranceAfter;
 
-/* Accessor for underlying AVAsset provided during initialization. */
+/* Accessor for underlying AVAsset. */
 @property (nonatomic, readonly) AVAsset *asset;
 
 /* Provides array of AVPlayerItem tracks. Observable (can change dynamically during playback). */
 @property (nonatomic, readonly) NSArray *tracks;
+
+/* Indicates the duration of the item, not considering either its forwardPlaybackEndTime or reversePlaybackEndTime.
+   Observable (can change dynamically during playback). */
+@property (nonatomic, readonly) CMTime duration NS_AVAILABLE(10_7, 4_3);
 
 /* indicates the size at which the visual portion of the item is presented by the player; can be scaled from this size to fit within the bounds of an AVPlayerLayer via its videoGravity property */
 @property (nonatomic, readonly) CGSize presentationSize;
@@ -215,6 +231,13 @@ typedef NSInteger AVPlayerItemStatus;
 - (void)stepByCount:(NSInteger)stepCount;
 
 /*!
+	@method	currentDate
+	@abstract	If currentTime is mapped to a particular (real-time) date, return that date.
+	@result		Returns the date of current playback, or nil if playback is not mapped to any date.
+*/
+- (NSDate*)currentDate;
+
+/*!
  @method		seekToDate
  @abstract		move playhead to a point corresponding to a particular date.
  @discussion
@@ -259,5 +282,319 @@ typedef NSInteger AVPlayerItemStatus;
 
 /* The timed metadata played most recently by the media stream. NSArray[ AVMetadataItem ] */
 @property (nonatomic, readonly) NSArray *timedMetadata;
+
+@end
+
+@class AVPlayerItemAccessLog;
+@class AVPlayerItemErrorLog;
+@class AVPlayerItemAccessLogInternal;
+@class AVPlayerItemErrorLogInternal;
+@class AVPlayerItemAccessLogEventInternal;
+@class AVPlayerItemErrorLogEventInternal;
+
+@interface AVPlayerItem (AVPlayerItemLogging)
+
+/*!
+ @method		accessLog
+ @abstract		Returns an object that represents a snapshot of the network access log. Can be nil.
+ @discussion	An AVPlayerItemAccessLog provides methods to retrieve the network access log in a format suitable for serialization.
+ 				If nil is returned then there is no logging information currently available for this AVPlayerItem.
+ @result		An autoreleased AVPlayerItemAccessLog instance.
+ */
+- (AVPlayerItemAccessLog *)accessLog NS_AVAILABLE(10_7, 4_3);
+
+/*!
+ @method		errorLog
+ @abstract		Returns an object that represents a snapshot of the error log. Can be nil.
+ @discussion	An AVPlayerItemErrorLog provides methods to retrieve the error log in a format suitable for serialization.
+ 				If nil is returned then there is no logging information currently available for this AVPlayerItem.
+ @result		An autoreleased AVPlayerItemErrorLog instance.
+ */
+- (AVPlayerItemErrorLog *)errorLog NS_AVAILABLE(10_7, 4_3); 
+
+@end
+
+/*!
+ @class			AVPlayerItemAccessLog
+ @abstract		An AVPlayerItemAccessLog provides methods to retrieve the access log in a format suitable for serialization.
+ @discussion	An AVPlayerItemAccessLog acculumulates key metrics about network playback and presents them as a collection 
+ 				of AVPlayerItemAccessLogEvent instances. Each AVPlayerItemAccessLogEvent instance collates the data 
+ 				that relates to each uninterrupted period of playback.
+*/
+NS_CLASS_AVAILABLE(10_7, 4_3)
+@interface AVPlayerItemAccessLog : NSObject <NSCopying>
+{
+@private
+	AVPlayerItemAccessLogInternal	*_playerItemAccessLog;
+}
+
+/*!
+ @method		extendedLogData
+ @abstract		Serializes an AVPlayerItemAccessLog in the Exteneded Log File Format.
+ @discussion	This method converts the webserver access log into a textual format that conforms to the
+				W3C Extended Log File Format for web server log files.
+				For more information see: http://www.w3.org/pub/WWW/TR/WD-logfile.html
+ @result		An autoreleased NSData instance.
+ */
+- (NSData *)extendedLogData;
+
+/*!
+ @method		extendedLogDataStringEncoding
+ @abstract		Returns the NSStringEncoding for extendedLogData, see above.
+ @discussion	A string suitable for console output is obtainable by: 
+ 				[[NSString alloc] initWithData:[myLog extendedLogData] encoding:[myLog extendedLogDataStringEncoding]]
+ @result		An NSStringEncoding.
+ */
+ - (NSStringEncoding)extendedLogDataStringEncoding;
+
+/*!
+ @property		events
+ @abstract		An ordered collection of AVPlayerItemAccessLogEvent instances.
+ @discussion	An ordered collection of AVPlayerItemAccessLogEvent instances that represent the chronological
+ 				sequence of events contained in the access log.
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSArray *events;
+
+@end
+
+/*!
+ @class			AVPlayerItemErrorLog
+ @abstract		An AVPlayerItemErrorLog provides methods to retrieve the error log in a format suitable for serialization.
+ @discussion	An AVPlayerItemAccessLog provides data to identify if, and when, network resource playback failures occured.
+*/
+NS_CLASS_AVAILABLE(10_7, 4_3)
+@interface AVPlayerItemErrorLog : NSObject <NSCopying>
+{
+@private
+	AVPlayerItemErrorLogInternal	*_playerItemErrorLog;
+}
+
+/*!
+ @method		extendedLogData
+ @abstract		Serializes an AVPlayerItemErrorLog in the Exteneded Log File Format.
+ @discussion	This method converts the webserver error log into a textual format that conforms to the
+				W3C Extended Log File Format for web server log files.
+				For more information see: http://www.w3.org/pub/WWW/TR/WD-logfile.html
+ @result		An autoreleased NSData instance.
+ */
+- (NSData *)extendedLogData;
+
+/*!
+ @method		extendedLogDataStringEncoding
+ @abstract		Returns the NSStringEncoding for extendedLogData, see above.
+ @discussion	A string suitable for console output is obtainable by: 
+ 				[[NSString alloc] initWithData:[myLog extendedLogData] encoding:[myLog extendedLogDataStringEncoding]]
+ @result		An NSStringEncoding.
+ */
+ - (NSStringEncoding)extendedLogDataStringEncoding;
+
+/*!
+ @property		events
+ @abstract		An ordered collection of AVPlayerItemErrorLogEvent instances.
+ @discussion	An ordered collection of AVPlayerItemErrorLogEvent instances that represent the chronological
+ 				sequence of events contained in the error log.
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSArray *events;
+
+@end
+
+/*!
+ @class			AVPlayerItemAccessLogEvent
+ @abstract		An AVPlayerItemAccessLogEvent repesents a single log entry.
+ @discussion	An AVPlayerItemAccessLogEvent provides named properties for accessing the data
+				feilds of each log event. None of the properties of this class are observable.
+*/
+
+NS_CLASS_AVAILABLE(10_7, 4_3)
+@interface AVPlayerItemAccessLogEvent : NSObject <NSCopying>
+{
+@private
+	AVPlayerItemAccessLogEventInternal	*_playerItemAccessLogEvent;
+}
+
+/*!
+ @property		numberOfSegmentsDownloaded
+ @abstract		A count of media segments downloaded.
+ @discussion	Value is negative if unknown. A count of media segments downloaded from the server to this client. Corresponds to "sc-count".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSInteger numberOfSegmentsDownloaded;
+
+/*!
+ @property		playbackStartDate
+ @abstract		The date/time at which playback began for this event. Can be nil.
+ @discussion	If nil is returned the date is unknown. Corresponds to "date".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSDate *playbackStartDate;
+
+/*!
+ @property		URI
+ @abstract		The URI of the playback item. Can be nil.
+ @discussion	If nil is returned the URI is unknown. Corresponds to "uri".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *URI;
+
+/*!
+ @property		serverAddress
+ @abstract		The IP address of the server that was the source of the last delivered media segment. Can be nil.
+ @discussion	If nil is returned the address is unknown. Can be either an IPv4 or IPv6 address. Corresponds to "s-ip".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *serverAddress;
+
+/*!
+ @property		numberOfServerAddressChanges
+ @abstract		A count of changes to the property serverAddress, see above, over the last uninterrupted period of playback.
+ @discussion	Value is negative if unknown. Corresponds to "s-ip-changes".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSInteger numberOfServerAddressChanges;
+
+/*!
+ @property		playbackSessionID
+ @abstract		A GUID that identifies the playback session. This value is used in HTTP requests. Can be nil.
+ @discussion	If nil is returned the GUID is unknown. Corresponds to "cs-guid".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *playbackSessionID;
+
+/*!
+ @property		playbackStartOffset
+ @abstract		An offset into the playlist where the last uninterrupted period of playback began. Measured in seconds.
+ @discussion	Value is negative if unknown. Corresponds to "c-start-time".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSTimeInterval playbackStartOffset;
+
+/*!
+ @property		segmentsDownloadedDuration
+ @abstract		The accumulated duration of the media downloaded. Measured in seconds.
+ @discussion	Value is negative if unknown. Corresponds to "c-duration-downloaded".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSTimeInterval segmentsDownloadedDuration;
+
+/*!
+ @property		durationWatched
+ @abstract		The accumulated duration of the media played. Measured in seconds.
+ @discussion	Value is negative if unknown. Corresponds to "c-duration-watched".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSTimeInterval durationWatched;
+
+/*!
+ @property		numberOfStalls
+ @abstract		The total number of playback stalls encountered.
+ @discussion	Value is negative if unknown. Corresponds to "c-stalls".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSInteger numberOfStalls;
+
+/*!
+ @property		bytesTransferred
+ @abstract		The accumulated number of bytes transferred.
+ @discussion	Value is negative if unknown. Corresponds to "bytes".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) long long numberOfBytesTransferred;
+
+/*!
+ @property		observedBitrate
+ @abstract		The empirical throughput across all media downloaded. Measured in bits per second.
+ @discussion	Value is negative if unknown. Corresponds to "c-observed-bitrate".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) double observedBitrate;
+
+/*!
+ @property		indicatedBitrate
+ @abstract		The throughput required to play the stream, as advertised by the server. Measured in bits per second.
+ @discussion	Value is negative if unknown. Corresponds to "sc-indicated-bitrate".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) double indicatedBitrate;
+
+/*!
+ @property		numberOfDroppedVideoFrames
+ @abstract		The total number of dropped video frames.
+ @discussion	Value is negative if unknown. Corresponds to "c-frames-dropped".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSInteger numberOfDroppedVideoFrames;
+
+@end
+
+/*!
+ @class			AVPlayerItemErrorLogEvent
+ @abstract		An AVPlayerItemErrorLogEvent repesents a single log entry.
+ @discussion	An AVPlayerItemErrorLogEvent provides named properties for accessing the data
+				feilds of each log event. None of the properties of this class are observable.
+*/
+NS_CLASS_AVAILABLE(10_7, 4_3)
+@interface AVPlayerItemErrorLogEvent : NSObject <NSCopying>
+{
+@private
+	AVPlayerItemErrorLogEventInternal	*_playerItemErrorLogEvent;
+}
+
+/*!
+ @property		date
+ @abstract		The date and time when the error occured. Can be nil.
+ @discussion	If nil is returned the date is unknown. Corresponds to "date".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSDate *date;
+
+/*!
+ @property		URI
+ @abstract		The URI of the playback item. Can be nil.
+ @discussion	If nil is returned the URI is unknown. Corresponds to "uri".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *URI;
+
+/*!
+ @property		serverAddress
+ @abstract		The IP address of the server that was the source of the error. Can be nil.
+ @discussion	If nil is returned the address is unknown. Can be either an IPv4 or IPv6 address. Corresponds to "s-ip".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *serverAddress;
+
+/*!
+ @property		playbackSessionID
+ @abstract		A GUID that identifies the playback session. This value is used in HTTP requests. Can be nil.
+ @discussion	If nil is returned the GUID is unknown. Corresponds to "cs-guid".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *playbackSessionID;
+
+/*!
+ @property		errorStatusCode
+ @abstract		A unique error code identifier.
+ @discussion	Corresponds to "status".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSInteger errorStatusCode;
+
+/*!
+ @property		errorDomain
+ @abstract		The domain of the error.
+ @discussion	Corresponds to "domain".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *errorDomain;
+
+/*!
+ @property		errorComment
+ @abstract		A description of the error encountered. Can be nil.
+ @discussion	If nil is returned further information is not available. Corresponds to "comment".
+ 				This property is not observable.
+ */
+@property (nonatomic, readonly) NSString *errorComment;
 
 @end

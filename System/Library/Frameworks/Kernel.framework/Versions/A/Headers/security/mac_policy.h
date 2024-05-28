@@ -4702,21 +4702,6 @@ typedef void mpo_task_label_update_t(
 	struct label *task
 );
 /**
-  @brief Perform MAC-related events when a thread returns to user space
-  @param code The number of the syscall/trap that has finished
-  @param error The error code that will be returned to user space
-  @param thread Mach (not BSD) thread that is returning
-
-  This entry point permits policy modules to perform MAC-related
-  events when a thread returns to user space, via a system call
-  return, trap return, or otherwise.
-*/
-typedef void mpo_thread_userret_t(
-	int code,
-	int error,
-	struct thread *thread
-);
-/**
   @brief Check vnode access
   @param cred Subject credential
   @param vp Object vnode
@@ -4871,6 +4856,23 @@ typedef int mpo_vnode_check_exec_t(
 	struct label *execlabel,	/* NULLOK */
 	struct componentname *cnp,
 	u_int *csflags
+);
+/**
+  @brief Access control check for fsgetpath
+  @param cred Subject credential
+  @param vp Vnode for which a path will be returned
+  @param label Label associated with the vnode
+
+  Determine whether the subject identified by the credential can get the path
+  of the given vnode with fsgetpath.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.
+*/
+typedef int mpo_vnode_check_fsgetpath_t(
+	kauth_cred_t cred,
+	struct vnode *vp,
+	struct label *label
 );
 /**
   @brief Access control check after determining the code directory hash
@@ -5923,7 +5925,7 @@ typedef void mpo_reserved_hook_t(void);
 /*!
   \struct mac_policy_ops
 */
-#define MAC_POLICY_OPS_VERSION 7 /* inc when new reserved slots are taken */
+#define MAC_POLICY_OPS_VERSION 8 /* inc when new reserved slots are taken */
 struct mac_policy_ops {
 	mpo_audit_check_postselect_t		*mpo_audit_check_postselect;
 	mpo_audit_check_preselect_t		*mpo_audit_check_preselect;
@@ -6176,7 +6178,7 @@ struct mac_policy_ops {
 	mpo_task_label_init_t			*mpo_task_label_init;
 	mpo_task_label_internalize_t		*mpo_task_label_internalize;
 	mpo_task_label_update_t			*mpo_task_label_update;
-	mpo_thread_userret_t			*mpo_thread_userret;
+	mpo_reserved_hook_t			*mpo_reserved30;      /* was mpo_thread_userret */
 	mpo_vnode_check_access_t		*mpo_vnode_check_access;
 	mpo_vnode_check_chdir_t			*mpo_vnode_check_chdir;
 	mpo_vnode_check_chroot_t		*mpo_vnode_check_chroot;
@@ -6241,7 +6243,7 @@ struct mac_policy_ops {
 	mpo_priv_check_t			*mpo_priv_check;
 	mpo_priv_grant_t			*mpo_priv_grant;
 	mpo_proc_check_map_anon_t		*mpo_proc_check_map_anon;
-	mpo_reserved_hook_t			*mpo_reserved11;
+	mpo_vnode_check_fsgetpath_t		*mpo_vnode_check_fsgetpath;
 	mpo_reserved_hook_t			*mpo_reserved12;
 	mpo_reserved_hook_t			*mpo_reserved13;
 	mpo_reserved_hook_t			*mpo_reserved14;

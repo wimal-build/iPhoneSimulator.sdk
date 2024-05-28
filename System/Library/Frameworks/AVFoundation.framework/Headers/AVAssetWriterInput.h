@@ -7,8 +7,6 @@
 
 */
 
-#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <AVFoundation/AVBase.h>
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CMTime.h>
@@ -31,6 +29,7 @@
 	
 	AVAssetWriterInput also supports writing per-track metadata collections to the output file.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetWriterInput : NSObject
 {
 @private
@@ -60,8 +59,8 @@
 	other encoders all appropriate AVEncoder*Key keys must be included.
  
 	Video output settings keys are defined in AVVideoSettings.h. Video output settings with keys from
-	<CoreVideo/CVPixelBuffer.h> are not currently supported. The only value currently supported for
-	AVVideoCodecKey is AVVideoCodecH264.
+	<CoreVideo/CVPixelBuffer.h> are not currently supported. The only values currently supported for
+	AVVideoCodecKey are AVVideoCodecH264 and AVVideoCodecJPEG. AVVideoCodecH264 is not supported on iPhone 3G.
 
 	Passing nil for output settings instructs the input to pass through appended samples, doing no processing
 	before they are written to the output file.  This is useful if, for example, you are appending buffers that
@@ -94,9 +93,9 @@
 	other encoders all appropriate AVEncoder*Key keys must be included.
  
 	Video output settings keys are defined in AVVideoSettings.h. Video output settings with keys from
-	<CoreVideo/CVPixelBuffer.h> are not currently supported. The only value currently supported for
-	AVVideoCodecKey is AVVideoCodecH264.
-
+	<CoreVideo/CVPixelBuffer.h> are not currently supported. The only values currently supported for
+	AVVideoCodecKey are AVVideoCodecH264 and AVVideoCodecJPEG. AVVideoCodecH264 is not supported on iPhone 3G.
+	
 	Passing nil for output settings instructs the input to pass through appended samples, doing no processing
 	before they are written to the output file.  This is useful if, for example, you are appending buffers that
 	are already in a desirable compressed format.  However, passthrough is currently supported only when writing
@@ -124,18 +123,6 @@
 	Audio output settings keys are defined in AVAudioSettings.h. Video output settings keys are defined in AVVideoSettings.h.
 */
 @property (nonatomic, readonly) NSDictionary *outputSettings;
-
-/*!
- @property transform
- @abstract
-	The transform specified in the output file as the preferred transformation of the visual media data for display purposes.
- 
- @discussion
-	If no value is specified, the identity transform is used.
-
-	This property cannot be set after writing on the receiver's AVAssetWriter has started.
-*/
-@property (nonatomic) CGAffineTransform transform;
 
 /*!
  @property metadata
@@ -266,8 +253,9 @@
 	If the sample buffer contains a CVPixelBuffer then for optimal performance the format of the pixel buffer should match
 	one of the native formats supported by the selected video encoder. The H.264 encoder natively supports 
 	kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange and kCVPixelFormatType_420YpCbCr8BiPlanarFullRange, which should be 
-	used with video and full range input respectively. Pixel buffers not in either of these formats will be converted 
-	internally prior to encoding.
+	used with video and full range input respectively. The JPEG encoder natively supports kCVPixelFormatType_422YpCbCr8FullRange.
+	Pixel buffers not in a natively supported format will be converted internally prior to encoding. Pixel format conversions
+	within the same range (video or full) are generally faster than conversions between different ranges.
  
 	Audio buffers passed into appendSampleBuffer: currently must be in linear PCM format.
  */
@@ -288,6 +276,40 @@
 @end
 
 
+@interface AVAssetWriterInput (AVAssetWriterInputPropertiesForVisualCharacteristic)
+
+/*!
+ @property transform
+ @abstract
+	The transform specified in the output file as the preferred transformation of the visual media data for display purposes.
+ 
+ @discussion
+	If no value is specified, the identity transform is used.
+
+	This property cannot be set after writing on the receiver's AVAssetWriter has started.
+*/
+@property (nonatomic) CGAffineTransform transform;
+
+@end
+
+
+@interface AVAssetWriterInput (AVAssetWriterInputFileTypeSpecificProperties)
+
+/*!
+ @property mediaTimeScale
+ @abstract
+	For file types that support media time scales, such as QuickTime Movie files, specifies the media time scale to be used.
+
+ @discussion
+	The default value is 0, which indicates that the receiver should choose a convenient value, if applicable.
+
+	This property cannot be set after writing has started.
+ */
+@property (nonatomic) CMTimeScale mediaTimeScale;
+
+@end
+
+
 @class AVAssetWriterInputPixelBufferAdaptorInternal;
 
 /*!
@@ -301,6 +323,7 @@
 	allocate pixel buffers for writing to the output file.  Using the provided pixel buffer pool for buffer
 	allocation is typically more efficient than appending pixel buffers allocated using a separate pool.
  */
+NS_CLASS_AVAILABLE(10_7, 4_1)
 @interface AVAssetWriterInputPixelBufferAdaptor : NSObject
 {
 @private
@@ -426,10 +449,10 @@
 	For optimal performance the format of the pixel buffer should match one of the native formats supported by the
 	selected video encoder. The H.264 encoder natively supports kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange and
 	kCVPixelFormatType_420YpCbCr8BiPlanarFullRange, which should be used with video and full range input respectively.
-	Pixel buffers not in either of these formats will be converted internally prior to encoding.
+	The JPEG encoder natively supports kCVPixelFormatType_422YpCbCr8FullRange. Pixel buffers not in a natively supported
+	format will be converted internally prior to encoding. Pixel format conversions within the same range (video or full)
+	are generally faster than conversions between different ranges.
  */
 - (BOOL)appendPixelBuffer:(CVPixelBufferRef)pixelBuffer withPresentationTime:(CMTime)presentationTime;
 
 @end
-
-#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED

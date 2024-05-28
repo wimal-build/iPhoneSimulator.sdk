@@ -105,6 +105,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITextField : UIControl <UITextInputTraits
         unsigned int adjustsFontSizeToFitWidth:1;
         unsigned int fieldEditorAttached:1;
         unsigned int canBecomeFirstResponder:1;
+        unsigned int shouldSuppressShouldBeginEditing:1;
         unsigned int inResignFirstResponder:1;
         unsigned int undoDisabled:1;
         unsigned int contentsRTL:1;

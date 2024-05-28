@@ -432,6 +432,7 @@ ctl_enqueuembuf(kern_ctl_ref kctlref, u_int32_t unit, mbuf_t m, u_int32_t flags)
 errno_t 
 ctl_getenqueuespace(kern_ctl_ref kctlref, u_int32_t unit, size_t *space);
 
+
 __END_DECLS
 
 #endif /* KPI_KERN_CONTROL_H */

@@ -54,43 +54,49 @@
 
 
 #if TARGET_OS_IPHONE
+
 /* These export options can be used to produce QuickTime .mov files with video size appropriate to the device.
 	The export will not scale the video up from a smaller size. The video will be compressed using
 	H.264 and the audio will be compressed using AAC.  */
-extern NSString *const AVAssetExportPresetLowQuality        __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
-extern NSString *const AVAssetExportPresetMediumQuality     __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
-extern NSString *const AVAssetExportPresetHighestQuality    __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+extern NSString *const AVAssetExportPresetLowQuality        NS_AVAILABLE_IPHONE(4_0);
+extern NSString *const AVAssetExportPresetMediumQuality     NS_AVAILABLE_IPHONE(4_0);
+extern NSString *const AVAssetExportPresetHighestQuality    NS_AVAILABLE_IPHONE(4_0);
+
 #endif // TARGET_OS_IPHONE
 
 /* These export options can be used to produce QuickTime .mov files with the specified video size.
 	The export will not scale the video up from a smaller size. The video will be compressed using
 	H.264 and the audio will be compressed using AAC.  Some devices cannot support some sizes. */
-extern NSString *const AVAssetExportPreset640x480   __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVAssetExportPreset960x540   __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-extern NSString *const AVAssetExportPreset1280x720  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
-#if ! TARGET_OS_IPHONE
-extern NSString *const AVAssetExportPreset1920x1080  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
-#endif // ! TARGET_OS_IPHONE
+extern NSString *const AVAssetExportPreset640x480			NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVAssetExportPreset960x540   		NS_AVAILABLE(10_7, 4_0);
+extern NSString *const AVAssetExportPreset1280x720  		NS_AVAILABLE(10_7, 4_0);
+
+#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+extern NSString *const AVAssetExportPreset1920x1080			NS_AVAILABLE(10_7, NA);
+#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
 
 /*  This export option will produce an audio-only .m4a file with appropriate iTunes gapless playback data */
-extern NSString *const AVAssetExportPresetAppleM4A	__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVAssetExportPresetAppleM4A			NS_AVAILABLE(10_7, 4_0);
 
 /* This export option will cause the media of all tracks to be passed through to the output exactly as stored in the source asset, except for
    tracks for which passthrough is not possible, usually because of constraints of the container format as indicated by the specified outputFileType.
    This option is not included in the arrays returned by -allExportPresets and -exportPresetsCompatibleWithAsset. */
-extern NSString *const AVAssetExportPresetPassthrough __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVAssetExportPresetPassthrough		NS_AVAILABLE(10_7, 4_0);
 
-#if ! TARGET_OS_IPHONE
+#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+
 /* These export options are used to produce files that can be played on the specified Apple devices. 
 	These presets are available for Desktop export only.
 	The files should have .m4v extensions (or .m4a for exports with audio only sources). */
-extern NSString *const AVAssetExportPresetAppleM4VCellular   __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
-extern NSString *const AVAssetExportPresetAppleM4V480pSD     __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
-extern NSString *const AVAssetExportPresetAppleM4VAppleTV    __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
-extern NSString *const AVAssetExportPresetAppleM4VWiFi       __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
-extern NSString *const AVAssetExportPresetAppleM4V720pHD     __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+extern NSString *const AVAssetExportPresetAppleM4VCellular	NS_AVAILABLE(10_7, NA);
+extern NSString *const AVAssetExportPresetAppleM4ViPod		NS_AVAILABLE(10_7, NA);
+extern NSString *const AVAssetExportPresetAppleM4V480pSD	NS_AVAILABLE(10_7, NA);
+extern NSString *const AVAssetExportPresetAppleM4VAppleTV	NS_AVAILABLE(10_7, NA);
+extern NSString *const AVAssetExportPresetAppleM4VWiFi		NS_AVAILABLE(10_7, NA);
+extern NSString *const AVAssetExportPresetAppleM4V720pHD	NS_AVAILABLE(10_7, NA);
 
-#endif // ! TARGET_OS_IPHONE
+#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
 
 
 @class AVAsset;
@@ -108,6 +114,7 @@ enum {
 };
 typedef NSInteger AVAssetExportSessionStatus;
 
+NS_CLASS_AVAILABLE(10_7, 4_0)
 @interface AVAssetExportSession : NSObject
 {
 @private
@@ -145,7 +152,7 @@ typedef NSInteger AVAssetExportSessionStatus;
 	@param		presetName		An NSString specifying the name of the preset template for the export.
 	@result						An instance of AVAssetExportSession.
 */
-+ (id)exportSessionWithAsset:(AVAsset *)asset presetName:(NSString *)presetName;
++ (id)exportSessionWithAsset:(AVAsset *)asset presetName:(NSString *)presetName NS_AVAILABLE(10_7, 4_1);
 
 /*!
 	@method						initWithAsset:presetName:outputURL:

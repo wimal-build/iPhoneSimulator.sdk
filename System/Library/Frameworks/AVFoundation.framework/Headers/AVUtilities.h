@@ -27,4 +27,4 @@
  @param	boundingRect		The bounding CGRect you wish to fit into. 
  */
 
-extern CGRect AVMakeRectWithAspectRatioInsideRect(CGSize aspectRatio, CGRect boundingRect) __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern CGRect AVMakeRectWithAspectRatioInsideRect(CGSize aspectRatio, CGRect boundingRect) NS_AVAILABLE(10_7, 4_0);

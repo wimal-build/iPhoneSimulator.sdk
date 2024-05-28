@@ -25,6 +25,7 @@
 #define _OSTHERMALNOTIFICATION_H_
 
 #include <sys/cdefs.h>
+#include <Availability.h>
 
 /*
 **  OSThermalNotification.h
@@ -42,8 +43,8 @@ typedef enum {
 	OSThermalNotificationLevelNormal   =  0,
 } OSThermalNotificationLevel;
 
-extern OSThermalNotificationLevel _OSThermalNotificationLevelForBehavior(int);
-extern void _OSThermalNotificationSetLevelForBehavior(int, int);
+extern OSThermalNotificationLevel _OSThermalNotificationLevelForBehavior(int) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_2);
+extern void _OSThermalNotificationSetLevelForBehavior(int, int) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_2);
 
 enum {
 	kOSThermalMitigationNone,
@@ -78,13 +79,13 @@ enum {
 ** Simple polling interface to detect current thermal level
 */
 
-extern OSThermalNotificationLevel OSThermalNotificationCurrentLevel(void);
+extern OSThermalNotificationLevel OSThermalNotificationCurrentLevel(void) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
 
 /*
 ** External notify(3) string for manual notification setup
 */
 
-extern const char * const kOSThermalNotificationName;
+extern const char * const kOSThermalNotificationName __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
 
 __END_DECLS
 

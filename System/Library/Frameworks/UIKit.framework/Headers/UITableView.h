@@ -168,6 +168,8 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITableView : UIScrollView <NSCoding> {
     UIColor                    *_separatorBottomShadowColor;
     UIColor                    *_checkmarkColor;
     UIColor                    *_sectionBorderColor;
+    UIColor                    *_indexColor;
+    UIColor                    *_indexBackgroundColor;
     
     NSArray                    *_defaultSectionIndexTitles;
     
@@ -265,6 +267,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITableView : UIScrollView <NSCoding> {
         unsigned int sendReloadFinished:1;
         unsigned int keepFirstResponderWhenInteractionDisabled:1;
         unsigned int keepFirstResponderVisibleOnBoundsChange:1;
+        unsigned int dontDrawTopShadowInGroupedSections:1;
     } _tableFlags;
     
     unsigned int _selectedSection;

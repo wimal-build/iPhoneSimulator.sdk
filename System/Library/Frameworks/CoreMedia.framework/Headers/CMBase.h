@@ -17,6 +17,10 @@
 #ifndef __AVAILABILITY_INTERNAL__MAC_10_7
 	#define __AVAILABILITY_INTERNAL__MAC_10_7 __AVAILABILITY_INTERNAL_WEAK_IMPORT
 #endif
+// Pre-4.3, weak import
+#ifndef __AVAILABILITY_INTERNAL__IPHONE_4_3
+	#define __AVAILABILITY_INTERNAL__IPHONE_4_3 __AVAILABILITY_INTERNAL_WEAK_IMPORT
+#endif
 
 #include <stdint.h>						// int32_t, etc.
 #include <stddef.h>						// size_t
@@ -34,9 +38,9 @@ extern "C" {
 	#define VT_EXPORT extern
 	#define MT_EXPORT extern
 #elif TARGET_OS_WIN32
-	#define CM_EXPORT _declspec( dllimport ) extern
-	#define VT_EXPORT _declspec( dllimport ) extern
-	#define MT_EXPORT _declspec( dllimport ) extern
+	#define CM_EXPORT __declspec( dllimport ) extern
+	#define VT_EXPORT __declspec( dllimport ) extern
+	#define MT_EXPORT __declspec( dllimport ) extern
 #else
 	#error "specify your platform"
 #endif
