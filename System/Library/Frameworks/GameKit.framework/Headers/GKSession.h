@@ -2,7 +2,7 @@
  GKSession.h
  GameKit
  
- Copyright 2009 Apple, Inc. All rights reserved.
+ Copyright 2010 Apple, Inc. All rights reserved.
  
  The Game Connectivity Kit (GCK) is a framework for handling connectivity and data transport in multiplayer network games.  
  
@@ -34,7 +34,7 @@ If name = nil then GKSession will use the device name.
 @property(readonly) GKSessionMode sessionMode;
 @property(readonly) NSString *peerID;			// session's peerID
 
-/* Toggle availability on the network based on session mode and search criteria.  Delegate will get a callback -seesion:didReceiveConnectionRequestFromPeer: when a peer attempts a connection.
+/* Toggle availability on the network based on session mode and search criteria.  Delegate will get a callback -session:didReceiveConnectionRequestFromPeer: when a peer attempts a connection.
 */
 @property(getter=isAvailable) BOOL available;
 

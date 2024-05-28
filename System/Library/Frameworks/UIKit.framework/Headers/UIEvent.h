@@ -24,7 +24,7 @@ typedef enum {
     // for UIEventTypeMotion, available in iPhone OS 3.0
     UIEventSubtypeMotionShake                       = 1,
     
-    // for UIEventTypeRemoteControl, available in iPhone OS 4.0
+    // for UIEventTypeRemoteControl, available in iOS 4.0
     UIEventSubtypeRemoteControlPlay                 = 100,
     UIEventSubtypeRemoteControlPause                = 101,
     UIEventSubtypeRemoteControlStop                 = 102,

@@ -122,7 +122,7 @@
 	@abstract		Provides an array of AVAssetTracks of the asset that present media of the specified media type.
 	@param			mediaType
 					The media type according to which AVAsset filters its AVAssetTracks. (Media types are defined in AVMediaFormat.h.)
-	@result			An NSArray of AVAssetTracks; may be nil if no tracks of the specified media type are available.
+	@result			An NSArray of AVAssetTracks; may be empty if no tracks of the specified media type are available.
 	@discussion		Becomes callable without blocking when the key @"tracks" has been loaded
 */
 - (NSArray *)tracksWithMediaType:(NSString *)mediaType;
@@ -132,7 +132,7 @@
 	@abstract		Provides an array of AVAssetTracks of the asset that present media with the specified characteristic.
 	@param			mediaCharacteristic
 					The media characteristic according to which AVAsset filters its AVAssetTracks. (Media characteristics are defined in AVMediaFormat.h.)
-	@result			An NSArray of AVAssetTracks; may be nil if no tracks with the specified characteristic are available.
+	@result			An NSArray of AVAssetTracks; may be empty if no tracks with the specified characteristic are available.
 	@discussion		Becomes callable without blocking when the key @"tracks" has been loaded
 */
 - (NSArray *)tracksWithMediaCharacteristic:(NSString *)mediaCharacteristic;
@@ -163,7 +163,7 @@
 					or according to key via +[AVMetadataItem metadataItemsFromArray:withKey:keySpace:].
 	@param			format
 					The metadata format for which items are requested.
-	@result			An NSArray containing AVMetadataItems; may be nil if there is no metadata of the specified format.
+	@result			An NSArray containing AVMetadataItems; may be empty if there is no metadata of the specified format.
 	@discussion		Becomes callable without blocking when the key @"availableMetadataFormats" has been loaded
 */
 - (NSArray *)metadataForFormat:(NSString *)format;

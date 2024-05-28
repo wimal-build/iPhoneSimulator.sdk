@@ -47,6 +47,7 @@ enum
 {
     kSecPaddingNone      = 0,
     kSecPaddingPKCS1     = 1,
+    kSecPaddingOAEP      = 2,
 
     /* For SecKeyRawSign/SecKeyRawVerify only, data to be signed is an MD2
        hash; standard ASN.1 padding will be done, as well as PKCS1 padding

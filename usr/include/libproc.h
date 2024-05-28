@@ -56,7 +56,6 @@
 
 __BEGIN_DECLS
 
-int proc_listpids(uint32_t type, uint32_t typeinfo, void *buffer, int buffersize);
 
 /*!
 	@function proc_listpidspath
@@ -84,6 +83,10 @@ int	proc_listpidspath(uint32_t	type,
 			  void		*buffer,
 			  int		buffersize);
 
+int proc_listpids(uint32_t type, uint32_t typeinfo, void *buffer, int buffersize);
+int proc_listallpids(void * buffer, int buffersize);
+int proc_listpgrppids(pid_t pgrpid, void * buffer, int buffersize);
+int proc_listchildpids(pid_t ppid, void * buffer, int buffersize);
 int proc_pidinfo(int pid, int flavor, uint64_t arg,  void *buffer, int buffersize);
 int proc_pidfdinfo(int pid, int fd, int flavor, void * buffer, int buffersize); 
 int proc_name(int pid, void * buffer, uint32_t buffersize);

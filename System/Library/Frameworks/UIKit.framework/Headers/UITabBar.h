@@ -28,6 +28,7 @@ UIKIT_EXTERN_CLASS @interface UITabBar : UIView {
     } _tabBarFlags;
     NSArray               *_buttonItems;
     CFMutableArrayRef      _hiddenItems;
+    id _appearance;
 }
 
 @property(nonatomic,assign) id<UITabBarDelegate> delegate;     // weak reference. default is nil

@@ -108,7 +108,7 @@
 #include <AvailabilityMacros.h>
 #include <Availability.h>
 
-// The arguments to these availability macros is a version number, e.g. 10_7, 3_0
+// The arguments to these availability macros is a version number, e.g. 10_6, 3_0
 #if TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)
 
 // Available on MacOS and iPhoneOS

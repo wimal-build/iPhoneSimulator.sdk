@@ -54,9 +54,6 @@
 	@param			timeRange
 					The timeRange of the empty AVCompositionTrackSegment.
 	@result			An instance of AVCompositionTrackSegment.
-	@discussion		Invokes initWithURL:trackID:sourceTimeRange:targetTimeRange: with a nil URL, a trackID of kCMPersistentTrackID_Invalid, and a timeMapping
-					with source.start and source.duration equal to kCMTimeInvalid and with a target equal to the specified timeRange.
-					This is the standard low-level representation of an empty trackSegment.
 */
 + (AVCompositionTrackSegment *)compositionTrackSegmentWithTimeRange:(CMTimeRange)timeRange;
 
@@ -83,11 +80,12 @@
 	@param			timeRange
 					The timeRange of the empty AVCompositionTrackSegment.
 	@result			An instance of AVCompositionTrackSegment.
-	@discussion		Invokes initWithURL:trackID:sourceTimeRange:targetTimeRange: with a nil URL, a trackID of kCMPersistentTrackID_Invalid, and a timeMapping
-					with source.start and source.duration equal to kCMTimeInvalid and with a target equal to the specified timeRange.
-					This is the standard low-level representation of an empty trackSegment.
 */
 - (id)initWithTimeRange:(CMTimeRange)timeRange;
+
+/* indicates whether the AVCompositionTrackSegment is an empty segment;
+   an empty segment has a valid target time range but nil sourceURL and kCMTimeInvalid source start time; all other fields are undefined */
+@property (nonatomic, readonly, getter=isEmpty) BOOL empty;
 
 /* indicates the container file of the media presented by the AVCompositionTrackSegment */
 @property (nonatomic, readonly) NSURL *sourceURL;

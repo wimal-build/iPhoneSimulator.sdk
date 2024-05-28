@@ -122,9 +122,10 @@ typedef enum {
  *  Discussion:
  *      The desired location accuracy. The location service will try its best to achieve
  *      your desired accuracy. However, it is not guaranteed. To optimize
- *      power performence, be sure to specify an appropriate accuracy for your usage scenario (eg,
+ *      power performance, be sure to specify an appropriate accuracy for your usage scenario (eg,
  *      use a large accuracy value when only a coarse location is needed). Use kCLLocationAccuracyBest to
- *      achieve the best possible accuracy. By default, kCLLocationAccuracyBest is used.
+ *      achieve the best possible accuracy. Use kCLLocationAccuracyBestForNavigation for navigation.
+ *      By default, kCLLocationAccuracyBest is used.
  */
 @property(assign, nonatomic) CLLocationAccuracy desiredAccuracy;
 
@@ -149,8 +150,8 @@ typedef enum {
  *  
  *  Discussion:
  *      Specifies the minimum amount of change in degrees needed for a heading service update. Client will not
- *      be notified of movements of less than the stated value. Pass in kCLHeadingFilterNone to be
- *      notified of movements greater than one degree. By default, kCLHeadingFilterNone is used.
+ *      be notified of updates less than the stated filter value. Pass in kCLHeadingFilterNone to be
+ *      notified of all updates. By default, kCLHeadingFilterNone is used.
  */
 @property(assign, nonatomic) CLLocationDegrees headingFilter __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 
@@ -169,7 +170,7 @@ typedef enum {
  *  heading
  *  
  *  Discussion:
- *      The last heading received. Will be nil until a heading has been received.
+ *      Returns the latest heading update received, or nil if none is available.
  */
 @property(readonly, nonatomic) CLHeading *heading __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 

@@ -300,7 +300,7 @@
     @abstract		A tool for using Core Animation in a video composition.
     
  @discussion
-   Instances of AVVideoCompositionCoreAnimationTool are for use with offline rendering (AVAssetExportSession), not with AVPlayer.
+   Instances of AVVideoCompositionCoreAnimationTool are for use with offline rendering (AVAssetExportSession and AVAssetReader), not with AVPlayer.
    To synchronize real-time playback with other CoreAnimation layers, use AVSynchronizedLayer.
 
    Any animations will be interpreted on the video's timeline, not real-time, so 

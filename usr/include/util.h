@@ -85,10 +85,7 @@
 #define OPENDEV_BLCK	0x04		/* Open block, not character device. */
 
 __BEGIN_DECLS
-struct utmp; /* forward reference to /usr/include/utmp.h */
-void	login(struct utmp *)		__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5,__IPHONE_NA,__IPHONE_NA);
 int	login_tty(int);
-int	logout(const char *)		__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5,__IPHONE_NA,__IPHONE_NA);
 void	logwtmp(const char *, const char *, const char *) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0,__MAC_10_5,__IPHONE_2_0,__IPHONE_2_0);
 int	opendev(char *, int, int, char **);
 int	openpty(int *, int *, char *, struct termios *,
@@ -102,8 +99,5 @@ int	ttyaction(char *tty, char *act, char *user);
 struct iovec;
 char   *ttymsg(struct iovec *, int, const char *, int);
 __END_DECLS
-
-/* Include utmp.h last to avoid deprecation warning above */
-#include <utmp.h>
 
 #endif /* !_UTIL_H_ */

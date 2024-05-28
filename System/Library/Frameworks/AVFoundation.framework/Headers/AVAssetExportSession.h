@@ -21,9 +21,33 @@
 #endif // ! TARGET_OS_IPHONE
 
 /*!
-    @class AVAssetExportSession
+	@class		AVAssetExportSession
 
-    @abstract An AVAssetExportSession object transcodes the contents of an AVAsset source to create an output in the form described by a specified export preset.
+	@abstract	An AVAssetExportSession creates a new timed media resource from the contents of an 
+				existing AVAsset in the form described by a specified export preset.
+
+	@discussion
+				Prior to initializing an instance of AVAssetExportSession, you can invoke
+				+allExportPresets to obtain the complete list of presets available. Use
+				+exportPresetsCompatibleWithAsset: to obtain a list of presets that are compatible
+				with a specific AVAsset.
+
+				After you have initialized an AVAssetExportSession with the AVAsset that contains
+				the source media, the export preset name, and the output file type (a UTI string
+				from among those defined in AVMediaFormat.h), you can start the export running by
+				invoking -exportAsynchronouslyWithCompletionHandler:. This method returns
+				immediately; the export is performed asynchronously. Invoke the -progress method to
+				check on the progress. Note that in some cases, depending on the capabilities of the
+				device, when multiple exports are attempted at the same time some may be queued
+				until others have been completed. When this happens, the status of a queued export
+				will indicate that it's "waiting".
+
+				Whether the export fails, completes, or is cancelled, the completion handler you
+				supply to -exportAsynchronouslyWithCompletionHandler: will be called. Upon
+				completion, the status property indicates whether the export has completed
+				successfully. If it has failed, the value of the error property supplies additional
+				information about the reason for the failure.
+
 */
 
 // -- Export Preset Names --
@@ -98,6 +122,14 @@ typedef NSInteger AVAssetExportSessionStatus;
 */
 + (NSArray *)exportPresetsCompatibleWithAsset:(AVAsset *)asset;
 
+/*!
+	@method						exportSessionWithAsset:presetName:
+	@abstract					Returns an instance of AVAssetExportSession for the specified source asset and preset.
+	@param		asset			An AVAsset object that is intended to be exported.
+	@param		presetName		An NSString specifying the name of the preset template for the export.
+	@result						An instance of AVAssetExportSession.
+*/
++ (id)exportSessionWithAsset:(AVAsset *)asset presetName:(NSString *)presetName;
 
 /*!
 	@method						initWithAsset:presetName:outputURL:

@@ -40,7 +40,7 @@ MP_EXTERN_CLASS @interface MPMediaItem : NSObject <NSCoding> {
 
 // Executes a provided block with the fetched values for the given item properties, or nil if no value is available for a property.
 // In some cases, enumerating the values for multiple properties can be more efficient than fetching each individual property with -valueForProperty:.
-- (void)enumerateValuesForProperties:(NSSet *)properties usingBlock:(void (^)(NSString *property, id value, BOOL *stop))block __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
+- (void)enumerateValuesForProperties:(NSSet *)properties usingBlock:(void (^)(NSString *property, id value, BOOL *stop))block NS_AVAILABLE_IPHONE(4_0);
 
 @end
 
@@ -81,12 +81,14 @@ MP_EXTERN NSString *const MPMediaItemPropertyDiscCount;        // @"discCount", 
 MP_EXTERN NSString *const MPMediaItemPropertyArtwork;          // @"artwork",             MPMediaItemArtwork
 MP_EXTERN NSString *const MPMediaItemPropertyLyrics;           // @"lyrics",              NSString
 MP_EXTERN NSString *const MPMediaItemPropertyIsCompilation;    // @"isCompilation",       NSNumber of BOOL,                             filterable
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
-MP_EXTERN NSString *const MPMediaItemPropertyReleaseDate;      // @"releaseDate",         NSDate
-MP_EXTERN NSString *const MPMediaItemPropertyBeatsPerMinute;   // @"beatsPerMinute",      NSNumber of NSUInteger
-MP_EXTERN NSString *const MPMediaItemPropertyComments;         // @"comments",            NSString
-MP_EXTERN NSString *const MPMediaItemPropertyAssetURL;         // @"assetURL",            NSURL
-#endif //__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
+MP_EXTERN NSString *const MPMediaItemPropertyReleaseDate       NS_AVAILABLE_IPHONE(4_0);
+                                                               // @"releaseDate",         NSDate
+MP_EXTERN NSString *const MPMediaItemPropertyBeatsPerMinute    NS_AVAILABLE_IPHONE(4_0);
+                                                               // @"beatsPerMinute",      NSNumber of NSUInteger
+MP_EXTERN NSString *const MPMediaItemPropertyComments          NS_AVAILABLE_IPHONE(4_0);
+                                                               // @"comments",            NSString
+MP_EXTERN NSString *const MPMediaItemPropertyAssetURL          NS_AVAILABLE_IPHONE(4_0);
+                                                               // @"assetURL",            NSURL
 
 // Podcast properties
 MP_EXTERN NSString *const MPMediaItemPropertyPodcastTitle;     // @"podcastTitle",        NSString,                                     filterable
@@ -96,8 +98,7 @@ MP_EXTERN NSString *const MPMediaItemPropertyPlayCount;        // @"playCount", 
 MP_EXTERN NSString *const MPMediaItemPropertySkipCount;        // @"skipCount",           NSNumber of NSUInteger
 MP_EXTERN NSString *const MPMediaItemPropertyRating;           // @"rating",              NSNumber of NSUInteger, 0...5
 MP_EXTERN NSString *const MPMediaItemPropertyLastPlayedDate;   // @"lastPlayedDate",      NSDate
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
-MP_EXTERN NSString *const MPMediaItemPropertyUserGrouping;     // @"userGrouping",        NSString
-#endif //__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
+MP_EXTERN NSString *const MPMediaItemPropertyUserGrouping      NS_AVAILABLE_IPHONE(4_0);
+                                                               // @"userGrouping",        NSString
 
 #endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0

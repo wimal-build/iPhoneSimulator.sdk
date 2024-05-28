@@ -19,8 +19,12 @@
 #import <AVFoundation/AVAsset.h>
 #import <AVFoundation/AVAssetExportSession.h>
 #import <AVFoundation/AVAssetImageGenerator.h>
+#import <AVFoundation/AVAssetReader.h>
+#import <AVFoundation/AVAssetReaderOutput.h>
 #import <AVFoundation/AVAssetTrack.h>
 #import <AVFoundation/AVAssetTrackSegment.h>
+#import <AVFoundation/AVAssetWriter.h>
+#import <AVFoundation/AVAssetWriterInput.h>
 #import <AVFoundation/AVAsynchronousKeyValueLoading.h>
 #import <AVFoundation/AVAudioMix.h>
 #import <AVFoundation/AVComposition.h>

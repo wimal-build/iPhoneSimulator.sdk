@@ -83,12 +83,10 @@ typedef const struct __SCPreferences *	SCPreferencesRef;
 		request has been made to apply the currently saved
 		preferences to the active system configuration.
  */
-#if	(defined(__MAC_OS_X_VERSION_MAX_ALLOWED)  && (__MAC_10_4   <= __MAC_OS_X_VERSION_MAX_ALLOWED))
 enum {
-	kSCPreferencesNotificationCommit	= 1<<0,
-	kSCPreferencesNotificationApply		= 1<<1
+	kSCPreferencesNotificationCommit	= 1<<0,	// __OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_NA)
+	kSCPreferencesNotificationApply		= 1<<1	// __OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_NA)
 };
-#endif
 
 typedef	uint32_t	SCPreferencesNotification;
 

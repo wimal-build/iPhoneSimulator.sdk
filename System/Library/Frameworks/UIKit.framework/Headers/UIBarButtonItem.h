@@ -56,7 +56,9 @@ UIKIT_EXTERN_CLASS @interface UIBarButtonItem : UIBarItem {
     SEL           _action;
     id            _target;
     UIImage      *_image;
+    UIImage      *_miniImage;
     UIEdgeInsets  _imageInsets;
+    UIEdgeInsets  _miniImageInsets;
     CGFloat       _width;   
     UIView       *_view;
     NSInteger     _tag;
@@ -67,7 +69,6 @@ UIKIT_EXTERN_CLASS @interface UIBarButtonItem : UIBarItem {
         unsigned int systemItem:7;
         unsigned int viewIsCustom:1;
         unsigned int isMinibarView:1;
-        unsigned int avoidBezeling:1;
         unsigned int disableAutosizing:1;
         unsigned int selected:1;
     } _barButtonItemFlags;

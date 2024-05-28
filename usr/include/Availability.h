@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007-2009 by Apple Inc.. All rights reserved.
+ * Copyright (c) 2007-2010 by Apple Inc.. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -124,6 +124,7 @@
 #define __IPHONE_3_1     30100  
 #define __IPHONE_3_2     30200  
 #define __IPHONE_4_0     40000  
+#define __IPHONE_4_1     40100  
 #define __IPHONE_NA      99999  /* not available */
 
 #include <AvailabilityInternal.h>

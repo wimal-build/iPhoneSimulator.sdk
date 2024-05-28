@@ -138,10 +138,10 @@ typedef struct
 										repeatedly adding the sample duration. */
 	CMTime decodeTimeStamp;			/*! @field decodeTimeStamp
 										The time at which the sample will be decoded. If the samples
-										are in presentation order, this must be set to kCMInvalidTime. */
+										are in presentation order, this must be set to kCMTimeInvalid. */
 } CMSampleTimingInfo;
 
-CM_EXPORT const CMSampleTimingInfo kCMTimingInfoInvalid		/*! @constant kCMTimeInvalid
+CM_EXPORT const CMSampleTimingInfo kCMTimingInfoInvalid		/*! @constant kCMTimingInfoInvalid
 																Use this constant to initialize an invalid CMSampleTimingInfo struct.
 																All fields are set to kCMTimeInvalid */
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
@@ -268,7 +268,7 @@ OSStatus CMSampleBufferCreate(
 														If all samples have the same duration and are in presentation order, you can pass a single
 														CMSampleTimingInfo struct with duration set to the duration of one sample, presentationTimeStamp
 														set to the presentation time of the numerically earliest sample, and decodeTimeStamp set to
-														kCMInvalidTime. Behaviour is undefined if samples in a CMSampleBuffer (or even in multiple
+														kCMTimeInvalid. Behaviour is undefined if samples in a CMSampleBuffer (or even in multiple
 														buffers in the same stream) have the same presentationTimeStamp. Can be NULL. */
 	CMItemCount numSampleSizeEntries,				/*! @param numSampleSizeEntries
 														Number of entries in sampleSizeArray. Must be 0, 1, or numSamples. */
@@ -417,7 +417,7 @@ OSStatus CMSampleBufferCreateCopyWithNewTiming(
 														   If all samples have the same duration and are in presentation order, you can pass a single
 														   CMSampleTimingInfo struct with duration set to the duration of one sample, presentationTimeStamp
 														   set to the presentation time of the numerically earliest sample, and decodeTimeStamp set to
-														   kCMInvalidTime. Behaviour is undefined if samples in a CMSampleBuffer (or even in multiple
+														   kCMTimeInvalid. Behaviour is undefined if samples in a CMSampleBuffer (or even in multiple
 														   buffers in the same stream) have the same presentationTimeStamp. Can be NULL. */
   CMSampleBufferRef *sBufCopyOut)				/*! @param sBufCopyOut
 														   Returned newly created CMSampleBuffer. */
@@ -784,7 +784,7 @@ CMItemCount CMSampleBufferGetNumSamples(
 	@abstract	Returns the total duration of a CMSampleBuffer.
 	@discussion	If the buffer contains out-of-presentation-order samples, any gaps in the presentation timeline are not represented in the returned duration.
 				The returned duration is simply the sum of all the individual sample durations.
-	@result		The duration of the CMSampleBuffer. kCMInvalidTime is returned if there is an error.
+	@result		The duration of the CMSampleBuffer. kCMTimeInvalid is returned if there is an error.
 */
 CM_EXPORT
 CMTime CMSampleBufferGetDuration(
@@ -798,7 +798,7 @@ CMTime CMSampleBufferGetDuration(
 	@discussion	For in-presentation-order samples, this is the presentation timestamp of the first sample.
 				For out-of-presentation-order samples, this is the presentation timestamp of the sample that
 				will be presented first, which is not necessarily the first sample in the buffer.
-	@result		Numerically earliest sample presentation timestamp in the CMSampleBuffer.  kCMInvalidTime is returned if there is an error.
+	@result		Numerically earliest sample presentation timestamp in the CMSampleBuffer.  kCMTimeInvalid is returned if there is an error.
 */
 CM_EXPORT
 CMTime CMSampleBufferGetPresentationTimeStamp(
@@ -811,7 +811,7 @@ CMTime CMSampleBufferGetPresentationTimeStamp(
 	@abstract	Returns the numerically earliest decode timestamp of all the samples in a CMSampleBuffer.
 	@discussion	The returned decode timestamp is always the decode timestamp of the first sample in the buffer,
 				since even out-of-presentation-order samples are expected to be in decode order in the buffer.
-	@result		Numerically earliest sample decode timestamp in the CMSampleBuffer.  kCMInvalidTime is returned if there is an error.
+	@result		Numerically earliest sample decode timestamp in the CMSampleBuffer.  kCMTimeInvalid is returned if there is an error.
 */
 CM_EXPORT
 CMTime CMSampleBufferGetDecodeTimeStamp(
@@ -824,7 +824,7 @@ CMTime CMSampleBufferGetDecodeTimeStamp(
 	@abstract	Returns the output duration of a CMSampleBuffer.
 	@discussion	The OutputDuration is the duration minus any trimmed duration, all divided by the SpeedMultiplier:
 				(Duration - TrimDurationAtStart - TrimDurationAtEnd) / SpeedMultiplier
-	@result		The output duration of the CMSampleBuffer. kCMInvalidTime is returned if there is an error.
+	@result		The output duration of the CMSampleBuffer. kCMTimeInvalid is returned if there is an error.
 */
 CM_EXPORT
 CMTime CMSampleBufferGetOutputDuration(
@@ -848,7 +848,7 @@ CMTime CMSampleBufferGetOutputDuration(
 				((PresentationTimeStamp + TrimDurationAtStart - EditStartMediaTime) / EditSpeedMultiplier) + EditStartTrackTime.
 				For general reversed playback:
 				((PresentationTimeStamp + Duration - TrimDurationAtEnd - EditStartMediaTime) / EditSpeedMultiplier) + EditStartTrackTime.
-	@result		kCMInvalidTime is returned if there is an error.
+	@result		kCMTimeInvalid is returned if there is an error.
 */
 CM_EXPORT
 CMTime CMSampleBufferGetOutputPresentationTimeStamp(

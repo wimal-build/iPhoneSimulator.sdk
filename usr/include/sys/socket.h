@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2007 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -184,6 +184,8 @@ struct iovec {
 #define	SO_TYPE		0x1008		/* get socket type */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 /*efine	SO_PRIVSTATE	0x1009		   get/deny privileged state */
+#define SO_LABEL        0x1010          /* socket's MAC label */
+#define SO_PEERLABEL    0x1011          /* socket's peer MAC label */
 #ifdef __APPLE__
 #define SO_NREAD	0x1020		/* APPLE: get 1st-packet byte count */
 #define SO_NKE		0x1021		/* APPLE: Install socket-level NKE */
@@ -203,8 +205,6 @@ struct iovec {
 #define SO_RANDOMPORT   0x1082  /* APPLE: request local port randomization */
 #define SO_NP_EXTENSIONS	0x1083	/* To turn off some POSIX behavior */
 #endif
-#define	SO_LABEL	0x1010		/* socket's MAC label */
-#define	SO_PEERLABEL	0x1011		/* socket's peer MAC label */
 #endif	/* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 
 /*
@@ -590,6 +590,7 @@ struct sf_hdtr {
 
 #endif	/* !_POSIX_C_SOURCE */
 
+
 __BEGIN_DECLS
 int	accept(int, struct sockaddr * __restrict, socklen_t * __restrict)
 		__DARWIN_ALIAS_C(accept);
@@ -623,7 +624,6 @@ int	sendfile(int, int, off_t, off_t *, struct sf_hdtr *, int);
 void	pfctlinput(int, struct sockaddr *);
 #endif	/* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 __END_DECLS
-
 
 
 #endif /* !_SYS_SOCKET_H_ */

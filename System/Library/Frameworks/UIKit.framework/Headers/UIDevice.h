@@ -55,7 +55,7 @@ UIKIT_EXTERN_CLASS @interface UIDevice : NSObject {
 @property(nonatomic,readonly,retain) NSString    *name;              // e.g. "My iPhone"
 @property(nonatomic,readonly,retain) NSString    *model;             // e.g. @"iPhone", @"iPod Touch"
 @property(nonatomic,readonly,retain) NSString    *localizedModel;    // localized version of model
-@property(nonatomic,readonly,retain) NSString    *systemName;        // e.g. @"iPhone OS"
+@property(nonatomic,readonly,retain) NSString    *systemName;        // e.g. @"iOS"
 @property(nonatomic,readonly,retain) NSString    *systemVersion;     // e.g. @"2.0"
 @property(nonatomic,readonly) UIDeviceOrientation orientation;       // return current device orientation
 @property(nonatomic,readonly,retain) NSString    *uniqueIdentifier;  // a string unique to each device based on various hardware info.

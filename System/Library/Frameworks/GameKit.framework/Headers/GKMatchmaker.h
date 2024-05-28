@@ -2,7 +2,7 @@
 //  GKMatchmaker.h
 //  GameKit
 //
-//  Copyright 2009 Apple Inc. All rights reserved.
+//  Copyright 2010 Apple Inc. All rights reserved.
 //
 
 
@@ -16,61 +16,55 @@
 
 // GKMatchRequest represents the parameters needed to create the match.
 @interface GKMatchRequest : NSObject {
-@private
-    NSUInteger _minPlayers;
-    NSUInteger _maxPlayers;
-    NSUInteger _playerGroup;
 }
+
 @property(nonatomic, assign) NSUInteger minPlayers;     // Minimum number of players for the match
 @property(nonatomic, assign) NSUInteger maxPlayers;     // Maximum number of players for the match
 @property(nonatomic, assign) NSUInteger playerGroup;    // The player group identifier. Matchmaking will only take place between players in the same group.
+@property(nonatomic, assign) uint32_t playerAttributes; // optional flags such that when all player flags are OR'ed together in a match they evaluate to 0xFFFFFFFF
+@property(nonatomic, retain) NSArray *playersToInvite;  // Array of player IDs to invite, or nil if none
+
 @end
 
 // GKInvite represents an accepted game invite, it is used to create a GKMatchmakerViewController
 @interface GKInvite : NSObject {
-@private
-    NSString *_inviteID;
-    NSString *_message;
-    GKPlayer *_inviter;
-    NSData   *_originatorToken;
-    NSData   *_connectionData;
-    BOOL     _hosted;
-    BOOL     _cancelled;
 }
-@property(nonatomic, readonly, retain) GKPlayer *inviter;
+
+@property(nonatomic, readonly, retain) NSString *inviter;
 @property(nonatomic, readonly, getter=isHosted) BOOL hosted;
-@property(nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+
 @end
 
 
-// provides an interface to find other players for a multiplayer game session
+// GKMatchmaker is a singleton object to manage match creation from invites and auto-matching.
 @interface GKMatchmaker : NSObject {
-@private
-    GKMatchPlayersDataRequest   *_matchPlayersDataRequest;
-    void(^_inviteHandler)(GKInvite *);
 }
 
-// singleton
+// The shared matchmaker
 + (GKMatchmaker*)sharedMatchmaker;
 
-// To receive game invites an inviteHandler must be set. The inviteHandler will be called when an invite is received. It may be called immediately if there is a pending invite when the application is launched. The inviteHandler may be called multiple times.
-- (void)setInviteHandler:(void(^)(GKInvite *invite))inviteHandler;
-- (void(^)(GKInvite *))inviteHandler;
+// An inviteHandler must be set in order to receive game invites or respond to external requests to initiate an invite. The inviteHandler will be called when an invite or request is received. It may be called immediately if there is a pending invite or request when the application is launched. The inviteHandler may be called multiple times.
+// Either acceptedInvite or playersToInvite will be present, but never both.
+@property(nonatomic, copy) void(^inviteHandler)(GKInvite *acceptedInvite, NSArray *playersToInvite);
 
-// Genius matchmaking to create a peer-to-peer match for the specified request. Error will be nil on success:
+// Auto-matching to find a peer-to-peer match for the specified request. Error will be nil on success:
 // Possible reasons for error:
 // 1. Communications failure
 // 2. Unauthenticated player
 // 3. Timeout
-- (void)createMatchForRequest:(GKMatchRequest *)request withCompletionHandler:(void(^)(GKMatch *match, NSError *error))completionHandler;
+- (void)findMatchForRequest:(GKMatchRequest *)request withCompletionHandler:(void(^)(GKMatch *match, NSError *error))completionHandler;
 
-// Matchmaking for host-client match request. This returns a list of players to be included in the match. Determination and communication with the host is not part of this API.
+// Matchmaking for host-client match request. This returns a list of player identifiers to be included in the match. Determination and communication with the host is not part of this API.
 // Possible reasons for error:
 // 1. Communications failure
 // 2. Unauthenticated player
 // 3. Timeout
-- (void)findPlayersForHostedMatchRequest:(GKMatchRequest *)request withCompletionHandler:(void(^)(NSArray *players, NSError *error))completionHandler;
+- (void)findPlayersForHostedMatchRequest:(GKMatchRequest *)request withCompletionHandler:(void(^)(NSArray *playerIDs, NSError *error))completionHandler;
 
+// Auto-matching to add additional players to a peer-to-peer match for the specified request. Error will be nil on success:
+// Possible reasons for error:
+// 1. Communications failure
+// 2. Timeout
 - (void)addPlayersToMatch:(GKMatch *)match matchRequest:(GKMatchRequest *)matchRequest completionHandler:(void (^)(NSError *))completionHandler;
 
 // Cancel matchmaking
@@ -80,5 +74,10 @@
 // Possible reasons for error:
 // 1. Communications failure
 - (void)queryPlayerGroupActivity:(NSUInteger)playerGroup withCompletionHandler:(void(^)(NSInteger activity, NSError *error))completionHandler;
+
+// Query the server for recent activity for all the player groups of that game. Error will be nil on success.
+// Possible reasons for error:
+// 1. Communications failure
+- (void)queryActivityWithCompletionHandler:(void(^)(NSInteger activity, NSError *error))completionHandler;
 
 @end

@@ -537,9 +537,9 @@
 					<key>Sensor</key>
 					<dict>
 						<key>Width</key>
-						<integer>320</integer>
+						<integer>640</integer>
 						<key>Height</key>
-						<integer>240</integer>
+						<integer>480</integer>
 					</dict>
 					<key>Preview</key>
 					<dict>
@@ -637,6 +637,8 @@
 						<key>PixelFormatType</key>
 						<string>420v</string>
 					</dict>
+					<key>TemporalNoiseReductionMode</key>
+					<integer>1</integer>
 					<key>MinFrameRate</key>
 					<integer>24</integer>
 					<key>MaxFrameRate</key>
@@ -741,8 +743,6 @@
 						<key>Height</key>
 						<integer>480</integer>
 					</dict>
-					<key>TemporalNoiseReductionMode</key>
-					<integer>1</integer>
 				</dict>
 				<key>VideoCompressionProperties</key>
 				<dict>
@@ -783,8 +783,6 @@
 						<key>Height</key>
 						<integer>360</integer>
 					</dict>
-					<key>TemporalNoiseReductionMode</key>
-					<integer>1</integer>
 				</dict>
 				<key>VideoCompressionProperties</key>
 				<dict>
@@ -820,8 +818,6 @@
 						<key>Height</key>
 						<integer>144</integer>
 					</dict>
-					<key>TemporalNoiseReductionMode</key>
-					<integer>1</integer>
 					<key>MinFrameRate</key>
 					<integer>7</integer>
 					<key>MaxFrameRate</key>
@@ -861,8 +857,6 @@
 						<key>Height</key>
 						<integer>480</integer>
 					</dict>
-					<key>TemporalNoiseReductionMode</key>
-					<integer>1</integer>
 				</dict>
 				<key>VideoCompressionProperties</key>
 				<dict>
@@ -910,8 +904,6 @@
 						<key>Height</key>
 						<integer>240</integer>
 					</dict>
-					<key>TemporalNoiseReductionMode</key>
-					<integer>1</integer>
 					<key>MinFrameRate</key>
 					<integer>15</integer>
 					<key>MaxFrameRate</key>
@@ -939,8 +931,6 @@
 			<string>com.apple.avfoundation.avcapturedevice.built-in_audio:0</string>
 			<key>modelID</key>
 			<string>com.apple.avfoundation.avcapturedevice.built-in_audio:0</string>
-			<key>localizedName</key>
-			<string>iPhone Microphone</string>
 			<key>AVCaptureSessionPresetCommon</key>
 			<dict>
 				<key>PresetName</key>

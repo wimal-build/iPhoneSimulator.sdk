@@ -13,19 +13,19 @@
 
     @abstract		AVPlayerLayer is a subclass of CALayer to which an AVPlayer can direct its visual output.
 
-	@discussion		Note that arbitrary numbers of AVPlayerLayers can be created with the same AVPlayer.
-
-					Usage example:
+	@discussion		To create an AVPlayerLayer instance:
 					
 					AVPlayer *player = ...;
-					
-					// .. set up an AVPlayer
+					// ... set up an AVPlayer
 					
 					CALayer *superlayer = ...;
 					AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+ 
+					// ... set up the AVPlayerLayer's geometry. For example: set the AVPlayerLayer frame according to the presentationSize of the AVPlayer's currentItem.
 					
 					[superlayer addSublayer:playerLayer];
 					
+					AVPlayerLayer provides a property 'videoGravity' that defines how the video content is displayed within the AVPlayerLayer property 'bounds' rect. 
 					The value for the @"contents" key of an AVPlayerLayer is opaque and effectively read-only.
 
 					Note that during playback AVPlayer may compensate for temporal drift between its visual output

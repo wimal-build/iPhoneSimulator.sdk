@@ -2,22 +2,26 @@
 //  GKLeaderboardViewController.h
 //  GameKit
 //
-//  Copyright 2009 Apple. All rights reserved.
+//  Copyright 2010 Apple, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <GameKit/GKLeaderboard.h>
 
-@class GKGame, GKGameHeaderView;
+@class GKGame;
+@protocol GKLeaderboardViewControllerDelegate;
 
-@protocol GKLeaderboardViewControllerDelegate
-- (void)leaderboardDidPressDismiss;
+// View controller that provides the standard user interface for leaderboards
+@interface GKLeaderboardViewController : UINavigationController
+
+@property (nonatomic, assign) GKLeaderboardTimeScope timeScope;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, assign) id <GKLeaderboardViewControllerDelegate> leaderboardDelegate;
+
 @end
 
-@interface GKLeaderboardViewController : UINavigationController
-{
-    id <GKLeaderboardViewControllerDelegate> _leaderboardDelegate;
-}
-- (id)initWithTimeScope:(GKLeaderboardTimeScope)timeScope playerScope:(GKLeaderboardPlayerScope)playerScope;
-- (void)setLeaderboardDelegate:(id <GKLeaderboardViewControllerDelegate>)leaderboardDelegate;
+@protocol GKLeaderboardViewControllerDelegate
+@required
+// The leaderboard view has finished
+- (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController;
 @end

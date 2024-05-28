@@ -1259,14 +1259,11 @@ uregex_getMatchCallback(const URegularExpression    *regexp,
 /**
  * Function pointer for a regular expression find/findNext callback function.
  * When set, a callback function will be called during a find operation after each
- * attempt at a match .  If the call back function returns FALSE, the find
+ * attempt at a match.  If the call back function returns FALSE, the find
  * operation will be terminated early.
  *
  * Note:  the callback function must not call other functions on this
  *        URegularExpression
- *        //  When this callback interrupts a find/findNext operation, the internal matcher state
- *        //  will be set to U_REGEX_STOPPED_BY_CALLER.  A subsequent find operation must 
- *        //  reset this internal state with uregex_resetMatcherStatus()
  *
  * @param context  context pointer.  The callback function will be invoked
  *                 with the context specified at the time that
@@ -1276,7 +1273,7 @@ uregex_getMatchCallback(const URegularExpression    *regexp,
  *                 index at which a find/findNext operation may be re-initiated.
  * @return         TRUE to continue the matching operation.
  *                 FALSE to terminate the matching operation.
- * @internal ICU 4.6 technology preview
+ * @draft ICU 4.6
  */
 U_CDECL_BEGIN
 typedef UBool U_CALLCONV URegexFindProgressCallback (
@@ -1295,7 +1292,7 @@ U_CDECL_END
  *                      time the callback function is set will be saved
  *                      and passed to the callback each time that it is called.
  * @param   status      A reference to a UErrorCode to receive any errors.
- * @internal ICU 4.6 technology preview
+ * @draft ICU 4.6
  */
 U_STABLE void U_EXPORT2
 uregex_setFindProgressCallback(URegularExpression              *regexp,
@@ -1313,7 +1310,7 @@ uregex_setFindProgressCallback(URegularExpression              *regexp,
  * @param   context     Out parameter, receives the user context pointer that
  *                      was set when uregex_setFindProgressCallback() was called.
  * @param   status      A reference to a UErrorCode to receive any errors.
- * @internal ICU 4.6 technology preview
+ * @draft ICU 4.6
  */
 U_STABLE void U_EXPORT2
 uregex_getFindProgressCallback(const URegularExpression          *regexp,

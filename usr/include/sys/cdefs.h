@@ -252,13 +252,10 @@
  */
 
 /* These settings are particular to each product. */
-/* Product: iPhoneSimulator */
-/* <rdar://problem/7782658> Simulator ABI symbols should better match iPhone ABI symbols */
-
+/* Platform: iPhoneSimulator */
 #define __DARWIN_ONLY_64_BIT_INO_T	1
-#define __DARWIN_ONLY_UNIX_CONFORMANCE  1
+#define __DARWIN_ONLY_UNIX_CONFORMANCE	1
 #define __DARWIN_ONLY_VERS_1050		1
-
 
 /*
  * The __DARWIN_ALIAS macros are used to do symbol renaming; they allow

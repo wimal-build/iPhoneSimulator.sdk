@@ -52,8 +52,15 @@ enum  {
 extern ABPersonCompositeNameFormat ABPersonGetCompositeNameFormat(void);
 
 // Images
+typedef enum {
+    kABPersonImageFormatThumbnail = 0,      // the square thumbnail
+    kABPersonImageFormatOriginalSize = 2    // the original image as set by ABPersonSetImageData
+} ABPersonImageFormat;
+
 extern bool ABPersonSetImageData(ABRecordRef person, CFDataRef imageData, CFErrorRef* error);
 extern CFDataRef ABPersonCopyImageData(ABRecordRef person);
+extern CFDataRef ABPersonCopyImageDataWithFormat(ABRecordRef person, ABPersonImageFormat format) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
 extern bool ABPersonHasImageData(ABRecordRef person);
 extern bool ABPersonRemoveImageData(ABRecordRef person, CFErrorRef* error);
 

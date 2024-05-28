@@ -152,7 +152,7 @@ typedef NSInteger AVPlayerItemStatus;
  @param				toleranceBefore
  @param				toleranceAfter
  @discussion		Use this method to seek to a specified time for the item.
-					The time seeked to will be within the range [time-beforeTolerance, time+afterTolerance] and may differ from the specified time for efficiency.
+					The time seeked to will be within the range [time-toleranceBefore, time+toleranceAfter] and may differ from the specified time for efficiency.
 					Pass kCMTimeZero for both toleranceBefore and toleranceAfter to request sample accurate seeking which may incur additional decoding delay. 
 					Messaging this method with beforeTolerance:kCMTimePositiveInfinity and afterTolerance:kCMTimePositiveInfinity is the same as messaging seekToTime: directly.
  */

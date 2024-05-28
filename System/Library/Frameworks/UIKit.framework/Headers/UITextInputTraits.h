@@ -54,6 +54,9 @@ typedef enum {
     UIKeyboardTypePhonePad,               // A phone pad (1-9, *, 0, #, with letters under the numbers).
     UIKeyboardTypeNamePhonePad,           // A type optimized for entering a person's name or phone number.
     UIKeyboardTypeEmailAddress,           // A type optimized for multiple email address entry (shows space @ . prominently).
+#if __IPHONE_4_1 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+    UIKeyboardTypeDecimalPad,             // A number pad with a decimal point.
+#endif
 
     UIKeyboardTypeAlphabet = UIKeyboardTypeASCIICapable, // Deprecated
 

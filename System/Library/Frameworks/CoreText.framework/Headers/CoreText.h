@@ -22,7 +22,7 @@
 #include <CoreText/CTFont.h>
 #include <CoreText/CTFontCollection.h>
 #include <CoreText/CTFontDescriptor.h>
-#if !TARGET_OS_IPHONE
+#if !TARGET_OS_IPHONE || __IPHONE_OS_VERSION_MIN_REQUIRED >= 40100
 #include <CoreText/CTFontManager.h>
 #endif // !TARGET_OS_IPHONE
 #include <CoreText/CTFontTraits.h>

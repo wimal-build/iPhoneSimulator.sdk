@@ -1,23 +1,29 @@
 /*
- * Copyright (c) 2000-2005 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 2000-2006 Apple Computer, Inc. All rights reserved.
  *
- * @APPLE_LICENSE_HEADER_START@
+ * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
- * The contents of this file constitute Original Code as defined in and
- * are subject to the Apple Public Source License Version 1.1 (the
- * "License").  You may not use this file except in compliance with the
- * License.  Please obtain a copy of the License at
- * http://www.apple.com/publicsource and read it before using this file.
+ * This file contains Original Code and/or Modifications of Original Code
+ * as defined in and that are subject to the Apple Public Source License
+ * Version 2.0 (the 'License'). You may not use this file except in
+ * compliance with the License. The rights granted to you under the License
+ * may not be used to create, or enable the creation or redistribution of,
+ * unlawful or unlicensed copies of an Apple operating system, or to
+ * circumvent, violate, or enable the circumvention or violation of, any
+ * terms of an Apple operating system software license agreement.
  * 
- * This Original Code and all software distributed under the License are
- * distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER
+ * Please obtain a copy of the License at
+ * http://www.opensource.apple.com/apsl/ and read it before using this file.
+ * 
+ * The Original Code and all software distributed under the License are
+ * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
  * INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.  Please see the
- * License for the specific language governing rights and limitations
- * under the License.
+ * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
+ * Please see the License for the specific language governing rights and
+ * limitations under the License.
  * 
- * @APPLE_LICENSE_HEADER_END@
+ * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 /*
  * @OSF_COPYRIGHT@
@@ -61,29 +67,49 @@
 #ifndef	_MACH_I386_THREAD_STATUS_H_
 #define _MACH_I386_THREAD_STATUS_H_
 
+#include <mach/i386/_structs.h>
 #include <mach/message.h>
 #include <mach/i386/fp_reg.h>
 #include <mach/i386/thread_state.h>
-#include <architecture/i386/frame.h>	/* FIXME */
-#include <architecture/i386/fpu.h>	/* FIXME */
+#include <i386/eflags.h>
+
 /*
- *	i386_thread_state	this is the structure that is exported
- *				to user threads for use in status/mutate
- *				calls.  This structure should never
- *				change.
+ * the i386_xxxx form is kept for legacy purposes since these types
+ * are externally known... eventually they should be deprecated.
+ * our internal implementation has moved to the following naming convention
  *
- *	i386_float_state	exported to use threads for access to 
- *				floating point registers. Try not to 
- *				change this one, either.
- *
+ *   x86_xxxx32 names are used to deal with 32 bit states
+ *   x86_xxxx64 names are used to deal with 64 bit states
+ *   x86_xxxx   names are used to deal with either 32 or 64 bit states
+ *	via a self-describing mechanism
  */
 
-/*     THREAD_STATE_FLAVOR_LIST 0 */
+/*
+ * these are the legacy names which should be deprecated in the future
+ * they are externally known which is the only reason we don't just get
+ * rid of them
+ */
 #define i386_THREAD_STATE		1
 #define i386_FLOAT_STATE		2
-#define i386_EXCEPTION_STATE	3
-#define THREAD_STATE_NONE		4
+#define i386_EXCEPTION_STATE		3
 
+/*
+ * THREAD_STATE_FLAVOR_LIST 0
+ * 	these are the supported flavors
+ */
+#define x86_THREAD_STATE32		1
+#define x86_FLOAT_STATE32		2
+#define x86_EXCEPTION_STATE32		3
+#define x86_THREAD_STATE64		4
+#define x86_FLOAT_STATE64		5
+#define x86_EXCEPTION_STATE64		6
+#define x86_THREAD_STATE		7
+#define x86_FLOAT_STATE			8
+#define x86_EXCEPTION_STATE		9
+#define x86_DEBUG_STATE32		10
+#define x86_DEBUG_STATE64		11
+#define x86_DEBUG_STATE			12
+#define THREAD_STATE_NONE		13
 
 /*
  * Largest state on this machine:
@@ -91,47 +117,32 @@
  */
 #define THREAD_MACHINE_STATE_MAX	THREAD_STATE_MAX
 
-
 /*
  * VALID_THREAD_STATE_FLAVOR is a platform specific macro that when passed
  * an exception flavor will return if that is a defined flavor for that
  * platform. The macro must be manually updated to include all of the valid
  * exception flavors as defined above.
  */
-#define VALID_THREAD_STATE_FLAVOR(x)        \
-	 ((x == i386_THREAD_STATE)           || \
-	 (x == i386_FLOAT_STATE)             || \
-	 (x == i386_EXCEPTION_STATE)		 || \
-	 (x == THREAD_STATE_NONE))
+#define VALID_THREAD_STATE_FLAVOR(x)       \
+	 ((x == x86_THREAD_STATE32)	|| \
+	  (x == x86_FLOAT_STATE32)	|| \
+	  (x == x86_EXCEPTION_STATE32)	|| \
+	  (x == x86_DEBUG_STATE32)	|| \
+	  (x == x86_THREAD_STATE64)	|| \
+	  (x == x86_FLOAT_STATE64)	|| \
+	  (x == x86_EXCEPTION_STATE64)	|| \
+	  (x == x86_DEBUG_STATE64)	|| \
+	  (x == x86_THREAD_STATE)	|| \
+	  (x == x86_FLOAT_STATE)	|| \
+	  (x == x86_EXCEPTION_STATE)	|| \
+	  (x == x86_DEBUG_STATE)	|| \
+	  (x == THREAD_STATE_NONE))
 
-
-/*
- * Main thread state consists of
- * general registers, segment registers,
- * eip and eflags.
- */
-
-typedef struct {
-    unsigned int	eax;
-    unsigned int	ebx;
-    unsigned int	ecx;
-    unsigned int	edx;
-    unsigned int	edi;
-    unsigned int	esi;
-    unsigned int	ebp;
-    unsigned int	esp;
-    unsigned int	ss;
-    unsigned int	eflags;
-    unsigned int	eip;
-    unsigned int	cs;
-    unsigned int	ds;
-    unsigned int	es;
-    unsigned int	fs;
-    unsigned int	gs;
-} i386_thread_state_t;
-
-#define i386_THREAD_STATE_COUNT	((mach_msg_type_number_t) \
-    ( sizeof (i386_thread_state_t) / sizeof (int) ))
+struct x86_state_hdr {
+	int	flavor;
+	int	count;
+};
+typedef struct x86_state_hdr x86_state_hdr_t;
 
 /*
  * Default segment register values.
@@ -142,48 +153,145 @@ typedef struct {
 #define KERN_CODE_SELECTOR	0x0008
 #define KERN_DATA_SELECTOR	0x0010
 
-/* 
- * Floating point state.
- */
-
-#define FP_STATE_BYTES 512
-
-struct i386_float_state {
-	int		obsolete1;		/* To be removed */
-	int		obsolete2;		/* To be removed */
-	unsigned char	hw_state[FP_STATE_BYTES]; /* actual "hardware" state */
-	int		obsolete3;		/* To be removed */
-};
-#define i386_FLOAT_STATE_COUNT ((mach_msg_type_number_t) \
-		(sizeof(struct i386_float_state)/sizeof(unsigned int)))
-
-	 
 /*
- * Extra state that may be
- * useful to exception handlers.
+ * to be deprecated in the future
  */
+typedef _STRUCT_X86_THREAD_STATE32 i386_thread_state_t;
+#define i386_THREAD_STATE_COUNT	((mach_msg_type_number_t) \
+    ( sizeof (i386_thread_state_t) / sizeof (int) ))
 
+typedef _STRUCT_X86_THREAD_STATE32 x86_thread_state32_t;
+#define x86_THREAD_STATE32_COUNT	((mach_msg_type_number_t) \
+    ( sizeof (x86_thread_state32_t) / sizeof (int) ))
 
-typedef struct {
-    unsigned int	trapno;
-    unsigned int	err;
-    unsigned int	faultvaddr;
-} i386_exception_state_t;
+/*
+ * to be deprecated in the future
+ */
+typedef _STRUCT_X86_FLOAT_STATE32 i386_float_state_t;
+#define i386_FLOAT_STATE_COUNT ((mach_msg_type_number_t) \
+		(sizeof(i386_float_state_t)/sizeof(unsigned int)))
 
-#define I386_EXCEPTION_STATE_COUNT	((mach_msg_type_number_t) \
+typedef _STRUCT_X86_FLOAT_STATE32 x86_float_state32_t;
+#define x86_FLOAT_STATE32_COUNT ((mach_msg_type_number_t) \
+		(sizeof(x86_float_state32_t)/sizeof(unsigned int)))
+
+/*
+ * to be deprecated in the future
+ */
+typedef _STRUCT_X86_EXCEPTION_STATE32 i386_exception_state_t;
+#define i386_EXCEPTION_STATE_COUNT	((mach_msg_type_number_t) \
     ( sizeof (i386_exception_state_t) / sizeof (int) ))
 
+typedef _STRUCT_X86_EXCEPTION_STATE32 x86_exception_state32_t;
+#define x86_EXCEPTION_STATE32_COUNT	((mach_msg_type_number_t) \
+    ( sizeof (x86_exception_state32_t) / sizeof (int) ))
 
+#define I386_EXCEPTION_STATE_COUNT i386_EXCEPTION_STATE_COUNT
 
+typedef _STRUCT_X86_DEBUG_STATE32 x86_debug_state32_t;
+#define x86_DEBUG_STATE32_COUNT       ((mach_msg_type_number_t) \
+	( sizeof (x86_debug_state32_t) / sizeof (int) ))
+
+#define X86_DEBUG_STATE32_COUNT x86_DEBUG_STATE32_COUNT
+
+typedef _STRUCT_X86_THREAD_STATE64 x86_thread_state64_t;
+#define x86_THREAD_STATE64_COUNT	((mach_msg_type_number_t) \
+    ( sizeof (x86_thread_state64_t) / sizeof (int) ))
+
+typedef _STRUCT_X86_FLOAT_STATE64 x86_float_state64_t;
+#define x86_FLOAT_STATE64_COUNT ((mach_msg_type_number_t) \
+		(sizeof(x86_float_state64_t)/sizeof(unsigned int)))
+		
+typedef _STRUCT_X86_EXCEPTION_STATE64 x86_exception_state64_t;
+#define x86_EXCEPTION_STATE64_COUNT	((mach_msg_type_number_t) \
+    ( sizeof (x86_exception_state64_t) / sizeof (int) ))
+
+#define X86_EXCEPTION_STATE64_COUNT x86_EXCEPTION_STATE64_COUNT
+
+typedef _STRUCT_X86_DEBUG_STATE64 x86_debug_state64_t;
+#define x86_DEBUG_STATE64_COUNT	((mach_msg_type_number_t) \
+    ( sizeof (x86_debug_state64_t) / sizeof (int) ))
+
+#define X86_DEBUG_STATE64_COUNT x86_DEBUG_STATE64_COUNT
+
+/*
+ * Combined thread, float and exception states
+ */
+struct x86_thread_state {
+	x86_state_hdr_t			tsh;
+	union {
+	    x86_thread_state32_t	ts32;
+	    x86_thread_state64_t	ts64;
+	} uts;
+};
+
+struct x86_float_state {
+	x86_state_hdr_t			fsh;
+	union {
+		x86_float_state32_t	fs32;
+		x86_float_state64_t	fs64;
+	} ufs;
+};
+
+struct x86_exception_state {
+	x86_state_hdr_t			esh;
+	union {
+		x86_exception_state32_t	es32;
+		x86_exception_state64_t	es64;
+	} ues;
+};
+
+struct x86_debug_state {
+	x86_state_hdr_t			dsh;
+	union {
+		x86_debug_state32_t	ds32;
+		x86_debug_state64_t	ds64;
+	} uds;
+};
+
+typedef struct x86_thread_state x86_thread_state_t;
+#define x86_THREAD_STATE_COUNT	((mach_msg_type_number_t) \
+		( sizeof (x86_thread_state_t) / sizeof (int) ))
+
+typedef struct x86_float_state x86_float_state_t;
+#define x86_FLOAT_STATE_COUNT ((mach_msg_type_number_t) \
+		(sizeof(x86_float_state_t)/sizeof(unsigned int)))
+
+typedef struct x86_exception_state x86_exception_state_t;
+#define x86_EXCEPTION_STATE_COUNT ((mach_msg_type_number_t) \
+		(sizeof(x86_exception_state_t)/sizeof(unsigned int)))
+
+typedef struct x86_debug_state x86_debug_state_t;
+#define x86_DEBUG_STATE_COUNT ((mach_msg_type_number_t) \
+		(sizeof(x86_debug_state_t)/sizeof(unsigned int)))
 
 /*
  * Machine-independent way for servers and Mach's exception mechanism to
  * choose the most efficient state flavor for exception RPC's:
  */
-#define MACHINE_THREAD_STATE		i386_THREAD_STATE
-#define MACHINE_THREAD_STATE_COUNT	i386_THREAD_STATE_COUNT
+#define MACHINE_THREAD_STATE		x86_THREAD_STATE
+#define MACHINE_THREAD_STATE_COUNT	x86_THREAD_STATE_COUNT
 
-
+/*
+ * when reloading the segment registers on
+ * a return out of the kernel, we may take
+ * a GeneralProtection or SegmentNotPresent
+ * fault if one or more of the segment
+ * registers in the saved state was improperly
+ * specified via an x86_THREAD_STATE32 call
+ * the frame we push on top of the existing
+ * save area looks like this... we need to
+ * carry this as part of the save area
+ * in case we get hit so that we have a big
+ * enough stack
+ */
+struct x86_seg_load_fault32 {
+	unsigned int    trapno;
+	unsigned int    err;
+	unsigned int    eip;
+	unsigned int    cs;
+	unsigned int    efl;
+};
 
 
 #endif	/* _MACH_I386_THREAD_STATUS_H_ */

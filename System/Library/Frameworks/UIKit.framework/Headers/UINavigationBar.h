@@ -28,6 +28,7 @@ UIKIT_EXTERN_CLASS @interface UINavigationBar : UIView <NSCoding> {
     UIView         *_prompt;
     UIView         *_accessoryView;
     UIColor        *_tintColor;
+    id              _appearance;
     struct {
         unsigned int animate:1;
         unsigned int animationDisabledCount:10;

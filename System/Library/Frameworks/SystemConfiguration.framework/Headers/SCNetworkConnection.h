@@ -216,22 +216,16 @@ typedef void (*SCNetworkConnectionCallBack)	(
 	@discussion A host name that will be used to select the
 		"best" SCNetworkConnection.
  */
-#if	(defined(__MAC_OS_X_VERSION_MAX_ALLOWED)  && (__MAC_10_6   <= __MAC_OS_X_VERSION_MAX_ALLOWED))  ||	\
-	(defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED))	||	\
-	TARGET_IPHONE_SIMULATOR
-#define kSCNetworkConnectionSelectionOptionOnDemandHostName	CFSTR("OnDemandHostName")	/* CFString */
-#endif
+#define kSCNetworkConnectionSelectionOptionOnDemandHostName	CFSTR("OnDemandHostName")	// CFString
+												// __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_NA)
 
 /*!
 	@define kSCNetworkConnectionSelectionOptionOnDemandRetry
 	@discussion A boolean value used to indicate whether a DNS query has
 		already been issued for the specified OnDemand host name.
  */
-#if	(defined(__MAC_OS_X_VERSION_MAX_ALLOWED)  && (__MAC_10_6   <= __MAC_OS_X_VERSION_MAX_ALLOWED))  ||	\
-	(defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED)) ||	\
-	TARGET_IPHONE_SIMULATOR
-#define kSCNetworkConnectionSelectionOptionOnDemandRetry	CFSTR("OnDemandRetry")		/* CFBoolean */
-#endif
+#define kSCNetworkConnectionSelectionOptionOnDemandRetry	CFSTR("OnDemandRetry")		// CFBoolean
+												// __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_NA)
 
 __BEGIN_DECLS
 

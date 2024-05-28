@@ -37,6 +37,7 @@ UIKIT_EXTERN_CLASS @interface UIToolbar : UIView {
     NSInteger              _selectedTag;
     NSInteger              _trackingTag;
     CGFloat                _extraEdgeInsets;
+    id                     _appearance;
 }
 
 @property(nonatomic)        UIBarStyle barStyle;    // default is UIBarStyleDefault (blue)

@@ -150,11 +150,7 @@ enum {
 	kSCNetworkReachabilityFlagsConnectionRequired	= 1<<2,
 	kSCNetworkReachabilityFlagsConnectionOnTraffic	= 1<<3,
 	kSCNetworkReachabilityFlagsInterventionRequired	= 1<<4,
-#if	(defined(__MAC_OS_X_VERSION_MAX_ALLOWED)  && (__MAC_10_6   <= __MAC_OS_X_VERSION_MAX_ALLOWED))  ||	\
-	(defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED)) ||	\
-	TARGET_IPHONE_SIMULATOR
-	kSCNetworkReachabilityFlagsConnectionOnDemand	= 1<<5,
-#endif
+	kSCNetworkReachabilityFlagsConnectionOnDemand	= 1<<5,	// __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_3_0)
 	kSCNetworkReachabilityFlagsIsLocalAddress	= 1<<16,
 	kSCNetworkReachabilityFlagsIsDirect		= 1<<17,
 #if	TARGET_OS_IPHONE

@@ -29,6 +29,7 @@
 #endif // ! TARGET_OS_IPHONE
 
 @class AVAsset;
+@class AVVideoComposition;
 @class AVAssetImageGeneratorInternal;
 
 /*!

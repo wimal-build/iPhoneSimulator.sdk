@@ -513,6 +513,20 @@
 			<string>Beep</string>
 		</array>
 	</dict>
+	<key>VCCallWaiting</key>
+	<dict>
+		<key>RingVibrateIgnore,SilentVibrateIgnore,RingerSwitchIgnore</key>
+		<array>
+			<string>Beep</string>
+		</array>
+	</dict>
+	<key>VCCallUpgrade</key>
+	<dict>
+		<key>RingVibrateIgnore,SilentVibrateIgnore,RingerSwitchIgnore</key>
+		<array>
+			<string>Beep</string>
+		</array>
+	</dict>
 	<key>AudioToneBusy</key>
 	<dict>
 		<key>RingVibrateIgnore,SilentVibrateIgnore,RingerSwitchIgnore</key>

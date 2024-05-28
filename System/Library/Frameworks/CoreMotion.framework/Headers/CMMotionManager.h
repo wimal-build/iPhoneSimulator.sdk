@@ -12,6 +12,33 @@
 #import <CoreMotion/CMGyro.h>
 #import <CoreMotion/CMDeviceMotion.h>
 
+/* 
+ * There are two methods to receive data from CMMotionManager: push and pull.
+ *
+ * Before using either method, be sure to set the update interval property 
+ * appropriate to the type of data you're interested in. These properties are:
+ * accelerometerUpdateInterval, gyroUpdateInterval, and deviceMotionUpdateInterval.
+ *
+ * To use the pull method, simply call startAccelerometerUpdates, startGyroUpdates,
+ * and/or startDeviceMotionUpdates, depending on the type of data desired. Then, 
+ * whenever a new sample of data is desired, simply examine the appropriate 
+ * CMMotionManager property (accelerometerData, gyroData, or deviceMotion).
+ *
+ * To use the push method, simply call startAccelerometerUpdatesToQueue:withHandler:,
+ * startGyroUpdatesToQueue:withHandler:, and/or 
+ * startDeviceMotionUpdatesToQueue:withHandler:, depending on the type of data 
+ * desired. You'll need to pass an NSOperationQueue and block to each call. When a new sample of 
+ * data arrives, a new instance of the block will be added to the appropriate NSOperationQueue.
+ * When you stop the updates (see below), all operations in the given NSOperationQueue will be 
+ * cancelled, so it is recommended to pass CMMotionManager a queue that will not be used in other 
+ * contexts.
+ *
+ * Regardless of whether you used push or pull, when you're done, be sure to call the stop method 
+ * appropriate for the type of updates you started.  These methods are: stopAccelerometerUpdates,
+ * stopGyroUpdates, and stopDeviceMotionUpdates.
+ *
+ */
+
 /*
  *  CMAccelerometerHandler
  *  
@@ -102,7 +129,9 @@ typedef void (^CMDeviceMotionHandler)(CMDeviceMotion *motion, NSError *error) __
  *  startAccelerometerUpdatesToQueue:withHandler:
  *  
  *  Discussion:
- *			Starts accelerometer updates.
+ *			Starts accelerometer updates, providing data to the given handler through the given queue.
+ *			Note that when the updates are stopped, all operations in the 
+ *			given NSOperationQueue will be cancelled.
  */
 - (void)startAccelerometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMAccelerometerHandler)handler __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
@@ -166,7 +195,10 @@ typedef void (^CMDeviceMotionHandler)(CMDeviceMotion *motion, NSError *error) __
  *  startGyroUpdatesToQueue:withHandler:
  *  
  *  Discussion:
- *			Starts gyro updates, providing data to the given handler through the given queue.
+ *			Starts gyro updates, providing data to the given handler through the given queue. 
+ *			Note that when the updates are stopped, all operations in the 
+ *			given NSOperationQueue will be cancelled.
+
  */
 - (void)startGyroUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMGyroHandler)handler __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
@@ -233,6 +265,9 @@ typedef void (^CMDeviceMotionHandler)(CMDeviceMotion *motion, NSError *error) __
  *  
  *  Discussion:
  *			Starts device motion updates, providing data to the given handler through the given queue.
+ *			Note that when the updates are stopped, all operations in the 
+ *			given NSOperationQueue will be cancelled.
+
  */
 - (void)startDeviceMotionUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 

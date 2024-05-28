@@ -13,7 +13,7 @@
 #import <UIKit/UIStringDrawing.h>
 #import <UIKit/UITextInputTraits.h>
 
-@class UIImage, UIImageView, UILabel, UIColor;
+@class UIImage, UIImageView, UILabel, UIColor, UIButton;
 @class UITextFieldAtomBackgroundView;
 @class UITextFieldBackgroundView;
 @class UITextFieldBorderView;
@@ -69,7 +69,7 @@ UIKIT_EXTERN_CLASS @interface UITextField : UIControl <UITextInputTraits, NSCodi
     NSString           *_style;
     CFTimeInterval      _mouseDownTime;
     
-    UIView             *_clearButton;
+    UIButton           *_clearButton;
     CGSize              _clearButtonOffset;
     
     CGSize              _leftViewOffset;
@@ -104,8 +104,8 @@ UIKIT_EXTERN_CLASS @interface UITextField : UIControl <UITextInputTraits, NSCodi
         unsigned int clearsOnBeginEditing:1;
         unsigned int adjustsFontSizeToFitWidth:1;
         unsigned int fieldEditorAttached:1;
-        unsigned int inBecomeFirstResponder:1;
-        unsigned int becomingFirstResponder:1;
+        unsigned int canBecomeFirstResponder:1;
+        unsigned int inDeferredBecomeFirstResponder:1;
         unsigned int inResignFirstResponder:1;
         unsigned int undoDisabled:1;
         unsigned int contentsRTL:1;

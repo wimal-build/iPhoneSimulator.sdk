@@ -12,8 +12,6 @@
 #import <CoreMedia/CMTime.h>
 #import <AVFoundation/AVMetadataFormat.h>
 
-// TO DO: define constants for keys and keyspaces that are supported in the metadata formats defined above, perhaps in the same file in which common keys are defined
-
 /*!
     @class			AVMetadataItem
 
@@ -119,7 +117,7 @@
     @class			AVMutableMetadataItem
 
     @abstract		AVMutableMetadataItem provides support for building collections of metadata to be written
-    				to asset files via AVAssetExportSession.
+    				to asset files via AVAssetExportSession, AVAssetWriter or AVAssetWriterInput.
     
 	@discussion		Can be initialized from an existing AVMetadataItem or with a one or more of the basic properties
 					of a metadata item: a key, a keySpace, a locale, and a value.

@@ -212,13 +212,14 @@ struct kevent64_s {
  * that hangs off the proc structure. They also both play games with the hint
  * passed to KNOTE(). If NOTE_SIGNAL is passed as a hint, then the lower bits
  * of the hint contain the signal. IF NOTE_FORK is passed, then the lower bits
- * contain the PID of the child.
+ * contain the PID of the child. 
  */
 #define	NOTE_EXIT	0x80000000		/* process exited */
 #define	NOTE_FORK	0x40000000		/* process forked */
 #define	NOTE_EXEC	0x20000000		/* process exec'd */
 #define	NOTE_REAP	0x10000000		/* process reaped */
 #define	NOTE_SIGNAL	0x08000000		/* shared with EVFILT_SIGNAL */
+#define	NOTE_EXITSTATUS	0x04000000		/* exit status to be returned, valid for child process only */
 #define	NOTE_PDATAMASK	0x000fffff		/* mask for pid/signal */
 #define	NOTE_PCTRLMASK	(~NOTE_PDATAMASK)
 

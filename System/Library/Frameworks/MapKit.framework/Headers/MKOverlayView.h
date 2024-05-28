@@ -15,8 +15,10 @@
 @interface MKOverlayView : UIView {
 @package
     id <MKOverlay> _overlay;
+    MKMapRect _boundingMapRect;
     CGAffineTransform _mapTransform;
     id _geometryDelegate;
+    id _canDrawCache;
     
     CFTimeInterval _lastTile;
     CFRunLoopTimerRef _scheduledScaleTimer;
@@ -25,6 +27,7 @@
         unsigned int keepAlive:1;
         unsigned int levelCrossFade:1;
         unsigned int drawingDisabled:1;
+        unsigned int usesTiledLayer:1;
     } _flags;
 }
 

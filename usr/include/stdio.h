@@ -206,11 +206,6 @@ __END_DECLS
 #define	BUFSIZ	1024		/* size of buffer used by setbuf */
 #define	EOF	(-1)
 
-/*
- * FOPEN_MAX is a minimum maximum, and is the number of streams that
- * stdio can provide without attempting to allocate further resources
- * (which could fail).  Do not use this for anything.
- */
 				/* must be == _POSIX_STREAM_MAX <limits.h> */
 #define	FOPEN_MAX	20	/* must be <= OPEN_MAX <sys/syslimits.h> */
 #define	FILENAME_MAX	1024	/* must be <= PATH_MAX <sys/syslimits.h> */

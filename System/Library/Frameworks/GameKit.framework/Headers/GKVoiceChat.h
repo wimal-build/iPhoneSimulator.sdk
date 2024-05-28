@@ -7,10 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class GKPlayer;
-@class GKSession;
-
-enum{
+enum {
     GKVoiceChatPlayerConnected,
     GKVoiceChatPlayerDisconnected,
     GKVoiceChatPlayerSpeaking,
@@ -18,23 +15,20 @@ enum{
 };
 typedef NSInteger GKVoiceChatPlayerState;
 
-
+// GKVoiceChat represents an instance of a named voice communications channel
 @interface GKVoiceChat : NSObject {
-@private
-    id _gkVoiceChatSession;
-    GKSession *_gkSession;
-    void(^_playerStateUpdateHandler)(GKPlayer *, GKVoiceChatPlayerState);
 }
 
-- (void)start;
-- (void)stop;
+- (void)start;  // start receiving audio from the chat
+- (void)stop;   // stop receiving audio from the chat
 
-- (void)setMute:(BOOL)isMuted forPlayer:(GKPlayer *)player;
+- (void)setMute:(BOOL)isMuted forPlayer:(NSString *)playerID;
 
-@property(nonatomic, copy) void(^playerStateUpdateHandler)(GKPlayer * player, GKVoiceChatPlayerState state);
-@property(nonatomic, readonly) NSString *name;
-// @property(nonatomic, readonly) NSArray *players;
-@property(nonatomic, assign, getter=isActive) BOOL active; //make this session active
-@property(nonatomic, assign) float volume; //default 1.0 (max is 1.0, min is 0.0)
+@property(nonatomic, copy) void(^playerStateUpdateHandler)(NSString *playerID, GKVoiceChatPlayerState state);
+@property(nonatomic, readonly) NSString *name;  // name the chat was created with
+@property(nonatomic, assign, getter=isActive) BOOL active; // make this session active and route the microphone 
+@property(nonatomic, assign) float volume; // default 1.0 (max is 1.0, min is 0.0)
+
++ (BOOL)isVoIPAllowed;
 
 @end

@@ -26,6 +26,7 @@ extern NSString *const AVLinearPCMIsFloatKey;       /* value is a BOOL */
 #if defined(__MAC_10_7) || defined(__IPHONE_4_0)
 extern NSString *const AVLinearPCMIsNonInterleaved    /* value is a BOOL */
 	__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+#define AVLinearPCMIsNonInterleavedKey AVLinearPCMIsNonInterleaved
 #endif
 
 /* encoder property keys */

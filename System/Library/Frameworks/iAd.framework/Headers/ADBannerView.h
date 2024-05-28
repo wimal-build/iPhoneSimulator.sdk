@@ -13,7 +13,9 @@ enum {
     ADErrorUnknown = 0,
     ADErrorServerFailure = 1,
     ADErrorLoadingThrottled = 2,
-    ADErrorInventoryUnavailable = 3
+    ADErrorInventoryUnavailable = 3,
+    ADErrorConfigurationError = 4,
+    ADErrorBannerVisibleWithoutContent = 5
 };
 typedef NSUInteger ADError;
 
@@ -77,7 +79,7 @@ typedef NSUInteger ADError;
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner;
 
 // This method will be invoked when an error has occurred attempting to get advertisement content. 
-// Possible error codes defined as constants in ADManager.h.
+// The ADError enum lists the possible error codes.
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error;
 
 // This message will be sent when the user taps on the banner and some action is to be taken.

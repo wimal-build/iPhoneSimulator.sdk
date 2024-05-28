@@ -187,7 +187,7 @@ extern const CFStringRef kCTUnderlineColorAttributeName CT_AVAILABLE_STARTING( _
 				indicates that vertical glyph forms are to be used.
 */
 
-extern const CFStringRef kCTVerticalFormsAttributeName CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
+extern const CFStringRef kCTVerticalFormsAttributeName CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_NA);
 
 
 /*!

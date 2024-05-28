@@ -996,6 +996,8 @@
 			<true/>
 			<key>AFScoreBracketing</key>
 			<true/>
+			<key>HDR</key>
+			<true/>
 			<key>VideoPort</key>
 			<string>PortTypeBack</string>
 			<key>RedEyeReductionParams</key>
@@ -1052,6 +1054,8 @@
 			<true/>
 			<key>FullResolutionPreview</key>
 			<true/>
+			<key>TemporalNoiseReductionMode</key>
+			<integer>1</integer>
 			<key>AFScoreBracketing</key>
 			<true/>
 			<key>VideoPort</key>
@@ -1133,13 +1137,12 @@
 		<dict>
 			<key>FastSwitchCompanion</key>
 			<string>AVCaptureMode_VideoConference</string>
-			
 			<key>Sensor</key>
 			<dict>
 				<key>Width</key>
-				<integer>320</integer>
+				<integer>640</integer>
 				<key>Height</key>
-				<integer>240</integer>
+				<integer>480</integer>
 				<key>PixelFormatType</key>
 				<string>420v</string>
 			</dict>

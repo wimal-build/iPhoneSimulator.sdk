@@ -7,24 +7,25 @@
 
 #import <Foundation/Foundation.h>
 
+#import <GameKit/GKLeaderboard.h>
+
 @class GKPlayer;
 
-@interface GKScore : NSObject {
-    GKPlayer    *_player;
-    NSInteger   _rank;
-    NSInteger   _value;
-    NSString    *_formattedValue;
-    NSDate      *_date;
+// GKScore represents a score in the leaderboards.
+@interface GKScore : NSObject <NSCoding> {
 }
 
 // Designated initializer. Will initialize the score with the local player and current date. 
-- (id)init;
+- (id)initWithCategory:(NSString *)category;
 
-@property(nonatomic, readonly, retain)  GKPlayer    *player;            // The player that recorded the score.
-@property(nonatomic, readonly, assign)  NSInteger   rank;               // The rank of the player within the leaderboard, only valid when returned from GKLeaderboard
-@property(nonatomic, retain)            NSDate      *date;              // The date the score was recorded.
-@property(nonatomic, assign)            NSInteger   value;              // The score value as an integer.
+@property(nonatomic, assign)            int64_t     value;              // The score value as a 64bit integer.
 @property(nonatomic, readonly, retain)  NSString    *formattedValue;    // The score formatted as a string, localized with a label
+
+@property(nonatomic, retain)            NSString    *category;          // leaderboard category (required)
+
+@property(nonatomic, readonly, retain)  NSDate      *date;              // The date the score was recorded, defaults to [NSDate date].
+@property(nonatomic, readonly, retain)  NSString    *playerID;          // The identifier of the player that recorded the score.
+@property(nonatomic, readonly, assign)  NSInteger   rank;               // The rank of the player within the leaderboard, only valid when returned from GKLeaderboard
 
 // Report this score to the server. The value must be set, and date may be changed.
 // Possible reasons for error:

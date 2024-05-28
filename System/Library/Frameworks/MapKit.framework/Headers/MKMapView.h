@@ -169,10 +169,7 @@
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
-// Called after the provided overlay views have been added and positioned in the
-// map.  While you should not change the size or position of the overlay views
-// you may use this as an opportunity to animate the appearance of the overlay
-// views (e.g. fade them in).
+// Called after the provided overlay views have been added and positioned in the map.
 - (void)mapView:(MKMapView *)mapView didAddOverlayViews:(NSArray *)overlayViews __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
 @end

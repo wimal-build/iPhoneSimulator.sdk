@@ -35,8 +35,8 @@ CREATE TABLE threads (ROWID INTEGER PRIMARY KEY,
                       message_id INTEGER,
                       reference,
                       is_originator);
-CREATE INDEX references_message_id_index ON threads(message_id);
-CREATE INDEX references_reference_index ON threads(reference);
+CREATE INDEX references_mid_reference_index ON threads(message_id, reference);
+CREATE INDEX references_reference_mid_index ON threads(reference, message_id);
 
 CREATE TABLE pop_uids(mailbox INTEGER,
                       uid TEXT,

@@ -1,16 +1,31 @@
 /*
+ *
  *  GameKit.h
  *  GameKit
- *
- *  Copyright 2009 Apple. All rights reserved.
  *
  */
 
 // GameKit headers
+#import <GameKit/GKAchievement.h>
+#import <GameKit/GKAchievementDescription.h>
+#import <GameKit/GKAchievementViewController.h>
+#import <GameKit/GKDefines.h>
+#import <GameKit/GKError.h>
+#import <GameKit/GKLeaderboard.h>
+#import <GameKit/GKLeaderboardViewController.h>
+#import <GameKit/GKLocalPlayer.h>
+#import <GameKit/GKMatch.h>
+#import <GameKit/GKMatchmaker.h>
+#import <GameKit/GKMatchmakerViewController.h>
+#import <GameKit/GKPlayer.h>
+#import <GameKit/GKScore.h>
+#import <GameKit/GKVoiceChat.h>
+
 #import <GameKit/GKPeerPickerController.h>
 #import <GameKit/GKPublicConstants.h>
 #import <GameKit/GKPublicProtocols.h>
 #import <GameKit/GKSession.h>
 #import <GameKit/GKSessionError.h>
 #import <GameKit/GKVoiceChatService.h>
+
 

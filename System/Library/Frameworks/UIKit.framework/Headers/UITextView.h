@@ -52,17 +52,9 @@ UIKIT_EXTERN_CLASS @interface UITextView : UIScrollView <UITextInputTraits>
     int                 m_marginTop;
     UIDelayedAction    *m_selectionTimer;
     UIDelayedAction    *m_longPressAction;
-    CGPoint             m_touchPoint;
-    CGPoint             m_touchOffset;
-    UITouch            *m_syntheticTouch;
     BOOL                m_editable;
     BOOL                m_editing;
     BOOL                m_becomesEditableWithGestures;
-    BOOL                m_selecting;
-    BOOL                m_handlingMouse;
-    BOOL                m_sentMouseDown;
-    BOOL                m_passMouseDownToOther;
-    BOOL                m_scrollOnMouseUp;
     BOOL                m_reentrancyGuard;
     BOOL                m_readyForScroll;
     BOOL                m_hasExplicitTextAlignment;

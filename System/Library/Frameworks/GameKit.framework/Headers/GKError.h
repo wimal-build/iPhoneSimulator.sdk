@@ -2,13 +2,14 @@
  *  GKError.h
  *  GameKit
  *
- *  Copyright 2009 Apple, Inc. All rights reserved.
+ *  Copyright 2010 Apple, Inc. All rights reserved.
  *
  */
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <GameKit/GKDefines.h>
 
-UIKIT_EXTERN NSString *GKErrorDomain;
+GK_EXTERN NSString *GKErrorDomain;
 
 enum {
     GKErrorUnknown = 1,
@@ -24,7 +25,9 @@ enum {
     GKErrorPlayerStatusExceedsMaximumLength,
     GKErrorPlayerStatusInvalid,
     GKErrorMatchRequestInvalid,
-    GKErrorFeatureNotAvailableInPreview,
+    GKErrorUnderage,
+    GKErrorGameUnrecognized,
+    GKErrorNotSupported,
 };
 typedef NSInteger GKErrorCode;
 

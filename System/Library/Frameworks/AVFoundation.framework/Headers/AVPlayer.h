@@ -10,16 +10,16 @@
 /*!
 	@class			AVPlayer
  
-	@abstract		AVPlayer offers a playback interface for single- or multiple-item playback that's 
-    				sufficient for the implementation of playback controllers and playback user interfaces.
-    				The multiple item-case has support for automatically advancing from the playback of one item to the next
-    				and also for advancing under the control of the client.
+	@abstract
+      AVPlayer offers a playback interface for single-item playback that's sufficient for
+      the implementation of playback controllers and playback user interfaces.
  
-	@discussion		AVPlayer works equally well with local and remote media files, providing clients with appropriate
-					information about readiness to play or about the need to await additional data before continuing.
+	@discussion
+      AVPlayer works equally well with local and remote media files, providing clients with appropriate
+      information about readiness to play or about the need to await additional data before continuing.
 
-					AVPlayer can be configured to display visual media to CoreAnimation layers or to vend images
-					to clients for processing via AVImageProvider, or both simultaneously.
+      Visual content of items played by an instance of AVPlayer can be displayed in a CoreAnimation layer
+      of class AVPlayerLayer.
 
 */
 
@@ -54,8 +54,11 @@ typedef NSInteger AVPlayerStatus;
 
 enum
 {
-	AVPlayerActionAtItemEndPause = 1,
-	AVPlayerActionAtItemEndNone
+#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+    AVPlayerActionAtItemEndAdvance	= 0,
+#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+	AVPlayerActionAtItemEndPause	= 1,
+	AVPlayerActionAtItemEndNone		= 2,
 };
 typedef NSInteger AVPlayerActionAtItemEnd;
 
@@ -72,7 +75,7 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 	@result			An instance of AVPlayer
 	@discussion		Implicitly creates an AVPlayerItem. Clients can obtain the AVPlayerItem as it becomes the player's currentItem.
 */
-+ (AVPlayer *)playerWithURL:(NSURL *)URL;
++ (id)playerWithURL:(NSURL *)URL;
 
 /*!
 	@method			playerWithPlayerItem:
@@ -81,7 +84,7 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 	@result			An instance of AVPlayer
 	@discussion		Useful in order to play items for which an AVAsset has previously been created. See -[AVPlayerItem initWithAsset:].
 */
-+ (AVPlayer *)playerWithPlayerItem:(AVPlayerItem *)item;
++ (id)playerWithPlayerItem:(AVPlayerItem *)item;
 
 /*!
 	@method			initWithURL:
@@ -149,7 +152,7 @@ typedef NSInteger AVPlayerActionAtItemEnd;
  @param				toleranceBefore
  @param				toleranceAfter
  @discussion		Use this method to seek to a specified time for the current player item.
-					The time seeked to will be within the range [time-beforeTolerance, time+afterTolerance] and may differ from the specified time for efficiency.
+					The time seeked to will be within the range [time-toleranceBefore, time+toleranceAfter] and may differ from the specified time for efficiency.
 					Pass kCMTimeZero for both toleranceBefore and toleranceAfter to request sample accurate seeking which may incur additional decoding delay. 
 					Messaging this method with beforeTolerance:kCMTimePositiveInfinity and afterTolerance:kCMTimePositiveInfinity is the same as messaging seekToTime: directly.
  */
@@ -254,3 +257,110 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 - (void)removeTimeObserver:(id)observer;
 
 @end
+
+
+#if ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+
+/*!
+	@class			AVQueuePlayer
+ 
+	@abstract
+      AVQueuePlayer is a subclass of AVPlayer that offers an interface for multiple-item playback.
+ 
+	@discussion
+      AVQueuePlayer extends AVPlayer with methods for managing a queue of items to be played in sequence.
+      It plays these items as gaplessly as possible in the current runtime environment, depending on 
+      the timely availability of media data for the enqueued items.
+      
+      For best performance clients should typically enqueue only as many AVPlayerItems as are necessary
+      to ensure smooth playback. Note that once an item is enqueued it becomes eligible to be loaded and
+      made ready for playback, with whatever I/O and processing overhead that entails.
+
+*/
+
+@class AVQueuePlayerInternal;
+
+@interface AVQueuePlayer : AVPlayer 
+{
+@private
+    AVQueuePlayerInternal   *_queuePlayer;
+}
+
+/*!
+    @method     queuePlayerWithItems:
+    @abstract   Creates an instance of AVQueuePlayer and enqueues the AVPlayerItems from the specified array.
+    @param      items
+      An NSArray of AVPlayerItems with which to populate the player's queue initially.
+    @result
+      An instance of AVQueuePlayer.
+*/
++ (id)queuePlayerWithItems:(NSArray *)items;
+
+/*!
+    @method     initWithItems:
+    @abstract   Initializes an instance of AVQueuePlayer by enqueueing the AVPlayerItems from the specified array.
+    @param      items
+      An NSArray of AVPlayerItems with which to populate the player's queue initially.
+    @result
+      An instance of AVQueuePlayer.
+*/
+- (id)initWithItems:(NSArray *)items;
+
+/*!
+    @method     items
+    @abstract   Provides an array of the currently enqueued items.
+    @result     An NSArray containing the enqueued AVPlayerItems.
+*/
+- (NSArray *)items;
+
+/*!
+    @method     advanceToNextItem
+    @abstract   Ends playback of the current item and initiates playback of the next item in the player's queue.
+    @discussion Removes the current item from the play queue.
+*/
+- (void)advanceToNextItem;
+
+/*!
+    @method     canInsertItem:afterItem:
+    @abstract   Tests whether an AVPlayerItem can be inserted into the player's queue.
+    @param      item
+      The AVPlayerItem to be tested.
+    @param      afterItem
+      The item that the item to be tested is to follow in the queue. Pass nil to test whether the item can be appended to the queue.
+    @result
+      An indication of whether the item can be inserted into the queue after the specified item.
+    @discussion
+      Note that adding the same AVPlayerItem to an AVQueuePlayer at more than one position in the queue is not supported.
+*/
+- (BOOL)canInsertItem:(AVPlayerItem *)item afterItem:(AVPlayerItem *)afterItem;
+
+/*!
+    @method     insertItem:afterItem:
+    @abstract   Places an AVPlayerItem after the specified item in the queue.
+    @param      item
+      The item to be inserted.
+    @param      afterItem
+      The item that the newly inserted item should follow in the queue. Pass nil to append the item to the queue.
+*/
+- (void)insertItem:(AVPlayerItem *)item afterItem:(AVPlayerItem *)afterItem;
+
+/*!
+    @method     removeItem:
+    @abstract   Removes an AVPlayerItem from the queue.
+    @param      item
+      The item to be removed.
+    @discussion
+      If the item to be removed is currently playing, has the same effect as -advanceToNextItem.
+*/
+- (void)removeItem:(AVPlayerItem *)item;
+
+/*!
+    @method     removeAllItems
+    @abstract   Removes all items from the queue.
+    @discussion Stops playback by the target.
+*/
+- (void)removeAllItems;
+
+@end
+
+#endif // ! TARGET_OS_IPHONE || 40100 <= __IPHONE_OS_VERSION_MAX_ALLOWED
