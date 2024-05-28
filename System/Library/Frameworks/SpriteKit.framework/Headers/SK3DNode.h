@@ -25,6 +25,10 @@ SK_EXPORT @interface SK3DNode : SKNode
 */
 - (instancetype)initWithViewportSize:(CGSize)viewportSize NS_DESIGNATED_INITIALIZER;
 
+/**
+ Support coding and decoding via NSKeyedArchiver.
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
 /**
  Create a 3D Node with the viewport size the 3D content will be rendered with.

@@ -23,7 +23,7 @@
 			<key>two</key>
 			<string>transferir %d fotos e vídeos de resolução completa</string>
 			<key>zero</key>
-			<string>transferir %d fotos e vídeos de resolução completa</string>
+			<string>transferir %d foto ou vídeo de resolução completa</string>
 		</dict>
 		<key>low_res_versions_will_be_removed</key>
 		<dict>
@@ -42,7 +42,7 @@
 			<key>two</key>
 			<string>versões de baixa resolução dessas fotos e vídeos serão removidas</string>
 			<key>zero</key>
-			<string>versões de baixa resolução dessas fotos e vídeos serão removidas</string>
+			<string>versão de baixa resolução dessa foto ou vídeo será removida</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
@@ -66,7 +66,7 @@
 			<key>two</key>
 			<string>transferir %d fotos e vídeos de resolução completa</string>
 			<key>zero</key>
-			<string>transferir %d fotos e vídeos de resolução completa</string>
+			<string>transferir %d foto ou vídeo de resolução completa</string>
 		</dict>
 		<key>low_res_versions_will_be_removed</key>
 		<dict>
@@ -85,7 +85,7 @@
 			<key>two</key>
 			<string>versões de baixa resolução dessas fotos e vídeos serão removidas</string>
 			<key>zero</key>
-			<string>versões de baixa resolução dessas fotos e vídeos serão removidas</string>
+			<string>versão de baixa resolução dessa foto ou vídeo será removida</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
@@ -109,7 +109,7 @@
 			<key>two</key>
 			<string>transferir %d fotos e vídeos de resolução completa</string>
 			<key>zero</key>
-			<string>transferir %d fotos e vídeos de resolução completa</string>
+			<string>transferir %d foto ou vídeo de resolução completa</string>
 		</dict>
 		<key>low_res_versions_will_be_removed</key>
 		<dict>
@@ -128,7 +128,7 @@
 			<key>two</key>
 			<string>versões de baixa resolução dessas fotos e vídeos serão removidas</string>
 			<key>zero</key>
-			<string>versões de baixa resolução dessas fotos e vídeos serão removidas</string>
+			<string>versão de baixa resolução dessa foto ou vídeo será removida</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
@@ -152,7 +152,7 @@
 			<key>two</key>
 			<string>Essas fotos permanecerão</string>
 			<key>zero</key>
-			<string>Essas fotos permanecerão</string>
+			<string>Essa foto permanecerá</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
@@ -176,7 +176,7 @@
 			<key>two</key>
 			<string>Essas fotos e vídeos permanecerão</string>
 			<key>zero</key>
-			<string>Essas fotos e vídeos permanecerão</string>
+			<string>Essa foto ou vídeo permanecerá</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
@@ -200,7 +200,7 @@
 			<key>two</key>
 			<string>Esses vídeos permanecerão</string>
 			<key>zero</key>
-			<string>Esses vídeos permanecerão</string>
+			<string>Esse vídeo permanecerá</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
@@ -224,7 +224,7 @@
 			<key>two</key>
 			<string>%d Fotos e Vídeos Serão Removidos</string>
 			<key>zero</key>
-			<string>%d Fotos e Vídeos Serão Removidos</string>
+			<string>%d Foto ou Vídeo Será Removido</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
@@ -248,7 +248,7 @@
 			<key>two</key>
 			<string>%d fotos e vídeos serão removidos</string>
 			<key>zero</key>
-			<string>%d fotos e vídeos serão removidos</string>
+			<string>%d foto ou vídeo será removido</string>
 		</dict>
 		<key>they_will_remain_in</key>
 		<dict>
@@ -267,7 +267,7 @@
 			<key>two</key>
 			<string>Essas fotos permanecerão na</string>
 			<key>zero</key>
-			<string>Essas fotos permanecerão na</string>
+			<string>Essa foto permanecerá na</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
@@ -291,7 +291,7 @@
 			<key>two</key>
 			<string>%d fotos e vídeos serão removidos</string>
 			<key>zero</key>
-			<string>%d fotos e vídeos serão removidos</string>
+			<string>%d foto ou vídeo será removido</string>
 		</dict>
 		<key>they_will_remain_in</key>
 		<dict>
@@ -310,7 +310,7 @@
 			<key>two</key>
 			<string>Essas fotos permanecerão na</string>
 			<key>zero</key>
-			<string>Essas fotos permanecerão na</string>
+			<string>Essa foto permanecerá na</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
@@ -334,7 +334,7 @@
 			<key>two</key>
 			<string>%d Fotos Serão Removidas</string>
 			<key>zero</key>
-			<string>%d Fotos Serão Removidas</string>
+			<string>%d Foto Será Removida</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
@@ -358,7 +358,7 @@
 			<key>two</key>
 			<string>%d fotos serão removidas</string>
 			<key>zero</key>
-			<string>%d fotos serão removidas</string>
+			<string>%d foto será removida</string>
 		</dict>
 		<key>they_will_remain_in</key>
 		<dict>
@@ -377,7 +377,7 @@
 			<key>two</key>
 			<string>Essas fotos permanecerão na</string>
 			<key>zero</key>
-			<string>Essas fotos permanecerão na</string>
+			<string>Essa foto permanecerá na</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
@@ -401,7 +401,7 @@
 			<key>two</key>
 			<string>%d Fotos Serão Removidas</string>
 			<key>zero</key>
-			<string>%d Fotos Serão Removidas</string>
+			<string>%d Foto será removida</string>
 		</dict>
 		<key>they_will_remain_in</key>
 		<dict>
@@ -420,7 +420,7 @@
 			<key>two</key>
 			<string>Essas fotos permanecerão na</string>
 			<key>zero</key>
-			<string>Essas fotos permanecerão na</string>
+			<string>Essa foto permanecerá na</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
@@ -444,7 +444,7 @@
 			<key>two</key>
 			<string>%d Vídeos Serão Removidos</string>
 			<key>zero</key>
-			<string>%d Vídeos Serão Removidos</string>
+			<string>%d Vídeo Será Removido</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
@@ -468,7 +468,7 @@
 			<key>two</key>
 			<string>%d vídeos serão removidos</string>
 			<key>zero</key>
-			<string>%d vídeos serão removidos</string>
+			<string>%d vídeo será removido</string>
 		</dict>
 		<key>they_will_remain_in</key>
 		<dict>
@@ -487,7 +487,7 @@
 			<key>two</key>
 			<string>Esses vídeos permanecerão na</string>
 			<key>zero</key>
-			<string>Esses vídeos permanecerão na</string>
+			<string>Esse vídeo permanecerá na</string>
 		</dict>
 	</dict>
 	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
@@ -511,7 +511,7 @@
 			<key>two</key>
 			<string>%d vídeos serão removidos</string>
 			<key>zero</key>
-			<string>%d vídeos serão removidos</string>
+			<string>%d vídeo será removido</string>
 		</dict>
 		<key>they_will_remain_in</key>
 		<dict>
@@ -530,7 +530,7 @@
 			<key>two</key>
 			<string>Esses vídeos permanecerão na</string>
 			<key>zero</key>
-			<string>Esses vídeos permanecerão na</string>
+			<string>Esse vídeo permanecerá na</string>
 		</dict>
 	</dict>
 </dict>

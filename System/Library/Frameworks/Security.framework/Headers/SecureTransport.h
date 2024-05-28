@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1999-2002,2005-2012 Apple Inc. All Rights Reserved.
+ * Copyright (c) 1999-2002,2005-2014 Apple Inc. All Rights Reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -130,6 +130,11 @@ typedef enum {
      * using a block cipher.
      */
     kSSLSessionOptionSendOneByteRecord,
+    /*
+     * Enable fallback countermeasures. Use this option when retyring a SSL connection
+     * with a lower protocol version because of failure to connect.
+     */
+    kSSLSessionOptionFallback = 6,
 
 } SSLSessionOption;
 

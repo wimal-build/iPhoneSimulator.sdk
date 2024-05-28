@@ -93,6 +93,11 @@ SK_EXPORT @interface SKSpriteNode : SKNode
 - (instancetype)initWithColor:(SKColor *)color size:(CGSize)size;
 
 /**
+ Support coding and decoding via NSKeyedArchiver.
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
+/**
  Texture to be drawn (is stretched to fill the sprite)
  */
 @property (nonatomic, retain) SKTexture *texture;

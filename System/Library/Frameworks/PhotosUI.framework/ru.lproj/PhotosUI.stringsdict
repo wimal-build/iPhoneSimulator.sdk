@@ -128,6 +128,150 @@
 			<string>%d видео будет удалено</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Загрузка объектов (%@)</string>
+			<key>many</key>
+			<string>Загрузка объектов (%@)</string>
+			<key>one</key>
+			<string>Загрузка объектов (%@)</string>
+			<key>other</key>
+			<string>Загрузка объектов (%@)</string>
+			<key>two</key>
+			<string>Загрузка объектов (%@)</string>
+			<key>zero</key>
+			<string>Загрузка объектов (%@)</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Объектов для загрузки: %@</string>
+			<key>many</key>
+			<string>Объектов для загрузки: %@</string>
+			<key>one</key>
+			<string>Объектов для загрузки: %@</string>
+			<key>other</key>
+			<string>Объектов для загрузки: %@</string>
+			<key>two</key>
+			<string>Объектов для загрузки: %@</string>
+			<key>zero</key>
+			<string>Объектов для загрузки: %@</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Загрузка фото (%@)</string>
+			<key>many</key>
+			<string>Загрузка фото (%@)</string>
+			<key>one</key>
+			<string>Загрузка фото (%@)</string>
+			<key>other</key>
+			<string>Загрузка фото (%@)</string>
+			<key>two</key>
+			<string>Загрузка фото (%@)</string>
+			<key>zero</key>
+			<string>Загрузка фото (%@)</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Фото для загрузки: %@</string>
+			<key>many</key>
+			<string>Фото для загрузки: %@</string>
+			<key>one</key>
+			<string>Фото для загрузки: %@</string>
+			<key>other</key>
+			<string>Фото для загрузки: %@</string>
+			<key>two</key>
+			<string>Фото для загрузки: %@</string>
+			<key>zero</key>
+			<string>Фото для загрузки: %@</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Загрузка видео (%@)</string>
+			<key>many</key>
+			<string>Загрузка видео (%@)</string>
+			<key>one</key>
+			<string>Загрузка видео (%@)</string>
+			<key>other</key>
+			<string>Загрузка видео (%@)</string>
+			<key>two</key>
+			<string>Загрузка видео (%@)</string>
+			<key>zero</key>
+			<string>Загрузка видео (%@)</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Видео для загрузки: %@</string>
+			<key>many</key>
+			<string>Видео для загрузки: %@</string>
+			<key>one</key>
+			<string>Видео для загрузки: %@</string>
+			<key>other</key>
+			<string>Видео для загрузки: %@</string>
+			<key>two</key>
+			<string>Видео для загрузки: %@</string>
+			<key>zero</key>
+			<string>Видео для загрузки: %@</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -198,6 +342,150 @@
 			<string>%d дн</string>
 			<key>zero</key>
 			<string>%d дн</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Выгрузка объектов (%@)</string>
+			<key>many</key>
+			<string>Выгрузка объектов (%@)</string>
+			<key>one</key>
+			<string>Выгрузка объектов (%@)</string>
+			<key>other</key>
+			<string>Выгрузка объектов (%@)</string>
+			<key>two</key>
+			<string>Выгрузка объектов (%@)</string>
+			<key>zero</key>
+			<string>Выгрузка объектов (%@)</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Объектов для выгрузки: %@</string>
+			<key>many</key>
+			<string>Объектов для выгрузки: %@</string>
+			<key>one</key>
+			<string>Объектов для выгрузки: %@</string>
+			<key>other</key>
+			<string>Объектов для выгрузки: %@</string>
+			<key>two</key>
+			<string>Объектов для выгрузки: %@</string>
+			<key>zero</key>
+			<string>Объектов для выгрузки: %@</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Выгрузка фото (%@)</string>
+			<key>many</key>
+			<string>Выгрузка фото (%@)</string>
+			<key>one</key>
+			<string>Выгрузка фото (%@)</string>
+			<key>other</key>
+			<string>Выгрузка фото (%@)</string>
+			<key>two</key>
+			<string>Выгрузка фото (%@)</string>
+			<key>zero</key>
+			<string>Выгрузка фото (%@)</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Фото для выгрузки: %@</string>
+			<key>many</key>
+			<string>Фото для выгрузки: %@</string>
+			<key>one</key>
+			<string>Фото для выгрузки: %@</string>
+			<key>other</key>
+			<string>Фото для выгрузки: %@</string>
+			<key>two</key>
+			<string>Фото для выгрузки: %@</string>
+			<key>zero</key>
+			<string>Фото для выгрузки: %@</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Выгрузка видео (%@)</string>
+			<key>many</key>
+			<string>Выгрузка видео (%@)</string>
+			<key>one</key>
+			<string>Выгрузка видео (%@)</string>
+			<key>other</key>
+			<string>Выгрузка видео (%@)</string>
+			<key>two</key>
+			<string>Выгрузка видео (%@)</string>
+			<key>zero</key>
+			<string>Выгрузка видео (%@)</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Видео для выгрузки: %@</string>
+			<key>many</key>
+			<string>Видео для выгрузки: %@</string>
+			<key>one</key>
+			<string>Видео для выгрузки: %@</string>
+			<key>other</key>
+			<string>Видео для выгрузки: %@</string>
+			<key>two</key>
+			<string>Видео для выгрузки: %@</string>
+			<key>zero</key>
+			<string>Видео для выгрузки: %@</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>

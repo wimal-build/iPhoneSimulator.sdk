@@ -5,7 +5,7 @@
 	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
-		<string>Biblioteka zdjęć iCloud została wyłączona. You %#@have_n_days@, aby w całości skopiować wszystkie oryginały zdjęć i wideo na to lub inne urządzenie.</string>
+		<string>Biblioteka zdjęć iCloud została wyłączona. %#@have_n_days@, aby w całości skopiować wszystkie oryginały zdjęć i wideo na to lub inne urządzenie.</string>
 		<key>have_n_days</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>
@@ -97,7 +97,7 @@
 			<key>other</key>
 			<string>%d zdjęć i wideo zostanie usuniętych</string>
 			<key>two</key>
-			<string>%d zdjęć i wideo zostaną usunięte</string>
+			<string>%d zdjęcia i wideo zostaną usunięte</string>
 			<key>zero</key>
 			<string>%d zdjęć i wideo zostanie usuniętych</string>
 		</dict>
@@ -128,10 +128,154 @@
 			<string>%d wideo zostanie usuniętych</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Pobieram %@ rzeczy</string>
+			<key>many</key>
+			<string>Pobieram %@ rzeczy</string>
+			<key>one</key>
+			<string>Pobieram %@ rzecz</string>
+			<key>other</key>
+			<string>Pobieram %@ rzeczy</string>
+			<key>two</key>
+			<string>Pobieram %@ rzeczy</string>
+			<key>zero</key>
+			<string>Pobieram %@ rzeczy</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ rzeczy do pobrania</string>
+			<key>many</key>
+			<string>%@ rzeczy do pobrania</string>
+			<key>one</key>
+			<string>%@ rzecz do pobrania</string>
+			<key>other</key>
+			<string>%@ rzeczy do pobrania</string>
+			<key>two</key>
+			<string>%@ rzeczy do pobrania</string>
+			<key>zero</key>
+			<string>%@ rzeczy do pobrania</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Pobieram %@ zdjęcia</string>
+			<key>many</key>
+			<string>Pobieram %@ zdjęć</string>
+			<key>one</key>
+			<string>Pobieram %@ zdjęcie</string>
+			<key>other</key>
+			<string>Pobieram %@ zdjęcia</string>
+			<key>two</key>
+			<string>Pobieram %@ zdjęcia</string>
+			<key>zero</key>
+			<string>Pobieram %@ zdjęć</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ zdjęcia do pobrania</string>
+			<key>many</key>
+			<string>%@ zdjęć do pobrania</string>
+			<key>one</key>
+			<string>%@ zdjęcie do pobrania</string>
+			<key>other</key>
+			<string>%@ zdjęcia do pobrania</string>
+			<key>two</key>
+			<string>%@ zdjęcia do pobrania</string>
+			<key>zero</key>
+			<string>%@ zdjęć do pobrania</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Pobieram %@ wideo</string>
+			<key>many</key>
+			<string>Pobieram %@ wideo</string>
+			<key>one</key>
+			<string>Pobieram %@ wideo</string>
+			<key>other</key>
+			<string>Pobieram %@ wideo</string>
+			<key>two</key>
+			<string>Pobieram %@ wideo</string>
+			<key>zero</key>
+			<string>Pobieram %@ wideo</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ wideo do pobrania</string>
+			<key>many</key>
+			<string>%@ wideo do pobrania</string>
+			<key>one</key>
+			<string>%@ wideo do pobrania</string>
+			<key>other</key>
+			<string>%@ wideo do pobrania</string>
+			<key>two</key>
+			<string>%@ wideo do pobrania</string>
+			<key>zero</key>
+			<string>%@ wideo do pobrania</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
-		<string>Biblioteka zdjęć iCloud zostanie usunięta z iCloud za %#@in_n_days@. Zdjęcia i wideo nie są już wysyłane do niej. Usunięcie biblioteki możesz anulować w ustawieniach zarządzania miejscem na iCloud.</string>
+		<string>Biblioteka zdjęć iCloud zostanie usunięta z iCloud %#@in_n_days@. Zdjęcia i wideo nie są już wysyłane do niej. Usunięcie biblioteki możesz anulować w ustawieniach zarządzania miejscem na iCloud.</string>
 		<key>in_n_days</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>
@@ -198,6 +342,150 @@
 			<string>od %d dni</string>
 			<key>zero</key>
 			<string>od %d dni</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Wysyłam %@ rzeczy</string>
+			<key>many</key>
+			<string>Wysyłam %@ rzeczy</string>
+			<key>one</key>
+			<string>Wysyłam %@ rzecz</string>
+			<key>other</key>
+			<string>Wysyłam %@ rzeczy</string>
+			<key>two</key>
+			<string>Wysyłam %@ rzeczy</string>
+			<key>zero</key>
+			<string>Wysyłam %@ rzeczy</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ rzeczy do wysłania</string>
+			<key>many</key>
+			<string>%@ rzeczy do wysłania</string>
+			<key>one</key>
+			<string>%@ rzecz do wysłania</string>
+			<key>other</key>
+			<string>%@ rzeczy do wysłania</string>
+			<key>two</key>
+			<string>%@ rzeczy do wysłania</string>
+			<key>zero</key>
+			<string>%@ rzeczy do wysłania</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Wysyłam %@ zdjęcia</string>
+			<key>many</key>
+			<string>Wysyłam %@ zdjęć</string>
+			<key>one</key>
+			<string>Wysyłam %@ zdjęcie</string>
+			<key>other</key>
+			<string>Wysyłam %@ zdjęcia</string>
+			<key>two</key>
+			<string>Wysyłam %@ zdjęcia</string>
+			<key>zero</key>
+			<string>Wysyłam %@ zdjęć</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ zdjęcia do wysłania</string>
+			<key>many</key>
+			<string>%@ zdjęć do wysłania</string>
+			<key>one</key>
+			<string>%@ zdjęcie do wysłania</string>
+			<key>other</key>
+			<string>%@ zdjęcia do wysłania</string>
+			<key>two</key>
+			<string>%@ zdjęcia do wysłania</string>
+			<key>zero</key>
+			<string>%@ zdjęć do wysłania</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Wysyłam %@ wideo</string>
+			<key>many</key>
+			<string>Wysyłam %@ wideo</string>
+			<key>one</key>
+			<string>Wysyłam %@ wideo</string>
+			<key>other</key>
+			<string>Wysyłam %@ wideo</string>
+			<key>two</key>
+			<string>Wysyłam %@ wideo</string>
+			<key>zero</key>
+			<string>Wysyłam %@ wideo</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ wideo do wysłania</string>
+			<key>many</key>
+			<string>%@ wideo do wysłania</string>
+			<key>one</key>
+			<string>%@ wideo do wysłania</string>
+			<key>other</key>
+			<string>%@ wideo do wysłania</string>
+			<key>two</key>
+			<string>%@ wideo do wysłania</string>
+			<key>zero</key>
+			<string>%@ wideo do wysłania</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>

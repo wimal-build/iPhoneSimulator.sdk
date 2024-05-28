@@ -39,6 +39,11 @@ SK_EXPORT @interface SKNode : NSResponder <NSCopying, NSCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
+/**
+ Support coding and decoding via NSKeyedArchiver.
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
 + (instancetype)node;
 
 + (instancetype)nodeWithFileNamed:(NSString*)filename;

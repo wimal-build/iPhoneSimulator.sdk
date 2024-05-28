@@ -184,10 +184,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
         unsigned int subviewWantsAutolayout:1;
         unsigned int isApplyingValuesFromEngine:1;
         unsigned int isInAutolayout:1;
-        unsigned int isUpdatingAutoresizingConstraints:1;
+        unsigned int isSubviewUpdatingAutoresizingConstraints:1;
         unsigned int isUpdatingConstraints:1;
         unsigned int isHostingUpdateConstraintsPassDuringLayout:1;
         unsigned int isRunningEngineLevelConstraintsPass:1;
+        unsigned int isUnsatisfiableConstraintsLoggingSuspended:1;
         unsigned int systemLayoutFittingSizeNeedsUpdate:1;
         unsigned int systemLayoutFittingSizeNeedsUpdateInWholeSubtree:1;
         unsigned int isCalculatingSystemLayoutFittingSize:1;

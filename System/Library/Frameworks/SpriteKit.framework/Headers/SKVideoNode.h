@@ -46,6 +46,11 @@ SK_EXPORT @interface SKVideoNode : SKNode
 
 - (instancetype)initWithVideoURL:(NSURL *)url;
 
+/**
+ Support coding and decoding via NSKeyedArchiver.
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
 - (void)play;
 - (void)pause;
 

@@ -58,6 +58,6 @@
  * @discussion
  * Cancel pre-roll video ad playback.
  */
-- (void)cancelPreroll;
+- (void)cancelPreroll NS_AVAILABLE_IOS(8_0);
 
 @end

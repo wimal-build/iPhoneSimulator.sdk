@@ -4,11 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Dutch.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vQAiA/MYc71JwEaauiNiEovdrkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			01id5rtiTAUORy1VJCsVl1jUPRc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gkt8OVCnWmGXJ22Ng4VD1U3uhQE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,11 +44,29 @@
 		<data>
 		cnrGe9IMQTnl7SnnhWJ178xDSAU=
 		</data>
+		<key>French.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QRyeYn7hwBBtJ0pFzUS4bNayYD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			BQ5evASFz6N+DVoEOMFoHIu32Qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f+Pz4cefY9mxCMDDtLNQVOPayu8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -46,13 +82,31 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		FnEAIE8loEJ8UFr4p7sHX0dKjos=
+		LUFFE1qHfG5VRWGXxre25wR/D1A=
 		</data>
+		<key>Italian.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rnD85fBexTodMam2/XXUWakZcsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			PDVb2J0Qbjmd0hWxs5xcPAeqt/c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OiUI0w2ntfG7rFINAKssHhAommY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -68,16 +122,25 @@
 		</dict>
 		<key>KBLayouts_AppleTV.dylib</key>
 		<data>
-		Docc2mmSkg38cfZZ/Ywws4ipEpM=
+		R5yfWFqbcvp5G7iWqQt/7WmqFec=
 		</data>
 		<key>KBLayouts_iPad.dylib</key>
 		<data>
-		P3Tsv4JgfpIUEzRQw24zbdNmYGI=
+		vbZMxsRdCWDdv/W3jMvOH+c8hOk=
 		</data>
 		<key>KBLayouts_iPhone.dylib</key>
 		<data>
-		dvThATlXMxm0PRKP5KApaVFeYb4=
+		H96G9Y52mSrrEV4eWk5UY11mKUQ=
 		</data>
+		<key>Spanish.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tiEMgcgO5EqmBhi8yJL4RW8QhOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
@@ -97,17 +160,35 @@
 		</data>
 		<key>UserDictionary.momd/UserDictionary.omo</key>
 		<data>
-		Yy8aFxLIdL57zZZUFfjPhmzzWSU=
+		FWJtxBLnZ7CVH9EVi1KscLAyrx8=
 		</data>
 		<key>UserDictionary.momd/VersionInfo.plist</key>
 		<data>
 		km8cB16zUjEpT1tbBtxhxwy+u1w=
 		</data>
+		<key>ar.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GlnAVUtKZ7H23suMg/IGNEQQXx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			fn7caRWC5ycEsSmoPypw+usTfYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U6ZqmNl1QUaiJvJrQO+7435hPww=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,11 +206,29 @@
 		<data>
 		AiU/3EKYTGWvuHtmTinlsXnYhv8=
 		</data>
+		<key>cs.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			32mb64PwkAziBnX76AN6xzccxyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			LeE1njB2fOWbvz4G6uC/1vZ15Gc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ELj+wwlUtM1ZUy3tbXk2WvZtlsM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -143,11 +242,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			doad8Qej3lV//YxAHEyUNzYunlI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			htMyVh8+Obuq9yoN1hLAdwVr3+s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			knNSSHUoaFbYk/mMRsa7RADKODQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,11 +278,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1PeJB5TQ+ZnCBSkC21jg4SD96rY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			HTV83nweXvGW0+frYCOy7nH7q8I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ePbdurUowD0Nz6g6cUAXC68bBtA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -179,11 +314,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xJ6kziWzQ7fR9LyMPgkwLqh/cbo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			29TSube9FqJcOxcVejgcZrLjJJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wZpL9E7C9b8NF3nNVEYFRz1UzZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,11 +350,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			inJkAlXtJRYFYc2GgVtL6EKVe2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zcpV5mzJHJ/wNAZBKfkZzmiIA/U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gTjh5tVoqVyLIpYaVvLPRRexHk8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,11 +386,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oXZK87EEouRCiNE1pfakCcRXJrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			1Yp2+nIGT5j8b7v+DA4Bzvg6Wys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L6+o+8BgAeQFUI7aEtGRwy6EM5M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -233,11 +422,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yWW+WQaM39b7pZ1yAnRfe9WBccA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			NpRaO3gnC5Uo0mWYjIIHDwA/KhM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			clAIo8/g2K/57OG8qBfkFUO4r+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,11 +458,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fYZEgMDOGAMb1lRAbfm+MhIryT0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			K0IwALrLl+7Id/n+Rd31RI429Zc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gJ4DZza4rU7Hi3Dz/Rc5yvrotl0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,11 +494,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BNjrqEbklbxTTPIzKopNCB9Hlsk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			33e+dnKI0Ger6gnmHIX8DiVv6Zk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z0u4bb/wp5TKxa7CsRW4rQ5LAY0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -287,11 +530,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BGf/00llBMp3nPrw0tcktd8NbXg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			bBHtcDJTih87lmF+DllOBQmz+vY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			edZOy+QmaO/wIAN3iB/9lScJnEo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,11 +566,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tEGeTGZSST+gUwkOxe7BMVm7+ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ydfSmHBSLTa6KtqC5OVEO35sRS8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ULx4IW3TMiyhIEcVf+3ZxnI0A4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -323,11 +602,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			20pOSa+FWPZg/iiUVyTN5ue57gE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			/4oruKqgui6Ahv3GHsxs36ODbHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FXtNCNwlbhmHQnfQHrrlQ/yO+rw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -343,13 +640,31 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		ZGY/fS+ZxTpfnqMFaY4QYrLYl5M=
+		WTV9W3nRa/LYGIMp+8p6xwMU47w=
 		</data>
+		<key>vi.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GR8Le3WLz3/Qp++HWBtCNOBPQjQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			7FX8BuoeZ46a5OVUbGkXTdXoBtM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qfhPZgy5TB2b2Nweoaxi7sLoU4U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -363,11 +678,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8B8dlYs5qRLsXKilwLK2kn+Rj6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			tG/JO6GAwwrDHlXrCroqTo9HlKQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b2Ru/Xw5x7Dekmyuu9KWB1VmKWI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -384,11 +717,29 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Dutch.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vQAiA/MYc71JwEaauiNiEovdrkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			01id5rtiTAUORy1VJCsVl1jUPRc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gkt8OVCnWmGXJ22Ng4VD1U3uhQE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -406,11 +757,29 @@
 		<data>
 		cnrGe9IMQTnl7SnnhWJ178xDSAU=
 		</data>
+		<key>French.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QRyeYn7hwBBtJ0pFzUS4bNayYD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			BQ5evASFz6N+DVoEOMFoHIu32Qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f+Pz4cefY9mxCMDDtLNQVOPayu8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -424,11 +793,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Italian.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rnD85fBexTodMam2/XXUWakZcsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			PDVb2J0Qbjmd0hWxs5xcPAeqt/c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OiUI0w2ntfG7rFINAKssHhAommY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -444,16 +831,25 @@
 		</dict>
 		<key>KBLayouts_AppleTV.dylib</key>
 		<data>
-		Docc2mmSkg38cfZZ/Ywws4ipEpM=
+		R5yfWFqbcvp5G7iWqQt/7WmqFec=
 		</data>
 		<key>KBLayouts_iPad.dylib</key>
 		<data>
-		P3Tsv4JgfpIUEzRQw24zbdNmYGI=
+		vbZMxsRdCWDdv/W3jMvOH+c8hOk=
 		</data>
 		<key>KBLayouts_iPhone.dylib</key>
 		<data>
-		dvThATlXMxm0PRKP5KApaVFeYb4=
+		H96G9Y52mSrrEV4eWk5UY11mKUQ=
 		</data>
+		<key>Spanish.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tiEMgcgO5EqmBhi8yJL4RW8QhOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
@@ -473,17 +869,35 @@
 		</data>
 		<key>UserDictionary.momd/UserDictionary.omo</key>
 		<data>
-		Yy8aFxLIdL57zZZUFfjPhmzzWSU=
+		FWJtxBLnZ7CVH9EVi1KscLAyrx8=
 		</data>
 		<key>UserDictionary.momd/VersionInfo.plist</key>
 		<data>
 		km8cB16zUjEpT1tbBtxhxwy+u1w=
 		</data>
+		<key>ar.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GlnAVUtKZ7H23suMg/IGNEQQXx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			fn7caRWC5ycEsSmoPypw+usTfYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U6ZqmNl1QUaiJvJrQO+7435hPww=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -501,11 +915,29 @@
 		<data>
 		AiU/3EKYTGWvuHtmTinlsXnYhv8=
 		</data>
+		<key>cs.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			32mb64PwkAziBnX76AN6xzccxyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			LeE1njB2fOWbvz4G6uC/1vZ15Gc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ELj+wwlUtM1ZUy3tbXk2WvZtlsM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -519,11 +951,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			doad8Qej3lV//YxAHEyUNzYunlI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			htMyVh8+Obuq9yoN1hLAdwVr3+s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			knNSSHUoaFbYk/mMRsa7RADKODQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -537,11 +987,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1PeJB5TQ+ZnCBSkC21jg4SD96rY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			HTV83nweXvGW0+frYCOy7nH7q8I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ePbdurUowD0Nz6g6cUAXC68bBtA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -555,11 +1023,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xJ6kziWzQ7fR9LyMPgkwLqh/cbo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			29TSube9FqJcOxcVejgcZrLjJJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wZpL9E7C9b8NF3nNVEYFRz1UzZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -573,11 +1059,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			inJkAlXtJRYFYc2GgVtL6EKVe2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zcpV5mzJHJ/wNAZBKfkZzmiIA/U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gTjh5tVoqVyLIpYaVvLPRRexHk8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -591,11 +1095,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oXZK87EEouRCiNE1pfakCcRXJrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			1Yp2+nIGT5j8b7v+DA4Bzvg6Wys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L6+o+8BgAeQFUI7aEtGRwy6EM5M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -609,11 +1131,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yWW+WQaM39b7pZ1yAnRfe9WBccA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			NpRaO3gnC5Uo0mWYjIIHDwA/KhM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			clAIo8/g2K/57OG8qBfkFUO4r+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -627,11 +1167,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fYZEgMDOGAMb1lRAbfm+MhIryT0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			K0IwALrLl+7Id/n+Rd31RI429Zc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gJ4DZza4rU7Hi3Dz/Rc5yvrotl0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -645,11 +1203,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BNjrqEbklbxTTPIzKopNCB9Hlsk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			33e+dnKI0Ger6gnmHIX8DiVv6Zk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z0u4bb/wp5TKxa7CsRW4rQ5LAY0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -663,11 +1239,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BGf/00llBMp3nPrw0tcktd8NbXg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			bBHtcDJTih87lmF+DllOBQmz+vY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			edZOy+QmaO/wIAN3iB/9lScJnEo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -681,11 +1275,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tEGeTGZSST+gUwkOxe7BMVm7+ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ydfSmHBSLTa6KtqC5OVEO35sRS8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ULx4IW3TMiyhIEcVf+3ZxnI0A4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -699,11 +1311,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			20pOSa+FWPZg/iiUVyTN5ue57gE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			/4oruKqgui6Ahv3GHsxs36ODbHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FXtNCNwlbhmHQnfQHrrlQ/yO+rw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -719,13 +1349,31 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		ZGY/fS+ZxTpfnqMFaY4QYrLYl5M=
+		WTV9W3nRa/LYGIMp+8p6xwMU47w=
 		</data>
+		<key>vi.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GR8Le3WLz3/Qp++HWBtCNOBPQjQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			7FX8BuoeZ46a5OVUbGkXTdXoBtM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qfhPZgy5TB2b2Nweoaxi7sLoU4U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -739,11 +1387,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8B8dlYs5qRLsXKilwLK2kn+Rj6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/TIUserDictionarySampleShortcuts.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			tG/JO6GAwwrDHlXrCroqTo9HlKQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AssistantSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b2Ru/Xw5x7Dekmyuu9KWB1VmKWI=
 			</data>
 			<key>optional</key>
 			<true/>

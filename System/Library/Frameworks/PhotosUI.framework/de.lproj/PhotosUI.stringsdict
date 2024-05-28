@@ -142,6 +142,150 @@
 			<string>werden %d Videos entfernt</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Objekte werden geladen</string>
+			<key>many</key>
+			<string>%@ Objekte werden geladen</string>
+			<key>one</key>
+			<string>%@ Objekt wird geladen</string>
+			<key>other</key>
+			<string>%@ Objekte werden geladen</string>
+			<key>two</key>
+			<string>%@ Objekte werden geladen</string>
+			<key>zero</key>
+			<string>%@ Objekte werden geladen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Objekte zum Download</string>
+			<key>many</key>
+			<string>%@ Objekte zum Download</string>
+			<key>one</key>
+			<string>%@ Objekt zum Download</string>
+			<key>other</key>
+			<string>%@ Objekte zum Download</string>
+			<key>two</key>
+			<string>%@ Objekte zum Download</string>
+			<key>zero</key>
+			<string>%@ Objekte zum Download</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Fotos werden geladen</string>
+			<key>many</key>
+			<string>%@ Fotos werden geladen</string>
+			<key>one</key>
+			<string>%@ Foto wird geladen</string>
+			<key>other</key>
+			<string>%@ Fotos werden geladen</string>
+			<key>two</key>
+			<string>%@ Fotos werden geladen</string>
+			<key>zero</key>
+			<string>%@ Fotos werden geladen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Fotos zum Download</string>
+			<key>many</key>
+			<string>%@ Fotos zum Download</string>
+			<key>one</key>
+			<string>%@ Foto zum Download</string>
+			<key>other</key>
+			<string>%@ Fotos zum Download</string>
+			<key>two</key>
+			<string>%@ Fotos zum Download</string>
+			<key>zero</key>
+			<string>%@ Fotos zum Download</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Videos werden geladen</string>
+			<key>many</key>
+			<string>%@ Videos werden geladen</string>
+			<key>one</key>
+			<string>%@ Video wird geladen</string>
+			<key>other</key>
+			<string>%@ Videos werden geladen</string>
+			<key>two</key>
+			<string>%@ Videos werden geladen</string>
+			<key>zero</key>
+			<string>%@ Videos werden geladen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Videos zum Download</string>
+			<key>many</key>
+			<string>%@ Videos zum Download</string>
+			<key>one</key>
+			<string>%@ Video zum Download</string>
+			<key>other</key>
+			<string>%@ Videos zum Download</string>
+			<key>two</key>
+			<string>%@ Videos zum Download</string>
+			<key>zero</key>
+			<string>%@ Videos zum Download</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -233,6 +377,150 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Objekte werden hochgeladen</string>
+			<key>many</key>
+			<string>%@ Objekte werden hochgeladen</string>
+			<key>one</key>
+			<string>%@ Objekt wird hochgeladen</string>
+			<key>other</key>
+			<string>%@ Objekte werden hochgeladen</string>
+			<key>two</key>
+			<string>%@ Objekte werden hochgeladen</string>
+			<key>zero</key>
+			<string>%@ Objekte werden hochgeladen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Objekte zum Upload</string>
+			<key>many</key>
+			<string>%@ Objekte zum Upload</string>
+			<key>one</key>
+			<string>%@ Objekt zum Upload</string>
+			<key>other</key>
+			<string>%@ Objekte zum Upload</string>
+			<key>two</key>
+			<string>%@ Objekte zum Upload</string>
+			<key>zero</key>
+			<string>%@ Objekte zum Upload</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Fotos werden hochgeladen</string>
+			<key>many</key>
+			<string>%@ Fotos werden hochgeladen</string>
+			<key>one</key>
+			<string>%@ Foto wird hochgeladen</string>
+			<key>other</key>
+			<string>%@ Fotos werden hochgeladen</string>
+			<key>two</key>
+			<string>%@ Fotos werden hochgeladen</string>
+			<key>zero</key>
+			<string>%@ Fotos werden hochgeladen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Fotos zum Upload</string>
+			<key>many</key>
+			<string>%@ Fotos zum Upload</string>
+			<key>one</key>
+			<string>%@ Foto zum Upload</string>
+			<key>other</key>
+			<string>%@ Fotos zum Upload</string>
+			<key>two</key>
+			<string>%@ Fotos zum Upload</string>
+			<key>zero</key>
+			<string>%@ Fotos zum Upload</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Videos werden hochgeladen</string>
+			<key>many</key>
+			<string>%@ Videos werden hochgeladen</string>
+			<key>one</key>
+			<string>%@ Video wird hochgeladen</string>
+			<key>other</key>
+			<string>%@ Videos werden hochgeladen</string>
+			<key>two</key>
+			<string>%@ Videos werden hochgeladen</string>
+			<key>zero</key>
+			<string>%@ Videos werden hochgeladen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ Videos zum Upload</string>
+			<key>many</key>
+			<string>%@ Videos zum Upload</string>
+			<key>one</key>
+			<string>%@ Video zum Upload</string>
+			<key>other</key>
+			<string>%@ Videos zum Upload</string>
+			<key>two</key>
+			<string>%@ Videos zum Upload</string>
+			<key>zero</key>
+			<string>%@ Videos zum Upload</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>

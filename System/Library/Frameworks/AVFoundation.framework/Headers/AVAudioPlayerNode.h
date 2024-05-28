@@ -58,9 +58,8 @@ typedef NS_OPTIONS(NSUInteger, AVAudioPlayerNodeBufferOptions) {
 		paused. The methods @link nodeTimeForPlayerTime: @/link and @link playerTimeForNodeTime: @/link
 		convert between the two.
 
-		This class' override of the @link AVAudioNode @/link method @link reset @/link unschedules
-		all previously scheduled buffers and file segments, and returns the player timeline to
-		sample time 0.
+		This class' @link stop @/link method unschedules all previously scheduled buffers and 
+		file segments, and returns the player timeline to sample time 0.
 
 		TIMESTAMPS
 		
@@ -94,7 +93,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 	@param buffer
 		the buffer to play
 	@param completionHandler
-		called after the buffer has completely played or the player is reset. may be nil.
+		called after the buffer has completely played or the player is stopped. may be nil.
 	@discussion
 		Schedules the buffer to be played following any previously scheduled commands.
 */
@@ -109,7 +108,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 	@param options
 		options for looping, interrupting other buffers, etc.
 	@param completionHandler
-		called after the buffer has completely played or the player is reset. may be nil.
+		called after the buffer has completely played or the player is stopped. may be nil.
 	@discussion
 */
 - (void)scheduleBuffer:(AVAudioPCMBuffer *)buffer atTime:(AVAudioTime *)when options:(AVAudioPlayerNodeBufferOptions)options completionHandler:(AVAudioNodeCompletionHandler)completionHandler;
@@ -121,7 +120,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 	@param when 
 		the time at which to play the file. see the discussion of timestamps, above.
 	@param completionHandler
-		called after the file has completely played or the player is reset. may be nil.
+		called after the file has completely played or the player is stopped. may be nil.
 */
 - (void)scheduleFile:(AVAudioFile *)file atTime:(AVAudioTime *)when completionHandler:(AVAudioNodeCompletionHandler)completionHandler;
 
@@ -136,7 +135,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 	@param when
 		the time at which to play the region. see the discussion of timestamps, above.
 	@param completionHandler
-		called after the segment has completely played or the player is reset. may be nil.
+		called after the segment has completely played or the player is stopped. may be nil.
 */
 - (void)scheduleSegment:(AVAudioFile *)file startingFrame:(AVAudioFramePosition)startFrame frameCount:(AVAudioFrameCount)numberFrames atTime:(AVAudioTime *)when completionHandler:(AVAudioNodeCompletionHandler)completionHandler;
 
@@ -161,7 +160,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 /*!	@method play
 	@abstract Start or resume playback immediately.
 	@discussion
-		equivalent to startAtTime:nil
+		equivalent to playAtTime:nil
 */
 - (void)play;
 
@@ -173,6 +172,20 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 		This node is initially paused. Requests to play buffers or file segments are enqueued, and
 		any necessary decoding begins immediately. Playback does not begin, however, until the player
 		has started playing, via this method.
+ 
+		E.g. To start a player X seconds in future:
+<pre>
+// start engine and player
+NSError *nsErr = nil;
+[_engine startAndReturnError:&nsErr];
+if (!nsErr) {
+	const float kStartDelayTime = 0.5; // sec
+	AVAudioFormat *outputFormat = [_player outputFormatForBus:0];
+	AVAudioFramePosition startSampleTime = _player.lastRenderTime.sampleTime + kStartDelayTime * outputFormat.sampleRate;
+	AVAudioTime *startTime = [AVAudioTime timeWithSampleTime:startSampleTime atRate:outputFormat.sampleRate];
+	[_player playAtTime:startTime];
+}
+</pre>
 */
 - (void)playAtTime:(AVAudioTime *)when;
 

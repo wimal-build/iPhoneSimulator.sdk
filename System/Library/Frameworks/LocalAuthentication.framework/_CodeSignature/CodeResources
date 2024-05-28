@@ -22,25 +22,25 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4mqPx7qdxORABFbXSXUUKseofAg=
+		bmOC87iiMZKaNYQZPTQ61J/Gyn0=
 		</data>
-		<key>Support/SharedInternals.framework/Entitlements.plist</key>
+		<key>Support/SharedUtils.framework/Entitlements.plist</key>
 		<data>
 		tI5tWt+Xa/aSSQ/B36R/Gra9F04=
 		</data>
-		<key>Support/SharedInternals.framework/Info.plist</key>
+		<key>Support/SharedUtils.framework/Info.plist</key>
 		<data>
-		BmT0vhD0QPSL8gBpdilAkGBt1cM=
+		HGRUqWa1/Lyh34UrRTvte5qRdmg=
 		</data>
-		<key>Support/SharedInternals.framework/SharedInternals</key>
+		<key>Support/SharedUtils.framework/SharedUtils</key>
 		<data>
-		jc79XOOri+A0uFmjU3LiVey23Ig=
+		qW6MKQ453D2kf35n1NB7r/+KeMQ=
 		</data>
-		<key>Support/SharedInternals.framework/_CodeSignature/CodeResources</key>
+		<key>Support/SharedUtils.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kTg0v1GfyW1JDqlGiUb++fRsL1Q=
+		ahvexmPY2d8CUuwkRWx3K1BIFGQ=
 		</data>
-		<key>Support/SharedInternals.framework/en.lproj/InfoPlist.strings</key>
+		<key>Support/SharedUtils.framework/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -49,7 +49,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Support/SharedInternals.framework/en.lproj/Shared.strings</key>
+		<key>Support/SharedUtils.framework/en.lproj/Shared.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -58,9 +58,9 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Support/SharedInternals.framework/version.plist</key>
+		<key>Support/SharedUtils.framework/version.plist</key>
 		<data>
-		1rqDv+LPmePgdI2KyNnapeKww3A=
+		GpSM+Rg5B+spSBdCOxBUVi8z4ho=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -73,7 +73,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		1rqDv+LPmePgdI2KyNnapeKww3A=
+		GpSM+Rg5B+spSBdCOxBUVi8z4ho=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,23 +94,23 @@
 		<data>
 		R7DuAhwvHNmSVV+y4VqI7mVYRcY=
 		</data>
-		<key>Support/SharedInternals.framework/Entitlements.plist</key>
+		<key>Support/SharedUtils.framework/Entitlements.plist</key>
 		<data>
 		tI5tWt+Xa/aSSQ/B36R/Gra9F04=
 		</data>
-		<key>Support/SharedInternals.framework/Info.plist</key>
+		<key>Support/SharedUtils.framework/Info.plist</key>
 		<data>
-		BmT0vhD0QPSL8gBpdilAkGBt1cM=
+		HGRUqWa1/Lyh34UrRTvte5qRdmg=
 		</data>
-		<key>Support/SharedInternals.framework/SharedInternals</key>
+		<key>Support/SharedUtils.framework/SharedUtils</key>
 		<data>
-		jc79XOOri+A0uFmjU3LiVey23Ig=
+		qW6MKQ453D2kf35n1NB7r/+KeMQ=
 		</data>
-		<key>Support/SharedInternals.framework/_CodeSignature/CodeResources</key>
+		<key>Support/SharedUtils.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kTg0v1GfyW1JDqlGiUb++fRsL1Q=
+		ahvexmPY2d8CUuwkRWx3K1BIFGQ=
 		</data>
-		<key>Support/SharedInternals.framework/en.lproj/InfoPlist.strings</key>
+		<key>Support/SharedUtils.framework/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -119,7 +119,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Support/SharedInternals.framework/en.lproj/Shared.strings</key>
+		<key>Support/SharedUtils.framework/en.lproj/Shared.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -128,9 +128,9 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Support/SharedInternals.framework/version.plist</key>
+		<key>Support/SharedUtils.framework/version.plist</key>
 		<data>
-		1rqDv+LPmePgdI2KyNnapeKww3A=
+		GpSM+Rg5B+spSBdCOxBUVi8z4ho=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -143,7 +143,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		1rqDv+LPmePgdI2KyNnapeKww3A=
+		GpSM+Rg5B+spSBdCOxBUVi8z4ho=
 		</data>
 	</dict>
 	<key>rules</key>

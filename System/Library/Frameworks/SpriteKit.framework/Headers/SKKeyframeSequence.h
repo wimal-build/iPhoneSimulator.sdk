@@ -26,6 +26,11 @@ SK_EXPORT @interface SKKeyframeSequence : NSObject <NSCoding, NSCopying>
 
 - (instancetype)initWithCapacity:(NSUInteger)numItems;
 
+/**
+ Support coding and decoding via NSKeyedArchiver.
+ */
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
 - (NSUInteger)count;
 
 - (void)addKeyframeValue:(id)value time:(CGFloat)time;

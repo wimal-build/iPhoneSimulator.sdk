@@ -63,6 +63,7 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeAlbumImported        = 6,
     
     // PHAssetCollectionTypeAlbum shared subtypes
+    PHAssetCollectionSubtypeAlbumMyPhotoStream   = 100,
     PHAssetCollectionSubtypeAlbumCloudShared     = 101,
     
     // PHAssetCollectionTypeSmartAlbum subtypes
@@ -73,8 +74,9 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeSmartAlbumTimelapses = 204,
     PHAssetCollectionSubtypeSmartAlbumAllHidden  = 205,
     PHAssetCollectionSubtypeSmartAlbumRecentlyAdded = 206,
-    PHAssetCollectionSubtypeSmartAlbumBursts    = 207,
+    PHAssetCollectionSubtypeSmartAlbumBursts     = 207,
     PHAssetCollectionSubtypeSmartAlbumSlomoVideos = 208,
+    PHAssetCollectionSubtypeSmartAlbumUserLibrary = 209,
     
     // Used for fetching, if you don't care about the exact subtype
     PHAssetCollectionSubtypeAny = NSIntegerMax

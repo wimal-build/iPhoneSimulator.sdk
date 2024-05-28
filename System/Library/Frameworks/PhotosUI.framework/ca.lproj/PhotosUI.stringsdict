@@ -128,6 +128,150 @@
 			<string>%d vídeos s’eliminaran</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Descarregant %@ ítems</string>
+			<key>many</key>
+			<string>Descarregant %@ ítems</string>
+			<key>one</key>
+			<string>Descarregant %@ ítem</string>
+			<key>other</key>
+			<string>Descarregant %@ ítems</string>
+			<key>two</key>
+			<string>Descarregant %@ ítems</string>
+			<key>zero</key>
+			<string>Descarregant %@ ítems</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ ítems per descarregar</string>
+			<key>many</key>
+			<string>%@ ítems per descarregar</string>
+			<key>one</key>
+			<string>%@ ítem per descarregar</string>
+			<key>other</key>
+			<string>%@ ítems per descarregar</string>
+			<key>two</key>
+			<string>%@ ítems per descarregar</string>
+			<key>zero</key>
+			<string>%@ ítems per descarregar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Descarregant %@ fotos</string>
+			<key>many</key>
+			<string>Descarregant %@ fotos</string>
+			<key>one</key>
+			<string>Descarregant %@ foto</string>
+			<key>other</key>
+			<string>Descarregant %@ fotos</string>
+			<key>two</key>
+			<string>Descarregant %@ fotos</string>
+			<key>zero</key>
+			<string>Descarregant %@ fotos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ fotos per descarregar</string>
+			<key>many</key>
+			<string>%@ fotos per descarregar</string>
+			<key>one</key>
+			<string>%@ foto per descarregar</string>
+			<key>other</key>
+			<string>%@ fotos per descarregar</string>
+			<key>two</key>
+			<string>%@ fotos per descarregar</string>
+			<key>zero</key>
+			<string>%@ fotos per descarregar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Descarregant %@ vídeos</string>
+			<key>many</key>
+			<string>Descarregant %@ vídeos</string>
+			<key>one</key>
+			<string>Descarregant %@ vídeo</string>
+			<key>other</key>
+			<string>Descarregant %@ vídeos</string>
+			<key>two</key>
+			<string>Descarregant %@ vídeos</string>
+			<key>zero</key>
+			<string>Descarregant %@ vídeos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ vídeos per descarregar</string>
+			<key>many</key>
+			<string>%@ vídeos per descarregar</string>
+			<key>one</key>
+			<string>%@ vídeo per descarregar</string>
+			<key>other</key>
+			<string>%@ vídeos per descarregar</string>
+			<key>two</key>
+			<string>%@ vídeos per descarregar</string>
+			<key>zero</key>
+			<string>%@ vídeos per descarregar</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -198,6 +342,150 @@
 			<string>D’aquí a %d dies</string>
 			<key>zero</key>
 			<string>D’aquí a %d dies</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Carregant %@ ítems</string>
+			<key>many</key>
+			<string>Carregant %@ ítems</string>
+			<key>one</key>
+			<string>Carregant %@ ítem</string>
+			<key>other</key>
+			<string>Carregant %@ ítems</string>
+			<key>two</key>
+			<string>Carregant %@ ítems</string>
+			<key>zero</key>
+			<string>Carregant %@ ítems</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ ítems per carregar</string>
+			<key>many</key>
+			<string>%@ ítems per carregar</string>
+			<key>one</key>
+			<string>%@ ítem per carregar</string>
+			<key>other</key>
+			<string>%@ ítems per carregar</string>
+			<key>two</key>
+			<string>%@ ítems per carregar</string>
+			<key>zero</key>
+			<string>%@ ítems per carregar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Carregant %@ fotos</string>
+			<key>many</key>
+			<string>Carregant %@ fotos</string>
+			<key>one</key>
+			<string>Carregant %@ foto</string>
+			<key>other</key>
+			<string>Carregant %@ fotos</string>
+			<key>two</key>
+			<string>Carregant %@ fotos</string>
+			<key>zero</key>
+			<string>Carregant %@ fotos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ fotos per carregar</string>
+			<key>many</key>
+			<string>%@ fotos per carregar</string>
+			<key>one</key>
+			<string>%@ foto per carregar</string>
+			<key>other</key>
+			<string>%@ fotos per carregar</string>
+			<key>two</key>
+			<string>%@ fotos per carregar</string>
+			<key>zero</key>
+			<string>%@ fotos per carregar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Carregant %@ vídeos</string>
+			<key>many</key>
+			<string>Carregant %@ vídeos</string>
+			<key>one</key>
+			<string>Carregant %@ vídeo</string>
+			<key>other</key>
+			<string>Carregant %@ vídeos</string>
+			<key>two</key>
+			<string>Carregant %@ vídeos</string>
+			<key>zero</key>
+			<string>Carregant %@ vídeos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ vídeos per carregar</string>
+			<key>many</key>
+			<string>%@ vídeos per carregar</string>
+			<key>one</key>
+			<string>%@ vídeo per carregar</string>
+			<key>other</key>
+			<string>%@ vídeos per carregar</string>
+			<key>two</key>
+			<string>%@ vídeos per carregar</string>
+			<key>zero</key>
+			<string>%@ vídeos per carregar</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>

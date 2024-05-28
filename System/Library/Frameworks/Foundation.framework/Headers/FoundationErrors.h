@@ -75,6 +75,14 @@ enum {
     NSUbiquitousFileUbiquityServerNotAvailable NS_ENUM_AVAILABLE(10_9, 7_0) = 4355, // NSURLUbiquitousItemDownloadingErrorKey and NSURLUbiquitousItemUploadingErrorKey contain an error with this code when connecting to the iCloud servers failed
 
     NSUbiquitousFileErrorMinimum NS_ENUM_AVAILABLE(10_9, 7_0) = 4352,
-    NSUbiquitousFileErrorMaximum NS_ENUM_AVAILABLE(10_9, 7_0) = 4607
+    NSUbiquitousFileErrorMaximum NS_ENUM_AVAILABLE(10_9, 7_0) = 4607,
+
+    NSUserActivityHandoffFailedError NS_ENUM_AVAILABLE(10_10, 8_0) = 4608,	// The data for the user activity was not available (e.g. if the remote device became unavailable.)
+    NSUserActivityConnectionUnavailableError NS_ENUM_AVAILABLE(10_10, 8_0) = 4609,  // The user activity could not be continued because a required connection was not available
+    NSUserActivityRemoteApplicationTimedOutError NS_ENUM_AVAILABLE(10_10, 8_0) = 4610, // The remote application failed to send data in time
+    NSUserActivityHandoffUserInfoTooLargeError NS_ENUM_AVAILABLE(10_10, 8_0) = 4611, // The NSUserActivity userInfo dictionary was too large to receive
+
+    NSUserActivityErrorMinimum NS_ENUM_AVAILABLE(10_10, 8_0) = 4608,
+    NSUserActivityErrorMaximum NS_ENUM_AVAILABLE(10_10, 8_0) = 4863,
 };
 

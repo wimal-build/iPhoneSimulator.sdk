@@ -128,6 +128,150 @@
 			<string>%d βίντεο θα αφαιρεθούν</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Λήψη %@ στοιχείων</string>
+			<key>many</key>
+			<string>Λήψη %@ στοιχείων</string>
+			<key>one</key>
+			<string>Λήψη %@ στοιχείου</string>
+			<key>other</key>
+			<string>Λήψη %@ στοιχείων</string>
+			<key>two</key>
+			<string>Λήψη %@ στοιχείων</string>
+			<key>zero</key>
+			<string>Λήψη %@ στοιχείων</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ στοιχεία για λήψη</string>
+			<key>many</key>
+			<string>%@ στοιχεία για λήψη</string>
+			<key>one</key>
+			<string>%@ στοιχείο για λήψη</string>
+			<key>other</key>
+			<string>%@ στοιχεία για λήψη</string>
+			<key>two</key>
+			<string>%@ στοιχεία για λήψη</string>
+			<key>zero</key>
+			<string>%@ στοιχεία για λήψη</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Λήψη %@ φωτογραφιών</string>
+			<key>many</key>
+			<string>Λήψη %@ φωτογραφιών</string>
+			<key>one</key>
+			<string>Λήψη %@ φωτογραφίας</string>
+			<key>other</key>
+			<string>Λήψη %@ φωτογραφιών</string>
+			<key>two</key>
+			<string>Λήψη %@ φωτογραφιών</string>
+			<key>zero</key>
+			<string>Λήψη %@ φωτογραφιών</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ φωτογραφίες για λήψη</string>
+			<key>many</key>
+			<string>%@ φωτογραφίες για λήψη</string>
+			<key>one</key>
+			<string>%@ φωτογραφία για λήψη</string>
+			<key>other</key>
+			<string>%@ φωτογραφίες για λήψη</string>
+			<key>two</key>
+			<string>%@ φωτογραφίες για λήψη</string>
+			<key>zero</key>
+			<string>%@ φωτογραφίες για λήψη</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Λήψη %@ βίντεο</string>
+			<key>many</key>
+			<string>Λήψη %@ βίντεο</string>
+			<key>one</key>
+			<string>Λήψη %@ βίντεο</string>
+			<key>other</key>
+			<string>Λήψη %@ βίντεο</string>
+			<key>two</key>
+			<string>Λήψη %@ βίντεο</string>
+			<key>zero</key>
+			<string>Λήψη %@ βίντεο</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ βίντεο για λήψη</string>
+			<key>many</key>
+			<string>%@ βίντεο για λήψη</string>
+			<key>one</key>
+			<string>%@ βίντεο για λήψη</string>
+			<key>other</key>
+			<string>%@ βίντεο για λήψη</string>
+			<key>two</key>
+			<string>%@ βίντεο για λήψη</string>
+			<key>zero</key>
+			<string>%@ βίντεο για λήψη</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -198,6 +342,150 @@
 			<string>%d ημέρες</string>
 			<key>zero</key>
 			<string>%d ημέρες</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Αποστολή %@ στοιχείων</string>
+			<key>many</key>
+			<string>Αποστολή %@ στοιχείων</string>
+			<key>one</key>
+			<string>Αποστολή %@ στοιχείου</string>
+			<key>other</key>
+			<string>Αποστολή %@ στοιχείων</string>
+			<key>two</key>
+			<string>Αποστολή %@ στοιχείων</string>
+			<key>zero</key>
+			<string>Αποστολή %@ στοιχείων</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ στοιχεία για αποστολή</string>
+			<key>many</key>
+			<string>%@ στοιχεία για αποστολή</string>
+			<key>one</key>
+			<string>%@ στοιχείο για αποστολή</string>
+			<key>other</key>
+			<string>%@ στοιχεία για αποστολή</string>
+			<key>two</key>
+			<string>%@ στοιχεία για αποστολή</string>
+			<key>zero</key>
+			<string>%@ στοιχεία για αποστολή</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Αποστολή %@ φωτογραφιών</string>
+			<key>many</key>
+			<string>Αποστολή %@ φωτογραφιών</string>
+			<key>one</key>
+			<string>Αποστολή %@ φωτογραφίας</string>
+			<key>other</key>
+			<string>Αποστολή %@ φωτογραφιών</string>
+			<key>two</key>
+			<string>Αποστολή %@ φωτογραφιών</string>
+			<key>zero</key>
+			<string>Αποστολή %@ φωτογραφιών</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ φωτογραφίες για αποστολή</string>
+			<key>many</key>
+			<string>%@ φωτογραφίες για αποστολή</string>
+			<key>one</key>
+			<string>%@ φωτογραφία για αποστολή</string>
+			<key>other</key>
+			<string>%@ φωτογραφίες για αποστολή</string>
+			<key>two</key>
+			<string>%@ φωτογραφίες για αποστολή</string>
+			<key>zero</key>
+			<string>%@ φωτογραφίες για αποστολή</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>Αποστολή %@ βίντεο</string>
+			<key>many</key>
+			<string>Αποστολή %@ βίντεο</string>
+			<key>one</key>
+			<string>Αποστολή %@ βίντεο</string>
+			<key>other</key>
+			<string>Αποστολή %@ βίντεο</string>
+			<key>two</key>
+			<string>Αποστολή %@ βίντεο</string>
+			<key>zero</key>
+			<string>Αποστολή %@ βίντεο</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ βίντεο για αποστολή</string>
+			<key>many</key>
+			<string>%@ βίντεο για αποστολή</string>
+			<key>one</key>
+			<string>%@ βίντεο για αποστολή</string>
+			<key>other</key>
+			<string>%@ βίντεο για αποστολή</string>
+			<key>two</key>
+			<string>%@ βίντεο για αποστολή</string>
+			<key>zero</key>
+			<string>%@ βίντεο για αποστολή</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>

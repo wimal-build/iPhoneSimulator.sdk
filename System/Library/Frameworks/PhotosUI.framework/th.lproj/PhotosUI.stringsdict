@@ -128,6 +128,150 @@
 			<string>จะเอาวิดีโอ %d รายการออก</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>กำลังดาวน์โหลด %@ รายการ</string>
+			<key>many</key>
+			<string>กำลังดาวน์โหลด %@ รายการ</string>
+			<key>one</key>
+			<string>กำลังดาวน์โหลด %@ รายการ</string>
+			<key>other</key>
+			<string>กำลังดาวน์โหลด %@ รายการ</string>
+			<key>two</key>
+			<string>กำลังดาวน์โหลด %@ รายการ</string>
+			<key>zero</key>
+			<string>กำลังดาวน์โหลด %@ รายการ</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ รายการที่จะดาวน์โหลด</string>
+			<key>many</key>
+			<string>%@ รายการที่จะดาวน์โหลด</string>
+			<key>one</key>
+			<string>%@ รายการที่จะดาวน์โหลด</string>
+			<key>other</key>
+			<string>%@ รายการที่จะดาวน์โหลด</string>
+			<key>two</key>
+			<string>%@ รายการที่จะดาวน์โหลด</string>
+			<key>zero</key>
+			<string>%@ รายการที่จะดาวน์โหลด</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>กำลังดาวน์โหลดรูปภาพ %@ รูป</string>
+			<key>many</key>
+			<string>กำลังดาวน์โหลดรูปภาพ %@ รูป</string>
+			<key>one</key>
+			<string>กำลังดาวน์โหลดรูปภาพ %@ รูป</string>
+			<key>other</key>
+			<string>กำลังดาวน์โหลดรูปภาพ %@ รูป</string>
+			<key>two</key>
+			<string>กำลังดาวน์โหลดรูปภาพ %@ รูป</string>
+			<key>zero</key>
+			<string>กำลังดาวน์โหลดรูปภาพ %@ รูป</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>รูปภาพ %@ รูปที่จะดาวน์โหลด</string>
+			<key>many</key>
+			<string>รูปภาพ %@ รูปที่จะดาวน์โหลด</string>
+			<key>one</key>
+			<string>รูปภาพ %@ รูปที่จะดาวน์โหลด</string>
+			<key>other</key>
+			<string>รูปภาพ %@ รูปที่จะดาวน์โหลด</string>
+			<key>two</key>
+			<string>รูปภาพ %@ รูปที่จะดาวน์โหลด</string>
+			<key>zero</key>
+			<string>รูปภาพ %@ รูปที่จะดาวน์โหลด</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>กำลังดาวน์โหลดวิดีโอ %@ รายการ</string>
+			<key>many</key>
+			<string>กำลังดาวน์โหลดวิดีโอ %@ รายการ</string>
+			<key>one</key>
+			<string>กำลังดาวน์โหลดวิดีโอ %@ รายการ</string>
+			<key>other</key>
+			<string>กำลังดาวน์โหลดวิดีโอ %@ รายการ</string>
+			<key>two</key>
+			<string>กำลังดาวน์โหลดวิดีโอ %@ รายการ</string>
+			<key>zero</key>
+			<string>กำลังดาวน์โหลดวิดีโอ %@ รายการ</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>วิดีโอ %@ รายการที่จะดาวน์โหลด</string>
+			<key>many</key>
+			<string>วิดีโอ %@ รายการที่จะดาวน์โหลด</string>
+			<key>one</key>
+			<string>วิดีโอ %@ รายการที่จะดาวน์โหลด</string>
+			<key>other</key>
+			<string>วิดีโอ %@ รายการที่จะดาวน์โหลด</string>
+			<key>two</key>
+			<string>วิดีโอ %@ รายการที่จะดาวน์โหลด</string>
+			<key>zero</key>
+			<string>วิดีโอ %@ รายการที่จะดาวน์โหลด</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -198,6 +342,150 @@
 			<string>ในอีก %d วัน</string>
 			<key>zero</key>
 			<string>ในอีก %d วัน</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>กำลังอัปโหลด %@ รายการ</string>
+			<key>many</key>
+			<string>กำลังอัปโหลด %@ รายการ</string>
+			<key>one</key>
+			<string>กำลังอัปโหลด %@ รายการ</string>
+			<key>other</key>
+			<string>กำลังอัปโหลด %@ รายการ</string>
+			<key>two</key>
+			<string>กำลังอัปโหลด %@ รายการ</string>
+			<key>zero</key>
+			<string>กำลังอัปโหลด %@ รายการ</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>%@ รายการที่จะอัปโหลด</string>
+			<key>many</key>
+			<string>%@ รายการที่จะอัปโหลด</string>
+			<key>one</key>
+			<string>%@ รายการที่จะอัปโหลด</string>
+			<key>other</key>
+			<string>%@ รายการที่จะอัปโหลด</string>
+			<key>two</key>
+			<string>%@ รายการที่จะอัปโหลด</string>
+			<key>zero</key>
+			<string>%@ รายการที่จะอัปโหลด</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>กำลังอัปโหลดรูปภาพ %@ รูป</string>
+			<key>many</key>
+			<string>กำลังอัปโหลดรูปภาพ %@ รูป</string>
+			<key>one</key>
+			<string>กำลังอัปโหลดรูปภาพ %@ รูป</string>
+			<key>other</key>
+			<string>กำลังอัปโหลดรูปภาพ %@ รูป</string>
+			<key>two</key>
+			<string>กำลังอัปโหลดรูปภาพ %@ รูป</string>
+			<key>zero</key>
+			<string>กำลังอัปโหลดรูปภาพ %@ รูป</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>รูปภาพ %@ รูปที่จะอัปโหลด</string>
+			<key>many</key>
+			<string>รูปภาพ %@ รูปที่จะอัปโหลด</string>
+			<key>one</key>
+			<string>รูปภาพ %@ รูปที่จะอัปโหลด</string>
+			<key>other</key>
+			<string>รูปภาพ %@ รูปที่จะอัปโหลด</string>
+			<key>two</key>
+			<string>รูปภาพ %@ รูปที่จะอัปโหลด</string>
+			<key>zero</key>
+			<string>รูปภาพ %@ รูปที่จะอัปโหลด</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>กำลังอัปโหลดวิดีโอ %@ รายการ</string>
+			<key>many</key>
+			<string>กำลังอัปโหลดวิดีโอ %@ รายการ</string>
+			<key>one</key>
+			<string>กำลังอัปโหลดวิดีโอ %@ รายการ</string>
+			<key>other</key>
+			<string>กำลังอัปโหลดวิดีโอ %@ รายการ</string>
+			<key>two</key>
+			<string>กำลังอัปโหลดวิดีโอ %@ รายการ</string>
+			<key>zero</key>
+			<string>กำลังอัปโหลดวิดีโอ %@ รายการ</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>วิดีโอ %@ รายการที่จะอัปโหลด</string>
+			<key>many</key>
+			<string>วิดีโอ %@ รายการที่จะอัปโหลด</string>
+			<key>one</key>
+			<string>วิดีโอ %@ รายการที่จะอัปโหลด</string>
+			<key>other</key>
+			<string>วิดีโอ %@ รายการที่จะอัปโหลด</string>
+			<key>two</key>
+			<string>วิดีโอ %@ รายการที่จะอัปโหลด</string>
+			<key>zero</key>
+			<string>วิดีโอ %@ รายการที่จะอัปโหลด</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>

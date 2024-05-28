@@ -609,6 +609,8 @@ AVF_EXPORT NSString *const AVAudioSessionOrientationTop					NS_AVAILABLE_IOS(7_0
 AVF_EXPORT NSString *const AVAudioSessionOrientationBottom				NS_AVAILABLE_IOS(7_0);
 AVF_EXPORT NSString *const AVAudioSessionOrientationFront				NS_AVAILABLE_IOS(7_0);
 AVF_EXPORT NSString *const AVAudioSessionOrientationBack				NS_AVAILABLE_IOS(7_0);
+AVF_EXPORT NSString *const AVAudioSessionOrientationLeft				NS_AVAILABLE_IOS(8_0);
+AVF_EXPORT NSString *const AVAudioSessionOrientationRight				NS_AVAILABLE_IOS(8_0);
 
 /* The following represent the possible polar patterns for a data source on an iOS device. */
 AVF_EXPORT NSString *const AVAudioSessionPolarPatternOmnidirectional	NS_AVAILABLE_IOS(7_0);

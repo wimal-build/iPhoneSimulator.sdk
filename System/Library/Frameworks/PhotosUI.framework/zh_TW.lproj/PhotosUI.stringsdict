@@ -135,6 +135,150 @@
 			<string>會移除 %d 部影片</string>
 		</dict>
 	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>正在下載 %@ 個項目</string>
+			<key>many</key>
+			<string>正在下載 %@ 個項目</string>
+			<key>one</key>
+			<string>正在下載 %@ 個項目</string>
+			<key>other</key>
+			<string>正在下載 %@ 個項目</string>
+			<key>two</key>
+			<string>正在下載 %@ 個項目</string>
+			<key>zero</key>
+			<string>正在下載 %@ 個項目</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_items@</string>
+		<key>downloading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>還有 %@ 個項目可下載</string>
+			<key>many</key>
+			<string>還有 %@ 個項目可下載</string>
+			<key>one</key>
+			<string>還有 %@ 個項目可下載</string>
+			<key>other</key>
+			<string>還有 %@ 個項目可下載</string>
+			<key>two</key>
+			<string>還有 %@ 個項目可下載</string>
+			<key>zero</key>
+			<string>還有 %@ 個項目可下載</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>正在下載 %@ 張照片</string>
+			<key>many</key>
+			<string>正在下載 %@ 張照片</string>
+			<key>one</key>
+			<string>正在下載 %@ 張照片</string>
+			<key>other</key>
+			<string>正在下載 %@ 張照片</string>
+			<key>two</key>
+			<string>正在下載 %@ 張照片</string>
+			<key>zero</key>
+			<string>正在下載 %@ 張照片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_photos@</string>
+		<key>downloading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>還有 %@ 張照片可下載</string>
+			<key>many</key>
+			<string>還有 %@ 張照片可下載</string>
+			<key>one</key>
+			<string>還有 %@ 張照片可下載</string>
+			<key>other</key>
+			<string>還有 %@ 張照片可下載</string>
+			<key>two</key>
+			<string>還有 %@ 張照片可下載</string>
+			<key>zero</key>
+			<string>還有 %@ 張照片可下載</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>正在下載 %@ 部影片</string>
+			<key>many</key>
+			<string>正在下載 %@ 部影片</string>
+			<key>one</key>
+			<string>正在下載 %@ 部影片</string>
+			<key>other</key>
+			<string>正在下載 %@ 部影片</string>
+			<key>two</key>
+			<string>正在下載 %@ 部影片</string>
+			<key>zero</key>
+			<string>正在下載 %@ 部影片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DOWNLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@downloading_n_videos@</string>
+		<key>downloading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>還有 %@ 部影片可下載</string>
+			<key>many</key>
+			<string>還有 %@ 部影片可下載</string>
+			<key>one</key>
+			<string>還有 %@ 部影片可下載</string>
+			<key>other</key>
+			<string>還有 %@ 部影片可下載</string>
+			<key>two</key>
+			<string>還有 %@ 部影片可下載</string>
+			<key>zero</key>
+			<string>還有 %@ 部影片可下載</string>
+		</dict>
+	</dict>
 	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -212,6 +356,150 @@
 			<string>%d 天</string>
 			<key>zero</key>
 			<string>%d 天</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>正在上傳 %@ 個項目</string>
+			<key>many</key>
+			<string>正在上傳 %@ 個項目</string>
+			<key>one</key>
+			<string>正在上傳 %@ 個項目</string>
+			<key>other</key>
+			<string>正在上傳 %@ 個項目</string>
+			<key>two</key>
+			<string>正在上傳 %@ 個項目</string>
+			<key>zero</key>
+			<string>正在上傳 %@ 個項目</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_ITEMS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_items@</string>
+		<key>uploading_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>還有 %@ 個項目可上傳</string>
+			<key>many</key>
+			<string>還有 %@ 個項目可上傳</string>
+			<key>one</key>
+			<string>還有 %@ 個項目可上傳</string>
+			<key>other</key>
+			<string>還有 %@ 個項目可上傳</string>
+			<key>two</key>
+			<string>還有 %@ 個項目可上傳</string>
+			<key>zero</key>
+			<string>還有 %@ 個項目可上傳</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>正在上傳 %@ 張照片</string>
+			<key>many</key>
+			<string>正在上傳 %@ 張照片</string>
+			<key>one</key>
+			<string>正在上傳 %@ 張照片</string>
+			<key>other</key>
+			<string>正在上傳 %@ 張照片</string>
+			<key>two</key>
+			<string>正在上傳 %@ 張照片</string>
+			<key>zero</key>
+			<string>正在上傳 %@ 張照片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_PHOTOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_photos@</string>
+		<key>uploading_n_photos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>還有 %@ 張照片可上傳</string>
+			<key>many</key>
+			<string>還有 %@ 張照片可上傳</string>
+			<key>one</key>
+			<string>還有 %@ 張照片可上傳</string>
+			<key>other</key>
+			<string>還有 %@ 張照片可上傳</string>
+			<key>two</key>
+			<string>還有 %@ 張照片可上傳</string>
+			<key>zero</key>
+			<string>還有 %@ 張照片可上傳</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>正在上傳 %@ 部影片</string>
+			<key>many</key>
+			<string>正在上傳 %@ 部影片</string>
+			<key>one</key>
+			<string>正在上傳 %@ 部影片</string>
+			<key>other</key>
+			<string>正在上傳 %@ 部影片</string>
+			<key>two</key>
+			<string>正在上傳 %@ 部影片</string>
+			<key>zero</key>
+			<string>正在上傳 %@ 部影片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_UPLOADING_N_VIDEOS_WAITING</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@uploading_n_videos@</string>
+		<key>uploading_n_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>@</string>
+			<key>few</key>
+			<string>還有 %@ 部影片可上傳</string>
+			<key>many</key>
+			<string>還有 %@ 部影片可上傳</string>
+			<key>one</key>
+			<string>還有 %@ 部影片可上傳</string>
+			<key>other</key>
+			<string>還有 %@ 部影片可上傳</string>
+			<key>two</key>
+			<string>還有 %@ 部影片可上傳</string>
+			<key>zero</key>
+			<string>還有 %@ 部影片可上傳</string>
 		</dict>
 	</dict>
 	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
