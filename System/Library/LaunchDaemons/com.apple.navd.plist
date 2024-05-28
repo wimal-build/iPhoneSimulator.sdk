@@ -14,11 +14,15 @@
 	<string>com.apple.navd</string>
 	<key>MachServices</key>
 	<dict>
+		<key>com.apple.navigationService</key>
+		<true/>
 		<key>com.apple.navd</key>
 		<true/>
 		<key>com.apple.navigationListener</key>
 		<true/>
 		<key>com.apple.navigationServer</key>
+		<true/>
+		<key>com.apple.navd.recentLocationsService</key>
 		<true/>
 	</dict>
 	<key>ProgramArguments</key>

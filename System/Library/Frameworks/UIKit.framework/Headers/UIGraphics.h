@@ -2,7 +2,7 @@
 //  UIGraphics.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -27,9 +27,11 @@ UIKIT_EXTERN void UIRectClip(CGRect rect);
 
 // UIImage context
 
+// The following methods will only return a 8-bit per channel context in the DeviceRGB color space.
+// Any new bitmap drawing code is encouraged to use UIGraphicsImageRenderer in leiu of this API.
 UIKIT_EXTERN void     UIGraphicsBeginImageContext(CGSize size);
 UIKIT_EXTERN void     UIGraphicsBeginImageContextWithOptions(CGSize size, BOOL opaque, CGFloat scale) NS_AVAILABLE_IOS(4_0);
-UIKIT_EXTERN UIImage* __null_unspecified UIGraphicsGetImageFromCurrentImageContext(void);
+UIKIT_EXTERN UIImage* __nullable UIGraphicsGetImageFromCurrentImageContext(void);
 UIKIT_EXTERN void     UIGraphicsEndImageContext(void); 
 
 // PDF context

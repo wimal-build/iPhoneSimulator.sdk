@@ -82,7 +82,7 @@ CV_EXPORT CVReturn CVOpenGLESTextureCacheCreate(
     @param      sourceImage The CVImageBuffer that you want to create a CVOpenGLESTexture from.
     @param      textureAttributes A CFDictionaryRef containing attributes to be used for creating the CVOpenGLESTexture objects.  May be NULL.
     @param      target Specifies the target texture.  GL_TEXTURE_2D and GL_RENDERBUFFER are the only targets currently supported.
-    @param      internalFormat Specifies the number of color components in the texture.  Examples are GL_RGBA, GL_LUMINANCE, GL_RGBA8_OES, GL_RED, and GL_RG.
+    @param      internalFormat Specifies the number of color components in the texture.  Examples are GL_RGBA, GL_LUMINANCE, GL_RGBA8_OES, GL_RG, and GL_RED (NOTE: On GLES3 use GL_R8 instead of GL_RED).
     @param      width Specifies the width of the texture image.
     @param      height Specifies the height of the texture image.
     @param      format Specifies the format of the pixel data.  Examples are GL_RGBA and GL_LUMINANCE.

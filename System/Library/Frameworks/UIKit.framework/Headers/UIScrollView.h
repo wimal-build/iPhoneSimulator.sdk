@@ -2,7 +2,7 @@
 //  UIScrollView.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,6 +10,7 @@
 #import <UIKit/UIView.h>
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UIRefreshControl.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -104,6 +105,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding>
 
 // Use these accessors to configure the scroll view's built-in gesture recognizers.
 // Do not change the gestures' delegates or override the getters for these properties.
+
+// Change `panGestureRecognizer.allowedTouchTypes` to limit scrolling to a particular set of touch types.
 @property(nonatomic, readonly) UIPanGestureRecognizer *panGestureRecognizer NS_AVAILABLE_IOS(5_0);
 // `pinchGestureRecognizer` will return nil when zooming is disabled.
 @property(nullable, nonatomic, readonly) UIPinchGestureRecognizer *pinchGestureRecognizer NS_AVAILABLE_IOS(5_0);
@@ -111,6 +114,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding>
 @property(nonatomic, readonly) UIGestureRecognizer *directionalPressGestureRecognizer UIKIT_AVAILABLE_TVOS_ONLY(9_0);
 
 @property(nonatomic) UIScrollViewKeyboardDismissMode keyboardDismissMode NS_AVAILABLE_IOS(7_0); // default is UIScrollViewKeyboardDismissModeNone
+
+@property (nonatomic, strong, nullable) UIRefreshControl *refreshControl NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
 
 @end
 

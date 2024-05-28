@@ -1,13 +1,15 @@
 //
 //  SCNParametricGeometry.h
 //
-//  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2016 Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <SceneKit/SCNGeometry.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class UIFont;
+@class UIBezierPath;
 @class SCNGeometry;
 
 /*!
@@ -15,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract SCNPlane represents a rectangle with controllable width and height. The plane has one visible side.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNPlane : SCNGeometry
 
 /*!
@@ -59,14 +60,14 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract The corner radius. Animatable.
  @discussion If the value is strictly less than 0, the geometry is empty. The default value is 0.
  */
-@property(nonatomic) CGFloat cornerRadius NS_AVAILABLE(10_9, 8_0);
+@property(nonatomic) CGFloat cornerRadius API_AVAILABLE(macosx(10.9));
 
 /*!
  @property cornerSegmentCount
  @abstract The number of subdivisions for the rounded corners. Animatable.
  @discussion If the value is less than 1, the behavior is undefined. The default value is 10.
  */
-@property(nonatomic) NSInteger cornerSegmentCount NS_AVAILABLE(10_9, 8_0);
+@property(nonatomic) NSInteger cornerSegmentCount API_AVAILABLE(macosx(10.9));
 
 @end
 
@@ -76,7 +77,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNBox represents a box with rectangular sides and optional chamfers.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNBox : SCNGeometry
 
 /*!
@@ -153,7 +153,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNPyramid represents a right pyramid with a rectangular base.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNPyramid : SCNGeometry
 
 /*!
@@ -215,7 +214,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNSphere represents a sphere with controllable radius
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNSphere : SCNGeometry
 
 /*!
@@ -254,7 +252,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNCylinder represents a cylinder with controllable height and radius.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNCylinder : SCNGeometry
 
 /*!
@@ -301,7 +298,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNCone represents a cone with controllable height, top radius and bottom radius.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNCone : SCNGeometry
 
 /*!
@@ -356,7 +352,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNTube represents a tube with controllable height, inner radius and outer radius.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNTube : SCNGeometry
 
 /*!
@@ -411,7 +406,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNCapsule represents a capsule with controllable height and cap radius.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNCapsule : SCNGeometry
 
 /*!
@@ -465,7 +459,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNTorus represents a torus with controllable ring radius and pipe radius.
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNTorus : SCNGeometry
 
 /*!
@@ -512,7 +505,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNFloor represents an infinite plane geometry. 
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNFloor : SCNGeometry 
 
 /*!
@@ -544,11 +536,33 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
 @property(nonatomic) CGFloat reflectionFalloffEnd;
 
 /*!
+ @property reflectionCategoryBitMask
+ @abstract Determines the node categories to reflect. Defaults to all bits set.
+ */
+@property(nonatomic) NSUInteger reflectionCategoryBitMask API_AVAILABLE(macosx(10.12), ios(10.0), tvos(10.0));
+
+/*!
+ @property width
+ @abstract The floor extent along the X axis. Animatable.
+ @discussion If the value is equal to 0, the floor is infinite on the X axis. The default value is 0.
+ */
+@property(nonatomic) CGFloat width;
+
+/*!
+ @property length
+ @abstract The floor extent along the Z axis. Animatable.
+ @discussion If the value is equal to 0, the floor is infinite on the Z axis. The default value is 0.
+ */
+@property(nonatomic) CGFloat length;
+
+
+/*!
  @property reflectionResolutionScaleFactor
  @abstract Specifies the resolution scale factor of the buffer used to render the reflection.
  @discussion Defaults to 0.5.
+#endif
 */
-@property(nonatomic) CGFloat reflectionResolutionScaleFactor NS_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat reflectionResolutionScaleFactor API_AVAILABLE(macosx(10.10));
 
 @end
 
@@ -557,7 +571,6 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract SCNText represents a block of text that has been extruded
  */
 
-NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNText : SCNGeometry 
 
 /*!
@@ -636,7 +649,7 @@ NS_CLASS_AVAILABLE(10_8, 8_0)
  @abstract Specifies the accuracy (or smoothness) with which fonts are rendered.
  @discussion Smaller numbers give smoother curves at the expense of more computation and heavier geometries in terms of vertices. The default value is 1.0, which yields smooth curves.
  */
-@property(nonatomic) CGFloat flatness NS_AVAILABLE(10_9, 8_0);
+@property(nonatomic) CGFloat flatness API_AVAILABLE(macosx(10.9));
 
 @end
 
@@ -649,9 +662,9 @@ typedef NS_ENUM(NSInteger, SCNChamferMode) {
     SCNChamferModeBoth,
     SCNChamferModeFront,
     SCNChamferModeBack
-} NS_ENUM_AVAILABLE(10_9, 8_0);
+} API_AVAILABLE(macosx(10.9));
 
-NS_CLASS_AVAILABLE(10_9, 8_0)
+API_AVAILABLE(macosx(10.9))
 @interface SCNShape : SCNGeometry
 
 /*!

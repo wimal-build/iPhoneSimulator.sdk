@@ -79,7 +79,7 @@ typedef NS_ENUM(NSInteger, ADError) {
     ADErrorAssetLoadFailure = 8,
 #endif
 
-} NS_ENUM_AVAILABLE_IOS(4_0);
+} NS_ENUM_DEPRECATED_IOS(4_0, 10_0);
 
 /*!
  * @enum ADAdType
@@ -99,7 +99,7 @@ typedef NS_ENUM(NSInteger, ADError) {
 typedef NS_ENUM(NSInteger, ADAdType) {
     ADAdTypeBanner,
     ADAdTypeMediumRectangle
-} NS_ENUM_AVAILABLE_IOS(6_0);
+} NS_ENUM_DEPRECATED_IOS(6_0, 10_0);
 
 @protocol ADBannerViewDelegate;
 
@@ -117,7 +117,7 @@ typedef NS_ENUM(NSInteger, ADAdType) {
  * managing the banner view must be correctly configured to ensure banner action
  * presentation works correctly.
  */
-NS_CLASS_AVAILABLE_IOS(4_0) @interface ADBannerView : UIView
+NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
 
 /*!
  * @method initWithAdType:

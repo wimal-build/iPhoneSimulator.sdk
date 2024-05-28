@@ -8,7 +8,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dzheJqTxvjlonPlGCsvA3Hw2B4c=
+			detOMp6KitBBk9plRNWNaINGPqk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kUFTz8B/z2BZIi3xUTntQbd8Ifo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -22,6 +31,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>English.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			peG17VJoNNhnur7kEDQzv0QQNV0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -31,18 +49,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g71koQbo9OAkTrmb8d8v8k031L4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vlYAbyUb+FBtFfjsaB5LtHL7Cdw=
+			zrl8KUsL6WKjqeBgLITIZVmXw2k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yIoM7+EpuQkHyQ2cJY1vG4cEbhM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		Mn6uEaeF0MJohObH3VYhSbxkRpw=
+		rniAzvHh6Su062v0HqM8qqoaV+Y=
 		</data>
 		<key>InternalConfig.plist</key>
 		<data>
@@ -57,6 +93,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Italian.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P6NURKg8DVk5Y4jQWSLRF/uFLQ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Japanese.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -66,6 +111,71 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Japanese.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dq3So8B9CtaHRCFawpILl/2WAY8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PhonemeMaps/de-DE.plist</key>
+		<data>
+		zgs/i3pbXlxsqx3lFh42Ievw5YE=
+		</data>
+		<key>PhonemeMaps/en-AU.plist</key>
+		<data>
+		dNrvUOXPSC+sSV+43zqmFBMpOXw=
+		</data>
+		<key>PhonemeMaps/en-GB.plist</key>
+		<data>
+		Vq5DvDlXrm1QYF7CvpJf2MAGT1s=
+		</data>
+		<key>PhonemeMaps/en-US.plist</key>
+		<data>
+		ovdEp0xGZIhPJVC/mUJHYZYo6Ps=
+		</data>
+		<key>PhonemeMaps/es-ES.plist</key>
+		<data>
+		cTZNXIWRsorXS3zSwVXALbH3pYg=
+		</data>
+		<key>PhonemeMaps/es-MX.plist</key>
+		<data>
+		JtYkbrOXGf4OV4bQ6fe4KbQJL3w=
+		</data>
+		<key>PhonemeMaps/fr-CA.plist</key>
+		<data>
+		Gafvim7BgPEAqdMvMWmuBaKGdCI=
+		</data>
+		<key>PhonemeMaps/fr-FR.plist</key>
+		<data>
+		9+S5EGPzNMwXSrYhWzHXNAJEuC8=
+		</data>
+		<key>PhonemeMaps/it-IT.plist</key>
+		<data>
+		/GpycZDL/jSBZBA0r0qjZN9U2ws=
+		</data>
+		<key>PhonemeMaps/ja-JP.plist</key>
+		<data>
+		siFIo5HM8k2+gEZoFT6w4vzxqRI=
+		</data>
+		<key>PhonemeMaps/ko-KR.plist</key>
+		<data>
+		lDTZO56DXczWQRRZoBG2xfCbK/s=
+		</data>
+		<key>PhonemeMaps/zh-CN.plist</key>
+		<data>
+		ovBHf5fFjpdiiqP3lBhG/e9xHv4=
+		</data>
+		<key>PhonemeMaps/zh-HK.plist</key>
+		<data>
+		VjZGRX3LE0YrzegVQXUJuXG4Fc0=
+		</data>
+		<key>PhonemeMaps/zh-TW.plist</key>
+		<data>
+		ovBHf5fFjpdiiqP3lBhG/e9xHv4=
+		</data>
 		<key>Spanish.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -75,13 +185,22 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Spanish.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SDUWne/IU+609Dq87IKJ22WbPX0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/Info.plist</key>
 		<data>
-		vuTFwiAGVXMxgTsO2TGzrZnADeM=
+		HOD/2R5aBYXnYbhNLB0bidL3EWM=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		WZDCdK4WX3+ffbqJkfSnLRM7eqE=
+		JbumHx/ay9+H8yb3aEXqhWEbSXg=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -103,7 +222,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature</key>
 		<data>
-		3mJSsc8ivZCwFs+ie2ObX7ji6Y8=
+		uA7VqzTaZ/5/vb67Mpn8FApbj1E=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -447,11 +566,37 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ewG86oF24BpJTYFE1FzT1u3yuQQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>assistant_service</key>
+		<data>
+		pPkQFBygjsZbi0aNF5yyO7k1r7o=
+		</data>
+		<key>assistantd</key>
+		<data>
+		gt/7UDkJH6MQBFVGAz843oSDpJ4=
+		</data>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			+X2WhIc9ircDV9HEMeWncQp0Bck=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rvfLYIIbnH8Au+MGgTNB/WnnyEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -465,11 +610,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7BriZ496AgNq431ymVvZWhi8xhc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			JcSOQAlxIcIrt4+05Dge/+iAD2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlG479MEbWZXKTfsACPpXdmpSMc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -495,11 +658,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jAl2Jnj2HlopDGWIvH4E3bFpf5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			CNdU42lYesFLs0uvsomdm0hawqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			adcO1vfQW11y/rQUr+0QGd/V1+M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -513,11 +694,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EXRWzf1u43fG5invcUzEfsTphKo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es_419.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			4zzNFaGN72lcEnVKvYj035UiigA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SDUWne/IU+609Dq87IKJ22WbPX0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -531,11 +730,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			elGCJBdj7CW6xB6tUHM2V23w4do=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			NxMzxxHy429B/k5Dl9JWytqBP7I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+Thn3CNMAkzqDfzM3i6lgs5Hd9U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -549,11 +766,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2wwyvAgyLYLn3GmY/jzqBbB0VgY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			EoEJ9f9AEBkldBr9KL/kn3z64dY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iPfIJp7lb2nU5Dq/R8GZ1xXAKz4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -567,11 +802,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DRY6157dNnEt1+5iuPJSmDfM8pU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			4umjve9nKBB3W+t6wPEmFzhYC3A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SvsJNxAqcmpe1j6fH19HtZ/244Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -585,6 +838,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dv+YeZ3Z3TnvU2xv0S9COyQtcA4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -594,11 +856,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rqYx+j8u7zX5xgx0rAy9AC1+L/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wdDmbTEkWFKQXZ5e9sV7PlJ9Fa8=
+			4Sx/uwKSgtNaJziMgMjMh0MqSAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bDwwKwyLAa+PxPqbcBrCtUdd5os=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -612,11 +892,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ajmzhLyM0Td3lDlja1+VMIBc5k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Qb08u2yPI1NmJ5m1sN8Oub49dAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vvycnqvuu4tTzdYum+AeyartM8c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -630,6 +928,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L0Z8KgUyhlF5TpUcyOqMo4fuWUw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -639,11 +946,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VSwv6Eif/iYKPL9dw7q9T/9ving=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DWQd527WK3Va4tNXHYbWZi2Xikk=
+			aMuqucKOkjZ+0TX0GGeGdQIj11s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jgB6kfgmh9JuyasVCi+MdNof04E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -657,23 +982,45 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			blULHTmYJnrkDcAAaw6SbpXOmGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>settings_siri@2x.png</key>
 		<data>
-		vgk6DDAYATH9g2OINRB9baZC1ew=
+		N46Q7QxqA9ZXNyonwVXRF4slBLU=
 		</data>
 		<key>settings_siri@3x.png</key>
 		<data>
-		LvEo3ktaAPpLZIgizFdmlmVthKQ=
+		OXYPqzNF67KTfspczwvFsn3INA4=
 		</data>
 		<key>settings_siri~ipad.png</key>
 		<data>
-		CwhvSLqT+cSnSv+jFBFtYGPn50c=
+		0kufXs2T1UZ2SNJ793GtQrfHeQI=
+		</data>
+		<key>siri-osx.icns</key>
+		<data>
+		pSeOaghgHx5o+/UIFDK8LVHHTM0=
 		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IyeKH/yVkMglxG4F3jrocs3G/7o=
+			2Fv9sE7/mPSdli2Onx91qeIFfTw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1fjcQDUZuLceShWNsqKEQNgcGmU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -683,6 +1030,15 @@
 			<key>hash</key>
 			<data>
 			h4MP41azZ7Zgfp+pQd7udEEUcfE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cWQhk282Ts2Ii1Z6jRZvVFutvpw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -705,11 +1061,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qIo3SeueV/2OSY6KdyJHRr1C2Jg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Y0anjDd+6+L8xn3k4D8GHv6mUxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jtYitQWn3liZ7twfKQtvjBsd5rU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -723,11 +1097,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SocbGP8HxE64/e6AewOuFDsffKk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ABvivA+4BiMo8rUNSGCR0pDXZTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DWRbm63A4WfZqcw04GLbIvP4Hik=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -741,6 +1133,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CMjSsUqgIpCvo71tQhXJ6o2ydm0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -750,11 +1151,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MdolMiCmoQVv23hmq4P0gS6uO2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			uOtFSn6lGlMi3APnn0RHmEnIC2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7fG6+tZNvxRbJfBrSOWtQRPVs5I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -766,7 +1185,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dzheJqTxvjlonPlGCsvA3Hw2B4c=
+			detOMp6KitBBk9plRNWNaINGPqk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kUFTz8B/z2BZIi3xUTntQbd8Ifo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -780,6 +1208,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>English.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			peG17VJoNNhnur7kEDQzv0QQNV0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -789,11 +1226,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g71koQbo9OAkTrmb8d8v8k031L4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vlYAbyUb+FBtFfjsaB5LtHL7Cdw=
+			zrl8KUsL6WKjqeBgLITIZVmXw2k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yIoM7+EpuQkHyQ2cJY1vG4cEbhM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -811,6 +1266,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Italian.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P6NURKg8DVk5Y4jQWSLRF/uFLQ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Japanese.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -820,6 +1284,71 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Japanese.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dq3So8B9CtaHRCFawpILl/2WAY8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PhonemeMaps/de-DE.plist</key>
+		<data>
+		zgs/i3pbXlxsqx3lFh42Ievw5YE=
+		</data>
+		<key>PhonemeMaps/en-AU.plist</key>
+		<data>
+		dNrvUOXPSC+sSV+43zqmFBMpOXw=
+		</data>
+		<key>PhonemeMaps/en-GB.plist</key>
+		<data>
+		Vq5DvDlXrm1QYF7CvpJf2MAGT1s=
+		</data>
+		<key>PhonemeMaps/en-US.plist</key>
+		<data>
+		ovdEp0xGZIhPJVC/mUJHYZYo6Ps=
+		</data>
+		<key>PhonemeMaps/es-ES.plist</key>
+		<data>
+		cTZNXIWRsorXS3zSwVXALbH3pYg=
+		</data>
+		<key>PhonemeMaps/es-MX.plist</key>
+		<data>
+		JtYkbrOXGf4OV4bQ6fe4KbQJL3w=
+		</data>
+		<key>PhonemeMaps/fr-CA.plist</key>
+		<data>
+		Gafvim7BgPEAqdMvMWmuBaKGdCI=
+		</data>
+		<key>PhonemeMaps/fr-FR.plist</key>
+		<data>
+		9+S5EGPzNMwXSrYhWzHXNAJEuC8=
+		</data>
+		<key>PhonemeMaps/it-IT.plist</key>
+		<data>
+		/GpycZDL/jSBZBA0r0qjZN9U2ws=
+		</data>
+		<key>PhonemeMaps/ja-JP.plist</key>
+		<data>
+		siFIo5HM8k2+gEZoFT6w4vzxqRI=
+		</data>
+		<key>PhonemeMaps/ko-KR.plist</key>
+		<data>
+		lDTZO56DXczWQRRZoBG2xfCbK/s=
+		</data>
+		<key>PhonemeMaps/zh-CN.plist</key>
+		<data>
+		ovBHf5fFjpdiiqP3lBhG/e9xHv4=
+		</data>
+		<key>PhonemeMaps/zh-HK.plist</key>
+		<data>
+		VjZGRX3LE0YrzegVQXUJuXG4Fc0=
+		</data>
+		<key>PhonemeMaps/zh-TW.plist</key>
+		<data>
+		ovBHf5fFjpdiiqP3lBhG/e9xHv4=
+		</data>
 		<key>Spanish.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -829,13 +1358,22 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Spanish.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SDUWne/IU+609Dq87IKJ22WbPX0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/Info.plist</key>
 		<data>
-		vuTFwiAGVXMxgTsO2TGzrZnADeM=
+		HOD/2R5aBYXnYbhNLB0bidL3EWM=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		WZDCdK4WX3+ffbqJkfSnLRM7eqE=
+		JbumHx/ay9+H8yb3aEXqhWEbSXg=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -857,7 +1395,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature</key>
 		<data>
-		3mJSsc8ivZCwFs+ie2ObX7ji6Y8=
+		uA7VqzTaZ/5/vb67Mpn8FApbj1E=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1201,11 +1739,37 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ewG86oF24BpJTYFE1FzT1u3yuQQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>assistant_service</key>
+		<data>
+		pPkQFBygjsZbi0aNF5yyO7k1r7o=
+		</data>
+		<key>assistantd</key>
+		<data>
+		gt/7UDkJH6MQBFVGAz843oSDpJ4=
+		</data>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			+X2WhIc9ircDV9HEMeWncQp0Bck=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rvfLYIIbnH8Au+MGgTNB/WnnyEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1219,11 +1783,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7BriZ496AgNq431ymVvZWhi8xhc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			JcSOQAlxIcIrt4+05Dge/+iAD2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlG479MEbWZXKTfsACPpXdmpSMc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1249,11 +1831,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jAl2Jnj2HlopDGWIvH4E3bFpf5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			CNdU42lYesFLs0uvsomdm0hawqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			adcO1vfQW11y/rQUr+0QGd/V1+M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1267,11 +1867,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EXRWzf1u43fG5invcUzEfsTphKo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es_419.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			4zzNFaGN72lcEnVKvYj035UiigA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SDUWne/IU+609Dq87IKJ22WbPX0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1285,11 +1903,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			elGCJBdj7CW6xB6tUHM2V23w4do=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			NxMzxxHy429B/k5Dl9JWytqBP7I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+Thn3CNMAkzqDfzM3i6lgs5Hd9U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1303,11 +1939,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2wwyvAgyLYLn3GmY/jzqBbB0VgY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			EoEJ9f9AEBkldBr9KL/kn3z64dY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iPfIJp7lb2nU5Dq/R8GZ1xXAKz4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1321,11 +1975,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DRY6157dNnEt1+5iuPJSmDfM8pU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			4umjve9nKBB3W+t6wPEmFzhYC3A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SvsJNxAqcmpe1j6fH19HtZ/244Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1339,6 +2011,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dv+YeZ3Z3TnvU2xv0S9COyQtcA4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1348,11 +2029,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rqYx+j8u7zX5xgx0rAy9AC1+L/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wdDmbTEkWFKQXZ5e9sV7PlJ9Fa8=
+			4Sx/uwKSgtNaJziMgMjMh0MqSAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bDwwKwyLAa+PxPqbcBrCtUdd5os=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1366,11 +2065,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ajmzhLyM0Td3lDlja1+VMIBc5k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Qb08u2yPI1NmJ5m1sN8Oub49dAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vvycnqvuu4tTzdYum+AeyartM8c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1384,6 +2101,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L0Z8KgUyhlF5TpUcyOqMo4fuWUw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1393,11 +2119,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VSwv6Eif/iYKPL9dw7q9T/9ving=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DWQd527WK3Va4tNXHYbWZi2Xikk=
+			aMuqucKOkjZ+0TX0GGeGdQIj11s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jgB6kfgmh9JuyasVCi+MdNof04E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1411,23 +2155,45 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			blULHTmYJnrkDcAAaw6SbpXOmGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>settings_siri@2x.png</key>
 		<data>
-		vgk6DDAYATH9g2OINRB9baZC1ew=
+		N46Q7QxqA9ZXNyonwVXRF4slBLU=
 		</data>
 		<key>settings_siri@3x.png</key>
 		<data>
-		LvEo3ktaAPpLZIgizFdmlmVthKQ=
+		OXYPqzNF67KTfspczwvFsn3INA4=
 		</data>
 		<key>settings_siri~ipad.png</key>
 		<data>
-		CwhvSLqT+cSnSv+jFBFtYGPn50c=
+		0kufXs2T1UZ2SNJ793GtQrfHeQI=
+		</data>
+		<key>siri-osx.icns</key>
+		<data>
+		pSeOaghgHx5o+/UIFDK8LVHHTM0=
 		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IyeKH/yVkMglxG4F3jrocs3G/7o=
+			2Fv9sE7/mPSdli2Onx91qeIFfTw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1fjcQDUZuLceShWNsqKEQNgcGmU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1437,6 +2203,15 @@
 			<key>hash</key>
 			<data>
 			h4MP41azZ7Zgfp+pQd7udEEUcfE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cWQhk282Ts2Ii1Z6jRZvVFutvpw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1459,11 +2234,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qIo3SeueV/2OSY6KdyJHRr1C2Jg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Y0anjDd+6+L8xn3k4D8GHv6mUxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jtYitQWn3liZ7twfKQtvjBsd5rU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1477,11 +2270,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SocbGP8HxE64/e6AewOuFDsffKk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ABvivA+4BiMo8rUNSGCR0pDXZTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DWRbm63A4WfZqcw04GLbIvP4Hik=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1495,6 +2306,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CMjSsUqgIpCvo71tQhXJ6o2ydm0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1504,11 +2324,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MdolMiCmoQVv23hmq4P0gS6uO2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			uOtFSn6lGlMi3APnn0RHmEnIC2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Ringtone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7fG6+tZNvxRbJfBrSOWtQRPVs5I=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -1,0 +1,7 @@
+-- Migrates traces from v27 to v28
+
+BEGIN TRANSACTION;
+
+ALTER TABLE locations ADD COLUMN lifespan NUMERIC AFTER cl_timestamp;
+
+COMMIT;

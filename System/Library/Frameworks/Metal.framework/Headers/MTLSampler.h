@@ -64,7 +64,31 @@ typedef NS_ENUM(NSUInteger, MTLSamplerAddressMode) {
     MTLSamplerAddressModeRepeat = 2,
     MTLSamplerAddressModeMirrorRepeat = 3,
     MTLSamplerAddressModeClampToZero = 4,
+    /*!
+     @constant MTLSamplerAddressModeClampToBorderColor
+     Clamp to border color returns the value specified by the borderColor variable of the MTLSamplerDesc.
+     */
+    MTLSamplerAddressModeClampToBorderColor NS_AVAILABLE_MAC(10_12) = 5,
 } NS_ENUM_AVAILABLE(10_11, 8_0);
+
+/*!
+ @enum MTLSamplerBorderColor
+ @abstract Specify the color value that will be clamped to when the sampler address mode is MTLSamplerAddressModeClampToBorderColor.
+ 
+ @constant MTLSamplerBorderColorTransparentBlack
+ Transparent black returns {0,0,0,1} for clamped texture values.
+ 
+ @constant MTLSamplerBorderColorOpaqueBlack
+ OpaqueBlack returns {0,0,0,1} for clamped texture values.
+ 
+ @constant MTLSamplerBorderColorOpaqueWhite
+ OpaqueWhite returns {1,1,1,1} for clamped texture values.
+ */
+typedef NS_ENUM(NSUInteger, MTLSamplerBorderColor) {
+    MTLSamplerBorderColorTransparentBlack = 0,  // {0,0,0,0}
+    MTLSamplerBorderColorOpaqueBlack = 1,       // {0,0,0,1}
+    MTLSamplerBorderColorOpaqueWhite = 2,       // {1,1,1,1}
+};
 
 /*!
  @class MTLSamplerDescriptor
@@ -118,6 +142,12 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
  @abstract Set the wrap mode for the R texture coordinate.  The default value is MTLSamplerAddressModeClampToEdge.
  */
 @property (nonatomic) MTLSamplerAddressMode rAddressMode;
+
+/*!
+ @property borderColor
+ @abstract Set the color for the MTLSamplerAddressMode to one of the predefined in the MTLSamplerBorderColor enum.
+ */
+@property (nonatomic) MTLSamplerBorderColor borderColor NS_AVAILABLE_MAC(10_12);
 
 /*!
  @property normalizedCoordinates.

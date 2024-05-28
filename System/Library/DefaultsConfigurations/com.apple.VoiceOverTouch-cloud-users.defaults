@@ -173,7 +173,7 @@
 		<key>NSUserDefaultsKeepUbiquitousValueWhenLoggedOut</key>
 		<true/>
 	</dict>
-	<key>VoiceOverPronunciationDictionary</key>
+	<key>CustomPronunciationSubstitutions</key>
 	<dict>
 		<key>NSUserDefaultsCollectionMergePolicy</key>
 		<string>NSUserDefaultsReplaceCollections</string>
@@ -350,6 +350,17 @@
 		<key>NSUserDefaultsKeepUbiquitousValueWhenLoggedOut</key>
 		<true/>
 	</dict>
+    <key>voiceOverTouchBrailleShouldReverseDots</key>
+    <dict>
+        <key>NSUserDefaultsCollectionMergePolicy</key>
+        <string>NSUserDefaultsReplaceCollections</string>
+        <key>NSUserDefaultsConflictResolutionPolicy</key>
+        <string>NSUserDefaultsKeepCloudOnConflict</string>
+        <key>NSUserDefaultsDefaultValue</key>
+        <string>undefined</string>
+        <key>NSUserDefaultsKeepUbiquitousValueWhenLoggedOut</key>
+        <true/>
+    </dict>
 	<key>voiceOverBrailleTableIdentifier</key>
 	<dict>
 		<key>NSUserDefaultsCollectionMergePolicy</key>

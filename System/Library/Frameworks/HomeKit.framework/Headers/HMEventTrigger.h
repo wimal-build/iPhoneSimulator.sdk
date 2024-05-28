@@ -1,7 +1,9 @@
+//
 // HMEventTrigger.h
 // HomeKit
 //
 // Copyright (c) 2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMTrigger.h>
@@ -17,24 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 /*!
- * @brief Event corresponding to sunrise
- */
-HM_EXTERN NSString * const HMSignificantEventSunrise NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
-
-/*!
- * @brief Event corresponding to sunset
- */
-HM_EXTERN NSString * const HMSignificantEventSunset NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
-
-/*!
  * @brief Specifies the key path for a characteristic in a NSPredicate
  */
-HM_EXTERN NSString * const HMCharacteristicKeyPath NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+HM_EXTERN NSString * const HMCharacteristicKeyPath NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 /*!
  * @brief Specifies the key path for a characteristic value in a NSPredicate
  */
-HM_EXTERN NSString * const HMCharacteristicValueKeyPath NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+HM_EXTERN NSString * const HMCharacteristicValueKeyPath NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 
 /*!
@@ -42,7 +34,7 @@ HM_EXTERN NSString * const HMCharacteristicValueKeyPath NS_AVAILABLE_IOS(9_0) __
  *
  * @discussion This class represents a trigger that is based on events.
  */
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMEventTrigger : HMTrigger
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -62,7 +54,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  */
 - (instancetype)initWithName:(NSString *)name
                       events:(NSArray<HMEvent *> *)events
-                   predicate:(nullable NSPredicate *)predicate NS_DESIGNATED_INITIALIZER __WATCHOS_PROHIBITED;
+                   predicate:(nullable NSPredicate *)predicate __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief The events associated with the trigger.
@@ -155,7 +147,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)addEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief Removes the specified event from the event trigger.
@@ -166,7 +158,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)removeEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief This method replaces the predicate used to evaluate execution of the action sets associated with the trigger.
@@ -177,7 +169,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request,
  *                   error will be nil on success. 
  */
-- (void)updatePredicate:(nullable NSPredicate *)predicate completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updatePredicate:(nullable NSPredicate *)predicate completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 @end
 

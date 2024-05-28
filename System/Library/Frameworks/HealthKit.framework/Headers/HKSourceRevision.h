@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract      Represents a specific revision of an HKSource.
  */
 
-HK_CLASS_AVAILABLE_IOS(9_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(9_0, 2_0)
 @interface HKSourceRevision : NSObject <NSSecureCoding, NSCopying>
 
 /*!
@@ -36,7 +36,7 @@ HK_CLASS_AVAILABLE_IOS(9_0)
  @method        initWithSource:version:
  @abstract      Initializes a new HKSourceRevision with the given source and version.
  */
-- (instancetype)initWithSource:(HKSource *)source version:(NSString *)version;
+- (instancetype)initWithSource:(HKSource *)source version:(nullable NSString *)version;
 
 - (instancetype)init NS_UNAVAILABLE;
 

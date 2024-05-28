@@ -20,6 +20,9 @@
 	<string>Interactive</string>
 	<key>MachServices</key>
 	<dict>
+        <key>com.apple.backboard.hid.focus</key>
+        <true/>
+
 		<key>com.apple.backboard.watchdog</key>
 		<true/>
 		<key>com.apple.CARenderServer</key>

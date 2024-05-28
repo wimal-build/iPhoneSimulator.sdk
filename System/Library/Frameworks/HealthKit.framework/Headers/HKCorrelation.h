@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
                 For example, systolic and diastolic blood pressure readings are typically presented together so these
                 readings should be saved with a correlation of type blood pressure.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKCorrelation : HKSample
 
 @property (readonly) HKCorrelationType *correlationType;
@@ -56,11 +56,11 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 /*!
  @method        correlationWithType:startDate:endDate:objects:device:metadata:
  @abstract      Creates a new HKCorrelation with the given type, start date, end date, objects, and metadata.
- @param         type        The correlation type of the objects set.
- @param         startDate   The start date of the correlation.
- @param         endDate     The end date of the correlation.
- @param         device      The HKDevice that generated the samples (optional).
- @param         metadata    Metadata for the correlation (optional).
+ @param         correlationType The correlation type of the objects set.
+ @param         startDate       The start date of the correlation.
+ @param         endDate         The end date of the correlation.
+ @param         device          The HKDevice that generated the samples (optional).
+ @param         metadata        Metadata for the correlation (optional).
  @discussion    objects must be a set of HKQuantitySamples and HKCategorySamples
  */
 + (instancetype)correlationWithType:(HKCorrelationType *)correlationType
@@ -68,7 +68,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                             endDate:(NSDate *)endDate
                             objects:(NSSet<HKSample *> *)objects
                              device:(nullable HKDevice *)device
-                           metadata:(nullable NSDictionary<NSString *, id> *)metadata NS_AVAILABLE_IOS(9_0);
+                           metadata:(nullable NSDictionary<NSString *, id> *)metadata HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method    objectsForType:

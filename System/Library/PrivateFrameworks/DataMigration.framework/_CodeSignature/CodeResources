@@ -6,47 +6,58 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		KdKMwvAfVc/+78DUjr8qcUEaQ8Y=
-		</data>
-		<key>TextBasedStubs/DataMigration.tbd</key>
-		<data>
-		qO6kJpUlcJOrXbDuLUXMNrhSe0k=
+		x2Nzq7iVCRD3w0oakgDlCxbUotI=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/Info.plist</key>
 		<data>
-		JoQNtpE1kjRFeQD9Q8CJKZ1vtXU=
+		YFivqoAdCZUGCpOWaw//dSiViA4=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		fc0lReYnDX3xRPfeHmKbp371GmM=
+		fi6/ExesejB33S/M2ObmjcMdenE=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/com.apple.datamigrator</key>
 		<data>
-		xO/W7sUS69d6b1NFVgUD5LyydLw=
+		PtcEiuHSIbu99CEBmsJ+PJQT+9g=
+		</data>
+		<key>XPCServices/com.apple.migrationpluginwrapper.xpc/Info.plist</key>
+		<data>
+		MO6YOHD9IeHG1vleaZP6tPJhUnM=
+		</data>
+		<key>XPCServices/com.apple.migrationpluginwrapper.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		5tPfIph6ToTN3iiq0P+q1kAicKc=
+		</data>
+		<key>XPCServices/com.apple.migrationpluginwrapper.xpc/com.apple.migrationpluginwrapper</key>
+		<data>
+		ZUo4GLRHEdXmT/ypYgCwodnkpDM=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>DataMigration.tbd</key>
-		<dict>
-			<key>symlink</key>
-			<string>TextBasedStubs/DataMigration.tbd</string>
-		</dict>
-		<key>TextBasedStubs/DataMigration.tbd</key>
-		<data>
-		qO6kJpUlcJOrXbDuLUXMNrhSe0k=
-		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/Info.plist</key>
 		<data>
-		JoQNtpE1kjRFeQD9Q8CJKZ1vtXU=
+		YFivqoAdCZUGCpOWaw//dSiViA4=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		fc0lReYnDX3xRPfeHmKbp371GmM=
+		fi6/ExesejB33S/M2ObmjcMdenE=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/com.apple.datamigrator</key>
 		<data>
-		xO/W7sUS69d6b1NFVgUD5LyydLw=
+		PtcEiuHSIbu99CEBmsJ+PJQT+9g=
+		</data>
+		<key>XPCServices/com.apple.migrationpluginwrapper.xpc/Info.plist</key>
+		<data>
+		MO6YOHD9IeHG1vleaZP6tPJhUnM=
+		</data>
+		<key>XPCServices/com.apple.migrationpluginwrapper.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		5tPfIph6ToTN3iiq0P+q1kAicKc=
+		</data>
+		<key>XPCServices/com.apple.migrationpluginwrapper.xpc/com.apple.migrationpluginwrapper</key>
+		<data>
+		ZUo4GLRHEdXmT/ypYgCwodnkpDM=
 		</data>
 	</dict>
 	<key>rules</key>

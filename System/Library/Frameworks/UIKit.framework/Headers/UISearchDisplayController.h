@@ -2,7 +2,7 @@
 //  UISearchDisplayController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,6 +10,7 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UILabel.h>
 #import <UIKit/UITableView.h>
+#import <UIKit/UINavigationBar.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

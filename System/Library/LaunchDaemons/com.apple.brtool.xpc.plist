@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.brtool.xpc</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.brtool.xpc</key>
+		<true/>
+	</dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>Program</key>
+	<string>/usr/local/bin/brtool</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/brtool</string>
+		<string>-s</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/brtool.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/brtool.out</string>
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+<xmlui>
+    <page>
+        <navigationBar title="Activation Help" hidesBackButton="false"></navigationBar>
+        <tableView>
+            <section footer="A password is required to activate this device because its owner has used Find My iPhone to link it to their Apple ID."/>
+            <section footer="If this is your device, enter the Apple ID and password you used to set up iCloud."/>
+            <section footer="If you were given this device or purchased it second-hand, you will need to contact the original owner to have them remove this device from their account. Additional information can be found at: support.apple.com/kb/TS4515"/>            
+        </tableView>
+    </page>
+</xmlui>

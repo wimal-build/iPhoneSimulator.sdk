@@ -4,11 +4,15 @@
 <dict>
 	<key>com.apple.DiagnosticExtensions.extension</key>
 	<true/>
-	<key>com.apple.private.security.container-required</key>
-	<string>com.apple.Health</string>
+	<key>com.apple.security.exception.files.home-relative-path.read-write</key>
+	<array>
+		<string>/Library/Health/NanoSync/</string>
+		<string>/Library/Health/</string>
+		<string>/private/var/tmp/</string>
+	</array>
 	<key>com.apple.security.exception.files.absolute-path.read-only</key>
 	<array>
-		<string>/private/var/mobile/Library/Health/NanoSync/</string>
+		<string>/private/var/mobile/Library/Health/</string>
 		<string>/private/var/mobile/Library/Logs/CrashReporter/</string>
 	</array>
 </dict>

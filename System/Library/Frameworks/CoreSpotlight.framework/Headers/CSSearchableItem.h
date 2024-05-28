@@ -11,9 +11,24 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // When opening a document from Spotlight, the application's application:willContinueUserActivityWithType:
-// method will get called with CSSearchableItemActionType, followed by  application:continueUserActivity:restorationHandler: with an NSUserActivity where the userInfo dictionary has a single key value pair where CSSearchableItemActivityIdentifier is the key and the value is the uniqueIdentifier used when creating the item.
+// method will get called with CSSearchableItemActionType, followed by  application:continueUserActivity:restorationHandler:
+// with an NSUserActivity where the userInfo dictionary has a key value pair where CSSearchableItemActivityIdentifier is the key
+// and the value is the uniqueIdentifier used when creating the item.
 CORESPOTLIGHT_EXPORT NSString * const CSSearchableItemActionType CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
 CORESPOTLIGHT_EXPORT NSString * const CSSearchableItemActivityIdentifier CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
+
+// When continuing a query from Spotlight, the application's -application:willContinueUserActivityWithType:
+// method will get called with CSQueryContinuationActionType, followed by -application:continueUserActivity:restorationHandler:
+// with an NSUserActivity where the userInfo dictionary has a key value pair with CSSearchQueryString as the key
+// and the value is the string the application should use when performing its query.
+// The application should declare that it supports the query continuation by adding the CoreSpotlightContinuation key to its Info.plist:
+//
+//    <key>CoreSpotlightContinuation</key>
+//    <true/>
+//
+CORESPOTLIGHT_EXPORT NSString * const CSQueryContinuationActionType CS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE;
+CORESPOTLIGHT_EXPORT NSString * const CSSearchQueryString CS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE;
+
 
 CS_CLASS_AVAILABLE(NA, 9_0)
 CS_TVOS_UNAVAILABLE

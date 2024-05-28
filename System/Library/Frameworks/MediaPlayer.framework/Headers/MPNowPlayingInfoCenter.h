@@ -35,6 +35,12 @@ NS_ASSUME_NONNULL_BEGIN
 // In addition, metadata properties specific to the current playback session
 // may also be specified -- see "Additional metadata properties" below.
 
+typedef NS_ENUM(NSUInteger, MPNowPlayingInfoMediaType) {
+    MPNowPlayingInfoMediaTypeNone = 0,
+    MPNowPlayingInfoMediaTypeAudio,
+    MPNowPlayingInfoMediaTypeVideo,
+} NS_AVAILABLE_IOS(10_0);
+
 MP_EXTERN_CLASS_AVAILABLE(5_0)
 @interface MPNowPlayingInfoCenter : NSObject
 
@@ -85,12 +91,43 @@ MP_EXTERN NSString *const MPNowPlayingInfoPropertyChapterNumber NS_AVAILABLE_IOS
 // The total number of chapters in the now playing item.
 MP_EXTERN NSString *const MPNowPlayingInfoPropertyChapterCount NS_AVAILABLE_IOS(5_0); // NSNumber (NSUInteger)
 
+// A boolean denoting whether the now playing item is a live stream.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyIsLiveStream NS_AVAILABLE_IOS(10_0); // NSNumber (BOOL)
+
 // A list of available language option groups in the now playing item
 // Only one language option in a given group can be played at once.
 MP_EXTERN NSString *const MPNowPlayingInfoPropertyAvailableLanguageOptions NS_AVAILABLE_IOS(9_0); // NSArrayRef of MPNowPlayingInfoLanguageOptionGroup
 
 // A list of currently active language options in the now playing item.
 MP_EXTERN NSString *const MPNowPlayingInfoPropertyCurrentLanguageOptions NS_AVAILABLE_IOS(9_0); // NSArray of MPNowPlayingInfoLanguageOption
+
+// An identifier that represents the collection to which the now playing item belongs.
+// This can refer to an artist, album, playlist, etc.
+// This can be used to ask the now playing app to resume playback of the collection.
+MP_EXTERN NSString *const MPNowPlayingInfoCollectionIdentifier NS_AVAILABLE_IOS(9_3); // NSString
+
+// An opaque identifier that uniquely represents the now playing item,
+// even across app relaunches. This can be in any format and is only used to
+// reference this item back to the now playing app.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyExternalContentIdentifier NS_AVAILABLE_IOS(10_0); // NSString
+
+// An optional opaque identifier that uniquely represents the profile that the
+// now playing item is being played from, even across app relauches.
+// This can be in any format and is only used to reference this profile back to
+// the now playing app.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyExternalUserProfileIdentifier NS_AVAILABLE_IOS(10_0); // NSString
+
+// Represents the current playback progress of the now playing item.
+// 0.0 = not watched/listened/viewed, 1.0 = fully watched/listened/viewed
+// This value is different that ElapsedPlaybackTime and does not need to be exact
+// as it is used as a high level indicator as to how far along the user is.
+// For example, a movie may wish to set the now playing item as fully watched
+// when the credits begin to roll.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyPlaybackProgress NS_AVAILABLE_IOS(10_0); // NSNumber (float)
+
+// Indicates the media type of the now playing item
+// This can be used to determine what kind of user interface the system displays.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyMediaType NS_AVAILABLE_IOS(10_0); // NSNumber (MPNowPlayingInfoMediaType)
 
 
 NS_ASSUME_NONNULL_END

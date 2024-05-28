@@ -1,0 +1,291 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 26,
+          "month" : 12
+        }
+      ],
+      "name" : "2nd Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "18728D68-2825-4D04-835B-5434107DD697"
+    },
+    {
+      "dateRules" : [
+        {
+          "day": 31,
+          "month": 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "F1F14E5C-B64C-4BD8-9D3F-91B1CCC84A85"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1F3B65C3-C056-4E9C-A287-587123E67855"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter Sunday",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "B02EDC44-2459-46D2-9BB6-FEE78F12E215"
+    },
+    {
+      "dateRules" : [
+        {
+          "relativeToRule": "B02EDC44-2459-46D2-9BB6-FEE78F12E215",
+          "offsetDays": 39
+        }
+      ],
+      "name" : "Ascension",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0,10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "56BA649F-C567-4C30-9FB2-A59D380C3C26"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "37A2D24C-107B-405C-BC42-0A189A4627F5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 6
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "DEBD660D-7837-40EA-B986-2FC13B2D803B"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 6
+        }
+      ],
+      "name" : "Constitution Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "26AF480C-789E-47F2-98A9-B914B489B7FB"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 6
+        }
+      ],
+      "name" : "Midsummer Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "B6439E29-0423-487B-826B-52D2DF909B90"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "dk",
+    "countryName" : "Denmark"
+  }
+}

@@ -10,7 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class MPRemoteCommand, MPSkipIntervalCommand, MPRatingCommand, MPChangePlaybackRateCommand, MPFeedbackCommand, MPChangePlaybackPositionCommand;
+@class MPChangePlaybackPositionCommand;
+@class MPChangePlaybackRateCommand;
+@class MPChangeRepeatModeCommand;
+@class MPChangeShuffleModeCommand;
+@class MPFeedbackCommand;
+@class MPRatingCommand;
+@class MPRemoteCommand;
+@class MPSkipIntervalCommand;
 
 MP_EXTERN_CLASS_AVAILABLE(7_1)
 @interface MPRemoteCommandCenter : NSObject
@@ -20,8 +27,11 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 @property (nonatomic, readonly) MPRemoteCommand *playCommand;
 @property (nonatomic, readonly) MPRemoteCommand *stopCommand;
 @property (nonatomic, readonly) MPRemoteCommand *togglePlayPauseCommand;
-@property (nonatomic, readonly) MPRemoteCommand *enableLanguageOptionCommand;
-@property (nonatomic, readonly) MPRemoteCommand *disableLanguageOptionCommand;
+@property (nonatomic, readonly) MPRemoteCommand *enableLanguageOptionCommand NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, readonly) MPRemoteCommand *disableLanguageOptionCommand NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, readonly) MPChangePlaybackRateCommand *changePlaybackRateCommand;
+@property (nonatomic, readonly) MPChangeRepeatModeCommand *changeRepeatModeCommand;
+@property (nonatomic, readonly) MPChangeShuffleModeCommand *changeShuffleModeCommand;
 
 // Previous/Next Track Commands
 @property (nonatomic, readonly) MPRemoteCommand *nextTrackCommand;
@@ -34,12 +44,10 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 // Seek Commands
 @property (nonatomic, readonly) MPRemoteCommand *seekForwardCommand;
 @property (nonatomic, readonly) MPRemoteCommand *seekBackwardCommand;
+@property (nonatomic, readonly) MPChangePlaybackPositionCommand *changePlaybackPositionCommand NS_AVAILABLE_IOS(9_1);
 
 // Rating Command
 @property (nonatomic, readonly) MPRatingCommand *ratingCommand;
-
-// Playback Commands
-@property (nonatomic, readonly) MPChangePlaybackRateCommand *changePlaybackRateCommand;
 
 // Feedback Commands
 // These are generalized to three distinct actions. Your application can provide
@@ -49,9 +57,8 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 @property (nonatomic, readonly) MPFeedbackCommand *dislikeCommand;
 @property (nonatomic, readonly) MPFeedbackCommand *bookmarkCommand;
 
-@property (nonatomic, readonly) MPChangePlaybackPositionCommand *changePlaybackPositionCommand;
-
 + (MPRemoteCommandCenter *)sharedCommandCenter;
+- (id)init NS_UNAVAILABLE;
 
 @end
 

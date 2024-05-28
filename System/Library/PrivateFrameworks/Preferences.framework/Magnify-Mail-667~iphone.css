@@ -62,7 +62,10 @@ BODY {
 	left: 32px;
 	font: -apple-system-font, Times, sans-serif;
 	font-weight: 600;
-	color: #007aff;
+}
+
+.ToName {
+	color: #959595;
 }
 
 .ToString {
@@ -76,10 +79,6 @@ BODY {
 	font-size: 30px;
 }
 
-.MoreLink {
-	color: #007aff;
-}
-
 .Subject {
 	top: 274px;
 	font: -apple-system-font, Times, sans-serif;
@@ -91,6 +90,7 @@ BODY {
 	top:321px;
 	left:32px;
 	font-size: 30px;
+	color: #959595;
 }
 
 /*body text*/

@@ -4,7 +4,11 @@
 //
 //  Copyright © 2015 Apple, Inc. All rights reserved.
 //
+
+#if TARGET_OS_IPHONE
+
 #import <UIKit/UIKit.h>
+#import <PassKit/PKConstants.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @class PKAddPaymentPassViewController, PKPaymentPass;
@@ -22,9 +26,9 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
  *  PKEncryptionSchemeECC_V2:
  *      ephemeralPublicKey
  */
-- (nullable instancetype)initWithEncryptionScheme:(NSString *)encryptionScheme NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithEncryptionScheme:(PKEncryptionScheme)encryptionScheme NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, copy, readonly) NSString *encryptionScheme;
+@property (nonatomic, copy, readonly) PKEncryptionScheme encryptionScheme;
 
 /* Display Properties:
  *  At least one of cardholder name or primary account suffix must be supplied.
@@ -40,7 +44,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
 
 /* Filters introduction page to a specific network - does not function as a restriction.
  */
-@property (nonatomic, copy, nullable) NSString *paymentNetwork;
+@property (nonatomic, copy, nullable) PKPaymentNetwork paymentNetwork;
 
 @end
 
@@ -90,3 +94,5 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassViewController : UIViewCo
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

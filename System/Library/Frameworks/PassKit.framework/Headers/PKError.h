@@ -17,6 +17,6 @@ typedef NS_ENUM(NSInteger, PKPassKitErrorCode) {
     PKUnsupportedVersionError,
     PKInvalidSignature,
     PKNotEntitledError
-} NS_ENUM_AVAILABLE_IOS(6_0);
+} NS_AVAILABLE_IOS(6_0);
 
-#endif
+#endif // __PKERROR_H

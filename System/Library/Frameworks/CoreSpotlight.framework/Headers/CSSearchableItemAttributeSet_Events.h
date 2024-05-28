@@ -25,6 +25,6 @@
 @property(nullable, copy) NSArray<NSDate *> *importantDates;
 
 //Whether this event covers complete days
-@property(nullable, copy) NSNumber *allDay;
+@property(nullable, strong) NSNumber *allDay;
 
 @end

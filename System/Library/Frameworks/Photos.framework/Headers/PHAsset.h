@@ -9,17 +9,21 @@
 #import <Photos/PhotosTypes.h>
 #import <Photos/PHFetchResult.h>
 #import <Photos/PHPhotoLibrary.h>
+#import <Photos/PhotosDefines.h>
 
 #import <UIKit/UIImage.h>
 #import <ImageIO/ImageIO.h>
 #import <CoreLocation/CLLocation.h>
 
+
 @class PHFetchOptions;
 @class PHAssetCollection;
+@class PHPerson;
+@class PHFaceCollection;
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAsset : PHObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAsset : PHObject
 
 #pragma mark - Properties
 
@@ -45,7 +49,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAsset : PHObject
 @property (nonatomic, assign, readonly) PHAssetBurstSelectionType burstSelectionTypes;
 @property (nonatomic, assign, readonly) BOOL representsBurst;
 
-@property (nonatomic, assign, readonly) PHAssetSourceType sourceType NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign, readonly) PHAssetSourceType sourceType PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
 
 #pragma mark - Capabilities
 

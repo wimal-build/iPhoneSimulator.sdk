@@ -6,13 +6,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		nhzVSEDqiTKo5w2vtACc7FqBRqA=
+		KzD+tUjqSXspZ39RxvKgkCnOHFA=
 		</data>
 		<key>Dutch.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fRZxD1d2IcDlaLKTbWQZzovsLA0=
+			Qd0Ioh1TNKBPzNJJgvbXpvwBLvg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,11 +26,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Dutch.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0CIaVskxFdIQCZkcIK5yYNT9/4U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DJ82gZiU+ieJS8eQpuouvKLSftw=
+			87YuzUxQ0U8n4Gwv6NkzpxkCmlU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,11 +53,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>English.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uswZhDM1q3cSSiBdZch5wD687+Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6/ZFCB+QO9W5+EfQdBNkjxZLxgU=
+			SZ3vp6JQ2+1NfW9+v0FKs2tHhy4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,11 +80,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mb/i3VpRHhLRwKkGrUejTSiwG5s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wqw+F2imAWRTA7x0mr5HCdV3eFs=
+			8tIB5uWiG+RBVOVG26gekZTBJ9E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,15 +107,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>German.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7I4e8zZtRs+u8ljdlaYXkk6Cd8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Info.plist</key>
 		<data>
-		HLJoc+5zw8n5JyWQZwUiZ+rT4DU=
+		8JxxL771Hu1n59rk348Md2CYWYw=
 		</data>
 		<key>Italian.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iA8fBeWh5fHjRAAR6ayOb7WYPaE=
+			sruJfmsz1uO8EJjFRtsNCKkIpmI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -102,11 +138,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Italian.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oUbz2Pl5dK+Scc5F2SGxswqPh9o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Japanese.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uCoqToxgn7hzRmZfpzbkSMdxYnY=
+			rYa25nDDt1dmRNtfHupRRe+v1Zk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -120,11 +165,407 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Japanese.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			23NVNlnBVbrVCbvV50muL/zf+X8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/FavoritesTodayWidget</key>
+		<data>
+		oZuObUHTq7Vq9NSeEkeLPzr2/k8=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/Info.plist</key>
+		<data>
+		PlfWw1SMwA6bcLr5fnnTiyOPPkQ=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon29x29@2x.png</key>
+		<data>
+		QZ1x39ZvsSRcaDEZtFgjZFaVB84=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon29x29@3x.png</key>
+		<data>
+		D8JE2TpNddYDeF+7pOs0mqIrLwA=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon40x40@2x.png</key>
+		<data>
+		/0Ilq3prjWMhayOEpb34RQbTlxo=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon40x40@3x.png</key>
+		<data>
+		E9OO9Ze6mqSkVvmxV+vQGVN5tEA=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon60x60@2x.png</key>
+		<data>
+		E9OO9Ze6mqSkVvmxV+vQGVN5tEA=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon60x60@3x.png</key>
+		<data>
+		L3SjUMEs8dLMNdrdsGsRNhu3CTI=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/_CodeSignature/CodeResources</key>
+		<data>
+		xOoQxIUepKGfP/Zcuzoq73M2zgI=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+56igfEewCF9PUeHpUllsir7Yi4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2hZ4gS6r8ZO0zHmlTgwJyXIh578=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8sJb9W0z81ztAKQgo6/sROHEaxs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EpIZucg+32BthwTnsZVvZj27rkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PoM7QiZZhlT1ZtwURixEu1+z9m8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			olBPWgfhu2P2j5olXiRRUz3w+xc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cX6ItiG5JX3eE1uMB40c+3noU9I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gA8Vnpgwznwc2+BGm7u/JJlrPOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gA8Vnpgwznwc2+BGm7u/JJlrPOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/es_419.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E3N4ZK8apn5es5n+lz6HucBtUaA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WuR8twaVsotIAGobuWysvC6ShJ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WuR8twaVsotIAGobuWysvC6ShJ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2fu2r6kFolhvSAiIBzmGZCwdCzo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/bRW3tieka53fKS0zLh85/uGzN8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1mV/cWpsT5xd6v7dhWgf6czOE8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yGdnJwRYmOBNGrMKe5Y7ZZTDPEM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Iby4G05dgq6YTZCOepFuwyzXfTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eMwnstFqtWHGkY7pt7+HhwpUlyI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7tYNNjv7QYeLhcZe+RXevfhxgnM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GWr+8ZBkmnHOXjDumVv89HmobwM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Zp5TFRdLP27boXok2MHNAv2bL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KKbcaddSjIf383bm8hOKSpfHofo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EpIZucg+32BthwTnsZVvZj27rkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HLsON/iNSUnIi+TgBK6eUFuCTlk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LF1aE54PrhMll9mhwB4KhQQ+CmY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MF+rHDXsnBxhCgElVUCrha5SemM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3FBjz6HU4D6eWiWvwg/5viCdMSA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gXSnKKDhLMiPqV0hblA6FaX2kWw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rWzWxm4XcFXJwtxd4D2DNbJBW+c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/6zK5OKr3x95q4WcLHWSsP0u8j4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wSyhGsh8sUDHb4cU34nOp2bUl78=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ujCK70kNdpT1zRv5020prLmknvA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y0j9/NNJ47lUREkYJZij1Vr5LqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kfW1eTRkczJEWD2BZZvkUWKgO9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KnCqy9nVCdwJIL0SL+FHgdvjWkg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x7X69ZeUhBQ8LkO5f0MrqGMiFag=
+			ezkBI4GzFBGShhgfFKmwQSJS/0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -138,51 +579,60 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Spanish.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NOkIRnphl+m3hUXW3kvGbytBE3I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>action_call-OrbHW@2x.png</key>
 		<data>
-		pVyYd2ntIxLp9TtTc8MNzdarcFk=
+		ppJg71x7/+yBx2wllNZmC1t+drI=
 		</data>
 		<key>action_call-OrbHW@3x.png</key>
 		<data>
-		NIKt1Xupn5553rAVZLLfUSgQmbs=
+		DBNebtGqeUmKfyiWzuWVotZAZss=
 		</data>
 		<key>action_end-OrbHW@2x.png</key>
 		<data>
-		zGN1QNRgN8D0Z8Jj2EwOjsPK34E=
+		Cod44PL7cAKiBESC5x4/UV7PyXQ=
 		</data>
 		<key>action_end-OrbHW@3x.png</key>
 		<data>
-		ja+nbhXshmqEmG5SLVKLIKQCI3o=
+		+GdIjvBgPCqSE3Gl+4OUfY0ZQ0M=
 		</data>
 		<key>action_facetime-OrbHW@2x.png</key>
 		<data>
-		yAJCcdqTjWDVGkinu0jHoIO09dw=
+		exlAEo+4y1TJHKn7bvUDhF1gAtc=
 		</data>
 		<key>action_facetime-OrbHW@3x.png</key>
 		<data>
-		H+fuHOdYAtMyTzLjlzIbiEN7KME=
+		zQo5TJBxJNNRaiww8OdLmi2px60=
 		</data>
 		<key>action_message-OrbHW@3x.png</key>
 		<data>
-		5g1L9Xke0lPbuw34BKyOZAdW4XI=
+		G8oh68RrwqktSHHtMe1uoCwtH4o=
 		</data>
 		<key>action_messages-OrbHW@2x.png</key>
 		<data>
-		kqlcUqeU+uGB5RxGtWHm8ftl2os=
+		hI/T6W4PlNv82qR5B05UOsJ6atw=
 		</data>
 		<key>action_remind-OrbHW@2x.png</key>
 		<data>
-		jRRWRIRZ2IuWdrjDQBiHmuiR8DA=
+		Yb+QAfK/Bu/+nocskklpcNw1txM=
 		</data>
 		<key>action_remind-OrbHW@3x.png</key>
 		<data>
-		IOlrv/1wkCLZAzT+cLh8ZpZngAQ=
+		5kC83PucGeRh4rcJk7HUW2KAe7A=
 		</data>
 		<key>ar.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z+6iuLd9euX+23jTNHU6bkJMJu0=
+			y/PYKIeoJC+dhYJQ/hz9cnC3ubQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -196,11 +646,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O4kN1vjcmnwQ6DwzYhJTBHKWlKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cltUYJ9Un2YmKf+5LZ/VFbnP94I=
+			I0ANW7DLdc3o1zJXhg31J1nxDl8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -214,11 +673,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qTAq9w+4dZZ0TTxYPa9YGvR5DtY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xRBG/T7MS7XEOc9q+3fNZ5ctL74=
+			S/IkwuCJIMjLprQNew0+NHBmbOE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -232,11 +700,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OsOAnFhQBCNKFt4PKZvp2ACdh8I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Y66BOVS/7Dr+rIIxpuHJZMAVT0=
+			p40hPfRH803d3+zF0oUAJCF62Jc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -250,11 +727,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E//lXKf3u/3D56L+N91bM1FsjAI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LoipmZnGoi49DZAVVXokIrXmFRQ=
+			0DEYUq6Nq7sdAazcaXbBOOVheIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -268,11 +754,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DWM5B5hA7xB2UTDIO0/vcZFKIg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p/GqW8xqoXlWBQ6kFryWC9Cr1Lc=
+			vNI/mZVVXgoiQ0RmQ2CK3IZo16M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -286,11 +781,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dPGM94yYrXeeGcDeLVrMs32Aps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GrVpEeI00lN/61uD+Vow+HBAklY=
+			0MNwnZoOUDx3Vib4QJFG361snek=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -304,11 +808,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dPGM94yYrXeeGcDeLVrMs32Aps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			48zxGVGRH4elWb9rC+T5JjgH2aA=
+			qrSy5bZMY1Z9eFAF1KItxi5zxUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -322,11 +835,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vmNjdJeDuKxb5weS/WMNMZIIkEI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DujjoY1j8Vyax1L33r3FYVxA12k=
+			quKOym4FsWrXPBLPolhoqmZb63Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -340,11 +862,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mb/i3VpRHhLRwKkGrUejTSiwG5s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g96oKmXppM4VXhDN/Nr8rSSxLSs=
+			ZraaVPe4J5pGovpmd9kn41IEebo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -358,11 +889,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s4F4spt9w9c/dzM1/PIDdkWoXfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b3it6bBs7YSpw7EwBiqW9KJrzMM=
+			Ep5DRMMnPeO5U747NWgJGDGDMHU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -376,11 +916,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4cxewuXEH6f1B3p9TZgrH5umggc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wudVvnjg4XsP+sWqb3ZhKp3kM5I=
+			94ir0MXf0k81oOSFQ9sdTU9xjvA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -394,11 +943,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JEMHSsJTv/nn3jlrgtuD+ohga00=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rwuIy/l1ZDM7j7v0P2cz7fwb61U=
+			039+iVKmimFohc+D1QspyvsUGrE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -412,11 +970,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l6TE1nNPX/xypc76dybcVMTwROU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			afcZ9by9R7M4tt1NMATAT16btBQ=
+			wlIaT1pK5GGBsHleJfM/6dx8qEg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -430,11 +997,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rW37zr2Amay+QNilU9IafhnOqD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9pbO+xUeVrCb5fHOlNH+7dBCAEU=
+			QYzSqeNS3Gnh7L+UBJs1SxAS/4s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -448,11 +1024,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aJE9994bFOIb1XTvyXULjpmwMN8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iy1hC9ZG4lfH3IXu7+osbRpvU7o=
+			6YfL+QbJCqYnz09N3oM99ycEKoU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -466,11 +1051,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zdz+dspbEImts8z91RmvxuHEqxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nncL9PCOOQ6yOnToDYsuBnLy7HE=
+			mP+mxr4ZX2eYH/MgjdiqzqImcdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -484,11 +1078,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E//lXKf3u/3D56L+N91bM1FsjAI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8A5G4kP5r5h+fOjcWmL/1OYFMRg=
+			cZdajuRDU3mBR0zWowqIGj1K40c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -502,11 +1105,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ljJarGwFa1URXHwfZ05k5s1NKaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hEHukCgXfgb3KgK1WuftJzfkcCA=
+			cu8ljdi/lrFlIaezKjJ11L55tM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -520,11 +1132,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a6ZTyMbFPoUQgFEztlAUJHD3cvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mrgmz51NqXpXEK1v5/sOKXx+qzs=
+			orcg+G2feaKEMMFpo4dYW943IMc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -538,11 +1159,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			krfHSM8QAAQAwqLoLiOsDqyDpi8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			67/08PNTsRXMTc3s2LGSk/5GqnQ=
+			XpQ6deKMtw/Xx7R1Y3Klddxl7vg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -556,11 +1186,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4adFI/H7jt4d6S2iD7RGP83CeT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wcyBTTGXH99TgXzWJckJLeusI9A=
+			Ykq+Cle96suQDECnRZ+lZ8Q7JBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -574,11 +1213,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7gkL19/hwUb6cwTjmuRMv4Vx0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lCYbyIAuLPsIFFlpbR0tc6X2hDg=
+			+Exxf0xHtA1LEqxxM5YSR2UgXXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -592,11 +1240,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IzYga8HvpMwZuSQjqbxCYGOo0XE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LhpCVbUYB/+6g3FsMOWrkVuh1To=
+			+0Ja484biVxFISGOmvuaY10w3dI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -610,11 +1267,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oZ33b2P246sE4iHfIJBMUFp5IXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ctO9/qFZqL8zDOM2rnK93U/6L88=
+			VlYmZkYV6Nn3JSzNisT3h7cPFfU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -628,11 +1294,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wwGeiWLNSFJFOhZwja/J2vDciV8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GYKZBvdBJYZ/y12kjWgTkYukjBI=
+			Gx6eAqMRwWwpXuGAt6BW7aFkmEA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -646,11 +1321,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A+yBAW07P9bAHaZAScag5aeAI1k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t3/O2RHh+WWTq6YkKzmrO2b9wtc=
+			buVXRxCiF7BDfmhKcDz+1X5T2+Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -664,11 +1348,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1A0wV8t9+vWyYxaqrBzjxsfqwV4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9UdPiQElvBcBpdk+wVBdpDAj+HU=
+			zXKrFAMhzBG8Rna3jvUmU26D2LQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -682,11 +1375,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d+BcgOZhdCXXR2Ep0ddVKJsfYTY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pKs97RaNsDnhpc2y3JFWkOukdF0=
+			gy2RIEbUHkIT3mQxlZ8ACC9aotI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -700,11 +1402,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9a0KIx4yJGf34DbtnM3ZkkFmsQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jtmO0oKlEwSlPNfzcJ2uOd7ZEiE=
+			mYnuoTF5M9w1zDQcIOKUPlRGu0Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -718,11 +1429,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RXJX+TosD2S19LvhK15DOXnbpAA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QtGANbeZH+g/CRIEoP1r00GlZgY=
+			bNjNUcxdxpLUKNrLHfqQ9KjG/us=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -732,6 +1452,15 @@
 			<key>hash</key>
 			<data>
 			b/qr4E+mY4Yi8RGIzKigqiSTP7I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			veyTaQ5sFnKakL02G7J2t39RNU8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -741,13 +1470,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		nhzVSEDqiTKo5w2vtACc7FqBRqA=
+		KzD+tUjqSXspZ39RxvKgkCnOHFA=
 		</data>
 		<key>Dutch.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fRZxD1d2IcDlaLKTbWQZzovsLA0=
+			Qd0Ioh1TNKBPzNJJgvbXpvwBLvg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,11 +1490,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Dutch.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0CIaVskxFdIQCZkcIK5yYNT9/4U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DJ82gZiU+ieJS8eQpuouvKLSftw=
+			87YuzUxQ0U8n4Gwv6NkzpxkCmlU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,11 +1517,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>English.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uswZhDM1q3cSSiBdZch5wD687+Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6/ZFCB+QO9W5+EfQdBNkjxZLxgU=
+			SZ3vp6JQ2+1NfW9+v0FKs2tHhy4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -797,11 +1544,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mb/i3VpRHhLRwKkGrUejTSiwG5s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wqw+F2imAWRTA7x0mr5HCdV3eFs=
+			8tIB5uWiG+RBVOVG26gekZTBJ9E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -815,11 +1571,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>German.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7I4e8zZtRs+u8ljdlaYXkk6Cd8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iA8fBeWh5fHjRAAR6ayOb7WYPaE=
+			sruJfmsz1uO8EJjFRtsNCKkIpmI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -833,11 +1598,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Italian.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oUbz2Pl5dK+Scc5F2SGxswqPh9o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Japanese.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uCoqToxgn7hzRmZfpzbkSMdxYnY=
+			rYa25nDDt1dmRNtfHupRRe+v1Zk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -851,11 +1625,407 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Japanese.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			23NVNlnBVbrVCbvV50muL/zf+X8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/FavoritesTodayWidget</key>
+		<data>
+		oZuObUHTq7Vq9NSeEkeLPzr2/k8=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/Info.plist</key>
+		<data>
+		PlfWw1SMwA6bcLr5fnnTiyOPPkQ=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon29x29@2x.png</key>
+		<data>
+		QZ1x39ZvsSRcaDEZtFgjZFaVB84=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon29x29@3x.png</key>
+		<data>
+		D8JE2TpNddYDeF+7pOs0mqIrLwA=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon40x40@2x.png</key>
+		<data>
+		/0Ilq3prjWMhayOEpb34RQbTlxo=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon40x40@3x.png</key>
+		<data>
+		E9OO9Ze6mqSkVvmxV+vQGVN5tEA=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon60x60@2x.png</key>
+		<data>
+		E9OO9Ze6mqSkVvmxV+vQGVN5tEA=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/PhoneIcon60x60@3x.png</key>
+		<data>
+		L3SjUMEs8dLMNdrdsGsRNhu3CTI=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/_CodeSignature/CodeResources</key>
+		<data>
+		xOoQxIUepKGfP/Zcuzoq73M2zgI=
+		</data>
+		<key>PlugIns/FavoritesTodayWidget.appex/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+56igfEewCF9PUeHpUllsir7Yi4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2hZ4gS6r8ZO0zHmlTgwJyXIh578=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8sJb9W0z81ztAKQgo6/sROHEaxs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EpIZucg+32BthwTnsZVvZj27rkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PoM7QiZZhlT1ZtwURixEu1+z9m8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			olBPWgfhu2P2j5olXiRRUz3w+xc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cX6ItiG5JX3eE1uMB40c+3noU9I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gA8Vnpgwznwc2+BGm7u/JJlrPOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gA8Vnpgwznwc2+BGm7u/JJlrPOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/es_419.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E3N4ZK8apn5es5n+lz6HucBtUaA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WuR8twaVsotIAGobuWysvC6ShJ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WuR8twaVsotIAGobuWysvC6ShJ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2fu2r6kFolhvSAiIBzmGZCwdCzo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/bRW3tieka53fKS0zLh85/uGzN8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1mV/cWpsT5xd6v7dhWgf6czOE8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yGdnJwRYmOBNGrMKe5Y7ZZTDPEM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Iby4G05dgq6YTZCOepFuwyzXfTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eMwnstFqtWHGkY7pt7+HhwpUlyI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7tYNNjv7QYeLhcZe+RXevfhxgnM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GWr+8ZBkmnHOXjDumVv89HmobwM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Zp5TFRdLP27boXok2MHNAv2bL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KKbcaddSjIf383bm8hOKSpfHofo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EpIZucg+32BthwTnsZVvZj27rkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HLsON/iNSUnIi+TgBK6eUFuCTlk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N0e1G7iOTCvf7jxIyRvJ//5F5rg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LF1aE54PrhMll9mhwB4KhQQ+CmY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MF+rHDXsnBxhCgElVUCrha5SemM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3FBjz6HU4D6eWiWvwg/5viCdMSA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gXSnKKDhLMiPqV0hblA6FaX2kWw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rWzWxm4XcFXJwtxd4D2DNbJBW+c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/6zK5OKr3x95q4WcLHWSsP0u8j4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wSyhGsh8sUDHb4cU34nOp2bUl78=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ujCK70kNdpT1zRv5020prLmknvA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y0j9/NNJ47lUREkYJZij1Vr5LqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kfW1eTRkczJEWD2BZZvkUWKgO9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/FavoritesTodayWidget.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KnCqy9nVCdwJIL0SL+FHgdvjWkg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x7X69ZeUhBQ8LkO5f0MrqGMiFag=
+			ezkBI4GzFBGShhgfFKmwQSJS/0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -869,51 +2039,60 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Spanish.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NOkIRnphl+m3hUXW3kvGbytBE3I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>action_call-OrbHW@2x.png</key>
 		<data>
-		pVyYd2ntIxLp9TtTc8MNzdarcFk=
+		ppJg71x7/+yBx2wllNZmC1t+drI=
 		</data>
 		<key>action_call-OrbHW@3x.png</key>
 		<data>
-		NIKt1Xupn5553rAVZLLfUSgQmbs=
+		DBNebtGqeUmKfyiWzuWVotZAZss=
 		</data>
 		<key>action_end-OrbHW@2x.png</key>
 		<data>
-		zGN1QNRgN8D0Z8Jj2EwOjsPK34E=
+		Cod44PL7cAKiBESC5x4/UV7PyXQ=
 		</data>
 		<key>action_end-OrbHW@3x.png</key>
 		<data>
-		ja+nbhXshmqEmG5SLVKLIKQCI3o=
+		+GdIjvBgPCqSE3Gl+4OUfY0ZQ0M=
 		</data>
 		<key>action_facetime-OrbHW@2x.png</key>
 		<data>
-		yAJCcdqTjWDVGkinu0jHoIO09dw=
+		exlAEo+4y1TJHKn7bvUDhF1gAtc=
 		</data>
 		<key>action_facetime-OrbHW@3x.png</key>
 		<data>
-		H+fuHOdYAtMyTzLjlzIbiEN7KME=
+		zQo5TJBxJNNRaiww8OdLmi2px60=
 		</data>
 		<key>action_message-OrbHW@3x.png</key>
 		<data>
-		5g1L9Xke0lPbuw34BKyOZAdW4XI=
+		G8oh68RrwqktSHHtMe1uoCwtH4o=
 		</data>
 		<key>action_messages-OrbHW@2x.png</key>
 		<data>
-		kqlcUqeU+uGB5RxGtWHm8ftl2os=
+		hI/T6W4PlNv82qR5B05UOsJ6atw=
 		</data>
 		<key>action_remind-OrbHW@2x.png</key>
 		<data>
-		jRRWRIRZ2IuWdrjDQBiHmuiR8DA=
+		Yb+QAfK/Bu/+nocskklpcNw1txM=
 		</data>
 		<key>action_remind-OrbHW@3x.png</key>
 		<data>
-		IOlrv/1wkCLZAzT+cLh8ZpZngAQ=
+		5kC83PucGeRh4rcJk7HUW2KAe7A=
 		</data>
 		<key>ar.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z+6iuLd9euX+23jTNHU6bkJMJu0=
+			y/PYKIeoJC+dhYJQ/hz9cnC3ubQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -927,11 +2106,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O4kN1vjcmnwQ6DwzYhJTBHKWlKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cltUYJ9Un2YmKf+5LZ/VFbnP94I=
+			I0ANW7DLdc3o1zJXhg31J1nxDl8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -945,11 +2133,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qTAq9w+4dZZ0TTxYPa9YGvR5DtY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xRBG/T7MS7XEOc9q+3fNZ5ctL74=
+			S/IkwuCJIMjLprQNew0+NHBmbOE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -963,11 +2160,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OsOAnFhQBCNKFt4PKZvp2ACdh8I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Y66BOVS/7Dr+rIIxpuHJZMAVT0=
+			p40hPfRH803d3+zF0oUAJCF62Jc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -981,11 +2187,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E//lXKf3u/3D56L+N91bM1FsjAI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LoipmZnGoi49DZAVVXokIrXmFRQ=
+			0DEYUq6Nq7sdAazcaXbBOOVheIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -999,11 +2214,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DWM5B5hA7xB2UTDIO0/vcZFKIg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p/GqW8xqoXlWBQ6kFryWC9Cr1Lc=
+			vNI/mZVVXgoiQ0RmQ2CK3IZo16M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1017,11 +2241,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dPGM94yYrXeeGcDeLVrMs32Aps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GrVpEeI00lN/61uD+Vow+HBAklY=
+			0MNwnZoOUDx3Vib4QJFG361snek=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1035,11 +2268,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dPGM94yYrXeeGcDeLVrMs32Aps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			48zxGVGRH4elWb9rC+T5JjgH2aA=
+			qrSy5bZMY1Z9eFAF1KItxi5zxUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1053,11 +2295,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vmNjdJeDuKxb5weS/WMNMZIIkEI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DujjoY1j8Vyax1L33r3FYVxA12k=
+			quKOym4FsWrXPBLPolhoqmZb63Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1071,11 +2322,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mb/i3VpRHhLRwKkGrUejTSiwG5s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g96oKmXppM4VXhDN/Nr8rSSxLSs=
+			ZraaVPe4J5pGovpmd9kn41IEebo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1089,11 +2349,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s4F4spt9w9c/dzM1/PIDdkWoXfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b3it6bBs7YSpw7EwBiqW9KJrzMM=
+			Ep5DRMMnPeO5U747NWgJGDGDMHU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1107,11 +2376,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4cxewuXEH6f1B3p9TZgrH5umggc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wudVvnjg4XsP+sWqb3ZhKp3kM5I=
+			94ir0MXf0k81oOSFQ9sdTU9xjvA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1125,11 +2403,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JEMHSsJTv/nn3jlrgtuD+ohga00=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rwuIy/l1ZDM7j7v0P2cz7fwb61U=
+			039+iVKmimFohc+D1QspyvsUGrE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1143,11 +2430,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l6TE1nNPX/xypc76dybcVMTwROU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			afcZ9by9R7M4tt1NMATAT16btBQ=
+			wlIaT1pK5GGBsHleJfM/6dx8qEg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1161,11 +2457,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rW37zr2Amay+QNilU9IafhnOqD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9pbO+xUeVrCb5fHOlNH+7dBCAEU=
+			QYzSqeNS3Gnh7L+UBJs1SxAS/4s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1179,11 +2484,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aJE9994bFOIb1XTvyXULjpmwMN8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iy1hC9ZG4lfH3IXu7+osbRpvU7o=
+			6YfL+QbJCqYnz09N3oM99ycEKoU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1197,11 +2511,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zdz+dspbEImts8z91RmvxuHEqxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nncL9PCOOQ6yOnToDYsuBnLy7HE=
+			mP+mxr4ZX2eYH/MgjdiqzqImcdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1215,11 +2538,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E//lXKf3u/3D56L+N91bM1FsjAI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8A5G4kP5r5h+fOjcWmL/1OYFMRg=
+			cZdajuRDU3mBR0zWowqIGj1K40c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1233,11 +2565,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ljJarGwFa1URXHwfZ05k5s1NKaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hEHukCgXfgb3KgK1WuftJzfkcCA=
+			cu8ljdi/lrFlIaezKjJ11L55tM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1251,11 +2592,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a6ZTyMbFPoUQgFEztlAUJHD3cvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mrgmz51NqXpXEK1v5/sOKXx+qzs=
+			orcg+G2feaKEMMFpo4dYW943IMc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1269,11 +2619,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			krfHSM8QAAQAwqLoLiOsDqyDpi8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			67/08PNTsRXMTc3s2LGSk/5GqnQ=
+			XpQ6deKMtw/Xx7R1Y3Klddxl7vg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1287,11 +2646,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4adFI/H7jt4d6S2iD7RGP83CeT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wcyBTTGXH99TgXzWJckJLeusI9A=
+			Ykq+Cle96suQDECnRZ+lZ8Q7JBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1305,11 +2673,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7gkL19/hwUb6cwTjmuRMv4Vx0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lCYbyIAuLPsIFFlpbR0tc6X2hDg=
+			+Exxf0xHtA1LEqxxM5YSR2UgXXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1323,11 +2700,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IzYga8HvpMwZuSQjqbxCYGOo0XE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LhpCVbUYB/+6g3FsMOWrkVuh1To=
+			+0Ja484biVxFISGOmvuaY10w3dI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1341,11 +2727,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oZ33b2P246sE4iHfIJBMUFp5IXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ctO9/qFZqL8zDOM2rnK93U/6L88=
+			VlYmZkYV6Nn3JSzNisT3h7cPFfU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1359,11 +2754,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wwGeiWLNSFJFOhZwja/J2vDciV8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GYKZBvdBJYZ/y12kjWgTkYukjBI=
+			Gx6eAqMRwWwpXuGAt6BW7aFkmEA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1377,11 +2781,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A+yBAW07P9bAHaZAScag5aeAI1k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t3/O2RHh+WWTq6YkKzmrO2b9wtc=
+			buVXRxCiF7BDfmhKcDz+1X5T2+Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1395,11 +2808,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1A0wV8t9+vWyYxaqrBzjxsfqwV4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9UdPiQElvBcBpdk+wVBdpDAj+HU=
+			zXKrFAMhzBG8Rna3jvUmU26D2LQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1413,11 +2835,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d+BcgOZhdCXXR2Ep0ddVKJsfYTY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pKs97RaNsDnhpc2y3JFWkOukdF0=
+			gy2RIEbUHkIT3mQxlZ8ACC9aotI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1431,11 +2862,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9a0KIx4yJGf34DbtnM3ZkkFmsQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jtmO0oKlEwSlPNfzcJ2uOd7ZEiE=
+			mYnuoTF5M9w1zDQcIOKUPlRGu0Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1449,11 +2889,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RXJX+TosD2S19LvhK15DOXnbpAA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/General.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QtGANbeZH+g/CRIEoP1r00GlZgY=
+			bNjNUcxdxpLUKNrLHfqQ9KjG/us=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1463,6 +2912,15 @@
 			<key>hash</key>
 			<data>
 			b/qr4E+mY4Yi8RGIzKigqiSTP7I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TPFavorites.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			veyTaQ5sFnKakL02G7J2t39RNU8=
 			</data>
 			<key>optional</key>
 			<true/>

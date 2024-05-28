@@ -2,7 +2,7 @@
 //  UIWindow.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -44,19 +44,19 @@ UIKIT_EXTERN const UIWindowLevel UIWindowLevelNormal;
 UIKIT_EXTERN const UIWindowLevel UIWindowLevelAlert;
 UIKIT_EXTERN const UIWindowLevel UIWindowLevelStatusBar __TVOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIWindowDidBecomeVisibleNotification; // nil
-UIKIT_EXTERN NSString *const UIWindowDidBecomeHiddenNotification;  // nil
-UIKIT_EXTERN NSString *const UIWindowDidBecomeKeyNotification;     // nil
-UIKIT_EXTERN NSString *const UIWindowDidResignKeyNotification;     // nil
+UIKIT_EXTERN NSNotificationName const UIWindowDidBecomeVisibleNotification; // nil
+UIKIT_EXTERN NSNotificationName const UIWindowDidBecomeHiddenNotification;  // nil
+UIKIT_EXTERN NSNotificationName const UIWindowDidBecomeKeyNotification;     // nil
+UIKIT_EXTERN NSNotificationName const UIWindowDidResignKeyNotification;     // nil
 
 // Each notification includes a nil object and a userInfo dictionary containing the
 // begining and ending keyboard frame in screen coordinates. Use the various UIView and
 // UIWindow convertRect facilities to get the frame in the desired coordinate system.
 // Animation key/value pairs are only available for the "will" family of notification.
-UIKIT_EXTERN NSString *const UIKeyboardWillShowNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIKeyboardDidShowNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIKeyboardWillHideNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIKeyboardDidHideNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIKeyboardWillShowNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIKeyboardDidShowNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIKeyboardWillHideNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIKeyboardDidHideNotification __TVOS_PROHIBITED;
 
 UIKIT_EXTERN NSString *const UIKeyboardFrameBeginUserInfoKey        NS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED; // NSValue of CGRect
 UIKIT_EXTERN NSString *const UIKeyboardFrameEndUserInfoKey          NS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED; // NSValue of CGRect
@@ -66,8 +66,8 @@ UIKIT_EXTERN NSString *const UIKeyboardIsLocalUserInfoKey           NS_AVAILABLE
 
 // Like the standard keyboard notifications above, these additional notifications include
 // a nil object and begin/end frames of the keyboard in screen coordinates in the userInfo dictionary.
-UIKIT_EXTERN NSString *const UIKeyboardWillChangeFrameNotification  NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIKeyboardDidChangeFrameNotification   NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIKeyboardWillChangeFrameNotification  NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIKeyboardDidChangeFrameNotification   NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
 
 // These keys are superseded by UIKeyboardFrameBeginUserInfoKey and UIKeyboardFrameEndUserInfoKey.
 UIKIT_EXTERN NSString *const UIKeyboardCenterBeginUserInfoKey   NS_DEPRECATED_IOS(2_0, 3_2) __TVOS_PROHIBITED;

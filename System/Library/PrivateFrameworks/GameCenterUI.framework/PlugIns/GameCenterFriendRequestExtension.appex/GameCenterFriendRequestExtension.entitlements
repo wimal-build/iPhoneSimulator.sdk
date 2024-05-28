@@ -40,6 +40,8 @@
         <key>com.apple.security.exception.mach-lookup.global-name</key>
         <array>
             <string>com.apple.ak.auth.xpc</string>
+            <string>com.apple.cdp.daemon</string>
+            <string>com.apple.mobile.keybagd.xpc</string>
         </array>
         <key>com.apple.itunesstored.private</key>
         <true/>

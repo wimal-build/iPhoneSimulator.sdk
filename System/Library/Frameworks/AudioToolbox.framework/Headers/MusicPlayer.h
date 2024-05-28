@@ -37,12 +37,15 @@
 
 #include <Availability.h>
 #include <CoreFoundation/CoreFoundation.h>
-#include <AudioUnit/MusicDevice.h>
+#include <AudioToolbox/MusicDevice.h>
 #include <AudioToolbox/AUGraph.h>
 
 #if __has_include(<CoreMIDI/MIDIServices.h>)
 	#include <CoreMIDI/MIDIServices.h>
+#else
+	typedef UInt32 MIDIEndpointRef;
 #endif
+
 
 CF_ASSUME_NONNULL_BEGIN
 
@@ -484,7 +487,7 @@ DisposeMusicPlayer(		MusicPlayer		inPlayer)								__OSX_AVAILABLE_STARTING(__MA
 */
 extern OSStatus
 MusicPlayerSetSequence(	MusicPlayer 	inPlayer,
-						MusicSequence 	inSequence)								__OSX_AVAILABLE_STARTING(__MAC_10_0,__IPHONE_5_0);
+						MusicSequence __nullable inSequence)					__OSX_AVAILABLE_STARTING(__MAC_10_0,__IPHONE_5_0);
 
 /*!
 	@function	MusicPlayerGetSequence
@@ -765,7 +768,6 @@ extern OSStatus
 MusicSequenceGetAUGraph(	MusicSequence 					inSequence,
 							AUGraph __nullable * __nonnull	outGraph)			__OSX_AVAILABLE_STARTING(__MAC_10_0,__IPHONE_5_0);
 
-#if (TARGET_OS_MAC && !TARGET_OS_IPHONE) || TARGET_OS_IOS
 /*!
 	@function	MusicSequenceSetMIDIEndpoint
 	@abstract	Makes the target of all of the tracks in the sequence a MIDI endpoint
@@ -777,9 +779,8 @@ MusicSequenceGetAUGraph(	MusicSequence 					inSequence,
 */
 extern OSStatus
 MusicSequenceSetMIDIEndpoint(	MusicSequence 	inSequence,
-								MIDIEndpointRef	inEndpoint)						__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0);
+								MIDIEndpointRef	inEndpoint)						__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 	
-#endif
 /*!
 	@function	MusicSequenceSetSequenceType
 	@abstract	Set the sequence type (the default is beats)
@@ -1104,7 +1105,6 @@ extern OSStatus
 MusicTrackSetDestNode(	MusicTrack 			inTrack,
 						AUNode				inNode)								__OSX_AVAILABLE_STARTING(__MAC_10_0,__IPHONE_5_0);
 
-#if (TARGET_OS_MAC && !TARGET_OS_IPHONE) || TARGET_OS_IOS
 /*!
 	@function	MusicTrackSetDestMIDIEndpoint
 	@abstract	Sets the track's target to the specified MIDI endpoint
@@ -1114,9 +1114,7 @@ MusicTrackSetDestNode(	MusicTrack 			inTrack,
 */
 extern OSStatus
 MusicTrackSetDestMIDIEndpoint(	MusicTrack			inTrack,
-								MIDIEndpointRef		inEndpoint)					__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0);
-
-#endif
+								MIDIEndpointRef		inEndpoint)					__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 	
 /*!
 	@function	MusicTrackGetDestNode
@@ -1130,7 +1128,6 @@ extern OSStatus
 MusicTrackGetDestNode(			MusicTrack 			inTrack,
 								AUNode *			outNode)					__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0);
 
-#if (TARGET_OS_MAC && !TARGET_OS_IPHONE) || TARGET_OS_IOS
 /*!
 	@function	MusicTrackGetDestMIDIEndpoint
 	@abstract	Gets the track's target if it is a MIDI Endpoint
@@ -1141,8 +1138,7 @@ MusicTrackGetDestNode(			MusicTrack 			inTrack,
 */
 extern OSStatus
 MusicTrackGetDestMIDIEndpoint(	MusicTrack			inTrack,
-								MIDIEndpointRef	*	outEndpoint)				__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0);
-#endif
+								MIDIEndpointRef	*	outEndpoint)				__OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_5_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 	
 /*!
 	@function	MusicTrackSetProperty
@@ -1609,11 +1605,11 @@ MusicEventIteratorHasCurrentEvent(	MusicEventIterator	inIterator,
 // standard MIDI files (SMF, and RMF)
 
 // MusicSequenceLoadSMF() also intelligently parses an RMID file to extract SMF part
-#if !__LP64__
+#if !TARGET_RT_64_BIT
 extern OSStatus
 MusicSequenceLoadSMFData(	MusicSequence	inSequence,
 							CFDataRef		inData)					__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2,__MAC_10_5, __IPHONE_NA, __IPHONE_NA);
-#endif // !__LP64__
+#endif // !TARGET_RT_64_BIT
 
 
 // passing a value of zero for the flags makes this call equivalent to MusicSequenceLoadSMFData

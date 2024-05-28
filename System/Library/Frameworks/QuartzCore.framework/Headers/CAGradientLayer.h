@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+CA_CLASS_AVAILABLE (10.6, 3.0, 9.0, 2.0)
 @interface CAGradientLayer : CALayer
 
 /* The array of CGColorRef objects defining the color of each gradient
@@ -48,6 +49,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** `type' values. **/
 
 CA_EXTERN NSString * const kCAGradientLayerAxial
-    __OSX_AVAILABLE_STARTING (__MAC_10_6, __IPHONE_3_0);
+    CA_AVAILABLE_STARTING (10.6, 3.0, 9.0, 2.0);
 
 NS_ASSUME_NONNULL_END

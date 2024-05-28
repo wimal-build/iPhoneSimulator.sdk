@@ -2,7 +2,7 @@
 //  UIImageView.h
 //  UIKit
 //
-//  Copyright (c) 2006-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -38,7 +38,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImageView : UIView
 
 - (void)startAnimating;
 - (void)stopAnimating;
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, getter=isAnimating) BOOL animating;
+#else
 - (BOOL)isAnimating;
+#endif
 
 // if YES, the UIImageView will display a focused appearance when any of its immediate or distant superviews become focused
 @property (nonatomic) BOOL adjustsImageWhenAncestorFocused UIKIT_AVAILABLE_TVOS_ONLY(9_0);

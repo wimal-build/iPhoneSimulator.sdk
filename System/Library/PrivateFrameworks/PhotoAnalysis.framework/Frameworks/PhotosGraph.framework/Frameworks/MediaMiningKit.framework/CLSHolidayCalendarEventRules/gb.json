@@ -1,0 +1,348 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "CFB1A4CF-3632-4B69-9191-56AC394A3ACB"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 11
+        }
+      ],
+      "name" : "Guy Fawkes Night",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant"
+        ]
+      },
+      "uuid" : "51B9567C-A255-4FBF-833B-89DDBB7AA98A"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 30,
+          "month" : 11
+        }
+      ],
+      "name" : "St Andrew’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "E1F0AC2D-3E01-4CA1-A992-AB7F28A33D37"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 17,
+          "month" : 3
+        }
+      ],
+      "name" : "St. Patrick’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "0D3F1778-AC47-490D-8E78-2D10D453D2B7"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "93B721D6-4A3A-433F-92CB-FAE0CC21ECAA"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 11,
+          "weekday": 1,
+          "weekdayOrdinal": 2
+        }
+      ],
+      "name" : "Remembrance Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "4918A76F-9B07-4C3D-A6D9-CBE18A4B8493"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter Sunday",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "food"
+        ]
+      },
+      "uuid" : "B02EDC44-2459-46D2-9BB6-FEE78F12E215"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 4
+        }
+      ],
+      "name" : "April Fool’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "06225CA5-E9E6-4569-91C4-2444A543BCAE"
+    },
+    {
+      "dateRules" : [
+        {
+          "relativeToRule" : "B02EDC44-2459-46D2-9BB6-FEE78F12E215",
+          "offsetDays" : -46
+        }
+      ],
+      "name" : "Ash Wednesday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "781C45F8-3EDE-4DC4-BD66-7F5CB7254841"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "gb",
+    "countryName" : "United Kingdom"
+  }
+}

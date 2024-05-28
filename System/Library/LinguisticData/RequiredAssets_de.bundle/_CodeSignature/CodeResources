@@ -4,33 +4,53 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AssetData/EventTypeClassifier.lstm</key>
+		<data>
+		i0USDEa8YsH8dfoN/7ojk8Eopek=
+		</data>
+		<key>AssetData/Multilingual-de-en.model</key>
+		<data>
+		Xd/yGVv9EeFfy5Aw78j6lMtr8qs=
+		</data>
+		<key>AssetData/Multilingual-de-es.model</key>
+		<data>
+		06ItiKs4Z04uqWkzB9TmOOwSYVg=
+		</data>
+		<key>AssetData/Multilingual-de-fr.model</key>
+		<data>
+		bYyJPw6ZaS5nA7WWruHok7DnwmU=
+		</data>
+		<key>AssetData/Multilingual-de-it.model</key>
+		<data>
+		B/ZVK90ijXpnk6fnoQ2KocHh/0M=
+		</data>
+		<key>AssetData/Multilingual-de-pt.model</key>
+		<data>
+		fIl13MsU6edfECSoYniMym9uNLY=
+		</data>
 		<key>AssetData/Phrases-de.dat</key>
 		<data>
-		I0vZ/fdWPTu0dH1JZdU2KFWumH0=
+		yROZU3D1G4YQPm4ajysa1m9ITWk=
 		</data>
 		<key>AssetData/Phrases-de.idx</key>
 		<data>
-		hlpK0jsRM3PkjVCaRwny7fXB/YE=
-		</data>
-		<key>AssetData/PolarityMap.lsm</key>
-		<data>
-		sLfP1bAo97ggD49uxGCOyC85oZ0=
+		mEtu+ZCIcQuhd5nTzk0cc4Di+pk=
 		</data>
 		<key>AssetData/Unigrams-de.dat</key>
 		<data>
-		CyuksMTVPKtAdhHUXF66wumT8xA=
+		+Sin05/nThQJrM6f7h9Zgxjahm8=
 		</data>
 		<key>AssetData/Unigrams-de.idx</key>
 		<data>
-		jF+8NdC2Z5TGuINZ94ZuNd5zRPo=
+		z04DHhCMAc/9prhPdKnYVSx9Urs=
 		</data>
 		<key>AssetData/de.lm/Info.plist</key>
 		<data>
-		8U44w9TD4Rucktwn6QmFd9xRN1s=
+		iD7sYZX/BUEL/N3ZJDs6Dp3IiBs=
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		nN1R+GhKaSoG6lJ2FfqHHTQx7vw=
+		RvSNapkBYNv1CVMe491h4aqTPyI=
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -38,15 +58,19 @@
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeResources</key>
 		<data>
-		GjH4SCv9Eepv7XgTx5b6B6akV6I=
+		dJz8cCyzyAb8gcP5YZ0tuAhOWMc=
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		9q/IMBwVtCCtUgYHtJg1tGpnO9A=
+		RwabUFSuJmAOSuYR6SuwQQYlXDc=
 		</data>
 		<key>AssetData/de.lm/blacklist.dat</key>
 		<data>
-		7+mEE9PM7Gf3J6cOHF9zaWaRkG4=
+		dBdl+4ApHfxS7/PgCCr35KM8LzA=
+		</data>
+		<key>AssetData/de.lm/fst.dat</key>
+		<data>
+		jGT+YZGylvcpIxk2oGaFG6ISbZ0=
 		</data>
 		<key>AssetData/de.lm/lexicon.dat</key>
 		<data>
@@ -54,11 +78,11 @@
 		</data>
 		<key>AssetData/de.lm/lm.dat</key>
 		<data>
-		iMFqcL8LX0nNRd1BBvMjt3pP4MU=
+		TKE5pLXEwI55X+CyGne9l3U44DI=
 		</data>
 		<key>AssetData/de.lm/morphology.dat</key>
 		<data>
-		uinSqqs5a/3yI+27wOPSIa9vTtg=
+		8O5uTRn9qOUaPZ7m6WKJRq/9fXY=
 		</data>
 		<key>AssetData/de.lm/variants.dat</key>
 		<data>
@@ -71,33 +95,53 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AssetData/EventTypeClassifier.lstm</key>
+		<data>
+		i0USDEa8YsH8dfoN/7ojk8Eopek=
+		</data>
+		<key>AssetData/Multilingual-de-en.model</key>
+		<data>
+		Xd/yGVv9EeFfy5Aw78j6lMtr8qs=
+		</data>
+		<key>AssetData/Multilingual-de-es.model</key>
+		<data>
+		06ItiKs4Z04uqWkzB9TmOOwSYVg=
+		</data>
+		<key>AssetData/Multilingual-de-fr.model</key>
+		<data>
+		bYyJPw6ZaS5nA7WWruHok7DnwmU=
+		</data>
+		<key>AssetData/Multilingual-de-it.model</key>
+		<data>
+		B/ZVK90ijXpnk6fnoQ2KocHh/0M=
+		</data>
+		<key>AssetData/Multilingual-de-pt.model</key>
+		<data>
+		fIl13MsU6edfECSoYniMym9uNLY=
+		</data>
 		<key>AssetData/Phrases-de.dat</key>
 		<data>
-		I0vZ/fdWPTu0dH1JZdU2KFWumH0=
+		yROZU3D1G4YQPm4ajysa1m9ITWk=
 		</data>
 		<key>AssetData/Phrases-de.idx</key>
 		<data>
-		hlpK0jsRM3PkjVCaRwny7fXB/YE=
-		</data>
-		<key>AssetData/PolarityMap.lsm</key>
-		<data>
-		sLfP1bAo97ggD49uxGCOyC85oZ0=
+		mEtu+ZCIcQuhd5nTzk0cc4Di+pk=
 		</data>
 		<key>AssetData/Unigrams-de.dat</key>
 		<data>
-		CyuksMTVPKtAdhHUXF66wumT8xA=
+		+Sin05/nThQJrM6f7h9Zgxjahm8=
 		</data>
 		<key>AssetData/Unigrams-de.idx</key>
 		<data>
-		jF+8NdC2Z5TGuINZ94ZuNd5zRPo=
+		z04DHhCMAc/9prhPdKnYVSx9Urs=
 		</data>
 		<key>AssetData/de.lm/Info.plist</key>
 		<data>
-		8U44w9TD4Rucktwn6QmFd9xRN1s=
+		iD7sYZX/BUEL/N3ZJDs6Dp3IiBs=
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		nN1R+GhKaSoG6lJ2FfqHHTQx7vw=
+		RvSNapkBYNv1CVMe491h4aqTPyI=
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -105,15 +149,19 @@
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeResources</key>
 		<data>
-		GjH4SCv9Eepv7XgTx5b6B6akV6I=
+		dJz8cCyzyAb8gcP5YZ0tuAhOWMc=
 		</data>
 		<key>AssetData/de.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		9q/IMBwVtCCtUgYHtJg1tGpnO9A=
+		RwabUFSuJmAOSuYR6SuwQQYlXDc=
 		</data>
 		<key>AssetData/de.lm/blacklist.dat</key>
 		<data>
-		7+mEE9PM7Gf3J6cOHF9zaWaRkG4=
+		dBdl+4ApHfxS7/PgCCr35KM8LzA=
+		</data>
+		<key>AssetData/de.lm/fst.dat</key>
+		<data>
+		jGT+YZGylvcpIxk2oGaFG6ISbZ0=
 		</data>
 		<key>AssetData/de.lm/lexicon.dat</key>
 		<data>
@@ -121,11 +169,11 @@
 		</data>
 		<key>AssetData/de.lm/lm.dat</key>
 		<data>
-		iMFqcL8LX0nNRd1BBvMjt3pP4MU=
+		TKE5pLXEwI55X+CyGne9l3U44DI=
 		</data>
 		<key>AssetData/de.lm/morphology.dat</key>
 		<data>
-		uinSqqs5a/3yI+27wOPSIa9vTtg=
+		8O5uTRn9qOUaPZ7m6WKJRq/9fXY=
 		</data>
 		<key>AssetData/de.lm/variants.dat</key>
 		<data>

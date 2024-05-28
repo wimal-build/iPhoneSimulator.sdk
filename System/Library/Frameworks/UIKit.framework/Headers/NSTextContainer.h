@@ -18,7 +18,7 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextContainer : NSObject <NSCoding, N
 /**************************** Initialization ****************************/
 
 - (instancetype)initWithSize:(CGSize)size NS_DESIGNATED_INITIALIZER NS_AVAILABLE(10_11, 7_0);
-- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 
 /**************************** Layout ****************************/

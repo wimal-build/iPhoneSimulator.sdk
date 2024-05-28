@@ -1,0 +1,12 @@
+-- Migrates traces from v26 to v27
+
+BEGIN TRANSACTION;
+
+CREATE TABLE debug_settings
+(
+eta_refresh_interval            NUMERIC,
+eta_initial_refresh_interval    NUMERIC,
+eta_fake_alert                  INTEGER     -- see NavigationFakeIncidentInETAResponseType enum
+);
+
+COMMIT;

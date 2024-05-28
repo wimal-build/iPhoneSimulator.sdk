@@ -16,13 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
  @class     HKStatisticsQuery
  @abstract  Calculates statistics on quantity samples matching the given quantity type and predicate.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKStatisticsQuery : HKQuery
 
 - (instancetype)initWithQuantityType:(HKQuantityType *)quantityType
              quantitySamplePredicate:(nullable NSPredicate *)quantitySamplePredicate
                              options:(HKStatisticsOptions)options
-                   completionHandler:(void(^)(HKStatisticsQuery *query, HKStatistics * __nullable result, NSError * __nullable error))handler;
+                   completionHandler:(void(^)(HKStatisticsQuery *query, HKStatistics * _Nullable result, NSError * _Nullable error))handler;
 
 @end
 

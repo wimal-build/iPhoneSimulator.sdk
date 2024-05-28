@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class represents an event that is evaluated based on entry to and/or
  *        exit from a Region
  */
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMLocationEvent : HMEvent
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -28,7 +28,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *
  * @return Instance object representing the location event.
  */
-- (instancetype)initWithRegion:(CLRegion *)region __WATCHOS_PROHIBITED;
+- (instancetype)initWithRegion:(CLRegion *)region __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief Region on which events are triggered based on the properties notifyOnEntry and notifyOnExit.
@@ -45,7 +45,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateRegion:(CLRegion *)region completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updateRegion:(CLRegion *)region completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 @end
 

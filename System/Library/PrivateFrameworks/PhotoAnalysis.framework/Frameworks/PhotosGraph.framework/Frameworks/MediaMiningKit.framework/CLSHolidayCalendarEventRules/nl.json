@@ -1,0 +1,322 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 3}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment"
+        ]
+      },
+      "uuid" : "BC75C000-8BB0-4CE0-BF4B-C5CA41C1EF5F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 27,
+          "month" : 4
+        }
+      ],
+      "name" : "King’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "05511127-2B72-456B-BE59-3AE0FB3C5BA9"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 26,
+          "month" : 12
+        }
+      ],
+      "name" : "St. Stephen’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "C09BE556-1D9D-4963-A700-9507843A8AE8"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "25664AD5-9DB7-412F-BD7E-6A808C80B95C"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1F3B65C3-C056-4E9C-A287-587123E67855"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter Sunday",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "B02EDC44-2459-46D2-9BB6-FEE78F12E215"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 12
+        }
+      ],
+      "name" : "St Nicholas Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "AECBF691-7660-44FE-A3E3-8F52053AB03D"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 5
+        }
+      ],
+      "name" : "National Remembrance Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "64AF7C8B-3E22-4EE6-8E13-5B5BFD9640F6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "93B721D6-4A3A-433F-92CB-FAE0CC21ECAA"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "nl",
+    "countryName" : "Netherlands"
+  }
+}

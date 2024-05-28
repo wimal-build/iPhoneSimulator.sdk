@@ -5,7 +5,6 @@
 //  Copyright 2008 Apple Inc. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 #import <QuickLook/QLBase.h>
 
@@ -13,14 +12,10 @@
 @protocol QLPreviewControllerDelegate;
 @protocol QLPreviewControllerDataSource;
 
-@class QLPreviewControllerReserved;
-
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(NA, 4_0) QL_EXPORT
-@interface QLPreviewController : UIViewController {
-    QLPreviewControllerReserved * _reserved;
-}
+NS_CLASS_AVAILABLE_IOS(4_0) QL_EXPORT
+@interface QLPreviewController : UIViewController
 
 /*!
  * @abstract Returns YES if QLPreviewController can display this preview item.
@@ -34,7 +29,7 @@ NS_CLASS_AVAILABLE(NA, 4_0) QL_EXPORT
 /*!
  * @abstract The Preview Panel data source.
  */
-@property(weak, nullable) id <QLPreviewControllerDataSource> dataSource;
+@property(nonatomic, weak, nullable) id <QLPreviewControllerDataSource> dataSource;
 
 /*!
  * @abstract Asks the Preview Controller to reload its data from its data source.
@@ -67,7 +62,7 @@ NS_CLASS_AVAILABLE(NA, 4_0) QL_EXPORT
  * @abstract The Preview Controller delegate.
  * @discussion Should implement the <QLPreviewControllerDelegate> protocol
  */
-@property(weak, nullable) id <QLPreviewControllerDelegate> delegate;
+@property(nonatomic, weak, nullable) id <QLPreviewControllerDelegate> delegate;
 
 @end
 
@@ -101,6 +96,7 @@ QL_EXPORT @protocol QLPreviewControllerDataSource
 QL_EXPORT @protocol QLPreviewControllerDelegate <NSObject>
 @optional
 
+
 /*!
  * @abstract Invoked before the preview controller is closed.
  */
@@ -122,7 +118,7 @@ QL_EXPORT @protocol QLPreviewControllerDelegate <NSObject>
  * @abstract Invoked when the preview controller is about to be presented full screen or dismissed from full screen, to provide a zoom effect.
  * @discussion Return the origin of the zoom. It should be relative to view, or screen based if view is not set. The controller will fade in/out if the rect is CGRectZero.
  */
-- (CGRect)previewController:(QLPreviewController *)controller frameForPreviewItem:(id <QLPreviewItem>)item inSourceView:(UIView * __nullable * __nonnull)view;
+- (CGRect)previewController:(QLPreviewController *)controller frameForPreviewItem:(id <QLPreviewItem>)item inSourceView:(UIView * _Nullable * __nonnull)view;
 
 /*!
  * @abstract Invoked when the preview controller is about to be presented full screen or dismissed from full screen, to provide a smooth transition when zooming.
@@ -130,6 +126,13 @@ QL_EXPORT @protocol QLPreviewControllerDelegate <NSObject>
  * @discussion Return an image the controller will crossfade with when zooming. You can specify the actual "document" content rect in the image in contentRect.
  */
 - (UIImage *)previewController:(QLPreviewController *)controller transitionImageForPreviewItem:(id <QLPreviewItem>)item contentRect:(CGRect *)contentRect;
+
+/*!
+ * @abstract Invoked when the preview controller is about to be presented full screen or dismissed from full screen, to provide a smooth transition when zooming.
+ * @discussion  Return the view that will crossfade with the preview.
+ */
+- (UIView* _Nullable)previewController:(QLPreviewController *)controller transitionViewForPreviewItem:(id <QLPreviewItem>)item NS_AVAILABLE_IOS(10_0);
+
 
 @end
 

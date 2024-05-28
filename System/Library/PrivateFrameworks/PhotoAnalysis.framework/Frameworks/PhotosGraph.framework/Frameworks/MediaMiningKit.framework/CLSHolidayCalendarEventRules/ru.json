@@ -1,0 +1,194 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 1
+        }
+      ],
+      "name" : "Orthodox New Year",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0,10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "2764060D-5AD7-4DDA-98C8-F740652B22DA"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1F3B65C3-C056-4E9C-A287-587123E67855"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 8,
+          "month" : 3
+        }
+      ],
+      "name" : "Women’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "1FE454D9-C3B8-4759-AC1D-F094B5FBF6E7"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 12,
+          "month" : 4
+        }
+      ],
+      "name" : "Cosmonautics Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "D4712A4D-2A62-4715-A353-B6E4FC15C715"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 9
+        }
+      ],
+      "name" : "Knowledge Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "0E3AD837-677C-4F4F-A7AD-BD896A2EDDF5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 2
+        }
+      ],
+      "name" : "Defender of the Fatherland Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "EEBB1BE5-3185-493A-A2DD-88A6767AFED3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 9,
+          "month" : 5
+        }
+      ],
+      "name" : "Victory Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0,10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "600B978A-7615-4ABC-8127-C1B1AE9A7698"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 11
+        }
+      ],
+      "name" : "Unity Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "D10A1A20-AD11-4C31-A200-B09B0368332B"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "ru",
+    "countryName" : "Russia"
+  }
+}

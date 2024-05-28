@@ -7,12 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import <Photos/PhotosTypes.h>
+#import <Photos/PhotosDefines.h>
 
 @class PHObject;
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHFetchOptions : NSObject <NSCopying>
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHFetchOptions : NSObject <NSCopying>
 
 // Some predicates / sorts may be suboptimal and we will log
 @property (nonatomic, strong, nullable) NSPredicate *predicate;
@@ -26,10 +27,10 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHFetchOptions : NSObject <NSCopying>
 
 // The asset source types included in the fetch results.  Defaults to PHAssetSourceTypeNone.
 // If set to PHAssetSourceTypeNone the asset source types included in the fetch results are inferred from the type of query performed (see PHAsset fetchAssetsWithOptions:)
-@property (nonatomic, assign) PHAssetSourceType includeAssetSourceTypes NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign) PHAssetSourceType includeAssetSourceTypes PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
 
 // Limits the maximum number of objects returned in the fetch result, a value of 0 means no limit.  Defaults to 0.
-@property (nonatomic, assign, readwrite) NSUInteger fetchLimit NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign, readwrite) NSUInteger fetchLimit PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
 
 // Whether the owner of this object is interested in incremental change details for the results of this fetch (see PHChange)
 // Defaults to YES

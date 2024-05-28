@@ -2,10 +2,11 @@
 //  UIView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIResponder.h>
 #import <UIKit/UIInterface.h>
 #import <UIKit/UIKitDefines.h>
@@ -21,7 +22,7 @@ typedef NS_ENUM(NSInteger, UIViewAnimationCurve) {
     UIViewAnimationCurveEaseInOut,         // slow at beginning and end
     UIViewAnimationCurveEaseIn,            // slow at beginning
     UIViewAnimationCurveEaseOut,           // slow at end
-    UIViewAnimationCurveLinear
+    UIViewAnimationCurveLinear,
 };
 
 typedef NS_ENUM(NSInteger, UIViewContentMode) {
@@ -120,11 +121,6 @@ typedef NS_ENUM(NSInteger, UISemanticContentAttribute) {
     UISemanticContentAttributeForceRightToLeft
 } NS_ENUM_AVAILABLE_IOS(9_0);
 
-typedef NS_ENUM(NSInteger, UIUserInterfaceLayoutDirection) {
-    UIUserInterfaceLayoutDirectionLeftToRight,
-    UIUserInterfaceLayoutDirectionRightToLeft,
-} NS_ENUM_AVAILABLE_IOS(5_0);
-
 @protocol UICoordinateSpace <NSObject>
 
 - (CGPoint)convertPoint:(CGPoint)point toCoordinateSpace:(id <UICoordinateSpace>)coordinateSpace NS_AVAILABLE_IOS(8_0);
@@ -138,9 +134,13 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceLayoutDirection) {
 
 @class UIBezierPath, UIEvent, UIWindow, UIViewController, UIColor, UIGestureRecognizer, UIMotionEffect, CALayer, UILayoutGuide;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem, UITraitEnvironment, UICoordinateSpace, UIFocusEnvironment>
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem, UITraitEnvironment, UICoordinateSpace, UIFocusItem, CALayerDelegate>
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) Class layerClass;                        // default is [CALayer class]. Used when creating the underlying layer for the view.
+#else
 + (Class)layerClass;                        // default is [CALayer class]. Used when creating the underlying layer for the view.
+#endif
 
 - (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
@@ -149,11 +149,24 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 @property(nonatomic)                                 NSInteger tag;                // default is 0
 @property(nonatomic,readonly,strong)                 CALayer  *layer;              // returns view's layer. Will always return a non-nil value. view is layer's delegate
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic,readonly) BOOL canBecomeFocused NS_AVAILABLE_IOS(9_0); // NO by default
+#else
 - (BOOL)canBecomeFocused NS_AVAILABLE_IOS(9_0); // NO by default
+#endif
 @property (readonly, nonatomic, getter=isFocused) BOOL focused NS_AVAILABLE_IOS(9_0);
 
-+ (UIUserInterfaceLayoutDirection)userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute)attribute NS_AVAILABLE_IOS(9_0);
 @property (nonatomic) UISemanticContentAttribute semanticContentAttribute NS_AVAILABLE_IOS(9_0);
+
+// This method returns the layout direction implied by the provided semantic content attribute relative to the application-wide layout direction (as returned by UIApplication.sharedApplication.userInterfaceLayoutDirection).
++ (UIUserInterfaceLayoutDirection)userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute)attribute NS_AVAILABLE_IOS(9_0);
+
+// This method returns the layout direction implied by the provided semantic content attribute relative to the provided layout direction. For example, when provided a layout direction of RightToLeft and a semantic content attribute of Playback, this method returns LeftToRight. Layout and drawing code can use this method to determine how to arrange elements, but might find it easier to query the container view’s effectiveUserInterfaceLayoutDirection property instead.
++ (UIUserInterfaceLayoutDirection)userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute)semanticContentAttribute relativeToLayoutDirection:(UIUserInterfaceLayoutDirection)layoutDirection NS_AVAILABLE_IOS(10_0);
+
+// Returns the user interface layout direction appropriate for arranging the immediate content of this view. Always consult the effectiveUserInterfaceLayoutDirection of the view whose immediate content is being arranged or drawn. Do not assume that the value propagates through the view’s subtree.
+@property (readonly, nonatomic) UIUserInterfaceLayoutDirection effectiveUserInterfaceLayoutDirection NS_AVAILABLE_IOS(10_0);
+
 @end
 
 @interface UIView(UIViewGeometry)
@@ -298,10 +311,18 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 + (void)setAnimationTransition:(UIViewAnimationTransition)transition forView:(UIView *)view cache:(BOOL)cache;  // current limitation - only one per begin/commit block
 
 + (void)setAnimationsEnabled:(BOOL)enabled;                         // ignore any attribute changes while set.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) BOOL areAnimationsEnabled;
+#else
 + (BOOL)areAnimationsEnabled;
-+ (void)performWithoutAnimation:(void (^)(void))actionsWithoutAnimation NS_AVAILABLE_IOS(7_0);
+#endif
++ (void)performWithoutAnimation:(void (NS_NOESCAPE ^)(void))actionsWithoutAnimation NS_AVAILABLE_IOS(7_0);
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) NSTimeInterval inheritedAnimationDuration NS_AVAILABLE_IOS(9_0);
+#else
 + (NSTimeInterval)inheritedAnimationDuration NS_AVAILABLE_IOS(9_0);
+#endif
 
 @end
 
@@ -402,7 +423,7 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
 
 @interface UIView (UIConstraintBasedLayoutCoreMethods) 
 - (void)updateConstraintsIfNeeded NS_AVAILABLE_IOS(6_0); // Updates the constraints from the bottom up for the view hierarchy rooted at the receiver. UIWindow's implementation creates a layout engine if necessary first.
-- (void)updateConstraints NS_AVAILABLE_IOS(6_0); // Override this to adjust your special constraints during a constraints update pass
+- (void)updateConstraints NS_AVAILABLE_IOS(6_0) NS_REQUIRES_SUPER; // Override this to adjust your special constraints during a constraints update pass
 - (BOOL)needsUpdateConstraints NS_AVAILABLE_IOS(6_0);
 - (void)setNeedsUpdateConstraints NS_AVAILABLE_IOS(6_0);
 @end
@@ -421,7 +442,11 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
 
 /* constraint-based layout engages lazily when someone tries to use it (e.g., adds a constraint to a view).  If you do all of your constraint set up in -updateConstraints, you might never even receive updateConstraints if no one makes a constraint.  To fix this chicken and egg problem, override this method to return YES if your view needs the window to use constraint-based layout.  
  */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) BOOL requiresConstraintBasedLayout NS_AVAILABLE_IOS(6_0);
+#else
 + (BOOL)requiresConstraintBasedLayout NS_AVAILABLE_IOS(6_0);
+#endif
 
 @end
 
@@ -443,7 +468,11 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
 
 /* override this if the alignment rect is obtained from the frame by insetting each edge by a fixed amount.  This is only called by alignmentRectForFrame: and frameForAlignmentRect:.
  */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) UIEdgeInsets alignmentRectInsets NS_AVAILABLE_IOS(6_0);
+#else
 - (UIEdgeInsets)alignmentRectInsets NS_AVAILABLE_IOS(6_0);
+#endif
 
 - (UIView *)viewForBaselineLayout NS_DEPRECATED_IOS(6_0, 9_0, "Override -viewForFirstBaselineLayout or -viewForLastBaselineLayout as appropriate, instead") __TVOS_PROHIBITED;
 
@@ -483,7 +512,11 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
  Note that not all views have an intrinsicContentSize.  UIView's default implementation is to return (UIViewNoIntrinsicMetric, UIViewNoIntrinsicMetric).  The _intrinsic_ content size is concerned only with data that is in the view itself, not in other views. Remember that you can also set constant width or height constraints on any view, and you don't need to override instrinsicContentSize if these dimensions won't be changing with changing view content.
  */
 UIKIT_EXTERN const CGFloat UIViewNoIntrinsicMetric NS_AVAILABLE_IOS(6_0); // -1
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) CGSize intrinsicContentSize NS_AVAILABLE_IOS(6_0);
+#else
 - (CGSize)intrinsicContentSize NS_AVAILABLE_IOS(6_0);
+#endif
 - (void)invalidateIntrinsicContentSize NS_AVAILABLE_IOS(6_0); // call this when something changes that affects the intrinsicContentSize.  Otherwise UIKit won't notice that it changed.  
 
 - (UILayoutPriority)contentHuggingPriorityForAxis:(UILayoutConstraintAxis)axis NS_AVAILABLE_IOS(6_0);
@@ -556,8 +589,33 @@ UIKIT_EXTERN const CGSize UILayoutFittingExpandedSize NS_AVAILABLE_IOS(6_0);
  -hasAmbiguousLayout runs a check for whether there is another center and bounds the receiver could have that could also satisfy the constraints.
  -exerciseAmbiguousLayout does more.  It randomly changes the view layout to a different valid layout.  Making the UI jump back and forth can be helpful for figuring out where you're missing a constraint.  
  */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL hasAmbiguousLayout NS_AVAILABLE_IOS(6_0);
+#else
 - (BOOL)hasAmbiguousLayout NS_AVAILABLE_IOS(6_0);
+#endif
+
 - (void)exerciseAmbiguityInLayout NS_AVAILABLE_IOS(6_0); 
+@end
+
+/* Everything in this section should be used in debugging only, never in shipping code.  These methods may not exist in the future - no promises.
+ */
+@interface UILayoutGuide (UIConstraintBasedLayoutDebugging)
+
+/* This returns a list of all the constraints that are affecting the current location of the receiver.  The constraints do not necessarily involve the receiver, they may affect the frame indirectly.
+ Pass UILayoutConstraintAxisHorizontal for the constraints affecting [self center].x and CGRectGetWidth([self bounds]), and UILayoutConstraintAxisVertical for the constraints affecting[self center].y and CGRectGetHeight([self bounds]).
+ */
+- (NSArray<__kindof NSLayoutConstraint *> *)constraintsAffectingLayoutForAxis:(UILayoutConstraintAxis)axis NS_AVAILABLE_IOS(10_0);
+
+/* If there aren't enough constraints in the system to uniquely determine layout, we say the layout is ambiguous.  For example, if the only constraint in the system was x = y + 100, then there are lots of different possible values for x and y.  This situation is not automatically detected by UIKit, due to performance considerations and details of the algorithm used for layout.
+ The symptom of ambiguity is that views sometimes jump from place to place, or possibly are just in the wrong place.
+ -hasAmbiguousLayout runs a check for whether there is another center and bounds the receiver could have that could also satisfy the constraints.
+ */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL hasAmbiguousLayout NS_AVAILABLE_IOS(10_0);
+#else
+- (BOOL)hasAmbiguousLayout NS_AVAILABLE_IOS(10_0);
+#endif
 @end
 
 @interface UIView (UIStateRestoration)
@@ -581,8 +639,8 @@ UIKIT_EXTERN const CGSize UILayoutFittingExpandedSize NS_AVAILABLE_IOS(6_0);
 
 * Creating snapshots from existing snapshots (as a method to duplicate, crop or create a resizable variant) is supported. In cases where many snapshots are needed, creating a snapshot from a common superview and making subsequent snapshots from it can be more performant. Please keep in mind that if 'afterUpdates' is YES, the original snapshot is committed and any changes made to it, not the view originally snapshotted, will be included.
  */
-- (UIView *)snapshotViewAfterScreenUpdates:(BOOL)afterUpdates NS_AVAILABLE_IOS(7_0);
-- (UIView *)resizableSnapshotViewFromRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates withCapInsets:(UIEdgeInsets)capInsets NS_AVAILABLE_IOS(7_0);  // Resizable snapshots will default to stretching the center
+- (nullable UIView *)snapshotViewAfterScreenUpdates:(BOOL)afterUpdates NS_AVAILABLE_IOS(7_0);
+- (nullable UIView *)resizableSnapshotViewFromRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates withCapInsets:(UIEdgeInsets)capInsets NS_AVAILABLE_IOS(7_0);  // Resizable snapshots will default to stretching the center
 // Use this method to render a snapshot of the view hierarchy into the current context. Returns NO if the snapshot is missing image data, YES if the snapshot is complete. Calling this method from layoutSubviews while the current transaction is committing will capture what is currently displayed regardless if afterUpdates is YES.
 - (BOOL)drawViewHierarchyInRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates NS_AVAILABLE_IOS(7_0);
 @end

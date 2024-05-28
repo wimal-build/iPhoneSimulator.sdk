@@ -4,6 +4,14 @@
 <dict>
 	<key>LaunchEvents</key>
 	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.GeoServices.countryCodeChanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.GeoServices.countryCodeChanged</string>
+			</dict>
+		</dict>
 		<key>com.apple.xpc.activity</key>
 		<dict>
 			<key>com.apple.Maps.mapspushd.launchForAnnouncements</key>

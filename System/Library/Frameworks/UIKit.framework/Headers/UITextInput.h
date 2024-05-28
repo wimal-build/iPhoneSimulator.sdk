@@ -2,7 +2,7 @@
 //  UITextInput.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -18,7 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UIKeyInput <UITextInputTraits>
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL hasText;
+#else
 - (BOOL)hasText;
+#endif
 - (void)insertText:(NSString *)text;
 - (void)deleteBackward;
 
@@ -188,7 +192,11 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
  * pending dictation results. -insertDictationPlaceholder must return a reference to the 
  * placeholder. This reference will be used to identify the placeholder by the other methods
  * (there may be more than one placeholder). */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) id insertDictationResultPlaceholder;
+#else
 - (id)insertDictationResultPlaceholder;
+#endif
 - (CGRect)frameForDictationResultPlaceholder:(id)placeholder;
 /* willInsertResult will be NO if the recognition failed. */
 - (void)removeDictationResultPlaceholder:(id)placeholder willInsertResult:(BOOL)willInsertResult;
@@ -278,11 +286,15 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UITextInputMode : NSObject <NSSecureCodin
 @property (nullable, nonatomic, readonly, strong) NSString *primaryLanguage; // The primary language, if any, of the input mode.  A BCP 47 language identifier such as en-US
 
 // To query the UITextInputMode, refer to the UIResponder method -textInputMode.
-+ (nullable UITextInputMode *)currentInputMode NS_DEPRECATED_IOS(4_2, 7_0)  __TVOS_PROHIBITED;; // The current input mode.  Nil if unset.
-+ (NSArray<NSString *> *)activeInputModes; // The activate input modes.
++ (nullable UITextInputMode *)currentInputMode NS_DEPRECATED_IOS(4_2, 7_0)  __TVOS_PROHIBITED; // The current input mode.  Nil if unset.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) NSArray<UITextInputMode *> *activeInputModes; // The active input modes.
+#else
++ (NSArray<UITextInputMode *> *)activeInputModes; // The active input modes.
+#endif
 
 @end
 
-UIKIT_EXTERN NSString *const UITextInputCurrentInputModeDidChangeNotification NS_AVAILABLE_IOS(4_2);
+UIKIT_EXTERN NSNotificationName const UITextInputCurrentInputModeDidChangeNotification NS_AVAILABLE_IOS(4_2);
 
 NS_ASSUME_NONNULL_END

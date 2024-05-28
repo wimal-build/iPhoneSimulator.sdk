@@ -2,10 +2,10 @@
 //  UISplitViewController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UIViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,7 +39,11 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 @property (nonatomic, readonly) UISplitViewControllerDisplayMode displayMode NS_AVAILABLE_IOS(8_0);
 
 // A system bar button item whose action will change the displayMode property depending on the result of targetDisplayModeForActionInSplitViewController:. When inserted into the navigation bar of the secondary view controller it will change its appearance to match its target display mode. When the target displayMode is PrimaryHidden, this will appear as a fullscreen button, for AllVisible or PrimaryOverlay it will appear as a Back button, and when it won't cause any action it will become hidden.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property (nonatomic, readonly) UIBarButtonItem *displayModeButtonItem NS_AVAILABLE_IOS(8_0);
+#else
 - (UIBarButtonItem *)displayModeButtonItem NS_AVAILABLE_IOS(8_0);
+#endif
 
 // An animatable property that can be used to adjust the relative width of the primary view controller in the split view controller. This preferred width will be limited by the maximum and minimum properties (and potentially other system heuristics).
 @property(nonatomic, assign) CGFloat preferredPrimaryColumnWidthFraction NS_AVAILABLE_IOS(8_0); // default: UISplitViewControllerAutomaticDimension

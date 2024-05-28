@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion This class describes a trigger which is an event that can
  *             be used to execute one or more action sets when the event fires.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMTrigger : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -57,7 +57,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @param completion Block that is invoked once the request is processed.
  *                   The NSError provides more information on the status of the request.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief Registers an action set to be executed when the trigger is fired.
@@ -68,7 +68,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request.
  */
-- (void)addActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)addActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief De-registers an action set from the trigger.
@@ -78,7 +78,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request.
  */
-- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief Enables or disables the trigger. 
@@ -95,7 +95,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request.
  */
-- (void)enable:(BOOL)enable completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)enable:(BOOL)enable completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 @end
 

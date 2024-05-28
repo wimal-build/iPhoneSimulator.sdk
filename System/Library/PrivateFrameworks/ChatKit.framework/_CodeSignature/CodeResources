@@ -4,15 +4,41 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AcknowledgmentReceiveSound.aif</key>
+		<data>
+		bhSgj7lXU129vEfYfHPiJcE5y0k=
+		</data>
+		<key>AcknowledgmentSendSound.caf</key>
+		<data>
+		nrR4L+hGH/79/nHcFSWD4hK/GcY=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		AzDfEdKFkKEMZsTkyFOffYaW7QQ=
+		5aY88n1k4YSlN52+ILo/F7UE204=
 		</data>
 		<key>Dutch.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r9+f/DX0hUioys8exBqqchJ3Loc=
+			U02Rw3Kbrz3koRg5JrXm8m9+vT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwk7Otgq2drCdnq4FrTU/oY+tVE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -21,7 +47,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y3rDUvS7YjJoW4PhjMsF4So9txE=
+			7Ju83LeCkMwVxipzh+CYjo+PPV8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7Gx2s/HdC67DsbSncokQQNeuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,7 +74,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dNi51zgYVk4UwqB1OEiNLCacQwQ=
+			OKSbnafeDZ9RDZSEiijN9NtEEMA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			COhC5lKmIh4qNuilTXfGQcxlikA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9ynoU/5LHkZ2RfYe//Hklk2xeBQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -39,65 +110,92 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uknhdawNpJK9SdXcdNCCIbpXA8o=
+			0ucKX+sz9z2ZFmgd4sRl7y1o7tw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CAESv95FFBIZrD4UjktqgkvzrnU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		chLzUN+PUAjsdheEdtrnqjO5IEk=
+		hDCGJr4X24flTEw2/Xe2V5t2vUo=
 		</data>
 		<key>Iris-Interactive-Off.png</key>
 		<data>
-		fh12/FBEuj+8Rl/E8kJdlut+rT8=
+		pw6pssAtbQfko1VzYZsUDuqm40I=
 		</data>
 		<key>Iris-Interactive-Off@2x.png</key>
 		<data>
-		3RO37JTy/1eKluNv5WWhgwIbZNc=
+		GYzJE6PJK7j8ujoyvZbe7Qp1jdk=
 		</data>
 		<key>Iris-Interactive-Off@3x.png</key>
 		<data>
-		7ObcxVIxNDSnv3kSiq2taVpMsGc=
+		+sykIA2fdZo8NDzMkVwMNAY4/lk=
 		</data>
 		<key>Iris-Interactive-On.png</key>
 		<data>
-		JNt0UsifOewi7mJawhJwYNNxQjk=
+		t030SxNO0TOjv8kPwmFCrttx9rs=
 		</data>
 		<key>Iris-Interactive-On@2x.png</key>
 		<data>
-		nVaYgMocPHZkteEqeLoD1YYuYww=
+		ggoo+bjf7hyHXYwQ4nViVYv10AE=
 		</data>
 		<key>Iris-Interactive-On@3x.png</key>
 		<data>
-		g8ZVNXOcYSYYt7q4fS1liD73xEQ=
+		RSfkKayxjgrX4rkanSyv72gXClY=
 		</data>
 		<key>Iris-Noninteractive.png</key>
 		<data>
-		19RN7oVmVo2SQTaOra3T73JOXFo=
+		LNwq51UzKHhbYsCuuPRnMTMAYbA=
 		</data>
 		<key>Iris-Noninteractive@2x.png</key>
 		<data>
-		a8MFVy0+9Lfcocwy28/Zl/zhGgs=
+		Ggz03tAA8i49ZTFYPrJOZrtvuwo=
 		</data>
 		<key>Iris-Noninteractive@3x.png</key>
 		<data>
-		PBmpTX3W9VxOBuv+s+Le/BLASxA=
+		UmqNQlJ02zR0b4q18xa/amy6sFE=
 		</data>
 		<key>Italian.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lmDuDa+jZrKbyUd5MBVRHgAxJjQ=
+			+fh5OosOul1fTE+ahdK5qUbjGJM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Italian.lproj/ChatKit.stringsdict</key>
+		<key>Italian.lproj/ChatKitFormats.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NurpjRt3hc+T5TSMP7mBZ7XPI0E=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b4jtAjhvpAqoTdb6b/XRM8h/W8s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -106,7 +204,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jBuG2tFdEEEJjgnUJevvlznKeQg=
+			mUQHLJeT/P3w3OM7lWwb8Lk3KTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ynXWOC7FtInOGLO4pPb7lIkJAf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -131,7 +247,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7GB4LtLORwSdV1aAwFEhRulp3n8=
+			PJLpmPNKO8JoCiUHKsyCHNuv1qs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zq3KujXNTiG0ZdIhMV6wZLgqNpw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEYud0LG8nDmNy/RdgiM3kwuiak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -140,7 +283,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BfQ3LJ9ZbfjteApX6I/DQPmHEsI=
+			dn/fg2obOWheYpF6yebViDhWhxw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vTH+ZpFMER3Vhjw5hmHKQmSebF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -149,20 +310,65 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fhi9McL0es7U5sZNlooaNEX3Cr8=
+			n3WVnfGPhxb4MP2aNgWr1C7NoAI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cxpu/7x4cif+2g4pL9J6CASFteA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEYud0LG8nDmNy/RdgiM3kwuiak=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>companionmessagesd</key>
 		<data>
-		syC3QS9nm3VtDpOGhnkQ1ZraXfw=
+		pOouWSoGMhu5O6ADH/Hwb9fi7z4=
 		</data>
 		<key>cs.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ik0HXo8/UbVGirLVxT5c7OBHgDE=
+			e1DPe1VSj4Mux65chSbHopc9x3Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pkZjGsN9kXgIEj4z2pjZizctcf4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -171,7 +377,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+jYGASh3mhiCGUqsWqkXHvidArc=
+			9W8b9CulkCa4bjCaVynvHA6+DqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ACnQQyhHP6RjsGRpJUcB95SKNGU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,7 +404,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hG/wX8T5VTee3w866Sjv9sItPS8=
+			AwnnDe24R3vV4hTKDcxPs31A4eQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -189,7 +413,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAYc0Gu2Qa9svLHa5XPnlxUnFSs=
+			kCVZH0Pf5wECdj50zy0L32O3DOQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FydnQpT7s53HHGwigbIhcTkQfJ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -198,7 +440,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PQ68NKmx1PvZOUj7WiKD23hxsTA=
+			uI01YVS5qDxVTxqE4/x6fSNEtNI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7Gx2s/HdC67DsbSncokQQNeuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -207,7 +467,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E8kS1V6lLOzyU4mehTnN0VnW8fo=
+			DvL0zA5IEtKVmb11sLdmvPCTe0g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7Gx2s/HdC67DsbSncokQQNeuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -216,7 +494,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cmPBSY56N2vinBn9EDoWXNCmJsY=
+			11DChtxtjn7OKS6oD5Y9KkptVGQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mw4MBTaLUiyOWkeSaj3PV51B1ck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -225,7 +521,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dALN55OJ352XBGHVWlzl+Qw3HYw=
+			TbAPuOmbRP7OJxwsg5kF7K6sSTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			idZ5Jx5wrbx5JNWMmmvxXFLw/M0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -234,7 +548,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FP9pcO8UCwJ4s77oWpnPAGzG6ZY=
+			rcbFbxxTzFJnTSIALNiBRy6K0a0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -243,7 +557,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hayPYex0l/5x6+PQBI2XcMRW/SY=
+			5S0aKFWHE577F1cueFiKhzxuCRo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JSc9ImmiJWIaNCCV21dJRVL1lZM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -252,7 +584,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o64D+HJAoXrvRAHX4rd5hPyzxzk=
+			TUKWykbFUHF4++MzB7Pp1f/0Vqs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fEoOB553xYNaXKvdA5igjXPHJIo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -261,7 +611,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p4GPArD54XqBiUJJYEHhhv+6z7A=
+			6HUw0CJgc5BEN+hYsDJ9RJl6oK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FbA7RJaCfjt+07P5zYqLvlDQPAg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -270,7 +638,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hKme9ClDLVQFt2W/Od4zmiTJOVQ=
+			wZNgd/UR3r07IpE7piDYkdFCe3g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fLdRT/SNwAwjrzfIKf/oHjhvfmQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1m/CGN4b71eeVjhvg20Y4KkA/KA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -279,7 +674,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YwPsfPmGkIksr2Ci2KFYJjC+MWI=
+			ewgapQl6VOUASV8qohiysZTEnkQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -293,24 +688,78 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3GS9dbJmfLYo3ADOoT61CHXb2lc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3hqL0VmPlMkBZaO6Zj7MYZRVAzE=
+			zc+4mIxhTlAjzx2Jqnc+3HircL8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IihroDYbWuqOvGKmoCMRKdtkMi0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>map_hashes.png</key>
 		<data>
-		5VNlpGEpSOdd6ENV0f6/vnqk3bE=
+		rgLwLlpzi370IVRtU89vhPBblo4=
 		</data>
 		<key>ms.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TCTPzXN/F+KNnrR+YdTP3/KViMQ=
+			1m4TYmtzDb7e5Zpy/RzvjLQkd1w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/QyehGgEatKUe8anjB7Yom2P4tY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -319,7 +768,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SVdzHvjNt6Yn/gZOyFjD5RYlMUY=
+			+iA2l7/Ah2jYEtR1tszEybDz6sM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p7cJJHzVOCaX/6lBdLxzAfTCIpM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -328,7 +795,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qfFgVR4sXoWZwmXznytB5+hqtmk=
+			PU8j8qdIdhYChYlUDKVi17+5BNw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9CpbSHipNbXzQa0LNGCt5sHEggE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -337,7 +822,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jWcmgDiCvUrJ3YIehAU8j7ohiU4=
+			LqkTXiwleF4emlHw9IXF8N1Yn4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wca8pKM3au/D+66IHRu3FjTHhPA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1mhHeT+oXXk7oPA4bCK4faRtIrs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -346,7 +858,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xhcx9a8kGnFhd3kJvaLz/hmTf94=
+			cEhY0fFVXGTvJKCR+sUVq+6Rx9s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -355,7 +867,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			go28UbWDmi7pxNBUPcCfURTBq7c=
+			rlf3T3OaanA/9uJYC8yLdS77piw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WSsdtNrv6GqpXJNwbq+burFHnKM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -364,7 +894,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S2Cq/fzCdBZPRCVsftCu08IO+CU=
+			gppWf0IT4zp762Zwb6b1+EDsYzc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LiWb7ugU0P4ZK0Zp6edpKfgOsfQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -373,7 +921,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G7GEel3ktKUoOErOUBde9qUiKzk=
+			gprLazq0KP/hkrsUcgnHWrNvaCU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uBSUWcXXxSFksiD4rrKC3RvxQlw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YGDyDvdWryqet+cGJHgrpIE04k0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -382,7 +957,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BD7QFXYkOsSvtE/Kp5lasvhTm9A=
+			HQk8bq1KvZc/xC9o2825t+xTBVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e0/2mTmhDMGiWNg8jU2BDj6FbTY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -391,7 +984,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3IDbIJuUV790AzvqLFITEGS/OBQ=
+			y6DCxgZ4lPT1VWl/3xG2OJtCcKU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			31smUx8vdmNn8krRixpk1eCEaKk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3DkOfn9NTaRAL76PjIMUnBpdQuQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -400,7 +1020,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wvlWRfSFrnAl1TZbVQMAvfXi+g8=
+			35oBcBN/MZg+WJdw4DdEdEY8C2c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0yuL8lmFv7sER0bi6olK1KyFrL8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -409,7 +1047,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s3A7bD5AQhQ7w/zdAr2rjp6DRN8=
+			83KByjuTdQoQW0II6gTPVT9BxAo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FP99JaXqS1lXDfKHASHJolIMcSM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -418,7 +1074,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VF4kX1IOrgEcTAsjGoujr1H55Yg=
+			vIjHOPec5pUTLi0yCqIRavJhu18=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PRf5U0mZPVPdmP0bbb1/+Wp51e0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HoGzOS9mgMw3VbGUkYIZP4aa9to=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -427,7 +1110,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hz2dp/7xS8iO0D3K2QMFntgbg7Q=
+			rIeTTSIYr9FQkVY9ZVH+oQrJMio=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ggFtlzx/YerdUz/MVi16DJodu7k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -436,7 +1137,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HKfUFn1f89cWDzi11V0Ds+Zm49c=
+			EGvuKfQRMWOdCHpPRRiZ8igASOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DKZ1uqYHUXLdR867kvDxAOhjblE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -445,7 +1164,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g9qd+/IqDctxANODqIk1IOzjCNY=
+			32eufKxoXfj6OGD9LwVwlkEH0zQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/0TJcLB8ih26P+/IUPnP+rCJP3c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -454,7 +1191,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8NYOMYi/NkGMfCf1txbUB02Gmjo=
+			wbLxQv26XQjZ4PuYpw/0qUs4D+o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NvRHRUL2MJk1RccqPzeXtfkeeS8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -462,15 +1217,41 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AcknowledgmentReceiveSound.aif</key>
+		<data>
+		bhSgj7lXU129vEfYfHPiJcE5y0k=
+		</data>
+		<key>AcknowledgmentSendSound.caf</key>
+		<data>
+		nrR4L+hGH/79/nHcFSWD4hK/GcY=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		AzDfEdKFkKEMZsTkyFOffYaW7QQ=
+		5aY88n1k4YSlN52+ILo/F7UE204=
 		</data>
 		<key>Dutch.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r9+f/DX0hUioys8exBqqchJ3Loc=
+			U02Rw3Kbrz3koRg5JrXm8m9+vT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwk7Otgq2drCdnq4FrTU/oY+tVE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -479,7 +1260,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y3rDUvS7YjJoW4PhjMsF4So9txE=
+			7Ju83LeCkMwVxipzh+CYjo+PPV8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7Gx2s/HdC67DsbSncokQQNeuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -488,7 +1287,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dNi51zgYVk4UwqB1OEiNLCacQwQ=
+			OKSbnafeDZ9RDZSEiijN9NtEEMA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			COhC5lKmIh4qNuilTXfGQcxlikA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9ynoU/5LHkZ2RfYe//Hklk2xeBQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -497,61 +1323,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uknhdawNpJK9SdXcdNCCIbpXA8o=
+			0ucKX+sz9z2ZFmgd4sRl7y1o7tw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CAESv95FFBIZrD4UjktqgkvzrnU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Iris-Interactive-Off.png</key>
 		<data>
-		fh12/FBEuj+8Rl/E8kJdlut+rT8=
+		pw6pssAtbQfko1VzYZsUDuqm40I=
 		</data>
 		<key>Iris-Interactive-Off@2x.png</key>
 		<data>
-		3RO37JTy/1eKluNv5WWhgwIbZNc=
+		GYzJE6PJK7j8ujoyvZbe7Qp1jdk=
 		</data>
 		<key>Iris-Interactive-Off@3x.png</key>
 		<data>
-		7ObcxVIxNDSnv3kSiq2taVpMsGc=
+		+sykIA2fdZo8NDzMkVwMNAY4/lk=
 		</data>
 		<key>Iris-Interactive-On.png</key>
 		<data>
-		JNt0UsifOewi7mJawhJwYNNxQjk=
+		t030SxNO0TOjv8kPwmFCrttx9rs=
 		</data>
 		<key>Iris-Interactive-On@2x.png</key>
 		<data>
-		nVaYgMocPHZkteEqeLoD1YYuYww=
+		ggoo+bjf7hyHXYwQ4nViVYv10AE=
 		</data>
 		<key>Iris-Interactive-On@3x.png</key>
 		<data>
-		g8ZVNXOcYSYYt7q4fS1liD73xEQ=
+		RSfkKayxjgrX4rkanSyv72gXClY=
 		</data>
 		<key>Iris-Noninteractive.png</key>
 		<data>
-		19RN7oVmVo2SQTaOra3T73JOXFo=
+		LNwq51UzKHhbYsCuuPRnMTMAYbA=
 		</data>
 		<key>Iris-Noninteractive@2x.png</key>
 		<data>
-		a8MFVy0+9Lfcocwy28/Zl/zhGgs=
+		Ggz03tAA8i49ZTFYPrJOZrtvuwo=
 		</data>
 		<key>Iris-Noninteractive@3x.png</key>
 		<data>
-		PBmpTX3W9VxOBuv+s+Le/BLASxA=
+		UmqNQlJ02zR0b4q18xa/amy6sFE=
 		</data>
 		<key>Italian.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lmDuDa+jZrKbyUd5MBVRHgAxJjQ=
+			+fh5OosOul1fTE+ahdK5qUbjGJM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Italian.lproj/ChatKit.stringsdict</key>
+		<key>Italian.lproj/ChatKitFormats.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NurpjRt3hc+T5TSMP7mBZ7XPI0E=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b4jtAjhvpAqoTdb6b/XRM8h/W8s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -560,7 +1413,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jBuG2tFdEEEJjgnUJevvlznKeQg=
+			mUQHLJeT/P3w3OM7lWwb8Lk3KTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ynXWOC7FtInOGLO4pPb7lIkJAf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -585,7 +1456,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7GB4LtLORwSdV1aAwFEhRulp3n8=
+			PJLpmPNKO8JoCiUHKsyCHNuv1qs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zq3KujXNTiG0ZdIhMV6wZLgqNpw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEYud0LG8nDmNy/RdgiM3kwuiak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -594,7 +1492,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BfQ3LJ9ZbfjteApX6I/DQPmHEsI=
+			dn/fg2obOWheYpF6yebViDhWhxw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vTH+ZpFMER3Vhjw5hmHKQmSebF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -603,20 +1519,65 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fhi9McL0es7U5sZNlooaNEX3Cr8=
+			n3WVnfGPhxb4MP2aNgWr1C7NoAI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cxpu/7x4cif+2g4pL9J6CASFteA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEYud0LG8nDmNy/RdgiM3kwuiak=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>companionmessagesd</key>
 		<data>
-		syC3QS9nm3VtDpOGhnkQ1ZraXfw=
+		pOouWSoGMhu5O6ADH/Hwb9fi7z4=
 		</data>
 		<key>cs.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ik0HXo8/UbVGirLVxT5c7OBHgDE=
+			e1DPe1VSj4Mux65chSbHopc9x3Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pkZjGsN9kXgIEj4z2pjZizctcf4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -625,7 +1586,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+jYGASh3mhiCGUqsWqkXHvidArc=
+			9W8b9CulkCa4bjCaVynvHA6+DqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ACnQQyhHP6RjsGRpJUcB95SKNGU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -634,7 +1613,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hG/wX8T5VTee3w866Sjv9sItPS8=
+			AwnnDe24R3vV4hTKDcxPs31A4eQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -643,7 +1622,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAYc0Gu2Qa9svLHa5XPnlxUnFSs=
+			kCVZH0Pf5wECdj50zy0L32O3DOQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FydnQpT7s53HHGwigbIhcTkQfJ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -652,7 +1649,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PQ68NKmx1PvZOUj7WiKD23hxsTA=
+			uI01YVS5qDxVTxqE4/x6fSNEtNI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7Gx2s/HdC67DsbSncokQQNeuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -661,7 +1676,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E8kS1V6lLOzyU4mehTnN0VnW8fo=
+			DvL0zA5IEtKVmb11sLdmvPCTe0g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7Gx2s/HdC67DsbSncokQQNeuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -670,7 +1703,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cmPBSY56N2vinBn9EDoWXNCmJsY=
+			11DChtxtjn7OKS6oD5Y9KkptVGQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mw4MBTaLUiyOWkeSaj3PV51B1ck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -679,7 +1730,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dALN55OJ352XBGHVWlzl+Qw3HYw=
+			TbAPuOmbRP7OJxwsg5kF7K6sSTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			idZ5Jx5wrbx5JNWMmmvxXFLw/M0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -688,7 +1757,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FP9pcO8UCwJ4s77oWpnPAGzG6ZY=
+			rcbFbxxTzFJnTSIALNiBRy6K0a0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -697,7 +1766,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hayPYex0l/5x6+PQBI2XcMRW/SY=
+			5S0aKFWHE577F1cueFiKhzxuCRo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JSc9ImmiJWIaNCCV21dJRVL1lZM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -706,7 +1793,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o64D+HJAoXrvRAHX4rd5hPyzxzk=
+			TUKWykbFUHF4++MzB7Pp1f/0Vqs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fEoOB553xYNaXKvdA5igjXPHJIo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -715,7 +1820,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p4GPArD54XqBiUJJYEHhhv+6z7A=
+			6HUw0CJgc5BEN+hYsDJ9RJl6oK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FbA7RJaCfjt+07P5zYqLvlDQPAg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -724,7 +1847,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hKme9ClDLVQFt2W/Od4zmiTJOVQ=
+			wZNgd/UR3r07IpE7piDYkdFCe3g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fLdRT/SNwAwjrzfIKf/oHjhvfmQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1m/CGN4b71eeVjhvg20Y4KkA/KA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -733,7 +1883,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YwPsfPmGkIksr2Ci2KFYJjC+MWI=
+			ewgapQl6VOUASV8qohiysZTEnkQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -747,24 +1897,78 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3GS9dbJmfLYo3ADOoT61CHXb2lc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3hqL0VmPlMkBZaO6Zj7MYZRVAzE=
+			zc+4mIxhTlAjzx2Jqnc+3HircL8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IihroDYbWuqOvGKmoCMRKdtkMi0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>map_hashes.png</key>
 		<data>
-		5VNlpGEpSOdd6ENV0f6/vnqk3bE=
+		rgLwLlpzi370IVRtU89vhPBblo4=
 		</data>
 		<key>ms.lproj/ChatKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TCTPzXN/F+KNnrR+YdTP3/KViMQ=
+			1m4TYmtzDb7e5Zpy/RzvjLQkd1w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/QyehGgEatKUe8anjB7Yom2P4tY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -773,7 +1977,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SVdzHvjNt6Yn/gZOyFjD5RYlMUY=
+			+iA2l7/Ah2jYEtR1tszEybDz6sM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p7cJJHzVOCaX/6lBdLxzAfTCIpM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -782,7 +2004,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qfFgVR4sXoWZwmXznytB5+hqtmk=
+			PU8j8qdIdhYChYlUDKVi17+5BNw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9CpbSHipNbXzQa0LNGCt5sHEggE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -791,7 +2031,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jWcmgDiCvUrJ3YIehAU8j7ohiU4=
+			LqkTXiwleF4emlHw9IXF8N1Yn4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wca8pKM3au/D+66IHRu3FjTHhPA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1mhHeT+oXXk7oPA4bCK4faRtIrs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -800,7 +2067,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xhcx9a8kGnFhd3kJvaLz/hmTf94=
+			cEhY0fFVXGTvJKCR+sUVq+6Rx9s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -809,7 +2076,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			go28UbWDmi7pxNBUPcCfURTBq7c=
+			rlf3T3OaanA/9uJYC8yLdS77piw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WSsdtNrv6GqpXJNwbq+burFHnKM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -818,7 +2103,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S2Cq/fzCdBZPRCVsftCu08IO+CU=
+			gppWf0IT4zp762Zwb6b1+EDsYzc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LiWb7ugU0P4ZK0Zp6edpKfgOsfQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -827,7 +2130,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G7GEel3ktKUoOErOUBde9qUiKzk=
+			gprLazq0KP/hkrsUcgnHWrNvaCU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uBSUWcXXxSFksiD4rrKC3RvxQlw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YGDyDvdWryqet+cGJHgrpIE04k0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -836,7 +2166,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BD7QFXYkOsSvtE/Kp5lasvhTm9A=
+			HQk8bq1KvZc/xC9o2825t+xTBVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e0/2mTmhDMGiWNg8jU2BDj6FbTY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -845,7 +2193,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3IDbIJuUV790AzvqLFITEGS/OBQ=
+			y6DCxgZ4lPT1VWl/3xG2OJtCcKU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			31smUx8vdmNn8krRixpk1eCEaKk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3DkOfn9NTaRAL76PjIMUnBpdQuQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -854,7 +2229,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wvlWRfSFrnAl1TZbVQMAvfXi+g8=
+			35oBcBN/MZg+WJdw4DdEdEY8C2c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0yuL8lmFv7sER0bi6olK1KyFrL8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -863,7 +2256,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s3A7bD5AQhQ7w/zdAr2rjp6DRN8=
+			83KByjuTdQoQW0II6gTPVT9BxAo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FP99JaXqS1lXDfKHASHJolIMcSM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -872,7 +2283,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VF4kX1IOrgEcTAsjGoujr1H55Yg=
+			vIjHOPec5pUTLi0yCqIRavJhu18=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ChatKit.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PRf5U0mZPVPdmP0bbb1/+Wp51e0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HoGzOS9mgMw3VbGUkYIZP4aa9to=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -881,7 +2319,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hz2dp/7xS8iO0D3K2QMFntgbg7Q=
+			rIeTTSIYr9FQkVY9ZVH+oQrJMio=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ggFtlzx/YerdUz/MVi16DJodu7k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -890,7 +2346,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HKfUFn1f89cWDzi11V0Ds+Zm49c=
+			EGvuKfQRMWOdCHpPRRiZ8igASOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DKZ1uqYHUXLdR867kvDxAOhjblE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -899,7 +2373,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g9qd+/IqDctxANODqIk1IOzjCNY=
+			32eufKxoXfj6OGD9LwVwlkEH0zQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/0TJcLB8ih26P+/IUPnP+rCJP3c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -908,7 +2400,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8NYOMYi/NkGMfCf1txbUB02Gmjo=
+			wbLxQv26XQjZ4PuYpw/0qUs4D+o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ChatKitFormats.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ChatKitFormats.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NvRHRUL2MJk1RccqPzeXtfkeeS8=
 			</data>
 			<key>optional</key>
 			<true/>

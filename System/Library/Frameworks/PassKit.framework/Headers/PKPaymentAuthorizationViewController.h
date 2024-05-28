@@ -4,9 +4,17 @@
 //
 //  Copyright (c) 2014 Apple, Inc. All rights reserved.
 //
+#if !TARGET_OS_WATCH && !TARGET_OS_TV
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #import <AddressBook/ABRecord.h>
+#else
+#import <AppKit/AppKit.h>
+#import <AddressBook/ABAddressBookC.h>
+#endif
+
+#import <PassKit/PKConstants.h>
 #import <PassKit/PKPaymentRequest.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -17,20 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 @class PKShippingMethod;
 @class PKPaymentSummaryItem;
 @class PKPaymentAuthorizationViewController;
-
-typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
-    PKPaymentAuthorizationStatusSuccess, // Merchant auth'd (or expects to auth) the transaction successfully.
-    PKPaymentAuthorizationStatusFailure, // Merchant failed to auth the transaction.
-    
-    PKPaymentAuthorizationStatusInvalidBillingPostalAddress,  // Merchant refuses service to this billing address.
-    PKPaymentAuthorizationStatusInvalidShippingPostalAddress, // Merchant refuses service to this shipping address.
-    PKPaymentAuthorizationStatusInvalidShippingContact,       // Supplied contact information is insufficient.
-    
-    PKPaymentAuthorizationStatusPINRequired NS_ENUM_AVAILABLE(NA, 9_2),  // Transaction requires PIN entry.
-    PKPaymentAuthorizationStatusPINIncorrect NS_ENUM_AVAILABLE(NA, 9_2), // PIN was not entered correctly, retry.
-    PKPaymentAuthorizationStatusPINLockout NS_ENUM_AVAILABLE(NA, 9_2)    // PIN retry limit exceeded.
-    
-} NS_ENUM_AVAILABLE(NA, 8_0);
 
 @protocol PKPaymentAuthorizationViewControllerDelegate <NSObject>
 
@@ -105,8 +99,13 @@ typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
 
 // PKPaymentAuthorizationViewController prompts the user to authorize a PKPaymentRequest, funding the
 // payment amount with a valid payment card.
-NS_CLASS_AVAILABLE(NA, 8_0)
+#if TARGET_OS_IPHONE
+NS_CLASS_AVAILABLE_IOS(8_0)
 @interface PKPaymentAuthorizationViewController : UIViewController
+#else
+NS_CLASS_AVAILABLE_MAC(10_12)
+@interface PKPaymentAuthorizationViewController : NSViewController
+#endif
 
 // Determine whether this device can process payment requests.
 // YES if the device is generally capable of making in-app payments.
@@ -121,11 +120,11 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 // by the merchant.
 // NO if the user cannot authorize payments on these networks or if the user is restricted from
 // authorizing payments.
-+ (BOOL)canMakePaymentsUsingNetworks:(NSArray<NSString *> *)supportedNetworks;
++ (BOOL)canMakePaymentsUsingNetworks:(NSArray<PKPaymentNetwork> *)supportedNetworks;
 
 // Determine whether this device can process payments using the specified networks and capabilities bitmask
 // See -canMakePaymentsUsingNetworks:
-+ (BOOL)canMakePaymentsUsingNetworks:(NSArray<NSString *> *)supportedNetworks capabilities:(PKMerchantCapability)capabilties NS_AVAILABLE_IOS(9_0);
++ (BOOL)canMakePaymentsUsingNetworks:(NSArray<PKPaymentNetwork> *)supportedNetworks capabilities:(PKMerchantCapability)capabilties NS_AVAILABLE_IOS(9_0);
 
 // The view controller's delegate.
 @property (nonatomic, assign, nullable) id<PKPaymentAuthorizationViewControllerDelegate> delegate;
@@ -138,3 +137,5 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

@@ -4,27 +4,28 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Debug.plist</key>
-		<data>
-		CVuBP68zHKKmwu5SUl4NOSuLol8=
-		</data>
-		<key>Debug.strings</key>
-		<data>
-		fp1B3tnvTwQjcL6wae35gRrrPHM=
-		</data>
 		<key>DeviceConfig.plist</key>
 		<data>
 		B+bw7i5i38JSv53Y7IxrX5yfF8Y=
 		</data>
 		<key>Devices.plist</key>
 		<data>
-		PDcUuvTxaOtGwguNwdDTF7Um2qQ=
+		mNdsNBYs1juJjBOkQPK/5+4/Ws4=
 		</data>
+		<key>Dutch.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AwvHUkJxM3oqNUYcGm+ncOdqC48=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			De2PimLYjXC+iYv+CvPy2LdnsFg=
+			9ajgl7nD134hZnf3662hpRL/REI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -33,7 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rJwvBerQHLDKDiTgW8Z7agJEWtc=
+			Aft4CVSu9aZDIBKWNPjitcmyHnI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -42,7 +43,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TOMPWe4IpsLtpXELlBE72imZRtE=
+			OoEu30G0chjbpvaUIZ08c008d/U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XreT23mvC6N0hDGp1HWoHH2LATQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -60,7 +70,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			slUfG2AKVbW31ue0VTFwDfrx2js=
+			jQ0Vef8WLHy9CqQwwipuo5sfWT4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -70,6 +80,15 @@
 			<key>hash</key>
 			<data>
 			LIeijt0f8f/2wti9ykqYVOCG0Kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uJnnAt0NF1azHCZrDDVL8FOab00=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -87,7 +106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l5V5RiDH0vUq5HMtZtNdYdkQDdc=
+			7yjKs/PImyhRvZlGESYlk2YPm+Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -101,11 +120,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>German.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			by2tr7eCK2sgSIWks59G8Vabp3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9QvOqy+Nmklsd6Xt3PhqwkcsdMo=
+			6KA0JajJZF2A2bWdq5prrbMyoWQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -114,7 +142,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/VUGiKRzjYiTv2HegRim451QYeo=
+			xK01ERejNuYJc4b58JGPgCAeYd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -123,20 +151,29 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jjVfPaaQFYghjnkGuOrZOF1Kt5M=
+			90TGsXdUbklId/pwLL7DclWSC2I=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		A1icJN1ev+OeqDafGkmzdJ7T8OE=
+		Gzx3MWKr2no5kdmJ5r/U+wUMNjo=
 		</data>
+		<key>Italian.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sVTHaM8ND3jtB1wd4w2oxVaefvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ywio4EVqbpZQHN17mGJfaAgIzQs=
+			TFHRkB9Bm3ZvCblfshvS8SCb5B0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -145,7 +182,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bRPDxOVtXVMjSe7pl/2p7P3FAbc=
+			w6dW5B2796T8SX5IAlOaWDsqT3k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -155,6 +192,15 @@
 			<key>hash</key>
 			<data>
 			O3XpFqfyDbyhrsmartOLsBbbru0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pJYscJhBba31rlTSnkPOOmme0WI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -172,7 +218,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HNfkNe5Ps16rnN12izrQrsF5SGM=
+			aaAoswCUWeiHSJYjudCSyEE5Vpc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -182,6 +228,15 @@
 			<key>hash</key>
 			<data>
 			pXcybogVekUqavYOX4jU6PBnn3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			74sBLVXWfCNJXSxVakY0wghhKzs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -199,7 +254,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RUjsz/3TsJqFLJ62YDeDTP1oenk=
+			xYZw04Yi17FVzy+g4PFb9k8t+dw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -209,6 +264,15 @@
 			<key>hash</key>
 			<data>
 			N3oeNrXE4J/OIRx81x0m4t7eUWE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3Gwb/2s0u0fM5ALzxvOAF0JMC9s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -226,7 +290,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UnwzmkxNmc+vRT+DewrUjPcl1Po=
+			vV5zGjvF6P0vgKKhEnVLxgrpPo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -236,6 +300,15 @@
 			<key>hash</key>
 			<data>
 			+nHPDVxgzuLrABu8owZvBH/EMJg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qa4RpStNgpjZ6aqWyoVv2ZtimtE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -253,7 +326,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			In1O9UFqbyQKT4g1ZOUGu7kiK44=
+			irBYsQlHS9QVB7uFVc8xxPMvCwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -263,6 +336,15 @@
 			<key>hash</key>
 			<data>
 			aiSrvJPZkW09H0yUALejKxj37bY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1m+j0Na1R/EnZIFCuCOq3sUJU7s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -280,7 +362,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yfij+SfcCBdNGqoRFEFnLTRpSA8=
+			SaqrgUZ5u9B0URnK4a/ZpBI+cBk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -294,11 +376,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HSsqKN9OJux8biF6UEhhSwSpHb8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			plUhlUMT7BWCVP7gAryQgcimaFw=
+			8h/as/apm7lLCOXOkQ/ob9Twz6E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -307,7 +398,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZAwbyepq0aksNOOM5WK44M3XawE=
+			OD/hlqC8eVpJVOWftYrZqQzBqHw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -317,6 +408,15 @@
 			<key>hash</key>
 			<data>
 			70EVpBIz3CR9ImdHhouAbNPZ5BQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			teksxDDwSF+zZF2gmXQ6UPjMRFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -334,7 +434,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jFrMWHPh5gkRvLZlSlfNuqJ3INI=
+			WcNmUhsgpQCarhJ6huqWRXwCids=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -343,7 +443,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9dqMbe2kqMDd0TEjuBXPdXgxcko=
+			WDjGpSRXc4toFTm1QINNGiSL8e8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HCQVRjZZonG1ZZy1Z0tEriveLvQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -361,7 +470,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1dVJAbDb02y0zlPSqWAalhoGgMM=
+			vI++avsjkq3ecvz/Xug/Y4UbRYM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -371,6 +480,15 @@
 			<key>hash</key>
 			<data>
 			LIeijt0f8f/2wti9ykqYVOCG0Kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tr5L9prBxk/SRKXX13PrA6TGxO0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -388,7 +506,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O95JFT752D6dVczxDTqCCrZEQ90=
+			5QLLkfDdYnpSDVTPe6FXoak96mA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -402,11 +520,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vKi8zobfZ0GyBUI4QGvpsmzewvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vJbpzrmit6RdrBdYGtKRGq2Tv4o=
+			RVLMyq6fz2hojzUwN3kPk3uXdXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -415,7 +542,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HNuZC4KL8JfcC2SWZw8b8yAOYz4=
+			ZVQYj9MmhjpcNdTAXhWW9ahqIGY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -425,6 +552,15 @@
 			<key>hash</key>
 			<data>
 			vd/1eC4m7W4TokPDeuP3vm7hH+M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b3xTS+jTEthLQM6uT138RPfTldY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -442,7 +578,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			leRAbONhHlfyF9VlSE3acIP14cQ=
+			FKqtBUOuS2JVZtgJjMbg8sRoXE8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -456,11 +592,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mv9DITnBA+EQZP5+dpOWX1FIJVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6VFJ4DCFZHpSLi8FV5DGxV2tnGM=
+			l9D87bbHOCYnyk8yza6JeatrCTo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -469,7 +614,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+YPvrzl5HEYxZa2huahFdmcp0Yc=
+			DwvoA2eCy8r4E67c5H9idAz0QHc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -479,6 +624,15 @@
 			<key>hash</key>
 			<data>
 			T3R+zR4eqJ5xrHOPfhJDuywCNng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PMusH6IJ1ywmlSpKqDcMMeC9hPc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -496,7 +650,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YKw2181FdzQHZDA7WUSVoj+LhPY=
+			cVISxinrl+9iHxhHGAfDidoTD9Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -506,6 +660,15 @@
 			<key>hash</key>
 			<data>
 			8OX5TsZxk/u7IKvGawMifuMTa+8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FuCiggOPZm0MRqI1IZHU/P3AaAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -523,7 +686,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2aLu/SOjlGYIeP9pq5cyd7ICCI0=
+			htOr/HztH6ssv6wdiZ7spoE9xuA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -537,11 +700,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p3Y9Ty+oISQboAeLplJ5Ge0RyF4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GEtciwGaXJo8GkgL6t2SES7aekM=
+			+j/IeWhoYee+7FZ14Jppq9ySz3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -550,7 +722,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KQvdntUopouuOI+o3Im/w2l7DO8=
+			Ys9LhLb1aEn3p/IctOZyPWHIoPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -559,7 +731,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VmYvmCASOqHbdL84NIPLta/UpmY=
+			FqK+OOzY/EAlM+jHybtOYBzJkAc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zSDiotxmHsfOugyElKJl7nwzWZ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -577,7 +758,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CLTsCDvVoJ93o2ZAJVJ0cAuZ4sY=
+			Byj/AsJtTwMVtYlSx+chqvK0Jh0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -591,11 +772,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hqrcXS+EmWdz63Tk5/USmqerz9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NC7iUVXlTpcIWV+E2hr3W+WU+nA=
+			e1xmjqjfGani79JLtdaPI++mKvY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -604,7 +794,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u+LMhEOmUeppwgUQD/LAkB1EK7o=
+			ldesTY+v4d2wRAF21guL4XeJLDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -618,11 +808,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			241u5BBVAttgl8LjyGXsRG1f9Ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CgDsb04gtAqVRazcbZRUo+6h+B4=
+			CXlvS2qYF59sFWzRP6wLpT9vXjk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -631,7 +830,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H/IJDq+JGaV4yL422O2H8GeEwi0=
+			iJ2GefKYDOa90zuHH7fa5gewRBA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -641,6 +840,15 @@
 			<key>hash</key>
 			<data>
 			v+yH6yWSdVL8YohDGJQGanhfdxg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/GhL7EKTOXo59sYGMh4ivkOmN5g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -658,7 +866,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qLjnhY2tSrkPt7Kb110JtOuzGCg=
+			iOFu85gc2g3EpCvtU69pbP5UrP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -672,11 +880,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hoqHjqPXU0Cw0N51wIEiMf8V3qg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vAyo0aZoGUM+Pb+TeSQwi3MEk+4=
+			r5U/eLDmxx3QkHKpYr29ikOKCzQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -685,7 +902,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OK/lmkK7yr2z6U0CfBAWBO7dFwU=
+			EObEzn7zavCdvhDUe/XocdTmAlY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -695,6 +912,15 @@
 			<key>hash</key>
 			<data>
 			rXjMq5Z0SMhykvzXxfr/tuf3MaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJCCK/fEz5cgWqu29oYIucHAkcw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -712,7 +938,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yOd3GS6jptt6oywOQXiNdiMymNg=
+			7aDfzngXx6XOL2cECk7qWmbktXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -722,6 +948,15 @@
 			<key>hash</key>
 			<data>
 			wQ9767+kqD31qokdw+QkJtnlYns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			REZXcsLuQ0deMSAqxDFIVKD0pVY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -739,7 +974,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gcN0FzlbMhbVhxRBF32RCK0ME30=
+			jF2GpXu4caSLi4zAzZ7dKGLmfeI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -753,11 +988,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o7z2+rqHQVivY2XVa1fc+H6q2gY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T2XI8NJTBd2yiKflxtBtqake2ZQ=
+			yrJKmZESn7v8k+yEIkAPGYEtj7w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -766,7 +1010,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wcuFulO3QghpRSZkjtn+rzV8pUo=
+			Bqk9TnnKeUwhnZXOWJDX4qt7ewk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -780,11 +1024,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pot4AvxHep5Rn8NfFir65g+JWxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6bls4TRg0K9/50dQU6PrtP7GoB4=
+			BEkfjsQetDVJV1NlT8tXJ5MqES0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -793,7 +1046,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iF1kBr9b638GLUIduOaUP3A2H2k=
+			bIuHQ6BHBfB9dGlFiM5WvWG/Aa4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -803,6 +1056,15 @@
 			<key>hash</key>
 			<data>
 			FA/ShaWqy6yTOsVeoznYzSNxXNk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KA5l1zEaNVfHkfgbL+9L8OXSUWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -820,7 +1082,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xQpeThY3BARxyd4ibDj5b5MU880=
+			H8iTuj5RHqhoFbaogB8H85lu5wo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -830,6 +1092,15 @@
 			<key>hash</key>
 			<data>
 			XaUP8snkqn3Zm6uRsGGE5EU3i+g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n48QtMz9qr4xIbSIqa+XWJRYLM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -847,7 +1118,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P6KgPIT36P5H8uXWF+pSDF8oW48=
+			KDyyqZ3EN+4lLUXuizpUdiCFG3o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -857,6 +1128,15 @@
 			<key>hash</key>
 			<data>
 			PSxkOZTfyJaAl3ODObT0NXEa1NE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QmCn+Gh+tHyEbCQqxsPooSqWlpo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -874,7 +1154,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fwen6hD92UZrmqQci8Kf5QWbHsU=
+			kUIJFESJkTg85x+mS7R3QEuyMRg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -888,11 +1168,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			33GsM5w6xCAG/YMI6sT1SWoOVUQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bc91WecS4BqbRSGAiQbuB0CLjpM=
+			BzYbMlUShTOEp8eLFV0iSVk3E5E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -901,7 +1190,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mvfYvqayRWDaSQLs5EcW7KJlAGg=
+			3qZnAQsMJObqdi08MAeR/CUnbpY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -915,11 +1204,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zzg4GEXEcbyHQZxVs4P/jWAy1Vo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iP031XVr/a8yfJBpNTtSA2q0WPg=
+			Tp3W/FcmuF9ZS6GJlk6S45/qMg4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -928,7 +1226,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZQ2n7cngVFIK5+X74QceliTmMY=
+			SeEAwkpwkuZFTJi2a/hrVM6V8E4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -938,6 +1236,15 @@
 			<key>hash</key>
 			<data>
 			14oCXPO4574P0eKV30I+vSEpqcM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GH2MfKzsednh5SHIKdA5l2EYLzY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -955,7 +1262,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ak+OXEIQqy5vf/qMfmWO9kD0yII=
+			9hFCOqX7JgJJWIeMsFi0VWvHxic=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -969,11 +1276,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uzyzl5mCBjXg+1rKHfHj09kwAzg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rs7u8XWjF9b9zilrW46nJwg6i+A=
+			z57asDU3VzA2V4ZrF0uhGfaTWSk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -982,7 +1298,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			05UT62N2I39IM9rWyW3yc1z2Bgw=
+			gUP0x57wZ7UI2GbLPeBxEFf1xws=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -996,11 +1312,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XmcRzd2MSAoy0J2epHHeXLPS6Us=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3GnnhE9LODJhYmbEKSvEslgvozY=
+			TmPX1cLPjHi+Q6R97fTyjiPlAA0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1009,7 +1334,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zg1qqIo6IGu2UNWUR/dIugRIhkU=
+			wFm90qVn6CRiSGLuq3CW1n8WDvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1019,6 +1344,15 @@
 			<key>hash</key>
 			<data>
 			yD3OALjWySXhNy+QYW5xAB3gj8M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0fTbSFDI9YZGnpqc2R839OjHTGo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1036,7 +1370,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			berQnxXquxUEGUHQYT7o1cgE9Kw=
+			uB0L8eVCDHMQ5fu8oQA7KogvvEQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1053,27 +1387,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Debug.plist</key>
-		<data>
-		CVuBP68zHKKmwu5SUl4NOSuLol8=
-		</data>
-		<key>Debug.strings</key>
-		<data>
-		fp1B3tnvTwQjcL6wae35gRrrPHM=
-		</data>
 		<key>DeviceConfig.plist</key>
 		<data>
 		B+bw7i5i38JSv53Y7IxrX5yfF8Y=
 		</data>
 		<key>Devices.plist</key>
 		<data>
-		PDcUuvTxaOtGwguNwdDTF7Um2qQ=
+		mNdsNBYs1juJjBOkQPK/5+4/Ws4=
 		</data>
+		<key>Dutch.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AwvHUkJxM3oqNUYcGm+ncOdqC48=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			De2PimLYjXC+iYv+CvPy2LdnsFg=
+			9ajgl7nD134hZnf3662hpRL/REI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1082,7 +1417,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rJwvBerQHLDKDiTgW8Z7agJEWtc=
+			Aft4CVSu9aZDIBKWNPjitcmyHnI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1091,7 +1426,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TOMPWe4IpsLtpXELlBE72imZRtE=
+			OoEu30G0chjbpvaUIZ08c008d/U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XreT23mvC6N0hDGp1HWoHH2LATQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1109,7 +1453,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			slUfG2AKVbW31ue0VTFwDfrx2js=
+			jQ0Vef8WLHy9CqQwwipuo5sfWT4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1119,6 +1463,15 @@
 			<key>hash</key>
 			<data>
 			LIeijt0f8f/2wti9ykqYVOCG0Kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uJnnAt0NF1azHCZrDDVL8FOab00=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1136,7 +1489,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l5V5RiDH0vUq5HMtZtNdYdkQDdc=
+			7yjKs/PImyhRvZlGESYlk2YPm+Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1150,11 +1503,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>German.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			by2tr7eCK2sgSIWks59G8Vabp3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9QvOqy+Nmklsd6Xt3PhqwkcsdMo=
+			6KA0JajJZF2A2bWdq5prrbMyoWQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1163,7 +1525,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/VUGiKRzjYiTv2HegRim451QYeo=
+			xK01ERejNuYJc4b58JGPgCAeYd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1172,7 +1534,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jjVfPaaQFYghjnkGuOrZOF1Kt5M=
+			90TGsXdUbklId/pwLL7DclWSC2I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sVTHaM8ND3jtB1wd4w2oxVaefvg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1181,7 +1552,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ywio4EVqbpZQHN17mGJfaAgIzQs=
+			TFHRkB9Bm3ZvCblfshvS8SCb5B0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1190,7 +1561,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bRPDxOVtXVMjSe7pl/2p7P3FAbc=
+			w6dW5B2796T8SX5IAlOaWDsqT3k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1200,6 +1571,15 @@
 			<key>hash</key>
 			<data>
 			O3XpFqfyDbyhrsmartOLsBbbru0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pJYscJhBba31rlTSnkPOOmme0WI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1217,7 +1597,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HNfkNe5Ps16rnN12izrQrsF5SGM=
+			aaAoswCUWeiHSJYjudCSyEE5Vpc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1227,6 +1607,15 @@
 			<key>hash</key>
 			<data>
 			pXcybogVekUqavYOX4jU6PBnn3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			74sBLVXWfCNJXSxVakY0wghhKzs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1244,7 +1633,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RUjsz/3TsJqFLJ62YDeDTP1oenk=
+			xYZw04Yi17FVzy+g4PFb9k8t+dw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1254,6 +1643,15 @@
 			<key>hash</key>
 			<data>
 			N3oeNrXE4J/OIRx81x0m4t7eUWE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3Gwb/2s0u0fM5ALzxvOAF0JMC9s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1271,7 +1669,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UnwzmkxNmc+vRT+DewrUjPcl1Po=
+			vV5zGjvF6P0vgKKhEnVLxgrpPo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1281,6 +1679,15 @@
 			<key>hash</key>
 			<data>
 			+nHPDVxgzuLrABu8owZvBH/EMJg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qa4RpStNgpjZ6aqWyoVv2ZtimtE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1298,7 +1705,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			In1O9UFqbyQKT4g1ZOUGu7kiK44=
+			irBYsQlHS9QVB7uFVc8xxPMvCwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1308,6 +1715,15 @@
 			<key>hash</key>
 			<data>
 			aiSrvJPZkW09H0yUALejKxj37bY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1m+j0Na1R/EnZIFCuCOq3sUJU7s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1325,7 +1741,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yfij+SfcCBdNGqoRFEFnLTRpSA8=
+			SaqrgUZ5u9B0URnK4a/ZpBI+cBk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1339,11 +1755,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HSsqKN9OJux8biF6UEhhSwSpHb8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			plUhlUMT7BWCVP7gAryQgcimaFw=
+			8h/as/apm7lLCOXOkQ/ob9Twz6E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1352,7 +1777,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZAwbyepq0aksNOOM5WK44M3XawE=
+			OD/hlqC8eVpJVOWftYrZqQzBqHw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1362,6 +1787,15 @@
 			<key>hash</key>
 			<data>
 			70EVpBIz3CR9ImdHhouAbNPZ5BQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			teksxDDwSF+zZF2gmXQ6UPjMRFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1379,7 +1813,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jFrMWHPh5gkRvLZlSlfNuqJ3INI=
+			WcNmUhsgpQCarhJ6huqWRXwCids=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1388,7 +1822,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9dqMbe2kqMDd0TEjuBXPdXgxcko=
+			WDjGpSRXc4toFTm1QINNGiSL8e8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HCQVRjZZonG1ZZy1Z0tEriveLvQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1406,7 +1849,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1dVJAbDb02y0zlPSqWAalhoGgMM=
+			vI++avsjkq3ecvz/Xug/Y4UbRYM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1416,6 +1859,15 @@
 			<key>hash</key>
 			<data>
 			LIeijt0f8f/2wti9ykqYVOCG0Kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tr5L9prBxk/SRKXX13PrA6TGxO0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1433,7 +1885,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O95JFT752D6dVczxDTqCCrZEQ90=
+			5QLLkfDdYnpSDVTPe6FXoak96mA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1447,11 +1899,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vKi8zobfZ0GyBUI4QGvpsmzewvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vJbpzrmit6RdrBdYGtKRGq2Tv4o=
+			RVLMyq6fz2hojzUwN3kPk3uXdXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1460,7 +1921,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HNuZC4KL8JfcC2SWZw8b8yAOYz4=
+			ZVQYj9MmhjpcNdTAXhWW9ahqIGY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1470,6 +1931,15 @@
 			<key>hash</key>
 			<data>
 			vd/1eC4m7W4TokPDeuP3vm7hH+M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b3xTS+jTEthLQM6uT138RPfTldY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1487,7 +1957,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			leRAbONhHlfyF9VlSE3acIP14cQ=
+			FKqtBUOuS2JVZtgJjMbg8sRoXE8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1501,11 +1971,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mv9DITnBA+EQZP5+dpOWX1FIJVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6VFJ4DCFZHpSLi8FV5DGxV2tnGM=
+			l9D87bbHOCYnyk8yza6JeatrCTo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1514,7 +1993,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+YPvrzl5HEYxZa2huahFdmcp0Yc=
+			DwvoA2eCy8r4E67c5H9idAz0QHc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1524,6 +2003,15 @@
 			<key>hash</key>
 			<data>
 			T3R+zR4eqJ5xrHOPfhJDuywCNng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PMusH6IJ1ywmlSpKqDcMMeC9hPc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1541,7 +2029,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YKw2181FdzQHZDA7WUSVoj+LhPY=
+			cVISxinrl+9iHxhHGAfDidoTD9Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1551,6 +2039,15 @@
 			<key>hash</key>
 			<data>
 			8OX5TsZxk/u7IKvGawMifuMTa+8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FuCiggOPZm0MRqI1IZHU/P3AaAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1568,7 +2065,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2aLu/SOjlGYIeP9pq5cyd7ICCI0=
+			htOr/HztH6ssv6wdiZ7spoE9xuA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1582,11 +2079,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p3Y9Ty+oISQboAeLplJ5Ge0RyF4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GEtciwGaXJo8GkgL6t2SES7aekM=
+			+j/IeWhoYee+7FZ14Jppq9ySz3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1595,7 +2101,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KQvdntUopouuOI+o3Im/w2l7DO8=
+			Ys9LhLb1aEn3p/IctOZyPWHIoPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1604,7 +2110,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VmYvmCASOqHbdL84NIPLta/UpmY=
+			FqK+OOzY/EAlM+jHybtOYBzJkAc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zSDiotxmHsfOugyElKJl7nwzWZ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1622,7 +2137,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CLTsCDvVoJ93o2ZAJVJ0cAuZ4sY=
+			Byj/AsJtTwMVtYlSx+chqvK0Jh0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1636,11 +2151,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hqrcXS+EmWdz63Tk5/USmqerz9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NC7iUVXlTpcIWV+E2hr3W+WU+nA=
+			e1xmjqjfGani79JLtdaPI++mKvY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1649,7 +2173,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u+LMhEOmUeppwgUQD/LAkB1EK7o=
+			ldesTY+v4d2wRAF21guL4XeJLDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1663,11 +2187,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			241u5BBVAttgl8LjyGXsRG1f9Ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CgDsb04gtAqVRazcbZRUo+6h+B4=
+			CXlvS2qYF59sFWzRP6wLpT9vXjk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1676,7 +2209,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H/IJDq+JGaV4yL422O2H8GeEwi0=
+			iJ2GefKYDOa90zuHH7fa5gewRBA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1686,6 +2219,15 @@
 			<key>hash</key>
 			<data>
 			v+yH6yWSdVL8YohDGJQGanhfdxg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/GhL7EKTOXo59sYGMh4ivkOmN5g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1703,7 +2245,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qLjnhY2tSrkPt7Kb110JtOuzGCg=
+			iOFu85gc2g3EpCvtU69pbP5UrP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1717,11 +2259,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hoqHjqPXU0Cw0N51wIEiMf8V3qg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vAyo0aZoGUM+Pb+TeSQwi3MEk+4=
+			r5U/eLDmxx3QkHKpYr29ikOKCzQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1730,7 +2281,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OK/lmkK7yr2z6U0CfBAWBO7dFwU=
+			EObEzn7zavCdvhDUe/XocdTmAlY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1740,6 +2291,15 @@
 			<key>hash</key>
 			<data>
 			rXjMq5Z0SMhykvzXxfr/tuf3MaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJCCK/fEz5cgWqu29oYIucHAkcw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1757,7 +2317,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yOd3GS6jptt6oywOQXiNdiMymNg=
+			7aDfzngXx6XOL2cECk7qWmbktXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1767,6 +2327,15 @@
 			<key>hash</key>
 			<data>
 			wQ9767+kqD31qokdw+QkJtnlYns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			REZXcsLuQ0deMSAqxDFIVKD0pVY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1784,7 +2353,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gcN0FzlbMhbVhxRBF32RCK0ME30=
+			jF2GpXu4caSLi4zAzZ7dKGLmfeI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1798,11 +2367,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o7z2+rqHQVivY2XVa1fc+H6q2gY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T2XI8NJTBd2yiKflxtBtqake2ZQ=
+			yrJKmZESn7v8k+yEIkAPGYEtj7w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1811,7 +2389,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wcuFulO3QghpRSZkjtn+rzV8pUo=
+			Bqk9TnnKeUwhnZXOWJDX4qt7ewk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1825,11 +2403,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pot4AvxHep5Rn8NfFir65g+JWxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6bls4TRg0K9/50dQU6PrtP7GoB4=
+			BEkfjsQetDVJV1NlT8tXJ5MqES0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1838,7 +2425,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iF1kBr9b638GLUIduOaUP3A2H2k=
+			bIuHQ6BHBfB9dGlFiM5WvWG/Aa4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1848,6 +2435,15 @@
 			<key>hash</key>
 			<data>
 			FA/ShaWqy6yTOsVeoznYzSNxXNk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KA5l1zEaNVfHkfgbL+9L8OXSUWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1865,7 +2461,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xQpeThY3BARxyd4ibDj5b5MU880=
+			H8iTuj5RHqhoFbaogB8H85lu5wo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1875,6 +2471,15 @@
 			<key>hash</key>
 			<data>
 			XaUP8snkqn3Zm6uRsGGE5EU3i+g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n48QtMz9qr4xIbSIqa+XWJRYLM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1892,7 +2497,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P6KgPIT36P5H8uXWF+pSDF8oW48=
+			KDyyqZ3EN+4lLUXuizpUdiCFG3o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1902,6 +2507,15 @@
 			<key>hash</key>
 			<data>
 			PSxkOZTfyJaAl3ODObT0NXEa1NE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QmCn+Gh+tHyEbCQqxsPooSqWlpo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1919,7 +2533,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fwen6hD92UZrmqQci8Kf5QWbHsU=
+			kUIJFESJkTg85x+mS7R3QEuyMRg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1933,11 +2547,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			33GsM5w6xCAG/YMI6sT1SWoOVUQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bc91WecS4BqbRSGAiQbuB0CLjpM=
+			BzYbMlUShTOEp8eLFV0iSVk3E5E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1946,7 +2569,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mvfYvqayRWDaSQLs5EcW7KJlAGg=
+			3qZnAQsMJObqdi08MAeR/CUnbpY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1960,11 +2583,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zzg4GEXEcbyHQZxVs4P/jWAy1Vo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iP031XVr/a8yfJBpNTtSA2q0WPg=
+			Tp3W/FcmuF9ZS6GJlk6S45/qMg4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1973,7 +2605,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZQ2n7cngVFIK5+X74QceliTmMY=
+			SeEAwkpwkuZFTJi2a/hrVM6V8E4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1983,6 +2615,15 @@
 			<key>hash</key>
 			<data>
 			14oCXPO4574P0eKV30I+vSEpqcM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GH2MfKzsednh5SHIKdA5l2EYLzY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2000,7 +2641,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ak+OXEIQqy5vf/qMfmWO9kD0yII=
+			9hFCOqX7JgJJWIeMsFi0VWvHxic=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2014,11 +2655,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uzyzl5mCBjXg+1rKHfHj09kwAzg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rs7u8XWjF9b9zilrW46nJwg6i+A=
+			z57asDU3VzA2V4ZrF0uhGfaTWSk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2027,7 +2677,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			05UT62N2I39IM9rWyW3yc1z2Bgw=
+			gUP0x57wZ7UI2GbLPeBxEFf1xws=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2041,11 +2691,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XmcRzd2MSAoy0J2epHHeXLPS6Us=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/DeviceConfig.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3GnnhE9LODJhYmbEKSvEslgvozY=
+			TmPX1cLPjHi+Q6R97fTyjiPlAA0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2054,7 +2713,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zg1qqIo6IGu2UNWUR/dIugRIhkU=
+			wFm90qVn6CRiSGLuq3CW1n8WDvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2064,6 +2723,15 @@
 			<key>hash</key>
 			<data>
 			yD3OALjWySXhNy+QYW5xAB3gj8M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/DeviceConfig-b188.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0fTbSFDI9YZGnpqc2R839OjHTGo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2081,7 +2749,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			berQnxXquxUEGUHQYT7o1cgE9Kw=
+			uB0L8eVCDHMQ5fu8oQA7KogvvEQ=
 			</data>
 			<key>optional</key>
 			<true/>

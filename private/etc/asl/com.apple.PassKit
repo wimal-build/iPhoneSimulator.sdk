@@ -1,6 +1,0 @@
-# We claim all messages at Error or below.  This means ASL only sees Error messages.
-
-? [= Facility com.apple.PassKit] [> Level error] claim
-? [= Facility com.apple.PassKit] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/Wallet/Wallet.log format='$((Time)(lcl.4)) $(Sender)[$(PID)] [$(ASLAuxTitle)]: $Message' rotate=Wallet.local-basic.log ttl=7 file_max=5M all_max=20M compress uid=501 gid=501 basestamp symlink
-
-> $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/Wallet uid=501 gid=501 mode=0755

@@ -35,6 +35,7 @@ CS_TVOS_UNAVAILABLE
 
 + (instancetype)defaultSearchableIndex;
 
+// Apps can set a name for the index instance. This name is used as a handle for the client state used with the batch API, allowing a single client to have multiple client states; you have to retrieve the client state for an index instance with the same name as you used when setting the client state.
 - (instancetype)initWithName:(NSString *)name;
 
 //Apps can set a default protection class for items in their entitlements.  You can alternately create an instance with a custom protection class to use on iOS.  It should be one of NSFileProtectionComplete, NSFileProtectionCompleteUnlessOpen, or NSFileProtectionCompleteUntilFirstUserAuthentication.
@@ -50,7 +51,9 @@ CS_TVOS_UNAVAILABLE
 // reindexSearchableItemsWithIdentifiers will be called if the journaling completed successfully but the data was not able to be indexed for some reason.
 - (void)deleteSearchableItemsWithIdentifiers:(NSArray<NSString *> *)identifiers completionHandler:(void (^ __nullable)(NSError * __nullable error))completionHandler;
 
-// Call this method on the index to remove any items from the index with the given domain identifiers.  The delete is recursive so if domain identifiers are of the form <account-id>.<mailbox-id>, for example, calling delete with <account-id> will items with that account and any mailbox.
+// Call this method on the index to remove any items from the index with the given domain identifiers.
+// The delete is recursive so if domain identifiers are of the form <account-id>.<mailbox-id>, for example,
+// calling delete with <account-id> will delte all the searchable items with that account and any mailbox.
 - (void)deleteSearchableItemsWithDomainIdentifiers:(NSArray<NSString *> *)domainIdentifiers completionHandler:(void (^ __nullable)(NSError * __nullable error))completionHandler;
 
 // Call this method to delete all searchable items from the index.

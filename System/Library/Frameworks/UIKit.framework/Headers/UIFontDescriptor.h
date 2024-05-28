@@ -2,7 +2,7 @@
 //  UIFontDescriptor.h
 //  UIKit
 //
-//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -46,8 +46,13 @@ typedef NS_OPTIONS(uint32_t, UIFontDescriptorSymbolicTraits) {
 } NS_ENUM_AVAILABLE_IOS(7_0);
 
 typedef NSUInteger UIFontDescriptorClass;
+#if UIKIT_STRING_ENUMS
+typedef NSString * UIFontTextStyle NS_EXTENSIBLE_STRING_ENUM;
+#else
+typedef NSString * UIFontTextStyle;
+#endif
 
-@class NSMutableDictionary, NSDictionary, NSArray, NSSet;
+@class NSMutableDictionary, NSDictionary, NSArray, NSSet, UITraitCollection;
 
 NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, NSSecureCoding>
 
@@ -62,7 +67,11 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, N
 
 - (nullable id)objectForKey:(NSString *)anAttribute;
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSDictionary<NSString *, id> *fontAttributes;
+#else
 - (NSDictionary<NSString *, id> *)fontAttributes;
+#endif
 
 // Instance conversion
 // Returns "normalized" font descriptors matching the receiver. mandatoryKeys is an NSSet instance containing keys that are required to be identical in order to be matched. mandatoryKeys can be nil.
@@ -74,16 +83,21 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, N
 + (UIFontDescriptor *)fontDescriptorWithName:(NSString *)fontName matrix:(CGAffineTransform)matrix;
 
 // Returns a font descriptor containing the text style and containing the user's selected content size category.
-+ (UIFontDescriptor *)preferredFontDescriptorWithTextStyle:(NSString *)style;
++ (UIFontDescriptor *)preferredFontDescriptorWithTextStyle:(UIFontTextStyle)style;
+// Returns a font descriptor containing the text style and containing the content size category defined in the trait collection.
++ (UIFontDescriptor *)preferredFontDescriptorWithTextStyle:(UIFontTextStyle)style compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection NS_AVAILABLE_IOS(10_0);
 
 - (instancetype)initWithFontAttributes:(NSDictionary<NSString *, id> *)attributes NS_DESIGNATED_INITIALIZER;
 
 - (UIFontDescriptor *)fontDescriptorByAddingAttributes:(NSDictionary<NSString *, id> *)attributes; // the new attributes take precedence over the existing ones in the receiver
-- (UIFontDescriptor *)fontDescriptorWithSymbolicTraits:(UIFontDescriptorSymbolicTraits)symbolicTraits;
 - (UIFontDescriptor *)fontDescriptorWithSize:(CGFloat)newPointSize;
 - (UIFontDescriptor *)fontDescriptorWithMatrix:(CGAffineTransform)matrix;
 - (UIFontDescriptor *)fontDescriptorWithFace:(NSString *)newFace;
 - (UIFontDescriptor *)fontDescriptorWithFamily:(NSString *)newFamily;
+
+- (nullable UIFontDescriptor *)fontDescriptorWithSymbolicTraits:(UIFontDescriptorSymbolicTraits)symbolicTraits; // Returns a new font descriptor reference in the same family with the given symbolic traits, or nil if none found in the system.
+
+
 @end
 
 // Predefined font attributes not defined in NSAttributedString.h
@@ -137,16 +151,16 @@ UIKIT_EXTERN NSString *const UIFontFeatureTypeIdentifierKey NS_AVAILABLE_IOS(7_0
 UIKIT_EXTERN NSString *const UIFontFeatureSelectorIdentifierKey NS_AVAILABLE_IOS(7_0);
 
 // Font text styles, semantic descriptions of the intended use for a font returned by +[UIFont preferredFontForTextStyle:]
-UIKIT_EXTERN NSString *const UIFontTextStyleTitle1 NS_AVAILABLE_IOS(9_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleTitle2 NS_AVAILABLE_IOS(9_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleTitle3 NS_AVAILABLE_IOS(9_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleHeadline NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleSubheadline NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleBody NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleCallout NS_AVAILABLE_IOS(9_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleFootnote NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleCaption1 NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleCaption2 NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleTitle1 NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleTitle2 NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleTitle3 NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleHeadline NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleSubheadline NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleBody NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleCallout NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleFootnote NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleCaption1 NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleCaption2 NS_AVAILABLE_IOS(7_0);
 
 NS_ASSUME_NONNULL_END
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer bounds="0 0 104 203" name="Root Layer" position="26 50.75" transform="scale(0.5, 0.5, 1)">
+    <backgroundColor opacity="0" value="1 1 1"/>
+    <sublayers>
+      <CALayer bounds="0 0 104 203" name="AlertStyleAlert@2x~iphone.png" position="52 101.5">
+	<contents type="CGImage" src="assets/AlertStyleAlert@2x~iphone.png"/>
+      </CALayer>
+      <CALayer bounds="0 0 84 128" masksToBounds="1" name="Banner Container" position="52 102">
+	<backgroundColor opacity="0" value="0 0 0"/>
+	<sublayers>
+	  <CALayer backgroundColor="0 0.4784 1" bounds="0 0 76 20" cornerRadius="3" name="Banner" position="42 168">
+	    <animations>
+	      <p key="animation-1" type="CAKeyframeAnimation" keyPath="position.y" beginTime="0.75" duration="4" enabled="1" fillMode="both" removedOnCompletion="0" repeatCount="0">
+		<keyTimes>
+		  <integer value="0"/>
+		  <real value="0.1500000059605"/>
+		  <real value="0.5"/>
+		</keyTimes>
+		<timingFunctions>
+		  <CAMediaTimingFunction value="0 0 0.25857 1"/>
+		  <CAMediaTimingFunction value="linear"/>
+		  <CAMediaTimingFunction value="0.75163 0 1 1"/>
+		</timingFunctions>
+		<values>
+		  <integer value="144"/>
+		  <integer value="114"/>
+		  <integer value="114"/>
+		  <integer value="166"/>
+		  <integer value="166"/>
+		</values>
+	      </p>
+	    </animations>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+  </CALayer>
+</caml>

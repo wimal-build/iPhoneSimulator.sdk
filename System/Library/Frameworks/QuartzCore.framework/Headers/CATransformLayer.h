@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  * their sublayers, applying the effects of the transform layer's
  * geometry when hit-testing each sublayer. */
 
+CA_CLASS_AVAILABLE (10.6, 3.0, 9.0, 2.0)
 @interface CATransformLayer : CALayer
 @end
 

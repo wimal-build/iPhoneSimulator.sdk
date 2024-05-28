@@ -14,14 +14,6 @@
 
 #import <Availability.h>
 
-#ifndef __MAC_TBD
-#define __MAC_TBD __MAC_NA
-#endif
-
-#ifndef __AVAILABILITY_INTERNAL__MAC_TBD
-#define __AVAILABILITY_INTERNAL__MAC_TBD __AVAILABILITY_INTERNAL_UNAVAILABLE
-#endif
-
 #ifndef __TVOS_PROHIBITED
 #define __TVOS_PROHIBITED
 #endif

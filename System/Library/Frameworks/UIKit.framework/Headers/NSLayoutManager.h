@@ -147,9 +147,9 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 @property(readonly, NS_NONATOMIC_IOSONLY) NSUInteger numberOfGlyphs;
 
 // If non-contiguous layout is not enabled, these will cause generation of all glyphs up to and including glyphIndex.  The first CGGlyphAtIndex variant returns kCGFontIndexInvalid if the requested index is out of the range (0, numberOfGlyphs), and optionally returns a flag indicating whether the requested index is in range.  The second CGGlyphAtIndex variant raises a NSRangeError if the requested index is out of range.
-- (CGGlyph)CGGlyphAtIndex:(NSUInteger)glyphIndex isValidIndex:(nullable BOOL *)isValidIndex;
-- (CGGlyph)CGGlyphAtIndex:(NSUInteger)glyphIndex;
-- (BOOL)isValidGlyphIndex:(NSUInteger)glyphIndex;
+- (CGGlyph)CGGlyphAtIndex:(NSUInteger)glyphIndex isValidIndex:(nullable BOOL *)isValidIndex NS_AVAILABLE(10_11,7_0);
+- (CGGlyph)CGGlyphAtIndex:(NSUInteger)glyphIndex NS_AVAILABLE(10_11,7_0);
+- (BOOL)isValidGlyphIndex:(NSUInteger)glyphIndex NS_AVAILABLE(10_11,7_0);
 
 // If non-contiguous layout is not enabled, this will cause generation of all glyphs up to and including glyphIndex.  It will return the glyph property associated with the glyph at the specified index.
 - (NSGlyphProperty)propertyForGlyphAtIndex:(NSUInteger)glyphIndex NS_AVAILABLE(10_5, 7_0);
@@ -192,8 +192,14 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 
 // Returns (by reference for the "get" method) the character index or glyph index or both of the first unlaid character/glyph in the layout manager at this time.
 - (void)getFirstUnlaidCharacterIndex:(nullable NSUInteger *)charIndex glyphIndex:(nullable NSUInteger *)glyphIndex;
+
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSUInteger firstUnlaidCharacterIndex;
+@property(nonatomic, readonly) NSUInteger firstUnlaidGlyphIndex;
+#else
 - (NSUInteger)firstUnlaidCharacterIndex;
 - (NSUInteger)firstUnlaidGlyphIndex;
+#endif
 
 // Returns the container in which the given glyph is laid and (optionally) by reference the whole range of glyphs that are in that container.  This will cause glyph generation and layout for the line fragment containing the specified glyph, or if non-contiguous layout is not enabled, up to and including that line fragment; if non-contiguous layout is not enabled and effectiveGlyphRange is non-NULL, this will additionally cause glyph generation and layout for the entire text container containing the specified glyph.
 - (nullable NSTextContainer *)textContainerForGlyphAtIndex:(NSUInteger)glyphIndex effectiveRange:(nullable NSRangePointer)effectiveGlyphRange;

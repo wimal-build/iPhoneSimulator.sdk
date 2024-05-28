@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMLogItem.h>
+#import <CoreMotion/CMAvailability.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

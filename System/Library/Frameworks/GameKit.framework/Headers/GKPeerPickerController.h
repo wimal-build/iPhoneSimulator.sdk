@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 /* Notifies delegate that a connection type was chosen by the user.
  */
 - (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type ;
@@ -38,8 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  You should return a valid GKSession object for use by the picker. If this method is not implemented or returns 'nil', a default GKSession is created on the delegate's behalf.
  */
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type ;
 
 /* Notifies delegate that the peer was connected to a GKSession.

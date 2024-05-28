@@ -6,11 +6,20 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		8dRSqxTbzVFDlXqconO9I8FkxfM=
+		5fuW4gwH9YXKUbwmMIqLN6XrLbw=
+		</data>
+		<key>entitlements.plist</key>
+		<data>
+		Ldkt2vPb6qLwa3skHHSTJyCWUEQ=
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>entitlements.plist</key>
+		<data>
+		Ldkt2vPb6qLwa3skHHSTJyCWUEQ=
+		</data>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^</key>

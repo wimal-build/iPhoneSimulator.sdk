@@ -16,6 +16,8 @@
 	<string>mobile</string>
 	<key>RunAtLoad</key>
 	<true/>
+	<key>TransactionTimeLimitEnabled</key>
+	<false/>
 	<key>MachServices</key>
 	<dict>
 		<key>com.apple.wcd</key>

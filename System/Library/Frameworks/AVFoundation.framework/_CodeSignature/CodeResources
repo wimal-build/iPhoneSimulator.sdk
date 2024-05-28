@@ -4,11 +4,20 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Dutch.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mHKkdn8qxbZnU5VZiN5y1atfWHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f+38HaezaFwzM+rbUbbar/8QyEM=
+			USYqeWIKoGYO14Kj3Vn5d1wZrT4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -17,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KrdkzEP6Rrcc0/mAcQuYcfPjv3w=
+			/ZOE0xoF19yjHbdN+qDz0RJMvLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +35,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zvKdbkWrMEb493DWY5FKaPpJH5c=
+			1x/01b8PLRSyKKuRem7/R9UJohg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pgek5Xw/2etfYnpfl94Amx0cdA8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +62,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			03/QxFOsiJYy/ETuy+GKRgUY/ac=
+			HdeJIao98A4J9NKmI66G9D0mi7I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +71,172 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMUvT+kwPiKe94V85vJBlrayjqI=
+			bjBUCHpNQxTgQEXFkScfGjnJct4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/AVFAudio.framework/AVFAudio</key>
+		<data>
+		fJssgsVXSCWflGBjOLzmq9v6pNo=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h</key>
+		<data>
+		fYbATAmky0Gnaiz/Dfp6Z26PMbk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioChannelLayout.h</key>
+		<data>
+		L/HihEclTTWlubKFSn6H7518LYo=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioConnectionPoint.h</key>
+		<data>
+		AX/cuyULomQhRG0DTjhJf6SJP5s=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioConverter.h</key>
+		<data>
+		44wfPNewc5Et/2+FmOTOV9Spj1g=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioEngine.h</key>
+		<data>
+		EgbLwxfyW7waseNy9c/wFUMhgCM=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioEnvironmentNode.h</key>
+		<data>
+		sQocKPmjtMmt37KNr3Cjog/bIU8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioFile.h</key>
+		<data>
+		HTvsCATgcz5ZB86sLU1rJox4qRk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioFormat.h</key>
+		<data>
+		3ZbcjhbaOYNItE43r8NYCihBm2M=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioIONode.h</key>
+		<data>
+		PaNfv3/kxHhqvKb4gyd4GNziibM=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioMixerNode.h</key>
+		<data>
+		EcOV3qvU8vVmA0/+u4aFDXLpXOQ=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioMixing.h</key>
+		<data>
+		9JBWYhThSM38vcXJZRO/D2v7usk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioNode.h</key>
+		<data>
+		AxytFHUxTjgw+VUAOQj5lvdN8yM=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioPlayer.h</key>
+		<data>
+		WJQdfT+4hYMV4bewbgDCCpmumnw=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioPlayerNode.h</key>
+		<data>
+		AWcvJan+nYKVwhsQmPLbN0pD52M=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioRecorder.h</key>
+		<data>
+		mYWVlVrOzA5zBPrDsmjwtnD9QdE=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioSequencer.h</key>
+		<data>
+		11Uc+f0j9QJAs6TAaBpx3p6N09I=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioSession.h</key>
+		<data>
+		v+JMB89O4Qt3mzVgVxY/Maf5nIU=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioSettings.h</key>
+		<data>
+		II2rP6XieYERc0Nk9hGzPrYaihY=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioTime.h</key>
+		<data>
+		tpM9bm7o0p9uGktsfyZbYBkFj48=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioTypes.h</key>
+		<data>
+		IVrUdQ15teYepga1ofj/hcnKL1w=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnit.h</key>
+		<data>
+		YiLzqi5Qf2s2ZSy9CbU9N1Jkmww=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitComponent.h</key>
+		<data>
+		gUiWAlTDnWHT9/UIqlAQmv5MWrA=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitDelay.h</key>
+		<data>
+		/WaBXy+8xOkmfpAIXGX+cXY5uo8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitDistortion.h</key>
+		<data>
+		fWMWworE/Z13qGtKTyGr4AEZpMs=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitEQ.h</key>
+		<data>
+		LCKbtjNl7a0EDEQ9YkKdd0ln+4Q=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitEffect.h</key>
+		<data>
+		mr/twyt65z89mg/rqeyu/jkCPwk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitGenerator.h</key>
+		<data>
+		i4keqqn2iF8/EAKWdASoQ3OJjy8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitMIDIInstrument.h</key>
+		<data>
+		UTIKxPcEYkDUxtixYRomV/cRXiQ=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitReverb.h</key>
+		<data>
+		1r2Azkl21wi6/Ek+xUSLcDQCLMo=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitSampler.h</key>
+		<data>
+		Gwg6pa2enDDdWVAaNiS/o5sLl4E=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitTimeEffect.h</key>
+		<data>
+		j/1i1O9jemCAJa34RuY7TLhxxu8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitTimePitch.h</key>
+		<data>
+		SoTathYXYN/bu56cglttz2AqJ0Q=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitVarispeed.h</key>
+		<data>
+		h3zZ8Ulva0UT4IbQftZg6fwajcE=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVFAudio.h</key>
+		<data>
+		B+pxL+7bnIZAp8cVm7pcBmbXWxQ=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVMIDIPlayer.h</key>
+		<data>
+		EWpzB6LqIiYNePKiNvkc7Gi2wsg=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVSpeechSynthesis.h</key>
+		<data>
+		eN3fVY2QzGrTCLw9WOKsV2QuPpE=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Info.plist</key>
+		<data>
+		o9bTRn5iunCJLvgyABFaNn+IVrs=
+		</data>
+		<key>Frameworks/AVFAudio.framework/_CodeSignature/CodeResources</key>
+		<data>
+		KospYp3unAF/qHZZo7a4PZmgc4g=
+		</data>
+		<key>French.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6aABLwV8d8jZcQ/c6qi1kJJZxtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,7 +254,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r2xaOUzK64ZexuR/TBlQ6z7CqWM=
+			OIyM4hozf1M+iyAzAn6IX5uWCwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +263,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kwhcMrvaxrMbLXyZOZSaNDzZxrI=
+			XBuazV73NglHl5ZQTQ338FtYKiU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lyGyvMX7DejDE744pQWsVPngKAk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,7 +290,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fF1xI7AjQBKx2s1OKPNBJWw2jdU=
+			9x2sVfWI43DrQsH5w1L+356cxxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,7 +299,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xhTGjVyIi+1mdCJmdoIJe3EvWxE=
+			dzlXWU5dU+nlNC1kasiboVtPVbU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -118,11 +310,15 @@
 		</data>
 		<key>Headers/AVAsset.h</key>
 		<data>
-		HU2AYfC4aeoXdS/aaUASe5QPUFU=
+		OOyc/ZZAQwzEN+6ThGPRvQwmIgA=
+		</data>
+		<key>Headers/AVAssetCache.h</key>
+		<data>
+		13JZ1eexDkLiUwOCi2VQ/ql7m34=
 		</data>
 		<key>Headers/AVAssetDownloadTask.h</key>
 		<data>
-		XXIakqryblNVYnhrQeglzi3KRAw=
+		jw5qS1qxXSHa5EgDaJa7qPvezxU=
 		</data>
 		<key>Headers/AVAssetExportSession.h</key>
 		<data>
@@ -130,23 +326,23 @@
 		</data>
 		<key>Headers/AVAssetImageGenerator.h</key>
 		<data>
-		tI76UfU5ZKk4xW+7TiZdXCXTf3Q=
+		OXnu8gD7UoBI2yFbO/EaYNR++wo=
 		</data>
 		<key>Headers/AVAssetReader.h</key>
 		<data>
-		Hb2K6L0R/nxwXqFSqwIAmcGB9Us=
+		6jIDRafdUhhNcuozkQYIinhIlDk=
 		</data>
 		<key>Headers/AVAssetReaderOutput.h</key>
 		<data>
-		1A8uyAoadFJfZ53hYIDDG2rKBDg=
+		TX4ElLere6Ld5IiK2rMk7bXQD98=
 		</data>
 		<key>Headers/AVAssetResourceLoader.h</key>
 		<data>
-		4oLBgQOQSyaacTGWBaSCX0oPq+o=
+		GWjd0Lj8fW3AcBV3ADAsKMSVN9o=
 		</data>
 		<key>Headers/AVAssetTrack.h</key>
 		<data>
-		Avmbxc3Lef4q1AkalfXYMbn+OK8=
+		gAfAaJrqBpm6sWcvT8xmSjhw7Ew=
 		</data>
 		<key>Headers/AVAssetTrackGroup.h</key>
 		<data>
@@ -158,51 +354,51 @@
 		</data>
 		<key>Headers/AVAssetWriter.h</key>
 		<data>
-		AiVphn3jgL7J0yAh7Oz4orra2wg=
+		bI91XpkrMqyVcq2qVzPBYdo3TRk=
 		</data>
 		<key>Headers/AVAssetWriterInput.h</key>
 		<data>
-		g4drWigIreIv3BdkF3fxjorWX3c=
+		MQkmta6fbnKpbUZf/GUKrVTd928=
 		</data>
 		<key>Headers/AVAsynchronousKeyValueLoading.h</key>
 		<data>
-		tWR5vUF7Nkdr4t9BUZFfGq/GUG8=
+		VUWzijPfNmU3pAg813sTcvOlKpY=
 		</data>
 		<key>Headers/AVAudioBuffer.h</key>
 		<data>
-		XFMuHyol168V8Cd+Y35FeZzGd6Q=
+		5sYDjS/oz9h3kPgQ5fpB2jpMgAM=
 		</data>
 		<key>Headers/AVAudioChannelLayout.h</key>
 		<data>
-		hcoXuneoK6zvmtlpCYOQAydJCPk=
+		s8GqqmbCs8h6CRBKGXi1suU0oh8=
 		</data>
 		<key>Headers/AVAudioConnectionPoint.h</key>
 		<data>
-		uAW5yWHUGsxRjr1q9Vhy/tcGEOk=
+		MDiOdhgNyoc1aVcw/ZiA9pmpbeg=
 		</data>
 		<key>Headers/AVAudioConverter.h</key>
 		<data>
-		Oj1VzKrg5S0Zv9YjaLTjTePEdPk=
+		+jTZHSD/s0TIM0HeUdLSuU2XIf8=
 		</data>
 		<key>Headers/AVAudioEngine.h</key>
 		<data>
-		3bI1yvNbDsx2vfiDbGxzBfba+0A=
+		tHU3r9ZYi+acI3CFA3dGVSrcSnY=
 		</data>
 		<key>Headers/AVAudioEnvironmentNode.h</key>
 		<data>
-		D6OKRxrNAxg/Mdp6W0B1ssmy4og=
+		sJNHvIfdJKUzEOIoVWLxnHeT+1k=
 		</data>
 		<key>Headers/AVAudioFile.h</key>
 		<data>
-		GCOMBx3d45AASlHuRVnqRi8QmZ0=
+		HpDPz1mxtQyJXzKtT0GOi4/XMhA=
 		</data>
 		<key>Headers/AVAudioFormat.h</key>
 		<data>
-		fpOv7r7r/wvlem2dsvd9yy4paxw=
+		qLT/dwhwqZLBJODDT7+Oz0yVjvI=
 		</data>
 		<key>Headers/AVAudioIONode.h</key>
 		<data>
-		axZimAJpbmtBNlGQTLY3Dj4Avbw=
+		GKZHLxIoSz5r5q1kJTieXsgStUk=
 		</data>
 		<key>Headers/AVAudioMix.h</key>
 		<data>
@@ -210,23 +406,23 @@
 		</data>
 		<key>Headers/AVAudioMixerNode.h</key>
 		<data>
-		Bfxxk3bcryQqiRXZtJB1j8yFGv4=
+		u1od4mlpG2pdW2L7ThvP17IRLCs=
 		</data>
 		<key>Headers/AVAudioMixing.h</key>
 		<data>
-		MzODiFpeu+0zltcQHcsJ8Pi2TBk=
+		JM1H4XH2tezHLgeefFSDDG7fmIE=
 		</data>
 		<key>Headers/AVAudioNode.h</key>
 		<data>
-		bSvi9zjfBfu2QCPmpJQyC7BkFTI=
+		FUfAfv4DqTpJbkphEU8BGF5H8Pc=
 		</data>
 		<key>Headers/AVAudioPlayer.h</key>
 		<data>
-		wf4Fx6Tu4qBJ1xxO0J9NsQvaPpE=
+		38qH/kTQd5/MjY7yr3nZ9TuIvrM=
 		</data>
 		<key>Headers/AVAudioPlayerNode.h</key>
 		<data>
-		8sFnGr0lfNdbvnlGjUhcB9rvWYc=
+		IE3F0iqA+YUeqhmSvPl2tVlU1ho=
 		</data>
 		<key>Headers/AVAudioProcessingSettings.h</key>
 		<data>
@@ -234,111 +430,139 @@
 		</data>
 		<key>Headers/AVAudioRecorder.h</key>
 		<data>
-		/ircoC2SbXkPUIkS+iEfrUavvVE=
+		68noojLuu41J8s3po41xRFaOERs=
 		</data>
 		<key>Headers/AVAudioSequencer.h</key>
 		<data>
-		xKgC8hUYHHciEXFXvIcoOFr9mtU=
+		AJW3Dfnj/NCv99KpmrBX3+veFM8=
 		</data>
 		<key>Headers/AVAudioSession.h</key>
 		<data>
-		SF+7qZqp9eqseudHsJFl5y74E1I=
+		Ij96vFyNOy8CBLpSdRUIer8K54U=
 		</data>
 		<key>Headers/AVAudioSettings.h</key>
 		<data>
-		muLuyZdo7PsYZnyP4U8ABJSa+tw=
+		Hooz+W/nev5GSe/pFLOp5sbFmyQ=
 		</data>
 		<key>Headers/AVAudioTime.h</key>
 		<data>
-		Qzl4vFpCeTcdi1v92Vh+4rgup/Y=
+		Op4KBVjgtBk/68a9VV0h+ExAR7s=
 		</data>
 		<key>Headers/AVAudioTypes.h</key>
 		<data>
-		IVrUdQ15teYepga1ofj/hcnKL1w=
+		8drueIIAdbctyRaL631Cw+8WFT4=
 		</data>
 		<key>Headers/AVAudioUnit.h</key>
 		<data>
-		JmTcP4LH92gjPnNKFFeAMf4xT94=
+		/9ANkPC1utjNjaMsnAWMqPYBH7c=
 		</data>
 		<key>Headers/AVAudioUnitComponent.h</key>
 		<data>
-		zrs8V0hoAtKwMaIpa7jVb818ias=
+		k4OE0Xg1QF10lncWKSL8D4BSQYA=
 		</data>
 		<key>Headers/AVAudioUnitDelay.h</key>
 		<data>
-		tSmFp/S7M0Lfufgy0RYnEm0zoTw=
+		d85I3si1FrVrSVAOt/a7mUsb0ac=
 		</data>
 		<key>Headers/AVAudioUnitDistortion.h</key>
 		<data>
-		+zJNp3doQv+tvOeHuw0CO/iMJBQ=
+		ycbKuUIdmjzxsBYLiiSP3Qwuc4Q=
 		</data>
 		<key>Headers/AVAudioUnitEQ.h</key>
 		<data>
-		/QtmzcjJ5ntKT0MfE9fDlCWV0lw=
+		QbJ1HiT50gpIDvbW9kGoBvhCyzk=
 		</data>
 		<key>Headers/AVAudioUnitEffect.h</key>
 		<data>
-		8vaxp/pVN2Q5RVFtQDmwLZ6ZlUE=
+		z2R21kZVj2zv1+I9aX1F59wVrio=
 		</data>
 		<key>Headers/AVAudioUnitGenerator.h</key>
 		<data>
-		QTtmt7oflE2e2vrcuoiHDpA92FE=
+		6Jm6nhApo+oK8EG94DF6P9TiLbA=
 		</data>
 		<key>Headers/AVAudioUnitMIDIInstrument.h</key>
 		<data>
-		GoNCHGq3icbQ8cURQZcoBscnyvs=
+		1T4OJ+qsG9/N3vjJqRqBDUEDWgY=
 		</data>
 		<key>Headers/AVAudioUnitReverb.h</key>
 		<data>
-		bqS9RtyE3w9kl4XYCc0klJ7fxAc=
+		bcj+UzeHuEU20DPyVv6yH55a0k0=
 		</data>
 		<key>Headers/AVAudioUnitSampler.h</key>
 		<data>
-		ZpfpemtJd3u1bJXd5bLLF8uw3Lw=
+		iEIBPRkSH/iPMFdnt4LV965VQvA=
 		</data>
 		<key>Headers/AVAudioUnitTimeEffect.h</key>
 		<data>
-		iNeiLnkWB98DPY0HBTXY/TzdoqU=
+		ZziCHEmyuPzCVTc0+flLkXitcdg=
 		</data>
 		<key>Headers/AVAudioUnitTimePitch.h</key>
 		<data>
-		EeXB8S1vDYxsaQ+SJiG40grZh0g=
+		zlm3u2gcyiNyEDnsQpECcy2IeFc=
 		</data>
 		<key>Headers/AVAudioUnitVarispeed.h</key>
 		<data>
-		6jMkiMFWQ7wFa4vJucbktd+00vg=
+		7zkC+Yw376KsBjR6ibZKBQ4ZX+Y=
 		</data>
 		<key>Headers/AVBase.h</key>
 		<data>
-		G2P7MHQl7dxpsDAHMXvf8kl7kFs=
+		StybBxFkFlpO1h7R+7CqDkxvGTg=
+		</data>
+		<key>Headers/AVCaptureAudioDataOutput.h</key>
+		<data>
+		bM6zBnPL7WM21hpH7aVfLO/85tA=
+		</data>
+		<key>Headers/AVCaptureAudioPreviewOutput.h</key>
+		<data>
+		7CZXR5yMtV+XPP7BNULW+hm04lk=
 		</data>
 		<key>Headers/AVCaptureDevice.h</key>
 		<data>
-		L1DkQ/SyqCH/tT5v/V1FCjhFRUM=
+		PkWAaOoFbO8wk2k7ffRHa6qyoo4=
+		</data>
+		<key>Headers/AVCaptureFileOutput.h</key>
+		<data>
+		xV1vQzEoKURlmszmrIFwOPCopMc=
 		</data>
 		<key>Headers/AVCaptureInput.h</key>
 		<data>
-		4c0zxhd7jWjVxJpHzBAZ3hARUQo=
+		gLS+/qQP2fSOSNhW6zbTjgcDnXw=
+		</data>
+		<key>Headers/AVCaptureMetadataOutput.h</key>
+		<data>
+		qZeUxjA3SQzG/LnpGQ0qKiitNGk=
 		</data>
 		<key>Headers/AVCaptureOutput.h</key>
 		<data>
-		d8gDdozFdQ0slR12c5jQ+qWB8GE=
+		skdVx2YY8JNvzfBhECyihFVa30k=
+		</data>
+		<key>Headers/AVCapturePhotoOutput.h</key>
+		<data>
+		c7t2SRnYWNcwUEYm0jH2NjDECt0=
 		</data>
 		<key>Headers/AVCaptureSession.h</key>
 		<data>
-		4NUdWl2Dht831JaJiuzxmqJ1Pa4=
+		AZPlHL8BKb2/i8YPWYU59rIfI60=
+		</data>
+		<key>Headers/AVCaptureStillImageOutput.h</key>
+		<data>
+		bwkQ0LpxCfITu6hsI3wqz+d4r40=
+		</data>
+		<key>Headers/AVCaptureVideoDataOutput.h</key>
+		<data>
+		AH6qHp/qDDNj9WQhKgN5OP2GZbI=
 		</data>
 		<key>Headers/AVCaptureVideoPreviewLayer.h</key>
 		<data>
-		ijyU+Kt2v96QsxftHYHtbm+FH94=
+		1LVOJlG81JSg6e2uniOu8O1VCD8=
 		</data>
 		<key>Headers/AVComposition.h</key>
 		<data>
-		/Rpb3WbVJsAB+qLETgP8+CaTJbo=
+		2YcQHImWAxGNGrWwmZT7EGfBLoU=
 		</data>
 		<key>Headers/AVCompositionTrack.h</key>
 		<data>
-		aiAFL66uwF2JtYNpDflMPO+/Ca4=
+		2pfXekoYNuDrmoaAerqWsP6Lym8=
 		</data>
 		<key>Headers/AVCompositionTrackSegment.h</key>
 		<data>
@@ -346,23 +570,23 @@
 		</data>
 		<key>Headers/AVError.h</key>
 		<data>
-		Wq+9S6cn0q5m8dq8jryF8RJbkYo=
+		+y2pybvnNqADJ/IJd3oMMJTRVsI=
 		</data>
 		<key>Headers/AVFAudio.h</key>
 		<data>
-		ZnZ6vXJa9bKGxfrUr3IFcQ7hFO4=
+		+FiuZmOFTeu+ej5a8FWOkDNGDiY=
 		</data>
 		<key>Headers/AVFoundation.h</key>
 		<data>
-		klOXYRBkJ9uBsPcmLTZD6dp8svk=
+		z4FHvg97nhrWLLJk1xdBNIku2fs=
 		</data>
 		<key>Headers/AVMIDIPlayer.h</key>
 		<data>
-		BtrwlGKzc27bpp3tWdGo/8qpthw=
+		3u/u8vn3uVfQnAICD+whxhce8jE=
 		</data>
 		<key>Headers/AVMediaFormat.h</key>
 		<data>
-		LecLjKJyg7M090eeQvtm3G2f/yU=
+		rQWMVXjK9L1gvvZ9aBA2ns/ZcTw=
 		</data>
 		<key>Headers/AVMediaSelection.h</key>
 		<data>
@@ -374,19 +598,19 @@
 		</data>
 		<key>Headers/AVMetadataFormat.h</key>
 		<data>
-		oltD2KBRPvbyvGW9q1gMHyb400A=
+		BCYh3KXZi/Pfw7z+EO9ofHEfKkA=
 		</data>
 		<key>Headers/AVMetadataIdentifiers.h</key>
 		<data>
-		MQDJphZzbgt0bUVQ4YrkK8sFhKg=
+		Zv+iR38A+X5d9oBWfB+xFooU4mM=
 		</data>
 		<key>Headers/AVMetadataItem.h</key>
 		<data>
-		CHP4Ia/lwu2yif2xllwYhfnH5Zw=
+		sO70rF/WADRgCTDZ9yFF3YbZT8s=
 		</data>
 		<key>Headers/AVMetadataObject.h</key>
 		<data>
-		GFSck8+ZSpHPWMFQtRevEW1Deqc=
+		6RTOg1kv0jcJdWihPhJ7d1Wk2xo=
 		</data>
 		<key>Headers/AVOutputSettingsAssistant.h</key>
 		<data>
@@ -394,11 +618,11 @@
 		</data>
 		<key>Headers/AVPlayer.h</key>
 		<data>
-		QIxceNY20cv7zBfh2F1XZiuKeTA=
+		S8WLinQv9z6Zo0bKzWqU7uwOHok=
 		</data>
 		<key>Headers/AVPlayerItem.h</key>
 		<data>
-		siQUHADOecD8LMNBbKKcpJ6V9+Y=
+		h3n6gbDB+qD1NOV0D7j987iOUqI=
 		</data>
 		<key>Headers/AVPlayerItemMediaDataCollector.h</key>
 		<data>
@@ -406,7 +630,7 @@
 		</data>
 		<key>Headers/AVPlayerItemOutput.h</key>
 		<data>
-		dyUmh2Vp1MiMiSb5qqu73P79KaE=
+		bV5/HG6VcjzsFabtwfrlkXUT4iQ=
 		</data>
 		<key>Headers/AVPlayerItemTrack.h</key>
 		<data>
@@ -416,17 +640,21 @@
 		<data>
 		y2pElTxcxdCXG4sVk4IRBcLhBNg=
 		</data>
+		<key>Headers/AVPlayerLooper.h</key>
+		<data>
+		W530oM9mhYODD+FMBHsp66/Ffps=
+		</data>
 		<key>Headers/AVPlayerMediaSelectionCriteria.h</key>
 		<data>
 		x3KLBgN0yMs1Nws6d2Bw+tLRHaE=
 		</data>
 		<key>Headers/AVSampleBufferDisplayLayer.h</key>
 		<data>
-		sWHHLO65VLTixLPixeIUVQcXZ+M=
+		GpeQDhvGaMzkAXN6UF6TBkWwXjc=
 		</data>
 		<key>Headers/AVSpeechSynthesis.h</key>
 		<data>
-		8dBtCwZyIMLThQbl+Qsy6/6w0Xo=
+		2P4y0a0AOe5IOssMz7ml6r5vxPE=
 		</data>
 		<key>Headers/AVSynchronizedLayer.h</key>
 		<data>
@@ -450,20 +678,29 @@
 		</data>
 		<key>Headers/AVVideoCompositing.h</key>
 		<data>
-		LSQgcFI0ellnc/92Th+785DhXiE=
+		byYL9Thotuedeiw37vmZge3pv/c=
 		</data>
 		<key>Headers/AVVideoComposition.h</key>
 		<data>
-		wD+9VfA79kZ2bMAk7UQkWKVLT6M=
+		RwSztFW73JGa5O2Mx3K0lU7JVvg=
 		</data>
 		<key>Headers/AVVideoSettings.h</key>
 		<data>
-		gBEkHz+mg0JMI1jxjwIZtq60JZw=
+		VycgkacquBBc5XsZzWlf4Gl4FCw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jB+DhjrTwaD+rIyuEPaHLx3LvcE=
+		SDgOiFXM57FCEBR38UJQBQ5i314=
 		</data>
+		<key>Italian.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DVFSpcAHiXHIJdo7l9N3cbZ4uT0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -477,7 +714,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WRnR3ZDbCCrPVqHxKNCuKY3C9Vg=
+			uk1kkd0HQtK3DxCTtOgP94rk5Oc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -486,7 +723,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aOyGc0awJtvZrkXQT35P3pJjSQ8=
+			b5+W/SRkl98IetK7DLKfxCBx310=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M3bH9leX5U5eE1tbMor1LpE2zE8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -504,7 +750,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tts4alUq1Sc+pi5n1UuD3QP9RfM=
+			OeZxvzzy1lo54hluORQLqE8eiFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -513,15 +759,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			in9Ap82lT7qiSEEYiyp9/bhmYw4=
+			UoNOXJuxRBoNj39I+yCqUOy/u2o=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<data>
-		zJLqvcYPO6GTPJ0rNji6us4G0X4=
+		8POfuk3bBfwzNVonEnj4DVPALSw=
 		</data>
+		<key>Spanish.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			84EI3n4HEM31J4Ix3BAFhU7JNHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -535,7 +790,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0rmAvTRwUTkCcHzoNYLmy+8uXf8=
+			QXEiSEtiL2GY7jYvHr4R3HH6/Jw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -544,7 +799,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0jOnEaEwo2oOgR+U24j2IOPS2Aw=
+			TRaGPCKt/UTw9/+qhHSlREc3f5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fz+ueQ6AcndV7SxcD9MyzAG+QYc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -562,7 +826,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uUdT0tMx/LbF5OseSSsxl1KNkPI=
+			TaL3maP9ijNw4CT0z/xDKviKXZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -571,7 +835,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXcqSl8kPmpFFf6eNzVt70hBqYY=
+			tRb5WkvG9OCKF4yCfY6ZpvZJKIQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			85VlBzVXQY3rOwyIXTibPw3m6PQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -589,7 +862,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mjQn+pvIhCT37UMPw48fnRUdGUQ=
+			Aafa5PIB9gyLYlXW3O9zWUi6STc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -598,7 +871,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HTCJXtYR+c2OQKZ9M/uHoZVeaxI=
+			eE/haHzN/bH/tZ9HIc0++kqGXaM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bxk/9NCJaqeFxO+Wlb5Y7Joa+BI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -616,7 +898,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lax1YtEgzQpUFE0izB1U31VqBxg=
+			uFUfKBvtqWNX5BrJOZwX1YBIk5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -625,7 +907,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w/ZdS22WehbjTmBoIkwhsW0aaAE=
+			n7axgHBsG7zCOqAyHGzdAUX22Mo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NyjafmAeyt/WUc05fIGM5p/t2Bo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -643,7 +934,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z7zLiI0HIMTuj140+J5juSad0rE=
+			3SiQ82Q+AXiCus8xU2bLPOtSdVs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -652,7 +943,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E3YzoRhddzQIOjPkcow78ap6zDM=
+			N3Pkd0/Y4BKChvIN4Q4LNjFRIvM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oyBCCurnbbNh2cnEVTZXt8u9hdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -670,7 +970,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dl2YxtWB2MicvMmXivqCfugwU4g=
+			tKj/ewhx2e5jQjQxqhp/dCUiNLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -679,7 +979,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h4KqzZi8rdpoHDH1kAbZ6fErhgQ=
+			AgDOA8RWgXhl63jF105UZ/FrKJU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pgek5Xw/2etfYnpfl94Amx0cdA8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -697,7 +1006,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sAYDe/jPiNsN7D6MsKX7mC5o88g=
+			bqUnnHDK5PV4U6RRg4W18w8975g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -706,7 +1015,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMUvT+kwPiKe94V85vJBlrayjqI=
+			bjBUCHpNQxTgQEXFkScfGjnJct4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pgek5Xw/2etfYnpfl94Amx0cdA8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -724,7 +1042,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sAYDe/jPiNsN7D6MsKX7mC5o88g=
+			5JUr/S0y0vbr/qQ+LrDFUMuFLNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -733,7 +1051,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMUvT+kwPiKe94V85vJBlrayjqI=
+			bjBUCHpNQxTgQEXFkScfGjnJct4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gVVLvIxrQ8bANUlMcRbYrwzBhZE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -751,7 +1078,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0KXa5ojtlLvXqtpp2JfAmawludk=
+			V3NdgNXb0nelk9uIZ3uworoEjLI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -760,7 +1087,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0uQSnihvRNijnjmrOy+uCmyIauI=
+			9cbwtYySbB2qlxqivxx4wuz2QIc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O39/FR7oUWHieG+bedTuvLwUZ2c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -778,7 +1114,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			56GDo4i/hWmhVFQgyKqhrSqC13I=
+			mzKCPCVUx0c23gfui049kglyeYY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -787,7 +1123,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3jch7jnDIKALAKB4FIja2DyvbuE=
+			sGKdQx7CWwkIjmdcYOgKwbSyQJQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ciKGZbpIHwNnAEV0NHG0Vh1HQfc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -805,7 +1150,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			064ax/SakU4PeNvn/cM5H1Y6jnk=
+			JrJcEij1HUaNPnUM7WC6w4XNzN0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -814,7 +1159,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h/iKoH/MkGMV4DWwKHKCYXxVOBw=
+			OS9YxPedVZ7L/nn8DgVsip2uIBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SketxxsBTGuyfTD6AbtYmLH9sDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -832,7 +1186,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ny+oSmMlf9EVwU7vBluHfD7s5TY=
+			GViiAN2z8hFp2FCxaetoBlhqaDU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -841,7 +1195,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yQhhpYvRuvuesWmYTs7M6HKHoqw=
+			wVX1VTFcRVKa4R6vldQd4yKqWms=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VDLwJCoQExJrLUHS1x2u/88BK+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -859,7 +1222,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UMdAAePnG6zO9N9pgz/0djboyN8=
+			iSGVPHkJTd4MXXZT4blSNlhz8go=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -868,7 +1231,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WCIQ3247Cf2Fh4lFaM4+ttS9XBU=
+			rsVrnNoiGoDCY5M/ZhMydeXgKug=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6Y6TpJNjNksrBVqXRL8BfS6k2I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -886,7 +1258,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AK1EHxJlD6he2NVIirwohz6G8N8=
+			RWplK++yuU/07B3Z8jg7hzNw8fQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -895,7 +1267,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pXB+Bknv/NALJiqTIyi7pv8U1z0=
+			q8nLSITbIlUt6tADuOpdpST+dOs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9JvVCEHuQbs0KszzCjD+Rw3YwtI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -904,7 +1285,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n06Rjq/55nQ+wOyD3fUVFQeaCGw=
+			UR3rVPgRnDrEnCGK2MMh6JjYoXY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -913,7 +1294,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k+qJntlB2ZPNOdapB94woRYyoks=
+			+Ym8kMSM3w/wLsbqRxqZHVWuCs8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -922,7 +1303,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cu/Ejn//9ALuP9nvR4OhMvrH1IQ=
+			1q7guwGSmHX/2AfSCTb05EgAx9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M/qs/W5zOU6xNCK16flYw0YkRao=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -940,7 +1330,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lbHYowCQLlR7vc6/jdTNaJjEaoY=
+			K60WbRbPrmgrhO7ur3NMnd5bemo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -949,20 +1339,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FBoPDPSddjGmvwSfMOg8Jt4QAmc=
+			JiXRi8ITK6eNILe0gn4Zcvi69dk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>libAVFAudio.dylib</key>
-		<data>
-		EBGpbiAEGbCeGcEHb/BIKqcdWw8=
-		</data>
+		<key>ms.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I9mJ/cqHsLofGeohdjhcjqRU7xs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TUyfRcC/44GnHPSfMiSwhylGD8k=
+			DncXioGoZ7s91qb5fI3ykX//wo8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -971,7 +1366,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wkMhG8nphXUONiwV8uifjY7Z8nY=
+			L2uf3hTnV6/46e0/Bjf+M7NaX5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -980,7 +1375,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8GPwIcOF3HR543b9TPnbAlWN9PI=
+			/88YDC/obIM+HdwCulrbIjbhEFA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwAfFKCkvu+jDlWNMLwhwQ15aIc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -998,7 +1402,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jGPmtEh1H7xAF2dh3pxy7B7s0hQ=
+			CnXCxzU/Q1ouQ0DMFG0ftIRK/qo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1007,7 +1411,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uqf7+amcM4yKW0TKHHmX+fD9tC0=
+			y/LsyXG0SCePHB//gb6pS9JtRkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVdQqXBDixrNwlGEdp4toH/FD5E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1025,7 +1438,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bwIewc4t/bxm8gkNEEUKIAnJ1l0=
+			DcBcoQIVs72j5de4ZibzZylDJG4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1034,7 +1447,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3PbcLHZd8c6KDB2YB6Fki+q3BKU=
+			AKtFDIJFhsW64SjwLQ2Lcp3OdiI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6lyWDUhSplHhhJIRFvbVFZbhFMg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1052,7 +1474,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gD0p0PONAb5Ii/S7cVIpjSgCbFQ=
+			0P8gK34PTYFPjA9P70dd+i8hLI8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1061,7 +1483,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MQhi+mpE+xybkK32Hy1tFZLEOiM=
+			t3+1hsypuYD3yG8uO4Xk+87bQUw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1uJ1+siOReb4u62tC0sKwxeM3RA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1070,7 +1501,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JtjIOZKqrUHnvhkGBH8WLcu5aIU=
+			J9lHTh00xeTPEHpmJzEmppIatZ0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1079,7 +1510,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YS7FMheRx+AI8ZJtjXS9hIcIpZI=
+			AiXYJXbhv+aMV6KOEwKaZkLap6E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1088,7 +1519,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9zwfgEL61FMi5ED4qj37E3er/RE=
+			QMhPalMhzAQk4gp6UngVCaMVOzw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1097,6 +1528,15 @@
 		<data>
 		ITYv3jwJdkKoqRqCetlzxJ8qQEs=
 		</data>
+		<key>ro.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hxI021FrTDT2L3q/4L6Qd6PjYqA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1110,7 +1550,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+103s/yDlsm2MZS9lCNgOMZpo9k=
+			N2h6Bbf/VBnuWgotx+4Dxh8YTeA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1119,7 +1559,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LDp0Xk3hLT4v3dcuKnsSOTE9xgA=
+			Z65/ibr2ZTQtJYKnfdjLt1jvAsk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wiScev3G6MPWA+x91rG2oN+OEVo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1137,7 +1586,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eNkYJNa8w1Boeay7PuBdmdyVW5w=
+			6M4Tk00gOX9s/wsROEkY958biXA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1146,7 +1595,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IXHUc6ksChYtiyWrUB9xQ04INSM=
+			/BoM+X2hxWQzm4JFgL383oUUo3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zv657q7zVFcpIkQi3/bQicbMJWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1164,7 +1622,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VaHcJo1YJ/rWtqWbRmEXfbMJpxw=
+			ghRJTEXTthXmInBMtkFYfw7f1dM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1173,7 +1631,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KeztmTqUovy8Z00JiuGcb+hU+3o=
+			UWWNyyMl0+U8QF8/agR1sJCRVbA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQk/N4hoarBZg/M0ryQRYFt01cc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1191,7 +1658,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bhFgExiOpBmsRywQp19tKa2UiMo=
+			os2ViICOuZ0aZK7puqfSRyo+m1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1200,7 +1667,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ErUW/hjiNCxc5OF+LuL3qChRMP0=
+			XjHvX+UIqNVMg5p2DkyrQOkgD1g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SEQOZ1zF4qJkiNmcS2sCM8gg4P0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1218,7 +1694,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s2a0HkwsWbzfG1bMgPmN1XuuRVw=
+			Zyj5w0rLlM3Ies7fhWqDPjYdL+o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1227,7 +1703,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EFaWaWNwkjh0SIY7NwDs8FvcqOs=
+			aglfWraFLRlM2Or/YqE1LfUyqxw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eyr+dNNwkQekaGe7XcHdbF86nnw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1245,7 +1730,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I+uSOtPUPeD4/dLF9cGwtPPPhcE=
+			BjUMsbashIKQJurRtb9rtwBcxps=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1254,7 +1739,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Irr+ZG5eRoYHCmjJIuhVXsoEfd4=
+			GtTFo7QpJx86wr4SPzS9h9wjWPE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9LKoBsvYqOvRjGxvJCOKm1b+ceI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1272,7 +1766,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cwp3D815gq/hQTekpi5uxzjFDmQ=
+			/T/bveYz3AGVJSOntKvqR4wBTOQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1281,7 +1775,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ODITnFVV0t3pKNzvUId1urWRoFg=
+			ZvSlqCS+cw4yyZbJibTzR/T3c0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iBVlwjm6ZmKUTKmCrGBg4Va95Ck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1290,7 +1793,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c/lH2VJtK/FosJnIMhg5HGsbVDI=
+			lIdmGMOC9LEffUVPDOaMmL0moXA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1299,7 +1802,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P0GZnIbxP2KdcWyJ4xBbNsp4SQI=
+			/fVQtcg7NBfqK+LoC+D/ODMzCso=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1308,7 +1811,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+yQY6M1+tGpAVNTSOkFkIvkXOFg=
+			5uaHURFu8Cxk0yM2KPWs2emeJxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KTBSSh6zZ4kHu/N5lCH70Y9mXNI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1317,7 +1829,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			awAZqU77KvkIbA+/rz+vZweMCIA=
+			1b5i3wlBPve9NNReLbLFqR4lLhU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1326,7 +1838,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qSp0irRmOvPhWaLiJ2aNZSTaHGk=
+			s4mXV+DQL1vP98I1tfW2tNKOHhE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1335,7 +1847,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cfQL2P4kUSGXzCZzDMXUIKfhKtg=
+			jwv/5IJqdxCmvhTht/Gewr8RpP4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X4TcyT2ErHtw0/idUHhS7yQ/8CI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1353,7 +1874,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K6f636Bi4K7rZ+0ENkzd2JJsvsU=
+			+JzKZw0ZNnx4pKWq7No7L9agh9A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1362,7 +1883,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PKN6O+p2AolUguwOCJoPgHxX5jM=
+			oxYhoN3MjBtXDKmNwCXBYicFwbY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WiZhMnrF0RnUYK3PH0ZyAfIGQqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1371,7 +1901,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wfpdwHkVVHHTmj7EYG92HZgWoTk=
+			hdtbiLrDKAqfIEz5fU/T+B5BdQE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1380,7 +1910,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dKnW/gPyqTTYeAmJg4GcVoJltxU=
+			Ah4tVqCSYV0rJ2lDD7L6IsH3jkI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1389,7 +1919,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R/n3pNatGTBNdxWgYW7e/8nt3Cg=
+			1fXmdwfp2vbbQtQG8dRfQzkGjOw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1397,11 +1927,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Dutch.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mHKkdn8qxbZnU5VZiN5y1atfWHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f+38HaezaFwzM+rbUbbar/8QyEM=
+			USYqeWIKoGYO14Kj3Vn5d1wZrT4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1410,7 +1949,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KrdkzEP6Rrcc0/mAcQuYcfPjv3w=
+			/ZOE0xoF19yjHbdN+qDz0RJMvLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1419,7 +1958,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zvKdbkWrMEb493DWY5FKaPpJH5c=
+			1x/01b8PLRSyKKuRem7/R9UJohg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pgek5Xw/2etfYnpfl94Amx0cdA8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1437,7 +1985,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			03/QxFOsiJYy/ETuy+GKRgUY/ac=
+			HdeJIao98A4J9NKmI66G9D0mi7I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1446,7 +1994,172 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMUvT+kwPiKe94V85vJBlrayjqI=
+			bjBUCHpNQxTgQEXFkScfGjnJct4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/AVFAudio.framework/AVFAudio</key>
+		<data>
+		fJssgsVXSCWflGBjOLzmq9v6pNo=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h</key>
+		<data>
+		fYbATAmky0Gnaiz/Dfp6Z26PMbk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioChannelLayout.h</key>
+		<data>
+		L/HihEclTTWlubKFSn6H7518LYo=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioConnectionPoint.h</key>
+		<data>
+		AX/cuyULomQhRG0DTjhJf6SJP5s=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioConverter.h</key>
+		<data>
+		44wfPNewc5Et/2+FmOTOV9Spj1g=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioEngine.h</key>
+		<data>
+		EgbLwxfyW7waseNy9c/wFUMhgCM=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioEnvironmentNode.h</key>
+		<data>
+		sQocKPmjtMmt37KNr3Cjog/bIU8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioFile.h</key>
+		<data>
+		HTvsCATgcz5ZB86sLU1rJox4qRk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioFormat.h</key>
+		<data>
+		3ZbcjhbaOYNItE43r8NYCihBm2M=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioIONode.h</key>
+		<data>
+		PaNfv3/kxHhqvKb4gyd4GNziibM=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioMixerNode.h</key>
+		<data>
+		EcOV3qvU8vVmA0/+u4aFDXLpXOQ=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioMixing.h</key>
+		<data>
+		9JBWYhThSM38vcXJZRO/D2v7usk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioNode.h</key>
+		<data>
+		AxytFHUxTjgw+VUAOQj5lvdN8yM=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioPlayer.h</key>
+		<data>
+		WJQdfT+4hYMV4bewbgDCCpmumnw=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioPlayerNode.h</key>
+		<data>
+		AWcvJan+nYKVwhsQmPLbN0pD52M=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioRecorder.h</key>
+		<data>
+		mYWVlVrOzA5zBPrDsmjwtnD9QdE=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioSequencer.h</key>
+		<data>
+		11Uc+f0j9QJAs6TAaBpx3p6N09I=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioSession.h</key>
+		<data>
+		v+JMB89O4Qt3mzVgVxY/Maf5nIU=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioSettings.h</key>
+		<data>
+		II2rP6XieYERc0Nk9hGzPrYaihY=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioTime.h</key>
+		<data>
+		tpM9bm7o0p9uGktsfyZbYBkFj48=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioTypes.h</key>
+		<data>
+		IVrUdQ15teYepga1ofj/hcnKL1w=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnit.h</key>
+		<data>
+		YiLzqi5Qf2s2ZSy9CbU9N1Jkmww=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitComponent.h</key>
+		<data>
+		gUiWAlTDnWHT9/UIqlAQmv5MWrA=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitDelay.h</key>
+		<data>
+		/WaBXy+8xOkmfpAIXGX+cXY5uo8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitDistortion.h</key>
+		<data>
+		fWMWworE/Z13qGtKTyGr4AEZpMs=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitEQ.h</key>
+		<data>
+		LCKbtjNl7a0EDEQ9YkKdd0ln+4Q=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitEffect.h</key>
+		<data>
+		mr/twyt65z89mg/rqeyu/jkCPwk=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitGenerator.h</key>
+		<data>
+		i4keqqn2iF8/EAKWdASoQ3OJjy8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitMIDIInstrument.h</key>
+		<data>
+		UTIKxPcEYkDUxtixYRomV/cRXiQ=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitReverb.h</key>
+		<data>
+		1r2Azkl21wi6/Ek+xUSLcDQCLMo=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitSampler.h</key>
+		<data>
+		Gwg6pa2enDDdWVAaNiS/o5sLl4E=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitTimeEffect.h</key>
+		<data>
+		j/1i1O9jemCAJa34RuY7TLhxxu8=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitTimePitch.h</key>
+		<data>
+		SoTathYXYN/bu56cglttz2AqJ0Q=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVAudioUnitVarispeed.h</key>
+		<data>
+		h3zZ8Ulva0UT4IbQftZg6fwajcE=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVFAudio.h</key>
+		<data>
+		B+pxL+7bnIZAp8cVm7pcBmbXWxQ=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVMIDIPlayer.h</key>
+		<data>
+		EWpzB6LqIiYNePKiNvkc7Gi2wsg=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Headers/AVSpeechSynthesis.h</key>
+		<data>
+		eN3fVY2QzGrTCLw9WOKsV2QuPpE=
+		</data>
+		<key>Frameworks/AVFAudio.framework/Info.plist</key>
+		<data>
+		o9bTRn5iunCJLvgyABFaNn+IVrs=
+		</data>
+		<key>Frameworks/AVFAudio.framework/_CodeSignature/CodeResources</key>
+		<data>
+		KospYp3unAF/qHZZo7a4PZmgc4g=
+		</data>
+		<key>French.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6aABLwV8d8jZcQ/c6qi1kJJZxtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1464,7 +2177,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r2xaOUzK64ZexuR/TBlQ6z7CqWM=
+			OIyM4hozf1M+iyAzAn6IX5uWCwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1473,7 +2186,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kwhcMrvaxrMbLXyZOZSaNDzZxrI=
+			XBuazV73NglHl5ZQTQ338FtYKiU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lyGyvMX7DejDE744pQWsVPngKAk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1491,7 +2213,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fF1xI7AjQBKx2s1OKPNBJWw2jdU=
+			9x2sVfWI43DrQsH5w1L+356cxxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1500,7 +2222,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xhTGjVyIi+1mdCJmdoIJe3EvWxE=
+			dzlXWU5dU+nlNC1kasiboVtPVbU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1511,11 +2233,15 @@
 		</data>
 		<key>Headers/AVAsset.h</key>
 		<data>
-		HU2AYfC4aeoXdS/aaUASe5QPUFU=
+		OOyc/ZZAQwzEN+6ThGPRvQwmIgA=
+		</data>
+		<key>Headers/AVAssetCache.h</key>
+		<data>
+		13JZ1eexDkLiUwOCi2VQ/ql7m34=
 		</data>
 		<key>Headers/AVAssetDownloadTask.h</key>
 		<data>
-		XXIakqryblNVYnhrQeglzi3KRAw=
+		jw5qS1qxXSHa5EgDaJa7qPvezxU=
 		</data>
 		<key>Headers/AVAssetExportSession.h</key>
 		<data>
@@ -1523,23 +2249,23 @@
 		</data>
 		<key>Headers/AVAssetImageGenerator.h</key>
 		<data>
-		tI76UfU5ZKk4xW+7TiZdXCXTf3Q=
+		OXnu8gD7UoBI2yFbO/EaYNR++wo=
 		</data>
 		<key>Headers/AVAssetReader.h</key>
 		<data>
-		Hb2K6L0R/nxwXqFSqwIAmcGB9Us=
+		6jIDRafdUhhNcuozkQYIinhIlDk=
 		</data>
 		<key>Headers/AVAssetReaderOutput.h</key>
 		<data>
-		1A8uyAoadFJfZ53hYIDDG2rKBDg=
+		TX4ElLere6Ld5IiK2rMk7bXQD98=
 		</data>
 		<key>Headers/AVAssetResourceLoader.h</key>
 		<data>
-		4oLBgQOQSyaacTGWBaSCX0oPq+o=
+		GWjd0Lj8fW3AcBV3ADAsKMSVN9o=
 		</data>
 		<key>Headers/AVAssetTrack.h</key>
 		<data>
-		Avmbxc3Lef4q1AkalfXYMbn+OK8=
+		gAfAaJrqBpm6sWcvT8xmSjhw7Ew=
 		</data>
 		<key>Headers/AVAssetTrackGroup.h</key>
 		<data>
@@ -1551,51 +2277,51 @@
 		</data>
 		<key>Headers/AVAssetWriter.h</key>
 		<data>
-		AiVphn3jgL7J0yAh7Oz4orra2wg=
+		bI91XpkrMqyVcq2qVzPBYdo3TRk=
 		</data>
 		<key>Headers/AVAssetWriterInput.h</key>
 		<data>
-		g4drWigIreIv3BdkF3fxjorWX3c=
+		MQkmta6fbnKpbUZf/GUKrVTd928=
 		</data>
 		<key>Headers/AVAsynchronousKeyValueLoading.h</key>
 		<data>
-		tWR5vUF7Nkdr4t9BUZFfGq/GUG8=
+		VUWzijPfNmU3pAg813sTcvOlKpY=
 		</data>
 		<key>Headers/AVAudioBuffer.h</key>
 		<data>
-		XFMuHyol168V8Cd+Y35FeZzGd6Q=
+		5sYDjS/oz9h3kPgQ5fpB2jpMgAM=
 		</data>
 		<key>Headers/AVAudioChannelLayout.h</key>
 		<data>
-		hcoXuneoK6zvmtlpCYOQAydJCPk=
+		s8GqqmbCs8h6CRBKGXi1suU0oh8=
 		</data>
 		<key>Headers/AVAudioConnectionPoint.h</key>
 		<data>
-		uAW5yWHUGsxRjr1q9Vhy/tcGEOk=
+		MDiOdhgNyoc1aVcw/ZiA9pmpbeg=
 		</data>
 		<key>Headers/AVAudioConverter.h</key>
 		<data>
-		Oj1VzKrg5S0Zv9YjaLTjTePEdPk=
+		+jTZHSD/s0TIM0HeUdLSuU2XIf8=
 		</data>
 		<key>Headers/AVAudioEngine.h</key>
 		<data>
-		3bI1yvNbDsx2vfiDbGxzBfba+0A=
+		tHU3r9ZYi+acI3CFA3dGVSrcSnY=
 		</data>
 		<key>Headers/AVAudioEnvironmentNode.h</key>
 		<data>
-		D6OKRxrNAxg/Mdp6W0B1ssmy4og=
+		sJNHvIfdJKUzEOIoVWLxnHeT+1k=
 		</data>
 		<key>Headers/AVAudioFile.h</key>
 		<data>
-		GCOMBx3d45AASlHuRVnqRi8QmZ0=
+		HpDPz1mxtQyJXzKtT0GOi4/XMhA=
 		</data>
 		<key>Headers/AVAudioFormat.h</key>
 		<data>
-		fpOv7r7r/wvlem2dsvd9yy4paxw=
+		qLT/dwhwqZLBJODDT7+Oz0yVjvI=
 		</data>
 		<key>Headers/AVAudioIONode.h</key>
 		<data>
-		axZimAJpbmtBNlGQTLY3Dj4Avbw=
+		GKZHLxIoSz5r5q1kJTieXsgStUk=
 		</data>
 		<key>Headers/AVAudioMix.h</key>
 		<data>
@@ -1603,23 +2329,23 @@
 		</data>
 		<key>Headers/AVAudioMixerNode.h</key>
 		<data>
-		Bfxxk3bcryQqiRXZtJB1j8yFGv4=
+		u1od4mlpG2pdW2L7ThvP17IRLCs=
 		</data>
 		<key>Headers/AVAudioMixing.h</key>
 		<data>
-		MzODiFpeu+0zltcQHcsJ8Pi2TBk=
+		JM1H4XH2tezHLgeefFSDDG7fmIE=
 		</data>
 		<key>Headers/AVAudioNode.h</key>
 		<data>
-		bSvi9zjfBfu2QCPmpJQyC7BkFTI=
+		FUfAfv4DqTpJbkphEU8BGF5H8Pc=
 		</data>
 		<key>Headers/AVAudioPlayer.h</key>
 		<data>
-		wf4Fx6Tu4qBJ1xxO0J9NsQvaPpE=
+		38qH/kTQd5/MjY7yr3nZ9TuIvrM=
 		</data>
 		<key>Headers/AVAudioPlayerNode.h</key>
 		<data>
-		8sFnGr0lfNdbvnlGjUhcB9rvWYc=
+		IE3F0iqA+YUeqhmSvPl2tVlU1ho=
 		</data>
 		<key>Headers/AVAudioProcessingSettings.h</key>
 		<data>
@@ -1627,111 +2353,139 @@
 		</data>
 		<key>Headers/AVAudioRecorder.h</key>
 		<data>
-		/ircoC2SbXkPUIkS+iEfrUavvVE=
+		68noojLuu41J8s3po41xRFaOERs=
 		</data>
 		<key>Headers/AVAudioSequencer.h</key>
 		<data>
-		xKgC8hUYHHciEXFXvIcoOFr9mtU=
+		AJW3Dfnj/NCv99KpmrBX3+veFM8=
 		</data>
 		<key>Headers/AVAudioSession.h</key>
 		<data>
-		SF+7qZqp9eqseudHsJFl5y74E1I=
+		Ij96vFyNOy8CBLpSdRUIer8K54U=
 		</data>
 		<key>Headers/AVAudioSettings.h</key>
 		<data>
-		muLuyZdo7PsYZnyP4U8ABJSa+tw=
+		Hooz+W/nev5GSe/pFLOp5sbFmyQ=
 		</data>
 		<key>Headers/AVAudioTime.h</key>
 		<data>
-		Qzl4vFpCeTcdi1v92Vh+4rgup/Y=
+		Op4KBVjgtBk/68a9VV0h+ExAR7s=
 		</data>
 		<key>Headers/AVAudioTypes.h</key>
 		<data>
-		IVrUdQ15teYepga1ofj/hcnKL1w=
+		8drueIIAdbctyRaL631Cw+8WFT4=
 		</data>
 		<key>Headers/AVAudioUnit.h</key>
 		<data>
-		JmTcP4LH92gjPnNKFFeAMf4xT94=
+		/9ANkPC1utjNjaMsnAWMqPYBH7c=
 		</data>
 		<key>Headers/AVAudioUnitComponent.h</key>
 		<data>
-		zrs8V0hoAtKwMaIpa7jVb818ias=
+		k4OE0Xg1QF10lncWKSL8D4BSQYA=
 		</data>
 		<key>Headers/AVAudioUnitDelay.h</key>
 		<data>
-		tSmFp/S7M0Lfufgy0RYnEm0zoTw=
+		d85I3si1FrVrSVAOt/a7mUsb0ac=
 		</data>
 		<key>Headers/AVAudioUnitDistortion.h</key>
 		<data>
-		+zJNp3doQv+tvOeHuw0CO/iMJBQ=
+		ycbKuUIdmjzxsBYLiiSP3Qwuc4Q=
 		</data>
 		<key>Headers/AVAudioUnitEQ.h</key>
 		<data>
-		/QtmzcjJ5ntKT0MfE9fDlCWV0lw=
+		QbJ1HiT50gpIDvbW9kGoBvhCyzk=
 		</data>
 		<key>Headers/AVAudioUnitEffect.h</key>
 		<data>
-		8vaxp/pVN2Q5RVFtQDmwLZ6ZlUE=
+		z2R21kZVj2zv1+I9aX1F59wVrio=
 		</data>
 		<key>Headers/AVAudioUnitGenerator.h</key>
 		<data>
-		QTtmt7oflE2e2vrcuoiHDpA92FE=
+		6Jm6nhApo+oK8EG94DF6P9TiLbA=
 		</data>
 		<key>Headers/AVAudioUnitMIDIInstrument.h</key>
 		<data>
-		GoNCHGq3icbQ8cURQZcoBscnyvs=
+		1T4OJ+qsG9/N3vjJqRqBDUEDWgY=
 		</data>
 		<key>Headers/AVAudioUnitReverb.h</key>
 		<data>
-		bqS9RtyE3w9kl4XYCc0klJ7fxAc=
+		bcj+UzeHuEU20DPyVv6yH55a0k0=
 		</data>
 		<key>Headers/AVAudioUnitSampler.h</key>
 		<data>
-		ZpfpemtJd3u1bJXd5bLLF8uw3Lw=
+		iEIBPRkSH/iPMFdnt4LV965VQvA=
 		</data>
 		<key>Headers/AVAudioUnitTimeEffect.h</key>
 		<data>
-		iNeiLnkWB98DPY0HBTXY/TzdoqU=
+		ZziCHEmyuPzCVTc0+flLkXitcdg=
 		</data>
 		<key>Headers/AVAudioUnitTimePitch.h</key>
 		<data>
-		EeXB8S1vDYxsaQ+SJiG40grZh0g=
+		zlm3u2gcyiNyEDnsQpECcy2IeFc=
 		</data>
 		<key>Headers/AVAudioUnitVarispeed.h</key>
 		<data>
-		6jMkiMFWQ7wFa4vJucbktd+00vg=
+		7zkC+Yw376KsBjR6ibZKBQ4ZX+Y=
 		</data>
 		<key>Headers/AVBase.h</key>
 		<data>
-		G2P7MHQl7dxpsDAHMXvf8kl7kFs=
+		StybBxFkFlpO1h7R+7CqDkxvGTg=
+		</data>
+		<key>Headers/AVCaptureAudioDataOutput.h</key>
+		<data>
+		bM6zBnPL7WM21hpH7aVfLO/85tA=
+		</data>
+		<key>Headers/AVCaptureAudioPreviewOutput.h</key>
+		<data>
+		7CZXR5yMtV+XPP7BNULW+hm04lk=
 		</data>
 		<key>Headers/AVCaptureDevice.h</key>
 		<data>
-		L1DkQ/SyqCH/tT5v/V1FCjhFRUM=
+		PkWAaOoFbO8wk2k7ffRHa6qyoo4=
+		</data>
+		<key>Headers/AVCaptureFileOutput.h</key>
+		<data>
+		xV1vQzEoKURlmszmrIFwOPCopMc=
 		</data>
 		<key>Headers/AVCaptureInput.h</key>
 		<data>
-		4c0zxhd7jWjVxJpHzBAZ3hARUQo=
+		gLS+/qQP2fSOSNhW6zbTjgcDnXw=
+		</data>
+		<key>Headers/AVCaptureMetadataOutput.h</key>
+		<data>
+		qZeUxjA3SQzG/LnpGQ0qKiitNGk=
 		</data>
 		<key>Headers/AVCaptureOutput.h</key>
 		<data>
-		d8gDdozFdQ0slR12c5jQ+qWB8GE=
+		skdVx2YY8JNvzfBhECyihFVa30k=
+		</data>
+		<key>Headers/AVCapturePhotoOutput.h</key>
+		<data>
+		c7t2SRnYWNcwUEYm0jH2NjDECt0=
 		</data>
 		<key>Headers/AVCaptureSession.h</key>
 		<data>
-		4NUdWl2Dht831JaJiuzxmqJ1Pa4=
+		AZPlHL8BKb2/i8YPWYU59rIfI60=
+		</data>
+		<key>Headers/AVCaptureStillImageOutput.h</key>
+		<data>
+		bwkQ0LpxCfITu6hsI3wqz+d4r40=
+		</data>
+		<key>Headers/AVCaptureVideoDataOutput.h</key>
+		<data>
+		AH6qHp/qDDNj9WQhKgN5OP2GZbI=
 		</data>
 		<key>Headers/AVCaptureVideoPreviewLayer.h</key>
 		<data>
-		ijyU+Kt2v96QsxftHYHtbm+FH94=
+		1LVOJlG81JSg6e2uniOu8O1VCD8=
 		</data>
 		<key>Headers/AVComposition.h</key>
 		<data>
-		/Rpb3WbVJsAB+qLETgP8+CaTJbo=
+		2YcQHImWAxGNGrWwmZT7EGfBLoU=
 		</data>
 		<key>Headers/AVCompositionTrack.h</key>
 		<data>
-		aiAFL66uwF2JtYNpDflMPO+/Ca4=
+		2pfXekoYNuDrmoaAerqWsP6Lym8=
 		</data>
 		<key>Headers/AVCompositionTrackSegment.h</key>
 		<data>
@@ -1739,23 +2493,23 @@
 		</data>
 		<key>Headers/AVError.h</key>
 		<data>
-		Wq+9S6cn0q5m8dq8jryF8RJbkYo=
+		+y2pybvnNqADJ/IJd3oMMJTRVsI=
 		</data>
 		<key>Headers/AVFAudio.h</key>
 		<data>
-		ZnZ6vXJa9bKGxfrUr3IFcQ7hFO4=
+		+FiuZmOFTeu+ej5a8FWOkDNGDiY=
 		</data>
 		<key>Headers/AVFoundation.h</key>
 		<data>
-		klOXYRBkJ9uBsPcmLTZD6dp8svk=
+		z4FHvg97nhrWLLJk1xdBNIku2fs=
 		</data>
 		<key>Headers/AVMIDIPlayer.h</key>
 		<data>
-		BtrwlGKzc27bpp3tWdGo/8qpthw=
+		3u/u8vn3uVfQnAICD+whxhce8jE=
 		</data>
 		<key>Headers/AVMediaFormat.h</key>
 		<data>
-		LecLjKJyg7M090eeQvtm3G2f/yU=
+		rQWMVXjK9L1gvvZ9aBA2ns/ZcTw=
 		</data>
 		<key>Headers/AVMediaSelection.h</key>
 		<data>
@@ -1767,19 +2521,19 @@
 		</data>
 		<key>Headers/AVMetadataFormat.h</key>
 		<data>
-		oltD2KBRPvbyvGW9q1gMHyb400A=
+		BCYh3KXZi/Pfw7z+EO9ofHEfKkA=
 		</data>
 		<key>Headers/AVMetadataIdentifiers.h</key>
 		<data>
-		MQDJphZzbgt0bUVQ4YrkK8sFhKg=
+		Zv+iR38A+X5d9oBWfB+xFooU4mM=
 		</data>
 		<key>Headers/AVMetadataItem.h</key>
 		<data>
-		CHP4Ia/lwu2yif2xllwYhfnH5Zw=
+		sO70rF/WADRgCTDZ9yFF3YbZT8s=
 		</data>
 		<key>Headers/AVMetadataObject.h</key>
 		<data>
-		GFSck8+ZSpHPWMFQtRevEW1Deqc=
+		6RTOg1kv0jcJdWihPhJ7d1Wk2xo=
 		</data>
 		<key>Headers/AVOutputSettingsAssistant.h</key>
 		<data>
@@ -1787,11 +2541,11 @@
 		</data>
 		<key>Headers/AVPlayer.h</key>
 		<data>
-		QIxceNY20cv7zBfh2F1XZiuKeTA=
+		S8WLinQv9z6Zo0bKzWqU7uwOHok=
 		</data>
 		<key>Headers/AVPlayerItem.h</key>
 		<data>
-		siQUHADOecD8LMNBbKKcpJ6V9+Y=
+		h3n6gbDB+qD1NOV0D7j987iOUqI=
 		</data>
 		<key>Headers/AVPlayerItemMediaDataCollector.h</key>
 		<data>
@@ -1799,7 +2553,7 @@
 		</data>
 		<key>Headers/AVPlayerItemOutput.h</key>
 		<data>
-		dyUmh2Vp1MiMiSb5qqu73P79KaE=
+		bV5/HG6VcjzsFabtwfrlkXUT4iQ=
 		</data>
 		<key>Headers/AVPlayerItemTrack.h</key>
 		<data>
@@ -1809,17 +2563,21 @@
 		<data>
 		y2pElTxcxdCXG4sVk4IRBcLhBNg=
 		</data>
+		<key>Headers/AVPlayerLooper.h</key>
+		<data>
+		W530oM9mhYODD+FMBHsp66/Ffps=
+		</data>
 		<key>Headers/AVPlayerMediaSelectionCriteria.h</key>
 		<data>
 		x3KLBgN0yMs1Nws6d2Bw+tLRHaE=
 		</data>
 		<key>Headers/AVSampleBufferDisplayLayer.h</key>
 		<data>
-		sWHHLO65VLTixLPixeIUVQcXZ+M=
+		GpeQDhvGaMzkAXN6UF6TBkWwXjc=
 		</data>
 		<key>Headers/AVSpeechSynthesis.h</key>
 		<data>
-		8dBtCwZyIMLThQbl+Qsy6/6w0Xo=
+		2P4y0a0AOe5IOssMz7ml6r5vxPE=
 		</data>
 		<key>Headers/AVSynchronizedLayer.h</key>
 		<data>
@@ -1843,16 +2601,25 @@
 		</data>
 		<key>Headers/AVVideoCompositing.h</key>
 		<data>
-		LSQgcFI0ellnc/92Th+785DhXiE=
+		byYL9Thotuedeiw37vmZge3pv/c=
 		</data>
 		<key>Headers/AVVideoComposition.h</key>
 		<data>
-		wD+9VfA79kZ2bMAk7UQkWKVLT6M=
+		RwSztFW73JGa5O2Mx3K0lU7JVvg=
 		</data>
 		<key>Headers/AVVideoSettings.h</key>
 		<data>
-		gBEkHz+mg0JMI1jxjwIZtq60JZw=
+		VycgkacquBBc5XsZzWlf4Gl4FCw=
 		</data>
+		<key>Italian.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DVFSpcAHiXHIJdo7l9N3cbZ4uT0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1866,7 +2633,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WRnR3ZDbCCrPVqHxKNCuKY3C9Vg=
+			uk1kkd0HQtK3DxCTtOgP94rk5Oc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1875,7 +2642,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aOyGc0awJtvZrkXQT35P3pJjSQ8=
+			b5+W/SRkl98IetK7DLKfxCBx310=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M3bH9leX5U5eE1tbMor1LpE2zE8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1893,7 +2669,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tts4alUq1Sc+pi5n1UuD3QP9RfM=
+			OeZxvzzy1lo54hluORQLqE8eiFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1902,15 +2678,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			in9Ap82lT7qiSEEYiyp9/bhmYw4=
+			UoNOXJuxRBoNj39I+yCqUOy/u2o=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<data>
-		zJLqvcYPO6GTPJ0rNji6us4G0X4=
+		8POfuk3bBfwzNVonEnj4DVPALSw=
 		</data>
+		<key>Spanish.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			84EI3n4HEM31J4Ix3BAFhU7JNHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1924,7 +2709,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0rmAvTRwUTkCcHzoNYLmy+8uXf8=
+			QXEiSEtiL2GY7jYvHr4R3HH6/Jw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1933,7 +2718,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0jOnEaEwo2oOgR+U24j2IOPS2Aw=
+			TRaGPCKt/UTw9/+qhHSlREc3f5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fz+ueQ6AcndV7SxcD9MyzAG+QYc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1951,7 +2745,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uUdT0tMx/LbF5OseSSsxl1KNkPI=
+			TaL3maP9ijNw4CT0z/xDKviKXZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1960,7 +2754,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXcqSl8kPmpFFf6eNzVt70hBqYY=
+			tRb5WkvG9OCKF4yCfY6ZpvZJKIQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			85VlBzVXQY3rOwyIXTibPw3m6PQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1978,7 +2781,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mjQn+pvIhCT37UMPw48fnRUdGUQ=
+			Aafa5PIB9gyLYlXW3O9zWUi6STc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1987,7 +2790,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HTCJXtYR+c2OQKZ9M/uHoZVeaxI=
+			eE/haHzN/bH/tZ9HIc0++kqGXaM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bxk/9NCJaqeFxO+Wlb5Y7Joa+BI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2005,7 +2817,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lax1YtEgzQpUFE0izB1U31VqBxg=
+			uFUfKBvtqWNX5BrJOZwX1YBIk5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2014,7 +2826,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w/ZdS22WehbjTmBoIkwhsW0aaAE=
+			n7axgHBsG7zCOqAyHGzdAUX22Mo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NyjafmAeyt/WUc05fIGM5p/t2Bo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2032,7 +2853,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z7zLiI0HIMTuj140+J5juSad0rE=
+			3SiQ82Q+AXiCus8xU2bLPOtSdVs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2041,7 +2862,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E3YzoRhddzQIOjPkcow78ap6zDM=
+			N3Pkd0/Y4BKChvIN4Q4LNjFRIvM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oyBCCurnbbNh2cnEVTZXt8u9hdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2059,7 +2889,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dl2YxtWB2MicvMmXivqCfugwU4g=
+			tKj/ewhx2e5jQjQxqhp/dCUiNLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2068,7 +2898,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h4KqzZi8rdpoHDH1kAbZ6fErhgQ=
+			AgDOA8RWgXhl63jF105UZ/FrKJU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pgek5Xw/2etfYnpfl94Amx0cdA8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2086,7 +2925,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sAYDe/jPiNsN7D6MsKX7mC5o88g=
+			bqUnnHDK5PV4U6RRg4W18w8975g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2095,7 +2934,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMUvT+kwPiKe94V85vJBlrayjqI=
+			bjBUCHpNQxTgQEXFkScfGjnJct4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pgek5Xw/2etfYnpfl94Amx0cdA8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2113,7 +2961,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sAYDe/jPiNsN7D6MsKX7mC5o88g=
+			5JUr/S0y0vbr/qQ+LrDFUMuFLNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2122,7 +2970,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMUvT+kwPiKe94V85vJBlrayjqI=
+			bjBUCHpNQxTgQEXFkScfGjnJct4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gVVLvIxrQ8bANUlMcRbYrwzBhZE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2140,7 +2997,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0KXa5ojtlLvXqtpp2JfAmawludk=
+			V3NdgNXb0nelk9uIZ3uworoEjLI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2149,7 +3006,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0uQSnihvRNijnjmrOy+uCmyIauI=
+			9cbwtYySbB2qlxqivxx4wuz2QIc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O39/FR7oUWHieG+bedTuvLwUZ2c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2167,7 +3033,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			56GDo4i/hWmhVFQgyKqhrSqC13I=
+			mzKCPCVUx0c23gfui049kglyeYY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2176,7 +3042,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3jch7jnDIKALAKB4FIja2DyvbuE=
+			sGKdQx7CWwkIjmdcYOgKwbSyQJQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ciKGZbpIHwNnAEV0NHG0Vh1HQfc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2194,7 +3069,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			064ax/SakU4PeNvn/cM5H1Y6jnk=
+			JrJcEij1HUaNPnUM7WC6w4XNzN0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2203,7 +3078,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h/iKoH/MkGMV4DWwKHKCYXxVOBw=
+			OS9YxPedVZ7L/nn8DgVsip2uIBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SketxxsBTGuyfTD6AbtYmLH9sDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2221,7 +3105,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ny+oSmMlf9EVwU7vBluHfD7s5TY=
+			GViiAN2z8hFp2FCxaetoBlhqaDU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2230,7 +3114,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yQhhpYvRuvuesWmYTs7M6HKHoqw=
+			wVX1VTFcRVKa4R6vldQd4yKqWms=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VDLwJCoQExJrLUHS1x2u/88BK+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2248,7 +3141,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UMdAAePnG6zO9N9pgz/0djboyN8=
+			iSGVPHkJTd4MXXZT4blSNlhz8go=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2257,7 +3150,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WCIQ3247Cf2Fh4lFaM4+ttS9XBU=
+			rsVrnNoiGoDCY5M/ZhMydeXgKug=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6Y6TpJNjNksrBVqXRL8BfS6k2I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2275,7 +3177,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AK1EHxJlD6he2NVIirwohz6G8N8=
+			RWplK++yuU/07B3Z8jg7hzNw8fQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2284,7 +3186,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pXB+Bknv/NALJiqTIyi7pv8U1z0=
+			q8nLSITbIlUt6tADuOpdpST+dOs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9JvVCEHuQbs0KszzCjD+Rw3YwtI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2293,7 +3204,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n06Rjq/55nQ+wOyD3fUVFQeaCGw=
+			UR3rVPgRnDrEnCGK2MMh6JjYoXY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2302,7 +3213,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k+qJntlB2ZPNOdapB94woRYyoks=
+			+Ym8kMSM3w/wLsbqRxqZHVWuCs8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2311,7 +3222,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cu/Ejn//9ALuP9nvR4OhMvrH1IQ=
+			1q7guwGSmHX/2AfSCTb05EgAx9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M/qs/W5zOU6xNCK16flYw0YkRao=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2329,7 +3249,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lbHYowCQLlR7vc6/jdTNaJjEaoY=
+			K60WbRbPrmgrhO7ur3NMnd5bemo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2338,20 +3258,30 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FBoPDPSddjGmvwSfMOg8Jt4QAmc=
+			JiXRi8ITK6eNILe0gn4Zcvi69dk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>libAVFAudio.dylib</key>
-		<data>
-		EBGpbiAEGbCeGcEHb/BIKqcdWw8=
-		</data>
+		<dict>
+			<key>symlink</key>
+			<string>Frameworks/AVFAudio.framework/AVFAudio</string>
+		</dict>
+		<key>ms.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I9mJ/cqHsLofGeohdjhcjqRU7xs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TUyfRcC/44GnHPSfMiSwhylGD8k=
+			DncXioGoZ7s91qb5fI3ykX//wo8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2360,7 +3290,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wkMhG8nphXUONiwV8uifjY7Z8nY=
+			L2uf3hTnV6/46e0/Bjf+M7NaX5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2369,7 +3299,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8GPwIcOF3HR543b9TPnbAlWN9PI=
+			/88YDC/obIM+HdwCulrbIjbhEFA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwAfFKCkvu+jDlWNMLwhwQ15aIc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2387,7 +3326,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jGPmtEh1H7xAF2dh3pxy7B7s0hQ=
+			CnXCxzU/Q1ouQ0DMFG0ftIRK/qo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2396,7 +3335,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uqf7+amcM4yKW0TKHHmX+fD9tC0=
+			y/LsyXG0SCePHB//gb6pS9JtRkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVdQqXBDixrNwlGEdp4toH/FD5E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2414,7 +3362,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bwIewc4t/bxm8gkNEEUKIAnJ1l0=
+			DcBcoQIVs72j5de4ZibzZylDJG4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2423,7 +3371,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3PbcLHZd8c6KDB2YB6Fki+q3BKU=
+			AKtFDIJFhsW64SjwLQ2Lcp3OdiI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6lyWDUhSplHhhJIRFvbVFZbhFMg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2441,7 +3398,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gD0p0PONAb5Ii/S7cVIpjSgCbFQ=
+			0P8gK34PTYFPjA9P70dd+i8hLI8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2450,7 +3407,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MQhi+mpE+xybkK32Hy1tFZLEOiM=
+			t3+1hsypuYD3yG8uO4Xk+87bQUw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1uJ1+siOReb4u62tC0sKwxeM3RA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2459,7 +3425,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JtjIOZKqrUHnvhkGBH8WLcu5aIU=
+			J9lHTh00xeTPEHpmJzEmppIatZ0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2468,7 +3434,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YS7FMheRx+AI8ZJtjXS9hIcIpZI=
+			AiXYJXbhv+aMV6KOEwKaZkLap6E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2477,7 +3443,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9zwfgEL61FMi5ED4qj37E3er/RE=
+			QMhPalMhzAQk4gp6UngVCaMVOzw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2486,6 +3452,15 @@
 		<data>
 		ITYv3jwJdkKoqRqCetlzxJ8qQEs=
 		</data>
+		<key>ro.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hxI021FrTDT2L3q/4L6Qd6PjYqA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2499,7 +3474,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+103s/yDlsm2MZS9lCNgOMZpo9k=
+			N2h6Bbf/VBnuWgotx+4Dxh8YTeA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2508,7 +3483,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LDp0Xk3hLT4v3dcuKnsSOTE9xgA=
+			Z65/ibr2ZTQtJYKnfdjLt1jvAsk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wiScev3G6MPWA+x91rG2oN+OEVo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2526,7 +3510,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eNkYJNa8w1Boeay7PuBdmdyVW5w=
+			6M4Tk00gOX9s/wsROEkY958biXA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2535,7 +3519,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IXHUc6ksChYtiyWrUB9xQ04INSM=
+			/BoM+X2hxWQzm4JFgL383oUUo3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zv657q7zVFcpIkQi3/bQicbMJWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2553,7 +3546,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VaHcJo1YJ/rWtqWbRmEXfbMJpxw=
+			ghRJTEXTthXmInBMtkFYfw7f1dM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2562,7 +3555,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KeztmTqUovy8Z00JiuGcb+hU+3o=
+			UWWNyyMl0+U8QF8/agR1sJCRVbA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQk/N4hoarBZg/M0ryQRYFt01cc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2580,7 +3582,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bhFgExiOpBmsRywQp19tKa2UiMo=
+			os2ViICOuZ0aZK7puqfSRyo+m1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2589,7 +3591,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ErUW/hjiNCxc5OF+LuL3qChRMP0=
+			XjHvX+UIqNVMg5p2DkyrQOkgD1g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SEQOZ1zF4qJkiNmcS2sCM8gg4P0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2607,7 +3618,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s2a0HkwsWbzfG1bMgPmN1XuuRVw=
+			Zyj5w0rLlM3Ies7fhWqDPjYdL+o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2616,7 +3627,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EFaWaWNwkjh0SIY7NwDs8FvcqOs=
+			aglfWraFLRlM2Or/YqE1LfUyqxw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eyr+dNNwkQekaGe7XcHdbF86nnw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2634,7 +3654,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I+uSOtPUPeD4/dLF9cGwtPPPhcE=
+			BjUMsbashIKQJurRtb9rtwBcxps=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2643,7 +3663,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Irr+ZG5eRoYHCmjJIuhVXsoEfd4=
+			GtTFo7QpJx86wr4SPzS9h9wjWPE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9LKoBsvYqOvRjGxvJCOKm1b+ceI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2661,7 +3690,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cwp3D815gq/hQTekpi5uxzjFDmQ=
+			/T/bveYz3AGVJSOntKvqR4wBTOQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2670,7 +3699,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ODITnFVV0t3pKNzvUId1urWRoFg=
+			ZvSlqCS+cw4yyZbJibTzR/T3c0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iBVlwjm6ZmKUTKmCrGBg4Va95Ck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2679,7 +3717,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c/lH2VJtK/FosJnIMhg5HGsbVDI=
+			lIdmGMOC9LEffUVPDOaMmL0moXA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2688,7 +3726,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P0GZnIbxP2KdcWyJ4xBbNsp4SQI=
+			/fVQtcg7NBfqK+LoC+D/ODMzCso=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2697,7 +3735,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+yQY6M1+tGpAVNTSOkFkIvkXOFg=
+			5uaHURFu8Cxk0yM2KPWs2emeJxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KTBSSh6zZ4kHu/N5lCH70Y9mXNI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2706,7 +3753,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			awAZqU77KvkIbA+/rz+vZweMCIA=
+			1b5i3wlBPve9NNReLbLFqR4lLhU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2715,7 +3762,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qSp0irRmOvPhWaLiJ2aNZSTaHGk=
+			s4mXV+DQL1vP98I1tfW2tNKOHhE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2724,7 +3771,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cfQL2P4kUSGXzCZzDMXUIKfhKtg=
+			jwv/5IJqdxCmvhTht/Gewr8RpP4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X4TcyT2ErHtw0/idUHhS7yQ/8CI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2742,7 +3798,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K6f636Bi4K7rZ+0ENkzd2JJsvsU=
+			+JzKZw0ZNnx4pKWq7No7L9agh9A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2751,7 +3807,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PKN6O+p2AolUguwOCJoPgHxX5jM=
+			oxYhoN3MjBtXDKmNwCXBYicFwbY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AVCaptureDeviceNames-bravo.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WiZhMnrF0RnUYK3PH0ZyAfIGQqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2760,7 +3825,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wfpdwHkVVHHTmj7EYG92HZgWoTk=
+			hdtbiLrDKAqfIEz5fU/T+B5BdQE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2769,7 +3834,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dKnW/gPyqTTYeAmJg4GcVoJltxU=
+			Ah4tVqCSYV0rJ2lDD7L6IsH3jkI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2778,7 +3843,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R/n3pNatGTBNdxWgYW7e/8nt3Cg=
+			1fXmdwfp2vbbQtQG8dRfQzkGjOw=
 			</data>
 			<key>optional</key>
 			<true/>

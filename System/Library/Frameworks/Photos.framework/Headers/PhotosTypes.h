@@ -8,19 +8,21 @@
 #ifndef Photos_PhotosTypes_h
 #define Photos_PhotosTypes_h
 
+#import <Photos/PhotosDefines.h>
+
 #pragma mark - PHCollectionListTypes
 
 typedef NS_ENUM(NSInteger, PHImageContentMode) {
     PHImageContentModeAspectFit = 0,
     PHImageContentModeAspectFill = 1,
     PHImageContentModeDefault = PHImageContentModeAspectFit
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_ENUM(NSInteger, PHCollectionListType) {
     PHCollectionListTypeMomentList    = 1,
     PHCollectionListTypeFolder        = 2,
     PHCollectionListTypeSmartFolder   = 3,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_ENUM(NSInteger, PHCollectionListSubtype) {
     
@@ -37,7 +39,7 @@ typedef NS_ENUM(NSInteger, PHCollectionListSubtype) {
     
     // Used for fetching if you don't care about the exact subtype
     PHCollectionListSubtypeAny = NSIntegerMax
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 #pragma mark - PHCollection types
 
@@ -49,7 +51,7 @@ typedef NS_ENUM(NSInteger, PHCollectionEditOperation) {
     PHCollectionEditOperationRearrangeContent = 5, // Change the order of things
     PHCollectionEditOperationDelete           = 6, // Deleting of the container, not the content
     PHCollectionEditOperationRename           = 7, // Renaming of the container, not the content
-} NS_AVAILABLE_IOS(8_0);
+} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 #pragma mark - PHAssetCollection types
 
@@ -57,7 +59,7 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionType) {
     PHAssetCollectionTypeAlbum      = 1,
     PHAssetCollectionTypeSmartAlbum = 2,
     PHAssetCollectionTypeMoment     = 3,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     
@@ -83,12 +85,12 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeSmartAlbumBursts     = 207,
     PHAssetCollectionSubtypeSmartAlbumSlomoVideos = 208,
     PHAssetCollectionSubtypeSmartAlbumUserLibrary = 209,
-    PHAssetCollectionSubtypeSmartAlbumSelfPortraits NS_AVAILABLE_IOS(9_0) = 210,
-    PHAssetCollectionSubtypeSmartAlbumScreenshots NS_AVAILABLE_IOS(9_0) = 211,
+    PHAssetCollectionSubtypeSmartAlbumSelfPortraits PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 210,
+    PHAssetCollectionSubtypeSmartAlbumScreenshots PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 211,
     
     // Used for fetching, if you don't care about the exact subtype
     PHAssetCollectionSubtypeAny = NSIntegerMax
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 #pragma mark - PHAsset types
 
@@ -96,14 +98,14 @@ typedef NS_ENUM(NSInteger, PHAssetEditOperation) {
     PHAssetEditOperationDelete     = 1,
     PHAssetEditOperationContent    = 2,
     PHAssetEditOperationProperties = 3,
-} NS_AVAILABLE_IOS(8_0);
+} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_ENUM(NSInteger, PHAssetMediaType) {
     PHAssetMediaTypeUnknown = 0,
     PHAssetMediaTypeImage   = 1,
     PHAssetMediaTypeVideo   = 2,
     PHAssetMediaTypeAudio   = 3,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     PHAssetMediaSubtypeNone               = 0,
@@ -111,28 +113,27 @@ typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     // Photo subtypes
     PHAssetMediaSubtypePhotoPanorama      = (1UL << 0),
     PHAssetMediaSubtypePhotoHDR           = (1UL << 1),
-    PHAssetMediaSubtypePhotoScreenshot NS_AVAILABLE_IOS(9_0) = (1UL << 2),
-    PHAssetMediaSubtypePhotoLive NS_AVAILABLE_IOS(9_1) = (1UL << 3),
+    PHAssetMediaSubtypePhotoScreenshot PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = (1UL << 2),
+    PHAssetMediaSubtypePhotoLive PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0) = (1UL << 3),
 
-    
     // Video subtypes
     PHAssetMediaSubtypeVideoStreamed      = (1UL << 16),
     PHAssetMediaSubtypeVideoHighFrameRate = (1UL << 17),
     PHAssetMediaSubtypeVideoTimelapse     = (1UL << 18),
-} NS_AVAILABLE_IOS(8_0);
+} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_OPTIONS(NSUInteger, PHAssetBurstSelectionType) {
     PHAssetBurstSelectionTypeNone     = 0,
     PHAssetBurstSelectionTypeAutoPick = (1UL << 0),
     PHAssetBurstSelectionTypeUserPick = (1UL << 1),
-} NS_AVAILABLE_IOS(8_0);
+} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 typedef NS_OPTIONS(NSUInteger, PHAssetSourceType) {
     PHAssetSourceTypeNone            = 0,
     PHAssetSourceTypeUserLibrary     = (1UL << 0),
     PHAssetSourceTypeCloudShared     = (1UL << 1),
     PHAssetSourceTypeiTunesSynced    = (1UL << 2),
-} NS_AVAILABLE_IOS(9_0);
+} PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
 
 typedef NS_ENUM(NSInteger, PHAssetResourceType) {
     PHAssetResourceTypePhoto                             = 1,
@@ -143,7 +144,9 @@ typedef NS_ENUM(NSInteger, PHAssetResourceType) {
     PHAssetResourceTypeFullSizeVideo                     = 6,
     PHAssetResourceTypeAdjustmentData                    = 7,
     PHAssetResourceTypeAdjustmentBasePhoto               = 8,
-    PHAssetResourceTypePairedVideo NS_AVAILABLE_IOS(9_1) = 9,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+    PHAssetResourceTypePairedVideo PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0) = 9,
+    PHAssetResourceTypeFullSizePairedVideo PHOTOS_AVAILABLE_IOS_TVOS(10_0, 10_0) = 10,
+    PHAssetResourceTypeAdjustmentBasePairedVideo PHOTOS_AVAILABLE_IOS_TVOS(10_0, 10_0) = 11,
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(9_0, 10_0);
 
 #endif

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  *             one relationship between a physical accessory and an object of this
  *             class. An accessory is composed of one or more services.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMAccessory : NSObject
 
 /*!
@@ -38,7 +38,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *
  * @discussion Use uniqueIdentifier to obtain the identifier for this object.
  */
-@property(readonly, copy, nonatomic) NSUUID *identifier NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
+@property(readonly, copy, nonatomic) NSUUID *identifier NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief A unique identifier for the accessory.
@@ -70,7 +70,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @discussion Use uniqueIdentifiersForBridgedAccessories to obtain the identifiers for the
  *             bridged accessories.
  */
-@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *identifiersForBridgedAccessories NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
+@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *identifiersForBridgedAccessories NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief If this accessory is a bridge, this property is an array of NSUUID objects that,
@@ -118,7 +118,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief This method is used to have an accessory identify itself.
@@ -136,7 +136,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @brief This defines the protocol for a delegate to receive updates about
  *        different aspects of an accessory
  */
-NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @protocol HMAccessoryDelegate <NSObject>
 
 @optional

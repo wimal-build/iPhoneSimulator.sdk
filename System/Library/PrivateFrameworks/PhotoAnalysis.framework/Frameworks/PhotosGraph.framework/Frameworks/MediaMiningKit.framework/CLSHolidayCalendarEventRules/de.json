@@ -1,0 +1,332 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "nightlife",
+          "restaurant"
+        ]
+      },
+      "uuid" : "445EC4CF-D28F-4155-B7F6-FBF37C38163F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "Labour Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "beach",
+          "nature",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "culture"
+        ]
+      },
+      "uuid" : "40ED1020-20D6-4600-AE8D-D3493AE57096"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment"
+        ]
+      },
+      "uuid" : "E05C7B01-4BB7-42C3-B850-3451930F9DF4"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 3,
+          "month" : 10
+        }
+      ],
+      "name" : "German Unity Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "62063D43-1CF0-4B5B-89EB-F9F0811A9DE8"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 6,
+          "month" : 12
+        }
+      ],
+      "name" : "Saint Nicholas",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "food"
+        ]
+      },
+      "uuid" : "5A8F29B2-A472-4DCE-AB31-995595E4966E"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "F9FBCED4-A176-49EF-9403-44FBB6A41D20"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "entertainment",
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "F9C645DC-54D9-4C36-9FD4-B03BA0648C62"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "BDD38A86-3810-4C51-A41C-0759F656B37E"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "food",
+          "restaurant"
+        ]
+      },
+      "uuid" : "98CCCF8D-4465-42B6-A9F0-CA3FC831BC23"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "food"
+        ]
+      },
+      "uuid" : "86BCCA9A-2F67-430F-A515-76E15769B7BA"
+    },
+    {
+      "dateRules" : [
+        {
+          "offsetDays" : 1,
+          "relativeToRule" : "86BCCA9A-2F67-430F-A515-76E15769B7BA"
+        }
+      ],
+      "name" : "Easter Monday",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "food",
+          "culture"
+        ]
+      },
+      "uuid" : "47831FF4-C069-44D0-97EB-E6B1CC90A002"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "de",
+    "countryName" : "Germany"
+  }
+}

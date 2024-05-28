@@ -2,7 +2,7 @@
 //  UICollectionView.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIScrollView.h>
@@ -51,7 +51,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UICollectionViewFocusUpdateContext : UIFo
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @optional
 
@@ -64,6 +64,18 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UICollectionViewFocusUpdateContext : UIFo
 - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath NS_AVAILABLE_IOS(9_0);
 
 @end
+
+@protocol UICollectionViewDataSourcePrefetching <NSObject>
+@required
+// indexPaths are ordered ascending by geometric distance from the collection view
+- (void)collectionView:(UICollectionView *)collectionView prefetchItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths NS_AVAILABLE_IOS(10_0);
+
+@optional
+// indexPaths that previously were considered as candidates for pre-fetching, but were not actually used; may be a subset of the previous call to -collectionView:prefetchItemsAtIndexPaths:
+- (void)collectionView:(UICollectionView *)collectionView cancelPrefetchingForItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths  NS_AVAILABLE_IOS(10_0);
+
+@end
+
 
 @protocol UICollectionViewDelegate <UIScrollViewDelegate>
 @optional
@@ -121,6 +133,10 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 @property (nonatomic, strong) UICollectionViewLayout *collectionViewLayout;
 @property (nonatomic, weak, nullable) id <UICollectionViewDelegate> delegate;
 @property (nonatomic, weak, nullable) id <UICollectionViewDataSource> dataSource;
+
+@property (nonatomic, weak, nullable) id<UICollectionViewDataSourcePrefetching> prefetchDataSource NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, getter=isPrefetchingEnabled) BOOL prefetchingEnabled NS_AVAILABLE_IOS(10_0);
+
 @property (nonatomic, strong, nullable) UIView *backgroundView; // will be automatically resized to track the size of the collection view and placed behind all cells and supplementary views.
 
 // For each reuse identifier that the collection view will use, register either a class or a nib from which to instantiate a cell.
@@ -139,7 +155,11 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 @property (nonatomic) BOOL allowsSelection; // default is YES
 @property (nonatomic) BOOL allowsMultipleSelection; // default is NO
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property (nonatomic, readonly, nullable) NSArray<NSIndexPath *> *indexPathsForSelectedItems; // returns nil or an array of selected index paths
+#else
 - (nullable NSArray<NSIndexPath *> *)indexPathsForSelectedItems; // returns nil or an array of selected index paths
+#endif
 - (void)selectItemAtIndexPath:(nullable NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UICollectionViewScrollPosition)scrollPosition;
 - (void)deselectItemAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
 
@@ -154,7 +174,11 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 
 // Information about the current state of the collection view.
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property (nonatomic, readonly) NSInteger numberOfSections;
+#else
 - (NSInteger)numberOfSections;
+#endif
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;
 
 - (nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath;
@@ -164,10 +188,15 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 - (nullable NSIndexPath *)indexPathForCell:(UICollectionViewCell *)cell;
 
 - (nullable UICollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property (nonatomic, readonly) NSArray<__kindof UICollectionViewCell *> *visibleCells;
+@property (nonatomic, readonly) NSArray<NSIndexPath *> *indexPathsForVisibleItems;
+#else
 - (NSArray<__kindof UICollectionViewCell *> *)visibleCells;
 - (NSArray<NSIndexPath *> *)indexPathsForVisibleItems;
+#endif
 
-- (UICollectionReusableView *)supplementaryViewForElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(9_0);
+- (nullable UICollectionReusableView *)supplementaryViewForElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(9_0);
 - (NSArray<UICollectionReusableView *> *)visibleSupplementaryViewsOfKind:(NSString *)elementKind NS_AVAILABLE_IOS(9_0);
 - (NSArray<NSIndexPath *> *)indexPathsForVisibleSupplementaryElementsOfKind:(NSString *)elementKind NS_AVAILABLE_IOS(9_0);
 

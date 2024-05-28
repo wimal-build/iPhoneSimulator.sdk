@@ -1,0 +1,660 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 10,
+          "month" : 10
+        }
+      ],
+      "name" : "National Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "firework"
+        ]
+      },
+      "uuid" : "17463BFE-538E-4935-BC99-9E13EBADB7EA"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 10
+        }
+      ],
+      "name" : "Taiwan Retrocession Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "D8C26BC7-0555-4900-BDD4-0B4256D2C50A"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 29,
+          "month" : 3
+        }
+      ],
+      "name" : "Youth Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "culture",
+          "park"
+        ]
+      },
+      "uuid" : "5FFB14D0-5B84-43E7-884A-1DCA23650F5E"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 56,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "CB59B32C-67BA-4857-B33E-B646D9265D77"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 16,
+          "month" : 10,
+          "year" : 2010
+        },
+        {
+          "day" : 5,
+          "month" : 10,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 10,
+          "year" : 2012
+        },
+        {
+          "day" : 13,
+          "month" : 10,
+          "year" : 2013
+        },
+        {
+          "day" : 2,
+          "month" : 10,
+          "year" : 2014
+        },
+        {
+          "day" : 21,
+          "month" : 10,
+          "year" : 2015
+        },
+        {
+          "day" : 9,
+          "month" : 10,
+          "year" : 2016
+        },
+        {
+          "day" : 28,
+          "month" : 10,
+          "year" : 2017
+        },
+        {
+          "day" : 17,
+          "month" : 10,
+          "year" : 2018
+        },
+        {
+          "day" : 7,
+          "month" : 10,
+          "year" : 2019
+        },
+        {
+          "day" : 25,
+          "month" : 10,
+          "year" : 2020
+        }
+      ],
+      "name" : "Double Ninth Festival",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "5C733868-A14E-43DF-9E34-E203EFC95C63"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 28,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 17,
+          "month" : 2,
+          "year" : 2011
+        },
+        {
+          "day" : 6,
+          "month" : 2,
+          "year" : 2012
+        },
+        {
+          "day" : 24,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 14,
+          "month" : 2,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 3,
+          "year" : 2015
+        },
+        {
+          "day" : 22,
+          "month" : 2,
+          "year" : 2016
+        },
+        {
+          "day" : 11,
+          "month" : 2,
+          "year" : 2017
+        },
+        {
+          "day" : 2,
+          "month" : 3,
+          "year" : 2018
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2019
+        },
+        {
+          "day" : 8,
+          "month" : 2,
+          "year" : 2020
+        }
+      ],
+      "name" : "Lantern Festival",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "786B08F0-4701-47A8-8C33-53F273BBC8A8"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 16,
+          "month" : 6,
+          "year" : 2010
+        },
+        {
+          "day" : 6,
+          "month" : 6,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 6,
+          "year" : 2012
+        },
+        {
+          "day" : 12,
+          "month" : 6,
+          "year" : 2013
+        },
+        {
+          "day" : 2,
+          "month" : 6,
+          "year" : 2014
+        },
+        {
+          "day" : 20,
+          "month" : 6,
+          "year" : 2015
+        },
+        {
+          "day" : 9,
+          "month" : 6,
+          "year" : 2016
+        },
+        {
+          "day" : 30,
+          "month" : 6,
+          "year" : 2017
+        },
+        {
+          "day" : 18,
+          "month" : 6,
+          "year" : 2018
+        },
+        {
+          "day" : 7,
+          "month" : 6,
+          "year" : 2019
+        },
+        {
+          "day" : 25,
+          "month" : 6,
+          "year" : 2020
+        }
+      ],
+      "name" : "Dragon Boat Festival",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "A7D88EFC-9D54-4430-9B8F-A40F7C6E310C"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "restaurant"
+        ]
+      },
+      "uuid" : "ECDAC725-34F2-402B-840F-DC06D084FE43"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 12,
+          "month" : 3
+        }
+      ],
+      "name" : "Arbor Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "98CC097B-F180-4937-9BE2-646690E93C6F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 22,
+          "month" : 9,
+          "year" : 2010
+        },
+        {
+          "day" : 12,
+          "month" : 9,
+          "year" : 2011
+        },
+        {
+          "day" : 30,
+          "month" : 9,
+          "year" : 2012
+        },
+        {
+          "day" : 19,
+          "month" : 9,
+          "year" : 2013
+        },
+        {
+          "day" : 8,
+          "month" : 9,
+          "year" : 2014
+        },
+        {
+          "day" : 27,
+          "month" : 9,
+          "year" : 2015
+        },
+        {
+          "day" : 15,
+          "month" : 9,
+          "year" : 2016
+        },
+        {
+          "day" : 4,
+          "month" : 10,
+          "year" : 2017
+        },
+        {
+          "day" : 24,
+          "month" : 9,
+          "year" : 2018
+        },
+        {
+          "day" : 13,
+          "month" : 9,
+          "year" : 2019
+        },
+        {
+          "day" : 1,
+          "month" : 10,
+          "year" : 2020
+        }
+      ],
+      "name" : "Mid-Autumn Festival",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "34642299-6662-419B-9B0D-837BCC83E51D"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 13,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 2,
+          "month" : 2,
+          "year" : 2011
+        },
+        {
+          "day" : 22,
+          "month" : 1,
+          "year" : 2012
+        },
+        {
+          "day" : 9,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 30,
+          "month" : 1,
+          "year" : 2014
+        },
+        {
+          "day" : 18,
+          "month" : 2,
+          "year" : 2015
+        },
+        {
+          "day" : 7,
+          "month" : 2,
+          "year" : 2016
+        },
+        {
+          "day" : 27,
+          "month" : 1,
+          "year" : 2017
+        },
+        {
+          "day" : 15,
+          "month" : 2,
+          "year" : 2018
+        },
+        {
+          "day" : 4,
+          "month" : 2,
+          "year" : 2019
+        },
+        {
+          "day" : 24,
+          "month" : 1,
+          "year" : 2020
+        }
+      ],
+      "name" : "Lunar New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "nightlife"
+        ]
+      },
+      "uuid" : "5267F8A0-DC28-4F2D-BD45-93E6B1816188"
+    },
+    {
+      "dateRules" : [
+        {
+          "offsetDays" : 1,
+          "relativeToRule" : "5267F8A0-DC28-4F2D-BD45-93E6B1816188"
+        }
+      ],
+      "name" : "Lunar New Year's Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife"
+        ]
+      },
+      "uuid" : "7D0EB59C-0D3C-49AA-AF1D-10C30A234C4F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Constitution Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "A85662EA-91F8-4102-8924-B34E34DFB3F3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "Labor Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "beach",
+          "nightlife"
+        ]
+      },
+      "uuid" : "F7770B31-430D-46A9-855B-DAB21BFAAD69"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "Founding of the Republic of China",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "nightlife",
+          "restaurant"
+        ]
+      },
+      "uuid" : "E0A49B7A-F192-4B48-BD9A-317190009C6A"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 2
+        }
+      ],
+      "name" : "Farmer’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "nature"
+        ]
+      },
+      "uuid" : "D048AE7A-23C8-4F00-B6C9-21312253FAB2"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "Republic Day & New Year’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "D6642DFF-8B5E-4B84-ADA8-A43EDFB43913"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 28,
+          "month" : 2
+        }
+      ],
+      "name" : "228 Memorial Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "F1E94891-99C8-49A1-A594-3EDB427F2B8F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 3,
+          "month" : 9
+        }
+      ],
+      "name" : "Armed Forces Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "22DF5C45-2DC8-4E25-8441-CE61A1851546"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "tw",
+    "countryName" : "Taiwan"
+  }
+}

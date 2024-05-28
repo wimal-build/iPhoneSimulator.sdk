@@ -1,0 +1,14 @@
+-- Migrates traces from v30 to v31
+
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS stylesheets;
+
+CREATE TABLE stylesheets
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+stylesheet_name     TEXT,
+stylesheet_data     BLOB
+);
+
+COMMIT;

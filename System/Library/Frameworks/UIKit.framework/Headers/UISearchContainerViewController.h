@@ -2,10 +2,10 @@
 //  UISearchContainerViewController.h
 //  UIKit
 //
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright © 2015-2016 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UIViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

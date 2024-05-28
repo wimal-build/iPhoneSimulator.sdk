@@ -3,7 +3,7 @@
  
      Contains:   Master include for vecLib framework
  
-     Version:    vecLib-563.2
+     Version:    vecLib-600.0
  
      Copyright:  Copyright (c) 2000-2016 by Apple Inc. All rights reserved.
  
@@ -165,4 +165,3 @@
 
 
 #endif /* __VDSP_TRANSLATE__ */
-

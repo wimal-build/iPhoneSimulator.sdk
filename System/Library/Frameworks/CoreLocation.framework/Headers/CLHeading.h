@@ -1,4 +1,3 @@
-
 /*
  *  CLHeading.h
  *  CoreLocation
@@ -111,14 +110,6 @@ NS_CLASS_AVAILABLE(10_7, 3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Returns a timestamp for when the magnetic heading was determined.
  */
 @property(readonly, nonatomic, copy) NSDate *timestamp;
-
-/*
- *  description
- *  
- *  Discussion:
- *    Returns a string representation of the heading.
- */
-@property (nonatomic, readonly, copy) NSString *description;
 
 @end
 

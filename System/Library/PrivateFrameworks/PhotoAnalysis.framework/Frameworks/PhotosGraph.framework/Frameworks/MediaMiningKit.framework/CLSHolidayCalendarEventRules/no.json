@@ -1,0 +1,406 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "month" : 11,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "restaurant"
+        ]
+      },
+      "uuid" : "D0CEEFF3-74E5-4B18-A19A-3671DDC271B9"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 11
+        }
+      ],
+      "name" : "All Saints’ Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "19A8F499-D7DC-4DD5-A928-2A8BE64CC7FD"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 8,
+          "month" : 3
+        }
+      ],
+      "name" : "Women’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment",
+          "shopping"
+        ]
+      },
+      "uuid" : "8F8DDB81-3CD9-454C-B0B7-55D41895A00F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 28,
+          "month" : 11,
+          "year" : 2010
+        },
+        {
+          "day" : 27,
+          "month" : 11,
+          "year" : 2011
+        },
+        {
+          "day" : 2,
+          "month" : 12,
+          "year" : 2012
+        },
+        {
+          "day" : 1,
+          "month" : 12,
+          "year" : 2013
+        },
+        {
+          "day" : 30,
+          "month" : 11,
+          "year" : 2014
+        },
+        {
+          "day" : 29,
+          "month" : 11,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 11,
+          "year" : 2016
+        },
+        {
+          "day" : 3,
+          "month" : 12,
+          "year" : 2017
+        },
+        {
+          "day" : 2,
+          "month" : 12,
+          "year" : 2018
+        },
+        {
+          "day" : 1,
+          "month" : 12,
+          "year" : 2019
+        },
+        {
+          "day" : 29,
+          "month" : 11,
+          "year" : 2020
+        }
+      ],
+      "name" : "Advent Sunday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "5A2B6932-0839-415C-A7AE-7ED9AF71B563"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter Sunday",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "B02EDC44-2459-46D2-9BB6-FEE78F12E215"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 17,
+          "month" : 5
+        }
+      ],
+      "name" : "Constitution Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "2CFD4F11-7CFA-4087-9B3A-EB6F48D7BEFF"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 2,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "9F76617B-4CB7-427F-A84F-DCB88EE988A2"
+    },
+    {
+      "dateRules" : [
+        {
+          "relativeToRule" : "B02EDC44-2459-46D2-9BB6-FEE78F12E215",
+          "offsetDays" : -3
+        }
+      ],
+      "name" : "Maundy Thursday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "D4FB2B84-D9E0-4D9D-836F-3F07FF48B9D3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    },
+    {
+      "dateRules" : [
+        {
+
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0,10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "2AC972A9-CF40-400E-A223-20D0EC3745EB"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 8,
+          "month" : 5
+        }
+      ],
+      "name" : "Day of Liberation",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "59ADA798-35BA-4AA3-8FFA-BF9BA38F1229"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "Labour Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "1F279069-7809-41E9-9CEF-EDA85D40F897"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 13,
+          "month" : 12
+        }
+      ],
+      "name" : "Saint Lucy’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "6BAA0F6D-8BC5-47E7-89C1-D93A1FEC1C9E"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "no",
+    "countryName" : "Norway"
+  }
+}

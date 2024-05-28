@@ -2,7 +2,7 @@
 //  UICollectionViewLayout.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -108,8 +108,13 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 
 @interface UICollectionViewLayout (UISubclassingHooks)
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) Class layoutAttributesClass; // override this method to provide a custom class to be used when instantiating instances of UICollectionViewLayoutAttributes
+@property(class, nonatomic, readonly) Class invalidationContextClass NS_AVAILABLE_IOS(7_0); // override this method to provide a custom class to be used for invalidation contexts
+#else
 + (Class)layoutAttributesClass; // override this method to provide a custom class to be used when instantiating instances of UICollectionViewLayoutAttributes
 + (Class)invalidationContextClass NS_AVAILABLE_IOS(7_0); // override this method to provide a custom class to be used for invalidation contexts
+#endif
 
 // The collection view calls -prepareLayout once at its first layout as the first message to the layout instance.
 // The collection view calls -prepareLayout again after layout is invalidated and before requerying the layout information.
@@ -134,7 +139,11 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity; // return a point at which to rest after scrolling - for layouts that want snap-to-point scrolling behavior
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset NS_AVAILABLE_IOS(7_0); // a layout can return the content offset to be applied during transition or update animations
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) CGSize collectionViewContentSize; // Subclasses must override this method and use it to return the width and height of the collection view’s content. These values represent the width and height of all the content, not just the content that is currently visible. The collection view uses this information to configure its own content size to facilitate scrolling.
+#else
 - (CGSize)collectionViewContentSize; // Subclasses must override this method and use it to return the width and height of the collection view’s content. These values represent the width and height of all the content, not just the content that is currently visible. The collection view uses this information to configure its own content size to facilitate scrolling.
+#endif
 
 @end
 

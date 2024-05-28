@@ -2,7 +2,7 @@
 //  UIDocument.h
 //  UIKit
 //
-//  Copyright (c) 1997-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 1997-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -25,13 +25,13 @@ typedef NS_ENUM(NSInteger, UIDocumentSaveOperation) {
 typedef NS_OPTIONS(NSUInteger, UIDocumentState) {
     UIDocumentStateNormal            = 0,
     UIDocumentStateClosed            = 1 << 0, // The document has either not been successfully opened, or has been since closed. Document properties may not be valid.
-    UIDocumentStateInConflict        = 1 << 1, // Conflicts exist for the document's fileURL. They can be accessed through +[NSFileVersion otherVersionsOfItemAtURL:].
+    UIDocumentStateInConflict        = 1 << 1, // Conflicts exist for the document's fileURL. They can be accessed through +[NSFileVersion unresolvedConflictVersionsOfItemAtURL:].
     UIDocumentStateSavingError       = 1 << 2, // An error has occurred that prevents the document from saving.
     UIDocumentStateEditingDisabled   = 1 << 3, // Set before calling -disableEditing. The document is is busy and it is not currently safe to allow user edits. -enableEditing will be called when it becomes safe to edit again.
     UIDocumentStateProgressAvailable = 1 << 4  // Set if the document is busy loading or saving. Progress is valid while this is set.
 } __TVOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIDocumentStateChangedNotification NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIDocumentStateChangedNotification NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
 
 NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIDocument : NSObject <NSFilePresenter, NSProgressReporting>
 
@@ -51,6 +51,8 @@ NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIDocument : NSObject <
 @property (copy, nullable) NSDate *fileModificationDate __TVOS_PROHIBITED;       // The last known modification date of the document's on-disk representation. Updated by openWithCompletionHandler:, revertToContentsOfURL:, and saveToURL: and will return nil if none of these has completed successfully at least once.
 
 @property (readonly) UIDocumentState documentState __TVOS_PROHIBITED;
+
+@property (readonly, nullable) NSProgress *progress NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED; // The download or upload progress of a document. Valid while UIDocumentStateProgressAvailable is set.
 
 #pragma mark *** Opening and Closing ***
 
@@ -90,7 +92,11 @@ NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIDocument : NSObject <
 
 // Subclasses should generally not need to override this. Instead they should use the undoManager or call -updateChangeCount: every time they get a change and UIKit will calculate -hasUnsavedChanges automatically.
 // The default implementation of -autosaveWithCompletionHandler: initiates a save if [self hasUnsavedChanges] is YES.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL hasUnsavedChanges __TVOS_PROHIBITED;
+#else
 - (BOOL)hasUnsavedChanges __TVOS_PROHIBITED;
+#endif
 
 // Record the fact that a change affecting the value returned by -hasUnsavedChanges has occurred. Subclasses should not need to call this if they set the undoManager.
 - (void)updateChangeCount:(UIDocumentChangeKind)change __TVOS_PROHIBITED;
@@ -113,7 +119,11 @@ NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIDocument : NSObject <
 // The default implementation of this method invokes [self hasUnsavedChanges] and, if that returns YES, invokes [self saveToURL:[self fileURL] forSaveOperation:UIDocumentSaveForOverwriting completionHandler:completionHandler].
 - (void)autosaveWithCompletionHandler:(void (^ __nullable)(BOOL success))completionHandler __TVOS_PROHIBITED;
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, nullable) NSString *savingFileType __TVOS_PROHIBITED; // The default implementation returns the current file type. saveToURL: will save to an extension based on this type so subclasses can override this to allow moving the document to a new type.
+#else
 - (nullable NSString *)savingFileType __TVOS_PROHIBITED; // The default implementation returns the current file type. saveToURL: will save to an extension based on this type so subclasses can override this to allow moving the document to a new type.
+#endif
 - (NSString *)fileNameExtensionForType:(nullable NSString *)typeName saveOperation:(UIDocumentSaveOperation)saveOperation __TVOS_PROHIBITED; // For a specified type, and a particular kind of save operation, return a file name extension that can be appended to a base file name.
 
 // This method is responsible for doing document writing in a way that minimizes the danger of leaving the disk to which writing is being done in an inconsistent state in the event of an application crash, system crash, hardware failure, power outage, etc.

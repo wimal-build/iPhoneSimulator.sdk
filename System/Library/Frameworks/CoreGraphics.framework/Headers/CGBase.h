@@ -9,6 +9,8 @@
 #include <stddef.h>
 #include <float.h>
 #include <TargetConditionals.h>
+#include <CoreFoundation/CFBase.h>
+#include <CoreFoundation/CFAvailability.h>
 
 /* Definition of `__CG_HAS_COMPILER_ATTRIBUTE'. */
 
@@ -254,5 +256,21 @@ typedef CGFLOAT_TYPE CGFloat;
 #if !defined(CG_PRIVATE_EXTERN) && !defined(CG_BUILDING_CG)
 # define CG_PRIVATE_EXTERN CG_LOCAL
 #endif
+
+#if !TARGET_IPHONE_SIMULATOR
+
+typedef struct  CF_BRIDGED_TYPE(id) __IOSurface *IOSurfaceRef __attribute__((swift_name("IOSurfaceRef")));
+
+#endif
+
+/* 'cg_nullable' will be dropped for new Swift clients. All others get currently the old behavior */
+
+#if defined(SWIFT_SDK_OVERLAY_COREGRAPHICS_EPOCH) && SWIFT_SDK_OVERLAY_COREGRAPHICS_EPOCH >= 0
+#   define cg_nullable
+#else
+#   define cg_nullable __nullable
+#endif
+
+
 
 #endif /* CGBASE_H_ */

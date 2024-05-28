@@ -27,5 +27,6 @@
 #import <MediaPlayer/MPRemoteCommand.h>
 #import <MediaPlayer/MPRemoteCommandCenter.h>
 #import <MediaPlayer/MPRemoteCommandEvent.h>
+#import <MediaPlayer/MPRemoteControlTypes.h>
 #import <MediaPlayer/MPVolumeSettings.h>
 #import <MediaPlayer/MPVolumeView.h>

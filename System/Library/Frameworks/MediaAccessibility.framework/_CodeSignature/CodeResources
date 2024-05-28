@@ -6,7 +6,7 @@
 	<dict>
 		<key>Defaults.plist</key>
 		<data>
-		69vCLUa5mr5uveiKvjcfcQOaKGc=
+		a0j2gTQlfrY//CSkhMKdcgWB8Y4=
 		</data>
 		<key>Headers/MAAudibleMedia.h</key>
 		<data>
@@ -26,11 +26,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NR+OwLR4gUE8ty0jeju8mBLqtWA=
+		qTN+N99KZt4bHtIBhSneO1W05ng=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		kCKX4HknnqNiDduC0NFtwPK1fGE=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/Info.plist</key>
+		<data>
+		dpxSGnmJEK99Wy0JbL75uY/liug=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		qnzzI35W4c4yvhzDQ971gttQ4+4=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.accessibility.mediaaccessibilityd</key>
+		<data>
+		Wjt2tek1TOkRgAKOVDO92Bweq8o=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.mediaaccessibility.public-cloud-users.defaults</key>
+		<data>
+		wTO7rc5EmqJos0/D5jOm5Y4x1wA=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -405,15 +421,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XcntOuGtjX4jIaNCSog3xQE23po=
+			L21RDFyhpaty0NC48X0EOccFepk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>module.map</key>
-		<data>
-		X8uRbTRNSS7ln3I7YXCVnS22DZ8=
-		</data>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -607,7 +619,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gNpKfBfVYR8oZ6LFXm3dhN2Lh3Y=
+			U20HvVN+SmdtuProyl+keQGf8qA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -725,7 +737,7 @@
 	<dict>
 		<key>Defaults.plist</key>
 		<data>
-		69vCLUa5mr5uveiKvjcfcQOaKGc=
+		a0j2gTQlfrY//CSkhMKdcgWB8Y4=
 		</data>
 		<key>Headers/MAAudibleMedia.h</key>
 		<data>
@@ -746,6 +758,22 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		kCKX4HknnqNiDduC0NFtwPK1fGE=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/Info.plist</key>
+		<data>
+		dpxSGnmJEK99Wy0JbL75uY/liug=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		qnzzI35W4c4yvhzDQ971gttQ4+4=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.accessibility.mediaaccessibilityd</key>
+		<data>
+		Wjt2tek1TOkRgAKOVDO92Bweq8o=
+		</data>
+		<key>XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.mediaaccessibility.public-cloud-users.defaults</key>
+		<data>
+		wTO7rc5EmqJos0/D5jOm5Y4x1wA=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1120,15 +1148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XcntOuGtjX4jIaNCSog3xQE23po=
+			L21RDFyhpaty0NC48X0EOccFepk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>module.map</key>
-		<data>
-		X8uRbTRNSS7ln3I7YXCVnS22DZ8=
-		</data>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1322,7 +1346,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gNpKfBfVYR8oZ6LFXm3dhN2Lh3Y=
+			U20HvVN+SmdtuProyl+keQGf8qA=
 			</data>
 			<key>optional</key>
 			<true/>

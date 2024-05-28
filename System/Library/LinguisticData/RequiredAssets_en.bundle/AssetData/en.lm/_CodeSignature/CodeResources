@@ -6,15 +6,35 @@
 	<dict>
 		<key>blacklist.dat</key>
 		<data>
-		rM1umiCWWmIEYd1PbUoocvm6skE=
+		+4+FdBon7vdkyQGqLCN483sg2DE=
+		</data>
+		<key>classmodel.dat</key>
+		<data>
+		aYb7lRgETYKzOe4qt7R7LF27cIg=
+		</data>
+		<key>fst.dat</key>
+		<data>
+		nbkh/7KT7wNbn6uXwPiwo3qd8oc=
 		</data>
 		<key>lexicon.dat</key>
 		<data>
 		2yoApSkFItfThUaLZ9DSRh3U8RA=
 		</data>
-		<key>lm.dat</key>
+		<key>lm_gram3.dat</key>
 		<data>
-		cVYq1xQJDTzeHbYVSkABYIy47YQ=
+		hO8UHEjLq0Wxrbi3TAHXBCBonS4=
+		</data>
+		<key>montreal.dat</key>
+		<data>
+		jAzj6GkhKHO9P1SaTqM08DFWAHM=
+		</data>
+		<key>montrealidmap.dat</key>
+		<data>
+		efnDioDo+gNCFJ4wGSoKf9uZFOQ=
+		</data>
+		<key>params.dat</key>
+		<data>
+		JbHA2HlwAluB7kEGJeIPrgsrGDs=
 		</data>
 		<key>variants.dat</key>
 		<data>
@@ -22,22 +42,42 @@
 		</data>
 		<key>whitelist.dat</key>
 		<data>
-		kTakAVBf9wMtnfobVl1qzFBFOvU=
+		HpBqPjuFoy64AyOdoOrbsVvEHjs=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>blacklist.dat</key>
 		<data>
-		rM1umiCWWmIEYd1PbUoocvm6skE=
+		+4+FdBon7vdkyQGqLCN483sg2DE=
+		</data>
+		<key>classmodel.dat</key>
+		<data>
+		aYb7lRgETYKzOe4qt7R7LF27cIg=
+		</data>
+		<key>fst.dat</key>
+		<data>
+		nbkh/7KT7wNbn6uXwPiwo3qd8oc=
 		</data>
 		<key>lexicon.dat</key>
 		<data>
 		2yoApSkFItfThUaLZ9DSRh3U8RA=
 		</data>
-		<key>lm.dat</key>
+		<key>lm_gram3.dat</key>
 		<data>
-		cVYq1xQJDTzeHbYVSkABYIy47YQ=
+		hO8UHEjLq0Wxrbi3TAHXBCBonS4=
+		</data>
+		<key>montreal.dat</key>
+		<data>
+		jAzj6GkhKHO9P1SaTqM08DFWAHM=
+		</data>
+		<key>montrealidmap.dat</key>
+		<data>
+		efnDioDo+gNCFJ4wGSoKf9uZFOQ=
+		</data>
+		<key>params.dat</key>
+		<data>
+		JbHA2HlwAluB7kEGJeIPrgsrGDs=
 		</data>
 		<key>variants.dat</key>
 		<data>
@@ -45,7 +85,7 @@
 		</data>
 		<key>whitelist.dat</key>
 		<data>
-		kTakAVBf9wMtnfobVl1qzFBFOvU=
+		HpBqPjuFoy64AyOdoOrbsVvEHjs=
 		</data>
 	</dict>
 	<key>rules</key>

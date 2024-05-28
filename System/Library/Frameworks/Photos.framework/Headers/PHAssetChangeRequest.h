@@ -9,6 +9,7 @@
 
 #import <Photos/PHAsset.h>
 #import <Photos/PHContentEditingOutput.h>
+#import <Photos/PhotosDefines.h>
 
 @class UIImage;
 @class CLLocation;
@@ -19,7 +20,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // PHAssetChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetChangeRequest : NSObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetChangeRequest : NSObject
 
 #pragma mark - Creating Assets
 
@@ -57,9 +58,9 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetChangeRequest : NSObject
 @end
 
 
-typedef NSUInteger PHContentEditingInputRequestID NS_AVAILABLE_IOS(8_0);
+typedef NSUInteger PHContentEditingInputRequestID PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHContentEditingInputRequestOptions : NSObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHContentEditingInputRequestOptions : NSObject
 
 // Block to be provided by the client, used to determine if the given adjustment data can be handled (i.e. can be decoded and rendered).
 @property (nonatomic, copy) BOOL (^canHandleAdjustmentData)(PHAdjustmentData *adjustmentData);
@@ -74,15 +75,15 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHContentEditingInputRequestOptions : NSO
 @interface PHAsset (PHContentEditingInput)
 
 // Completion and progress handlers are called on an arbitrary serial queue.
-- (PHContentEditingInputRequestID)requestContentEditingInputWithOptions:(nullable PHContentEditingInputRequestOptions *)options completionHandler:(void (^)(PHContentEditingInput *__nullable contentEditingInput, NSDictionary *info))completionHandler NS_AVAILABLE_IOS(8_0);
-- (void)cancelContentEditingInputRequest:(PHContentEditingInputRequestID)requestID NS_AVAILABLE_IOS(8_0);
+- (PHContentEditingInputRequestID)requestContentEditingInputWithOptions:(nullable PHContentEditingInputRequestOptions *)options completionHandler:(void (^)(PHContentEditingInput *__nullable contentEditingInput, NSDictionary *info))completionHandler PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+- (void)cancelContentEditingInputRequest:(PHContentEditingInputRequestID)requestID PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 @end
 
 // Completion handler info dictionary keys
-extern NSString *const PHContentEditingInputResultIsInCloudKey NS_AVAILABLE_IOS(8_0);
-extern NSString *const PHContentEditingInputCancelledKey NS_AVAILABLE_IOS(8_0);
-extern NSString *const PHContentEditingInputErrorKey NS_AVAILABLE_IOS(8_0);
+extern NSString *const PHContentEditingInputResultIsInCloudKey PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+extern NSString *const PHContentEditingInputCancelledKey PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+extern NSString *const PHContentEditingInputErrorKey PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 
 @interface PHContentEditingOutput (PHAssetChangeRequest)

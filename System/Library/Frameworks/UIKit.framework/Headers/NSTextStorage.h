@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/NSObject.h>
+#import <Foundation/NSNotification.h>
 #import <UIKit/NSAttributedString.h>
 
 @class NSArray, NSLayoutManager, NSNotification;
@@ -101,8 +102,8 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextStorage : NSMutableAttributedStri
 
 /**** Notifications ****/
 
-UIKIT_EXTERN NSString * const NSTextStorageWillProcessEditingNotification NS_AVAILABLE(10_0, 7_0);
-UIKIT_EXTERN NSString * const NSTextStorageDidProcessEditingNotification NS_AVAILABLE(10_0, 7_0);
+UIKIT_EXTERN NSNotificationName const NSTextStorageWillProcessEditingNotification NS_AVAILABLE(10_0, 7_0);
+UIKIT_EXTERN NSNotificationName const NSTextStorageDidProcessEditingNotification NS_AVAILABLE(10_0, 7_0);
 
 
 

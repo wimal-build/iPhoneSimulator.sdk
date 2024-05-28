@@ -6,11 +6,19 @@
 	<dict>
 		<key>AXContainerServices-Info.plist</key>
 		<data>
-		wbMbSS752j3pBwu4/R9A4xptBI0=
+		XoKomkhIBTfMRDtxlHpiPYS6iTE=
 		</data>
 		<key>AXLanguageToLocale.plist</key>
 		<data>
-		DPKocHiK3EJP7JeMLn3/gdkHuck=
+		t0Vjw0lyQ1ysxxW11PqiRWdaqac=
+		</data>
+		<key>AXPhonemes/en.plist</key>
+		<data>
+		Vx2R84q0JC11KZPubskOJqFOnM8=
+		</data>
+		<key>AXPhonetics/en.plist</key>
+		<data>
+		FgGsQNyZ+VaB6wgMvcjDXAF3zSQ=
 		</data>
 		<key>AXWordDescriptionsData_ja.momd/AXWordDescriptionsData_ja.mom</key>
 		<data>
@@ -46,71 +54,336 @@
 		</data>
 		<key>AccessibilityLanguages.plist</key>
 		<data>
-		54w4BCM5F2iRrFG69tcARHO4XdI=
+		xfLTR9lt6OINxGsvGSmHs0kzNag=
 		</data>
-		<key>Dutch.lproj/Accessibility.strings</key>
+		<key>DNTTerms.plist</key>
+		<data>
+		k6knj4FGY14d+XxDWy0hzgTL5PY=
+		</data>
+		<key>Dutch.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tWV3TfKAgW/s7uFAvXlpzDfaphE=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>English.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Trbrmso5vjtGu1iNGKOgp1nPY+k=
+			kSx92ThQiP66fxsWQU3QaWQCSWI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>French.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WGyor8vxHuYTDRcwbRXcA5InB+Y=
+			vc9Btb/DhMQEHmicDyOigv5FBrM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>German.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Yt4NtD45H8XlpaWiJruEUWY4hs8=
+			RePgRt2cCfI9BH5neIr+DEvmPpE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TeM8H8D+bseinpUETkNdkQ0zC3Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SpJqPSaptJCjolG0JPuwbGdrLvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uV6i+gkyzJ88uNb5zj6ysBh8OxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rOt5cs4Q1j+zYl/E1f4OMSO3vm4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CFV7bXHCU5lklPHO4PzXSWyOJsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			piLiImJmrj/5NuBD6BXxAx6KLhY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FcY7TeqW0HxwIskeeSivqweXQu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LTWd0VK13GjDdAGrJmp/dGvVGs4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V5fXLbgPh7ibG1pTOCmkepj+f2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+ZCEZp4ndq5kudbD3kLDicYabYo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZF40fQuDCEn7XCJvrMPbvGrI0CQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oPF9ixCZBYGBgSnNrcUJzcfJ1Qs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rLvo48YSuGvNqXsP7aanj4OkfZ4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		BreC7fd2G/RtPrBj+oI4VQXccBg=
+		gr28PLZS7qR0EcCRuHI/evVicz0=
 		</data>
-		<key>Italian.lproj/Accessibility.strings</key>
+		<key>Italian.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GNnix5qx/53ts5ftGD5LK1DVSYY=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Japanese.lproj/Accessibility.strings</key>
+		<key>Italian.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m0XPVAJJZeJGj/WvDcV0UvDVzHo=
+			XMM42duVYm3pGcjVJ7HSCRA1F94=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Spanish.lproj/Accessibility.strings</key>
+		<key>Italian.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/JsYpOYXD5kn0Zp58C4bAgT16i8=
+			dKkC7IixsIwzFlfsL2vJrCwoaKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r1m+2rutnUoZmSXa9frCkkO5rNs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cfY155iffTXSrfL7gRVRejNLRAE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ZlLyD/34z0BHjf9RJQlvfe+1Pw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y63eETonbgnWMPMdDJwj5tWXC9M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LAIsA5wkw4E3SyeeEorCKkZ+D5s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HpVYVgbxbreG441E+1rCtXU8n+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lJq8Jt7rDB2lW0FHdvzbkR8shJ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			34wugAs9+BXbXUeKB5WmxqR+yyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F7hA8HnBlyImlAVxrv3JKALQnlY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KsliZFzPnJjOThTY7X62hDg7RvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/SwitchControl.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gImYjmH7ZKeV3MeeAvxrf1TmWOM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -121,283 +394,1399 @@
 		</data>
 		<key>SynthesizerLanguageMap.plist</key>
 		<data>
-		JFW27zQ+55GS+Gk00hHcpbFTAYE=
+		4JMaaIX4xuXJ3JmAs/xN9XI3nUM=
 		</data>
-		<key>ar.lproj/Accessibility.strings</key>
+		<key>ar.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7N0vGTwVtDhOkEmBoIfl6ZcvMV4=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/Accessibility.strings</key>
+		<key>ar.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h9Ko2L+lvVeJW/gM5MgRidqU9II=
+			euMtEHo1yzVUbXtv5c7j3YivU7w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/Accessibility.strings</key>
+		<key>ar.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UV9hSHSJeYMCbzabOYtzG0kKZvU=
+			esjoaLFj8B7PDmbAloqElb+ry4U=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/Accessibility.strings</key>
+		<key>ar.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w+z2cFeOAL3VSY/Awj6Tc5SS0w4=
+			OjL/6AKgF+b/a710QXMaClLm23U=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/Accessibility.strings</key>
+		<key>ar.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R00nk0JJO9Gh4cqbEQHJAfHS57E=
+			MuhlUlhgxtaV8aQ7n60xRKmJNUA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/Accessibility.strings</key>
+		<key>ca.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ITRqMuBXzQZBO1ABz/YLXD9asA=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/Accessibility.strings</key>
+		<key>ca.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ITRqMuBXzQZBO1ABz/YLXD9asA=
+			vVWrNgvJpQUH7Tp9COBFZo4Ak50=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/Accessibility.strings</key>
+		<key>ca.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TFspxnoAXKxbhLfm2wHUjJvTb5M=
+			Ph84oSRewWW+VCBrdFVLOEv7dhg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/Accessibility.strings</key>
+		<key>ca.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K+l+clcwNgRFdTdYhcd6L9858xI=
+			U9ZW3ieWjycCgBh/JHWK0NUGCHg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/Accessibility.strings</key>
+		<key>ca.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UqOyspMLbDi5s3i13GOaPYyDIE8=
+			U20yDWakWr34O5Zcd5jyjpobvXQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/Accessibility.strings</key>
+		<key>cs.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			syV/a4rR4VPjTl/d/0o7vgv8V5c=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/Accessibility.strings</key>
+		<key>cs.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vt5PeSoAKtf8PCvULaIXkp+aeko=
+			5uE2SL0Wf7Q7sySdGWxyYcMzQOs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/Accessibility.strings</key>
+		<key>cs.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B9zQIAloul6vpdkyXjUuhM8BjyU=
+			xs2GBkgRDov7st3/ZwZph14ZTZc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/Accessibility.strings</key>
+		<key>cs.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2+eTErUfJbkT2YCRyJeHjYnRI94=
+			TaVujlbIVUm7K679yoaFZ1q2tqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/Accessibility.strings</key>
+		<key>cs.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/kSlx+5i3jkIlIxoThOJ9D7qsO8=
+			WeXEJCCx/MncUW5u3V5yrJO81N8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/Accessibility.strings</key>
+		<key>da.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ztwOFs0kKvrzngUUsnUfmkqWdKM=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/Accessibility.strings</key>
+		<key>da.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NVl3kCEzSz6339+0VB8jzALTiOQ=
+			NZjMJsenS10ah3U/wcFFctAc9qU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/Accessibility.strings</key>
+		<key>da.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2xRWZjsOXxwuygtu5E8gw61etF0=
+			LE/cQLG8Oc/jBjS+pdDs/t+1/WU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/Accessibility.strings</key>
+		<key>da.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wGqmVGMZKL5CMyfAs7dYAgsGTMI=
+			FF4vW3ulSpLz5UVJLCSxc6Zhwn0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/Accessibility.strings</key>
+		<key>da.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hA8xutuabRzhNqKPZOJ0rq7WlX0=
+			7KTE0zFBBAQ174CPixxE4kOc1/w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/Accessibility.strings</key>
+		<key>el.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lYuWwY89jB/UjJbgbQSNiiIt9LE=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/Accessibility.strings</key>
+		<key>el.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HYSby6Cj3dWVOKg3Huo1XDKfel0=
+			/VQnhXMvyJiRHQZ+h3+4eyY5Eg8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/Accessibility.strings</key>
+		<key>el.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CzQCdi8CiKhAYgJZP8P84zb3amM=
+			U63qJodv/RjTzWx4s8lE77P7DPE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/Accessibility.strings</key>
+		<key>el.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hdmIkYXiSUXtxYiGJtSm+R75Qt8=
+			NErSToiaynRFCYFiaH8sY7kjkX8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/Accessibility.strings</key>
+		<key>el.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y31ierNj31aNFKCaytQYa9bsh2M=
+			ab0/qPddiP+Gyk92BmUhjNyUOaA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bdOXAcrSQ4laYIi6ShpaP3XA254=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			udNm5ggKUMpW+G1D25l8kYac3Co=
+			qZMYuRXCjOZTx0rd5CxaZkk6t7w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>vi.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sjyr1dXwO8LHnYgGthgVN8Bt+UY=
+			uV6i+gkyzJ88uNb5zj6ysBh8OxI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U4jLCPjp1TEb9NotaGMYYqH8KNc=
+			W2u7UbdvAnNsjTz6BbT8ZyuT9Fg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3IPUAT01hy/kKi0fY5sSPb//yQQ=
+			JOnnBd/O4G8OLKYfRfbdozFp56Q=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/Accessibility.strings</key>
+		<key>en_GB.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VcVW/9E0s3sxOqLaSryewpp4G2s=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qZMYuRXCjOZTx0rd5CxaZkk6t7w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uV6i+gkyzJ88uNb5zj6ysBh8OxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OdnZC9cV36Z+DyA5Q1cuxizAX8c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gv0G/DKRbWBvNLLIZu838eSvg4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wBbvSblR+QJecJfC78+uCZ+mR/I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RX50vnusPyAaH8tpl39/meiUTys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DgmnH/vR/Ej/mUuSBFc2MtiEYjE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ks7T0/CH/PcEo4ITBewtQrKOPDw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g+FKN7y2YU2b8eKCCMx/P9+5utE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FcY7TeqW0HxwIskeeSivqweXQu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nJpQ+7peIdyCVciQbYLBaJ+Mjs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k5OOzgtG9TAKlKlMFQLtUw3PIBY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gItXYL1pDiCvxKdi6rF8mqq7h9I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FCJJm8NGSVkrHQC+pfhjBKaE08o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTI91RtRCFWbdd2wCt0piN1HIIY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ONM/xpIEBw9ttGU/I4O7xDoF5OU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hPx1wJG+b3gY8uIK/8IhxpeAO80=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o+VKZCE7xSqzXtf1ZEr9zftsAPc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+v6rbiEM+lrN/uOxFCHFzG/mmkQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zPz6lGed28Wv/yTDHxfh1myKA40=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVwYrdc7Mp8O+wS8ubXQsfhHi4E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gTE8b2QpUoF92S3gRlXeEeqzNSI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			goQBSTl9yosXo8QA90qYlYpLl50=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cwh3uPYQh6qX5biFdzcApBNJHx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2a+Gc8ttnfPBORxVw4CpoRCpYw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Txv+k+dnXAMLSGetN8FBNbuqp6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yk++qWMMqB6ePvPi7OQL9PogOVU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cnSxB+e07lUZ4FqyFdiXcXGMkaA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pA16OEBn1p9vnaQuKTtEBu0kKCo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6MN451mjcD0Yx6txW6swyXwNcqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dEgmWdSB9Ast9Olm6TVsuDP2z6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zUjyNyo2A36If9AmOaH9cY16qMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WYnymWdFFHt2aH2lQHwbVctpUrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0MKy5Z0SExYoqJHXWhyGkkjPzao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FVTcnRa8cEVAuwqYTbF1z1IRJQ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0SotccQGJJUcVoSEuRqBhgPeUpk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LS338oe/tEh8RCNqRh1hKjxOiVA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d0H/q+F6YPK5d3qsSOSxqU6+kUQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nds/bJTKa20C0CBV0kSJTI76vNI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5BtiDGWV+Cl+cuBxI9AtTiIsRVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LenY29GVXfmkvYYQr6fARztqPb4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mYy0MRLXoiz5VsC9W+m+D+g1/Fg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PhBaAOAD32uruHSOjmWur5pR+AU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XK6tIbZu23hMCPU1ucfetAGDs10=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WjgoOGiJyw/HJ+WSFhgAuy8f6p4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c4Vb/bNWJdRvO2rsA5dmOVmig8E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d58iozV0sNN6Pnki7/AfOFyb3W4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aV6GUNa3h5Q1vmSGeIQEroZU6/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUQsP2OMt3PijV5NuwDSMmaJrD4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0nyO1mZXZRxX6Uv25gRfO2e9Frg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ltZZKBoddo7O1E2ooyFAu0kmCv0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XGjQyaZgb+dWRyYnQd+7yIg3sHY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YWWhcM7t5YhlBL1StQ3yuXd2sUQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZiL68I9qok4vNORJrYSPsfFkXd0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zEPnPJSRfiTOb36PoZugUD6Y4hc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			935gWarsX4DFBdSGgndbUr1OsW0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iQ/1Jgbn9T2oaz1/Z3Dw7lYgicQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TpLv7J3nPPWTCcOjo/Gh9733eJg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PwwUg6NQqSrfMZ/bbkNjmdw6hmM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PfXqg8h/tyNC2pLWmaEN9oPX47I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EnAFaVpq/vNUd/eczmpg+uSBhRI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZUYWUeFRrr4mOiMzgyzOJNnra7I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G+QV1xLPqwI9AvguI8SKw9YrBzI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwTw5VTY5ymieVYoZqkud7gybZ0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y0L+sjIdZ+z2/9P/MsEkt8wxdE0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jr77cLKyiOrLV+P3/X/PuKjTvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V1TsdlT/m/48Ba7jQUUjR+YQ8yE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vv5mhD4JiW8Fktaegb6UxA0aEUE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FvIluuzGxH2pL6MRFRzLLG2lgFQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dN+V06D2PZOcqjlXOQFh65bmGlA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vcVGTJeIl3dudBlUtjIS040uncI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lDk0oSv7wztTcAybp6zrif+CkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jWfr567PSPvweToFvHeAUz5S044=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XXmKpTFlyQHHPrk6qZwCFtl8kv0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NtGbvFvEmkzSxLN9PxcpOWd6kAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AzEBMnSYxxmKLtUEc5syxm8IBtw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sTnAUQM2diFzXVw6ZSBmMfMl0UI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T+Eg0t3fHHgVS0xuTvWwEVBea/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E1N5o1T30+2P7xD2OZUfIG8fU5k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qcAFBqeaylXLWxFCI0FA+9Rgmpc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pPQvG+DDHfsxFV8Yh32n2bW89qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Hg6JeyDHb2JgJ6otuQ7C9qs8rVc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u3K9G219yYNF1otLGvw8WBiDcrE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j5nH5RRlRkhyLF1FGkex/twf0pI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqNbtEoe2uss5rdkLh2J8Npb1F0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3vI/TJtsxhh+FZD1CiAg4vBmpHA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L4QqTQ/HWRuxwTHbwESKsoWunJo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2q5JKHJX6XisCseiVw7dxvw2BpQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ob3gxjBg6z+YsIiCS5o5EpPaAiE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lCY8DtUxRxjgNQElZxZRi2qh1Wg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q7I7o+ID8D1dWDP8tNJ+mC1/JeI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i36+lIzLB56nZUtIbNGkjAbCi2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			00Sr3pidL8ScBg3QKw4P8fRJ1hI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R24FyCfJAqT4YwylhYM72ViutUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ktrE7VUZYBzm/3Rvx+3h953I1kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n6LiAFNo8fuvq/EGwzdWEdOPjNs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xmL5bzvlp3XpuirYC5VEMNVl7aI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9VMhrIYh4hxh3CQSAeifnhUIEVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6Wyvhtzh9wZ00JgCIKlT9DY+vGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			04+xgzp2Ab5cf9Hs3AppG8Fogak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -407,11 +1796,19 @@
 	<dict>
 		<key>AXContainerServices-Info.plist</key>
 		<data>
-		wbMbSS752j3pBwu4/R9A4xptBI0=
+		XoKomkhIBTfMRDtxlHpiPYS6iTE=
 		</data>
 		<key>AXLanguageToLocale.plist</key>
 		<data>
-		DPKocHiK3EJP7JeMLn3/gdkHuck=
+		t0Vjw0lyQ1ysxxW11PqiRWdaqac=
+		</data>
+		<key>AXPhonemes/en.plist</key>
+		<data>
+		Vx2R84q0JC11KZPubskOJqFOnM8=
+		</data>
+		<key>AXPhonetics/en.plist</key>
+		<data>
+		FgGsQNyZ+VaB6wgMvcjDXAF3zSQ=
 		</data>
 		<key>AXWordDescriptionsData_ja.momd/AXWordDescriptionsData_ja.mom</key>
 		<data>
@@ -447,67 +1844,332 @@
 		</data>
 		<key>AccessibilityLanguages.plist</key>
 		<data>
-		54w4BCM5F2iRrFG69tcARHO4XdI=
+		xfLTR9lt6OINxGsvGSmHs0kzNag=
 		</data>
-		<key>Dutch.lproj/Accessibility.strings</key>
+		<key>DNTTerms.plist</key>
+		<data>
+		k6knj4FGY14d+XxDWy0hzgTL5PY=
+		</data>
+		<key>Dutch.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tWV3TfKAgW/s7uFAvXlpzDfaphE=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>English.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Trbrmso5vjtGu1iNGKOgp1nPY+k=
+			kSx92ThQiP66fxsWQU3QaWQCSWI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>French.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WGyor8vxHuYTDRcwbRXcA5InB+Y=
+			vc9Btb/DhMQEHmicDyOigv5FBrM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>German.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Yt4NtD45H8XlpaWiJruEUWY4hs8=
+			RePgRt2cCfI9BH5neIr+DEvmPpE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Italian.lproj/Accessibility.strings</key>
+		<key>Dutch.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GNnix5qx/53ts5ftGD5LK1DVSYY=
+			TeM8H8D+bseinpUETkNdkQ0zC3Q=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Japanese.lproj/Accessibility.strings</key>
+		<key>English.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m0XPVAJJZeJGj/WvDcV0UvDVzHo=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Spanish.lproj/Accessibility.strings</key>
+		<key>English.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/JsYpOYXD5kn0Zp58C4bAgT16i8=
+			SpJqPSaptJCjolG0JPuwbGdrLvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uV6i+gkyzJ88uNb5zj6ysBh8OxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rOt5cs4Q1j+zYl/E1f4OMSO3vm4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CFV7bXHCU5lklPHO4PzXSWyOJsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			piLiImJmrj/5NuBD6BXxAx6KLhY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FcY7TeqW0HxwIskeeSivqweXQu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LTWd0VK13GjDdAGrJmp/dGvVGs4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V5fXLbgPh7ibG1pTOCmkepj+f2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+ZCEZp4ndq5kudbD3kLDicYabYo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZF40fQuDCEn7XCJvrMPbvGrI0CQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oPF9ixCZBYGBgSnNrcUJzcfJ1Qs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rLvo48YSuGvNqXsP7aanj4OkfZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XMM42duVYm3pGcjVJ7HSCRA1F94=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dKkC7IixsIwzFlfsL2vJrCwoaKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r1m+2rutnUoZmSXa9frCkkO5rNs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cfY155iffTXSrfL7gRVRejNLRAE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ZlLyD/34z0BHjf9RJQlvfe+1Pw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y63eETonbgnWMPMdDJwj5tWXC9M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LAIsA5wkw4E3SyeeEorCKkZ+D5s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HpVYVgbxbreG441E+1rCtXU8n+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lJq8Jt7rDB2lW0FHdvzbkR8shJ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			34wugAs9+BXbXUeKB5WmxqR+yyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F7hA8HnBlyImlAVxrv3JKALQnlY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KsliZFzPnJjOThTY7X62hDg7RvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/SwitchControl.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gImYjmH7ZKeV3MeeAvxrf1TmWOM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -518,283 +2180,1399 @@
 		</data>
 		<key>SynthesizerLanguageMap.plist</key>
 		<data>
-		JFW27zQ+55GS+Gk00hHcpbFTAYE=
+		4JMaaIX4xuXJ3JmAs/xN9XI3nUM=
 		</data>
-		<key>ar.lproj/Accessibility.strings</key>
+		<key>ar.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7N0vGTwVtDhOkEmBoIfl6ZcvMV4=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/Accessibility.strings</key>
+		<key>ar.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h9Ko2L+lvVeJW/gM5MgRidqU9II=
+			euMtEHo1yzVUbXtv5c7j3YivU7w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/Accessibility.strings</key>
+		<key>ar.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UV9hSHSJeYMCbzabOYtzG0kKZvU=
+			esjoaLFj8B7PDmbAloqElb+ry4U=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/Accessibility.strings</key>
+		<key>ar.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w+z2cFeOAL3VSY/Awj6Tc5SS0w4=
+			OjL/6AKgF+b/a710QXMaClLm23U=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/Accessibility.strings</key>
+		<key>ar.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R00nk0JJO9Gh4cqbEQHJAfHS57E=
+			MuhlUlhgxtaV8aQ7n60xRKmJNUA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/Accessibility.strings</key>
+		<key>ca.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ITRqMuBXzQZBO1ABz/YLXD9asA=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/Accessibility.strings</key>
+		<key>ca.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ITRqMuBXzQZBO1ABz/YLXD9asA=
+			vVWrNgvJpQUH7Tp9COBFZo4Ak50=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/Accessibility.strings</key>
+		<key>ca.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TFspxnoAXKxbhLfm2wHUjJvTb5M=
+			Ph84oSRewWW+VCBrdFVLOEv7dhg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/Accessibility.strings</key>
+		<key>ca.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K+l+clcwNgRFdTdYhcd6L9858xI=
+			U9ZW3ieWjycCgBh/JHWK0NUGCHg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/Accessibility.strings</key>
+		<key>ca.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UqOyspMLbDi5s3i13GOaPYyDIE8=
+			U20yDWakWr34O5Zcd5jyjpobvXQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/Accessibility.strings</key>
+		<key>cs.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			syV/a4rR4VPjTl/d/0o7vgv8V5c=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/Accessibility.strings</key>
+		<key>cs.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vt5PeSoAKtf8PCvULaIXkp+aeko=
+			5uE2SL0Wf7Q7sySdGWxyYcMzQOs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/Accessibility.strings</key>
+		<key>cs.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B9zQIAloul6vpdkyXjUuhM8BjyU=
+			xs2GBkgRDov7st3/ZwZph14ZTZc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/Accessibility.strings</key>
+		<key>cs.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2+eTErUfJbkT2YCRyJeHjYnRI94=
+			TaVujlbIVUm7K679yoaFZ1q2tqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/Accessibility.strings</key>
+		<key>cs.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/kSlx+5i3jkIlIxoThOJ9D7qsO8=
+			WeXEJCCx/MncUW5u3V5yrJO81N8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/Accessibility.strings</key>
+		<key>da.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ztwOFs0kKvrzngUUsnUfmkqWdKM=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/Accessibility.strings</key>
+		<key>da.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NVl3kCEzSz6339+0VB8jzALTiOQ=
+			NZjMJsenS10ah3U/wcFFctAc9qU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/Accessibility.strings</key>
+		<key>da.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2xRWZjsOXxwuygtu5E8gw61etF0=
+			LE/cQLG8Oc/jBjS+pdDs/t+1/WU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/Accessibility.strings</key>
+		<key>da.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wGqmVGMZKL5CMyfAs7dYAgsGTMI=
+			FF4vW3ulSpLz5UVJLCSxc6Zhwn0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/Accessibility.strings</key>
+		<key>da.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hA8xutuabRzhNqKPZOJ0rq7WlX0=
+			7KTE0zFBBAQ174CPixxE4kOc1/w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/Accessibility.strings</key>
+		<key>el.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lYuWwY89jB/UjJbgbQSNiiIt9LE=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/Accessibility.strings</key>
+		<key>el.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HYSby6Cj3dWVOKg3Huo1XDKfel0=
+			/VQnhXMvyJiRHQZ+h3+4eyY5Eg8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/Accessibility.strings</key>
+		<key>el.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CzQCdi8CiKhAYgJZP8P84zb3amM=
+			U63qJodv/RjTzWx4s8lE77P7DPE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/Accessibility.strings</key>
+		<key>el.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hdmIkYXiSUXtxYiGJtSm+R75Qt8=
+			NErSToiaynRFCYFiaH8sY7kjkX8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/Accessibility.strings</key>
+		<key>el.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y31ierNj31aNFKCaytQYa9bsh2M=
+			ab0/qPddiP+Gyk92BmUhjNyUOaA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bdOXAcrSQ4laYIi6ShpaP3XA254=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/GeneralAccessibility.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			udNm5ggKUMpW+G1D25l8kYac3Co=
+			qZMYuRXCjOZTx0rd5CxaZkk6t7w=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>vi.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/GeneralAccessibility.stringsdict</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sjyr1dXwO8LHnYgGthgVN8Bt+UY=
+			uV6i+gkyzJ88uNb5zj6ysBh8OxI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/SwitchControl-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U4jLCPjp1TEb9NotaGMYYqH8KNc=
+			W2u7UbdvAnNsjTz6BbT8ZyuT9Fg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/Accessibility.strings</key>
+		<key>en_AU.lproj/SwitchControl.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3IPUAT01hy/kKi0fY5sSPb//yQQ=
+			JOnnBd/O4G8OLKYfRfbdozFp56Q=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/Accessibility.strings</key>
+		<key>en_GB.lproj/GeneralAccessibility-iOS.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VcVW/9E0s3sxOqLaSryewpp4G2s=
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qZMYuRXCjOZTx0rd5CxaZkk6t7w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uV6i+gkyzJ88uNb5zj6ysBh8OxI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OdnZC9cV36Z+DyA5Q1cuxizAX8c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gv0G/DKRbWBvNLLIZu838eSvg4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wBbvSblR+QJecJfC78+uCZ+mR/I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RX50vnusPyAaH8tpl39/meiUTys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DgmnH/vR/Ej/mUuSBFc2MtiEYjE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ks7T0/CH/PcEo4ITBewtQrKOPDw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g+FKN7y2YU2b8eKCCMx/P9+5utE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FcY7TeqW0HxwIskeeSivqweXQu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nJpQ+7peIdyCVciQbYLBaJ+Mjs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k5OOzgtG9TAKlKlMFQLtUw3PIBY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gItXYL1pDiCvxKdi6rF8mqq7h9I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FCJJm8NGSVkrHQC+pfhjBKaE08o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTI91RtRCFWbdd2wCt0piN1HIIY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ONM/xpIEBw9ttGU/I4O7xDoF5OU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hPx1wJG+b3gY8uIK/8IhxpeAO80=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o+VKZCE7xSqzXtf1ZEr9zftsAPc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+v6rbiEM+lrN/uOxFCHFzG/mmkQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zPz6lGed28Wv/yTDHxfh1myKA40=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVwYrdc7Mp8O+wS8ubXQsfhHi4E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gTE8b2QpUoF92S3gRlXeEeqzNSI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			goQBSTl9yosXo8QA90qYlYpLl50=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cwh3uPYQh6qX5biFdzcApBNJHx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D2a+Gc8ttnfPBORxVw4CpoRCpYw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Txv+k+dnXAMLSGetN8FBNbuqp6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yk++qWMMqB6ePvPi7OQL9PogOVU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cnSxB+e07lUZ4FqyFdiXcXGMkaA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pA16OEBn1p9vnaQuKTtEBu0kKCo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6MN451mjcD0Yx6txW6swyXwNcqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dEgmWdSB9Ast9Olm6TVsuDP2z6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zUjyNyo2A36If9AmOaH9cY16qMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WYnymWdFFHt2aH2lQHwbVctpUrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0MKy5Z0SExYoqJHXWhyGkkjPzao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FVTcnRa8cEVAuwqYTbF1z1IRJQ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0SotccQGJJUcVoSEuRqBhgPeUpk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LS338oe/tEh8RCNqRh1hKjxOiVA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d0H/q+F6YPK5d3qsSOSxqU6+kUQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nds/bJTKa20C0CBV0kSJTI76vNI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5BtiDGWV+Cl+cuBxI9AtTiIsRVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LenY29GVXfmkvYYQr6fARztqPb4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mYy0MRLXoiz5VsC9W+m+D+g1/Fg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PhBaAOAD32uruHSOjmWur5pR+AU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XK6tIbZu23hMCPU1ucfetAGDs10=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WjgoOGiJyw/HJ+WSFhgAuy8f6p4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c4Vb/bNWJdRvO2rsA5dmOVmig8E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d58iozV0sNN6Pnki7/AfOFyb3W4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aV6GUNa3h5Q1vmSGeIQEroZU6/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUQsP2OMt3PijV5NuwDSMmaJrD4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0nyO1mZXZRxX6Uv25gRfO2e9Frg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ltZZKBoddo7O1E2ooyFAu0kmCv0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XGjQyaZgb+dWRyYnQd+7yIg3sHY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YWWhcM7t5YhlBL1StQ3yuXd2sUQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZiL68I9qok4vNORJrYSPsfFkXd0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zEPnPJSRfiTOb36PoZugUD6Y4hc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			935gWarsX4DFBdSGgndbUr1OsW0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iQ/1Jgbn9T2oaz1/Z3Dw7lYgicQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TpLv7J3nPPWTCcOjo/Gh9733eJg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PwwUg6NQqSrfMZ/bbkNjmdw6hmM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PfXqg8h/tyNC2pLWmaEN9oPX47I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EnAFaVpq/vNUd/eczmpg+uSBhRI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZUYWUeFRrr4mOiMzgyzOJNnra7I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G+QV1xLPqwI9AvguI8SKw9YrBzI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwTw5VTY5ymieVYoZqkud7gybZ0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y0L+sjIdZ+z2/9P/MsEkt8wxdE0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jr77cLKyiOrLV+P3/X/PuKjTvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V1TsdlT/m/48Ba7jQUUjR+YQ8yE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vv5mhD4JiW8Fktaegb6UxA0aEUE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FvIluuzGxH2pL6MRFRzLLG2lgFQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dN+V06D2PZOcqjlXOQFh65bmGlA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vcVGTJeIl3dudBlUtjIS040uncI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lDk0oSv7wztTcAybp6zrif+CkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jWfr567PSPvweToFvHeAUz5S044=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XXmKpTFlyQHHPrk6qZwCFtl8kv0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NtGbvFvEmkzSxLN9PxcpOWd6kAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AzEBMnSYxxmKLtUEc5syxm8IBtw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sTnAUQM2diFzXVw6ZSBmMfMl0UI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T+Eg0t3fHHgVS0xuTvWwEVBea/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E1N5o1T30+2P7xD2OZUfIG8fU5k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qcAFBqeaylXLWxFCI0FA+9Rgmpc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pPQvG+DDHfsxFV8Yh32n2bW89qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Hg6JeyDHb2JgJ6otuQ7C9qs8rVc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u3K9G219yYNF1otLGvw8WBiDcrE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j5nH5RRlRkhyLF1FGkex/twf0pI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqNbtEoe2uss5rdkLh2J8Npb1F0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3vI/TJtsxhh+FZD1CiAg4vBmpHA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L4QqTQ/HWRuxwTHbwESKsoWunJo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2q5JKHJX6XisCseiVw7dxvw2BpQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ob3gxjBg6z+YsIiCS5o5EpPaAiE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lCY8DtUxRxjgNQElZxZRi2qh1Wg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q7I7o+ID8D1dWDP8tNJ+mC1/JeI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i36+lIzLB56nZUtIbNGkjAbCi2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			00Sr3pidL8ScBg3QKw4P8fRJ1hI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R24FyCfJAqT4YwylhYM72ViutUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ktrE7VUZYBzm/3Rvx+3h953I1kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n6LiAFNo8fuvq/EGwzdWEdOPjNs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GeneralAccessibility-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GeneralAccessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xmL5bzvlp3XpuirYC5VEMNVl7aI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GeneralAccessibility.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9VMhrIYh4hxh3CQSAeifnhUIEVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SwitchControl-iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6Wyvhtzh9wZ00JgCIKlT9DY+vGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SwitchControl.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			04+xgzp2Ab5cf9Hs3AppG8Fogak=
 			</data>
 			<key>optional</key>
 			<true/>

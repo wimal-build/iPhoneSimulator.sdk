@@ -1,0 +1,219 @@
+/*
+
+TraceSchema.sqlite
+Maps
+
+Created by Brady Law on 12/22/11.
+Copyright (c) 2011 Apple, Inc. All rights reserved.
+
+--
+
+Schema for saving Navigation session ("trace") data.
+
+If you make a change to the schema, you MUST create a migrator from the previous version
+and change TRACE_CURRENT_VERSION.
+The migrator must be named [FromVersion].migrator.sqlite and added as a Maps resource.
+
+*/
+
+CREATE TABLE info
+(
+name                    TEXT,
+version                 INTEGER NOT NULL,
+maps_version            TEXT,
+mapkit_version          TEXT,
+geoservices_version     TEXT,
+vectorkit_version       TEXT,
+protocolbuffer_version  TEXT,
+start_time              INTEGER,
+end_time                INTEGER,
+start_data              BLOB,               -- PB serialized SearchResultRepr
+end_data                BLOB,               -- PB serialized SearchResultRepr
+simulation              INTEGER,
+route_genius            INTEGER,
+cl_mapmatch             INTEGER,            -- Whether CL MapMatching is enabled
+original_version        INTEGER,
+initial_course          NUMERIC,
+directions_url          TEXT
+);
+
+CREATE TABLE debug_settings
+(
+setting_name        TEXT,
+setting_value       TEXT
+);
+
+CREATE TABLE audio_settings
+(
+db_timestamp        NUMERIC NOT NULL,
+pause_spoken_audio  INTEGER,
+volume_setting      INTEGER
+);
+
+CREATE TABLE stylesheets
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+stylesheet_name     TEXT,
+stylesheet_data     BLOB
+);
+        
+CREATE TABLE locations
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+db_timestamp        NUMERIC NOT NULL,
+cl_timestamp        NUMERIC,
+latitude            NUMERIC,
+longitude           NUMERIC,
+raw_latitude        NUMERIC,
+raw_longitude       NUMERIC,
+horizontal_accuracy NUMERIC,
+vertical_accuracy   NUMERIC,
+altitude            NUMERIC,
+speed               NUMERIC,
+speed_accuracy      NUMERIC,
+course              NUMERIC,
+raw_course          NUMERIC,
+course_accuracy     NUMERIC,
+type                INTEGER,
+error_data          BLOB,           -- PB Serialized NSError
+event_type          INTEGER,
+corrected_latitude  NUMERIC,
+corrected_longitude NUMERIC,
+corrected_course    NUMERIC,
+match_type          NUMERIC,
+active_transport_type INTEGER DEFAULT 4, -- default is the unknown transport type
+match_info_quality      INTEGER,
+match_info_latitude     NUMERIC,
+match_info_longitude    NUMERIC,
+match_info_course       NUMERIC,
+match_info_form_of_way  INTEGER,
+match_info_road_class   INTEGER,
+match_info_shifted      INTEGER
+);
+
+CREATE TABLE location_match_info
+(
+location_id                     INTEGER REFERENCES locations(id),
+route_coordinate                NUMERIC,
+step_index                      INTEGER,
+form_of_way                     INTEGER,
+route_match_score               NUMERIC,
+distance_from_route             NUMERIC,
+max_route_distance              NUMERIC,
+route_distance_match_score      NUMERIC,
+route_distance_weight           NUMERIC,
+route_course_delta              NUMERIC,
+max_route_course_delta          NUMERIC,
+route_course_match_score        NUMERIC,
+route_course_weight             NUMERIC,
+road_width_on_route             NUMERIC,
+distance_from_road              NUMERIC,
+road_course_delta               NUMERIC,
+distance_from_nearest_junction  NUMERIC
+);
+
+CREATE TABLE directions
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+request_timestamp   NUMERIC NOT NULL,
+response_timestamp  NUMERIC,
+request_data        BLOB NOT NULL,      -- PB Serialized GEODirectionsRequest
+response_data       BLOB,               -- PB Serialized GEODirectionsResponse
+response_error_data BLOB,               -- PB Serialized NSError
+transport_type      NUMERIC NOT NULL,   -- GEOTransportType
+waypoints_data      BLOB                -- NSArray of GEOComposedWaypoints
+);
+
+CREATE TABLE likely_routes
+(
+request_data        BLOB NOT NULL,  -- PB Serialized GEODirectionsRequest
+response_data       BLOB NOT NULL,  -- PB Serialized GEODirectionsResponse
+waypoints_data      BLOB NOT NULL   -- NSArray of GEOComposedWaypoints
+);
+
+CREATE TABLE bookmarks
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp           NUMERIC NOT NULL,
+screenshot_data     BLOB            -- PNG screenshot
+);
+
+CREATE TABLE route_selections
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp_start     NUMERIC NOT NULL,
+timestamp_end       NUMERIC,
+directions_id       INTEGER NOT NULL,
+route_id            BLOB,
+selected_route_index INTEGER
+);
+
+CREATE TABLE eta_traffic_updates
+(
+id                      INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+request_timestamp       NUMERIC NOT NULL,
+response_timestamp      NUMERIC,
+request_data            BLOB NOT NULL,  -- PB Serialized
+response_data           BLOB,           -- PB Serialized
+response_error_data     BLOB,           -- PB Serialized NSError
+destination_name        TEXT,
+dodgeball_alert_type    NUMERIC         -- 0 = Blockage, 1 = Incident, 2 = Reroute, blank = None
+);
+
+CREATE TABLE vehicle_speed_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+speed               NUMERIC NOT NULL
+);
+
+CREATE TABLE vehicle_heading_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+heading             NUMERIC NOT NULL
+);
+
+CREATE TABLE motion_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+type                INTEGER,
+exit_type           INTEGER,
+confidence          INTEGER
+);
+
+CREATE TABLE compass_heading_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+true_heading        NUMERIC,
+magnetic_heading    NUMERIC,
+accuracy            NUMERIC
+);
+
+CREATE TABLE route_leg_guidance
+(
+id                              INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp_start                 NUMERIC NOT NULL,
+timestamp_end                   NUMERIC,
+leg_type                        INTEGER,
+leg_start_location_latitude     NUMERIC,
+leg_start_location_longitude    NUMERIC
+);
+
+CREATE TABLE guidance_events
+(
+id                              INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp                       NUMERIC NOT NULL,
+event_type                      INTEGER,
+announcement_stage              INTEGER,
+event_description               TEXT
+);
+
+CREATE TABLE significant_events
+(
+event			NUMERIC NOT NULL,							-- Event types define in MNTraceSignificantEvent.h
+timestamp		NUMERIC NOT NULL,							-- Absolute timestamp
+data			BLOB										-- Serialized NSDictionary of important data related to event
+);

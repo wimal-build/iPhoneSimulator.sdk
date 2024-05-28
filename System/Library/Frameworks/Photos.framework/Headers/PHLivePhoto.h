@@ -8,20 +8,22 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import <Photos/PhotosDefines.h>
+
 #import "PhotosTypes.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef int32_t PHLivePhotoRequestID NS_AVAILABLE_IOS(9_1);
+typedef int32_t PHLivePhotoRequestID PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0);
 static const PHLivePhotoRequestID PHLivePhotoRequestIDInvalid = 0;
 
 /// These keys may be found in the info dictionary delivered to a live photo request result handler block.
-extern NSString * const PHLivePhotoInfoErrorKey NS_AVAILABLE_IOS(9_1); // key : NSError decribing an error that has occurred while creating the live photo
-extern NSString * const PHLivePhotoInfoIsDegradedKey NS_AVAILABLE_IOS(9_1); // key : NSNumber containing a BOOL, YES whenever the deivered live photo object does not contain all content required for full playback.
-extern NSString * const PHLivePhotoInfoCancelledKey NS_AVAILABLE_IOS(9_1); // key : NSNumber containing a BOOL, YES when the result handler is being called after the request has been cancelled.
+extern NSString * const PHLivePhotoInfoErrorKey PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0); // key : NSError decribing an error that has occurred while creating the live photo
+extern NSString * const PHLivePhotoInfoIsDegradedKey PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0); // key : NSNumber containing a BOOL, YES whenever the deivered live photo object does not contain all content required for full playback.
+extern NSString * const PHLivePhotoInfoCancelledKey PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0); // key : NSNumber containing a BOOL, YES when the result handler is being called after the request has been cancelled.
 
 
-NS_CLASS_AVAILABLE_IOS(9_1)
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_1, 10_0)
 @interface PHLivePhoto : NSObject <NSCopying, NSSecureCoding>
 
 /// The dimensions of the live photo measured in pixels.

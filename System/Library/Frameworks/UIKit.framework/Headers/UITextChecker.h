@@ -2,7 +2,7 @@
 //  UITextChecker.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -19,15 +19,19 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextChecker : NSObject
 - (NSRange)rangeOfMisspelledWordInString:(NSString *)stringToCheck range:(NSRange)range startingAt:(NSInteger)startingOffset wrap:(BOOL)wrapFlag language:(NSString *)language;
 
 /* Returns an array of strings, in the order in which they should be presented, representing guesses for words that might have been intended in place of the misspelled word at the given range in the given string. */
-- (nullable NSArray *)guessesForWordRange:(NSRange)range inString:(NSString *)string language:(NSString *)language;
+- (nullable NSArray<NSString *> *)guessesForWordRange:(NSRange)range inString:(NSString *)string language:(NSString *)language;
 
 /* Returns an array of strings, in the order in which they should be presented, representing complete words that the user might be trying to type when starting by typing the partial word at the given range in the given string. */
-- (nullable NSArray *)completionsForPartialWordRange:(NSRange)range inString:(nullable NSString *)string language:(NSString *)language;
+- (nullable NSArray<NSString *> *)completionsForPartialWordRange:(NSRange)range inString:(NSString *)string language:(NSString *)language;
 
 /* Methods for dealing with ignored words. */
 - (void)ignoreWord:(NSString *)wordToIgnore;
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, strong, nullable) NSArray<NSString *> *ignoredWords;
+#else
 - (nullable NSArray *)ignoredWords;
 - (void)setIgnoredWords:(nullable NSArray *)words;
+#endif
 
 /* These allow clients to programmatically instruct the checker to learn and unlearn words, and to determine whether a word has been learned (and hence can potentially be unlearned). */
 + (void)learnWord:(NSString *)word;
@@ -35,7 +39,11 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextChecker : NSObject
 + (void)unlearnWord:(NSString *)word;
 
 /* Entries in the availableLanguages list are all available spellchecking languages in user preference order, usually language abbreviations such as en_US. */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) NSArray<NSString *> *availableLanguages;
+#else
 + (NSArray *)availableLanguages;
+#endif
 
 @end
 

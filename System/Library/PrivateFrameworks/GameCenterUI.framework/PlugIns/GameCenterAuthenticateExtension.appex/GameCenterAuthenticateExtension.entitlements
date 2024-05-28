@@ -41,6 +41,8 @@
 	<array>
 		<string>com.apple.ak.auth.xpc</string>
 		<string>com.apple.hsa-authentication-server</string>
+        <string>com.apple.cdp.daemon</string>
+        <string>com.apple.mobile.keybagd.xpc</string>
 	</array>
 	<key>com.apple.itunesstored.private</key>
 	<true/>

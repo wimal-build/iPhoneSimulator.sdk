@@ -1,0 +1,422 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "025B653D-9229-4A30-87FD-827AEFA7CC71"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "food",
+          "entertainment"
+        ]
+      },
+      "uuid" : "B1E62808-F112-4E5F-B697-7A41592F39A4"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 17,
+          "month" : 3
+        }
+      ],
+      "name" : "St. Patrick’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "culture",
+          "entertainment",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "766A6CD5-3D0F-4584-9F37-4486BCBB2A81"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 22,
+          "month" : 4
+        }
+      ],
+      "name" : "Earth Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 2}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "beach",
+          "mountain",
+          "nature",
+          "water"
+        ]
+      },
+      "uuid" : "17F6398D-7277-41BF-80B5-E1D2D121F7ED"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "restaurant",
+          "nightlife"
+        ]
+      },
+      "uuid" : "5176EE13-5F1D-4D60-814F-6F70F18D31DF"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 5,
+          "year" : 2010
+        },
+        {
+          "day" : 23,
+          "month" : 5,
+          "year" : 2011
+        },
+        {
+          "day" : 21,
+          "month" : 5,
+          "year" : 2012
+        },
+        {
+          "day" : 20,
+          "month" : 5,
+          "year" : 2013
+        },
+        {
+          "day" : 19,
+          "month" : 5,
+          "year" : 2014
+        },
+        {
+          "day" : 18,
+          "month" : 5,
+          "year" : 2015
+        },
+        {
+          "day" : 23,
+          "month" : 5,
+          "year" : 2016
+        },
+        {
+          "day" : 22,
+          "month" : 5,
+          "year" : 2017
+        },
+        {
+          "day" : 21,
+          "month" : 5,
+          "year" : 2018
+        },
+        {
+          "day" : 20,
+          "month" : 5,
+          "year" : 2019
+        },
+        {
+          "day" : 18,
+          "month" : 5,
+          "year" : 2020
+        }
+      ],
+      "name" : "Victoria Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "DC7A8BF4-B058-4794-8AC6-083FAE84EED9"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant"
+        ]
+      },
+      "uuid" : "6236BECD-C19C-4088-988B-487227102E82"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 6
+        }
+      ],
+      "name" : "Saint-Jean-Baptiste Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "entertainment"
+        ]
+      },
+      "uuid" : "A40BF394-17DA-469B-8998-DD6C525A3039"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 7
+        }
+      ],
+      "name" : "Canada Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "0B4EE71E-9C72-450B-A4F7-50AD97C20A47"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 9,
+          "weekday" : 2,
+          "weekdayOrdinal" : 1
+        }
+      ],
+      "name" : "Labour Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "entertainment"
+        ]
+      },
+      "uuid" : "6991A942-33EC-47B0-A0A1-C23271534759"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 10,
+          "weekday" : 2,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Thanksgiving",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "entertainment",
+          "food"
+        ]
+      },
+      "uuid" : "EAEB843F-2B8D-4BF0-84C7-7EF31B21A667"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture"
+        ]
+      },
+      "uuid" : "C8C77CAE-888A-435D-8214-0A020A403AB6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 11,
+          "month" : 11
+        }
+      ],
+      "name" : "Remembrance Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "culture"
+        ]
+      },
+      "uuid" : "874C3ADF-636A-4F13-A1FF-6EFEB611A3DB"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "BFDB277B-0F06-4BCD-B366-032C88035111"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "97577DDC-65E3-4748-8482-929D917326F5"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "ca",
+    "countryName" : "Canada"
+  }
+}

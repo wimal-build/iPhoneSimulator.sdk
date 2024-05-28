@@ -2,7 +2,7 @@
 //  UIAccessibilityElement.h
 //  UIAccessibility
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -32,6 +32,10 @@ NS_CLASS_AVAILABLE_IOS(3_0) @interface UIAccessibilityElement : NSObject<UIAcces
 @property (nullable, nonatomic, strong) NSString *accessibilityValue;
 @property (nonatomic, assign) CGRect accessibilityFrame;
 @property (nonatomic, assign) UIAccessibilityTraits accessibilityTraits;
+
+// When set, -[UIAccessibilityElement accessibilityFrame] will automatically adjust for the container's frame.
+// This can be useful when the element is a descendant of a scroll view, for instance.
+@property (nonatomic, assign) CGRect accessibilityFrameInContainerSpace NS_AVAILABLE_IOS(10_0);
 
 @end
 

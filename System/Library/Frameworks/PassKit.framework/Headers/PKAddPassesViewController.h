@@ -5,6 +5,8 @@
 //  Copyright (c) 2011 Apple, Inc. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE
+
 #import <UIKit/UIKit.h>
 
 @class PKPass;
@@ -17,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)addPassesViewControllerDidFinish:(PKAddPassesViewController *)controller; // delegate should dismiss presentation
 @end
 
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE_IOS(6_0)
 @interface PKAddPassesViewController : UIViewController
 
 /* controller should be presented with -presentViewController:animated:completion:
@@ -32,3 +34,5 @@ NS_CLASS_AVAILABLE(NA, 6_0)
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

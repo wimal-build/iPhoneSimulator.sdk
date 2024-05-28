@@ -6,13 +6,11 @@
 //
 
 #import <HealthKit/HKDefines.h>
+#import <HealthKit/HKCharacteristicObjects.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class HKBiologicalSexObject;
-@class HKBloodTypeObject;
 @class HKDevice;
-@class HKFitzpatrickSkinTypeObject;
 @class HKObject;
 @class HKObjectType;
 @class HKQuantity;
@@ -24,13 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 @class HKSourceRevision;
 @class HKUnit;
 @class HKWorkout;
+@class HKWorkoutConfiguration;
 @class HKWorkoutSession;
 
 /*!
  @class         HKHealthStore
  @abstract      The HKHealthStore class provides an interface for accessing and storing the user's health data.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKHealthStore : NSObject
 
 /*!
@@ -62,12 +61,12 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                 granted authorization.
  
                 To customize the messages displayed on the authorization sheet, set the following keys in your app's
-                Info.plist file. Set the NSHealthShareUsageDescription key to customize the message for reading data. Set
-                the NSHealthUpdateUsageDescription key to customize the message for writing data.
+                Info.plist file. Set the NSHealthShareUsageDescription key to customize the message for reading data.
+                Set the NSHealthUpdateUsageDescription key to customize the message for writing data.
  */
 - (void)requestAuthorizationToShareTypes:(nullable NSSet<HKSampleType *> *)typesToShare
                                readTypes:(nullable NSSet<HKObjectType *> *)typesToRead
-                              completion:(void (^)(BOOL success, NSError * __nullable error))completion;
+                              completion:(void (^)(BOOL success, NSError * _Nullable error))completion;
 
 /*!
  @method        handleAuthorizationForExtensionWithCompletion:
@@ -81,15 +80,15 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                 the user, if necessary, completed successfully and was not cancelled by the user.  It does NOT indicate
                 whether the application was granted authorization.
  */
-- (void)handleAuthorizationForExtensionWithCompletion:(void (^)(BOOL success, NSError * __nullable error))completion NS_AVAILABLE_IOS(9_0) __WATCHOS_UNAVAILABLE NS_EXTENSION_UNAVAILABLE("Not available to extensions") ;
+- (void)handleAuthorizationForExtensionWithCompletion:(void (^)(BOOL success, NSError * _Nullable error))completion HK_AVAILABLE_IOS_ONLY(9_0) NS_EXTENSION_UNAVAILABLE("Not available to extensions") ;
 
 /*!
  @method        earliestPermittedSampleDate
  @abstract      Samples prior to the earliestPermittedSampleDate cannot be saved or queried.
  @discussion    On some platforms, only samples with end dates newer than the value returned by earliestPermittedSampleDate
-                may be saved or retreived.
+                may be saved or retrieved.
  */
-- (NSDate *)earliestPermittedSampleDate NS_AVAILABLE_IOS(9_0);
+- (NSDate *)earliestPermittedSampleDate HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method        saveObject:withCompletion:
@@ -107,21 +106,21 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                 This operation is performed asynchronously and the completion will be executed on an arbitrary
                 background queue.
  */
-- (void)saveObject:(HKObject *)object withCompletion:(void(^)(BOOL success, NSError * __nullable error))completion;
+- (void)saveObject:(HKObject *)object withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion;
 
 /*!
  @method        saveObjects:withCompletion:
  @abstract      Saves an array of HKObjects.
  @discussion    See discussion of saveObject:withCompletion:.
  */
-- (void)saveObjects:(NSArray<HKObject *> *)objects withCompletion:(void(^)(BOOL success, NSError * __nullable error))completion;
+- (void)saveObjects:(NSArray<HKObject *> *)objects withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion;
 
 /*!
  @method        deleteObject:withCompletion:
  @abstract      Deletes a single HKObject from the HealthKit database.
  @discussion    See deleteObjects:withCompletion:.
  */
-- (void)deleteObject:(HKObject *)object withCompletion:(void(^)(BOOL success, NSError * __nullable error))completion;
+- (void)deleteObject:(HKObject *)object withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion;
 
 /*!
  @method        deleteObjects:withCompletion:
@@ -129,7 +128,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @discussion    An application may only delete objects that it previously saved.  This operation is performed
                 asynchronously and the completion will be executed on an arbitrary background queue.
  */
-- (void)deleteObjects:(NSArray<HKObject *> *)objects withCompletion:(void(^)(BOOL success, NSError * __nullable error))completion NS_AVAILABLE_IOS(9_0);
+- (void)deleteObjects:(NSArray<HKObject *> *)objects withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method        deleteObjectsOfType:predicate:withCompletion:
@@ -137,17 +136,21 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @discussion    An application may only delete objects that it previously saved.  This operation is performed
                 asynchronously and the completion will be executed on an arbitrary background queue.
  */
-- (void)deleteObjectsOfType:(HKObjectType *)objectType predicate:(NSPredicate *)predicate withCompletion:(void(^)(BOOL success, NSUInteger deletedObjectCount, NSError * __nullable error))completion NS_AVAILABLE_IOS(9_0);
+- (void)deleteObjectsOfType:(HKObjectType *)objectType predicate:(NSPredicate *)predicate withCompletion:(void(^)(BOOL success, NSUInteger deletedObjectCount, NSError * _Nullable error))completion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method        executeQuery:
  @abstract      Begins executing the given query.
- @discussion    After executing a query the completion, update, and/or results handlers of that query will be invoked
+ @discussion    After executing a query, the completion, update, and/or results handlers of that query will be invoked
                 asynchronously on an arbitrary background queue as results become available.  Errors that prevent a
                 query from executing will be delivered to one of the query's handlers.  Which handler the error will be
-                delivered to is defined by the HKQuery subclass.  The behavior of calling this method with a query that
-                is already executing is undefined.  If a query would retrieve objects with an HKObjectType property,
-                then the application must request authorization to access objects of that type before executing the query.
+                delivered to is defined by the HKQuery subclass.  
+ 
+                Each HKQuery instance may only be executed once and calling this method with a currently executing query
+                or one that was previously executed will result in an exception.
+                
+                If a query would retrieve objects with an HKObjectType property, then the application must request
+                authorization to access objects of that type before executing the query.
  */
 - (void)executeQuery:(HKQuery *)query;
 
@@ -170,15 +173,17 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 - (void)splitTotalEnergy:(HKQuantity *)totalEnergy
                startDate:(NSDate *)startDate
                  endDate:(NSDate *)endDate
-          resultsHandler:(void(^)(HKQuantity * __nullable restingEnergy, HKQuantity * __nullable activeEnergy, NSError * __nullable error))resultsHandler NS_AVAILABLE_IOS(9_0);
+          resultsHandler:(void(^)(HKQuantity * _Nullable restingEnergy, HKQuantity * _Nullable activeEnergy, NSError * _Nullable error))resultsHandler HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+
+- (nullable NSDate *)dateOfBirthWithError:(NSError **)error NS_DEPRECATED_IOS(8_0, 10_0, "Use dateOfBirthComponentsWithError:") __WATCHOS_DEPRECATED(2_0, 3_0, "Use dateOfBirthComponentsWithError:");
 
 /*!
- @method        dateOfBirthWithError:
- @abstract      Returns the user's date of birth.
+ @method        dateOfBirthComponentsWithError:
+ @abstract      Returns the user's date of birth in the Gregorian calendar.
  @discussion    Before calling this method, the application should request authorization to access objects with the
                 HKCharacteristicType identified by HKCharacteristicTypeIdentifierDateOfBirth.
  */
-- (nullable NSDate *)dateOfBirthWithError:(NSError **)error;
+- (nullable NSDateComponents *)dateOfBirthComponentsWithError:(NSError **)error HK_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
 
 /*!
  @method        biologicalSexWithError:
@@ -202,7 +207,15 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @discussion    Before calling this method, the application should request authorization to access objects with the
                 HKCharacteristicType identified by HKCharacteristicTypeIdentifierFitzpatrickSkinType.
  */
-- (nullable HKFitzpatrickSkinTypeObject *)fitzpatrickSkinTypeWithError:(NSError **)error NS_AVAILABLE_IOS(9_0);
+- (nullable HKFitzpatrickSkinTypeObject *)fitzpatrickSkinTypeWithError:(NSError **)error HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+
+/*!
+ @method        wheelchairUseWithError:
+ @abstract      Returns an object encapsulating the user's wheelchair use.
+ @discussion    Before calling this method, the application should request authorization to access objects with the
+                HKCharacteristicType identified by HKCharacteristicTypeIdentifierWheelchairUse.
+ */
+- (nullable HKWheelchairUseObject *)wheelchairUseWithError:(NSError **)error HK_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
 
 @end
 
@@ -217,7 +230,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  
                 The workout provided must be one that has already been saved to HealthKit.
  */
-- (void)addSamples:(NSArray<HKSample *> *)samples toWorkout:(HKWorkout *)workout completion:(void(^)(BOOL success, NSError * __nullable error))completion;
+- (void)addSamples:(NSArray<HKSample *> *)samples toWorkout:(HKWorkout *)workout completion:(void(^)(BOOL success, NSError * _Nullable error))completion;
 
 /*!
  @method        startWorkoutSession:
@@ -236,6 +249,34 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  */
 - (void)endWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(2_0);
 
+/*!
+ @method        pauseWorkoutSession:
+ @abstract      Pauses the given workout session.
+ @discussion    This method will pause the given session if it is currently running. The state of the workout session
+                will transition to HKWorkoutSessionStatePaused. An HKWorkoutEventTypePause will be generated and
+                delivered to the workout session's delegate.
+ */
+- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(3_0);
+
+/*!
+ @method        resumeWorkoutSession:
+ @abstract      Resumes the given workout session.
+ @discussion    This method will resume the given session if it is currently paused. The state of the workout session
+                will transition to HKWorkoutSessionStateRunning. An HKWorkoutEventTypeResume will be generated and
+                delivered to the workout session's delegate.
+ */
+- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(3_0);
+
+/*!
+ @method        startWatchAppWithWorkoutConfiguration:completion:
+ @abstract      Launches or wakes up the WatchKit app on the watch
+ @discussion    This method will launch the WatchKit app corresponding to the calling iOS application on the currently
+                active Apple Watch. After launching, the handleWorkoutConfiguration: method on the WKExtensionDelegate
+                protocol will be called with the HKWorkoutConfiguration as a parameter. The receiving Watch app can use
+                this configuration object to create an HKWorkoutSession and start it with -startWorkoutSession:.
+ */
+- (void)startWatchAppWithWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration completion:(void (^)(BOOL success, NSError * _Nullable error))completion HK_AVAILABLE_IOS_ONLY(10_0);
+
 @end
 
 
@@ -250,11 +291,11 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                 HKQuantityTypeIdentifierStepCount) have a minimum frequency of HKUpdateFrequencyHourly. This is enforced
                 transparently to the caller.
  */
-- (void)enableBackgroundDeliveryForType:(HKObjectType *)type frequency:(HKUpdateFrequency)frequency withCompletion:(void(^)(BOOL success, NSError * __nullable error))completion __WATCHOS_UNAVAILABLE;
+- (void)enableBackgroundDeliveryForType:(HKObjectType *)type frequency:(HKUpdateFrequency)frequency withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_UNAVAILABLE;
 
-- (void)disableBackgroundDeliveryForType:(HKObjectType *)type withCompletion:(void(^)(BOOL success, NSError * __nullable error))completion __WATCHOS_UNAVAILABLE;
+- (void)disableBackgroundDeliveryForType:(HKObjectType *)type withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_UNAVAILABLE;
 
-- (void)disableAllBackgroundDeliveryWithCompletion:(void(^)(BOOL success, NSError * __nullable error))completion __WATCHOS_UNAVAILABLE;
+- (void)disableAllBackgroundDeliveryWithCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_UNAVAILABLE;
 
 @end
 
@@ -266,7 +307,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                 notification when this occurs, it is necessary to provide an HKHealthStore instance for the object
                 parameter of NSNotificationCenter's addObserver methods.
  */
-HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification NS_AVAILABLE_IOS(8_2);
+HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification HK_AVAILABLE_IOS_WATCHOS(8_2, 2_0);
 
 @interface HKHealthStore (HKUserPreferences)
 
@@ -284,40 +325,7 @@ HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification NS_AVAILABLE_I
  
                 The returned dictionary will map HKQuantityType to HKUnit.
  */
-- (void)preferredUnitsForQuantityTypes:(NSSet<HKQuantityType *> *)quantityTypes completion:(void(^)(NSDictionary<HKQuantityType*, HKUnit *> *preferredUnits, NSError * __nullable error))completion NS_AVAILABLE_IOS(8_2);
-
-@end
-
-/*!
- @class     HKBiologicalSexObject
- @abstract  A wrapper object for HKBiologicalSex enumeration.
- */
-HK_CLASS_AVAILABLE_IOS(8_0)
-@interface HKBiologicalSexObject : NSObject <NSCopying, NSSecureCoding>
-
-@property (readonly) HKBiologicalSex biologicalSex;
-
-@end
-
-/*!
- @class     HKBloodTypeObject
- @abstract  A wrapper object for HKBloodType enumeration.
- */
-HK_CLASS_AVAILABLE_IOS(8_0)
-@interface HKBloodTypeObject : NSObject <NSCopying, NSSecureCoding>
-
-@property (readonly) HKBloodType bloodType;
-
-@end
-
-/*!
- @class     HKFitzpatrickSkinTypeObject
- @abstract  A wrapper object for HKFitzpatrickSkinType enumeration.
- */
-HK_CLASS_AVAILABLE_IOS(9_0)
-@interface HKFitzpatrickSkinTypeObject : NSObject <NSCopying, NSSecureCoding>
-
-@property (readonly) HKFitzpatrickSkinType skinType;
+- (void)preferredUnitsForQuantityTypes:(NSSet<HKQuantityType *> *)quantityTypes completion:(void(^)(NSDictionary<HKQuantityType*, HKUnit *> *preferredUnits, NSError * _Nullable error))completion HK_AVAILABLE_IOS_WATCHOS(8_2, 2_0);
 
 @end
 

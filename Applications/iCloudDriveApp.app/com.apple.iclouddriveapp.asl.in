@@ -1,5 +1,0 @@
-# We claim all messages at Error or below.  This means ASL only sees Error messages, which is good: iCloudDriveApp doesn't
-# want to be in your console if it can help it.
-
-? [= Facility com.apple.iCloudDriveApp] [> Level error] claim
-? [= Facility com.apple.iCloudDriveApp] [= DRLogToFile 1] directory /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/iCloudDriveApp.asl format=asl rotate=local-basic file_max=10M all_max=100M compress uid=501 gid=501

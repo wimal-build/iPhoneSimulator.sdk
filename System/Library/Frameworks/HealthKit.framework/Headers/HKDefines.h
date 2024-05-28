@@ -15,14 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 #define HK_EXTERN extern "C" __attribute__((visibility("default")))
 #endif
 
-#define HK_CLASS_AVAILABLE_IOS(_iOSIntro)    NS_CLASS_AVAILABLE_IOS(_iOSIntro)
+#define HK_AVAILABLE_IOS_WATCHOS(_iOSIntro, _watchOSIntro)    NS_AVAILABLE_IOS(_iOSIntro) __WATCHOS_AVAILABLE(_watchOSIntro)
+#define HK_AVAILABLE_IOS_ONLY(_iOSIntro)    NS_AVAILABLE_IOS(_iOSIntro) __WATCHOS_UNAVAILABLE
 #define HK_AVAILABLE_WATCHOS_ONLY(_watchOSIntro)    __WATCHOS_AVAILABLE(_watchOSIntro) __IOS_UNAVAILABLE
+
+#define HK_CLASS_AVAILABLE_IOS_ONLY(_iOSIntro)    NS_CLASS_AVAILABLE_IOS(_iOSIntro) __WATCHOS_PROHIBITED
 #define HK_CLASS_AVAILABLE_WATCHOS_ONLY(_watchOSIntro)    HK_EXTERN HK_AVAILABLE_WATCHOS_ONLY(_watchOSIntro)
 #define HK_CLASS_AVAILABLE_IOS_WATCHOS(_iOSIntro, _watchOSIntro)    NS_CLASS_AVAILABLE_IOS(_iOSIntro) __WATCHOS_AVAILABLE(_watchOSIntro)
-#define HK_ENUM_AVAILABLE_IOS_WATCHOS(_iOSIntro, _watchOSIntro)    NS_ENUM_AVAILABLE_IOS(_iOSIntro) __WATCHOS_AVAILABLE(_watchOSIntro)
-#define HK_AVAILABLE_IOS_WATCHOS(_iOSIntro, _watchOSIntro)    NS_AVAILABLE_IOS(_iOSIntro) __WATCHOS_AVAILABLE(_watchOSIntro)
 
-HK_EXTERN NSString * const HKErrorDomain NS_AVAILABLE_IOS(8_0);
+#define HK_ENUM_AVAILABLE_IOS_WATCHOS(_iOSIntro, _watchOSIntro)    NS_ENUM_AVAILABLE_IOS(_iOSIntro) __WATCHOS_AVAILABLE(_watchOSIntro)
+
+HK_EXTERN NSString * const HKErrorDomain HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /*!
  @enum      HKErrorCode
@@ -48,9 +51,9 @@ typedef NS_ENUM(NSInteger, HKErrorCode) {
     HKErrorAuthorizationNotDetermined,
     HKErrorDatabaseInaccessible,
     HKErrorUserCanceled,
-    HKErrorAnotherWorkoutSessionStarted NS_ENUM_AVAILABLE_IOS(9_0),
-    HKErrorUserExitedWorkoutSession     NS_ENUM_AVAILABLE_IOS(9_0),
-} NS_ENUM_AVAILABLE_IOS(8_0);
+    HKErrorAnotherWorkoutSessionStarted HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0),
+    HKErrorUserExitedWorkoutSession     HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0),
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /*!
  @enum      HKUpdateFrequency
@@ -60,7 +63,7 @@ typedef NS_ENUM(NSInteger, HKUpdateFrequency) {
     HKUpdateFrequencyHourly,
     HKUpdateFrequencyDaily,
     HKUpdateFrequencyWeekly,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /*!
  @enum      HKAuthorizationStatus
@@ -76,7 +79,7 @@ typedef NS_ENUM(NSInteger, HKAuthorizationStatus) {
     HKAuthorizationStatusNotDetermined = 0,
     HKAuthorizationStatusSharingDenied,
     HKAuthorizationStatusSharingAuthorized,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /*!
  @enum       HKBiologicalSex
@@ -84,10 +87,10 @@ typedef NS_ENUM(NSInteger, HKAuthorizationStatus) {
  */
 typedef NS_ENUM(NSInteger, HKBiologicalSex) {
     HKBiologicalSexNotSet = 0,
-    HKBiologicalSexFemale NS_ENUM_AVAILABLE_IOS(8_0),
-    HKBiologicalSexMale NS_ENUM_AVAILABLE_IOS(8_0),
-    HKBiologicalSexOther NS_ENUM_AVAILABLE_IOS(8_2),
-};
+    HKBiologicalSexFemale,
+    HKBiologicalSexMale,
+    HKBiologicalSexOther HK_ENUM_AVAILABLE_IOS_WATCHOS(8_2, 2_0),
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /*!
  @enum       HKBloodType
@@ -103,7 +106,7 @@ typedef NS_ENUM(NSInteger, HKBloodType) {
     HKBloodTypeABNegative,
     HKBloodTypeOPositive,
     HKBloodTypeONegative,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /*!
  @enum          HKCategoryValueSleepAnalysis
@@ -118,7 +121,8 @@ typedef NS_ENUM(NSInteger, HKBloodType) {
 typedef NS_ENUM(NSInteger, HKCategoryValueSleepAnalysis) {
     HKCategoryValueSleepAnalysisInBed,
     HKCategoryValueSleepAnalysisAsleep,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+    HKCategoryValueSleepAnalysisAwake HK_ENUM_AVAILABLE_IOS_WATCHOS(10_0, 3_0),
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 
 /*!
@@ -133,7 +137,7 @@ typedef NS_ENUM(NSInteger, HKCategoryValueSleepAnalysis) {
 typedef NS_ENUM(NSInteger, HKCategoryValueAppleStandHour) {
     HKCategoryValueAppleStandHourStood = 0,
     HKCategoryValueAppleStandHourIdle,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @enum          HKFitzpatrickSkinType
@@ -156,7 +160,20 @@ typedef NS_ENUM(NSInteger, HKFitzpatrickSkinType) {
     HKFitzpatrickSkinTypeIV,
     HKFitzpatrickSkinTypeV,
     HKFitzpatrickSkinTypeVI,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+
+/*!
+ @enum          HKWheelchairUse
+ @abstract      This enumerated type is used to represent whether the user uses a wheelchair.
+ 
+ @constant      HKWheelchairUseNo      The user does not use a wheelchair.
+ @constant      HKWheelchairUseYes     The user does use a wheelchair.
+ */
+typedef NS_ENUM(NSInteger, HKWheelchairUse) {
+    HKWheelchairUseNotSet = 0,
+    HKWheelchairUseNo,
+    HKWheelchairUseYes,
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
 
 /*!
  @enum          HKCategoryValueCervicalMucusQuality
@@ -169,7 +186,7 @@ typedef NS_ENUM(NSInteger, HKCategoryValueCervicalMucusQuality) {
     HKCategoryValueCervicalMucusQualityCreamy,
     HKCategoryValueCervicalMucusQualityWatery,
     HKCategoryValueCervicalMucusQualityEggWhite,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @enum          HKCategoryValueOvulationTestResult
@@ -181,7 +198,7 @@ typedef NS_ENUM(NSInteger, HKCategoryValueOvulationTestResult) {
     HKCategoryValueOvulationTestResultNegative = 1,
     HKCategoryValueOvulationTestResultPositive,
     HKCategoryValueOvulationTestResultIndeterminate,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @enum          HKCategoryValueMenstrualFlow
@@ -192,7 +209,7 @@ typedef NS_ENUM(NSInteger, HKCategoryValueMenstrualFlow) {
     HKCategoryValueMenstrualFlowLight,
     HKCategoryValueMenstrualFlowMedium,
     HKCategoryValueMenstrualFlowHeavy
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @enum          HKCategoryValue
@@ -200,6 +217,6 @@ typedef NS_ENUM(NSInteger, HKCategoryValueMenstrualFlow) {
  */
 typedef NS_ENUM(NSInteger, HKCategoryValue) {
     HKCategoryValueNotApplicable = 0,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 NS_ASSUME_NONNULL_END

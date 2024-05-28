@@ -2,7 +2,7 @@
 //  UITabBarItem.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -56,6 +56,15 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBarItem : UIBarItem
    Use the following to tweak the relative position of the label within the tab button (for handling visual centering corrections if needed because of custom text attributes)
  */
 @property (nonatomic, readwrite, assign) UIOffset titlePositionAdjustment NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+
+/// If this item displays a badge, this color will be used for the badge's background. If set to nil, the default background color will be used instead.
+@property (nonatomic, readwrite, copy, nullable) UIColor *badgeColor NS_AVAILABLE_IOS(10_0) UI_APPEARANCE_SELECTOR;
+
+/// Provide text attributes to use to draw the badge text for the given singular control state (Normal, Disabled, Focused, Selected, or Highlighted). Default values will be supplied for keys that are not provided by this dictionary. See NSAttributedString.h for details on what keys are available.
+- (void)setBadgeTextAttributes:(nullable NSDictionary<NSString *,id> *)textAttributes forState:(UIControlState)state NS_AVAILABLE_IOS(10_0) UI_APPEARANCE_SELECTOR;
+
+/// Returns attributes previously set via -setBadgeTextAttributes:forState:.
+- (nullable NSDictionary<NSString *,id> *)badgeTextAttributesForState:(UIControlState)state NS_AVAILABLE_IOS(10_0) UI_APPEARANCE_SELECTOR;
 
 @end
 

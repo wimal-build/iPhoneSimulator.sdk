@@ -1,0 +1,22 @@
+#define CNUIC_MODULE_NAME com.apple.contacts.ContactsUICore
+
+#if TARGET_IPHONE_SIMULATOR
+#define CNUIC_BASE_PATH $ENV(SIMULATOR_LOG_ROOT)/CNUIC_MODULE_NAME
+#define CNUIC_EXTRA
+#elif TARGET_OS_IPHONE
+#define CNUIC_BASE_PATH /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/CNUIC_MODULE_NAME
+#define CNUIC_EXTRA     uid=501 gid=501
+#else
+#define CNUIC_BASE_PATH /var/log/CNUIC_MODULE_NAME
+#define CNUIC_EXTRA
+#endif
+
+#define CNUIC_FORMAT fmt='$(Time) $(Host) $(Sender)[$(PID):$(ThreadID)] <$((Level)(str))>: $(Function):$(Line) | $(Message)'
+
+#define CNUIC_REDIRECT_CATEGORY(__category__) ? [= Facility CNUIC_MODULE_NAME] [= Category __category__] file CNUIC_BASE_PATH/__category__.log rotate=__category__.local.log ttl=7 file_max=10M all_max=200M compress CNUIC_FORMAT CNUIC_EXTRA
+
+> CNUIC_BASE_PATH CNUIC_EXTRA mode=0750
+
+? [= Facility CNUIC_MODULE_NAME] claim only
+
+CNUIC_REDIRECT_CATEGORY(Debug)

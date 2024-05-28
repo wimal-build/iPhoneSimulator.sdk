@@ -53,8 +53,11 @@ CB_EXTERN NSString * const CBUUIDCharacteristicFormatString;
  *  @discussion The string representation of the UUID for the aggregate descriptor.
  */
 CB_EXTERN NSString * const CBUUIDCharacteristicAggregateFormatString;
-
-
+/*!
+ *  @const CBUUIDCharacteristicValidRangeString
+ *  @discussion Data representing the valid min/max values accepted for a characteristic.
+ */
+CB_EXTERN NSString * const CBUUIDCharacteristicValidRangeString;
 
 /*!
  * @class CBUUID

@@ -474,7 +474,7 @@ extern "C"
 	 not allowed) 
 	 An application must be prepared for setting this property to fail as behaviour may change in future releases. 
 	 If an application changes their category, they should reassert the override (it is not sticky across category changes)
-	 @constant       kAudioSessionProperty_InterruptionType
+     @constant       kAudioSessionProperty_InterruptionType
 	 Available with iOS 4.0 or greater
 	 This is a read-only property that gives the type of the end interruption event.  Media playback apps (i.e., 
 	 those apps that have a "play" button), may use this property as a guideline for when to resume playing after an 

@@ -2,7 +2,7 @@
 //  UIGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -51,8 +51,13 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIGestureRecognizer : NSObject
 @property(nonatomic) BOOL delaysTouchesBegan;         // default is NO.  causes all touch or press events to be delivered to the target view only after this gesture has failed recognition. set to YES to prevent views from processing any touches or presses that may be recognized as part of this gesture
 @property(nonatomic) BOOL delaysTouchesEnded;         // default is YES. causes touchesEnded or pressesEnded events to be delivered to the target view only after this gesture has failed recognition. this ensures that a touch or press that is part of the gesture can be cancelled if the gesture is recognized
 
-@property(nonatomic, copy) NSArray<NSNumber *> *allowedTouchTypes NS_AVAILABLE_IOS(9_0); // Array of UITouchType's as NSNumbers.
+@property(nonatomic, copy) NSArray<NSNumber *> *allowedTouchTypes NS_AVAILABLE_IOS(9_0); // Array of UITouchTypes as NSNumbers.
 @property(nonatomic, copy) NSArray<NSNumber *> *allowedPressTypes NS_AVAILABLE_IOS(9_0); // Array of UIPressTypes as NSNumbers.
+
+// Indicates whether the gesture recognizer will consider touches of different touch types simultaneously.
+// If NO, it receives all touches that match its allowedTouchTypes.
+// If YES, once it receives a touch of a certain type, it will ignore new touches of other types, until it is reset to UIGestureRecognizerStatePossible.
+@property (nonatomic) BOOL requiresExclusiveTouchType NS_AVAILABLE_IOS(9_2); // defaults to YES
 
 // create a relationship with another gesture recognizer that will prevent this gesture's actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed
 // if otherGestureRecognizer transitions to UIGestureRecognizerStateRecognized or UIGestureRecognizerStateBegan then this recognizer will instead transition to UIGestureRecognizerStateFailed
@@ -62,7 +67,11 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIGestureRecognizer : NSObject
 // individual UIGestureRecognizer subclasses may provide subclass-specific location information. see individual subclasses for details
 - (CGPoint)locationInView:(nullable UIView*)view;                                // a generic single-point location for the gesture. usually the centroid of the touches involved
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSUInteger numberOfTouches;                                          // number of touches involved for which locations can be queried
+#else
 - (NSUInteger)numberOfTouches;                                          // number of touches involved for which locations can be queried
+#endif
 - (CGPoint)locationOfTouch:(NSUInteger)touchIndex inView:(nullable UIView*)view; // the location of a particular touch
 
 @end

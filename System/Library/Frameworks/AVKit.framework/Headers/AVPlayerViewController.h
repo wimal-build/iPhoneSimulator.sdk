@@ -3,7 +3,7 @@
 	
 	Framework:  AVKit
 	
-	Copyright 2014-2015 Apple Inc. All rights reserved.
+	Copyright © 2014-2016 Apple Inc. All rights reserved.
 	
  */
 
@@ -67,6 +67,12 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 	@abstract	Whether or not the receiver allows Picture in Picture playback. Default is YES.
  */
 @property (nonatomic) BOOL allowsPictureInPicturePlayback NS_AVAILABLE_IOS(9_0);
+
+/*!
+	@property	updatesNowPlayingInfoCenter
+	@abstract	Whether or not the now playing info center should be updated. Default is YES.
+ */
+@property (nonatomic) BOOL updatesNowPlayingInfoCenter NS_AVAILABLE_IOS(10_0);
 
 /*!
 	@property	delegate

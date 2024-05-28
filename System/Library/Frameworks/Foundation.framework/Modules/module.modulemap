@@ -5,10 +5,6 @@ framework module Foundation [extern_c] [system] {
     module * {
         export *
     }
-    
-    explicit module NSURLSession {
-        header "NSURLSession.h"
-        export *
-    }
+
 }
 

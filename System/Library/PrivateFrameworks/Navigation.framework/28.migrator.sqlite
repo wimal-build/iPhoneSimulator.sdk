@@ -1,0 +1,13 @@
+-- Migrates traces from v28 to v29
+
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS debug_settings;
+
+CREATE TABLE debug_settings
+(
+setting_name        TEXT,
+setting_value       TEXT
+);
+
+COMMIT;

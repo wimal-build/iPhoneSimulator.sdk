@@ -12,6 +12,8 @@
 		<true/>
 		<key>com.apple.nanomaps.xpc.GeoServices</key>
 		<true/>
+		<key>com.apple.nanomaps.xpc.GeoServices.Navigation</key>
+		<true/>
 		<key>com.apple.nanomaps.xpc.MapKit</key>
 		<true/>
 		<key>com.apple.private.alloy.maps.proxy-idswake</key>

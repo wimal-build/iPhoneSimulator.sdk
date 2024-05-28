@@ -2,7 +2,7 @@
 //  UINavigationController.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, UINavigationControllerOperation) {
 
 UIKIT_EXTERN const CGFloat UINavigationControllerHideShowBarDuration;
 
-@class UIView, UINavigationBar, UINavigationItem, UIToolbar, UILayoutContainerView;
+@class UIView, UINavigationBar, UINavigationItem, UIToolbar;
 @protocol UINavigationControllerDelegate;
 
 

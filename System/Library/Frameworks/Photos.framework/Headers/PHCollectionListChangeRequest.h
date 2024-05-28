@@ -6,8 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Photos/PhotosDefines.h>
+#import <Photos/PHFetchResult.h>
 
-@class PHFetchResult;
 @class PHCollection;
 @class PHCollectionList;
 @class PHObjectPlaceholder;
@@ -15,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // PHCollectionListChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionListChangeRequest : NSObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionListChangeRequest : NSObject
 
 #pragma mark - Creating Collection Lists
 
@@ -36,7 +37,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionListChangeRequest : NSObject
 + (nullable instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList;
 
 // to add, remove or rearrange child collections in a collection list, passing in the fetched collections in that collection list will ensure that the child collection positions are tracked correctly in the case that the collection list has been externally edited after the fetch, but before this change is applied
-+ (nullable instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList childCollections:(PHFetchResult *)childCollections;
++ (nullable instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList childCollections:(PHFetchResult<__kindof PHCollection *> *)childCollections;
 
 @property (nonatomic, strong, readwrite) NSString *title;
 

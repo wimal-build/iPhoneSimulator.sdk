@@ -57,6 +57,17 @@
 		<key>cache_size</key>
 		<integer>0</integer>
 	</dict>
+	<key>OpenCLAMDil_r800</key>
+	<dict>
+		<key>bytecode</key>
+		<string>// TODO remove dead-code</string>
+		<key>plugin</key>
+		<string>/System/Library/Extensions/AMDRadeonX3000GLDriver.bundle/Contents/Libraries/libCLVMAMDilPlugin.dylib</string>
+		<key>options</key>
+		<integer>272</integer>
+		<key>cache_size</key>
+		<integer>0</integer>
+	</dict>
 	<key>OpenCLAMDil_r700</key>
 	<dict>
 		<key>bytecode</key>
@@ -74,6 +85,17 @@
 		<string>// TODO remove dead-code</string>
 		<key>plugin</key>
 		<string>/System/Library/Frameworks/OpenCL.framework/Libraries/libCLVMIGILPlugin.dylib</string>
+		<key>options</key>
+		<integer>272</integer>
+		<key>cache_size</key>
+		<integer>0</integer>
+	</dict>
+	<key>OpenCLIntelIGC</key>
+		<dict>
+		<key>bytecode</key>
+		 <string>// TODO remove dead-code</string>
+		<key>plugin</key>
+		<string>/System/Library/Frameworks/OpenCL.framework/Libraries/libCLVMIGCPlugin.dylib</string>
 		<key>options</key>
 		<integer>272</integer>
 		<key>cache_size</key>

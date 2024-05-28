@@ -1,5 +1,0 @@
-
-? [= Facility com.apple.wcd] claim
-? [= Facility com.apple.wcd] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/WatchConnectivity/WatchConnectivity.log format=std rotate=WatchConnectivity.local-basic.log ttl=7 file_max=5M all_max=20M compress uid=501 gid=501 basestamp symlink
-
-> $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/WatchConnectivity uid=501 gid=501 mode=0755

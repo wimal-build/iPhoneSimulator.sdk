@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+(function(){return function(t){if(t.html){var e=t.html,r=parseMicrodata(e);if(r.length){for(var a=!1,o=0;r.length>o;o++){if("http://schema.org/FoodEstablishmentReservation"!==r[o]["@type"]){a=!0;break}r[o]["@context"]="http://schema.org",r[o].bookingAgent={"@type":"http://schema.org/Organization",name:"La Fourchette",url:"http://www.lafourchette.com/"},ASSERT(r[o].reservationNumber,r[o].startTime,r[o].reservationFor)}if(!a)return r}}}}).call();

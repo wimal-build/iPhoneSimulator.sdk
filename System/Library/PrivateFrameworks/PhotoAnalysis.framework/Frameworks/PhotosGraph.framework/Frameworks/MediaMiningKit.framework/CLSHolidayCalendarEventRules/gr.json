@@ -1,0 +1,488 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "95258D33-F532-44A0-8A7D-AAD753F03784"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 8,
+          "month" : 3
+        }
+      ],
+      "name" : "Women’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment",
+          "shopping"
+        ]
+      },
+      "uuid" : "8F8DDB81-3CD9-454C-B0B7-55D41895A00F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 13,
+          "month" : 3,
+          "year" : 2000
+        },
+        {
+          "day" : 26,
+          "month" : 2,
+          "year" : 2001
+        },
+        {
+          "day" : 18,
+          "month" : 3,
+          "year" : 2002
+        },
+        {
+          "day" : 3,
+          "month" : 10,
+          "year" : 2003
+        },
+        {
+          "day" : 23,
+          "month" : 2,
+          "year" : 2004
+        },
+        {
+          "day" : 14,
+          "month" : 3,
+          "year" : 2005
+        },
+        {
+          "day" : 6,
+          "month" : 3,
+          "year" : 2006
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2007
+        },
+        {
+          "day" : 10,
+          "month" : 3,
+          "year" : 2008
+        },
+        {
+          "day" : 3,
+          "month" : 2,
+          "year" : 2009
+        },
+        {
+          "day" : 15,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 7,
+          "month" : 3,
+          "year" : 2011
+        },
+        {
+          "day" : 27,
+          "month" : 2,
+          "year" : 2012
+        },
+        {
+          "day" : 18,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 3,
+          "month" : 3,
+          "year" : 2014
+        },
+        {
+          "day" : 23,
+          "month" : 2,
+          "year" : 2015
+        },
+        {
+          "day" : 14,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 27,
+          "month" : 2,
+          "year" : 2017
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2018
+        },
+        {
+          "day" : 11,
+          "month" : 3,
+          "year" : 2019
+        },
+        {
+          "day" : 2,
+          "month" : 3,
+          "year" : 2020
+        },
+        {
+          "day" : 15,
+          "month" : 3,
+          "year" : 2021
+        },
+        {
+          "day" : 7,
+          "month" : 3,
+          "year" : 2022
+        },
+        {
+          "day" : 27,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 18,
+          "month" : 3,
+          "year" : 2024
+        }
+      ],
+      "name" : "Clean Monday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "1ECCD945-547F-4C02-ADB9-13D428843FA4"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 15,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 5,
+          "month" : 5,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 1,
+          "month" : 5,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 28,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 19,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Orthodox Easter (Pascha)",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0,10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "7FE067FD-5DFD-4ABD-BC41-AD1D8958CD5D"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 28,
+          "month" : 10
+        }
+      ],
+      "name" : "Ochi Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "68D0DE89-8EBF-49D5-9044-E1F6D5885D42"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 3
+        }
+      ],
+      "name" : "Annunciation",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "6784060B-0CED-4274-9016-A1E8E22B08B2"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 17,
+          "month" : 11
+        }
+      ],
+      "name" : "Polytechneio",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "BF19E9FF-13E4-4136-9CA9-61A80BEF45EE"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1F3B65C3-C056-4E9C-A287-587123E67855"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "Labour Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "culture"
+        ]
+      },
+      "uuid" : "0D7A4AC6-5C06-45F1-B8F2-F048B34CBA60"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "restaurant"
+        ]
+      },
+      "uuid" : "F0EC974F-09F6-4CB3-91CB-93A0BF0ADE33"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "gr",
+    "countryName" : "Greece"
+  }
+}

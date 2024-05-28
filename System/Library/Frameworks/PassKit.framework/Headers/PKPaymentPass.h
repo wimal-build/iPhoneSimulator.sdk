@@ -24,13 +24,13 @@ typedef NS_ENUM(NSUInteger, PKPaymentPassActivationState) {
 NS_CLASS_AVAILABLE_IOS(8_0)
 @interface PKPaymentPass : PKPass
 
-@property (nonatomic,copy,readonly) NSString                      *primaryAccountIdentifier;
-@property (nonatomic,copy,readonly) NSString                      *primaryAccountNumberSuffix;
-@property (readonly)                NSString                      *deviceAccountIdentifier;
-@property (readonly)                NSString                      *deviceAccountNumberSuffix;
-@property (nonatomic, readonly)     PKPaymentPassActivationState  activationState;
+@property (nonatomic, copy, readonly) NSString *primaryAccountIdentifier;
+@property (nonatomic, copy, readonly) NSString *primaryAccountNumberSuffix;
+@property (weak, readonly) NSString *deviceAccountIdentifier;
+@property (weak, readonly) NSString *deviceAccountNumberSuffix;
+@property (nonatomic, readonly) PKPaymentPassActivationState activationState;
 
 @end
 NS_ASSUME_NONNULL_END
 
-#endif
+#endif // End __PKPAYMENTPASS_H

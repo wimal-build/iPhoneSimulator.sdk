@@ -15,6 +15,15 @@
 //Other editorial instructions concerning the use of the item, such as embargoes and warnings.
 @property(nullable, copy) NSString *instructions;
 
+//The location (e.g., street name) for the item according to guidelines established by the provider.
+@property(nullable, copy) NSString *thoroughfare;
+
+//The sub-location (e.g., street number) for the item according to guidelines established by the provider.
+@property(nullable, copy) NSString *subThoroughfare;
+
+//The postal code for the item according to guidelines established by the provider.
+@property(nullable, copy) NSString *postalCode;
+
 //Identifies city of item origin according to guidelines established by the provider.
 @property(nullable, copy) NSString *city;
 
@@ -24,6 +33,9 @@
 //Provides full, publishable, name of the country/primary location where the
 //intellectual property of the item was created,according to guidelines of the provider.
 @property(nullable, copy) NSString *country;
+
+// The fully formatted address of the item (obtained from MapKit)
+@property(nullable, copy) NSString *fullyFormattedAddress;
 
 //The altitude of the item in meters above sea level, expressed
 //using the WGS84 datum.  Negative values lie below sea level.

@@ -2,7 +2,7 @@
 //  UIActivityIndicatorView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
@@ -29,7 +29,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIActivityIndicatorView : UIView <NSCodin
 
 - (void)startAnimating;
 - (void)stopAnimating;
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, getter=isAnimating) BOOL animating;
+#else
 - (BOOL)isAnimating;
+#endif
 
 @end
 

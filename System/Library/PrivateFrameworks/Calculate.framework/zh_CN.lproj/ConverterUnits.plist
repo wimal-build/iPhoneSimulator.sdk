@@ -111,6 +111,7 @@
 		<dict>
 			<key>CommonNames</key>
 			<array>
+				<string>square km</string>
 				<string>sq km</string>
 				<string>sqkm</string>
 				<string>square kilometer</string>
@@ -197,6 +198,19 @@
 			<key>ValueToBase</key>
 			<real>1.1959900480000001</real>
 		</dict>
+		<key>stremma</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>stremmata</string>
+				<string>stremma</string>
+				<string>斯特伦马</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
 	</dict>
 	<key>Currency</key>
 	<dict>
@@ -218,7 +232,7 @@
 			<array>
 				<string>aud</string>
 				<string>a$</string>
-				<string>澳大利亚元</string>
+				<string>澳元</string>
 			</array>
 		</dict>
 		<key>BHD</key>
@@ -262,7 +276,7 @@
 				<string>c$</string>
 				<string>canadian dollar</string>
 				<string>canadian dollars</string>
-				<string>加拿大元</string>
+				<string>加元</string>
 			</array>
 		</dict>
 		<key>CHF</key>
@@ -299,7 +313,6 @@
 				<string>renminbi</string>
 				<string>renminbis</string>
 				<string>rmb</string>
-				<string>¥</string>
 				<string>chinese yuan</string>
 				<string>chinese yuans</string>
 				<string>人民币</string>
@@ -315,7 +328,7 @@
 				<string>czech crowns</string>
 				<string>czech koruna</string>
 				<string>czech korunas</string>
-				<string>捷克克郎</string>
+				<string>捷克克朗</string>
 			</array>
 		</dict>
 		<key>DKK</key>
@@ -436,6 +449,7 @@
 				<string>yen</string>
 				<string>yens</string>
 				<string>japanese yen</string>
+				<string>¥</string>
 				<string>日元</string>
 			</array>
 		</dict>
@@ -1104,7 +1118,9 @@
 				<string>btu/min</string>
 				<string>btus/min</string>
 				<string>btus per min</string>
+				<string>btus per minute</string>
 				<string>btu per min</string>
+				<string>btu per minute</string>
 				<string>btu/minute</string>
 				<string>btus/minute</string>
 				<string>英国热量单位/分钟</string>
@@ -1325,14 +1341,14 @@
 		<dict>
 			<key>CommonNames</key>
 			<array>
+				<string>degrees c</string>
+				<string>degree c</string>
 				<string>degree celsius</string>
 				<string>degrees celsius</string>
 				<string>celsius</string>
 				<string>°c</string>
 				<string>℃</string>
 				<string>c</string>
-				<string>degree</string>
-				<string>degrees</string>
 				<string>摄氏度</string>
 				<string>度</string>
 			</array>
@@ -1347,6 +1363,8 @@
 				<string>°f</string>
 				<string>℉</string>
 				<string>fahrenheits</string>
+				<string>degree</string>
+				<string>degrees</string>
 				<string>f</string>
 				<string>华氏度</string>
 			</array>
@@ -1391,6 +1409,36 @@
 			<key>ValueToBase</key>
 			<real>0.00027777777777777799</real>
 		</dict>
+		<key>microsecond</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>microsecond</string>
+				<string>microseconds</string>
+				<string>μs</string>
+				<string>microsec</string>
+				<string>microsecs</string>
+				<string>μsec</string>
+				<string>μsecs</string>
+				<string>微秒</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>1000000</integer>
+		</dict>
+		<key>millisecond</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>millisecond</string>
+				<string>milliseconds</string>
+				<string>ms</string>
+				<string>millisec</string>
+				<string>millisecs</string>
+				<string>毫秒</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000</real>
+		</dict>
 		<key>minute</key>
 		<dict>
 			<key>CommonNames</key>
@@ -1403,6 +1451,20 @@
 			</array>
 			<key>ValueToBase</key>
 			<real>0.01666666666666667</real>
+		</dict>
+		<key>nanosecond</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>nanosecond</string>
+				<string>nanoseconds</string>
+				<string>ns</string>
+				<string>nanosec</string>
+				<string>nanosecs</string>
+				<string>纳秒</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000000000</real>
 		</dict>
 		<key>second</key>
 		<dict>
@@ -1461,6 +1523,21 @@
 			</array>
 			<key>ValueToBase</key>
 			<integer>100</integer>
+		</dict>
+		<key>cubic centimeter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>centimeters cubed</string>
+				<string>cubic centimeter</string>
+				<string>cubic cm</string>
+				<string>cubic centimeters</string>
+				<string>cm^3</string>
+				<string>cm3</string>
+				<string>立方厘米</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000</real>
 		</dict>
 		<key>cubic foot</key>
 		<dict>

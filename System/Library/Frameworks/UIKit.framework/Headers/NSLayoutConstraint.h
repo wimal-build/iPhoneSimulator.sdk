@@ -2,7 +2,7 @@
 //  NSLayoutConstraint.h
 //  UIKit
 //	
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class NSArray, NSDictionary;
+@class NSArray, NSDictionary, NSLayoutAnchor;
 
 
 typedef NS_ENUM(NSInteger, NSLayoutRelation) {
@@ -30,8 +30,8 @@ typedef NS_ENUM(NSInteger, NSLayoutAttribute) {
     NSLayoutAttributeHeight,
     NSLayoutAttributeCenterX,
     NSLayoutAttributeCenterY,
-    NSLayoutAttributeBaseline,
-    NSLayoutAttributeLastBaseline = NSLayoutAttributeBaseline,
+    NSLayoutAttributeLastBaseline,
+    NSLayoutAttributeBaseline NS_SWIFT_UNAVAILABLE("Use 'lastBaseline' instead") = NSLayoutAttributeLastBaseline,
     NSLayoutAttributeFirstBaseline NS_ENUM_AVAILABLE_IOS(8_0),
     
     
@@ -56,8 +56,8 @@ typedef NS_OPTIONS(NSUInteger, NSLayoutFormatOptions) {
     NSLayoutFormatAlignAllTrailing = (1 << NSLayoutAttributeTrailing),
     NSLayoutFormatAlignAllCenterX = (1 << NSLayoutAttributeCenterX),
     NSLayoutFormatAlignAllCenterY = (1 << NSLayoutAttributeCenterY),
-    NSLayoutFormatAlignAllBaseline = (1 << NSLayoutAttributeBaseline),
-    NSLayoutFormatAlignAllLastBaseline = NSLayoutFormatAlignAllBaseline,
+    NSLayoutFormatAlignAllLastBaseline = (1 << NSLayoutAttributeLastBaseline),
+    NSLayoutFormatAlignAllBaseline NS_SWIFT_UNAVAILABLE("Use 'alignAllLastBaseline' instead") = NSLayoutFormatAlignAllLastBaseline,
     NSLayoutFormatAlignAllFirstBaseline NS_ENUM_AVAILABLE_IOS(8_0) = (1 << NSLayoutAttributeFirstBaseline),
     
     NSLayoutFormatAlignmentMask = 0xFFFF,
@@ -98,7 +98,7 @@ UIKIT_EXTERN  NSDictionary *_NSDictionaryOfVariableBindings(NSString *commaSepar
 
 /* If a constraint's priority level is less than UILayoutPriorityRequired, then it is optional.  Higher priority constraints are met before lower priority constraints.
  Constraint satisfaction is not all or nothing.  If a constraint 'a == b' is optional, that means we will attempt to minimize 'abs(a-b)'.
- This property may only be modified as part of initial set up.  An exception will be thrown if it is set after a constraint has been added to a view.
+ This property may only be modified as part of initial set up or when optional.  After a constraint has been added to a view, an exception will be thrown if the priority is changed from/to NSLayoutPriorityRequired.
  */
 @property UILayoutPriority priority;
 
@@ -109,12 +109,19 @@ UIKIT_EXTERN  NSDictionary *_NSDictionaryOfVariableBindings(NSString *commaSepar
 
 /* accessors
  firstItem.firstAttribute {==,<=,>=} secondItem.secondAttribute * multiplier + constant
+ Access to these properties is not recommended. Use the `firstAnchor` and `secondAnchor` properties instead.
  */
 @property (readonly, assign) id firstItem;
 @property (readonly) NSLayoutAttribute firstAttribute;
-@property (readonly) NSLayoutRelation relation;
 @property (nullable, readonly, assign) id secondItem;
 @property (readonly) NSLayoutAttribute secondAttribute;
+
+/* accessors
+ firstAnchor{==,<=,>=} secondAnchor * multiplier + constant
+ */
+@property (readonly, copy) NSLayoutAnchor *firstAnchor NS_AVAILABLE(10_12, 10_0);
+@property (readonly, copy, nullable) NSLayoutAnchor *secondAnchor NS_AVAILABLE(10_12, 10_0);
+@property (readonly) NSLayoutRelation relation;
 @property (readonly) CGFloat multiplier;
 
 /* Unlike the other properties, the constant may be modified after constraint creation.  Setting the constant on an existing constraint performs much better than removing the constraint and adding a new one that's just like the old but for having a new constant.

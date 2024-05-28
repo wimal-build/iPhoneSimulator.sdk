@@ -2,10 +2,10 @@
 //  UICollectionView.h
 //  UIKit
 //
-//  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2016 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UICollectionViewLayout.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class         HKSample
  @abstract      An abstract class representing measurements taken over a period of time.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKSample : HKObject
 
 @property (readonly, strong) HKSampleType *sampleType;
@@ -26,11 +26,11 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 @end
 
 // Sort Identifiers
-HK_EXTERN NSString * const HKSampleSortIdentifierStartDate NS_AVAILABLE_IOS(8_0);
-HK_EXTERN NSString * const HKSampleSortIdentifierEndDate NS_AVAILABLE_IOS(8_0);
+HK_EXTERN NSString * const HKSampleSortIdentifierStartDate HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
+HK_EXTERN NSString * const HKSampleSortIdentifierEndDate HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 // Predicate Key Paths
-HK_EXTERN NSString * const HKPredicateKeyPathStartDate NS_AVAILABLE_IOS(8_0);
-HK_EXTERN NSString * const HKPredicateKeyPathEndDate NS_AVAILABLE_IOS(8_0);
+HK_EXTERN NSString * const HKPredicateKeyPathStartDate HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
+HK_EXTERN NSString * const HKPredicateKeyPathEndDate HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 NS_ASSUME_NONNULL_END

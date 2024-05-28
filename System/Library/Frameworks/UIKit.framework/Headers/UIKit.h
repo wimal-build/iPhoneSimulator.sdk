@@ -2,7 +2,7 @@
 //  UIKit.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -44,7 +44,9 @@
 
 #import <UIKit/UIColor.h>
 
-#if __has_include(<UIKit/UIControl.h>)
+#if __has_include(<UIKit/UIContentSizeCategoryAdjusting.h>)
+#import <UIKit/UIContentSizeCategoryAdjusting.h>
+#import <UIKit/UIContentSizeCategory.h>
 #import <UIKit/UIControl.h>
 #import <UIKit/UIDataDetectors.h>
 #import <UIKit/UIDatePicker.h>
@@ -54,6 +56,7 @@
 #import <UIKit/UIDocumentPickerViewController.h>
 #import <UIKit/UIDocumentMenuViewController.h>
 #import <UIKit/UIDocumentPickerExtensionViewController.h>
+#import <UIKit/UICloudSharingController.h>
 #import <UIKit/NSFileProviderExtension.h>
 #import <UIKit/UIVisualEffectView.h>
 #import <UIKit/UIEvent.h>
@@ -69,6 +72,12 @@
 
 #import <UIKit/UIGraphics.h>
 #import <UIKit/UIImage.h>
+
+#if __has_include(<UIKit/UIGraphicsRenderer.h>)
+#import <UIKit/UIGraphicsRenderer.h>
+#import <UIKit/UIGraphicsImageRenderer.h>
+#import <UIKit/UIGraphicsPDFRenderer.h>
+#endif
 
 #if __has_include(<UIKit/UIImageAsset.h>)
 #import <UIKit/UIImageAsset.h>
@@ -89,6 +98,7 @@
 #import <UIKit/UIApplicationShortcutItem.h>
 #import <UIKit/UIUserNotificationSettings.h>
 #import <UIKit/UIFocus.h>
+#import <UIKit/UIFocusGuide.h>
 #import <UIKit/UIFocusAnimationCoordinator.h>
 #import <UIKit/UILocalizedIndexedCollation.h>
 #import <UIKit/UILongPressGestureRecognizer.h>
@@ -191,6 +201,7 @@
 #import <UIKit/UIViewControllerTransitioning.h>
 #import <UIKit/UIViewControllerTransitionCoordinator.h>
 #import <UIKit/UIPresentationController.h>
+#import <UIKit/UIPreviewInteraction.h>
 #import <UIKit/UIPopoverPresentationController.h>
 #import <UIKit/UIDynamicAnimator.h>
 #import <UIKit/UIDynamicBehavior.h>
@@ -202,4 +213,15 @@
 #import <UIKit/UIAttachmentBehavior.h>
 #import <UIKit/UICollisionBehavior.h>
 #import <UIKit/UIRegion.h>
+#endif
+
+#if __has_include(<UIKit/UIViewPropertyAnimator.h>)
+#import <UIKit/UIViewPropertyAnimator.h>
+#endif
+
+#if __has_include(<UIKit/UIFeedbackGenerator.h>)
+#import <UIKit/UIFeedbackGenerator.h>
+#import <UIKit/UISelectionFeedbackGenerator.h>
+#import <UIKit/UIImpactFeedbackGenerator.h>
+#import <UIKit/UINotificationFeedbackGenerator.h>
 #endif

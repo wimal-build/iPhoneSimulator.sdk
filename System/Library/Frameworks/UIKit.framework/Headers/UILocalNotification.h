@@ -2,7 +2,7 @@
 //  UILocalNotification.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class CLRegion;
 
 // In iOS 8.0 and later, your application must register for user notifications using -[UIApplication registerUserNotificationSettings:] before being able to schedule and present UILocalNotifications
-NS_CLASS_AVAILABLE_IOS(4_0) __TVOS_PROHIBITED @interface UILocalNotification : NSObject<NSCopying, NSCoding>       // added in iOS 4.0
+NS_CLASS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's UNNotificationRequest") __TVOS_PROHIBITED
+@interface UILocalNotification : NSObject<NSCopying, NSCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
@@ -57,6 +58,6 @@ NS_CLASS_AVAILABLE_IOS(4_0) __TVOS_PROHIBITED @interface UILocalNotification : N
 @end
 
 
-UIKIT_EXTERN NSString *const UILocalNotificationDefaultSoundName NS_AVAILABLE_IOS(4_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UILocalNotificationDefaultSoundName NS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's +[UNNotificationSound defaultSound]") __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END

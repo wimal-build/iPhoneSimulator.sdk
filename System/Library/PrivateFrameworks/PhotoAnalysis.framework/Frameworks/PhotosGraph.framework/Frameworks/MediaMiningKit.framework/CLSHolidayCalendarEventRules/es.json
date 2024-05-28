@@ -1,0 +1,395 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 12,
+          "month" : 10
+        }
+      ],
+      "name" : "Spanishness Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "culture"
+        ]
+      },
+      "uuid" : "C1DDE501-572E-43A9-B3CC-A59382ADBFAB"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "nightlife",
+          "restaurant",
+          "entertainment"
+        ]
+      },
+      "uuid" : "CD4DF2F1-FDC9-4F5F-8071-39F2F62D013C"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "food",
+          "kitchen"
+        ]
+      },
+      "uuid" : "90A3384F-AE93-44DC-A108-F35B88DA8A28"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "culture",
+          "firework"
+        ]
+      },
+      "uuid" : "ECBF6B24-BB40-469E-BB75-22F5CE5E56FA"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 19,
+          "month" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "culture",
+          "food"
+        ]
+      },
+      "uuid" : "7A29EAA6-394E-4A1F-83CE-DD7AC310300B"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 15,
+          "month" : 8
+        }
+      ],
+      "name" : "Assumption",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "7976774C-4AFA-4609-905F-365E54609F34"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 6,
+          "month" : 12
+        }
+      ],
+      "name" : "Constitution Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "urban",
+          "entertainment"
+        ]
+      },
+      "uuid" : "D9358247-413C-4C6F-955E-6EE9CCE690A8"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "Labour Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "entertainment",
+          "park",
+          "beach"
+        ]
+      },
+      "uuid" : "903AA888-611F-4D91-8D7F-A0CC8452A821"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 1
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "food"
+        ]
+      },
+      "uuid" : "F72E6CE5-4DC9-48FC-98CD-D6490937C80E"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 21,
+          "month" : 6
+        }
+      ],
+      "name" : "Music Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "entertainment",
+          "culture"
+        ]
+      },
+      "uuid" : "0178FB3E-8666-4340-B614-AB13438B83F1"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture"
+        ]
+      },
+      "uuid" : "B85D405E-5827-403D-B2C0-EE4E6A625510"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 4
+        }
+      ],
+      "name" : "St. George",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "8B5AD2BA-D6C1-481A-93D5-AEF314709B45"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "es",
+    "countryName" : "Spain"
+  }
+}

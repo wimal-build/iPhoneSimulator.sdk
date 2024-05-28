@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class     HKSource
  @abstract  Represents the entity that created an object stored by HealthKit.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKSource : NSObject <NSSecureCoding, NSCopying>
 
 /*!

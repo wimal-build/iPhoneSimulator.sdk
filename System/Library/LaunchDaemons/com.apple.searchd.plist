@@ -37,6 +37,16 @@
 				<key>Notification</key>
 				<string>com.apple.datamigrator.migrationDidFinish</string>
 			</dict>
+			<key>com.apple.corespotlight.developer.ReindexAllItems</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.corespotlight.developer.ReindexAllItems</string>
+			</dict>
+			<key>com.apple.corespotlight.developer.ReindexAllItemsWithIdentifiers</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.corespotlight.developer.ReindexAllItemsWithIdentifiers</string>
+			</dict>
 		</dict>
 		<key>com.apple.xpc.activity</key>
 		<dict>
@@ -55,7 +65,7 @@
 				<key>PowerNap</key>
 				<true/>
 				<key>Priority</key>
-				<string>Background</string>
+				<string>Maintenance</string>
 			</dict>
 			<key>com.apple.searchd.reindex</key>
 			<dict>
@@ -68,7 +78,7 @@
 				<key>Repeating</key>
 				<true/>
 				<key>AllowBattery</key>
-				<true/>
+				<false/>
 				<key>PowerNap</key>
 				<true/>
 				<key>Priority</key>
@@ -78,22 +88,22 @@
 	</dict>
 	<key>MachServices</key>
 	<dict>
-		<key>com.apple.parsec.subscriptionservice</key>
-		<true/>
-		<key>com.apple.parsec.subscriptionservice.internal</key>
-		<true/>
 		<key>com.apple.searchd</key>
+		<true/>
+		<key>com.apple.searchd.background</key>
 		<true/>
 		<key>com.apple.spotlight.IndexAgent</key>
 		<true/>
 		<key>com.apple.spotlight.SearchAgent</key>
 		<true/>
 	</dict>
-	<key>OffEnvironmentVariables</key>
+	<key>NoEnvironmentVariables</key>
 	<dict>
-		<key>DYLD_INSERT_LIBRARIES</key>
+		<key>no_DYLD_INSERT_LIBRARIES</key>
 		<string>/usr/lib/libgmalloc.dylib</string>
-		<key>MallocStackLoggingNoCompact</key>
+		<key>no_MallocStackLoggingNoCompact</key>
+		<string>1</string>
+		<key>MallocStackLogging</key>
 		<string>1</string>
 	</dict>
 	<key>POSIXSpawnType</key>

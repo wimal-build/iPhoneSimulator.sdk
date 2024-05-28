@@ -17,5 +17,7 @@ typedef NS_ENUM(NSInteger, RPRecordingErrorCode) {
     RPRecordingErrorFailed = -5804, // Failed during recording
     RPRecordingErrorInsufficientStorage = -5805, // Insufficient storage for recording.
     RPRecordingErrorInterrupted = -5806, // Recording interrupted by other app
-    RPRecordingErrorContentResize = -5807 // Recording interrupted by multitasking and Content Resizing
+    RPRecordingErrorContentResize = -5807, // Recording interrupted by multitasking and Content Resizing
+    RPRecordingErrorBroadcastInvalidSession = -5808, // Attempted to start a broadcast without a prior session
+    RPRecordingErrorSystemDormancy = -5809 // Recording was forced to end when user pressed the power button
 };

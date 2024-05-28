@@ -7,12 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import <Photos/PhotosTypes.h>
+#import <Photos/PhotosDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 // Accessing fetched results (fetches objects from the backing store in chunks on demand rather than all at once)
 // Fetched objects will be kept in a cache and purged under memory pressure
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHFetchResult<ObjectType> : NSObject <NSCopying, NSFastEnumeration>
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHFetchResult<ObjectType> : NSObject <NSCopying, NSFastEnumeration>
 
 @property (readonly) NSUInteger count;
 - (ObjectType)objectAtIndex:(NSUInteger)index;

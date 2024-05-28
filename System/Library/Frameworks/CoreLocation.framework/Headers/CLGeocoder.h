@@ -5,8 +5,6 @@
  *  Copyright (c) 2010 Apple Inc. All rights reserved.
  */
 
-#if TARGET_OS_IPHONE
-
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CLLocation.h>
 #import <CoreLocation/CLAvailability.h>
@@ -20,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 // geocoding handler, CLPlacemarks are provided in order of most confident to least confident
 typedef void (^CLGeocodeCompletionHandler)(NSArray< CLPlacemark *> * __nullable placemarks, NSError * __nullable error);
 
-NS_CLASS_AVAILABLE(TBD,5_0)
+NS_CLASS_AVAILABLE(10_8,5_0)
 @interface CLGeocoder : NSObject
 {
 @private
@@ -46,5 +44,3 @@ NS_CLASS_AVAILABLE(TBD,5_0)
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif //TARGET_OS_IPHONE

@@ -10,5 +10,10 @@ framework module UIKit [extern_c] {
     header "UIGestureRecognizerSubclass.h" 
     export *
   }
+
+  explicit module UIGraphicsRendererSubclass {
+      header "UIGraphicsRendererSubclass.h"
+      export *
+  }
 }
 

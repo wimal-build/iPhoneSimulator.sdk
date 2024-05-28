@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class         HKDeletedObject
  @abstract      A class representing an HKObject that was deleted from the HealtKit database.
  */
-HK_CLASS_AVAILABLE_IOS(9_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(9_0, 2_0)
 @interface HKDeletedObject : NSObject <NSSecureCoding>
 
 /*!

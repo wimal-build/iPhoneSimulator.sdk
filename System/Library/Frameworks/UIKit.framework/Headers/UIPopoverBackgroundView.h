@@ -2,7 +2,7 @@
 //  UIPopoverBackgroundView.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -40,6 +40,10 @@ NS_CLASS_AVAILABLE_IOS(5_0)
 
 /* This method may be overridden to prevent the drawing of the content inset and drop shadow inside the popover. The default implementation of this method returns YES.
  */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) BOOL wantsDefaultContentAppearance NS_AVAILABLE_IOS(6_0);
+#else
 + (BOOL)wantsDefaultContentAppearance NS_AVAILABLE_IOS(6_0);
+#endif
 
 @end

@@ -2,7 +2,7 @@
 //  UIScreen.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,12 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 @class UIScreenMode, CADisplayLink, UIView;
 
 // Object is the UIScreen that represents the new screen. Connection notifications are not sent for screens present when the application is first launched
-UIKIT_EXTERN NSString *const UIScreenDidConnectNotification NS_AVAILABLE_IOS(3_2);
+UIKIT_EXTERN NSNotificationName const UIScreenDidConnectNotification NS_AVAILABLE_IOS(3_2);
 // Object is the UIScreen that represented the disconnected screen.
-UIKIT_EXTERN NSString *const UIScreenDidDisconnectNotification NS_AVAILABLE_IOS(3_2);
+UIKIT_EXTERN NSNotificationName const UIScreenDidDisconnectNotification NS_AVAILABLE_IOS(3_2);
 // Object is the UIScreen which changed. [object currentMode] is the new UIScreenMode.
-UIKIT_EXTERN NSString *const UIScreenModeDidChangeNotification NS_AVAILABLE_IOS(3_2);
-UIKIT_EXTERN NSString *const UIScreenBrightnessDidChangeNotification NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN NSNotificationName const UIScreenModeDidChangeNotification NS_AVAILABLE_IOS(3_2);
+UIKIT_EXTERN NSNotificationName const UIScreenBrightnessDidChangeNotification NS_AVAILABLE_IOS(5_0);
 
 // when the connected screen is overscanning, UIScreen can attempt to compensate for the overscan to avoid clipping
 typedef NS_ENUM(NSInteger, UIScreenOverscanCompensation) {
@@ -34,8 +34,13 @@ typedef NS_ENUM(NSInteger, UIScreenOverscanCompensation) {
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject <UITraitEnvironment>
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) NSArray<UIScreen *> *screens NS_AVAILABLE_IOS(3_2);          // all screens currently attached to the device
+@property(class, nonatomic, readonly) UIScreen *mainScreen;      // the device's internal screen
+#else
 + (NSArray<UIScreen *> *)screens NS_AVAILABLE_IOS(3_2);          // all screens currently attached to the device
 + (UIScreen *)mainScreen;      // the device's internal screen
+#endif
 
 @property(nonatomic,readonly) CGRect  bounds;                // Bounds of entire screen in points
 @property(nonatomic,readonly) CGFloat scale NS_AVAILABLE_IOS(4_0);
@@ -64,7 +69,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject <UITraitEnvironment>
 
 - (nullable CADisplayLink *)displayLinkWithTarget:(id)target selector:(SEL)sel NS_AVAILABLE_IOS(4_0);
 
-@property (nullable, nonatomic, weak, readonly) UIView *focusedView NS_AVAILABLE_IOS(9_0);
+@property (nullable, nonatomic, weak, readonly) id<UIFocusItem> focusedItem NS_AVAILABLE_IOS(10_0);
+@property (nullable, nonatomic, weak, readonly) UIView *focusedView NS_AVAILABLE_IOS(9_0); // If focusedItem is not a view, this returns that item's containing view. Otherwise they are equal.
 @property (readonly, nonatomic) BOOL supportsFocus NS_AVAILABLE_IOS(9_0);
 
 @property(nonatomic,readonly) CGRect applicationFrame NS_DEPRECATED_IOS(2_0, 9_0, "Use -[UIScreen bounds]") __TVOS_PROHIBITED;

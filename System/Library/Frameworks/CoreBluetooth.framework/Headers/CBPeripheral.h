@@ -58,7 +58,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @discussion The delegate object that will receive peripheral events.
  */
-@property(assign, nonatomic, nullable) id<CBPeripheralDelegate> delegate;
+@property(weak, nonatomic, nullable) id<CBPeripheralDelegate> delegate;
 
 /*!
  *  @property name

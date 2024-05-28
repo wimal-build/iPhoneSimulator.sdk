@@ -13,13 +13,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/BNNS/bnns.h</key>
+		<data>
+		b/zrvAutq8Srs+6H6x3xw8s85VY=
+		</data>
 		<key>Headers/LinearAlgebra/LinearAlgebra.h</key>
 		<data>
 		QartZcPwaL09Mm0NQNyyYipDC30=
 		</data>
 		<key>Headers/LinearAlgebra/arithmetic.h</key>
 		<data>
-		ByDdGBdrubE5iZlCW5dUE8VmPIk=
+		VsmKuYHwLV/POVCgIfzvpW8LcWA=
 		</data>
 		<key>Headers/LinearAlgebra/base.h</key>
 		<data>
@@ -27,31 +31,39 @@
 		</data>
 		<key>Headers/LinearAlgebra/linear_systems.h</key>
 		<data>
-		+T+cGnOti3n/Na6Q8MvXkCFv9O0=
+		5u9eMl3Ex+mxWM/Eh4fJO8oqveM=
 		</data>
 		<key>Headers/LinearAlgebra/matrix.h</key>
 		<data>
-		5p75w7wpQr5t8PycNpt775UMDOI=
+		NPAyCzdL6Y+hcUqMLTp2klDDAOs=
 		</data>
 		<key>Headers/LinearAlgebra/norms.h</key>
 		<data>
-		FB1jG/21jvCJenikoNh4Pjp69vg=
+		r2lQh1FeF5gSuHGRIN4o8MLieSQ=
 		</data>
 		<key>Headers/LinearAlgebra/object.h</key>
 		<data>
-		J4SiPW6EIAaDCMaITy1piGBdy6M=
+		lQL+GE1gaEwQhbh1ijB+ip3Gg88=
 		</data>
 		<key>Headers/LinearAlgebra/splat.h</key>
 		<data>
-		VzVSaTK3kz2w8SFiCiwxnD5MX3I=
+		K3vFilH1oqvbeWJqjmis7kIZDKs=
 		</data>
 		<key>Headers/LinearAlgebra/vector.h</key>
 		<data>
-		v1CRwCUWfNc+lbUbe1DqrVYbceE=
+		U2NeynRlzOVZxQuMEbJdlG+5cI0=
+		</data>
+		<key>Headers/Quadrature/Integration.h</key>
+		<data>
+		OHgC9JjTr6nEjjhbenS15JKjIZ8=
+		</data>
+		<key>Headers/Quadrature/Quadrature.h</key>
+		<data>
+		mboj6j9IztPOaSghLI0xX8SyGHk=
 		</data>
 		<key>Headers/Sparse/BLAS.h</key>
 		<data>
-		s4HS3xYx874QavZjB496Nqp9Lc4=
+		3NuUlT9/uSNlW/ZCb21+nlhvF40=
 		</data>
 		<key>Headers/Sparse/Sparse.h</key>
 		<data>
@@ -63,75 +75,83 @@
 		</data>
 		<key>Headers/cblas.h</key>
 		<data>
-		iuvIBc+NQ/hkeG6vZUUpRHTlTz4=
+		+8ukri3W+qQ/OcNzMVBowOLE1Z8=
 		</data>
 		<key>Headers/clapack.h</key>
 		<data>
-		AtgkGm4mW/Mskk1z16fNaPkQPqA=
+		sRdlIYZhB33NK7Lo74vewhMY2UA=
 		</data>
 		<key>Headers/vBasicOps.h</key>
 		<data>
-		NkfQ2hWJchgW1tKnjtJFTc3UgKM=
+		lUk9yN0CfysccM6oLC2lB0G3gvY=
 		</data>
 		<key>Headers/vBigNum.h</key>
 		<data>
-		5qIOS6aD+X/CWx6amisM8pxSnnQ=
+		CK1d52UjT9d2uY63/Jrb1Lznz1Y=
 		</data>
 		<key>Headers/vDSP.h</key>
 		<data>
-		RliziY/QtsWznnP66qauTM/V0I0=
+		WD2OckY056SLPVasKEqWSbo552Y=
 		</data>
 		<key>Headers/vDSP_translate.h</key>
 		<data>
-		dUX3rEEnJo2D4r476/15sCCrULw=
+		78WMmcvNTatFQDkb/i/NKPzIX88=
 		</data>
 		<key>Headers/vForce.h</key>
 		<data>
-		ZdfMlyAolvA5hUYjNMu27ewd/kM=
+		C74u/rpO/PZ5+3gzLZYh0kOzpdE=
 		</data>
 		<key>Headers/vecLib.h</key>
 		<data>
-		ZULpYkn/FeEgISvPhvdOEb5MPhw=
+		qfJugws1fyubMscNetA2oOsh/DQ=
 		</data>
 		<key>Headers/vecLibTypes.h</key>
 		<data>
-		qWpmHUGnBU8KVcB0giWrdvu0Zw4=
+		j4uFO8q2w+kJoG3OedHxLMg2woM=
 		</data>
 		<key>Headers/vectorOps.h</key>
 		<data>
-		ks9qs5Y/REzE/Mr41X3DdPge7xU=
+		cRUKkYDJk1ObP5n9Vym6wa7rcac=
 		</data>
 		<key>Headers/vfp.h</key>
 		<data>
-		ouSdFsxOnCo2itabI+2m4+mqlaQ=
+		SdPhPujpcyw2kUQE012dc3JYn40=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c4YpmANVC4JlYGqMlCdafZBQfb8=
+		8bj5GsW6j/n/ObIN9M2THeLk72M=
 		</data>
 		<key>libBLAS.dylib</key>
 		<data>
-		/tT7LcIO4JQj++vK/+jpikghTvc=
+		vfqf+PA412V+FVq6whRgGafbJVg=
+		</data>
+		<key>libBNNS.dylib</key>
+		<data>
+		ZQ51IODiGtVcnzQ5aeb/E71zUsk=
 		</data>
 		<key>libLAPACK.dylib</key>
 		<data>
-		YpLceVuBPKZwvmP4WZLDI7HG8HQ=
+		RlZXUDS6vQ/QHqgwzG8gNvDFFmg=
 		</data>
 		<key>libLinearAlgebra.dylib</key>
 		<data>
-		F7ihr7jfqYKLem19RAO9NN1VL5Y=
+		MFBXsV6t4wpNneFLjShdG8UCaH8=
+		</data>
+		<key>libQuadrature.dylib</key>
+		<data>
+		jxRpEnwqOFzc/U9gyP58yAc5bfM=
 		</data>
 		<key>libSparseBLAS.dylib</key>
 		<data>
-		4X1R8U0tqpAnxueETcsR7gIZMfc=
+		Wj0aHD5oQZdaohnpEo/2TtTM6H0=
 		</data>
 		<key>libvDSP.dylib</key>
 		<data>
-		edo/PC7aOF0ZN/2FVRmzN8tGoxg=
+		7oJQR+33WDxyfxJU/cj8rGRkuK4=
 		</data>
 		<key>libvMisc.dylib</key>
 		<data>
-		W7OqcCgCCL/1GAsQw4CVxQ9QiV4=
+		1qbN22Z6cX6Q2mbP208je7I/28c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -145,13 +165,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/BNNS/bnns.h</key>
+		<data>
+		b/zrvAutq8Srs+6H6x3xw8s85VY=
+		</data>
 		<key>Headers/LinearAlgebra/LinearAlgebra.h</key>
 		<data>
 		QartZcPwaL09Mm0NQNyyYipDC30=
 		</data>
 		<key>Headers/LinearAlgebra/arithmetic.h</key>
 		<data>
-		ByDdGBdrubE5iZlCW5dUE8VmPIk=
+		VsmKuYHwLV/POVCgIfzvpW8LcWA=
 		</data>
 		<key>Headers/LinearAlgebra/base.h</key>
 		<data>
@@ -159,31 +183,39 @@
 		</data>
 		<key>Headers/LinearAlgebra/linear_systems.h</key>
 		<data>
-		+T+cGnOti3n/Na6Q8MvXkCFv9O0=
+		5u9eMl3Ex+mxWM/Eh4fJO8oqveM=
 		</data>
 		<key>Headers/LinearAlgebra/matrix.h</key>
 		<data>
-		5p75w7wpQr5t8PycNpt775UMDOI=
+		NPAyCzdL6Y+hcUqMLTp2klDDAOs=
 		</data>
 		<key>Headers/LinearAlgebra/norms.h</key>
 		<data>
-		FB1jG/21jvCJenikoNh4Pjp69vg=
+		r2lQh1FeF5gSuHGRIN4o8MLieSQ=
 		</data>
 		<key>Headers/LinearAlgebra/object.h</key>
 		<data>
-		J4SiPW6EIAaDCMaITy1piGBdy6M=
+		lQL+GE1gaEwQhbh1ijB+ip3Gg88=
 		</data>
 		<key>Headers/LinearAlgebra/splat.h</key>
 		<data>
-		VzVSaTK3kz2w8SFiCiwxnD5MX3I=
+		K3vFilH1oqvbeWJqjmis7kIZDKs=
 		</data>
 		<key>Headers/LinearAlgebra/vector.h</key>
 		<data>
-		v1CRwCUWfNc+lbUbe1DqrVYbceE=
+		U2NeynRlzOVZxQuMEbJdlG+5cI0=
+		</data>
+		<key>Headers/Quadrature/Integration.h</key>
+		<data>
+		OHgC9JjTr6nEjjhbenS15JKjIZ8=
+		</data>
+		<key>Headers/Quadrature/Quadrature.h</key>
+		<data>
+		mboj6j9IztPOaSghLI0xX8SyGHk=
 		</data>
 		<key>Headers/Sparse/BLAS.h</key>
 		<data>
-		s4HS3xYx874QavZjB496Nqp9Lc4=
+		3NuUlT9/uSNlW/ZCb21+nlhvF40=
 		</data>
 		<key>Headers/Sparse/Sparse.h</key>
 		<data>
@@ -195,71 +227,79 @@
 		</data>
 		<key>Headers/cblas.h</key>
 		<data>
-		iuvIBc+NQ/hkeG6vZUUpRHTlTz4=
+		+8ukri3W+qQ/OcNzMVBowOLE1Z8=
 		</data>
 		<key>Headers/clapack.h</key>
 		<data>
-		AtgkGm4mW/Mskk1z16fNaPkQPqA=
+		sRdlIYZhB33NK7Lo74vewhMY2UA=
 		</data>
 		<key>Headers/vBasicOps.h</key>
 		<data>
-		NkfQ2hWJchgW1tKnjtJFTc3UgKM=
+		lUk9yN0CfysccM6oLC2lB0G3gvY=
 		</data>
 		<key>Headers/vBigNum.h</key>
 		<data>
-		5qIOS6aD+X/CWx6amisM8pxSnnQ=
+		CK1d52UjT9d2uY63/Jrb1Lznz1Y=
 		</data>
 		<key>Headers/vDSP.h</key>
 		<data>
-		RliziY/QtsWznnP66qauTM/V0I0=
+		WD2OckY056SLPVasKEqWSbo552Y=
 		</data>
 		<key>Headers/vDSP_translate.h</key>
 		<data>
-		dUX3rEEnJo2D4r476/15sCCrULw=
+		78WMmcvNTatFQDkb/i/NKPzIX88=
 		</data>
 		<key>Headers/vForce.h</key>
 		<data>
-		ZdfMlyAolvA5hUYjNMu27ewd/kM=
+		C74u/rpO/PZ5+3gzLZYh0kOzpdE=
 		</data>
 		<key>Headers/vecLib.h</key>
 		<data>
-		ZULpYkn/FeEgISvPhvdOEb5MPhw=
+		qfJugws1fyubMscNetA2oOsh/DQ=
 		</data>
 		<key>Headers/vecLibTypes.h</key>
 		<data>
-		qWpmHUGnBU8KVcB0giWrdvu0Zw4=
+		j4uFO8q2w+kJoG3OedHxLMg2woM=
 		</data>
 		<key>Headers/vectorOps.h</key>
 		<data>
-		ks9qs5Y/REzE/Mr41X3DdPge7xU=
+		cRUKkYDJk1ObP5n9Vym6wa7rcac=
 		</data>
 		<key>Headers/vfp.h</key>
 		<data>
-		ouSdFsxOnCo2itabI+2m4+mqlaQ=
+		SdPhPujpcyw2kUQE012dc3JYn40=
 		</data>
 		<key>libBLAS.dylib</key>
 		<data>
-		/tT7LcIO4JQj++vK/+jpikghTvc=
+		vfqf+PA412V+FVq6whRgGafbJVg=
+		</data>
+		<key>libBNNS.dylib</key>
+		<data>
+		ZQ51IODiGtVcnzQ5aeb/E71zUsk=
 		</data>
 		<key>libLAPACK.dylib</key>
 		<data>
-		YpLceVuBPKZwvmP4WZLDI7HG8HQ=
+		RlZXUDS6vQ/QHqgwzG8gNvDFFmg=
 		</data>
 		<key>libLinearAlgebra.dylib</key>
 		<data>
-		F7ihr7jfqYKLem19RAO9NN1VL5Y=
+		MFBXsV6t4wpNneFLjShdG8UCaH8=
+		</data>
+		<key>libQuadrature.dylib</key>
+		<data>
+		jxRpEnwqOFzc/U9gyP58yAc5bfM=
 		</data>
 		<key>libSparseBLAS.dylib</key>
 		<data>
-		4X1R8U0tqpAnxueETcsR7gIZMfc=
+		Wj0aHD5oQZdaohnpEo/2TtTM6H0=
 		</data>
 		<key>libvDSP.dylib</key>
 		<data>
-		edo/PC7aOF0ZN/2FVRmzN8tGoxg=
+		7oJQR+33WDxyfxJU/cj8rGRkuK4=
 		</data>
 		<key>libvMisc.dylib</key>
 		<data>
-		W7OqcCgCCL/1GAsQw4CVxQ9QiV4=
+		1qbN22Z6cX6Q2mbP208je7I/28c=
 		</data>
 	</dict>
 	<key>rules</key>

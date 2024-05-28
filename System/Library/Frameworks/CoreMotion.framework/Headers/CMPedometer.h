@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <CoreMotion/CMAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*
@@ -108,6 +110,64 @@ NS_CLASS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED
  */
 @property(readonly, nonatomic, nullable) NSNumber *currentCadence NS_AVAILABLE(NA,9_0);
 
+/*
+ * averageActivePace
+ *
+ *
+ * Discussion:
+ *
+ *      For updates this returns the average active pace since
+ *      startPedometerUpdatesFromDate:withHandler:, in s/m (seconds per meter).
+ *      For historical queries this returns average active pace between startDate
+ *      and endDate. The average active pace omits the non-active time, giving
+ *      the average pace from when the user was moving. Value is nil if any of
+ *      the following are true:
+ *
+ *         (1) (For historical queries) this information is not available,
+ *             e.g. the user did not move between startDate and endDate;
+ *         (2) Unsupported platform.
+ *
+ */
+@property(readonly, nonatomic, nullable) NSNumber *averageActivePace NS_AVAILABLE(NA,10_0);
+
+@end
+
+/*
+ *  CMPedometerEventType
+ *
+ *  Discussion:
+ *      Events describing the transitions of pedestrian activity.
+ */
+typedef NS_ENUM(NSInteger, CMPedometerEventType) {
+	CMPedometerEventTypePause,
+	CMPedometerEventTypeResume
+} NS_ENUM_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED;
+
+/*
+ *  CMPedometerEvent
+ *
+ *  Discussion:
+ *      An event marking the change in user's pedestrian activity.
+ */
+NS_CLASS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED
+@interface CMPedometerEvent : NSObject <NSSecureCoding, NSCopying>
+
+/*
+ *  date
+ *
+ *  Discussion:
+ *      The time of occurence of event.
+ */
+@property(readonly, nonatomic) NSDate *date;
+
+/*
+ *  type
+ *
+ *  Discussion:
+ *      Event type describing the transition of pedestrian activity.
+ */
+@property(readonly, nonatomic) CMPedometerEventType type;
+
 @end
 
 /*
@@ -118,6 +178,15 @@ NS_CLASS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED
  *      types are defined in "CMError.h".
  */
 typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error) __TVOS_PROHIBITED;
+
+/*
+ *  CMPedometerEventHandler
+ *
+ *  Discussion:
+ *      Typedef of block that will be invoked when pedometer event is available.
+ *      Error types are defined in "CMError.h".
+ */
+typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerEvent, NSError * __nullable error) NS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED;
 
 /*
  *  CMPedometer
@@ -183,6 +252,14 @@ NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
 + (BOOL)isCadenceAvailable NS_AVAILABLE(NA,9_0);
 
 /*
+ *  isPedometerEventTrackingAvailable
+ *
+ *  Discussion:
+ *      Determines whether the device supports pedometer events.
+ */
++ (BOOL)isPedometerEventTrackingAvailable NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
+
+/*
  *  queryPedometerDataFromDate:toDate:withHandler:
  *
  *  Discussion:
@@ -218,6 +295,23 @@ NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
  *      Stops pedometer updates.
  */
 - (void)stopPedometerUpdates;
+
+/*
+ *  startPedometerEventUpdatesWithHandler:
+ *
+ *  Discussion:
+ *      Starts pedometer event updates on a serial queue.
+ *      Events are available only when the apps are running in foreground / background.
+ */
+- (void)startPedometerEventUpdatesWithHandler:(CMPedometerEventHandler)handler NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
+
+/*
+ *  stopPedometerEventUpdates
+ *
+ *  Discussion:
+ *      Stops pedometer event updates.
+ */
+- (void)stopPedometerEventUpdates NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
 
 @end
 

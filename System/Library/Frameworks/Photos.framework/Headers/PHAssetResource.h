@@ -6,13 +6,14 @@
 //
 
 #import <Photos/PhotosTypes.h>
+#import <Photos/PhotosDefines.h>
 
 @class PHAsset;
 @class PHLivePhoto;
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface PHAssetResource : NSObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResource : NSObject
 
 @property (nonatomic, assign, readonly) PHAssetResourceType type;
 @property (nonatomic, copy, readonly) NSString *assetLocalIdentifier;
@@ -22,7 +23,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PHAssetResource : NSObject
 #pragma mark - Getting resources
 
 + (NSArray<PHAssetResource *> *)assetResourcesForAsset:(PHAsset *)asset;
-+ (NSArray<PHAssetResource *> *)assetResourcesForLivePhoto:(PHLivePhoto *)livePhoto NS_AVAILABLE_IOS(9_1);
++ (NSArray<PHAssetResource *> *)assetResourcesForLivePhoto:(PHLivePhoto *)livePhoto PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0);
 
 @end
 

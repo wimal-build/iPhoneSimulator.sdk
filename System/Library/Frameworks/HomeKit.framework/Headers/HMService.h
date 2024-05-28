@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *             A service is composed of one or more characteristics that can be 
  *             modified.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMService : NSObject
 
 /*!
@@ -73,6 +73,21 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @property(readonly, getter=isUserInteractive, nonatomic) BOOL userInteractive NS_AVAILABLE_IOS(9_0);
 
 /*!
+ * @brief Indicates if this services is the primary service.
+ *
+ * @discussion Applications should use this property to show the primary service on the accessory.
+ */
+@property(readonly, getter=isPrimaryService, nonatomic) BOOL primaryService NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ * @brief Array of HMService objects that represents all the services that the service links to.
+ *  
+ * @discussion Applications should use this property to show logical grouping of services on the accessory.
+ *             linkedServices will be nil when the service does not link to any other services.
+ */
+@property(readonly, copy, nonatomic) NSArray<HMService *> * __nullable linkedServices NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
  * @brief This method is used to change the name of the service.
  *
  * @param name New name for the service.
@@ -83,22 +98,28 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
- * @brief This method is used to set up the service type of the device connected to a switch or an outlet.
+ * @brief This method is used to set up the service type of the device connected to a contact sensor, switch or an outlet.
  *
- * @param serviceType Service type of the device connected to a switch/outlet service.
+ * @param serviceType Service type of the device connected to a contact sensor/switch/outlet service.
  *
- * @discussion This method is only valid for services of type HMServiceTypeOutlet and HMServiceTypeSwitch.
- *             serviceType can be any of the HomeKit Accessory Profile defined services (except HMServiceTypeOutlet
- *             or HMServiceTypeSwitch) that supports HMCharacteristicTypePowerState characteristic.
+ * @discussion This method is only valid for the services of the following types:
+ *                 HMServiceTypeOutlet, HMServiceTypeContactSensor and HMServiceTypeSwitch
+ *
+ *             For services of type HMServiceTypeOutlet and HMServiceTypeSwitch, serviceType can be one of the
+ *             HomeKit Accessory Profile defined services (except HMServiceTypeOutlet or HMServiceTypeSwitch)
+ *             that supports HMCharacteristicTypePowerState characteristic.
+ *
+ *             For services of type HMServiceTypeContactSensor, serviceType can be one of the following services:
+ *                 HMServiceTypeDoor, HMServiceTypeGarageDoorOpener, HMServiceTypeWindow and HMServiceTypeWindowCovering
  *
  * @param completion Block that is invoked once the request is processed.
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateAssociatedServiceType:(nullable NSString *)serviceType completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updateAssociatedServiceType:(nullable NSString *)serviceType completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 @end
 

@@ -2,7 +2,7 @@
 //  UICollectionViewFlowLayout.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UICollectionViewLayout.h>
@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 UIKIT_EXTERN NSString *const UICollectionElementKindSectionHeader NS_AVAILABLE_IOS(6_0);
 UIKIT_EXTERN NSString *const UICollectionElementKindSectionFooter NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN const CGSize UICollectionViewFlowLayoutAutomaticSize  NS_AVAILABLE_IOS(10_0);
 
 typedef NS_ENUM(NSInteger, UICollectionViewScrollDirection) {
     UICollectionViewScrollDirectionVertical,

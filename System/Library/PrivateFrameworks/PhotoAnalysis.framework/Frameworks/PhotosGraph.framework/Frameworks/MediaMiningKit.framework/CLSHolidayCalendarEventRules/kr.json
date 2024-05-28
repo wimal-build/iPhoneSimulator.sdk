@@ -1,0 +1,322 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 1,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "F2817053-568E-4BEF-9C3F-A93F4A3888FC"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 13,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 2,
+          "month" : 2,
+          "year" : 2011
+        },
+        {
+          "day" : 22,
+          "month" : 1,
+          "year" : 2012
+        },
+        {
+          "day" : 9,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 30,
+          "month" : 1,
+          "year" : 2014
+        },
+        {
+          "day" : 18,
+          "month" : 2,
+          "year" : 2015
+        },
+        {
+          "day" : 7,
+          "month" : 2,
+          "year" : 2016
+        },
+        {
+          "day" : 27,
+          "month" : 1,
+          "year" : 2017
+        },
+        {
+          "day" : 15,
+          "month" : 2,
+          "year" : 2018
+        },
+        {
+          "day" : 4,
+          "month" : 2,
+          "year" : 2019
+        },
+        {
+          "day" : 24,
+          "month" : 1,
+          "year" : 2020
+        }
+      ],
+      "name" : "Lunar Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "CA950879-30B5-4780-86AF-166957129149"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 5
+        }
+      ],
+      "name" : "Children’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "FC86D7CE-8F10-4059-BF57-19C5B7E59FAF"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 8,
+          "month" : 5
+        }
+      ],
+      "name" : "Parents’ Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "AD9F0243-18DC-4A8F-BD15-701938F0804F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 21,
+          "month" : 5,
+          "year" : 2010
+        },
+        {
+          "day" : 10,
+          "month" : 5,
+          "year" : 2011
+        },
+        {
+          "day" : 28,
+          "month" : 5,
+          "year" : 2012
+        },
+        {
+          "day" : 17,
+          "month" : 5,
+          "year" : 2013
+        },
+        {
+          "day" : 6,
+          "month" : 5,
+          "year" : 2014
+        },
+        {
+          "day" : 25,
+          "month" : 5,
+          "year" : 2015
+        },
+        {
+          "day" : 14,
+          "month" : 5,
+          "year" : 2016
+        },
+        {
+          "day" : 3,
+          "month" : 5,
+          "year" : 2017
+        },
+        {
+          "day" : 22,
+          "month" : 5,
+          "year" : 2018
+        },
+        {
+          "day" : 12,
+          "month" : 5,
+          "year" : 2019
+        },
+        {
+          "day" : 30,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Buddha’s Birthday",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "EE090BAF-C3FB-4A00-928A-898951AA134D"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 6,
+          "month" : 6
+        }
+      ],
+      "name" : "Memorial Day_KR",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "F036AA81-B258-4507-B18F-C889569FAFF3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 15,
+          "month" : 8
+        }
+      ],
+      "name" : "Liberation Day_KR",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "656FB99B-6817-4768-8557-5E28D66FA2B3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 22,
+          "month" : 9,
+          "year" : 2010
+        },
+        {
+          "day" : 12,
+          "month" : 9,
+          "year" : 2011
+        },
+        {
+          "day" : 30,
+          "month" : 9,
+          "year" : 2012
+        },
+        {
+          "day" : 19,
+          "month" : 9,
+          "year" : 2013
+        },
+        {
+          "day" : 8,
+          "month" : 9,
+          "year" : 2014
+        },
+        {
+          "day" : 27,
+          "month" : 9,
+          "year" : 2015
+        },
+        {
+          "day" : 15,
+          "month" : 9,
+          "year" : 2016
+        },
+        {
+          "day" : 4,
+          "month" : 10,
+          "year" : 2017
+        },
+        {
+          "day" : 24,
+          "month" : 9,
+          "year" : 2018
+        },
+        {
+          "day" : 13,
+          "month" : 9,
+          "year" : 2019
+        },
+        {
+          "day" : 1,
+          "month" : 10,
+          "year" : 2020
+        }
+      ],
+      "name" : "Harvest Festival_KR",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 0}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "1DBFEAA7-0F79-4E0F-976A-21A9176B966F"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "kr",
+    "countryName" : "South Korea"
+  }
+}

@@ -7,6 +7,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+CA_CLASS_AVAILABLE (10.5, 2.0, 9.0, 2.0)
 @interface CAScrollLayer : CALayer
 
 /* Changes the origin of the layer to point 'p'. */
@@ -46,12 +47,12 @@ NS_ASSUME_NONNULL_BEGIN
 /* `scrollMode' values. */
 
 CA_EXTERN NSString * const kCAScrollNone
-    __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
+    CA_AVAILABLE_STARTING (10.5, 2.0, 9.0, 2.0);
 CA_EXTERN NSString * const kCAScrollVertically
-    __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
+    CA_AVAILABLE_STARTING (10.5, 2.0, 9.0, 2.0);
 CA_EXTERN NSString * const kCAScrollHorizontally
-    __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
+    CA_AVAILABLE_STARTING (10.5, 2.0, 9.0, 2.0);
 CA_EXTERN NSString * const kCAScrollBoth
-    __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
+    CA_AVAILABLE_STARTING (10.5, 2.0, 9.0, 2.0);
 
 NS_ASSUME_NONNULL_END

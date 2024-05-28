@@ -2,7 +2,7 @@
 //  UIPanGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -22,7 +22,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIPanGestureRecognizer : UIGestureRecogni
 - (CGPoint)translationInView:(nullable UIView *)view;                        // translation in the coordinate system of the specified view
 - (void)setTranslation:(CGPoint)translation inView:(nullable UIView *)view;
 
-- (CGPoint)velocityInView:(nullable UIView *)view;                           // velocity of the pan in pixels/second in the coordinate system of the specified view
+- (CGPoint)velocityInView:(nullable UIView *)view;                           // velocity of the pan in points/second in the coordinate system of the specified view
 
 @end
 

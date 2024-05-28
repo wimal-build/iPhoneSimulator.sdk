@@ -31,7 +31,7 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface UIStoryboardSegue : NSObject
 @end
 
 /// Encapsulates the source of a prospective unwind segue.
-/// You do not create instances of this class directly. Instead, UIKit creates an instance of this class and sends -destinationViewControllerForUnwindSource: to each ancestor of the sourceViewController until one returns a non-null result or the chain is exhausted.
+/// You do not create instances of this class directly. Instead, UIKit creates an instance of this class and sends -allowedChildViewControllersForUnwindingFromSource: to each ancestor of the sourceViewController until it finds a view controller which returns YES from -canPerformUnwindSegueAction:fromViewController:withSender:.
 NS_CLASS_AVAILABLE_IOS(9_0) @interface UIStoryboardUnwindSegueSource : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

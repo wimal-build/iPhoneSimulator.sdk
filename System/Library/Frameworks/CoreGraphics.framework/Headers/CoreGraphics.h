@@ -10,7 +10,7 @@
 #include <CoreGraphics/CGAffineTransform.h>
 #include <CoreGraphics/CGBitmapContext.h>
 #include <CoreGraphics/CGColor.h>
-#include <CoreGraphics/CGColorConverter.h>
+#include <CoreGraphics/CGColorConversionInfo.h>
 #include <CoreGraphics/CGColorSpace.h>
 #include <CoreGraphics/CGContext.h>
 #include <CoreGraphics/CGDataConsumer.h>

@@ -25,6 +25,8 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 
 - (void)scrollToRowAtIndex:(NSInteger)index;
 
+- (void)performSegueForRow:(NSInteger)row WK_AVAILABLE_WATCHOS_ONLY(3.0);
+
 @end
 
 NS_ASSUME_NONNULL_END

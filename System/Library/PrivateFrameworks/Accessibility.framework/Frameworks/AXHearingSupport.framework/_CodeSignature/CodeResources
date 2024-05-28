@@ -6,29 +6,59 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		tzBQB/+tsFddJiPbA4vhQnJ2lhk=
+		SkQMH3sFNxFHy8t/8uqYai126oI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QD2ACmNJgiSIfkMzxWdp17XLz+Y=
+		N1Osx5M3ZJr9LtGUfEaP4QsFx6M=
+		</data>
+		<key>TTYDBModel.momd/TTYDBModel.mom</key>
+		<data>
+		zRhKusyVTekAKYGRJqoORVWqb30=
+		</data>
+		<key>TTYDBModel.momd/VersionInfo.plist</key>
+		<data>
+		m2gXSf3mGQBUPgZ1C6t5lO/Y3TA=
+		</data>
+		<key>TTYEntitlements.plist</key>
+		<data>
+		kYpiiIM1kjz0s6zYd0JYiUb5LU8=
 		</data>
 		<key>XPCServices/heard.xpc/Info.plist</key>
 		<data>
-		+bc8KvKxASrDlZWi+1tbJxGcI1M=
+		N5Vslw4EPLArEnO31So8uVngwJk=
 		</data>
 		<key>XPCServices/heard.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		+U0/yb8QzqFCnoz4o4auRQWzQaA=
+		iOx76cmemqkp0ca0oN3g4M3uGWM=
 		</data>
 		<key>XPCServices/heard.xpc/heard</key>
 		<data>
-		33PNU7BTn0eCxnRxjnjvLg7cBQQ=
+		MCNC1q0WFmE2/1M3c40lzpl4+sU=
 		</data>
 		<key>ar.lproj/HearingAidSupport.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ixgw9CYwEmxcyU07X2zn0hWPYiw=
+			Yx6pBi8YpbGMiQlif65YN6AicaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7PwSxUEyYr+bERUdD1Eq2akHiQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -37,7 +67,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8M3KJGItmtT1WsD+EnfjXBiiyYI=
+			S1RqVK0forTyL132eML7bH/arH4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aSdtVYyX76QDOaYUAlHI9PGX0Xo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -46,7 +94,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lqRZkuR+P7SAyDAdr6ZawFRrHIk=
+			r3LYXEz8sczbqY6+z+7zXwWRrLg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hBkbe5vLekG3X3qOyCk18EazVf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -55,7 +121,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fIYoiSDlb8IrlAvtD3jggvEqIO4=
+			KZEVEBxEODpsC2MP1hA0v8E6mZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MtwhnUbSCfmvkI0CNUK73r1z6c0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -64,7 +148,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			leR+wp7tgBJBr7SFqqJF+wmbVbo=
+			Ux5mRiGGIw/oDCL5XoVg96kOGiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZvcW6l2Nkeb8eNLtpFeCb5Jte6Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -73,7 +175,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1VE4ak1eipEZTsqBzm8tsn5lxno=
+			RkTgFS0gSbwailoMtWnHeFngB9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			duRNPyM+dlMWKpvJbyxCkJUh0P4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -82,7 +202,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EsUD5gm3LW5ssQNN3wg5P8p/CD0=
+			faSysYRYJtO8NL3rAPNUiqhFCk4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pBpvnnnq53ZoN5Q5y5CEHDzhYxg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FS+dEHtAN4v0qqNekWpMjw43ekI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -91,7 +229,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ANiMB8Ninxv567B+Ny32Aw9by5w=
+			2fczsmiqtQvfNOUTJELCsJJrhas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FQY7vGC50utCwtslM3LcudrKqRQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -100,7 +256,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EsUD5gm3LW5ssQNN3wg5P8p/CD0=
+			MbvOcGJF3UsSXp2tcanSQFTXBy8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1ZxHXpya1cXvIqLxV4DV5s0+Ko=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -109,7 +283,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gSc1Ks7Jl05PgF3mF9Ma3UvCir4=
+			qYn4HAG06vkfwcDi/fjjob9/F0E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			konLtDRz2cWGF2xeB0yosrJrJho=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -118,7 +310,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nGqjd07kOh7D3Cf/cmgrQPtpGoo=
+			qoR526ag8JxkrQ+hxaBwK6YWROs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UNfA1sQoPiby15lTz+UGn/uQ6Os=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -127,7 +337,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MNr/3+8ibHalytqkvxO7I0lCiPU=
+			rt53OIyikKwwEeSWXAyxuZ6qr3M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8nna5l0B1crEajqLjGvXsJIJYU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -136,7 +364,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+pQ9NS/Yrtrh4nomqoJQMr5gekw=
+			TJHAhfoUzasi4ejNjGGdwzPBWso=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yj2itN22gOHVHcXfZ52QnQVlu9Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -145,7 +391,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dy9sb2ctwCn3F+79NNu2KkQOSRk=
+			B2zqfaGLskg0PWPngpV4oV7tjXU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OSa/DsFA1AJp91CpI7hYJPMtpD8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,7 +418,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KoM89DxY+mTi2lHbdXej3FJktuU=
+			Xkup6MZOad3pF6lFX+0zu6xIoso=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			609DQFfCKY6vTD2DFBncAQp4Vkc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -163,7 +445,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9tLl8mL9HD26sEhYVnKR3W2QTn0=
+			0Gh6tzBGRwmm55pvyfwfhII2Aiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DtPSlI8gQe+WBWW3CSh/tao/ZT0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -172,7 +472,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vasEm9GeGgHdX/3hFNIr9abprVc=
+			J7Z+vd/a6FvfxVKQIB59wo8TxVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7JGxsyLCQLW/0US4a4hP9ig6Qx8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -181,7 +499,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S9t5/IJA/i+oIIblJvLgA0tELNY=
+			cS0ZT4gozKHo/lmZIsuo4U2rG4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f8HFXb0V5EeOAjdwpAvdIW7eCUQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -190,7 +526,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			89PHAfD5djOWqFary9pc88DG3Gs=
+			58quuidpl5ez24+OqWY8d+4OM2k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MkHX0+joQM8Dz0eUcKw72DCKAfI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -199,7 +553,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gmK5Wy4vmC+x4iTAfFgA9nyblbQ=
+			cp742lIW5eyDS6Zj3T0EqwwBIww=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRpkYgYtNoKQZlX14W65fNZ8jh0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+AJPSjCI3H5UMG3Ehcze749FIMI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -208,7 +580,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			biFtlXDgJGw4LAPCJoUc4wM81IA=
+			XftW89ugYnYZbG1Ppw+oWG/FfOU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TvN4r9ItFknE20sqLeOpD7qkHqU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -217,7 +607,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AgJ/yWbPv+yZto82/mHWt/Bjpmw=
+			4MMvhmncwSshASxMOdKzLZfRWTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3zN2ZNk5RUq6u6kyeJ6N+kQcovs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -226,7 +634,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z6qq2eIruAsJ3/qyMsYdROB7vvs=
+			Zo4JRdFFbwe4qH7gf2JSuiK/6Bk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yuCRcAMzFOnHRI0hF6u8wiv2ruE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -235,7 +661,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/P5wpLEBzFv53xzeJ1hMcpCQnYM=
+			V2/xsH0/8XmxjoLXa5t6v5a8AK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GamRnqYaiQK6kBQR/4GnMHINFMY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -244,7 +688,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BhSTdiI9m/PK1kqUy6n9sAVMpr0=
+			uBp7IYGf8MZEj9BfdzitYutsxLQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9LfTiBU/5vItBeo5OI4E/Xsg6Wg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -253,7 +715,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FRPCDzl+T2C3dn1Kf+YN8AGXqWs=
+			/fRCu3CuNuByD+UzoO1Ac1KoRv4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u5SCSOFtJIETitQ8JKdrTXSCI4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -262,7 +742,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sZEbx1y+TCaxdBOGEr5htLujAXw=
+			0jSs2GNtcCx5II6bMvja5z2/auA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qVVsb3nVVP+eG4zjCz6h0ugpP6w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -271,7 +769,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jg9QmeWo/a4T/VLfTeZkhX5buPw=
+			nU/73saxY18SwOeBfejtvi++f80=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QhwkroVx/Y+4ul/DPmbbLqIFN7Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -280,7 +796,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xrEZANqDVVmZpdIFki5/5nn+fTM=
+			O7BP5OPb+T7P1TyBCFsNKR/h6cY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RHusOdfexGrZ4Zx4jEMiJpHeAck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -289,7 +823,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DJ+EigxOm4o3bBIeeUqTyVSsuh8=
+			95VduJ+VkpTFgZvHMXMt6ThIhgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9jqk7seszpqJ/kQ6e8Lm7H5WH2o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -298,7 +850,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tBm8DXRspfBr0c94O5hKp/Grklw=
+			VLeZA7XIaW5vC9sjxz8SP2t/cb8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			msghFOOYv+vvWJ58kXPUSlTVwsI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -307,7 +877,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p/W/xncmXVZneC61gYcCtD/+Pa8=
+			JpXmBKhjs0YIPNwPGkwob50iJuQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRpkYgYtNoKQZlX14W65fNZ8jh0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FEkdyv/7AQnkeL/TTnxxC84VMUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -316,7 +904,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KrOEyXtS5Zr7rtFmxyKgMNIL5d0=
+			wgToS90AWJdBLdmFkn8gSlBnrEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tnowuh3z+mSujiJf8jUVf8racAI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,7 +931,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tlJd/6pz5nGxl8Ucco+RYGmwFjE=
+			wt1ksVwQb6f6fyT1X9BS+Mgig4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pDJSW8+LJIJ1EiGMfQPmHmXS8bc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -334,7 +958,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6mX2KNha42yawxuWwa1VJr0vf6A=
+			JJWbgW7kZ7IXGX6dxNXVVZbYJn4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2o8S1YfwuAHbU8IRFC9WUA9WNyk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -343,7 +985,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J++eaRfZYkWfqnsHv2e7sJQklIY=
+			t39Mn96yVGvWvN0RQkbClH19pnE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kZEPrSl+TNREQr3iBtLTbbwi3u0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -352,7 +1012,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m9a9rz/OsSYlxuvrhOOXQmnH8wM=
+			7poCYImQxwKDoUm2jg2/8/iPPZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ry5at03Dc0WNMG/9A7pEDpBxWJU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -361,7 +1039,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xQZZbpcPmbz2b9In7nXwCXXArJQ=
+			DpZUb4anMUbKJGYz7tCSa65cEdA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A4A8HPv/60jgU+XQHEXXbBFcoes=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -370,7 +1066,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Eb/pGqT5viU/2EW6QNUnwwF+pzk=
+			aQXsuEdyC1lXF90+BROAnNehOJQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRpkYgYtNoKQZlX14W65fNZ8jh0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JpBADs7TQR+m4q8EQt898nTk/1Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -380,25 +1094,55 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		tzBQB/+tsFddJiPbA4vhQnJ2lhk=
+		SkQMH3sFNxFHy8t/8uqYai126oI=
+		</data>
+		<key>TTYDBModel.momd/TTYDBModel.mom</key>
+		<data>
+		zRhKusyVTekAKYGRJqoORVWqb30=
+		</data>
+		<key>TTYDBModel.momd/VersionInfo.plist</key>
+		<data>
+		m2gXSf3mGQBUPgZ1C6t5lO/Y3TA=
+		</data>
+		<key>TTYEntitlements.plist</key>
+		<data>
+		kYpiiIM1kjz0s6zYd0JYiUb5LU8=
 		</data>
 		<key>XPCServices/heard.xpc/Info.plist</key>
 		<data>
-		+bc8KvKxASrDlZWi+1tbJxGcI1M=
+		N5Vslw4EPLArEnO31So8uVngwJk=
 		</data>
 		<key>XPCServices/heard.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		+U0/yb8QzqFCnoz4o4auRQWzQaA=
+		iOx76cmemqkp0ca0oN3g4M3uGWM=
 		</data>
 		<key>XPCServices/heard.xpc/heard</key>
 		<data>
-		33PNU7BTn0eCxnRxjnjvLg7cBQQ=
+		MCNC1q0WFmE2/1M3c40lzpl4+sU=
 		</data>
 		<key>ar.lproj/HearingAidSupport.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ixgw9CYwEmxcyU07X2zn0hWPYiw=
+			Yx6pBi8YpbGMiQlif65YN6AicaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7PwSxUEyYr+bERUdD1Eq2akHiQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -407,7 +1151,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8M3KJGItmtT1WsD+EnfjXBiiyYI=
+			S1RqVK0forTyL132eML7bH/arH4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aSdtVYyX76QDOaYUAlHI9PGX0Xo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -416,7 +1178,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lqRZkuR+P7SAyDAdr6ZawFRrHIk=
+			r3LYXEz8sczbqY6+z+7zXwWRrLg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hBkbe5vLekG3X3qOyCk18EazVf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -425,7 +1205,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fIYoiSDlb8IrlAvtD3jggvEqIO4=
+			KZEVEBxEODpsC2MP1hA0v8E6mZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MtwhnUbSCfmvkI0CNUK73r1z6c0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -434,7 +1232,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			leR+wp7tgBJBr7SFqqJF+wmbVbo=
+			Ux5mRiGGIw/oDCL5XoVg96kOGiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZvcW6l2Nkeb8eNLtpFeCb5Jte6Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -443,7 +1259,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1VE4ak1eipEZTsqBzm8tsn5lxno=
+			RkTgFS0gSbwailoMtWnHeFngB9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			duRNPyM+dlMWKpvJbyxCkJUh0P4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -452,7 +1286,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EsUD5gm3LW5ssQNN3wg5P8p/CD0=
+			faSysYRYJtO8NL3rAPNUiqhFCk4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pBpvnnnq53ZoN5Q5y5CEHDzhYxg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FS+dEHtAN4v0qqNekWpMjw43ekI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -461,7 +1313,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ANiMB8Ninxv567B+Ny32Aw9by5w=
+			2fczsmiqtQvfNOUTJELCsJJrhas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FQY7vGC50utCwtslM3LcudrKqRQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -470,7 +1340,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EsUD5gm3LW5ssQNN3wg5P8p/CD0=
+			MbvOcGJF3UsSXp2tcanSQFTXBy8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1ZxHXpya1cXvIqLxV4DV5s0+Ko=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -479,7 +1367,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gSc1Ks7Jl05PgF3mF9Ma3UvCir4=
+			qYn4HAG06vkfwcDi/fjjob9/F0E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			konLtDRz2cWGF2xeB0yosrJrJho=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -488,7 +1394,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nGqjd07kOh7D3Cf/cmgrQPtpGoo=
+			qoR526ag8JxkrQ+hxaBwK6YWROs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UNfA1sQoPiby15lTz+UGn/uQ6Os=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -497,7 +1421,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MNr/3+8ibHalytqkvxO7I0lCiPU=
+			rt53OIyikKwwEeSWXAyxuZ6qr3M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8nna5l0B1crEajqLjGvXsJIJYU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -506,7 +1448,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+pQ9NS/Yrtrh4nomqoJQMr5gekw=
+			TJHAhfoUzasi4ejNjGGdwzPBWso=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yj2itN22gOHVHcXfZ52QnQVlu9Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -515,7 +1475,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dy9sb2ctwCn3F+79NNu2KkQOSRk=
+			B2zqfaGLskg0PWPngpV4oV7tjXU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OSa/DsFA1AJp91CpI7hYJPMtpD8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -524,7 +1502,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KoM89DxY+mTi2lHbdXej3FJktuU=
+			Xkup6MZOad3pF6lFX+0zu6xIoso=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			609DQFfCKY6vTD2DFBncAQp4Vkc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -533,7 +1529,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9tLl8mL9HD26sEhYVnKR3W2QTn0=
+			0Gh6tzBGRwmm55pvyfwfhII2Aiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DtPSlI8gQe+WBWW3CSh/tao/ZT0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -542,7 +1556,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vasEm9GeGgHdX/3hFNIr9abprVc=
+			J7Z+vd/a6FvfxVKQIB59wo8TxVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7JGxsyLCQLW/0US4a4hP9ig6Qx8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -551,7 +1583,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S9t5/IJA/i+oIIblJvLgA0tELNY=
+			cS0ZT4gozKHo/lmZIsuo4U2rG4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f8HFXb0V5EeOAjdwpAvdIW7eCUQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -560,7 +1610,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			89PHAfD5djOWqFary9pc88DG3Gs=
+			58quuidpl5ez24+OqWY8d+4OM2k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MkHX0+joQM8Dz0eUcKw72DCKAfI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -569,7 +1637,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gmK5Wy4vmC+x4iTAfFgA9nyblbQ=
+			cp742lIW5eyDS6Zj3T0EqwwBIww=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRpkYgYtNoKQZlX14W65fNZ8jh0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+AJPSjCI3H5UMG3Ehcze749FIMI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -578,7 +1664,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			biFtlXDgJGw4LAPCJoUc4wM81IA=
+			XftW89ugYnYZbG1Ppw+oWG/FfOU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TvN4r9ItFknE20sqLeOpD7qkHqU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -587,7 +1691,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AgJ/yWbPv+yZto82/mHWt/Bjpmw=
+			4MMvhmncwSshASxMOdKzLZfRWTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3zN2ZNk5RUq6u6kyeJ6N+kQcovs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -596,7 +1718,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z6qq2eIruAsJ3/qyMsYdROB7vvs=
+			Zo4JRdFFbwe4qH7gf2JSuiK/6Bk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yuCRcAMzFOnHRI0hF6u8wiv2ruE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -605,7 +1745,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/P5wpLEBzFv53xzeJ1hMcpCQnYM=
+			V2/xsH0/8XmxjoLXa5t6v5a8AK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GamRnqYaiQK6kBQR/4GnMHINFMY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -614,7 +1772,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BhSTdiI9m/PK1kqUy6n9sAVMpr0=
+			uBp7IYGf8MZEj9BfdzitYutsxLQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9LfTiBU/5vItBeo5OI4E/Xsg6Wg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -623,7 +1799,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FRPCDzl+T2C3dn1Kf+YN8AGXqWs=
+			/fRCu3CuNuByD+UzoO1Ac1KoRv4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u5SCSOFtJIETitQ8JKdrTXSCI4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -632,7 +1826,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sZEbx1y+TCaxdBOGEr5htLujAXw=
+			0jSs2GNtcCx5II6bMvja5z2/auA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qVVsb3nVVP+eG4zjCz6h0ugpP6w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -641,7 +1853,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jg9QmeWo/a4T/VLfTeZkhX5buPw=
+			nU/73saxY18SwOeBfejtvi++f80=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QhwkroVx/Y+4ul/DPmbbLqIFN7Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -650,7 +1880,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xrEZANqDVVmZpdIFki5/5nn+fTM=
+			O7BP5OPb+T7P1TyBCFsNKR/h6cY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RHusOdfexGrZ4Zx4jEMiJpHeAck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -659,7 +1907,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DJ+EigxOm4o3bBIeeUqTyVSsuh8=
+			95VduJ+VkpTFgZvHMXMt6ThIhgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9jqk7seszpqJ/kQ6e8Lm7H5WH2o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -668,7 +1934,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tBm8DXRspfBr0c94O5hKp/Grklw=
+			VLeZA7XIaW5vC9sjxz8SP2t/cb8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			msghFOOYv+vvWJ58kXPUSlTVwsI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -677,7 +1961,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p/W/xncmXVZneC61gYcCtD/+Pa8=
+			JpXmBKhjs0YIPNwPGkwob50iJuQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRpkYgYtNoKQZlX14W65fNZ8jh0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FEkdyv/7AQnkeL/TTnxxC84VMUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -686,7 +1988,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KrOEyXtS5Zr7rtFmxyKgMNIL5d0=
+			wgToS90AWJdBLdmFkn8gSlBnrEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tnowuh3z+mSujiJf8jUVf8racAI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -695,7 +2015,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tlJd/6pz5nGxl8Ucco+RYGmwFjE=
+			wt1ksVwQb6f6fyT1X9BS+Mgig4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pDJSW8+LJIJ1EiGMfQPmHmXS8bc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -704,7 +2042,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6mX2KNha42yawxuWwa1VJr0vf6A=
+			JJWbgW7kZ7IXGX6dxNXVVZbYJn4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2o8S1YfwuAHbU8IRFC9WUA9WNyk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -713,7 +2069,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J++eaRfZYkWfqnsHv2e7sJQklIY=
+			t39Mn96yVGvWvN0RQkbClH19pnE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kZEPrSl+TNREQr3iBtLTbbwi3u0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -722,7 +2096,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m9a9rz/OsSYlxuvrhOOXQmnH8wM=
+			7poCYImQxwKDoUm2jg2/8/iPPZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ry5at03Dc0WNMG/9A7pEDpBxWJU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -731,7 +2123,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xQZZbpcPmbz2b9In7nXwCXXArJQ=
+			DpZUb4anMUbKJGYz7tCSa65cEdA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CdThfOuwkQgknYmvSOLo8omQagU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A4A8HPv/60jgU+XQHEXXbBFcoes=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -740,7 +2150,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Eb/pGqT5viU/2EW6QNUnwwF+pzk=
+			aQXsuEdyC1lXF90+BROAnNehOJQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TTYAbbreviations.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRpkYgYtNoKQZlX14W65fNZ8jh0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TTYSupport.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JpBADs7TQR+m4q8EQt898nTk/1Q=
 			</data>
 			<key>optional</key>
 			<true/>

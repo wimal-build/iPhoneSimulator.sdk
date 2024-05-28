@@ -2,7 +2,7 @@
 //  UIStackView.h
 //  UIKit
 //
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright © 2015-2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
@@ -104,12 +104,17 @@ NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_AVAILABLE_IOS(9_0)
 @interface UIStackView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
+
 /* UIStackView enforces that all views in the arrangedSubviews list
  must be subviews of the UIStackView.
     Thus, when a view is added to the arrangedSubviews, UIStackView
  adds it as a subview if it isn't already. And when a view in a
  UIStackView's arrangedSubviews list receives -removeFromSuperview
  it is also removed from the arrangedSubviews.
+ 
+ Please note that this is a convenience initializer and cannot be overridden in Swift.
  */
 - (instancetype)initWithArrangedSubviews:(NSArray<__kindof UIView *> *)views; // Adds views as subviews of the receiver.
 @property(nonatomic,readonly,copy) NSArray<__kindof UIView *> *arrangedSubviews;

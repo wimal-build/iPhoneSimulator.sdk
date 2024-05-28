@@ -4,33 +4,41 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AssetData/EventTypeClassifier.lstm</key>
+		<data>
+		kwWc1MVDLhOYu/z0bEE1gpxywck=
+		</data>
+		<key>AssetData/Multilingual-fr-it.model</key>
+		<data>
+		z5CqpZyYv9xvy9LR6Uhg/92MY/g=
+		</data>
+		<key>AssetData/Multilingual-fr-pt.model</key>
+		<data>
+		eYTG099x4fcAkFtcxtK7HNzG3Qs=
+		</data>
 		<key>AssetData/Phrases-fr.dat</key>
 		<data>
-		sVCsOiCkQJCBQM6ZuUOWIkZQywU=
+		SdjjWP6RzoXhmnIKVJng0H7us+0=
 		</data>
 		<key>AssetData/Phrases-fr.idx</key>
 		<data>
-		17MSztO7caYNUrAxeIPtwyeP++o=
-		</data>
-		<key>AssetData/PolarityMap.lsm</key>
-		<data>
-		uxq38d6dsYHQHWk+QAUS8xXrOTc=
+		QGHqwRO/jCvT44arLLR2jTDYNeQ=
 		</data>
 		<key>AssetData/Unigrams-fr.dat</key>
 		<data>
-		E0EkjhQzDRmj8vuNmQDZGk0MCGs=
+		RyAAxhWVYpVC00jZxAXUJrrzLZI=
 		</data>
 		<key>AssetData/Unigrams-fr.idx</key>
 		<data>
-		uLxzaax4qYp/iA/T1oO6Ue5tTHE=
+		sukFKuUeXWLISthzgybBd8BIXBU=
 		</data>
 		<key>AssetData/fr.lm/Info.plist</key>
 		<data>
-		9wolYRW+27Uxq5JlldB1sm/3dfQ=
+		LWsseN/X3s34dA0tKw1pTUNFgzQ=
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		LN8OhRaTKib9Irg2gaiYtGmRIHk=
+		1jlHWEir4LTCadv1L6/xeTSEV9k=
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -38,15 +46,19 @@
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeResources</key>
 		<data>
-		s6vQ1iZJytzfEuQQlns7NJSVT1w=
+		pb7Q6aD4TFsnXcdmOhQhxxNi38I=
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		1FtuiqaSxqaz8ebSADyB5ucyQvs=
+		UHNQwQX4coQdkw8Xpo4M4kNSH3A=
 		</data>
 		<key>AssetData/fr.lm/blacklist.dat</key>
 		<data>
-		o7G7LXXJvbiaKsUNI/yVq4qTGBw=
+		t3MjdaXIhgZFsUr8K3GSdYQOxKM=
+		</data>
+		<key>AssetData/fr.lm/fst.dat</key>
+		<data>
+		jIgXKXyqaqN/ciX4vhuRQr6nDDo=
 		</data>
 		<key>AssetData/fr.lm/lexicon.dat</key>
 		<data>
@@ -54,23 +66,23 @@
 		</data>
 		<key>AssetData/fr.lm/morphology.dat</key>
 		<data>
-		8HPONf2aVfYrYz/1O0NQ/snvz3k=
+		eDH+7K8ESfTiVkJFJR6wLXZeR1U=
 		</data>
 		<key>AssetData/fr.lm/sflm.dat</key>
 		<data>
-		T2rHqSkeGBgyE+L3AQ/YZ1wGO+0=
+		ePYnBzSC3xvdB0ZqEMQwtjTN9sI=
 		</data>
 		<key>AssetData/fr.lm/stlm.dat</key>
 		<data>
-		DLkPvn/TJS/enw8gMS+vaIwYHwY=
+		jUY5CR+Z71WO79QCeDJ1xPvYkRM=
 		</data>
 		<key>AssetData/fr.lm/stsfmap.dat</key>
 		<data>
-		gq3rR0N8zDp1D6G8oUGgNmIUcuQ=
+		9UhzalPyGkOW/T6lJ3AvYDDAeL0=
 		</data>
 		<key>AssetData/fr.lm/variants.dat</key>
 		<data>
-		0QR9wR9u7IadPFFgopaMsXeIEnc=
+		EiVrNS817aoaIEEPNW59D/DuBG0=
 		</data>
 		<key>AssetData/fr.lm/whitelist.dat</key>
 		<data>
@@ -82,7 +94,7 @@
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		3A+xWi8gd2e6MF+MIjtuM8W+D2E=
+		db49MxUN8ogQa6VyOGNM7L4+Ras=
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -90,11 +102,11 @@
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeResources</key>
 		<data>
-		irN/Msxdxx1v1EoBhYfsqUYX6Jk=
+		Fo7It9ZuGxz+nkMHRMaGg7vC0d8=
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		pCL8leHmcAC6QSN+OHRm5OTLn28=
+		n6uOsZMvrPeiOVbn/P4m2ecf8YM=
 		</data>
 		<key>AssetData/fr_CA.lm/blacklist.dat</key>
 		<data>
@@ -102,7 +114,7 @@
 		</data>
 		<key>AssetData/fr_CA.lm/stlm.dat</key>
 		<data>
-		zbiWG9SgoaNTL0l/j23U5/rxejo=
+		VJa2jgukmTYIugKK6tot3ca9yYs=
 		</data>
 		<key>AssetData/fr_CH.lm/Info.plist</key>
 		<data>
@@ -110,7 +122,7 @@
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		VK6yYg7qp1WJLOrSqWeYM7RZluc=
+		YUsGOToslcJTTLSwOq/M2ym33XU=
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -118,15 +130,15 @@
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeResources</key>
 		<data>
-		GyKbvEXUq++DBbjQfz6bIfNRgEI=
+		0a8EF2QmFBRIdr4uPH1qq5Co3fw=
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		NJEHcCBxGIDxKZTQWhVVQ/ZfWMs=
+		JvdN+jkvfP5KqyGTf4Z3N5n3pS0=
 		</data>
 		<key>AssetData/fr_CH.lm/stlm.dat</key>
 		<data>
-		FgJhFHc+jpCIhZA+69u3Z9C0Co4=
+		GAj5BQPd8UZlzX+B81KqUl5RqWU=
 		</data>
 		<key>AssetData/fr_FR.lm/Info.plist</key>
 		<data>
@@ -134,7 +146,7 @@
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		DkLsCOYjRvblY5ZdAOXMQvdFQ7E=
+		P03DmjRQtH353OI+IbRmAWodPdI=
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -142,15 +154,15 @@
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeResources</key>
 		<data>
-		zU1w72WmT8ZwiAuZdpuBYVdcD/M=
+		dP7IzcDkJlzbpHPhcV8WExvRJmw=
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		Rb5OOBOSjRZ/sPj0hvhEA8Vw564=
+		W9Bb2eVDnZlGr9hk7dH7m35BtyA=
 		</data>
 		<key>AssetData/fr_FR.lm/stlm.dat</key>
 		<data>
-		paTRQqzt+iMRG4P6L3Kwl+qF07Y=
+		MQtEoTb3JDzLvjbsT3VFUa1i4B0=
 		</data>
 		<key>AssetData/pos.dat</key>
 		<data>
@@ -159,33 +171,41 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AssetData/EventTypeClassifier.lstm</key>
+		<data>
+		kwWc1MVDLhOYu/z0bEE1gpxywck=
+		</data>
+		<key>AssetData/Multilingual-fr-it.model</key>
+		<data>
+		z5CqpZyYv9xvy9LR6Uhg/92MY/g=
+		</data>
+		<key>AssetData/Multilingual-fr-pt.model</key>
+		<data>
+		eYTG099x4fcAkFtcxtK7HNzG3Qs=
+		</data>
 		<key>AssetData/Phrases-fr.dat</key>
 		<data>
-		sVCsOiCkQJCBQM6ZuUOWIkZQywU=
+		SdjjWP6RzoXhmnIKVJng0H7us+0=
 		</data>
 		<key>AssetData/Phrases-fr.idx</key>
 		<data>
-		17MSztO7caYNUrAxeIPtwyeP++o=
-		</data>
-		<key>AssetData/PolarityMap.lsm</key>
-		<data>
-		uxq38d6dsYHQHWk+QAUS8xXrOTc=
+		QGHqwRO/jCvT44arLLR2jTDYNeQ=
 		</data>
 		<key>AssetData/Unigrams-fr.dat</key>
 		<data>
-		E0EkjhQzDRmj8vuNmQDZGk0MCGs=
+		RyAAxhWVYpVC00jZxAXUJrrzLZI=
 		</data>
 		<key>AssetData/Unigrams-fr.idx</key>
 		<data>
-		uLxzaax4qYp/iA/T1oO6Ue5tTHE=
+		sukFKuUeXWLISthzgybBd8BIXBU=
 		</data>
 		<key>AssetData/fr.lm/Info.plist</key>
 		<data>
-		9wolYRW+27Uxq5JlldB1sm/3dfQ=
+		LWsseN/X3s34dA0tKw1pTUNFgzQ=
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		LN8OhRaTKib9Irg2gaiYtGmRIHk=
+		1jlHWEir4LTCadv1L6/xeTSEV9k=
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -193,15 +213,19 @@
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeResources</key>
 		<data>
-		s6vQ1iZJytzfEuQQlns7NJSVT1w=
+		pb7Q6aD4TFsnXcdmOhQhxxNi38I=
 		</data>
 		<key>AssetData/fr.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		1FtuiqaSxqaz8ebSADyB5ucyQvs=
+		UHNQwQX4coQdkw8Xpo4M4kNSH3A=
 		</data>
 		<key>AssetData/fr.lm/blacklist.dat</key>
 		<data>
-		o7G7LXXJvbiaKsUNI/yVq4qTGBw=
+		t3MjdaXIhgZFsUr8K3GSdYQOxKM=
+		</data>
+		<key>AssetData/fr.lm/fst.dat</key>
+		<data>
+		jIgXKXyqaqN/ciX4vhuRQr6nDDo=
 		</data>
 		<key>AssetData/fr.lm/lexicon.dat</key>
 		<data>
@@ -209,23 +233,23 @@
 		</data>
 		<key>AssetData/fr.lm/morphology.dat</key>
 		<data>
-		8HPONf2aVfYrYz/1O0NQ/snvz3k=
+		eDH+7K8ESfTiVkJFJR6wLXZeR1U=
 		</data>
 		<key>AssetData/fr.lm/sflm.dat</key>
 		<data>
-		T2rHqSkeGBgyE+L3AQ/YZ1wGO+0=
+		ePYnBzSC3xvdB0ZqEMQwtjTN9sI=
 		</data>
 		<key>AssetData/fr.lm/stlm.dat</key>
 		<data>
-		DLkPvn/TJS/enw8gMS+vaIwYHwY=
+		jUY5CR+Z71WO79QCeDJ1xPvYkRM=
 		</data>
 		<key>AssetData/fr.lm/stsfmap.dat</key>
 		<data>
-		gq3rR0N8zDp1D6G8oUGgNmIUcuQ=
+		9UhzalPyGkOW/T6lJ3AvYDDAeL0=
 		</data>
 		<key>AssetData/fr.lm/variants.dat</key>
 		<data>
-		0QR9wR9u7IadPFFgopaMsXeIEnc=
+		EiVrNS817aoaIEEPNW59D/DuBG0=
 		</data>
 		<key>AssetData/fr.lm/whitelist.dat</key>
 		<data>
@@ -237,7 +261,7 @@
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		3A+xWi8gd2e6MF+MIjtuM8W+D2E=
+		db49MxUN8ogQa6VyOGNM7L4+Ras=
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -245,11 +269,11 @@
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeResources</key>
 		<data>
-		irN/Msxdxx1v1EoBhYfsqUYX6Jk=
+		Fo7It9ZuGxz+nkMHRMaGg7vC0d8=
 		</data>
 		<key>AssetData/fr_CA.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		pCL8leHmcAC6QSN+OHRm5OTLn28=
+		n6uOsZMvrPeiOVbn/P4m2ecf8YM=
 		</data>
 		<key>AssetData/fr_CA.lm/blacklist.dat</key>
 		<data>
@@ -257,7 +281,7 @@
 		</data>
 		<key>AssetData/fr_CA.lm/stlm.dat</key>
 		<data>
-		zbiWG9SgoaNTL0l/j23U5/rxejo=
+		VJa2jgukmTYIugKK6tot3ca9yYs=
 		</data>
 		<key>AssetData/fr_CH.lm/Info.plist</key>
 		<data>
@@ -265,7 +289,7 @@
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		VK6yYg7qp1WJLOrSqWeYM7RZluc=
+		YUsGOToslcJTTLSwOq/M2ym33XU=
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -273,15 +297,15 @@
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeResources</key>
 		<data>
-		GyKbvEXUq++DBbjQfz6bIfNRgEI=
+		0a8EF2QmFBRIdr4uPH1qq5Co3fw=
 		</data>
 		<key>AssetData/fr_CH.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		NJEHcCBxGIDxKZTQWhVVQ/ZfWMs=
+		JvdN+jkvfP5KqyGTf4Z3N5n3pS0=
 		</data>
 		<key>AssetData/fr_CH.lm/stlm.dat</key>
 		<data>
-		FgJhFHc+jpCIhZA+69u3Z9C0Co4=
+		GAj5BQPd8UZlzX+B81KqUl5RqWU=
 		</data>
 		<key>AssetData/fr_FR.lm/Info.plist</key>
 		<data>
@@ -289,7 +313,7 @@
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		DkLsCOYjRvblY5ZdAOXMQvdFQ7E=
+		P03DmjRQtH353OI+IbRmAWodPdI=
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -297,15 +321,15 @@
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeResources</key>
 		<data>
-		zU1w72WmT8ZwiAuZdpuBYVdcD/M=
+		dP7IzcDkJlzbpHPhcV8WExvRJmw=
 		</data>
 		<key>AssetData/fr_FR.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		Rb5OOBOSjRZ/sPj0hvhEA8Vw564=
+		W9Bb2eVDnZlGr9hk7dH7m35BtyA=
 		</data>
 		<key>AssetData/fr_FR.lm/stlm.dat</key>
 		<data>
-		paTRQqzt+iMRG4P6L3Kwl+qF07Y=
+		MQtEoTb3JDzLvjbsT3VFUa1i4B0=
 		</data>
 		<key>AssetData/pos.dat</key>
 		<data>

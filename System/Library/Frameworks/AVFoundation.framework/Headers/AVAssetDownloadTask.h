@@ -15,7 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-// Keys for options dictionary for use with -[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:destinationURL:options:]
+// Keys for options dictionary for use with -[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:]
 
 /*!
  @constant		AVAssetDownloadTaskMinimumRequiredMediaBitrateKey
@@ -39,7 +39,7 @@ AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey NS_AVAILABLE_IOS
  @discussion	Should be created with -[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:destinationURL:options:]. To utilize local data for playback for downloads that are in-progress, re-use the URLAsset supplied in initialization. An AVAssetDownloadTask may be instantiated with a destinationURL pointing to an existing asset on disk, for the purpose of completing or augmenting a downloaded asset.
 */
 
-NS_CLASS_AVAILABLE_IOS(9_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 @interface AVAssetDownloadTask : NSURLSessionTask
 
 /*!
@@ -53,7 +53,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
  @abstract		The file URL supplied to the download task upon initialization.
  @discussion	This URL may have been appended with the appropriate extension for the asset.
 */
-@property (nonatomic, readonly) NSURL *destinationURL;
+@property (nonatomic, readonly) NSURL *destinationURL NS_DEPRECATED_IOS(9_0, 10_0);
 
 /*!
  @property		options
@@ -69,6 +69,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 @property (nonatomic, readonly) NSArray<NSValue *> *loadedTimeRanges;
 
 // NSURLRequest and NSURLResponse objects are not available for AVAssetDownloadTask
+AV_INIT_UNAVAILABLE
 @property (readonly, copy) NSURLRequest *originalRequest NS_UNAVAILABLE;
 @property (readonly, copy) NSURLRequest *currentRequest NS_UNAVAILABLE;
 @property (readonly, copy) NSURLResponse *response NS_UNAVAILABLE;
@@ -81,8 +82,21 @@ NS_CLASS_AVAILABLE_IOS(9_0)
  @abstract		Delegate method to implement when adopting AVAssetDownloadTask.
 */
 
+__TVOS_PROHIBITED
 @protocol AVAssetDownloadDelegate <NSURLSessionTaskDelegate>
 @optional
+/*!
+ @method		URLSession:assetDownloadTask:didFinishDownloadingToURL:
+ @abstract		Sent when a download task that has completed a download.
+ @discussion	Unlike NSURLSessionDownloadDelegate, the delegate should NOT move the file from this directory after it has been called. Downloaded assets must remain at the system provided URL. URLSession:task:didCompleteWithError: will still be called.
+ @param			session
+				The session the asset download task is on.
+ @param			assetDownloadTask
+				The AVAssetDownloadTask whose downloaded completed.
+ @param			location
+				The location the asset has been downloaded to.
+*/
+- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didFinishDownloadingToURL:(NSURL *)location NS_AVAILABLE_IOS(10_0);
 
 /*!
  @method		URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:
@@ -119,7 +133,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
  @class			AVAssetDownloadURLSession
  @abstract		A subclass of NSURLSession to support AVAssetDownloadTask.
 */
-NS_CLASS_AVAILABLE_IOS(9_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 @interface AVAssetDownloadURLSession : NSURLSession
 
 /*!
@@ -145,9 +159,25 @@ NS_CLASS_AVAILABLE_IOS(9_0)
  @param			options
 				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task. Using this parameter is required for downloading non-default media selections for HLS assets.
 */
-- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset destinationURL:(NSURL *)destinationURL options:(nullable NSDictionary<NSString *, id> *)options;
+- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset destinationURL:(NSURL *)destinationURL options:(nullable NSDictionary<NSString *, id> *)options NS_DEPRECATED_IOS(9_0, 10_0);
+
+/*!
+ @method		assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:
+ @abstract		Creates and initializes an AVAssetDownloadTask to be used with this AVAssetDownloadURLSession.
+ @discussion	This method may return nil if the URLSession has been invalidated.
+ @param			URLAsset
+				The AVURLAsset to download locally.
+ @param			assetTitle
+				A human readable title for this asset, expected to be as suitable as possible for the user's preferred languages. Will show up in the usage pane of the settings app.
+ @param			assetArtworkData
+				Artwork data for this asset. Optional. Will show up in the usage pane of the settings app.
+ @param			options
+				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task. Using this parameter is required for downloading non-default media selections for HLS assets.
+*/
+- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE_IOS(10_0);
 
 // only AVAssetDownloadTasks can be created with AVAssetDownloadURLSession
+AV_INIT_UNAVAILABLE
 + (NSURLSession *)sharedSession NS_UNAVAILABLE;
 + (NSURLSession *)sessionWithConfiguration:(NSURLSessionConfiguration *)configuration NS_UNAVAILABLE;
 + (NSURLSession *)sessionWithConfiguration:(NSURLSessionConfiguration *)configuration delegate:(nullable id <NSURLSessionDelegate>)delegate delegateQueue:(nullable NSOperationQueue *)queue NS_UNAVAILABLE;

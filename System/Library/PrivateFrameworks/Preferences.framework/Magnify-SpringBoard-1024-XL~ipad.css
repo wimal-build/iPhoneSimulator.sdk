@@ -9,7 +9,7 @@ BODY {
 	font-family: -apple-system-font, sans-serif;
 	font-size: 30px;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 300;
 	background: #FFF;
 }
 
@@ -32,7 +32,7 @@ BODY {
 .Clock,
 .Maps,
 .Videos,
-.PhotoBooth,
+.Home,
 .Notes,
 .Reminders,
 .News,
@@ -63,7 +63,7 @@ BODY {
 
 .FaceTime					{ left: 198px; top: 363px; }
 .Contacts					{ left: 198px; top: 808px; }
-.PhotoBooth					{ left: 198px; top: 1251px; }
+.Videos						{ left: 198px; top: 1251px; }
 .iTunesStore				{ left: 198px; top: 1695px; }
 .Messages					{ left: 198px; top: 2663px; }
 
@@ -87,7 +87,7 @@ BODY {
 /* Column 4 */
 
 .Camera						{ left: 1670px; top: 363px; }
-.Videos						{ left: 1670px; top: 808px; }
+.Home						{ left: 1670px; top: 808px; }
 .News						{ left: 1670px; top: 1251px; }
 .Settings					{ left: 1670px; top: 1695px; }
 .Music						{ left: 1670px; top: 2663px; }

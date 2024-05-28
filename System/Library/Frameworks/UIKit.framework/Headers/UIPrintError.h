@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-UIKIT_EXTERN NSString *const UIPrintErrorDomain __TVOS_PROHIBITED;
+UIKIT_EXTERN NSErrorDomain const UIPrintErrorDomain __TVOS_PROHIBITED;
 
 enum {
     UIPrintingNotAvailableError = 1,  // cannot print at this time

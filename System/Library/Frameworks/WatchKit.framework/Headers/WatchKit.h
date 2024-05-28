@@ -2,7 +2,7 @@
 //  WatchKit.h
 //  WatchKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2016 Apple Inc. All rights reserved.
 //
 
 #import <WatchKit/WKDefines.h>
@@ -19,6 +19,7 @@
 #import <WatchKit/WKInterfaceTimer.h>
 #import <WatchKit/WKInterfaceTable.h>
 #import <WatchKit/WKInterfaceMap.h>
+#import <WatchKit/WKInterfacePaymentButton.h>
 #import <WatchKit/WKInterfaceSeparator.h>
 #import <WatchKit/WKInterfaceSlider.h>
 #import <WatchKit/WKInterfaceSwitch.h>
@@ -30,6 +31,13 @@
 #import <WatchKit/WKAudioFilePlayerItem.h>
 #import <WatchKit/WKInterfaceActivityRing.h>
 #import <WatchKit/WKInterfaceMovie.h>
+#import <WatchKit/WKInterfaceInlineMovie.h>
+#import <WatchKit/WKInterfaceSKScene.h>
+#import <WatchKit/WKInterfaceSCNScene.h>
+#import <WatchKit/WKInterfaceHMCamera.h>
 #import <WatchKit/WKInterfacePicker.h>
 #import <WatchKit/WKAccessibility.h>
+#import <WatchKit/WKGestureRecognizer.h>
+#import <WatchKit/WKCrownSequencer.h>
+#import <WatchKit/WKBackgroundTask.h>
 #endif

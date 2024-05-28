@@ -6,27 +6,28 @@
 //
 
 #import <Photos/PhotosTypes.h>
+#import <Photos/PhotosDefines.h>
 
 
 // Uniquely identify a resource data request
-typedef int32_t PHAssetResourceDataRequestID NS_AVAILABLE_IOS(9_0);
+typedef int32_t PHAssetResourceDataRequestID PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
 static const PHAssetResourceDataRequestID PHInvalidAssetResourceDataRequestID = 0;
 
 // Progress handler, called in an arbitrary serial queue.
-typedef void (^PHAssetResourceProgressHandler)(double progress) NS_AVAILABLE_IOS(9_0);
+typedef void (^PHAssetResourceProgressHandler)(double progress) PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
 
 @class PHAssetResource;
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface PHAssetResourceRequestOptions : NSObject <NSCopying>
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceRequestOptions : NSObject <NSCopying>
 
 @property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed;
 @property (nonatomic, copy, nullable) PHAssetResourceProgressHandler progressHandler;
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface PHAssetResourceManager : NSObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceManager : NSObject
 
 + (PHAssetResourceManager *)defaultManager;
 

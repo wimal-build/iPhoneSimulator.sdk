@@ -302,7 +302,7 @@ ExtAudioFileCreateWithURL(	CFURLRef							inURL,
 							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)
 																			__OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_1);
 																			
-#if !TARGET_OS_IPHONE && !CA_NO_CORE_SERVICES
+#if !TARGET_OS_IPHONE
 /*!
 	@function   ExtAudioFileOpen
 	

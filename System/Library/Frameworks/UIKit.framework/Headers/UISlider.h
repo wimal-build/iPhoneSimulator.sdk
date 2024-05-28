@@ -9,7 +9,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIControl.h>
 #import <UIKit/UIKitDefines.h>
-#import <QuartzCore/QuartzCore.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

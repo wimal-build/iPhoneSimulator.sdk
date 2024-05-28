@@ -15,15 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSUInteger, PHLivePhotoBadgeOptions) {
     PHLivePhotoBadgeOptionsOverContent  = 1 << 0,               ///< Include treatments so this image can be shown directly over the content of the Live Photo
     PHLivePhotoBadgeOptionsLiveOff      = 1 << 1,               ///< To indicate that the Live Photo aspect is turned off and it will be treated as a still (e.g. for sharing)
-} NS_ENUM_AVAILABLE_IOS(9_1);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(9_1, 10_0);
 
 typedef NS_ENUM(NSInteger, PHLivePhotoViewPlaybackStyle) {
     PHLivePhotoViewPlaybackStyleUndefined = 0,
     PHLivePhotoViewPlaybackStyleFull,
     PHLivePhotoViewPlaybackStyleHint,
-} NS_ENUM_AVAILABLE_IOS(9_1);
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(9_1, 10_0);
 
-NS_CLASS_AVAILABLE_IOS(9_1)
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_1, 10_0)
 @interface PHLivePhotoView : UIView
 
 /// System badge images representing Live Photo content

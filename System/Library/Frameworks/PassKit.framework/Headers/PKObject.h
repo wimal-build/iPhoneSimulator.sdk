@@ -15,4 +15,4 @@
 
 @end
 
-#endif
+#endif // __PKOBJECT_H

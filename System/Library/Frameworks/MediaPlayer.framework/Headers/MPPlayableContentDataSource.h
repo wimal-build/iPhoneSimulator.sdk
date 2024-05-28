@@ -35,6 +35,14 @@ __TVOS_PROHIBITED
 /// not supported for any content items.
 - (BOOL)childItemsDisplayPlaybackProgressAtIndexPath:(NSIndexPath *)indexPath;
 
+/// Provides a content item for the provided identifier.
+/// Provide nil if there is no content item corresponding to the identifier.
+/// Provide an error if there is an error that will not allow content items
+/// to be retrieved.
+/// Client applications should always call the completion handler after loading
+/// has finished, if this method is implemented.
+- (void)contentItemForIdentifier:(NSString *)identifier completionHandler:(void(^)(MPContentItem *__nullable, NSError * __nullable))completionHandler NS_AVAILABLE_IOS(10_0);
+
 @required
 /// Returns the number of child nodes at the specified index path. In a virtual
 /// filesystem, this would be the number of files in a specific folder. An empty

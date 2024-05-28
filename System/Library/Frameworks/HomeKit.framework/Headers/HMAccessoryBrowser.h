@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class is used to discover new accessories in the home
  *        that have never been paired with and therefore not part of the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
 @interface HMAccessoryBrowser : NSObject
 
 /*!
@@ -60,7 +60,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED
 /*!
  * @brief This delegate receives updates about new accessories in the home.
  */
-NS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED
+NS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
 @protocol HMAccessoryBrowserDelegate <NSObject>
 
 @optional

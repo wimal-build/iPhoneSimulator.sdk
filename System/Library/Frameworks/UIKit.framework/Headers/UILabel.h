@@ -2,7 +2,7 @@
 //  UILabel.h
 //  UIKit
 //
-//  Copyright (c) 2006-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,19 +10,20 @@
 #import <UIKit/UIView.h>
 #import <UIKit/UIStringDrawing.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UIContentSizeCategoryAdjusting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class UIColor, UIFont;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding>
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSizeCategoryAdjusting>
 
 @property(nullable, nonatomic,copy)   NSString           *text;            // default is nil
 @property(null_resettable, nonatomic,strong) UIFont      *font;            // default is nil (system font 17 plain)
 @property(null_resettable, nonatomic,strong) UIColor     *textColor;       // default is nil (text draws black)
 @property(nullable, nonatomic,strong) UIColor            *shadowColor;     // default is nil (no shadow)
 @property(nonatomic)        CGSize             shadowOffset;    // default is CGSizeMake(0, -1) -- a top shadow
-@property(nonatomic)        NSTextAlignment    textAlignment;   // default is NSTextAlignmentLeft
+@property(nonatomic)        NSTextAlignment    textAlignment;   // default is NSTextAlignmentNatural (before iOS 9, the default was NSTextAlignmentLeft)
 @property(nonatomic)        NSLineBreakMode    lineBreakMode;   // default is NSLineBreakByTruncatingTail. used for single and multiple lines of text
 
 // the underlying attributed string drawn by the label, if set, the label ignores the properties above.

@@ -2,7 +2,7 @@
 //  UIPresentationController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -51,12 +51,17 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 
 @property(nullable, nonatomic, weak) id <UIAdaptivePresentationControllerDelegate> delegate;
 
-- (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController;
+- (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(nullable UIViewController *)presentingViewController NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_UNAVAILABLE;
 
 // By default this implementation defers to the delegate, if one exists, or returns the current presentation style. UIFormSheetPresentationController, and
 // UIPopoverPresentationController override this implementation to return UIModalPresentationStyleFullscreen if the delegate does not provide an
 // implementation for adaptivePresentationStyleForPresentationController:
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) UIModalPresentationStyle adaptivePresentationStyle;
+#else
 - (UIModalPresentationStyle)adaptivePresentationStyle;
+#endif
 - (UIModalPresentationStyle)adaptivePresentationStyleForTraitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_3);
 
 - (void)containerViewWillLayoutSubviews;
@@ -65,6 +70,23 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // A view that's going to be animated during the presentation. Must be an ancestor of a presented view controller's view
 // or a presented view controller's view itself.
 // (Default: presented view controller's view)
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, nullable) UIView *presentedView;
+
+// Position of the presented view in the container view by the end of the presentation transition.
+// (Default: container view bounds)
+@property(nonatomic, readonly) CGRect frameOfPresentedViewInContainerView;
+
+// By default each new presentation is full screen.
+// This behavior can be overriden with the following method to force a current context presentation.
+// (Default: YES)
+@property(nonatomic, readonly) BOOL shouldPresentInFullscreen;
+
+// Indicate whether the view controller's view we are transitioning from will be removed from the window in the end of the
+// presentation transition
+// (Default: NO)
+@property(nonatomic, readonly) BOOL shouldRemovePresentersView;
+#else
 - (nullable UIView *)presentedView;
 
 // Position of the presented view in the container view by the end of the presentation transition.
@@ -80,6 +102,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // presentation transition
 // (Default: NO)
 - (BOOL)shouldRemovePresentersView;
+#endif
 
 - (void)presentationTransitionWillBegin;
 - (void)presentationTransitionDidEnd:(BOOL)completed;

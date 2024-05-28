@@ -6,6 +6,8 @@
 	<string>com.apple.calaccessd</string>
 	<key>MachServices</key>
 	<dict>
+		<key>com.apple.calendarnotification.uitrigger</key>
+		<true/>
 		<key>com.apple.calaccessd</key>
 		<true/>
 		<key>com.apple.calaccessd.xpc</key>
@@ -13,6 +15,8 @@
 			<key>HideUntilCheckIn</key>
 			<true/>
 		</dict>
+		<key>com.apple.calaccessd.bulletins</key>
+		<true/>
 	</dict>
 	<key>LaunchEvents</key>
 	<dict>
@@ -27,6 +31,71 @@
 			<dict>
 				<key>Notification</key>
 				<string>com.apple.mobilecal.timezonechanged</string>
+			</dict>
+			<key>_CalDatabaseChangedNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>_CalDatabaseChangedNotification</string>
+			</dict>
+			<key>kCalEventOccurrenceCacheChangedNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>kCalEventOccurrenceCacheChangedNotification</string>
+			</dict>
+			<key>CalSyncClientBeginningMultiSave</key>
+			<dict>
+				<key>Notification</key>
+				<string>CalSyncClientBeginningMultiSave</string>
+			</dict>
+			<key>CalSyncClientFinishedMultiSave</key>
+			<dict>
+				<key>Notification</key>
+				<string>CalSyncClientFinishedMultiSave</string>
+			</dict>
+			<key>com.apple.locationd.started</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.started</string>
+			</dict>
+			<key>com.apple.mobile.keybagd.first_unlock</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobile.keybagd.first_unlock</string>
+			</dict>
+			<key>com.apple.mobilecal.preference.notification.calendarsExcludedFromNotifications</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobilecal.preference.notification.calendarsExcludedFromNotifications</string>
+			</dict>
+			<key>com.apple.locationd.vehicle.connected</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.vehicle.connected</string>
+			</dict>
+			<key>com.apple.locationd.vehicle.disconnected</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.vehicle.disconnected</string>
+			</dict>
+			<key>EKNotificationCountChangedExternallyNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>EKNotificationCountChangedExternallyNotification</string>
+			</dict>
+			<key>com.apple.mobilecal.invitationalertschanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobilecal.invitationalertschanged</string>
+			</dict>
+			<key>com.apple.navd.wakeUpForHypothesisUpdate</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.navd.wakeUpForHypothesisUpdate</string>
+			</dict>
+			<key>com.apple.calendar.database.preference.notification.suggestEventLocations</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.calendar.database.preference.notification.suggestEventLocations</string>
 			</dict>
 		</dict>
 	</dict>

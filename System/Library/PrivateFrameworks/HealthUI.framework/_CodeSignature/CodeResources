@@ -6,12 +6,65 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		X3XvmTjwvFF2PlZrv0JLCTV2HUA=
+		ni55JBUqcxUUtEWsXx/6AcugzDc=
+		</data>
+		<key>CDAINTL.xsl</key>
+		<data>
+		77YzdLby/fAV5Q/JMtcKAnG6cVA=
+		</data>
+		<key>CDAPDFINTL.xsl</key>
+		<data>
+		gxB5/7R2hiUGgKDb9E1fYT3Vn8U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SslPKW0+vacllOghSteBXD+Amrs=
+		6AzZcPEDqNqDb92jEz8CJKJ8s1A=
 		</data>
+		<key>ar.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6eaHRpyaTeQxnsyYTDr6JMdtckY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6h/wSgqUfcycz0MkPj1615iLiDQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5qN3hcmTGKEakYpUvkcv6wx3Qw8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4ZS8ZYv/2/tdHv8HGfuCsNjABQc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G832C0Qjwg/O8fYnPinSrX+Gfak=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -21,11 +74,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ar.lproj/Localizable.strings</key>
+		<key>ar.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iPM0HP2wkaQ8aPjSaYoSWHArT3k=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZTVe06bdZzGWvbSgd7yxKLsrWc4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IN2FdeRC0yrDjERfojguiEOPPg4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fzV4YsnSjeIkftipebQ7cgxLokY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SY2AT5/6MWnxhlJ/R9iSSv2Vyfs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DDGZ5dtPb/X8zKYZEAeGuHobuuw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -39,11 +137,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/Localizable.strings</key>
+		<key>ca.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7hbdjIfJFBDCeLARccTpATElO5g=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			udjnuvHhgfIpIkYswooSNsSsQy4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DayTPZojPn1cO132q5tRo8Bt71I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sZARDIe/CeUlflUFbDSMH7FPiMA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rF4oA7OVf1eMv2QM2+bHMX52FxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lJ3ksHViSP7fA3QYjFPh8QoBPuY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -57,11 +200,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/Localizable.strings</key>
+		<key>cs.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GyYdOcI0yI2iZsBoBnQHY7hYKKI=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AhwVyAyEz7nkZwsnYQ9pEyJvuos=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iB3WNvbo6mBC8SkTJiwJ66RyEBY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I3gKXLchCwLdZ+z8zYh3jikYzHw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P+yiZKiTna/TyfusjoHXEGNqsx0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y8xpkJ7bl9Oz8THWf2T+QIb7cqw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -75,11 +263,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/Localizable.strings</key>
+		<key>da.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/fPxQDrG9A9j10qctbJGMIrKkZc=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PTb2fwF/z+pmFKafsWJqMNA17ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E4XhQuAwOIf0dIlp4JsgvvCqRhU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KhOjKvmhvZGQVnsv/3/MNuZrqj0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hw6013gcHQbnCWhS9+rJyfFb1OE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P/30Ht2jOr89T6OPR7nM0vuV8KQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,11 +326,60 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/Localizable.strings</key>
+		<key>de.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+0pURRk54Uo5dcmi/N6uUDaUt7M=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>donateLifePrivate.p12</key>
+		<data>
+		DJeAXEExEetd2r1byxTs+V71WIA=
+		</data>
+		<key>el.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8+7jDsheHY8CKwTX7p92z9ijfRc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rL7Eopv3RS0jTMbLSqri0gxulLc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vpafaVdsddOrlBXMup0ZQF9s1lQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XWNzizLBYOH0TYuDqMgYyZUVmSA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qrNT8zKFuflsFJksNwC7Z3QWtRg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -111,11 +393,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/Localizable.strings</key>
+		<key>el.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DsU1Cra/LKCoGW92ltA0n8R5W7Q=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYv9J5ey6iGpmCQZ+jrzOZYbE9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSiQ8maUFmvX85UE0hj0qda4/V0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZZefoDjV70yf1kVKutWl+7fcx3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTVWZJ1w9IMSOC6ygCX+osFtKEs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -129,11 +456,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/Localizable.strings</key>
+		<key>en.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			em3NCyyDzj0zzeaXMt0OQWalmlQ=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYv9J5ey6iGpmCQZ+jrzOZYbE9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSiQ8maUFmvX85UE0hj0qda4/V0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PdtnA4wY+KyCwah+icoMZYjYaCk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TJLiA6itKAprTA+GnU25pexlN3E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -147,11 +519,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/Localizable.strings</key>
+		<key>en_AU.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			naEEAOqwkoa3VunLMorrL7nmc7I=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYv9J5ey6iGpmCQZ+jrzOZYbE9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSiQ8maUFmvX85UE0hj0qda4/V0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GeJZ5cKRQoBmeoTAHJ2qfNKwEUU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rz7Tm2q9ogZR3UXzZCWbnVGq6zo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -165,11 +582,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/Localizable.strings</key>
+		<key>en_GB.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zVXqRVBVw9PXo/nk4mkt2zhaDZE=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QWZIMozX14guqeA0PVoI5EL2bPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlKI/zYT0/tvrNOE0YqIv6pMewM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LExrtSAzLQm957a+kvy2mPY8OXU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1uYiWsnEebSejGl4SfKeFItmlCE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+rcMC2/YsGU4y2Q2T1dfzBWFnAg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -183,11 +645,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/Localizable.strings</key>
+		<key>es.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HOxjde/F0bgl3SJCHvnemkWNxlI=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kKkCCUQ70DibY9Td9+8DXvCmuek=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OY4NfIxTzJU7vICYl98mv/LPjYQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTfpe7ZXeuHx1DBExCCvXC7ih30=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DcSC+cNfctm17W4JAOpUk1hqBVE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Azp1W2utQ1hPfNM7/ZNNYW5Spt4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -201,11 +708,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/Localizable.strings</key>
+		<key>fi.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oLskhQ4OojwoISF2wdDxtAp74mY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+OtEujxKUcTgD5wKMtQxhnn+tJo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1fnPzdZ7JAYLPwkBZHk6WZzsImo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D9MBzHAVlH1tjXYdMKdkXRxsgCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mzD6hPhz1XHfbQlpA+FlWeO5itE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SG4lfWvDmVUdymykv/DI0VKjDug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -219,11 +771,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr.lproj/Localizable.strings</key>
+		<key>fr.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rQfL0BUcVUbQ1lSFsxrBkmBc+48=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dR6Pd9n+jMjWZLWt9H8NdG7ZU3s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/XPeEUG7VdinkN6yoDC7nJ1ZRic=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K87eMKntQQyXIQASGGq2Ff+Y6Ho=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wd24lIu/WUVwSQUw1an9NHflWR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SYQGRr05kLODrhv6WvEU3B0x/+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -237,11 +834,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/Localizable.strings</key>
+		<key>fr_CA.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8TjG7vWUQgfcdJhcFuvPlfAXfeg=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D/iGgzFxU20ZHG3bf98Xfwx4Be0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WSL7Ii0WgNN7OwHkyZ4M4xgHoZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7r1J4HaysHGWHm59x27giMPdH4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k4yjkITyzjI1eufhK5iAu3pbY5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dfM169K6C8mxZ6hqIL3lOVl04r0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -255,11 +897,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/Localizable.strings</key>
+		<key>he.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aBj01v12Tqj4zIS3wAZCfU4hrVU=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M1COeuzTn9ee4dCVF78TEFsDKgU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0S7U224/DjBpdmA8KuEvvcnE1tc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JO6OWQ8/l7M8Vep3h6MTwwRj2dw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TWsZdXNUV6K5m/NpmJO7gkgut7Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			60iEkvqRmq3f5wN517BczAuyreY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -273,11 +960,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/Localizable.strings</key>
+		<key>hi.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YTI549dB6SJ2RAbZOnnQfV1qxVc=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lPPtAvY3Z0D2b9rfPVilUYjoqY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OLyZYxrL9VOe2V+E77oDnvXwahg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MR8gH1qObTACjg5YWvnLsF5XYmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SLo06OafxQZ4mxb9wOBiVzpnbZI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MpUDwmODmd37ZEBDMbG5sP8J0jU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -291,11 +1023,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/Localizable.strings</key>
+		<key>hr.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZIX70uQyK9AhlZDCM//Ox+//DGA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HgNRpE0KtBGJ9f1PXcYamBIyTbw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Oj4hXFUraqgHeZ0sefoFtJN+LmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vyxJyFcdoMW1WfRSRnpy+wojR3s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q5RestQlVl/FgdO1rncWhDL5NIo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u3ieaoNHOs0j2wUS/RDS0wVdKW8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -309,11 +1086,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/Localizable.strings</key>
+		<key>hu.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JhkcxBXH4l6UsM71EoRooVuWiRk=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dc0n+vntguyC325yKqoZ6NP+Rfo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+9iIEyca21Y3GOsoynxO0Qc6rNg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xWbK3IHrVUJG8+nzRPPoBdB7gmI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5favxJ8/7YXg7ig2aMZ1DOdI11U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qlR54dpyPtZcztNfJOh9IDxZIr0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -327,11 +1149,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/Localizable.strings</key>
+		<key>id.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fu1Wi91UqFY/xYyKkfbdxASlJxs=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2lChjvT27UGn7UnssQ5i0qUc0Fk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4H0IMWwAcXsEOGd6GQ0CvcMXJMA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VoaZ7BX+zuR7+BaVZ7uMlj+GHu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8AAXZ57FMQubGeTfpPnbprycTF4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bm7FtRNvdfVPHPFTqft+QnGGrWc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -345,11 +1212,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>it.lproj/Localizable.strings</key>
+		<key>it.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KetYdc5WZr06yIQDNbOzjl4aALY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VDiDiWxrZ2lqYJi8XompreS9j/A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tLoQD4ICvTNPz10Au7PAtP9gMXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S9qM0JcbPErPHzkbEri+iZDww4Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CjfU2xWP6ejEyHVUARVm06PnI3A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E4vpvxa0ca1ct6DrmyrrmlOKUtk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -363,11 +1275,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/Localizable.strings</key>
+		<key>ja.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jWUMNKOs5gLFQa1G/cp4zY5fd9I=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t862XUZU1KbiPBRWqVEQyibz4uA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l9AcjLZqyETCM5dbIh7YGVhtDFs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f87h4QbBh2IX9Y0Gp3WfjWiDhe8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wKGaguxSxjAJapPxs2PFOuMWW/A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SJyT1UWNMJ3baeKMwMaiKoPNRoA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -381,11 +1338,64 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/Localizable.strings</key>
+		<key>ko.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QQj2DjS9VSEN/WZvACv7ne2jfcM=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>minimal_ccd.txt</key>
+		<data>
+		vvCqK7U+1kRolgn/HLKxCgL+Eds=
+		</data>
+		<key>minimal_ccd.xml</key>
+		<data>
+		tfD6YQDIXhxVjeQrkhj8AOgPbx0=
+		</data>
+		<key>ms.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CVNT2Z8deZqymO3YOiCvBfyknyM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqdjUFRh8gt3AIl6CoeBFpxOBNI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bhzo2CsjpGUPec0lkJ8NMRr3HWw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VHpyhXf63SjqBj1c8U04fz1+es4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9jkqqXIPLpTRu92Yknu3IqBWB3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -399,11 +1409,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/Localizable.strings</key>
+		<key>ms.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/6BE2HEpO7O0qIW/pxSXkghuzzY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			era0OD4tBXJw16+lPduF62ttefk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mA8cFeczwqN9eby4nPvOnw2FplI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cgnTQl4FC23fNGJcKBqwb1buHEw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			81QHMADlDLhaifO6U02GSrDIBSk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qQiqXKZqpZWL3qp2ZLEwd541Epg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -417,11 +1472,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>nl.lproj/Localizable.strings</key>
+		<key>nl.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JoJYZe1NzlrsgHcKnJlt6oWa4to=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2tIij/xuxg5Gi+oeABhZLrfHIhA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+I9+O6j6BGCtyLLBKEj5VtH5CxE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jorwAjfA7an91tNgc02TJ+mJHxw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kmWdUoIhfrSHs605SqfJj/seZmA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -435,11 +1535,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/Localizable.strings</key>
+		<key>no.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8a4nGlwnkWWMUarmagk0tO9p9LM=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zttLNr6hJGo5vkj3L4PQyy8zsz4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9PscN7GR/SyqcHstUjLic3iZZ28=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lQWPSAtdItDfhzx3Dy6lneCW1Ls=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QYtRLHUOED+TThHmQIgNKJ0ydHw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DI9skUCHiYs1EEqAsx3iWLDUPoQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -453,11 +1598,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/Localizable.strings</key>
+		<key>pl.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o4KLmsukrloGZiJx+GaRaLFvx1U=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			db17rcmpuype2Y0DqUGU8UBzTl0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hLky42QUdo1IxSboaU9rK5WEWTc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VQAwqKoSVO6F6UGofzUggF3c1i8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xho4YrXa5cXsHkqyVwILWyPuTOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8yHcwLyB+dwveITSUVapXMuBxO8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -471,11 +1661,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/Localizable.strings</key>
+		<key>pt.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q9Di67d91xQ6YxAUlgsf42Uc010=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I2wf7hE1cnC5d9Tp1irH8HAt/rY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hLky42QUdo1IxSboaU9rK5WEWTc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kk/OoqEMnidumS1vDHqOAEiiP9M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GME6tnPZA5zFeXCKKgD+jaJsLrc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uLL3mgsTfAyXvEw/0jqgXlooR3c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -489,11 +1724,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/Localizable.strings</key>
+		<key>pt_PT.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oiPk0D8joQ5GP6B0z0yrLWctrbQ=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmoaxYBYvdlWyOdAIwg2uPjBKss=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qvTzmzRUHNX1P2g7YhjVCoRmEQ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CSshIDwpWYdgrOYZKmA44aQAfBg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zgck1wzrPRz1s6/1M3qL6TQF4P8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xeBSI6gCaiqx6oQUHj/UkCwNsws=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -507,11 +1787,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/Localizable.strings</key>
+		<key>ro.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mi+S8BDkRUT4S8h/IhcKc7SWrBY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TU3KX4vkPSAkr3Ip6eraWnGIMp4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MpDZYVDtm5i1NknUvq7eyGJ7hKY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RSfZUM+jmU+NTHTs+O0Fa65xsE4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OEKqpOoDxEoHST0o+7XfuBuRDMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SLOlMBCf0ujU4lxNosV6U43K/l8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -525,11 +1850,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/Localizable.strings</key>
+		<key>ru.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kGvlLfoMfzCTj7ecOPZvXPuD5SA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2INLmIwgVQPBEPFqp3OunzrzpJA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			633bep+rLkT8mtKF65Inzz+OImE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nq5ED3i1s5FMiN5ovue+0LVX6rI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WdOkoT0HVWFyceti/8Xz0BdJ26M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n5MxFy+1S6GWkE/d/snkXwwAv00=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -543,11 +1913,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/Localizable.strings</key>
+		<key>sk.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PgXh9FA4BiWQOw+8PmLxWoKW/eA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zHexNsXM+avd5R3cdBafXRoYAcU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PVJwgY11XTXsruYl0bKAzZW1YHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UjsZgbHPy6vkTeGhAuFwPvrEd9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2GHBbzggeT6urz87UMCq0sEBGvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gbj4IQVk6c4Mj96z+iVQkUy82FA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -561,11 +1976,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/Localizable.strings</key>
+		<key>sv.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LYQRJe2NxFZPvKFfbfDplT6ZMdY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Lbu0u2A+NBJpbLdYa45nLnkTZhU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			efO7+wz0E+Ro163i6XDjtMIZJE4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1wyLo1oPYijFkK9iDr3sftNBg7g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7G06ta7mQL14r3eR5qV+cY7GOg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kid36GVuGaUokcE32zD+z9zfmWg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -579,11 +2039,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/Localizable.strings</key>
+		<key>th.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LRtAtBEgspfckXqQdbqnECM3LlQ=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jE9IrsKIPORBGHuUy5K8FTyKbL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JmkRruhXt/dMtjolcuYfciI/Cx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g1Y6Y3gU62jGu1HmKGrKyFSLsbo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WttVPAGGJv75n7pwRTZ9Hl0j9YQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4kWKoNi1zxEG2hL6dxq4BulN8b0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -597,11 +2102,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/Localizable.strings</key>
+		<key>tr.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OsE/qAkk1dDrGjog0jPg9EuMt1c=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jxr/8fdhpOLqyg8tPiNkxFKoPBY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			20HjiuMvumQw1GC12z1OF/Cq19M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LcM8SA8nfQ1xOuTJw3tSKgRmsQo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i3Q3LCwzMGZZqMhNas6A3GTfGA0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BLpG3FEaH2rsQoVDCOt59UPin+Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -615,11 +2165,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/Localizable.strings</key>
+		<key>uk.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smWLwYD1vhBwLnALsa8iQ9UfFsA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n9sQeGIyiBOEgI/99e8ylIPMYt8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BD0qhthRkgosUznXgAnp/Y/X+hw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eRwbHeJdp/sH+HHFuBrMP3ZNZeo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4+BeE+vnpcWfGVOMlUa0u9rtxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			awXfaS3jSasPM60yO+a2E6DZe/A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -633,11 +2228,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>vi.lproj/Localizable.strings</key>
+		<key>vi.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JldTKiWRBlaj9vIvIKUYxSxNuUs=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y+1tc0q70uBmeZaQvqszM54i8Pg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5WHTTtbR9KJChnBDdS5PpCkJA4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/TSYc/uh8AbI3NAaWB2Fb3jlr1o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U2f931aHYTuuOfaAiKDrhUP6PDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5cH2ZeMMRP4gcX/b9JG21HVBQvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -651,11 +2291,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/Localizable.strings</key>
+		<key>zh_CN.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fBJG4q7StgndbBrV3MUjN3Knte8=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SqYVOBB9HEIA2ZHrNfV11t2DaKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5WHTTtbR9KJChnBDdS5PpCkJA4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nd90INsK0u7JZDjRMYizmY6nAeU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BB1skjlFFzMj2agRm+6F7L5GWJw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZXK19DcsPHGFso5Sb3Z5miork3o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -669,11 +2354,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/Localizable.strings</key>
+		<key>zh_HK.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UMh6VssUVvVvM0GaKG3QFY+NZeo=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PmcOl3jEXQ6wZnr+yS39JlUVdco=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5WHTTtbR9KJChnBDdS5PpCkJA4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B3qYwtlp+S7jAVVmT6mtU96q1Hk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eFdXgITiLhMu9MtdSGpZ8OynuDQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JfyQrN0CVixa6S5F8A+OK3DhDbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -687,11 +2417,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/Localizable.strings</key>
+		<key>zh_TW.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			emC86kGPplXgTnRyW/uCi7n3aEA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -701,8 +2431,61 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		X3XvmTjwvFF2PlZrv0JLCTV2HUA=
+		ni55JBUqcxUUtEWsXx/6AcugzDc=
 		</data>
+		<key>CDAINTL.xsl</key>
+		<data>
+		77YzdLby/fAV5Q/JMtcKAnG6cVA=
+		</data>
+		<key>CDAPDFINTL.xsl</key>
+		<data>
+		gxB5/7R2hiUGgKDb9E1fYT3Vn8U=
+		</data>
+		<key>ar.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6eaHRpyaTeQxnsyYTDr6JMdtckY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6h/wSgqUfcycz0MkPj1615iLiDQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5qN3hcmTGKEakYpUvkcv6wx3Qw8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4ZS8ZYv/2/tdHv8HGfuCsNjABQc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G832C0Qjwg/O8fYnPinSrX+Gfak=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -712,11 +2495,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ar.lproj/Localizable.strings</key>
+		<key>ar.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iPM0HP2wkaQ8aPjSaYoSWHArT3k=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZTVe06bdZzGWvbSgd7yxKLsrWc4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IN2FdeRC0yrDjERfojguiEOPPg4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fzV4YsnSjeIkftipebQ7cgxLokY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SY2AT5/6MWnxhlJ/R9iSSv2Vyfs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DDGZ5dtPb/X8zKYZEAeGuHobuuw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -730,11 +2558,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/Localizable.strings</key>
+		<key>ca.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7hbdjIfJFBDCeLARccTpATElO5g=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			udjnuvHhgfIpIkYswooSNsSsQy4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DayTPZojPn1cO132q5tRo8Bt71I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sZARDIe/CeUlflUFbDSMH7FPiMA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rF4oA7OVf1eMv2QM2+bHMX52FxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lJ3ksHViSP7fA3QYjFPh8QoBPuY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -748,11 +2621,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/Localizable.strings</key>
+		<key>cs.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GyYdOcI0yI2iZsBoBnQHY7hYKKI=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AhwVyAyEz7nkZwsnYQ9pEyJvuos=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iB3WNvbo6mBC8SkTJiwJ66RyEBY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I3gKXLchCwLdZ+z8zYh3jikYzHw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P+yiZKiTna/TyfusjoHXEGNqsx0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y8xpkJ7bl9Oz8THWf2T+QIb7cqw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -766,11 +2684,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/Localizable.strings</key>
+		<key>da.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/fPxQDrG9A9j10qctbJGMIrKkZc=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PTb2fwF/z+pmFKafsWJqMNA17ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E4XhQuAwOIf0dIlp4JsgvvCqRhU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KhOjKvmhvZGQVnsv/3/MNuZrqj0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hw6013gcHQbnCWhS9+rJyfFb1OE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P/30Ht2jOr89T6OPR7nM0vuV8KQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -784,11 +2747,60 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/Localizable.strings</key>
+		<key>de.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+0pURRk54Uo5dcmi/N6uUDaUt7M=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>donateLifePrivate.p12</key>
+		<data>
+		DJeAXEExEetd2r1byxTs+V71WIA=
+		</data>
+		<key>el.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8+7jDsheHY8CKwTX7p92z9ijfRc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rL7Eopv3RS0jTMbLSqri0gxulLc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vpafaVdsddOrlBXMup0ZQF9s1lQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XWNzizLBYOH0TYuDqMgYyZUVmSA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qrNT8zKFuflsFJksNwC7Z3QWtRg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -802,11 +2814,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/Localizable.strings</key>
+		<key>el.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DsU1Cra/LKCoGW92ltA0n8R5W7Q=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYv9J5ey6iGpmCQZ+jrzOZYbE9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSiQ8maUFmvX85UE0hj0qda4/V0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZZefoDjV70yf1kVKutWl+7fcx3o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTVWZJ1w9IMSOC6ygCX+osFtKEs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -820,11 +2877,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/Localizable.strings</key>
+		<key>en.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			em3NCyyDzj0zzeaXMt0OQWalmlQ=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYv9J5ey6iGpmCQZ+jrzOZYbE9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSiQ8maUFmvX85UE0hj0qda4/V0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PdtnA4wY+KyCwah+icoMZYjYaCk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TJLiA6itKAprTA+GnU25pexlN3E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -838,11 +2940,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/Localizable.strings</key>
+		<key>en_AU.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			naEEAOqwkoa3VunLMorrL7nmc7I=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYv9J5ey6iGpmCQZ+jrzOZYbE9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSiQ8maUFmvX85UE0hj0qda4/V0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GeJZ5cKRQoBmeoTAHJ2qfNKwEUU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rz7Tm2q9ogZR3UXzZCWbnVGq6zo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -856,11 +3003,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/Localizable.strings</key>
+		<key>en_GB.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zVXqRVBVw9PXo/nk4mkt2zhaDZE=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QWZIMozX14guqeA0PVoI5EL2bPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlKI/zYT0/tvrNOE0YqIv6pMewM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LExrtSAzLQm957a+kvy2mPY8OXU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1uYiWsnEebSejGl4SfKeFItmlCE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+rcMC2/YsGU4y2Q2T1dfzBWFnAg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -874,11 +3066,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/Localizable.strings</key>
+		<key>es.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HOxjde/F0bgl3SJCHvnemkWNxlI=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kKkCCUQ70DibY9Td9+8DXvCmuek=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OY4NfIxTzJU7vICYl98mv/LPjYQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aTfpe7ZXeuHx1DBExCCvXC7ih30=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DcSC+cNfctm17W4JAOpUk1hqBVE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Azp1W2utQ1hPfNM7/ZNNYW5Spt4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -892,11 +3129,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/Localizable.strings</key>
+		<key>fi.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oLskhQ4OojwoISF2wdDxtAp74mY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+OtEujxKUcTgD5wKMtQxhnn+tJo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1fnPzdZ7JAYLPwkBZHk6WZzsImo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D9MBzHAVlH1tjXYdMKdkXRxsgCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mzD6hPhz1XHfbQlpA+FlWeO5itE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SG4lfWvDmVUdymykv/DI0VKjDug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -910,11 +3192,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr.lproj/Localizable.strings</key>
+		<key>fr.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rQfL0BUcVUbQ1lSFsxrBkmBc+48=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dR6Pd9n+jMjWZLWt9H8NdG7ZU3s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/XPeEUG7VdinkN6yoDC7nJ1ZRic=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K87eMKntQQyXIQASGGq2Ff+Y6Ho=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wd24lIu/WUVwSQUw1an9NHflWR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SYQGRr05kLODrhv6WvEU3B0x/+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -928,11 +3255,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/Localizable.strings</key>
+		<key>fr_CA.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8TjG7vWUQgfcdJhcFuvPlfAXfeg=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D/iGgzFxU20ZHG3bf98Xfwx4Be0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WSL7Ii0WgNN7OwHkyZ4M4xgHoZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7r1J4HaysHGWHm59x27giMPdH4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k4yjkITyzjI1eufhK5iAu3pbY5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dfM169K6C8mxZ6hqIL3lOVl04r0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -946,11 +3318,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/Localizable.strings</key>
+		<key>he.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aBj01v12Tqj4zIS3wAZCfU4hrVU=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M1COeuzTn9ee4dCVF78TEFsDKgU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0S7U224/DjBpdmA8KuEvvcnE1tc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JO6OWQ8/l7M8Vep3h6MTwwRj2dw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TWsZdXNUV6K5m/NpmJO7gkgut7Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			60iEkvqRmq3f5wN517BczAuyreY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -964,11 +3381,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/Localizable.strings</key>
+		<key>hi.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YTI549dB6SJ2RAbZOnnQfV1qxVc=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lPPtAvY3Z0D2b9rfPVilUYjoqY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OLyZYxrL9VOe2V+E77oDnvXwahg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MR8gH1qObTACjg5YWvnLsF5XYmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SLo06OafxQZ4mxb9wOBiVzpnbZI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MpUDwmODmd37ZEBDMbG5sP8J0jU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -982,11 +3444,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/Localizable.strings</key>
+		<key>hr.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZIX70uQyK9AhlZDCM//Ox+//DGA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HgNRpE0KtBGJ9f1PXcYamBIyTbw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Oj4hXFUraqgHeZ0sefoFtJN+LmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vyxJyFcdoMW1WfRSRnpy+wojR3s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q5RestQlVl/FgdO1rncWhDL5NIo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u3ieaoNHOs0j2wUS/RDS0wVdKW8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1000,11 +3507,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/Localizable.strings</key>
+		<key>hu.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JhkcxBXH4l6UsM71EoRooVuWiRk=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dc0n+vntguyC325yKqoZ6NP+Rfo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+9iIEyca21Y3GOsoynxO0Qc6rNg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xWbK3IHrVUJG8+nzRPPoBdB7gmI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5favxJ8/7YXg7ig2aMZ1DOdI11U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qlR54dpyPtZcztNfJOh9IDxZIr0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1018,11 +3570,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/Localizable.strings</key>
+		<key>id.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fu1Wi91UqFY/xYyKkfbdxASlJxs=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2lChjvT27UGn7UnssQ5i0qUc0Fk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4H0IMWwAcXsEOGd6GQ0CvcMXJMA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VoaZ7BX+zuR7+BaVZ7uMlj+GHu0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8AAXZ57FMQubGeTfpPnbprycTF4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bm7FtRNvdfVPHPFTqft+QnGGrWc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1036,11 +3633,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>it.lproj/Localizable.strings</key>
+		<key>it.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KetYdc5WZr06yIQDNbOzjl4aALY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VDiDiWxrZ2lqYJi8XompreS9j/A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tLoQD4ICvTNPz10Au7PAtP9gMXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S9qM0JcbPErPHzkbEri+iZDww4Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CjfU2xWP6ejEyHVUARVm06PnI3A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E4vpvxa0ca1ct6DrmyrrmlOKUtk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1054,11 +3696,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/Localizable.strings</key>
+		<key>ja.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jWUMNKOs5gLFQa1G/cp4zY5fd9I=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t862XUZU1KbiPBRWqVEQyibz4uA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l9AcjLZqyETCM5dbIh7YGVhtDFs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f87h4QbBh2IX9Y0Gp3WfjWiDhe8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wKGaguxSxjAJapPxs2PFOuMWW/A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SJyT1UWNMJ3baeKMwMaiKoPNRoA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1072,11 +3759,64 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/Localizable.strings</key>
+		<key>ko.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QQj2DjS9VSEN/WZvACv7ne2jfcM=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>minimal_ccd.txt</key>
+		<data>
+		vvCqK7U+1kRolgn/HLKxCgL+Eds=
+		</data>
+		<key>minimal_ccd.xml</key>
+		<data>
+		tfD6YQDIXhxVjeQrkhj8AOgPbx0=
+		</data>
+		<key>ms.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CVNT2Z8deZqymO3YOiCvBfyknyM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqdjUFRh8gt3AIl6CoeBFpxOBNI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bhzo2CsjpGUPec0lkJ8NMRr3HWw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VHpyhXf63SjqBj1c8U04fz1+es4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9jkqqXIPLpTRu92Yknu3IqBWB3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1090,11 +3830,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/Localizable.strings</key>
+		<key>ms.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/6BE2HEpO7O0qIW/pxSXkghuzzY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			era0OD4tBXJw16+lPduF62ttefk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mA8cFeczwqN9eby4nPvOnw2FplI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cgnTQl4FC23fNGJcKBqwb1buHEw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			81QHMADlDLhaifO6U02GSrDIBSk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qQiqXKZqpZWL3qp2ZLEwd541Epg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1108,11 +3893,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>nl.lproj/Localizable.strings</key>
+		<key>nl.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JoJYZe1NzlrsgHcKnJlt6oWa4to=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2tIij/xuxg5Gi+oeABhZLrfHIhA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+I9+O6j6BGCtyLLBKEj5VtH5CxE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NR56821H7xV11cYdYOrKpInLQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jorwAjfA7an91tNgc02TJ+mJHxw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kmWdUoIhfrSHs605SqfJj/seZmA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1126,11 +3956,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/Localizable.strings</key>
+		<key>no.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8a4nGlwnkWWMUarmagk0tO9p9LM=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zttLNr6hJGo5vkj3L4PQyy8zsz4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9PscN7GR/SyqcHstUjLic3iZZ28=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lQWPSAtdItDfhzx3Dy6lneCW1Ls=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QYtRLHUOED+TThHmQIgNKJ0ydHw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DI9skUCHiYs1EEqAsx3iWLDUPoQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1144,11 +4019,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/Localizable.strings</key>
+		<key>pl.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o4KLmsukrloGZiJx+GaRaLFvx1U=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			db17rcmpuype2Y0DqUGU8UBzTl0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hLky42QUdo1IxSboaU9rK5WEWTc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VQAwqKoSVO6F6UGofzUggF3c1i8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xho4YrXa5cXsHkqyVwILWyPuTOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8yHcwLyB+dwveITSUVapXMuBxO8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1162,11 +4082,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/Localizable.strings</key>
+		<key>pt.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q9Di67d91xQ6YxAUlgsf42Uc010=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I2wf7hE1cnC5d9Tp1irH8HAt/rY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hLky42QUdo1IxSboaU9rK5WEWTc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kk/OoqEMnidumS1vDHqOAEiiP9M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GME6tnPZA5zFeXCKKgD+jaJsLrc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uLL3mgsTfAyXvEw/0jqgXlooR3c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1180,11 +4145,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/Localizable.strings</key>
+		<key>pt_PT.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oiPk0D8joQ5GP6B0z0yrLWctrbQ=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmoaxYBYvdlWyOdAIwg2uPjBKss=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qvTzmzRUHNX1P2g7YhjVCoRmEQ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CSshIDwpWYdgrOYZKmA44aQAfBg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zgck1wzrPRz1s6/1M3qL6TQF4P8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xeBSI6gCaiqx6oQUHj/UkCwNsws=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1198,11 +4208,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/Localizable.strings</key>
+		<key>ro.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mi+S8BDkRUT4S8h/IhcKc7SWrBY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TU3KX4vkPSAkr3Ip6eraWnGIMp4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MpDZYVDtm5i1NknUvq7eyGJ7hKY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RSfZUM+jmU+NTHTs+O0Fa65xsE4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OEKqpOoDxEoHST0o+7XfuBuRDMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SLOlMBCf0ujU4lxNosV6U43K/l8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1216,11 +4271,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/Localizable.strings</key>
+		<key>ru.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kGvlLfoMfzCTj7ecOPZvXPuD5SA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2INLmIwgVQPBEPFqp3OunzrzpJA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			633bep+rLkT8mtKF65Inzz+OImE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nq5ED3i1s5FMiN5ovue+0LVX6rI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WdOkoT0HVWFyceti/8Xz0BdJ26M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n5MxFy+1S6GWkE/d/snkXwwAv00=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1234,11 +4334,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/Localizable.strings</key>
+		<key>sk.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PgXh9FA4BiWQOw+8PmLxWoKW/eA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zHexNsXM+avd5R3cdBafXRoYAcU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PVJwgY11XTXsruYl0bKAzZW1YHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UjsZgbHPy6vkTeGhAuFwPvrEd9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2GHBbzggeT6urz87UMCq0sEBGvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gbj4IQVk6c4Mj96z+iVQkUy82FA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1252,11 +4397,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/Localizable.strings</key>
+		<key>sv.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LYQRJe2NxFZPvKFfbfDplT6ZMdY=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Lbu0u2A+NBJpbLdYa45nLnkTZhU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			efO7+wz0E+Ro163i6XDjtMIZJE4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1wyLo1oPYijFkK9iDr3sftNBg7g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7G06ta7mQL14r3eR5qV+cY7GOg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kid36GVuGaUokcE32zD+z9zfmWg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1270,11 +4460,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/Localizable.strings</key>
+		<key>th.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LRtAtBEgspfckXqQdbqnECM3LlQ=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jE9IrsKIPORBGHuUy5K8FTyKbL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JmkRruhXt/dMtjolcuYfciI/Cx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g1Y6Y3gU62jGu1HmKGrKyFSLsbo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WttVPAGGJv75n7pwRTZ9Hl0j9YQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4kWKoNi1zxEG2hL6dxq4BulN8b0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1288,11 +4523,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/Localizable.strings</key>
+		<key>tr.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OsE/qAkk1dDrGjog0jPg9EuMt1c=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jxr/8fdhpOLqyg8tPiNkxFKoPBY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			20HjiuMvumQw1GC12z1OF/Cq19M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LcM8SA8nfQ1xOuTJw3tSKgRmsQo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i3Q3LCwzMGZZqMhNas6A3GTfGA0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BLpG3FEaH2rsQoVDCOt59UPin+Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1306,11 +4586,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/Localizable.strings</key>
+		<key>uk.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smWLwYD1vhBwLnALsa8iQ9UfFsA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n9sQeGIyiBOEgI/99e8ylIPMYt8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BD0qhthRkgosUznXgAnp/Y/X+hw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eRwbHeJdp/sH+HHFuBrMP3ZNZeo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4+BeE+vnpcWfGVOMlUa0u9rtxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			awXfaS3jSasPM60yO+a2E6DZe/A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1324,11 +4649,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>vi.lproj/Localizable.strings</key>
+		<key>vi.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JldTKiWRBlaj9vIvIKUYxSxNuUs=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y+1tc0q70uBmeZaQvqszM54i8Pg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5WHTTtbR9KJChnBDdS5PpCkJA4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/TSYc/uh8AbI3NAaWB2Fb3jlr1o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U2f931aHYTuuOfaAiKDrhUP6PDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5cH2ZeMMRP4gcX/b9JG21HVBQvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1342,11 +4712,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/Localizable.strings</key>
+		<key>zh_CN.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fBJG4q7StgndbBrV3MUjN3Knte8=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SqYVOBB9HEIA2ZHrNfV11t2DaKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5WHTTtbR9KJChnBDdS5PpCkJA4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nd90INsK0u7JZDjRMYizmY6nAeU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BB1skjlFFzMj2agRm+6F7L5GWJw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZXK19DcsPHGFso5Sb3Z5miork3o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1360,11 +4775,56 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/Localizable.strings</key>
+		<key>zh_HK.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UMh6VssUVvVvM0GaKG3QFY+NZeo=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PmcOl3jEXQ6wZnr+yS39JlUVdco=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable-Ariel.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5WHTTtbR9KJChnBDdS5PpCkJA4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable-USState.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B3qYwtlp+S7jAVVmT6mtU96q1Hk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eFdXgITiLhMu9MtdSGpZ8OynuDQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/HealthUI-Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JfyQrN0CVixa6S5F8A+OK3DhDbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1378,11 +4838,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/Localizable.strings</key>
+		<key>zh_TW.lproj/USStateAbbreviations.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			emC86kGPplXgTnRyW/uCi7n3aEA=
+			C9l4BvwYzCqaCHmKYfIobu8tjCc=
 			</data>
 			<key>optional</key>
 			<true/>

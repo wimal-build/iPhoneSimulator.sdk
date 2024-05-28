@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
                 accepts a predicate to filter HKCorrelations and a dictionary of predicates to filter the
                 correlated samples.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKCorrelationQuery : HKQuery
 
 @property (readonly, copy) HKCorrelationType *correlationType;
@@ -47,7 +47,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 - (instancetype)initWithType:(HKCorrelationType *)correlationType
                    predicate:(nullable NSPredicate *)predicate
             samplePredicates:(nullable NSDictionary<HKSampleType *, NSPredicate *> *)samplePredicates
-                  completion:(void(^)(HKCorrelationQuery *query, NSArray<HKCorrelation *> * __nullable correlations, NSError * __nullable error))completion;
+                  completion:(void(^)(HKCorrelationQuery *query, NSArray<HKCorrelation *> * _Nullable correlations, NSError * _Nullable error))completion;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract   An HKObject subclass representing an category measurement
  @discussion Category samples are samples that can be categorized into an enum of concrete values
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKCategorySample : HKSample
 
 @property (readonly, strong) HKCategoryType *categoryType;
@@ -76,13 +76,13 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                              startDate:(NSDate *)startDate
                                endDate:(NSDate *)endDate
                                 device:(nullable HKDevice *)device
-                              metadata:(nullable NSDictionary<NSString *, id> *)metadata NS_AVAILABLE_IOS(9_0);
+                              metadata:(nullable NSDictionary<NSString *, id> *)metadata HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 @end
 
 /*!
  @constant     HKPredicateKeyPathCategoryValue
  */
-HK_EXTERN NSString * const HKPredicateKeyPathCategoryValue NS_AVAILABLE_IOS(8_0);
+HK_EXTERN NSString * const HKPredicateKeyPathCategoryValue HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 NS_ASSUME_NONNULL_END

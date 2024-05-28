@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief This class is used to represent an accessory category.
  */
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMAccessoryCategory : NSObject
 
 /*!

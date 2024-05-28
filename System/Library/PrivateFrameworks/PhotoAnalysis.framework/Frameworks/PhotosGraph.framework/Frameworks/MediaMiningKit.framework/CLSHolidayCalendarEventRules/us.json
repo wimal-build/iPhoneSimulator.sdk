@@ -1,0 +1,769 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife",
+          "firework",
+          "food",
+          "street"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 1,
+          "weekday" : 2,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Martin Luther King, Jr. Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "culture",
+          "speaker_person",
+          "urban"
+        ]
+      },
+      "uuid" : "385ACC8D-1EF5-4B8A-9F9D-2295734AF6C4"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "wine_bottle",
+          "bedroom",
+          "balloon",
+          "necklace",
+          "vase",
+          "food"
+        ]
+      },
+      "uuid" : "86C32980-F75C-4013-A9A4-171D700821C3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 17,
+          "month" : 3
+        }
+      ],
+      "name" : "St. Patrick’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "beer_bottle",
+          "bar",
+          "nightclub"
+        ]
+      },
+      "uuid" : "7ABBC796-D61A-49E8-B70A-15F1536F5659"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 22,
+          "month" : 4
+        }
+      ],
+      "name" : "Earth Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 3}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "culture",
+          "park",
+          "nature",
+          "mountain",
+          "water",
+          "underwater",
+          "sky",
+          "canyon",
+          "glacier",
+          "sunset"
+        ]
+      },
+      "uuid" : "BEE9FF87-1D81-42A3-BE29-319941766D1E"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment",
+          "nature"
+        ]
+      },
+      "uuid" : "02CF3F75-1552-4A68-A6CA-9B04A40FA994"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 2}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "food",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1C132E5C-D04F-43DA-9699-45687584C7A4"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 7
+        }
+      ],
+      "name" : "Independence Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 4}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "park",
+          "firework",
+          "urban",
+          "beach",
+          "restaurant",
+          "nightlife",
+          "culture",
+          "entertainment",
+          "food"
+        ]
+      },
+      "uuid" : "FE1E8F96-CBC9-408B-AC7A-67B26061C308"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 11,
+          "weekday" : 5,
+          "weekdayOrdinal" : 4
+        }
+      ],
+      "name" : "Thanksgiving",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{3, 17}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "garden",
+          "kitchen",
+          "food"
+        ]
+      },
+      "uuid" : "E21CF1C2-C18D-42D6-9A97-03E2AC97CB56"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 4,
+          "year" : 2000
+        },
+        {
+          "day" : 15,
+          "month" : 4,
+          "year" : 2001
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2002
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2003
+        },
+        {
+          "day" : 11,
+          "month" : 4,
+          "year" : 2004
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2005
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2006
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2007
+        },
+        {
+          "day" : 23,
+          "month" : 3,
+          "year" : 2008
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2009
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2021
+        },
+        {
+          "day" : 17,
+          "month" : 4,
+          "year" : 2022
+        },
+        {
+          "day" : 9,
+          "month" : 4,
+          "year" : 2023
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2024
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2025
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2026
+        },
+        {
+          "day" : 28,
+          "month" : 3,
+          "year" : 2027
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2028
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2029
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2030
+        },
+        {
+          "day" : 13,
+          "month" : 4,
+          "year" : 2031
+        },
+        {
+          "day" : 28,
+          "month" : 3,
+          "year" : 2032
+        },
+        {
+          "day" : 17,
+          "month" : 4,
+          "year" : 2033
+        },
+        {
+          "day" : 9,
+          "month" : 4,
+          "year" : 2034
+        },
+        {
+          "day" : 25,
+          "month" : 3,
+          "year" : 2035
+        },
+        {
+          "day" : 13,
+          "month" : 4,
+          "year" : 2036
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2037
+        },
+        {
+          "day" : 25,
+          "month" : 4,
+          "year" : 2038
+        },
+        {
+          "day" : 10,
+          "month" : 4,
+          "year" : 2039
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2040
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2041
+        },
+        {
+          "day" : 6,
+          "month" : 4,
+          "year" : 2042
+        },
+        {
+          "day" : 29,
+          "month" : 3,
+          "year" : 2043
+        },
+        {
+          "day" : 17,
+          "month" : 4,
+          "year" : 2044
+        },
+        {
+          "day" : 9,
+          "month" : 4,
+          "year" : 2045
+        },
+        {
+          "day" : 25,
+          "month" : 3,
+          "year" : 2046
+        },
+        {
+          "day" : 14,
+          "month" : 4,
+          "year" : 2047
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2048
+        },
+        {
+          "day" : 18,
+          "month" : 4,
+          "year" : 2049
+        }
+      ],
+      "name" : "Easter Sunday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "rabbit",
+          "garden",
+          "kitchen",
+          "food",
+          "cake"
+        ]
+      },
+      "uuid" : "976942A5-0D15-4BEE-9FE1-D046B668E479"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 30,
+          "month" : 7
+        }
+      ],
+      "name" : "International Day of Friendship",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 12,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "urban",
+          "concert",
+          "food",
+          "stadium"
+        ]
+      },
+      "uuid" : "24231EBD-D61D-4D17-8398-99267B0FCACF"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 9,
+          "weekday" : 2,
+          "weekdayOrdinal" : 1
+        }
+      ],
+      "name" : "Labor Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "beach",
+          "mountain",
+          "travel",
+          "entertainment",
+          "park"
+        ]
+      },
+      "uuid" : "F4400876-8D17-4F25-B4E1-324EB51BE7DD"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 2,
+          "weekdayOrdinal" : -1
+        }
+      ],
+      "name" : "Memorial Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "beach",
+          "mountain",
+          "travel",
+          "entertainment",
+          "park"
+        ]
+      },
+      "uuid" : "92792A51-0901-4355-8AE4-04384D76E3C3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "entertainment",
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "01B2DBE1-BF3C-4B52-A490-EB85E4EC897B"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 11,
+          "month" : 11
+        }
+      ],
+      "name" : "Veterans Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "ECBE431C-5BF4-47FE-AFFF-AE5F9E46A197"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 26,
+          "month" : 8
+        }
+      ],
+      "name" : "National Dog Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 2}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "dog"
+        ]
+      },
+      "uuid" : "5A063EEA-2E20-4428-80B2-68BFA01C13E8"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 29,
+          "month" : 10
+        }
+      ],
+      "name" : "National Cat Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 2}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "cat"
+        ]
+      },
+      "uuid" : "D824868B-F0FA-4247-A476-1B5D0B150586"
+    },
+    {
+      "dateRules" : [
+        {
+          "weekdayOrdinal" : 1,
+          "startYear" : 2002,
+          "month" : 2,
+          "weekday" : 1
+        },
+        {
+          "month" : 1,
+          "weekday" : 1,
+          "endYear" : 2001
+        }
+      ],
+      "name" : "Super Bowl Sunday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "food",
+          "ball",
+          "scoreboard",
+          "firework",
+          "stadium"
+        ]
+      },
+      "uuid" : "03379798-88F6-4EAC-9ADB-0C133155CE28"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "us",
+    "countryName" : "United States"
+  }
+}

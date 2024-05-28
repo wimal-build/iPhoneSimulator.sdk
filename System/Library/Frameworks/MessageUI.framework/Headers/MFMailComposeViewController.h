@@ -24,13 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
     @constant   MFMailComposeResultSent        User successfully sent/queued the message.
     @constant   MFMailComposeResultFailed      User's attempt to save or send was unsuccessful.
 */
-enum MFMailComposeResult {
+typedef NS_ENUM(NSInteger, MFMailComposeResult) {
     MFMailComposeResultCancelled,
     MFMailComposeResultSaved,
     MFMailComposeResultSent,
     MFMailComposeResultFailed
-};
-typedef enum MFMailComposeResult MFMailComposeResult;   // available in iPhone 3.0
+} NS_ENUM_AVAILABLE_IOS(3_0);
 
 /*!
     @const      MFMailComposeErrorDomain
@@ -50,11 +49,10 @@ extern NSString *const MFMailComposeErrorDomain __OSX_AVAILABLE_STARTING(__MAC_N
     @constant   MFMailComposeErrorCodeSaveFailed    Generic error indicating a save failed.
     @constant   MFMailComposeErrorCodeSendFailed    Generic error indicating a send failed.
 */
-enum MFMailComposeErrorCode {
+typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
     MFMailComposeErrorCodeSaveFailed,
     MFMailComposeErrorCodeSendFailed
-};
-typedef enum MFMailComposeErrorCode MFMailComposeErrorCode;     // available in iPhone 3.0
+} NS_ENUM_AVAILABLE_IOS(3_0);
 
 
 @protocol MFMailComposeViewControllerDelegate;

@@ -5,12 +5,12 @@
 //  Copyright 2008 Apple Inc. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
-#import <QuickLook/QLBase.h>
+
+#include <QuickLook/QLBase.h>
 
 /*!
- * @abstract The QLPreviewItem protocol declares the methods that a QLPreviewController  instance uses to access the contents of a given item.
+ * @abstract The QLPreviewItem protocol declares the methods that a QLPreviewController instance uses to access the contents of a given item.
  */
 QL_EXPORT @protocol QLPreviewItem <NSObject>
 
@@ -18,9 +18,9 @@ QL_EXPORT @protocol QLPreviewItem <NSObject>
 
 /*!
  * @abstract The URL of the item to preview.
- * @discussion The URL must be a file URL. 
+ * @discussion The URL must be a file URL.
  */
-@property(readonly, nonnull, nonatomic) NSURL * previewItemURL;
+@property(readonly, nullable, nonatomic) NSURL * previewItemURL;
 
 @optional
 
@@ -38,5 +38,3 @@ QL_EXPORT @protocol QLPreviewItem <NSObject>
  */
 @interface NSURL (QLPreviewConvenienceAdditions) <QLPreviewItem>
 @end
-
-

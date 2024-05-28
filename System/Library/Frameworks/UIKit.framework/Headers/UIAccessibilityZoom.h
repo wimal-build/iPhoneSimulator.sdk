@@ -2,8 +2,11 @@
 //  UIAccessibilityZoom.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
 //
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +24,6 @@ UIKIT_EXTERN void UIAccessibilityZoomFocusChanged(UIAccessibilityZoomType type, 
  If your app uses multi-finger gestures that conflict with system Zoom gestures (by using three fingers), 
  calling this method will warn users of the conflict.
  */
-UIKIT_EXTERN void UIAccessibilityRegisterGestureConflictWithZoom() NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN void UIAccessibilityRegisterGestureConflictWithZoom(void) NS_AVAILABLE_IOS(5_0);
 
 NS_ASSUME_NONNULL_END

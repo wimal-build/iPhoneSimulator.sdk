@@ -2,7 +2,7 @@
 //  UIMenuController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,7 +23,11 @@ typedef NS_ENUM(NSInteger, UIMenuControllerArrowDirection) {
 
 NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED @interface UIMenuController : NSObject
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) UIMenuController *sharedMenuController;
+#else
 + (UIMenuController *)sharedMenuController;
+#endif
 
 @property(nonatomic,getter=isMenuVisible) BOOL menuVisible;	    // default is NO
 - (void)setMenuVisible:(BOOL)menuVisible animated:(BOOL)animated;
@@ -39,11 +43,11 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED @interface UIMenuController : NSOb
 
 @end
 
-UIKIT_EXTERN NSString *const UIMenuControllerWillShowMenuNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIMenuControllerDidShowMenuNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIMenuControllerWillHideMenuNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIMenuControllerDidHideMenuNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIMenuControllerMenuFrameDidChangeNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIMenuControllerWillShowMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIMenuControllerDidShowMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIMenuControllerWillHideMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIMenuControllerDidHideMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIMenuControllerMenuFrameDidChangeNotification __TVOS_PROHIBITED;
 
 NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIMenuItem : NSObject 
 

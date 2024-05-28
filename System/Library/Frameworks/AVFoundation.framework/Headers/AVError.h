@@ -99,5 +99,6 @@ typedef NS_ENUM(NSInteger, AVError) {
 #if !TARGET_OS_IPHONE
     AVErrorCreateContentKeyRequestFailed NS_AVAILABLE(10_11, NA) = -11860,
 #endif
-	
+    AVErrorUnsupportedOutputSettings NS_AVAILABLE(10_12, 10_0) = -11861,
+	AVErrorOperationNotAllowed NS_AVAILABLE(10_12, 10_0) = -11862,
 };

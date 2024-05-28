@@ -1,7 +1,7 @@
 /*
     NSMigrationManager.h
     Core Data
-    Copyright (c) 2004-2015, Apple Inc.
+    Copyright (c) 2004-2016, Apple Inc.
     All rights reserved.
 */
 
@@ -19,28 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class NSMappingModel;
 @class NSMigrationContext;
 
-NS_CLASS_AVAILABLE(10_5, 3_0)
+API_AVAILABLE(macosx(10.5),ios(3.0))
 @interface NSMigrationManager : NSObject {
-    @private
-    NSManagedObjectModel *_sourceModel;
-    NSDictionary *_sourceEntitiesByVersionHash;
-    NSManagedObjectModel *_destinationModel;
-    NSDictionary *_destinationEntitiesByVersionHash;
-    NSMappingModel *_mappingModel;
-    NSManagedObjectContext *_sourceManagedObjectContext;
-    NSManagedObjectContext *_destinationManagedObjectContext;
-    NSMigrationContext *_migrationContext;
-    NSDictionary *_userInfo;
-    struct _migrationManagerFlags {
-        unsigned int _migrationWasCancelled:1;
-        unsigned int _usesStoreSpecificMigrationManager:1;
-        unsigned int _reservedMigrationManager:30;
-    } _migrationManagerFlags;
-	NSError *_migrationCancellationError;
-	id _reserved1;
-	id _reserved2;
-	id _reserved3;
-	id _reserved4;
 }
 
 /* Creates a migration manager instance with the corresponding source and destination models.  (All validation of the arguments is performed during migrateStoreFromURL:toURL:)  As with the NSPersistentStoreCoordinator, once models are added to the migration manager they are immutable and cannot be altered.*/
@@ -52,7 +32,7 @@ NS_CLASS_AVAILABLE(10_5, 3_0)
 
 /* Tries to use a store specific migration manager to perform the store migration, note that a store specific migration manager class is not guaranteed to perform any of the migration manager delegate callbacks or update values for the observable properties.  
  Defaults to YES */
-@property () BOOL usesStoreSpecificMigrationManager NS_AVAILABLE(10_7,  5_0);
+@property () BOOL usesStoreSpecificMigrationManager API_AVAILABLE(macosx(10.7),ios(5.0));
 
 /* Resets the association tables for the migration.  (Note this does NOT reset the source or destination contexts).*/
 - (void)reset;

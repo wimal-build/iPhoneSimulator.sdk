@@ -14,60 +14,60 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a device name.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyName NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyName HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeyManufacturer
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a device manufacturer.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyManufacturer NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyManufacturer HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeyModel
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a device model.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyModel NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyModel HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeyHardwareVersion
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a hardware version.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyHardwareVersion NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyHardwareVersion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeyFirmwareVersion
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a firmware version.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyFirmwareVersion NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyFirmwareVersion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeySoftwareVersion
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a software version.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeySoftwareVersion NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeySoftwareVersion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeyLocalIdentifier
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a local identifier.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyLocalIdentifier NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyLocalIdentifier HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @constant      HKDevicePropertyKeyUDIDeviceIdentifier
  @abstract      Used with predicateForObjectsWithDeviceProperty to specify a UDI device identifier.
  @discussion    The expected value type is an NSString.
  */
-HK_EXTERN NSString * const HKDevicePropertyKeyUDIDeviceIdentifier NS_AVAILABLE_IOS(9_0);
+HK_EXTERN NSString * const HKDevicePropertyKeyUDIDeviceIdentifier HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 
 
-HK_CLASS_AVAILABLE_IOS(9_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(9_0, 2_0)
 @interface HKDevice : NSObject <NSSecureCoding, NSCopying>
 
 /*!
@@ -75,7 +75,7 @@ HK_CLASS_AVAILABLE_IOS(9_0)
  @abstract      The name of the receiver.
  @discussion    The user-facing name, such as the one displayed in the Bluetooth Settings for a BLE device.
  */
-@property (readonly) NSString *name;
+@property (readonly, nullable) NSString *name;
 
 /*!
  @property      manufacturer
@@ -136,14 +136,14 @@ HK_CLASS_AVAILABLE_IOS(9_0)
  @discussion    This allows initialization of an HKDevice object based on the
                 information provided.
  */
-- (instancetype)initWithName:(NSString * __nullable)name
-                manufacturer:(NSString * __nullable)manufacturer
-                       model:(NSString * __nullable)model
-             hardwareVersion:(NSString * __nullable)hardwareVersion
-             firmwareVersion:(NSString * __nullable)firmwareVersion
-             softwareVersion:(NSString * __nullable)softwareVersion
-             localIdentifier:(NSString * __nullable)localIdentifier
-         UDIDeviceIdentifier:(NSString * __nullable)UDIDeviceIdentifier;
+- (instancetype)initWithName:(nullable NSString *)name
+                manufacturer:(NSString * _Nullable)manufacturer
+                       model:(NSString * _Nullable)model
+             hardwareVersion:(NSString * _Nullable)hardwareVersion
+             firmwareVersion:(NSString * _Nullable)firmwareVersion
+             softwareVersion:(NSString * _Nullable)softwareVersion
+             localIdentifier:(NSString * _Nullable)localIdentifier
+         UDIDeviceIdentifier:(NSString * _Nullable)UDIDeviceIdentifier;
 
 - (instancetype)init NS_UNAVAILABLE;
 

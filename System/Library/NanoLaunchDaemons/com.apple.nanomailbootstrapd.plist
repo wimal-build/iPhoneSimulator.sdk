@@ -12,6 +12,8 @@
         <true/>
         <key>com.apple.private.alloy.mail.sync.protected-idswake</key>
         <true/>
+        <key>com.apple.private.alloy.mail.sync.protected.content-idswake</key>
+        <true/>
         <key>com.apple.private.alloy.mail.sync.accounts-idswake</key>
         <true/>
         <key>com.apple.private.alloy.mail.fetches-idswake</key>
@@ -25,17 +27,6 @@
 	<string>mobile</string>
 	<key>ProcessType</key>
 	<string>Adaptive</string>
-	<key>LaunchEvents</key>
-	<dict>
-		<key>com.apple.notifyd.matching</key>
-		<dict>
-			<key>com.apple.mail.AutoLaunchSettingsChanged</key>
-			<dict>
-				<key>Notification</key>
-				<string>com.apple.mail.AutoLaunchSettingsChanged</string>
-			</dict>
-		</dict>
-	</dict>
 	<key>Disabled</key>
 	<true/>
 </dict>

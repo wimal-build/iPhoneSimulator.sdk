@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
     ADInterstitialPresentationPolicyNone = 0,
     ADInterstitialPresentationPolicyAutomatic,
     ADInterstitialPresentationPolicyManual
-}  NS_ENUM_AVAILABLE_IOS(7_0);
+}  NS_ENUM_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @category UIViewController (iAdAdditions)
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * view controller's interstitialPresentationPolicy is set to something other
  * than ADInterstitialPresentationPolicyNone.
  */
-+ (void)prepareInterstitialAds NS_AVAILABLE_IOS(7_0);
++ (void)prepareInterstitialAds NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @property interstitialPresentationPolicy
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * -requestInterstitialAdPresentation. By default the policy is "None", so to be
  * able to present an interstitial it must be changed to either "Automatic" or "Manual".
  */
-@property (nonatomic, assign) ADInterstitialPresentationPolicy interstitialPresentationPolicy NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, assign) ADInterstitialPresentationPolicy interstitialPresentationPolicy NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @property canDisplayBannerAds
@@ -83,7 +83,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  *
  * @seealso originalContentView
  */
-@property (nonatomic, assign) BOOL canDisplayBannerAds NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, assign) BOOL canDisplayBannerAds NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @property originalContentView
@@ -95,7 +95,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * disabled, the view controller's content view will remain embedded - that operation
  * will not be reversed.
  */
-@property (nonatomic, retain, readonly) UIView *originalContentView NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, retain, readonly) UIView *originalContentView NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @property presentingFullScreenAd
@@ -104,7 +104,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * Can be used to query the controller to determine if it is presenting a full screen
  * ad, which may be an interstitial or the iAd shown when the user taps a banner.
  */
-@property (nonatomic, readonly, getter=isPresentingFullScreenAd) BOOL presentingFullScreenAd NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, getter=isPresentingFullScreenAd) BOOL presentingFullScreenAd NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @property displayingBannerAd
@@ -112,7 +112,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * @discussion
  * Can be used to query the controller to determine if it is displaying a banner ad.
  */
-@property (nonatomic, readonly, getter=isDisplayingBannerAd) BOOL displayingBannerAd NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, getter=isDisplayingBannerAd) BOOL displayingBannerAd NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @method requestInterstitialAdPresentation
@@ -126,7 +126,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * manage significant state changes, such as game levels. Returns YES if an interstitial
  * will be presented.
  */
-- (BOOL)requestInterstitialAdPresentation NS_AVAILABLE_IOS(7_0);
+- (BOOL)requestInterstitialAdPresentation NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @method shouldPresentInterstitialAd
@@ -141,6 +141,6 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * state. The method will be invoked when the framework is about to present an interstitial
  * ad in the ADInterstitialPresentationPolicyAutomatic configuration.
  */
-@property (NS_NONATOMIC_IOSONLY, readonly) BOOL shouldPresentInterstitialAd NS_AVAILABLE_IOS(7_0);
+@property (NS_NONATOMIC_IOSONLY, readonly) BOOL shouldPresentInterstitialAd NS_DEPRECATED_IOS(7_0, 10_0);
 
 @end

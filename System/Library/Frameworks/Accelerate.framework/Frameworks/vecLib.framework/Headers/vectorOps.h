@@ -3,7 +3,7 @@
  
      Contains:   vector and matrix functions for AltiVec
  
-     Version:    vecLib-563.2
+     Version:    vecLib-600.0
  
      Copyright:  Copyright (c) 1999-2016 by Apple Inc. All rights reserved.
  
@@ -1030,4 +1030,3 @@ vSgevv(
 #endif
 
 #endif /* __VECTOROPS__ */
-

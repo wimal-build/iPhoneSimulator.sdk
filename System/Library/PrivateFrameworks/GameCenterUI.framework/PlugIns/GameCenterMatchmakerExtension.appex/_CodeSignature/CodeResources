@@ -4,11 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Base.lproj/GKDashboardMultiplayerPickerViewController_iOS.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xP4BV8+la4tSieZoNiLL4E5zm58=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IER0Mh5jhjN/I+Gb8Zic1CKQ9dI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BRGHQgFP0erUR/t1T3lr+qy59M0=
+			kwmU4/1zmmcX1/FiCvjTBwzo394=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -40,6 +58,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zhsuI2VBTjvjcmOv/4B6+fvxT7Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -58,9 +85,37 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>GKDashboardPlayerPickerCell_iOS.nib</key>
+		<data>
+		dYKnNE0763JorNuYIQdPfZEeQ4k=
+		</data>
+		<key>GKDashboardSectionHeaderView_iOS.nib</key>
+		<data>
+		cb+lMltr/B6zxFiAD7LT1leUa7w=
+		</data>
+		<key>GKMultiplayerBubbleView_iOS.nib</key>
+		<data>
+		a/+VQ6gXIjP98tyMr64EbyJa+IQ=
+		</data>
+		<key>GKMultiplayerButtonFooterView_iOS.nib</key>
+		<data>
+		DAsu9oMPe93L9Dui9VTSVtGA1u8=
+		</data>
+		<key>GKMultiplayerButtonHeaderView_iOS.nib</key>
+		<data>
+		pfcaLU7VlMpcHBZcET2QATQvjAU=
+		</data>
+		<key>GKMultiplayerCollectionViewCellAccessoryLeft_iOS.nib</key>
+		<data>
+		Hg+rUWP+GGl/61zYpxs4x/po6OA=
+		</data>
+		<key>GKMultiplayerCollectionViewCell_iOS.nib</key>
+		<data>
+		SW2wm/x8sGcEU1sI/w0iyp+0/Qo=
+		</data>
 		<key>GameCenterMatchmakerExtension.entitlements</key>
 		<data>
-		gBZR35RT+blDMU2/nX973Cjg0Ms=
+		16yai133lXzkspwMEjC0IXOV45g=
 		</data>
 		<key>GameCenterMatchmakerExtensionInterface.storyboardc/Info.plist</key>
 		<data>
@@ -68,8 +123,17 @@
 		</data>
 		<key>GameCenterMatchmakerExtensionInterface.storyboardc/UINavigationController-dkv-Kw-pKJ.nib</key>
 		<data>
-		hum/uP7mSLK2x4gd9ZAjBhokHSQ=
+		Bw0hhbMd+Todrn8Wb2rkQ3MQUfE=
 		</data>
+		<key>German.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HBEYyzn8cP8ik0hHRPKjgQZJUIc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -90,8 +154,17 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		mXtCk9I+Zdq87wIlAG4tr+PFCmI=
+		Xs0cYqX0BQbm5gezix11DVD3tYo=
 		</data>
+		<key>Italian.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eI+NutGUQ/aF+TzkN+oDTgMkbeo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -106,6 +179,15 @@
 			<key>hash</key>
 			<data>
 			cHbOgZnQAhxlYMt5CZ1G3WkkeCs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ksVpzVlesuha7Mz36L5SMBNwHtw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -128,6 +210,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Spanish.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQTkZTj4sb16rCY11uowVQPcXos=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -142,6 +233,15 @@
 			<key>hash</key>
 			<data>
 			hBd5eQnp6ahzHMqWs+0T+ekvgKk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M9IcxtIu+YFWES/jMJupiTwPp/c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -164,6 +264,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ix97Xfo04K/xPFypYKTsTlsGaH8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -178,6 +287,15 @@
 			<key>hash</key>
 			<data>
 			qGLd8hoTI7Chzqrk5iBvCPxl7UQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fxhzUb43hLSd+GNHgmFxjID9msY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -200,6 +318,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c2H/T/u4GjF7uz1oxOHPCXoIy8E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -214,6 +341,15 @@
 			<key>hash</key>
 			<data>
 			Md7Y/A7mL78g2eR3F10FQ7EjyVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eivJY9dukBv/Fm9SFoOjjZKGtDg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -236,6 +372,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ko0XOLHXHeveDFvDV0gGppixwVw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -250,6 +395,15 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ko0XOLHXHeveDFvDV0gGppixwVw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -272,6 +426,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7PLXmPsx7Y4SkoW/PMUoHPPSrTs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -286,6 +449,15 @@
 			<key>hash</key>
 			<data>
 			ldRvvL9oRT80nrkykCXAL7K9aRs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zhsuI2VBTjvjcmOv/4B6+fvxT7Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -308,6 +480,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hUNAxHMlgMlKh0boExktXF3xWRE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -322,6 +503,15 @@
 			<key>hash</key>
 			<data>
 			3AZuhHupQXl0GHJeKky9DbFzoZs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			laIvXUJxVsfnBXpoannBZ5y44Po=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -344,6 +534,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bayzCgQJus+Q31Mmd+fV3CTHgqE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -358,6 +557,15 @@
 			<key>hash</key>
 			<data>
 			z8jZrhShqQKoPlE9zV0pYbdUlDk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bwt5VwRdpX5mcVbKvci7rbgX8ig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -380,6 +588,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n7Sd3dYs9zaZ18McaLNB2pVvyhY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -394,6 +611,15 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C7000gOUM8Ayq47DNAsWc+cY/kk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -416,6 +642,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jEnpzsSqPPHYO4gpQgk9sogHQ4Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -430,6 +665,15 @@
 			<key>hash</key>
 			<data>
 			67aUGn9HXalxACLxfpYJMHVzeys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+wCJCiUx32bZNeX40iKTPLekAJ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -452,6 +696,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v/DCrrROloMYtd6SM9tRpjVeH4o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -466,6 +719,15 @@
 			<key>hash</key>
 			<data>
 			pEK5gIsQ9VOzOPKPCaRYYtvSqVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uCFMOG9KiEgdbXDkQMA2XmBrIxA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -488,6 +750,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LF0cEO4oBMSKPrZrZK/iLj53ay4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -502,6 +773,15 @@
 			<key>hash</key>
 			<data>
 			J4PBfhUp38CvxLP57yLPWfpv29U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/nWZiGQ15J1KbndqGQFM4KgnOac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -524,6 +804,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5egUNI3gFgnJpAfIjTgDO4jVJts=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -538,6 +827,15 @@
 			<key>hash</key>
 			<data>
 			oTwQzoQihFldxlNoGBhb4w9ReoU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/MKxVdLSw3NYIf3JWLME1XAtftE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -560,6 +858,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qRYFJtvtPv3C3c4hFEFmYx7o9vI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -574,6 +881,15 @@
 			<key>hash</key>
 			<data>
 			ANQjH5PsjngAPXAW3ITcBY83S3U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zf0MQbT6rrTYwW0PfaG/Qur6Rr8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -596,6 +912,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HeYNiA/UCfiXFWZEXiCMmEZ9FQw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -610,6 +935,15 @@
 			<key>hash</key>
 			<data>
 			jQZy/PAntkBmPul26CIvaenBG8A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			01BGg8qSS/sTy1m6RugmRII5/F0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -632,6 +966,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PnaqAL4KZAUViSuwWS1jjQGqTPc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -646,6 +989,15 @@
 			<key>hash</key>
 			<data>
 			ZQqFy0PBZOqGX9f26z4TcE6398E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			orGdEPLp3FxuK2GZt0JP3X2+kPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -668,6 +1020,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T0rxw27aIS7H15UuyOChvNJxoN8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -682,6 +1043,15 @@
 			<key>hash</key>
 			<data>
 			AUj6tPyv3S6O2XuTQ7C55Y9+Wvk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8lDtdZAx087a3QXXXNES1bY/n8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -707,11 +1077,29 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Base.lproj/GKDashboardMultiplayerPickerViewController_iOS.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xP4BV8+la4tSieZoNiLL4E5zm58=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IER0Mh5jhjN/I+Gb8Zic1CKQ9dI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BRGHQgFP0erUR/t1T3lr+qy59M0=
+			kwmU4/1zmmcX1/FiCvjTBwzo394=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -743,6 +1131,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zhsuI2VBTjvjcmOv/4B6+fvxT7Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -761,9 +1158,37 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>GKDashboardPlayerPickerCell_iOS.nib</key>
+		<data>
+		dYKnNE0763JorNuYIQdPfZEeQ4k=
+		</data>
+		<key>GKDashboardSectionHeaderView_iOS.nib</key>
+		<data>
+		cb+lMltr/B6zxFiAD7LT1leUa7w=
+		</data>
+		<key>GKMultiplayerBubbleView_iOS.nib</key>
+		<data>
+		a/+VQ6gXIjP98tyMr64EbyJa+IQ=
+		</data>
+		<key>GKMultiplayerButtonFooterView_iOS.nib</key>
+		<data>
+		DAsu9oMPe93L9Dui9VTSVtGA1u8=
+		</data>
+		<key>GKMultiplayerButtonHeaderView_iOS.nib</key>
+		<data>
+		pfcaLU7VlMpcHBZcET2QATQvjAU=
+		</data>
+		<key>GKMultiplayerCollectionViewCellAccessoryLeft_iOS.nib</key>
+		<data>
+		Hg+rUWP+GGl/61zYpxs4x/po6OA=
+		</data>
+		<key>GKMultiplayerCollectionViewCell_iOS.nib</key>
+		<data>
+		SW2wm/x8sGcEU1sI/w0iyp+0/Qo=
+		</data>
 		<key>GameCenterMatchmakerExtension.entitlements</key>
 		<data>
-		gBZR35RT+blDMU2/nX973Cjg0Ms=
+		16yai133lXzkspwMEjC0IXOV45g=
 		</data>
 		<key>GameCenterMatchmakerExtensionInterface.storyboardc/Info.plist</key>
 		<data>
@@ -771,8 +1196,17 @@
 		</data>
 		<key>GameCenterMatchmakerExtensionInterface.storyboardc/UINavigationController-dkv-Kw-pKJ.nib</key>
 		<data>
-		hum/uP7mSLK2x4gd9ZAjBhokHSQ=
+		Bw0hhbMd+Todrn8Wb2rkQ3MQUfE=
 		</data>
+		<key>German.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HBEYyzn8cP8ik0hHRPKjgQZJUIc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -787,6 +1221,15 @@
 			<key>hash</key>
 			<data>
 			OqTjzjoB3I5dPCioDAk3RhI3m7w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eI+NutGUQ/aF+TzkN+oDTgMkbeo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -809,6 +1252,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Japanese.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ksVpzVlesuha7Mz36L5SMBNwHtw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Japanese.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -823,6 +1275,15 @@
 			<key>hash</key>
 			<data>
 			zJhucBUYB3gajLVW7+wd6nmNXWY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQTkZTj4sb16rCY11uowVQPcXos=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -845,6 +1306,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M9IcxtIu+YFWES/jMJupiTwPp/c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -859,6 +1329,15 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ix97Xfo04K/xPFypYKTsTlsGaH8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -881,6 +1360,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fxhzUb43hLSd+GNHgmFxjID9msY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -895,6 +1383,15 @@
 			<key>hash</key>
 			<data>
 			GJszXDXvZ3Rztd1ZPi13NRhTA2o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c2H/T/u4GjF7uz1oxOHPCXoIy8E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -917,6 +1414,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eivJY9dukBv/Fm9SFoOjjZKGtDg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -931,6 +1437,15 @@
 			<key>hash</key>
 			<data>
 			yVhHEmzPUyG9tW9/uT++IBuZvZM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ko0XOLHXHeveDFvDV0gGppixwVw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -953,6 +1468,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ko0XOLHXHeveDFvDV0gGppixwVw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -967,6 +1491,15 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7PLXmPsx7Y4SkoW/PMUoHPPSrTs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -989,6 +1522,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zhsuI2VBTjvjcmOv/4B6+fvxT7Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1003,6 +1545,15 @@
 			<key>hash</key>
 			<data>
 			sGC8rapddcx1wQm3EBISaoahnMs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hUNAxHMlgMlKh0boExktXF3xWRE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1025,6 +1576,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			laIvXUJxVsfnBXpoannBZ5y44Po=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1039,6 +1599,15 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bayzCgQJus+Q31Mmd+fV3CTHgqE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1061,6 +1630,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bwt5VwRdpX5mcVbKvci7rbgX8ig=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1075,6 +1653,15 @@
 			<key>hash</key>
 			<data>
 			lIxJ2w8xXjJwchfLAHHIE3+ioJ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n7Sd3dYs9zaZ18McaLNB2pVvyhY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1097,6 +1684,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C7000gOUM8Ayq47DNAsWc+cY/kk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1111,6 +1707,15 @@
 			<key>hash</key>
 			<data>
 			+qU3e6I0QnmLh8LtR6aKEHSg+nk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jEnpzsSqPPHYO4gpQgk9sogHQ4Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1133,6 +1738,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+wCJCiUx32bZNeX40iKTPLekAJ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1147,6 +1761,15 @@
 			<key>hash</key>
 			<data>
 			3XK3oCrAc8eUo8pmVtRwMr2xJcA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v/DCrrROloMYtd6SM9tRpjVeH4o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1169,6 +1792,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uCFMOG9KiEgdbXDkQMA2XmBrIxA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1183,6 +1815,15 @@
 			<key>hash</key>
 			<data>
 			6OIo6PY8zqX70RxF8boSy5zrcVQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LF0cEO4oBMSKPrZrZK/iLj53ay4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1205,6 +1846,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/nWZiGQ15J1KbndqGQFM4KgnOac=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1219,6 +1869,15 @@
 			<key>hash</key>
 			<data>
 			NjnT+4/EfQWuf5+HGeVF3J08QnY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5egUNI3gFgnJpAfIjTgDO4jVJts=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1241,6 +1900,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/MKxVdLSw3NYIf3JWLME1XAtftE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1255,6 +1923,15 @@
 			<key>hash</key>
 			<data>
 			0puf20KG2mIgPxonrvLjaqCDkqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qRYFJtvtPv3C3c4hFEFmYx7o9vI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1277,6 +1954,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zf0MQbT6rrTYwW0PfaG/Qur6Rr8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1291,6 +1977,15 @@
 			<key>hash</key>
 			<data>
 			9SnfcmCBwMYYjSol0xK/paAXbcU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HeYNiA/UCfiXFWZEXiCMmEZ9FQw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1313,6 +2008,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			01BGg8qSS/sTy1m6RugmRII5/F0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1327,6 +2031,15 @@
 			<key>hash</key>
 			<data>
 			J/q9w1WK+vWNEq//610W6i/U6WU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PnaqAL4KZAUViSuwWS1jjQGqTPc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1349,6 +2062,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			orGdEPLp3FxuK2GZt0JP3X2+kPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1367,6 +2089,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T0rxw27aIS7H15UuyOChvNJxoN8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1381,6 +2112,15 @@
 			<key>hash</key>
 			<data>
 			AUj6tPyv3S6O2XuTQ7C55Y9+Wvk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/GKDashboardMultiplayerPickerViewController_iOS.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8lDtdZAx087a3QXXXNES1bY/n8=
 			</data>
 			<key>optional</key>
 			<true/>

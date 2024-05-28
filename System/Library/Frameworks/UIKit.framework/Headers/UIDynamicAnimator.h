@@ -2,7 +2,7 @@
 //  UIDynamicAnimator.h
 //  UIKit
 //
-//  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -41,7 +41,11 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicAnimator: NSObject
 - (void)updateItemUsingCurrentState:(id <UIDynamicItem>)item;
 
 @property (nonatomic, readonly, getter = isRunning) BOOL running;
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property (nonatomic, readonly) NSTimeInterval elapsedTime;
+#else
 - (NSTimeInterval)elapsedTime;
+#endif
 
 @property (nullable, nonatomic, weak) id <UIDynamicAnimatorDelegate> delegate;
 

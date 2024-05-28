@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  * `drawableProperties' property defined by the protocol to configure
  * the created surface. */
 
+CA_CLASS_AVAILABLE_IOS(2.0, 9.0, 2.0)
 @interface CAEAGLLayer : CALayer <EAGLDrawable>
 {
 @private
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  * changes to the GLES content are sent to the screen via the standard
  * CATransaction mechanisms. */
 
-@property BOOL presentsWithTransaction NS_AVAILABLE_IOS(9_0);
+@property BOOL presentsWithTransaction CA_AVAILABLE_IOS_STARTING (9.0, 9.0, 2.0);
 
 /* Note: the default value of the `opaque' property in this class is true,
  * not false as in CALayer. */

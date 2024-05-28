@@ -24,12 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
  @constant   MessageComposeResultFailed      User's attempt to save or send was unsuccessful.
  */
 
-enum MessageComposeResult {
+typedef NS_ENUM(NSInteger, MessageComposeResult) {
     MessageComposeResultCancelled,
     MessageComposeResultSent,
     MessageComposeResultFailed
-};
-typedef enum MessageComposeResult MessageComposeResult;   // available in iPhone 4.0
+} NS_ENUM_AVAILABLE_IOS(4_0);
 
 /*!
  @constant  MFMessageComposeViewControllerAttachmentURL   The url for the given attachment.
@@ -58,6 +57,7 @@ extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityDidC
 */
 extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
+@class MSMessage;
 @protocol MFMessageComposeViewControllerDelegate;
 
 /*!
@@ -152,6 +152,15 @@ NS_CLASS_AVAILABLE(NA, 4_0)
              See MFMessageComposeViewControllerAttachmentURL, MFMessageComposeViewControllerAttachmentAlternateFilename.
  */
 @property(nonatomic,copy,readonly,nullable) NSArray<NSDictionary *> *attachments /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0)*/;
+
+
+/*!
+ @property   message
+ @abstract   This property sets the initial interactive message.
+ */
+@property(nonatomic,copy,nullable) MSMessage *message __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_10_0);
+
+
 
 /*!
  @method     addAttachmentURL:withAlternateFilename:

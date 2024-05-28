@@ -96,7 +96,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Proximity identifier associated with the region.
  *
  */
-@property (readonly, nonatomic, strong) NSUUID *proximityUUID;
+@property (readonly, nonatomic, copy) NSUUID *proximityUUID;
 
 /*
  *  major
@@ -105,7 +105,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Most significant value associated with the region. If a major value wasn't specified, this will be nil.
  *
  */
-@property (readonly, nonatomic, strong, nullable) NSNumber *major;
+@property (readonly, nonatomic, copy, nullable) NSNumber *major;
 
 /*
  *  minor
@@ -114,7 +114,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Least significant value associated with the region. If a minor value wasn't specified, this will be nil.
  *
  */
-@property (readonly, nonatomic, strong, nullable) NSNumber *minor;
+@property (readonly, nonatomic, copy, nullable) NSNumber *minor;
 
 /*
  *  notifyEntryStateOnDisplay
@@ -127,6 +127,8 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 
 @end
 
+@class CLBeaconInternal;
+
 /*
  *  CLBeacon
  *
@@ -136,6 +138,9 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  */
 NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @interface CLBeacon : NSObject <NSCopying, NSSecureCoding>
+{
+	CLBeaconInternal *_internal;
+}
 
 /*
  *  proximityUUID
@@ -144,7 +149,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Proximity identifier associated with the beacon.
  *
  */
-@property (readonly, nonatomic, strong) NSUUID *proximityUUID;
+@property (readonly, nonatomic, copy) NSUUID *proximityUUID;
 
 /*
  *  major
@@ -153,7 +158,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Most significant value associated with the beacon.
  *
  */
-@property (readonly, nonatomic, strong) NSNumber *major;
+@property (readonly, nonatomic, copy) NSNumber *major;
 
 /*
  *  minor
@@ -162,7 +167,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  *    Least significant value associated with the beacon.
  *
  */
-@property (readonly, nonatomic, strong) NSNumber *minor;
+@property (readonly, nonatomic, copy) NSNumber *minor;
 
 /*
  *  proximity

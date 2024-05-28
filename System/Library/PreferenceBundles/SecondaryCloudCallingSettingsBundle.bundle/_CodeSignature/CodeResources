@@ -6,12 +6,21 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		bFHl3KAoxFGTSw/oiQ4OtNEXOxU=
+		pAYk3uva8OcSrCCPHgZ9p7eGJLU=
 		</data>
 		<key>SecondaryCloudCallingSettings.plist</key>
 		<data>
 		koYKk7nHrsk+ra0BRGa2xwicWfo=
 		</data>
+		<key>ar.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2SZ/NpQUlEsBvhSrn8VgdQU0sSQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/CloudCallingURLController.strings</key>
 		<dict>
 			<key>hash</key>
@@ -25,7 +34,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Gt8+Zclel7o4ZfKm3XhYwTGzsE=
+			6w64eABhgU7i4ppwJJF6du+PvrA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kaS2vRLS+Z9PWxJi79lO+jdpvac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -43,7 +61,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MSje8aGL1vTRsA572NtFaNGhVRA=
+			DrENAcDjBbZmMpDhpvMvWAfpXPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PJH9xB/NmFyb1VpksoQ1v87E/TE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -61,7 +88,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ftNR4pVX0+Tia4w6BuAz7/P+iy8=
+			I0bklU+UrLslBXMCGwc+kSvT7+k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			InUWgMs03fpba4HI1x8F4xp+KrU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -70,7 +106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LM2Nnk/1OarzyOOY6TYiwQuusMk=
+			F2KA1V1QmRZwNkW7OxeRyqX0w4o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -79,7 +115,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tbnZWyvhNOTRSdLKTcIqciNl+uA=
+			1eCgp7dHWpODD9K0Vvq8FtPVgBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XCZS7aBXw5ZTMNv1fhzhnNKefxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -88,7 +133,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QfuSulU4c+/933edkg0D0VC+Rz4=
+			Hw3fYCaBkzyoJQS/lzW4BbudT7k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -97,7 +142,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQlYxkaZuHZE5BLfWRLtBy/9ofI=
+			NCo49ZkZQjYgXnxErIurojhXaYM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MZr532WEcgzARRZWYSiW07lbGE8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -115,7 +169,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GlwouW334wXphXheR8lRAhE+Y7Y=
+			ldRiI/R4JkS4PQxCl5nhg1Rm/lM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i5ZT4f6avUnIbn2BFQKTCwqXn6A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -133,7 +196,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NGyVKhL6M/KiaBuNGCXo2qOuTbI=
+			ZFBHFbWFCQcFWdl+VQRKG3BXCJA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G2O7aTMMevUKFGewFhZszLfiNdQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -151,7 +223,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s+U+UFZA6iIT1+YUDOOkrY503fk=
+			ZpOz0Ru02VU7wzBIvKH36LbWqEE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hT6uYMLC8SuCchXtELm967zT6GI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -169,7 +250,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MLlDK2Zy/HHHAu4VP8hn4pWVRGA=
+			TDxlqM6JnxSXMBw3tfjoFAKDv2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ooHc/gAByQHn6Od5daYjW4yXVcU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -187,7 +277,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			evAz+IYjOaJr3uGhvgAbaHQNZZc=
+			BjDCH5BA8diFGXsmfLxb4naqdvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eXenyUZfjUXNU2uRyCXy/5eAQt4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -205,7 +304,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qWAZoRAQinL/GkE5z58pzpRxlq0=
+			pFf7SzxbEaxE9usRJ32uWzgt/Yg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdBq+sXJGThUwFNJnS92yst2em4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -223,7 +331,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rFRYyKe5crhB4R90BOvnSpYgcsU=
+			PRX43eLxoJR1xXEkoKYJIDHXM1g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0lT9brU+AuBl/mqCAKr6kuF892s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -241,7 +358,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ztNnT3qrYe+TYMO1FTworppY/o=
+			21pB4dJrGXCPxc6r7WSXaDvpx4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lWdp3MMUa5BlKMtVvzGHMFmE6ME=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -250,7 +376,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h8CQIG9Vb12yQc8EHVn2FIXTr9c=
+			LPEpM7nSu0e41ehVB5X+plrEyuM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -259,7 +385,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q563ESmBrGFcJVZro3aKQWsBTIc=
+			zatAvRzVfTabplbr9LL7hiVIFTg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I74dReS0bW4cWvXMjgtCChcruJw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -277,7 +412,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			06lcKtA6bw+xoqoqrfO5o31ym7M=
+			ia36rON9566hLGhIHItQ5gMtt7o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9SrtSKUWALgRdEWXS84MdPVOWdM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -295,7 +439,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C6sd1TS447YMyn/wcmyZjoQoaFk=
+			pg4Ucw/W47+uwQejvQQ2uKeiOds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zcfPB65fMSeeezMiEFrSb3syxoo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -313,7 +466,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CuvaKARJljxlJf8rUiee/XKTQrA=
+			ZgliUUBpHzlOH2VyhGSarSdI524=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rq6d9vYdxE8dAfgahuEqyzwhiuw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -331,7 +493,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H5k3LPaP6PNWHEtGEPF5iZhYeKo=
+			SCCZXliP/B4pEJL5ahhGLEzA9gw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XnoLxnmgtHLIsMM+svx2yMsE0Ig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -349,7 +520,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QJzIiT2C+RL0Wm+KdYvzoWz3/Lk=
+			ZMsjfRk8MvEZqoVvBSp/iRj/YT4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0ZlUFqwHMzlDcFCbxBJJi6Eyyv0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -367,7 +547,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ysvuiod5S7WC4N2fpK4C7F4DLXE=
+			B5jEKQ/aHu2QIZMIGYW1YtF42sY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JpajwjjpLW42Cwv+dJ/ZEVnhIzE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -385,7 +574,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qTlEHqN2w4ZzSlqYPxdQiG8rPo8=
+			+3dAlgflmYH/VER/V5TejmoL+Q8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yFBCceiBnQOpLTBAqCRDvEYHZt8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -394,7 +592,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7un79a1SUYZ0N78IADK4WDzGSco=
+			/436XCTaRQVgorAoJcyH9OdT600=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -403,7 +601,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yWRVnqbyfq3kZ1YvqHYzgemoZY8=
+			IGaZMgIoWwO+TxT8eEs2L9zDOAs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IKB0xkSr1iNpStmFA4Z7OwD66vI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -412,7 +619,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bLA8dJqXhXQ8GQvVOVOn2Zz6KlE=
+			4VIvK4Oi57dR/WRapfxZtxa4co8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -421,7 +628,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			olbS9YPJJgu9Ta9BLjDboDkInHc=
+			RsW2ngrCoGMfdQxOVtAHCQuCyrw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQS1rGypvnlVqQNgtuNQXGZ0aQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -439,7 +655,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			usSbT1ngFESUg9gVYsZuqk2NC4A=
+			+H1pA8LcmanZdDQ0gMJR2HQYJa0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8OFKD7ureyBfYrN+lv+mQBXdn3k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -457,7 +682,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GY9EsAudlLONAAucvxksbgvTTg8=
+			oCw02YcjB8n+YDcO0ybvdGVrCdA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kMcpFoPHBON8feL0LeifdpmDqYU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -475,7 +709,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c8zYrkdI1XMv4SOCcL2ubMvmk8o=
+			wIiZ1fXumw+fTpljXd1M7+LtdlM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zuq2jAkbTZJxQV/i8j8ppCY6o+c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -493,7 +736,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bI+ZPA5AGERPzKZKGnknulHWZHA=
+			YZm8z1xLrxpshwklpW396TL+Nu4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OfY2G08JhdMu4p2qC7MOvY+XWI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -511,7 +763,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HvX/b94oN2yQoQNQ4QSov0Db3wo=
+			0cjvSL3i+qhc9trOvRMJwrINqik=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EX57e1hen6EYp5CAj0gTxuwtN20=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -520,7 +781,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hoXpTWOM40PflGyfOpIKkw9KffA=
+			lq65oC9+kXUIRNzAPOsLkyieiZY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -529,7 +790,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bd4VEpXHXpSvFCW4sYOpwl1+/Lk=
+			WytGB1eG9Zbzp4YJYTFhr3Wgucs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyP5KrS4n4ddZVL0SLEFZhz0F3U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -547,7 +817,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NBJ/TzvfzKcWQyFrqChuwaz1L5Y=
+			8dcc0aSix9TIgka02zAas/x8m+I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KOIBNCdu0Merk2NI5F/LsouIGbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -565,7 +844,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HySpJW1aW6vcrPPhS3bIkcOHx/w=
+			vThz7OmVUedMmo5yVvfvpGlIGo4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+4Zi/HhWbHpq7G1gOnh0R3cngeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -583,7 +871,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BQ2V8KNMMIdQacZvJAqRURxAL/U=
+			90Tw/3q+KvnM5CoUqNhqzkOifqs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gelNRlcg6lBqTvE5iK5nH1GN/WI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -601,7 +898,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MMcsdSi5jGLCLDoz20nl8DYDO6I=
+			jbGXvOdTQ7Kbc9s9dbtEeQjmJsc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c/LnS1/RZ+ItGwSoKyaXO3+uL5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -619,7 +925,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zz2DrlTyjDwkecB+rIUaus/4KQc=
+			xfOjh1MfBHvfBFR3KX1zVmp6j+w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eBBWZLcz5NJlIqchN2M9XFPfG1k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -628,7 +943,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FQxChALzmbYc5cZE1bY/glBez3g=
+			NPV9B7XDGiNXyXRoIwliNIkegeY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -637,7 +952,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K3xqoASFICUjFyuQ5hchUL1G3Sw=
+			kdHNrPwL1MHnyF4vOvpc2MNIGNs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4XSUn8PM5+UuMZCZCisCcGmFKNE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -655,7 +979,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zi2XdBSBqLGQLszTf76msjQ3atw=
+			vSoC0XVzn85BzkcrCji+LRVhg9A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jovifvHbX9nPAYFI4X6WqSkTLvw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -664,7 +997,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ijvABYfWGACbX+VSLRBctPsYBzg=
+			9B9rM96fuAeKOjFxjXlwTUrrIgI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -673,7 +1006,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TkiPpb4/yXdoeHJss9tMdJgkfuw=
+			YOwTc77/ahr1R/R+X/lUkPLAimU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U4tA0toTKbAgxguaQUhYen8CeMk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -691,7 +1033,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IIz0O/UD/jPpk66chPhemW/rzeo=
+			esWJRKpI4Eg8gcsDst3e/Lsb6N0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -703,6 +1045,15 @@
 		<data>
 		koYKk7nHrsk+ra0BRGa2xwicWfo=
 		</data>
+		<key>ar.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2SZ/NpQUlEsBvhSrn8VgdQU0sSQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/CloudCallingURLController.strings</key>
 		<dict>
 			<key>hash</key>
@@ -716,7 +1067,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Gt8+Zclel7o4ZfKm3XhYwTGzsE=
+			6w64eABhgU7i4ppwJJF6du+PvrA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kaS2vRLS+Z9PWxJi79lO+jdpvac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -734,7 +1094,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MSje8aGL1vTRsA572NtFaNGhVRA=
+			DrENAcDjBbZmMpDhpvMvWAfpXPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PJH9xB/NmFyb1VpksoQ1v87E/TE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -752,7 +1121,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ftNR4pVX0+Tia4w6BuAz7/P+iy8=
+			I0bklU+UrLslBXMCGwc+kSvT7+k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			InUWgMs03fpba4HI1x8F4xp+KrU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,7 +1139,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LM2Nnk/1OarzyOOY6TYiwQuusMk=
+			F2KA1V1QmRZwNkW7OxeRyqX0w4o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -770,7 +1148,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tbnZWyvhNOTRSdLKTcIqciNl+uA=
+			1eCgp7dHWpODD9K0Vvq8FtPVgBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XCZS7aBXw5ZTMNv1fhzhnNKefxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,7 +1166,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QfuSulU4c+/933edkg0D0VC+Rz4=
+			Hw3fYCaBkzyoJQS/lzW4BbudT7k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -788,7 +1175,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQlYxkaZuHZE5BLfWRLtBy/9ofI=
+			NCo49ZkZQjYgXnxErIurojhXaYM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MZr532WEcgzARRZWYSiW07lbGE8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -806,7 +1202,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GlwouW334wXphXheR8lRAhE+Y7Y=
+			ldRiI/R4JkS4PQxCl5nhg1Rm/lM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i5ZT4f6avUnIbn2BFQKTCwqXn6A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -824,7 +1229,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NGyVKhL6M/KiaBuNGCXo2qOuTbI=
+			ZFBHFbWFCQcFWdl+VQRKG3BXCJA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G2O7aTMMevUKFGewFhZszLfiNdQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -842,7 +1256,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s+U+UFZA6iIT1+YUDOOkrY503fk=
+			ZpOz0Ru02VU7wzBIvKH36LbWqEE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hT6uYMLC8SuCchXtELm967zT6GI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -860,7 +1283,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MLlDK2Zy/HHHAu4VP8hn4pWVRGA=
+			TDxlqM6JnxSXMBw3tfjoFAKDv2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ooHc/gAByQHn6Od5daYjW4yXVcU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -878,7 +1310,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			evAz+IYjOaJr3uGhvgAbaHQNZZc=
+			BjDCH5BA8diFGXsmfLxb4naqdvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eXenyUZfjUXNU2uRyCXy/5eAQt4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -896,7 +1337,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qWAZoRAQinL/GkE5z58pzpRxlq0=
+			pFf7SzxbEaxE9usRJ32uWzgt/Yg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdBq+sXJGThUwFNJnS92yst2em4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -914,7 +1364,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rFRYyKe5crhB4R90BOvnSpYgcsU=
+			PRX43eLxoJR1xXEkoKYJIDHXM1g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0lT9brU+AuBl/mqCAKr6kuF892s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -932,7 +1391,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ztNnT3qrYe+TYMO1FTworppY/o=
+			21pB4dJrGXCPxc6r7WSXaDvpx4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lWdp3MMUa5BlKMtVvzGHMFmE6ME=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -941,7 +1409,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h8CQIG9Vb12yQc8EHVn2FIXTr9c=
+			LPEpM7nSu0e41ehVB5X+plrEyuM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -950,7 +1418,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q563ESmBrGFcJVZro3aKQWsBTIc=
+			zatAvRzVfTabplbr9LL7hiVIFTg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I74dReS0bW4cWvXMjgtCChcruJw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -968,7 +1445,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			06lcKtA6bw+xoqoqrfO5o31ym7M=
+			ia36rON9566hLGhIHItQ5gMtt7o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9SrtSKUWALgRdEWXS84MdPVOWdM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -986,7 +1472,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C6sd1TS447YMyn/wcmyZjoQoaFk=
+			pg4Ucw/W47+uwQejvQQ2uKeiOds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zcfPB65fMSeeezMiEFrSb3syxoo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1004,7 +1499,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CuvaKARJljxlJf8rUiee/XKTQrA=
+			ZgliUUBpHzlOH2VyhGSarSdI524=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rq6d9vYdxE8dAfgahuEqyzwhiuw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1022,7 +1526,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H5k3LPaP6PNWHEtGEPF5iZhYeKo=
+			SCCZXliP/B4pEJL5ahhGLEzA9gw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XnoLxnmgtHLIsMM+svx2yMsE0Ig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1040,7 +1553,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QJzIiT2C+RL0Wm+KdYvzoWz3/Lk=
+			ZMsjfRk8MvEZqoVvBSp/iRj/YT4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0ZlUFqwHMzlDcFCbxBJJi6Eyyv0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1058,7 +1580,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ysvuiod5S7WC4N2fpK4C7F4DLXE=
+			B5jEKQ/aHu2QIZMIGYW1YtF42sY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JpajwjjpLW42Cwv+dJ/ZEVnhIzE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1076,7 +1607,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qTlEHqN2w4ZzSlqYPxdQiG8rPo8=
+			+3dAlgflmYH/VER/V5TejmoL+Q8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yFBCceiBnQOpLTBAqCRDvEYHZt8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1085,7 +1625,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7un79a1SUYZ0N78IADK4WDzGSco=
+			/436XCTaRQVgorAoJcyH9OdT600=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1094,7 +1634,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yWRVnqbyfq3kZ1YvqHYzgemoZY8=
+			IGaZMgIoWwO+TxT8eEs2L9zDOAs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IKB0xkSr1iNpStmFA4Z7OwD66vI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1103,7 +1652,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bLA8dJqXhXQ8GQvVOVOn2Zz6KlE=
+			4VIvK4Oi57dR/WRapfxZtxa4co8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1112,7 +1661,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			olbS9YPJJgu9Ta9BLjDboDkInHc=
+			RsW2ngrCoGMfdQxOVtAHCQuCyrw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQS1rGypvnlVqQNgtuNQXGZ0aQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1130,7 +1688,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			usSbT1ngFESUg9gVYsZuqk2NC4A=
+			+H1pA8LcmanZdDQ0gMJR2HQYJa0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8OFKD7ureyBfYrN+lv+mQBXdn3k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1148,7 +1715,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GY9EsAudlLONAAucvxksbgvTTg8=
+			oCw02YcjB8n+YDcO0ybvdGVrCdA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kMcpFoPHBON8feL0LeifdpmDqYU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1166,7 +1742,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c8zYrkdI1XMv4SOCcL2ubMvmk8o=
+			wIiZ1fXumw+fTpljXd1M7+LtdlM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zuq2jAkbTZJxQV/i8j8ppCY6o+c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1184,7 +1769,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bI+ZPA5AGERPzKZKGnknulHWZHA=
+			YZm8z1xLrxpshwklpW396TL+Nu4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OfY2G08JhdMu4p2qC7MOvY+XWI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1202,7 +1796,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HvX/b94oN2yQoQNQ4QSov0Db3wo=
+			0cjvSL3i+qhc9trOvRMJwrINqik=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EX57e1hen6EYp5CAj0gTxuwtN20=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1211,7 +1814,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hoXpTWOM40PflGyfOpIKkw9KffA=
+			lq65oC9+kXUIRNzAPOsLkyieiZY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1220,7 +1823,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bd4VEpXHXpSvFCW4sYOpwl1+/Lk=
+			WytGB1eG9Zbzp4YJYTFhr3Wgucs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyP5KrS4n4ddZVL0SLEFZhz0F3U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1238,7 +1850,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NBJ/TzvfzKcWQyFrqChuwaz1L5Y=
+			8dcc0aSix9TIgka02zAas/x8m+I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KOIBNCdu0Merk2NI5F/LsouIGbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1256,7 +1877,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HySpJW1aW6vcrPPhS3bIkcOHx/w=
+			vThz7OmVUedMmo5yVvfvpGlIGo4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+4Zi/HhWbHpq7G1gOnh0R3cngeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1274,7 +1904,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BQ2V8KNMMIdQacZvJAqRURxAL/U=
+			90Tw/3q+KvnM5CoUqNhqzkOifqs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gelNRlcg6lBqTvE5iK5nH1GN/WI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1292,7 +1931,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MMcsdSi5jGLCLDoz20nl8DYDO6I=
+			jbGXvOdTQ7Kbc9s9dbtEeQjmJsc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c/LnS1/RZ+ItGwSoKyaXO3+uL5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1310,7 +1958,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zz2DrlTyjDwkecB+rIUaus/4KQc=
+			xfOjh1MfBHvfBFR3KX1zVmp6j+w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eBBWZLcz5NJlIqchN2M9XFPfG1k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1319,7 +1976,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FQxChALzmbYc5cZE1bY/glBez3g=
+			NPV9B7XDGiNXyXRoIwliNIkegeY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1328,7 +1985,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K3xqoASFICUjFyuQ5hchUL1G3Sw=
+			kdHNrPwL1MHnyF4vOvpc2MNIGNs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4XSUn8PM5+UuMZCZCisCcGmFKNE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1346,7 +2012,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zi2XdBSBqLGQLszTf76msjQ3atw=
+			vSoC0XVzn85BzkcrCji+LRVhg9A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jovifvHbX9nPAYFI4X6WqSkTLvw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1355,7 +2030,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ijvABYfWGACbX+VSLRBctPsYBzg=
+			9B9rM96fuAeKOjFxjXlwTUrrIgI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1364,7 +2039,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TkiPpb4/yXdoeHJss9tMdJgkfuw=
+			YOwTc77/ahr1R/R+X/lUkPLAimU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AboutCloudCalling.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U4tA0toTKbAgxguaQUhYen8CeMk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1382,7 +2066,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IIz0O/UD/jPpk66chPhemW/rzeo=
+			esWJRKpI4Eg8gcsDst3e/Lsb6N0=
 			</data>
 			<key>optional</key>
 			<true/>

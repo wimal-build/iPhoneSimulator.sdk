@@ -2,7 +2,7 @@
 //  NSFileProviderExtension.h
 //  UIKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -20,10 +20,18 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface NSFileProviderExtension
 // When modifying the files stored in the directory returned by documentStorageURL, you should pass this identifier
 // to your file coordinator's setPurposeIdentifier: method.
 // By default, this returns the bundle identifier of the application containing your extension. You need to make sure to use the same identifier in your containing app.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSString *providerIdentifier;
+#else
 - (NSString *)providerIdentifier;
+#endif
 
 // The root URL for provided documents. This URL must be writable from your app extension, and must only be used for the extension's files or their placeholders.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSURL *documentStorageURL;
+#else
 - (NSURL *)documentStorageURL;
+#endif
 
 // You may want to override these.
 

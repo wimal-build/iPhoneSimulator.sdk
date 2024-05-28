@@ -25,6 +25,7 @@
 #import <Photos/PHAssetCreationRequest.h>
 #import <Photos/PHAssetCollectionChangeRequest.h>
 #import <Photos/PHCollectionListChangeRequest.h>
+#import <Photos/PHLivePhotoEditingContext.h>
 
 #import <Photos/PHImageManager.h>
 
@@ -34,5 +35,7 @@
 #import <Photos/PHAdjustmentData.h>
 #import <Photos/PHContentEditingInput.h>
 #import <Photos/PHContentEditingOutput.h>
+
+#import <Photos/PhotosDefines.h>
 
 #endif

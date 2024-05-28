@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("airfrance.com-check-in-fr",function(e){return/Print your boarding pass/.test(e.subject)},function(e){return/Print your boarding pass/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/239/241","SGb49eb78d"),new ReverseTemplate("airfrance.com-check-in-jp",function(e){return/\u3060\u3055\u3044/.test(e.subject)},function(e){return/\u3060\u3055\u3044/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/239/242","SG3d8f282e")]);

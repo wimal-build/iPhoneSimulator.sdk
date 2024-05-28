@@ -6,43 +6,47 @@
 	<dict>
 		<key>ActivityLongLook-compact@2x.png</key>
 		<data>
-		kPavv/ah85qT9DdnIAQMIymlz2o=
+		zGk7Vuxn27FpDDbhiAK6wsYVfpw=
 		</data>
 		<key>ActivityLongLook-regular@2x.png</key>
 		<data>
-		QjmgZOGhC4tvdx7p5UzlWpDPP94=
+		1BhcfY2ZLOamhWhJIroymKtgvXI=
 		</data>
 		<key>ActivityLongLookStandReminder-compact@2x.png</key>
 		<data>
-		psehZxQb3Aru1e0OsHthP4u41lw=
+		AxAGOhCUzZWx2cqjN/uC2qGdLoc=
 		</data>
 		<key>ActivityLongLookStandReminder-regular@2x.png</key>
 		<data>
-		bkGUfA9Aufdwmn2nLws0a0ce9xg=
+		AUJm4auNzAxCdLFAbLqB6m1CgCA=
 		</data>
 		<key>ActivityQuickLook-compact@2x.png</key>
 		<data>
-		Mky4nboy10S/V19R847wv+b1m0g=
+		wOSNLh7yw7v9/VjptN8hLTYmFRY=
 		</data>
 		<key>ActivityQuickLook-regular@2x.png</key>
 		<data>
-		lqfZbxou0FYA1Rj1OysGwbpnG0Q=
+		Ji5OctTPjItWyNc5P0A+sQ1mFBE=
 		</data>
 		<key>ActivityQuickLookStandReminder-compact@2x.png</key>
 		<data>
-		B798BXCqhESIeaeYgTNCjj7hK5M=
+		3pJ6K6BVBUJlEiUpkOIv0ClilXA=
 		</data>
 		<key>ActivityQuickLookStandReminder-regular@2x.png</key>
 		<data>
-		y8gisUCkW6jNZQ+KB+SFwcvfT4A=
+		IgaZze9KMV21MI1S4SEXCnhW8IA=
 		</data>
 		<key>ActivitySetup-minusglyph@2x.png</key>
 		<data>
-		k/8RMZAq7I9u+i9RJVU4bs2rcQg=
+		4rgdS8uMeXnYZPkWU9M0i6KYe0w=
 		</data>
 		<key>ActivitySetup-plusglyph@2x.png</key>
 		<data>
-		P3sHWpLQEfb/oAkH8Y6/va4qX3Y=
+		1I5HbufM+J2vl58vefzFUpYzhYQ=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		uJlSnBHRpqaHMHN2R8DiwbbrJac=
 		</data>
 		<key>FIUIBadgeShader.fsh</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OOtNOotfSD6zIF9muFdV4bIOg4A=
+		5yUbmXo5rs9vNw3u/DDFq5hl5sA=
 		</data>
 		<key>Minus-Glyph-compact@2x.png</key>
 		<data>
@@ -76,38 +80,6 @@
 		<data>
 		YoPjx9XS59w1rKMb+Sq1kegRB6A=
 		</data>
-		<key>_FIUIFlatColorShader.fsh</key>
-		<data>
-		UcelMX+MuOKIW104t9y8JndlsfQ=
-		</data>
-		<key>_FIUIFlatColorShader.vsh</key>
-		<data>
-		9eZJgtM5Be8CUAzLMfsfQfFiNOo=
-		</data>
-		<key>_FIUIIconSpriteShader.fsh</key>
-		<data>
-		DQd/HJYtGXt5Z8mx6JmfuvpUZgs=
-		</data>
-		<key>_FIUIIconSpriteShader.vsh</key>
-		<data>
-		HI+uEZbh1b+bJcyTH5bAIFp7WUY=
-		</data>
-		<key>_FIUIRingEmptyShader.fsh</key>
-		<data>
-		qIaDu+cYsi+WLM2OkvdlZI+QDuo=
-		</data>
-		<key>_FIUIRingEndCapShader.fsh</key>
-		<data>
-		obLtFONg30R01sdIZxFQvLG2wnQ=
-		</data>
-		<key>_FIUIRingShader.fsh</key>
-		<data>
-		WzH6TECTvfgtyV43Q+7/n7BAnZY=
-		</data>
-		<key>_FIUIRingShader.vsh</key>
-		<data>
-		3QM0kLeCT8ts8MUir8pYoiDeak4=
-		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -117,18 +89,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eToiH/XWmCTJzvHm4HyBu/SyETM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wQYUzsz4khrtGm3+wO0y8iZc76s=
+			R3pg/JMOHh+/H5xedJEKF1F6GXA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WjheAAk/hRkgf51n8FpiBkA0AqU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>badge_back_apple_logo@2x.png</key>
 		<data>
-		nI7sEYPfb7hdJOAwCTUzowcX7RQ=
+		NCCsSH9/q5ggdbkB0YkJGjrZkZg=
 		</data>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
@@ -139,11 +129,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wl78Zqs13jAoJrafBnkrI3seeR4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yNe0znNIaSEx4XpxZbzdu1JN51M=
+			6dARd2SILIBHF0wXeFZj4pMtpBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MQpTz2Re/ZrIbR3LpmPhD9gwbZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -157,18 +165,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RzBwu/tl32TMOhzrBnA8ER9gALo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BSc2zYoN3D4lLQdtC0lNAPJsK7E=
+			0p7TZgx/fNZMtR2CHfNWbY6C8hc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVEOowayQTlLdD8qoJXq70Wkg7k=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>cubes_combined.png</key>
 		<data>
-		HU2yEajBiKe3LqBp7Ww7qtQcLQI=
+		+u3oZIOCPYSvuzSaziIoiyg8hZI=
 		</data>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
@@ -179,11 +205,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fioN4vHRdpreVzW7Xocw+BhZXnY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			++Rfrea191b4BpEzBQpbnGCeRnA=
+			A+4VC6f5M9upH8RX3BVI2bXd9Vc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vs9QMl5iQFKS39djHLJEsLDLv68=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,11 +241,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DCn+0gs2QugjyOYtCc+SIWiJgHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c0LvwTRStes1aNsUiu0oYCEgOnE=
+			SR8okkugKTufPx2DQb0W9mECnCM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			32Cy/nC60bxvjVn4zOc4ntqwDMk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,11 +277,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t/81LtlfjQL81eI7F9loXCJsWaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			66t84CJD02NRKOONB9qvdyadn2M=
+			KD6cRiIvKlUweWsij6mkNVZLWdc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+55Kqs3ofCOmbR49wZtStuPZj3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -233,11 +313,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2grf3jAVgATiF4ynEapl6ckz9SI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4xKmrDU3e6RBnK97zVAdpnt1OrM=
+			ZnSyDZQMvXdrrUWgQ5aRNq7dPYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dw09q4eMx5LFrKuD8Ijgt4Eunfs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,11 +349,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TRu8+0aTxD+iLeujPK/PTMuVI88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MEcIBliEu/6Zsu9zugtgxHgYWIw=
+			hpDhfrEATgVr8GpFl5ymNYgYV1s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dw09q4eMx5LFrKuD8Ijgt4Eunfs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,11 +385,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			upkFK9QlgkO/MPFnqG3QbMG7qwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i/q7Kas4/3NYPUx3ubz+Zh4sTdI=
+			+4J/NQJvJsSeAewlWepL5VCeu9o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v3NLyPB7cyOAy5nrUAMayzAqR9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -287,11 +421,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XyU3zfuasYja9qRvEKCd3BYPgRg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iSe1gDWolzPA/sJI2rxA9BGnxGg=
+			VnmKP6bmeoOB82Pul3SCsHjdSLA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zaddAWc9FoeHAb8ZVehjVWNMySM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,11 +457,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es_419.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sjMulhwZgusCPqljbRSt+Epk7bE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es_419.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FVg8P2Ktw+3cQE/BlsmjF/ApOQk=
+			I/7dTcvYpfIwt/BPiBblFBRJlL4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sIMPeCIo9gUiBUhPam0qo24/jaM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -323,11 +493,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IWguUc5W+7j1RCBhBgMlEAI6Lwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0A+zh/KyhIpfWdpL52CCu6HkdZM=
+			8VdEuxDnzm8hyYBJ1JlPlwfIP8A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PLnHyYQIJwFYCtKoYok/HVDXjac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -341,11 +529,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N/32sMiq1vAYDFMNBCmQv+SCdG0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FfJEIUL8DxBWPo7j2SvE8nK+8o4=
+			jhbmVp1peNZvQyyXICQoERNKxUE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ki29hp2qCDJS5NbagBnl8QW/2UM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -359,11 +565,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOh12+pfWdbvYrb9akkCVQp2nTs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sHG07KmIi9U/LaZArozPSUVg7Fc=
+			6SrF7Y0qffQ49Sb3Ufgosnyu/oE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ki29hp2qCDJS5NbagBnl8QW/2UM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -377,11 +601,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MrvcGLrv3XvURRuIYgL+9RX5Nds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x0y3fx5yubzSv4yWFwsa9B6xUH0=
+			4YJ/yeT2jAtNA17MQ637Vw9UPd4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t8xc7Lrzwjw4vlBIw054CSvDBHM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -395,11 +637,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8uVlJI/0WlhsDiYpZM5jyTNU1sw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VbuUlbLUjHMM5cxlV2po5sO3Knw=
+			SHcSN88Rx5oT/Hn0ipXZcy50JNg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CbCVcsneOPAvK51DMAz/2uef6ls=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -413,11 +673,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wmMG8lo/Auec7voRV5PbGUhuT64=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JKQFzQTr/GWdM1qEKdwvVXN5xIA=
+			0Jz/CERnTPQOZ5HjD0W1dGpZiKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pCXY27jarP50fFHoAf6j1LF4yUI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -431,11 +709,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+f6uC3N8+txBenQPneoNsUPpSdg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			whW21say2zLORrVJJJcCCiMVXOg=
+			d0fWpZSNzWjBvm5A7PHJjyXlcu8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7/uRA+xm0ZCxrXQc0MrL8ZUzGA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -449,11 +745,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B89weCI/x4zIOqe5deDYnC4JolA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I4mvSKQOh6ytMT38JLb0rZdGq58=
+			FwiQmu58Av4cDGq2QvgNx+CL3gI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XQ0v11woZLShnSTAeATZX8omHv4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -467,11 +781,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vfAn4cHKvQtqMp7NRqUKkieAwtA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e7lZCJ/7yDc230S6fceeupi7PZ0=
+			6WMLprSBXhJs5wlFqczmzcyCNS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZyrUxUbZ8Ghe2k2+q2x8dcq29CQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -485,11 +817,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qfgb8Yk70Sup6GcRF14oXqvNPy0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YThhfW8xSV7OigI/PJhZ2fdZbPM=
+			sgSYkeCajT77QQ3erFuGJDA0RL8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bugUpxGR+o2Dja2ek98aZ5He5sk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -503,11 +853,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RbUFJY9vcNj1+7rIlhz8qeTO8+c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VltKd057Am0r1y2bCqq6GxkUgOM=
+			lG346vdvk54DnQddjPfhh+R4WSA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+YelJrO16mdYOqJrOiK5orrAXxY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -521,11 +889,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NY41yzap+5n71FWV60ciJxv0/PA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pBK9TXmG19BAPEVaJF2sfDV0jOI=
+			67R2Tlc4PnHBUMRVPpifg0tU9GY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iRVg77xEeLX6D+6479M7V5ciziI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -539,11 +925,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VMpIGN7Mkua14cvjMPcc9MzFPT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0AD4iM55r+PYPy39JMHZ2aT7S5A=
+			E9dA7DKqZ2rltI6HOL/pByFBCdo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			io7lSkcpV4ZqeQC2bsV4cZF8pa8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -557,11 +961,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GECvJUhAHD2DahDRW1FpUmLebX8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v83DiuaO4KWkijjIxeR+LCqOLZM=
+			2OEgCiBTaBbr8hB8qWlXaV+n9Uk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x98g2xBmB2Rni3XRNE0NcI1X3pY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -575,11 +997,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I+c9ZTCXTW32CqXFrkx2JXD+zGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A/kVJ3A/9HlMGG7ma2uTt25jxDU=
+			hKysGeS6MMwDXgpuWr+xLoqE86U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			308Vd3afL/NZYDWuxHBaTf+y8JI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -593,11 +1033,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7PLjltEjAyzmlUr/s3h/t0VTJ0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+3bMHbkCnq7pelO9ONyOqqXLsbI=
+			uvWWC4J7Y7OHtDjfMOF9I0U5XL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CEwtHLA2RnZfNShQJM+o/6wodXM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -611,34 +1069,52 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oSCT3E/2RUO75OnV41Jrq/DMXj0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNy9nULQymQuS2V585dtbi3yzhM=
+			/TzaHuOhbg1rfjpd2xkfRwW4blI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DdcLVRXdNSixX+2+jBDwuEL8lyo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>ringIconSprite-170h@2x.png</key>
 		<data>
-		u2SpQXifDkGjDv8E0RmqtcL5V+A=
+		kdzcokeCkaajhxTy/ZtkzVFkYOo=
 		</data>
 		<key>ringIconSprite-195h@2x.png</key>
 		<data>
-		Ch6zQLmWuMhPUVfosEAj7xTv6OE=
+		r6a4zTyj4crcht7/FBzkZwQi4Lc=
 		</data>
 		<key>ringIconSprite-568h@2x.png</key>
 		<data>
-		ijPZzKXD8nrMxgPwhqS5Tt0/a5k=
+		PVq3p8Z4UOXcp2FP85zwmB+ZyDw=
 		</data>
 		<key>ringIconSprite-667h@2x.png</key>
 		<data>
-		/DGTagFc56e+A+ChAsrQbRdRYJU=
+		WCL6OCGGf1YEi5/LXu+1pB21ztI=
 		</data>
 		<key>ringIconSprite-736h@3x.png</key>
 		<data>
-		dLGcNB3SuJhyNSpEA35jrGUg3NI=
+		CssloPeqO+L7R7QhmquxXOhNLVY=
 		</data>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
@@ -649,11 +1125,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yPa1vEiWH8Ikl8PsfUuVlA60J1c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			haAtGWSTKZjlm8bNV7dJMpaKzhU=
+			ZLTmkoRSzsLH5lPb4O4Ekk22YfI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E3qZXXlv4gNUdB0omMVaMB1iRYg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -667,18 +1161,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cBBjIIwR2hS5WR515zgS+aNpsVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mTE//uz/rXmMus+SHx3j8Kp38Yw=
+			OP1EatJzRiBZ3VZHI8LfSn7QYN0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7sFBW/URuGFW8/S5hXUOodmkPOA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>sharingRingIconSprite.png</key>
 		<data>
-		7p0aE9wTuDo2hiujaoy/KdJoZa0=
+		I6c2ML0w2CHECJ76ArumMSc0a24=
 		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
@@ -689,11 +1201,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wB80yA58RA9k3khqzo4iXFYn6yU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3KbpbDuxKCWrBlOWMI+Qm6InKc=
+			UpUye4lpiw8EMV587rAUrwd28G0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7CQdwtYyDVepO8EP7p9JI+KDMU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -707,11 +1237,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8bNXyr0dQW5qnLxh1TqIgjv/07k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PMJYk4GtynpELhZkf1uVUT6uwlU=
+			Mt0xQr6ityzueYgKW38u5jpe6Uw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GoxSoNdcblKgrB9x4KL9Pk0YIJo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -725,11 +1273,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UAtWWs7ErvyS4Lw6Zdx8/Q9HJWk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			blOzeJZVDYPZWaZSlupLruz2K84=
+			EE4Df7wZgwAS0qDb5h1M303wALc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6xM0RhrMyxkeUqzwOYs0/jrC9pk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -743,11 +1309,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X683u2bE+gT9bRbpAqKEL2MF5fQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d0pzprAzsG8In+rIaPOAP6tOpKE=
+			iq/y04S4/oKei9PFDlYNt3ocvOs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yMShVctTOxmp33+nAYQrFJiCTP0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,11 +1345,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MJ95oXJ0aVPoYgNwufhoBCc3QeQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mb0Pe8nRbOlFQQrVMHlYmd5vm00=
+			D+V2eh0gnQz03N6jaJRbZyteboE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zNb7/BBk853+iEACnzywEjOjCeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,11 +1381,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VThFqTEPoQWEHA2g8f9enL1UbVA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			86rD+LcuJJtcBRvAgmbKwWRNWss=
+			38wNKP1EhBAy/+0NbFcpxz8Bc7c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fE09+Vffr0xuALBVJBaLr+bCY4U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -797,11 +1417,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OFJpJM+bry68AE9QqvN7Iu4KURQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E+XsS2Wt+h1OhIDFeNKZIeAAL0o=
+			fleH6nIv0nk2xv94NtE70GjNE4A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g/X562GO8UZS7vGKU5xwjzLYMlw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -815,11 +1453,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iWHScjlKVxap+D4bJzGFSsxstFg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3pTmuAlYJ4dWuyZFwtvWBKeTPM=
+			AzNtrFdcno5K/hdM62gK+VSqf+I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S0fiobOwUusjhz5516eeOQhd4To=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -833,11 +1489,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_TW.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M1U+1knOeNnssuxT+iZxCq2rw5w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G/BllS3SpFQo/3tXlor9DeS0Lw8=
+			CKS+Ey0uxB7uuxzCiXgPYBgB6as=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S0fiobOwUusjhz5516eeOQhd4To=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -847,43 +1521,47 @@
 	<dict>
 		<key>ActivityLongLook-compact@2x.png</key>
 		<data>
-		kPavv/ah85qT9DdnIAQMIymlz2o=
+		zGk7Vuxn27FpDDbhiAK6wsYVfpw=
 		</data>
 		<key>ActivityLongLook-regular@2x.png</key>
 		<data>
-		QjmgZOGhC4tvdx7p5UzlWpDPP94=
+		1BhcfY2ZLOamhWhJIroymKtgvXI=
 		</data>
 		<key>ActivityLongLookStandReminder-compact@2x.png</key>
 		<data>
-		psehZxQb3Aru1e0OsHthP4u41lw=
+		AxAGOhCUzZWx2cqjN/uC2qGdLoc=
 		</data>
 		<key>ActivityLongLookStandReminder-regular@2x.png</key>
 		<data>
-		bkGUfA9Aufdwmn2nLws0a0ce9xg=
+		AUJm4auNzAxCdLFAbLqB6m1CgCA=
 		</data>
 		<key>ActivityQuickLook-compact@2x.png</key>
 		<data>
-		Mky4nboy10S/V19R847wv+b1m0g=
+		wOSNLh7yw7v9/VjptN8hLTYmFRY=
 		</data>
 		<key>ActivityQuickLook-regular@2x.png</key>
 		<data>
-		lqfZbxou0FYA1Rj1OysGwbpnG0Q=
+		Ji5OctTPjItWyNc5P0A+sQ1mFBE=
 		</data>
 		<key>ActivityQuickLookStandReminder-compact@2x.png</key>
 		<data>
-		B798BXCqhESIeaeYgTNCjj7hK5M=
+		3pJ6K6BVBUJlEiUpkOIv0ClilXA=
 		</data>
 		<key>ActivityQuickLookStandReminder-regular@2x.png</key>
 		<data>
-		y8gisUCkW6jNZQ+KB+SFwcvfT4A=
+		IgaZze9KMV21MI1S4SEXCnhW8IA=
 		</data>
 		<key>ActivitySetup-minusglyph@2x.png</key>
 		<data>
-		k/8RMZAq7I9u+i9RJVU4bs2rcQg=
+		4rgdS8uMeXnYZPkWU9M0i6KYe0w=
 		</data>
 		<key>ActivitySetup-plusglyph@2x.png</key>
 		<data>
-		P3sHWpLQEfb/oAkH8Y6/va4qX3Y=
+		1I5HbufM+J2vl58vefzFUpYzhYQ=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		uJlSnBHRpqaHMHN2R8DiwbbrJac=
 		</data>
 		<key>FIUIBadgeShader.fsh</key>
 		<data>
@@ -913,38 +1591,6 @@
 		<data>
 		YoPjx9XS59w1rKMb+Sq1kegRB6A=
 		</data>
-		<key>_FIUIFlatColorShader.fsh</key>
-		<data>
-		UcelMX+MuOKIW104t9y8JndlsfQ=
-		</data>
-		<key>_FIUIFlatColorShader.vsh</key>
-		<data>
-		9eZJgtM5Be8CUAzLMfsfQfFiNOo=
-		</data>
-		<key>_FIUIIconSpriteShader.fsh</key>
-		<data>
-		DQd/HJYtGXt5Z8mx6JmfuvpUZgs=
-		</data>
-		<key>_FIUIIconSpriteShader.vsh</key>
-		<data>
-		HI+uEZbh1b+bJcyTH5bAIFp7WUY=
-		</data>
-		<key>_FIUIRingEmptyShader.fsh</key>
-		<data>
-		qIaDu+cYsi+WLM2OkvdlZI+QDuo=
-		</data>
-		<key>_FIUIRingEndCapShader.fsh</key>
-		<data>
-		obLtFONg30R01sdIZxFQvLG2wnQ=
-		</data>
-		<key>_FIUIRingShader.fsh</key>
-		<data>
-		WzH6TECTvfgtyV43Q+7/n7BAnZY=
-		</data>
-		<key>_FIUIRingShader.vsh</key>
-		<data>
-		3QM0kLeCT8ts8MUir8pYoiDeak4=
-		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -954,18 +1600,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eToiH/XWmCTJzvHm4HyBu/SyETM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wQYUzsz4khrtGm3+wO0y8iZc76s=
+			R3pg/JMOHh+/H5xedJEKF1F6GXA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WjheAAk/hRkgf51n8FpiBkA0AqU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>badge_back_apple_logo@2x.png</key>
 		<data>
-		nI7sEYPfb7hdJOAwCTUzowcX7RQ=
+		NCCsSH9/q5ggdbkB0YkJGjrZkZg=
 		</data>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
@@ -976,11 +1640,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wl78Zqs13jAoJrafBnkrI3seeR4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yNe0znNIaSEx4XpxZbzdu1JN51M=
+			6dARd2SILIBHF0wXeFZj4pMtpBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MQpTz2Re/ZrIbR3LpmPhD9gwbZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -994,18 +1676,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RzBwu/tl32TMOhzrBnA8ER9gALo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BSc2zYoN3D4lLQdtC0lNAPJsK7E=
+			0p7TZgx/fNZMtR2CHfNWbY6C8hc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVEOowayQTlLdD8qoJXq70Wkg7k=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>cubes_combined.png</key>
 		<data>
-		HU2yEajBiKe3LqBp7Ww7qtQcLQI=
+		+u3oZIOCPYSvuzSaziIoiyg8hZI=
 		</data>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1016,11 +1716,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fioN4vHRdpreVzW7Xocw+BhZXnY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			++Rfrea191b4BpEzBQpbnGCeRnA=
+			A+4VC6f5M9upH8RX3BVI2bXd9Vc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vs9QMl5iQFKS39djHLJEsLDLv68=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1034,11 +1752,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DCn+0gs2QugjyOYtCc+SIWiJgHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c0LvwTRStes1aNsUiu0oYCEgOnE=
+			SR8okkugKTufPx2DQb0W9mECnCM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			32Cy/nC60bxvjVn4zOc4ntqwDMk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1052,11 +1788,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t/81LtlfjQL81eI7F9loXCJsWaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			66t84CJD02NRKOONB9qvdyadn2M=
+			KD6cRiIvKlUweWsij6mkNVZLWdc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+55Kqs3ofCOmbR49wZtStuPZj3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1070,11 +1824,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2grf3jAVgATiF4ynEapl6ckz9SI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4xKmrDU3e6RBnK97zVAdpnt1OrM=
+			ZnSyDZQMvXdrrUWgQ5aRNq7dPYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dw09q4eMx5LFrKuD8Ijgt4Eunfs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1088,11 +1860,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TRu8+0aTxD+iLeujPK/PTMuVI88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MEcIBliEu/6Zsu9zugtgxHgYWIw=
+			hpDhfrEATgVr8GpFl5ymNYgYV1s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dw09q4eMx5LFrKuD8Ijgt4Eunfs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1106,11 +1896,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			upkFK9QlgkO/MPFnqG3QbMG7qwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i/q7Kas4/3NYPUx3ubz+Zh4sTdI=
+			+4J/NQJvJsSeAewlWepL5VCeu9o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v3NLyPB7cyOAy5nrUAMayzAqR9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1124,11 +1932,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XyU3zfuasYja9qRvEKCd3BYPgRg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iSe1gDWolzPA/sJI2rxA9BGnxGg=
+			VnmKP6bmeoOB82Pul3SCsHjdSLA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zaddAWc9FoeHAb8ZVehjVWNMySM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1142,11 +1968,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es_419.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sjMulhwZgusCPqljbRSt+Epk7bE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es_419.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FVg8P2Ktw+3cQE/BlsmjF/ApOQk=
+			I/7dTcvYpfIwt/BPiBblFBRJlL4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sIMPeCIo9gUiBUhPam0qo24/jaM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1160,11 +2004,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IWguUc5W+7j1RCBhBgMlEAI6Lwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0A+zh/KyhIpfWdpL52CCu6HkdZM=
+			8VdEuxDnzm8hyYBJ1JlPlwfIP8A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PLnHyYQIJwFYCtKoYok/HVDXjac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1178,11 +2040,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N/32sMiq1vAYDFMNBCmQv+SCdG0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FfJEIUL8DxBWPo7j2SvE8nK+8o4=
+			jhbmVp1peNZvQyyXICQoERNKxUE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ki29hp2qCDJS5NbagBnl8QW/2UM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1196,11 +2076,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOh12+pfWdbvYrb9akkCVQp2nTs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sHG07KmIi9U/LaZArozPSUVg7Fc=
+			6SrF7Y0qffQ49Sb3Ufgosnyu/oE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ki29hp2qCDJS5NbagBnl8QW/2UM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1214,11 +2112,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MrvcGLrv3XvURRuIYgL+9RX5Nds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x0y3fx5yubzSv4yWFwsa9B6xUH0=
+			4YJ/yeT2jAtNA17MQ637Vw9UPd4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t8xc7Lrzwjw4vlBIw054CSvDBHM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1232,11 +2148,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8uVlJI/0WlhsDiYpZM5jyTNU1sw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VbuUlbLUjHMM5cxlV2po5sO3Knw=
+			SHcSN88Rx5oT/Hn0ipXZcy50JNg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CbCVcsneOPAvK51DMAz/2uef6ls=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1250,11 +2184,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wmMG8lo/Auec7voRV5PbGUhuT64=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JKQFzQTr/GWdM1qEKdwvVXN5xIA=
+			0Jz/CERnTPQOZ5HjD0W1dGpZiKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pCXY27jarP50fFHoAf6j1LF4yUI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1268,11 +2220,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+f6uC3N8+txBenQPneoNsUPpSdg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			whW21say2zLORrVJJJcCCiMVXOg=
+			d0fWpZSNzWjBvm5A7PHJjyXlcu8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7/uRA+xm0ZCxrXQc0MrL8ZUzGA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1286,11 +2256,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B89weCI/x4zIOqe5deDYnC4JolA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I4mvSKQOh6ytMT38JLb0rZdGq58=
+			FwiQmu58Av4cDGq2QvgNx+CL3gI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XQ0v11woZLShnSTAeATZX8omHv4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1304,11 +2292,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vfAn4cHKvQtqMp7NRqUKkieAwtA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e7lZCJ/7yDc230S6fceeupi7PZ0=
+			6WMLprSBXhJs5wlFqczmzcyCNS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZyrUxUbZ8Ghe2k2+q2x8dcq29CQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1322,11 +2328,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qfgb8Yk70Sup6GcRF14oXqvNPy0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YThhfW8xSV7OigI/PJhZ2fdZbPM=
+			sgSYkeCajT77QQ3erFuGJDA0RL8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bugUpxGR+o2Dja2ek98aZ5He5sk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1340,11 +2364,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RbUFJY9vcNj1+7rIlhz8qeTO8+c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VltKd057Am0r1y2bCqq6GxkUgOM=
+			lG346vdvk54DnQddjPfhh+R4WSA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+YelJrO16mdYOqJrOiK5orrAXxY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1358,11 +2400,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NY41yzap+5n71FWV60ciJxv0/PA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pBK9TXmG19BAPEVaJF2sfDV0jOI=
+			67R2Tlc4PnHBUMRVPpifg0tU9GY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iRVg77xEeLX6D+6479M7V5ciziI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1376,11 +2436,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VMpIGN7Mkua14cvjMPcc9MzFPT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0AD4iM55r+PYPy39JMHZ2aT7S5A=
+			E9dA7DKqZ2rltI6HOL/pByFBCdo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			io7lSkcpV4ZqeQC2bsV4cZF8pa8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1394,11 +2472,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GECvJUhAHD2DahDRW1FpUmLebX8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v83DiuaO4KWkijjIxeR+LCqOLZM=
+			2OEgCiBTaBbr8hB8qWlXaV+n9Uk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x98g2xBmB2Rni3XRNE0NcI1X3pY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1412,11 +2508,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I+c9ZTCXTW32CqXFrkx2JXD+zGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A/kVJ3A/9HlMGG7ma2uTt25jxDU=
+			hKysGeS6MMwDXgpuWr+xLoqE86U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			308Vd3afL/NZYDWuxHBaTf+y8JI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1430,11 +2544,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7PLjltEjAyzmlUr/s3h/t0VTJ0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+3bMHbkCnq7pelO9ONyOqqXLsbI=
+			uvWWC4J7Y7OHtDjfMOF9I0U5XL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CEwtHLA2RnZfNShQJM+o/6wodXM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1448,34 +2580,52 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oSCT3E/2RUO75OnV41Jrq/DMXj0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNy9nULQymQuS2V585dtbi3yzhM=
+			/TzaHuOhbg1rfjpd2xkfRwW4blI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DdcLVRXdNSixX+2+jBDwuEL8lyo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>ringIconSprite-170h@2x.png</key>
 		<data>
-		u2SpQXifDkGjDv8E0RmqtcL5V+A=
+		kdzcokeCkaajhxTy/ZtkzVFkYOo=
 		</data>
 		<key>ringIconSprite-195h@2x.png</key>
 		<data>
-		Ch6zQLmWuMhPUVfosEAj7xTv6OE=
+		r6a4zTyj4crcht7/FBzkZwQi4Lc=
 		</data>
 		<key>ringIconSprite-568h@2x.png</key>
 		<data>
-		ijPZzKXD8nrMxgPwhqS5Tt0/a5k=
+		PVq3p8Z4UOXcp2FP85zwmB+ZyDw=
 		</data>
 		<key>ringIconSprite-667h@2x.png</key>
 		<data>
-		/DGTagFc56e+A+ChAsrQbRdRYJU=
+		WCL6OCGGf1YEi5/LXu+1pB21ztI=
 		</data>
 		<key>ringIconSprite-736h@3x.png</key>
 		<data>
-		dLGcNB3SuJhyNSpEA35jrGUg3NI=
+		CssloPeqO+L7R7QhmquxXOhNLVY=
 		</data>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1486,11 +2636,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yPa1vEiWH8Ikl8PsfUuVlA60J1c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			haAtGWSTKZjlm8bNV7dJMpaKzhU=
+			ZLTmkoRSzsLH5lPb4O4Ekk22YfI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E3qZXXlv4gNUdB0omMVaMB1iRYg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1504,18 +2672,36 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cBBjIIwR2hS5WR515zgS+aNpsVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mTE//uz/rXmMus+SHx3j8Kp38Yw=
+			OP1EatJzRiBZ3VZHI8LfSn7QYN0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7sFBW/URuGFW8/S5hXUOodmkPOA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>sharingRingIconSprite.png</key>
 		<data>
-		7p0aE9wTuDo2hiujaoy/KdJoZa0=
+		I6c2ML0w2CHECJ76ArumMSc0a24=
 		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1526,11 +2712,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wB80yA58RA9k3khqzo4iXFYn6yU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3KbpbDuxKCWrBlOWMI+Qm6InKc=
+			UpUye4lpiw8EMV587rAUrwd28G0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7CQdwtYyDVepO8EP7p9JI+KDMU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1544,11 +2748,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8bNXyr0dQW5qnLxh1TqIgjv/07k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PMJYk4GtynpELhZkf1uVUT6uwlU=
+			Mt0xQr6ityzueYgKW38u5jpe6Uw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GoxSoNdcblKgrB9x4KL9Pk0YIJo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1562,11 +2784,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UAtWWs7ErvyS4Lw6Zdx8/Q9HJWk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			blOzeJZVDYPZWaZSlupLruz2K84=
+			EE4Df7wZgwAS0qDb5h1M303wALc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6xM0RhrMyxkeUqzwOYs0/jrC9pk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1580,11 +2820,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X683u2bE+gT9bRbpAqKEL2MF5fQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d0pzprAzsG8In+rIaPOAP6tOpKE=
+			iq/y04S4/oKei9PFDlYNt3ocvOs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yMShVctTOxmp33+nAYQrFJiCTP0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1598,11 +2856,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MJ95oXJ0aVPoYgNwufhoBCc3QeQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mb0Pe8nRbOlFQQrVMHlYmd5vm00=
+			D+V2eh0gnQz03N6jaJRbZyteboE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zNb7/BBk853+iEACnzywEjOjCeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1616,11 +2892,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VThFqTEPoQWEHA2g8f9enL1UbVA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			86rD+LcuJJtcBRvAgmbKwWRNWss=
+			38wNKP1EhBAy/+0NbFcpxz8Bc7c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fE09+Vffr0xuALBVJBaLr+bCY4U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1634,11 +2928,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OFJpJM+bry68AE9QqvN7Iu4KURQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E+XsS2Wt+h1OhIDFeNKZIeAAL0o=
+			fleH6nIv0nk2xv94NtE70GjNE4A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g/X562GO8UZS7vGKU5xwjzLYMlw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1652,11 +2964,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iWHScjlKVxap+D4bJzGFSsxstFg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3pTmuAlYJ4dWuyZFwtvWBKeTPM=
+			AzNtrFdcno5K/hdM62gK+VSqf+I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S0fiobOwUusjhz5516eeOQhd4To=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1670,11 +3000,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_TW.lproj/Localizable-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M1U+1knOeNnssuxT+iZxCq2rw5w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G/BllS3SpFQo/3tXlor9DeS0Lw8=
+			CKS+Ey0uxB7uuxzCiXgPYBgB6as=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S0fiobOwUusjhz5516eeOQhd4To=
 			</data>
 			<key>optional</key>
 			<true/>

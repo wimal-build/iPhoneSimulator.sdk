@@ -1,0 +1,374 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 2,
+          "year" : 2000
+        },
+        {
+          "day" : 24,
+          "month" : 1,
+          "year" : 2001
+        },
+        {
+          "day" : 12,
+          "month" : 2,
+          "year" : 2002
+        },
+        {
+          "day" : 1,
+          "month" : 2,
+          "year" : 2003
+        },
+        {
+          "day" : 22,
+          "month" : 1,
+          "year" : 2004
+        },
+        {
+          "day" : 9,
+          "month" : 2,
+          "year" : 2005
+        },
+        {
+          "day" : 30,
+          "month" : 1,
+          "year" : 2006
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2007
+        },
+        {
+          "day" : 7,
+          "month" : 2,
+          "year" : 2008
+        },
+        {
+          "day" : 26,
+          "month" : 1,
+          "year" : 2009
+        },
+        {
+          "day" : 14,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 3,
+          "month" : 2,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 1,
+          "year" : 2012
+        },
+        {
+          "day" : 10,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 31,
+          "month" : 1,
+          "year" : 2014
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2015
+        },
+        {
+          "day" : 8,
+          "month" : 2,
+          "year" : 2016
+        },
+        {
+          "day" : 28,
+          "month" : 2,
+          "year" : 2017
+        },
+        {
+          "day" : 16,
+          "month" : 2,
+          "year" : 2018
+        },
+        {
+          "day" : 5,
+          "month" : 2,
+          "year" : 2019
+        },
+        {
+          "day" : 25,
+          "month" : 1,
+          "year" : 2020
+        },
+        {
+          "day" : 12,
+          "month" : 2,
+          "year" : 2021
+        },
+        {
+          "day" : 1,
+          "month" : 2,
+          "year" : 2022
+        },
+        {
+          "day" : 23,
+          "month" : 1,
+          "year" : 2023
+        },
+        {
+          "day" : 10,
+          "month" : 2,
+          "year" : 2024
+        },
+        {
+          "day" : 29,
+          "month" : 1,
+          "year" : 2025
+        },
+        {
+          "day" : 17,
+          "month" : 2,
+          "year" : 2026
+        },
+        {
+          "day" : 6,
+          "month" : 2,
+          "year" : 2027
+        }
+      ],
+      "name" : "Chinese New Year",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "A5B2D247-CEB8-4122-9A91-302CB8391179"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 26,
+          "month" : 8
+        }
+      ],
+      "name" : "National Dog Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 2}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "dog"
+        ]
+      },
+      "uuid" : "5A063EEA-2E20-4428-80B2-68BFA01C13E8"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 29,
+          "month" : 10
+        }
+      ],
+      "name" : "National Cat Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 2}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 2,
+        "categories" : [
+          "cat",
+          "kitten"
+        ]
+      },
+      "uuid" : "D824868B-F0FA-4247-A476-1B5D0B150586"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "Labour Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "CF954D8C-3D85-47AB-9A8C-619F471EDF54"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 21,
+          "month" : 5,
+          "year" : 2010
+        },
+        {
+          "day" : 10,
+          "month" : 5,
+          "year" : 2011
+        },
+        {
+          "day" : 28,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 17,
+          "month" : 5,
+          "year" : 2013
+        },
+        {
+          "day" : 6,
+          "month" : 5,
+          "year" : 2014
+        },
+        {
+          "day" : 25,
+          "month" : 5,
+          "year" : 2015
+        },
+        {
+          "day" : 14,
+          "month" : 5,
+          "year" : 2016
+        },
+        {
+          "day" : 3,
+          "month" : 5,
+          "year" : 2017
+        },
+        {
+          "day" : 22,
+          "month" : 5,
+          "year" : 2018
+        },
+        {
+          "day" : 12,
+          "month" : 5,
+          "year" : 2019
+        },
+        {
+          "day" : 30,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Buddha’s Birthday",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "6DBDA187-71C3-458D-9C07-BC6FED11921D"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "hk",
+    "countryName" : "Hong Kong"
+  }
+}

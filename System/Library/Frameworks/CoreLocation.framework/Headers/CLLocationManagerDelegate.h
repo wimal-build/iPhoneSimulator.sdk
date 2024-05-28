@@ -1,4 +1,3 @@
-
 /*
  *  CLLocationManagerDelegate.h
  *  CoreLocation
@@ -18,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class CLLocation;
 @class CLHeading;
 @class CLBeacon;
+@class CLVisit;
 
 /*
  *  CLLocationManagerDelegate
@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    locations is an array of CLLocation objects in chronological order.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	 didUpdateLocations:(NSArray<CLLocation *> *)locations __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+	 didUpdateLocations:(NSArray<CLLocation *> *)locations __OSX_AVAILABLE_STARTING(__MAC_10_9,__IPHONE_6_0);
 
 /*
  *  locationManager:didUpdateHeading:
@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    a call to requestStateForRegion:.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+	didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_10,__IPHONE_7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didRangeBeacons:inRegion:
@@ -115,7 +115,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    CLLocationManager instance with a non-nil delegate that implements this method.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didEnterRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+	didEnterRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_8,__IPHONE_4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didExitRegion:
@@ -125,7 +125,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    CLLocationManager instance with a non-nil delegate that implements this method.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didExitRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+	didExitRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_8,__IPHONE_4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didFailWithError:
@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)locationManager:(CLLocationManager *)manager
 	monitoringDidFailForRegion:(nullable CLRegion *)region
-	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_10_8,__IPHONE_4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didChangeAuthorizationStatus:
@@ -161,7 +161,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    Invoked when a monitoring for a region started successfully.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didStartMonitoringForRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_TBD,__IPHONE_5_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+	didStartMonitoringForRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_8,__IPHONE_5_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  *  Discussion:
@@ -190,7 +190,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    criteria are met (see CLError), otherwise error will be nil.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didFinishDeferredUpdatesWithError:(nullable NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+	didFinishDeferredUpdatesWithError:(nullable NSError *)error __OSX_AVAILABLE_STARTING(__MAC_10_9,__IPHONE_6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didVisit:

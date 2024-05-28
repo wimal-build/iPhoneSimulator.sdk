@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("norwegian.com-confirmation-en",function(e){return/^Travel documents/.test(e.subject)},function(e){if(/^Travel documents/.test(e.subject)){var n="en_GB",t={};t.reference="YOUR BOOKING REFERENCE IS:",t.total="Total amount is",t.passenger="Passengers",t.info="Flight info";var o=loadHelper("norwegian.com-confirmation-skeleton.js");return o(e,n,t)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/401/402","SG799f2e70")]);

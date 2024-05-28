@@ -66,6 +66,22 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>_focusOtherSideKeyPressed</key>
+	<dict>
+		<key>LocalizableKey</key>
+		<string>&lt;</string>
+		<key>LocalizableModifierState</key>
+		<dict>
+			<key>Command</key>
+			<true/>
+			<key>Control</key>
+			<false/>
+			<key>Option</key>
+			<false/>
+			<key>Shift</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>_navigateBackKeyPressed</key>
 	<dict>
 		<key>LocalizableKey</key>
@@ -146,6 +162,22 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>_openSplitViewKeyPressed</key>
+	<dict>
+		<key>LocalizableKey</key>
+		<string>N</string>
+		<key>LocalizableModifierState</key>
+		<dict>
+			<key>Command</key>
+			<true/>
+			<key>Control</key>
+			<false/>
+			<key>Option</key>
+			<false/>
+			<key>Shift</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>_previousFindResultKeyPressed</key>
 	<dict>
 		<key>LocalizableKey</key>
@@ -198,22 +230,6 @@
 	<dict>
 		<key>LocalizableKey</key>
 		<string>R</string>
-		<key>LocalizableModifierState</key>
-		<dict>
-			<key>Command</key>
-			<true/>
-			<key>Control</key>
-			<false/>
-			<key>Option</key>
-			<false/>
-			<key>Shift</key>
-			<false/>
-		</dict>
-	</dict>
-	<key>_stopLoadingKeyPressed</key>
-	<dict>
-		<key>LocalizableKey</key>
-		<string>.</string>
 		<key>LocalizableModifierState</key>
 		<dict>
 			<key>Command</key>

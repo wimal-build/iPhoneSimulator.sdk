@@ -9,11 +9,15 @@
 #import <HealthKit/HKActivitySummaryQuery.h>
 #import <HealthKit/HKAnchoredObjectQuery.h>
 #import <HealthKit/HKCategorySample.h>
+#import <HealthKit/HKCDADocumentSample.h>
+#import <HealthKit/HKCharacteristicObjects.h>
 #import <HealthKit/HKCorrelation.h>
 #import <HealthKit/HKCorrelationQuery.h>
 #import <HealthKit/HKDefines.h>
 #import <HealthKit/HKDeletedObject.h>
 #import <HealthKit/HKDevice.h>
+#import <HealthKit/HKDocumentQuery.h>
+#import <HealthKit/HKDocumentSample.h>
 #import <HealthKit/HKHealthStore.h>
 #import <HealthKit/HKMetadata.h>
 #import <HealthKit/HKObject.h>

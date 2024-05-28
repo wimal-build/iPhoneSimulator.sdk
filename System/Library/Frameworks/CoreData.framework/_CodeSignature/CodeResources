@@ -6,13 +6,22 @@
 	<dict>
 		<key>CoreData</key>
 		<data>
-		mUBsGFR5zsTozxE3lp74w4TnrEs=
+		LjWBIAXyzZqMsX+JKzVtfJAFFnw=
 		</data>
 		<key>Dutch.lproj/CoreDataErrors.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			0KtPrtxUHHnqeJ06G3lfeYxv7Wg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/CoreDataErrors.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m+RhonyedL/9p5pjLVe5G92rEUw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -37,135 +46,147 @@
 		</dict>
 		<key>Headers/CoreData.h</key>
 		<data>
-		YPdPDMJmsHEfh4B6KBxH/W43ZBA=
+		GTAxEsQkOO2+iO2pNiy+8opY9hk=
 		</data>
 		<key>Headers/CoreDataDefines.h</key>
 		<data>
-		1O71X8uywEO+9EGb3+WM2U+QV/k=
+		oZVhQEe1Ce7iHPGN3uIqhoI3pIw=
 		</data>
 		<key>Headers/CoreDataErrors.h</key>
 		<data>
-		/XTVm/32I7XCNArJbfUsbHlGe6A=
+		LjCy7XErphT8CHv/ZGzpu0xedOI=
 		</data>
 		<key>Headers/NSAtomicStore.h</key>
 		<data>
-		7EwVyR5mNMek26w+AvJYrBWZmj8=
+		pQJur85tmu0SADseg8PmxjTuYdU=
 		</data>
 		<key>Headers/NSAtomicStoreCacheNode.h</key>
 		<data>
-		y8km+QaDbNuzUbWlKLB14f4nG7Q=
+		vqQFtxS+peemtTwkMusloHMXvz0=
 		</data>
 		<key>Headers/NSAttributeDescription.h</key>
 		<data>
-		S88qvR+31Pms3/DqhA5fcSO54D4=
+		hmMT7PQXeBpryjTSzSg1FjQBb70=
 		</data>
 		<key>Headers/NSBatchDeleteRequest.h</key>
 		<data>
-		679IsLxOul4YjiwaEG6fgSxZ30Q=
+		yoFkaxPPuhEX9GK67FWTm8SLWk0=
 		</data>
 		<key>Headers/NSBatchUpdateRequest.h</key>
 		<data>
-		srxYEZkuLDDfGiFnfltESpCAXtY=
+		YxpbMkfL4xCOraNhImDXtaX/m0U=
 		</data>
 		<key>Headers/NSEntityDescription.h</key>
 		<data>
-		YAJqiVoxV/34FdmafUHHYggZSps=
+		5o+ihIJr8i1D0uaTb/yAeZk+zQE=
 		</data>
 		<key>Headers/NSEntityMapping.h</key>
 		<data>
-		iZlHBbLtIawNCp7WZhzVOWBb80k=
+		4bO9EiKuXLnhro3P4Jm7O72Y+MA=
 		</data>
 		<key>Headers/NSEntityMigrationPolicy.h</key>
 		<data>
-		pAcYMfC4opp2C+dC60W5VNB+syE=
+		GY3SP5aWIOAHyAt3RCUD4ap9iAI=
 		</data>
 		<key>Headers/NSExpressionDescription.h</key>
 		<data>
-		EHF86kflc74W6fLhuRmE55913KI=
+		7V3dQW96hp1/b6eBeanMEXZTUtA=
 		</data>
 		<key>Headers/NSFetchRequest.h</key>
 		<data>
-		XW24cQTV2uWHpSR+BZrdvB1dyDY=
+		25ljebAPinVlhUa04VvYEZzAKjg=
 		</data>
 		<key>Headers/NSFetchRequestExpression.h</key>
 		<data>
-		6h+K1XkQMJaC6WbBBXnrHnH5gyA=
+		6p4m3MKJFkSSig1JOBAsgkYCAEk=
 		</data>
 		<key>Headers/NSFetchedPropertyDescription.h</key>
 		<data>
-		V1xsOMvzgGTYdoOHdoPB0iSpDEw=
+		D3NqtnaW4Kk9NMiFWyufm2gIZ6o=
 		</data>
 		<key>Headers/NSFetchedResultsController.h</key>
 		<data>
-		/pfcYpO063dJq9FsA4/Ty5Y5NIw=
+		JJYIuBOjd24YB22j1FBo+iHLlb8=
 		</data>
 		<key>Headers/NSIncrementalStore.h</key>
 		<data>
-		/Kqb21RqwRwDBeLPyP0WW0rvbic=
+		PdSH5FBep+LhrgsKVAQpw3cAU0c=
 		</data>
 		<key>Headers/NSIncrementalStoreNode.h</key>
 		<data>
-		NVP8W0dQudnRrEScxNt7sXdbpAo=
+		qPYYfABnASeAcJe+kXZxHQVPjbw=
 		</data>
 		<key>Headers/NSManagedObject.h</key>
 		<data>
-		FL6p6DNKu1aOLSQdiLHR8xRpgE4=
+		xOv2NWqZgtAE/d7Ak94yu99yfMA=
 		</data>
 		<key>Headers/NSManagedObjectContext.h</key>
 		<data>
-		nl/85q4706/nvE4dWCVrk/5mdWk=
+		Shru4p5oHDdjhPk2LoP3/6VVbQ0=
 		</data>
 		<key>Headers/NSManagedObjectID.h</key>
 		<data>
-		qx8XMGo2sNUc1NddTlVIu+9Khqw=
+		uQm5QArlrf39ZT+LH9+Ki5dT89w=
 		</data>
 		<key>Headers/NSManagedObjectModel.h</key>
 		<data>
-		XudoFaiTOYSBK8pREctpfnSa5g8=
+		MRxdobtiUwqaYLXL33FOzNkZ0fI=
 		</data>
 		<key>Headers/NSMappingModel.h</key>
 		<data>
-		adgWmvMIFeQ6NMWp6qE9D7tWaMU=
+		dUZ6jPYczWaZkKCKWrZgE/UE2ws=
 		</data>
 		<key>Headers/NSMergePolicy.h</key>
 		<data>
-		NiAK1qwB2uiT06zeDAQ7oXPKY/w=
+		NyIQSyO5lNfJNl0sr8hFIu38l0I=
 		</data>
 		<key>Headers/NSMigrationManager.h</key>
 		<data>
-		Jyuwy0a79M01Q4JVQj8qiky8/6k=
+		lzwydtdnMQfohvrjfO4VDuGQtVU=
+		</data>
+		<key>Headers/NSPersistentContainer.h</key>
+		<data>
+		WuGRTqv5iwutFQZEOWuGhuXSVsY=
 		</data>
 		<key>Headers/NSPersistentStore.h</key>
 		<data>
-		iYhUoWQHMlc9WkIdKmcJMwpja9Y=
+		5Apj9vaDFlM6T4hdd43XHgjN8jU=
 		</data>
 		<key>Headers/NSPersistentStoreCoordinator.h</key>
 		<data>
-		SCpaeiWhRA6rIOl93XgL04nGAZg=
+		uTyfRudz2IyGFI8hF0HtEc7/KFw=
+		</data>
+		<key>Headers/NSPersistentStoreDescription.h</key>
+		<data>
+		aI9Vdj5Vt1a4wSte6Uzde1+ucpk=
 		</data>
 		<key>Headers/NSPersistentStoreRequest.h</key>
 		<data>
-		wt/PEiFT1U0Avtj74NMp7sDiLgI=
+		ELPtFYbNLDYXJVZkH/nxhUbCMTo=
 		</data>
 		<key>Headers/NSPersistentStoreResult.h</key>
 		<data>
-		NgnLZ+GYNBl6bwQ2CWQTXnKCeGc=
+		u+taucp5sO0j17s8Wj983MiNNk0=
 		</data>
 		<key>Headers/NSPropertyDescription.h</key>
 		<data>
-		8QDkRREdkSzOIfZMi+pD38+9+xs=
+		gu0FgDD780sEdq4wa9Do1ZzPdUg=
 		</data>
 		<key>Headers/NSPropertyMapping.h</key>
 		<data>
-		PtjoJ5sJLZsRHWoM+f2+/QQMtrA=
+		MLAMb9RYh4BgTQrfFMtv9+kLUlg=
+		</data>
+		<key>Headers/NSQueryGenerationToken.h</key>
+		<data>
+		R3ZG5PHnPI+QWhVQPx4HwnNsti4=
 		</data>
 		<key>Headers/NSRelationshipDescription.h</key>
 		<data>
-		qphvylbfLFnHeesRK5mORvj0v9Y=
+		4eQlUgZBCPnOqB7p9R6eMaO2VFQ=
 		</data>
 		<key>Headers/NSSaveChangesRequest.h</key>
 		<data>
-		XP+L1zyFwxYnSVbe3MsZC06t87A=
+		LTjs6/K4vmROMaao8/LWQ/lZlZ4=
 		</data>
 		<key>Italian.lproj/CoreDataErrors.strings</key>
 		<dict>
@@ -211,7 +232,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I9Ut/mS+8tHSSO0qcKo7s7nxpeA=
+			NbHaxc51vb0hv6B1IclewKSMCBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -274,7 +295,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LRpkeDfOZ137e/t3QyIyHCfFiWk=
+			TT5zPpryvJOyJShy2oivtc7cSyI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -310,7 +331,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PLYjcb76VXnQVAwWMxxajmjGC24=
+			mGDxJwx0wkJ8gOUnetMPsE/lp0U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -337,7 +358,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5tl/FvGfRNtu2lnn9Srvj45jlQs=
+			EcjYIRgJpW6xz/C50GGRZZqlMMI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -418,7 +439,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SUIjFYn1Dqmw5bBNCWnCJgBolLY=
+			OLxDBKNrUZHP4ojS1QU1c/T7818=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -482,13 +503,22 @@
 	<dict>
 		<key>CoreData</key>
 		<data>
-		mUBsGFR5zsTozxE3lp74w4TnrEs=
+		LjWBIAXyzZqMsX+JKzVtfJAFFnw=
 		</data>
 		<key>Dutch.lproj/CoreDataErrors.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			0KtPrtxUHHnqeJ06G3lfeYxv7Wg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/CoreDataErrors.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m+RhonyedL/9p5pjLVe5G92rEUw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -513,135 +543,147 @@
 		</dict>
 		<key>Headers/CoreData.h</key>
 		<data>
-		YPdPDMJmsHEfh4B6KBxH/W43ZBA=
+		GTAxEsQkOO2+iO2pNiy+8opY9hk=
 		</data>
 		<key>Headers/CoreDataDefines.h</key>
 		<data>
-		1O71X8uywEO+9EGb3+WM2U+QV/k=
+		oZVhQEe1Ce7iHPGN3uIqhoI3pIw=
 		</data>
 		<key>Headers/CoreDataErrors.h</key>
 		<data>
-		/XTVm/32I7XCNArJbfUsbHlGe6A=
+		LjCy7XErphT8CHv/ZGzpu0xedOI=
 		</data>
 		<key>Headers/NSAtomicStore.h</key>
 		<data>
-		7EwVyR5mNMek26w+AvJYrBWZmj8=
+		pQJur85tmu0SADseg8PmxjTuYdU=
 		</data>
 		<key>Headers/NSAtomicStoreCacheNode.h</key>
 		<data>
-		y8km+QaDbNuzUbWlKLB14f4nG7Q=
+		vqQFtxS+peemtTwkMusloHMXvz0=
 		</data>
 		<key>Headers/NSAttributeDescription.h</key>
 		<data>
-		S88qvR+31Pms3/DqhA5fcSO54D4=
+		hmMT7PQXeBpryjTSzSg1FjQBb70=
 		</data>
 		<key>Headers/NSBatchDeleteRequest.h</key>
 		<data>
-		679IsLxOul4YjiwaEG6fgSxZ30Q=
+		yoFkaxPPuhEX9GK67FWTm8SLWk0=
 		</data>
 		<key>Headers/NSBatchUpdateRequest.h</key>
 		<data>
-		srxYEZkuLDDfGiFnfltESpCAXtY=
+		YxpbMkfL4xCOraNhImDXtaX/m0U=
 		</data>
 		<key>Headers/NSEntityDescription.h</key>
 		<data>
-		YAJqiVoxV/34FdmafUHHYggZSps=
+		5o+ihIJr8i1D0uaTb/yAeZk+zQE=
 		</data>
 		<key>Headers/NSEntityMapping.h</key>
 		<data>
-		iZlHBbLtIawNCp7WZhzVOWBb80k=
+		4bO9EiKuXLnhro3P4Jm7O72Y+MA=
 		</data>
 		<key>Headers/NSEntityMigrationPolicy.h</key>
 		<data>
-		pAcYMfC4opp2C+dC60W5VNB+syE=
+		GY3SP5aWIOAHyAt3RCUD4ap9iAI=
 		</data>
 		<key>Headers/NSExpressionDescription.h</key>
 		<data>
-		EHF86kflc74W6fLhuRmE55913KI=
+		7V3dQW96hp1/b6eBeanMEXZTUtA=
 		</data>
 		<key>Headers/NSFetchRequest.h</key>
 		<data>
-		XW24cQTV2uWHpSR+BZrdvB1dyDY=
+		25ljebAPinVlhUa04VvYEZzAKjg=
 		</data>
 		<key>Headers/NSFetchRequestExpression.h</key>
 		<data>
-		6h+K1XkQMJaC6WbBBXnrHnH5gyA=
+		6p4m3MKJFkSSig1JOBAsgkYCAEk=
 		</data>
 		<key>Headers/NSFetchedPropertyDescription.h</key>
 		<data>
-		V1xsOMvzgGTYdoOHdoPB0iSpDEw=
+		D3NqtnaW4Kk9NMiFWyufm2gIZ6o=
 		</data>
 		<key>Headers/NSFetchedResultsController.h</key>
 		<data>
-		/pfcYpO063dJq9FsA4/Ty5Y5NIw=
+		JJYIuBOjd24YB22j1FBo+iHLlb8=
 		</data>
 		<key>Headers/NSIncrementalStore.h</key>
 		<data>
-		/Kqb21RqwRwDBeLPyP0WW0rvbic=
+		PdSH5FBep+LhrgsKVAQpw3cAU0c=
 		</data>
 		<key>Headers/NSIncrementalStoreNode.h</key>
 		<data>
-		NVP8W0dQudnRrEScxNt7sXdbpAo=
+		qPYYfABnASeAcJe+kXZxHQVPjbw=
 		</data>
 		<key>Headers/NSManagedObject.h</key>
 		<data>
-		FL6p6DNKu1aOLSQdiLHR8xRpgE4=
+		xOv2NWqZgtAE/d7Ak94yu99yfMA=
 		</data>
 		<key>Headers/NSManagedObjectContext.h</key>
 		<data>
-		nl/85q4706/nvE4dWCVrk/5mdWk=
+		Shru4p5oHDdjhPk2LoP3/6VVbQ0=
 		</data>
 		<key>Headers/NSManagedObjectID.h</key>
 		<data>
-		qx8XMGo2sNUc1NddTlVIu+9Khqw=
+		uQm5QArlrf39ZT+LH9+Ki5dT89w=
 		</data>
 		<key>Headers/NSManagedObjectModel.h</key>
 		<data>
-		XudoFaiTOYSBK8pREctpfnSa5g8=
+		MRxdobtiUwqaYLXL33FOzNkZ0fI=
 		</data>
 		<key>Headers/NSMappingModel.h</key>
 		<data>
-		adgWmvMIFeQ6NMWp6qE9D7tWaMU=
+		dUZ6jPYczWaZkKCKWrZgE/UE2ws=
 		</data>
 		<key>Headers/NSMergePolicy.h</key>
 		<data>
-		NiAK1qwB2uiT06zeDAQ7oXPKY/w=
+		NyIQSyO5lNfJNl0sr8hFIu38l0I=
 		</data>
 		<key>Headers/NSMigrationManager.h</key>
 		<data>
-		Jyuwy0a79M01Q4JVQj8qiky8/6k=
+		lzwydtdnMQfohvrjfO4VDuGQtVU=
+		</data>
+		<key>Headers/NSPersistentContainer.h</key>
+		<data>
+		WuGRTqv5iwutFQZEOWuGhuXSVsY=
 		</data>
 		<key>Headers/NSPersistentStore.h</key>
 		<data>
-		iYhUoWQHMlc9WkIdKmcJMwpja9Y=
+		5Apj9vaDFlM6T4hdd43XHgjN8jU=
 		</data>
 		<key>Headers/NSPersistentStoreCoordinator.h</key>
 		<data>
-		SCpaeiWhRA6rIOl93XgL04nGAZg=
+		uTyfRudz2IyGFI8hF0HtEc7/KFw=
+		</data>
+		<key>Headers/NSPersistentStoreDescription.h</key>
+		<data>
+		aI9Vdj5Vt1a4wSte6Uzde1+ucpk=
 		</data>
 		<key>Headers/NSPersistentStoreRequest.h</key>
 		<data>
-		wt/PEiFT1U0Avtj74NMp7sDiLgI=
+		ELPtFYbNLDYXJVZkH/nxhUbCMTo=
 		</data>
 		<key>Headers/NSPersistentStoreResult.h</key>
 		<data>
-		NgnLZ+GYNBl6bwQ2CWQTXnKCeGc=
+		u+taucp5sO0j17s8Wj983MiNNk0=
 		</data>
 		<key>Headers/NSPropertyDescription.h</key>
 		<data>
-		8QDkRREdkSzOIfZMi+pD38+9+xs=
+		gu0FgDD780sEdq4wa9Do1ZzPdUg=
 		</data>
 		<key>Headers/NSPropertyMapping.h</key>
 		<data>
-		PtjoJ5sJLZsRHWoM+f2+/QQMtrA=
+		MLAMb9RYh4BgTQrfFMtv9+kLUlg=
+		</data>
+		<key>Headers/NSQueryGenerationToken.h</key>
+		<data>
+		R3ZG5PHnPI+QWhVQPx4HwnNsti4=
 		</data>
 		<key>Headers/NSRelationshipDescription.h</key>
 		<data>
-		qphvylbfLFnHeesRK5mORvj0v9Y=
+		4eQlUgZBCPnOqB7p9R6eMaO2VFQ=
 		</data>
 		<key>Headers/NSSaveChangesRequest.h</key>
 		<data>
-		XP+L1zyFwxYnSVbe3MsZC06t87A=
+		LTjs6/K4vmROMaao8/LWQ/lZlZ4=
 		</data>
 		<key>Italian.lproj/CoreDataErrors.strings</key>
 		<dict>
@@ -687,7 +729,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I9Ut/mS+8tHSSO0qcKo7s7nxpeA=
+			NbHaxc51vb0hv6B1IclewKSMCBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -750,7 +792,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LRpkeDfOZ137e/t3QyIyHCfFiWk=
+			TT5zPpryvJOyJShy2oivtc7cSyI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -786,7 +828,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PLYjcb76VXnQVAwWMxxajmjGC24=
+			mGDxJwx0wkJ8gOUnetMPsE/lp0U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -813,7 +855,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5tl/FvGfRNtu2lnn9Srvj45jlQs=
+			EcjYIRgJpW6xz/C50GGRZZqlMMI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -894,7 +936,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SUIjFYn1Dqmw5bBNCWnCJgBolLY=
+			OLxDBKNrUZHP4ojS1QU1c/T7818=
 			</data>
 			<key>optional</key>
 			<true/>

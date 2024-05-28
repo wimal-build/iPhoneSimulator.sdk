@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <MediaPlayer/MPRemoteControlTypes.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -53,13 +54,16 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 /// Returns an opaque object to act as the target.
 - (id)addTargetWithHandler:(MPRemoteCommandHandlerStatus(^)(MPRemoteCommandEvent *event))handler;
 
+/// Private constructor.
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 MP_EXTERN_CLASS_AVAILABLE(7_1)
 @interface MPSkipIntervalCommand : MPRemoteCommand
 
 /// An array of NSNumbers (NSTimeIntervals) that contain preferred skip intervals.
-@property (nonatomic, copy) NSArray *preferredIntervals;
+@property (nonatomic, copy) NSArray<NSNumber *> *preferredIntervals;
 
 @end
 
@@ -101,8 +105,32 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 
 @end
 
+/// Command for changing the current playback position in a now playing item.
+/// Sends out MPChangePlaybackPositionCommandEvents.
 MP_EXTERN_CLASS_AVAILABLE(9_0)
 @interface MPChangePlaybackPositionCommand : MPRemoteCommand
+
+@end
+
+/// Command for changing the current shuffle mode to use during playback. To
+/// update the system's current representation of your app's shuffle mode, set
+/// the currentShuffleType property on this command to the proper shuffle type
+/// value.
+MP_EXTERN_CLASS_AVAILABLE(8_0)
+@interface MPChangeShuffleModeCommand : MPRemoteCommand
+
+@property (nonatomic, assign) MPShuffleType currentShuffleType;
+
+@end
+
+/// Command for changing the current repeat mode to use during playback. To
+/// update the system's current representation of your app's repeat mode, set
+/// the currentRepeatType property on this command to the proper repeat type
+/// value.
+MP_EXTERN_CLASS_AVAILABLE(8_0)
+@interface MPChangeRepeatModeCommand : MPRemoteCommand
+
+@property (nonatomic, assign) MPRepeatType currentRepeatType;
 
 @end
 

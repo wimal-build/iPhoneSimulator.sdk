@@ -1,0 +1,9 @@
+// no global properties defined, this stylesheet is used to test global property defaults
+
+@feature-type = "Point";
+@poi-type = "AmusementPark";
+style TestStyle {
+    visibility: hidden;
+}
+
+

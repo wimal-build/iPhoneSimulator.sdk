@@ -2,7 +2,7 @@
 //  UIViewController.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -88,7 +88,7 @@ typedef NS_ENUM(NSInteger, UIModalPresentationStyle) {
 @end
 
 // Sometimes view controllers that are using showViewController:sender and showDetailViewController:sender: will need to know when the split view controller environment above it has changed. This notification will be posted when that happens (for example, when a split view controller is collapsing or expanding). The NSNotification's object will be the view controller that caused the change.
-UIKIT_EXTERN NSString *const UIViewControllerShowDetailTargetDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIViewControllerShowDetailTargetDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment>
 
@@ -113,7 +113,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 - (void)viewDidUnload NS_DEPRECATED_IOS(3_0,6_0) __TVOS_PROHIBITED; // Called after the view controller's view is released and set to nil. For example, a memory warning which causes the view to be purged. Not invoked as a result of -dealloc.
 
 - (void)viewDidLoad; // Called after the view has been loaded. For view controllers created in code, this is after -loadView. For view controllers unarchived from a nib, this is after the view is set.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, getter=isViewLoaded) BOOL viewLoaded NS_AVAILABLE_IOS(3_0);
+#else
 - (BOOL)isViewLoaded NS_AVAILABLE_IOS(3_0);
+#endif
 
 @property(nullable, nonatomic, readonly, copy) NSString *nibName;     // The name of the nib to be loaded to instantiate the view.
 @property(nullable, nonatomic, readonly, strong) NSBundle *nibBundle; // The bundle from which to load the nib.
@@ -186,6 +190,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 // A controller that defines the presentation context can also specify the modal transition style if this property is true.
 @property(nonatomic,assign) BOOL providesPresentationContextTransitionStyle NS_AVAILABLE_IOS(5_0);
 
+// If YES, when this view controller becomes visible and focusable, focus will be automatically restored to the item that was last focused. For example, when an item in this view controller is focused, and then another view controller is presented and dismissed, the original item will become focused again. Defaults to YES.
+@property (nonatomic) BOOL restoresFocusAfterTransition NS_AVAILABLE_IOS(10_0);
+
 /*
   These four methods can be used in a view controller's appearance callbacks to determine if it is being
   presented, dismissed, or added or removed as a child view controller. For example, a view controller can
@@ -193,11 +200,19 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
   method by checking the expression ([self isBeingDismissed] || [self isMovingFromParentViewController]).
 */
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, getter=isBeingPresented) BOOL beingPresented NS_AVAILABLE_IOS(5_0);
+@property(nonatomic, readonly, getter=isBeingDismissed) BOOL beingDismissed NS_AVAILABLE_IOS(5_0);
+
+@property(nonatomic, readonly, getter=isMovingToParentViewController) BOOL movingToParentViewController NS_AVAILABLE_IOS(5_0);
+@property(nonatomic, readonly, getter=isMovingFromParentViewController) BOOL movingFromParentViewController NS_AVAILABLE_IOS(5_0);
+#else
 - (BOOL)isBeingPresented NS_AVAILABLE_IOS(5_0);
 - (BOOL)isBeingDismissed NS_AVAILABLE_IOS(5_0);
 
 - (BOOL)isMovingToParentViewController NS_AVAILABLE_IOS(5_0);
 - (BOOL)isMovingFromParentViewController NS_AVAILABLE_IOS(5_0);
+#endif
 
 /*
   The next two methods are replacements for presentModalViewController:animated and
@@ -225,7 +240,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 @property(nonatomic,assign) BOOL modalPresentationCapturesStatusBarAppearance NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 // Presentation modes may keep the keyboard visible when not required. Default implementation affects UIModalPresentationFormSheet visibility.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic,assign) BOOL disablesAutomaticKeyboardDismissal NS_AVAILABLE_IOS(4_3);
+#else
 - (BOOL)disablesAutomaticKeyboardDismissal NS_AVAILABLE_IOS(4_3);
+#endif
 
 @property(nonatomic,assign) BOOL wantsFullScreenLayout NS_DEPRECATED_IOS(3_0, 7_0) __TVOS_PROHIBITED; // Deprecated in 7_0, Replaced by the following:
 
@@ -238,10 +257,17 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 @property (nonatomic) CGSize preferredContentSize NS_AVAILABLE_IOS(7_0);
 
 // These methods control the attributes of the status bar when this view controller is shown. They can be overridden in view controller subclasses to return the desired status bar attributes.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED; // Defaults to UIStatusBarStyleDefault
+@property(nonatomic, readonly) BOOL prefersStatusBarHidden NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED; // Defaults to NO
+// Override to return the type of animation that should be used for status bar changes for this view controller. This currently only affects changes to prefersStatusBarHidden.
+@property(nonatomic, readonly) UIStatusBarAnimation preferredStatusBarUpdateAnimation NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED; // Defaults to UIStatusBarAnimationFade
+#else
 - (UIStatusBarStyle)preferredStatusBarStyle NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED; // Defaults to UIStatusBarStyleDefault
 - (BOOL)prefersStatusBarHidden NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED; // Defaults to NO
 // Override to return the type of animation that should be used for status bar changes for this view controller. This currently only affects changes to prefersStatusBarHidden.
 - (UIStatusBarAnimation)preferredStatusBarUpdateAnimation NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED; // Defaults to UIStatusBarAnimationFade
+#endif
 
 // This should be called whenever the return values for the view controller's status bar attributes have changed. If it is called from within an animation block, the changes will be animated along with the rest of the animation block.
 - (void)setNeedsStatusBarAppearanceUpdate NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
@@ -269,10 +295,17 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation NS_DEPRECATED_IOS(2_0, 6_0) __TVOS_PROHIBITED;
 
 // New Autorotation support.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL shouldAutorotate NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
+@property(nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
+// Returns interface orientation masks.
+@property(nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
+#else
 - (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
 // Returns interface orientation masks.
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
+#endif
 
 // The rotating header and footer views will slide out during the rotation and back in once it has completed.
 - (nullable UIView *)rotatingHeaderView NS_DEPRECATED_IOS(2_0,8_0, "Header views are animated along with the rest of the view hierarchy") __TVOS_PROHIBITED;     // Must be in the view hierarchy. Default returns nil.
@@ -299,7 +332,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 @property(nonatomic,getter=isEditing) BOOL editing;
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated; // Updates the appearance of the Edit|Done button item as necessary. Clients who override it must call super first.
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) UIBarButtonItem *editButtonItem; // Return an Edit|Done button that can be used as a navigation item's custom view. Default action toggles the editing state with animation.
+#else
 - (UIBarButtonItem *)editButtonItem; // Return an Edit|Done button that can be used as a navigation item's custom view. Default action toggles the editing state with animation.
+#endif
 
 @end
 
@@ -315,7 +352,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
   superview of the child view controller's view that has a view controller is NOT the child view controller's
   parent.
 */
-UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN NSExceptionName const UIViewControllerHierarchyInconsistencyException NS_AVAILABLE_IOS(5_0);
 
 /*
   The methods in the UIContainerViewControllerProtectedMethods and the UIContainerViewControllerCallbacks
@@ -338,7 +375,7 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
   Removes the the receiver from its parent's children controllers array. If this method is overridden then
   the super implementation must be called.
 */
-- (void) removeFromParentViewController NS_AVAILABLE_IOS(5_0);
+- (void)removeFromParentViewController NS_AVAILABLE_IOS(5_0);
 
 /*
   This method can be used to transition between sibling child view controllers. The receiver of this method is
@@ -364,8 +401,13 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 - (void)endAppearanceTransition __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
 // Override to return a child view controller or nil. If non-nil, that view controller's status bar appearance attributes will be used. If nil, self is used. Whenever the return values from these methods change, -setNeedsUpdatedStatusBarAttributes should be called.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, nullable) UIViewController *childViewControllerForStatusBarStyle NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+@property(nonatomic, readonly, nullable) UIViewController *childViewControllerForStatusBarHidden NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+#else
 - (nullable UIViewController *)childViewControllerForStatusBarStyle NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 - (nullable UIViewController *)childViewControllerForStatusBarHidden NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+#endif
 
 // Call to modify the trait collection for child view controllers.
 - (void)setOverrideTraitCollection:(nullable UITraitCollection *)collection forChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
@@ -387,7 +429,11 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 - (BOOL)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers NS_DEPRECATED_IOS(5_0,6_0) __TVOS_PROHIBITED;
 - (BOOL)shouldAutomaticallyForwardRotationMethods NS_DEPRECATED_IOS(6_0,8_0, "Manually forward viewWillTransitionToSize:withTransitionCoordinator: if necessary") __TVOS_PROHIBITED;
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL shouldAutomaticallyForwardAppearanceMethods NS_AVAILABLE_IOS(6_0);
+#else
 - (BOOL)shouldAutomaticallyForwardAppearanceMethods NS_AVAILABLE_IOS(6_0);
+#endif
 
 
 /*
@@ -399,8 +445,8 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
   addChildViewController: will call [child willMoveToParentViewController:self] before adding the
   child. However, it will not call didMoveToParentViewController:. It is expected that a container view
   controller subclass will make this call after a transition to the new child has completed or, in the
-  case of no transition, immediately after the call to addChildViewController:. Similarly
-  removeFromParentViewController: does not call [self willMoveToParentViewController:nil] before removing the
+  case of no transition, immediately after the call to addChildViewController:. Similarly,
+  removeFromParentViewController does not call [self willMoveToParentViewController:nil] before removing the
   child. This is also the responsibilty of the container subclass. Container subclasses will typically define
   a method that transitions to a new child by first calling addChildViewController:, then executing a
   transition which will add the new child's view into the view hierarchy of its parent, and finally will call
@@ -508,7 +554,11 @@ NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIViewControllerPreviewingDelegate <NSObje
 
 @interface UIViewController ()
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSArray <id <UIPreviewActionItem>> *previewActionItems NS_AVAILABLE_IOS(9_0);
+#else
 - (NSArray <id <UIPreviewActionItem>> *)previewActionItems NS_AVAILABLE_IOS(9_0);
+#endif
 
 @end
 

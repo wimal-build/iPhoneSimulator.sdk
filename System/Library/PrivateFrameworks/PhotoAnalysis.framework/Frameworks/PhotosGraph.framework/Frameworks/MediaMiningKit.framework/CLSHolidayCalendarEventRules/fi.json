@@ -1,0 +1,487 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 5
+        }
+      ],
+      "name" : "May Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "D73D6988-3AE9-409E-8C46-5C4369EB6340"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 11,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "restaurant"
+        ]
+      },
+      "uuid" : "F89E9D24-E85A-4751-91E4-7A3F093F44B9"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1F3B65C3-C056-4E9C-A287-587123E67855"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        }
+      ],
+      "name" : "Easter Sunday",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "food"
+        ]
+      },
+      "uuid" : "4DFEF6A8-99BD-450C-BCAD-823320BE2E56"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 6,
+          "year" : 2000
+        },
+        {
+          "day" : 23,
+          "month" : 6,
+          "year" : 2001
+        },
+        {
+          "day" : 22,
+          "month" : 6,
+          "year" : 2002
+        },
+        {
+          "day" : 21,
+          "month" : 6,
+          "year" : 2003
+        },
+        {
+          "day" : 26,
+          "month" : 6,
+          "year" : 2004
+        },
+        {
+          "day" : 25,
+          "month" : 6,
+          "year" : 2005
+        },
+        {
+          "day" : 24,
+          "month" : 6,
+          "year" : 2006
+        },
+        {
+          "day" : 23,
+          "month" : 6,
+          "year" : 2007
+        },
+        {
+          "day" : 21,
+          "month" : 6,
+          "year" : 2008
+        },
+        {
+          "day" : 20,
+          "month" : 6,
+          "year" : 2009
+        },
+        {
+          "day" : 26,
+          "month" : 6,
+          "year" : 2010
+        },
+        {
+          "day" : 25,
+          "month" : 6,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 6,
+          "year" : 2012
+        },
+        {
+          "day" : 22,
+          "month" : 6,
+          "year" : 2013
+        },
+        {
+          "day" : 21,
+          "month" : 6,
+          "year" : 2014
+        },
+        {
+          "day" : 20,
+          "month" : 6,
+          "year" : 2015
+        },
+        {
+          "day" : 25,
+          "month" : 6,
+          "year" : 2016
+        },
+        {
+          "day" : 24,
+          "month" : 6,
+          "year" : 2017
+        },
+        {
+          "day" : 23,
+          "month" : 6,
+          "year" : 2018
+        },
+        {
+          "day" : 22,
+          "month" : 6,
+          "year" : 2019
+        },
+        {
+          "day" : 20,
+          "month" : 6,
+          "year" : 2020
+        },
+        {
+          "day" : 26,
+          "month" : 6,
+          "year" : 2021
+        },
+        {
+          "day" : 25,
+          "month" : 6,
+          "year" : 2022
+        },
+        {
+          "day" : 24,
+          "month" : 6,
+          "year" : 2023
+        }
+      ],
+      "name" : "Midsummer Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "13089EF3-1BB0-4DBB-8CC3-08A734A2F5E0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "urban",
+          "wine_bottle",
+          "beer_bottle"
+        ]
+      },
+      "uuid" : "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "93B721D6-4A3A-433F-92CB-FAE0CC21ECAA"
+    },
+    {
+      "dateRules" : [
+        {
+          "relativeToRule": "4DFEF6A8-99BD-450C-BCAD-823320BE2E56",
+          "offsetDays": 39
+        }
+      ],
+      "name" : "Ascension",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "083DF8A1-FB06-44A1-BC61-4AF9403A8F36"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 6,
+          "month" : 12
+        }
+      ],
+      "name" : "Independence Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "3ED6088A-A156-4A5D-A52A-C278251A6CEB"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "entertainment",
+          "restaurant"
+        ]
+      },
+      "uuid" : "106DAAA3-5871-41B3-9BD8-3DE81F781E08"
+    },
+    {
+      "dateRules" : [
+        {
+          "offsetDays": -1,
+          "relativeToRule": "13089EF3-1BB0-4DBB-8CC3-08A734A2F5E0"
+        }
+      ],
+      "name" : "Midsummer Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "beach",
+          "mountain",
+          "nature"
+        ]
+      },
+      "uuid" : "A5429089-E0BC-4547-816B-19AD51AC3C22"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "fi",
+    "countryName" : "Finland"
+  }
+}

@@ -20,24 +20,36 @@ NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_AVAILABLE_IOS(9_0)
 @interface SFSafariViewController : UIViewController
 
-/*! @abstract The view controller's delegate */
-@property (nonatomic, weak, nullable) id<SFSafariViewControllerDelegate> delegate;
-
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
 
 /*! @abstract Returns a view controller that loads a URL.
-    @param URL, the URL to navigate to.
+    @param URL the initial URL to navigate to. Only supports initial URLs with http:// or https:// schemes.
     @param entersReaderIfAvailable indicates if the Safari Reader version of content should be shown automatically
-    when Safari Reader is available on a web page
+    when Safari Reader is available on a web page.
  */
 - (instancetype)initWithURL:(NSURL *)URL entersReaderIfAvailable:(BOOL)entersReaderIfAvailable NS_DESIGNATED_INITIALIZER;
 
 /*! @abstract Returns a view controller that loads a URL.
-    @param URL, the URL to navigate to.
+    @param URL the initial URL to navigate to. Only supports initial URLs with http:// or https:// schemes.
  */
 - (instancetype)initWithURL:(NSURL *)URL;
+
+/*! @abstract The view controller's delegate. */
+@property (nonatomic, weak, nullable) id <SFSafariViewControllerDelegate> delegate;
+
+/*! @abstract The preferred color to tint the background of the navigation bar and toolbar. If SFSafariViewController is in Private
+    Browsing mode or is displaying an anti-phishing warning page, this color will be ignored. Changes made after the view controller
+    has been presented will not be reflected.
+ */
+@property (nonatomic) UIColor *preferredBarTintColor NS_AVAILABLE_IOS(10_0);
+
+/*! @abstract The preferred color to tint the control buttons on the navigation bar and toolbar. If SFSafariViewController is in Private
+    Browsing mode or is displaying an anti-phishing warning page, this color will be ignored. Changes made after the view controller
+    has been presented will not be reflected.
+ */
+@property (nonatomic) UIColor *preferredControlTintColor NS_AVAILABLE_IOS(10_0);
 
 @end
 
@@ -46,8 +58,8 @@ NS_AVAILABLE_IOS(9_0)
 @optional
 
 /*! @abstract Called when the view controller is about to show UIActivityViewController after the user taps the action button.
-    @param URL, the URL of the web page.
-    @param title, the title of the web page.
+    @param URL the URL of the web page.
+    @param title the title of the web page.
     @result Returns an array of UIActivity instances that will be appended to UIActivityViewController.
  */
 - (NSArray<UIActivity *> *)safariViewController:(SFSafariViewController *)controller activityItemsForURL:(NSURL *)URL title:(nullable NSString *)title;

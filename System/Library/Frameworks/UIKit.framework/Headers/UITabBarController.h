@@ -11,6 +11,11 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UITabBar.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
+@class UIView, UIImage, UINavigationController, UITabBarItem;
+@protocol UITabBarControllerDelegate;
+
 /*!
  UITabBarController manages a button bar and transition view, for an application with multiple top-level modes.
  
@@ -22,11 +27,6 @@
  
  UITabBarController is rotatable if all of its view controllers are rotatable.
  */
-
-NS_ASSUME_NONNULL_BEGIN
-
-@class UIView, UIImage, UINavigationController, UITabBarItem;
-@protocol UITabBarControllerDelegate;
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBarController : UIViewController <UITabBarDelegate, NSCoding>
 

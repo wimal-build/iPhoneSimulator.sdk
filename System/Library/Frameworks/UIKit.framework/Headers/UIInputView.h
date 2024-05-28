@@ -5,7 +5,7 @@
 //  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UIView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

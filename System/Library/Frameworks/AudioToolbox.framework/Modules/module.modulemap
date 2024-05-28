@@ -1,4 +1,4 @@
-framework module AudioToolbox [extern_c] {
+framework module AudioToolbox [extern_c] [system] {
 	umbrella header "AudioToolbox.h"
 
 	export *

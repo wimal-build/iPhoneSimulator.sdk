@@ -2,7 +2,7 @@
 //  UIControl.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -93,8 +93,14 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIControl : UIView
 - (void)removeTarget:(nullable id)target action:(nullable SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
 // get info about target & actions. this makes it possible to enumerate all target/actions by checking for each event kind
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic,readonly) NSSet *allTargets;
+@property(nonatomic,readonly) UIControlEvents allControlEvents;                            // list of all events that have at least one action
+#else
 - (NSSet *)allTargets;                                                                     // set may include NSNull to indicate at least one nil target
 - (UIControlEvents)allControlEvents;                                                       // list of all events that have at least one action
+#endif
+
 - (nullable NSArray<NSString *> *)actionsForTarget:(nullable id)target forControlEvent:(UIControlEvents)controlEvent;    // single event. returns NSArray of NSString selector names. returns nil if none
 
 // send the action. the first method is called for the event and is a point at which you can observe or override behavior. it is called repeately by the second.

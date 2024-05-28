@@ -74,6 +74,9 @@ NS_CLASS_AVAILABLE_IOS(6_0)
 // Opens the card setup flow (in Wallet on iPhone, Settings on iPad). Use this to direct a user to card setup directly from your app.
 - (void)openPaymentSetup __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(8_3);
 
+// Presents the pass for use above the current application. The pass must already be in the pass library for this to have effect.
+- (void)presentPaymentPass:(PKPaymentPass *)pass __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
+
 // Returns YES if either the current device or an attached device both supports adding payment passes and does not already contain
 // a payment pass with the supplied primary account identifier.
 - (BOOL)canAddPaymentPassWithPrimaryAccountIdentifier:(NSString *)primaryAccountIdentifier NS_AVAILABLE_IOS(9_0);
@@ -86,19 +89,21 @@ NS_CLASS_AVAILABLE_IOS(6_0)
 
 // This notification is issued by a library instance, with that instance as the sender.  If there are no instantiated library objects,
 // no notifications. There are no guarantees about what thread or queue these come in on.
-extern NSString * const PKPassLibraryDidChangeNotification NS_AVAILABLE_IOS(6_0);
-extern NSString * const PKPassLibraryRemotePaymentPassesDidChangeNotification NS_AVAILABLE_IOS(9_0);
+typedef NSString * PKPassLibraryNotificationName NS_EXTENSIBLE_STRING_ENUM;
+extern PKPassLibraryNotificationName const PKPassLibraryDidChangeNotification NS_AVAILABLE_IOS(6_0);
+extern PKPassLibraryNotificationName const PKPassLibraryRemotePaymentPassesDidChangeNotification NS_AVAILABLE_IOS(9_0);
 
 // Entries in user info dictionary for PKPassLibraryDidChangeNotification.
 // - PKPassLibraryAddedPassesUserInfoKey is the key for an array of passes
 // - PKPassLibraryReplacementPassesUserInfoKey is the key for an array of passes
 // - PKPassLibraryRemovedPassInfosUserInfoKey is the key for an array of dictionaries, each of which has keys
 //   PKPassLibraryPassTypeIdentifierUserInfoKey and PKPassLibrarySerialNumberUserInfoKey mapping to strings.
-extern NSString *const PKPassLibraryAddedPassesUserInfoKey NS_AVAILABLE_IOS(6_0);
-extern NSString *const PKPassLibraryReplacementPassesUserInfoKey NS_AVAILABLE_IOS(6_0);
-extern NSString *const PKPassLibraryRemovedPassInfosUserInfoKey NS_AVAILABLE_IOS(6_0);
+typedef NSString * PKPassLibraryNotificationKey NS_STRING_ENUM;
+extern PKPassLibraryNotificationKey const PKPassLibraryAddedPassesUserInfoKey NS_AVAILABLE_IOS(6_0);
+extern PKPassLibraryNotificationKey const PKPassLibraryReplacementPassesUserInfoKey NS_AVAILABLE_IOS(6_0);
+extern PKPassLibraryNotificationKey const PKPassLibraryRemovedPassInfosUserInfoKey NS_AVAILABLE_IOS(6_0);
 
-extern NSString *const PKPassLibraryPassTypeIdentifierUserInfoKey NS_AVAILABLE_IOS(6_0);
-extern NSString *const PKPassLibrarySerialNumberUserInfoKey NS_AVAILABLE_IOS(6_0);
+extern PKPassLibraryNotificationKey const PKPassLibraryPassTypeIdentifierUserInfoKey NS_AVAILABLE_IOS(6_0);
+extern PKPassLibraryNotificationKey const PKPassLibrarySerialNumberUserInfoKey NS_AVAILABLE_IOS(6_0);
 
 NS_ASSUME_NONNULL_END

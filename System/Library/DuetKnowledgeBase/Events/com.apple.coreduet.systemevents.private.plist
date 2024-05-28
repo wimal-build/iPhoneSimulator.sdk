@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>EventName</key>
+		<string>ContextStorePersistentRule</string>
+		<key>EventDescription</key>
+		<string>ContextStore predicates that are registered as waitForever are persisted between coreduet sessions</string>
+		<key>KnowledgeBaseEventName</key>
+		<string>/private/contextStorePersistentRule</string>
+		<key>EventType</key>
+		<string>EventValueCategorical</string>
+		<key>FutureEvent</key>
+		<false/>
+		<key>SetupOnDemand</key>
+		<false/>
+		<key>CanBeSpeculative</key>
+		<false/>
+		<key>EphemeralityInSeconds</key>
+		<integer>2419200</integer>
+		<key>CanPersistOnStorage</key>
+		<true/>
+		<key>TimestampPrecisionInSeconds</key>
+		<integer>60</integer>
+		<key>DeResolutionPolicy</key>
+		<string>None</string>
+		<key>DataProtectionClass</key>
+		<string>NSFileProtectionCompleteUntilFirstUserAuthentication</string>
+		<key>TotalNumberOfEventsLimit</key>
+		<real>400</real>
+		<key>RateLimitPeriodInSeconds</key>
+		<string>60</string>
+		<key>RateLimitCount</key>
+		<string>60</string>
+		<key>CanBeShared</key>
+		<true/>
+		<key>DataSharingPolicy</key>
+		<string>DataSharingPolicyShareDefault</string>
+		<key>MaxVisibilityLatencyInSeconds</key>
+		<integer>10</integer>
+		<key>CanSendToServer</key>
+		<false/>
+		<key>HasStats</key>
+		<false/>
+		<key>StatisticsType</key>
+		<string>Default</string>
+		<key>IsInstant</key>
+		<false/>
+		<key>IsHistorical</key>
+		<true/>
+	</dict>
+</array>
+</plist>

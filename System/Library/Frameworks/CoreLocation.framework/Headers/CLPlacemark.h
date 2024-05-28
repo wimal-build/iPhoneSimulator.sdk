@@ -5,8 +5,6 @@
  *  Copyright (c) 2010 Apple Inc. All rights reserved.
  */
 
-#if TARGET_OS_IPHONE
-
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CLAvailability.h>
 
@@ -24,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  *    information such as the country, state, city, and street address.
  */
 
-NS_CLASS_AVAILABLE(TBD,5_0)
+NS_CLASS_AVAILABLE(10_8,5_0)
 @interface CLPlacemark : NSObject <NSCopying, NSSecureCoding>
 {
 @private
@@ -87,7 +85,5 @@ NS_CLASS_AVAILABLE(TBD,5_0)
 @property (nonatomic, readonly, copy, nullable) NSString *ocean; // eg. Pacific Ocean
 @property (nonatomic, readonly, copy, nullable) NSArray<NSString *> *areasOfInterest; // eg. Golden Gate Park
 @end
-
-#endif //TARGET_OS_IPHONE
 
 NS_ASSUME_NONNULL_END

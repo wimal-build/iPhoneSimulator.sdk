@@ -4,139 +4,186 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CDA.xsd</key>
+		<data>
+		nOfsOHbxsKNVFsd2aCICOun4Kg4=
+		</data>
 		<key>Headers/HKActivitySummary.h</key>
 		<data>
 		F2WN9Yl2r+eJuyTIzERwNNW86pw=
 		</data>
 		<key>Headers/HKActivitySummaryQuery.h</key>
 		<data>
-		BnlJWAdAOdkQ/IdVPmBFsYezbBI=
+		gpRuUNdsWfjy6myhqMPUKT3NLnc=
 		</data>
 		<key>Headers/HKAnchoredObjectQuery.h</key>
 		<data>
-		YG6unv30WZi+ijrIOz1NxRu+ykY=
+		xa/ZNufzwzmPCPY58uxvWIHplw0=
+		</data>
+		<key>Headers/HKCDADocumentSample.h</key>
+		<data>
+		ja3QgRXziGj90spUY2PM5xiEqko=
 		</data>
 		<key>Headers/HKCategorySample.h</key>
 		<data>
-		cIhd87XZeKHZlV3Z4OFyt+m5n14=
+		s+imAmp5m/9I1FyBpMznm9pfrsM=
+		</data>
+		<key>Headers/HKCharacteristicObjects.h</key>
+		<data>
+		/kSd2sLIFsMXbLy19UAVzFLObT4=
 		</data>
 		<key>Headers/HKCorrelation.h</key>
 		<data>
-		JPJBN+jNaTgJXemxsy+cr3YnDtE=
+		AzwyHz7vVPn00qxp7m7te2O1HSM=
 		</data>
 		<key>Headers/HKCorrelationQuery.h</key>
 		<data>
-		gAwPjUsnrP8w56lmdbROvoFE3zc=
+		Su4t8Sy71YqtpnLAjjapNSML6aI=
 		</data>
 		<key>Headers/HKDefines.h</key>
 		<data>
-		ArklT54wYFxQTRnwcLm0d6mVY+c=
+		QMqNFeLqWrIst7+Fj3FpoL01iMI=
 		</data>
 		<key>Headers/HKDeletedObject.h</key>
 		<data>
-		gylQtDYY1nW53PhjtG/s1js98pY=
+		7yXu9kctQS3ksq6g0UJBoDIEx+0=
 		</data>
 		<key>Headers/HKDevice.h</key>
 		<data>
-		9tn9as/CR/V76vW15KGaQVTsnz4=
+		VGezGSlwMgid3QiDRxix7iwnemg=
+		</data>
+		<key>Headers/HKDocumentQuery.h</key>
+		<data>
+		SWHf+U2GHyIXzIRVPCeSK81Evx0=
+		</data>
+		<key>Headers/HKDocumentSample.h</key>
+		<data>
+		QK+UipRFKWbQGRi6DSrSnmMlRVo=
 		</data>
 		<key>Headers/HKHealthStore.h</key>
 		<data>
-		agnZzlpgTnqvY9oc+ZiloJ3xrbg=
+		HKIS+OIR17B9f9uQsdPtM8agyrM=
 		</data>
 		<key>Headers/HKMetadata.h</key>
 		<data>
-		/WRAynEXjsSoA96m44PNNojWriA=
+		TfOUKLsdKnaCYM3vMHYiuxoQ95U=
 		</data>
 		<key>Headers/HKObject.h</key>
 		<data>
-		vMziZ82CFQOR1MG3Ud9MnsZ4uCw=
+		t5T0P7VMSsfUJrcvY1lsGrBZdkw=
 		</data>
 		<key>Headers/HKObjectType.h</key>
 		<data>
-		zNDZPFN14Z1aopM/9M/OvDdXoKo=
+		TQtiST4JM8vG6mFUu327BVrwB9k=
 		</data>
 		<key>Headers/HKObserverQuery.h</key>
 		<data>
-		pgGaeiDIA+tImfBZ4QarM9FfNX8=
+		ZX7D2kckfYQx4v6gPo13t7VGaSc=
 		</data>
 		<key>Headers/HKQuantity.h</key>
 		<data>
-		KCiKLFCktXfmVqzCDal9/7KSqOQ=
+		+aUCIENCA5RBfMo0F5Ha8fJH/hA=
 		</data>
 		<key>Headers/HKQuantitySample.h</key>
 		<data>
-		nnfkdFJm3RoxtOQ/FNH9He0HFos=
+		MOMLgeb+osTSFfg+93Oa9W/B2uM=
 		</data>
 		<key>Headers/HKQuery.h</key>
 		<data>
-		4dlvGqAin5nhT3GIks070VQNrFM=
+		a9CR16+zFtGRMJm2EF9IKK6UGhA=
 		</data>
 		<key>Headers/HKSample.h</key>
 		<data>
-		dCdsf5o8yhvKqD/9aRDcdUDQVs4=
+		zb4POc9jh3g5n1sp/OEg3Vgq3bc=
 		</data>
 		<key>Headers/HKSampleQuery.h</key>
 		<data>
-		ESi33GxzG2W70H2N1NOIFs/lU3o=
+		WQG8aGSgSGQcblccf2BHWFBG+RQ=
 		</data>
 		<key>Headers/HKSource.h</key>
 		<data>
-		lLC5CLg35lKgt6jR8Pujr3HWUoE=
+		OsxhcjKqHUym2Xg6ZlgBa6T2K20=
 		</data>
 		<key>Headers/HKSourceQuery.h</key>
 		<data>
-		gxEkStolwU+4uvHx2DqMZ6KHW/0=
+		6x+9kXmj/rCzpCM7OC0EbPpNU20=
 		</data>
 		<key>Headers/HKSourceRevision.h</key>
 		<data>
-		U/BdsHvWkyXyG7bAqp/oh0VEFPM=
+		O5YtR+MlivEM+dJ4a5Fjk7/CtFk=
 		</data>
 		<key>Headers/HKStatistics.h</key>
 		<data>
-		vVlRER6bxStuqTJOwvMq0VU44kU=
+		XtDYg1uIPiKX3AIppNwpvQ6BXpc=
 		</data>
 		<key>Headers/HKStatisticsCollectionQuery.h</key>
 		<data>
-		bSKUeVvoprP+wo8FRWQyx4Qudj4=
+		at29HRqmlBnzn9EPHQvfC6ChdhY=
 		</data>
 		<key>Headers/HKStatisticsQuery.h</key>
 		<data>
-		6hDMGmDxe/Y/xZAQQUFgOjjB7pU=
+		jJMSB7+av6LkrMQb7rsgoSpbOoo=
 		</data>
 		<key>Headers/HKTypeIdentifiers.h</key>
 		<data>
-		rKzMnYTuCvr9X5Ggo/WtSorIZf8=
+		BUy5Dfke8cNrFSR4u0BrUdpju3I=
 		</data>
 		<key>Headers/HKUnit.h</key>
 		<data>
-		aYC6aO6ISoo0Nb0ZP9J71b9TjNk=
+		Or4Cesq54/3pMCI9U/xfLUnNmo4=
 		</data>
 		<key>Headers/HKWorkout.h</key>
 		<data>
-		+uYRNRCeEawOtvHHb3FQhM+oGSU=
+		9d83cTX1FgZKIqIe6LZiq5p22gg=
 		</data>
 		<key>Headers/HKWorkoutSession.h</key>
 		<data>
-		WL2EuGnXpVRD7UaRa3yZgxRI5GU=
+		inLlfVa97VyNwQOpIixwkhRDePA=
 		</data>
 		<key>Headers/HealthKit.h</key>
 		<data>
-		ADtqfWuEQpz4QydBXrWbcoAZa8o=
+		mtIZXElb9n+1deZofxvsErdClHY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xd9EmDoNIpK+Rj80ioh6n/CUVDU=
+		4IMLd/+1c4aYAOfsYRDkT8DM2C8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		t8CvPJRCJD88o+S2fwJX3RYjO4A=
 		</data>
+		<key>ar.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9C0TBXlLvQNKIjNlnokrpeXG8Qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Achievements.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VO3cb7LALG3W07PCDal/2wS6woY=
+			RbzkroIE9cRySAFjEmrYKk9Q8pM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5d9soDnaKSAXVeg29ObK9idTFDE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1OCjg1H50VrrnzCyxng5TLzfPqE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,7 +201,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NHVnZWRkf6PS1JDVecjwVGmhl5g=
+			1AIz8q28c4QGj/v/vxVKus2GRPA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hljLXd/tKtoLiRIw4B6O4rnPPNg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -163,7 +219,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4twfIBB04KYF9fZzuT3oaD7XBr4=
+			N83dL2jh5HdtPZxjCwss+78xm34=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ejM6C/kMOUf73oxood6oijwOpaM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7Hrln3yds//l/ERnA9FA5U5IvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -181,7 +255,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0fa3/Sw/Zym8D5E3/1h+N3aT83E=
+			HVBDhqNE2b8imTjgLcdBCRhdIGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6/b//i1ovSTdmWCfLBwbVis3rRs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -190,7 +273,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pFaU9lObrOBj1dNl89139y1XbUI=
+			iKHw3dVfVSI1FsAsScXEl/H8o74=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KDTErjffLxtMuLrqjOzZrqYrtYc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BqWKV971zXbX962Wqzx2ToLraSQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -208,7 +309,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LaP1bBNgOtks3Lp9iBvrzoWhUTY=
+			ftq2/+yrIpGB+2mpZ3lgwPyLTHc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5253XAjEs5HhRDITF3FsskTxpNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -217,7 +327,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			orFS3A2rRCU1lE9NXdEIsCEBchY=
+			mwkHRiSt3HUNwiDjE57kdhcyzg4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZWvxkw+TYQW3MC0rOxWJqYY7zC8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LeQNPvup5CckEzDO5kqcj+mP8NU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -235,7 +363,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UaSrsRGKDOIvNbrX76Fu824ok9Q=
+			+FGCsSdNl1spM7IXb01+YI1LDA0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1DIJg21Lw8prwUagqP0mopLZ7Qs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -244,7 +381,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wImP7bxuefH/D6wKH4v+5ohWnq8=
+			otPImgQvicjNL+OeYjWW9teWQe8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u63AnF2vNlPLN6EZfoi3q1Wyqlg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			knBEv4TTLXM8W/FpfAxDO1eZ5Yk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -262,7 +417,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			scCMCa3PzUeLM9773KcmWDVOoDQ=
+			EmLpQc0qt83lhHOkeHM3b9pSsow=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aiiYpn9r2V26MBJS6Kff25XoQIU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -271,7 +435,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KK5RbWul+0qikmf/S9X5rVIQz3k=
+			xTys9Q2k7mDrxmnVIkAbIQ9IqqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1AbXbFD3cTFQ/ugnEGlzpFax+w0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zbUXrWJfsiuB8o1sXXsMvSYy7Ug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -289,7 +471,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NtY3iWsabzbxZ00pHDX/E/DTM7I=
+			yDHhTr3Wi0vppxFgw9ClS9a27Vs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyVNA4Gsv2xuhl29Cp+vYdQyWQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -298,7 +489,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VtuYpmCfS7G9VoXlpEOcjgXOXqQ=
+			rikR1eLpC4Icqi7pSgmuPZoKMeo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z5D3uUPJt+iC0IHA/mawN+WDpMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4jvGKgs2wLfd/NRsu8Qbux3T4wE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -316,7 +525,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQav+p4vFlbq7BPIoqSI9iwyaD4=
+			AoyqcjEIHtpaNziXzHKgZ0JOXqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9rxwu71k2zH3MDUxamZAR/yDM7w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,7 +543,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f5LGFS60JzZOSnLk1Og2kbDjl/0=
+			8SMDTqLIWIir+440irxdski+Pdo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nIqmstLbaAVwM7oWSasjQ9p5jM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fuwM3WdVH9YYq0AlkGXucMSbJWA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -343,7 +579,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQav+p4vFlbq7BPIoqSI9iwyaD4=
+			AoyqcjEIHtpaNziXzHKgZ0JOXqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H6ERPoX9beNbvGKpGwnCJGheYf0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -352,7 +597,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ed/9Ka+Y9P+4UzgeNPqBaPh4nPI=
+			dA2rbIvSxZMILpvbRlBsMXwABIc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nIqmstLbaAVwM7oWSasjQ9p5jM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nbn7KCzPX1wiuf7LC7kR4hcMeEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -370,7 +633,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQav+p4vFlbq7BPIoqSI9iwyaD4=
+			AoyqcjEIHtpaNziXzHKgZ0JOXqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KlDGzE+fuOEXvO3WskZKWcdLphM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -379,7 +651,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			367PuXaAd1bB+XyhmalcicsmpJ0=
+			v+XL75Ad1aKwIkWz8Xj0kAAexoY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YDlg+DwpCyh2yCIwnT8dx5apwps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8aYxjEq9751Cj4zPVwVdahnXTF8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -397,7 +687,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9PVGPVwudUlI8NW+yZr6mJdBP0Q=
+			b6lLzNuVzCEBqw5fkmoyNWSiyO8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qK7Jjfm5yPkU5pm5cfGLQzw8oNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -406,7 +705,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eZ2mjNFwbnwBH0nmRUeV5AAyG0o=
+			Tn7X+PASW0zLL6oosuuwL+ZVXnI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gua5rU5kdgv6/9Ei1xm3JUpRQWA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SWBC/cMCghY/i4TK1jOqbA6a780=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -424,7 +741,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vamCu/PFVsqvTqHY2vVInXlauso=
+			UnsGkveB042pWrKJrphRTaFHLtU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zk0SCdN6c77kR/1WpxMSfSGyRiM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -433,7 +759,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S+7rZ8HiEwqOvlv6n2QW5c62xtI=
+			lt0ADjQ6jr+RRYS9MQSC/4ADNiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+Jv3fjf23/HXxT5ANBNmrnSd1os=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g9MH+sXfrKYPF4/YuYrrN95+Slg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -451,7 +795,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mP4dONrYgmruWI5ExATQ1LESpZA=
+			Jm8W12H5O7aizPfdfqZDQQDsY4g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wn0+vmiv6gxI0B239SEX62jBvHs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -460,7 +813,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m7UljcqI7t3cCpARs22F14DzFps=
+			8kGSltyfmvsq2/QBy93dYym+HIo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lCjOPmAS+PLLmg1C+ljFkzpgWEQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nSzUR0jLOzQ6S3AGcX1nhUOeG3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -478,7 +849,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8YN7eWs8h08ezojTaou2ZLlJyCo=
+			5LbF0GlWRxMxh7QTRc445z+d5Ok=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J50NHKeffyp4LaLdoDFF455NFBI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -487,7 +867,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uXF6jlU/8T2q1kTEeBqYmrAVJis=
+			qwI/I07PO+trxThywTHxWp1zNBg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p4tnCGTrw8DVe2+2P5SsALaOqBE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ADlQW5vepADtJA4OOGr4/8cKcTc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -505,20 +903,47 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4vStgPzdvc/DufFYUnpM2mu+434=
+			/i6XcpE9DwCw6WK/l4+V5k5iaPM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>healthd</key>
 		<data>
-		iKEJE0RNcg49jVDP8vdznEXmXQU=
+		ob8ujYsXB9P16meAp6qfHZoZvow=
 		</data>
+		<key>hi.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sCLmrUkkHSfKuz0oHN4A10p2Tfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/Achievements.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6zy4SLRWSkcY8SwdMBd3BgHJoGk=
+			r2TxxbZMb2+z19c84WtSRZpu+MI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ldePyTN15aPVzmGzcunTRP0MwOw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MPxgbAwyfwjYS2kaTJFD/szvcOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -536,7 +961,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/YuFhirSrKwo6i6ih24Q3B/2Kgo=
+			cxDgmiaBrkha0nhfPoK782oWGyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ogT8J0UIsVjAAs8Fbps933geFqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -545,7 +979,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yg9QYEk6xDvjEY08zXckCBlfMNA=
+			h44IFvL38Eh7bMoscYGgDbAiNWU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bTacsj/MU1oe9SSlPSjOv7QOf6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S39Mbo7zHNk0CFJJwREcGfUS6Ac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -563,7 +1015,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lnISX6JMnkpsqrgHrXJS65VzqWo=
+			6RqIu30TSMpGfhDBlGgurtbp8mg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V19ZUDQwCMgx0YL1L5L9CS7oT2U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -572,7 +1033,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c6dsRBc/zjaKJUBLER2AfeePn+s=
+			jAs9UnSOlEH4HgsiboNXXzdtvdY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QpE4HpaBxoWMFD6vqlsh2+sOws0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tAd+jazagmigem/1CJvi3aUeRIw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -590,7 +1069,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TBVI6cEIXnbQ6z5hmovcY9L4jxY=
+			exP2mrDMzshRCW4Ukst3G82LY8o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EwrzOeRUnVQbYM3a4GZMxj8ikcE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -599,7 +1087,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4wp51Mtes/gFQEVYJIiT0UeTVQc=
+			7zmKxjxNuIwPqizJPCFieq+n2jg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUclG1iaF1gXUvbKYUkDEbf8kp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D4l1glRFryDuZ2Gpm+MX+1ROmHA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -617,7 +1123,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			shFQ+jMup/hmJoy2WlkpTjtRoYg=
+			jCq28+m1v1N2ChrI9aTd49Sk3LE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W6Ow92nxxINJdtg/pbGmLktInfU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -626,7 +1141,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hmm8Is6CzS4BJQ5vcNUPqDtTICE=
+			4jSuqg8PpVSWsseD/5Ge1Cjmr+0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/BkEberNmkTwRdADLX8xotbtB9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CGBfzLojdW5nXlgkb5HM5el/2kQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -644,7 +1177,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TuF8UNlqDYR6gDb/8e4vPGoQCoA=
+			K76mV7qMhhjatr225ZOdjGs6FRo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wZJB172OQ79lSSQz95ZKQU9uWNY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -653,7 +1195,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YakghogKBsnk6021O2Hn85pJwkw=
+			O0SnoSbqLt89+VsmKLIqm0bxzpM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8OwSEjwupCt844OlhOJe1CVgAQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qtnVRjUyNBeyUPFvC/F0zpQSqzQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -671,7 +1231,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fNugmgHpg/Jrabci1QoCek8FPes=
+			fa6C0n27Vds0e5BV9CKuITOPlDc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SvljCrTeA5B1A7YI5E4v07FvrTw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -680,7 +1249,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hs2y2la16yOmxs+tAwnEsfQzK5E=
+			ntRf/OUQv7hJMmXtcE8gY5tOxx0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7MDs0Q7I/qcCdNPkFafSRGNyOSk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2GkpUuswPt45G85YB8Cbf14/IHU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -698,7 +1285,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UWCARmnudoH4baNwPTc9aNaqWXM=
+			D+2lzxJMzEfEXX06uwuwuDEdP/U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AkdD347CAiMMrGC9CxlZVfCiVSA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -707,7 +1303,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+oYNPEiUtRhKUEtfx6Z6oxOkrYw=
+			0fk61ks1GCaC4vQ44fZ9ejcqRwE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qOFgAmRde4uHauE8evh6qJAoito=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3JozQiWxjHwBrNDXHsRtFeaoyfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -725,7 +1339,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iiwSmZ/MaMxAZQx86hWsj95Q33Y=
+			cqZfKyA8djK739sfkdvoaAcf5Ag=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nl1h67w9UR+oUbLniZROaHOrUAU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -734,7 +1357,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gddMrf3AQOkTj4hlEi+4DBe9Cv4=
+			nhOPE4s1/A+K6Or6u8Cy6ZBhnlg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rCIExM3oxTUN70Sd+uu8/g0wKds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q1JOcBuhEWtRTg1jQEEzudPAkz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -752,7 +1393,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ucdyYYUq5CsyeFuAghuREKm8Jns=
+			DnVejkdY7G4xSUyXFzFICpibz2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UXzKcr5t7ZoKUGpZrsl3hYrCtBA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,7 +1411,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VKXRQ5RtVC1TTTlQD9P7e6xcb7s=
+			EWnau+46f/HmjwvSMva0rLdRHHc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2YXf6uStbHE3W0SjRWTmEGLQ+SM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsHgUBS3tZQPjEcWMt3YbhfEKF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,7 +1447,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sMcJ4MlN57i22sfYH/4v3Ffzkf4=
+			nnArplONeXVhcdoqR6vvFEjv0ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i/Xf+EGIu9PRXItmQ+cZf8WlftE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -788,7 +1465,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+s0oluMOGXhADVVYwSGUv9rlG/I=
+			rNWdD5anHP2zvDt4WNDd8WVrGIs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			26oA86JUmxO0K8HcBi5WMw2Z/lY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hkD5frxTYw8Og/kqJzLim0h1LMs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -806,7 +1501,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rB5wKB9MhTBqqk+8po8dwzZp9aY=
+			MnWefgA5AAUfF17PeMbPI3IY02Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QkEaqv7dIiJVsmWcU6O8+ldggaY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -815,7 +1519,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FEHfCDqlIh/o5ZI7Ii/4KJhhrDk=
+			0lPPPqqEZ3/hgYsCNlPurndaaTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jl86RjtOyRfeTqYg0XPTklpuCcw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NIvSqqF2hPpiKCfbHPhgaZbcvw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -833,7 +1555,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YTvyLqM1OLG0qiNQVHgAcXCuZMU=
+			LHAnPg7pVgKh31xmAv9xTsxBlkg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOV3w9+OmlUlsYSUCZrZ4dBlAS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -842,7 +1573,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ny22AlDJoxf2FnOfwTNrT5Oec60=
+			3oEhAoJEA9N6NglronauEFPxKaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g6Y0S7AN1XHAxB+w0z7UbKpWM4c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jH77iyJTbYnadLx/guTKZ35wWBs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -860,7 +1609,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n0yVb2CQxMWEkTvwCMokrqUrTQg=
+			tcx6p34slDskeyVgILf0ggFNdUw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XvR8Kuf+VtDstxWEqN9o8dIO3V8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -869,7 +1627,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1XkvenbiEhr1U7d1VyW7HF1QALo=
+			7KmppWcyGMcMphwOW6jYa126v98=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c0OFEsGt9Wzi1g+iOjxKjd+HqMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qhjjM5JKZWCxHzDOqZ8Zt2DPY2g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -887,7 +1663,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dGPY+0AFp0RTc5zY3lKFQRlGazU=
+			covX5RBl18gWyu8AZytAhUa0d4E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N6KGa7rG2a3rB6vj+WuhKD0DhdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -896,7 +1681,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TVTHtOCAdG/fWdIqrrX9keNiOCA=
+			FnYORo7EEY8jagaC4uWWd9Io0b0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uF6Uy+LKfruuBbUUCai4Wydu4V4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iQeLHR4Ia8nc0l9EAilOWaqedIM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -914,7 +1717,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jHwUYOSW/hDXYYGvq3QsqjIcq6g=
+			DWPQAEzIskDYP/dTZ4171eM/hMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ggjT0NHbmX1sCdcrvAAhd4PcYXY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -923,7 +1735,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			744XFG3f6EYhpBWX7wQoyAcOi1o=
+			lm8/JtVZD73OQmo7hAMrbexFY3c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R/SxFQcheZiSJCxt6O0HX/jR5Eo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sp4cCoz6aQb6IEyJa3Pg+Ooh02c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -941,7 +1771,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bH4t49X2Sqo7uNCPqDbJjlTidmM=
+			QtUBzX7b3EKE62mRE9XQmwfwnzw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XLkrJBompcXM2lOCdYJc6ixEFew=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -950,7 +1789,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SDjKwAV7C2BBtM3VgQEih3DWcWc=
+			j9dE+pQ5U7R/rjuy7ccPDi4dVzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WydxCVoRHpn/w+4RPzZw+LkUqkk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a7hVmr1bfrxhnlhJu0pbGyu2m1s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -968,7 +1825,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			POK+lSLRUNFD78OWs00rtmWqGN4=
+			OdzxSlUY/bfm+vlwktl7iJ1I1UI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EF/19TEsP7KBYBzwEjO03Oq44x0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -977,7 +1843,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mUbNwbxPYPXEaqaoOOEDes9cpW8=
+			l50kUZceC0amRZJUX4THdM46b+k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x7FOpV5/rC5THKOAdlgFJNzY/0E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A3oCIWHwDDx/KwSsDmf8BT8PdDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -995,7 +1879,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w/KdS0/8CZKpjLl3+I7XNDgYvJE=
+			oh28KHHvOG7qEsfzYy0x0TPfGg0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1zVgGopLLewRQMnwnp/um0nm4B8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1004,7 +1897,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eotRgSwwvwu14UzpzYoK1PjYvMU=
+			w1v0/4BbGsZu1f8RzUbxKePcpTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n5syReVbrTDO1cXLzr9/bftIvno=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c53RwmjqgBGgvvB0vw6HfLb+aAI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1022,7 +1933,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mBXADH6RG2QB7Yf0cXrCbaTs1IE=
+			t6tw9LfDeHdF50BuCgrbVX0N46k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tfIkuC+YClu2Z04aTSZIWH7c+iw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1031,7 +1951,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RrRyfkZvHpT4pPEym0p0AEURz0E=
+			S+nEG4tKfUMYpGIm+BWIQTd9i4c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMPFncQoBVwoTyRFQs3BsBeLq1I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dT/vvOfacnKXIchl2t43uF+Z4gM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1049,7 +1987,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Oez36Z+Kj9pJG9EeR8jP4zZj3Bk=
+			TR7Mo5be4J4CY/h78ln/lDPqYWA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XolzLZn3sv8Qm5KvuPq3WSlY5Wg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1058,7 +2005,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OIQx+2KUKDskyHAOgh3i2z00eT4=
+			cWmoxSgacIwBKoi3/mCUWAgzqr4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+P/+wp9RtYOcG8Kcde+FvJhYM2c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oLmf7RelukLnAELhven2RvL+G8k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1076,7 +2041,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dZamJkxPZTF8e3u/LWFq9lNj4k0=
+			Q72/sLZSIlyah7rGvFU5ZR6Dn8U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NjCXnxJ39i7ZqXsg5ERY5MIuap8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1085,7 +2059,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Iy+fUhn/yDW0KKs4eiS+1pvy1ds=
+			2cBJMUEcvsQwpiCTn1p/5NrRNoM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PSbn5cXF2sHvlySa1l1qHIoRvm8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vbrj2oihnzVnaJK/jp43hvxHCl4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1103,7 +2095,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1lXLsaOTZ6PKsA1EWLJIl2lGwls=
+			I9Ttsn/vlzsfd2bZvkKsoRE1F+M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L2mtTnC9OuUB2+wscUwKIkjt1t4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1112,7 +2113,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3T5QxCXy188OzghRshYzX4i7D+M=
+			ulhNrDeXSVopQOx9yAFqbh0pEcg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			slSnUYk85686n9/JDy0vd5ZtiY0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1jTkIbgbOOu1RX5Kq07rQwjRkzQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1130,7 +2149,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rbckreq9Bprt3kuShZeya3ULGJ8=
+			cDh7/27XtYwU0/Z/zX075SgJRnQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+7Pn0xNwzEfpbrH8EPJlN0PI8Cc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1139,7 +2167,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vn0BoTYUxP6J2wWP2Kihjo9KnaU=
+			SLIHF5gVHwdYjaBFus+2H0eK+Rc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2gQKYkAPiY2NHRRhz25se0Fvcp8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WJJcms07MnKvZu22Ba6sFCWmD/M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1157,7 +2203,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ve1FwhP3WjmaYAaNBhJN1TbNDtU=
+			3ywxU33fitlSUOAFngN4urausUs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1165,135 +2211,182 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CDA.xsd</key>
+		<data>
+		nOfsOHbxsKNVFsd2aCICOun4Kg4=
+		</data>
 		<key>Headers/HKActivitySummary.h</key>
 		<data>
 		F2WN9Yl2r+eJuyTIzERwNNW86pw=
 		</data>
 		<key>Headers/HKActivitySummaryQuery.h</key>
 		<data>
-		BnlJWAdAOdkQ/IdVPmBFsYezbBI=
+		gpRuUNdsWfjy6myhqMPUKT3NLnc=
 		</data>
 		<key>Headers/HKAnchoredObjectQuery.h</key>
 		<data>
-		YG6unv30WZi+ijrIOz1NxRu+ykY=
+		xa/ZNufzwzmPCPY58uxvWIHplw0=
+		</data>
+		<key>Headers/HKCDADocumentSample.h</key>
+		<data>
+		ja3QgRXziGj90spUY2PM5xiEqko=
 		</data>
 		<key>Headers/HKCategorySample.h</key>
 		<data>
-		cIhd87XZeKHZlV3Z4OFyt+m5n14=
+		s+imAmp5m/9I1FyBpMznm9pfrsM=
+		</data>
+		<key>Headers/HKCharacteristicObjects.h</key>
+		<data>
+		/kSd2sLIFsMXbLy19UAVzFLObT4=
 		</data>
 		<key>Headers/HKCorrelation.h</key>
 		<data>
-		JPJBN+jNaTgJXemxsy+cr3YnDtE=
+		AzwyHz7vVPn00qxp7m7te2O1HSM=
 		</data>
 		<key>Headers/HKCorrelationQuery.h</key>
 		<data>
-		gAwPjUsnrP8w56lmdbROvoFE3zc=
+		Su4t8Sy71YqtpnLAjjapNSML6aI=
 		</data>
 		<key>Headers/HKDefines.h</key>
 		<data>
-		ArklT54wYFxQTRnwcLm0d6mVY+c=
+		QMqNFeLqWrIst7+Fj3FpoL01iMI=
 		</data>
 		<key>Headers/HKDeletedObject.h</key>
 		<data>
-		gylQtDYY1nW53PhjtG/s1js98pY=
+		7yXu9kctQS3ksq6g0UJBoDIEx+0=
 		</data>
 		<key>Headers/HKDevice.h</key>
 		<data>
-		9tn9as/CR/V76vW15KGaQVTsnz4=
+		VGezGSlwMgid3QiDRxix7iwnemg=
+		</data>
+		<key>Headers/HKDocumentQuery.h</key>
+		<data>
+		SWHf+U2GHyIXzIRVPCeSK81Evx0=
+		</data>
+		<key>Headers/HKDocumentSample.h</key>
+		<data>
+		QK+UipRFKWbQGRi6DSrSnmMlRVo=
 		</data>
 		<key>Headers/HKHealthStore.h</key>
 		<data>
-		agnZzlpgTnqvY9oc+ZiloJ3xrbg=
+		HKIS+OIR17B9f9uQsdPtM8agyrM=
 		</data>
 		<key>Headers/HKMetadata.h</key>
 		<data>
-		/WRAynEXjsSoA96m44PNNojWriA=
+		TfOUKLsdKnaCYM3vMHYiuxoQ95U=
 		</data>
 		<key>Headers/HKObject.h</key>
 		<data>
-		vMziZ82CFQOR1MG3Ud9MnsZ4uCw=
+		t5T0P7VMSsfUJrcvY1lsGrBZdkw=
 		</data>
 		<key>Headers/HKObjectType.h</key>
 		<data>
-		zNDZPFN14Z1aopM/9M/OvDdXoKo=
+		TQtiST4JM8vG6mFUu327BVrwB9k=
 		</data>
 		<key>Headers/HKObserverQuery.h</key>
 		<data>
-		pgGaeiDIA+tImfBZ4QarM9FfNX8=
+		ZX7D2kckfYQx4v6gPo13t7VGaSc=
 		</data>
 		<key>Headers/HKQuantity.h</key>
 		<data>
-		KCiKLFCktXfmVqzCDal9/7KSqOQ=
+		+aUCIENCA5RBfMo0F5Ha8fJH/hA=
 		</data>
 		<key>Headers/HKQuantitySample.h</key>
 		<data>
-		nnfkdFJm3RoxtOQ/FNH9He0HFos=
+		MOMLgeb+osTSFfg+93Oa9W/B2uM=
 		</data>
 		<key>Headers/HKQuery.h</key>
 		<data>
-		4dlvGqAin5nhT3GIks070VQNrFM=
+		a9CR16+zFtGRMJm2EF9IKK6UGhA=
 		</data>
 		<key>Headers/HKSample.h</key>
 		<data>
-		dCdsf5o8yhvKqD/9aRDcdUDQVs4=
+		zb4POc9jh3g5n1sp/OEg3Vgq3bc=
 		</data>
 		<key>Headers/HKSampleQuery.h</key>
 		<data>
-		ESi33GxzG2W70H2N1NOIFs/lU3o=
+		WQG8aGSgSGQcblccf2BHWFBG+RQ=
 		</data>
 		<key>Headers/HKSource.h</key>
 		<data>
-		lLC5CLg35lKgt6jR8Pujr3HWUoE=
+		OsxhcjKqHUym2Xg6ZlgBa6T2K20=
 		</data>
 		<key>Headers/HKSourceQuery.h</key>
 		<data>
-		gxEkStolwU+4uvHx2DqMZ6KHW/0=
+		6x+9kXmj/rCzpCM7OC0EbPpNU20=
 		</data>
 		<key>Headers/HKSourceRevision.h</key>
 		<data>
-		U/BdsHvWkyXyG7bAqp/oh0VEFPM=
+		O5YtR+MlivEM+dJ4a5Fjk7/CtFk=
 		</data>
 		<key>Headers/HKStatistics.h</key>
 		<data>
-		vVlRER6bxStuqTJOwvMq0VU44kU=
+		XtDYg1uIPiKX3AIppNwpvQ6BXpc=
 		</data>
 		<key>Headers/HKStatisticsCollectionQuery.h</key>
 		<data>
-		bSKUeVvoprP+wo8FRWQyx4Qudj4=
+		at29HRqmlBnzn9EPHQvfC6ChdhY=
 		</data>
 		<key>Headers/HKStatisticsQuery.h</key>
 		<data>
-		6hDMGmDxe/Y/xZAQQUFgOjjB7pU=
+		jJMSB7+av6LkrMQb7rsgoSpbOoo=
 		</data>
 		<key>Headers/HKTypeIdentifiers.h</key>
 		<data>
-		rKzMnYTuCvr9X5Ggo/WtSorIZf8=
+		BUy5Dfke8cNrFSR4u0BrUdpju3I=
 		</data>
 		<key>Headers/HKUnit.h</key>
 		<data>
-		aYC6aO6ISoo0Nb0ZP9J71b9TjNk=
+		Or4Cesq54/3pMCI9U/xfLUnNmo4=
 		</data>
 		<key>Headers/HKWorkout.h</key>
 		<data>
-		+uYRNRCeEawOtvHHb3FQhM+oGSU=
+		9d83cTX1FgZKIqIe6LZiq5p22gg=
 		</data>
 		<key>Headers/HKWorkoutSession.h</key>
 		<data>
-		WL2EuGnXpVRD7UaRa3yZgxRI5GU=
+		inLlfVa97VyNwQOpIixwkhRDePA=
 		</data>
 		<key>Headers/HealthKit.h</key>
 		<data>
-		ADtqfWuEQpz4QydBXrWbcoAZa8o=
+		mtIZXElb9n+1deZofxvsErdClHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		t8CvPJRCJD88o+S2fwJX3RYjO4A=
 		</data>
+		<key>ar.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9C0TBXlLvQNKIjNlnokrpeXG8Qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Achievements.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VO3cb7LALG3W07PCDal/2wS6woY=
+			RbzkroIE9cRySAFjEmrYKk9Q8pM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5d9soDnaKSAXVeg29ObK9idTFDE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1OCjg1H50VrrnzCyxng5TLzfPqE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1311,7 +2404,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NHVnZWRkf6PS1JDVecjwVGmhl5g=
+			1AIz8q28c4QGj/v/vxVKus2GRPA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hljLXd/tKtoLiRIw4B6O4rnPPNg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1320,7 +2422,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4twfIBB04KYF9fZzuT3oaD7XBr4=
+			N83dL2jh5HdtPZxjCwss+78xm34=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ejM6C/kMOUf73oxood6oijwOpaM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7Hrln3yds//l/ERnA9FA5U5IvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1338,7 +2458,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0fa3/Sw/Zym8D5E3/1h+N3aT83E=
+			HVBDhqNE2b8imTjgLcdBCRhdIGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6/b//i1ovSTdmWCfLBwbVis3rRs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1347,7 +2476,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pFaU9lObrOBj1dNl89139y1XbUI=
+			iKHw3dVfVSI1FsAsScXEl/H8o74=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KDTErjffLxtMuLrqjOzZrqYrtYc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BqWKV971zXbX962Wqzx2ToLraSQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1365,7 +2512,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LaP1bBNgOtks3Lp9iBvrzoWhUTY=
+			ftq2/+yrIpGB+2mpZ3lgwPyLTHc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5253XAjEs5HhRDITF3FsskTxpNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1374,7 +2530,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			orFS3A2rRCU1lE9NXdEIsCEBchY=
+			mwkHRiSt3HUNwiDjE57kdhcyzg4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZWvxkw+TYQW3MC0rOxWJqYY7zC8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LeQNPvup5CckEzDO5kqcj+mP8NU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1392,7 +2566,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UaSrsRGKDOIvNbrX76Fu824ok9Q=
+			+FGCsSdNl1spM7IXb01+YI1LDA0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1DIJg21Lw8prwUagqP0mopLZ7Qs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1401,7 +2584,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wImP7bxuefH/D6wKH4v+5ohWnq8=
+			otPImgQvicjNL+OeYjWW9teWQe8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u63AnF2vNlPLN6EZfoi3q1Wyqlg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			knBEv4TTLXM8W/FpfAxDO1eZ5Yk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1419,7 +2620,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			scCMCa3PzUeLM9773KcmWDVOoDQ=
+			EmLpQc0qt83lhHOkeHM3b9pSsow=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aiiYpn9r2V26MBJS6Kff25XoQIU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1428,7 +2638,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KK5RbWul+0qikmf/S9X5rVIQz3k=
+			xTys9Q2k7mDrxmnVIkAbIQ9IqqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1AbXbFD3cTFQ/ugnEGlzpFax+w0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zbUXrWJfsiuB8o1sXXsMvSYy7Ug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1446,7 +2674,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NtY3iWsabzbxZ00pHDX/E/DTM7I=
+			yDHhTr3Wi0vppxFgw9ClS9a27Vs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyVNA4Gsv2xuhl29Cp+vYdQyWQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1455,7 +2692,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VtuYpmCfS7G9VoXlpEOcjgXOXqQ=
+			rikR1eLpC4Icqi7pSgmuPZoKMeo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z5D3uUPJt+iC0IHA/mawN+WDpMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4jvGKgs2wLfd/NRsu8Qbux3T4wE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1473,7 +2728,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQav+p4vFlbq7BPIoqSI9iwyaD4=
+			AoyqcjEIHtpaNziXzHKgZ0JOXqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9rxwu71k2zH3MDUxamZAR/yDM7w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1482,7 +2746,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f5LGFS60JzZOSnLk1Og2kbDjl/0=
+			8SMDTqLIWIir+440irxdski+Pdo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nIqmstLbaAVwM7oWSasjQ9p5jM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fuwM3WdVH9YYq0AlkGXucMSbJWA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1500,7 +2782,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQav+p4vFlbq7BPIoqSI9iwyaD4=
+			AoyqcjEIHtpaNziXzHKgZ0JOXqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H6ERPoX9beNbvGKpGwnCJGheYf0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1509,7 +2800,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ed/9Ka+Y9P+4UzgeNPqBaPh4nPI=
+			dA2rbIvSxZMILpvbRlBsMXwABIc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nIqmstLbaAVwM7oWSasjQ9p5jM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nbn7KCzPX1wiuf7LC7kR4hcMeEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1527,7 +2836,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WQav+p4vFlbq7BPIoqSI9iwyaD4=
+			AoyqcjEIHtpaNziXzHKgZ0JOXqI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KlDGzE+fuOEXvO3WskZKWcdLphM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1536,7 +2854,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			367PuXaAd1bB+XyhmalcicsmpJ0=
+			v+XL75Ad1aKwIkWz8Xj0kAAexoY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YDlg+DwpCyh2yCIwnT8dx5apwps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8aYxjEq9751Cj4zPVwVdahnXTF8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1554,7 +2890,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9PVGPVwudUlI8NW+yZr6mJdBP0Q=
+			b6lLzNuVzCEBqw5fkmoyNWSiyO8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qK7Jjfm5yPkU5pm5cfGLQzw8oNQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1563,7 +2908,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eZ2mjNFwbnwBH0nmRUeV5AAyG0o=
+			Tn7X+PASW0zLL6oosuuwL+ZVXnI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gua5rU5kdgv6/9Ei1xm3JUpRQWA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SWBC/cMCghY/i4TK1jOqbA6a780=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1581,7 +2944,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vamCu/PFVsqvTqHY2vVInXlauso=
+			UnsGkveB042pWrKJrphRTaFHLtU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zk0SCdN6c77kR/1WpxMSfSGyRiM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1590,7 +2962,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S+7rZ8HiEwqOvlv6n2QW5c62xtI=
+			lt0ADjQ6jr+RRYS9MQSC/4ADNiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+Jv3fjf23/HXxT5ANBNmrnSd1os=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g9MH+sXfrKYPF4/YuYrrN95+Slg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1608,7 +2998,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mP4dONrYgmruWI5ExATQ1LESpZA=
+			Jm8W12H5O7aizPfdfqZDQQDsY4g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wn0+vmiv6gxI0B239SEX62jBvHs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1617,7 +3016,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m7UljcqI7t3cCpARs22F14DzFps=
+			8kGSltyfmvsq2/QBy93dYym+HIo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lCjOPmAS+PLLmg1C+ljFkzpgWEQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nSzUR0jLOzQ6S3AGcX1nhUOeG3M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1635,7 +3052,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8YN7eWs8h08ezojTaou2ZLlJyCo=
+			5LbF0GlWRxMxh7QTRc445z+d5Ok=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J50NHKeffyp4LaLdoDFF455NFBI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1644,7 +3070,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uXF6jlU/8T2q1kTEeBqYmrAVJis=
+			qwI/I07PO+trxThywTHxWp1zNBg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p4tnCGTrw8DVe2+2P5SsALaOqBE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ADlQW5vepADtJA4OOGr4/8cKcTc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1662,20 +3106,47 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4vStgPzdvc/DufFYUnpM2mu+434=
+			/i6XcpE9DwCw6WK/l4+V5k5iaPM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>healthd</key>
 		<data>
-		iKEJE0RNcg49jVDP8vdznEXmXQU=
+		ob8ujYsXB9P16meAp6qfHZoZvow=
 		</data>
+		<key>hi.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sCLmrUkkHSfKuz0oHN4A10p2Tfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/Achievements.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6zy4SLRWSkcY8SwdMBd3BgHJoGk=
+			r2TxxbZMb2+z19c84WtSRZpu+MI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ldePyTN15aPVzmGzcunTRP0MwOw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MPxgbAwyfwjYS2kaTJFD/szvcOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1693,7 +3164,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/YuFhirSrKwo6i6ih24Q3B/2Kgo=
+			cxDgmiaBrkha0nhfPoK782oWGyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ogT8J0UIsVjAAs8Fbps933geFqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1702,7 +3182,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yg9QYEk6xDvjEY08zXckCBlfMNA=
+			h44IFvL38Eh7bMoscYGgDbAiNWU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bTacsj/MU1oe9SSlPSjOv7QOf6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S39Mbo7zHNk0CFJJwREcGfUS6Ac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1720,7 +3218,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lnISX6JMnkpsqrgHrXJS65VzqWo=
+			6RqIu30TSMpGfhDBlGgurtbp8mg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V19ZUDQwCMgx0YL1L5L9CS7oT2U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1729,7 +3236,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c6dsRBc/zjaKJUBLER2AfeePn+s=
+			jAs9UnSOlEH4HgsiboNXXzdtvdY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QpE4HpaBxoWMFD6vqlsh2+sOws0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tAd+jazagmigem/1CJvi3aUeRIw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1747,7 +3272,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TBVI6cEIXnbQ6z5hmovcY9L4jxY=
+			exP2mrDMzshRCW4Ukst3G82LY8o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EwrzOeRUnVQbYM3a4GZMxj8ikcE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1756,7 +3290,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4wp51Mtes/gFQEVYJIiT0UeTVQc=
+			7zmKxjxNuIwPqizJPCFieq+n2jg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUclG1iaF1gXUvbKYUkDEbf8kp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D4l1glRFryDuZ2Gpm+MX+1ROmHA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1774,7 +3326,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			shFQ+jMup/hmJoy2WlkpTjtRoYg=
+			jCq28+m1v1N2ChrI9aTd49Sk3LE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W6Ow92nxxINJdtg/pbGmLktInfU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1783,7 +3344,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hmm8Is6CzS4BJQ5vcNUPqDtTICE=
+			4jSuqg8PpVSWsseD/5Ge1Cjmr+0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/BkEberNmkTwRdADLX8xotbtB9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CGBfzLojdW5nXlgkb5HM5el/2kQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1801,7 +3380,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TuF8UNlqDYR6gDb/8e4vPGoQCoA=
+			K76mV7qMhhjatr225ZOdjGs6FRo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wZJB172OQ79lSSQz95ZKQU9uWNY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1810,7 +3398,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YakghogKBsnk6021O2Hn85pJwkw=
+			O0SnoSbqLt89+VsmKLIqm0bxzpM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8OwSEjwupCt844OlhOJe1CVgAQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qtnVRjUyNBeyUPFvC/F0zpQSqzQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1828,7 +3434,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fNugmgHpg/Jrabci1QoCek8FPes=
+			fa6C0n27Vds0e5BV9CKuITOPlDc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SvljCrTeA5B1A7YI5E4v07FvrTw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1837,7 +3452,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hs2y2la16yOmxs+tAwnEsfQzK5E=
+			ntRf/OUQv7hJMmXtcE8gY5tOxx0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7MDs0Q7I/qcCdNPkFafSRGNyOSk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2GkpUuswPt45G85YB8Cbf14/IHU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1855,7 +3488,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UWCARmnudoH4baNwPTc9aNaqWXM=
+			D+2lzxJMzEfEXX06uwuwuDEdP/U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AkdD347CAiMMrGC9CxlZVfCiVSA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1864,7 +3506,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+oYNPEiUtRhKUEtfx6Z6oxOkrYw=
+			0fk61ks1GCaC4vQ44fZ9ejcqRwE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qOFgAmRde4uHauE8evh6qJAoito=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3JozQiWxjHwBrNDXHsRtFeaoyfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1882,7 +3542,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iiwSmZ/MaMxAZQx86hWsj95Q33Y=
+			cqZfKyA8djK739sfkdvoaAcf5Ag=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nl1h67w9UR+oUbLniZROaHOrUAU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1891,7 +3560,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gddMrf3AQOkTj4hlEi+4DBe9Cv4=
+			nhOPE4s1/A+K6Or6u8Cy6ZBhnlg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rCIExM3oxTUN70Sd+uu8/g0wKds=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q1JOcBuhEWtRTg1jQEEzudPAkz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1909,7 +3596,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ucdyYYUq5CsyeFuAghuREKm8Jns=
+			DnVejkdY7G4xSUyXFzFICpibz2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UXzKcr5t7ZoKUGpZrsl3hYrCtBA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1918,7 +3614,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VKXRQ5RtVC1TTTlQD9P7e6xcb7s=
+			EWnau+46f/HmjwvSMva0rLdRHHc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2YXf6uStbHE3W0SjRWTmEGLQ+SM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsHgUBS3tZQPjEcWMt3YbhfEKF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1936,7 +3650,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sMcJ4MlN57i22sfYH/4v3Ffzkf4=
+			nnArplONeXVhcdoqR6vvFEjv0ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i/Xf+EGIu9PRXItmQ+cZf8WlftE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1945,7 +3668,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+s0oluMOGXhADVVYwSGUv9rlG/I=
+			rNWdD5anHP2zvDt4WNDd8WVrGIs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			26oA86JUmxO0K8HcBi5WMw2Z/lY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hkD5frxTYw8Og/kqJzLim0h1LMs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1963,7 +3704,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rB5wKB9MhTBqqk+8po8dwzZp9aY=
+			MnWefgA5AAUfF17PeMbPI3IY02Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QkEaqv7dIiJVsmWcU6O8+ldggaY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1972,7 +3722,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FEHfCDqlIh/o5ZI7Ii/4KJhhrDk=
+			0lPPPqqEZ3/hgYsCNlPurndaaTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jl86RjtOyRfeTqYg0XPTklpuCcw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5NIvSqqF2hPpiKCfbHPhgaZbcvw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1990,7 +3758,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YTvyLqM1OLG0qiNQVHgAcXCuZMU=
+			LHAnPg7pVgKh31xmAv9xTsxBlkg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOV3w9+OmlUlsYSUCZrZ4dBlAS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1999,7 +3776,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ny22AlDJoxf2FnOfwTNrT5Oec60=
+			3oEhAoJEA9N6NglronauEFPxKaQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g6Y0S7AN1XHAxB+w0z7UbKpWM4c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jH77iyJTbYnadLx/guTKZ35wWBs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2017,7 +3812,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n0yVb2CQxMWEkTvwCMokrqUrTQg=
+			tcx6p34slDskeyVgILf0ggFNdUw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XvR8Kuf+VtDstxWEqN9o8dIO3V8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2026,7 +3830,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1XkvenbiEhr1U7d1VyW7HF1QALo=
+			7KmppWcyGMcMphwOW6jYa126v98=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c0OFEsGt9Wzi1g+iOjxKjd+HqMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qhjjM5JKZWCxHzDOqZ8Zt2DPY2g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2044,7 +3866,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dGPY+0AFp0RTc5zY3lKFQRlGazU=
+			covX5RBl18gWyu8AZytAhUa0d4E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N6KGa7rG2a3rB6vj+WuhKD0DhdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2053,7 +3884,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TVTHtOCAdG/fWdIqrrX9keNiOCA=
+			FnYORo7EEY8jagaC4uWWd9Io0b0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uF6Uy+LKfruuBbUUCai4Wydu4V4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iQeLHR4Ia8nc0l9EAilOWaqedIM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2071,7 +3920,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jHwUYOSW/hDXYYGvq3QsqjIcq6g=
+			DWPQAEzIskDYP/dTZ4171eM/hMU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ggjT0NHbmX1sCdcrvAAhd4PcYXY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2080,7 +3938,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			744XFG3f6EYhpBWX7wQoyAcOi1o=
+			lm8/JtVZD73OQmo7hAMrbexFY3c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R/SxFQcheZiSJCxt6O0HX/jR5Eo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sp4cCoz6aQb6IEyJa3Pg+Ooh02c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2098,7 +3974,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bH4t49X2Sqo7uNCPqDbJjlTidmM=
+			QtUBzX7b3EKE62mRE9XQmwfwnzw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XLkrJBompcXM2lOCdYJc6ixEFew=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2107,7 +3992,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SDjKwAV7C2BBtM3VgQEih3DWcWc=
+			j9dE+pQ5U7R/rjuy7ccPDi4dVzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WydxCVoRHpn/w+4RPzZw+LkUqkk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a7hVmr1bfrxhnlhJu0pbGyu2m1s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2125,7 +4028,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			POK+lSLRUNFD78OWs00rtmWqGN4=
+			OdzxSlUY/bfm+vlwktl7iJ1I1UI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EF/19TEsP7KBYBzwEjO03Oq44x0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2134,7 +4046,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mUbNwbxPYPXEaqaoOOEDes9cpW8=
+			l50kUZceC0amRZJUX4THdM46b+k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x7FOpV5/rC5THKOAdlgFJNzY/0E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A3oCIWHwDDx/KwSsDmf8BT8PdDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2152,7 +4082,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w/KdS0/8CZKpjLl3+I7XNDgYvJE=
+			oh28KHHvOG7qEsfzYy0x0TPfGg0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1zVgGopLLewRQMnwnp/um0nm4B8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2161,7 +4100,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eotRgSwwvwu14UzpzYoK1PjYvMU=
+			w1v0/4BbGsZu1f8RzUbxKePcpTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n5syReVbrTDO1cXLzr9/bftIvno=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c53RwmjqgBGgvvB0vw6HfLb+aAI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2179,7 +4136,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mBXADH6RG2QB7Yf0cXrCbaTs1IE=
+			t6tw9LfDeHdF50BuCgrbVX0N46k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tfIkuC+YClu2Z04aTSZIWH7c+iw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2188,7 +4154,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RrRyfkZvHpT4pPEym0p0AEURz0E=
+			S+nEG4tKfUMYpGIm+BWIQTd9i4c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMPFncQoBVwoTyRFQs3BsBeLq1I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dT/vvOfacnKXIchl2t43uF+Z4gM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2206,7 +4190,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Oez36Z+Kj9pJG9EeR8jP4zZj3Bk=
+			TR7Mo5be4J4CY/h78ln/lDPqYWA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XolzLZn3sv8Qm5KvuPq3WSlY5Wg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2215,7 +4208,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OIQx+2KUKDskyHAOgh3i2z00eT4=
+			cWmoxSgacIwBKoi3/mCUWAgzqr4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+P/+wp9RtYOcG8Kcde+FvJhYM2c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oLmf7RelukLnAELhven2RvL+G8k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2233,7 +4244,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dZamJkxPZTF8e3u/LWFq9lNj4k0=
+			Q72/sLZSIlyah7rGvFU5ZR6Dn8U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NjCXnxJ39i7ZqXsg5ERY5MIuap8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2242,7 +4262,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Iy+fUhn/yDW0KKs4eiS+1pvy1ds=
+			2cBJMUEcvsQwpiCTn1p/5NrRNoM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PSbn5cXF2sHvlySa1l1qHIoRvm8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vbrj2oihnzVnaJK/jp43hvxHCl4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2260,7 +4298,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1lXLsaOTZ6PKsA1EWLJIl2lGwls=
+			I9Ttsn/vlzsfd2bZvkKsoRE1F+M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L2mtTnC9OuUB2+wscUwKIkjt1t4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2269,7 +4316,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3T5QxCXy188OzghRshYzX4i7D+M=
+			ulhNrDeXSVopQOx9yAFqbh0pEcg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			slSnUYk85686n9/JDy0vd5ZtiY0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1jTkIbgbOOu1RX5Kq07rQwjRkzQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2287,7 +4352,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rbckreq9Bprt3kuShZeya3ULGJ8=
+			cDh7/27XtYwU0/Z/zX075SgJRnQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Achievements-Ariel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+7Pn0xNwzEfpbrH8EPJlN0PI8Cc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2296,7 +4370,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vn0BoTYUxP6J2wWP2Kihjo9KnaU=
+			SLIHF5gVHwdYjaBFus+2H0eK+Rc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Achievements.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2gQKYkAPiY2NHRRhz25se0Fvcp8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/CDA.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WJJcms07MnKvZu22Ba6sFCWmD/M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2314,7 +4406,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ve1FwhP3WjmaYAaNBhJN1TbNDtU=
+			3ywxU33fitlSUOAFngN4urausUs=
 			</data>
 			<key>optional</key>
 			<true/>

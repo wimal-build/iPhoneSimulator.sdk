@@ -1,0 +1,9 @@
+(if (entitlement "com.apple.private.contactsui")
+    (begin
+        (allow mach-lookup (global-name "com.apple.icloud.fmfd"))
+        (allow mach-lookup (global-name "com.apple.imdpersistence.IMDPersistenceAgent"))
+        (allow mach-lookup (global-name "com.apple.telephonyutilities.callservicesdaemon.callprovidermanager"))
+        (allow file-read* (home-subpath "/Library/Mail"))
+        (allow mach-lookup (global-name "com.apple.corerecents.recentsd"))
+    )
+)

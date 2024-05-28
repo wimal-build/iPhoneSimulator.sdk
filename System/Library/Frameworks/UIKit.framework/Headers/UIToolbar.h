@@ -20,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIToolbar : UIView <UIBarPositioning>
 
-@property(nonatomic) UIBarStyle barStyle __TVOS_PROHIBITED; // default is UIBarStyleDefault (blue)
-@property(nullable,nonatomic,copy) NSArray<UIBarButtonItem *> *items; // get/set visible UIBarButtonItem. default is nil. changes not animated. shown in order
+@property(nonatomic) UIBarStyle barStyle UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED; // default is UIBarStyleDefault (blue)
+@property(nullable, nonatomic, copy) NSArray<UIBarButtonItem *> *items; // get/set visible UIBarButtonItem. default is nil. changes not animated. shown in order
 
 /*
  New behavior on iOS 7.
@@ -44,8 +44,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIToolbar : UIView <UIB
  and behaves as described for the tintColor property added to UIView.
  To tint the bar's background, please use -barTintColor.
  */
-@property(null_resettable, nonatomic,strong) UIColor *tintColor;
-@property(nullable, nonatomic,strong) UIColor *barTintColor NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;  // default is nil
+@property(null_resettable, nonatomic, strong) UIColor *tintColor;
+@property(nullable, nonatomic, strong) UIColor *barTintColor NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;  // default is nil
 
 /* Use these methods to set and access custom background images for toolbars.
       Default is nil. When non-nil the image will be used instead of the system image for toolbars in the
@@ -65,7 +65,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIToolbar : UIView <UIB
 - (void)setShadowImage:(nullable UIImage *)shadowImage forToolbarPosition:(UIBarPosition)topOrBottom NS_AVAILABLE_IOS(6_0) UI_APPEARANCE_SELECTOR;
 - (nullable UIImage *)shadowImageForToolbarPosition:(UIBarPosition)topOrBottom NS_AVAILABLE_IOS(6_0) UI_APPEARANCE_SELECTOR;
 
-@property(nullable, nonatomic,assign) id<UIToolbarDelegate> delegate NS_AVAILABLE_IOS(7_0); // You may not set the delegate when the toolbar is managed by a UINavigationController.
+@property(nullable, nonatomic, weak) id<UIToolbarDelegate> delegate NS_AVAILABLE_IOS(7_0); // You may not set the delegate when the toolbar is managed by a UINavigationController.
 @end
 
 __TVOS_PROHIBITED

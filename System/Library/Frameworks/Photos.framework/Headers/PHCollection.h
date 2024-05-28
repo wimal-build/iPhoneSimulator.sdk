@@ -8,13 +8,14 @@
 #import <Photos/PHObject.h>
 #import <Photos/PHFetchResult.h>
 #import <Photos/PhotosTypes.h>
+#import <Photos/PhotosDefines.h>
 
 @class PHAsset, PHCollectionList, PHFetchResult, PHFetchOptions;
 @class CLLocation;
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollection : PHObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollection : PHObject
 
 @property (nonatomic, assign, readonly) BOOL canContainAssets;
 @property (nonatomic, assign, readonly) BOOL canContainCollections;
@@ -33,7 +34,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollection : PHObject
 @end
 
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetCollection : PHCollection
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetCollection : PHCollection
 
 @property (nonatomic, assign, readonly) PHAssetCollectionType assetCollectionType;
 @property (nonatomic, assign, readonly) PHAssetCollectionSubtype assetCollectionSubtype;
@@ -50,7 +51,10 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetCollection : PHCollection
 
 #pragma mark - Fetching asset collections
 
+// Fetch asset collections of a single type matching the provided local identifiers (type is inferred from the local identifiers)
 + (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options;
+
+// Fetch asset collections of a single type and subtype provided (use PHAssetCollectionSubtypeAny to match all subtypes)
 + (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsWithType:(PHAssetCollectionType)type subtype:(PHAssetCollectionSubtype)subtype options:(nullable PHFetchOptions *)options;
 
 // Smart Albums are not supported, only Albums and Moments
@@ -76,7 +80,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetCollection : PHCollection
 @end
 
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionList : PHCollection
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionList : PHCollection
 
 @property (nonatomic, assign, readonly) PHCollectionListType collectionListType;
 @property (nonatomic, assign, readonly) PHCollectionListSubtype collectionListSubtype;
@@ -92,7 +96,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionList : PHCollection
 // A PHAssetCollectionTypeMoment will be contained by a PHCollectionListSubtypeMomentListCluster and a PHCollectionListSubtypeMomentListYear
 // Non-moment PHAssetCollections will only be contained by a single collection list
 + (PHFetchResult<PHCollectionList *> *)fetchCollectionListsContainingCollection:(PHCollection *)collection options:(nullable PHFetchOptions *)options;
+
+// Fetch collection lists of a single type matching the provided local identifiers (type is inferred from the local identifiers)
 + (PHFetchResult<PHCollectionList *> *)fetchCollectionListsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options;
+
+// Fetch asset collections of a single type and subtype provided (use PHCollectionListSubtypeAny to match all subtypes)
 + (PHFetchResult<PHCollectionList *> *)fetchCollectionListsWithType:(PHCollectionListType)collectionListType subtype:(PHCollectionListSubtype)subtype options:(nullable PHFetchOptions *)options;
 
 

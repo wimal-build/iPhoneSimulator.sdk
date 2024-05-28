@@ -1,0 +1,348 @@
+{
+	"events": [{
+		"dateRules": [{
+			"day": 31,
+			"month": 12
+		}],
+		"name": "New Year’s Eve",
+		"traits": {
+			"locationTrait": 7,
+			"peopleCountRange": "{1, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType": 1,
+			"categories": [
+				"urban",
+				"restaurant",
+				"nightlife",
+				"entertainment",
+				"urban",
+				"wine_bottle",
+				"beer_bottle"
+			]
+		},
+		"uuid": "AA0068EF-D57C-4113-B4C8-9C1F6FE13950"
+	}, {
+		"dateRules": [{
+			"offsetDays": -1,
+			"relativeToRule": "0D281965-1492-4AF5-9A1D-47E42B1B4C1D"
+		}],
+		"name": "Midsummer Eve",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 1,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "86BCCA9A-2F67-430F-A515-76E15769B7BA"
+	}, {
+		"dateRules": [
+			{
+			"day": 24,
+			"month": 6,
+			"year": 2000
+		}, {
+			"day": 23,
+			"month": 6,
+			"year": 2001
+		}, {
+			"day": 22,
+			"month": 6,
+			"year": 2002
+		}, {
+			"day": 21,
+			"month": 6,
+			"year": 2003
+		}, {
+			"day": 26,
+			"month": 6,
+			"year": 2004
+		}, {
+			"day": 25,
+			"month": 6,
+			"year": 2005
+		}, {
+			"day": 24,
+			"month": 6,
+			"year": 2006
+		}, {
+			"day": 23,
+			"month": 6,
+			"year": 2007
+		}, {
+			"day": 21,
+			"month": 6,
+			"year": 2008
+		}, {
+			"day": 20,
+			"month": 6,
+			"year": 2009
+		}, {
+			"day": 26,
+			"month": 6,
+			"year": 2010
+		}, {
+			"day": 25,
+			"month": 6,
+			"year": 2011
+		}, {
+			"day": 23,
+			"month": 6,
+			"year": 2012
+		}, {
+			"day": 22,
+			"month": 6,
+			"year": 2013
+		}, {
+			"day": 21,
+			"month": 6,
+			"year": 2014
+		}, {
+			"day": 20,
+			"month": 6,
+			"year": 2015
+		}, {
+			"day": 25,
+			"month": 6,
+			"year": 2016
+		}, {
+			"day": 24,
+			"month": 6,
+			"year": 2017
+		}, {
+			"day": 23,
+			"month": 6,
+			"year": 2018
+		}, {
+			"day": 22,
+			"month": 6,
+			"year": 2019
+		}, {
+			"day": 20,
+			"month": 6,
+			"year": 2020
+		}, {
+			"day": 26,
+			"month": 6,
+			"year": 2021
+		}, {
+			"day": 25,
+			"month": 6,
+			"year": 2022
+		}, {
+			"day": 24,
+			"month": 6,
+			"year": 2023
+		}
+	],
+		"name": "Midsummer Day",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "0D281965-1492-4AF5-9A1D-47E42B1B4C1D"
+	}, {
+		"dateRules": [{
+			"day": 14,
+			"month": 2
+		}],
+		"name": "Valentine’s Day",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{1, 2}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType": 1,
+			"categories": [
+				"restaurant",
+				"nightlife",
+				"entertainment"
+			]
+		},
+		"uuid": "1F3B65C3-C056-4E9C-A287-587123E67855"
+	}, {
+		"dateRules": [{
+			"month": 11,
+			"weekday": 1,
+			"weekdayOrdinal": 2
+		}],
+		"name": "Father’s Day",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "9BEEB4EE-2B0E-4775-ACE6-16FFD2E58156"
+	}, {
+		"dateRules": [{
+			"day": 30,
+			"month": 4
+		}],
+		"name": "Walpurgis Night",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "340FDBB9-8074-4890-8FA6-6315B9D6FE22"
+	}, {
+		"dateRules": [{
+			"day": 4,
+			"month": 4,
+			"year": 2010
+		}, {
+			"day": 24,
+			"month": 4,
+			"year": 2011
+		}, {
+			"day": 8,
+			"month": 4,
+			"year": 2012
+		}, {
+			"day": 31,
+			"month": 3,
+			"year": 2013
+		}, {
+			"day": 20,
+			"month": 4,
+			"year": 2014
+		}, {
+			"day": 5,
+			"month": 4,
+			"year": 2015
+		}, {
+			"day": 27,
+			"month": 3,
+			"year": 2016
+		}, {
+			"day": 16,
+			"month": 4,
+			"year": 2017
+		}, {
+			"day": 1,
+			"month": 4,
+			"year": 2018
+		}, {
+			"day": 21,
+			"month": 4,
+			"year": 2019
+		}, {
+			"day": 12,
+			"month": 4,
+			"year": 2020
+		}],
+		"name": "Easter Sunday",
+		"traits": {
+			"locationTrait": 3,
+			"peopleCountRange": "{0, 5}",
+			"peopleTrait": 3,
+			"mustContainMe": false,
+			"eventType": 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "B02EDC44-2459-46D2-9BB6-FEE78F12E215"
+	}, {
+		"dateRules": [{
+			"day": 5,
+			"month": 11
+		}],
+		"name": "All Saint’s Day",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "7FCF0F37-C5A3-4755-A243-0E3A23D3C7B6"
+	}, {
+		"dateRules": [{
+			"day": 25,
+			"month": 12
+		}],
+		"name": "Christmas Day",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType": 1,
+			"categories": [
+				"tree",
+				"food",
+				"snow",
+				"living_room",
+				"fire",
+				"candle"
+			]
+		},
+		"uuid": "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+	}, {
+		"dateRules": [{
+			"day": 1,
+			"month": 5
+		}],
+		"name": "May Day",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 7,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+
+			]
+		},
+		"uuid": "AD7059ED-8EF3-44F4-946C-8E5C0226194A"
+	}, {
+		"dateRules": [{
+			"day": 31,
+			"month": 10
+		}],
+		"name": "Halloween",
+		"traits": {
+			"locationTrait": 0,
+			"peopleCountRange": "{0, 10}",
+			"peopleTrait": 31,
+			"mustContainMe": false,
+			"eventType" : 1,
+			"categories": [
+				"urban",
+				"nightlife",
+				"culture",
+				"entertainment"
+			]
+		},
+		"uuid": "93B721D6-4A3A-433F-92CB-FAE0CC21ECAA"
+	}],
+	"info": {
+		"version": 1,
+		"countryCode": "se",
+		"countryName": "Swedish"
+	}
+}

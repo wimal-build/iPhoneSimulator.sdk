@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationBar : UIView <NSCoding, UIBarPositioning> 
 
-@property(nonatomic,assign) UIBarStyle barStyle __TVOS_PROHIBITED;
+@property(nonatomic,assign) UIBarStyle barStyle UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 @property(nullable,nonatomic,weak) id<UINavigationBarDelegate> delegate;
 
 /*

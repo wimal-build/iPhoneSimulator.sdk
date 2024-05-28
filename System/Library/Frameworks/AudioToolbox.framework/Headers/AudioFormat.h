@@ -441,7 +441,7 @@ CF_ENUM(AudioFormatPropertyID) {
 	@enum           AudioCodecComponentType
  
 	@discussion     Collection of audio codec component types.
-					(On Mac OS X these declarations are in AudioUnit/AudioCodec.h).
+					(On Mac OS X these declarations are in AudioToolbox/AudioCodec.h).
  
 	@constant		kAudioDecoderComponentType
 					A codec that translates data in some other format into linear PCM.

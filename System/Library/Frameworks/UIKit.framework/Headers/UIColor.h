@@ -2,7 +2,7 @@
 //  UIColor.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 + (UIColor *)colorWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
 + (UIColor *)colorWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha;
 + (UIColor *)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
++ (UIColor *)colorWithDisplayP3Red:(CGFloat)displayP3Red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha NS_AVAILABLE_IOS(10_0);
 + (UIColor *)colorWithCGColor:(CGColorRef)cgColor;
 + (UIColor *)colorWithPatternImage:(UIImage *)image;
 #if __has_include(<CoreImage/CoreImage.h>)
@@ -32,6 +33,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 - (UIColor *)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha;
 - (UIColor *)initWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha;
 - (UIColor *)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
+- (UIColor *)initWithDisplayP3Red:(CGFloat)displayP3Red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha NS_AVAILABLE_IOS(10_0);
 - (UIColor *)initWithCGColor:(CGColorRef)cgColor;
 - (UIColor *)initWithPatternImage:(UIImage*)image;
 #if __has_include(<CoreImage/CoreImage.h>)
@@ -40,7 +42,24 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 
 // Some convenience methods to create colors.  These colors will be as calibrated as possible.
 // These colors are cached.
-+ (UIColor *)blackColor;      // 0.0 white 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) UIColor *blackColor;      // 0.0 white
+@property(class, nonatomic, readonly) UIColor *darkGrayColor;   // 0.333 white
+@property(class, nonatomic, readonly) UIColor *lightGrayColor;  // 0.667 white
+@property(class, nonatomic, readonly) UIColor *whiteColor;      // 1.0 white
+@property(class, nonatomic, readonly) UIColor *grayColor;       // 0.5 white
+@property(class, nonatomic, readonly) UIColor *redColor;        // 1.0, 0.0, 0.0 RGB
+@property(class, nonatomic, readonly) UIColor *greenColor;      // 0.0, 1.0, 0.0 RGB
+@property(class, nonatomic, readonly) UIColor *blueColor;       // 0.0, 0.0, 1.0 RGB
+@property(class, nonatomic, readonly) UIColor *cyanColor;       // 0.0, 1.0, 1.0 RGB
+@property(class, nonatomic, readonly) UIColor *yellowColor;     // 1.0, 1.0, 0.0 RGB
+@property(class, nonatomic, readonly) UIColor *magentaColor;    // 1.0, 0.0, 1.0 RGB
+@property(class, nonatomic, readonly) UIColor *orangeColor;     // 1.0, 0.5, 0.0 RGB
+@property(class, nonatomic, readonly) UIColor *purpleColor;     // 0.5, 0.0, 0.5 RGB
+@property(class, nonatomic, readonly) UIColor *brownColor;      // 0.6, 0.4, 0.2 RGB
+@property(class, nonatomic, readonly) UIColor *clearColor;      // 0.0 white, 0.0 alpha
+#else
++ (UIColor *)blackColor;      // 0.0 white
 + (UIColor *)darkGrayColor;   // 0.333 white 
 + (UIColor *)lightGrayColor;  // 0.667 white 
 + (UIColor *)whiteColor;      // 1.0 white 
@@ -55,6 +74,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 + (UIColor *)purpleColor;     // 0.5, 0.0, 0.5 RGB 
 + (UIColor *)brownColor;      // 0.6, 0.4, 0.2 RGB 
 + (UIColor *)clearColor;      // 0.0 white, 0.0 alpha 
+#endif
 
 // Set the color: Sets the fill and stroke colors in the current drawing context. Should be implemented by subclassers.
 - (void)set;

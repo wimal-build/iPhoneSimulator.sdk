@@ -19,7 +19,8 @@ CREATE TABLE messages (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
                        sequence_identifier INTEGER DEFAULT 0,
                        external_id TEXT,
                        unique_id INTEGER,
-                       content_index_transaction_id INTEGER);
+                       content_index_transaction_id INTEGER,
+                       list_id_hash INTEGER);
 
 CREATE INDEX date_index ON messages(date_received);
 CREATE INDEX message_infos_index ON messages(mailbox, deleted, sender_vip, flags, conversation_id, date_sent, message_id, date_received DESC, ROWID DESC);
@@ -31,6 +32,11 @@ CREATE INDEX message_oldest_conversation_index on messages(mailbox, conversation
 CREATE INDEX message_content_index_transaction_id_index ON messages(content_index_transaction_id, deleted, date_received DESC, ROWID);
 CREATE INDEX message_sequence_identifier_index ON messages(mailbox, remote_id, sequence_identifier);
 CREATE INDEX message_mailbox_content_index ON messages (mailbox, content_index_transaction_id, flags, date_received ASC);
+CREATE INDEX message_list_id_hash_index ON messages(list_id_hash);
+
+CREATE TABLE IF NOT EXISTS categorization_sender_rules (sender TEXT PRIMARY KEY, category INT);
+CREATE TABLE IF NOT EXISTS categorization_conversation_rules (conversation_id INT PRIMARY KEY, category INT);
+CREATE TABLE IF NOT EXISTS categorization_group_rules (email TEXT PRIMARY KEY, category INT);
 
 CREATE TABLE mailboxes (ROWID INTEGER PRIMARY KEY,
                         url UNIQUE,

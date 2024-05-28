@@ -4,33 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AssetData/EventTypeClassifier.lstm</key>
+		<data>
+		wyRt4g/A125Gd0zOZGBPVM3SMr0=
+		</data>
+		<key>AssetData/Multilingual-it-pt.model</key>
+		<data>
+		soMUiL5Uk3Zci8eaMH5Gwn6Ype0=
+		</data>
 		<key>AssetData/Phrases-it.dat</key>
 		<data>
-		cC6Y3Zub+4RZl0iBlaeLVhO2qiw=
+		AuuCBoBl4xasrO+P06VKwJGh6Pc=
 		</data>
 		<key>AssetData/Phrases-it.idx</key>
 		<data>
-		5HAK0COOTdNazI1DxzzsT8mj7f8=
-		</data>
-		<key>AssetData/PolarityMap.lsm</key>
-		<data>
-		x6sn527sJ6w7Q+y3oGNcHtAqMT4=
+		MLBnz1AKfWEiTBRM/vZiEwc6uO8=
 		</data>
 		<key>AssetData/Unigrams-it.dat</key>
 		<data>
-		Gsco/pskNXKHVZ2/OIHN6/C1SzQ=
+		Do5KnmsGTfOOo1NwdkKIyuKqn/M=
 		</data>
 		<key>AssetData/Unigrams-it.idx</key>
 		<data>
-		RnhQlBeAiyuRhM0sB0DVF03tgyA=
+		bcsXVNa5+frQQ3V3RPPsO6LWr4Y=
 		</data>
 		<key>AssetData/it.lm/Info.plist</key>
 		<data>
-		4vx4e+5Oc7QoUJLv6Xevxt3DbB4=
+		PZgOe0PRxhx1yly/bnVseY1qAbs=
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		XzF9xYBbIKnpUCLokDovEfpHVEk=
+		UgpSUCug3UuN6sWBSwYZBczH9F4=
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -38,15 +42,19 @@
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeResources</key>
 		<data>
-		RpxoGcNJaxZaCGp1V1rUcHF9r80=
+		xqLjmJ0tGvYEccpztPGHWhDvLCE=
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		GV9XhFdK1O9kppPz3moJFDvQBSM=
+		z23Tsie8KjBQAvAWeZMfATwkzKA=
 		</data>
 		<key>AssetData/it.lm/blacklist.dat</key>
 		<data>
-		oOwheB3AScUooQv8GhL5kAXMewE=
+		kSBe2wofq8Hx94VOAeHrjLSLn9A=
+		</data>
+		<key>AssetData/it.lm/fst.dat</key>
+		<data>
+		cQnl79L9XmapfOKtCrliqPuvRYo=
 		</data>
 		<key>AssetData/it.lm/lexicon.dat</key>
 		<data>
@@ -54,11 +62,11 @@
 		</data>
 		<key>AssetData/it.lm/lm.dat</key>
 		<data>
-		a2hgg9mvPlr12p/mS37nLYyAYmY=
+		tsIMc+j+yMVjGFU9kJndkYGgSwk=
 		</data>
 		<key>AssetData/it.lm/morphology.dat</key>
 		<data>
-		b3vtE1qiMmSJniU8pSFCiGfMu+0=
+		U0hAWabPQKDr/NfZVSWXMl8amTA=
 		</data>
 		<key>AssetData/it.lm/variants.dat</key>
 		<data>
@@ -71,33 +79,37 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AssetData/EventTypeClassifier.lstm</key>
+		<data>
+		wyRt4g/A125Gd0zOZGBPVM3SMr0=
+		</data>
+		<key>AssetData/Multilingual-it-pt.model</key>
+		<data>
+		soMUiL5Uk3Zci8eaMH5Gwn6Ype0=
+		</data>
 		<key>AssetData/Phrases-it.dat</key>
 		<data>
-		cC6Y3Zub+4RZl0iBlaeLVhO2qiw=
+		AuuCBoBl4xasrO+P06VKwJGh6Pc=
 		</data>
 		<key>AssetData/Phrases-it.idx</key>
 		<data>
-		5HAK0COOTdNazI1DxzzsT8mj7f8=
-		</data>
-		<key>AssetData/PolarityMap.lsm</key>
-		<data>
-		x6sn527sJ6w7Q+y3oGNcHtAqMT4=
+		MLBnz1AKfWEiTBRM/vZiEwc6uO8=
 		</data>
 		<key>AssetData/Unigrams-it.dat</key>
 		<data>
-		Gsco/pskNXKHVZ2/OIHN6/C1SzQ=
+		Do5KnmsGTfOOo1NwdkKIyuKqn/M=
 		</data>
 		<key>AssetData/Unigrams-it.idx</key>
 		<data>
-		RnhQlBeAiyuRhM0sB0DVF03tgyA=
+		bcsXVNa5+frQQ3V3RPPsO6LWr4Y=
 		</data>
 		<key>AssetData/it.lm/Info.plist</key>
 		<data>
-		4vx4e+5Oc7QoUJLv6Xevxt3DbB4=
+		PZgOe0PRxhx1yly/bnVseY1qAbs=
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeDirectory</key>
 		<data>
-		XzF9xYBbIKnpUCLokDovEfpHVEk=
+		UgpSUCug3UuN6sWBSwYZBczH9F4=
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -105,15 +117,19 @@
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeResources</key>
 		<data>
-		RpxoGcNJaxZaCGp1V1rUcHF9r80=
+		xqLjmJ0tGvYEccpztPGHWhDvLCE=
 		</data>
 		<key>AssetData/it.lm/_CodeSignature/CodeSignature</key>
 		<data>
-		GV9XhFdK1O9kppPz3moJFDvQBSM=
+		z23Tsie8KjBQAvAWeZMfATwkzKA=
 		</data>
 		<key>AssetData/it.lm/blacklist.dat</key>
 		<data>
-		oOwheB3AScUooQv8GhL5kAXMewE=
+		kSBe2wofq8Hx94VOAeHrjLSLn9A=
+		</data>
+		<key>AssetData/it.lm/fst.dat</key>
+		<data>
+		cQnl79L9XmapfOKtCrliqPuvRYo=
 		</data>
 		<key>AssetData/it.lm/lexicon.dat</key>
 		<data>
@@ -121,11 +137,11 @@
 		</data>
 		<key>AssetData/it.lm/lm.dat</key>
 		<data>
-		a2hgg9mvPlr12p/mS37nLYyAYmY=
+		tsIMc+j+yMVjGFU9kJndkYGgSwk=
 		</data>
 		<key>AssetData/it.lm/morphology.dat</key>
 		<data>
-		b3vtE1qiMmSJniU8pSFCiGfMu+0=
+		U0hAWabPQKDr/NfZVSWXMl8amTA=
 		</data>
 		<key>AssetData/it.lm/variants.dat</key>
 		<data>

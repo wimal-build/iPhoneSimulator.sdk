@@ -4,6 +4,8 @@
 //
 //  Copyright © 2015 Apple, Inc. All rights reserved.
 //
+#if TARGET_OS_IPHONE
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -26,3 +28,5 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPassButton : UIButton
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

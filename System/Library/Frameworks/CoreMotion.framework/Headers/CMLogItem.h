@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <CoreMotion/CMAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE(NA,4_0)

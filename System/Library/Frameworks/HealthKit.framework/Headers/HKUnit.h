@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKUnit : NSObject <NSSecureCoding, NSCopying>
 
 /// Returns a unique string representation for the unit that could be used with +unitFromString:
@@ -118,7 +118,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
     HKMetricPrefixMega,     //10^6
     HKMetricPrefixGiga,     //10^9
     HKMetricPrefixTera      //10^12
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 /* Mass Units */
 @interface HKUnit (Mass)
@@ -137,7 +137,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)meterUnit;  // m
 + (instancetype)inchUnit;   // in
 + (instancetype)footUnit;   // ft
-+ (instancetype)yardUnit NS_AVAILABLE_IOS(9_0);   // yd
++ (instancetype)yardUnit HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);   // yd
 + (instancetype)mileUnit;   // mi
 @end
 
@@ -149,8 +149,8 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)fluidOunceImperialUnit; // fl_oz_imp
 + (instancetype)pintUSUnit;             // pt_us
 + (instancetype)pintImperialUnit;       // pt_imp
-+ (instancetype)cupUSUnit NS_AVAILABLE_IOS(9_0);       // cup_us
-+ (instancetype)cupImperialUnit NS_AVAILABLE_IOS(9_0); // cup_imp
++ (instancetype)cupUSUnit HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);       // cup_us
++ (instancetype)cupImperialUnit HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0); // cup_imp
 @end
 
 /* Pressure Units */

@@ -2,7 +2,7 @@
 //  UIPrintInfo.h
 //  UIKit
 //
-//  Copyright 2010-2012 Apple Inc. All rights reserved.
+//  Copyright 2010-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -36,13 +36,12 @@ NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintInfo : NSObject 
 + (UIPrintInfo *)printInfo;
 + (UIPrintInfo *)printInfoWithDictionary:(nullable NSDictionary *)dictionary;
 
-- (NSDictionary *)dictionaryRepresentation;
-
 @property(nullable,nonatomic,copy)     NSString                *printerID;         // default is nil. set after user selects printer
 @property(nonatomic,copy)     NSString                *jobName;           // default is application name
 @property(nonatomic)          UIPrintInfoOutputType    outputType;        // default is UIPrintInfoOutputGeneral
 @property(nonatomic)          UIPrintInfoOrientation   orientation;       // default is UIPrintInfoOrientationPortrait
 @property(nonatomic)          UIPrintInfoDuplex        duplex;            // default is based on document type (none for photo, long edge for other)
+@property(nonatomic,readonly)   NSDictionary *dictionaryRepresentation;
 
 @end
 

@@ -1,0 +1,5 @@
+> $ENV(SIMULATOR_LOG_ROOT)/com.apple.contacts.ContactsUICore mode=0750
+
+? [= Facility com.apple.contacts.ContactsUICore] claim only
+
+? [= Facility com.apple.contacts.ContactsUICore] [= Category Debug] file $ENV(SIMULATOR_LOG_ROOT)/com.apple.contacts.ContactsUICore/Debug.log rotate=Debug.local.log ttl=7 file_max=10M all_max=200M compress fmt='$(Time) $(Host) $(Sender)[$(PID):$(ThreadID)] <$((Level)(str))>: $(Function):$(Line) | $(Message)'

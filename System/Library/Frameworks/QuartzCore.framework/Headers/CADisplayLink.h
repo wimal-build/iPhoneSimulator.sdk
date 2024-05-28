@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Class representing a timer bound to the display vsync. **/
 
+CA_CLASS_AVAILABLE_IOS(3.1, 9.0, 2.0)
 @interface CADisplayLink : NSObject
 {
 @private
@@ -29,13 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
  * to a single run-loop, but it may be added in multiple modes at once.
  * While added to a run-loop it will implicitly be retained. */
 
-- (void)addToRunLoop:(NSRunLoop *)runloop forMode:(NSString *)mode;
+- (void)addToRunLoop:(NSRunLoop *)runloop forMode:(NSRunLoopMode)mode;
 
 /* Removes the receiver from the given mode of the runloop. This will
  * implicitly release it when removed from the last mode it has been
  * registered for. */
 
-- (void)removeFromRunLoop:(NSRunLoop *)runloop forMode:(NSString *)mode;
+- (void)removeFromRunLoop:(NSRunLoop *)runloop forMode:(NSRunLoopMode)mode;
 
 /* Removes the object from all runloop modes (releasing the receiver if
  * it has been implicitly retained) and releases the 'target' object. */
@@ -50,6 +51,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(readonly, nonatomic) CFTimeInterval timestamp;
 @property(readonly, nonatomic) CFTimeInterval duration;
 
+/* The next timestamp that the client should target their render for. */
+
+@property(readonly, nonatomic) CFTimeInterval targetTimestamp CA_AVAILABLE_IOS_STARTING(10.0, 10.0, 3.0);
+
 /* When true the object is prevented from firing. Initial state is
  * false. */
 
@@ -59,9 +64,20 @@ NS_ASSUME_NONNULL_BEGIN
  * display link fires. Default value is one, which means the display
  * link will fire for every display frame. Setting the interval to two
  * will cause the display link to fire every other display frame, and
- * so on. The behavior when using values less than one is undefined. */
+ * so on. The behavior when using values less than one is undefined.
+ * DEPRECATED - use preferredFrameRate. */
 
-@property(nonatomic) NSInteger frameInterval;
+@property(nonatomic) NSInteger frameInterval
+  CA_AVAILABLE_BUT_DEPRECATED_IOS (3.1, 10.0, 2.0, 3.0, 9.0, 10.0, "use preferredFramesPerSecond");
+
+/* Defines the desired callback rate in frames per second for this display link.
+ * A value of 100.0 would result in 100 callbacks per second.
+ *
+ * Default value is zero, which means the display link will fire at the native
+ * cadence of the display hardware. CoreAnimation will make the best attempt
+ * at issuing callbacks at the requested rate, but there are no guarantees. */
+
+@property(nonatomic) NSInteger preferredFramesPerSecond CA_AVAILABLE_IOS_STARTING(10.0, 10.0, 3.0);
 
 @end
 

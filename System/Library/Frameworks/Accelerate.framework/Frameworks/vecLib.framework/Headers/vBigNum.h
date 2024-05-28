@@ -3,7 +3,7 @@
  
      Contains:   Algebraic and logical operations on large operands.
  
-     Version:    vecLib-563.2
+     Version:    vecLib-600.0
  
      Copyright:  Copyright (c) 1999-2016 by Apple Inc. All rights reserved.
  
@@ -1671,4 +1671,3 @@ vR1024Rotate(
 #endif
 
 #endif /* __VBIGNUM__ */
-

@@ -5,7 +5,6 @@
 //  Copyright (c) 2014 Apple Inc. All rights reserved.
 //
 
-#import <HealthKit/HealthKit.h>
 #import <HealthKit/HKQuery.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +16,7 @@ static const NSUInteger HKObjectQueryNoLimit = 0;
  @class         HKSampleQuery
  @abstract      A concrete subclass of HKQuery that provides an interface to retrieve HKSample objects.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKSampleQuery : HKQuery
 
 /*!
@@ -46,7 +45,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                          predicate:(nullable NSPredicate *)predicate
                              limit:(NSUInteger)limit
                    sortDescriptors:(nullable NSArray<NSSortDescriptor *> *)sortDescriptors
-                    resultsHandler:(void(^)(HKSampleQuery *query, NSArray<__kindof HKSample *> * __nullable results, NSError * __nullable error))resultsHandler;
+                    resultsHandler:(void(^)(HKSampleQuery *query, NSArray<__kindof HKSample *> * _Nullable results, NSError * _Nullable error))resultsHandler;
 
 
 @end

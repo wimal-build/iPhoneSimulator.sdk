@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class HKSampleType;
 @class HKSource;
 
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKQuery : NSObject
 
 @property (readonly, strong, nullable) HKObjectType *objectType HK_AVAILABLE_IOS_WATCHOS(9_3, 2_2);
@@ -41,7 +41,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
     HKQueryOptionNone               = 0,
     HKQueryOptionStrictStartDate    = 1 << 0,
     HKQueryOptionStrictEndDate      = 1 << 1,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 
 @interface HKQuery (HKObjectPredicates)
@@ -103,7 +103,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  
  @param         sourceRevisions The list of source revisions.
  */
-+ (NSPredicate *)predicateForObjectsFromSourceRevisions:(NSSet<HKSourceRevision *> *)sourceRevisions NS_AVAILABLE_IOS(9_0);
++ (NSPredicate *)predicateForObjectsFromSourceRevisions:(NSSet<HKSourceRevision *> *)sourceRevisions HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method        predicateForObjectsFromDevices:
@@ -114,7 +114,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  
  @param         devices     The set of devices that generated data.
  */
-+ (NSPredicate *)predicateForObjectsFromDevices:(NSSet<HKDevice *> *)devices NS_AVAILABLE_IOS(9_0);
++ (NSPredicate *)predicateForObjectsFromDevices:(NSSet<HKDevice *> *)devices HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method        predicateForObjectsWithDeviceProperty:allowedValues:
@@ -127,7 +127,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  @param         allowedValues   The set of values for which the device property can match. An empty set will match all
                 devices whose property value is nil.
  */
-+ (NSPredicate *)predicateForObjectsWithDeviceProperty:(NSString *)key allowedValues:(NSSet<NSString *> *)allowedValues NS_AVAILABLE_IOS(9_0);
++ (NSPredicate *)predicateForObjectsWithDeviceProperty:(NSString *)key allowedValues:(NSSet<NSString *> *)allowedValues HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 /*!
  @method        predicateForObjectWithUUID:
@@ -255,9 +255,21 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  
  @param         operatorType    The operator type for the expression.
  @param         totalDistance   The value that the workout's totalEnergyBurned is being compared to. It is the right hand side of the
-                                expression. The unit for this value should be of type Distance
+                                expression. The unit for this value should be of type Distance.
  */
 + (NSPredicate *)predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType)operatorType totalDistance:(HKQuantity *)totalDistance;
+
+/*!
+ @method        predicateForWorkoutsWithOperatorType:totalSwimmingStrokeCount:
+ @abstract      Creates a predicate for use with HKQuery subclasses.
+ @discussion    Creates a query predicate that matches HKWorkouts by the given operator type and totalSwimmingStrokeCount
+ 
+ @param         operatorType                The operator type for the expression.
+ @param         totalSwimmingStrokeCount    The value that the workout's totalSwimmingStrokeCount is being compared to.
+                                            It is the right hand side of the expression. The unit for this value should
+                                            be of type Count.
+ */
++ (NSPredicate *)predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType)operatorType totalSwimmingStrokeCount:(HKQuantity *)totalSwimmingStrokeCount;
 
 @end
 

@@ -1,0 +1,28 @@
+-- Migrates traces from v34 to v35
+
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS location_match_info;
+
+CREATE TABLE location_match_info
+(
+location_id                     INTEGER REFERENCES locations(id),
+route_coordinate                NUMERIC,
+step_index                      INTEGER,
+form_of_way                     INTEGER,
+route_match_score               NUMERIC,
+distance_from_route             NUMERIC,
+max_route_distance              NUMERIC,
+route_distance_match_score      NUMERIC,
+route_distance_weight           NUMERIC,
+route_course_delta              NUMERIC,
+max_route_course_delta          NUMERIC,
+route_course_match_score        NUMERIC,
+route_course_weight             NUMERIC,
+road_width_on_route             NUMERIC,
+distance_from_road              NUMERIC,
+road_course_delta               NUMERIC,
+distance_from_nearest_junction  NUMERIC
+);
+
+COMMIT;

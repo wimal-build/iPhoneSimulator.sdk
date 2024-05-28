@@ -13,6 +13,8 @@
 #import <CoreMotion/CMDeviceMotion.h>
 #import <CoreMotion/CMMagnetometer.h>
 
+#import <CoreMotion/CMAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /* 

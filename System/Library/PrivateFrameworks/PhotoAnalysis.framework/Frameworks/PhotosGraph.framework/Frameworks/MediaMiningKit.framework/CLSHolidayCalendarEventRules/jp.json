@@ -1,0 +1,573 @@
+{
+  "events" : [
+    {
+      "localizations" : {
+        "en" : "New Year’s Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "3887F46B-C56F-4D76-83BA-751DEE784611"
+    },
+    {
+      "localizations" : {
+        "en" : "Coming of Age Day"
+      },
+      "dateRules" : [
+        {
+          "month" : 1,
+          "weekday" : 2,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Coming of Age Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "food",
+          "restaurant"
+        ]
+      },
+      "uuid" : "D22FA577-A2F8-4FAB-AEF7-002E8FE75CAA"
+    },
+    {
+      "localizations" : {
+        "en" : "Foundation Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 11,
+          "month" : 2
+        }
+      ],
+      "name" : "Foundation Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "culture"
+        ]
+      },
+      "uuid" : "BAEEAFE8-7B53-4D22-BA32-4E1BA0F994E9"
+    },
+    {
+      "localizations" : {
+        "en" : "White Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 3
+        }
+      ],
+      "name" : "White Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "D4B094CB-3342-4246-B8B0-4EE935E428D6"
+    },
+    {
+      "localizations" : {
+        "en" : "Shōwa Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 29,
+          "month" : 4
+        }
+      ],
+      "name" : "Showa Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "41C843A1-6C3D-4A20-9B06-02D3F2175186"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 3,
+          "month" : 5
+        }
+      ],
+      "name" : "Constitution Memorial Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "67CB2CA9-7A47-429E-BA1B-1A6761FF87CE"
+    },
+    {
+      "localizations" : {
+        "en" : "Greenery Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 5
+        }
+      ],
+      "name" : "Greenery Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "6DFC7AFE-8EA8-464F-B307-DA4E6D781B6E"
+    },
+    {
+      "localizations" : {
+        "en" : "Children’s Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 5
+        }
+      ],
+      "name" : "Children’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "BE61DF88-A468-4EBE-8FAC-DFD9BA7C3FA2"
+    },
+    {
+      "localizations" : {
+        "en" : "Mother’s Day"
+      },
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "9C30FFBD-01AC-4B12-9A47-41560E0D22B5"
+    },
+    {
+      "localizations" : {
+        "en" : "Father’s Day"
+      },
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "3DC75843-0296-41BC-A3D1-D7D4B4B762BE"
+    },
+    {
+      "localizations" : {
+        "en" : "Tanabata Star Festival"
+      },
+      "dateRules" : [
+        {
+          "day" : 7,
+          "month" : 7
+        }
+      ],
+      "name" : "Tanabata Star Festival",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "FF3F610D-807E-4BFE-8A5B-4B22DABA427F"
+    },
+    {
+      "localizations" : {
+        "en" : "Marine Day"
+      },
+      "dateRules" : [
+        {
+          "month" : 7,
+          "weekday" : 2,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Marine Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "beach",
+          "water",
+          "travel"
+        ]
+      },
+      "uuid" : "BEA2219B-583E-444D-AB74-BEC02F1F439B"
+    },
+    {
+      "localizations" : {
+        "en" : "Mountain Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 11,
+          "month" : 8
+        }
+      ],
+      "name" : "Mountain Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "mountain",
+          "travel",
+          "beach",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "260F7AD4-BB1E-407F-B76D-CBE45EAECD0C"
+    },
+    {
+      "localizations" : {
+        "en" : "Obon"
+      },
+      "dateRules" : [
+        {
+          "day" : 13,
+          "month" : 8
+        }
+      ],
+      "name" : "Obon",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "culture",
+          "food"
+        ]
+      },
+      "uuid" : "C6DB87F7-1C8B-478D-AC9C-E06F68C60A43"
+    },
+    {
+      "localizations" : {
+        "en" : "Respect-for-the-Aged Day"
+      },
+      "dateRules" : [
+        {
+          "month" : 9,
+          "weekday" : 2,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Respect-for-the-Aged Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "urban"
+        ]
+      },
+      "uuid" : "F00D8855-2C65-4860-B4B8-2CFB18E34094"
+    },
+    {
+      "localizations" : {
+        "en" : "Autumnal Equinox Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2010
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2011
+        },
+        {
+          "day" : 22,
+          "month" : 9,
+          "year" : 2012
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2013
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2014
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2015
+        },
+        {
+          "day" : 22,
+          "month" : 9,
+          "year" : 2016
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2017
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2018
+        },
+        {
+          "day" : 23,
+          "month" : 9,
+          "year" : 2019
+        },
+        {
+          "day" : 22,
+          "month" : 9,
+          "year" : 2020
+        }
+      ],
+      "name" : "Autumnal Equinox Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "EC231DF0-7B81-4321-B030-9EC9F6380C01"
+    },
+    {
+      "localizations" : {
+        "en" : "Halloween"
+      },
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "207F5D78-175B-4A88-B31C-5ADC2CD59CA1"
+    },
+    {
+      "localizations" : {
+        "en" : "Shichi-go-san"
+      },
+      "dateRules" : [
+        {
+          "day" : 15,
+          "month" : 11
+        }
+      ],
+      "name" : "Shichi-go-san",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "food",
+          "culture"
+        ]
+      },
+      "uuid" : ""
+    },
+    {
+      "localizations" : {
+        "en" : "Christmas Eve"
+      },
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{0, 6}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
+    },
+    {
+      "localizations" : {
+        "en" : "Christmas Day"
+      },
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "localizations" : {
+        "en" : "New Year’s Eve"
+      },
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "258BEE9E-0E81-4DD4-BF84-0331005C1471"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "jp",
+    "countryName" : "Japan"
+  }
+}

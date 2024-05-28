@@ -2,7 +2,7 @@
 //  UITabBar.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,9 +23,9 @@ typedef NS_ENUM(NSInteger, UITabBarItemPositioning) {
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 
-@property(nullable,nonatomic,assign) id<UITabBarDelegate> delegate;     // weak reference. default is nil
-@property(nullable,nonatomic,copy) NSArray<UITabBarItem *> *items;        // get/set visible UITabBarItems. default is nil. changes not animated. shown in order
-@property(nullable,nonatomic,assign) UITabBarItem *selectedItem; // will show feedback based on mode. default is nil
+@property(nullable, nonatomic, weak) id<UITabBarDelegate> delegate;     // weak reference. default is nil
+@property(nullable, nonatomic, copy) NSArray<UITabBarItem *> *items;        // get/set visible UITabBarItems. default is nil. changes not animated. shown in order
+@property(nullable, nonatomic, weak) UITabBarItem *selectedItem; // will show feedback based on mode. default is nil
 
 - (void)setItems:(nullable NSArray<UITabBarItem *> *)items animated:(BOOL)animated;   // will fade in or out or reorder and adjust spacing
 
@@ -33,15 +33,21 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 
 - (void)beginCustomizingItems:(NSArray<UITabBarItem *> *)items __TVOS_PROHIBITED;   // list all items that can be reordered. always animates a sheet up. visible items not listed are fixed in place
 - (BOOL)endCustomizingAnimated:(BOOL)animated __TVOS_PROHIBITED;    // hide customization sheet. normally you should let the user do it. check list of items to see new layout. returns YES if layout changed
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, getter=isCustomizing) BOOL customizing __TVOS_PROHIBITED;
+#else
 - (BOOL)isCustomizing __TVOS_PROHIBITED;
+#endif
 
 /*
  The behavior of tintColor for bars has changed on iOS 7.0. It no longer affects the bar's background
  and behaves as described for the tintColor property added to UIView.
  To tint the bar's background, please use -barTintColor.
  */
-@property(null_resettable, nonatomic,strong) UIColor *tintColor NS_AVAILABLE_IOS(5_0);
-@property(nullable, nonatomic,strong) UIColor *barTintColor NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;  // default is nil
+@property(null_resettable, nonatomic, strong) UIColor *tintColor NS_AVAILABLE_IOS(5_0);
+@property(nullable, nonatomic, strong) UIColor *barTintColor NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;  // default is nil
+/// Unselected items in this tab bar will be tinted with this color. Setting this value to nil indicates that UITabBar should use its default value instead.
+@property (nonatomic, readwrite, copy, nullable) UIColor *unselectedItemTintColor NS_AVAILABLE_IOS(10_0) UI_APPEARANCE_SELECTOR;
 
 /* selectedImageTintColor will be applied to the gradient image used when creating the
  selected image. Default is nil and will result in the system bright blue for selected
@@ -51,19 +57,19 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
  Deprecated in iOS 8.0. On iOS 7.0 and later the selected image takes its color from the
  inherited tintColor of the UITabBar, which may be set separately if necessary.
  */
-@property(nullable,nonatomic,strong) UIColor *selectedImageTintColor NS_DEPRECATED_IOS(5_0,8_0,"Use tintColor") UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
+@property(nullable, nonatomic, strong) UIColor *selectedImageTintColor NS_DEPRECATED_IOS(5_0,8_0,"Use tintColor") UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 
 /* The background image will be tiled to fit, even if it was not created via the UIImage resizableImage methods.
  */
-@property(nullable, nonatomic,strong) UIImage *backgroundImage NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+@property(nullable, nonatomic, strong) UIImage *backgroundImage NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 /* The selection indicator image is drawn on top of the tab bar, behind the bar item icon.
  */
-@property(nullable, nonatomic,strong) UIImage *selectionIndicatorImage NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR; 
+@property(nullable, nonatomic, strong) UIImage *selectionIndicatorImage NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 /* Default is nil. When non-nil, a custom shadow image to show instead of the default shadow image. For a custom shadow to be shown, a custom background image must also be set with -setBackgroundImage: (if the default background image is used, the default shadow image will be used).
  */
-@property(nullable, nonatomic,strong) UIImage *shadowImage NS_AVAILABLE_IOS(6_0) UI_APPEARANCE_SELECTOR;
+@property(nullable, nonatomic, strong) UIImage *shadowImage NS_AVAILABLE_IOS(6_0) UI_APPEARANCE_SELECTOR;
 
 /*
  Default is UITabBarItemPositioningAutomatic. The tab bar items fill horizontally

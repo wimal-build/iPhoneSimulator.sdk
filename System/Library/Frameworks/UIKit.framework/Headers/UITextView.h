@@ -2,7 +2,7 @@
 //  UITextView.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,6 +12,8 @@
 #import <UIKit/UITextInput.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDataDetectors.h>
+#import <UIKit/UITextInteraction.h>
+#import <UIKit/UIContentSizeCategoryAdjusting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,12 +34,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)textViewDidChangeSelection:(UITextView *)textView;
 
-- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange NS_AVAILABLE_IOS(7_0);
-- (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange NS_AVAILABLE_IOS(7_0);
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction NS_AVAILABLE_IOS(10_0);
+- (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction NS_AVAILABLE_IOS(10_0);
+
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange NS_DEPRECATED_IOS(7_0, 10_0, "Use textView:shouldInteractWithURL:inRange:forInteractionType: instead");
+- (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange NS_DEPRECATED_IOS(7_0, 10_0, "Use textView:shouldInteractWithTextAttachment:inRange:forInteractionType: instead");
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput>
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput, UIContentSizeCategoryAdjusting>
 
 @property(nullable,nonatomic,weak) id<UITextViewDelegate> delegate;
 @property(null_resettable,nonatomic,copy) NSString *text;
@@ -81,8 +86,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput>
 
 @end
 
-UIKIT_EXTERN NSString * const UITextViewTextDidBeginEditingNotification;
-UIKIT_EXTERN NSString * const UITextViewTextDidChangeNotification;
-UIKIT_EXTERN NSString * const UITextViewTextDidEndEditingNotification;
+UIKIT_EXTERN NSNotificationName const UITextViewTextDidBeginEditingNotification;
+UIKIT_EXTERN NSNotificationName const UITextViewTextDidChangeNotification;
+UIKIT_EXTERN NSNotificationName const UITextViewTextDidEndEditingNotification;
 
 NS_ASSUME_NONNULL_END

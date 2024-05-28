@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Photos/PhotosDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,10 +19,10 @@ typedef NS_ENUM(NSInteger, PHAuthorizationStatus) {
                                             //   such as parental controls being in place.
     PHAuthorizationStatusDenied,            // User has explicitly denied this application access to photos data.
     PHAuthorizationStatusAuthorized         // User has authorized this application to access photos data.
-} NS_AVAILABLE_IOS(8_0);
+} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
 
 
-NS_CLASS_AVAILABLE_IOS(8_0) @protocol PHPhotoLibraryChangeObserver <NSObject>
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @protocol PHPhotoLibraryChangeObserver <NSObject>
 // This callback is invoked on an arbitrary serial queue. If you need this to be handled on a specific queue, you should redispatch appropriately
 - (void)photoLibraryDidChange:(PHChange *)changeInstance;
 
@@ -32,7 +33,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @protocol PHPhotoLibraryChangeObserver <NSObject>
  @abstract     A PHPhotoLibrary provides access to the metadata and image data for the photos, videos and related content in the user's photo library, including content from the Camera Roll, iCloud Shared, Photo Stream, imported, and synced from iTunes.
  @discussion   ...
  */
-NS_CLASS_AVAILABLE_IOS(8_0) @interface PHPhotoLibrary : NSObject
+PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHPhotoLibrary : NSObject
 
 + (PHPhotoLibrary *)sharedPhotoLibrary;
 

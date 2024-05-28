@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMAccelerometer.h>
 
+#import <CoreMotion/CMAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*

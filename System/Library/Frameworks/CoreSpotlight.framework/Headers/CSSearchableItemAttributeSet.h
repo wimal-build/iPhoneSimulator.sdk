@@ -39,6 +39,8 @@ CS_CLASS_AVAILABLE(NA, 9_0)
 CS_TVOS_UNAVAILABLE
 @interface CSCustomAttributeKey : NSObject <NSCopying,NSSecureCoding>
 
+- (instancetype)init NS_UNAVAILABLE;
+
 //Key names should be ASCII only, with no punctuation other than '_'.
 //It is recommended keys be of the form "com_mycompany_myapp_keyname"
 //Keys starting with 'kMD' are reserved.

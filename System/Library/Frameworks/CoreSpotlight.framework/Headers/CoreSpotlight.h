@@ -14,7 +14,7 @@
 #import <CoreSpotlight/CSSearchableItemAttributeSet.h>
 #import <CoreSpotlight/CSSearchableItemAttributeSet_Categories.h>
 #import <CoreSpotlight/CSIndexExtensionRequestHandler.h>
-
+#import <CoreSpotlight/CSSearchQuery.h>
 
 //! Project version number for CoreSpotlight.
 CORESPOTLIGHT_EXPORT double CoreSpotlightVersionNumber;

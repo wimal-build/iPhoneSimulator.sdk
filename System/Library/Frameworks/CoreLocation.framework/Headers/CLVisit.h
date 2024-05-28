@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CLLocation.h>
 
+#import <CoreLocation/CLAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*

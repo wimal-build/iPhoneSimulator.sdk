@@ -1,0 +1,7 @@
+-- Migrates traces from v31 to v32
+
+BEGIN TRANSACTION;
+
+ALTER TABLE eta_traffic_updates ADD COLUMN dodgeball_alert_type;
+
+COMMIT;

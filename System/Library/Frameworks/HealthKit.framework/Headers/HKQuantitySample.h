@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class         HKQuantitySample
  @abstract      An HKObject subclass representing a quantity measurement.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKQuantitySample : HKSample
 
 @property (readonly, strong) HKQuantityType *quantityType;
@@ -48,11 +48,11 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 /*!
  @method        quantitySampleWithType:quantity:startDate:endDate:device:metadata:
  @abstract      Creates a new HKQuantitySample with the given type, quantity, start date, end date, and metadata.
- @param         type        The type of the sample.
- @param         startDate   The start date of the sample.
- @param         endDate     The end date of the sample.
- @param         device      The HKDevice that generated the sample (optional).
- @param         metadata    Metadata for the sample (optional).
+ @param         quantityType    The type of the sample.
+ @param         startDate       The start date of the sample.
+ @param         endDate         The end date of the sample.
+ @param         device          The HKDevice that generated the sample (optional).
+ @param         metadata        Metadata for the sample (optional).
  @discussion    The quantity must have a unit that is compatible with the given quantity type.
                 See -[HKQuantityType isCompatibleWithUnit:].
  */
@@ -61,11 +61,11 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                              startDate:(NSDate *)startDate
                                endDate:(NSDate *)endDate
                                 device:(nullable HKDevice *)device
-                              metadata:(nullable NSDictionary<NSString *, id> *)metadata NS_AVAILABLE_IOS(9_0);
+                              metadata:(nullable NSDictionary<NSString *, id> *)metadata HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
 
 @end
 
 // Predicate Key Paths
-HK_EXTERN NSString * const HKPredicateKeyPathQuantity NS_AVAILABLE_IOS(8_0);
+HK_EXTERN NSString * const HKPredicateKeyPathQuantity HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
 
 NS_ASSUME_NONNULL_END

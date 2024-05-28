@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueDoorState) {
     HMCharacteristicValueDoorStateOpening,
     HMCharacteristicValueDoorStateClosing,
     HMCharacteristicValueDoorStateStopped,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 /*!
  @enum      HMCharacteristicValueHeatingCooling
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueHeatingCooling) {
     HMCharacteristicValueHeatingCoolingHeat,
     HMCharacteristicValueHeatingCoolingCool,
     HMCharacteristicValueHeatingCoolingAuto,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 /*!
  @enum      HMCharacteristicValueRotationDirection
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueHeatingCooling) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueRotationDirection) {
     HMCharacteristicValueRotationDirectionClockwise = 0,
     HMCharacteristicValueRotationDirectionCounterClockwise,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 /*!
  @enum      HMCharacteristicValueTemperatureUnit
@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueRotationDirection) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueTemperatureUnit) {
     HMCharacteristicValueTemperatureUnitCelsius = 0,
     HMCharacteristicValueTemperatureUnitFahrenheit,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 /*!
  @enum      HMCharacteristicValueLockMechanismState
@@ -76,7 +76,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismState) {
     HMCharacteristicValueLockMechanismStateSecured,
     HMCharacteristicValueLockMechanismStateJammed,
     HMCharacteristicValueLockMechanismStateUnknown,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 /*!
  @enum      HMCharacteristicValueLockMechanismLastKnownAction
@@ -105,7 +105,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismLastKnownAction) {
     HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout,
     HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement,
     HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 
 /*!
@@ -117,7 +117,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismLastKnownAction) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueAirParticulateSize) {
     HMCharacteristicValueAirParticulateSize2_5 = 0,
     HMCharacteristicValueAirParticulateSize10,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 
 /*!
@@ -137,7 +137,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueAirQuality) {
     HMCharacteristicValueAirQualityFair,
     HMCharacteristicValueAirQualityInferior,
     HMCharacteristicValueAirQualityPoor,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 
 /*!
@@ -151,7 +151,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValuePositionState) {
     HMCharacteristicValuePositionStateClosing = 0,
     HMCharacteristicValuePositionStateOpening,
     HMCharacteristicValuePositionStateStopped,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 
 /*!
@@ -169,7 +169,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentSecuritySystemState) {
     HMCharacteristicValueCurrentSecuritySystemStateNightArm,
     HMCharacteristicValueCurrentSecuritySystemStateDisarmed,
     HMCharacteristicValueCurrentSecuritySystemStateTriggered,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 
 /*!
@@ -185,4 +185,137 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetSecuritySystemState) {
     HMCharacteristicValueTargetSecuritySystemStateAwayArm,
     HMCharacteristicValueTargetSecuritySystemStateNightArm,
     HMCharacteristicValueTargetSecuritySystemStateDisarm,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueBatteryStatus
+
+ @constant  HMCharacteristicValueBatteryStatusNormal        Battery status is normal.
+ @constant  HMCharacteristicValueBatteryStatusLow           Battery status is low.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueBatteryStatus) {
+    HMCharacteristicValueBatteryStatusNormal = 0,
+    HMCharacteristicValueBatteryStatusLow,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueJammedStatus
+
+ @constant  HMCharacteristicValueJammedStatusNone               Not Jammed.
+ @constant  HMCharacteristicValueJammedStatusJammed             Jammed.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueJammedStatus) {
+    HMCharacteristicValueJammedStatusNone = 0,
+    HMCharacteristicValueJammedStatusJammed,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueTamperStatus
+
+ @constant  HMCharacteristicValueTamperStatusNone               Accessory is not tampered with.
+ @constant  HMCharacteristicValueTamperStatusTampered           Accessory is tampered with.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueTamperedStatus) {
+    HMCharacteristicValueTamperedStatusNone = 0,
+    HMCharacteristicValueTamperedStatusTampered,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueLeakDetectionStatus
+
+ @constant  HMCharacteristicValueLeakDetectionStatusNone        Leak is not detected.
+ @constant  HMCharacteristicValueLeakDetectionStatusDetected    Leak is detected.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueLeakStatus) {
+    HMCharacteristicValueLeakStatusNone = 0,
+    HMCharacteristicValueLeakStatusDetected,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueSmokeDetectionStatus
+
+ @constant  HMCharacteristicValueSmokeDetectionStatusNone       Smoke is not detected.
+ @constant  HMCharacteristicValueSmokeDetectionStatusDetected   Smoke is detected.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueSmokeDetectionStatus) {
+    HMCharacteristicValueSmokeDetectionStatusNone = 0,
+    HMCharacteristicValueSmokeDetectionStatusDetected,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueChargingState
+
+ @constant  HMCharacteristicValueChargingStateNone              Charging is not in progress.
+ @constant  HMCharacteristicValueChargingStateInProgress        Charging is in progress.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueChargingState) {
+    HMCharacteristicValueChargingStateNone = 0,
+    HMCharacteristicValueChargingStateInProgress,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+
+/*!
+ @enum      HMCharacteristicValueContactState
+
+ @constant  HMCharacteristicValueContactStateNone               Contact is not detected.
+ @constant  HMCharacteristicValueContactStateDetected           Contact is detected.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueContactState) {
+    HMCharacteristicValueContactStateNone = 0,
+    HMCharacteristicValueContactStateDetected,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueStatusFault
+ 
+ @constant  HMCharacteristicValueStatusFaultNoFault               No Fault.
+ @constant  HMCharacteristicValueStatusFaultGeneralFault          General Fault.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueStatusFault) {
+    HMCharacteristicValueStatusFaultNoFault = 0,
+    HMCharacteristicValueStatusFaultGeneralFault,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueCarbonMonoxideDetectionStatus
+
+ @constant  HMCharacteristicValueCarbonMonoxideDetectionStatusNotDetected       Carbon monoxide is not detected.
+ @constant  HMCharacteristicValueCarbonMonoxideDetectionStatusDetected          Carbon monoxide is detected.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCarbonMonoxideDetectionStatus) {
+    HMCharacteristicValueCarbonMonoxideDetectionStatusNotDetected = 0,
+    HMCharacteristicValueCarbonMonoxideDetectionStatusDetected,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueCarbonDioxideDetectionStatus
+
+ @constant  HMCharacteristicValueCarbonDioxideDetectionStatusNotDetected    Carbon dioxide is not detected.
+ @constant  HMCharacteristicValueCarbonDioxideDetectionStatusDetected       Carbon dioxide is detected.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCarbonDioxideDetectionStatus) {
+    HMCharacteristicValueCarbonDioxideDetectionStatusNotDetected = 0,
+    HMCharacteristicValueCarbonDioxideDetectionStatusDetected,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueOccupancyStatus
+
+ @constant  HMCharacteristicValueOccupancyStatusNotOccupied     Occupancy is not detected.
+ @constant  HMCharacteristicValueOccupancyStatusOccupied        Occupancy is detected.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueOccupancyStatus) {
+    HMCharacteristicValueOccupancyStatusNotOccupied = 0,
+    HMCharacteristicValueOccupancyStatusOccupied,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueSecuritySystemAlarmType
+
+ @constant  HMCharacteristicValueSecuritySystemAlarmTypeNoAlarm     No alarm.
+ @constant  HMCharacteristicValueSecuritySystemAlarmTypeUnknown     Unknown alarm type.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueSecuritySystemAlarmType) {
+    HMCharacteristicValueSecuritySystemAlarmTypeNoAlarm = 0,
+    HMCharacteristicValueSecuritySystemAlarmTypeUnknown,
+} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);

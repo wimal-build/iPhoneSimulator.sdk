@@ -1,0 +1,16 @@
+-- Migrates traces from v32 to v33
+
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS guidance_events;
+
+CREATE TABLE guidance_events
+(
+id                              INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp                       NUMERIC NOT NULL,
+event_type                      INTEGER,
+announcement_stage              INTEGER,
+event_description               TEXT
+);
+
+COMMIT;

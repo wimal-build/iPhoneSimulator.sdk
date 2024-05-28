@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 #import <MediaPlayer/MPNowPlayingInfoLanguageOption.h>
-
+#import <MediaPlayer/MPRemoteControlTypes.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -91,6 +91,9 @@ MP_EXTERN_CLASS_AVAILABLE(9_0)
 /// is being requested. See MPNowPlayingInfoLanguageOption isAutomaticLegibleLanguageOption
 @property (nonatomic, readonly) MPNowPlayingInfoLanguageOption *languageOption;
 
+/// Describes the extent of the changed language option
+@property (nonatomic, readonly) MPChangeLanguageOptionSetting setting;
+
 @end
 
 MP_EXTERN_CLASS_AVAILABLE(8_0)
@@ -98,6 +101,28 @@ MP_EXTERN_CLASS_AVAILABLE(8_0)
 
 /// The desired playback position to use when setting the current time of the player.
 @property (nonatomic, readonly) NSTimeInterval positionTime;
+
+@end
+
+MP_EXTERN_CLASS_AVAILABLE(8_0)
+@interface MPChangeShuffleModeCommandEvent : MPRemoteCommandEvent
+
+/// The desired shuffle type to use when fulfilling the request.
+@property (nonatomic, readonly) MPShuffleType shuffleType;
+
+/// Whether or not the selection should be preserved between playback sessions
+@property (nonatomic, readonly) BOOL preservesShuffleMode;
+
+@end
+
+MP_EXTERN_CLASS_AVAILABLE(8_0)
+@interface MPChangeRepeatModeCommandEvent : MPRemoteCommandEvent
+
+/// The desired repeat type to use when fulfilling the request.
+@property (nonatomic, readonly) MPRepeatType repeatType;
+
+/// Whether or not the selection should be preserved between playback sessions
+@property (nonatomic, readonly) BOOL preservesRepeatMode;
 
 @end
 

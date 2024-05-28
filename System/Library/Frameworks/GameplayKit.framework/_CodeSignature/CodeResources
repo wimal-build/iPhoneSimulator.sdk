@@ -6,83 +6,151 @@
 	<dict>
 		<key>Headers/GKAgent.h</key>
 		<data>
-		/JH3WNmyvEXgG72oRmNyzx2lcHY=
+		ZpQEeF9rvEAUMyzbP46czzQEWLk=
 		</data>
 		<key>Headers/GKBehavior.h</key>
 		<data>
-		yPqLBTou5zMu1E8k/JHf8TkOyUE=
+		EPjOgSCeU9Q41IxPp0M4+dxqlAg=
 		</data>
 		<key>Headers/GKComponent.h</key>
 		<data>
-		5J7dIWMImTkj8iK95v4s6RLlGaA=
+		gkKLRXOHngSM/MARZ1qxx6nvbKg=
+		</data>
+		<key>Headers/GKCompositeBehavior.h</key>
+		<data>
+		x2bllHnRW3EnepJPFFJ+9Nsr7FY=
+		</data>
+		<key>Headers/GKDecisionTree.h</key>
+		<data>
+		2k7I8Fw5Tk5hzHCtOxFmk6WwRHA=
 		</data>
 		<key>Headers/GKEntity.h</key>
 		<data>
-		maKd1wDkZ3wm4/TAkgsPvCxag+E=
+		vWAp7KvVsB2CugayneylcGXzGLA=
 		</data>
 		<key>Headers/GKGameModel.h</key>
 		<data>
-		7e1da/Ap+Sb6hc3HPC9hm7af7eQ=
+		SJjawZ28PZmOikPiWSVbYGh/tGQ=
 		</data>
 		<key>Headers/GKGoal.h</key>
 		<data>
-		hXPqayU8593aPORLJRNRm+eYQeU=
+		uM2G7i3XRrd0lfO9o7Nxl+7VGT4=
 		</data>
 		<key>Headers/GKGraph.h</key>
 		<data>
-		3vNxHT/xw4yOjOep4FG/fcJ+x3k=
+		4GWiqUjqUJeR+38TkLiddS2DEjc=
 		</data>
 		<key>Headers/GKGraphNode.h</key>
 		<data>
-		li8gayY4EkwMXcmJTqrktJZHtk4=
+		ENclkQeUyC6MeM2dpN60p6rAb4M=
+		</data>
+		<key>Headers/GKGridGraph.h</key>
+		<data>
+		uD3TcHyMPGWwi7GxjQJ3RZZfk64=
+		</data>
+		<key>Headers/GKMeshGraph.h</key>
+		<data>
+		sXZsOHUwmfMUGJCigoNZ740tXHk=
 		</data>
 		<key>Headers/GKMinmaxStrategist.h</key>
 		<data>
-		LIAqxpw1pI6yszYAHhCmZSavtyY=
+		VGOFo0/55IOuo9VofaRNOShuFCM=
+		</data>
+		<key>Headers/GKMonteCarloStrategist.h</key>
+		<data>
+		6z0xcf0IhDlTAm+qutSPpEw2kfo=
+		</data>
+		<key>Headers/GKNoise.h</key>
+		<data>
+		6Aq5t2e8UWMqL2AnjpsR/rYFvDg=
+		</data>
+		<key>Headers/GKNoiseMap.h</key>
+		<data>
+		cNfm1flgWSaqWzbL0Ubp+G0hG+M=
+		</data>
+		<key>Headers/GKNoiseSource.h</key>
+		<data>
+		GOMR0ssMYn9incrrc2Pvf2mscZI=
 		</data>
 		<key>Headers/GKObstacle.h</key>
 		<data>
-		LDu1H9QY0F9/xweniirzyKiHMQg=
+		uOqSg0+wss1/AbWXR9bT3JtkrWQ=
+		</data>
+		<key>Headers/GKObstacleGraph.h</key>
+		<data>
+		Dzc/sdrSDlezuuVWfZQnbCSLCes=
+		</data>
+		<key>Headers/GKOctree.h</key>
+		<data>
+		punMr/U8vPH5fHBCAEjs6ILtyI8=
 		</data>
 		<key>Headers/GKPath.h</key>
 		<data>
-		hnSpiPM2I7nLVLyebiEPkp2l2sA=
+		o+BRUfZllVSpk23jFvjgiklkgjE=
+		</data>
+		<key>Headers/GKPrimitives.h</key>
+		<data>
+		t1lbRHnjjT4WV5FkhZ+jIqNAvkk=
+		</data>
+		<key>Headers/GKQuadtree.h</key>
+		<data>
+		IfVSUlWCEeqcAhTCF2ZpZbQ/qvQ=
+		</data>
+		<key>Headers/GKRTree.h</key>
+		<data>
+		g/ow+8+aIFyNXEPvC0V1mzoV2vc=
 		</data>
 		<key>Headers/GKRandomDistribution.h</key>
 		<data>
-		pxpYxeEXerLao6/EI1h/gdzO7Hk=
+		bArCO8Ja74Iqi9+putsbuVUDuq4=
 		</data>
 		<key>Headers/GKRandomSource.h</key>
 		<data>
-		JGmhigukngHDOoK6atVIxkxNL6U=
+		+O1pbLe+QfURGBYC2tdRbwejp3s=
 		</data>
 		<key>Headers/GKRuleSystem.h</key>
 		<data>
 		n1xWGyTHYg0iNIYjX82oLBXM6gI=
 		</data>
+		<key>Headers/GKSKNodeComponent.h</key>
+		<data>
+		vyA8DmAJCw5eP0bT+ck0XOxyYwI=
+		</data>
+		<key>Headers/GKScene.h</key>
+		<data>
+		ik45f0UacZLWBRdcZmS/6YCOfjw=
+		</data>
 		<key>Headers/GKState.h</key>
 		<data>
-		aZ6jxh7e4Mjtee6u6XbMRKoAyKE=
+		Mrggr1h67U3nxbERPbzft3PliUc=
 		</data>
 		<key>Headers/GKStateMachine.h</key>
 		<data>
-		/CGxioyH9PV7u7s8Mj7zMzwFfcI=
+		IJ0yHKTMeZCQblinaMaMoEdj/Oc=
 		</data>
 		<key>Headers/GKStrategist.h</key>
 		<data>
-		A1AgOdkZgjQYtsYLdokEZp31Yq0=
+		MR2wyGc61eQNWYLW6tYvlvHJD0k=
+		</data>
+		<key>Headers/GKVersion.h</key>
+		<data>
+		TXTzBX7LYTQWG75eI4Uxq86d78Q=
 		</data>
 		<key>Headers/GameplayKit.h</key>
 		<data>
-		0vrVrGNDXmCh3/eBty7Hi7pZ7wA=
+		0TJ6Fc3qoOS5TcE0qD7Kx4UHc58=
 		</data>
 		<key>Headers/GameplayKitBase.h</key>
 		<data>
-		kdmmGQtUB1Ijzg4BC50MIyGe3QQ=
+		QHHviPTzRbPfKEL9sr/HysH2/HI=
+		</data>
+		<key>Headers/SpriteKit+Additions.h</key>
+		<data>
+		5h2OG/0z9UH6TCkTQ5A3hp48nSc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0pdm387445bsUVXj0j/D2Z0lN+s=
+		k4Z1yM2DUCR2HyEDmveFmBG2/h8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,79 +161,147 @@
 	<dict>
 		<key>Headers/GKAgent.h</key>
 		<data>
-		/JH3WNmyvEXgG72oRmNyzx2lcHY=
+		ZpQEeF9rvEAUMyzbP46czzQEWLk=
 		</data>
 		<key>Headers/GKBehavior.h</key>
 		<data>
-		yPqLBTou5zMu1E8k/JHf8TkOyUE=
+		EPjOgSCeU9Q41IxPp0M4+dxqlAg=
 		</data>
 		<key>Headers/GKComponent.h</key>
 		<data>
-		5J7dIWMImTkj8iK95v4s6RLlGaA=
+		gkKLRXOHngSM/MARZ1qxx6nvbKg=
+		</data>
+		<key>Headers/GKCompositeBehavior.h</key>
+		<data>
+		x2bllHnRW3EnepJPFFJ+9Nsr7FY=
+		</data>
+		<key>Headers/GKDecisionTree.h</key>
+		<data>
+		2k7I8Fw5Tk5hzHCtOxFmk6WwRHA=
 		</data>
 		<key>Headers/GKEntity.h</key>
 		<data>
-		maKd1wDkZ3wm4/TAkgsPvCxag+E=
+		vWAp7KvVsB2CugayneylcGXzGLA=
 		</data>
 		<key>Headers/GKGameModel.h</key>
 		<data>
-		7e1da/Ap+Sb6hc3HPC9hm7af7eQ=
+		SJjawZ28PZmOikPiWSVbYGh/tGQ=
 		</data>
 		<key>Headers/GKGoal.h</key>
 		<data>
-		hXPqayU8593aPORLJRNRm+eYQeU=
+		uM2G7i3XRrd0lfO9o7Nxl+7VGT4=
 		</data>
 		<key>Headers/GKGraph.h</key>
 		<data>
-		3vNxHT/xw4yOjOep4FG/fcJ+x3k=
+		4GWiqUjqUJeR+38TkLiddS2DEjc=
 		</data>
 		<key>Headers/GKGraphNode.h</key>
 		<data>
-		li8gayY4EkwMXcmJTqrktJZHtk4=
+		ENclkQeUyC6MeM2dpN60p6rAb4M=
+		</data>
+		<key>Headers/GKGridGraph.h</key>
+		<data>
+		uD3TcHyMPGWwi7GxjQJ3RZZfk64=
+		</data>
+		<key>Headers/GKMeshGraph.h</key>
+		<data>
+		sXZsOHUwmfMUGJCigoNZ740tXHk=
 		</data>
 		<key>Headers/GKMinmaxStrategist.h</key>
 		<data>
-		LIAqxpw1pI6yszYAHhCmZSavtyY=
+		VGOFo0/55IOuo9VofaRNOShuFCM=
+		</data>
+		<key>Headers/GKMonteCarloStrategist.h</key>
+		<data>
+		6z0xcf0IhDlTAm+qutSPpEw2kfo=
+		</data>
+		<key>Headers/GKNoise.h</key>
+		<data>
+		6Aq5t2e8UWMqL2AnjpsR/rYFvDg=
+		</data>
+		<key>Headers/GKNoiseMap.h</key>
+		<data>
+		cNfm1flgWSaqWzbL0Ubp+G0hG+M=
+		</data>
+		<key>Headers/GKNoiseSource.h</key>
+		<data>
+		GOMR0ssMYn9incrrc2Pvf2mscZI=
 		</data>
 		<key>Headers/GKObstacle.h</key>
 		<data>
-		LDu1H9QY0F9/xweniirzyKiHMQg=
+		uOqSg0+wss1/AbWXR9bT3JtkrWQ=
+		</data>
+		<key>Headers/GKObstacleGraph.h</key>
+		<data>
+		Dzc/sdrSDlezuuVWfZQnbCSLCes=
+		</data>
+		<key>Headers/GKOctree.h</key>
+		<data>
+		punMr/U8vPH5fHBCAEjs6ILtyI8=
 		</data>
 		<key>Headers/GKPath.h</key>
 		<data>
-		hnSpiPM2I7nLVLyebiEPkp2l2sA=
+		o+BRUfZllVSpk23jFvjgiklkgjE=
+		</data>
+		<key>Headers/GKPrimitives.h</key>
+		<data>
+		t1lbRHnjjT4WV5FkhZ+jIqNAvkk=
+		</data>
+		<key>Headers/GKQuadtree.h</key>
+		<data>
+		IfVSUlWCEeqcAhTCF2ZpZbQ/qvQ=
+		</data>
+		<key>Headers/GKRTree.h</key>
+		<data>
+		g/ow+8+aIFyNXEPvC0V1mzoV2vc=
 		</data>
 		<key>Headers/GKRandomDistribution.h</key>
 		<data>
-		pxpYxeEXerLao6/EI1h/gdzO7Hk=
+		bArCO8Ja74Iqi9+putsbuVUDuq4=
 		</data>
 		<key>Headers/GKRandomSource.h</key>
 		<data>
-		JGmhigukngHDOoK6atVIxkxNL6U=
+		+O1pbLe+QfURGBYC2tdRbwejp3s=
 		</data>
 		<key>Headers/GKRuleSystem.h</key>
 		<data>
 		n1xWGyTHYg0iNIYjX82oLBXM6gI=
 		</data>
+		<key>Headers/GKSKNodeComponent.h</key>
+		<data>
+		vyA8DmAJCw5eP0bT+ck0XOxyYwI=
+		</data>
+		<key>Headers/GKScene.h</key>
+		<data>
+		ik45f0UacZLWBRdcZmS/6YCOfjw=
+		</data>
 		<key>Headers/GKState.h</key>
 		<data>
-		aZ6jxh7e4Mjtee6u6XbMRKoAyKE=
+		Mrggr1h67U3nxbERPbzft3PliUc=
 		</data>
 		<key>Headers/GKStateMachine.h</key>
 		<data>
-		/CGxioyH9PV7u7s8Mj7zMzwFfcI=
+		IJ0yHKTMeZCQblinaMaMoEdj/Oc=
 		</data>
 		<key>Headers/GKStrategist.h</key>
 		<data>
-		A1AgOdkZgjQYtsYLdokEZp31Yq0=
+		MR2wyGc61eQNWYLW6tYvlvHJD0k=
+		</data>
+		<key>Headers/GKVersion.h</key>
+		<data>
+		TXTzBX7LYTQWG75eI4Uxq86d78Q=
 		</data>
 		<key>Headers/GameplayKit.h</key>
 		<data>
-		0vrVrGNDXmCh3/eBty7Hi7pZ7wA=
+		0TJ6Fc3qoOS5TcE0qD7Kx4UHc58=
 		</data>
 		<key>Headers/GameplayKitBase.h</key>
 		<data>
-		kdmmGQtUB1Ijzg4BC50MIyGe3QQ=
+		QHHviPTzRbPfKEL9sr/HysH2/HI=
+		</data>
+		<key>Headers/SpriteKit+Additions.h</key>
+		<data>
+		5h2OG/0z9UH6TCkTQ5A3hp48nSc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

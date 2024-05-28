@@ -1,0 +1,11 @@
+<xmlui>
+<page>
+<navigationBar title="Verification Failed" hidesBackButton="false"/>
+<tableView>
+<section footer="Please retry activation."/>
+<section>
+<buttonRow align="center" label="Try Again" name="tryAgain"/>
+</section>
+</tableView>
+</page>
+</xmlui>

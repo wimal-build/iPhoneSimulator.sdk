@@ -2,7 +2,7 @@
 //  UIAccessibilityConstants.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -97,6 +97,12 @@ UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitAllowsDirectInteraction N
  stop scrolling when it detects the content has not changed.
  */
 UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitCausesPageTurn NS_AVAILABLE_IOS(5_0);
+
+/*
+ Used when a view or accessibility container represents an ordered list of tabs.
+ The object with this trait should return NO for isAccessibilityElement.
+ */
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitTabBar NS_AVAILABLE_IOS(10_0);
 
 /*
  Accessibility Notifications

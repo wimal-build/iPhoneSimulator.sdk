@@ -21,8 +21,7 @@ language = ENU
 /E=MC²/ --> "E=MC squared"
 
 #  these might be covered in a music-specific text-conditioning rule in Voice Control
-/feat\./i --> "featuring" 
-/feat /i --> "featuring" 
+/\bfeat(\.)/i --> "featuring"
 
 
 # rule for "dot com" bug  (radar 7768195 Bugzilla16288)

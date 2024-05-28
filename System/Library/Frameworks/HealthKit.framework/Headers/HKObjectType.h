@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class HKCategoryType;
 @class HKCharacteristicType;
 @class HKCorrelationType;
+@class HKDocumentType;
 @class HKQuantityType;
 @class HKUnit;
 @class HKWorkoutType;
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class         HKObjectType
  @abstract      An abstract class representing a type of object that can be stored by HealthKit.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKObjectType : NSObject <NSSecureCoding, NSCopying>
 
 /*!
@@ -34,20 +35,21 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 
 - (instancetype)init NS_UNAVAILABLE;
 
-+ (nullable HKQuantityType *)quantityTypeForIdentifier:(NSString *)identifier;
-+ (nullable HKCategoryType *)categoryTypeForIdentifier:(NSString *)identifier;
-+ (nullable HKCharacteristicType *)characteristicTypeForIdentifier:(NSString *)identifier;
-+ (nullable HKCorrelationType *)correlationTypeForIdentifier:(NSString *)identifier;
++ (nullable HKQuantityType *)quantityTypeForIdentifier:(HKQuantityTypeIdentifier)identifier;
++ (nullable HKCategoryType *)categoryTypeForIdentifier:(HKCategoryTypeIdentifier)identifier;
++ (nullable HKCharacteristicType *)characteristicTypeForIdentifier:(HKCharacteristicTypeIdentifier)identifier;
++ (nullable HKCorrelationType *)correlationTypeForIdentifier:(HKCorrelationTypeIdentifier)identifier;
++ (nullable HKDocumentType *)documentTypeForIdentifier:(HKDocumentTypeIdentifier)identifier HK_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
 + (HKWorkoutType *)workoutType;
-+ (HKActivitySummaryType *)activitySummaryType NS_AVAILABLE_IOS(9_3);
++ (HKActivitySummaryType *)activitySummaryType HK_AVAILABLE_IOS_WATCHOS(9_3, 2_2);
 
 @end
 
 /*!
  @class         HKCharacteristicType
- @abstract      Represents a type of object that desribes a characteristic of the user (such as date of birth).
+ @abstract      Represents a type of object that describes a characteristic of the user (such as date of birth).
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKCharacteristicType : HKObjectType
 @end
 
@@ -55,7 +57,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @class         HKSampleType
  @abstract      Represents a type of HKSample.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKSampleType : HKObjectType
 @end
 
@@ -63,7 +65,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @class         HKCategoryType
  @abstract      Represent a type of HKCategorySample.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKCategoryType : HKSampleType
 @end
 
@@ -71,7 +73,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @class         HKCorrelationType
  @abstract      Represents a type of HKCorrelation
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKCorrelationType : HKSampleType
 @end
 
@@ -85,13 +87,21 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 typedef NS_ENUM(NSInteger, HKQuantityAggregationStyle) {
     HKQuantityAggregationStyleCumulative = 0,
     HKQuantityAggregationStyleDiscrete,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
+
+/*!
+ @class         HKDocumentType
+ @abstract      Represents a type of HKDocument.
+ */
+HK_CLASS_AVAILABLE_IOS_ONLY(10_0)
+@interface HKDocumentType : HKSampleType
+@end
 
 /*!
  @class         HKQuantityType
  @abstract      Represents types of HKQuantitySamples.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKQuantityType : HKSampleType
 
 @property (readonly) HKQuantityAggregationStyle aggregationStyle;
@@ -109,7 +119,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @class         HKCategoryType
  @abstract      Represents a workout or exercise
  */
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKWorkoutType : HKSampleType
 @end
 
@@ -120,5 +130,6 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 HK_CLASS_AVAILABLE_IOS_WATCHOS(9_3, 2_2)
 @interface HKActivitySummaryType : HKObjectType
 @end
+
 
 NS_ASSUME_NONNULL_END

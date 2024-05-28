@@ -6,7 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		4yhCdXD1AHDHjOiPzmkp3d5vOOo=
+		Lw7tDCENM/jrnXxEkCygdsqfj5Y=
+		</data>
+		<key>SettingsSearchManifest.plist</key>
+		<data>
+		GHIzV76aCTOoS2Rqlf8Zva3FXwY=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -21,7 +25,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WfGFihZKPr/abd7QUlPA+CAMXkM=
+			6MEjKnfrClA10mgf3ZjSx5t6Q+s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JtOZP37hbyGFIHMzrVN6iZIV/Vo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,6 +57,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0N8vqCg1q1N0ccwRxrscQilctF8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -62,6 +84,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Orjyh9m/PPYaCvpbHcWGcbNoOeI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -75,7 +106,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NkoG58nZGzc3esQXtf0+gZHqADo=
+			JBr1dIlL6/0suHA+i4UFC2jwubQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xZS6Cwp3FsJGf4xKqLnsIk1lbPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,7 +133,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZZEBye/gPVszjgYYVP5zGPqzFlI=
+			d2dT4dAcMByk21KNI4xQFYPBDpM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8LkzS4SGHJen03i+FTG87ThLC6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -111,7 +160,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IedFVTuCrZF7A+Ti7zNlrQskM3g=
+			cv8wej+N338JzkY6FFGg39RkRVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ia1MWsE1EcP0NTp0YA/Ho7uNnuQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -134,6 +192,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VJSZIWS57xgK4a+4r2IBSKRSFp8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -147,7 +214,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pp2IArkELDy84oytNORAqrNd7dY=
+			s4exWy6nRgVNtFV50J33R9nDln4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOq0HpP5tHTuMS8q4kcFScl5/dM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -170,6 +246,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VJSZIWS57xgK4a+4r2IBSKRSFp8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -183,7 +268,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e/+3iCW+dlN+kd/i0RxHVUEuZxU=
+			1lLW2eDyRtIXYiuffJdmzvqJkzM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PW1StB7r0/DkbsVLATdxTxaPJxA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,6 +300,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es_419.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			40XnYo/6rby3lUMTfBykFzLZzRU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -219,7 +322,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rbFPAv6oBEXEu4StMkZ+9bWYCzI=
+			xgGhPPGfFxxpHu8KfP+e1qaa3TM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hh7SGRgB0VXVdCFL8MRhQ+IRXDo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -242,6 +354,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qTYYFGY3L5+zPuu0oacbsKtceGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -256,6 +377,15 @@
 			<key>hash</key>
 			<data>
 			1TMYdUvAqty39jqpaM+2rFY8If0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVT5mBh1Xv/OeMwW/upgY80AydQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -278,6 +408,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w+mHdnC/+WWGnv4UxtxUG/ySFo0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -291,7 +430,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WroK+rik1JOu47sgykf2zOikVqQ=
+			ll4LGVisFh0456IfJlyu1wMKV5c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zccL+Ws1uMrEMa51XQ8vf6S2w3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -309,7 +457,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qZ03sa1xPMFUnXZAh3eZk6zZHi0=
+			6lPhxjpAZwgbT17i6/4cvbETXHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			splxZuKPmFOd4iTk4EPepWX8XK4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -327,7 +484,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bHnOri1oxdUq5Hr/OA3MBwSk/kM=
+			1TeCzIvLeJyXCCEgGiNaJpJ9IdA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			spQAvwf2aKWGpS3gpXFWTsuI32w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -350,6 +516,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KpogHKa8NGO2Vn3/M6DOFBxy3XY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>it.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -364,6 +539,15 @@
 			<key>hash</key>
 			<data>
 			PAiOi+D4+r83+R6+6gdr5QlTq8s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hF4zkF281S541SkzzQ33N3tyc+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -386,6 +570,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7uBEtiX5kYfr8ch2dYI5mvWsU8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -400,6 +593,15 @@
 			<key>hash</key>
 			<data>
 			m6tiZCjVV1vDsVgC4BBXRy1HWD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XrU79JshiIy9leheDFR1nZ4LJvQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -422,6 +624,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rp/seRMGobTVYndE/zaDgOWGox8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>nl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -435,7 +646,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jqi8dMziirAhlfSKlRKQGJyMDys=
+			0/1Maw6wqlWAXgwRV22i0VQwNB0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B7Um/9fF7aCNZj8GiUFL5MSrat0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -453,7 +673,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bPO80FBIn4Cwbv/JCqhOoVuJ5mI=
+			hhCd41AmMoIw/4iRk48xJq6s0Q4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dXj9auo9TWajrsbKjwG3i5gjAos=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -471,7 +700,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R9F5dAmz76cyVTASWMJdHimfU8o=
+			yBR0YK4GZ3DCXBMiknQvWuOuxvI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EYzsv2uBxt1pR2wVwW9w5Si5QCk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -494,6 +732,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wNLFQjoYOLKL/0lQhIrZsAm+Y80=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -508,6 +755,15 @@
 			<key>hash</key>
 			<data>
 			JDfGOcjib+HIJ/sD2X1uKOwD0OA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hf6mu0hzLwp21I38BC6SoRVmTDY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -530,6 +786,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eh4Hnjis7MZif5SHFI7EdYbV9bA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -543,7 +808,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VkPc45VtQK7Axh+vDqqR2icVcDI=
+			PGkvGVrAy709z8n1yAHuwLsOgz8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VRl3DXyMXuGUtiSZ53TbUa99K7I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -566,6 +840,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yz2l6XJRhFdGfBlQ+xS1EGKav5Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -584,13 +867,22 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gyibNdd3CRZNhuUY900HBICFKZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>syncGizmoLogo-compact@2x.png</key>
 		<data>
-		owVg/8qbiCI9Oq04mvBraFhXOKg=
+		d9IsxRNHkUPJoz8p1ikd6D1olR8=
 		</data>
 		<key>syncGizmoLogo-regular@2x.png</key>
 		<data>
-		Vr/FboBcy68//sH48Jpf2XypWG0=
+		MFMFyZs4oj1/bajYsxzF080o7pU=
 		</data>
 		<key>syncLogo-compact@2x.png</key>
 		<data>
@@ -610,19 +902,19 @@
 		</data>
 		<key>syncLogo-v2-compact@2x.png</key>
 		<data>
-		swhi4R4rawG0yVjPSgoWtJYzUMc=
+		AReq3wGiVHmc3uUfw9QhlRYipfo=
 		</data>
 		<key>syncLogo-v2-compact@3x.png</key>
 		<data>
-		oQ1RmLFELWudlSHeshcG3UnRmSc=
+		9VFCJhanwsO/xywM3mR25sAiwow=
 		</data>
 		<key>syncLogo-v2-regular@2x.png</key>
 		<data>
-		DRxSZBs4kYQT0j0U6L8cVFbtXNM=
+		Xb54IhbPmLRp3/vw1QnqWEhIMu8=
 		</data>
 		<key>syncLogo-v2-regular@3x.png</key>
 		<data>
-		HnmZmDt4n/1O7ZA4IkgK2n66ed0=
+		jJSlB1cYe+9Si82g8fnCFnV5eYk=
 		</data>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
@@ -642,6 +934,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n8ES1CUdAHm1wVrmiko5vdPWEYY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -655,7 +956,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5M/QOc2OOyyWjU5CKhaA8l8jJGE=
+			0V+EVXvCFpJx7fJa17K+q2nXmz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wHf69ZwpGq356FuG4w9QYPi1jyQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -673,7 +983,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YOyqlycSuxnjsg5Lj0jm1vYd+QU=
+			1/r38Xy/EEbLwGQi31qI9036NR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bu/bqI+HUZcBiadbjshVnbFDcfg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -691,7 +1010,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FJbtQqh5Af8AK2Z6u6P2AtoiGs4=
+			hmczFd/zgb3JNGjM8kVtY0z7VGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oOdqSo9Eh4nYnmqg0AJbBBsU72A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -722,6 +1050,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6PBQ8cVX1Ci/VWmUFPPM67XNfXA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -735,7 +1072,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			63ET9PZFCWuEbSu9zLfQgokmkuw=
+			70wxDkIBSSSRsNtlpBWBWqNyqwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g9NWFEccb6pFpE704LS9K0fiN+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -754,6 +1100,15 @@
 			<key>hash</key>
 			<data>
 			+3ALnnGwgBXax9bR7PKWCGEwn0g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XzZQACEzJtG4Sy1tVxRhwkYfNY0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,6 +1116,10 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>SettingsSearchManifest.plist</key>
+		<data>
+		GHIzV76aCTOoS2Rqlf8Zva3FXwY=
+		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -774,7 +1133,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WfGFihZKPr/abd7QUlPA+CAMXkM=
+			6MEjKnfrClA10mgf3ZjSx5t6Q+s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JtOZP37hbyGFIHMzrVN6iZIV/Vo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -797,6 +1165,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0N8vqCg1q1N0ccwRxrscQilctF8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -815,6 +1192,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Orjyh9m/PPYaCvpbHcWGcbNoOeI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -828,7 +1214,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NkoG58nZGzc3esQXtf0+gZHqADo=
+			JBr1dIlL6/0suHA+i4UFC2jwubQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xZS6Cwp3FsJGf4xKqLnsIk1lbPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -846,7 +1241,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZZEBye/gPVszjgYYVP5zGPqzFlI=
+			d2dT4dAcMByk21KNI4xQFYPBDpM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8LkzS4SGHJen03i+FTG87ThLC6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -864,7 +1268,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IedFVTuCrZF7A+Ti7zNlrQskM3g=
+			cv8wej+N338JzkY6FFGg39RkRVk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ia1MWsE1EcP0NTp0YA/Ho7uNnuQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -887,6 +1300,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VJSZIWS57xgK4a+4r2IBSKRSFp8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -900,7 +1322,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pp2IArkELDy84oytNORAqrNd7dY=
+			s4exWy6nRgVNtFV50J33R9nDln4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOq0HpP5tHTuMS8q4kcFScl5/dM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -923,6 +1354,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VJSZIWS57xgK4a+4r2IBSKRSFp8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -936,7 +1376,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e/+3iCW+dlN+kd/i0RxHVUEuZxU=
+			1lLW2eDyRtIXYiuffJdmzvqJkzM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PW1StB7r0/DkbsVLATdxTxaPJxA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -959,6 +1408,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es_419.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			40XnYo/6rby3lUMTfBykFzLZzRU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -972,7 +1430,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rbFPAv6oBEXEu4StMkZ+9bWYCzI=
+			xgGhPPGfFxxpHu8KfP+e1qaa3TM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hh7SGRgB0VXVdCFL8MRhQ+IRXDo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -995,6 +1462,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qTYYFGY3L5+zPuu0oacbsKtceGg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1009,6 +1485,15 @@
 			<key>hash</key>
 			<data>
 			1TMYdUvAqty39jqpaM+2rFY8If0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVT5mBh1Xv/OeMwW/upgY80AydQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1031,6 +1516,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w+mHdnC/+WWGnv4UxtxUG/ySFo0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1044,7 +1538,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WroK+rik1JOu47sgykf2zOikVqQ=
+			ll4LGVisFh0456IfJlyu1wMKV5c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zccL+Ws1uMrEMa51XQ8vf6S2w3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1062,7 +1565,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qZ03sa1xPMFUnXZAh3eZk6zZHi0=
+			6lPhxjpAZwgbT17i6/4cvbETXHU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			splxZuKPmFOd4iTk4EPepWX8XK4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1080,7 +1592,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bHnOri1oxdUq5Hr/OA3MBwSk/kM=
+			1TeCzIvLeJyXCCEgGiNaJpJ9IdA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			spQAvwf2aKWGpS3gpXFWTsuI32w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1103,6 +1624,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KpogHKa8NGO2Vn3/M6DOFBxy3XY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>it.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1117,6 +1647,15 @@
 			<key>hash</key>
 			<data>
 			PAiOi+D4+r83+R6+6gdr5QlTq8s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hF4zkF281S541SkzzQ33N3tyc+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1139,6 +1678,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7uBEtiX5kYfr8ch2dYI5mvWsU8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1153,6 +1701,15 @@
 			<key>hash</key>
 			<data>
 			m6tiZCjVV1vDsVgC4BBXRy1HWD8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XrU79JshiIy9leheDFR1nZ4LJvQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1175,6 +1732,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rp/seRMGobTVYndE/zaDgOWGox8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>nl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1188,7 +1754,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jqi8dMziirAhlfSKlRKQGJyMDys=
+			0/1Maw6wqlWAXgwRV22i0VQwNB0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B7Um/9fF7aCNZj8GiUFL5MSrat0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1206,7 +1781,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bPO80FBIn4Cwbv/JCqhOoVuJ5mI=
+			hhCd41AmMoIw/4iRk48xJq6s0Q4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dXj9auo9TWajrsbKjwG3i5gjAos=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1224,7 +1808,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R9F5dAmz76cyVTASWMJdHimfU8o=
+			yBR0YK4GZ3DCXBMiknQvWuOuxvI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EYzsv2uBxt1pR2wVwW9w5Si5QCk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1247,6 +1840,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wNLFQjoYOLKL/0lQhIrZsAm+Y80=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1261,6 +1863,15 @@
 			<key>hash</key>
 			<data>
 			JDfGOcjib+HIJ/sD2X1uKOwD0OA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hf6mu0hzLwp21I38BC6SoRVmTDY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1283,6 +1894,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eh4Hnjis7MZif5SHFI7EdYbV9bA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1296,7 +1916,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VkPc45VtQK7Axh+vDqqR2icVcDI=
+			PGkvGVrAy709z8n1yAHuwLsOgz8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VRl3DXyMXuGUtiSZ53TbUa99K7I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1319,6 +1948,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yz2l6XJRhFdGfBlQ+xS1EGKav5Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1337,13 +1975,22 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gyibNdd3CRZNhuUY900HBICFKZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>syncGizmoLogo-compact@2x.png</key>
 		<data>
-		owVg/8qbiCI9Oq04mvBraFhXOKg=
+		d9IsxRNHkUPJoz8p1ikd6D1olR8=
 		</data>
 		<key>syncGizmoLogo-regular@2x.png</key>
 		<data>
-		Vr/FboBcy68//sH48Jpf2XypWG0=
+		MFMFyZs4oj1/bajYsxzF080o7pU=
 		</data>
 		<key>syncLogo-compact@2x.png</key>
 		<data>
@@ -1363,19 +2010,19 @@
 		</data>
 		<key>syncLogo-v2-compact@2x.png</key>
 		<data>
-		swhi4R4rawG0yVjPSgoWtJYzUMc=
+		AReq3wGiVHmc3uUfw9QhlRYipfo=
 		</data>
 		<key>syncLogo-v2-compact@3x.png</key>
 		<data>
-		oQ1RmLFELWudlSHeshcG3UnRmSc=
+		9VFCJhanwsO/xywM3mR25sAiwow=
 		</data>
 		<key>syncLogo-v2-regular@2x.png</key>
 		<data>
-		DRxSZBs4kYQT0j0U6L8cVFbtXNM=
+		Xb54IhbPmLRp3/vw1QnqWEhIMu8=
 		</data>
 		<key>syncLogo-v2-regular@3x.png</key>
 		<data>
-		HnmZmDt4n/1O7ZA4IkgK2n66ed0=
+		jJSlB1cYe+9Si82g8fnCFnV5eYk=
 		</data>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1395,6 +2042,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n8ES1CUdAHm1wVrmiko5vdPWEYY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1408,7 +2064,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5M/QOc2OOyyWjU5CKhaA8l8jJGE=
+			0V+EVXvCFpJx7fJa17K+q2nXmz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wHf69ZwpGq356FuG4w9QYPi1jyQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1426,7 +2091,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YOyqlycSuxnjsg5Lj0jm1vYd+QU=
+			1/r38Xy/EEbLwGQi31qI9036NR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bu/bqI+HUZcBiadbjshVnbFDcfg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1444,7 +2118,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FJbtQqh5Af8AK2Z6u6P2AtoiGs4=
+			hmczFd/zgb3JNGjM8kVtY0z7VGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oOdqSo9Eh4nYnmqg0AJbBBsU72A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1475,6 +2158,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6PBQ8cVX1Ci/VWmUFPPM67XNfXA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1488,7 +2180,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			63ET9PZFCWuEbSu9zLfQgokmkuw=
+			70wxDkIBSSSRsNtlpBWBWqNyqwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g9NWFEccb6pFpE704LS9K0fiN+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1507,6 +2208,15 @@
 			<key>hash</key>
 			<data>
 			+3ALnnGwgBXax9bR7PKWCGEwn0g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SettingsSearchManifest.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XzZQACEzJtG4Sy1tVxRhwkYfNY0=
 			</data>
 			<key>optional</key>
 			<true/>

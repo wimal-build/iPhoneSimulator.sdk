@@ -2,7 +2,7 @@
 //  UIPasteboard.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,31 +10,43 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-UIKIT_EXTERN NSString *const UIPasteboardNameGeneral __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIPasteboardNameFind __TVOS_PROHIBITED;
+#if UIKIT_STRING_ENUMS
+typedef NSString * UIPasteboardName NS_EXTENSIBLE_STRING_ENUM;
+#else
+typedef NSString * UIPasteboardName;
+#endif
+
+UIKIT_EXTERN UIPasteboardName const UIPasteboardNameGeneral __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIPasteboardNameFind __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(3_0, 10_0, "The Find pasteboard is no longer available.");
 
 @class UIColor, UIImage;
 
-NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED @interface UIPasteboard : NSObject
-{
-  @private
-    NSString * __nullable _name;
-}
+NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UIPasteboard : NSObject
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) UIPasteboard *generalPasteboard;
+#else
 + (UIPasteboard *)generalPasteboard;
-+ (nullable UIPasteboard *)pasteboardWithName:(NSString *)pasteboardName create:(BOOL)create;
+#endif
+
++ (nullable UIPasteboard *)pasteboardWithName:(UIPasteboardName)pasteboardName create:(BOOL)create;
 + (UIPasteboard *)pasteboardWithUniqueName;
 
-@property(readonly,nonatomic) NSString *name;
+@property(readonly,nonatomic) UIPasteboardName name;
 
-+ (void)removePasteboardWithName:(NSString *)pasteboardName;
++ (void)removePasteboardWithName:(UIPasteboardName)pasteboardName;
 
-@property(getter=isPersistent,nonatomic) BOOL persistent;
+@property(readonly,getter=isPersistent,nonatomic) BOOL persistent;
+- (void)setPersistent:(BOOL)persistent NS_DEPRECATED_IOS(3_0, 10_0, "Do not set persistence on pasteboards. This property is set automatically.");
 @property(readonly,nonatomic) NSInteger changeCount;
 
 // First item
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) NSArray<NSString *> * pasteboardTypes;
+#else
 - (NSArray<NSString *> *)pasteboardTypes;
+#endif
 - (BOOL)containsPasteboardTypes:(NSArray<NSString *> *)pasteboardTypes;
 - (nullable NSData *)dataForPasteboardType:(NSString *)pasteboardType;
 
@@ -46,50 +58,64 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED @interface UIPasteboard : NSObject
 // Multiple items
 
 @property(readonly,nonatomic) NSInteger numberOfItems;
-- (nullable NSArray *)pasteboardTypesForItemSet:(nullable NSIndexSet*)itemSet;
+- (nullable NSArray<NSArray<NSString *> *> *)pasteboardTypesForItemSet:(nullable NSIndexSet*)itemSet;
 
 - (BOOL)containsPasteboardTypes:(NSArray<NSString *> *)pasteboardTypes inItemSet:(nullable NSIndexSet *)itemSet;
-- (nullable NSIndexSet *)itemSetWithPasteboardTypes:(NSArray *)pasteboardTypes;
+- (nullable NSIndexSet *)itemSetWithPasteboardTypes:(NSArray<NSString *> *)pasteboardTypes;
 - (nullable NSArray *)valuesForPasteboardType:(NSString *)pasteboardType inItemSet:(nullable NSIndexSet *)itemSet;
 - (nullable NSArray *)dataForPasteboardType:(NSString *)pasteboardType inItemSet:(nullable NSIndexSet *)itemSet;
 
 // Direct access
 
-@property(nonatomic,copy) NSArray *items;
+@property(nonatomic,copy) NSArray<NSDictionary<NSString *, id> *> *items;
 - (void)addItems:(NSArray<NSDictionary<NSString *, id> *> *)items;
+
+typedef NSString * UIPasteboardOption NS_EXTENSIBLE_STRING_ENUM NS_AVAILABLE_IOS(10_0);
+
+UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionExpirationDate __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0) NS_SWIFT_NAME(UIPasteboardOption.expirationDate); // Value: NSDate.
+UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionLocalOnly __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0) NS_SWIFT_NAME(UIPasteboardOption.localOnly); // Value: NSNumber, boolean.
+
+- (void)setItems:(NSArray<NSDictionary<NSString *, id> *> *)items options:(NSDictionary<UIPasteboardOption, id> *)options NS_AVAILABLE_IOS(10_0);
+
+@property(nullable,nonatomic,copy) NSString *string __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) NSArray<NSString *> *strings __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+
+@property(nullable,nonatomic,copy) NSURL *URL __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) NSArray<NSURL *> *URLs __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+
+@property(nullable,nonatomic,copy) UIImage *image __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) NSArray<UIImage *> *images __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+
+@property(nullable,nonatomic,copy) UIColor *color __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) NSArray<UIColor *> *colors __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+
+// Queries
+
+@property (nonatomic, readonly) BOOL hasStrings __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) BOOL hasURLs __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) BOOL hasImages __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) BOOL hasColors __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
 
 @end
 
 // Notification
 
-UIKIT_EXTERN NSString *const UIPasteboardChangedNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIPasteboardChangedTypesAddedKey __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIPasteboardChangedTypesRemovedKey __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIPasteboardChangedNotification __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIPasteboardChangedTypesAddedKey __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIPasteboardChangedTypesRemovedKey __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIPasteboardRemovedNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIPasteboardRemovedNotification __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
-// Extensions
+// Types
 
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListString __TVOS_PROHIBITED;
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListURL __TVOS_PROHIBITED;
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListImage __TVOS_PROHIBITED;
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListColor __TVOS_PROHIBITED;
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListString __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListURL __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListImage __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListColor __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
-@interface UIPasteboard(UIPasteboardDataExtensions)
-
-@property(nullable,nonatomic,copy) NSString *string __TVOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<NSString *> *strings __TVOS_PROHIBITED;
-
-@property(nullable,nonatomic,copy) NSURL *URL __TVOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<NSURL *> *URLs __TVOS_PROHIBITED;
-
-@property(nullable,nonatomic,copy) UIImage *image __TVOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<UIImage *> *images __TVOS_PROHIBITED;
-
-@property(nullable,nonatomic,copy) UIColor *color __TVOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<UIColor *> *colors __TVOS_PROHIBITED;
-
-@end
+// Use the following type in setItems: or setItems:options: to automatically insert appropriate UTIs for supported types.
+// Supported types are: NSString, NSURL, UIImage, UIColor, NSAttributedString.
+UIKIT_EXTERN NSString * const UIPasteboardTypeAutomatic __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
 
 NS_ASSUME_NONNULL_END
     

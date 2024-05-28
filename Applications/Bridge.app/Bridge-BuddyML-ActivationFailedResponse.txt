@@ -1,0 +1,9 @@
+<xmlui>
+<navigationBar title="Activation Failed" hidesBackButton="true"/>
+<tableView>
+<section/>
+</tableView>
+<tableView>
+<section footer="This device is not able to complete the activation process. Please press Home and start over. If the issue persists, please visit your nearest Apple Store or Authorized service provider for more information or replacement."/>
+</tableView>
+</xmlui>

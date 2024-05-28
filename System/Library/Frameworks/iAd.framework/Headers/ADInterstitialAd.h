@@ -33,7 +33,7 @@
  * Note that using interstitial ads on iPhones running iOS < 7.0 will cause an
  * exception to be thrown.
  */
-NS_CLASS_AVAILABLE_IOS(4_3) @interface ADInterstitialAd : NSObject
+NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
 
 /*!
  * @property delegate

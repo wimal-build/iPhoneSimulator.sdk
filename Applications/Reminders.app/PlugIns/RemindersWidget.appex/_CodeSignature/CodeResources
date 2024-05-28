@@ -6,21 +6,12 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		XkjTHxhfZ8FW8v3OiLfKx5PTPqc=
+		2oKFDZ0yzmpE4+WpUWqrT6SXzcU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AH9lzCOeCpgRHLojV4NTsKj7GlM=
+		Kg1wKCAM11OqhKpnfbGlUjX3h1I=
 		</data>
-		<key>ar.lproj/General.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EZDC6PRBnuMAXgj04f72DeGPLi0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -30,11 +21,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/General.strings</key>
+		<key>ar.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IeJCrF4mjGc9vho+DJQ3shwyMas=
+			tDL/fUzEtoRRybLn58FeD9hEcuo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -48,11 +39,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/General.strings</key>
+		<key>ca.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n0cRlK/Lx+211i4KV/KJRet8BqI=
+			5Wqsmt2i4Umlp/9VLiFhis8sIL4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -66,11 +57,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/General.strings</key>
+		<key>cs.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bydMgkICtZeeo3NkyoWUdAeFSBg=
+			AizGst3cjAqGhmEQKxHkUfpnwzY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,11 +75,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/General.strings</key>
+		<key>da.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dGDdpMwGK3Cx68YWtvSxBE5iGFI=
+			fjbZXwzrx/xbg2yW1QAMdXZyxUQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -102,11 +93,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/General.strings</key>
+		<key>de.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wUS7zL0c76eViC05q+ncy2Px8qI=
+			0bhWi9RjuA5tPrgeZYwPJUwKA30=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -120,11 +111,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/General.strings</key>
+		<key>el.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SW2nspxjYo50LO3tcz4Hv/yVf/0=
+			PeoO+XMwuQ78xxtPHc/DPR2Ta0g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -138,11 +129,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/General.strings</key>
+		<key>en.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SW2nspxjYo50LO3tcz4Hv/yVf/0=
+			8LoSmzZ/X9I5ZxfVmNc/hNPSg/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -156,11 +147,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/General.strings</key>
+		<key>en_AU.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SW2nspxjYo50LO3tcz4Hv/yVf/0=
+			8LoSmzZ/X9I5ZxfVmNc/hNPSg/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -174,11 +165,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/General.strings</key>
+		<key>en_GB.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z5HK4u6OE4vGlrGwzJvE27LUWqo=
+			8LoSmzZ/X9I5ZxfVmNc/hNPSg/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -192,11 +183,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/General.strings</key>
+		<key>es.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QAHEr3oQjRnofN5f1Miukw4haTw=
+			Qhc5oC5QUflN0W/RWxn5izr8v4Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -210,11 +201,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr.lproj/General.strings</key>
+		<key>fi.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FHdhavpJL7t5mlHRe6OrgvjiynY=
+			CLN817YAUD3iCEetY44CwBV2EE4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -228,11 +219,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/General.strings</key>
+		<key>fr.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJL4LD6lbor2oxceDEVOSkLum1E=
+			hqVQoL16hIudkfRY5V1z2g1PybE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -246,11 +237,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/General.strings</key>
+		<key>fr_CA.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bIzqV89z7YsVEmqXv4wNVy/hWZU=
+			hkq0ztMxVm618LKuYvgEt3RNf+c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -264,11 +255,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/General.strings</key>
+		<key>he.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GKd7xMOIQ2r60QgKXew0youjMH8=
+			Zkei8gD5JGwq2J6FjvmBx1NFqsM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -282,11 +273,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/General.strings</key>
+		<key>hi.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DoYB4YhKGOYpKoj8sfcl2wqbndM=
+			KRN/P9GexqmyNYf5jp/JBeJHyjg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -300,11 +291,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/General.strings</key>
+		<key>hr.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zIy368zlpffWw/5YjYNG4ddo7PE=
+			Crnto6xtK5e7YTywHR2Xyccz2dw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -318,11 +309,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/General.strings</key>
+		<key>hu.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UToqqasiPH3FMmhj+pEFNLoh1/4=
+			B42Lki4voHsUGEALZgq7DWRWnlk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -336,11 +327,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>it.lproj/General.strings</key>
+		<key>id.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uT53BXATNb2fkY7TeGjhgvcEBG4=
+			w+CCbuK8ggRI0XgG7TESUlf9z08=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -354,11 +345,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/General.strings</key>
+		<key>it.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y+0uQZdEFtX74pYPeVRrwSh9wVk=
+			ML51OJFr2H/wyaSFPau6ZaLYlgo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -372,11 +363,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/General.strings</key>
+		<key>ja.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WP12PRH8pIABjyY5SKY7+AHHmx8=
+			0w5JgdMZoWW1Kcu4+S6+hHSVh+k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -390,11 +381,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/General.strings</key>
+		<key>ko.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pg1VuC+k51uofRYNRmEObrl1qG4=
+			iD6/CSUalH3M5YXez4/gjoffM18=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -408,11 +399,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>nl.lproj/General.strings</key>
+		<key>ms.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XCgelqRBYhc0gVw5rxRe5lmBMVw=
+			aPvXC+1rGh3E+yiwf9exKLdGNw0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -426,11 +417,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/General.strings</key>
+		<key>nl.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r+tkcqrQ6n9KendVvHJWJ+ZxAsQ=
+			N4+PYzKImTEg2+mTx4jZAct3djg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -444,11 +435,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/General.strings</key>
+		<key>no.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BunKUrGQAAtzhn6kdC0Zs9LEh24=
+			UJi9vKYhhsw+ZbyRq5p8PblJrbE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -462,11 +453,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/General.strings</key>
+		<key>pl.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DuqoZjxXYU2uOMONWj09XTwWIA0=
+			ixzxtGjvySfOAlBns+Vwx4nhhr0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -480,11 +471,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/General.strings</key>
+		<key>pt.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uHA/QQlq1xkz/Ya46oLbMeCTrTw=
+			ijudOcpN+QJxSPIVvNCh1ap/+kU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -498,11 +489,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/General.strings</key>
+		<key>pt_PT.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jo+l5CJUI3jgjfjx8JVM0rDr5WM=
+			eAYD6dpo5kclKiQ5QBFRb7hywwM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -516,11 +507,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/General.strings</key>
+		<key>ro.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GDitvrQNeFZAplDVNC/P7mYoaRE=
+			2pyv5/Dlh2CoIIU/IR7FYINcBvc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -534,11 +525,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/General.strings</key>
+		<key>ru.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VsyJRGvaLfs/cbpCKW8YVtGkc90=
+			AafoRdjkzWzIrNtbk5as0/mdIa4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -552,11 +543,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/General.strings</key>
+		<key>sk.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rfgLIO8lLGEre0zHlwyaO/6iS5M=
+			ynCEodarxXVEI1nCEnGZp7163Vs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -570,11 +561,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/General.strings</key>
+		<key>sv.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wtaWyOL6Enz73+hiAk0VQ1cy0pI=
+			PdMVnOwPF+7wQbiKjI1DYPvUsyE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -588,11 +579,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/General.strings</key>
+		<key>th.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qUqEWgO4gHKLuX0FDiZZHsbv9S0=
+			A6x9VMJQJDwhV40isifRER6y7rs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -606,11 +597,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/General.strings</key>
+		<key>tr.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YE0hxF/udAbAYDZ4z6S4RPZdIi0=
+			PNY0eI36aKpK/ZgaDCxSJ83qw9I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -624,19 +615,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		ESrbW3XGpKDp1xgYIYdQpA0A2mU=
-		</data>
-		<key>vi.lproj/General.strings</key>
+		<key>uk.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pvHmvuVtRSnI7uVdwkoGWblv2gM=
+			O2eI6xALrxFvlLiTQ6p/qk1cYqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>version.plist</key>
+		<data>
+		1G5I3ngvs8+uB/SgPBYRqJsJalo=
+		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -646,11 +637,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/General.strings</key>
+		<key>vi.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g+f8l+c0pvYUIJLVAATMFXSO/9c=
+			ixXb2lByRM5r6pO4rvJ0pfkmAb8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -664,11 +655,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/General.strings</key>
+		<key>zh_CN.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sh8ur1c1TpPBGNHzkAfqRBTwzgA=
+			ctzJ1AoQS7JflNSWTxBVrCHS/x8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -682,11 +673,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/General.strings</key>
+		<key>zh_HK.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nIKDobPSwNOjkSvLYZp3pzwLME0=
+			1G/N8Veqznoglp6t7TSz+waMPpo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -696,6 +687,15 @@
 			<key>hash</key>
 			<data>
 			gxDzNn7njGNx+R3hz8yV4treGuM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TodayWidget.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F4cC8ZxAPiFUtYeagjnVtTkF7+M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -705,17 +705,8 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		XkjTHxhfZ8FW8v3OiLfKx5PTPqc=
+		2oKFDZ0yzmpE4+WpUWqrT6SXzcU=
 		</data>
-		<key>ar.lproj/General.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EZDC6PRBnuMAXgj04f72DeGPLi0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -725,11 +716,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/General.strings</key>
+		<key>ar.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IeJCrF4mjGc9vho+DJQ3shwyMas=
+			tDL/fUzEtoRRybLn58FeD9hEcuo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -743,11 +734,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/General.strings</key>
+		<key>ca.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n0cRlK/Lx+211i4KV/KJRet8BqI=
+			5Wqsmt2i4Umlp/9VLiFhis8sIL4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,11 +752,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/General.strings</key>
+		<key>cs.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bydMgkICtZeeo3NkyoWUdAeFSBg=
+			AizGst3cjAqGhmEQKxHkUfpnwzY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -779,11 +770,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/General.strings</key>
+		<key>da.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dGDdpMwGK3Cx68YWtvSxBE5iGFI=
+			fjbZXwzrx/xbg2yW1QAMdXZyxUQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -797,11 +788,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/General.strings</key>
+		<key>de.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wUS7zL0c76eViC05q+ncy2Px8qI=
+			0bhWi9RjuA5tPrgeZYwPJUwKA30=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -815,11 +806,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/General.strings</key>
+		<key>el.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SW2nspxjYo50LO3tcz4Hv/yVf/0=
+			PeoO+XMwuQ78xxtPHc/DPR2Ta0g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -833,11 +824,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/General.strings</key>
+		<key>en.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SW2nspxjYo50LO3tcz4Hv/yVf/0=
+			8LoSmzZ/X9I5ZxfVmNc/hNPSg/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -851,11 +842,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/General.strings</key>
+		<key>en_AU.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SW2nspxjYo50LO3tcz4Hv/yVf/0=
+			8LoSmzZ/X9I5ZxfVmNc/hNPSg/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -869,11 +860,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/General.strings</key>
+		<key>en_GB.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z5HK4u6OE4vGlrGwzJvE27LUWqo=
+			8LoSmzZ/X9I5ZxfVmNc/hNPSg/E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -887,11 +878,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/General.strings</key>
+		<key>es.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QAHEr3oQjRnofN5f1Miukw4haTw=
+			Qhc5oC5QUflN0W/RWxn5izr8v4Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -905,11 +896,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr.lproj/General.strings</key>
+		<key>fi.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FHdhavpJL7t5mlHRe6OrgvjiynY=
+			CLN817YAUD3iCEetY44CwBV2EE4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -923,11 +914,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/General.strings</key>
+		<key>fr.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJL4LD6lbor2oxceDEVOSkLum1E=
+			hqVQoL16hIudkfRY5V1z2g1PybE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -941,11 +932,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/General.strings</key>
+		<key>fr_CA.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bIzqV89z7YsVEmqXv4wNVy/hWZU=
+			hkq0ztMxVm618LKuYvgEt3RNf+c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -959,11 +950,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/General.strings</key>
+		<key>he.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GKd7xMOIQ2r60QgKXew0youjMH8=
+			Zkei8gD5JGwq2J6FjvmBx1NFqsM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -977,11 +968,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/General.strings</key>
+		<key>hi.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DoYB4YhKGOYpKoj8sfcl2wqbndM=
+			KRN/P9GexqmyNYf5jp/JBeJHyjg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -995,11 +986,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/General.strings</key>
+		<key>hr.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zIy368zlpffWw/5YjYNG4ddo7PE=
+			Crnto6xtK5e7YTywHR2Xyccz2dw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1013,11 +1004,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/General.strings</key>
+		<key>hu.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UToqqasiPH3FMmhj+pEFNLoh1/4=
+			B42Lki4voHsUGEALZgq7DWRWnlk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1031,11 +1022,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>it.lproj/General.strings</key>
+		<key>id.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uT53BXATNb2fkY7TeGjhgvcEBG4=
+			w+CCbuK8ggRI0XgG7TESUlf9z08=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1049,11 +1040,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/General.strings</key>
+		<key>it.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y+0uQZdEFtX74pYPeVRrwSh9wVk=
+			ML51OJFr2H/wyaSFPau6ZaLYlgo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1067,11 +1058,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/General.strings</key>
+		<key>ja.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WP12PRH8pIABjyY5SKY7+AHHmx8=
+			0w5JgdMZoWW1Kcu4+S6+hHSVh+k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1085,11 +1076,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/General.strings</key>
+		<key>ko.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pg1VuC+k51uofRYNRmEObrl1qG4=
+			iD6/CSUalH3M5YXez4/gjoffM18=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1103,11 +1094,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>nl.lproj/General.strings</key>
+		<key>ms.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XCgelqRBYhc0gVw5rxRe5lmBMVw=
+			aPvXC+1rGh3E+yiwf9exKLdGNw0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1121,11 +1112,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/General.strings</key>
+		<key>nl.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r+tkcqrQ6n9KendVvHJWJ+ZxAsQ=
+			N4+PYzKImTEg2+mTx4jZAct3djg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1139,11 +1130,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/General.strings</key>
+		<key>no.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BunKUrGQAAtzhn6kdC0Zs9LEh24=
+			UJi9vKYhhsw+ZbyRq5p8PblJrbE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1157,11 +1148,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/General.strings</key>
+		<key>pl.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DuqoZjxXYU2uOMONWj09XTwWIA0=
+			ixzxtGjvySfOAlBns+Vwx4nhhr0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1175,11 +1166,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/General.strings</key>
+		<key>pt.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uHA/QQlq1xkz/Ya46oLbMeCTrTw=
+			ijudOcpN+QJxSPIVvNCh1ap/+kU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1193,11 +1184,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/General.strings</key>
+		<key>pt_PT.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jo+l5CJUI3jgjfjx8JVM0rDr5WM=
+			eAYD6dpo5kclKiQ5QBFRb7hywwM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1211,11 +1202,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/General.strings</key>
+		<key>ro.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GDitvrQNeFZAplDVNC/P7mYoaRE=
+			2pyv5/Dlh2CoIIU/IR7FYINcBvc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1229,11 +1220,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/General.strings</key>
+		<key>ru.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VsyJRGvaLfs/cbpCKW8YVtGkc90=
+			AafoRdjkzWzIrNtbk5as0/mdIa4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1247,11 +1238,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/General.strings</key>
+		<key>sk.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rfgLIO8lLGEre0zHlwyaO/6iS5M=
+			ynCEodarxXVEI1nCEnGZp7163Vs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1265,11 +1256,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/General.strings</key>
+		<key>sv.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wtaWyOL6Enz73+hiAk0VQ1cy0pI=
+			PdMVnOwPF+7wQbiKjI1DYPvUsyE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1283,11 +1274,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/General.strings</key>
+		<key>th.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qUqEWgO4gHKLuX0FDiZZHsbv9S0=
+			A6x9VMJQJDwhV40isifRER6y7rs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1301,11 +1292,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/General.strings</key>
+		<key>tr.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YE0hxF/udAbAYDZ4z6S4RPZdIi0=
+			PNY0eI36aKpK/ZgaDCxSJ83qw9I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1319,19 +1310,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		ESrbW3XGpKDp1xgYIYdQpA0A2mU=
-		</data>
-		<key>vi.lproj/General.strings</key>
+		<key>uk.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pvHmvuVtRSnI7uVdwkoGWblv2gM=
+			O2eI6xALrxFvlLiTQ6p/qk1cYqM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>version.plist</key>
+		<data>
+		1G5I3ngvs8+uB/SgPBYRqJsJalo=
+		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1341,11 +1332,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/General.strings</key>
+		<key>vi.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g+f8l+c0pvYUIJLVAATMFXSO/9c=
+			ixXb2lByRM5r6pO4rvJ0pfkmAb8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1359,11 +1350,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/General.strings</key>
+		<key>zh_CN.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sh8ur1c1TpPBGNHzkAfqRBTwzgA=
+			ctzJ1AoQS7JflNSWTxBVrCHS/x8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1377,11 +1368,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/General.strings</key>
+		<key>zh_HK.lproj/TodayWidget.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nIKDobPSwNOjkSvLYZp3pzwLME0=
+			1G/N8Veqznoglp6t7TSz+waMPpo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1391,6 +1382,15 @@
 			<key>hash</key>
 			<data>
 			gxDzNn7njGNx+R3hz8yV4treGuM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/TodayWidget.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F4cC8ZxAPiFUtYeagjnVtTkF7+M=
 			</data>
 			<key>optional</key>
 			<true/>

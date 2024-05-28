@@ -10,3 +10,14 @@
 
 (allow mach-lookup (global-name "com.apple.ak.auth.xpc"))
 (allow mach-lookup (global-name "com.apple.ak.anisette.xpc"))
+
+
+;; Needed to allow consumers access to CoreCDP functionality
+
+(allow mach-lookup (global-name "com.apple.cdp.daemon"))
+(allow mach-lookup (global-name "com.apple.mobile.keybagd.xpc"))
+
+;; Needed to allow consumers to obtain authright when trying to reset password.
+
+(if (entitlement "com.apple.authkit.client.internal")
+    (allow authorization-right-obtain (right-name "com.apple.icloud.passwordreset")))

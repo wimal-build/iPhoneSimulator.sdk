@@ -1,0 +1,500 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 1
+        }
+      ],
+      "name" : "New Year’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{2, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "urban",
+          "entertainment",
+          "nightlife"
+        ]
+      },
+      "uuid" : "425CCD2B-C8C7-42C0-9A8C-BF3C43BDF2F0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "food",
+          "snow",
+          "living_room",
+          "fire",
+          "candle"
+        ]
+      },
+      "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "kitchen",
+          "restaurant",
+          "food"
+        ]
+      },
+      "uuid" : "A15146F0-1D7E-4D75-84EB-BE60A3F8CC06"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 4,
+          "year" : 2000
+        },
+        {
+          "day" : 15,
+          "month" : 4,
+          "year" : 2001
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2002
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2003
+        },
+        {
+          "day" : 11,
+          "month" : 4,
+          "year" : 2004
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2005
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2006
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2007
+        },
+        {
+          "day" : 23,
+          "month" : 3,
+          "year" : 2008
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2009
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 24,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 8,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 27,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 12,
+          "month" : 4,
+          "year" : 2020
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2021
+        },
+        {
+          "day" : 17,
+          "month" : 4,
+          "year" : 2022
+        },
+        {
+          "day" : 9,
+          "month" : 4,
+          "year" : 2023
+        },
+        {
+          "day" : 31,
+          "month" : 3,
+          "year" : 2024
+        },
+        {
+          "day" : 20,
+          "month" : 4,
+          "year" : 2025
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2026
+        },
+        {
+          "day" : 28,
+          "month" : 3,
+          "year" : 2027
+        },
+        {
+          "day" : 16,
+          "month" : 4,
+          "year" : 2028
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2029
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2030
+        },
+        {
+          "day" : 13,
+          "month" : 4,
+          "year" : 2031
+        },
+        {
+          "day" : 28,
+          "month" : 3,
+          "year" : 2032
+        },
+        {
+          "day" : 17,
+          "month" : 4,
+          "year" : 2033
+        },
+        {
+          "day" : 9,
+          "month" : 4,
+          "year" : 2034
+        },
+        {
+          "day" : 25,
+          "month" : 3,
+          "year" : 2035
+        },
+        {
+          "day" : 13,
+          "month" : 4,
+          "year" : 2036
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2037
+        },
+        {
+          "day" : 25,
+          "month" : 4,
+          "year" : 2038
+        },
+        {
+          "day" : 10,
+          "month" : 4,
+          "year" : 2039
+        },
+        {
+          "day" : 1,
+          "month" : 4,
+          "year" : 2040
+        },
+        {
+          "day" : 21,
+          "month" : 4,
+          "year" : 2041
+        },
+        {
+          "day" : 6,
+          "month" : 4,
+          "year" : 2042
+        },
+        {
+          "day" : 29,
+          "month" : 3,
+          "year" : 2043
+        },
+        {
+          "day" : 17,
+          "month" : 4,
+          "year" : 2044
+        },
+        {
+          "day" : 9,
+          "month" : 4,
+          "year" : 2045
+        },
+        {
+          "day" : 25,
+          "month" : 3,
+          "year" : 2046
+        },
+        {
+          "day" : 14,
+          "month" : 4,
+          "year" : 2047
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2048
+        },
+        {
+          "day" : 18,
+          "month" : 4,
+          "year" : 2049
+        }
+      ],
+      "name" : "Easter",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "kitchen",
+          "food",
+          "cake",
+          "culture"
+        ]
+      },
+      "uuid" : "F0218FEF-58A8-427C-A9B9-AB0FC46A56E0"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "restaurant",
+          "nightlife",
+          "entertainment",
+          "concert",
+          "firework"
+        ]
+      },
+      "uuid" : "D3511DF6-691F-4CA5-88E8-AD7A607316C7"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 1
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 4}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment",
+          "food"
+        ]
+      },
+      "uuid" : "C0CF05DA-04ED-4C73-9E20-B385F56C7534"
+    },
+    {
+      "dateRules" : [
+        {
+          "offsetDays" : 1,
+		  "relativeToRule": "F0218FEF-58A8-427C-A9B9-AB0FC46A56E0"
+        }
+      ],
+      "name" : "Easter Monday",
+      "traits" : {
+        "locationTrait" : 1,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 3,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "6AC583D0-51AD-4798-90DB-84EFE66F29C3"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife"
+        ]
+      },
+      "uuid" : "71B2BAC3-09AB-4207-BDC0-C3AC370BF279"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 26,
+          "month" : 12
+        }
+      ],
+      "name" : "St. Stephen’s Day",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "DA82F354-2B02-484C-BE4A-90273C7A43DA"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 6,
+          "month" : 12
+        }
+      ],
+      "name" : "St. Nikolaus",
+      "traits" : {
+        "locationTrait" : 3,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "cake",
+          "kitchen"
+        ]
+      },
+      "uuid" : "BE93EDD3-54AD-4FE1-B91E-75A4B9323F71"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 1,
+          "month" : 8
+        }
+      ],
+      "name" : "National Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "culture"
+        ]
+      },
+      "uuid" : "DEF0F261-B09C-4406-8475-7F4118DAEA34"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "ch",
+    "countryName" : "Switzerland"
+  }
+}

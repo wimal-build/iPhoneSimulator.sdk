@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class HKStatistics;
 
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKStatisticsCollection : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -49,15 +49,15 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 
 @end
 
-HK_CLASS_AVAILABLE_IOS(8_0)
+HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 @interface HKStatisticsCollectionQuery : HKQuery
 
 @property (readonly, strong) NSDate *anchorDate;
 @property (readonly) HKStatisticsOptions options;
 @property (readonly, copy) NSDateComponents *intervalComponents;
 
-@property (nonatomic, copy, nullable) void(^initialResultsHandler)(HKStatisticsCollectionQuery *query, HKStatisticsCollection * __nullable result, NSError * __nullable error);
-@property (nonatomic, copy, nullable) void(^statisticsUpdateHandler)(HKStatisticsCollectionQuery *query, HKStatistics * __nullable statistics, HKStatisticsCollection * __nullable collection, NSError * __nullable error);
+@property (nonatomic, copy, nullable) void(^initialResultsHandler)(HKStatisticsCollectionQuery *query, HKStatisticsCollection * _Nullable result, NSError * _Nullable error);
+@property (nonatomic, copy, nullable) void(^statisticsUpdateHandler)(HKStatisticsCollectionQuery *query, HKStatistics * _Nullable statistics, HKStatisticsCollection * _Nullable collection, NSError * _Nullable error);
 
 - (instancetype)initWithQuantityType:(HKQuantityType *)quantityType
              quantitySamplePredicate:(nullable NSPredicate *)quantitySamplePredicate

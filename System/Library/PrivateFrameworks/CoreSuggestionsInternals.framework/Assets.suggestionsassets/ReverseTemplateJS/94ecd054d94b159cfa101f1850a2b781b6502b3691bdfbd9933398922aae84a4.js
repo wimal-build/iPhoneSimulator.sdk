@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("eventim.de-confirmation-de",function(e){return/^Ihre Bestellung bei/.test(e.subject)},function(e){if(/^Ihre Bestellung bei/.test(e.subject)){var t={};t.hello="Guten Tag",t.total="Gesamt",t.number="Ihre Ordernummer lautet",t.date="Datum / Zeit",t.place="Ort",t.block="Block",t.row="Reihe",t.seatNumber="Platz";var r="de_DE",n=loadHelper("eventim.de-confirmation-skeleton.js");return n(e,r,t)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/1048/1078/1079","SG56cee995")]);

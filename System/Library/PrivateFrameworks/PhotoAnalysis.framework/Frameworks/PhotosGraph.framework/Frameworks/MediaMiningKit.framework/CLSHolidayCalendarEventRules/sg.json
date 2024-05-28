@@ -1,0 +1,479 @@
+{
+  "events" : [
+    {
+      "dateRules" : [
+        {
+          "day" : 5,
+          "month" : 2,
+          "year" : 2000
+        },
+        {
+          "day" : 24,
+          "month" : 1,
+          "year" : 2001
+        },
+        {
+          "day" : 12,
+          "month" : 2,
+          "year" : 2002
+        },
+        {
+          "day" : 1,
+          "month" : 2,
+          "year" : 2003
+        },
+        {
+          "day" : 22,
+          "month" : 1,
+          "year" : 2004
+        },
+        {
+          "day" : 9,
+          "month" : 2,
+          "year" : 2005
+        },
+        {
+          "day" : 30,
+          "month" : 1,
+          "year" : 2006
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2007
+        },
+        {
+          "day" : 7,
+          "month" : 2,
+          "year" : 2008
+        },
+        {
+          "day" : 26,
+          "month" : 1,
+          "year" : 2009
+        },
+        {
+          "day" : 14,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 3,
+          "month" : 2,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 1,
+          "year" : 2012
+        },
+        {
+          "day" : 10,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 31,
+          "month" : 1,
+          "year" : 2014
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2015
+        },
+        {
+          "day" : 8,
+          "month" : 2,
+          "year" : 2016
+        },
+        {
+          "day" : 28,
+          "month" : 2,
+          "year" : 2017
+        },
+        {
+          "day" : 16,
+          "month" : 2,
+          "year" : 2018
+        },
+        {
+          "day" : 5,
+          "month" : 2,
+          "year" : 2019
+        },
+        {
+          "day" : 25,
+          "month" : 1,
+          "year" : 2020
+        },
+        {
+          "day" : 12,
+          "month" : 2,
+          "year" : 2021
+        },
+        {
+          "day" : 1,
+          "month" : 2,
+          "year" : 2022
+        },
+        {
+          "day" : 23,
+          "month" : 1,
+          "year" : 2023
+        },
+        {
+          "day" : 10,
+          "month" : 2,
+          "year" : 2024
+        },
+        {
+          "day" : 29,
+          "month" : 1,
+          "year" : 2025
+        },
+        {
+          "day" : 17,
+          "month" : 2,
+          "year" : 2026
+        },
+        {
+          "day" : 6,
+          "month" : 2,
+          "year" : 2027
+        }
+      ],
+      "name" : "Chinese New Year",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "A5B2D247-CEB8-4122-9A91-302CB8391179"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "nightlife",
+          "entertainment"
+        ]
+      },
+      "uuid" : "1F3B65C3-C056-4E9C-A287-587123E67855"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 5,
+          "weekday" : 1,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Mother’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "entertainment"
+        ]
+      },
+      "uuid" : "03594C82-10A5-4F4B-8CE1-B170ECF97419"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 6,
+          "weekday" : 1,
+          "weekdayOrdinal" : 3
+        }
+      ],
+      "name" : "Father’s Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "BB943F30-260C-4168-9907-81BE8A3859AE"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 10,
+          "month" : 9,
+          "year" : 2010
+        },
+        {
+          "day" : 30,
+          "month" : 8,
+          "year" : 2011
+        },
+        {
+          "day" : 20,
+          "month" : 8,
+          "year" : 2012
+        },
+        {
+          "day" : 10,
+          "month" : 8,
+          "year" : 2013
+        },
+        {
+          "day" : 26,
+          "month" : 7,
+          "year" : 2014
+        },
+        {
+          "day" : 17,
+          "month" : 7,
+          "year" : 2015
+        },
+        {
+          "day" : 6,
+          "month" : 7,
+          "year" : 2016
+        },
+        {
+          "day" : 25,
+          "month" : 6,
+          "year" : 2017
+        },
+        {
+          "day" : 15,
+          "month" : 6,
+          "year" : 2018
+        },
+        {
+          "day" : 5,
+          "month" : 6,
+          "year" : 2019
+        },
+        {
+          "day" : 10,
+          "month" : 5,
+          "year" : 2020
+        }
+      ],
+      "name" : "Hari Raya Puasa",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "60A5BB7D-525E-44D6-91A6-F1452631AFCC"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 9,
+          "month" : 8
+        }
+      ],
+      "name" : "National Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "27C2674B-B254-4364-A4F2-099602745530"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2,
+          "year" : 2010
+        },
+        {
+          "day" : 3,
+          "month" : 2,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 1,
+          "year" : 2012
+        },
+        {
+          "day" : 10,
+          "month" : 2,
+          "year" : 2013
+        },
+        {
+          "day" : 31,
+          "month" : 1,
+          "year" : 2014
+        },
+        {
+          "day" : 19,
+          "month" : 2,
+          "year" : 2015
+        },
+        {
+          "day" : 12,
+          "month" : 9,
+          "year" : 2016
+        },
+        {
+          "day" : 1,
+          "month" : 9,
+          "year" : 2017
+        },
+        {
+          "day" : 22,
+          "month" : 8,
+          "year" : 2018
+        },
+        {
+          "day" : 12,
+          "month" : 8,
+          "year" : 2019
+        },
+        {
+          "day" : 31,
+          "month" : 7,
+          "year" : 2020
+        }
+      ],
+      "name" : "Hari Raya Haji",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "C8C92B9D-C863-4B2F-9AD0-5A7716D68894"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 10
+        }
+      ],
+      "name" : "Halloween",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 31,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "urban",
+          "nightlife",
+          "culture",
+          "entertainment"
+        ]
+      },
+      "uuid" : "93B721D6-4A3A-433F-92CB-FAE0CC21ECAA"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "lights",
+          "food"
+        ]
+      },
+      "uuid" : "C1C66255-E8B2-45DE-9536-4D5818F3D751"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 31,
+          "month" : 12
+        }
+      ],
+      "name" : "New Year’s Eve",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 1,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "0B7B6BB1-538B-4D12-96B5-76353B43F98B"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 25,
+          "month" : 12
+        }
+      ],
+      "name" : "Christmas Day",
+      "traits" : {
+        "locationTrait" : 0,
+        "peopleCountRange" : "{0, 10}",
+        "peopleTrait" : 15,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "tree",
+          "lights",
+          "food"
+        ]
+      },
+      "uuid" : "BB96C979-94B8-4AF6-A519-23AD109BB6BB"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "countryCode" : "sg",
+    "countryName" : "Singapore"
+  }
+}

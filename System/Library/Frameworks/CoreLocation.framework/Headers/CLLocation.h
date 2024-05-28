@@ -58,10 +58,11 @@ typedef double CLLocationDirection;
  *    longitude:
  *      The longitude in degrees.
  */
-typedef struct {
+struct CLLocationCoordinate2D {
 	CLLocationDegrees latitude;
 	CLLocationDegrees longitude;
-} CLLocationCoordinate2D;
+};
+typedef struct CLLocationCoordinate2D CLLocationCoordinate2D;
 
 /*
  *  CLLocationDistance
@@ -258,7 +259,7 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *  Range:
  *    0.0 - 359.9 degrees, 0 being true North
  */
-@property(readonly, nonatomic) CLLocationDirection course __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_2_2) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(readonly, nonatomic) CLLocationDirection course __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_2_2) __TVOS_PROHIBITED;
 
 /*
  *  speed
@@ -266,7 +267,7 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *  Discussion:
  *    Returns the speed of the location in m/s. Negative if speed is invalid.
  */
-@property(readonly, nonatomic) CLLocationSpeed speed __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_2_2) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(readonly, nonatomic) CLLocationSpeed speed __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_2_2) __TVOS_PROHIBITED;
 
 /*
  *  timestamp
@@ -285,14 +286,6 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *    This will be nil if the floor is unavailable.
  */
 @property(readonly, nonatomic, copy, nullable) CLFloor *floor __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);
-
-/*
- *  description
- *  
- *  Discussion:
- *    Returns a string representation of the location.
- */
-@property (nonatomic, readonly, copy) NSString *description;
 
 /*
  *  getDistanceFrom:

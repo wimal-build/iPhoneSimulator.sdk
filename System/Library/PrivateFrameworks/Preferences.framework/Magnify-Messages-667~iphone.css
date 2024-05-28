@@ -21,9 +21,7 @@ BODY {
 }
 
 .StatusBarTime,
-.NavBack,
 .NavTitle,
-.NavDetails,
 .Timestamp,
 .GrayBubble1,
 .BlueBubble1,
@@ -49,7 +47,7 @@ BODY {
 	font-size: 24px;
 	width: 300px;
 	left:225px;
-	top: 155px;
+	top: 195px;
 	font-size: 22px;
 	color: #8e8e93;
 
@@ -61,26 +59,13 @@ BODY {
 	font-weight: 600;
 }
 
-.NavBack,
-.NavDetails {
-	top: 64px;
-	color: #007aff;
-}
-
-.NavBack {
-	left: 54px;
-}
-
 .NavTitle {
-    top: 64px;
+    top: 126px;
     left: 275px;
     width: 200px;
     text-align: center;
-    font-weight: 600;
-}
+	font-size: 24px;
 
-.NavDetails {
-	right: 16px;
 }
 
 .GrayBubble1,
@@ -93,12 +78,12 @@ BODY {
 }
 
 .GrayBubble1 {
-	top: 240px;
+	top: 300px;
 	left: 54px;
 	color: black;
 }
 .GrayBubble2 {
-	top: 840px;
+	top: 900px;
 	left: 54px;
 	color: black;
 }
@@ -113,17 +98,17 @@ BODY {
 
 .BlueBubble1 {
 	width: 370px;
-	top: 327px;
+	top: 387px;
 }
 
 .BlueBubble2 {
 	width: 290px;
-	top: 438px;
+	top: 498px;
 	right: 53px;
 }
 
 .BlueBubble3 {
 	width: 350px;
-	top: 921px;
+	top: 981px;
 	right: 48px;
 }

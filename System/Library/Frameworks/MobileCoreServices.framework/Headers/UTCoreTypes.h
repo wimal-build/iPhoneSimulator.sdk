@@ -731,7 +731,7 @@ extern const CFStringRef kUTTypeBMP                                  __OSX_AVAIL
 extern const CFStringRef kUTTypeICO                                  __OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_3_0);
 extern const CFStringRef kUTTypeRawImage                             __OSX_AVAILABLE_STARTING(__MAC_10_10,__IPHONE_8_0);
 extern const CFStringRef kUTTypeScalableVectorGraphics               __OSX_AVAILABLE_STARTING(__MAC_10_10,__IPHONE_8_0);
-extern const CFStringRef kUTTypeLivePhoto                            __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_9_1);
+extern const CFStringRef kUTTypeLivePhoto                            __OSX_AVAILABLE_STARTING(__MAC_10_12,__IPHONE_9_1);
 
 #pragma mark - Audiovisual content types
 /*

@@ -2,7 +2,7 @@
 //  UIRegion.h
 //  UIKit
 //
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright © 2015-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,11 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UIRegion : NSObject <NSCopying, NSCoding>
 
 /*! A shared infinite region
  */
-+ (instancetype)infiniteRegion;
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) UIRegion *infiniteRegion;
+#else
++ (UIRegion *)infiniteRegion;
+#endif
 
 /*! Create a circular region with radius
  */

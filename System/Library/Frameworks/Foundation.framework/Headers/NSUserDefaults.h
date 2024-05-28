@@ -1,8 +1,9 @@
 /*	NSUserDefaults.h
-	Copyright (c) 1994-2015, Apple Inc. All rights reserved.
+	Copyright (c) 1994-2016, Apple Inc. All rights reserved.
  */
 
 #import <Foundation/NSObject.h>
+#import <Foundation/NSNotification.h>
 
 @class NSArray<ObjectType>, NSData, NSDictionary<KeyValue, ObjectValue>, NSMutableDictionary, NSString, NSURL;
 
@@ -56,7 +57,9 @@ FOUNDATION_EXPORT NSString * const NSRegistrationDomain;
 /*!
  +standardUserDefaults returns a global instance of NSUserDefaults configured to search the current application's search list.
  */
-+ (NSUserDefaults *)standardUserDefaults;
+#if FOUNDATION_SWIFT_SDK_EPOCH_AT_LEAST(8)
+@property (class, readonly, strong) NSUserDefaults *standardUserDefaults;
+#endif
 
 /// +resetStandardUserDefaults releases the standardUserDefaults and sets it to nil. A new standardUserDefaults will be created the next time it's accessed. The only visible effect this has is that all KVO observers of the previous standardUserDefaults will no longer be observing it.
 + (void)resetStandardUserDefaults;
@@ -184,22 +187,29 @@ FOUNDATION_EXPORT NSString * const NSRegistrationDomain;
 /*!
  NSUserDefaultsSizeLimitExceededNotification is posted on the main queue when more data is stored in user defaults than is allowed. Currently there is no limit for local user defaults except on tvOS, where a warning notification will be posted at 512kB, and the process terminated at 1MB. For ubiquitous defaults, the limit depends on the logged in iCloud user.
  */
-FOUNDATION_EXPORT NSString * const NSUserDefaultsSizeLimitExceededNotification NS_AVAILABLE_IOS(9_3);
+FOUNDATION_EXPORT NSNotificationName const NSUserDefaultsSizeLimitExceededNotification NS_AVAILABLE_IOS(9_3);
+
+/*!
+ NSUbiquitousUserDefaultsNoCloudAccountNotification is posted on the main queue to the default notification center when a cloud default is set, but no iCloud user is logged in.
+ 
+ This is not necessarily an error: ubiquitous defaults set when no iCloud user is logged in will be uploaded the next time one is available if configured to do so.
+ */
+FOUNDATION_EXPORT NSNotificationName const NSUbiquitousUserDefaultsNoCloudAccountNotification NS_AVAILABLE_IOS(9_3);
 
 /*!
  NSUbiquitousUserDefaultsDidChangeAccountsNotification is posted on the main queue to the default notification center when the user changes the primary iCloud account. The keys and values in the local key-value store have been replaced with those from the new account, regardless of the relative timestamps.
  */
-FOUNDATION_EXPORT NSString * const NSUbiquitousUserDefaultsDidChangeAccountsNotification NS_AVAILABLE_IOS(9_3);
+FOUNDATION_EXPORT NSNotificationName const NSUbiquitousUserDefaultsDidChangeAccountsNotification NS_AVAILABLE_IOS(9_3);
 
 /*!
  NSUbiquitousUserDefaultsCompletedInitialSyncNotification is posted on the main queue when ubiquitous defaults finish downloading the first time a device is connected to an iCloud account, and when a user switches their primary iCloud account.
  */
-FOUNDATION_EXPORT NSString * const NSUbiquitousUserDefaultsCompletedInitialSyncNotification NS_AVAILABLE_IOS(9_3);
+FOUNDATION_EXPORT NSNotificationName const NSUbiquitousUserDefaultsCompletedInitialSyncNotification NS_AVAILABLE_IOS(9_3);
 
 /*!
  NSUserDefaultsDidChangeNotification is posted whenever any user defaults changed within the current process, but is not posted when ubiquitous defaults change, or when an outside process changes defaults. Using key-value observing to register observers for the specific keys of interest will inform you of all updates, regardless of where they're from.
  */
-FOUNDATION_EXPORT NSString * const NSUserDefaultsDidChangeNotification;
+FOUNDATION_EXPORT NSNotificationName const NSUserDefaultsDidChangeNotification;
 
 #if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)) || TARGET_OS_WIN32
 /* The following keys and their values are deprecated in Mac OS X 10.5 "Leopard". Developers should use NSLocale, NSDateFormatter and NSNumberFormatter to retrieve the values formerly returned by these keys.

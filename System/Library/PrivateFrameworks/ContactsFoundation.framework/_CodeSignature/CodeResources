@@ -4,9 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Base.lproj/NameComponentElements.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CQfyeDCUqNixajBrE0yK88D+SZk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Info.plist</key>
 		<data>
-		anavXIBF+AMDzr7A+UiI64mIqSc=
+		P8+Vi90k6KNyGCV3oYfW55RsK08=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -17,11 +26,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,11 +62,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,11 +98,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,11 +134,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -89,11 +170,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,11 +206,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,11 +242,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -143,11 +278,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,11 +314,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -179,11 +350,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,11 +386,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,11 +422,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -233,11 +458,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,11 +494,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,11 +530,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -287,11 +566,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,11 +602,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -323,11 +638,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -341,6 +674,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -350,9 +692,27 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_TW.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Base.lproj/NameComponentElements.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CQfyeDCUqNixajBrE0yK88D+SZk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -362,11 +722,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -380,11 +758,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -398,11 +794,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -416,11 +830,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -434,11 +866,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -452,11 +902,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -470,11 +938,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -488,11 +974,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -506,11 +1010,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -524,11 +1046,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -542,11 +1082,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -560,11 +1118,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -578,11 +1154,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -596,11 +1190,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -614,11 +1226,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -632,11 +1262,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -650,11 +1298,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -668,11 +1334,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -686,11 +1370,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/LocalizedDefaults.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q51kVtsFXEOxzQrvZlNeSe9YXtc=
 			</data>
 			<key>optional</key>
 			<true/>

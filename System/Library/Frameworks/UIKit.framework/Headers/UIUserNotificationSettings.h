@@ -2,7 +2,7 @@
 //  UIUserNotificationSettings.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,28 +18,28 @@ typedef NS_OPTIONS(NSUInteger, UIUserNotificationType) {
     UIUserNotificationTypeBadge   = 1 << 0, // the application may badge its icon upon a notification being received
     UIUserNotificationTypeSound   = 1 << 1, // the application may play a sound upon a notification being received
     UIUserNotificationTypeAlert   = 1 << 2, // the application may display an alert upon a notification being received
-} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+} NS_ENUM_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNAuthorizationOptions") __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSUInteger, UIUserNotificationActionBehavior) {
     UIUserNotificationActionBehaviorDefault,        // the default action behavior
     UIUserNotificationActionBehaviorTextInput       // system provided action behavior, allows text input from the user
-} NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
+} NS_ENUM_DEPRECATED_IOS(9_0, 10_0, "Use UserNotifications Framework's UNNotificationAction or UNTextInputNotificationAction") __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSUInteger, UIUserNotificationActivationMode) {
     UIUserNotificationActivationModeForeground, // activates the application in the foreground
     UIUserNotificationActivationModeBackground  // activates the application in the background, unless it's already in the foreground
-} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+} NS_ENUM_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotificationActionOptions") __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSUInteger, UIUserNotificationActionContext) {
     UIUserNotificationActionContextDefault,  // the default context of a notification action
     UIUserNotificationActionContextMinimal   // the context of a notification action when space is limited
-} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+} NS_ENUM_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNNotificationCategory actions] or -[UNNotificationCategory minimalActions]") __TVOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIUserNotificationTextInputActionButtonTitleKey NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIUserNotificationTextInputActionButtonTitleKey NS_DEPRECATED_IOS(9_0, 10_0, "Use UserNotifications Framework's -[UNTextInputNotificationAction textInputButtonTitle]") __TVOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIUserNotificationActionResponseTypedTextKey NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIUserNotificationActionResponseTypedTextKey NS_DEPRECATED_IOS(9_0, 10_0, "Use UserNotifications Framework's -[UNTextInputNotificationResponse userText]") __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
+NS_CLASS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotificationSettings") __TVOS_PROHIBITED
 @interface UIUserNotificationSettings : NSObject
 
 // categories may be nil or an empty set if custom user notification actions will not be used
@@ -53,21 +53,21 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
+NS_CLASS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotificationCategory") __TVOS_PROHIBITED
 @interface UIUserNotificationCategory : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
 
 // The category identifier passed in a UILocalNotification or a remote notification payload
-@property (nullable,nonatomic, copy, readonly) NSString *identifier __TVOS_PROHIBITED;
+@property (nullable, nonatomic, copy, readonly) NSString *identifier __TVOS_PROHIBITED;
 
 // UIUserNotificationActions in the order to be displayed for the specified context
 - (nullable NSArray<UIUserNotificationAction *> *)actionsForContext:(UIUserNotificationActionContext)context __TVOS_PROHIBITED;
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
+NS_CLASS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotificationCategory") __TVOS_PROHIBITED
 @interface UIMutableUserNotificationCategory : UIUserNotificationCategory
 
 // The category identifier passed in a UILocalNotification or a remote notification payload
@@ -78,7 +78,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
+NS_CLASS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotificationAction") __TVOS_PROHIBITED
 @interface UIUserNotificationAction : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
@@ -107,7 +107,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
+NS_CLASS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotificationAction") __TVOS_PROHIBITED
 @interface UIMutableUserNotificationAction : UIUserNotificationAction
 
 // The unique identifier for this action.

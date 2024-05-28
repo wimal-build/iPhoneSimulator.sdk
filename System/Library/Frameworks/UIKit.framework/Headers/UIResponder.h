@@ -2,7 +2,7 @@
 //  UIResponder.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,17 +14,52 @@ NS_ASSUME_NONNULL_BEGIN
 @class UIPress;
 @class UIPressesEvent;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIResponder : NSObject
+@protocol UIResponderStandardEditActions <NSObject>
+@optional
+- (void)cut:(nullable id)sender NS_AVAILABLE_IOS(3_0);
+- (void)copy:(nullable id)sender NS_AVAILABLE_IOS(3_0);
+- (void)paste:(nullable id)sender NS_AVAILABLE_IOS(3_0);
+- (void)select:(nullable id)sender NS_AVAILABLE_IOS(3_0);
+- (void)selectAll:(nullable id)sender NS_AVAILABLE_IOS(3_0);
+- (void)delete:(nullable id)sender NS_AVAILABLE_IOS(3_2);
+- (void)makeTextWritingDirectionLeftToRight:(nullable id)sender NS_AVAILABLE_IOS(5_0);
+- (void)makeTextWritingDirectionRightToLeft:(nullable id)sender NS_AVAILABLE_IOS(5_0);
+- (void)toggleBoldface:(nullable id)sender NS_AVAILABLE_IOS(6_0);
+- (void)toggleItalics:(nullable id)sender NS_AVAILABLE_IOS(6_0);
+- (void)toggleUnderline:(nullable id)sender NS_AVAILABLE_IOS(6_0);
 
+- (void)increaseSize:(nullable id)sender NS_AVAILABLE_IOS(7_0);
+- (void)decreaseSize:(nullable id)sender NS_AVAILABLE_IOS(7_0);
+
+@end
+
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIResponder : NSObject <UIResponderStandardEditActions>
+
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, nullable) UIResponder *nextResponder;
+#else
 - (nullable UIResponder*)nextResponder;
+#endif
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL canBecomeFirstResponder;    // default is NO
+#else
 - (BOOL)canBecomeFirstResponder;    // default is NO
+#endif
 - (BOOL)becomeFirstResponder;
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL canResignFirstResponder;    // default is YES
+#else
 - (BOOL)canResignFirstResponder;    // default is YES
+#endif
 - (BOOL)resignFirstResponder;
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) BOOL isFirstResponder;
+#else
 - (BOOL)isFirstResponder;
+#endif
 
 // Generally, all responders which do custom touch handling should override all four of these methods.
 // Your responder will receive either touchesEnded:withEvent: or touchesCancelled:withEvent: for each
@@ -34,8 +69,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIResponder : NSObject
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesCancelled:(nullable NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
-- (void)touchesEstimatedPropertiesUpdated:(NSSet * _Nonnull)touches NS_AVAILABLE_IOS(9_1);
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
+- (void)touchesEstimatedPropertiesUpdated:(NSSet<UITouch *> *)touches NS_AVAILABLE_IOS(9_1);
 
 // Generally, all responders which do custom press handling should override all four of these methods.
 // Your responder will receive either pressesEnded:withEvent or pressesCancelled:withEvent: for each
@@ -81,7 +116,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIKeyCommand : NSObject <NSCopying, NSSec
 @property (nonatomic,readonly) UIKeyModifierFlags modifierFlags;
 @property (nullable,nonatomic,copy) NSString *discoverabilityTitle NS_AVAILABLE_IOS(9_0);
 
-// The action for UIKeyCommands should accept a single (id)sender, as do the UIResponderStandardEditActions below
+// The action for UIKeyCommands should accept a single (id)sender, as do the UIResponderStandardEditActions above
 
 // Creates an key command that will _not_ be discoverable in the UI.
 + (UIKeyCommand *)keyCommandWithInput:(NSString *)input modifierFlags:(UIKeyModifierFlags)modifierFlags action:(SEL)action;
@@ -93,25 +128,6 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIKeyCommand : NSObject <NSCopying, NSSec
 
 @interface UIResponder (UIResponderKeyCommands)
 @property (nullable,nonatomic,readonly) NSArray<UIKeyCommand *> *keyCommands NS_AVAILABLE_IOS(7_0); // returns an array of UIKeyCommand objects<
-@end
-
-@interface NSObject(UIResponderStandardEditActions)   // these methods are not implemented in NSObject
-
-- (void)cut:(nullable id)sender NS_AVAILABLE_IOS(3_0);
-- (void)copy:(nullable id)sender NS_AVAILABLE_IOS(3_0);
-- (void)paste:(nullable id)sender NS_AVAILABLE_IOS(3_0);
-- (void)select:(nullable id)sender NS_AVAILABLE_IOS(3_0);
-- (void)selectAll:(nullable id)sender NS_AVAILABLE_IOS(3_0);
-- (void)delete:(nullable id)sender NS_AVAILABLE_IOS(3_2);
-- (void)makeTextWritingDirectionLeftToRight:(nullable id)sender NS_AVAILABLE_IOS(5_0);
-- (void)makeTextWritingDirectionRightToLeft:(nullable id)sender NS_AVAILABLE_IOS(5_0);
-- (void)toggleBoldface:(nullable id)sender NS_AVAILABLE_IOS(6_0);
-- (void)toggleItalics:(nullable id)sender NS_AVAILABLE_IOS(6_0);
-- (void)toggleUnderline:(nullable id)sender NS_AVAILABLE_IOS(6_0);
-
-- (void)increaseSize:(nullable id)sender NS_AVAILABLE_IOS(7_0);
-- (void)decreaseSize:(nullable id)sender NS_AVAILABLE_IOS(7_0);
-
 @end
 
 @class UIInputViewController;

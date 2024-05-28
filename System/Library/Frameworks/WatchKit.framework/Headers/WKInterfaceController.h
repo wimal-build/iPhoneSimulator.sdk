@@ -14,9 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @class WKAlertAction;
 @class WKInterfaceTable;
 @class WKInterfacePicker;
+@class WKCrownSequencer;
 @class UIImage;
 @class UILocalNotification;
 @class PKPass;
+@class UNNotification;
 
 typedef NS_ENUM(NSInteger, WKUserNotificationInterfaceType)  {
     WKUserNotificationInterfaceTypeDefault,
@@ -77,6 +79,7 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 - (void)awakeWithContext:(nullable id)context;   // context from controller that did push or modal presentation. default does nothing
 
 @property (nonatomic, readonly) CGRect contentFrame;
+@property (nonatomic, strong, readonly) WKCrownSequencer *crownSequencer;
 
 - (void)willActivate;      // Called when watch interface is active and able to be updated. Can be called when interface is not visible.
 - (void)didDeactivate;     // Called when watch interface is no longer active and cannot be updated.
@@ -89,8 +92,7 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 - (void)pickerDidSettle:(WKInterfacePicker *)picker WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex;  // row selection if controller has WKInterfaceTable property
-- (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification; // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
-- (void)handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)localNotification; // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
+- (void)handleActionWithIdentifier:(nullable NSString *)identifier forNotification:(UNNotification *)notification WK_CLASS_AVAILABLE_IOS(10.0); // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
 - (void)handleUserActivity:(nullable NSDictionary *)userInfo; // called on root controller(s) with user info
 
 - (void)setTitle:(nullable NSString *)title;        // title of controller. displayed when controller active
@@ -154,6 +156,10 @@ WKI_EXTERN NSString *const WKAudioRecorderControllerOptionsMaximumDurationKey WK
 - (void)beginGlanceUpdates WK_AVAILABLE_WATCHOS_ONLY(2.0);
 - (void)endGlanceUpdates WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
+// deprecated
+- (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification WK_DEPRECATED_WATCHOS_IOS(2.0, 3.0, 8.2, 10.0, "use UNUserNotificationCenterDelegate");
+- (void)handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)localNotification WK_DEPRECATED_WATCHOS_IOS(2.0, 3.0, 8.2, 10.0, "use UNUserNotificationCenterDelegate");
+
 @end
 
 WK_CLASS_AVAILABLE_IOS(8_2)
@@ -161,14 +167,16 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
-- (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void(^)(WKUserNotificationInterfaceType interface)) completionHandler;
-- (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void(^)(WKUserNotificationInterfaceType interface)) completionHandler;
+- (void)didReceiveNotification:(UNNotification *)notification withCompletion:(void(^)(WKUserNotificationInterfaceType interface)) completionHandler WK_AVAILABLE_WATCHOS_IOS(3.0, 10.0);
 
-// Subclasses can implement to return an array of suggestions to use as text responses to a remote notification.
-- (nonnull NSArray<NSString *> *)suggestionsForResponseToActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification inputLanguage:(NSString *)inputLanguage WK_AVAILABLE_WATCHOS_ONLY(2.0);
+// Subclasses can implement to return an array of suggestions to use as text responses to a notification.
+- (nonnull NSArray<NSString *> *)suggestionsForResponseToActionWithIdentifier:(NSString *)identifier forNotification:(UNNotification *)notification inputLanguage:(NSString *)inputLanguage WK_AVAILABLE_WATCHOS_ONLY(3.0);
 
-// Subclasses can implement to return an array of suggestions to use as text responses to a local notification.
-- (nonnull NSArray<NSString *> *)suggestionsForResponseToActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)localNotification inputLanguage:(NSString *)inputLanguage WK_AVAILABLE_WATCHOS_ONLY(2.0);
+// deprecated
+- (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void(^)(WKUserNotificationInterfaceType interface)) completionHandler WK_DEPRECATED_WATCHOS_IOS(2.0, 3.0, 8.2, 10.0, "use didReceiveNotification:withCompletion:");
+- (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void(^)(WKUserNotificationInterfaceType interface)) completionHandler WK_DEPRECATED_WATCHOS_IOS(2.0, 3.0, 8.2, 10.0, "use didReceiveNotification:withCompletion:");
+- (nonnull NSArray<NSString *> *)suggestionsForResponseToActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification inputLanguage:(NSString *)inputLanguage WK_AVAILABLE_WATCHOS_ONLY(2.0) WK_DEPRECATED_WATCHOS(2.0, 3.0, "use suggestionsForResponseToActionWithIdentifier:forNotification:inputLanguage:");
+- (nonnull NSArray<NSString *> *)suggestionsForResponseToActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)localNotification inputLanguage:(NSString *)inputLanguage WK_AVAILABLE_WATCHOS_ONLY(2.0) WK_DEPRECATED_WATCHOS(2.0, 3.0, "use suggestionsForResponseToActionWithIdentifier:forNotification:inputLanguage:");
 
 @end
 

@@ -6,13 +6,749 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		/Q5+FI+OkawqErziMU96XRiKoWg=
+		LfE+m4XAvKqq5lJSifPsY6T9Joc=
 		</data>
-		<key>ar.lproj/MUPDFViewController.strings</key>
+		<key>PlugIns/MarkupPhotoExtension.appex/Info.plist</key>
+		<data>
+		+YdqaoODLZgElMuIkNIZa5LwLVk=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/Markup.entitlements</key>
+		<data>
+		x8S8H3ZQMBHZcsuThiicvCPake8=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/MarkupPhotoExtension</key>
+		<data>
+		mPk6soEhqRFvkr0vIE+8qRxxgrs=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/MarkupPhotoExtensionIcon60x60@2x.png</key>
+		<data>
+		t1p6KKan4f0ebKowI3dkG+iqOJk=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/MarkupPhotoExtensionIcon60x60@3x.png</key>
+		<data>
+		XxqWrhP97TUxei/Xq/lxGqDRvQE=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		qljvRrhdq5EJ5d4DKWSWuVShTZ4=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AF11cIZ3AUIxKNPRGkB48ens5nU=
+			NxGr8Ol1aYV7WRzFiTmDOw0+Wg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KIUol/p09EeM0ZM6fdjNzfG7a7k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			08bx7llWkIBUOKOrA71ea94RIq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A0mMsqZWOGnQSGZ5mxdYyIWYZr0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5zGdFmQs338Oclc/ylES9W4Oxho=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uU0X8oZWE/Z8s7Be4pPGwp0zJyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cp7VLaI2bY+P5+Nt2q7bS9upeSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oo6WVwI8hTev+o+4TXN3HJBDJmA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cBmEERj0cV6koQA2amnn4TZrOrg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6V+K4QIC2uf2dWjBy1Xv0IJ4RY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QO39zGjTGxr2pncVO+1jswM7Juo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LauJtUfR2VpYol6u9+eT2WeVXvc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StbYWtAmjIyeNLonRVoHjSu9cuk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K1r0WC1AYZc7FgDC6DacA5Penk8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hRRBv/T6WjaD5W/tevyMVVaCmXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMXJcKuKU1XLqsaxZ+BcTz9zky4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZxhzPyn/JBFHaTejQp9E+sl9wlE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frEIKpnNCljGIaE/OPAqFdk6utk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eg4mhI3JUhlkqIDZJkhVjuiORTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b1QcWv/XfjUFPTxIoyvdTYKJzlQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1LJZ3E9mt8mwNbSkVTN+TtMmp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7wCLVVJ+jj7RSS8uGJIailbPLB8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			heaspBED9nX7qesbvecmNTYY+ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+fq5wHBh0PUsq5d4G7Jr2sYFZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ady/2mfwuMV7GCbbxb2odZ3pH9A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdJKz2D1O5gP6xXFtwlTVIiGcEY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hfo8rkKAFm4gUqEPVpA1z2USS5E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iCdMV6sFu3eU2ZMEywKR6Hqq3ew=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n3Q0/a04KCy74iWWo0dkGdgLVl8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/FwIMGLBkLl5BxuP+4oW5LhxMMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODfD5YLf0Jdt/khvhoSiecSxetg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tQ3QQ7EKvOJl8j+6NSNXH8WVXnM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zzYjdALzuy5lidXQ9l3fX/UGGyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/Info.plist</key>
+		<data>
+		D85MyOA4Ql3vqHPvnl3yxsCZwAM=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon60x60@2x.png</key>
+		<data>
+		GBpkEIE+1u7wdVvrBGoBYrD2a1I=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon60x60@3x.png</key>
+		<data>
+		poKWbi9mSfk3fPAYI+y5f3FOcpM=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon76x76@2x~ipad.png</key>
+		<data>
+		XoW2uyrLCe2Gm6hIUaBMTmt5I6U=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon76x76~ipad.png</key>
+		<data>
+		b1kgdS/7ywlkMJ+1ZAFlYmP2CUc=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupPrivateExtension</key>
+		<data>
+		i9s3Ry4/6b6sTKo7mHP82ad2ZOw=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		m4qCkr7a8pfI5lk8GMmqLayVgUs=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NxGr8Ol1aYV7WRzFiTmDOw0+Wg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KIUol/p09EeM0ZM6fdjNzfG7a7k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			08bx7llWkIBUOKOrA71ea94RIq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A0mMsqZWOGnQSGZ5mxdYyIWYZr0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5zGdFmQs338Oclc/ylES9W4Oxho=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uU0X8oZWE/Z8s7Be4pPGwp0zJyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cp7VLaI2bY+P5+Nt2q7bS9upeSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oo6WVwI8hTev+o+4TXN3HJBDJmA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cBmEERj0cV6koQA2amnn4TZrOrg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6V+K4QIC2uf2dWjBy1Xv0IJ4RY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QO39zGjTGxr2pncVO+1jswM7Juo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LauJtUfR2VpYol6u9+eT2WeVXvc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StbYWtAmjIyeNLonRVoHjSu9cuk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K1r0WC1AYZc7FgDC6DacA5Penk8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hRRBv/T6WjaD5W/tevyMVVaCmXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMXJcKuKU1XLqsaxZ+BcTz9zky4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZxhzPyn/JBFHaTejQp9E+sl9wlE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frEIKpnNCljGIaE/OPAqFdk6utk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eg4mhI3JUhlkqIDZJkhVjuiORTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b1QcWv/XfjUFPTxIoyvdTYKJzlQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1LJZ3E9mt8mwNbSkVTN+TtMmp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7wCLVVJ+jj7RSS8uGJIailbPLB8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			heaspBED9nX7qesbvecmNTYY+ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+fq5wHBh0PUsq5d4G7Jr2sYFZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ady/2mfwuMV7GCbbxb2odZ3pH9A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdJKz2D1O5gP6xXFtwlTVIiGcEY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hfo8rkKAFm4gUqEPVpA1z2USS5E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iCdMV6sFu3eU2ZMEywKR6Hqq3ew=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n3Q0/a04KCy74iWWo0dkGdgLVl8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/FwIMGLBkLl5BxuP+4oW5LhxMMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODfD5YLf0Jdt/khvhoSiecSxetg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tQ3QQ7EKvOJl8j+6NSNXH8WVXnM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zzYjdALzuy5lidXQ9l3fX/UGGyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/MUPDFContentViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ofWMqLCcAUCMUlkwoP3L7ROdvG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,16 +766,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DR3lK8/rnqXh05jWmVv9TE0A8p0=
+			9IzguaNJ6VFTzs41iOj7F5yiBvQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/MUPDFViewController.strings</key>
+		<key>ca.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aLzJzHb1gjjn3RdO911FbvOBBC0=
+			filJ3fgVOpX07YFbe+4LBqBAkF4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -57,16 +793,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dHf0uY/ZcGRDVPPWwQSqiWLuebI=
+			VBW5XK9t2EbK5A5FYUL/zLqJfRo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/MUPDFViewController.strings</key>
+		<key>cs.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0S121hWHALtepjh8L/rlpjyqj9U=
+			FPk2X8EUzdtO2CHO9fd1EzH3Puc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,16 +820,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wJH193tjBrfjQ2XIS2GzyIrQfcc=
+			lhORjoq0n7N3hW36KiR0gpShYVg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/MUPDFViewController.strings</key>
+		<key>da.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OESkN1tTGuhrYueHwf4/PGmyhXk=
+			fB8B811pBjXjvi8kGJnNk+BWmOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -111,16 +847,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rpvvBnSygekzdvFynGzQXnIGsNI=
+			Z3iKtBoTe98YczLMewIkQTJPFhs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/MUPDFViewController.strings</key>
+		<key>de.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fLcML0sPfFQbzGYFSAiI4QwT8Kc=
+			C4YtYVwpFsGNj5wpE8wx4Z/Afnc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -138,16 +874,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GOwgM05LUXWqGyozFoSi3+bHsu0=
+			OFaFwsK4VFe+76Tc4QA3flJsvR8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/MUPDFViewController.strings</key>
+		<key>el.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NLX+CBhNszURLcFYjJuGGUaDmt4=
+			Pu9cXTT0sHYZNEbYRcvReXP+s8s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -165,16 +901,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2AH2fLSfz+pjyMWb68lPNVuUHgs=
+			ulDlEltH+cfmu9t753DskXUpdew=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/MUPDFViewController.strings</key>
+		<key>en.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f3WY5Fo+ZxTb7YJqyxb25zsWJxc=
+			z9mhdZbo5BeAGLorG9vQmpsvuPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -192,16 +928,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/vuATrkZcD4ACeuwpewDGlHj1Q=
+			7+kAGqCQZ8ddSJyw1YTNdoVC4lQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/MUPDFViewController.strings</key>
+		<key>en_AU.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f3WY5Fo+ZxTb7YJqyxb25zsWJxc=
+			z9mhdZbo5BeAGLorG9vQmpsvuPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -219,16 +955,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/vuATrkZcD4ACeuwpewDGlHj1Q=
+			7+kAGqCQZ8ddSJyw1YTNdoVC4lQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/MUPDFViewController.strings</key>
+		<key>en_GB.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f3WY5Fo+ZxTb7YJqyxb25zsWJxc=
+			z9mhdZbo5BeAGLorG9vQmpsvuPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -246,16 +982,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/vuATrkZcD4ACeuwpewDGlHj1Q=
+			7+kAGqCQZ8ddSJyw1YTNdoVC4lQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/MUPDFViewController.strings</key>
+		<key>es.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XWD+kPLwhClETVtOtweDhjoBExc=
+			se80pvroZ8Asy/hCGpt5ETBLW+M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -273,16 +1009,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SrD80H2+Zu8m8WSP0OFc0ZiLdnY=
+			SGrnEVvdjCKOU5tDXY/cgBEojOg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/MUPDFViewController.strings</key>
+		<key>fi.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MWrR2FM31lkEqeA/FHiUwKrn2K4=
+			L0KTAARxonrrEiugAk/A3JDpgjc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -300,16 +1036,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClBV6b60AtB4oZLNhD7EJlleC/A=
+			oFmogBQmtqu1y6Uifk3F/SBB2d0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr.lproj/MUPDFViewController.strings</key>
+		<key>fr.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D5e2xbOQCzrwReUOFKQ06dqH16c=
+			gR7iP90/L15GCrdJSoT5TbT3+9A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -327,16 +1063,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N70rcAr4xHGN5K7E8s3l5OOBMAg=
+			dAG9UDPOZyEFfGZGMjXh4Vmbwcg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/MUPDFViewController.strings</key>
+		<key>fr_CA.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D5e2xbOQCzrwReUOFKQ06dqH16c=
+			g+VRQ0c2sWVaiXlN0YTsan1g/Uc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -354,16 +1090,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			humHTKkl6h7510g42h3QWVknL18=
+			Fqi1krmNJLf6qvRemA5izTheVmc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/MUPDFViewController.strings</key>
+		<key>he.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5epnnT0KoqVMlQ/QnJYpe/47Aes=
+			Pqx1SaqcAHvylzDZ/c0TFYAj0jM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -372,7 +1108,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T8UuSrF7vdtDaoRKLT0+Zb78wgg=
+			Joj01Gwqq5SOANHRoxTpSPR8zEA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -381,16 +1117,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sy3tyOhIXUvOoDWUk245Jdb/g6w=
+			9HUyezgGQgLolWWwo5oEiJH/ccY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/MUPDFViewController.strings</key>
+		<key>hi.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xwc7S+raJVK6LCcFabc2DxInwDY=
+			cGZpkQkwJXZjChC1Xyy2pe/rl0M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -408,16 +1144,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R3w2IbMkOkHvh3HIs0rIldWg2qc=
+			+id/Lf2yGJ3lKShwM4xMh/hELT4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/MUPDFViewController.strings</key>
+		<key>hr.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IaIyh2FZgPpBZqf7bcpn1PirJ+s=
+			snsktDCBv//yaSDszAh2QKZd6hs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -435,16 +1171,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JQOxY4U2Fb8cV08gta6Gtfxbrkc=
+			L0n3C4/fwEtgNhN8Pc5pb5Mgpo4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/MUPDFViewController.strings</key>
+		<key>hu.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zdB3vTveVxOh1DnQrV0tHagH4fU=
+			fWVsk8PLQyLnRfNMXIloePRQ8pI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -462,16 +1198,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uBTyfjhlx8J60SEsKtGXHiW2sSo=
+			KWnGfD8lyhljPlEnUfOaHgxllP4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/MUPDFViewController.strings</key>
+		<key>id.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5EB2u5A1ZIY8N4Cc+1NZ2BGI1Nc=
+			SAFxRr7K/fL82oktlOP2bW0Xstc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -489,16 +1225,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nNEVHLEDX5X5UdYZk/HdTAJfgKo=
+			Yi/kv7/8j4hfApAi/vNxz1UgRfI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>it.lproj/MUPDFViewController.strings</key>
+		<key>it.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TVdski+I4NKLbgD5tuGVBvEKiKQ=
+			EfMQOjxIgmW4kGwOyZBo4CpbRXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -516,16 +1252,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0hO+FfQs+8J3qtNEoxAQ2jQmNe4=
+			g5FDWsdhboEWm9i3QVZaMQuuNG0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/MUPDFViewController.strings</key>
+		<key>ja.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RMbe8uxDtkjK7Du8yQ6Q5Vy3vIw=
+			3LVp73WIm2rOZZMR8LUrv8iY49c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -543,16 +1279,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KKkb3xYaA8GWGvzhpGMWNhardaY=
+			p3w+prSZ0EaUejzhqqRMeqD57MA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/MUPDFViewController.strings</key>
+		<key>ko.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yHxJb5fv7cAD6CdOR6u2nTonQNo=
+			bB39U0ppUyf+dj8kSq2XDiIcqoc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -570,16 +1306,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DMKCTdsEDrrefAe9P355p7xwW0w=
+			iXnsBFplCxeQkuLflTZ3YxNMTgQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/MUPDFViewController.strings</key>
+		<key>ms.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lDKyuexrQDRDsKBBbLgmo6kH558=
+			2sDcnbcLVlQEblmr7PA/bL7jgUk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -597,16 +1333,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YeThQZVw99/OtLx5eaHDEYMgtJ0=
+			u++pM/KecyOrg0uNXynBjnhv94s=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>nl.lproj/MUPDFViewController.strings</key>
+		<key>nl.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qkDfwIC5AU2IukPpMIk9X3vYAL4=
+			HomwoqItyoiCj0sMZzqyiGXnRTA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -615,7 +1351,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ovBxeM6BeCPNs6v7TBvUVMf8fuU=
+			bHx+t7cmMFJzCylWbapIGYYdQlE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -624,16 +1360,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zz96/H91M9ze6hmx5xTJwcP0wqY=
+			/n93EjydS8zbxTbFglCEsWtKdaY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/MUPDFViewController.strings</key>
+		<key>no.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eVDZjspOcK0n7/Ki8zN0ADzhd7g=
+			PctvInCqQG31LUhe5JgEW+o9Q2Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -642,7 +1378,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9sStLRd/0BZKDDJYf84NJj0s+BA=
+			x4bKoKJBl0bMTyIkgPYmACJwWv4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -651,16 +1387,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IdXgL4d+9SAc62a5qsYIp1ELSmU=
+			+VuILu73uX9fV0icm1PDe+aTKHM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/MUPDFViewController.strings</key>
+		<key>pl.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e4Zl7z1Zmq/gbIDg/C4tBxup5Vo=
+			iJGzro3cqpeAlnIvMUmEIVpUxWo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -678,16 +1414,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3A++xkOmoUycSd3+GWIFR1lJXn0=
+			CnZ5JFxsFTcJ4ppoG6PAwVT5qE0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/MUPDFViewController.strings</key>
+		<key>pt.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rvmHdF0Lai8+afkwQkEB+bwvRlw=
+			AmUUsRCG6x5UHFknItS8jxUvjCY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -705,16 +1441,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xiPSEJQ98mu2yBf77M2WQFJQNgg=
+			tru2zs7gcXfmIxby7tu2vpWXFZg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/MUPDFViewController.strings</key>
+		<key>pt_PT.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/n+5nxj8fU2nIGg88585o1VLJOQ=
+			YMdCGqRAcsd8CYt6cOLRSc+CG9g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -732,16 +1468,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YBwgi/qz/t5L4sEA6+MeKizseoo=
+			PPc2B+1tOLHPm/RIGM97bn4uL1g=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/MUPDFViewController.strings</key>
+		<key>ro.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qvwxT3l+XlKWSH7sSWNc94KQnI0=
+			8AHQt6ARQ/XrXvCaP6gbOLaeqiI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -759,16 +1495,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ghC/VFssxw2/oHOv563E37x2ZQQ=
+			mFg+e/Uo7dRcZH9C08LMNoUNleU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/MUPDFViewController.strings</key>
+		<key>ru.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2EcUm5ymaf7cWKJw0vhAqNA6kFA=
+			hZgKsOoVgU46rIswInx2+gSrb0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -786,16 +1522,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yLejgsyf2Z0FmHD9mV32tesQOAU=
+			XSREiHqYiNqvOZj4PXE5bJUkBAA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/MUPDFViewController.strings</key>
+		<key>sk.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A7c98dpqpJrp1uVwF7QrmkqYSPY=
+			YTM9qhjMLKQSdXvKkvU52ZfAqZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -813,16 +1549,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			214iSv9NwHRCh3IGnOQRQvnO+88=
+			V3cFu2izsNxhHXrtD/xCS7t4F+M=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/MUPDFViewController.strings</key>
+		<key>sv.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HbfZ/Rxa3bsp1bt48GBZwodZJDY=
+			s2lDpUIJNwNIwRLSddHNcCJuMjM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -840,16 +1576,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dubVQM7hYC4AdYRXImO0p7sS8m8=
+			SXibNRn+OJfCITuu5tfKxLI9hEc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/MUPDFViewController.strings</key>
+		<key>th.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ydwWg2BOQ6TkQfqBujxj93ksqzM=
+			D+9tmyHPFJMfFI8CFzvKZGbsm8k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -858,7 +1594,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Adywo/FcIWnqutdDsFf0z0lbG0w=
+			k/3fNOWL607Adv9RsrlMmXiyGnE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -867,16 +1603,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gRsm4U8MuYZktfKNCQQtXJKTBXE=
+			ffgSP1wBpPJRMvAaYukU7MmXueo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/MUPDFViewController.strings</key>
+		<key>tr.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3+L8CycUajlAfLVhLtj7caplDa4=
+			ZAZpccFb6ApaEXmYOG010xI5n+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -894,16 +1630,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9odzKq8HxO/T7NVENq7xIga/onQ=
+			Yye+SnhiAukiIsdOFAnCT3PaW08=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/MUPDFViewController.strings</key>
+		<key>uk.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kQOmoclwcU2r/sKS8X/xcR8CboE=
+			Lf+NTFssIbuSNvC63cAqbwfHkTo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -912,7 +1648,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ig8RLhugiQeV2JqyWaP4BRLeOAA=
+			4azUVkbOn2WQcHJ2InS9LMjf/ws=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -921,16 +1657,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8dwhPVh1x6NVq3yisYv5DaX6cpM=
+			3alHck4LsO1FT84wIeyk09Q+Z9M=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>vi.lproj/MUPDFViewController.strings</key>
+		<key>vi.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hMrN5TsWqf0ofO13j7n2hC6j/aI=
+			ojMr8t8E+haqV4tHPlx85tpeoUY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -948,16 +1684,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3VLnb2c7oS9HZNYhRJg9Po8RObs=
+			9SdJoWJWQgwtU2rRyU6EPnwbCp4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/MUPDFViewController.strings</key>
+		<key>zh_CN.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H1xaprvhRRhFITw08YBXCUSgIyI=
+			TeVIXawee+VZ9Y9bEOQI8S7Wtb4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -966,7 +1702,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4GF4+Bpy/eIihsLDc4pH2/y4/Es=
+			DrHwD0rXKDnBECZZsDwJ6fQBSJM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -975,16 +1711,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wC+dzrDgiXHRUIU5YgUHeqF0O5Q=
+			A6Um3HkFtbiYEvcDcNc8JmierZs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/MUPDFViewController.strings</key>
+		<key>zh_HK.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PspobTDCZwjv/wPJXDBN2LJ1eko=
+			qUucAJmKpfxuHkFmMfDL78eUZTg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1002,16 +1738,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7JZtxpF7x+VSiXEXWGtq05Kfceo=
+			EvSOr7bd3y3Nbuk9B93UwYRYuag=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/MUPDFViewController.strings</key>
+		<key>zh_TW.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K0FIsIhuQCcBVM2Q/sKY8ITjDbM=
+			Ac5ddg7eErnmDPr717CE5hrGpsw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1029,7 +1765,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ajd6XBD0I9QsPDrLDggrgvh5Gbk=
+			Z9FInS0C5/236H92/+YHsrUFO/M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1037,11 +1773,747 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ar.lproj/MUPDFViewController.strings</key>
+		<key>PlugIns/MarkupPhotoExtension.appex/Info.plist</key>
+		<data>
+		+YdqaoODLZgElMuIkNIZa5LwLVk=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/Markup.entitlements</key>
+		<data>
+		x8S8H3ZQMBHZcsuThiicvCPake8=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/MarkupPhotoExtension</key>
+		<data>
+		mPk6soEhqRFvkr0vIE+8qRxxgrs=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/MarkupPhotoExtensionIcon60x60@2x.png</key>
+		<data>
+		t1p6KKan4f0ebKowI3dkG+iqOJk=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/MarkupPhotoExtensionIcon60x60@3x.png</key>
+		<data>
+		XxqWrhP97TUxei/Xq/lxGqDRvQE=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		qljvRrhdq5EJ5d4DKWSWuVShTZ4=
+		</data>
+		<key>PlugIns/MarkupPhotoExtension.appex/ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AF11cIZ3AUIxKNPRGkB48ens5nU=
+			NxGr8Ol1aYV7WRzFiTmDOw0+Wg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KIUol/p09EeM0ZM6fdjNzfG7a7k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			08bx7llWkIBUOKOrA71ea94RIq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A0mMsqZWOGnQSGZ5mxdYyIWYZr0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5zGdFmQs338Oclc/ylES9W4Oxho=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uU0X8oZWE/Z8s7Be4pPGwp0zJyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cp7VLaI2bY+P5+Nt2q7bS9upeSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oo6WVwI8hTev+o+4TXN3HJBDJmA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cBmEERj0cV6koQA2amnn4TZrOrg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6V+K4QIC2uf2dWjBy1Xv0IJ4RY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QO39zGjTGxr2pncVO+1jswM7Juo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LauJtUfR2VpYol6u9+eT2WeVXvc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StbYWtAmjIyeNLonRVoHjSu9cuk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K1r0WC1AYZc7FgDC6DacA5Penk8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hRRBv/T6WjaD5W/tevyMVVaCmXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMXJcKuKU1XLqsaxZ+BcTz9zky4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZxhzPyn/JBFHaTejQp9E+sl9wlE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frEIKpnNCljGIaE/OPAqFdk6utk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eg4mhI3JUhlkqIDZJkhVjuiORTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b1QcWv/XfjUFPTxIoyvdTYKJzlQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1LJZ3E9mt8mwNbSkVTN+TtMmp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7wCLVVJ+jj7RSS8uGJIailbPLB8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			heaspBED9nX7qesbvecmNTYY+ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+fq5wHBh0PUsq5d4G7Jr2sYFZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ady/2mfwuMV7GCbbxb2odZ3pH9A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdJKz2D1O5gP6xXFtwlTVIiGcEY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hfo8rkKAFm4gUqEPVpA1z2USS5E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iCdMV6sFu3eU2ZMEywKR6Hqq3ew=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n3Q0/a04KCy74iWWo0dkGdgLVl8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/FwIMGLBkLl5BxuP+4oW5LhxMMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODfD5YLf0Jdt/khvhoSiecSxetg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tQ3QQ7EKvOJl8j+6NSNXH8WVXnM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPhotoExtension.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zzYjdALzuy5lidXQ9l3fX/UGGyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/Info.plist</key>
+		<data>
+		D85MyOA4Ql3vqHPvnl3yxsCZwAM=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon60x60@2x.png</key>
+		<data>
+		GBpkEIE+1u7wdVvrBGoBYrD2a1I=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon60x60@3x.png</key>
+		<data>
+		poKWbi9mSfk3fPAYI+y5f3FOcpM=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon76x76@2x~ipad.png</key>
+		<data>
+		XoW2uyrLCe2Gm6hIUaBMTmt5I6U=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupActionExtensionIcon76x76~ipad.png</key>
+		<data>
+		b1kgdS/7ywlkMJ+1ZAFlYmP2CUc=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/MarkupPrivateExtension</key>
+		<data>
+		i9s3Ry4/6b6sTKo7mHP82ad2ZOw=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		m4qCkr7a8pfI5lk8GMmqLayVgUs=
+		</data>
+		<key>PlugIns/MarkupPrivateExtension.appex/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NxGr8Ol1aYV7WRzFiTmDOw0+Wg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KIUol/p09EeM0ZM6fdjNzfG7a7k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			08bx7llWkIBUOKOrA71ea94RIq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A0mMsqZWOGnQSGZ5mxdYyIWYZr0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5zGdFmQs338Oclc/ylES9W4Oxho=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uU0X8oZWE/Z8s7Be4pPGwp0zJyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rNkHT/zXKg08pzV/zXHe6d6w+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cp7VLaI2bY+P5+Nt2q7bS9upeSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oo6WVwI8hTev+o+4TXN3HJBDJmA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cBmEERj0cV6koQA2amnn4TZrOrg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M6V+K4QIC2uf2dWjBy1Xv0IJ4RY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QO39zGjTGxr2pncVO+1jswM7Juo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LauJtUfR2VpYol6u9+eT2WeVXvc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StbYWtAmjIyeNLonRVoHjSu9cuk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K1r0WC1AYZc7FgDC6DacA5Penk8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hRRBv/T6WjaD5W/tevyMVVaCmXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMXJcKuKU1XLqsaxZ+BcTz9zky4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZxhzPyn/JBFHaTejQp9E+sl9wlE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frEIKpnNCljGIaE/OPAqFdk6utk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eg4mhI3JUhlkqIDZJkhVjuiORTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b1QcWv/XfjUFPTxIoyvdTYKJzlQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1LJZ3E9mt8mwNbSkVTN+TtMmp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7wCLVVJ+jj7RSS8uGJIailbPLB8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d/KjxtROeq0RibRl3pUvTxs9qRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			heaspBED9nX7qesbvecmNTYY+ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+fq5wHBh0PUsq5d4G7Jr2sYFZc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ady/2mfwuMV7GCbbxb2odZ3pH9A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdJKz2D1O5gP6xXFtwlTVIiGcEY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hfo8rkKAFm4gUqEPVpA1z2USS5E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iCdMV6sFu3eU2ZMEywKR6Hqq3ew=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n3Q0/a04KCy74iWWo0dkGdgLVl8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/FwIMGLBkLl5BxuP+4oW5LhxMMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODfD5YLf0Jdt/khvhoSiecSxetg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tQ3QQ7EKvOJl8j+6NSNXH8WVXnM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/MarkupPrivateExtension.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zzYjdALzuy5lidXQ9l3fX/UGGyk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/MUPDFContentViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ofWMqLCcAUCMUlkwoP3L7ROdvG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1059,16 +2531,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DR3lK8/rnqXh05jWmVv9TE0A8p0=
+			9IzguaNJ6VFTzs41iOj7F5yiBvQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/MUPDFViewController.strings</key>
+		<key>ca.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aLzJzHb1gjjn3RdO911FbvOBBC0=
+			filJ3fgVOpX07YFbe+4LBqBAkF4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1086,16 +2558,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dHf0uY/ZcGRDVPPWwQSqiWLuebI=
+			VBW5XK9t2EbK5A5FYUL/zLqJfRo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/MUPDFViewController.strings</key>
+		<key>cs.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0S121hWHALtepjh8L/rlpjyqj9U=
+			FPk2X8EUzdtO2CHO9fd1EzH3Puc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1113,16 +2585,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wJH193tjBrfjQ2XIS2GzyIrQfcc=
+			lhORjoq0n7N3hW36KiR0gpShYVg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/MUPDFViewController.strings</key>
+		<key>da.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OESkN1tTGuhrYueHwf4/PGmyhXk=
+			fB8B811pBjXjvi8kGJnNk+BWmOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1140,16 +2612,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rpvvBnSygekzdvFynGzQXnIGsNI=
+			Z3iKtBoTe98YczLMewIkQTJPFhs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/MUPDFViewController.strings</key>
+		<key>de.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fLcML0sPfFQbzGYFSAiI4QwT8Kc=
+			C4YtYVwpFsGNj5wpE8wx4Z/Afnc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1167,16 +2639,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GOwgM05LUXWqGyozFoSi3+bHsu0=
+			OFaFwsK4VFe+76Tc4QA3flJsvR8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/MUPDFViewController.strings</key>
+		<key>el.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NLX+CBhNszURLcFYjJuGGUaDmt4=
+			Pu9cXTT0sHYZNEbYRcvReXP+s8s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1194,16 +2666,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2AH2fLSfz+pjyMWb68lPNVuUHgs=
+			ulDlEltH+cfmu9t753DskXUpdew=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/MUPDFViewController.strings</key>
+		<key>en.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f3WY5Fo+ZxTb7YJqyxb25zsWJxc=
+			z9mhdZbo5BeAGLorG9vQmpsvuPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1221,16 +2693,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/vuATrkZcD4ACeuwpewDGlHj1Q=
+			7+kAGqCQZ8ddSJyw1YTNdoVC4lQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/MUPDFViewController.strings</key>
+		<key>en_AU.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f3WY5Fo+ZxTb7YJqyxb25zsWJxc=
+			z9mhdZbo5BeAGLorG9vQmpsvuPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1248,16 +2720,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/vuATrkZcD4ACeuwpewDGlHj1Q=
+			7+kAGqCQZ8ddSJyw1YTNdoVC4lQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/MUPDFViewController.strings</key>
+		<key>en_GB.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f3WY5Fo+ZxTb7YJqyxb25zsWJxc=
+			z9mhdZbo5BeAGLorG9vQmpsvuPg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1275,16 +2747,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/vuATrkZcD4ACeuwpewDGlHj1Q=
+			7+kAGqCQZ8ddSJyw1YTNdoVC4lQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/MUPDFViewController.strings</key>
+		<key>es.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XWD+kPLwhClETVtOtweDhjoBExc=
+			se80pvroZ8Asy/hCGpt5ETBLW+M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1302,16 +2774,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SrD80H2+Zu8m8WSP0OFc0ZiLdnY=
+			SGrnEVvdjCKOU5tDXY/cgBEojOg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/MUPDFViewController.strings</key>
+		<key>fi.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MWrR2FM31lkEqeA/FHiUwKrn2K4=
+			L0KTAARxonrrEiugAk/A3JDpgjc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1329,16 +2801,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClBV6b60AtB4oZLNhD7EJlleC/A=
+			oFmogBQmtqu1y6Uifk3F/SBB2d0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr.lproj/MUPDFViewController.strings</key>
+		<key>fr.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D5e2xbOQCzrwReUOFKQ06dqH16c=
+			gR7iP90/L15GCrdJSoT5TbT3+9A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1356,16 +2828,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N70rcAr4xHGN5K7E8s3l5OOBMAg=
+			dAG9UDPOZyEFfGZGMjXh4Vmbwcg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/MUPDFViewController.strings</key>
+		<key>fr_CA.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D5e2xbOQCzrwReUOFKQ06dqH16c=
+			g+VRQ0c2sWVaiXlN0YTsan1g/Uc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1383,16 +2855,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			humHTKkl6h7510g42h3QWVknL18=
+			Fqi1krmNJLf6qvRemA5izTheVmc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/MUPDFViewController.strings</key>
+		<key>he.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5epnnT0KoqVMlQ/QnJYpe/47Aes=
+			Pqx1SaqcAHvylzDZ/c0TFYAj0jM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1401,7 +2873,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T8UuSrF7vdtDaoRKLT0+Zb78wgg=
+			Joj01Gwqq5SOANHRoxTpSPR8zEA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1410,16 +2882,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sy3tyOhIXUvOoDWUk245Jdb/g6w=
+			9HUyezgGQgLolWWwo5oEiJH/ccY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/MUPDFViewController.strings</key>
+		<key>hi.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xwc7S+raJVK6LCcFabc2DxInwDY=
+			cGZpkQkwJXZjChC1Xyy2pe/rl0M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1437,16 +2909,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R3w2IbMkOkHvh3HIs0rIldWg2qc=
+			+id/Lf2yGJ3lKShwM4xMh/hELT4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/MUPDFViewController.strings</key>
+		<key>hr.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IaIyh2FZgPpBZqf7bcpn1PirJ+s=
+			snsktDCBv//yaSDszAh2QKZd6hs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1464,16 +2936,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JQOxY4U2Fb8cV08gta6Gtfxbrkc=
+			L0n3C4/fwEtgNhN8Pc5pb5Mgpo4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/MUPDFViewController.strings</key>
+		<key>hu.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zdB3vTveVxOh1DnQrV0tHagH4fU=
+			fWVsk8PLQyLnRfNMXIloePRQ8pI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1491,16 +2963,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uBTyfjhlx8J60SEsKtGXHiW2sSo=
+			KWnGfD8lyhljPlEnUfOaHgxllP4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/MUPDFViewController.strings</key>
+		<key>id.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5EB2u5A1ZIY8N4Cc+1NZ2BGI1Nc=
+			SAFxRr7K/fL82oktlOP2bW0Xstc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1518,16 +2990,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nNEVHLEDX5X5UdYZk/HdTAJfgKo=
+			Yi/kv7/8j4hfApAi/vNxz1UgRfI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>it.lproj/MUPDFViewController.strings</key>
+		<key>it.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TVdski+I4NKLbgD5tuGVBvEKiKQ=
+			EfMQOjxIgmW4kGwOyZBo4CpbRXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1545,16 +3017,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0hO+FfQs+8J3qtNEoxAQ2jQmNe4=
+			g5FDWsdhboEWm9i3QVZaMQuuNG0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/MUPDFViewController.strings</key>
+		<key>ja.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RMbe8uxDtkjK7Du8yQ6Q5Vy3vIw=
+			3LVp73WIm2rOZZMR8LUrv8iY49c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1572,16 +3044,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KKkb3xYaA8GWGvzhpGMWNhardaY=
+			p3w+prSZ0EaUejzhqqRMeqD57MA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/MUPDFViewController.strings</key>
+		<key>ko.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yHxJb5fv7cAD6CdOR6u2nTonQNo=
+			bB39U0ppUyf+dj8kSq2XDiIcqoc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1599,16 +3071,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DMKCTdsEDrrefAe9P355p7xwW0w=
+			iXnsBFplCxeQkuLflTZ3YxNMTgQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/MUPDFViewController.strings</key>
+		<key>ms.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lDKyuexrQDRDsKBBbLgmo6kH558=
+			2sDcnbcLVlQEblmr7PA/bL7jgUk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1626,16 +3098,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YeThQZVw99/OtLx5eaHDEYMgtJ0=
+			u++pM/KecyOrg0uNXynBjnhv94s=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>nl.lproj/MUPDFViewController.strings</key>
+		<key>nl.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qkDfwIC5AU2IukPpMIk9X3vYAL4=
+			HomwoqItyoiCj0sMZzqyiGXnRTA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1644,7 +3116,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ovBxeM6BeCPNs6v7TBvUVMf8fuU=
+			bHx+t7cmMFJzCylWbapIGYYdQlE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1653,16 +3125,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zz96/H91M9ze6hmx5xTJwcP0wqY=
+			/n93EjydS8zbxTbFglCEsWtKdaY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/MUPDFViewController.strings</key>
+		<key>no.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eVDZjspOcK0n7/Ki8zN0ADzhd7g=
+			PctvInCqQG31LUhe5JgEW+o9Q2Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1671,7 +3143,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9sStLRd/0BZKDDJYf84NJj0s+BA=
+			x4bKoKJBl0bMTyIkgPYmACJwWv4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1680,16 +3152,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IdXgL4d+9SAc62a5qsYIp1ELSmU=
+			+VuILu73uX9fV0icm1PDe+aTKHM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/MUPDFViewController.strings</key>
+		<key>pl.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e4Zl7z1Zmq/gbIDg/C4tBxup5Vo=
+			iJGzro3cqpeAlnIvMUmEIVpUxWo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1707,16 +3179,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3A++xkOmoUycSd3+GWIFR1lJXn0=
+			CnZ5JFxsFTcJ4ppoG6PAwVT5qE0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/MUPDFViewController.strings</key>
+		<key>pt.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rvmHdF0Lai8+afkwQkEB+bwvRlw=
+			AmUUsRCG6x5UHFknItS8jxUvjCY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1734,16 +3206,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xiPSEJQ98mu2yBf77M2WQFJQNgg=
+			tru2zs7gcXfmIxby7tu2vpWXFZg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/MUPDFViewController.strings</key>
+		<key>pt_PT.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/n+5nxj8fU2nIGg88585o1VLJOQ=
+			YMdCGqRAcsd8CYt6cOLRSc+CG9g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1761,16 +3233,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YBwgi/qz/t5L4sEA6+MeKizseoo=
+			PPc2B+1tOLHPm/RIGM97bn4uL1g=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/MUPDFViewController.strings</key>
+		<key>ro.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qvwxT3l+XlKWSH7sSWNc94KQnI0=
+			8AHQt6ARQ/XrXvCaP6gbOLaeqiI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1788,16 +3260,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ghC/VFssxw2/oHOv563E37x2ZQQ=
+			mFg+e/Uo7dRcZH9C08LMNoUNleU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/MUPDFViewController.strings</key>
+		<key>ru.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2EcUm5ymaf7cWKJw0vhAqNA6kFA=
+			hZgKsOoVgU46rIswInx2+gSrb0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1815,16 +3287,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yLejgsyf2Z0FmHD9mV32tesQOAU=
+			XSREiHqYiNqvOZj4PXE5bJUkBAA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/MUPDFViewController.strings</key>
+		<key>sk.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A7c98dpqpJrp1uVwF7QrmkqYSPY=
+			YTM9qhjMLKQSdXvKkvU52ZfAqZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1842,16 +3314,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			214iSv9NwHRCh3IGnOQRQvnO+88=
+			V3cFu2izsNxhHXrtD/xCS7t4F+M=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/MUPDFViewController.strings</key>
+		<key>sv.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HbfZ/Rxa3bsp1bt48GBZwodZJDY=
+			s2lDpUIJNwNIwRLSddHNcCJuMjM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1869,16 +3341,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dubVQM7hYC4AdYRXImO0p7sS8m8=
+			SXibNRn+OJfCITuu5tfKxLI9hEc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/MUPDFViewController.strings</key>
+		<key>th.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ydwWg2BOQ6TkQfqBujxj93ksqzM=
+			D+9tmyHPFJMfFI8CFzvKZGbsm8k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1887,7 +3359,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Adywo/FcIWnqutdDsFf0z0lbG0w=
+			k/3fNOWL607Adv9RsrlMmXiyGnE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1896,16 +3368,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gRsm4U8MuYZktfKNCQQtXJKTBXE=
+			ffgSP1wBpPJRMvAaYukU7MmXueo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/MUPDFViewController.strings</key>
+		<key>tr.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3+L8CycUajlAfLVhLtj7caplDa4=
+			ZAZpccFb6ApaEXmYOG010xI5n+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1923,16 +3395,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9odzKq8HxO/T7NVENq7xIga/onQ=
+			Yye+SnhiAukiIsdOFAnCT3PaW08=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/MUPDFViewController.strings</key>
+		<key>uk.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kQOmoclwcU2r/sKS8X/xcR8CboE=
+			Lf+NTFssIbuSNvC63cAqbwfHkTo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1941,7 +3413,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ig8RLhugiQeV2JqyWaP4BRLeOAA=
+			4azUVkbOn2WQcHJ2InS9LMjf/ws=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1950,16 +3422,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8dwhPVh1x6NVq3yisYv5DaX6cpM=
+			3alHck4LsO1FT84wIeyk09Q+Z9M=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>vi.lproj/MUPDFViewController.strings</key>
+		<key>vi.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hMrN5TsWqf0ofO13j7n2hC6j/aI=
+			ojMr8t8E+haqV4tHPlx85tpeoUY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1977,16 +3449,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3VLnb2c7oS9HZNYhRJg9Po8RObs=
+			9SdJoWJWQgwtU2rRyU6EPnwbCp4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/MUPDFViewController.strings</key>
+		<key>zh_CN.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H1xaprvhRRhFITw08YBXCUSgIyI=
+			TeVIXawee+VZ9Y9bEOQI8S7Wtb4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1995,7 +3467,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4GF4+Bpy/eIihsLDc4pH2/y4/Es=
+			DrHwD0rXKDnBECZZsDwJ6fQBSJM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2004,16 +3476,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wC+dzrDgiXHRUIU5YgUHeqF0O5Q=
+			A6Um3HkFtbiYEvcDcNc8JmierZs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/MUPDFViewController.strings</key>
+		<key>zh_HK.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PspobTDCZwjv/wPJXDBN2LJ1eko=
+			qUucAJmKpfxuHkFmMfDL78eUZTg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2031,16 +3503,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7JZtxpF7x+VSiXEXWGtq05Kfceo=
+			EvSOr7bd3y3Nbuk9B93UwYRYuag=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/MUPDFViewController.strings</key>
+		<key>zh_TW.lproj/MUPDFContentViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K0FIsIhuQCcBVM2Q/sKY8ITjDbM=
+			Ac5ddg7eErnmDPr717CE5hrGpsw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2058,7 +3530,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ajd6XBD0I9QsPDrLDggrgvh5Gbk=
+			Z9FInS0C5/236H92/+YHsrUFO/M=
 			</data>
 			<key>optional</key>
 			<true/>

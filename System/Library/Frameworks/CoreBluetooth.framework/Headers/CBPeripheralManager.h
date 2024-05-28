@@ -13,6 +13,7 @@
 
 #import <CoreBluetooth/CBDefines.h>
 #import <CoreBluetooth/CBError.h>
+#import <CoreBluetooth/CBManager.h>
 #import <CoreBluetooth/CBPeripheralManagerConstants.h>
 #import <Foundation/Foundation.h>
 
@@ -50,13 +51,13 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerAuthorizationStatus) {
  *
  */
 typedef NS_ENUM(NSInteger, CBPeripheralManagerState) {
-	CBPeripheralManagerStateUnknown = 0,
-	CBPeripheralManagerStateResetting,
-	CBPeripheralManagerStateUnsupported,
-	CBPeripheralManagerStateUnauthorized,
-	CBPeripheralManagerStatePoweredOff,
-	CBPeripheralManagerStatePoweredOn,
-} NS_ENUM_AVAILABLE(NA, 6_0);
+	CBPeripheralManagerStateUnknown = CBManagerStateUnknown,
+	CBPeripheralManagerStateResetting = CBManagerStateResetting,
+	CBPeripheralManagerStateUnsupported = CBManagerStateUnsupported,
+	CBPeripheralManagerStateUnauthorized = CBManagerStateUnauthorized,
+	CBPeripheralManagerStatePoweredOff = CBManagerStatePoweredOff,
+	CBPeripheralManagerStatePoweredOn = CBManagerStatePoweredOn,
+} NS_DEPRECATED(NA, NA, 6_0, 10_0, "Use CBManagerState instead");
 
 /*!
  *  @enum CBPeripheralManagerConnectionLatency
@@ -73,7 +74,6 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerConnectionLatency) {
 	CBPeripheralManagerConnectionLatencyMedium,
 	CBPeripheralManagerConnectionLatencyHigh
 } NS_ENUM_AVAILABLE(NA, 6_0);
-
 
 @class CBCentral, CBService, CBMutableService, CBCharacteristic, CBMutableCharacteristic, CBATTRequest;
 @protocol CBPeripheralManagerDelegate;
@@ -95,7 +95,7 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerConnectionLatency) {
  *
  */
 NS_CLASS_AVAILABLE(NA, 6_0)
-CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
+CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
 
 /*!
  *  @property delegate
@@ -103,16 +103,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @discussion The delegate object that will receive peripheral events.
  *
  */
-@property(assign, nonatomic, nullable) id<CBPeripheralManagerDelegate> delegate;
-
-/*!
- *  @property state
- *
- *  @discussion The current state of the peripheral, initially set to <code>CBPeripheralManagerStateUnknown</code>. Updates are provided by required
- *              delegate method @link peripheralManagerDidUpdateState: @/link.
- *
- */
-@property(readonly) CBPeripheralManagerState state;
+@property(nonatomic, weak, nullable) id<CBPeripheralManagerDelegate> delegate;
 
 /*!
  *  @property isAdvertising
@@ -120,7 +111,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @discussion Whether or not the peripheral is currently advertising data.
  *
  */
-@property(readonly) BOOL isAdvertising;
+@property(nonatomic, assign, readonly) BOOL isAdvertising;
 
 /*!
  *  @method authorizationStatus
@@ -133,6 +124,8 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @see		CBPeripheralManagerAuthorizationStatus
  */
 + (CBPeripheralManagerAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 7_0);
+
+- (instancetype)init;
 
 /*!
  *  @method initWithDelegate:queue:

@@ -10,8 +10,10 @@
 #define __ABAddressBook__
 
 #include <AddressBook/AddressBookDefines.h>
-#include <CoreFoundation/CoreFoundation.h>
 #include <AddressBook/ABRecord.h>
+
+#include <CoreFoundation/CoreFoundation.h>
+
 
 AB_EXTERN const CFStringRef ABAddressBookErrorDomain AB_DEPRECATED("use CNErrorDomain");
 

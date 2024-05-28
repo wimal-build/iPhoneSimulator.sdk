@@ -3,9 +3,9 @@
 */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/NSLayoutConstraint.h>
 
-@class NSLayoutConstraint, NSLayoutAnchor;
-
+NS_ASSUME_NONNULL_BEGIN
 
 /* An NSLayoutAnchor represents an edge or dimension of a layout item.  Its concrete 
  subclasses allow concise creation of constraints.  
@@ -75,3 +75,4 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 - (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(NSLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
 - (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(NSLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
 @end
+NS_ASSUME_NONNULL_END

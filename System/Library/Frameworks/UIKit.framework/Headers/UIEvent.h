@@ -2,7 +2,7 @@
 //  UIEvent.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -48,7 +48,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIEvent : NSObject
 
 @property(nonatomic,readonly) NSTimeInterval  timestamp;
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, nullable) NSSet <UITouch *> *allTouches;
+#else
 - (nullable NSSet <UITouch *> *)allTouches;
+#endif
 - (nullable NSSet <UITouch *> *)touchesForWindow:(UIWindow *)window;
 - (nullable NSSet <UITouch *> *)touchesForView:(UIView *)view;
 - (nullable NSSet <UITouch *> *)touchesForGestureRecognizer:(UIGestureRecognizer *)gesture NS_AVAILABLE_IOS(3_2);

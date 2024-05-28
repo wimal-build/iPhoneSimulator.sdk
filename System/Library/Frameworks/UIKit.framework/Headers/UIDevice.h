@@ -2,7 +2,7 @@
 //  UIDevice.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -45,7 +45,11 @@ static inline BOOL UIDeviceOrientationIsLandscape(UIDeviceOrientation orientatio
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject 
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) UIDevice *currentDevice;
+#else
 + (UIDevice *)currentDevice;
+#endif
 
 @property(nonatomic,readonly,strong) NSString    *name;              // e.g. "My iPhone"
 @property(nonatomic,readonly,strong) NSString    *model;             // e.g. @"iPhone", @"iPod touch"
@@ -90,9 +94,9 @@ static inline UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM() {
             UIUserInterfaceIdiomPhone);
 }
 
-UIKIT_EXTERN NSString *const UIDeviceOrientationDidChangeNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIDeviceBatteryStateDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIDeviceBatteryLevelDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIDeviceProximityStateDidChangeNotification NS_AVAILABLE_IOS(3_0);
+UIKIT_EXTERN NSNotificationName const UIDeviceOrientationDidChangeNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIDeviceBatteryStateDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIDeviceBatteryLevelDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIDeviceProximityStateDidChangeNotification NS_AVAILABLE_IOS(3_0);
 
 NS_ASSUME_NONNULL_END

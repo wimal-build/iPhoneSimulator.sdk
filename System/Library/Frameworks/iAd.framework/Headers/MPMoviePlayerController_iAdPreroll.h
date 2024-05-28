@@ -5,6 +5,9 @@
 //  Copyright 2012 Apple, Inc. All rights reserved.
 //
 
+#import <TargetConditionals.h>
+
+#if TARGET_OS_IOS && TARGET_OS_EMBEDDED
 #import <MediaPlayer/MediaPlayer.h>
 
 /*!
@@ -61,3 +64,4 @@
 - (void)cancelPreroll NS_AVAILABLE_IOS(8_0);
 
 @end
+#endif

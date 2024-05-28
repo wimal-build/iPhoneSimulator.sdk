@@ -7,3 +7,4 @@
 
 #import <NotificationCenter/NCWidgetProviding.h>
 #import <NotificationCenter/NCWidgetController.h>
+#import <NotificationCenter/NCWidgetTypes.h>

@@ -38,21 +38,28 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 /// cover for a song, or a movie poster for a movie.
 @property (nonatomic, strong, nullable) MPMediaItemArtwork *artwork;
 
-/// Represents whether the content item is a container of other content items.
-/// An example of a container content item might be an album, which contains
-/// multiple songs.
-@property (nonatomic, assign, getter = isContainer) BOOL container;
-
-/// Represents whether this content item is playable or not. A content item can
-/// be both a container, and playable. For example, a container item like a
-/// playlist might be set as playable if the app would like to provide the
-/// option of playing the playlist's tracks in order when selected.
-@property (nonatomic, assign, getter = isPlayable) BOOL playable;
-
 /// Represents the current playback progress of the item.
 /// 0.0 = not watched/listened/viewed, 1.0 = fully watched/listened/viewed
 /// Default is -1.0 (no progress indicator shown)
 @property (nonatomic, assign) float playbackProgress;
+
+/// Represents whether this content item is streaming content, i.e. from the cloud
+/// where the content is not stored locally.
+@property (nonatomic, assign, getter = isStreamingContent) BOOL streamingContent NS_AVAILABLE_IOS(10_0);
+
+/// Represents whether this content item is explicit content
+@property (nonatomic, assign, getter = isExplicitContent) BOOL explicitContent NS_AVAILABLE_IOS(10_0);
+
+/// Represents whether the content item is a container that may contain other
+/// content items, e.g. an album or a playlist.
+@property (nonatomic, assign, getter = isContainer) BOOL container;
+
+/// Represents whether the content item is actionable from a playback
+/// perspective. Albums are playable, for example, because selecting an album
+/// for playback means the app should play each song in the album in order. An
+/// example of a content item that may not be playable is a genre, since an app
+/// experience typically doesn't involve selecting an entire genre for playback.
+@property (nonatomic, assign, getter = isPlayable) BOOL playable;
 
 @end
 

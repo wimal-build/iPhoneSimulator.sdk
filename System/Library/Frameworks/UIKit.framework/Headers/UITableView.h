@@ -2,7 +2,7 @@
 //  UITableView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -48,6 +48,7 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 @class UITableView;
 @class UINib;
 @protocol UITableViewDataSource;
+@protocol UITableViewDataSourcePrefetching;
 @class UILongPressGestureRecognizer;
 @class UITableViewHeaderFooterView;
 @class UIRefreshControl;
@@ -141,8 +142,8 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UITableViewFocusUpdateContext : UIFocusUp
 - (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath;
 
 // The willBegin/didEnd methods are called whenever the 'editing' property is automatically changed by the table (allowing insert/delete/move). This is done by a swipe activating a single row
-- (void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath __TVOS_PROHIBITED;
-- (void)tableView:(UITableView*)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath __TVOS_PROHIBITED;
+- (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath __TVOS_PROHIBITED;
+- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(nullable NSIndexPath *)indexPath __TVOS_PROHIBITED;
 
 // Moving/reordering
 
@@ -168,7 +169,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UITableViewFocusUpdateContext : UIFocusUp
 
 @end
 
-UIKIT_EXTERN NSString *const UITableViewSelectionDidChangeNotification;
+UIKIT_EXTERN NSNotificationName const UITableViewSelectionDidChangeNotification;
 
 
 //_______________________________________________________________________________________________________________
@@ -181,6 +182,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 @property (nonatomic, readonly) UITableViewStyle style;
 @property (nonatomic, weak, nullable) id <UITableViewDataSource> dataSource;
 @property (nonatomic, weak, nullable) id <UITableViewDelegate> delegate;
+@property (nonatomic, weak) id<UITableViewDataSourcePrefetching> prefetchDataSource NS_AVAILABLE_IOS(10_0);
 @property (nonatomic) CGFloat rowHeight;             // will return the default value if unset
 @property (nonatomic) CGFloat sectionHeaderHeight;   // will return the default value if unset
 @property (nonatomic) CGFloat sectionFooterHeight;   // will return the default value if unset
@@ -336,6 +338,25 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 @end
+
+
+// _______________________________________________________________________________________________________________
+// this protocol can provide information about cells before they are displayed on screen.
+
+@protocol UITableViewDataSourcePrefetching <NSObject>
+
+@required
+
+// indexPaths are ordered ascending by geometric distance from the table view
+- (void)tableView:(UITableView *)tableView prefetchRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
+
+@optional
+
+// indexPaths that previously were considered as candidates for pre-fetching, but were not actually used; may be a subset of the previous call to -tableView:prefetchRowsAtIndexPaths:
+- (void)tableView:(UITableView *)tableView cancelPrefetchingForRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
+
+@end
+
 
 //_______________________________________________________________________________________________________________
 

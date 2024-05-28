@@ -3,7 +3,7 @@
 	
 	Framework:  AVKit
 	
-	Copyright 2015 Apple Inc. All rights reserved.
+	Copyright © 2015-2016 Apple Inc. All rights reserved.
 	
  */
 

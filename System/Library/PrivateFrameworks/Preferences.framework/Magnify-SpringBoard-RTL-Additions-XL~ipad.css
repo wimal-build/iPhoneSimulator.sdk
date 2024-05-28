@@ -8,7 +8,7 @@ BODY {
 
 #springboard-medium .FaceTime,
 #springboard-medium .Contacts,
-#springboard-medium .PhotoBooth,
+#springboard-medium .Videos,
 #springboard-medium .iTunesStore,
 #springboard-medium .Messages {
 	 left: 1206px !important; 
@@ -32,7 +32,7 @@ BODY {
 }
 
 #springboard-medium .Camera,
-#springboard-medium .Videos,
+#springboard-medium .Home,
 #springboard-medium .News,
 #springboard-medium .Settings,
 #springboard-medium .Music {
@@ -45,7 +45,7 @@ BODY {
 
 #springboard-large .FaceTime,
 #springboard-large .Contacts,
-#springboard-large .PhotoBooth,
+#springboard-large .Videos,
 #springboard-large .iTunesStore,
 #springboard-large .Messages {
 	 left: 1670px !important; 
@@ -69,7 +69,7 @@ BODY {
 }
 
 #springboard-large .Camera,
-#springboard-large .Videos,
+#springboard-large .Home,
 #springboard-large .News,
 #springboard-large .Settings,
 #springboard-large .Music {

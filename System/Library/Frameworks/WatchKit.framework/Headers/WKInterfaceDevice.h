@@ -37,6 +37,22 @@ typedef NS_ENUM(NSInteger, WKInterfaceSemanticContentAttribute) {
     WKInterfaceSemanticContentAttributeForceRightToLeft,
 } WK_AVAILABLE_WATCHOS_ONLY(2.1);
 
+typedef NS_ENUM(NSInteger, WKInterfaceDeviceWristLocation) {
+    WKInterfaceDeviceWristLocationLeft,
+    WKInterfaceDeviceWristLocationRight,
+} WK_AVAILABLE_WATCHOS_ONLY(3.0);
+
+typedef NS_ENUM(NSInteger, WKInterfaceDeviceCrownOrientation) {
+    WKInterfaceDeviceCrownOrientationLeft,
+    WKInterfaceDeviceCrownOrientationRight,
+} WK_AVAILABLE_WATCHOS_ONLY(3.0);
+
+#if TARGET_OS_WATCH
+typedef NS_ENUM(NSInteger, WKWaterResistanceRating) {
+    WKWaterResistanceRatingIPX7 NS_SWIFT_NAME(ipx7),
+    WKWaterResistanceRatingWR50 NS_SWIFT_NAME(wr50),
+} WK_AVAILABLE_WATCHOS_ONLY(3.0);
+#endif
 @interface WKInterfaceDevice : NSObject
 
 + (WKInterfaceDevice *)currentDevice;
@@ -52,6 +68,9 @@ typedef NS_ENUM(NSInteger, WKInterfaceSemanticContentAttribute) {
 @property (nonatomic, readonly, copy)  NSString *preferredContentSizeCategory;
 @property (nonatomic, readonly) WKInterfaceLayoutDirection layoutDirection WK_AVAILABLE_WATCHOS_ONLY(2.1);
 
+@property (nonatomic,readonly) WKInterfaceDeviceWristLocation wristLocation WK_AVAILABLE_WATCHOS_ONLY(3.0);
+@property (nonatomic,readonly) WKInterfaceDeviceCrownOrientation crownOrientation WK_AVAILABLE_WATCHOS_ONLY(3.0);
+
 + (WKInterfaceLayoutDirection)interfaceLayoutDirectionForSemanticContentAttribute:(WKInterfaceSemanticContentAttribute)semanticContentAttribute WK_AVAILABLE_WATCHOS_ONLY(2.1);
 
 @property(nonatomic, readonly, copy) NSString *systemVersion  WK_AVAILABLE_WATCHOS_IOS(2.0,9.0); // e.g. @"2.0"
@@ -60,6 +79,9 @@ typedef NS_ENUM(NSInteger, WKInterfaceSemanticContentAttribute) {
 @property(nonatomic, readonly, copy) NSString *localizedModel WK_AVAILABLE_WATCHOS_IOS(2.0,9.0); // localized version of model
 @property(nonatomic, readonly, copy) NSString *systemName     WK_AVAILABLE_WATCHOS_IOS(2.0,9.0); // e.g. @"watchOS"
 
+#if TARGET_OS_WATCH
+@property (nonatomic,readonly) WKWaterResistanceRating waterResistanceRating WK_AVAILABLE_WATCHOS_ONLY(3.0);
+#endif
 - (void)playHaptic:(WKHapticType)type WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
 @end

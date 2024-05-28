@@ -4,325 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AKSignatureDebugOptionsViewController.nib</key>
+		<key>AKAnnotationTheme.plist</key>
 		<data>
-		xv3uxyVBNnaMTfbFj5zTyPUWVuE=
+		aWhUorWo8GIWpCng9omord0S0BM=
 		</data>
-		<key>AK_Check.png</key>
+		<key>AKNoteEditorViewController.nib</key>
 		<data>
-		NiuCsZCotPRMCmP/+8SXoS4KcBA=
+		pVdQal/i47dvF/nA24MIyLYGTsA=
 		</data>
-		<key>AK_Check@2x.png</key>
+		<key>Assets.car</key>
 		<data>
-		T6pZCwGA62Q/5HRdaXNqgxQ2FLg=
-		</data>
-		<key>AK_Check@3x.png</key>
-		<data>
-		c8Je1pTLWRoWkSZ+bLTQv/PhkMc=
-		</data>
-		<key>AK_DoodleStencil_BrushStroke.png</key>
-		<data>
-		SBPt5a+INZH+3oPmZ8yr3h+lGb8=
-		</data>
-		<key>AK_Font_Size_Larger.png</key>
-		<data>
-		oSSbrTflpCfTibU5fYfBQdWHJn4=
-		</data>
-		<key>AK_Font_Size_Larger@2x.png</key>
-		<data>
-		86uNBWCXT5oU0Gw+8R4wAXsbANI=
-		</data>
-		<key>AK_Font_Size_Larger@3x.png</key>
-		<data>
-		bwuwo0GFlqyexMBRoaGR3sze5Vg=
-		</data>
-		<key>AK_Font_Size_Smaller.png</key>
-		<data>
-		FLtcfG7lVBk3caamyFHNM2am4dE=
-		</data>
-		<key>AK_Font_Size_Smaller@2x.png</key>
-		<data>
-		SHBDdlchvwiVHTqmL2Io2e54gws=
-		</data>
-		<key>AK_Font_Size_Smaller@3x.png</key>
-		<data>
-		4CMdt+g4YqIqfwtYewC0fpqTv5U=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsBoth.png</key>
-		<data>
-		fdNuGvdSxvahy1PTRq8ZwDbHpWM=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsBoth@2x.png</key>
-		<data>
-		ldn44XWkWnt6yaw0YyyG4z5D7us=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsEnd.png</key>
-		<data>
-		22mlkSNXpPL4V4YIjHJAZqIa9rw=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsEnd@2x.png</key>
-		<data>
-		P8v2mcngsYKbWO0sx91pkGU/9ys=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsNone.png</key>
-		<data>
-		FWPE30/oug2JEddrtq9W34P/XBs=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsNone@2x.png</key>
-		<data>
-		HkydEN3qn/NPw7znw+K4seVkikQ=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsStart.png</key>
-		<data>
-		M/JbntSGLIg1Qxsq9BcSMaLTVqE=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsStart@2x.png</key>
-		<data>
-		NzaXK9oC7oOMlghpvKTYmRGdyTo=
-		</data>
-		<key>AK_ShapeAttribute_BrushStyle.png</key>
-		<data>
-		gXcdnDMX+Zu84Q4gAxi9SZsUyuw=
-		</data>
-		<key>AK_ShapeAttribute_BrushStyle@2x.png</key>
-		<data>
-		8oCmyYv40lSeJSPdhYfLP9DU8AQ=
-		</data>
-		<key>AK_ShapeAttribute_Shadow.png</key>
-		<data>
-		uzz/uxBk4SwbaqUDH9/ladQv4pM=
-		</data>
-		<key>AK_ShapeAttribute_Shadow@2x.png</key>
-		<data>
-		1ZxRBPNBdM4DJGWzk0zfuxrU77Y=
-		</data>
-		<key>AK_Shape_BigArrow.png</key>
-		<data>
-		9ZZWNbHslBWfmMcb5HW4k7woUxQ=
-		</data>
-		<key>AK_Shape_BigArrow@2x.png</key>
-		<data>
-		rxqfeE9esYObiUPMekTBTlq4Uew=
-		</data>
-		<key>AK_Shape_Bubble.png</key>
-		<data>
-		X7ynjp8ycsCIHU5kzfiS6bITD14=
-		</data>
-		<key>AK_Shape_Bubble@2x.png</key>
-		<data>
-		PP8XuCp775Anh/PN3QHNTkaGwfQ=
-		</data>
-		<key>AK_Shape_Doodle.png</key>
-		<data>
-		/nrme0y2ydQFIve16U+rmht3qeA=
-		</data>
-		<key>AK_Shape_Doodle@2x.png</key>
-		<data>
-		ynDel+5um7OcbciVEtDMamJ6l0w=
-		</data>
-		<key>AK_Shape_Line.png</key>
-		<data>
-		3Z+J0fzip4LyVdEONnBuPAkS8DE=
-		</data>
-		<key>AK_Shape_Line@2x.png</key>
-		<data>
-		GG0dqCXKGkjL5X+B4qxOVr6gLy0=
-		</data>
-		<key>AK_Shape_LineArrow.png</key>
-		<data>
-		4lslpeKcgYLe3Q5QY8FBrcF3jeE=
-		</data>
-		<key>AK_Shape_LineArrow@2x.png</key>
-		<data>
-		xnVaOtNFSAxxSUDIJrXBrr1sx8I=
-		</data>
-		<key>AK_Shape_Loupe.png</key>
-		<data>
-		3VOn8i6KWEeqXJc0wHwIJo3PGvU=
-		</data>
-		<key>AK_Shape_Loupe@2x.png</key>
-		<data>
-		K0x5bAhoHRLK+ztIFSVq4b+h2Sw=
-		</data>
-		<key>AK_Shape_Loupe@3x.png</key>
-		<data>
-		nNYTb5ral0lDMyT8fjWTrYZ+sGw=
-		</data>
-		<key>AK_Shape_Mask.png</key>
-		<data>
-		LzLgsKL0FMumuG2SxC6uJkoWW4o=
-		</data>
-		<key>AK_Shape_Mask@2x.png</key>
-		<data>
-		DPRvGqeSUC/SPv6rLxrav8j62iI=
-		</data>
-		<key>AK_Shape_Oval.png</key>
-		<data>
-		Xk8QT9wemN1aOKKKoEkKQEWwsDk=
-		</data>
-		<key>AK_Shape_Oval@2x.png</key>
-		<data>
-		lGO88wp21VSaLgbOwwHSqLkklZo=
-		</data>
-		<key>AK_Shape_Polygon.png</key>
-		<data>
-		6P/DrXyws86tOPwQ+8lQgxjMVHo=
-		</data>
-		<key>AK_Shape_Polygon@2x.png</key>
-		<data>
-		UAt0zHjXNibwEcfnL76y+y7woaE=
-		</data>
-		<key>AK_Shape_Rectangle.png</key>
-		<data>
-		CoxsSiWRiYroDDAhMbAjP4qF00k=
-		</data>
-		<key>AK_Shape_Rectangle@2x.png</key>
-		<data>
-		L5ra/8ozsyk8Zn3xAvv5e9bMYKs=
-		</data>
-		<key>AK_Shape_RoundedRectangle.png</key>
-		<data>
-		gOt322wh6FYhU4l8YMZxXlI9ZEQ=
-		</data>
-		<key>AK_Shape_RoundedRectangle@2x.png</key>
-		<data>
-		A1Am/TJQW6jSMDncNdi46Q+1gi0=
-		</data>
-		<key>AK_Shape_Star.png</key>
-		<data>
-		dxYpiR/gkYRI/Ez6JEEu4/O2uXY=
-		</data>
-		<key>AK_Shape_Star@2x.png</key>
-		<data>
-		CQOS3ASlM0H/nmCxf8f382Z5aXA=
-		</data>
-		<key>AK_Text_Center.png</key>
-		<data>
-		H+7wZVwi5bXUNl5Rh//qk956Wbg=
-		</data>
-		<key>AK_Text_Center@2x.png</key>
-		<data>
-		E5vUjY33mndt2JBHWQtPNe6dMIw=
-		</data>
-		<key>AK_Text_Center@3x.png</key>
-		<data>
-		4fkaLFfceZbDg5Breb636xrbDUc=
-		</data>
-		<key>AK_Text_Justify.png</key>
-		<data>
-		Mljebo1EVDManF2Y927w6GajUAY=
-		</data>
-		<key>AK_Text_Justify@2x.png</key>
-		<data>
-		tfaMfHRxBKk/WDC9uCuTJ1ZHvAM=
-		</data>
-		<key>AK_Text_Justify@3x.png</key>
-		<data>
-		UOWd4PAfoRp55TFfdVccwQQoiuY=
-		</data>
-		<key>AK_Text_Left.png</key>
-		<data>
-		xcWlZRNkb3LTL45IEaX+oc8rp88=
-		</data>
-		<key>AK_Text_Left@2x.png</key>
-		<data>
-		EgDZ85OQtenRLwBEqCCpF7Az1zk=
-		</data>
-		<key>AK_Text_Left@3x.png</key>
-		<data>
-		4qeM+fPBUeGRhtV7LwCVnOb55uo=
-		</data>
-		<key>AK_Text_Right.png</key>
-		<data>
-		7RyKYK7LSit+OdaUgVS60DkrKNo=
-		</data>
-		<key>AK_Text_Right@2x.png</key>
-		<data>
-		2bzWvsk6gJMouakZG8D1edUpQAE=
-		</data>
-		<key>AK_Text_Right@3x.png</key>
-		<data>
-		sl5j0quStVAviRYbgsFiXhwVndo=
-		</data>
-		<key>AK_Toolbar_Brush.png</key>
-		<data>
-		NV5euIYDNvRJkrg6hSRspOlUb2Y=
-		</data>
-		<key>AK_Toolbar_Brush@2x.png</key>
-		<data>
-		fl0BOLUhTaku7RgkkZ8IBbtb0sU=
-		</data>
-		<key>AK_Toolbar_Brush@3x.png</key>
-		<data>
-		s5ys5EDed3rNv/VdfQyX+lheKdY=
-		</data>
-		<key>AK_Toolbar_LineThickness.png</key>
-		<data>
-		9pdfApppmbz5XYAslFitdhaXkPM=
-		</data>
-		<key>AK_Toolbar_LineThickness@2x.png</key>
-		<data>
-		rOw98oyYKte61whjknQQg22+sNs=
-		</data>
-		<key>AK_Toolbar_LineThickness@3x.png</key>
-		<data>
-		AoqqSoREwggiOLUuxhHSFGIOFxw=
-		</data>
-		<key>AK_Toolbar_Shapes.png</key>
-		<data>
-		adAD/9OD+BAg6POKrRPYPfyw99Y=
-		</data>
-		<key>AK_Toolbar_Shapes@2x.png</key>
-		<data>
-		zXJErDZ9g/xwaCGlqMzuulVfqQI=
-		</data>
-		<key>AK_Toolbar_Signature.png</key>
-		<data>
-		Ewk0SpzZt1Ah6dj2tIouQfb2z5c=
-		</data>
-		<key>AK_Toolbar_Signature@2x.png</key>
-		<data>
-		78JU1YnotavgCzF6ZP1zqXKo6iw=
-		</data>
-		<key>AK_Toolbar_Signature@3x.png</key>
-		<data>
-		q9QpnvVtwVWtzh3cZI/PJiHkGDY=
-		</data>
-		<key>AK_Toolbar_Sketch.png</key>
-		<data>
-		KugdQlP8tFxs/MB4JKuuFukO0Es=
-		</data>
-		<key>AK_Toolbar_Sketch@2x.png</key>
-		<data>
-		ksoIx/FKQvjbRmbsCOuKfL6oBHg=
-		</data>
-		<key>AK_Toolbar_Sketch@3x.png</key>
-		<data>
-		NTPmaNFJgYw14+MkP1RsJvYXtJU=
-		</data>
-		<key>AK_Toolbar_Style.png</key>
-		<data>
-		USTUNZacUWikGjOpNVH0JwMijwQ=
-		</data>
-		<key>AK_Toolbar_Style@2x.png</key>
-		<data>
-		6o3xj/9DTI1i0grnWEKDsYIMWRA=
-		</data>
-		<key>AK_Toolbar_Style@3x.png</key>
-		<data>
-		2QMnsdixbiudJVtp8MRUhK7dHs4=
-		</data>
-		<key>AK_Toolbar_Text.png</key>
-		<data>
-		v0Yxxypu7zK/GpXO+lhpgNB9+NU=
-		</data>
-		<key>AK_Toolbar_Text@2x.png</key>
-		<data>
-		rQxpDq/WJiiMI2J3DV9K0B39nUs=
-		</data>
-		<key>AK_Toolbar_Text@3x.png</key>
-		<data>
-		eLLQd1hG/OQDL68xzXcG+s/upNI=
+		wSLqOak909VyTFYVPR0kJ2EV/Fk=
 		</data>
 		<key>FontPresets.plist</key>
 		<data>
@@ -330,43 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Q/KfE6+JyvNs743NkBAmI5ZT8Xc=
+		qD8wRDZmMir+OL3XXkKbU/exl2s=
 		</data>
-		<key>PlugIns/Markup.appex/AppIcon60x60@2x.png</key>
+		<key>XPCServices/com.apple.AnnotationKit.MigratorService.xpc/Info.plist</key>
 		<data>
-		GBpkEIE+1u7wdVvrBGoBYrD2a1I=
+		pzvkDW+we0jO3vPH7Xfaz9wSJPE=
 		</data>
-		<key>PlugIns/Markup.appex/AppIcon60x60@3x.png</key>
+		<key>XPCServices/com.apple.AnnotationKit.MigratorService.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		poKWbi9mSfk3fPAYI+y5f3FOcpM=
+		br/xiFnm43Wh53e7GRtKE7afTdU=
 		</data>
-		<key>PlugIns/Markup.appex/AppIcon76x76@2x~ipad.png</key>
+		<key>XPCServices/com.apple.AnnotationKit.MigratorService.xpc/com.apple.AnnotationKit.MigratorService</key>
 		<data>
-		XoW2uyrLCe2Gm6hIUaBMTmt5I6U=
-		</data>
-		<key>PlugIns/Markup.appex/AppIcon76x76~ipad.png</key>
-		<data>
-		b1kgdS/7ywlkMJ+1ZAFlYmP2CUc=
-		</data>
-		<key>PlugIns/Markup.appex/Info.plist</key>
-		<data>
-		Sm159RMwM0PdWnVn9vrhTqXEDqw=
-		</data>
-		<key>PlugIns/Markup.appex/Markup</key>
-		<data>
-		MwnUhyZtZ/z0p1PaC0CipI68Wss=
-		</data>
-		<key>PlugIns/Markup.appex/_CodeSignature/CodeResources</key>
-		<data>
-		q22tGmpkejbTIFD7KbnuuHhHNdc=
-		</data>
-		<key>TSDBrush_Chalk2.svg</key>
-		<data>
-		hcul8Yo6CfcdtuUAiC2CDgSIuxw=
-		</data>
-		<key>TSDSwatch_Chalk2.png</key>
-		<data>
-		PYvCkcdSC84IEFBqp1KVyMuUbDA=
+		HjVRgVZFzhXEg4Us4LHzrPTuayQ=
 		</data>
 		<key>ar.lproj/AKAttributeController.strings</key>
 		<dict>
@@ -381,7 +49,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oNuyOc0OL2hgN0doROXSydyivXg=
+			H2+rqCXuK/OWYk+tSSmRScSgQzk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P3BH0um3tz1aH21x1B6Guc4uVo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -435,7 +112,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M5yIEGRujXyx+x/rtIITVonC7qA=
+			I2TU3+Gh4eK8OBUF/npAVHfc6es=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -444,7 +121,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pWswBe/F09RUWU3zdpefbUVcNhI=
+			2cLuDrg3rtPUFBCf2ViSsHBZFqU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -453,7 +130,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I/51NqlHypGDktpTTnabIGvGGYM=
+			L6S2mjd6IXyKZaGw9bTTEzOAbak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -480,7 +157,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/SAj+50iTKlZGp41g80hFxIz3z0=
+			OgJMnB5FAMcisbKAFe4qYlhPMFI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hu9hASYVPLVn4IN3ihXYRA1Ll+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -498,7 +184,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ERWB17RF6tTxNwinSB35AMKlXRQ=
+			+/iFyMkAeHz2K1hutS8to169DwI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -534,7 +220,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oJmZOYxfhk3d9YXvLkWnr1DQD6Q=
+			xt+LhfKvmtJLRb3fFe1G/BdchmU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -543,7 +229,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vMMIy9K/WdfEdqZCHLiwrKnN8L4=
+			Ew6sN3Ms1ldcFMG3gGAmC0srh+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -552,7 +238,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RYMIrqgQy3kGYfNe6g8EC7K0LBc=
+			LyL+m6Hesvf+Zbkyz9YACzk/3kg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -579,7 +265,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8FUNHpR3gXKErltVA05n4+oXIYs=
+			AUBFB01p4mkvUYloyWZcIP5zhNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RiAL/6hWmIEgvsO0DHANyG3nOig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -633,7 +328,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8F7nwPnMFkqFCz9Xz4aa8ffoO8E=
+			VWsUvFm/IWcyNPH6K1wVyxEypLk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -642,7 +337,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y/A7qCJ2LWsPXKlseMstsbDCnco=
+			lA/MEsG925wQKsnUfGoUnm53M5o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -651,7 +346,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v01R2F/pYgmJ7rte+zbsroJZ8eQ=
+			JNEtImE6M96y+WMmBW/2gq+uYXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -678,7 +373,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iCXMSzSh5LjfUJI0HkaPcrXV938=
+			RYRVvw3p3nQYBax9rOxaOhUg04k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ul7tAXwePRVjSgjO8uQJTTjbBIA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -732,7 +436,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OE0vDBlUQFMa3i13r+Odbm10XmU=
+			7ROF+LhSgxHHdymKOdO88D/KZm4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -741,7 +445,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ohfy6W05gY1P1MBc6qh8qQwki5E=
+			sjMzPai5qP/cCjrKJAJOR4MLMQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -750,7 +454,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4dQRFdoMYbQj+c3RmDyUeU9SzMA=
+			Ta3ocMZE6sTSh8nM0zMVrdG0RX0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -777,7 +481,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vWq4rd6v72rjgXu951dHWZdDm0Q=
+			EC/+tVmjaEQ4eCq32wbEPV0guEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a7lJVeKMhLWC4QcAOjeDo2kSE7o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -795,7 +508,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XdJb8SLv6GgCnE3AfemOLY3zB9A=
+			ZCuLIJ2VhCMg32EtYOwM9nlbQm4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -804,7 +517,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUH2druYP/aXgd1cyHPMUq523SY=
+			ESJCyquUYXlkdUOcmZbYTMO28bw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -831,7 +544,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q02yiYHryq/0fk1Wbl8ldSXEC6A=
+			2E/evlFCYaG3ab3AvmoX08ardU0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -840,7 +553,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZVdLSMpZPosznfV/cPO+sPqB10I=
+			DCt2WRFHp6oPzmFsu325yiLEgY0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -849,7 +562,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R8KVd+//cMOgQfx0i6y+Av8ba1g=
+			sojpj26br3WQkTA1Hujnh1c5PHc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -876,7 +589,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqV8NbHOQ8nvv3+Db/wLzywgL4s=
+			06L3+L3FLrNFxPjcJntON2zVxM4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			siH/40jgJNAsxZAsOfLermL9dLU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -894,7 +616,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fGjeEGc3UTRtzjc2UgYm7HJq6ro=
+			WAzHv7n9FOUgLBOkP+owg9ZuK84=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -930,7 +652,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lPdDdV5lXWEEr7godkYYf8fsdFI=
+			j0D3EG3az7MpLg/BZ+HeyFxWC4U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -939,7 +661,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqvV9z5eFeOOusMIS+oUkCOU+mY=
+			bToaGv7uVdahenpCJE3bmAci9C0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -948,7 +670,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sQbUJ7IPoiQwj7ahUzWcGn6mn2k=
+			wriQdVYVNdFaqDOcfghnZ4CKC50=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -975,7 +697,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uWLjfx2UoIzMDaNAKO0D2v0Ika4=
+			JifCIE2G+zTHGPmpZsZIv7+MffI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QW/EPLvWXvKJdjZENHusNOZwWqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1029,7 +760,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y92cIprcntmtze8xik4jLPF5df4=
+			fwuCkqWJCpLIjcDaKRJJ3SajY04=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1038,7 +769,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mTdOkLxTTVxMt1kaTcU7RcJIfo=
+			dOoHPw4t5Ampnl+uVTGRZdl4JFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1047,7 +778,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rQAq6LicT/MPrICU3dpzA4ebLkw=
+			Z2kguBo/RsXgD6Sw4Lh1t5haIPA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1074,7 +805,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uWLjfx2UoIzMDaNAKO0D2v0Ika4=
+			JifCIE2G+zTHGPmpZsZIv7+MffI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOtWAAND+Hdbr2ijMBNZKjCYa+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1128,7 +868,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyB2izHMgzaR+gmdapQYl3Tu2lY=
+			nROeV/4n+V2CC4AvSBzPLaDBh+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1137,7 +877,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mTdOkLxTTVxMt1kaTcU7RcJIfo=
+			dOoHPw4t5Ampnl+uVTGRZdl4JFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1146,7 +886,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOZSUyHE03X07bhaMtog+Ls0EHE=
+			dJSN8xXVO/3sKTqiX+8ysCLKGZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1173,7 +913,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uWLjfx2UoIzMDaNAKO0D2v0Ika4=
+			JifCIE2G+zTHGPmpZsZIv7+MffI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOtWAAND+Hdbr2ijMBNZKjCYa+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1227,7 +976,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyB2izHMgzaR+gmdapQYl3Tu2lY=
+			nROeV/4n+V2CC4AvSBzPLaDBh+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1236,7 +985,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mTdOkLxTTVxMt1kaTcU7RcJIfo=
+			dOoHPw4t5Ampnl+uVTGRZdl4JFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1245,7 +994,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOZSUyHE03X07bhaMtog+Ls0EHE=
+			dJSN8xXVO/3sKTqiX+8ysCLKGZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1272,7 +1021,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b6UAaJRlHiFwumHgl1Y4YQQAiU4=
+			BOB27vLYvwZvpNvu0w+X7qvW9zU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ujTP64+XgYccw527qxwf1aKRt5s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1326,7 +1084,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			372acRujV647QqAmGWbkmRzSdK8=
+			4Q6zOn4UHTIgoXC5433EyQwPZoU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1335,7 +1093,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NpOgNf+hy0eRJVtiuuLSTICCyyI=
+			MDVQtDoODBEjPvcfqBV7TQ7NM6w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1344,7 +1102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uklfVVremDxTzfM9oFUkQZKbjNI=
+			XQ0RlNdinuBj+PzdsTXAiV/gqBk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1371,7 +1129,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UEkcuIWO9nTK8zQXmiXfZCWsdxA=
+			02jBS37vE5CalNROBAhQGFOWMrQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a80ciuFLoRWkhtI1NLeOAz6y/is=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1398,7 +1165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			la6VrThHErzVyzlR3qwKsuy9g5g=
+			xBO7YOGR5B7SiLh0DcEtCtvfwb4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1425,7 +1192,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7d5O+aaE/CfAHFmfifUPsy4Mz0I=
+			7vbakeg4ceq/f/TxLTSn7d3o59Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1434,7 +1201,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqXxUSja+9gwqORRvjX79+hFaGQ=
+			1rojuK7a+ns7NgN8BO3KcIDHAIk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1443,7 +1210,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F6YjygoML/0TSozjku2JTzmtgUM=
+			q3yqftgD2jKZxSwrT5dAlaiyVg8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1470,7 +1237,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5aX1qUhXkl5G5znEF/bcqFVvYs=
+			3btZauUUJHjDR8OGfikTohYsZLI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			atMyQUsN8EDXq/uWDxwR4MDR3Vc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1524,7 +1300,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5LTbOe+fHzIMcYxAlPz4aJfQyp0=
+			35UejapvQoFPdLYmNuOWdpdzBDg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1533,7 +1309,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wVJybKSmf09PyH/rAKJLaVQkZy8=
+			nc814SHEoNCYjDnTgTWJFCv7UIY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1542,7 +1318,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SgoZ225UN9IIE0UUrnORGj11FVU=
+			3CB5SdOF2Gn/4ENvM8kzr4P+EXw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1569,7 +1345,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5aX1qUhXkl5G5znEF/bcqFVvYs=
+			3btZauUUJHjDR8OGfikTohYsZLI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			atMyQUsN8EDXq/uWDxwR4MDR3Vc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1623,7 +1408,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zd4C2JeWFKIFu6rqcafGy362Gfc=
+			r1P7tLmiWXC6+PMGAHTxyylYfq8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1632,7 +1417,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j4ugL0HtrMj+34gL9G42MofQNRM=
+			wZWKtQY3ilgMxyjoOW5vr/COl2E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1641,7 +1426,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			og58mXjCDifixnjNU56MNqKiAkQ=
+			RlPx0PmE9PC09Xofj2ab8WqOcjI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1668,7 +1453,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f4v0WWdB6znvGlmGRJwI5zxAc/k=
+			zhMCHpCtxN20U2XMfKQUNzE/F7s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bslYc6/sLoEPDrhskmtGeFyZan0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1695,7 +1489,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pr1YVMv+DIHT48xvBUz/vk5n6/U=
+			HvC/b1SMbd6SojVFOiPKjXkbSEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1722,7 +1516,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1fy5OhactrdDnxoxcv0yEuvqhC0=
+			NPbaHERFFNcwwduScYZuplhQ0d8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1731,7 +1525,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yrHfUETz27BKXMtfGfq7QkQGuOA=
+			l4vbMDuNfwFkpYIB0xJatPR2ufU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1740,7 +1534,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MTty9CVPaSst7ejqtpvpI1iLQ1I=
+			wdpKVEr1CVpPtMN8IPfBD5vdIEU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1767,7 +1561,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/s/N6CYqijoAyZ7BgF2sE0DZokw=
+			vOrsppq/LdWi7nuQ4YtKh5wWGoM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3tTtZsFNftRU8GN1dHmG0qwVQ0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1776,7 +1579,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/2l/Kx2M4vPSaryllDTG17/8WDU=
+			oJUpH9tegcRQvCu+CIYfKkqDRvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1785,7 +1588,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nHnTTGYDfsKMeDrLe6DhIV0q7B0=
+			IkyM+6F4toxnuwPShjNy4n9hlZY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1821,7 +1624,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DzLKCWfwoFMoSw6ylTKdd8gPvMY=
+			z5NZxUHTyNDMCvkI18f0y8jaWQg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1830,7 +1633,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gXpjZDxXPW2CHuhFYOAlOu/ZXs8=
+			JIBjlrROqGrkzizscT5IcY31xdg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1839,7 +1642,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BvWdaMmpzNPJdwuKY7QI/2BVX7I=
+			8Ip19w9tC0kvXnwXmmHGAI1592I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1866,7 +1669,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fBP2au39w6QWI36smRcIpYmfkeU=
+			WhO+uHd1WlITuCrLvgu/9Jy7S8M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9C0ROcR6lo4DBlQpNboDxrJ2+J0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1920,7 +1732,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Od2Y+o1z4tiO83otWhdEpSU0b3U=
+			/6P29xR538Y4sgthmQZDaqUB0Co=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1929,7 +1741,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W1VWDl+WCarVarbZzGUzJi1bdGc=
+			XV6i1Go0E5spEl8XAS6gJ9mMCFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1938,7 +1750,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VWS+WD3DJJDZT6BfovBD6EGYkuM=
+			/xXAmUKpKFw1XS3K0UOlpQQ38pA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1965,7 +1777,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0sI9P5osWQlOZZtzW8r17xXh380=
+			NtGoY2S2GMQKQ+0/fI3AuRWkzV4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MpSv7osCyEvqIpNUC+uU3L1+k8o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2019,7 +1840,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UkMpI1W5nn7VkKow5mVZHc7mERU=
+			IQ6W6/3K04YfwMoQCeJ0RvSD7BQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2028,7 +1849,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jA8cYfAgr6Pt0cBB8Zm8D0HEXKE=
+			bnV7wl179Ztm6Jzkg33sKDHO0TI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2037,7 +1858,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lwmZi7Y3Ptz+ofIUY/VY074uBuE=
+			3BaEQE4KAiVfmQUOH/4gRsb5+3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2064,7 +1885,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qKLUrc3nHCTVWUCnfa6wt4vd/Xs=
+			vuY2xs41+UbuZMLUqDXCB+IDM/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hzWiW/2FRCEmq4V9xQYSwkrvH+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2109,7 +1939,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tZy5R7E5rs3Ij7HZQqfumPMJ1wM=
+			hdunpBfSgf7rWISsK1RTrWchs7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2118,7 +1948,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CzkVpUYSnORCDbbutjOk1J9p3ZE=
+			doWi8VpCiyeoiGFR8pRR8MZc3E4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2127,7 +1957,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yws5FSAnUBhu5HnmSwzRtf56HU8=
+			a1kds0jMWOZtYMIu91qKwEoROKI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2136,7 +1966,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IZo5vJ5MPxY3c/rKXXCNApOkdjU=
+			kqMMLHHuWtvkaoJPFLisZo9/uTU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2163,7 +1993,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q2lYkH7vH9j0TG4eKrmcw2sjUGI=
+			NBpCTVfQmmFWLMhcPpqbqTk1eqk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			28noP6rVrqDQ+PVa9aIk1ziv09Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2172,7 +2011,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kq1CTlvSW8OsamR++ewdoxNYRfs=
+			8cSCEWZrvXBT7ryX3LEDydg8xWE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2181,7 +2020,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nN1491kxOzbr1S1cL3ss1QVEA4U=
+			I5RGtsiKDxJJpJrv6oDh1E9Kt9w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2217,7 +2056,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mcsec341OcybpJaniWfFtwQUsQ=
+			WdFNtYYG4axgkwTodAmQ8JOHyj0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2226,7 +2065,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JfabumZ/WssLti7pTPOjMY4FIs8=
+			kzQJbbCwb765G92XQfc3E3hHUfI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2235,7 +2074,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sIoxeUs7gbSCnB4JBwyzM5jPkzw=
+			DDHcDgqetsFqOboAk9OPsmczVWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2262,7 +2101,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7mRmX+P7Lwh536p8qJHuNUcim2s=
+			napFRh0bcUc8zLd8koC9qbCvF9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jtkgBwr+DGjjqBBgPqKgRa/TgAk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2316,7 +2164,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZTxyZ6JTvSM/H6+T1v7j4C4N9/c=
+			OUXSirkV9IdgeXOEt5QCejrL7Kw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2325,7 +2173,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fv8lQ1BFtvZfSRSO/GGaf3TZx2I=
+			8XfqlCFi0BMIZcSMB351QgVywDE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2334,7 +2182,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SUJOrpiBhPEr7CrEimjOkTlsYbc=
+			UdAyQZ+OiMyXj7j5wEHsaJSX218=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2361,7 +2209,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CA22skOh6jnQ6T0jlTtuqjFbuJg=
+			EQYHUDjgAOjya9nu2T2aq67raV8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qNenMuqGLZk+QuceoI2HC/4djpo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2379,7 +2236,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ASMWEPulWfnU8NYruaU0LUksvyQ=
+			3EzYzFDZWWwL/mQodcEwZTZcARY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2415,7 +2272,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vQevCDrllHdUW0lHaY8/G5n3ofo=
+			hWShzPwptHJ/kBeFe/m86QUwaM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2424,7 +2281,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hywEAn6XcQTjGRtCwn9qVJ9e6M0=
+			K6rlSx1I9MRrWljSZLg/ga0pQCk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2433,7 +2290,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZobgnwTw0iqhihHmqDFdz/eLzqI=
+			ne6vkC1bWNIQGFBYom9otetCdD8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2460,7 +2317,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7NZrO4eWh/1Vvx2MXJpHJ87NC2M=
+			+RlEyRvYIRSmAWuEVuVegopdHxc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xeaK7odoVf77IkbM6ybR0pWVwxQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2478,7 +2344,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SW/jUDn2d3YMljMPuqMrPR4dAoA=
+			wlQZ8wYeujds5Z19fYUmFSXE1L8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2487,7 +2353,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZcC55oCP+zoXZYXJ3MkoEu9BNY=
+			mwChYFVcuSe8ecSa4irBj/04z2M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2514,7 +2380,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1tb1RNgSWkSjXs2fGxDiVNPif3w=
+			ZiY+w2fTS/oHj6v7aOAYXQPocu0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2523,7 +2389,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NvEaULokHQhQOn5wIW7EQ77dFxw=
+			fyJKNyd46kbdHdFextP/oLB5Uhw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2532,7 +2398,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QQATp6Go/0+guYT0nbwPEWVIjsw=
+			NZG9IvhWB2DF/gBPXBMLTPb8mu4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2559,7 +2425,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			97eBiIxu1js2hvPFFn5qu579/r4=
+			pfM1vvkNATC7geDb7USShKVKUWM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p4W53GD1sf9aqDOplfRkAIp4Dd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2577,7 +2452,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tFWtc2Z1KGQ4ilogKywWUoRs7UY=
+			A2+tTymuLF0W5RxH0UM2zgQqTUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2586,7 +2461,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fHUlYMECJaL4Sqorx6uyPVjVOmM=
+			0TE3I8a2dl9IP3zNWtuBE07DrFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2613,7 +2488,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jv6L4RtkDQoLGODrIcJOjOMyC8E=
+			IGgRA4FM7L9yAzQ1KwSbzv/og2E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2622,7 +2497,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EEMkVY+q/cSImO22FnJX60EZHM0=
+			BAKZNztNTTD/FzEJ1V7o6B5Ym7o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2631,7 +2506,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jf9xeO4+ht7ggu0b7vSdHstbrr4=
+			QQWMwtlowRp2lBx56SRhGbINlgY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2658,7 +2533,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iOFiwXVIRRdq88Z0Wu93CZQyg/E=
+			gAWv3FPkon7vgaZc35DW85woo68=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u6tT1bW8vFApvdq+BXMWpAVoK6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2685,7 +2569,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CcnSv/OmrJ1W5L0XOGw0EoRuIG8=
+			NvFDvHSeuS8STBgT8n5e6PrO0Jo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2712,7 +2596,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hWvOzV8dZgN5b3uCdqi6jysrDbM=
+			AyH72azHvdpOR9yFe7SVXfzr5b8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2721,7 +2605,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQYvE7CAQxu0jfMzYmqGyU9CAPU=
+			7SBq++QIgTPsmeqjGSdL0MYuHe4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2730,7 +2614,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zENr/CfeXbkvjrY2mkJJmL8Gj3Y=
+			ap1LxObAwgkKTzMmeFDJIimT8hs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2757,7 +2641,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyv9EVUhK+2NU1CjzPlC0ELanzU=
+			3HIjqBalCewGOuQGjdFjGrwaRJE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dbXp+pf6euJvV6AwXlPaQNq8vqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2811,7 +2704,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mudoM+IDLoOJezlW1EXYZMXtKck=
+			/kS3gPL7bmmiXcFSiwG6LPCxDEI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2820,7 +2713,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			91QkVpn5FSvZopQHw2KS+4Ymqdc=
+			jHSwjKVGRlG5+ayf/s7wYHD4iYE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2829,7 +2722,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+X1fufRCRQKWI7a1QCycCr1OTqA=
+			Qt+I85eA950fJIXArcaJm3/2FIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2856,7 +2749,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zas6O63FxcCQDHs/64Ucr/2lD84=
+			kP/zfXi5X4x2HO6+5G3vDTkQuhA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f1/25bbZEE/nbooV3eP52OQ6+MA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2910,7 +2812,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7hT+5ZOaAaI+jwx3NRg1E1i5l0Y=
+			MdEfWGZjxDcRjCIIrZCVQoU0NAY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2919,7 +2821,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jhRynvKMR3w2/XYnP4nhHK+LrA=
+			T8I+Rh+SeqORgmeJvkmRXM3znmE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2928,7 +2830,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dcFKZ0BZeM5peKe4qqd59l+PIks=
+			14zCDT/kRqOPJGPX/BiWHCVbZTs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2955,7 +2857,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7zln5ofOEL9SfIK0xbjJi/azq5I=
+			gAk2wfgqORWHzv9DJysffuzYgDE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bb8mUgFxw3Kfgcs5jNddeWJKkIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3009,7 +2920,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d2988Xb80/YVKl0Zeor2mp2QazA=
+			0L7ZbLdGBovFos2AkPLf04AYlew=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3018,7 +2929,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MlWQLTw8kB+H3/O+7WsWh66JOw0=
+			FxT90ASVNfYzAo1s1w2RASlTzhA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3027,7 +2938,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pesqgemlioOBneQzEIwTKLlXm+c=
+			tbKSk4RJZ2g4KUoHS6la6D2zo4k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3054,7 +2965,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kT+RCRmrKYg95h+V4xLcvhI0fqU=
+			/LPjLZ8VE2VYJoedKPUhhnQsiC0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+K3vlewaMz4l+q9QmjtU5TIunJE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3108,7 +3028,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ss2mOq0NgeGzEVKNqpO8R90pRqU=
+			zsQ5oerBJBPne/2G3Q6erJKEO3A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3117,7 +3037,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hm5xqYBR9rv+NxRGIXodPSO7lqY=
+			9+Dsub0NlzNn+p+lCkl8GtU6CMs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3126,7 +3046,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vxBFabjeTKsxHbKbE0z9Yk4xOPU=
+			uParjTdwJBZN9TU+T95l328YK3Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3153,7 +3073,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			06A9RFWYee47/GkuY6HwwxwACjE=
+			5BdLsvTyNQmci3FoFaLiYpc/2eE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dioeRuuwg9VZiDD3vlqZpx4E1Mg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3207,7 +3136,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OapkZ5aQ/sXXzd6XIoZv9o5sGmE=
+			hEbGTrmIlxp2MDa+lBkKQOdCHT0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3216,7 +3145,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yrOAx3Tsjj3bTSleMJpWxl/b7b8=
+			nW0PE1+v5BCMNtZ+LuIVmwUy7uI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3225,7 +3154,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eu1qD9SioTys670OVZuY8LyLRAk=
+			AfZGC2XHHRrHkgzGkSR/huPpuD4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3252,7 +3181,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yI7tn5bH38WSr2KoC8YgbAa87/w=
+			rjTWG9DAqciGBs3VMIfyLgOH5LQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B3+oZy2+2VBVUFKz2CeS/r+XItk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3306,7 +3244,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9M4bUJ6hL6Nlh/IFFC90HTxNBLI=
+			g+jsW+JjYFBDOmeC8s0KZo94Dp0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3315,7 +3253,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XTxtcbWcLZ4jKLKHFgvmJaURTk8=
+			B5Wy9UTsqFnhG67M2UlhMR5em4A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3324,7 +3262,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XmkU/UqhKN0d6uK90q9QbqHrwb8=
+			HJNVpW7B/HiAQZPuMWBW7f5uT30=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3351,7 +3289,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cbA7i930+gmWsR8D3a/bkkwL/NY=
+			tks26t2nqiEd5+ex+jP5WzGEuXU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uqNs4rMZ9BeDUL/4YR4QmWTJ65Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3405,7 +3352,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XjfXJN4Y+htVPKpPsaN3UIyIROo=
+			fOnxLTrzdDkT4VQdPqcFbRNujnw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3414,7 +3361,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fZ6zF5ruD4WVKz6J3oNlUpB+k9U=
+			DAfdLFiL7FhpYJVAQ7VNUBSZO34=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3423,7 +3370,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xlvTLOKsGh9xc02FpybMBez2igU=
+			+phS8n/u66WsN+TaAv5n0+aeb3g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3450,7 +3397,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6WBmPJpdKnY0YQVokqe+bVPrdHw=
+			ZFQ/2RcAupzmUovmW7hqsQy7voc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uui3CZPc6AhvvrtUWAZ4rgc2hL4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3504,7 +3460,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rEo/sVo9IbhbZ1JGo7Zv5I4Sk3U=
+			S2+dF5DYGiLyfFidO4djfjnXZd0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3513,7 +3469,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6zItm8xTKbEV8aFyYR4AQiQGwRo=
+			s6tk4fDyhTboUT9tMoNq3Hv5LhI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3522,7 +3478,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SqbPGnYUhCmAlmppZmDr86zLRoc=
+			aOPNXIWDbrs7hZgsfzT0WHNu75k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3549,7 +3505,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G2YwnVhvU6e18bRWHOqaM/Jr9Mc=
+			3OAyP1Nax0MTijGi6znorAE1PS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kstg5+i2nZSc8PLCeQBchUCKNeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3603,7 +3568,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fp5YSCFt/CCJ3uageJH0GroLRmg=
+			Rm1ouXeZ6LrWXbLajK/LTrCbud4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3612,7 +3577,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jwzRa4zZpg83N8zz8vTf/6UXq3s=
+			BOI7RDA//9SjDecROI1/AgrIFp8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3621,7 +3586,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cV2CzOwwA1/aneAraA5A63ObXPo=
+			rThBJeatViE13se6SDMQcityaC8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3648,7 +3613,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lt0bVql3I3O3qOwUIcfQoipwF+0=
+			NnJujBXsuYXLxTt5oDVkIyk+SEk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OMPLrSVWF+67si4gCZbG0IFo6rA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3675,7 +3649,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dJB7feawg76Vi8AdgQNh1lnpKog=
+			37qRr7ZPNV93bs8/WwH1TwFhE+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3702,7 +3676,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7mNRLH0AhLGsI+cFVIMPcL7KbcI=
+			IzOPtNdGX3cfrjdpRzqOWDzK30I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3711,7 +3685,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MWfK6yKzjd5Xz4jInSsglHbXAQw=
+			zYqk24Q11nY1oUtHLsfC9tm+EJY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3720,7 +3694,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AZd06ftfGW3+9CSyLRUqkiVCbq0=
+			msgpw+APgAFwfmsJA8s6graQ4LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3747,7 +3721,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hnFWVwnlfpPzAb21sXqxI3SPnjc=
+			PwnBdu/UGSlSTs8QyORaJGpiKXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			llzLPfH1nTOvxUNgSzoxX4J3OsY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3774,7 +3757,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j57u4+vKC+A2EZA/pCAFSbyZE9k=
+			L4AohYM75H7m3uFnfE5QTJuxESU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3801,7 +3784,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mb+px0Qonf2UY59aBjcwePhdj+s=
+			dgg9g0n73gQqf/aQ1bMfQ13IGP4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3810,7 +3793,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KghuYkd7bI5G3GycehnEMHDPL9E=
+			E5lBJ1opPPnBUreI8T3KQ+wkZ3I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3819,7 +3802,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OVdtPxONhCm3ujddc+qdeNoaJns=
+			WnlPgK2SXalHTQj7kPZ2YHP043s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3846,7 +3829,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FxkcciG2XfMDtExhyqjuNkYvs2E=
+			BNYm5itzuT+npNvxeG7MFbiRVxQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E0BAsc6NVuQQTqkpPt/OvKfkEOU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3900,7 +3892,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iRgzMaYpGtXxsqMTo3oLctjp3i0=
+			MXNhDZdS4TfkJUHyC49KXmIcxoA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3909,7 +3901,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WUYJRx+YQem+wOfR1Gq6/EY+smE=
+			pLWtxGGQd5ch4uSi1Eeze/6zBOc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3918,7 +3910,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1BfqVbUlFtbXxRvTuBAAMebKtXE=
+			p+b1hW9rRz0LWI98d8S+s3OMXng=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3945,7 +3937,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6ndX7kd3/SjjYEpvWWpS9OrqKdM=
+			u3l6Y84EbILYR+NS4ZJsfCXPWYA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gutmIS7M6E0Sn801bc1oTIj4wdk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3954,7 +3955,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Xy+7GHGZ0kBU5aJm/6rM2Zc+Sc=
+			6TJVlop15QdEUv4ErvcPuukpQAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3999,7 +4000,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ktY2yTZmpX85nC9iIg7MG/pZmyc=
+			hm9Y6Z9kYid7NLNuHXQI6Taq4X0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4008,7 +4009,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6sMVEarM/SwOqg8akgBig/DOzcQ=
+			bfVAGa3KxlWNCw0BOqqd0p2lspU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4017,7 +4018,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4jQ9RB1QKG4EuJ2T1ofMMXpUK/s=
+			PHKv/YOs4B27ctBxuc3DGqSJ4Qs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4044,7 +4045,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6ndX7kd3/SjjYEpvWWpS9OrqKdM=
+			+uyds26/S+5f8kZVO0+QjIb4vYo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			01qXDOTGkiDvYz83qb7N/oSxN2g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4098,7 +4108,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I1hwV7T+xvKcUkbnFQPILi10E3E=
+			8V4LXJrm3A0zRCp/tggnu0741rA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4107,7 +4117,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n50rDRKA82C2MGL/VdBCmq1wvSU=
+			tQ0bywGZaKfIkij1b5flA2doOes=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4116,7 +4126,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hx3q1ry8elBMP216V1DgymeISpQ=
+			3cHGGWuMY1WNvj/feqCzEFcN05U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4133,365 +4143,33 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AKSignatureDebugOptionsViewController.nib</key>
+		<key>AKAnnotationTheme.plist</key>
 		<data>
-		xv3uxyVBNnaMTfbFj5zTyPUWVuE=
+		aWhUorWo8GIWpCng9omord0S0BM=
 		</data>
-		<key>AK_Check.png</key>
+		<key>AKNoteEditorViewController.nib</key>
 		<data>
-		NiuCsZCotPRMCmP/+8SXoS4KcBA=
+		pVdQal/i47dvF/nA24MIyLYGTsA=
 		</data>
-		<key>AK_Check@2x.png</key>
+		<key>Assets.car</key>
 		<data>
-		T6pZCwGA62Q/5HRdaXNqgxQ2FLg=
-		</data>
-		<key>AK_Check@3x.png</key>
-		<data>
-		c8Je1pTLWRoWkSZ+bLTQv/PhkMc=
-		</data>
-		<key>AK_DoodleStencil_BrushStroke.png</key>
-		<data>
-		SBPt5a+INZH+3oPmZ8yr3h+lGb8=
-		</data>
-		<key>AK_Font_Size_Larger.png</key>
-		<data>
-		oSSbrTflpCfTibU5fYfBQdWHJn4=
-		</data>
-		<key>AK_Font_Size_Larger@2x.png</key>
-		<data>
-		86uNBWCXT5oU0Gw+8R4wAXsbANI=
-		</data>
-		<key>AK_Font_Size_Larger@3x.png</key>
-		<data>
-		bwuwo0GFlqyexMBRoaGR3sze5Vg=
-		</data>
-		<key>AK_Font_Size_Smaller.png</key>
-		<data>
-		FLtcfG7lVBk3caamyFHNM2am4dE=
-		</data>
-		<key>AK_Font_Size_Smaller@2x.png</key>
-		<data>
-		SHBDdlchvwiVHTqmL2Io2e54gws=
-		</data>
-		<key>AK_Font_Size_Smaller@3x.png</key>
-		<data>
-		4CMdt+g4YqIqfwtYewC0fpqTv5U=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsBoth.png</key>
-		<data>
-		fdNuGvdSxvahy1PTRq8ZwDbHpWM=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsBoth@2x.png</key>
-		<data>
-		ldn44XWkWnt6yaw0YyyG4z5D7us=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsEnd.png</key>
-		<data>
-		22mlkSNXpPL4V4YIjHJAZqIa9rw=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsEnd@2x.png</key>
-		<data>
-		P8v2mcngsYKbWO0sx91pkGU/9ys=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsNone.png</key>
-		<data>
-		FWPE30/oug2JEddrtq9W34P/XBs=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsNone@2x.png</key>
-		<data>
-		HkydEN3qn/NPw7znw+K4seVkikQ=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsStart.png</key>
-		<data>
-		M/JbntSGLIg1Qxsq9BcSMaLTVqE=
-		</data>
-		<key>AK_ShapeAttribute_ArrowHeadsStart@2x.png</key>
-		<data>
-		NzaXK9oC7oOMlghpvKTYmRGdyTo=
-		</data>
-		<key>AK_ShapeAttribute_BrushStyle.png</key>
-		<data>
-		gXcdnDMX+Zu84Q4gAxi9SZsUyuw=
-		</data>
-		<key>AK_ShapeAttribute_BrushStyle@2x.png</key>
-		<data>
-		8oCmyYv40lSeJSPdhYfLP9DU8AQ=
-		</data>
-		<key>AK_ShapeAttribute_Shadow.png</key>
-		<data>
-		uzz/uxBk4SwbaqUDH9/ladQv4pM=
-		</data>
-		<key>AK_ShapeAttribute_Shadow@2x.png</key>
-		<data>
-		1ZxRBPNBdM4DJGWzk0zfuxrU77Y=
-		</data>
-		<key>AK_Shape_BigArrow.png</key>
-		<data>
-		9ZZWNbHslBWfmMcb5HW4k7woUxQ=
-		</data>
-		<key>AK_Shape_BigArrow@2x.png</key>
-		<data>
-		rxqfeE9esYObiUPMekTBTlq4Uew=
-		</data>
-		<key>AK_Shape_Bubble.png</key>
-		<data>
-		X7ynjp8ycsCIHU5kzfiS6bITD14=
-		</data>
-		<key>AK_Shape_Bubble@2x.png</key>
-		<data>
-		PP8XuCp775Anh/PN3QHNTkaGwfQ=
-		</data>
-		<key>AK_Shape_Doodle.png</key>
-		<data>
-		/nrme0y2ydQFIve16U+rmht3qeA=
-		</data>
-		<key>AK_Shape_Doodle@2x.png</key>
-		<data>
-		ynDel+5um7OcbciVEtDMamJ6l0w=
-		</data>
-		<key>AK_Shape_Line.png</key>
-		<data>
-		3Z+J0fzip4LyVdEONnBuPAkS8DE=
-		</data>
-		<key>AK_Shape_Line@2x.png</key>
-		<data>
-		GG0dqCXKGkjL5X+B4qxOVr6gLy0=
-		</data>
-		<key>AK_Shape_LineArrow.png</key>
-		<data>
-		4lslpeKcgYLe3Q5QY8FBrcF3jeE=
-		</data>
-		<key>AK_Shape_LineArrow@2x.png</key>
-		<data>
-		xnVaOtNFSAxxSUDIJrXBrr1sx8I=
-		</data>
-		<key>AK_Shape_Loupe.png</key>
-		<data>
-		3VOn8i6KWEeqXJc0wHwIJo3PGvU=
-		</data>
-		<key>AK_Shape_Loupe@2x.png</key>
-		<data>
-		K0x5bAhoHRLK+ztIFSVq4b+h2Sw=
-		</data>
-		<key>AK_Shape_Loupe@3x.png</key>
-		<data>
-		nNYTb5ral0lDMyT8fjWTrYZ+sGw=
-		</data>
-		<key>AK_Shape_Mask.png</key>
-		<data>
-		LzLgsKL0FMumuG2SxC6uJkoWW4o=
-		</data>
-		<key>AK_Shape_Mask@2x.png</key>
-		<data>
-		DPRvGqeSUC/SPv6rLxrav8j62iI=
-		</data>
-		<key>AK_Shape_Oval.png</key>
-		<data>
-		Xk8QT9wemN1aOKKKoEkKQEWwsDk=
-		</data>
-		<key>AK_Shape_Oval@2x.png</key>
-		<data>
-		lGO88wp21VSaLgbOwwHSqLkklZo=
-		</data>
-		<key>AK_Shape_Polygon.png</key>
-		<data>
-		6P/DrXyws86tOPwQ+8lQgxjMVHo=
-		</data>
-		<key>AK_Shape_Polygon@2x.png</key>
-		<data>
-		UAt0zHjXNibwEcfnL76y+y7woaE=
-		</data>
-		<key>AK_Shape_Rectangle.png</key>
-		<data>
-		CoxsSiWRiYroDDAhMbAjP4qF00k=
-		</data>
-		<key>AK_Shape_Rectangle@2x.png</key>
-		<data>
-		L5ra/8ozsyk8Zn3xAvv5e9bMYKs=
-		</data>
-		<key>AK_Shape_RoundedRectangle.png</key>
-		<data>
-		gOt322wh6FYhU4l8YMZxXlI9ZEQ=
-		</data>
-		<key>AK_Shape_RoundedRectangle@2x.png</key>
-		<data>
-		A1Am/TJQW6jSMDncNdi46Q+1gi0=
-		</data>
-		<key>AK_Shape_Star.png</key>
-		<data>
-		dxYpiR/gkYRI/Ez6JEEu4/O2uXY=
-		</data>
-		<key>AK_Shape_Star@2x.png</key>
-		<data>
-		CQOS3ASlM0H/nmCxf8f382Z5aXA=
-		</data>
-		<key>AK_Text_Center.png</key>
-		<data>
-		H+7wZVwi5bXUNl5Rh//qk956Wbg=
-		</data>
-		<key>AK_Text_Center@2x.png</key>
-		<data>
-		E5vUjY33mndt2JBHWQtPNe6dMIw=
-		</data>
-		<key>AK_Text_Center@3x.png</key>
-		<data>
-		4fkaLFfceZbDg5Breb636xrbDUc=
-		</data>
-		<key>AK_Text_Justify.png</key>
-		<data>
-		Mljebo1EVDManF2Y927w6GajUAY=
-		</data>
-		<key>AK_Text_Justify@2x.png</key>
-		<data>
-		tfaMfHRxBKk/WDC9uCuTJ1ZHvAM=
-		</data>
-		<key>AK_Text_Justify@3x.png</key>
-		<data>
-		UOWd4PAfoRp55TFfdVccwQQoiuY=
-		</data>
-		<key>AK_Text_Left.png</key>
-		<data>
-		xcWlZRNkb3LTL45IEaX+oc8rp88=
-		</data>
-		<key>AK_Text_Left@2x.png</key>
-		<data>
-		EgDZ85OQtenRLwBEqCCpF7Az1zk=
-		</data>
-		<key>AK_Text_Left@3x.png</key>
-		<data>
-		4qeM+fPBUeGRhtV7LwCVnOb55uo=
-		</data>
-		<key>AK_Text_Right.png</key>
-		<data>
-		7RyKYK7LSit+OdaUgVS60DkrKNo=
-		</data>
-		<key>AK_Text_Right@2x.png</key>
-		<data>
-		2bzWvsk6gJMouakZG8D1edUpQAE=
-		</data>
-		<key>AK_Text_Right@3x.png</key>
-		<data>
-		sl5j0quStVAviRYbgsFiXhwVndo=
-		</data>
-		<key>AK_Toolbar_Brush.png</key>
-		<data>
-		NV5euIYDNvRJkrg6hSRspOlUb2Y=
-		</data>
-		<key>AK_Toolbar_Brush@2x.png</key>
-		<data>
-		fl0BOLUhTaku7RgkkZ8IBbtb0sU=
-		</data>
-		<key>AK_Toolbar_Brush@3x.png</key>
-		<data>
-		s5ys5EDed3rNv/VdfQyX+lheKdY=
-		</data>
-		<key>AK_Toolbar_LineThickness.png</key>
-		<data>
-		9pdfApppmbz5XYAslFitdhaXkPM=
-		</data>
-		<key>AK_Toolbar_LineThickness@2x.png</key>
-		<data>
-		rOw98oyYKte61whjknQQg22+sNs=
-		</data>
-		<key>AK_Toolbar_LineThickness@3x.png</key>
-		<data>
-		AoqqSoREwggiOLUuxhHSFGIOFxw=
-		</data>
-		<key>AK_Toolbar_Shapes.png</key>
-		<data>
-		adAD/9OD+BAg6POKrRPYPfyw99Y=
-		</data>
-		<key>AK_Toolbar_Shapes@2x.png</key>
-		<data>
-		zXJErDZ9g/xwaCGlqMzuulVfqQI=
-		</data>
-		<key>AK_Toolbar_Signature.png</key>
-		<data>
-		Ewk0SpzZt1Ah6dj2tIouQfb2z5c=
-		</data>
-		<key>AK_Toolbar_Signature@2x.png</key>
-		<data>
-		78JU1YnotavgCzF6ZP1zqXKo6iw=
-		</data>
-		<key>AK_Toolbar_Signature@3x.png</key>
-		<data>
-		q9QpnvVtwVWtzh3cZI/PJiHkGDY=
-		</data>
-		<key>AK_Toolbar_Sketch.png</key>
-		<data>
-		KugdQlP8tFxs/MB4JKuuFukO0Es=
-		</data>
-		<key>AK_Toolbar_Sketch@2x.png</key>
-		<data>
-		ksoIx/FKQvjbRmbsCOuKfL6oBHg=
-		</data>
-		<key>AK_Toolbar_Sketch@3x.png</key>
-		<data>
-		NTPmaNFJgYw14+MkP1RsJvYXtJU=
-		</data>
-		<key>AK_Toolbar_Style.png</key>
-		<data>
-		USTUNZacUWikGjOpNVH0JwMijwQ=
-		</data>
-		<key>AK_Toolbar_Style@2x.png</key>
-		<data>
-		6o3xj/9DTI1i0grnWEKDsYIMWRA=
-		</data>
-		<key>AK_Toolbar_Style@3x.png</key>
-		<data>
-		2QMnsdixbiudJVtp8MRUhK7dHs4=
-		</data>
-		<key>AK_Toolbar_Text.png</key>
-		<data>
-		v0Yxxypu7zK/GpXO+lhpgNB9+NU=
-		</data>
-		<key>AK_Toolbar_Text@2x.png</key>
-		<data>
-		rQxpDq/WJiiMI2J3DV9K0B39nUs=
-		</data>
-		<key>AK_Toolbar_Text@3x.png</key>
-		<data>
-		eLLQd1hG/OQDL68xzXcG+s/upNI=
+		wSLqOak909VyTFYVPR0kJ2EV/Fk=
 		</data>
 		<key>FontPresets.plist</key>
 		<data>
 		knrpOmy/gcKi54LFEii6MSsNCzk=
 		</data>
-		<key>PlugIns/Markup.appex/AppIcon60x60@2x.png</key>
+		<key>XPCServices/com.apple.AnnotationKit.MigratorService.xpc/Info.plist</key>
 		<data>
-		GBpkEIE+1u7wdVvrBGoBYrD2a1I=
+		pzvkDW+we0jO3vPH7Xfaz9wSJPE=
 		</data>
-		<key>PlugIns/Markup.appex/AppIcon60x60@3x.png</key>
+		<key>XPCServices/com.apple.AnnotationKit.MigratorService.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		poKWbi9mSfk3fPAYI+y5f3FOcpM=
+		br/xiFnm43Wh53e7GRtKE7afTdU=
 		</data>
-		<key>PlugIns/Markup.appex/AppIcon76x76@2x~ipad.png</key>
+		<key>XPCServices/com.apple.AnnotationKit.MigratorService.xpc/com.apple.AnnotationKit.MigratorService</key>
 		<data>
-		XoW2uyrLCe2Gm6hIUaBMTmt5I6U=
-		</data>
-		<key>PlugIns/Markup.appex/AppIcon76x76~ipad.png</key>
-		<data>
-		b1kgdS/7ywlkMJ+1ZAFlYmP2CUc=
-		</data>
-		<key>PlugIns/Markup.appex/Info.plist</key>
-		<data>
-		Sm159RMwM0PdWnVn9vrhTqXEDqw=
-		</data>
-		<key>PlugIns/Markup.appex/Markup</key>
-		<data>
-		MwnUhyZtZ/z0p1PaC0CipI68Wss=
-		</data>
-		<key>PlugIns/Markup.appex/_CodeSignature/CodeResources</key>
-		<data>
-		q22tGmpkejbTIFD7KbnuuHhHNdc=
-		</data>
-		<key>TSDBrush_Chalk2.svg</key>
-		<data>
-		hcul8Yo6CfcdtuUAiC2CDgSIuxw=
-		</data>
-		<key>TSDSwatch_Chalk2.png</key>
-		<data>
-		PYvCkcdSC84IEFBqp1KVyMuUbDA=
+		HjVRgVZFzhXEg4Us4LHzrPTuayQ=
 		</data>
 		<key>ar.lproj/AKAttributeController.strings</key>
 		<dict>
@@ -4506,7 +4184,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oNuyOc0OL2hgN0doROXSydyivXg=
+			H2+rqCXuK/OWYk+tSSmRScSgQzk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P3BH0um3tz1aH21x1B6Guc4uVo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4560,7 +4247,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M5yIEGRujXyx+x/rtIITVonC7qA=
+			I2TU3+Gh4eK8OBUF/npAVHfc6es=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4569,7 +4256,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pWswBe/F09RUWU3zdpefbUVcNhI=
+			2cLuDrg3rtPUFBCf2ViSsHBZFqU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4578,7 +4265,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I/51NqlHypGDktpTTnabIGvGGYM=
+			L6S2mjd6IXyKZaGw9bTTEzOAbak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4605,7 +4292,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/SAj+50iTKlZGp41g80hFxIz3z0=
+			OgJMnB5FAMcisbKAFe4qYlhPMFI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hu9hASYVPLVn4IN3ihXYRA1Ll+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4623,7 +4319,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ERWB17RF6tTxNwinSB35AMKlXRQ=
+			+/iFyMkAeHz2K1hutS8to169DwI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4659,7 +4355,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oJmZOYxfhk3d9YXvLkWnr1DQD6Q=
+			xt+LhfKvmtJLRb3fFe1G/BdchmU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4668,7 +4364,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vMMIy9K/WdfEdqZCHLiwrKnN8L4=
+			Ew6sN3Ms1ldcFMG3gGAmC0srh+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4677,7 +4373,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RYMIrqgQy3kGYfNe6g8EC7K0LBc=
+			LyL+m6Hesvf+Zbkyz9YACzk/3kg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4704,7 +4400,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8FUNHpR3gXKErltVA05n4+oXIYs=
+			AUBFB01p4mkvUYloyWZcIP5zhNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RiAL/6hWmIEgvsO0DHANyG3nOig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4758,7 +4463,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8F7nwPnMFkqFCz9Xz4aa8ffoO8E=
+			VWsUvFm/IWcyNPH6K1wVyxEypLk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4767,7 +4472,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y/A7qCJ2LWsPXKlseMstsbDCnco=
+			lA/MEsG925wQKsnUfGoUnm53M5o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4776,7 +4481,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v01R2F/pYgmJ7rte+zbsroJZ8eQ=
+			JNEtImE6M96y+WMmBW/2gq+uYXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4803,7 +4508,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iCXMSzSh5LjfUJI0HkaPcrXV938=
+			RYRVvw3p3nQYBax9rOxaOhUg04k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ul7tAXwePRVjSgjO8uQJTTjbBIA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4857,7 +4571,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OE0vDBlUQFMa3i13r+Odbm10XmU=
+			7ROF+LhSgxHHdymKOdO88D/KZm4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4866,7 +4580,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ohfy6W05gY1P1MBc6qh8qQwki5E=
+			sjMzPai5qP/cCjrKJAJOR4MLMQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4875,7 +4589,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4dQRFdoMYbQj+c3RmDyUeU9SzMA=
+			Ta3ocMZE6sTSh8nM0zMVrdG0RX0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4902,7 +4616,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vWq4rd6v72rjgXu951dHWZdDm0Q=
+			EC/+tVmjaEQ4eCq32wbEPV0guEg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a7lJVeKMhLWC4QcAOjeDo2kSE7o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4920,7 +4643,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XdJb8SLv6GgCnE3AfemOLY3zB9A=
+			ZCuLIJ2VhCMg32EtYOwM9nlbQm4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4929,7 +4652,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUH2druYP/aXgd1cyHPMUq523SY=
+			ESJCyquUYXlkdUOcmZbYTMO28bw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4956,7 +4679,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q02yiYHryq/0fk1Wbl8ldSXEC6A=
+			2E/evlFCYaG3ab3AvmoX08ardU0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4965,7 +4688,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZVdLSMpZPosznfV/cPO+sPqB10I=
+			DCt2WRFHp6oPzmFsu325yiLEgY0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4974,7 +4697,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R8KVd+//cMOgQfx0i6y+Av8ba1g=
+			sojpj26br3WQkTA1Hujnh1c5PHc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5001,7 +4724,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqV8NbHOQ8nvv3+Db/wLzywgL4s=
+			06L3+L3FLrNFxPjcJntON2zVxM4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			siH/40jgJNAsxZAsOfLermL9dLU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5019,7 +4751,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fGjeEGc3UTRtzjc2UgYm7HJq6ro=
+			WAzHv7n9FOUgLBOkP+owg9ZuK84=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5055,7 +4787,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lPdDdV5lXWEEr7godkYYf8fsdFI=
+			j0D3EG3az7MpLg/BZ+HeyFxWC4U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5064,7 +4796,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqvV9z5eFeOOusMIS+oUkCOU+mY=
+			bToaGv7uVdahenpCJE3bmAci9C0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5073,7 +4805,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sQbUJ7IPoiQwj7ahUzWcGn6mn2k=
+			wriQdVYVNdFaqDOcfghnZ4CKC50=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5100,7 +4832,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uWLjfx2UoIzMDaNAKO0D2v0Ika4=
+			JifCIE2G+zTHGPmpZsZIv7+MffI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QW/EPLvWXvKJdjZENHusNOZwWqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5154,7 +4895,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y92cIprcntmtze8xik4jLPF5df4=
+			fwuCkqWJCpLIjcDaKRJJ3SajY04=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5163,7 +4904,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mTdOkLxTTVxMt1kaTcU7RcJIfo=
+			dOoHPw4t5Ampnl+uVTGRZdl4JFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5172,7 +4913,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rQAq6LicT/MPrICU3dpzA4ebLkw=
+			Z2kguBo/RsXgD6Sw4Lh1t5haIPA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5199,7 +4940,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uWLjfx2UoIzMDaNAKO0D2v0Ika4=
+			JifCIE2G+zTHGPmpZsZIv7+MffI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOtWAAND+Hdbr2ijMBNZKjCYa+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5253,7 +5003,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyB2izHMgzaR+gmdapQYl3Tu2lY=
+			nROeV/4n+V2CC4AvSBzPLaDBh+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5262,7 +5012,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mTdOkLxTTVxMt1kaTcU7RcJIfo=
+			dOoHPw4t5Ampnl+uVTGRZdl4JFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5271,7 +5021,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOZSUyHE03X07bhaMtog+Ls0EHE=
+			dJSN8xXVO/3sKTqiX+8ysCLKGZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5298,7 +5048,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uWLjfx2UoIzMDaNAKO0D2v0Ika4=
+			JifCIE2G+zTHGPmpZsZIv7+MffI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOtWAAND+Hdbr2ijMBNZKjCYa+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5352,7 +5111,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyB2izHMgzaR+gmdapQYl3Tu2lY=
+			nROeV/4n+V2CC4AvSBzPLaDBh+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5361,7 +5120,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mTdOkLxTTVxMt1kaTcU7RcJIfo=
+			dOoHPw4t5Ampnl+uVTGRZdl4JFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5370,7 +5129,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOZSUyHE03X07bhaMtog+Ls0EHE=
+			dJSN8xXVO/3sKTqiX+8ysCLKGZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5397,7 +5156,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b6UAaJRlHiFwumHgl1Y4YQQAiU4=
+			BOB27vLYvwZvpNvu0w+X7qvW9zU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ujTP64+XgYccw527qxwf1aKRt5s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5451,7 +5219,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			372acRujV647QqAmGWbkmRzSdK8=
+			4Q6zOn4UHTIgoXC5433EyQwPZoU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5460,7 +5228,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NpOgNf+hy0eRJVtiuuLSTICCyyI=
+			MDVQtDoODBEjPvcfqBV7TQ7NM6w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5469,7 +5237,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uklfVVremDxTzfM9oFUkQZKbjNI=
+			XQ0RlNdinuBj+PzdsTXAiV/gqBk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5496,7 +5264,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UEkcuIWO9nTK8zQXmiXfZCWsdxA=
+			02jBS37vE5CalNROBAhQGFOWMrQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a80ciuFLoRWkhtI1NLeOAz6y/is=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5523,7 +5300,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			la6VrThHErzVyzlR3qwKsuy9g5g=
+			xBO7YOGR5B7SiLh0DcEtCtvfwb4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5550,7 +5327,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7d5O+aaE/CfAHFmfifUPsy4Mz0I=
+			7vbakeg4ceq/f/TxLTSn7d3o59Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5559,7 +5336,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqXxUSja+9gwqORRvjX79+hFaGQ=
+			1rojuK7a+ns7NgN8BO3KcIDHAIk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5568,7 +5345,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F6YjygoML/0TSozjku2JTzmtgUM=
+			q3yqftgD2jKZxSwrT5dAlaiyVg8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5595,7 +5372,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5aX1qUhXkl5G5znEF/bcqFVvYs=
+			3btZauUUJHjDR8OGfikTohYsZLI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			atMyQUsN8EDXq/uWDxwR4MDR3Vc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5649,7 +5435,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5LTbOe+fHzIMcYxAlPz4aJfQyp0=
+			35UejapvQoFPdLYmNuOWdpdzBDg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5658,7 +5444,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wVJybKSmf09PyH/rAKJLaVQkZy8=
+			nc814SHEoNCYjDnTgTWJFCv7UIY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5667,7 +5453,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SgoZ225UN9IIE0UUrnORGj11FVU=
+			3CB5SdOF2Gn/4ENvM8kzr4P+EXw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5694,7 +5480,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5aX1qUhXkl5G5znEF/bcqFVvYs=
+			3btZauUUJHjDR8OGfikTohYsZLI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			atMyQUsN8EDXq/uWDxwR4MDR3Vc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5748,7 +5543,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zd4C2JeWFKIFu6rqcafGy362Gfc=
+			r1P7tLmiWXC6+PMGAHTxyylYfq8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5757,7 +5552,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j4ugL0HtrMj+34gL9G42MofQNRM=
+			wZWKtQY3ilgMxyjoOW5vr/COl2E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5766,7 +5561,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			og58mXjCDifixnjNU56MNqKiAkQ=
+			RlPx0PmE9PC09Xofj2ab8WqOcjI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5793,7 +5588,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f4v0WWdB6znvGlmGRJwI5zxAc/k=
+			zhMCHpCtxN20U2XMfKQUNzE/F7s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bslYc6/sLoEPDrhskmtGeFyZan0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5820,7 +5624,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pr1YVMv+DIHT48xvBUz/vk5n6/U=
+			HvC/b1SMbd6SojVFOiPKjXkbSEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5847,7 +5651,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1fy5OhactrdDnxoxcv0yEuvqhC0=
+			NPbaHERFFNcwwduScYZuplhQ0d8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5856,7 +5660,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yrHfUETz27BKXMtfGfq7QkQGuOA=
+			l4vbMDuNfwFkpYIB0xJatPR2ufU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5865,7 +5669,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MTty9CVPaSst7ejqtpvpI1iLQ1I=
+			wdpKVEr1CVpPtMN8IPfBD5vdIEU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5892,7 +5696,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/s/N6CYqijoAyZ7BgF2sE0DZokw=
+			vOrsppq/LdWi7nuQ4YtKh5wWGoM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3tTtZsFNftRU8GN1dHmG0qwVQ0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5901,7 +5714,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/2l/Kx2M4vPSaryllDTG17/8WDU=
+			oJUpH9tegcRQvCu+CIYfKkqDRvI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5910,7 +5723,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nHnTTGYDfsKMeDrLe6DhIV0q7B0=
+			IkyM+6F4toxnuwPShjNy4n9hlZY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5946,7 +5759,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DzLKCWfwoFMoSw6ylTKdd8gPvMY=
+			z5NZxUHTyNDMCvkI18f0y8jaWQg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5955,7 +5768,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gXpjZDxXPW2CHuhFYOAlOu/ZXs8=
+			JIBjlrROqGrkzizscT5IcY31xdg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5964,7 +5777,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BvWdaMmpzNPJdwuKY7QI/2BVX7I=
+			8Ip19w9tC0kvXnwXmmHGAI1592I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -5991,7 +5804,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fBP2au39w6QWI36smRcIpYmfkeU=
+			WhO+uHd1WlITuCrLvgu/9Jy7S8M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9C0ROcR6lo4DBlQpNboDxrJ2+J0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6045,7 +5867,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Od2Y+o1z4tiO83otWhdEpSU0b3U=
+			/6P29xR538Y4sgthmQZDaqUB0Co=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6054,7 +5876,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W1VWDl+WCarVarbZzGUzJi1bdGc=
+			XV6i1Go0E5spEl8XAS6gJ9mMCFU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6063,7 +5885,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VWS+WD3DJJDZT6BfovBD6EGYkuM=
+			/xXAmUKpKFw1XS3K0UOlpQQ38pA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6090,7 +5912,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0sI9P5osWQlOZZtzW8r17xXh380=
+			NtGoY2S2GMQKQ+0/fI3AuRWkzV4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MpSv7osCyEvqIpNUC+uU3L1+k8o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6144,7 +5975,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UkMpI1W5nn7VkKow5mVZHc7mERU=
+			IQ6W6/3K04YfwMoQCeJ0RvSD7BQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6153,7 +5984,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jA8cYfAgr6Pt0cBB8Zm8D0HEXKE=
+			bnV7wl179Ztm6Jzkg33sKDHO0TI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6162,7 +5993,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lwmZi7Y3Ptz+ofIUY/VY074uBuE=
+			3BaEQE4KAiVfmQUOH/4gRsb5+3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6189,7 +6020,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qKLUrc3nHCTVWUCnfa6wt4vd/Xs=
+			vuY2xs41+UbuZMLUqDXCB+IDM/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hzWiW/2FRCEmq4V9xQYSwkrvH+0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6234,7 +6074,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tZy5R7E5rs3Ij7HZQqfumPMJ1wM=
+			hdunpBfSgf7rWISsK1RTrWchs7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6243,7 +6083,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CzkVpUYSnORCDbbutjOk1J9p3ZE=
+			doWi8VpCiyeoiGFR8pRR8MZc3E4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6252,7 +6092,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yws5FSAnUBhu5HnmSwzRtf56HU8=
+			a1kds0jMWOZtYMIu91qKwEoROKI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6261,7 +6101,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IZo5vJ5MPxY3c/rKXXCNApOkdjU=
+			kqMMLHHuWtvkaoJPFLisZo9/uTU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6288,7 +6128,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q2lYkH7vH9j0TG4eKrmcw2sjUGI=
+			NBpCTVfQmmFWLMhcPpqbqTk1eqk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			28noP6rVrqDQ+PVa9aIk1ziv09Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6297,7 +6146,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kq1CTlvSW8OsamR++ewdoxNYRfs=
+			8cSCEWZrvXBT7ryX3LEDydg8xWE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6306,7 +6155,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nN1491kxOzbr1S1cL3ss1QVEA4U=
+			I5RGtsiKDxJJpJrv6oDh1E9Kt9w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6342,7 +6191,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mcsec341OcybpJaniWfFtwQUsQ=
+			WdFNtYYG4axgkwTodAmQ8JOHyj0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6351,7 +6200,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JfabumZ/WssLti7pTPOjMY4FIs8=
+			kzQJbbCwb765G92XQfc3E3hHUfI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6360,7 +6209,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sIoxeUs7gbSCnB4JBwyzM5jPkzw=
+			DDHcDgqetsFqOboAk9OPsmczVWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6387,7 +6236,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7mRmX+P7Lwh536p8qJHuNUcim2s=
+			napFRh0bcUc8zLd8koC9qbCvF9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jtkgBwr+DGjjqBBgPqKgRa/TgAk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6441,7 +6299,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZTxyZ6JTvSM/H6+T1v7j4C4N9/c=
+			OUXSirkV9IdgeXOEt5QCejrL7Kw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6450,7 +6308,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fv8lQ1BFtvZfSRSO/GGaf3TZx2I=
+			8XfqlCFi0BMIZcSMB351QgVywDE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6459,7 +6317,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SUJOrpiBhPEr7CrEimjOkTlsYbc=
+			UdAyQZ+OiMyXj7j5wEHsaJSX218=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6486,7 +6344,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CA22skOh6jnQ6T0jlTtuqjFbuJg=
+			EQYHUDjgAOjya9nu2T2aq67raV8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qNenMuqGLZk+QuceoI2HC/4djpo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6504,7 +6371,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ASMWEPulWfnU8NYruaU0LUksvyQ=
+			3EzYzFDZWWwL/mQodcEwZTZcARY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6540,7 +6407,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vQevCDrllHdUW0lHaY8/G5n3ofo=
+			hWShzPwptHJ/kBeFe/m86QUwaM0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6549,7 +6416,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hywEAn6XcQTjGRtCwn9qVJ9e6M0=
+			K6rlSx1I9MRrWljSZLg/ga0pQCk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6558,7 +6425,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZobgnwTw0iqhihHmqDFdz/eLzqI=
+			ne6vkC1bWNIQGFBYom9otetCdD8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6585,7 +6452,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7NZrO4eWh/1Vvx2MXJpHJ87NC2M=
+			+RlEyRvYIRSmAWuEVuVegopdHxc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xeaK7odoVf77IkbM6ybR0pWVwxQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6603,7 +6479,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SW/jUDn2d3YMljMPuqMrPR4dAoA=
+			wlQZ8wYeujds5Z19fYUmFSXE1L8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6612,7 +6488,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZcC55oCP+zoXZYXJ3MkoEu9BNY=
+			mwChYFVcuSe8ecSa4irBj/04z2M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6639,7 +6515,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1tb1RNgSWkSjXs2fGxDiVNPif3w=
+			ZiY+w2fTS/oHj6v7aOAYXQPocu0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6648,7 +6524,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NvEaULokHQhQOn5wIW7EQ77dFxw=
+			fyJKNyd46kbdHdFextP/oLB5Uhw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6657,7 +6533,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QQATp6Go/0+guYT0nbwPEWVIjsw=
+			NZG9IvhWB2DF/gBPXBMLTPb8mu4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6684,7 +6560,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			97eBiIxu1js2hvPFFn5qu579/r4=
+			pfM1vvkNATC7geDb7USShKVKUWM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p4W53GD1sf9aqDOplfRkAIp4Dd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6702,7 +6587,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tFWtc2Z1KGQ4ilogKywWUoRs7UY=
+			A2+tTymuLF0W5RxH0UM2zgQqTUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6711,7 +6596,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fHUlYMECJaL4Sqorx6uyPVjVOmM=
+			0TE3I8a2dl9IP3zNWtuBE07DrFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6738,7 +6623,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jv6L4RtkDQoLGODrIcJOjOMyC8E=
+			IGgRA4FM7L9yAzQ1KwSbzv/og2E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6747,7 +6632,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EEMkVY+q/cSImO22FnJX60EZHM0=
+			BAKZNztNTTD/FzEJ1V7o6B5Ym7o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6756,7 +6641,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jf9xeO4+ht7ggu0b7vSdHstbrr4=
+			QQWMwtlowRp2lBx56SRhGbINlgY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6783,7 +6668,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iOFiwXVIRRdq88Z0Wu93CZQyg/E=
+			gAWv3FPkon7vgaZc35DW85woo68=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u6tT1bW8vFApvdq+BXMWpAVoK6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6810,7 +6704,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CcnSv/OmrJ1W5L0XOGw0EoRuIG8=
+			NvFDvHSeuS8STBgT8n5e6PrO0Jo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6837,7 +6731,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hWvOzV8dZgN5b3uCdqi6jysrDbM=
+			AyH72azHvdpOR9yFe7SVXfzr5b8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6846,7 +6740,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQYvE7CAQxu0jfMzYmqGyU9CAPU=
+			7SBq++QIgTPsmeqjGSdL0MYuHe4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6855,7 +6749,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zENr/CfeXbkvjrY2mkJJmL8Gj3Y=
+			ap1LxObAwgkKTzMmeFDJIimT8hs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6882,7 +6776,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyv9EVUhK+2NU1CjzPlC0ELanzU=
+			3HIjqBalCewGOuQGjdFjGrwaRJE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dbXp+pf6euJvV6AwXlPaQNq8vqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6936,7 +6839,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mudoM+IDLoOJezlW1EXYZMXtKck=
+			/kS3gPL7bmmiXcFSiwG6LPCxDEI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6945,7 +6848,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			91QkVpn5FSvZopQHw2KS+4Ymqdc=
+			jHSwjKVGRlG5+ayf/s7wYHD4iYE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6954,7 +6857,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+X1fufRCRQKWI7a1QCycCr1OTqA=
+			Qt+I85eA950fJIXArcaJm3/2FIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -6981,7 +6884,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zas6O63FxcCQDHs/64Ucr/2lD84=
+			kP/zfXi5X4x2HO6+5G3vDTkQuhA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f1/25bbZEE/nbooV3eP52OQ6+MA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7035,7 +6947,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7hT+5ZOaAaI+jwx3NRg1E1i5l0Y=
+			MdEfWGZjxDcRjCIIrZCVQoU0NAY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7044,7 +6956,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9jhRynvKMR3w2/XYnP4nhHK+LrA=
+			T8I+Rh+SeqORgmeJvkmRXM3znmE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7053,7 +6965,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dcFKZ0BZeM5peKe4qqd59l+PIks=
+			14zCDT/kRqOPJGPX/BiWHCVbZTs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7080,7 +6992,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7zln5ofOEL9SfIK0xbjJi/azq5I=
+			gAk2wfgqORWHzv9DJysffuzYgDE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bb8mUgFxw3Kfgcs5jNddeWJKkIg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7134,7 +7055,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d2988Xb80/YVKl0Zeor2mp2QazA=
+			0L7ZbLdGBovFos2AkPLf04AYlew=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7143,7 +7064,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MlWQLTw8kB+H3/O+7WsWh66JOw0=
+			FxT90ASVNfYzAo1s1w2RASlTzhA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7152,7 +7073,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pesqgemlioOBneQzEIwTKLlXm+c=
+			tbKSk4RJZ2g4KUoHS6la6D2zo4k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7179,7 +7100,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kT+RCRmrKYg95h+V4xLcvhI0fqU=
+			/LPjLZ8VE2VYJoedKPUhhnQsiC0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+K3vlewaMz4l+q9QmjtU5TIunJE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7233,7 +7163,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ss2mOq0NgeGzEVKNqpO8R90pRqU=
+			zsQ5oerBJBPne/2G3Q6erJKEO3A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7242,7 +7172,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hm5xqYBR9rv+NxRGIXodPSO7lqY=
+			9+Dsub0NlzNn+p+lCkl8GtU6CMs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7251,7 +7181,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vxBFabjeTKsxHbKbE0z9Yk4xOPU=
+			uParjTdwJBZN9TU+T95l328YK3Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7278,7 +7208,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			06A9RFWYee47/GkuY6HwwxwACjE=
+			5BdLsvTyNQmci3FoFaLiYpc/2eE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dioeRuuwg9VZiDD3vlqZpx4E1Mg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7332,7 +7271,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OapkZ5aQ/sXXzd6XIoZv9o5sGmE=
+			hEbGTrmIlxp2MDa+lBkKQOdCHT0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7341,7 +7280,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yrOAx3Tsjj3bTSleMJpWxl/b7b8=
+			nW0PE1+v5BCMNtZ+LuIVmwUy7uI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7350,7 +7289,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eu1qD9SioTys670OVZuY8LyLRAk=
+			AfZGC2XHHRrHkgzGkSR/huPpuD4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7377,7 +7316,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yI7tn5bH38WSr2KoC8YgbAa87/w=
+			rjTWG9DAqciGBs3VMIfyLgOH5LQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B3+oZy2+2VBVUFKz2CeS/r+XItk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7431,7 +7379,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9M4bUJ6hL6Nlh/IFFC90HTxNBLI=
+			g+jsW+JjYFBDOmeC8s0KZo94Dp0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7440,7 +7388,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XTxtcbWcLZ4jKLKHFgvmJaURTk8=
+			B5Wy9UTsqFnhG67M2UlhMR5em4A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7449,7 +7397,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XmkU/UqhKN0d6uK90q9QbqHrwb8=
+			HJNVpW7B/HiAQZPuMWBW7f5uT30=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7476,7 +7424,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cbA7i930+gmWsR8D3a/bkkwL/NY=
+			tks26t2nqiEd5+ex+jP5WzGEuXU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uqNs4rMZ9BeDUL/4YR4QmWTJ65Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7530,7 +7487,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XjfXJN4Y+htVPKpPsaN3UIyIROo=
+			fOnxLTrzdDkT4VQdPqcFbRNujnw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7539,7 +7496,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fZ6zF5ruD4WVKz6J3oNlUpB+k9U=
+			DAfdLFiL7FhpYJVAQ7VNUBSZO34=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7548,7 +7505,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xlvTLOKsGh9xc02FpybMBez2igU=
+			+phS8n/u66WsN+TaAv5n0+aeb3g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7575,7 +7532,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6WBmPJpdKnY0YQVokqe+bVPrdHw=
+			ZFQ/2RcAupzmUovmW7hqsQy7voc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uui3CZPc6AhvvrtUWAZ4rgc2hL4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7629,7 +7595,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rEo/sVo9IbhbZ1JGo7Zv5I4Sk3U=
+			S2+dF5DYGiLyfFidO4djfjnXZd0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7638,7 +7604,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6zItm8xTKbEV8aFyYR4AQiQGwRo=
+			s6tk4fDyhTboUT9tMoNq3Hv5LhI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7647,7 +7613,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SqbPGnYUhCmAlmppZmDr86zLRoc=
+			aOPNXIWDbrs7hZgsfzT0WHNu75k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7674,7 +7640,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G2YwnVhvU6e18bRWHOqaM/Jr9Mc=
+			3OAyP1Nax0MTijGi6znorAE1PS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kstg5+i2nZSc8PLCeQBchUCKNeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7728,7 +7703,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fp5YSCFt/CCJ3uageJH0GroLRmg=
+			Rm1ouXeZ6LrWXbLajK/LTrCbud4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7737,7 +7712,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jwzRa4zZpg83N8zz8vTf/6UXq3s=
+			BOI7RDA//9SjDecROI1/AgrIFp8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7746,7 +7721,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cV2CzOwwA1/aneAraA5A63ObXPo=
+			rThBJeatViE13se6SDMQcityaC8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7773,7 +7748,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lt0bVql3I3O3qOwUIcfQoipwF+0=
+			NnJujBXsuYXLxTt5oDVkIyk+SEk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OMPLrSVWF+67si4gCZbG0IFo6rA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7800,7 +7784,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dJB7feawg76Vi8AdgQNh1lnpKog=
+			37qRr7ZPNV93bs8/WwH1TwFhE+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7827,7 +7811,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7mNRLH0AhLGsI+cFVIMPcL7KbcI=
+			IzOPtNdGX3cfrjdpRzqOWDzK30I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7836,7 +7820,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MWfK6yKzjd5Xz4jInSsglHbXAQw=
+			zYqk24Q11nY1oUtHLsfC9tm+EJY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7845,7 +7829,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AZd06ftfGW3+9CSyLRUqkiVCbq0=
+			msgpw+APgAFwfmsJA8s6graQ4LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7872,7 +7856,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hnFWVwnlfpPzAb21sXqxI3SPnjc=
+			PwnBdu/UGSlSTs8QyORaJGpiKXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			llzLPfH1nTOvxUNgSzoxX4J3OsY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7899,7 +7892,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j57u4+vKC+A2EZA/pCAFSbyZE9k=
+			L4AohYM75H7m3uFnfE5QTJuxESU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7926,7 +7919,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mb+px0Qonf2UY59aBjcwePhdj+s=
+			dgg9g0n73gQqf/aQ1bMfQ13IGP4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7935,7 +7928,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KghuYkd7bI5G3GycehnEMHDPL9E=
+			E5lBJ1opPPnBUreI8T3KQ+wkZ3I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7944,7 +7937,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OVdtPxONhCm3ujddc+qdeNoaJns=
+			WnlPgK2SXalHTQj7kPZ2YHP043s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7971,7 +7964,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FxkcciG2XfMDtExhyqjuNkYvs2E=
+			BNYm5itzuT+npNvxeG7MFbiRVxQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E0BAsc6NVuQQTqkpPt/OvKfkEOU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8025,7 +8027,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iRgzMaYpGtXxsqMTo3oLctjp3i0=
+			MXNhDZdS4TfkJUHyC49KXmIcxoA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8034,7 +8036,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WUYJRx+YQem+wOfR1Gq6/EY+smE=
+			pLWtxGGQd5ch4uSi1Eeze/6zBOc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8043,7 +8045,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1BfqVbUlFtbXxRvTuBAAMebKtXE=
+			p+b1hW9rRz0LWI98d8S+s3OMXng=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8070,7 +8072,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6ndX7kd3/SjjYEpvWWpS9OrqKdM=
+			u3l6Y84EbILYR+NS4ZJsfCXPWYA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gutmIS7M6E0Sn801bc1oTIj4wdk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8079,7 +8090,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Xy+7GHGZ0kBU5aJm/6rM2Zc+Sc=
+			6TJVlop15QdEUv4ErvcPuukpQAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8124,7 +8135,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ktY2yTZmpX85nC9iIg7MG/pZmyc=
+			hm9Y6Z9kYid7NLNuHXQI6Taq4X0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8133,7 +8144,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6sMVEarM/SwOqg8akgBig/DOzcQ=
+			bfVAGa3KxlWNCw0BOqqd0p2lspU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8142,7 +8153,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4jQ9RB1QKG4EuJ2T1ofMMXpUK/s=
+			PHKv/YOs4B27ctBxuc3DGqSJ4Qs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8169,7 +8180,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6ndX7kd3/SjjYEpvWWpS9OrqKdM=
+			+uyds26/S+5f8kZVO0+QjIb4vYo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/AKHighlightColorEditorController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			01qXDOTGkiDvYz83qb7N/oSxN2g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8223,7 +8243,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I1hwV7T+xvKcUkbnFQPILi10E3E=
+			8V4LXJrm3A0zRCp/tggnu0741rA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8232,7 +8252,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n50rDRKA82C2MGL/VdBCmq1wvSU=
+			tQ0bywGZaKfIkij1b5flA2doOes=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8241,7 +8261,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hx3q1ry8elBMP216V1DgymeISpQ=
+			3cHGGWuMY1WNvj/feqCzEFcN05U=
 			</data>
 			<key>optional</key>
 			<true/>

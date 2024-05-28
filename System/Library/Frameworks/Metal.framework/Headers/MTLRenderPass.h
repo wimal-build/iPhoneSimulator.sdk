@@ -21,6 +21,8 @@ typedef NS_ENUM(NSUInteger, MTLStoreAction) {
     MTLStoreActionDontCare = 0,
     MTLStoreActionStore = 1,
     MTLStoreActionMultisampleResolve = 2,
+    MTLStoreActionStoreAndMultisampleResolve NS_ENUM_AVAILABLE(10_12,10_0) = 3,
+    MTLStoreActionUnknown NS_ENUM_AVAILABLE(10_12,10_0) = 4,
 } NS_ENUM_AVAILABLE(10_11, 8_0);
 
 typedef struct
@@ -190,6 +192,11 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
  */
 @property (nullable, nonatomic, strong) id <MTLBuffer> visibilityResultBuffer;
 
+/*!
+ @property renderTargetArrayLength:
+ @abstract The number of active layers
+ */
+@property (nonatomic) NSUInteger renderTargetArrayLength NS_AVAILABLE_MAC(10_11);
 
 @end
 
@@ -203,4 +210,5 @@ MTL_INLINE MTLClearColor MTLClearColorMake(double red, double green, double blue
     result.alpha = alpha;
     return result;
 }
+
 NS_ASSUME_NONNULL_END

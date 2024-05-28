@@ -1,0 +1,12 @@
+message VCCaptionsTranscription {
+    message VCCaptionsSegment {
+        optional uint32 confidence = 1;
+        optional bool hasSpaceAfter = 2;
+        optional string text = 3;
+    }
+    required uint32 utteranceNumber = 1;
+    required uint32 updateNumber    = 2;
+    optional bool   isLocal         = 3;
+    optional bool   isFinal         = 4;
+    repeated VCCaptionsSegment segments = 5;
+}

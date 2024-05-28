@@ -2,7 +2,7 @@
 //  UIFont.h
 //  UIKit
 //
-//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,18 +10,26 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIFontDescriptor.h>
 
+@class UITraitCollection;
+
 NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIFont : NSObject <NSCopying>
 
 // Returns an instance of the font associated with the text style and scaled appropriately for the user's selected content size category. See UIFontDescriptor.h for the complete list.
-+ (UIFont *)preferredFontForTextStyle:(NSString *)style NS_AVAILABLE_IOS(7_0);
++ (UIFont *)preferredFontForTextStyle:(UIFontTextStyle)style NS_AVAILABLE_IOS(7_0);
+// Returns an instance of the font associated with the text style and scaled appropriately for the content size category defined in the trait collection.
++ (UIFont *)preferredFontForTextStyle:(UIFontTextStyle)style compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection NS_AVAILABLE_IOS(10_0);
 
 // Returns a font using CSS name matching semantics.
 + (nullable UIFont *)fontWithName:(NSString *)fontName size:(CGFloat)fontSize;
 
 // Returns an array of font family names for all installed fonts
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(class, nonatomic, readonly) NSArray<NSString *> *familyNames;
+#else
 + (NSArray<NSString *> *)familyNames;
+#endif
 
 // Returns an array of font names for the specified family name
 + (NSArray<NSString *> *)fontNamesForFamilyName:(NSString *)familyName;
@@ -59,7 +67,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIFont : NSObject <NSCopying>
 + (UIFont *)fontWithDescriptor:(UIFontDescriptor *)descriptor size:(CGFloat)pointSize NS_AVAILABLE_IOS(7_0);
 
 // Returns a font descriptor which describes the font.
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) UIFontDescriptor *fontDescriptor NS_AVAILABLE_IOS(7_0);
+#else
 - (UIFontDescriptor *)fontDescriptor NS_AVAILABLE_IOS(7_0);
+#endif
 
 @end
 

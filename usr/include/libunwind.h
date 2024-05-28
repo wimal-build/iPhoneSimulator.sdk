@@ -22,7 +22,7 @@
     #if __USING_SJLJ_EXCEPTIONS__
        #define LIBUNWIND_AVAIL __attribute__((unavailable))
     #else
-      #define LIBUNWIND_AVAIL __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_5_0)
+      #define LIBUNWIND_AVAIL __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_5_0) __WATCHOS_PROHIBITED
     #endif
 #else
   #define LIBUNWIND_AVAIL

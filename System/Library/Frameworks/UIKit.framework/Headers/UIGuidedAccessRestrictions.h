@@ -2,7 +2,7 @@
 //  UIGuidedAccessRestrictions.h
 //  UIKit
 //
-//  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -45,7 +45,11 @@ NS_CLASS_AVAILABLE_IOS(7_0) @protocol UIGuidedAccessRestrictionDelegate <NSObjec
  Each restriction identifier must be unique string.
  For example: com.MyCompany.MyApp.SomeRestrictionIdentifier
  */
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly, nullable) NSArray<NSString *> *guidedAccessRestrictionIdentifiers;
+#else
 - (nullable NSArray<NSString *> *)guidedAccessRestrictionIdentifiers;
+#endif
 
 // Called each time the restriction associated with the identifier changes state.
 - (void)guidedAccessRestrictionWithIdentifier:(NSString *)restrictionIdentifier didChangeState:(UIGuidedAccessRestrictionState)newRestrictionState;

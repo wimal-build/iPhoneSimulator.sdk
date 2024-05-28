@@ -27,3 +27,22 @@
 #import <HomeKit/HMLocationEvent.h>
 #import <HomeKit/HMEventTrigger.h>
 #import <HomeKit/HMError.h>
+#import <HomeKit/HMAccessoryProfile.h>
+#import <HomeKit/HMSignificantEvents.h>
+
+#if __has_include(<UIKit/UIView.h>)
+#import <HomeKit/HMCameraView.h>
+#endif
+#import <HomeKit/HMAccessory+Camera.h>
+#import <HomeKit/HMCameraProfile.h>
+#import <HomeKit/HMCameraControl.h>
+
+#import <HomeKit/HMCameraStreamControl.h>
+#import <HomeKit/HMCameraStream.h>
+
+#import <HomeKit/HMCameraSnapshotControl.h>
+#import <HomeKit/HMCameraSnapshot.h>
+
+#import <HomeKit/HMCameraSettingsControl.h>
+#import <HomeKit/HMCameraAudioControl.h>
+

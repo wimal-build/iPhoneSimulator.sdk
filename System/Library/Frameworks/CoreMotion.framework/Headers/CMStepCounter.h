@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <CoreMotion/CMAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*
@@ -98,3 +100,4 @@ NS_CLASS_DEPRECATED_IOS(7_0,8_0,"Use CMPedometer instead") __TVOS_PROHIBITED __W
 @end
 
 NS_ASSUME_NONNULL_END
+

@@ -6,8 +6,11 @@
 //
 
 #import <HealthKit/HKWorkout.h>
+#import <HealthKit/HKMetadata.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol HKWorkoutSessionDelegate;
 
 /*!
  @enum          HKWorkoutSessionState
@@ -17,6 +20,7 @@ typedef NS_ENUM(NSInteger, HKWorkoutSessionState) {
     HKWorkoutSessionStateNotStarted = 1,
     HKWorkoutSessionStateRunning,
     HKWorkoutSessionStateEnded,
+    HKWorkoutSessionStatePaused HK_AVAILABLE_WATCHOS_ONLY(3_0),
 } HK_AVAILABLE_WATCHOS_ONLY(2_0);
 
 
@@ -29,10 +33,44 @@ typedef NS_ENUM(NSInteger, HKWorkoutSessionLocationType) {
     HKWorkoutSessionLocationTypeUnknown = 1,
     HKWorkoutSessionLocationTypeIndoor,
     HKWorkoutSessionLocationTypeOutdoor,
-} HK_AVAILABLE_WATCHOS_ONLY(2_0);
+} HK_AVAILABLE_IOS_WATCHOS(10_0, 2_0);
 
 
-@protocol HKWorkoutSessionDelegate;
+/*!
+ @class         HKWorkoutConfiguration
+ @abstract      An HKWorkoutConfiguration is an object that can be used to describe the a workout activity.
+ */
+HK_CLASS_AVAILABLE_IOS_WATCHOS(10_0, 3_0)
+@interface HKWorkoutConfiguration : NSObject <NSCopying, NSSecureCoding>
+
+/*!
+ @property      activityType
+ @abstract      Indicates the type of workout for the configuration.
+ */
+@property (assign) HKWorkoutActivityType activityType;
+
+/*!
+ @property      locationType
+ @abstract      Indicates the type of location (indoors vs. outdoors) for the configuration.
+ */
+@property (assign) HKWorkoutSessionLocationType locationType;
+
+/*!
+ @property      swimmingLocationType
+ @abstract      Indicates the type of swimming location (pool vs. open water) where the workout will take place.
+ */
+@property (assign) HKWorkoutSwimmingLocationType swimmingLocationType;
+
+/*!
+ @property      lapLength
+ @abstract      Indicates the length of the pool, when the workout location type is pool.
+ @discussion    This metric represents the length of the pool where the workout takes place. It should be a quantity with
+                a unit representing length.
+ */
+@property (copy, nullable) HKQuantity *lapLength;
+
+@end
+
 
 /*!
  @class         HKWorkoutSession
@@ -45,14 +83,22 @@ HK_CLASS_AVAILABLE_WATCHOS_ONLY(2_0)
  @property      activityType
  @abstract      Indicates the type of workout that will be performed during the session.
  */
-@property (readonly) HKWorkoutActivityType activityType;
+@property (readonly) HKWorkoutActivityType activityType __WATCHOS_DEPRECATED(2_0, 3_0, "Use workoutConfiguration");
 
 /*!
  @property      locationType
  @abstract      Indicates the type of location (indoors vs. outdoors) where the workout will take place.
  @discussion    Knowing the location type allows for more accurate measurements and better performance.
  */
-@property (readonly) HKWorkoutSessionLocationType locationType;
+@property (readonly) HKWorkoutSessionLocationType locationType __WATCHOS_DEPRECATED(2_0, 3_0, "Use workoutConfiguration");
+
+/*!
+ @property      workoutConfiguration
+ @abstract      The configuration object describing the workout.
+ @discussion    This returns a copy of the configuration passed when creating the HKWorkoutSession. Changes made to
+                the returned object have no impact on the HKWorkoutSession.
+ */
+@property (readonly, copy) HKWorkoutConfiguration *workoutConfiguration HK_AVAILABLE_WATCHOS_ONLY(3_0);
 
 /*!
  @property      delegate
@@ -93,7 +139,16 @@ HK_CLASS_AVAILABLE_WATCHOS_ONLY(2_0)
  @param         locationType    The type of location where the workout will be performed.
  */
 - (instancetype)initWithActivityType:(HKWorkoutActivityType)activityType
-                        locationType:(HKWorkoutSessionLocationType)locationType;
+                        locationType:(HKWorkoutSessionLocationType)locationType __WATCHOS_DEPRECATED(2_0, 3_0, "Use initWithConfiguration:error:");
+
+/*!
+ @method        initWithConfiguration:
+
+ @param         workoutConfiguration Configuration object describing the various properties of a workout.
+ @param         error                If the configuration does not specify valid configuration properties, an
+                                     an NSError describing the error is set and nil is returned.
+ */
+- (nullable instancetype)initWithConfiguration:(HKWorkoutConfiguration *)workoutConfiguration error:(NSError **)error HK_AVAILABLE_WATCHOS_ONLY(3_0);
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -127,6 +182,17 @@ HK_AVAILABLE_WATCHOS_ONLY(2_0)
                 before workoutSession:didChangeToState:fromState:date:.
  */
 - (void)workoutSession:(HKWorkoutSession *)workoutSession didFailWithError:(NSError *)error;
+
+@optional
+
+/*!
+ @method        workoutSession:didGenerateEvent:
+ @abstract      This method is called whenever the system generates a workout event.
+ @discussion    Whenever a workout event is generated, such as pause or resume detection, the event will be passed
+                to the session delegate via this method. Clients may save the generated events to use when creating an
+                HKWorkout object.
+ */
+- (void)workoutSession:(HKWorkoutSession *)workoutSession didGenerateEvent:(HKWorkoutEvent *)event HK_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
 
 @end
 

@@ -53,7 +53,7 @@ BODY {
 	font-size: 24px;
 	width: 300px;
 	left:939px;
-	top: 155px;
+	top: 199px;
 	font-size: 22px;
 	color: #8e8e93;
 }
@@ -70,11 +70,16 @@ BODY {
 	color: #007aff;
 }
 
-.NavMessages,
-.NavName {
+.NavMessages {
 	top: 64px;
 	color: black;
+	text-align: center;
 	font-weight: 600;
+}
+
+.NavName {
+	top: 126px;
+	font-size: 24px;
 }
 
 
@@ -87,7 +92,7 @@ BODY {
 }
 
 .NavName {
-	left: 1048px;
+	left: 1060px;
 }
 
 .NavTitle {
@@ -111,13 +116,13 @@ BODY {
 }
 
 .GrayBubble1 {
-	top: 239px;
+	top: 283px;
 	left: 704px;
 	color: black;
 }
 
 .GrayBubble2 {
-	top: 1028px;
+	top: 1072px;
 	left: 704px;
 	color: black;
 }
@@ -132,18 +137,18 @@ BODY {
 
 .BlueBubble1 {
 	width: 590px;
-	top: 328px;
+	top: 372px;
 }
 
 .BlueBubble2 {
 	width: 290px;
-	top: 440px;
+	top: 484px;
 	right: 60px;
 }
 
 .BlueBubble3 {
 	width: 630px;
-	top: 1116px;
+	top: 1160px;
 	right: 61px;
 }
 

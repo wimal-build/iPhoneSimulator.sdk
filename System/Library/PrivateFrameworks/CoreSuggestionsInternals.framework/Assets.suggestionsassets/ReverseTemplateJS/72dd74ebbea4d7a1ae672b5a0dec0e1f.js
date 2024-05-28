@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("cartrawler-confirmation-it",function(e){return/La tua conferma di prenotazione noleggio auto \u2013 .+/.test(e.subject)},function(e){if(!/La tua conferma di prenotazione noleggio auto \u2013 .+/.test(e.subject))return CONTINUE;var r="it_IT",t={};return t.reservationIdPrefix="Numero di riferimento della prenotazione:",t.underPersonNameRegExp=/Gentile (.+?),/,loadHelper("cartrawler-confirmation-skeleton.js")(e,r,t)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/10/83/86","SG4d1e982f")]);

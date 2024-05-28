@@ -38,6 +38,7 @@ BODY {
 .AppStore,
 .iBooks,
 .News,
+.Home,
 .Health,
 .Settings,
 .Phone,
@@ -64,8 +65,8 @@ BODY {
 .Messages		{ left: 24px; top: 177px; }
 .Weather		{ left: 24px; top: 353px; }
 .Wallet			{ left: 24px; top: 529px; }
-.iTunesStore	{ left: 24px; top: 705px; }
-.Health			{ left: 24px; top: 881px; }
+.Videos			{ left: 24px; top: 705px; }
+.Home			{ left: 24px; top: 881px; }
 .Phone			{ left: 24px; top: 1299px; }
 
 
@@ -74,9 +75,9 @@ BODY {
 .DayOfWeek 		{ left: 198px; top: 60px; color: #F7281C; font-size: 16px; }
 .Calendar		{ left: 198px; top: 177px; }
 .Clock			{ left: 198px; top: 353px; }
-.Notes			{ left: 198px; top: 529px; }
-.AppStore		{ left: 198px; top: 705px; }
-.Settings		{ left: 198px; top: 881px; }
+.Reminders		{ left: 198px; top: 529px; }
+.iBooks			{ left: 198px; top: 705px; }
+.Health			{ left: 198px; top: 881px; }
 .Safari			{ left: 198px; top: 1299px; }
 
 
@@ -84,15 +85,16 @@ BODY {
 
 .Photos			{ left: 372px; top: 177px; }
 .Maps			{ left: 372px; top: 353px; }
-.Reminders		{ left: 372px; top: 529px; }
-.iBooks			{ left: 372px; top: 705px; }
+.Notes			{ left: 372px; top: 529px; }
+.iTunesStore	{ left: 372px; top: 705px; }
+.Settings		{ left: 372px; top: 881px; }
 .Mail			{ left: 372px; top: 1299px; }
 
 
 /* Column 4 */
 
 .Camera			{ left: 546px; top: 177px; }
-.Videos			{ left: 546px; top: 353px; }
+.News			{ left: 546px; top: 353px; }
 .Stocks			{ left: 546px; top: 529px; }
-.News			{ left: 546px; top: 705px; }
+.AppStore		{ left: 546px; top: 705px; }
 .Music			{ left: 546px; top: 1299px; }

@@ -11,6 +11,8 @@
 #import <CoreMotion/CMGyro.h>
 #import <CoreMotion/CMMagnetometer.h>
 
+#import <CoreMotion/CMAvailability.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /*
@@ -21,12 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
  *        accuracy of a magnetic field estimate.
  *
  */
-typedef enum {
+typedef NS_ENUM(int, CMMagneticFieldCalibrationAccuracy) {
 	CMMagneticFieldCalibrationAccuracyUncalibrated = -1,
 	CMMagneticFieldCalibrationAccuracyLow,
 	CMMagneticFieldCalibrationAccuracyMedium,
 	CMMagneticFieldCalibrationAccuracyHigh
-} CMMagneticFieldCalibrationAccuracy;
+} ;
 
 /*
  *  CMCalibratedMagneticField

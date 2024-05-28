@@ -3,21 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>CanonicalName</key>
-	<string>iphonesimulator9.3</string>
+	<string>iphonesimulator10.0</string>
 	<key>CustomProperties</key>
 	<dict/>
 	<key>DefaultDeploymentTarget</key>
-	<string>9.3</string>
+	<string>10.0</string>
 	<key>DefaultProperties</key>
 	<dict>
 		<key>DEFAULT_COMPILER</key>
 		<string>com.apple.compilers.llvm.clang.1_0</string>
 		<key>DEPLOYMENT_TARGET_SUGGESTED_VALUES</key>
 		<array>
-			<string>6.0</string>
-			<string>6.1</string>
-			<string>7.0</string>
-			<string>7.1</string>
 			<string>8.0</string>
 			<string>8.1</string>
 			<string>8.2</string>
@@ -27,33 +23,34 @@
 			<string>9.1</string>
 			<string>9.2</string>
 			<string>9.3</string>
+			<string>10.0</string>
 		</array>
 		<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-		<string>9.3</string>
+		<string>10.0</string>
 		<key>PLATFORM_NAME</key>
 		<string>iphonesimulator</string>
 		<key>PLATFORM_VERSION_AVAILABILITY_H_FORMAT</key>
-		<string>90300</string>
+		<string>100000</string>
 		<key>SUPPORTED_DEVICE_FAMILIES</key>
 		<string>1,2</string>
 	</dict>
 	<key>DisplayName</key>
-	<string>Simulator - iOS 9.3</string>
+	<string>Simulator - iOS 10.0</string>
 	<key>DocSetFeedName</key>
-	<string>iOS 9.3</string>
+	<string>iOS 10.0</string>
 	<key>DocSetFeedURL</key>
-	<string>http://developer.apple.com/rss/com.apple.adc.documentation.AppleiPhone9_3.atom</string>
+	<string>http://developer.apple.com/rss/com.apple.adc.documentation.AppleiPhone10_0.atom</string>
 	<key>IsBaseSDK</key>
 	<string>YES</string>
 	<key>MaximumDeploymentTarget</key>
-	<string>9.3.99</string>
+	<string>10.0.99</string>
 	<key>MinimalDisplayName</key>
-	<string>Simulator - 9.3</string>
+	<string>Simulator - 10.0</string>
 	<key>Toolchains</key>
 	<array>
-		<string>com.apple.dt.toolchain.iOS9_3</string>
+		<string>com.apple.dt.toolchain.iOS10_0</string>
 	</array>
 	<key>Version</key>
-	<string>9.3</string>
+	<string>10.0</string>
 </dict>
 </plist>

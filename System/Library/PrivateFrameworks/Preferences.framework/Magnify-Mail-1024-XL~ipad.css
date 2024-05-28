@@ -82,8 +82,12 @@ BODY {
 	left: 338px;
 	font-family: -apple-system-font, sans-serif;
 	font-weight: 600;
-	color: #007aff;
 	font-size: 30px;
+}
+
+
+.ToName {
+	color: #959595;
 }
 
 .ToString {
@@ -113,6 +117,7 @@ BODY {
 	top: 525px;
 	left: 338px;
 	font-size: 30px;
+	color: #959595;
 }
 
 /*body text*/

@@ -2,6 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>_focusOtherSideKeyPressed</key>
+	<dict>
+		<key>LocalizableKey</key>
+		<string>`</string>
+		<key>LocalizableModifierState</key>
+		<dict>
+			<key>Command</key>
+			<true/>
+			<key>Control</key>
+			<false/>
+			<key>Option</key>
+			<false/>
+			<key>Shift</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>_openSplitViewKeyPressed</key>
+	<dict>
+		<key>LocalizableKey</key>
+		<string>N</string>
+		<key>LocalizableModifierState</key>
+		<dict>
+			<key>Command</key>
+			<true/>
+			<key>Control</key>
+			<false/>
+			<key>Option</key>
+			<false/>
+			<key>Shift</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>_addToReadingListKeyPressed</key>
 	<dict>
 		<key>LocalizableKey</key>
@@ -198,22 +230,6 @@
 	<dict>
 		<key>LocalizableKey</key>
 		<string>R</string>
-		<key>LocalizableModifierState</key>
-		<dict>
-			<key>Command</key>
-			<true/>
-			<key>Control</key>
-			<false/>
-			<key>Option</key>
-			<false/>
-			<key>Shift</key>
-			<false/>
-		</dict>
-	</dict>
-	<key>_stopLoadingKeyPressed</key>
-	<dict>
-		<key>LocalizableKey</key>
-		<string>.</string>
 		<key>LocalizableModifierState</key>
 		<dict>
 			<key>Command</key>

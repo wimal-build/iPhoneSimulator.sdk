@@ -46,8 +46,8 @@ BODY {
 
 #messages-medium .NavEdit {	text-align: right !important; right: 16px !important; }
 #messages-medium .NavDetails { text-align: left !important; left: 40px !important; }
-#messages-medium .NavMessages { left: 370px !important; }
-
+#messages-medium .NavMessages { right: -520px !important; }
+#messages-medium .NavName {	right: 1060px !important; }
 
 
 /* 1024 */
@@ -94,6 +94,6 @@ BODY {
 
 #messages-large .NavEdit {	text-align: right !important; right: 16px !important; }
 #messages-large .NavDetails { text-align: left !important; left: 40px !important; }
-#messages-large .NavMessages { left: 570px !important; }
-#messages-large .NavName { left: 1620px !important; }
+#messages-large .NavMessages { right: -740px !important; }
+#messages-large .NavName {	right: 1372px !important; }
 

@@ -102,6 +102,9 @@ MP_EXTERN NSString * const MPMediaItemPropertyDiscCount;
 MP_EXTERN NSString * const MPMediaItemPropertyArtwork;
 @property (nonatomic, readonly, nullable) MPMediaItemArtwork *artwork NS_AVAILABLE_IOS(7_0);
 
+MP_EXTERN NSString *const MPMediaItemPropertyIsExplicit NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, getter = isExplicitItem) BOOL explicitItem NS_AVAILABLE_IOS(10_0);
+
 MP_EXTERN NSString * const MPMediaItemPropertyLyrics;
 @property (nonatomic, readonly, nullable) NSString *lyrics NS_AVAILABLE_IOS(8_0);
 
@@ -150,24 +153,26 @@ MP_EXTERN NSString * const MPMediaItemPropertyUserGrouping NS_AVAILABLE_IOS(4_0)
 MP_EXTERN NSString * const MPMediaItemPropertyBookmarkTime NS_AVAILABLE_IOS(6_0);
 @property (nonatomic, readonly) NSTimeInterval bookmarkTime NS_AVAILABLE_IOS(7_0);
 
+MP_EXTERN NSString * const MPMediaItemPropertyDateAdded NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) NSDate *dateAdded NS_AVAILABLE_IOS(10_0);
+
 @end
 
 //-----------------------------------------------------
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
 @interface MPMediaItemArtwork : NSObject
 
-// Initializes an MPMediaItemArtwork instance with the given full-size image.
-// The crop rect of the image is assumed to be equal to the bounds of the 
-// image as defined by the image's size in points, i.e. tightly cropped.
-- (instancetype)initWithImage:(UIImage *)image NS_DESIGNATED_INITIALIZER NS_AVAILABLE_IOS(5_0);
+- (instancetype)initWithBoundsSize:(CGSize)boundsSize requestHandler:(UIImage *(^)(CGSize size))requestHandler NS_DESIGNATED_INITIALIZER NS_AVAILABLE_IOS(10_0);
 
 // Returns the artwork image for an item at a given size (in points).
 - (nullable UIImage *)imageWithSize:(CGSize)size;
 
 @property (nonatomic, readonly) CGRect bounds; // The bounds of the full size image (in points).
-@property (nonatomic, readonly) CGRect imageCropRect; // The actual content area of the artwork, in the bounds of the full size image (in points).
+
+@property (nonatomic, readonly) CGRect imageCropRect NS_DEPRECATED_IOS(3_0, 10_0);
+- (instancetype)initWithImage:(UIImage *)image NS_DEPRECATED_IOS(5_0, 10_0);
+- (id)init NS_UNAVAILABLE;
 
 @end
 

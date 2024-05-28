@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("swiss.com-cancellation-en",function(){return!1},function(e){return/SWISS Cancellation Email$/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/428/429","SGfd661d87")]);

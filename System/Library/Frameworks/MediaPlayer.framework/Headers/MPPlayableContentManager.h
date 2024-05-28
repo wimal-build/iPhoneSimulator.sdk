@@ -25,6 +25,9 @@ __TVOS_PROHIBITED
 @property (nonatomic, weak, nullable) id<MPPlayableContentDelegate>   delegate;
 @property (nonatomic, readonly) MPPlayableContentManagerContext *context NS_AVAILABLE_IOS(8_4);
 
+/// Tells the content manager which MPBrowsableContentItems are currently playing based on their identifiers.
+@property (nonatomic, strong) NSArray<NSString *> *nowPlayingIdentifiers NS_AVAILABLE_IOS(10_0);
+
 /// Returns the application's instance of the content manager.
 + (instancetype)sharedContentManager;
 

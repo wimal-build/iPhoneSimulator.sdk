@@ -2,12 +2,12 @@
 //  UISearchController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2016 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <UIKit/UIPresentationController.h>
 #import <UIKit/UIViewControllerTransitioning.h>
+#import <UIKit/UISearchBar.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -2,7 +2,7 @@
 //  UIGeometry.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 
@@ -55,8 +55,13 @@ UIKIT_STATIC_INLINE BOOL UIOffsetEqualToOffset(UIOffset offset1, UIOffset offset
     return offset1.horizontal == offset2.horizontal && offset1.vertical == offset2.vertical;
 }
 
+#if UIKIT_REMOVE_ZERO_FROM_SWIFT
+UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero NS_SWIFT_UNAVAILABLE("Use UIEdgeInsets.zero instead");
+UIKIT_EXTERN const UIOffset UIOffsetZero NS_SWIFT_UNAVAILABLE("Use UIOffset.zero instead");
+#else
 UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero;
 UIKIT_EXTERN const UIOffset UIOffsetZero;
+#endif
 
 UIKIT_EXTERN NSString *NSStringFromCGPoint(CGPoint point);
 UIKIT_EXTERN NSString *NSStringFromCGVector(CGVector vector);
@@ -84,6 +89,15 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 + (NSValue *)valueWithUIEdgeInsets:(UIEdgeInsets)insets;
 + (NSValue *)valueWithUIOffset:(UIOffset)insets NS_AVAILABLE_IOS(5_0);
 
+#if UIKIT_DEFINE_AS_PROPERTIES
+@property(nonatomic, readonly) CGPoint CGPointValue;
+@property(nonatomic, readonly) CGVector CGVectorValue;
+@property(nonatomic, readonly) CGSize CGSizeValue;
+@property(nonatomic, readonly) CGRect CGRectValue;
+@property(nonatomic, readonly) CGAffineTransform CGAffineTransformValue;
+@property(nonatomic, readonly) UIEdgeInsets UIEdgeInsetsValue;
+@property(nonatomic, readonly) UIOffset UIOffsetValue NS_AVAILABLE_IOS(5_0);
+#else
 - (CGPoint)CGPointValue;
 - (CGVector)CGVectorValue;
 - (CGSize)CGSizeValue;
@@ -91,6 +105,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 - (CGAffineTransform)CGAffineTransformValue;
 - (UIEdgeInsets)UIEdgeInsetsValue;
 - (UIOffset)UIOffsetValue NS_AVAILABLE_IOS(5_0);
+#endif
 
 @end
     

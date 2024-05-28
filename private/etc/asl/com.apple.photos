@@ -1,5 +1,0 @@
-# Claim everything that is not an error so the Syslog is happy
-? [A= Facility com.apple.photos] [> Level error] claim
-
-> /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/com.apple.photos rotate=local file_max=10M all_max=100M compress uid=501 gid=501 mode=0755
-? [A= Facility com.apple.photos][<= Level debug] asl_dir /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/com.apple.photos

@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Rules</key>
+	<dict>
+		<key>Expansion</key>
+		<array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueFamily)</string>
+				<array>
+					<!--
+					 	Situation: Hanging out with your family
+					 -->
+					<string>Happy</string>
+					<string>Fun</string>
+					<string>Sentimental</string>
+				</array>
+			</array>
+			<array>
+				<string>(COUNT(PeopleRelationshipKey) MORE THAN OR EQUAL 3 AND CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueMyself) AND CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueCoworker)) OR (COUNT(PeopleRelationshipKey) MORE THAN OR EQUAL 2 AND NOT CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueMyself)) AND CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueCoworker)</string>
+				<array>
+					<!--
+					 Situation: Hanging out with a bunch of your friends
+					 -->
+					<string>Fun</string>
+					<string>Light</string>
+					<string>Happy</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueBestFriend)</string>
+				<array>
+					<!--
+					 Situation: Hanging out with your best friend
+					 -->
+					<string>Fun</string>
+					<string>Light</string>
+					<string>Happy</string>
+					<string>Silly</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValuePartner)</string>
+				<array>
+					<!--
+					 Situation: Hanging out with your partner
+					 -->
+					<string>Romantic</string>
+					<string>Happy</string>
+					<string>Fun</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueCoworker)</string>
+				<array>
+					<!--
+					 Situation: Hanging out with your coworkers
+					 -->
+					<string>Light</string>
+					<string>Minimal</string>
+					<string>Formal</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueHome)</string>
+				<array>
+					<!--
+					 Situation: Being at home
+					 -->
+					<string>Light</string>
+					<string>Happy</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueWork)</string>
+				<array>
+					<!--
+					 Situation: Being at work
+					 -->
+					<string>Minimal</string>
+					<string>Formal</string>
+					<string>Light</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueFamilyHome)</string>
+				<array>
+					<!--
+					 Situation: Being at home with your family
+					 -->
+					<string>Happy</string>
+					<string>Sentimental</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueCoworkerHome)</string>
+				<array>
+					<!--
+					 Situation: Being at a coworker's home
+					 -->
+					<string>Light</string>
+					<string>Minimal</string>
+					<string>Formal</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueFriend)</string>
+				<array>
+					<!--
+					 Situation: Hanging out with one of your friends
+					 -->
+					<string>Happy</string>
+					<string>Fun</string>
+					<string>Light</string>
+					<string>Silly</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueRestaurant)</string>
+				<array>
+					<!--
+					 Situation: Being at a restaurant
+					 -->
+					<string>Light</string>
+					<string>Minimal</string>
+					<string>Formal</string>
+					<string>Elegant</string>
+					<string>Festive</string>
+				</array>
+			</array>
+            <array>
+                <string>CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueShopping)</string>
+                <array>
+					<!--
+					 Situation: Going shopping
+					 -->
+                    <string>Light</string>
+					<string>Minimal</string>
+                </array>
+            </array>
+			<array>
+				<string>CONTAINS(TimeEventKey, TimeEventValueCelebration)</string>
+				<array>
+					<!--
+					 Situation: Celebrating something
+					 -->
+					<string>Festive</string>
+					<string>Elegant</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeEventKey, TimeEventValueBirthday) AND CLUES.numberOfPeoples MORE THAN OR EQUAL 5</string>
+				<array>
+					<!--
+					 Situation: Partying with a bunch of friends
+					 -->
+					<string>Fun</string>
+					<string>Happy</string>
+					<string>Silly</string>
+					<string>Dance</string>
+					<string>Exciting</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeEventKey, TimeEventValueBirthday) AND CLUES.numberOfPeoples LESS THAN 5</string>
+				<array>
+					<!--
+					 Situation: Having a small birthday celebration
+					 -->
+					<string>Festive</string>
+					<string>Happy</string>
+					<string>Holiday</string>
+				</array>
+			</array>
+			<array>
+				<string>((CONTAINS_ONLY(PeopleRelationshipKey, [PeopleRelationshipValuePartner])
+						 OR
+						 CONTAINS_ONLY(PeopleRelationshipKey, [PeopleRelationshipValuePartner, PeopleRelationshipValueMyself]))
+						 AND
+						 CLUES.numberOfDays LESS THAN OR EQUAL 2
+						 AND
+						 (ANY(LocationRegionOfInterestKey) OR CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueRestaurant)))
+				</string>
+				<array>
+					<!--
+					 Situation: Having a romantic weekend somewhere
+					 -->
+					<string>Romantic</string>
+					<string>Travel</string>
+					<string>Fun</string>
+				</array>
+			</array>
+			<array>
+				<string>COUNT(LocationRegionOfInterestKey) > 2</string>
+				<array>
+					<!--
+					 Situation: Vacationing somewhere
+					 -->
+					<string>Travel</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationRegionOfInterestKey, LocationRegionOfInterestValueBeach)</string>
+				<array>
+					<!--
+					 Situation: Hanging out at the beach
+					 -->
+					<string>Fun</string>
+				</array>
+			</array>
+			<array>
+				<string>(CLUES.numberOfDays MORE THAN OR EQUAL 4) AND NOT ((CONTAINS_ONLY(PeopleRelationshipKey, [PeopleRelationshipValueCoworker, PeopleRelationshipValueMyself])) OR
+						 CONTAINS_ONLY(PeopleRelationshipKey, [PeopleRelationshipValueCoworker])) AND (CONTAINS(PeopleLocationKey, PeopleLocationValueFarAwayFromWork) OR NOT CONTAINS(PeopleLocationKey, PeopleLocationValueWork))</string>
+				<array>
+					<!--
+					 Situation: Vacationing
+					 -->
+					<string>Travel</string>
+				</array>
+			</array>
+ 			<array>
+				<string>(CLUES.numberOfPeoples MORE THAN OR EQUAL 4) AND (CLUES.timeInterval LESS THAN 10*3600) AND ( CONTAINS(TimeEventKey, TimeEventValueBirthday) OR (CONTAINS(PeopleLocationKey, PeopleLocationValueHome) AND AMONG(TimeOfDayKey, [TimeOfDayValueEvening, TimeOfDayValueNight])) OR CONTAINS(ActivityKey, ActivityValueParty))</string>
+				<array>
+					<!--
+					 Situation: Party Time
+					 -->
+					<string>Fun</string>
+					<string>Happy</string>
+					<string>Dance</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey,PeopleRelationshipValueMyself)</string>
+				<array>
+					<!--
+					 Situation: Me, myself and I
+					 -->
+					<string>Light</string>
+					<string>Minimal</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationRegionOfInterestKey,LocationRegionOfInterestValueMountain)</string>
+				<array>
+					<!--
+					 Situation: Hiking in the mountains
+					 -->
+					<string>Adventure</string>
+					<string>Epic</string>
+					<string>Atmospheric</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(LocationRegionOfInterestKey, [LocationPointOfInterestValuePark]) AND CONTAINS_ONLY(PeopleRelationshipKey, [PeopleRelationshipValuePartner])</string>
+				<array>
+					<!--
+					 Situation: Romantic moment in a park
+					 -->
+					<string>Romantic</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(ActivityKey, ActivityValueDiving, 0.4) AND (CONTAINS_ONLY(LocationRegionOfInterestKey, [LocationRegionOfInterestValueWater]) OR CONTAINS_ONLY(LocationRegionOfInterestKey, [LocationRegionOfInterestValueWater, LocationRegionOfInterestValueBeach]))</string>
+				<array>
+					<!--
+					 Situation: Diving
+					 -->
+					<string>Atmospheric</string>
+					<string>Epic</string>
+					<string>Minimal</string>
+					<string>Light</string>
+					<string>Adventure</string>
+					<string>Exciting</string>
+					<string>Suspense</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(ActivityKey, ActivityValueSkiing) AND CONTAINS(LocationRegionOfInterestKey, LocationRegionOfInterestValueMountain)</string>
+				<array>
+					<!--
+					 Situation: Skiing
+					 -->
+					<string>Action</string>
+					<string>Exciting</string>
+					<string>Extreme</string>
+					<string>Epic</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(LocationPointOfInterestKey, [LocationPointOfInterestValueCulture])</string>
+				<array>
+					<!--
+					 Situation: Visiting a cultural event or location
+					 -->
+					<string>Formal</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(ActivityKey, ActivityValueSport)</string>
+				<array>
+					<!--
+					 Situation: Performing some sort of sport
+					 -->
+					<string>Action</string>
+					<string>Exciting</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(LocationPointOfInterestKey, [LocationPointOfInterestValueNightlife]) AND (AMONG(TimeOfDayKey, [TimeOfDayValueEvening, TimeOfDayValueNight]))</string>
+				<array>
+					<!--
+					 Situation: Night out
+					 -->
+					<string>Elegant</string>
+					<string>Glamour</string>
+					<string>Dance</string>
+					<string>Happy</string>
+				</array>
+			</array>			
+		</array>
+		<key>Reduction</key>
+		<array>
+			<array>
+				<string>CONTAINS(TimeSeasonKey, TimeSeasonValueWinter)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(TimeSeasonKey, TimeSeasonValueAutumn)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(TimeSeasonKey, TimeSeasonValueSummer)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(TimeSeasonKey, TimeSeasonValueSpring)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(TimeOfDayKey, [TimeOfDayValueAfternoon])</string>
+				<array>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(TimeOfDayKey, [TimeOfDayValueEvening])</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(TimeOfDayKey, [TimeOfDayValueNoon])</string>
+				<array>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(TimeOfDayKey, [TimeOfDayValueNight])</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS_ONLY(TimeOfDayKey, [TimeOfDayValueMorning])</string>
+				<array>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CLUES.numberOfDays MORE THAN OR EQUAL 2</string>
+				<array>
+					<string>Romantic</string>
+					<string>Dance</string>
+					<string>Formal</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Dark</string>
+					<string>Suspense</string>
+				</array>
+			</array>
+<!--
+ 			<array>
+				<string>CONTAINS(LocationRegionOfInterestKey, ActivityValueNightlife)</string>
+				<array>
+					<string>Adventure</string>
+				</array>
+			</array>
+-->
+ 			<array>
+				<string>CONTAINS(LocationRegionOfInterestKey, LocationRegionOfInterestValueNature)</string>
+				<array>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Dance</string>
+					<string>Elegant</string>
+					<string>Glamour</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Sweet</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueEntertainment)</string>
+				<array>
+					<string>Travel</string>
+					<string>Minimal</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueRestaurant)</string>
+				<array>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Adventure</string>
+					<string>Dance</string>
+					<string>Exciting</string>
+					<string>Action</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationRegionOfInterestKey, LocationRegionOfInterestValueBeach)</string>
+				<array>
+					<string>Dark</string>
+					<string>Formal</string>
+					<string>Glamour</string>
+					<string>Holiday</string>
+					<string>Festive</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationRegionOfInterestKey, LocationRegionOfInterestValueMountain)</string>
+				<array>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Dance</string>
+					<string>Elegant</string>
+					<string>Glamour</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationSpanKey, LocationSpanValuePedestrian)</string>
+				<array>
+					<string>Extreme</string>
+				</array>
+			</array>
+ 			<array>
+				<string>CONTAINS(LocationSpanKey, LocationSpanValueCar)</string>
+				<array>
+					<string>Silly</string>
+					<string>Dance</string>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Sentimental</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationSpanKey, LocationSpanValuePlane)</string>
+				<array>
+					<string>Silly</string>
+					<string>Dance</string>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Sentimental</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeEventKey, TimeEventValueCelebration)</string>
+				<array>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Adventure</string>
+					<string>Action</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeEventKey, TimeEventValueHoliday)</string>
+				<array>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Adventure</string>
+					<string>Action</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeEventKey, TimeEventValueBirthday)</string>
+				<array>
+					<array>
+						<string>Dark</string>
+						<string>Extreme</string>
+						<string>Suspense</string>
+					</array>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueNightlife)</string>
+				<array>
+					<string>Adventure</string>
+					<string>Travel</string>
+					<string>Action</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueFriendHome)</string>
+				<array>
+					<string>Adventure</string>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Action</string>
+					<string>Travel</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueFarAwayFromHome) AND NOT CONTAINS(PeopleLocationKey, PeopleLocationValueFamilyHome)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueFamilyHome)</string>
+				<array>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Action</string>
+					<string>Travel</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueWork)</string>
+				<array>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Action</string>
+					<string>Adventure</string>
+					<string>Travel</string>
+					<string>Romantic</string>
+					<string>Holiday</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleLocationKey, PeopleLocationValueHome)</string>
+				<array>
+					<string>Dark</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+					<string>Action</string>
+					<string>Travel</string>
+					<string>Adventure</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeOfWeekKey, TimeOfWeekValueWeekend)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(TimeOfWeekKey, TimeOfWeekValueWeekday)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueFamily)</string>
+				<array>
+					<string>Romantic</string>
+					<string>Atmospheric</string>
+					<string>Suspense</string>
+					<string>Dark</string>
+					<string>Extreme</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueFriend)</string>
+				<array>
+					<string>Romantic</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey,PeopleRelationshipValueBestFriend)</string>
+				<array>
+					<string>Romantic</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey,PeopleRelationshipValueMyself)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValuePartner)</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueCoworker)</string>
+				<array>
+					<string>Romantic</string>
+					<string>Suspense</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueCoworker) AND NOT (CONTAINS(PeopleRelationshipKey, PeopleRelationshipValueFriend) OR CONTAINS(PeopleRelationshipKey, PeopleRelationshipValuePartner))</string>
+				<array>
+					<string>Romantic</string>
+					<string>Dance</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Sweet</string>
+					<string>Adventure</string>
+					<string>Travel</string>
+					<string>Suspense</string>
+					<string>Dark</string>
+					<string>Extreme</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeDurationKey, TimeDurationValueDays)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Suspense</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeDurationKey, TimeDurationValueMonths)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Elegant</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeDurationKey, TimeDurationValueWeeks)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Elegant</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(TimeDurationKey, TimeDurationValueYears)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Elegant</string>
+					<string>Dark</string>
+					<string>Adventure</string>
+					<string>Travel</string>
+					<string>Extreme</string>
+					<string>Suspense</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(ActivityKey, ActivityValueCuisine)</string>
+				<array>
+					<string>Dance</string>
+					<string>Adventure</string>
+					<string>Dark</string>
+					<string>Travel</string>
+					<string>Action</string>
+					<string>Extreme</string>
+					<string>Silly</string>
+					<string>Action</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(ActivityKey, ActivityValueDiving)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Elegant</string>
+					<string>Romantic</string>
+				</array>
+			</array>
+			<array>
+				<string>CONTAINS(ActivityKey, ActivityValueSkiing)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Elegant</string>
+					<string>Romantic</string>
+				</array>
+			</array>
+			<array>
+				<string>NONE(TimeOfDayKey)</string>
+				<array/>
+			</array>
+			<array>
+				<string>(CLUES.numberOfDays MORE THAN 120)</string>
+				<array>
+					<string>Dance</string>
+					<string>Sweet</string>
+					<string>Glamour</string>
+					<string>Formal</string>
+					<string>Festive</string>
+					<string>Silly</string>
+					<string>Holiday</string>
+					<string>Elegant</string>
+					<string>Dark</string>
+				</array>
+			</array>
+			<array>
+				<string>(CLUES.numberOfDays LESS THAN 4) AND NOT (CONTAINS(ActivityKey, ActivityValueSkiing) OR CONTAINS(ActivityKey, ActivityValueDiving))</string>
+				<array/>
+			</array>
+			<array>
+				<string>NOT CONTAINS_ONLY(PeopleRelationshipKey, [PeopleRelationshipValueMyself]) OR CLUES.numberOfPeoples >= 1</string>
+				<array/>
+			</array>
+			<array>
+				<string>CONTAINS(LocationPointOfInterestKey, LocationPointOfInterestValueShopping)</string>
+				<array>
+					<string>Dance</string>
+					<string>Silly</string>
+					<string>Adventure</string>
+					<string>Dark</string>
+					<string>Travel</string>
+					<string>Action</string>
+					<string>Extreme</string>					
+				</array>
+			</array>
+		</array>
+	</dict>
+	<key>Tokens</key>
+	<array>
+		<dict>
+			<key>Globals</key>
+			<array>
+				<dict>
+					<key>TIME_INTERVAL</key>
+					<string>CLUES.timeInterval</string>
+				</dict>
+				<dict>
+					<key>NUMBER_OF_PEOPLES</key>
+					<string>CLUES.numberOfPeoples</string>
+				</dict>
+				<dict>
+					<key>NUMBER_OF_DAYS</key>
+					<string>CLUES.numberOfDays</string>
+				</dict>
+				<dict>
+					<key>DAY</key>
+					<string>24*3600</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Syntax</key>
+			<array>
+				<dict>
+					<key>CONTAINS_ONLY</key>
+					<string>CONTAINS_ONLY</string>
+				</dict>
+				<dict>
+					<key>CONTAINS</key>
+					<string>CONTAINS</string>
+				</dict>
+				<dict>
+					<key>NONE</key>
+					<string>NONE</string>
+				</dict>
+				<dict>
+					<key>ANY</key>
+					<string>ANY</string>
+				</dict>
+				<dict>
+					<key>CLUE</key>
+					<string>CLUE</string>
+				</dict>
+				<dict>
+					<key>&gt;=</key>
+					<string> MORE THAN OR EQUAL </string>
+				</dict>
+				<dict>
+					<key>&gt;</key>
+					<string> MORE THAN </string>
+				</dict>
+				<dict>
+					<key>&lt;=</key>
+					<string> LESS THAN OR EQUAL </string>
+				</dict>
+				<dict>
+					<key>&lt;</key>
+					<string> LESS THAN </string>
+				</dict>
+				<dict>
+					<key>AND</key>
+					<string> AND </string>
+				</dict>
+				<dict>
+					<key>OR</key>
+					<string> OR </string>
+				</dict>
+				<dict>
+					<key>NOT</key>
+					<string>NOT </string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Keys / Values</key>
+			<array>
+				<dict>
+					<key>TimeOfDayMorning</key>
+					<string>(TimeOfDayKey,TimeOfDayValueMorning)</string>
+				</dict>
+				<dict>
+					<key>TimeOfDayNoon</key>
+					<string>(TimeOfDayKey,TimeOfDayValueNoon)</string>
+				</dict>
+				<dict>
+					<key>TimeOfDayAfternoon</key>
+					<string>(TimeOfDayKey,TimeOfDayValueAfternoon)</string>
+				</dict>
+				<dict>
+					<key>TimeOfDayEvening</key>
+					<string>(TimeOfDayKey,TimeOfDayValueEvening)</string>
+				</dict>
+				<dict>
+					<key>TimeOfDayNight</key>
+					<string>(TimeOfDayKey,TimeOfDayValueNight)</string>
+				</dict>
+				<dict>
+					<key>TimeOfWeekDay</key>
+					<string>(TimeOfWeekKey,TimeOfWeekValueWeekday)</string>
+				</dict>
+				<dict>
+					<key>TimeOfWeekEnd</key>
+					<string>(TimeOfWeekKey,TimeOfWeekValueWeekend)</string>
+				</dict>
+				<dict>
+					<key>TimeDurationHour</key>
+					<string>(TimeDurationKey,TimeDurationValueHour)</string>
+				</dict>
+				<dict>
+					<key>TimeDurationDays</key>
+					<string>(TimeDurationKey,TimeDurationValueDays)</string>
+				</dict>
+				<dict>
+					<key>TimeDurationWeeks</key>
+					<string>(TimeDurationKey,TimeDurationValueWeeks)</string>
+				</dict>
+				<dict>
+					<key>TimeDurationMonths</key>
+					<string>(TimeDurationKey,TimeDurationValueMonths)</string>
+				</dict>
+				<dict>
+					<key>TimeDurationYears</key>
+					<string>(TimeDurationKey,TimeDurationValueYears)</string>
+				</dict>
+				<dict>
+					<key>TimeEventHoliday</key>
+					<string>(TimeEventKey,TimeEventValueHoliday)</string>
+				</dict>
+				<dict>
+					<key>TimeEventCelebration</key>
+					<string>(TimeEventKey,TimeEventValueCelebration)</string>
+				</dict>
+				<dict>
+					<key>TimeSeasonSpring</key>
+					<string>(TimeSeasonKey,TimeSeasonValueSpring)</string>
+				</dict>
+				<dict>
+					<key>TimeSeasonSummer</key>
+					<string>(TimeSeasonKey,TimeSeasonValueSummer)</string>
+				</dict>
+				<dict>
+					<key>TimeSeasonAutumn</key>
+					<string>(TimeSeasonKey,TimeSeasonValueAutumn)</string>
+				</dict>
+				<dict>
+					<key>TimeSeasonWinter</key>
+					<string>(TimeSeasonKey,TimeSeasonValueWinter)</string>
+				</dict>
+				<dict>
+					<key>RegionOfInterestBeach</key>
+					<string>(LocationRegionOfInterestKey,LocationRegionOfInterestValueBeach)</string>
+				</dict>
+				<dict>
+					<key>RegionOfInterestMountain</key>
+					<string>(LocationRegionOfInterestKey,LocationRegionOfInterestValueMountain)</string>
+				</dict>
+<!-- 				<dict>
+					<key>RegionOfInterestCamping</key>
+					<string>(ActivityKey, ActivityValueCamping)</string>
+				</dict>
+ -->				<dict>
+					<key>RegionOfInterestPark</key>
+					<string>(LocationRegionOfInterestKey,LocationRegionOfInterestValueNature)</string>
+				</dict>
+				<dict>
+					<key>RegionOfInterestActivity</key>
+					<string>(LocationPointOfInterestKey, LocationPointOfInterestValueEntertainment)</string>
+				</dict>
+				<dict>
+					<key>RegionOfInterestRestaurant</key>
+					<string>(ActivityKey,ActivityValueRestaurant)</string>
+				</dict>
+				<dict>
+					<key>LocationSpanPedestrian</key>
+					<string>(LocationSpanKey,LocationSpanValuePedestrian)</string>
+				</dict>
+				<dict>
+					<key>LocationSpanCar</key>
+					<string>(LocationSpanKey,LocationSpanValueCar)</string>
+				</dict>
+				<dict>
+					<key>LocationSpanPlane</key>
+					<string>(LocationSpanKey,LocationSpanValuePlane)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationshipFamily</key>
+					<string>(PeopleRelationshipKey,PeopleRelationshipValueFamily)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationshipFriend</key>
+					<string>(PeopleRelationshipKey,PeopleRelationshipValueFriend)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationshipBestFriend</key>
+					<string>(PeopleRelationshipKey,PeopleRelationshipValueBestFriend)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationshipPartner</key>
+					<string>(PeopleRelationshipKey,PeopleRelationshipValuePartner)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationshipCoworker</key>
+					<string>(PeopleRelationshipKey,PeopleRelationshipValueCoworker)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationshipMyself</key>
+					<string>(PeopleRelationshipKey,PeopleRelationshipValueMyself)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocationHome</key>
+					<string>(PeopleLocationKey,PeopleLocationValueHome)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocationWork</key>
+					<string>(PeopleLocationKey,PeopleLocationValueWork)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocationFriendHome</key>
+					<string>(PeopleLocationKey,PeopleLocationValueFriendHome)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocationFamilyHome</key>
+					<string>(PeopleLocationKey,PeopleLocationValueFamilyHome)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocationCoworkerHome</key>
+					<string>(PeopleLocationKey,PeopleLocationValueCoworkerHome)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocationFarAwayFromHome</key>
+					<string>(PeopleLocationKey,PeopleLocationValueFarAwayFromHome)</string>
+				</dict>
+				<dict>
+					<key>PeopleEventBirthday</key>
+					<string>(TimeEventKey,TimeEventValueBirthday)</string>
+				</dict>
+				<dict>
+					<key>PeopleEventAnniversary</key>
+					<string>(TimeEventKey,TimeEventValueAnniversary)</string>
+				</dict>
+				<dict>
+					<key>PeopleEventNightOut</key>
+					<string>(ActivityKey,ActivityValueNightlife)</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Keys</key>
+			<array>
+				<dict>
+					<key>TimeOfDay</key>
+					<string>(TimeOfDayKey)</string>
+				</dict>
+				<dict>
+					<key>TimeOfWeek</key>
+					<string>(TimeOfWeekKey)</string>
+				</dict>
+				<dict>
+					<key>TimeDuration</key>
+					<string>(TimeDurationKey)</string>
+				</dict>
+				<dict>
+					<key>TimeEvent</key>
+					<string>(TimeEventKey)</string>
+				</dict>
+				<dict>
+					<key>TimeSeason</key>
+					<string>(TimeSeasonKey)</string>
+				</dict>
+				<dict>
+					<key>RegionOfInterest</key>
+					<string>(LocationRegionOfInterestKey)</string>
+				</dict>
+				<dict>
+					<key>LocationCity</key>
+					<string>(LocationCityKey)</string>
+				</dict>
+				<dict>
+					<key>Country</key>
+					<string>(LocationCountryKey)</string>
+				</dict>
+				<dict>
+					<key>LocationSpan</key>
+					<string>(LocationSpanKey)</string>
+				</dict>
+				<dict>
+					<key>PeopleRelationship</key>
+					<string>(PeopleRelationshipKey)</string>
+				</dict>
+				<dict>
+					<key>PeopleLocation</key>
+					<string>(PeopleLocationKey)</string>
+				</dict>
+				<dict>
+					<key>PeopleEvent</key>
+					<string>(TimeEventKey)</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Words</key>
+			<array>
+				<dict>
+					<key>Vacation</key>
+					<string>Vacation</string>
+				</dict>
+				<dict>
+					<key>Camping</key>
+					<string>Camping</string>
+				</dict>
+				<dict>
+					<key>Beach</key>
+					<string>Beach</string>
+				</dict>
+				<dict>
+					<key>Outdoors</key>
+					<string>Outdoors</string>
+				</dict>
+				<dict>
+					<key>Home</key>
+					<string>Home</string>
+				</dict>
+				<dict>
+					<key>Restaurant</key>
+					<string>Restaurant</string>
+				</dict>
+				<dict>
+					<key>Outdoors</key>
+					<string>Outdoors</string>
+				</dict>
+				<dict>
+					<key>Roadtrip</key>
+					<string>Roadtrip</string>
+				</dict>
+				<dict>
+					<key>Entertaining</key>
+					<string>Entertaining</string>
+				</dict>
+				<dict>
+					<key>Hiking</key>
+					<string>Hiking</string>
+				</dict>
+				<dict>
+					<key>Partying</key>
+					<string>Partying</string>
+				</dict>
+				<dict>
+					<key>Celebrating</key>
+					<string>Celebrating</string>
+				</dict>
+				<dict>
+					<key>Romancing</key>
+					<string>Romancing</string>
+				</dict>
+				<dict>
+					<key>MyFriends</key>
+					<string>MyFriends</string>
+				</dict>
+				<dict>
+					<key>Myself</key>
+					<string>Myself</string>
+				</dict>
+				<dict>
+					<key>Bff</key>
+					<string>Bff</string>
+				</dict>
+				<dict>
+					<key>CoWorkers</key>
+					<string>CoWorkers</string>
+				</dict>
+				<dict>
+					<key>Lover</key>
+					<string>Lover</string>
+				</dict>
+				<dict>
+					<key>MyFamily</key>
+					<string>MyFamily</string>
+				</dict>
+				<dict>
+					<key>Work</key>
+					<string>Work</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

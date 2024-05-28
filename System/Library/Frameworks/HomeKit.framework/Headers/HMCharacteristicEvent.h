@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class represents an event that is evaluated based on the value of a characteristic
  *        set to a particular value.
  */
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @interface HMCharacteristicEvent<TriggerValueType : id<NSCopying>> : HMEvent
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -32,7 +32,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  * @return Instance object representing the characteristic event.
  */
 - (instancetype)initWithCharacteristic:(HMCharacteristic *)characteristic
-                          triggerValue:(nullable TriggerValueType)triggerValue __WATCHOS_PROHIBITED;
+                          triggerValue:(nullable TriggerValueType)triggerValue __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 /*!
  * @brief The characteristic associated with the event.
@@ -56,7 +56,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateTriggerValue:(nullable TriggerValueType)triggerValue completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+- (void)updateTriggerValue:(nullable TriggerValueType)triggerValue completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 @end
 

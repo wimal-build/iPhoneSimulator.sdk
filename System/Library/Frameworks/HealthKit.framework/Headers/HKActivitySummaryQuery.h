@@ -21,19 +21,20 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(9_3, 2_2)
   @discussion    This property may not be modified once the query has been executed. If this property is nonnull, then
                  the query must be manually stopped.
   */
-@property (nonatomic, copy, nullable) void(^updateHandler)(HKActivitySummaryQuery *query, NSArray<HKActivitySummary *> * __nullable updatedActivitySummaries, NSError * __nullable error);
+@property (nonatomic, copy, nullable) void(^updateHandler)(HKActivitySummaryQuery *query, NSArray<HKActivitySummary *> * _Nullable updatedActivitySummaries, NSError * _Nullable error);
 
 /*!
   @method        initWithPredicate:resultsHandler:
   @abstract      Returns a query that will retrieve HKActivitySummaries matching the given predicate.
   @discussion    If no updateHandler is set on the query, the query will automatically stop after calling resultsHandler.
-                 Otherwise, the query continues to run and calls the updateHandler as HKActivitySummaries matching the predicate are updated.
+                 Otherwise, the query continues to run and calls the updateHandler as HKActivitySummaries matching the
+                 predicate are updated.
   
-  @param         predicate       The predicate which HKActivitySummaries should match.
-  @param         resultsHandler  The block to invoke with results when the query has finished.
+  @param         predicate  The predicate which HKActivitySummaries should match.
+  @param         handler    The block to invoke with results when the query has finished.
   */
 - (instancetype)initWithPredicate:(nullable NSPredicate *)predicate
-                   resultsHandler:(void(^)(HKActivitySummaryQuery *query, NSArray<HKActivitySummary *> * __nullable activitySummaries, NSError * __nullable error))handler;
+                   resultsHandler:(void(^)(HKActivitySummaryQuery *query, NSArray<HKActivitySummary *> * _Nullable activitySummaries, NSError * _Nullable error))handler;
 
 @end
 

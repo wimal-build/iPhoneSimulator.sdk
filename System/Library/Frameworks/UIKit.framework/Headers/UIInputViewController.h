@@ -5,7 +5,8 @@
 //  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIViewController.h>
 #import <UIKit/UIInputView.h>
 #import <UIKit/UITextInput.h>
 
@@ -17,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, readonly) NSString *documentContextBeforeInput;
 @property (nullable, nonatomic, readonly) NSString *documentContextAfterInput;
+
+// An app can store UITextInputMode in its document context, when user switches to the document, the host will pass the inputMode as documentInputMode to the UIInputViewController,
+// which can switch to the inputMode and set primaryLanguage if it supports it.
+@property (nullable, nonatomic, readonly) UITextInputMode *documentInputMode NS_AVAILABLE_IOS(10_0);
 
 - (void)adjustTextPositionByCharacterOffset:(NSInteger)offset;
 
@@ -34,6 +39,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController 
 
 - (void)dismissKeyboard;
 - (void)advanceToNextInputMode;
+
+// Launch inputMode list above the view when long pressing or swiping up from the view,
+// Advance to nextInputMode when short tapping on the view.
+// Example: [KeyboardButton addTarget:self action:@selector(handleInputModeListFromView:withEvent:) forControlEvents:UIControlEventAllTouchEvents].
+- (void)handleInputModeListFromView:(nonnull UIView *)view withEvent:(nonnull UIEvent *)event NS_AVAILABLE_IOS(10_0);
 
 // This will not provide a complete repository of a language's vocabulary.
 // It is solely intended to supplement existing lexicons.

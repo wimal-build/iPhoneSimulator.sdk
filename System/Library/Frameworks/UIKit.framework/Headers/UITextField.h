@@ -2,7 +2,7 @@
 //  UITextField.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,6 +12,7 @@
 #import <UIKit/UIFont.h>
 #import <UIKit/UIStringDrawing.h>
 #import <UIKit/UITextInput.h>
+#import <UIKit/UIContentSizeCategoryAdjusting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,7 +42,12 @@ typedef NS_ENUM(NSInteger, UITextFieldViewMode) {
     UITextFieldViewModeAlways
 };
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSCoding> 
+typedef NS_ENUM(NSInteger, UITextFieldDidEndEditingReason) {
+    UITextFieldDidEndEditingReasonCommitted,
+    UITextFieldDidEndEditingReasonCancelled UIKIT_AVAILABLE_TVOS_ONLY(10_0)
+} NS_ENUM_AVAILABLE_IOS(10_0);
+
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSCoding, UIContentSizeCategoryAdjusting>
 
 @property(nullable, nonatomic,copy)   NSString               *text;                 // default is nil
 @property(nullable, nonatomic,copy)   NSAttributedString     *attributedText NS_AVAILABLE_IOS(6_0); // default is nil
@@ -114,6 +120,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 - (void)textFieldDidBeginEditing:(UITextField *)textField;           // became first responder
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField;          // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
 - (void)textFieldDidEndEditing:(UITextField *)textField;             // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+- (void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason NS_AVAILABLE_IOS(10_0); // if implemented, called in place of textFieldDidEndEditing:
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;   // return NO to not change text
 
@@ -122,9 +129,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 
 @end
 
-UIKIT_EXTERN NSString *const UITextFieldTextDidBeginEditingNotification;
-UIKIT_EXTERN NSString *const UITextFieldTextDidEndEditingNotification;
-UIKIT_EXTERN NSString *const UITextFieldTextDidChangeNotification;
+UIKIT_EXTERN NSNotificationName const UITextFieldTextDidBeginEditingNotification;
+UIKIT_EXTERN NSNotificationName const UITextFieldTextDidEndEditingNotification;
+UIKIT_EXTERN NSNotificationName const UITextFieldTextDidChangeNotification;
+
+UIKIT_EXTERN NSString *const UITextFieldDidEndEditingReasonKey NS_AVAILABLE_IOS(10_0);
 
 NS_ASSUME_NONNULL_END
 

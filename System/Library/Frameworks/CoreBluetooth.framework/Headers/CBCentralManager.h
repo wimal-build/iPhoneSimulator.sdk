@@ -11,9 +11,10 @@
 #warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
 #endif
 
-#import <CoreBluetooth/CBDefines.h>
 #import <CoreBluetooth/CBAdvertisementData.h>
 #import <CoreBluetooth/CBCentralManagerConstants.h>
+#import <CoreBluetooth/CBDefines.h>
+#import <CoreBluetooth/CBManager.h>
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -32,13 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
  *
  */
 typedef NS_ENUM(NSInteger, CBCentralManagerState) {
-	CBCentralManagerStateUnknown = 0,
-	CBCentralManagerStateResetting,
-	CBCentralManagerStateUnsupported,
-	CBCentralManagerStateUnauthorized,
-	CBCentralManagerStatePoweredOff,
-	CBCentralManagerStatePoweredOn,
-};
+	CBCentralManagerStateUnknown = CBManagerStateUnknown,
+	CBCentralManagerStateResetting = CBManagerStateResetting,
+	CBCentralManagerStateUnsupported = CBManagerStateUnsupported,
+	CBCentralManagerStateUnauthorized = CBManagerStateUnauthorized,
+	CBCentralManagerStatePoweredOff = CBManagerStatePoweredOff,
+	CBCentralManagerStatePoweredOn = CBManagerStatePoweredOn,
+} NS_DEPRECATED(NA, NA, 5_0, 10_0, "Use CBManagerState instead");
 
 @protocol CBCentralManagerDelegate;
 @class CBUUID, CBPeripheral;
@@ -50,7 +51,7 @@ typedef NS_ENUM(NSInteger, CBCentralManagerState) {
  *
  */
 NS_CLASS_AVAILABLE(10_7, 5_0)
-CB_EXTERN_CLASS @interface CBCentralManager : NSObject
+CB_EXTERN_CLASS @interface CBCentralManager : CBManager
 
 /*!
  *  @property delegate
@@ -58,24 +59,17 @@ CB_EXTERN_CLASS @interface CBCentralManager : NSObject
  *  @discussion The delegate object that will receive central events.
  *
  */
-@property(assign, nonatomic, nullable) id<CBCentralManagerDelegate> delegate;
+@property(nonatomic, weak, nullable) id<CBCentralManagerDelegate> delegate;
 
 /*!
- *  @property state
- *
- *  @discussion The current state of the central, initially set to <code>CBCentralManagerStateUnknown</code>. Updates are provided by required
- *              delegate method {@link centralManagerDidUpdateState:}.
- *
- */
-@property(readonly) CBCentralManagerState state;
-
-/*!
- *  @property isAdvertising
+ *  @property isScanning
  *
  *  @discussion Whether or not the central is currently scanning.
  *
  */
-@property(readonly) BOOL isScanning NS_AVAILABLE(NA, 9_0);
+@property(nonatomic, assign, readonly) BOOL isScanning NS_AVAILABLE(NA, 9_0);
+
+- (instancetype)init;
 
 /*!
  *  @method initWithDelegate:queue:

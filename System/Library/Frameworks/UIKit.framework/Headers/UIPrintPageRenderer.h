@@ -2,7 +2,7 @@
 //  UIPrintPageRenderer.h
 //  UIKit
 //
-//  Copyright 2010-2012 Apple Inc. All rights reserved.
+//  Copyright 2010-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -21,11 +21,12 @@ NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintPageRenderer : N
 @property(nonatomic,readonly) CGRect paperRect;      // complete paper rect. origin is (0,0)
 @property(nonatomic,readonly) CGRect printableRect;  // imageable area inside paper rect
 
+@property(nonatomic,readonly) NSInteger numberOfPages;  // override point. page count. default is maximum page count needed for all formatters or 0
+
 @property(nullable,nonatomic,copy) NSArray<UIPrintFormatter *> *printFormatters;
 - (nullable NSArray<UIPrintFormatter *> *)printFormattersForPageAtIndex:(NSInteger)pageIndex;
 - (void)addPrintFormatter:(UIPrintFormatter *)formatter startingAtPageAtIndex:(NSInteger)pageIndex;
 
-- (NSInteger)numberOfPages;                        // override point. called to get page count. default returns maximum page count needed for all formatters or 0
 - (void)prepareForDrawingPages:(NSRange)range;     // override point. default does nothing. called before requesting a set of pages to draw
 
 - (void)drawPageAtIndex:(NSInteger)pageIndex inRect:(CGRect)printableRect;                         // override point. may be called from non-main thread.  calls the various draw methods below.

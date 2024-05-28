@@ -6,6 +6,7 @@
 //
 
 #import <CoreSpotlight/CSSearchableItemAttributeSet.h>
+#import <CoreSpotlight/CSSearchableItemAttributeSet_General.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -54,9 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 //A list of contacts that are somehow associated with this document, beyond what is captured as Author.
 @property(nullable, copy) NSArray<NSString*> *contactKeywords;
-
-//A version specifier for this item.
-@property(nullable, copy) NSString *version;
 
 //The codecs used to encode/decode the media
 @property(nullable, copy) NSArray<NSString*> *codecs;

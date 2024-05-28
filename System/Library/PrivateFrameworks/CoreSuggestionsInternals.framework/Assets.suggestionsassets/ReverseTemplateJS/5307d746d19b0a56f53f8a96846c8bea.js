@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("autoeurope.com-modification-en_GB",function(e){return/Modify Request/.test(e.subject)},function(e){if(!/Modify Request/.test(e.subject))return CONTINUE;var t="en_GB",o={};return o.reservationId=/Voucher: (.*?)\n/,o.name=/Dear (.*?)\,/,o.pickup=/Pick-Up Details:/,o.dropoff=/Drop-Off Details:/,o.datetime=/Date\/Time:/,o.locationName=/Location:\s(.*?)\n/,loadHelper("autoeurope.com-modification-skeleton.js")(e,t,o)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/10/35/43","SGf8618aa8")]);

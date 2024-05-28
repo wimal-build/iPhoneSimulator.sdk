@@ -24,7 +24,9 @@ NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintFormatter : NSOb
 
 @property(nonatomic) CGFloat      maximumContentHeight __TVOS_PROHIBITED;      // default is 0.0. limits content to width
 @property(nonatomic) CGFloat      maximumContentWidth __TVOS_PROHIBITED;       // default is 0.0. limits content to height
-@property(nonatomic) UIEdgeInsets contentInsets __TVOS_PROHIBITED;             // default is UIEdgeInsetsZero. from edge of printableRect. applies to whole content. bottom inset unused
+@property(nonatomic) UIEdgeInsets contentInsets NS_DEPRECATED_IOS(4_2,10_0, "Use perPageContentInsets instead.") __TVOS_PROHIBITED;
+                                                                               // default is UIEdgeInsetsZero. from edge of printableRect. applies to whole content. bottom inset unused
+                                                                               // Deprecated in favor of perPageContentInsets which produces better output
 @property(nonatomic) UIEdgeInsets perPageContentInsets __TVOS_PROHIBITED;      // default is UIEdgeInsetsZero from edge of the page.  applies to content on each page (each edge applies to each page)
 
 @property(nonatomic)          NSInteger startPage __TVOS_PROHIBITED;           // default is NSNotFound
