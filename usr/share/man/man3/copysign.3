@@ -56,7 +56,23 @@ with its sign changed to
 .Sh SPECIAL VALUES
 .Fn copysign "x" "y"
 returns a NaN (with y's sign) if x is a NaN.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn copysign
+functions to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vcopysignf "vFloat x" "vFloat y";
+.br
+.Ft void
+.Fn vvcopysignf "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvcopysign "double *z" "const double *y" "const double *x" "const int *n" ;
 .Sh STANDARDS
 The
 .Fn copysign
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

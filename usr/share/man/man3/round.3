@@ -101,13 +101,27 @@ The
 function is deprecated.  Please use the C99 function
 .Fn lround
 instead.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn round
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vnintf "vFloat x" ;
+.br
+.Ft void
+.Fn vvnintf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvnint "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
-.Xr abs 3 ,
-.Xr fabs 3 ,
 .Xr ceil 3 ,
 .Xr floor 3 ,
-.Xr math 3 ,
-.Xr rint 3
+.Xr trunc 3 ,
+.Xr math 3
 .Sh STANDARDS
 The
 .Fn round
@@ -115,4 +129,4 @@ The
 .Fn lround
 , and
 .Fn llround
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

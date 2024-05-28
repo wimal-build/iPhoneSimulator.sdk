@@ -1,0 +1,281 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<opaque type='^{_GSLibrarySaveInProgressToken=}' name='GSLibrarySaveInProgressToken'/>
+<constant type='^{__CFString=}' name='kGSLibraryErrorDomain'/>
+<string_constant value='name' nsstring='true' name='kGSLibraryGenInfosFieldNameKey'/>
+<string_constant value='ODN' nsstring='true' name='kGSLibraryGenInfosFieldODNKey'/>
+<string_constant value='options' nsstring='true' name='kGSLibraryGenInfosFieldOptionsKey'/>
+<string_constant value='URL' nsstring='true' name='kGSLibraryGenInfosFieldPathKey'/>
+<string_constant value='info' nsstring='true' name='kGSLibraryGenInfosFieldUserInfosKey'/>
+<string_constant value='clients' nsstring='true' name='kGSLibraryGenInfosSpecClientsKey'/>
+<string_constant value='fields' nsstring='true' name='kGSLibraryGenInfosSpecFieldsKey'/>
+<string_constant value='withOptions' nsstring='true' name='kGSLibraryGenInfosSpecWithOptionsKey'/>
+<string_constant value='withoutOptions' nsstring='true' name='kGSLibraryGenInfosSpecWithoutOptionsKey'/>
+<enum value='1' name='GENERATIONAL_STORAGE_READ_LOCK_AVAILABLE'/>
+<enum value='10' name='kGSLibraryErrorCorruptStorage'/>
+<enum value='1' name='kGSLibraryErrorInternal'/>
+<enum value='3' name='kGSLibraryErrorInvalidName'/>
+<enum value='9' name='kGSLibraryErrorInvalidOption'/>
+<enum value='7' name='kGSLibraryErrorInvalidStorage'/>
+<enum value='2' name='kGSLibraryErrorInvalidURL'/>
+<enum value='5' name='kGSLibraryErrorNotSupportedHere'/>
+<enum value='6' name='kGSLibraryErrorPermissionDenied'/>
+<enum value='1' name='kGSLibraryGenerationOptionsDefault'/>
+<enum value='8' name='kGSLibraryGenerationOptionsIsPurgeable'/>
+<enum value='16' name='kGSLibraryGenerationOptionsIsSaved'/>
+<enum value='31' name='kGSLibraryGenerationOptionsMask'/>
+<enum value='0' name='kGSLibraryGenerationOptionsUnknown'/>
+<enum value='2' name='kGSLibraryGenerationOptionsWasAutomaticallyGenerated'/>
+<enum value='4' name='kGSLibraryGenerationOptionsWasSyncConflict'/>
+<enum value='1' name='kGSLibraryPrivateTransferOptionAllInfo'/>
+<enum value='16' name='kGSLibraryPrivateTransferOptionFailOnDuplicateGenerations'/>
+<enum value='4' name='kGSLibraryPrivateTransferOptionOverwriteDuplicateGenerations'/>
+<enum value='2' name='kGSLibraryPrivateTransferOptionReplaceAllGenerations'/>
+<enum value='8' name='kGSLibraryPrivateTransferOptionSkipDuplicateGenerations'/>
+<enum value='31' name='kGSLibraryPrivateTransferOptionsMask'/>
+<enum value='1' name='kGSLibraryStorageOptionsDefault'/>
+<enum value='1' name='kGSLibraryStorageOptionsMask'/>
+<enum value='0' name='kGSLibraryStorageOptionsUnknown'/>
+<function name='GSLibraryAddGenerationWithOptionsByCopyingFile'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='Q'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryAddGenerationWithOptionsByMovingFile'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='Q'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryCopyAllGenerationNamesForFile'>
+<arg type='^{__CFURL=}'/>
+<retval already_retained='true' type='^{__CFDictionary=}'/>
+</function>
+<function name='GSLibraryCopyAllGenerationPathsForFile'>
+<arg type='^{__CFURL=}'/>
+<retval already_retained='true' type='^{__CFDictionary=}'/>
+</function>
+<function name='GSLibraryCopyAllGenerationsInfos'>
+<arg type='^v'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval already_retained='true' type='^{__CFDictionary=}'/>
+</function>
+<function name='GSLibraryCopyGeneration'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryCopyGenerationInfoDictionary'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<retval already_retained='true' type='^{__CFDictionary=}'/>
+</function>
+<function name='GSLibraryCopyGenerationInfoValueForKey'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<retval already_retained='true' type='@'/>
+</function>
+<function name='GSLibraryCopyGenerationInfos'>
+<arg type='^v'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval already_retained='true' type='^{__CFDictionary=}'/>
+</function>
+<function name='GSLibraryCopyGenerationNames'>
+<arg type='^v'/>
+<retval already_retained='true' type='^{__CFArray=}'/>
+</function>
+<function name='GSLibraryCopyGenerationOriginalDisplayName'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<retval already_retained='true' type='^{__CFString=}'/>
+</function>
+<function name='GSLibraryCopyURLForGeneration'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<retval already_retained='true' type='^{__CFURL=}'/>
+</function>
+<function name='GSLibraryCreateClientManaged'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='^v'/>
+</function>
+<function name='GSLibraryCreateForFile'>
+<arg type='^{__CFAllocator=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='^v'/>
+</function>
+<function name='GSLibraryDestroyClientManaged'>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryDocumentDidSafeSave'>
+<arg type='^{_GSLibrarySaveInProgressToken=}'/>
+</function>
+<function name='GSLibraryDocumentWillSafeSave'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<retval type='^{_GSLibrarySaveInProgressToken=}'/>
+</function>
+<function name='GSLibraryGetGenerationOptions'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<retval type='Q'/>
+</function>
+<function name='GSLibraryGetStorageOptions'>
+<arg type='^v'/>
+<retval type='Q'/>
+</function>
+<function name='GSLibraryGetTypeID'>
+<retval type64='Q' type='L'/>
+</function>
+<function name='GSLibraryHasGenerationsForPaths'>
+<arg type='^{__CFArray=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='^{__CFArray=}'/>
+</function>
+<function name='GSLibraryPrivateAddReference'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateCompactChunkStorage'>
+<arg type='*'/>
+<arg type='Q'/>
+<arg type='B'/>
+<retval type='Q'/>
+</function>
+<function name='GSLibraryPrivateCopyGenerationsForFile'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='Q'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateCreateGenerationArchiveForFile'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFDictionary=}'/>
+<arg type='Q'/>
+<arg type='^^{__CFURL}' type_modifier='o'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateDeleteChunkBackedFile'>
+<arg type='*'/>
+<arg type='B'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateDestroyGenerationArchiveForFile'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+</function>
+<function name='GSLibraryPrivateImportArchivedGenerationsForFile'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='Q'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateMakeChunkBackedFile'>
+<arg type='*'/>
+<arg type='B'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivatePushGenerationAndOverwriteFile'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateReleaseReadLockOnVolume'>
+<arg type='I'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateRequestFreeSpaceOnVolume'>
+<arg type='^{__CFURL=}'/>
+<arg type='Q'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryPrivateRequestReadLockOnVolume'>
+<arg type='^{__CFURL=}'/>
+<retval type='I'/>
+</function>
+<function name='GSLibraryPrivateSetLogLevel'>
+<arg type='i'/>
+</function>
+<function name='GSLibraryPrivateTransferGenerationToClientName'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryRemoveGenerations'>
+<arg type='^v'/>
+<arg type='^{__CFArray=}'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryRestoreGeneration'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GSLibrarySetGenerationInfoValueForKey'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<arg type='@'/>
+<retval type='B'/>
+</function>
+<function name='GSLibrarySetGenerationOptions'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='Q'/>
+<retval type='B'/>
+</function>
+<function name='GSLibrarySetGenerationOriginalDisplayName'>
+<arg type='^v'/>
+<arg type='^{__CFString=}'/>
+<arg type='^{__CFString=}'/>
+<retval type='B'/>
+</function>
+<function name='GSLibrarySetStorageOptions'>
+<arg type='^v'/>
+<arg type='Q'/>
+<retval type='B'/>
+</function>
+<function name='GSLibraryStorageMove'>
+<arg type='^{__CFURL=}'/>
+<arg type='^{__CFURL=}'/>
+<arg type='^^{__CFError}' type_modifier='o'/>
+<retval type='B'/>
+</function>
+<function name='GS_AVAILABLE'>
+<retval type='i'/>
+</function>
+</signatures>

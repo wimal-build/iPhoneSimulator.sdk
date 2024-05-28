@@ -1,0 +1,2 @@
+(if (entitlement "com.apple.private.hsa-authentication-processing")
+   (allow mach-lookup (global-name "com.apple.hsa-authentication-server")))

@@ -5,6 +5,9 @@
 #ifndef _SQLITE3_PRIVATE_H
 #define _SQLITE3_PRIVATE_H
 
+#include <unistd.h>
+#include <sqlite3.h>
+
 #define SQLITE_LOCKSTATE_OFF    0
 #define SQLITE_LOCKSTATE_ON     1
 #define SQLITE_LOCKSTATE_NOTADB 2
@@ -42,6 +45,12 @@ extern int _sqlite3_lockstate(const char *path, pid_t pid);
 extern void _sqlite3_purgeEligiblePagerCacheMemory(void);
 
 /*
+** Returns the system defined default sqlite3_busy_handler function
+** 
+*/
+extern int (*_sqlite3_system_busy_handler(void))(void*,int);
+
+/*
 ** Pass the SQLITE_TRUNCATE_DATABASE operation code to sqlite3_file_control() 
 ** to truncate a database and its associated journal file to zero length.  The 
 ** SQLITE_TRUNCATE_* flags represent optional flags to safely initialize an
@@ -75,5 +84,43 @@ extern void _sqlite3_purgeEligiblePagerCacheMemory(void);
 */
 #define SQLITE_FCNTL_REPLACE_DATABASE       102
 #define SQLITE_REPLACE_DATABASE             SQLITE_FCNTL_REPLACE_DATABASE
+
+/*
+** An sqlite3_intarray is an abstract type to stores an instance of
+** an integer array.
+*/
+typedef struct sqlite3_intarray sqlite3_intarray;
+
+/*
+** Invoke this routine to create a specific instance of an intarray object.
+** The new intarray object is returned by the 3rd parameter.
+**
+** Each intarray object corresponds to a virtual table in the TEMP table
+** with a name of zName.
+**
+** Destroy the intarray object by dropping the virtual table.  If not done
+** explicitly by the application, the virtual table will be dropped implicitly
+** by the system when the database connection is closed.
+*/
+int sqlite3_intarray_create(
+  sqlite3 *db,
+  const char *zName,
+  sqlite3_intarray **ppReturn
+);
+
+/*
+** Bind a new array array of integers to a specific intarray object.
+**
+** The array of integers bound must be unchanged for the duration of
+** any query against the corresponding virtual table.  If the integer
+** array does change or is deallocated undefined behavior will result.
+*/
+int sqlite3_intarray_bind(
+  sqlite3_intarray *pIntArray,   /* The intarray object to bind to */
+  int nElements,                 /* Number of elements in the intarray */
+  sqlite3_int64 *aElements,      /* Content of the intarray */
+  void (*xFree)(void*)           /* How to dispose of the intarray when done */
+);
+
 
 #endif

@@ -139,6 +139,10 @@ struct arpstat {
 	uint32_t timeouts;	/* # of times with entries removed */
 				/* due to timeout. */
 	uint32_t dupips;	/* # of duplicate IPs detected. */
+
+	/* General statistics */
+	uint32_t inuse;		/* # of ARP entries in routing table */
+	uint32_t txurequests;	/* # of ARP requests sent (unicast) */
 };
 
 

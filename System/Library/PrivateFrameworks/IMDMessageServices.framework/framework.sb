@@ -1,0 +1,2 @@
+(if (entitlement "com.apple.private.imcore.imdmessageservices")
+   (allow mach-lookup (global-name "com.apple.imdmessageservices.IMDMessageServicesAgent")))

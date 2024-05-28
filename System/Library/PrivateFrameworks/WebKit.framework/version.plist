@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>WebKitEmbedded</string>
 	<key>BuildVersion</key>
-	<string>33</string>
+	<string>21</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6536.26</string>
+	<string>6537.51</string>
 	<key>CFBundleVersion</key>
-	<string>6536.26</string>
+	<string>6537.51.1</string>
 	<key>ProjectName</key>
-	<string>WebKit</string>
+	<string>WebKitEmbedded_Sim</string>
 	<key>SourceVersion</key>
-	<string>1251015000000000</string>
+	<string>1385000000000000</string>
 </dict>
 </plist>

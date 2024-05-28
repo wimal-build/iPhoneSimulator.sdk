@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>WebBookmarks</string>
 	<key>BuildVersion</key>
-	<string>51</string>
+	<string>30</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>ProjectName</key>
-	<string>WebBookmarks</string>
+	<string>WebBookmarks_Sim</string>
 	<key>SourceVersion</key>
-	<string>270004000000000</string>
+	<string>338000000000000</string>
 </dict>
 </plist>

@@ -1,5 +1,6 @@
-
+#ifdef GL_ES
 precision mediump float;
+#endif
 
 uniform float u_gridMix;
 
@@ -36,4 +37,5 @@ void main()
  
     // mix the line and background color together
     gl_FragColor = u_lineColor * (1.0-grid) + u_color * grid;
+    gl_FragColor.a = 1.0;
 }

@@ -1,5 +1,6 @@
-
+#ifdef GL_ES
 precision mediump float;
+#endif
 
 // background color - we are computing the where the grid isn't instead of where it is
 uniform highp vec4 u_color;

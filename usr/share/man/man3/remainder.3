@@ -61,9 +61,25 @@ The
 function is deprecated.  Please use the C99 function
 .Fn remainder
 instead.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn remainder
+functions to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vremainderf "vFloat x" "vFloat y" ;
+.br
+.Ft void
+.Fn vvremainderf "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvremainder "double *z" "const double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn remainder
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>QuartzCore</string>
 	<key>BuildVersion</key>
-	<string>18</string>
+	<string>6</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.8</string>
 	<key>CFBundleVersion</key>
-	<string>303.0</string>
+	<string>330.0</string>
 	<key>ProjectName</key>
-	<string>QuartzCore</string>
+	<string>QuartzCore_Sim</string>
 	<key>SourceVersion</key>
-	<string>303000015000000</string>
+	<string>330000008000000</string>
 </dict>
 </plist>

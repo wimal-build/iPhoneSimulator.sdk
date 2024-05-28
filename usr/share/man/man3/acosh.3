@@ -62,6 +62,22 @@ returns a NAN and raises the "invalid" floating-point exception for x < 1.
 .Pp
 .Fn acosh "+infinity"
 returns +infinity.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn acosh
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vacoshf "vFloat x" ;
+.br
+.Ft void
+.Fn vvacoshf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvacosh "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr asinh 3 ,
 .Xr atanh 3 ,
@@ -70,7 +86,7 @@ returns +infinity.
 .Sh STANDARDS
 The
 .Fn acosh
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.
 .Sh HISTORY
 The
 .Fn acosh

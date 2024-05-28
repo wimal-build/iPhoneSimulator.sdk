@@ -2,23 +2,16 @@
 //  MKMultiPoint.h
 //  MapKit
 //
-//  Copyright (c) 2010-2012, Apple Inc. All rights reserved.
+//  Copyright (c) 2010-2013, Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <MapKit/MKFoundation.h>
 #import <MapKit/MKShape.h>
 #import <MapKit/MKGeometry.h>
 #import <MapKit/MKTypes.h>
-#import <MapKit/MKFoundation.h>
 
-MK_CLASS_AVAILABLE(NA, 4_0)
-@interface MKMultiPoint : MKShape {
-@package
-    MKMapPoint *_points;
-    NSUInteger _pointCount;
-    
-    MKMapRect _boundingRect;
-}
+MK_CLASS_AVAILABLE(10_9, 4_0)
+@interface MKMultiPoint : MKShape
 
 @property (nonatomic, readonly) MKMapPoint *points;
 @property (nonatomic, readonly) NSUInteger pointCount;

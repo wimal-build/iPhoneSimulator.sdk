@@ -5,7 +5,7 @@
 //
 //  fsh.xml
 //
-//  Copyright 2011 Apple Inc. All rights reserved.
+//  Copyright 2011-2012 Apple Inc. All rights reserved.
 //
 
 #define MAX_LIGHTS      3
@@ -29,7 +29,29 @@
 #define GLKTexGenModeSphereMap         2
 #define GLKTexGenModeReflectionMap     3
 
+#ifndef GL_ES
+#define lowp
+#define mediump
+#define highp
+
+#define IN_VERT  in
+#define OUT_VERT out
+#define IN_FRAG  in
+#define OUT_FRAG out
+
+#define texture2D   texture
+#define textureCube texture
+
+out vec4 out_color;
+#else
+#define IN_VERT  attribute
+#define OUT_VERT varying
+#define IN_FRAG  varying
+#define OUT_FRAG
+
 precision highp float;
+#define out_color gl_FragColor
+#endif
 
 struct texGen_s
 {
@@ -104,30 +126,32 @@ struct fog_s
 uniform texture_s    textures[MAX_TEXTURES];
 uniform fog_s        fog;
 
+
 /////////////////////////////////////////////////////////////////////////////////////
 // Reflection Mapping
 /////////////////////////////////////////////////////////////////////////////////////
 uniform highp mat3   reflectionMapMatrix;
 
+
 /////////////////////////////////////////////////////////////////////////////////////
 // Varyings
 /////////////////////////////////////////////////////////////////////////////////////
-varying lowp vec4    v_color;
+IN_FRAG lowp    vec4 v_color;
 
 <codeblock label="light model two-sided per-vertex enabled" type="cond" class="EFFECT">
-varying lowp vec4       v_backColor;
+IN_FRAG lowp    vec4 v_backColor;
 </codeblock>
 <codeblock label="v_position" type="cond" class="TEXTURE">
-varying highp   vec4    v_position;
+IN_FRAG highp   vec4 v_position;
 </codeblock>
 <codeblock label="v_positionEye" type="cond" class="EFFECT">
-varying highp   vec4    v_positionEye;
+IN_FRAG highp   vec4 v_positionEye;
 </codeblock>
 <codeblock label="v_normalEye" type="cond" class="EFFECT">
-varying highp   vec3    v_normalEye;
+IN_FRAG highp   vec3 v_normalEye;
 </codeblock>
 <codeblock label="use tex coord attrib" type="cond" class="EFFECT">
-varying highp   vec3    v_texCoord[MAX_TEX_COORDS];
+IN_FRAG highp   vec3 v_texCoord[MAX_TEX_COORDS];
 </codeblock>
 
 
@@ -148,7 +172,7 @@ uniform vec4 ambientTerm[3];
 </codeblock>
 
 <codeblock label="fog enabled" type="cond" class="FOG">
-varying mediump float   v_fog;
+IN_FRAG mediump float   v_fog;
 </codeblock>
 
 </codeblock>
@@ -504,6 +528,9 @@ void main()
             // else if(textures[currTex].envMode == GLKTextureEnvAttribDecal)
                 color.rgb = mix(color.rgb, texColor.rgb, texColor.a);
             </codeblock>
+
+			//todo:
+            //color.a = 1.0; change texture swizzle
         }
         </codeblock>
     }
@@ -515,7 +542,7 @@ void main()
 
 <codeblock label="main epilog" type="std" class="STATIC_BLOCK">
 <![CDATA[
-    gl_FragColor = color;
+    out_color = color;
 }
 ]]>
 </codeblock>

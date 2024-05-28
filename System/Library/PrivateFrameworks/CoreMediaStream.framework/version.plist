@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>CoreMediaStream</string>
 	<key>BuildVersion</key>
-	<string>19</string>
+	<string>5</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2.0</string>
 	<key>CFBundleVersion</key>
 	<string>3</string>
 	<key>ProjectName</key>
-	<string>CoreMediaStream</string>
+	<string>CoreMediaStream_Sim</string>
 	<key>SourceVersion</key>
-	<string>329001004000000</string>
+	<string>454000000000000</string>
 </dict>
 </plist>

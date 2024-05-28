@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BuildVersion</key>
-	<string>131</string>
-	<key>CFBundleShortVersionString</key>
-	<string>8.0</string>
-	<key>CFBundleVersion</key>
-	<string>900</string>
-	<key>ProjectName</key>
+	<key>BuildAliasOf</key>
 	<string>IMAVCore</string>
+	<key>BuildVersion</key>
+	<string>5</string>
+	<key>CFBundleShortVersionString</key>
+	<string>10.0</string>
+	<key>CFBundleVersion</key>
+	<string>1000</string>
+	<key>ProjectName</key>
+	<string>IMAVCore_Sim</string>
 	<key>SourceVersion</key>
-	<string>327001000000000</string>
+	<string>506000000000000</string>
 </dict>
 </plist>

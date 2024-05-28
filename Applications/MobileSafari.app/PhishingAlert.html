@@ -15,125 +15,87 @@
     }
 
     body {
-        background-color: rgba(77, 77, 77, 1.0);
-        -webkit-background-composite: copy;
+        background-color: white;
         display: table-cell;
         vertical-align: middle;
         margin: 0;
-        padding: 10px;
+        padding: 0;
         -webkit-user-select: none;
         -webkit-text-size-adjust: none;
         cursor: default;
+        text-align: center;
     }
 
     .alert {
         position: relative;
-        width: 300px;
+        width: 290px;
         margin: 0 auto;
     }
 
     .alert.phishing .userinfo {
         display:none;
     }
-    
+
     .alert.userinfo .malware {
         display:none;
     }
-    
+
     .alert.userinfo .phishing {
         display:none;
     }
 
-    
-    .alert-body {
-        -webkit-border-image: url('./PhishingAlertBase.png') 0 0 19 0;
-        border-width: 0 0 10px 0;
-        padding-top: 1px;
-    }
-
-    .alert-body p:first-of-type {
-        margin-top: 13px;
-    }
-
-    .alert-body p:last-of-type {
-        margin-bottom: 0;
-    }
-
     h1 {
-        background-image: url('./PhishingAlertTitlebar.png');
-        background-repeat: no-repeat;
-        height: 38px;
-        text-align: center;
-        font-family: Lucida Grande, sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 39px;
-        color: white;
-        text-shadow: rgb(43, 0, 1) 0 -1px 0;
-        margin: 0;
-        padding: 0 10px;
+        padding: 0;
+        margin-bottom: 16px;
+        font: -apple-system-body;
+        color: rgb(255, 59, 48);
     }
 
     p {
-        font-family: Lucida Grande, sans-serif;
-        font-size: 13px;
-        line-height: 15px;
-        padding: 0 25px;
+        margin: 0;
+        padding: 0;
+        font: -apple-system-caption1;
         word-wrap: break-word;
+        color: rgba(0, 0, 0, .6);
+    }
+
+    p.phishing.google {
+        margin-top: 15px;
     }
 
     a {
+        font: -apple-system-caption1;
         font-weight: bold;
         color: inherit;
-        line-height: 25px;
     }
 
     .button-bar {
-        text-align: center;
-        margin-top: 17px;
-        margin-bottom: 0;
-        padding: 0 10px;
-        height: 104px;
-        line-height: 38px;
+        /* The cap of the first button should be 50pt from the baseline of
+           #phishing_details & #userinfo_details at the normal system text size. */
+        margin-top: 38px;
     }
 
     .button-bar button {
-        border-width: 0 10px 0 10px;
-        height: 45px;
-        width: 280px;
-        -webkit-border-image: url('./Button.png') 0 10 0 10;
-        font-family: Lucida Grande, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        min-width: 90px;
-        margin-bottom: 5px;
-        vertical-align: bottom;
-        padding-left: 12px;
-        padding-right: 12px;
+        /* The cap of each button should be 25pt from the baseline of the
+           previous button at the normal system text size. */
+        margin: 0 auto 12px auto;
+        display: block;
+        width: 100%;
+        border-width: 0;
+        font: -apple-system-tall-body;
+        color: rgb(0, 122, 255);
     }
-    
+
+    .button-bar button:last-of-type {
+        margin-bottom: 0;
+    }
+
     .button-bar button.active {
-        -webkit-border-image: url('./ButtonPushed.png') 0 10 0 10;
+        color: rgba(0, 122, 255, .4);
     }
 
     .button-bar.goBack .closePage, .button-bar.closePage .goBack {
         display: none;
-    }
-
-    @media screen and (-webkit-device-pixel-ratio:2) {
-        .alert-body {
-            -webkit-border-image: url('./PhishingAlertBase@2x.png') 0 0 39 0;
-        }
-        h1 {
-            background-image: url('./PhishingAlertTitlebar@2x.png');
-            -webkit-background-size: 300px auto;
-        }
-        .button-bar button {
-            -webkit-border-image: url('./Button@2x.png') 0 20 0 20;
-        }
-        .button-bar button.active {
-            -webkit-border-image: url('./ButtonPushed@2x.png') 0 20 0 20;
-        }
     }
     </style>
     <script type="text/javascript">
@@ -144,23 +106,23 @@
                 stringParts.splice(i * 2 + 1, 0, arguments[i].toString());
             return stringParts.join("");
         }
-    
+
         function Button(element) {
             this.element = element;
             this.pressed = false;
             this.absolutePosition = [0, 0];
         }
-            
+
         touchEndedHandler = function(e, button) {
             if (button.element.className === "active") {
                 var event = document.createEvent("MouseEvents");
                 event.initMouseEvent("click", true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, button.element);
                 button.element.dispatchEvent(event);
             }
-        
+
             button.element.className = "default";
         }
-        
+
         touchCancelHandler = function(e, button) {
             button.element.className = "default";
         }
@@ -168,9 +130,9 @@
         touchMoveHandler = function(e, button) {
             if (e.targetTouches.length != 1)
                 return;
-                
+
             e.preventDefault();
-                
+
             var x = e.targetTouches[0].clientX;
             var y = e.targetTouches[0].clientY;
             if (x < button.absolutePosition[0] || y < button.absolutePosition[1] ||
@@ -185,19 +147,19 @@
             button.pressed = true;
             button.element.className = "active";
         }
-        
+
         function positionOfElementOnPage(element) {
             var positionLeft = 0;
             var positionTop = 0;
-            
+
             do {
                 positionLeft += element.offsetLeft;
                 positionTop += element.offsetTop;
             } while (element = element.offsetParent);
-            
+
             return [positionLeft, positionTop];
         }
-        
+
         const defaultReportAnErrorURL = "http://www.google.com/safebrowsing/report_error/?tpl=generic&continue=http%3A%2F%2Fwww.apple.com%2Fsafari%2Fantiphishing%2Freport_submitted.html";
         const defaultLearnMoreAboutPhishingFromGoogleURL = "http://www.google.com/support/bin/answer.py?answer=106318";
 
@@ -253,7 +215,6 @@
 
             pageLoaded: function()
             {
-                //DialogController.pageLoaded();
                 PhishingAlertController.loaded();
             },
 
@@ -267,14 +228,14 @@
 
                 if (type === "phishing") {
                     document.title = PhishingAlertController.UIString("Suspected Phishing Site", "Title of warning page for suspected phishing site");
-                    document.getElementById("phishing_warning").innerHTML = PhishingAlertController.UIString("Warning: Suspected phishing site", "Header for warning page for suspected phishing site");
+                    document.getElementById("phishing_warning").innerHTML = PhishingAlertController.UIString("Suspected Phishing Site", "Header for warning page for suspected phishing site");
                     document.getElementById("phishing_details").innerHTML = PhishingAlertController.UIString("The website you are visiting has been reported as a “phishing” website. These websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank.", "Detail text for phishing warning");
                 } else if (type == "userinfo") {
                     document.title = PhishingAlertController.UIString("Possible Phishing Site", "Title of warning page for possible phishing site");
-                    document.getElementById("userinfo_warning").innerHTML = PhishingAlertController.UIString("Warning: Possible phishing site", "Header for warning page for possible phishing site");
-                    document.getElementById("userinfo_details").innerHTML = PhishingAlertController.UIString("The address for the website you’re visiting contains a username or password. This may be a “phishing” website. Phishing websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank’s.", "Detail text for username and password phishing warning");
+                    document.getElementById("userinfo_warning").innerHTML = PhishingAlertController.UIString("Possible Phishing Site", "Header for warning page for possible phishing site");
+                    document.getElementById("userinfo_details").innerHTML = PhishingAlertController.UIString("The website you are visiting has a user name or password in its address. This may be a “phishing” website. These websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank.", "Detail text for user name and password phishing warning");
                 }
-                
+
                 document.getElementById("learn-more-phishing").innerHTML = PhishingAlertController.UIString("Learn more about phishing scams", "Display text for link to learn about phishing scams");
                 document.getElementById("report-an-error").innerHTML = PhishingAlertController.UIString("Report an error", "Display text for link to report an error about phishing warnings to google");
                 document.getElementById("ignore_this_warning").innerHTML = PhishingAlertController.UIString("Ignore this Warning", "Title of button to ignore a fraud warning");
@@ -309,7 +270,7 @@
                     closeButton.absolutePosition = positionOfElementOnPage(closeButton.element);
                 }
                 ignoreButton.absolutePosition = positionOfElementOnPage(ignoreButton.element);
-                
+
                 this.host = host;
                 this.currentURL = currentURL;
 
@@ -323,24 +284,6 @@
                 else
                     document.getElementById("learn-more-phishing").href = learnMoreAboutPhishingURL;
 
-                var elements = document.getElementsByClassName("size-font-to-fit");
-                for (var i = 0; i < elements.length; ++i) {
-                    var element = elements[i];
-
-                    element.style.removeProperty("font-size");
-
-                    if (element.offsetHeight <= element.parentNode.offsetHeight)
-                        continue;
-
-                    var computedStyle = window.getComputedStyle(element, "");
-                    var fontSize = computedStyle.getPropertyCSSValue("font-size").getFloatValue(CSSPrimitiveValue.CSS_PX);
-
-                    do {
-                        --fontSize;
-                        element.style.setProperty("font-size", fontSize + "px", "");
-                    } while (element.offsetHeight > element.parentNode.offsetHeight);
-                }
-
                 // Update direction based on the user default language.
                 if (PhishingAlertController.isRTL()) {
                     document.body.style.direction = "rtl";
@@ -353,8 +296,8 @@
 </head>
 <body>
 <div id="alert" class="alert phishing google">
-    <h1 class="phishing" id="phishing_warning"><span class="l12n size-font-to-fit"></span></h1>
-    <h1 class="userinfo" id="userinfo_warning"><span class="l12n size-font-to-fit"></span></h1>
+    <h1 class="phishing" id="phishing_warning"><span class="l12n"></span></h1>
+    <h1 class="userinfo" id="userinfo_warning"><span class="l12n"></span></h1>
     <div class="alert-body">
         <p class="phishing l12n" id="phishing_details"></p>
         <p class="phishing google">

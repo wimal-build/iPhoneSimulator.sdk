@@ -2,7 +2,7 @@
 //  UIPickerView.h
 //  UIKit
 //
-//  Copyright (c) 2006-2012, Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2013, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,6 +24,14 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIPickerView : UIView <NSCoding, UITableV
     id<UIPickerViewDelegate>   _delegate;
     UIView                    *_backgroundView;
     NSInteger                  _numberOfComponents;
+    
+    UIImageView               *_topGradient;
+    UIImageView               *_bottomGradient;
+
+    UIView                    *_foregroundView;
+    CALayer                   *_maskGradientLayer;
+    UIView                    *_topLineView;
+    UIView                    *_bottomLineView;
   @package
     struct {
         unsigned int needsLayout:1;
@@ -35,7 +43,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIPickerView : UIView <NSCoding, UITableV
         unsigned int delegateRespondsToAttributedTitleForRow:1;
         unsigned int delegateRespondsToWidthForComponent:1;
         unsigned int delegateRespondsToRowHeightForComponent:1;
-        unsigned int delegateRespondsToCheckableForRow:1;
         unsigned int showsSelectionBar:1;
         unsigned int allowsMultipleSelection:1;
         unsigned int allowSelectingCells:1;

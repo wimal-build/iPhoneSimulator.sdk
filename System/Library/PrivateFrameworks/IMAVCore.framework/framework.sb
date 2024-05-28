@@ -1,0 +1,11 @@
+(if (entitlement "com.apple.private.imavcore.imavagent")
+   (allow mach-lookup (global-name "com.apple.imavagent.embedded.auth")))
+
+(if (entitlement "com.apple.private.imavcore.imavagent")
+   (allow mach-lookup (global-name "com.apple.imavagent.desktop.auth")))
+
+(if (entitlement "com.apple.private.imavcore.imavagent")
+   (allow mach-lookup (global-name "com.apple.imagent.embedded.auth")))
+
+(if (entitlement "com.apple.private.imavcore.imavagent")
+   (allow mach-lookup (global-name "com.apple.imagent.desktop.auth")))

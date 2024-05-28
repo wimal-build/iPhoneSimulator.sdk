@@ -1,0 +1,2 @@
+(if (entitlement "com.apple.private.imcore.imtranscoderservice")
+   (allow mach-lookup (global-name "com.apple.imtranscoding.IMTranscoderAgent")))

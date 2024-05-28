@@ -34,14 +34,38 @@
 #include <sys/proc.h>
 #include <sys/param.h>
 
-#define IDLE_JETSAM_PRIORITY             1000000000
-#define DEFERRED_IDLE_JETSAM_PRIORITY    (IDLE_JETSAM_PRIORITY - 1)
-#define FOREGROUND_JETSAM_PRIORITY       0
-#define DEFAULT_JETSAM_PRIORITY         -100
+#define JETSAM_PRIORITY_REVISION                  2
 
-#define DEFERRED_IDLE_EXIT_TIME_SECS     10
+#define JETSAM_PRIORITY_IDLE_HEAD                -2
+/* The value -1 is an alias to JETSAM_PRIORITY_DEFAULT */
+#define JETSAM_PRIORITY_IDLE                      0
+#define JETSAM_PRIORITY_IDLE_DEFERRED             1
+#define JETSAM_PRIORITY_BACKGROUND_OPPORTUNISTIC  2
+#define JETSAM_PRIORITY_BACKGROUND                3
+#define JETSAM_PRIORITY_MAIL                      4
+#define JETSAM_PRIORITY_PHONE                     5
+#define JETSAM_PRIORITY_UI_SUPPORT                8
+#define JETSAM_PRIORITY_FOREGROUND_SUPPORT        9
+#define JETSAM_PRIORITY_FOREGROUND               10
+#define JETSAM_PRIORITY_AUDIO_AND_ACCESSORY      12
+#define JETSAM_PRIORITY_CONDUCTOR                13
+#define JETSAM_PRIORITY_HOME                     16
+#define JETSAM_PRIORITY_EXECUTIVE                17
+#define JETSAM_PRIORITY_IMPORTANT                18
+#define JETSAM_PRIORITY_CRITICAL                 19
 
-#define KEV_MEMORYSTATUS_SUBCLASS        3
+#define JETSAM_PRIORITY_MAX                      21
+
+/* TODO - tune. This should probably be lower priority */
+#define JETSAM_PRIORITY_DEFAULT                  18
+#define JETSAM_PRIORITY_TELEPHONY                19
+
+/* Compatibility */
+#define DEFAULT_JETSAM_PRIORITY                  18
+
+#define DEFERRED_IDLE_EXIT_TIME_SECS             10
+
+#define KEV_MEMORYSTATUS_SUBCLASS                 3
 
 enum {
 	kMemorystatusLevelNote = 1,
@@ -61,14 +85,10 @@ enum {
 typedef struct memorystatus_priority_entry {
 	pid_t pid;
 	int32_t priority;
-	int32_t hiwat_pages;
 	uint64_t user_data;
+	int32_t limit;
+	uint32_t state;
 } memorystatus_priority_entry_t;
-
-/*
-** how many processes to snapshot
-*/
-#define kMaxSnapshotEntries 128 
 
 typedef struct memorystatus_kernel_stats {
 	uint32_t free_pages;
@@ -77,6 +97,13 @@ typedef struct memorystatus_kernel_stats {
 	uint32_t throttled_pages;
 	uint32_t purgeable_pages;
 	uint32_t wired_pages;
+	uint32_t speculative_pages;
+	uint32_t filebacked_pages;
+	uint32_t anonymous_pages;
+	uint32_t compressor_pages;
+	uint64_t compressions;
+	uint64_t decompressions;
+	uint64_t total_uncompressed_pages_in_compressor;
 } memorystatus_kernel_stats_t;
 
 /*
@@ -85,15 +112,16 @@ typedef struct memorystatus_kernel_stats {
 */
 
 typedef struct jetsam_snapshot_entry {
-	pid_t pid;
-	char name[MAXCOMLEN+1];
-	int32_t priority;
+	pid_t    pid;
+	char     name[MAXCOMLEN+1];
+	int32_t  priority;
 	uint32_t pages;
 	uint32_t max_pages;
 	uint32_t state;
 	uint32_t killed;
 	uint64_t user_data;
-	uint8_t uuid[16];
+	uint8_t  uuid[16];
+	uint32_t fds;
 } memorystatus_jetsam_snapshot_entry_t;
 
 typedef struct jetsam_snapshot {
@@ -110,26 +138,39 @@ typedef struct memorystatus_freeze_entry {
  	uint32_t pages;
 } memorystatus_freeze_entry_t;
 
+/* TODO - deprecate; see <rdar://problem/12969599> */
+#define kMaxSnapshotEntries 192
+
 /* State */
-#define kMemorystatusSuspended        0x1
-#define kMemorystatusFrozen           0x2
-#define kMemorystatusWasThawed        0x4
-#define kMemorystatusSupportsIdleExit 0x8
-#define kMemorystatusDirty            0x10
+#define kMemorystatusSuspended        0x01
+#define kMemorystatusFrozen           0x02
+#define kMemorystatusWasThawed        0x04
+#define kMemorystatusTracked          0x08
+#define kMemorystatusSupportsIdleExit 0x10
+#define kMemorystatusDirty            0x20
 
 /* Cause */
 enum {
 	kMemorystatusKilled = 1,
 	kMemorystatusKilledHiwat,
  	kMemorystatusKilledVnodes,
-  	kMemorystatusKilledVM,
+  	kMemorystatusKilledVMPageShortage,
+  	kMemorystatusKilledVMThrashing,
   	kMemorystatusKilledPerProcessLimit,
-	kMemorystatusKilledDiagnostic
+	kMemorystatusKilledDiagnostic,
+	kMemorystatusKilledIdleExit
+};
+
+/* Temporary, to prevent the need for a linked submission of ReportCrash */
+/* Remove when <rdar://problem/13210532> has been integrated */
+enum {
+	kMemorystatusKilledVM = kMemorystatusKilledVMPageShortage
 };
 
 /* Memorystatus control */
 #define MEMORYSTATUS_BUFFERSIZE_MAX 65536
 
+int memorystatus_get_level(user_addr_t level);
 int memorystatus_control(uint32_t command, int32_t pid, uint32_t flags, void *buffer, size_t buffersize);
 
 /* Commands */
@@ -137,7 +178,7 @@ int memorystatus_control(uint32_t command, int32_t pid, uint32_t flags, void *bu
 #define MEMORYSTATUS_CMD_SET_PRIORITY_PROPERTIES      2
 #define MEMORYSTATUS_CMD_GET_JETSAM_SNAPSHOT          3
 #define MEMORYSTATUS_CMD_GET_PRESSURE_STATUS          4
-#define MEMORYSTATUS_CMD_SET_JETSAM_HIGH_WATER_MARK   5
+#define MEMORYSTATUS_CMD_SET_JETSAM_HIGH_WATER_MARK   5 /* TODO: deprecate */
 
 
 typedef struct memorystatus_priority_properties {

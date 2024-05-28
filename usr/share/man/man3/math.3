@@ -32,7 +32,7 @@
 .\"     from: @(#)acos.3	5.1 (Berkeley) 5/2/91
 .\"	$Id: math.3,v 1.2 2003/08/17 20:36:47 scp Exp $
 .\"
-.Dd June 11, 2008
+.Dd August 16, 2012
 .Dt MATH 3
 .Os
 .Sh NAME
@@ -42,7 +42,7 @@
 .Fd #include <math.h>
 .Sh DESCRIPTION
 The header file math.h provides function prototypes and macros for working with
-C99 floating point values.
+floating point values.
 .Pp
 Each math.h function is provided in three variants: single, double and extended precision.
 The single and double precision variants operate on IEEE-754 single and double precision
@@ -227,13 +227,17 @@ are correctly rounded.
 .Fn exp2 "double"
 .br
 .Ft double
+.Fn __exp10 "double"
+.br
+.Ft double
 .Fn expm1 "double"
 .Pp
 .Fn exp "x" ,
 .Fn exp2 "x" ,
+.Fn __exp10 "x" ,
 and
 .Fn expm1 "x"
-return e**x, 2**x, and e**x - 1, respectively.
+return e**x, 2**x, 10**x, and e**x - 1, respectively.
 .Pp
 .Ft double
 .Fn log "double"
@@ -442,7 +446,7 @@ return the values of the error function and the complementary error function eva
 respectively.
 .Sh MATHEMATICAL CONSTANTS
 In addition to the functions listed above, math.h defines a number of useful constants,
-listed below.  All are defined as C99 floating-point constants.
+listed below.
 .nf
 .ta \w'M_2_SQRTPI'u+6
 .sp 1
@@ -470,4 +474,4 @@ and in single- and double-precision IEEE-754 floating-point formats on PowerPC m
 .Xr float 3 ,
 .Xr complex 3
 .Sh STANDARDS
-The <math.h> functions conform to the ISO/IEC 9899:1999(E) standard.
+The <math.h> functions conform to the ISO/IEC 9899:2011 standard.

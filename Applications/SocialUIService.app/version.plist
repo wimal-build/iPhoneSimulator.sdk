@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>EmbeddedSocial</string>
 	<key>BuildVersion</key>
-	<string>17</string>
+	<string>3</string>
 	<key>CFBundleShortVersionString</key>
 	<string>87</string>
 	<key>CFBundleVersion</key>
 	<string>87</string>
 	<key>ProjectName</key>
-	<string>EmbeddedSocial</string>
+	<string>EmbeddedSocialPlugins_Sim</string>
 	<key>SourceVersion</key>
-	<string>162008000000000</string>
+	<string>355002000000000</string>
 </dict>
 </plist>

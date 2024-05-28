@@ -57,9 +57,34 @@ returns -0.
 .Pp
 .Fn sqrt "x"
 returns a NaN and generates a domain error for x < 0.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn sqrt
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vsqrtf "vFloat x" ;
+.br
+.Ft vFloat
+.Fn vrsqrtf "vFloat x" ;
+.br
+.Ft void
+.Fn vvsqrtf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvsqrt "double *y" "const double *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvrsqrtf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvrsqrt "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn sqrt
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

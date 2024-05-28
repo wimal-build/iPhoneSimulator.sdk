@@ -5,23 +5,42 @@
 //
 //  vsh.xml
 //
-//  Copyright 2011 Apple Inc. All rights reserved.
+//  Copyright 2011-2012 Apple Inc. All rights reserved.
 //
 
+#ifndef GL_ES
+#define lowp
+#define mediump
+#define highp
+
+#define IN_VERT  in
+#define OUT_VERT out
+#define IN_FRAG  in
+#define OUT_FRAG out
+
+#define texture2D   texture
+#define textureCube texture
+#else
+#define IN_VERT  attribute
+#define OUT_VERT varying
+#define IN_FRAG  varying
+#define OUT_FRAG
+
 precision highp float;
+#endif
 
 #define MAX_LIGHTS   3
 
 /////////////////////////////////////////////////////////////////////////////////////
 // VERTEX ATTRIBUTES
 /////////////////////////////////////////////////////////////////////////////////////
-attribute vec4 a_position;
+IN_VERT         vec4 a_position;
 <codeblock label="use tex coord attrib" type="cond" class="EFFECT">
-attribute vec3 a_texCoord0;
-attribute vec3 a_texCoord1;
+IN_VERT         vec3 a_texCoord0;
+IN_VERT         vec3 a_texCoord1;
 </codeblock>
-attribute vec3 a_normal;
-attribute lowp vec4 a_color;
+IN_VERT         vec3 a_normal;
+IN_VERT lowp    vec4 a_color;
 
 /////////////////////////////////////////////////////////////////////////////////////
 // Global State
@@ -123,25 +142,25 @@ uniform fog_s fog;
 // Varyings
 /////////////////////////////////////////////////////////////////////////////////////
 
-varying lowp vec4  v_color;
+OUT_VERT lowp vec4  v_color;
 
 <codeblock label="v_position" type="cond" class="TEXTURE">
-varying highp vec4    v_position;
+OUT_VERT highp vec4    v_position;
 </codeblock>
 <codeblock label="v_positionEye" type="cond" class="EFFECT">
-varying highp vec4    v_positionEye;
+OUT_VERT highp vec4    v_positionEye;
 </codeblock>
 <codeblock label="v_normalEye" type="cond" class="EFFECT">
-varying highp vec3    v_normalEye;
+OUT_VERT highp vec3    v_normalEye;
 </codeblock>
 <codeblock label="texturing enabled" type="cond" class="EFFECT">
-varying highp vec3    v_texCoord[MAX_TEX_COORDS];
+OUT_VERT highp vec3    v_texCoord[MAX_TEX_COORDS];
 </codeblock>
 <codeblock label="light model two-sided per-vertex enabled" type="cond" class="EFFECT">
-varying lowp vec4     v_backColor;
+OUT_VERT lowp vec4     v_backColor;
 </codeblock>
 <codeblock label="fog enabled" type="cond" class="FOG">
-varying float         v_fog;
+OUT_VERT float         v_fog;
 </codeblock>
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -399,3 +418,4 @@ void main(void)
 
 }
 </codeblock>
+</codeblocks>

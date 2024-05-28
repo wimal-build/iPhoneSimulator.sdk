@@ -1,7 +1,10 @@
+#ifdef GL_ES
 precision mediump float;
+#endif
 
 uniform highp vec4 u_color;
 uniform highp float u_scale;
+uniform mediump float u_brightness;
 
 uniform lowp sampler2D u_textureSampler;
 varying vec4 v_color;
@@ -18,6 +21,7 @@ varying float v_height;
 void main() 
 {
     gl_FragColor        =   texture2D(u_textureSampler, v_texture) * v_color;
+    gl_FragColor.rbg   *=   u_brightness;
 
     vec4 skyColor       =   mix(u_skyBottomColor, u_skyTopColor, gl_FragCoord.y*u_screenHeight-u_skyOffset);
     

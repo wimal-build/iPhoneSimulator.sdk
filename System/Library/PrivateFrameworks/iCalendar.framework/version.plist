@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BuildVersion</key>
-	<string>366</string>
-	<key>CFBundleShortVersionString</key>
-	<string>6.0</string>
-	<key>CFBundleVersion</key>
-	<string>128.1</string>
-	<key>ProjectName</key>
+	<key>BuildAliasOf</key>
 	<string>iCalendar</string>
+	<key>BuildVersion</key>
+	<string>15</string>
+	<key>CFBundleShortVersionString</key>
+	<string>7.0</string>
+	<key>CFBundleVersion</key>
+	<string>161</string>
+	<key>ProjectName</key>
+	<string>iCalendar_Sim</string>
 	<key>SourceVersion</key>
-	<string>128001000000000</string>
+	<string>161000000000000</string>
 </dict>
 </plist>

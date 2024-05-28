@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.Maps.idslaunchnotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.Maps.idslaunchnotification</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.Maps.mapspushd</string>
+	<key>Program</key>
+	<string>/Applications/Maps.app/mapspushd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Maps.app/mapspushd</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.Maps.mapspushd</key>
+		<true/>
+		<key>com.apple.Maps.mapspushd.icloud</key>
+		<true/>
+	</dict>
+	<key>UserName</key>
+	<string>mobile</string>
+</dict>
+</plist>

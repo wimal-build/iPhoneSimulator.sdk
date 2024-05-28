@@ -62,6 +62,22 @@ returns ±infinity and raises the "divide-by-zero" floating-point exception.
 .Pp
 .Fn atanh "x"
 returns a NaN and raises the "invalid" floating-point exception for |x| > 1.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn atanh
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vatanhf "vFloat x" ;
+.br
+.Ft void
+.Fn vvatanhf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvatanh "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acosh 3 ,
 .Xr asinh 3 ,
@@ -70,4 +86,4 @@ returns a NaN and raises the "invalid" floating-point exception for |x| > 1.
 .Sh STANDARDS
 The
 .Fn atanh
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

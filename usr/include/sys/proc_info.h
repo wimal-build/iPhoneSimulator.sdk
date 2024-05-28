@@ -41,6 +41,7 @@
 #include <net/route.h>
 #include <netinet/in.h>
 #include <netinet/tcp.h>
+#include <mach/machine.h>
 
 __BEGIN_DECLS
 
@@ -93,6 +94,8 @@ struct proc_bsdshortinfo {
         gid_t                   pbsi_svgid;		/* current svgid on process */
         uint32_t                pbsi_rfu;		/* reserved for future use*/
 };
+
+
 
 
 /* pbi_flags values */
@@ -234,12 +237,18 @@ struct proc_fileinfo {
 	uint32_t		fi_status;	
 	off_t			fi_offset;
 	int32_t			fi_type;
-	int32_t			rfu_1;	/* reserved */
+	uint32_t		fi_guardflags;
 };
 
 /* stats flags in proc_fileinfo */
 #define PROC_FP_SHARED	1	/* shared by more than one fd */
 #define PROC_FP_CLEXEC	2	/* close on exec */
+#define PROC_FP_GUARDED	4	/* guarded fd */
+
+#define PROC_FI_GUARD_CLOSE		(1u << 0)
+#define PROC_FI_GUARD_DUP		(1u << 1)
+#define PROC_FI_GUARD_SOCKET_IPC	(1u << 2)
+#define PROC_FI_GUARD_FILEPORT		(1u << 3)
 
 /*
  * A copy of stat64 with static sized fields.
@@ -641,6 +650,10 @@ struct proc_fileportinfo {
 #define PROC_PIDTHREADID64INFO		15
 #define PROC_PIDTHREADID64INFO_SIZE	(sizeof(struct proc_threadinfo))
 
+#define PROC_PID_RUSAGE			16
+#define PROC_PID_RUSAGE_SIZE		0
+
+
 /* Flavors for proc_pidfdinfo */
 
 #define PROC_PIDFDVNODEINFO		1
@@ -705,7 +718,8 @@ struct proc_fileportinfo {
 /* proc_get_dirty() flags */
 #define PROC_DIRTY_TRACKED              0x1
 #define PROC_DIRTY_ALLOWS_IDLE_EXIT     0x2
-#define PROC_DIRTY_IS_DIRTY             0x4																																																																																																																																																																																																										
+#define PROC_DIRTY_IS_DIRTY             0x4
+
 
 
 __END_DECLS

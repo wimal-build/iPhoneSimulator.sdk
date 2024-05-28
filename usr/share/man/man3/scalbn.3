@@ -77,6 +77,16 @@ The
 function is deprecated.
 .Fn scalbn
 should be used instead.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn scalbn
+functions to SIMD vectors or arrays, using the following function provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vscalbf "vFloat x" "vSInt32" ;
 .Sh SEE ALSO
 .Xr math 3 ,
 .Xr ldexp 3
@@ -85,4 +95,4 @@ The
 .Fn scalbn
 and
 .Fn scalbln
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

@@ -58,6 +58,22 @@ returns 0.
 .Pp
 .Fn fabs "±infinity"
 returns +infinity.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn fabs
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vfabsf "vFloat x" ;
+.br
+.Ft void
+.Fn vvfabsf " float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvfabs "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr abs 3 ,
 .Xr ceil 3 ,
@@ -67,4 +83,4 @@ returns +infinity.
 .Sh STANDARDS
 The
 .Fn fabs
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

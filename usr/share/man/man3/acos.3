@@ -59,6 +59,22 @@ returns +0.
 .Pp
 .Fn acos "x"
 returns a NAN and raises the "invalid" floating-point exception for |x| > 1.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn acos
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vacosf "vFloat x" ;
+.br
+.Ft void
+.Fn vvacosf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvacos "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr sin 3 ,
 .Xr cos 3 ,
@@ -73,4 +89,4 @@ returns a NAN and raises the "invalid" floating-point exception for |x| > 1.
 .Sh STANDARDS
 The
 .Fn acos
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

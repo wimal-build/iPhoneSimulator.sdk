@@ -1,0 +1,41 @@
+<xmlui action="replace">
+    <page backgroundColor="255,255,255">
+        <navigationBar title="Pending Server UI" loadingTitle="">
+            <buttonBarItem position="right" label="Done" style="done" name="Dismiss"/>
+        </navigationBar>
+
+        <tableView separatorStyle="none" backgroundColor="255,255,255">
+            <headerView bubbles="YES" label="This feature is pending server implementation." labelNumberOfLines="2"/>
+            <section>
+                <htmlRow>
+                <![CDATA[
+                    <html>
+                    <head>
+                    <style>
+                    p
+                    {
+                    font-family: "HelveticaNeue-Light";
+                    text-align: center;
+                    font-size: 10pt;
+                    color: #666;
+                    margin-top: 10pt;
+                    margin-bottom: 10pt;
+                    }
+                    b
+                    {
+                    font-weight: inherit;
+                    color: #000;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    <p>Nightly development snapshots are available on the <b>TD2</b> server environment. Use GameKit Internal Settings to change servers.</p>
+                    <p>Until the new server UI is available, we recommend using a <b>Brighton</b> device to create and edit accounts.</p>
+                    </body>
+                    </html>
+                ]]>
+                </htmlRow>
+            </section>
+        </tableView>
+    </page>
+</xmlui>

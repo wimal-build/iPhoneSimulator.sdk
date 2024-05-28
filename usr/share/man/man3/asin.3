@@ -61,6 +61,22 @@ returns ±0.
 .Pp
 .Fn asin "x"
 returns a NAN and raises the "invalid" floating-point exception for |x| > 1.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn asin
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vasinf "vFloat x" ;
+.br
+.Ft void
+.Fn vvasinf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvasin "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acos 3 ,
 .Xr atan 3 ,
@@ -75,4 +91,4 @@ returns a NAN and raises the "invalid" floating-point exception for |x| > 1.
 .Sh STANDARDS
 The
 .Fn asin
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

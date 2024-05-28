@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>MobileDataDetectorsUI</string>
 	<key>BuildVersion</key>
-	<string>739</string>
+	<string>75</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2.0</string>
 	<key>CFBundleVersion</key>
-	<string>85</string>
+	<string>105</string>
 	<key>ProjectName</key>
-	<string>MobileDataDetectorsUI</string>
+	<string>MobileDataDetectorsUI_Sim</string>
 	<key>SourceVersion</key>
-	<string>85000000000000</string>
+	<string>105000000000000</string>
 </dict>
 </plist>

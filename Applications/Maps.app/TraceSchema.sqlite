@@ -31,9 +31,11 @@ start_data              BLOB,               -- PB serialized SearchResultRepr
 end_data                BLOB,               -- PB serialized SearchResultRepr
 simulation              INTEGER,
 cl_mapmatch             INTEGER,            -- Whether CL MapMatching is enabled
-original_version        INTEGER
+original_version        INTEGER,
+initial_course          NUMERIC,
+directions_url          TEXT
 );
-
+        
 CREATE TABLE locations
 (
 id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
@@ -53,7 +55,15 @@ raw_course          NUMERIC,
 course_accuracy     NUMERIC,
 type                INTEGER,
 error_data          BLOB,           -- PB Serialized NSError
-event_type          INTEGER
+event_type          INTEGER,
+corrected_latitude  NUMERIC,
+corrected_longitude NUMERIC,
+corrected_course    NUMERIC,
+match_type          NUMERIC,
+motion_type         INTEGER,
+motion_exit_type    INTEGER,
+motion_confidence   INTEGER,
+active_transport_type INTEGER DEFAULT 4 -- default is the unknown transport type
 );
 
 CREATE TABLE directions

@@ -1,0 +1,4 @@
+(if (or (entitlement "com.apple.private.imcore.spi.database-access")
+        (entitlement "com.apple.private.imcore.imdpersistence.data-detection-access")
+        (entitlement "com.apple.private.imcore.imdpersistence.database-access"))
+   (allow mach-lookup (global-name "com.apple.imdpersistence.IMDPersistenceAgent")))

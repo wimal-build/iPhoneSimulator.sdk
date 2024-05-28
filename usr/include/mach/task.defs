@@ -417,4 +417,23 @@ routine	task_set_state(
 		flavor		: thread_state_flavor_t;
 		new_state	: thread_state_t);
 
+/*
+ * Change the task's physical footprint limit (in MB).
+ */
+routine task_set_phys_footprint_limit(
+		task		: task_t;
+		new_limit	: int;
+	out old_limit	: int);
+
 /* vim: set ft=c : */
+
+routine task_suspend2(
+		target_task : task_t;
+	out suspend_token : task_suspension_token_t);
+
+routine task_resume2(
+		suspend_token : task_suspension_token_t);
+
+routine task_purgable_info(
+		task 		: task_t;
+	out	stats		: task_purgable_info_t);

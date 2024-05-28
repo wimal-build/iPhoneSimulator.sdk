@@ -117,6 +117,22 @@ r	:= hypot(x,y);  ... := \(sr(x\u\s82\s10\d+y\u\s82\s10\d)
 \(*h	:= atan2(y,x).
 .\}
 .Ed
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn atan2
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn atan2f "vFloat y" "vFloat x";
+.br
+.Ft void
+.Fn vvatan2f "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvatan2 "double *z" "const double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acos 3 ,
 .Xr asin 3 ,
@@ -131,4 +147,4 @@ r	:= hypot(x,y);  ... := \(sr(x\u\s82\s10\d+y\u\s82\s10\d)
 .Sh STANDARDS
 The
 .Fn atan2
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

@@ -113,9 +113,35 @@ A domain error occurs if x is finite and negative and y is finite and not an int
 A domain error can occur if x is 0 and y less than or equal to 0.
 .Pp
 Range errors may occur.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn pow
+functions to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vpowf "vFloat x" "vFloat y" ;
+.br
+.Ft vFloat
+.Fn vpowf "vFloat x" "vSInt32 y" ;
+.br
+.Ft void
+.Fn vvpowf "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvpow "double *z" "const double *y" "const double *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvpowsf "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvpows "double *z" "const double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
+.Xr exp 3
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn pow
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

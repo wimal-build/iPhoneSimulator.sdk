@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildAliasOf</key>
+	<string>AddressBookUI</string>
 	<key>BuildVersion</key>
-	<string>145</string>
+	<string>4</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>1295.2</string>
+	<string>1553</string>
 	<key>ProjectName</key>
-	<string>AddressBookUI</string>
+	<string>AddressBookUI_Sim</string>
 	<key>SourceVersion</key>
-	<string>1295002000000000</string>
+	<string>1553000000000000</string>
 </dict>
 </plist>

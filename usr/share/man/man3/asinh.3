@@ -58,6 +58,22 @@ returns ±0.
 .Pp
 .Fn asinh "±infinity"
 returns ±infinity.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn asinh
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vasinhf "vFloat x" ;
+.br
+.Ft void
+.Fn vvasinhf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvasinh "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acosh 3 ,
 .Xr atanh 3 ,
@@ -66,4 +82,4 @@ returns ±infinity.
 .Sh STANDARDS
 The
 .Fn asinh
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

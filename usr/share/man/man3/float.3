@@ -234,16 +234,8 @@ corresponds to IEEE-754 double precision.  Thus, the values of the
 macros are identical to those of the corresponding
 .Fa DBL_*
 macros.
-.Sh DEFAULT FLOATING-POINT ENVIRONMENT ON IOS
-Unlike OS X, the default floating-point environment on iOS sets the processor
-in flush-to-zero mode.  In this mode, any denormal values are treated as zero
-when they appear as an input to a floating-point operation, and any denormal
-results are replaced with zero.  If IEEE-754 gradual underflow is required, it
-can be enabled by clearing the flush-to-zero bit of the floating-point
-environment using the functions provided in <fenv.h>.  Note, however, that this
-will incur some performance penalty when denormal values are encountered.
 .Sh SEE ALSO
 .Xr math 3 ,
 .Xr complex 3
 .Sh STANDARDS
-Floating-point arithmetic conforms to the ISO/IEC 9899:1999(E) standard.
+Floating-point arithmetic conforms to the ISO/IEC 9899:2011 standard.

@@ -2,21 +2,17 @@
 //  MKUserLocation.h
 //  MapKit
 //
-//  Copyright (c) 2009-2012, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <MapKit/MKAnnotation.h>
 #import <MapKit/MKFoundation.h>
+#import <MapKit/MKAnnotation.h>
 
 @class CLLocation;
 @class MKUserLocationInternal;
 
-MK_CLASS_AVAILABLE(NA, 3_0)
-@interface MKUserLocation : NSObject <MKAnnotation> {
-  @private
-    MKUserLocationInternal *_internal;
-}
+MK_CLASS_AVAILABLE(10_9, 3_0)
+@interface MKUserLocation : NSObject <MKAnnotation>
 
 // Returns YES if the user's location is being updated.
 @property (readonly, nonatomic, getter=isUpdating) BOOL updating;
@@ -25,7 +21,7 @@ MK_CLASS_AVAILABLE(NA, 3_0)
 @property (readonly, retain, nonatomic) CLLocation *location;
 
 // Returns nil if not in MKUserTrackingModeFollowWithHeading
-@property (readonly, nonatomic, retain) CLHeading *heading NS_AVAILABLE(NA, 5_0);
+@property (readonly, nonatomic, retain) CLHeading *heading NS_AVAILABLE(10_9, 5_0);
 
 // The title to be displayed for the user location annotation.
 @property (nonatomic, copy) NSString *title;

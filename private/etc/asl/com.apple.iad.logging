@@ -1,0 +1,3 @@
+? [A= Facility com.apple.iad] file /var/mobile/Library/Logs/com.apple.iad.log rotate=seq file_max=4M all_max=16M compress format=$((Time)(local.6))\ $(Sender)[$(PID)]\ :\ $(Message)
+? [A= Facility com.apple.iad] [> Level error] claim
+

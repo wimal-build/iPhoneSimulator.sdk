@@ -1,5 +1,6 @@
-
+#ifdef GL_ES
 precision highp float;
+#endif
 
 uniform mat4 u_matrix;
 uniform vec4 u_color;

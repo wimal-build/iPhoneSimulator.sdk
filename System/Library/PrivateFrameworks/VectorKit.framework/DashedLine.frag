@@ -6,6 +6,8 @@ uniform lowp sampler2D u_textureSampler;
 varying highp vec2 v_texture;
 varying highp float v_distance;
 
+// Ideally this would be based on capability: <rdar://problem/12550842> Need capabilities based preprocess switching for shaders.
+#ifdef GL_ES
 #extension GL_EXT_shader_framebuffer_fetch : require
 
 void main() 
@@ -47,7 +49,17 @@ void main()
     else {
         // fall through case - don't do anything if the framebuffer has been blended
         // and the alpha there is larger than mine
-        gl_FragColor.a = framebuffer.a;
-        gl_FragColor.rgb = framebuffer.rgb*0.999999;
+        gl_FragColor = framebuffer;
     }
 }
+
+#else
+
+void main()
+{
+    // OS X lacks the framebuffer_fetch extension, we we must do the blending on the CPU
+    lowp vec4 pattern = texture2D(u_textureSampler, vec2(v_texture.x, v_distance));
+    gl_FragColor = vec4(u_color.rgb, u_color.a * pattern.r);
+}
+
+#endif

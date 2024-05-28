@@ -2,13 +2,14 @@
 //  UISlider.h
 //  UIKit
 //
-//  Copyright (c) 2006-2012, Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2013, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIControl.h>
 #import <UIKit/UIKitDefines.h>
+#import <QuartzCore/QuartzCore.h>
 
 @class UIImageView, UIImage;
 
@@ -44,6 +45,23 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISlider : UIControl <NSCoding> {
     UIColor *_minTintColor;
     UIColor *_maxTintColor;
     UIColor *_thumbTintColor;
+    
+    
+    // look neue support
+    CAShapeLayer *_trackMaskLayer;
+    UIView *_trackContainerView;
+    UIView *_thumbViewNeue;
+    CAShapeLayer *_thumbViewNeueShape;
+    BOOL _useLookNeue;
+    
+    
+    BOOL _trackIsArtworkBased; // NO by default // will get set to YES when the user specify an artwork for BOTH the min and the max value trackImages
+    BOOL _thumbIsArtworkBased; // NO by default // will get set to YES when the user specify an artwork the thumb image
+    
+    UIView *_minTrackViewNeue;
+    UIView *_maxTrackViewNeue;
+    CAGradientLayer *_maxTrackGradientLayer;
+    BOOL _maxColorIsValid;
 }
 
 @property(nonatomic) float value;                                 // default 0.0. this value will be pinned to min/max

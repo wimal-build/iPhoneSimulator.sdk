@@ -61,6 +61,22 @@ returns ±0.
 .Pp
 .Fn atan "±infinity"
 returns ±pi/2
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn atan
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vatanf "vFloat x" ;
+.br
+.Ft void
+.Fn vvatanf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvatan "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acos 3 ,
 .Xr asin 3 ,
@@ -74,4 +90,4 @@ returns ±pi/2
 .Xr math 3
 The
 .Fn atan
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

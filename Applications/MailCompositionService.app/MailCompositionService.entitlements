@@ -6,20 +6,22 @@
 	<true/>
 	<key>platform-application</key>
 	<true/>
-    <key>seatbelt-profiles</key>
-    <array>
-        <string>MailCompositionService</string>
-    </array>
+	<key>seatbelt-profiles</key>
+	<array>
+		<string>MailCompositionService</string>
+	</array>
 	<key>com.apple.mobilemail.mailservices</key>
 	<true/>
-	<key>com.apple.private.tcc.allow</key>
+	<key>com.apple.private.tcc.allow.overridable</key>
 	<array>
 		<string>kTCCServiceAddressBook</string>
 		<string>kTCCServicePhotos</string>
 	</array>
-	<key>com.apple.cloudrecents</key>
+	<key>com.apple.private.corerecents</key>
 	<true/>
 	<key>com.apple.bulletinboard.utilities</key>
+	<true/>
+	<key>com.apple.private.accounts.allaccounts</key>
 	<true/>
 </dict>
 </plist>

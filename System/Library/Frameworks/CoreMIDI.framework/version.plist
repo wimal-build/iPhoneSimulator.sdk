@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BuildVersion</key>
-	<string>560</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.9</string>
-	<key>CFBundleVersion</key>
-	<string>78</string>
-	<key>ProjectName</key>
+	<key>BuildAliasOf</key>
 	<string>EmbeddedCoreMIDI</string>
+	<key>BuildVersion</key>
+	<string>206</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.10</string>
+	<key>CFBundleVersion</key>
+	<string>88</string>
+	<key>ProjectName</key>
+	<string>EmbeddedCoreMIDI_Sim</string>
 	<key>SourceVersion</key>
-	<string>83001000000000</string>
+	<string>92000000000000</string>
 </dict>
 </plist>

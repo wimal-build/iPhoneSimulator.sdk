@@ -1,38 +1,6 @@
-.\" Copyright (c) 1985, 1991 Regents of the University of California.
+.\" Copyright (c) 2012 Apple Inc
 .\" All rights reserved.
-.\"
-.\" Redistribution and use in source and binary forms, with or without
-.\" modification, are permitted provided that the following conditions
-.\" are met:
-.\" 1. Redistributions of source code must retain the above copyright
-.\"    notice, this list of conditions and the following disclaimer.
-.\" 2. Redistributions in binary form must reproduce the above copyright
-.\"    notice, this list of conditions and the following disclaimer in the
-.\"    documentation and/or other materials provided with the distribution.
-.\" 3. All advertising materials mentioning features or use of this software
-.\"    must display the following acknowledgement:
-.\"	This product includes software developed by the University of
-.\"	California, Berkeley and its contributors.
-.\" 4. Neither the name of the University nor the names of its contributors
-.\"    may be used to endorse or promote products derived from this software
-.\"    without specific prior written permission.
-.\"
-.\" THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
-.\" ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-.\" IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-.\" ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
-.\" FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-.\" DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-.\" OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-.\" HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-.\" LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-.\" OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-.\" SUCH DAMAGE.
-.\"
-.\"     from: @(#)exp.3	6.12 (Berkeley) 7/31/91
-.\"	$Id: exp.3,v 1.4 2004/12/20 21:35:45 scp Exp $
-.\"
-.Dd December 11, 2006
+.Dd August 16, 2012
 .Dt EXP 3
 .Os BSD 4
 .Sh NAME
@@ -42,24 +10,28 @@
 .Nd exponential functions
 .Sh SYNOPSIS
 .Fd #include <math.h>
+.Ft float
+.Fn expf "float x"
 .Ft double
 .Fn exp "double x"
 .Ft long double
 .Fn expl "long double x"
 .Ft float
-.Fn expf "float x"
+.Fn exp2f "float x"
 .Ft double
 .Fn exp2 "double x"
 .Ft long double
 .Fn exp2l "long double x"
 .Ft float
-.Fn exp2f "float x"
+.Fn expm1f "float x"
 .Ft double
 .Fn expm1 "double x"
 .Ft long double
 .Fn expm1l "long double x"
 .Ft float
-.Fn expm1f "float x"
+.Fn __exp10f "float x"
+.Ft double
+.Fn __exp10 "double x"
 .Sh DESCRIPTION
 The
 .Fn exp
@@ -71,9 +43,15 @@ The
 function computes 2**x, the base-2 exponential of
 .Fa x .
 .Pp
+The
+.Fn __exp10
+function computes 10**x; it is not defined in the C standard, and therefore
+may not be portable to other platforms.  It is provided as a convenience to
+programmers because it may be computed more efficiently than pow(10,x).
+.Pp
 If
 .Fa x
-is very nearly zero, then the common expression
+is nearly zero, then the common expression
 .Fn exp "x"
 - 1.0
 will suffer from catastrophic cancellation and the result will have little or
@@ -84,6 +62,56 @@ of significant loss of precision.  If you find yourself using this function,
 you are likely to also be interested in the 
 .Fn log1p
 function.
+.Pp
+Note that computations numerically equivalent to
+.Fn exp "x"
+- 1.0
+are often hidden in more complicated expressions; some amount of algebraic
+manipulation may be necessary to take advantage of the
+.Fn expm1
+function.  Consider the following example, abstracted from a developer's
+actual production code in a bug report:
+.Bd -literal -offset indent
+double z = exp(-x/y)*(x*x/y/y + 2*x/y + 2) - 2
+.Ed
+.Pp
+When 
+.Fa x
+is small relative to
+.Fa y ,
+this expression is approximately equal to:
+.Bd -literal -offset indent
+double z = 2*(exp(-x/y) - 1)
+.Ed
+.Pp
+and all precision of the result is lost in the computation due to catastrophic
+cancellation.  The developer was aware that they were losing precision, but
+didn't know what to do about it.  To remedy the situation, we do a little
+algebra and re-write the expression to take advantage of the
+.Fn expm1
+function:
+.Bd -literal -offset indent
+  exp(-x/y)*(x*x/y/y + 2*x/y + 2) - 2
+= (2*exp(-x/y) - 2) + exp(-x/y)*((x*x)/(y*y) + 2*x/y)
+.Ed
+.Pp
+This transformation allows the result to be computed to a high degree of 
+accuracy as follows:
+.Bd -literal -offset indent
+const double r = x/y;
+const double emrm1 = expm1(-r);
+double z = 2.0*emrm1 + (1.0 + emrm1)*(2.0 + r)*r;
+.Ed
+.Pp
+It is not always easy to spot such opportunities for improvement; if an
+expression involving 
+.Fn exp
+seems to be suffering from an undue loss of accuracy, try a few simple
+algebraic operations to see if you can identify a factor with the form
+.Fn exp "x"
+- 1.0, and substitute
+.Fn expm1 "x"
+in its place.
 .Sh SPECIAL VALUES
 .Fn exp "±0"
 and
@@ -110,14 +138,45 @@ returns -1.
 returns +infinity.
 .Pp
 For all these functions, a range error occurs if the magnitude of x is too large.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn exp
+functions to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vexpf "vFloat x" ;
+.br
+.Ft vFloat
+.Fn vexpm1f "vFloat x" ;
+.br
+.Ft void
+.Fn vvexpf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvexp "double *y" "const double *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvexpm1f "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvexpm1 "double *y" "const double *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvexp2f "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvexp2 "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
-.Xr math 3 ,
-.Xr log1p 3
+.Xr log 3 ,
+.Xr pow 3 ,
+.Xr math 3
 .Sh STANDARDS
 The
-.Fn exp
-,
-.Fn exp2
-, and
+.Fn exp ,
+.Fn exp2 ,
+and
 .Fn expm1
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

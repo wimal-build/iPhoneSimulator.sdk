@@ -1,6 +1,6 @@
-.\" Copyright (c) 2006 Apple Computer
+.\" Copyright (c) 2006-2012 Apple Inc.
 .\"
-.Dd December 11, 2006
+.Dd August 16, 2012
 .Dt COMPLEX 3
 .Os
 .Sh NAME
@@ -9,8 +9,8 @@
 .Sh SYNOPSIS
 .Fd #include <complex.h>
 .Sh DESCRIPTION
-The header file complex.h provides function prototypes and macros for working with C99 complex
-floating-point values.  The functions conform to the ISO/IEC 9899:1999(E) standard.  In particular,
+The header file complex.h provides function prototypes and macros for working with complex
+floating-point values.  The functions conform to the ISO/IEC 9899:2011 standard.  In particular,
 arguments with infinite real or imaginary parts are regarded as infinities, even if the other
 part is a NaN.
 .Pp
@@ -25,6 +25,44 @@ floating-point numbers from two real floating-point numbers.  For example:
 double complex z = 1.0 + 1.0 * I;  // z = 1 + i
 .Ed
 .Pp
+Note however that certain complex values cannot be initialized using this
+technique, because
+.Fa I
+is actually a complex value.  For example:
+.Bd -literal -offset indent
+double complex z = 0.0 + INFINITY * I;
+.Ed
+.Pp
+does not produce the result that one might expect; because of the promotion
+rules, it is evaluated like this:
+.Bd -literal -offset indent
+0.0 + INFINITY * I = 0.0 + inf*(0.0,1.0)
+                   = 0.0 + (inf,0.0)*(0.0,1.0)
+                   = 0.0 + (inf*0.0 - 1.0*0.0, inf*1.0 + 0.0*0.0)
+                   = 0.0 + (NaN - 0.0, inf + 0.0)
+                   = 0.0 + (NaN, inf)
+                   = (0.0, 0.0) + (NaN, inf)
+                   = (0.0 + NaN, 0.0 + inf)
+                   = (NaN, inf)
+.Ed
+.Pp
+For this reason, and to allow the initialization of complex objects with static
+or thread storage duration, C11 introduced the following macros:
+.Pp
+.Ft double complex
+.Fn CMPLX "double x" "double y"
+.br
+.Ft float complex
+.Fn CMPLXF "float x" "float y"
+.br
+.Ft long double complex
+.Fn CMPLXL "long double x" "long double y"
+.Pp
+These produce a complex number with real part having the converted value
+.Fa x
+and imaginary part
+.Fa y .
+.Pp
 Each of the functions that use complex floating-point values are provided in single, double,
 and extended precision; the double precision prototypes are listed here.  The man pages for the
 individual functions provide more details on their use, special cases, and prototypes for their
@@ -34,7 +72,7 @@ The double-precision functions defined in complex.h are:
 .Pp 
 .Ft double
 .Fn creal "double complex z"
-.Pp
+.br
 .Ft double
 .Fn cimag "double complex z"
 .Pp
@@ -46,7 +84,7 @@ respectively, as real floating-point numbers.
 .Pp
 .Ft double
 .Fn cabs "double complex z"
-.Pp
+.br
 .Ft double
 .Fn carg "double complex z"
 .Pp
@@ -73,7 +111,7 @@ takes a complex floating-point number and returns its complex conjugate.
 .Pp
 .Fn cproj
 takes a complex floating-point number and returns its projection onto the
-Riemann sphere, as defined in C99.  For non-infinite inputs, the return value is
+Riemann sphere, as defined in the C standard.  For non-infinite inputs, the return value is
 equal to the input value.
 .Pp
 .Ft double complex
@@ -85,7 +123,7 @@ the negative real axis.
 .Pp
 .Ft double complex
 .Fn cexp "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn clog "double complex z"
 .Pp
@@ -106,10 +144,10 @@ with a branch cut for the first parameter along the negative real axis.
 .Pp
 .Ft double complex
 .Fn csin "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn ccos "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn ctan "double complex z"
 .Pp
@@ -121,10 +159,10 @@ take a complex floating-point number and return its sine, cosine, and tangent, r
 .Pp
 .Ft double complex
 .Fn casin "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn cacos "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn catan "double complex z"
 .Pp
@@ -148,10 +186,10 @@ on the imaginary axis.
 .Pp
 .Ft double complex
 .Fn csinh "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn ccosh "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn ctanh "double complex z"
 .Pp
@@ -163,10 +201,10 @@ take a complex floating-point number and return its hyperbolic sine, cosine, and
 .Pp
 .Ft double complex
 .Fn casinh "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn cacosh "double complex z"
-.Pp
+.br
 .Ft double complex
 .Fn catanh "double complex z"
 .Pp
@@ -214,4 +252,4 @@ real axis.  For example, csqrt(-1 + 0i) is 0 + i, whereas sqrt(-1) is NaN.
 .Xr ctanh 3 ,
 .Xr math 3
 .Sh STANDARDS
-The <complex.h> functions conform to ISO/IEC 9899:1999(E).
+The <complex.h> functions conform to ISO/IEC 9899:2011.

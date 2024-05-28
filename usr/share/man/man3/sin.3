@@ -59,6 +59,31 @@ returns ±0.
 .Pp
 .Fn sin "±infinity"
 returns a NaN and raises the "invalid" floating-point exception.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn sin
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vsinf "vFloat x" ;
+.br
+.Ft vFloat
+.Fn vsincosf "vFloat x" "vFloat *c" ;
+.br
+.Ft void
+.Fn vvsinf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvsin "double *y" "const double *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvsincosf "float *s" "float *c" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvsincos "double *s" "double *c" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acos 3 ,
 .Xr asin 3 ,
@@ -73,4 +98,4 @@ returns a NaN and raises the "invalid" floating-point exception.
 .Sh STANDARDS
 The
 .Fn sin
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

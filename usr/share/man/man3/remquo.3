@@ -61,10 +61,20 @@ x/y. It stores this signed value in the object pointed to by quo.
 .Sh SPECIAL VALUES
 .Fn remquo "x, y, quo"
 returns a NaN and raises the "invalid" floating-point exception if x is infinite or y is 0.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn remquo
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vremquo "vFloat x" "vFloat y" "vUInt32 *q" ;
 .Sh SEE ALSO
 .Xr math 3 ,
 .Xr remainder 3
 .Sh STANDARDS
 The
 .Fn remquo
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

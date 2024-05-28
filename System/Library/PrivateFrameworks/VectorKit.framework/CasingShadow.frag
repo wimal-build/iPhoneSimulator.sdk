@@ -1,9 +1,12 @@
+#ifdef GL_ES
 precision mediump float;
+#endif
 
 uniform float u_ramp;
 
 varying vec2 v_texture;
 varying float v_alpha;
+varying vec4 v_color;
 
 // Fog support
 uniform float u_screenHeight;
@@ -14,8 +17,7 @@ varying float v_fogCoordinate;
 
 void main() 
 {
-    vec4 shadowColor = vec4(0.0,0.0,0.0,1.0);
     vec4 skyColor = mix(u_skyBottomColor, u_skyTopColor, gl_FragCoord.y*u_screenHeight-u_skyOffset);
-    gl_FragColor.rgb = mix(skyColor.rgb, shadowColor.rgb, clamp(v_fogCoordinate, 0.0, 1.0));
+    gl_FragColor.rgb = mix(skyColor.rgb, v_color.rgb, clamp(v_fogCoordinate, 0.0, 1.0));
     gl_FragColor.a = (v_texture.s*v_texture.s*u_ramp)*v_alpha;
 }

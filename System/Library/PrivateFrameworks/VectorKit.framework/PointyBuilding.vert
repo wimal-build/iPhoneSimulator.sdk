@@ -1,14 +1,18 @@
+#ifdef GL_ES
 precision highp float;
+#endif
 
 uniform mat4 u_matrix;
+uniform mediump float u_brightness;
 uniform vec3 u_cameraPositionInTileSpace;
-
 uniform float u_scale;
 uniform float u_alpha;
+uniform vec4 u_facadeColor;
+uniform vec4 u_topColor;
 
 attribute vec4 a_vertex;    // position
 attribute vec3 a_normal;
-attribute vec4 a_color;
+attribute float a_isFacade;
 
 varying vec4 v_color;
 
@@ -58,7 +62,7 @@ void main()
     
     height  =   scaled_vertex.z / bottomGradientHeight;
         
-    v_color = a_color;
+    v_color = u_facadeColor*a_isFacade + u_topColor*(1.0 - a_isFacade);
     v_color.rgb = v_color.rgb * (
     
             // Minimum of the scene brightness and
@@ -73,7 +77,7 @@ void main()
                 
                 // The ambient light contribution
                  ambientLightColor));
-                 
+    v_color.rgb *= u_brightness;
     v_color.a *= u_alpha;
     
     v_fogCoordinate = dot(u_fogSlope, a_vertex) + u_fogOffset;

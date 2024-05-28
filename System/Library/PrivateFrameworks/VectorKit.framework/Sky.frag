@@ -1,4 +1,6 @@
+#ifdef GL_ES
 precision lowp float;
+#endif
 
 uniform highp float u_skyStartOffset;
 uniform vec4 u_horizon;

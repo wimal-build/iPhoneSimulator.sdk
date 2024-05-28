@@ -58,13 +58,28 @@ returns ±0.
 .Pp
 .Fn floor "±infinity"
 returns ±infinity.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn floor
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vfloorf "vFloat x" ;
+.br
+.Ft void
+.Fn vvfloorf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvfloor "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
-.Xr abs 3 ,
 .Xr ceil 3 ,
-.Xr fabs 3 ,
-.Xr rint 3 ,
+.Xr round 3 ,
+.Xr trunc 3 ,
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn floor
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

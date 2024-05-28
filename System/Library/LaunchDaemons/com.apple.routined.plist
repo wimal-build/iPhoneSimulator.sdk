@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.locationd.appreset</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.appreset</string>
+			</dict>
+			<key>com.apple.mobile.keybagd.lock_status</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobile.keybagd.lock_status</string>
+			</dict>
+			<key>SBNotificationCenterDidPresent</key>
+			<dict>
+				<key>Notification</key>
+				<string>SBNotificationCenterDidPresent</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<false/>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.routined.registration</key>
+		<true/>
+		<key>com.apple.routined.bulletinboard</key>
+		<true/>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.routined</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/routined</string>
+	</array>
+</dict>
+</plist>

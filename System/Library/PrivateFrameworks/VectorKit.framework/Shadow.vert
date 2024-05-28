@@ -11,6 +11,7 @@ attribute vec3 a_normal;
 attribute float a_distance;
 
 varying vec2 v_texture;
+varying vec4 v_color;
 varying float v_alpha;
 varying float v_distance;
 
@@ -24,9 +25,13 @@ uniform highp float u_fogOffset;
 void main() 
 {
     gl_Position = u_matrix * vec4(a_vertex.xyz + a_normal * u_width * max(0.0, -dot(a_normal, u_cameraDirection)), 1.0);
+
     v_texture = a_texture;
+
+    v_color = vec4(0.0,0.0,0.0,1.0); // apply *= u_brightness, if modified
+
     v_distance = a_distance;
-    
+
     vec4 pos = u_modelViewMatrix * a_vertex;
     float t = clamp(-pos.z*u_fade,0.0,1.0);
     v_alpha = clamp((0.5*cos(3.14*t)+0.5), 0.0, u_alpha);

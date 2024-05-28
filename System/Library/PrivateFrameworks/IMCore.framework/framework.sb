@@ -1,0 +1,26 @@
+(if (or (entitlement "com.apple.imagent")
+        (entitlement "com.apple.private.imagent")
+        (entitlement "com.apple.private.imcore.imagent")
+        (entitlement "com.apple.imagent.av")
+        (entitlement "com.apple.imagent.chat"))
+   (allow mach-lookup (global-name "com.apple.imagent.desktop.auth")))
+
+(if (or (entitlement "com.apple.imagent")
+        (entitlement "com.apple.private.imagent")
+        (entitlement "com.apple.private.imcore.imagent")
+        (entitlement "com.apple.imagent.av")
+        (entitlement "com.apple.imagent.chat"))
+   (allow mach-lookup (global-name "com.apple.imagent.embedded.auth")))
+
+(if (or (entitlement "com.apple.private.ids.registration")
+        (entitlement "com.apple.private.ids.messaging")
+        (entitlement "com.apple.private.ids.idquery-cache"))
+   (allow mach-lookup (global-name "com.apple.identityservicesd.embedded.auth")))
+
+(if (or (entitlement "com.apple.private.ids.registration")
+        (entitlement "com.apple.private.ids.messaging")
+        (entitlement "com.apple.private.ids.idquery-cache"))
+   (allow mach-lookup (global-name "com.apple.identityservicesd.desktop.auth")))
+   
+(allow mach-lookup (global-name "com.apple.identityservicesd.idquery.embedded.auth"))
+(allow mach-lookup (global-name "com.apple.identityservicesd.idquery.desktop.auth"))

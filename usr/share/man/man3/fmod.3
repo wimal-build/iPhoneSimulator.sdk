@@ -73,9 +73,25 @@ returns a NaN and raises the "invalid" floating-point exception for x infinite o
 .Pp
 .Fn fmod "x, ±infinity"
 returns x for x not infinite.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn fmod
+functions to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vfmodf "vFloat x" "vFloat y" ;
+.br
+.Ft void
+.Fn vvfmodf "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvfmod "double *z" "const double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn fmod
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

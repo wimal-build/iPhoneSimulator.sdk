@@ -1,4 +1,6 @@
+#ifdef GL_ES
 precision mediump float;
+#endif
 
 uniform mat4 u_matrix;
 uniform float u_halfWidth;

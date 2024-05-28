@@ -76,6 +76,15 @@ enum {
 #define OSThermalNotificationLevelUrgent OSThermalNotificationLevelAppTerminate
 #define OSThermalNotificationLevelCritical OSThermalNotificationLevelDeviceRestart
 
+/* Define pressure levels usable by OSThermalPressureLevel */
+typedef enum {
+	kOSThermalPressureLevelNominal = 0,
+	kOSThermalPressureLevelModerate,
+	kOSThermalPressureLevelHeavy,
+	kOSThermalPressureLevelTrapping,
+	kOSThermalPressureLevelSleeping
+} OSThermalPressureLevel;
+
 /*
 ** Simple polling interface to detect current thermal level
 */
@@ -99,6 +108,12 @@ extern const char * const kOSThermalNotificationAlert __OSX_AVAILABLE_STARTING(_
 */
 
 extern const char * const kOSThermalNotificationDecision __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_6_0);
+
+/*
+** External notify(3) string for thermal pressure level notification
+*/
+
+extern const char * const kOSThermalNotificationPressureLevelName __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_7_0);
 
 
 __END_DECLS

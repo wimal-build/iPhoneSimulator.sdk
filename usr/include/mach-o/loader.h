@@ -290,6 +290,13 @@ struct load_command {
 #define LC_FUNCTION_STARTS 0x26 /* compressed table of function start addresses */
 #define LC_DYLD_ENVIRONMENT 0x27 /* string for dyld to treat
 				    like environment variable */
+#define LC_MAIN (0x28|LC_REQ_DYLD) /* replacement for LC_UNIXTHREAD */
+#define LC_DATA_IN_CODE 0x29 /* table of non-instructions in __text */
+#define LC_SOURCE_VERSION 0x2A /* source version used to build binary */
+#define LC_DYLIB_CODE_SIGN_DRS 0x2B /* Code signing DRs copied from linked dylibs */
+#define	LC_ENCRYPTION_INFO_64 0x2C /* 64-bit encrypted segment information */
+#define LC_LINKER_OPTION 0x2D /* linker options in MH_OBJECT files */
+
 
 /*
  * A variable length string in a load command is represented by an lc_str
@@ -1149,7 +1156,8 @@ struct rpath_command {
  */
 struct linkedit_data_command {
     uint32_t	cmd;		/* LC_CODE_SIGNATURE, LC_SEGMENT_SPLIT_INFO,
-                                   or LC_FUNCTION_STARTS */
+                                   LC_FUNCTION_STARTS, LC_DATA_IN_CODE,
+				   or LC_DYLIB_CODE_SIGN_DRS */
     uint32_t	cmdsize;	/* sizeof(struct linkedit_data_command) */
     uint32_t	dataoff;	/* file offset of data in __LINKEDIT segment */
     uint32_t	datasize;	/* file size of data in __LINKEDIT segment  */
@@ -1169,6 +1177,21 @@ struct encryption_info_command {
 };
 
 /*
+ * The encryption_info_command_64 contains the file offset and size of an
+ * of an encrypted segment (for use in x86_64 targets).
+ */
+struct encryption_info_command_64 {
+   uint32_t	cmd;		/* LC_ENCRYPTION_INFO_64 */
+   uint32_t	cmdsize;	/* sizeof(struct encryption_info_command_64) */
+   uint32_t	cryptoff;	/* file offset of encrypted range */
+   uint32_t	cryptsize;	/* file size of encrypted range */
+   uint32_t	cryptid;	/* which enryption system,
+				   0 means not-encrypted yet */
+   uint32_t	pad;		/* padding to make this struct's size a multiple
+				   of 8 bytes */
+};
+
+/*
  * The version_min_command contains the min OS version on which this 
  * binary was built to run.
  */
@@ -1177,7 +1200,7 @@ struct version_min_command {
 				   LC_VERSION_MIN_IPHONEOS  */
     uint32_t	cmdsize;	/* sizeof(struct min_version_command) */
     uint32_t	version;	/* X.Y.Z is encoded in nibbles xxxx.yy.zz */
-    uint32_t	reserved;	/* zero */
+    uint32_t	sdk;		/* X.Y.Z is encoded in nibbles xxxx.yy.zz */
 };
 
 /*
@@ -1265,14 +1288,19 @@ struct dyld_info_command {
      * Nodes for a symbol start with a uleb128 that is the length of
      * the exported symbol information for the string so far.
      * If there is no exported symbol, the node starts with a zero byte. 
-     * If there is exported info, it follows the length.  First is
-     * a uleb128 containing flags.  Normally, it is followed by a
-     * uleb128 encoded offset which is location of the content named
+     * If there is exported info, it follows the length.  
+	 *
+	 * First is a uleb128 containing flags. Normally, it is followed by
+     * a uleb128 encoded offset which is location of the content named
      * by the symbol from the mach_header for the image.  If the flags
      * is EXPORT_SYMBOL_FLAGS_REEXPORT, then following the flags is
      * a uleb128 encoded library ordinal, then a zero terminated
      * UTF8 string.  If the string is zero length, then the symbol
      * is re-export from the specified dylib with the same name.
+	 * If the flags is EXPORT_SYMBOL_FLAGS_STUB_AND_RESOLVER, then following
+	 * the flags is two uleb128s: the stub offset and the resolver offset.
+	 * The stub is used by non-lazy pointers.  The resolver is used
+	 * by lazy pointers and must be called to get the actual address to use.
      *
      * After the optional exported symbol information is a byte of
      * how many edges (0-255) that this node has leaving it, 
@@ -1349,6 +1377,17 @@ struct dyld_info_command {
 #define EXPORT_SYMBOL_FLAGS_STUB_AND_RESOLVER			0x10
 
 /*
+ * The linker_option_command contains linker options embedded in object files.
+ */
+struct linker_option_command {
+    uint32_t  cmd;	/* LC_LINKER_OPTION only used in MH_OBJECT filetypes */
+    uint32_t  cmdsize;
+    uint32_t  count;	/* number of strings */
+    /* concatenation of zero terminated UTF8 strings.
+       Zero filled at end to align */
+};
+
+/*
  * The symseg_command contains the offset and size of the GNU style
  * symbol table information as described in the header file <symseg.h>.
  * The symbol roots of the symbol segments must also be aligned properly
@@ -1387,6 +1426,50 @@ struct fvmfile_command {
 	union lc_str	name;		/* files pathname */
 	uint32_t	header_addr;	/* files virtual address */
 };
+
+
+/*
+ * The entry_point_command is a replacement for thread_command.
+ * It is used for main executables to specify the location (file offset)
+ * of main().  If -stack_size was used at link time, the stacksize
+ * field will contain the stack size need for the main thread.
+ */
+struct entry_point_command {
+    uint32_t  cmd;	/* LC_MAIN only used in MH_EXECUTE filetypes */
+    uint32_t  cmdsize;	/* 24 */
+    uint64_t  entryoff;	/* file (__TEXT) offset of main() */
+    uint64_t  stacksize;/* if not zero, initial stack size */
+};
+
+
+/*
+ * The source_version_command is an optional load command containing
+ * the version of the sources used to build the binary.
+ */
+struct source_version_command {
+    uint32_t  cmd;	/* LC_SOURCE_VERSION */
+    uint32_t  cmdsize;	/* 16 */
+    uint64_t  version;	/* A.B.C.D.E packed as a24.b10.c10.d10.e10 */
+};
+
+
+/*
+ * The LC_DATA_IN_CODE load commands uses a linkedit_data_command 
+ * to point to an array of data_in_code_entry entries. Each entry
+ * describes a range of data in a code section.
+ */
+struct data_in_code_entry {
+    uint32_t	offset;  /* from mach_header to start of data range*/
+    uint16_t	length;  /* number of bytes in data range */
+    uint16_t	kind;    /* a DICE_KIND_* value  */
+};
+#define DICE_KIND_DATA              0x0001
+#define DICE_KIND_JUMP_TABLE8       0x0002
+#define DICE_KIND_JUMP_TABLE16      0x0003
+#define DICE_KIND_JUMP_TABLE32      0x0004
+#define DICE_KIND_ABS_JUMP_TABLE32  0x0005
+
+
 
 /*
  * Sections of type S_THREAD_LOCAL_VARIABLES contain an array 

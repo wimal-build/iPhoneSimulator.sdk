@@ -29,11 +29,15 @@
 -->
 <xsl:template match="head">
 	<head> <xsl:apply-templates />
-	<xsl:if test="$stylesheet-url != ''">
-		<xsl:element name="link">
-			<xsl:attribute name="rel">stylesheet</xsl:attribute>
+	<xsl:if test="$base-url != ''">
+		<xsl:element name="base">
+			<xsl:attribute name="href"><xsl:value-of select="$base-url" /></xsl:attribute>
+		</xsl:element>
+	</xsl:if>
+	<xsl:if test="$stylesheet-content != ''">
+		<xsl:element name="style">
 			<xsl:attribute name="type">text/css</xsl:attribute>
-			<xsl:attribute name="href"><xsl:value-of select="$stylesheet-url" /></xsl:attribute>
+			<xsl:value-of select="$stylesheet-content" disable-output-escaping="yes" />
 		</xsl:element>
 	</xsl:if>
 	</head>

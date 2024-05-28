@@ -58,6 +58,22 @@ returns ±0.
 .Pp
 .Fn tan "±infinity"
 returns a NaN and raises the "invalid" floating-point exception.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn tan
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vtanf "vFloat x" ;
+.br
+.Ft void
+.Fn vvtanf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvtan "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr acos 3 ,
 .Xr asin 3 ,
@@ -72,4 +88,4 @@ returns a NaN and raises the "invalid" floating-point exception.
 .Sh STANDARDS
 The
 .Fn tan
-function conforms to ISO/IEC 9899:1999(E).
+function conforms to ISO/IEC 9899:2011.

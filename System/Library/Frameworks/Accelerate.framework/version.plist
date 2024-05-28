@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BuildVersion</key>
-	<string>217</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.8</string>
-	<key>CFBundleVersion</key>
-	<string>Accelerate 1.8</string>
-	<key>ProjectName</key>
+	<key>BuildAliasOf</key>
 	<string>vecLib</string>
+	<key>BuildVersion</key>
+	<string>55</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.9</string>
+	<key>CFBundleVersion</key>
+	<string>Accelerate 1.9</string>
+	<key>ProjectName</key>
+	<string>vecLib_Sim</string>
 	<key>SourceVersion</key>
-	<string>387012000000000</string>
+	<string>459000000000000</string>
 </dict>
 </plist>

@@ -58,9 +58,25 @@ raises the "overflow" and "inexact" floating-point exceptions for x finite and t
 .Pp
 .Fn nextafter "x" "y"
 raises the "underflow" and "inexact" floating-point exceptions for the function value subnormal or zero and x not equal to y.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn nextafter
+functions to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vnextafterf "vFloat x" "vFloat y";
+.br
+.Ft void
+.Fn vvnextafterf "float *z" "const float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvnextafter "double *z" "const double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn nextafter
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

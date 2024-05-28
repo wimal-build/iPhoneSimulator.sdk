@@ -1,5 +1,6 @@
-
+#ifdef GL_ES
 precision highp float;
+#endif
 
 uniform mat4 u_matrix;
 uniform lowp vec4 u_color;
@@ -30,19 +31,16 @@ void main()
     float   maxSceneBrightness      =   0.98;
 
     /// Distant light parameters
-    float   distantLightBrightness  =   0.35;
     float   distantLightWashout     =   2.0;
+    float   distantLightScale       =   0.116667;
     
     /// Local (camera) light parameters
-    float   localLightBrightness    =   0.235;
     vec3    localLightDirection     =   normalize(u_cameraPositionInTileSpace - scaled_vertex.xyz);
     float   localLightWashout       =   1.0;
+    float   localLightScale         =   0.1175;
     
     /// Ambient light parameters
     float   ambientLightBrightness  =   0.5;
-    
-    /// The size of the gradient height at the bottom of the buildings. The smaller this number, the smaller the gradient
-    float   bottomGradientHeight    =   0.004;
     
     ///
     ////////////////////////////////////////////////////////////
@@ -55,15 +53,15 @@ void main()
             min(maxSceneBrightness,
             
                 // The local light contribution (since it is hard coded to be top down, we can do this optimization)
-                ((dot(localLightDirection, a_normal) + localLightWashout)  / (localLightWashout+1.0)) * localLightBrightness +
+                (dot(localLightDirection, a_normal) + localLightWashout) * localLightScale +
                 
                 // The distant light contribution
                 //((dot(distantLightDirection, a_normal) + distantLightWashout)  / (distantLightWashout+1.0)) * distantLightColor +
-                ((a_normal.z + distantLightWashout)  / (distantLightWashout+1.0)) * distantLightBrightness +
+                (a_normal.z + distantLightWashout) * distantLightScale +
                 
                 // The ambient light contribution
                  ambientLightBrightness));
     
-    v_gradient  =   (0.040584 * scaled_vertex.z / bottomGradientHeight + 0.935)*v_maxGradient;
-    v_texture       =   a_texture;
+    v_gradient  =   (10.146 * scaled_vertex.z + 0.935)*v_maxGradient;
+    v_texture   =   a_texture;
 }

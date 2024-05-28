@@ -1,7 +1,9 @@
 // Shader for realistic-mode route line
 // Computes normals in route space and ensures constant thickness in meters is constant
 
-precision mediump float;
+#ifdef GL_ES
+precision highp float;
+#endif
 
 uniform mat4 u_matrix;
 uniform float u_halfWidth;

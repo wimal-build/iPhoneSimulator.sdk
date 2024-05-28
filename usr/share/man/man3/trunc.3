@@ -57,11 +57,28 @@ returns ±0.
 .Pp
 .Fn trunc "±infinity"
 returns ±infinity.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn trunc
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vintf "vFloat x" ;
+.br
+.Ft void
+.Fn vvintf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvint "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
 .Xr ceil 3 ,
-.Xr rint 3 ,
+.Xr floor 3 ,
+.Xr round 3 ,
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn trunc
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

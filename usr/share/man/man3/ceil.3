@@ -42,8 +42,10 @@
 .Fd #include <math.h>
 .Ft double
 .Fn ceil "double x"
+.br
 .Ft long double
 .Fn ceill "long double x"
+.br
 .Ft float
 .Fn ceilf "float x"
 .Sh DESCRIPTION
@@ -58,13 +60,28 @@ returns ±0.
 .Pp
 .Fn ceil "±infinity"
 returns ±infinity.
+.Sh VECTOR OPERATIONS
+If you need to apply the 
+.Fn ceil
+function to SIMD vectors or arrays, using the following functions provided
+by the Accelerate.framework may give significantly better performance:
+.Pp
+.Fd #include <Accelerate/Accelerate.h>
+.Pp
+.Ft vFloat
+.Fn vceilf "vFloat x" ;
+.br
+.Ft void
+.Fn vvceilf "float *y" "const float *x" "const int *n" ;
+.br
+.Ft void
+.Fn vvceil "double *y" "const double *x" "const int *n" ;
 .Sh SEE ALSO
-.Xr abs 3 ,
-.Xr fabs 3 ,
 .Xr floor 3 ,
-.Xr rint 3 ,
+.Xr round 3 ,
+.Xr trunc 3 ,
 .Xr math 3
 .Sh STANDARDS
 The
 .Fn ceil
-functions conform to ISO/IEC 9899:1999(E).
+functions conform to ISO/IEC 9899:2011.

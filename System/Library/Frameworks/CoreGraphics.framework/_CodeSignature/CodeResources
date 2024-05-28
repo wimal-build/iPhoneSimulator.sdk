@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Configuration.plist</key>
 		<data>
-		vowK9AwbPCqzunGIvBIoXnBHnVs=
+		Dp6y3G/IelxaKIOa5pNUszzodqQ=
 		</data>
 		<key>Resources/Info-macos.plist</key>
 		<data>
@@ -14,39 +14,139 @@
 		</data>
 		<key>Resources/libCGCorePDF.A.dylib</key>
 		<data>
-		ql0YMnD5P/J/qEybiIxQ77J8+4o=
+		yKA4NFXdD0+7ZM3tOPU0GzJn8y0=
 		</data>
 		<key>Resources/libCGFreetype.A.dylib</key>
 		<data>
-		oCiXL2DxqaqSVTXusEfl/xzAE20=
+		jCJknAhD7m/lvWd0+oYd/dXCA1Q=
 		</data>
 		<key>Resources/libCGVolute.A.dylib</key>
 		<data>
-		Mri+kgA+MQRPUrv5Im30YDp3QpQ=
+		4OzP+E5W7wxnBb4k8D5BWjATWvI=
+		</data>
+		<key>Resources/libCMSBuiltin.A.dylib</key>
+		<data>
+		aCrWGi4BFwOUz/S3n38dOSfZRbg=
 		</data>
 		<key>Resources/libCMaps.A.dylib</key>
 		<data>
-		7pOCK33OWJz9KDeH6TtYiGz1Mt8=
+		y1ljgliLyjCMDsNQkzWCPzRT0iU=
 		</data>
 		<key>Resources/libFontStreams.A.dylib</key>
 		<data>
-		mpua1szcnSu3mN8crYKkibl/VZ0=
+		YH0RPtv8PN9TcWQq8C4KcVMlt3M=
 		</data>
 		<key>Resources/libJBIG2.A.dylib</key>
 		<data>
-		xaxZx8OhcVSQj/kE8h+Pqw2rz04=
+		+19v9IOqTVctCd9yWy44UaxSilE=
 		</data>
 		<key>Resources/libPDFRIP.A.dylib</key>
 		<data>
-		zb0JCUY85ibT3vpKIXb/6324Slo=
+		Voe3UXpdvv1E9fQttFUnmQfEvL8=
 		</data>
 		<key>Resources/libRIP.A.dylib</key>
 		<data>
-		GL7dbGjx9xoWqhEH3zcgjMRABHE=
+		i1I0zajEPlx1e8gRrpesAUeSOro=
 		</data>
 		<key>Resources/version.plist</key>
 		<data>
-		vuFHMPZ9cD+RP1jsU3/EPf0KIBA=
+		/lnWgeFIZozepqUtm1J7IuajjoY=
+		</data>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>Resources/Configuration.plist</key>
+		<data>
+		Dp6y3G/IelxaKIOa5pNUszzodqQ=
+		</data>
+		<key>Resources/Info-macos.plist</key>
+		<data>
+		SvSo3sNhKTl5i1vDDfdgM3txI2g=
+		</data>
+		<key>Resources/libCGCorePDF.A.dylib</key>
+		<data>
+		yKA4NFXdD0+7ZM3tOPU0GzJn8y0=
+		</data>
+		<key>Resources/libCGCorePDF.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libCGCorePDF.A.dylib</string>
+		</dict>
+		<key>Resources/libCGFreetype.A.dylib</key>
+		<data>
+		jCJknAhD7m/lvWd0+oYd/dXCA1Q=
+		</data>
+		<key>Resources/libCGFreetype.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libCGFreetype.A.dylib</string>
+		</dict>
+		<key>Resources/libCGVolute.A.dylib</key>
+		<data>
+		4OzP+E5W7wxnBb4k8D5BWjATWvI=
+		</data>
+		<key>Resources/libCGVolute.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libCGVolute.A.dylib</string>
+		</dict>
+		<key>Resources/libCMSBuiltin.A.dylib</key>
+		<data>
+		aCrWGi4BFwOUz/S3n38dOSfZRbg=
+		</data>
+		<key>Resources/libCMSBuiltin.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libCMSBuiltin.A.dylib</string>
+		</dict>
+		<key>Resources/libCMaps.A.dylib</key>
+		<data>
+		y1ljgliLyjCMDsNQkzWCPzRT0iU=
+		</data>
+		<key>Resources/libCMaps.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libCMaps.A.dylib</string>
+		</dict>
+		<key>Resources/libFontStreams.A.dylib</key>
+		<data>
+		YH0RPtv8PN9TcWQq8C4KcVMlt3M=
+		</data>
+		<key>Resources/libFontStreams.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libFontStreams.A.dylib</string>
+		</dict>
+		<key>Resources/libJBIG2.A.dylib</key>
+		<data>
+		+19v9IOqTVctCd9yWy44UaxSilE=
+		</data>
+		<key>Resources/libJBIG2.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libJBIG2.A.dylib</string>
+		</dict>
+		<key>Resources/libPDFRIP.A.dylib</key>
+		<data>
+		Voe3UXpdvv1E9fQttFUnmQfEvL8=
+		</data>
+		<key>Resources/libPDFRIP.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libPDFRIP.A.dylib</string>
+		</dict>
+		<key>Resources/libRIP.A.dylib</key>
+		<data>
+		i1I0zajEPlx1e8gRrpesAUeSOro=
+		</data>
+		<key>Resources/libRIP.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libRIP.A.dylib</string>
+		</dict>
+		<key>Resources/version.plist</key>
+		<data>
+		/lnWgeFIZozepqUtm1J7IuajjoY=
 		</data>
 	</dict>
 	<key>rules</key>
@@ -122,6 +222,111 @@
 			<true/>
 			<key>weight</key>
 			<real>40</real>
+		</dict>
+		<key>^Resources/libCGInterfaces.dylib$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>50</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>@[0-9]+</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>\.licns$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>50</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>0.0</real>
+		</dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>30</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>30</real>
+		</dict>
+		<key>^Resources/.*\.nib/classes\.nib$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>5</real>
+		</dict>
+		<key>^Resources/.*\.nib/data\.dependency$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>5</real>
+		</dict>
+		<key>^Resources/.*\.nib/designable\.nib$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>5</real>
+		</dict>
+		<key>^Resources/.*\.nib/info\.nib$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>5</real>
+		</dict>
+		<key>^Resources/BridgeSupport/[^/]*\.(bridgesupport|dylib)$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^Resources/English\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>40</real>
+		</dict>
+		<key>^Resources/libCGInterfaces.dylib$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>50</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>top</key>
+			<true/>
+			<key>weight</key>
+			<real>0.0</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
