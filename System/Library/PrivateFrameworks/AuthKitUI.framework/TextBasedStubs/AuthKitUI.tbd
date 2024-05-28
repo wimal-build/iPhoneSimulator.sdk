@@ -1,0 +1,13 @@
+---
+archs:           [ i386, x86_64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
+exports:         
+  - archs:           [ i386, x86_64 ]
+    objc-classes:    [ _AKAppleIDAuthenticationInAppContext, _AKAppleIDAuthenticationPurpleBuddyContext, 
+                       _AKAppleIDAuthenticationTVContext, _AKAppleIDAuthenticationTVUISurrogateContext, 
+                       _AKAppleIDAuthenticationUISurrogateContext, _AKAppleIDAuthenticationWatchBuddyContext, 
+                       _AKBasicLoginAlertController, _AKBasicLoginContentViewController, 
+                       _AKBasicLoginContentViewControllerContainerView, 
+                       _AKInlineSignInViewController, _AKTapToSignInViewController ]
+...

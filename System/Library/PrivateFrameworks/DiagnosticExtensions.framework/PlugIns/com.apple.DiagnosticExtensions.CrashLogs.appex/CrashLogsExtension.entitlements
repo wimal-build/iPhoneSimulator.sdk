@@ -6,5 +6,11 @@
 	<string>/private/var/mobile/Library/Logs/CrashReporter/</string>
 	<key>com.apple.DiagnosticExtensions.extension</key>
 	<true/>
+    <key>platform-application</key>
+    <true/>
+    <key>com.apple.security.system-groups</key>
+    <array>
+        <string>systemgroup.com.apple.osanalytics</string>
+    </array>
 </dict>
 </plist>

@@ -78,7 +78,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		/6h+PKvLJBKpAvTyYUEA4Fu19i8=
+		IeHLELj3RaQIZJePqxBqQ0XeOAU=
 		</data>
 		<key>Italian.lproj/DaemonCoreLocalizable.strings</key>
 		<dict>
@@ -170,6 +170,14 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>com.apple.pairedsync.messagessync.plist</key>
+		<data>
+		7Bz3vIQiiT59dk+XLgeBJeLOrvA=
+		</data>
+		<key>com.apple.private.alloy.MessagesQuickSwitch.plist</key>
+		<data>
+		gCITV8oX4eVf4hZP7OYy3HloQkg=
+		</data>
 		<key>cs.lproj/DaemonCoreLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -256,24 +264,6 @@
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/DaemonCoreLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3nnZbsdY96Xa6qftCa4GjsJ6RKo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -875,6 +865,14 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>com.apple.pairedsync.messagessync.plist</key>
+		<data>
+		7Bz3vIQiiT59dk+XLgeBJeLOrvA=
+		</data>
+		<key>com.apple.private.alloy.MessagesQuickSwitch.plist</key>
+		<data>
+		gCITV8oX4eVf4hZP7OYy3HloQkg=
+		</data>
 		<key>cs.lproj/DaemonCoreLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -961,24 +959,6 @@
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/DaemonCoreLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3nnZbsdY96Xa6qftCa4GjsJ6RKo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>

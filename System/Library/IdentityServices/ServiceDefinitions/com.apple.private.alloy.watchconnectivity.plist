@@ -22,5 +22,7 @@
 	<string>com.apple.private.alloy.watchconnectivity-idswake</string>
 	<key>MinCompatibilityVersion</key>
 	<integer>1</integer>
+	<key>AllowPendingMessagesForInactiveDevice</key>
+	<true/>
 </dict>
 </plist>

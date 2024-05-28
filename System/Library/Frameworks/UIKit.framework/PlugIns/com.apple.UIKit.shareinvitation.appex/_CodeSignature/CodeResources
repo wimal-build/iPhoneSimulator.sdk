@@ -6,8 +6,17 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		AYEf+/LTiAMmIlbj0JEmSaXUFFQ=
+		WxTXCyyGBy9CYB0kMTwHw6Xg0+8=
 		</data>
+		<key>ar.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PB7CgdL/d5ljydODWGes8wpqt2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -81,15 +90,6 @@
 			<true/>
 		</dict>
 		<key>es.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PB7CgdL/d5ljydODWGes8wpqt2g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -353,6 +353,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>ar.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PB7CgdL/d5ljydODWGes8wpqt2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -426,15 +435,6 @@
 			<true/>
 		</dict>
 		<key>es.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PB7CgdL/d5ljydODWGes8wpqt2g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>

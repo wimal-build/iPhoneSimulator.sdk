@@ -1,11 +1,13 @@
 
 framework module DTXConnectionServices {
-    umbrella header "DTXConnectionServices.h"
-    requires objc
+    module ObjC {
+        umbrella header "DTXConnectionServices.h"
+        requires objc
 
-    export *
-    module * {
         export *
+        module * {
+            export *
+        }
     }
 
     explicit module Private {

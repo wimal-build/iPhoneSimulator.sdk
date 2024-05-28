@@ -1,37 +1,7 @@
 //
 //  DOMXPath.js
 //
-//  Copyright (c) 2014 Apple. All rights reserved.
+//  Copyright (c) 2016 Apple. All rights reserved.
 //
 
-function generateXPath(element) {
-    var theElement = element;
-    var pathSegments = []
-    while (theElement.parentElement) {
-        var parentElement = theElement.parentElement;
-        var positionInParent = 1
-        if (parentElement.childNodes) {
-            var parentsChildren = parentElement.childNodes
-            for (var i = 0; i < parentsChildren.length; i+=1.0) {
-                if (theElement.nodeName === parentsChildren[i].nodeName) {
-                    // increment everytime we see an element with the same node name
-                    positionInParent+= 1;
-                }
-                if (theElement === parentsChildren[i]) {
-                    positionInParent-=1
-                    break;
-                }
-            }
-        }
-        
-        if (positionInParent == 0) {
-            positionInParent == 1
-        }
-        pathSegments.push("/"+theElement.tagName.toLowerCase()+"[" + positionInParent + "]");
-        theElement = parentElement
-    }
-    // reverse the stack of path segments
-    pathSegments = pathSegments.reverse()
-    var path = "//html[1]" + pathSegments.join("")
-    return path;
-}
+function generateXPath(d){var h=d;var g=[];while(h.parentElement){var b=h.parentElement;var f=1;if(b.childNodes){var a=b.childNodes;for(var c=0;c<a.length;c+=1){if(h.nodeName===a[c].nodeName){f+=1}if(h===a[c]){f-=1;break}}}if(f==0){f==1}g.push("/"+h.tagName.toLowerCase()+"["+f+"]");h=b}g=g.reverse();var e="//html[1]"+g.join("");return e};

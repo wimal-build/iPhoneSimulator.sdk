@@ -1,0 +1,9 @@
+---
+archs:           [ i386, x86_64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _kPUIDefaultContextLevel ]
+    objc-classes:    [ _PUIProgressWindow ]
+...

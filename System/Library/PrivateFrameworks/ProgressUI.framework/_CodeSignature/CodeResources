@@ -6,7 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		TDZ+p7ThMEgFy6XHE6PYpKyYV6g=
+		OzesvNtKeCpWki4DH2xLEaAtFvA=
+		</data>
+		<key>TextBasedStubs/ProgressUI.tbd</key>
+		<data>
+		DZdA0VSfFwR5fMwWhIwGVM94MR0=
 		</data>
 		<key>apple-logo-black@2x~ipad.png</key>
 		<data>
@@ -130,15 +134,6 @@
 			<true/>
 		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -402,6 +397,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>ProgressUI.tbd</key>
+		<dict>
+			<key>symlink</key>
+			<string>TextBasedStubs/ProgressUI.tbd</string>
+		</dict>
+		<key>TextBasedStubs/ProgressUI.tbd</key>
+		<data>
+		DZdA0VSfFwR5fMwWhIwGVM94MR0=
+		</data>
 		<key>apple-logo-black@2x~ipad.png</key>
 		<data>
 		yiQpK8MukZcKUD0l8IgHLBs+ps0=
@@ -524,15 +528,6 @@
 			<true/>
 		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>

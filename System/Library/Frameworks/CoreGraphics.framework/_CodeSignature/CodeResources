@@ -4,56 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/Configuration.plist</key>
-		<data>
-		c4p8gUZL9r+4a3pQM7gGZPBX21A=
-		</data>
-		<key>Resources/Info-macos.plist</key>
-		<data>
-		0CSs4iLIc5Gtf8+AogAktg2H+lE=
-		</data>
-		<key>Resources/libCGCorePDF.A.dylib</key>
-		<data>
-		AEhshCWXIEiDxPAc7ybSk+DFj+Q=
-		</data>
-		<key>Resources/libCGVolute.A.dylib</key>
-		<data>
-		4wuH/i9MNCISc02Uc3zRdxCj+iA=
-		</data>
-		<key>Resources/libCGXType.A.dylib</key>
-		<data>
-		SgsArTmBehtuyS7VMW2tSNAbE88=
-		</data>
-		<key>Resources/libCMaps.A.dylib</key>
-		<data>
-		6n56eYKztG77PIVgMrZBQ8IwDw8=
-		</data>
-		<key>Resources/libFontStreams.A.dylib</key>
-		<data>
-		4t5NPp5YyDTHeh2PRnqLWqc0Hg8=
-		</data>
-		<key>Resources/libJBIG2.A.dylib</key>
-		<data>
-		8+GVZ0i6dIMag+7eYySNYcXxQKY=
-		</data>
-		<key>Resources/libPDFRIP.A.dylib</key>
-		<data>
-		lVYbZGU2TAbLHM6K4homLKsvbmU=
-		</data>
-		<key>Resources/libRIP.A.dylib</key>
-		<data>
-		cZQSNVQOc+i8kxPlNkKMxooQtZ0=
-		</data>
-	</dict>
-	<key>files2</key>
-	<dict>
 		<key>Headers/CGAffineTransform.h</key>
 		<data>
 		I7km6DueGh2qPS1EoBuFO+W7mcY=
 		</data>
 		<key>Headers/CGBase.h</key>
 		<data>
-		vFaW5MoGpzpgFeUcf8yjV/llXjU=
+		jNcsc/X5lMhUNl5BOG78Y/lbKDM=
 		</data>
 		<key>Headers/CGBitmapContext.h</key>
 		<data>
@@ -63,9 +20,13 @@
 		<data>
 		VXfktAb9s12ToLXFOP+H13IcjEc=
 		</data>
+		<key>Headers/CGColorConverter.h</key>
+		<data>
+		6/XY+eOtyE+cB42KTSQ8EoavA3w=
+		</data>
 		<key>Headers/CGColorSpace.h</key>
 		<data>
-		+Q8BD1f4mcbB8vuTPa9jIVrLpoo=
+		4562boxPz2etvp5EhdPeCwm3hYk=
 		</data>
 		<key>Headers/CGContext.h</key>
 		<data>
@@ -85,7 +46,7 @@
 		</data>
 		<key>Headers/CGFont.h</key>
 		<data>
-		dqEhI97U9Lw2oGn1rAT+BQZeGw8=
+		s9pBCqUDjlrtrVJHs0L6OeaMlAw=
 		</data>
 		<key>Headers/CGFunction.h</key>
 		<data>
@@ -101,7 +62,7 @@
 		</data>
 		<key>Headers/CGImage.h</key>
 		<data>
-		z5LHtIECcdDaHMoFEJvjXQdRa2Q=
+		ei91tUFNGgzFG7AEM8BPfn660xI=
 		</data>
 		<key>Headers/CGLayer.h</key>
 		<data>
@@ -165,101 +126,160 @@
 		</data>
 		<key>Headers/CoreGraphics.h</key>
 		<data>
-		oOGx+DnXTmblQwkHaQVHKx18c9E=
+		c0zCg7Sb/3R9mmu2w5BteEsH8v8=
 		</data>
-		<key>Resources/Configuration.plist</key>
+		<key>Info.plist</key>
 		<data>
-		c4p8gUZL9r+4a3pQM7gGZPBX21A=
+		qK1aP4ZpPx2KQnQnKbSp7z1nOpQ=
 		</data>
-		<key>Resources/Info-macos.plist</key>
+		<key>Modules/module.modulemap</key>
 		<data>
-		0CSs4iLIc5Gtf8+AogAktg2H+lE=
+		jMMtQpYb0gbnJ/j9sbb9NeslA8A=
 		</data>
-		<key>Resources/libCGCorePDF.A.dylib</key>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>Headers/CGAffineTransform.h</key>
 		<data>
-		AEhshCWXIEiDxPAc7ybSk+DFj+Q=
+		I7km6DueGh2qPS1EoBuFO+W7mcY=
 		</data>
-		<key>Resources/libCGCorePDF.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libCGCorePDF.A.dylib</string>
-		</dict>
-		<key>Resources/libCGVolute.A.dylib</key>
+		<key>Headers/CGBase.h</key>
 		<data>
-		4wuH/i9MNCISc02Uc3zRdxCj+iA=
+		jNcsc/X5lMhUNl5BOG78Y/lbKDM=
 		</data>
-		<key>Resources/libCGVolute.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libCGVolute.A.dylib</string>
-		</dict>
-		<key>Resources/libCGXType.A.dylib</key>
+		<key>Headers/CGBitmapContext.h</key>
 		<data>
-		SgsArTmBehtuyS7VMW2tSNAbE88=
+		ro8i7Xew0YWShEC32KIadNNKyjk=
 		</data>
-		<key>Resources/libCGXType.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libCGXType.A.dylib</string>
-		</dict>
-		<key>Resources/libCMaps.A.dylib</key>
+		<key>Headers/CGColor.h</key>
 		<data>
-		6n56eYKztG77PIVgMrZBQ8IwDw8=
+		VXfktAb9s12ToLXFOP+H13IcjEc=
 		</data>
-		<key>Resources/libCMaps.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libCMaps.A.dylib</string>
-		</dict>
-		<key>Resources/libFontStreams.A.dylib</key>
+		<key>Headers/CGColorConverter.h</key>
 		<data>
-		4t5NPp5YyDTHeh2PRnqLWqc0Hg8=
+		6/XY+eOtyE+cB42KTSQ8EoavA3w=
 		</data>
-		<key>Resources/libFontStreams.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libFontStreams.A.dylib</string>
-		</dict>
-		<key>Resources/libJBIG2.A.dylib</key>
+		<key>Headers/CGColorSpace.h</key>
 		<data>
-		8+GVZ0i6dIMag+7eYySNYcXxQKY=
+		4562boxPz2etvp5EhdPeCwm3hYk=
 		</data>
-		<key>Resources/libJBIG2.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libJBIG2.A.dylib</string>
-		</dict>
-		<key>Resources/libPDFRIP.A.dylib</key>
+		<key>Headers/CGContext.h</key>
 		<data>
-		lVYbZGU2TAbLHM6K4homLKsvbmU=
+		aVKlhZrdXsGrmNCoFE1PcuC1i+I=
 		</data>
-		<key>Resources/libPDFRIP.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libPDFRIP.A.dylib</string>
-		</dict>
-		<key>Resources/libRIP.A.dylib</key>
+		<key>Headers/CGDataConsumer.h</key>
 		<data>
-		cZQSNVQOc+i8kxPlNkKMxooQtZ0=
+		RjO7po8NWoLoyRNTgxF+7WOA1XM=
 		</data>
-		<key>Resources/libRIP.dylib</key>
-		<dict>
-			<key>symlink</key>
-			<string>libRIP.A.dylib</string>
-		</dict>
+		<key>Headers/CGDataProvider.h</key>
+		<data>
+		PTcnZRVkES+PCdm/euA/RJsLVE4=
+		</data>
+		<key>Headers/CGError.h</key>
+		<data>
+		LRDgXv8f4/JUxH2kk5LWE8HXIjM=
+		</data>
+		<key>Headers/CGFont.h</key>
+		<data>
+		s9pBCqUDjlrtrVJHs0L6OeaMlAw=
+		</data>
+		<key>Headers/CGFunction.h</key>
+		<data>
+		FPPHQ0tZDhHVF4HuQHaMEAqKGnU=
+		</data>
+		<key>Headers/CGGeometry.h</key>
+		<data>
+		PpdHT8lumTaxPEEa6Mz57ytuzj4=
+		</data>
+		<key>Headers/CGGradient.h</key>
+		<data>
+		1GohBnU/p0i8vLMMMYVMiKXUEsU=
+		</data>
+		<key>Headers/CGImage.h</key>
+		<data>
+		ei91tUFNGgzFG7AEM8BPfn660xI=
+		</data>
+		<key>Headers/CGLayer.h</key>
+		<data>
+		ED8KwvHBxTpLujQglbwSZufGpl4=
+		</data>
+		<key>Headers/CGPDFArray.h</key>
+		<data>
+		RURJ77FLbDkU/uXxoFozW7WVibU=
+		</data>
+		<key>Headers/CGPDFContentStream.h</key>
+		<data>
+		AUNX7nljMmdoczDOWHf7Bm38r+Y=
+		</data>
+		<key>Headers/CGPDFContext.h</key>
+		<data>
+		pZ6cHkZl3XYt6rRBFVKz+6JHnYs=
+		</data>
+		<key>Headers/CGPDFDictionary.h</key>
+		<data>
+		VWT/e7v+lXwjV+vNLKrWiyC0dGE=
+		</data>
+		<key>Headers/CGPDFDocument.h</key>
+		<data>
+		uED2ecywfT6RLRz01Yuk4g6qUv0=
+		</data>
+		<key>Headers/CGPDFObject.h</key>
+		<data>
+		8W7KnbEUwm8G/nXdPs1lS7QKlk0=
+		</data>
+		<key>Headers/CGPDFOperatorTable.h</key>
+		<data>
+		KGVmbpGVV7CJjbl0S/MIrY5DOpk=
+		</data>
+		<key>Headers/CGPDFPage.h</key>
+		<data>
+		qoC3ZFII6OxbJM+igucYxH+UI8Q=
+		</data>
+		<key>Headers/CGPDFScanner.h</key>
+		<data>
+		rc83lOjI8TqrP88H37eeL+k+pnc=
+		</data>
+		<key>Headers/CGPDFStream.h</key>
+		<data>
+		Vj+CI0oxgrZDd5WVkuMmnUNtr6g=
+		</data>
+		<key>Headers/CGPDFString.h</key>
+		<data>
+		e2DzCqqZ/N/o2lb/u+RROZtSL+I=
+		</data>
+		<key>Headers/CGPath.h</key>
+		<data>
+		qwmDfgBrQWP3SX3l6ivcxEyOfuM=
+		</data>
+		<key>Headers/CGPattern.h</key>
+		<data>
+		3dOf7Li9QVjMzdlQAQh7M/LSntE=
+		</data>
+		<key>Headers/CGShading.h</key>
+		<data>
+		OQX/vc2NzLenAsxjkzCoXapEShE=
+		</data>
+		<key>Headers/CoreGraphics.h</key>
+		<data>
+		c0zCg7Sb/3R9mmu2w5BteEsH8v8=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		jMMtQpYb0gbnJ/j9sbb9NeslA8A=
+		</data>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^Resources/</key>
+		<key>^</key>
 		<true/>
-		<key>^Resources/.*\.lproj/</key>
+		<key>^.*\.lproj/</key>
 		<dict>
 			<key>optional</key>
 			<true/>
 			<key>weight</key>
 			<real>1000</real>
 		</dict>
-		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
@@ -275,6 +295,11 @@
 		<dict>
 			<key>weight</key>
 			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
 		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
@@ -292,6 +317,20 @@
 		</dict>
 		<key>^.*</key>
 		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
 			<key>omit</key>
@@ -305,25 +344,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^Resources/</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
-		<key>^Resources/.*\.lproj/</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>1000</real>
-		</dict>
-		<key>^Resources/.*\.lproj/locversion.plist$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>1100</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

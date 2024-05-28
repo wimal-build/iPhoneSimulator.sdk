@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BKEnableALS</key>
+	<dict>
+		<key>NSUserDefaultsDefaultValue</key>
+		<true/>
+		<key>NSUserDefaultsUbiquitous</key>
+		<true/>
+    </dict>
+    <key>BKALSUserPreferencesEpoch</key>
+    <dict>
+        <key>NSUserDefaultsDefaultValue</key>
+        <integer>1</integer>
+        <key>NSUserDefaultsUbiquitous</key>
+        <true/>
+    </dict>
+</dict>
+</plist>

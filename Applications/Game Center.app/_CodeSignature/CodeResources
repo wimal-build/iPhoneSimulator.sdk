@@ -32,11 +32,15 @@
 		<data>
 		NbeuqRZbA+K6QqUgezcLTltBbWw=
 		</data>
+		<key>AppIcon83.5x83.5@2x~ipad.png</key>
+		<data>
+		D5Vv0YDUqqHxhdD3ANF8qYqfYEs=
+		</data>
 		<key>Base.lproj/GKDashboardChallengePlayerPickerViewController_iOS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RBzo8p5XT6OZzO8HFi7PCQcrM/U=
+			ZjdTKaaKSdx1EmbPdrzzLTAGIZA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -115,15 +119,15 @@
 		</dict>
 		<key>GKDashboardPlayerPickerCell_iOS.nib</key>
 		<data>
-		iQweVjI6mml70XeoJ3y+eP0ip9U=
+		nTZps5UzEuZR0obTTi0gvVmr/L0=
 		</data>
 		<key>GKDashboardSectionHeaderView_iOS.nib</key>
 		<data>
-		hnIhdCzn01OiyDjGO4PULSvnjDs=
+		ETe+FK5VYZr4YtuGThs/eLfZC+g=
 		</data>
 		<key>GKLaunchScreen.nib</key>
 		<data>
-		iuvPz5ToqzuADwyXGyGQtqyNtP0=
+		OAU3KuodxK0U2ZOEJ0/JB6ha85w=
 		</data>
 		<key>German.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
@@ -154,7 +158,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		gqPtjiPCYhZOZMwwYt+VSVMiHdo=
+		W3DINM/CI2Q7+FFUBqluVvZy4rs=
 		</data>
 		<key>Italian.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
@@ -256,19 +260,19 @@
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/Info.plist</key>
 		<data>
-		WU+SCjvXSoSylc30HMHBq4bym5M=
+		hqYKpQsbZN5/2mEX47B44tkxG7Y=
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/TTRGameCenter</key>
 		<data>
-		umGZeZnj8ZbD5hs6/OB0NGwcC9o=
+		Gq8ru/DJfeZmxkZl2rRfnApONLo=
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/_CodeSignature/CodeResources</key>
 		<data>
-		zqBEtHS3R/8ZlAbXn+qFovB3PIY=
+		aIRC07pjCGfbNBdt4WQf1SBq2xg=
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/version.plist</key>
 		<data>
-		2CVa7wD4XWCoMyi+SKXumAbo8FI=
+		S1PVFALGrmrlW/EgBw93oGmRIDc=
 		</data>
 		<key>Spanish.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
@@ -297,6 +301,26 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/GKXPCAppRemovalService</key>
+		<data>
+		PaEZD/IBQgnJPJRh1DjfYVz1Rtg=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/GKXPCAppRemovalService.entitlements</key>
+		<data>
+		Kt9p84enHEA09pDuFSJ8agkts+Y=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/Info.plist</key>
+		<data>
+		xuSdWKsGjxIvnHPBUN5g/osS66Q=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		FZmMKajWgZSJhW7VHmytgnRbKyI=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/version.plist</key>
+		<data>
+		S1PVFALGrmrlW/EgBw93oGmRIDc=
+		</data>
 		<key>ar.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
 			<key>hash</key>
@@ -482,33 +506,6 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZrXaL2Jo0dvqRNwBK/szTU4Kh3E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/InfoPlist-OrbHW.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lJQzcD0HumItFe8Xyh2u+80ZHRw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hBd5eQnp6ahzHMqWs+0T+ekvgKk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1055,7 +1052,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		tDzR2p4FSTX5vLGZwrCQek70+zA=
+		o5V2Jxk6mmdQ/WyCc3bS3WpaDFo=
 		</data>
 		<key>vi.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
@@ -1196,11 +1193,15 @@
 		<data>
 		NbeuqRZbA+K6QqUgezcLTltBbWw=
 		</data>
+		<key>AppIcon83.5x83.5@2x~ipad.png</key>
+		<data>
+		D5Vv0YDUqqHxhdD3ANF8qYqfYEs=
+		</data>
 		<key>Base.lproj/GKDashboardChallengePlayerPickerViewController_iOS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RBzo8p5XT6OZzO8HFi7PCQcrM/U=
+			ZjdTKaaKSdx1EmbPdrzzLTAGIZA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1279,15 +1280,15 @@
 		</dict>
 		<key>GKDashboardPlayerPickerCell_iOS.nib</key>
 		<data>
-		iQweVjI6mml70XeoJ3y+eP0ip9U=
+		nTZps5UzEuZR0obTTi0gvVmr/L0=
 		</data>
 		<key>GKDashboardSectionHeaderView_iOS.nib</key>
 		<data>
-		hnIhdCzn01OiyDjGO4PULSvnjDs=
+		ETe+FK5VYZr4YtuGThs/eLfZC+g=
 		</data>
 		<key>GKLaunchScreen.nib</key>
 		<data>
-		iuvPz5ToqzuADwyXGyGQtqyNtP0=
+		OAU3KuodxK0U2ZOEJ0/JB6ha85w=
 		</data>
 		<key>German.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
@@ -1412,19 +1413,19 @@
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/Info.plist</key>
 		<data>
-		WU+SCjvXSoSylc30HMHBq4bym5M=
+		hqYKpQsbZN5/2mEX47B44tkxG7Y=
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/TTRGameCenter</key>
 		<data>
-		umGZeZnj8ZbD5hs6/OB0NGwcC9o=
+		Gq8ru/DJfeZmxkZl2rRfnApONLo=
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/_CodeSignature/CodeResources</key>
 		<data>
-		zqBEtHS3R/8ZlAbXn+qFovB3PIY=
+		aIRC07pjCGfbNBdt4WQf1SBq2xg=
 		</data>
 		<key>PlugIns/TTRGameCenter.appex/version.plist</key>
 		<data>
-		2CVa7wD4XWCoMyi+SKXumAbo8FI=
+		S1PVFALGrmrlW/EgBw93oGmRIDc=
 		</data>
 		<key>Spanish.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
@@ -1453,6 +1454,26 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/GKXPCAppRemovalService</key>
+		<data>
+		PaEZD/IBQgnJPJRh1DjfYVz1Rtg=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/GKXPCAppRemovalService.entitlements</key>
+		<data>
+		Kt9p84enHEA09pDuFSJ8agkts+Y=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/Info.plist</key>
+		<data>
+		xuSdWKsGjxIvnHPBUN5g/osS66Q=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		FZmMKajWgZSJhW7VHmytgnRbKyI=
+		</data>
+		<key>XPCServices/GKXPCAppRemovalService.xpc/version.plist</key>
+		<data>
+		S1PVFALGrmrlW/EgBw93oGmRIDc=
+		</data>
 		<key>ar.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1638,33 +1659,6 @@
 			<key>hash</key>
 			<data>
 			8SB4prPY/tfGB7PNJH54cGKUTL0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZrXaL2Jo0dvqRNwBK/szTU4Kh3E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/InfoPlist-OrbHW.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lJQzcD0HumItFe8Xyh2u+80ZHRw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hBd5eQnp6ahzHMqWs+0T+ekvgKk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2211,7 +2205,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		tDzR2p4FSTX5vLGZwrCQek70+zA=
+		o5V2Jxk6mmdQ/WyCc3bS3WpaDFo=
 		</data>
 		<key>vi.lproj/GKDashboardChallengePlayerPickerViewController_iOS.strings</key>
 		<dict>

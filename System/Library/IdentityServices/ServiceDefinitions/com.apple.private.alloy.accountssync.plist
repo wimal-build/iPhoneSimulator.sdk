@@ -16,6 +16,10 @@
 	<string>com.apple.private.alloy.accountssync</string>
 	<key>iCloudService</key>
 	<true/>
+	<key>AllowSendingMessagesToInactiveDevice</key>
+	<true/>
+	<key>AllowPendingMessagesForInactiveDevice</key>
+	<true/>
 	<key>AdHocServiceType</key>
 	<integer>2</integer>
 	<key>LaunchDarwinNotification</key>

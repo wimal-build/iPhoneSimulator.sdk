@@ -6,11 +6,36 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		EJ5y75q2UwI2peUG2m3TSAEec5M=
+		8EXZL8hLGRXQW3vLelXmIkXhIM4=
+		</data>
+		<key>XPCServices/com.apple.MobileInstallationHelperService.xpc/Info.plist</key>
+		<data>
+		VBJcCe7rLNwcQpCdDeH0F7A/ICc=
+		</data>
+		<key>XPCServices/com.apple.MobileInstallationHelperService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		dDMkhvDDluLLhLIk7bevZnfnpeA=
+		</data>
+		<key>XPCServices/com.apple.MobileInstallationHelperService.xpc/com.apple.MobileInstallationHelperService</key>
+		<data>
+		P3U2UFoBzjZD2XkBQFCU1URLNn0=
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>XPCServices/com.apple.MobileInstallationHelperService.xpc/Info.plist</key>
+		<data>
+		VBJcCe7rLNwcQpCdDeH0F7A/ICc=
+		</data>
+		<key>XPCServices/com.apple.MobileInstallationHelperService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		dDMkhvDDluLLhLIk7bevZnfnpeA=
+		</data>
+		<key>XPCServices/com.apple.MobileInstallationHelperService.xpc/com.apple.MobileInstallationHelperService</key>
+		<data>
+		P3U2UFoBzjZD2XkBQFCU1URLNn0=
+		</data>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^</key>

@@ -32,6 +32,8 @@
 		<true/>
 		<key>com.apple.watchconnectivity.complication.push.development</key>
 		<true/>
+		<key>com.apple.pairedsync.watchconnectivity.complications</key>
+		<true/>
 	</dict>
 	<key>LaunchEvents</key>
 	<dict>
@@ -51,6 +53,11 @@
 			<dict>
 				<key>Notification</key>
 				<string>com.apple.nanoregistry.devicedidpair</string>
+			</dict>
+			<key>com.apple.nanoregistry.watchdidbecomeactive</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.nanoregistry.watchdidbecomeactive</string>
 			</dict>
 		</dict>
 	</dict>

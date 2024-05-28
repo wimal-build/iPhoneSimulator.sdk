@@ -6,34 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		D+hEnso6Lcul7+VgfXD5IMWm2Ww=
+		KdKMwvAfVc/+78DUjr8qcUEaQ8Y=
+		</data>
+		<key>TextBasedStubs/DataMigration.tbd</key>
+		<data>
+		qO6kJpUlcJOrXbDuLUXMNrhSe0k=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/Info.plist</key>
 		<data>
-		wOtIqisS6pwPnQcLxrTb0T/AITE=
+		JoQNtpE1kjRFeQD9Q8CJKZ1vtXU=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		xj+mNTHGA+qI/8GybegQfHnInHU=
+		fc0lReYnDX3xRPfeHmKbp371GmM=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/com.apple.datamigrator</key>
 		<data>
-		hzn9AtvJuv4JjznFZZ589+9gXlg=
+		xO/W7sUS69d6b1NFVgUD5LyydLw=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>DataMigration.tbd</key>
+		<dict>
+			<key>symlink</key>
+			<string>TextBasedStubs/DataMigration.tbd</string>
+		</dict>
+		<key>TextBasedStubs/DataMigration.tbd</key>
+		<data>
+		qO6kJpUlcJOrXbDuLUXMNrhSe0k=
+		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/Info.plist</key>
 		<data>
-		wOtIqisS6pwPnQcLxrTb0T/AITE=
+		JoQNtpE1kjRFeQD9Q8CJKZ1vtXU=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		xj+mNTHGA+qI/8GybegQfHnInHU=
+		fc0lReYnDX3xRPfeHmKbp371GmM=
 		</data>
 		<key>XPCServices/com.apple.datamigrator.xpc/com.apple.datamigrator</key>
 		<data>
-		hzn9AtvJuv4JjznFZZ589+9gXlg=
+		xO/W7sUS69d6b1NFVgUD5LyydLw=
 		</data>
 	</dict>
 	<key>rules</key>

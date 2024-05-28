@@ -26,14 +26,7 @@ void main() {
     float ringDistance = abs(centerDistance - midRadius) - halfRingWidth;
     float alpha = max(1.0 - ringDistance * size, 0.0);
     
-    float colorMultiplier;
-    if (percentages.x < 0.0) {
-        colorMultiplier = ringDimFactor;
-    } else {
-        colorMultiplier = 1.0;
-    }
-    
-    vec4 color = color1 * vec4(colorMultiplier, colorMultiplier, colorMultiplier, alpha);
+    vec4 color = color1 * vec4(ringDimFactor, ringDimFactor, ringDimFactor, alpha);
     
     gl_FragColor = color;
 }

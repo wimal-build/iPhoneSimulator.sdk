@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		JQXmMOlOjI5FuhqZRwL0GjmtWOA=
+		A4bqR5t6icLsHyYelOJ3Sormuws=
 		</data>
 		<key>NPKCompanionAgent</key>
 		<data>
-		DZcHeumok/TLp4fhtgosMRNyayY=
+		NbryZPEaP6AVrba0xzNDGoo23Ps=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -26,6 +26,24 @@
 			<key>hash</key>
 			<data>
 			SXEyWqh8J39u1d2xeOJb1EEwvY8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/NanoPassKit.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cZ0l0VHnct8HxSKtN8oZSXHijX8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +53,7 @@
 	<dict>
 		<key>NPKCompanionAgent</key>
 		<data>
-		DZcHeumok/TLp4fhtgosMRNyayY=
+		NbryZPEaP6AVrba0xzNDGoo23Ps=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -51,6 +69,24 @@
 			<key>hash</key>
 			<data>
 			SXEyWqh8J39u1d2xeOJb1EEwvY8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/NanoPassKit.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cZ0l0VHnct8HxSKtN8oZSXHijX8=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -4,6 +4,33 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Base.lproj/ICPasswordChangeViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A2TVTd1tA/SvN8JT2rmn5FU0gSM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ICPasswordLockTileView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LPw6p/6FCCKh25CgQuj+NeHEye8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ICSettingsPasswordChangeViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e/RUHKangNizcUwfvfcpJEgh3q8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>CloudConfigurations/Fast.plist</key>
 		<data>
 		gYzsKvcUvLAnh8nL3FoDWCoNJho=
@@ -18,7 +45,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fPsVnr8PA2WEuhevC3WmH08KQq4=
+		5hiRb7Hwyvh6s8CNfDfbdHS8MFY=
 		</data>
 		<key>NoteData.momd/NoteData1.0b1.mom</key>
 		<data>
@@ -90,11 +117,11 @@
 		</data>
 		<key>NoteData.momd/NoteData1.0b25.mom</key>
 		<data>
-		bedBTOAv4K7B70SMyMCRaDzTnOA=
+		Mq59ukz3FoZS1vXpVtFggmG9Jhg=
 		</data>
 		<key>NoteData.momd/NoteData1.0b25.omo</key>
 		<data>
-		2uXnsHdoAHlj1KrW9sNJzd6P/r8=
+		3Wyg47vP9TII4tbF5/2z6yND4Tk=
 		</data>
 		<key>NoteData.momd/NoteData1.0b3.mom</key>
 		<data>
@@ -126,7 +153,7 @@
 		</data>
 		<key>NoteData.momd/VersionInfo.plist</key>
 		<data>
-		HKNe+eaWCkQ5eoJlP0yFp0a+/AM=
+		7Ue03ESm3tW9XpDIAjf0DumNTh8=
 		</data>
 		<key>NoteData1.0b1-1.0b2.cdm</key>
 		<data>
@@ -172,11 +199,38 @@
 		<data>
 		tKHbvkG5MFEjMI8nj15VaShv+lk=
 		</data>
+		<key>ar.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ulAHuJ2pYQ14f2lEypMOR6fBNZ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LPwp05DtJK1oGsOe0I0GsS1ajMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ipJ7b525K9VKFA6reL9X2rgbM8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QEMwFrYLeORRyzdGzV4Njrjxh9c=
+			8MvMev8BpP3an3Bg0f5r9nozbMQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -190,11 +244,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OP5sfQF3bZG0WwniJnkjpNXRzr4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hQBKuPzR1yGZ4rld5N3YlEYXQm4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PDlTFkzumT5WJkoAgwi0nE2N9kY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dErocGHUIg+K2iu5rlQXYwalTyE=
+			Fu6te74EEWUT42SRBYZurnlYvLI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -208,11 +289,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PHsY1bT6jckYVbhxx6ApsQ8VI88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1IU3JoGZk/X0ibyhUdJkjXjITag=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KCPYMsH6ZWrjzMFv9bs+1He8Fs8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oDhiHVbv2aU2WSR0nFfOzOtAKEM=
+			I8lS8MrMhdjFt/LtSYSi43YWf60=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -226,11 +334,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			58m5d0z7fs3pRs5Qboufmd67BOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tBh5ZZXeAoqZdLwCD2ksrP8kwXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yl50ij1jxqR3XjhtHq2q7k8c6zM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N9whU2iHSvcY8tmhQbAKB9GHATA=
+			VTk5IqFPz3BGK+0nJwneOEPxBo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -239,7 +374,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gy3YaMPQk6XZZNXFdMNh0pKJpWI=
+			ka3N08XyQjz+HiVv7dgug0nRsJM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lPhjH/e1DanxkQsFfARMee6Tpqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h4rJO/vQRAbE481ZVbqoHuFv+9k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SOxNbiV8hmzmdhga0yH9bOc0Joo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -248,7 +410,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C68br1k9gdt7m4Wbvt2wpuLG6QU=
+			P5NKWGt4mxUgicgrdiPP1Zontkc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -257,7 +419,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9iuKv4dIm6gYVtREU/GNPBKdZQI=
+			UsxUXK2dB/jOzrSO00VpovdJow4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K9pOzTqaij/s2bcWjUg+kCflcvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8RULsWnvX+o31ATWJ2KGeXXfT5M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XL+8QrBWdxPFVYXGC2wlz1QVKAk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -266,7 +455,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jFixht22CcXCpuk/O3v0e/yUb7I=
+			SG1Rj1MgWj4mm0pJ6sm25v6idKk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -275,7 +464,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gWFpk2rD9fW+yNdK9eLsEVfdvv8=
+			bKoY6LFju2QGPvjhBa8ttOCrD3g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -284,7 +473,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2bVDqmytx4QzdoI8OY/n1MuADuM=
+			ZQO6Yq+K/P2JydVfAA+X9h4fKis=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -298,11 +487,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJmh5XRM/a+1ePhi6y2x1QX1wcQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bd56h4TgZqevbfpLEDZlmNDA6Oo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nOW1ziSlw1n/AFm9FYHObb2FGUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2bVDqmytx4QzdoI8OY/n1MuADuM=
+			M9DGBjDKIdJgIJUdmK0/4uon/Yk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -316,11 +532,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJmh5XRM/a+1ePhi6y2x1QX1wcQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bd56h4TgZqevbfpLEDZlmNDA6Oo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nOW1ziSlw1n/AFm9FYHObb2FGUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2bVDqmytx4QzdoI8OY/n1MuADuM=
+			LahCa1Pa54FcVvLe43y8jK2XJzk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -334,11 +577,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+TLH2/QEU99B1cKZJ6AQWL8i08w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mISBCi5wX8GXRpW5lxQ/dmQbtBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P8hvnMR7Ew4zUJ/l5J69TB9+DS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KRIcjlg//VKHYCMo81NMojdw6l0=
+			mycIa3/ZNJpO2LCuQnT8dZXLke8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -352,20 +622,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es_MX.lproj/Localizable.strings</key>
+		<key>fi.lproj/ICPasswordChangeViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J0uoavTNR9xj52kLudM0MQd0okc=
+			wjSY5feT7QJC7Sg+EIFv/p3omug=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es_MX.lproj/Localizable.stringsdict</key>
+		<key>fi.lproj/ICPasswordLockTileView.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ExdcYOSZVEZep+00hCJu3LlCxM8=
+			lu7ogD+TyglpnRkEYW+ay7lJqAQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tHINwZT/BR2WDNigBauH3S3Oa1A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -374,7 +653,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Af6K0raDSVu6eB7ynoeeCvD5zI=
+			BT/zBZVIiPPcH/2YtEuuUj1sR8c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -388,11 +667,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/q8K8jHNJc2aMhAO4O54USea5Lo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wvWr0oyFkj44ITta92MJM4k7nWA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YYDxIhUB0xD6Lp7pcsZra6WL1dE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BGBNw/gbZhjnY4ROUVovce7PGi0=
+			mKmyoL/AtXM2VHVSxoOsgrC3rx0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -406,11 +712,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i4Bo5D2pSN++yeP5GClbCq7xC1k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DA2e2H11XNw+AUqTwKYCrex1xs4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mxIP812bqbUEnh2F4/ouMM+bYLQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tx6Fbv7h2A11Fr1Lndn0PTIUaT4=
+			NO/ygNyI18jHJsqGFDtGvHxSifE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -424,11 +757,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dlaVNMEZ85lH9YlJ/7ahl8k86/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x7QoyXFdu2/o5GZWbFWQojOVNDM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OW4PjkMNYqkCt4dc5qL6Oh6W4A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eA0B9IMnB+gx57I0dC6OWMuTa4Y=
+			bTpYdf0L56M9dL6zeuz944CQzbc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -442,11 +802,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lFLCQHEXNszE37Oh7ZzTGpJ4dJI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kGUFwAGvH/wHtVldG4Sf9cJBp7s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pAhaJN9uzQkMVHq1I6SRmQ2dmwI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/ypV2uJVkfPsCAIF+gzl6OEXqJk=
+			bf0BUYvIF0D1MpGA6NHSXrkYy5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -460,11 +847,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l76ou68vCCmxuaf0RqLnyDnHUIo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EjNW8Ti0dTuLWAN53eaSasJureY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			skmsJOn/fp9BlaXeDV/Vtsg9PsA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			krOzssANWG77LzWWhvoVGMNaDl8=
+			YfaKZ5U0IWhSyorRBbGqwQBzGXs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -478,11 +892,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PRg9xy1T/Xssi417sejbOjJ2bp4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DIVIvCGml6BAqHiZ+5JFpn10CfQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UbI/NG1wZsXe3ll3Cdrxvs4kkrc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8YVKRGkqsGjY04g2gCDz//Ec8lE=
+			mr7Re3KPFIxgnn3OfYabrEXjzi0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -496,11 +937,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZOMq7smDzfXrrNWJz9Hb5czOpx8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qdVDwo4/OHVMQZ1KD3oF515eAoI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X8d7Tp2cDRf5bX8yCKdHdOMU8Gw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zY4eiGC3hc9SQrq5WkmeQb02Zkg=
+			LQjOHwahYjTDGhm7Hdl1JWiV8Z0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -514,11 +982,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y3ea1zuvUksKzuC8BI3rSBJorG0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fTWo3V70Wq2G6zZabmq2alzNmXk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQ5ygEqOqAt2qiThFCs6cusOJkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pmvaJOp0bSDdrHEUTMOyplb2UgU=
+			vl9m4gnziPRyjGvbEw4XS3S2Uvg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -532,11 +1027,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GMQF4iSbm4UvbZUkuN7u5eYQ3MY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JZfZ0LSgWqQBTlCOHPi+2bgKqfY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BUEV38SuhRhEBMBpWbOkATi16AM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CxOBggkFt/1K7PK1TtamUXIIg1g=
+			Y8lMzQXuFvTmWcQL8WbRQFr11j8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -550,11 +1072,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A+dWXky9/Lem8aQGhMucmyKq5os=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lYV0qJhoqtQTEUTCMvPNMJfAr1I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7lgdJLhUpJ/21/SpnpkgGEnlH4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jc9agrWJqKoQU498agKxtujIz8Y=
+			RWXTqHKMr0Hhmt8P1zBXjkharE0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -568,11 +1117,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JBu9pGYmo9/CoKKyzAO++pFiCaA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z29MNsV/RxKojRGyjiIyVWmE/wA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2JUNG99AfTI3aNozKKc8ILILSUk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WIrxdpjEiuAGvg/9TcFKDCEGJWg=
+			gSK3M/aw2Mfggmo8UQTOUX/FgGA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -586,11 +1162,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QivECZVAgeZXEgthpNJTz0tJUZA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fDqlBOw1oqpPquuaRjcaf3057gs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ww4DXlN6lhtQCXIaE/nJY7myuX8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YvS8Ibn1YK/ALpoiowdmHl6YjlM=
+			ZIKRcroLnT9xQWGSVnEy5PDd0IM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -599,7 +1202,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3iW6zLHBsvL9NqiG8zuFiFBjO8=
+			uoU6e/nphaxnlf/8mTcnraFgeDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W1A/HzxA5dwhI7mWadRTv0VU+BU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tBh5ZZXeAoqZdLwCD2ksrP8kwXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0TKrXdCjVbKUpQzzONeYC9eyKOg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -608,7 +1238,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DkmI94nUcjJiEpjfXgvYiiKmbMU=
+			s6AwnV7eli0NjXOlH3RNPpg45vQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -622,11 +1252,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tyk6ig2TIJFAIUnKw9mjMRmRzwQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PPTEaZ+/vRo8ChN/Nj7y+TKakIk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WqBuUmlj0LTSux2qg5ioqzAi7XY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XC36+ST1mhFMhP8QDKg50T1ST6Y=
+			aK2AU6fK81+GfVSRGA75EuZ1V4I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -640,11 +1297,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mHk3KvfMsbb9fS5983J77EZ3Jg4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mISBCi5wX8GXRpW5lxQ/dmQbtBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c+Hb/GBnCotzJi7k/oG7vKPQOe4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q9v0Ucr03Vp/NhHaz+0D0h5XIb8=
+			0xtIhzz/CHx9nXek9BdoM95O8cs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -658,11 +1342,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dZn/9GLZDiyk4yqOPfNiqcdCLTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mISBCi5wX8GXRpW5lxQ/dmQbtBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			75P//reFIQ+EtKLmnz3nYNGCDYs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iK1rau95T+y2hWNKtcf5pyVszTI=
+			/ZxOl453FNXZVUWta62LFNup9lQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -676,11 +1387,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4qzmJA8HXltBuFGdZRTZ+BXEE0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H6HB80+ARMoV0X/GpuIw8wKEd/Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F6tuoqhgQ8klsDKzo3/Uz5nHGt4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZaVBSU0NG/mghq58YBCA2ltTu14=
+			powu5bmIch0WN23K6V7iN7gYC6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -694,11 +1432,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TZ9v36k+hKGTizh8aREL0ghvB3w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GTtIH7XROU3HdLTDp7Os19c0WxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0oDCKyy6CzDelQG4VIeuxd6Adk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g94ZK9vpSEqOE32puqq6TYkpj+Q=
+			zPfoS7Ld1ew55JtxoKMf9DKY+kw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -712,11 +1477,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e7SHAZVvkHT5K6OaeXr3nOLBOcg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0KwhCSP0yaAZTRjwlncqbZxyVJw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			atff/hThIydBWwV5XamwCDAG20g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jyBOxjEymU5GGbhdT1d1keSrJ+U=
+			gH4C5THgtqbepfB2XGo1vR4c0zk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -730,11 +1522,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tzc7rQbYlJxXb+zYawe1uqrIvis=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tBh5ZZXeAoqZdLwCD2ksrP8kwXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GpAZDrKx+vng4MK8bBZ4ZlmdpEw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ypHrCZx5F2NZniPvfcJhBKkhJW0=
+			aa0BzIPm0A/PX4sA3FHcnVFueYA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -748,11 +1567,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A96GQON0Yl06Q2FDnz/QPmRxzlM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mqxBEo0gsJzSqz7fG5xbXc91b4M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E6LadxoHsmoeElSnNEa1fNcUIOo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3SOzPYeHtptygE3rsJIcnMZq5v8=
+			X5XcUQmB3z1jXz8hWo5rBdiZLSE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -766,11 +1612,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cKDCJOZnLvlTMD0GVehZokCiDs0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7pviJJLRs991CdPt9DUPzpkT2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vDfHnI4DjU5I3QRofdzpJO491ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s7AFoSVarFS6xekwVb6Si4Vavms=
+			gfZGWWsCbO0e7SZ6R3BMJGvJR5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -784,11 +1657,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TVTSyVwnlUdmYklFFAZg9J3Xc1M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U6XJLZAgFLcRg315rIyFwi4VhDM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eqjgrVLOwemuShHRdTA589TRqdI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dMQKJvZ0qH378Mstbsa4XbOT7yo=
+			j3NYnf2IeYyLX4u9/Kopk0v7T9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -802,11 +1702,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LeuBIie+kEnF1APDVTiNgR2Zl6M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EvzvPNrIVCGhHkgtaChh5jCz7ww=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z9Xdqt8R6Jlio8uVKMMiBMlJlWk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3tkWGz9IcdSvqsdqeIvIBXjQXfo=
+			7LZDl7ceFJHMjYxjNzShtI593F0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -820,11 +1747,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pCxPVEVchgUB0iC9ywzFdWklXQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KmkW9M5u+HKSgNVbGTPzFjHFhHc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7ttp1aSi3BY2o0s+VIs6gPmHdks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FC5rnWKwH6ZGGcTtOhgLGU67uI8=
+			kNDvjKUHc0lxszpKWKBl6//6TkA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -838,11 +1792,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			om14mVvgxIkwRsy3FFsPxZlZ6Os=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T18UryAXR5iEb42LJSPEF4FYjNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+2pqSZsfnStLyISThG6RKhJaizA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uGkgFNucIiPwyBxabj1CcFbsAtM=
+			0oEuMRs8R3jC/dlaJRq3x82l8tE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -856,11 +1837,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_TW.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v0G/97Av6o1/AWpaXK4wQArGAvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T18UryAXR5iEb42LJSPEF4FYjNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+2pqSZsfnStLyISThG6RKhJaizA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H56bFMKCehTYiV8VjedPbotOrmA=
+			WOtzD3oqo1c7qNzpaCujDmeh9d8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -877,6 +1885,33 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Base.lproj/ICPasswordChangeViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A2TVTd1tA/SvN8JT2rmn5FU0gSM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ICPasswordLockTileView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LPw6p/6FCCKh25CgQuj+NeHEye8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ICSettingsPasswordChangeViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e/RUHKangNizcUwfvfcpJEgh3q8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>CloudConfigurations/Fast.plist</key>
 		<data>
 		gYzsKvcUvLAnh8nL3FoDWCoNJho=
@@ -959,11 +1994,11 @@
 		</data>
 		<key>NoteData.momd/NoteData1.0b25.mom</key>
 		<data>
-		bedBTOAv4K7B70SMyMCRaDzTnOA=
+		Mq59ukz3FoZS1vXpVtFggmG9Jhg=
 		</data>
 		<key>NoteData.momd/NoteData1.0b25.omo</key>
 		<data>
-		2uXnsHdoAHlj1KrW9sNJzd6P/r8=
+		3Wyg47vP9TII4tbF5/2z6yND4Tk=
 		</data>
 		<key>NoteData.momd/NoteData1.0b3.mom</key>
 		<data>
@@ -995,7 +2030,7 @@
 		</data>
 		<key>NoteData.momd/VersionInfo.plist</key>
 		<data>
-		HKNe+eaWCkQ5eoJlP0yFp0a+/AM=
+		7Ue03ESm3tW9XpDIAjf0DumNTh8=
 		</data>
 		<key>NoteData1.0b1-1.0b2.cdm</key>
 		<data>
@@ -1041,11 +2076,38 @@
 		<data>
 		tKHbvkG5MFEjMI8nj15VaShv+lk=
 		</data>
+		<key>ar.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ulAHuJ2pYQ14f2lEypMOR6fBNZ8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LPwp05DtJK1oGsOe0I0GsS1ajMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ipJ7b525K9VKFA6reL9X2rgbM8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QEMwFrYLeORRyzdGzV4Njrjxh9c=
+			8MvMev8BpP3an3Bg0f5r9nozbMQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1059,11 +2121,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OP5sfQF3bZG0WwniJnkjpNXRzr4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hQBKuPzR1yGZ4rld5N3YlEYXQm4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PDlTFkzumT5WJkoAgwi0nE2N9kY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dErocGHUIg+K2iu5rlQXYwalTyE=
+			Fu6te74EEWUT42SRBYZurnlYvLI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1077,11 +2166,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PHsY1bT6jckYVbhxx6ApsQ8VI88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1IU3JoGZk/X0ibyhUdJkjXjITag=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KCPYMsH6ZWrjzMFv9bs+1He8Fs8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oDhiHVbv2aU2WSR0nFfOzOtAKEM=
+			I8lS8MrMhdjFt/LtSYSi43YWf60=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1095,11 +2211,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			58m5d0z7fs3pRs5Qboufmd67BOc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tBh5ZZXeAoqZdLwCD2ksrP8kwXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yl50ij1jxqR3XjhtHq2q7k8c6zM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N9whU2iHSvcY8tmhQbAKB9GHATA=
+			VTk5IqFPz3BGK+0nJwneOEPxBo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1108,7 +2251,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gy3YaMPQk6XZZNXFdMNh0pKJpWI=
+			ka3N08XyQjz+HiVv7dgug0nRsJM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lPhjH/e1DanxkQsFfARMee6Tpqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h4rJO/vQRAbE481ZVbqoHuFv+9k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SOxNbiV8hmzmdhga0yH9bOc0Joo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1117,7 +2287,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C68br1k9gdt7m4Wbvt2wpuLG6QU=
+			P5NKWGt4mxUgicgrdiPP1Zontkc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1126,7 +2296,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9iuKv4dIm6gYVtREU/GNPBKdZQI=
+			UsxUXK2dB/jOzrSO00VpovdJow4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K9pOzTqaij/s2bcWjUg+kCflcvQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8RULsWnvX+o31ATWJ2KGeXXfT5M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XL+8QrBWdxPFVYXGC2wlz1QVKAk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1135,7 +2332,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jFixht22CcXCpuk/O3v0e/yUb7I=
+			SG1Rj1MgWj4mm0pJ6sm25v6idKk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1144,7 +2341,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gWFpk2rD9fW+yNdK9eLsEVfdvv8=
+			bKoY6LFju2QGPvjhBa8ttOCrD3g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1153,7 +2350,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2bVDqmytx4QzdoI8OY/n1MuADuM=
+			ZQO6Yq+K/P2JydVfAA+X9h4fKis=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1167,11 +2364,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJmh5XRM/a+1ePhi6y2x1QX1wcQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bd56h4TgZqevbfpLEDZlmNDA6Oo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nOW1ziSlw1n/AFm9FYHObb2FGUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2bVDqmytx4QzdoI8OY/n1MuADuM=
+			M9DGBjDKIdJgIJUdmK0/4uon/Yk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1185,11 +2409,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJmh5XRM/a+1ePhi6y2x1QX1wcQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bd56h4TgZqevbfpLEDZlmNDA6Oo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nOW1ziSlw1n/AFm9FYHObb2FGUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2bVDqmytx4QzdoI8OY/n1MuADuM=
+			LahCa1Pa54FcVvLe43y8jK2XJzk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1203,11 +2454,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+TLH2/QEU99B1cKZJ6AQWL8i08w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mISBCi5wX8GXRpW5lxQ/dmQbtBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P8hvnMR7Ew4zUJ/l5J69TB9+DS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KRIcjlg//VKHYCMo81NMojdw6l0=
+			mycIa3/ZNJpO2LCuQnT8dZXLke8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1221,20 +2499,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es_MX.lproj/Localizable.strings</key>
+		<key>fi.lproj/ICPasswordChangeViewController.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J0uoavTNR9xj52kLudM0MQd0okc=
+			wjSY5feT7QJC7Sg+EIFv/p3omug=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es_MX.lproj/Localizable.stringsdict</key>
+		<key>fi.lproj/ICPasswordLockTileView.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ExdcYOSZVEZep+00hCJu3LlCxM8=
+			lu7ogD+TyglpnRkEYW+ay7lJqAQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tHINwZT/BR2WDNigBauH3S3Oa1A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1243,7 +2530,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Af6K0raDSVu6eB7ynoeeCvD5zI=
+			BT/zBZVIiPPcH/2YtEuuUj1sR8c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1257,11 +2544,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/q8K8jHNJc2aMhAO4O54USea5Lo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wvWr0oyFkj44ITta92MJM4k7nWA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YYDxIhUB0xD6Lp7pcsZra6WL1dE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BGBNw/gbZhjnY4ROUVovce7PGi0=
+			mKmyoL/AtXM2VHVSxoOsgrC3rx0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1275,11 +2589,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i4Bo5D2pSN++yeP5GClbCq7xC1k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DA2e2H11XNw+AUqTwKYCrex1xs4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mxIP812bqbUEnh2F4/ouMM+bYLQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr_CA.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tx6Fbv7h2A11Fr1Lndn0PTIUaT4=
+			NO/ygNyI18jHJsqGFDtGvHxSifE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1293,11 +2634,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dlaVNMEZ85lH9YlJ/7ahl8k86/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x7QoyXFdu2/o5GZWbFWQojOVNDM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OW4PjkMNYqkCt4dc5qL6Oh6W4A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eA0B9IMnB+gx57I0dC6OWMuTa4Y=
+			bTpYdf0L56M9dL6zeuz944CQzbc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1311,11 +2679,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lFLCQHEXNszE37Oh7ZzTGpJ4dJI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kGUFwAGvH/wHtVldG4Sf9cJBp7s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pAhaJN9uzQkMVHq1I6SRmQ2dmwI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/ypV2uJVkfPsCAIF+gzl6OEXqJk=
+			bf0BUYvIF0D1MpGA6NHSXrkYy5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1329,11 +2724,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l76ou68vCCmxuaf0RqLnyDnHUIo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EjNW8Ti0dTuLWAN53eaSasJureY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			skmsJOn/fp9BlaXeDV/Vtsg9PsA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			krOzssANWG77LzWWhvoVGMNaDl8=
+			YfaKZ5U0IWhSyorRBbGqwQBzGXs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1347,11 +2769,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PRg9xy1T/Xssi417sejbOjJ2bp4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DIVIvCGml6BAqHiZ+5JFpn10CfQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UbI/NG1wZsXe3ll3Cdrxvs4kkrc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hu.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8YVKRGkqsGjY04g2gCDz//Ec8lE=
+			mr7Re3KPFIxgnn3OfYabrEXjzi0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1365,11 +2814,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZOMq7smDzfXrrNWJz9Hb5czOpx8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qdVDwo4/OHVMQZ1KD3oF515eAoI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X8d7Tp2cDRf5bX8yCKdHdOMU8Gw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zY4eiGC3hc9SQrq5WkmeQb02Zkg=
+			LQjOHwahYjTDGhm7Hdl1JWiV8Z0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1383,11 +2859,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y3ea1zuvUksKzuC8BI3rSBJorG0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fTWo3V70Wq2G6zZabmq2alzNmXk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PQ5ygEqOqAt2qiThFCs6cusOJkU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>it.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pmvaJOp0bSDdrHEUTMOyplb2UgU=
+			vl9m4gnziPRyjGvbEw4XS3S2Uvg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1401,11 +2904,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GMQF4iSbm4UvbZUkuN7u5eYQ3MY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JZfZ0LSgWqQBTlCOHPi+2bgKqfY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BUEV38SuhRhEBMBpWbOkATi16AM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CxOBggkFt/1K7PK1TtamUXIIg1g=
+			Y8lMzQXuFvTmWcQL8WbRQFr11j8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1419,11 +2949,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A+dWXky9/Lem8aQGhMucmyKq5os=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lYV0qJhoqtQTEUTCMvPNMJfAr1I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7lgdJLhUpJ/21/SpnpkgGEnlH4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ko.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jc9agrWJqKoQU498agKxtujIz8Y=
+			RWXTqHKMr0Hhmt8P1zBXjkharE0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1437,11 +2994,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JBu9pGYmo9/CoKKyzAO++pFiCaA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z29MNsV/RxKojRGyjiIyVWmE/wA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2JUNG99AfTI3aNozKKc8ILILSUk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WIrxdpjEiuAGvg/9TcFKDCEGJWg=
+			gSK3M/aw2Mfggmo8UQTOUX/FgGA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1455,11 +3039,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QivECZVAgeZXEgthpNJTz0tJUZA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fDqlBOw1oqpPquuaRjcaf3057gs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ww4DXlN6lhtQCXIaE/nJY7myuX8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>nl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YvS8Ibn1YK/ALpoiowdmHl6YjlM=
+			ZIKRcroLnT9xQWGSVnEy5PDd0IM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1468,7 +3079,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3iW6zLHBsvL9NqiG8zuFiFBjO8=
+			uoU6e/nphaxnlf/8mTcnraFgeDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W1A/HzxA5dwhI7mWadRTv0VU+BU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tBh5ZZXeAoqZdLwCD2ksrP8kwXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0TKrXdCjVbKUpQzzONeYC9eyKOg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1477,7 +3115,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DkmI94nUcjJiEpjfXgvYiiKmbMU=
+			s6AwnV7eli0NjXOlH3RNPpg45vQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1491,11 +3129,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tyk6ig2TIJFAIUnKw9mjMRmRzwQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PPTEaZ+/vRo8ChN/Nj7y+TKakIk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WqBuUmlj0LTSux2qg5ioqzAi7XY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XC36+ST1mhFMhP8QDKg50T1ST6Y=
+			aK2AU6fK81+GfVSRGA75EuZ1V4I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1509,11 +3174,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mHk3KvfMsbb9fS5983J77EZ3Jg4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mISBCi5wX8GXRpW5lxQ/dmQbtBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c+Hb/GBnCotzJi7k/oG7vKPQOe4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q9v0Ucr03Vp/NhHaz+0D0h5XIb8=
+			0xtIhzz/CHx9nXek9BdoM95O8cs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1527,11 +3219,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dZn/9GLZDiyk4yqOPfNiqcdCLTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mISBCi5wX8GXRpW5lxQ/dmQbtBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			75P//reFIQ+EtKLmnz3nYNGCDYs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iK1rau95T+y2hWNKtcf5pyVszTI=
+			/ZxOl453FNXZVUWta62LFNup9lQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1545,11 +3264,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4qzmJA8HXltBuFGdZRTZ+BXEE0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H6HB80+ARMoV0X/GpuIw8wKEd/Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F6tuoqhgQ8klsDKzo3/Uz5nHGt4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZaVBSU0NG/mghq58YBCA2ltTu14=
+			powu5bmIch0WN23K6V7iN7gYC6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1563,11 +3309,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TZ9v36k+hKGTizh8aREL0ghvB3w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GTtIH7XROU3HdLTDp7Os19c0WxY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0oDCKyy6CzDelQG4VIeuxd6Adk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g94ZK9vpSEqOE32puqq6TYkpj+Q=
+			zPfoS7Ld1ew55JtxoKMf9DKY+kw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1581,11 +3354,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e7SHAZVvkHT5K6OaeXr3nOLBOcg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0KwhCSP0yaAZTRjwlncqbZxyVJw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			atff/hThIydBWwV5XamwCDAG20g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jyBOxjEymU5GGbhdT1d1keSrJ+U=
+			gH4C5THgtqbepfB2XGo1vR4c0zk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1599,11 +3399,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tzc7rQbYlJxXb+zYawe1uqrIvis=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tBh5ZZXeAoqZdLwCD2ksrP8kwXQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GpAZDrKx+vng4MK8bBZ4ZlmdpEw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ypHrCZx5F2NZniPvfcJhBKkhJW0=
+			aa0BzIPm0A/PX4sA3FHcnVFueYA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1617,11 +3444,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A96GQON0Yl06Q2FDnz/QPmRxzlM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mqxBEo0gsJzSqz7fG5xbXc91b4M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E6LadxoHsmoeElSnNEa1fNcUIOo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3SOzPYeHtptygE3rsJIcnMZq5v8=
+			X5XcUQmB3z1jXz8hWo5rBdiZLSE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1635,11 +3489,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cKDCJOZnLvlTMD0GVehZokCiDs0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7pviJJLRs991CdPt9DUPzpkT2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vDfHnI4DjU5I3QRofdzpJO491ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s7AFoSVarFS6xekwVb6Si4Vavms=
+			gfZGWWsCbO0e7SZ6R3BMJGvJR5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1653,11 +3534,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TVTSyVwnlUdmYklFFAZg9J3Xc1M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U6XJLZAgFLcRg315rIyFwi4VhDM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eqjgrVLOwemuShHRdTA589TRqdI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dMQKJvZ0qH378Mstbsa4XbOT7yo=
+			j3NYnf2IeYyLX4u9/Kopk0v7T9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1671,11 +3579,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LeuBIie+kEnF1APDVTiNgR2Zl6M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EvzvPNrIVCGhHkgtaChh5jCz7ww=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z9Xdqt8R6Jlio8uVKMMiBMlJlWk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3tkWGz9IcdSvqsdqeIvIBXjQXfo=
+			7LZDl7ceFJHMjYxjNzShtI593F0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1689,11 +3624,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pCxPVEVchgUB0iC9ywzFdWklXQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KmkW9M5u+HKSgNVbGTPzFjHFhHc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7ttp1aSi3BY2o0s+VIs6gPmHdks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FC5rnWKwH6ZGGcTtOhgLGU67uI8=
+			kNDvjKUHc0lxszpKWKBl6//6TkA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1707,11 +3669,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			om14mVvgxIkwRsy3FFsPxZlZ6Os=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T18UryAXR5iEb42LJSPEF4FYjNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+2pqSZsfnStLyISThG6RKhJaizA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uGkgFNucIiPwyBxabj1CcFbsAtM=
+			0oEuMRs8R3jC/dlaJRq3x82l8tE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1725,11 +3714,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_TW.lproj/ICPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v0G/97Av6o1/AWpaXK4wQArGAvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ICPasswordLockTileView.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T18UryAXR5iEb42LJSPEF4FYjNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/ICSettingsPasswordChangeViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+2pqSZsfnStLyISThG6RKhJaizA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H56bFMKCehTYiV8VjedPbotOrmA=
+			WOtzD3oqo1c7qNzpaCujDmeh9d8=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>BlacklistedWatchKitApps.plist</key>
+		<data>
+		O8VWKtXe9wLWZU2mp3RmEnOL8oQ=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		kgNZZLSE2mAqJhCPiyZRupdmHQ0=
+		BAXV38MnmlUILtaLmnn/BitZUbg=
 		</data>
 		<key>ar.lproj/GlanceNames.strings</key>
 		<dict>
@@ -94,15 +98,6 @@
 			<key>hash</key>
 			<data>
 			6QMizpVIth7AFUIAdaU04kBRnZE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/GlanceNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KyE/2PIZWOLX0JPwP6rDlqrSUDg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -371,6 +366,10 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>BlacklistedWatchKitApps.plist</key>
+		<data>
+		O8VWKtXe9wLWZU2mp3RmEnOL8oQ=
+		</data>
 		<key>ar.lproj/GlanceNames.strings</key>
 		<dict>
 			<key>hash</key>
@@ -457,15 +456,6 @@
 			<key>hash</key>
 			<data>
 			6QMizpVIth7AFUIAdaU04kBRnZE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/GlanceNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KyE/2PIZWOLX0JPwP6rDlqrSUDg=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -82,7 +82,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		n+C/nKEBBv4xrt1yllphNILxaOs=
+		EYgd/My0xU8i2Sr/PlLIH5RUK1c=
 		</data>
 		<key>Italian.lproj/AssistantSettings.strings</key>
 		<dict>
@@ -122,15 +122,15 @@
 		</dict>
 		<key>KBLayouts_AppleTV.dylib</key>
 		<data>
-		eKf/9qDVk8MlZKeZK3+KnOXL4pM=
+		s4Y2ORV7A6Fai1Gvmdby/bIo0F8=
 		</data>
 		<key>KBLayouts_iPad.dylib</key>
 		<data>
-		0gVleMY82K+c8bHBauIHAaJ2Oq8=
+		yZm+twtRSI+/8Q7cmMdvmrRDM84=
 		</data>
 		<key>KBLayouts_iPhone.dylib</key>
 		<data>
-		ubTakyw5PSoJN5rKlyjQNQWFAZI=
+		5/IRSb/9XKS6LIzxJgYPNjBR5U0=
 		</data>
 		<key>Keyboard-default.plist</key>
 		<data>
@@ -157,6 +157,10 @@
 		<key>TIUserDictionaryEmojiCharacterSet.bitmap</key>
 		<data>
 		AlSSfCRA+gcSaVJzjOdJDZN8JXk=
+		</data>
+		<key>TextBasedStubs/TextInput.tbd</key>
+		<data>
+		Qu1/QvOt0GE1E6DpVxOC1W+seZM=
 		</data>
 		<key>UserDictionary.momd/UserDictionary.mom</key>
 		<data>
@@ -296,24 +300,6 @@
 			<key>hash</key>
 			<data>
 			FpJTdrk/aggdHwNWPXelXmmrnsY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/AssistantSettings.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/oOCdMMcbH4wJc75rsL1mVc+Y5E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/TIUserDictionarySampleShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VfqEJwFf+OzVi67AgxihmRt3yJk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -867,15 +853,15 @@
 		</dict>
 		<key>KBLayouts_AppleTV.dylib</key>
 		<data>
-		eKf/9qDVk8MlZKeZK3+KnOXL4pM=
+		s4Y2ORV7A6Fai1Gvmdby/bIo0F8=
 		</data>
 		<key>KBLayouts_iPad.dylib</key>
 		<data>
-		0gVleMY82K+c8bHBauIHAaJ2Oq8=
+		yZm+twtRSI+/8Q7cmMdvmrRDM84=
 		</data>
 		<key>KBLayouts_iPhone.dylib</key>
 		<data>
-		ubTakyw5PSoJN5rKlyjQNQWFAZI=
+		5/IRSb/9XKS6LIzxJgYPNjBR5U0=
 		</data>
 		<key>Keyboard-default.plist</key>
 		<data>
@@ -903,6 +889,15 @@
 		<data>
 		AlSSfCRA+gcSaVJzjOdJDZN8JXk=
 		</data>
+		<key>TextBasedStubs/TextInput.tbd</key>
+		<data>
+		Qu1/QvOt0GE1E6DpVxOC1W+seZM=
+		</data>
+		<key>TextInput.tbd</key>
+		<dict>
+			<key>symlink</key>
+			<string>TextBasedStubs/TextInput.tbd</string>
+		</dict>
 		<key>UserDictionary.momd/UserDictionary.mom</key>
 		<data>
 		+58jph/TwKjc0HTf/rJ73I9rbhM=
@@ -1041,24 +1036,6 @@
 			<key>hash</key>
 			<data>
 			FpJTdrk/aggdHwNWPXelXmmrnsY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/AssistantSettings.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/oOCdMMcbH4wJc75rsL1mVc+Y5E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es_MX.lproj/TIUserDictionarySampleShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VfqEJwFf+OzVi67AgxihmRt3yJk=
 			</data>
 			<key>optional</key>
 			<true/>
