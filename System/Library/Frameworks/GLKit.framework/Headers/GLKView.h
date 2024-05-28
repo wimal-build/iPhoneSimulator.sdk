@@ -60,7 +60,7 @@ NS_CLASS_AVAILABLE(NA, 5_0)
 
 }
 
-- (id)initWithFrame:(CGRect)frame context:(EAGLContext *)context;
+- (instancetype)initWithFrame:(CGRect)frame context:(EAGLContext *)context;
 
 @property (nonatomic, assign) IBOutlet id <GLKViewDelegate> delegate;
 
@@ -90,7 +90,7 @@ NS_CLASS_AVAILABLE(NA, 5_0)
  Returns a UIImage of the resulting draw. Snapshot should never be called from within the draw method or from a
  thread other than the main thread.
  */
-- (UIImage *)snapshot;
+@property (readonly, strong) UIImage *snapshot;
 
 /*
  Controls whether the view responds to setNeedsDisplay. If true, then the view behaves similarily to a UIView.

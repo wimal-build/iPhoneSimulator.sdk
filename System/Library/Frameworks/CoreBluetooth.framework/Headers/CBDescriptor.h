@@ -5,11 +5,11 @@
  *	@copyright 2011 Apple, Inc. All rights reserved.
  */
 
-#import <CoreBluetooth/CBDefines.h>
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
 
-#import <Foundation/Foundation.h>
-
-
+#import <CoreBluetooth/CBAttribute.h>
 
 @class CBCharacteristic, CBUUID;
 
@@ -21,7 +21,7 @@
  *
  */
 NS_CLASS_AVAILABLE(10_7, 5_0)
-CB_EXTERN_CLASS @interface CBDescriptor : NSObject
+CB_EXTERN_CLASS @interface CBDescriptor : CBAttribute
 
 /*!
  *  @property characteristic
@@ -31,15 +31,6 @@ CB_EXTERN_CLASS @interface CBDescriptor : NSObject
  *
  */
 @property(weak, readonly, nonatomic) CBCharacteristic *characteristic;
-
-/*!
- *  @property UUID
- *
- *  @discussion
- *      The Bluetooth UUID of the descriptor.
- *
- */
-@property(readonly, nonatomic) CBUUID *UUID;
 
 /*!
  *  @property value
@@ -76,6 +67,6 @@ CB_EXTERN_CLASS @interface CBMutableDescriptor : CBDescriptor
  *					once the parent service has been published.
  *
  */
-- (id)initWithType:(CBUUID *)UUID value:(id)value;
+- (instancetype)initWithType:(CBUUID *)UUID value:(id)value;
 
 @end

@@ -3,10 +3,11 @@
 
 	Framework:  AVFoundation
 
-	Copyright 2010-2013 Apple Inc. All rights reserved.
+	Copyright 2010-2014 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
+#import <AVFoundation/AVCaptureDevice.h>
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CMFormatDescription.h>
 #import <CoreMedia/CMSync.h>
@@ -442,8 +443,6 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 */
 - (void)removeOutput:(AVCaptureOutput *)output;
 
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
-
 /*!
  @method addInputWithNoConnections:
  @abstract
@@ -458,7 +457,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     AVCaptureSession.  -addInputWithNoConnections: may be called if you need 
     fine-grained control over which inputs are connected to which outputs.
 */
-- (void)addInputWithNoConnections:(AVCaptureInput *)input NS_AVAILABLE(10_7, NA);
+- (void)addInputWithNoConnections:(AVCaptureInput *)input NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method addOutputWithNoConnections:
@@ -474,7 +473,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     AVCaptureSession.  -addOutputWithNoConnections: may be called if you need 
     fine-grained control over which inputs are connected to which outputs.
 */
-- (void)addOutputWithNoConnections:(AVCaptureOutput *)output NS_AVAILABLE(10_7, NA);
+- (void)addOutputWithNoConnections:(AVCaptureOutput *)output NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method canAddConnection:
@@ -491,7 +490,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     adding connections is only necessary when adding an input or output with
     no connections.
 */
-- (BOOL)canAddConnection:(AVCaptureConnection *)connection NS_AVAILABLE(10_7, NA);
+- (BOOL)canAddConnection:(AVCaptureConnection *)connection NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method addConnection:
@@ -508,7 +507,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     adding connections is only necessary when adding an input or output with
     no connections.  -addConnection: may be called while the session is running.
 */
-- (void)addConnection:(AVCaptureConnection *)connection NS_AVAILABLE(10_7, NA);
+- (void)addConnection:(AVCaptureConnection *)connection NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method removeConnection:
@@ -521,9 +520,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @discussion
     -removeConnection: may be called while the session is running.
 */
-- (void)removeConnection:(AVCaptureConnection *)connection NS_AVAILABLE(10_7, NA);
-
-#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+- (void)removeConnection:(AVCaptureConnection *)connection NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method beginConfiguration
@@ -648,21 +645,21 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 /*!
  @property masterClock
  @abstract
- Provides the master clock being used for output synchronization.
+	Provides the master clock being used for output synchronization.
  @discussion
- The masterClock is readonly. Use masterClock to synchronize AVCaptureOutput data with external data sources (e.g motion samples).
- All capture output sample buffer timestamps are on the masterClock timebase.
+	The masterClock is readonly. Use masterClock to synchronize AVCaptureOutput data with external data sources (e.g motion samples). 
+	All capture output sample buffer timestamps are on the masterClock timebase.
+	
+	For example, if you want to reverse synchronize the output timestamps to the original timestamps, you can do the following:
+	In captureOutput:didOutputSampleBuffer:fromConnection:
  
- For example, if you want to reverse synchronize the output timestamps to the original timestamps, you can do the following:
- In captureOutput:didOutputSampleBuffer:fromConnection:
+	AVCaptureInputPort *port = [[connection inputPorts] objectAtIndex:0];
+	CMClockRef originalClock = [port clock];
  
- AVCaptureInputPort *port = [[connection inputPorts] objectAtIndex:0];
- CMClockRef originalClock = [port clock];
+	CMTime syncedPTS = CMSampleBufferGetPresentationTime( sampleBuffer );
+	CMTime originalPTS = CMSyncConvertTime( syncedPTS, [session masterClock], originalClock );
  
- CMTime syncedPTS = CMSampleBufferGetPresentationTime( sampleBuffer );
- CMTime originalPTS = CMSyncConvertTime( syncedPTS, [session masterClock], originalClock );
- 
- This property is key-value observable.
+	This property is key-value observable.
  */
 @property(nonatomic, readonly) __attribute__((NSObject)) CMClockRef masterClock NS_AVAILABLE(10_9, 7_0);
 
@@ -726,8 +723,6 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 	AVCaptureConnectionInternal *_internal;
 }
 
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
-
 /*!
  @method connectionWithInputPorts:output:
  @abstract
@@ -749,7 +744,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     automatically.  You do not need to manually create and add connections to the session unless
     you use the primitive -addInputWithNoConnections: or -addOutputWithNoConnections: methods.
 */
-+ (AVCaptureConnection *)connectionWithInputPorts:(NSArray *)ports output:(AVCaptureOutput *)output NS_AVAILABLE(10_7, NA);
++ (AVCaptureConnection *)connectionWithInputPorts:(NSArray *)ports output:(AVCaptureOutput *)output NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method connectionWithInputPort:videoPreviewLayer:
@@ -773,7 +768,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     manually create and add connections to the session unless you use AVCaptureVideoPreviewLayer's 
     primitive -initWithSessionWithNoConnection: or -setSessionWithNoConnection: methods.
 */
-+ (AVCaptureConnection *)connectionWithInputPort:(AVCaptureInputPort *)port videoPreviewLayer:(AVCaptureVideoPreviewLayer *)layer NS_AVAILABLE(10_7, NA);
++ (AVCaptureConnection *)connectionWithInputPort:(AVCaptureInputPort *)port videoPreviewLayer:(AVCaptureVideoPreviewLayer *)layer NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method initWithInputPorts:output:
@@ -796,7 +791,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     automatically.  You do not need to manually create and add connections to the session unless
     you use the primitive -addInputWithNoConnections: or -addOutputWithNoConnections: methods.
 */
-- (id)initWithInputPorts:(NSArray *)ports output:(AVCaptureOutput *)output NS_AVAILABLE(10_7, NA);
+- (id)initWithInputPorts:(NSArray *)ports output:(AVCaptureOutput *)output NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method initWithInputPort:videoPreviewLayer:
@@ -820,9 +815,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     manually create and add connections to the session unless you use AVCaptureVideoPreviewLayer's 
     primitive -initWithSessionWithNoConnection: or -setSessionWithNoConnection: methods.
 */
-- (id)initWithInputPort:(AVCaptureInputPort *)port videoPreviewLayer:(AVCaptureVideoPreviewLayer *)layer NS_AVAILABLE(10_7, NA);
-
-#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+- (id)initWithInputPort:(AVCaptureInputPort *)port videoPreviewLayer:(AVCaptureVideoPreviewLayer *)layer NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @property inputPorts
@@ -1099,6 +1092,42 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 @property(nonatomic) CGFloat videoScaleAndCropFactor NS_AVAILABLE_IOS(5_0);
 
 /*!
+ @property preferredVideoStabilizationMode
+ @abstract
+    Indicates the stabilization mode to apply to video flowing through the receiver when it is supported.
+ 
+ @discussion
+    This property is only applicable to AVCaptureConnection instances involving video.
+    On devices where the video stabilization feature is supported, only a subset of available source
+    formats may be available for stabilization.  By setting the preferredVideoStabilizationMode
+    property to a value other than AVCaptureVideoStabilizationModeOff, video flowing through the receiver is stabilized
+    when the mode is available.  Enabling video stabilization introduces additional latency into the video capture pipeline and
+    may consume more system memory depending on the stabilization mode and format.  If the preferred stabilization mode isn't available,
+    the activeVideoStabilizationMode will be set to AVCaptureVideoStabilizationModeOff.  Clients may key-value observe the
+    activeVideoStabilizationMode property to know which stabilization mode is in use or when it is off.  The default value
+    is AVCaptureVideoStabilizationModeOff.  When setting this property to AVCaptureVideoStabilizationModeAuto, an appropriate
+    stabilization mode will be chosen based on the format and frame rate.  For apps linked before iOS 6.0, the default value
+    is AVCaptureVideoStabilizationModeStandard for a video connection attached to an AVCaptureMovieFileOutput instance.
+    For apps linked on or after iOS 6.0, the default value is always AVCaptureVideoStabilizationModeOff.  Setting a video stabilization
+    mode using this property may change the value of enablesVideoStabilizationWhenAvailable.
+*/
+@property(nonatomic) AVCaptureVideoStabilizationMode preferredVideoStabilizationMode NS_AVAILABLE_IOS(8_0);
+
+/*!
+ @property activeVideoStabilizationMode
+ @abstract
+    Indicates the stabilization mode currently being applied to video flowing through the receiver.
+ 
+ @discussion
+    This property is only applicable to AVCaptureConnection instances involving video.
+    On devices where the video stabilization feature is supported, only a subset of available source formats may be stabilized.
+    The activeVideoStabilizationMode property returns a value other than AVCaptureVideoStabilizationModeOff
+    if video stabilization is currently in use.  This property never returns AVCaptureVideoStabilizationModeAuto.
+    This property is key-value observable.
+*/
+@property(nonatomic, readonly) AVCaptureVideoStabilizationMode activeVideoStabilizationMode NS_AVAILABLE_IOS(8_0);
+
+/*!
  @property supportsVideoStabilization
  @abstract
     Indicates whether the connection supports video stabilization.
@@ -1120,9 +1149,9 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     On devices where the video stabilization feature is supported, only a subset of available source 
     formats and resolutions may be available for stabilization.  The videoStabilizationEnabled 
     property returns YES if video stabilization is currently in use.  This property is key-value
-    observable.
+    observable.  This property is deprecated.  Use activeVideoStabilizationMode instead.
 */
-@property(nonatomic, readonly, getter=isVideoStabilizationEnabled) BOOL videoStabilizationEnabled NS_AVAILABLE_IOS(6_0);
+@property(nonatomic, readonly, getter=isVideoStabilizationEnabled) BOOL videoStabilizationEnabled NS_DEPRECATED_IOS(6_0, 8_0);
 
 /*!
  @property enablesVideoStabilizationWhenAvailable;
@@ -1140,9 +1169,9 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     property to know when stabilization is in use or not.  The default value is NO.
     For apps linked before iOS 6.0, the default value is YES for a video connection attached to an 
     AVCaptureMovieFileOutput instance.  For apps linked on or after iOS 6.0, the default value is
-    always NO.
+    always NO.  This property is deprecated.  Use preferredVideoStabilizationMode instead.
 */
-@property(nonatomic) BOOL enablesVideoStabilizationWhenAvailable NS_AVAILABLE_IOS(6_0);
+@property(nonatomic) BOOL enablesVideoStabilizationWhenAvailable NS_DEPRECATED_IOS(6_0, 8_0);
 
 @end
 

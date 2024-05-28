@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+(function(){return function(e){if(e.html){var t=e.html.replace('style="display:none>','style="display:none">'),a=parseMicrodata(t);if(a.length){for(var n=!1,r=0;a.length>r;r++)if("http://schema.org/RentalCarReservation"!==a[r]["@type"]){n=!0;break}if(!n)return a}}}}).call();

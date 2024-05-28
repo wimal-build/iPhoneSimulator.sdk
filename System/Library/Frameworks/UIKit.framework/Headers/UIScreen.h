@@ -2,12 +2,14 @@
 //  UIScreen.h
 //  UIKit
 //
-//  Copyright (c) 2007-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UITraitCollection.h>
+#import <UIKit/UIView.h>
 
 @class UIScreenMode, CADisplayLink, UIView;
 
@@ -26,7 +28,7 @@ typedef NS_ENUM(NSInteger, UIScreenOverscanCompensation) {
     UIScreenOverscanCompensationInsetApplicationFrame, // the screen's applicationFrame will be inset in the bounds. content drawn in the bounds outside applicationFrame may be clipped
 };
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject <UITraitEnvironment>
 
 + (NSArray *)screens NS_AVAILABLE_IOS(3_2);          // all screens currently attached to the device
 + (UIScreen *)mainScreen;      // the device's internal screen
@@ -45,6 +47,12 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject
 @property(nonatomic) CGFloat brightness NS_AVAILABLE_IOS(5_0);        // 0 .. 1.0, where 1.0 is maximum brightness. Only supported by main screen.
 @property(nonatomic) BOOL wantsSoftwareDimming NS_AVAILABLE_IOS(5_0); // Default is NO. If YES, brightness levels lower than that of which the hardware is capable are emulated in software, if neccessary. Having enabled may entail performance cost.
 
+@property (readonly) id <UICoordinateSpace> coordinateSpace NS_AVAILABLE_IOS(8_0);
+@property (readonly) id <UICoordinateSpace> fixedCoordinateSpace NS_AVAILABLE_IOS(8_0);
+
+@property(nonatomic,readonly) CGRect  nativeBounds NS_AVAILABLE_IOS(8_0);  // Native bounds of the physical screen in pixels
+@property(nonatomic,readonly) CGFloat nativeScale  NS_AVAILABLE_IOS(8_0);  // Native scale factor of the physical screen
+
 - (CADisplayLink *)displayLinkWithTarget:(id)target selector:(SEL)sel NS_AVAILABLE_IOS(4_0);
 
 @end
@@ -53,4 +61,3 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject
 // Please see snapshotViewAfterScreenUpdates: in UIView.h for some important details on the behavior of this method when called from layoutSubviews.
 - (UIView *)snapshotViewAfterScreenUpdates:(BOOL)afterUpdates NS_AVAILABLE_IOS(7_0);
 @end
-

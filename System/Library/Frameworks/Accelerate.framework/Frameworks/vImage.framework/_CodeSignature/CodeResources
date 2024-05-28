@@ -4,245 +4,220 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/Alpha.h</key>
+		<data>
+		OkMlkqh+/haV6XpRObSlvCgGjAc=
+		</data>
+		<key>Headers/BasicImageTypes.h</key>
+		<data>
+		nm51CKtCqu+UA5NyU+xRfC4Fyjo=
+		</data>
+		<key>Headers/Conversion.h</key>
+		<data>
+		cpZ06m1J99tkvAEMOoCzIixYyZU=
+		</data>
+		<key>Headers/Convolution.h</key>
+		<data>
+		gisYEXGa5kPWC2YS0xC8fFcAe3E=
+		</data>
+		<key>Headers/Geometry.h</key>
+		<data>
+		xn7woDjHR428THcguoURL2ke9q4=
+		</data>
+		<key>Headers/Histogram.h</key>
+		<data>
+		bcjZGbcNxm4ycXNmth73jVMeRsk=
+		</data>
+		<key>Headers/Morphology.h</key>
+		<data>
+		ERf5FFr4ZgMIQiDBR3LDBr5Zxpo=
+		</data>
+		<key>Headers/Transform.h</key>
+		<data>
+		xMh+R7XlVfzuXpp8oQ4LUtcq/rg=
+		</data>
+		<key>Headers/vImage.h</key>
+		<data>
+		ExnwiP93rgKfuHxMZYgVK9zWR4Q=
+		</data>
+		<key>Headers/vImage_CVUtilities.h</key>
+		<data>
+		mS0LNDYfAuB9YJTMI7myKfyHP4I=
+		</data>
+		<key>Headers/vImage_Types.h</key>
+		<data>
+		fq7i/FgCW+23AgkYh3VOqQbME5g=
+		</data>
+		<key>Headers/vImage_Utilities.h</key>
+		<data>
+		wI7DAGXvU7aJx+jn7Q5MEM1K60Q=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		PH4b3OOpxZB6Qa9L3onXFKMRXLQ=
+		</data>
+		<key>Libraries/libCGInterfaces.dylib</key>
+		<data>
+		oi29AFE0yI3qkVvMox0e+eqVlvk=
+		</data>
 		<key>version.plist</key>
 		<data>
-		pydk3q31gPCdc1ZNnNooM83TCAo=
+		2+b4/NSSpaIl1XsL0A331Ke7QZk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Info.plist</key>
+		<key>Headers/Alpha.h</key>
 		<data>
-		wvfNZz86u8kQ4sx+8EPMm8kV+bE=
+		OkMlkqh+/haV6XpRObSlvCgGjAc=
+		</data>
+		<key>Headers/BasicImageTypes.h</key>
+		<data>
+		nm51CKtCqu+UA5NyU+xRfC4Fyjo=
+		</data>
+		<key>Headers/Conversion.h</key>
+		<data>
+		cpZ06m1J99tkvAEMOoCzIixYyZU=
+		</data>
+		<key>Headers/Convolution.h</key>
+		<data>
+		gisYEXGa5kPWC2YS0xC8fFcAe3E=
+		</data>
+		<key>Headers/Geometry.h</key>
+		<data>
+		xn7woDjHR428THcguoURL2ke9q4=
+		</data>
+		<key>Headers/Histogram.h</key>
+		<data>
+		bcjZGbcNxm4ycXNmth73jVMeRsk=
+		</data>
+		<key>Headers/Morphology.h</key>
+		<data>
+		ERf5FFr4ZgMIQiDBR3LDBr5Zxpo=
+		</data>
+		<key>Headers/Transform.h</key>
+		<data>
+		xMh+R7XlVfzuXpp8oQ4LUtcq/rg=
+		</data>
+		<key>Headers/vImage.h</key>
+		<data>
+		ExnwiP93rgKfuHxMZYgVK9zWR4Q=
+		</data>
+		<key>Headers/vImage_CVUtilities.h</key>
+		<data>
+		mS0LNDYfAuB9YJTMI7myKfyHP4I=
+		</data>
+		<key>Headers/vImage_Types.h</key>
+		<data>
+		fq7i/FgCW+23AgkYh3VOqQbME5g=
+		</data>
+		<key>Headers/vImage_Utilities.h</key>
+		<data>
+		wI7DAGXvU7aJx+jn7Q5MEM1K60Q=
+		</data>
+		<key>Libraries/libCGInterfaces.dylib</key>
+		<data>
+		oi29AFE0yI3qkVvMox0e+eqVlvk=
 		</data>
 		<key>version.plist</key>
 		<data>
-		pydk3q31gPCdc1ZNnNooM83TCAo=
+		2+b4/NSSpaIl1XsL0A331Ke7QZk=
 		</data>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>@[0-9]+</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
-		</dict>
-		<key>\.licns$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/</key>
+		<key>^</key>
 		<true/>
-		<key>^Resources/.*\.lproj/</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>30</real>
-		</dict>
-		<key>^Resources/.*\.lproj/locversion.plist$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>30</real>
-		</dict>
-		<key>^Resources/.*\.nib/classes\.nib$</key>
+		<key>^.*\.lproj/</key>
 		<dict>
 			<key>optional</key>
 			<true/>
 			<key>weight</key>
-			<real>5</real>
+			<real>1000</real>
 		</dict>
-		<key>^Resources/.*\.nib/data\.dependency$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/designable\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/info\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/BridgeSupport/[^/]*\.(bridgesupport|dylib)$</key>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
-		</dict>
-		<key>^Resources/English\.lproj/</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>40</real>
-		</dict>
-		<key>^Resources/[A-Za-z]*.nib$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/[a-z]*-[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/libCGInterfaces.dylib$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
+			<real>1100</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
 	<key>rules2</key>
 	<dict>
-		<key>@[0-9]+</key>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
+			<real>2000</real>
 		</dict>
-		<key>\.licns$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
-			<real>0.0</real>
+			<real>10</real>
 		</dict>
-		<key>^Resources/</key>
+		<key>^.*</key>
 		<true/>
-		<key>^Resources/.*\.lproj/</key>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>30</real>
+			<real>1100</real>
 		</dict>
-		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<key>^Info\.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>30</real>
+			<real>20</real>
 		</dict>
-		<key>^Resources/.*\.nib/classes\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/data\.dependency$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/designable\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/info\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/BridgeSupport/[^/]*\.(bridgesupport|dylib)$</key>
+		<key>^PkgInfo$</key>
 		<dict>
 			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>^Resources/English\.lproj/</key>
+		<key>^embedded\.provisionprofile$</key>
 		<dict>
-			<key>optional</key>
-			<true/>
 			<key>weight</key>
-			<real>40</real>
+			<real>20</real>
 		</dict>
-		<key>^Resources/[A-Za-z]*.nib$</key>
+		<key>^version\.plist$</key>
 		<dict>
-			<key>omit</key>
-			<true/>
 			<key>weight</key>
-			<real>50</real>
+			<real>20</real>
 		</dict>
-		<key>^Resources/[a-z]*-[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/libCGInterfaces.dylib$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>top</key>
-			<true/>
-			<key>weight</key>
-			<real>0.0</real>
-		</dict>
-		<key>^version.plist$</key>
-		<true/>
 	</dict>
 </dict>
 </plist>

@@ -58,10 +58,6 @@ figure {
     clear: both;
 }
 
-#article .leading-image img.full-width {
-    width: 100%;
-}
-
 #article .leading-image .credit {
     margin: 0;
     text-align: right;
@@ -87,6 +83,10 @@ figure {
     font-size: 0.75em;
     line-height: 1.4em;
     text-align: start;
+}
+
+#article .auxiliary > * {
+    -webkit-margin-start: 0;
 }
 
 #article .auxiliary img, #article .auxiliary > *:first-child {
@@ -121,6 +121,13 @@ figure {
     clear: both;
 }
 
+#article ul.list-style-type-none,
+#article ol.list-style-type-none,
+#article .list-style-type-none > li {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+}
+
 /* Collapse excess whitespace. */
 .page p > p:empty,
 .page div > p:empty,
@@ -146,6 +153,16 @@ figure {
     font-size: 0.9em;
     text-align: start;
     word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+.page table td, .page table th {
+    padding: 0.25em 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page table th {
+    background-color: rgba(0, 0, 0, 0.025);
 }
 
 .page a {

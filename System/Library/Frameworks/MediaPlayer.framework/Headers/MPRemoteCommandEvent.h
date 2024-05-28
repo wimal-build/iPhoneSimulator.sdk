@@ -32,7 +32,7 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 typedef NS_ENUM(NSUInteger, MPSeekCommandEventType) {
     MPSeekCommandEventTypeBeginSeeking,
     MPSeekCommandEventTypeEndSeeking
-};
+} NS_ENUM_AVAILABLE_IOS(7_1);
 
 MP_EXTERN_CLASS_AVAILABLE(7_1)
 @interface MPSeekCommandEvent : MPRemoteCommandEvent

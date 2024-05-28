@@ -2,7 +2,7 @@
 //  UIGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,7 +31,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIGestureRecognizer : NSObject
 // Valid action method signatures:
 //     -(void)handleGesture;
 //     -(void)handleGesture:(UIGestureRecognizer*)gestureRecognizer;
-- (id)initWithTarget:(id)target action:(SEL)action; // default initializer
+- (instancetype)initWithTarget:(id)target action:(SEL)action; // designated initializer
 
 - (void)addTarget:(id)target action:(SEL)action;    // add a target/action pair. you can call this multiple times to specify multiple target/actions
 - (void)removeTarget:(id)target action:(SEL)action; // remove the specified target/action pair. passing nil for target matches all targets, and the same for actions

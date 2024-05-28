@@ -1,0 +1,71 @@
+-- Migrates traces from v2 to v3
+-- We're dropping mk_location_type and adding a type column for CLLocationType.
+
+BEGIN TRANSACTION;
+
+CREATE TABLE locations_backup (
+    id,
+    db_timestamp,
+    cl_timestamp,
+    latitude,
+    longitude,
+    horizontal_accuracy,
+    vertical_accuracy,
+    altitude,
+    speed,
+    course,
+    course_accuracy,
+    -- REMOVED: mk_location_type
+    error_data);
+
+INSERT INTO locations_backup SELECT
+    id,
+    db_timestamp,
+    cl_timestamp,
+    latitude,
+    longitude,
+    horizontal_accuracy,
+    vertical_accuracy,
+    altitude,
+    speed,
+    course,
+    course_accuracy,
+    -- REMOVED: mk_location_type
+    error_data FROM locations;
+
+DROP TABLE locations;
+
+CREATE TABLE locations
+(
+    id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+    db_timestamp        NUMERIC NOT NULL,
+    cl_timestamp        NUMERIC,
+    latitude            NUMERIC,
+    longitude           NUMERIC,
+    horizontal_accuracy NUMERIC,
+    vertical_accuracy   NUMERIC,
+    altitude            NUMERIC,
+    speed               NUMERIC,
+    course              NUMERIC,
+    course_accuracy     NUMERIC,
+    type                INTEGER,        -- NEW!
+    error_data          BLOB
+);
+
+INSERT INTO locations SELECT id,
+    db_timestamp,
+    cl_timestamp,
+    latitude,
+    longitude,
+    horizontal_accuracy,
+    vertical_accuracy,
+    altitude,
+    speed,
+    course,
+    course_accuracy,
+    1 as type, -- CLLocationType.kCLLocationType_GPS = 1
+    error_data FROM locations_backup;
+
+DROP TABLE locations_backup;
+
+COMMIT;

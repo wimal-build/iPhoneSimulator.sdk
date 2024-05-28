@@ -9,10 +9,10 @@ defaultvoice:Kyoko
     <language>Japanese</language>
     <langcode>JPJ</langcode>
     <langid>32</langid>
-    <langversion>5.2.3.13327</langversion>
+    <langversion>5.2.4.14071</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Kyoko</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13289</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -72,13 +72,26 @@ defaultvoice:Kyoko
       userdct/jpj
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      kyoko/userdct/jpj
+      userdct/jpj/kyoko
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/jpj
+    </RESOURCE>
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/jpj
+    </RESOURCE>
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/spell/jpj
+    </RESOURCE>
     
     
     

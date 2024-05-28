@@ -27,7 +27,7 @@ COREDATA_EXTERN NSString * const NSPersistentStoreSaveConflictsErrorKey NS_AVAIL
 
 COREDATA_EXTERN NSString * const NSSQLiteErrorDomain NS_AVAILABLE(10_5,3_0);           // Predefined domain for SQLite errors, value of "code" will correspond to preexisting values in SQLite.
 
-enum {
+enum : NSInteger {
     NSManagedObjectValidationError                   = 1550,   // generic validation error
     NSValidationMultipleErrorsError                  = 1560,   // generic message for error containing multiple validation errors
     NSValidationMissingMandatoryPropertyError        = 1570,   // non-optional property with a nil value
@@ -62,7 +62,7 @@ enum {
     NSPersistentStoreOpenError                       = 134080, // an error occurred while attempting to open the persistent store
     NSPersistentStoreTimeoutError                    = 134090, // failed to connect to the persistent store within the specified timeout (see NSPersistentStoreTimeoutOption)
 	NSPersistentStoreUnsupportedRequestTypeError	 = 134091, // an NSPersistentStore subclass was passed an NSPersistentStoreRequest that it did not understand
-
+    
     NSPersistentStoreIncompatibleVersionHashError    = 134100, // entity version hashes incompatible with data model
     NSMigrationError                                 = 134110, // general migration error
     NSMigrationCancelledError                        = 134120, // migration failed due to manual cancellation

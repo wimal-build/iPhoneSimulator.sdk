@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKitDefines.h>
 
-SK_EXTERN NSString * const SKErrorDomain __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+SK_EXTERN NSString * const SKErrorDomain NS_AVAILABLE_IOS(3_0);
 
 // error codes for the SKErrorDomain
 enum {

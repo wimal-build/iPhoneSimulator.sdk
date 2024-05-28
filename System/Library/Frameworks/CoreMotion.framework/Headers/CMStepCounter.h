@@ -43,7 +43,7 @@ typedef void (^CMStepUpdateHandler)(NSInteger numberOfSteps, NSDate *timestamp, 
  *      by either calling stopStepCountingUpdates or upon CMStepCounter deallocation.
  *
  */
-NS_CLASS_AVAILABLE(NA,7_0)
+NS_CLASS_DEPRECATED_IOS(7_0,8_0,"Use CMPedometer instead")
 @interface CMStepCounter : NSObject
 
 /*

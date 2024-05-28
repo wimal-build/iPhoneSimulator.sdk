@@ -2,7 +2,7 @@
 //  UIImage.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,6 +11,8 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIColor.h>
 #import <UIKit/UIGeometry.h>
+
+@class UITraitCollection, UIImageAsset;
 
 typedef NS_ENUM(NSInteger, UIImageOrientation) {
     UIImageOrientationUp,            // default orientation
@@ -33,6 +35,8 @@ typedef NS_ENUM(NSInteger, UIImageResizingMode) {
     UIImageResizingModeStretch,
 };
 
+/* Images are created with UIImageRenderingModeAutomatic by default. An image with this mode is interpreted as a template image or an original image based on the context in which it is rendered. For example, navigation bars, tab bars, toolbars, and segmented controls automatically treat their foreground images as templates, while image views and web views treat their images as originals. You can use UIImageRenderingModeAlwaysTemplate to force your image to always be rendered as a template or UIImageRenderingModeAlwaysOriginal to force your image to always be rendered as an original.
+ */
 typedef NS_ENUM(NSInteger, UIImageRenderingMode) {
     UIImageRenderingModeAutomatic,          // Use the default rendering mode for the context where the image is used
     
@@ -40,7 +44,7 @@ typedef NS_ENUM(NSInteger, UIImageRenderingMode) {
     UIImageRenderingModeAlwaysTemplate,     // Always draw the image as a template image, ignoring its color information
 } NS_ENUM_AVAILABLE_IOS(7_0);
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSCoding> {
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding> {
   @package
     CFTypeRef _imageRef;
     CGFloat   _scale;
@@ -50,13 +54,14 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSCoding> {
 	unsigned int cached:1;
 	unsigned int hasPattern:1;
 	unsigned int isCIImage:1;
-        unsigned int imageSetIdentifer:16;
 	unsigned int renderingMode:2;
         unsigned int suppressesAccessibilityHairlineThickening:1;
+        unsigned int hasDecompressionInfo:1;
     } _imageFlags;
 }
 
 + (UIImage *)imageNamed:(NSString *)name;      // load from main bundle
++ (UIImage *)imageNamed:(NSString *)name inBundle:(NSBundle *)bundle compatibleWithTraitCollection:(UITraitCollection *)traitCollection;
 
 + (UIImage *)imageWithContentsOfFile:(NSString *)path;
 + (UIImage *)imageWithData:(NSData *)data;
@@ -66,17 +71,17 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSCoding> {
 + (UIImage *)imageWithCIImage:(CIImage *)ciImage NS_AVAILABLE_IOS(5_0);
 + (UIImage *)imageWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(6_0);
 
-- (id)initWithContentsOfFile:(NSString *)path;
-- (id)initWithData:(NSData *)data;
-- (id)initWithData:(NSData *)data scale:(CGFloat)scale NS_AVAILABLE_IOS(6_0);
-- (id)initWithCGImage:(CGImageRef)cgImage;
-- (id)initWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(4_0);
-- (id)initWithCIImage:(CIImage *)ciImage NS_AVAILABLE_IOS(5_0);
-- (id)initWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(6_0);
+- (instancetype)initWithContentsOfFile:(NSString *)path;
+- (instancetype)initWithData:(NSData *)data;
+- (instancetype)initWithData:(NSData *)data scale:(CGFloat)scale NS_AVAILABLE_IOS(6_0);
+- (instancetype)initWithCGImage:(CGImageRef)cgImage;
+- (instancetype)initWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(4_0);
+- (instancetype)initWithCIImage:(CIImage *)ciImage NS_AVAILABLE_IOS(5_0);
+- (instancetype)initWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(6_0);
 
 @property(nonatomic,readonly) CGSize             size;             // reflects orientation setting. In iOS 4.0 and later, this is measured in points. In 3.x and earlier, measured in pixels
 @property(nonatomic,readonly) CGImageRef         CGImage;          // returns underlying CGImageRef or nil if CIImage based
-- (CGImageRef)CGImage NS_RETURNS_INNER_POINTER;
+- (CGImageRef)CGImage NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED;
 @property(nonatomic,readonly) CIImage           *CIImage NS_AVAILABLE_IOS(5_0); // returns underlying CIImage or nil if CGImageRef based
 @property(nonatomic,readonly) UIImageOrientation imageOrientation; // this will affect how the image is composited
 @property(nonatomic,readonly) CGFloat            scale NS_AVAILABLE_IOS(4_0);
@@ -118,6 +123,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSCoding> {
 - (UIImage *)imageWithRenderingMode:(UIImageRenderingMode)renderingMode NS_AVAILABLE_IOS(7_0);
 @property(nonatomic, readonly) UIImageRenderingMode renderingMode NS_AVAILABLE_IOS(7_0);
 
+@property (nonatomic, readonly) UITraitCollection *traitCollection NS_AVAILABLE_IOS(8_0); // describes the image in terms of its traits
+@property (nonatomic, readonly) UIImageAsset *imageAsset NS_AVAILABLE_IOS(8_0); // The asset is not encoded along with the image 
+
 @end
 
 @interface UIImage(UIImageDeprecated)
@@ -133,10 +141,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSCoding> {
 
 @interface CIImage(UIKitAdditions)
 
-- (id)initWithImage:(UIImage *)image NS_AVAILABLE_IOS(5_0);
-- (id)initWithImage:(UIImage *)image options:(NSDictionary *)options NS_AVAILABLE_IOS(5_0);
+- (instancetype)initWithImage:(UIImage *)image NS_AVAILABLE_IOS(5_0);
+- (instancetype)initWithImage:(UIImage *)image options:(NSDictionary *)options NS_AVAILABLE_IOS(5_0);
 
 @end
 
 UIKIT_EXTERN NSData *UIImagePNGRepresentation(UIImage *image);                               // return image as PNG. May return nil if image has no CGImageRef or invalid bitmap format
 UIKIT_EXTERN NSData *UIImageJPEGRepresentation(UIImage *image, CGFloat compressionQuality);  // return image as JPEG. May return nil if image has no CGImageRef or invalid bitmap format. compression is 0(most)..1(least)
+

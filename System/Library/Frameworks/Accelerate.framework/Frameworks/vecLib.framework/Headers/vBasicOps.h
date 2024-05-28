@@ -3,7 +3,7 @@
  
      Contains:   Basic Algebraic Operations for AltiVec
  
-     Version:    vecLib-459.0
+     Version:    vecLib-510.0
  
      Copyright:  � 1999-2014 by Apple Computer, Inc., all rights reserved.
  
@@ -17,12 +17,7 @@
 #define __VBASICOPS__
 
 #include <stdint.h>
-/*
-#ifndef __VECLIBTYPES__
-#include <vecLib/vecLibTypes.h>
-#endif
 
-*/
 #include "vecLibTypes.h"
 
 #include <Availability.h>
@@ -1153,4 +1148,3 @@ vR128Rotate(
 #endif
 
 #endif /* __VBASICOPS__ */
-

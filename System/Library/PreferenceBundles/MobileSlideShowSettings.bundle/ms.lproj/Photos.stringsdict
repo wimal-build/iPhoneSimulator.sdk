@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iPad ini tidak dapat %#@download_n_items@. Jika anda meneruskan, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>many</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>one</key>
+			<string>muat turun %d item resolusi penuh</string>
+			<key>other</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>two</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>zero</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>many</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>one</key>
+			<string>versi resolusi rendah item ini akan dikeluarkan</string>
+			<key>other</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>two</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>zero</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iPhone ini tidak dapat %#@download_n_items@. Jika anda meneruskan, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>many</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>one</key>
+			<string>muat turun %d item resolusi penuh</string>
+			<key>other</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>two</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>zero</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>many</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>one</key>
+			<string>versi resolusi rendah item ini akan dikeluarkan</string>
+			<key>other</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>two</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>zero</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iPod touch ini tidak dapat %#@download_n_items@. Jika anda meneruskan, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>many</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>one</key>
+			<string>muat turun %d item resolusi penuh</string>
+			<key>other</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>two</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+			<key>zero</key>
+			<string>muat turun %d foto dan video resolusi penuh</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>many</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>one</key>
+			<string>versi resolusi rendah item ini akan dikeluarkan</string>
+			<key>other</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>two</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+			<key>zero</key>
+			<string>versi resolusi rendah foto dan video ini akan dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@ dalam Pustaka Foto iCloud.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Foto ini akan kekal</string>
+			<key>many</key>
+			<string>Foto ini akan kekal</string>
+			<key>one</key>
+			<string>Foto ini akan kekal</string>
+			<key>other</key>
+			<string>Foto ini akan kekal</string>
+			<key>two</key>
+			<string>Foto ini akan kekal</string>
+			<key>zero</key>
+			<string>Foto ini akan kekal</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@ dalam Pustaka Foto iCloud.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Foto dan video ini akan kekal</string>
+			<key>many</key>
+			<string>Foto dan video ini akan kekal</string>
+			<key>one</key>
+			<string>Item ini akan kekal</string>
+			<key>other</key>
+			<string>Foto dan video ini akan kekal</string>
+			<key>two</key>
+			<string>Foto dan video ini akan kekal</string>
+			<key>zero</key>
+			<string>Foto dan video ini akan kekal</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@ dalam Pustaka Foto iCloud.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Video ini akan kekal</string>
+			<key>many</key>
+			<string>Video ini akan kekal</string>
+			<key>one</key>
+			<string>Video ini akan kekal</string>
+			<key>other</key>
+			<string>Video ini akan kekal</string>
+			<key>two</key>
+			<string>Video ini akan kekal</string>
+			<key>zero</key>
+			<string>Video ini akan kekal</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ Daripada iPad Ini</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Foto dan Video Akan Dikeluarkan</string>
+			<key>many</key>
+			<string>%d Foto dan Video Akan Dikeluarkan</string>
+			<key>one</key>
+			<string>%d Item Akan Dikeluarkan</string>
+			<key>other</key>
+			<string>%d Foto dan Video Akan Dikeluarkan</string>
+			<key>two</key>
+			<string>%d Foto dan Video Akan Dikeluarkan</string>
+			<key>zero</key>
+			<string>%d Foto dan Video Akan Dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ daripada iPhone ini. %#@they_will_remain_in@ Pustaka Foto iCloud.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d item akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>many</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>one</key>
+			<string>Item ini akan kekal dalam</string>
+			<key>other</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>two</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>zero</key>
+			<string>Foto ini akan kekal dalam</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ daripada iPod touch ini. %#@they_will_remain_in@ Pustaka Foto iCloud.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d item akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>many</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>one</key>
+			<string>Item ini akan kekal dalam</string>
+			<key>other</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>two</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>zero</key>
+			<string>Foto ini akan kekal dalam</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ Daripada iPad Ini</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Foto Akan Dikeluarkan</string>
+			<key>many</key>
+			<string>%d Foto Akan Dikeluarkan</string>
+			<key>one</key>
+			<string>%d Foto Akan Dikeluarkan</string>
+			<key>other</key>
+			<string>%d Foto Akan Dikeluarkan</string>
+			<key>two</key>
+			<string>%d Foto Akan Dikeluarkan</string>
+			<key>zero</key>
+			<string>%d Foto Akan Dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ daripada iPhone ini. %#@they_will_remain_in@ Pustaka Foto iCloud.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d foto akan dikeluarkan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>many</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>one</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>other</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>two</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>zero</key>
+			<string>Foto ini akan kekal dalam</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ daripada iPod touch ini. %#@they_will_remain_in@ Pustaka Foto iCloud.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Foto akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d Foto akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d Foto akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d Foto akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d Foto akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d Foto akan dikeluarkan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>many</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>one</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>other</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>two</key>
+			<string>Foto ini akan kekal dalam</string>
+			<key>zero</key>
+			<string>Foto ini akan kekal dalam</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ Daripada iPad Ini</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d Video Akan Dikeluarkan</string>
+			<key>many</key>
+			<string>%d Video Akan Dikeluarkan</string>
+			<key>one</key>
+			<string>%d Video Akan Dikeluarkan</string>
+			<key>other</key>
+			<string>%d Video Akan Dikeluarkan</string>
+			<key>two</key>
+			<string>%d Video Akan Dikeluarkan</string>
+			<key>zero</key>
+			<string>%d Video Akan Dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ daripada iPhone ini. %#@they_will_remain_in@ Pustaka Foto iCloud.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d video akan dikeluarkan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>many</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>one</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>other</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>two</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>zero</key>
+			<string>Video ini akan kekal dalam</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ daripada iPod touch ini. %#@they_will_remain_in@ Pustaka Foto iCloud.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d video akan dikeluarkan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>many</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>one</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>other</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>two</key>
+			<string>Video ini akan kekal dalam</string>
+			<key>zero</key>
+			<string>Video ini akan kekal dalam</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

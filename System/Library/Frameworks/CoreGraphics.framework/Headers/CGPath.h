@@ -102,7 +102,8 @@ CG_EXTERN CGPathRef CGPathCreateWithEllipseInRect(CGRect rect,
 
 CG_EXTERN CGPathRef CGPathCreateWithRoundedRect(CGRect rect,
   CGFloat cornerWidth, CGFloat cornerHeight,
-  const CGAffineTransform *transform);
+  const CGAffineTransform *transform)
+  CG_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 /* Add a rounded rectangle to `path'. The rounded rectangle coincides with
    the edges of `rect'. Each corner is consists of one-quarter of an ellipse
@@ -115,7 +116,7 @@ CG_EXTERN CGPathRef CGPathCreateWithRoundedRect(CGRect rect,
 
 CG_EXTERN void CGPathAddRoundedRect(CGMutablePathRef path,
   const CGAffineTransform *transform, CGRect rect, CGFloat cornerWidth,
-  CGFloat cornerHeight);
+  CGFloat cornerHeight) CG_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 /* Create a dashed path from `path'. The parameters `phase', `lengths', and
    `count' have the same meaning as the corresponding parameters for

@@ -1,0 +1,5 @@
+# We claim all messages at Error or below.  This means ASL only sees Error messages, which is good: cloudkit doesn't
+# want to be in your console if it can help it.
+
+? [= Facility com.apple.cloudkit] [> Level error] claim
+? [= Facility com.apple.cloudkit] [= CKLogToFile 1] directory $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/com.apple.cloudkit.asl format=asl rotate=local-basic file_max=10M all_max=100M compress

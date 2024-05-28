@@ -5,7 +5,6 @@
 //  Copyright 2013 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "MCPeerID.h"
 #import "MCSession.h"
 
@@ -30,23 +29,28 @@
  for example, a text chat app made by ABC company could use the service 
  type "abc-txtchat".
  
- The discoveryInfo parameter is a dictionary of string key/value pairs 
- that will be advertised for browsers to see. The content of 
- discoveryInfo will be advertised within Bonjour TXT records, and 
- keeping the dictionary small is good for keeping network traffic low.
+ The discoveryInfo parameter is a dictionary of string key/value pairs
+ that will be advertised for browsers to see. Both keys and values must
+ be NSString objects. The content of discoveryInfo will be advertised
+ within Bonjour TXT records, and keeping the dictionary small is good
+ for keeping network traffic low.
  
- See Bonjour APIs https://developer.apple.com/bonjour/ for more 
+ A delegate that conforms to the MCAdvertiserAssistantDelegate protocol
+ must be provided. No assumption should be made as to which queue the 
+ callbacks are called on.
+
+ See Bonjour APIs https://developer.apple.com/bonjour/ for more
  information about service types.
  */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_10,7_0)
 @interface MCAdvertiserAssistant : NSObject
-- (instancetype)initWithServiceType:(NSString *)serviceType discoveryInfo:(NSDictionary *)info session:(MCSession *)session;
+- (instancetype)initWithServiceType:(NSString *)serviceType discoveryInfo:(NSDictionary *)info session:(MCSession *)session NS_DESIGNATED_INITIALIZER;
 
 // The methods -start and -stop are used to start and stop the assistant.
 - (void)start;
 - (void)stop;
 
-@property (assign, NS_NONATOMIC_IOSONLY) id<MCAdvertiserAssistantDelegate> delegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id<MCAdvertiserAssistantDelegate> delegate;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) MCSession *session;
 @property (readonly, NS_NONATOMIC_IOSONLY) NSDictionary *discoveryInfo;
@@ -58,7 +62,7 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 @optional
 
 // An invitation will be presented to the user
-- (void)advertiserAssitantWillPresentInvitation:(MCAdvertiserAssistant *)advertiserAssistant;
+- (void)advertiserAssistantWillPresentInvitation:(MCAdvertiserAssistant *)advertiserAssistant;
 
 // An invitation was dismissed from screen
 - (void)advertiserAssistantDidDismissInvitation:(MCAdvertiserAssistant *)advertiserAssistant;

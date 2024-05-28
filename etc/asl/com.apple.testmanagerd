@@ -1,0 +1,9 @@
+? [A= Facility com.apple.testmanagerd] [> Level error] claim
+
+
+
+
+
+
+
+? [A= Facility com.apple.testmanagerd] directory $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/com.apple.testmanagerd.asl format=asl rotate=local file_max=10M all_max=50M

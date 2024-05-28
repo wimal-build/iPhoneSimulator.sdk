@@ -16,6 +16,11 @@
 	#define AVF_EXPORT extern
 #endif
 
+// Pre-10.10
+#ifndef __NSi_10_10
+	#define __NSi_10_10 introduced=10.10
+#endif
+
 // Pre-10.9, weak import
 #ifndef __AVAILABILITY_INTERNAL__MAC_10_9
 	#define __AVAILABILITY_INTERNAL__MAC_10_9 __AVAILABILITY_INTERNAL_WEAK_IMPORT

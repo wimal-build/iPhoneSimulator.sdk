@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CLLocationManager.h>
 #import <CoreLocation/CLRegion.h>
+#import <CoreLocation/CLVisit.h>
 
 @class CLLocation;
 @class CLHeading;
@@ -187,5 +188,15 @@
  */
 - (void)locationManager:(CLLocationManager *)manager
 	didFinishDeferredUpdatesWithError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+
+/*
+ *  locationManager:didVisit:
+ *
+ *  Discussion:
+ *    Invoked when the CLLocationManager determines that the device has visited
+ *    a location, if visit monitoring is currently started (possibly from a
+ *    prior launch).
+ */
+- (void)locationManager:(CLLocationManager *)manager didVisit:(CLVisit *)visit;
 
 @end

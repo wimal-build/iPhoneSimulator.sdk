@@ -2,7 +2,7 @@
 //  UIGraphics.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +11,7 @@
 
 @class UIImage;
 
-UIKIT_EXTERN CGContextRef UIGraphicsGetCurrentContext(void);
+UIKIT_EXTERN CGContextRef UIGraphicsGetCurrentContext(void) CF_RETURNS_NOT_RETAINED;
 UIKIT_EXTERN void UIGraphicsPushContext(CGContextRef context);
 UIKIT_EXTERN void UIGraphicsPopContext(void);
 

@@ -20,13 +20,13 @@
  download of content, you will be required to call 
  -[NKAssetDownload downloadWithDelegate:].
  */
-@interface NKLibrary : NSObject
+NS_CLASS_AVAILABLE_IOS(5_0) @interface NKLibrary : NSObject
 
 /*!
  @property   issues
  @abstract   The Newsstand issues in the library
  */
-@property (readonly, retain) NSArray *issues;
+@property (readonly, strong) NSArray *issues;
 
 /*!
  @property   downloadingAssets
@@ -34,7 +34,7 @@
  Newsstand library. The issue that this asset is associated with
  can be determined from the asset itself.
  */
-@property (readonly , retain) NSArray *downloadingAssets;
+@property (readonly , strong) NSArray *downloadingAssets;
 
 /*!
  @property   currentlyReadingIssue
@@ -42,7 +42,7 @@
  set this property to the currently read issue to prevent data
  from being purged when under disk pressure.
  */
-@property (readwrite, retain) NKIssue *currentlyReadingIssue;
+@property (strong) NKIssue *currentlyReadingIssue;
 
 /*!
  @method     sharedLibrary

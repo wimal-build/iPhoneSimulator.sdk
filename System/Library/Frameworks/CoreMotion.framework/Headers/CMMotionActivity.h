@@ -105,4 +105,12 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  */
 @property(readonly, nonatomic) BOOL automotive;
 
+/*
+ *  cycling
+ *
+ *  Discussion:
+ *    True if the device is on a bicycle.
+ */
+@property(readonly, nonatomic) BOOL cycling NS_AVAILABLE(NA, 8_0);
+
 @end

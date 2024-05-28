@@ -1,15 +1,15 @@
 /*	CFAvailability.h
-	Copyright (c) 2013-2013, Apple Inc. All rights reserved.
+	Copyright (c) 2013-2014, Apple Inc. All rights reserved.
 */
 
 #if !defined(__COREFOUNDATION_CFAVAILABILITY__)
 #define __COREFOUNDATION_CFAVAILABILITY__ 1
 
 #include <TargetConditionals.h>
+#include <Availability.h>
 
 #if (TARGET_OS_MAC || TARGET_OS_EMBEDDED || TARGET_OS_IPHONE || TARGET_OS_WIN32)
 // Even if unused, these must remain here for compatibility, because projects rely on them being included.
-#include <Availability.h>
 #include <AvailabilityMacros.h>
 #endif
 
@@ -57,6 +57,7 @@
 #define __NSi_10_7 introduced=10.7
 #define __NSi_10_8 introduced=10.8
 #define __NSi_10_9 introduced=10.9
+#define __NSi_10_10 introduced=10.10
 
 #define __NSd_2_0 ,deprecated=2.0
 #define __NSd_2_1 ,deprecated=2.1
@@ -88,6 +89,7 @@
 #define __NSd_10_7 ,deprecated=10.7
 #define __NSd_10_8 ,deprecated=10.8
 #define __NSd_10_9 ,deprecated=10.9
+#define __NSd_10_10 ,deprecated=10.10
 
 #define __NSi_NA unavailable
 #define __NSd_NA
@@ -176,5 +178,10 @@
 #define CF_ENUM(_type, _name) _type _name; enum
 #define CF_OPTIONS(_type, _name) _type _name; enum
 #endif
+
+// Extension availability macros
+#define CF_EXTENSION_UNAVAILABLE(_msg)      __OS_EXTENSION_UNAVAILABLE(_msg)
+#define CF_EXTENSION_UNAVAILABLE_MAC(_msg)  __OSX_EXTENSION_UNAVAILABLE(_msg)
+#define CF_EXTENSION_UNAVAILABLE_IOS(_msg)  __IOS_EXTENSION_UNAVAILABLE(_msg)
 
 #endif // __COREFOUNDATION_CFAVAILABILITY__

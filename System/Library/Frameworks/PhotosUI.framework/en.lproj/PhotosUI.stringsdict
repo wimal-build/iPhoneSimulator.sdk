@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Syncing photos via iTunes is not supported when iCloud Photo Library is turned on.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d photo will be removed</string>
+			<key>other</key>
+			<string>%d photos will be removed</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Syncing photos via iTunes is not supported when iCloud Photo Library is turned on.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d video will be removed</string>
+			<key>other</key>
+			<string>%d videos will be removed</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Syncing photos via iTunes is not supported when iCloud Photo Library is turned on.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d video will be removed</string>
+			<key>other</key>
+			<string>%d photos and videos will be removed</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud Photo Library Will Be Deleted %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>in %d Day</string>
+			<key>other</key>
+			<string>in %d Days</string>
+		</dict>
+	</dict>
+    <key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>iCloud Photo Library has been disabled. You %#@have_n_days@ to make sure you have a complete copy of all your original photos and videos on this or another device.</string>
+        <key>have_n_days</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>have %d day</string>
+            <key>other</key>
+            <string>have %d days</string>
+        </dict>
+    </dict>
+    <key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>iCloud Photo Library Has Not Updated %#@in_n_days@</string>
+        <key>in_n_days</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>In %d Day</string>
+            <key>other</key>
+            <string>In %d Days</string>
+        </dict>
+    </dict>
+    <key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>Last updated %#@n_minutes_ago@</string>
+        <key>n_minutes_ago</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d minute ago</string>
+            <key>other</key>
+            <string>%d minutes ago</string>
+        </dict>
+    </dict>
+    <key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>iCloud Photo Library will be deleted from iCloud %#@in_n_days@. Photos and videos are no longer uploading. You can cancel this deletion in iCloud Storage Management.</string>
+        <key>in_n_days</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>in %d day</string>
+            <key>other</key>
+            <string>in %d days</string>
+        </dict>
+    </dict>
+    <key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>iCloud Photo Library will be deleted from iCloud %#@in_n_days@. Choose Download and Keep Originals below to download a complete copy of your photos and videos.</string>
+        <key>in_n_days</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>in %d day</string>
+            <key>other</key>
+            <string>in %d days</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

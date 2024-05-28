@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>״ספריית התמונות ב-iCloud״ אינה פעילה. %#@have_n_days@ לוודא שיש לך עותקים של כל התמונות והסרטים המקוריים שלך במכשיר זה או במכשיר אחר.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>נותרו לך %d ימים</string>
+			<key>many</key>
+			<string>נותרו לך %d יום</string>
+			<key>one</key>
+			<string>נותר לך יום אחד</string>
+			<key>other</key>
+			<string>נותרו לך %d ימים</string>
+			<key>two</key>
+			<string>נותרו לך יומיים</string>
+			<key>zero</key>
+			<string>נותרו לך %d ימים</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>״ספריית התמונות ב-iCloud״ תימחק בעוד %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d יום</string>
+			<key>many</key>
+			<string>%d יום</string>
+			<key>one</key>
+			<string>יום</string>
+			<key>other</key>
+			<string>%d ימים</string>
+			<key>two</key>
+			<string>יומיים</string>
+			<key>zero</key>
+			<string>%d ימים</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>סנכרון של תמונות דרך iTunes אינו נתמך כאשר ״ספריית התמונות ב-iCloud״ פעילה.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות יוסרו</string>
+			<key>one</key>
+			<string>תמונה אחת תוסר</string>
+			<key>other</key>
+			<string>%d תמונות יוסרו</string>
+			<key>two</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>סנכרון של תמונות דרך iTunes אינו נתמך כאשר ״ספריית התמונות ב-iCloud״ פעילה.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>one</key>
+			<string>סרט אחד יוסר</string>
+			<key>other</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>two</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>סנכרון של תמונות דרך iTunes אינו נתמך כאשר ״ספריית התמונות ב-iCloud״ פעילה.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני סרטים יוסרו</string>
+			<key>many</key>
+			<string>%d סרטים יוסרו</string>
+			<key>one</key>
+			<string>סרט אחד יוסר</string>
+			<key>other</key>
+			<string>%d סרטים יוסרו</string>
+			<key>two</key>
+			<string>שני סרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d סרטים יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>״ספריית התמונות ב-iCloud״ תימחק מ-iCloud בעוד %#@in_n_days@. תמונות וסרטים לא יועלו עוד. ניתן לבטל את המחיקה ב״ניהול שטח אחסון ב-iCloud״.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d יום</string>
+			<key>many</key>
+			<string>%d יום</string>
+			<key>one</key>
+			<string>יום</string>
+			<key>other</key>
+			<string>%d ימים</string>
+			<key>two</key>
+			<string>יומיים</string>
+			<key>zero</key>
+			<string>%d ימים</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>״ספריית התמונות ב-iCloud״ תימחק מ-iCloud בעוד %#@in_n_days@. בחר/י ״הורד ושמור את הקבצים המקוריים״ להלן בכדי להוריד עותק שלם של כל התמונות והסרטים שלך.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d יום</string>
+			<key>many</key>
+			<string>%d יום</string>
+			<key>one</key>
+			<string>יום</string>
+			<key>other</key>
+			<string>%d ימים</string>
+			<key>two</key>
+			<string>יומיים</string>
+			<key>zero</key>
+			<string>%d ימים</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>״ספריית התמונות ב-iCloud״ לא עודכן מזה %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d יום</string>
+			<key>many</key>
+			<string>%d יום</string>
+			<key>one</key>
+			<string>יום</string>
+			<key>other</key>
+			<string>%d ימים</string>
+			<key>two</key>
+			<string>יומיים</string>
+			<key>zero</key>
+			<string>%d ימים</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>עודכן לאחרונה %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>לפני %d דקות</string>
+			<key>many</key>
+			<string>לפני %d דקות</string>
+			<key>one</key>
+			<string>לפני דקות</string>
+			<key>other</key>
+			<string>לפני %d דקות</string>
+			<key>two</key>
+			<string>לפני שתי דקות</string>
+			<key>zero</key>
+			<string>לפני %d דקות</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

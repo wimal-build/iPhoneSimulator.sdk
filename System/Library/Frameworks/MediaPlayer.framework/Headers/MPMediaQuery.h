@@ -11,7 +11,7 @@
 
 @class MPMediaPredicate;
 
-enum {
+typedef NS_ENUM(NSInteger, MPMediaGrouping) {
     MPMediaGroupingTitle,
     MPMediaGroupingAlbum,
     MPMediaGroupingArtist,
@@ -20,15 +20,13 @@ enum {
     MPMediaGroupingGenre,
     MPMediaGroupingPlaylist,
     MPMediaGroupingPodcastTitle
-};
-typedef NSInteger MPMediaGrouping;
+} NS_ENUM_AVAILABLE_IOS(3_0);
 
 // MPMediaQuery represents a collection of items or playlists determined by a chain of MPMediaPredicate objects.
 
 MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaQuery : NSObject <NSSecureCoding, NSCopying>
 
-- (id)init;
-- (id)initWithFilterPredicates:(NSSet *)filterPredicates;
+- (instancetype)initWithFilterPredicates:(NSSet *)filterPredicates NS_DESIGNATED_INITIALIZER;
 @property(nonatomic, strong) NSSet *filterPredicates;
 
 - (void)addFilterPredicate:(MPMediaPredicate *)predicate;
@@ -36,13 +34,13 @@ MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaQuery : NSObject <NSSecureCodin
 
 // Returns an array of MPMediaItems matching the query filter predicates.
 // If no items match this method returns an empty array, otherwise returns nil if an error prevents the items from being fetched.
-@property(nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSArray *items;
 
 // Returns an array of MPMediaItemCollections matching the query filter predicates. The collections are grouped by the groupingType.
-@property(nonatomic, readonly) NSArray *collections;
+@property (nonatomic, readonly) NSArray *collections;
 
 // The property used to group collections, defaults to MPMediaGroupingTitle.
-@property(nonatomic) MPMediaGrouping groupingType;
+@property (nonatomic) MPMediaGrouping groupingType;
 
 // Returns an array of MPMediaQuerySection instances representing the section grouping of the query's items or collections.
 // May be nil in cases where no section grouping of the items or collections is appropriate.
@@ -74,20 +72,19 @@ MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaPredicate : NSObject <NSSecureC
 // MPMediaPropertyPredicate allows filtering based on a specific property value of an item or collection.
 // See MPMediaItem.h and MPMediaPlaylist.h for a list of properties.
 
-enum {
+typedef NS_ENUM(NSInteger, MPMediaPredicateComparison) {
     MPMediaPredicateComparisonEqualTo,
     MPMediaPredicateComparisonContains
-};
-typedef NSInteger MPMediaPredicateComparison;
+} NS_ENUM_AVAILABLE_IOS(3_0);
 
 MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaPropertyPredicate : MPMediaPredicate
 
 + (MPMediaPropertyPredicate *)predicateWithValue:(id)value forProperty:(NSString *)property; // comparisonType is MPMediaPredicateComparisonEqualTo
 + (MPMediaPropertyPredicate *)predicateWithValue:(id)value forProperty:(NSString *)property comparisonType:(MPMediaPredicateComparison)comparisonType;
 
-@property(nonatomic, readonly, copy) NSString *property;
-@property(nonatomic, readonly, copy) id value;
-@property(nonatomic, readonly) MPMediaPredicateComparison comparisonType;
+@property (nonatomic, readonly, copy) NSString *property;
+@property (nonatomic, readonly, copy) id value;
+@property (nonatomic, readonly) MPMediaPredicateComparison comparisonType;
 
 @end
 

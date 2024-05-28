@@ -9,7 +9,6 @@
  This a not a Game Center feature. To support Game Center and online play, see GKMatchMatchmakerViewController.
  */
 
-#import <UIKit/UIKit.h>
 #import <GameKit/GKSession.h>
 
 // This a not a Game Center feature. To support Game Center and online play, see GKMatchMatchmakerViewController.
@@ -59,8 +58,8 @@ typedef NSUInteger GKPeerPickerConnectionType;
  
  You must provide a delegate that conforms to the GKPeerPickerControllerDelegate protocol in order to use this class. After the user interface starts, this class notifies your delegate of the user’s actions.
  */
-NS_CLASS_DEPRECATED_IOS(3_0, 7_0)
-GK_EXTERN_CLASS @interface GKPeerPickerController : NSObject {
+NS_CLASS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController from the MultipeerConnectivity framework")
+@interface GKPeerPickerController : NSObject {
 @private
 	id _picker;
 }

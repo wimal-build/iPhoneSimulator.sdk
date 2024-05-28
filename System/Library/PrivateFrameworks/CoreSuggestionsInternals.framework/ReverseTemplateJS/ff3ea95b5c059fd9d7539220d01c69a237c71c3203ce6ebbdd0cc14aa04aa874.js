@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("hotwire.com-itinerary-confirmation-en",function(e){return/^Your Hotwire Trip/.test(e.subject)},function(e){if(/^Your Hotwire Trip/.test(e.subject)){var r="en_US",i={};i.itinerary="Hotwire Itinerary:",i.driver="Driver name",i.confirmation="confirmation code:",i.pickUp="Pick up details",i.dropOff="Drop off details";var t=loadHelper("hotwire.com-itinerary-confirmation-skeleton.js");return t(e,r,i)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/535/571/576","SGec8e8fce")]);

@@ -77,7 +77,7 @@ defaultvoice:Yelda
       userdct/trt
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      yelda/userdct/trt
+      userdct/trt/yelda
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->

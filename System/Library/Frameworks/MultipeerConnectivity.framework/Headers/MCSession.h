@@ -13,27 +13,27 @@
 typedef NS_ENUM(NSInteger, MCSessionSendDataMode) {
     MCSessionSendDataReliable,      // guaranteed reliable and in-order delivery
     MCSessionSendDataUnreliable     // sent immediately without queuing, no guaranteed delivery
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE(10_10,7_0);
 
 // Peer states
 typedef NS_ENUM(NSInteger, MCSessionState) {
     MCSessionStateNotConnected,     // not in the session
     MCSessionStateConnecting,       // connecting to this peer
     MCSessionStateConnected         // connected to the session
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE(10_10,7_0);
 
 // Encryption preference
 typedef NS_ENUM(NSInteger, MCEncryptionPreference) {
     MCEncryptionOptional                = 0,    // session preferred encryption but will accept unencrypted connections
     MCEncryptionRequired                = 1,    // session requires encryption
     MCEncryptionNone                    = 2,    // session should not be encrypted
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE(10_10,7_0);
 
 // Minimum number of peers in a session
-MC_EXTERN NSUInteger const kMCSessionMinimumNumberOfPeers NS_AVAILABLE_IOS(7_0);
+MC_EXTERN NSUInteger const kMCSessionMinimumNumberOfPeers NS_AVAILABLE(10_10,7_0);
 
 // Maximum number of peers in a session
-MC_EXTERN NSUInteger const kMCSessionMaximumNumberOfPeers NS_AVAILABLE_IOS(7_0);
+MC_EXTERN NSUInteger const kMCSessionMaximumNumberOfPeers NS_AVAILABLE(10_10,7_0);
 
 @class NSProgress;
 @protocol MCSessionDelegate;
@@ -75,19 +75,20 @@ MC_EXTERN NSUInteger const kMCSessionMaximumNumberOfPeers NS_AVAILABLE_IOS(7_0);
  byte stream will receive a delegate callback -session:didReceiveStream:
  withName:fromPeer:
  
- Delegate calls occur on a private operation queue. If your app needs to
+ Delegate calls occur on a private serial queue. If your app needs to
  perform an action on a particular run loop or operation queue, its
- delegate method should explicitly dispatch or schedule that work
+ delegate method should explicitly dispatch or schedule that work.
  */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_10,7_0)
 @interface MCSession : NSObject
 
 // Create a session with an MCPeerID for the local peer
 - (instancetype)initWithPeer:(MCPeerID *)myPeerID;
 
 // Create a session with a security configuration
-//   The securityIdentity argument is an array of [ SecIdentityRef, [ zero or more additional certs ]].
-- (instancetype)initWithPeer:(MCPeerID *)myPeerID securityIdentity:(NSArray *)identity encryptionPreference:(MCEncryptionPreference)encryptionPreference;
+//   The securityIdentity argument is an array of
+//   [ SecIdentityRef, [ zero or more additional certs ]].
+- (instancetype)initWithPeer:(MCPeerID *)myPeerID securityIdentity:(NSArray *)identity encryptionPreference:(MCEncryptionPreference)encryptionPreference NS_DESIGNATED_INITIALIZER;
 
 // Send a data message to a list of destination peers
 - (BOOL)sendData:(NSData *)data toPeers:(NSArray *)peerIDs withMode:(MCSessionSendDataMode)mode error:(NSError **)error;
@@ -96,23 +97,28 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 - (void)disconnect;
 
 /*
- Send a resource (a file or an HTTP document) referenced by an NSURL; 
- completionHandler is called when the resource is received by the remote
- peer or if an error occurred. Use -sendResourceAtURL:withName:toPeer:
- withCompletionHandler: to send a file or the content of an HTTP 
- document to the remote peer.  When the resource has been received, the 
- completionHandler is be called.  The remote peer will get a -session:
- didStartReceivingResourceWithName:fromPeer:withProgress callback when 
- it starts receiving the resource and a -session:
- didFinishReceivingResourceWithName:fromPeer:atURL:withError: 
+ Send a resource referenced by an NSURL to a remote peer. The resource
+ can be a file or an HTTP document. The completionHandler is called when 
+ the resource is received by the remote peer or if an error occurred. 
+ The remote peer will get a -session:didStartReceivingResourceWithName:
+ fromPeer:withProgress callback when it starts receiving the resource and 
+ a -session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:
  when the resource has been fully received.
+ 
+ The primary mechanism for observing progress of the send should be to 
+ create an NSProgress using +progressWithTotalUnitCount, 
+ -becomeCurrentWithPendingUnitCount:, invoking this method, then calling 
+ -resignCurrent. This is described in the NSProgress documentation. 
+ Alternatively, if you wish to observe the progress directly instead 
+ of incorporating it into a larger operation, you may observe the 
+ NSProgress returned from this method.
  */
 - (NSProgress *)sendResourceAtURL:(NSURL *)resourceURL withName:(NSString *)resourceName toPeer:(MCPeerID *)peerID withCompletionHandler:(void(^)(NSError *error))completionHandler;
 
 // Start a named byte stream with the remote peer
 - (NSOutputStream *)startStreamWithName:(NSString *)streamName toPeer:(MCPeerID *)peerID error:(NSError **)error;
 
-@property (assign, NS_NONATOMIC_IOSONLY) id<MCSessionDelegate> delegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id<MCSessionDelegate> delegate;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) MCPeerID *myPeerID;
 

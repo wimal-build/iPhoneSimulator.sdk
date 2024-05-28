@@ -2,7 +2,7 @@
 //  UIKit.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -12,7 +12,10 @@
 #import <UIKit/UIActivity.h>
 #import <UIKit/UIActivityItemProvider.h>
 #import <UIKit/UIActivityViewController.h>
-#import <UIKit/UIAlert.h>
+#import <UIKit/UIActionSheet.h>
+#import <UIKit/UIAlertController.h>
+#import <UIKit/UIAlertView.h>
+#import <UIKit/UIAppearance.h>
 #import <UIKit/UIApplication.h>
 #import <UIKit/UIBarButtonItem.h>
 #import <UIKit/UIBarItem.h>
@@ -31,6 +34,11 @@
 #import <UIKit/UIDevice.h>
 #import <UIKit/UIDocument.h>
 #import <UIKit/UIDocumentInteractionController.h>
+#import <UIKit/UIDocumentPickerViewController.h>
+#import <UIKit/UIDocumentMenuViewController.h>
+#import <UIKit/UIDocumentPickerExtensionViewController.h>
+#import <UIKit/NSFileProviderExtension.h>
+#import <UIKit/UIVisualEffectView.h>
 #import <UIKit/UIEvent.h>
 #import <UIKit/UIFont.h>
 #import <UIKit/UIFontDescriptor.h>
@@ -38,12 +46,16 @@
 #import <UIKit/UIGestureRecognizer.h>
 #import <UIKit/UIGraphics.h>
 #import <UIKit/UIImage.h>
+#import <UIKit/UIImageAsset.h>
 #import <UIKit/UIImagePickerController.h>
 #import <UIKit/UIImageView.h>
 #import <UIKit/UIInputView.h>
+#import <UIKit/UIInputViewController.h>
 #import <UIKit/UIInterface.h>
 #import <UIKit/UILabel.h>
+#import <UIKit/UILexicon.h>
 #import <UIKit/UILocalNotification.h>
+#import <UIKit/UIUserNotificationSettings.h>
 #import <UIKit/UILocalizedIndexedCollation.h>
 #import <UIKit/UILongPressGestureRecognizer.h>
 #import <UIKit/UIManagedDocument.h>
@@ -62,6 +74,8 @@
 #import <UIKit/UIPinchGestureRecognizer.h>
 #import <UIKit/UIPopoverController.h>
 #import <UIKit/UIPopoverBackgroundView.h>
+#import <UIKit/UIPrinter.h>
+#import <UIKit/UIPrinterPickerController.h>
 #import <UIKit/UIPrintError.h>
 #import <UIKit/UIPrintFormatter.h>
 #import <UIKit/UIPrintInfo.h>
@@ -78,6 +92,7 @@
 #import <UIKit/UIScreenMode.h>
 #import <UIKit/UIScrollView.h>
 #import <UIKit/UISearchBar.h>
+#import <UIKit/UISearchController.h>
 #import <UIKit/UISearchDisplayController.h>
 #import <UIKit/UISegmentedControl.h>
 #import <UIKit/UISlider.h>
@@ -104,6 +119,7 @@
 #import <UIKit/UITextView.h>
 #import <UIKit/UIToolbar.h>
 #import <UIKit/UITouch.h>
+#import <UIKit/UITraitCollection.h>
 #import <UIKit/UIVideoEditorController.h>
 #import <UIKit/UIView.h>
 #import <UIKit/UIViewController.h>
@@ -122,6 +138,8 @@
 #import <UIKit/UIStateRestoration.h>
 #import <UIKit/UIViewControllerTransitioning.h>
 #import <UIKit/UIViewControllerTransitionCoordinator.h>
+#import <UIKit/UIPresentationController.h>
+#import <UIKit/UIPopoverPresentationController.h>
 #import <UIKit/UIDynamicAnimator.h>
 #import <UIKit/UIDynamicBehavior.h>
 #import <UIKit/UIPushBehavior.h>

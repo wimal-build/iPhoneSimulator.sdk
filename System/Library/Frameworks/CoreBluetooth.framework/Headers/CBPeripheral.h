@@ -7,7 +7,12 @@
  *	@copyright 2011 Apple, Inc. All rights reserved.
  */
 
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
+
 #import <CoreBluetooth/CBDefines.h>
+#import <CoreBluetooth/CBPeer.h>
 
 #import <Foundation/Foundation.h>
 
@@ -43,7 +48,7 @@ typedef NS_ENUM(NSInteger, CBCharacteristicWriteType) {
  *  @discussion Represents a peripheral.
  */
 NS_CLASS_AVAILABLE(10_7, 5_0)
-CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
+CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
 
 /*!
  *  @property delegate
@@ -51,24 +56,6 @@ CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
  *  @discussion The delegate object that will receive peripheral events.
  */
 @property(weak, nonatomic) id<CBPeripheralDelegate> delegate;
-
-/*!
- *  @property UUID
- *
- *  @discussion Once a peripheral has been connected at least once by the system, it is assigned a UUID. This UUID can be stored and later provided to a
- *              <code>CBCentralManager</code> to retrieve the peripheral.
- *
- *	@deprecated Use the {@link identifier} property instead.
- */
-@property(readonly, nonatomic) CFUUIDRef UUID NS_DEPRECATED(NA, NA, 5_0, 7_0);
-
-/*!
- *  @property identifier
- *
- *  @discussion The unique identifier associated with the peripheral. This identifier can be stored and later provided to a <code>CBCentralManager</code>
- *				to retrieve the peripheral.
- */
-@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
 
 /*!
  *  @property name
@@ -81,8 +68,10 @@ CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
  *  @property RSSI
  *
  *  @discussion The most recently read RSSI, in decibels.
+ *
+ *  @deprecated Use {@link peripheral:didReadRSSI:error:} instead.
  */
-@property(retain, readonly) NSNumber *RSSI;
+@property(retain, readonly) NSNumber *RSSI NS_DEPRECATED(NA, NA, 5_0, 8_0);
 
 /*!
  *  @property isConnected
@@ -110,9 +99,9 @@ CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
 /*!
  *  @method readRSSI
  *
- *	@discussion While connected, retrieves the current RSSI of the link.
+ *  @discussion While connected, retrieves the current RSSI of the link.
  *
- *	@see		peripheralDidUpdateRSSI:error:
+ *  @see        peripheral:didReadRSSI:error:
  */
 - (void)readRSSI;
 
@@ -172,8 +161,11 @@ CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
  *  @param characteristic	The characteristic whose characteristic value will be written.
  *  @param type				The type of write to be executed.
  *
- *  @discussion				Writes <i>value</i> to <i>characteristic</i>'s characteristic value. If the <code>CBCharacteristicWriteWithResponse</code>
- *							type is specified, {@link peripheral:didWriteValueForCharacteristic:error:} is called with the result of the write request.
+ *  @discussion				Writes <i>value</i> to <i>characteristic</i>'s characteristic value.
+ *							If the <code>CBCharacteristicWriteWithResponse</code> type is specified, {@link peripheral:didWriteValueForCharacteristic:error:}
+ *							is called with the result of the write request.
+ *							If the <code>CBCharacteristicWriteWithoutResponse</code> type is specified, the delivery of the data is best-effort and not
+ *							guaranteed.
  *
  *  @see					peripheral:didWriteValueForCharacteristic:error:
  *	@see					CBCharacteristicWriteType
@@ -286,8 +278,21 @@ CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
  *	@param error		If an error occurred, the cause of the failure.
  *
  *  @discussion			This method returns the result of a @link readRSSI: @/link call.
+ *
+ *  @deprecated			Use {@link peripheral:didReadRSSI:error:} instead.
  */
-- (void)peripheralDidUpdateRSSI:(CBPeripheral *)peripheral error:(NSError *)error;
+- (void)peripheralDidUpdateRSSI:(CBPeripheral *)peripheral error:(NSError *)error NS_DEPRECATED(NA, NA, 5_0, 8_0);
+
+/*!
+ *  @method peripheral:didReadRSSI:error:
+ *
+ *  @param peripheral	The peripheral providing this update.
+ *  @param RSSI			The current RSSI of the link.
+ *  @param error		If an error occurred, the cause of the failure.
+ *
+ *  @discussion			This method returns the result of a @link readRSSI: @/link call.
+ */
+- (void)peripheral:(CBPeripheral *)peripheral didReadRSSI:(NSNumber *)RSSI error:(NSError *)error NS_AVAILABLE(NA, 8_0);
 
 /*!
  *  @method peripheral:didDiscoverServices:

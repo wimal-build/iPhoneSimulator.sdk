@@ -2,7 +2,7 @@
 //  UICollectionViewLayout.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -67,6 +67,16 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UICollectionViewLayoutInvalidationContext
 @property (nonatomic, readonly) BOOL invalidateEverything; // set to YES when invalidation occurs because the collection view is sent -reloadData
 @property (nonatomic, readonly) BOOL invalidateDataSourceCounts; // if YES, the layout should requery section and item counts from the collection view - set to YES when the collection view is sent -reloadData and when items are inserted or deleted
 
+- (void)invalidateItemsAtIndexPaths:(NSArray *)indexPaths NS_AVAILABLE_IOS(8_0);
+- (void)invalidateSupplementaryElementsOfKind:(NSString *)elementKind atIndexPaths:(NSArray *)indexPaths NS_AVAILABLE_IOS(8_0);
+- (void)invalidateDecorationElementsOfKind:(NSString *)elementKind atIndexPaths:(NSArray *)indexPaths NS_AVAILABLE_IOS(8_0);
+@property (nonatomic, readonly) NSArray *invalidatedItemIndexPaths NS_AVAILABLE_IOS(8_0);
+@property (nonatomic, readonly) NSDictionary *invalidatedSupplementaryIndexPaths NS_AVAILABLE_IOS(8_0); // keys are element kind strings - values are NSArrays of NSIndexPaths
+@property (nonatomic, readonly) NSDictionary *invalidatedDecorationIndexPaths NS_AVAILABLE_IOS(8_0); // keys are element kind strings - values are NSArrays of NSIndexPaths
+
+@property (nonatomic) CGPoint contentOffsetAdjustment NS_AVAILABLE_IOS(8_0); // delta to be applied to the collection view's current contentOffset - default is CGPointZero
+@property (nonatomic) CGSize contentSizeAdjustment NS_AVAILABLE_IOS(8_0); // delta to be applied to the current content size - default is CGSizeZero
+
 @end
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCoding>
@@ -81,12 +91,12 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 - (void)invalidateLayout;
 - (void)invalidateLayoutWithContext:(UICollectionViewLayoutInvalidationContext *)context NS_AVAILABLE_IOS(7_0);
 
-- (void)registerClass:(Class)viewClass forDecorationViewOfKind:(NSString *)decorationViewKind;
-- (void)registerNib:(UINib *)nib forDecorationViewOfKind:(NSString *)decorationViewKind;
+- (void)registerClass:(Class)viewClass forDecorationViewOfKind:(NSString *)elementKind;
+- (void)registerNib:(UINib *)nib forDecorationViewOfKind:(NSString *)elementKind;
 
 @end
 
-@interface UICollectionViewLayout (SubclassingHooks)
+@interface UICollectionViewLayout (UISubclassingHooks)
 
 + (Class)layoutAttributesClass; // override this method to provide a custom class to be used when instantiating instances of UICollectionViewLayoutAttributes
 + (Class)invalidationContextClass NS_AVAILABLE_IOS(7_0); // override this method to provide a custom class to be used for invalidation contexts
@@ -102,11 +112,15 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 // If the layout supports any supplementary or decoration view types, it should also implement the respective atIndexPath: methods for those types.
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect; // return an array layout attributes instances for all the views in the given rect
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath;
-- (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath;
-- (UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString*)decorationViewKind atIndexPath:(NSIndexPath *)indexPath;
+- (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath;
+- (UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString*)elementKind atIndexPath:(NSIndexPath *)indexPath;
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds; // return YES to cause the collection view to requery the layout for geometry information
 - (UICollectionViewLayoutInvalidationContext *)invalidationContextForBoundsChange:(CGRect)newBounds NS_AVAILABLE_IOS(7_0);
+
+- (BOOL)shouldInvalidateLayoutForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *)originalAttributes NS_AVAILABLE_IOS(8_0);
+- (UICollectionViewLayoutInvalidationContext *)invalidationContextForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *)originalAttributes NS_AVAILABLE_IOS(8_0);
+
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity; // return a point at which to rest after scrolling - for layouts that want snap-to-point scrolling behavior
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset NS_AVAILABLE_IOS(7_0); // a layout can return the content offset to be applied during transition or update animations
 
@@ -114,7 +128,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 
 @end
 
-@interface UICollectionViewLayout (UpdateSupportHooks)
+@interface UICollectionViewLayout (UIUpdateSupportHooks)
 
 // This method is called when there is an update with deletes/inserts to the collection view.
 // It will be called prior to calling the initial/final layout attribute methods below to give the layout an opportunity to do batch computations for the insertion and deletion layout attributes.
@@ -126,8 +140,8 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 - (void)finalizeAnimatedBoundsChange; // also called inside the animation block
 
 // UICollectionView calls this when prior the layout transition animation on the incoming and outgoing layout
-- (void)prepareForTransitionToLayout:(UICollectionViewLayout*)newLayout NS_AVAILABLE_IOS(7_0);
-- (void)prepareForTransitionFromLayout:(UICollectionViewLayout*)oldLayout NS_AVAILABLE_IOS(7_0);
+- (void)prepareForTransitionToLayout:(UICollectionViewLayout *)newLayout NS_AVAILABLE_IOS(7_0);
+- (void)prepareForTransitionFromLayout:(UICollectionViewLayout *)oldLayout NS_AVAILABLE_IOS(7_0);
 - (void)finalizeLayoutTransition NS_AVAILABLE_IOS(7_0);  // called inside an animation block after the transition
 
 
@@ -143,9 +157,9 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 
 // These methods are called by collection view during an update block.
 // Return an array of index paths to indicate views that the layout is deleting or inserting in response to the update.
-- (NSArray *)indexPathsToDeleteForSupplementaryViewOfKind:(NSString *)kind NS_AVAILABLE_IOS(7_0);
-- (NSArray *)indexPathsToDeleteForDecorationViewOfKind:(NSString *)kind NS_AVAILABLE_IOS(7_0);
-- (NSArray *)indexPathsToInsertForSupplementaryViewOfKind:(NSString *)kind NS_AVAILABLE_IOS(7_0);
-- (NSArray *)indexPathsToInsertForDecorationViewOfKind:(NSString *)kind NS_AVAILABLE_IOS(7_0);
+- (NSArray *)indexPathsToDeleteForSupplementaryViewOfKind:(NSString *)elementKind NS_AVAILABLE_IOS(7_0);
+- (NSArray *)indexPathsToDeleteForDecorationViewOfKind:(NSString *)elementKind NS_AVAILABLE_IOS(7_0);
+- (NSArray *)indexPathsToInsertForSupplementaryViewOfKind:(NSString *)elementKind NS_AVAILABLE_IOS(7_0);
+- (NSArray *)indexPathsToInsertForDecorationViewOfKind:(NSString *)elementKind NS_AVAILABLE_IOS(7_0);
 
 @end

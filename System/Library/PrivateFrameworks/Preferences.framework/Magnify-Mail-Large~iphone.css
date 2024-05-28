@@ -1,0 +1,114 @@
+html { 
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+BODY {
+	margin: 0px 0px;
+	font: 39px "Helvetica Neue Interface", sans-serif;
+	color: #000;
+	background: #FFF;
+}
+
+#mail {
+	width: 1242px;
+	height: 2208px;
+	background: #FFF url(Magnify-Mail-Large~iphone.jpg) top left no-repeat;
+	position: absolute;
+	top:0;
+	left: 0;
+	-webkit-transition: -webkit-transform .35s;
+	-webkit-transition-delay: .15s;
+}
+
+.StatusBarTime,
+.NavBack,
+.NavEmailCount,
+.FromName,
+.ToString,
+.Subject,
+.Date,
+.BodyText {
+	position:absolute;
+	text-align: center;
+	font-size: 51px;
+}
+
+.StatusBarTime {
+	top: 8px;
+	left: 420px;
+	width: 400px;
+	text-align: center;
+	font: "Helvetica Neue Interface", Times, sans-serif;
+	font-size: 37px;
+	font-weight: 500;
+}
+
+.NavBack {
+	top: 95px;
+	left: 95px;
+	color: #007aff;
+}
+
+.NavEmailCount {
+	top: 95px;
+	left: 425px;
+	width: 400px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.FromName {
+	top: 218px;
+	left: 63px;
+	font: "Helvetica Neue Interface Medium", Times, sans-serif;
+	font-weight: 500;
+	color: #007aff;
+}
+
+.ToString {
+	width: 900px;
+	top: 278px;
+	left: 63px;
+	text-align: left;
+}
+
+.ToString span {
+	font-size: 45px;
+}
+
+.MoreLink {
+	color: #007aff;
+}
+
+.Subject {
+	top: 410px;
+	font: "Helvetica Neue Interface Medium", Times, sans-serif;
+	font-weight: 500;
+	left: 63px;
+}
+
+.Date {
+	top:482px;
+	left:63px;
+	font-size: 45px;
+}
+
+/*body text*/
+
+.BodyText {
+	width:1110px;
+	top: 606px;
+	left: 63px;
+	text-align: left;
+}
+
+.BodyText .Body1,
+.BodyText .Body2 {
+	margin-left: 0;
+	padding-left: 0;
+	line-height: 66px;
+	margin-bottom: 66px;
+	display:block;
+}

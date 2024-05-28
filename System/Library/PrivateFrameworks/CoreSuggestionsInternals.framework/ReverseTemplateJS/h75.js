@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+(function(){return function(e,t,r){var a=Scanner.fromMessage(e);a.setLocale(t);var n=a.getSpan().nextText(r.bookingCodePrefix);if(!n.exists())return CONTINUE;for(var o=loadHelper("lufthansa.com-microdata.js"),s=parseMicrodata(e.html),i=o(s),c=0;i.length>c;c++)i[c].reservationStatus&&0!==i[c].reservationStatus.length||(i[c].reservationStatus="http://schema.org/ReservationConfirmed");return i}}).call();

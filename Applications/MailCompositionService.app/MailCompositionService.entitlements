@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>com.apple.developer.icloud-container-environment</key>
+	<string>Development</string>
+	<key>application-identifier</key>
+	<string>MOBILEMAIL.com.apple.mailcompositionservice</string>
 	<key>com.apple.UIKit.vends-view-services</key>
 	<true/>
 	<key>platform-application</key>
@@ -10,18 +14,26 @@
 	<array>
 		<string>MailCompositionService</string>
 	</array>
+	<key>com.apple.bulletinboard.utilities</key>
+	<true/>
+    <key>com.apple.CommCenter.fine-grained</key>
+    <array>
+        <string>spi</string>
+    </array>
 	<key>com.apple.mobilemail.mailservices</key>
+	<true/>
+	<key>com.apple.private.accounts.allaccounts</key>
+	<true/>
+	<key>com.apple.private.corerecents</key>
+	<true/>
+	<key>com.apple.private.suggestions</key>
 	<true/>
 	<key>com.apple.private.tcc.allow.overridable</key>
 	<array>
 		<string>kTCCServiceAddressBook</string>
 		<string>kTCCServicePhotos</string>
 	</array>
-	<key>com.apple.private.corerecents</key>
-	<true/>
-	<key>com.apple.bulletinboard.utilities</key>
-	<true/>
-	<key>com.apple.private.accounts.allaccounts</key>
+	<key>com.apple.UIKit.vends-view-services</key>
 	<true/>
 </dict>
 </plist>

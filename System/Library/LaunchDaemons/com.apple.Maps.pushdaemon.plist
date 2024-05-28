@@ -16,13 +16,15 @@
 	<key>Label</key>
 	<string>com.apple.Maps.mapspushd</string>
 	<key>Program</key>
-	<string>/Applications/Maps.app/mapspushd</string>
+	<string>/System/Library/PrivateFrameworks/MapsSupport.framework/mapspushd</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Applications/Maps.app/mapspushd</string>
+		<string>/System/Library/PrivateFrameworks/MapsSupport.framework/mapspushd</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
+	<key>StartInterval</key>
+	<real>21600</real>
 	<key>EnableTransactions</key>
 	<true/>
 	<key>MachServices</key>
@@ -31,8 +33,12 @@
 		<true/>
 		<key>com.apple.Maps.mapspushd.icloud</key>
 		<true/>
+		<key>com.apple.Maps.mapspushd.bulletinboard</key>
+		<true/>
 	</dict>
 	<key>UserName</key>
 	<string>mobile</string>
+	<key>EnablePressuredExit</key>
+	<true/>
 </dict>
 </plist>

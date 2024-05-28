@@ -1,4 +1,3 @@
-
 /*
  *  CMErrorDomain.h
  *  CoreMotion

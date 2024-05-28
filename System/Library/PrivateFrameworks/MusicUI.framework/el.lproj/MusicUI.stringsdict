@@ -2,6 +2,92 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ALBUMS_SONGS_COUNT_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@albums@, %#@songs@</string>
+		<key>albums</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# άλμπουμ</string>
+			<key>many</key>
+			<string>#%li# άλμπουμ</string>
+			<key>one</key>
+			<string>#1# άλμπουμ</string>
+			<key>other</key>
+			<string>#%li# άλμπουμ</string>
+			<key>two</key>
+			<string>#%li# άλμπουμ</string>
+			<key>zero</key>
+			<string>#%li# άλμπουμ</string>
+		</dict>
+		<key>songs</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# τραγούδια</string>
+			<key>many</key>
+			<string>#%li# τραγούδια</string>
+			<key>one</key>
+			<string>#1# τραγούδι</string>
+			<key>other</key>
+			<string>#%li# τραγούδια</string>
+			<key>two</key>
+			<string>#%li# τραγούδια</string>
+			<key>zero</key>
+			<string>#%li# τραγούδια</string>
+		</dict>
+	</dict>
+	<key>ALBUM_DETAIL_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@songs@%#@min@</string>
+		<key>min</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>, #%li# λεπτά</string>
+			<key>many</key>
+			<string>, #%li# λεπτά</string>
+			<key>one</key>
+			<string>, #%li# λεπτό</string>
+			<key>other</key>
+			<string>, #%li# λεπτά</string>
+			<key>two</key>
+			<string>, #%li# λεπτό</string>
+			<key>zero</key>
+			<string></string>
+		</dict>
+		<key>songs</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# τραγούδια</string>
+			<key>many</key>
+			<string>#%li# τραγούδια</string>
+			<key>one</key>
+			<string>#1# τραγούδι</string>
+			<key>other</key>
+			<string>#%li# τραγούδια</string>
+			<key>two</key>
+			<string>#%li# τραγούδια</string>
+			<key>zero</key>
+			<string>κανένα τραγούδι</string>
+		</dict>
+	</dict>
 	<key>AUDIOBOOKS_DETAIL_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -12,12 +98,18 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>li</string>
-			<key>zero</key>
-			<string>no chapters</string>
+			<key>few</key>
+			<string>#%li# κεφάλαια</string>
+			<key>many</key>
+			<string>#%li# κεφάλαια</string>
 			<key>one</key>
-			<string>#1# chapter</string>
+			<string>#1# κεφάλαιο</string>
 			<key>other</key>
-			<string>#%li# chapters</string>
+			<string>#%li# κεφάλαια</string>
+			<key>two</key>
+			<string>#%li# κεφάλαια</string>
+			<key>zero</key>
+			<string>κανένα κεφάλαιο</string>
 		</dict>
 		<key>min</key>
 		<dict>
@@ -25,66 +117,18 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>li</string>
+			<key>few</key>
+			<string>, #%li# λεπτά</string>
+			<key>many</key>
+			<string>, #%li# λεπτά</string>
+			<key>one</key>
+			<string>, #%li# λεπτό</string>
+			<key>other</key>
+			<string>, #%li# λεπτά</string>
+			<key>two</key>
+			<string>, #%li# λεπτά</string>
 			<key>zero</key>
 			<string></string>
-			<key>other</key>
-			<string>, #%li# min</string>
-		</dict>
-	</dict>
-	<key>ALBUM_DETAIL_FORMAT</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@songs@%#@min@</string>
-		<key>songs</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>zero</key>
-			<string>no songs</string>
-			<key>one</key>
-			<string>#1# song</string>
-			<key>other</key>
-			<string>#%li# songs</string>
-		</dict>
-		<key>min</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>zero</key>
-			<string></string>
-			<key>other</key>
-			<string>, #%li# min</string>
-		</dict>
-	</dict>
-	<key>ALBUMS_SONGS_COUNT_FORMAT</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@albums@, %#@songs@</string>
-		<key>songs</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>one</key>
-			<string>#1# song</string>
-			<key>other</key>
-			<string>#%li# songs</string>
-		</dict>
-		<key>albums</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>one</key>
-			<string>#1# album</string>
-			<key>other</key>
-			<string>#%li# albums</string>
 		</dict>
 	</dict>
 </dict>

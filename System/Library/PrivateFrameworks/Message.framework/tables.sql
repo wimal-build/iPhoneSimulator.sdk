@@ -48,6 +48,18 @@ CREATE TABLE threads (ROWID INTEGER PRIMARY KEY,
 CREATE INDEX references_mid_reference_index ON threads(message_id, reference);
 CREATE INDEX references_reference_mid_index ON threads(reference, message_id);
 
+CREATE TABLE conversations (conversation_id INTEGER PRIMARY KEY,
+                            flags INTEGER DEFAULT 0,
+                            sync_key TEXT);
+                            
+CREATE TABLE conversation_id_message_id (conversation_id INTEGER,
+                                         message_id INTEGER,
+                                         date_sent INTEGER DEFAULT 0,
+                                         UNIQUE (conversation_id, message_id),
+                                         FOREIGN KEY (conversation_id) REFERENCES conversations(conversation_id) ON DELETE CASCADE ON UPDATE CASCADE);
+CREATE INDEX conversation_id_message_id_index ON conversation_id_message_id(conversation_id, message_id);
+CREATE INDEX message_id_conversation_id_index ON conversation_id_message_id(message_id, conversation_id);
+
 CREATE TABLE pop_uids(mailbox INTEGER,
                       uid TEXT,
                       date_added INTEGER,

@@ -30,12 +30,9 @@
 
 #if TARGET_OS_IPHONE
 #import <OpenGLES/EAGL.h>
-#import <OpenGLES/ES1/gl.h>
-#import <OpenGLES/ES1/glext.h>
-#import <OpenGLES/ES2/gl.h>
-#import <OpenGLES/ES2/glext.h>
+#import <OpenGLES/gltypes.h>
 #else // !TARGET_OS_IPHONE
-#import <OpenGL/gl3.h>
+#import <OpenGL/gltypes.h>
 #import <AppKit/AppKit.h>
 #endif // !TARGET_OS_IPHONE
 
@@ -260,9 +257,9 @@ NS_CLASS_AVAILABLE(10_8, 5_0)
  The sharegroup will be released upon releasing the GLKTextureLoader object. 
  */
 #if TARGET_OS_IPHONE
-- (id)initWithSharegroup:(EAGLSharegroup *)sharegroup;
+- (instancetype)initWithSharegroup:(EAGLSharegroup *)sharegroup;
 #else
-- (id)initWithShareContext:(NSOpenGLContext *)context;
+- (instancetype)initWithShareContext:(NSOpenGLContext *)context;
 #endif
 
 /*

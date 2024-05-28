@@ -2,7 +2,7 @@
 //  UIReferenceLibraryViewController.h
 //  UIKit
 //
-//  Copyright 2011-2012, Apple Inc. All rights reserved.
+//  Copyright 2011-2012 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -16,6 +16,6 @@ NS_CLASS_AVAILABLE_IOS(5_0)
 
 /*! Initializes an instance of a UIReferenceLibraryViewController with the term provided.
  */
-- (id)initWithTerm:(NSString *)term;
+- (instancetype)initWithTerm:(NSString *)term;
 
 @end

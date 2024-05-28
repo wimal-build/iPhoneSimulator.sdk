@@ -1,0 +1,7 @@
+-- Migrates traces from v12 to v13
+BEGIN TRANSACTION;
+
+-- Adding directions url info
+ALTER TABLE info ADD COLUMN directions_url TEXT;
+
+COMMIT;

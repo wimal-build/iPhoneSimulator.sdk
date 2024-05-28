@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 비활성화되었습니다. 이 장비 또는 다른 장비에 모든 원본 사진 및 비디오의 전체 복사본을 유지하는 데 %#@have_n_days@.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d일이 남았습니다</string>
+			<key>many</key>
+			<string>%d일이 남았습니다</string>
+			<key>one</key>
+			<string>%d일이 남았습니다</string>
+			<key>other</key>
+			<string>%d일이 남았습니다</string>
+			<key>two</key>
+			<string>%d일이 남았습니다</string>
+			<key>zero</key>
+			<string>%d일이 남았습니다</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 %#@in_n_days@ 내에 삭제됩니다.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d일</string>
+			<key>many</key>
+			<string>%d일</string>
+			<key>one</key>
+			<string>%d일</string>
+			<key>other</key>
+			<string>%d일</string>
+			<key>two</key>
+			<string>%d일</string>
+			<key>zero</key>
+			<string>%d일</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 켜져 있을 때에는 iTunes를 통한 사진 동기화가 지원되지 않습니다.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>many</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>one</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>other</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>two</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>zero</key>
+			<string>%d장의 사진이 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 켜져 있을 때에는 iTunes를 통한 사진 동기화가 지원되지 않습니다.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 켜져 있을 때에는 iTunes를 통한 사진 동기화가 지원되지 않습니다.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 %#@in_n_days@ 내에 iCloud에서 삭제됩니다. 사진 및 보관함이 더 이상 업로드되지 않습니다. iCloud 저장 공간 관리에서 이 삭제를 취소할 수 있습니다.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d일</string>
+			<key>many</key>
+			<string>%d일</string>
+			<key>one</key>
+			<string>%d일</string>
+			<key>other</key>
+			<string>%d일</string>
+			<key>two</key>
+			<string>%d일</string>
+			<key>zero</key>
+			<string>%d일</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 %#@in_n_days@ 내에 iCloud에서 삭제됩니다. 사용자의 사진 및 비디오 복사본 전체를 다운로드하려면 아래에서 다운로드 및 원본 유지를 선택하십시오.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d일</string>
+			<key>many</key>
+			<string>%d일</string>
+			<key>one</key>
+			<string>%d일</string>
+			<key>other</key>
+			<string>%d일</string>
+			<key>two</key>
+			<string>%d일</string>
+			<key>zero</key>
+			<string>%d일</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함이 %#@in_n_days@ 동안 업데이트되지 않았습니다.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d일</string>
+			<key>many</key>
+			<string>%d일</string>
+			<key>one</key>
+			<string>%d일</string>
+			<key>other</key>
+			<string>%d일</string>
+			<key>two</key>
+			<string>%d일</string>
+			<key>zero</key>
+			<string>%d일</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>최근 업데이트: %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d분 전</string>
+			<key>many</key>
+			<string>%d분 전</string>
+			<key>one</key>
+			<string>%d분 전</string>
+			<key>other</key>
+			<string>%d분 전</string>
+			<key>two</key>
+			<string>%d분 전</string>
+			<key>zero</key>
+			<string>%d분 전</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

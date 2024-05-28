@@ -77,7 +77,7 @@ defaultvoice:Laura
       userdct/sks
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      laura/userdct/sks
+      userdct/sks/laura
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->

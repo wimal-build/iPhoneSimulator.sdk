@@ -9,10 +9,10 @@ defaultvoice:Luciana
     <language>Brazilian Portuguese</language>
     <langcode>PTB</langcode>
     <langid>76</langid>
-    <langversion>5.2.3.13323</langversion>
+    <langversion>5.2.4.14055</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Luciana</voice>
-    <voiceversion>5.2.3.13297</voiceversion>
+    <voiceversion>5.2.4.13297</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,23 @@ defaultvoice:Luciana
       userdct/ptb
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      luciana/userdct/ptb
+      userdct/ptb/luciana
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/ptb
+    </RESOURCE>
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/ptb
+    </RESOURCE>
     
     
     

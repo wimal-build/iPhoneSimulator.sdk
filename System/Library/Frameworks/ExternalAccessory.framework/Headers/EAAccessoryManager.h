@@ -7,13 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
-enum {
+typedef NS_ENUM(NSInteger, EABluetoothAccessoryPickerErrorCode) {
     EABluetoothAccessoryPickerAlreadyConnected,
 	EABluetoothAccessoryPickerResultNotFound,
 	EABluetoothAccessoryPickerResultCancelled,
 	EABluetoothAccessoryPickerResultFailed
 };
-typedef NSInteger EABluetoothAccessoryPickerErrorCode;
 
 EA_EXTERN NSString *const EABluetoothAccessoryPickerErrorDomain;
 

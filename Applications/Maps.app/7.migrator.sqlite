@@ -1,0 +1,16 @@
+-- Migrates traces from v7 to v8
+BEGIN TRANSACTION;
+
+-- Adding to location speed_accuracy and raw location data
+ALTER TABLE locations ADD COLUMN speed_accuracy INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN raw_latitude INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN raw_longitude INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN raw_course INTEGER DEFAULT 0;
+UPDATE locations SET raw_latitude = latitude;
+UPDATE locations SET raw_longitude = longitude;
+UPDATE locations SET raw_course = course;
+
+-- Whether or not we use CL map-matching (we couldn't use it before this version)
+ALTER TABLE info ADD COLUMN cl_mapmatch INTEGER DEFAULT 0;
+
+COMMIT;

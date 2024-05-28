@@ -7,10 +7,13 @@ framework module * [system] {
 
 
 
+
+
   
   exclude AppleBasebandManager
   exclude CoreServices
   exclude IOKit
+  exclude PushRegistrar
 
 }
 

@@ -2,10 +2,12 @@
 //  UIAppearance.h
 //  UIKit
 //
-//  Copyright 2011-2012, Apple Inc. All rights reserved.
+//  Copyright 2011-2012 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
+@class UITraitCollection;
 
 /* To participate in the appearance proxy API, tag your appearance property selectors in your header with UI_APPEARANCE_SELECTOR.
  
@@ -14,7 +16,7 @@
  - (PropertyType)propertyForAxis1:(IntegerType)axis1 axis2:(IntegerType)axis2 axisN:(IntegerType)axisN;
  You may have no axes or as many as you like for any property. PropertyType may be any standard iOS type: id, NSInteger, NSUInteger, CGFloat, CGPoint, CGSize, CGRect, UIEdgeInsets or UIOffset. IntegerType must be either NSInteger or NSUInteger; we will throw an exception if other types are used in the axes.
  */
-#define UI_APPEARANCE_SELECTOR
+#define UI_APPEARANCE_SELECTOR __attribute__((annotate("ui_appearance_selector")))
 
 @protocol UIAppearanceContainer <NSObject> @end
 
@@ -39,5 +41,8 @@
  This method will throw an exception for anything in the var-args list that is not a Class <UIAppearanceContainer>.
 */
 + (instancetype)appearanceWhenContainedIn:(Class <UIAppearanceContainer>)ContainerClass, ... NS_REQUIRES_NIL_TERMINATION;
+
++ (instancetype)appearanceForTraitCollection:(UITraitCollection *)trait NS_AVAILABLE_IOS(8_0);
++ (instancetype)appearanceForTraitCollection:(UITraitCollection *)trait whenContainedIn:(Class <UIAppearanceContainer>)ContainerClass, ... NS_REQUIRES_NIL_TERMINATION NS_AVAILABLE_IOS(8_0);
 
 @end

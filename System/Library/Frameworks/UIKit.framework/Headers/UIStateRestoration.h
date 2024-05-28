@@ -2,7 +2,7 @@
  *  UIStateRestoration.h
  *  UIKit
  *
- *  Copyright 2012-2011, Apple Inc. All rights reserved.
+ *  Copyright 2012-2011 Apple Inc. All rights reserved.
  *
  */
 

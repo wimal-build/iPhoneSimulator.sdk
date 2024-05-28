@@ -2,7 +2,7 @@
  *  CTDefines.h
  *  CoreText
  *
- *  Copyright (c) 2010-2013 Apple Inc. All rights reserved.
+ *  Copyright (c) 2010-2014 Apple Inc. All rights reserved.
  *
  */
 
@@ -24,7 +24,6 @@
 # define CT_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep)
 # define CT_DEPRECATED_MAC(_macIntro, _macDep)
 # define CT_DEPRECATED_IOS(_iosIntro, _iosDep)
-# define CT_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep)
 #else /* defined(CT_BUILDING_CoreText) */
 # include <Availability.h>
 # define CT_AVAILABLE(_mac, _ios) __OSX_AVAILABLE_STARTING(__MAC_##_mac, __IPHONE_##_ios)
@@ -33,11 +32,22 @@
 # define CT_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_##_macIntro, __MAC_##_macDep, __IPHONE_##_iosIntro, __IPHONE_##_iosDep)
 # define CT_DEPRECATED_MAC(_macIntro, _macDep) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_##_macIntro, __MAC_##_macDep, __IPHONE_NA, __IPHONE_NA)
 # define CT_DEPRECATED_IOS(_iosIntro, _iosDep) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA, __MAC_NA, __IPHONE_##_iosIntro, __IPHONE_##_iosDep)
-# if __has_feature(enumerator_attributes) && __has_attribute(availability)
-#  define CT_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_##_macIntro, __MAC_##_macDep, __IPHONE_##_iosIntro, __IPHONE_##_iosDep)
-# else
-#  define CT_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep)
-# endif
 #endif /* defined(CT_BUILDING_CoreText) */
+
+#if __has_feature(enumerator_attributes) && __has_attribute(availability)
+# define CT_ENUM_AVAILABLE(_mac, _ios) CT_AVAILABLE(_mac, _ios)
+# define CT_ENUM_AVAILABLE_MAC(_mac) CT_AVAILABLE_MAC(_mac)
+# define CT_ENUM_AVAILABLE_IOS(_ios) CT_AVAILABLE_IOS(_ios)
+# define CT_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep) CT_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep)
+# define CT_ENUM_DEPRECATED_MAC(_macIntro, _macDep) CT_DEPRECATED_MAC(_macIntro, _macDep)
+# define CT_ENUM_DEPRECATED_IOS(_iosIntro, _iosDep) CT_DEPRECATED_IOS(_iosIntro, _iosDep)
+#else
+# define CT_ENUM_AVAILABLE(_mac, _ios)
+# define CT_ENUM_AVAILABLE_MAC(_mac)
+# define CT_ENUM_AVAILABLE_IOS(_ios)
+# define CT_ENUM_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep)
+# define CT_ENUM_DEPRECATED_MAC(_macIntro, _macDep)
+# define CT_ENUM_DEPRECATED_IOS(_iosIntro, _iosDep)
+#endif /* __has_feature(enumerator_attributes) && __has_attribute(availability) */
 
 #endif

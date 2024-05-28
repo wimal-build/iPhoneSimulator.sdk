@@ -2,7 +2,7 @@
 //  UIManagedDocument.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc.
+//  Copyright (c) 2011-2014 Apple Inc.
 //  All rights reserved.
 //
 

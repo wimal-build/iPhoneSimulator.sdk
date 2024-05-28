@@ -77,7 +77,7 @@ defaultvoice:Moira
       userdct/ene
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      moira/userdct/ene
+      userdct/ene/moira
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->

@@ -196,4 +196,13 @@ AB_EXTERN const CFStringRef kABPersonSocialProfileServiceMyspace __OSX_AVAILABLE
 AB_EXTERN const CFStringRef kABPersonSocialProfileServiceLinkedIn __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 AB_EXTERN const CFStringRef kABPersonSocialProfileServiceFlickr __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
+// Alternate birthday
+AB_EXTERN const ABPropertyID kABPersonAlternateBirthdayProperty __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);                // kABDictionaryPropertyType
+AB_EXTERN const CFStringRef kABPersonAlternateBirthdayCalendarIdentifierKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);    // string representing the calendar identifier for CFCalendarRef
+AB_EXTERN const CFStringRef kABPersonAlternateBirthdayEraKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);                   // CFNumberRef - kCFNumberNSIntegerType
+AB_EXTERN const CFStringRef kABPersonAlternateBirthdayYearKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);                  // CFNumberRef - kCFNumberNSIntegerType
+AB_EXTERN const CFStringRef kABPersonAlternateBirthdayMonthKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);                 // CFNumberRef - kCFNumberNSIntegerType
+AB_EXTERN const CFStringRef kABPersonAlternateBirthdayIsLeapMonthKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);           // CFNumberRef - kCFNumberCharType (aka NSNumber Bool type)
+AB_EXTERN const CFStringRef kABPersonAlternateBirthdayDayKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);                   // CFNumberRef - kCFNumberNSIntegerType
+
 #endif

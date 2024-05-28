@@ -1,0 +1,10 @@
+-- Migrates traces from v8 to v9
+BEGIN TRANSACTION;
+
+-- Adding corrected location data
+ALTER TABLE locations ADD COLUMN corrected_latitude INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN corrected_longitude INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN corrected_course INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_type INTEGER DEFAULT -1;
+
+COMMIT; 

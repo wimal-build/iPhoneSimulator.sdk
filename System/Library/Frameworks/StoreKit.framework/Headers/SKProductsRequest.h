@@ -14,7 +14,7 @@
 
 @required
 // Sent immediately before -requestDidFinish:
-- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response NS_AVAILABLE_IOS(3_0);
 
 @end
 
@@ -26,9 +26,9 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProductsRequest : SKRequest {
 }
 
 // Set of string product identifiers
-- (id)initWithProductIdentifiers:(NSSet *)productIdentifiers __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (instancetype)initWithProductIdentifiers:(NSSet *)productIdentifiers NS_AVAILABLE_IOS(3_0);
 
-@property(nonatomic, assign) id <SKProductsRequestDelegate> delegate __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+@property(nonatomic, assign) id <SKProductsRequestDelegate> delegate NS_AVAILABLE_IOS(3_0);
 
 @end
 
@@ -39,9 +39,9 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProductsResponse : NSObject {
 }
 
 // Array of SKProduct instances.
-@property(nonatomic, readonly) NSArray *products __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+@property(nonatomic, readonly) NSArray *products NS_AVAILABLE_IOS(3_0);
 
 // Array of invalid product identifiers.
-@property(nonatomic, readonly) NSArray *invalidProductIdentifiers __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+@property(nonatomic, readonly) NSArray *invalidProductIdentifiers NS_AVAILABLE_IOS(3_0);
 
 @end

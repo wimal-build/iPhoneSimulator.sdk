@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1999-2013 Apple Inc. All rights reserved.
+ * Copyright (c) 1999-2014 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
@@ -168,6 +168,7 @@ typedef struct mb_class_stat {
 	u_int64_t	mbcl_purge_cnt;	/* # of purges so far */
 	u_int64_t	mbcl_fail_cnt;	/* # of allocation failures */
 	u_int32_t	mbcl_ctotal;	/* total only for this class */
+	u_int32_t	mbcl_release_cnt; /* amount of memory returned */
 	/*
 	 * Cache layer statistics
 	 */

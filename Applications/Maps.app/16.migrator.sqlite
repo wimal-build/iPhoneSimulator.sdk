@@ -1,0 +1,19 @@
+-- Migrates traces from v16 to v17
+
+BEGIN TRANSACTION;
+
+CREATE TABLE vehicle_speed_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+speed               NUMERIC NOT NULL
+);
+
+CREATE TABLE vehicle_heading_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+heading             NUMERIC NOT NULL
+);
+
+COMMIT;

@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("alitalia.com-confirmation-en",function(e){return/^Electronic ticket receipt/.test(e.subject)},function(e){if(/^Electronic ticket receipt/.test(e.subject)){var t="en_US",i={};i.pnr="Your booking number (PNR) is",i.total="TOTAL";var n=loadHelper("alitalia.com-confirmation-skeleton.js");return n(e,t,i)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/112/165/166","SGd931709c")]);

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Pustaka Foto iCloud telah dinyahdayakan. Anda %#@have_n_days@ untuk memastikan anda mempunyai salinan lengkap semua foto dan video asal anda pada peranti ini atau peranti lain.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ada %d hari</string>
+			<key>many</key>
+			<string>ada %d hari</string>
+			<key>one</key>
+			<string>ada %d hari</string>
+			<key>other</key>
+			<string>ada %d hari</string>
+			<key>two</key>
+			<string>ada %d hari</string>
+			<key>zero</key>
+			<string>ada %d hari</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Pustaka Foto iCloud Akan Dipadamkan %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>dalam %d Hari</string>
+			<key>many</key>
+			<string>dalam %d Hari</string>
+			<key>one</key>
+			<string>dalam %d Hari</string>
+			<key>other</key>
+			<string>dalam %d Hari</string>
+			<key>two</key>
+			<string>dalam %d Hari</string>
+			<key>zero</key>
+			<string>dalam %d Hari</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Menyelaras foto melalui iTunes tidak disokong apabila Pustaka Foto iCloud diaktifkan.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d foto akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d foto akan dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Menyelaras foto melalui iTunes tidak disokong apabila Pustaka Foto iCloud diaktifkan.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d foto dan video akan dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Menyelaras foto melalui iTunes tidak disokong apabila Pustaka Foto iCloud diaktifkan.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>many</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>one</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>other</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>two</key>
+			<string>%d video akan dikeluarkan</string>
+			<key>zero</key>
+			<string>%d video akan dikeluarkan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Pustaka Foto iCloud akan dipadamkan daripada iCloud %#@in_n_days@. Foto dan video tidak lagi dimuat naik. Anda boleh membatalkan pemadaman ini dalam Pengurusan Storan iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>dalam %d hari</string>
+			<key>many</key>
+			<string>dalam %d hari</string>
+			<key>one</key>
+			<string>dalam %d hari</string>
+			<key>other</key>
+			<string>dalam %d hari</string>
+			<key>two</key>
+			<string>dalam %d hari</string>
+			<key>zero</key>
+			<string>dalam %d hari</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Pustaka Foto iCloud akan dipadamkan daripada iCloud %#@in_n_days@. Pilih Muat Turun dan Simpan Asal di bawah untuk memuat turun salinan lengkap foto dan video anda.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>dalam %d hari</string>
+			<key>many</key>
+			<string>dalam %d hari</string>
+			<key>one</key>
+			<string>dalam %d hari</string>
+			<key>other</key>
+			<string>dalam %d hari</string>
+			<key>two</key>
+			<string>dalam %d hari</string>
+			<key>zero</key>
+			<string>dalam %d hari</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Pustaka Foto iCloud Tidak Dikemas Kini %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dalam %d Hari</string>
+			<key>many</key>
+			<string>Dalam %d Hari</string>
+			<key>one</key>
+			<string>Dalam %d Hari</string>
+			<key>other</key>
+			<string>Dalam %d Hari</string>
+			<key>two</key>
+			<string>Dalam %d Hari</string>
+			<key>zero</key>
+			<string>Dalam %d Hari</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Kemas kini terakhir %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minit lalu</string>
+			<key>many</key>
+			<string>%d minit lalu</string>
+			<key>one</key>
+			<string>%d minit lalu</string>
+			<key>other</key>
+			<string>%d minit lalu</string>
+			<key>two</key>
+			<string>%d minit lalu</string>
+			<key>zero</key>
+			<string>%d minit lalu</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -59,6 +59,15 @@ MP_EXTERN NSString *const MPNowPlayingInfoPropertyElapsedPlaybackTime NS_AVAILAB
 // If not specified, assumed to be 1.0.
 MP_EXTERN NSString *const MPNowPlayingInfoPropertyPlaybackRate NS_AVAILABLE_IOS(5_0); // NSNumber (double)
 
+// The "default" playback rate of the now playing item. You should set this
+// property if your app is playing a media item at a rate other than 1.0 in a
+// default playback state. e.g., if you are playing back content at a rate of
+// 2.0 and your playback state is not fast-forwarding, then the default
+// playback rate should also be 2.0. Conversely, if you are playing back content
+// at a normal rate (1.0) but the user is fast-forwarding your content at a rate
+// greater than 1.0, then the default playback rate should be set to 1.0.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyDefaultPlaybackRate NS_AVAILABLE_IOS(8_0); // NSNumber (double)
+
 // The index of the now playing item in the application's playback queue.
 // Note that the queue uses zero-based indexing, so the index of the first item 
 // would be 0 if the item should be displayed as "item 1 of 10".

@@ -2,6 +2,92 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ALBUMS_SONGS_COUNT_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@albums@, %#@songs@</string>
+		<key>albums</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# อัลบั้ม</string>
+			<key>many</key>
+			<string>#%li# อัลบั้ม</string>
+			<key>one</key>
+			<string>#1# อัลบั้ม</string>
+			<key>other</key>
+			<string>#%li# อัลบั้ม</string>
+			<key>two</key>
+			<string>#%li# อัลบั้ม</string>
+			<key>zero</key>
+			<string>#%li# อัลบั้ม</string>
+		</dict>
+		<key>songs</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# เพลง</string>
+			<key>many</key>
+			<string>#%li# เพลง</string>
+			<key>one</key>
+			<string>#1# เพลง</string>
+			<key>other</key>
+			<string>#%li# เพลง</string>
+			<key>two</key>
+			<string>#%li# เพลง</string>
+			<key>zero</key>
+			<string>#%li# เพลง</string>
+		</dict>
+	</dict>
+	<key>ALBUM_DETAIL_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@songs@%#@min@</string>
+		<key>min</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string> #%li# นาที</string>
+			<key>many</key>
+			<string> #%li# นาที</string>
+			<key>one</key>
+			<string> #%li# นาที</string>
+			<key>other</key>
+			<string> #%li# นาที</string>
+			<key>two</key>
+			<string> #%li# นาที</string>
+			<key>zero</key>
+			<string></string>
+		</dict>
+		<key>songs</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# เพลง</string>
+			<key>many</key>
+			<string>#%li# เพลง</string>
+			<key>one</key>
+			<string>#1# เพลง</string>
+			<key>other</key>
+			<string>#%li# เพลง</string>
+			<key>two</key>
+			<string>#%li# เพลง</string>
+			<key>zero</key>
+			<string>ไม่มีเพลง</string>
+		</dict>
+	</dict>
 	<key>AUDIOBOOKS_DETAIL_FORMAT</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
@@ -12,12 +98,18 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>li</string>
-			<key>zero</key>
-			<string>no chapters</string>
+			<key>few</key>
+			<string>#%li# บท</string>
+			<key>many</key>
+			<string>#%li# บท</string>
 			<key>one</key>
-			<string>#1# chapter</string>
+			<string>#1# บท</string>
 			<key>other</key>
-			<string>#%li# chapters</string>
+			<string>#%li# บท</string>
+			<key>two</key>
+			<string>#%li# บท</string>
+			<key>zero</key>
+			<string>ไม่มีบท</string>
 		</dict>
 		<key>min</key>
 		<dict>
@@ -25,66 +117,18 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>li</string>
+			<key>few</key>
+			<string> #%li# นาที</string>
+			<key>many</key>
+			<string> #%li# นาที</string>
+			<key>one</key>
+			<string> #%li# นาที</string>
+			<key>other</key>
+			<string> #%li# นาที</string>
+			<key>two</key>
+			<string> #%li# นาที</string>
 			<key>zero</key>
 			<string></string>
-			<key>other</key>
-			<string>, #%li# min</string>
-		</dict>
-	</dict>
-	<key>ALBUM_DETAIL_FORMAT</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@songs@%#@min@</string>
-		<key>songs</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>zero</key>
-			<string>no songs</string>
-			<key>one</key>
-			<string>#1# song</string>
-			<key>other</key>
-			<string>#%li# songs</string>
-		</dict>
-		<key>min</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>zero</key>
-			<string></string>
-			<key>other</key>
-			<string>, #%li# min</string>
-		</dict>
-	</dict>
-	<key>ALBUMS_SONGS_COUNT_FORMAT</key>
-	<dict>
-		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@albums@, %#@songs@</string>
-		<key>songs</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>one</key>
-			<string>#1# song</string>
-			<key>other</key>
-			<string>#%li# songs</string>
-		</dict>
-		<key>albums</key>
-		<dict>
-			<key>NSStringFormatSpecTypeKey</key>
-			<string>NSStringPluralRuleType</string>
-			<key>NSStringFormatValueTypeKey</key>
-			<string>li</string>
-			<key>one</key>
-			<string>#1# album</string>
-			<key>other</key>
-			<string>#%li# albums</string>
 		</dict>
 	</dict>
 </dict>

@@ -9,10 +9,10 @@ defaultvoice:Ting-Ting
     <language>Chinese Mandarin</language>
     <langcode>MNC</langcode>
     <langid>31</langid>
-    <langversion>5.2.3.13310</langversion>
+    <langversion>5.2.4.14071</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Ting-Ting</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13312</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,23 @@ defaultvoice:Ting-Ting
       userdct/mnc
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      ting-ting/userdct/mnc
+      userdct/mnc/ting-ting
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/mnc
+    </RESOURCE>
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/mnc
+    </RESOURCE>
     
     
     

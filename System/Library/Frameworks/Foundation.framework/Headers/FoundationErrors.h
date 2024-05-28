@@ -1,5 +1,5 @@
 /*	FoundationErrors.h
-	Copyright (c) 2004-2013, Apple Inc. All rights reserved.
+	Copyright (c) 2004-2014, Apple Inc. All rights reserved.
 */
 
 #import <Foundation/NSObject.h>
@@ -58,6 +58,7 @@ enum {
     NSPropertyListReadUnknownVersionError NS_ENUM_AVAILABLE(10_6, 4_0) = 3841,  // The version number in the property list is unknown
     NSPropertyListReadStreamError NS_ENUM_AVAILABLE(10_6, 4_0) = 3842,          // Stream error reading a property list
     NSPropertyListWriteStreamError NS_ENUM_AVAILABLE(10_6, 4_0) = 3851,         // Stream error writing a property list
+    NSPropertyListWriteInvalidError NS_ENUM_AVAILABLE(10_10, 8_0) = 3852,       // Invalid property list object or invalid property list type specified when writing
 
     NSPropertyListErrorMinimum NS_ENUM_AVAILABLE(10_6, 4_0) = 3840,
     NSPropertyListErrorMaximum NS_ENUM_AVAILABLE(10_6, 4_0) = 4095,

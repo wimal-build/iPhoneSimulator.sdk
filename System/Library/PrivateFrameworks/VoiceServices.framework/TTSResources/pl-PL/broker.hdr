@@ -9,10 +9,10 @@ defaultvoice:Zosia
     <language>Polish</language>
     <langcode>PLP</langcode>
     <langid>27</langid>
-    <langversion>5.2.3.13337</langversion>
+    <langversion>5.2.4.14013</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Zosia</voice>
-    <voiceversion>5.2.3.13303</voiceversion>
+    <voiceversion>5.2.4.14066</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,10 +77,17 @@ defaultvoice:Zosia
       userdct/plp
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      zosia/userdct/plp
+      userdct/plp/zosia
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/plp
+    </RESOURCE>
+     
+    
+    
     
     
     

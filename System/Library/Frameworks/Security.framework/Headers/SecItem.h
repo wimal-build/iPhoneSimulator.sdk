@@ -2,14 +2,14 @@
  * Copyright (c) 2006-2013 Apple Inc. All Rights Reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
- *
+ * 
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
  * Version 2.0 (the 'License'). You may not use this file except in
  * compliance with the License. Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this
  * file.
- *
+ * 
  * The Original Code and all software distributed under the License are
  * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
@@ -17,7 +17,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
  * Please see the License for the specific language governing rights and
  * limitations under the License.
- *
+ * 
  * @APPLE_LICENSE_HEADER_END@
  */
 
@@ -80,6 +80,7 @@ extern CFTypeRef kSecClassIdentity
 
     kSecClassGenericPassword item attributes:
         kSecAttrAccessible
+        kSecAttrAccessControl
         kSecAttrAccessGroup
         kSecAttrCreationDate
         kSecAttrModificationDate
@@ -96,6 +97,7 @@ extern CFTypeRef kSecClassIdentity
 
     kSecClassInternetPassword item attributes:
         kSecAttrAccessible
+        kSecAttrAccessControl
         kSecAttrAccessGroup
         kSecAttrCreationDate
         kSecAttrModificationDate
@@ -116,6 +118,7 @@ extern CFTypeRef kSecClassIdentity
 
     kSecClassCertificate item attributes:
         kSecAttrAccessible
+        kSecAttrAccessControl
         kSecAttrAccessGroup
         kSecAttrCertificateType
         kSecAttrCertificateEncoding
@@ -128,6 +131,7 @@ extern CFTypeRef kSecClassIdentity
 
     kSecClassKey item attributes:
         kSecAttrAccessible
+        kSecAttrAccessControl
         kSecAttrAccessGroup
         kSecAttrKeyClass
         kSecAttrLabel
@@ -161,6 +165,10 @@ extern CFTypeRef kSecClassIdentity
      both attributes are specified on either OS X or iOS, the value for the
      kSecAttrAccessible key may only be one whose name does not end with
      "ThisDeviceOnly", as those cannot sync to another device.
+
+     @constant kSecAttrAccessControl Specifies a dictionary key whose value
+     is SecAccessControl instance which contains access control conditions
+     for item.
 
      @constant kSecAttrAccessGroup Specifies a dictionary key whose value is
      a CFStringRef indicating which access group a item is in.  The access
@@ -382,6 +390,8 @@ extern CFTypeRef kSecClassIdentity
 */
 extern CFTypeRef kSecAttrAccessible
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessControl
+    __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 extern CFTypeRef kSecAttrAccessGroup
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_3_0);
 extern CFTypeRef kSecAttrSynchronizable
@@ -489,6 +499,15 @@ extern CFTypeRef kSecAttrCanUnwrap
         regardless of the lock state of the device.  This is not recommended
         for anything except system use. Items with this attribute will migrate
         to a new device when using encrypted backups.
+    @constant kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly Item data can
+         only be accessed while the device is unlocked. This class is only 
+         available if a passcode is set on the device. This is recommended for
+         items that only need to be accessible while the application is in the
+         foreground. Items with this attribute will never migrate to a new 
+         device, so after a backup is restored to a new device, these items 
+         will be missing. No items can be stored in this class on devices 
+         without a passcode. Disabling the device passcode will cause all 
+         items in this class to be deleted.
     @constant kSecAttrAccessibleWhenUnlockedThisDeviceOnly Item data can only
         be accessed while the device is unlocked. This is recommended for items
         that only need be accesible while the application is in the foreground.
@@ -512,6 +531,8 @@ extern CFTypeRef kSecAttrAccessibleAfterFirstUnlock
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_4_0);
 extern CFTypeRef kSecAttrAccessibleAlways
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_4_0);
+extern CFTypeRef kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly
+    __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 extern CFTypeRef kSecAttrAccessibleWhenUnlockedThisDeviceOnly
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_4_0);
 extern CFTypeRef kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
@@ -819,9 +840,21 @@ extern CFTypeRef kSecValuePersistentRef
         SecCertificateRef, SecIdentityRef, or CFDataRef (for a persistent
         item reference.) The items in the array must all be of the same
         type. When this attribute is provided, no keychains are searched.
+    @constant kSecUseOperationPrompt Specifies a dictionary key whose value
+        is a CFStringRef that represents a user-visible string describing
+        the operation for which the application is attempting to authenticate.
+        The application is responsible for the text localization.
+    @constant kSecUseNoAuthenticationUI Specifies a dictionary key whose value
+        is a CFBooleanRef. If provided with a value of kCFBooleanTrue, the error
+        errSecInteractionNotAllowed will be returned if the item is attempting
+        to authenticate with UI.
 */
 extern CFTypeRef kSecUseItemList
     __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_2_0);
+extern CFTypeRef kSecUseOperationPrompt
+    __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+extern CFTypeRef kSecUseNoAuthenticationUI
+    __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 /*!
     @function SecItemCopyMatching

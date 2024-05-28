@@ -1,0 +1,8 @@
+-- Migrates traces from v10 to v11
+BEGIN TRANSACTION;
+
+-- Adding motion info
+ALTER TABLE locations ADD COLUMN motion_type INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN motion_confidence INTEGER DEFAULT 0;
+
+COMMIT;

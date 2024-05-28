@@ -52,7 +52,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Initialize a beacon region with a proximityUUID. Major and minor values will be wildcarded.
  *
  */
-- (id)initWithProximityUUID:(NSUUID *)proximityUUID identifier:(NSString *)identifier;
+- (instancetype)initWithProximityUUID:(NSUUID *)proximityUUID identifier:(NSString *)identifier;
 
 /*
  *  initWithProximityUUID:major:identifier:
@@ -61,7 +61,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Initialize a beacon region with an proximityUUID and major value. Minor value will be wildcarded.
  *
  */
-- (id)initWithProximityUUID:(NSUUID *)proximityUUID major:(CLBeaconMajorValue)major identifier:(NSString *)identifier;
+- (instancetype)initWithProximityUUID:(NSUUID *)proximityUUID major:(CLBeaconMajorValue)major identifier:(NSString *)identifier;
 
 /*
  *  initWithProximityUUID:major:minor:identifier:
@@ -70,7 +70,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Initialize a beacon region identified by an proximityUUID, major and minor values.
  *
  */
-- (id)initWithProximityUUID:(NSUUID *)proximityUUID major:(CLBeaconMajorValue)major minor:(CLBeaconMinorValue)minor identifier:(NSString *)identifier;
+- (instancetype)initWithProximityUUID:(NSUUID *)proximityUUID major:(CLBeaconMajorValue)major minor:(CLBeaconMinorValue)minor identifier:(NSString *)identifier;
 
 /*
  *  peripheralDataWithMeasuredPower:
@@ -94,7 +94,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Proximity identifier associated with the region.
  *
  */
-@property (readonly, nonatomic) NSUUID *proximityUUID;
+@property (readonly, nonatomic, strong) NSUUID *proximityUUID;
 
 /*
  *  major
@@ -103,7 +103,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Most significant value associated with the region. If a major value wasn't specified, this will be nil.
  *
  */
-@property (readonly, nonatomic) NSNumber *major;
+@property (readonly, nonatomic, strong) NSNumber *major;
 
 /*
  *  minor
@@ -112,7 +112,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Least significant value associated with the region. If a minor value wasn't specified, this will be nil.
  *
  */
-@property (readonly, nonatomic) NSNumber *minor;
+@property (readonly, nonatomic, strong) NSNumber *minor;
 
 /*
  *  notifyEntryStateOnDisplay
@@ -142,7 +142,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Proximity identifier associated with the beacon.
  *
  */
-@property (readonly, nonatomic) NSUUID *proximityUUID;
+@property (readonly, nonatomic, strong) NSUUID *proximityUUID;
 
 /*
  *  major
@@ -151,7 +151,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Most significant value associated with the beacon.
  *
  */
-@property (readonly, nonatomic) NSNumber *major;
+@property (readonly, nonatomic, strong) NSNumber *major;
 
 /*
  *  minor
@@ -160,7 +160,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *    Least significant value associated with the beacon.
  *
  */
-@property (readonly, nonatomic) NSNumber *minor;
+@property (readonly, nonatomic, strong) NSNumber *minor;
 
 /*
  *  proximity

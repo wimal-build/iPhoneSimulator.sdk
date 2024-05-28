@@ -123,6 +123,9 @@ extern "C" {
                                                     tap.
     @constant   kAudioQueueErr_RecordUnderrun       During recording, data was lost because there
                                                     was no enqueued buffer into which to store it.
+    @constant   kAudioQueueErr_BufferEnqueuedTwice  A buffer was enqueued twice on an input queue
+                                                    (before being returned as a result of being filled
+                                                    or from Reset).
     @constant   kAudioQueueErr_EnqueueDuringReset   During Reset, Stop, or Dispose, it is not
                                                     permitted to enqueue buffers.
     @constant   kAudioQueueErr_InvalidOfflineMode   The operation requires the queue to be in
@@ -152,6 +155,7 @@ enum {
     kAudioQueueErr_InvalidTapContext    = -66669,
     kAudioQueueErr_RecordUnderrun       = -66668,
     kAudioQueueErr_InvalidTapType       = -66667,
+    kAudioQueueErr_BufferEnqueuedTwice  = -66666,
     kAudioQueueErr_EnqueueDuringReset   = -66632,
     kAudioQueueErr_InvalidOfflineMode   = -66626,
 };
@@ -258,8 +262,8 @@ enum { // typedef UInt32 AudioQueuePropertyID
     @constant kAudioQueueTimePitchAlgorithm_LowQualityZeroLatency
         Low quality, very inexpensive. Suitable for brief fast-forward/rewind effects,
         low quality voice. Default algorithm on iOS.
-	@constant kAudioQueueTimePitchAlgorithm_Varispeed
-		High quality, but pitch varies with rate.
+    @constant kAudioQueueTimePitchAlgorithm_Varispeed
+        High quality, but pitch varies with rate.
 */
 enum {
     kAudioQueueTimePitchAlgorithm_Spectral      = 'spec',
@@ -267,7 +271,7 @@ enum {
 #if TARGET_OS_IPHONE
     kAudioQueueTimePitchAlgorithm_LowQualityZeroLatency = 'lqzl',
 #endif
-	kAudioQueueTimePitchAlgorithm_Varispeed		= 'vspd'
+    kAudioQueueTimePitchAlgorithm_Varispeed     = 'vspd'
 };
 
 #if TARGET_OS_IPHONE
@@ -290,9 +294,6 @@ enum {
         
         Changing this property is not permitted while the queue is primed or running. Changing
         this property at other times may cause any properties set on the codec to be lost.
-        
-        See also the discussion of kAudioFormatProperty_HardwareCodecCapabilities
-        in AudioToolbox/AudioFormat.h.
 */
 enum {
     kAudioQueueProperty_HardwareCodecPolicy             = 'aqcp'        // value is UInt32

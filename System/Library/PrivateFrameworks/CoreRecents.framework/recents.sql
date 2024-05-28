@@ -12,7 +12,9 @@ CREATE TABLE recents (
     /* A compounded hash of all contacts belonging to this recent record. */
     record_hash TEXT NOT NULL,
     
-    count INTEGER
+    count INTEGER,
+
+    group_kind INTEGER
 );
 
 CREATE TABLE contacts (

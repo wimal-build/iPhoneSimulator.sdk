@@ -14,7 +14,7 @@
  *  Discussion:
  *    Typedef of block to be invoked when the device's activity is updated.
  */
-typedef void (^CMMotionActivityHandler)(CMMotionActivity *activity) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+typedef void (^CMMotionActivityHandler)(CMMotionActivity *activity) NS_AVAILABLE(NA,7_0);
 
 /*
  *  CMMotionActivityQueryHandler
@@ -23,7 +23,7 @@ typedef void (^CMMotionActivityHandler)(CMMotionActivity *activity) __OSX_AVAILA
  *    Typedef of block to be invoked when the historical activity query is
  *    completed.  The array is an array of CMMotionActivity objects.
  */
-typedef void (^CMMotionActivityQueryHandler)(NSArray *activities, NSError *error) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+typedef void (^CMMotionActivityQueryHandler)(NSArray *activities, NSError *error) NS_AVAILABLE(NA,7_0);
 
 /*
  *   CMMotionActivityManager

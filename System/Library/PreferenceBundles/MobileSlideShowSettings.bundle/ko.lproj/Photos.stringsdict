@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPad에서 %#@download_n_items@할 수 없었습니다. 계속 진행하는 경우 %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>many</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>one</key>
+			<string>%d개의 전체 해상도 항목을 다운로드</string>
+			<key>other</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>two</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>zero</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>many</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>one</key>
+			<string>이 항목의 저해상도 버전이 제거됩니다</string>
+			<key>other</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>two</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>zero</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPhone에서 %#@download_n_items@할 수 없었습니다. 계속 진행하는 경우 %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>many</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>one</key>
+			<string>%d개의 전체 해상도 항목을 다운로드</string>
+			<key>other</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>two</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>zero</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>many</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>one</key>
+			<string>이 항목의 저해상도 버전이 제거됩니다</string>
+			<key>other</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>two</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>zero</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPod touch에서 %#@download_n_items@할 수 없었습니다. 계속 진행하는 경우 %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>many</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>one</key>
+			<string>%d개의 전체 해상도 항목을 다운로드</string>
+			<key>other</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>two</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+			<key>zero</key>
+			<string>%d개의 전체 해상도 사진 및 비디오를 다운로드</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>many</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>one</key>
+			<string>이 항목의 저해상도 버전이 제거됩니다</string>
+			<key>other</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>two</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+			<key>zero</key>
+			<string>해당 사진 및 비디오의 저해상도 버전이 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함에 %#@these_photos_will_remain@.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>many</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>one</key>
+			<string>이 사진이 유지됩니다</string>
+			<key>other</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>two</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 사진이 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함에 %#@these_photos_videos_will_remain@.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진 및 비디오가 유지됩니다</string>
+			<key>many</key>
+			<string>해당 사진 및 비디오가 유지됩니다</string>
+			<key>one</key>
+			<string>이 항목이 유지됩니다</string>
+			<key>other</key>
+			<string>해당 사진 및 비디오가 유지됩니다</string>
+			<key>two</key>
+			<string>해당 사진 및 비디오가 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 사진 및 비디오가 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud 사진 보관함에 %#@these_videos_will_remain@.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>many</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>one</key>
+			<string>이 비디오가 유지됩니다</string>
+			<key>other</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>two</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 비디오가 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPad에서 %#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 항목이 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPhone에서 %#@d_photos_videos_will_be_removed@. iCloud 사진 보관함에는 %#@they_will_remain_in@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 항목이 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>many</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>one</key>
+			<string>이 항목이 유지됩니다</string>
+			<key>other</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>two</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 사진이 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPod touch에서 %#@d_photos_videos_will_be_removed@. iCloud 사진 보관함에는 %#@they_will_remain_in@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 항목이 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 사진 및 비디오가 제거됩니다</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>many</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>one</key>
+			<string>이 항목이 유지됩니다</string>
+			<key>other</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>two</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 사진이 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPad에서 %#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>many</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>one</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>other</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>two</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>zero</key>
+			<string>%d장의 사진이 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPhone에서 %#@d_photos_will_be_removed@. iCloud 사진 보관함에는 %#@they_will_remain_in@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>many</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>one</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>other</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>two</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>zero</key>
+			<string>%d장의 사진이 제거됩니다</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>many</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>one</key>
+			<string>이 사진이 유지됩니다</string>
+			<key>other</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>two</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 사진이 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPod touch에서 %#@d_photos_will_be_removed@. iCloud 사진 보관함에는 %#@they_will_remain_in@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>many</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>one</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>other</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>two</key>
+			<string>%d장의 사진이 제거됩니다</string>
+			<key>zero</key>
+			<string>%d장의 사진이 제거됩니다</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>many</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>one</key>
+			<string>이 사진이 유지됩니다</string>
+			<key>other</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>two</key>
+			<string>해당 사진이 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 사진이 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPad에서 %#@d_videos_will_be_removed@</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPhone에서 %#@d_videos_will_be_removed@. iCloud 사진 보관함에는 %#@they_will_remain_in@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>many</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>one</key>
+			<string>이 비디오가 유지됩니다</string>
+			<key>other</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>two</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 비디오가 유지됩니다</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>이 iPod touch에서 %#@d_videos_will_be_removed@. iCloud 사진 보관함에는 %#@they_will_remain_in@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>many</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>one</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>other</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>two</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+			<key>zero</key>
+			<string>%d개의 비디오가 제거됩니다</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>many</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>one</key>
+			<string>이 비디오가 유지됩니다</string>
+			<key>other</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>two</key>
+			<string>해당 비디오가 유지됩니다</string>
+			<key>zero</key>
+			<string>해당 비디오가 유지됩니다</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

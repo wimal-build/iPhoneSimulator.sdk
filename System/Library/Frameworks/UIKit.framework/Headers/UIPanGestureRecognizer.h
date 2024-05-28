@@ -2,7 +2,7 @@
 //  UIPanGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -14,8 +14,8 @@
 
 NS_CLASS_AVAILABLE_IOS(3_2) @interface UIPanGestureRecognizer : UIGestureRecognizer {
   @package
-    CGPoint         _firstScreenLocation;
-    CGPoint         _lastScreenLocation;
+    CGPoint         _firstSceneReferenceLocation;
+    CGPoint         _lastSceneReferenceLocation;
     NSTimeInterval  _lastTouchTime;
     id              _velocitySample;
     id              _previousVelocitySample;
@@ -24,7 +24,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIPanGestureRecognizer : UIGestureRecogni
     NSUInteger      _minimumNumberOfTouches;
     NSUInteger      _maximumNumberOfTouches;
     CGFloat         _hysteresis;
-    CGPoint         _lastUnadjustedScreenLocation;
+    CGPoint         _lastUnadjustedSceneReferenceLocation;
     unsigned int    _failsPastMaxTouches:1;
     unsigned int    _canPanHorizontally:1;
     unsigned int    _canPanVertically:1;

@@ -21,10 +21,10 @@ NS_CLASS_AVAILABLE(NA, 6_0)
 /* controller should be presented with -presentViewController:animated:completion:
  pass should be a pass you want the user to add.
  */
-- (id)initWithPass:(id)pass;
-- (id)initWithPasses:(NSArray *)passes NS_AVAILABLE_IOS(7_0);
+- (instancetype)initWithPass:(id)pass;
+- (instancetype)initWithPasses:(NSArray *)passes NS_AVAILABLE_IOS(7_0);
++ (BOOL)canAddPasses NS_AVAILABLE_IOS(8_0);
 
 @property(nonatomic,assign) id <PKAddPassesViewControllerDelegate> delegate;
 
 @end
-

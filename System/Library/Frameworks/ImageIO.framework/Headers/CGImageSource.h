@@ -14,6 +14,7 @@ typedef struct CGImageSource *CGImageSourceRef;
 #include <CoreGraphics/CoreGraphics.h>
 #include "CGImageMetadata.h"
 
+CF_IMPLICIT_BRIDGING_ENABLED
 
 enum CGImageSourceStatus {
     kCGImageStatusUnexpectedEOF = -5,
@@ -209,6 +210,7 @@ IMAGEIO_EXTERN CGImageSourceStatus CGImageSourceGetStatus(CGImageSourceRef isrc)
 
 IMAGEIO_EXTERN CGImageSourceStatus CGImageSourceGetStatusAtIndex(CGImageSourceRef isrc, size_t index)  IMAGEIO_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_4_0);
 
+CF_IMPLICIT_BRIDGING_DISABLED
 
 
-#endif	/* CGIMAGESOURCE_H_ */
+#endif  /* CGIMAGESOURCE_H_ */

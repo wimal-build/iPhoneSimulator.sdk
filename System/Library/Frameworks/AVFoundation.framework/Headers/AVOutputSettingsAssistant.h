@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
  
-	Copyright 2012-2013 Apple Inc. All rights reserved.
+	Copyright 2012-2014 Apple Inc. All rights reserved.
 
 */
 
@@ -20,6 +20,7 @@ AVF_EXPORT NSString * const AVOutputSettingsPreset640x480		NS_AVAILABLE(10_9, 7_
 AVF_EXPORT NSString * const AVOutputSettingsPreset960x540   	NS_AVAILABLE(10_9, 7_0);
 AVF_EXPORT NSString * const AVOutputSettingsPreset1280x720  	NS_AVAILABLE(10_9, 7_0);
 AVF_EXPORT NSString * const AVOutputSettingsPreset1920x1080		NS_AVAILABLE(10_9, 7_0);
+AVF_EXPORT NSString * const AVOutputSettingsPreset3840x2160		NS_AVAILABLE(10_10, NA);
 
 @class AVOutputSettingsAssistantInternal;
 
@@ -50,7 +51,7 @@ NS_CLASS_AVAILABLE(10_9, 7_0)
  
 		On iOS, the returned array may be different between different device models.
  */
-+ (NSArray *)availableOutputSettingsPresets NS_AVAILABLE(TBD, 7_0);
++ (NSArray *)availableOutputSettingsPresets NS_AVAILABLE(10_10, 7_0);
 
 /*!
 	@method outputSettingsAssistantWithPreset:
@@ -127,7 +128,11 @@ NS_CLASS_AVAILABLE(10_9, 7_0)
 	@abstract
 		A CMTime describing the average frame duration (reciprocal of average frame rate) of your video data
 	@discussion
-		Setting this property will allow the receiver to make a more informed recommendation for the video settings that should be used.  After setting this property, you should re-query the videoSettings property to get the new recommendation.  The default value is 1/30, which means that the receiver is assuming that your source video has a frame rate of 30fps.
+		Setting this property will allow the receiver to make a more informed recommendation for the video settings that should be used.  After setting this property, you should re-query the videoSettings property to get the new recommendation.
+ 
+		The default value is 1/30, which means that the receiver is assuming that your source video has an average frame rate of 30fps.
+ 
+		It is an error to set this property to a value that is not positive or not numeric.  See CMTIME_IS_NUMERIC.
  */
 @property (nonatomic) CMTime sourceVideoAverageFrameDuration;
 
@@ -141,7 +146,9 @@ NS_CLASS_AVAILABLE(10_9, 7_0)
 		If your source of video data is an instance of AVAssetReaderOutput, you can discover the minimum frame duration of your source asset using the AVAssetTrack.minFrameDuration property.
  
 		The default value is 1/30, which means that the receiver is assuming that your source video has a maximum frame rate of 30fps.
+ 
+		It is an error to set this property to a value that is not positive or not numeric.  See CMTIME_IS_NUMERIC.
  */
-@property (nonatomic) CMTime sourceVideoMinFrameDuration;
+@property (nonatomic) CMTime sourceVideoMinFrameDuration NS_AVAILABLE(10_10, 7_0);
 
 @end

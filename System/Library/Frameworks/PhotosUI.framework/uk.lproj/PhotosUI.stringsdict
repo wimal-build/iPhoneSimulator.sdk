@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Фототеку iCloud вимкнено. У вас є %#@have_n_days@, щоб переконатися, що у вас є всі копії ваших оригінальних фото і відео на цьому або іншому пристрої.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>має %d дні</string>
+			<key>many</key>
+			<string>має %d днів</string>
+			<key>one</key>
+			<string>має %d день</string>
+			<key>other</key>
+			<string>має %d дня</string>
+			<key>two</key>
+			<string>має %d дні</string>
+			<key>zero</key>
+			<string>має %d днів</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Фототеку iCloud буде видалено через %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d дні</string>
+			<key>many</key>
+			<string>%d днів</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>other</key>
+			<string>%d дня</string>
+			<key>two</key>
+			<string>%d дні</string>
+			<key>zero</key>
+			<string>%d днів</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Синхронізація фото через iTunes не підтримується, коли увімкнено Фототеку iCloud.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото буде вилучено</string>
+			<key>many</key>
+			<string>%d фото буде вилучено</string>
+			<key>one</key>
+			<string>%d фото буде вилучено</string>
+			<key>other</key>
+			<string>%d фото буде вилучено</string>
+			<key>two</key>
+			<string>%d фото буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Синхронізація фото через iTunes не підтримується, коли увімкнено Фототеку iCloud.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>%d відео буде вилучено</string>
+			<key>other</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото і відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Синхронізація фото через iTunes не підтримується, коли увімкнено Фототеку iCloud.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d відео буде вилучено</string>
+			<key>many</key>
+			<string>%d відео буде вилучено</string>
+			<key>one</key>
+			<string>%d відео буде вилучено</string>
+			<key>other</key>
+			<string>%d відео буде вилучено</string>
+			<key>two</key>
+			<string>%d відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Фототеку iCloud буде видалено з iCloud через %#@in_n_days@. Фото і відео більше не відвантажуються. Ви можете скасувати це видалення у розділі керування сховищем iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d дні</string>
+			<key>many</key>
+			<string>%d дні</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>other</key>
+			<string>%d дня</string>
+			<key>two</key>
+			<string>%d дні</string>
+			<key>zero</key>
+			<string>%d днів</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Фототеку iCloud буде видалено з iCloud через %#@in_n_days@. Виберіть «Завантажити і зберегти оригінали», щоб завантажити всі копії ваших фото і відео.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d дні</string>
+			<key>many</key>
+			<string>%d днів</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>other</key>
+			<string>%d дня</string>
+			<key>two</key>
+			<string>%d дні</string>
+			<key>zero</key>
+			<string>%d днів</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Фототека iCloud не оновлювалася %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d дні</string>
+			<key>many</key>
+			<string>%d днів</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>other</key>
+			<string>%d дні</string>
+			<key>two</key>
+			<string>%d дні</string>
+			<key>zero</key>
+			<string>%d днів</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Востаннє оновлено %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d хвилини тому</string>
+			<key>many</key>
+			<string>%d хвилин тому</string>
+			<key>one</key>
+			<string>%d хвилину тому</string>
+			<key>other</key>
+			<string>%d хвилини тому</string>
+			<key>two</key>
+			<string>%d хвилини тому</string>
+			<key>zero</key>
+			<string>%d хвилин тому</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

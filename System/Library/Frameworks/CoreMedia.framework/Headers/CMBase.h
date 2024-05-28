@@ -14,6 +14,10 @@
 #include <Availability.h>
 #include <AvailabilityMacros.h>
 
+// Pre-10.10, weak import
+#ifndef __AVAILABILITY_INTERNAL__MAC_10_10
+	#define __AVAILABILITY_INTERNAL__MAC_10_10 __AVAILABILITY_INTERNAL_WEAK_IMPORT
+#endif
 // Pre-10.7, weak import
 #ifndef __AVAILABILITY_INTERNAL__MAC_10_7
 	#define __AVAILABILITY_INTERNAL__MAC_10_7 __AVAILABILITY_INTERNAL_WEAK_IMPORT
@@ -53,6 +57,11 @@
 // Pre-10.10, weak import
 #ifndef __AVAILABILITY_INTERNAL__MAC_10_10
 #define __AVAILABILITY_INTERNAL__MAC_10_10 __AVAILABILITY_INTERNAL_WEAK_IMPORT
+#endif
+
+// Pre-8.0, weak import
+#ifndef __AVAILABILITY_INTERNAL__IPHONE_8_0
+#define __AVAILABILITY_INTERNAL__IPHONE_8_0 __AVAILABILITY_INTERNAL_WEAK_IMPORT
 #endif
 
 // Deprecations

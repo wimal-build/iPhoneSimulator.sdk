@@ -2,12 +2,12 @@
  *  CVOpenGLESTexture.h
  *  CoreVideo
  *
- *  Copyright (c) 2011 Apple Computer, Inc. All rights reserved.
+ *  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
  *
  */
  
  /*! @header CVOpenGLESTexture.h
-	@copyright 2011 Apple Computer, Inc. All rights reserved.
+	@copyright 2011-2014 Apple Inc. All rights reserved.
 	@availability iOS 5.0 or later
     @discussion A CoreVideo Texture derives from an ImageBuffer, and is used for supplying source image data to OpenGL.
     		   
@@ -20,8 +20,7 @@
 #include <CoreVideo/CVReturn.h>
 #include <CoreVideo/CVImageBuffer.h>
 #include <CoreFoundation/CoreFoundation.h>
-#include <OpenGLES/ES2/gl.h>
-#include <OpenGLES/ES2/glext.h>
+#include <OpenGLES/gltypes.h>
 #include <stddef.h>
 #include <stdint.h>
 

@@ -36,7 +36,8 @@
   A delegate that conforms to the MCBrowserViewControllerDelegate 
   protocol must also be provided. The delegate is notified to decide 
   whether to present a peer, when the user taps the done button, or when
-  the users taps the cancel button.
+  the users taps the cancel button. No assumption should be made as to
+  which queue the callbacks are called on.
  
   When presented, the browser view controller looks for nearby peers, 
   and allows the user to connect up to the specified maximum number of 
@@ -46,14 +47,14 @@
   When the browser view controller is dismissed, it will stop looking 
   for nearby peers.
   */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_10,7_0)
 @interface MCBrowserViewController : UIViewController <MCNearbyServiceBrowserDelegate>
 // Create a browser view controller with a service type and a session
 - (instancetype)initWithServiceType:(NSString *)serviceType session:(MCSession *)session;
 // Create a browser view controller with a programmatic browser and a session
-- (instancetype)initWithBrowser:(MCNearbyServiceBrowser *)browser session:(MCSession *)session;
+- (instancetype)initWithBrowser:(MCNearbyServiceBrowser *)browser session:(MCSession *)session NS_DESIGNATED_INITIALIZER;
 
-@property (assign, NS_NONATOMIC_IOSONLY) id<MCBrowserViewControllerDelegate> delegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id<MCBrowserViewControllerDelegate> delegate;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) MCNearbyServiceBrowser *browser;
 @property (readonly, NS_NONATOMIC_IOSONLY) MCSession *session;

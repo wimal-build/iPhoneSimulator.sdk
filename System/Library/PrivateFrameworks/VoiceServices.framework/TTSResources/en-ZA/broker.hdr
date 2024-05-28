@@ -77,7 +77,7 @@ defaultvoice:Tessa
       userdct/enz
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      tessa/userdct/enz
+      userdct/enz/tessa
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->

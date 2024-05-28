@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>คลังรูปภาพ iCloud ถูกปิดใช้งาน คุณ%#@have_n_days@เพื่อทำให้แน่ใจว่าคุณมีสำเนารูปภาพและวิดีโอต้นฉบับทั้งหมดของคุณในอุปกรณ์เครื่องนี้หรือเครื่องอื่น</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>มีเวลา %d วัน</string>
+			<key>many</key>
+			<string>มีเวลา %d วัน</string>
+			<key>one</key>
+			<string>มีเวลา %d วัน</string>
+			<key>other</key>
+			<string>มีเวลา %d วัน</string>
+			<key>two</key>
+			<string>มีเวลา %d วัน</string>
+			<key>zero</key>
+			<string>มีเวลา %d วัน</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>คลังรูปภาพ iCloud จะถูกลบ%#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ในอีก %d วัน</string>
+			<key>many</key>
+			<string>ในอีก %d วัน</string>
+			<key>one</key>
+			<string>ในอีก %d วัน</string>
+			<key>other</key>
+			<string>ในอีก %d วัน</string>
+			<key>two</key>
+			<string>ในอีก %d วัน</string>
+			<key>zero</key>
+			<string>ในอีก %d วัน</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ไม่รองรับการเชื่อมข้อมูลรูปภาพผ่าน iTunes เมื่อเปิดคลังรูปภาพ iCloud อยู่
+
+%#@d_photos_will_be_removed@</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>จะเอารูปภาพ %d รูปออก</string>
+			<key>many</key>
+			<string>จะเอารูปภาพ %d รูปออก</string>
+			<key>one</key>
+			<string>จะเอารูปภาพ %d รูปออก</string>
+			<key>other</key>
+			<string>จะเอารูปภาพ %d รูปออก</string>
+			<key>two</key>
+			<string>จะเอารูปภาพ %d รูปออก</string>
+			<key>zero</key>
+			<string>จะเอารูปภาพ %d รูปออก</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ไม่รองรับการเชื่อมข้อมูลรูปภาพผ่าน iTunes เมื่อเปิดคลังรูปภาพ iCloud อยู่
+
+%#@d_photos_videos_will_be_removed@</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>จะเอารูปภาพและวิดีโอ %d รายการออก</string>
+			<key>many</key>
+			<string>จะเอารูปภาพและวิดีโอ %d รายการออก</string>
+			<key>one</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+			<key>other</key>
+			<string>จะเอารูปภาพและวิดีโอ %d รายการออก</string>
+			<key>two</key>
+			<string>จะเอารูปภาพและวิดีโอ %d รายการออก</string>
+			<key>zero</key>
+			<string>จะเอารูปภาพและวิดีโอ %d รายการออก</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ไม่รองรับการเชื่อมข้อมูลรูปภาพผ่าน iTunes เมื่อเปิดคลังรูปภาพ iCloud อยู่
+
+%#@d_videos_will_be_removed@</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+			<key>many</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+			<key>one</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+			<key>other</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+			<key>two</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+			<key>zero</key>
+			<string>จะเอาวิดีโอ %d รายการออก</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>คลังรูปภาพ iCloud จะถูกลบออกจาก iCloud %#@in_n_days@ รูปภาพและวิดีโอไม่ได้อัปโหลดอีกต่อไป คุณสามารถยกเลิกการลบนี้ได้ในการจัดการเนื้อที่เก็บข้อมูล iCloud</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ในอีก %d วัน</string>
+			<key>many</key>
+			<string>ในอีก %d วัน</string>
+			<key>one</key>
+			<string>ในอีก %d วัน</string>
+			<key>other</key>
+			<string>ในอีก %d วัน</string>
+			<key>two</key>
+			<string>ในอีก %d วัน</string>
+			<key>zero</key>
+			<string>ในอีก %d วัน</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>คลังรูปภาพ iCloud จะถูกลบออกจาก iCloud %#@in_n_days@ เลือกดาวน์โหลดและเก็บต้นฉบับทางด้านล่างเพื่อดาวน์โหลดสำเนารูปภาพและวิดีโอทั้งหมดของคุณ</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ในอีก %d วัน</string>
+			<key>many</key>
+			<string>ในอีก %d วัน</string>
+			<key>one</key>
+			<string>ในอีก %d วัน</string>
+			<key>other</key>
+			<string>ในอีก %d วัน</string>
+			<key>two</key>
+			<string>ในอีก %d วัน</string>
+			<key>zero</key>
+			<string>ในอีก %d วัน</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>คลังรูปภาพ iCloud ไม่ได้เชื่อมข้อมูล%#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ในอีก %d วัน</string>
+			<key>many</key>
+			<string>ในอีก %d วัน</string>
+			<key>one</key>
+			<string>ในอีก %d วัน</string>
+			<key>other</key>
+			<string>ในอีก %d วัน</string>
+			<key>two</key>
+			<string>ในอีก %d วัน</string>
+			<key>zero</key>
+			<string>ในอีก %d วัน</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>อัปเดตล่าสุด %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d นาทีที่ผ่านมา</string>
+			<key>many</key>
+			<string>%d นาทีที่ผ่านมา</string>
+			<key>one</key>
+			<string>%d นาทีที่ผ่านมา</string>
+			<key>other</key>
+			<string>%d นาทีที่ผ่านมา</string>
+			<key>two</key>
+			<string>%d นาทีที่ผ่านมา</string>
+			<key>zero</key>
+			<string>%d นาทีที่ผ่านมา</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

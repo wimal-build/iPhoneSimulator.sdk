@@ -2,7 +2,7 @@
 //  UIPageViewController.h
 //  UIKit
 //
-//  Copyright 2011-2012, Apple Inc. All rights reserved.
+//  Copyright 2011-2012 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -44,7 +44,7 @@ UIKIT_EXTERN NSString * const UIPageViewControllerOptionInterPageSpacingKey NS_A
 NS_CLASS_AVAILABLE_IOS(5_0) @interface UIPageViewController : UIViewController {
 }
 
-- (id)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary *)options;
+- (instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary *)options;
 
 @property (nonatomic, assign) id <UIPageViewControllerDelegate> delegate;
 @property (nonatomic, assign) id <UIPageViewControllerDataSource> dataSource; // If nil, user gesture-driven navigation will be disabled.

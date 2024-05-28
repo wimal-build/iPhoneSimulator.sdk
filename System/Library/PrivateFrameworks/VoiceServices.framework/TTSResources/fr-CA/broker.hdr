@@ -9,10 +9,10 @@ defaultvoice:Amelie
     <language>Canadian French</language>
     <langcode>FRC</langcode>
     <langid>51</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.13324</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Amelie</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13295</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,10 +77,17 @@ defaultvoice:Amelie
       userdct/frc
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      amelie/userdct/frc
+      userdct/frc/amelie
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/frc/cfg1
+    </RESOURCE> 
+    
+    
     
     
     

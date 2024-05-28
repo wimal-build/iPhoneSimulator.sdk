@@ -1,6 +1,11 @@
-#ifdef GL_ES
+//
+//  TSDCurvedShader.frag
+//
+//  Copyright (c) 2012-2013 Apple Inc. All rights reserved.
+//
+#version 100
+
 precision mediump float;
-#endif
 
 uniform sampler2D Texture;
 uniform vec2 TextureSize;   // this is really 1/size

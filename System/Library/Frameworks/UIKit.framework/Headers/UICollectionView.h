@@ -2,7 +2,7 @@
 //  UICollectionView.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIScrollView.h>
@@ -34,7 +34,7 @@ typedef NS_OPTIONS(NSUInteger, UICollectionViewScrollPosition) {
 @class UICollectionReusableView;
 
 // layout transition block signature
-typedef void(^UICollectionViewLayoutInteractiveTransitionCompletion)(BOOL completed, BOOL finish);
+typedef void (^UICollectionViewLayoutInteractiveTransitionCompletion)(BOOL completed, BOOL finished);
 
 
 @protocol UICollectionViewDataSource <NSObject>
@@ -76,6 +76,8 @@ typedef void(^UICollectionViewLayoutInteractiveTransitionCompletion)(BOOL comple
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath;
 
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);
+- (void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(UICollectionReusableView *)view forElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingSupplementaryView:(UICollectionReusableView *)view forElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath;
 
@@ -92,7 +94,7 @@ typedef void(^UICollectionViewLayoutInteractiveTransitionCompletion)(BOOL comple
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 
-- (id)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout; // the designated initializer
+- (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout; // the designated initializer
 
 @property (nonatomic, retain) UICollectionViewLayout *collectionViewLayout;
 @property (nonatomic, assign) id <UICollectionViewDelegate> delegate;
@@ -124,7 +126,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 - (void)setCollectionViewLayout:(UICollectionViewLayout *)layout animated:(BOOL)animated; // transition from one layout to another
 - (void)setCollectionViewLayout:(UICollectionViewLayout *)layout animated:(BOOL)animated completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(7_0);
 
-- (UICollectionViewTransitionLayout *)startInteractiveTransitionToCollectionViewLayout:(UICollectionViewLayout *)layout completion:(UICollectionViewLayoutInteractiveTransitionCompletion) completion NS_AVAILABLE_IOS(7_0);
+- (UICollectionViewTransitionLayout *)startInteractiveTransitionToCollectionViewLayout:(UICollectionViewLayout *)layout completion:(UICollectionViewLayoutInteractiveTransitionCompletion)completion NS_AVAILABLE_IOS(7_0);
 - (void)finishInteractiveTransition NS_AVAILABLE_IOS(7_0);
 - (void)cancelInteractiveTransition NS_AVAILABLE_IOS(7_0);
 

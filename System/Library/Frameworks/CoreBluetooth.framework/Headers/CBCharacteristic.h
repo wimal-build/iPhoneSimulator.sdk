@@ -5,11 +5,11 @@
  *	@copyright 2011 Apple, Inc. All rights reserved.
  */
 
-#import <CoreBluetooth/CBDefines.h>
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
 
-#import <Foundation/Foundation.h>
-
-
+#import <CoreBluetooth/CBAttribute.h>
 
 /*!
  *  @enum CBCharacteristicProperties
@@ -54,7 +54,7 @@ typedef NS_OPTIONS(NSUInteger, CBCharacteristicProperties) {
  *
  */
 NS_CLASS_AVAILABLE(10_7, 5_0)
-CB_EXTERN_CLASS @interface CBCharacteristic : NSObject
+CB_EXTERN_CLASS @interface CBCharacteristic : CBAttribute
 
 /*!
  * @property service
@@ -64,15 +64,6 @@ CB_EXTERN_CLASS @interface CBCharacteristic : NSObject
  *
  */
 @property(weak, readonly, nonatomic) CBService *service;
-
-/*!
- * @property UUID
- *
- *  @discussion
- *      The Bluetooth UUID of the characteristic.
- *
- */
-@property(readonly, nonatomic) CBUUID *UUID;
 
 /*!
  * @property properties
@@ -108,7 +99,7 @@ CB_EXTERN_CLASS @interface CBCharacteristic : NSObject
  *      Whether the characteristic is currently broadcasted or not.
  *
  */
-@property(readonly) BOOL isBroadcasted;
+@property(readonly) BOOL isBroadcasted NS_DEPRECATED(NA, NA, 5_0, 8_0);
 
 /*!
  * @property isNotifying
@@ -186,6 +177,6 @@ CB_EXTERN_CLASS @interface CBMutableCharacteristic : CBCharacteristic
  *  @discussion			Returns an initialized characteristic.
  *
  */
-- (id)initWithType:(CBUUID *)UUID properties:(CBCharacteristicProperties)properties value:(NSData *)value permissions:(CBAttributePermissions)permissions;
+- (instancetype)initWithType:(CBUUID *)UUID properties:(CBCharacteristicProperties)properties value:(NSData *)value permissions:(CBAttributePermissions)permissions;
 
 @end

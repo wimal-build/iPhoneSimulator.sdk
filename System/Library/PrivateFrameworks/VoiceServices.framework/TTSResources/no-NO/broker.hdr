@@ -9,10 +9,10 @@ defaultvoice:Nora
     <language>Norwegian</language>
     <langcode>NON</langcode>
     <langid>8</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.13289</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Nora</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13302</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,10 +77,14 @@ defaultvoice:Nora
       userdct/non
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      nora/userdct/non
+      userdct/non/nora
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
+    
+     
+    
+    
     
     
     

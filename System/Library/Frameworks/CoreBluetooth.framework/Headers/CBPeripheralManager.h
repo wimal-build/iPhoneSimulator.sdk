@@ -7,6 +7,10 @@
  *	@copyright 2012 Apple, Inc. All rights reserved.
  */
 
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
+
 #import <CoreBluetooth/CBDefines.h>
 #import <CoreBluetooth/CBError.h>
 #import <CoreBluetooth/CBPeripheralManagerConstants.h>
@@ -138,7 +142,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *                  If <i>nil</i>, the main queue will be used.
  *
  */
-- (id)initWithDelegate:(id<CBPeripheralManagerDelegate>)delegate queue:(dispatch_queue_t)queue;
+- (instancetype)initWithDelegate:(id<CBPeripheralManagerDelegate>)delegate queue:(dispatch_queue_t)queue;
 
 /*!
  *  @method initWithDelegate:queue:options:
@@ -154,7 +158,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *	@seealso		CBPeripheralManagerOptionRestoreIdentifierKey
  *
  */
-- (id)initWithDelegate:(id<CBPeripheralManagerDelegate>)delegate queue:(dispatch_queue_t)queue options:(NSDictionary *)options NS_AVAILABLE(NA, 7_0);
+- (instancetype)initWithDelegate:(id<CBPeripheralManagerDelegate>)delegate queue:(dispatch_queue_t)queue options:(NSDictionary *)options NS_AVAILABLE(NA, 7_0);
 
 /*!
  *  @method startAdvertising:

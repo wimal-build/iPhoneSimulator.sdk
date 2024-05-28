@@ -5,7 +5,6 @@
 //  Copyright 2013 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "MCPeerID.h"
 #import "MCSession.h"
 
@@ -32,26 +31,31 @@
   type "abc-txtchat".
  
   The discoveryInfo parameter is a dictionary of string key/value pairs 
-  that will be advertised for browsers to see. The content of 
-  discoveryInfo will be advertised within Bonjour TXT records, and 
-  keeping the dictionary small is good for keeping network traffic low.
+  that will be advertised for browsers to see. Both keys and values must
+  be NSString objects. The content of discoveryInfo will be advertised 
+  within Bonjour TXT records, and keeping the dictionary small is good 
+  for keeping network traffic low.
  
   MCNearbyServiceAdvertiser must be initialized with an MCPeerID object 
   and a valid service type. The discoveryInfo parameter is optional and 
   may be nil.
  
+  A delegate that conforms to the MCNearbyServiceAdvertiserDelegate protocol
+  must be provided. No assumption should be made as to which queue the
+  callbacks are called on.
+
   See Bonjour APIs https://developer.apple.com/bonjour/ for more 
   information about service types.
   */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_10,7_0)
 @interface MCNearbyServiceAdvertiser : NSObject
-- (instancetype)initWithPeer:(MCPeerID *)myPeerID discoveryInfo:(NSDictionary *)info serviceType:(NSString *)serviceType;
+- (instancetype)initWithPeer:(MCPeerID *)myPeerID discoveryInfo:(NSDictionary *)info serviceType:(NSString *)serviceType NS_DESIGNATED_INITIALIZER;
 
 // The methods -startAdvertisingPeer and -stopAdvertisingPeer are used to start and stop announcing presence to nearby browsing peers.
 - (void)startAdvertisingPeer;
 - (void)stopAdvertisingPeer;
 
-@property (assign, NS_NONATOMIC_IOSONLY) id<MCNearbyServiceAdvertiserDelegate> delegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id<MCNearbyServiceAdvertiserDelegate> delegate;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) MCPeerID *myPeerID;
 @property (readonly, NS_NONATOMIC_IOSONLY) NSDictionary *discoveryInfo;

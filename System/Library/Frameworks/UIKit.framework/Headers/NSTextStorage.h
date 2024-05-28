@@ -2,7 +2,7 @@
 //  NSTextStorage.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>

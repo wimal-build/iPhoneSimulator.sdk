@@ -5,22 +5,21 @@
 //  Copyright 2013 Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "MCPeerID.h"
 #import "MCSession.h"
 
 @protocol MCNearbyServiceBrowserDelegate;
 
 /*!
-  @class MCNearbyServiceBrowser
-  @abstract 
-  MCNearbyServiceBrowser looks for nearby peers, and connects them to 
-  sessions.
+ @class MCNearbyServiceBrowser
+ @abstract
+ MCNearbyServiceBrowser looks for nearby peers, and connects them to
+ sessions.
  
-  @discussion
-  To create the MCNearbyServiceBrowser object and start browsing for 
-  nearby peers, a new MCPeerID should be created to represent the local 
-  peer, and a service type needs to be specified.
+ @discussion
+ To create the MCNearbyServiceBrowser object and start browsing for
+ nearby peers, a new MCPeerID should be created to represent the local
+ peer, and a service type needs to be specified.
  
  The serviceType parameter is a short text string used to describe the 
  app's networking protocol.  It should be in the same format as a 
@@ -30,42 +29,43 @@
  example, a text chat app made by ABC company could use the service type
  "abc-txtchat".
  
-  A delegate that conforms to the MCNearbyServiceBrowserDelegate 
-  protocol must also be provided.  The delegate is notified when nearby 
-  peers are found and lost.
+ A delegate that conforms to the MCNearbyServiceBrowserDelegate
+ protocol must also be provided.  The delegate is notified when nearby
+ peers are found and lost. No assumption should be made as to which queue 
+ the callbacks are called on.
  
  MCNearbyAdvertiser must be initialized with an MCPeerID object and a 
  valid service type.
  
  See Bonjour APIs https://developer.apple.com/bonjour/ for more 
  information about service types.
-  */
-NS_CLASS_AVAILABLE_IOS(7_0)
+ */
+NS_CLASS_AVAILABLE(10_10,7_0)
 @interface MCNearbyServiceBrowser : NSObject
-- (instancetype)initWithPeer:(MCPeerID *)myPeerID serviceType:(NSString *)serviceType;
+- (instancetype)initWithPeer:(MCPeerID *)myPeerID serviceType:(NSString *)serviceType NS_DESIGNATED_INITIALIZER;
 
 // The methods -startBrowsingForPeers and -stopBrowsingForPeers are used to start and stop looking for nearby advertising peers.
 - (void)startBrowsingForPeers;
 - (void)stopBrowsingForPeers;
 
 /*
-  The method -invitePeer:toSession:withContext:timeout: sends an 
-  invitation to a peer, and when the peer accepts the invitation, adds 
-  the peer to the specified session.
+ The method -invitePeer:toSession:withContext:timeout: sends an
+ invitation to a peer, and when the peer accepts the invitation, adds
+ the peer to the specified session.
  
-  The invited peer will receive a -advertiser:
-  didReceiveInvitationFromPeer:withContext:invitationHandler: callback.  
-  The context is passed through to the invited peer. It can be used to 
-  describe the session or pass some additional identification 
-  information to the invitee.
+ The invited peer will receive a -advertiser:
+ didReceiveInvitationFromPeer:withContext:invitationHandler: callback.
+ The context is passed through to the invited peer. It can be used to
+ describe the session or pass some additional identification
+ information to the invitee.
  
-  The timeout parameter is seconds and should be a positive value.  If a 
-  timeout of <=0 is specified, a default value of 30 seconds will be 
-  used instead.
-  */
+ The timeout parameter is seconds and should be a positive value.  If a
+ timeout of <=0 is specified, a default value of 30 seconds will be
+ used instead.
+ */
 - (void)invitePeer:(MCPeerID *)peerID toSession:(MCSession *)session withContext:(NSData *)context timeout:(NSTimeInterval)timeout;
 
-@property (assign, NS_NONATOMIC_IOSONLY) id<MCNearbyServiceBrowserDelegate> delegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id<MCNearbyServiceBrowserDelegate> delegate;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) MCPeerID *myPeerID;
 @property (readonly, NS_NONATOMIC_IOSONLY) NSString *serviceType;

@@ -7,10 +7,13 @@
 
 */
 
-
-/*
-	AVAssetTrack provides the track-level inspection interface for all assets.
-
+/*!
+	@class		AVAssetTrack
+ 
+	@abstract	An AVAssetTrack object provides provides the track-level inspection interface for all assets.
+ 
+	@discussion
+		AVAssetTrack adopts the AVAsynchronousKeyValueLoading protocol. Methods in the protocol should be used to access a track's properties without blocking the current thread. To cancel load requests for all keys of AVAssetTrack one must message the parent AVAsset object (for example, [track.asset cancelLoading])
 */
 
 #import <AVFoundation/AVBase.h>
@@ -18,7 +21,6 @@
 #import <AVFoundation/AVAsset.h>
 #import <AVFoundation/AVAssetTrackSegment.h>
 #import <CoreMedia/CMTimeRange.h>
-
 
 @class AVAssetTrackInternal;
 
@@ -131,7 +133,13 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 @property (nonatomic, readonly) float nominalFrameRate;
 
 /* indicates the minimum duration of the track's frames; the value will be kCMTimeInvalid if the minimum frame duration is not known or cannot be calculated */
-@property (nonatomic, readonly) CMTime minFrameDuration NS_AVAILABLE(TBD, 7_0);
+@property (nonatomic, readonly) CMTime minFrameDuration NS_AVAILABLE(10_10, 7_0);
+
+/*!
+	@property       requiresFrameReordering
+	@abstract       Indicates whether samples in the track may have different values for their presentation and decode timestamps.
+*/
+@property (nonatomic, readonly) BOOL requiresFrameReordering NS_AVAILABLE(10_10, 8_0);
 
 @end
 
@@ -170,6 +178,10 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 
 /* provides access to an array of AVMetadataItems for each common metadata key for which a value is available */
 @property (nonatomic, readonly) NSArray *commonMetadata;
+
+/* Provides access to an array of AVMetadataItems for all metadata identifiers for which a value is available; items can be filtered according to language via +[AVMetadataItem metadataItemsFromArray:filteredAndSortedAccordingToPreferredLanguages:] and according to identifier via +[AVMetadataItem metadataItemsFromArray:filteredByIdentifier:].
+*/
+@property (nonatomic, readonly) NSArray *metadata NS_AVAILABLE(10_10, 8_0);
 
 /* provides an NSArray of NSStrings, each representing a format of metadata that's available for the track (e.g. QuickTime userdata, etc.)
    Metadata formats are defined in AVMetadataItem.h. */
@@ -238,6 +250,16 @@ AVF_EXPORT NSString *const AVTrackAssociationTypeSelectionFollower NS_AVAILABLE(
  */
 AVF_EXPORT NSString *const AVTrackAssociationTypeTimecode NS_AVAILABLE(10_9, 7_0);
 
+/*
+@constant		AVTrackAssociationTypeMetadataReferent
+@abstract		Indicates an association between a metadata track and the track that's described or annotated via the contents of the metadata track.
+
+@discussion
+	This track association is optional for AVAssetTracks with the mediaType AVMediaTypeMetadata. When a metadata track lacks this track association, its contents are assumed to describe or annotate the asset as a whole.
+	This association is not symmetric; when used with -[AVAssetWriterInput addTrackAssociationWithTrackOfInput:type:], the receiver should be an instance of AVAssetWriterInput with mediaType AVMediaTypeMetadata while the input parameter should be an instance of AVAssetWriterInput that's used to create the track to which the contents of the receiver's corresponding metadata track refer.
+*/
+AVF_EXPORT NSString *const AVTrackAssociationTypeMetadataReferent NS_AVAILABLE(10_10, 8_0);
+
 /* Provides an NSArray of NSStrings, each representing a type of track association that the receiver has with one or more of the other tracks of the asset (e.g. AVTrackAssociationTypeChapterList, AVTrackAssociationTypeTimecode, etc.).
    Track association types are defined immediately above. */
 @property (nonatomic, readonly) NSArray *availableTrackAssociationTypes NS_AVAILABLE(10_9, 7_0);
@@ -253,3 +275,42 @@ AVF_EXPORT NSString *const AVTrackAssociationTypeTimecode NS_AVAILABLE(10_9, 7_0
 - (NSArray *)associatedTracksOfType:(NSString *)trackAssociationType NS_AVAILABLE(10_9, 7_0);
 
 @end
+
+
+#if !TARGET_OS_IPHONE
+
+@class AVSampleCursor;
+
+@interface AVAssetTrack (AVAssetTrackSampleCursorProvision)
+
+/* Indicates whether the receiver can provide instances of AVSampleCursor for traversing its media samples and discovering information about them. */
+@property (nonatomic, readonly) BOOL canProvideSampleCursors NS_AVAILABLE_MAC(10_10);
+
+/*!
+	@method			makeSampleCursorWithPresentationTimeStamp:
+	@abstract		Creates an instance of AVSampleCursor and positions it at or near the specified presentation timestamp.
+	@param			presentationTimeStamp
+					The desired initial presentation timestamp of the returned AVSampleCursor.
+	@result			An instance of AVSampleCursor.
+	@discussion		If the receiver's asset has a value of YES for providesPreciseDurationAndTiming, the sample cursor will be accurately positioned at the receiver's last media sample with presentation timestamp less than or equal to the desired timestamp, or, if there are no such samples, the first sample in presentation order.
+					If the receiver's asset has a value of NO for providesPreciseDurationAndTiming, and it is prohibitively expensive to locate the precise sample at the desired timestamp, the sample cursor may be approximately positioned.
+*/
+- (AVSampleCursor *)makeSampleCursorWithPresentationTimeStamp:(CMTime)presentationTimeStamp NS_AVAILABLE_MAC(10_10);
+
+/*!
+	@method			makeSampleCursorAtFirstSampleInDecodeOrder:
+	@abstract		Creates an instance of AVSampleCursor and positions it at the receiver's first media sample in decode order.
+	@result			An instance of AVSampleCursor.
+*/
+- (AVSampleCursor *)makeSampleCursorAtFirstSampleInDecodeOrder NS_AVAILABLE_MAC(10_10);
+
+/*!
+	@method			makeSampleCursorAtLastSampleInDecodeOrder:
+	@abstract		Creates an instance of AVSampleCursor and positions it at the receiver's last media sample in decode order.
+	@result			An instance of AVSampleCursor.
+*/
+- (AVSampleCursor *)makeSampleCursorAtLastSampleInDecodeOrder NS_AVAILABLE_MAC(10_10);
+
+@end
+
+#endif // !TARGET_OS_IPHONE

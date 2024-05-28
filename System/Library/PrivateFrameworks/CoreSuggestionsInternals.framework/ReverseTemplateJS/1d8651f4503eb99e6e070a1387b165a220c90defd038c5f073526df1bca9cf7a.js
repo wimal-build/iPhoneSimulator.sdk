@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("ba.com-cancellation-de",function(){return!1},function(e){return/^Stornierungs- und R\xfcckerstattungsbest\xe4tigung durch British Airways:/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/112/179/180","SG53847f40"),new ReverseTemplate("ba.com-cancellation-en",function(){return!1},function(e){return/^BA confirmation of cancellation and refund:/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/112/179/181","SGd74138b1")]);

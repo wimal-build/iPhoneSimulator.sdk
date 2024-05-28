@@ -9,10 +9,10 @@ defaultvoice:Samantha
     <language>American English</language>
     <langcode>ENU</langcode>
     <langid>10</langid>
-    <langversion>5.2.3.13323</langversion>
+    <langversion>5.2.4.14062</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Samantha</voice>
-    <voiceversion>5.2.3.13324</voiceversion>
+    <voiceversion>5.2.4.13324</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,14 +77,27 @@ defaultvoice:Samantha
       userdct/enu
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      samantha/userdct/enu
+      userdct/enu/samantha
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/enu/cfg1
+    </RESOURCE> 
     
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/address/enu/cfg1
+    </RESOURCE>
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/enu/cfg1
+    </RESOURCE>
     
     
     

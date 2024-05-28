@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Η Βιβλιοθήκη φωτογραφιών iCloud απενεργοποιήθηκε. %#@have_n_days@ για να δημιουργήσετε ένα πλήρες αντίγραφο όλων των αρχικών φωτογραφιών και βίντεό σας σε αυτήν τη συσκευή ή σε μια άλλη.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Έχετε στη διάθεσή σας %d ημέρες</string>
+			<key>many</key>
+			<string>Έχετε στη διάθεσή σας %d ημέρες</string>
+			<key>one</key>
+			<string>Έχετε στη διάθεσή σας %d ημέρα</string>
+			<key>other</key>
+			<string>Έχετε στη διάθεσή σας %d ημέρες</string>
+			<key>two</key>
+			<string>Έχετε στη διάθεσή σας %d ημέρες</string>
+			<key>zero</key>
+			<string>Έχετε στη διάθεσή σας %d ημέρες</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Η Βιβλιοθήκη φωτογραφιών iCloud θα διαγραφεί σε %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d ημέρες</string>
+			<key>many</key>
+			<string>%d ημέρες</string>
+			<key>one</key>
+			<string>%d ημέρα</string>
+			<key>other</key>
+			<string>%d ημέρες</string>
+			<key>two</key>
+			<string>%d ημέρες</string>
+			<key>zero</key>
+			<string>%d ημέρες</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Ο συγχρονισμός φωτογραφιών μέσω του iTunes δεν υποστηρίζεται όταν είναι ενεργοποιημένη η Βιβλιοθήκη φωτογραφιών iCloud.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d φωτογραφίες θα αφαιρεθούν</string>
+			<key>many</key>
+			<string>%d φωτογραφίες θα αφαιρεθούν</string>
+			<key>one</key>
+			<string>%d φωτογραφία θα αφαιρεθεί</string>
+			<key>other</key>
+			<string>%d φωτογραφίες θα αφαιρεθούν</string>
+			<key>two</key>
+			<string>%d φωτογραφίες θα αφαιρεθούν</string>
+			<key>zero</key>
+			<string>%d φωτογραφίες θα αφαιρεθούν</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Ο συγχρονισμός φωτογραφιών μέσω του iTunes δεν υποστηρίζεται όταν είναι ενεργοποιημένη η Βιβλιοθήκη φωτογραφιών iCloud.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d φωτογραφίες και βίντεο θα αφαιρεθούν</string>
+			<key>many</key>
+			<string>%d φωτογραφίες και βίντεο θα αφαιρεθούν</string>
+			<key>one</key>
+			<string>%d βίντεο θα αφαιρεθεί</string>
+			<key>other</key>
+			<string>%d φωτογραφίες και βίντεο θα αφαιρεθούν</string>
+			<key>two</key>
+			<string>%d φωτογραφίες και βίντεο θα αφαιρεθούν</string>
+			<key>zero</key>
+			<string>%d φωτογραφίες και βίντεο θα αφαιρεθούν</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Ο συγχρονισμός φωτογραφιών μέσω του iTunes δεν υποστηρίζεται όταν είναι ενεργοποιημένη η Βιβλιοθήκη φωτογραφιών iCloud.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d βίντεο θα αφαιρεθούν</string>
+			<key>many</key>
+			<string>%d βίντεο θα αφαιρεθούν</string>
+			<key>one</key>
+			<string>%d βίντεο θα αφαιρεθεί</string>
+			<key>other</key>
+			<string>%d βίντεο θα αφαιρεθούν</string>
+			<key>two</key>
+			<string>%d βίντεο θα αφαιρεθούν</string>
+			<key>zero</key>
+			<string>%d βίντεο θα αφαιρεθούν</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Η Βιβλιοθήκη φωτογραφιών iCloud θα διαγραφεί από το iCloud σε %#@in_n_days@. Οι φωτογραφίες και τα βίντεο δεν ενημερώνονται πλέον. Μπορείτε να ακυρώσετε τη διαγραφή στη Διαχείριση χώρου αποθήκευσης iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d ημέρες</string>
+			<key>many</key>
+			<string>%d ημέρες</string>
+			<key>one</key>
+			<string>%d ημέρα</string>
+			<key>other</key>
+			<string>%d ημέρες</string>
+			<key>two</key>
+			<string>%d ημέρες</string>
+			<key>zero</key>
+			<string>%d ημέρες</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Η Βιβλιοθήκη φωτογραφιών iCloud θα διαγραφεί από το iCloud σε %#@in_n_days@. Επιλέξτε «Λήψη και διατήρηση αρχικών» παρακάτω για να πραγματοποιηθεί λήψη ενός πληρους αντιγράφου των φωτογραφιών και βίντεό σας.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d ημέρες</string>
+			<key>many</key>
+			<string>%d ημέρες</string>
+			<key>one</key>
+			<string>%d ημέρα</string>
+			<key>other</key>
+			<string>%d ημέρες</string>
+			<key>two</key>
+			<string>%d ημέρες</string>
+			<key>zero</key>
+			<string>%d ημέρες</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Η Βιβλιοθήκη φωτογραφιών iCloud δεν έχει ενημερωθεί εδώ και %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d ημέρες</string>
+			<key>many</key>
+			<string>%d ημέρες</string>
+			<key>one</key>
+			<string>%d ημέρα</string>
+			<key>other</key>
+			<string>%d ημέρες</string>
+			<key>two</key>
+			<string>%d ημέρες</string>
+			<key>zero</key>
+			<string>%d ημέρες</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Τελευταία ενημέρωση: %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d λεπτά πριν</string>
+			<key>many</key>
+			<string>%d λεπτά πριν</string>
+			<key>one</key>
+			<string>%d λεπτό πριν</string>
+			<key>other</key>
+			<string>%d λεπτά πριν</string>
+			<key>two</key>
+			<string>%d λεπτά πριν</string>
+			<key>zero</key>
+			<string>%d λεπτά πριν</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

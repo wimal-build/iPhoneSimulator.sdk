@@ -2,7 +2,7 @@
 //  UINavigationBar.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -66,7 +66,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationBar : UIView <NSCoding, UIBar
 }
 
 @property(nonatomic,assign) UIBarStyle barStyle;
-@property(nonatomic,assign) id delegate;
+@property(nonatomic,assign) id<UINavigationBarDelegate> delegate;
 
 /*
  New behavior on iOS 7.
@@ -169,7 +169,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationItem : NSObject <NSCoding> {
     UIImageView     *_frozenTitleView;
 }
 
-- (id)initWithTitle:(NSString *)title; // Designated initializer
+- (instancetype)initWithTitle:(NSString *)title; // Designated initializer
 
 @property(nonatomic,copy)   NSString        *title;             // Title when topmost on the stack. default is nil
 @property(nonatomic,retain) UIBarButtonItem *backBarButtonItem; // Bar button item to use for the back button in the child navigation item.

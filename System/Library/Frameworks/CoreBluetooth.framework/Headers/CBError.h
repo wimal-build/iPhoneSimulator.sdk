@@ -7,6 +7,10 @@
  *	@copyright 2011 Apple, Inc. All rights reserved.
  */
 
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
+
 #import <CoreBluetooth/CBDefines.h>
 
 #import <Foundation/Foundation.h>

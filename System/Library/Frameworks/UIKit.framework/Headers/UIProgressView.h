@@ -2,7 +2,7 @@
 //  UIProgressView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, UIProgressViewStyle) {
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIProgressView : UIView <NSCoding>
 
-- (id)initWithProgressViewStyle:(UIProgressViewStyle)style; // sets the view height according to the style
+- (instancetype)initWithProgressViewStyle:(UIProgressViewStyle)style; // sets the view height according to the style
 
 @property(nonatomic) UIProgressViewStyle progressViewStyle; // default is UIProgressViewStyleDefault
 @property(nonatomic) float progress;                        // 0.0 .. 1.0, default is 0.0. values outside are pinned.

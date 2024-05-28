@@ -2,13 +2,15 @@
 //  UIViewController.h
 //  UIKit
 //
-//  Copyright (c) 2007-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <Foundation/NSExtensionRequestHandling.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIApplication.h>
 #import <UIKit/UIStateRestoration.h>
+#import <UIKit/UITraitCollection.h>
 
 /*
   UIViewController is a generic controller base class that manages a view.  It has methods that are called
@@ -25,30 +27,67 @@
 @class UIPopoverController;
 @class UIStoryboard, UIStoryboardSegue;
 @class UIScrollView;
+@protocol UIViewControllerTransitionCoordinator;
 
 typedef NS_ENUM(NSInteger, UIModalTransitionStyle) {
     UIModalTransitionStyleCoverVertical = 0,
     UIModalTransitionStyleFlipHorizontal,
     UIModalTransitionStyleCrossDissolve,
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-    UIModalTransitionStylePartialCurl,
-#endif
+    UIModalTransitionStylePartialCurl NS_ENUM_AVAILABLE_IOS(3_2),
 };
 
 typedef NS_ENUM(NSInteger, UIModalPresentationStyle) {
-    UIModalPresentationFullScreen = 0,
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-    UIModalPresentationPageSheet,
-    UIModalPresentationFormSheet,
-    UIModalPresentationCurrentContext,
-#endif
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
-    UIModalPresentationCustom,
-    UIModalPresentationNone = -1,        
-#endif        
+        UIModalPresentationFullScreen = 0,
+        UIModalPresentationPageSheet NS_ENUM_AVAILABLE_IOS(3_2),
+        UIModalPresentationFormSheet NS_ENUM_AVAILABLE_IOS(3_2),
+        UIModalPresentationCurrentContext NS_ENUM_AVAILABLE_IOS(3_2),
+        UIModalPresentationCustom NS_ENUM_AVAILABLE_IOS(7_0),
+        UIModalPresentationOverFullScreen NS_ENUM_AVAILABLE_IOS(8_0),
+        UIModalPresentationOverCurrentContext NS_ENUM_AVAILABLE_IOS(8_0),
+        UIModalPresentationPopover NS_ENUM_AVAILABLE_IOS(8_0),
+        UIModalPresentationNone NS_ENUM_AVAILABLE_IOS(7_0) = -1,         
 };
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding, UIAppearanceContainer> {
+@protocol UIContentContainer <NSObject>
+
+@property (nonatomic, readonly) CGSize preferredContentSize NS_AVAILABLE_IOS(8_0);
+- (void)preferredContentSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container NS_AVAILABLE_IOS(8_0);
+
+/*
+ Intended as a bridge for a view controller that does not use auto layout presenting a child that does use auto layout.
+ 
+ If the child's view is using auto layout and the -systemLayoutSizeFittingSize: of the view
+ changes, -systemLayoutFittingSizeDidChangeForChildContentContainer: will be sent to the view controller's parent.
+ */
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container NS_AVAILABLE_IOS(8_0);
+
+/*
+ When the content container forwards viewWillTransitionToSize:withTransitionCoordinator: to its children, it will call this method to determine what size to send them. 
+ 
+ If the returned size is the same as the child container's current size, viewWillTransitionToSize:withTransitionCoordinator: will not be called.
+ */
+- (CGSize)sizeForChildContentContainer:(id <UIContentContainer>)container withParentContainerSize:(CGSize)parentSize NS_AVAILABLE_IOS(8_0);
+
+/* 
+ This method is called when the view controller's view's size is changed by its parent (i.e. for the root view controller when its window rotates or is resized). 
+ 
+ If you override this method, you should either call super to propagate the change to children or manually forward the change to children.
+ */
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator NS_AVAILABLE_IOS(8_0);
+
+/* 
+ This method is called when the view controller's trait collection is changed by its parent.
+ 
+ If you override this method, you should either call super to propagate the change to children or manually forward the change to children.
+ */
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator NS_AVAILABLE_IOS(8_0);
+
+@end
+
+// Sometimes view controllers that are using showViewController:sender and showDetailViewController:sender: will need to know when the split view controller environment above it has changed. This notification will be posted when that happens (for example, when a split view controller is collapsing or expanding). The NSNotification's object will be the view controller that caused the change.
+UIKIT_EXTERN NSString *const UIViewControllerShowDetailTargetDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer> {
     @package
     UIView           *_view;
     UITabBarItem     *_tabBarItem;
@@ -98,6 +137,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
     NSInteger _explicitAppearanceTransitionLevel;
     
     NSArray *_keyCommands;
+    
+    NSMapTable *_overrideTraitCollections;
 
     struct {
         unsigned int appearState:2;
@@ -145,6 +186,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
         unsigned int previousShouldUnderlapUnderStatusBar:1;
         unsigned int freezeShouldUnderlapUnderStatusBar:1;
         unsigned int neverResizeRoot:1;
+        unsigned int monitorsSystemLayoutFittingSize:1;
     } _viewControllerFlags;
 }
 
@@ -157,7 +199,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
   name is the same as your view controller's class. If no such NIB in fact exists then you must either call
   -setView: before -view is invoked, or override the -loadView method to set up your views programatically.
 */
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 
 @property(nonatomic,retain) UIView *view; // The getter first invokes [self loadView] if the view hasn't been set yet. Subclasses must call super if they override the setter or getter.
 - (void)loadView; // This is where subclasses should create their custom view hierarchy if they aren't using a nib. Should never be called directly.
@@ -285,6 +327,16 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 // This should be called whenever the return values for the view controller's status bar attributes have changed. If it is called from within an animation block, the changes will be animated along with the rest of the animation block.
 - (void)setNeedsStatusBarAppearanceUpdate NS_AVAILABLE_IOS(7_0);
 
+/* This method returns either itself or the nearest ancestor that responds to the action. View controllers can return NO from canPerformAction:withSender: to opt out of being a target for a given action. */
+- (UIViewController *)targetViewControllerForAction:(SEL)action sender:(id)sender NS_AVAILABLE_IOS(8_0);
+
+/* This method will show a view controller appropriately for the current size-class environment. It's implementation calls
+ `[self targetViewControllerForAction:sender:]` first and redirects accordingly if the return value is not `self`, otherwise it will present the vc. */
+- (void)showViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+
+/* This method will show a view controller within the semantic "detail" UI associated with the current size-class environment. It's implementation calls  `[self targetViewControllerForAction:sender:]` first and redirects accordingly if the return value is not `self`, otherwise it will present the vc.  */
+- (void)showDetailViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+
 @end
 
 // To make it more convenient for applications to adopt rotation, a view controller may implement the below methods. Your UIWindow's frame should use [UIScreen mainScreen].bounds as its frame.
@@ -304,21 +356,17 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation NS_AVAILABLE_IOS(6_0);
 
 // The rotating header and footer views will slide out during the rotation and back in once it has completed.
-- (UIView *)rotatingHeaderView;     // Must be in the view hierarchy. Default returns nil.
-- (UIView *)rotatingFooterView;     // Must be in the view hierarchy. Default returns nil.
+- (UIView *)rotatingHeaderView NS_DEPRECATED_IOS(2_0,8_0, "Header views are animated along with the rest of the view hierarchy");     // Must be in the view hierarchy. Default returns nil.
+- (UIView *)rotatingFooterView NS_DEPRECATED_IOS(2_0,8_0, "Footer views are animated along with the rest of the view hierarchy");     // Must be in the view hierarchy. Default returns nil.
 
-@property(nonatomic,readonly) UIInterfaceOrientation interfaceOrientation;
+@property(nonatomic,readonly) UIInterfaceOrientation interfaceOrientation NS_DEPRECATED_IOS(2_0,8_0);
 
 // Notifies when rotation begins, reaches halfway point and ends.
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration;
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration NS_DEPRECATED_IOS(2_0,8_0, "Implement viewWillTransitionToSize:withTransitionCoordinator: instead");
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation NS_DEPRECATED_IOS(2_0,8_0);
 
-// Faster one-part variant, called from within a rotating animation block, for additional animations during rotation.
-// A subclass may override this method, or the two-part variants below, but not both.
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration NS_AVAILABLE_IOS(3_0);
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration NS_DEPRECATED_IOS(3_0,8_0, "Implement viewWillTransitionToSize:withTransitionCoordinator: instead");
 
-// Slower two-part variant, called from within a rotating animation block, for additional animations during rotation.
-// A subclass may override these methods, or the one-part variant above, but not both.
 - (void)willAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration NS_DEPRECATED_IOS(2_0, 5_0);
 - (void)didAnimateFirstHalfOfRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation NS_DEPRECATED_IOS(2_0, 5_0); // The rotating header and footer views are offscreen.
 - (void)willAnimateSecondHalfOfRotationFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation duration:(NSTimeInterval)duration NS_DEPRECATED_IOS(2_0, 5_0); // A this point, our view orientation is set to the new orientation.
@@ -338,7 +386,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 
 @interface UIViewController (UISearchDisplayControllerSupport)
 
-@property(nonatomic, readonly, retain) UISearchDisplayController *searchDisplayController;
+@property(nonatomic, readonly, retain) UISearchDisplayController *searchDisplayController NS_DEPRECATED_IOS(3_0,8_0);
 
 @end
 
@@ -396,9 +444,13 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 - (void)beginAppearanceTransition:(BOOL)isAppearing animated:(BOOL)animated __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 - (void)endAppearanceTransition __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
-// Override to return a child view controller or nil. If non-nil, that view controller's status bar appearance attributes will be use. If nil, self is used. Whenever the return values from these methods change, -setNeedsUpdatedStatusBarAttributes should be called.
+// Override to return a child view controller or nil. If non-nil, that view controller's status bar appearance attributes will be used. If nil, self is used. Whenever the return values from these methods change, -setNeedsUpdatedStatusBarAttributes should be called.
 - (UIViewController *)childViewControllerForStatusBarStyle NS_AVAILABLE_IOS(7_0);
 - (UIViewController *)childViewControllerForStatusBarHidden NS_AVAILABLE_IOS(7_0);
+
+// Call to modify the trait collection for child view controllers.
+- (void)setOverrideTraitCollection:(UITraitCollection *)collection forChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
+- (UITraitCollection *)overrideTraitCollectionForChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -413,10 +465,9 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
   willAnimateRotationToInterfaceOrientation:duration: didRotateFromInterfaceOrientation:
 */
 
-// This soon to be deprecated method
 - (BOOL)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers NS_DEPRECATED_IOS(5_0,6_0);
-// is being replaced by these two methods.
-- (BOOL)shouldAutomaticallyForwardRotationMethods NS_AVAILABLE_IOS(6_0);
+- (BOOL)shouldAutomaticallyForwardRotationMethods NS_DEPRECATED_IOS(6_0,8_0, "Manually forward viewWillTransitionToSize:withTransitionCoordinator: if necessary");
+
 - (BOOL)shouldAutomaticallyForwardAppearanceMethods NS_AVAILABLE_IOS(6_0);
 
 
@@ -464,7 +515,7 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 
 @protocol UIViewControllerTransitioningDelegate;
 
-@interface UIViewController(CustomTransitioning)
+@interface UIViewController(UIViewControllerTransitioning)
 
 @property (nonatomic,assign) id <UIViewControllerTransitioningDelegate> transitioningDelegate NS_AVAILABLE_IOS(7_0);
 
@@ -474,4 +525,20 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 // These objects may be used as layout items in the NSLayoutConstraint API
 @property(nonatomic,readonly,retain) id<UILayoutSupport> topLayoutGuide NS_AVAILABLE_IOS(7_0);
 @property(nonatomic,readonly,retain) id<UILayoutSupport> bottomLayoutGuide NS_AVAILABLE_IOS(7_0);
+@end
+
+@class NSExtensionContext;
+
+@interface UIViewController(NSExtensionAdditions) <NSExtensionRequestHandling>
+
+// Returns the extension context. Also acts as a convenience method for a view controller to check if it participating in an extension request.
+@property (nonatomic,readonly,retain) NSExtensionContext *extensionContext NS_AVAILABLE_IOS(8_0);
+
+@end
+
+@class UIPresentationController, UIPopoverPresentationController;
+
+@interface UIViewController (UIAdaptivePresentations)
+@property (nonatomic,readonly) UIPresentationController *presentationController NS_AVAILABLE_IOS(8_0);
+@property (nonatomic,readonly) UIPopoverPresentationController *popoverPresentationController NS_AVAILABLE_IOS(8_0);
 @end

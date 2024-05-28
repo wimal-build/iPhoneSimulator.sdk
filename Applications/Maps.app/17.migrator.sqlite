@@ -1,0 +1,15 @@
+-- Migrates traces from v17 to v18
+
+BEGIN TRANSACTION;
+
+CREATE TABLE route_leg_guidance
+(
+id                              INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp_start                 NUMERIC NOT NULL,
+timestamp_end                   NUMERIC,
+leg_type                        INTEGER,
+leg_start_location_latitude     NUMERIC,
+leg_start_location_longitude    NUMERIC
+);
+
+COMMIT;

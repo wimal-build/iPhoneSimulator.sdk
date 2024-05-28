@@ -2,7 +2,7 @@
 //  UICollectionViewFlowLayout.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UICollectionViewLayout.h>
@@ -10,8 +10,8 @@
 #import <UIKit/UIKitDefines.h>
 #import <Foundation/Foundation.h>
 
-UIKIT_EXTERN NSString *const UICollectionElementKindSectionHeader;
-UIKIT_EXTERN NSString *const UICollectionElementKindSectionFooter;
+UIKIT_EXTERN NSString *const UICollectionElementKindSectionHeader NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSString *const UICollectionElementKindSectionFooter NS_AVAILABLE_IOS(6_0);
 
 typedef NS_ENUM(NSInteger, UICollectionViewScrollDirection) {
     UICollectionViewScrollDirectionVertical,
@@ -42,6 +42,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewFlowLayout : UICollection
 @property (nonatomic) CGFloat minimumLineSpacing;
 @property (nonatomic) CGFloat minimumInteritemSpacing;
 @property (nonatomic) CGSize itemSize;
+@property (nonatomic) CGSize estimatedItemSize NS_AVAILABLE_IOS(8_0); // defaults to CGSizeZero - setting a non-zero size enables cells that self-size via -perferredLayoutAttributesFittingAttributes:
 @property (nonatomic) UICollectionViewScrollDirection scrollDirection; // default is UICollectionViewScrollDirectionVertical
 @property (nonatomic) CGSize headerReferenceSize;
 @property (nonatomic) CGSize footerReferenceSize;

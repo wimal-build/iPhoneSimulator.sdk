@@ -1,0 +1,8 @@
+-- Migrates traces from v21 to v22
+
+BEGIN TRANSACTION;
+
+ALTER TABLE directions ADD COLUMN waypoints_data BLOB AFTER transport_type;
+ALTER TABLE likely_routes ADD COLUMN waypoints_data BLOB AFTER response_data;
+
+COMMIT;

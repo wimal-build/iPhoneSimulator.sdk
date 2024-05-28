@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("testing",function(e){return/^TemplateTest/.test(e.subject)},function(e){if(/^TemplateTest/.test(e.subject)){var t=Scanner.fromMessage(e);t.setLocale("en_US");var a=t.getSpan().innerCapture(/Dear (.+?),/,1),n=t.getSpan().innerCapture(/Failure is a (.+?)\./,1);ASSERT(a,n)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/501/509/510","SG25a6dd28")]);

@@ -2,7 +2,7 @@
 //  UIActivityItemProvider.h
 //  UIKit
 //
-//  Copyright 2012-2013, Apple Inc. All rights reserved.
+//  Copyright 2012-2014 Apple Inc. All rights reserved.
 //
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -27,7 +27,7 @@
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface UIActivityItemProvider : NSOperation <UIActivityItemSource>
 
-- (id)initWithPlaceholderItem:(id)placeholderItem;               // placeHolder is the return value for -activityViewControllerPlaceholderItem:
+- (instancetype)initWithPlaceholderItem:(id)placeholderItem;               // placeHolder is the return value for -activityViewControllerPlaceholderItem:
 
 @property(nonatomic,retain,readonly) id        placeholderItem;
 @property(nonatomic,readonly)        NSString *activityType;     // activity type available when -item is called. nil at other times. use this in your -item method to customize the data to return

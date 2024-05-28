@@ -143,7 +143,7 @@ EVENTKIT_CLASS_AVAILABLE(10_8, 4_0)
 /*!
     @property   birthdayPersonID
     @abstract   Specifies the address book ID of the person this event was created for.
-    @disussion  This property is only valid for events in the built-in Birthdays calendar. It specifies
+    @discussion  This property is only valid for events in the built-in Birthdays calendar. It specifies
                 the Address Book ID of the person this event was created for. For any other type of event,
                 this property returns -1.
 */

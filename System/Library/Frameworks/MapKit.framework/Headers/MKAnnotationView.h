@@ -2,7 +2,7 @@
 //  MKAnnotationView.h
 //  MapKit
 //
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014, Apple Inc. All rights reserved.
 //
 
 #import <MapKit/MKFoundation.h>
@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, MKAnnotationViewDragState) {
     MKAnnotationViewDragStateNone = 0,      // View is at rest, sitting on the map.
     MKAnnotationViewDragStateStarting,      // View is beginning to drag (e.g. pin lift)
     MKAnnotationViewDragStateDragging,      // View is dragging ("lift" animations are complete)
-    MKAnnotationViewDragStateCanceling,     // View was not dragged and should return to it's starting position (e.g. pin drop)
+    MKAnnotationViewDragStateCanceling,     // View was not dragged and should return to its starting position (e.g. pin drop)
     MKAnnotationViewDragStateEnding         // View was dragged, new coordinate is set and view should return to resting position (e.g. pin drop)
 } NS_ENUM_AVAILABLE(10_9, 4_0);
 
@@ -33,7 +33,7 @@ MK_CLASS_AVAILABLE(10_9, NA)
 @interface MKAnnotationView : NSView
 #endif
 
-- (id)initWithAnnotation:(id <MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier;
+- (instancetype)initWithAnnotation:(id <MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier;
 
 @property (nonatomic, readonly) NSString *reuseIdentifier;
 

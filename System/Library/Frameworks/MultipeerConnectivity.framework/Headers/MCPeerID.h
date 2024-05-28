@@ -27,9 +27,9 @@
     NSDictionary.
  */
 
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_10,7_0)
 @interface MCPeerID : NSObject <NSCopying, NSSecureCoding>
-- (instancetype)initWithDisplayName:(NSString *)myDisplayName;
+- (instancetype)initWithDisplayName:(NSString *)myDisplayName NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) NSString *displayName;
 @end

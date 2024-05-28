@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-bildbibliotek har avaktiverats. Du %#@have_n_days@ på dig att kopiera alla dina bilder och videor till den här enheten eller till någon annan enhet.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>har %d dagar</string>
+			<key>many</key>
+			<string>har %d dagar</string>
+			<key>one</key>
+			<string>har %d dag</string>
+			<key>other</key>
+			<string>har %d dagar</string>
+			<key>two</key>
+			<string>har %d dagar</string>
+			<key>zero</key>
+			<string>har %d dagar</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-bildbiblioteket kommer att raderas om %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%@ dagar</string>
+			<key>many</key>
+			<string>%@ dagar</string>
+			<key>one</key>
+			<string>%@ dag</string>
+			<key>other</key>
+			<string>%@ dagar</string>
+			<key>two</key>
+			<string>%@ dagar</string>
+			<key>zero</key>
+			<string>%@ dagar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Det går inte att synkronisera bilder med iTunes om iCloud-bildbibliotek är aktiverat.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>one</key>
+			<string>%d bild kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder kommer att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Det går inte att synkronisera bilder med iTunes om iCloud-bildbibliotek är aktiverat.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d video kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Det går inte att synkronisera bilder med iTunes om iCloud-bildbibliotek är aktiverat.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d video kommer att tas bort</string>
+			<key>other</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d videor kommer att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-bildbiblioteket kommer att raderas från iCloud om %#@in_n_days@. Bilder och videor överförs inte längre. Du kan avbryta raderingen i iClouds lagringshantering.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%@ dagar</string>
+			<key>many</key>
+			<string>%@ dagar</string>
+			<key>one</key>
+			<string>%@ dag</string>
+			<key>other</key>
+			<string>%@ dagar</string>
+			<key>two</key>
+			<string>%@ dagar</string>
+			<key>zero</key>
+			<string>%@ dagar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-bildbiblioteket kommer att raderas från iCloud om %#@in_n_days@. Välj ”Hämta och behåll original” nedan om du vill hämta en komplett kopia med alla dina bilder och videor.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%@ dagar</string>
+			<key>many</key>
+			<string>%@ dagar</string>
+			<key>one</key>
+			<string>%@ dag</string>
+			<key>other</key>
+			<string>%@ dagar</string>
+			<key>two</key>
+			<string>%@ dagar</string>
+			<key>zero</key>
+			<string>%@ dagar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-bildbiblioteket har inte uppdaterats på %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%@ dagar</string>
+			<key>many</key>
+			<string>%@ dagar</string>
+			<key>one</key>
+			<string>%@ dag</string>
+			<key>other</key>
+			<string>%@ dagar</string>
+			<key>two</key>
+			<string>%@ dagar</string>
+			<key>zero</key>
+			<string>%@ dagar</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Senast uppdaterad för %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minuter sedan</string>
+			<key>many</key>
+			<string>%d minuter sedan</string>
+			<key>one</key>
+			<string>%d minut sedan</string>
+			<key>other</key>
+			<string>%d minuter sedan</string>
+			<key>two</key>
+			<string>%d minuter sedan</string>
+			<key>zero</key>
+			<string>%d minuter sedan</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

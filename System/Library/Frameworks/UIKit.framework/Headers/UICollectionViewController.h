@@ -2,7 +2,7 @@
 //  UICollectionViewController.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -14,7 +14,7 @@
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
-- (id)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
+- (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
 
 @property (nonatomic, retain) UICollectionView *collectionView;
 

@@ -1,0 +1,138 @@
+BODY {
+	font: 28px "Helvetica Neue Interface", sans-serif;
+}
+
+#springboard {
+	background: #FFF url(Magnify-SpringBoard-Small~iphone.png) top left no-repeat;
+}
+
+.StatusBarTime,
+.Messages,
+.Calendar,
+.Photos,
+.Camera,
+.Weather,
+.Clock,
+.Maps,
+.Videos,
+.Notes,
+.Reminders,
+.Stocks,
+.GameCenter,
+.Newsstand,
+.iTunesStore,
+.AppStore,
+.iBooks,
+.Health,
+.Passbook,
+.Settings,
+.Phone,
+.Mail,
+.Safari,
+.Music {
+	position:absolute;
+	text-align: center;
+	width: 180px;
+}
+
+.StatusBarTime {
+	top: 5px;
+	left: 275px;
+	width: 200px;
+	text-align: center;
+	font: "Helvetica Neue Interface", Times, sans-serif;
+	font-size: 29px;
+	font-weight: 500;
+}
+
+.Messages,
+.Calendar,
+.Photos,
+.Camera {
+	top: 208px;
+}
+
+.Weather,
+.Clock,
+.Maps,
+.Videos {
+	top: 414px;
+}
+
+.Notes,
+.Reminders,
+.Stocks,
+.GameCenter {
+	top: 620px;
+}
+
+.Newsstand,
+.iTunesStore,
+.AppStore,
+.iBooks {
+	top: 826px;
+}
+
+.Health,
+.Passbook,
+.Settings {
+	top: 1032px;
+}
+
+.Phone,
+.Mail,
+.Safari,
+.Music {
+	font-size: 24px;
+	top: 1299px;
+}
+
+.Messages,
+.Weather,
+.Notes,
+.Newsstand,
+.Health,
+.Phone {
+	left:20px;
+}
+
+.Calendar,
+.Clock,
+.Reminders,
+.iTunesStore,
+.Passbook,
+.Mail {
+	left:194px;
+}
+
+.Photos,
+.Maps,
+.Stocks,
+.AppStore,
+.Settings {
+	left:377px;
+}
+
+.Camera,
+.Videos,
+.GameCenter,
+.iBooks,
+.Music {
+	left:550px;
+}
+
+.Phone {
+	left:22px;
+}
+
+.Mail {
+	left:197px;
+}
+
+.Safari {
+	left:372px;
+}
+
+.Music {
+	left:546px;
+}

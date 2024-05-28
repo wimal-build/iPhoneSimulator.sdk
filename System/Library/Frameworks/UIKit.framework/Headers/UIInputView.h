@@ -2,7 +2,7 @@
 //  UIInputView.h
 //  UIKit
 //
-//  Copyright (c) 2012-2013, Apple. All rights reserved.
+//  Copyright (c) 2012-2014 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -16,6 +16,6 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIInputView : UIView
 
 @property (nonatomic, readonly) UIInputViewStyle inputViewStyle;
 
-- (id)initWithFrame:(CGRect)frame inputViewStyle:(UIInputViewStyle)inputViewStyle;  // designated initializer
+- (instancetype)initWithFrame:(CGRect)frame inputViewStyle:(UIInputViewStyle)inputViewStyle;  // designated initializer
 
 @end

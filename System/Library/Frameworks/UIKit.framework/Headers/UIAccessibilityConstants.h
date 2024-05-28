@@ -2,7 +2,7 @@
 //  UIAccessibilityConstants.h
 //  UIKit
 //
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -145,6 +145,48 @@ UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyWasSuccessful NS_AVAI
  The argument is a NSString.
  */
 UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPageScrolledNotification NS_AVAILABLE_IOS(4_2);
+
+/*
+ Should be posted to pause an assistive technology's operations temporarily.
+ For example, you may want to pause scanning in Switch Control while your app plays an animation.
+ An identifier representing the assistive technology should be used as the argument.
+ Currently, these notifications only apply to Switch Control.
+ The notifications must be balanced.  That is, every UIAccessibilityPauseAssistiveTechnologyNotification
+ should be followed by a matching UIAccessibilityResumeAssistiveTechnologyNotification with the same argument.
+ If the user performs an action that requires the assistive technology to resume operations,
+ it may do so before it receives the corresponding UIAccessibilityResumeAssistiveTechnologyNotification.
+ The argument is a NSString.
+ */
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPauseAssistiveTechnologyNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityResumeAssistiveTechnologyNotification NS_AVAILABLE_IOS(8_0);
+
+/*
+ The following identifier should be used as the argument when posting a UIAccessibilityPauseAssistiveTechnologyNotification
+ or a UIAccessibilityResumeAssistiveTechnologyNotification.
+ */
+UIKIT_EXTERN NSString *const UIAccessibilityNotificationSwitchControlIdentifier NS_AVAILABLE_IOS(8_0);
+
+/*
+ The following values describe how the receiver's elements should be navigated by an assistive technology.
+ */
+typedef NS_ENUM(NSInteger, UIAccessibilityNavigationStyle) {
+    /*
+     The assistive technology will automatically determine how the receiver's elements should be navigated.
+     This is the default value.
+     */
+    UIAccessibilityNavigationStyleAutomatic = 0,
+    
+    /*
+     The receiver's elements should be navigated as separate elements.
+     */
+    UIAccessibilityNavigationStyleSeparate = 1,
+    
+    /*
+     The receiver’s elements should be combined and navigated as a single item.
+     When the combined item has been selected, the assistive technology will navigate each element separately.
+     */
+    UIAccessibilityNavigationStyleCombined = 2,
+} NS_ENUM_AVAILABLE_IOS(8_0);
 
 /*
  Accessibility Speech Attributes

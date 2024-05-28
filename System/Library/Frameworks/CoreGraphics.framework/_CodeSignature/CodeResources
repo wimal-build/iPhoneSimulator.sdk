@@ -6,66 +6,190 @@
 	<dict>
 		<key>Resources/Configuration.plist</key>
 		<data>
-		Dp6y3G/IelxaKIOa5pNUszzodqQ=
+		bR5TN43E3FCOj2+U/Zi2EW9FEso=
 		</data>
 		<key>Resources/Info-macos.plist</key>
 		<data>
-		SvSo3sNhKTl5i1vDDfdgM3txI2g=
+		0CSs4iLIc5Gtf8+AogAktg2H+lE=
 		</data>
 		<key>Resources/libCGCorePDF.A.dylib</key>
 		<data>
-		foFw7cXVQlO48A3hml8YDRe6xLA=
+		NhRpXI/BVNlWBku38EdRcjCTFxg=
 		</data>
 		<key>Resources/libCGFreetype.A.dylib</key>
 		<data>
-		cJ85dwIIHCHwwyZWFVtnmJqFbFg=
+		L5OMOKe6dphxbJNHx0nje41F6Pw=
 		</data>
 		<key>Resources/libCGVolute.A.dylib</key>
 		<data>
-		WnO9CK59on9SwqjTE6uXofolizQ=
+		30kRG6cRnn/AOLVjZUg8QdI4Uwo=
+		</data>
+		<key>Resources/libCGXType.A.dylib</key>
+		<data>
+		rToqH+LTtcy6PQRc4/XmvD+CqY8=
 		</data>
 		<key>Resources/libCMSBuiltin.A.dylib</key>
 		<data>
-		UxSNEEXXnGag0thYQrNEcFW28Mk=
+		pRHSEuO+1VI1qmDbqhg6y8IVhdo=
 		</data>
 		<key>Resources/libCMaps.A.dylib</key>
 		<data>
-		dDTPpPfernbXYsUYemuJ2BkNYrg=
+		5EB5ZGXGj4yfLfhucdaSAALtilE=
 		</data>
 		<key>Resources/libFontStreams.A.dylib</key>
 		<data>
-		Sdq6Pd7e8QT5qeTFVqwrHpWcRuk=
+		TbUvVfYQIfmhZYQ//cj5wMSxJy0=
 		</data>
 		<key>Resources/libJBIG2.A.dylib</key>
 		<data>
-		u1xA5jN2mIxMrs87qVPPcz7A/y0=
+		c2axetJj5SI5U6BkJqkGFZDppmw=
 		</data>
 		<key>Resources/libPDFRIP.A.dylib</key>
 		<data>
-		A0ITjZUMYYFleD22ZJ9gon/BCGA=
+		YJHC/5+s45nAjeIyRCTfCCw57go=
 		</data>
 		<key>Resources/libRIP.A.dylib</key>
 		<data>
-		XbyRMedhIZSD/8tJQNKQZ7Y4n7w=
+		JgGkSHEEqWVuqDr+zaU4XkHjUl0=
 		</data>
 		<key>Resources/version.plist</key>
 		<data>
-		HtD2pSUjxPQclACL6FLZLA+0pzg=
+		sld82ZzaGUssxbAa7MJlJbaF4xA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/CGAffineTransform.h</key>
+		<data>
+		I7km6DueGh2qPS1EoBuFO+W7mcY=
+		</data>
+		<key>Headers/CGBase.h</key>
+		<data>
+		vFaW5MoGpzpgFeUcf8yjV/llXjU=
+		</data>
+		<key>Headers/CGBitmapContext.h</key>
+		<data>
+		20fzv5AEE5XXisXXbbLlIz6hxog=
+		</data>
+		<key>Headers/CGColor.h</key>
+		<data>
+		TTLctYMzvmDGcA0tafbWVJwjJr0=
+		</data>
+		<key>Headers/CGColorSpace.h</key>
+		<data>
+		IoZxZ97NgaIlTG3ULRItULP/Q78=
+		</data>
+		<key>Headers/CGContext.h</key>
+		<data>
+		iT8lzui8epXq9y06Z1yOCzwSSyY=
+		</data>
+		<key>Headers/CGDataConsumer.h</key>
+		<data>
+		4dW3QcquHZvcs02+W+2MQNCGWfo=
+		</data>
+		<key>Headers/CGDataProvider.h</key>
+		<data>
+		+YskYKM8SZX0eVXTJlRD1huHYKw=
+		</data>
+		<key>Headers/CGError.h</key>
+		<data>
+		ds0WOHme5mv5T1PGcsIT11M6CLA=
+		</data>
+		<key>Headers/CGFont.h</key>
+		<data>
+		qPyPSYHPwAZuv6f2pepSeoDVofI=
+		</data>
+		<key>Headers/CGFunction.h</key>
+		<data>
+		Nb1nGtpAYoE8Mvo99kUbF6e2mEg=
+		</data>
+		<key>Headers/CGGeometry.h</key>
+		<data>
+		YcS/7LhCxXRO9dnajdWDhA28H4g=
+		</data>
+		<key>Headers/CGGradient.h</key>
+		<data>
+		UPRhs8wVwhw9lDitw+46u9fnT/g=
+		</data>
+		<key>Headers/CGImage.h</key>
+		<data>
+		PcKG/twOXrbe/kOdkhLqSPvioJU=
+		</data>
+		<key>Headers/CGLayer.h</key>
+		<data>
+		2HKM0PRn7obx8JKtzlnizOM0Yh8=
+		</data>
+		<key>Headers/CGPDFArray.h</key>
+		<data>
+		YPSIxvg6UlqWQHcPPE4AqPxtcQc=
+		</data>
+		<key>Headers/CGPDFContentStream.h</key>
+		<data>
+		AUNX7nljMmdoczDOWHf7Bm38r+Y=
+		</data>
+		<key>Headers/CGPDFContext.h</key>
+		<data>
+		WL4nHUV+ekpT6FllYmYhvOkIoec=
+		</data>
+		<key>Headers/CGPDFDictionary.h</key>
+		<data>
+		/VlEGE4xjqa4H8up6/HXd6eVM9g=
+		</data>
+		<key>Headers/CGPDFDocument.h</key>
+		<data>
+		x//ZUsA79xkIjqVt7TEPwgjQCC0=
+		</data>
+		<key>Headers/CGPDFObject.h</key>
+		<data>
+		JAhdVCfxkPCkx46N8Oj9n0o4nkY=
+		</data>
+		<key>Headers/CGPDFOperatorTable.h</key>
+		<data>
+		BROP4WIGxHGBRrwOZn9UyouIPTU=
+		</data>
+		<key>Headers/CGPDFPage.h</key>
+		<data>
+		vgIbGVaP6UyPRiB54BToFuQUCek=
+		</data>
+		<key>Headers/CGPDFScanner.h</key>
+		<data>
+		Q5fctzbuB0IS/dkewFOM6OTF/ZE=
+		</data>
+		<key>Headers/CGPDFStream.h</key>
+		<data>
+		Nsiy9FJSQeoTPt0uI5KxJZq4JB0=
+		</data>
+		<key>Headers/CGPDFString.h</key>
+		<data>
+		JRz8RVabcSqTn05wgYB7PF4UDzw=
+		</data>
+		<key>Headers/CGPath.h</key>
+		<data>
+		aPcVeY9vvC1ARhz4Zw29RBqR104=
+		</data>
+		<key>Headers/CGPattern.h</key>
+		<data>
+		e5LoFYSeKNSZSG5kObvh1qqmpOU=
+		</data>
+		<key>Headers/CGShading.h</key>
+		<data>
+		t4MOW/08vrDhn96NIbcCGIcLfnQ=
+		</data>
+		<key>Headers/CoreGraphics.h</key>
+		<data>
+		oOGx+DnXTmblQwkHaQVHKx18c9E=
+		</data>
 		<key>Resources/Configuration.plist</key>
 		<data>
-		Dp6y3G/IelxaKIOa5pNUszzodqQ=
+		bR5TN43E3FCOj2+U/Zi2EW9FEso=
 		</data>
 		<key>Resources/Info-macos.plist</key>
 		<data>
-		SvSo3sNhKTl5i1vDDfdgM3txI2g=
+		0CSs4iLIc5Gtf8+AogAktg2H+lE=
 		</data>
 		<key>Resources/libCGCorePDF.A.dylib</key>
 		<data>
-		foFw7cXVQlO48A3hml8YDRe6xLA=
+		NhRpXI/BVNlWBku38EdRcjCTFxg=
 		</data>
 		<key>Resources/libCGCorePDF.dylib</key>
 		<dict>
@@ -74,7 +198,7 @@
 		</dict>
 		<key>Resources/libCGFreetype.A.dylib</key>
 		<data>
-		cJ85dwIIHCHwwyZWFVtnmJqFbFg=
+		L5OMOKe6dphxbJNHx0nje41F6Pw=
 		</data>
 		<key>Resources/libCGFreetype.dylib</key>
 		<dict>
@@ -83,16 +207,25 @@
 		</dict>
 		<key>Resources/libCGVolute.A.dylib</key>
 		<data>
-		WnO9CK59on9SwqjTE6uXofolizQ=
+		30kRG6cRnn/AOLVjZUg8QdI4Uwo=
 		</data>
 		<key>Resources/libCGVolute.dylib</key>
 		<dict>
 			<key>symlink</key>
 			<string>libCGVolute.A.dylib</string>
 		</dict>
+		<key>Resources/libCGXType.A.dylib</key>
+		<data>
+		rToqH+LTtcy6PQRc4/XmvD+CqY8=
+		</data>
+		<key>Resources/libCGXType.dylib</key>
+		<dict>
+			<key>symlink</key>
+			<string>libCGXType.A.dylib</string>
+		</dict>
 		<key>Resources/libCMSBuiltin.A.dylib</key>
 		<data>
-		UxSNEEXXnGag0thYQrNEcFW28Mk=
+		pRHSEuO+1VI1qmDbqhg6y8IVhdo=
 		</data>
 		<key>Resources/libCMSBuiltin.dylib</key>
 		<dict>
@@ -101,7 +234,7 @@
 		</dict>
 		<key>Resources/libCMaps.A.dylib</key>
 		<data>
-		dDTPpPfernbXYsUYemuJ2BkNYrg=
+		5EB5ZGXGj4yfLfhucdaSAALtilE=
 		</data>
 		<key>Resources/libCMaps.dylib</key>
 		<dict>
@@ -110,7 +243,7 @@
 		</dict>
 		<key>Resources/libFontStreams.A.dylib</key>
 		<data>
-		Sdq6Pd7e8QT5qeTFVqwrHpWcRuk=
+		TbUvVfYQIfmhZYQ//cj5wMSxJy0=
 		</data>
 		<key>Resources/libFontStreams.dylib</key>
 		<dict>
@@ -119,7 +252,7 @@
 		</dict>
 		<key>Resources/libJBIG2.A.dylib</key>
 		<data>
-		u1xA5jN2mIxMrs87qVPPcz7A/y0=
+		c2axetJj5SI5U6BkJqkGFZDppmw=
 		</data>
 		<key>Resources/libJBIG2.dylib</key>
 		<dict>
@@ -128,7 +261,7 @@
 		</dict>
 		<key>Resources/libPDFRIP.A.dylib</key>
 		<data>
-		A0ITjZUMYYFleD22ZJ9gon/BCGA=
+		YJHC/5+s45nAjeIyRCTfCCw57go=
 		</data>
 		<key>Resources/libPDFRIP.dylib</key>
 		<dict>
@@ -137,7 +270,7 @@
 		</dict>
 		<key>Resources/libRIP.A.dylib</key>
 		<data>
-		XbyRMedhIZSD/8tJQNKQZ7Y4n7w=
+		JgGkSHEEqWVuqDr+zaU4XkHjUl0=
 		</data>
 		<key>Resources/libRIP.dylib</key>
 		<dict>
@@ -146,232 +279,103 @@
 		</dict>
 		<key>Resources/version.plist</key>
 		<data>
-		HtD2pSUjxPQclACL6FLZLA+0pzg=
+		sld82ZzaGUssxbAa7MJlJbaF4xA=
 		</data>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>@[0-9]+</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
-		</dict>
-		<key>\.licns$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
 		<key>^Resources/</key>
 		<true/>
 		<key>^Resources/.*\.lproj/</key>
 		<dict>
-			<key>omit</key>
+			<key>optional</key>
 			<true/>
 			<key>weight</key>
-			<real>30</real>
+			<real>1000</real>
 		</dict>
 		<key>^Resources/.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>30</real>
-		</dict>
-		<key>^Resources/.*\.nib/classes\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/data\.dependency$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/designable\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/info\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/BridgeSupport/[^/]*\.(bridgesupport|dylib)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
-		</dict>
-		<key>^Resources/English\.lproj/</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>40</real>
-		</dict>
-		<key>^Resources/[A-Za-z]*.nib$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/[a-z]*-[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/libCGInterfaces.dylib$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
+			<real>1100</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
 	<key>rules2</key>
 	<dict>
-		<key>@[0-9]+</key>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
+			<real>2000</real>
 		</dict>
-		<key>\.licns$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
-			<real>0.0</real>
+			<real>10</real>
 		</dict>
-		<key>^Resources/</key>
+		<key>^.*</key>
 		<true/>
-		<key>^Resources/.*\.lproj/</key>
+		<key>^Info\.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>30</real>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
 		</dict>
 		<key>^Resources/.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>30</real>
+			<real>1100</real>
 		</dict>
-		<key>^Resources/.*\.nib/classes\.nib$</key>
+		<key>^[^/]+$</key>
 		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/data\.dependency$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/designable\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/.*\.nib/info\.nib$</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>5</real>
-		</dict>
-		<key>^Resources/BridgeSupport/[^/]*\.(bridgesupport|dylib)$</key>
-		<dict>
-			<key>omit</key>
+			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>^Resources/English\.lproj/</key>
+		<key>^embedded\.provisionprofile$</key>
 		<dict>
-			<key>optional</key>
-			<true/>
 			<key>weight</key>
-			<real>40</real>
+			<real>20</real>
 		</dict>
-		<key>^Resources/[A-Za-z]*.nib$</key>
+		<key>^version\.plist$</key>
 		<dict>
-			<key>omit</key>
-			<true/>
 			<key>weight</key>
-			<real>50</real>
+			<real>20</real>
 		</dict>
-		<key>^Resources/[a-z]*-[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/[a-z]*-[a-z]*\.(png|jpg)$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^Resources/libCGInterfaces.dylib$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>50</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>top</key>
-			<true/>
-			<key>weight</key>
-			<real>0.0</real>
-		</dict>
-		<key>^version.plist$</key>
-		<true/>
 	</dict>
 </dict>
 </plist>

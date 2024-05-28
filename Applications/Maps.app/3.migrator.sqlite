@@ -1,0 +1,15 @@
+-- Migrates traces from v3 to v4
+-- We're adding the route_selections table
+
+BEGIN TRANSACTION;
+
+CREATE TABLE route_selections
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp_start     NUMERIC NOT NULL,
+timestamp_end       NUMERIC,
+directions_id       INTEGER NOT NULL,
+route_id            BLOB
+);
+
+COMMIT;

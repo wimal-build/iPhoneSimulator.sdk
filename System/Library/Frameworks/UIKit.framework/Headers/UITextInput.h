@@ -2,7 +2,7 @@
 //  UITextInput.h
 //  UIKit
 //
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -143,7 +143,8 @@ NS_CLASS_AVAILABLE_IOS(5_1) @interface UIDictationPhrase : NSObject {
 
 - (BOOL)shouldChangeTextInRange:(UITextRange *)range replacementText:(NSString *)text NS_AVAILABLE_IOS(6_0);   // return NO to not change text
 
-/* Text styling information can affect, for example, the appearance of a correction rect. */
+/* Text styling information can affect, for example, the appearance of a correction rect.
+ * Returns an array containing NSAttributedString keys. */
 - (NSDictionary *)textStylingAtPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction;
 
 /* To be implemented if there is not a one-to-one correspondence between text positions within range and character offsets into the associated string. */
@@ -182,10 +183,10 @@ NS_CLASS_AVAILABLE_IOS(5_1) @interface UIDictationPhrase : NSObject {
 
 //---------------------------------------------------------------------------------------------------
 
-/* Keys to style dictionaries. */
-UIKIT_EXTERN NSString *const UITextInputTextBackgroundColorKey; // Key to a UIColor
-UIKIT_EXTERN NSString *const UITextInputTextColorKey;           // Key to a UIColor
-UIKIT_EXTERN NSString *const UITextInputTextFontKey;            // Key to a UIFont
+/* UITextInput keys to style dictionaries are deprecated. Use NSAttributedString keys instead, such as NSFontAttribute, etc. */
+UIKIT_EXTERN NSString *const UITextInputTextBackgroundColorKey NS_DEPRECATED_IOS(3_2, 8_0, "Use NSBackgroundColorAttributeName instead"); // Key to a UIColor
+UIKIT_EXTERN NSString *const UITextInputTextColorKey           NS_DEPRECATED_IOS(3_2, 8_0, "Use NSForegroundColorAttributeName instead"); // Key to a UIColor
+UIKIT_EXTERN NSString *const UITextInputTextFontKey            NS_DEPRECATED_IOS(3_2, 8_0, "Use NSFontAttributeName instead"); // Key to a UIFont
 
 
 /* To accommodate text entry in documents that contain nested elements, or in which supplying and
@@ -245,7 +246,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UITextSelectionRect : NSObject
  * for handling directions and granularities affected by layout.*/
 NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextInputStringTokenizer : NSObject <UITextInputTokenizer> 
 
-- (id)initWithTextInput:(UIResponder <UITextInput> *)textInput;
+- (instancetype)initWithTextInput:(UIResponder <UITextInput> *)textInput;
 
 @end
 

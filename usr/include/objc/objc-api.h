@@ -65,7 +65,7 @@
 /* OBJC_ISA_AVAILABILITY: `isa` will be deprecated or unavailable 
  * in the future */
 #if !defined(OBJC_ISA_AVAILABILITY)
-#   if TARGET_OS_IPHONE
+#   if __OBJC2__
 #       define OBJC_ISA_AVAILABILITY  __attribute__((deprecated))
 #   else
 #       define OBJC_ISA_AVAILABILITY  /* still available */

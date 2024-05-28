@@ -1,0 +1,6 @@
+-- Migrates traces from v1 to v2
+BEGIN TRANSACTION;
+
+ALTER TABLE locations ADD COLUMN course_accuracy NUMERIC DEFAULT -1;
+
+COMMIT;

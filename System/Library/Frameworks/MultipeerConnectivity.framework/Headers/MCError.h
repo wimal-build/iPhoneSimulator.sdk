@@ -31,4 +31,4 @@ typedef NS_ENUM(NSInteger, MCErrorCode) {
     MCErrorTimedOut                     = 4,
     MCErrorCancelled                    = 5,
     MCErrorUnavailable                  = 6,
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE(10_10,7_0);

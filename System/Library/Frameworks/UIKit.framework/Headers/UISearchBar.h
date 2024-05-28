@@ -2,7 +2,7 @@
 //  UISearchBar.h
 //  UIKit
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,7 +31,11 @@ typedef NS_ENUM(NSUInteger, UISearchBarStyle) {
 @protocol UISearchBarDelegate;
 @class UITextField, UILabel, UIButton, UIColor;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning>
+/*
+ UISearchBar officially conformed to UITextInputTraits in iOS 8.0 and privately conformed in iOS 7.0. Prior to 7.0, UISearchBar only implemented these four traits: autocapitalizationType, autocorrectionType, spellCheckingType and keyboardType. If your deployment target is <7.0 and you are using any trait other than one of the four mentioned, you must check its availability with respondsToSelector:
+ */
+
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning, UITextInputTraits>
 
 @property(nonatomic)        UIBarStyle              barStyle;              // default is UIBarStyleDefault (blue)
 @property(nonatomic,assign) id<UISearchBarDelegate> delegate;              // weak reference. default is nil
@@ -67,12 +71,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning>
  for UIBarStyleBlack or white for UIBarStyleDefault if barTintColor is nil.
  */
 @property(nonatomic,assign,getter=isTranslucent) BOOL translucent NS_AVAILABLE_IOS(3_0); // Default is NO on iOS 6 and earlier. Always YES if barStyle is set to UIBarStyleBlackTranslucent
-
-// available text input traits
-@property(nonatomic) UITextAutocapitalizationType autocapitalizationType;  // default is UITextAutocapitalizationTypeNone
-@property(nonatomic) UITextAutocorrectionType     autocorrectionType;      // default is UITextAutocorrectionTypeDefault
-@property(nonatomic) UITextSpellCheckingType      spellCheckingType;       // default is UITextSpellCheckingTypeDefault
-@property(nonatomic) UIKeyboardType               keyboardType;            // default is UIKeyboardTypeDefault
 
 @property(nonatomic,copy) NSArray   *scopeButtonTitles        NS_AVAILABLE_IOS(3_0); // array of NSStrings. no scope bar shown unless 2 or more items
 @property(nonatomic)      NSInteger  selectedScopeButtonIndex NS_AVAILABLE_IOS(3_0); // index into array of scope button titles. default is 0. ignored if out of range
@@ -147,7 +145,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning>
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar;                     // called when keyboard search button pressed
 - (void)searchBarBookmarkButtonClicked:(UISearchBar *)searchBar;                   // called when bookmark button pressed
-- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar;                    // called when cancel button pressed
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar;                     // called when cancel button pressed
 - (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar NS_AVAILABLE_IOS(3_2); // called when search results button pressed
 
 - (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope NS_AVAILABLE_IOS(3_0);

@@ -1,0 +1,6 @@
+-- Migrates traces from v5 to v6
+BEGIN TRANSACTION;
+
+ALTER TABLE info ADD COLUMN simulation INTEGER DEFAULT 1; -- mark old traces as simulations
+
+COMMIT;

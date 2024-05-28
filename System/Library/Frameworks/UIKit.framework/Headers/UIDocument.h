@@ -2,7 +2,7 @@
 //  UIDocument.h
 //  UIKit
 //
-//  Copyright (c) 1997-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 1997-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -63,13 +63,14 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface UIDocument : NSObject <NSFilePresenter> {
         unsigned int movingFile:1;
         unsigned int savingError:1;
         unsigned int inConflict:1;
+        unsigned int needToStopAccessingSecurityScopedResource:1;
     } _docFlags;
 }
 
 #pragma mark *** Initialization ***
 
 // The designated initializer. Passing an empty URL will cause this method to throw an NSInvalidArgumentException.
-- (id)initWithFileURL:(NSURL *)url;
+- (instancetype)initWithFileURL:(NSURL *)url;
 
 #pragma mark *** Attributes Applicable to Every Kind of Document ***
 // UIKit may call these methods on background threads, so subclasses that override them must have thread safe implementations.
@@ -199,4 +200,14 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface UIDocument : NSObject <NSFilePresenter> {
 // Subclasses that override this method must call super or use NSFileCoordinator directly to initiate a coordinated read.
 - (void)revertToContentsOfURL:(NSURL *)url completionHandler:(void (^)(BOOL success))completionHandler;
 
+@end
+
+#pragma mark *** Activity Continuation ***
+
+UIKIT_EXTERN NSString* const NSUserActivityDocumentURLKey NS_AVAILABLE_IOS(8_0);
+
+@interface UIDocument (ActivityContinuation)
+@property (nonatomic, retain) NSUserActivity *userActivity NS_AVAILABLE_IOS(8_0);
+- (void) updateUserActivityState:(NSUserActivity *)userActivity NS_AVAILABLE_IOS(8_0);
+- (void) restoreUserActivityState:(NSUserActivity *)userActivity NS_AVAILABLE_IOS(8_0);
 @end

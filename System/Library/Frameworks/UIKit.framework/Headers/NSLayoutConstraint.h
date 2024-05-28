@@ -2,7 +2,7 @@
 //  NSLayoutConstraint.h
 //  UIKit
 //	
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -29,6 +29,18 @@ typedef NS_ENUM(NSInteger, NSLayoutAttribute) {
     NSLayoutAttributeCenterX,
     NSLayoutAttributeCenterY,
     NSLayoutAttributeBaseline,
+    NSLayoutAttributeLastBaseline = NSLayoutAttributeBaseline,
+    NSLayoutAttributeFirstBaseline NS_ENUM_AVAILABLE_IOS(8_0),
+    
+    
+    NSLayoutAttributeLeftMargin NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeRightMargin NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeTopMargin NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeBottomMargin NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeLeadingMargin NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeTrailingMargin NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeCenterXWithinMargins NS_ENUM_AVAILABLE_IOS(8_0),
+    NSLayoutAttributeCenterYWithinMargins NS_ENUM_AVAILABLE_IOS(8_0),
     
     NSLayoutAttributeNotAnAttribute = 0
 };
@@ -43,6 +55,8 @@ typedef NS_OPTIONS(NSUInteger, NSLayoutFormatOptions) {
     NSLayoutFormatAlignAllCenterX = (1 << NSLayoutAttributeCenterX),
     NSLayoutFormatAlignAllCenterY = (1 << NSLayoutAttributeCenterY),
     NSLayoutFormatAlignAllBaseline = (1 << NSLayoutAttributeBaseline),
+    NSLayoutFormatAlignAllLastBaseline = NSLayoutFormatAlignAllBaseline,
+    NSLayoutFormatAlignAllFirstBaseline NS_ENUM_AVAILABLE_IOS(8_0) = (1 << NSLayoutAttributeFirstBaseline),
     
     NSLayoutFormatAlignmentMask = 0xFFFF,
     
@@ -55,13 +69,11 @@ typedef NS_OPTIONS(NSUInteger, NSLayoutFormatOptions) {
     NSLayoutFormatDirectionMask = 0x3 << 16,  
 };
 
-enum {
-    UILayoutPriorityRequired = 1000, // a required constraint.  Do not exceed this.
-    UILayoutPriorityDefaultHigh = 750, // this is the priority level with which a button resists compressing its content.
-    UILayoutPriorityDefaultLow = 250, // this is the priority level at which a button hugs its contents horizontally.  
-    UILayoutPriorityFittingSizeLevel = 50, // When you send -[UIView systemLayoutSizeFittingSize:], the size fitting most closely to the target size (the argument) is computed.  UILayoutPriorityFittingSizeLevel is the priority level with which the view wants to conform to the target size in that computation.  It's quite low.  It is generally not appropriate to make a constraint at exactly this priority.  You want to be higher or lower.
-};
 typedef float UILayoutPriority;
+static const UILayoutPriority UILayoutPriorityRequired NS_AVAILABLE_IOS(6_0) = 1000; // A required constraint.  Do not exceed this.
+static const UILayoutPriority UILayoutPriorityDefaultHigh NS_AVAILABLE_IOS(6_0) = 750; // This is the priority level with which a button resists compressing its content.
+static const UILayoutPriority UILayoutPriorityDefaultLow NS_AVAILABLE_IOS(6_0) = 250; // This is the priority level at which a button hugs its contents horizontally.
+static const UILayoutPriority UILayoutPriorityFittingSizeLevel NS_AVAILABLE_IOS(6_0) = 50; // When you send -[UIView systemLayoutSizeFittingSize:], the size fitting most closely to the target size (the argument) is computed.  UILayoutPriorityFittingSizeLevel is the priority level with which the view wants to conform to the target size in that computation.  It's quite low.  It is generally not appropriate to make a constraint at exactly this priority.  You want to be higher or lower.
 
 NS_CLASS_AVAILABLE_IOS(6_0)
 @interface NSLayoutConstraint : NSObject
@@ -94,7 +106,7 @@ UIKIT_EXTERN NSDictionary *_NSDictionaryOfVariableBindings(NSString *commaSepara
 /* Create constraints explicitly.  Constraints are of the form "view1.attr1 = view2.attr2 * multiplier + constant" 
  If your equation does not have a second view and attribute, use nil and NSLayoutAttributeNotAnAttribute.
  */
-+(id)constraintWithItem:(id)view1 attribute:(NSLayoutAttribute)attr1 relatedBy:(NSLayoutRelation)relation toItem:(id)view2 attribute:(NSLayoutAttribute)attr2 multiplier:(CGFloat)multiplier constant:(CGFloat)c;
++(instancetype)constraintWithItem:(id)view1 attribute:(NSLayoutAttribute)attr1 relatedBy:(NSLayoutRelation)relation toItem:(id)view2 attribute:(NSLayoutAttribute)attr2 multiplier:(CGFloat)multiplier constant:(CGFloat)c;
 
 /* If a constraint's priority level is less than UILayoutPriorityRequired, then it is optional.  Higher priority constraints are met before lower priority constraints.
  Constraint satisfaction is not all or nothing.  If a constraint 'a == b' is optional, that means we will attempt to minimize 'abs(a-b)'.
@@ -120,6 +132,22 @@ UIKIT_EXTERN NSDictionary *_NSDictionaryOfVariableBindings(NSString *commaSepara
 /* Unlike the other properties, the constant may be modified after constraint creation.  Setting the constant on an existing constraint performs much better than removing the constraint and adding a new one that's just like the old but for having a new constant.
  */
 @property CGFloat constant;
+
+/* The receiver may be activated or deactivated by manipulating this property.  Only active constraints affect the calculated layout.  Attempting to activate a constraint whose items have no common ancestor will cause an exception to be thrown.  Defaults to NO for newly created constraints. */
+@property (getter=isActive) BOOL active NS_AVAILABLE(10_10, 8_0);
+
+/* Convenience method that activates each constraint in the contained array, in the same manner as setting active=YES. This is often more efficient than activating each constraint individually. */
++ (void)activateConstraints:(NSArray *)constraints NS_AVAILABLE(10_10, 8_0);
+
+/* Convenience method that deactivates each constraint in the contained array, in the same manner as setting active=NO. This is often more efficient than deactivating each constraint individually. */
++ (void)deactivateConstraints:(NSArray *)constraints NS_AVAILABLE(10_10, 8_0);
+@end
+
+@interface NSLayoutConstraint (NSIdentifier)
+/* For ease in debugging, name a constraint by setting its identifier, which will be printed in the constraint's description.
+ Identifiers starting with UI and NS are reserved by the system.
+ */
+@property (copy) NSString *identifier NS_AVAILABLE_IOS(7_0);
 
 @end
 

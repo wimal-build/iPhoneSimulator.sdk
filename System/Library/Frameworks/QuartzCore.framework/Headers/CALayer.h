@@ -1,6 +1,6 @@
 /* CoreAnimation - CALayer.h
 
-   Copyright (c) 2006-2012 Apple Inc.
+   Copyright (c) 2006-2014, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CAMediaTiming.h>
@@ -12,7 +12,7 @@
 
 /* Bit definitions for `edgeAntialiasingMask' property. */
 
-enum CAEdgeAntialiasingMask
+typedef NS_OPTIONS (unsigned int, CAEdgeAntialiasingMask)
 {
   kCALayerLeftEdge	= 1U << 0,	/* Minimum X edge. */
   kCALayerRightEdge	= 1U << 1,	/* Maximum X edge. */
@@ -37,11 +37,11 @@ enum CAEdgeAntialiasingMask
 
 /** Layer creation and initialization. **/
 
-+ (id)layer;
++ (instancetype)layer;
 
 /* The designated initializer. */
 
-- (id)init;
+- (instancetype)init;
 
 /* This initializer is used by CoreAnimation to create shadow copies of
  * layers, e.g. for use as presentation layers. Subclasses can override
@@ -49,7 +49,7 @@ enum CAEdgeAntialiasingMask
  * layer (subclasses should call the superclass afterwards). Calling this
  * method in any other situation will result in undefined behavior. */
 
-- (id)initWithLayer:(id)layer;
+- (instancetype)initWithLayer:(id)layer;
 
 /* Returns a copy of the layer containing all properties as they were
  * at the start of the current transaction, with any active animations
@@ -250,9 +250,10 @@ enum CAEdgeAntialiasingMask
  * a mask the layer's `compositingFilter' and `backgroundFilters'
  * properties are ignored. When setting the mask to a new layer, the
  * new layer must have a nil superlayer, otherwise the behavior is
- * undefined. */
+ * undefined. Nested masks (mask layers with their own masks) are
+ * unsupported. */
 
-@property(retain) CALayer *mask;
+@property(strong) CALayer *mask;
 
 /* When true an implicit mask matching the layer bounds is applied to
  * the layer (including the effects of the `cornerRadius' property). If
@@ -293,7 +294,7 @@ enum CAEdgeAntialiasingMask
  * supported on Mac OS X 10.6 and later.) Default value is nil.
  * Animatable. */
 
-@property(retain) id contents;
+@property(strong) id contents;
 
 /* A rectangle in normalized image coordinates defining the
  * subrectangle of the `contents' property that will be drawn into the
@@ -424,7 +425,7 @@ enum CAEdgeAntialiasingMask
  * eliminate the seams that would otherwise occur. The default value is
  * for all edges to be antialiased. */
 
-@property unsigned int edgeAntialiasingMask;
+@property CAEdgeAntialiasingMask edgeAntialiasingMask;
 
 /* When true this layer is allowed to antialias its edges, as requested
  * by the value of the edgeAntialiasingMask property.
@@ -488,7 +489,7 @@ enum CAEdgeAntialiasingMask
  * that the filter is attached to. (This also applies to the `filters'
  * and `backgroundFilters' properties.) */
 
-@property(retain) id compositingFilter;
+@property(strong) id compositingFilter;
 
 /* An array of filters that will be applied to the contents of the
  * layer and its sublayers. Defaults to nil. Animatable. */
@@ -700,7 +701,7 @@ enum CAEdgeAntialiasingMask
  * below (for those that it implements). The value of this property is
  * not retained. Default value is nil. */
 
-@property(assign) id delegate;
+@property(weak) id delegate;
 
 /* When non-nil, a dictionary dereferenced to find property values that
  * aren't explicitly defined by the layer. (This dictionary may in turn

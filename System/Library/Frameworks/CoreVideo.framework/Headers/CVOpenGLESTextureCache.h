@@ -2,12 +2,12 @@
  *  CVOpenGLESTextureCache.h
  *  CoreVideo
  *
- *  Copyright 2011 Apple Computer, Inc. All rights reserved.
+ *  Copyright 2011-2014 Apple Inc. All rights reserved.
  *
  */
 
 /*! @header CVOpenGLESTextureCache.h
- @copyright 2011 Apple Computer, Inc. All rights reserved.
+ @copyright 2011-2014 Apple Inc. All rights reserved.
  @availability iOS 5.0 or later
  @discussion A CoreVideo TextureCache is used to cache and manage CVOpenGLESTextures.
  

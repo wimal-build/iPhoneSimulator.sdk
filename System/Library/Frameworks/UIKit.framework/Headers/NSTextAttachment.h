@@ -2,7 +2,7 @@
 //  NSTextAttachment.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -34,7 +34,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface NSTextAttachment : NSObject <NSTextAttach
 /**************************** Initialization ****************************/
 
 // Designated initializer.  Both arguments can be nil.  When contentData==nil || uti==nil, the receiver is consider to be an attachment without document contents.  In this case, the NSAttributedString methods writing external file format tries to save the return value of -[NSTextAttachment image] instead.
-- (id)initWithData:(NSData *)contentData ofType:(NSString *)uti;
+- (instancetype)initWithData:(NSData *)contentData ofType:(NSString *)uti;
 
 
 /**************************** Content properties ****************************/

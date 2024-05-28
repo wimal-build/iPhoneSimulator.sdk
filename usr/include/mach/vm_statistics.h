@@ -398,6 +398,12 @@ typedef struct vm_purgeable_info	*vm_purgeable_info_t;
 /* CoreUI image block data */
 #define VM_MEMORY_COREUI 76
 
+/* CoreUI image file */
+#define VM_MEMORY_COREUIFILE 77
+
+/* Genealogy buffers */
+#define VM_MEMORY_GENEALOGY 78
+
 /* Reserve 240-255 for application */
 #define VM_MEMORY_APPLICATION_SPECIFIC_1 240
 #define VM_MEMORY_APPLICATION_SPECIFIC_16 255

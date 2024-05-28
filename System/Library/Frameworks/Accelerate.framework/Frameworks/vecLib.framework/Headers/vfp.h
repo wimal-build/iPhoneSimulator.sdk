@@ -1,4 +1,4 @@
-/*  vfp.h (from vecLib-459.0)
+/*  vfp.h (from vecLib-510.0)
  *  Copyright 1999-2014 Apple Inc.  All rights reserved.
  *
  *  Overview:
@@ -21,6 +21,7 @@
 
 #ifndef __VFP__
 #define __VFP__
+#if defined __SSE2__ || defined __ARM_NEON__
 
 #include "vecLibTypes.h"
 #include <stdint.h>
@@ -250,4 +251,5 @@ extern vUInt32 vtablelookup(vSInt32, uint32_t *) __OSX_AVAILABLE_STARTING(__MAC_
 #ifdef __cplusplus
 }
 #endif
+#endif /* defined __SSE2__ || defined __ARM_NEON__ */
 #endif /* __VFP__ */

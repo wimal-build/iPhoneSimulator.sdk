@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+(function(){return function(e,r){if(!e)return CONTINUE;var a=loadHelper("seatme.com-microdata-parser.js"),t=a(e);if(t){delete t[0].modifiedTime;var n=Scanner.fromMessage(e);return n.setLocale(r),t[0].startTime=n.getSpan().innerDate(),t}return CONTINUE}}).call();

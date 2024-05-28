@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
  
-	Copyright 2010-2013 Apple Inc. All rights reserved.
+	Copyright 2010-2014 Apple Inc. All rights reserved.
 
 */
 
@@ -32,14 +32,13 @@
  @constant	 AVAssetWriterStatusCancelled
 	Indicates that the asset writer can no longer write samples because writing was canceled with the cancelWriting method.
  */
-enum {
+typedef NS_ENUM(NSInteger, AVAssetWriterStatus) {
 	AVAssetWriterStatusUnknown = 0,
 	AVAssetWriterStatusWriting,
 	AVAssetWriterStatusCompleted,
 	AVAssetWriterStatusFailed,
 	AVAssetWriterStatusCancelled
 };
-typedef NSInteger AVAssetWriterStatus;
 
 @class AVAssetWriterInternal;
 
@@ -81,7 +80,7 @@ NS_CLASS_AVAILABLE(10_7, 4_1)
 	
 	UTIs for container formats that can be written are declared in AVMediaFormat.h.
  */
-+ (AVAssetWriter *)assetWriterWithURL:(NSURL *)outputURL fileType:(NSString *)outputFileType error:(NSError **)outError;
++ (instancetype)assetWriterWithURL:(NSURL *)outputURL fileType:(NSString *)outputFileType error:(NSError **)outError;
 
 /*!
  @method initWithURL:fileType:error:
@@ -102,7 +101,7 @@ NS_CLASS_AVAILABLE(10_7, 4_1)
 	
 	UTIs for container formats that can be written are declared in AVMediaFormat.h.
  */
-- (id)initWithURL:(NSURL *)outputURL fileType:(NSString *)outputFileType error:(NSError **)outError;
+- (instancetype)initWithURL:(NSURL *)outputURL fileType:(NSString *)outputFileType error:(NSError **)outError;
 
 /*!
  @property outputURL
@@ -173,6 +172,20 @@ NS_CLASS_AVAILABLE(10_7, 4_1)
 	This property cannot be set after writing has started.
  */
 @property (nonatomic) BOOL shouldOptimizeForNetworkUse;
+
+/*!
+ @property directoryForTemporaryFiles
+ @abstract 
+	Specifies a directory that is suitable for containing temporary files generated during the process of writing an asset.
+ 
+ @discussion
+	AVAssetWriter may need to write temporary files when configured in certain ways, such as when performsMultiPassEncodingIfSupported is set to YES on one or more of its inputs.  This property can be used to control where in the filesystem those temporary files are created.  All temporary files will be deleted when asset writing is completed, is canceled, or fails.
+ 
+	When the value of this property is nil, the asset writer will choose a suitable location when writing temporary files.  The default value is nil.
+	
+	This property cannot be set after writing has started.  The asset writer will fail if a file cannot be created in this directory (for example, due to insufficient permissions).
+ */
+@property (nonatomic, copy) NSURL *directoryForTemporaryFiles NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property inputs
@@ -460,7 +473,7 @@ NS_CLASS_AVAILABLE(10_9, 7_0)
  @result
 	An instance of AVAssetWriterInputGroup, for use with -[AVAssetWriter addInputGroup:].
  */
-- (id)initWithInputs:(NSArray *)inputs defaultInput:(AVAssetWriterInput *)defaultInput;
+- (instancetype)initWithInputs:(NSArray *)inputs defaultInput:(AVAssetWriterInput *)defaultInput;
 
 /*!
  @property inputs

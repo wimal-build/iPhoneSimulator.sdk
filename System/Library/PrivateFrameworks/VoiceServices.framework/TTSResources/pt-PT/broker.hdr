@@ -4,15 +4,15 @@ defaultvoice:Joana
 <VERSION>NUAN_1.0</VERSION>
 <HEADER>
   <BROKERSTRING>pipeline/Portuguese/joana/22/bet3/text/pcm</BROKERSTRING>
-  <PRIORITY>4102</PRIORITY>
+  <PRIORITY>4103</PRIORITY>
   <PARAMETERS>
     <language>Portuguese</language>
     <langcode>PTP</langcode>
     <langid>13</langid>
-    <langversion>5.2.3.13323</langversion>
+    <langversion>5.2.4.14012</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Joana</voice>
-    <voiceversion>5.2.3.13336</voiceversion>
+    <voiceversion>5.2.4.13336</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,26 @@ defaultvoice:Joana
       userdct/ptp
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      joana/userdct/ptp
+      userdct/ptp/joana
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/ptp
+    </RESOURCE>
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/ptp
+    </RESOURCE>
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/spell/ptp
+    </RESOURCE>
     
     
     

@@ -1,7 +1,6 @@
 
 #import <Foundation/Foundation.h>
-
-@class PKPass;
+#import <PassKit/PKPass.h>
 
 /* Threading contract: no concurrent usage.
  */
@@ -24,6 +23,7 @@ NS_CLASS_AVAILABLE_IOS(6_0)
  */
 - (NSArray *)passes;
 - (PKPass *)passWithPassTypeIdentifier:(NSString *)identifier serialNumber:(NSString *)serialNumber;
+- (NSArray *)passesOfType:(PKPassType)passType NS_AVAILABLE_IOS(8_0);
 - (void)removePass:(PKPass *)pass;
 
 /* This returns YES even if the process is not entitled to access the pass in the library.
@@ -39,6 +39,15 @@ NS_CLASS_AVAILABLE_IOS(6_0)
 /* The user will be prompted to grant permission for the calling process to add passes to the Pass Library. The user may respond by allowing the passes to be added, or requesting to review the passes. The selection will be returned in the completionHandler as a PKPassLibraryAddPassesStatus. If PKPassLibraryPassesPresentReview is returned, you must present a PKPAddPassesViewController initialized with the passes so that the user may review and add the passes manually. The completion handler for this method is called on an arbitrary queue - dispatch to the main queue if you're presenting UI.
  */
 - (void)addPasses:(NSArray *)passes withCompletionHandler:(void(^)(PKPassLibraryAddPassesStatus status))completion NS_AVAILABLE_IOS(7_0);
+
+/* If device supports adding payment passes, this method will return YES. Otherwise, NO will be returned.
+ */
++ (BOOL)isPaymentPassActivationAvailable NS_AVAILABLE_IOS(8_0);
+
+/* These methods may be utilized to activate a payment pass that is provisioned but currently in the inactive state, by providing either a cryptographic OTP, or an activation code.
+ */
+- (void)activatePaymentPass:(PKPaymentPass *)paymentPass withActivationData:(NSData *)activationData completion:(void(^)(BOOL success, NSError* error))completion NS_AVAILABLE_IOS(8_0);
+- (void)activatePaymentPass:(PKPaymentPass *)paymentPass withActivationCode:(NSString *)activationCode completion:(void(^)(BOOL success, NSError* error))completion NS_AVAILABLE_IOS(8_0);
 
 @end
 

@@ -2,7 +2,7 @@
 //  UIKitDefines.h
 //  UIKit
 //
-//  Copyright (c) 2007-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2014 Apple Inc. All rights reserved.
 //
 
 #import <Availability.h>

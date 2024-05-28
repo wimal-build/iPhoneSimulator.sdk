@@ -1,0 +1,28 @@
+.StatusBarTime:before	{ content: "PREVIEW_STATUS_BAR_TIME";}
+.Messages:before 		{ content: "PREVIEW_SPRINGBOARD_MESSAGES";}
+.Calendar:before 		{ content: "PREVIEW_SPRINGBOARD_CALENDAR";}
+.Photos:before 			{ content: "PREVIEW_SPRINGBOARD_PHOTOS";}
+.Camera:before 			{ content: "PREVIEW_SPRINGBOARD_CAMERA";}
+.Weather:before 		{ content: "PREVIEW_SPRINGBOARD_WEATHER";}
+.Clock:before 			{ content: "PREVIEW_SPRINGBOARD_CLOCK";}
+.Maps:before 			{ content: "PREVIEW_SPRINGBOARD_MAPS";}
+.Videos:before 			{ content: "PREVIEW_SPRINGBOARD_VIDEOS";}
+.Notes:before 			{ content: "PREVIEW_SPRINGBOARD_NOTES";}
+.Reminders:before 		{ content: "PREVIEW_SPRINGBOARD_REMINDERS";}
+.Stocks:before 			{ content: "PREVIEW_SPRINGBOARD_STOCKS";}
+.GameCenter:before 		{ content: "PREVIEW_SPRINGBOARD_GAME_CENTER";}
+.Newsstand:before 		{ content: "PREVIEW_SPRINGBOARD_NEWSSTAND";}
+.iTunesStore:before 	{ content: "PREVIEW_SPRINGBOARD_ITUNES_STORE";}
+.AppStore:before 		{ content: "PREVIEW_SPRINGBOARD_APPSTORE";}
+.iBooks:before			{ content: "PREVIEW_SPRINGBOARD_IBOOKS";}
+.Health:before			{ content: "PREVIEW_SPRINGBOARD_HEALTH";}
+.Passbook:before 		{ content: "PREVIEW_SPRINGBOARD_PASSBOOK";}
+.Settings:before 		{ content: "PREVIEW_SPRINGBOARD_SETTINGS";}
+.Phone:before 			{ content: "PREVIEW_SPRINGBOARD_PHONE";}
+.Mail:before 			{ content: "PREVIEW_SPRINGBOARD_MAIL";}
+.Safari:before 			{ content: "PREVIEW_SPRINGBOARD_SAFARI";}
+.Music:before 			{ content: "PREVIEW_SPRINGBOARD_MUSIC";}
+
+
+
+

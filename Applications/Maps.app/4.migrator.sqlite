@@ -1,0 +1,6 @@
+-- Migrates traces from v4 to v5
+BEGIN TRANSACTION;
+
+ALTER TABLE directions ADD COLUMN transport_type NUMERIC DEFAULT 0; -- GEOTransportType_AUTOMOBILE
+
+COMMIT;

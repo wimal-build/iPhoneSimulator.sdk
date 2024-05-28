@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("ba.com-refund-en",function(){return!0},function(e){return/^Your BA eTicket Receipt:/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/112/179/186","SG49807365")]);

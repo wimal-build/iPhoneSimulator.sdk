@@ -17,10 +17,11 @@ MK_CLASS_AVAILABLE(10_9, 6_0)
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *phoneNumber;
+
 @property (nonatomic, strong) NSURL *url;
 
 + (MKMapItem *)mapItemForCurrentLocation;
-- (id)initWithPlacemark:(MKPlacemark *)placemark;
+- (instancetype)initWithPlacemark:(MKPlacemark *)placemark;
 
 - (BOOL)openInMapsWithLaunchOptions:(NSDictionary *)launchOptions;
 + (BOOL)openMapsWithItems:(NSArray *)mapItems launchOptions:(NSDictionary *)launchOptions;
@@ -39,4 +40,4 @@ MK_EXTERN NSString * const MKLaunchOptionsDirectionsModeWalking NS_AVAILABLE(10_
 MK_EXTERN NSString * const MKLaunchOptionsMapCenterKey          NS_AVAILABLE(10_9, 6_0); // Key to an NSValue-encoded CLLocationCoordinate2D
 MK_EXTERN NSString * const MKLaunchOptionsMapSpanKey            NS_AVAILABLE(10_9, 6_0); // Key to an NSValue-encoded MKCoordinateSpan
 
-MK_EXTERN NSString * const MKLaunchOptionsCameraKey             NS_AVAILABLE(10_9, 7_0); // Key to MKMapCamera object
+MK_EXTERN NSString * const MKLaunchOptionsCameraKey             NS_AVAILABLE(10_10, 7_1); // Key to MKMapCamera object

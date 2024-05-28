@@ -29,8 +29,6 @@
 # define CORE_IMAGE_EXPORT extern __attribute__((visibility("default")))
 #endif
 
-#define CORE_IMAGE_HIDDEN extern __attribute__((visibility("hidden")))
-
 #define CORE_IMAGE_CLASS_EXPORT __attribute__((visibility("default")))
 
 #endif /* COREIMAGEDEFINES_H */

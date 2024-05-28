@@ -1,0 +1,235 @@
+// Copyright 2014 Apple Inc. All rights reserved.
+
+option objc_package = "MIP";
+option objc_framework = "MusicLibrary";
+option objc_class_visibility = "default";
+option objc_use_arc = "true";
+
+enum MediaType {
+        Song = 1;
+        Movie = 2;
+        TVShow = 3;
+        Podcast = 4;
+        VoiceMemo = 5;
+        VideoPodcast = 6;
+        MusicVideo = 7;
+        AudioBook = 8;
+        DigitalBooklet = 9;
+        ITunesUAudio = 10;
+        ITunesUVideo = 11;
+        HomeVideo = 12;
+        MusicQuiz = 13;
+}
+
+enum MediaObjectType {
+        Album = 1;
+        Artist = 2;
+        Composer = 3;
+        Genre = 4;
+        Series = 5;
+        MediaItem = 6;
+        Playlist = 7;
+}
+
+// a touple used for locating an item in a particular library (eg, database rowid)
+message LibraryIdentifier {
+    optional string libraryName = 1;    // the library that the id came from
+    optional int64 libraryId = 2;       // eg, database rowid
+}
+
+// A grouping of the various identifiers used for identifying a media item or collection across systems & devices.
+message MultiverseIdentifier {
+    // descriptive identifiers (when no ids are present)
+    optional MediaObjectType mediaObjectType = 1;
+    optional MediaType mediaType = 2;
+    optional string name = 3;
+
+    // remote identifiers
+    optional int64 accountId = 30;          // purchase or match account id
+    optional int64 storeId = 31;            // store id
+    optional int64 sagaId = 32;             // match account id
+    optional int64 purchaseHistoryId = 33;  // purchase history id
+
+    // local identifiers
+    repeated LibraryIdentifier libraryIdentifiers = 50;
+}
+
+// Artist object
+message Artist {
+    optional int64 storeId = 1;
+    optional string name = 2;
+    optional string sortName = 3;
+    optional string artworkId = 4;
+}
+
+// Album object
+message Album {
+    optional int64 storeId = 1;
+    optional string name = 2;
+    optional string sortName = 3;
+    optional Artist artist = 4;
+    optional int32 numTracks = 5;
+    optional int32 numDiscs = 6;
+    optional string artworkId = 7;
+    optional int32 userRating = 8;
+    optional bool compilation = 9;
+}
+
+// Genre object
+message Genre {
+    optional int64 storeId = 1;
+    optional string name = 2;
+}
+
+// Series object, for tv shows and podcasts
+message Series {
+    optional int64 storeId = 1;
+    optional string name = 2;
+    optional string sortName = 3;
+}
+
+
+message PlaybackInfo {
+    optional int32 bitRate = 1;
+    optional int32 codecType = 2;
+    optional int32 codecSubType = 3;
+    optional int32 dataKind = 4;
+    optional string dataUrl = 5;
+    optional string eqPreset = 6;
+    optional string playbackFormat = 7;
+    optional int64 gaplessHeuristicCode = 8;
+    optional int64 gaplessHeuristicDelayCode = 9;
+    optional int64 gaplessEncodingDrainCode = 10;
+    optional int64 gaplessFrameResyncCode = 11;
+    optional int32 relativeVolume = 12;
+    optional int32 sampleRate = 13;
+    optional int64 startTime = 14;
+    optional int64 stopTime = 15;
+    optional int64 volumeNormalizationEnergy = 16;
+    optional int32 beatsPerMinute = 17;
+}
+
+message Song {
+    optional Album album = 1;
+    optional Artist artist = 2;
+    optional Artist composer = 3;
+    optional Genre genre = 4;
+    optional int32 discNumber = 5;
+    optional int32 trackNumber = 6;
+    optional int32 userRating = 7;
+    optional bool excludeFromShuffle = 8;
+    optional int64 geniusId = 9;
+    optional int32 audioFormat = 10;
+    optional bool hasVideo = 11;
+    optional string lyrics = 12;
+    optional PlaybackInfo playbackInfo = 13;
+}
+
+message Movie {
+    optional Artist artist = 1;
+    optional int32 videoQuality = 2;
+    optional bool rental = 3;
+    optional bool hasChapterData = 4;
+    optional string extendedContentName = 5;
+    optional string movieInfo = 6;
+    optional bool hasAlternateAudio = 7;
+    optional bool hasSubtitles = 8;
+    optional int32 audioLanguage = 9;
+    optional int32 audioTrackIndex = 10;
+    optional int32 audioTrackId = 11;
+    optional int32 subtitleLanguage = 12;
+    optional int32 subtitleTrackIndex = 13;
+    optional int64 rentalDuration = 14;
+    optional int64 rentalPlaybackDuration = 15;
+    optional int64 rentalPlaybackStartedDateTime = 16;
+    optional int64 rentalStartedDateTime = 17;
+}
+
+message TVShow {
+    optional Artist artist = 1;
+    optional Series series = 2;
+    optional int32 seasonNumber = 3;
+    optional int32 episodeNumber = 4;
+    optional int32 episodeSortId = 5;
+    optional int32 videoQuality = 6;
+    optional string networkName = 7;
+}
+
+message Podcast {
+    optional Artist artist = 1;
+    optional Series series = 2;
+    optional string externalGuid = 3;
+}
+
+
+message MediaItem {
+    // common properties for all types
+    optional MediaType mediaType = 1;
+    optional string title = 2;
+    optional string sortTitle = 3;
+    optional int64 releaseDateTime = 4;
+    optional int64 creationDateTime = 5;
+    optional int64 modificationDateTime = 6;
+    optional int64 fileSize = 7;
+    optional int64 duration = 8;
+    optional int32 contentRating = 9;
+    optional bool explicitContent = 10;
+    optional string shortDescription = 11;
+    optional string longDescription = 12;
+    optional string copyright = 13;
+    optional int32 artworkId = 14;
+
+    // identifiers
+    repeated LibraryIdentifier libraryIdentifiers = 30;     // local, sync
+    optional int64 storeId = 31;                            // store id
+    optional int64 storefrontId = 32;
+    optional int64 accountId = 33;                          // purchase or match account id
+    optional int64 purchaseHistoryId = 34;                  // jalisco id
+    optional int32 purchaseHistoryToken = 35;               // jalisco tokem
+    optional string purchaseHistoryRedownloadParams = 36;   // jalisco redownload parameters
+    optional int64 sagaId = 37;                             // match account id
+    optional string sagaRedownloadParams = 38;              // match redownload parameters
+
+
+    // type-specific fields
+    optional Song song = 50;
+    optional Movie movie = 51;
+    optional TVShow tvShow = 52;
+    optional Podcast podcast = 53;
+}
+
+
+// Describes the criteria for a smart playlist
+message SmartPlaylistInfo {
+    optional bool dynamic = 1;
+    optional bool filtered = 2;
+    optional bool limited = 3;
+    optional int32 limitKind = 4;
+    optional uint32 evaluationOrder = 5;
+    optional uint32 limitOrder = 6;
+    optional uint32 limitValue = 7;
+    optional bool enabledItemsOnly = 8;
+    optional bool reverseLimitOrder = 9;
+    optional bytes smartCriteria = 10;
+}
+
+// playlist object
+message Playlist {
+    enum PlaylistType {
+        Normal = 1;
+        Smart = 2;
+        Genius = 3;
+        Folder = 4;
+    }
+
+    optional string name = 1;
+    optional int64 storeId = 2;
+    optional PlaylistType type = 3;
+    optional bool hidden = 4;
+    optional SmartPlaylistInfo smartPlaylistInfo = 5;
+
+    repeated Playlist childPlaylists = 10;
+
+    repeated MultiverseIdentifier items = 20;
+}
+

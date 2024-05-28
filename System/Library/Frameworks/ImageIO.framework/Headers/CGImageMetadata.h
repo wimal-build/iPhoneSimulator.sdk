@@ -8,6 +8,8 @@
 #include <ImageIO/ImageIOBase.h>
 #include <CoreFoundation/CoreFoundation.h>
 
+CF_IMPLICIT_BRIDGING_ENABLED
+
 /*!
  * @header CGImageMetadata.h
  * @abstract Implements access to image metadata
@@ -634,5 +636,7 @@ typedef enum CGImageMetadataErrors {
     kCGImageMetadataErrorConflictingArguments = 3,
     kCGImageMetadataErrorPrefixConflict = 4,
 } CGImageMetadataErrors;
+
+CF_IMPLICIT_BRIDGING_DISABLED
 
 #endif // CGIMAGEMETADATA_H_

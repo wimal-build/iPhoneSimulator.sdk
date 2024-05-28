@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
  
-	Copyright 2010-2013 Apple Inc. All rights reserved.
+	Copyright 2010-2014 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -61,8 +61,6 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 */
 - (id)initWithSession:(AVCaptureSession *)session;
 
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
-
 /*!
  @method layerWithSessionWithNoConnection:
  @abstract
@@ -77,7 +75,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @result
     A newly initialized AVCaptureVideoPreviewLayer instance.
 */
-+ (id)layerWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, NA);
++ (id)layerWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method initWithSessionWithNoConnection:
@@ -93,9 +91,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @result
     A newly initialized AVCaptureVideoPreviewLayer instance.
 */
-- (id)initWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, NA);
-
-#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+- (id)initWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @property session
@@ -106,8 +102,6 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     The session is retained by the preview layer.
 */
 @property (nonatomic, retain) AVCaptureSession *session;
-
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
 
 /*!
  method setSessionWithNoConnection:
@@ -121,9 +115,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @discussion
     The session is retained by the preview layer.
 */
-- (void)setSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, NA);
-
-#endif // (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+- (void)setSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @property connection

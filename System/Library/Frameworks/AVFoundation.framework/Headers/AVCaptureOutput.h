@@ -3,7 +3,7 @@
  	
  	Framework:  AVFoundation
  
-	Copyright 2010-2013 Apple Inc. All rights reserved.
+	Copyright 2010-2014 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -1302,6 +1302,21 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 @property(nonatomic, readonly, getter=isStillImageStabilizationActive) BOOL stillImageStabilizationActive NS_AVAILABLE_IOS(7_0);
 
 /*!
+ @property highResolutionStillImageOutputEnabled
+ @abstract
+    Indicates whether the receiver should emit still images at the highest resolution supported
+    by its source AVCaptureDevice's activeFormat.
+ 
+ @discussion
+    By default, AVCaptureStillImageOutput emits images with the same dimensions as its source AVCaptureDevice's
+    activeFormat.formatDescription.  However, if you set this property to YES, the receiver emits still images at its source
+    AVCaptureDevice's activeFormat.highResolutionStillImageDimensions.  Note that if you enable video stabilization
+    (see AVCaptureConnection's preferredVideoStabilizationMode) for any output, the high resolution still images 
+    emitted by AVCaptureStillImageOutput may be smaller by 10 or more percent.
+*/
+@property(nonatomic, getter=isHighResolutionStillImageOutputEnabled) BOOL highResolutionStillImageOutputEnabled NS_AVAILABLE_IOS(8_0);
+
+/*!
  @property capturingStillImage
  @abstract
     A boolean value that becomes true when a still image is being captured.
@@ -1334,6 +1349,14 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     <ImageIO/CGImageProperties.h> for a list of keys and value types.
 
     Clients should not assume that the completion handler will be called on a specific thread.
+ 
+    Calls to captureStillImageAsynchronouslyFromConnection:completionHandler: are not synchronized with AVCaptureDevice
+    manual control completion handlers. Setting a device manual control, waiting for its completion, then calling
+    captureStillImageAsynchronouslyFromConnection:completionHandler: DOES NOT ensure that the still image returned reflects
+    your manual control change. It may be from an earlier time. You can compare your manual control completion handler sync time
+    to the returned still image's presentation time. You can retrieve the sample buffer's pts using 
+    CMSampleBufferGetPresentationTimestamp(). If the still image has an earlier timestamp, your manual control command 
+    does not apply to it.
 */
 - (void)captureStillImageAsynchronouslyFromConnection:(AVCaptureConnection *)connection completionHandler:(void (^)(CMSampleBufferRef imageDataSampleBuffer, NSError *error))handler;
 
@@ -1352,6 +1375,155 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     The returned NSData is suitable for writing to disk.
 */
 + (NSData *)jpegStillImageNSDataRepresentation:(CMSampleBufferRef)jpegSampleBuffer;
+
+@end
+
+
+/*!
+ @class AVCaptureBracketedStillImageSettings
+ @abstract
+    AVCaptureBracketedStillImageSettings is an abstract base class that defines an interface for settings
+	pertaining to a bracketed capture.
+ 
+ @discussion
+    AVCaptureBracketedStillImageSettings may not be instantiated directly.
+*/
+NS_CLASS_AVAILABLE_IOS(8_0)
+@interface AVCaptureBracketedStillImageSettings : NSObject
+@end
+
+/*!
+ @class AVCaptureManualExposureBracketedStillImageSettings
+ @abstract
+    AVCaptureManualExposureBracketedStillImageSettings is a concrete subclass of AVCaptureBracketedStillImageSettings
+    to be used when bracketing exposure duration and ISO.
+ 
+ @discussion
+    An AVCaptureManualExposureBracketedStillImageSettings instance defines the exposure duration and ISO
+    settings that should be applied to one image in a bracket. An array of settings objects is passed to
+    -[AVCaptureStillImageOutput captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:].
+    Min and max duration and ISO values are queryable properties of the AVCaptureDevice supplying data to
+    an AVCaptureStillImageOutput instance. If you wish to leave exposureDuration unchanged for this bracketed
+    still image, you may pass the special value AVCaptureExposureDurationCurrent. To keep ISO unchanged, you may
+    pass AVCaptureISOCurrent (see AVCaptureDevice.h).
+*/
+NS_CLASS_AVAILABLE_IOS(8_0)
+@interface AVCaptureManualExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
+
++ (instancetype)manualExposureSettingsWithExposureDuration:(CMTime)duration ISO:(float)ISO;
+
+@property(readonly) CMTime exposureDuration;
+@property(readonly) float ISO;
+
+@end
+
+/*!
+ @class AVCaptureAutoExposureBracketedStillImageSettings
+ @abstract
+    AVCaptureAutoExposureBracketedStillImageSettings is a concrete subclass of AVCaptureBracketedStillImageSettings
+    to be used when bracketing exposure target bias.
+ 
+ @discussion
+    An AVCaptureAutoExposureBracketedStillImageSettings instance defines the exposure target bias
+    setting that should be applied to one image in a bracket. An array of settings objects is passed to
+    -[AVCaptureStillImageOutput captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:].
+    Min and max exposure target bias are queryable properties of the AVCaptureDevice supplying data to
+    an AVCaptureStillImageOutput instance. If you wish to leave exposureTargetBias unchanged for this bracketed
+    still image, you may pass the special value AVCaptureExposureTargetBiasCurrent (see AVCaptureDevice.h).
+*/
+NS_CLASS_AVAILABLE_IOS(8_0)
+@interface AVCaptureAutoExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
+
++ (instancetype)autoExposureSettingsWithExposureTargetBias:(float)exposureTargetBias;
+
+@property(readonly) float exposureTargetBias;
+
+@end
+
+/*!
+ @category AVCaptureStillImageOutput (BracketedCaptureMethods)
+ @abstract
+    A category of methods for bracketed still image capture.
+ 
+ @discussion
+    A "still image bracket" is a batch of images taken as quickly as possible in succession,
+    optionally with different settings from picture to picture.
+ 
+    In a bracketed capture, AVCaptureDevice flashMode property is ignored (flash is forced off), as is AVCaptureStillImageOutput's
+    automaticallyEnablesStillImageStabilizationWhenAvailable property (stabilization is forced off).
+*/
+@interface AVCaptureStillImageOutput ( BracketedCaptureMethods )
+
+/*!
+ @property maxBracketedCaptureStillImageCount
+ @abstract
+    Specifies the maximum number of still images that may be taken in a single bracket.
+
+ @discussion
+    AVCaptureStillImageOutput can only satisfy a limited number of image requests in a single bracket without exhausting system
+    resources. The maximum number of still images that may be taken in a single bracket depends on the size of the images being captured,
+    and consequently may vary with AVCaptureSession -sessionPreset and AVCaptureDevice -activeFormat.  Some formats do not support
+    bracketed capture and return a maxBracketedCaptureStillImageCount of 0.  This read-only property is key-value observable.
+	If you exceed -maxBracketedCaptureStillImageCount, then -captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:
+	fails and the completionHandler is called [settings count] times with a NULL sample buffer and AVErrorMaximumStillImageCaptureRequestsExceeded.
+*/
+@property(nonatomic, readonly) NSUInteger maxBracketedCaptureStillImageCount NS_AVAILABLE_IOS(8_0);
+
+/*!
+ @method prepareToCaptureStillImageBracketFromConnection:withSettingsArray:completionHandler:
+ @abstract
+    Allows the receiver to prepare resources in advance of capturing a still image bracket.
+ 
+ @param connection
+    The connection through which the still image bracket should be captured.
+ 
+ @param settings
+    An array of AVCaptureBracketedStillImageSettings objects. All must be of the same kind of AVCaptureBracketedStillImageSettings
+    subclass, or an NSInvalidArgumentException is thrown.
+ 
+ @param completionHandler
+    A user provided block that will be called asynchronously once resources have successfully been allocated
+    for the specified bracketed capture operation. If sufficient resources could not be allocated, the
+    "prepared" parameter contains NO, and "error" parameter contains a non-nil error value. If [settings count]
+    exceeds -maxBracketedCaptureStillImageCount, then AVErrorMaximumStillImageCaptureRequestsExceeded is returned.
+    You should not assume that the completion handler will be called on a specific thread.
+ 
+ @discussion
+    -maxBracketedCaptureStillImageCount tells you the maximum number of images that may be taken in a single
+    bracket given the current AVCaptureDevice/AVCaptureSession/AVCaptureStillImageOutput configuration. But before
+    taking a still image bracket, additional resources may need to be allocated. By calling
+    -prepareToCaptureStillImageBracketFromConnection:withSettingsArray:completionHandler: first, you are able to 
+    deterministically know when the receiver is ready to capture the bracket with the specified settings array.
+
+*/
+- (void)prepareToCaptureStillImageBracketFromConnection:(AVCaptureConnection *)connection withSettingsArray:(NSArray *)settings completionHandler:(void (^)(BOOL prepared, NSError *error))handler NS_AVAILABLE_IOS(8_0);
+
+/*!
+ @method captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:
+ @abstract
+    Captures a still image bracket.
+ 
+ @param connection
+    The connection through which the still image bracket should be captured.
+ 
+ @param settings
+    An array of AVCaptureBracketedStillImageSettings objects. All must be of the same kind of AVCaptureBracketedStillImageSettings
+    subclass, or an NSInvalidArgumentException is thrown.
+ 
+ @param completionHandler
+    A user provided block that will be called asynchronously as each still image in the bracket is captured.
+    If the capture request is successful, the "sampleBuffer" parameter contains a valid CMSampleBuffer, the
+    "stillImageSettings" parameter contains the settings object corresponding to this still image, and a nil
+    "error" parameter. If the bracketed capture fails, sample buffer is NULL and error is non-nil.
+    If [settings count] exceeds -maxBracketedCaptureStillImageCount, then AVErrorMaximumStillImageCaptureRequestsExceeded 
+    is returned. You should not assume that the completion handler will be called on a specific thread.
+ 
+ @discussion
+    If you have not called -prepareToCaptureStillImageBracketFromConnection:withSettingsArray:completionHandler: for this 
+    still image bracket request, the bracket may not be taken immediately, as the receiver may internally need to 
+    prepare resources.
+*/
+- (void)captureStillImageBracketAsynchronouslyFromConnection:(AVCaptureConnection *)connection withSettingsArray:(NSArray *)settings completionHandler:(void (^)(CMSampleBufferRef sampleBuffer, AVCaptureBracketedStillImageSettings *stillImageSettings, NSError *error))handler NS_AVAILABLE_IOS(8_0);
 
 @end
 

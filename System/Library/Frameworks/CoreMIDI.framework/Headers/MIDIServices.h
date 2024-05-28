@@ -816,7 +816,12 @@ extern const CFStringRef	kMIDIPropertyUserPatchNameFile			__OSX_AVAILABLE_BUT_DE
 		The MIDINameConfiguration property is implementated as a CFDictionary:
 
 		key "master" maps to a CFDataRef containing an AliasHandle referring to the device's
-		master name document.
+		master name document. This is deprecated as of Mac OS X 10.10.
+		
+		key "masterDocumentPath" maps to a CFStringRef containing the filesystem path to the device's
+		master name document. (This is new as of Mac OS X 10.10, but since the CoreMIDI
+		implementation does not parse this dictionary, the convention can be safely ported
+		to earlier versions of Mac OS X.)
 
 		key "banks" maps to a CFDictionaryRef.  This dictionary's keys are CFStringRef names of
 		patchBank elements in the master document, and its values are each a CFDictionaryRef:

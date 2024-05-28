@@ -10,7 +10,10 @@ attribute highp vec4 position;
 uniform highp mat4 projection;
 uniform highp mat4 modelview;
 
+varying highp float timelinePosition;
+
 void main()
 {
-    gl_Position = projection * modelview * position;
+    timelinePosition = position.x;
+    gl_Position = projection * (modelview * position);
 }

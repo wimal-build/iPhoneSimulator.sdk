@@ -36,6 +36,8 @@ extern "C" {
 
 #pragma pack(push, 4)
 
+CF_IMPLICIT_BRIDGING_ENABLED
+
 /*!
 	@typedef	CMTimeValue
 	@abstract	Numerator of rational CMTime.
@@ -69,7 +71,7 @@ typedef int64_t CMTimeEpoch;
 	@constant	kCMTimeFlags_Indefinite Set if the CMTime is indefinite/unknown. Example of usage: duration of a live broadcast.
 										 "Implied value" flag (other struct fields are ignored).
 */
-enum {
+typedef CF_OPTIONS( uint32_t, CMTimeFlags ) {
 	kCMTimeFlags_Valid = 1UL<<0,
 	kCMTimeFlags_HasBeenRounded = 1UL<<1,
 	kCMTimeFlags_PositiveInfinity = 1UL<<2,
@@ -77,7 +79,6 @@ enum {
 	kCMTimeFlags_Indefinite = 1UL<<4,
 	kCMTimeFlags_ImpliedValueFlagsMask = kCMTimeFlags_PositiveInfinity | kCMTimeFlags_NegativeInfinity | kCMTimeFlags_Indefinite
 };
-typedef uint32_t CMTimeFlags;
 
 /*!
 	@typedef	CMTime
@@ -260,7 +261,7 @@ Float64 CMTimeGetSeconds(
 	@constant	kCMTimeRoundingMethod_RoundTowardPositiveInfinity	Round towards +inf if fraction is != 0.
 	@constant	kCMTimeRoundingMethod_RoundTowardNegativeInfinity	Round towards -inf if fraction is != 0.
 */
-enum {
+typedef CF_ENUM( uint32_t, CMTimeRoundingMethod ) {
 	kCMTimeRoundingMethod_RoundHalfAwayFromZero = 1,
 	kCMTimeRoundingMethod_RoundTowardZero = 2,
 	kCMTimeRoundingMethod_RoundAwayFromZero = 3,
@@ -270,7 +271,6 @@ enum {
 	
 	kCMTimeRoundingMethod_Default = kCMTimeRoundingMethod_RoundHalfAwayFromZero
 };
-typedef uint32_t CMTimeRoundingMethod;
 
 /*!
 	@function	CMTimeConvertScale
@@ -616,6 +616,7 @@ void CMTimeShow(
 	CMTime time)					/*! @param time			CMTime to show. */
 							__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 
+CF_IMPLICIT_BRIDGING_DISABLED
 
 #pragma pack(pop)
 

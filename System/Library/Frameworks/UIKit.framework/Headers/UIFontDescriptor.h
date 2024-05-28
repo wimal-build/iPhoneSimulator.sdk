@@ -2,7 +2,7 @@
 //  UIFontDescriptor.h
 //  UIKit
 //
-//  Copyright (c) 2013 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -92,7 +92,7 @@ UIKIT_EXTERN NSString *const UIFontDescriptorMatrixAttribute NS_AVAILABLE_IOS(7_
 UIKIT_EXTERN NSString *const UIFontDescriptorCharacterSetAttribute NS_AVAILABLE_IOS(7_0); // An NSCharacterSet instance representing a set of Unicode characters covered by the font. (default: supplied by font)
 UIKIT_EXTERN NSString *const UIFontDescriptorCascadeListAttribute NS_AVAILABLE_IOS(7_0); // An NSArray instance. Each member of the array is a sub-descriptor. (default: the system default cascading list for user's locale)
 UIKIT_EXTERN NSString *const UIFontDescriptorTraitsAttribute NS_AVAILABLE_IOS(7_0); // An NSDictionary instance fully describing font traits. (default: supplied by font)
-UIKIT_EXTERN NSString *const UIFontDescriptorFixedAdvanceAttribute NS_AVAILABLE_IOS(7_0); // A float represented as an NSNumber. The value overrides glyph advancement specified by the font. (default: 0.0)
+UIKIT_EXTERN NSString *const UIFontDescriptorFixedAdvanceAttribute NS_AVAILABLE_IOS(7_0); // A float represented as an NSNumber. The value overrides glyph advancement specified by the font. (default: supplied by each glyph)
 UIKIT_EXTERN NSString *const UIFontDescriptorFeatureSettingsAttribute NS_AVAILABLE_IOS(7_0); // An array of dictionaries representing non-default font feature settings. Each dictionary contains UIFontFeatureTypeIdentifierKey and UIFontFeatureSelectorIdentifierKey.
 
 // An NSString containing the desired Text Style

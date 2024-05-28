@@ -343,6 +343,10 @@ typedef struct AudioFormatListItem AudioFormatListItem;
 					The channel coordinates are only significant if the channel label is kAudioChannelLabel_UseCoordinates.
 					The specifier is an array of two pointers to AudioChannelLayout structures. 
 					The value is a pointer to the UInt32 result.
+    @constant   kAudioFormatProperty_ChannelLayoutHash
+					Returns a UInt32 which represents the hash of the provided channel layout.
+					The specifier is a pointer to an AudioChannelLayout structure.
+					The value is a pointer to the UInt32 result.
     @constant   kAudioFormatProperty_TagsForNumberOfChannels
 					returns an array of AudioChannelLayoutTags for the number of channels specified.
 					The specifier is a UInt32 number of channels. 
@@ -410,6 +414,7 @@ enum
     kAudioFormatProperty_ChannelMap						= 'chmp',
 	kAudioFormatProperty_NumberOfChannelsForLayout		= 'nchm',
 	kAudioFormatProperty_AreChannelLayoutsEquivalent	= 'cheq',
+    kAudioFormatProperty_ChannelLayoutHash              = 'chha',
 	kAudioFormatProperty_ValidateChannelLayout			= 'vacl',
 	kAudioFormatProperty_ChannelLayoutForTag			= 'cmpl',
 	kAudioFormatProperty_TagForChannelLayout			= 'cmpt',
@@ -432,56 +437,9 @@ enum
 };
 
 #if TARGET_OS_IPHONE
-/*
-	@constant	kAudioFormatProperty_HardwareCodecCapabilities
-					Available with iPhone 3.0 or later
-					Use this property to determine whether a desired set of codecs can be
-					simultaneously instantiated.
-					
-					The specifier is an array of AudioClassDescription, describing a set of one or more
-					audio codecs. The property value is a UInt32 indicating how many of the requested
-					set of codecs, if the application were to begin using them in the specified order, could be 
-					used before a failure. If the return value is the same as the size of the array,
-					all of the requested codecs can be used.
-					
-					Here are some examples. Suppose an application wants to use a hardware AAC encoder
-					and a hardware AAC decoder (in that order of priority).
-					
-						AudioClassDescription requestedCodecs[2] = {
-							{ kAudioEncoderComponentType, kAudioFormatAAC, kAppleHardwareAudioCodecManufacturer },
-							{ kAudioDecoderComponentType, kAudioFormatAAC, kAppleHardwareAudioCodecManufacturer } };
-						
-						UInt32 successfulCodecs = 0, size = sizeof(successfulCodecs);
-						OSStatus result = AudioFormatGetProperty(kAudioFormatProperty_HardwareCodecCapabilities,
-											requestedCodecs, sizeof(requestedCodecs), &size, &successfulCodecs);
-						switch (successfulCodecs) {
-						case 0:
-							// there is no hardware encoder. status of any hardware AAC decoder is unknown;
-							// could ask again with only that class description.
-						case 1:
-							// can use hardware AAC encoder. while using it, no hardware AAC decoder available.
-						case 2:
-							// can use hardware AAC encoder and AAC decoder simultaneously
-						}
-					
-					Software-based codecs can always be instantiated.
-					
-					Hardware-based codecs may only be used via AudioQueue (and other higher-level APIs which
-					use AudioQueue). When describing the presence of a hardware codec, AudioFormat does
-					not take into consideration the current AudioSession's category, which may or may not permit
-					the use of hardware codecs. A set of hardware codecs is considered to be available based
-					only on whether the hardware supports that combination of codecs.
-
-					kAudioFormatProperty_Decoders and kAudioFormatProperty_Encoders may be used to determine
-					not only whether a given codec is present, but also whether it is hardware or
-					software-based. Note that some codecs may be available in both hardware and software forms.
-
-					See also the AudioCodecComponentType and AudioCodecComponentManufacturer constants above.
-
-*/
 enum {
 	kAudioFormatProperty_HardwareCodecCapabilities		= 'hwcc',
-};
+} __attribute__((deprecated));
 
 
 /*!
@@ -508,11 +466,7 @@ enum
 
 	@discussion		Audio codec component manufacturer codes. On iPhoneOS, a codec's
 					manufacturer can be used to distinguish between hardware and
-					software codecs. There are no restrictions on the usage
-					of software codecs. Hardware codecs may only be used via
-					AudioQueue.
-					
-					See also the discussion of kAudioFormatProperty_CodecAvailability.
+					software codecs.
 
 	@constant		kAppleSoftwareAudioCodecManufacturer
 					Apple software audio codecs.

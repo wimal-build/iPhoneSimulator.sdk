@@ -2,7 +2,7 @@
 //  MKCircleView.h
 //  MapKit
 //
-//  Copyright (c) 2010-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2010-2014, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,7 @@
 MK_CLASS_AVAILABLE(NA, 4_0)
 @interface MKCircleView : MKOverlayPathView
 
-- (id)initWithCircle:(MKCircle *)circle NS_DEPRECATED_IOS(4_0, 7_0);
+- (instancetype)initWithCircle:(MKCircle *)circle NS_DEPRECATED_IOS(4_0, 7_0);
 
 @property (nonatomic, readonly) MKCircle *circle NS_DEPRECATED_IOS(4_0, 7_0);
 

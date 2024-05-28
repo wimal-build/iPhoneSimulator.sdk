@@ -1,0 +1,9 @@
+BODY {
+	direction:rtl !important;
+}
+
+.BlueBubble1,
+.BlueBubble2,
+.BlueBubble3 {
+	text-align: right !important;
+}

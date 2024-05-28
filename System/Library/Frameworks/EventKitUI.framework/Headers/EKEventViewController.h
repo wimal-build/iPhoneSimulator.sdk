@@ -29,6 +29,7 @@ typedef enum {
 */
 @protocol EKEventViewDelegate;
 
+NS_EXTENSION_UNAVAILABLE_IOS("EventKitUI is not supported in extensions")
 EVENTKITUI_CLASS_AVAILABLE(4_0)
 @interface EKEventViewController : UIViewController
 

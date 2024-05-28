@@ -20,6 +20,8 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SSReadingList : NSObject
 */
 + (instancetype)defaultReadingList;
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /*!
     @method supportsURL:
     @abstract Determines if the provided URL can be added to Reading List.

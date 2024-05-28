@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Denna iPad kunde inte %#@download_n_items@. Om du fortsätter %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>many</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>one</key>
+			<string>hämta %d objekt i full upplösning</string>
+			<key>other</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>two</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>zero</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>many</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>one</key>
+			<string>kommer versionen av det här objektet i låg upplösning att tas bort</string>
+			<key>other</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>two</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>zero</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Denna iPhone kunde inte %#@download_n_items@. Om du fortsätter %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>many</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>one</key>
+			<string>hämta %d objekt i full upplösning</string>
+			<key>other</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>two</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>zero</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>many</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>one</key>
+			<string>kommer versionen av det här objektet i låg upplösning att tas bort</string>
+			<key>other</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>two</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>zero</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Denna iPod touch kunde inte %#@download_n_items@. Om du fortsätter %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>many</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>one</key>
+			<string>hämta %d objekt i full upplösning</string>
+			<key>other</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>two</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+			<key>zero</key>
+			<string>hämta %d bilder och videor i full upplösning</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>many</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>one</key>
+			<string>kommer versionen av det här objektet i låg upplösning att tas bort</string>
+			<key>other</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>two</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+			<key>zero</key>
+			<string>kommer versionerna av de här bilderna och videorna i låg upplösning att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@ i iCloud-bildbiblioteket.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa bilder kommer att vara kvar</string>
+			<key>many</key>
+			<string>Dessa bilder kommer att vara kvar</string>
+			<key>one</key>
+			<string>Den här bilden kommer att vara kvar</string>
+			<key>other</key>
+			<string>Dessa bilder kommer att vara kvar</string>
+			<key>two</key>
+			<string>Dessa bilder kommer att vara kvar</string>
+			<key>zero</key>
+			<string>Dessa bilder kommer att vara kvar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@ i iCloud-bildbiblioteket.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa bilder och videor kommer att vara kvar</string>
+			<key>many</key>
+			<string>Dessa bilder och videor kommer att vara kvar</string>
+			<key>one</key>
+			<string>Det här objektet kommer att vara kvar</string>
+			<key>other</key>
+			<string>Dessa bilder och videor kommer att vara kvar</string>
+			<key>two</key>
+			<string>Dessa bilder och videor kommer att vara kvar</string>
+			<key>zero</key>
+			<string>Dessa bilder och videor kommer att vara kvar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@ i iCloud-bildbiblioteket.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa videor kommer att vara kvar</string>
+			<key>many</key>
+			<string>Dessa videor kommer att vara kvar</string>
+			<key>one</key>
+			<string>Den här videon kommer att vara kvar</string>
+			<key>other</key>
+			<string>Dessa videor kommer att vara kvar</string>
+			<key>two</key>
+			<string>Dessa videor kommer att vara kvar</string>
+			<key>zero</key>
+			<string>Dessa videor kommer att vara kvar</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ från denna iPad</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d objekt kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ från denna iPhone. %#@they_will_remain_in@ iCloud-bildbiblioteket.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d objekt kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>many</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>one</key>
+			<string>Det här objektet kommer att vara kvar i</string>
+			<key>other</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>two</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>zero</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ från denna iPod touch. %#@they_will_remain_in@ iCloud-bildbiblioteket.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d objekt kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder och videor kommer att tas bort</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>many</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>one</key>
+			<string>Det här objektet kommer att vara kvar i</string>
+			<key>other</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>two</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>zero</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ från denna iPad</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>one</key>
+			<string>%d bild kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder kommer att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ från denna iPhone. %#@they_will_remain_in@ iCloud-bildbiblioteket.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>one</key>
+			<string>%d bild kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder kommer att tas bort</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>many</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>one</key>
+			<string>Den här bilden kommer att vara kvar i</string>
+			<key>other</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>two</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>zero</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ från denna iPod touch. %#@they_will_remain_in@ iCloud-bildbiblioteket.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>many</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>one</key>
+			<string>%d bild kommer att tas bort</string>
+			<key>other</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>two</key>
+			<string>%d bilder kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d bilder kommer att tas bort</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>many</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>one</key>
+			<string>Den här bilden kommer att vara kvar i</string>
+			<key>other</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>two</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+			<key>zero</key>
+			<string>Dessa bilder kommer att vara kvar i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ från denna iPad</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d video kommer att tas bort</string>
+			<key>other</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d videor kommer att tas bort</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ från denna iPhone. %#@they_will_remain_in@ iCloud-bildbiblioteket.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d video kommer att tas bort</string>
+			<key>other</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d videor kommer att tas bort</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>many</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>one</key>
+			<string>Den här videon kommer att vara kvar i</string>
+			<key>other</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>two</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>zero</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ från denna iPod touch. %#@they_will_remain_in@ iCloud-bildbiblioteket.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>many</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>one</key>
+			<string>%d video kommer att tas bort</string>
+			<key>other</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>two</key>
+			<string>%d videor kommer att tas bort</string>
+			<key>zero</key>
+			<string>%d videor kommer att tas bort</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>many</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>one</key>
+			<string>Den här videon kommer att vara kvar i</string>
+			<key>other</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>two</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+			<key>zero</key>
+			<string>Dessa videor kommer att vara kvar i</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+-- Migrates traces from v18 to v19
+
+BEGIN TRANSACTION;
+
+-- Add CLLocationMatchInfo to location table
+ALTER TABLE locations ADD COLUMN match_info_quality INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_info_latitude NUMERIC DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_info_longitude NUMERIC DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_info_course NUMERIC DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_info_form_of_way INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_info_road_class INTEGER DEFAULT 0;
+ALTER TABLE locations ADD COLUMN match_info_shifted INTEGER DEFAULT 0;
+
+COMMIT; 

@@ -3,7 +3,7 @@
  
 	Framework:  AVFoundation
  
-	Copyright 2012-2013 Apple Inc. All rights reserved.
+	Copyright 2012-2014 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -24,9 +24,10 @@
  
     The concrete AVMetadataFaceObject is used by AVCaptureMetadataOutput for face detection.
 */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(10_10, 6_0)
 @interface AVMetadataObject : NSObject
 {
+@private
 	AVMetadataObjectInternal *_objectInternal;
 }
 
@@ -86,7 +87,7 @@ NS_CLASS_AVAILABLE(NA, 6_0)
  @discussion
     AVMetadataFaceObject objects return this constant as their type.
 */
-AVF_EXPORT NSString *const AVMetadataObjectTypeFace;
+AVF_EXPORT NSString *const AVMetadataObjectTypeFace NS_AVAILABLE(10_10, 6_0);
 
 @class AVMetadataFaceObjectInternal;
 
@@ -101,9 +102,10 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeFace;
 
     On supported platforms, AVCaptureMetadataOutput outputs arrays of detected face objects.  See AVCaptureOutput.h.
 */
-NS_CLASS_AVAILABLE(NA, 6_0)
-@interface AVMetadataFaceObject : AVMetadataObject
+NS_CLASS_AVAILABLE(10_10, 6_0)
+@interface AVMetadataFaceObject : AVMetadataObject <NSCopying>
 {
+@private
 	AVMetadataFaceObjectInternal *_internal;
 }
 
@@ -244,6 +246,30 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeQRCode NS_AVAILABLE(NA, 7_0);
  */
 AVF_EXPORT NSString *const AVMetadataObjectTypeAztecCode NS_AVAILABLE(NA, 7_0);
 
+/*!
+ @constant AVMetadataObjectTypeInterleaved2of5Code
+ @abstract An identifier for an instance of AVMetadataMachineReadableCodeObject having a type AVMetadataObjectTypeInterleaved2of5Code.
+ @discussion
+	AVMetadataMachineReadableCodeObject objects generated from Interleaved 2 of 5 codes return this constant as their type.
+*/
+AVF_EXPORT NSString *const AVMetadataObjectTypeInterleaved2of5Code NS_AVAILABLE(NA, 8_0);
+
+/*!
+ @constant AVMetadataObjectTypeITF14Code
+ @abstract An identifier for an instance of AVMetadataMachineReadableCodeObject having a type AVMetadataObjectTypeITF14Code.
+ @discussion
+	AVMetadataMachineReadableCodeObject objects generated from ITF14 codes return this constant as their type.
+*/
+AVF_EXPORT NSString *const AVMetadataObjectTypeITF14Code NS_AVAILABLE(NA, 8_0);
+
+/*!
+ @constant AVMetadataObjectTypeDataMatrixCode
+ @abstract An identifier for an instance of AVMetadataMachineReadableCodeObject having a type AVMetadataObjectTypeDataMatrixCode.
+ @discussion
+	AVMetadataMachineReadableCodeObject objects generated from DataMatrix codes return this constant as their type.
+*/
+AVF_EXPORT NSString *const AVMetadataObjectTypeDataMatrixCode NS_AVAILABLE(NA, 8_0);
+
 @class AVMetadataMachineReadableCodeObjectInternal;
 
 /*!
@@ -261,6 +287,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeAztecCode NS_AVAILABLE(NA, 7_0);
 NS_CLASS_AVAILABLE(NA, 7_0)
 @interface AVMetadataMachineReadableCodeObject : AVMetadataObject
 {
+@private
 	AVMetadataMachineReadableCodeObjectInternal *_internal;
 }
 

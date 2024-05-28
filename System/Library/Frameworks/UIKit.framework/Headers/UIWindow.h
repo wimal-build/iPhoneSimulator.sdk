@@ -2,7 +2,7 @@
 //  UIWindow.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -68,6 +68,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIWindow : UIView {
         unsigned int legacyOrientationChecks:1;
         unsigned int windowResizedToFullScreen:1;
         unsigned int statusBarFollowsOrientation:1;
+        unsigned int secure:1;
+        unsigned int isMainSceneSized:1;
     } _windowFlags;
     
     id _windowController;

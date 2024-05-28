@@ -2,7 +2,7 @@
 //  NSParagraphStyle.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 // NSParagraphStyle and NSMutableParagraphStyle hold paragraph style information
 // 
@@ -17,7 +17,7 @@
 UIKIT_EXTERN NSString *const NSTabColumnTerminatorsAttributeName NS_AVAILABLE_IOS(7_0); /* An attribute for NSTextTab options.  The value is NSCharacterSet.  The character set is used to determine the tab column terminating character.  The tab and newline characters are implied even if not included in the character set. */
 
 NS_CLASS_AVAILABLE_IOS(7_0) @interface NSTextTab : NSObject <NSCopying, NSCoding>
-- (id)initWithTextAlignment:(NSTextAlignment)alignment location:(CGFloat)loc options:(NSDictionary *)options; /* Initializes a text tab with the text alignment, location, and options.  The text alignment is used to determine the position of text inside the tab column. */
+- (instancetype)initWithTextAlignment:(NSTextAlignment)alignment location:(CGFloat)loc options:(NSDictionary *)options; /* Initializes a text tab with the text alignment, location, and options.  The text alignment is used to determine the position of text inside the tab column. */
 
 + (NSCharacterSet *)columnTerminatorsForLocale:(NSLocale *)aLocale; // Returns the column terminators for locale. Passing nil returns an instance corresponding to the system locale. For matching user's formatting preferences, pass [NSLocale currentLocale]. Can be used as the value for NSTabColumnTerminatorsAttributeName to make a decimal tab stop */
 

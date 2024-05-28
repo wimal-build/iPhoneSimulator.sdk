@@ -8,11 +8,11 @@
  *	@copyright 2011 Apple, Inc. All rights reserved.
  */
 
-#import <CoreBluetooth/CBDefines.h>
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
 
-#import <Foundation/Foundation.h>
-
-
+#import <CoreBluetooth/CBAttribute.h>
 
 @class CBPeripheral, CBUUID;
 
@@ -24,7 +24,7 @@
  *
  */
 NS_CLASS_AVAILABLE(10_7, 5_0)
-CB_EXTERN_CLASS @interface CBService : NSObject
+CB_EXTERN_CLASS @interface CBService : CBAttribute
 
 /*!
  * @property peripheral
@@ -34,15 +34,6 @@ CB_EXTERN_CLASS @interface CBService : NSObject
  *
  */
 @property(weak, readonly, nonatomic) CBPeripheral *peripheral;
-
-/*!
- * @property UUID
- *
- * @discussion
- *      The Bluetooth UUID of the service.
- *
- */
-@property(readonly, nonatomic) CBUUID *UUID;
 
 /*!
  * @property isPrimary
@@ -100,6 +91,6 @@ CB_EXTERN_CLASS @interface CBMutableService : CBService
  *  @discussion			Returns a service, initialized with a service type and UUID.
  *
  */
-- (id)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary;
+- (instancetype)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary;
 
 @end

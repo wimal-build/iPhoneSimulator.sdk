@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("aeroflot.ru-confirmation-fr",function(e){return/Re\xe7u du billet \xe9lectronique/.test(e.subject)},function(e){if(/Re\xe7u du billet \xe9lectronique/.test(e.subject)){var r="fr_FR",t={};t.reservation="Num\xe9ro de r\xe9servation";var n=loadHelper("aeroflot.ru-confirmation-skeleton.js");return n(e,r,t)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/112/127/128","SGaa08ca1e")]);

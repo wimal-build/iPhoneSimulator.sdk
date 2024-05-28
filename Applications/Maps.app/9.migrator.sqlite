@@ -1,0 +1,7 @@
+-- Migrates traces from v9 to v10
+BEGIN TRANSACTION;
+
+-- Adding initial course
+ALTER TABLE info ADD COLUMN initial_course NUMERIC DEFAULT -1;
+
+COMMIT;

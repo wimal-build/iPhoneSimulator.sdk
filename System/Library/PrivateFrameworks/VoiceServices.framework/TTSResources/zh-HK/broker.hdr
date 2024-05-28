@@ -9,10 +9,10 @@ defaultvoice:Sin-Ji
     <language>Hong Kong Cantonese</language>
     <langcode>CAH</langcode>
     <langid>30</langid>
-    <langversion>5.2.3.13303</langversion>
+    <langversion>5.2.4.14071</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Sin-Ji</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13289</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -73,13 +73,23 @@ defaultvoice:Sin-Ji
       userdct/cah
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      sin-ji/userdct/cah
+      userdct/cah/sin-ji
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/cah
+    </RESOURCE>
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/cah
+    </RESOURCE>
     
     
     

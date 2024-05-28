@@ -16,7 +16,7 @@
  *  Discussion:
  *    Error returned as code to NSError from CoreLocation.
  */
-enum {
+typedef NS_ENUM(NSInteger, CLError) {
     kCLErrorLocationUnknown  = 0,         // location is currently unknown, but CL will keep trying
     kCLErrorDenied,                       // Access to location or ranging has been denied by the user
     kCLErrorNetwork,                      // general, network-related error
@@ -36,7 +36,6 @@ enum {
 	kCLErrorRangingUnavailable,           // Ranging cannot be performed
 	kCLErrorRangingFailure,               // General ranging failure
 };
-typedef NSInteger CLError;
 
 /*
  *  kCLErrorUserInfoAlternateRegionKey

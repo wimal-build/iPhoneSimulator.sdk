@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Fototeca em iCloud foi desactivada. Tem %#@have_n_days@ para se certificar de que dispõe de uma cópia completa dos vídeos e fotografias originais neste ou noutro dispositivo.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dias</string>
+			<key>many</key>
+			<string>%d dias</string>
+			<key>one</key>
+			<string>%d dia</string>
+			<key>other</key>
+			<string>%d dias</string>
+			<key>two</key>
+			<string>%d dias</string>
+			<key>zero</key>
+			<string>%d dias</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Fototeca em iCloud será eliminada %#@in_n_days@.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>daqui a %d dias</string>
+			<key>many</key>
+			<string>daqui a %d dias</string>
+			<key>one</key>
+			<string>daqui a %d dia</string>
+			<key>other</key>
+			<string>daqui a %d dias</string>
+			<key>two</key>
+			<string>daqui a %d dias</string>
+			<key>zero</key>
+			<string>daqui a %d dias</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Quando a Fototeca em iCloud se encontra activa, a sincronização de fotografias através do iTunes não é suportada.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotografias serão removidas</string>
+			<key>many</key>
+			<string>%d fotografias serão removidas</string>
+			<key>one</key>
+			<string>%d fotografia será removida</string>
+			<key>other</key>
+			<string>%d fotografias serão removidas</string>
+			<key>two</key>
+			<string>%d fotografias serão removidas</string>
+			<key>zero</key>
+			<string>%d fotografias serão removidas</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Quando a Fototeca em iCloud se encontra activa, a sincronização de fotografias através do iTunes não é suportada.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d vídeos e fotografias serão removidos</string>
+			<key>many</key>
+			<string>%d vídeos e fotografias serão removidos</string>
+			<key>one</key>
+			<string>%d vídeo será removido</string>
+			<key>other</key>
+			<string>%d vídeos e fotografias serão removidos</string>
+			<key>two</key>
+			<string>%d vídeos e fotografias serão removidos</string>
+			<key>zero</key>
+			<string>%d vídeos e fotografias serão removidos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Quando a Fototeca em iCloud se encontra activa, a sincronização de fotografias através do iTunes não é suportada.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d vídeos serão removidos</string>
+			<key>many</key>
+			<string>%d vídeos serão removidos</string>
+			<key>one</key>
+			<string>%d vídeo será removido</string>
+			<key>other</key>
+			<string>%d vídeos serão removidos</string>
+			<key>two</key>
+			<string>%d vídeos serão removidos</string>
+			<key>zero</key>
+			<string>%d vídeos serão removidos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Fototeca em iCloud será eliminada de iCloud %#@in_n_days@ e os vídeos e fotografias já não estão a ser enviados para iCloud. Pode cancelar este processo na gestão do armazenamento em iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>daqui a %d dias</string>
+			<key>many</key>
+			<string>daqui a %d dias</string>
+			<key>one</key>
+			<string>daqui a %d dia</string>
+			<key>other</key>
+			<string>daqui a %d dias</string>
+			<key>two</key>
+			<string>daqui a %d dias</string>
+			<key>zero</key>
+			<string>daqui a %d dias</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Fototeca em iCloud será eliminada de iCloud %#@in_n_days@. Escolha a opção Descarregar e manter originais para descarregar uma cópia completa dos seus vídeos e fotografias.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>daqui a %d dias</string>
+			<key>many</key>
+			<string>daqui a %d dias</string>
+			<key>one</key>
+			<string>daqui a %d dia</string>
+			<key>other</key>
+			<string>daqui a %d dias</string>
+			<key>two</key>
+			<string>daqui a %d dias</string>
+			<key>zero</key>
+			<string>daqui a %d dias</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@in_n_days@ que a Fototeca em iCloud não é actualizada</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Há %d dias</string>
+			<key>many</key>
+			<string>Há %d dias</string>
+			<key>one</key>
+			<string>Há %d dia</string>
+			<key>other</key>
+			<string>Há %d dias</string>
+			<key>two</key>
+			<string>Há %d dias</string>
+			<key>zero</key>
+			<string>Há %d dias</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Actualizado %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>há %d minutos</string>
+			<key>many</key>
+			<string>há %d minutos</string>
+			<key>one</key>
+			<string>há %d minuto</string>
+			<key>other</key>
+			<string>há %d minutos</string>
+			<key>two</key>
+			<string>há %d minutos</string>
+			<key>zero</key>
+			<string>há %d minutos</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

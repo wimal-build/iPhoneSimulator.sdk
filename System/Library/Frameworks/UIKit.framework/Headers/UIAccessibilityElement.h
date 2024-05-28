@@ -2,7 +2,7 @@
 //  UIAccessibilityElement.h
 //  UIAccessibility
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -20,7 +20,7 @@
 NS_CLASS_AVAILABLE_IOS(3_0) @interface UIAccessibilityElement : NSObject<UIAccessibilityIdentification>
 
 // initialize with the accessibility container that contains this element
-- (id)initWithAccessibilityContainer:(id)container;
+- (instancetype)initWithAccessibilityContainer:(id)container;
 
 @property (nonatomic, assign) id accessibilityContainer;
 @property (nonatomic, assign) BOOL isAccessibilityElement;

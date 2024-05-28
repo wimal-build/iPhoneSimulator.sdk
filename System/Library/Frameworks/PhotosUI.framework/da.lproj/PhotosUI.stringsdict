@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-fotobibliotek er slået fra. Du %#@have_n_days@ til at få overført en komplet kopi af alle dine originale fotos og videoer på denne eller en anden enhed.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>har %d dage</string>
+			<key>many</key>
+			<string>har %d dage</string>
+			<key>one</key>
+			<string>har %d dag</string>
+			<key>other</key>
+			<string>har %d dage</string>
+			<key>two</key>
+			<string>har %d dage</string>
+			<key>zero</key>
+			<string>har %d dage</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-fotobibliotek slettes %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>om %d dage</string>
+			<key>many</key>
+			<string>om %d dage</string>
+			<key>one</key>
+			<string>om %d dag</string>
+			<key>other</key>
+			<string>om %d dage</string>
+			<key>two</key>
+			<string>om %d dage</string>
+			<key>zero</key>
+			<string>om %d dage</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Synkronisering af fotos via iTunes understøttes ikke, når iCloud-fotobibliotek er slået til.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos fjernes</string>
+			<key>many</key>
+			<string>%d fotos fjernes</string>
+			<key>one</key>
+			<string>%d foto fjernes</string>
+			<key>other</key>
+			<string>%d fotos fjernes</string>
+			<key>two</key>
+			<string>%d fotos fjernes</string>
+			<key>zero</key>
+			<string>%d fotos fjernes</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Synkronisering af fotos via iTunes understøttes ikke, når iCloud-fotobibliotek er slået til.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>many</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>one</key>
+			<string>%d video fjernes</string>
+			<key>other</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>two</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>zero</key>
+			<string>%d fotos og videoer fjernes</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Synkronisering af fotos via iTunes understøttes ikke, når iCloud-fotobibliotek er slået til.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videoer fjernes</string>
+			<key>many</key>
+			<string>%d videoer fjernes</string>
+			<key>one</key>
+			<string>%d video fjernes</string>
+			<key>other</key>
+			<string>%d videoer fjernes</string>
+			<key>two</key>
+			<string>%d videoer fjernes</string>
+			<key>zero</key>
+			<string>%d videoer fjernes</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-fotobibliotek slettes fra iCloud %#@in_n_days@. Fotos og videoer overføres ikke længere. Du kan annullere denne sletning i administration af lagringsplads i iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>om %d dage</string>
+			<key>many</key>
+			<string>om %d dage</string>
+			<key>one</key>
+			<string>om %d dag</string>
+			<key>other</key>
+			<string>om %d dage</string>
+			<key>two</key>
+			<string>om %d dage</string>
+			<key>zero</key>
+			<string>om %d dage</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-fotobibliotek slettes fra iCloud %#@in_n_days@. Vælg Hent og behold originaler nedenfor for at hente en komplet kopi af dine fotos og videoer.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>om %d dage</string>
+			<key>many</key>
+			<string>om %d dage</string>
+			<key>one</key>
+			<string>om %d dag</string>
+			<key>other</key>
+			<string>om %d dage</string>
+			<key>two</key>
+			<string>om %d dage</string>
+			<key>zero</key>
+			<string>om %d dage</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-fotobibliotek er ikke opdateret %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>i %d dage</string>
+			<key>many</key>
+			<string>i %d dage</string>
+			<key>one</key>
+			<string>i %d dag</string>
+			<key>other</key>
+			<string>i %d dage</string>
+			<key>two</key>
+			<string>i %d dage</string>
+			<key>zero</key>
+			<string>i %d dage</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Sidst opdateret %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minutter siden</string>
+			<key>many</key>
+			<string>%d minutter siden</string>
+			<key>one</key>
+			<string>%d minut siden</string>
+			<key>other</key>
+			<string>%d minutter siden</string>
+			<key>two</key>
+			<string>%d minutter siden</string>
+			<key>zero</key>
+			<string>%d minutter siden</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

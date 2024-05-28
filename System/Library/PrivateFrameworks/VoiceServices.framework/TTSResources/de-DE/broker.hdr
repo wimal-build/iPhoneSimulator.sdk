@@ -9,10 +9,10 @@ defaultvoice:Anna
     <language>German</language>
     <langcode>GED</langcode>
     <langid>3</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.14051</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Anna</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13294</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,23 @@ defaultvoice:Anna
       userdct/ged
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      anna/userdct/ged
+      userdct/ged/anna
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/ged/cfg1
+    </RESOURCE> 
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/ged
+    </RESOURCE>
     
     
     

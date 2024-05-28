@@ -19,7 +19,7 @@
  *      Specifies a physical device orientation, equivalent to UIDeviceOrientation.
  *      
  */
-typedef enum {
+typedef NS_ENUM(int, CLDeviceOrientation) {
 	CLDeviceOrientationUnknown = 0,
 	CLDeviceOrientationPortrait,
 	CLDeviceOrientationPortraitUpsideDown,
@@ -27,7 +27,7 @@ typedef enum {
 	CLDeviceOrientationLandscapeRight,
 	CLDeviceOrientationFaceUp,
 	CLDeviceOrientationFaceDown
-} CLDeviceOrientation;
+};
 
 /*
  *  CLAuthorizationStatus
@@ -36,15 +36,32 @@ typedef enum {
  *      Represents the current authorization state of the application.
  *      
  */
-typedef enum {
-    kCLAuthorizationStatusNotDetermined = 0, // User has not yet made a choice with regards to this application
-    kCLAuthorizationStatusRestricted,        // This application is not authorized to use location services.  Due
-                                             // to active restrictions on location services, the user cannot change
-                                             // this status, and may not have personally denied authorization
-    kCLAuthorizationStatusDenied,            // User has explicitly denied authorization for this application, or
-                                             // location services are disabled in Settings
-    kCLAuthorizationStatusAuthorized         // User has authorized this application to use location services
-} CLAuthorizationStatus;
+typedef NS_ENUM(int, CLAuthorizationStatus) {
+	// User has not yet made a choice with regards to this application
+	kCLAuthorizationStatusNotDetermined = 0,
+
+	// This application is not authorized to use location services.  Due
+	// to active restrictions on location services, the user cannot change
+	// this status, and may not have personally denied authorization
+	kCLAuthorizationStatusRestricted,
+
+	// User has explicitly denied authorization for this application, or
+	// location services are disabled in Settings.
+	kCLAuthorizationStatusDenied,
+
+	// This value is deprecated, but was equivalent to the new -Always value.
+	kCLAuthorizationStatusAuthorized NS_ENUM_DEPRECATED(10_6, NA, 2_0, 8_0, "Use kCLAuthorizationStatusAuthorizedAlways"),
+
+	// User has granted authorization to use their location at any time,
+	// including monitoring for regions, visits, or significant location changes.
+	kCLAuthorizationStatusAuthorizedAlways NS_ENUM_AVAILABLE(NA, 8_0) = kCLAuthorizationStatusAuthorized,
+
+	// User has granted authorization to use their location only when your app
+	// is visible to them (it will be made visible to them if you continue to
+	// receive location updates while in the background).  Authorization to use
+	// launch APIs has not been granted.
+	kCLAuthorizationStatusAuthorizedWhenInUse NS_ENUM_AVAILABLE(NA, 8_0)
+};
 
 /*
  *	CLActivityType
@@ -54,13 +71,12 @@ typedef enum {
  *		affects behavior such as the determination of when location updates
  *		may be automatically paused.
  */
-enum {
+typedef NS_ENUM(NSInteger, CLActivityType) {
     CLActivityTypeOther = 1,
     CLActivityTypeAutomotiveNavigation,	// for automotive navigation
     CLActivityTypeFitness,				// includes any pedestrian activities
     CLActivityTypeOtherNavigation 		// for other navigation cases (excluding pedestrian navigation), e.g. navigation for boats, trains, or planes
 };
-typedef NSInteger CLActivityType;
 
 @class CLLocation;
 @class CLHeading;
@@ -218,7 +234,7 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *  Discussion:
  *      The last location received. Will be nil until a location has been received.
  */
-@property(readonly, nonatomic) CLLocation *location;
+@property(readonly, nonatomic, copy) CLLocation *location;
 
 /*
  *  headingAvailable
@@ -255,7 +271,7 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *  Discussion:
  *      Returns the latest heading update received, or nil if none is available.
  */
-@property(readonly, nonatomic) CLHeading *heading __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic, copy) CLHeading *heading __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
 /*
  *  maximumRegionMonitoringDistance
@@ -275,7 +291,7 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *       has been instructed to monitor a region, during this or previous launches of your application, it will
  *       be present in this set.
  */
-@property (readonly, nonatomic) NSSet *monitoredRegions __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+@property (readonly, nonatomic, copy) NSSet *monitoredRegions __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 
 /*
  *  rangedRegions
@@ -283,7 +299,72 @@ NS_CLASS_AVAILABLE(10_6, 2_0)
  *  Discussion:
  *       Retrieve a set of objects representing the regions for which this location manager is actively providing ranging.
  */
-@property (readonly, nonatomic) NSSet *rangedRegions __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+@property (readonly, nonatomic, copy) NSSet *rangedRegions __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+
+/*
+ *  requestWhenInUseAuthorization
+ *
+ *  Discussion:
+ *      When +authorizationStatus == kCLAuthorizationStatusNotDetermined,
+ *      calling this method will trigger a prompt to request "when-in-use"
+ *      authorization from the user.  If possible, perform this call in response
+ *      to direct user request for a location-based service so that the reason
+ *      for the prompt will be clear.  Any authorization change as a result of
+ *      the prompt will be reflected via the usual delegate callback:
+ *      -locationManager:didChangeAuthorizationStatus:.
+ *
+ *      If received, "when-in-use" authorization grants access to the user's
+ *      location via -startUpdatingLocation/-startRangingBeaconsInRegion while
+ *      in the foreground.  If updates have been started when going to the
+ *      background, then a status bar banner will be displayed to maintain
+ *      visibility to the user, and updates will continue until stopped
+ *      normally, or the app is killed by the user.
+ *
+ *      "When-in-use" authorization does NOT enable monitoring API on regions,
+ *      significant location changes, or visits, and -startUpdatingLocation will
+ *      not succeed if invoked from the background.
+ *
+ *      When +authorizationStatus != kCLAuthorizationStatusNotDetermined, (ie
+ *      generally after the first call) this method will do nothing.
+ *
+ *      If the NSLocationWhenInUseUsageDescription key is not specified in your
+ *      Info.plist, this method will do nothing, as your app will be assumed not
+ *      to support WhenInUse authorization.
+ */
+- (void)requestWhenInUseAuthorization __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
+
+/*
+ *  requestAlwaysAuthorization
+ *
+ *  Discussion:
+ *      When +authorizationStatus == kCLAuthorizationStatusNotDetermined,
+ *      calling this method will trigger a prompt to request "always"
+ *      authorization from the user.  If possible, perform this call in response
+ *      to direct user request for a location-based service so that the reason
+ *      for the prompt will be clear.  Any authorization change as a result of
+ *      the prompt will be reflected via the usual delegate callback:
+ *      -locationManager:didChangeAuthorizationStatus:.
+ *
+ *      If received, "always" authorization grants access to the user's
+ *      location via any CLLocationManager API, and grants access to
+ *      launch-capable monitoring API such as geofencing/region monitoring,
+ *      significante location visits, etc.  Even if killed by the user, launch
+ *      events triggered by monitored regions or visit patterns will cause a
+ *      relaunch.
+ *
+ *      "Always" authorization presents a significant risk to user privacy, and
+ *      as such requesting it is discouraged unless background launch behavior
+ *      is genuinely required.  Do not call +requestAlwaysAuthorization unless
+ *      you think users will thank you for doing so.
+ *
+ *      When +authorizationStatus != kCLAuthorizationStatusNotDetermined, (ie
+ *      generally after the first call) this method will do nothing.
+ *
+ *      If the NSLocationAlwaysUsageDescription key is not specified in your
+ *      Info.plist, this method will do nothing, as your app will be assumed not
+ *      to support Always authorization.
+ */
+- (void)requestAlwaysAuthorization __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
 
 /*
  *  startUpdatingLocation

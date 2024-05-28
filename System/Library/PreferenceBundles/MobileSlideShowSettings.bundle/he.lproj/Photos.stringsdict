@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ה-iPad לא הצליח %#@download_n_items@. אם תמשיך/י, ה%#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>להוריד שני תמונות וסרטים ברזולוציה מלאה</string>
+			<key>many</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+			<key>one</key>
+			<string>להוריד פריט אחד ברזולוציה מלאה</string>
+			<key>other</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+			<key>two</key>
+			<string>להוריד שני תמונות וסרטים ברזולוציה מלאה</string>
+			<key>zero</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>many</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>one</key>
+			<string>גירסה של פריט זה ברזולוציה נמוכה תוסר</string>
+			<key>other</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>two</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>zero</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ה-iPhone לא הצליח %#@download_n_items@. אם תמשיך/י, ה%#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>להוריד שני תמונות וסרטים ברזולוציה מלאה</string>
+			<key>many</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+			<key>one</key>
+			<string>להוריד פריט אחד ברזולוציה מלאה</string>
+			<key>other</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+			<key>two</key>
+			<string>להוריד שני תמונות וסרטים ברזולוציה מלאה</string>
+			<key>zero</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>many</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>one</key>
+			<string>גירסה של פריט זה ברזולוציה נמוכה תוסר</string>
+			<key>other</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>two</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>zero</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ה-iPod touch לא הצליח %#@download_n_items@. אם תמשיך/י, ה%#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>להוריד שני תמונות וסרטים ברזולוציה מלאה</string>
+			<key>many</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+			<key>one</key>
+			<string>להוריד פריט אחד ברזולוציה מלאה</string>
+			<key>other</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+			<key>two</key>
+			<string>להוריד שני תמונות וסרטים ברזולוציה מלאה</string>
+			<key>zero</key>
+			<string>להוריד %d תמונות וסרטים ברזולוציה מלאה</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>many</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>one</key>
+			<string>גירסה של פריט זה ברזולוציה נמוכה תוסר</string>
+			<key>other</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>two</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+			<key>zero</key>
+			<string>גירסאות של תמונות וסרטים אלו ברזולוציה נמוכה יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@ ב״ספריית התמונות ב-iCloud״.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>תמונות אלו יישארו</string>
+			<key>many</key>
+			<string>תמונות אלו יישארו</string>
+			<key>one</key>
+			<string>תמונה זו תישאר</string>
+			<key>other</key>
+			<string>תמונות אלו יישארו</string>
+			<key>two</key>
+			<string>תמונות אלו יישארו</string>
+			<key>zero</key>
+			<string>תמונות אלו יישארו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@ ב״ספריית התמונות ב-iCloud״.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>תמונות וסרטים אלו יישארו</string>
+			<key>many</key>
+			<string>תמונות וסרטים אלו יישארו</string>
+			<key>one</key>
+			<string>פריט זה יישאר</string>
+			<key>other</key>
+			<string>תמונות וסרטים אלו יישארו</string>
+			<key>two</key>
+			<string>תמונות וסרטים אלו יישארו</string>
+			<key>zero</key>
+			<string>תמונות וסרטים אלו יישארו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@ ב״ספריית התמונות ב-iCloud״.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>סרטים אלו יישארו</string>
+			<key>many</key>
+			<string>סרטים אלו יישארו</string>
+			<key>one</key>
+			<string>סרט זה יישאר</string>
+			<key>other</key>
+			<string>סרטים אלו יישארו</string>
+			<key>two</key>
+			<string>סרטים אלו יישארו</string>
+			<key>zero</key>
+			<string>סרטים אלו יישארו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ מ-iPad זה</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>one</key>
+			<string>פריט אחד יוסר</string>
+			<key>other</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>two</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ מ-iPhone זה. %#@they_will_remain_in@״ספריית התמונות ב-iCloud״.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>one</key>
+			<string>פריט אחד יוסר</string>
+			<key>other</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>two</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>many</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>one</key>
+			<string>פריט זה יישאר ב</string>
+			<key>other</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>two</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>zero</key>
+			<string>תמונות אלו יישארו ב</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ מ-iPod touch זה. %#@they_will_remain_in@״ספריית התמונות ב-iCloud״.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>one</key>
+			<string>פריט אחד יוסר</string>
+			<key>other</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+			<key>two</key>
+			<string>שני תמונות וסרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות וסרטים יוסרו</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>many</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>one</key>
+			<string>פריט זה יישאר ב</string>
+			<key>other</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>two</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>zero</key>
+			<string>תמונות אלו יישארו ב</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ מ-iPad זה</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות יוסרו</string>
+			<key>one</key>
+			<string>תמונה אחת תוסר</string>
+			<key>other</key>
+			<string>%d תמונות יוסרו</string>
+			<key>two</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ מ-iPhone זה. %#@they_will_remain_in@״ספריית התמונות ב-iCloud״.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות יוסרו</string>
+			<key>one</key>
+			<string>תמונה אחת תוסר</string>
+			<key>other</key>
+			<string>%d תמונות יוסרו</string>
+			<key>two</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות יוסרו</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>many</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>one</key>
+			<string>תמונה זו תישאר ב</string>
+			<key>other</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>two</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>zero</key>
+			<string>תמונות אלו יישארו ב</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ מ-iPod touch זה. %#@they_will_remain_in@״ספריית התמונות ב-iCloud״.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>many</key>
+			<string>%d תמונות יוסרו</string>
+			<key>one</key>
+			<string>תמונה אחת תוסר</string>
+			<key>other</key>
+			<string>%d תמונות יוסרו</string>
+			<key>two</key>
+			<string>שתי תמונות יוסרו</string>
+			<key>zero</key>
+			<string>%d תמונות יוסרו</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>many</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>one</key>
+			<string>תמונה זו תישאר ב</string>
+			<key>other</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>two</key>
+			<string>תמונות אלו יישארו ב</string>
+			<key>zero</key>
+			<string>תמונות אלו יישארו ב</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ מ-iPad זה</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני סרטים יוסרו</string>
+			<key>many</key>
+			<string>%d סרטים יוסרו</string>
+			<key>one</key>
+			<string>סרט אחד יוסר</string>
+			<key>other</key>
+			<string>%d סרטים יוסרו</string>
+			<key>two</key>
+			<string>שני סרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d סרטים יוסרו</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ מ-iPhone זה. %#@they_will_remain_in@״ספריית התמונות ב-iCloud״.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני סרטים יוסרו</string>
+			<key>many</key>
+			<string>%d סרטים יוסרו</string>
+			<key>one</key>
+			<string>סרט אחד יוסר</string>
+			<key>other</key>
+			<string>%d סרטים יוסרו</string>
+			<key>two</key>
+			<string>שני סרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d סרטים יוסרו</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>many</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>one</key>
+			<string>סרט זה יישאר ב</string>
+			<key>other</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>two</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>zero</key>
+			<string>סרטים אלו יישארו ב</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ מ-iPod touch זה. %#@they_will_remain_in@״ספריית התמונות ב-iCloud״.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>שני סרטים יוסרו</string>
+			<key>many</key>
+			<string>%d סרטים יוסרו</string>
+			<key>one</key>
+			<string>סרט אחד יוסר</string>
+			<key>other</key>
+			<string>%d סרטים יוסרו</string>
+			<key>two</key>
+			<string>שני סרטים יוסרו</string>
+			<key>zero</key>
+			<string>%d סרטים יוסרו</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>many</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>one</key>
+			<string>סרט זה יישאר ב</string>
+			<key>other</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>two</key>
+			<string>סרטים אלו יישארו ב</string>
+			<key>zero</key>
+			<string>סרטים אלו יישארו ב</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

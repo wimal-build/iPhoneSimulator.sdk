@@ -2,7 +2,7 @@
 //  UIPopoverController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
 
@@ -13,25 +13,17 @@
 #import <UIKit/UIViewController.h>
 #import <UIKit/UIAppearance.h>
 #import <UIKit/UIGeometry.h>
+#import <UIKit/UIPopoverSupport.h>
 
 @class UIBarButtonItem, UIView;
 @protocol UIPopoverControllerDelegate;
-
-typedef NS_OPTIONS(NSUInteger, UIPopoverArrowDirection) {
-    UIPopoverArrowDirectionUp = 1UL << 0,
-    UIPopoverArrowDirectionDown = 1UL << 1,
-    UIPopoverArrowDirectionLeft = 1UL << 2,
-    UIPopoverArrowDirectionRight = 1UL << 3,
-    UIPopoverArrowDirectionAny = UIPopoverArrowDirectionUp | UIPopoverArrowDirectionDown | UIPopoverArrowDirectionLeft | UIPopoverArrowDirectionRight,
-    UIPopoverArrowDirectionUnknown = NSUIntegerMax
-};
 
 NS_CLASS_AVAILABLE_IOS(3_2)
 @interface UIPopoverController : NSObject <UIAppearanceContainer> {}
 
 /* The view controller provided becomes the content view controller for the UIPopoverController. This is the designated initializer for UIPopoverController.
  */
-- (id)initWithContentViewController:(UIViewController *)viewController;
+- (instancetype)initWithContentViewController:(UIViewController *)viewController;
 
 @property (nonatomic, assign) id <UIPopoverControllerDelegate> delegate;
 
@@ -97,17 +89,5 @@ NS_CLASS_AVAILABLE_IOS(3_2)
 /* -popoverController:willRepositionPopoverToRect:inView: is called on your delegate when the popover may require a different view or rectangle
  */
 - (void)popoverController:(UIPopoverController *)popoverController willRepositionPopoverToRect:(inout CGRect *)rect inView:(inout UIView **)view NS_AVAILABLE_IOS(7_0);
-
-@end
-
-@interface UIViewController (UIPopoverController)
-
-/* modalInPopover is set on the view controller when you wish to force the popover hosting the view controller into modal behavior. When this is active, the popover will ignore events outside of its bounds until this is set to NO.
- */
-@property (nonatomic,readwrite,getter=isModalInPopover) BOOL modalInPopover NS_AVAILABLE_IOS(3_2);
-
-/* contentSizeForViewInPopover allows you to set the size of the content from within the view controller. This property is read/write, and you should generally not override it.
- */
-@property (nonatomic,readwrite) CGSize contentSizeForViewInPopover NS_DEPRECATED_IOS(3_2, 7_0, "Use UIViewController.preferredContentSize instead.");
 
 @end

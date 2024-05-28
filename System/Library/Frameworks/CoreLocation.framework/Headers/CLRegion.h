@@ -56,9 +56,9 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  *
  *    This method has been deprecated, please see CLCircularRegion.
  */
-- (id)initCircularRegionWithCenter:(CLLocationCoordinate2D)center
-                            radius:(CLLocationDistance)radius
-                        identifier:(NSString *)identifier __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7,__MAC_NA,__IPHONE_4_0,__IPHONE_7_0);
+- (instancetype)initCircularRegionWithCenter:(CLLocationCoordinate2D)center
+									  radius:(CLLocationDistance)radius
+								  identifier:(NSString *)identifier __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7,__MAC_NA,__IPHONE_4_0,__IPHONE_7_0);
 
 /*
  *  center
@@ -86,7 +86,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  *  Discussion:
  *    Returns the region's identifier.
  */
-@property (readonly, nonatomic) NSString *identifier __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+@property (readonly, nonatomic, copy) NSString *identifier __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 
 /*
  *  notifyOnEntry

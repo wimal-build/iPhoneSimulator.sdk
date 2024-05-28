@@ -1,0 +1,16 @@
+-- Migrates traces from v15 to v16
+
+BEGIN TRANSACTION;
+
+CREATE TABLE eta_traffic_updates
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+request_timestamp   NUMERIC NOT NULL,
+response_timestamp  NUMERIC,
+request_data        BLOB NOT NULL,  -- PB Serialized
+response_data       BLOB,           -- PB Serialized
+response_error_data BLOB,           -- PB Serialized NSError
+destination_name    TEXT
+);
+
+COMMIT;

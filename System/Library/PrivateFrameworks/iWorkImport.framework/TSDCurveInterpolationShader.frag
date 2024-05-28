@@ -1,14 +1,11 @@
 //
 //  TSDCurveInterpolationShader.frag
-//  TSDrawables
 //
-//  Created by Jennifer Chan
 //  Copyright (c) 2012-2013 Apple Inc. All rights reserved.
 //
+#version 100
 
-#ifdef GL_ES
 precision mediump float;
-#endif
 
 uniform sampler2D Texture;  // most blurred 
 uniform vec2 TextureSize;   // this is really 1/size

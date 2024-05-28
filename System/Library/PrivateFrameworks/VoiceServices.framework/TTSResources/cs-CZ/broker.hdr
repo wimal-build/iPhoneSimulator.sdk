@@ -9,10 +9,10 @@ defaultvoice:Zuzana
     <language>Czech</language>
     <langcode>CZC</langcode>
     <langid>25</langid>
-    <langversion>5.2.3.13322</langversion>
+    <langversion>5.2.4.14071</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Zuzana</voice>
-    <voiceversion>5.2.3.13338</voiceversion>
+    <voiceversion>5.2.4.13338</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,20 @@ defaultvoice:Zuzana
       userdct/czc
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      zuzana/userdct/czc
+      userdct/czc/zuzana
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/czc
+    </RESOURCE>
     
     
     

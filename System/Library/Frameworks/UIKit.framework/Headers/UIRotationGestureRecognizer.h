@@ -2,7 +2,7 @@
 //  UIRotationGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -21,7 +21,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIRotationGestureRecognizer : UIGestureRe
     NSTimeInterval    _lastTouchTime;
     CGFloat           _velocity;
     CGFloat           _previousVelocity;
-    CGPoint           _anchorPoint;
+    CGPoint           _anchorSceneReferencePoint;
     id                _transformAnalyzer;
     UITouch          *_touches[2];
 }

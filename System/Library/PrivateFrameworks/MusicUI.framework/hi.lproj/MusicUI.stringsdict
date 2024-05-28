@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ALBUMS_SONGS_COUNT_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@albums@, %#@songs@</string>
+		<key>albums</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# ऐल्बम</string>
+			<key>many</key>
+			<string>#%li# ऐल्बम</string>
+			<key>one</key>
+			<string>#1# ऐल्बम</string>
+			<key>other</key>
+			<string>#%li# ऐल्बम</string>
+			<key>two</key>
+			<string>#%li# ऐल्बम</string>
+			<key>zero</key>
+			<string>#%li# ऐल्बम</string>
+		</dict>
+		<key>songs</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# गीत</string>
+			<key>many</key>
+			<string>#%li# गीत</string>
+			<key>one</key>
+			<string>#1# गीत</string>
+			<key>other</key>
+			<string>#%li# गीत</string>
+			<key>two</key>
+			<string>#%li# गीत</string>
+			<key>zero</key>
+			<string>#%li# गीत</string>
+		</dict>
+	</dict>
+	<key>ALBUM_DETAIL_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@songs@%#@min@</string>
+		<key>min</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>, #%li# मिनट</string>
+			<key>many</key>
+			<string>, #%li# मिनट</string>
+			<key>one</key>
+			<string>, #%li# मिनट</string>
+			<key>other</key>
+			<string>, #%li# मिनट</string>
+			<key>two</key>
+			<string>, #%li# मिनट</string>
+			<key>zero</key>
+			<string></string>
+		</dict>
+		<key>songs</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# गीत</string>
+			<key>many</key>
+			<string>#%li# गीत</string>
+			<key>one</key>
+			<string>#1# गीत</string>
+			<key>other</key>
+			<string>#%li# गीत</string>
+			<key>two</key>
+			<string>#%li# गीत</string>
+			<key>zero</key>
+			<string>कोई गीत नहीं</string>
+		</dict>
+	</dict>
+	<key>AUDIOBOOKS_DETAIL_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@chapters@%#@min@</string>
+		<key>chapters</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>#%li# अध्याय</string>
+			<key>many</key>
+			<string>#%li# अध्याय</string>
+			<key>one</key>
+			<string>#1# अध्याय</string>
+			<key>other</key>
+			<string>#%li# अध्याय</string>
+			<key>two</key>
+			<string>#%li# अध्याय</string>
+			<key>zero</key>
+			<string>कोई अध्याय नहीं</string>
+		</dict>
+		<key>min</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>li</string>
+			<key>few</key>
+			<string>, #%li# मिनट</string>
+			<key>many</key>
+			<string>, #%li# मिनट</string>
+			<key>one</key>
+			<string>, #%li# मिनट</string>
+			<key>other</key>
+			<string>, #%li# मिनट</string>
+			<key>two</key>
+			<string>, #%li# मिनट</string>
+			<key>zero</key>
+			<string></string>
+		</dict>
+	</dict>
+</dict>
+</plist>

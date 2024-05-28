@@ -3,7 +3,7 @@
  
      Contains:   Master include for vecLib framework
  
-     Version:    vecLib-459.0
+     Version:    vecLib-510.0
  
      Copyright:  2000-2014 by Apple Computer, Inc., all rights reserved.
  
@@ -59,7 +59,11 @@
 
 #ifndef __CLAPACK_H
 #include <vecLib/clapack.h>
-#endif	
+#endif
+
+#ifndef __LINEAR_ALGEBRA_PUBLIC_HEADER__
+#include <vecLib/LinearAlgebra/LinearAlgebra.h>
+#endif
 
 #ifndef __VFORCE_H
 #include <vecLib/vForce.h>

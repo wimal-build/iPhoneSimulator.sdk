@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Цьому iPad не вдалося %#@download_n_items@. Якщо продовжити, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>many</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>one</key>
+			<string>завантажити %d повнорозмірний об’єкт</string>
+			<key>other</key>
+			<string>завантажити %d повнорозмірного фото і відео</string>
+			<key>two</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>zero</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>низькорозмірні копії цих фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>низькорозмірних копій цих фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>низькорозмірну копію цього елемента буде вилучено</string>
+			<key>other</key>
+			<string>низькорозмірної копії цих фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>низькорозмірні копії цих фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>низькорозмірних копій цих фото і відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Цьому iPhone не вдалося %#@download_n_items@. Якщо продовжити, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>many</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>one</key>
+			<string>завантажити %d повнорозмірний об’єкт</string>
+			<key>other</key>
+			<string>завантажити %d повнорозмірного фото і відео</string>
+			<key>two</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>zero</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>низькорозмірні копії цих фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>низькорозмірних копій цих фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>низькорозмірну копію цього елемента буде вилучено</string>
+			<key>other</key>
+			<string>низькорозмірної копії цих фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>низькорозмірні копії цих фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>низькорозмірних копій цих фото і відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Цьому iPod touch не вдалося %#@download_n_items@. Якщо продовжити, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>many</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>one</key>
+			<string>завантажити %d повнорозмірний об’єкт</string>
+			<key>other</key>
+			<string>завантажити %d повнорозмірного фото і відео</string>
+			<key>two</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+			<key>zero</key>
+			<string>завантажити %d повнорозмірних фото і відео</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>низькорозмірні копії цих фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>низькорозмірних копій цих фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>низькорозмірну копію цього елемента буде вилучено</string>
+			<key>other</key>
+			<string>низькорозмірної копії цих фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>низькорозмірні копії цих фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>низькорозмірних копій цих фото і відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@ у Фототеці iCloud.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці фото залишаться</string>
+			<key>many</key>
+			<string>Ці фото залишаться</string>
+			<key>one</key>
+			<string>Це фото залишиться</string>
+			<key>other</key>
+			<string>Ці фото залишаться</string>
+			<key>two</key>
+			<string>Ці фото залишаться</string>
+			<key>zero</key>
+			<string>Ці фото залишаться</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@ у Фототеці iCloud.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці фото і відео залишаться</string>
+			<key>many</key>
+			<string>Ці фото і відео залишаться</string>
+			<key>one</key>
+			<string>Цей об’єкт залишиться</string>
+			<key>other</key>
+			<string>Ці фото і відео залишаться</string>
+			<key>two</key>
+			<string>Ці фото і відео залишаться</string>
+			<key>zero</key>
+			<string>Ці фото і відео залишаться</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@ у Фототеці iCloud.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці відео залишаться</string>
+			<key>many</key>
+			<string>Ці відео залишаться</string>
+			<key>one</key>
+			<string>Це відео залишиться</string>
+			<key>other</key>
+			<string>Ці відео залишаться</string>
+			<key>two</key>
+			<string>Ці відео залишаться</string>
+			<key>zero</key>
+			<string>Ці відео залишаться</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ з цього iPad</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>%d елемент буде вилучено</string>
+			<key>other</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото і відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ з цього iPhone. %#@they_will_remain_in@ Фототеці iCloud.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>%d елемент буде вилучено</string>
+			<key>other</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото і відео буде вилучено</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці фото залишаться у</string>
+			<key>many</key>
+			<string>Ці фото залишаться у</string>
+			<key>one</key>
+			<string>Цей об’єкт залишиться у</string>
+			<key>other</key>
+			<string>Ці фото залишаться у</string>
+			<key>two</key>
+			<string>Ці фото залишаться у</string>
+			<key>zero</key>
+			<string>Ці фото залишаться у</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ з цього iPod touch. %#@they_will_remain_in@ Фототеці iCloud.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>many</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>one</key>
+			<string>%d елемент буде вилучено</string>
+			<key>other</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>two</key>
+			<string>%d фото і відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото і відео буде вилучено</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці фото залишаться у</string>
+			<key>many</key>
+			<string>Ці фото залишаться у</string>
+			<key>one</key>
+			<string>Цей об’єкт залишиться у</string>
+			<key>other</key>
+			<string>Ці фото залишаться у</string>
+			<key>two</key>
+			<string>Ці фото залишаться у</string>
+			<key>zero</key>
+			<string>Ці фото залишаться у</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ з цього iPad</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото буде вилучено</string>
+			<key>many</key>
+			<string>%d фото буде вилучено</string>
+			<key>one</key>
+			<string>%d фото буде вилучено</string>
+			<key>other</key>
+			<string>%d фото буде вилучено</string>
+			<key>two</key>
+			<string>%d фото буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ з цього iPhone. %#@they_will_remain_in@ Фототеці iCloud.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото буде вилучено</string>
+			<key>many</key>
+			<string>%d фото буде вилучено</string>
+			<key>one</key>
+			<string>%d фото буде вилучено</string>
+			<key>other</key>
+			<string>%d фото буде вилучено</string>
+			<key>two</key>
+			<string>%d фото буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото буде вилучено</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці фото залишаться у</string>
+			<key>many</key>
+			<string>Ці фото залишаться у</string>
+			<key>one</key>
+			<string>Це фото залишиться у</string>
+			<key>other</key>
+			<string>Ці фото залишаться у</string>
+			<key>two</key>
+			<string>Ці фото залишаться у</string>
+			<key>zero</key>
+			<string>Ці фото залишаться у</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ з цього iPod touch. %#@they_will_remain_in@ Фототеці iCloud.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d фото буде вилучено</string>
+			<key>many</key>
+			<string>%d фото буде вилучено</string>
+			<key>one</key>
+			<string>%d фото буде вилучено</string>
+			<key>other</key>
+			<string>%d фото буде вилучено</string>
+			<key>two</key>
+			<string>%d фото буде вилучено</string>
+			<key>zero</key>
+			<string>%d фото буде вилучено</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці фото залишаться у</string>
+			<key>many</key>
+			<string>Ці фото залишаться у</string>
+			<key>one</key>
+			<string>Це фото залишиться у</string>
+			<key>other</key>
+			<string>Ці фото залишаться у</string>
+			<key>two</key>
+			<string>Ці фото залишаться у</string>
+			<key>zero</key>
+			<string>Ці фото залишаться у</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ з цього iPad</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d відео буде вилучено</string>
+			<key>many</key>
+			<string>%d відео буде вилучено</string>
+			<key>one</key>
+			<string>%d відео буде вилучено</string>
+			<key>other</key>
+			<string>%d відео буде вилучено</string>
+			<key>two</key>
+			<string>%d відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d відео буде вилучено</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ з цього iPhone. %#@they_will_remain_in@ Фототеці iCloud.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d відео буде вилучено</string>
+			<key>many</key>
+			<string>%d відео буде вилучено</string>
+			<key>one</key>
+			<string>%d відео буде вилучено</string>
+			<key>other</key>
+			<string>%d відео буде вилучено</string>
+			<key>two</key>
+			<string>%d відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d відео буде вилучено</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці відео залишаться у</string>
+			<key>many</key>
+			<string>Ці відео залишаться у</string>
+			<key>one</key>
+			<string>Це відео залишиться у</string>
+			<key>other</key>
+			<string>Ці відео залишаться у</string>
+			<key>two</key>
+			<string>Ці відео залишаться у</string>
+			<key>zero</key>
+			<string>Ці відео залишаться у</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ з цього iPod touch. %#@they_will_remain_in@ Фототеці iCloud.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d відео буде вилучено</string>
+			<key>many</key>
+			<string>%d відео буде вилучено</string>
+			<key>one</key>
+			<string>%d відео буде вилучено</string>
+			<key>other</key>
+			<string>%d відео буде вилучено</string>
+			<key>two</key>
+			<string>%d відео буде вилучено</string>
+			<key>zero</key>
+			<string>%d відео буде вилучено</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Ці відео залишаться у</string>
+			<key>many</key>
+			<string>Ці відео залишаться у</string>
+			<key>one</key>
+			<string>Це відео залишиться у</string>
+			<key>other</key>
+			<string>Ці відео залишаться у</string>
+			<key>two</key>
+			<string>Ці відео залишаться у</string>
+			<key>zero</key>
+			<string>Ці відео залишаться у</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

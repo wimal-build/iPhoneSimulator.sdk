@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-kuvakirjasto on poistettu käytöstä. Sinulla %#@have_n_days@ aikaa varmistaa, että sinulla on täydellinen kopio kaikista alkuperäisistä kuvista ja videoista tällä tai muulla laitteella.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>on %d päivää</string>
+			<key>many</key>
+			<string>on %d päivää</string>
+			<key>one</key>
+			<string>on %d päivä</string>
+			<key>other</key>
+			<string>on %d päivää</string>
+			<key>two</key>
+			<string>on %d päivää</string>
+			<key>zero</key>
+			<string>on %d päivää</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-kuvakirjasto poistetaan %#@in_n_days@ päästä</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d päivän</string>
+			<key>many</key>
+			<string>%d päivän</string>
+			<key>one</key>
+			<string>%d päivän</string>
+			<key>other</key>
+			<string>%d päivän</string>
+			<key>two</key>
+			<string>%d päivän</string>
+			<key>zero</key>
+			<string>%d päivän</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Kuvien synkronointia iTunesin kautta ei tueta, kun iCloud-kuvakirjasto on laitettu päälle.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>one</key>
+			<string>%d kuva poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Kuvien synkronointia iTunesin kautta ei tueta, kun iCloud-kuvakirjasto on laitettu päälle.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>one</key>
+			<string>%d video poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Kuvien synkronointia iTunesin kautta ei tueta, kun iCloud-kuvakirjasto on laitettu päälle.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videota poistetaan</string>
+			<key>many</key>
+			<string>%d videota poistetaan</string>
+			<key>one</key>
+			<string>%d video poistetaan</string>
+			<key>other</key>
+			<string>%d videota poistetaan</string>
+			<key>two</key>
+			<string>%d videota poistetaan</string>
+			<key>zero</key>
+			<string>%d videota poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-kuvakirjasto poistetaan iCloudista %#@n_days@ päästä. Kuvia ja videoita ei enää siirretä palvelimelle. Voit kumota tämän poiston iCloudin tallennustilan hallinnassa.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d päivän</string>
+			<key>many</key>
+			<string>%d päivän</string>
+			<key>one</key>
+			<string>%d päivän</string>
+			<key>other</key>
+			<string>%d päivän</string>
+			<key>two</key>
+			<string>%d päivän</string>
+			<key>zero</key>
+			<string>%d päivän</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-kuvakirjasto poistetaan iCloudista %#@in_n_days@ päästä. Lataa täydellinen kopio kuvista ja videoista valitsemalla alta ”Lataa ja pidä alkuperäiset”.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d päivän</string>
+			<key>many</key>
+			<string>%d päivän</string>
+			<key>one</key>
+			<string>%d päivän</string>
+			<key>other</key>
+			<string>%d päivän</string>
+			<key>two</key>
+			<string>%d päivän</string>
+			<key>zero</key>
+			<string>%d päivän</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud-kuvakirjastoa ei ole päivitetty %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d päivään</string>
+			<key>many</key>
+			<string>%d päivään</string>
+			<key>one</key>
+			<string>%d päivään</string>
+			<key>other</key>
+			<string>%d päivään</string>
+			<key>two</key>
+			<string>%d päivään</string>
+			<key>zero</key>
+			<string>%d päivään</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Päivitetty viimeksi %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minuuttia sitten</string>
+			<key>many</key>
+			<string>%d minuuttia sitten</string>
+			<key>one</key>
+			<string>%d minuutti sitten</string>
+			<key>other</key>
+			<string>%d minuuttia sitten</string>
+			<key>two</key>
+			<string>%d minuuttia sitten</string>
+			<key>zero</key>
+			<string>%d minuuttia sitten</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -2,7 +2,7 @@
 //  UIAccessibility.h
 //  UIKit
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -12,6 +12,7 @@
 
 #import <UIKit/UIAccessibilityAdditions.h>
 #import <UIKit/UIAccessibilityConstants.h>
+#import <UIKit/UIAccessibilityCustomAction.h>
 #import <UIKit/UIAccessibilityElement.h>
 #import <UIKit/UIAccessibilityIdentification.h>
 #import <UIKit/UIAccessibilityZoom.h>
@@ -148,6 +149,15 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  */
 @property(nonatomic) BOOL shouldGroupAccessibilityChildren NS_AVAILABLE_IOS(6_0);
 
+/*
+ Some assistive technologies allow the user to select a parent view or container to navigate its elements.
+ This property allows an app to specify whether that behavior should apply to the receiver.
+ Currently, this property only affects Switch Control, not VoiceOver or other assistive technologies.
+ See UIAccessibilityConstants.h for the list of supported values.
+ default == UIAccessibilityNavigationStyleAutomatic
+ */
+@property(nonatomic) UIAccessibilityNavigationStyle accessibilityNavigationStyle NS_AVAILABLE_IOS(8_0);
+
 @end
 
 
@@ -185,6 +195,11 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  default == NSNotFound 
  */
 - (NSInteger)indexOfAccessibilityElement:(id)element;
+
+// A list of container elements managed by the receiver.
+// This can be used as an alternative to implementing the dynamic methods.
+// default == nil
+@property (nonatomic, strong) NSArray *accessibilityElements NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -268,6 +283,14 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
  */
 - (BOOL)accessibilityPerformMagicTap NS_AVAILABLE_IOS(6_0);
 
+/*
+ Return an array of UIAccessibilityCustomAction objects to make custom actions for an element accessible to an assistive technology.
+ For example, a photo app might have a view that deletes its corresponding photo in response to a flick gesture.
+ If the view returns a delete action from this property, VoiceOver and Switch Control users will be able to delete photos without performing the flick gesture.
+ default == nil
+ */
+@property (nonatomic, retain) NSArray *accessibilityCustomActions NS_AVAILABLE_IOS(8_0);
+
 @end
 
 /* 
@@ -328,6 +351,41 @@ UIKIT_EXTERN NSString *const UIAccessibilityInvertColorsStatusDidChangeNotificat
 // Returns whether the app is running under Guided Access mode.
 UIKIT_EXTERN BOOL UIAccessibilityIsGuidedAccessEnabled() NS_AVAILABLE_IOS(6_0);
 UIKIT_EXTERN NSString *const UIAccessibilityGuidedAccessStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
+
+// Returns whether the system preference for bold text is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsBoldTextEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilityBoldTextStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+// Returns whether the system preference for grayscale is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsGrayscaleEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilityGrayscaleStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+// Returns whether the system preference for reduce transparency is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsReduceTransparencyEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilityReduceTransparencyStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+// Returns whether the system preference for reduce motion is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsReduceMotionEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilityReduceMotionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+// Returns whether the system preference for darker colors is enabled
+UIKIT_EXTERN BOOL UIAccessibilityDarkerSystemColorsEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+/*
+ Use UIAccessibilityIsSwitchControlRunning() to determine if Switch Control is running.
+ Listen for UIAccessibilitySwitchControlStatusDidChangeNotification to know when Switch Control starts or stops.
+*/
+UIKIT_EXTERN BOOL UIAccessibilityIsSwitchControlRunning() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilitySwitchControlStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+// Returns whether the system preference for Speak Selection is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsSpeakSelectionEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilitySpeakSelectionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+
+// Returns whether the system preference for Speak Screen is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsSpeakScreenEnabled() NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UIAccessibilitySpeakScreenStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 /*
  Use UIAccessibilityRequestGuidedAccessSession() to request this app be locked into or released

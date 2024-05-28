@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>De iCloud-fotobibliotheek is uitgeschakeld. U %#@n_days@ om te zorgen dat u een volledige kopie hebt van al uw oorspronkelijke foto's en video's op dit apparaat of andere apparaten.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hebt %d dagen</string>
+			<key>many</key>
+			<string>hebt %d dagen</string>
+			<key>one</key>
+			<string>hebt %d dag</string>
+			<key>other</key>
+			<string>hebt %d dagen</string>
+			<key>two</key>
+			<string>hebt %d dagen</string>
+			<key>zero</key>
+			<string>hebt %d dagen</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>De iCloud-fotobibliotheek wordt %#@in_n_days@ verwijderd</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>over %d dagen</string>
+			<key>many</key>
+			<string>over %d dagen</string>
+			<key>one</key>
+			<string>over %d dag</string>
+			<key>other</key>
+			<string>over %d dagen</string>
+			<key>two</key>
+			<string>over %d dagen</string>
+			<key>zero</key>
+			<string>over %d dagen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Foto's synchroniseren via iTunes wordt niet ondersteund als de iCloud-fotobibliotheek is ingeschakeld.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto's worden verwijderd</string>
+			<key>many</key>
+			<string>%d foto's worden verwijderd</string>
+			<key>one</key>
+			<string>%d foto wordt verwijderd</string>
+			<key>other</key>
+			<string>%d foto's worden verwijderd</string>
+			<key>two</key>
+			<string>%d foto's worden verwijderd</string>
+			<key>zero</key>
+			<string>%d foto's worden verwijderd</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Foto's synchroniseren via iTunes wordt niet ondersteund als de iCloud-fotobibliotheek is ingeschakeld.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto's en video's worden verwijderd</string>
+			<key>many</key>
+			<string>%d foto's en video's worden verwijderd</string>
+			<key>one</key>
+			<string>%d video wordt verwijderd</string>
+			<key>other</key>
+			<string>%d foto's en video's worden verwijderd</string>
+			<key>two</key>
+			<string>%d foto's en video's worden verwijderd</string>
+			<key>zero</key>
+			<string>%d foto's en video's worden verwijderd</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Foto's synchroniseren via iTunes wordt niet ondersteund als de iCloud-fotobibliotheek is ingeschakeld.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d video's worden verwijderd</string>
+			<key>many</key>
+			<string>%d video's worden verwijderd</string>
+			<key>one</key>
+			<string>%d video wordt verwijderd</string>
+			<key>other</key>
+			<string>%d video's worden verwijderd</string>
+			<key>two</key>
+			<string>%d video's worden verwijderd</string>
+			<key>zero</key>
+			<string>%d video's worden verwijderd</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>De iCloud-fotobibliotheek wordt %#@in_n_days@ verwijderd uit iCloud. Foto's en video's worden niet langer geüpload. U kunt het verwijderen annuleren in de instellingen om iCloud-opslag te beheren.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>over %d dagen</string>
+			<key>many</key>
+			<string>over %d dagen</string>
+			<key>one</key>
+			<string>over %d dag</string>
+			<key>other</key>
+			<string>over %d dagen</string>
+			<key>two</key>
+			<string>over %d dagen</string>
+			<key>zero</key>
+			<string>over %d dagen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>De iCloud-fotobibliotheek wordt %#@in_n_days@ verwijderd uit iCloud. Kies 'Download en bewaar originelen' om volledige kopieën van uw foto's en video's te downloaden.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>over %d dagen</string>
+			<key>many</key>
+			<string>over %d dagen</string>
+			<key>one</key>
+			<string>over %d dag</string>
+			<key>other</key>
+			<string>over %d dagen</string>
+			<key>two</key>
+			<string>over %d dagen</string>
+			<key>zero</key>
+			<string>over %d dagen</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>De iCloud-fotobibliotheek is %#@in_n_days@ niet bijgewerkt</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dagen lang</string>
+			<key>many</key>
+			<string>%d dagen lang</string>
+			<key>one</key>
+			<string>%d dag lang</string>
+			<key>other</key>
+			<string>%d dagen lang</string>
+			<key>two</key>
+			<string>%d dagen lang</string>
+			<key>zero</key>
+			<string>%d dagen lang</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Laatste synchr.: %#@n_minutes@ geleden</string>
+		<key>n_minutes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minuten geleden</string>
+			<key>many</key>
+			<string>%d minuten geleden</string>
+			<key>one</key>
+			<string>%d minuut geleden</string>
+			<key>other</key>
+			<string>%d minuten geleden</string>
+			<key>two</key>
+			<string>%d minuten geleden</string>
+			<key>zero</key>
+			<string>%d minuten geleden</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+-- Migrates traces from v11 to v12
+BEGIN TRANSACTION;
+
+-- Adding motion info
+ALTER TABLE locations ADD COLUMN active_transport_type INTEGER DEFAULT 4; -- default is the unknown transport type
+
+COMMIT;

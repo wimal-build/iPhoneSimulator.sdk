@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Az iCloud-fotókönyvtár le van tiltva. %#@have_n_days@ van, hogy meggyőződjön arról, az összes eredeti fotó és videó megtalálható ezen vagy egy másik eszközön.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d napja van</string>
+			<key>many</key>
+			<string>%d napja van</string>
+			<key>one</key>
+			<string>%d napja van</string>
+			<key>other</key>
+			<string>%d napja van</string>
+			<key>two</key>
+			<string>%d napja van</string>
+			<key>zero</key>
+			<string>%d napja van</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Az iCloud-fotókönyvtár %#@in_n_days@ törölve lesz.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d napon belül</string>
+			<key>many</key>
+			<string>%d napon belül</string>
+			<key>one</key>
+			<string>%d napon belül</string>
+			<key>other</key>
+			<string>%d napon belül</string>
+			<key>two</key>
+			<string>%d napon belül</string>
+			<key>zero</key>
+			<string>%d napon belül</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A fotók iTunesszal való szinkronizálása nem támogatott, ha az iCloud-fotókönyvtár be van kapcsolva.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotó el lesz távolítva</string>
+			<key>many</key>
+			<string>%d fotó el lesz távolítva</string>
+			<key>one</key>
+			<string>%d fotó el lesz távolítva</string>
+			<key>other</key>
+			<string>%d fotó el lesz távolítva</string>
+			<key>two</key>
+			<string>%d fotó el lesz távolítva</string>
+			<key>zero</key>
+			<string>%d fotó el lesz távolítva</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A fotók iTunesszal való szinkronizálása nem támogatott, ha az iCloud-fotókönyvtár be van kapcsolva.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotó és videó el lesz távolítva</string>
+			<key>many</key>
+			<string>%d fotó és videó el lesz távolítva</string>
+			<key>one</key>
+			<string>%d videó el lesz távolítva</string>
+			<key>other</key>
+			<string>%d fotó és videó el lesz távolítva</string>
+			<key>two</key>
+			<string>%d fotó és videó el lesz távolítva</string>
+			<key>zero</key>
+			<string>%d fotó és videó el lesz távolítva</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A fotók iTunesszal való szinkronizálása nem támogatott, ha az iCloud-fotókönyvtár be van kapcsolva.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videó el lesz távolítva</string>
+			<key>many</key>
+			<string>%d videó el lesz távolítva</string>
+			<key>one</key>
+			<string>%d videó el lesz távolítva</string>
+			<key>other</key>
+			<string>%d videó el lesz távolítva</string>
+			<key>two</key>
+			<string>%d videó el lesz távolítva</string>
+			<key>zero</key>
+			<string>%d videó el lesz távolítva</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Az iCloud-fotókönyvtár %#@in_n_days@ törölve lesz az iCloudból. A fotók és videók többé nem lesznek frissítve. Ezt a törlést az iCloud-tárhely kezelésében tudja megszakítani.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d napon belül</string>
+			<key>many</key>
+			<string>%d napon belül</string>
+			<key>one</key>
+			<string>%d napon belül</string>
+			<key>other</key>
+			<string>%d napon belül</string>
+			<key>two</key>
+			<string>%d napon belül</string>
+			<key>zero</key>
+			<string>%d napon belül</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Az iCloud-fotókönyvtár %#@in_n_days@ törölve lesz az iCloudból. Válassza az alábbi Letöltés és eredetik megtartása lehetőséget az összes fotó és videó letöltéséhez.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d napon belül</string>
+			<key>many</key>
+			<string>%d napon belül</string>
+			<key>one</key>
+			<string>%d napon belül</string>
+			<key>other</key>
+			<string>%d napon belül</string>
+			<key>two</key>
+			<string>%d napon belül</string>
+			<key>zero</key>
+			<string>%d napon belül</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Az iCloud-fotókönyvtár nem volt frissítve %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d napja</string>
+			<key>many</key>
+			<string>%d napja</string>
+			<key>one</key>
+			<string>%d napja</string>
+			<key>other</key>
+			<string>%d napja</string>
+			<key>two</key>
+			<string>%d napja</string>
+			<key>zero</key>
+			<string>%d napja</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Utolsó frissítés: %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d perccel ezelőtt</string>
+			<key>many</key>
+			<string>%d perccel ezelőtt</string>
+			<key>one</key>
+			<string>%d perccel ezelőtt</string>
+			<key>other</key>
+			<string>%d perccel ezelőtt</string>
+			<key>two</key>
+			<string>%d perccel ezelőtt</string>
+			<key>zero</key>
+			<string>%d perccel ezelőtt</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

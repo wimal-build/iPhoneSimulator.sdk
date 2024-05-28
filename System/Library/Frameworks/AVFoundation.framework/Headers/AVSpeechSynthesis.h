@@ -62,9 +62,9 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 NS_CLASS_AVAILABLE_IOS(7_0)
 @interface AVSpeechUtterance : NSObject<NSCopying, NSSecureCoding>
 
-+ (AVSpeechUtterance *)speechUtteranceWithString:(NSString *)string;
++ (instancetype)speechUtteranceWithString:(NSString *)string;
 
-- (AVSpeechUtterance *)initWithString:(NSString *)string;
+- (instancetype)initWithString:(NSString *)string;
 
 /* If no voice is specified, the system's default will be used. */
 @property(nonatomic, retain) AVSpeechSynthesisVoice *voice;

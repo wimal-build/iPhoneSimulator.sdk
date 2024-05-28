@@ -216,14 +216,12 @@ NS_CLASS_AVAILABLE(NA,3_0)
 
 @protocol NSFetchedResultsControllerDelegate
 
-enum {
+typedef NS_ENUM(NSUInteger, NSFetchedResultsChangeType) {
 	NSFetchedResultsChangeInsert = 1,
 	NSFetchedResultsChangeDelete = 2,
 	NSFetchedResultsChangeMove = 3,
 	NSFetchedResultsChangeUpdate = 4
-	
-};
-typedef NSUInteger NSFetchedResultsChangeType;
+} NS_ENUM_AVAILABLE(NA,  3_0);
 
 /* Notifies the delegate that a fetched object has been changed due to an add, remove, move, or update. Enables NSFetchedResultsController change tracking.
 	controller - controller instance that noticed the change on its fetched objects

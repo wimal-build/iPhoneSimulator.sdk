@@ -26,4 +26,9 @@ typedef enum ACErrorCode {
     ACErrorRemoveCredentialFailed,          // Unable to remove credential
     ACErrorUpdatingNonexistentAccount,      // Account save failed because the account being updated has been removed.
     ACErrorInvalidClientBundleID,           // The client making the request does not have a valid bundle ID.
+    ACErrorDeniedByPlugin,                  // A plugin prevented the expected action to occur.
+    ACErrorCoreDataSaveFailed,              // Something broke below us when we tried to the CoreData store.
+    ACErrorFailedSerializingAccountInfo,
+    ACErrorInvalidCommand,
+    ACErrorMissingMessageID,
 } ACErrorCode;

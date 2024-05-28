@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Tämä iPad ei voinut %#@download_n_items@. Jos jatkat, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>many</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>one</key>
+			<string>ladata %d suuritarkkuuksista kohdetta</string>
+			<key>other</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>two</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>zero</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>many</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>one</key>
+			<string>tämän kohteen pienitarkkuuksinen versio poistetaan</string>
+			<key>other</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>two</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>zero</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Tämä iPhone ei voinut %#@download_n_items@. Jos jatkat, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>many</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>one</key>
+			<string>ladata %d suuritarkkuuksista kohdetta</string>
+			<key>other</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>two</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>zero</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>many</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>one</key>
+			<string>tämän kohteen pienitarkkuuksinen versio poistetaan</string>
+			<key>other</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>two</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>zero</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Tämä iPod touch ei voinut %#@download_n_items@. Jos jatkat, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>many</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>one</key>
+			<string>ladata %d suuritarkkuuksista kohdetta</string>
+			<key>other</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>two</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+			<key>zero</key>
+			<string>ladata %d suuritarkkuuksista kuvaa ja videota</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>many</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>one</key>
+			<string>tämän kohteen pienitarkkuuksinen versio poistetaan</string>
+			<key>other</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>two</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+			<key>zero</key>
+			<string>näiden kuvien ja videoiden pienitarkkuuksiset versiot poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@ iCloud-kuvakirjastossa.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>many</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>one</key>
+			<string>Tämä kuva säilyy</string>
+			<key>other</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>two</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>zero</key>
+			<string>Nämä kuvat säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@ iCloud-kuvakirjastossa.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä kuvat ja videot säilyvät</string>
+			<key>many</key>
+			<string>Nämä kuvat ja videot säilyvät</string>
+			<key>one</key>
+			<string>Tämä kohde säilyy</string>
+			<key>other</key>
+			<string>Nämä kuvat ja videot säilyvät</string>
+			<key>two</key>
+			<string>Nämä kuvat ja videot säilyvät</string>
+			<key>zero</key>
+			<string>Nämä kuvat ja videot säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@ iCloud-kuvakirjastossa.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä videot säilyvät</string>
+			<key>many</key>
+			<string>Nämä videot säilyvät</string>
+			<key>one</key>
+			<string>Tämä video säilyy</string>
+			<key>other</key>
+			<string>Nämä videot säilyvät</string>
+			<key>two</key>
+			<string>Nämä videot säilyvät</string>
+			<key>zero</key>
+			<string>Nämä videot säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ tästä iPadista</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>one</key>
+			<string>%d kohde poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ tästä iPhonesta. %#@they_will_remain_in@ iCloud-kuvakirjastossa.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>one</key>
+			<string>%d kohde poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>many</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>one</key>
+			<string>Tämä kohde säilyy</string>
+			<key>other</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>two</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>zero</key>
+			<string>Nämä kuvat säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ tästä iPod touchista. %#@they_will_remain_in@ iCloud-kuvakirjastossa.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>one</key>
+			<string>%d kohde poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa ja videota poistetaan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>many</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>one</key>
+			<string>Tämä kohde säilyy</string>
+			<key>other</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>two</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>zero</key>
+			<string>Nämä kuvat säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ tästä iPadista</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>one</key>
+			<string>%d kuva poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ tästä iPhonesta. %#@they_will_remain_in@ iCloud-kuvakirjastossa.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>one</key>
+			<string>%d kuva poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa poistetaan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>many</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>one</key>
+			<string>Tämä kuva säilyy</string>
+			<key>other</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>two</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>zero</key>
+			<string>Nämä kuvat säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ tästä iPod touchista. %#@they_will_remain_in@ iCloud-kuvakirjastossa.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>many</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>one</key>
+			<string>%d kuva poistetaan</string>
+			<key>other</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>two</key>
+			<string>%d kuvaa poistetaan</string>
+			<key>zero</key>
+			<string>%d kuvaa poistetaan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>many</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>one</key>
+			<string>Tämä kuva säilyy</string>
+			<key>other</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>two</key>
+			<string>Nämä kuvat säilyvät</string>
+			<key>zero</key>
+			<string>Nämä kuvat säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ tästä iPadista</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videota poistetaan</string>
+			<key>many</key>
+			<string>%d videota poistetaan</string>
+			<key>one</key>
+			<string>%d video poistetaan</string>
+			<key>other</key>
+			<string>%d videota poistetaan</string>
+			<key>two</key>
+			<string>%d videota poistetaan</string>
+			<key>zero</key>
+			<string>%d videota poistetaan</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ tästä iPhonesta. %#@they_will_remain_in@ iCloud-kuvakirjastossa.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videota poistetaan</string>
+			<key>many</key>
+			<string>%d videota poistetaan</string>
+			<key>one</key>
+			<string>%d video poistetaan</string>
+			<key>other</key>
+			<string>%d videota poistetaan</string>
+			<key>two</key>
+			<string>%d videota poistetaan</string>
+			<key>zero</key>
+			<string>%d videota poistetaan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä videot säilyvät</string>
+			<key>many</key>
+			<string>Nämä videot säilyvät</string>
+			<key>one</key>
+			<string>Tämä video säilyy</string>
+			<key>other</key>
+			<string>Nämä videot säilyvät</string>
+			<key>two</key>
+			<string>Nämä videot säilyvät</string>
+			<key>zero</key>
+			<string>Nämä videot säilyvät</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ tästä iPod touchista. %#@they_will_remain_in@ iCloud-kuvakirjastossa.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videota poistetaan</string>
+			<key>many</key>
+			<string>%d videota poistetaan</string>
+			<key>one</key>
+			<string>%d video poistetaan</string>
+			<key>other</key>
+			<string>%d videota poistetaan</string>
+			<key>two</key>
+			<string>%d videota poistetaan</string>
+			<key>zero</key>
+			<string>%d videota poistetaan</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Nämä videot säilyvät</string>
+			<key>many</key>
+			<string>Nämä videot säilyvät</string>
+			<key>one</key>
+			<string>Tämä video säilyy</string>
+			<key>other</key>
+			<string>Nämä videot säilyvät</string>
+			<key>two</key>
+			<string>Nämä videot säilyvät</string>
+			<key>zero</key>
+			<string>Nämä videot säilyvät</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -7,9 +7,14 @@
  *	@copyright 2012 Apple, Inc. All rights reserved.
  */
 
-#import <CoreBluetooth/CBDefines.h>
-#import <Foundation/Foundation.h>
+#ifndef _CORE_BLUETOOTH_H_
+#warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
+#endif
 
+#import <CoreBluetooth/CBDefines.h>
+#import <CoreBluetooth/CBPeer.h>
+
+#import <Foundation/Foundation.h>
 
 /*!
  *  @class CBCentral
@@ -18,24 +23,7 @@
  *
  */
 NS_CLASS_AVAILABLE(NA, 6_0)
-CB_EXTERN_CLASS @interface CBCentral : NSObject <NSCopying>
-
-/*!
- *  @property	UUID
- *
- *  @discussion The UUID of the central. This UUID can be used to retrieve the equivalent @link CBPeripheral @/link object via @link retrievePeripherals: @/link.
- *
- *	@deprecated Use the {@link identifier} property instead.
- */
-@property(readonly, nonatomic) CFUUIDRef UUID NS_DEPRECATED(NA, NA, 5_0, 7_0);
-
-/*!
- *  @property	identifier
- *
- *  @discussion	The unique identifier associated with the central. This identifier can be used to retrieve the equivalent @link CBPeripheral @/link object
- *				via @link retrievePeripheralsWithIdentifiers: @/link.
- */
-@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
+CB_EXTERN_CLASS @interface CBCentral : CBPeer
 
 /*!
  *  @property	maximumUpdateValueLength

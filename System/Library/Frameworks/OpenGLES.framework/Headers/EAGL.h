@@ -27,13 +27,12 @@
 /************************************************************************/
 
 /* EAGL rendering API */
-enum
+typedef NS_ENUM(NSUInteger, EAGLRenderingAPI)
 {
 	kEAGLRenderingAPIOpenGLES1 = 1,
 	kEAGLRenderingAPIOpenGLES2 = 2,
 	kEAGLRenderingAPIOpenGLES3 = 3,
 };
-typedef NSUInteger EAGLRenderingAPI;
 
 /************************************************************************/
 /* EAGL Functions                                                       */
@@ -67,8 +66,8 @@ EAGL_EXTERN_CLASS
 	struct _EAGLContextPrivate *_private;
 }
 
-- (id) initWithAPI:(EAGLRenderingAPI) api;
-- (id) initWithAPI:(EAGLRenderingAPI) api sharegroup:(EAGLSharegroup*) sharegroup;
+- (instancetype) initWithAPI:(EAGLRenderingAPI) api;
+- (instancetype) initWithAPI:(EAGLRenderingAPI) api sharegroup:(EAGLSharegroup*) sharegroup NS_DESIGNATED_INITIALIZER;
 
 + (BOOL)            setCurrentContext:(EAGLContext*) context;
 + (EAGLContext*)    currentContext;
@@ -77,6 +76,9 @@ EAGL_EXTERN_CLASS
 @property (readonly) EAGLSharegroup*    sharegroup;
 
 @property (copy, nonatomic) NSString* debugLabel NS_AVAILABLE_IOS(6_0);
+#if !defined(__NSi_7_1) // <rdar://problem/15510810> Okemo: once we branch for Okemo (or no longer support Innsbruck) remove __NSi_7_1 hack from EAGL.h
+#define __NSi_7_1 __NSi_7_0
+#endif
 @property (getter=isMultiThreaded, nonatomic) BOOL multiThreaded NS_AVAILABLE_IOS(7_1);
 @end
 

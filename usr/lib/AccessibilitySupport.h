@@ -90,8 +90,7 @@ extern CFStringRef kAXSZoomTouchToggledByPreferenceSwitchPreference;
 extern CFStringRef kAXSAssistiveTouchEnabledNotification;
 extern CFStringRef kAXSAssistiveTouchScannerEnabledNotification;
 extern CFStringRef kAXSAssistiveTouchSettingsChangedNotification;
-extern CFStringRef kAXSAssistiveTouchCustomGestureBeginNotification;
-extern CFStringRef kAXSAssistiveTouchCustomGestureEndNotification;
+extern CFStringRef kAXSAssistiveTouchHardwareChangedNotification;
 
 #pragma mark AX General
 extern CFStringRef kAXSAccessibilityEnabledNotification;    
@@ -117,6 +116,7 @@ extern CFStringRef kAXSCrashOnValidationErrorsNotification;
 
 #pragma mark Invert Colors
 extern CFStringRef kAXSInvertColorsEnabledNotification;
+extern CFStringRef kAXSGrayscaleEnabledNotification;
 
 #pragma mark Other
 extern CFStringRef kAXSMonoAudioEnabledNotification;
@@ -129,8 +129,11 @@ extern CFStringRef kAXSPairedHearingUUIDsChangedNotification;
 extern CFStringRef kAXSEarpieceNoiseCancellationEnabledNotification;
 
 #pragma mark Speak Selection
-extern CFStringRef kAXSQuickSpeakEnabledNotification; 
+extern CFStringRef kAXSQuickSpeakEnabledNotification;
 extern CFStringRef kAXSQuickSpeakLocaleForLanguageNotification;
+
+#pragma mark Speak This!
+extern CFStringRef kAXSSpeakThisEnabledNotification;
 
 #pragma mark Visual Alerts
 extern CFStringRef kAXSVisualAlertEnabledNotification;
@@ -141,6 +144,7 @@ extern CFStringRef kAXSAXInspectorEnabledNotification;
 extern CFStringRef kAXSVoiceOverTouchSpeakingRateChangedNotification;
 extern CFStringRef kAXSVoiceOverTouchVolumeChangedNotification;
 extern CFStringRef kAXSVoiceOverTouchUsageConfirmedNotification;
+extern CFStringRef kAXSVoiceOverTouchScreenCurtainNotification;
 extern CFStringRef kAXSVoiceOverTouchLanguageRotorChangedNotification;
 extern CFStringRef kAXSVoiceOverTouchBrailleBluetoothDisplayChangedNotification;
 extern CFStringRef kAXSVoiceOverTouchBrailleTableIdentifierChangedNotification;
@@ -149,6 +153,7 @@ extern CFStringRef kAXSVoiceOverTouchBrailleMasterStatusCellIndexChangedNotifica
 extern CFStringRef kAXSVoiceOverTouchBrailleContractionModeChangedNotification;
 extern CFStringRef kAXSVoiceOverTouchBrailleEightDotModeChangedNotification;
 extern CFStringRef kAXSVoiceOverTouchEnabledThroughAccessoryNotification;
+extern CFStringRef kAXSVoiceOverTouchTypingModeChangedNotification;
 
 #pragma mark Zoom
 extern CFStringRef kAXSZoomTouchEnabledNotification;
@@ -177,6 +182,13 @@ extern CFStringRef kAXSMonoAudioEnabledByiTunesPreference;
 extern CFStringRef kAXSSpeakAutoCorrectionsEnabledByiTunesPreference;
 extern CFStringRef kAXSClosedCaptioningEnabledByiTunesPreference;
 
+#pragma mark -
+#pragma mark Other Useful Constants
+#pragma mark -
+
+extern CFStringRef AXAlexVoiceIdentifier;
+extern CFStringRef kAXVoiceAssetsInstalledNotification;
+
 #ifdef __cplusplus
 extern "C" { 
 #endif
@@ -192,6 +204,11 @@ extern CFStringRef AXCPCopySharedResourcesPreferencesDomainForDomain(CFStringRef
 extern void _AXSDisableDomainSynching(Boolean disable);
 extern void _AXSForcePreferenceUpdate(CFStringRef preference);
     
+// Return a localized string from a language that is not hte current language.
+extern CFStringRef AXLocalizedStringForLocale(CFStringRef key, CFStringRef table, CFBundleRef bundle, CFStringRef locale, CFDictionaryRef* localizedDictionary);
+extern CFArrayRef AXRetrieveSupportedAccessibilityLanguages();
+    
+    
 // These should only be used by the iTunes lockdown mechanism (althought sometimes we need to reset
 // what iTunes set)
 extern void _AXSAccessibilitySetiTunesPreference(CFStringRef preference, CFTypeRef value);
@@ -200,7 +217,9 @@ extern CFTypeRef _AXSAccessibilityCopyiTunesPreference(CFStringRef preference) C
 // This should only be used by us to determine if iTunes set a value or not.
 extern Boolean _AXSAccessibilityGetBooleaniTunesPreference(CFStringRef preference, Boolean *wasSet);
     
-    
+// Direct access to setting functionality. Only used by backboardd
+extern void _AXSetPreferenceWithNotification(CFStringRef preference, CFTypeRef value, CFStringRef notification);    
+
 #pragma mark -
 #pragma mark Getters and Setters
 #pragma mark -
@@ -242,6 +261,7 @@ typedef enum
     kAXSTripleClickOptionGuidedAccess     = 7,
     kAXSTripleClickOptionHearingControl   = 8,
     kAXSTripleClickOptionSwitchOver       = 9,
+    kAXSTripleClickOptionGrayscale        = 10,
 }
 AXSTripleClickOption;
     
@@ -249,7 +269,8 @@ AXSTripleClickOption;
 extern CFArrayRef _AXSTripleClickCopyOptions() CF_RETURNS_RETAINED;
 extern void _AXSSetTripleClickOptions(CFArrayRef option);
 extern Boolean _AXSTripleClickContainsOption(CFArrayRef options, AXSTripleClickOption option);
-extern void _AXSTripleClickAddOption(AXSTripleClickOption option);    
+extern void _AXSTripleClickAddOption(AXSTripleClickOption option);
+extern void _AXSTripleClickRemoveOption(AXSTripleClickOption option);
     
 #pragma mark Guided Access
 extern void _AXSGuidedAccessStartSession();
@@ -289,6 +310,9 @@ extern void _AXSSetReportValidationErrors(Boolean enabled);
 #pragma mark Invert Colors
 extern Boolean _AXSInvertColorsEnabled();
 extern void _AXSInvertColorsSetEnabled(Boolean enabled);
+    
+extern Boolean _AXSGrayscaleEnabled();
+extern void _AXSGrayscaleSetEnabled(Boolean enabled);
     
 #pragma mark Other
 extern float _AXSScreenContrast();
@@ -331,13 +355,20 @@ extern Boolean _AXSQuickSpeakEnabled();
 extern void _AXSQuickSpeakSetEnabled(Boolean enabled);
 
 extern CFDictionaryRef _AXSQuickSpeakCopyPreferredLocalesForLanguages() CF_RETURNS_RETAINED;
-extern void _AXSQuickSpeakSetPreferredLocalesForLanguages(CFDictionaryRef preferredLocalesForLanguages);   
-extern void _AXSQuickSpeakSetPreferredLocaleForLanguage(CFStringRef locale, CFStringRef language);
+extern void _AXSQuickSpeakSetPreferredLocaleForLanguage(CFStringRef locale, CFStringRef language, Boolean isCompact);
+
+#pragma mark Speak This
+extern Boolean _AXSSpeakThisEnabled();
+extern void _AXSSetSpeakThisEnabled(Boolean enabled);
+
 #pragma mark UIAutomation
 extern void _AXSAutomationLocalizedStringLookupInfoSetEnabled(Boolean enabled);
 extern Boolean _AXSAutomationLocalizedStringLookupInfoEnabled();
 extern void _AXSSetAutomationEnabled(Boolean enabled);
+extern CFStringRef _AXSAutomationPreferredLocalization();
 extern Boolean _AXSAutomationEnabled();
+extern void _AXSAutomationSetFauxCollectionViewCellsEnabled(Boolean enabled);
+extern Boolean _AXSAutomationFauxCollectionViewCellsEnabled();
     
 #pragma mark Visual Alerts
 // Flash Screen
@@ -347,6 +378,7 @@ extern void _AXSVisualAlertSetEnabled(Boolean enabled);
 #pragma mark VoiceOver
 extern Boolean _AXSVoiceOverTouchEnabled();
 extern void _AXSVoiceOverTouchSetEnabled(Boolean enabled);
+extern void _AXSVoiceOverTVSetEnabled(Boolean enabled); //FIXME <rdar://16126688>
 // Used by CoreAutomation proxy to turn VO on without need to tap the confirm alert
 extern void _AXSVoiceOverTouchSetEnabledAndAutoConfirmUsage(Boolean enabled);
 extern float _AXSVoiceOverTouchSpeakingRate();
@@ -357,13 +389,27 @@ extern Boolean _AXSVoiceOverTouchUsageConfirmed();
 extern void _AXSVoiceOverTouchSetUsageConfirmed(Boolean enabled);
 extern Boolean _AXSVoiceOverTouchEnabledThroughAccessory();
 extern void _AXSVoiceOverTouchSetEnabledThroughAccessory(Boolean enabled);
+extern Boolean _AXSVoiceOverTouchScreenCurtainEnabled();
+extern void _AXSVoiceOverTouchSetScreenCurtainEnabled(Boolean enabled);
+extern Boolean _AXSVoiceOverTouchUIEnabled();
+extern void _AXSVoiceOverTouchSetUIEnabled(Boolean enabled);
     
 // An array of CFDictionaryRefs containing the items (in order).
 // Each dictionary has Enabled=CFBooleanRef and RotorItem=CFStringRef (indicating language code)
 extern void _AXSVoiceOverTouchSetLanguageRotorItems(CFArrayRef items);
 extern CFArrayRef _AXSVoiceOverTouchCopyLanguageRotorItems(Boolean shouldUpdateIfNecessary);
 extern Boolean _AXSVoiceOvierTouchLanguageRotorItemsExist();
-    
+
+typedef enum
+{
+    kAXSVoiceOverTouchTypingModeStandard    = 0,
+    kAXSVoiceOverTouchTypingModeTouchTyping = 1,
+    kAXSVoiceOverTouchTypingModeDirectTouch = 2,
+} AXSVoiceOverTouchTypingMode;
+
+extern void _AXSVoiceOverTouchSetTypingMode(AXSVoiceOverTouchTypingMode typingMode);
+extern AXSVoiceOverTouchTypingMode _AXSVoiceOverTouchTypingMode();
+
 // Braille related methods
 extern CFDictionaryRef _AXSVoiceOverTouchCopyBrailleBluetoothDisplay() CF_RETURNS_RETAINED;
 extern void _AXSVoiceOverTouchSetBrailleBluetoothDisplay(CFDictionaryRef brailleDisplay);

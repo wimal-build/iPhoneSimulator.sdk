@@ -1,25 +1,25 @@
-defaultvoice:Tarik
+defaultvoice:Maged
 <?xml version="1.0"?>
 <NUANCE>
 <VERSION>NUAN_1.0</VERSION>
 <HEADER>
-  <BROKERSTRING>pipeline/Arabic/tarik/22/bet3/text/pcm</BROKERSTRING>
+  <BROKERSTRING>pipeline/Arabic/maged/22/bet3/text/pcm</BROKERSTRING>
   <PRIORITY>4102</PRIORITY>
   <PARAMETERS>
     <language>Arabic</language>
     <langcode>ARW</langcode>
     <langid>37</langid>
-    <langversion>5.2.3.13330</langversion>
+    <langversion>5.2.4.14056</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
-    <voice>Tarik</voice>
-    <voiceversion>5.2.3.13301</voiceversion>
+    <voice>Maged</voice>
+    <voiceversion>5.2.4.14049</voiceversion>
     <gender>Male</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
     <fedataprefix></fedataprefix>
     <feextcfgdataprefix></feextcfgdataprefix>
     <fedatapackaging>clc</fedatapackaging>
-    <fevoice>Tarik</fevoice>
+    <fevoice>Maged</fevoice>
     <frequencyhz>22050</frequencyhz>
     <voicemodel>bet3</voicemodel>
     <reduction>bet3</reduction>
@@ -78,13 +78,20 @@ defaultvoice:Tarik
       userdct/arw
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      tarik/userdct/arw
+      userdct/arw/maged
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/arw
+    </RESOURCE>
     
     
     

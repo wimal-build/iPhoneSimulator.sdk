@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("bookatable.com-noevent",function(){},function(){},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/627/632/639","SGe108e5c0")]);

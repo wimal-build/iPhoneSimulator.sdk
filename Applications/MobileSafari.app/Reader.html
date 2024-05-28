@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <base>
+    <title>Reader</title>
+
+    <style id="article-content">
+        @media print {
+            .original-url {
+                display: none;
+            }
+        }
+
+        h1.title {
+            font: -apple-system-headline;
+            font-weight: normal;
+            text-align: start;
+            -webkit-hyphens: manual;
+        }
+
+        blockquote {
+            color: rgba(0, 0, 0, 0.5);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        blockquote > *:first-child:before {
+            -webkit-margin-start: -6px;
+            content: open-quote;
+        }
+
+        blockquote > *:last-child:after {
+            content: close-quote;
+        }
+
+        /* FIXME: We should be able to remove this when WebKit's link color matches UIKit's (<rdar://problem/13650224>). */
+        .page a {
+            color: rgb(20, 111, 223);
+        }
+
+        #article .large-element {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .page {
+            font: -apple-system-body;
+            text-align: start;
+        }
+
+        #article .leading-image, #article figure, #article .auxiliary {
+            font: -apple-system-short-subheadline;
+        }
+
+        h1 {
+            font: -apple-system-subheadline;
+        }
+
+        h2 {
+            font: -apple-system-footnote;
+        }
+
+        h3 {
+            font: -apple-system-caption1;
+        }
+
+        h4, h5, h6 {
+            font: -apple-system-caption2;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+        }
+
+        hr {
+            background: rgba(0, 0, 0, 0.2);
+            height: 1px;
+            border: 0;
+        }
+    </style>
+    <style id="reader-ui">
+    @media screen {
+        body {
+            margin: 0;
+            padding: 0;
+            -webkit-user-select: none;
+            background-color: white;
+        }
+
+        .cached embed, .cached applet, .cached object {
+            display: none !important;
+        }
+
+        #article {
+            pointer-events: auto;
+            -webkit-user-select: auto;
+        }
+
+        .page-number {
+            display: none;
+        }
+
+        .page:only-of-type .page-number {
+            display: none;
+        }
+
+        .page-number {
+            display: block;
+            font: -apple-system-caption2;
+            font-weight: bold;
+            margin-left: 12px;
+            color: #B2B2B2;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            -webkit-user-select: none;
+        }
+
+        .page:first-of-type {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 45px;
+        }
+
+        .page:last-of-type {
+            padding-bottom: 45px;
+        }
+
+        .page {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 35px 60px;
+            color: black;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            -webkit-text-size-adjust: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .page video {
+            position: relative;
+        }
+
+        #incoming-page-placeholder {
+            height: 30px;
+            margin-bottom: 0;
+        }
+
+        #incoming-page-corner {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+
+        #incoming-page-text {
+            float: right;
+            margin-top: 2px;
+            margin-left: 8px;
+            color: #B2B2B2;
+            font: -apple-system-caption2;
+            font-weight: bold;
+            -webkit-user-select: none;
+        }
+
+        #next-page-container {
+            position:absolute;
+            /* Workaround for <rdar://problem/8662842> iOS Reader: loading multiple pages stops at the 2nd page. */
+            /*display: none;*/
+            left: -1000px;
+            /* The iframe needs to be wider than the width threshold value for Reader detection, see <rdar://problem/9599297>. */
+            width: 320px;
+            height: 0px;
+        }
+
+        .no-transition {
+            -webkit-transition: none !important;
+        }
+
+        .page div.reader-scrollable-div {
+            overflow: scroll;
+        }
+    }
+
+    /* 1 device pixel page seperators on Retina. */
+    @media screen and (-webkit-device-pixel-ratio:2) {
+        .page:first-of-type {
+            background-image: none;
+        }
+
+        .page {
+            border-top: none;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><line y1="0.25" x2="1" y2="0.25" style="stroke-width: 0.5px; stroke: rgba(0, 0, 0, 0.2)" /></svg>');
+            background-repeat: repeat-x;
+            background-size: 1px 1px;
+        }
+    }
+
+    /* Edge-to-edge. */
+    #article blockquote img.edge-to-edge, #article table img.edge-to-edge {
+        margin: auto !important;
+        width: auto !important;
+        max-width: 100%;
+    }
+
+    /* We always do edge-to-edge on narrow layouts, but only in portrait on non-narrow layouts. */
+    @media screen and (orientation: portrait) {
+        #article img.edge-to-edge {
+            margin: 0 0 0 -60px !important;
+
+            /* Marked important because it can conflict with #article .leading-image img.full-width. */
+            width: calc(100% + 120px) !important;
+
+            /* Override max-width: 100%; we need to go wider. */
+            max-width: none;
+        }
+    }
+
+    /* Layout-specific styles. */
+
+    .narrow #article img.edge-to-edge {
+        margin: 0 0 0 -16px !important;
+        width: calc(100% + 32px) !important;
+        max-width: none;
+    }
+
+    /* Narrow. */
+    .narrow .page:first-of-type .page-number {
+        display: none;
+    }
+
+    .narrow .page-number {
+        right: 16px;
+        top: 8px;
+    }
+
+    .narrow .page {
+        padding: 32px 16px;
+    }
+
+    .narrow .page:first-of-type {
+        padding-top: 45px;
+    }
+
+    .narrow #incoming-page-corner {
+        right: 16px;
+    }
+    </style>
+    <script src="safari-resource:/localizedStrings.js"></script>
+    <link rel="stylesheet" type="text/css" href="safari-resource:/WBSReaderSharedStyleSheet.css" id="article-content-shared">
+</head>
+<body class="preloading" onload="ReaderJS.loaded();" onscroll="articleHasScrolled();">
+    <iframe id="next-page-container"></iframe>
+    <div id="article" tabindex="0">
+        <!-- This node will contain a number of 'page' class divs. -->
+    </div>
+</body>
+</html>

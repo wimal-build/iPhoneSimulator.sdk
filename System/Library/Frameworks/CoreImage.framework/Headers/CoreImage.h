@@ -26,5 +26,6 @@
 #import <CoreImage/CIVector.h>
 #import <CoreImage/CIDetector.h>
 #import <CoreImage/CIFeature.h>
+#import <CoreImage/CIKernel.h>
 
 #endif /* __OBJC__ */

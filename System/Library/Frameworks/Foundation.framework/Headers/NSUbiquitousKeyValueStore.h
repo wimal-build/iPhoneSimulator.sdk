@@ -1,5 +1,5 @@
 /*	NSUbiquitousKeyValueStore.h
-	Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+	Copyright (c) 2011-2014, Apple Inc. All rights reserved.
 */
 
 #import <Foundation/NSObject.h>
@@ -41,7 +41,7 @@ NS_CLASS_AVAILABLE(10_7, 5_0)
 - (void)setDouble:(double)value forKey:(NSString *)aKey;
 - (void)setBool:(BOOL)value forKey:(NSString *)aKey;
 
-- (NSDictionary *)dictionaryRepresentation;
+@property (readonly, copy) NSDictionary *dictionaryRepresentation;
 
 - (BOOL)synchronize;
 

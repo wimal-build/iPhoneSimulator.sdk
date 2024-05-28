@@ -15,6 +15,7 @@ typedef struct CGImageDestination *CGImageDestinationRef;
 #include <ImageIO/CGImageSource.h>
 #include <ImageIO/CGImageMetadata.h>
 
+CF_IMPLICIT_BRIDGING_ENABLED
 
 /** Properties which may be passed to "CGImageDestinationAddImage"
  ** or "CGImageDestinationAddImageFromSource" to effect the output.
@@ -39,7 +40,15 @@ IMAGEIO_EXTERN const CFStringRef kCGImageDestinationLossyCompressionQuality  IMA
 
 IMAGEIO_EXTERN const CFStringRef kCGImageDestinationBackgroundColor  IMAGEIO_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_4_0);
 
+/* Rescale the image to the maximum width and height in pixels.
+ * If present, this value of this key must be a CFNumberRef. */
 
+IMAGEIO_EXTERN const CFStringRef kCGImageDestinationImageMaxPixelSize  IMAGEIO_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+
+/* Enable or disable JPEG thumbnail embedding.
+ * The value should be kCFBooleanTrue or kCFBooleanFalse. Defaults to kCFBooleanFalse */
+
+IMAGEIO_EXTERN const CFStringRef kCGImageDestinationEmbedThumbnail  IMAGEIO_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 /* Return the CFTypeID for CGImageDestinations. */
 
@@ -142,6 +151,14 @@ IMAGEIO_EXTERN const CFStringRef kCGImageDestinationMergeMetadata IMAGEIO_AVAILA
  */
 IMAGEIO_EXTERN const CFStringRef kCGImageMetadataShouldExcludeXMP IMAGEIO_AVAILABLE_STARTING(__MAC_10_8, __IPHONE_7_0);
 
+/* If true, GPS metadata will not be written to EXIF data or the corresponding
+ * EXIF tags in XMP. This flag cannot filter any proprietary location data that
+ * could be stored in a manufacturer's EXIF MakerNote or custom XMP properties.
+ * If present, the value for this key is a CFBooleanRef. The default is 
+ * kCFBooleanFalse.
+ */
+IMAGEIO_EXTERN const CFStringRef kCGImageMetadataShouldExcludeGPS IMAGEIO_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+
 /* Updates the DateTime parameters of the image metadata. Only values
  * present in the original image will updated. If present, the value should
  * be a CFStringRef or a CFDateRef. If CFString, the value must be in 
@@ -172,5 +189,6 @@ IMAGEIO_EXTERN bool CGImageDestinationCopyImageSource(CGImageDestinationRef idst
                                                       CFErrorRef* err) IMAGEIO_AVAILABLE_STARTING(__MAC_10_8, __IPHONE_7_0);
 
 
+CF_IMPLICIT_BRIDGING_DISABLED
 
 #endif /* CGIMAGEDESTINATION_H_ */

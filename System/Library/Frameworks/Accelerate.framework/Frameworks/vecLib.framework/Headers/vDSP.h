@@ -3,9 +3,9 @@
 
     Contains:   AltiVec DSP Interfaces
 
-    Version:    vecLib-459.0
+    Version:    vecLib-510.0
 
-    Copyright:  � 2000-2014 by Apple Computer, Inc., all rights reserved.
+    Copyright:  � 2000-2014 by Apple Inc., all rights reserved.
 
     For vDSP documentation, search for "vDSP" at <http://developer.apple.com>
     or search for one of the routine names below.
@@ -109,7 +109,7 @@
 
             |x| is the absolute value of x.
 
-    Exactness:
+   Exactness, IEEE 754 conformance:
 
         vDSP routines are not expected to produce results identical to the
         pseudo-code in the descriptions, because vDSP routines are free to
@@ -118,6 +118,11 @@
         if exact arithmetic were used.  However, floating-point arithmetic
         is approximate, and the rounding errors will often be different when
         operations are rearranged.
+
+        Generally, vDSP routines are not expected to conform to IEEE 754.
+        Notably, results may be not correctly rounded to the last bit even for
+        elementary operations, and operations involving infinities and NaNs may
+        be handled differently than IEEE 754 specifies.
 
     Const:
 
@@ -217,7 +222,7 @@ extern "C" {
     vDSP_Version0 is a major version number.
     vDSP_Version1 is a minor version number.
 */
-#define vDSP_Version0   459
+#define vDSP_Version0   510
 #define vDSP_Version1   0
 
 
@@ -302,14 +307,15 @@ typedef struct vDSP_biquad_SetupStruct  *vDSP_biquad_Setup;
 typedef struct vDSP_biquad_SetupStructD *vDSP_biquad_SetupD;
 
     
-/*  vDSP_biquadm_Setup is a filter object to be used with a multi-channel
-    cascaded biquad IIR.  This object carries internal state which may be
-    modified by any routine which uses it.  Upon creation, the state is
-    initialized such that all delay elements are zero.
+/*  vDSP_biquadm_Setup or vDSP_biquadm_SetupD is a pointer to a filter object
+    to be used with a multi-channel cascaded biquad IIR.  This object carries
+    internal state which may be modified by any routine which uses it.  Upon
+    creation, the state is initialized such that all delay elements are zero.
  
     Each filter object should only be used in a single thread at a time.
 */
-typedef struct vDSP_biquadm_SetupStruct *vDSP_biquadm_Setup;
+typedef struct vDSP_biquadm_SetupStruct  *vDSP_biquadm_Setup;
+typedef struct vDSP_biquadm_SetupStructD *vDSP_biquadm_SetupD;
 
 
 /*  vDSP_create_fftsetup and vDSP_create_ffsetupD allocate memory and prepare
@@ -356,38 +362,54 @@ extern void vDSP_biquad_DestroySetupD(vDSP_biquad_SetupD __vDSP_setup)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_6_0);
 
 
-/*  vDSP_biquadm_CreateSetup allocates memory and prepares the coefficients for
-    processing a multi-channel cascaded biquad IIR filter.  Delay values are
-    set to zero.
+/*  vDSP_biquadm_CreateSetup (for float) or vDSP_biquadm_CreateSetupD (for
+    double) allocates memory and prepares the coefficients for processing a
+    multi-channel cascaded biquad IIR filter.  Delay values are set to zero.
 
-    Unlike some other setup objects in vDSP, a vDSP_biquadm_CreateSetup
-    contains data that is modified during a vDSP_biquadm call, and it therefore
-    may not be used more than once simultaneously, as in multiple threads.
+    Unlike some other setup objects in vDSP, a vDSP_biquadm_Setup or
+    vDSP_biquadm_SetupD contains data that is modified during a vDSP_biquadm or
+    vDSP_biquadmD call, and it therefore may not be used more than once
+    simultaneously, as in multiple threads.
  
-    vDSP_biquadm_DestroySetup frees the memory allocated by
-    vDSP_biquadm_CreateSetup.
+    vDSP_biquadm_DestroySetup (for single) or vDSP_biquadm_DestroySetupD (for
+    double) frees the memory allocated by the corresponding create-setup
+    routine.
 */
 extern vDSP_biquadm_Setup vDSP_biquadm_CreateSetup(
     const double *__vDSP_coeffs,
     vDSP_Length   __vDSP_M,
     vDSP_Length   __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+extern vDSP_biquadm_SetupD vDSP_biquadm_CreateSetupD(
+    const double *__vDSP_coeffs,
+    vDSP_Length   __vDSP_M,
+    vDSP_Length   __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 extern void vDSP_biquadm_DestroySetup(vDSP_biquadm_Setup __vDSP_setup)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+extern void vDSP_biquadm_DestroySetupD(vDSP_biquadm_SetupD __vDSP_setup)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
-/*  vDSP_biquadm_CopyState copies the current state between two
-    vDSP_biquadm_Setup objects.  The two objects must have been created with
-    the same number of channels and sections.
+/*  vDSP_biquadm_CopyState (for float) or vDSP_biquadm_CopyStateD (for double)
+    copies the current state between two biquadm setup objects.  The two
+    objects must have been created with the same number of channels and
+    sections.
  
-    vDSP_biquadm_ResetState sets the delay values of a vDSP_biquadm_Setup
-    object to zero.
+    vDSP_biquadm_ResetState (for float) or vDSP_biquadm_ResetStateD (for
+    double) sets the delay values of a biquadm setup object to zero.
 */
 extern void vDSP_biquadm_CopyState(
     vDSP_biquadm_Setup                     __vDSP_dest,
     const struct vDSP_biquadm_SetupStruct *__vDSP_src)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+extern void vDSP_biquadm_CopyStateD(
+    vDSP_biquadm_SetupD                     __vDSP_dest,
+    const struct vDSP_biquadm_SetupStructD *__vDSP_src)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 extern void vDSP_biquadm_ResetState(vDSP_biquadm_Setup __vDSP_setup)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+extern void vDSP_biquadm_ResetStateD(vDSP_biquadm_SetupD __vDSP_setup)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 // Convert a complex array to a complex-split array.
@@ -1974,7 +1996,7 @@ extern void vDSP_biquadD(
 
         These compute:
 
-        S, A0, A1, A2, B1, and B2 are determined by Setup.
+        S, B0, B1, B2, A1, and A2 are determined by Setup.
         S is the number of sections.
 
         X provides the bulk of the input signal.  Delay provides prior state
@@ -1997,11 +2019,11 @@ extern void vDSP_biquadD(
         for (s = 1; s <= S; ++s)
             for (n = 0; n < N; ++n)
                 x[s][n] =
-                    + A0[s] * x[s-1][n-0]
-                    + A1[s] * x[s-1][n-1]
-                    + A2[s] * x[s-1][n-2]
-                    - B1[s] * x[s  ][n-1]
-                    - B2[s] * x[s  ][n-2];
+                    + B0[s] * x[s-1][n-0]
+                    + B1[s] * x[s-1][n-1]
+                    + B2[s] * x[s-1][n-2]
+                    - A1[s] * x[s  ][n-1]
+                    - A2[s] * x[s  ][n-2];
 
         // Save the updated state data from the end of each row:
         for (s = 0; s <= S; ++s)
@@ -2016,8 +2038,9 @@ extern void vDSP_biquadD(
     */
 
 
-/*  vDSP_biquadm applies a multi-channel biquadm IIR filter created with
-    vDSP_biquadm_CreateSetup.
+/*  vDSP_biquadm (for float) or vDSP_biquadmD (for double) applies a
+    multi-channel biquadm IIR filter created with vDSP_biquadm_CreateSetup or
+    vDSP_biquadm_CreateSetupD, respectively.
  */
 extern void vDSP_biquadm(
     vDSP_biquadm_Setup   __vDSP_Setup,
@@ -2025,9 +2048,15 @@ extern void vDSP_biquadm(
     float              **__vDSP_Y, vDSP_Stride __vDSP_IY,
     vDSP_Length          __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
-    /*  vDSP_biquadm performs the same function as M calls to biquad, where M,
-        the delay values, and the vDSP_biquad setups are derived from the
-        vDSP_biquadm setup:
+extern void vDSP_biquadmD(
+     vDSP_biquadm_SetupD   __vDSP_Setup,
+     const double        **__vDSP_X, vDSP_Stride __vDSP_IX,
+     double              **__vDSP_Y, vDSP_Stride __vDSP_IY,
+     vDSP_Length          __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+    /*  These routines perform the same function as M calls to vDSP_biquad or
+        vDSP_biquadD, where M, the delay values, and the biquad setups are
+        derived from the biquadm setup:
 
             for (m = 0; m < M; ++M)
                 vDSP_biquad(
@@ -2387,6 +2416,21 @@ extern void vDSP_zvmmaa(
     vDSP_Stride            __vDSP_IF,
     vDSP_Length            __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+extern void vDSP_zvmmaaD(
+    const DSPDoubleSplitComplex *__vDSP_A,
+    vDSP_Stride                  __vDSP_IA,
+    const DSPDoubleSplitComplex *__vDSP_B,
+    vDSP_Stride                  __vDSP_IB,
+    const DSPDoubleSplitComplex *__vDSP_C,
+    vDSP_Stride                  __vDSP_IC,
+    const DSPDoubleSplitComplex *__vDSP_D,
+    vDSP_Stride                  __vDSP_ID,
+    const DSPDoubleSplitComplex *__vDSP_E,
+    vDSP_Stride                  __vDSP_IE,
+    const DSPDoubleSplitComplex *__vDSP_F,
+    vDSP_Stride                  __vDSP_IF,
+    vDSP_Length                  __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
     /*  Maps:  The default maps are used.
 
         These compute:
@@ -2801,6 +2845,14 @@ extern void vDSP_distancesq(
     float       *__vDSP_C,
     vDSP_Length  __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_8, __IPHONE_5_0);
+extern void vDSP_distancesqD(
+    const double *__vDSP_A,
+    vDSP_Stride   __vDSP_IA,
+    const double *__vDSP_B,
+    vDSP_Stride   __vDSP_IB,
+    double       *__vDSP_C,
+    vDSP_Length   __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
     /*  Maps:  The default maps are used.
 
         These compute:
@@ -2932,6 +2984,17 @@ extern void vDSP_zvma(
     vDSP_Stride            __vDSP_ID,
     vDSP_Length            __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+extern void vDSP_zvmaD(
+    const DSPDoubleSplitComplex *__vDSP_A,
+    vDSP_Stride                  __vDSP_IA,
+    const DSPDoubleSplitComplex *__vDSP_B,
+    vDSP_Stride                  __vDSP_IB,
+    const DSPDoubleSplitComplex *__vDSP_C,
+    vDSP_Stride                  __vDSP_IC,
+    const DSPDoubleSplitComplex *__vDSP_D,
+    vDSP_Stride                  __vDSP_ID,
+    vDSP_Length                  __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
     /*  Maps:  The default maps are used.
 
         These compute:
@@ -3683,8 +3746,8 @@ extern void vDSP_deq22D(
 
         These compute:
 
-            for (n = 0; n < N; ++n)
-                C[n+2] =
+            for (n = 2; n < N+2; ++n)   // Note outputs start with C[2].
+                C[n] =
                     + A[n-0]*B[0]
                     + A[n-1]*B[1]
                     + A[n-2]*B[2]
@@ -4166,6 +4229,9 @@ extern void vDSP_svdivD(
 
             for (n = 0; n < N; ++n)
                 C[n] = A[0] / B[n];
+
+        When A[0] is not zero or NaN and B[n] is zero, C[n] is set to an
+        infinity.
     */
 
 
@@ -4928,7 +4994,7 @@ extern void vDSP_vfixru32D(
     */
 
 
-// Vector convert from it integer.
+// Vector convert to floating-point from integer.
 extern void vDSP_vflt8(
     const char  *__vDSP_A,
     vDSP_Stride  __vDSP_IA,
@@ -5364,6 +5430,41 @@ extern void vDSP_vmaxmgD(
 
             for (n = 0; n < N; ++n)
                 C[n] = |B[n]| <= |A[n]| ? |A[n]| : |B[n]|;
+    */
+
+
+// Vector sliding window maxima.
+extern void vDSP_vswmax(
+    const float *__vDSP_A,
+    vDSP_Stride  __vDSP_IA,
+    float       *__vDSP_C,
+    vDSP_Stride  __vDSP_IC,
+    vDSP_Length  __vDSP_N,
+    vDSP_Length  __vDSP_WindowLength)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+extern void vDSP_vswmaxD(
+    const double *__vDSP_A,
+    vDSP_Stride   __vDSP_IA,
+    double       *__vDSP_C,
+    vDSP_Stride   __vDSP_IC,
+    vDSP_Length  __vDSP_N,
+    vDSP_Length  __vDSP_WindowLength)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+    /*  Maps:  The default maps are used.
+
+        These compute the maximum value within a window to the input vector.
+        A maximum is calculated for each window position:
+
+            for (n = 0; n < N; ++n)
+                C[n] = the greatest value of A[w] for n <= w < n+WindowLength.
+
+        A must contain N+WindowLength-1 elements, and C must contain space for
+        N+WindowLength-1 elements.  Although only N outputs are provided in C,
+        the additional elements may be used for intermediate computation.
+
+        A and C may not overlap.
+
+        WindowLength must be positive (zero is not supported).
     */
 
 
@@ -6003,6 +6104,17 @@ extern void vDSP_vsmsma(
     vDSP_Stride  __vDSP_IE,
     vDSP_Length  __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_6_0);
+extern void vDSP_vsmsmaD(
+    const double *__vDSP_A,
+    vDSP_Stride   __vDSP_IA,
+    const double *__vDSP_B,
+    const double *__vDSP_C,
+    vDSP_Stride   __vDSP_IC,
+    const double *__vDSP_D,
+    double       *__vDSP_E,
+    vDSP_Stride   __vDSP_IE,
+    vDSP_Length   __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
     /*  Maps:  The default maps are used.
         
         This computes:
@@ -6666,7 +6778,7 @@ vDSP_DFT_Setup vDSP_DFT_zop_CreateSetup(vDSP_DFT_Setup __vDSP_Previous,
         __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_0);
 vDSP_DFT_SetupD vDSP_DFT_zop_CreateSetupD(vDSP_DFT_SetupD __vDSP_Previous,
     vDSP_Length __vDSP_Length, vDSP_DFT_Direction __vDSP_Direction)
-    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+        __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 /*  vDSP_DFT_zrop_CreateSetup and vDSP_DFT_zrop_CreateSetupD are DFT setup
     routines.  Each creates a setup object for use with the corresponding
@@ -6760,7 +6872,7 @@ vDSP_DFT_SetupD vDSP_DFT_zop_CreateSetupD(vDSP_DFT_SetupD __vDSP_Previous,
                 known because it necessarily equals the conjugate of H[N-k],
                 which is stored as described above.
 
-            If Direction is vDSP_DFT_Inverse, then the layouts of the input and
+            If Direction is vDSP_DFT_INVERSE, then the layouts of the input and
             output arrays are swapped.  Ir and Ii describe an input array with
             complex elements laid out as described above for Or and Oi.  When
             vDSP_DFT_Execute returns, Or and Oi contain a pure real array, with
@@ -6803,7 +6915,7 @@ vDSP_DFT_SetupD vDSP_DFT_zrop_CreateSetupD(vDSP_DFT_SetupD __vDSP_Previous,
 
     Parameters:
 
-        vDSP_DFT_Setup Setup or
+        vDSP_DFT_Setup Setup
 
             Setup is the setup object to be released.  The object may have
             been previously allocated with any DFT or DCT setup routine, such
@@ -6822,7 +6934,7 @@ vDSP_DFT_SetupD vDSP_DFT_zrop_CreateSetupD(vDSP_DFT_SetupD __vDSP_Previous,
 void vDSP_DFT_DestroySetup(vDSP_DFT_Setup __vDSP_Setup)
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
 void vDSP_DFT_DestroySetupD(vDSP_DFT_SetupD __vDSP_Setup)
-    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+        __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 
 /*  vDSP_DFT_zop is a DFT execution routine.  It performs a DFT, with the aid
@@ -6971,12 +7083,12 @@ void vDSP_DFT_Execute(
     const struct vDSP_DFT_SetupStruct *__vDSP_Setup,
     const float *__vDSP_Ir,  const float *__vDSP_Ii,
           float *__vDSP_Or,        float *__vDSP_Oi)
-    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_0);
+        __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_0);
 void vDSP_DFT_ExecuteD(
     const struct vDSP_DFT_SetupStructD *__vDSP_Setup,
     const double *__vDSP_Ir,  const double *__vDSP_Ii,
           double *__vDSP_Or,        double *__vDSP_Oi)
-    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+        __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 
 /*  vDSP_DCT_CreateSetup is a DCT setup routine.  It creates a setup object
@@ -7001,9 +7113,9 @@ void vDSP_DFT_ExecuteD(
         vDSP_DCT_Type Type
 
             Type specifies which DCT variant to perform.  At present, the
-            supported DCT types are II and III, which are mutual inverses (up
-            to scaling).  Types II and III are specified with symbol names
-            vDSP_DCT_II and vDSP_DCT_III, respectively.
+            supported DCT types are II and III (which are mutual inverses, up
+            to scaling) and IV (which is its own inverse).  These are specified
+            with symbol names vDSP_DCT_II, vDSP_DCT_III, and vDSP_DCT_IV.
 
     Return value:
 
@@ -7030,6 +7142,12 @@ void vDSP_DFT_ExecuteD(
 
                     Or[k] = Ir[0]/2
                         + sum(Ir[j] * cos((k+1/2) * j * pi / N), 1 <= j < N).
+
+            If Type is vDSP_DCT_IV:
+
+                For 0 <= k < N,
+
+                    Or[k] = sum(Ir[j] * cos((k+1/2) * (j+1/2) * pi / N, 0 <= j < N).
 
             Where:
 
@@ -7063,14 +7181,15 @@ void vDSP_DFT_ExecuteD(
 typedef enum
 {
     vDSP_DCT_II  = 2,
-    vDSP_DCT_III = 3
+    vDSP_DCT_III = 3,
+    vDSP_DCT_IV  = 4
 } vDSP_DCT_Type;
 
 vDSP_DFT_Setup vDSP_DCT_CreateSetup(
     vDSP_DFT_Setup __vDSP_Previous,
     vDSP_Length    __vDSP_Length,
     vDSP_DCT_Type  __vDSP_Type)
-    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_6_0);
+        __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_6_0);
 
 
 /*  vDSP_DCT_Execute is a DCT execution routine.  It performs a DCT, with the
@@ -7102,7 +7221,7 @@ void vDSP_DCT_Execute(
     const struct vDSP_DFT_SetupStruct *__vDSP_Setup,
     const float                       *__vDSP_Input,
     float                             *__vDSP_Output)
-    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_6_0);
+        __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_6_0);
 
 
 /*  vDSP_dotpr2, vector single-precision stereo dot product.
@@ -7163,6 +7282,66 @@ void vDSP_dotpr2(
     float *__vDSP_C1,
     vDSP_Length __vDSP_Length)
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
+
+
+/*  vDSP_dotpr2D, vector double-precision stereo dot product.
+
+    Function:
+
+        This routine calculates the dot product of A0 with B and the dot
+        product of A1 with B.  This is functionally equivalent to calculating
+        two dot products but might execute faster.
+
+        In pseudocode, the operation is:
+
+            sum0 = 0;
+            sum1 = 0;
+            for (i = 0; i < Length; ++i)
+            {
+                sum0 += A0[i*A0Stride] * B[i*BStride];
+                sum1 += A1[i*A1Stride] * B[i*BStride];
+            }
+            *C0 = sum0;
+            *C1 = sum1;
+
+    Input:
+
+        const double *A0, vDSP_Stride A0Stride.
+
+            Starting address and stride for input vector A0.
+
+        const double *A1, vDSP_Stride A1Stride.
+
+            Starting address and stride for input vector A1.
+
+        const double *B,  vDSP_Stride BStride.
+
+            Starting address and stride for input vector B.
+
+        double *C0.
+
+            Address for dot product of A0 and B.
+
+        double *C1.
+
+            Address for dot product of A1 and B.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are written to *C0 and *C1.
+*/
+void vDSP_dotpr2D(
+    const double *__vDSP_A0, vDSP_Stride __vDSP_A0Stride,
+    const double *__vDSP_A1, vDSP_Stride __vDSP_A1Stride,
+    const double *__vDSP_B,  vDSP_Stride __vDSP_BStride,
+    double *__vDSP_C0,
+    double *__vDSP_C1,
+    vDSP_Length __vDSP_Length)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 /*  vDSP_dotpr_s1_15, vector integer 1.15 format dot product.
@@ -7391,6 +7570,97 @@ void vDSP_dotpr2_s8_24(
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
 
 
+/*  vDSP_vaddsub, vector single-precision add and subtract.
+
+    Adds vector I0 to vector I1 and leaves the result in vector O0.
+    Subtracts vector I0 from vector I1 and leaves the result in vector O1.
+
+    This routine calculates:
+
+        for (i = 0; i < N; ++i)
+        {
+            float i1 = I1[i*I1S], i0 = I0[i*I0S];
+            O0[i*O0S] = i1 + i0;
+            O1[i*O1S] = i1 - i0;
+        }
+
+    Input:
+
+        const float *I0, const float *I1, vDSP_Stride I0S, vDSP_Stride I1S.
+
+            Starting addresses of both inputs and strides for the input vectors.
+
+        float *O0, float *O1, vDSP_Stride O0S, vDSP_Stride O1S.
+
+            Starting addresses of both outputs and strides for the output vectors.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are written to O0 and O1.
+
+    In-Place Operation:
+
+        Either of O0 and/or O1 may equal I0 and/or I1, but O0 may not equal
+        O1.  Otherwise, no overlap is permitted between any of the buffers.
+*/
+void vDSP_vaddsub(
+    const float *__vDSP_I0, vDSP_Stride __vDSP_I0S,
+    const float *__vDSP_I1, vDSP_Stride __vDSP_I1S,
+          float *__vDSP_O0, vDSP_Stride __vDSP_O0S,
+          float *__vDSP_O1, vDSP_Stride __vDSP_O1S,
+    vDSP_Length __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+
+
+/*  vDSP_vaddsubD, vector double-precision add and subtract.
+
+    Adds vector I0 to vector I1 and leaves the result in vector O0.
+    Subtracts vector I0 from vector I1 and leaves the result in vector O1.
+
+    This routine calculates:
+
+        for (i = 0; i < N; ++i)
+        {
+            double i1 = I1[i*I1S], i0 = I0[i*I0S];
+            O0[i*O0S] = i1 + i0;
+            O1[i*O1S] = i1 - i0;
+        }
+
+    Input:
+
+        const double *I0, const double *I1, vDSP_Stride I0S, vDSP_Stride I1S.
+
+            Starting addresses of both inputs and strides for the input vectors.
+
+        double *O0, double *O1, vDSP_Stride O0S, vDSP_Stride O1S.
+
+            Starting addresses of both outputs and strides for the output vectors.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are written to O0 and O1.
+
+    In-Place Operation:
+
+        Either of O0 and/or O1 may equal I0 and/or I1, but O0 may not equal
+        O1.  Otherwise, no overlap is permitted between any of the buffers.
+*/
+void vDSP_vaddsubD(
+    const double *__vDSP_I0, vDSP_Stride __vDSP_I0S,
+    const double *__vDSP_I1, vDSP_Stride __vDSP_I1S,
+          double *__vDSP_O0, vDSP_Stride __vDSP_O0S,
+          double *__vDSP_O1, vDSP_Stride __vDSP_O1S,
+    vDSP_Length __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
+
 
 /*  vDSP_vrampmul, vector single-precision vramp and multiply.
 
@@ -7422,7 +7692,7 @@ void vDSP_dotpr2_s8_24(
 
             Value of the step for the ramp.
 
-        float *O, vDSP_Stride *OS.
+        float *O, vDSP_Stride OS.
 
             Starting address and stride for the output vector.
 
@@ -7443,6 +7713,59 @@ void vDSP_vrampmul(
     float *__vDSP_O, vDSP_Stride __vDSP_OS,
     vDSP_Length __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
+
+
+/*  vDSP_vrampmulD, vector double-precision vramp and multiply.
+
+    This routine puts into O the product of I and a ramp function with initial
+    value *Start and slope *Step.  *Start is updated to continue the ramp
+    in a consecutive call.  To continue the ramp smoothly, the new value of
+    *Step includes rounding errors accumulated during the routine rather than
+    being calculated directly as *Start + N * *Step.
+
+    This routine calculates:
+
+        for (i = 0; i < N; ++i)
+        {
+            O[i*OS] = *Start * I[i*IS];
+            *Start += *Step;
+        }
+
+    Input:
+
+        const double *I, vDSP_Stride IS.
+
+            Starting address and stride for the input vector.
+
+        double *Start.
+
+            Starting value for the ramp.
+
+        const double *Step.
+
+            Value of the step for the ramp.
+
+        double *O, vDSP_Stride OS.
+
+            Starting address and stride for the output vector.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are written to O.
+
+        On return, *Start contains initial *Start + N * *Step.
+*/
+void vDSP_vrampmulD(
+    const double *__vDSP_I, vDSP_Stride __vDSP_IS,
+    double *__vDSP_Start,
+    const double *__vDSP_Step,
+    double *__vDSP_O, vDSP_Stride __vDSP_OS,
+    vDSP_Length __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 /*  vDSP_vrampmuladd, vector single-precision vramp, multiply and add.
@@ -7475,7 +7798,7 @@ void vDSP_vrampmul(
 
             Value of the step for the ramp.
 
-        float *O, vDSP_Stride *OS.
+        float *O, vDSP_Stride OS.
 
             Starting address and stride for the output vector.
 
@@ -7496,6 +7819,59 @@ void vDSP_vrampmuladd(
     float *__vDSP_O, vDSP_Stride __vDSP_OS,
     vDSP_Length __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
+
+
+/*  vDSP_vrampmuladdD, vector double-precision vramp, multiply and add.
+
+    This routine adds to O the product of I and a ramp function with initial
+    value *Start and slope *Step.  *Start is updated to continue the ramp in a
+    consecutive call.  To continue the ramp smoothly, the new value of *Step
+    includes rounding errors accumulated during the routine rather than being
+    calculated directly as *Start + N * *Step.
+
+    This routine calculates:
+
+        for (i = 0; i < N; ++i)
+        {
+            O[i*OS] += *Start * I[i*IS];
+            *Start += *Step;
+        }
+
+    Input:
+
+        const double *I, vDSP_Stride IS.
+
+            Starting address and stride for the input vector.
+
+        double *Start.
+
+            Starting value for the ramp.
+
+        const double *Step.
+
+            Value of the step for the ramp.
+
+        double *O, vDSP_Stride OS.
+
+            Starting address and stride for the output vector.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are added to O.
+
+        On return, *Start contains initial *Start + N * *Step.
+*/
+void vDSP_vrampmuladdD(
+    const double *__vDSP_I, vDSP_Stride __vDSP_IS,
+          double *__vDSP_Start,
+    const double *__vDSP_Step,
+          double *__vDSP_O, vDSP_Stride __vDSP_OS,
+    vDSP_Length __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 /*  vDSP_vrampmul2, stereo vector single-precision vramp and multiply.
@@ -7536,7 +7912,7 @@ void vDSP_vrampmuladd(
 
             Value of the step for the ramp.
 
-        float *O0, float *O1, vDSP_Stride *OS.
+        float *O0, float *O1, vDSP_Stride OS.
 
             Starting addresses of both outputs and stride for the output vectors.
 
@@ -7557,6 +7933,67 @@ void vDSP_vrampmul2(
     float *__vDSP_O0, float *__vDSP_O1, vDSP_Stride __vDSP_OS,
     vDSP_Length __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
+
+
+/*  vDSP_vrampmul2D, stereo vector double-precision vramp and multiply.
+
+    This routine:
+
+        Puts into O0 the product of I0 and a ramp function with initial value
+        *Start and slope *Step.
+
+        Puts into O1 the product of I1 and a ramp function with initial value
+        *Start and slope *Step.
+
+    *Start is updated to continue the ramp in a consecutive call.  To continue
+    the ramp smoothly, the new value of *Step includes rounding errors
+    accumulated during the routine rather than being calculated directly as
+    *Start + N * *Step.
+
+    This routine calculates:
+
+        for (i = 0; i < N; ++i)
+        {
+            O0[i*OS] = *Start * I0[i*IS];
+            O1[i*OS] = *Start * I1[i*IS];
+            *Start += *Step;
+        }
+
+    Input:
+
+        const double *I0, const double *I1, vDSP_Stride IS.
+
+            Starting addresses of both inputs and stride for the input vectors.
+
+        double *Start.
+
+            Starting value for the ramp.
+
+        const double *Step.
+
+            Value of the step for the ramp.
+
+        double *O0, double *O1, vDSP_Stride OS.
+
+            Starting addresses of both outputs and stride for the output vectors.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are written to O0 and O1.
+
+        On return, *Start contains initial *Start + N * *Step.
+*/
+void vDSP_vrampmul2D(
+    const double *__vDSP_I0, const double *__vDSP_I1, vDSP_Stride __vDSP_IS,
+          double *__vDSP_Start,
+    const double *__vDSP_Step,
+          double *__vDSP_O0, double *__vDSP_O1, vDSP_Stride __vDSP_OS,
+    vDSP_Length __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 /*  vDSP_vrampmuladd2, stereo vector single-precision vramp, multiply and add.
@@ -7597,7 +8034,7 @@ void vDSP_vrampmul2(
 
             Value of the step for the ramp.
 
-        float *O0, float *O1, vDSP_Stride *OS.
+        float *O0, float *O1, vDSP_Stride OS.
 
             Starting addresses of both outputs and stride for the output vectors.
 
@@ -7618,6 +8055,67 @@ void vDSP_vrampmuladd2(
     float *__vDSP_O0, float *__vDSP_O1, vDSP_Stride __vDSP_OS,
     vDSP_Length __vDSP_N)
         __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
+
+
+/*  vDSP_vrampmuladd2D, stereo vector double-precision vramp, multiply and add.
+
+    This routine:
+
+        Adds to O0 the product of I0 and a ramp function with initial value
+        *Start and slope *Step.
+
+        Adds to O1 the product of I1 and a ramp function with initial value
+        *Start and slope *Step.
+
+    *Start is updated to continue the ramp in a consecutive call.  To continue
+    the ramp smoothly, the new value of *Step includes rounding errors
+    accumulated during the routine rather than being calculated directly as
+    *Start + N * *Step.
+
+    This routine calculates:
+
+        for (i = 0; i < N; ++i)
+        {
+            O0[i*OS] += *Start * I0[i*IS];
+            O1[i*OS] += *Start * I1[i*IS];
+            *Start += *Step;
+        }
+
+    Input:
+
+        const double *I0, const double *I1, vDSP_Stride IS.
+
+            Starting addresses of both inputs and stride for the input vectors.
+
+        double *Start.
+
+            Starting value for the ramp.
+
+        const double *Step.
+
+            Value of the step for the ramp.
+
+        double *O0, double *O1, vDSP_Stride OS.
+
+            Starting addresses of both outputs and stride for the output vectors.
+
+        vDSP_Length Length.
+
+            Number of elements in each vector.
+
+    Output:
+
+        The results are written to O0 and O1.
+
+        On return, *Start contains initial *Start + N * *Step.
+*/
+void vDSP_vrampmuladd2D(
+    const double *__vDSP_I0, const double *__vDSP_I1, vDSP_Stride __vDSP_IS,
+    double *__vDSP_Start,
+    const double *__vDSP_Step,
+    double *__vDSP_O0, double *__vDSP_O1, vDSP_Stride __vDSP_OS,
+    vDSP_Length __vDSP_N)
+        __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 /*  vDSP_vrampmul_s1_15, vector integer 1.15 format vramp and multiply.
@@ -7652,7 +8150,7 @@ void vDSP_vrampmuladd2(
 
             Value of the step for the ramp.
 
-        short int *O, vDSP_Stride *OS.
+        short int *O, vDSP_Stride OS.
 
             Starting address and stride for the output vector.
 
@@ -7707,7 +8205,7 @@ void vDSP_vrampmul_s1_15(
 
             Value of the step for the ramp.
 
-        short int *O, vDSP_Stride *OS.
+        short int *O, vDSP_Stride OS.
 
             Starting address and stride for the output vector.
 
@@ -7769,7 +8267,7 @@ void vDSP_vrampmuladd_s1_15(
 
             Value of the step for the ramp.
 
-        short int *O0, short int *O1, vDSP_Stride *OS.
+        short int *O0, short int *O1, vDSP_Stride OS.
 
             Starting addresses of both outputs and stride for the output
             vectors.
@@ -7834,7 +8332,7 @@ void vDSP_vrampmul2_s1_15(
 
             Value of the step for the ramp.
 
-        short int *O0, short int *O1, vDSP_Stride *OS.
+        short int *O0, short int *O1, vDSP_Stride OS.
 
             Starting addresses of both outputs and stride for the output
             vectors.
@@ -7891,7 +8389,7 @@ void vDSP_vrampmuladd2_s1_15(
 
             Value of the step for the ramp.
 
-        int *O, vDSP_Stride *OS.
+        int *O, vDSP_Stride OS.
 
             Starting address and stride for the output vector.
 
@@ -7946,7 +8444,7 @@ void vDSP_vrampmul_s8_24(
 
             Value of the step for the ramp.
 
-        int *O, vDSP_Stride *OS.
+        int *O, vDSP_Stride OS.
 
             Starting address and stride for the output vector.
 
@@ -8008,7 +8506,7 @@ void vDSP_vrampmuladd_s8_24(
 
             Value of the step for the ramp.
 
-        int *O0, int *O1, vDSP_Stride *OS.
+        int *O0, int *O1, vDSP_Stride OS.
 
             Starting addresses of both outputs and stride for the output
             vectors.
@@ -8073,7 +8571,7 @@ void vDSP_vrampmul2_s8_24(
 
             Value of the step for the ramp.
 
-        int *O0, int *O1, vDSP_Stride *OS.
+        int *O0, int *O1, vDSP_Stride OS.
 
             Starting addresses of both outputs and stride for the output
             vectors.

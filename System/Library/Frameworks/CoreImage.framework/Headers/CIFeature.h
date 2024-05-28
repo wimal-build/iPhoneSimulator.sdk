@@ -79,3 +79,48 @@ CORE_IMAGE_CLASS_EXPORT
 
 @end
 
+/** A rectangle feature found by a CIDetector
+ All positions are relative to the original image. */
+
+CORE_IMAGE_CLASS_EXPORT
+@interface CIRectangleFeature : CIFeature
+{
+    CGRect bounds;
+    CGPoint topLeft;
+    CGPoint topRight;
+    CGPoint bottomLeft;
+    CGPoint bottomRight;
+}
+
+@property (readonly, assign) CGRect bounds;
+@property (readonly, assign) CGPoint topLeft;
+@property (readonly, assign) CGPoint topRight;
+@property (readonly, assign) CGPoint bottomLeft;
+@property (readonly, assign) CGPoint bottomRight;
+
+@end
+
+/** A barcode feature found by a CIDetector
+ All positions are relative to the original image. */
+
+CORE_IMAGE_CLASS_EXPORT
+@interface CIQRCodeFeature : CIFeature
+{
+    CGRect bounds;
+    CGPoint topLeft;
+    CGPoint topRight;
+    CGPoint bottomLeft;
+    CGPoint bottomRight;
+    NSString* messageString;
+}
+
+@property (readonly, assign) CGRect bounds;
+@property (readonly, assign) CGPoint topLeft;
+@property (readonly, assign) CGPoint topRight;
+@property (readonly, assign) CGPoint bottomLeft;
+@property (readonly, assign) CGPoint bottomRight;
+@property (readonly, copy) NSString* messageString;
+
+
+@end
+

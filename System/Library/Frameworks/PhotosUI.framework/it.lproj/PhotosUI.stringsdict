@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>La libreria foto di iCloud è stata disabilitata. Hai %#@n_days@ per assicurarti di avere una copia completa di tutti gli originali delle foto e dei video su questo o su un altro dispositivo.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>a disposizione %d giorni</string>
+			<key>many</key>
+			<string>a disposizione %d giorni</string>
+			<key>one</key>
+			<string>a disposizione %d giorno</string>
+			<key>other</key>
+			<string>a disposizione %d giorni</string>
+			<key>two</key>
+			<string>a disposizione %d giorni</string>
+			<key>zero</key>
+			<string>a disposizione %d giorni</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>La libreria foto di iCloud verrà eliminata %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>tra %d giorni</string>
+			<key>many</key>
+			<string>tra %d giorni</string>
+			<key>one</key>
+			<string>tra %d giorno</string>
+			<key>other</key>
+			<string>tra %d giorni</string>
+			<key>two</key>
+			<string>tra %d giorni</string>
+			<key>zero</key>
+			<string>tra %d giorni</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Quando la libreria foto di iCloud è attiva, la sincronizzazione delle foto tramite iTunes non è supportata.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto verranno rimosse</string>
+			<key>many</key>
+			<string>%d foto verranno rimosse</string>
+			<key>one</key>
+			<string>%d foto verrà rimossa</string>
+			<key>other</key>
+			<string>%d foto verranno rimosse</string>
+			<key>two</key>
+			<string>%d foto verranno rimosse</string>
+			<key>zero</key>
+			<string>%d foto verranno rimosse</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Quando la libreria foto di iCloud è attiva, la sincronizzazione delle foto tramite iTunes non è supportata.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d foto e video verranno rimossi</string>
+			<key>many</key>
+			<string>%d foto e video verranno rimossi</string>
+			<key>one</key>
+			<string>%d video verrà rimosso</string>
+			<key>other</key>
+			<string>%d foto e video verranno rimossi</string>
+			<key>two</key>
+			<string>%d foto e video verranno rimossi</string>
+			<key>zero</key>
+			<string>%d foto e video verranno rimossi</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Quando la libreria foto di iCloud è attiva, la sincronizzazione delle foto tramite iTunes non è supportata.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d video verranno rimossi</string>
+			<key>many</key>
+			<string>%d video verranno rimossi</string>
+			<key>one</key>
+			<string>%d video verrà rimosso</string>
+			<key>other</key>
+			<string>%d video verranno rimossi</string>
+			<key>two</key>
+			<string>%d video verranno rimossi</string>
+			<key>zero</key>
+			<string>%d video verranno rimossi</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>La libreria foto di iCloud verrà eliminata da iCloud %#@n_days@, le foto e i video non verranno più caricati. Puoi modificare questa modalità di eliminazione nella gestione dello spazio di archiviazione di iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>tra %d giorni</string>
+			<key>many</key>
+			<string>tra %d giorni</string>
+			<key>one</key>
+			<string>tra %d giorno</string>
+			<key>other</key>
+			<string>tra %d giorni</string>
+			<key>two</key>
+			<string>tra %d giorni</string>
+			<key>zero</key>
+			<string>tra %d giorni</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>La libreria foto di iCloud verrà eliminata da iCloud %#@n_days@. Scegli “Scarica e conserva originali” per scaricare una copia completa delle foto e dei video in tuo possesso.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>tra %d giorni</string>
+			<key>many</key>
+			<string>tra %d giorni</string>
+			<key>one</key>
+			<string>tra %d giorno</string>
+			<key>other</key>
+			<string>tra %d giorni</string>
+			<key>two</key>
+			<string>tra %d giorni</string>
+			<key>zero</key>
+			<string>tra %d giorni</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>La libreria foto di iCloud non viene aggiornata da %#@n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>tra %d giorni</string>
+			<key>many</key>
+			<string>tra %d giorni</string>
+			<key>one</key>
+			<string>tra %d giorno</string>
+			<key>other</key>
+			<string>tra %d giorni</string>
+			<key>two</key>
+			<string>tra %d giorni</string>
+			<key>zero</key>
+			<string>tra %d giorni</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Aggiornato %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d minuti fa</string>
+			<key>many</key>
+			<string>%d minuti fa</string>
+			<key>one</key>
+			<string>%d minuto fa</string>
+			<key>other</key>
+			<string>%d minuti fa</string>
+			<key>two</key>
+			<string>%d minuti fa</string>
+			<key>zero</key>
+			<string>%d minuti fa</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -8,9 +8,9 @@
 #import <Foundation/Foundation.h>
 
 #if TARGET_OS_IPHONE
-#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/gltypes.h>
 #else // !TARGET_OS_IPHONE
-#import <OpenGL/gl3.h>
+#import <OpenGL/gltypes.h>
 #endif // !TARGET_OS_IPHONE
 
 #import <GLKit/GLKMath.h>

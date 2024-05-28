@@ -2,7 +2,7 @@
 //  UIViewControllerTransitionCoordinator.h
 //  UIKit
 //
-//  Copyright (c) 2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -48,8 +48,16 @@
 // UITransitionContextFromViewControllerKey, and
 - (UIViewController *)viewControllerForKey:(NSString *)key;
 
+// Currently only two keys are defined by the system.
+// UITransitionContextToViewKey,
+// UITransitionContextFromViewKey.
+- (UIView *)viewForKey:(NSString *)key NS_AVAILABLE_IOS(8_0);
+
 // The view in which the animated transition is taking place.
 - (UIView *)containerView;
+
+// This is a rotation transform of either +90, -90, 180. It is only set to something other identify if the transition is a rotation.
+- (CGAffineTransform)targetTransform NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -95,7 +103,7 @@
 
 @end
 
-@interface UIViewController(TransitionCoordinator)
+@interface UIViewController(UIViewControllerTransitionCoordinator)
 
 // The default implementation will return a transition coordinator if called during
 // an active presentation or dismissal. Otherwise it will ask the parent view

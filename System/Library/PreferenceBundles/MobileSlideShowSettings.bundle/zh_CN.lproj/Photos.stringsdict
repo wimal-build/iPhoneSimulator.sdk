@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>此 iPad 无法%#@download_n_items@。如继续，%#@low_res_versions_will_be_removed@。</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>many</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>one</key>
+			<string>下载 %d 项全分辨率项目</string>
+			<key>other</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>two</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>zero</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>many</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>one</key>
+			<string>将移除此项目的低分辨率版本</string>
+			<key>other</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>two</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>zero</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>此 iPhone 无法%#@download_n_items@。如继续，%#@low_res_versions_will_be_removed@。</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>many</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>one</key>
+			<string>下载 %d 项全分辨率项目</string>
+			<key>other</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>two</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>zero</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>many</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>one</key>
+			<string>此项目的低分辨率版本将移除</string>
+			<key>other</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>two</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>zero</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>此 iPod touch 无法%#@download_n_items@。如继续，%#@low_res_versions_will_be_removed@。</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>many</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>one</key>
+			<string>下载 %d 项全分辨率项目</string>
+			<key>other</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>two</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+			<key>zero</key>
+			<string>下载 %d 项全分辨率照片和视频</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>many</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>one</key>
+			<string>将移除此项目的低分辨率版本</string>
+			<key>other</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>two</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+			<key>zero</key>
+			<string>将移除这些照片和视频的低分别率版本</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@在 iCloud 照片图库中。</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些照片将保留</string>
+			<key>many</key>
+			<string>这些照片将保留</string>
+			<key>one</key>
+			<string>此照片将保留</string>
+			<key>other</key>
+			<string>这些照片将保留</string>
+			<key>two</key>
+			<string>这些照片将保留</string>
+			<key>zero</key>
+			<string>这些照片将保留</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@在 iCloud 照片图库中。</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些照片和视频将保留</string>
+			<key>many</key>
+			<string>这些照片和视频将保留</string>
+			<key>one</key>
+			<string>此项目将保留</string>
+			<key>other</key>
+			<string>这些照片和视频将保留</string>
+			<key>two</key>
+			<string>这些照片和视频将保留</string>
+			<key>zero</key>
+			<string>这些照片和视频将保留</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@在 iCloud 照片图库中。</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些视频将保留</string>
+			<key>many</key>
+			<string>这些视频将保留</string>
+			<key>one</key>
+			<string>此视频将保留</string>
+			<key>other</key>
+			<string>这些视频将保留</string>
+			<key>two</key>
+			<string>这些视频将保留</string>
+			<key>zero</key>
+			<string>这些视频将保留</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@出此 iPad</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>many</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>one</key>
+			<string>将移除 %d 项内容</string>
+			<key>other</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>two</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>zero</key>
+			<string>将移除 %d 张照片和视频</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@出此 iPhone。%#@they_will_remain_in@ iCloud 照片图库中。</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>many</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>one</key>
+			<string>将移除 %d 项内容</string>
+			<key>other</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>two</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>zero</key>
+			<string>将移除 %d 张照片和视频</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些照片将保留在</string>
+			<key>many</key>
+			<string>这些照片将保留在</string>
+			<key>one</key>
+			<string>此项目将保留在</string>
+			<key>other</key>
+			<string>这些照片将保留在</string>
+			<key>two</key>
+			<string>这些照片将保留在</string>
+			<key>zero</key>
+			<string>这些照片将保留在</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@出此 iPod touch。%#@they_will_remain_in@ iCloud 照片图库中。</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>many</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>one</key>
+			<string>将移除 %d 项内容</string>
+			<key>other</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>two</key>
+			<string>将移除 %d 张照片和视频</string>
+			<key>zero</key>
+			<string>将移除 %d 张照片和视频</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些照片将保留在</string>
+			<key>many</key>
+			<string>这些照片将保留在</string>
+			<key>one</key>
+			<string>此项目将保留在</string>
+			<key>other</key>
+			<string>这些照片将保留在</string>
+			<key>two</key>
+			<string>这些照片将保留在</string>
+			<key>zero</key>
+			<string>这些照片将保留在</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@出此 iPad</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 张照片</string>
+			<key>many</key>
+			<string>将移除 %d 张照片</string>
+			<key>one</key>
+			<string>将移除 %d 张照片</string>
+			<key>other</key>
+			<string>将移除 %d 张照片</string>
+			<key>two</key>
+			<string>将移除 %d 张照片</string>
+			<key>zero</key>
+			<string>将移除 %d 张照片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@出此 iPhone。%#@they_will_remain_in@ iCloud 照片图库中。</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 张照片</string>
+			<key>many</key>
+			<string>将移除 %d 张照片</string>
+			<key>one</key>
+			<string>将移除 %d 张照片</string>
+			<key>other</key>
+			<string>将移除 %d 张照片</string>
+			<key>two</key>
+			<string>将移除 %d 张照片</string>
+			<key>zero</key>
+			<string>将移除 %d 张照片</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些照片将保留在</string>
+			<key>many</key>
+			<string>这些照片将保留在</string>
+			<key>one</key>
+			<string>此照片将保留在</string>
+			<key>other</key>
+			<string>这些照片将保留在</string>
+			<key>two</key>
+			<string>这些照片将保留在</string>
+			<key>zero</key>
+			<string>这些照片将保留在</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@出此 iPod touch。%#@they_will_remain_in@ iCloud 照片图库中。</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 张照片</string>
+			<key>many</key>
+			<string>将移除 %d 张照片</string>
+			<key>one</key>
+			<string>将移除 %d 张照片</string>
+			<key>other</key>
+			<string>将移除 %d 张照片</string>
+			<key>two</key>
+			<string>将移除 %d 张照片</string>
+			<key>zero</key>
+			<string>将移除 %d 张照片</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些照片将保留在</string>
+			<key>many</key>
+			<string>这些照片将保留在</string>
+			<key>one</key>
+			<string>此照片将保留在</string>
+			<key>other</key>
+			<string>这些照片将保留在</string>
+			<key>two</key>
+			<string>这些照片将保留在</string>
+			<key>zero</key>
+			<string>这些照片将保留在</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@出此 iPad</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 个视频</string>
+			<key>many</key>
+			<string>将移除 %d 个视频</string>
+			<key>one</key>
+			<string>将移除 %d 个视频</string>
+			<key>other</key>
+			<string>将移除 %d 个视频</string>
+			<key>two</key>
+			<string>将移除 %d 个视频</string>
+			<key>zero</key>
+			<string>将移除 %d 个视频</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@出此 iPhone。%#@they_will_remain_in@ iCloud 照片图库中。</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 个视频</string>
+			<key>many</key>
+			<string>将移除 %d 个视频</string>
+			<key>one</key>
+			<string>将移除 %d 个视频</string>
+			<key>other</key>
+			<string>将移除 %d 个视频</string>
+			<key>two</key>
+			<string>将移除 %d 个视频</string>
+			<key>zero</key>
+			<string>将移除 %d 个视频</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些视频将保留在</string>
+			<key>many</key>
+			<string>这些视频将保留在</string>
+			<key>one</key>
+			<string>此视频将保留在</string>
+			<key>other</key>
+			<string>这些视频将保留在</string>
+			<key>two</key>
+			<string>这些视频将保留在</string>
+			<key>zero</key>
+			<string>这些视频将保留在</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@出此 iPod touch。%#@they_will_remain_in@ iCloud 照片图库中。</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>将移除 %d 个视频</string>
+			<key>many</key>
+			<string>将移除 %d 个视频</string>
+			<key>one</key>
+			<string>将移除 %d 个视频</string>
+			<key>other</key>
+			<string>将移除 %d 个视频</string>
+			<key>two</key>
+			<string>将移除 %d 个视频</string>
+			<key>zero</key>
+			<string>将移除 %d 个视频</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>这些视频将保留在</string>
+			<key>many</key>
+			<string>这些视频将保留在</string>
+			<key>one</key>
+			<string>此视频将保留在</string>
+			<key>other</key>
+			<string>这些视频将保留在</string>
+			<key>two</key>
+			<string>这些视频将保留在</string>
+			<key>zero</key>
+			<string>这些视频将保留在</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

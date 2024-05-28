@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud Fotoknižnica bola zakázaná. %#@have_n_days@ aby ste sa uistili, že sa na tomto alebo inom zariadení nachádza úplná kópia všetkých vašich originálnych fotiek a videí.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Máte %d dni</string>
+			<key>many</key>
+			<string>Máte %d dní</string>
+			<key>one</key>
+			<string>Máte %d deň</string>
+			<key>other</key>
+			<string>Máte %d dňa</string>
+			<key>two</key>
+			<string>Máte %d dni</string>
+			<key>zero</key>
+			<string>Máte %d dní</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud Fotoknižnica bude vymazaná o %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dni</string>
+			<key>many</key>
+			<string>%d dní</string>
+			<key>one</key>
+			<string>%d deň</string>
+			<key>other</key>
+			<string>%d dňa</string>
+			<key>two</key>
+			<string>%d dni</string>
+			<key>zero</key>
+			<string>%d dní</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Synchronizácia fotiek cez iTunes nie je podporovaná pri zapnutej iCloud Fotoknižnici.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotky budú odstránené</string>
+			<key>many</key>
+			<string>%d fotiek bude odstránených</string>
+			<key>one</key>
+			<string>%d fotka bude odstránená</string>
+			<key>other</key>
+			<string>%d fotky bude odstránenej</string>
+			<key>two</key>
+			<string>%d fotky budú odstránené</string>
+			<key>zero</key>
+			<string>%d fotiek bude odstránených</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Synchronizácia fotiek cez iTunes nie je podporovaná pri zapnutej iCloud Fotoknižnici.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotky a videá budú odstránené</string>
+			<key>many</key>
+			<string>%d fotiek a videí bude odstránených</string>
+			<key>one</key>
+			<string>%d video bude odstránené</string>
+			<key>other</key>
+			<string>%d fotky a videa bude odstráneného</string>
+			<key>two</key>
+			<string>%d fotky a videá budú odstránené</string>
+			<key>zero</key>
+			<string>%d fotiek a videí bude odstránených</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Synchronizácia fotiek cez iTunes nie je podporovaná pri zapnutej iCloud Fotoknižnici.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videá budú odstránené</string>
+			<key>many</key>
+			<string>%d videí bude odstránených</string>
+			<key>one</key>
+			<string>%d video bude odstránené</string>
+			<key>other</key>
+			<string>%d videa bude odstráneného</string>
+			<key>two</key>
+			<string>%d videá budú odstránené</string>
+			<key>zero</key>
+			<string>%d videí bude odstránených</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud Fotoknižnica bude vymazaná z iCloudu o %#@in_n_days@. Fotky a videá viac nie sú odosielané. Vymazanie môžete zrušiť v správe iCloud úložiska.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dni</string>
+			<key>many</key>
+			<string>%d dní</string>
+			<key>one</key>
+			<string>%d deň</string>
+			<key>other</key>
+			<string>%d dňa</string>
+			<key>two</key>
+			<string>%d dni</string>
+			<key>zero</key>
+			<string>%d dní</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud Fotoknižnica bude vymazaná z iCloudu o %#@in_n_days@. Ak si chcete stiahnuť úplnú kópiu svojich fotiek a videí, vyberte Stiahnuť a ponechať originály.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dni</string>
+			<key>many</key>
+			<string>%d dní</string>
+			<key>one</key>
+			<string>%d deň</string>
+			<key>other</key>
+			<string>%d dňa</string>
+			<key>two</key>
+			<string>%d dni</string>
+			<key>zero</key>
+			<string>%d dní</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iCloud Fotoknižnica nebola aktualizovaná %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d dni</string>
+			<key>many</key>
+			<string>%d dní</string>
+			<key>one</key>
+			<string>%d deň</string>
+			<key>other</key>
+			<string>%d dňa</string>
+			<key>two</key>
+			<string>%d dni</string>
+			<key>zero</key>
+			<string>%d dní</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Naposledy aktualizované %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>pred %d minútami</string>
+			<key>many</key>
+			<string>pred %d minútami</string>
+			<key>one</key>
+			<string>pred %d minútou</string>
+			<key>other</key>
+			<string>pred %d minútou</string>
+			<key>two</key>
+			<string>pred %d minútami</string>
+			<key>zero</key>
+			<string>pred %d minútami</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

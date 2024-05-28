@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Biblioteca de Fotos do iCloud foi desativada. Você %#@have_n_days@ para certificar-se de que tem uma cópia completa de todas as suas fotos e vídeos originais armazenadas neste ou em outro dispositivo.</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>tem %d dias</string>
+			<key>many</key>
+			<string>tem %d dias</string>
+			<key>one</key>
+			<string>tem %d dia</string>
+			<key>other</key>
+			<string>tem %d dias</string>
+			<key>two</key>
+			<string>tem %d dias</string>
+			<key>zero</key>
+			<string>tem %d dias</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Biblioteca de Fotos do iCloud Será Apagada %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>em %d Dias</string>
+			<key>many</key>
+			<string>em %d Dias</string>
+			<key>one</key>
+			<string>em %d Dia</string>
+			<key>other</key>
+			<string>em %d Dias</string>
+			<key>two</key>
+			<string>em %d Dias</string>
+			<key>zero</key>
+			<string>em %d Dias</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A sincronização de fotos via iTunes não é suportada quando a Biblioteca de Fotos do iCloud está ativada.
+
+%#@d_photos_will_be_removed@.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos serão removidas</string>
+			<key>many</key>
+			<string>%d fotos serão removidas</string>
+			<key>one</key>
+			<string>%d foto será removida</string>
+			<key>other</key>
+			<string>%d fotos serão removidas</string>
+			<key>two</key>
+			<string>%d fotos serão removidas</string>
+			<key>zero</key>
+			<string>%d fotos serão removidas</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A sincronização de fotos via iTunes não é suportada quando a Biblioteca de Fotos do iCloud está ativada.
+
+%#@d_photos_videos_will_be_removed@.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos e vídeos serão removidos</string>
+			<key>many</key>
+			<string>%d fotos e vídeos serão removidos</string>
+			<key>one</key>
+			<string>%d vídeo será removido</string>
+			<key>other</key>
+			<string>%d fotos e vídeos serão removidos</string>
+			<key>two</key>
+			<string>%d fotos e vídeos serão removidos</string>
+			<key>zero</key>
+			<string>%d fotos e vídeos serão removidos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A sincronização de fotos via iTunes não é suportada quando a Biblioteca de Fotos do iCloud está ativada.
+
+%#@d_videos_will_be_removed@.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d vídeos serão removidos</string>
+			<key>many</key>
+			<string>%d vídeos serão removidos</string>
+			<key>one</key>
+			<string>%d vídeo será removido</string>
+			<key>other</key>
+			<string>%d vídeos serão removidos</string>
+			<key>two</key>
+			<string>%d vídeos serão removidos</string>
+			<key>zero</key>
+			<string>%d vídeos serão removidos</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Biblioteca de Fotos do iCloud será apagada do iCloud %#@in_n_days@. As fotos e os vídeos não estão mais sendo carregados. Você pode cancelar este apagamento no Gerenciamento do Armazenamento do iCloud.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>em %d dias</string>
+			<key>many</key>
+			<string>em %d dias</string>
+			<key>one</key>
+			<string>em %d dia</string>
+			<key>other</key>
+			<string>em %d dias</string>
+			<key>two</key>
+			<string>em %d dias</string>
+			<key>zero</key>
+			<string>em %d dias</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Biblioteca de Fotos do iCloud será apagada do iCloud %#@in_n_days@. Escolha “Transferir e Manter Originais” abaixo para transferir uma cópia completa de suas fotos e vídeos.</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>em %d dias</string>
+			<key>many</key>
+			<string>em %d dias</string>
+			<key>one</key>
+			<string>em %d dia</string>
+			<key>other</key>
+			<string>em %d dias</string>
+			<key>two</key>
+			<string>em %d dias</string>
+			<key>zero</key>
+			<string>em %d dias</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>A Biblioteca de Fotos do iCloud Não Foi Atualizada %#@in_n_days@</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>em %d Dias</string>
+			<key>many</key>
+			<string>em %d Dias</string>
+			<key>one</key>
+			<string>em %d Dia</string>
+			<key>other</key>
+			<string>em %d Dias</string>
+			<key>two</key>
+			<string>em %d Dias</string>
+			<key>zero</key>
+			<string>em %d Dias</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Última atualização: %#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>há %d minutos</string>
+			<key>many</key>
+			<string>há %d minutos</string>
+			<key>one</key>
+			<string>há %d minuto</string>
+			<key>other</key>
+			<string>há %d minutos</string>
+			<key>two</key>
+			<string>há %d minutos</string>
+			<key>zero</key>
+			<string>há %d minutos</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

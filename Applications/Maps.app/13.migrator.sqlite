@@ -1,0 +1,7 @@
+-- Migrates traces from v13 to v14
+BEGIN TRANSACTION;
+
+-- Adding motion exit type
+ALTER TABLE locations ADD COLUMN motion_exit_type AFTER motion_type INTEGER DEFAULT 0;
+
+COMMIT;

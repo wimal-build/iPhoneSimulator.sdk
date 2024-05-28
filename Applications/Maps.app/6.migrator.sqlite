@@ -1,0 +1,7 @@
+-- Migrates traces from v5 to v6
+BEGIN TRANSACTION;
+
+ALTER TABLE info ADD COLUMN original_version INTEGER DEFAULT 6; -- keep originalVersion when upgrading
+ALTER TABLE locations ADD COLUMN event_type INTEGER DEFAULT 0;
+
+COMMIT;

@@ -18,8 +18,7 @@
 
 MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaPickerController : UIViewController
 
-- (instancetype)init; // defaults to MPMediaTypeAny
-- (instancetype)initWithMediaTypes:(MPMediaType)mediaTypes;
+- (instancetype)initWithMediaTypes:(MPMediaType)mediaTypes NS_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) MPMediaType mediaTypes;
 
 @property (nonatomic, weak) id<MPMediaPickerControllerDelegate> delegate;

@@ -5,14 +5,26 @@
 //  Copyright (c) 2011 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef __PKPASS_H
+#define __PKPASS_H
 
+#import <PassKit/PKObject.h>
+
+typedef NS_ENUM(NSUInteger, PKPassType) {
+    PKPassTypeBarcode,
+    PKPassTypePayment,
+    PKPassTypeAny = ~0
+} NS_ENUM_AVAILABLE_IOS(8_0);
+
+@class PKPaymentPass;
 @class UIImage;
 
-NS_CLASS_AVAILABLE_IOS(6_0)
-@interface PKPass : NSObject
+@interface PKPass : PKObject
 
-- (id)initWithData:(NSData *)data error:(NSError **)error; 
+- (instancetype)initWithData:(NSData *)data error:(NSError **)error;
+
+@property (nonatomic,assign,readonly)   PKPassType     passType NS_AVAILABLE_IOS(8_0);
+@property (nonatomic,assign,readonly)   PKPaymentPass *paymentPass NS_AVAILABLE_IOS(8_0);
 
 @property (nonatomic,copy,readonly) NSString     *serialNumber;
 @property (nonatomic,copy,readonly) NSString     *passTypeIdentifier;
@@ -32,14 +44,4 @@ NS_CLASS_AVAILABLE_IOS(6_0)
 
 @end
 
-// domain for NSError
-extern NSString *const PKPassKitErrorDomain NS_AVAILABLE_IOS(6_0);
-
-typedef NS_ENUM(NSInteger, PKPassKitErrorCode) {
-    PKUnknownError = -1,
-    PKInvalidDataError = 1,
-    PKUnsupportedVersionError,
-    PKInvalidSignature,
-} NS_ENUM_AVAILABLE_IOS(6_0);
-
-
+#endif

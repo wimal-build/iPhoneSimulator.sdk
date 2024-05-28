@@ -11,8 +11,19 @@
 		<string>kTCCServiceAddressBook</string>
 		<string>kTCCServiceCalendar</string>
 		<string>kTCCServicePhotos</string>
+		<string>kTCCServiceCamera</string>
 	</array>
 	<key>platform-application</key>
 	<true/>
+	<key>com.apple.springboard.openurlinbackground</key>
+	<true/>
+	<key>com.apple.locationd.effective_bundle</key>
+	<true/>
+	<key>com.apple.locationd.usage_oracle</key>
+	<true/>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.routined.registration</string>
+	</array>
 </dict>
 </plist>

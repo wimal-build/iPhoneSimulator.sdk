@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NOTIFICATION_CENTER_NEW_WIDGETS_AVAILABLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@num_new_widgets@</string>
+		<key>num_new_widgets</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>few</key>
+			<string>%u nya widgetar tillgängliga</string>
+			<key>many</key>
+			<string>%u nya widgetar tillgängliga</string>
+			<key>one</key>
+			<string>1 ny widget tillgänglig</string>
+			<key>other</key>
+			<string>%u nya widgetar tillgängliga</string>
+			<key>two</key>
+			<string>%u nya widgetar tillgängliga</string>
+			<key>zero</key>
+			<string>%u nya widgetar tillgängliga</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -99,7 +99,7 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionRouteChangeReason)
 AVAudioSessionCategoryOptionMixWithOthers -- 
 	This allows an application to change the default behavior of some audio session categories with regards
 	to whether other applications can play while your session is active. The typical cases are:
-	 (1) AVAudioSessionCategoryPlayAndRecord
+	 (1) AVAudioSessionCategoryPlayAndRecord or AVAudioSessionCategoryMultiRoute
 		 this will default to false, but can be set to true. This would allow other applications to play in the background
 		 while an app had both audio input and output enabled
 	 (2) AVAudioSessionCategoryPlayback
@@ -117,9 +117,11 @@ AVAudioSessionCategoryOptionDuckOthers --
 	of this is the Nike app that does this as it provides periodic updates to its user (it ducks any music
 	currently being played while it provides its status). This defaults to off. Note that the other audio 
 	will be ducked for as long as the current session is active. You will need to deactivate your audio
-	session when you want full volume playback of the other audio. If your category is AVAudioSessionCategoryPlayback 
-	and you have this set to its default (non-mixable), setting this value to on will also make your category
-	mixable with others (AVAudioSessionCategoryOptionMixWithOthers will be set to true).
+	session when you want full volume playback of the other audio. 
+    If your category is AVAudioSessionCategoryPlayback, AVAudioSessionCategoryPlayAndRecord, or 
+	AVAudioSessionCategoryMultiRoute, by default the audio session will be non-mixable and non-ducking. 
+	Setting this option will also make your category mixable with others (AVAudioSessionCategoryOptionMixWithOthers
+	will be set).
  
 AVAudioSessionCategoryOptionAllowBluetooth --
 	This allows an application to change the default behaviour of some audio session categories with regards to showing
@@ -151,10 +153,14 @@ AVAudioSessionCategoryOptionDefaultToSpeaker --
 		 category and mode changes). */
 typedef NS_OPTIONS(NSUInteger, AVAudioSessionCategoryOptions)
 {
-	AVAudioSessionCategoryOptionMixWithOthers		= 1,  /* only valid with AVAudioSessionCategoryPlayAndRecord and AVAudioSessionCategoryPlayback */
-	AVAudioSessionCategoryOptionDuckOthers			= 2,  /* only valid with AVAudioSessionCategoryPlayAndRecord and AVAudioSessionCategoryPlayback */
-	AVAudioSessionCategoryOptionAllowBluetooth		= 4,  /* only valid with AVAudioSessionCategoryRecord and AVAudioSessionCategoryPlayAndRecord */
-	AVAudioSessionCategoryOptionDefaultToSpeaker	= 8   /* only valid with AVAudioSessionCategoryPlayAndRecord */
+	/* MixWithOthers is only valid with AVAudioSessionCategoryPlayAndRecord, AVAudioSessionCategoryPlayback, and  AVAudioSessionCategoryMultiRoute */
+	AVAudioSessionCategoryOptionMixWithOthers		= 1,
+	/* DuckOthers is only valid with AVAudioSessionCategoryPlayAndRecord, AVAudioSessionCategoryPlayback, and AVAudioSessionCategoryMultiRoute */
+	AVAudioSessionCategoryOptionDuckOthers			= 2,
+	/* AllowBluetooth is only valid with AVAudioSessionCategoryRecord and AVAudioSessionCategoryPlayAndRecord */
+	AVAudioSessionCategoryOptionAllowBluetooth		= 4,
+	/* DefaultToSpeaker is only valid with AVAudioSessionCategoryPlayAndRecord */
+	AVAudioSessionCategoryOptionDefaultToSpeaker	= 8
 } NS_AVAILABLE_IOS(6_0);
 
 typedef NS_ENUM(NSUInteger, AVAudioSessionInterruptionType)
@@ -162,6 +168,31 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionInterruptionType)
 	AVAudioSessionInterruptionTypeBegan = 1,  /* the system has interrupted your audio session */
 	AVAudioSessionInterruptionTypeEnded = 0,  /* the interruption has ended */
 } NS_AVAILABLE_IOS(6_0);
+
+/* Used in AVAudioSessionSilenceSecondaryAudioHintNotification to indicate whether optional secondary audio muting should begin or end */
+typedef NS_ENUM(NSUInteger, AVAudioSessionSilenceSecondaryAudioHintType)
+{
+	AVAudioSessionSilenceSecondaryAudioHintTypeBegin = 1,  /* the system is indicating that another application's primary audio has started */
+	AVAudioSessionSilenceSecondaryAudioHintTypeEnd = 0,    /* the system is indicating that another application's primary audio has stopped */
+} NS_AVAILABLE_IOS(8_0);
+
+/*!
+	@enum AVAudioSessionRecordPermission values
+	@abstract   These are the values returned by recordPermission.
+	@constant   AVAudioSessionRecordPermissionUndetermined
+		The user has not yet been asked for permission.
+	@constant   AVAudioSessionRecordPermissionDenied
+ 		The user has been asked and has denied permission.
+	@constant   AVAudioSessionRecordPermissionGranted
+ 		The user has been asked and has granted permission.
+*/
+
+typedef NS_OPTIONS(NSUInteger, AVAudioSessionRecordPermission)
+{
+	AVAudioSessionRecordPermissionUndetermined		= 'undt',
+	AVAudioSessionRecordPermissionDenied			= 'deny',
+	AVAudioSessionRecordPermissionGranted			= 'grnt'
+} NS_AVAILABLE_IOS(8_0);
 
 /*!
 	@enum AVAudioSession error codes
@@ -192,6 +223,8 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionInterruptionType)
  		background and is not an Inter-App Audio app.
 	@constant	AVAudioSessionErrorCodeBadParam
  		An illegal value was used for a property.
+	@constant	AVAudioSessionErrorInsufficientPriority
+ 		The app was not allowed to set the audio category because another app (Phone, etc.) is controlling it.
 	@constant	AVAudioSessionErrorCodeUnspecified
  		An unspecified error has occurred.
 */
@@ -208,6 +241,7 @@ typedef NS_ENUM(NSInteger, AVAudioSessionErrorCode)
 	AVAudioSessionErrorCodeCannotStartPlaying			= '!pla',			/* 0x21706C61, 561015905	*/
 	AVAudioSessionErrorCodeCannotStartRecording			= '!rec',			/* 0x21726563, 561145187	*/
 	AVAudioSessionErrorCodeBadParam						= -50,
+	AVAudioSessionErrorInsufficientPriority				= '!pri',			/* 0x21707269, 561017449	*/
 	AVAudioSessionErrorCodeUnspecified					= 'what'			/* 0x77686174, 2003329396	*/
 } NS_AVAILABLE_IOS(7_0);
 
@@ -219,9 +253,13 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 }
 
  /* returns singleton instance */
-+ (id)sharedInstance;
++ (AVAudioSession*)sharedInstance;
 
-/* set the session active or inactive */
+/* Set the session active or inactive. Note that activating an audio session is a synchronous (blocking) operation.
+ Therefore, we recommend that applications not activate their session from a thread where a long blocking operation will be problematic.
+ Note that this method will throw an exception in apps linked on or after iOS 8 if the session is set inactive while it has running or 
+ paused I/O (e.g. audio queues, players, recorders, converters, remote I/Os, etc.).
+*/
 - (BOOL)setActive:(BOOL)active error:(NSError **)outError;
 - (BOOL)setActive:(BOOL)active withOptions:(AVAudioSessionSetActiveOptions)options error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
 
@@ -229,6 +267,9 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 - (BOOL)setCategory:(NSString *)category error:(NSError **)outError;
 /* set session category with options */
 - (BOOL)setCategory:(NSString *)category withOptions: (AVAudioSessionCategoryOptions)options error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
+
+/* Returns an enum indicating whether the user has granted or denied permission to record, or has not been asked */
+- (AVAudioSessionRecordPermission) recordPermission;
 
 /* Checks to see if calling process has permission to record audio.  The 'response' block will be called
  immediately if permission has already been granted or denied.  Otherwise, it presents a dialog to notify
@@ -252,8 +293,20 @@ use of audio within an application. Examples:  AVAudioSessionModeVideoRecording,
 
 - (BOOL)overrideOutputAudioPort:(AVAudioSessionPortOverride)portOverride  error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
 
-/* Will be true when another application is playing audio */
+/* Will be true when another application is playing audio.
+Note: As of iOS 8.0, Apple recommends that most applications use secondaryAudioShouldBeSilencedHint instead of this property.
+The otherAudioPlaying property will be true if any other audio (including audio from an app using AVAudioSessionCategoryAmbient)
+is playing, whereas the secondaryAudioShouldBeSilencedHint property is more restrictive in its consideration of whether 
+primary audio from another application is playing.  
+*/
 @property(readonly, getter=isOtherAudioPlaying) BOOL otherAudioPlaying  NS_AVAILABLE_IOS(6_0);
+
+/* Will be true when another application with a non-mixable audio session is playing audio.  Applications may use
+this property as a hint to silence audio that is secondary to the functionality of the application. For example, a game app
+using AVAudioSessionCategoryAmbient may use this property to decide to mute its soundtrack while leaving its sound effects unmuted.
+Note: This property is closely related to AVAudioSessionSilenceSecondaryAudioHintNotification.
+*/
+@property(readonly) BOOL secondaryAudioShouldBeSilencedHint  NS_AVAILABLE_IOS(8_0);
 
 /* A description of the current route, consisting of zero or more input ports and zero or more output ports */
 @property(readonly) AVAudioSessionRouteDescription * currentRoute NS_AVAILABLE_IOS(6_0);
@@ -418,6 +471,14 @@ AVF_EXPORT NSString *const AVAudioSessionMediaServicesWereLostNotification NS_AV
  */
 AVF_EXPORT NSString *const AVAudioSessionMediaServicesWereResetNotification NS_AVAILABLE_IOS(6_0);
 
+/* Registered listeners that are currently in the foreground and have active audio sessions will be notified 
+ when primary audio from other applications starts and stops.  Check the notification's userInfo dictionary 
+ for the notification type -- either begin or end.
+ Foreground applications may use this notification as a hint to enable or disable audio that is secondary
+ to the functionality of the application. For more information, see the related property secondaryAudioShouldBeSilencedHint.
+*/
+AVF_EXPORT NSString *const AVAudioSessionSilenceSecondaryAudioHintNotification NS_AVAILABLE_IOS(8_0);
+
 #pragma mark -- Keys for NSNotification userInfo dictionaries --
 
 /* keys for AVAudioSessionInterruptionNotification */
@@ -431,6 +492,10 @@ AVF_EXPORT NSString *const AVAudioSessionInterruptionOptionKey NS_AVAILABLE_IOS(
 AVF_EXPORT NSString *const AVAudioSessionRouteChangeReasonKey NS_AVAILABLE_IOS(6_0);
 	/* value is AVAudioSessionRouteDescription * */
 AVF_EXPORT NSString *const AVAudioSessionRouteChangePreviousRouteKey NS_AVAILABLE_IOS(6_0);
+
+/* keys for AVAudioSessionSilenceSecondaryAudioHintNotification */
+/* value is an NSNumber representing an AVAudioSessionSilenceSecondaryAudioHintType */
+AVF_EXPORT NSString *const AVAudioSessionSilenceSecondaryAudioHintTypeKey NS_AVAILABLE_IOS(8_0);
 
 #pragma mark -- Values for the category property --
 

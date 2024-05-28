@@ -343,16 +343,20 @@ enum {
 						- desktop only
 					A multi-timbral music device that can use sample banks in either DLS or 
 					SoundFont formats. It fully supports GM-MIDI and the basic extensions of 
-					GS-MIDI
+					GS-MIDI.
 	@constant		kAudioUnitSubType_Sampler			
 					A mono-timbral music device which is a sampler synthesizer and supports full 
 					interactive editing of all state.
+	@constant		kAudioUnitSubType_MIDISynth
+					A fully GM-compatible multi-timbral music device which is a sampler synthesizer.
+					It can load instruments from sample banks in either DLS or SoundFont formats.
 */
 enum {
 #if !TARGET_OS_IPHONE
 	kAudioUnitSubType_DLSSynth				= 'dls ',
 #endif
-	kAudioUnitSubType_Sampler				= 'samp'
+	kAudioUnitSubType_Sampler				= 'samp',
+	kAudioUnitSubType_MIDISynth				= 'msyn'
 };
 
 /*!
@@ -414,10 +418,9 @@ enum {
 	kAudioUnitSubType_Merger				= 'merg',
 	kAudioUnitSubType_NewTimePitch			= 'nutp',
 	kAudioUnitSubType_AUiPodTimeOther		= 'ipto',
-	
+	kAudioUnitSubType_RoundTripAAC			= 'raac',
 #if !TARGET_OS_IPHONE
-	kAudioUnitSubType_TimePitch				= 'tmpt',
-	kAudioUnitSubType_RoundTripAAC			= 'raac'
+	kAudioUnitSubType_TimePitch				= 'tmpt'
 #else
 	kAudioUnitSubType_AUiPodTime			= 'iptm'
 #endif
@@ -515,6 +518,7 @@ enum {
 	kAudioUnitSubType_ParametricEQ			= 'pmeq',
 	kAudioUnitSubType_Distortion			= 'dist',
 	kAudioUnitSubType_Delay					= 'dely',
+	kAudioUnitSubType_SampleDelay			= 'sdly',
 #if !TARGET_OS_IPHONE
 	kAudioUnitSubType_GraphicEQ				= 'greq',
 	kAudioUnitSubType_MultiBandCompressor	= 'mcmp',
@@ -522,7 +526,6 @@ enum {
 	kAudioUnitSubType_Pitch					= 'tmpt',
 	kAudioUnitSubType_AUFilter				= 'filt',
 	kAudioUnitSubType_NetSend				= 'nsnd',
-	kAudioUnitSubType_SampleDelay			= 'sdly',
 	kAudioUnitSubType_RogerBeep				= 'rogr',
 #else
 	kAudioUnitSubType_Reverb2				= 'rvb2',
@@ -537,42 +540,47 @@ enum {
 
 	@constant		kAudioUnitSubType_MultiChannelMixer
 					Can have any number of inputs, with any number of channels on any input to one 
-					output bus with any number of channels on  the desktop. On iPhone the output 
-					number of channels is 2.
-				
+					output bus with any number of channels.
+ 
+    @constant       kAudioUnitSubType_SpatialMixer
+                    Inputs that are mono will be panned around using 3D coordinates and parameters.
+                    Stereo inputs are passed directly through to the output.
+                    A single output is presented with 2, 4, 5, 6, 7 or 8 channels.
+                    There is also a built in reverb.
+	
 	@constant		kAudioUnitSubType_StereoMixer
 						- desktop only
 					Inputs can be mono or stereo. Single stereo output
 					
-	@constant		kAudioUnitSubType_3DMixer
-						- desktop only
-					Inputs can be mono, in which case they can be panned around using 3D 
-					coordinates and parameters. 
-					Stereo inputs are passed directly through to the output.
-					4 channel "ambisonic" inputs will be rendered to the output configuration
-					A single output of 2, 4, 5, 6, 7 or 8 channels.
-					
 	@constant		kAudioUnitSubType_MatrixMixer
-						- desktop only
 					Any number of input and output buses with any number of channels on any bus. 
 					The mix is presented as a matrix of channels that can be controlled through 
 					input volume per channel, "cross-point" volume (a given input channel to a 
 					given output channel), output volume per channel and a global volume across 
 					the whole matrix
+ 
+    @constant		kAudioUnitSubType_3DMixer
+                        - desktop only (deprecated , use kAudioUnitSubType_SpatialMixer instead)
+                    Inputs can be mono, in which case they can be panned around using 3D
+                    coordinates and parameters.
+                    Stereo inputs are passed directly through to the output.
+                    4 channel "ambisonic" inputs will be rendered to the output configuration
+                    A single output of 2, 4, 5, 6, 7 or 8 channels.
 
 	@constant		kAudioUnitSubType_AU3DMixerEmbedded
-						- iPhone only
+						- iPhone only (renamed to kAudioUnitSubType_SpatialMixer)
 					A scaled-down version of the AU3DMixer that presents a stereo output, mono or 
 					stereo inputs
 */
 enum {
 	kAudioUnitSubType_MultiChannelMixer		= 'mcmx',
 	kAudioUnitSubType_MatrixMixer			= 'mxmx',
+    kAudioUnitSubType_SpatialMixer          = '3dem',
 #if !TARGET_OS_IPHONE
 	kAudioUnitSubType_StereoMixer			= 'smxr',
-	kAudioUnitSubType_3DMixer				= '3dmx'
+	kAudioUnitSubType_3DMixer				= '3dmx'    // deprecated, use kAudioUnitSubType_SpatialMixer instead
 #else
-	kAudioUnitSubType_AU3DMixerEmbedded		= '3dem'
+	kAudioUnitSubType_AU3DMixerEmbedded		= '3dem'    // renamed to kAudioUnitSubType_SpatialMixer
 #endif
 };
 

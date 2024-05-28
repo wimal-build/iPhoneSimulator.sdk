@@ -1,12 +1,12 @@
 //
 //  UIMotionEffect.h
-//  Copyright (c) 2013 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIGeometry.h>
 
-/*! _UIMotionEffect is an abstract superclass which declaratively represents a rendering
+/*! UIMotionEffect is an abstract superclass which declaratively represents a rendering
     effect that depends on the motion of the device. Given some device pose, subclassers
     provide relative values which are to be applied to the keypaths of the target's view.
  

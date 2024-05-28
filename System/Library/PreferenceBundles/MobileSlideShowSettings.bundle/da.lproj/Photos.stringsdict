@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iPad kunne ikke %#@download_n_items@. Hvis du fortsætter, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>many</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>one</key>
+			<string>hente %d emne i fuld opløsning</string>
+			<key>other</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>two</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>zero</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>many</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>one</key>
+			<string>fjernes versionen i lav opløsning af dette emne</string>
+			<key>other</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>two</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>zero</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iPhone kunne ikke %#@download_n_items@. Hvis du fortsætter, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>many</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>one</key>
+			<string>hente %d emne i fuld opløsning</string>
+			<key>other</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>two</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>zero</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>many</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>one</key>
+			<string>fjernes versionen i lav opløsning af dette emne</string>
+			<key>other</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>two</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>zero</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_DISK_PRESSURE_PRUNED_MESSAGE_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>iPod touch kunne ikke %#@download_n_items@. Hvis du fortsætter, %#@low_res_versions_will_be_removed@.</string>
+		<key>download_n_items</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>many</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>one</key>
+			<string>hente %d emne i fuld opløsning</string>
+			<key>other</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>two</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+			<key>zero</key>
+			<string>hente %d fotos og videoer i fuld opløsning</string>
+		</dict>
+		<key>low_res_versions_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>many</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>one</key>
+			<string>fjernes versionen i lav opløsning af dette emne</string>
+			<key>other</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>two</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+			<key>zero</key>
+			<string>fjernes versioner i lav opløsning af disse fotos og videoer</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_will_remain@ i iCloud-fotobibliotek.</string>
+		<key>these_photos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse fotos forbliver</string>
+			<key>many</key>
+			<string>Disse fotos forbliver</string>
+			<key>one</key>
+			<string>Dette foto forbliver</string>
+			<key>other</key>
+			<string>Disse fotos forbliver</string>
+			<key>two</key>
+			<string>Disse fotos forbliver</string>
+			<key>zero</key>
+			<string>Disse fotos forbliver</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_photos_videos_will_remain@ i iCloud-fotobibliotek.</string>
+		<key>these_photos_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse fotos og videoer forbliver</string>
+			<key>many</key>
+			<string>Disse fotos og videoer forbliver</string>
+			<key>one</key>
+			<string>Dette emne forbliver</string>
+			<key>other</key>
+			<string>Disse fotos og videoer forbliver</string>
+			<key>two</key>
+			<string>Disse fotos og videoer forbliver</string>
+			<key>zero</key>
+			<string>Disse fotos og videoer forbliver</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@these_videos_will_remain@ i iCloud-fotobibliotek.</string>
+		<key>these_videos_will_remain</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse videoer forbliver</string>
+			<key>many</key>
+			<string>Disse videoer forbliver</string>
+			<key>one</key>
+			<string>Denne video forbliver</string>
+			<key>other</key>
+			<string>Disse videoer forbliver</string>
+			<key>two</key>
+			<string>Disse videoer forbliver</string>
+			<key>zero</key>
+			<string>Disse videoer forbliver</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ fra iPad</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>many</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>one</key>
+			<string>%d emne fjernes</string>
+			<key>other</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>two</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>zero</key>
+			<string>%d fotos og videoer fjernes</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ fra iPhone. %#@they_will_remain_in@ iCloud-fotobibliotek.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>many</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>one</key>
+			<string>%d emne fjernes</string>
+			<key>other</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>two</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>zero</key>
+			<string>%d fotos og videoer fjernes</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse fotos forbliver i</string>
+			<key>many</key>
+			<string>Disse fotos forbliver i</string>
+			<key>one</key>
+			<string>Dette emne forbliver i</string>
+			<key>other</key>
+			<string>Disse fotos forbliver i</string>
+			<key>two</key>
+			<string>Disse fotos forbliver i</string>
+			<key>zero</key>
+			<string>Disse fotos forbliver i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_videos_will_be_removed@ fra iPod touch. %#@they_will_remain_in@ iCloud-fotobibliotek.</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>many</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>one</key>
+			<string>%d emne fjernes</string>
+			<key>other</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>two</key>
+			<string>%d fotos og videoer fjernes</string>
+			<key>zero</key>
+			<string>%d fotos og videoer fjernes</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse fotos forbliver i</string>
+			<key>many</key>
+			<string>Disse fotos forbliver i</string>
+			<key>one</key>
+			<string>Dette emne forbliver i</string>
+			<key>other</key>
+			<string>Disse fotos forbliver i</string>
+			<key>two</key>
+			<string>Disse fotos forbliver i</string>
+			<key>zero</key>
+			<string>Disse fotos forbliver i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ fra iPad</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos fjernes</string>
+			<key>many</key>
+			<string>%d fotos fjernes</string>
+			<key>one</key>
+			<string>%d foto fjernes</string>
+			<key>other</key>
+			<string>%d fotos fjernes</string>
+			<key>two</key>
+			<string>%d fotos fjernes</string>
+			<key>zero</key>
+			<string>%d fotos fjernes</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ fra iPhone. %#@they_will_remain_in@ iCloud-fotobibliotek.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos fjernes</string>
+			<key>many</key>
+			<string>%d fotos fjernes</string>
+			<key>one</key>
+			<string>%d foto fjernes</string>
+			<key>other</key>
+			<string>%d fotos fjernes</string>
+			<key>two</key>
+			<string>%d fotos fjernes</string>
+			<key>zero</key>
+			<string>%d fotos fjernes</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse fotos forbliver i</string>
+			<key>many</key>
+			<string>Disse fotos forbliver i</string>
+			<key>one</key>
+			<string>Dette foto forbliver i</string>
+			<key>other</key>
+			<string>Disse fotos forbliver i</string>
+			<key>two</key>
+			<string>Disse fotos forbliver i</string>
+			<key>zero</key>
+			<string>Disse fotos forbliver i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_PHOTOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_photos_will_be_removed@ fra iPod touch. %#@they_will_remain_in@ iCloud-fotobibliotek.</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d fotos fjernes</string>
+			<key>many</key>
+			<string>%d fotos fjernes</string>
+			<key>one</key>
+			<string>%d foto fjernes</string>
+			<key>other</key>
+			<string>%d fotos fjernes</string>
+			<key>two</key>
+			<string>%d fotos fjernes</string>
+			<key>zero</key>
+			<string>%d fotos fjernes</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse fotos forbliver i</string>
+			<key>many</key>
+			<string>Disse fotos forbliver i</string>
+			<key>one</key>
+			<string>Dette foto forbliver i</string>
+			<key>other</key>
+			<string>Disse fotos forbliver i</string>
+			<key>two</key>
+			<string>Disse fotos forbliver i</string>
+			<key>zero</key>
+			<string>Disse fotos forbliver i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPad</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ fra iPad</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videoer fjernes</string>
+			<key>many</key>
+			<string>%d videoer fjernes</string>
+			<key>one</key>
+			<string>%d video fjernes</string>
+			<key>other</key>
+			<string>%d videoer fjernes</string>
+			<key>two</key>
+			<string>%d videoer fjernes</string>
+			<key>zero</key>
+			<string>%d videoer fjernes</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPhone</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ fra iPhone. %#@they_will_remain_in@ iCloud-fotobibliotek.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videoer fjernes</string>
+			<key>many</key>
+			<string>%d videoer fjernes</string>
+			<key>one</key>
+			<string>%d video fjernes</string>
+			<key>other</key>
+			<string>%d videoer fjernes</string>
+			<key>two</key>
+			<string>%d videoer fjernes</string>
+			<key>zero</key>
+			<string>%d videoer fjernes</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse videoer forbliver i</string>
+			<key>many</key>
+			<string>Disse videoer forbliver i</string>
+			<key>one</key>
+			<string>Denne video forbliver i</string>
+			<key>other</key>
+			<string>Disse videoer forbliver i</string>
+			<key>two</key>
+			<string>Disse videoer forbliver i</string>
+			<key>zero</key>
+			<string>Disse videoer forbliver i</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DISABLE_PROMPT_DELETE_LOW_RES_TITLE_FORMAT_VIDEOS_iPod touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@d_videos_will_be_removed@ fra iPod touch. %#@they_will_remain_in@ iCloud-fotobibliotek.</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d videoer fjernes</string>
+			<key>many</key>
+			<string>%d videoer fjernes</string>
+			<key>one</key>
+			<string>%d video fjernes</string>
+			<key>other</key>
+			<string>%d videoer fjernes</string>
+			<key>two</key>
+			<string>%d videoer fjernes</string>
+			<key>zero</key>
+			<string>%d videoer fjernes</string>
+		</dict>
+		<key>they_will_remain_in</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>Disse videoer forbliver i</string>
+			<key>many</key>
+			<string>Disse videoer forbliver i</string>
+			<key>one</key>
+			<string>Denne video forbliver i</string>
+			<key>other</key>
+			<string>Disse videoer forbliver i</string>
+			<key>two</key>
+			<string>Disse videoer forbliver i</string>
+			<key>zero</key>
+			<string>Disse videoer forbliver i</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

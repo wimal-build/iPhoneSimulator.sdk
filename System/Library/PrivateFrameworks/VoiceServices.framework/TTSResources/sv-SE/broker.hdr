@@ -9,10 +9,10 @@ defaultvoice:Alva
     <language>Swedish</language>
     <langcode>SWS</langcode>
     <langid>6</langid>
-    <langversion>5.2.3.13323</langversion>
+    <langversion>5.2.4.14015</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Alva</voice>
-    <voiceversion>5.2.3.13304</voiceversion>
+    <voiceversion>5.2.4.13304</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,10 +77,17 @@ defaultvoice:Alva
       userdct/sws
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      alva/userdct/sws
+      userdct/sws/alva
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/sws/cfg1
+    </RESOURCE> 
+    
+    
     
     
     

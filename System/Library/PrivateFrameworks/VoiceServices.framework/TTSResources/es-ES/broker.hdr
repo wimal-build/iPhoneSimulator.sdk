@@ -9,10 +9,10 @@ defaultvoice:Monica
     <language>Spanish</language>
     <langcode>SPE</langcode>
     <langid>4</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.14064</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Monica</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.14072</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,23 @@ defaultvoice:Monica
       userdct/spe
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      monica/userdct/spe
+      userdct/spe/monica
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/spe
+    </RESOURCE>
+     
     
     
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/spe
+    </RESOURCE>
     
     
     

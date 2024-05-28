@@ -2,7 +2,7 @@
 //  UITabBar.h
 //  UIKit
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -44,9 +44,12 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 /* selectedImageTintColor will be applied to the gradient image used when creating the
  selected image. Default is nil and will result in the system bright blue for selected
  tab item images. If you wish to also customize the unselected image appearance, you must
- use -setFinishedSelectedImage:finishedUnselectedImage: on individual tab bar items.
+ use the image and selectedImage properties on UITabBarItem along with UIImageRenderingModeAlways
+ 
+ Deprecated in iOS 8.0. On iOS 7.0 and later the selected image takes its color from the
+ inherited tintColor of the UITabBar, which may be set separately if necessary.
  */
-@property(nonatomic,retain) UIColor *selectedImageTintColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+@property(nonatomic,retain) UIColor *selectedImageTintColor NS_DEPRECATED_IOS(5_0,8_0,"Use tintColor") UI_APPEARANCE_SELECTOR;
 
 /* The background image will be tiled to fit, even if it was not created via the UIImage resizableImage methods.
  */
@@ -81,9 +84,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 
 /*
  Set the itemSpacing to a positive value to be used between tab bar items
- when they are positioned as a centered group and no custom dividers are drawn.
+ when they are positioned as a centered group.
  Default of 0 or values less than 0 will be interpreted as a system-defined spacing.
- When custom divider images are provided this value is ignored.
  */
 @property(nonatomic) CGFloat itemSpacing NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;
 

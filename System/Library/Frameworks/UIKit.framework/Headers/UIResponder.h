@@ -2,7 +2,7 @@
 //  UIResponder.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -89,21 +89,28 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIKeyCommand : NSObject <NSCopying, NSSec
 
 @end
 
+@class UIInputViewController;
 @class UITextInputMode;
 
 @interface UIResponder (UIResponderInputViewAdditions)
 
 // Called and presented when object becomes first responder.  Goes up the responder chain.
-@property (readonly, retain) UIView *inputView NS_AVAILABLE_IOS(3_2);            
-@property (readonly, retain) UIView *inputAccessoryView NS_AVAILABLE_IOS(3_2); 
+@property (nonatomic, readonly, retain) UIView *inputView NS_AVAILABLE_IOS(3_2);
+@property (nonatomic, readonly, retain) UIView *inputAccessoryView NS_AVAILABLE_IOS(3_2);
+
+// For viewController equivalents of -inputView and -inputAccessoryView
+// Called and presented when object becomes first responder.  Goes up the responder chain.
+@property (nonatomic, readonly, retain) UIInputViewController *inputViewController NS_AVAILABLE_IOS(8_0);
+@property (nonatomic, readonly, retain) UIInputViewController *inputAccessoryViewController NS_AVAILABLE_IOS(8_0);
+
 /* When queried, returns the current UITextInputMode, from which the keyboard language can be determined.
  * When overridden it should return a previously-queried UITextInputMode object, which will attempt to be
  * set inside that app, but not persistently affect the user's system-wide keyboard settings. */
-@property (readonly, retain) UITextInputMode *textInputMode NS_AVAILABLE_IOS(7_0);
-/* When the first responder changes and an identifier is queried, the system will establish a context to 
+@property (nonatomic, readonly, retain) UITextInputMode *textInputMode NS_AVAILABLE_IOS(7_0);
+/* When the first responder changes and an identifier is queried, the system will establish a context to
  * track the textInputMode automatically. The system will save and restore the state of that context to
  * the user defaults via the app identifier. Use of -textInputMode above will supercede use of -textInputContextIdentifier. */
-@property (readonly, retain) NSString *textInputContextIdentifier NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, retain) NSString *textInputContextIdentifier NS_AVAILABLE_IOS(7_0);
 // This call is to remove stored app identifier state that is no longer needed.
 + (void)clearTextInputContextIdentifier:(NSString *)identifier NS_AVAILABLE_IOS(7_0);
 
@@ -118,3 +125,10 @@ UIKIT_EXTERN NSString *const UIKeyInputDownArrow       NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIKeyInputLeftArrow       NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIKeyInputRightArrow      NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIKeyInputEscape          NS_AVAILABLE_IOS(7_0);
+
+@interface UIResponder (ActivityContinuation)
+@property (nonatomic, retain) NSUserActivity *userActivity NS_AVAILABLE_IOS(8_0);
+- (void)updateUserActivityState:(NSUserActivity *)activity NS_AVAILABLE_IOS(8_0);
+- (void)restoreUserActivityState:(NSUserActivity *)activity NS_AVAILABLE_IOS(8_0);
+@end
+

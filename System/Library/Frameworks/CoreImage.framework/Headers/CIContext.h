@@ -33,9 +33,18 @@ CORE_IMAGE_EXPORT NSString * const kCIContextOutputColorSpace;
  * intermediate operations are performed. */
 CORE_IMAGE_EXPORT NSString * const kCIContextWorkingColorSpace;
 
-/* An NSNumber with a boolean value. In CICGContext, requires software
- * rendering when true. */
+/* An NSNumber with a CIFormat value defining the pixel format to use for intermediate buffers.
+ * By default, this is RGBA8 on the GPU and RGBAf when using software rendering.
+ * Also supported is RGBAh on the GPU. */
+CORE_IMAGE_EXPORT NSString * const kCIContextWorkingFormat __OSX_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_8_0);
+
+/* An NSNumber with a boolean value. When @YES the context will use
+ * software rendering. */
 CORE_IMAGE_EXPORT NSString * const kCIContextUseSoftwareRenderer;
+
+/* An NSNumber with a boolean value. When @YES the context will use 
+ * low priority rendering on the GPU. */
+CORE_IMAGE_EXPORT NSString * const kCIContextPriorityRequestLow __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
 
 /* Create a new CoreImage context object, all output will be drawn
  * into the surface attached to the OpenGL context 'ctx'. If 'pf' is

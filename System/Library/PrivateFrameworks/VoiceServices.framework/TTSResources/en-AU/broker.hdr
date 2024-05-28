@@ -9,10 +9,10 @@ defaultvoice:Karen
     <language>Australian English</language>
     <langcode>ENA</langcode>
     <langid>20</langid>
-    <langversion>5.2.3.13325</langversion>
+    <langversion>5.2.4.14071</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Karen</voice>
-    <voiceversion>5.2.3.13324</voiceversion>
+    <voiceversion>5.2.4.13324</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -77,13 +77,23 @@ defaultvoice:Karen
       userdct/ena
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      karen/userdct/ena
+      userdct/ena/karen
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/ena/cfg1
+    </RESOURCE> 
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/ena
+    </RESOURCE>
     
     
     

@@ -108,7 +108,7 @@ NS_CLASS_AVAILABLE(10_7, 3_0)
  *  Discussion:
  *    Returns a timestamp for when the magnetic heading was determined.
  */
-@property(readonly, nonatomic) NSDate *timestamp;
+@property(readonly, nonatomic, copy) NSDate *timestamp;
 
 /*
  *  description
@@ -116,6 +116,6 @@ NS_CLASS_AVAILABLE(10_7, 3_0)
  *  Discussion:
  *    Returns a string representation of the heading.
  */
-- (NSString *)description;
+@property (nonatomic, readonly, copy) NSString *description;
 
 @end

@@ -2,7 +2,7 @@
 //  UIBezierPath.h
 //  UIKit
 //
-//  Copyright (c) 2009-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -41,7 +41,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSCodi
 // Returns an immutable CGPathRef which is only valid until the UIBezierPath is further mutated.
 // Setting the path will create an immutable copy of the provided CGPathRef, so any further mutations on a provided CGMutablePathRef will be ignored.
 @property(nonatomic) CGPathRef CGPath;
-- (CGPathRef)CGPath NS_RETURNS_INNER_POINTER;
+- (CGPathRef)CGPath NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED;
 
 // Path construction
 

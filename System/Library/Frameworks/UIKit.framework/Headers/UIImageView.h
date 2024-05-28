@@ -2,7 +2,7 @@
 //  UIImageView.h
 //  UIKit
 //
-//  Copyright (c) 2006-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,8 +16,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImageView : UIView {
     id _storage;
 }
 
-- (id)initWithImage:(UIImage *)image;
-- (id)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage NS_AVAILABLE_IOS(3_0);
+- (instancetype)initWithImage:(UIImage *)image;
+- (instancetype)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage NS_AVAILABLE_IOS(3_0);
 
 @property(nonatomic,retain) UIImage *image;                                                     // default is nil
 @property(nonatomic,retain) UIImage *highlightedImage NS_AVAILABLE_IOS(3_0);      // default is nil

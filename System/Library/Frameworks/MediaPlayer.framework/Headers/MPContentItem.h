@@ -50,6 +50,6 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 
 /// Designated initializer. A unique identifier is required to identify the item
 /// for later use.
-- (instancetype)initWithIdentifier:(NSString *)identifier;
+- (instancetype)initWithIdentifier:(NSString *)identifier NS_DESIGNATED_INITIALIZER;
 
 @end

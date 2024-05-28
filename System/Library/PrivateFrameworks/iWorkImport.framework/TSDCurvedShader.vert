@@ -1,3 +1,10 @@
+//
+//  TSDCurvedShader.vert
+//
+//  Copyright (c) 2012-2013 Apple Inc. All rights reserved.
+//
+#version 100
+
 attribute vec2 Position;
 attribute vec2 TexCoord;
 

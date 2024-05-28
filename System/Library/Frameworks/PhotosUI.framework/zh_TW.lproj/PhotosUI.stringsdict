@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPL_EXIT_PROMPT_MESSAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>已停用「iCloud 照片圖庫」。您還有 %#@n_days@的時間來確定在此裝置或其他裝置上有完整版本的原始照片和影片。</string>
+		<key>have_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d 天</string>
+			<key>many</key>
+			<string>%d 天</string>
+			<key>one</key>
+			<string>%d 天</string>
+			<key>other</key>
+			<string>%d 天</string>
+			<key>two</key>
+			<string>%d 天</string>
+			<key>zero</key>
+			<string>%d 天</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>CPL_EXIT_PROMPT_TITLE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>「iCloud 照片圖庫」會在 %#@in_n_days@刪除</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d 天後</string>
+			<key>many</key>
+			<string>%d 天後</string>
+			<key>one</key>
+			<string>%d 天後</string>
+			<key>other</key>
+			<string>%d 天後</string>
+			<key>two</key>
+			<string>%d 天後</string>
+			<key>zero</key>
+			<string>%d 天後</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>開啟「iCloud 照片圖庫」時不支援透過 iTunes 同步照片。
+
+%#@d_photos_will_be_removed@。</string>
+		<key>d_photos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>會移除 %d 張照片</string>
+			<key>many</key>
+			<string>會移除 %d 張照片</string>
+			<key>one</key>
+			<string>會移除 %d 張照片</string>
+			<key>other</key>
+			<string>會移除 %d 張照片</string>
+			<key>two</key>
+			<string>會移除 %d 張照片</string>
+			<key>zero</key>
+			<string>會移除 %d 張照片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_PHOTOS_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>開啟「iCloud 照片圖庫」時不支援透過 iTunes 同步照片。
+
+%#@d_photos_videos_will_be_removed@。</string>
+		<key>d_photos_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>會移除 %d 張照片和影片</string>
+			<key>many</key>
+			<string>會移除 %d 張照片和影片</string>
+			<key>one</key>
+			<string>會移除 %d 部影片</string>
+			<key>other</key>
+			<string>會移除 %d 張照片和影片</string>
+			<key>two</key>
+			<string>會移除 %d 張照片和影片</string>
+			<key>zero</key>
+			<string>會移除 %d 張照片和影片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_DELETE_ITUNES_CONTENT_MESSAGE_FORMAT_VIDEOS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>開啟「iCloud 照片圖庫」時不支援透過 iTunes 同步照片。
+
+%#@d_videos_will_be_removed@。</string>
+		<key>d_videos_will_be_removed</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>會移除 %d 部影片</string>
+			<key>many</key>
+			<string>會移除 %d 部影片</string>
+			<key>one</key>
+			<string>會移除 %d 部影片</string>
+			<key>other</key>
+			<string>會移除 %d 部影片</string>
+			<key>two</key>
+			<string>會移除 %d 部影片</string>
+			<key>zero</key>
+			<string>會移除 %d 部影片</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_KEEP_ORIGINALS_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>「iCloud 照片圖庫」會在 %#@n_days@從 iCloud 刪除。照片和影片不會再上傳。您可以在「iCloud 儲存空間管理」裡取消刪除動作。</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d 天後</string>
+			<key>many</key>
+			<string>%d 天後</string>
+			<key>one</key>
+			<string>%d 天後</string>
+			<key>other</key>
+			<string>%d 天後</string>
+			<key>two</key>
+			<string>%d 天後</string>
+			<key>zero</key>
+			<string>%d 天後</string>
+		</dict>
+		<key>n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_GROUP_FOOTER_DESCRIPTION_EXITING_OPTIMIZE_STORAGE_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>「iCloud 照片圖庫」會在 %#@in_n_days@從 iCloud 刪除。選擇下方的「下載並保留原始檔」來下載完整版本的照片和影片。</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d 天後</string>
+			<key>many</key>
+			<string>%d 天後</string>
+			<key>one</key>
+			<string>%d 天後</string>
+			<key>other</key>
+			<string>%d 天後</string>
+			<key>two</key>
+			<string>%d 天後</string>
+			<key>zero</key>
+			<string>%d 天後</string>
+		</dict>
+	</dict>
+	<key>ICLOUDPHOTOS_SYNC_REMINDER_TITLE</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>「iCloud 照片圖庫」已有 %#@in_n_days@未更新</string>
+		<key>in_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d 天</string>
+			<key>many</key>
+			<string>%d 天</string>
+			<key>one</key>
+			<string>%d 天</string>
+			<key>other</key>
+			<string>%d 天</string>
+			<key>two</key>
+			<string>%d 天</string>
+			<key>zero</key>
+			<string>%d 天</string>
+		</dict>
+	</dict>
+	<key>LAST_UPDATED_N_MINUTES_AGO_FORMAT</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>上次更新：%#@n_minutes_ago@</string>
+		<key>n_minutes_ago</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>few</key>
+			<string>%d 分鐘前</string>
+			<key>many</key>
+			<string>%d 分鐘前</string>
+			<key>one</key>
+			<string>%d 分鐘前</string>
+			<key>other</key>
+			<string>%d 分鐘前</string>
+			<key>two</key>
+			<string>%d 分鐘前</string>
+			<key>zero</key>
+			<string>%d 分鐘前</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

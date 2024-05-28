@@ -2,7 +2,7 @@
 //  NSTextContainer.h
 //  UIKit
 //
-//  Copyright (c) 2011-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Apple Inc. All rights reserved.
 //
 
 
@@ -15,7 +15,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface NSTextContainer : NSObject <NSCoding, NST
 
 /**************************** Initialization ****************************/
 
-- (id)initWithSize:(CGSize)size; // designated initializer
+- (instancetype)initWithSize:(CGSize)size; // designated initializer
 
 
 /**************************** Layout ****************************/

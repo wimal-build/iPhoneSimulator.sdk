@@ -1,0 +1,128 @@
+html { 
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+BODY {
+	margin: 0px 0px;
+	font: 24px "Helvetica Neue Interface", sans-serif;
+	color: #000;
+	background: #FFF;
+}
+
+#messages {
+	width: 750px;
+	height: 1334px;
+	background: #FFF url(Magnify-Messages-Medium~iphone.png) top left no-repeat;
+	position: absolute;
+	-webkit-transition: -webkit-transform .35s;
+	-webkit-transition-delay: .15s;
+}
+
+.StatusBarTime,
+.NavBack,
+.NavTitle,
+.NavDetails,
+.Timestamp,
+.GrayBubble1,
+.BlueBubble1,
+.BlueBubble2,
+.GrayBubble2,
+.BlueBubble3 {
+	position:absolute;
+	text-align: center;
+	font-size: 34px;
+}
+
+.StatusBarTime {
+	top: 5px;
+	left: 275px;
+	width: 200px;
+	text-align: center;
+	font: "Helvetica Neue Interface", Times, sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.Timestamp {
+	font-size: 24px;
+	width: 300px;
+	left:225px;
+	top: 155px;
+	font-size: 22px;
+	color: #8e8e93;
+
+}
+
+.iMessage,
+.Today {
+	font: "Helvetica Neue Interface Medium", Times, sans-serif;
+	font-weight: 500;
+}
+
+.NavBack,
+.NavDetails {
+	top: 64px;
+	color: #007aff;
+}
+
+.NavBack {
+	left: 54px;
+}
+
+.NavTitle {
+    top: 64px;
+    left: 275px;
+    width: 200px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.NavDetails {
+	right: 16px;
+}
+
+.GrayBubble1,
+.GrayBubble2,
+.BlueBubble1,
+.BlueBubble2,
+.BlueBubble3 {
+    line-height: 41px;
+}
+
+.GrayBubble1 {
+	top: 240px;
+	left: 54px;
+	color: black;
+}
+.GrayBubble2 {
+	top: 840px;
+	left: 54px;
+	color: black;
+}
+
+.BlueBubble1,
+.BlueBubble2,
+.BlueBubble3 {
+	text-align: left;
+	right:52px;
+	color: white;
+}
+
+.BlueBubble1 {
+	width: 370px;
+	top: 327px;
+}
+
+.BlueBubble2 {
+	width: 290px;
+	top: 438px;
+	right: 53px;
+}
+
+.BlueBubble3 {
+	width: 350px;
+	top: 921px;
+	right: 48px;
+}

@@ -1,0 +1,152 @@
+html { 
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+BODY {
+	margin: 0px 0px;
+	font: 24px "Helvetica Neue Interface", sans-serif;
+	color: #fff;
+	background: #FFF;
+}
+
+#springboard {
+	width: 750px;
+	height: 1334px;
+	background: #FFF url(Magnify-SpringBoard-Medium~iphone.png) top left no-repeat;
+	position: absolute;
+	-webkit-transition: -webkit-transform .35s;
+	-webkit-transition-delay: .15s;
+}
+
+.StatusBarTime,
+.Messages,
+.Calendar,
+.Photos,
+.Camera,
+.Weather,
+.Clock,
+.Maps,
+.Videos,
+.Notes,
+.Reminders,
+.Stocks,
+.GameCenter,
+.Newsstand,
+.iTunesStore,
+.AppStore,
+.iBooks,
+.Health,
+.Passbook,
+.Settings,
+.Phone,
+.Mail,
+.Safari,
+.Music {
+	position:absolute;
+	text-align: center;
+	width: 180px;
+}
+
+.StatusBarTime {
+	top: 5px;
+	left: 275px;
+	width: 200px;
+	text-align: center;
+	font: "Helvetica Neue Interface", Times, sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.Messages,
+.Calendar,
+.Photos,
+.Camera {
+	top: 177px;
+}
+
+.Weather,
+.Clock,
+.Maps,
+.Videos {
+	top: 353px;
+}
+
+.Notes,
+.Reminders,
+.Stocks,
+.GameCenter {
+	top: 529px;
+}
+
+.Newsstand,
+.iTunesStore,
+.AppStore,
+.iBooks {
+	top: 705px;
+}
+
+.Health,
+.Passbook,
+.Settings {
+	top: 881px;
+}
+
+.Phone,
+.Mail,
+.Safari,
+.Music {
+	font-size: 24px;
+	top: 1299px;
+}
+
+.Messages,
+.Weather,
+.Notes,
+.Newsstand,
+.Health,
+.Phone {
+	left:24px;
+}
+
+.Calendar,
+.Clock,
+.Reminders,
+.iTunesStore,
+.Passbook,
+.Mail {
+	left:198px;
+}
+
+.Photos,
+.Maps,
+.Stocks,
+.AppStore,
+.Settings {
+	left:372px;
+}
+
+.Camera,
+.Videos,
+.GameCenter,
+.iBooks,
+.Music {
+	left:546px;
+}
+
+.Phone {
+	left:16px;
+}
+
+.Mail {
+	left:197px;
+}
+
+.Safari {
+	left:372px;
+}
+
+.Music {
+	left:554px;
+}

@@ -101,7 +101,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
    Constants for various time pitch algorithms, e.g. AVAudioTimePitchSpectral, are defined in AVAudioProcessingSettings.h.
    Can be nil, in which case the audioTimePitchAlgorithm set on the AVPlayerItem, AVAssetExportSession, or AVAssetReaderAudioMixOutput on which the AVAudioMix is set will be used for the associated track.
 */
-@property (nonatomic, readonly, copy) NSString *audioTimePitchAlgorithm NS_AVAILABLE(TBD, 7_0);
+@property (nonatomic, readonly, copy) NSString *audioTimePitchAlgorithm NS_AVAILABLE(10_10, 7_0);
 
 /*!
  @property		audioTapProcessor
@@ -166,7 +166,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
    Constants for various time pitch algorithms, e.g. AVAudioTimePitchSpectral, are defined in AVAudioProcessingSettings.h.
    Can be nil, in which case the audioTimePitchAlgorithm set on the AVPlayerItem, AVAssetExportSession, or AVAssetReaderAudioMixOutput on which the AVAudioMix is set will be used for the associated track.
 */
-@property (nonatomic, copy) NSString *audioTimePitchAlgorithm NS_AVAILABLE(TBD, 7_0);
+@property (nonatomic, copy) NSString *audioTimePitchAlgorithm NS_AVAILABLE(10_10, 7_0);
 
 /*!
  @property		audioTapProcessor

@@ -5,6 +5,12 @@
 //  Copyright (c) 2011-2012 Apple Inc. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE
+#import <OpenGLES/ES2/gl.h>
+#else // !TARGET_OS_IPHONE
+#import <OpenGL/gl3.h>
+#endif // !TARGET_OS_IPHONE
+
 #import <GLKit/GLKEffectProperty.h>
 
 // Texture target

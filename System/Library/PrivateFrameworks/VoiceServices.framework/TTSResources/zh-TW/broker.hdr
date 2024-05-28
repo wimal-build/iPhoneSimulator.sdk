@@ -9,13 +9,14 @@ defaultvoice:Mei-Jia
     <language>Taiwanese Mandarin</language>
     <langcode>MNT</langcode>
     <langid>29</langid>
-    <langversion>5.2.3.13309</langversion>
+    <langversion>5.2.4.14072</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Mei-Jia</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.13289</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
-    <fecfg>cfg1</fecfg>
+    <fecfg>cfg4</fecfg>
+    <voiceml>no</voiceml>
     <fedataprefix></fedataprefix>
     <feextcfgdataprefix></feextcfgdataprefix>
     <fedatapackaging>clc</fedatapackaging>
@@ -73,13 +74,23 @@ defaultvoice:Mei-Jia
       userdct/mnt
     </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
-      mei-jia/userdct/mnt
+      userdct/mnt/mei-jia
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/mnt
+    </RESOURCE>
     
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/mnt
+    </RESOURCE>
     
     
     

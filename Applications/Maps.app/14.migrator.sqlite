@@ -1,0 +1,12 @@
+-- Migrates traces from v14 to v15
+BEGIN TRANSACTION;
+
+ALTER TABLE info ADD COLUMN route_genius INTEGER AFTER simulation DEFAULT 0;
+
+CREATE TABLE likely_routes
+(
+request_data        BLOB NOT NULL,  -- PB Serialized GEODirectionsRequest
+response_data       BLOB NOT NULL   -- PB Serialized GEODirectionsResponse
+);
+
+COMMIT;

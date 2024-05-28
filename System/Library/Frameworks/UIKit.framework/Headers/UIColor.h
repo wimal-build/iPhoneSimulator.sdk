@@ -2,7 +2,7 @@
 //  UIColor.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -68,13 +68,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 
 // Access the underlying CGColor or CIColor.
 @property(nonatomic,readonly) CGColorRef CGColor;
-- (CGColorRef)CGColor NS_RETURNS_INNER_POINTER;
+- (CGColorRef)CGColor NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED;
 @property(nonatomic,readonly) CIColor   *CIColor NS_AVAILABLE_IOS(5_0);
 
 @end
 
 @interface CIColor(UIKitAdditions)
 
-- (id)initWithColor:(UIColor *)color NS_AVAILABLE_IOS(5_0);
+- (instancetype)initWithColor:(UIColor *)color NS_AVAILABLE_IOS(5_0);
 
 @end

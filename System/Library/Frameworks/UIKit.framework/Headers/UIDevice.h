@@ -2,7 +2,7 @@
 //  UIDevice.h
 //  UIKit
 //
-//  Copyright (c) 2007-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger, UIDeviceBatteryState) {
 };              // available in iPhone 3.0
 
 typedef NS_ENUM(NSInteger, UIUserInterfaceIdiom) {
+    UIUserInterfaceIdiomUnspecified = -1,
 #if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
     UIUserInterfaceIdiomPhone,           // iPhone and iPod touch style UI
     UIUserInterfaceIdiomPad,             // iPad style UI

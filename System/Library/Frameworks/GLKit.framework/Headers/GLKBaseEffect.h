@@ -8,10 +8,9 @@
 #import <GLKit/GLKitBase.h>
 
 #if TARGET_OS_IPHONE
-#import <OpenGLES/ES1/gl.h>
-#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/gltypes.h>
 #else // !TARGET_OS_IPHONE
-#import <OpenGL/gl3.h>
+#import <OpenGL/gltypes.h>
 #endif // !TARGET_OS_IPHONE
 
 #import <GLKit/GLKNamedEffect.h>

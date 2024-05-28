@@ -2,7 +2,7 @@
 //  UIActionSheet.h
 //  UIKit
 //
-//  Copyright 2010-2012, Apple Inc. All rights reserved.
+//  Copyright 2010-2012 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -21,9 +21,10 @@ typedef NS_ENUM(NSInteger, UIActionSheetStyle) {
     UIActionSheetStyleBlackOpaque      = UIBarStyleBlackOpaque,
 };
 
+// UIActionSheet is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleActionSheet instead
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIActionSheet : UIView
 
-- (id)initWithTitle:(NSString *)title delegate:(id<UIActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+- (instancetype)initWithTitle:(NSString *)title delegate:(id<UIActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION NS_EXTENSION_UNAVAILABLE_IOS("Use UIAlertController instead.");
 
 @property(nonatomic,assign) id<UIActionSheetDelegate> delegate;    // weak reference
 @property(nonatomic,copy) NSString *title;

@@ -2,7 +2,7 @@
 //  UIView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,6 +12,7 @@
 #import <UIKit/UIAppearance.h>
 #import <UIKit/UIDynamicBehavior.h>
 #import <UIKit/NSLayoutConstraint.h>
+#import <UIKit/UITraitCollection.h>
 
 typedef NS_ENUM(NSInteger, UIViewAnimationCurve) {
     UIViewAnimationCurveEaseInOut,         // slow at beginning and end
@@ -108,9 +109,20 @@ typedef NS_ENUM(NSInteger, UIViewTintAdjustmentMode) {
     UIViewTintAdjustmentModeDimmed,
 } NS_ENUM_AVAILABLE_IOS(7_0);
 
+@protocol UICoordinateSpace <NSObject>
+
+- (CGPoint)convertPoint:(CGPoint)point toCoordinateSpace:(id <UICoordinateSpace>)coordinateSpace NS_AVAILABLE_IOS(8_0);
+- (CGPoint)convertPoint:(CGPoint)point fromCoordinateSpace:(id <UICoordinateSpace>)coordinateSpace NS_AVAILABLE_IOS(8_0);
+- (CGRect)convertRect:(CGRect)rect toCoordinateSpace:(id <UICoordinateSpace>)coordinateSpace NS_AVAILABLE_IOS(8_0);
+- (CGRect)convertRect:(CGRect)rect fromCoordinateSpace:(id <UICoordinateSpace>)coordinateSpace NS_AVAILABLE_IOS(8_0);
+
+@property (readonly, nonatomic) CGRect bounds NS_AVAILABLE_IOS(8_0);
+
+@end
+
 @class UIBezierPath, UIEvent, UIWindow, UIViewController, UIColor, UIGestureRecognizer, UIMotionEffect, CALayer;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem> {
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem, UITraitEnvironment, UICoordinateSpace> {
   @package
     CALayer        *_layer;
     id              _gestureInfo;
@@ -126,6 +138,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
         unsigned int implementsDrawRect:1;
         unsigned int implementsDidScroll:1;
         unsigned int implementsMouseTracking:1;
+        unsigned int implementsIntrinsicContentSize:1;
         unsigned int hasBackgroundColor:1;
         unsigned int isOpaque:1;
         unsigned int becomeFirstResponderWhenCapable:1;
@@ -165,7 +178,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
         unsigned int potentiallyHasDanglyConstraints:1;
         unsigned int doesNotTranslateAutoresizingMaskIntoConstraints:1;
         unsigned int autolayoutIsClean:1;
-        unsigned int subviewsAutolayoutIsClean:1;
         unsigned int layoutFlushingDisabled:1;
         unsigned int layingOutFromConstraints:1;
         unsigned int wantsAutolayout:1;
@@ -174,13 +186,18 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
         unsigned int isInAutolayout:1;
         unsigned int isUpdatingAutoresizingConstraints:1;
         unsigned int isUpdatingConstraints:1;
+        unsigned int isHostingUpdateConstraintsPassDuringLayout:1;
+        unsigned int isRunningEngineLevelConstraintsPass:1;
+        unsigned int systemLayoutFittingSizeNeedsUpdate:1;
+        unsigned int systemLayoutFittingSizeNeedsUpdateInWholeSubtree:1;
+        unsigned int isCalculatingSystemLayoutFittingSize:1;
         unsigned int stayHiddenAwaitingReuse:1;
         unsigned int stayHiddenAfterReuse:1;
         unsigned int skippedLayoutWhileHiddenForReuse:1;
         unsigned int hasMaskView:1;
         unsigned int hasVisualAltitude:1;
         unsigned int hasBackdropMaskViews:1;
-        unsigned int backdropMaskViewFlags:3;
+        unsigned int backdropMaskViewFlags:5;
         unsigned int delaysTouchesForSystemGestures:1;
         unsigned int subclassShouldDelayTouchForSystemGestures:1;
         unsigned int hasMotionEffects:1;
@@ -192,12 +209,18 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
         unsigned int userInterfaceIdiom:3;
         unsigned int ancestorDefinesTintColor:1;
         unsigned int ancestorDefinesTintAdjustmentMode:1;
+        unsigned int needsTraitCollectionDidChange:1;
+        unsigned int coloredViewBounds:1;
+        unsigned int coloredAlignmentRects:1;
+        unsigned int preservesSuperviewMargins:1;
+        unsigned int hasGeometryObservers:1;
+        unsigned int wantsGeometryChanges:1;
     } _viewFlags;
 }
 
 + (Class)layerClass;                        // default is [CALayer class]. Used when creating the underlying layer for the view.
 
-- (id)initWithFrame:(CGRect)frame;          // default initializer
+- (instancetype)initWithFrame:(CGRect)frame;          // default initializer
 
 @property(nonatomic,getter=isUserInteractionEnabled) BOOL userInteractionEnabled;  // default is YES. if set to NO, user events (touch, keys) are ignored and removed from the event queue.
 @property(nonatomic)                                 NSInteger tag;                // default is 0
@@ -269,6 +292,15 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
 
 - (void)layoutSubviews;    // override point. called by layoutIfNeeded automatically. As of iOS 6.0, when constraints-based layout is used the base implementation applies the constraints-based layout, otherwise it does nothing.
 
+/*
+ -layoutMargins returns a set of insets from the edge of the view's bounds that denote a default spacing for laying out content.
+ If preservesSuperviewLayoutMargins is YES, margins cascade down the view tree, adjusting for geometry offsets, so that setting the left value of layoutMargins on a superview will affect the left value of layoutMargins for subviews positioned close to the left edge of their superview's bounds
+ If your view subclass uses layoutMargins in its layout or drawing, override -layoutMarginsDidChange in order to refresh your view if the margins change.
+ */
+@property (nonatomic) UIEdgeInsets layoutMargins NS_AVAILABLE_IOS(8_0);
+@property (nonatomic) BOOL preservesSuperviewLayoutMargins NS_AVAILABLE_IOS(8_0); // default is NO - set to enable pass-through or cascading behavior of margins from this view’s parent to its children
+- (void)layoutMarginsDidChange NS_AVAILABLE_IOS(8_0);
+
 @end
 
 @interface UIView(UIViewRendering)
@@ -286,6 +318,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
 @property(nonatomic,getter=isHidden) BOOL              hidden;                     // default is NO. doesn't check superviews
 @property(nonatomic)                 UIViewContentMode contentMode;                // default is UIViewContentModeScaleToFill
 @property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle {{0,0} {1,1}}. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
+
+@property(nonatomic,retain)          UIView           *maskView NS_AVAILABLE_IOS(8_0);
 
 /*
  -tintColor always returns a color. The color returned is the first non-default value in the receiver's superview chain (starting with itself).
@@ -413,10 +447,11 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
 
 - (NSArray *)constraints NS_AVAILABLE_IOS(6_0);
 
-- (void)addConstraint:(NSLayoutConstraint *)constraint NS_AVAILABLE_IOS(6_0);
-- (void)addConstraints:(NSArray *)constraints NS_AVAILABLE_IOS(6_0);
-- (void)removeConstraint:(NSLayoutConstraint *)constraint NS_AVAILABLE_IOS(6_0);
-- (void)removeConstraints:(NSArray *)constraints NS_AVAILABLE_IOS(6_0);
+
+- (void)addConstraint:(NSLayoutConstraint *)constraint NS_AVAILABLE_IOS(6_0); // This method will be deprecated in a future release and should be avoided.  Instead, set NSLayoutConstraint's active property to YES.
+- (void)addConstraints:(NSArray *)constraints NS_AVAILABLE_IOS(6_0); // This method will be deprecated in a future release and should be avoided.  Instead use +[NSLayoutConstraint activateConstraints:].
+- (void)removeConstraint:(NSLayoutConstraint *)constraint NS_AVAILABLE_IOS(6_0); // This method will be deprecated in a future release and should be avoided.  Instead set NSLayoutConstraint's active property to NO.
+- (void)removeConstraints:(NSArray *)constraints NS_AVAILABLE_IOS(6_0); // This method will be deprecated in a future release and should be avoided.  Instead use +[NSLayoutConstraint deactivateConstraints:].
 @end
 
 // Core Layout Methods
@@ -512,7 +547,8 @@ UIKIT_EXTERN const CGSize UILayoutFittingExpandedSize NS_AVAILABLE_IOS(6_0);
 /* The size fitting most closely to targetSize in which the receiver's subtree can be laid out while optimally satisfying the constraints. If you want the smallest possible size, pass UILayoutFittingCompressedSize; for the largest possible size, pass UILayoutFittingExpandedSize.
  Also see the comment for UILayoutPriorityFittingSizeLevel.
  */
-- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize NS_AVAILABLE_IOS(6_0);
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize NS_AVAILABLE_IOS(6_0); // Equivalent to sending -systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority: with UILayoutPriorityFittingSizeLevel for both priorities.
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize withHorizontalFittingPriority:(UILayoutPriority)horizontalFittingPriority verticalFittingPriority:(UILayoutPriority)verticalFittingPriority NS_AVAILABLE_IOS(8_0);
 @end
 
 // Debugging

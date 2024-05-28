@@ -2,7 +2,7 @@
 //  UIViewControllerTransitioning.h
 //  UIKit
 //
-//  Copyright (c) 2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,6 +16,9 @@
 
 UIKIT_EXTERN NSString *const UITransitionContextFromViewControllerKey NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UITransitionContextToViewControllerKey NS_AVAILABLE_IOS(7_0);
+
+UIKIT_EXTERN NSString *const UITransitionContextFromViewKey NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSString *const UITransitionContextToViewKey NS_AVAILABLE_IOS(8_0);
 
 // A transition context object is constructed by the system and passed to the
 // animator in its animateTransition: and transitionDuration: methods as well as
@@ -88,7 +91,17 @@ UIKIT_EXTERN NSString *const UITransitionContextToViewControllerKey NS_AVAILABLE
 // Currently only two keys are defined by the
 // system - UITransitionContextToViewControllerKey, and
 // UITransitionContextFromViewControllerKey. 
+// Animators should not directly manipulate a view controller's views and should
+// use viewForKey: to get views instead.
 - (UIViewController *)viewControllerForKey:(NSString *)key;
+
+// Currently only two keys are defined by the system -
+// UITransitionContextFromViewKey, and UITransitionContextToViewKey
+// viewForKey: may return nil which would indicate that the animator should not
+// manipulate the associated view controller's view.
+- (UIView *)viewForKey:(NSString *)key NS_AVAILABLE_IOS(8_0);
+
+- (CGAffineTransform)targetTransform NS_AVAILABLE_IOS(8_0);
 
 // The frame's are set to CGRectZero when they are not known or
 // otherwise undefined.  For example the finalFrame of the
@@ -126,6 +139,7 @@ UIKIT_EXTERN NSString *const UITransitionContextToViewControllerKey NS_AVAILABLE
 
 @end
 
+@class UIPresentationController;
 
 @protocol UIViewControllerTransitioningDelegate <NSObject>
 
@@ -137,6 +151,8 @@ UIKIT_EXTERN NSString *const UITransitionContextToViewControllerKey NS_AVAILABLE
 - (id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator;
 
 - (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator;
+
+- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0);
 
 @end
 

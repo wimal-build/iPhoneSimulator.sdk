@@ -11,17 +11,12 @@
 
 @class MPMoviePlayerController;
 
-MP_EXTERN_CLASS_AVAILABLE(3_2) @interface MPMoviePlayerViewController : UIViewController {
-@private
-    id _internal;
-}
+MP_EXTERN_CLASS_AVAILABLE(3_2) @interface MPMoviePlayerViewController : UIViewController
 
-- (id)initWithContentURL:(NSURL *)contentURL;
+- (instancetype)initWithContentURL:(NSURL *)contentURL NS_DESIGNATED_INITIALIZER;
 
-@property(nonatomic, readonly) MPMoviePlayerController *moviePlayer;
+@property (nonatomic, readonly) MPMoviePlayerController *moviePlayer;
 
-- (BOOL)shouldAutorotate; // Default is YES.
-- (NSUInteger)supportedInterfaceOrientations; // Default is UIInterfaceOrientationMaskAll.
 @end
 
 // -----------------------------------------------------------------------------

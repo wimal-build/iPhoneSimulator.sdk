@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+(function(){return function(e){if(e.html){var t=e.html.replace('style="display:none>','style="display:none">'),r=parseMicrodata(t);if(r.length){for(var a=!1,n=0;r.length>n;n++){if("http://schema.org/FoodEstablishmentReservation"!==r[n]["@type"]){a=!0;break}r[n]["@context"]="http://schema.org",ASSERT(OR(r[n].reservationId,r[n].reservationNumber),r[n].startTime,r[n].reservationFor)}if(!a)return r}}}}).call();

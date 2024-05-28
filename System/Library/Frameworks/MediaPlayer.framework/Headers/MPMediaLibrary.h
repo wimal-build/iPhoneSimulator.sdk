@@ -37,4 +37,4 @@ MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaLibrary : NSObject <NSSecureCod
 // Notifications
 
 // Any items or playlists which were previously cached should be re-evaluated from queries when MPMediaLibraryDidChangeNotification is posted.
-MP_EXTERN NSString *const MPMediaLibraryDidChangeNotification;
+MP_EXTERN NSString * const MPMediaLibraryDidChangeNotification;

@@ -21,13 +21,13 @@
  Upon download completion, you will need to put your uncompressed content
  in the URL specified by -[NKIssue contentURL].
  */
-@interface NKAssetDownload : NSObject
+NS_CLASS_AVAILABLE_IOS(5_0) @interface NKAssetDownload : NSObject
 
 /*!
  @property   issue
  @abstract   A pointer to the issue that this asset is associated with.
  */
-@property (readonly, assign) NKIssue *issue; // back-pointer to the issue this asset is associated with
+@property (readonly, weak) NKIssue *issue; // back-pointer to the issue this asset is associated with
 
 /*!
  @property   identifier
@@ -44,7 +44,7 @@
  encoding mechanisms, custom identifiers, etc.  However, performance concerns dictate
  that you should make this content as minimal as possible.
  */
-@property (readwrite, copy) NSDictionary *userInfo;
+@property (copy) NSDictionary *userInfo;
 
 /*!
  @property   URLRequest

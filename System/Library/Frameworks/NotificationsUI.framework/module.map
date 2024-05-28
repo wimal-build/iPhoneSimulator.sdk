@@ -1,0 +1,8 @@
+framework module NotificationsUI [system] {
+  module NCWidgetExtensionContext {
+    header "NCWidgetExtensionContext.h"
+    export *
+  }
+  export *
+}
+

@@ -2,7 +2,7 @@
 //  UISwitch.h
 //  UIKit
 //
-//  Copyright (c) 2008-2013, Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2014 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,7 +22,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISwitch : UIControl <NSCoding> {
 
 @property(nonatomic,getter=isOn) BOOL on;
 
-- (id)initWithFrame:(CGRect)frame;              // This class enforces a size appropriate for the control. The frame size is ignored.
+- (instancetype)initWithFrame:(CGRect)frame;              // This class enforces a size appropriate for the control. The frame size is ignored.
 
 - (void)setOn:(BOOL)on animated:(BOOL)animated; // does not send action
 

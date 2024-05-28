@@ -11,8 +11,6 @@
 
 MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPVolumeView : UIView <NSCoding>
 
-- (CGSize)sizeThatFits:(CGSize)size;
-
 @property (nonatomic) BOOL showsVolumeSlider NS_AVAILABLE_IOS(4_2); // Default is YES.
 @property (nonatomic) BOOL showsRouteButton NS_AVAILABLE_IOS(4_2);  // Default is YES.
 

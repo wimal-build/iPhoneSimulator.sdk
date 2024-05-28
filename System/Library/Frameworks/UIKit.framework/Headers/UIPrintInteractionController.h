@@ -2,7 +2,7 @@
 //  UIPrintInteractionController.h
 //  UIKit
 //
-//  Copyright 2010-2012, Apple Inc. All rights reserved.
+//  Copyright 2010-2012 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,28 +10,14 @@
 #import <UIKit/UIApplication.h>
 #import <UIKit/UIKitDefines.h>
 
-@class UIPrintInteractionController, UIPrintInfo, UIPrintPaper, UIPrintPageRenderer, UIPrintFormatter;
+@class UIPrintInteractionController, UIPrintInfo, UIPrintPaper, UIPrintPageRenderer, UIPrintFormatter, UIPrinter;
 @class UIView, UIBarButtonItem;
 
 typedef void (^UIPrintInteractionCompletionHandler)(UIPrintInteractionController *printInteractionController, BOOL completed, NSError *error);
 
 @protocol UIPrintInteractionControllerDelegate;
 
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintInteractionController : NSObject {
-  @private
-    UIPrintInfo                             *_printInfo;
-    id<UIPrintInteractionControllerDelegate> _delegate;
-    BOOL                                     _showsPageRange;
-    BOOL                                     _hidesNumberOfCopies;
-    UIPrintPageRenderer                     *_printPageRenderer;
-    UIPrintFormatter                        *_printFormatter;
-    id                                       _printingItem;
-    NSArray                                 *_printingItems;
-    UIPrintPaper                            *_printPaper;
-    UIPrintInteractionCompletionHandler      _completionHandler;
-    UIBackgroundTaskIdentifier               _backgroundTaskIdentifier;
-    id                                       _printState;
-}
+NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintInteractionController : NSObject
 
 + (BOOL)isPrintingAvailable;                    // return YES if system supports printing. use this to hide HI for unsupported devices.
 
@@ -45,6 +31,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintInteractionController : NSObject {
 @property(nonatomic,assign) id<UIPrintInteractionControllerDelegate> delegate;       // not retained. default is nil
 @property(nonatomic)        BOOL                                     showsPageRange; // default is NO.
 @property(nonatomic)        BOOL                                     showsNumberOfCopies NS_AVAILABLE_IOS(7_0); // default is YES.
+@property(nonatomic)        BOOL                                     showsPaperSelectionForLoadedPapers NS_AVAILABLE_IOS(8_0); // default is NO.  Paper selection for loaded papers is always shown for UIPrintInfoOutputPhoto and UIPrintInfoOutputPhotoGrayscale
 
 @property(nonatomic,readonly) UIPrintPaper *printPaper;  // set after printer selection
 
@@ -56,6 +43,13 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintInteractionController : NSObject {
 - (BOOL)presentAnimated:(BOOL)animated completionHandler:(UIPrintInteractionCompletionHandler)completion;                                                // iPhone
 - (BOOL)presentFromRect:(CGRect)rect inView:(UIView *)view animated:(BOOL)animated completionHandler:(UIPrintInteractionCompletionHandler)completion;    // iPad
 - (BOOL)presentFromBarButtonItem:(UIBarButtonItem *)item animated:(BOOL)animated completionHandler:(UIPrintInteractionCompletionHandler)completion;      // iPad
+
+/*!
+ * @discussion	Use to print without showing the standard print panel. Use with a
+ *		UIPrinter found using the UIPrinterPickerController.
+ *              The value for the duplex property on printInfo will be ignored.
+ */
+- (BOOL) printToPrinter:(UIPrinter *)printer completionHandler:(UIPrintInteractionCompletionHandler)completion;
 
 - (void)dismissAnimated:(BOOL)animated;
 

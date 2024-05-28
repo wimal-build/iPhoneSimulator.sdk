@@ -7,10 +7,10 @@
 	<key>Label</key>
 	<string>com.apple.Maps.geocorrectiond</string>
 	<key>Program</key>
-	<string>/Applications/Maps.app/geocorrectiond</string>
+	<string>/System/Library/PrivateFrameworks/MapsSupport.framework/geocorrectiond</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Applications/Maps.app/geocorrectiond</string>
+		<string>/System/Library/PrivateFrameworks/MapsSupport.framework/geocorrectiond</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
