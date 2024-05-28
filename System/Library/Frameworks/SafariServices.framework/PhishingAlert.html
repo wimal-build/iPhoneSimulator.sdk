@@ -218,7 +218,7 @@
                 PhishingAlertController.loaded();
             },
 
-            updateUI: function(source, type, host, canGoBack, currentURL, reportAnErrorURL, learnMoreAboutPhishingURL)
+            updateUI: function(source, type, host, currentURL, reportAnErrorURL, learnMoreAboutPhishingURL)
             {
                 if (this.source != source || this.type != type) {
                     document.getElementById("alert").className = "alert " + type + " " + source;
@@ -261,6 +261,8 @@
                 closeButton.element.addEventListener('touchcancel', function(e) { touchCancelHandler(e, closeButton) }, false);
                 goBackButton.element.addEventListener('touchcancel', function(e) { touchCancelHandler(e, goBackButton) }, false);
                 ignoreButton.element.addEventListener('touchcancel', function(e) { touchCancelHandler(e, ignoreButton) }, false);
+
+                var canGoBack = history.length > 1;
 
                 if (canGoBack) {
                     document.getElementById("button-bar").removeChild(closeButton.element);

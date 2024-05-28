@@ -1,5 +1,0 @@
-? [A= Facility com.apple.iad] file $ENV(SIMULATOR_LOG_ROOT)/iAd/com.apple.iad.log rotate=local file_max=4M all_max=8M compress ttl=5 format=$((Time)(local.6))\ $(Sender)[$(PID)]\ :\ $(Message)
-? [A= Facility com.apple.iad] [> Level error] claim
-? [A= Facility com.apple.iad.external] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/iAd/com.apple.iad.log rotate=local file_max=4M all_max=8M compress format=$((Time)(local.6))\ $(Sender)[$(PID)]\ :\ $(Message)
-? [A= Facility com.apple.iad.external] [> Level error] claim
-

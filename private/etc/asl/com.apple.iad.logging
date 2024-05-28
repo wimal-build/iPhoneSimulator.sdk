@@ -3,3 +3,6 @@
 ? [A= Facility com.apple.iad.external] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/iAd/com.apple.iad.log rotate=local file_max=4M all_max=8M compress format=$((Time)(local.6))\ $(Sender)[$(PID)]\ :\ $(Message)
 ? [A= Facility com.apple.iad.external] [> Level error] claim
 
+# Specify owner, group, and access bits for log directories
+> $ENV(SIMULATOR_LOG_ROOT)/iAd uid=501 gid=501 mode=0755
+> $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/iAd uid=501 gid=501 mode=0755

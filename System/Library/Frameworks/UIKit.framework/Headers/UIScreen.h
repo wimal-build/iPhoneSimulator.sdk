@@ -2,7 +2,7 @@
 //  UIScreen.h
 //  UIKit
 //
-//  Copyright (c) 2007-2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2015 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -60,10 +60,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject <UITraitEnvironment>
 
 - (nullable CADisplayLink *)displayLinkWithTarget:(id)target selector:(SEL)sel NS_AVAILABLE_IOS(4_0);
 
-#ifndef SDK_HIDE_TIDE
 @property (nullable, nonatomic, weak, readonly) UIView *focusedView NS_AVAILABLE_IOS(9_0);
 @property (readonly, nonatomic) BOOL supportsFocus NS_AVAILABLE_IOS(9_0);
-#endif
+
 @property(nonatomic,readonly) CGRect applicationFrame NS_DEPRECATED_IOS(2_0, 9_0, "Use -[UIScreen bounds]") __TVOS_PROHIBITED;
 
 @end
