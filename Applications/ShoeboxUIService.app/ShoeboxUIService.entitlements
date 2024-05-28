@@ -12,5 +12,9 @@
 	<true/>
 	<key>com.apple.springboard.openurlinbackground</key>
 	<true/>
+	<key>com.apple.developer.ubiquity-container-identifiers</key>
+	<array>
+		<string>com.apple.shoebox</string>
+	</array>
 </dict>
 </plist>

@@ -30,3 +30,6 @@
 #import <MapKit/MKPolylineView.h>
 #import <MapKit/MKCircleView.h>
 #import <MapKit/MKUserTrackingBarButtonItem.h>
+#import <MapKit/MKLocalSearch.h>
+#import <MapKit/MKLocalSearchRequest.h>
+#import <MapKit/MKLocalSearchResponse.h>

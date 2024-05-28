@@ -700,8 +700,7 @@ struct proc_fileportinfo {
 /* proc_track_dirty() flags */
 #define PROC_DIRTY_TRACK                0x1
 #define PROC_DIRTY_ALLOW_IDLE_EXIT      0x2
-
-#define PROC_DIRTY_TRACK_MASK           (PROC_DIRTY_TRACK|PROC_DIRTY_ALLOW_IDLE_EXIT)
+#define PROC_DIRTY_DEFER                0x4
 
 /* proc_get_dirty() flags */
 #define PROC_DIRTY_TRACKED              0x1

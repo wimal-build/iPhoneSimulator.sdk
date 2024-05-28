@@ -140,6 +140,7 @@
 #define __IPHONE_5_0     50000
 #define __IPHONE_5_1     50100
 #define __IPHONE_6_0     60000
+#define __IPHONE_6_1     60100
 #define __IPHONE_NA      99999  /* not available */
 
 #include <AvailabilityInternal.h>

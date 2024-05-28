@@ -210,8 +210,11 @@ CB_EXTERN_CLASS @interface CBCentralManager : NSObject
  *
  *  @param peripheral   A <code>CBPeripheral</code>.
  *
- *  @discussion         Cancels an active or pending connection to <i>peripheral</i>. Note that this is non-blocking, and any <code>CBPeripheral</code>
+ *  @discussion         Cancels an active or pending connection to <i>peripheral</i>. This command is non-blocking, and any <code>CBPeripheral</code>
  *                      commands that are still pending to <i>peripheral</i> may or may not complete.
+ *                      It extremely important to note that canceling a connection does not guarantee the immediate disconnection of the underlying physical
+ *                      link. This can be caused by a variety of different factors, including other application(s) that hold an outstanding connection to the
+ *                      peripheral. However, in this situation, you will still receive an immediate call to @link centralManager:didDisconnectPeripheral:error: @/link.
  *
  *  @see                centralManager:didDisconnectPeripheral:error:
  *
