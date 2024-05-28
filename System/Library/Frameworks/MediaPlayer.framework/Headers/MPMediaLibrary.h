@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class MPMediaQuery;
 
 // MPMediaLibrary represents a collection of media on a device, and can be used 
@@ -19,7 +21,9 @@
 // -----------------------------------------------------------------------------
 
 
-MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaLibrary : NSObject <NSSecureCoding>
+MP_EXTERN_CLASS_AVAILABLE(3_0)
+
+@interface MPMediaLibrary : NSObject <NSSecureCoding>
 
 + (MPMediaLibrary *)defaultMediaLibrary;
 
@@ -38,3 +42,5 @@ MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaLibrary : NSObject <NSSecureCod
 
 // Any items or playlists which were previously cached should be re-evaluated from queries when MPMediaLibraryDidChangeNotification is posted.
 MP_EXTERN NSString * const MPMediaLibraryDidChangeNotification;
+
+NS_ASSUME_NONNULL_END

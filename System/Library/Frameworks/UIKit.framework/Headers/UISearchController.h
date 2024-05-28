@@ -9,6 +9,8 @@
 #import <UIKit/UIPresentationController.h>
 #import <UIKit/UIViewControllerTransitioning.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UISearchController;
 
 @protocol UISearchControllerDelegate <NSObject>
@@ -31,20 +33,22 @@
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UISearchController : UIViewController <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 // Pass nil if you wish to display search results in the same view that you are searching.
-- (instancetype)initWithSearchResultsController:(UIViewController *)searchResultsController;
+- (instancetype)initWithSearchResultsController:(nullable UIViewController *)searchResultsController;
 
 // The object responsible for updating the content of the searchResultsController.
-@property (nonatomic, assign) id <UISearchResultsUpdating> searchResultsUpdater;
+@property (nullable, nonatomic, weak) id <UISearchResultsUpdating> searchResultsUpdater;
 
 // Setting this property to YES is a convenience method that performs a default presentation of the search controller appropriate for how the controller is configured. Implement -presentSearchController: if the default presentation is not adequate.
 @property (nonatomic, assign, getter = isActive) BOOL active;
 
-@property (nonatomic, assign) id <UISearchControllerDelegate> delegate;
+@property (nullable, nonatomic, weak) id <UISearchControllerDelegate> delegate;
 @property (nonatomic, assign) BOOL dimsBackgroundDuringPresentation;         // default is YES
 @property (nonatomic, assign) BOOL hidesNavigationBarDuringPresentation;     // default is YES
 
-@property (nonatomic, retain, readonly) UIViewController *searchResultsController;
+@property (nullable, nonatomic, strong, readonly) UIViewController *searchResultsController;
 
 // You are free to become the search bar's delegate to monitor for text changes and button presses.
-@property (nonatomic, retain, readonly) UISearchBar *searchBar;
+@property (nonatomic, strong, readonly) UISearchBar *searchBar;
 @end
+
+NS_ASSUME_NONNULL_END

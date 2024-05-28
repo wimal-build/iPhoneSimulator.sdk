@@ -3,11 +3,11 @@
  
      Contains:   Master include for vecLib framework
  
-     Version:    vecLib-514.0
+     Version:    vecLib-563.2
  
-     Copyright:  © 2000-2015 by Apple Inc., all rights reserved.
+     Copyright:  Copyright (c) 2000-2015 by Apple Inc. All rights reserved.
  
-     Bugs?:      For bug reports, consult the following page on
+     Bugs:       For bug reports, consult the following page on
                  the World Wide Web:
  
                      http://developer.apple.com/bugreporter/

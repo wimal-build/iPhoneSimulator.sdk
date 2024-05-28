@@ -2,7 +2,7 @@
 #
 # Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
 #
-#RLSTAG: RLS_FE.ENZ_6.0.3 & RLS_FE-tuning.ENZ_6.0.3
+#RLSTAG: RLS_FE.ENZ_6.0.3 & RLS_FE-tuning-2.ENZ_6.0.3
 
 [header]
 language = ENZ
@@ -49,4 +49,7 @@ language = ENZ
 
 #FB41267
 /[Ww]ar of 1812/ --> "war of 18 12"
+
+#FB76310_20673705 rule for recovering a wrong remapping of /Y æm/ into /Ym/  Input text: "I'm a South African English voice"
+/I am/   -->   "I'm"
 

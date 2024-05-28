@@ -13,7 +13,7 @@
  @constant   NKIssueDownloadCompletedNotification
  @abstract   Notification when an issue's assets have all been downloaded.
  */
-extern NSString *const NKIssueDownloadCompletedNotification NS_AVAILABLE_IOS(5_0);
+extern __attribute__((visibility ("default"))) NSString * __nonnull const NKIssueDownloadCompletedNotification NS_AVAILABLE_IOS(5_0);
 
 typedef NS_ENUM(NSInteger, NKIssueContentStatus) {
     NKIssueContentStatusNone,
@@ -36,13 +36,14 @@ typedef NS_ENUM(NSInteger, NKIssueContentStatus) {
  An issue is created by adding it to the library with
  -[NKLibrary addIssueWithName:date:].
  */
+NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_AVAILABLE_IOS(5_0) @interface NKIssue : NSObject
 
 /*!
  @property   downloadingAssets
  @abstract   An array of NKAssetDownload associated with this issue.
  */
-@property (readonly, copy) NSArray *downloadingAssets;
+@property (readonly, copy) NSArray<NKAssetDownload *> *downloadingAssets;
 
 /*!
  @property   contentURL
@@ -82,3 +83,4 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface NKIssue : NSObject
 - (NKAssetDownload *)addAssetWithRequest:(NSURLRequest *)request;
 
 @end
+NS_ASSUME_NONNULL_END

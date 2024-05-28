@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, UIBarMetrics) {
     UIBarMetricsDefault,
     UIBarMetricsCompact,
@@ -42,3 +44,5 @@ typedef NS_ENUM(NSInteger, UIBarPosition) {
  */
 - (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar;
 @end
+
+NS_ASSUME_NONNULL_END

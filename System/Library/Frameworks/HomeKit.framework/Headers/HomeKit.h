@@ -1,7 +1,7 @@
 // HomeKit.h
 // HomeKit
 //
-// Copyright (c) 2014 Apple Inc. All rights reserved.
+// Copyright (c) 2014-2015 Apple Inc. All rights reserved.
 
 #import <HomeKit/HMHomeManager.h>
 #import <HomeKit/HMAccessoryBrowser.h>
@@ -20,4 +20,10 @@
 #import <HomeKit/HMTrigger.h>
 #import <HomeKit/HMTimerTrigger.h>
 #import <HomeKit/HMUser.h>
+#import <HomeKit/HMHomeAccessControl.h>
+#import <HomeKit/HMAccessoryCategory.h>
+#import <HomeKit/HMEvent.h>
+#import <HomeKit/HMCharacteristicEvent.h>
+#import <HomeKit/HMLocationEvent.h>
+#import <HomeKit/HMEventTrigger.h>
 #import <HomeKit/HMError.h>

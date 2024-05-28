@@ -4,16 +4,14 @@
 precision lowp float;
 
 varying vec4 coordinateAndMainEndCenter;
-varying mediump vec3 percentages; // x, y, z = main, percentageScaleFactor, mod(main, 1.0)
+varying mediump vec4 percentages; // x, y, z = main, percentageScaleFactor, mod(main, 1.0)
 varying vec4 color1;
 varying vec4 color2;
-varying vec2 cosAndSinResult;
 varying vec4 sizes; // x, y, z, w = size, innerRadius, halfRingWidth, midRadius
 varying vec2 percentageOverflowOffsets;
 varying float coordinatePercent;
 
 const float ringDimFactor = 0.15;
-const float oneMinusRingDimFactor = 0.85;
 
 void main() {
     vec2 coordinate = coordinateAndMainEndCenter.xy;
@@ -23,7 +21,7 @@ void main() {
     float midRadius = sizes.w;     // Precomputed as (1.0 + innerRadius) * 0.25
     
     // Suppress compiler warnings about unused variables
-    vec4 unused = vec4(color2.r, percentageOverflowOffsets.x, coordinatePercent, cosAndSinResult.x);
+    vec4 unused = vec4(color2.r, percentageOverflowOffsets.x, coordinatePercent, percentages.x);
     
     float ringDistance = abs(centerDistance - midRadius) - halfRingWidth;
     float alpha = max(1.0 - ringDistance * size, 0.0);

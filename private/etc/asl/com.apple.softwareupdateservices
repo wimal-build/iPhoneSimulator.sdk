@@ -1,0 +1,18 @@
+# asl(3) configuration file for companion side of SoftwareUpdateServices. See asl.conf(5).
+
+> /private/var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/SoftwareUpdateServices.log format=bsd uid=501 gid=501 rotate=local ttl=5 soft compress file_max=5M all_max=10M
+
+# Claim notice messages to keep them out of syslog
+? [= Facility com.apple.softwareupdateservices] claim
+
+# Send everything to file regardless of level
+? [= Facility com.apple.softwareupdateservices] file /private/var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/SoftwareUpdateServices.log
+
+# softwareupdated, UpdateBrainService and CleanupPreparePathService consume the update package
+? [= Sender softwareupdated] file /private/var/mobile/Library/Logs/SoftwareUpdateServices.log
+? [= Sender com.apple.MobileSoftwareUpdate.UpdateBrainService] file /private/var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/SoftwareUpdateServices.log
+? [= Sender com.apple.MobileSoftwareUpdate.CleanupPreparePathService] file /private/var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/SoftwareUpdateServices.log
+? [= Sender softwareupdateservicesd] file /private/var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/SoftwareUpdateServices.log
+
+# Preferences app contains software update UI
+? [= Sender Preferences] file /private/var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/SoftwareUpdateServices.log

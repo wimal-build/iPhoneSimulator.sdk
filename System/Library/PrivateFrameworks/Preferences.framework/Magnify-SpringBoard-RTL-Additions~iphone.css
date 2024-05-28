@@ -1,3 +1,120 @@
 BODY {
 	direction:rtl !important;
 }
+
+/* Small */
+
+#springboard-small 	{ background: #FFF url(Magnify-SpringBoard-568-RTL~iphone.png) top left no-repeat !important; }
+
+#springboard-small .Messages,
+#springboard-small .Weather,
+#springboard-small .Wallet,
+#springboard-small .iTunesStore,
+#springboard-small .Health,
+#springboard-small .Phone {
+	 left: 550px !important; 
+}
+
+#springboard-small .DayOfWeek,
+#springboard-small .Calendar,
+#springboard-small .Clock,
+#springboard-small .Notes,
+#springboard-small .AppStore,
+#springboard-small .Settings,
+#springboard-small .Safari {
+	left: 377px !important;
+}		
+
+#springboard-small .Photos,
+#springboard-small .Maps,
+#springboard-small .Reminders,
+#springboard-small .iBooks,
+#springboard-small .Mail {
+	left: 194px !important;
+}
+
+#springboard-small .Camera,
+#springboard-small .Videos,
+#springboard-small .Stocks,
+#springboard-small .News,
+#springboard-small .Music {
+	left: 20px !important;
+}
+
+/* Medium */
+
+#springboard-medium { background: #FFF url(Magnify-SpringBoard-667-RTL~iphone.png) top left no-repeat !important; }
+
+#springboard-medium .Messages,
+#springboard-medium .Weather,
+#springboard-medium .Wallet,
+#springboard-medium .iTunesStore,
+#springboard-medium .Health,
+#springboard-medium .Phone {
+	 left: 546px !important; 
+}
+
+#springboard-medium .DayOfWeek,
+#springboard-medium .Calendar,
+#springboard-medium .Clock,
+#springboard-medium .Notes,
+#springboard-medium .AppStore,
+#springboard-medium .Settings,
+#springboard-medium .Safari {
+	left: 372px !important;
+}		
+
+#springboard-medium .Photos,
+#springboard-medium .Maps,
+#springboard-medium .Reminders,
+#springboard-medium .iBooks,
+#springboard-medium .Mail {
+	left: 198px !important;
+}
+
+#springboard-medium .Camera,
+#springboard-medium .Videos,
+#springboard-medium .Stocks,
+#springboard-medium .News,
+#springboard-medium .Music {
+	left: 24px !important;
+}
+
+/* Large */
+
+#springboard-large 	{ background: #FFF url(Magnify-SpringBoard-736-RTL~iphone.jpg) top left no-repeat !important; }
+
+#springboard-large .Messages,
+#springboard-large .Weather,
+#springboard-large .Wallet,
+#springboard-large .iTunesStore,
+#springboard-large .Health,
+#springboard-large .Phone {
+	 left: 887px !important; 
+}
+
+#springboard-large .DayOfWeek,
+#springboard-large .Calendar,
+#springboard-large .Clock,
+#springboard-large .Notes,
+#springboard-large .AppStore,
+#springboard-large .Settings,
+#springboard-large .Safari {
+	left: 602px !important;
+}		
+
+#springboard-large .Photos,
+#springboard-large .Maps,
+#springboard-large .Reminders,
+#springboard-large .iBooks,
+#springboard-large .Mail {
+	left: 319px !important;
+}
+
+#springboard-large .Camera,
+#springboard-large .Videos,
+#springboard-large .Stocks,
+#springboard-large .News,
+#springboard-large .Music {
+	left: 35px !important;
+}

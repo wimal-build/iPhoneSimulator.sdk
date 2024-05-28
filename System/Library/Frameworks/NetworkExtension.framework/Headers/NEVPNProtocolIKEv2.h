@@ -1,9 +1,15 @@
 /*
- * Copyright (c) 2014 Apple Inc.
+ * Copyright (c) 2014-2015 Apple Inc.
  * All rights reserved.
  */
 
+#ifndef __NE_INDIRECT__
+#error "Please import the NetworkExtension module instead of this file directly."
+#endif
+
 #import <NetworkExtension/NEVPNProtocolIPSec.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @typedef NEVPNIKEv2EncryptionAlgorithm
@@ -18,10 +24,10 @@ typedef NS_ENUM(NSInteger, NEVPNIKEv2EncryptionAlgorithm) {
 	NEVPNIKEv2EncryptionAlgorithmAES128 = 3,
 	/*! @const NEVPNIKEv2EncryptionAlgorithmAES256 Advanced Encryption Standard 256 bit (AES256) */
 	NEVPNIKEv2EncryptionAlgorithmAES256 = 4,
-	/*! @const NEVPNIKEv2EncryptionAlgorithmAES128-GCM Advanced Encryption Standard 128 bit (AES128-GCM) */
-	NEVPNIKEv2EncryptionAlgorithmAES128GCM = 5,
-	/*! @const NEVPNIKEv2EncryptionAlgorithmAES256-GCM Advanced Encryption Standard 256 bit (AES256-GCM) */
-	NEVPNIKEv2EncryptionAlgorithmAES256GCM = 6,
+	/*! @const NEVPNIKEv2EncryptionAlgorithmAES128GCM Advanced Encryption Standard 128 bit (AES128GCM) */
+	NEVPNIKEv2EncryptionAlgorithmAES128GCM NS_ENUM_AVAILABLE(10_11, 8_3) = 5,
+	/*! @const NEVPNIKEv2EncryptionAlgorithmAES256GCM Advanced Encryption Standard 256 bit (AES256GCM) */
+	NEVPNIKEv2EncryptionAlgorithmAES256GCM NS_ENUM_AVAILABLE(10_11, 8_3) = 6,
 } NS_ENUM_AVAILABLE(10_10, 8_0);
 
 /*!
@@ -48,11 +54,11 @@ typedef NS_ENUM(NSInteger, NEVPNIKEv2IntegrityAlgorithm) {
 typedef NS_ENUM(NSInteger, NEVPNIKEv2DeadPeerDetectionRate) {
 	/*! @const NEVPNIKEv2DeadPeerDetectionRateNone Do not perform dead peer detection */
 	NEVPNIKEv2DeadPeerDetectionRateNone = 0,
-	/*! @const NEVPNIKEv2DeadPeerDetectionRateLow Run dead peer detection once every 60 minutes. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead */
+	/*! @const NEVPNIKEv2DeadPeerDetectionRateLow Run dead peer detection once every 30 minutes. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead */
 	NEVPNIKEv2DeadPeerDetectionRateLow = 1,
-	/*! @const NEVPNIKEv2DeadPeerDetectionRateMedium Run dead peer detection once every 30 minutes. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead */
+	/*! @const NEVPNIKEv2DeadPeerDetectionRateMedium Run dead peer detection once every 10 minutes. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead */
 	NEVPNIKEv2DeadPeerDetectionRateMedium = 2,
-	/*! @const NEVPNIKEv2DeadPeerDetectionRateHigh Run dead peer detection once every 10 minute. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead */
+	/*! @const NEVPNIKEv2DeadPeerDetectionRateHigh Run dead peer detection once every 1 minute. If the peer does not respond, retry 5 times at 1 second intervals before declaring the peer dead */
 	NEVPNIKEv2DeadPeerDetectionRateHigh = 3,
 } NS_ENUM_AVAILABLE(10_10, 8_0);
 
@@ -101,7 +107,7 @@ typedef NS_ENUM(NSInteger, NEVPNIKEv2CertificateType) {
     NEVPNIKEv2CertificateTypeECDSA384 = 3,
     /*! @const NEVPNIKEv2CertificateTypeECDSA521 ECDSA with p-521 curve */
     NEVPNIKEv2CertificateTypeECDSA521 = 4,
-} NS_ENUM_AVAILABLE(10_10, 8_0);
+} NS_ENUM_AVAILABLE(10_11, 8_3);
 
 /*!
  * @class NEVPNIKEv2SecurityAssociationParameters
@@ -132,7 +138,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 
 /*!
  * @property lifetimeMinutes
- * @discussion The life time of the Security Association, in minutes. Default is 60 for IKE Security Associations, and 30 for Child Security Associations. Before the liftime is reached, IKEv2 will attempt to rekey the Security Association to maintain the connection.
+ * @discussion The life time of the Security Association, in minutes. Default is 60 for IKE Security Associations, and 30 for Child Security Associations. Before the lifetime is reached, IKEv2 will attempt to rekey the Security Association to maintain the connection.
  */
 @property int32_t lifetimeMinutes NS_AVAILABLE(10_10, 8_0);
 
@@ -150,7 +156,7 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 
 /*!
  * @property deadPeerDetectionRate
- * @discussion How frequently the IKEv2 client will run the dead peer detection algorithm.
+ * @discussion How frequently the IKEv2 client will run the dead peer detection algorithm.  Default is NEVPNIKEv2DeadPeerDetectionRateMedium.
  */
 @property NEVPNIKEv2DeadPeerDetectionRate deadPeerDetectionRate NS_AVAILABLE(10_10, 8_0);
 
@@ -158,19 +164,25 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
  * @property serverCertificateIssuerCommonName
  * @discussion A string containing the Subject Common Name field of the Certificate Authority certificate that issued the IKEv2 server's certificate.
  */
-@property (copy) NSString *serverCertificateIssuerCommonName NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSString *serverCertificateIssuerCommonName NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @property serverCertificateCommonName
  * @discussion A string containing the value to verify in the IKEv2 server certificate's Subject Common Name field.
  */
-@property (copy) NSString *serverCertificateCommonName NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSString *serverCertificateCommonName NS_AVAILABLE(10_10, 8_0);
 
 /*!
- * @property CertificateType
+ * @property certificateType
  * @discussion contains the type of certificate if an certificate is configured.  Default is RSA.
  */
-@property NEVPNIKEv2CertificateType certificateType NS_AVAILABLE(10_10, 8_0);
+@property NEVPNIKEv2CertificateType certificateType NS_AVAILABLE(10_11, 8_3);
+
+/*!
+ * @property useConfigurationAttributeInternalIPSubnet
+ * @discussion Boolean indicating if client should use INTERNAL_IP4_SUBNET / INTERNAL_IP6_SUBNET attributes.  Default is False.
+ */
+@property BOOL useConfigurationAttributeInternalIPSubnet NS_AVAILABLE(10_11, 9_0);
 
 /*!
  * @property IKESecurityAssociationParameters
@@ -184,5 +196,37 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
  */
 @property (readonly) NEVPNIKEv2SecurityAssociationParameters *childSecurityAssociationParameters NS_AVAILABLE(10_10, 8_0);
 
+/*!
+ * @property disableMOBIKE
+ * @discussion Disable MOBIKE negotiation. Default is NO.
+ */
+@property BOOL disableMOBIKE NS_AVAILABLE(10_11, 9_0);
+
+/*!
+ * @property disableRedirect
+ * @discussion Disable Server Redirect. Default is NO.
+ */
+@property BOOL disableRedirect NS_AVAILABLE(10_11, 9_0);
+
+/*!
+ * @property enablePFS
+ * @discussion Enable Perfect Forward Secrecy. Default is NO.
+ */
+@property BOOL enablePFS NS_AVAILABLE(10_11, 9_0);
+
+/*!
+ * @property enableRevocationCheck
+ * @discussion Enable certificate revocation check. Default is NO.
+ */
+@property BOOL enableRevocationCheck NS_AVAILABLE(10_11, 9_0);
+
+/*!
+ * @property strictRevocationCheck
+ * @discussion Require positive certificate revocation check response for peer certificate validation to pass. Default is NO.
+ */
+@property BOOL strictRevocationCheck NS_AVAILABLE(10_11, 9_0);
+
 @end
+
+NS_ASSUME_NONNULL_END
 

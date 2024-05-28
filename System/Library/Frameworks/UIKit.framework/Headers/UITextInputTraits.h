@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKitDefines.h>
 
 //
 // UITextAutocapitalizationType
@@ -109,6 +110,7 @@ typedef NS_ENUM(NSInteger, UIReturnKeyType) {
     UIReturnKeyYahoo,
     UIReturnKeyDone,
     UIReturnKeyEmergencyCall,
+    UIReturnKeyContinue NS_ENUM_AVAILABLE_IOS(9_0),
 };
 
 //

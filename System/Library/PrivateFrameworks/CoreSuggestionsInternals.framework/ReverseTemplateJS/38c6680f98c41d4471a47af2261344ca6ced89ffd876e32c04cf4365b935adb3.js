@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("wotif.com-cancellation-au",function(e){return/^Cancellation.*/.test(e.subject)},function(e){if(/^Cancellation.*/.test(e.subject)){var t,n="en_AU",a={};return a.guestName=/for\s(.*)\sat/,a.confirmation=/#(\d+)/,a.hotelName=/for.*at\s(.*)\shas been cancelled/,a.checkin=/\(.*(\d{2}\/\d{2})\)/,a.totalPrice=/A refund for\s(.*)\swill/,(t=loadHelper("wotif.com-2015-cancellation-skeleton.js"))(e,n,a)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/356/537/538","SG735e2f71")]);

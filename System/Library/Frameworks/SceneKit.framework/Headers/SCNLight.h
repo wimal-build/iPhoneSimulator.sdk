@@ -1,12 +1,14 @@
 //
 //  SCNLight.h
 //
-//  Copyright (c) 2012-2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <SceneKit/SCNAnimation.h>
 #import <SceneKit/SCNTechnique.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @group Light Types
@@ -33,20 +35,15 @@ typedef NS_ENUM(NSInteger, SCNShadowMode) {
     SCNShadowModeForward   = 0,
     SCNShadowModeDeferred  = 1,
     SCNShadowModeModulated = 2
-};
-
+} NS_ENUM_AVAILABLE(10_10, 8_0);
 
 /*!
  @class SCNLight
  @abstract SCNLight represents a light that can be attached to a SCNNode. 
  */
 
-SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
+NS_CLASS_AVAILABLE(10_8, 8_0)
 @interface SCNLight : NSObject <SCNAnimatable, SCNTechniqueSupport, NSCopying, NSSecureCoding>
-{
-@private
-	id _reserved;
-}
 
 /*! 
  @method light
@@ -72,7 +69,7 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
  @property name
  @abstract Determines the name of the receiver.
  */
-@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy, nullable) NSString *name;
 
 
 #pragma mark - Shadow
@@ -80,7 +77,7 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
 /*! 
  @property castsShadow
  @abstract Determines whether the receiver casts a shadow. Defaults to NO.
- @discussion Shadows are only supported by spot lights.
+ @discussion Shadows are only supported by spot and directional lights.
  */
 @property(nonatomic) BOOL castsShadow;
 
@@ -101,25 +98,26 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
  @abstract Specifies the size of the shadow map.
  @discussion The larger the shadow map is the more precise the shadows are but the slower the computation is. If set to {0,0} the size of the shadow map is automatically chosen. Defaults to {0,0}.
  */
-@property(nonatomic) CGSize shadowMapSize SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGSize shadowMapSize NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property shadowSampleCount
  @abstract Specifies the number of sample per fragment to compute the shadow map. Defaults to 1.
  */
-@property(nonatomic) NSUInteger shadowSampleCount SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) NSUInteger shadowSampleCount NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property shadowMode
  @abstract Specified the mode to use to cast shadows. See above for the available modes and their description. Defaults to SCNShadowModeForward.
  */
-@property(nonatomic) SCNShadowMode shadowMode SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) SCNShadowMode shadowMode NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property shadowBias
  @abstrat Specifies the correction to apply to the shadow map to correct acne artefacts. It is multiplied by an implementation-specific value to create a constant depth offset. Defaults to 1.0
  */
-@property(nonatomic) CGFloat shadowBias SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat shadowBias NS_AVAILABLE(10_10, 8_0);
+
 
 #pragma mark - Light projection settings for shadows
 
@@ -128,19 +126,19 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
  @abstract Specifies the orthographic scale used to render from the directional light into the shadow map. Defaults to 1.
  @discussion This is only applicable for directional lights.
  */
-@property(nonatomic) CGFloat orthographicScale SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat orthographicScale NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property zNear
  @abstract Specifies the minimal distance between the light and the surface to cast shadow on.  If a surface is closer to the light than this minimal distance, then the surface won't be shadowed. The near value must be different than zero. Animatable. Defaults to 1.
  */
-@property(nonatomic) CGFloat zNear SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat zNear NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property zFar
  @abstract Specifies the maximal distance between the light and a visible surface to cast shadow on. If a surface is further from the light than this maximal distance, then the surface won't be shadowed. Animatable. Defaults to 100.
  */
-@property(nonatomic) CGFloat zFar SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat zFar NS_AVAILABLE(10_10, 8_0);
 
 
 #pragma mark - Attenuation
@@ -149,19 +147,20 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
  @property attenuationStartDistance
  @abstract The distance at which the attenuation starts (Omni or Spot light types only). Animatable. Defaults to 0.
  */
-@property(nonatomic) CGFloat attenuationStartDistance SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat attenuationStartDistance NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property attenuationEndDistance
  @abstract The distance at which the attenuation ends (Omni or Spot light types only). Animatable. Defaults to 0.
  */
-@property(nonatomic) CGFloat attenuationEndDistance SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat attenuationEndDistance NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property attenuationFalloffExponent
  @abstract Specifies the attenuation between the start and end attenuation distances. 0 means a constant attenuation, 1 a linear attenuation and 2 a quadratic attenuation, but any positive value will work (Omni or Spot light types only). Animatable. Defaults to 2.
  */
-@property(nonatomic) CGFloat attenuationFalloffExponent SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat attenuationFalloffExponent NS_AVAILABLE(10_10, 8_0);
+
 
 #pragma mark - Spot parameters
 
@@ -169,13 +168,13 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
  @property spotInnerAngle
  @abstract The angle in degrees between the spot direction and the lit element below which the lighting is at full strength. Animatable. Defaults to 0.
  */
-@property(nonatomic) CGFloat spotInnerAngle  SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat spotInnerAngle  NS_AVAILABLE(10_10, 8_0);
 
 /*!
  @property spotOuterAngle
  @abstract The angle in degrees between the spot direction and the lit element after which the lighting is at zero strength. Animatable. Defaults to 45 degrees.
  */
-@property(nonatomic) CGFloat spotOuterAngle  SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) CGFloat spotOuterAngle  NS_AVAILABLE(10_10, 8_0);
 
 
 #pragma mark - Other
@@ -185,14 +184,16 @@ SCENEKIT_CLASS_AVAILABLE(10_8, 8_0)
  @abstract Specifies the gobo (or "cookie") of the light, used to control the shape of emitted light. Defaults to nil.
  @discussion Gobos are only supported by spot lights.
  */
-@property(nonatomic, readonly) SCNMaterialProperty *gobo SCENEKIT_AVAILABLE(10_9, 8_0);
+@property(nonatomic, readonly, nullable) SCNMaterialProperty *gobo NS_AVAILABLE(10_9, 8_0);
 
 /*!
  @property categoryBitMask
  @abstract Determines the node categories that will be lit by the receiver. Defaults to all bit set.
  */
-@property(nonatomic) NSUInteger categoryBitMask SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) NSUInteger categoryBitMask NS_AVAILABLE(10_10, 8_0);
 
 
 @end
 
+
+NS_ASSUME_NONNULL_END

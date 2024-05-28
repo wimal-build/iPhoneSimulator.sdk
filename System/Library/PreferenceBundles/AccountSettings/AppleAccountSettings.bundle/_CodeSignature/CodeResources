@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		rfR8cdaI54prMNNBysjnjt0L8ts=
+		oe7Vkd4GIc+1LmcFJzbEVPSoGhU=
 		</data>
 		<key>ShareMyLocationIcon.png</key>
 		<data>
@@ -16,6 +16,24 @@
 		<data>
 		iIH1s7oR315Mk7ATrAScH+OFQJM=
 		</data>
+		<key>ar.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aYpKBsqm808z9r73T9qeJEXsK0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Iat5T1q3Tf59zRpseDH5f6rREZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>backup.png</key>
 		<data>
 		1SfO4yvwwHWw1pc1GieL3domqPs=
@@ -40,6 +58,24 @@
 		<data>
 		LpFcOymP8/TFli4U5HG3k2IKNFM=
 		</data>
+		<key>ca.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t10OJ0Wh5sz1Hw0YzLmYFE0UP/Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0qEjeEx0OHul05LlvbXjWS0V64U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>chevron-down-small@2x~iphone.png</key>
 		<data>
 		lAzYSBBNGCKnnlGJ0laKMI+VSNc=
@@ -64,6 +100,60 @@
 		<data>
 		A7NeuqCODkYs2TgNYA/Ot/jPStU=
 		</data>
+		<key>cs.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QsduTsFqgiwkvCZPOKUGaKYcYKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ND33l1QVCKpG45E6m+98XIRLAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+sfSbzE8xbitL0nlhmiXaO6Dd/o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SwgjzJvUJD3WYTV/a2cbBvXaYz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JHuEjK8UGd/gy0Gf+wysAf0cPg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3f7H/19D4+yWIIO6DTwhzWpDt70=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>documents.png</key>
 		<data>
 		yZElKtiUwkp8i9VVAYHWo6E6Nxs=
@@ -72,11 +162,38 @@
 		<data>
 		C4vQq7E7QCA+7uZBazCaK6UhFQE=
 		</data>
+		<key>el.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GQVmzD7PIUwrim1j9VE96jyPQbY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7QTdCIZv2ZDbRGLi09GQsZtCqtM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vnOivmowiX0TNkK65+VIirXOaTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Diagnostics.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8NurblIofBiGHcib7NFkpoaitxI=
+			UUQb4XpDK/bplSOJo6r/trg7zwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -85,23 +202,113 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uJ+iZlhui63ltROiwkqIlIuK40s=
+			pckN34dn2DG5sNK/1pJ3ff7VNNA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UUQb4XpDK/bplSOJo6r/trg7zwA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEhkRq+zgtlMFQjn2gtT8dnHYao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UUQb4XpDK/bplSOJo6r/trg7zwA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rlsuFQKZPptORmV3aeDLFMFKk2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q4NqedA1xiR/4r4p+Jy1CRURe+0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ztAIiG4lRxsKCWTAIxERXPfvrB4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ox6JlYOK6je4o0Xy1dVE/RpCXOY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1y8f70vVA2pl6AL7DhWIezHYjOU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>family.png</key>
 		<data>
-		OTEA9Iiwy9KlkxM6aDQaIaEKiIc=
+		3q+C9Q/7d5gBOrEE1r5lsWCPWGE=
 		</data>
 		<key>family@2x.png</key>
 		<data>
-		C6A7+NMnhLBU/jNXv8CK12iRToA=
+		gafFJSxSp03IHQJyBHoms6Oi5nw=
 		</data>
 		<key>family@3x.png</key>
 		<data>
-		7ALWOqNczX/UrDdVPURG11npuy0=
+		1FTQFZo+6AzFluTS73DsGAxtrfg=
 		</data>
+		<key>fi.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UZtPgOLeeAnP1kr7eYBiYL0WtZg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vQKf2sjI7GPjmq4tv3oSankkyhE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fmip.png</key>
 		<data>
 		Bxk/9owwvzk17XZLChthWEM194E=
@@ -114,6 +321,114 @@
 		<data>
 		CieL4EG0t76PLZkux6ZInBoClok=
 		</data>
+		<key>fr.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FSOhjuBPBYaRTO4q6wESJ3x2Qcg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kt/wlUyO9tWVYJZP/KGT29pC86w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rb1YOX1k1lAUZHoBQqzzzExowhw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EDzoKJAqtshqB5+1iE5s4yqFzXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wm+nwj6sXI3s1o/FWr4h9nbGjQQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9UJ2/57+hF3Fg8vRv76q306c64M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i8MoeaR+37Q8U0Leas3OEGoNnxM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sPIaX6jU3siuqlzM9EqddH0yhM4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mllppez1MGYczlj/OwVYePXsDmg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f+4GZW3EzjyOEN9i73tSkFkC3zo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qQt+GGXTJHwruNWxyBMVd8PMAWY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BrH6vBCdmWyWwWQ+d9Tgsk0dTko=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>iCloudDrive.png</key>
 		<data>
 		Y30swaGh362zMD97+7ZpwUHI6Z4=
@@ -150,6 +465,78 @@
 		<data>
 		eBOMk/V9L71iZaXG4YZ7RbgbcE0=
 		</data>
+		<key>id.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			znj9XFYSlsCeCLVhtgdxnc6pIDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			29k4jyAO8b46N57dYc81ethIJDc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7gTTXtjS5N5N8XMlTBaaPQ3UOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+s6Gy1/e+VeRhKMu6d9aPxPyqMs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+f/W/2rdzFvvtZkiCA3aW/KBYWo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8kXqgghLsQfxBGnpwzYOStFrHtY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FQlAeIcdFu3LdGfgrrCqy/X9+y4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dpx5XnspXleAAdAcAXWsG9e8SP4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>logo.png</key>
 		<data>
 		QUZf5V9jt+y8EFGb0UrQ18ZqvvY=
@@ -166,6 +553,69 @@
 		<data>
 		a1qpZdWi1FhWqCasIb8UDwPBjwE=
 		</data>
+		<key>ms.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5k1mRWIPy/p8Dhg0LKbscWtaVNo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			laW6CShZ4m/Pc6KbDlq0vos7quY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iC6E0khZtKH7TV29assYyQLcMdo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kUcpW/282jzqF3FW5CDGieJbRks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUooxSZl6uuNde86I9y1MxVGHfA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AAsTwuPpiKIdZDzf+/NIgNeIAsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E6jsDEBX2klUy8aZ6AdBMie57Vk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>photostream.png</key>
 		<data>
 		LDOleMAIssenRo64G25rwPla6Y0=
@@ -174,10 +624,276 @@
 		<data>
 		QDyNFos7xG113kAdgMvN0jJ7Ymk=
 		</data>
-		<key>version.plist</key>
-		<data>
-		OIRMOc92Z8w9YRVInROL1Oy8rHk=
-		</data>
+		<key>pl.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GPwTKIHPfLxs368jLX0W2p3yVgE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jEyhT8ajY56KyrJ24AaJ9hIGoMs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PITKPD8AeZo2QMPhH/q6O6Do29g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jFT2B2uf8mQkXRXO+2YQ/6RasRw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZSQjCR4qtObHIqt9mY94GKWhwvM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K1y6VVv5bsKCODVXD1a4EcaytHI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vii3DPxcDAZf71WzNTS2tlPgZOY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Iycrfu5QB8l5IFHY5jEMvRtoklQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+29wdu0RN3iG4ymdw9vH4wKFQQw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1T/Us3nLvcHmHyRv7YxgpfXqlHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z4isHXVi+Wc8Yqq/blZrHjvPiYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DmRv3Q/mYUeAmmUJLXPACQAbD5g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E82SUa0Vfz2oRDF6U3Sv53sWd0I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3AfhE5qkQ1CfM7CsTxOjQcyDfbE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+BkXVLwInyk/XK1bLM5zRs6XPXs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yi1Y1YnqU0Vuo+i4Ea/pk5fwp0k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vin4XwgmyrP7WXrVEZAkioHe1zk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UJlAL7HVmXw4Br/5wLb9WWgisrA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fH5E+Cq+tRF4XJL9dYc3tVRkqU4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kgio6P801w6OxwwyIvyti5XItHA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f/gOT4OvAw4ObI8BRXn3bM47ZKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nQ4RJGlnHW3Ku56MKavVknmSWDU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oj6oAnZD8hpEkjr9CIwu4tDq6GA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sasqrXgHdeB9OZfkzU4aegdcm08=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cMBGx5UZXTFxZZfEcqO/Fx9CBf4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lrsuapWklosdCMPexNE/327UBrQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nnSv6vVKGUwDoqbOYWZqkJ13I14=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QKD10CX4LJftDfZBlRpzTvT4FVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dfl+xO7B4BE88W0FarDeag5avzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eZofK+E/5SfskVtL+xeAlOSOedQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -189,6 +905,24 @@
 		<data>
 		iIH1s7oR315Mk7ATrAScH+OFQJM=
 		</data>
+		<key>ar.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aYpKBsqm808z9r73T9qeJEXsK0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Iat5T1q3Tf59zRpseDH5f6rREZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>backup.png</key>
 		<data>
 		1SfO4yvwwHWw1pc1GieL3domqPs=
@@ -213,6 +947,24 @@
 		<data>
 		LpFcOymP8/TFli4U5HG3k2IKNFM=
 		</data>
+		<key>ca.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t10OJ0Wh5sz1Hw0YzLmYFE0UP/Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0qEjeEx0OHul05LlvbXjWS0V64U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>chevron-down-small@2x~iphone.png</key>
 		<data>
 		lAzYSBBNGCKnnlGJ0laKMI+VSNc=
@@ -237,6 +989,60 @@
 		<data>
 		A7NeuqCODkYs2TgNYA/Ot/jPStU=
 		</data>
+		<key>cs.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QsduTsFqgiwkvCZPOKUGaKYcYKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ND33l1QVCKpG45E6m+98XIRLAg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+sfSbzE8xbitL0nlhmiXaO6Dd/o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SwgjzJvUJD3WYTV/a2cbBvXaYz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JHuEjK8UGd/gy0Gf+wysAf0cPg8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3f7H/19D4+yWIIO6DTwhzWpDt70=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>documents.png</key>
 		<data>
 		yZElKtiUwkp8i9VVAYHWo6E6Nxs=
@@ -245,11 +1051,38 @@
 		<data>
 		C4vQq7E7QCA+7uZBazCaK6UhFQE=
 		</data>
+		<key>el.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GQVmzD7PIUwrim1j9VE96jyPQbY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7QTdCIZv2ZDbRGLi09GQsZtCqtM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vnOivmowiX0TNkK65+VIirXOaTQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Diagnostics.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8NurblIofBiGHcib7NFkpoaitxI=
+			UUQb4XpDK/bplSOJo6r/trg7zwA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -258,23 +1091,113 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uJ+iZlhui63ltROiwkqIlIuK40s=
+			pckN34dn2DG5sNK/1pJ3ff7VNNA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UUQb4XpDK/bplSOJo6r/trg7zwA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEhkRq+zgtlMFQjn2gtT8dnHYao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UUQb4XpDK/bplSOJo6r/trg7zwA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rlsuFQKZPptORmV3aeDLFMFKk2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q4NqedA1xiR/4r4p+Jy1CRURe+0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ztAIiG4lRxsKCWTAIxERXPfvrB4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ox6JlYOK6je4o0Xy1dVE/RpCXOY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1y8f70vVA2pl6AL7DhWIezHYjOU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>family.png</key>
 		<data>
-		OTEA9Iiwy9KlkxM6aDQaIaEKiIc=
+		3q+C9Q/7d5gBOrEE1r5lsWCPWGE=
 		</data>
 		<key>family@2x.png</key>
 		<data>
-		C6A7+NMnhLBU/jNXv8CK12iRToA=
+		gafFJSxSp03IHQJyBHoms6Oi5nw=
 		</data>
 		<key>family@3x.png</key>
 		<data>
-		7ALWOqNczX/UrDdVPURG11npuy0=
+		1FTQFZo+6AzFluTS73DsGAxtrfg=
 		</data>
+		<key>fi.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UZtPgOLeeAnP1kr7eYBiYL0WtZg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vQKf2sjI7GPjmq4tv3oSankkyhE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fmip.png</key>
 		<data>
 		Bxk/9owwvzk17XZLChthWEM194E=
@@ -287,6 +1210,114 @@
 		<data>
 		CieL4EG0t76PLZkux6ZInBoClok=
 		</data>
+		<key>fr.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FSOhjuBPBYaRTO4q6wESJ3x2Qcg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kt/wlUyO9tWVYJZP/KGT29pC86w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rb1YOX1k1lAUZHoBQqzzzExowhw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EDzoKJAqtshqB5+1iE5s4yqFzXM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wm+nwj6sXI3s1o/FWr4h9nbGjQQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9UJ2/57+hF3Fg8vRv76q306c64M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i8MoeaR+37Q8U0Leas3OEGoNnxM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sPIaX6jU3siuqlzM9EqddH0yhM4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mllppez1MGYczlj/OwVYePXsDmg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f+4GZW3EzjyOEN9i73tSkFkC3zo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qQt+GGXTJHwruNWxyBMVd8PMAWY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BrH6vBCdmWyWwWQ+d9Tgsk0dTko=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>iCloudDrive.png</key>
 		<data>
 		Y30swaGh362zMD97+7ZpwUHI6Z4=
@@ -323,6 +1354,78 @@
 		<data>
 		eBOMk/V9L71iZaXG4YZ7RbgbcE0=
 		</data>
+		<key>id.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			znj9XFYSlsCeCLVhtgdxnc6pIDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			29k4jyAO8b46N57dYc81ethIJDc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7gTTXtjS5N5N8XMlTBaaPQ3UOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+s6Gy1/e+VeRhKMu6d9aPxPyqMs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+f/W/2rdzFvvtZkiCA3aW/KBYWo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8kXqgghLsQfxBGnpwzYOStFrHtY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FQlAeIcdFu3LdGfgrrCqy/X9+y4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dpx5XnspXleAAdAcAXWsG9e8SP4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>logo.png</key>
 		<data>
 		QUZf5V9jt+y8EFGb0UrQ18ZqvvY=
@@ -339,6 +1442,69 @@
 		<data>
 		a1qpZdWi1FhWqCasIb8UDwPBjwE=
 		</data>
+		<key>ms.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5k1mRWIPy/p8Dhg0LKbscWtaVNo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			laW6CShZ4m/Pc6KbDlq0vos7quY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iC6E0khZtKH7TV29assYyQLcMdo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kUcpW/282jzqF3FW5CDGieJbRks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUooxSZl6uuNde86I9y1MxVGHfA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AAsTwuPpiKIdZDzf+/NIgNeIAsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E6jsDEBX2klUy8aZ6AdBMie57Vk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>photostream.png</key>
 		<data>
 		LDOleMAIssenRo64G25rwPla6Y0=
@@ -347,10 +1513,276 @@
 		<data>
 		QDyNFos7xG113kAdgMvN0jJ7Ymk=
 		</data>
-		<key>version.plist</key>
-		<data>
-		OIRMOc92Z8w9YRVInROL1Oy8rHk=
-		</data>
+		<key>pl.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GPwTKIHPfLxs368jLX0W2p3yVgE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jEyhT8ajY56KyrJ24AaJ9hIGoMs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PITKPD8AeZo2QMPhH/q6O6Do29g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jFT2B2uf8mQkXRXO+2YQ/6RasRw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZSQjCR4qtObHIqt9mY94GKWhwvM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K1y6VVv5bsKCODVXD1a4EcaytHI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vii3DPxcDAZf71WzNTS2tlPgZOY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Iycrfu5QB8l5IFHY5jEMvRtoklQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+29wdu0RN3iG4ymdw9vH4wKFQQw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1T/Us3nLvcHmHyRv7YxgpfXqlHs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z4isHXVi+Wc8Yqq/blZrHjvPiYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DmRv3Q/mYUeAmmUJLXPACQAbD5g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E82SUa0Vfz2oRDF6U3Sv53sWd0I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3AfhE5qkQ1CfM7CsTxOjQcyDfbE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+BkXVLwInyk/XK1bLM5zRs6XPXs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yi1Y1YnqU0Vuo+i4Ea/pk5fwp0k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vin4XwgmyrP7WXrVEZAkioHe1zk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UJlAL7HVmXw4Br/5wLb9WWgisrA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fH5E+Cq+tRF4XJL9dYc3tVRkqU4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kgio6P801w6OxwwyIvyti5XItHA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f/gOT4OvAw4ObI8BRXn3bM47ZKc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nQ4RJGlnHW3Ku56MKavVknmSWDU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oj6oAnZD8hpEkjr9CIwu4tDq6GA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sasqrXgHdeB9OZfkzU4aegdcm08=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cMBGx5UZXTFxZZfEcqO/Fx9CBf4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lrsuapWklosdCMPexNE/327UBrQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nnSv6vVKGUwDoqbOYWZqkJ13I14=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QKD10CX4LJftDfZBlRpzTvT4FVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Diagnostics.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dfl+xO7B4BE88W0FarDeag5avzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eZofK+E/5SfskVtL+xeAlOSOedQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

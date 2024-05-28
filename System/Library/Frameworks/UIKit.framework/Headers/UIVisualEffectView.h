@@ -7,6 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /* UIVisualEffectView is a class that provides a simple abstraction over complex visual effects. Depending on the desired effect, the results may affect content layered behind the view or content added to the view's contentView. Please see the notes for each UIVisualEffect for more details.
 
  Proper use of this class requires some assistance on your part. Namely:
@@ -38,7 +40,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIVibrancyEffect : UIVisualEffect
 @end
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIVisualEffectView : UIView <NSSecureCoding>
-@property (nonatomic, retain, readonly) UIView *contentView; // Do not add subviews directly to UIVisualEffectView, use this view instead.
-@property (nonatomic, copy, readonly) UIVisualEffect *effect;
-- (instancetype)initWithEffect:(UIVisualEffect *)effect NS_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong, readonly) UIView *contentView; // Do not add subviews directly to UIVisualEffectView, use this view instead.
+@property (nonatomic, copy, nullable) UIVisualEffect *effect;
+- (instancetype)initWithEffect:(nullable UIVisualEffect *)effect NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 @end
+
+NS_ASSUME_NONNULL_END
+

@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol SKRequestDelegate;
 
 // Base class used to fetch data from the store.  Should not be used directly.
@@ -16,7 +18,7 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKRequest : NSObject {
     id _requestInternal;
 }
 
-@property(nonatomic, assign) id <SKRequestDelegate> delegate NS_AVAILABLE_IOS(3_0);
+@property(nonatomic, assign, nullable) id <SKRequestDelegate> delegate NS_AVAILABLE_IOS(3_0);
 
 // Cancel the request if it has started.
 - (void)cancel NS_AVAILABLE_IOS(3_0);
@@ -34,3 +36,5 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKRequest : NSObject {
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error NS_AVAILABLE_IOS(3_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

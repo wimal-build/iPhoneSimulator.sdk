@@ -7,9 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAccessibilityCustomAction : NSObject
 
-- (instancetype)initWithName:(NSString *)name target:(id)target selector:(SEL)selector;
+- (instancetype)initWithName:(NSString *)name target:(nullable id)target selector:(SEL)selector;
 
 /*
  A localized name that describes the action.
@@ -19,7 +21,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAccessibilityCustomAction : NSObject
 /*
  The object that will perform the action.
  */
-@property (nonatomic, weak) id target;
+@property (nullable, nonatomic, weak) id target;
 
 /*
  The method that will be called on the target to perform the action.
@@ -30,3 +32,5 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAccessibilityCustomAction : NSObject
 @property (nonatomic, assign) SEL selector;
 
 @end
+
+NS_ASSUME_NONNULL_END

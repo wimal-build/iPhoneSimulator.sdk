@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CMPedometerData
  *
  *  Discussion:
  *      A description of the user's pedestrian activity. At a minimum this
  *      object contains a step count. On supported platforms it also contains
- *      distance estimation and flight of stairs counting.
+ *      distance, flights of stairs, pace, and cadence.
  */
 NS_CLASS_AVAILABLE(NA, 8_0)
 @interface CMPedometerData : NSObject <NSSecureCoding, NSCopying>
@@ -55,7 +57,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *      Estimated distance in meters traveled by the user while walking and
  *      running. Value is nil unsupported platforms.
  */
-@property(readonly, nonatomic) NSNumber *distance;
+@property(readonly, nonatomic, nullable) NSNumber *distance;
 
 /*
  *  floorsAscended
@@ -65,7 +67,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *      on unsupported platforms.
  *
  */
-@property(readonly, nonatomic) NSNumber *floorsAscended;
+@property(readonly, nonatomic, nullable) NSNumber *floorsAscended;
 
 /*
  *  floorsDescended
@@ -74,7 +76,37 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *      Approximate number of floors descended by way of stairs. Value is nil
  *      on unsupported platforms.
  */
-@property(readonly, nonatomic) NSNumber *floorsDescended;
+@property(readonly, nonatomic, nullable) NSNumber *floorsDescended;
+
+/*
+ * currentPace
+ *
+ *
+ * Discussion:
+ *      For updates this returns the current pace, in s/m (seconds per meter).
+ *      Value is nil if any of the following are true:
+ *
+ *         (1) Information not yet available;
+ *         (2) Historical query;
+ *         (3) Unsupported platform.
+ *
+ */
+@property(readonly, nonatomic, nullable) NSNumber *currentPace NS_AVAILABLE(NA,9_0);
+
+/*
+ * currentCadence
+ *
+ *
+ * Discussion:
+ *      For updates this returns the rate at which steps are taken, in steps per second.
+ *      Value is nil if any of the following are true:
+ *
+ *         (1) Information not yet available;
+ *         (2) Historical query;
+ *         (3) Unsupported platform.
+ *
+ */
+@property(readonly, nonatomic, nullable) NSNumber *currentCadence NS_AVAILABLE(NA,9_0);
 
 @end
 
@@ -85,7 +117,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *      Typedef of block to be invoked when pedometer data is available. Error
  *      types are defined in "CMError.h".
  */
-typedef void (^CMPedometerHandler)(CMPedometerData *pedometerData, NSError *error);
+typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error);
 
 /*
  *  CMPedometer
@@ -118,7 +150,7 @@ NS_CLASS_AVAILABLE(NA,8_0)
  *  isDistanceAvailable
  *
  *  Discussion:
- *      Determines whether the device supports motion-based distance estimation
+ *      Determines whether the device supports distance estimation
  *      in addition to step counting.
  */
 + (BOOL)isDistanceAvailable;
@@ -131,6 +163,24 @@ NS_CLASS_AVAILABLE(NA,8_0)
  *      in addition to step counting.
  */
 + (BOOL)isFloorCountingAvailable;
+
+/*
+ *  isPaceAvailable
+ *
+ *  Discussion:
+ *      Determines whether the device supports pace estimation
+ *      in addition to step counting.
+ */
++ (BOOL)isPaceAvailable NS_AVAILABLE(NA,9_0);
+
+/*
+ *  isCadenceAvailable
+ *
+ *  Discussion:
+ *      Determines whether the device supports cadence estimation
+ *      in addition to step counting.
+ */
++ (BOOL)isCadenceAvailable NS_AVAILABLE(NA,9_0);
 
 /*
  *  queryPedometerDataFromDate:toDate:withHandler:
@@ -170,3 +220,5 @@ NS_CLASS_AVAILABLE(NA,8_0)
 - (void)stopPedometerUpdates;
 
 @end
+
+NS_ASSUME_NONNULL_END

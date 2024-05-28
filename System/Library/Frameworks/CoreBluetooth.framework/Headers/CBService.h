@@ -14,7 +14,7 @@
 
 #import <CoreBluetooth/CBAttribute.h>
 
-@class CBPeripheral, CBUUID;
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @class CBService
@@ -33,7 +33,7 @@ CB_EXTERN_CLASS @interface CBService : CBAttribute
  *      A back-pointer to the peripheral this service belongs to.
  *
  */
-@property(weak, readonly, nonatomic) CBPeripheral *peripheral;
+@property(assign, readonly, nonatomic) CBPeripheral *peripheral;
 
 /*!
  * @property isPrimary
@@ -51,7 +51,7 @@ CB_EXTERN_CLASS @interface CBService : CBAttribute
  *      A list of included CBServices that have so far been discovered in this service.
  *
  */
-@property(retain, readonly) NSArray *includedServices;
+@property(retain, readonly, nullable) NSArray<CBService *> *includedServices;
 
 /*!
  * @property characteristics
@@ -60,7 +60,7 @@ CB_EXTERN_CLASS @interface CBService : CBAttribute
  *      A list of CBCharacteristics that have so far been discovered in this service.
  *
  */
-@property(retain, readonly) NSArray *characteristics;
+@property(retain, readonly, nullable) NSArray<CBCharacteristic *> *characteristics;
 
 @end
 
@@ -77,10 +77,8 @@ CB_EXTERN_CLASS @interface CBService : CBAttribute
 NS_CLASS_AVAILABLE(NA, 6_0)
 CB_EXTERN_CLASS @interface CBMutableService : CBService
 
-@property(retain, readwrite, nonatomic) CBUUID *UUID;
-@property(readwrite, nonatomic) BOOL isPrimary;
-@property(retain, readwrite) NSArray *includedServices;
-@property(retain, readwrite) NSArray *characteristics;
+@property(retain, readwrite, nullable) NSArray<CBService *> *includedServices;
+@property(retain, readwrite, nullable) NSArray<CBCharacteristic *> *characteristics;
 
 /*!
  *  @method initWithType:primary:
@@ -94,3 +92,5 @@ CB_EXTERN_CLASS @interface CBMutableService : CBService
 - (instancetype)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary NS_DESIGNATED_INITIALIZER;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -16,6 +16,8 @@
 #import <CoreBluetooth/CBPeripheralManagerConstants.h>
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  *  @enum CBPeripheralManagerAuthorizationStatus
  *
@@ -101,7 +103,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @discussion The delegate object that will receive peripheral events.
  *
  */
-@property(weak, nonatomic) id<CBPeripheralManagerDelegate> delegate;
+@property(assign, nonatomic, nullable) id<CBPeripheralManagerDelegate> delegate;
 
 /*!
  *  @property state
@@ -142,7 +144,8 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *                  If <i>nil</i>, the main queue will be used.
  *
  */
-- (instancetype)initWithDelegate:(id<CBPeripheralManagerDelegate>)delegate queue:(dispatch_queue_t)queue;
+- (instancetype)initWithDelegate:(nullable id<CBPeripheralManagerDelegate>)delegate
+						   queue:(nullable dispatch_queue_t)queue;
 
 /*!
  *  @method initWithDelegate:queue:options:
@@ -158,7 +161,9 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *	@seealso		CBPeripheralManagerOptionRestoreIdentifierKey
  *
  */
-- (instancetype)initWithDelegate:(id<CBPeripheralManagerDelegate>)delegate queue:(dispatch_queue_t)queue options:(NSDictionary *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithDelegate:(nullable id<CBPeripheralManagerDelegate>)delegate
+						   queue:(nullable dispatch_queue_t)queue
+						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER;
 
 /*!
  *  @method startAdvertising:
@@ -181,7 +186,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @seealso                    CBAdvertisementData.h
  *
  */
-- (void)startAdvertising:(NSDictionary *)advertisementData;
+- (void)startAdvertising:(nullable NSDictionary<NSString *, id> *)advertisementData;
 
 /*!
  *  @method stopAdvertising
@@ -271,7 +276,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @see                    peripheralManagerIsReadyToUpdateSubscribers:
  *	@seealso				maximumUpdateValueLength
  */
-- (BOOL)updateValue:(NSData *)value forCharacteristic:(CBMutableCharacteristic *)characteristic onSubscribedCentrals:(NSArray *)centrals;
+- (BOOL)updateValue:(NSData *)value forCharacteristic:(CBMutableCharacteristic *)characteristic onSubscribedCentrals:(nullable NSArray<CBCentral *> *)centrals;
 
 @end
 
@@ -320,7 +325,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @seealso            CBPeripheralManagerRestoredStateAdvertisementDataKey;
  *
  */
-- (void)peripheralManager:(CBPeripheralManager *)peripheral willRestoreState:(NSDictionary *)dict;
+- (void)peripheralManager:(CBPeripheralManager *)peripheral willRestoreState:(NSDictionary<NSString *, id> *)dict;
 
 /*!
  *  @method peripheralManagerDidStartAdvertising:error:
@@ -332,7 +337,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *                      not be started, the cause will be detailed in the <i>error</i> parameter.
  *
  */
-- (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(NSError *)error;
+- (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(nullable NSError *)error;
 
 /*!
  *  @method peripheralManager:didAddService:error:
@@ -345,7 +350,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *                      not be published to the local database, the cause will be detailed in the <i>error</i> parameter.
  *
  */
-- (void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error;
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(nullable NSError *)error;
 
 /*!
  *  @method peripheralManager:central:didSubscribeToCharacteristic:
@@ -400,7 +405,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *  @see                CBATTRequest
  *
  */
-- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests;
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *)requests;
 
 /*!
  *  @method peripheralManagerIsReadyToUpdateSubscribers:
@@ -414,3 +419,5 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
 - (void)peripheralManagerIsReadyToUpdateSubscribers:(CBPeripheralManager *)peripheral;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -4,17 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AddRTLIconsToInfoPlist.rb</key>
+		<data>
+		MjGG2t03Otc0nRR+xDdkChMpGVU=
+		</data>
 		<key>AppIcon29x29@2x.png</key>
 		<data>
-		n323rxLV/P4eorld6r7tM+5X0lA=
+		jAKmIOcU5d5D/pSSnbyDU14sfqA=
 		</data>
 		<key>AppIcon29x29@2x~ipad.png</key>
 		<data>
-		n323rxLV/P4eorld6r7tM+5X0lA=
+		jAKmIOcU5d5D/pSSnbyDU14sfqA=
 		</data>
 		<key>AppIcon29x29@3x.png</key>
 		<data>
-		tseCC8hJQXUbZIF6bWkA9GpKSOM=
+		KApWpAbsC6N9vkO66M3/LgpMvlY=
 		</data>
 		<key>AppIcon29x29~ipad.png</key>
 		<data>
@@ -22,15 +26,15 @@
 		</data>
 		<key>AppIcon40x40@2x.png</key>
 		<data>
-		J2xD2b8trwve/fFpzYU1xPE+v64=
+		TTHHHE3zgeDgLZnyMAM/X2pR/HM=
 		</data>
 		<key>AppIcon40x40@2x~ipad.png</key>
 		<data>
-		J2xD2b8trwve/fFpzYU1xPE+v64=
+		TTHHHE3zgeDgLZnyMAM/X2pR/HM=
 		</data>
 		<key>AppIcon40x40@3x.png</key>
 		<data>
-		zexhP6ZcT58Xxermupk4MjNpwAc=
+		WPTkR8AWzdipt0pg9kn1MKJlJ3g=
 		</data>
 		<key>AppIcon40x40~ipad.png</key>
 		<data>
@@ -38,83 +42,446 @@
 		</data>
 		<key>AppIcon60x60@2x.png</key>
 		<data>
-		zexhP6ZcT58Xxermupk4MjNpwAc=
+		WPTkR8AWzdipt0pg9kn1MKJlJ3g=
 		</data>
 		<key>AppIcon60x60@3x.png</key>
 		<data>
-		uRxV0m0XHJBaahB/6asAPxBpd7o=
+		ZODJjo1+8FfB0Rn5GlfF4nKJH7o=
 		</data>
 		<key>AppIcon76x76@2x~ipad.png</key>
 		<data>
-		afGR/ZxDODcWf/gXDNcVP7lZNV8=
+		lFRLhRcMsE4z8kkIfmVtV5UUO50=
 		</data>
 		<key>AppIcon76x76~ipad.png</key>
 		<data>
-		YJejyNldU1e/h2DFwxioW53GK34=
+		lO4F8hDQ4IfQZSFQ52TGa0uS7WM=
 		</data>
 		<key>Entitlements.plist</key>
 		<data>
-		Px6TN3djwFw+CxjSf07aF0rveXk=
+		E5/89Pl8k2iidjqCOsdRJaIFEns=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		17QMSqwCaCVOQEg5SD1NQTBFe5M=
+		gui/yG1ll3ZCF81unCeUJwtfLo0=
 		</data>
-		<key>LaunchImage-700-568h@2x.png</key>
+		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
-		RzhFpobrx/TRSaXl2itDSvnIXi8=
+		fwuYk7Oi6Q6i3aA2bnFgyGWxMVk=
 		</data>
-		<key>LaunchImage-700-Landscape@2x~ipad.png</key>
+		<key>LaunchScreen.storyboardc/UISplitViewController-sOK-tE-Vwc.nib</key>
 		<data>
-		YWW2DXCOa3ZOd6UR2kooGUSe0QI=
+		3dnEFL+Y55lXFDiUAn8eQq30Oc4=
 		</data>
-		<key>LaunchImage-700-Landscape~ipad.png</key>
+		<key>LaunchScreen.storyboardc/designable.storyboard</key>
 		<data>
-		JolapySuoMY003R2Pr86155J8MU=
+		SC0TWESdgh/9DnUvUH4tzGDP/Kg=
 		</data>
-		<key>LaunchImage-700-Portrait@2x~ipad.png</key>
+		<key>LaunchScreen.storyboardc/hAp-Q6-3pO-view-p9P-6Q-uwV.nib</key>
 		<data>
-		vUrqWoBBRfxSxECgwfSOVBKQIfs=
+		QL6jWIG4/PfJEngA2rvcFJpEfEw=
 		</data>
-		<key>LaunchImage-700-Portrait~ipad.png</key>
+		<key>LaunchScreen.storyboardc/lri-7U-8IY-view-eqT-r4-tpH.nib</key>
 		<data>
-		7SG+ZsJVvw5vZrOc6cK5iAGUky8=
-		</data>
-		<key>LaunchImage-700@2x.png</key>
-		<data>
-		+SV5swYXu9VVdfU/NBvXdrBZ17g=
-		</data>
-		<key>LaunchImage-800-667h@2x.png</key>
-		<data>
-		b6+aJcCIsuHT5XqXmjVQn/hax2c=
-		</data>
-		<key>LaunchImage-800-Landscape-736h@3x.png</key>
-		<data>
-		L2N01jRlNopB8PKjDXdqP6/XW+4=
-		</data>
-		<key>LaunchImage-800-Portrait-736h@3x.png</key>
-		<data>
-		8AqjLnzv8MqEr617ZcOSDdTNRNQ=
+		b9XxVSF2yl2V0nGvLkuX67kuKYg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PlugIns/ContactViewViewService.appex/ContactViewViewService</key>
+		<data>
+		Tfd9++QVCWsuhx1A4xtPFlXDPIg=
+		</data>
+		<key>PlugIns/ContactViewViewService.appex/Info.plist</key>
+		<data>
+		w1YoQEG24ORPJSWUHLurhfSZAV8=
+		</data>
+		<key>PlugIns/ContactViewViewService.appex/_CodeSignature/CodeResources</key>
+		<data>
+		s9VDvKlt/zd/TL5+Ch399LnQI70=
+		</data>
+		<key>PlugIns/ContactViewViewService.appex/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/version.plist</key>
+		<data>
+		eDHaG7xbe8UJoaPWb3JmFqi4pwA=
+		</data>
+		<key>PlugIns/ContactViewViewService.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/ContactsCoreSpotlightExtension</key>
+		<data>
+		h4xuG6xNEMelf9hcDn5KX5DEmyE=
+		</data>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/Info.plist</key>
+		<data>
+		gaEV2gPChb7NpbXxab76IFPSEq8=
+		</data>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		dpXkOBafP3YKjdXu2Nux+GJ2S64=
+		</data>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/version.plist</key>
+		<data>
+		eDHaG7xbe8UJoaPWb3JmFqi4pwA=
+		</data>
 		<key>PlugIns/ContactsViewService.appex/ContactsViewService</key>
 		<data>
-		LximolHTiDNAtJiAkn591OuLgvQ=
+		LQJwzY51H4fS5BhZM330DKNlLF0=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/Info.plist</key>
 		<data>
-		9YzqIoGCc2B+4qSJGc+8KSGcsc8=
-		</data>
-		<key>PlugIns/ContactsViewService.appex/PkgInfo</key>
-		<data>
-		VmViApaLcplDG2Due+iB6vFx9eA=
+		mD1M1AzygRgowik4c+p+fuq0Aro=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/_CodeSignature/CodeResources</key>
 		<data>
-		mC8S+S2Iq0lJKZ3GwV+QkT5rnro=
+		FEWfWPgIsygA+BoImCOUlfhed9A=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -179,6 +546,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>PlugIns/ContactsViewService.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>PlugIns/ContactsViewService.appex/en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -189,6 +565,15 @@
 			<true/>
 		</dict>
 		<key>PlugIns/ContactsViewService.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactsViewService.appex/es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -415,7 +800,7 @@
 		</dict>
 		<key>PlugIns/ContactsViewService.appex/version.plist</key>
 		<data>
-		Iq7L/ZUSQNvjixnZriEpVuMzLZY=
+		fdJgtQGMlE1KE4pKx6F45QDiDzs=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -453,11 +838,77 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>RTL-AppIcon29x29@2x.png</key>
+		<data>
+		eF0AhqZs/CqpbLuBy2zKt6gi8hU=
+		</data>
+		<key>RTL-AppIcon29x29@2x~ipad.png</key>
+		<data>
+		eF0AhqZs/CqpbLuBy2zKt6gi8hU=
+		</data>
+		<key>RTL-AppIcon29x29@3x.png</key>
+		<data>
+		XniLzT75Ql9nlVVi0BBdQi9Svdg=
+		</data>
+		<key>RTL-AppIcon29x29~ipad.png</key>
+		<data>
+		PNsG5hcOjd3H4kvZ1WThu+NjpaQ=
+		</data>
+		<key>RTL-AppIcon40x40@2x.png</key>
+		<data>
+		Ot5e1svjfFz98yV86zKvDF1AxVw=
+		</data>
+		<key>RTL-AppIcon40x40@2x~ipad.png</key>
+		<data>
+		Ot5e1svjfFz98yV86zKvDF1AxVw=
+		</data>
+		<key>RTL-AppIcon40x40@3x.png</key>
+		<data>
+		wOZzkuvME6cAobXFvlVPB5Djkqk=
+		</data>
+		<key>RTL-AppIcon40x40~ipad.png</key>
+		<data>
+		h3PuuE6QSn5XhJ6aNAKlhdWIrPQ=
+		</data>
+		<key>RTL-AppIcon60x60@2x.png</key>
+		<data>
+		wOZzkuvME6cAobXFvlVPB5Djkqk=
+		</data>
+		<key>RTL-AppIcon60x60@3x.png</key>
+		<data>
+		abLAveqyUU+2tqS7GnwfHOlDINc=
+		</data>
+		<key>RTL-AppIcon76x76@2x~ipad.png</key>
+		<data>
+		IoGS5APSSr75IanknJG0HO30lh4=
+		</data>
+		<key>RTL-AppIcon76x76~ipad.png</key>
+		<data>
+		qaRW0X9qWF6muz4c+sNkFLAi9I8=
+		</data>
+		<key>ar.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O2eWx7gQrQ6bycHhZWv0/z5RS2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			rhUId90mAo/HBLJV3D48XbsqP9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c07Ke2JRW2bGCLwO0rFg7PeQ5vw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -471,11 +922,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g2EmxBfs66Du+y6nDIo4zPhVmFE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ZLM8TRQWIvBpJKEG2ebrB9NzB6g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uM8x1KtOpxqG2U8LB6KqvqeqY90=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -489,11 +958,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dw6fEnrgP/r17xpc9YxI73AH1zU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			0sVDn1YXyPpBHZgIIsii85Sjji0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cNQgs8qhhtWjep3oFPlPnV3SGSk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -507,11 +994,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frrR1iPNc6+PQRS6tQfjQHS3LyE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			iKUnWaoWAOZLGTbbuBJBEczbjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frrR1iPNc6+PQRS6tQfjQHS3LyE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iKUnWaoWAOZLGTbbuBJBEczbjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frrR1iPNc6+PQRS6tQfjQHS3LyE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -525,11 +1048,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fqP8ceVAlq+3sE99kULgf39bRfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			d6nB6dsY45usVWcm1nD2i0z948Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1fJNn5j5En0TfWzjS3ODn/pJlms=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d6nB6dsY45usVWcm1nD2i0z948Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gipHQwAuNV15LAGf314n7IDgPc8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -543,11 +1102,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fJH1/oKoEMe2VsQKuAIU273A3sE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			iKUnWaoWAOZLGTbbuBJBEczbjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0WPCZhLn6oaN1MF/eGvOy2EpmBE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -561,11 +1138,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B7LmlXaUA5vC/5CfLFxTsZG1SuI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Ii4lbv+lsqdQ1N84g//jlRqJCaM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ydJ9Cm0oHGoS0c9rb1Fed6+M7s4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -579,11 +1174,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i5VXPwdXqSp532E0PV+FUy20FMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			t/TbmbVHhJY+fuI/4ByvLQ0c53c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P0dsqRcz4R6HaIqIk8w4thuWuwg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -597,11 +1210,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xSR/Yl3EYRmKni/0Wa28Vu4zjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			WFT/E5bCrrbRJUh/gogxSp5fl+0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TAtT9uBkcAB2K6SiOUgBf3RBSVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -615,11 +1246,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mMAmh3+ZpWHMl1EDYsoIIjmf8J0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			vfBcIy25p3QJNdaO0zJVCjWh2r8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eHTCbFo2/Ur1znuAihWje8ApNFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -633,11 +1282,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mEXGpJLSfKKalDFe1A/LPllcDew=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			3m+yPxm1MnOJfwqYCd5Pn0hQJr8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YO0MCcGATlyv6GAIcRa628oXAXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -651,11 +1318,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJ5IEcbCBhtQ3cNbqLagy0FL1Kc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			BsvFMnaCd50RZbia7JrPK0E2RPQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OPkherfRo9PcsLePoG47BTa/Hz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -669,11 +1354,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iXOUiEqYNVRT+yPv5wKerAjXkW0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			f2wEAoXEoJBtxC468v5DCEr+ojM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xaBcFNRyKddrKWZKv98EPZ9Nrpc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -687,11 +1390,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v2SCN/WV02+DUOuIdFD8R+5Gbtg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			73lYMeb45g3E9MFfedlq5m832gg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d1y9j96hFZSonB/YApIHkjpMQcI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -705,11 +1426,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rVD01w3eoQqiknytwj+iykwAf9s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ZLM8TRQWIvBpJKEG2ebrB9NzB6g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IB8WdFcIiugh5gvVlHGFxarQMjI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -723,11 +1462,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qgHcA/uTezvKnDUmhC6TGucIEas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sr+2xoAPnTRjzuYhNHgRvZNT9pA=
+			XmDgTzif8E+zbHmMS9NAlLyzTdQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yV+NjOWuyiNIhrtZiQVfjc+eBZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -737,6 +1494,15 @@
 			<key>hash</key>
 			<data>
 			oiVXmOhIBkty2o1aotdlCW2J6dQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oblvIlfBRyapt0CW0Vd8h88Nm40=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -752,13 +1518,31 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		Iq7L/ZUSQNvjixnZriEpVuMzLZY=
+		fdJgtQGMlE1KE4pKx6F45QDiDzs=
 		</data>
+		<key>vi.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4ehfdTap3g75nDBtTX6Ul76RCvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			HyyakutShBmdxAVfdhD6JDxXjco=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dWerJSum6DRrNkOA7ur0rY2ffp0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -772,11 +1556,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ejvg+K8LaYe0LxRwRr8zEaH2m6o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			j5YOZnRqBWZpPORtypJzDLuSazU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CaKnQQwld4tL0bOd10f03b0LBhI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -793,17 +1595,21 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AddRTLIconsToInfoPlist.rb</key>
+		<data>
+		MjGG2t03Otc0nRR+xDdkChMpGVU=
+		</data>
 		<key>AppIcon29x29@2x.png</key>
 		<data>
-		n323rxLV/P4eorld6r7tM+5X0lA=
+		jAKmIOcU5d5D/pSSnbyDU14sfqA=
 		</data>
 		<key>AppIcon29x29@2x~ipad.png</key>
 		<data>
-		n323rxLV/P4eorld6r7tM+5X0lA=
+		jAKmIOcU5d5D/pSSnbyDU14sfqA=
 		</data>
 		<key>AppIcon29x29@3x.png</key>
 		<data>
-		tseCC8hJQXUbZIF6bWkA9GpKSOM=
+		KApWpAbsC6N9vkO66M3/LgpMvlY=
 		</data>
 		<key>AppIcon29x29~ipad.png</key>
 		<data>
@@ -811,15 +1617,15 @@
 		</data>
 		<key>AppIcon40x40@2x.png</key>
 		<data>
-		J2xD2b8trwve/fFpzYU1xPE+v64=
+		TTHHHE3zgeDgLZnyMAM/X2pR/HM=
 		</data>
 		<key>AppIcon40x40@2x~ipad.png</key>
 		<data>
-		J2xD2b8trwve/fFpzYU1xPE+v64=
+		TTHHHE3zgeDgLZnyMAM/X2pR/HM=
 		</data>
 		<key>AppIcon40x40@3x.png</key>
 		<data>
-		zexhP6ZcT58Xxermupk4MjNpwAc=
+		WPTkR8AWzdipt0pg9kn1MKJlJ3g=
 		</data>
 		<key>AppIcon40x40~ipad.png</key>
 		<data>
@@ -827,75 +1633,438 @@
 		</data>
 		<key>AppIcon60x60@2x.png</key>
 		<data>
-		zexhP6ZcT58Xxermupk4MjNpwAc=
+		WPTkR8AWzdipt0pg9kn1MKJlJ3g=
 		</data>
 		<key>AppIcon60x60@3x.png</key>
 		<data>
-		uRxV0m0XHJBaahB/6asAPxBpd7o=
+		ZODJjo1+8FfB0Rn5GlfF4nKJH7o=
 		</data>
 		<key>AppIcon76x76@2x~ipad.png</key>
 		<data>
-		afGR/ZxDODcWf/gXDNcVP7lZNV8=
+		lFRLhRcMsE4z8kkIfmVtV5UUO50=
 		</data>
 		<key>AppIcon76x76~ipad.png</key>
 		<data>
-		YJejyNldU1e/h2DFwxioW53GK34=
+		lO4F8hDQ4IfQZSFQ52TGa0uS7WM=
 		</data>
 		<key>Entitlements.plist</key>
 		<data>
-		Px6TN3djwFw+CxjSf07aF0rveXk=
+		E5/89Pl8k2iidjqCOsdRJaIFEns=
 		</data>
-		<key>LaunchImage-700-568h@2x.png</key>
+		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
-		RzhFpobrx/TRSaXl2itDSvnIXi8=
+		fwuYk7Oi6Q6i3aA2bnFgyGWxMVk=
 		</data>
-		<key>LaunchImage-700-Landscape@2x~ipad.png</key>
+		<key>LaunchScreen.storyboardc/UISplitViewController-sOK-tE-Vwc.nib</key>
 		<data>
-		YWW2DXCOa3ZOd6UR2kooGUSe0QI=
+		3dnEFL+Y55lXFDiUAn8eQq30Oc4=
 		</data>
-		<key>LaunchImage-700-Landscape~ipad.png</key>
+		<key>LaunchScreen.storyboardc/designable.storyboard</key>
 		<data>
-		JolapySuoMY003R2Pr86155J8MU=
+		SC0TWESdgh/9DnUvUH4tzGDP/Kg=
 		</data>
-		<key>LaunchImage-700-Portrait@2x~ipad.png</key>
+		<key>LaunchScreen.storyboardc/hAp-Q6-3pO-view-p9P-6Q-uwV.nib</key>
 		<data>
-		vUrqWoBBRfxSxECgwfSOVBKQIfs=
+		QL6jWIG4/PfJEngA2rvcFJpEfEw=
 		</data>
-		<key>LaunchImage-700-Portrait~ipad.png</key>
+		<key>LaunchScreen.storyboardc/lri-7U-8IY-view-eqT-r4-tpH.nib</key>
 		<data>
-		7SG+ZsJVvw5vZrOc6cK5iAGUky8=
+		b9XxVSF2yl2V0nGvLkuX67kuKYg=
 		</data>
-		<key>LaunchImage-700@2x.png</key>
+		<key>PlugIns/ContactViewViewService.appex/ContactViewViewService</key>
 		<data>
-		+SV5swYXu9VVdfU/NBvXdrBZ17g=
+		Tfd9++QVCWsuhx1A4xtPFlXDPIg=
 		</data>
-		<key>LaunchImage-800-667h@2x.png</key>
+		<key>PlugIns/ContactViewViewService.appex/Info.plist</key>
 		<data>
-		b6+aJcCIsuHT5XqXmjVQn/hax2c=
+		w1YoQEG24ORPJSWUHLurhfSZAV8=
 		</data>
-		<key>LaunchImage-800-Landscape-736h@3x.png</key>
+		<key>PlugIns/ContactViewViewService.appex/_CodeSignature/CodeResources</key>
 		<data>
-		L2N01jRlNopB8PKjDXdqP6/XW+4=
+		s9VDvKlt/zd/TL5+Ch399LnQI70=
 		</data>
-		<key>LaunchImage-800-Portrait-736h@3x.png</key>
+		<key>PlugIns/ContactViewViewService.appex/ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/version.plist</key>
 		<data>
-		8AqjLnzv8MqEr617ZcOSDdTNRNQ=
+		eDHaG7xbe8UJoaPWb3JmFqi4pwA=
+		</data>
+		<key>PlugIns/ContactViewViewService.appex/vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactViewViewService.appex/zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/ContactsCoreSpotlightExtension</key>
+		<data>
+		h4xuG6xNEMelf9hcDn5KX5DEmyE=
+		</data>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/Info.plist</key>
+		<data>
+		gaEV2gPChb7NpbXxab76IFPSEq8=
+		</data>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		dpXkOBafP3YKjdXu2Nux+GJ2S64=
+		</data>
+		<key>PlugIns/ContactsCoreSpotlightExtension.appex/version.plist</key>
+		<data>
+		eDHaG7xbe8UJoaPWb3JmFqi4pwA=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/ContactsViewService</key>
 		<data>
-		LximolHTiDNAtJiAkn591OuLgvQ=
+		LQJwzY51H4fS5BhZM330DKNlLF0=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/Info.plist</key>
 		<data>
-		9YzqIoGCc2B+4qSJGc+8KSGcsc8=
-		</data>
-		<key>PlugIns/ContactsViewService.appex/PkgInfo</key>
-		<data>
-		VmViApaLcplDG2Due+iB6vFx9eA=
+		mD1M1AzygRgowik4c+p+fuq0Aro=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/_CodeSignature/CodeResources</key>
 		<data>
-		mC8S+S2Iq0lJKZ3GwV+QkT5rnro=
+		FEWfWPgIsygA+BoImCOUlfhed9A=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -960,6 +2129,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>PlugIns/ContactsViewService.appex/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>PlugIns/ContactsViewService.appex/en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -970,6 +2148,15 @@
 			<true/>
 		</dict>
 		<key>PlugIns/ContactsViewService.appex/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>PlugIns/ContactsViewService.appex/es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1196,7 +2383,7 @@
 		</dict>
 		<key>PlugIns/ContactsViewService.appex/version.plist</key>
 		<data>
-		Iq7L/ZUSQNvjixnZriEpVuMzLZY=
+		fdJgtQGMlE1KE4pKx6F45QDiDzs=
 		</data>
 		<key>PlugIns/ContactsViewService.appex/vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1234,11 +2421,77 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>RTL-AppIcon29x29@2x.png</key>
+		<data>
+		eF0AhqZs/CqpbLuBy2zKt6gi8hU=
+		</data>
+		<key>RTL-AppIcon29x29@2x~ipad.png</key>
+		<data>
+		eF0AhqZs/CqpbLuBy2zKt6gi8hU=
+		</data>
+		<key>RTL-AppIcon29x29@3x.png</key>
+		<data>
+		XniLzT75Ql9nlVVi0BBdQi9Svdg=
+		</data>
+		<key>RTL-AppIcon29x29~ipad.png</key>
+		<data>
+		PNsG5hcOjd3H4kvZ1WThu+NjpaQ=
+		</data>
+		<key>RTL-AppIcon40x40@2x.png</key>
+		<data>
+		Ot5e1svjfFz98yV86zKvDF1AxVw=
+		</data>
+		<key>RTL-AppIcon40x40@2x~ipad.png</key>
+		<data>
+		Ot5e1svjfFz98yV86zKvDF1AxVw=
+		</data>
+		<key>RTL-AppIcon40x40@3x.png</key>
+		<data>
+		wOZzkuvME6cAobXFvlVPB5Djkqk=
+		</data>
+		<key>RTL-AppIcon40x40~ipad.png</key>
+		<data>
+		h3PuuE6QSn5XhJ6aNAKlhdWIrPQ=
+		</data>
+		<key>RTL-AppIcon60x60@2x.png</key>
+		<data>
+		wOZzkuvME6cAobXFvlVPB5Djkqk=
+		</data>
+		<key>RTL-AppIcon60x60@3x.png</key>
+		<data>
+		abLAveqyUU+2tqS7GnwfHOlDINc=
+		</data>
+		<key>RTL-AppIcon76x76@2x~ipad.png</key>
+		<data>
+		IoGS5APSSr75IanknJG0HO30lh4=
+		</data>
+		<key>RTL-AppIcon76x76~ipad.png</key>
+		<data>
+		qaRW0X9qWF6muz4c+sNkFLAi9I8=
+		</data>
+		<key>ar.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O2eWx7gQrQ6bycHhZWv0/z5RS2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			rhUId90mAo/HBLJV3D48XbsqP9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c07Ke2JRW2bGCLwO0rFg7PeQ5vw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1252,11 +2505,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g2EmxBfs66Du+y6nDIo4zPhVmFE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ZLM8TRQWIvBpJKEG2ebrB9NzB6g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uM8x1KtOpxqG2U8LB6KqvqeqY90=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1270,11 +2541,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dw6fEnrgP/r17xpc9YxI73AH1zU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			0sVDn1YXyPpBHZgIIsii85Sjji0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cNQgs8qhhtWjep3oFPlPnV3SGSk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1288,11 +2577,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frrR1iPNc6+PQRS6tQfjQHS3LyE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			iKUnWaoWAOZLGTbbuBJBEczbjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frrR1iPNc6+PQRS6tQfjQHS3LyE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iKUnWaoWAOZLGTbbuBJBEczbjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			frrR1iPNc6+PQRS6tQfjQHS3LyE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1306,11 +2631,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>es.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fqP8ceVAlq+3sE99kULgf39bRfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			d6nB6dsY45usVWcm1nD2i0z948Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1fJNn5j5En0TfWzjS3ODn/pJlms=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d6nB6dsY45usVWcm1nD2i0z948Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gipHQwAuNV15LAGf314n7IDgPc8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1324,11 +2685,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fJH1/oKoEMe2VsQKuAIU273A3sE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			iKUnWaoWAOZLGTbbuBJBEczbjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0WPCZhLn6oaN1MF/eGvOy2EpmBE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1342,11 +2721,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B7LmlXaUA5vC/5CfLFxTsZG1SuI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Ii4lbv+lsqdQ1N84g//jlRqJCaM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ydJ9Cm0oHGoS0c9rb1Fed6+M7s4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1360,11 +2757,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i5VXPwdXqSp532E0PV+FUy20FMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			t/TbmbVHhJY+fuI/4ByvLQ0c53c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P0dsqRcz4R6HaIqIk8w4thuWuwg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1378,11 +2793,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xSR/Yl3EYRmKni/0Wa28Vu4zjgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			WFT/E5bCrrbRJUh/gogxSp5fl+0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TAtT9uBkcAB2K6SiOUgBf3RBSVg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1396,11 +2829,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ja.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mMAmh3+ZpWHMl1EDYsoIIjmf8J0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			vfBcIy25p3QJNdaO0zJVCjWh2r8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eHTCbFo2/Ur1znuAihWje8ApNFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1414,11 +2865,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mEXGpJLSfKKalDFe1A/LPllcDew=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			3m+yPxm1MnOJfwqYCd5Pn0hQJr8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YO0MCcGATlyv6GAIcRa628oXAXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1432,11 +2901,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJ5IEcbCBhtQ3cNbqLagy0FL1Kc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			BsvFMnaCd50RZbia7JrPK0E2RPQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OPkherfRo9PcsLePoG47BTa/Hz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1450,11 +2937,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iXOUiEqYNVRT+yPv5wKerAjXkW0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			f2wEAoXEoJBtxC468v5DCEr+ojM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xaBcFNRyKddrKWZKv98EPZ9Nrpc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1468,11 +2973,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ro.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v2SCN/WV02+DUOuIdFD8R+5Gbtg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			73lYMeb45g3E9MFfedlq5m832gg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d1y9j96hFZSonB/YApIHkjpMQcI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1486,11 +3009,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sk.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rVD01w3eoQqiknytwj+iykwAf9s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ZLM8TRQWIvBpJKEG2ebrB9NzB6g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IB8WdFcIiugh5gvVlHGFxarQMjI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1504,11 +3045,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>th.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qgHcA/uTezvKnDUmhC6TGucIEas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sr+2xoAPnTRjzuYhNHgRvZNT9pA=
+			XmDgTzif8E+zbHmMS9NAlLyzTdQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yV+NjOWuyiNIhrtZiQVfjc+eBZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1518,6 +3077,15 @@
 			<key>hash</key>
 			<data>
 			oiVXmOhIBkty2o1aotdlCW2J6dQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oblvIlfBRyapt0CW0Vd8h88Nm40=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1533,13 +3101,31 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		Iq7L/ZUSQNvjixnZriEpVuMzLZY=
+		fdJgtQGMlE1KE4pKx6F45QDiDzs=
 		</data>
+		<key>vi.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4ehfdTap3g75nDBtTX6Ul76RCvg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			HyyakutShBmdxAVfdhD6JDxXjco=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dWerJSum6DRrNkOA7ur0rY2ffp0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1553,11 +3139,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ejvg+K8LaYe0LxRwRr8zEaH2m6o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			j5YOZnRqBWZpPORtypJzDLuSazU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/InfoPlist-OrbHW.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CaKnQQwld4tL0bOd10f03b0LBhI=
 			</data>
 			<key>optional</key>
 			<true/>

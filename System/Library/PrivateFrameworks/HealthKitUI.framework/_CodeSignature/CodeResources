@@ -4,73 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Dashboard_glyph_bodymeasurements@2x.png</key>
+		<key>Assets.car</key>
 		<data>
-		fuSUgcHQQEQtHv/pOXTl8SUFQho=
-		</data>
-		<key>Dashboard_glyph_bodymeasurements@3x.png</key>
-		<data>
-		ZnQCqxAQyQzqAalChz8Qc+/7/0A=
-		</data>
-		<key>Dashboard_glyph_fitness@2x.png</key>
-		<data>
-		Opj/OZCXwKhN1CGo4C3xrCKq2BU=
-		</data>
-		<key>Dashboard_glyph_fitness@3x.png</key>
-		<data>
-		oAG9HLo8aVp/1jp8k6dxPK95hM4=
-		</data>
-		<key>Dashboard_glyph_fuelpoint@2x.png</key>
-		<data>
-		boYHLfLa3hJquQmKvWPtHsjXc9I=
-		</data>
-		<key>Dashboard_glyph_fuelpoint@3x.png</key>
-		<data>
-		jwQma5KBuS0gY4cs2C4JWM28w8o=
-		</data>
-		<key>Dashboard_glyph_medication@2x.png</key>
-		<data>
-		+sQxczqAre0fl0XNtgNKdvDASbk=
-		</data>
-		<key>Dashboard_glyph_medication@3x.png</key>
-		<data>
-		9X02Hn5kqhGoTI7q4d6vKkldvF8=
-		</data>
-		<key>Dashboard_glyph_nutrition@2x.png</key>
-		<data>
-		qEmp33B+dgXRm7aBhT4DX1I9DPE=
-		</data>
-		<key>Dashboard_glyph_nutrition@3x.png</key>
-		<data>
-		QwhrQOQOK4VoC6n7ietE/3FmM0M=
-		</data>
-		<key>Dashboard_glyph_results@2x.png</key>
-		<data>
-		MKAXztE1UNlfQcR3qkv4ZTST7G0=
-		</data>
-		<key>Dashboard_glyph_results@3x.png</key>
-		<data>
-		9RGGewmrZjKjjSwZDkQ3BvvelP4=
-		</data>
-		<key>Dashboard_glyph_sleep@2x.png</key>
-		<data>
-		pgyBR5rJa1JkyvegyOG0Kw40mRY=
-		</data>
-		<key>Dashboard_glyph_sleep@3x.png</key>
-		<data>
-		uRx1IUU0WZNGR3SeNMaiPvWPPRI=
-		</data>
-		<key>Dashboard_glyph_vitals@2x.png</key>
-		<data>
-		nMpJ5M0hGzCNA8UUX5AxiskoOfA=
-		</data>
-		<key>Dashboard_glyph_vitals@3x.png</key>
-		<data>
-		B8M8LSPqL/he4wEgrRoRpJQrkTI=
+		GOuqwDp5jiWPzDJr1qSlo882sa0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UJ301UqTjfyqWRxmxwEV8uNJ9GY=
+		8t54y8xGRDFYLYv3jRX21ezzG/E=
 		</data>
 		<key>NikeFuel_Summary_Image@2x.png</key>
 		<data>
@@ -89,7 +29,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rm3bp6XOC/qfj4+eXd1Msdt7+hQ=
+			lc2AI/vy6F8ghILTC4355uXC6JY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,19 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6kmfF88bJUILLQ9SGNvXB20R9Xo=
+			dWkKrV0bz60xmXBUv3I+gOFy9fA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>call_glyph@2x.png</key>
-		<data>
-		FNFgE6dasLd2k2Q1dQqeHkuGY1E=
-		</data>
-		<key>call_glyph@3x.png</key>
-		<data>
-		x5jSMt139Tu/YzU2E4BDuRVLoTs=
-		</data>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -133,7 +65,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BwYKz75gIeNWf1OdM6pl9JKaOYU=
+			Qgy3fLocUPdTgeb6Ek8Isw0C7Ho=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -151,7 +83,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXD+23jvr6y9x66EBUMwYYiqPL0=
+			WOjGbtPG86tctxtWkGlSAJIgjW8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -169,7 +101,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IKFYcEx2JtutUKR3q2Lus3ldf7U=
+			Q1a3i69UyxSqjgZ24OgxC3Y+Fig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -187,7 +119,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4/zaGnFXVsZtwPQG+GQl9QAZybk=
+			zWSnEzQgUC/2zlj0HOr68zfehHo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xEwWR1VmzZeizvrjIKbBjoGYjsg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -205,7 +146,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bQropWEojami/F35/ZuTc1m0abE=
+			9/u77zX7sjNyZIbmTjc+xbTkc2k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U1umL+vqanibwJGQRGkJ/HCnJ4M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -223,7 +182,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R+39+3S1kwWgw4CY9oXgAc8Jr+k=
+			WHW9sd/RVy3oLB52BZMAc1OTRVs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -241,7 +200,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dRJ69Bcm89c9VqoEY8ze3rJmH0c=
+			KlNQBBOsgRBRH3BT7HXDoIFJvxs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v1fLWh2cr1QK+37wcFcFp7tJh3I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -259,7 +236,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KfANqGGyLfQuQFQZ2XQT1TbwFbY=
+			XpH1DDJ6U9ziBbehCw/dDGaEOEw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -277,7 +254,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+cb9HOruiRtfYlngJ1szX5574hg=
+			zk99ILnbFOzHd9qZIceOOeSoF4k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -295,7 +272,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0K8vAgILqRlJmrqf1UxVCTDg9mU=
+			FQ2sNKww/VaZrkoqPXlvaQj0peY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -313,83 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ztkazSdYrKR5lrNBmicJA284r9Q=
+			iQpKHqAxUXcy8byymUUaVOOD1mU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>healthdata_glyph_bodymeasurements@2x.png</key>
-		<data>
-		HV8+3ojwm8/x9ychGIkT7ZAbKGo=
-		</data>
-		<key>healthdata_glyph_bodymeasurements@3x.png</key>
-		<data>
-		97+axxNnfwxQ8gacFcY6bEx4Ukg=
-		</data>
-		<key>healthdata_glyph_fitness@2x.png</key>
-		<data>
-		IW3hS05mtgaPMljMy/ngltt13aI=
-		</data>
-		<key>healthdata_glyph_fitness@3x.png</key>
-		<data>
-		HVnoP7pBshzumzIXa3+3rtwivzc=
-		</data>
-		<key>healthdata_glyph_me@2x.png</key>
-		<data>
-		dZdKWrheiAhdA1I4jfrH4KVv8f4=
-		</data>
-		<key>healthdata_glyph_me@3x.png</key>
-		<data>
-		sXJ9BUoNH4z7fqO3Bi+AVxsgGZ4=
-		</data>
-		<key>healthdata_glyph_medication@2x.png</key>
-		<data>
-		adkwEqZpiqeJke8Hu/ZjtQZMHBk=
-		</data>
-		<key>healthdata_glyph_medication@3x.png</key>
-		<data>
-		kfVtiB39nnZKwn+4C3A48W2D1ck=
-		</data>
-		<key>healthdata_glyph_nikeplus@2x.png</key>
-		<data>
-		+Io5vYiLTbjJZn8kcviPGwRJHnc=
-		</data>
-		<key>healthdata_glyph_nikeplus@3x.png</key>
-		<data>
-		P3Nr92ol7sSjysXaNgp8QiDplEM=
-		</data>
-		<key>healthdata_glyph_nutrition@2x.png</key>
-		<data>
-		2j9/DqZIsKJ5TPcKW74kUw1Iw8A=
-		</data>
-		<key>healthdata_glyph_nutrition@3x.png</key>
-		<data>
-		Xx8QudXgCab/sQ7J+rFfi4mqh4E=
-		</data>
-		<key>healthdata_glyph_results@2x.png</key>
-		<data>
-		w2Xw0XKGF7V+75Gju7J2oRyPvz8=
-		</data>
-		<key>healthdata_glyph_results@3x.png</key>
-		<data>
-		wFiwo0qAMsMjpXPgZ9JdARuhRNI=
-		</data>
-		<key>healthdata_glyph_sleep@2x.png</key>
-		<data>
-		fJnuizJDPv34UjHMTF+EZRTAnf0=
-		</data>
-		<key>healthdata_glyph_sleep@3x.png</key>
-		<data>
-		rvOrWdlyJNO+53C+hxxtPyXDKR8=
-		</data>
-		<key>healthdata_glyph_vitals@2x.png</key>
-		<data>
-		5NIsEXKdMxGUH6S7taTHph6tJrU=
-		</data>
-		<key>healthdata_glyph_vitals@3x.png</key>
-		<data>
-		pQeZNvZgxSUovqI0L3hmDhF5sdE=
-		</data>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -403,7 +308,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQmax6fymlqFs8iBvU8QC33PVeQ=
+			H1/8XKB2stELEcjJhGYNCOKuCAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -421,7 +326,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XK3pxdV8cBxcae0T6tzmEq8jeKU=
+			mv0UKGlscX6N+EY8UmjdZODEs28=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -439,7 +344,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CQTifqsJd/8uqK3ld4JlJ35j5YA=
+			KPIIuDlOtltRwTgcbTczqfeN2mc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -457,7 +362,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FKjMgzYu1GeUDP4v2t9rfmLHpmw=
+			mqKirX6+embAYNv5SXI5d49C8nQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -475,7 +380,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LUB8B3q5DdaOUp8fAtQxHi6V/Fw=
+			HnchKxKXOYa581BjWnp6TF7ODOU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			766lt7yislUAlrthIod16yfPq7Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -493,7 +407,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eFFmv3zxYJmgBAoYZFE7zjkCXJ0=
+			V9jJRSMYO5iNf+mfBxP2y+vnPNo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -511,19 +425,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uvMEBFJJAYw7Czz1SrS37eQSKJw=
+			dYYTBPxRPyNkUyte7QfDx01Kf+A=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>medicalid_header_glyph@2x.png</key>
-		<data>
-		w8aLOvI0VNEq8ie0q9eWIf8G5mU=
-		</data>
-		<key>medicalid_header_glyph@3x.png</key>
-		<data>
-		VfGxxzghVW5tHxxXoqJNDs/8DAI=
-		</data>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -537,7 +443,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PXCUuP5/eFTKxIINQD6h4ol6W0I=
+			4PcUFAXkRr2/BPPsFtGLcgfVwnA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -555,7 +461,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R/i3a773b2NkQ3W3Roq1anDctrA=
+			R0ZKSKVMh87wZLpo1MoCTGoVizs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -573,7 +479,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dEi+lISDpYbB3l5BJwS1oAVjJ2E=
+			R4lL3PZLxghNbzEQzA2JQ5Wy0qU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -591,7 +497,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YqlN+3A4GFKnXe1QB1LMEhQQw7c=
+			gDVEY0fqnT4KImMSe+n3X4z0Rcs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -609,7 +515,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e5BmfGbPZP/GOqgkE63WByFkjzw=
+			gAQUMg9PXXqBMF3ZBEDw9AXEX+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -627,7 +533,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MjGGuAP6ml/obg6wfEjcyLMFtUs=
+			mZEo6peXBp2N4pF3voJYhFbuOx8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -645,7 +551,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cZAdYPhLtKv9Z+5G5NypYpHW6/Y=
+			OYrrzOIWMXdd45TSEs9fVmYFDF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -663,83 +569,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h40volhTHHAwMJyIz5OxDv9xQCk=
+			4+YR2dZ7IFNc8lZCmTg3tRwH/Ks=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sharedata_glyph_bodymeasurements@2x.png</key>
-		<data>
-		E1tkcojIrfiIWFtKSThT3hSyEm4=
-		</data>
-		<key>sharedata_glyph_bodymeasurements@3x.png</key>
-		<data>
-		KXL953UhQ6Okfr29fWNpyRF46QQ=
-		</data>
-		<key>sharedata_glyph_fitness@2x.png</key>
-		<data>
-		yOmfpmvN087LS0dWEyD8JqqVHiI=
-		</data>
-		<key>sharedata_glyph_fitness@3x.png</key>
-		<data>
-		FcY8k86HHk+G1zlsvsDsXL7tbDU=
-		</data>
-		<key>sharedata_glyph_me@2x.png</key>
-		<data>
-		gAiaHPJrO7SLxCGdvjKWR5twpbk=
-		</data>
-		<key>sharedata_glyph_me@3x.png</key>
-		<data>
-		hmw1ysNX3721hapW/3D4a6JsBqA=
-		</data>
-		<key>sharedata_glyph_medications@2x.png</key>
-		<data>
-		CZHpFO0P60i4dWDDYnnQOFBb6nc=
-		</data>
-		<key>sharedata_glyph_medications@3x.png</key>
-		<data>
-		Jde3sbS2xQIHlFuKDmousaIpbVM=
-		</data>
-		<key>sharedata_glyph_nikeplus@2x.png</key>
-		<data>
-		AV40zggMuE6mSyKC0SX79SgNwzI=
-		</data>
-		<key>sharedata_glyph_nikeplus@3x.png</key>
-		<data>
-		MoiBQLYHfe2Cw+9lZwXPzKNJNX8=
-		</data>
-		<key>sharedata_glyph_nutrition@2x.png</key>
-		<data>
-		pa+0VaPHbImxBtJWrsT99Ph39pc=
-		</data>
-		<key>sharedata_glyph_nutrition@3x.png</key>
-		<data>
-		q8sqvwcFIT7EBmrpILfblnyP/wk=
-		</data>
-		<key>sharedata_glyph_results@2x.png</key>
-		<data>
-		7nud5anYHcGUhMGdwGuPOM39xOk=
-		</data>
-		<key>sharedata_glyph_results@3x.png</key>
-		<data>
-		lzU/6ylzmDNdgeDvck+koFsiOeE=
-		</data>
-		<key>sharedata_glyph_sleep@2x.png</key>
-		<data>
-		Rhq4Jd8p9Kq9UXJbDailUInlN4o=
-		</data>
-		<key>sharedata_glyph_sleep@3x.png</key>
-		<data>
-		0//L8DYYfJOZSCA3xB2XhYoKgRs=
-		</data>
-		<key>sharedata_glyph_vitals@2x.png</key>
-		<data>
-		V5gbCMTSXPGWc0Ll5NOlEsa34T4=
-		</data>
-		<key>sharedata_glyph_vitals@3x.png</key>
-		<data>
-		l7F0bo4i/cOcVAzjNayvibAiwn0=
-		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -753,7 +587,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OJnI1T8oMvFVbwOuwcaEbMSts0k=
+			0wXsnjf498BTF5nPHCAqOitJnQQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -771,7 +605,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+QlwDhI4nzoa4YvqOs8RNO6CnwY=
+			OjdD3yY5TMsW+oTnNkqs0lGXPUY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -789,7 +623,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MWs9Fi7/G2eKhcmW/9ECV1s87HE=
+			u+96wfaBm5u/FW0gMuq3RiIcfUA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -807,7 +641,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nzEFXThrd8FVZlKG5TZoeIyl0c4=
+			Mk1HzEJUmyP3rQzoJQDD7l9oqqs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -825,15 +659,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZW8jW5vWH2jISEZpSJQRKQMa8VM=
+			isddtERE8mvKOQqq8UOuy+92vNk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		ymohV953GWU31bjgcmNvZyTNZbg=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -847,7 +677,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZS5cImMiRxEW4RK1ILdQjWaKbj0=
+			Vyl9fcm01BKxjy6sbiIhs3iF+0Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -865,7 +695,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qMyeTr7EBPMwekKeeKSioKhBKYk=
+			PqrKcTnkiiWu2i0PiGxtsUowRko=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -883,7 +713,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vkElhprTHcxGAwAyALMEc522ARw=
+			kQf+3+kV6f/hDcYnBTBnQH+jjis=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -901,7 +731,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			joPG33bo2XrqmqWiUNpkV5f4hMA=
+			oplsjRGp/716Ljp/AX9akOTFNP4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -909,69 +739,9 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Dashboard_glyph_bodymeasurements@2x.png</key>
+		<key>Assets.car</key>
 		<data>
-		fuSUgcHQQEQtHv/pOXTl8SUFQho=
-		</data>
-		<key>Dashboard_glyph_bodymeasurements@3x.png</key>
-		<data>
-		ZnQCqxAQyQzqAalChz8Qc+/7/0A=
-		</data>
-		<key>Dashboard_glyph_fitness@2x.png</key>
-		<data>
-		Opj/OZCXwKhN1CGo4C3xrCKq2BU=
-		</data>
-		<key>Dashboard_glyph_fitness@3x.png</key>
-		<data>
-		oAG9HLo8aVp/1jp8k6dxPK95hM4=
-		</data>
-		<key>Dashboard_glyph_fuelpoint@2x.png</key>
-		<data>
-		boYHLfLa3hJquQmKvWPtHsjXc9I=
-		</data>
-		<key>Dashboard_glyph_fuelpoint@3x.png</key>
-		<data>
-		jwQma5KBuS0gY4cs2C4JWM28w8o=
-		</data>
-		<key>Dashboard_glyph_medication@2x.png</key>
-		<data>
-		+sQxczqAre0fl0XNtgNKdvDASbk=
-		</data>
-		<key>Dashboard_glyph_medication@3x.png</key>
-		<data>
-		9X02Hn5kqhGoTI7q4d6vKkldvF8=
-		</data>
-		<key>Dashboard_glyph_nutrition@2x.png</key>
-		<data>
-		qEmp33B+dgXRm7aBhT4DX1I9DPE=
-		</data>
-		<key>Dashboard_glyph_nutrition@3x.png</key>
-		<data>
-		QwhrQOQOK4VoC6n7ietE/3FmM0M=
-		</data>
-		<key>Dashboard_glyph_results@2x.png</key>
-		<data>
-		MKAXztE1UNlfQcR3qkv4ZTST7G0=
-		</data>
-		<key>Dashboard_glyph_results@3x.png</key>
-		<data>
-		9RGGewmrZjKjjSwZDkQ3BvvelP4=
-		</data>
-		<key>Dashboard_glyph_sleep@2x.png</key>
-		<data>
-		pgyBR5rJa1JkyvegyOG0Kw40mRY=
-		</data>
-		<key>Dashboard_glyph_sleep@3x.png</key>
-		<data>
-		uRx1IUU0WZNGR3SeNMaiPvWPPRI=
-		</data>
-		<key>Dashboard_glyph_vitals@2x.png</key>
-		<data>
-		nMpJ5M0hGzCNA8UUX5AxiskoOfA=
-		</data>
-		<key>Dashboard_glyph_vitals@3x.png</key>
-		<data>
-		B8M8LSPqL/he4wEgrRoRpJQrkTI=
+		GOuqwDp5jiWPzDJr1qSlo882sa0=
 		</data>
 		<key>NikeFuel_Summary_Image@2x.png</key>
 		<data>
@@ -990,7 +760,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rm3bp6XOC/qfj4+eXd1Msdt7+hQ=
+			lc2AI/vy6F8ghILTC4355uXC6JY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1008,19 +778,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6kmfF88bJUILLQ9SGNvXB20R9Xo=
+			dWkKrV0bz60xmXBUv3I+gOFy9fA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>call_glyph@2x.png</key>
-		<data>
-		FNFgE6dasLd2k2Q1dQqeHkuGY1E=
-		</data>
-		<key>call_glyph@3x.png</key>
-		<data>
-		x5jSMt139Tu/YzU2E4BDuRVLoTs=
-		</data>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1034,7 +796,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BwYKz75gIeNWf1OdM6pl9JKaOYU=
+			Qgy3fLocUPdTgeb6Ek8Isw0C7Ho=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1052,7 +814,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXD+23jvr6y9x66EBUMwYYiqPL0=
+			WOjGbtPG86tctxtWkGlSAJIgjW8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1070,7 +832,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IKFYcEx2JtutUKR3q2Lus3ldf7U=
+			Q1a3i69UyxSqjgZ24OgxC3Y+Fig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1088,7 +850,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4/zaGnFXVsZtwPQG+GQl9QAZybk=
+			zWSnEzQgUC/2zlj0HOr68zfehHo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xEwWR1VmzZeizvrjIKbBjoGYjsg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1106,7 +877,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bQropWEojami/F35/ZuTc1m0abE=
+			9/u77zX7sjNyZIbmTjc+xbTkc2k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U1umL+vqanibwJGQRGkJ/HCnJ4M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1124,7 +913,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R+39+3S1kwWgw4CY9oXgAc8Jr+k=
+			WHW9sd/RVy3oLB52BZMAc1OTRVs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1142,7 +931,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dRJ69Bcm89c9VqoEY8ze3rJmH0c=
+			KlNQBBOsgRBRH3BT7HXDoIFJvxs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v1fLWh2cr1QK+37wcFcFp7tJh3I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1160,7 +967,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KfANqGGyLfQuQFQZ2XQT1TbwFbY=
+			XpH1DDJ6U9ziBbehCw/dDGaEOEw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1178,7 +985,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+cb9HOruiRtfYlngJ1szX5574hg=
+			zk99ILnbFOzHd9qZIceOOeSoF4k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1196,7 +1003,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0K8vAgILqRlJmrqf1UxVCTDg9mU=
+			FQ2sNKww/VaZrkoqPXlvaQj0peY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1214,83 +1021,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ztkazSdYrKR5lrNBmicJA284r9Q=
+			iQpKHqAxUXcy8byymUUaVOOD1mU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>healthdata_glyph_bodymeasurements@2x.png</key>
-		<data>
-		HV8+3ojwm8/x9ychGIkT7ZAbKGo=
-		</data>
-		<key>healthdata_glyph_bodymeasurements@3x.png</key>
-		<data>
-		97+axxNnfwxQ8gacFcY6bEx4Ukg=
-		</data>
-		<key>healthdata_glyph_fitness@2x.png</key>
-		<data>
-		IW3hS05mtgaPMljMy/ngltt13aI=
-		</data>
-		<key>healthdata_glyph_fitness@3x.png</key>
-		<data>
-		HVnoP7pBshzumzIXa3+3rtwivzc=
-		</data>
-		<key>healthdata_glyph_me@2x.png</key>
-		<data>
-		dZdKWrheiAhdA1I4jfrH4KVv8f4=
-		</data>
-		<key>healthdata_glyph_me@3x.png</key>
-		<data>
-		sXJ9BUoNH4z7fqO3Bi+AVxsgGZ4=
-		</data>
-		<key>healthdata_glyph_medication@2x.png</key>
-		<data>
-		adkwEqZpiqeJke8Hu/ZjtQZMHBk=
-		</data>
-		<key>healthdata_glyph_medication@3x.png</key>
-		<data>
-		kfVtiB39nnZKwn+4C3A48W2D1ck=
-		</data>
-		<key>healthdata_glyph_nikeplus@2x.png</key>
-		<data>
-		+Io5vYiLTbjJZn8kcviPGwRJHnc=
-		</data>
-		<key>healthdata_glyph_nikeplus@3x.png</key>
-		<data>
-		P3Nr92ol7sSjysXaNgp8QiDplEM=
-		</data>
-		<key>healthdata_glyph_nutrition@2x.png</key>
-		<data>
-		2j9/DqZIsKJ5TPcKW74kUw1Iw8A=
-		</data>
-		<key>healthdata_glyph_nutrition@3x.png</key>
-		<data>
-		Xx8QudXgCab/sQ7J+rFfi4mqh4E=
-		</data>
-		<key>healthdata_glyph_results@2x.png</key>
-		<data>
-		w2Xw0XKGF7V+75Gju7J2oRyPvz8=
-		</data>
-		<key>healthdata_glyph_results@3x.png</key>
-		<data>
-		wFiwo0qAMsMjpXPgZ9JdARuhRNI=
-		</data>
-		<key>healthdata_glyph_sleep@2x.png</key>
-		<data>
-		fJnuizJDPv34UjHMTF+EZRTAnf0=
-		</data>
-		<key>healthdata_glyph_sleep@3x.png</key>
-		<data>
-		rvOrWdlyJNO+53C+hxxtPyXDKR8=
-		</data>
-		<key>healthdata_glyph_vitals@2x.png</key>
-		<data>
-		5NIsEXKdMxGUH6S7taTHph6tJrU=
-		</data>
-		<key>healthdata_glyph_vitals@3x.png</key>
-		<data>
-		pQeZNvZgxSUovqI0L3hmDhF5sdE=
-		</data>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1304,7 +1039,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TQmax6fymlqFs8iBvU8QC33PVeQ=
+			H1/8XKB2stELEcjJhGYNCOKuCAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1322,7 +1057,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XK3pxdV8cBxcae0T6tzmEq8jeKU=
+			mv0UKGlscX6N+EY8UmjdZODEs28=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1340,7 +1075,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CQTifqsJd/8uqK3ld4JlJ35j5YA=
+			KPIIuDlOtltRwTgcbTczqfeN2mc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1358,7 +1093,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FKjMgzYu1GeUDP4v2t9rfmLHpmw=
+			mqKirX6+embAYNv5SXI5d49C8nQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1376,7 +1111,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LUB8B3q5DdaOUp8fAtQxHi6V/Fw=
+			HnchKxKXOYa581BjWnp6TF7ODOU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			766lt7yislUAlrthIod16yfPq7Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1394,7 +1138,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eFFmv3zxYJmgBAoYZFE7zjkCXJ0=
+			V9jJRSMYO5iNf+mfBxP2y+vnPNo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1412,19 +1156,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uvMEBFJJAYw7Czz1SrS37eQSKJw=
+			dYYTBPxRPyNkUyte7QfDx01Kf+A=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>medicalid_header_glyph@2x.png</key>
-		<data>
-		w8aLOvI0VNEq8ie0q9eWIf8G5mU=
-		</data>
-		<key>medicalid_header_glyph@3x.png</key>
-		<data>
-		VfGxxzghVW5tHxxXoqJNDs/8DAI=
-		</data>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1438,7 +1174,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PXCUuP5/eFTKxIINQD6h4ol6W0I=
+			4PcUFAXkRr2/BPPsFtGLcgfVwnA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1456,7 +1192,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R/i3a773b2NkQ3W3Roq1anDctrA=
+			R0ZKSKVMh87wZLpo1MoCTGoVizs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1474,7 +1210,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dEi+lISDpYbB3l5BJwS1oAVjJ2E=
+			R4lL3PZLxghNbzEQzA2JQ5Wy0qU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1492,7 +1228,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YqlN+3A4GFKnXe1QB1LMEhQQw7c=
+			gDVEY0fqnT4KImMSe+n3X4z0Rcs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1510,7 +1246,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e5BmfGbPZP/GOqgkE63WByFkjzw=
+			gAQUMg9PXXqBMF3ZBEDw9AXEX+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1528,7 +1264,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MjGGuAP6ml/obg6wfEjcyLMFtUs=
+			mZEo6peXBp2N4pF3voJYhFbuOx8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1546,7 +1282,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cZAdYPhLtKv9Z+5G5NypYpHW6/Y=
+			OYrrzOIWMXdd45TSEs9fVmYFDF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1564,83 +1300,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h40volhTHHAwMJyIz5OxDv9xQCk=
+			4+YR2dZ7IFNc8lZCmTg3tRwH/Ks=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sharedata_glyph_bodymeasurements@2x.png</key>
-		<data>
-		E1tkcojIrfiIWFtKSThT3hSyEm4=
-		</data>
-		<key>sharedata_glyph_bodymeasurements@3x.png</key>
-		<data>
-		KXL953UhQ6Okfr29fWNpyRF46QQ=
-		</data>
-		<key>sharedata_glyph_fitness@2x.png</key>
-		<data>
-		yOmfpmvN087LS0dWEyD8JqqVHiI=
-		</data>
-		<key>sharedata_glyph_fitness@3x.png</key>
-		<data>
-		FcY8k86HHk+G1zlsvsDsXL7tbDU=
-		</data>
-		<key>sharedata_glyph_me@2x.png</key>
-		<data>
-		gAiaHPJrO7SLxCGdvjKWR5twpbk=
-		</data>
-		<key>sharedata_glyph_me@3x.png</key>
-		<data>
-		hmw1ysNX3721hapW/3D4a6JsBqA=
-		</data>
-		<key>sharedata_glyph_medications@2x.png</key>
-		<data>
-		CZHpFO0P60i4dWDDYnnQOFBb6nc=
-		</data>
-		<key>sharedata_glyph_medications@3x.png</key>
-		<data>
-		Jde3sbS2xQIHlFuKDmousaIpbVM=
-		</data>
-		<key>sharedata_glyph_nikeplus@2x.png</key>
-		<data>
-		AV40zggMuE6mSyKC0SX79SgNwzI=
-		</data>
-		<key>sharedata_glyph_nikeplus@3x.png</key>
-		<data>
-		MoiBQLYHfe2Cw+9lZwXPzKNJNX8=
-		</data>
-		<key>sharedata_glyph_nutrition@2x.png</key>
-		<data>
-		pa+0VaPHbImxBtJWrsT99Ph39pc=
-		</data>
-		<key>sharedata_glyph_nutrition@3x.png</key>
-		<data>
-		q8sqvwcFIT7EBmrpILfblnyP/wk=
-		</data>
-		<key>sharedata_glyph_results@2x.png</key>
-		<data>
-		7nud5anYHcGUhMGdwGuPOM39xOk=
-		</data>
-		<key>sharedata_glyph_results@3x.png</key>
-		<data>
-		lzU/6ylzmDNdgeDvck+koFsiOeE=
-		</data>
-		<key>sharedata_glyph_sleep@2x.png</key>
-		<data>
-		Rhq4Jd8p9Kq9UXJbDailUInlN4o=
-		</data>
-		<key>sharedata_glyph_sleep@3x.png</key>
-		<data>
-		0//L8DYYfJOZSCA3xB2XhYoKgRs=
-		</data>
-		<key>sharedata_glyph_vitals@2x.png</key>
-		<data>
-		V5gbCMTSXPGWc0Ll5NOlEsa34T4=
-		</data>
-		<key>sharedata_glyph_vitals@3x.png</key>
-		<data>
-		l7F0bo4i/cOcVAzjNayvibAiwn0=
-		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1654,7 +1318,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OJnI1T8oMvFVbwOuwcaEbMSts0k=
+			0wXsnjf498BTF5nPHCAqOitJnQQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1672,7 +1336,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+QlwDhI4nzoa4YvqOs8RNO6CnwY=
+			OjdD3yY5TMsW+oTnNkqs0lGXPUY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1690,7 +1354,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MWs9Fi7/G2eKhcmW/9ECV1s87HE=
+			u+96wfaBm5u/FW0gMuq3RiIcfUA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1708,7 +1372,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nzEFXThrd8FVZlKG5TZoeIyl0c4=
+			Mk1HzEJUmyP3rQzoJQDD7l9oqqs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1726,15 +1390,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZW8jW5vWH2jISEZpSJQRKQMa8VM=
+			isddtERE8mvKOQqq8UOuy+92vNk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		ymohV953GWU31bjgcmNvZyTNZbg=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1748,7 +1408,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZS5cImMiRxEW4RK1ILdQjWaKbj0=
+			Vyl9fcm01BKxjy6sbiIhs3iF+0Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1766,7 +1426,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qMyeTr7EBPMwekKeeKSioKhBKYk=
+			PqrKcTnkiiWu2i0PiGxtsUowRko=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1784,7 +1444,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vkElhprTHcxGAwAyALMEc522ARw=
+			kQf+3+kV6f/hDcYnBTBnQH+jjis=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1802,7 +1462,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			joPG33bo2XrqmqWiUNpkV5f4hMA=
+			oplsjRGp/716Ljp/AX9akOTFNP4=
 			</data>
 			<key>optional</key>
 			<true/>

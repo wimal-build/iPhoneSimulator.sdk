@@ -9,6 +9,8 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UICollectionView.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UICollectionViewLayout;
 @class UICollectionView;
 @class UICollectionViewLayoutAttributes;
@@ -16,7 +18,7 @@
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionReusableView : UIView
 
-@property (nonatomic, readonly, copy) NSString *reuseIdentifier;
+@property (nonatomic, readonly, copy, nullable) NSString *reuseIdentifier;
 
 // Override point.
 // Called by the collection view before the instance is returned from the reuse queue.
@@ -50,7 +52,9 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewCell : UICollectionReusab
 
 // The background view is a subview behind all other views.
 // If selectedBackgroundView is different than backgroundView, it will be placed above the background view and animated in on selection.
-@property (nonatomic, retain) UIView *backgroundView;
-@property (nonatomic, retain) UIView *selectedBackgroundView;
+@property (nonatomic, strong, nullable) UIView *backgroundView;
+@property (nonatomic, strong, nullable) UIView *selectedBackgroundView;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 SK_EXTERN NSString * const SKErrorDomain NS_AVAILABLE_IOS(3_0);
 
 // error codes for the SKErrorDomain
@@ -19,3 +21,5 @@ enum {
     SKErrorPaymentNotAllowed,           // this device is not allowed to make the payment
     SKErrorStoreProductNotAvailable,    // Product is not available in the current storefront
 };
+
+NS_ASSUME_NONNULL_END

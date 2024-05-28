@@ -7,8 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 #define HK_EXTERN   extern __attribute__((visibility("default")))
 #define HK_CLASS_AVAILABLE_IOS(_iOSIntro)    NS_CLASS_AVAILABLE_IOS(_iOSIntro)
+#define HK_AVAILABLE_WATCHOS_ONLY(_watchOSIntro)    __WATCHOS_AVAILABLE(_watchOSIntro) __IOS_UNAVAILABLE
+#define HK_CLASS_AVAILABLE_WATCHOS_ONLY(_watchOSIntro)    HK_EXTERN HK_AVAILABLE_WATCHOS_ONLY(_watchOSIntro)
 
 HK_EXTERN NSString * const HKErrorDomain NS_AVAILABLE_IOS(8_0);
 
@@ -24,6 +28,8 @@ HK_EXTERN NSString * const HKErrorDomain NS_AVAILABLE_IOS(8_0);
                                                 perform the requested operation.
  @constant  HKErrorDatabaseInaccessible         Protected health data is inaccessible because the device is locked.
  @constant  HKErrorUserCanceled                 The user canceled the operation.
+ @constant  HKErrorAnotherWorkoutSessionStarted Another workout session was started by this or another application.
+ @constant  HKErrorUserExitedWorkoutSession     User exited the application while a workout session was running.
  */
 typedef NS_ENUM(NSInteger, HKErrorCode) {
     HKNoError = 0,
@@ -34,6 +40,8 @@ typedef NS_ENUM(NSInteger, HKErrorCode) {
     HKErrorAuthorizationNotDetermined,
     HKErrorDatabaseInaccessible,
     HKErrorUserCanceled,
+    HKErrorAnotherWorkoutSessionStarted NS_ENUM_AVAILABLE_IOS(9_0),
+    HKErrorUserExitedWorkoutSession     NS_ENUM_AVAILABLE_IOS(9_0),
 } NS_ENUM_AVAILABLE_IOS(8_0);
 
 /*!
@@ -103,3 +111,87 @@ typedef NS_ENUM(NSInteger, HKCategoryValueSleepAnalysis) {
     HKCategoryValueSleepAnalysisInBed,
     HKCategoryValueSleepAnalysisAsleep,
 } NS_ENUM_AVAILABLE_IOS(8_0);
+
+
+/*!
+ @enum          HKCategoryValueAppleStandHour
+ @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryTypeIdentifierAppleStandHour type.
+ 
+ @constant      HKCategoryValueAppleStandHourStood  The user stood up and moved a little for at least one minute during
+                                                    the sample.
+ @constant      HKCategoryValueAppleStandHourIdle   The user did not stand up and move a little for at least one
+                                                    continuous minute during the sample.
+ */
+typedef NS_ENUM(NSInteger, HKCategoryValueAppleStandHour) {
+    HKCategoryValueAppleStandHourStood = 0,
+    HKCategoryValueAppleStandHourIdle,
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+/*!
+ @enum          HKFitzpatrickSkinType
+ @abstract      This enumerated type is used to represent the skin type of an individual based on the Fitzpatrick scale.
+ @discussion    The Fitzpatrick scale is a numerical classification for skin color based on the skin's response to sun
+                exposure in terms of the degree of burning and tanning.
+
+ @constant      HKFitzpatrickSkinTypeI      Pale white skin that always burns easily in the sun and never tans.
+ @constant      HKFitzpatrickSkinTypeII     White skin that burns easily and tans minimally.
+ @constant      HKFitzpatrickSkinTypeIII    White to light brown skin that burns moderately and tans uniformly.
+ @constant      HKFitzpatrickSkinTypeIV     Beige-olive, lightly tanned skin that burns minimally and tans moderately.
+ @constant      HKFitzpatrickSkinTypeV      Brown skin that rarely burns and tans profusely.
+ @constant      HKFitzpatrickSkinTypeVI     Dark brown to black skin that never burns and tans profusely.
+ */
+typedef NS_ENUM(NSInteger, HKFitzpatrickSkinType) {
+    HKFitzpatrickSkinTypeNotSet = 0,
+    HKFitzpatrickSkinTypeI,
+    HKFitzpatrickSkinTypeII,
+    HKFitzpatrickSkinTypeIII,
+    HKFitzpatrickSkinTypeIV,
+    HKFitzpatrickSkinTypeV,
+    HKFitzpatrickSkinTypeVI,
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+/*!
+ @enum          HKCategoryValueCervicalMucusQuality
+ @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryValueCervicalMucusQuality type.
+ @discussion    These cervical mucus quality values are ordered from least-fertile (Dry) to most-fertile (EggWhite).
+ */
+typedef NS_ENUM(NSInteger, HKCategoryValueCervicalMucusQuality) {
+    HKCategoryValueCervicalMucusQualityDry = 1,
+    HKCategoryValueCervicalMucusQualitySticky,
+    HKCategoryValueCervicalMucusQualityCreamy,
+    HKCategoryValueCervicalMucusQualityWatery,
+    HKCategoryValueCervicalMucusQualityEggWhite,
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+/*!
+ @enum          HKCategoryValueOvulationTestResult
+ @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryValueOvulationTestResult type.
+ @discussion    This category value tracks the result of a home ovulation test that use surges in luteinizing hormone 
+                levels to indicate fertility.
+ */
+typedef NS_ENUM(NSInteger, HKCategoryValueOvulationTestResult) {
+    HKCategoryValueOvulationTestResultNegative = 1,
+    HKCategoryValueOvulationTestResultPositive,
+    HKCategoryValueOvulationTestResultIndeterminate,
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+/*!
+ @enum          HKCategoryValueMenstrualFlow
+ @abstract      Set of values to indicate the type of menstrual flow.
+ */
+typedef NS_ENUM(NSInteger, HKCategoryValueMenstrualFlow) {
+    HKCategoryValueMenstrualFlowUnspecified = 1,
+    HKCategoryValueMenstrualFlowLight,
+    HKCategoryValueMenstrualFlowMedium,
+    HKCategoryValueMenstrualFlowHeavy
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+/*!
+ @enum          HKCategoryValue
+ @abstract      This category value is to be used for types which don't have a specific value defined.
+ */
+typedef NS_ENUM(NSInteger, HKCategoryValue) {
+    HKCategoryValueNotApplicable = 0,
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+NS_ASSUME_NONNULL_END

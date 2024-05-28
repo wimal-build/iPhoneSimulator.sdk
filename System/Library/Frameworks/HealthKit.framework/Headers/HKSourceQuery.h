@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKQuery.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  @class         HKSourceQuery
  @abstract      A query that returns a set of sources that have saved objects matching certain criteria.
@@ -24,7 +26,9 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @param         completionHandler   The block to be called when the query has finished executing.
  */
 - (instancetype)initWithSampleType:(HKSampleType *)sampleType
-                   samplePredicate:(NSPredicate *)objectPredicate
-                 completionHandler:(void(^)(HKSourceQuery *query, NSSet *sources, NSError *error))completionHandler;
+                   samplePredicate:(nullable NSPredicate *)objectPredicate
+                 completionHandler:(void(^)(HKSourceQuery *query, NSSet<HKSource *> * __nullable sources, NSError * __nullable error))completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

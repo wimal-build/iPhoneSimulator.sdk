@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  @class     HKSource
  @abstract  Represents the entity that created an object stored by HealthKit.
@@ -36,3 +38,5 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
+
+NS_ASSUME_NONNULL_END

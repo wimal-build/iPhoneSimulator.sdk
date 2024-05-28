@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 /*
  Enums for color buffer formats.
  */
@@ -62,7 +63,7 @@ NS_CLASS_AVAILABLE(NA, 5_0)
 
 - (instancetype)initWithFrame:(CGRect)frame context:(EAGLContext *)context;
 
-@property (nonatomic, assign) IBOutlet id <GLKViewDelegate> delegate;
+@property (nullable, nonatomic, assign) IBOutlet id <GLKViewDelegate> delegate;
 
 @property (nonatomic, retain) EAGLContext *context;
 
@@ -124,3 +125,4 @@ NS_CLASS_AVAILABLE(NA, 5_0)
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect;
 
 @end
+NS_ASSUME_NONNULL_END

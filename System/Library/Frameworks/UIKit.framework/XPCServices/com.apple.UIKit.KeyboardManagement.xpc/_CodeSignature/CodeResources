@@ -6,11 +6,11 @@
 	<dict>
 		<key>Entitlements.plist</key>
 		<data>
-		4OpcBxWiCkWnL9nXTbYbCQANHb4=
+		2Tm6KRBruP4Ux2JPjumYrIbkvPM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zCxn1YEpPNV9qIO/S5Z7FGx40Ls=
+		JdJ3QfnReIpiK66ekZFNyp9zDzQ=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -75,6 +75,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -85,6 +94,15 @@
 			<true/>
 		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -309,10 +327,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		v9dQIWzut6EqOtIB5C4k5rteW0o=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -354,7 +368,7 @@
 	<dict>
 		<key>Entitlements.plist</key>
 		<data>
-		4OpcBxWiCkWnL9nXTbYbCQANHb4=
+		2Tm6KRBruP4Ux2JPjumYrIbkvPM=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -419,6 +433,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -429,6 +452,15 @@
 			<true/>
 		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -653,10 +685,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		v9dQIWzut6EqOtIB5C4k5rteW0o=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

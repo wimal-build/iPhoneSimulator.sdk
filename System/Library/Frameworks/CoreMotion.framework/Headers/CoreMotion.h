@@ -26,5 +26,6 @@
 #import <CoreMotion/CMMotionManager.h>
 #import <CoreMotion/CMPedometer.h>
 #import <CoreMotion/CMStepCounter.h>
+#import <CoreMotion/CMSensorRecorder.h>
 
 #endif /* __COREMOTION__ */

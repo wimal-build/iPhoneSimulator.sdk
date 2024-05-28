@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CMRotationMatrix
  *  
@@ -130,3 +132,5 @@ NS_CLASS_AVAILABLE(NA,4_0)
 - (void)multiplyByInverseOfAttitude:(CMAttitude *)attitude;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -33,6 +33,7 @@
  All descendants of GLKEffectProperty are concrete, mutable classes.
  */
 
+NS_ASSUME_NONNULL_BEGIN
 typedef struct GLKEffectPropertyPrv *GLKEffectPropertyPrvPtr;
 
 NS_CLASS_AVAILABLE(10_8, 5_0)
@@ -47,3 +48,4 @@ NS_CLASS_AVAILABLE(10_8, 5_0)
 }
 
 @end
+NS_ASSUME_NONNULL_END

@@ -6,13 +6,31 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Gj7CFn+L7ED0dSYjXbC6sPL8zPA=
+		ni2XlmePxJUwoscyDVVOqdeMl9o=
 		</data>
+		<key>Dutch.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DgmDD1FaLYIQDgrF6wOP1LJZLrg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			75HTYaeVbq7J43DLXMsI9ZkO7js=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/MediaPlayer.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tob7TSPALhXX5+HVZ4WG3/r1Z+w=
+			uH9z2qM4f/VaRsqW9LsPF4+2lsg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -21,94 +39,138 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JiwhqtQZuzRS9IU6Dm5M3e3XLFs=
+			eIXe4YY8fKSmjRPa2O5gm7eJq5Y=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bdCfCtkDpRzeFurqK593r7x9D3c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			INbv5/GKfaHZa6CoY3gAKYxZkzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uK1oFO7pvcX4aiT6PecThp+58OE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WER8kruHmj15bU56ABkbMrc8154=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Headers/AVFoundation+MPNowPlayingInfoLanguageOptionAdditions.h</key>
+		<data>
+		k54aHq9FiuzR/mlvlvy2zLgqc9c=
+		</data>
 		<key>Headers/MPContentItem.h</key>
 		<data>
-		gLQAfQy59gTOk/q9Yi8sOksVveA=
+		hTEQuisVQkplSCpV4uMjTGgUE28=
 		</data>
 		<key>Headers/MPMediaEntity.h</key>
 		<data>
-		hlHtPnNVryiEqyD+elsfDHrZ37I=
+		k/P81Yr6R0q8O+6q549Q0d2llsU=
 		</data>
 		<key>Headers/MPMediaItem.h</key>
 		<data>
-		f62yjyldn2qJsZnOFqadOZvmkxw=
+		WB9sp408PB2A3Z71c1YNx6ZHObY=
 		</data>
 		<key>Headers/MPMediaItemCollection.h</key>
 		<data>
-		Hy3qoB/OUwNsV4GjAk5c9OcYE3o=
+		fkZTNralMrvcaUHiub7xdKxOCpQ=
 		</data>
 		<key>Headers/MPMediaLibrary.h</key>
 		<data>
-		x7avwv/UyXLB2HeCWzsfUirq01o=
+		ACYf2rMwrR8lKPx4Gg80rGBtzP0=
 		</data>
 		<key>Headers/MPMediaPickerController.h</key>
 		<data>
-		H/P2Zo+yfSzNiUv9F80JpnvTjYs=
+		tAP15GuBvfH6kO5lr5pvw01rrks=
 		</data>
 		<key>Headers/MPMediaPlayback.h</key>
 		<data>
-		V/hPFuazTLxdqsGmbAxGQQ5g4W8=
+		J13repy3pxF9OB9kgpCbsLyAA64=
 		</data>
 		<key>Headers/MPMediaPlaylist.h</key>
 		<data>
-		yft2sA6C4UQWj+9cNXrbLzWxECk=
+		gTlJScm3rC+Q/XqqDG4/ORcLdPQ=
 		</data>
 		<key>Headers/MPMediaQuery.h</key>
 		<data>
-		YzksrKaRX1EIizgzxCH7fE2mzGo=
+		uEK7bxUZi2rMuaoHiz3mcpTofpg=
 		</data>
 		<key>Headers/MPMediaQuerySection.h</key>
 		<data>
-		yYaJHcqIsdle13QGL1rn4aFMvGY=
+		Jk2G7wclL93oJlrf8H5P/kkQgk4=
 		</data>
 		<key>Headers/MPMoviePlayerController.h</key>
 		<data>
-		GO9kbBB2kQQtL/Y5fc99uu8Cbh8=
+		TfxzHnYJlz6ywKNPyY7+2rUF38Q=
 		</data>
 		<key>Headers/MPMoviePlayerViewController.h</key>
 		<data>
-		NLetjYB5o6gKxOGwpOiut8cyCyA=
+		soh/nFdHFwjeQfxMY7A7EXL7qn4=
 		</data>
 		<key>Headers/MPMusicPlayerController.h</key>
 		<data>
-		pqjiUhr0YUKKQEex9dYjetcH+Y0=
+		OkG2Lu0cRPuU01OnGR9zTsmuNEc=
 		</data>
 		<key>Headers/MPNowPlayingInfoCenter.h</key>
 		<data>
-		uu+HvO0YbeKvkGqDUQIjJsXEQ/U=
+		HDnNpL40ddFIPRywZgLjT8xHKbc=
+		</data>
+		<key>Headers/MPNowPlayingInfoLanguageOption.h</key>
+		<data>
+		AjKAeBjvqRW8lpEpc7Mgped21j4=
 		</data>
 		<key>Headers/MPPlayableContentDataSource.h</key>
 		<data>
-		cDRuY/389yLlYNPreyB9oAXJulM=
+		nZdc9vr0yKGUDNAQx/ufYk5CyjI=
 		</data>
 		<key>Headers/MPPlayableContentDelegate.h</key>
 		<data>
-		8mLnnfouwF2z0a5+r2CxDIT61q4=
+		YNQJEb0WPpKTW7MOudYl9zq5BVw=
 		</data>
 		<key>Headers/MPPlayableContentManager.h</key>
 		<data>
-		5kmK+jtdeuU716xRNxQZYfNFBQ0=
+		BFS2LvxjpiCGKoKKAloI9+asfuY=
 		</data>
 		<key>Headers/MPPlayableContentManagerContext.h</key>
 		<data>
-		oZ5ARWca3sGAQ2LBzHs8Mo+dYmY=
+		aKd885TqOghulcD5R9rcuAMoyFs=
 		</data>
 		<key>Headers/MPRemoteCommand.h</key>
 		<data>
-		vY6qtKPpyKjT62Fh08Nal0KiGRA=
+		sfLPt/add4eqbjV2b9DiMrqBGvA=
 		</data>
 		<key>Headers/MPRemoteCommandCenter.h</key>
 		<data>
-		jkX5a0uwpYtgHLaLmAn2lV62Yxw=
+		urOh34jpDBPU31wG+8AdUuEClpc=
 		</data>
 		<key>Headers/MPRemoteCommandEvent.h</key>
 		<data>
-		Wf5nEeD7SLtAH/KU7XnwuHQbWNo=
+		yzfL4gGECpjS60EDVFLErPvZCY0=
 		</data>
 		<key>Headers/MPVolumeSettings.h</key>
 		<data>
@@ -116,11 +178,11 @@
 		</data>
 		<key>Headers/MPVolumeView.h</key>
 		<data>
-		TGy57uC95OC8A7byc2QI/ejq11s=
+		h0bPraKAIcEXgSoOIq8crq8Ke2w=
 		</data>
 		<key>Headers/MediaPlayer.h</key>
 		<data>
-		VqVVzJiB3V49DpwIB40+9RloUVY=
+		J//3qRIDWXdlOwSf+s/Qw0gZmrs=
 		</data>
 		<key>Headers/MediaPlayerDefines.h</key>
 		<data>
@@ -128,24 +190,672 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tHmPNVm/rkv8bM5NUbjdTOI/hPg=
+		C5Absr0TFj4FsNJ5+tE1MoRCCiY=
 		</data>
-		<key>version.plist</key>
+		<key>Italian.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hRovwvbqYqN9eXQaFEzWAz7/2Gw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HMHYE4F3lZLBn2lJTD2kDY75PwM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GjonZd2Kvp0dwS4Qj47tBlJ6+is=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uj6QrcJDngLZH/Nf70/0xMaLS2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Modules/module.modulemap</key>
 		<data>
-		e0vWo5rn2sPNMRhBoROMqwNPvi8=
+		MV3QfNRRqnkIV4P4XW9WAEOegkE=
 		</data>
+		<key>Spanish.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r4f8RLBjVMLrGwap1JyF4QFbXB0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zSClJL5sopC4w1mkmZCvv7CfJqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2lcw+Kn5e3qPATPxfUkak/zBgG4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0vDyehuV2hV2a3cHvN7nPpobDZA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ycj+z6G6eRHNGezLzFCTVaGLmaI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vcc3NREGEWbYNwobGK/WY9Oe1RM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VKOoSYjz2u/use5lBrc2q3y4/Xg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SYw5CtueYOTdScJpzmH/iEv/zZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JrG1vrpCzc0w5+wMbepzNgO1s6M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rTpMpCXA+MJIfeXd0qm+szlGRi4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			06A9FUXWF+Zl1vVOKOFTmv9bemM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FP/yJ0htp9pDtSMDzm+fRBeuaHk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zJ3k3FB4X9bvDgicUB8PfBf9Aiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eIXe4YY8fKSmjRPa2O5gm7eJq5Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YWMCMsae8A8TeaqjMgfHuNcFCDs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eIXe4YY8fKSmjRPa2O5gm7eJq5Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0xLQ8ndr0Uf14AgOlzITFMqN5wg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zSClJL5sopC4w1mkmZCvv7CfJqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/GHfY+1eJ20bnOxJ5gEhlqV04Tg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sumdgRkfu1F+TDK3xboW1sbSl8Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SNzce3U+yFZtg/dASyD2enN7ChM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B9QGnRZzzEM3MVoL6y1xtwLDCU4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DcQytlVMC8vonVmFLqAiLMu7n4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ds4/3ye8xBLauP8bWh1EXw4DJIE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BRO8xGpyw/eXoJ1VXcYew/S2pcM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xlv2Af7Jkt9vbjbh8BVWdK1LqQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7JofWkVCMMFa19PtvAB9Thdft7c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vKY7btGd+Sd0lYZjiGwOjIHafHo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hvqCiuE752s2GpCKftAtx3Heepg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UMFNW7Kv8BjxFle6K86WlT+ueuQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4hDZOjpFxz3gXUzho+rVKQKmmXw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vGTryVrMIh1iXKo9gURHysyY8zM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NkyCRZBmlm+BL2NQR6Vxf3XfVys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LhZbrx2MyJi8xxAjZZ0o5T6fa6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VN1B1f7pbfUoGU5jY3tMU5mkS0Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ImBMgmu9FbnIvKFH9LE5QxbflmM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DIlmJxy1SIIKUbfZ12j7iPekGnQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y6PsfRtrAlymYWCmV1ABZ+3Jy9I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jZkYp4J6xXfUrGrtxlEX+tb3kPA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M11SCIbIC/brkNWwj0xuPuRRhb4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Le8PeUFLQonjudpcAi/fcSSGBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JnBJ0XS8+bQJzpHOSpjJcAQM1vk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pf7Aexx3uu/BKnJulrXwbPvA8CA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P5RTW7RmOQUN7zaA2JIpkJakZP0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a2+4tsm9eWlXODYo4sa7LOLonKQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iUbYMCJGYwVmDmZ5SVJ0GNyoAx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tGhT9KdgDXitNBTbFzTE7mW+9jg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			USJ4X3ZOrWjB/aWzAnswZnpcMGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KforjMOCM4TGrchZm4dBpLAEkaY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oATlBBzYRmNIlu/xH47y4d9gDVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VU9YMMKWloFBXEzIpJ63ZdQh1+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4QuemlVeuocuVCO5Q4ScZl3O668=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GOkXaPSwxLy0DVdovnw1IFlWGuc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bmHFOgw42YdljiTQHAUxF9721DI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S3/wVZVcr8hUmHAH08L4Tt5TRQQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H6XFNbw2PxlKBJINtT6t9fZKFx0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pFvn4X0dVMe5e1PD0uQdTLYJhxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KgAV0H5RF9lu5bEx4E3txnmeTlc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q1AXTYe8/TpjIdISpMN3M6GzFjA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o2foSrNPIdxlZuPpxv18XTVlWJg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iWdBINhVwMhVy7exuN08lIoTkTI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			okmBAxRltqqBxkmBMD12f7BeaHQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			luzWRD+3jKsdeafVsw1UbwXJ6R0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2vTq/bgO+MlS3d/w7R3vLHGczrw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MP+jPtbuvBVY+LskH4waMr5k7vg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8xPn2nIuFzAnSpBlpi797vfnq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Gj7CFn+L7ED0dSYjXbC6sPL8zPA=
+		ni2XlmePxJUwoscyDVVOqdeMl9o=
 		</data>
+		<key>Dutch.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DgmDD1FaLYIQDgrF6wOP1LJZLrg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			75HTYaeVbq7J43DLXMsI9ZkO7js=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/MediaPlayer.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tob7TSPALhXX5+HVZ4WG3/r1Z+w=
+			uH9z2qM4f/VaRsqW9LsPF4+2lsg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,94 +864,138 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JiwhqtQZuzRS9IU6Dm5M3e3XLFs=
+			eIXe4YY8fKSmjRPa2O5gm7eJq5Y=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bdCfCtkDpRzeFurqK593r7x9D3c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			INbv5/GKfaHZa6CoY3gAKYxZkzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uK1oFO7pvcX4aiT6PecThp+58OE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WER8kruHmj15bU56ABkbMrc8154=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Headers/AVFoundation+MPNowPlayingInfoLanguageOptionAdditions.h</key>
+		<data>
+		k54aHq9FiuzR/mlvlvy2zLgqc9c=
+		</data>
 		<key>Headers/MPContentItem.h</key>
 		<data>
-		gLQAfQy59gTOk/q9Yi8sOksVveA=
+		hTEQuisVQkplSCpV4uMjTGgUE28=
 		</data>
 		<key>Headers/MPMediaEntity.h</key>
 		<data>
-		hlHtPnNVryiEqyD+elsfDHrZ37I=
+		k/P81Yr6R0q8O+6q549Q0d2llsU=
 		</data>
 		<key>Headers/MPMediaItem.h</key>
 		<data>
-		f62yjyldn2qJsZnOFqadOZvmkxw=
+		WB9sp408PB2A3Z71c1YNx6ZHObY=
 		</data>
 		<key>Headers/MPMediaItemCollection.h</key>
 		<data>
-		Hy3qoB/OUwNsV4GjAk5c9OcYE3o=
+		fkZTNralMrvcaUHiub7xdKxOCpQ=
 		</data>
 		<key>Headers/MPMediaLibrary.h</key>
 		<data>
-		x7avwv/UyXLB2HeCWzsfUirq01o=
+		ACYf2rMwrR8lKPx4Gg80rGBtzP0=
 		</data>
 		<key>Headers/MPMediaPickerController.h</key>
 		<data>
-		H/P2Zo+yfSzNiUv9F80JpnvTjYs=
+		tAP15GuBvfH6kO5lr5pvw01rrks=
 		</data>
 		<key>Headers/MPMediaPlayback.h</key>
 		<data>
-		V/hPFuazTLxdqsGmbAxGQQ5g4W8=
+		J13repy3pxF9OB9kgpCbsLyAA64=
 		</data>
 		<key>Headers/MPMediaPlaylist.h</key>
 		<data>
-		yft2sA6C4UQWj+9cNXrbLzWxECk=
+		gTlJScm3rC+Q/XqqDG4/ORcLdPQ=
 		</data>
 		<key>Headers/MPMediaQuery.h</key>
 		<data>
-		YzksrKaRX1EIizgzxCH7fE2mzGo=
+		uEK7bxUZi2rMuaoHiz3mcpTofpg=
 		</data>
 		<key>Headers/MPMediaQuerySection.h</key>
 		<data>
-		yYaJHcqIsdle13QGL1rn4aFMvGY=
+		Jk2G7wclL93oJlrf8H5P/kkQgk4=
 		</data>
 		<key>Headers/MPMoviePlayerController.h</key>
 		<data>
-		GO9kbBB2kQQtL/Y5fc99uu8Cbh8=
+		TfxzHnYJlz6ywKNPyY7+2rUF38Q=
 		</data>
 		<key>Headers/MPMoviePlayerViewController.h</key>
 		<data>
-		NLetjYB5o6gKxOGwpOiut8cyCyA=
+		soh/nFdHFwjeQfxMY7A7EXL7qn4=
 		</data>
 		<key>Headers/MPMusicPlayerController.h</key>
 		<data>
-		pqjiUhr0YUKKQEex9dYjetcH+Y0=
+		OkG2Lu0cRPuU01OnGR9zTsmuNEc=
 		</data>
 		<key>Headers/MPNowPlayingInfoCenter.h</key>
 		<data>
-		uu+HvO0YbeKvkGqDUQIjJsXEQ/U=
+		HDnNpL40ddFIPRywZgLjT8xHKbc=
+		</data>
+		<key>Headers/MPNowPlayingInfoLanguageOption.h</key>
+		<data>
+		AjKAeBjvqRW8lpEpc7Mgped21j4=
 		</data>
 		<key>Headers/MPPlayableContentDataSource.h</key>
 		<data>
-		cDRuY/389yLlYNPreyB9oAXJulM=
+		nZdc9vr0yKGUDNAQx/ufYk5CyjI=
 		</data>
 		<key>Headers/MPPlayableContentDelegate.h</key>
 		<data>
-		8mLnnfouwF2z0a5+r2CxDIT61q4=
+		YNQJEb0WPpKTW7MOudYl9zq5BVw=
 		</data>
 		<key>Headers/MPPlayableContentManager.h</key>
 		<data>
-		5kmK+jtdeuU716xRNxQZYfNFBQ0=
+		BFS2LvxjpiCGKoKKAloI9+asfuY=
 		</data>
 		<key>Headers/MPPlayableContentManagerContext.h</key>
 		<data>
-		oZ5ARWca3sGAQ2LBzHs8Mo+dYmY=
+		aKd885TqOghulcD5R9rcuAMoyFs=
 		</data>
 		<key>Headers/MPRemoteCommand.h</key>
 		<data>
-		vY6qtKPpyKjT62Fh08Nal0KiGRA=
+		sfLPt/add4eqbjV2b9DiMrqBGvA=
 		</data>
 		<key>Headers/MPRemoteCommandCenter.h</key>
 		<data>
-		jkX5a0uwpYtgHLaLmAn2lV62Yxw=
+		urOh34jpDBPU31wG+8AdUuEClpc=
 		</data>
 		<key>Headers/MPRemoteCommandEvent.h</key>
 		<data>
-		Wf5nEeD7SLtAH/KU7XnwuHQbWNo=
+		yzfL4gGECpjS60EDVFLErPvZCY0=
 		</data>
 		<key>Headers/MPVolumeSettings.h</key>
 		<data>
@@ -249,20 +1003,650 @@
 		</data>
 		<key>Headers/MPVolumeView.h</key>
 		<data>
-		TGy57uC95OC8A7byc2QI/ejq11s=
+		h0bPraKAIcEXgSoOIq8crq8Ke2w=
 		</data>
 		<key>Headers/MediaPlayer.h</key>
 		<data>
-		VqVVzJiB3V49DpwIB40+9RloUVY=
+		J//3qRIDWXdlOwSf+s/Qw0gZmrs=
 		</data>
 		<key>Headers/MediaPlayerDefines.h</key>
 		<data>
 		Qiz6ECb9+pTnSPwHv7NJqxbM0y4=
 		</data>
-		<key>version.plist</key>
+		<key>Italian.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hRovwvbqYqN9eXQaFEzWAz7/2Gw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HMHYE4F3lZLBn2lJTD2kDY75PwM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GjonZd2Kvp0dwS4Qj47tBlJ6+is=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uj6QrcJDngLZH/Nf70/0xMaLS2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Modules/module.modulemap</key>
 		<data>
-		e0vWo5rn2sPNMRhBoROMqwNPvi8=
+		MV3QfNRRqnkIV4P4XW9WAEOegkE=
 		</data>
+		<key>Spanish.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r4f8RLBjVMLrGwap1JyF4QFbXB0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zSClJL5sopC4w1mkmZCvv7CfJqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2lcw+Kn5e3qPATPxfUkak/zBgG4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0vDyehuV2hV2a3cHvN7nPpobDZA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ycj+z6G6eRHNGezLzFCTVaGLmaI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vcc3NREGEWbYNwobGK/WY9Oe1RM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VKOoSYjz2u/use5lBrc2q3y4/Xg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SYw5CtueYOTdScJpzmH/iEv/zZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JrG1vrpCzc0w5+wMbepzNgO1s6M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rTpMpCXA+MJIfeXd0qm+szlGRi4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			06A9FUXWF+Zl1vVOKOFTmv9bemM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FP/yJ0htp9pDtSMDzm+fRBeuaHk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zJ3k3FB4X9bvDgicUB8PfBf9Aiw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eIXe4YY8fKSmjRPa2O5gm7eJq5Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YWMCMsae8A8TeaqjMgfHuNcFCDs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eIXe4YY8fKSmjRPa2O5gm7eJq5Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0xLQ8ndr0Uf14AgOlzITFMqN5wg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zSClJL5sopC4w1mkmZCvv7CfJqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/GHfY+1eJ20bnOxJ5gEhlqV04Tg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sumdgRkfu1F+TDK3xboW1sbSl8Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SNzce3U+yFZtg/dASyD2enN7ChM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B9QGnRZzzEM3MVoL6y1xtwLDCU4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DcQytlVMC8vonVmFLqAiLMu7n4s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ds4/3ye8xBLauP8bWh1EXw4DJIE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BRO8xGpyw/eXoJ1VXcYew/S2pcM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xlv2Af7Jkt9vbjbh8BVWdK1LqQM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7JofWkVCMMFa19PtvAB9Thdft7c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vKY7btGd+Sd0lYZjiGwOjIHafHo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hvqCiuE752s2GpCKftAtx3Heepg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UMFNW7Kv8BjxFle6K86WlT+ueuQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4hDZOjpFxz3gXUzho+rVKQKmmXw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vGTryVrMIh1iXKo9gURHysyY8zM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NkyCRZBmlm+BL2NQR6Vxf3XfVys=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LhZbrx2MyJi8xxAjZZ0o5T6fa6A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VN1B1f7pbfUoGU5jY3tMU5mkS0Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ImBMgmu9FbnIvKFH9LE5QxbflmM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DIlmJxy1SIIKUbfZ12j7iPekGnQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y6PsfRtrAlymYWCmV1ABZ+3Jy9I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jZkYp4J6xXfUrGrtxlEX+tb3kPA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M11SCIbIC/brkNWwj0xuPuRRhb4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Le8PeUFLQonjudpcAi/fcSSGBs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JnBJ0XS8+bQJzpHOSpjJcAQM1vk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pf7Aexx3uu/BKnJulrXwbPvA8CA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P5RTW7RmOQUN7zaA2JIpkJakZP0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a2+4tsm9eWlXODYo4sa7LOLonKQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iUbYMCJGYwVmDmZ5SVJ0GNyoAx4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tGhT9KdgDXitNBTbFzTE7mW+9jg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			USJ4X3ZOrWjB/aWzAnswZnpcMGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KforjMOCM4TGrchZm4dBpLAEkaY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oATlBBzYRmNIlu/xH47y4d9gDVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VU9YMMKWloFBXEzIpJ63ZdQh1+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4QuemlVeuocuVCO5Q4ScZl3O668=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GOkXaPSwxLy0DVdovnw1IFlWGuc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bmHFOgw42YdljiTQHAUxF9721DI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S3/wVZVcr8hUmHAH08L4Tt5TRQQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H6XFNbw2PxlKBJINtT6t9fZKFx0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pFvn4X0dVMe5e1PD0uQdTLYJhxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KgAV0H5RF9lu5bEx4E3txnmeTlc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q1AXTYe8/TpjIdISpMN3M6GzFjA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o2foSrNPIdxlZuPpxv18XTVlWJg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iWdBINhVwMhVy7exuN08lIoTkTI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			okmBAxRltqqBxkmBMD12f7BeaHQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			luzWRD+3jKsdeafVsw1UbwXJ6R0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2vTq/bgO+MlS3d/w7R3vLHGczrw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/MediaPlayer.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MP+jPtbuvBVY+LskH4waMr5k7vg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/MoviePlayerUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8xPn2nIuFzAnSpBlpi797vfnq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

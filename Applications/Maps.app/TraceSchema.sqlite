@@ -36,6 +36,13 @@ original_version        INTEGER,
 initial_course          NUMERIC,
 directions_url          TEXT
 );
+
+CREATE TABLE debug_settings
+(
+eta_refresh_interval            NUMERIC,
+eta_initial_refresh_interval    NUMERIC,
+eta_fake_alert                  INTEGER     -- see MNDefaultFakeIncidentInETAResponseType enum
+);
         
 CREATE TABLE locations
 (
@@ -61,9 +68,6 @@ corrected_latitude  NUMERIC,
 corrected_longitude NUMERIC,
 corrected_course    NUMERIC,
 match_type          NUMERIC,
-motion_type         INTEGER,
-motion_exit_type    INTEGER,
-motion_confidence   INTEGER,
 active_transport_type INTEGER DEFAULT 4, -- default is the unknown transport type
 match_info_quality      INTEGER,
 match_info_latitude     NUMERIC,
@@ -72,29 +76,6 @@ match_info_course       NUMERIC,
 match_info_form_of_way  INTEGER,
 match_info_road_class   INTEGER,
 match_info_shifted      INTEGER
-);
-
-CREATE TABLE clt_locations
-(
-relative_timestamp  NUMERIC NOT NULL,
-absolute_timestamp  NUMERIC NOT NULL,
-latitude            NUMERIC,
-longitude           NUMERIC,
-quality             INTEGER
-);
-
-CREATE TABLE clt_location_nodes
-(
-location_row_id     INTEGER NOT NULL,   -- Corresponds to the implicit rowid in clt_locations, so we know how to associate nodes with locations
-is_node             INTEGER,
-clt_id          INTEGER,
-clt_type        INTEGER,
--- The following are only valid if this is an edge and not a node
-edge_from_node_id   INTEGER,
-edge_from_node_type INTEGER,
-edge_to_node_id     INTEGER,
-edge_to_node_type   INTEGER,
-FOREIGN KEY(location_row_id) REFERENCES clt_location(rowid)
 );
 
 CREATE TABLE directions
@@ -129,7 +110,8 @@ id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
 timestamp_start     NUMERIC NOT NULL,
 timestamp_end       NUMERIC,
 directions_id       INTEGER NOT NULL,
-route_id            BLOB
+route_id            BLOB,
+selected_route_index INTEGER
 );
 
 CREATE TABLE eta_traffic_updates
@@ -155,6 +137,24 @@ CREATE TABLE vehicle_heading_data
 relative_timestamp  NUMERIC NOT NULL,
 absolute_timestamp  NUMERIC NOT NULL,
 heading             NUMERIC NOT NULL
+);
+
+CREATE TABLE motion_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+type                INTEGER,
+exit_type           INTEGER,
+confidence          INTEGER
+);
+
+CREATE TABLE compass_heading_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+true_heading        NUMERIC,
+magnetic_heading    NUMERIC,
+accuracy            NUMERIC
 );
 
 CREATE TABLE route_leg_guidance

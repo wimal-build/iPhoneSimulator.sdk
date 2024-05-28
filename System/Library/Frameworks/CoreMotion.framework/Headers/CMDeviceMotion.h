@@ -11,6 +11,8 @@
 #import <CoreMotion/CMGyro.h>
 #import <CoreMotion/CMMagnetometer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CMMagneticFieldCalibrationAccuracy
  *  
@@ -111,3 +113,5 @@ NS_CLASS_AVAILABLE(NA,4_0)
 @property(readonly, nonatomic) CMCalibratedMagneticField magneticField NS_AVAILABLE(NA,5_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

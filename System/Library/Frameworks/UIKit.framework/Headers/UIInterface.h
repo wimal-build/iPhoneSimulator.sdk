@@ -12,6 +12,8 @@
 
 // for UINavigationBar and UIToolBar
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, UIBarStyle) {
     UIBarStyleDefault          = 0,
     UIBarStyleBlack            = 1,
@@ -47,3 +49,5 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceSizeClass) {
 + (CGFloat)smallSystemFontSize;
 + (CGFloat)systemFontSize;
 @end
+
+NS_ASSUME_NONNULL_END

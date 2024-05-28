@@ -4,45 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Amex_Small_Logo@2x.png</key>
+		<key>AddPass_Icon@2x.png</key>
+		<data>
+		fS0LWHNcUb0q6bA/QpZER3c22m8=
+		</data>
+		<key>AddPass_Icon@3x.png</key>
+		<data>
+		QRVXgM9Uu7jLHNNVAhiezgyJ/JM=
+		</data>
+		<key>AmEx_Small_Logo@2x.png</key>
 		<data>
 		qHgdD7ImeIO9UzstFbyvVnkNuNk=
 		</data>
-		<key>Amex_Small_Logo@3x.png</key>
+		<key>AmEx_Small_Logo@3x.png</key>
 		<data>
 		vGcGqCZzUZKDMZxHiFTOIXzdT0I=
-		</data>
-		<key>ApplePay_Info_1242_NoCard@3x.png</key>
-		<data>
-		G3zo2hNhTLiPutZOEeDymV4NinE=
-		</data>
-		<key>ApplePay_Info_640_NoCard@2x.png</key>
-		<data>
-		GqCLv9GafWCfnXQYziw7ealW7T4=
-		</data>
-		<key>ApplePay_Info_750_NoCard@2x.png</key>
-		<data>
-		pAcMhKgwppDTbqutaNegAUc8Wgs=
-		</data>
-		<key>ApplePay_Info_Watch_1242_NoCard@3x.png</key>
-		<data>
-		KG4sk4uLeuhlnXIcj+P8nAN20nc=
-		</data>
-		<key>ApplePay_Info_Watch_640_NoCard@2x.png</key>
-		<data>
-		pw1fh/aXQe/cVnnmEb+M6FHgNHU=
-		</data>
-		<key>ApplePay_Info_Watch_750_NoCard@2x.png</key>
-		<data>
-		L5kAjb9b7MbJs7BEqH11YuowGvk=
-		</data>
-		<key>ApplePay_Info_iPadForm_img@2x.png</key>
-		<data>
-		R49n1NDKzGna8/upF3vJkKobaNg=
-		</data>
-		<key>ApplePay_Info_iPadFull_img@2x.png</key>
-		<data>
-		8EwCgWhuuQL5WpG5ZC/U7BVvd+g=
 		</data>
 		<key>BoardingPass_BoatGlyph@2x.png</key>
 		<data>
@@ -212,81 +188,33 @@
 		<data>
 		A+mAiEcW1awt5SKKIGKIlsPp8CE=
 		</data>
-		<key>Card_only_1242_Amex@3x.png</key>
+		<key>DefaultCard@2x.png</key>
 		<data>
-		aNWG3pdoSySLAL4nLaeljp1dnU8=
+		ntQcocti2SzN2k41yxXBNrQuB4U=
 		</data>
-		<key>Card_only_1242_MC@3x.png</key>
+		<key>DefaultCard@3x.png</key>
 		<data>
-		Pzea4L7igHlE/ooleJ7jRfjBBgs=
-		</data>
-		<key>Card_only_1242_Visa@3x.png</key>
-		<data>
-		sx9Axfl7en+AUuCHxp/wgxiGnxw=
-		</data>
-		<key>Card_only_640_Amex@2x.png</key>
-		<data>
-		EbSWkIA1iDj/4kQEZIFS1//u/VU=
-		</data>
-		<key>Card_only_640_MC@2x.png</key>
-		<data>
-		im/XwTOnVLoHxxtE9vxBuS3w0c4=
-		</data>
-		<key>Card_only_640_Visa@2x.png</key>
-		<data>
-		bqhQgZUXtmqv1qJCxBATZJIzSeQ=
-		</data>
-		<key>Card_only_750_Amex@2x.png</key>
-		<data>
-		7ZGnqWlcioyR7/71DcA6nFLKcg4=
-		</data>
-		<key>Card_only_750_MC@2x.png</key>
-		<data>
-		mhEMnGaMxE7cRnaXNSdiYmQLdl4=
-		</data>
-		<key>Card_only_750_Visa@2x.png</key>
-		<data>
-		dwzpKobW3H/fFQmIdicxBwoUVFk=
-		</data>
-		<key>Card_only_Watch_1242_Amex@3x.png</key>
-		<data>
-		tNf/z8Qyicai8tUS9u+JdQOHtgI=
-		</data>
-		<key>Card_only_Watch_1242_MC@3x.png</key>
-		<data>
-		ON3mML2LbpfNtI8miNsYpL/FNKU=
-		</data>
-		<key>Card_only_Watch_1242_Visa@3x.png</key>
-		<data>
-		Y8jvlQ939f6XuVgtGKXN8kh4+hc=
-		</data>
-		<key>Card_only_Watch_640_Amex@2x.png</key>
-		<data>
-		MmWB/VU7O3Og0Dc5ryLTod41oOM=
-		</data>
-		<key>Card_only_Watch_640_MC@2x.png</key>
-		<data>
-		+y48Gko7NhBk4vpiKkAlgCYR6WI=
-		</data>
-		<key>Card_only_Watch_640_Visa@2x.png</key>
-		<data>
-		uSPkySxpDDAOf60KqCVgptcO80o=
-		</data>
-		<key>Card_only_Watch_750_Amex@2x.png</key>
-		<data>
-		bUiUyJbvZXuWiqm6G/xfrRMdh48=
-		</data>
-		<key>Card_only_Watch_750_MC@2x.png</key>
-		<data>
-		DaTW7/nHwTNrhbCBswdPHO18tdY=
-		</data>
-		<key>Card_only_Watch_750_Visa@2x.png</key>
-		<data>
-		VTJtSV96UAxueT1fOO+RzCOL0t8=
+		hQQB/WBJDpK8AT9g7FOwkuhWbNg=
 		</data>
 		<key>DiffCircle.caar</key>
 		<data>
-		XeaTHe5kC6hC7ATbRDUxZX71KkA=
+		EspYXfQ4nL3GAYZ0GxdLsJFBexs=
+		</data>
+		<key>Discover_Small_Logo@2x.png</key>
+		<data>
+		yLbI9WDylIIeLtnew6Ih5yhbRfc=
+		</data>
+		<key>Discover_Small_Logo@3x.png</key>
+		<data>
+		CLAA92VQfUftmtiZ2Fq3nhvLlUg=
+		</data>
+		<key>Discover_Small_Logo_Dark@2x.png</key>
+		<data>
+		gjdfAUZtvaOCyGiDpn8OVNT5L0E=
+		</data>
+		<key>Discover_Small_Logo_Dark@3x.png</key>
+		<data>
+		FI065mwe9xH6HdfCR3spDxH0HWk=
 		</data>
 		<key>FillButton@2x.png</key>
 		<data>
@@ -298,15 +226,15 @@
 		</data>
 		<key>GenericIcon.png</key>
 		<data>
-		7Jryw65fYMPHbfeg/NHMXlpdqHM=
+		TsQzEfY8YYPGepR4wjcANdMNHqM=
 		</data>
 		<key>GenericIcon@2x.png</key>
 		<data>
-		QFK1/7SPvJooKoaBMv8ddfEzESM=
+		h90Oj49KJZDFnNPnW9q6aXM+zjo=
 		</data>
 		<key>GenericIcon@3x.png</key>
 		<data>
-		sixrCQygH1revnDJUg8WduJ6JcY=
+		Et4hl7UdRySqlzvljfCCSWQ3XHw=
 		</data>
 		<key>Generic_ThumbnailFrame@2x.png</key>
 		<data>
@@ -316,9 +244,25 @@
 		<data>
 		6/PclpKgEltKwlnx83kAROC/sXU=
 		</data>
+		<key>Headers/PKAddPassButton.h</key>
+		<data>
+		P7qBFaLDU8ti2/WX5aiytUh6zv4=
+		</data>
 		<key>Headers/PKAddPassesViewController.h</key>
 		<data>
-		/sCDXFwHBwt7vgdXKHc6LdzuBI8=
+		nV6uJ9HYkKej1rbiHsfXMUdzLts=
+		</data>
+		<key>Headers/PKAddPaymentPassViewController.h</key>
+		<data>
+		e3okju/4Y8Bx/0BdgknUPfMrqJM=
+		</data>
+		<key>Headers/PKConstants.h</key>
+		<data>
+		MIDcDrS0jKusFZnom14XRig+On4=
+		</data>
+		<key>Headers/PKContact.h</key>
+		<data>
+		7wdpQzhV0mvfHIq159iTIOEmmm4=
 		</data>
 		<key>Headers/PKError.h</key>
 		<data>
@@ -330,39 +274,43 @@
 		</data>
 		<key>Headers/PKPass.h</key>
 		<data>
-		e9k3mqcWqJDYpqHwvtNguB8svuQ=
+		lhLgBhGsed0cqHDd1e6ecGNqBqc=
 		</data>
 		<key>Headers/PKPassLibrary.h</key>
 		<data>
-		qkPGoBzBsDV+JGXT3Hw1OaojkGw=
+		r/HXTXuiB3quKs1T7FGVCNWjRzQ=
 		</data>
 		<key>Headers/PKPayment.h</key>
 		<data>
-		LLD6qCZNGoqn1Qoio6wQD7+BofA=
+		IbsT6v2X7YFKs9hoc30LugiV8tk=
 		</data>
 		<key>Headers/PKPaymentAuthorizationViewController.h</key>
 		<data>
-		8wE0o5E2KDJF292Jkpl17UJpotk=
+		rTzqsZGSxsxjRgzH6iabX8ASIG4=
 		</data>
 		<key>Headers/PKPaymentButton.h</key>
 		<data>
-		kpJ4zLgzp203SzGh4Sa1XK/XmN4=
+		DaGlEPAnGRcAVS1BYFsVcJCc+PM=
+		</data>
+		<key>Headers/PKPaymentMethod.h</key>
+		<data>
+		CWqgqg+Hs0CA1J5Lv2sjVNR1u3I=
 		</data>
 		<key>Headers/PKPaymentPass.h</key>
 		<data>
-		y0qziK7tS/ENGDsHV5ZzVshtx3s=
+		YlJeBBc+hCtJsqKRd6XdAJNgvBw=
 		</data>
 		<key>Headers/PKPaymentRequest.h</key>
 		<data>
-		v/xRA6UQTSsPV/tnvlgnLUecd10=
+		Q9wfTKgyWuy+XFG4URkCzeAwdeM=
 		</data>
 		<key>Headers/PKPaymentToken.h</key>
 		<data>
-		5whCulEA7R7l79QWFAc1VRKKPRQ=
+		7/Nqk28tPyh4zwSbTui0lS0bcjQ=
 		</data>
 		<key>Headers/PassKit.h</key>
 		<data>
-		AUiPy8+g923OnyAeA/l21pRdzkw=
+		a+uNdp+p94YYBBN5aeUo9wwDJMk=
 		</data>
 		<key>Hero@2x.png</key>
 		<data>
@@ -371,10 +319,142 @@
 		<key>Hero@2x~ipad.png</key>
 		<data>
 		QpbqksWeUvXAuMXJVPoivZcGTWQ=
+		</data>
+		<key>HeroCard_132_AmEx@2x.png</key>
+		<data>
+		0Zu50h4+0D3+u3iZdunZWg3OMdg=
+		</data>
+		<key>HeroCard_132_Discover@2x.png</key>
+		<data>
+		d6TRT+vdPKYH9MIHbuDPguIG48Q=
+		</data>
+		<key>HeroCard_132_MasterCard@2x.png</key>
+		<data>
+		i70hMtFfap4JbrIRB6BkyyUZxmg=
+		</data>
+		<key>HeroCard_132_Visa@2x.png</key>
+		<data>
+		ror2/pMMgf1CHYetYIJjsEZNjn0=
+		</data>
+		<key>HeroCard_162_AmEx@2x.png</key>
+		<data>
+		dXMzstXYSfPmFdfJQBZq4+Ie4cA=
+		</data>
+		<key>HeroCard_162_Discover@2x.png</key>
+		<data>
+		Y7PobbPmmOgQRBARYGg8Svzj0Q4=
+		</data>
+		<key>HeroCard_162_MasterCard@2x.png</key>
+		<data>
+		QgTlxVYxqS+jyw0eMzdDxciS8Wo=
+		</data>
+		<key>HeroCard_162_Visa@2x.png</key>
+		<data>
+		Mb5fqL6W4ITBWCMNgh6Nq1NKGO4=
+		</data>
+		<key>HeroCard_230_AmEx@3x.png</key>
+		<data>
+		TryNuDMcNFBkAfnOKrHNthYqdeQ=
+		</data>
+		<key>HeroCard_230_Discover@3x.png</key>
+		<data>
+		nbkau7OLBmFWXLdqJ+YPKnGFPj4=
+		</data>
+		<key>HeroCard_230_MasterCard@3x.png</key>
+		<data>
+		ibBgeFO28PyeOMrRQKcECvlnlZM=
+		</data>
+		<key>HeroCard_230_Visa@3x.png</key>
+		<data>
+		qDVaiPu8iKSuHjMvGepUz7yFngs=
+		</data>
+		<key>HeroCard_289_AmEx@3x.png</key>
+		<data>
+		PS5FG0PS2RzZoKCPOoCn+Iv5DmA=
+		</data>
+		<key>HeroCard_289_Discover@3x.png</key>
+		<data>
+		4izlOS4Oxa7BrLrR7mQkvpo9rlI=
+		</data>
+		<key>HeroCard_289_MasterCard@3x.png</key>
+		<data>
+		Cch5tB5Os4lxz8kOYS0qQFmQb9I=
+		</data>
+		<key>HeroCard_289_Visa@3x.png</key>
+		<data>
+		ScRLyg1XL79+62beatKch+UlKNg=
+		</data>
+		<key>HeroCard_92_AmEx@2x.png</key>
+		<data>
+		wFfllEr2xX+z5fv9uIrYnrLarNQ=
+		</data>
+		<key>HeroCard_92_Discover@2x.png</key>
+		<data>
+		X8KFJhmIhl3uwwZNe3XD3FJA/hI=
+		</data>
+		<key>HeroCard_92_MasterCard@2x.png</key>
+		<data>
+		9DCB6bQOESJZ4a/LCEFpkTxqKjU=
+		</data>
+		<key>HeroCard_92_Visa@2x.png</key>
+		<data>
+		azZEjUG3oZAMkPNKZvvhw+gc9II=
+		</data>
+		<key>HeroPad_Form@2x.png</key>
+		<data>
+		VzQHmK2ZNVUFzGUenjaDPLaBz3s=
+		</data>
+		<key>HeroPad_Full@2x.png</key>
+		<data>
+		kWv0GuMZA5OXlRqjVBbSlBhB5FY=
+		</data>
+		<key>HeroPhone_1242@3x.png</key>
+		<data>
+		1sFGVhI68sggXnK5JKxyshMgVMc=
+		</data>
+		<key>HeroPhone_640@2x.png</key>
+		<data>
+		0vR/iTA7vUA+F3mYWqY8eMdjq+Y=
+		</data>
+		<key>HeroPhone_750@2x.png</key>
+		<data>
+		R4LV284i0bg5cDm+V5tT0ycj654=
+		</data>
+		<key>HeroWatch-compact@2x.png</key>
+		<data>
+		srML8EI1lCyH4GkTus2BQ/559o4=
+		</data>
+		<key>HeroWatch-compact@3x.png</key>
+		<data>
+		e/LZay/yvRp6WjIUx2zLqL7/y18=
+		</data>
+		<key>HeroWatch-regular@2x.png</key>
+		<data>
+		N0iKOI53vXl2setik4G2cfpJ9as=
+		</data>
+		<key>HeroWatch-regular@3x.png</key>
+		<data>
+		M5FF50kPPyb30aGJMQ1YUApsZJ8=
+		</data>
+		<key>HeroWatchBackground-compact@2x.png</key>
+		<data>
+		loYNELRH0uOh+c4LFXYG822w0dI=
+		</data>
+		<key>HeroWatchBackground-compact@3x.png</key>
+		<data>
+		RMiKBceP4K4CIeA+GLzTdSrgJe4=
+		</data>
+		<key>HeroWatchBackground-regular@2x.png</key>
+		<data>
+		+j2n1CGOIrWW+JD1JJd2kqHcAbA=
+		</data>
+		<key>HeroWatchBackground-regular@3x.png</key>
+		<data>
+		yJXtNBPfd+ZrkPAx7Qkhc3vp2q8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d9liUR4+Kp8c7WGq++ZqNVcMVpo=
+		0fLvJYUkUzPWHfj39s1HrmE+3l0=
 		</data>
 		<key>LargeCheck@2x.png</key>
 		<data>
@@ -384,6 +464,14 @@
 		<data>
 		zvEcxIemDVLnlx2bYwXDbxMqetg=
 		</data>
+		<key>LastTransaction@2x.png</key>
+		<data>
+		KCl08qtoE/CX+BwSHmKeeqCEdZ8=
+		</data>
+		<key>LastTransaction@3x.png</key>
+		<data>
+		t8ifrE3GqdaJRAuFY3sKuxzMZg8=
+		</data>
 		<key>Mastercard_Small_Logo@2x.png</key>
 		<data>
 		lk3wwbO9iQ48K0Z/wYa/DeSEwvU=
@@ -391,6 +479,14 @@
 		<key>Mastercard_Small_Logo@3x.png</key>
 		<data>
 		+KsHzG904FzP5tnQYlJQ+NiA2Xg=
+		</data>
+		<key>MesaGlyph@2x.png</key>
+		<data>
+		9HLueTfHoSNVbMmZ8QRzqjWD/EM=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		fK/uhM2WCMxPn31Eza29NhXq4BI=
 		</data>
 		<key>PayButtonLogoBlack.pdf</key>
 		<data>
@@ -432,6 +528,14 @@
 		<data>
 		I2Vq3efM3I8D3C0M3PCh6tZNteE=
 		</data>
+		<key>Payment_DiscoverLogo@2x.png</key>
+		<data>
+		kK8okK8pQuodNN24JSObYC10vNw=
+		</data>
+		<key>Payment_DiscoverLogo@3x.png</key>
+		<data>
+		uLLIhYWx/fQnuMt+UgL/MXBwkgI=
+		</data>
 		<key>Payment_Failure@2x.png</key>
 		<data>
 		XtaqX7BxLy4likgbggKxM/YOA/Q=
@@ -447,14 +551,6 @@
 		<key>Payment_FailureTall@3x.png</key>
 		<data>
 		mKkLJMdBgDhNqqHs7kZCffHAEU8=
-		</data>
-		<key>Payment_Hand@2x.png</key>
-		<data>
-		anajGMtrJgiXmDEo1CkeQJAsfa4=
-		</data>
-		<key>Payment_Hand@3x.png</key>
-		<data>
-		k/kijuHjzfPzaGrRdifOobyIUsg=
 		</data>
 		<key>Payment_Logo@2x.png</key>
 		<data>
@@ -480,14 +576,6 @@
 		<data>
 		54pQlzSb5uYdyqTvzXvheIM6GWc=
 		</data>
-		<key>Payment_SetupIcon@2x.png</key>
-		<data>
-		BYJKmX18IUheE/eRgcseJJtfsPA=
-		</data>
-		<key>Payment_SetupIcon@3x.png</key>
-		<data>
-		PpXlZx79B770LuUnLT/aX3BlPVU=
-		</data>
 		<key>Payment_SetupLogo@2x.png</key>
 		<data>
 		Se9JUhqzbtWGYbYlMdeHjwMZwdk=
@@ -510,59 +598,67 @@
 		</data>
 		<key>Payment_WelcomeCardHeader-passes-small@2x.png</key>
 		<data>
-		ARaTPQqlJ+khIy5GqdrhTEOfTEs=
+		V4m46GKGN7tgbq3LSkAXrCmCtCI=
 		</data>
 		<key>Payment_WelcomeCardHeader-passes-small@3x.png</key>
 		<data>
-		JCd/UXL4RgfBVXI8XOihGklCXQw=
+		RL9fSy+O0OhdmT4VDXHLM7h39WY=
 		</data>
 		<key>Payment_WelcomeCardHeader-passes@2x.png</key>
 		<data>
-		SRFOkKF2Dp+h94LX9g9oqx71Z7k=
+		28gVAnvvNklA6/FzYZZy4D5/Brk=
 		</data>
 		<key>Payment_WelcomeCardHeader-passes@3x.png</key>
 		<data>
-		4g48+4VFEGmMgr36Z3/BJK+SXro=
+		JElvKx5cuoz/SKMH06nk5VLf2Rg=
 		</data>
 		<key>Payment_WelcomeCardHeader-payments@2x.png</key>
 		<data>
-		oLRgZ2aLHty93uks8K83AYUy/Vo=
+		LGzL32sf+BbIdU6rEShkWl/qCfQ=
 		</data>
 		<key>Payment_WelcomeCardHeader-payments@3x.png</key>
 		<data>
-		5Vk6l0g4LNfteFIvohKSk806R0c=
+		7AnGx/KTTVpAT0eR2Py0R3o3wGI=
 		</data>
 		<key>Payment_glyph_check.caar</key>
 		<data>
-		LEFLmsTFtJtvsq0yB+YZF2FNnOo=
+		zN0DYXTrRX+e8U8pnNM9SDjaokw=
 		</data>
 		<key>Payment_glyph_fingerprint.caar</key>
 		<data>
-		ZrQlZd+SuuuvJabTwF+LCMVGG4o=
+		CYfAf3vth4vD5Ux2Lmiuut4uqeI=
 		</data>
 		<key>Payment_glyph_phone.caar</key>
 		<data>
-		SviLWxgjnE48OuH8dvdAvt8tKm4=
+		EaQ5OPFNn4r/JISYhIWhrK9qWkU=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/ApplePayTapToRadar</key>
+		<key>PlugIns/ApplePayDiagnostics.appex/ApplePayDiagnostics</key>
 		<data>
-		obOmPcx4D3uBiXoRy3M1N9BVtoI=
+		nHzdE7zyPTB4DadF0B0QETrCEhY=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/ApplePayTapToRadarEntitlements.plist</key>
+		<key>PlugIns/ApplePayDiagnostics.appex/Info.plist</key>
 		<data>
-		0VKYzej3r/Bx4217En0GeQVdiVQ=
+		QJJVWCBbHcQKYZWz0sOX+QPtuHE=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/Info.plist</key>
+		<key>PlugIns/ApplePayDiagnostics.appex/_CodeSignature/CodeResources</key>
 		<data>
-		/i1Vbt5w4FYRnuQPrk6gDLTnDVM=
+		WyFGNdNYqxQ32Brz0xj2AXIc1LM=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/_CodeSignature/CodeResources</key>
+		<key>ReaderGlyph@2x.png</key>
 		<data>
-		eKd0rity47NMAUmcrxRLs2wyYXY=
+		j4oauLPqsCV0udHhnHSCkyy7o/I=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/version.plist</key>
+		<key>RelevantPass@2x.png</key>
 		<data>
-		60mFxErsfrxVZ0rP1ghhDIidwxY=
+		YHI32x7wnJXw82uktx/RzAuTQvU=
+		</data>
+		<key>RelevantPass@3x.png</key>
+		<data>
+		RE9rU6UWCPd1Bm8oQ/4ssO5Us0w=
+		</data>
+		<key>SimulatorPaymentPass.json</key>
+		<data>
+		dI7fFZI2qmoQez4RavpGpLaKgRA=
 		</data>
 		<key>StarEmpty@2x.png</key>
 		<data>
@@ -612,6 +708,26 @@
 		<data>
 		f3MbnOvcYiyV9nM8LNdJVLYU3Mc=
 		</data>
+		<key>Visa_Small_Logo_Dark@2x.png</key>
+		<data>
+		0NsMr43Eg1X0S9Df3cKVG2DNQ4E=
+		</data>
+		<key>Visa_Small_Logo_Dark@3x.png</key>
+		<data>
+		n8VpsO6k9lt5P2ctab66/OGg+6A=
+		</data>
+		<key>WatchOffer_1242@3x.png</key>
+		<data>
+		oLqTLvkrQKZpNhBe0h44E5A4eR4=
+		</data>
+		<key>WatchOffer_640@2x.png</key>
+		<data>
+		zxx/wpVwmDXaHqh43X34PvhTmr8=
+		</data>
+		<key>WatchOffer_750@2x.png</key>
+		<data>
+		yjmongMZRtoTV8ZfAPEvVqGEHZA=
+		</data>
 		<key>WelcomeHeaderApplePayLogo@2x.png</key>
 		<data>
 		t9mDG7c7fT2lzV3NFg4DNsyQ/LY=
@@ -620,6 +736,177 @@
 		<data>
 		ty3FNZLWBHUZDeZy3tuHC43CQmI=
 		</data>
+		<key>ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oWVqtrohrwm/L5T7IZYVcCXTsSo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0WbdoKvR+qXEk9RmPm8cOqikhoo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ibvSFcDJL3a9DLOwh9GKWLnfh3I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iSay3j6iLaUKvTQtHFr/BWKTgNQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EsUaxz4c/+OcAgwdCTx5Nn2iyqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KRJANutdpZ20babnfJYFDrI7VIk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yFDnwWka3Ernyzz24dth2s360Hc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6dRE2kzrXwncuW+l9fEwutkmFs4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BKC4YZaxdolDxx0fvNYJKgtE93I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rFInLOe/G7sG9RleezE2iTv8B0A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7jJatKtNbOo5WSf2WMuyXJFc4xw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ffftLEunjh6nAxa3IBMgTy+Xp3Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6X1H8lQ+dBTZyxgsR+dNF7LZ5kA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -633,7 +920,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8PaWrBkGDjv8XG1lG4FnWIYkIuQ=
+			DaS6H+3SA2CP975cuDQRzbbXMEw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -642,61 +929,978 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DGiwf/72fPRJCZzsCMyKbpkjU/w=
+			+Mi55EQ9AlYEzFzj3j17RPa5nZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cR/oYqG4T4fn7NLeTfA1uyuna1s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fRoXMmYgK2jiUzkc4X2blt8I3Ks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			04DXbbnyyOyNk6q8OR5Q9uyuppc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sV5fE7gciujwmPNjO7tg/h+3MXY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aa7U17CBibkfmd+HQr5mcKXBpDk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6X9T8L7GjvRPpZS28RvhQ19dH9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FVUCRDJz7GjOfPdSVCTWgUi9Me0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kfgGI5a5ZBLvXTbJ3U+IshpEH/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rRWDrdzU5jvtuVffCJ2HUd4ilZw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Payment_Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyuCwWxcRVUIlalNB+c1yJKwxIw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yx+T6WbMiRAtF01zk65q/jWEK2M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7fHRmaYAurQk1BDXDwMgduR2cAA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6DdfTT42x/Snv+uee60//10EoTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yc8cLToglt/Oy3zn9rqw2e+FAWI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N17OIrQJcYg13Rw/M9o5xmvF/mA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zc5iRY8W8126naTM6epsi8oKgPM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O87M4x5N5WMJXp7IyPJqS+Squ4Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gTz9+aB/oD9J/5F9oGaGec3Glog=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rlNbB2txWC96GzuDpOemjONSHBc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fkDg4lfdb3xEQd7w+7SQh6mKUrI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A3NkEB0B7Pb5tjkugR1p5ZVyVEI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			293lNXBuuShQZfzdaPjzAhz3zL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SbEDJbc1sA5GTM9VDpqFsK/1AJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H8hDFCDxxSupkPQCv0rmJRc25sY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IFrj9cmsArowU6uHd87TZpBluK4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ds2Blh7TnVsdENXIhKpKD77WtwY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h356JlotQqv/94+yhkhI8mTATh8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WrLvSlC9tCS2fKhyjOB66/eOd30=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rob9YxtAO/G/p1xDVDdSvEHExvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FjJ/jWxzBrcnkant41xX1fUXX3g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			56pmcJI7j2mKJACY+TIrOiCeleA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fkpYWq2S20og4jVFFFS6noRqD7A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UI+lu6UJcbHPhz0W7JCjGmvh2Ks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hMb8e7LLpR0XGnAturxhhJ0aHfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bojfOBcLHOhBmddoyBO4HSbVwrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vs7J3dBy25ybV4QNT3I7gpdVVOQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0nvz6M+5Uj0bIdUPtIiodu49jhQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZWmMegPyzAfmtYkc43AZY3P6J4Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qqPRTWX5lz6jf+2mJsm8qw5h3j8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			McLB1E2Di05RwJgh4CsBk4m1/AY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y9/tf26bvQcQ8Hrt43lp8+u8eiY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			paSDDmzQv9I7iLlJFxdzukwnbs0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PBaFblPA2EbXdp7AYOg4/7LSJ6c=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>passd</key>
 		<data>
-		hX6HFYuADaIrQEXcwtUnz9B77W0=
+		VBke1tPgHWScogGSNcImqKAgQ2E=
 		</data>
-		<key>version.plist</key>
-		<data>
-		60mFxErsfrxVZ0rP1ghhDIidwxY=
-		</data>
+		<key>pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dPyblRYhDcKxOaWhexA7WcSzd/I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QBCFq1t1bOBwAf9+OWd2f7ZK6T8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ApG3zDCIYvY9leHBHn0tdDN9ARg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qYr3Eep6iyPVkXjiL7UwpRlb3Ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HvdMPT/08RDILiopxI/KdYUvp2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			92RlwcKJMUu0UoOn6klkGpsQhXE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p7bHW49B9U2doi0z6ZpSywMWJSg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xn0SlEDci2HtVsko5MdaCPJgXgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wo8W8zCWGrdcFZlOh69YP3ahAmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8CLEXqerTD4zWv+/BKyXqND7Fng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4ZGFeaQdc7TsUWhJlrPET2Pig0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kO+S1+i4nKOV8U015glrRX9YvSQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vd0iPciyvTB6+BZx3lL8A/NGdi4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1lNEFyf83Yvqip6CzGvdPSczS7g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q8I9uANziY3Ft2fxpmAp9weewH0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YiPK8pK1vdNLT/qo1/SkaT3DTQE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nDBxQcVtEAuYtDLb+h5zOzenWVU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PmLjaNvJQD0OeSGBVQfeOoVB7VU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P5uoW7qULz+P7+BkuF8swIOw+RA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6Gs5tLxJmh05EsSxttN6qjT2wyw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BuumtlAtDoup32htV3owJGxoq+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l6UF+/iSRyh5eAz+1Y9+nk08MIU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0oYeIYUYzmXrrbdykVUaOcy4mVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nXHN1iXNgsJ+g5F/y4Diiz9FsZQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZT1UbsZ17MQsGA7fMRr8TTwWfz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FtsZ8ZD7+xCOXdjoGl3NtdcqYCA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vgXc2Nn0KuHsvAKrSxEe7zs+eO0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rdc0v3MuXZjhU0eBDoHNyCTXGiQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			91bBiKrErgyxG6bficMmlrNQchU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9JMdg5RE6npWsI4tWWVTfQnZ2oE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Amex_Small_Logo@2x.png</key>
+		<key>AddPass_Icon@2x.png</key>
+		<data>
+		fS0LWHNcUb0q6bA/QpZER3c22m8=
+		</data>
+		<key>AddPass_Icon@3x.png</key>
+		<data>
+		QRVXgM9Uu7jLHNNVAhiezgyJ/JM=
+		</data>
+		<key>AmEx_Small_Logo@2x.png</key>
 		<data>
 		qHgdD7ImeIO9UzstFbyvVnkNuNk=
 		</data>
-		<key>Amex_Small_Logo@3x.png</key>
+		<key>AmEx_Small_Logo@3x.png</key>
 		<data>
 		vGcGqCZzUZKDMZxHiFTOIXzdT0I=
-		</data>
-		<key>ApplePay_Info_1242_NoCard@3x.png</key>
-		<data>
-		G3zo2hNhTLiPutZOEeDymV4NinE=
-		</data>
-		<key>ApplePay_Info_640_NoCard@2x.png</key>
-		<data>
-		GqCLv9GafWCfnXQYziw7ealW7T4=
-		</data>
-		<key>ApplePay_Info_750_NoCard@2x.png</key>
-		<data>
-		pAcMhKgwppDTbqutaNegAUc8Wgs=
-		</data>
-		<key>ApplePay_Info_Watch_1242_NoCard@3x.png</key>
-		<data>
-		KG4sk4uLeuhlnXIcj+P8nAN20nc=
-		</data>
-		<key>ApplePay_Info_Watch_640_NoCard@2x.png</key>
-		<data>
-		pw1fh/aXQe/cVnnmEb+M6FHgNHU=
-		</data>
-		<key>ApplePay_Info_Watch_750_NoCard@2x.png</key>
-		<data>
-		L5kAjb9b7MbJs7BEqH11YuowGvk=
-		</data>
-		<key>ApplePay_Info_iPadForm_img@2x.png</key>
-		<data>
-		R49n1NDKzGna8/upF3vJkKobaNg=
-		</data>
-		<key>ApplePay_Info_iPadFull_img@2x.png</key>
-		<data>
-		8EwCgWhuuQL5WpG5ZC/U7BVvd+g=
 		</data>
 		<key>BoardingPass_BoatGlyph@2x.png</key>
 		<data>
@@ -866,81 +2070,33 @@
 		<data>
 		A+mAiEcW1awt5SKKIGKIlsPp8CE=
 		</data>
-		<key>Card_only_1242_Amex@3x.png</key>
+		<key>DefaultCard@2x.png</key>
 		<data>
-		aNWG3pdoSySLAL4nLaeljp1dnU8=
+		ntQcocti2SzN2k41yxXBNrQuB4U=
 		</data>
-		<key>Card_only_1242_MC@3x.png</key>
+		<key>DefaultCard@3x.png</key>
 		<data>
-		Pzea4L7igHlE/ooleJ7jRfjBBgs=
-		</data>
-		<key>Card_only_1242_Visa@3x.png</key>
-		<data>
-		sx9Axfl7en+AUuCHxp/wgxiGnxw=
-		</data>
-		<key>Card_only_640_Amex@2x.png</key>
-		<data>
-		EbSWkIA1iDj/4kQEZIFS1//u/VU=
-		</data>
-		<key>Card_only_640_MC@2x.png</key>
-		<data>
-		im/XwTOnVLoHxxtE9vxBuS3w0c4=
-		</data>
-		<key>Card_only_640_Visa@2x.png</key>
-		<data>
-		bqhQgZUXtmqv1qJCxBATZJIzSeQ=
-		</data>
-		<key>Card_only_750_Amex@2x.png</key>
-		<data>
-		7ZGnqWlcioyR7/71DcA6nFLKcg4=
-		</data>
-		<key>Card_only_750_MC@2x.png</key>
-		<data>
-		mhEMnGaMxE7cRnaXNSdiYmQLdl4=
-		</data>
-		<key>Card_only_750_Visa@2x.png</key>
-		<data>
-		dwzpKobW3H/fFQmIdicxBwoUVFk=
-		</data>
-		<key>Card_only_Watch_1242_Amex@3x.png</key>
-		<data>
-		tNf/z8Qyicai8tUS9u+JdQOHtgI=
-		</data>
-		<key>Card_only_Watch_1242_MC@3x.png</key>
-		<data>
-		ON3mML2LbpfNtI8miNsYpL/FNKU=
-		</data>
-		<key>Card_only_Watch_1242_Visa@3x.png</key>
-		<data>
-		Y8jvlQ939f6XuVgtGKXN8kh4+hc=
-		</data>
-		<key>Card_only_Watch_640_Amex@2x.png</key>
-		<data>
-		MmWB/VU7O3Og0Dc5ryLTod41oOM=
-		</data>
-		<key>Card_only_Watch_640_MC@2x.png</key>
-		<data>
-		+y48Gko7NhBk4vpiKkAlgCYR6WI=
-		</data>
-		<key>Card_only_Watch_640_Visa@2x.png</key>
-		<data>
-		uSPkySxpDDAOf60KqCVgptcO80o=
-		</data>
-		<key>Card_only_Watch_750_Amex@2x.png</key>
-		<data>
-		bUiUyJbvZXuWiqm6G/xfrRMdh48=
-		</data>
-		<key>Card_only_Watch_750_MC@2x.png</key>
-		<data>
-		DaTW7/nHwTNrhbCBswdPHO18tdY=
-		</data>
-		<key>Card_only_Watch_750_Visa@2x.png</key>
-		<data>
-		VTJtSV96UAxueT1fOO+RzCOL0t8=
+		hQQB/WBJDpK8AT9g7FOwkuhWbNg=
 		</data>
 		<key>DiffCircle.caar</key>
 		<data>
-		XeaTHe5kC6hC7ATbRDUxZX71KkA=
+		EspYXfQ4nL3GAYZ0GxdLsJFBexs=
+		</data>
+		<key>Discover_Small_Logo@2x.png</key>
+		<data>
+		yLbI9WDylIIeLtnew6Ih5yhbRfc=
+		</data>
+		<key>Discover_Small_Logo@3x.png</key>
+		<data>
+		CLAA92VQfUftmtiZ2Fq3nhvLlUg=
+		</data>
+		<key>Discover_Small_Logo_Dark@2x.png</key>
+		<data>
+		gjdfAUZtvaOCyGiDpn8OVNT5L0E=
+		</data>
+		<key>Discover_Small_Logo_Dark@3x.png</key>
+		<data>
+		FI065mwe9xH6HdfCR3spDxH0HWk=
 		</data>
 		<key>FillButton@2x.png</key>
 		<data>
@@ -952,15 +2108,15 @@
 		</data>
 		<key>GenericIcon.png</key>
 		<data>
-		7Jryw65fYMPHbfeg/NHMXlpdqHM=
+		TsQzEfY8YYPGepR4wjcANdMNHqM=
 		</data>
 		<key>GenericIcon@2x.png</key>
 		<data>
-		QFK1/7SPvJooKoaBMv8ddfEzESM=
+		h90Oj49KJZDFnNPnW9q6aXM+zjo=
 		</data>
 		<key>GenericIcon@3x.png</key>
 		<data>
-		sixrCQygH1revnDJUg8WduJ6JcY=
+		Et4hl7UdRySqlzvljfCCSWQ3XHw=
 		</data>
 		<key>Generic_ThumbnailFrame@2x.png</key>
 		<data>
@@ -970,9 +2126,25 @@
 		<data>
 		6/PclpKgEltKwlnx83kAROC/sXU=
 		</data>
+		<key>Headers/PKAddPassButton.h</key>
+		<data>
+		P7qBFaLDU8ti2/WX5aiytUh6zv4=
+		</data>
 		<key>Headers/PKAddPassesViewController.h</key>
 		<data>
-		/sCDXFwHBwt7vgdXKHc6LdzuBI8=
+		nV6uJ9HYkKej1rbiHsfXMUdzLts=
+		</data>
+		<key>Headers/PKAddPaymentPassViewController.h</key>
+		<data>
+		e3okju/4Y8Bx/0BdgknUPfMrqJM=
+		</data>
+		<key>Headers/PKConstants.h</key>
+		<data>
+		MIDcDrS0jKusFZnom14XRig+On4=
+		</data>
+		<key>Headers/PKContact.h</key>
+		<data>
+		7wdpQzhV0mvfHIq159iTIOEmmm4=
 		</data>
 		<key>Headers/PKError.h</key>
 		<data>
@@ -984,39 +2156,43 @@
 		</data>
 		<key>Headers/PKPass.h</key>
 		<data>
-		e9k3mqcWqJDYpqHwvtNguB8svuQ=
+		lhLgBhGsed0cqHDd1e6ecGNqBqc=
 		</data>
 		<key>Headers/PKPassLibrary.h</key>
 		<data>
-		qkPGoBzBsDV+JGXT3Hw1OaojkGw=
+		r/HXTXuiB3quKs1T7FGVCNWjRzQ=
 		</data>
 		<key>Headers/PKPayment.h</key>
 		<data>
-		LLD6qCZNGoqn1Qoio6wQD7+BofA=
+		IbsT6v2X7YFKs9hoc30LugiV8tk=
 		</data>
 		<key>Headers/PKPaymentAuthorizationViewController.h</key>
 		<data>
-		8wE0o5E2KDJF292Jkpl17UJpotk=
+		rTzqsZGSxsxjRgzH6iabX8ASIG4=
 		</data>
 		<key>Headers/PKPaymentButton.h</key>
 		<data>
-		kpJ4zLgzp203SzGh4Sa1XK/XmN4=
+		DaGlEPAnGRcAVS1BYFsVcJCc+PM=
+		</data>
+		<key>Headers/PKPaymentMethod.h</key>
+		<data>
+		CWqgqg+Hs0CA1J5Lv2sjVNR1u3I=
 		</data>
 		<key>Headers/PKPaymentPass.h</key>
 		<data>
-		y0qziK7tS/ENGDsHV5ZzVshtx3s=
+		YlJeBBc+hCtJsqKRd6XdAJNgvBw=
 		</data>
 		<key>Headers/PKPaymentRequest.h</key>
 		<data>
-		v/xRA6UQTSsPV/tnvlgnLUecd10=
+		Q9wfTKgyWuy+XFG4URkCzeAwdeM=
 		</data>
 		<key>Headers/PKPaymentToken.h</key>
 		<data>
-		5whCulEA7R7l79QWFAc1VRKKPRQ=
+		7/Nqk28tPyh4zwSbTui0lS0bcjQ=
 		</data>
 		<key>Headers/PassKit.h</key>
 		<data>
-		AUiPy8+g923OnyAeA/l21pRdzkw=
+		a+uNdp+p94YYBBN5aeUo9wwDJMk=
 		</data>
 		<key>Hero@2x.png</key>
 		<data>
@@ -1026,6 +2202,138 @@
 		<data>
 		QpbqksWeUvXAuMXJVPoivZcGTWQ=
 		</data>
+		<key>HeroCard_132_AmEx@2x.png</key>
+		<data>
+		0Zu50h4+0D3+u3iZdunZWg3OMdg=
+		</data>
+		<key>HeroCard_132_Discover@2x.png</key>
+		<data>
+		d6TRT+vdPKYH9MIHbuDPguIG48Q=
+		</data>
+		<key>HeroCard_132_MasterCard@2x.png</key>
+		<data>
+		i70hMtFfap4JbrIRB6BkyyUZxmg=
+		</data>
+		<key>HeroCard_132_Visa@2x.png</key>
+		<data>
+		ror2/pMMgf1CHYetYIJjsEZNjn0=
+		</data>
+		<key>HeroCard_162_AmEx@2x.png</key>
+		<data>
+		dXMzstXYSfPmFdfJQBZq4+Ie4cA=
+		</data>
+		<key>HeroCard_162_Discover@2x.png</key>
+		<data>
+		Y7PobbPmmOgQRBARYGg8Svzj0Q4=
+		</data>
+		<key>HeroCard_162_MasterCard@2x.png</key>
+		<data>
+		QgTlxVYxqS+jyw0eMzdDxciS8Wo=
+		</data>
+		<key>HeroCard_162_Visa@2x.png</key>
+		<data>
+		Mb5fqL6W4ITBWCMNgh6Nq1NKGO4=
+		</data>
+		<key>HeroCard_230_AmEx@3x.png</key>
+		<data>
+		TryNuDMcNFBkAfnOKrHNthYqdeQ=
+		</data>
+		<key>HeroCard_230_Discover@3x.png</key>
+		<data>
+		nbkau7OLBmFWXLdqJ+YPKnGFPj4=
+		</data>
+		<key>HeroCard_230_MasterCard@3x.png</key>
+		<data>
+		ibBgeFO28PyeOMrRQKcECvlnlZM=
+		</data>
+		<key>HeroCard_230_Visa@3x.png</key>
+		<data>
+		qDVaiPu8iKSuHjMvGepUz7yFngs=
+		</data>
+		<key>HeroCard_289_AmEx@3x.png</key>
+		<data>
+		PS5FG0PS2RzZoKCPOoCn+Iv5DmA=
+		</data>
+		<key>HeroCard_289_Discover@3x.png</key>
+		<data>
+		4izlOS4Oxa7BrLrR7mQkvpo9rlI=
+		</data>
+		<key>HeroCard_289_MasterCard@3x.png</key>
+		<data>
+		Cch5tB5Os4lxz8kOYS0qQFmQb9I=
+		</data>
+		<key>HeroCard_289_Visa@3x.png</key>
+		<data>
+		ScRLyg1XL79+62beatKch+UlKNg=
+		</data>
+		<key>HeroCard_92_AmEx@2x.png</key>
+		<data>
+		wFfllEr2xX+z5fv9uIrYnrLarNQ=
+		</data>
+		<key>HeroCard_92_Discover@2x.png</key>
+		<data>
+		X8KFJhmIhl3uwwZNe3XD3FJA/hI=
+		</data>
+		<key>HeroCard_92_MasterCard@2x.png</key>
+		<data>
+		9DCB6bQOESJZ4a/LCEFpkTxqKjU=
+		</data>
+		<key>HeroCard_92_Visa@2x.png</key>
+		<data>
+		azZEjUG3oZAMkPNKZvvhw+gc9II=
+		</data>
+		<key>HeroPad_Form@2x.png</key>
+		<data>
+		VzQHmK2ZNVUFzGUenjaDPLaBz3s=
+		</data>
+		<key>HeroPad_Full@2x.png</key>
+		<data>
+		kWv0GuMZA5OXlRqjVBbSlBhB5FY=
+		</data>
+		<key>HeroPhone_1242@3x.png</key>
+		<data>
+		1sFGVhI68sggXnK5JKxyshMgVMc=
+		</data>
+		<key>HeroPhone_640@2x.png</key>
+		<data>
+		0vR/iTA7vUA+F3mYWqY8eMdjq+Y=
+		</data>
+		<key>HeroPhone_750@2x.png</key>
+		<data>
+		R4LV284i0bg5cDm+V5tT0ycj654=
+		</data>
+		<key>HeroWatch-compact@2x.png</key>
+		<data>
+		srML8EI1lCyH4GkTus2BQ/559o4=
+		</data>
+		<key>HeroWatch-compact@3x.png</key>
+		<data>
+		e/LZay/yvRp6WjIUx2zLqL7/y18=
+		</data>
+		<key>HeroWatch-regular@2x.png</key>
+		<data>
+		N0iKOI53vXl2setik4G2cfpJ9as=
+		</data>
+		<key>HeroWatch-regular@3x.png</key>
+		<data>
+		M5FF50kPPyb30aGJMQ1YUApsZJ8=
+		</data>
+		<key>HeroWatchBackground-compact@2x.png</key>
+		<data>
+		loYNELRH0uOh+c4LFXYG822w0dI=
+		</data>
+		<key>HeroWatchBackground-compact@3x.png</key>
+		<data>
+		RMiKBceP4K4CIeA+GLzTdSrgJe4=
+		</data>
+		<key>HeroWatchBackground-regular@2x.png</key>
+		<data>
+		+j2n1CGOIrWW+JD1JJd2kqHcAbA=
+		</data>
+		<key>HeroWatchBackground-regular@3x.png</key>
+		<data>
+		yJXtNBPfd+ZrkPAx7Qkhc3vp2q8=
+		</data>
 		<key>LargeCheck@2x.png</key>
 		<data>
 		dOy4LsvRbkpHrNYBYl6nUCuelW4=
@@ -1034,6 +2342,14 @@
 		<data>
 		zvEcxIemDVLnlx2bYwXDbxMqetg=
 		</data>
+		<key>LastTransaction@2x.png</key>
+		<data>
+		KCl08qtoE/CX+BwSHmKeeqCEdZ8=
+		</data>
+		<key>LastTransaction@3x.png</key>
+		<data>
+		t8ifrE3GqdaJRAuFY3sKuxzMZg8=
+		</data>
 		<key>Mastercard_Small_Logo@2x.png</key>
 		<data>
 		lk3wwbO9iQ48K0Z/wYa/DeSEwvU=
@@ -1041,6 +2357,14 @@
 		<key>Mastercard_Small_Logo@3x.png</key>
 		<data>
 		+KsHzG904FzP5tnQYlJQ+NiA2Xg=
+		</data>
+		<key>MesaGlyph@2x.png</key>
+		<data>
+		9HLueTfHoSNVbMmZ8QRzqjWD/EM=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		fK/uhM2WCMxPn31Eza29NhXq4BI=
 		</data>
 		<key>PayButtonLogoBlack.pdf</key>
 		<data>
@@ -1082,6 +2406,14 @@
 		<data>
 		I2Vq3efM3I8D3C0M3PCh6tZNteE=
 		</data>
+		<key>Payment_DiscoverLogo@2x.png</key>
+		<data>
+		kK8okK8pQuodNN24JSObYC10vNw=
+		</data>
+		<key>Payment_DiscoverLogo@3x.png</key>
+		<data>
+		uLLIhYWx/fQnuMt+UgL/MXBwkgI=
+		</data>
 		<key>Payment_Failure@2x.png</key>
 		<data>
 		XtaqX7BxLy4likgbggKxM/YOA/Q=
@@ -1097,14 +2429,6 @@
 		<key>Payment_FailureTall@3x.png</key>
 		<data>
 		mKkLJMdBgDhNqqHs7kZCffHAEU8=
-		</data>
-		<key>Payment_Hand@2x.png</key>
-		<data>
-		anajGMtrJgiXmDEo1CkeQJAsfa4=
-		</data>
-		<key>Payment_Hand@3x.png</key>
-		<data>
-		k/kijuHjzfPzaGrRdifOobyIUsg=
 		</data>
 		<key>Payment_Logo@2x.png</key>
 		<data>
@@ -1130,14 +2454,6 @@
 		<data>
 		54pQlzSb5uYdyqTvzXvheIM6GWc=
 		</data>
-		<key>Payment_SetupIcon@2x.png</key>
-		<data>
-		BYJKmX18IUheE/eRgcseJJtfsPA=
-		</data>
-		<key>Payment_SetupIcon@3x.png</key>
-		<data>
-		PpXlZx79B770LuUnLT/aX3BlPVU=
-		</data>
 		<key>Payment_SetupLogo@2x.png</key>
 		<data>
 		Se9JUhqzbtWGYbYlMdeHjwMZwdk=
@@ -1160,59 +2476,67 @@
 		</data>
 		<key>Payment_WelcomeCardHeader-passes-small@2x.png</key>
 		<data>
-		ARaTPQqlJ+khIy5GqdrhTEOfTEs=
+		V4m46GKGN7tgbq3LSkAXrCmCtCI=
 		</data>
 		<key>Payment_WelcomeCardHeader-passes-small@3x.png</key>
 		<data>
-		JCd/UXL4RgfBVXI8XOihGklCXQw=
+		RL9fSy+O0OhdmT4VDXHLM7h39WY=
 		</data>
 		<key>Payment_WelcomeCardHeader-passes@2x.png</key>
 		<data>
-		SRFOkKF2Dp+h94LX9g9oqx71Z7k=
+		28gVAnvvNklA6/FzYZZy4D5/Brk=
 		</data>
 		<key>Payment_WelcomeCardHeader-passes@3x.png</key>
 		<data>
-		4g48+4VFEGmMgr36Z3/BJK+SXro=
+		JElvKx5cuoz/SKMH06nk5VLf2Rg=
 		</data>
 		<key>Payment_WelcomeCardHeader-payments@2x.png</key>
 		<data>
-		oLRgZ2aLHty93uks8K83AYUy/Vo=
+		LGzL32sf+BbIdU6rEShkWl/qCfQ=
 		</data>
 		<key>Payment_WelcomeCardHeader-payments@3x.png</key>
 		<data>
-		5Vk6l0g4LNfteFIvohKSk806R0c=
+		7AnGx/KTTVpAT0eR2Py0R3o3wGI=
 		</data>
 		<key>Payment_glyph_check.caar</key>
 		<data>
-		LEFLmsTFtJtvsq0yB+YZF2FNnOo=
+		zN0DYXTrRX+e8U8pnNM9SDjaokw=
 		</data>
 		<key>Payment_glyph_fingerprint.caar</key>
 		<data>
-		ZrQlZd+SuuuvJabTwF+LCMVGG4o=
+		CYfAf3vth4vD5Ux2Lmiuut4uqeI=
 		</data>
 		<key>Payment_glyph_phone.caar</key>
 		<data>
-		SviLWxgjnE48OuH8dvdAvt8tKm4=
+		EaQ5OPFNn4r/JISYhIWhrK9qWkU=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/ApplePayTapToRadar</key>
+		<key>PlugIns/ApplePayDiagnostics.appex/ApplePayDiagnostics</key>
 		<data>
-		obOmPcx4D3uBiXoRy3M1N9BVtoI=
+		nHzdE7zyPTB4DadF0B0QETrCEhY=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/ApplePayTapToRadarEntitlements.plist</key>
+		<key>PlugIns/ApplePayDiagnostics.appex/Info.plist</key>
 		<data>
-		0VKYzej3r/Bx4217En0GeQVdiVQ=
+		QJJVWCBbHcQKYZWz0sOX+QPtuHE=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/Info.plist</key>
+		<key>PlugIns/ApplePayDiagnostics.appex/_CodeSignature/CodeResources</key>
 		<data>
-		/i1Vbt5w4FYRnuQPrk6gDLTnDVM=
+		WyFGNdNYqxQ32Brz0xj2AXIc1LM=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/_CodeSignature/CodeResources</key>
+		<key>ReaderGlyph@2x.png</key>
 		<data>
-		eKd0rity47NMAUmcrxRLs2wyYXY=
+		j4oauLPqsCV0udHhnHSCkyy7o/I=
 		</data>
-		<key>PlugIns/ApplePayTapToRadar.appex/version.plist</key>
+		<key>RelevantPass@2x.png</key>
 		<data>
-		60mFxErsfrxVZ0rP1ghhDIidwxY=
+		YHI32x7wnJXw82uktx/RzAuTQvU=
+		</data>
+		<key>RelevantPass@3x.png</key>
+		<data>
+		RE9rU6UWCPd1Bm8oQ/4ssO5Us0w=
+		</data>
+		<key>SimulatorPaymentPass.json</key>
+		<data>
+		dI7fFZI2qmoQez4RavpGpLaKgRA=
 		</data>
 		<key>StarEmpty@2x.png</key>
 		<data>
@@ -1262,6 +2586,26 @@
 		<data>
 		f3MbnOvcYiyV9nM8LNdJVLYU3Mc=
 		</data>
+		<key>Visa_Small_Logo_Dark@2x.png</key>
+		<data>
+		0NsMr43Eg1X0S9Df3cKVG2DNQ4E=
+		</data>
+		<key>Visa_Small_Logo_Dark@3x.png</key>
+		<data>
+		n8VpsO6k9lt5P2ctab66/OGg+6A=
+		</data>
+		<key>WatchOffer_1242@3x.png</key>
+		<data>
+		oLqTLvkrQKZpNhBe0h44E5A4eR4=
+		</data>
+		<key>WatchOffer_640@2x.png</key>
+		<data>
+		zxx/wpVwmDXaHqh43X34PvhTmr8=
+		</data>
+		<key>WatchOffer_750@2x.png</key>
+		<data>
+		yjmongMZRtoTV8ZfAPEvVqGEHZA=
+		</data>
 		<key>WelcomeHeaderApplePayLogo@2x.png</key>
 		<data>
 		t9mDG7c7fT2lzV3NFg4DNsyQ/LY=
@@ -1270,6 +2614,177 @@
 		<data>
 		ty3FNZLWBHUZDeZy3tuHC43CQmI=
 		</data>
+		<key>ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oWVqtrohrwm/L5T7IZYVcCXTsSo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0WbdoKvR+qXEk9RmPm8cOqikhoo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ibvSFcDJL3a9DLOwh9GKWLnfh3I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iSay3j6iLaUKvTQtHFr/BWKTgNQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EsUaxz4c/+OcAgwdCTx5Nn2iyqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KRJANutdpZ20babnfJYFDrI7VIk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yFDnwWka3Ernyzz24dth2s360Hc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6dRE2kzrXwncuW+l9fEwutkmFs4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BKC4YZaxdolDxx0fvNYJKgtE93I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rFInLOe/G7sG9RleezE2iTv8B0A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7jJatKtNbOo5WSf2WMuyXJFc4xw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ffftLEunjh6nAxa3IBMgTy+Xp3Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6X1H8lQ+dBTZyxgsR+dNF7LZ5kA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1283,7 +2798,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8PaWrBkGDjv8XG1lG4FnWIYkIuQ=
+			DaS6H+3SA2CP975cuDQRzbbXMEw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1292,19 +2807,960 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DGiwf/72fPRJCZzsCMyKbpkjU/w=
+			+Mi55EQ9AlYEzFzj3j17RPa5nZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cR/oYqG4T4fn7NLeTfA1uyuna1s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fRoXMmYgK2jiUzkc4X2blt8I3Ks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			04DXbbnyyOyNk6q8OR5Q9uyuppc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sV5fE7gciujwmPNjO7tg/h+3MXY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aa7U17CBibkfmd+HQr5mcKXBpDk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6X9T8L7GjvRPpZS28RvhQ19dH9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FVUCRDJz7GjOfPdSVCTWgUi9Me0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kfgGI5a5ZBLvXTbJ3U+IshpEH/4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rRWDrdzU5jvtuVffCJ2HUd4ilZw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Payment_Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyuCwWxcRVUIlalNB+c1yJKwxIw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yx+T6WbMiRAtF01zk65q/jWEK2M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7fHRmaYAurQk1BDXDwMgduR2cAA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6DdfTT42x/Snv+uee60//10EoTo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yc8cLToglt/Oy3zn9rqw2e+FAWI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N17OIrQJcYg13Rw/M9o5xmvF/mA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zc5iRY8W8126naTM6epsi8oKgPM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O87M4x5N5WMJXp7IyPJqS+Squ4Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gTz9+aB/oD9J/5F9oGaGec3Glog=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rlNbB2txWC96GzuDpOemjONSHBc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fkDg4lfdb3xEQd7w+7SQh6mKUrI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A3NkEB0B7Pb5tjkugR1p5ZVyVEI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			293lNXBuuShQZfzdaPjzAhz3zL0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SbEDJbc1sA5GTM9VDpqFsK/1AJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H8hDFCDxxSupkPQCv0rmJRc25sY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IFrj9cmsArowU6uHd87TZpBluK4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ds2Blh7TnVsdENXIhKpKD77WtwY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h356JlotQqv/94+yhkhI8mTATh8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WrLvSlC9tCS2fKhyjOB66/eOd30=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rob9YxtAO/G/p1xDVDdSvEHExvE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FjJ/jWxzBrcnkant41xX1fUXX3g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			56pmcJI7j2mKJACY+TIrOiCeleA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fkpYWq2S20og4jVFFFS6noRqD7A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UI+lu6UJcbHPhz0W7JCjGmvh2Ks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hMb8e7LLpR0XGnAturxhhJ0aHfk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bojfOBcLHOhBmddoyBO4HSbVwrU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vs7J3dBy25ybV4QNT3I7gpdVVOQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0nvz6M+5Uj0bIdUPtIiodu49jhQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZWmMegPyzAfmtYkc43AZY3P6J4Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qqPRTWX5lz6jf+2mJsm8qw5h3j8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			McLB1E2Di05RwJgh4CsBk4m1/AY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y9/tf26bvQcQ8Hrt43lp8+u8eiY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			paSDDmzQv9I7iLlJFxdzukwnbs0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PBaFblPA2EbXdp7AYOg4/7LSJ6c=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>passd</key>
 		<data>
-		hX6HFYuADaIrQEXcwtUnz9B77W0=
+		VBke1tPgHWScogGSNcImqKAgQ2E=
 		</data>
-		<key>version.plist</key>
-		<data>
-		60mFxErsfrxVZ0rP1ghhDIidwxY=
-		</data>
+		<key>pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dPyblRYhDcKxOaWhexA7WcSzd/I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QBCFq1t1bOBwAf9+OWd2f7ZK6T8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ApG3zDCIYvY9leHBHn0tdDN9ARg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qYr3Eep6iyPVkXjiL7UwpRlb3Ao=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HvdMPT/08RDILiopxI/KdYUvp2Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			92RlwcKJMUu0UoOn6klkGpsQhXE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p7bHW49B9U2doi0z6ZpSywMWJSg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xn0SlEDci2HtVsko5MdaCPJgXgw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wo8W8zCWGrdcFZlOh69YP3ahAmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8CLEXqerTD4zWv+/BKyXqND7Fng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4ZGFeaQdc7TsUWhJlrPET2Pig0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kO+S1+i4nKOV8U015glrRX9YvSQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vd0iPciyvTB6+BZx3lL8A/NGdi4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1lNEFyf83Yvqip6CzGvdPSczS7g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q8I9uANziY3Ft2fxpmAp9weewH0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YiPK8pK1vdNLT/qo1/SkaT3DTQE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nDBxQcVtEAuYtDLb+h5zOzenWVU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PmLjaNvJQD0OeSGBVQfeOoVB7VU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P5uoW7qULz+P7+BkuF8swIOw+RA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6Gs5tLxJmh05EsSxttN6qjT2wyw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Localizable.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BuumtlAtDoup32htV3owJGxoq+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l6UF+/iSRyh5eAz+1Y9+nk08MIU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0oYeIYUYzmXrrbdykVUaOcy4mVI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nXHN1iXNgsJ+g5F/y4Diiz9FsZQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZT1UbsZ17MQsGA7fMRr8TTwWfz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FtsZ8ZD7+xCOXdjoGl3NtdcqYCA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vgXc2Nn0KuHsvAKrSxEe7zs+eO0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rdc0v3MuXZjhU0eBDoHNyCTXGiQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			91bBiKrErgyxG6bficMmlrNQchU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Payment_Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9JMdg5RE6npWsI4tWWVTfQnZ2oE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

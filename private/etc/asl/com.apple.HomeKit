@@ -1,4 +1,4 @@
 # We claim all messages at Error or below.  This means ASL only sees Error messages.
 ? [= Facility com.apple.HomeKit] [> Level error] claim
 
-? [= Facility com.apple.HomeKit] file $ENV(IPHONE_SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/HomeKit.log rotate=local file_max=1M all_max=5M compress uid=501 gid=501 format=$((Time)(local.3))\ $(Sender)[$(PID)]\ :\ $(Message)
+? [= Facility com.apple.HomeKit] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/HomeKit.log rotate=local file_max=1M all_max=5M compress uid=501 gid=501 format=$((Time)(local.3))\ $(Sender)[$(PID)]\ :\ $(Message)

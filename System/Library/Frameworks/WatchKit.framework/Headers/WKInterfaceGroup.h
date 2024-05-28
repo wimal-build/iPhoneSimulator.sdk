@@ -2,27 +2,31 @@
 //  WKInterfaceGroup.h
 //  WatchKit
 //
-//  Copyright (c) 2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <WatchKit/WKDefines.h>
 #import <WatchKit/WKInterfaceObject.h>
+#import <WatchKit/WKInterfaceImage.h>
+#import <UIKit/UIGeometry.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class UIColor, UIImage;
+@protocol WKImageAnimatable;
 
 WK_CLASS_AVAILABLE_IOS(8_2)
-@interface WKInterfaceGroup : WKInterfaceObject
+@interface WKInterfaceGroup : WKInterfaceObject <WKImageAnimatable>
 
 - (void)setCornerRadius:(CGFloat)cornerRadius;
+- (void)setContentInset:(UIEdgeInsets)contentInset WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
-- (void)setBackgroundColor:(UIColor *)color;
-- (void)setBackgroundImage:(UIImage *)image;
-- (void)setBackgroundImageData:(NSData *)imageData;
-- (void)setBackgroundImageNamed:(NSString *)imageName;
-
-- (void)startAnimating;	      // play all images repeatedly using duration specified in interface description
-- (void)startAnimatingWithImagesInRange:(NSRange)imageRange duration:(NSTimeInterval)duration repeatCount:(NSInteger)repeatCount; // play subset of images for a certain number of times. 0 means repeat until stop
-- (void)stopAnimating;
+- (void)setBackgroundColor:(nullable UIColor *)color;
+- (void)setBackgroundImage:(nullable UIImage *)image;
+- (void)setBackgroundImageData:(nullable NSData *)imageData;
+- (void)setBackgroundImageNamed:(nullable NSString *)imageName;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMLogItem.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CMRotationRate
  *  
@@ -39,10 +41,10 @@ typedef struct {
 } CMRotationRate;
 
 /*
- *  CMAccelerometerData
- *  
+ *  CMGyroData
+ *
  *  Discussion:
- *    Contains a single accelerometer measurement.
+ *    Contains a single gyro measurement.
  *
  */
 NS_CLASS_AVAILABLE(NA,4_0)
@@ -62,3 +64,5 @@ NS_CLASS_AVAILABLE(NA,4_0)
 @property(readonly, nonatomic) CMRotationRate rotationRate;
 
 @end
+
+NS_ASSUME_NONNULL_END

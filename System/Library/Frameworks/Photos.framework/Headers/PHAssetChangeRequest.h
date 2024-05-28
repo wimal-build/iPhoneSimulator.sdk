@@ -12,22 +12,25 @@
 
 @class UIImage;
 @class CLLocation;
+@class PHAssetResource;
 @class PHObjectPlaceholder;
 @class PHContentEditingInputRequestOptions;
 
+NS_ASSUME_NONNULL_BEGIN
 
 // PHAssetChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
 NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetChangeRequest : NSObject
 
 #pragma mark - Creating Assets
 
+// Basic asset creation. For finer-grained control, see PHAssetCreationRequest.
 + (instancetype)creationRequestForAssetFromImage:(UIImage *)image;
-+ (instancetype)creationRequestForAssetFromImageAtFileURL:(NSURL *)fileURL;
-+ (instancetype)creationRequestForAssetFromVideoAtFileURL:(NSURL *)fileURL;
++ (nullable instancetype)creationRequestForAssetFromImageAtFileURL:(NSURL *)fileURL;
++ (nullable instancetype)creationRequestForAssetFromVideoAtFileURL:(NSURL *)fileURL;
 
 // This can be used to fetch the newly created asset after the change block has completed by using -localIdentifier
 // It can also be added directly to collections within the current change block
-@property (nonatomic, strong, readonly) PHObjectPlaceholder *placeholderForCreatedAsset;
+@property (nonatomic, strong, readonly, nullable) PHObjectPlaceholder *placeholderForCreatedAsset;
 
 #pragma mark - Deleting Assets
 
@@ -38,8 +41,8 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetChangeRequest : NSObject
 // if the asset does not allow the type of change requested, these methods will raise an exception, call canPerformEditOperation: on the asset to determine if the type of edit operation is allowed.
 + (instancetype)changeRequestForAsset:(PHAsset *)asset;
 
-@property (nonatomic, strong, readwrite) NSDate *creationDate;
-@property (nonatomic, strong, readwrite) CLLocation *location;
+@property (nonatomic, strong, readwrite, nullable) NSDate *creationDate;
+@property (nonatomic, strong, readwrite, nullable) CLLocation *location;
 @property (nonatomic, assign, readwrite, getter=isFavorite) BOOL favorite;
 
 // a hidden asset will be excluded from moment collections, but may still be included in other smart or regular album collections
@@ -47,7 +50,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAssetChangeRequest : NSObject
 
 #pragma mark - Editing Asset Contents
 
-@property (nonatomic, strong, readwrite) PHContentEditingOutput *contentEditingOutput;
+@property (nonatomic, strong, readwrite, nullable) PHContentEditingOutput *contentEditingOutput;
 
 - (void)revertAssetContentToOriginal;
 
@@ -63,7 +66,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHContentEditingInputRequestOptions : NSO
 
 // Used if data is not available locally and needs to be retrieved from iCloud.
 @property (nonatomic, assign, getter = isNetworkAccessAllowed) BOOL networkAccessAllowed;
-@property (nonatomic, copy) void (^progressHandler)(double progress, BOOL *stop);
+@property (nonatomic, copy, nullable) void (^progressHandler)(double progress, BOOL *stop);
 
 @end
 
@@ -71,7 +74,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHContentEditingInputRequestOptions : NSO
 @interface PHAsset (PHContentEditingInput)
 
 // Completion and progress handlers are called on an arbitrary serial queue.
-- (PHContentEditingInputRequestID)requestContentEditingInputWithOptions:(PHContentEditingInputRequestOptions *)options completionHandler:(void (^)(PHContentEditingInput *contentEditingInput, NSDictionary *info))completionHandler NS_AVAILABLE_IOS(8_0);
+- (PHContentEditingInputRequestID)requestContentEditingInputWithOptions:(nullable PHContentEditingInputRequestOptions *)options completionHandler:(void (^)(PHContentEditingInput *__nullable contentEditingInput, NSDictionary *info))completionHandler NS_AVAILABLE_IOS(8_0);
 - (void)cancelContentEditingInputRequest:(PHContentEditingInputRequestID)requestID NS_AVAILABLE_IOS(8_0);
 
 @end
@@ -88,3 +91,5 @@ extern NSString *const PHContentEditingInputErrorKey NS_AVAILABLE_IOS(8_0);
 - (instancetype)initWithPlaceholderForCreatedAsset:(PHObjectPlaceholder *)placeholderForCreatedAsset;
 
 @end
+
+NS_ASSUME_NONNULL_END

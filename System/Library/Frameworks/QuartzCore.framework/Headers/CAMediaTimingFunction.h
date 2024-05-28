@@ -8,6 +8,8 @@
 
 @class NSArray, NSString;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /* Represents one segment of a function describing a timing curve. The
  * function maps an input time normalized to the range [0,1] to an
  * output time also in the range [0,1]. E.g. these functions are used
@@ -54,3 +56,5 @@ CA_EXTERN NSString * const kCAMediaTimingFunctionEaseInEaseOut
     __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 CA_EXTERN NSString * const kCAMediaTimingFunctionDefault
     __OSX_AVAILABLE_STARTING (__MAC_10_6, __IPHONE_3_0);
+
+NS_ASSUME_NONNULL_END

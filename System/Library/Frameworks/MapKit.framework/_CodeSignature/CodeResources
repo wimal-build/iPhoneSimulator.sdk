@@ -6,8 +6,17 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ACYP3trJQ//1ars1fz3QonY0eTo=
+		FlKEomIinateZkJSSfyXpS3/49Y=
 		</data>
+		<key>Dutch.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a1NlJ6hZc9BclGNzL+XGB/fbJ0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -21,7 +30,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PF5BhpLRns4iBmsUheHLDZ+eqEI=
+			AznyQzXIJBB8azxCUp6+dSZcPfQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mces8JqOWM024//NEmrqC70EfRM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -39,7 +57,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uOktIthWqlb12U2vgazRWz72EOA=
+			1bfKd4BsuOfWOpwsLdoLLuw3S+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lgqvljHAefvAby93FU9Lq64jXZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -57,7 +84,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6MzXTSrcdt71kLEZHdQ9fLKxS1c=
+			TB6ojuunvfP9DuxEv8FvaJoGDY0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cSbWtaWr6ZdUk/xayEzC5SM4A5s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -75,50 +111,50 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GB2xu3JyVzJT1jN1sIg7GbxJjxY=
+			ToUoA/1L5rKkdGto7tdJjl8naqQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Headers/MKAnnotation.h</key>
 		<data>
-		LzQwGdSBzA2SEkBjwdN3bLz1+FA=
+		8ZCLnItatOWwJMMcpykP761+BJs=
 		</data>
 		<key>Headers/MKAnnotationView.h</key>
 		<data>
-		9+x0ks2kThQFChMo6nQHEHDxXOo=
+		6LMoU9YCDL1Iqgo8vi6C2p9iKxs=
 		</data>
 		<key>Headers/MKCircle.h</key>
 		<data>
-		onnbh8hgeJ9PU13UPNLM97mx1CY=
+		S92G+JBUmlEgzaxbEVe3Y8G0EDE=
 		</data>
 		<key>Headers/MKCircleRenderer.h</key>
 		<data>
-		HirasmzqkJ5VRj48M8zpg4IPMck=
+		dvPctqfKR+VjPCeN/F86/JrM+3U=
 		</data>
 		<key>Headers/MKCircleView.h</key>
 		<data>
-		VfHkvhAjhMPWFA6zPQPgjBXjVkE=
+		ZYII1R/onsQX398j8W1XR3qMbb0=
 		</data>
 		<key>Headers/MKDirections.h</key>
 		<data>
-		hN+VxylgFE5q0uSQ6UxXDzMwDcc=
+		6F0dDc9NdJZJQt1rO0MNANCDQtk=
 		</data>
 		<key>Headers/MKDirectionsRequest.h</key>
 		<data>
-		/1GRleQbicscFoJtRm+vO3dcoJ8=
+		tDKOqvDvl9a4WsO0qfbobjtAT1E=
 		</data>
 		<key>Headers/MKDirectionsResponse.h</key>
 		<data>
-		CoDfdLZqDC91VebcCbL59GItqhI=
+		xWNWWLSWOprOPEHi/1dhHtVtWnA=
 		</data>
 		<key>Headers/MKDirectionsTypes.h</key>
 		<data>
-		p8m1YiuGZApSsQzWGxTvXaZg+Vk=
+		crt4LDunysaUy3N4svGBm7QspZQ=
 		</data>
 		<key>Headers/MKDistanceFormatter.h</key>
 		<data>
-		XCLBU0BOfiol2Rn7COnzSrtOLJw=
+		gnSkcky/EvYNCO/WNn+vPTVbKSk=
 		</data>
 		<key>Headers/MKFoundation.h</key>
 		<data>
@@ -126,144 +162,153 @@
 		</data>
 		<key>Headers/MKGeodesicPolyline.h</key>
 		<data>
-		uFNUzmQB+GXLyTGccqWy3tB+v6M=
+		JcPoEwLrdHt4Sm8DuaTtO7nsj54=
 		</data>
 		<key>Headers/MKGeometry.h</key>
 		<data>
-		lZ8CfTiwVqvQdZltdxVzASBHNTY=
+		sSiEa6BrhbkH23oWUfvhCDsfTvg=
 		</data>
 		<key>Headers/MKLocalSearch.h</key>
 		<data>
-		Uq8QH6utojIkSzSUJ8Qpf7S/OQA=
+		6GdqYCuaiSpYojZaESQ4n/0BKdU=
 		</data>
 		<key>Headers/MKLocalSearchRequest.h</key>
 		<data>
-		VBalyJlkYojmg0OyS32Tf2gv0ig=
+		zQKPIrr251RVLwC+g0wktz7wEdg=
 		</data>
 		<key>Headers/MKLocalSearchResponse.h</key>
 		<data>
-		3DHYYSjXeqigD+TtM4em1vvgNms=
+		+HxuvWrSD6WO0c3gXN5Ie7qY8WE=
 		</data>
 		<key>Headers/MKMapCamera.h</key>
 		<data>
-		ufJ7RZN8/N8nrpNSlcpdmdoELBQ=
+		mw+G7CN8AdJgepU3kkJvnl3BlT4=
 		</data>
 		<key>Headers/MKMapItem.h</key>
 		<data>
-		DQW81Ehsx15fhZhwxMVxs7Epm9s=
+		MWlq7/XcAIg4jW+VSIAqPEMHOKU=
 		</data>
 		<key>Headers/MKMapSnapshot.h</key>
 		<data>
-		7fDGjfWUV1nZnU3y3tgvW2jFO+E=
+		ZMyqrUvF5u873nHup1vwVbTBB9s=
 		</data>
 		<key>Headers/MKMapSnapshotOptions.h</key>
 		<data>
-		NHCYCXzVzGClYc9L9FlWFjnVzno=
+		nAI0dJ0eVqVTthklnuxgyOlqNyo=
 		</data>
 		<key>Headers/MKMapSnapshotter.h</key>
 		<data>
-		7eFBrAm8sKDH4cHqKe0dSUqZ6GY=
+		8WjcUhNQhDFqBCJWFt0QwNQSFRg=
 		</data>
 		<key>Headers/MKMapView.h</key>
 		<data>
-		A5NqjfyIdwRkGy8q7XgpO16WuBE=
+		gMRf5M/RQEQ5o7ZLzjGwwhQVBw0=
 		</data>
 		<key>Headers/MKMultiPoint.h</key>
 		<data>
-		BRpxGU72U8G3PAJ8LkUAOYFHe6M=
+		GGA4XyoAMIM5Eru3xyTeuNO/O0U=
 		</data>
 		<key>Headers/MKOverlay.h</key>
 		<data>
-		OXLnVBYePHvvSKv7EoW5M8UtNxw=
+		rLEXO4tntybUqkcHlrh+M4EvsJw=
 		</data>
 		<key>Headers/MKOverlayPathRenderer.h</key>
 		<data>
-		sAIoPwaJ1Y0aBu4MkN0pavjspfs=
+		oLobW7OK+pJd6ILbqtTLf5wVFkg=
 		</data>
 		<key>Headers/MKOverlayPathView.h</key>
 		<data>
-		iFfZio37KhgXjIOf8EDe8OVQmC8=
+		HNrYA05tZVIkGQpPhEew40CIERo=
 		</data>
 		<key>Headers/MKOverlayRenderer.h</key>
 		<data>
-		1JqkBAUJbhlZmpV5JP5IE35WJ84=
+		QyZposmUu5X0VEu7Pr4Hb8/x1os=
 		</data>
 		<key>Headers/MKOverlayView.h</key>
 		<data>
-		0/rEe+EqZ4NU/z6fPHzIvzqt/+4=
+		gadoVgrr6YfUMnubebtQI9SoAFo=
 		</data>
 		<key>Headers/MKPinAnnotationView.h</key>
 		<data>
-		TYDsAhFb2zVOGxEs75KUdXrOtKY=
+		2O9Gf/shpTasAoUVXKMfJcLGkEg=
 		</data>
 		<key>Headers/MKPlacemark.h</key>
 		<data>
-		nE5ht4qqFclvaOztspN0zUhk1BY=
+		HYY8V4vCb8fLAeDA0qbPbqBSy9E=
 		</data>
 		<key>Headers/MKPointAnnotation.h</key>
 		<data>
-		LxI6+HPjwqiHo7SzBLaBrUrhJVM=
+		rjDQuv+bRxGPUkxfEsiK36xSSUY=
 		</data>
 		<key>Headers/MKPolygon.h</key>
 		<data>
-		KVbOEWqrEexKSy/VWNxqDycDqCs=
+		9qi2m7wzYwjrz/oADsh4j9eCMF8=
 		</data>
 		<key>Headers/MKPolygonRenderer.h</key>
 		<data>
-		VDJzB+9MsJruhnp2vjsEJD4PrsI=
+		NJxie28WWuhrn/mho2wQIfinJUI=
 		</data>
 		<key>Headers/MKPolygonView.h</key>
 		<data>
-		AqrBrs0Jv1CUI5RajZd90qdlKdw=
+		Cfjch9KYh4ygxj9vz84HSgbGbxY=
 		</data>
 		<key>Headers/MKPolyline.h</key>
 		<data>
-		EtPcXXDvIjsHSBFF+9jQpYX/yKA=
+		6yJN6sS5Btaf1PuLZcSGuZ9J6Pg=
 		</data>
 		<key>Headers/MKPolylineRenderer.h</key>
 		<data>
-		TcyAMExj1We25bXoaIjEVXfPdWA=
+		Z6COGKzD3GI3XysAuq10ps6PzFg=
 		</data>
 		<key>Headers/MKPolylineView.h</key>
 		<data>
-		kh9xQW+M9NnwfJsE7gEwjtJFuGk=
+		Bslhqd9EBWuTuSvb/6TbqiXFTQM=
 		</data>
 		<key>Headers/MKReverseGeocoder.h</key>
 		<data>
-		Y4rOfU/frNEsg7hDU6N/L9jG9WM=
+		DJU1SFnS2nZv0VTTqVXdwX17/BE=
 		</data>
 		<key>Headers/MKShape.h</key>
 		<data>
-		uDx8wQe8aFrz09ED4IsDXI+a3/E=
+		Z4SoU47I1eLUJ0CqlYyL5WhECZg=
 		</data>
 		<key>Headers/MKTileOverlay.h</key>
 		<data>
-		jpQAMbyx5CthnHlvVpS676/LOiM=
+		FDIpPiQt9bycBfmwKPu8dHexqk0=
 		</data>
 		<key>Headers/MKTileOverlayRenderer.h</key>
 		<data>
-		wBDVRhLEa9BpuCPm0jKBIt8K+gE=
+		HedHRpa0uXql60w6+zX8v6hHTSw=
 		</data>
 		<key>Headers/MKTypes.h</key>
 		<data>
-		Ey7RbMY94JSuMu9r4qZKQsCLvig=
+		mr+/N+91vEI5GZ9OKGPmMIL8ssk=
 		</data>
 		<key>Headers/MKUserLocation.h</key>
 		<data>
-		cDN7VFJg+QynB6BJFP5JHw03d9E=
+		u8voq8G4mhbBGZQHEjIxqkT4hkw=
 		</data>
 		<key>Headers/MKUserTrackingBarButtonItem.h</key>
 		<data>
-		eZKUxY00Dtj/Vxe20gE/fGtjkJY=
+		ppHfgPW+PdRk7I87QfF2NNvYEpY=
 		</data>
 		<key>Headers/MapKit.h</key>
 		<data>
-		NHNeSJ5wqAN/SzjX0GlN9mtw68c=
+		haI2vLunBhMRBnUBbTlsP3xNkiM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XCz+b+tjksHGt5Y19kInMGyDakg=
+		RzPNMb7RBTYk3zOTIlYCwrYm4lI=
 		</data>
+		<key>Italian.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qV95pFvHYKs4Q4IgCXvCku+aN+I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -277,7 +322,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NyTPPNz6/imx0R8wxKRnOrfIPi8=
+			wWmKZWoKzU9hfyzxi0/liTRr79E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yIbIfkCKcU9bZk3QHWhvzQ+OKfY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -295,11 +349,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L677HMGEE5XVZ8qF65V9YaMSamU=
+			fKMTpzyER3mcsrs5hFK1uxKDzig=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Modules/module.modulemap</key>
+		<data>
+		9ykeRsQpQM+sGs5j+g3nub7ZJWA=
+		</data>
 		<key>ShowInfo@2x~ipad.png</key>
 		<data>
 		YEaR1YUM3LbaofaCvDENGJftgoY=
@@ -316,6 +374,15 @@
 		<data>
 		soOHHsMQ5oSwO/1pi1NFDT8/ols=
 		</data>
+		<key>Spanish.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BsE6c4hquqiuWDdeVSVtl175CpE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -329,7 +396,28 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3XPZSK5lArWjH0NEa12AIqk+gKk=
+			bKTH9sTKlY+0Vgg2rj6IgsI1zd8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>XPCServices/com.apple.MapKit.SnapshotService.xpc/Info.plist</key>
+		<data>
+		3LRu1FKbPP49cxFvD6YhPgbaGYg=
+		</data>
+		<key>XPCServices/com.apple.MapKit.SnapshotService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		g+PfdOiHqNz5zuZCGLdd+bCgz1o=
+		</data>
+		<key>XPCServices/com.apple.MapKit.SnapshotService.xpc/com.apple.MapKit.SnapshotService</key>
+		<data>
+		vEqhqevSbSE0RebvEsmxkmBvZg8=
+		</data>
+		<key>ar.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Oj743MkRjiLqIEzC+nTpYNZzmq4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -347,7 +435,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BSNVE5JIwwfNQ2bvGIBpEZSiouI=
+			dqeIZt29A+cn4fe2XFZ91GQc8Mg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -360,6 +448,15 @@
 		<data>
 		6dfYCChUqppZGXhrrN1WrHa9o24=
 		</data>
+		<key>ca.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FtyxpLm/eh4nc7gJQam4tIBY1Sw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -373,7 +470,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S71R9JCL5LPLSvQbMSjp1GZajEE=
+			Q58qf0rqc8Y1Nxsv8mV292LQwgc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JkOiBo+l8s+xqWBDWuOUdy6l1p8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -391,7 +497,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			trnGY7vGyfd/k1md30T9msKalpE=
+			LSrARyP+5aLoTgJoozOzlp963tA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			42zSRJ+GE5nWvGk4Uy5+p8QRDi4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -409,7 +524,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ch4Iq8q1XCpBzQdN+NJihT8IH0w=
+			07LVFM/zFzqS1/HLnyg+Clpr3+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nCPdp17sSWE7DEHPPK5A5YCytfg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -427,7 +551,43 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0bpzGvVQ8001klZqfYnSUlZV4qU=
+			XoDC4SZFKaJEUG1Qilzk8KVjjPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4ES4gQsz2Ka247fwbSdkMQsQFUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dGl2Q7FvUtwqHfTW4R/e3W1V8+g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UP3pgO2I8vUT8o7t49xtsjTzta4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MiynKFoRnuJtpJgqfixPh0I+WY8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -445,7 +605,43 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qsYpFyBBCghJnlIP5/WXWOLZQ58=
+			a7c8uYQiEMZnDtlMlBahtbfZHLc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			667vJbjUAzByseUiRDHY9rAbZxE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dGl2Q7FvUtwqHfTW4R/e3W1V8+g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7KZwRF/CS6tB1ZDG+1uCUMuoGsY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qt+10RpK34T86T8k+GuZubemQw4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -463,7 +659,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cfIZ8fdwYgq7qIxLnVjxAnfPWHY=
+			+zBXm+2bp2wUbYSSrTdk3Yzdw0A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UYb+Ld5bmRS10WGx582TnUNpFNo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -481,7 +686,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IlRAL/Yj6IdGQSxrIkNk+qbv8V0=
+			LyWs0y6le6V3tCvbH7A59LgzB2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9zQ9vlOxgvPxa4SdIDPpHL+wNHc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -499,7 +713,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yv+NzCmo7NexyWBHhZEB1mdeDqA=
+			zHHBvpCNeGTsXxLiH/drhiBOWCk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ig8Al/8uTH0xsgZF0vDC9EDEx0k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -517,7 +740,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vo5BdrcC4jFKlkh891pya982Sfc=
+			XRCM6dzJKsTIR1nTxnKBMJXHvEo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4STccV+dorpACoX6Cies1k4Nqug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -535,7 +767,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tnU69Y8ysaCzlTgGzzSIEtNOMbE=
+			xI3qID22Di/vdYOPh79a21pbqTY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6zG3y4zPduZVXI1LQKHPdEJmTEI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -553,7 +794,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iW8xtz02QtJuR1ftZmqUAZZDdwk=
+			Uq5vlkkX7MuNQECNK3CaJ11+U2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NTOiLaZleQZN1H2mwGug5w+uqNc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -571,7 +821,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RAKBEpUspux/WkdnPZFMJCsXTPo=
+			5XKCv00V0sSCqZcMH6r60wTUbiE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0CdI301ijMtwQcLlz+Ggok7sCGs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -589,15 +848,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0EmaFqecjiCgyIDuaGZtvNYK8jY=
+			x9lqo3BXQjcCAQ7q7nUcYycOps8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>module.map</key>
 		<data>
-		04l8ayOa5PufWDhMHCXB2kF8wMY=
+		lWmrrSaJDtL3Ajq4MUTmcP+6uwo=
 		</data>
+		<key>ms.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rkgMJIWSw9e1UD8C7e3etYK3QYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -611,7 +879,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HuiNTsyYD0XKDpZSNLk4JhstGAo=
+			Rzz3QY1RgkMo/peULBsPZNYXxJU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gb0RzIPg/j5t0OSjXu9XqrCtmig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -629,7 +906,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sTgs73TQuPh3C0oJ5i5NerLZsbs=
+			4vWL1tajZM5sk07Te/fqygZuC8E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ibCz7Gcl2EQg9UwnBh9GnlRLYas=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -647,7 +933,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R6vY78M1gkmhCHut+STelZoIxS8=
+			0m8FxqYmibEBRJ/anailkvokW10=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RwYdkJioUPpfnppiVZtwkyIuKP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -665,7 +960,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/USl6nskeBwr01czc2K5b/DMfuE=
+			BQZ775y95HsFG3208hv2M+kOF8Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yj424arjFI7GFuOfnl7BjFkP1lM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -683,7 +987,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sWiu5L1MDWUEEK5KDuop3brSo8c=
+			E6FSYv3jWZ8K4PFUiFv5TbLMIkY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ijCy0/NULUrFLnF5FncxUbtMsvU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -701,7 +1014,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q2LxxR33fV/cZfn/ssmsRJJ8n34=
+			wh9VHCIsHS70r9DZWW0FHIt4110=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CqZXpBf7sEnHwchv4a+6schPf3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -719,7 +1041,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4heyXaM1Xt8QnaGwZx9KLy6ZcbU=
+			DrRChg5l73a69XVym8zqDmtweic=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gwB3+OTVZPNA7W51mEP3ca2wHO4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -737,7 +1068,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D0TyFUeKvOSwF2zj61KQJ0P8R9U=
+			06VWCwxBvgi/oDJKPvuknrMeIa4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i2USTs4n+cueZ73fal/cF28C7lA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -755,7 +1095,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hljokmt5FiUGZGDXUfWS7dvaajw=
+			fWV9tmdHvVx1+uybx+As9/Eq3K0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u16d9gcqtwSFK+11DkeUldAe9Ck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -773,7 +1122,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6d0PeJepUgH1dSvc6y1AVf7bh2g=
+			LbwLWhxmu7umvTBqxF3tBkronxg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vRzM9aN4P9YtjlwGgq1JzDtmMFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -791,7 +1149,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v2jrxmK6hdit9Hpvy1u3z33SRT4=
+			12LB377B28N+BhJ85JeACt8otFM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P7zSyWvI3CzXK6mAHgp7BSFtYNE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -809,15 +1176,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9ftmKGPHHYw1oSE3XuZyDQoIkwA=
+			jVYI0kc1ur20O0w4KhSfU5QWJGs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		tMdEfHrDFeGIG6F2HHGZjSIVroc=
-		</data>
+		<key>vi.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yOGr3p657BDw8MnaCb8TNjUQzno=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -831,7 +1203,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NK1R153i4T4wfTKWo/QulF2JQ/0=
+			ZFFoOo2XSH0pPAvh3LNrvuQY4ss=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gwj9wFb6a3BQnvQwA4qoxWM1EwY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -849,7 +1230,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yg/1O2RoG4HrAC2bMKpfWRof/+0=
+			0ydi0S4IF4K5jpbOUDucly6lSdI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			st6Wd+Cx2Q8E20tHn8H0fmCHum4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -867,7 +1257,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mEaAO8cZWeKqXbWE+GKTu6zphiE=
+			7af+awfWOGeL1wj+u1ZbnBf8Iwo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sf6VRP0mT5O7+xUalDhf2ZmQB6k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -885,7 +1284,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rsVRpaDYqwsGi3jp/AMpnaAtTTE=
+			5dG5Oh2Am8qKhpeDO7TILBbNuzU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -895,8 +1294,17 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ACYP3trJQ//1ars1fz3QonY0eTo=
+		FlKEomIinateZkJSSfyXpS3/49Y=
 		</data>
+		<key>Dutch.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a1NlJ6hZc9BclGNzL+XGB/fbJ0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -910,7 +1318,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PF5BhpLRns4iBmsUheHLDZ+eqEI=
+			AznyQzXIJBB8azxCUp6+dSZcPfQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mces8JqOWM024//NEmrqC70EfRM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -928,7 +1345,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uOktIthWqlb12U2vgazRWz72EOA=
+			1bfKd4BsuOfWOpwsLdoLLuw3S+Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lgqvljHAefvAby93FU9Lq64jXZg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -946,7 +1372,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6MzXTSrcdt71kLEZHdQ9fLKxS1c=
+			TB6ojuunvfP9DuxEv8FvaJoGDY0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cSbWtaWr6ZdUk/xayEzC5SM4A5s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -964,50 +1399,50 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GB2xu3JyVzJT1jN1sIg7GbxJjxY=
+			ToUoA/1L5rKkdGto7tdJjl8naqQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Headers/MKAnnotation.h</key>
 		<data>
-		LzQwGdSBzA2SEkBjwdN3bLz1+FA=
+		8ZCLnItatOWwJMMcpykP761+BJs=
 		</data>
 		<key>Headers/MKAnnotationView.h</key>
 		<data>
-		9+x0ks2kThQFChMo6nQHEHDxXOo=
+		6LMoU9YCDL1Iqgo8vi6C2p9iKxs=
 		</data>
 		<key>Headers/MKCircle.h</key>
 		<data>
-		onnbh8hgeJ9PU13UPNLM97mx1CY=
+		S92G+JBUmlEgzaxbEVe3Y8G0EDE=
 		</data>
 		<key>Headers/MKCircleRenderer.h</key>
 		<data>
-		HirasmzqkJ5VRj48M8zpg4IPMck=
+		dvPctqfKR+VjPCeN/F86/JrM+3U=
 		</data>
 		<key>Headers/MKCircleView.h</key>
 		<data>
-		VfHkvhAjhMPWFA6zPQPgjBXjVkE=
+		ZYII1R/onsQX398j8W1XR3qMbb0=
 		</data>
 		<key>Headers/MKDirections.h</key>
 		<data>
-		hN+VxylgFE5q0uSQ6UxXDzMwDcc=
+		6F0dDc9NdJZJQt1rO0MNANCDQtk=
 		</data>
 		<key>Headers/MKDirectionsRequest.h</key>
 		<data>
-		/1GRleQbicscFoJtRm+vO3dcoJ8=
+		tDKOqvDvl9a4WsO0qfbobjtAT1E=
 		</data>
 		<key>Headers/MKDirectionsResponse.h</key>
 		<data>
-		CoDfdLZqDC91VebcCbL59GItqhI=
+		xWNWWLSWOprOPEHi/1dhHtVtWnA=
 		</data>
 		<key>Headers/MKDirectionsTypes.h</key>
 		<data>
-		p8m1YiuGZApSsQzWGxTvXaZg+Vk=
+		crt4LDunysaUy3N4svGBm7QspZQ=
 		</data>
 		<key>Headers/MKDistanceFormatter.h</key>
 		<data>
-		XCLBU0BOfiol2Rn7COnzSrtOLJw=
+		gnSkcky/EvYNCO/WNn+vPTVbKSk=
 		</data>
 		<key>Headers/MKFoundation.h</key>
 		<data>
@@ -1015,140 +1450,149 @@
 		</data>
 		<key>Headers/MKGeodesicPolyline.h</key>
 		<data>
-		uFNUzmQB+GXLyTGccqWy3tB+v6M=
+		JcPoEwLrdHt4Sm8DuaTtO7nsj54=
 		</data>
 		<key>Headers/MKGeometry.h</key>
 		<data>
-		lZ8CfTiwVqvQdZltdxVzASBHNTY=
+		sSiEa6BrhbkH23oWUfvhCDsfTvg=
 		</data>
 		<key>Headers/MKLocalSearch.h</key>
 		<data>
-		Uq8QH6utojIkSzSUJ8Qpf7S/OQA=
+		6GdqYCuaiSpYojZaESQ4n/0BKdU=
 		</data>
 		<key>Headers/MKLocalSearchRequest.h</key>
 		<data>
-		VBalyJlkYojmg0OyS32Tf2gv0ig=
+		zQKPIrr251RVLwC+g0wktz7wEdg=
 		</data>
 		<key>Headers/MKLocalSearchResponse.h</key>
 		<data>
-		3DHYYSjXeqigD+TtM4em1vvgNms=
+		+HxuvWrSD6WO0c3gXN5Ie7qY8WE=
 		</data>
 		<key>Headers/MKMapCamera.h</key>
 		<data>
-		ufJ7RZN8/N8nrpNSlcpdmdoELBQ=
+		mw+G7CN8AdJgepU3kkJvnl3BlT4=
 		</data>
 		<key>Headers/MKMapItem.h</key>
 		<data>
-		DQW81Ehsx15fhZhwxMVxs7Epm9s=
+		MWlq7/XcAIg4jW+VSIAqPEMHOKU=
 		</data>
 		<key>Headers/MKMapSnapshot.h</key>
 		<data>
-		7fDGjfWUV1nZnU3y3tgvW2jFO+E=
+		ZMyqrUvF5u873nHup1vwVbTBB9s=
 		</data>
 		<key>Headers/MKMapSnapshotOptions.h</key>
 		<data>
-		NHCYCXzVzGClYc9L9FlWFjnVzno=
+		nAI0dJ0eVqVTthklnuxgyOlqNyo=
 		</data>
 		<key>Headers/MKMapSnapshotter.h</key>
 		<data>
-		7eFBrAm8sKDH4cHqKe0dSUqZ6GY=
+		8WjcUhNQhDFqBCJWFt0QwNQSFRg=
 		</data>
 		<key>Headers/MKMapView.h</key>
 		<data>
-		A5NqjfyIdwRkGy8q7XgpO16WuBE=
+		gMRf5M/RQEQ5o7ZLzjGwwhQVBw0=
 		</data>
 		<key>Headers/MKMultiPoint.h</key>
 		<data>
-		BRpxGU72U8G3PAJ8LkUAOYFHe6M=
+		GGA4XyoAMIM5Eru3xyTeuNO/O0U=
 		</data>
 		<key>Headers/MKOverlay.h</key>
 		<data>
-		OXLnVBYePHvvSKv7EoW5M8UtNxw=
+		rLEXO4tntybUqkcHlrh+M4EvsJw=
 		</data>
 		<key>Headers/MKOverlayPathRenderer.h</key>
 		<data>
-		sAIoPwaJ1Y0aBu4MkN0pavjspfs=
+		oLobW7OK+pJd6ILbqtTLf5wVFkg=
 		</data>
 		<key>Headers/MKOverlayPathView.h</key>
 		<data>
-		iFfZio37KhgXjIOf8EDe8OVQmC8=
+		HNrYA05tZVIkGQpPhEew40CIERo=
 		</data>
 		<key>Headers/MKOverlayRenderer.h</key>
 		<data>
-		1JqkBAUJbhlZmpV5JP5IE35WJ84=
+		QyZposmUu5X0VEu7Pr4Hb8/x1os=
 		</data>
 		<key>Headers/MKOverlayView.h</key>
 		<data>
-		0/rEe+EqZ4NU/z6fPHzIvzqt/+4=
+		gadoVgrr6YfUMnubebtQI9SoAFo=
 		</data>
 		<key>Headers/MKPinAnnotationView.h</key>
 		<data>
-		TYDsAhFb2zVOGxEs75KUdXrOtKY=
+		2O9Gf/shpTasAoUVXKMfJcLGkEg=
 		</data>
 		<key>Headers/MKPlacemark.h</key>
 		<data>
-		nE5ht4qqFclvaOztspN0zUhk1BY=
+		HYY8V4vCb8fLAeDA0qbPbqBSy9E=
 		</data>
 		<key>Headers/MKPointAnnotation.h</key>
 		<data>
-		LxI6+HPjwqiHo7SzBLaBrUrhJVM=
+		rjDQuv+bRxGPUkxfEsiK36xSSUY=
 		</data>
 		<key>Headers/MKPolygon.h</key>
 		<data>
-		KVbOEWqrEexKSy/VWNxqDycDqCs=
+		9qi2m7wzYwjrz/oADsh4j9eCMF8=
 		</data>
 		<key>Headers/MKPolygonRenderer.h</key>
 		<data>
-		VDJzB+9MsJruhnp2vjsEJD4PrsI=
+		NJxie28WWuhrn/mho2wQIfinJUI=
 		</data>
 		<key>Headers/MKPolygonView.h</key>
 		<data>
-		AqrBrs0Jv1CUI5RajZd90qdlKdw=
+		Cfjch9KYh4ygxj9vz84HSgbGbxY=
 		</data>
 		<key>Headers/MKPolyline.h</key>
 		<data>
-		EtPcXXDvIjsHSBFF+9jQpYX/yKA=
+		6yJN6sS5Btaf1PuLZcSGuZ9J6Pg=
 		</data>
 		<key>Headers/MKPolylineRenderer.h</key>
 		<data>
-		TcyAMExj1We25bXoaIjEVXfPdWA=
+		Z6COGKzD3GI3XysAuq10ps6PzFg=
 		</data>
 		<key>Headers/MKPolylineView.h</key>
 		<data>
-		kh9xQW+M9NnwfJsE7gEwjtJFuGk=
+		Bslhqd9EBWuTuSvb/6TbqiXFTQM=
 		</data>
 		<key>Headers/MKReverseGeocoder.h</key>
 		<data>
-		Y4rOfU/frNEsg7hDU6N/L9jG9WM=
+		DJU1SFnS2nZv0VTTqVXdwX17/BE=
 		</data>
 		<key>Headers/MKShape.h</key>
 		<data>
-		uDx8wQe8aFrz09ED4IsDXI+a3/E=
+		Z4SoU47I1eLUJ0CqlYyL5WhECZg=
 		</data>
 		<key>Headers/MKTileOverlay.h</key>
 		<data>
-		jpQAMbyx5CthnHlvVpS676/LOiM=
+		FDIpPiQt9bycBfmwKPu8dHexqk0=
 		</data>
 		<key>Headers/MKTileOverlayRenderer.h</key>
 		<data>
-		wBDVRhLEa9BpuCPm0jKBIt8K+gE=
+		HedHRpa0uXql60w6+zX8v6hHTSw=
 		</data>
 		<key>Headers/MKTypes.h</key>
 		<data>
-		Ey7RbMY94JSuMu9r4qZKQsCLvig=
+		mr+/N+91vEI5GZ9OKGPmMIL8ssk=
 		</data>
 		<key>Headers/MKUserLocation.h</key>
 		<data>
-		cDN7VFJg+QynB6BJFP5JHw03d9E=
+		u8voq8G4mhbBGZQHEjIxqkT4hkw=
 		</data>
 		<key>Headers/MKUserTrackingBarButtonItem.h</key>
 		<data>
-		eZKUxY00Dtj/Vxe20gE/fGtjkJY=
+		ppHfgPW+PdRk7I87QfF2NNvYEpY=
 		</data>
 		<key>Headers/MapKit.h</key>
 		<data>
-		NHNeSJ5wqAN/SzjX0GlN9mtw68c=
+		haI2vLunBhMRBnUBbTlsP3xNkiM=
 		</data>
+		<key>Italian.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qV95pFvHYKs4Q4IgCXvCku+aN+I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1162,7 +1606,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NyTPPNz6/imx0R8wxKRnOrfIPi8=
+			wWmKZWoKzU9hfyzxi0/liTRr79E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yIbIfkCKcU9bZk3QHWhvzQ+OKfY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1180,11 +1633,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L677HMGEE5XVZ8qF65V9YaMSamU=
+			fKMTpzyER3mcsrs5hFK1uxKDzig=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Modules/module.modulemap</key>
+		<data>
+		9ykeRsQpQM+sGs5j+g3nub7ZJWA=
+		</data>
 		<key>ShowInfo@2x~ipad.png</key>
 		<data>
 		YEaR1YUM3LbaofaCvDENGJftgoY=
@@ -1201,6 +1658,15 @@
 		<data>
 		soOHHsMQ5oSwO/1pi1NFDT8/ols=
 		</data>
+		<key>Spanish.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BsE6c4hquqiuWDdeVSVtl175CpE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1214,7 +1680,28 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3XPZSK5lArWjH0NEa12AIqk+gKk=
+			bKTH9sTKlY+0Vgg2rj6IgsI1zd8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>XPCServices/com.apple.MapKit.SnapshotService.xpc/Info.plist</key>
+		<data>
+		3LRu1FKbPP49cxFvD6YhPgbaGYg=
+		</data>
+		<key>XPCServices/com.apple.MapKit.SnapshotService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		g+PfdOiHqNz5zuZCGLdd+bCgz1o=
+		</data>
+		<key>XPCServices/com.apple.MapKit.SnapshotService.xpc/com.apple.MapKit.SnapshotService</key>
+		<data>
+		vEqhqevSbSE0RebvEsmxkmBvZg8=
+		</data>
+		<key>ar.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Oj743MkRjiLqIEzC+nTpYNZzmq4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1232,7 +1719,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BSNVE5JIwwfNQ2bvGIBpEZSiouI=
+			dqeIZt29A+cn4fe2XFZ91GQc8Mg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1245,6 +1732,15 @@
 		<data>
 		6dfYCChUqppZGXhrrN1WrHa9o24=
 		</data>
+		<key>ca.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FtyxpLm/eh4nc7gJQam4tIBY1Sw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1258,7 +1754,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S71R9JCL5LPLSvQbMSjp1GZajEE=
+			Q58qf0rqc8Y1Nxsv8mV292LQwgc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JkOiBo+l8s+xqWBDWuOUdy6l1p8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1276,7 +1781,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			trnGY7vGyfd/k1md30T9msKalpE=
+			LSrARyP+5aLoTgJoozOzlp963tA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			42zSRJ+GE5nWvGk4Uy5+p8QRDi4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1294,7 +1808,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ch4Iq8q1XCpBzQdN+NJihT8IH0w=
+			07LVFM/zFzqS1/HLnyg+Clpr3+E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nCPdp17sSWE7DEHPPK5A5YCytfg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1312,7 +1835,43 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0bpzGvVQ8001klZqfYnSUlZV4qU=
+			XoDC4SZFKaJEUG1Qilzk8KVjjPg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4ES4gQsz2Ka247fwbSdkMQsQFUg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dGl2Q7FvUtwqHfTW4R/e3W1V8+g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UP3pgO2I8vUT8o7t49xtsjTzta4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MiynKFoRnuJtpJgqfixPh0I+WY8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1330,7 +1889,43 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qsYpFyBBCghJnlIP5/WXWOLZQ58=
+			a7c8uYQiEMZnDtlMlBahtbfZHLc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			667vJbjUAzByseUiRDHY9rAbZxE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dGl2Q7FvUtwqHfTW4R/e3W1V8+g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7KZwRF/CS6tB1ZDG+1uCUMuoGsY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qt+10RpK34T86T8k+GuZubemQw4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1348,7 +1943,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cfIZ8fdwYgq7qIxLnVjxAnfPWHY=
+			+zBXm+2bp2wUbYSSrTdk3Yzdw0A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UYb+Ld5bmRS10WGx582TnUNpFNo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1366,7 +1970,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IlRAL/Yj6IdGQSxrIkNk+qbv8V0=
+			LyWs0y6le6V3tCvbH7A59LgzB2s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9zQ9vlOxgvPxa4SdIDPpHL+wNHc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1384,7 +1997,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yv+NzCmo7NexyWBHhZEB1mdeDqA=
+			zHHBvpCNeGTsXxLiH/drhiBOWCk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ig8Al/8uTH0xsgZF0vDC9EDEx0k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1402,7 +2024,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vo5BdrcC4jFKlkh891pya982Sfc=
+			XRCM6dzJKsTIR1nTxnKBMJXHvEo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4STccV+dorpACoX6Cies1k4Nqug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1420,7 +2051,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tnU69Y8ysaCzlTgGzzSIEtNOMbE=
+			xI3qID22Di/vdYOPh79a21pbqTY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6zG3y4zPduZVXI1LQKHPdEJmTEI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1438,7 +2078,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iW8xtz02QtJuR1ftZmqUAZZDdwk=
+			Uq5vlkkX7MuNQECNK3CaJ11+U2Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NTOiLaZleQZN1H2mwGug5w+uqNc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1456,7 +2105,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RAKBEpUspux/WkdnPZFMJCsXTPo=
+			5XKCv00V0sSCqZcMH6r60wTUbiE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0CdI301ijMtwQcLlz+Ggok7sCGs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1474,15 +2132,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0EmaFqecjiCgyIDuaGZtvNYK8jY=
+			x9lqo3BXQjcCAQ7q7nUcYycOps8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>module.map</key>
 		<data>
-		04l8ayOa5PufWDhMHCXB2kF8wMY=
+		lWmrrSaJDtL3Ajq4MUTmcP+6uwo=
 		</data>
+		<key>ms.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rkgMJIWSw9e1UD8C7e3etYK3QYE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1496,7 +2163,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HuiNTsyYD0XKDpZSNLk4JhstGAo=
+			Rzz3QY1RgkMo/peULBsPZNYXxJU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gb0RzIPg/j5t0OSjXu9XqrCtmig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1514,7 +2190,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sTgs73TQuPh3C0oJ5i5NerLZsbs=
+			4vWL1tajZM5sk07Te/fqygZuC8E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ibCz7Gcl2EQg9UwnBh9GnlRLYas=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1532,7 +2217,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R6vY78M1gkmhCHut+STelZoIxS8=
+			0m8FxqYmibEBRJ/anailkvokW10=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RwYdkJioUPpfnppiVZtwkyIuKP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1550,7 +2244,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/USl6nskeBwr01czc2K5b/DMfuE=
+			BQZ775y95HsFG3208hv2M+kOF8Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yj424arjFI7GFuOfnl7BjFkP1lM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1568,7 +2271,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sWiu5L1MDWUEEK5KDuop3brSo8c=
+			E6FSYv3jWZ8K4PFUiFv5TbLMIkY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ijCy0/NULUrFLnF5FncxUbtMsvU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1586,7 +2298,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q2LxxR33fV/cZfn/ssmsRJJ8n34=
+			wh9VHCIsHS70r9DZWW0FHIt4110=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CqZXpBf7sEnHwchv4a+6schPf3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1604,7 +2325,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4heyXaM1Xt8QnaGwZx9KLy6ZcbU=
+			DrRChg5l73a69XVym8zqDmtweic=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gwB3+OTVZPNA7W51mEP3ca2wHO4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1622,7 +2352,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D0TyFUeKvOSwF2zj61KQJ0P8R9U=
+			06VWCwxBvgi/oDJKPvuknrMeIa4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i2USTs4n+cueZ73fal/cF28C7lA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1640,7 +2379,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hljokmt5FiUGZGDXUfWS7dvaajw=
+			fWV9tmdHvVx1+uybx+As9/Eq3K0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u16d9gcqtwSFK+11DkeUldAe9Ck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1658,7 +2406,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6d0PeJepUgH1dSvc6y1AVf7bh2g=
+			LbwLWhxmu7umvTBqxF3tBkronxg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vRzM9aN4P9YtjlwGgq1JzDtmMFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1676,7 +2433,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v2jrxmK6hdit9Hpvy1u3z33SRT4=
+			12LB377B28N+BhJ85JeACt8otFM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P7zSyWvI3CzXK6mAHgp7BSFtYNE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1694,15 +2460,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9ftmKGPHHYw1oSE3XuZyDQoIkwA=
+			jVYI0kc1ur20O0w4KhSfU5QWJGs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		tMdEfHrDFeGIG6F2HHGZjSIVroc=
-		</data>
+		<key>vi.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yOGr3p657BDw8MnaCb8TNjUQzno=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1716,7 +2487,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NK1R153i4T4wfTKWo/QulF2JQ/0=
+			ZFFoOo2XSH0pPAvh3LNrvuQY4ss=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gwj9wFb6a3BQnvQwA4qoxWM1EwY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1734,7 +2514,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yg/1O2RoG4HrAC2bMKpfWRof/+0=
+			0ydi0S4IF4K5jpbOUDucly6lSdI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			st6Wd+Cx2Q8E20tHn8H0fmCHum4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1752,7 +2541,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mEaAO8cZWeKqXbWE+GKTu6zphiE=
+			7af+awfWOGeL1wj+u1ZbnBf8Iwo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Caboose.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sf6VRP0mT5O7+xUalDhf2ZmQB6k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1770,7 +2568,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rsVRpaDYqwsGi3jp/AMpnaAtTTE=
+			5dG5Oh2Am8qKhpeDO7TILBbNuzU=
 			</data>
 			<key>optional</key>
 			<true/>

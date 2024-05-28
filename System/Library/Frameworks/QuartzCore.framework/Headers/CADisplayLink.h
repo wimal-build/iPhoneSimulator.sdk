@@ -8,6 +8,8 @@
 
 @class NSString, NSRunLoop;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /** Class representing a timer bound to the display vsync. **/
 
 @interface CADisplayLink : NSObject
@@ -62,3 +64,5 @@
 @property(nonatomic) NSInteger frameInterval;
 
 @end
+
+NS_ASSUME_NONNULL_END

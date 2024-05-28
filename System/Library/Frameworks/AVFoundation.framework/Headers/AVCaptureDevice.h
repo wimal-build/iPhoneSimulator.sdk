@@ -3,7 +3,7 @@
  
 	Framework:  AVFoundation
  
-	Copyright 2010-2014 Apple Inc. All rights reserved.
+	Copyright 2010-2015 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -183,6 +183,17 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 @property(nonatomic, readonly) NSString *localizedName;
 
 #if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+
+/*!
+ @property manufacturer
+ @abstract
+    The human-readable manufacturer name for the receiver.
+
+ @discussion
+    This property can be used to identify capture devices from a particular manufacturer.  All Apple devices return "Apple Inc.".
+    Devices from third party manufacturers may return an empty string.
+*/
+@property(nonatomic, readonly) NSString *manufacturer NS_AVAILABLE(10_9, NA);
 
 /*!
  @property transportType
@@ -540,7 +551,10 @@ typedef NS_ENUM(NSInteger, AVCaptureFlashMode) {
  @discussion
     The value of this property is a BOOL indicating whether the receiver's flash is 
     currently active. When the flash is active, it will flash if a still image is
-    captured. This property is key-value observable.
+    captured. When a still image is captured with the flash active, exposure and
+    white balance settings are overridden for the still. This is true even when
+    using AVCaptureExposureModeCustom and/or AVCaptureWhiteBalanceModeLocked.
+    This property is key-value observable.
 */
 @property(nonatomic, readonly, getter=isFlashActive) BOOL flashActive NS_AVAILABLE_IOS(5_0);
 
@@ -680,7 +694,7 @@ extern const float AVCaptureMaxAvailableTorchLevel;
 @property(nonatomic) AVCaptureTorchMode torchMode;
 
 /*!
- @property setTorchModeOnWithLevel:error:
+ @method setTorchModeOnWithLevel:error:
  @abstract
     Sets the current mode of the receiver's torch to AVCaptureTorchModeOn at the specified level.
 
@@ -786,7 +800,7 @@ typedef NS_ENUM(NSInteger, AVCaptureAutoFocusRangeRestriction) {
     indicates that it should focus on the bottom right. The default value is (0.5,0.5).  -setFocusPointOfInterest:
     throws an NSInvalidArgumentException if isFocusPointOfInterestSupported returns NO.  -setFocusPointOfInterest: throws 
     an NSGenericException if called without first obtaining exclusive access to the receiver using lockForConfiguration:.  
-    Clients can observe automatic changes to the receiver's focusMode by key value observing this property.  Note that
+    Clients can observe automatic changes to the receiver's focusPointOfInterest by key value observing this property.  Note that
     setting focusPointOfInterest alone does not initiate a focus operation.  After setting focusPointOfInterest, call
     -setFocusMode: to apply the new point of interest.
 */
@@ -870,11 +884,8 @@ typedef NS_ENUM(NSInteger, AVCaptureAutoFocusRangeRestriction) {
     The range of possible positions is 0.0 to 1.0, with 0.0 being the shortest distance at which the lens can focus and
     1.0 the furthest. Note that 1.0 does not represent focus at infinity. The default value is 1.0.
     Note that a given lens position value does not correspond to an exact physical distance, nor does it represent a
-    consistent focus distance from device to device. This property is intended to be used to continuously vary the focus
-    distance, in conjunction with AVCaptureVideoPreviewLayer's visualAssistanceMode property, which can be used to provide
-    visual feedback to aid in focusing.
-    This property is key-value observable. It can be read at any time, regardless of focus mode, but can only be set via
-    setFocusModeLockedWithLensPosition:completionHandler:.
+    consistent focus distance from device to device. This property is key-value observable. It can be read at any time, 
+    regardless of focus mode, but can only be set via setFocusModeLockedWithLensPosition:completionHandler:.
 */
 @property(nonatomic, readonly) float lensPosition NS_AVAILABLE_IOS(8_0);
 
@@ -960,8 +971,13 @@ typedef NS_ENUM(NSInteger, AVCaptureExposureMode) {
     The value of this property is an AVCaptureExposureMode that determines the receiver's exposure mode, if it has
     adjustable exposure.  -setExposureMode: throws an NSInvalidArgumentException if set to an unsupported value 
     (see -isExposureModeSupported:).  -setExposureMode: throws an NSGenericException if called without first obtaining 
-    exclusive access to the receiver using lockForConfiguration:.  Clients can observe automatic changes to the receiver's 
-    exposureMode by key value observing this property.
+    exclusive access to the receiver using lockForConfiguration:. When using AVCaptureStillImageOutput with
+    automaticallyEnablesStillImageStabilizationWhenAvailable set to YES (the default behavior), the receiver's ISO and 
+    exposureDuration values may be overridden by automatic still image stabilization values if the scene is dark enough 
+    to warrant still image stabilization. To ensure that the receiver's ISO and exposureDuration values are honored while
+    in AVCaptureExposureModeCustom or AVCaptureExposureModeLocked, you must set AVCaptureStillImageOutput's
+    automaticallyEnablesStillImageStabilizationWhenAvailable property to NO. Clients can observe automatic changes to 
+    the receiver's exposureMode by key value observing this property.
 */
 @property(nonatomic) AVCaptureExposureMode exposureMode;
 
@@ -1033,8 +1049,8 @@ typedef NS_ENUM(NSInteger, AVCaptureExposureMode) {
     The current exposure ISO value.
  
  @discussion
-    This property controls the sensor's sensitivity to light by means of a gain value applied to the signal. Only exposure
-    duration values between activeFormat.minISO and activeFormat.maxISO are supported. Higher values will result in noisier images.
+    This property controls the sensor's sensitivity to light by means of a gain value applied to the signal. Only ISO values
+    between activeFormat.minISO and activeFormat.maxISO are supported. Higher values will result in noisier images.
     This property is key-value observable. It can be read at any time, regardless of exposure mode, but can only be set
     via setExposureModeCustomWithDuration:ISO:completionHandler:.
 */
@@ -1082,6 +1098,11 @@ AVF_EXPORT const float AVCaptureISOCurrent NS_AVAILABLE_IOS(8_0);
     This is the only way of setting exposureDuration and ISO.
     This method throws an NSRangeException if either exposureDuration or ISO is set to an unsupported level.
     This method throws an NSGenericException if called without first obtaining exclusive access to the receiver using lockForConfiguration:.
+    When using AVCaptureStillImageOutput with automaticallyEnablesStillImageStabilizationWhenAvailable set to YES (the default behavior),
+    the receiver's ISO and exposureDuration values may be overridden by automatic still image stabilization values if the scene is dark
+    enough to warrant still image stabilization.  To ensure that the receiver's ISO and exposureDuration values are honored while
+    in AVCaptureExposureModeCustom or AVCaptureExposureModeLocked, you must set AVCaptureStillImageOutput's
+    automaticallyEnablesStillImageStabilizationWhenAvailable property to NO.
 */
 - (void)setExposureModeCustomWithDuration:(CMTime)duration ISO:(float)ISO completionHandler:(void (^)(CMTime syncTime))handler NS_AVAILABLE_IOS(8_0);
 
@@ -1105,7 +1126,7 @@ AVF_EXPORT const float AVCaptureISOCurrent NS_AVAILABLE_IOS(8_0);
     When exposureMode is AVCaptureExposureModeContinuousAutoExposure or AVCaptureExposureModeLocked, the bias will affect
     both metering (exposureTargetOffset), and the actual exposure level (exposureDuration and ISO). When the exposure mode
     is AVCaptureExposureModeCustom, it will only affect metering.
-    This property is key-value observable. It can be read at any time, but can only be set via setExposureBias:completionHandler:.
+    This property is key-value observable. It can be read at any time, but can only be set via setExposureTargetBias:completionHandler:.
 */
 @property(nonatomic, readonly) float exposureTargetBias NS_AVAILABLE_IOS(8_0);
 
@@ -1931,6 +1952,8 @@ NS_CLASS_AVAILABLE(10_7, 7_0)
 */
 @property(nonatomic, readonly) NSArray *videoSupportedFrameRateRanges;
 
+#if TARGET_OS_IPHONE
+
 /*!
  @property videoFieldOfView
  @abstract
@@ -1977,7 +2000,7 @@ NS_CLASS_AVAILABLE(10_7, 7_0)
     AVCaptureConnection -setEnablesVideoStabilizationWhenAvailable.
     This property is deprecated.  Use isVideoStabilizationModeSupported: instead.
 */
-@property(nonatomic, readonly, getter=isVideoStabilizationSupported) BOOL videoStabilizationSupported NS_DEPRECATED_IOS(7_0, 8_0);
+@property(nonatomic, readonly, getter=isVideoStabilizationSupported) BOOL videoStabilizationSupported NS_DEPRECATED_IOS(7_0, 8_0, "Use isVideoStabilizationModeSupported: instead.");
 
 /*!
  @property videoMaxZoomFactor
@@ -2078,6 +2101,8 @@ NS_CLASS_AVAILABLE(10_7, 7_0)
     This read-only property indicates the autofocus system.
 */
 @property(nonatomic, readonly) AVCaptureAutoFocusSystem autoFocusSystem NS_AVAILABLE_IOS(8_0);
+
+#endif // TARGET_OS_IPHONE
 
 @end
 

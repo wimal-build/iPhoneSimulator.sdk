@@ -1,10 +1,12 @@
 // HMHomeManager.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMHome;
 
@@ -15,18 +17,18 @@
  *
  * @discussion This class is responsible for managing a collection of homes. 
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMHomeManager : NSObject
 
 /*!
  * @brief Delegate that receives updates on the collection of homes.
  */
-@property(weak, nonatomic) id<HMHomeManagerDelegate> delegate;
+@property(weak, nonatomic, nullable) id<HMHomeManagerDelegate> delegate;
 
 /*!
  * @brief The primary home for this collection.
  */
-@property(readonly, strong, nonatomic) HMHome *primaryHome;
+@property(readonly, strong, nonatomic, nullable) HMHome *primaryHome;
 
 /*!
  * @brief Array of HMHome objects that represents the homes associated with the home manager.
@@ -35,7 +37,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *             not guaranteed to be filled with the list of homes, represented as HMHome objects,
  *             until the homeManagerDidUpdateHomes: delegate method has been invoked.
  */
-@property(readonly, copy, nonatomic) NSArray *homes;
+@property(readonly, copy, nonatomic) NSArray<HMHome *> *homes;
 
 /*!
  * @brief This method is used to change the primary home.
@@ -46,7 +48,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updatePrimaryHome:(HMHome *)home completionHandler:(void (^)(NSError *error))completion;
+- (void)updatePrimaryHome:(HMHome *)home completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Adds a new home to the collection.
@@ -58,7 +60,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   will be nil on success.
  *
  */
-- (void)addHomeWithName:(NSString *)homeName completionHandler:(void (^)(HMHome *home, NSError *error))completion;
+- (void)addHomeWithName:(NSString *)homeName completionHandler:(void (^)(HMHome * __nullable home, NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes an existing home from the collection.
@@ -69,14 +71,14 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeHome:(HMHome *)home completionHandler:(void (^)(NSError *error))completion;
+- (void)removeHome:(HMHome *)home completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
 /*!
  * @brief This delegate receives updates on homes being managed via the home manager.
  */
-NS_AVAILABLE_IOS(8_0)
+NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @protocol HMHomeManagerDelegate <NSObject>
 
 @optional
@@ -118,3 +120,5 @@ NS_AVAILABLE_IOS(8_0)
 - (void)homeManager:(HMHomeManager *)manager didRemoveHome:(HMHome *)home;
 
 @end
+
+NS_ASSUME_NONNULL_END

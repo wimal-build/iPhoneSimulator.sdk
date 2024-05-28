@@ -25,6 +25,13 @@
 	<key>DuetIdentifiers</key>
 	<array>
 		<string>com.apple.Bridge</string>
+		<string>com.apple.Passbook</string>
+		<string>com.apple.PassbookUIService</string>
+		<string>com.apple.Preferences</string>
+	</array>
+	<key>AllowedTrafficClasses</key>
+	<array>
+		<string>com.apple.ids.trafficclass.nanoregistry.configure</string>
 	</array>
 </dict>
 </plist>

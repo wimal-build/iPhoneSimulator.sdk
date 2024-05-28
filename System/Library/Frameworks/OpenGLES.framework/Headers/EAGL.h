@@ -34,6 +34,7 @@ typedef NS_ENUM(NSUInteger, EAGLRenderingAPI)
 	kEAGLRenderingAPIOpenGLES3 = 3,
 };
 
+
 /************************************************************************/
 /* EAGL Functions                                                       */
 /************************************************************************/
@@ -66,6 +67,7 @@ EAGL_EXTERN_CLASS
 	struct _EAGLContextPrivate *_private;
 }
 
+- (instancetype) init NS_UNAVAILABLE;
 - (instancetype) initWithAPI:(EAGLRenderingAPI) api;
 - (instancetype) initWithAPI:(EAGLRenderingAPI) api sharegroup:(EAGLSharegroup*) sharegroup NS_DESIGNATED_INITIALIZER;
 

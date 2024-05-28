@@ -1,0 +1,18 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.FRF_6.1.2
+#RLSTAG: RLS_FE.FRF_6.1.6 
+
+[header]
+language = FRF
+charset = utf-8
+
+[data]
+
+
+#FB34113
+/(L’adresse de votre contact) (.+?) (est)\b/i  -->  "$1 $2 $3\e\\pause=30\\"
+
+

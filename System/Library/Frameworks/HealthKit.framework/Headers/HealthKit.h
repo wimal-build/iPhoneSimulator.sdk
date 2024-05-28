@@ -10,6 +10,8 @@
 #import <HealthKit/HKCorrelation.h>
 #import <HealthKit/HKCorrelationQuery.h>
 #import <HealthKit/HKDefines.h>
+#import <HealthKit/HKDeletedObject.h>
+#import <HealthKit/HKDevice.h>
 #import <HealthKit/HKHealthStore.h>
 #import <HealthKit/HKMetadata.h>
 #import <HealthKit/HKObject.h>
@@ -22,9 +24,11 @@
 #import <HealthKit/HKSampleQuery.h>
 #import <HealthKit/HKSource.h>
 #import <HealthKit/HKSourceQuery.h>
+#import <HealthKit/HKSourceRevision.h>
 #import <HealthKit/HKStatistics.h>
 #import <HealthKit/HKStatisticsCollectionQuery.h>
 #import <HealthKit/HKStatisticsQuery.h>
 #import <HealthKit/HKTypeIdentifiers.h>
 #import <HealthKit/HKUnit.h>
 #import <HealthKit/HKWorkout.h>
+#import <HealthKit/HKWorkoutSession.h>

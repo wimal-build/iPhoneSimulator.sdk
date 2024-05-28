@@ -15,6 +15,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 CB_EXTERN NSString * const CBErrorDomain;
 
@@ -34,7 +35,8 @@ typedef NS_ENUM(NSInteger, CBError) {
 	CBErrorPeripheralDisconnected NS_ENUM_AVAILABLE(NA, 6_0)	= 7,
 	CBErrorUUIDNotAllowed NS_ENUM_AVAILABLE(NA, 6_0)			= 8,
 	CBErrorAlreadyAdvertising NS_ENUM_AVAILABLE(NA, 6_0)		= 9,
-	CBErrorConnectionFailed NS_ENUM_AVAILABLE(NA, 7_1)			= 10
+	CBErrorConnectionFailed NS_ENUM_AVAILABLE(NA, 7_1)			= 10,
+	CBErrorConnectionLimitReached NS_ENUM_AVAILABLE(NA, 9_0)	= 11
 };
 
 CB_EXTERN NSString * const CBATTErrorDomain;
@@ -59,3 +61,5 @@ typedef NS_ENUM(NSInteger, CBATTError) {
 	CBATTErrorUnsupportedGroupType					= 0x10,
 	CBATTErrorInsufficientResources					= 0x11
 };
+
+NS_ASSUME_NONNULL_END

@@ -77,6 +77,8 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeSmartAlbumBursts     = 207,
     PHAssetCollectionSubtypeSmartAlbumSlomoVideos = 208,
     PHAssetCollectionSubtypeSmartAlbumUserLibrary = 209,
+    PHAssetCollectionSubtypeSmartAlbumSelfPortraits NS_AVAILABLE_IOS(9_0) = 210,
+    PHAssetCollectionSubtypeSmartAlbumScreenshots NS_AVAILABLE_IOS(9_0) = 211,
     
     // Used for fetching, if you don't care about the exact subtype
     PHAssetCollectionSubtypeAny = NSIntegerMax
@@ -103,6 +105,7 @@ typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     // Photo subtypes
     PHAssetMediaSubtypePhotoPanorama      = (1UL << 0),
     PHAssetMediaSubtypePhotoHDR           = (1UL << 1),
+    PHAssetMediaSubtypePhotoScreenshot NS_AVAILABLE_IOS(9_0) = (1UL << 2),
     
     // Video subtypes
     PHAssetMediaSubtypeVideoStreamed      = (1UL << 16),
@@ -115,5 +118,23 @@ typedef NS_OPTIONS(NSUInteger, PHAssetBurstSelectionType) {
     PHAssetBurstSelectionTypeAutoPick = (1UL << 0),
     PHAssetBurstSelectionTypeUserPick = (1UL << 1),
 } NS_AVAILABLE_IOS(8_0);
+
+typedef NS_OPTIONS(NSUInteger, PHAssetSourceType) {
+    PHAssetSourceTypeNone            = 0,
+    PHAssetSourceTypeUserLibrary     = (1UL << 0),
+    PHAssetSourceTypeCloudShared     = (1UL << 1),
+    PHAssetSourceTypeiTunesSynced    = (1UL << 2),
+} NS_AVAILABLE_IOS(9_0);
+
+typedef NS_ENUM(NSInteger, PHAssetResourceType) {
+    PHAssetResourceTypePhoto                    = 1,
+    PHAssetResourceTypeVideo                    = 2,
+    PHAssetResourceTypeAudio                    = 3,
+    PHAssetResourceTypeAlternatePhoto           = 4,
+    PHAssetResourceTypeFullSizePhoto            = 5,
+    PHAssetResourceTypeFullSizeVideo            = 6,
+    PHAssetResourceTypeAdjustmentData           = 7,
+    PHAssetResourceTypeAdjustmentBasePhoto      = 8,
+} NS_ENUM_AVAILABLE_IOS(9_0);
 
 #endif

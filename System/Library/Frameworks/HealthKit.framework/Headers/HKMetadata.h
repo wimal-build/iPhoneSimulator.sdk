@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  @constant      HKMetadataKeyUDIProductionIdentifier
  @abstract      Represents the serial number of the device that created the HKObject.
@@ -66,13 +68,18 @@ HK_EXTERN NSString * const HKMetadataKeyFoodType NS_AVAILABLE_IOS(8_0);
  @abstract      Represents the device identifier portion of a device's UDI (Unique Device Identifier).
  @discussion    The device identifier can be used to reference the GUDID (Globally Unique Device Identifier Database).
                 The expected value type is NSString.
+ 
+                ** Note that the use of this key is now discouraged in favor of the HKDevice class.
  */
 HK_EXTERN NSString * const HKMetadataKeyUDIDeviceIdentifier NS_AVAILABLE_IOS(8_0);
 
 /*!
  @constant      HKMetadataKeyUDIProductionIdentifier
  @abstract      Represents the production identifier portion of a device's UDI (Unique Device Identifier).
- @discussion    The production identifier can be used to reference the GUDID (Globally Unique Device Identifier Database).
+ @discussion    While part of a device's UDI, the production identifier is not saved in the FDA's GUDID 
+                (Globally Unique Device Identifier Database) and its use in HealthKit is now discouraged for
+                user privacy reasons. Apps should consider handling this independently of HealthKit APIs if
+                needed.
                 The expected value type is NSString.
  */
 HK_EXTERN NSString * const HKMetadataKeyUDIProductionIdentifier NS_AVAILABLE_IOS(8_0);
@@ -109,6 +116,8 @@ HK_EXTERN NSString * const HKMetadataKeyTimeZone NS_AVAILABLE_IOS(8_0);
  @constant      HKMetadataKeyDeviceName
  @abstract      Represents the name of the device that took the reading.
  @discussion    The expected value type is NSString.
+ 
+                ** Note that the use of this key is now discouraged in favor of the HKDevice class.
  */
 HK_EXTERN NSString * const HKMetadataKeyDeviceName NS_AVAILABLE_IOS(8_0);
 
@@ -116,6 +125,8 @@ HK_EXTERN NSString * const HKMetadataKeyDeviceName NS_AVAILABLE_IOS(8_0);
  @constant      HKMetadataKeyDeviceManufacturerName
  @abstract      Represents the name of the manufacturer of the device that took the reading.
  @discussion    The expected value type is NSString.
+ 
+                ** Note that the use of this key is now discouraged in favor of the HKDevice class.
  */
 HK_EXTERN NSString * const HKMetadataKeyDeviceManufacturerName NS_AVAILABLE_IOS(8_0);
 
@@ -175,3 +186,20 @@ HK_EXTERN NSString * const HKMetadataKeyIndoorWorkout NS_AVAILABLE_IOS(8_0);
  */
 HK_EXTERN NSString * const HKMetadataKeyCoachedWorkout NS_AVAILABLE_IOS(8_0);
 
+/*!
+ @constant      HKMetadataKeySexualActivityProtectionUsed
+ @abstract      Represents whether or not protection was used during sexual activity. This can be used to track either
+                protection from STIs or protection from pregnancy.
+ @discussion    The expected value type is an NSNumber containing a BOOL value.
+ */
+HK_EXTERN NSString * const HKMetadataKeySexualActivityProtectionUsed NS_AVAILABLE_IOS(9_0);
+
+/*!
+ @constant      HKMetadataKeyMenstrualCycleStart
+ @abstract      Indicates whether or not the sample represents the start of a menstrual cycle. This is a required
+                metadata key for category samples of type HKCategorySampleMenstrualFlow.
+ @discussion    The expected value type is an NSNumber containing a BOOL value.
+ */
+HK_EXTERN NSString * const HKMetadataKeyMenstrualCycleStart NS_AVAILABLE_IOS(9_0);
+
+NS_ASSUME_NONNULL_END

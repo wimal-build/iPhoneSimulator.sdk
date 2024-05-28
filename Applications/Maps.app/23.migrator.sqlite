@@ -1,0 +1,16 @@
+-- Migrates traces from v23 to v24
+
+BEGIN TRANSACTION;
+
+CREATE TABLE motion_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+type                INTEGER,
+exit_type           INTEGER,
+confidence          INTEGER
+);
+
+INSERT INTO motion_data (relative_timestamp, absolute_timestamp, type, exit_type, confidence) SELECT db_timestamp, cl_timestamp, motion_type, motion_exit_type, motion_confidence from locations WHERE error_data IS NULL;
+
+COMMIT;

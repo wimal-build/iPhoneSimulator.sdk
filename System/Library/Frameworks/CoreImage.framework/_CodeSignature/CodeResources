@@ -56,6 +56,33 @@
 		<data>
 		qLs9CtHuuL47tTfi6D5VK2dWyho=
 		</data>
+		<key>English.lproj/Categories.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qDSQBC37ViHS2MwCnD743oJCA78=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Descriptions.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PJhT+QtanGrSFOvJmIG5/g4Lu6w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Filters.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t9ApdFGjQFbjq1w0P55svakcGeQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -65,61 +92,86 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>English.lproj/Keys.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nllv3LYG+W7/8Y299WlbMsqNex8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Headers/CIColor.h</key>
 		<data>
-		zH41Q20V1eM1voEo4Cr7se0eDL4=
+		dkUcYPQqe9tZUBGchJDjgG+xKEE=
 		</data>
 		<key>Headers/CIContext.h</key>
 		<data>
-		sdXEKsgMG8XN/4j7PiZVwNQng5k=
+		s2e8UACKmpW7l34v553LwKt++GM=
 		</data>
 		<key>Headers/CIDetector.h</key>
 		<data>
-		kl+zi/Fsiv0QI6gdwMGG74qd1HA=
+		f25CyIVJt/fNf9qV8355hsF95u0=
 		</data>
 		<key>Headers/CIFeature.h</key>
 		<data>
-		qljAe7Ku9hSx0rApA/J5WN42B4A=
+		X3i3NKKNe4P+SBt3mfiqXaPOQIo=
 		</data>
 		<key>Headers/CIFilter.h</key>
 		<data>
-		vtZvTkvfQlWSVYiPSa73r6BmlhA=
+		AHhe6/AUQ3M3u6rQU7VQMqKt0xY=
+		</data>
+		<key>Headers/CIFilterConstructor.h</key>
+		<data>
+		dm6Umh6cOpusT9213lauU/BAJAM=
+		</data>
+		<key>Headers/CIFilterShape.h</key>
+		<data>
+		7EPirED35AE9iZYo2QroBrDpPeM=
 		</data>
 		<key>Headers/CIImage.h</key>
 		<data>
-		dYW1VEhQ8yxyL1iuKwI/tFKC6zs=
+		OyO6qXxwqmILhXoq8qfAPyK+l/s=
+		</data>
+		<key>Headers/CIImageAccumulator.h</key>
+		<data>
+		HQpHHsB5FYmH/Yazw2znU95AMzY=
+		</data>
+		<key>Headers/CIImageProvider.h</key>
+		<data>
+		CZLQpMo0Qjd62MZyyNHozO4/GfM=
 		</data>
 		<key>Headers/CIKernel.h</key>
 		<data>
-		E/C/PQjrvP8AHin2YSRVYc6fhRs=
+		ccbha2E/zmF86AXMX+Kgj3Whgok=
+		</data>
+		<key>Headers/CISampler.h</key>
+		<data>
+		kOisF11BJVbRniD/zqMWglp2NIY=
 		</data>
 		<key>Headers/CIVector.h</key>
 		<data>
-		VwGACK2usqfDohun2wHR1lrPkdY=
+		ftK54/OIa2Mci/Tp1iwQT6Yb5Aw=
 		</data>
 		<key>Headers/CoreImage.h</key>
 		<data>
-		Upb7SLm3MKHKmZAtCMM4rySHXs0=
+		sBDjDZ9JGjjPX3KWWWRFvQz/Cmw=
 		</data>
 		<key>Headers/CoreImageDefines.h</key>
 		<data>
-		ayRVCoUyrsmuDvJUIOTRLjd0sHY=
+		zW8Vaw1D6S1fkS8GITAbXHLiap0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DpUU+3d2RwQEqSzG0MjcSCaMhIw=
+		KzWVOzsRIYdRrpvCein12QIBias=
 		</data>
-		<key>cl_kernels.arm64.bc</key>
+		<key>ci_kernels.metallib</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>noiseImage.tiff</key>
 		<data>
-		7a6ULxloH+ezA8CbMHWBk/K8K0s=
-		</data>
-		<key>version.plist</key>
-		<data>
-		fxr6BQV60xLrYC76+cN2HIdoS6s=
+		dO5yBfPgMP+5Xho/llMZmSob3RM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -176,6 +228,33 @@
 		<data>
 		qLs9CtHuuL47tTfi6D5VK2dWyho=
 		</data>
+		<key>English.lproj/Categories.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qDSQBC37ViHS2MwCnD743oJCA78=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Descriptions.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PJhT+QtanGrSFOvJmIG5/g4Lu6w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Filters.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t9ApdFGjQFbjq1w0P55svakcGeQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -185,57 +264,82 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>English.lproj/Keys.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nllv3LYG+W7/8Y299WlbMsqNex8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Headers/CIColor.h</key>
 		<data>
-		zH41Q20V1eM1voEo4Cr7se0eDL4=
+		dkUcYPQqe9tZUBGchJDjgG+xKEE=
 		</data>
 		<key>Headers/CIContext.h</key>
 		<data>
-		sdXEKsgMG8XN/4j7PiZVwNQng5k=
+		s2e8UACKmpW7l34v553LwKt++GM=
 		</data>
 		<key>Headers/CIDetector.h</key>
 		<data>
-		kl+zi/Fsiv0QI6gdwMGG74qd1HA=
+		f25CyIVJt/fNf9qV8355hsF95u0=
 		</data>
 		<key>Headers/CIFeature.h</key>
 		<data>
-		qljAe7Ku9hSx0rApA/J5WN42B4A=
+		X3i3NKKNe4P+SBt3mfiqXaPOQIo=
 		</data>
 		<key>Headers/CIFilter.h</key>
 		<data>
-		vtZvTkvfQlWSVYiPSa73r6BmlhA=
+		AHhe6/AUQ3M3u6rQU7VQMqKt0xY=
+		</data>
+		<key>Headers/CIFilterConstructor.h</key>
+		<data>
+		dm6Umh6cOpusT9213lauU/BAJAM=
+		</data>
+		<key>Headers/CIFilterShape.h</key>
+		<data>
+		7EPirED35AE9iZYo2QroBrDpPeM=
 		</data>
 		<key>Headers/CIImage.h</key>
 		<data>
-		dYW1VEhQ8yxyL1iuKwI/tFKC6zs=
+		OyO6qXxwqmILhXoq8qfAPyK+l/s=
+		</data>
+		<key>Headers/CIImageAccumulator.h</key>
+		<data>
+		HQpHHsB5FYmH/Yazw2znU95AMzY=
+		</data>
+		<key>Headers/CIImageProvider.h</key>
+		<data>
+		CZLQpMo0Qjd62MZyyNHozO4/GfM=
 		</data>
 		<key>Headers/CIKernel.h</key>
 		<data>
-		E/C/PQjrvP8AHin2YSRVYc6fhRs=
+		ccbha2E/zmF86AXMX+Kgj3Whgok=
+		</data>
+		<key>Headers/CISampler.h</key>
+		<data>
+		kOisF11BJVbRniD/zqMWglp2NIY=
 		</data>
 		<key>Headers/CIVector.h</key>
 		<data>
-		VwGACK2usqfDohun2wHR1lrPkdY=
+		ftK54/OIa2Mci/Tp1iwQT6Yb5Aw=
 		</data>
 		<key>Headers/CoreImage.h</key>
 		<data>
-		Upb7SLm3MKHKmZAtCMM4rySHXs0=
+		sBDjDZ9JGjjPX3KWWWRFvQz/Cmw=
 		</data>
 		<key>Headers/CoreImageDefines.h</key>
 		<data>
-		ayRVCoUyrsmuDvJUIOTRLjd0sHY=
+		zW8Vaw1D6S1fkS8GITAbXHLiap0=
 		</data>
-		<key>cl_kernels.arm64.bc</key>
+		<key>ci_kernels.metallib</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>noiseImage.tiff</key>
 		<data>
-		7a6ULxloH+ezA8CbMHWBk/K8K0s=
-		</data>
-		<key>version.plist</key>
-		<data>
-		fxr6BQV60xLrYC76+cN2HIdoS6s=
+		dO5yBfPgMP+5Xho/llMZmSob3RM=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -16,11 +16,13 @@
 
 /* Connection types
  */
-enum {
+typedef NS_ENUM(NSUInteger, GKPeerPickerConnectionType)
+{
 	GKPeerPickerConnectionTypeOnline = 1 << 0,		// Online (Internet) based multiplayer connection
 	GKPeerPickerConnectionTypeNearby = 1 << 1		// Nearby (Bluetooth) based multiplayer connection
 } NS_ENUM_DEPRECATED_IOS(3_0, 7_0);
-typedef NSUInteger GKPeerPickerConnectionType;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /* callbacks to the GKPeerPickerController delegate
  */
@@ -30,7 +32,7 @@ typedef NSUInteger GKPeerPickerConnectionType;
 
 /* Notifies delegate that a connection type was chosen by the user.
  */
-- (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type;
+- (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type ;
 
 /* Notifies delegate that the connection type is requesting a GKSession object.
  
@@ -38,16 +40,16 @@ typedef NSUInteger GKPeerPickerConnectionType;
  */
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-- (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type;
+- (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type ;
 
 /* Notifies delegate that the peer was connected to a GKSession.
  */
-- (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session;
+- (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session ;
 #pragma clang diagnostic pop
 
 /* Notifies delegate that the user cancelled the picker.
  */
-- (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker;
+- (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker ;
 
 @end
 
@@ -58,7 +60,7 @@ typedef NSUInteger GKPeerPickerConnectionType;
  
  You must provide a delegate that conforms to the GKPeerPickerControllerDelegate protocol in order to use this class. After the user interface starts, this class notifies your delegate of the user’s actions.
  */
-NS_CLASS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController from the MultipeerConnectivity framework")
+NS_CLASS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController from the MultipeerConnectivity framework") 
 @interface GKPeerPickerController : NSObject {
 @private
 	id _picker;
@@ -68,11 +70,11 @@ NS_CLASS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController from the Multipee
  
  This mask can be specified by combining, using the C bitwise OR operator, any of the options described in GKPickerConnectionType. If not set, the default supported type is GKPickerConnectionTypeNearby.  If multiple connection types are supported, system-supplied UI will be presented to allow the user to select a connection type. The delegate receives a -peerPickerController:didSelectConnectionType: callback when the user selects a connection type.  If desired, this property should be set prior to calling -show, and should not be set while the picker is visible.
  */
-@property(nonatomic,assign) GKPeerPickerConnectionType connectionTypesMask;
+@property(nonatomic, assign) GKPeerPickerConnectionType connectionTypesMask;
 
 /* The delegate receives notifications when the user interacts with the picker interface. If this property is nil, the picker is dismissed immediately if you try to show it.
  */
-@property(nonatomic,assign) id<GKPeerPickerControllerDelegate> delegate;
+@property(nonatomic, nullable, assign) id<GKPeerPickerControllerDelegate> delegate;
 
 /* Show the picker.
  */
@@ -85,3 +87,5 @@ NS_CLASS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController from the Multipee
 @property(nonatomic,readonly,getter=isVisible) BOOL visible;
 
 @end
+
+NS_ASSUME_NONNULL_END

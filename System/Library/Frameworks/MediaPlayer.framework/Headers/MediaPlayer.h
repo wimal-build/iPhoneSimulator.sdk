@@ -18,6 +18,7 @@
 #import <MediaPlayer/MPMoviePlayerViewController.h>
 #import <MediaPlayer/MPMusicPlayerController.h>
 #import <MediaPlayer/MPNowPlayingInfoCenter.h>
+#import <MediaPlayer/MPNowPlayingInfoLanguageOption.h>
 #import <MediaPlayer/MPPlayableContentDataSource.h>
 #import <MediaPlayer/MPPlayableContentDelegate.h>
 #import <MediaPlayer/MPPlayableContentManager.h>

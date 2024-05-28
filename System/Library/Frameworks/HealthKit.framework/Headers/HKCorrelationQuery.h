@@ -7,7 +7,10 @@
 
 #import <HealthKit/HKQuery.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKCorrelationType;
+@class HKCorrelation;
 
 /*!
  @class         HKCorrelationQuery
@@ -27,7 +30,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                 to objects of the key type. 
  
  */
-@property (readonly, copy) NSDictionary *samplePredicates;
+@property (readonly, copy, nullable) NSDictionary<__kindof HKSampleType *, NSPredicate *> *samplePredicates;
 
 /*!
  @method    initWithTypes:predicate:samplePredicate:completion:
@@ -42,7 +45,9 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                                 filtered.
  */
 - (instancetype)initWithType:(HKCorrelationType *)correlationType
-                   predicate:(NSPredicate *)predicate
-            samplePredicates:(NSDictionary *)samplePredicates
-                  completion:(void(^)(HKCorrelationQuery *query, NSArray *correlations, NSError *error))completion;
+                   predicate:(nullable NSPredicate *)predicate
+            samplePredicates:(nullable NSDictionary<HKSampleType *, NSPredicate *> *)samplePredicates
+                  completion:(void(^)(HKCorrelationQuery *query, NSArray<HKCorrelation *> * __nullable correlations, NSError * __nullable error))completion;
 @end
+
+NS_ASSUME_NONNULL_END

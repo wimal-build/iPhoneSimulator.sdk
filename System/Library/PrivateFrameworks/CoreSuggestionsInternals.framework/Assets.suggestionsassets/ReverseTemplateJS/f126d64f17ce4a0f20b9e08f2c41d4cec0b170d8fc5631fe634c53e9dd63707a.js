@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("jal.com-confirmation-en",function(e){return/^Confirmation e\-mail$/.test(e.subject)},function(e){if(/^Confirmation e\-mail$/.test(e.subject)){var t="en_GB",n={};n.payment="Payment Details",n.total="Total",n.itinerary="Itinerary Details",n.operated="Operated by",n.passenger="Passenger Information";var a=loadHelper("jal.com-confirmation-skeleton.js");return a(e,t,n)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/350/352","SGd787fd0e")]);

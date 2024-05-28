@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+(function(){return function(){var e={};return e.reservationIdPrefix=/Confirmaci\xf3n de Reserva/,e.guestName=/ESTOS SON LOS DETALLES DE [S|T]U RESERVA/,e.dates="Fecha:",e.carLocation="Localidad:",e.totalPrice="Precio del alquiler:",e.brand=/Tipo de Coche\:/,e.cancellationHeader=/Avis Cancelaci\xf3n de Reserva/,e.reservationIdCancel=/N\xfamero de Cancelaci\xf3n de Reserva (.+)/,e.pendingReservation=/NEED TO BE IMPLEMENTED/,e.pendingSubject=/NEED TO BE IMPLEMENTED/,e}}).call();

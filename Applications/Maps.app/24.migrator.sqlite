@@ -1,0 +1,7 @@
+-- Migrates traces from v24 to v25
+
+BEGIN TRANSACTION;
+
+ALTER TABLE route_selections ADD COLUMN selected_route_index INTEGER AFTER route_id;
+
+COMMIT;

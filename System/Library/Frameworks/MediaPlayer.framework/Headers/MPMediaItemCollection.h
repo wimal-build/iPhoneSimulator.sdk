@@ -9,21 +9,25 @@
 #import <MediaPlayer/MediaPlayerDefines.h>
 #import <MediaPlayer/MPMediaItem.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 // An MPMediaItemCollection is a collection of related MPMediaItems in a media library.
 
-MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaItemCollection : MPMediaEntity
+MP_EXTERN_CLASS_AVAILABLE(3_0)
+
+@interface MPMediaItemCollection : MPMediaEntity
 
 // Creates a media item collection by copying an array of MPMediaItems.
-+ (MPMediaItemCollection *)collectionWithItems:(NSArray *)items;
++ (MPMediaItemCollection *)collectionWithItems:(NSArray<MPMediaItem *> *)items;
 
-- (instancetype)initWithItems:(NSArray *)items NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithItems:(NSArray<MPMediaItem *> *)items NS_DESIGNATED_INITIALIZER;
 
 // Returns the MPMediaItems in the collection.
-@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSArray<MPMediaItem *> *items;
 
 // Returns an item representative of other items in the collection.
 // This item can be used for common item properties in the collection, often more efficiently than fetching an item out of the items array.
-@property (nonatomic, readonly) MPMediaItem *representativeItem;
+@property (nonatomic, readonly, nullable) MPMediaItem *representativeItem;
 
 // Returns the number of items in the collection.
 // In some cases, this is more efficient than fetching the items array and asking for the count.
@@ -33,3 +37,5 @@ MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaItemCollection : MPMediaEntity
 @property (nonatomic, readonly) MPMediaType mediaTypes;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,7 +9,7 @@ defaultvoice:Mei-Jia
     <language>Taiwanese Mandarin</language>
     <langcode>MNT</langcode>
     <langid>29</langid>
-    <langversion>5.2.4.14072</langversion>
+    <langversion>5.2.4.15133</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Mei-Jia</voice>
     <voiceversion>5.2.4.13289</voiceversion>
@@ -17,6 +17,7 @@ defaultvoice:Mei-Jia
     <age>Adult</age>
     <fecfg>cfg4</fecfg>
     <voiceml>no</voiceml>
+    <noclmset>enu,eng</noclmset>
     <fedataprefix></fedataprefix>
     <feextcfgdataprefix></feextcfgdataprefix>
     <fedatapackaging>clc</fedatapackaging>
@@ -29,6 +30,7 @@ defaultvoice:Mei-Jia
     <overheadframes></overheadframes>
     <audiooutputmimetype>audio/L16;rate=22050</audiooutputmimetype>
     <audiooutputsamplebits>16</audiooutputsamplebits>
+    <tokentnnumframesinblock>50</tokentnnumframesinblock>
     <nlucompatvc6be>yes</nlucompatvc6be>
     <compatstrongbnd>no</compatstrongbnd>
   </PARAMETERS>
@@ -49,6 +51,7 @@ defaultvoice:Mei-Jia
     <COMPONENT>pp/sent_parser</COMPONENT>
     <COMPONENT>pp/word_parser</COMPONENT>
     <COMPONENT>fe/fe_wordseg</COMPONENT>
+    <COMPONENT>fe/fe_sprop</COMPONENT>
     <COMPONENT>fe/fe_initlingdb</COMPONENT>
     <COMPONENT>fe/fe_promptorth</COMPONENT>
     <COMPONENT>fe/tokentn</COMPONENT>
@@ -62,6 +65,7 @@ defaultvoice:Mei-Jia
     <COMPONENT>fe/fe_prmfx</COMPONENT>
     <COMPONENT>fe/fe_prompt</COMPONENT>
     <COMPONENT>fe/fe_global</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
     <COMPONENT>select/bet3</COMPONENT>
     <COMPONENT>synth/bet3</COMPONENT>
     <COMPONENT>audioinserter</COMPONENT>

@@ -7,10 +7,15 @@
 
 #import <UIKit/UIKit.h>
 #import <AddressBook/ABRecord.h>
+#import <PassKit/PKPaymentRequest.h>
 
-@class PKPaymentRequest;
+NS_ASSUME_NONNULL_BEGIN
+
 @class PKPayment;
+@class PKContact;
+@class PKPaymentMethod;
 @class PKShippingMethod;
+@class PKPaymentSummaryItem;
 @class PKPaymentAuthorizationViewController;
 
 typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
@@ -65,7 +70,7 @@ typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
 // until it has invoked the completion block.
 - (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
                    didSelectShippingMethod:(PKShippingMethod *)shippingMethod
-                                completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray *summaryItems))completion;
+                                completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKPaymentSummaryItem *> *summaryItems))completion;
 
 // Sent when the user has selected a new shipping address.  The delegate should inspect the
 // address and must invoke the completion block with an updated array of PKPaymentSummaryItem objects.
@@ -74,7 +79,23 @@ typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
 // until it has invoked the completion block.
 - (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
                   didSelectShippingAddress:(ABRecordRef)address
-                                completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray *shippingMethods, NSArray *summaryItems))completion;
+                                completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods,
+                                                     NSArray<PKPaymentSummaryItem *> *summaryItems))completion NS_DEPRECATED_IOS(8_0, 9_0, "Use the CNContact backed delegate method instead");
+
+- (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
+                  didSelectShippingContact:(PKContact *)contact
+                                completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods,
+                                                     NSArray<PKPaymentSummaryItem *> *summaryItems))completion NS_AVAILABLE_IOS(9_0);
+
+
+// Sent when the user has selected a new payment card.  Use this delegate callback if you need to
+// update the summary items in response to the card type changing (for example, applying credit card surcharges)
+//
+// The delegate will receive no further callbacks except paymentAuthorizationViewControllerDidFinish:
+// until it has invoked the completion block.
+- (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
+                    didSelectPaymentMethod:(PKPaymentMethod *)paymentMethod
+                                completion:(void (^)(NSArray<PKPaymentSummaryItem *> *summaryItems))completion NS_AVAILABLE_IOS(9_0);
 
 @end
 
@@ -96,10 +117,14 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 // by the merchant.
 // NO if the user cannot authorize payments on these networks or if the user is restricted from
 // authorizing payments.
-+ (BOOL)canMakePaymentsUsingNetworks:(NSArray *)supportedNetworks;
++ (BOOL)canMakePaymentsUsingNetworks:(NSArray<NSString *> *)supportedNetworks;
+
+// Determine whether this device can process payments using the specified networks and capabilities bitmask
+// See -canMakePaymentsUsingNetworks:
++ (BOOL)canMakePaymentsUsingNetworks:(NSArray<NSString *> *)supportedNetworks capabilities:(PKMerchantCapability)capabilties NS_AVAILABLE_IOS(9_0);
 
 // The view controller's delegate.
-@property (nonatomic, assign) id<PKPaymentAuthorizationViewControllerDelegate> delegate;
+@property (nonatomic, assign, nullable) id<PKPaymentAuthorizationViewControllerDelegate> delegate;
 
 // Initializes and returns a newly created view controller for the supplied payment.
 // It is your responsibility to present and dismiss the view controller using the
@@ -107,3 +132,5 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 - (instancetype)initWithPaymentRequest:(PKPaymentRequest *)request NS_DESIGNATED_INITIALIZER;
 
 @end
+
+NS_ASSUME_NONNULL_END

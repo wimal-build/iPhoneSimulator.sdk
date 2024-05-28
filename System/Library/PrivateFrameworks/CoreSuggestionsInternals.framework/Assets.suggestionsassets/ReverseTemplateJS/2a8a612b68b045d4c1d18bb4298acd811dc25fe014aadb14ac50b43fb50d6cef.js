@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("hardens.com-noevent-en",function(){},function(){},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/929/951/952","SGe8b9054b")]);

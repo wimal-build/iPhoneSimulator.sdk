@@ -11,7 +11,10 @@
 #import <UIKit/UIPopoverSupport.h>
 #import <UIKit/UIPopoverBackgroundView.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UIPopoverPresentationController;
+
 
 @protocol UIPopoverPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
 @optional
@@ -27,20 +30,24 @@
 
 // -popoverPresentationController:willRepositionPopoverToRect:inView: is called on your delegate when the
 // popover may require a different view or rectangle.
-- (void)popoverPresentationController:(UIPopoverPresentationController *)popoverPresentationController willRepositionPopoverToRect:(inout CGRect *)rect inView:(inout UIView **)view;
+- (void)popoverPresentationController:(UIPopoverPresentationController *)popoverPresentationController willRepositionPopoverToRect:(inout CGRect *)rect inView:(inout UIView  * __nonnull * __nonnull)view;
 
 @end
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPopoverPresentationController : UIPresentationController
 
-@property (nonatomic, assign) id <UIPopoverPresentationControllerDelegate> delegate;
+@property (nullable, nonatomic, weak) id <UIPopoverPresentationControllerDelegate> delegate;
 
 @property (nonatomic, assign) UIPopoverArrowDirection permittedArrowDirections;
 
-@property (nonatomic, retain) UIView *sourceView;
+@property (nullable, nonatomic, strong) UIView *sourceView;
 @property (nonatomic, assign) CGRect sourceRect;
 
-@property (nonatomic, retain) UIBarButtonItem *barButtonItem;
+// By default, a popover is not allowed to overlap its source view rect.
+// When this is set to YES, popovers with more content than available space are allowed to overlap the source view rect in order to accommodate the content.
+@property (nonatomic, assign) BOOL canOverlapSourceViewRect NS_AVAILABLE_IOS(9_0);
+
+@property (nullable, nonatomic, strong) UIBarButtonItem *barButtonItem;
 
 // Returns the direction the arrow is pointing on a presented popover. Before presentation, this returns UIPopoverArrowDirectionUnknown.
 @property (nonatomic, readonly) UIPopoverArrowDirection arrowDirection;
@@ -48,10 +55,10 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPopoverPresentationController : UIPrese
 // By default, a popover disallows interaction with any view outside of the popover while the popover is presented.
 // This property allows the specification of an array of UIView instances which the user is allowed to interact with
 // while the popover is up.
-@property (nonatomic, copy) NSArray *passthroughViews;
+@property (nullable, nonatomic, copy) NSArray<UIView *> *passthroughViews;
 
 // Set popover background color. Set to nil to use default background color. Default is nil.
-@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nullable, nonatomic, copy) UIColor *backgroundColor;
 
 // Clients may wish to change the available area for popover display. The default implementation of this method always
 // returns insets which define 10 points from the edges of the display, and presentation of popovers always accounts
@@ -61,7 +68,8 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPopoverPresentationController : UIPrese
 
 // Clients may customize the popover background chrome by providing a class which subclasses `UIPopoverBackgroundView`
 // and which implements the required instance and class methods on that class.
-@property (nonatomic, readwrite, retain) Class <UIPopoverBackgroundViewMethods> popoverBackgroundViewClass;
+@property (nullable, nonatomic, readwrite, strong) Class <UIPopoverBackgroundViewMethods> popoverBackgroundViewClass;
 
 @end
 
+NS_ASSUME_NONNULL_END

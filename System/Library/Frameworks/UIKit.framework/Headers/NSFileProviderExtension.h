@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_CLASS_AVAILABLE_IOS(8_0) @interface NSFileProviderExtension : NSObject
 // You don't want to override these
 
@@ -28,16 +30,16 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface NSFileProviderExtension : NSObject
 // Should return the URL corresponding to a specific identifier. Fail if it's not a subpath of documentStorageURL.
 // This is a static mapping; each identifier must always return a path corresponding to the same file.
 // By default, this returns the path relative to the path returned by documentStorageURL.
-- (NSURL *)URLForItemWithPersistentIdentifier:(NSString *)identifier;
-- (NSString *)persistentIdentifierForItemAtURL:(NSURL *)url;
+- (nullable NSURL *)URLForItemWithPersistentIdentifier:(NSString *)identifier;
+- (nullable NSString *)persistentIdentifierForItemAtURL:(NSURL *)url;
 
 // These need to be overridden. None of them should call super.
 
 // Should call + writePlaceholderAtURL: with the placeholder URL, then call the completion handler with that URL.
-- (void)providePlaceholderAtURL:(NSURL *)url completionHandler:(void (^)(NSError *error))completionHandler;
+- (void)providePlaceholderAtURL:(NSURL *)url completionHandler:(void (^)(NSError * __nullable error))completionHandler;
 
 // Should ensure that the actual file is in the position returned by URLForItemWithIdentifier:, then call the completion handler
-- (void)startProvidingItemAtURL:(NSURL *)url completionHandler:(void (^)(NSError *error))completionHandler;
+- (void)startProvidingItemAtURL:(NSURL *)url completionHandler:(void (^)(NSError * __nullable error))completionHandler;
 
 // Called at some point after the file has changed; the provider may then trigger an upload
 - (void)itemChangedAtURL:(NSURL *)url;
@@ -46,3 +48,5 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface NSFileProviderExtension : NSObject
 // Care should be taken that the corresponding placeholder file stays behind after the content file has been deleted.
 - (void)stopProvidingItemAtURL:(NSURL *)url;
 @end
+
+NS_ASSUME_NONNULL_END

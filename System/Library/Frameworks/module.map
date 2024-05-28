@@ -1,6 +1,7 @@
-framework module * [extern_c] [system] {
+framework module * [extern_c] {
   exclude Kernel
   exclude System
+
 
 
 

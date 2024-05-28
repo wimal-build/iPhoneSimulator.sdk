@@ -9,7 +9,7 @@ defaultvoice:Kanya
     <language>Thai</language>
     <langcode>THT</langcode>
     <langid>33</langid>
-    <langversion>5.2.4.15023</langversion>
+    <langversion>5.2.4.15163</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Kanya</voice>
     <voiceversion>5.2.4.15029</voiceversion>
@@ -47,6 +47,7 @@ defaultvoice:Kanya
     <COMPONENT>pp/text_parser</COMPONENT>
     <COMPONENT>pp/sent_parser</COMPONENT>
     <COMPONENT>pp/word_parser</COMPONENT>
+    <COMPONENT>fe/fe_sprop</COMPONENT>
     <COMPONENT>fe/fe_initlingdb</COMPONENT>
     <COMPONENT>fe/fe_promptorth</COMPONENT>
     <COMPONENT>fe/tokentn</COMPONENT>
@@ -60,6 +61,7 @@ defaultvoice:Kanya
     <COMPONENT>fe/fe_prmfx</COMPONENT>
     <COMPONENT>fe/fe_prompt</COMPONENT>
     <COMPONENT>fe/fe_global</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
     <COMPONENT>select/bet3</COMPONENT>
     <COMPONENT>synth/bet3</COMPONENT>
     <COMPONENT>audioinserter</COMPONENT>
@@ -76,22 +78,7 @@ defaultvoice:Kanya
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
-    
-    
-    
-    
-    
-    
-    
-    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
-      rlst/yosemite/set/tht
-    </RESOURCE>
-    
-    
-    
-    
-    
-    
+
   </RESOURCES>
 </HEADER>
 </NUANCE>

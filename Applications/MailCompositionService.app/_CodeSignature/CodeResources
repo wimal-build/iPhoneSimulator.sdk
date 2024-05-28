@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		zTM8bXl9KWMsY01c+mS4Rc+5mJs=
+		aGnUocu3NxTYibKM+CwooJDzUtQ=
 		</data>
 		<key>MailCompositionService.entitlements</key>
 		<data>
-		7hF7zfT5zAHJftvkR75ZUo+FiUw=
+		zzS7mkJH/1+mSsx4hpKckDu5v8k=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -79,6 +79,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/MailCompositionService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qt3YXUkBAS1K/ZZLgfRcNWb5UZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/MailCompositionService.strings</key>
 		<dict>
 			<key>hash</key>
@@ -89,6 +98,15 @@
 			<true/>
 		</dict>
 		<key>es.lproj/MailCompositionService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUKxiyUIA8vgey6a2IM03cXYl1Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MailCompositionService.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -315,7 +333,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		CmZYBpmYEakHUbXYjOHNYyY4MLg=
+		PufKnKqBSYCniwK9xxV6uX3HGe4=
 		</data>
 		<key>vi.lproj/MailCompositionService.strings</key>
 		<dict>
@@ -358,7 +376,7 @@
 	<dict>
 		<key>MailCompositionService.entitlements</key>
 		<data>
-		7hF7zfT5zAHJftvkR75ZUo+FiUw=
+		zzS7mkJH/1+mSsx4hpKckDu5v8k=
 		</data>
 		<key>ar.lproj/MailCompositionService.strings</key>
 		<dict>
@@ -423,6 +441,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/MailCompositionService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qt3YXUkBAS1K/ZZLgfRcNWb5UZY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/MailCompositionService.strings</key>
 		<dict>
 			<key>hash</key>
@@ -433,6 +460,15 @@
 			<true/>
 		</dict>
 		<key>es.lproj/MailCompositionService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aUKxiyUIA8vgey6a2IM03cXYl1Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MailCompositionService.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -659,7 +695,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		CmZYBpmYEakHUbXYjOHNYyY4MLg=
+		PufKnKqBSYCniwK9xxV6uX3HGe4=
 		</data>
 		<key>vi.lproj/MailCompositionService.strings</key>
 		<dict>

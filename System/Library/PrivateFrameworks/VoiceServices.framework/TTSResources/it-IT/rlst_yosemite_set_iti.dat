@@ -1,0 +1,20 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.ITI_6.1.0
+
+[header]
+language = ITI
+charset = utf-8
+
+[data]
+## FB 57679
+/(Collegati) (a [Ii]nternet)/   -->   "\e\\toi=lhp:$1 \\ko.'l:E.ga.ti\e\\toi=orth\\ $2"
+## FB 57677 E.g. nel 2009 ha battuto"  past participle as: "mangiato, risolto, letto, fatto, rotto, visto, concesso, permesso, fuso, pervaso "
+/(ha) ([a-z]{1,5}[iaul]to)/   -->   "\e\\toi=lhp:ha\\'a\e\\toi=orth\\ $2"
+/(ha) ([a-z]{1,5}[aeo]tto)/   -->   "\e\\toi=lhp:ha\\'a\e\\toi=orth\\ $2"
+/(ha) ([a-z]{1,5}[ai]sto)/   -->   "\e\\toi=lhp:ha\\'a\e\\toi=orth\\ $2"
+/(ha) ([a-z]{1,5}esso)/   -->   "\e\\toi=lhp:ha\\'a\e\\toi=orth\\ $2"
+/(ha) ([a-z]{1,5}[uai]so)/   -->   "\e\\toi=lhp:ha\\'a\e\\toi=orth\\ $2"
+#reapply Vocalizer domain tag

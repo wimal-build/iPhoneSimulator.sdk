@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKQuantity;
 @class HKQuantityType;
 @class HKSource;
@@ -14,7 +16,8 @@
 /*!
  @enum          HKStatisticsOptions
  @abstract      Options for specifying which statistics to calculate
- @discussion    When querying for HKStatistics objects, an options bitmask will specify which statistics will be calculated.
+ @discussion    When querying for HKStatistics objects, an options bitmask will specify which statistics will be 
+                calculated.
  
                 Statistics are classified as discrete or cumulative.  If a discrete statistics option is specified for a
                 cumulative HKQuantityType, an exception will be thrown.  If a cumulative statistics options is specified
@@ -46,7 +49,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 @property (readonly, strong) HKQuantityType *quantityType;
 @property (readonly, strong) NSDate *startDate;
 @property (readonly, strong) NSDate *endDate;
-@property (readonly, strong) NSArray *sources;
+@property (readonly, strong, nullable) NSArray<HKSource *> *sources;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -57,39 +60,39 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @abstract      Returns the average quantity for the given source in the time period represented by the receiver.
  @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
  */
-- (HKQuantity *)averageQuantityForSource:(HKSource *)source;
+- (nullable HKQuantity *)averageQuantityForSource:(HKSource *)source;
 
 /*!
- @method        averageQuantityForSource:
+ @method        averageQuantity
  @abstract      Returns the average quantity in the time period represented by the receiver.
  */
-- (HKQuantity *)averageQuantity;
+- (nullable HKQuantity *)averageQuantity;
 
 /*!
  @method        minimumQuantityForSource:
  @abstract      Returns the minimum quantity for the given source in the time period represented by the receiver.
  @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
  */
-- (HKQuantity *)minimumQuantityForSource:(HKSource *)source;
+- (nullable HKQuantity *)minimumQuantityForSource:(HKSource *)source;
 
 /*!
- @method        averageQuantityForSource:
+ @method        minimumQuantity
  @abstract      Returns the minimum quantity in the time period represented by the receiver.
  */
-- (HKQuantity *)minimumQuantity;
+- (nullable HKQuantity *)minimumQuantity;
 
 /*!
  @method        maximumQuantityForSource:
  @abstract      Returns the maximum quantity for the given source in the time period represented by the receiver.
  @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
  */
-- (HKQuantity *)maximumQuantityForSource:(HKSource *)source;
+- (nullable HKQuantity *)maximumQuantityForSource:(HKSource *)source;
 
 /*!
- @method        averageQuantityForSource:
+ @method        maximumQuantity
  @abstract      Returns the maximum quantity in the time period represented by the receiver.
  */
-- (HKQuantity *)maximumQuantity;
+- (nullable HKQuantity *)maximumQuantity;
 
 /* Cumulative Quantities */
 
@@ -98,12 +101,14 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @abstract      Returns the sum quantity for the given source in the time period represented by the receiver.
  @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
  */
-- (HKQuantity *)sumQuantityForSource:(HKSource *)source;
+- (nullable HKQuantity *)sumQuantityForSource:(HKSource *)source;
 
 /*!
- @method        averageQuantityForSource:
+ @method        sumQuantity
  @abstract      Returns the sum of quantities in the time period represented by the receiver.
  */
-- (HKQuantity *)sumQuantity;
+- (nullable HKQuantity *)sumQuantity;
 
 @end
+
+NS_ASSUME_NONNULL_END

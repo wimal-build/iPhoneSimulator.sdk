@@ -8,6 +8,8 @@
 #import <HealthKit/HKObject.h>
 #import <HealthKit/HKSample.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKCategoryType;
 
 /*!
@@ -30,7 +32,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 
 /*!
  @method     categorySampleWithType:value:startDate:endDate:metadata:
- @abstract   Creates a new HKQuantitySample.
+ @abstract   Creates a new HKCategorySample.
  
  @param      type       The type of the sample.
  @param      value      The enumeration value for the sample. See HKCategoryTypeIdentifier for appropriate value.
@@ -42,11 +44,11 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                                  value:(NSInteger)value
                              startDate:(NSDate *)startDate
                                endDate:(NSDate *)endDate
-                              metadata:(NSDictionary *)metadata;
+                              metadata:(nullable NSDictionary<NSString *, id> *)metadata;
 
 /*!
  @method     categorySampleWithType:value:startDate:endDate:
- @abstract   Creates a new HKQuantitySample.
+ @abstract   Creates a new HKCategorySample.
  
  @param      type       The type of the sample.
  @param      value      The enumeration value for the sample. See HKCategoryTypeIdentifier for appropriate value.
@@ -57,9 +59,30 @@ HK_CLASS_AVAILABLE_IOS(8_0)
                                  value:(NSInteger)value
                              startDate:(NSDate *)startDate
                                endDate:(NSDate *)endDate;
+
+/*!
+ @method     categorySampleWithType:value:startDate:endDate:device:metadata:
+ @abstract   Creates a new HKCategorySample.
+ 
+ @param      type       The type of the sample.
+ @param      value      The enumeration value for the sample. See HKCategoryTypeIdentifier for appropriate value.
+ @param      startDate  The start date of the sample.
+ @param      endDate    The end date of the sample.
+ @param      device     The HKDevice that generated the sample (optional).
+ @param      metadata   Metadata for the sample (optional).
+ */
++ (instancetype)categorySampleWithType:(HKCategoryType *)type
+                                 value:(NSInteger)value
+                             startDate:(NSDate *)startDate
+                               endDate:(NSDate *)endDate
+                                device:(nullable HKDevice *)device
+                              metadata:(nullable NSDictionary<NSString *, id> *)metadata NS_AVAILABLE_IOS(9_0);
+
 @end
 
 /*!
  @constant     HKPredicateKeyPathCategoryValue
  */
 HK_EXTERN NSString * const HKPredicateKeyPathCategoryValue NS_AVAILABLE_IOS(8_0);
+
+NS_ASSUME_NONNULL_END

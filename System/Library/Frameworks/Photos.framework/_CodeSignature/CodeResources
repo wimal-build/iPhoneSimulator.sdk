@@ -6,71 +6,87 @@
 	<dict>
 		<key>Headers/PHAdjustmentData.h</key>
 		<data>
-		JJWhktrQlLHWe88bdcBR5wbXGnY=
+		4OW8QEgBlapnlAtqYhzIwyGzo4o=
 		</data>
 		<key>Headers/PHAsset.h</key>
 		<data>
-		Yx/k9LjyTxbmSyeTzmsaB2Tz5SY=
+		sYxO/YfjhvN5tc2+eNN17oFUP9o=
 		</data>
 		<key>Headers/PHAssetChangeRequest.h</key>
 		<data>
-		MV7Z6xGXT3rBbYvm6DwptlSnR4A=
+		T9Kk+mkIM8QuZE7cK1k7p48hQUM=
 		</data>
 		<key>Headers/PHAssetCollectionChangeRequest.h</key>
 		<data>
-		ws/bjR89q7tUBmeOzEUW98erjPw=
+		j9/lmuUiLu87oJpqAzvoAbodV8E=
+		</data>
+		<key>Headers/PHAssetCreationRequest.h</key>
+		<data>
+		ucTV/fa9TmQpDpLtCY9oh2xfbrE=
+		</data>
+		<key>Headers/PHAssetResource.h</key>
+		<data>
+		B4MG0FGeZ6979U/ygj5m3zZWkm8=
+		</data>
+		<key>Headers/PHAssetResourceManager.h</key>
+		<data>
+		ojTDGT9K5ivv7IyTnDNccd6yIT0=
 		</data>
 		<key>Headers/PHChange.h</key>
 		<data>
-		Yg374GLMmprhF1jAKrz7emkNluw=
+		LvxvaA/XCRE6Bp95Yq7GNZozHYU=
 		</data>
 		<key>Headers/PHCollection.h</key>
 		<data>
-		KFzP2KCNei+csJVXCRAwowtEie0=
+		UWkxvdn6lCduZv0xE3XA5yeNUOQ=
 		</data>
 		<key>Headers/PHCollectionListChangeRequest.h</key>
 		<data>
-		ILgPbKXAxxHAJJS/0wCnz6d5qMo=
+		uyVjDtxLykLGb4YeKokCClSwi4I=
 		</data>
 		<key>Headers/PHContentEditingInput.h</key>
 		<data>
-		2Wdgiw5O5Aghk5x40c9cJo40580=
+		MfBR8IGMPhB6IxmcDvgtY63vijo=
 		</data>
 		<key>Headers/PHContentEditingOutput.h</key>
 		<data>
-		GrsrSy5OY6pILh07dzRySkyifEE=
+		QPhp8CasGAiN9kB3zlpE2jM7MuQ=
 		</data>
 		<key>Headers/PHFetchOptions.h</key>
 		<data>
-		G1RiO/YlzMebrnGIWjNGEL4dewI=
+		Xtw/Q0ST8IhdxcrEQkLqqR6YUQo=
 		</data>
 		<key>Headers/PHFetchResult.h</key>
 		<data>
-		TPoz7vj9s+Yr9lLYe9A/NNv6TN4=
+		dVFRG1H8Q54FctNbU4ij63HF718=
 		</data>
 		<key>Headers/PHImageManager.h</key>
 		<data>
-		Lh8bUn52IcbYF+Os2r0wIvhbmlo=
+		L/Li8z3UqCdOZUe6ieWeZ8AyVLw=
 		</data>
 		<key>Headers/PHObject.h</key>
 		<data>
-		VkbfGEJFIjty1tAozF2jm7r/uU0=
+		7CtFIvp3aCEkZ/v9j9DJVGtqiHM=
 		</data>
 		<key>Headers/PHPhotoLibrary.h</key>
 		<data>
-		urmtlQ0WGSlr1HCMWXwOuzQKY3o=
+		afDNrkoS9pZjHsYYv4FCLGvqbxo=
 		</data>
 		<key>Headers/Photos.h</key>
 		<data>
-		7bua1aipEbAkQuRBNcoXsdOyR10=
+		JgvJtFwc+SVTcVgTeLzxKa064PE=
 		</data>
 		<key>Headers/PhotosTypes.h</key>
 		<data>
-		XmlQL32Xma90nVoC6J3XEuwW3iM=
+		XFp3oxuIvSwANu/9qPj9z/+00c8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dZopSv8xn4/mxSeRpWHytRJ4uaE=
+		h+rlhg86zyPt7pFGViIqN6XSAWc=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		DLg+FlUEUN8PoriGLET00/aZvPo=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -135,6 +151,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -145,6 +170,15 @@
 			<true/>
 		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -369,10 +403,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		DTYT3ZphT1CE7/0SN4obsMpUBKA=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -414,67 +444,83 @@
 	<dict>
 		<key>Headers/PHAdjustmentData.h</key>
 		<data>
-		JJWhktrQlLHWe88bdcBR5wbXGnY=
+		4OW8QEgBlapnlAtqYhzIwyGzo4o=
 		</data>
 		<key>Headers/PHAsset.h</key>
 		<data>
-		Yx/k9LjyTxbmSyeTzmsaB2Tz5SY=
+		sYxO/YfjhvN5tc2+eNN17oFUP9o=
 		</data>
 		<key>Headers/PHAssetChangeRequest.h</key>
 		<data>
-		MV7Z6xGXT3rBbYvm6DwptlSnR4A=
+		T9Kk+mkIM8QuZE7cK1k7p48hQUM=
 		</data>
 		<key>Headers/PHAssetCollectionChangeRequest.h</key>
 		<data>
-		ws/bjR89q7tUBmeOzEUW98erjPw=
+		j9/lmuUiLu87oJpqAzvoAbodV8E=
+		</data>
+		<key>Headers/PHAssetCreationRequest.h</key>
+		<data>
+		ucTV/fa9TmQpDpLtCY9oh2xfbrE=
+		</data>
+		<key>Headers/PHAssetResource.h</key>
+		<data>
+		B4MG0FGeZ6979U/ygj5m3zZWkm8=
+		</data>
+		<key>Headers/PHAssetResourceManager.h</key>
+		<data>
+		ojTDGT9K5ivv7IyTnDNccd6yIT0=
 		</data>
 		<key>Headers/PHChange.h</key>
 		<data>
-		Yg374GLMmprhF1jAKrz7emkNluw=
+		LvxvaA/XCRE6Bp95Yq7GNZozHYU=
 		</data>
 		<key>Headers/PHCollection.h</key>
 		<data>
-		KFzP2KCNei+csJVXCRAwowtEie0=
+		UWkxvdn6lCduZv0xE3XA5yeNUOQ=
 		</data>
 		<key>Headers/PHCollectionListChangeRequest.h</key>
 		<data>
-		ILgPbKXAxxHAJJS/0wCnz6d5qMo=
+		uyVjDtxLykLGb4YeKokCClSwi4I=
 		</data>
 		<key>Headers/PHContentEditingInput.h</key>
 		<data>
-		2Wdgiw5O5Aghk5x40c9cJo40580=
+		MfBR8IGMPhB6IxmcDvgtY63vijo=
 		</data>
 		<key>Headers/PHContentEditingOutput.h</key>
 		<data>
-		GrsrSy5OY6pILh07dzRySkyifEE=
+		QPhp8CasGAiN9kB3zlpE2jM7MuQ=
 		</data>
 		<key>Headers/PHFetchOptions.h</key>
 		<data>
-		G1RiO/YlzMebrnGIWjNGEL4dewI=
+		Xtw/Q0ST8IhdxcrEQkLqqR6YUQo=
 		</data>
 		<key>Headers/PHFetchResult.h</key>
 		<data>
-		TPoz7vj9s+Yr9lLYe9A/NNv6TN4=
+		dVFRG1H8Q54FctNbU4ij63HF718=
 		</data>
 		<key>Headers/PHImageManager.h</key>
 		<data>
-		Lh8bUn52IcbYF+Os2r0wIvhbmlo=
+		L/Li8z3UqCdOZUe6ieWeZ8AyVLw=
 		</data>
 		<key>Headers/PHObject.h</key>
 		<data>
-		VkbfGEJFIjty1tAozF2jm7r/uU0=
+		7CtFIvp3aCEkZ/v9j9DJVGtqiHM=
 		</data>
 		<key>Headers/PHPhotoLibrary.h</key>
 		<data>
-		urmtlQ0WGSlr1HCMWXwOuzQKY3o=
+		afDNrkoS9pZjHsYYv4FCLGvqbxo=
 		</data>
 		<key>Headers/Photos.h</key>
 		<data>
-		7bua1aipEbAkQuRBNcoXsdOyR10=
+		JgvJtFwc+SVTcVgTeLzxKa064PE=
 		</data>
 		<key>Headers/PhotosTypes.h</key>
 		<data>
-		XmlQL32Xma90nVoC6J3XEuwW3iM=
+		XFp3oxuIvSwANu/9qPj9z/+00c8=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		DLg+FlUEUN8PoriGLET00/aZvPo=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -539,6 +585,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -549,6 +604,15 @@
 			<true/>
 		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -773,10 +837,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		DTYT3ZphT1CE7/0SN4obsMpUBKA=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

@@ -13,12 +13,14 @@
 	<array>
 		<string>/private/var/mobile/Library/Logs/CrashReporter/</string>
 		<string>/private/var/logs/CrashReporter/</string>
-		<string>/private/tmp/</string>
+		<string>/private/var/tmp/</string>
 	</array>
 	<key>com.apple.security.exception.files.absolute-path.read-only</key>
 	<array>
 		<string>/private/var/mobile/Library/Logs/CrashReporter/</string>
+		<string>/var/mobile/Library/Logs/CrashReporter/WiFi/</string>
 		<string>/private/var/logs/CrashReporter/</string>
+		<string>/private/var/logs/</string>
 	</array>
 </dict>
 </plist>

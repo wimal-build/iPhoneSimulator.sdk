@@ -1,7 +1,7 @@
-// HMCharacteristic.h
+// HMCharacteristicDefines.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 /*!
  * @group Characteristic Valid Values
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueDoorState) {
     HMCharacteristicValueDoorStateOpening,
     HMCharacteristicValueDoorStateClosing,
     HMCharacteristicValueDoorStateStopped,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
 
 /*!
  @enum      HMCharacteristicValueHeatingCooling
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueHeatingCooling) {
     HMCharacteristicValueHeatingCoolingHeat,
     HMCharacteristicValueHeatingCoolingCool,
     HMCharacteristicValueHeatingCoolingAuto,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
 
 /*!
  @enum      HMCharacteristicValueRotationDirection
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueHeatingCooling) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueRotationDirection) {
     HMCharacteristicValueRotationDirectionClockwise = 0,
     HMCharacteristicValueRotationDirectionCounterClockwise,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
 
 /*!
  @enum      HMCharacteristicValueTemperatureUnit
@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueRotationDirection) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueTemperatureUnit) {
     HMCharacteristicValueTemperatureUnitCelsius = 0,
     HMCharacteristicValueTemperatureUnitFahrenheit,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
 
 /*!
  @enum      HMCharacteristicValueLockMechanismState
@@ -76,7 +76,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismState) {
     HMCharacteristicValueLockMechanismStateSecured,
     HMCharacteristicValueLockMechanismStateJammed,
     HMCharacteristicValueLockMechanismStateUnknown,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
 
 /*!
  @enum      HMCharacteristicValueLockMechanismLastKnownAction
@@ -105,4 +105,84 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismLastKnownAction) {
     HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout,
     HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement,
     HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+
+
+/*!
+ @enum      HMCharacteristicValueAirParticulateSize
+
+ @constant  HMCharacteristicValueAirParticulateSize2_5          Air particulate size of 2.5 micrometers.
+ @constant  HMCharacteristicValueAirParticulateSize10           Air particulate size of 10 micrometers.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueAirParticulateSize) {
+    HMCharacteristicValueAirParticulateSize2_5 = 0,
+    HMCharacteristicValueAirParticulateSize10,
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+
+
+/*!
+ @enum      HMCharacteristicValueAirQuality
+
+ @constant  HMCharacteristicValueAirQualityUnknown              Air quality is unknown.
+ @constant  HMCharacteristicValueAirQualityExcellent            Air quality is excellent.
+ @constant  HMCharacteristicValueAirQualityGood                 Air quality is good.
+ @constant  HMCharacteristicValueAirQualityFair                 Air quality is fair.
+ @constant  HMCharacteristicValueAirQualityInferior             Air quality is inferior.
+ @constant  HMCharacteristicValueAirQualityPoor                 Air quality is poor.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueAirQuality) {
+    HMCharacteristicValueAirQualityUnknown = 0,
+    HMCharacteristicValueAirQualityExcellent,
+    HMCharacteristicValueAirQualityGood,
+    HMCharacteristicValueAirQualityFair,
+    HMCharacteristicValueAirQualityInferior,
+    HMCharacteristicValueAirQualityPoor,
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+
+
+/*!
+ @enum      HMCharacteristicValuePositionState
+
+ @constant  HMCharacteristicValuePositionStateClosing           Position is moving towards minimum value.
+ @constant  HMCharacteristicValuePositionStateOpening           Position is moving towards maximum value.
+ @constant  HMCharacteristicValuePositionStateStopped           Position is Stopped.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValuePositionState) {
+    HMCharacteristicValuePositionStateClosing = 0,
+    HMCharacteristicValuePositionStateOpening,
+    HMCharacteristicValuePositionStateStopped,
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+
+
+/*!
+ @enum      HMCharacteristicValueCurrentSecuritySystemState
+
+ @constant  HMCharacteristicValueCurrentSecuritySystemStateStayArm       Home is occupied and residents are active.
+ @constant  HMCharacteristicValueCurrentSecuritySystemStateAwayArm       Home is unoccupied.
+ @constant  HMCharacteristicValueCurrentSecuritySystemStateNightArm      Home is occupied and residents are sleeping.
+ @constant  HMCharacteristicValueCurrentSecuritySystemStateDisarmed      SecuritySystem is disarmed.
+ @constant  HMCharacteristicValueCurrentSecuritySystemStateTriggered     SecuritySystem is triggered.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentSecuritySystemState) {
+    HMCharacteristicValueCurrentSecuritySystemStateStayArm = 0,
+    HMCharacteristicValueCurrentSecuritySystemStateAwayArm,
+    HMCharacteristicValueCurrentSecuritySystemStateNightArm,
+    HMCharacteristicValueCurrentSecuritySystemStateDisarmed,
+    HMCharacteristicValueCurrentSecuritySystemStateTriggered,
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+
+
+/*!
+ @enum      HMCharacteristicValueTargetSecuritySystemState
+
+ @constant  HMCharacteristicValueTargetSecuritySystemStateStayArm        Home is occupied and residents are active.
+ @constant  HMCharacteristicValueTargetSecuritySystemStateAwayArm        Home is unoccupied.
+ @constant  HMCharacteristicValueTargetSecuritySystemStateNightArm       Home is occupied and residents are sleeping.
+ @constant  HMCharacteristicValueTargetSecuritySystemStateDisarm         Disarm.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetSecuritySystemState) {
+    HMCharacteristicValueTargetSecuritySystemStateStayArm = 0,
+    HMCharacteristicValueTargetSecuritySystemStateAwayArm,
+    HMCharacteristicValueTargetSecuritySystemStateNightArm,
+    HMCharacteristicValueTargetSecuritySystemStateDisarm,
+} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);

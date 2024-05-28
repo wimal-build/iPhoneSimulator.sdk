@@ -1,4 +1,4 @@
-framework module CoreMotion [extern_c] [system] {
+framework module CoreMotion [extern_c] {
   umbrella header "CoreMotion.h"
 
   export *

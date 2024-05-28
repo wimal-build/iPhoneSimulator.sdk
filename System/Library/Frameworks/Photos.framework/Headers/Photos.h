@@ -21,10 +21,14 @@
 #import <Photos/PHChange.h>
 
 #import <Photos/PHAssetChangeRequest.h>
+#import <Photos/PHAssetCreationRequest.h>
 #import <Photos/PHAssetCollectionChangeRequest.h>
 #import <Photos/PHCollectionListChangeRequest.h>
 
 #import <Photos/PHImageManager.h>
+
+#import <Photos/PHAssetResourceManager.h>
+#import <Photos/PHAssetResource.h>
 
 #import <Photos/PHAdjustmentData.h>
 #import <Photos/PHContentEditingInput.h>

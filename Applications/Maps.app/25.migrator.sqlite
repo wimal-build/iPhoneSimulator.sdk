@@ -1,0 +1,14 @@
+-- Migrates traces from v25 to v26
+
+BEGIN TRANSACTION;
+
+CREATE TABLE compass_heading_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+true_heading        NUMERIC,
+magnetic_heading    NUMERIC,
+accuracy            NUMERIC
+);
+
+COMMIT;

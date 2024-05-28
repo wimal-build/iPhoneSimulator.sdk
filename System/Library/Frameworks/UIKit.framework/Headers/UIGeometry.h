@@ -10,6 +10,8 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef struct UIEdgeInsets {
     CGFloat top, left, bottom, right;  // specify amount to inset (positive) for each of the edges. values can be negative to 'outset'
 } UIEdgeInsets;
@@ -111,3 +113,5 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 - (UIOffset)decodeUIOffsetForKey:(NSString *)key NS_AVAILABLE_IOS(5_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

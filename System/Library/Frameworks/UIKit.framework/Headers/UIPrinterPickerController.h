@@ -10,14 +10,17 @@
 #import <UIKit/UIApplication.h>
 #import <UIKit/UIKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UIPrinterPickerController, UIPrinter, UIView, UIViewController, UIBarButtonItem;
 
-typedef void (^UIPrinterPickerCompletionHandler)(UIPrinterPickerController *printerPickerController, BOOL userDidSelect, NSError *error);
+typedef void (^UIPrinterPickerCompletionHandler)(UIPrinterPickerController *printerPickerController, BOOL userDidSelect, NSError * __nullable error);
+
 
 @protocol UIPrinterPickerControllerDelegate <NSObject>
 @optional
 
-- (UIViewController *)printerPickerControllerParentViewController:(UIPrinterPickerController *)printerPickerController;
+- (nullable UIViewController *)printerPickerControllerParentViewController:(UIPrinterPickerController *)printerPickerController;
 /*!
  *  @method     printerPickerController:shouldShowPrinter:
  *  @discussion	Use to filter out specific printers from the printer picker.
@@ -48,21 +51,21 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPrinterPickerController : NSObject
  *              UIPrintInteractionController's printWithoutUIToPrinter: method.
  *              If no printer should be preselected, use a value of nil for the parameter.
  */
-+ (UIPrinterPickerController *)printerPickerControllerWithInitiallySelectedPrinter:(UIPrinter *)printer;
++ (UIPrinterPickerController *)printerPickerControllerWithInitiallySelectedPrinter:(nullable UIPrinter *)printer;
 
 /*!
  * @discussion	The selected printer. Set this before presenting the UI to show the currently
  * 	        selected printer. Use this to determine which printer the user selected.
  */
-@property (nonatomic,readonly) UIPrinter *selectedPrinter;
+@property(nullable,nonatomic,readonly) UIPrinter *selectedPrinter;
 
-@property(nonatomic,assign) id<UIPrinterPickerControllerDelegate> delegate;
+@property(nullable,nonatomic,weak) id<UIPrinterPickerControllerDelegate> delegate;
 
-- (BOOL)presentAnimated:(BOOL)animated completionHandler:(UIPrinterPickerCompletionHandler)completion;                                                // iPhone
-- (BOOL)presentFromRect:(CGRect)rect inView:(UIView *)view animated:(BOOL)animated completionHandler:(UIPrinterPickerCompletionHandler)completion;    // iPad
-- (BOOL)presentFromBarButtonItem:(UIBarButtonItem *)item animated:(BOOL)animated completionHandler:(UIPrinterPickerCompletionHandler)completion;      // iPad
+- (BOOL)presentAnimated:(BOOL)animated completionHandler:(nullable UIPrinterPickerCompletionHandler)completion;                                                // iPhone
+- (BOOL)presentFromRect:(CGRect)rect inView:(UIView *)view animated:(BOOL)animated completionHandler:(nullable UIPrinterPickerCompletionHandler)completion;    // iPad
+- (BOOL)presentFromBarButtonItem:(UIBarButtonItem *)item animated:(BOOL)animated completionHandler:(nullable UIPrinterPickerCompletionHandler)completion;      // iPad
 - (void)dismissAnimated:(BOOL)animated;
 
-
-
 @end
+
+NS_ASSUME_NONNULL_END

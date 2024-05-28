@@ -2,19 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>EnableTransactions</key>
-    <true/>
-    <key>EnablePressuredExit</key>
-    <true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
 	<key>GroupName</key>
 	<string>mobile</string>
-	<key>JetsamProperties</key>
-	<dict>
-		<key>JetsamMemoryLimit</key>
-		<integer>2500</integer>
-		<key>JetsamPriority</key>
-		<integer>100</integer>
-	</dict>
 	<key>Label</key>
 	<string>com.apple.gamed</string>
 	<key>LaunchEvents</key>

@@ -1,4 +1,4 @@
-# Ruleset for Yosemite (Vocalizer Expressive)
+﻿# Ruleset for Yosemite (Vocalizer Expressive)
 #
 # Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
 #
@@ -94,3 +94,11 @@ language = ENU
 /401\(a\)/ --> "4 oh 1 A"
 /403\(b\)/ --> "4 oh 3 B"
 
+#FB74290
+/[Cc]hapter [Xx][Vv][Ii][Ii][Ii]/ --> "chapter 18"
+
+#FB70836
+/World War II/ --> "world war 2"
+
+#FB66860
+/(:[\d][\d]) PM\./ --> "$1 p m \x1b\\pause=200\\" 

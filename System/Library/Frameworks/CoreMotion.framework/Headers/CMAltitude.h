@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMLogItem.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CMAltitudeData
  *
@@ -37,3 +39,5 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 @property(readonly, nonatomic) NSNumber *pressure;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -4,20 +4,11 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Dutch.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CYNd479LdOi6H4jtR6vfyEaOwVY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Dutch.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2XLZILRF++Xse8/o9orBR8jvuZU=
+			f+38HaezaFwzM+rbUbbar/8QyEM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +17,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			shlCRb7gjayN012rTecneU9w7bw=
+			KrdkzEP6Rrcc0/mAcQuYcfPjv3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,16 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ds3BxNcCPa0UWQisHTNa0YvV0Mc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>English.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lzLQjpVeUlBREB2brplECUGmaf8=
+			zvKdbkWrMEb493DWY5FKaPpJH5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Omw7/jgta6/vpjV5cRv1B1V08/0=
+			T8RD1yslWsx6D55+efEil85LWWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +44,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SPSvEtbhi14aQPDTcHufUjwCqxE=
+			03/QxFOsiJYy/ETuy+GKRgUY/ac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,16 +53,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			er7Npdm6s3CJKwcuh31tRuC+yWQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>French.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L6qTPhYsfjtrbPuYiHyL5gOkXcA=
+			QMUvT+kwPiKe94V85vJBlrayjqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -89,7 +62,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MucgL2dtqmsTwQMRcbQ/opjgM60=
+			FDVbTmVLU31nSnXnzrJwvpenvPo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,7 +71,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rt26SgBo0bNS2YqIBtAah25dIL0=
+			r2xaOUzK64ZexuR/TBlQ6z7CqWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,16 +80,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sXaL0C+bs4rBeU/xOIF2vSVNusU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>German.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C0iU3LKLjPiC78CwodeEXrNYdR0=
+			kwhcMrvaxrMbLXyZOZSaNDzZxrI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,7 +89,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PpJysg2AuaILhjOd7pP1bqxy0jA=
+			eFIh5JzXM0VynzuwYQc2x8E1sK4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -134,7 +98,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eo/GxqR3RToE7QhQGjR8Rw2mVYA=
+			fF1xI7AjQBKx2s1OKPNBJWw2jdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -143,7 +107,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cWTuPADSFdaAzdfPmO65/jjlKlM=
+			xhTGjVyIi+1mdCJmdoIJe3EvWxE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,103 +118,115 @@
 		</data>
 		<key>Headers/AVAsset.h</key>
 		<data>
-		rIVH2NFbG+PWO8P1vciIHwmG9Wc=
+		HU2AYfC4aeoXdS/aaUASe5QPUFU=
+		</data>
+		<key>Headers/AVAssetDownloadTask.h</key>
+		<data>
+		XXIakqryblNVYnhrQeglzi3KRAw=
 		</data>
 		<key>Headers/AVAssetExportSession.h</key>
 		<data>
-		d8HNB1Jey73NFIVqTYOPR//9nQ0=
+		bxxeu/3PoJ71HX2J2g0JpymxAJM=
 		</data>
 		<key>Headers/AVAssetImageGenerator.h</key>
 		<data>
-		nnh/2lk4Ef2598et3zTdOldCdw4=
+		tI76UfU5ZKk4xW+7TiZdXCXTf3Q=
 		</data>
 		<key>Headers/AVAssetReader.h</key>
 		<data>
-		SKr8iNy8/CHyhBoD+sJyhA3livg=
+		Hb2K6L0R/nxwXqFSqwIAmcGB9Us=
 		</data>
 		<key>Headers/AVAssetReaderOutput.h</key>
 		<data>
-		qcTOrkcC+bbBfhYmL/UGw0jT/UE=
+		1A8uyAoadFJfZ53hYIDDG2rKBDg=
 		</data>
 		<key>Headers/AVAssetResourceLoader.h</key>
 		<data>
-		42yve9fm7mZCUu5fU3g9/DSYlrg=
+		4oLBgQOQSyaacTGWBaSCX0oPq+o=
 		</data>
 		<key>Headers/AVAssetTrack.h</key>
 		<data>
-		FPg99loqL0ym3DKpZhZCeJT+Cuw=
+		Avmbxc3Lef4q1AkalfXYMbn+OK8=
 		</data>
 		<key>Headers/AVAssetTrackGroup.h</key>
 		<data>
-		yi2Oj1DLPmeoF8WBAy83zStPrUo=
+		j4EYr0EXajVYiQrUZz7awtU01vc=
 		</data>
 		<key>Headers/AVAssetTrackSegment.h</key>
 		<data>
-		UVckfHZuUVl+ei/M2r5IqP36as0=
+		2zViWVD1HARMk76cE+zL76UGORM=
 		</data>
 		<key>Headers/AVAssetWriter.h</key>
 		<data>
-		KN22GW4CkTKqPUEsn1SFWxh3OLM=
+		AiVphn3jgL7J0yAh7Oz4orra2wg=
 		</data>
 		<key>Headers/AVAssetWriterInput.h</key>
 		<data>
-		v2F2tr6CEDBn3PxYbmtmxaNkQ7w=
+		g4drWigIreIv3BdkF3fxjorWX3c=
 		</data>
 		<key>Headers/AVAsynchronousKeyValueLoading.h</key>
 		<data>
-		FC5z1qUt88cTtSStQpe2GGVUIjw=
+		tWR5vUF7Nkdr4t9BUZFfGq/GUG8=
 		</data>
 		<key>Headers/AVAudioBuffer.h</key>
 		<data>
-		OK5GxNzzn1MuilcyypWYrjTFpPk=
+		XFMuHyol168V8Cd+Y35FeZzGd6Q=
 		</data>
 		<key>Headers/AVAudioChannelLayout.h</key>
 		<data>
-		K2VBLBemsm63q1gUMqfMJzYyP2U=
+		hcoXuneoK6zvmtlpCYOQAydJCPk=
+		</data>
+		<key>Headers/AVAudioConnectionPoint.h</key>
+		<data>
+		uAW5yWHUGsxRjr1q9Vhy/tcGEOk=
+		</data>
+		<key>Headers/AVAudioConverter.h</key>
+		<data>
+		Oj1VzKrg5S0Zv9YjaLTjTePEdPk=
 		</data>
 		<key>Headers/AVAudioEngine.h</key>
 		<data>
-		Jq9DgyHGUxKJQiHqJY86GXNuF18=
+		x88kjoZYist8RjrXrXoDeXuwD7k=
 		</data>
 		<key>Headers/AVAudioEnvironmentNode.h</key>
 		<data>
-		5xENoyui3QdDGwSWAxMF4ucC33g=
+		D6OKRxrNAxg/Mdp6W0B1ssmy4og=
 		</data>
 		<key>Headers/AVAudioFile.h</key>
 		<data>
-		Ch2pyJ9DNn/xWRa5wwwhxbl35IY=
+		GCOMBx3d45AASlHuRVnqRi8QmZ0=
 		</data>
 		<key>Headers/AVAudioFormat.h</key>
 		<data>
-		kEO3+G4hWfDCxDazS374bA4oSCA=
+		fpOv7r7r/wvlem2dsvd9yy4paxw=
 		</data>
 		<key>Headers/AVAudioIONode.h</key>
 		<data>
-		pWIECYJNdFKIDx+C6+ge9YEmdJk=
+		axZimAJpbmtBNlGQTLY3Dj4Avbw=
 		</data>
 		<key>Headers/AVAudioMix.h</key>
 		<data>
-		chaGEoozyvJzrN0DYM2Z+UQeLX8=
+		s4jF8CyU/Ea90vtopyuc7CUGseI=
 		</data>
 		<key>Headers/AVAudioMixerNode.h</key>
 		<data>
-		wpUAXl4Y6JDpmKtPmBiKrOYWeCU=
+		Bfxxk3bcryQqiRXZtJB1j8yFGv4=
 		</data>
 		<key>Headers/AVAudioMixing.h</key>
 		<data>
-		cUoBq08kb+TsIj3SWYhnnLV/pFA=
+		MzODiFpeu+0zltcQHcsJ8Pi2TBk=
 		</data>
 		<key>Headers/AVAudioNode.h</key>
 		<data>
-		/znTiTZk9S6aBJV2JkzL3v6Y1FY=
+		bSvi9zjfBfu2QCPmpJQyC7BkFTI=
 		</data>
 		<key>Headers/AVAudioPlayer.h</key>
 		<data>
-		4m1RwnRdyCqE1yorWmqfz1Zb4Sw=
+		wf4Fx6Tu4qBJ1xxO0J9NsQvaPpE=
 		</data>
 		<key>Headers/AVAudioPlayerNode.h</key>
 		<data>
-		GIw9mN8RUj6wIGQ/XMvK2gQlQcE=
+		8sFnGr0lfNdbvnlGjUhcB9rvWYc=
 		</data>
 		<key>Headers/AVAudioProcessingSettings.h</key>
 		<data>
@@ -258,230 +234,237 @@
 		</data>
 		<key>Headers/AVAudioRecorder.h</key>
 		<data>
-		86vQlB9/KZpjYthXZafQLuOx0ns=
+		Gck+C+8di3iyAupn7FocZ3Qw38s=
+		</data>
+		<key>Headers/AVAudioSequencer.h</key>
+		<data>
+		akL1SnvqMlcr51Tulc9T8mELqao=
 		</data>
 		<key>Headers/AVAudioSession.h</key>
 		<data>
-		5OVlQBxwtxwwJnUBzJ4gXUMEwFA=
+		chLqglMYSkaTwKmalxKFObImTWM=
 		</data>
 		<key>Headers/AVAudioSettings.h</key>
 		<data>
-		Yq+5ZNylkTq57FSr7PaTHnfkFJw=
+		muLuyZdo7PsYZnyP4U8ABJSa+tw=
 		</data>
 		<key>Headers/AVAudioTime.h</key>
 		<data>
-		CI4l5YGpGorg6T9JBykRRXDfVGs=
+		Qzl4vFpCeTcdi1v92Vh+4rgup/Y=
 		</data>
 		<key>Headers/AVAudioTypes.h</key>
 		<data>
-		9bFqNsDrFYG814I7RYmhMjw3lFE=
+		IVrUdQ15teYepga1ofj/hcnKL1w=
 		</data>
 		<key>Headers/AVAudioUnit.h</key>
 		<data>
-		9dAdTXJpCD+XigT4sPUa7WnITjI=
+		JmTcP4LH92gjPnNKFFeAMf4xT94=
+		</data>
+		<key>Headers/AVAudioUnitComponent.h</key>
+		<data>
+		zrs8V0hoAtKwMaIpa7jVb818ias=
 		</data>
 		<key>Headers/AVAudioUnitDelay.h</key>
 		<data>
-		sK7X48o90/6LnxYBt9bm3NhXUYA=
+		tSmFp/S7M0Lfufgy0RYnEm0zoTw=
 		</data>
 		<key>Headers/AVAudioUnitDistortion.h</key>
 		<data>
-		u+2c9KWSy1N93aRW9OOMa6+PkEs=
+		+zJNp3doQv+tvOeHuw0CO/iMJBQ=
 		</data>
 		<key>Headers/AVAudioUnitEQ.h</key>
 		<data>
-		MgAwmN67zhbpr+NEAZKeXBAhprw=
+		/QtmzcjJ5ntKT0MfE9fDlCWV0lw=
 		</data>
 		<key>Headers/AVAudioUnitEffect.h</key>
 		<data>
-		FegVOUG+wGNxYAfEIOZNO4jC6c4=
+		8vaxp/pVN2Q5RVFtQDmwLZ6ZlUE=
 		</data>
 		<key>Headers/AVAudioUnitGenerator.h</key>
 		<data>
-		QbTdcyz9p31oFu/jHERvTiJNtpg=
+		QTtmt7oflE2e2vrcuoiHDpA92FE=
 		</data>
 		<key>Headers/AVAudioUnitMIDIInstrument.h</key>
 		<data>
-		BrNcOCNvFy1J2hYtVEqOtdfDzi0=
+		GoNCHGq3icbQ8cURQZcoBscnyvs=
 		</data>
 		<key>Headers/AVAudioUnitReverb.h</key>
 		<data>
-		M7r2HoaBYQUu11I9PixLMDhmtIA=
+		bqS9RtyE3w9kl4XYCc0klJ7fxAc=
 		</data>
 		<key>Headers/AVAudioUnitSampler.h</key>
 		<data>
-		9IaaoMLZjrIK7uHtNEB8hRrQg+Y=
+		ZpfpemtJd3u1bJXd5bLLF8uw3Lw=
 		</data>
 		<key>Headers/AVAudioUnitTimeEffect.h</key>
 		<data>
-		MZiD6fbTfqYBbwtO4BFRJW5jqdY=
+		iNeiLnkWB98DPY0HBTXY/TzdoqU=
 		</data>
 		<key>Headers/AVAudioUnitTimePitch.h</key>
 		<data>
-		CTQaIUOxCxDMUD8rXVL8GlZLRH0=
+		EeXB8S1vDYxsaQ+SJiG40grZh0g=
 		</data>
 		<key>Headers/AVAudioUnitVarispeed.h</key>
 		<data>
-		sm6id0SZiP2d85odiTcbd+PLa60=
+		6jMkiMFWQ7wFa4vJucbktd+00vg=
 		</data>
 		<key>Headers/AVBase.h</key>
 		<data>
-		KxXPe6j0QxhkLQsr6SG7cNgvXPs=
+		0+kmWkwogpQrAli12aJZ25ftf9o=
 		</data>
 		<key>Headers/AVCaptureDevice.h</key>
 		<data>
-		eL9/ZLpNTyRtQykkoOCjd8yTNcU=
+		vFBYrvYsUZ68fymGSb+dAPT5y6g=
 		</data>
 		<key>Headers/AVCaptureInput.h</key>
 		<data>
-		Gn5kQQLLFN0MFokeFGmYA2mcxwk=
+		9fnwcqXRxEGXRK5c4jTEdTDFKhk=
 		</data>
 		<key>Headers/AVCaptureOutput.h</key>
 		<data>
-		ijFZkAFGYMNvimchL5DnlRwqnfw=
+		wfnWenrLm3AEJY6z3whdFe1cv6Y=
 		</data>
 		<key>Headers/AVCaptureSession.h</key>
 		<data>
-		0uGGxOUCkYeCFDmO7VydK6FYZNg=
+		beUH9anUKBcvG+vG6R9TFNSRkGQ=
 		</data>
 		<key>Headers/AVCaptureVideoPreviewLayer.h</key>
 		<data>
-		jIRLUDFOvV4lo1zpk54MqsRtQ3s=
+		jbKVFQeAbVcBKWkLQRajdRB0QKU=
 		</data>
 		<key>Headers/AVComposition.h</key>
 		<data>
-		4Mah1FTy4Qq/GfXrPZjrHmTljWE=
+		/Rpb3WbVJsAB+qLETgP8+CaTJbo=
 		</data>
 		<key>Headers/AVCompositionTrack.h</key>
 		<data>
-		cwtrLfyQXbiK9+O2BlX6mrtzCEo=
+		aiAFL66uwF2JtYNpDflMPO+/Ca4=
 		</data>
 		<key>Headers/AVCompositionTrackSegment.h</key>
 		<data>
-		BE8ARqkZ4mi3zFI1LkvWBAsaO3o=
+		4W/HUbN9d+Wl932HB/F28yUkaZA=
 		</data>
 		<key>Headers/AVError.h</key>
 		<data>
-		oFEFugi+39208V+r3SZhElUh4EA=
+		cNzgneASUoJDEwUk29Kp2I6RtwY=
+		</data>
+		<key>Headers/AVFAudio.h</key>
+		<data>
+		ZnZ6vXJa9bKGxfrUr3IFcQ7hFO4=
 		</data>
 		<key>Headers/AVFoundation.h</key>
 		<data>
-		hEAgUh/dywThyt9h9yGEAc/go0o=
+		GSKtqbXF8+a39WpYoKzGgcht3bk=
 		</data>
 		<key>Headers/AVMIDIPlayer.h</key>
 		<data>
-		q5balddfMr/NMNhaG9D8ATeA1+Q=
+		BtrwlGKzc27bpp3tWdGo/8qpthw=
 		</data>
 		<key>Headers/AVMediaFormat.h</key>
 		<data>
-		NNHaDuLQDTcR/7XXezRvxRyGxXA=
+		LecLjKJyg7M090eeQvtm3G2f/yU=
+		</data>
+		<key>Headers/AVMediaSelection.h</key>
+		<data>
+		+ehScCEtSh0dkRKI9KanDIFMr/o=
 		</data>
 		<key>Headers/AVMediaSelectionGroup.h</key>
 		<data>
-		V8Jvj2nYEIZLn8jYayTIikKPK2Q=
+		CtipEoKsgIKItg3R8opTvdsnK7s=
 		</data>
 		<key>Headers/AVMetadataFormat.h</key>
 		<data>
-		3FN3pA2MDaJm7mj4rtrwV3Js8x0=
+		ZyeF0C4JtTJG/76BW4pvxNrjtx8=
 		</data>
 		<key>Headers/AVMetadataIdentifiers.h</key>
 		<data>
-		Wzk0HIwqhoiMbMh6F2fnC2RlYd8=
+		MQDJphZzbgt0bUVQ4YrkK8sFhKg=
 		</data>
 		<key>Headers/AVMetadataItem.h</key>
 		<data>
-		JJYF0JqT3RBu9BMRRGNpB21N8UU=
+		CHP4Ia/lwu2yif2xllwYhfnH5Zw=
 		</data>
 		<key>Headers/AVMetadataObject.h</key>
 		<data>
-		sHC1LRhpXs4lgkUAAXfBGRzA9jg=
+		Q32MOsIOkZFAxE2mOVf6IzOFi+4=
 		</data>
 		<key>Headers/AVOutputSettingsAssistant.h</key>
 		<data>
-		qFNJyY8exFdlNGOPspx/Ud8UOW0=
+		EJNhEt+XPo09qvNyw9fNiwCjLFk=
 		</data>
 		<key>Headers/AVPlayer.h</key>
 		<data>
-		BEUiUHqPo5+XBp3Oa1gEujbv3Sg=
+		QIxceNY20cv7zBfh2F1XZiuKeTA=
 		</data>
 		<key>Headers/AVPlayerItem.h</key>
 		<data>
-		qZAamVFhQhFnuhae+POEIIfJnZM=
+		iZFHYz0rPXkf9wxvANYe7lv/TiM=
 		</data>
 		<key>Headers/AVPlayerItemOutput.h</key>
 		<data>
-		LBS9f6QZpyQeCFv594nG8wjkU88=
+		dyUmh2Vp1MiMiSb5qqu73P79KaE=
 		</data>
 		<key>Headers/AVPlayerItemTrack.h</key>
 		<data>
-		Cb5c/BAlM1l5umqjf3u30EOKF7k=
+		9NHypOLawQDwvfCWEp+QxN7tts4=
 		</data>
 		<key>Headers/AVPlayerLayer.h</key>
 		<data>
-		20Y7uB/00x+PmCePm3qrL6VslAY=
+		y2pElTxcxdCXG4sVk4IRBcLhBNg=
 		</data>
 		<key>Headers/AVPlayerMediaSelectionCriteria.h</key>
 		<data>
-		pBYs7vHE2Z5pjWoTI66VokHUI9c=
+		x3KLBgN0yMs1Nws6d2Bw+tLRHaE=
 		</data>
 		<key>Headers/AVSampleBufferDisplayLayer.h</key>
 		<data>
-		1YlzEmTWsE3noOCSaSMiuA49NaA=
+		h1V1OM/O81RQtTnGWZIg4x8TIzM=
 		</data>
 		<key>Headers/AVSpeechSynthesis.h</key>
 		<data>
-		WsfxGf3pNBWYnaXZjKcdxlzjrCo=
+		8dBtCwZyIMLThQbl+Qsy6/6w0Xo=
 		</data>
 		<key>Headers/AVSynchronizedLayer.h</key>
 		<data>
-		gRFuyaSEmF5G0HrxoYbk4sMLSHU=
+		UoFCMa6Yfcut07/Tf1JzZ7H7jVQ=
 		</data>
 		<key>Headers/AVTextStyleRule.h</key>
 		<data>
-		yY5fcBedwK3mA/Er6kC6cEN4yP0=
+		y6TeyQzqbmbMaN9lxFt2QY52pg0=
 		</data>
 		<key>Headers/AVTime.h</key>
 		<data>
-		5wVK/UiEXv+7osj3cpNeCF0QW3E=
+		S5MZC+W5bYLM7XwsiiKbNcTbFjo=
 		</data>
 		<key>Headers/AVTimedMetadataGroup.h</key>
 		<data>
-		wjdn9ZsDZMcjeYm6FLWj9qrZS3U=
+		sfEwLSnnS76bFvgJEQn89gBVwF0=
 		</data>
 		<key>Headers/AVUtilities.h</key>
 		<data>
-		yew864/6QI8hdvUiT7MZAEjfiyU=
+		vg6fChmk5g6JeDdnUOqsgJvv+Gg=
 		</data>
 		<key>Headers/AVVideoCompositing.h</key>
 		<data>
-		AilS3thJJPs2mu9cUdb8NF3wbUc=
+		LSQgcFI0ellnc/92Th+785DhXiE=
 		</data>
 		<key>Headers/AVVideoComposition.h</key>
 		<data>
-		AcGmJTzkvwyG5K9gon0m8Q/AcM8=
+		wD+9VfA79kZ2bMAk7UQkWKVLT6M=
 		</data>
 		<key>Headers/AVVideoSettings.h</key>
 		<data>
-		9++tquc8qft29fCiG8/rjh4FF8M=
+		gBEkHz+mg0JMI1jxjwIZtq60JZw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b+Z32JPBYbwdVSJhwgqqBi7/KUI=
+		wE6QZTomkZdVyNVdp9nelkRw2PY=
 		</data>
-		<key>Italian.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			O0m2EAUORrKIbXwhhvnU0GTYNYE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Italian.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			suj6ZJqPivrrXoOP2pJux4+fW74=
+			i2V+5mhzM604kycr1oerzAGm4ys=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -490,7 +473,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DuyeeBEYvlYSDHbNqaVy8gztums=
+			WRnR3ZDbCCrPVqHxKNCuKY3C9Vg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -499,16 +482,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KEFSeICEZErLjS0ZjSWKFapvtSE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Japanese.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1x2TF5Dt2WpOsoL1HqjIWBagY3U=
+			aOyGc0awJtvZrkXQT35P3pJjSQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -517,7 +491,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2uZ8VuXVcEEO39ASY9zmo/aEy9c=
+			ancpUiCg6PSdY678HLElQo90yNg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -526,7 +500,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uZDII9iJTv6tgLA3Zr6NAxcfofM=
+			tts4alUq1Sc+pi5n1UuD3QP9RfM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -535,25 +509,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2geQixxMoYafSHqmejoXRQbf+Yg=
+			in9Ap82lT7qiSEEYiyp9/bhmYw4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Spanish.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XdyHVbjrNgIEXzb1gQ3WR7vct/o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<key>Modules/module.modulemap</key>
+		<data>
+		zJLqvcYPO6GTPJ0rNji6us4G0X4=
+		</data>
 		<key>Spanish.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fdIsjzPVoEwqhkl/oO0YHQHj6w8=
+			bCrsXulP6C+Fn6wIRxrsW8vMnWg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -562,7 +531,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0+E3zaLqBrgZVWPDlJOyFjbhwhk=
+			0rmAvTRwUTkCcHzoNYLmy+8uXf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -571,16 +540,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tmugAyvUWBWWPCOPn6Z8okcBhRw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ar.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HbG3Y82wYG9C05sa3Uu83CXS/Rg=
+			0jOnEaEwo2oOgR+U24j2IOPS2Aw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -589,7 +549,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gUXrN+RTqnA8VPf/pQ32c3dadng=
+			mdLrrbA6CICjoDUbGLocRvbyjPU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -598,7 +558,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RISZXC4EZ0OzdoOJkC9XiwEcjYo=
+			uUdT0tMx/LbF5OseSSsxl1KNkPI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -607,16 +567,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CH8V/LEfLoiGAqQUPa8poVZ1D8c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ca.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a4gQZT1g5+YiAFZ5gEKf7A3KQU4=
+			HXcqSl8kPmpFFf6eNzVt70hBqYY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -625,7 +576,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WYeuniLpy45jQ61rWG6dWVsApGM=
+			LeQWIczaZZOOmDvDJ+I/XlK1y/Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -634,7 +585,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hKwBp+eatsnPFzNyFWOZuGxDM88=
+			mjQn+pvIhCT37UMPw48fnRUdGUQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -643,16 +594,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LRoMuI2cgKz806GDqlxzeWvN3Is=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>cs.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CKUS6zluvK2UjMZHAQclY0Yt37g=
+			HTCJXtYR+c2OQKZ9M/uHoZVeaxI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -661,7 +603,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Em76ie1i52Yhg7JXuh2SjX5A/ZQ=
+			hFMhL4ceK1t7fYpl4zWKbiVNncs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -670,7 +612,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ynoBqODfK1MGVqM5Z3wkctivIZ4=
+			lax1YtEgzQpUFE0izB1U31VqBxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -679,16 +621,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xcyE0Z3g0jxAvth+FtaeX2VqjNQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>da.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			54J3W6jiNpaQ93SLnMI5wRSNgp8=
+			w/ZdS22WehbjTmBoIkwhsW0aaAE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -697,7 +630,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZR0C6yXrYjW0TtqPYOz+Tzz2tCs=
+			W5SbkxkMHN8KextsZxxNV2NGLc4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -706,7 +639,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wX8LWqMREK3o7qIQnhWvgmKMWJo=
+			Z7zLiI0HIMTuj140+J5juSad0rE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -715,16 +648,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CQQW/2Ch936SN70bebH3N9WjDAQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>el.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			edVFrOlTVMaqPhiF0XbzxxiAltA=
+			E3YzoRhddzQIOjPkcow78ap6zDM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -733,7 +657,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6xXuurY6UHRLtKsZnMtUPfNhdgI=
+			WWSsxMbUpCFPT9GjJVxW/a/dObs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -742,7 +666,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aDYXbn4KFOv+djmYKa3U4fiO4i8=
+			Dl2YxtWB2MicvMmXivqCfugwU4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -751,16 +675,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LN8Cbp1nPwMBgL+/BoHRPEYRR3M=
+			h4KqzZi8rdpoHDH1kAbZ6fErhgQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/AVAssetExportPresetNames.strings</key>
+		<key>en_AU.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rnYaKSSuXEoWv8JIA2/SQZyRGQw=
+			T8RD1yslWsx6D55+efEil85LWWM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AVError.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sAYDe/jPiNsN7D6MsKX7mC5o88g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AVMediaSelectionOption.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QMUvT+kwPiKe94V85vJBlrayjqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -769,7 +711,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Omw7/jgta6/vpjV5cRv1B1V08/0=
+			T8RD1yslWsx6D55+efEil85LWWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -778,7 +720,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jdfFxc89A/nfZGigt7RKRfyCmFg=
+			sAYDe/jPiNsN7D6MsKX7mC5o88g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -787,16 +729,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			er7Npdm6s3CJKwcuh31tRuC+yWQ=
+			QMUvT+kwPiKe94V85vJBlrayjqI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/AVAssetExportPresetNames.strings</key>
+		<key>es_MX.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KpzWiMPZP/6pYG5znW1dSpNkWBw=
+			wY/5GCNLRHJ35hN0ZDrzpOkM5yY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/AVError.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X7BBlEjbXPSyhJvJatsLgrSf6Oo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/AVMediaSelectionOption.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OKRcfXo3DAPFVgMCD7N0Gp2l7MM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -805,7 +765,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RJXs7RJM770W9D5E6srLRpVkfS4=
+			gE8/hQ4mLz8yCUbgp4+pzybKpRY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -814,7 +774,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xj8P35ptC8BKAbEZ//VQTpxUjNg=
+			0KXa5ojtlLvXqtpp2JfAmawludk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -823,16 +783,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QwQNvS7HnM7bklde9hpHxs/D8tw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr_CA.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L6qTPhYsfjtrbPuYiHyL5gOkXcA=
+			0uQSnihvRNijnjmrOy+uCmyIauI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -841,7 +792,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MucgL2dtqmsTwQMRcbQ/opjgM60=
+			FDVbTmVLU31nSnXnzrJwvpenvPo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -850,7 +801,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q0h/XCkg/E4JrfCShsvD7mGead8=
+			56GDo4i/hWmhVFQgyKqhrSqC13I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -859,16 +810,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gSlJWwVXoNTY4lyBYwmiYsguIvE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>he.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			30CWcISxfBw6vQhDizdaSmGkYMA=
+			3jch7jnDIKALAKB4FIja2DyvbuE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -877,7 +819,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mwxjXpgmapIdgjJixDi9BX6D7c8=
+			41Aas4qSKtqaBRMOgxUolKfoOyE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -886,7 +828,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RQ175bg8AwWcWeDV9UOdMGmSZ+I=
+			064ax/SakU4PeNvn/cM5H1Y6jnk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -895,16 +837,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K4gFDQXhAla7Xv7ltFbKNRsIsq4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hi.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wIKVG6awAg1+BjFz/HMdNSX1Ypc=
+			h/iKoH/MkGMV4DWwKHKCYXxVOBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -913,7 +846,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5snpl1r7sQfn4+OZZ+FSH3fGnxc=
+			L3rd6aYOc0hsfZkHTs/FdI9Ov7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -922,7 +855,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/fimqGMouB20ZUf3eLzduXWx3Ls=
+			Ny+oSmMlf9EVwU7vBluHfD7s5TY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -931,16 +864,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sr0J74bVv0GR1yg5WaPy+vmfCYw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hr.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h6osa/ZWQqWl7pQag51SsQVMxGw=
+			yQhhpYvRuvuesWmYTs7M6HKHoqw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -949,7 +873,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mNJBDHjb8d3cAlY1Gpdm68gJhLQ=
+			GL/PxtI2cbWRflYrPqDBziuYRhk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -958,7 +882,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ibWcu/GKfYGy/1WfR5LFBi9Pqes=
+			UMdAAePnG6zO9N9pgz/0djboyN8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -967,16 +891,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUVFIizCJmjowYbwLwZDH165twI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hu.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Up825+CWZqDuQU4DQCB8iQwhRzE=
+			WCIQ3247Cf2Fh4lFaM4+ttS9XBU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -985,7 +900,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VgiH+ZnAIgIfUR8/4LQwLPYWouE=
+			tYUXXEQ4z5ukqCLa94L7PDbvAFY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -994,7 +909,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5b8/x+iyaLJnDfnDJl8t2lot/Ws=
+			AK1EHxJlD6he2NVIirwohz6G8N8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1003,16 +918,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qYKmvoZCpuTJzffM9Ky1Fd2jhGI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>id.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4hu+YZwQavn0P9WLHc4Z7pc91fg=
+			pXB+Bknv/NALJiqTIyi7pv8U1z0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1021,7 +927,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vbpyye4gPvUVb67/XBndkPXh6lo=
+			n06Rjq/55nQ+wOyD3fUVFQeaCGw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1030,7 +936,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1YAQBTSZY9AQvgMlJ5NGLHxt/Gg=
+			k+qJntlB2ZPNOdapB94woRYyoks=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1039,16 +945,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0RfC9tGENvHP2DIbdzaMKze2sNY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QcuuZtRM1Z4z0dHbhTV6hx3AlnY=
+			Cu/Ejn//9ALuP9nvR4OhMvrH1IQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1057,7 +954,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v9sayTdSsN3EjLU3/Pk8vxZ0iak=
+			90OcFt9SXXYeaJm97uePmFtD828=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1066,7 +963,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rf1GRIZPBDVS+s1bpul0eihgQ4g=
+			lbHYowCQLlR7vc6/jdTNaJjEaoY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1075,29 +972,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUsJ8XIRUF4KGc2dWmVVUz01W6I=
+			FBoPDPSddjGmvwSfMOg8Jt4QAmc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>libAVFAudio.dylib</key>
 		<data>
-		5ty/zUtvnl8rgnheHbH0v6F0tu4=
+		MrC6HaUjWpd3V8exZ4BfvbfnY/w=
 		</data>
-		<key>ms.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8yYGd4lq4auen4NdCz8kA+KP+rE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ms.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HuXGS8yHUwjiq2rA32T055Ks/5E=
+			TUyfRcC/44GnHPSfMiSwhylGD8k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1106,7 +994,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zmeaouuZ7UNiR/X5//s22wokhVE=
+			wkMhG8nphXUONiwV8uifjY7Z8nY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1115,16 +1003,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XwB6ZoMIsOm3GYhNPUsgcOhVKi0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>no.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+Gn6G09Ebd7G2tQLPTFbohYab1w=
+			8GPwIcOF3HR543b9TPnbAlWN9PI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1133,7 +1012,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jJfk3V5hBtFvwqAHy1aFlp9Q+Hc=
+			8mlpAaMWW1yn1wQKvpIsqPzmoV0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1142,7 +1021,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Gegq8w7bKnOLsKqE6iRrkun+qo=
+			jGPmtEh1H7xAF2dh3pxy7B7s0hQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1151,16 +1030,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dfYP07CGfFVJUXr1AD/3FYa0mGA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pl.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YVFu9anNpwnE9rGO0MrAWQA7kBA=
+			uqf7+amcM4yKW0TKHHmX+fD9tC0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1169,7 +1039,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VaFW8VcjymRJXcnP8bnZ+MhdU9o=
+			IcajuFkzzuaeolW9wRPHvqkSvSA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1178,7 +1048,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FUpKxd2RbfmO9mWeiqZjtskD/sQ=
+			bwIewc4t/bxm8gkNEEUKIAnJ1l0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1187,16 +1057,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JgTH+HzILVPktRACNqaKVFjZgME=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Icdqk23fjikWhXjBVq15ygVMrKw=
+			3PbcLHZd8c6KDB2YB6Fki+q3BKU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1205,7 +1066,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZHbkaksnkasFLsqm6wIVnQ2XiP8=
+			ArqjrOZ5ZJ0Ka2jfEkbjDnwq5qE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1214,7 +1075,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rcjP0KlBeyZyHDN2z+cGP9z2eIU=
+			gD0p0PONAb5Ii/S7cVIpjSgCbFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1223,16 +1084,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nr0j44ub2/khikvNixYqfWlib4w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt_PT.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QNcYeqMH1PCX8pMIN6f32ts8nVI=
+			MQhi+mpE+xybkK32Hy1tFZLEOiM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1241,7 +1093,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CBs8+qxh100OxRxzXuch+LYieaI=
+			JtjIOZKqrUHnvhkGBH8WLcu5aIU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1250,7 +1102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VpvZdKi1d+7Ya7XdjG7Ao2a8GLY=
+			YS7FMheRx+AI8ZJtjXS9hIcIpZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1259,7 +1111,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+C3SYOOmfo95xrjlBba6VBBpL9U=
+			9zwfgEL61FMi5ED4qj37E3er/RE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1268,20 +1120,11 @@
 		<data>
 		ITYv3jwJdkKoqRqCetlzxJ8qQEs=
 		</data>
-		<key>ro.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dRlPUDana+NE638VhrTILQ3H+UA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ro.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LKrnPFUYWOT1fMN3WKXLsiocCrY=
+			mp/vWVA955+zY+/0mtAw9Po6Jjk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1290,7 +1133,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/mgHsq0+vjYmIe4PcXbo0ocbjN8=
+			+103s/yDlsm2MZS9lCNgOMZpo9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1299,16 +1142,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NBAISPItrIPTr3a/hu84ofyHGwA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ru.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HiXBRSV8xmgP7MRmqG9dnrTzIbY=
+			LDp0Xk3hLT4v3dcuKnsSOTE9xgA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1317,7 +1151,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			61lQLSRUalFpOXRT2WqiPtiVCDI=
+			rs8ntL9/tSM9JHpjvbAxyeZ/nhg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1326,7 +1160,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A57zj9E0x9TOuBcjnT5dhjdNilw=
+			eNkYJNa8w1Boeay7PuBdmdyVW5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1335,16 +1169,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uBqaA3xNaez0dmFopF3WSQGP79w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>sk.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gGbE7MXDp7urHACWZx4iORrMNiw=
+			hnATrQ22zlJSJqQ7orj4d4SQ5Cw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1353,7 +1178,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			64Zt5XGUpSAeYWIH8P08jX693s8=
+			CaseV1TlpCm0ZM1cXGtgCp/2yyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1362,7 +1187,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z2+GPcErStwGNJsVGa7TFbGjxtU=
+			VaHcJo1YJ/rWtqWbRmEXfbMJpxw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1371,16 +1196,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nO0lvM1M/jExlO2CMOe6QbL6qM4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>sv.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C4NT0X11mQG6braaXBoZeXHAVeA=
+			KeztmTqUovy8Z00JiuGcb+hU+3o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1389,7 +1205,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SakVBiUGj4bzFc+6Hlw+n/OMo/s=
+			/6cvtSTdmAwN5zmAdM1h5cVfsPA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1398,7 +1214,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			66VTS5vZkPkhNRoAPrNDnxjE7WA=
+			bhFgExiOpBmsRywQp19tKa2UiMo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1407,16 +1223,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p6E8QvU5vKSSKo9XkxvU6ZtP778=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>th.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1x7Kunau85MhgAKT5UX2lVBWZ8Q=
+			ErUW/hjiNCxc5OF+LuL3qChRMP0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1425,7 +1232,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZkSe1NTzaTq2QRUXKf0G7HBZbgM=
+			qI8IL6TIZVX4WKi3z6ORUtNRS/I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1434,7 +1241,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h3jF05K+nKvfWPecfK/Adf4NFxQ=
+			s2a0HkwsWbzfG1bMgPmN1XuuRVw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1443,16 +1250,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y+Ou1dpYyUOcM86h2yZllWh+KQo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HagQlnOaStzMrpBNmAwnZXws/Eo=
+			EFaWaWNwkjh0SIY7NwDs8FvcqOs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1461,7 +1259,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tq0ob8cmGJw7VmkbmLabcJw2FyM=
+			v+wtyI1mte60S3ZeixeGaYqA4GI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1470,7 +1268,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4Inomw2HgZ0Ai9IblQa/qZ3EehM=
+			I+uSOtPUPeD4/dLF9cGwtPPPhcE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1479,16 +1277,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/685+lpOwthldqSr7jZzw6qpTqE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>uk.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gQS2xX0dWsm+U9yINgnfcKwdOqk=
+			Irr+ZG5eRoYHCmjJIuhVXsoEfd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1497,7 +1286,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V14n/K5+u28+3LxsiENaNdjO1+M=
+			DM8aQOrsStBNTJ+EbnSg7LOugAs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1506,7 +1295,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sVN86JHcFmwnUBsuF3A+2Czu1UQ=
+			Cwp3D815gq/hQTekpi5uxzjFDmQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1515,20 +1304,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ew1NUaodnU87cFaPdGmYndZXRBw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>version.plist</key>
-		<data>
-		N93qjorz0PAhwdntlbfr2dZNvBk=
-		</data>
-		<key>vi.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JUCMFk5jWY3IT2oes3H9b3pAVvw=
+			ODITnFVV0t3pKNzvUId1urWRoFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1537,7 +1313,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5zYH/+uehEiCl1QhUcnviw6phu4=
+			c/lH2VJtK/FosJnIMhg5HGsbVDI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1546,7 +1322,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qexIapyr9f4fI5j06lSANA468Kw=
+			P0GZnIbxP2KdcWyJ4xBbNsp4SQI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1555,16 +1331,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lOpY5WVlaO0qAcgGl9p+kole9bs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_CN.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P3Nfm3HpdU28RPHrqO+afDA/riE=
+			+yQY6M1+tGpAVNTSOkFkIvkXOFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1573,7 +1340,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gW8hKJb/Xmno8l1VKjGMk4WaEnI=
+			awAZqU77KvkIbA+/rz+vZweMCIA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1582,7 +1349,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9SKKc2D4gpKH8f+kkqxRQb/1BoY=
+			qSp0irRmOvPhWaLiJ2aNZSTaHGk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1591,16 +1358,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QVKeWFCLwE3GCM5Pd4OAqjy3nbg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_HK.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FkTLg0ouvz2knwstmpg+bC8/6kc=
+			cfQL2P4kUSGXzCZzDMXUIKfhKtg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1609,7 +1367,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CpxDYbP23oNnFMgXvbgu+FdhLHw=
+			u16/eUKjtitgaEF6ihu06WdFOa0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1618,7 +1376,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v24KFDYViPw4ulV1K8tHeZkKEqM=
+			ivVE1r1oQNPhwOKU2mi52hESGQI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1627,16 +1385,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kfpaUfU1mTru+OH0BUmILtCzLCk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_TW.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cSStpEBYgRdPbkSMaVPYqVZxHJg=
+			PKN6O+p2AolUguwOCJoPgHxX5jM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1645,7 +1394,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			haBSp3u3hES5Q7S+wNER6Hu6K7w=
+			wfpdwHkVVHHTmj7EYG92HZgWoTk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1654,7 +1403,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WbtrlwqvkFGe0JHoAm97Nk8J0Dg=
+			dKnW/gPyqTTYeAmJg4GcVoJltxU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1663,7 +1412,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ureXdszglSXkYu9bSb1+Cn5cyWo=
+			R/n3pNatGTBNdxWgYW7e/8nt3Cg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1671,20 +1420,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Dutch.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CYNd479LdOi6H4jtR6vfyEaOwVY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Dutch.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2XLZILRF++Xse8/o9orBR8jvuZU=
+			f+38HaezaFwzM+rbUbbar/8QyEM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1693,7 +1433,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			shlCRb7gjayN012rTecneU9w7bw=
+			KrdkzEP6Rrcc0/mAcQuYcfPjv3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1702,16 +1442,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ds3BxNcCPa0UWQisHTNa0YvV0Mc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>English.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lzLQjpVeUlBREB2brplECUGmaf8=
+			zvKdbkWrMEb493DWY5FKaPpJH5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1720,7 +1451,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Omw7/jgta6/vpjV5cRv1B1V08/0=
+			T8RD1yslWsx6D55+efEil85LWWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1729,7 +1460,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SPSvEtbhi14aQPDTcHufUjwCqxE=
+			03/QxFOsiJYy/ETuy+GKRgUY/ac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1738,16 +1469,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			er7Npdm6s3CJKwcuh31tRuC+yWQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>French.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L6qTPhYsfjtrbPuYiHyL5gOkXcA=
+			QMUvT+kwPiKe94V85vJBlrayjqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1756,7 +1478,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MucgL2dtqmsTwQMRcbQ/opjgM60=
+			FDVbTmVLU31nSnXnzrJwvpenvPo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1765,7 +1487,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rt26SgBo0bNS2YqIBtAah25dIL0=
+			r2xaOUzK64ZexuR/TBlQ6z7CqWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1774,16 +1496,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sXaL0C+bs4rBeU/xOIF2vSVNusU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>German.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C0iU3LKLjPiC78CwodeEXrNYdR0=
+			kwhcMrvaxrMbLXyZOZSaNDzZxrI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1792,7 +1505,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PpJysg2AuaILhjOd7pP1bqxy0jA=
+			eFIh5JzXM0VynzuwYQc2x8E1sK4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1801,7 +1514,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eo/GxqR3RToE7QhQGjR8Rw2mVYA=
+			fF1xI7AjQBKx2s1OKPNBJWw2jdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1810,7 +1523,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cWTuPADSFdaAzdfPmO65/jjlKlM=
+			xhTGjVyIi+1mdCJmdoIJe3EvWxE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1821,103 +1534,115 @@
 		</data>
 		<key>Headers/AVAsset.h</key>
 		<data>
-		rIVH2NFbG+PWO8P1vciIHwmG9Wc=
+		HU2AYfC4aeoXdS/aaUASe5QPUFU=
+		</data>
+		<key>Headers/AVAssetDownloadTask.h</key>
+		<data>
+		XXIakqryblNVYnhrQeglzi3KRAw=
 		</data>
 		<key>Headers/AVAssetExportSession.h</key>
 		<data>
-		d8HNB1Jey73NFIVqTYOPR//9nQ0=
+		bxxeu/3PoJ71HX2J2g0JpymxAJM=
 		</data>
 		<key>Headers/AVAssetImageGenerator.h</key>
 		<data>
-		nnh/2lk4Ef2598et3zTdOldCdw4=
+		tI76UfU5ZKk4xW+7TiZdXCXTf3Q=
 		</data>
 		<key>Headers/AVAssetReader.h</key>
 		<data>
-		SKr8iNy8/CHyhBoD+sJyhA3livg=
+		Hb2K6L0R/nxwXqFSqwIAmcGB9Us=
 		</data>
 		<key>Headers/AVAssetReaderOutput.h</key>
 		<data>
-		qcTOrkcC+bbBfhYmL/UGw0jT/UE=
+		1A8uyAoadFJfZ53hYIDDG2rKBDg=
 		</data>
 		<key>Headers/AVAssetResourceLoader.h</key>
 		<data>
-		42yve9fm7mZCUu5fU3g9/DSYlrg=
+		4oLBgQOQSyaacTGWBaSCX0oPq+o=
 		</data>
 		<key>Headers/AVAssetTrack.h</key>
 		<data>
-		FPg99loqL0ym3DKpZhZCeJT+Cuw=
+		Avmbxc3Lef4q1AkalfXYMbn+OK8=
 		</data>
 		<key>Headers/AVAssetTrackGroup.h</key>
 		<data>
-		yi2Oj1DLPmeoF8WBAy83zStPrUo=
+		j4EYr0EXajVYiQrUZz7awtU01vc=
 		</data>
 		<key>Headers/AVAssetTrackSegment.h</key>
 		<data>
-		UVckfHZuUVl+ei/M2r5IqP36as0=
+		2zViWVD1HARMk76cE+zL76UGORM=
 		</data>
 		<key>Headers/AVAssetWriter.h</key>
 		<data>
-		KN22GW4CkTKqPUEsn1SFWxh3OLM=
+		AiVphn3jgL7J0yAh7Oz4orra2wg=
 		</data>
 		<key>Headers/AVAssetWriterInput.h</key>
 		<data>
-		v2F2tr6CEDBn3PxYbmtmxaNkQ7w=
+		g4drWigIreIv3BdkF3fxjorWX3c=
 		</data>
 		<key>Headers/AVAsynchronousKeyValueLoading.h</key>
 		<data>
-		FC5z1qUt88cTtSStQpe2GGVUIjw=
+		tWR5vUF7Nkdr4t9BUZFfGq/GUG8=
 		</data>
 		<key>Headers/AVAudioBuffer.h</key>
 		<data>
-		OK5GxNzzn1MuilcyypWYrjTFpPk=
+		XFMuHyol168V8Cd+Y35FeZzGd6Q=
 		</data>
 		<key>Headers/AVAudioChannelLayout.h</key>
 		<data>
-		K2VBLBemsm63q1gUMqfMJzYyP2U=
+		hcoXuneoK6zvmtlpCYOQAydJCPk=
+		</data>
+		<key>Headers/AVAudioConnectionPoint.h</key>
+		<data>
+		uAW5yWHUGsxRjr1q9Vhy/tcGEOk=
+		</data>
+		<key>Headers/AVAudioConverter.h</key>
+		<data>
+		Oj1VzKrg5S0Zv9YjaLTjTePEdPk=
 		</data>
 		<key>Headers/AVAudioEngine.h</key>
 		<data>
-		Jq9DgyHGUxKJQiHqJY86GXNuF18=
+		x88kjoZYist8RjrXrXoDeXuwD7k=
 		</data>
 		<key>Headers/AVAudioEnvironmentNode.h</key>
 		<data>
-		5xENoyui3QdDGwSWAxMF4ucC33g=
+		D6OKRxrNAxg/Mdp6W0B1ssmy4og=
 		</data>
 		<key>Headers/AVAudioFile.h</key>
 		<data>
-		Ch2pyJ9DNn/xWRa5wwwhxbl35IY=
+		GCOMBx3d45AASlHuRVnqRi8QmZ0=
 		</data>
 		<key>Headers/AVAudioFormat.h</key>
 		<data>
-		kEO3+G4hWfDCxDazS374bA4oSCA=
+		fpOv7r7r/wvlem2dsvd9yy4paxw=
 		</data>
 		<key>Headers/AVAudioIONode.h</key>
 		<data>
-		pWIECYJNdFKIDx+C6+ge9YEmdJk=
+		axZimAJpbmtBNlGQTLY3Dj4Avbw=
 		</data>
 		<key>Headers/AVAudioMix.h</key>
 		<data>
-		chaGEoozyvJzrN0DYM2Z+UQeLX8=
+		s4jF8CyU/Ea90vtopyuc7CUGseI=
 		</data>
 		<key>Headers/AVAudioMixerNode.h</key>
 		<data>
-		wpUAXl4Y6JDpmKtPmBiKrOYWeCU=
+		Bfxxk3bcryQqiRXZtJB1j8yFGv4=
 		</data>
 		<key>Headers/AVAudioMixing.h</key>
 		<data>
-		cUoBq08kb+TsIj3SWYhnnLV/pFA=
+		MzODiFpeu+0zltcQHcsJ8Pi2TBk=
 		</data>
 		<key>Headers/AVAudioNode.h</key>
 		<data>
-		/znTiTZk9S6aBJV2JkzL3v6Y1FY=
+		bSvi9zjfBfu2QCPmpJQyC7BkFTI=
 		</data>
 		<key>Headers/AVAudioPlayer.h</key>
 		<data>
-		4m1RwnRdyCqE1yorWmqfz1Zb4Sw=
+		wf4Fx6Tu4qBJ1xxO0J9NsQvaPpE=
 		</data>
 		<key>Headers/AVAudioPlayerNode.h</key>
 		<data>
-		GIw9mN8RUj6wIGQ/XMvK2gQlQcE=
+		8sFnGr0lfNdbvnlGjUhcB9rvWYc=
 		</data>
 		<key>Headers/AVAudioProcessingSettings.h</key>
 		<data>
@@ -1925,226 +1650,233 @@
 		</data>
 		<key>Headers/AVAudioRecorder.h</key>
 		<data>
-		86vQlB9/KZpjYthXZafQLuOx0ns=
+		Gck+C+8di3iyAupn7FocZ3Qw38s=
+		</data>
+		<key>Headers/AVAudioSequencer.h</key>
+		<data>
+		akL1SnvqMlcr51Tulc9T8mELqao=
 		</data>
 		<key>Headers/AVAudioSession.h</key>
 		<data>
-		5OVlQBxwtxwwJnUBzJ4gXUMEwFA=
+		chLqglMYSkaTwKmalxKFObImTWM=
 		</data>
 		<key>Headers/AVAudioSettings.h</key>
 		<data>
-		Yq+5ZNylkTq57FSr7PaTHnfkFJw=
+		muLuyZdo7PsYZnyP4U8ABJSa+tw=
 		</data>
 		<key>Headers/AVAudioTime.h</key>
 		<data>
-		CI4l5YGpGorg6T9JBykRRXDfVGs=
+		Qzl4vFpCeTcdi1v92Vh+4rgup/Y=
 		</data>
 		<key>Headers/AVAudioTypes.h</key>
 		<data>
-		9bFqNsDrFYG814I7RYmhMjw3lFE=
+		IVrUdQ15teYepga1ofj/hcnKL1w=
 		</data>
 		<key>Headers/AVAudioUnit.h</key>
 		<data>
-		9dAdTXJpCD+XigT4sPUa7WnITjI=
+		JmTcP4LH92gjPnNKFFeAMf4xT94=
+		</data>
+		<key>Headers/AVAudioUnitComponent.h</key>
+		<data>
+		zrs8V0hoAtKwMaIpa7jVb818ias=
 		</data>
 		<key>Headers/AVAudioUnitDelay.h</key>
 		<data>
-		sK7X48o90/6LnxYBt9bm3NhXUYA=
+		tSmFp/S7M0Lfufgy0RYnEm0zoTw=
 		</data>
 		<key>Headers/AVAudioUnitDistortion.h</key>
 		<data>
-		u+2c9KWSy1N93aRW9OOMa6+PkEs=
+		+zJNp3doQv+tvOeHuw0CO/iMJBQ=
 		</data>
 		<key>Headers/AVAudioUnitEQ.h</key>
 		<data>
-		MgAwmN67zhbpr+NEAZKeXBAhprw=
+		/QtmzcjJ5ntKT0MfE9fDlCWV0lw=
 		</data>
 		<key>Headers/AVAudioUnitEffect.h</key>
 		<data>
-		FegVOUG+wGNxYAfEIOZNO4jC6c4=
+		8vaxp/pVN2Q5RVFtQDmwLZ6ZlUE=
 		</data>
 		<key>Headers/AVAudioUnitGenerator.h</key>
 		<data>
-		QbTdcyz9p31oFu/jHERvTiJNtpg=
+		QTtmt7oflE2e2vrcuoiHDpA92FE=
 		</data>
 		<key>Headers/AVAudioUnitMIDIInstrument.h</key>
 		<data>
-		BrNcOCNvFy1J2hYtVEqOtdfDzi0=
+		GoNCHGq3icbQ8cURQZcoBscnyvs=
 		</data>
 		<key>Headers/AVAudioUnitReverb.h</key>
 		<data>
-		M7r2HoaBYQUu11I9PixLMDhmtIA=
+		bqS9RtyE3w9kl4XYCc0klJ7fxAc=
 		</data>
 		<key>Headers/AVAudioUnitSampler.h</key>
 		<data>
-		9IaaoMLZjrIK7uHtNEB8hRrQg+Y=
+		ZpfpemtJd3u1bJXd5bLLF8uw3Lw=
 		</data>
 		<key>Headers/AVAudioUnitTimeEffect.h</key>
 		<data>
-		MZiD6fbTfqYBbwtO4BFRJW5jqdY=
+		iNeiLnkWB98DPY0HBTXY/TzdoqU=
 		</data>
 		<key>Headers/AVAudioUnitTimePitch.h</key>
 		<data>
-		CTQaIUOxCxDMUD8rXVL8GlZLRH0=
+		EeXB8S1vDYxsaQ+SJiG40grZh0g=
 		</data>
 		<key>Headers/AVAudioUnitVarispeed.h</key>
 		<data>
-		sm6id0SZiP2d85odiTcbd+PLa60=
+		6jMkiMFWQ7wFa4vJucbktd+00vg=
 		</data>
 		<key>Headers/AVBase.h</key>
 		<data>
-		KxXPe6j0QxhkLQsr6SG7cNgvXPs=
+		0+kmWkwogpQrAli12aJZ25ftf9o=
 		</data>
 		<key>Headers/AVCaptureDevice.h</key>
 		<data>
-		eL9/ZLpNTyRtQykkoOCjd8yTNcU=
+		vFBYrvYsUZ68fymGSb+dAPT5y6g=
 		</data>
 		<key>Headers/AVCaptureInput.h</key>
 		<data>
-		Gn5kQQLLFN0MFokeFGmYA2mcxwk=
+		9fnwcqXRxEGXRK5c4jTEdTDFKhk=
 		</data>
 		<key>Headers/AVCaptureOutput.h</key>
 		<data>
-		ijFZkAFGYMNvimchL5DnlRwqnfw=
+		wfnWenrLm3AEJY6z3whdFe1cv6Y=
 		</data>
 		<key>Headers/AVCaptureSession.h</key>
 		<data>
-		0uGGxOUCkYeCFDmO7VydK6FYZNg=
+		beUH9anUKBcvG+vG6R9TFNSRkGQ=
 		</data>
 		<key>Headers/AVCaptureVideoPreviewLayer.h</key>
 		<data>
-		jIRLUDFOvV4lo1zpk54MqsRtQ3s=
+		jbKVFQeAbVcBKWkLQRajdRB0QKU=
 		</data>
 		<key>Headers/AVComposition.h</key>
 		<data>
-		4Mah1FTy4Qq/GfXrPZjrHmTljWE=
+		/Rpb3WbVJsAB+qLETgP8+CaTJbo=
 		</data>
 		<key>Headers/AVCompositionTrack.h</key>
 		<data>
-		cwtrLfyQXbiK9+O2BlX6mrtzCEo=
+		aiAFL66uwF2JtYNpDflMPO+/Ca4=
 		</data>
 		<key>Headers/AVCompositionTrackSegment.h</key>
 		<data>
-		BE8ARqkZ4mi3zFI1LkvWBAsaO3o=
+		4W/HUbN9d+Wl932HB/F28yUkaZA=
 		</data>
 		<key>Headers/AVError.h</key>
 		<data>
-		oFEFugi+39208V+r3SZhElUh4EA=
+		cNzgneASUoJDEwUk29Kp2I6RtwY=
+		</data>
+		<key>Headers/AVFAudio.h</key>
+		<data>
+		ZnZ6vXJa9bKGxfrUr3IFcQ7hFO4=
 		</data>
 		<key>Headers/AVFoundation.h</key>
 		<data>
-		hEAgUh/dywThyt9h9yGEAc/go0o=
+		GSKtqbXF8+a39WpYoKzGgcht3bk=
 		</data>
 		<key>Headers/AVMIDIPlayer.h</key>
 		<data>
-		q5balddfMr/NMNhaG9D8ATeA1+Q=
+		BtrwlGKzc27bpp3tWdGo/8qpthw=
 		</data>
 		<key>Headers/AVMediaFormat.h</key>
 		<data>
-		NNHaDuLQDTcR/7XXezRvxRyGxXA=
+		LecLjKJyg7M090eeQvtm3G2f/yU=
+		</data>
+		<key>Headers/AVMediaSelection.h</key>
+		<data>
+		+ehScCEtSh0dkRKI9KanDIFMr/o=
 		</data>
 		<key>Headers/AVMediaSelectionGroup.h</key>
 		<data>
-		V8Jvj2nYEIZLn8jYayTIikKPK2Q=
+		CtipEoKsgIKItg3R8opTvdsnK7s=
 		</data>
 		<key>Headers/AVMetadataFormat.h</key>
 		<data>
-		3FN3pA2MDaJm7mj4rtrwV3Js8x0=
+		ZyeF0C4JtTJG/76BW4pvxNrjtx8=
 		</data>
 		<key>Headers/AVMetadataIdentifiers.h</key>
 		<data>
-		Wzk0HIwqhoiMbMh6F2fnC2RlYd8=
+		MQDJphZzbgt0bUVQ4YrkK8sFhKg=
 		</data>
 		<key>Headers/AVMetadataItem.h</key>
 		<data>
-		JJYF0JqT3RBu9BMRRGNpB21N8UU=
+		CHP4Ia/lwu2yif2xllwYhfnH5Zw=
 		</data>
 		<key>Headers/AVMetadataObject.h</key>
 		<data>
-		sHC1LRhpXs4lgkUAAXfBGRzA9jg=
+		Q32MOsIOkZFAxE2mOVf6IzOFi+4=
 		</data>
 		<key>Headers/AVOutputSettingsAssistant.h</key>
 		<data>
-		qFNJyY8exFdlNGOPspx/Ud8UOW0=
+		EJNhEt+XPo09qvNyw9fNiwCjLFk=
 		</data>
 		<key>Headers/AVPlayer.h</key>
 		<data>
-		BEUiUHqPo5+XBp3Oa1gEujbv3Sg=
+		QIxceNY20cv7zBfh2F1XZiuKeTA=
 		</data>
 		<key>Headers/AVPlayerItem.h</key>
 		<data>
-		qZAamVFhQhFnuhae+POEIIfJnZM=
+		iZFHYz0rPXkf9wxvANYe7lv/TiM=
 		</data>
 		<key>Headers/AVPlayerItemOutput.h</key>
 		<data>
-		LBS9f6QZpyQeCFv594nG8wjkU88=
+		dyUmh2Vp1MiMiSb5qqu73P79KaE=
 		</data>
 		<key>Headers/AVPlayerItemTrack.h</key>
 		<data>
-		Cb5c/BAlM1l5umqjf3u30EOKF7k=
+		9NHypOLawQDwvfCWEp+QxN7tts4=
 		</data>
 		<key>Headers/AVPlayerLayer.h</key>
 		<data>
-		20Y7uB/00x+PmCePm3qrL6VslAY=
+		y2pElTxcxdCXG4sVk4IRBcLhBNg=
 		</data>
 		<key>Headers/AVPlayerMediaSelectionCriteria.h</key>
 		<data>
-		pBYs7vHE2Z5pjWoTI66VokHUI9c=
+		x3KLBgN0yMs1Nws6d2Bw+tLRHaE=
 		</data>
 		<key>Headers/AVSampleBufferDisplayLayer.h</key>
 		<data>
-		1YlzEmTWsE3noOCSaSMiuA49NaA=
+		h1V1OM/O81RQtTnGWZIg4x8TIzM=
 		</data>
 		<key>Headers/AVSpeechSynthesis.h</key>
 		<data>
-		WsfxGf3pNBWYnaXZjKcdxlzjrCo=
+		8dBtCwZyIMLThQbl+Qsy6/6w0Xo=
 		</data>
 		<key>Headers/AVSynchronizedLayer.h</key>
 		<data>
-		gRFuyaSEmF5G0HrxoYbk4sMLSHU=
+		UoFCMa6Yfcut07/Tf1JzZ7H7jVQ=
 		</data>
 		<key>Headers/AVTextStyleRule.h</key>
 		<data>
-		yY5fcBedwK3mA/Er6kC6cEN4yP0=
+		y6TeyQzqbmbMaN9lxFt2QY52pg0=
 		</data>
 		<key>Headers/AVTime.h</key>
 		<data>
-		5wVK/UiEXv+7osj3cpNeCF0QW3E=
+		S5MZC+W5bYLM7XwsiiKbNcTbFjo=
 		</data>
 		<key>Headers/AVTimedMetadataGroup.h</key>
 		<data>
-		wjdn9ZsDZMcjeYm6FLWj9qrZS3U=
+		sfEwLSnnS76bFvgJEQn89gBVwF0=
 		</data>
 		<key>Headers/AVUtilities.h</key>
 		<data>
-		yew864/6QI8hdvUiT7MZAEjfiyU=
+		vg6fChmk5g6JeDdnUOqsgJvv+Gg=
 		</data>
 		<key>Headers/AVVideoCompositing.h</key>
 		<data>
-		AilS3thJJPs2mu9cUdb8NF3wbUc=
+		LSQgcFI0ellnc/92Th+785DhXiE=
 		</data>
 		<key>Headers/AVVideoComposition.h</key>
 		<data>
-		AcGmJTzkvwyG5K9gon0m8Q/AcM8=
+		wD+9VfA79kZ2bMAk7UQkWKVLT6M=
 		</data>
 		<key>Headers/AVVideoSettings.h</key>
 		<data>
-		9++tquc8qft29fCiG8/rjh4FF8M=
+		gBEkHz+mg0JMI1jxjwIZtq60JZw=
 		</data>
-		<key>Italian.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			O0m2EAUORrKIbXwhhvnU0GTYNYE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Italian.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			suj6ZJqPivrrXoOP2pJux4+fW74=
+			i2V+5mhzM604kycr1oerzAGm4ys=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2153,7 +1885,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DuyeeBEYvlYSDHbNqaVy8gztums=
+			WRnR3ZDbCCrPVqHxKNCuKY3C9Vg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2162,16 +1894,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KEFSeICEZErLjS0ZjSWKFapvtSE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Japanese.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1x2TF5Dt2WpOsoL1HqjIWBagY3U=
+			aOyGc0awJtvZrkXQT35P3pJjSQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2180,7 +1903,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2uZ8VuXVcEEO39ASY9zmo/aEy9c=
+			ancpUiCg6PSdY678HLElQo90yNg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2189,7 +1912,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uZDII9iJTv6tgLA3Zr6NAxcfofM=
+			tts4alUq1Sc+pi5n1UuD3QP9RfM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2198,25 +1921,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2geQixxMoYafSHqmejoXRQbf+Yg=
+			in9Ap82lT7qiSEEYiyp9/bhmYw4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Spanish.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XdyHVbjrNgIEXzb1gQ3WR7vct/o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<key>Modules/module.modulemap</key>
+		<data>
+		zJLqvcYPO6GTPJ0rNji6us4G0X4=
+		</data>
 		<key>Spanish.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fdIsjzPVoEwqhkl/oO0YHQHj6w8=
+			bCrsXulP6C+Fn6wIRxrsW8vMnWg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2225,7 +1943,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0+E3zaLqBrgZVWPDlJOyFjbhwhk=
+			0rmAvTRwUTkCcHzoNYLmy+8uXf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2234,16 +1952,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tmugAyvUWBWWPCOPn6Z8okcBhRw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ar.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HbG3Y82wYG9C05sa3Uu83CXS/Rg=
+			0jOnEaEwo2oOgR+U24j2IOPS2Aw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2252,7 +1961,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gUXrN+RTqnA8VPf/pQ32c3dadng=
+			mdLrrbA6CICjoDUbGLocRvbyjPU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2261,7 +1970,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RISZXC4EZ0OzdoOJkC9XiwEcjYo=
+			uUdT0tMx/LbF5OseSSsxl1KNkPI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2270,16 +1979,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CH8V/LEfLoiGAqQUPa8poVZ1D8c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ca.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a4gQZT1g5+YiAFZ5gEKf7A3KQU4=
+			HXcqSl8kPmpFFf6eNzVt70hBqYY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2288,7 +1988,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WYeuniLpy45jQ61rWG6dWVsApGM=
+			LeQWIczaZZOOmDvDJ+I/XlK1y/Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2297,7 +1997,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hKwBp+eatsnPFzNyFWOZuGxDM88=
+			mjQn+pvIhCT37UMPw48fnRUdGUQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2306,16 +2006,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LRoMuI2cgKz806GDqlxzeWvN3Is=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>cs.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CKUS6zluvK2UjMZHAQclY0Yt37g=
+			HTCJXtYR+c2OQKZ9M/uHoZVeaxI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2324,7 +2015,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Em76ie1i52Yhg7JXuh2SjX5A/ZQ=
+			hFMhL4ceK1t7fYpl4zWKbiVNncs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2333,7 +2024,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ynoBqODfK1MGVqM5Z3wkctivIZ4=
+			lax1YtEgzQpUFE0izB1U31VqBxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2342,16 +2033,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xcyE0Z3g0jxAvth+FtaeX2VqjNQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>da.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			54J3W6jiNpaQ93SLnMI5wRSNgp8=
+			w/ZdS22WehbjTmBoIkwhsW0aaAE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2360,7 +2042,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZR0C6yXrYjW0TtqPYOz+Tzz2tCs=
+			W5SbkxkMHN8KextsZxxNV2NGLc4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2369,7 +2051,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wX8LWqMREK3o7qIQnhWvgmKMWJo=
+			Z7zLiI0HIMTuj140+J5juSad0rE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2378,16 +2060,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CQQW/2Ch936SN70bebH3N9WjDAQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>el.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			edVFrOlTVMaqPhiF0XbzxxiAltA=
+			E3YzoRhddzQIOjPkcow78ap6zDM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2396,7 +2069,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6xXuurY6UHRLtKsZnMtUPfNhdgI=
+			WWSsxMbUpCFPT9GjJVxW/a/dObs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2405,7 +2078,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aDYXbn4KFOv+djmYKa3U4fiO4i8=
+			Dl2YxtWB2MicvMmXivqCfugwU4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2414,16 +2087,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LN8Cbp1nPwMBgL+/BoHRPEYRR3M=
+			h4KqzZi8rdpoHDH1kAbZ6fErhgQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/AVAssetExportPresetNames.strings</key>
+		<key>en_AU.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rnYaKSSuXEoWv8JIA2/SQZyRGQw=
+			T8RD1yslWsx6D55+efEil85LWWM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AVError.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sAYDe/jPiNsN7D6MsKX7mC5o88g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/AVMediaSelectionOption.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QMUvT+kwPiKe94V85vJBlrayjqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2432,7 +2123,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Omw7/jgta6/vpjV5cRv1B1V08/0=
+			T8RD1yslWsx6D55+efEil85LWWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2441,7 +2132,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jdfFxc89A/nfZGigt7RKRfyCmFg=
+			sAYDe/jPiNsN7D6MsKX7mC5o88g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2450,16 +2141,34 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			er7Npdm6s3CJKwcuh31tRuC+yWQ=
+			QMUvT+kwPiKe94V85vJBlrayjqI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/AVAssetExportPresetNames.strings</key>
+		<key>es_MX.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KpzWiMPZP/6pYG5znW1dSpNkWBw=
+			wY/5GCNLRHJ35hN0ZDrzpOkM5yY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/AVError.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X7BBlEjbXPSyhJvJatsLgrSf6Oo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/AVMediaSelectionOption.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OKRcfXo3DAPFVgMCD7N0Gp2l7MM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2468,7 +2177,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RJXs7RJM770W9D5E6srLRpVkfS4=
+			gE8/hQ4mLz8yCUbgp4+pzybKpRY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2477,7 +2186,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xj8P35ptC8BKAbEZ//VQTpxUjNg=
+			0KXa5ojtlLvXqtpp2JfAmawludk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2486,16 +2195,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QwQNvS7HnM7bklde9hpHxs/D8tw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr_CA.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			L6qTPhYsfjtrbPuYiHyL5gOkXcA=
+			0uQSnihvRNijnjmrOy+uCmyIauI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2504,7 +2204,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MucgL2dtqmsTwQMRcbQ/opjgM60=
+			FDVbTmVLU31nSnXnzrJwvpenvPo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2513,7 +2213,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q0h/XCkg/E4JrfCShsvD7mGead8=
+			56GDo4i/hWmhVFQgyKqhrSqC13I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2522,16 +2222,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gSlJWwVXoNTY4lyBYwmiYsguIvE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>he.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			30CWcISxfBw6vQhDizdaSmGkYMA=
+			3jch7jnDIKALAKB4FIja2DyvbuE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2540,7 +2231,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mwxjXpgmapIdgjJixDi9BX6D7c8=
+			41Aas4qSKtqaBRMOgxUolKfoOyE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2549,7 +2240,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RQ175bg8AwWcWeDV9UOdMGmSZ+I=
+			064ax/SakU4PeNvn/cM5H1Y6jnk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2558,16 +2249,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K4gFDQXhAla7Xv7ltFbKNRsIsq4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hi.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wIKVG6awAg1+BjFz/HMdNSX1Ypc=
+			h/iKoH/MkGMV4DWwKHKCYXxVOBw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2576,7 +2258,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5snpl1r7sQfn4+OZZ+FSH3fGnxc=
+			L3rd6aYOc0hsfZkHTs/FdI9Ov7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2585,7 +2267,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/fimqGMouB20ZUf3eLzduXWx3Ls=
+			Ny+oSmMlf9EVwU7vBluHfD7s5TY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2594,16 +2276,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sr0J74bVv0GR1yg5WaPy+vmfCYw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hr.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h6osa/ZWQqWl7pQag51SsQVMxGw=
+			yQhhpYvRuvuesWmYTs7M6HKHoqw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2612,7 +2285,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mNJBDHjb8d3cAlY1Gpdm68gJhLQ=
+			GL/PxtI2cbWRflYrPqDBziuYRhk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2621,7 +2294,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ibWcu/GKfYGy/1WfR5LFBi9Pqes=
+			UMdAAePnG6zO9N9pgz/0djboyN8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2630,16 +2303,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUVFIizCJmjowYbwLwZDH165twI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hu.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Up825+CWZqDuQU4DQCB8iQwhRzE=
+			WCIQ3247Cf2Fh4lFaM4+ttS9XBU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2648,7 +2312,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VgiH+ZnAIgIfUR8/4LQwLPYWouE=
+			tYUXXEQ4z5ukqCLa94L7PDbvAFY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2657,7 +2321,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5b8/x+iyaLJnDfnDJl8t2lot/Ws=
+			AK1EHxJlD6he2NVIirwohz6G8N8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2666,16 +2330,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qYKmvoZCpuTJzffM9Ky1Fd2jhGI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>id.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4hu+YZwQavn0P9WLHc4Z7pc91fg=
+			pXB+Bknv/NALJiqTIyi7pv8U1z0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2684,7 +2339,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vbpyye4gPvUVb67/XBndkPXh6lo=
+			n06Rjq/55nQ+wOyD3fUVFQeaCGw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2693,7 +2348,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1YAQBTSZY9AQvgMlJ5NGLHxt/Gg=
+			k+qJntlB2ZPNOdapB94woRYyoks=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2702,16 +2357,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0RfC9tGENvHP2DIbdzaMKze2sNY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QcuuZtRM1Z4z0dHbhTV6hx3AlnY=
+			Cu/Ejn//9ALuP9nvR4OhMvrH1IQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2720,7 +2366,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v9sayTdSsN3EjLU3/Pk8vxZ0iak=
+			90OcFt9SXXYeaJm97uePmFtD828=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2729,7 +2375,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rf1GRIZPBDVS+s1bpul0eihgQ4g=
+			lbHYowCQLlR7vc6/jdTNaJjEaoY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2738,29 +2384,20 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUsJ8XIRUF4KGc2dWmVVUz01W6I=
+			FBoPDPSddjGmvwSfMOg8Jt4QAmc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>libAVFAudio.dylib</key>
 		<data>
-		5ty/zUtvnl8rgnheHbH0v6F0tu4=
+		MrC6HaUjWpd3V8exZ4BfvbfnY/w=
 		</data>
-		<key>ms.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8yYGd4lq4auen4NdCz8kA+KP+rE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ms.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HuXGS8yHUwjiq2rA32T055Ks/5E=
+			TUyfRcC/44GnHPSfMiSwhylGD8k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2769,7 +2406,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zmeaouuZ7UNiR/X5//s22wokhVE=
+			wkMhG8nphXUONiwV8uifjY7Z8nY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2778,16 +2415,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XwB6ZoMIsOm3GYhNPUsgcOhVKi0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>no.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+Gn6G09Ebd7G2tQLPTFbohYab1w=
+			8GPwIcOF3HR543b9TPnbAlWN9PI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2796,7 +2424,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jJfk3V5hBtFvwqAHy1aFlp9Q+Hc=
+			8mlpAaMWW1yn1wQKvpIsqPzmoV0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2805,7 +2433,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Gegq8w7bKnOLsKqE6iRrkun+qo=
+			jGPmtEh1H7xAF2dh3pxy7B7s0hQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2814,16 +2442,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dfYP07CGfFVJUXr1AD/3FYa0mGA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pl.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YVFu9anNpwnE9rGO0MrAWQA7kBA=
+			uqf7+amcM4yKW0TKHHmX+fD9tC0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2832,7 +2451,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VaFW8VcjymRJXcnP8bnZ+MhdU9o=
+			IcajuFkzzuaeolW9wRPHvqkSvSA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2841,7 +2460,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FUpKxd2RbfmO9mWeiqZjtskD/sQ=
+			bwIewc4t/bxm8gkNEEUKIAnJ1l0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2850,16 +2469,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JgTH+HzILVPktRACNqaKVFjZgME=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Icdqk23fjikWhXjBVq15ygVMrKw=
+			3PbcLHZd8c6KDB2YB6Fki+q3BKU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2868,7 +2478,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZHbkaksnkasFLsqm6wIVnQ2XiP8=
+			ArqjrOZ5ZJ0Ka2jfEkbjDnwq5qE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2877,7 +2487,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rcjP0KlBeyZyHDN2z+cGP9z2eIU=
+			gD0p0PONAb5Ii/S7cVIpjSgCbFQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2886,16 +2496,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nr0j44ub2/khikvNixYqfWlib4w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt_PT.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QNcYeqMH1PCX8pMIN6f32ts8nVI=
+			MQhi+mpE+xybkK32Hy1tFZLEOiM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2904,7 +2505,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CBs8+qxh100OxRxzXuch+LYieaI=
+			JtjIOZKqrUHnvhkGBH8WLcu5aIU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2913,7 +2514,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VpvZdKi1d+7Ya7XdjG7Ao2a8GLY=
+			YS7FMheRx+AI8ZJtjXS9hIcIpZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2922,7 +2523,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+C3SYOOmfo95xrjlBba6VBBpL9U=
+			9zwfgEL61FMi5ED4qj37E3er/RE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2931,20 +2532,11 @@
 		<data>
 		ITYv3jwJdkKoqRqCetlzxJ8qQEs=
 		</data>
-		<key>ro.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dRlPUDana+NE638VhrTILQ3H+UA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ro.lproj/AVCaptureDeviceNames.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LKrnPFUYWOT1fMN3WKXLsiocCrY=
+			mp/vWVA955+zY+/0mtAw9Po6Jjk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2953,7 +2545,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/mgHsq0+vjYmIe4PcXbo0ocbjN8=
+			+103s/yDlsm2MZS9lCNgOMZpo9k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2962,16 +2554,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NBAISPItrIPTr3a/hu84ofyHGwA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ru.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HiXBRSV8xmgP7MRmqG9dnrTzIbY=
+			LDp0Xk3hLT4v3dcuKnsSOTE9xgA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2980,7 +2563,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			61lQLSRUalFpOXRT2WqiPtiVCDI=
+			rs8ntL9/tSM9JHpjvbAxyeZ/nhg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2989,7 +2572,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A57zj9E0x9TOuBcjnT5dhjdNilw=
+			eNkYJNa8w1Boeay7PuBdmdyVW5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2998,16 +2581,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uBqaA3xNaez0dmFopF3WSQGP79w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>sk.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gGbE7MXDp7urHACWZx4iORrMNiw=
+			hnATrQ22zlJSJqQ7orj4d4SQ5Cw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3016,7 +2590,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			64Zt5XGUpSAeYWIH8P08jX693s8=
+			CaseV1TlpCm0ZM1cXGtgCp/2yyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3025,7 +2599,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z2+GPcErStwGNJsVGa7TFbGjxtU=
+			VaHcJo1YJ/rWtqWbRmEXfbMJpxw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3034,16 +2608,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nO0lvM1M/jExlO2CMOe6QbL6qM4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>sv.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C4NT0X11mQG6braaXBoZeXHAVeA=
+			KeztmTqUovy8Z00JiuGcb+hU+3o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3052,7 +2617,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SakVBiUGj4bzFc+6Hlw+n/OMo/s=
+			/6cvtSTdmAwN5zmAdM1h5cVfsPA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3061,7 +2626,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			66VTS5vZkPkhNRoAPrNDnxjE7WA=
+			bhFgExiOpBmsRywQp19tKa2UiMo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3070,16 +2635,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p6E8QvU5vKSSKo9XkxvU6ZtP778=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>th.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1x7Kunau85MhgAKT5UX2lVBWZ8Q=
+			ErUW/hjiNCxc5OF+LuL3qChRMP0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3088,7 +2644,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZkSe1NTzaTq2QRUXKf0G7HBZbgM=
+			qI8IL6TIZVX4WKi3z6ORUtNRS/I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3097,7 +2653,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h3jF05K+nKvfWPecfK/Adf4NFxQ=
+			s2a0HkwsWbzfG1bMgPmN1XuuRVw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3106,16 +2662,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y+Ou1dpYyUOcM86h2yZllWh+KQo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HagQlnOaStzMrpBNmAwnZXws/Eo=
+			EFaWaWNwkjh0SIY7NwDs8FvcqOs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3124,7 +2671,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tq0ob8cmGJw7VmkbmLabcJw2FyM=
+			v+wtyI1mte60S3ZeixeGaYqA4GI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3133,7 +2680,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4Inomw2HgZ0Ai9IblQa/qZ3EehM=
+			I+uSOtPUPeD4/dLF9cGwtPPPhcE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3142,16 +2689,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/685+lpOwthldqSr7jZzw6qpTqE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>uk.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gQS2xX0dWsm+U9yINgnfcKwdOqk=
+			Irr+ZG5eRoYHCmjJIuhVXsoEfd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3160,7 +2698,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V14n/K5+u28+3LxsiENaNdjO1+M=
+			DM8aQOrsStBNTJ+EbnSg7LOugAs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3169,7 +2707,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sVN86JHcFmwnUBsuF3A+2Czu1UQ=
+			Cwp3D815gq/hQTekpi5uxzjFDmQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3178,20 +2716,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ew1NUaodnU87cFaPdGmYndZXRBw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>version.plist</key>
-		<data>
-		N93qjorz0PAhwdntlbfr2dZNvBk=
-		</data>
-		<key>vi.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JUCMFk5jWY3IT2oes3H9b3pAVvw=
+			ODITnFVV0t3pKNzvUId1urWRoFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3200,7 +2725,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5zYH/+uehEiCl1QhUcnviw6phu4=
+			c/lH2VJtK/FosJnIMhg5HGsbVDI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3209,7 +2734,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qexIapyr9f4fI5j06lSANA468Kw=
+			P0GZnIbxP2KdcWyJ4xBbNsp4SQI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3218,16 +2743,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lOpY5WVlaO0qAcgGl9p+kole9bs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_CN.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P3Nfm3HpdU28RPHrqO+afDA/riE=
+			+yQY6M1+tGpAVNTSOkFkIvkXOFg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3236,7 +2752,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gW8hKJb/Xmno8l1VKjGMk4WaEnI=
+			awAZqU77KvkIbA+/rz+vZweMCIA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3245,7 +2761,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9SKKc2D4gpKH8f+kkqxRQb/1BoY=
+			qSp0irRmOvPhWaLiJ2aNZSTaHGk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3254,16 +2770,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QVKeWFCLwE3GCM5Pd4OAqjy3nbg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_HK.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FkTLg0ouvz2knwstmpg+bC8/6kc=
+			cfQL2P4kUSGXzCZzDMXUIKfhKtg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3272,7 +2779,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CpxDYbP23oNnFMgXvbgu+FdhLHw=
+			u16/eUKjtitgaEF6ihu06WdFOa0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3281,7 +2788,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v24KFDYViPw4ulV1K8tHeZkKEqM=
+			ivVE1r1oQNPhwOKU2mi52hESGQI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3290,16 +2797,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kfpaUfU1mTru+OH0BUmILtCzLCk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_TW.lproj/AVAssetExportPresetNames.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cSStpEBYgRdPbkSMaVPYqVZxHJg=
+			PKN6O+p2AolUguwOCJoPgHxX5jM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3308,7 +2806,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			haBSp3u3hES5Q7S+wNER6Hu6K7w=
+			wfpdwHkVVHHTmj7EYG92HZgWoTk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3317,7 +2815,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WbtrlwqvkFGe0JHoAm97Nk8J0Dg=
+			dKnW/gPyqTTYeAmJg4GcVoJltxU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3326,7 +2824,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ureXdszglSXkYu9bSb1+Cn5cyWo=
+			R/n3pNatGTBNdxWgYW7e/8nt3Cg=
 			</data>
 			<key>optional</key>
 			<true/>

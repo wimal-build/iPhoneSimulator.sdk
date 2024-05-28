@@ -2,7 +2,7 @@
 //  MPMoviePlayerController.h
 //  MediaPlayer
 //
-//  Copyright 2008-2010 Apple, Inc. All rights reserved.
+//  Copyright 2008-2015 Apple, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, MPMovieScalingMode) {
     MPMovieScalingModeAspectFit,  // Uniform scale until one dimension fits
     MPMovieScalingModeAspectFill, // Uniform scale until the movie fills the visible bounds. One dimension may have clipped contents
     MPMovieScalingModeFill        // Non-uniform scale. Both render dimensions will exactly match the visible bounds
-};
+} NS_DEPRECATED_IOS(2_0, 9_0);
 
 typedef NS_ENUM(NSInteger, MPMoviePlaybackState) {
     MPMoviePlaybackStateStopped,
@@ -28,19 +28,19 @@ typedef NS_ENUM(NSInteger, MPMoviePlaybackState) {
     MPMoviePlaybackStateInterrupted,
     MPMoviePlaybackStateSeekingForward,
     MPMoviePlaybackStateSeekingBackward
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 typedef NS_OPTIONS(NSUInteger, MPMovieLoadState) {
     MPMovieLoadStateUnknown        = 0,
     MPMovieLoadStatePlayable       = 1 << 0,
     MPMovieLoadStatePlaythroughOK  = 1 << 1, // Playback will be automatically started in this state when shouldAutoplay is YES
     MPMovieLoadStateStalled        = 1 << 2, // Playback will be automatically paused in this state, if started
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 typedef NS_ENUM(NSInteger, MPMovieRepeatMode) {
     MPMovieRepeatModeNone,
     MPMovieRepeatModeOne
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 typedef NS_ENUM(NSInteger, MPMovieControlStyle) {
     MPMovieControlStyleNone,       // No controls
@@ -48,13 +48,13 @@ typedef NS_ENUM(NSInteger, MPMovieControlStyle) {
     MPMovieControlStyleFullscreen, // Controls for fullscreen playback
     
     MPMovieControlStyleDefault = MPMovieControlStyleEmbedded
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 typedef NS_ENUM(NSInteger, MPMovieFinishReason) {
     MPMovieFinishReasonPlaybackEnded,
     MPMovieFinishReasonPlaybackError,
     MPMovieFinishReasonUserExited
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 // -----------------------------------------------------------------------------
 // Movie Property Types
@@ -63,20 +63,23 @@ typedef NS_OPTIONS(NSUInteger, MPMovieMediaTypeMask) {
     MPMovieMediaTypeMaskNone  = 0,
     MPMovieMediaTypeMaskVideo = 1 << 0,
     MPMovieMediaTypeMaskAudio = 1 << 1
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 typedef NS_ENUM(NSInteger, MPMovieSourceType) {
     MPMovieSourceTypeUnknown,
     MPMovieSourceTypeFile,     // Local or progressively downloaded network content
     MPMovieSourceTypeStreaming // Live or on-demand streaming content
-};
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 // -----------------------------------------------------------------------------
 // Movie Player
 // 
 // See MPMediaPlayback.h for the playback methods.
 
-MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPMoviePlayerController : NSObject <MPMediaPlayback>
+MP_EXTERN_CLASS_AVAILABLE(2_0)
+NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+
+@interface MPMoviePlayerController : NSObject <MPMediaPlayback>
 
 - (instancetype)initWithContentURL:(NSURL *)url NS_DESIGNATED_INITIALIZER;
 
@@ -123,32 +126,40 @@ MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPMoviePlayerController : NSObject <MP
 @interface MPMoviePlayerController (MPMovieProperties)
 
 // The types of media in the movie, or MPMovieMediaTypeNone if not known.
-@property (nonatomic, readonly) MPMovieMediaTypeMask movieMediaTypes;
+@property (nonatomic, readonly) MPMovieMediaTypeMask movieMediaTypes NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.");
 
 // The playback type of the movie. Defaults to MPMovieSourceTypeUnknown.
 // Specifying a playback type before playing the movie can result in faster load times.
-@property (nonatomic) MPMovieSourceType movieSourceType;
+@property (nonatomic) MPMovieSourceType movieSourceType NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // The duration of the movie, or 0.0 if not known.
-@property (nonatomic, readonly) NSTimeInterval duration;
+@property (nonatomic, readonly) NSTimeInterval duration NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // The currently playable duration of the movie, for progressively downloaded network content.
-@property (nonatomic, readonly) NSTimeInterval playableDuration;
+@property (nonatomic, readonly) NSTimeInterval playableDuration NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // The natural size of the movie, or CGSizeZero if not known/applicable.
-@property (nonatomic, readonly) CGSize naturalSize;
+@property (nonatomic, readonly) CGSize naturalSize NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // The start time of movie playback. Defaults to NaN, indicating the natural start time of the movie.
-@property (nonatomic) NSTimeInterval initialPlaybackTime;
+@property (nonatomic) NSTimeInterval initialPlaybackTime NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // The end time of movie playback. Defaults to NaN, which indicates natural end time of the movie.
-@property (nonatomic) NSTimeInterval endPlaybackTime;
+@property (nonatomic) NSTimeInterval endPlaybackTime NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // Indicates whether the movie player allows AirPlay video playback. Defaults to YES on iOS 5.0 and later.
-@property (nonatomic) BOOL allowsAirPlay NS_AVAILABLE_IOS(4_3);
+@property (nonatomic) BOOL allowsAirPlay NS_DEPRECATED_IOS(4_3, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 // Indicates whether the movie player is currently playing video via AirPlay.
-@property (nonatomic, readonly, getter=isAirPlayVideoActive) BOOL airPlayVideoActive NS_AVAILABLE_IOS(5_0);
+@property (nonatomic, readonly, getter=isAirPlayVideoActive) BOOL airPlayVideoActive NS_DEPRECATED_IOS(5_0, 9_0, "Use AVPlayerViewController in AVKit.")
+;
 
 @end
 
@@ -156,45 +167,45 @@ MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPMoviePlayerController : NSObject <MP
 // Movie Player Notifications
 
 // Posted when the scaling mode changes.
-MP_EXTERN NSString * const MPMoviePlayerScalingModeDidChangeNotification;
+MP_EXTERN NSString * const MPMoviePlayerScalingModeDidChangeNotification NS_DEPRECATED_IOS(2_0, 9_0);
 
 // Posted when movie playback ends or a user exits playback.
-MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishNotification;
+MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishNotification NS_DEPRECATED_IOS(2_0, 9_0);
 
-MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey NS_AVAILABLE_IOS(3_2); // NSNumber (MPMovieFinishReason)
+MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey NS_DEPRECATED_IOS(3_2, 9_0); // NSNumber (MPMovieFinishReason)
 
 // Posted when the playback state changes, either programatically or by the user.
-MP_EXTERN NSString * const MPMoviePlayerPlaybackStateDidChangeNotification NS_AVAILABLE_IOS(3_2);
+MP_EXTERN NSString * const MPMoviePlayerPlaybackStateDidChangeNotification NS_DEPRECATED_IOS(3_2, 9_0);
 
 // Posted when the network load state changes.
-MP_EXTERN NSString * const MPMoviePlayerLoadStateDidChangeNotification NS_AVAILABLE_IOS(3_2);
+MP_EXTERN NSString * const MPMoviePlayerLoadStateDidChangeNotification NS_DEPRECATED_IOS(3_2, 9_0);
 
 // Posted when the currently playing movie changes.
-MP_EXTERN NSString * const MPMoviePlayerNowPlayingMovieDidChangeNotification NS_AVAILABLE_IOS(3_2);
+MP_EXTERN NSString * const MPMoviePlayerNowPlayingMovieDidChangeNotification NS_DEPRECATED_IOS(3_2, 9_0);
 
 // Posted when the movie player enters or exits fullscreen mode.
-MP_EXTERN NSString * const MPMoviePlayerWillEnterFullscreenNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMoviePlayerDidEnterFullscreenNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMoviePlayerWillExitFullscreenNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMoviePlayerDidExitFullscreenNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationDurationUserInfoKey NS_AVAILABLE_IOS(3_2); // NSNumber of double (NSTimeInterval)
-MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationCurveUserInfoKey NS_AVAILABLE_IOS(3_2);     // NSNumber of NSUInteger (UIViewAnimationCurve)
+MP_EXTERN NSString * const MPMoviePlayerWillEnterFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerDidEnterFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerWillExitFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerDidExitFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationDurationUserInfoKey NS_DEPRECATED_IOS(3_2, 9_0); // NSNumber of double (NSTimeInterval)
+MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationCurveUserInfoKey NS_DEPRECATED_IOS(3_2, 9_0);     // NSNumber of NSUInteger (UIViewAnimationCurve)
 
 // Posted when the movie player begins or ends playing video via AirPlay.
-MP_EXTERN NSString * const MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification NS_AVAILABLE_IOS(5_0);
+MP_EXTERN NSString * const MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification NS_DEPRECATED_IOS(5_0, 9_0);
 
 // Posted when the ready for display state changes.
-MP_EXTERN NSString * const MPMoviePlayerReadyForDisplayDidChangeNotification NS_AVAILABLE_IOS(6_0);
+MP_EXTERN NSString * const MPMoviePlayerReadyForDisplayDidChangeNotification NS_DEPRECATED_IOS(6_0, 9_0);
 
 // -----------------------------------------------------------------------------
 // Movie Property Notifications
 
 // Calling -prepareToPlay on the movie player will begin determining movie properties asynchronously.
 // These notifications are posted when the associated movie property becomes available.
-MP_EXTERN NSString * const MPMovieMediaTypesAvailableNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMovieSourceTypeAvailableNotification NS_AVAILABLE_IOS(3_2); // Posted if the movieSourceType is MPMovieSourceTypeUnknown when preparing for playback.
-MP_EXTERN NSString * const MPMovieDurationAvailableNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification NS_AVAILABLE_IOS(3_2);
+MP_EXTERN NSString * const MPMovieMediaTypesAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMovieSourceTypeAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0); // Posted if the movieSourceType is MPMovieSourceTypeUnknown when preparing for playback.
+MP_EXTERN NSString * const MPMovieDurationAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0);
 
 // -----------------------------------------------------------------------------
 // Thumbnails
@@ -202,8 +213,7 @@ MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification NS_AVAILABLE_
 typedef NS_ENUM(NSInteger, MPMovieTimeOption) {
     MPMovieTimeOptionNearestKeyFrame,
     MPMovieTimeOptionExact
-};
-
+} NS_DEPRECATED_IOS(3_2, 9_0);
 
 @interface MPMoviePlayerController (MPMoviePlayerThumbnailGeneration)
 
@@ -213,18 +223,18 @@ typedef NS_ENUM(NSInteger, MPMovieTimeOption) {
 
 // Asynchronously request thumbnails for one or more times, provided as an array of NSNumbers (double).
 // Posts MPMoviePlayerThumbnailImageRequestDidFinishNotification on completion.
-- (void)requestThumbnailImagesAtTimes:(NSArray *)playbackTimes timeOption:(MPMovieTimeOption)option NS_AVAILABLE_IOS(3_2);
+- (void)requestThumbnailImagesAtTimes:(NSArray *)playbackTimes timeOption:(MPMovieTimeOption)option NS_DEPRECATED_IOS(3_2, 9_0);
 
 // Cancels all pending asynchronous thumbnail requests.
-- (void)cancelAllThumbnailImageRequests NS_AVAILABLE_IOS(3_2);
+- (void)cancelAllThumbnailImageRequests NS_DEPRECATED_IOS(3_2, 9_0);
 
 @end
 
 // Posted when each thumbnail image request is completed.
-MP_EXTERN NSString * const MPMoviePlayerThumbnailImageRequestDidFinishNotification NS_AVAILABLE_IOS(3_2);
-MP_EXTERN NSString * const MPMoviePlayerThumbnailImageKey NS_AVAILABLE_IOS(3_2); // UIImage, may be nil if an error occurred.
-MP_EXTERN NSString * const MPMoviePlayerThumbnailTimeKey NS_AVAILABLE_IOS(3_2);  // NSNumber (double)
-MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey NS_AVAILABLE_IOS(3_2); // NSError
+MP_EXTERN NSString * const MPMoviePlayerThumbnailImageRequestDidFinishNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerThumbnailImageKey NS_DEPRECATED_IOS(3_2, 9_0); // UIImage, may be nil if an error occurred.
+MP_EXTERN NSString * const MPMoviePlayerThumbnailTimeKey NS_DEPRECATED_IOS(3_2, 9_0);  // NSNumber (double)
+MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey NS_DEPRECATED_IOS(3_2, 9_0); // NSError
 
 // -----------------------------------------------------------------------------
 // Timed Metadata
@@ -232,11 +242,14 @@ MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey NS_AVAILABLE_IOS(3_2);
 @interface MPMoviePlayerController (MPMoviePlayerTimedMetadataAdditions)
 
 // Returns an array of the most recent MPTimedMetadata objects provided by the media stream.
-@property (nonatomic, readonly) NSArray *timedMetadata NS_AVAILABLE_IOS(4_0);
+@property (nonatomic, readonly) NSArray *timedMetadata NS_DEPRECATED_IOS(4_0, 9_0);
 
 @end
 
-MP_EXTERN_CLASS_AVAILABLE(4_0) @interface MPTimedMetadata : NSObject
+MP_EXTERN_CLASS_AVAILABLE(4_0)
+NS_DEPRECATED_IOS(4_0, 9_0)
+
+@interface MPTimedMetadata : NSObject
 
 // A key which identifies a piece of timed metadata.
 @property (nonatomic, readonly) NSString *key;
@@ -256,25 +269,25 @@ MP_EXTERN_CLASS_AVAILABLE(4_0) @interface MPTimedMetadata : NSObject
 @end
 
 // Posted when new timed metadata arrives.
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUpdatedNotification NS_AVAILABLE_IOS(4_0);
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUserInfoKey NS_AVAILABLE_IOS(4_0);       // NSDictionary of the most recent MPTimedMetadata objects.
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUpdatedNotification NS_DEPRECATED_IOS(4_0, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUserInfoKey NS_DEPRECATED_IOS(4_0, 9_0);       // NSDictionary of the most recent MPTimedMetadata objects.
 
 // Additional dictionary keys for use with the 'allMetadata' property. All keys are optional.
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyName NS_AVAILABLE_IOS(4_0);           // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyInfo NS_AVAILABLE_IOS(4_0);           // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyMIMEType NS_AVAILABLE_IOS(4_0);       // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyDataType NS_AVAILABLE_IOS(4_0);       // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode NS_AVAILABLE_IOS(4_0);   // NSString (ISO 639-2)
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyName NS_DEPRECATED_IOS(4_0, 9_0);           // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyInfo NS_DEPRECATED_IOS(4_0, 9_0);           // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyMIMEType NS_DEPRECATED_IOS(4_0, 9_0);       // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyDataType NS_DEPRECATED_IOS(4_0, 9_0);       // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode NS_DEPRECATED_IOS(4_0, 9_0);   // NSString (ISO 639-2)
 
 // -----------------------------------------------------------------------------
 
 @interface MPMoviePlayerController (MPMovieLogging)
 
 // Returns an object that represents a snapshot of the network access log. Can be nil.
-@property (nonatomic, readonly) MPMovieAccessLog *accessLog NS_AVAILABLE_IOS(4_3);
+@property (nonatomic, readonly) MPMovieAccessLog *accessLog NS_DEPRECATED_IOS(4_3, 9_0);
 
 // Returns an object that represents a snapshot of the error log. Can be nil.
-@property (nonatomic, readonly) MPMovieErrorLog *errorLog NS_AVAILABLE_IOS(4_3);
+@property (nonatomic, readonly) MPMovieErrorLog *errorLog NS_DEPRECATED_IOS(4_3, 9_0);
 
 @end
 
@@ -282,7 +295,10 @@ MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode NS_AVAILABL
 // An MPMovieAccessLog accumulates key metrics about network playback and presents them as a collection of MPMovieAccessLogEvent instances.
 // Each MPMovieAccessLogEvent instance collates the data that relates to each uninterrupted period of playback.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieAccessLog : NSObject <NSCopying>
+MP_EXTERN_CLASS_AVAILABLE(4_3)
+NS_DEPRECATED_IOS(4_3, 9_0)
+
+@interface MPMovieAccessLog : NSObject <NSCopying>
 
 // Returns the webserver access log into a textual format that conforms to the W3C Extended Log File Format for web server log files.
 // For more information see: http://www.w3.org/pub/WWW/TR/WD-logfile.html
@@ -299,7 +315,10 @@ MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieAccessLog : NSObject <NSCopying
 // -----------------------------------------------------------------------------
 // An MPMovieErrorLog provides data to identify if, and when, network resource playback failures occured.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieErrorLog : NSObject <NSCopying>
+MP_EXTERN_CLASS_AVAILABLE(4_3)
+NS_DEPRECATED_IOS(4_3, 9_0)
+
+@interface MPMovieErrorLog : NSObject <NSCopying>
 
 // Returns the webserver error log into a textual format that conforms to the W3C Extended Log File Format for web server log files.
 // For more information see: http://www.w3.org/pub/WWW/TR/WD-logfile.html
@@ -316,7 +335,10 @@ MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieErrorLog : NSObject <NSCopying>
 // -----------------------------------------------------------------------------
 // An MPMovieAccessLogEvent repesents a single access log entry.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieAccessLogEvent : NSObject <NSCopying>
+MP_EXTERN_CLASS_AVAILABLE(4_3)
+NS_DEPRECATED_IOS(4_3, 9_0)
+
+@interface MPMovieAccessLogEvent : NSObject <NSCopying>
 
 // A count of media segments downloaded from the server to this client.
 @property (nonatomic, readonly) NSUInteger numberOfSegmentsDownloaded;
@@ -365,7 +387,10 @@ MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieAccessLogEvent : NSObject <NSCo
 // -----------------------------------------------------------------------------
 // An MPMovieErrorLogEvent repesents a single error log entry.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3) @interface MPMovieErrorLogEvent : NSObject <NSCopying>
+MP_EXTERN_CLASS_AVAILABLE(4_3)
+NS_DEPRECATED_IOS(4_3, 9_0)
+
+@interface MPMovieErrorLogEvent : NSObject <NSCopying>
 
 // The date and time when the error occured.
 @property (nonatomic, readonly) NSDate *date;

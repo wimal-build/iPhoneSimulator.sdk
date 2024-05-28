@@ -42,11 +42,11 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		rePsR217XFdm5/8Dl4YYSF3IuYU=
+		1Ry7eVaKFIs8AWoshnEW6UxMASY=
 		</data>
 		<key>InternalConfig.plist</key>
 		<data>
-		zMFQdPSUmmOH5wHxctcsHiR45e4=
+		nfgWQNyeTdvfDZJwiV9aR2SjXOI=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -70,18 +70,18 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VO1Q9HcejB233Wf2EOR47Asxiy8=
+			haVorocCZCWHZaGqXLQYvcDYgtA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/Info.plist</key>
 		<data>
-		wMx2mOVFnuH1tJuRpASC6c7T3t4=
+		Bnn9O1K7DrSgQ162YBUiREuYp4E=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		4A5MkQx+9QLeUbHvEB4l+xCyCjM=
+		aiGhaNagdIfy7AN+odG4GwAOozQ=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -103,7 +103,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature</key>
 		<data>
-		jtYaIXYtAquO00CpJIxy6dZktDQ=
+		kNEju5Btqsc/MpnCZ/BK029gDwc=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -150,6 +150,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>XPCServices/com.apple.siri.acousticsignature.xpc/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -160,6 +169,15 @@
 			<true/>
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>XPCServices/com.apple.siri.acousticsignature.xpc/es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -384,10 +402,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>XPCServices/com.apple.siri.acousticsignature.xpc/version.plist</key>
-		<data>
-		wjeyPx15WQ4mZRGfllcVP9c0IoQ=
-		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -437,7 +451,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oFswj7t1oJADRk2UA6lysAF6/zE=
+			+X2WhIc9ircDV9HEMeWncQp0Bck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -481,11 +495,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CNdU42lYesFLs0uvsomdm0hawqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			CNdU42lYesFLs0uvsomdm0hawqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4zzNFaGN72lcEnVKvYj035UiigA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -521,7 +553,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WrTQ8IPzz+yMjniDlXguzlrXsQQ=
+			EoEJ9f9AEBkldBr9KL/kn3z64dY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -627,15 +659,15 @@
 		</dict>
 		<key>settings_siri@2x.png</key>
 		<data>
-		vYXz3oLp20iOtSxFffdDuxu46HU=
+		vgk6DDAYATH9g2OINRB9baZC1ew=
 		</data>
 		<key>settings_siri@3x.png</key>
 		<data>
-		yQsiu+VUxYgz8m2KsBWIPYZVWC8=
+		LvEo3ktaAPpLZIgizFdmlmVthKQ=
 		</data>
 		<key>settings_siri~ipad.png</key>
 		<data>
-		MLhSgz1ake8EPaUgArnJrI+HHY4=
+		CwhvSLqT+cSnSv+jFBFtYGPn50c=
 		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
@@ -650,7 +682,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mw5PezYg6mZWwn0iU64PX64WLpc=
+			h4MP41azZ7Zgfp+pQd7udEEUcfE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -659,7 +691,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mnP89IH4MiJvtK5G8og4vTav4ws=
+			N5zRck9v1g4tUwXSuo2gs1Wy81Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/InfoPlist.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1W/qBOe1j/nEUdQbl/gmOjzrQU0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -682,10 +723,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		wjeyPx15WQ4mZRGfllcVP9c0IoQ=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -763,7 +800,7 @@
 		</dict>
 		<key>InternalConfig.plist</key>
 		<data>
-		zMFQdPSUmmOH5wHxctcsHiR45e4=
+		nfgWQNyeTdvfDZJwiV9aR2SjXOI=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -787,18 +824,18 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VO1Q9HcejB233Wf2EOR47Asxiy8=
+			haVorocCZCWHZaGqXLQYvcDYgtA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/Info.plist</key>
 		<data>
-		wMx2mOVFnuH1tJuRpASC6c7T3t4=
+		Bnn9O1K7DrSgQ162YBUiREuYp4E=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		4A5MkQx+9QLeUbHvEB4l+xCyCjM=
+		aiGhaNagdIfy7AN+odG4GwAOozQ=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -820,7 +857,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature</key>
 		<data>
-		jtYaIXYtAquO00CpJIxy6dZktDQ=
+		kNEju5Btqsc/MpnCZ/BK029gDwc=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -867,6 +904,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>XPCServices/com.apple.siri.acousticsignature.xpc/en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -877,6 +923,15 @@
 			<true/>
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/es.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>XPCServices/com.apple.siri.acousticsignature.xpc/es_MX.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1101,10 +1156,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>XPCServices/com.apple.siri.acousticsignature.xpc/version.plist</key>
-		<data>
-		wjeyPx15WQ4mZRGfllcVP9c0IoQ=
-		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1154,7 +1205,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oFswj7t1oJADRk2UA6lysAF6/zE=
+			+X2WhIc9ircDV9HEMeWncQp0Bck=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1198,11 +1249,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CNdU42lYesFLs0uvsomdm0hawqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			CNdU42lYesFLs0uvsomdm0hawqw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4zzNFaGN72lcEnVKvYj035UiigA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1238,7 +1307,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WrTQ8IPzz+yMjniDlXguzlrXsQQ=
+			EoEJ9f9AEBkldBr9KL/kn3z64dY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1344,15 +1413,15 @@
 		</dict>
 		<key>settings_siri@2x.png</key>
 		<data>
-		vYXz3oLp20iOtSxFffdDuxu46HU=
+		vgk6DDAYATH9g2OINRB9baZC1ew=
 		</data>
 		<key>settings_siri@3x.png</key>
 		<data>
-		yQsiu+VUxYgz8m2KsBWIPYZVWC8=
+		LvEo3ktaAPpLZIgizFdmlmVthKQ=
 		</data>
 		<key>settings_siri~ipad.png</key>
 		<data>
-		MLhSgz1ake8EPaUgArnJrI+HHY4=
+		CwhvSLqT+cSnSv+jFBFtYGPn50c=
 		</data>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1367,7 +1436,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mw5PezYg6mZWwn0iU64PX64WLpc=
+			h4MP41azZ7Zgfp+pQd7udEEUcfE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1376,7 +1445,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mnP89IH4MiJvtK5G8og4vTav4ws=
+			N5zRck9v1g4tUwXSuo2gs1Wy81Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/InfoPlist.stringsdict</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1W/qBOe1j/nEUdQbl/gmOjzrQU0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1399,10 +1477,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		wjeyPx15WQ4mZRGfllcVP9c0IoQ=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

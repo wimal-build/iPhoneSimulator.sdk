@@ -42,7 +42,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		uYC7doPJErIefIvboShf+swxuYo=
+		cdi8mZCWoz8d7rMcJaNfVuJlBIw=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -116,11 +116,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,10 +323,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -456,11 +470,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -645,10 +677,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

@@ -10,10 +10,14 @@
 
 @class MKMapView;
 
-MK_CLASS_AVAILABLE(NA, 5_0)
+NS_ASSUME_NONNULL_BEGIN
+
+MK_CLASS_AVAILABLE(NA, 5_0) __WATCHOS_PROHIBITED
 @interface MKUserTrackingBarButtonItem : UIBarButtonItem
 
-- (instancetype)initWithMapView:(MKMapView *)mapView NS_DESIGNATED_INITIALIZER;
-@property (nonatomic, strong) MKMapView *mapView;
+- (instancetype)initWithMapView:(nullable MKMapView *)mapView NS_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong, nullable) MKMapView *mapView;
 
 @end
+
+NS_ASSUME_NONNULL_END

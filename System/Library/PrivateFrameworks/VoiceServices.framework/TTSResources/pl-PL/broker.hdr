@@ -9,7 +9,7 @@ defaultvoice:Zosia
     <language>Polish</language>
     <langcode>PLP</langcode>
     <langid>27</langid>
-    <langversion>5.2.4.14013</langversion>
+    <langversion>5.2.4.15091</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Zosia</voice>
     <voiceversion>5.2.4.14066</voiceversion>
@@ -51,6 +51,7 @@ defaultvoice:Zosia
     <COMPONENT>fe/fe_udwl</COMPONENT>
     <COMPONENT>fe/fe_clcml</COMPONENT>
     <COMPONENT>fe/fe_promptoriorth</COMPONENT>
+    <COMPONENT>fe/fe_sprop</COMPONENT>
     <COMPONENT>fe/fe_unixlit</COMPONENT>
     <COMPONENT>fe/fe_initlingdb</COMPONENT>
     <COMPONENT>fe/fe_promptorth</COMPONENT>
@@ -65,6 +66,7 @@ defaultvoice:Zosia
     <COMPONENT>fe/fe_prmfx</COMPONENT>
     <COMPONENT>fe/fe_prompt</COMPONENT>
     <COMPONENT>fe/fe_global</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
     <COMPONENT>select/bet3</COMPONENT>
     <COMPONENT>synth/bet3</COMPONENT>
     <COMPONENT>audioinserter</COMPONENT>
@@ -85,7 +87,7 @@ defaultvoice:Zosia
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
       udct/yosemite/set/plp
     </RESOURCE>
-     
+    
     
     
     

@@ -39,3 +39,7 @@ language = FIF
 
 #fix for 15281
 /(\d) kasvot\b/ --> "$1:t kasvot"
+
+#fix for FB65658 Radar18958341 
+# 3 Wi-Fi-pylvästä
+/3 ([Ww]i\-[Ff]i\-pylvästä)/ --> "kolme wifipylvästä"

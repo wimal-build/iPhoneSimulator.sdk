@@ -1,17 +1,19 @@
 // HMTimerTrigger.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMTrigger.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @brief Timer based trigger.
  *
  * @discussion This class represents a trigger that is based on timers.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMTimerTrigger : HMTrigger
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -40,12 +42,13 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *             in recurrence interval or seconds field in fireDate have a value other than 0.
  *             HMErrorCodeRecurrenceTooSmall is returned if recurrence interval is less than 5 minutes.
  *             HMErrorCodeRecurrenceTooLarge is returned if recurrence interval is greater than 5 weeks.
+ *             HMErrorCodeFireDateInPast is returned if recurrence is nil and fireDate is in the past.
  */
 - (instancetype)initWithName:(NSString *)name
                     fireDate:(NSDate *)fireDate
-                    timeZone:(NSTimeZone *)timeZone
-                  recurrence:(NSDateComponents *)recurrence
-          recurrenceCalendar:(NSCalendar *)recurrenceCalendar NS_DESIGNATED_INITIALIZER;
+                    timeZone:(nullable NSTimeZone *)timeZone
+                  recurrence:(nullable NSDateComponents *)recurrence
+          recurrenceCalendar:(nullable NSCalendar *)recurrenceCalendar NS_DESIGNATED_INITIALIZER __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Specifies when, in an absolute time, the trigger should fire the first time.
@@ -63,7 +66,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *             fired will be adjusted to account for the time zone change. If this value is
  *             non-nil, the trigger will fire at the specified time in the specific time zone.
  */
-@property(readonly, copy, nonatomic) NSTimeZone *timeZone;
+@property(readonly, copy, nonatomic, nullable) NSTimeZone *timeZone;
 
 /*!
  * @brief The date components that specify how a trigger is to be repeated. 
@@ -78,12 +81,12 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *             whole minutes. Examples are 5 minutes, 6 minutes, 1 day, 2 weeks.
  *
  */
-@property(readonly, copy, nonatomic) NSDateComponents *recurrence;
+@property(readonly, copy, nonatomic, nullable) NSDateComponents *recurrence;
 
  /*!
   * @brief The calendar corresponding to a recurring timer trigger.
   */
-@property(readonly, copy, nonatomic) NSCalendar *recurrenceCalendar;
+@property(readonly, copy, nonatomic, nullable) NSCalendar *recurrenceCalendar;
 
 /*!
  * @brief This method is used to change the fire date of a timer trigger.
@@ -95,7 +98,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   error will be nil on success. HMErrorCodeDateMustBeOnSpecifiedBoundaries will
  *                   be returned if the fireDate includes a seconds value other than 0.
  */
-- (void)updateFireDate:(NSDate *)fireDate completionHandler:(void (^)(NSError *error))completion;
+- (void)updateFireDate:(NSDate *)fireDate completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief This method is used to change the time zone of the fire date of a timer trigger.
@@ -107,7 +110,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request,
  *                   error will be nil on success.
  */
-- (void)updateTimeZone:(NSTimeZone *)timeZone completionHandler:(void (^)(NSError *error))completion;
+- (void)updateTimeZone:(nullable NSTimeZone *)timeZone completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief This method is used to change the recurrence interval for a timer trigger.
@@ -126,6 +129,8 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   HMErrorCodeRecurrenceTooLarge is returned if the recurrence interval is
  *                   greater than 5 weeks. *                   error will be nil on success.
  */
-- (void)updateRecurrence:(NSDateComponents *)recurrence completionHandler:(void (^)(NSError *error))completion;
+- (void)updateRecurrence:(nullable NSDateComponents *)recurrence completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
+
+NS_ASSUME_NONNULL_END

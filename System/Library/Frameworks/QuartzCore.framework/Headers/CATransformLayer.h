@@ -5,6 +5,8 @@
 
 #import <QuartzCore/CALayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /* "Transform" layers are used to create true 3D layer hierarchies.
  *
  * Unlike normal layers, transform layers do not project (i.e. flatten)
@@ -29,3 +31,5 @@
 
 @interface CATransformLayer : CALayer
 @end
+
+NS_ASSUME_NONNULL_END

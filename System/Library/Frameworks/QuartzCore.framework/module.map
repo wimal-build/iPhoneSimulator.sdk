@@ -1,4 +1,4 @@
-framework module QuartzCore [extern_c] [system] {
+framework module QuartzCore [extern_c] {
   umbrella "Headers"
 
   export *

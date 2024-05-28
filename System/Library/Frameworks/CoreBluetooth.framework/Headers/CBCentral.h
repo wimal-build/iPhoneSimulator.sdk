@@ -16,6 +16,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  *  @class CBCentral
  *
@@ -29,9 +31,11 @@ CB_EXTERN_CLASS @interface CBCentral : CBPeer
  *  @property	maximumUpdateValueLength
  *
  *  @discussion	The maximum amount of data, in bytes, that can be received by the central in a single notification or indication.
- 
+ *
  *	@see		updateValue:forCharacteristic:onSubscribedCentrals:
  */
 @property(readonly, nonatomic) NSUInteger maximumUpdateValueLength;
 
 @end
+
+NS_ASSUME_NONNULL_END

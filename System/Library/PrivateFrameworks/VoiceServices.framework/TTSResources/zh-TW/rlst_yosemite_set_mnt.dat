@@ -4,7 +4,9 @@
 # Copyright (c) 2010 Nuance Communications, Inc. All Rights Reserved.
 #
 #
-#RLSTAG: RLS_FE.MNT_6.0.4
+#RLSTAG: RLS_FE.MNT_6.0.6_cfg3
+#RLSTAG: RLS_FE.MNT_7.0.2_cfg4
+
 
 [header]
 language = MNT
@@ -332,3 +334,6 @@ language = MNT
 
 #Fix for FogBugz case 41020
 /No.5 in C Minor/ --> " Number Five in C Minor "
+
+#Fix for FogBugz case 54984
+/([一二三四五六七八九])([一二三四五六七八九零])％/ --> " 百分之 $1 $2 "

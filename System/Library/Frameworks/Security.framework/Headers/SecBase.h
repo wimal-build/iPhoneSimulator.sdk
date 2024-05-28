@@ -31,6 +31,7 @@
 
 #include <Availability.h>
 #include <sys/cdefs.h>
+#include <CoreFoundation/CFBase.h>
 
 #if defined(__clang__)
 #define SEC_DEPRECATED_ATTRIBUTE DEPRECATED_ATTRIBUTE
@@ -40,12 +41,15 @@
 
 __BEGIN_DECLS
 
+CF_ASSUME_NONNULL_BEGIN
+CF_IMPLICIT_BRIDGING_ENABLED
+
 /*!
     @typedef SecCertificateRef
     @abstract CFType representing a X.509 certificate.
     See SecCertificate.h for details.
 */
-typedef struct __SecCertificate *SecCertificateRef;
+typedef struct CF_BRIDGED_TYPE(id) __SecCertificate *SecCertificateRef;
 
 /*!
     @typedef SecIdentityRef
@@ -53,28 +57,28 @@ typedef struct __SecCertificate *SecCertificateRef;
     a SecKeyRef and an associated SecCertificateRef. See
     SecIdentity.h for details.
 */
-typedef struct __SecIdentity *SecIdentityRef;
+typedef struct CF_BRIDGED_TYPE(id) __SecIdentity *SecIdentityRef;
 
 /*!
     @typedef SecKeyRef
     @abstract CFType representing a cryptographic key. See
     SecKey.h for details.
 */
-typedef struct __SecKey *SecKeyRef;
+typedef struct CF_BRIDGED_TYPE(id) __SecKey *SecKeyRef;
 
 /*!
     @typedef SecPolicyRef
     @abstract CFType representing a X.509 certificate trust policy.
     See SecPolicy.h for details.
 */
-typedef struct __SecPolicy *SecPolicyRef;
+typedef struct CF_BRIDGED_TYPE(id) __SecPolicy *SecPolicyRef;
 
 /*!
     @typedef SecAccessControl
     @abstract CFType representing access control for an item.
     SecAccessControl.h for details.
 */
-typedef struct __SecAccessControl *SecAccessControlRef;
+typedef struct CF_BRIDGED_TYPE(id) __SecAccessControl *SecAccessControlRef;
 
 /***********************************************
  *** OSStatus values unique to Security APIs ***
@@ -88,7 +92,7 @@ typedef struct __SecAccessControl *SecAccessControlRef;
     or on a line that does not start with errZZZ.
 */
 
-enum
+CF_ENUM(OSStatus)
 {
     errSecSuccess                               = 0,       /* No error. */
     errSecUnimplemented                         = -4,      /* Function or operation not implemented. */
@@ -106,6 +110,9 @@ enum
     errSecDecode                                = -26275,  /* Unable to decode the provided data. */
     errSecAuthFailed                            = -25293,  /* The user name or passphrase you entered is not correct. */
 };
+
+CF_IMPLICIT_BRIDGING_DISABLED
+CF_ASSUME_NONNULL_END
 
 __END_DECLS
 

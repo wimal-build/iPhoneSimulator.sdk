@@ -1,0 +1,19 @@
+﻿# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.FRF_6.1.6
+
+[header]
+language = FRF
+type = nav
+charset = utf-8
+
+[data]
+#
+#radar16856130_fb54425
+
+/\bNO\b/   -->   "Nord Ouest"
+/\bNE\b/   -->   "Nord Est"
+/\bSE\b/   -->   "Sud Est"
+/\bSO\b/   -->   "Sud Ouest"

@@ -39,9 +39,11 @@
 
 __BEGIN_DECLS
 
+CF_ASSUME_NONNULL_BEGIN
+CF_IMPLICIT_BRIDGING_ENABLED
+
 /* Padding Types (iPhone OS 2.0 and later only). */
-typedef uint32_t SecPadding;
-enum
+typedef CF_OPTIONS(uint32_t, SecPadding)
 {
     kSecPaddingNone      = 0,
     kSecPaddingPKCS1     = 1, // For EC, defaults to a signature in x9.62 DER encoding.
@@ -106,9 +108,9 @@ CFTypeID SecKeyGetTypeID(void)
     @constant kSecPublicKeyAttrs The value for this key is a CFDictionaryRef
 	containing attributes specific for the public key to be generated.
 */
-extern CFTypeRef kSecPrivateKeyAttrs
+extern const CFStringRef kSecPrivateKeyAttrs
     __OSX_AVAILABLE_STARTING(__MAC_10_8, __IPHONE_2_0);
-extern CFTypeRef kSecPublicKeyAttrs
+extern const CFStringRef kSecPublicKeyAttrs
     __OSX_AVAILABLE_STARTING(__MAC_10_8, __IPHONE_2_0);
 
 /*!
@@ -139,6 +141,9 @@ extern CFTypeRef kSecPublicKeyAttrs
 	  * kSecAttrIsPermanent if this key is present and has a Boolean
 	    value of true, the key or key pair will be added to the default
 	    keychain.
+      * kSecAttrTokenID if this key should be generated on specified token.  This
+        attribute can contain CFStringRef and can be present only in the top-level
+        parameters dictionary.
       * kSecAttrApplicationTag default NULL
       * kSecAttrEffectiveKeySize default NULL same as kSecAttrKeySizeInBits
       * kSecAttrCanEncrypt default false for private keys, true for public keys
@@ -150,8 +155,8 @@ extern CFTypeRef kSecPublicKeyAttrs
       * kSecAttrCanUnwrap default true for private keys, false for public keys
 
 */
-OSStatus SecKeyGeneratePair(CFDictionaryRef parameters, SecKeyRef *publicKey,
-    SecKeyRef *privateKey) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_2_0);
+OSStatus SecKeyGeneratePair(CFDictionaryRef parameters, SecKeyRef * __nullable CF_RETURNS_RETAINED publicKey,
+    SecKeyRef * __nullable CF_RETURNS_RETAINED privateKey) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_2_0);
 
 
 /*!
@@ -296,7 +301,9 @@ OSStatus SecKeyDecrypt(
  */
 size_t SecKeyGetBlockSize(SecKeyRef key)
     __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_2_0);
-    
+
+CF_IMPLICIT_BRIDGING_DISABLED
+CF_ASSUME_NONNULL_END
 
 __END_DECLS
 

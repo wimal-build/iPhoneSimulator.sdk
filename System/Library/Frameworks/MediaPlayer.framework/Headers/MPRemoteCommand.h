@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class MPRemoteCommandEvent;
 
 typedef NS_ENUM(NSInteger, MPRemoteCommandHandlerStatus) {
@@ -39,8 +41,8 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 // may not have been able to be executed in accordance with the application's
 // current state.
 - (void)addTarget:(id)target action:(SEL)action;
-- (void)removeTarget:(id)target action:(SEL)action;
-- (void)removeTarget:(id)target;
+- (void)removeTarget:(id)target action:(nullable SEL)action;
+- (void)removeTarget:(nullable id)target;
 
 /// Returns an opaque object to act as the target.
 - (id)addTargetWithHandler:(MPRemoteCommandHandlerStatus(^)(MPRemoteCommandEvent *event))handler;
@@ -89,6 +91,8 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 
 /// An array of NSNumbers (floats) that contain supported playback rates that
 /// the command can send.
-@property (nonatomic, copy) NSArray *supportedPlaybackRates;
+@property (nonatomic, copy) NSArray<NSNumber *> *supportedPlaybackRates;
 
 @end
+
+NS_ASSUME_NONNULL_END

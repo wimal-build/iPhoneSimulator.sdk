@@ -5,6 +5,8 @@
 
 #import <QuartzCore/CALayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CAScrollLayer : CALayer
 
 /* Changes the origin of the layer to point 'p'. */
@@ -51,3 +53,5 @@ CA_EXTERN NSString * const kCAScrollHorizontally
     __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 CA_EXTERN NSString * const kCAScrollBoth
     __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
+
+NS_ASSUME_NONNULL_END

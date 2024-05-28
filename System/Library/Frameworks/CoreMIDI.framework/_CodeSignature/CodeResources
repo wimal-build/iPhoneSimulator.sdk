@@ -42,31 +42,31 @@
 		</dict>
 		<key>Headers/CoreMIDI.h</key>
 		<data>
-		woo84guHFbfG+oGaLoABslIwGAg=
+		Kn6i3u/k790e26dDlHObG0CpdIg=
 		</data>
 		<key>Headers/MIDIDriver.h</key>
 		<data>
-		FlMhACJ+E6pkorfTzxQjL/Ru6cM=
+		DXhAsJ1SWy87NW+4L9sSuCeQ/2g=
 		</data>
 		<key>Headers/MIDINetworkSession.h</key>
 		<data>
-		Pyi4816IGzNZZm3+uF7u6N6rcEs=
+		5IZJayLPU/UqKMSF+1ReupiLKzI=
 		</data>
 		<key>Headers/MIDIServices.h</key>
 		<data>
-		9+GOuJPIZH3nSrqjT4gmu50rrw8=
+		RCMojWPRo6LCtastaGKHo+/78TA=
 		</data>
 		<key>Headers/MIDISetup.h</key>
 		<data>
-		8SFSivJH84+Le2AMkdmiKlxKbk4=
+		FlxChwb7DHawKAqMSyUtWovLCJw=
 		</data>
 		<key>Headers/MIDIThruConnection.h</key>
 		<data>
-		eyDwbaDxYAqDY5LH1AhuCJqMfDs=
+		JKZHGjhlSnlvS6MuJFkGrkYZch0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xioJfA4kyavj7uIQBonGNz8hCHg=
+		LlToEsg9/Ja14K/c5ZvOLV6GEvs=
 		</data>
 		<key>Italian.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
@@ -88,11 +88,15 @@
 		</dict>
 		<key>MIDIServer</key>
 		<data>
-		isPo714+Ur81jLbLNOqYQ0dT3dE=
+		nk3DOd96oBPPxSLtaacK+6UQqEM=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		BXQjRyxAl9f62vtypvobVSbfbuo=
 		</data>
 		<key>PowerManagement.plist</key>
 		<data>
-		/RMCbl1FkbvQjMLaLrfEfFH+z8I=
+		3GI5PIVWMaBy70EwYU+f2LF5Sls=
 		</data>
 		<key>Spanish.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
@@ -152,7 +156,25 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/MIDIServerLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H4Osx4tfqzWGyDN6QDMykHaLn0c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/MIDIServerLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H4Osx4tfqzWGyDN6QDMykHaLn0c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -341,10 +363,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		ZbCeSCeGkTWh5bg3BuMhYcbrEow=
-		</data>
 		<key>vi.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -422,27 +440,27 @@
 		</dict>
 		<key>Headers/CoreMIDI.h</key>
 		<data>
-		woo84guHFbfG+oGaLoABslIwGAg=
+		Kn6i3u/k790e26dDlHObG0CpdIg=
 		</data>
 		<key>Headers/MIDIDriver.h</key>
 		<data>
-		FlMhACJ+E6pkorfTzxQjL/Ru6cM=
+		DXhAsJ1SWy87NW+4L9sSuCeQ/2g=
 		</data>
 		<key>Headers/MIDINetworkSession.h</key>
 		<data>
-		Pyi4816IGzNZZm3+uF7u6N6rcEs=
+		5IZJayLPU/UqKMSF+1ReupiLKzI=
 		</data>
 		<key>Headers/MIDIServices.h</key>
 		<data>
-		9+GOuJPIZH3nSrqjT4gmu50rrw8=
+		RCMojWPRo6LCtastaGKHo+/78TA=
 		</data>
 		<key>Headers/MIDISetup.h</key>
 		<data>
-		8SFSivJH84+Le2AMkdmiKlxKbk4=
+		FlxChwb7DHawKAqMSyUtWovLCJw=
 		</data>
 		<key>Headers/MIDIThruConnection.h</key>
 		<data>
-		eyDwbaDxYAqDY5LH1AhuCJqMfDs=
+		JKZHGjhlSnlvS6MuJFkGrkYZch0=
 		</data>
 		<key>Italian.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
@@ -464,11 +482,15 @@
 		</dict>
 		<key>MIDIServer</key>
 		<data>
-		isPo714+Ur81jLbLNOqYQ0dT3dE=
+		nk3DOd96oBPPxSLtaacK+6UQqEM=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		BXQjRyxAl9f62vtypvobVSbfbuo=
 		</data>
 		<key>PowerManagement.plist</key>
 		<data>
-		/RMCbl1FkbvQjMLaLrfEfFH+z8I=
+		3GI5PIVWMaBy70EwYU+f2LF5Sls=
 		</data>
 		<key>Spanish.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
@@ -528,7 +550,25 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/MIDIServerLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H4Osx4tfqzWGyDN6QDMykHaLn0c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/MIDIServerLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H4Osx4tfqzWGyDN6QDMykHaLn0c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -717,10 +757,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		ZbCeSCeGkTWh5bg3BuMhYcbrEow=
-		</data>
 		<key>vi.lproj/MIDIServerLocalizable.strings</key>
 		<dict>
 			<key>hash</key>

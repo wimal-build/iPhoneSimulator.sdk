@@ -5,6 +5,8 @@
 
 #import <QuartzCore/CALayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CAEmitterBehavior : NSObject <NSCoding>
 {
 @private
@@ -15,14 +17,14 @@
   uint32_t _flags;
 }
 
-+ (NSArray *)behaviorTypes;
++ (NSArray<NSString *> *)behaviorTypes;
 
 + (CAEmitterBehavior *)behaviorWithType:(NSString *)type;
 - (id)initWithType:(NSString *)type;
 
 @property(readonly) NSString *type;
 
-@property(copy) NSString *name;
+@property(nullable, copy) NSString *name;
 
 @property(getter=isEnabled) BOOL enabled;
 
@@ -122,3 +124,5 @@ CA_EXTERN NSString * const kCAEmitterBehaviorLight;
  * NSNumber falloff, falloffDistance: falloff values. */
 
 CA_EXTERN NSString * const kCAEmitterBehaviorAttractor;
+
+NS_ASSUME_NONNULL_END

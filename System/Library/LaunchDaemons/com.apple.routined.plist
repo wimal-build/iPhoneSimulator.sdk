@@ -8,6 +8,8 @@
 		<dict>
 			<key>com.apple.routined.sequentialClusterIdentification</key>
 			<dict>
+				<key>AllowBattery</key>
+				<false/>
 				<key>Repeating</key>
 				<true/>
 				<key>Interval</key>
@@ -20,7 +22,18 @@
 				<key>Repeating</key>
 				<true/>
 				<key>Interval</key>
-				<integer>86400</integer>
+				<real>86400</real>
+				<key>Priority</key>
+				<string>Maintenance</string>
+			</dict>
+			<key>com.apple.routined.assets</key>
+			<dict>
+				<key>AllowBattery</key>
+				<false/>
+				<key>Repeating</key>
+				<true/>
+				<key>Interval</key>
+				<real>86400</real>
 				<key>Priority</key>
 				<string>Maintenance</string>
 			</dict>
@@ -32,6 +45,16 @@
 				<key>Notification</key>
 				<string>com.apple.locationd.appreset</string>
 			</dict>
+			<key>com.apple.locationd.vehicle.connected</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.vehicle.connected</string>
+			</dict>
+			<key>com.apple.locationd.vehicle.disconnected</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.locationd.vehicle.disconnected</string>
+			</dict>
 			<key>com.apple.mobile.keybagd.lock_status</key>
 			<dict>
 				<key>Notification</key>
@@ -41,6 +64,11 @@
 			<dict>
 				<key>Notification</key>
 				<string>SBNotificationCenterDidPresent</string>
+			</dict>
+			<key>com.apple.coreduetd.knowledgebase.launch.routined</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.coreduetd.knowledgebase.launch.routined</string>
 			</dict>
 		</dict>
 	</dict>
@@ -52,7 +80,11 @@
 	<string>mobile</string>
 	<key>MachServices</key>
 	<dict>
+		<key>com.apple.routined.event</key>
+		<true/>
 		<key>com.apple.routined.registration</key>
+		<true/>
+		<key>com.apple.routined.internal</key>
 		<true/>
 		<key>com.apple.routined.bulletinboard</key>
 		<true/>

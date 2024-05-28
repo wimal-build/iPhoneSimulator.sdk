@@ -78,7 +78,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		vTY6sDMzL2FRHgrwPXySqwkTWGo=
+		y7SriSAF8c2887ysS0GpI/+6htY=
 		</data>
 		<key>Italian.lproj/InfoPlist~ipad.strings</key>
 		<dict>
@@ -224,6 +224,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist~ipad.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lx93C/0QxEiDEEc8RrHXXFk4fcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist~iphone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lx93C/0QxEiDEEc8RrHXXFk4fcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist~ipad.strings</key>
 		<dict>
 			<key>hash</key>
@@ -238,6 +256,24 @@
 			<key>hash</key>
 			<data>
 			lx93C/0QxEiDEEc8RrHXXFk4fcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist~ipad.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxInPZj7j39paGoLVH2n451yVFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist~iphone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxInPZj7j39paGoLVH2n451yVFk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -602,10 +638,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		nrPhVufnAqa3twRo5PR/z9KWJfU=
-		</data>
 		<key>vi.lproj/InfoPlist~ipad.strings</key>
 		<dict>
 			<key>hash</key>
@@ -897,6 +929,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist~ipad.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lx93C/0QxEiDEEc8RrHXXFk4fcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist~iphone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lx93C/0QxEiDEEc8RrHXXFk4fcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist~ipad.strings</key>
 		<dict>
 			<key>hash</key>
@@ -911,6 +961,24 @@
 			<key>hash</key>
 			<data>
 			lx93C/0QxEiDEEc8RrHXXFk4fcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist~ipad.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxInPZj7j39paGoLVH2n451yVFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist~iphone.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxInPZj7j39paGoLVH2n451yVFk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1275,10 +1343,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		nrPhVufnAqa3twRo5PR/z9KWJfU=
-		</data>
 		<key>vi.lproj/InfoPlist~ipad.strings</key>
 		<dict>
 			<key>hash</key>

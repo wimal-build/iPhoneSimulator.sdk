@@ -13,8 +13,11 @@
 #import <CoreLocation/CLRegion.h>
 #import <CoreLocation/CLVisit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class CLLocation;
 @class CLHeading;
+@class CLBeacon;
 
 /*
  *  CLLocationManagerDelegate
@@ -38,7 +41,7 @@
  */
 - (void)locationManager:(CLLocationManager *)manager
 	didUpdateToLocation:(CLLocation *)newLocation
-		   fromLocation:(CLLocation *)oldLocation __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_6, __MAC_NA, __IPHONE_2_0, __IPHONE_6_0);
+		   fromLocation:(CLLocation *)oldLocation __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_6, __MAC_NA, __IPHONE_2_0, __IPHONE_6_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didUpdateLocations:
@@ -51,7 +54,7 @@
  *    locations is an array of CLLocation objects in chronological order.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	 didUpdateLocations:(NSArray *)locations __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+	 didUpdateLocations:(NSArray<CLLocation *> *)locations __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
 
 /*
  *  locationManager:didUpdateHeading:
@@ -60,7 +63,7 @@
  *    Invoked when a new heading is available.
  */
 - (void)locationManager:(CLLocationManager *)manager
-       didUpdateHeading:(CLHeading *)newHeading __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+       didUpdateHeading:(CLHeading *)newHeading __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManagerShouldDisplayHeadingCalibration:
@@ -69,7 +72,7 @@
  *    Invoked when a new heading is available. Return YES to display heading calibration info. The display 
  *    will remain until heading is calibrated, unless dismissed early via dismissHeadingCalibrationDisplay.
  */
-- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didDetermineState:forRegion:
@@ -79,7 +82,7 @@
  *    a call to requestStateForRegion:.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+	didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didRangeBeacons:inRegion:
@@ -92,7 +95,7 @@
  *    by the device.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+	didRangeBeacons:(NSArray<CLBeacon *> *)beacons inRegion:(CLBeaconRegion *)region __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:rangingBeaconsDidFailForRegion:withError:
@@ -102,7 +105,7 @@
  */
 - (void)locationManager:(CLLocationManager *)manager
 	rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region
-	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didEnterRegion:
@@ -112,7 +115,7 @@
  *    CLLocationManager instance with a non-nil delegate that implements this method.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didEnterRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+	didEnterRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didExitRegion:
@@ -122,7 +125,7 @@
  *    CLLocationManager instance with a non-nil delegate that implements this method.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didExitRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+	didExitRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didFailWithError:
@@ -140,8 +143,8 @@
  *    Invoked when a region monitoring error has occurred. Error types are defined in "CLError.h".
  */
 - (void)locationManager:(CLLocationManager *)manager
-	monitoringDidFailForRegion:(CLRegion *)region
-	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+	monitoringDidFailForRegion:(nullable CLRegion *)region
+	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didChangeAuthorizationStatus:
@@ -158,13 +161,13 @@
  *    Invoked when a monitoring for a region started successfully.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didStartMonitoringForRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_TBD,__IPHONE_5_0);
+	didStartMonitoringForRegion:(CLRegion *)region __OSX_AVAILABLE_STARTING(__MAC_TBD,__IPHONE_5_0) __WATCHOS_PROHIBITED;
 
 /*
  *  Discussion:
  *    Invoked when location updates are automatically paused.
  */
-- (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+- (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0) __WATCHOS_PROHIBITED;
 
 /*
  *  Discussion:
@@ -173,7 +176,7 @@
  *    In the event that your application is terminated while suspended, you will
  *	  not receive this notification.
  */
-- (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+- (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didFinishDeferredUpdatesWithError:
@@ -184,10 +187,10 @@
  *    are all possible reasons for finishing deferred updates.
  *
  *    An error will be returned if deferred updates end before the specified
- *    criteria are met (see CLError).
+ *    criteria are met (see CLError), otherwise error will be nil.
  */
 - (void)locationManager:(CLLocationManager *)manager
-	didFinishDeferredUpdatesWithError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+	didFinishDeferredUpdatesWithError:(nullable NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0) __WATCHOS_PROHIBITED;
 
 /*
  *  locationManager:didVisit:
@@ -197,6 +200,8 @@
  *    a location, if visit monitoring is currently started (possibly from a
  *    prior launch).
  */
-- (void)locationManager:(CLLocationManager *)manager didVisit:(CLVisit *)visit;
+- (void)locationManager:(CLLocationManager *)manager didVisit:(CLVisit *)visit __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0) __WATCHOS_PROHIBITED;
 
 @end
+
+NS_ASSUME_NONNULL_END

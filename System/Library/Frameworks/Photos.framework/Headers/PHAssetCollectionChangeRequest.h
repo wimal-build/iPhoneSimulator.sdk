@@ -11,6 +11,8 @@
 @class PHAssetCollection;
 @class PHObjectPlaceholder;
 
+NS_ASSUME_NONNULL_BEGIN
+
 // PHAssetCollectionChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
 @interface PHAssetCollectionChangeRequest : NSObject
 
@@ -24,15 +26,16 @@
 
 #pragma mark - Deleting Asset Collections
 
+// requests that the specified asset collections be deleted 
 + (void)deleteAssetCollections:(id<NSFastEnumeration>)assetCollections;
 
 #pragma mark - Modifying Asset Collections
 
 // if the asset collection does not allow the type of change requested, these methods will raise an exception, call canPerformEditOperation: on the asset collection to determine if the type of edit operation is allowed.
-+ (instancetype)changeRequestForAssetCollection:(PHAssetCollection *)assetCollection;
++ (nullable instancetype)changeRequestForAssetCollection:(PHAssetCollection *)assetCollection;
 
 // to add, remove or rearrange assets in a collection, passing in the fetched assets in that collection will ensure that the asset positions are tracked correctly in the case that the collection has been externally edited after the fetch, but before this change is applied
-+ (instancetype)changeRequestForAssetCollection:(PHAssetCollection *)assetCollection assets:(PHFetchResult *)assets;
++ (nullable instancetype)changeRequestForAssetCollection:(PHAssetCollection *)assetCollection assets:(PHFetchResult *)assets;
 
 @property (nonatomic, strong, readwrite) NSString *title;
 
@@ -46,3 +49,5 @@
 - (void)moveAssetsAtIndexes:(NSIndexSet *)fromIndexes toIndex:(NSUInteger)toIndex;
 
 @end
+
+NS_ASSUME_NONNULL_END

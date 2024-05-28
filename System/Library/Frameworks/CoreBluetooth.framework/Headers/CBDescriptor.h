@@ -11,7 +11,7 @@
 
 #import <CoreBluetooth/CBAttribute.h>
 
-@class CBCharacteristic, CBUUID;
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @class CBDescriptor
@@ -30,7 +30,7 @@ CB_EXTERN_CLASS @interface CBDescriptor : CBAttribute
  *      A back-pointer to the characteristic this descriptor belongs to.
  *
  */
-@property(weak, readonly, nonatomic) CBCharacteristic *characteristic;
+@property(assign, readonly, nonatomic) CBCharacteristic *characteristic;
 
 /*!
  *  @property value
@@ -39,7 +39,7 @@ CB_EXTERN_CLASS @interface CBDescriptor : CBAttribute
  *      The value of the descriptor. The corresponding value types for the various descriptors are detailed in @link CBUUID.h @/link.
  *
  */
-@property(retain, readonly) id value;
+@property(retain, readonly, nullable) id value;
 
 @end
 
@@ -67,6 +67,8 @@ CB_EXTERN_CLASS @interface CBMutableDescriptor : CBDescriptor
  *					once the parent service has been published.
  *
  */
-- (instancetype)initWithType:(CBUUID *)UUID value:(id)value NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithType:(CBUUID *)UUID value:(nullable id)value NS_DESIGNATED_INITIALIZER;
 
 @end
+
+NS_ASSUME_NONNULL_END

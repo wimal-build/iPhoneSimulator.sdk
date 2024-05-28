@@ -1,0 +1,10 @@
+[header]
+language = hei
+type = nav
+charset = utf-8
+
+[data]
+/(^|\\|\s)בהרכבת($|\x1b|\s|[!\?\.,:;])/   -->   "$1\x1b\\toi=diacritized\\בְּהָרַכֶּבֶת\x1b\\toi=orth\\$2"
+/(^|\\|\s)הרכבת($|\x1b|\s|[!\?\.,:;])/   -->   "$1\x1b\\toi=diacritized\\הָרַכֶּבֶת\x1b\\toi=orth\\$2"
+/(^|\\|\s)הגעתָ($|\x1b|[!\?\.,:;])/   -->   "$1\x1b\\toi=diacritized\\הִגַּעְתָּ\x1b\\toi=orth\\$2"
+/(^|\\|\s)הגעת($|\x1b|[!\?\.,:;])/   -->   "$1\x1b\\toi=diacritized\\הִגַּעְתָּ\x1b\\toi=orth\\$2"

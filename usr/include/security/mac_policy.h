@@ -93,7 +93,6 @@ struct ifnet;
 struct inpcb;
 struct ipq;
 struct label;
-struct lctx;
 struct mac_module_data;
 struct mac_policy_conf;
 struct mbuf;
@@ -884,6 +883,7 @@ typedef int mpo_file_check_mmap_t(
 	struct label *label,
 	int prot,
 	int flags,
+	uint64_t file_pos,
 	int *maxprot
 );
 /**
@@ -1419,7 +1419,7 @@ typedef void mpo_ipq_label_update_t(
 	struct label *ipqlabel
 );
 /**
-  @brief Access control check for relabelling Login Context
+  @brief DEPRECATED: Access control check for relabelling Login Context
   @param l Subject credential
   @param newlabel New label to apply to the Login Context
   @see mpo_lctx_label_update_t
@@ -1436,18 +1436,18 @@ typedef void mpo_ipq_label_update_t(
   errno should be returned.
 */
 typedef int mpo_lctx_check_label_update_t(
-	struct lctx *l,
+	void *l,
 	struct label *newlabel
 );
 /**
- @brief Destroy Login Context label
+ @brief DEPRECATED: Destroy Login Context label
  @param label The label to be destroyed
 */
 typedef void mpo_lctx_label_destroy_t(
 	struct label *label
 );
 /**
-  @brief Externalize a Login Context label
+  @brief DEPRECATED: Externalize a Login Context label
   @param label Label to be externalized
   @param element_name Name of the label namespace for which labels should be
   externalized
@@ -1469,14 +1469,14 @@ typedef int mpo_lctx_label_externalize_t(
 	struct sbuf *sb
 );
 /**
-  @brief Initialize Login Context label
+  @brief DEPRECATED: Initialize Login Context label
   @param label New label to initialize
 */
 typedef void mpo_lctx_label_init_t(
 	struct label *label
 );
 /**
-  @brief Internalize a Login Context label
+  @brief DEPRECATED: Internalize a Login Context label
   @param label Label to be internalized
   @param element_name Name of the label namespace for which the label should
   be internalized
@@ -1501,7 +1501,7 @@ typedef int mpo_lctx_label_internalize_t(
 	char *element_data
 );
 /**
-  @brief Update a Login Context label
+  @brief DEPRECATED: Update a Login Context label
   @param l
   @param newlabel A new label to apply to the Login Context
   @see mpo_lctx_check_label_update_t
@@ -1513,11 +1513,11 @@ typedef int mpo_lctx_label_internalize_t(
   control was already confirmed by mpo_lctx_check_label_update.
 */
 typedef void mpo_lctx_label_update_t(
-	struct lctx *l,
+	void *l,
 	struct label *newlabel
 );
 /**
-  @brief A process has created a login context
+  @brief DEPRECATED: A process has created a login context
   @param p Subject
   @param l Login Context
 
@@ -1527,10 +1527,10 @@ typedef void mpo_lctx_label_update_t(
 */
 typedef void mpo_lctx_notify_create_t(
 	struct proc *p,
-	struct lctx *l
+	void *l
 );
 /**
-  @brief A process has joined a login context
+  @brief DEPRECATED: A process has joined a login context
   @param p Subject
   @param l Login Context
 
@@ -1540,10 +1540,10 @@ typedef void mpo_lctx_notify_create_t(
 */
 typedef void mpo_lctx_notify_join_t(
 	struct proc *p,
-	struct lctx *l
+	void *l
 );
 /**
-  @brief A process has left a login context
+  @brief DEPRECATED: A process has left a login context
   @param p Subject
   @param l Login Context
 
@@ -1553,7 +1553,7 @@ typedef void mpo_lctx_notify_join_t(
 */
 typedef void mpo_lctx_notify_leave_t(
 	struct proc *p,
-	struct lctx *l
+	void *l
 );
 /**
  @brief Assign a label to a new mbuf
@@ -4334,6 +4334,25 @@ typedef int mpo_proc_check_get_task_t(
 );
 
 /**
+  @brief Access control check for exposing a process's task port
+  @param cred Subject credential
+  @param proc Object process
+
+  Determine whether the subject identified by the credential can expose
+  the passed process's task control port.
+  This call is used by the accessor APIs like processor_set_tasks() and
+  processor_set_threads().
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned. Suggested failure: EACCES for label mismatch,
+  EPERM for lack of privilege, or ESRCH to hide visibility of the target.
+*/
+typedef int mpo_proc_check_expose_task_t(
+	kauth_cred_t cred,
+	struct proc *p
+);
+
+/**
  @brief Check whether task's IPC may inherit across process exec
  @param proc current process instance
  @param cur_vp vnode pointer to current instance
@@ -4587,7 +4606,7 @@ typedef int mpo_vnode_check_fsgetpath_t(
 typedef int mpo_vnode_check_signature_t(struct vnode *vp,  struct label *label, 
 					off_t macho_offset, unsigned char *sha1, 
 					const void *signature, int size,
-					int *is_platform_binary);
+					int flags, int *is_platform_binary);
 
 /**
   @brief Access control check for retrieving file attributes
@@ -5799,6 +5818,70 @@ typedef int mpo_kext_check_unload_t(
 	const char *identifier
 );
 
+/**
+  @brief Access control check for querying information about loaded kexts
+  @param cred Subject credential
+
+  Determine whether the subject identified by the credential can query
+  information about loaded kexts.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.  Suggested failure: EPERM for lack of privilege.
+*/
+typedef int mpo_kext_check_query_t(
+	kauth_cred_t cred
+);
+
+/**
+  @brief Access control check for getting NVRAM variables.
+  @param cred Subject credential
+  @param name NVRAM variable to get
+
+  Determine whether the subject identifier by the credential can get the
+  value of the named NVRAM variable.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.  Suggested failure: EPERM for lack of privilege.
+*/
+typedef int mpo_iokit_check_nvram_get_t(
+	kauth_cred_t cred,
+	const char *name
+);
+
+/**
+  @brief Access control check for setting NVRAM variables.
+  @param cred Subject credential
+  @param name NVRAM variable to set
+  @param value The new value for the NVRAM variable
+
+  Determine whether the subject identifier by the credential can set the
+  value of the named NVRAM variable.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.  Suggested failure: EPERM for lack of privilege.
+*/
+typedef int mpo_iokit_check_nvram_set_t(
+	kauth_cred_t cred,
+	const char *name,
+	io_object_t value
+);
+
+/**
+  @brief Access control check for deleting NVRAM variables.
+  @param cred Subject credential
+  @param name NVRAM variable to delete
+
+  Determine whether the subject identifier by the credential can delete the
+  named NVRAM variable.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.  Suggested failure: EPERM for lack of privilege.
+*/
+typedef int mpo_iokit_check_nvram_delete_t(
+	kauth_cred_t cred,
+	const char *name
+);
+
 /*
  * Placeholder for future events that may need mac hooks.
  */
@@ -5810,7 +5893,7 @@ typedef void mpo_reserved_hook_t(void);
  * Please note that this should be kept in sync with the check assumptions
  * policy in bsd/kern/policy_check.c (policy_ops struct).
  */
-#define MAC_POLICY_OPS_VERSION 31 /* inc when new reserved slots are taken */
+#define MAC_POLICY_OPS_VERSION 36 /* inc when new reserved slots are taken */
 struct mac_policy_ops {
 	mpo_audit_check_postselect_t		*mpo_audit_check_postselect;
 	mpo_audit_check_preselect_t		*mpo_audit_check_preselect;
@@ -5948,11 +6031,11 @@ struct mac_policy_ops {
 	mpo_system_check_sysctlbyname_t		*mpo_system_check_sysctlbyname;
 	mpo_proc_check_inherit_ipc_ports_t	*mpo_proc_check_inherit_ipc_ports;
 	mpo_vnode_check_rename_t		*mpo_vnode_check_rename;
-	mpo_reserved_hook_t			*mpo_reserved4;
-	mpo_reserved_hook_t			*mpo_reserved5;
-	mpo_reserved_hook_t			*mpo_reserved6;
-	mpo_reserved_hook_t			*mpo_reserved7;
-	mpo_reserved_hook_t			*mpo_reserved8;
+	mpo_kext_check_query_t			*mpo_kext_check_query;
+	mpo_iokit_check_nvram_get_t		*mpo_iokit_check_nvram_get;
+	mpo_iokit_check_nvram_set_t		*mpo_iokit_check_nvram_set;
+	mpo_iokit_check_nvram_delete_t		*mpo_iokit_check_nvram_delete;
+	mpo_proc_check_expose_task_t		*mpo_proc_check_expose_task;
 	mpo_reserved_hook_t			*mpo_reserved9;
 	mpo_reserved_hook_t			*mpo_reserved10;
 	mpo_reserved_hook_t			*mpo_reserved11;

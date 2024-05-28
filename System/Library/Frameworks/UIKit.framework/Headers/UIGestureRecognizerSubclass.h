@@ -7,6 +7,8 @@
 
 #import <UIKit/UIGestureRecognizer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 // the extensions in this header are to be used only by subclasses of UIGestureRecognizer
 // code that uses UIGestureRecognizers must never call these
 
@@ -37,9 +39,11 @@
 // mirror of the touch-delivery methods on UIResponder
 // UIGestureRecognizers aren't in the responder chain, but observe touches hit-tested to their view and their view's subviews
 // UIGestureRecognizers receive touches before the view to which the touch was hit-tested
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
 
 @end
+
+NS_ASSUME_NONNULL_END

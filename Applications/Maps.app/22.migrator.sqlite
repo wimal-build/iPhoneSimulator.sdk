@@ -1,0 +1,8 @@
+-- Migrates traces from v22 to v23
+
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS clt_locations;
+DROP TABLE IF EXISTS clt_location_nodes;
+
+COMMIT;

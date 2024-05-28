@@ -8,8 +8,9 @@
 #import <HealthKit/HKStatistics.h>
 #import <HealthKit/HKQuery.h>
 
-@class HKStatistics;
+NS_ASSUME_NONNULL_BEGIN
 
+@class HKStatistics;
 
 HK_CLASS_AVAILABLE_IOS(8_0)
 @interface HKStatisticsCollection : NSObject
@@ -21,7 +22,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @abstract      Returns the statistics object that this date is inside of
  @discussion    If there are no samples for the given date, an HKStatistics instance with nil quantities will be returned.
  */
-- (HKStatistics *)statisticsForDate:(NSDate *)date;
+- (nullable HKStatistics *)statisticsForDate:(NSDate *)date;
 
 /*!
  @method        enumerateStatisticsFromDate:toDate:withBlock:
@@ -34,9 +35,9 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 /*!
  @method        statistics
  @abstract      Returns a copy of the populated statistics objects.
- @discussion    The statistics objects are is ordered chronologically.
+ @discussion    The statistics objects are ordered chronologically.
  */
-- (NSArray *)statistics;
+- (NSArray<HKStatistics *> *)statistics;
 
 /*!
  @method        sources
@@ -44,7 +45,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @discussion    Sources will be empty unless HKStatisticsOptionSeparateBySource is specified in the
                 HKStatisticsCollectionQuery options.
  */
-- (NSSet *)sources;
+- (NSSet<HKSource *> *)sources;
 
 @end
 
@@ -55,13 +56,15 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 @property (readonly) HKStatisticsOptions options;
 @property (readonly, copy) NSDateComponents *intervalComponents;
 
-@property (nonatomic, copy) void(^initialResultsHandler)(HKStatisticsCollectionQuery *query, HKStatisticsCollection *result, NSError *error);
-@property (nonatomic, copy) void(^statisticsUpdateHandler)(HKStatisticsCollectionQuery *query, HKStatistics *statistics, HKStatisticsCollection *collection, NSError *error);
+@property (nonatomic, copy, nullable) void(^initialResultsHandler)(HKStatisticsCollectionQuery *query, HKStatisticsCollection * __nullable result, NSError * __nullable error);
+@property (nonatomic, copy, nullable) void(^statisticsUpdateHandler)(HKStatisticsCollectionQuery *query, HKStatistics * __nullable statistics, HKStatisticsCollection * __nullable collection, NSError * __nullable error);
 
 - (instancetype)initWithQuantityType:(HKQuantityType *)quantityType
-             quantitySamplePredicate:(NSPredicate *)quantitySamplePredicate
+             quantitySamplePredicate:(nullable NSPredicate *)quantitySamplePredicate
                              options:(HKStatisticsOptions)options
                           anchorDate:(NSDate *)anchorDate
                   intervalComponents:(NSDateComponents *)intervalComponents;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -4,15 +4,28 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		IehSel12ex78stm4Kej/iDxKDwM=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		jX5X9zNIcklMR1Vs3gP9fi61+mc=
+		ghFtUH9LdQfA9YkjB8bZ1293jms=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cwo82j04ZCy5NqqLHYcpPfEoWrM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,11 +39,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sAjcjEF+tqXJPSX0sHl2BkHJAiE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H1t24d5BY1s/YVpjMGLRIif4lDw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,11 +75,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GL+hOC/BAFRI6Fod3XbVRJplYV0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lrsj8ArqW3fC6RN2Dy5cIrcV4Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,11 +111,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IlQmlSIyIki0nrHUW9xESMUgHLM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dNFJYiKNgyWz/FMuPkOb/M9NuA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dNFJYiKNgyWz/FMuPkOb/M9NuA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,11 +165,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vO+m2CSm0qbbNMRcKOCf9NNmrLw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxQfAuGA54b0hb6w9OensM3Z/YY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lm5bs5O9LbaEEvnxtIV+Fr74gRc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,11 +219,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9esIiE00QFUh5AZBhgJSVxlAmQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I63hCbV3Z+nO+b85Sf4iPNqRAss=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -116,11 +255,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I63hCbV3Z+nO+b85Sf4iPNqRAss=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xfPrRbGG9Fsy9k6wajjo0fMUhtY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -134,11 +291,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bf2Mkh8YVKKUG+2jXa0KGSN+Nck=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k75MJAe2ckKRejJvOzt3mHcmygo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -152,11 +327,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nr/h8FR7gV5FVQMgiDUBnWRkgRI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xGo1EI9QX9Wr0Sr0tjyPyuIp82o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -170,11 +363,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			REOxJZh0DFJanBURFodyIw8cL5g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tiLf/WjUmvR7rTlI+Nwxv0KvzI4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -188,11 +399,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			872+opf+vvIynrA2m4VL/PwNI40=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u8fK9T/f7IRHpL7l8RvOdDSqdEo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,11 +435,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l9n0Z4d/GqkqQJOWjfUbv0D31Vw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O63ZRMVQhpN/CbOJ09RLky+uLdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,11 +471,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F0zoABWL7eRGYngSq0GsMWotLqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Izfu1dT+Ci5f1M/48q4L357i6lU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -242,11 +507,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ih2mOmGOJv7ZENV0kXg7AtN1uwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ULScFD2/UNsNOHndZpTa6OVHNM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,11 +543,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I8EznE8N3zb54AmwB6d2ibrOyAY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gufWr7da7TnS26O7E3ntTPcolII=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -278,11 +579,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7CdP1ZqKwG+fn7NHK8V+GxuWdPo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ufo7xOsm4sxOzkcsf7XqQ/gMelk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -296,6 +615,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nZktXjctaRshTbEe5kFnlx0V/Jc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -305,15 +633,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		crDli6Qak1jghThqnKWhmsQ9rf0=
-		</data>
+		<key>uk.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Huo9915aN1yifcMHW2rfJniqn/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zY6p70xnxhAfh2KNIUiVO0qj53Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -327,6 +669,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W0u6HqER+DzEzP29ZRKX/nK5Z9s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -336,11 +687,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oV12atAcGoVGYxM7CJR9yMHLD/Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qzCT1ODWCnOuZlTcpVAl+YGR02Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -348,11 +717,24 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		IehSel12ex78stm4Kej/iDxKDwM=
+		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cwo82j04ZCy5NqqLHYcpPfEoWrM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -366,11 +748,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sAjcjEF+tqXJPSX0sHl2BkHJAiE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H1t24d5BY1s/YVpjMGLRIif4lDw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -384,11 +784,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GL+hOC/BAFRI6Fod3XbVRJplYV0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lrsj8ArqW3fC6RN2Dy5cIrcV4Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -402,11 +820,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IlQmlSIyIki0nrHUW9xESMUgHLM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dNFJYiKNgyWz/FMuPkOb/M9NuA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0dNFJYiKNgyWz/FMuPkOb/M9NuA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -420,11 +874,47 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vO+m2CSm0qbbNMRcKOCf9NNmrLw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>es.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxQfAuGA54b0hb6w9OensM3Z/YY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lm5bs5O9LbaEEvnxtIV+Fr74gRc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -438,11 +928,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9esIiE00QFUh5AZBhgJSVxlAmQY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I63hCbV3Z+nO+b85Sf4iPNqRAss=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -456,11 +964,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fr_CA.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I63hCbV3Z+nO+b85Sf4iPNqRAss=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xfPrRbGG9Fsy9k6wajjo0fMUhtY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -474,11 +1000,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hi.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bf2Mkh8YVKKUG+2jXa0KGSN+Nck=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k75MJAe2ckKRejJvOzt3mHcmygo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -492,11 +1036,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hu.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nr/h8FR7gV5FVQMgiDUBnWRkgRI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xGo1EI9QX9Wr0Sr0tjyPyuIp82o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -510,11 +1072,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>it.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			REOxJZh0DFJanBURFodyIw8cL5g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tiLf/WjUmvR7rTlI+Nwxv0KvzI4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -528,11 +1108,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ko.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			872+opf+vvIynrA2m4VL/PwNI40=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u8fK9T/f7IRHpL7l8RvOdDSqdEo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -546,11 +1144,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>nl.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l9n0Z4d/GqkqQJOWjfUbv0D31Vw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O63ZRMVQhpN/CbOJ09RLky+uLdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -564,11 +1180,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F0zoABWL7eRGYngSq0GsMWotLqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Izfu1dT+Ci5f1M/48q4L357i6lU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -582,11 +1216,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ih2mOmGOJv7ZENV0kXg7AtN1uwg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ULScFD2/UNsNOHndZpTa6OVHNM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -600,11 +1252,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I8EznE8N3zb54AmwB6d2ibrOyAY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gufWr7da7TnS26O7E3ntTPcolII=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -618,11 +1288,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7CdP1ZqKwG+fn7NHK8V+GxuWdPo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ufo7xOsm4sxOzkcsf7XqQ/gMelk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -636,6 +1324,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nZktXjctaRshTbEe5kFnlx0V/Jc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -645,15 +1342,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		crDli6Qak1jghThqnKWhmsQ9rf0=
-		</data>
+		<key>uk.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Huo9915aN1yifcMHW2rfJniqn/s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zY6p70xnxhAfh2KNIUiVO0qj53Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -667,6 +1378,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W0u6HqER+DzEzP29ZRKX/nK5Z9s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -676,11 +1396,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oV12atAcGoVGYxM7CJR9yMHLD/Q=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_TW.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/VoiceOverUIService.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qzCT1ODWCnOuZlTcpVAl+YGR02Q=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -9,12 +9,14 @@
 #import <UIKit/UIInputView.h>
 #import <UIKit/UITextInput.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UILexicon;
 
 @protocol UITextDocumentProxy <UIKeyInput>
 
-@property (nonatomic, readonly) NSString *documentContextBeforeInput;
-@property (nonatomic, readonly) NSString *documentContextAfterInput;
+@property (nullable, nonatomic, readonly) NSString *documentContextBeforeInput;
+@property (nullable, nonatomic, readonly) NSString *documentContextAfterInput;
 
 - (void)adjustTextPositionByCharacterOffset:(NSInteger)offset;
 
@@ -22,13 +24,13 @@
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController <UITextInputDelegate>
 
-@property (nonatomic, retain) UIInputView *inputView;
+@property (nullable, nonatomic, strong) UIInputView *inputView;
 
-@property (nonatomic, readonly) NSObject <UITextDocumentProxy> *textDocumentProxy;
+@property (nonatomic, readonly) id <UITextDocumentProxy> textDocumentProxy;
 
 // The primary language of the UIInputViewController.  A BCP 47 language identifier such as en-US
 // If specified, this will supersede any PrimaryLanguage in the Info.plist.
-@property (nonatomic, copy) NSString *primaryLanguage;
+@property (nullable, nonatomic, copy) NSString *primaryLanguage;
 
 - (void)dismissKeyboard;
 - (void)advanceToNextInputMode;
@@ -38,3 +40,5 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController 
 - (void)requestSupplementaryLexiconWithCompletion:(void (^)(UILexicon *))completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKObject.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKSampleType;
 
 /*!
@@ -30,3 +32,5 @@ HK_EXTERN NSString * const HKSampleSortIdentifierEndDate NS_AVAILABLE_IOS(8_0);
 // Predicate Key Paths
 HK_EXTERN NSString * const HKPredicateKeyPathStartDate NS_AVAILABLE_IOS(8_0);
 HK_EXTERN NSString * const HKPredicateKeyPathEndDate NS_AVAILABLE_IOS(8_0);
+
+NS_ASSUME_NONNULL_END

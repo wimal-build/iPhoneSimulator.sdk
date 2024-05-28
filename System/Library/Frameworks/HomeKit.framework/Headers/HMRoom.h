@@ -1,15 +1,18 @@
 // HMRoom.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HMAccessory;
+
 /*!
  * @brief This class describes a room in the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMRoom : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -23,7 +26,12 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @brief Array of HMAccessory objects that correspond to the accessories 
  *        associated with this room.
  */
-@property(readonly, copy, nonatomic) NSArray *accessories;
+@property(readonly, copy, nonatomic) NSArray<HMAccessory *> *accessories;
+
+/*!
+ * @brief A unique identifier for the room.
+ */
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief This method is used to change the name of the room.
@@ -34,6 +42,8 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError *error))completion;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
+
+NS_ASSUME_NONNULL_END

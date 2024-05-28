@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexiconEntry : NSObject <NSCopying>
 // -documentText returns the intended text to be inserted into the document for a given -userInput.
 // -userInput represents the expected typed string, which need not match the actual typed string.
@@ -18,5 +20,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexiconEntry : NSObject <NSCopying>
 @end
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexicon : NSObject <NSCopying>
-@property (nonatomic, readonly) NSArray *entries;   // contains UILexiconEntry objects
+@property (nonatomic, readonly) NSArray<UILexiconEntry *> *entries;
 @end
+
+NS_ASSUME_NONNULL_END

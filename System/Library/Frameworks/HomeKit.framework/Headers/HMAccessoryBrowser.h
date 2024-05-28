@@ -1,9 +1,11 @@
 // HMAccessoryBrowser.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMHome;
 @class HMAccessory;
@@ -14,20 +16,20 @@
  * @brief This class is used to discover new accessories in the home
  *        that have never been paired with and therefore not part of the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED
 @interface HMAccessoryBrowser : NSObject
 
 /*!
  * @brief Delegate that receives updates on the state of the accessories discovered.
  */
-@property(weak, nonatomic) id<HMAccessoryBrowserDelegate> delegate;
+@property(weak, nonatomic, nullable) id<HMAccessoryBrowserDelegate> delegate;
 
 /*!
  * @brief This is the array of HMAccessory objects that represents new
  *        accessories that were discovered as part of a search session.
  *        This array is not updated when a search session is not in progress.
  */
-@property(readonly, copy, nonatomic) NSArray *discoveredAccessories;
+@property(readonly, copy, nonatomic) NSArray<HMAccessory *> *discoveredAccessories;
 
 /*!
  * @brief Starts searching for accessories that are not associated to any home.
@@ -58,7 +60,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief This delegate receives updates about new accessories in the home.
  */
-NS_AVAILABLE_IOS(8_0)
+NS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED
 @protocol HMAccessoryBrowserDelegate <NSObject>
 
 @optional
@@ -83,3 +85,5 @@ NS_AVAILABLE_IOS(8_0)
 - (void)accessoryBrowser:(HMAccessoryBrowser *)browser didRemoveNewAccessory:(HMAccessory *)accessory;
 
 @end
+
+NS_ASSUME_NONNULL_END

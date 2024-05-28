@@ -11,6 +11,8 @@
 #import <CoreLocation/CLLocation.h>
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CLHeadingComponentValue
  *  
@@ -36,7 +38,7 @@ extern const CLLocationDegrees kCLHeadingFilterNone;
  *  Discussion:
  *    Represents a vector pointing to magnetic North constructed from axis component values x, y, and z. An accuracy of the heading calculation is also provided along with timestamp information.
  */
-NS_CLASS_AVAILABLE(10_7, 3_0)
+NS_CLASS_AVAILABLE(10_7, 3_0) __WATCHOS_PROHIBITED
 @interface CLHeading : NSObject <NSCopying, NSSecureCoding>
 {
 @private
@@ -119,3 +121,5 @@ NS_CLASS_AVAILABLE(10_7, 3_0)
 @property (nonatomic, readonly, copy) NSString *description;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -16,14 +16,6 @@
 				<string>Maintenance</string>
 			</dict>
 		</dict>
-		<key>com.apple.notifyd.matching</key>
-		<dict>
-			<key>com.apple.Maps.idslaunchnotification</key>
-			<dict>
-				<key>Notification</key>
-				<string>com.apple.Maps.idslaunchnotification</string>
-			</dict>
-		</dict>
 	</dict>
 	<key>Label</key>
 	<string>com.apple.Maps.mapspushd</string>
@@ -44,6 +36,8 @@
 		<key>com.apple.Maps.mapspushd.icloud</key>
 		<true/>
 		<key>com.apple.Maps.mapspushd.bulletinboard</key>
+		<true/>
+		<key>com.apple.private.alloy.maps-idswake</key>
 		<true/>
 	</dict>
 	<key>UserName</key>

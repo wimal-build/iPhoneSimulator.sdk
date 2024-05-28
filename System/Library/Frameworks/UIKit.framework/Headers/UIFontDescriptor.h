@@ -10,6 +10,8 @@
 #import <UIKit/UIKitDefines.h>
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_OPTIONS(uint32_t, UIFontDescriptorSymbolicTraits) {
     /* Symbolic Font Traits (Typeface info - lower 16 bits of UIFontDescriptorSymbolicTraits) */
     /*
@@ -47,32 +49,36 @@ typedef NSUInteger UIFontDescriptorClass;
 
 @class NSMutableDictionary, NSDictionary, NSArray, NSSet;
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, NSCoding>
+NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, NSSecureCoding>
+
+- (instancetype)init;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
 // Core attribute access
 @property(nonatomic, readonly) NSString *postscriptName;
 @property(nonatomic, readonly) CGFloat   pointSize;
 @property(nonatomic, readonly) CGAffineTransform matrix;
 @property(nonatomic, readonly) UIFontDescriptorSymbolicTraits symbolicTraits;
 
-- (id)objectForKey:(NSString *)anAttribute;
+- (nullable id)objectForKey:(NSString *)anAttribute;
 
-- (NSDictionary *)fontAttributes;
+- (NSDictionary<NSString *, id> *)fontAttributes;
 
 // Instance conversion
 // Returns "normalized" font descriptors matching the receiver. mandatoryKeys is an NSSet instance containing keys that are required to be identical in order to be matched. mandatoryKeys can be nil.
-- (NSArray *)matchingFontDescriptorsWithMandatoryKeys:(NSSet *)mandatoryKeys;
+- (NSArray<UIFontDescriptor *> *)matchingFontDescriptorsWithMandatoryKeys:(nullable NSSet<NSString *> *)mandatoryKeys;
 
 // Instantiation
-+ (UIFontDescriptor *)fontDescriptorWithFontAttributes:(NSDictionary *)attributes;
++ (UIFontDescriptor *)fontDescriptorWithFontAttributes:(NSDictionary<NSString *, id> *)attributes;
 + (UIFontDescriptor *)fontDescriptorWithName:(NSString *)fontName size:(CGFloat)size;
 + (UIFontDescriptor *)fontDescriptorWithName:(NSString *)fontName matrix:(CGAffineTransform)matrix;
 
 // Returns a font descriptor containing the text style and containing the user's selected content size category.
 + (UIFontDescriptor *)preferredFontDescriptorWithTextStyle:(NSString *)style;
 
-- (instancetype)initWithFontAttributes:(NSDictionary *)attributes;
+- (instancetype)initWithFontAttributes:(NSDictionary<NSString *, id> *)attributes NS_DESIGNATED_INITIALIZER;
 
-- (UIFontDescriptor *)fontDescriptorByAddingAttributes:(NSDictionary *)attributes; // the new attributes take precedence over the existing ones in the receiver
+- (UIFontDescriptor *)fontDescriptorByAddingAttributes:(NSDictionary<NSString *, id> *)attributes; // the new attributes take precedence over the existing ones in the receiver
 - (UIFontDescriptor *)fontDescriptorWithSymbolicTraits:(UIFontDescriptorSymbolicTraits)symbolicTraits;
 - (UIFontDescriptor *)fontDescriptorWithSize:(CGFloat)newPointSize;
 - (UIFontDescriptor *)fontDescriptorWithMatrix:(CGAffineTransform)matrix;
@@ -131,9 +137,16 @@ UIKIT_EXTERN NSString *const UIFontFeatureTypeIdentifierKey NS_AVAILABLE_IOS(7_0
 UIKIT_EXTERN NSString *const UIFontFeatureSelectorIdentifierKey NS_AVAILABLE_IOS(7_0);
 
 // Font text styles, semantic descriptions of the intended use for a font returned by +[UIFont preferredFontForTextStyle:]
+UIKIT_EXTERN NSString *const UIFontTextStyleTitle1 NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIFontTextStyleTitle2 NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIFontTextStyleTitle3 NS_AVAILABLE_IOS(9_0);
 UIKIT_EXTERN NSString *const UIFontTextStyleHeadline NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN NSString *const UIFontTextStyleBody NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIFontTextStyleSubheadline NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSString *const UIFontTextStyleBody NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSString *const UIFontTextStyleCallout NS_AVAILABLE_IOS(9_0);
 UIKIT_EXTERN NSString *const UIFontTextStyleFootnote NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIFontTextStyleCaption1 NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIFontTextStyleCaption2 NS_AVAILABLE_IOS(7_0);
+
+NS_ASSUME_NONNULL_END
+

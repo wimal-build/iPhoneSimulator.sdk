@@ -12,6 +12,7 @@
    notifications.
  */
 PK_EXPORT NSString * const PKPushTypeVoIP NS_AVAILABLE_IOS(8_0);
+PK_EXPORT NSString * const PKPushTypeComplication NS_AVAILABLE_IOS(9_0);
 
 @protocol PKPushRegistryDelegate;
 @class PKPushCredentials, PKPushPayload;

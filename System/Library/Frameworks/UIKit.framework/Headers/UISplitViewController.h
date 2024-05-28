@@ -7,6 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UISplitViewControllerDelegate;
 
 typedef NS_ENUM(NSInteger, UISplitViewControllerDisplayMode) {
@@ -21,8 +23,8 @@ UIKIT_EXTERN CGFloat const UISplitViewControllerAutomaticDimension NS_AVAILABLE_
 
 NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 
-@property (nonatomic, copy) NSArray *viewControllers;  
-@property (nonatomic, assign) id <UISplitViewControllerDelegate> delegate;
+@property (nonatomic, copy) NSArray<__kindof UIViewController *> *viewControllers;
+@property (nullable, nonatomic, weak) id <UISplitViewControllerDelegate> delegate;
 
 // If 'YES', hidden view can be presented and dismissed via a swipe gesture. Defaults to 'YES'.
 @property (nonatomic) BOOL presentsWithGesture NS_AVAILABLE_IOS(5_1);
@@ -52,10 +54,10 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 @property(nonatomic,readonly) CGFloat primaryColumnWidth NS_AVAILABLE_IOS(8_0);
 
 // In a horizontally-regular environment this will set either the master or detail view controller depending on the original target. In a compact environment this defaults to a full screen presentation. In general the master or detail view controller will have implemented showViewController:sender: so this method would not be invoked.
-- (void)showViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+- (void)showViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 // In a horizontally-regular environment this will set the detail view controller unless it provided an implementation for showViewController:sender: in which case it will be called. In a horizontally-compact environment the master view controller or detail view controller is sent the showViewController:sender: message. If neither one of them provide an implementation for this method then it will fall back to a full screen presentation.
-- (void)showDetailViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+- (void)showDetailViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -71,21 +73,21 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 
 // Override this method to customize the behavior of `showViewController:` on a split view controller. Return YES to indicate that you've handled
 // the action yourself; return NO to cause the default behavior to be executed.
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController showViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+- (BOOL)splitViewController:(UISplitViewController *)splitViewController showViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 // Override this method to customize the behavior of `showDetailViewController:` on a split view controller. Return YES to indicate that you've
 // handled the action yourself; return NO to cause the default behavior to be executed.
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController showDetailViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+- (BOOL)splitViewController:(UISplitViewController *)splitViewController showDetailViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 // Return the view controller which is to become the primary view controller after `splitViewController` is collapsed due to a transition to
 // the horizontally-compact size class. If you return `nil`, then the argument will perform its default behavior (i.e. to use its current primary view
 // controller).
-- (UIViewController *)primaryViewControllerForCollapsingSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
+- (nullable UIViewController *)primaryViewControllerForCollapsingSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
 
 // Return the view controller which is to become the primary view controller after the `splitViewController` is expanded due to a transition
 // to the horizontally-regular size class. If you return `nil`, then the argument will perform its default behavior (i.e. to use its current
 // primary view controller.)
-- (UIViewController *)primaryViewControllerForExpandingSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
+- (nullable UIViewController *)primaryViewControllerForExpandingSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
 
 // This method is called when a split view controller is collapsing its children for a transition to a compact-width size class. Override this
 // method to perform custom adjustments to the view controller hierarchy of the target controller.  When you return from this method, you're
@@ -99,9 +101,9 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 // will be set as the secondary view controller of the split view controller.  When you return from this method, `primaryViewController` should
 // have been configured for display in a regular-width split view controller. If you return `nil`, then `UISplitViewController` will perform
 // its default behavior.
-- (UIViewController *)splitViewController:(UISplitViewController *)splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)primaryViewController NS_AVAILABLE_IOS(8_0);
+- (nullable UIViewController *)splitViewController:(UISplitViewController *)splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)primaryViewController NS_AVAILABLE_IOS(8_0);
 
-- (NSUInteger)splitViewControllerSupportedInterfaceOrientations:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(7_0);
+- (UIInterfaceOrientationMask)splitViewControllerSupportedInterfaceOrientations:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(7_0);
 - (UIInterfaceOrientation)splitViewControllerPreferredInterfaceOrientationForPresentation:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(7_0);
 
 // Called when a button should be added to a toolbar for a hidden view controller.
@@ -123,13 +125,15 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 
 @interface UIViewController (UISplitViewController)
 
-@property (nonatomic, readonly, retain) UISplitViewController *splitViewController; // If the view controller has a split view controller as its ancestor, return it. Returns nil otherwise.
+@property (nullable, nonatomic, readonly, strong) UISplitViewController *splitViewController; // If the view controller has a split view controller as its ancestor, return it. Returns nil otherwise.
 
 
 /* Called on the primary view controller when a split view controller is collapsing its children for a transition to a compact-width size class, if its delegate does not provide overridden behavior. The default implementation simply shows the primary (the secondary controller disappears.) */
 - (void)collapseSecondaryViewController:(UIViewController *)secondaryViewController forSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
 
 /* Called on the primary view controller when a split view controller is separating its children for a transition to a regular-width size class, if its delegate does not provide overridden behavior. The default implementation restores the previous secondary controller. */
-- (UIViewController *)separateSecondaryViewControllerForSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
+- (nullable UIViewController *)separateSecondaryViewControllerForSplitViewController:(UISplitViewController *)splitViewController NS_AVAILABLE_IOS(8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

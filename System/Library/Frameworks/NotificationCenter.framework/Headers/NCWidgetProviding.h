@@ -25,6 +25,7 @@ typedef NS_ENUM(NSUInteger, NCUpdateResult) {
 
 // 'NCWidgetProviding' is an optional protocol for further customizing aspects of the provided content. 
 
+NS_ASSUME_NONNULL_BEGIN
 @protocol NCWidgetProviding <NSObject>
 
 @optional
@@ -48,3 +49,4 @@ typedef NS_ENUM(NSUInteger, NCUpdateResult) {
 + (UIVibrancyEffect *)notificationCenterVibrancyEffect;
 
 @end
+NS_ASSUME_NONNULL_END

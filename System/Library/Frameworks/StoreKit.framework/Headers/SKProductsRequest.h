@@ -7,8 +7,9 @@
 
 #import <StoreKit/SKRequest.h>
 
-@class SKProductsRequest, SKProductsResponse;
+@class SKProduct, SKProductsRequest, SKProductsResponse;
 
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol SKProductsRequestDelegate <SKRequestDelegate>
 
@@ -26,9 +27,9 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProductsRequest : SKRequest {
 }
 
 // Set of string product identifiers
-- (instancetype)initWithProductIdentifiers:(NSSet *)productIdentifiers NS_AVAILABLE_IOS(3_0);
+- (instancetype)initWithProductIdentifiers:(NSSet<NSString *> *)productIdentifiers NS_AVAILABLE_IOS(3_0);
 
-@property(nonatomic, assign) id <SKProductsRequestDelegate> delegate NS_AVAILABLE_IOS(3_0);
+@property(nonatomic, assign, nullable) id <SKProductsRequestDelegate> delegate NS_AVAILABLE_IOS(3_0);
 
 @end
 
@@ -39,9 +40,11 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProductsResponse : NSObject {
 }
 
 // Array of SKProduct instances.
-@property(nonatomic, readonly) NSArray *products NS_AVAILABLE_IOS(3_0);
+@property(nonatomic, readonly) NSArray<SKProduct *> *products NS_AVAILABLE_IOS(3_0);
 
 // Array of invalid product identifiers.
-@property(nonatomic, readonly) NSArray *invalidProductIdentifiers NS_AVAILABLE_IOS(3_0);
+@property(nonatomic, readonly) NSArray<NSString *> *invalidProductIdentifiers NS_AVAILABLE_IOS(3_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

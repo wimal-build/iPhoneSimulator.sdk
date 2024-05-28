@@ -15,6 +15,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class CBCentral, CBCharacteristic;
 
 /*!
@@ -26,13 +28,15 @@
 NS_CLASS_AVAILABLE(NA, 6_0)
 CB_EXTERN_CLASS @interface CBATTRequest : NSObject
 
+- (instancetype)init NS_UNAVAILABLE;
+
 /*!
  *  @property central
  *
  *  @discussion The central that originated the request.
  *
  */
-@property(readonly, retain, nonatomic) CBCentral *central;
+@property(readonly, nonatomic) CBCentral *central;
 
 /*!
  *  @property characteristic
@@ -40,7 +44,7 @@ CB_EXTERN_CLASS @interface CBATTRequest : NSObject
  *  @discussion The characteristic whose value will be read or written.
  *
  */
-@property(readonly, retain, nonatomic) CBCharacteristic *characteristic;
+@property(readonly, nonatomic) CBCharacteristic *characteristic;
 
 /*!
  *  @property offset
@@ -58,6 +62,8 @@ CB_EXTERN_CLASS @interface CBATTRequest : NSObject
  *				For write requests, <i>value</i> will contain the data to be written.
  *
  */
-@property(readwrite, copy) NSData *value;
+@property(readwrite, copy, nullable) NSData *value;
 
 @end
+
+NS_ASSUME_NONNULL_END

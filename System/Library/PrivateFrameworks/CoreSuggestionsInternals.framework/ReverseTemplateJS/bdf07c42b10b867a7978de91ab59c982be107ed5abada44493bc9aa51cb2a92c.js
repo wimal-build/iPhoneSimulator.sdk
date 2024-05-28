@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("flysas.com-confirmation-fr",function(e){return/^Votre vol SAS/.test(e.subject)},function(e){if(/^Votre vol SAS/.test(e.subject)){var r="fr_FR",t={};t.reference="R\xe9f\xe9rence de la r\xe9servation",t.total="Prix total",t.passenger="Passagers",t.airfare="Vol aller",t.return="Vol retour",t.operate="Vol op\xe9r\xe9 par",t.number="Num\xe9ro de ticket";var a=loadHelper("flysas.com-confirmation-skeleton.js");return a(e,r,t)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/127/238/240","SG8c92aeaa")]);

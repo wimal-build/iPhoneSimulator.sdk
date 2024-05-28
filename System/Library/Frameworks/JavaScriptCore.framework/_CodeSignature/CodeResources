@@ -4,52 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/Runtime/i386/ArrayConstructor.bc.gz</key>
-		<data>
-		x3O4O6W67cnF3+xECyV56rl2wDI=
-		</data>
-		<key>Resources/Runtime/i386/ArrayPrototype.bc.gz</key>
-		<data>
-		cmkH25gUqAYJAkURBrUZ5Zu7Nlg=
-		</data>
-		<key>Resources/Runtime/i386/NumberConstructor.bc.gz</key>
-		<data>
-		OSoFKl3hEDOTCGDuUiyYkOJKJIo=
-		</data>
-		<key>Resources/Runtime/i386/NumberPrototype.bc.gz</key>
-		<data>
-		DtXvOjT4hB+23iLBi7llUcsxcb4=
-		</data>
-		<key>Resources/Runtime/x86_64/ArrayConstructor.bc.gz</key>
-		<data>
-		gsdUVWpXXINZoEBsLtZiwU++vBQ=
-		</data>
-		<key>Resources/Runtime/x86_64/ArrayPrototype.bc.gz</key>
-		<data>
-		oj47zq+uLZjAglVhjB6FoDVGdUw=
-		</data>
-		<key>Resources/Runtime/x86_64/NumberConstructor.bc.gz</key>
-		<data>
-		gO/JVhL5dmZ+Xj2h8gFEOeXl7A0=
-		</data>
-		<key>Resources/Runtime/x86_64/NumberPrototype.bc.gz</key>
-		<data>
-		R4K7+4QQKygkTco1ouXBATfA9Vc=
-		</data>
-		<key>Resources/Runtime/x86_64/Runtime.symtbl</key>
-		<data>
-		KLyUpynp1Jrbxa84H5ENFTKMfFs=
-		</data>
-		<key>version.plist</key>
-		<data>
-		ZE6dL2h/0KXgxAGXLXXaGEQ0m8s=
-		</data>
-	</dict>
-	<key>files2</key>
-	<dict>
 		<key>Headers/JSBase.h</key>
 		<data>
-		fIASeteAJvh8/v4ZiGcptmuE+8Y=
+		IX9Q7hJwlZzmozp+GAXDHHG0+ac=
 		</data>
 		<key>Headers/JSContext.h</key>
 		<data>
@@ -57,7 +14,7 @@
 		</data>
 		<key>Headers/JSContextRef.h</key>
 		<data>
-		QK2xVPJPMF3iFbASvfK2twbp2go=
+		6+u6y7Nl4YxbzVqv2nS/zkOO8LA=
 		</data>
 		<key>Headers/JSExport.h</key>
 		<data>
@@ -81,11 +38,11 @@
 		</data>
 		<key>Headers/JSValue.h</key>
 		<data>
-		kuah77KbL8dBowg6tgzQApp6GRI=
+		hOVR1EzD4vgyj6XAWlgVhsL8ykw=
 		</data>
 		<key>Headers/JSValueRef.h</key>
 		<data>
-		pIAPe/BeajV9CHJE2imCDMus2UA=
+		ZcJioRTPg2IbLNXGmu6vflSrXHk=
 		</data>
 		<key>Headers/JSVirtualMachine.h</key>
 		<data>
@@ -101,65 +58,92 @@
 		</data>
 		<key>Headers/WebKitAvailability.h</key>
 		<data>
-		WbjA9+kGgObfgpSAvwfqU0Rwaq8=
+		aEHdvAbVd/pBH/lqKChnOsL1WEs=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		8lmP2IxuBrrCGUZhdDiU0sjunfk=
 		</data>
 		<key>Libraries/libllvmForJSC.dylib</key>
 		<data>
-		btzhPLXzHnRelBX5z9GYnberXAw=
+		5FFMKYnwbBQ+yJHGJZUGgltliG0=
 		</data>
-		<key>Resources/Runtime/i386/ArrayConstructor.bc.gz</key>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>Headers/JSBase.h</key>
 		<data>
-		x3O4O6W67cnF3+xECyV56rl2wDI=
+		IX9Q7hJwlZzmozp+GAXDHHG0+ac=
 		</data>
-		<key>Resources/Runtime/i386/ArrayPrototype.bc.gz</key>
+		<key>Headers/JSContext.h</key>
 		<data>
-		cmkH25gUqAYJAkURBrUZ5Zu7Nlg=
+		+3GXFok0vi0c9A+CgrTOOYE/cLw=
 		</data>
-		<key>Resources/Runtime/i386/NumberConstructor.bc.gz</key>
+		<key>Headers/JSContextRef.h</key>
 		<data>
-		OSoFKl3hEDOTCGDuUiyYkOJKJIo=
+		6+u6y7Nl4YxbzVqv2nS/zkOO8LA=
 		</data>
-		<key>Resources/Runtime/i386/NumberPrototype.bc.gz</key>
+		<key>Headers/JSExport.h</key>
 		<data>
-		DtXvOjT4hB+23iLBi7llUcsxcb4=
+		K4RcRVYySxXBov5xkEnjAlTwmS8=
 		</data>
-		<key>Resources/Runtime/x86_64/ArrayConstructor.bc.gz</key>
+		<key>Headers/JSManagedValue.h</key>
 		<data>
-		gsdUVWpXXINZoEBsLtZiwU++vBQ=
+		Ny9SQD4+40u/lzsLP+07RWImOmA=
 		</data>
-		<key>Resources/Runtime/x86_64/ArrayPrototype.bc.gz</key>
+		<key>Headers/JSObjectRef.h</key>
 		<data>
-		oj47zq+uLZjAglVhjB6FoDVGdUw=
+		Lcga2CJja6ZnJENirDGAexKn3vs=
 		</data>
-		<key>Resources/Runtime/x86_64/NumberConstructor.bc.gz</key>
+		<key>Headers/JSStringRef.h</key>
 		<data>
-		gO/JVhL5dmZ+Xj2h8gFEOeXl7A0=
+		0n5WZIIyswBHwW9ODQ69MiSkKoc=
 		</data>
-		<key>Resources/Runtime/x86_64/NumberPrototype.bc.gz</key>
+		<key>Headers/JSStringRefCF.h</key>
 		<data>
-		R4K7+4QQKygkTco1ouXBATfA9Vc=
+		3yMWlDzW508TWPbN/QoPEAO8N2M=
 		</data>
-		<key>Resources/Runtime/x86_64/Runtime.symtbl</key>
+		<key>Headers/JSValue.h</key>
 		<data>
-		KLyUpynp1Jrbxa84H5ENFTKMfFs=
+		hOVR1EzD4vgyj6XAWlgVhsL8ykw=
 		</data>
-		<key>version.plist</key>
+		<key>Headers/JSValueRef.h</key>
 		<data>
-		ZE6dL2h/0KXgxAGXLXXaGEQ0m8s=
+		ZcJioRTPg2IbLNXGmu6vflSrXHk=
+		</data>
+		<key>Headers/JSVirtualMachine.h</key>
+		<data>
+		+3jfuFlcLsMicvUAVvlyAByKxQo=
+		</data>
+		<key>Headers/JavaScript.h</key>
+		<data>
+		Ie0LSA7RUcMdnkyTNXT4eVZOLIA=
+		</data>
+		<key>Headers/JavaScriptCore.h</key>
+		<data>
+		3rtTjG5m6AXyrE5Cdh9To66RERI=
+		</data>
+		<key>Headers/WebKitAvailability.h</key>
+		<data>
+		aEHdvAbVd/pBH/lqKChnOsL1WEs=
+		</data>
+		<key>Libraries/libllvmForJSC.dylib</key>
+		<data>
+		5FFMKYnwbBQ+yJHGJZUGgltliG0=
 		</data>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^Resources/</key>
+		<key>^</key>
 		<true/>
-		<key>^Resources/.*\.lproj/</key>
+		<key>^.*\.lproj/</key>
 		<dict>
 			<key>optional</key>
 			<true/>
 			<key>weight</key>
 			<real>1000</real>
 		</dict>
-		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
@@ -175,6 +159,11 @@
 		<dict>
 			<key>weight</key>
 			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
 		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
@@ -192,6 +181,20 @@
 		</dict>
 		<key>^.*</key>
 		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
 			<key>omit</key>
@@ -205,25 +208,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^Resources/</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
-		<key>^Resources/.*\.lproj/</key>
-		<dict>
-			<key>optional</key>
-			<true/>
-			<key>weight</key>
-			<real>1000</real>
-		</dict>
-		<key>^Resources/.*\.lproj/locversion.plist$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>1100</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

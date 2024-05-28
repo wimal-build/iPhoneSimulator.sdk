@@ -8,3 +8,7 @@
 ;; user editable; it may be overwritten at any time.
 ;;
 (allow mach-lookup (global-name "com.apple.suggestd.suggestionmanager"))
+(allow mach-lookup (global-name "com.apple.suggestd.mail"))
+(allow mach-lookup (global-name "com.apple.suggestd.contacts"))
+(allow mach-lookup (global-name "com.apple.suggestd.events"))
+(allow mach-lookup (global-name "com.apple.suggestd.internal"))

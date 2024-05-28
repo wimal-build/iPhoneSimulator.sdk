@@ -10,6 +10,8 @@
 #import <UIKit/UIImage.h>
 #import <UIKit/UIBarItem.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol UIAccessibilityIdentification <NSObject>
 @required
 
@@ -17,7 +19,7 @@
  A string that identifies the user interface element.
  default == nil
 */
-@property(nonatomic, copy) NSString *accessibilityIdentifier NS_AVAILABLE_IOS(5_0);
+@property(nullable, nonatomic, copy) NSString *accessibilityIdentifier NS_AVAILABLE_IOS(5_0);
 
 @end
 
@@ -34,3 +36,4 @@
 @interface UIImage (UIAccessibility) <UIAccessibilityIdentification>
 @end
 
+NS_ASSUME_NONNULL_END

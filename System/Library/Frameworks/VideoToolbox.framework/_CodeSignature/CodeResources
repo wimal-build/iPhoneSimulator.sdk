@@ -10,51 +10,59 @@
 		</data>
 		<key>Headers/VTCompressionProperties.h</key>
 		<data>
-		AhIrsbYGFHf87nW7DSvFDUaSzJ4=
+		pg2FpWufhVc1z39Tct/qKUXErxs=
 		</data>
 		<key>Headers/VTCompressionSession.h</key>
 		<data>
-		N+Pnr5YXZ4kE9+5u0eT10fSvBZk=
+		X3AV2SZ8ko02oJILKbit5vuerWo=
 		</data>
 		<key>Headers/VTDecompressionProperties.h</key>
 		<data>
-		Juy/amP9z88+GNTprocMAPZSYmo=
+		moeR0Po2N4J2CHlLoOzEF/oDAiE=
 		</data>
 		<key>Headers/VTDecompressionSession.h</key>
 		<data>
-		SVfxq2NalLiy8t531tH2s+eqsfI=
+		wfQ+Oc7YvP0+hsd7pfP9zeTUYo0=
 		</data>
 		<key>Headers/VTErrors.h</key>
 		<data>
-		68w6j9qem3CnNWyGoKTfoLz9hY0=
+		Wy8zDZfP8xtiWg2Z448nYqzyQjk=
 		</data>
 		<key>Headers/VTFrameSilo.h</key>
 		<data>
-		kiOyDfYQSJAfeVEJ/pCYRFTg9Ws=
+		8PgiANdGVBVHcnazpiSu7e3Eb2c=
 		</data>
 		<key>Headers/VTMultiPassStorage.h</key>
 		<data>
-		aZxwfpwYCdSoieyhpwq0Tskr/XU=
+		Efe9BJhbWCRCHfuMdMBhkfRfEGM=
+		</data>
+		<key>Headers/VTPixelTransferProperties.h</key>
+		<data>
+		sukOyejw4qwG42o7TyJv+eSAPc4=
 		</data>
 		<key>Headers/VTSession.h</key>
 		<data>
-		UZsBwi9RRxT0e6QZrB2zXPlNExU=
+		NHHhAgHV0jMWUWWOOzrLVug6XRI=
+		</data>
+		<key>Headers/VTUtilities.h</key>
+		<data>
+		cb5hAcS/ylky4XJym3YjG0TpqzI=
 		</data>
 		<key>Headers/VTVideoEncoderList.h</key>
 		<data>
-		t6TNHU8coyabBt+fwIgdOm7fFZ4=
+		T8B3uJbyO1v8OhqqaaB32ANtJAQ=
 		</data>
 		<key>Headers/VideoToolbox.h</key>
 		<data>
-		dX42qp9ZdmDSreapUGbW2kySEeo=
+		fZNC0jJD1VFV+hu7uWxZzWeFEZA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ATIv1SmhG2VGGRk7izkQOa9CWy8=
+		C+9JQJlEIDFkHbxpMge+Oeedg60=
 		</data>
-		<key>version.plist</key>
+		<key>Modules/module.modulemap</key>
 		<data>
-		wT5w44TtGdEmYJcFC0ztEa6QMHo=
+		PO2IYnKEK0MhWZaXEF69suqxmQw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -65,47 +73,55 @@
 		</data>
 		<key>Headers/VTCompressionProperties.h</key>
 		<data>
-		AhIrsbYGFHf87nW7DSvFDUaSzJ4=
+		pg2FpWufhVc1z39Tct/qKUXErxs=
 		</data>
 		<key>Headers/VTCompressionSession.h</key>
 		<data>
-		N+Pnr5YXZ4kE9+5u0eT10fSvBZk=
+		X3AV2SZ8ko02oJILKbit5vuerWo=
 		</data>
 		<key>Headers/VTDecompressionProperties.h</key>
 		<data>
-		Juy/amP9z88+GNTprocMAPZSYmo=
+		moeR0Po2N4J2CHlLoOzEF/oDAiE=
 		</data>
 		<key>Headers/VTDecompressionSession.h</key>
 		<data>
-		SVfxq2NalLiy8t531tH2s+eqsfI=
+		wfQ+Oc7YvP0+hsd7pfP9zeTUYo0=
 		</data>
 		<key>Headers/VTErrors.h</key>
 		<data>
-		68w6j9qem3CnNWyGoKTfoLz9hY0=
+		Wy8zDZfP8xtiWg2Z448nYqzyQjk=
 		</data>
 		<key>Headers/VTFrameSilo.h</key>
 		<data>
-		kiOyDfYQSJAfeVEJ/pCYRFTg9Ws=
+		8PgiANdGVBVHcnazpiSu7e3Eb2c=
 		</data>
 		<key>Headers/VTMultiPassStorage.h</key>
 		<data>
-		aZxwfpwYCdSoieyhpwq0Tskr/XU=
+		Efe9BJhbWCRCHfuMdMBhkfRfEGM=
+		</data>
+		<key>Headers/VTPixelTransferProperties.h</key>
+		<data>
+		sukOyejw4qwG42o7TyJv+eSAPc4=
 		</data>
 		<key>Headers/VTSession.h</key>
 		<data>
-		UZsBwi9RRxT0e6QZrB2zXPlNExU=
+		NHHhAgHV0jMWUWWOOzrLVug6XRI=
+		</data>
+		<key>Headers/VTUtilities.h</key>
+		<data>
+		cb5hAcS/ylky4XJym3YjG0TpqzI=
 		</data>
 		<key>Headers/VTVideoEncoderList.h</key>
 		<data>
-		t6TNHU8coyabBt+fwIgdOm7fFZ4=
+		T8B3uJbyO1v8OhqqaaB32ANtJAQ=
 		</data>
 		<key>Headers/VideoToolbox.h</key>
 		<data>
-		dX42qp9ZdmDSreapUGbW2kySEeo=
+		fZNC0jJD1VFV+hu7uWxZzWeFEZA=
 		</data>
-		<key>version.plist</key>
+		<key>Modules/module.modulemap</key>
 		<data>
-		wT5w44TtGdEmYJcFC0ztEa6QMHo=
+		PO2IYnKEK0MhWZaXEF69suqxmQw=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -1,4 +1,4 @@
-# Ruleset for Yosemite (Vocalizer Expressive)
+﻿# Ruleset for Yosemite (Vocalizer Expressive)
 #
 # Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
 #
@@ -23,6 +23,18 @@ charset = utf-8
 
 #Fix Fogbugz 19551 Radar10295819
 /([0-9]+)[ ]*x[ ]*([0-9]+)/   -->   "$1 곱하기 $2"
+
+#Fix Fogbugz 54949 Radar16946757
+/[mM][pP]3/   -->   "엠피쓰리"
+/3[dD]/   -->   "쓰리디"
+
+#Fix Fogbugz 54948 Radar16946723
+/ㅋㅋㅋㅋ/   -->   "키키키키"
+/ㅋㅋㅋ/   -->   "키키키"
+/ㅋㅋ/   -->   "키키"
+/ㅎㅎㅎㅎ/   -->   "히히히히"
+/ㅎㅎㅎ/   -->   "히히히"
+/ㅎㅎ/   -->   "히히"
 
 #Fix FB16350
 #/※/ --> " 참고표 "

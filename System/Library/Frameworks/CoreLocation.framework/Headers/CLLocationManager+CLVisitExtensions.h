@@ -8,6 +8,8 @@
 
 #import <CoreLocation/CLLocationManager.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CLLocationManager (CLVisitExtensions)
 
 /*
@@ -22,7 +24,7 @@
  *    Detected visits are sent to the delegate's -locationManager:didVisit:
  *    method.
  */
-- (void)startMonitoringVisits NS_AVAILABLE(NA, 8_0);
+- (void)startMonitoringVisits NS_AVAILABLE(NA, 8_0) __WATCHOS_PROHIBITED;
 
 /*
  *  stopMonitoringVisits
@@ -34,6 +36,8 @@
  *    Note that stopping and starting are asynchronous operations and may not
  *    immediately reflect in delegate callback patterns.
  */
-- (void)stopMonitoringVisits NS_AVAILABLE(NA, 8_0);
+- (void)stopMonitoringVisits NS_AVAILABLE(NA, 8_0) __WATCHOS_PROHIBITED;
 
 @end
+
+NS_ASSUME_NONNULL_END

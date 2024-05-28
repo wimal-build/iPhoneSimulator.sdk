@@ -8,6 +8,8 @@
 #import <HealthKit/HKQuery.h>
 #import <HealthKit/HKStatistics.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKStatistics;
 
 /*!
@@ -18,8 +20,10 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 @interface HKStatisticsQuery : HKQuery
 
 - (instancetype)initWithQuantityType:(HKQuantityType *)quantityType
-             quantitySamplePredicate:(NSPredicate *)quantitySamplePredicate
+             quantitySamplePredicate:(nullable NSPredicate *)quantitySamplePredicate
                              options:(HKStatisticsOptions)options
-                   completionHandler:(void(^)(HKStatisticsQuery *query, HKStatistics *result, NSError *error))handler;
+                   completionHandler:(void(^)(HKStatisticsQuery *query, HKStatistics * __nullable result, NSError * __nullable error))handler;
 
 @end
+
+NS_ASSUME_NONNULL_END

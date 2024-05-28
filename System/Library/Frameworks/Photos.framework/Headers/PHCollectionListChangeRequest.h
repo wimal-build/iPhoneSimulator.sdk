@@ -12,6 +12,8 @@
 @class PHCollectionList;
 @class PHObjectPlaceholder;
 
+NS_ASSUME_NONNULL_BEGIN
+
 // PHCollectionListChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
 NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionListChangeRequest : NSObject
 
@@ -25,15 +27,16 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionListChangeRequest : NSObject
 
 #pragma mark - Deleting Collection Lists
 
+// requests that the specified collection lists and all their child collections (recursively) be deleted
 + (void)deleteCollectionLists:(id<NSFastEnumeration>)collectionLists;
 
 #pragma mark - Modifying Collection Lists
 
 // if the collection list does not allow the type of change requested, these methods will raise an exception, call canPerformEditOperation: on the collection list to determine if the type of edit operation is allowed.
-+ (instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList;
++ (nullable instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList;
 
 // to add, remove or rearrange child collections in a collection list, passing in the fetched collections in that collection list will ensure that the child collection positions are tracked correctly in the case that the collection list has been externally edited after the fetch, but before this change is applied
-+ (instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList childCollections:(PHFetchResult *)childCollections;
++ (nullable instancetype)changeRequestForCollectionList:(PHCollectionList *)collectionList childCollections:(PHFetchResult *)childCollections;
 
 @property (nonatomic, strong, readwrite) NSString *title;
 
@@ -50,3 +53,5 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollectionListChangeRequest : NSObject
 - (void)moveChildCollectionsAtIndexes:(NSIndexSet *)indexes toIndex:(NSUInteger)toIndex;
 
 @end
+
+NS_ASSUME_NONNULL_END

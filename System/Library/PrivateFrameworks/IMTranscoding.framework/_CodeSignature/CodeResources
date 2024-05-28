@@ -42,7 +42,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		pcF5kkVLS6X6DpFLX9uZBbtTJPk=
+		OHpO0XAtBpNkZBT2hKfWuvqGuSI=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -73,19 +73,15 @@
 		</dict>
 		<key>XPCServices/IMTranscoderAgent.xpc/IMTranscoderAgent</key>
 		<data>
-		r8SAUTjEsOk/RSoyZk3DTmn+loI=
+		xYiEkCuECctrABDdGLa40Q9mt18=
 		</data>
 		<key>XPCServices/IMTranscoderAgent.xpc/Info.plist</key>
 		<data>
-		SAsEe5P9Eqq1hfiBuAx4rv4+Gew=
+		5q8U53vJAVG7DX/g+VMK4pgT1Rk=
 		</data>
 		<key>XPCServices/IMTranscoderAgent.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		3age+8n5l/3kSYBIJAn5VHaGl8M=
-		</data>
-		<key>XPCServices/IMTranscoderAgent.xpc/version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
+		OB7eZ2bZ9ztAbYf0gBTchRS0l38=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -132,11 +128,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,10 +339,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -433,19 +443,15 @@
 		</dict>
 		<key>XPCServices/IMTranscoderAgent.xpc/IMTranscoderAgent</key>
 		<data>
-		r8SAUTjEsOk/RSoyZk3DTmn+loI=
+		xYiEkCuECctrABDdGLa40Q9mt18=
 		</data>
 		<key>XPCServices/IMTranscoderAgent.xpc/Info.plist</key>
 		<data>
-		SAsEe5P9Eqq1hfiBuAx4rv4+Gew=
+		5q8U53vJAVG7DX/g+VMK4pgT1Rk=
 		</data>
 		<key>XPCServices/IMTranscoderAgent.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		3age+8n5l/3kSYBIJAn5VHaGl8M=
-		</data>
-		<key>XPCServices/IMTranscoderAgent.xpc/version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
+		OB7eZ2bZ9ztAbYf0gBTchRS0l38=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -492,11 +498,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -685,10 +709,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

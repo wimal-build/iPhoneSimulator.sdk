@@ -18,8 +18,8 @@
 	<true/>
 	<key>AdHocServiceType</key>
 	<integer>2</integer>
-	<key>LaunchDarwinNotification</key>
-	<string>com.apple.nanomail.idslaunchnotification</string>
+	<key>LaunchMachServiceNotification</key>
+	<string>com.apple.private.alloy.mail.sync.accounts-idswake</string>
 	<key>DuetIdentifiers</key>
 	<array>
 		<string>com.apple.NanoMail</string>

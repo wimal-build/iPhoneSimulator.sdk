@@ -9,14 +9,17 @@
 
 @class PHContentEditingInput, PHAdjustmentData;
 
+NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface PHContentEditingOutput : NSObject
 
 - (instancetype)initWithContentEditingInput:(PHContentEditingInput *)contentEditingInput;
 
-@property (readwrite, strong) PHAdjustmentData *adjustmentData;
+@property (readwrite, strong, nullable) PHAdjustmentData *adjustmentData;
 
 // File URL where the rendered output, with adjustments baked-in, needs to be written to.
 @property (readonly, copy) NSURL *renderedContentURL;
 
 @end
+
+NS_ASSUME_NONNULL_END

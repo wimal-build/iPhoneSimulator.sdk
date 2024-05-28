@@ -8,8 +8,8 @@
 	<string>Maps</string>
 	<key>Identifier</key>
 	<string>com.apple.private.alloy.maps</string>
-	<key>LaunchDarwinNotification</key>
-	<string>com.apple.Maps.idslaunchnotification</string>
+	<key>LaunchMachServiceNotification</key>
+	<string>com.apple.private.alloy.maps-idswake</string>
 	<key>ProtocolName</key>
 	<string>com.apple.private.alloy</string>
 	<key>PushTopic</key>

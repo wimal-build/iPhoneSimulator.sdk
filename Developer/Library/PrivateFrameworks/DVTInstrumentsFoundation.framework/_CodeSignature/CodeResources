@@ -4,76 +4,60 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>DTServiceHub</key>
+		<data>
+		VrxFkgCIgGnx3Ggf7uPBf6HRzzY=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		Tjuy+KtkLyXa2Xzi8p/+FeEAPYk=
+		ztskp4np7GIcax6BPBRP8jqK85A=
 		</data>
 		<key>LeakAgent</key>
 		<data>
-		LWbV11Par8XLMjcFEh+4FOG89as=
+		i/4fypHvArLapX34hoWJmfljGD0=
 		</data>
 		<key>RemoteInjectionAgent</key>
 		<data>
-		yampnnNOA6grftu/DDYz6KSyoeU=
-		</data>
-		<key>itrampoline</key>
-		<data>
-		0LBXQdZXSMaIWufD/Jg0vxnhSmo=
+		5AHntjHDCLUJ0hp8QxqbA8VvBC8=
 		</data>
 		<key>libRemoteInjectionPayload.dylib</key>
 		<data>
-		X22O5Li9It3OnJ5bEoQL2DdkeFI=
+		i8h8hxteWcREUTta/3wSJ06j9+8=
 		</data>
 		<key>libfsmonitor_interpose.dylib</key>
 		<data>
-		BP4AF+z9ekHtAVVnSjTHZm7N3uI=
+		Xcglp2baRhgCRVpeCfKqvJc+i3U=
 		</data>
 		<key>liboainject.dylib</key>
 		<data>
-		oOexMfd2irrMTeBVRYsgJeRforM=
-		</data>
-		<key>libsimshim.dylib</key>
-		<data>
-		O+hTpczkSD/BWD71X6F6NzU00Mo=
-		</data>
-		<key>version.plist</key>
-		<data>
-		oHIb4JvaGVEamzmNAAZ6MQ2s+0U=
+		zikb8OV0mkY4ldWw8jz5AvoTTic=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>DTServiceHub</key>
+		<data>
+		VrxFkgCIgGnx3Ggf7uPBf6HRzzY=
+		</data>
 		<key>LeakAgent</key>
 		<data>
-		LWbV11Par8XLMjcFEh+4FOG89as=
+		i/4fypHvArLapX34hoWJmfljGD0=
 		</data>
 		<key>RemoteInjectionAgent</key>
 		<data>
-		yampnnNOA6grftu/DDYz6KSyoeU=
-		</data>
-		<key>itrampoline</key>
-		<data>
-		0LBXQdZXSMaIWufD/Jg0vxnhSmo=
+		5AHntjHDCLUJ0hp8QxqbA8VvBC8=
 		</data>
 		<key>libRemoteInjectionPayload.dylib</key>
 		<data>
-		X22O5Li9It3OnJ5bEoQL2DdkeFI=
+		i8h8hxteWcREUTta/3wSJ06j9+8=
 		</data>
 		<key>libfsmonitor_interpose.dylib</key>
 		<data>
-		BP4AF+z9ekHtAVVnSjTHZm7N3uI=
+		Xcglp2baRhgCRVpeCfKqvJc+i3U=
 		</data>
 		<key>liboainject.dylib</key>
 		<data>
-		oOexMfd2irrMTeBVRYsgJeRforM=
-		</data>
-		<key>libsimshim.dylib</key>
-		<data>
-		O+hTpczkSD/BWD71X6F6NzU00Mo=
-		</data>
-		<key>version.plist</key>
-		<data>
-		oHIb4JvaGVEamzmNAAZ6MQ2s+0U=
+		zikb8OV0mkY4ldWw8jz5AvoTTic=
 		</data>
 	</dict>
 	<key>rules</key>

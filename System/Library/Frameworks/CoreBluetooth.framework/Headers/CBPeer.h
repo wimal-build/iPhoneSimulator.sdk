@@ -9,10 +9,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_CLASS_AVAILABLE(N_A, 8_0)
 CB_EXTERN_CLASS @interface CBPeer : NSObject <NSCopying>
 
-@property(readonly, nonatomic) CFUUIDRef UUID NS_DEPRECATED(NA, NA, 5_0, 7_0);
+- (instancetype)init NS_UNAVAILABLE;
 
 /*!
  *  @property identifier
@@ -22,3 +24,5 @@ CB_EXTERN_CLASS @interface CBPeer : NSObject <NSCopying>
 @property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

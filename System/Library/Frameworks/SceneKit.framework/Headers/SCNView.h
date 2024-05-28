@@ -1,13 +1,15 @@
 //
 //  SCNView.h
 //
-//  Copyright (c) 2012-2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2015 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 #import <SceneKit/SCNSceneRenderer.h>
 #import <SceneKit/SCNTechnique.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*! 
  @enum SCNAntialiasingMode
@@ -17,8 +19,25 @@ typedef NS_ENUM(NSUInteger, SCNAntialiasingMode) {
     SCNAntialiasingModeNone,
     SCNAntialiasingModeMultisampling2X,
     SCNAntialiasingModeMultisampling4X
-} SCENEKIT_ENUM_AVAILABLE(10_10, 8_0);
+} NS_ENUM_AVAILABLE(10_10, 8_0);
 
+/*! @group View initialization options
+ @constant SCNPreferredRenderingAPIKey Specifies the preferred rendering API to be used by the renderer.
+ @discussion Pass it as the key in the options dictionary given to initWithFrame:options:. The value is a NSNumber wrapping a SCNRenderingAPI. You can also select the preferred rendering API directly from the SCNView inspector in InterfaceBuilder.
+ */
+SCN_EXTERN NSString * const SCNPreferredRenderingAPIKey NS_AVAILABLE(10_11, 9_0);
+
+/*!
+ @constant SCNPreferredDeviceKey Specifies the preferred metal device to be used by the renderer.
+ @discussion The value is directly a id <MTLDevice>.
+ */
+SCN_EXTERN NSString * const SCNPreferredDeviceKey NS_AVAILABLE(10_11, 9_0);
+
+/*!
+ @constant SCNPreferLowPowerDeviceKey Specifies if the renderer should prefer a low power metal device.
+ @discussion The value is a NSNumber wrapping a BOOL. Defaults to NO.
+ */
+SCN_EXTERN NSString * const SCNPreferLowPowerDeviceKey NS_AVAILABLE(10_11, 9_0);
 
 /*!
  @class SCNView
@@ -31,15 +50,15 @@ typedef NS_ENUM(NSUInteger, SCNAntialiasingMode) {
  @method initWithFrame:options:
  @abstract Initializes and returns a newly allocated SCNView object with a specified frame rectangle.
  @param frame The frame rectangle for the created view object.
- @param options An optional dictionary for future extensions.
+ @param options An optional dictionary. See "View initialization options" above.
  */
-- (id)initWithFrame:(CGRect)frame options:(NSDictionary *)options;
+- (instancetype)initWithFrame:(CGRect)frame options:(nullable NSDictionary<NSString *, id> *)options;
 
 /*! 
  @property scene
  @abstract Specifies the scene of the receiver
  */
-@property(nonatomic, retain) SCNScene *scene;
+@property(nonatomic, retain, nullable) SCNScene *scene;
 
 
 /*! 
@@ -62,7 +81,7 @@ typedef NS_ENUM(NSUInteger, SCNAntialiasingMode) {
  @abstract Draws the contents of the view and returns them as a new image object
  @discussion This method is thread-safe and may be called at any time.
  */
-- (UIImage *)snapshot SCENEKIT_AVAILABLE(10_10, 8_0);
+- (UIImage *)snapshot NS_AVAILABLE(10_10, 8_0);
 
 /*! 
  @functiongroup Actions
@@ -73,7 +92,7 @@ typedef NS_ENUM(NSUInteger, SCNAntialiasingMode) {
  @param sender The object (such as a button or menu item) sending the message to play the scene.
  @discussion This method does not do anything if the scene is already playing.
  */
-- (IBAction)play:(id)sender;
+- (IBAction)play:(nullable id)sender;
 
 /*! 
  @method pause:
@@ -81,35 +100,38 @@ typedef NS_ENUM(NSUInteger, SCNAntialiasingMode) {
  @param sender The object (such as a button or menu item) sending the message to pause the scene.
  @discussion This method does not do anything if the scene is already paused.
  */
-- (IBAction)pause:(id)sender;
+- (IBAction)pause:(nullable id)sender;
 
 /*! 
  @method stop:
  @abstract This action method stops the scene playback and resets the current time to the start time of the scene.
  @param sender The object (such as a button or menu item) sending the message to stop playing the scene.
  */
-- (IBAction)stop:(id)sender;
-
-/*!
- @property eaglContext
- @abstract Specifies the EAGL context associated with the receiver.
- */
-@property(nonatomic, retain) EAGLContext *eaglContext;
+- (IBAction)stop:(nullable id)sender;
 
 /*!
  @property preferredFramesPerSecond
  @abstract The rate you want the view to redraw its contents.
  @discussion When your application sets its preferred frame rate, the view chooses a frame rate as close to that as possible based on the capabilities of the screen the view is displayed on. The actual frame rate chosen is usually a factor of the maximum refresh rate of the screen to provide a consistent frame rate. For example, if the maximum refresh rate of the screen is 60 frames per second, that is also the highest frame rate the view sets as the actual frame rate. However, if you ask for a lower frame rate, it might choose 30, 20, 15 or some other factor to be the actual frame rate. Your application should choose a frame rate that it can consistently maintain.
-     The default value is 60 frames per second.
+ The default value is 60 frames per second.
  */
 @property(nonatomic) NSInteger preferredFramesPerSecond;
+
+/*!
+ @property eaglContext
+ @abstract Specifies the EAGL context associated with the receiver.
+ @discussion This property returns nil and has no effect if the current API is Metal.
+ */
+@property(nonatomic, retain, nullable) EAGLContext *eaglContext;
 
 
 /*!
  @property antialiasingMode
  @abstract Defaults to SCNAntialiasingModeMultisampling4X on OSX and SCNAntialiasingModeNone on iOS.
  */
-@property(nonatomic) SCNAntialiasingMode antialiasingMode SCENEKIT_AVAILABLE(10_10, 8_0);
+@property(nonatomic) SCNAntialiasingMode antialiasingMode NS_AVAILABLE(10_10, 8_0);
 
 
 @end
+
+NS_ASSUME_NONNULL_END

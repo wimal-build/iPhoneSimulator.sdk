@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKQuery.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void(^HKObserverQueryCompletionHandler)(void);
 
 HK_CLASS_AVAILABLE_IOS(8_0)
@@ -21,7 +23,9 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  */
 
 - (instancetype)initWithSampleType:(HKSampleType *)sampleType
-                         predicate:(NSPredicate *)predicate
-                     updateHandler:(void(^)(HKObserverQuery *query, HKObserverQueryCompletionHandler completionHandler, NSError *error))updateHandler;
+                         predicate:(nullable NSPredicate *)predicate
+                     updateHandler:(void(^)(HKObserverQuery *query, HKObserverQueryCompletionHandler completionHandler, NSError * __nullable error))updateHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

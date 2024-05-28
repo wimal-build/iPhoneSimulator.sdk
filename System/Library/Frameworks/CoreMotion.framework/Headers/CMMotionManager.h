@@ -13,6 +13,8 @@
 #import <CoreMotion/CMDeviceMotion.h>
 #import <CoreMotion/CMMagnetometer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /* 
  * There are two methods to receive data from CMMotionManager: push and pull.
  *
@@ -46,7 +48,7 @@
  *  Discussion:
  *    Typedef of block to be invoked when accelerometer data is available.
  */
-typedef void (^CMAccelerometerHandler)(CMAccelerometerData *accelerometerData, NSError *error);
+typedef void (^CMAccelerometerHandler)(CMAccelerometerData * __nullable accelerometerData, NSError * __nullable error);
 
 /*
  *  CMGyroHandler
@@ -54,7 +56,7 @@ typedef void (^CMAccelerometerHandler)(CMAccelerometerData *accelerometerData, N
  *  Discussion:
  *    Typedef of block to be invoked when gyro data is available.
  */
-typedef void (^CMGyroHandler)(CMGyroData *gyroData, NSError *error);
+typedef void (^CMGyroHandler)(CMGyroData * __nullable gyroData, NSError * __nullable error);
 
 /*
  *  CMDeviceMotionHandler
@@ -62,7 +64,7 @@ typedef void (^CMGyroHandler)(CMGyroData *gyroData, NSError *error);
  *  Discussion:
  *    Typedef of block to be invoked when device motion data is available.
  */
-typedef void (^CMDeviceMotionHandler)(CMDeviceMotion *motion, NSError *error);
+typedef void (^CMDeviceMotionHandler)(CMDeviceMotion * __nullable motion, NSError * __nullable error);
 
 /*
  *  CMMagnetometerHandler
@@ -70,7 +72,7 @@ typedef void (^CMDeviceMotionHandler)(CMDeviceMotion *motion, NSError *error);
  *  Discussion:
  *    Typedef of block to be invoked when magnetometer data is available.
  */
-typedef void (^CMMagnetometerHandler)(CMMagnetometerData *magnetometerData, NSError *error) NS_AVAILABLE(NA,5_0);
+typedef void (^CMMagnetometerHandler)(CMMagnetometerData * __nullable magnetometerData, NSError * __nullable error) NS_AVAILABLE(NA,5_0);
 
 /*
  *  CMMotionManager
@@ -124,7 +126,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			Returns the latest sample of accelerometer data, or nil if none is available.
  */
 
-@property(readonly) CMAccelerometerData *accelerometerData;
+@property(readonly, nullable) CMAccelerometerData *accelerometerData;
 
 /*
  *  startAccelerometerUpdates
@@ -190,7 +192,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *		Returns the latest sample of gyro data, or nil if none is available.
  */
-@property(readonly) CMGyroData *gyroData;
+@property(readonly, nullable) CMGyroData *gyroData;
 
 /*
  *  startGyroUpdates
@@ -257,7 +259,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Returns the latest sample of magnetometer data, or nil if none is available.
  */
-@property(readonly) CMMagnetometerData *magnetometerData NS_AVAILABLE(NA,5_0);
+@property(readonly, nullable) CMMagnetometerData *magnetometerData NS_AVAILABLE(NA,5_0);
 
 /*
  *  startMagnetometerUpdates
@@ -342,7 +344,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *			Returns the latest sample of device motion data, or nil if none is available.
  */
-@property(readonly) CMDeviceMotion *deviceMotion;
+@property(readonly, nullable) CMDeviceMotion *deviceMotion;
 
 /*
  *  startDeviceMotionUpdates
@@ -406,3 +408,5 @@ NS_CLASS_AVAILABLE(NA,4_0)
 @property(assign, nonatomic) BOOL showsDeviceMovementDisplay NS_AVAILABLE(NA,5_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,6 +8,8 @@
 #import <HealthKit/HealthKit.h>
 #import <HealthKit/HKQuery.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 // The query returns all samples that match the given sampleType and predicate.
 #define HKObjectQueryNoLimit (0)
 
@@ -28,7 +30,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @property      sortDescriptors
  @abstract      An array of NSSortDescriptors.
  */
-@property (readonly, copy) NSArray *sortDescriptors;
+@property (readonly, copy, nullable) NSArray<NSSortDescriptor *> *sortDescriptors;
 
 /*!
  @method        initWithSampleType:predicate:limit:sortDescriptors:resultsHandler:
@@ -41,10 +43,12 @@ HK_CLASS_AVAILABLE_IOS(8_0)
  @param         resultsHandler  The block to invoke with results when the query has finished executing.
  */
 - (instancetype)initWithSampleType:(HKSampleType *)sampleType
-                         predicate:(NSPredicate *)predicate
+                         predicate:(nullable NSPredicate *)predicate
                              limit:(NSUInteger)limit
-                   sortDescriptors:(NSArray *)sortDescriptors
-                    resultsHandler:(void(^)(HKSampleQuery *query, NSArray *results, NSError *error))resultsHandler;
+                   sortDescriptors:(nullable NSArray<NSSortDescriptor *> *)sortDescriptors
+                    resultsHandler:(void(^)(HKSampleQuery *query, NSArray<__kindof HKSample *> * __nullable results, NSError * __nullable error))resultsHandler;
 
 
 @end
+
+NS_ASSUME_NONNULL_END

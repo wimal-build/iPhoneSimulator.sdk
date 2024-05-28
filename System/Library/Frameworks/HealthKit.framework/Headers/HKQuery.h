@@ -9,6 +9,8 @@
 #import <HealthKit/HKDefines.h>
 #import <HealthKit/HKWorkout.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKSampleType;
 @class HKQuantity;
 @class HKSource;
@@ -17,7 +19,7 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 @interface HKQuery : NSObject
 
 @property (readonly, strong) HKSampleType *sampleType;
-@property (readonly, strong) NSPredicate *predicate;
+@property (readonly, strong, nullable) NSPredicate *predicate;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -89,30 +91,63 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  
  @param         sources The list of sources.
  */
-+ (NSPredicate *)predicateForObjectsFromSources:(NSSet *)sources;
++ (NSPredicate *)predicateForObjectsFromSources:(NSSet<HKSource *> *)sources;
+
+/*!
+ @method        predicateForObjectsFromSourceRevisions:
+ @abstract      Creates a predicate for use with HKQuery subclasses.
+ @discussion    Creates a query predicate that matches objects saved by any of the specified HKSourceRevisions.
+ 
+ @param         sourceRevisions The list of source revisions.
+ */
++ (NSPredicate *)predicateForObjectsFromSourceRevisions:(NSSet<HKSourceRevision *> *)sourceRevisions NS_AVAILABLE_IOS(9_0);
+
+/*!
+ @method        predicateForObjectsFromDevices:
+ @abstract      Creates a predicate for use with HKQuery subclasses.
+ @discussion    Creates a query predicate that matches objects associated with any of the given devices. All properties
+                of each HKDevice are considered in the query and must match exactly, including nil values. To perform 
+                searches based on specific device properties, use predicateForObjectsWithDeviceProperty:allowedValues:.
+ 
+ @param         devices     The set of devices that generated data.
+ */
++ (NSPredicate *)predicateForObjectsFromDevices:(NSSet<HKDevice *> *)devices NS_AVAILABLE_IOS(9_0);
+
+/*!
+ @method        predicateForObjectsWithDeviceProperty:allowedValues:
+ @abstract      Creates a predicate for use with HKQuery subclasses.
+ @discussion    Creates a query predicate that matches objects associated with an HKDevice with the specified device
+                property matching any value included in allowedValues. To query for samples with devices that match all 
+                the properties of an HKDevice, use predicateForObjectsFromDevices.
+ 
+ @param         key             The device property key. (See HKDevice.h)
+ @param         allowedValues   The set of values for which the device property can match. An empty set will match all
+                devices whose property value is nil.
+ */
++ (NSPredicate *)predicateForObjectsWithDeviceProperty:(NSString *)key allowedValues:(NSSet<NSString *> *)allowedValues NS_AVAILABLE_IOS(9_0);
 
 /*!
  @method        predicateForObjectWithUUID:
  @abstract      Creates a predicate for use with HKQuery subclasses.
- @discussion    Creates a query predicate that matches the object saved with a particular UUID
+ @discussion    Creates a query predicate that matches the object saved with a particular UUID.
  
- @param         UUID The UUID of the object
+ @param         UUID The UUID of the object.
  */
 + (NSPredicate *)predicateForObjectWithUUID:(NSUUID *)UUID;
 
 /*!
  @method        predicateForObjectsWithUUIDs:
  @abstract      Creates a predicate for use with HKQuery subclasses.
- @discussion    Creates a query predicate that matches the objects saved with one of the given UUIDs
+ @discussion    Creates a query predicate that matches the objects saved with one of the given UUIDs.
  
- @param         UUIDs The set of NSUUIDs
+ @param         UUIDs The set of NSUUIDs.
  */
-+ (NSPredicate *)predicateForObjectsWithUUIDs:(NSSet *)UUIDs;
++ (NSPredicate *)predicateForObjectsWithUUIDs:(NSSet<NSUUID *> *)UUIDs;
 
 /*!
  @method        predicateForObjectsNoCorrelation
  @abstract      Creates a predicate for use with HKQuery subclasses.
- @discussion    Creates a query predicate that matches the objects that are not associated with an HKCorrelation
+ @discussion    Creates a query predicate that matches the objects that are not associated with an HKCorrelation.
  */
 + (NSPredicate *)predicateForObjectsWithNoCorrelation;
 
@@ -121,7 +156,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  @abstract      Creates a predicate for use with HKQuery subclasses.
  @discussion    Creates a query predicate that matches the objects that have been added to the given workout.
  
- @param         workout     The HKWorkout that the object was added to
+ @param         workout     The HKWorkout that the object was added to.
  */
 + (NSPredicate *)predicateForObjectsFromWorkout:(HKWorkout *)workout;
 
@@ -140,7 +175,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  @param         endDate    The end date of the predicate's time interval.
  @param         options    The rules for how a sample's time interval overlaps with the predicate's time interval.
  */
-+ (NSPredicate *)predicateForSamplesWithStartDate:(NSDate *)startDate endDate:(NSDate *)endDate options:(HKQueryOptions)options;
++ (NSPredicate *)predicateForSamplesWithStartDate:(nullable NSDate *)startDate endDate:(nullable NSDate *)endDate options:(HKQueryOptions)options;
 
 @end
 
@@ -149,7 +184,7 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
 
 /*!
  @method        predicateForQuantitySamplesWithOperatorType:quantity:
- @abstract      Creates a predicate for use with HKQuery subclasses
+ @abstract      Creates a predicate for use with HKQuery subclasses.
  @discussion    Creates a query predicate that matches quantity samples with values that match the expression formed by
                 the given operator and quantity.
  
@@ -221,3 +256,5 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
  */
 + (NSPredicate *)predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType)operatorType totalDistance:(HKQuantity *)totalDistance;
 @end
+
+NS_ASSUME_NONNULL_END

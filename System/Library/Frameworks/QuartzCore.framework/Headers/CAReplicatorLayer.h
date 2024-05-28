@@ -5,6 +5,8 @@
 
 #import <QuartzCore/CALayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /* The replicator layer creates a specified number of copies of its
  * sublayers, each copy potentially having geometric, temporal and
  * color transformations applied to it.
@@ -42,7 +44,7 @@
 /* The color to multiply the first object by (the source object). Defaults
  * to opaque white. Animatable. */
 
-@property CGColorRef instanceColor;
+@property(nullable) CGColorRef instanceColor;
 
 /* The color components added to the color of instance k-1 to produce
  * the modulation color of instance k. Defaults to the clear color (no
@@ -54,3 +56,5 @@
 @property float instanceAlphaOffset;
 
 @end
+
+NS_ASSUME_NONNULL_END

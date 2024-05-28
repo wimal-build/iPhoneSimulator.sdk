@@ -8,6 +8,8 @@
 #import <HealthKit/HKDefines.h>
 #import <HealthKit/HKTypeIdentifiers.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKUnit;
 @class HKQuantityType;
 @class HKCategoryType;
@@ -19,8 +21,7 @@
  @class         HKObjectType
  @abstract      An abstract class representing a type of object that can be stored by HealthKit.
  */
-HK_CLASS_AVAILABLE_IOS(8_0)\
-
+HK_CLASS_AVAILABLE_IOS(8_0)
 @interface HKObjectType : NSObject <NSSecureCoding, NSCopying>
 
 /*!
@@ -32,10 +33,10 @@ HK_CLASS_AVAILABLE_IOS(8_0)\
 
 - (instancetype)init NS_UNAVAILABLE;
 
-+ (HKQuantityType *)quantityTypeForIdentifier:(NSString *)identifier;
-+ (HKCategoryType *)categoryTypeForIdentifier:(NSString *)identifier;
-+ (HKCharacteristicType *)characteristicTypeForIdentifier:(NSString *)identifier;
-+ (HKCorrelationType *)correlationTypeForIdentifier:(NSString *)identifier;
++ (nullable HKQuantityType *)quantityTypeForIdentifier:(NSString *)identifier;
++ (nullable HKCategoryType *)categoryTypeForIdentifier:(NSString *)identifier;
++ (nullable HKCharacteristicType *)characteristicTypeForIdentifier:(NSString *)identifier;
++ (nullable HKCorrelationType *)correlationTypeForIdentifier:(NSString *)identifier;
 + (HKWorkoutType *)workoutType;
 
 @end
@@ -110,3 +111,4 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 @interface HKWorkoutType : HKSampleType
 @end
 
+NS_ASSUME_NONNULL_END

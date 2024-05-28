@@ -1,7 +1,11 @@
 /*
- * Copyright (c) 2013 Apple Inc.
+ * Copyright (c) 2013-2015 Apple Inc.
  * All rights reserved.
  */
+
+#ifndef __NE_INDIRECT__
+#error "Please import the NetworkExtension module instead of this file directly."
+#endif
 
 /*!
  * @file NEVPNManager.h
@@ -16,6 +20,8 @@
 #import <Security/Security.h>
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 #if defined(__cplusplus)
 #define NEVPN_EXPORT extern "C"
 #else
@@ -24,6 +30,7 @@
 
 @class NEVPNConnection;
 @class NEVPNProtocol;
+@class NEOnDemandRule;
 
 /*!
  * @typedef NEVPNError
@@ -36,8 +43,12 @@ typedef NS_ENUM(NSInteger, NEVPNError) {
     NEVPNErrorConfigurationDisabled = 2,
     /*! @const NEVPNErrorConnectionFailed The connection to the VPN server failed. */
     NEVPNErrorConnectionFailed = 3,
-	/*! @const NEVPNErrorConfigurationStale The VPN configuration is stale and needs to be loaded. */
+    /*! @const NEVPNErrorConfigurationStale The VPN configuration is stale and needs to be loaded. */
     NEVPNErrorConfigurationStale = 4,
+    /*! @const NEVPNErrorConfigurationReadWriteFailed The VPN configuration cannot be read from or written to disk. */
+    NEVPNErrorConfigurationReadWriteFailed = 5,
+    /*! @const NEVPNErrorConfigurationUnknown An unknown configuration error occurred. */
+    NEVPNErrorConfigurationUnknown = 6,
 } NS_ENUM_AVAILABLE(10_10, 8_0);
 
 /*! @const NEVPNErrorDomain The VPN error domain */
@@ -66,24 +77,24 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 /*!
  * @method loadFromPreferencesWithCompletionHandler:
  * @discussion This function loads the current VPN configuration from the caller's VPN preferences.
- * @param completionHandler A block that will be called when the load operation is completed. The NSError passed to this block will be nil if the load operation succeeded, non-nil otherwise.
+ * @param completionHandler A block that will be called on the main thread when the load operation is completed. The NSError passed to this block will be nil if the load operation succeeded, non-nil otherwise.
  */
-- (void)loadFromPreferencesWithCompletionHandler:(void (^)(NSError *error))completionHandler NS_AVAILABLE(10_10, 8_0);
+- (void)loadFromPreferencesWithCompletionHandler:(void (^)(NSError * __nullable error))completionHandler NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @method removeFromPreferencesWithCompletionHandler:
  * @discussion This function removes the VPN configuration from the caller's VPN preferences. If the VPN is enabled, has VPN On Demand enabled, and has VPN On Demand rules, the VPN is disabled and the VPN On Demand rules are de-activated.
- * @param completionHandler A block that will be called when the remove operation is completed. The NSError passed to this block will be nil if the remove operation succeeded, non-nil otherwise.
+ * @param completionHandler A block that will be called on the main thread when the remove operation is completed. The NSError passed to this block will be nil if the remove operation succeeded, non-nil otherwise.
  */
-- (void)removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error))completionHandler NS_AVAILABLE(10_10, 8_0);
+- (void)removeFromPreferencesWithCompletionHandler:(nullable void (^)(NSError * __nullable error))completionHandler NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @method saveToPreferencesWithCompletionHandler:
  * @discussion This function saves the VPN configuration in the caller's VPN preferences. If the VPN is enabled, has VPN On Demand enabled, and has VPN On Demand rules, the VPN On Demand rules are activated.
  *
- * @param completionHandler A block that will be called when the save operation is completed. The NSError passed to this block will be nil if the save operation succeeded, non-nil otherwise.
+ * @param completionHandler A block that will be called on the main thread when the save operation is completed. The NSError passed to this block will be nil if the save operation succeeded, non-nil otherwise.
  */
-- (void)saveToPreferencesWithCompletionHandler:(void (^)(NSError *error))completionHandler NS_AVAILABLE(10_10, 8_0);
+- (void)saveToPreferencesWithCompletionHandler:(nullable void (^)(NSError * __nullable error))completionHandler NS_AVAILABLE(10_10, 8_0);
 
 #if !TARGET_OS_IPHONE && !TARGET_IPHONE_SIMULATOR
 /*!
@@ -96,9 +107,9 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 
 /*!
  * @property onDemandRules
- * @discussion An array of NEVPNOnDemandRule objects.
+ * @discussion An array of NEOnDemandRule objects.
  */
-@property (copy) NSArray *onDemandRules NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSArray<NEOnDemandRule *> *onDemandRules NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @property onDemandEnabled
@@ -110,13 +121,19 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
  * @property localizedDescription
  * @discussion A string containing a description of the VPN.
  */
-@property (copy) NSString *localizedDescription NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSString *localizedDescription NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @property protocol
  * @discussion An NEVPNProtocol object containing the protocol-specific portion of the VPN configuration.
  */
-@property (strong) NEVPNProtocol *protocol NS_AVAILABLE(10_10, 8_0);
+@property (strong, nullable) NEVPNProtocol *protocol NS_DEPRECATED(10_10, 10_11, 8_0, 9_0, "Use protocolConfiguration instead");
+
+/*!
+ * @property protocolConfiguration
+ * @discussion An NEVPNProtocol object containing the protocol-specific portion of the VPN configuration.
+ */
+@property (strong, nullable) NEVPNProtocol *protocolConfiguration NS_AVAILABLE(10_11, 9_0);
 
 /*!
  * @property connection
@@ -131,4 +148,6 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 @property (getter=isEnabled) BOOL enabled NS_AVAILABLE(10_10, 8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END
 

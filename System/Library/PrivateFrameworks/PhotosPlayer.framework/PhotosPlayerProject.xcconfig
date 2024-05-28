@@ -1,0 +1,10 @@
+//
+//	PhotosPlayerProject.xcconfig
+//
+//	Copyright 2015 Apple, Inc. All rights reserved.
+//
+
+#include "PhotosPlayerVersion.xcconfig"
+
+// Ad Hoc Code Signing is required by Xcode when there's no signing identity
+CODE_SIGN_IDENTITY = -

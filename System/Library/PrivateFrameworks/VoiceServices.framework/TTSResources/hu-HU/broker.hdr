@@ -9,10 +9,10 @@ defaultvoice:Mariska
     <language>Hungarian</language>
     <langcode>HUH</langcode>
     <langid>17</langid>
-    <langversion>5.2.3.13339</langversion>
+    <langversion>5.2.4.13339</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Mariska</voice>
-    <voiceversion>5.2.3.13332</voiceversion>
+    <voiceversion>5.2.4.13332</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -51,6 +51,7 @@ defaultvoice:Mariska
     <COMPONENT>fe/fe_udwl</COMPONENT>
     <COMPONENT>fe/fe_clcml</COMPONENT>
     <COMPONENT>fe/fe_promptoriorth</COMPONENT>
+    <COMPONENT>fe/fe_sprop</COMPONENT>
     <COMPONENT>fe/fe_unixlit</COMPONENT>
     <COMPONENT>fe/fe_initlingdb</COMPONENT>
     <COMPONENT>fe/fe_promptorth</COMPONENT>
@@ -65,6 +66,7 @@ defaultvoice:Mariska
     <COMPONENT>fe/fe_prmfx</COMPONENT>
     <COMPONENT>fe/fe_prompt</COMPONENT>
     <COMPONENT>fe/fe_global</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
     <COMPONENT>select/bet3</COMPONENT>
     <COMPONENT>synth/bet3</COMPONENT>
     <COMPONENT>audioinserter</COMPONENT>
@@ -81,6 +83,10 @@ defaultvoice:Mariska
     </RESOURCE>
 
     <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    
+    
     
     
     

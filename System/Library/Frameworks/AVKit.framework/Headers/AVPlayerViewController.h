@@ -3,13 +3,16 @@
 	
 	Framework:  AVKit
 	
-	Copyright 2014 Apple Inc. All rights reserved.
+	Copyright 2014-2015 Apple Inc. All rights reserved.
 	
  */
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class AVPlayer;
+@protocol AVPlayerViewControllerDelegate;
 
 /*!
 	@class		AVPlayerViewController
@@ -23,7 +26,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 	@property	player
 	@abstract	The player from which to source the media content for the view controller.
  */
-@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong, nullable) AVPlayer *player;
 
 /*!
 	@property	showsPlaybackControls
@@ -57,6 +60,91 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 	@property	contentOverlayView
 	@abstract	Use the content overlay view to add additional custom views between the video content and the controls.
  */
-@property (nonatomic, readonly) UIView *contentOverlayView;
+@property (nonatomic, readonly, nullable) UIView *contentOverlayView;
+
+/*!
+	@property	allowsPictureInPicturePlayback
+	@abstract	Whether or not the receiver allows Picture in Picture playback. Default is YES.
+ */
+@property (nonatomic) BOOL allowsPictureInPicturePlayback NS_AVAILABLE_IOS(9_0);
+
+/*!
+	@property	delegate
+	@abstract	The receiver's delegate.
+ */
+@property (nonatomic, weak, nullable) id <AVPlayerViewControllerDelegate> delegate NS_AVAILABLE_IOS(9_0);
 
 @end
+
+
+/*!
+	@protocol	AVPlayerViewControllerDelegate
+	@abstract	A protocol for delegates of AVPlayerViewController.
+ */
+
+@protocol AVPlayerViewControllerDelegate <NSObject>
+@optional
+
+/*!
+	@method		playerViewControllerWillStartPictureInPicture:
+	@param		playerViewController
+				The player view controller.
+	@abstract	Delegate can implement this method to be notified when Picture in Picture will start.
+ */
+- (void)playerViewControllerWillStartPictureInPicture:(AVPlayerViewController *)playerViewController;
+
+/*!
+	@method		playerViewControllerDidStartPictureInPicture:
+	@param		playerViewController
+				The player view controller.
+	@abstract	Delegate can implement this method to be notified when Picture in Picture did start.
+ */
+- (void)playerViewControllerDidStartPictureInPicture:(AVPlayerViewController *)playerViewController;
+
+/*!
+	@method		playerViewController:failedToStartPictureInPictureWithError:
+	@param		playerViewController
+				The player view controller.
+	@param		error
+				An error describing why it failed.
+	@abstract	Delegate can implement this method to be notified when Picture in Picture failed to start.
+ */
+- (void)playerViewController:(AVPlayerViewController *)playerViewController failedToStartPictureInPictureWithError:(NSError *)error;
+
+/*!
+	@method		playerViewControllerWillStopPictureInPicture:
+	@param		playerViewController
+				The player view controller.
+	@abstract	Delegate can implement this method to be notified when Picture in Picture will stop.
+ */
+- (void)playerViewControllerWillStopPictureInPicture:(AVPlayerViewController *)playerViewController;
+
+/*!
+	@method		playerViewControllerDidStopPictureInPicture:
+	@param		playerViewController
+				The player view controller.
+	@abstract	Delegate can implement this method to be notified when Picture in Picture did stop.
+ */
+- (void)playerViewControllerDidStopPictureInPicture:(AVPlayerViewController *)playerViewController;
+
+/*!
+	@method		playerViewControllerShouldAutomaticallyDismissAtPictureInPictureStart:
+	@param		playerViewController
+				The player view controller.
+	@abstract	Delegate can implement this method and return NO to prevent player view controller from automatically being dismissed when Picture in Picture starts.
+ */
+- (BOOL)playerViewControllerShouldAutomaticallyDismissAtPictureInPictureStart:(AVPlayerViewController *)playerViewController;
+
+/*!
+	@method		playerViewController:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:
+	@param		playerViewController
+				The player view controller.
+	@param		completionHandler
+				The completion handler the delegate needs to call after restore.
+	@abstract	Delegate can implement this method to restore the user interface before Picture in Picture stops.
+ */
+- (void)playerViewController:(AVPlayerViewController *)playerViewController restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:(void (^)(BOOL restored))completionHandler;
+
+@end
+
+NS_ASSUME_NONNULL_END

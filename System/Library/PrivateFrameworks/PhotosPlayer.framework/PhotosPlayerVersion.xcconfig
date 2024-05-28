@@ -1,0 +1,16 @@
+//
+//	PhotosPlayerVersion.xcconfig
+//
+//	Copyright 2015 Apple, Inc. All rights reserved.
+//
+
+CURRENT_PROJECT_VERSION = $(PP_BUILD_VERSION)
+DYLIB_COMPATIBILITY_VERSION = 1
+DYLIB_CURRENT_VERSION = 1
+VERSIONING_SYSTEM = apple-generic
+
+// complex fallback when RC_ProjectSourceVersion is not defined (from CloudPhotoLibrary Common.xcconfig)
+PP_BUILD_VERSION = $(PP_BUILD_VERSION_$(PP_BUILD_VERSION_SUFFIX_$(RC_ProjectSourceVersion)))
+PP_BUILD_VERSION_ = $(RC_ProjectSourceVersion)
+PP_BUILD_VERSION_SUFFIX_ = noVer
+PP_BUILD_VERSION_noVer = 0

@@ -1,0 +1,36 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG:
+
+[header]
+language = ROR
+
+[data]
+# rule for "dot com" bug  (radar 7768195 Bugzilla16288)
+/([a-zA-Z])\.org\b/ --> "$1 punct org"
+/([a-zA-Z])\.net\b/ --> "$1 punct net"
+/([a-zA-Z])\.gov\b/ --> "$1 punct gov"
+/([a-zA-Z])\.edu\b/ --> "$1 punct edu"
+/([a-zA-Z])\.info\b/ --> "$1 punct info"
+/([a-zA-Z])\.biz\b/ --> "$1 punct biz"
+/([a-zA-Z])\.jobs\b/ --> "$1 punct jobs"
+/([a-zA-Z])\.coop\b/ --> "$1 punct coop"
+/([a-zA-Z])\.ac\b/ --> "$1 punct A C"
+/([a-zA-Z])\.us\b/ --> "$1 punct U S"
+/([a-zA-Z])\.uk\b/ --> "$1 punct U K"
+/([a-zA-Z])\.eu\b/ --> "$1 punct E U"
+/([a-zA-Z])\.int\b/ --> "$1 punct int"
+/([a-zA-Z])\.co\b/ --> "$1 punct C O"
+/([a-zA-Z])\.es\b/ --> "$1 punct E S"
+/([a-zA-Z])\.de\b/ --> "$1 punct D E"
+/([a-zA-Z])\.fr\b/ --> "$1 punct F R"
+/([a-zA-Z])\.it\b/ --> "$1 punct I T"
+/([a-zA-Z])\.be\b/ --> "$1 punct B E"
+/([a-zA-Z])\.nl\b/ --> "$1 punct N L"
+/([a-zA-Z])\.gr\b/ --> "$1 punct G R"
+/([a-zA-Z])\.ru\b/ --> "$1 punct R U"
+/([a-zA-Z])\.mx\b/ --> "$1 punct M X"
+/([a-zA-Z])\.ca\b/ --> "$1 punct C A"
+/([a-zA-Z])\.ro\b/ --> "$1 punct R O"

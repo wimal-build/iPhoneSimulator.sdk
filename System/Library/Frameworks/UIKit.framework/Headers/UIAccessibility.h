@@ -18,6 +18,8 @@
 #import <UIKit/UIAccessibilityZoom.h>
 #import <UIKit/UIGuidedAccessRestrictions.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  UIAccessibility
  
@@ -33,6 +35,7 @@
  A completely custom subclass of UIView might need to override all of the
  UIAccessibility methods except accessibilityFrame.
  */
+
 @interface NSObject (UIAccessibility)
 
 /*
@@ -41,7 +44,7 @@
  default on UIKit controls == YES 
  Setting the property to YES will cause the receiver to be visible to assistive applications. 
  */
-@property(nonatomic) BOOL isAccessibilityElement;
+@property (nonatomic) BOOL isAccessibilityElement;
 
 /*
  Returns the localized label that represents the element. 
@@ -53,7 +56,7 @@
  default on UIKit controls == derived from the title
  Setting the property will change the label that is returned to the accessibility client. 
  */
-@property(nonatomic, copy) NSString *accessibilityLabel;
+@property (nullable, nonatomic, copy) NSString *accessibilityLabel;
 
 /*
  Returns a localized string that describes the result of performing an action on the element, when the result is non-obvious.
@@ -62,7 +65,7 @@
  default == nil
  Setting the property will change the hint that is returned to the accessibility client. 
  */
-@property(nonatomic, copy) NSString *accessibilityHint;
+@property (nullable, nonatomic, copy) NSString *accessibilityHint;
 
 /*
  Returns a localized string that represents the value of the element, such as the value 
@@ -72,7 +75,7 @@
  default on UIKit controls == values for appropriate controls 
  Setting the property will change the value that is returned to the accessibility client.  
  */
-@property(nonatomic, copy) NSString *accessibilityValue;
+@property (nullable, nonatomic, copy) NSString *accessibilityValue;
 
 /*
  Returns a UIAccessibilityTraits mask that is the OR combination of
@@ -84,7 +87,7 @@
  default on UIKit controls == traits that best characterize individual controls. 
  Setting the property will change the traits that are returned to the accessibility client. 
  */
-@property(nonatomic) UIAccessibilityTraits accessibilityTraits;
+@property (nonatomic) UIAccessibilityTraits accessibilityTraits;
 
 /*
  Returns the frame of the element in screen coordinates.
@@ -92,7 +95,7 @@
  default on UIViews == the frame of the view
  Setting the property will change the frame that is returned to the accessibility client. 
  */
-@property(nonatomic) CGRect accessibilityFrame;
+@property (nonatomic) CGRect accessibilityFrame;
 
 // The accessibilityFrame is expected to be in screen coordinates.
 // To help convert the frame to screen coordinates, use the following method.
@@ -105,7 +108,7 @@ UIKIT_EXTERN CGRect UIAccessibilityConvertFrameToScreenCoordinates(CGRect rect, 
  Setting the property, or overriding the method, will cause the assistive technology to prefer the path over the accessibility.
  frame when highlighting the element.
  */
-@property (nonatomic, copy) UIBezierPath *accessibilityPath NS_AVAILABLE_IOS(7_0);
+@property (nullable, nonatomic, copy) UIBezierPath *accessibilityPath NS_AVAILABLE_IOS(7_0);
 
 // The accessibilityPath is expected to be in screen coordinates.
 // To help convert the path to screen coordinates, use the following method.
@@ -116,7 +119,7 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  Returns the activation point for an accessible element in screen coordinates.
  default == Mid-point of the accessibilityFrame.
  */
-@property(nonatomic) CGPoint accessibilityActivationPoint NS_AVAILABLE_IOS(5_0);
+@property (nonatomic) CGPoint accessibilityActivationPoint NS_AVAILABLE_IOS(5_0);
 
 /*
  Returns the language code that the element's label, value and hint should be spoken in. 
@@ -125,20 +128,20 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  For example, en-US specifies U.S. English.
  default == nil
  */
-@property(nonatomic, retain) NSString *accessibilityLanguage;
+@property (nullable, nonatomic, strong) NSString *accessibilityLanguage;
 
 /*
  Marks all the accessible elements contained within as hidden.
  default == NO
  */
-@property(nonatomic) BOOL accessibilityElementsHidden NS_AVAILABLE_IOS(5_0);
+@property (nonatomic) BOOL accessibilityElementsHidden NS_AVAILABLE_IOS(5_0);
 
 /*
  Informs whether the receiving view should be considered modal by accessibility. If YES, then 
  elements outside this view will be ignored. Only elements inside this view will be exposed.
  default == NO
  */
-@property(nonatomic) BOOL accessibilityViewIsModal NS_AVAILABLE_IOS(5_0);
+@property (nonatomic) BOOL accessibilityViewIsModal NS_AVAILABLE_IOS(5_0);
 
 /*
  Forces children elements to be grouped together regardless of their position on screen.
@@ -147,7 +150,7 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  a parent view of the items in the vertical column, VoiceOver will navigate the order correctly.
  default == NO
  */
-@property(nonatomic) BOOL shouldGroupAccessibilityChildren NS_AVAILABLE_IOS(6_0);
+@property (nonatomic) BOOL shouldGroupAccessibilityChildren NS_AVAILABLE_IOS(6_0);
 
 /*
  Some assistive technologies allow the user to select a parent view or container to navigate its elements.
@@ -156,7 +159,7 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  See UIAccessibilityConstants.h for the list of supported values.
  default == UIAccessibilityNavigationStyleAutomatic
  */
-@property(nonatomic) UIAccessibilityNavigationStyle accessibilityNavigationStyle NS_AVAILABLE_IOS(8_0);
+@property (nonatomic) UIAccessibilityNavigationStyle accessibilityNavigationStyle NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -188,7 +191,7 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  Returns the accessibility element in order, based on index.
  default == nil 
  */
-- (id)accessibilityElementAtIndex:(NSInteger)index;
+- (nullable id)accessibilityElementAtIndex:(NSInteger)index;
 
 /*
  Returns the ordered index for an accessibility element
@@ -199,7 +202,7 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
 // A list of container elements managed by the receiver.
 // This can be used as an alternative to implementing the dynamic methods.
 // default == nil
-@property (nonatomic, strong) NSArray *accessibilityElements NS_AVAILABLE_IOS(8_0);
+@property (nullable, nonatomic, strong) NSArray *accessibilityElements NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -217,6 +220,15 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
 
 // Returns whether an assistive technology is focused on the element.
 - (BOOL)accessibilityElementIsFocused NS_AVAILABLE_IOS(4_0);
+
+// Returns a set of identifier keys indicating which technology is focused on this object
+- (nullable NSSet<NSString *> *)accessibilityAssistiveTechnologyFocusedIdentifiers NS_AVAILABLE_IOS(9_0);
+
+// Returns the element that is currently focused by an assistive technology.
+// default = nil.
+// Pass in a specific identifier (e.g. UIAccessibilityNotificationVoiceOverIdentifier) in order to choose the focused element for a specific product.
+// If no argument is used, the function will returned the element that was most recently focused.
+UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(NSString * __nullable assistiveTechnologyIdentifier) NS_AVAILABLE_IOS(9_0);
 
 @end
 
@@ -258,10 +270,8 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
     UIAccessibilityScrollDirectionLeft,
     UIAccessibilityScrollDirectionUp,
     UIAccessibilityScrollDirectionDown,
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
-    UIAccessibilityScrollDirectionNext,
-    UIAccessibilityScrollDirectionPrevious
-#endif
+    UIAccessibilityScrollDirectionNext NS_ENUM_AVAILABLE_IOS(5_0),
+    UIAccessibilityScrollDirectionPrevious NS_ENUM_AVAILABLE_IOS(5_0),
 };
 
 - (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction NS_AVAILABLE_IOS(4_2);
@@ -289,8 +299,7 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
  If the view returns a delete action from this property, VoiceOver and Switch Control users will be able to delete photos without performing the flick gesture.
  default == nil
  */
-@property (nonatomic, retain) NSArray *accessibilityCustomActions NS_AVAILABLE_IOS(8_0);
-
+@property (nullable, nonatomic, strong) NSArray <UIAccessibilityCustomAction *> *accessibilityCustomActions NS_AVAILABLE_IOS(8_0);
 @end
 
 /* 
@@ -306,13 +315,13 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
 - (NSInteger)accessibilityLineNumberForPoint:(CGPoint)point NS_AVAILABLE_IOS(5_0);
 
 // Returns the content associated with a line number as a string.
-- (NSString *)accessibilityContentForLineNumber:(NSInteger)lineNumber NS_AVAILABLE_IOS(5_0);
+- (nullable NSString *)accessibilityContentForLineNumber:(NSInteger)lineNumber NS_AVAILABLE_IOS(5_0);
 
 // Returns the on-screen rectangle for a line number.
 - (CGRect)accessibilityFrameForLineNumber:(NSInteger)lineNumber NS_AVAILABLE_IOS(5_0);
 
 // Returns a string representing the text displayed on the current page.
-- (NSString *)accessibilityPageContent NS_AVAILABLE_IOS(5_0);
+- (nullable NSString *)accessibilityPageContent NS_AVAILABLE_IOS(5_0);
 
 @end
 
@@ -324,8 +333,7 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
  Pass nil for the argument if the notification does not specify otherwise. 
  See UIAccessibilityConstants.h for a list of notifications.
  */
-UIKIT_EXTERN void UIAccessibilityPostNotification(UIAccessibilityNotifications notification, id argument);
-
+UIKIT_EXTERN void UIAccessibilityPostNotification(UIAccessibilityNotifications notification, __nullable id argument);
 
 /* 
  Assistive Technology
@@ -334,7 +342,7 @@ UIKIT_EXTERN void UIAccessibilityPostNotification(UIAccessibilityNotifications n
  Listen for UIAccessibilityVoiceOverStatusChanged to know when VoiceOver starts or stops.
  */
 UIKIT_EXTERN BOOL UIAccessibilityIsVoiceOverRunning() NS_AVAILABLE_IOS(4_0);
-UIKIT_EXTERN NSString *const UIAccessibilityVoiceOverStatusChanged NS_AVAILABLE_IOS(4_0); 
+UIKIT_EXTERN NSString *const UIAccessibilityVoiceOverStatusChanged NS_AVAILABLE_IOS(4_0);
 
 // Returns whether system audio is mixed down from stereo to mono.
 UIKIT_EXTERN BOOL UIAccessibilityIsMonoAudioEnabled() NS_AVAILABLE_IOS(5_0);
@@ -387,6 +395,10 @@ UIKIT_EXTERN NSString *const UIAccessibilitySpeakSelectionStatusDidChangeNotific
 UIKIT_EXTERN BOOL UIAccessibilityIsSpeakScreenEnabled() NS_AVAILABLE_IOS(8_0);
 UIKIT_EXTERN NSString *const UIAccessibilitySpeakScreenStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
+// Returns whether the system preference for Shake to Undo is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsShakeToUndoEnabled() NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIAccessibilityShakeToUndoDidChangeNotification NS_AVAILABLE_IOS(9_0);
+
 /*
  Use UIAccessibilityRequestGuidedAccessSession() to request this app be locked into or released
  from Single App mode. The request to lock this app into Single App mode will only succeed if the device is Supervised,
@@ -394,3 +406,5 @@ UIKIT_EXTERN NSString *const UIAccessibilitySpeakScreenStatusDidChangeNotificati
  App mode, it is your responsibility to release the device by balancing this call.
  */
 UIKIT_EXTERN void UIAccessibilityRequestGuidedAccessSession(BOOL enable, void(^completionHandler)(BOOL didSucceed)) NS_AVAILABLE_IOS(7_0);
+
+NS_ASSUME_NONNULL_END

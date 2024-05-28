@@ -8,9 +8,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewController.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UIDocumentPickerViewController, UIDocumentMenuViewController;
 
-@protocol UIDocumentPickerDelegate <NSObject>
+ @protocol UIDocumentPickerDelegate <NSObject>
 
 - (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentAtURL:(NSURL *)url;
 
@@ -29,13 +31,15 @@ typedef NS_ENUM(NSUInteger, UIDocumentPickerMode) {
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIDocumentPickerViewController : UIViewController
 
 // Initializes the picker instance for selecting a document in a remote location. The valid modes are Import and Open.
-- (instancetype)initWithDocumentTypes:(NSArray *)allowedUTIs inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithDocumentTypes:(NSArray <NSString *>*)allowedUTIs inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
 // Initializes the picker for exporting a local file to an external location. The valid modes are Export and Move. The new location will be returned using didPickDocumentAtURL:
 - (instancetype)initWithURL:(NSURL *)url inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, weak) id<UIDocumentPickerDelegate> delegate;
+@property (nullable, nonatomic, weak) id<UIDocumentPickerDelegate> delegate;
 @property (nonatomic, assign, readonly) UIDocumentPickerMode documentPickerMode;
 
 @end
 
+NS_ASSUME_NONNULL_END

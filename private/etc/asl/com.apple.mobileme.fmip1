@@ -1,0 +1,12 @@
+# Make our .asl facility logs to not go to the main syslog
+? [A= Facility com.apple.mobileme.fmip1.asl] claim
+
+# Define permissions for our directory
+> $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/FindMyiPhoneApp uid=501 gid=501 mode=0755
+
+# Define permissions & rotate settings for our log files
+> $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/FindMyiPhoneApp/FindMyiPhoneApp.asl format=asl rotate=seq compress uid=501 gid=501 file_max=10M all_max=100M soft
+
+# Redirect all our messages to our log file
+? [= Facility com.apple.mobileme.fmip1.console] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/FindMyiPhoneApp/FindMyiPhoneApp.asl
+? [A= Facility com.apple.mobileme.fmip1.asl] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/FindMyiPhoneApp/FindMyiPhoneApp.asl

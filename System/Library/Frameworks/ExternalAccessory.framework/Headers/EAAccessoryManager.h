@@ -2,10 +2,12 @@
 //  EAAccessoryManager.h
 //  ExternalAccessory
 //
-//  Copyright (c) 2008-2012 Apple, Inc. All rights reserved.
+//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, EABluetoothAccessoryPickerErrorCode) {
     EABluetoothAccessoryPickerAlreadyConnected,
@@ -16,7 +18,7 @@ typedef NS_ENUM(NSInteger, EABluetoothAccessoryPickerErrorCode) {
 
 EA_EXTERN NSString *const EABluetoothAccessoryPickerErrorDomain;
 
-typedef void(^EABluetoothAccessoryPickerCompletion)(NSError *error);
+typedef void(^EABluetoothAccessoryPickerCompletion)(NSError * __nullable error);
 
 // EAAccessoryManager Notifications
 EA_EXTERN NSString *const EAAccessoryDidConnectNotification __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
@@ -34,11 +36,13 @@ EA_EXTERN_CLASS_AVAILABLE(3_0) @interface EAAccessoryManager : NSObject {
 
 + (EAAccessoryManager *)sharedAccessoryManager __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 
-- (void)showBluetoothAccessoryPickerWithNameFilter:(NSPredicate *)predicate completion:(EABluetoothAccessoryPickerCompletion)completion __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+- (void)showBluetoothAccessoryPickerWithNameFilter:(nullable NSPredicate *)predicate completion:(nullable EABluetoothAccessoryPickerCompletion)completion __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
 
 - (void)registerForLocalNotifications __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 - (void)unregisterForLocalNotifications __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 
-@property (nonatomic, readonly) NSArray *connectedAccessories __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+@property (nonatomic, readonly) NSArray<EAAccessory *> *connectedAccessories __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

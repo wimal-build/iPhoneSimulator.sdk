@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/NCWidgetController.h</key>
 		<data>
-		QpraSmNx/Z0jB8YpddXNhEOKKOc=
+		xcFhDqCsvH2dCSXHUD2EKqZRoX0=
 		</data>
 		<key>Headers/NCWidgetProviding.h</key>
 		<data>
-		ax22EmqSvC4gWDElO9zBhqURGvs=
+		94uIoTMfgZ+SHf4YCdXuawwvDnI=
 		</data>
 		<key>Headers/NotificationCenter.h</key>
 		<data>
@@ -18,7 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OI6qmA0phRKzqoSrt0UMDv7L0XU=
+		jMOavtGM3w9y7LysgFvalkkCZr4=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		ORuoWoS8yCIzQuYhzp5OYhFp+bA=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -29,24 +33,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		fUhmO4T98pDvlGlkT9I95xvIuiM=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/NCWidgetController.h</key>
 		<data>
-		QpraSmNx/Z0jB8YpddXNhEOKKOc=
+		xcFhDqCsvH2dCSXHUD2EKqZRoX0=
 		</data>
 		<key>Headers/NCWidgetProviding.h</key>
 		<data>
-		ax22EmqSvC4gWDElO9zBhqURGvs=
+		94uIoTMfgZ+SHf4YCdXuawwvDnI=
 		</data>
 		<key>Headers/NotificationCenter.h</key>
 		<data>
 		B9kGH4K9CAt+JOODYrJvG/lls0o=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		ORuoWoS8yCIzQuYhzp5OYhFp+bA=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -57,10 +61,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		fUhmO4T98pDvlGlkT9I95xvIuiM=
-		</data>
 	</dict>
 	<key>rules</key>
 	<dict>

@@ -13,6 +13,7 @@
 
 #import <GLKit/GLKEffectProperty.h>
 
+NS_ASSUME_NONNULL_BEGIN
 // Texture target
 typedef NS_ENUM(GLenum, GLKTextureTarget)
 {
@@ -57,3 +58,4 @@ NS_CLASS_AVAILABLE(10_8, 5_0)
 @property (nonatomic, assign) GLKTextureEnvMode    envMode;    // GLKTextureEnvModeModulate
 
 @end
+NS_ASSUME_NONNULL_END

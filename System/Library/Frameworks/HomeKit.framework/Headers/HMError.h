@@ -1,10 +1,12 @@
 // HMError.h
 // HomeKit
 //
-// Copyright (c) 2014 Apple Inc. All rights reserved.
+// Copyright (c) 2014-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 HM_EXTERN NSString * const HMErrorDomain NS_AVAILABLE_IOS(8_0);
 
@@ -95,4 +97,9 @@ typedef NS_ENUM(NSInteger, HMErrorCode) {
     HMErrorCodeMissingEntitlement                      = 80,
     HMErrorCodeCannotUnblockNonBridgeAccessory         = 81,
     HMErrorCodeDeviceLocked                            = 82,
-};
+    HMErrorCodeCannotRemoveBuiltinActionSet            NS_ENUM_AVAILABLE_IOS(9_0) = 83,
+    HMErrorCodeLocationForHomeDisabled                 NS_ENUM_AVAILABLE_IOS(9_0) = 84,
+    HMErrorCodeNotAuthorizedForLocationServices        NS_ENUM_AVAILABLE_IOS(9_0) = 85,
+} NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
+
+NS_ASSUME_NONNULL_END

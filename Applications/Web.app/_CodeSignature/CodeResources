@@ -4,37 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Default-375w-667h@2x~iphone.png</key>
+		<key>DefaultLaunchScreen.nib</key>
 		<data>
-		oWxWqOtemRqx3x163m+HDQ/Av1o=
-		</data>
-		<key>Default-568h@2x.png</key>
-		<data>
-		VJD/jG8UWkd9uGWIW/k5XA/S/V4=
-		</data>
-		<key>Default-Portrait-414w-736h@3x~iphone.png</key>
-		<data>
-		cpnv+tPOEe46ezJCy/TKx8+arNM=
-		</data>
-		<key>Default@2x~ipad.png</key>
-		<data>
-		XUy9hwRJKEWT/54mDDd6D1omxQA=
-		</data>
-		<key>Default@2x~iphone.png</key>
-		<data>
-		9om7UJKclaSh/1d2fS7ZRRXC6sg=
-		</data>
-		<key>Default~ipad.png</key>
-		<data>
-		v+sfmJdIMG4OO5zEEYM2QaEc07o=
-		</data>
-		<key>Default~iphone.png</key>
-		<data>
-		wmiHCJ7p0UjEQl5MngljpYAKtIc=
+		zWTn4nCPKc9gMo/esxwLEtsxJrk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Wax5dl5beT35dXrG8LG7KDGpKIM=
+		LkVfsH/FMIJxAOinRcjd+17fd9U=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -53,7 +29,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4rz2oGJkwbOwGlYDFBwptbxRE8E=
+			PaIt6dUUtmemnajQpyr7GYvIW+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -103,6 +79,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CLucdu8Dt65mOlPbKeUKpUSWd4o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -116,7 +101,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j4XJKv/74r11d0cb4/hc1C+r/xA=
+			smDL5V7Ck5yu0bACGMsKxzg5YpM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z+rKHYMO/WByqoVYo8Pct+tKRS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -179,7 +173,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RMFhB8u9tXq6jR3qh51SNnH5E1U=
+			sSJ4/zMKctLklAdRgKZSWXGfhys=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -314,7 +308,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CggfYYYq3vGtuhkGrKe5LRN7BHw=
+			E8u4zTsRXOLA2NshGjbQ6fNJQ/A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -339,7 +333,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		J+ZE9FQT5bI9chDLWlDCGPO+DTY=
+		Bz0r0G2mhEVCA4Bhqg4yHRamzcw=
 		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -354,7 +348,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aoz0vc92jKOoNx29qoPMSyVrmmE=
+			J9eHgbnRCKHeSj45aQIQ/lcjmHo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -380,33 +374,9 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Default-375w-667h@2x~iphone.png</key>
+		<key>DefaultLaunchScreen.nib</key>
 		<data>
-		oWxWqOtemRqx3x163m+HDQ/Av1o=
-		</data>
-		<key>Default-568h@2x.png</key>
-		<data>
-		VJD/jG8UWkd9uGWIW/k5XA/S/V4=
-		</data>
-		<key>Default-Portrait-414w-736h@3x~iphone.png</key>
-		<data>
-		cpnv+tPOEe46ezJCy/TKx8+arNM=
-		</data>
-		<key>Default@2x~ipad.png</key>
-		<data>
-		XUy9hwRJKEWT/54mDDd6D1omxQA=
-		</data>
-		<key>Default@2x~iphone.png</key>
-		<data>
-		9om7UJKclaSh/1d2fS7ZRRXC6sg=
-		</data>
-		<key>Default~ipad.png</key>
-		<data>
-		v+sfmJdIMG4OO5zEEYM2QaEc07o=
-		</data>
-		<key>Default~iphone.png</key>
-		<data>
-		wmiHCJ7p0UjEQl5MngljpYAKtIc=
+		zWTn4nCPKc9gMo/esxwLEtsxJrk=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -421,7 +391,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4rz2oGJkwbOwGlYDFBwptbxRE8E=
+			PaIt6dUUtmemnajQpyr7GYvIW+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -471,6 +441,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CLucdu8Dt65mOlPbKeUKpUSWd4o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -484,7 +463,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j4XJKv/74r11d0cb4/hc1C+r/xA=
+			smDL5V7Ck5yu0bACGMsKxzg5YpM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z+rKHYMO/WByqoVYo8Pct+tKRS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -547,7 +535,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RMFhB8u9tXq6jR3qh51SNnH5E1U=
+			sSJ4/zMKctLklAdRgKZSWXGfhys=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -682,7 +670,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CggfYYYq3vGtuhkGrKe5LRN7BHw=
+			E8u4zTsRXOLA2NshGjbQ6fNJQ/A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -707,7 +695,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		J+ZE9FQT5bI9chDLWlDCGPO+DTY=
+		Bz0r0G2mhEVCA4Bhqg4yHRamzcw=
 		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -722,7 +710,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aoz0vc92jKOoNx29qoPMSyVrmmE=
+			J9eHgbnRCKHeSj45aQIQ/lcjmHo=
 			</data>
 			<key>optional</key>
 			<true/>

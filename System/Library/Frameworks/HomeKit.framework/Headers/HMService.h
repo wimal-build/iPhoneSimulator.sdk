@@ -1,10 +1,13 @@
 // HMService.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
+#import <HomeKit/HMServiceTypes.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMAccessory;
 @class HMCharacteristic;
@@ -16,7 +19,7 @@
  *             A service is composed of one or more characteristics that can be 
  *             modified.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMService : NSObject
 
 /*!
@@ -28,6 +31,11 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @brief The type of the service, e.g. HMServiceTypeLightbulb.
  */
 @property(readonly, copy, nonatomic) NSString *serviceType;
+
+/*!
+ * @brief The localized description of the service.
+ */
+@property(readonly, copy, nonatomic) NSString *localizedDescription NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief Name for the service.
@@ -43,13 +51,26 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @discussion This could be any of the HomeKit Accessory Profile defined services (except HMServiceTypeOutlet
  *             or HMServiceTypeSwitch) that supports HMCharacteristicTypePowerState characteristic.
  */
-@property(readonly, copy, nonatomic) NSString *associatedServiceType;
+@property(readonly, copy, nonatomic, nullable) NSString *associatedServiceType;
 
 /*!
  * @brief Array of HMCharacteristic objects that represents all the characteristics
  *        provided by the service.
  */
-@property(readonly, copy, nonatomic) NSArray *characteristics;
+@property(readonly, copy, nonatomic) NSArray<HMCharacteristic *> *characteristics;
+
+/*!
+ * @brief A unique identifier for the service.
+ */
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+
+/*!
+ * @brief Indicates if this service supports user interaction or not.
+ *
+ * @discussion Applications should use this property to filter out services that the users
+ *             should not directly interact with, e.g. HMServiceTypeAccessoryInformation.
+ */
+@property(readonly, getter=isUserInteractive, nonatomic) BOOL userInteractive NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief This method is used to change the name of the service.
@@ -62,7 +83,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError *error))completion;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief This method is used to set up the service type of the device connected to a switch or an outlet.
@@ -77,58 +98,8 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateAssociatedServiceType:(NSString *)serviceType completionHandler:(void (^)(NSError *error))completion;
+- (void)updateAssociatedServiceType:(nullable NSString *)serviceType completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
-/*!
- * @group Accessory Service Types
- *
- * @brief These constants define the service types supported by the HomeKit Accessory Profile for HomeKit based accessories.
- */
-
-/*!
- * @brief Service type for lightbulb.
- */
-HM_EXTERN NSString * const HMServiceTypeLightbulb NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for switch.
- */
-HM_EXTERN NSString * const HMServiceTypeSwitch NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for thermostat.
- */
-HM_EXTERN NSString * const HMServiceTypeThermostat NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for garage door opener.
- */
-HM_EXTERN NSString * const HMServiceTypeGarageDoorOpener NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for accessory information.
- */
-HM_EXTERN NSString * const HMServiceTypeAccessoryInformation NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for fan.
- */
-HM_EXTERN NSString * const HMServiceTypeFan NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for outlet.
- */
-HM_EXTERN NSString * const HMServiceTypeOutlet NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for lock mechanism.
- */
-HM_EXTERN NSString * const HMServiceTypeLockMechanism NS_AVAILABLE_IOS(8_0);
-
-/*!
- * @brief Service type for lock management.
- */
-HM_EXTERN NSString * const HMServiceTypeLockManagement NS_AVAILABLE_IOS(8_0);
-
+NS_ASSUME_NONNULL_END

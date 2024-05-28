@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Area</key>
+	<dict>
+		<key>acre</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>אקר</string>
+				<string>אקרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.00024710538100000001</real>
+		</dict>
+		<key>are</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ארים</string>
+				<string>אר</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>0.01</real>
+		</dict>
+		<key>decare</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>דקר</string>
+				<string>דקרים</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
+		<key>hectare</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>הקטר</string>
+				<string>הקטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.0001</real>
+		</dict>
+		<key>square centimeter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ס״מ רבוע</string>
+				<string>ס״מ מרובע</string>
+				<string>סנטימטר רבוע</string>
+				<string>סנטימטרים רבועים</string>
+				<string>סנטימטר מרובע</string>
+				<string>סנטימטרים מרובעים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>10000</real>
+		</dict>
+		<key>square foot</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>רגל רבוע</string>
+				<string>רגל מרובע</string>
+				<string>רגלים רבועים</string>
+				<string>רגלים מרובעים</string>
+				<string>ר׳ רבוע</string>
+				<string>רגל מרובעים</string>
+				<string>רגלים רבועים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>10.7639104</real>
+		</dict>
+		<key>square inch</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>אינ׳ בריבוע</string>
+				<string>אינץ׳ רבוע</string>
+				<string>אינצ׳ים רבועים</string>
+				<string>אינץ׳ בריבוע</string>
+				<string>אינצ׳ים בריבוע</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1550.0030999999999</real>
+		</dict>
+		<key>square kilometer</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ק״מ רבוע</string>
+				<string>ק״מ בריבוע</string>
+				<string>קילומטר רבוע</string>
+				<string>קילומטרים רבועים</string>
+				<string>קילומטר בריבוע</string>
+				<string>קילומטרים בריבוע</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.9999999999999995e-07</real>
+		</dict>
+		<key>square meter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מ׳ רבוע</string>
+				<string>מ׳ רב׳</string>
+				<string>מטר רבוע</string>
+				<string>מטרים רבועים</string>
+				<string>מטר בריבוע</string>
+				<string>מטרים בריבוע</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>square mile</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מייל בריבוע</string>
+				<string>sqmi</string>
+				<string>מייל רבוע</string>
+				<string>מיילים רבועים</string>
+				<string>מייל בריבוע</string>
+				<string>מיילים בריבוע</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>3.8610215899999999e-07</real>
+		</dict>
+		<key>square millimeter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מ״מ רבוע</string>
+				<string>מילימטר רבוע</string>
+				<string>מילימטרים רבועים</string>
+				<string>מילימטרים בריבוע</string>
+				<string>מ״מ רבועים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000000</real>
+		</dict>
+		<key>square yard</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>יארד מרובע</string>
+				<string>yd2</string>
+				<string>yard2</string>
+				<string>yards2</string>
+				<string>sq yd</string>
+				<string>יארד בריבוע</string>
+				<string>יארדים בריבוע</string>
+				<string>יארד רבוע</string>
+				<string>יארדים רבועים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.1959900480000001</real>
+		</dict>
+	</dict>
+	<key>Currency</key>
+	<dict>
+		<key>AED</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>aed</string>
+				<string>דירהם</string>
+				<string>דירהם</string>
+			</array>
+		</dict>
+		<key>AUD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>aud</string>
+				<string>a$</string>
+			</array>
+		</dict>
+		<key>BHD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>bhd</string>
+				<string>bd</string>
+				<string>דינאר בחרייני</string>
+				<string>דינארים בחרייניים</string>
+			</array>
+		</dict>
+		<key>BND</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>bnd</string>
+				<string>ברוניי</string>
+				<string>ברוניי</string>
+				<string>דולר ברוניי</string>
+				<string>דולר ברוניי</string>
+			</array>
+		</dict>
+		<key>BRL</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>brl</string>
+				<string>ריאל</string>
+				<string>ריאלים</string>
+			</array>
+		</dict>
+		<key>CAD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>cad</string>
+				<string>c$</string>
+				<string>דולר קנדי</string>
+				<string>דולרים קנדיים</string>
+			</array>
+		</dict>
+		<key>CHF</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>chf</string>
+				<string>פרנק שוויצרי</string>
+				<string>פרנקים שוויצריים</string>
+				<string>fr</string>
+				<string>sfr</string>
+				<string>fr.</string>
+				<string>sfr.</string>
+			</array>
+		</dict>
+		<key>CLP</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>clp</string>
+				<string>פזו צ׳יליאני</string>
+				<string>פזוס צ׳יליאניים</string>
+			</array>
+		</dict>
+		<key>CNY</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>cny</string>
+				<string>יואן</string>
+				<string>יואנים</string>
+				<string>renminbi</string>
+				<string>renminbis</string>
+				<string>rmb</string>
+				<string>יואן סיני</string>
+				<string>יואנים סיניים</string>
+			</array>
+		</dict>
+		<key>CZK</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>czk</string>
+				<string>kč</string>
+				<string>קרונה צ׳כית</string>
+				<string>קרונות צ׳כיות</string>
+				<string>קורונה צ׳כית</string>
+				<string>קורונות צ׳כיות</string>
+			</array>
+		</dict>
+		<key>DKK</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>dkk</string>
+				<string>קרון</string>
+				<string>קרון דני</string>
+				<string>קרונות</string>
+				<string>קרונר</string>
+				<string>kr.</string>
+				<string>קרונה דנית</string>
+				<string>קרונות דניות</string>
+			</array>
+		</dict>
+		<key>EUR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>eur</string>
+				<string>יורו</string>
+				<string>€</string>
+				<string>יורו</string>
+			</array>
+		</dict>
+		<key>GBP</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>gbp</string>
+				<string>לירה שטרלינג</string>
+				<string>לירות שטרלינג</string>
+				<string>לירות שטרלינג</string>
+				<string>פאונד בריטי</string>
+				<string>£</string>
+				<string>פאונד</string>
+				<string>פאונדים</string>
+			</array>
+		</dict>
+		<key>HKD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>hkd</string>
+				<string>hk$</string>
+				<string>דולר הונג-קונגי</string>
+				<string>דולרים הונג-קונגיים</string>
+			</array>
+		</dict>
+		<key>HUF</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>huf</string>
+				<string>פורינט</string>
+				<string>פורינטים</string>
+			</array>
+		</dict>
+		<key>IDR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>idr</string>
+				<string>רופיה</string>
+				<string>רופיות</string>
+				<string>rp</string>
+			</array>
+		</dict>
+		<key>ILS</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ils</string>
+				<string>שקל</string>
+				<string>שקלים</string>
+				<string>שקל חדש</string>
+				<string>שקלים חדשים</string>
+				<string>₪</string>
+			</array>
+		</dict>
+		<key>INR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>inr</string>
+				<string>רופי</string>
+				<string>רופיות</string>
+				<string>רופי הודי</string>
+				<string>רופיות הודיות</string>
+				<string>₹</string>
+			</array>
+		</dict>
+		<key>ISK</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>isk</string>
+				<string>קרונה</string>
+				<string>קרונור</string>
+				<string>krónur</string>
+			</array>
+		</dict>
+		<key>JPY</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>jpy</string>
+				<string>ין</string>
+				<string>ינים</string>
+				<string>ין יפני</string>
+				<string>¥</string>
+			</array>
+		</dict>
+		<key>KRW</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>krw</string>
+				<string>וון</string>
+				<string>וון</string>
+				<string>₩</string>
+			</array>
+		</dict>
+		<key>KWD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>kwd</string>
+				<string>דינאר כווייתי</string>
+				<string>דינארים כווייתיים</string>
+			</array>
+		</dict>
+		<key>KZT</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>kzt</string>
+				<string>טנגה</string>
+				<string>טנגה</string>
+			</array>
+		</dict>
+		<key>LKR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>lkr</string>
+				<string>රු</string>
+				<string>slrs</string>
+				<string>רופיה סרי-לנקית</string>
+				<string>רופיות סרי-לנקיות</string>
+			</array>
+		</dict>
+		<key>MUR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>mur</string>
+				<string>רופיה מאוריטנית</string>
+				<string>רופיות מאוריטניות</string>
+			</array>
+		</dict>
+		<key>MXN</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>mxn</string>
+				<string>פזו</string>
+				<string>פזוס</string>
+				<string>פזו מקסיקני</string>
+				<string>פזוס מקסיקניים</string>
+				<string></string>
+			</array>
+		</dict>
+		<key>MYR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>myr</string>
+				<string>רינגיט</string>
+				<string>רינגיט</string>
+			</array>
+		</dict>
+		<key>NOK</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>nok</string>
+				<string>קרונה נורווגית</string>
+				<string>קרונות נורווגיות</string>
+			</array>
+		</dict>
+		<key>NPR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>npr</string>
+				<string>₨</string>
+				<string>רופיה נפאלית</string>
+				<string>רופיות נפאליות</string>
+			</array>
+		</dict>
+		<key>NZD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>nzd</string>
+				<string>nz$</string>
+				<string>דולר ניו-זילנדי</string>
+				<string>דולרים ניו-זילנדיים</string>
+			</array>
+		</dict>
+		<key>PKR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>pkr</string>
+				<string>רופיה פקיסטנית</string>
+				<string>רופיות פקיסטניות</string>
+			</array>
+		</dict>
+		<key>QAR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>qar</string>
+				<string>ריאל קטארי</string>
+				<string>ריאלים קטאריים</string>
+			</array>
+		</dict>
+		<key>RUB</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>rub</string>
+				<string>רובל</string>
+				<string>רובלים</string>
+				<string>ruble</string>
+				<string>rubles</string>
+			</array>
+		</dict>
+		<key>SAR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>sar</string>
+				<string>ריאל</string>
+				<string>ריאלים</string>
+				<string>sr</string>
+				<string>ריאל סעודי</string>
+				<string>ריאלים סעודיים</string>
+			</array>
+		</dict>
+		<key>SEK</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>sek</string>
+				<string>קרונה</string>
+				<string>קרונות</string>
+				<string>kr</string>
+				<string>קרונה שוודית</string>
+			</array>
+		</dict>
+		<key>SGD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>sgd</string>
+				<string>דולר סינגפורי</string>
+				<string>דולרים סינגפוריים</string>
+				<string>s$</string>
+			</array>
+		</dict>
+		<key>THB</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>thb</string>
+				<string>฿</string>
+				<string>באט</string>
+				<string>באטים</string>
+			</array>
+		</dict>
+		<key>TWD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ntd</string>
+				<string>twd</string>
+				<string>nt$</string>
+				<string>tw$</string>
+				<string>דולר טיוואני</string>
+				<string>דולרים טיוואניים</string>
+			</array>
+		</dict>
+		<key>USD</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>usd</string>
+				<string>דולר אמריקני</string>
+				<string>דולרים אמריקניים</string>
+				<string>דולר</string>
+				<string>דולרים</string>
+				<string>$</string>
+				<string>us$</string>
+				<string>$us</string>
+			</array>
+		</dict>
+		<key>ZAR</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>zar</string>
+				<string>ראנד</string>
+				<string>ראנדים</string>
+				<string>r</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Data</key>
+	<dict>
+		<key>bit</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>סיבית</string>
+				<string>סיביות</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>8</integer>
+		</dict>
+		<key>byte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>בייט</string>
+				<string>בייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>1</integer>
+		</dict>
+		<key>gibibyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>gib</string>
+				<string>ג׳יביבייט</string>
+				<string>ג׳יביבייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.313225746e-10</real>
+		</dict>
+		<key>gigabyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>gb</string>
+				<string>ג׳יגהבייט</string>
+				<string>ג׳יגהבייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.0000000000000001e-09</real>
+		</dict>
+		<key>kibibyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>קיביבייט</string>
+				<string>קיביבייטים</string>
+				<string>kib</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.0009765625</real>
+		</dict>
+		<key>kilobyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>קילובייט</string>
+				<string>ק״ב</string>
+				<string>קילובייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
+		<key>mebibyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>mib</string>
+				<string>מביבייט</string>
+				<string>מביבייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.5367431639999996e-07</real>
+		</dict>
+		<key>megabyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מגהבייט</string>
+				<string>מגהבייטים</string>
+				<string>mb</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.9999999999999995e-07</real>
+		</dict>
+		<key>pebibyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>pib</string>
+				<string>פביבייט</string>
+				<string>פביבייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>8.881784197e-16</real>
+		</dict>
+		<key>petabyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>פטהבייט</string>
+				<string>pb</string>
+				<string>פטהבייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.0000000000000001e-15</real>
+		</dict>
+		<key>tebibyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>tib</string>
+				<string>טביבייט</string>
+				<string>טביבייטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.0949470180000003e-13</real>
+		</dict>
+		<key>terabyte</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>טרהבייט</string>
+				<string>טרהבייטים</string>
+				<string>tb</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.9999999999999998e-13</real>
+		</dict>
+	</dict>
+	<key>Energy</key>
+	<dict>
+		<key>british thermal unit</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>btu</string>
+				<string>יחידות btu</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.00094781711999999995</real>
+		</dict>
+		<key>calorie</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>קל׳</string>
+				<string>קלוריה</string>
+				<string>קלוריות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.238845897</real>
+		</dict>
+		<key>foot pound</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>פאונד לרגל</string>
+				<string>פאונדים לרגל</string>
+				<string>ft lb</string>
+				<string>ft lbs</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.73756214899999994</real>
+		</dict>
+		<key>joule</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>j</string>
+				<string>ג׳ול</string>
+				<string>ג׳ול</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>kilocalorie</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>קילו-קלוריה</string>
+				<string>קילו-קלוריות</string>
+				<string>kcal</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.000238845897</real>
+		</dict>
+		<key>kilowatt hour</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>kwh</string>
+				<string>קילוואט לשעה</string>
+				<string>קילוואט בשעה</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>2.7777777799999998e-07</real>
+		</dict>
+		<key>newton meter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ניוטון מטר</string>
+				<string>ניוטון מטר</string>
+				<string>nm</string>
+				<string>n.m</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+	</dict>
+	<key>Fuel</key>
+	<dict>
+		<key>gallon per 100 miles</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>גלון למאה מייל</string>
+				<string>gal/100mi</string>
+			</array>
+		</dict>
+		<key>kilometer per liter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>km/l</string>
+				<string>קילומטר לליטר</string>
+				<string>ק״מ לליטר</string>
+			</array>
+		</dict>
+		<key>liter per 100 kilometers</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>מייל לגלון</string>
+			<key>CommonNames</key>
+			<array>
+				<string>l/100</string>
+				<string>l/100km</string>
+			</array>
+		</dict>
+		<key>mile per gallon</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>ליטר למאה קילומטר</string>
+			<key>CommonNames</key>
+			<array>
+				<string>מייל לגלון</string>
+				<string>מיילים לגלון</string>
+				<string>mpg</string>
+				<string>mpgs</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Length</key>
+	<dict>
+		<key>centimeter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ס״מ</string>
+				<string>סנטימטר</string>
+				<string>סנטימטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>100</real>
+		</dict>
+		<key>foot</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ft</string>
+				<string>רגל</string>
+				<string>רגליים</string>
+				<string>'</string>
+				<string>’</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>3.2808398950000002</real>
+		</dict>
+		<key>inch</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>אינץ׳</string>
+				<string>אינצ׳ים</string>
+				<string>in</string>
+				<string>"</string>
+				<string>”</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>39.3700787402</real>
+		</dict>
+		<key>kilometer</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ק״מ</string>
+				<string>קילומטר</string>
+				<string>קילומטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
+		<key>light year</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ly</string>
+				<string>שנת אור</string>
+				<string>שנות אור</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.05702341e-16</real>
+		</dict>
+		<key>meter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מ׳</string>
+				<string>מטר</string>
+				<string>מטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>mile</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מייל</string>
+				<string>מיילים</string>
+				<string>mi</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.000621371192</real>
+		</dict>
+		<key>millimeter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מ״מ</string>
+				<string>מילימטר</string>
+				<string>מילימטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000</real>
+		</dict>
+		<key>nautical mile</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מייל ימי</string>
+				<string>מיילים ימיים</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>0.00053995680300000001</real>
+		</dict>
+		<key>parsec</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>pc</string>
+				<string>פרסק</string>
+				<string>פרסקים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>3.2407792899999998e-17</real>
+		</dict>
+		<key>yard</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>יארד</string>
+				<string>יארדים</string>
+				<string>yd</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.093613298</real>
+		</dict>
+	</dict>
+	<key>Power</key>
+	<dict>
+		<key>BTU per minute</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>btu/דק׳</string>
+				<string>btus/ד׳</string>
+				<string>btu לדקה</string>
+				<string>btu בדקה</string>
+				<string>btu/דקה</string>
+				<string>btu/דקה</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>56.8690286</real>
+		</dict>
+		<key>HP</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>כח סוס</string>
+				<string>כוח סוס</string>
+				<string>כ״ס</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.3410220895989999</real>
+		</dict>
+		<key>kilowatt</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>kw</string>
+				<string>קילוואט</string>
+				<string>קילוואט</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>1</integer>
+		</dict>
+		<key>watt</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>w</string>
+				<string>ואט</string>
+				<string>ואט</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>1000</integer>
+		</dict>
+	</dict>
+	<key>Pressure</key>
+	<dict>
+		<key>PSI</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>psi</string>
+				<string>פאונד לאינץ׳ רבוע</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.00014503773799999999</real>
+		</dict>
+		<key>Pascal</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>pa</string>
+				<string>פסקל</string>
+				<string>פסקל</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>Torr</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>טור</string>
+				<string>מילימטר כספית</string>
+				<string>מ״מ כספית</string>
+				<string>מ״מ כספית</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.0075005999999999996</real>
+		</dict>
+		<key>atmosphere</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>atm</string>
+				<string>אטמ׳</string>
+				<string>אטמוספירה</string>
+				<string>אטמוספירות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>9.8692326699999996e-06</real>
+		</dict>
+		<key>bar</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>בר</string>
+				<string>בר</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.0000000000000001e-05</real>
+		</dict>
+		<key>inch of mercury</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>hg</string>
+				<string>inhg</string>
+				<string>אינץ׳ כספית</string>
+				<string>אינץ׳ כספית</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.00029533372700000002</real>
+		</dict>
+		<key>kilopascal</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>kpa</string>
+				<string>קילו פסקל</string>
+				<string>קילו פסקל</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
+	</dict>
+	<key>Speed</key>
+	<dict>
+		<key>foot per second</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>רגל/שניה</string>
+				<string>רגל לשניה</string>
+				<string>רגל בשניה</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>3.2808399000000001</real>
+		</dict>
+		<key>kilometer per hour</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>מייל לשעה</string>
+			<key>CommonNames</key>
+			<array>
+				<string>קמ״ש</string>
+				<string>קילומטר לשעה</string>
+				<string>קילומטרים לשעה</string>
+				<string>קילומטר בשעה</string>
+				<string>km/h</string>
+				<string>קילומטרים בשעה</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>3.6000000000000001</real>
+		</dict>
+		<key>knot</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>קשר</string>
+				<string>קשר</string>
+				<string>knt</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.94384449</real>
+		</dict>
+		<key>meter per second</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מטר לשניה</string>
+				<string>מ׳/שנ׳</string>
+				<string>מטרים לשניה</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>mile per hour</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>קילומטר לשעה</string>
+			<key>CommonNames</key>
+			<array>
+				<string>מייל לשעה</string>
+				<string>mph</string>
+				<string>מייל בשעה</string>
+				<string>מיילים בשעה</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>2.23693629</real>
+		</dict>
+	</dict>
+	<key>Temperature</key>
+	<dict>
+		<key>celsius</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מעלות צלסיוס</string>
+				<string>מעלות צלזיוס</string>
+				<string>צלסיוס</string>
+				<string>°c</string>
+				<string>℃</string>
+				<string>c</string>
+			</array>
+		</dict>
+		<key>fahrenheit</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מעלות פרנהייט</string>
+				<string>מעלה פרנהייט</string>
+				<string>פרנהייט</string>
+				<string>°f</string>
+				<string>℉</string>
+				<string>מעלה</string>
+				<string>מעלות</string>
+			</array>
+		</dict>
+		<key>kelvin</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מעלות קלווין</string>
+				<string>קלווין</string>
+				<string>מעלת קלווין</string>
+				<string>k</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Time</key>
+	<dict>
+		<key>day</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>יום</string>
+				<string>ימים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.1574074074074101e-05</real>
+		</dict>
+		<key>hour</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ש׳</string>
+				<string>שע׳</string>
+				<string>שעה</string>
+				<string>שעות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.00027777777777777799</real>
+		</dict>
+		<key>minute</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>דקה</string>
+				<string>דקות</string>
+				<string>דק׳</string>
+				<string>ד׳</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.01666666666666667</real>
+		</dict>
+		<key>second</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ש׳</string>
+				<string>שניה</string>
+				<string>שניות</string>
+				<string>שנ׳</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>1</integer>
+		</dict>
+		<key>week</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>שבוע</string>
+				<string>שבועות</string>
+				<string>שב׳</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.6534391534391539e-06</real>
+		</dict>
+		<key>year</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>שנה</string>
+				<string>שנים</string>
+				<string>ש׳</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>3.1688087814028901e-08</real>
+		</dict>
+	</dict>
+	<key>Volume</key>
+	<dict>
+		<key>centiliter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ס״ל</string>
+				<string>סנטיליטר</string>
+				<string>סנטיליטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<integer>100</integer>
+		</dict>
+		<key>cubic foot</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>רגל מעוקב</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.035314666699999997</real>
+		</dict>
+		<key>cubic meter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מטר מעוקב</string>
+				<string>מטרים מעוקבים</string>
+				<string>מ׳ מעוקב</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
+		<key>cup</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>פיינט</string>
+			<key>CommonNames</key>
+			<array>
+				<string>כוס</string>
+				<string>כוסות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>4.2267528399999996</real>
+		</dict>
+		<key>fluid dram</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>דראם נוזלי</string>
+				<string>דראמים נוזליים</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>270.51226910000003</real>
+		</dict>
+		<key>fluid ounce</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>אונקיה נוזלית</string>
+				<string>אונקיות נוזליות</string>
+				<string>fl oz</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>33.814022700000002</real>
+		</dict>
+		<key>gallon</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>גלונים</string>
+				<string>גלון</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.26417205199999999</real>
+		</dict>
+		<key>liter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ל׳</string>
+				<string>ליטר</string>
+				<string>ליטרים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>milliliter</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מ״ל</string>
+				<string>מיליליטר</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000</real>
+		</dict>
+		<key>pint</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>פיינט</string>
+				<string>pt</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>2.1133764199999998</real>
+		</dict>
+		<key>quart</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>qt</string>
+				<string>קווארט</string>
+				<string>קווארטים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1.056688149</real>
+		</dict>
+		<key>tablespoon</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>כוס</string>
+			<key>CommonNames</key>
+			<array>
+				<string>כף</string>
+				<string>כפיות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>67.628050000000002</real>
+		</dict>
+		<key>teaspoon</key>
+		<dict>
+			<key>BestEquivalent</key>
+			<string>כף</string>
+			<key>CommonNames</key>
+			<array>
+				<string>כפית</string>
+				<string>כפיות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>202.88415000000001</real>
+		</dict>
+	</dict>
+	<key>Weight</key>
+	<dict>
+		<key>dram</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>דראם</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>564.38339099999996</real>
+		</dict>
+		<key>gram</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>גרם</string>
+				<string>ג׳</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000</real>
+		</dict>
+		<key>kilogram</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>ק״ג</string>
+				<string>קילוגרם</string>
+				<string>קילוגרמים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1</real>
+		</dict>
+		<key>long ton</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>lt</string>
+				<string>טון ארוך</string>
+				<string>טון אימפריאלי</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.0009842065279999999</real>
+		</dict>
+		<key>metric tonne</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>טון מטרי</string>
+				<string>טון</string>
+				<string>טונות</string>
+				<string>t</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.001</real>
+		</dict>
+		<key>milligram</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>מיליגרם</string>
+				<string>מיליגרמים</string>
+				<string>מ״ג</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>1000000</real>
+		</dict>
+		<key>ounce</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>אונקיה</string>
+				<string>אונקיות</string>
+				<string>oz</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>35.273961900000003</real>
+		</dict>
+		<key>pound</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>פאונד</string>
+				<string>פאונדים</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>2.204622622</real>
+		</dict>
+		<key>short ton</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>טון קצר</string>
+				<string>טונות קצרות</string>
+				<string>טון</string>
+				<string>טונות</string>
+			</array>
+			<key>ValueToBase</key>
+			<real>0.00110231131</real>
+		</dict>
+		<key>slug</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>סלאג</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>0.068521765562</real>
+		</dict>
+		<key>stone</key>
+		<dict>
+			<key>CommonNames</key>
+			<array>
+				<string>סטון</string>
+			</array>
+			<key>DoNotSuggest</key>
+			<true/>
+			<key>ValueToBase</key>
+			<real>0.157</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

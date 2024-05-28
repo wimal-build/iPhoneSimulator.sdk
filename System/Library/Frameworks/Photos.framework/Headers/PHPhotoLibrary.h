@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class PHChange;
 
 typedef NS_ENUM(NSInteger, PHAuthorizationStatus) {
@@ -41,7 +43,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHPhotoLibrary : NSObject
 
 // handlers are invoked on an arbitrary serial queue
 // Nesting change requests will throw an exception
-- (void)performChanges:(dispatch_block_t)changeBlock completionHandler:(void(^)(BOOL success, NSError *error))completionHandler;
+- (void)performChanges:(dispatch_block_t)changeBlock completionHandler:(nullable void(^)(BOOL success, NSError *__nullable error))completionHandler;
 - (BOOL)performChangesAndWait:(dispatch_block_t)changeBlock error:(NSError *__autoreleasing *)error;
 
 
@@ -52,3 +54,4 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHPhotoLibrary : NSObject
 
 @end
 
+NS_ASSUME_NONNULL_END

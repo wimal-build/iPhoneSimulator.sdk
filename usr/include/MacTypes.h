@@ -87,8 +87,12 @@ extern "C" {
 #define NULL    __DARWIN_NULL
 #endif /* ! NULL */
 #ifndef nil
-  #if defined(__has_feature) && __has_feature(cxx_nullptr)
-    #define nil nullptr
+  #if defined(__has_feature) 
+    #if __has_feature(cxx_nullptr)
+      #define nil nullptr
+    #else
+      #define nil __DARWIN_NULL
+    #endif
   #else
     #define nil __DARWIN_NULL
   #endif

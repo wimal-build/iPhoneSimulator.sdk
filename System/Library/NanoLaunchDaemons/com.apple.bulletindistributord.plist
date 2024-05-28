@@ -8,6 +8,8 @@
 	<string>com.apple.bulletindistributord</string>
 	<key>MachServices</key>
 	<dict>
+		<key>com.apple.bulletindistributor.testservice</key>
+		<true/>
 		<key>com.apple.bulletindistributor.pairedsync</key>
 		<true/>
 		<key>com.apple.bulletindistributord.server</key>
@@ -27,6 +29,8 @@
 	<true/>
 	<key>POSIXSpawnType</key>
 	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<false/>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 </dict>

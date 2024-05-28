@@ -2,7 +2,7 @@
 #
 # Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
 #
-#RLSTAG: RLS_FE.GRG_6.0.3 & RLS_FE-tuning.GRG_6.0.3_1
+#RLSTAG: RLS_FE.GRG_6.0.3 & RLS_FE-tuning.GRG_6.0.3
 
 [header]
 language = GRG
@@ -41,10 +41,6 @@ language = GRG
 #/(\D)3 (η ώρα)/ --> "$1 τρεις $2"
 #/(\D)4 (η ώρα)/ --> "$1 τέσσερις $2"
 
-
 #FB20058
 /(\d)\sGB(?!\w)/ --> "$1 \e\\toi=lhp:GB\\Ji.Ga.'ba.it\e\\toi=orth\\"
 /(\d)\sΓΒ(\s)/  --> "$1 \e\\toi=lhp:ΓΒ\\Ji.Ga.'ba.it\e\\toi=orth\\$2"
-
-#FB60528
-/(?<!\w)iPhone\s?5c(?!\w)/i --> "iPhone πέντε C"

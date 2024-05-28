@@ -1,6 +1,0 @@
-framework module QuickLookThumbnailing {
-  umbrella header "QuickLookThumbnailing.h"
-
-  export *
-  module * { export * }
-}

@@ -12,22 +12,14 @@
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UIKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UIPrintPageRenderer;
 @class UIView, UIFont, UIColor;
 
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintFormatter : NSObject <NSCopying> {
-  @private
-    UIPrintPageRenderer *_printPageRenderer;
-    CGFloat              _maximumContentHeight;
-    CGFloat              _maximumContentWidth;
-    UIEdgeInsets         _contentInsets;
-    UIEdgeInsets         _perPageContentInsets;
-    NSInteger            _startPage;
-    NSInteger            _pageCount;
-    BOOL                 _needsRecalc;
-}
+NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintFormatter : NSObject <NSCopying>
 
-@property(nonatomic,readonly,assign) UIPrintPageRenderer *printPageRenderer; // default is nil. set when formatter added to a print page renderer
+@property(nullable,nonatomic,readonly,weak) UIPrintPageRenderer *printPageRenderer; // default is nil. set when formatter added to a print page renderer
 - (void)removeFromPrintPageRenderer;
 
 @property(nonatomic) CGFloat      maximumContentHeight;      // default is 0.0. limits content to width
@@ -39,7 +31,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintFormatter : NSObject <NSCopying> {
 @property(nonatomic,readonly) NSInteger pageCount;           // calculated
 
 - (CGRect)rectForPageAtIndex:(NSInteger)pageIndex;                     // returns empty rect if index out of range
-- (void)drawInRect:(CGRect)rect forPageAtIndex:(NSInteger)pageIndex;   // override point to add custom drawing 
+- (void)drawInRect:(CGRect)rect forPageAtIndex:(NSInteger)pageIndex;   // override point to add custom drawing
 
 @end
 
@@ -51,10 +43,10 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UISimpleTextPrintFormatter : UIPrintForma
 - (instancetype)initWithText:(NSString *)text;
 - (instancetype)initWithAttributedText:(NSAttributedString *)attributedText NS_AVAILABLE_IOS(7_0);
 
-@property(nonatomic,copy)     NSString       *text;                   // cannot change once drawing started
-@property(nonatomic,copy)     NSAttributedString *attributedText NS_AVAILABLE_IOS(7_0);
-@property(nonatomic,retain)   UIFont         *font;
-@property(nonatomic,retain)   UIColor        *color;
+@property(nullable,nonatomic,copy)     NSString       *text;                   // cannot change once drawing started
+@property(nullable,nonatomic,copy)     NSAttributedString *attributedText NS_AVAILABLE_IOS(7_0);
+@property(nullable,nonatomic,strong)   UIFont         *font;
+@property(nullable,nonatomic,strong)   UIColor        *color;
 @property(nonatomic)          NSTextAlignment textAlignment;
 
 @end
@@ -65,16 +57,13 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIMarkupTextPrintFormatter : UIPrintForma
 }
 
 - (instancetype)initWithMarkupText:(NSString *)markupText;
-@property(nonatomic,copy) NSString *markupText;                    // cannot change once drawing started
+@property(nullable,nonatomic,copy) NSString *markupText;                    // cannot change once drawing started
 
 @end
 
 //______________________________
 
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UIViewPrintFormatter : UIPrintFormatter {
-  @private
-    UIView *_view;
-}
+NS_CLASS_AVAILABLE_IOS(4_2) @interface UIViewPrintFormatter : UIPrintFormatter 
 
 @property(nonatomic,readonly) UIView *view;
 
@@ -88,3 +77,5 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIViewPrintFormatter : UIPrintFormatter {
 - (void)drawRect:(CGRect)rect forViewPrintFormatter:(UIViewPrintFormatter *)formatter;     // default calls -drawRect:
 
 @end
+
+NS_ASSUME_NONNULL_END

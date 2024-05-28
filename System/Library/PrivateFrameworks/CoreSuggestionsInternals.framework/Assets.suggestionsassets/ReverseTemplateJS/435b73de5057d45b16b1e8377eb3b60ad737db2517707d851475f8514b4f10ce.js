@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("lufthansa.com-travel-information",function(e){return/^Travel information for your flight/.test(e.subject)},function(e){if(1362528e3>e.epoch)return STOP;if(/^Travel information for your flight/.test(e.subject)){var n={};n.code="Booking Code:",n.dear="Dear",n.manage="Manage my booking",n.checkIn="Online Check-in";var r="en_GB",t=loadHelper("lufthansa.com-travel-skeleton.js");return t(e,r,n)}return CONTINUE},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/381/400","SG837c0e88")]);

@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("ba.com-cancellation-en",function(){return!1},function(e){return/^BA confirmation of cancellation and refund:/.test(e.subject)||/^Your booking cancellation/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/127/200/202","SGd74138b1")]);

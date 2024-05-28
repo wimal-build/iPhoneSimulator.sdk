@@ -39,6 +39,9 @@
 
 __BEGIN_DECLS
 
+CF_ASSUME_NONNULL_BEGIN
+CF_IMPLICIT_BRIDGING_ENABLED
+
 #ifdef __BLOCKS__
 
 /*!
@@ -49,8 +52,8 @@ __BEGIN_DECLS
         shared password. You use this key to get a value of type CFStringRef
         that contains a password.
 */
-extern CFTypeRef kSecSharedPassword
-    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
+extern const CFStringRef kSecSharedPassword
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0) __WATCHOS_UNAVAILABLE;
 
 /*!
  @function SecAddSharedWebCredential
@@ -63,9 +66,9 @@ extern CFTypeRef kSecSharedPassword
 
  Note: since a request involving shared web credentials may potentially require user interaction or other verification to be approved, this function is dispatched asynchronously; your code provides a completion handler that will be called once the results (if any) are available.
  */
-void SecAddSharedWebCredential(CFStringRef fqdn, CFStringRef account, CFStringRef password,
-    void (^completionHandler)(CFErrorRef error))
-    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
+void SecAddSharedWebCredential(CFStringRef fqdn, CFStringRef account, CFStringRef __nullable password,
+    void (^completionHandler)(CFErrorRef __nullable error))
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0) __WATCHOS_UNAVAILABLE;
 
 /*!
  @function SecRequestSharedWebCredential
@@ -85,21 +88,24 @@ void SecAddSharedWebCredential(CFStringRef fqdn, CFStringRef account, CFStringRe
 
  Note: since a request involving shared web credentials may potentially require user interaction or other verification to be approved, this function is dispatched asynchronously; your code provides a completion handler that will be called once the results (if any) are available.
  */
-void SecRequestSharedWebCredential(CFStringRef fqdn, CFStringRef account,
-    void (^completionHandler)(CFArrayRef credentials, CFErrorRef error))
-    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
+void SecRequestSharedWebCredential(CFStringRef __nullable fqdn, CFStringRef __nullable account,
+    void (^completionHandler)(CFArrayRef __nullable credentials, CFErrorRef __nullable error))
+    __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0) __WATCHOS_UNAVAILABLE;
 
 /*!
  @function SecCreateSharedWebCredentialPassword
  @abstract Returns a randomly generated password.
  @return CFStringRef password in the form xxx-xxx-xxx-xxx where x is taken from the sets "abcdefghkmnopqrstuvwxy", "ABCDEFGHJKLMNPQRSTUVWXYZ", "3456789" with at least one character from each set being present.
 */
-
+__nullable
 CFStringRef SecCreateSharedWebCredentialPassword(void)
-__OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0);
+__OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_8_0) __WATCHOS_UNAVAILABLE;
 
 
 #endif /* __BLOCKS__ */
+
+CF_IMPLICIT_BRIDGING_DISABLED
+CF_ASSUME_NONNULL_END
 
 __END_DECLS
 

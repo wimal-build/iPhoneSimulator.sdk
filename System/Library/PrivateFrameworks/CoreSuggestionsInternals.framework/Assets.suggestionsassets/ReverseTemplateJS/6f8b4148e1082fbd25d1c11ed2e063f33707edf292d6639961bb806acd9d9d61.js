@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("ryanair.com-receipt-es",function(e){return/^Ryanair Receipt \(Recibo De Ryanair\)/.test(e.subject)},function(e){if(/^Ryanair Receipt \(Recibo De Ryanair\)/.test(e.subject)){var r="es_ES",a={};a.reservationId="Booking Ref (C\xf3digo de Reserva):",a.price="Total Price (Precio total)=";var i=loadHelper("ryanair.com-receipt-skeleton.js");return i(e,r,a)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/185/408/420","SG4acab7e6")]);

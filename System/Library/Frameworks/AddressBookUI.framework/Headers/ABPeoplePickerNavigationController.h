@@ -12,8 +12,9 @@
 
 @protocol ABPeoplePickerNavigationControllerDelegate;
 
+NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(NA, 2_0)
+AB_DEPRECATED("Use CNContactPickerViewController from ContactsUI.framework instead")
 @interface ABPeoplePickerNavigationController : UINavigationController
 
 // The ABPeoplePickerNavigationController allows the user to select a person or property by presenting the entire Address Book.
@@ -26,38 +27,38 @@ NS_CLASS_AVAILABLE(NA, 2_0)
 
 // Optional to get the selected contact, selected property or cancellation of the people picker.
 //
-@property(nonatomic,assign) id<ABPeoplePickerNavigationControllerDelegate> peoplePickerDelegate;
+@property(nonatomic,assign,nullable) id<ABPeoplePickerNavigationControllerDelegate> peoplePickerDelegate;
 
 // An array of ABPropertyIDs listing the properties that should be visible when viewing a person.
 // If you are interested in one particular type of data (for example a phone number), displayedProperties
 // should be an array with a single NSNumber instance (representing kABPersonPhoneProperty).
 // Note that name information will always be shown if available.
 //
-@property(nonatomic,copy) NSArray *displayedProperties;
+@property(nonatomic,copy,nullable) NSArray<NSNumber*> *displayedProperties;
 
 // The Address Book to browse. Contacts will be returned from this ABAddressBook instance.
 // If not set, a new ABAddressBook will be created the first time the property is accessed.
 // Note this property is only used if the app has access to the user's contacts, otherwise it remains NULL.
 //
-@property(nonatomic,readwrite) ABAddressBookRef addressBook;
+@property(nonatomic,readwrite,nullable) ABAddressBookRef addressBook;
 
 // Optionally determines if a person can be selected or not.
 // If not set, all persons will be selectable.
 //
-@property(nonatomic,copy) NSPredicate *predicateForEnablingPerson NS_AVAILABLE_IOS(8_0);
+@property(nonatomic,copy,nullable) NSPredicate *predicateForEnablingPerson NS_AVAILABLE_IOS(8_0);
 
 // Optionally determines if a selected person should be returned to the app (predicate evaluates to TRUE),
 // or if the selected person should be displayed (predicate evaluates to FALSE).
 // If not set and -peoplePickerNavigationController:didSelectPerson: is implemented the selected person is returned to the app,
 // or if not set and -peoplePickerNavigationController:didSelectPerson:identifier: is implemented the selected person is displayed.
 //
-@property(nonatomic,copy) NSPredicate *predicateForSelectionOfPerson NS_AVAILABLE_IOS(8_0);
+@property(nonatomic,copy,nullable) NSPredicate *predicateForSelectionOfPerson NS_AVAILABLE_IOS(8_0);
 
 // Optionally determines if a selected property should be returned to the app (predicate evaluates to TRUE),
 // or if the default action for the property should be performed (predicate evaluates to FALSE).
 // If not set and -peoplePickerNavigationController:didSelectPerson:identifier: is implemented the selected property is returned to the app.
 //
-@property(nonatomic,copy) NSPredicate *predicateForSelectionOfProperty NS_AVAILABLE_IOS(8_0);
+@property(nonatomic,copy,nullable) NSPredicate *predicateForSelectionOfProperty NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -115,3 +116,5 @@ extern NSString * const ABPersonPostalAddressesProperty NS_AVAILABLE_IOS(8_0);  
 - (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier NS_DEPRECATED_IOS(2_0, 8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

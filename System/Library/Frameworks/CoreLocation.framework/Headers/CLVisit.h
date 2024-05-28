@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CLLocation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CLVisit
  *
@@ -16,7 +18,7 @@
  *    An instance of this class represents a possibly open-ended event
  *    during which the device was at the specified coordinate.
  */
-NS_CLASS_AVAILABLE(NA, 8_0)
+NS_CLASS_AVAILABLE(NA, 8_0) __WATCHOS_PROHIBITED
 @interface CLVisit : NSObject <NSSecureCoding, NSCopying>
 
 /*
@@ -55,3 +57,5 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  */
 @property (nonatomic, readonly) CLLocationAccuracy horizontalAccuracy;
 @end
+
+NS_ASSUME_NONNULL_END

@@ -10,19 +10,19 @@
 		</data>
 		<key>Headers/CMAccelerometer.h</key>
 		<data>
-		YwTCo1Wi4HG8dRC1jksn9ouFCcs=
+		6nmD3kDggz3K2utrdtRqA+/jyz8=
 		</data>
 		<key>Headers/CMAltimeter.h</key>
 		<data>
-		5968UPQYBSIsEPMokqIDXJIDRPw=
+		+wqzyjJ0mSG/mMJ/ZGGZLfJyJfU=
 		</data>
 		<key>Headers/CMAltitude.h</key>
 		<data>
-		Q3Z6EMnHVRL1cLq+zmMS9gy9VIk=
+		dRb5jHTvBB72pj6wHW3BQLwUHCQ=
 		</data>
 		<key>Headers/CMAttitude.h</key>
 		<data>
-		GD3hAWevqGSpl1vEpaoaT1f/AEc=
+		Lra8aVVdMq49eXORUiu2ll4+cRU=
 		</data>
 		<key>Headers/CMAvailability.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/CMDeviceMotion.h</key>
 		<data>
-		fbU5OEUvKB5B6FDl7Z7Yy6/WcYY=
+		5mO0G1y3Ek0YtYUR5LY/LvstWsg=
 		</data>
 		<key>Headers/CMError.h</key>
 		<data>
@@ -38,47 +38,55 @@
 		</data>
 		<key>Headers/CMErrorDomain.h</key>
 		<data>
-		LIQIAjUgBHR6j2Uf8rb7AtaCLek=
+		1jWBImBuRS3LMstqt9Ojdhwstrg=
 		</data>
 		<key>Headers/CMGyro.h</key>
 		<data>
-		vE63wHHqkjQ0gfWQXdW5S+Lvmbo=
+		Hfi0OgpVBqrqyuuuj38z3SCCR/4=
 		</data>
 		<key>Headers/CMLogItem.h</key>
 		<data>
-		scGmDHGPuF206m45iRQRtZSI2gs=
+		9ZOsjDWZp+acERsrRwIYqg46VuQ=
 		</data>
 		<key>Headers/CMMagnetometer.h</key>
 		<data>
-		cHoTKvV0lGn472pG4EK3N952xl4=
+		F/msDo1lII7BaAOPgsexRBNsyW4=
 		</data>
 		<key>Headers/CMMotionActivity.h</key>
 		<data>
-		6JBR2K+2xFKR0LsQL30bDnOYeNA=
+		JNlgRVs9y0PrMjBDzchXNqgvRcw=
 		</data>
 		<key>Headers/CMMotionActivityManager.h</key>
 		<data>
-		PGrnmeI6aLPOH+nRXVI1hBBz9QY=
+		LTO8OMFXbgEwvqISP0/5lwgBqss=
 		</data>
 		<key>Headers/CMMotionManager.h</key>
 		<data>
-		G2vJwT48hWtbvdgFRtWlVc2pWsI=
+		/x/VEM1G0Nst/r39Q+QlmdLefFw=
 		</data>
 		<key>Headers/CMPedometer.h</key>
 		<data>
-		JsMGj7GlGNKGMivYXx/5C8e/mio=
+		nRH09DTjsQfNbvU9iZ3pzIeeYo0=
+		</data>
+		<key>Headers/CMSensorRecorder.h</key>
+		<data>
+		rWi12KQdp05wKbdE6NlRCFLeBDQ=
 		</data>
 		<key>Headers/CMStepCounter.h</key>
 		<data>
-		JmwsraIrC3LXNhC7xHA1snFAuiM=
+		wYazwpvFDgdEJzySktuNsh6LuRw=
 		</data>
 		<key>Headers/CoreMotion.h</key>
 		<data>
-		VFuhn3jY1WgZToQmKkkYe26QsuQ=
+		5J95LKezGQPk90fDUzL32YHCN54=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L57HncRSmE6Zt0DjzvXZx3lhpmg=
+		pMEdeArKf1EF2TTvNtzBWJR6kDU=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		kvqduLlYTGmnBHZ8znbbR7wI5BQ=
 		</data>
 		<key>Support/EarGesture_Prototype_Msgs_1.dat</key>
 		<data>
@@ -98,7 +106,7 @@
 		</data>
 		<key>Support/FilterTier2.csv</key>
 		<data>
-		7PRJ5590p1ZDKnSFGzjeW/RAFeo=
+		NgXMR3OySK9HWDy++OYGqsEOalk=
 		</data>
 		<key>Support/N4xFilterTier1.csv</key>
 		<data>
@@ -106,19 +114,23 @@
 		</data>
 		<key>Support/N4xFilterTier2.csv</key>
 		<data>
-		vxkJ1L87MTavhLiO1iwW7R4m53c=
+		BqzAiRkKU2ByzpUQa5vZGI2fSqQ=
 		</data>
 		<key>Support/RTLModels.csv</key>
 		<data>
 		u9gTyee8zXUKUjljFLoPt3iC6ec=
 		</data>
+		<key>Support/bluetooth-carkit-whitelist.plist</key>
+		<data>
+		2pRLO4zi8OpMsviBlxAkOJFdQWU=
+		</data>
+		<key>bluetooth-carkit-whitelist.plist</key>
+		<data>
+		2pRLO4zi8OpMsviBlxAkOJFdQWU=
+		</data>
 		<key>module.map</key>
 		<data>
-		7Xkz3NCjH2n8b2coYFWbO0Eecf8=
-		</data>
-		<key>version.plist</key>
-		<data>
-		Q4EnnXyM13UQNM35R/pFoCY20jo=
+		iP91D0+xu7mbNPLNnn4tWWzA/IQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -129,19 +141,19 @@
 		</data>
 		<key>Headers/CMAccelerometer.h</key>
 		<data>
-		YwTCo1Wi4HG8dRC1jksn9ouFCcs=
+		6nmD3kDggz3K2utrdtRqA+/jyz8=
 		</data>
 		<key>Headers/CMAltimeter.h</key>
 		<data>
-		5968UPQYBSIsEPMokqIDXJIDRPw=
+		+wqzyjJ0mSG/mMJ/ZGGZLfJyJfU=
 		</data>
 		<key>Headers/CMAltitude.h</key>
 		<data>
-		Q3Z6EMnHVRL1cLq+zmMS9gy9VIk=
+		dRb5jHTvBB72pj6wHW3BQLwUHCQ=
 		</data>
 		<key>Headers/CMAttitude.h</key>
 		<data>
-		GD3hAWevqGSpl1vEpaoaT1f/AEc=
+		Lra8aVVdMq49eXORUiu2ll4+cRU=
 		</data>
 		<key>Headers/CMAvailability.h</key>
 		<data>
@@ -149,7 +161,7 @@
 		</data>
 		<key>Headers/CMDeviceMotion.h</key>
 		<data>
-		fbU5OEUvKB5B6FDl7Z7Yy6/WcYY=
+		5mO0G1y3Ek0YtYUR5LY/LvstWsg=
 		</data>
 		<key>Headers/CMError.h</key>
 		<data>
@@ -157,43 +169,51 @@
 		</data>
 		<key>Headers/CMErrorDomain.h</key>
 		<data>
-		LIQIAjUgBHR6j2Uf8rb7AtaCLek=
+		1jWBImBuRS3LMstqt9Ojdhwstrg=
 		</data>
 		<key>Headers/CMGyro.h</key>
 		<data>
-		vE63wHHqkjQ0gfWQXdW5S+Lvmbo=
+		Hfi0OgpVBqrqyuuuj38z3SCCR/4=
 		</data>
 		<key>Headers/CMLogItem.h</key>
 		<data>
-		scGmDHGPuF206m45iRQRtZSI2gs=
+		9ZOsjDWZp+acERsrRwIYqg46VuQ=
 		</data>
 		<key>Headers/CMMagnetometer.h</key>
 		<data>
-		cHoTKvV0lGn472pG4EK3N952xl4=
+		F/msDo1lII7BaAOPgsexRBNsyW4=
 		</data>
 		<key>Headers/CMMotionActivity.h</key>
 		<data>
-		6JBR2K+2xFKR0LsQL30bDnOYeNA=
+		JNlgRVs9y0PrMjBDzchXNqgvRcw=
 		</data>
 		<key>Headers/CMMotionActivityManager.h</key>
 		<data>
-		PGrnmeI6aLPOH+nRXVI1hBBz9QY=
+		LTO8OMFXbgEwvqISP0/5lwgBqss=
 		</data>
 		<key>Headers/CMMotionManager.h</key>
 		<data>
-		G2vJwT48hWtbvdgFRtWlVc2pWsI=
+		/x/VEM1G0Nst/r39Q+QlmdLefFw=
 		</data>
 		<key>Headers/CMPedometer.h</key>
 		<data>
-		JsMGj7GlGNKGMivYXx/5C8e/mio=
+		nRH09DTjsQfNbvU9iZ3pzIeeYo0=
+		</data>
+		<key>Headers/CMSensorRecorder.h</key>
+		<data>
+		rWi12KQdp05wKbdE6NlRCFLeBDQ=
 		</data>
 		<key>Headers/CMStepCounter.h</key>
 		<data>
-		JmwsraIrC3LXNhC7xHA1snFAuiM=
+		wYazwpvFDgdEJzySktuNsh6LuRw=
 		</data>
 		<key>Headers/CoreMotion.h</key>
 		<data>
-		VFuhn3jY1WgZToQmKkkYe26QsuQ=
+		5J95LKezGQPk90fDUzL32YHCN54=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		kvqduLlYTGmnBHZ8znbbR7wI5BQ=
 		</data>
 		<key>Support/EarGesture_Prototype_Msgs_1.dat</key>
 		<data>
@@ -213,7 +233,7 @@
 		</data>
 		<key>Support/FilterTier2.csv</key>
 		<data>
-		7PRJ5590p1ZDKnSFGzjeW/RAFeo=
+		NgXMR3OySK9HWDy++OYGqsEOalk=
 		</data>
 		<key>Support/N4xFilterTier1.csv</key>
 		<data>
@@ -221,19 +241,23 @@
 		</data>
 		<key>Support/N4xFilterTier2.csv</key>
 		<data>
-		vxkJ1L87MTavhLiO1iwW7R4m53c=
+		BqzAiRkKU2ByzpUQa5vZGI2fSqQ=
 		</data>
 		<key>Support/RTLModels.csv</key>
 		<data>
 		u9gTyee8zXUKUjljFLoPt3iC6ec=
 		</data>
+		<key>Support/bluetooth-carkit-whitelist.plist</key>
+		<data>
+		2pRLO4zi8OpMsviBlxAkOJFdQWU=
+		</data>
+		<key>bluetooth-carkit-whitelist.plist</key>
+		<data>
+		2pRLO4zi8OpMsviBlxAkOJFdQWU=
+		</data>
 		<key>module.map</key>
 		<data>
-		7Xkz3NCjH2n8b2coYFWbO0Eecf8=
-		</data>
-		<key>version.plist</key>
-		<data>
-		Q4EnnXyM13UQNM35R/pFoCY20jo=
+		iP91D0+xu7mbNPLNnn4tWWzA/IQ=
 		</data>
 	</dict>
 	<key>rules</key>

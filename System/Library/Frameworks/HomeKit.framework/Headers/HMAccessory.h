@@ -1,15 +1,18 @@
 // HMAccessory.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMHome;
 @class HMRoom;
 @class HMService;
 @class HMCharacteristic;
+@class HMAccessoryCategory;
 @protocol HMAccessoryDelegate;
 
 /*!
@@ -19,7 +22,7 @@
  *             one relationship between a physical accessory and an object of this
  *             class. An accessory is composed of one or more services.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMAccessory : NSObject
 
 /*!
@@ -32,13 +35,20 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 
 /*!
  * @brief A unique identifier for the accessory.
+ *
+ * @discussion Use uniqueIdentifier to obtain the identifier for this object.
  */
-@property(readonly, copy, nonatomic) NSUUID *identifier;
+@property(readonly, copy, nonatomic) NSUUID *identifier NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
+
+/*!
+ * @brief A unique identifier for the accessory.
+ */
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief Delegate object that receives updates on the state of the accessory.
  */
-@property(weak, nonatomic) id<HMAccessoryDelegate> delegate;
+@property(weak, nonatomic, nullable) id<HMAccessoryDelegate> delegate;
 
 /*!
  * @brief TRUE if the accessory is currently reachable, FALSE otherwise.
@@ -54,18 +64,32 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 @property(readonly, getter=isBridged, nonatomic) BOOL bridged;
 
 /*!
- * @brief If this accesory is a bridge, this property is an array of NSUUID objects that,
- *        each of which represents the 'identifier' of the accessory vended by the bridge.
+ * @brief If this accessory is a bridge, this property is an array of NSUUID objects that,
+ *        each of which represents the 'uniqueIdentifier' of the accessory vended by the bridge.
+ *
+ * @discussion Use uniqueIdentifiersForBridgedAccessories to obtain the identifiers for the
+ *             bridged accessories.
+ */
+@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *identifiersForBridgedAccessories NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
+
+/*!
+ * @brief If this accessory is a bridge, this property is an array of NSUUID objects that,
+ *        each of which represents the 'uniqueIdentifier' of the accessory vended by the bridge.
  *
  * @discussion An accessory can be standalone, a bridge, or hosted behind a bridge.
  *                  - A standalone accessory would have its 'bridged' property set to FALSE and
- *                    its 'identifiersForBridgedAccessories' property set to nil.
+ *                    its 'uniqueIdentifiersForBridgedAccessories' property set to nil.
  *                  - An accessory that is a bridge would have its 'bridged' property set to FALSE,
- *                    but have a non-empty 'identifiersForBridgedAccessories' property.
+ *                    but have a non-empty 'uniqueIdentifiersForBridgedAccessories' property.
  *                  - An accessory behind a bridge would have its 'bridged' property set to TRUE and
- *                    its 'identifiersForBridgedAccessories' property set to nil.
+ *                    its 'uniqueIdentifiersForBridgedAccessories' property set to nil.
  */
-@property(readonly, copy, nonatomic) NSArray *identifiersForBridgedAccessories;
+@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *uniqueIdentifiersForBridgedAccessories NS_AVAILABLE_IOS(9_0);
+
+/*!
+ * @brief Category information for the accessory. 
+ */
+@property(readonly, strong, nonatomic) HMAccessoryCategory *category NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief Room containing the accessory.
@@ -75,7 +99,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMService objects that represent all the services provided by the accessory.
  */
-@property(readonly, copy, nonatomic) NSArray *services;
+@property(readonly, copy, nonatomic) NSArray<HMService *> *services;
 
 /*!
  * @brief TRUE if the accessory is blocked, FALSE otherwise.
@@ -94,7 +118,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError *error))completion;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief This method is used to have an accessory identify itself.
@@ -103,7 +127,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)identifyWithCompletionHandler:(void (^)(NSError *error))completion;
+- (void)identifyWithCompletionHandler:(void (^)(NSError * __nullable error))completion;
 
 @end
 
@@ -112,7 +136,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @brief This defines the protocol for a delegate to receive updates about
  *        different aspects of an accessory
  */
-NS_AVAILABLE_IOS(8_0)
+NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @protocol HMAccessoryDelegate <NSObject>
 
 @optional
@@ -169,3 +193,5 @@ NS_AVAILABLE_IOS(8_0)
 - (void)accessory:(HMAccessory *)accessory service:(HMService *)service didUpdateValueForCharacteristic:(HMCharacteristic *)characteristic;
 
 @end
+
+NS_ASSUME_NONNULL_END

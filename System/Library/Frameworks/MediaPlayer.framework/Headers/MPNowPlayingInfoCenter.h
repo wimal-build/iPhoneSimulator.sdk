@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 // -----------------------------------------------------------------------------
 // MPNowPlayingInfoCenter provides an interface for setting the current now 
 // playing information for the application. This information will be displayed 
@@ -33,7 +35,8 @@
 // In addition, metadata properties specific to the current playback session
 // may also be specified -- see "Additional metadata properties" below.
 
-MP_EXTERN_CLASS_AVAILABLE(5_0) @interface MPNowPlayingInfoCenter : NSObject
+MP_EXTERN_CLASS_AVAILABLE(5_0)
+@interface MPNowPlayingInfoCenter : NSObject
 
 // Returns the default now playing info center.
 // The default center holds now playing info about the current application.
@@ -41,7 +44,7 @@ MP_EXTERN_CLASS_AVAILABLE(5_0) @interface MPNowPlayingInfoCenter : NSObject
 
 // The current now playing info for the center.
 // Setting the info to nil will clear it.
-@property (copy) NSDictionary *nowPlayingInfo;
+@property (copy, nullable) NSDictionary<NSString *, id> *nowPlayingInfo;
 
 @end
 
@@ -81,3 +84,13 @@ MP_EXTERN NSString *const MPNowPlayingInfoPropertyChapterNumber NS_AVAILABLE_IOS
 
 // The total number of chapters in the now playing item.
 MP_EXTERN NSString *const MPNowPlayingInfoPropertyChapterCount NS_AVAILABLE_IOS(5_0); // NSNumber (NSUInteger)
+
+// A list of available language option groups in the now playing item
+// Only one language option in a given group can be played at once.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyAvailableLanguageOptions NS_AVAILABLE_IOS(9_0); // NSArrayRef of MPNowPlayingInfoLanguageOptionGroup
+
+// A list of currently active language options in the now playing item.
+MP_EXTERN NSString *const MPNowPlayingInfoPropertyCurrentLanguageOptions NS_AVAILABLE_IOS(9_0); // NSArray of MPNowPlayingInfoLanguageOption
+
+
+NS_ASSUME_NONNULL_END

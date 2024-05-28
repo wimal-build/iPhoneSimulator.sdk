@@ -10,6 +10,8 @@
 
 #import <PassKit/PKPass.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, PKPaymentPassActivationState) {
     PKPaymentPassActivationStateActivated,
     PKPaymentPassActivationStateRequiresActivation,
@@ -29,5 +31,6 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 @property (nonatomic, readonly)     PKPaymentPassActivationState  activationState;
 
 @end
+NS_ASSUME_NONNULL_END
 
 #endif

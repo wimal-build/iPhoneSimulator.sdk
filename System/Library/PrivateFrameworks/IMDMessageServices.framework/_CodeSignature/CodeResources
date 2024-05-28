@@ -42,7 +42,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		LRQX8oS7agThI7VSJBG1p+MsE5c=
+		cEAhVzWPAi3RS7ZYx0OyrqTS3Zs=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -73,19 +73,15 @@
 		</dict>
 		<key>XPCServices/IMDMessageServicesAgent.xpc/IMDMessageServicesAgent</key>
 		<data>
-		Cmttt0ShdOjuE/7mnvJM6wUa410=
+		syQMQqg6/toYsYe4ch/eQRf6H1w=
 		</data>
 		<key>XPCServices/IMDMessageServicesAgent.xpc/Info.plist</key>
 		<data>
-		ydB1t/qApM9u6kYTBrrXBE6rPyA=
+		Lncxl0YApimBQ5eXyZfJM5YwCj4=
 		</data>
 		<key>XPCServices/IMDMessageServicesAgent.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		ZHkV1CKiF/5zl4NKH4XPTEBdXPY=
-		</data>
-		<key>XPCServices/IMDMessageServicesAgent.xpc/version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
+		hClkPyE+cxO2ArUE27oydK/a+FM=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -132,11 +128,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,10 +339,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -433,19 +443,15 @@
 		</dict>
 		<key>XPCServices/IMDMessageServicesAgent.xpc/IMDMessageServicesAgent</key>
 		<data>
-		Cmttt0ShdOjuE/7mnvJM6wUa410=
+		syQMQqg6/toYsYe4ch/eQRf6H1w=
 		</data>
 		<key>XPCServices/IMDMessageServicesAgent.xpc/Info.plist</key>
 		<data>
-		ydB1t/qApM9u6kYTBrrXBE6rPyA=
+		Lncxl0YApimBQ5eXyZfJM5YwCj4=
 		</data>
 		<key>XPCServices/IMDMessageServicesAgent.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		ZHkV1CKiF/5zl4NKH4XPTEBdXPY=
-		</data>
-		<key>XPCServices/IMDMessageServicesAgent.xpc/version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
+		hClkPyE+cxO2ArUE27oydK/a+FM=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -492,11 +498,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			aHtdxIJ66Z58tqo0nkzzzn2k9to=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z6kXHNzZt4M7dweP4Mxte+NDMzI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -685,10 +709,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		5opLpfMcH/k2tKY2/eXufQw72iM=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

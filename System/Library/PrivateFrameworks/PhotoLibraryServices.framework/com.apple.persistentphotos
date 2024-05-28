@@ -1,0 +1,5 @@
+# Claim everything that is not an error so the Syslog is happy
+? [A= Facility com.apple.persistentphotos] [> Level error] claim
+
+> /var/mobile/Media/PhotoData/Logs/com.apple.persistentphotos rotate=local file_max=10M all_max=100M compress uid=501 gid=501 mode=0755 crashlog
+? [A= Facility com.apple.persistentphotos][<= Level debug] asl_dir /var/mobile/Media/PhotoData/Logs/com.apple.persistentphotos

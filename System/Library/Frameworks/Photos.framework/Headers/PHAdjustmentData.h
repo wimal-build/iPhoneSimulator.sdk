@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAdjustmentData : NSObject
 
@@ -20,3 +21,5 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHAdjustmentData : NSObject
 @property (readonly, strong) NSData *data;
 
 @end
+
+NS_ASSUME_NONNULL_END

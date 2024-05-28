@@ -6,6 +6,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  *  @options EAWiFiUnconfiguredAccessoryProperties
  *
@@ -82,3 +84,5 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 @property(readonly, nonatomic, readonly) EAWiFiUnconfiguredAccessoryProperties properties;
 
 @end
+
+NS_ASSUME_NONNULL_END

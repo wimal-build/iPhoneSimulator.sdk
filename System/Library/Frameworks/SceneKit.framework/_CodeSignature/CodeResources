@@ -4,300 +4,372 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>C3D-BlendAuthoring.fsh</key>
+		<data>
+		Y23ttJaEj1Jps5FRzj+7z6SP3Es=
+		</data>
+		<key>C3D-BlendAuthoring.vsh</key>
+		<data>
+		CvXXnyaPwbYKgc6MUK3c5Upg12A=
+		</data>
+		<key>C3D-wireframe.fsh</key>
+		<data>
+		iZt7Z07Ni8li9tq54UqQG+Gto+M=
+		</data>
+		<key>C3D-wireframe.vsh</key>
+		<data>
+		6DKg4qCEpMnnL4hVxZ1vMgGdL3A=
+		</data>
+		<key>C3DFXAuthoring.plist</key>
+		<data>
+		1Bson+FHwLLcbymm9o7aSU8oDRg=
+		</data>
+		<key>C3DFXJitteringPassFloat.plist</key>
+		<data>
+		mWzLy86EUstf2uRnYq2FhcIwu8w=
+		</data>
+		<key>Headers/ModelIO.h</key>
+		<data>
+		fWKIZ3yvFT2IwaEcquT0krknNsE=
+		</data>
 		<key>Headers/SCNAction.h</key>
 		<data>
-		NDw1k7yL37zW25/zgA+qBD/nxXE=
+		RPWrkjSTlmWX6Vp8zHADYHXSwhE=
 		</data>
 		<key>Headers/SCNAnimation.h</key>
 		<data>
-		mpd4WMawgnrRsE9o5wid8IMcbag=
+		kR954E8xI03kwjU3xcLab5jMmjI=
+		</data>
+		<key>Headers/SCNAudioSource.h</key>
+		<data>
+		R4owz92lbitOxW4doXgwZzL4m04=
 		</data>
 		<key>Headers/SCNBase.h</key>
 		<data>
-		9vWFHiD+s8d7CXOxLVFsKvXKoYg=
+		n4CN2CZ4YN4B1Jwy/1dWN3/IJf8=
 		</data>
 		<key>Headers/SCNBoundingVolume.h</key>
 		<data>
-		ZiWhi0BvgckwftKtsco2kxWbgyQ=
+		/ZqxOtRMEJf14crwfqhWshjQhkk=
 		</data>
 		<key>Headers/SCNCamera.h</key>
 		<data>
-		1Rrfm92IjlXZ36LhC0+cYW86Xf0=
+		mvY6uYOaODRQ9BL+CUL3MbDW8yA=
 		</data>
 		<key>Headers/SCNConstraint.h</key>
 		<data>
-		2uj7RYLSb6+L7ZB+vmq9TFgEl/Y=
+		GMwOow1reE+GkLGkFcD3HenOiVM=
 		</data>
 		<key>Headers/SCNGeometry.h</key>
 		<data>
-		Uo7ven4Mz0/gds2hh6WxroLfYkc=
+		gkV8bX9hpNmauIVIhy8ohs1D1Ls=
 		</data>
 		<key>Headers/SCNJavascript.h</key>
 		<data>
-		o79J5Z5DSCCydKZQ8OF1uyOE0Yw=
+		DQAe2y9cj2eDtWNQ3xLNruEv82U=
 		</data>
 		<key>Headers/SCNLevelOfDetail.h</key>
 		<data>
-		YRV0i/zG8F6vTQsM23qjXEkio64=
+		oXg8qwxYSH7uJIz/mEgA6qdwRcc=
 		</data>
 		<key>Headers/SCNLight.h</key>
 		<data>
-		oM5EeiN8b8DqGwjY8FjKOE6JyD0=
+		TQpUD/4qSvnc/plS9yXXslWIeVo=
 		</data>
 		<key>Headers/SCNMaterial.h</key>
 		<data>
-		qGmEmIecJ31C5RsZgLNQADFyGjI=
+		Cxn9aGDVYMH8cVVNtdqCdOu12Ro=
 		</data>
 		<key>Headers/SCNMaterialProperty.h</key>
 		<data>
-		YgKnHRzO+xznSU29E1bMbSUaxcE=
+		p4rqnnr71u0r9Thayk6zXMU6ht8=
 		</data>
 		<key>Headers/SCNMorpher.h</key>
 		<data>
-		ehG1K39nqZpZBT76VcqeYNCaWBg=
+		Foc/9wPymsVpIFC1uoqF1ZUtR4E=
 		</data>
 		<key>Headers/SCNNode.h</key>
 		<data>
-		/u0J4JOT5ooAHVsrqN9DIV2/wZI=
+		ebR/x6RFpHW77uIJQeCoJP1lQGo=
 		</data>
 		<key>Headers/SCNParametricGeometry.h</key>
 		<data>
-		dWXUvCofd3jFQt0qxFr9pyztCy8=
+		9exBWukKYBe3VyHzSaAKI4YXFZY=
 		</data>
 		<key>Headers/SCNParticleSystem.h</key>
 		<data>
-		oOrZFlJj0YDD4DIGLVVu8Woy7jA=
+		EtI8pHFsm7UYlcZAGzadz5XfwPc=
 		</data>
 		<key>Headers/SCNPhysicsBehavior.h</key>
 		<data>
-		VbQWPj6uyKfgeEQX/2FgiSnuclM=
+		LqBIihFZdJ7qmHBEzAMU8Pn+B7E=
 		</data>
 		<key>Headers/SCNPhysicsBody.h</key>
 		<data>
-		P85jObwi3E1l4uvZYaRL/8D9zhM=
+		vf5DHsDzORcKUF7sB5nFzbDPA7U=
 		</data>
 		<key>Headers/SCNPhysicsContact.h</key>
 		<data>
-		QsAJZxlB38WBTp8+SFgo08FnRe4=
+		GXXRvuowiBn3PHKp0+w/CrFfQxA=
 		</data>
 		<key>Headers/SCNPhysicsField.h</key>
 		<data>
-		At5L9DJekPvdaGTPrlSD7qcKxds=
+		sLmgpJ5WYSpcTB92KZuyi/zskd4=
 		</data>
 		<key>Headers/SCNPhysicsShape.h</key>
 		<data>
-		e4yXFR7OvvXFtU5TGTE3uJxXrtY=
+		0aDgKZeEyjZSGeb9pUKZTEHKGYI=
 		</data>
 		<key>Headers/SCNPhysicsWorld.h</key>
 		<data>
-		KeYo48hHcqZiLDNte5DYrtVqWe4=
+		2ZvfKeq6az9VCLN6RFhEgBis3Po=
+		</data>
+		<key>Headers/SCNReferenceNode.h</key>
+		<data>
+		F00TH2axrGUiE6iAVfaEaXIedDQ=
 		</data>
 		<key>Headers/SCNRenderer.h</key>
 		<data>
-		gwg9iRW75qavvOdQNx4w2rj6vRI=
+		bAn/XQ+e8FfiW1AnUonGVyyEJ0M=
 		</data>
 		<key>Headers/SCNScene.h</key>
 		<data>
-		6L3zls6DNdgOpn9MP0iHo3zjBE8=
+		vHXkBSXCBqp95pFjjNMTo1LiTSA=
 		</data>
 		<key>Headers/SCNSceneRenderer.h</key>
 		<data>
-		K/MqwMgs3N8LMYjWZx0QasSWpsM=
+		IyJ1+te5x08TNW4UpHJwjRCRMLk=
 		</data>
 		<key>Headers/SCNSceneSource.h</key>
 		<data>
-		nVMFQ9cZ6yx/jRt3UfHbmXrrVgw=
+		lw0BrUdtzCQMAAEUxqJ3JGfjehg=
 		</data>
 		<key>Headers/SCNShadable.h</key>
 		<data>
-		VEoqqUHV+s6k9hDiSWYWZuwe+ek=
+		gM37NdWiSQI7mO8Sc0B79dQYRJ8=
 		</data>
 		<key>Headers/SCNSkinner.h</key>
 		<data>
-		ZfZZj2wrOcdCXLo2Ne+FbZU1oPk=
+		A2IYa4v2yxHQ90Z8Y0JJmM/2zNI=
 		</data>
 		<key>Headers/SCNTechnique.h</key>
 		<data>
-		OSfVQ+kdqUx+3m/O/0G1vw6amEw=
+		p2PsdGthYibC1Nr9FHqWCJd0EtA=
 		</data>
 		<key>Headers/SCNTransaction.h</key>
 		<data>
-		dpi7q6HK6D3EDlo5VcVes1Ki6WE=
+		kC+Xph6mFpJ9gSVr3DdT/Tm0NsM=
 		</data>
 		<key>Headers/SCNView.h</key>
 		<data>
-		0pkjC2PnFeCsC4t6ksPTboq5i2E=
+		0Bzu/e+mWN+E0OwJU4v0DuUviZ8=
 		</data>
 		<key>Headers/SceneKit.h</key>
 		<data>
-		ZJM5daetgOPSJPveu5tpjZZhADc=
+		yos47cx2rQJaWlsN3Dc20pgMAPU=
 		</data>
 		<key>Headers/SceneKitTypes.h</key>
 		<data>
-		fItCNOv+nThK5xoJuOJd+srmv/A=
+		7WOVdfK6EZa/pckOWFRt1pi44BY=
 		</data>
 		<key>Headers/SceneKit_simd.h</key>
 		<data>
-		VnCJPtW1wlpXDFeUgUiIoxsk1dU=
+		PWZ45AMP8irQvxTsUUtUbnqVMjU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FTSLDLbmjM8sesczL7nRtyOcGLE=
+		9TTRRH4MYR7r0eGP9F8Vckw7BvQ=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		lc1gE/STC45qqM17sJsIxJ8n8jE=
 		</data>
 		<key>module.map</key>
 		<data>
-		S7xp8n/3EdPkZ9w2VAp32Rjz61o=
-		</data>
-		<key>version.plist</key>
-		<data>
-		I1n1a4JgIx+mNvzJCemSNz7gCOI=
+		OIwS7quyMTulBjc8wLU8E1oLghc=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>C3D-BlendAuthoring.fsh</key>
+		<data>
+		Y23ttJaEj1Jps5FRzj+7z6SP3Es=
+		</data>
+		<key>C3D-BlendAuthoring.vsh</key>
+		<data>
+		CvXXnyaPwbYKgc6MUK3c5Upg12A=
+		</data>
+		<key>C3D-wireframe.fsh</key>
+		<data>
+		iZt7Z07Ni8li9tq54UqQG+Gto+M=
+		</data>
+		<key>C3D-wireframe.vsh</key>
+		<data>
+		6DKg4qCEpMnnL4hVxZ1vMgGdL3A=
+		</data>
+		<key>C3DFXAuthoring.plist</key>
+		<data>
+		1Bson+FHwLLcbymm9o7aSU8oDRg=
+		</data>
+		<key>C3DFXJitteringPassFloat.plist</key>
+		<data>
+		mWzLy86EUstf2uRnYq2FhcIwu8w=
+		</data>
+		<key>Headers/ModelIO.h</key>
+		<data>
+		fWKIZ3yvFT2IwaEcquT0krknNsE=
+		</data>
 		<key>Headers/SCNAction.h</key>
 		<data>
-		NDw1k7yL37zW25/zgA+qBD/nxXE=
+		RPWrkjSTlmWX6Vp8zHADYHXSwhE=
 		</data>
 		<key>Headers/SCNAnimation.h</key>
 		<data>
-		mpd4WMawgnrRsE9o5wid8IMcbag=
+		kR954E8xI03kwjU3xcLab5jMmjI=
+		</data>
+		<key>Headers/SCNAudioSource.h</key>
+		<data>
+		R4owz92lbitOxW4doXgwZzL4m04=
 		</data>
 		<key>Headers/SCNBase.h</key>
 		<data>
-		9vWFHiD+s8d7CXOxLVFsKvXKoYg=
+		n4CN2CZ4YN4B1Jwy/1dWN3/IJf8=
 		</data>
 		<key>Headers/SCNBoundingVolume.h</key>
 		<data>
-		ZiWhi0BvgckwftKtsco2kxWbgyQ=
+		/ZqxOtRMEJf14crwfqhWshjQhkk=
 		</data>
 		<key>Headers/SCNCamera.h</key>
 		<data>
-		1Rrfm92IjlXZ36LhC0+cYW86Xf0=
+		mvY6uYOaODRQ9BL+CUL3MbDW8yA=
 		</data>
 		<key>Headers/SCNConstraint.h</key>
 		<data>
-		2uj7RYLSb6+L7ZB+vmq9TFgEl/Y=
+		GMwOow1reE+GkLGkFcD3HenOiVM=
 		</data>
 		<key>Headers/SCNGeometry.h</key>
 		<data>
-		Uo7ven4Mz0/gds2hh6WxroLfYkc=
+		gkV8bX9hpNmauIVIhy8ohs1D1Ls=
 		</data>
 		<key>Headers/SCNJavascript.h</key>
 		<data>
-		o79J5Z5DSCCydKZQ8OF1uyOE0Yw=
+		DQAe2y9cj2eDtWNQ3xLNruEv82U=
 		</data>
 		<key>Headers/SCNLevelOfDetail.h</key>
 		<data>
-		YRV0i/zG8F6vTQsM23qjXEkio64=
+		oXg8qwxYSH7uJIz/mEgA6qdwRcc=
 		</data>
 		<key>Headers/SCNLight.h</key>
 		<data>
-		oM5EeiN8b8DqGwjY8FjKOE6JyD0=
+		TQpUD/4qSvnc/plS9yXXslWIeVo=
 		</data>
 		<key>Headers/SCNMaterial.h</key>
 		<data>
-		qGmEmIecJ31C5RsZgLNQADFyGjI=
+		Cxn9aGDVYMH8cVVNtdqCdOu12Ro=
 		</data>
 		<key>Headers/SCNMaterialProperty.h</key>
 		<data>
-		YgKnHRzO+xznSU29E1bMbSUaxcE=
+		p4rqnnr71u0r9Thayk6zXMU6ht8=
 		</data>
 		<key>Headers/SCNMorpher.h</key>
 		<data>
-		ehG1K39nqZpZBT76VcqeYNCaWBg=
+		Foc/9wPymsVpIFC1uoqF1ZUtR4E=
 		</data>
 		<key>Headers/SCNNode.h</key>
 		<data>
-		/u0J4JOT5ooAHVsrqN9DIV2/wZI=
+		ebR/x6RFpHW77uIJQeCoJP1lQGo=
 		</data>
 		<key>Headers/SCNParametricGeometry.h</key>
 		<data>
-		dWXUvCofd3jFQt0qxFr9pyztCy8=
+		9exBWukKYBe3VyHzSaAKI4YXFZY=
 		</data>
 		<key>Headers/SCNParticleSystem.h</key>
 		<data>
-		oOrZFlJj0YDD4DIGLVVu8Woy7jA=
+		EtI8pHFsm7UYlcZAGzadz5XfwPc=
 		</data>
 		<key>Headers/SCNPhysicsBehavior.h</key>
 		<data>
-		VbQWPj6uyKfgeEQX/2FgiSnuclM=
+		LqBIihFZdJ7qmHBEzAMU8Pn+B7E=
 		</data>
 		<key>Headers/SCNPhysicsBody.h</key>
 		<data>
-		P85jObwi3E1l4uvZYaRL/8D9zhM=
+		vf5DHsDzORcKUF7sB5nFzbDPA7U=
 		</data>
 		<key>Headers/SCNPhysicsContact.h</key>
 		<data>
-		QsAJZxlB38WBTp8+SFgo08FnRe4=
+		GXXRvuowiBn3PHKp0+w/CrFfQxA=
 		</data>
 		<key>Headers/SCNPhysicsField.h</key>
 		<data>
-		At5L9DJekPvdaGTPrlSD7qcKxds=
+		sLmgpJ5WYSpcTB92KZuyi/zskd4=
 		</data>
 		<key>Headers/SCNPhysicsShape.h</key>
 		<data>
-		e4yXFR7OvvXFtU5TGTE3uJxXrtY=
+		0aDgKZeEyjZSGeb9pUKZTEHKGYI=
 		</data>
 		<key>Headers/SCNPhysicsWorld.h</key>
 		<data>
-		KeYo48hHcqZiLDNte5DYrtVqWe4=
+		2ZvfKeq6az9VCLN6RFhEgBis3Po=
+		</data>
+		<key>Headers/SCNReferenceNode.h</key>
+		<data>
+		F00TH2axrGUiE6iAVfaEaXIedDQ=
 		</data>
 		<key>Headers/SCNRenderer.h</key>
 		<data>
-		gwg9iRW75qavvOdQNx4w2rj6vRI=
+		bAn/XQ+e8FfiW1AnUonGVyyEJ0M=
 		</data>
 		<key>Headers/SCNScene.h</key>
 		<data>
-		6L3zls6DNdgOpn9MP0iHo3zjBE8=
+		vHXkBSXCBqp95pFjjNMTo1LiTSA=
 		</data>
 		<key>Headers/SCNSceneRenderer.h</key>
 		<data>
-		K/MqwMgs3N8LMYjWZx0QasSWpsM=
+		IyJ1+te5x08TNW4UpHJwjRCRMLk=
 		</data>
 		<key>Headers/SCNSceneSource.h</key>
 		<data>
-		nVMFQ9cZ6yx/jRt3UfHbmXrrVgw=
+		lw0BrUdtzCQMAAEUxqJ3JGfjehg=
 		</data>
 		<key>Headers/SCNShadable.h</key>
 		<data>
-		VEoqqUHV+s6k9hDiSWYWZuwe+ek=
+		gM37NdWiSQI7mO8Sc0B79dQYRJ8=
 		</data>
 		<key>Headers/SCNSkinner.h</key>
 		<data>
-		ZfZZj2wrOcdCXLo2Ne+FbZU1oPk=
+		A2IYa4v2yxHQ90Z8Y0JJmM/2zNI=
 		</data>
 		<key>Headers/SCNTechnique.h</key>
 		<data>
-		OSfVQ+kdqUx+3m/O/0G1vw6amEw=
+		p2PsdGthYibC1Nr9FHqWCJd0EtA=
 		</data>
 		<key>Headers/SCNTransaction.h</key>
 		<data>
-		dpi7q6HK6D3EDlo5VcVes1Ki6WE=
+		kC+Xph6mFpJ9gSVr3DdT/Tm0NsM=
 		</data>
 		<key>Headers/SCNView.h</key>
 		<data>
-		0pkjC2PnFeCsC4t6ksPTboq5i2E=
+		0Bzu/e+mWN+E0OwJU4v0DuUviZ8=
 		</data>
 		<key>Headers/SceneKit.h</key>
 		<data>
-		ZJM5daetgOPSJPveu5tpjZZhADc=
+		yos47cx2rQJaWlsN3Dc20pgMAPU=
 		</data>
 		<key>Headers/SceneKitTypes.h</key>
 		<data>
-		fItCNOv+nThK5xoJuOJd+srmv/A=
+		7WOVdfK6EZa/pckOWFRt1pi44BY=
 		</data>
 		<key>Headers/SceneKit_simd.h</key>
 		<data>
-		VnCJPtW1wlpXDFeUgUiIoxsk1dU=
+		PWZ45AMP8irQvxTsUUtUbnqVMjU=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		lc1gE/STC45qqM17sJsIxJ8n8jE=
 		</data>
 		<key>module.map</key>
 		<data>
-		S7xp8n/3EdPkZ9w2VAp32Rjz61o=
-		</data>
-		<key>version.plist</key>
-		<data>
-		I1n1a4JgIx+mNvzJCemSNz7gCOI=
+		OIwS7quyMTulBjc8wLU8E1oLghc=
 		</data>
 	</dict>
 	<key>rules</key>

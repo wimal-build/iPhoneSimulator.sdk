@@ -24,6 +24,8 @@
 
 #import <QuartzCore/CALayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CATiledLayer : CALayer
 
 /* The time in seconds that newly added images take to "fade-in" to the
@@ -56,3 +58,5 @@
 @property CGSize tileSize;
 
 @end
+
+NS_ASSUME_NONNULL_END

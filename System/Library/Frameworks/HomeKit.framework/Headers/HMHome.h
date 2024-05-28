@@ -1,10 +1,12 @@
 // HMHome.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMHomeManager;
 @class HMAccessory;
@@ -15,7 +17,7 @@
 @class HMActionSet;
 @class HMTrigger;
 @class HMUser;
-
+@class HMHomeAccessControl;
 
 @protocol HMHomeDelegate;
 
@@ -27,7 +29,7 @@
  *             all the rooms, zones, service groups, users, triggers, and action sets in
  *             the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMHome : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -35,7 +37,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Delegate that receives updates on the state of the home.
  */
-@property(weak, nonatomic) id<HMHomeDelegate> delegate;
+@property(weak, nonatomic, nullable) id<HMHomeDelegate> delegate;
 
 /*!
  * @brief The name of the home.
@@ -48,6 +50,11 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 @property(readonly, getter=isPrimary, nonatomic) BOOL primary;
 
 /*!
+ * @brief A unique identifier for the home.
+ */
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+
+/*!
  * @brief This method is used to change the name of the home.
  *
  * @param name New name for the home.
@@ -56,7 +63,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError *error))completion;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
@@ -66,7 +73,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMAccessory objects that represents all accessories added to the home. 
  */
-@property(readonly, copy, nonatomic) NSArray *accessories;
+@property(readonly, copy, nonatomic) NSArray<HMAccessory *> *accessories;
 
 /*!
  * @brief Adds a new accessory to the home.
@@ -77,7 +84,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError *error))completion;
+- (void)addAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes an accessory from the home.
@@ -88,7 +95,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError *error))completion;
+- (void)removeAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Assigns a new room for the accessory.
@@ -104,7 +111,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)assignAccessory:(HMAccessory *)accessory toRoom:(HMRoom *)room completionHandler:(void (^)(NSError *error))completion;
+- (void)assignAccessory:(HMAccessory *)accessory toRoom:(HMRoom *)room completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Queries all services that match the specified types.
@@ -114,7 +121,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @return Array of HMService objects that match the specified service types, 
  *         nil if no matching services were found.
  */
-- (NSArray *)servicesWithTypes:(NSArray *)serviceTypes;
+- (nullable NSArray<HMService *> *)servicesWithTypes:(NSArray<NSString *> *)serviceTypes;
 
 /*!
  * @brief unblock a blocked accessory.
@@ -129,16 +136,35 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)unblockAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError *error))completion;
+- (void)unblockAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
+
 @end
 
 
 @interface HMHome(HMUser)
 
 /*!
+ * @brief HMUser object representing the current user of the home.
+ */
+@property(readonly, strong, nonatomic) HMUser *currentUser NS_AVAILABLE_IOS(9_0);
+
+/*!
  * @brief Array of HMUser objects that represent all users associated with the home.
  */
-@property(readonly, copy, nonatomic) NSArray *users;
+@property(readonly, copy, nonatomic) NSArray<HMUser *> *users NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
+
+/*!
+ * @brief Presents a view controller to manage users of the home.
+ *
+ * @discussion This API is available only for users that have administrator access to the home.
+ *
+ * @param completion Block that is invoked once user management is completed.
+ *                   The completion block is fired to allow clients to know when the user has dismissed the view.
+ *                   The NSError provides more information on the status of the request, error
+ *                   will be nil on success. If the user does not have administrator privileges the error code will be set to
+ *                   HMErrorCodeInsufficientPrivileges.
+ */
+- (void)manageUsersWithCompletionHandler:(void (^)(NSError * __nullable error))completion NS_AVAILABLE_IOS(9_0) __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Adds a user to the home.
@@ -149,7 +175,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   will be nil on success. The userInfo dictionary will contain the HMUserFailedAccessoriesKey which provides
  *                   more details on the accessories that failed to add the user.
  */
-- (void)addUserWithCompletionHandler:(void (^)(HMUser *user, NSError *error))completion;
+- (void)addUserWithCompletionHandler:(void (^)(HMUser * __nullable user, NSError * __nullable error))completion NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes a user from the home.
@@ -161,7 +187,12 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   will be nil on success. The userInfo dictionary will contain the HMUserFailedAccessoriesKey which provides
  *                   more details on the accessories that failed to remove the user.
  */
-- (void)removeUser:(HMUser *)user completionHandler:(void (^)(NSError *error))completion;
+- (void)removeUser:(HMUser *)user completionHandler:(void (^)(NSError * __nullable error))completion NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED;
+
+/*!
+ * @brief Retrieve the access level of the user associated with the home.
+ */
+- (HMHomeAccessControl *)homeAccessControlForUser:(HMUser *)user NS_AVAILABLE_IOS(9_0);
 
 @end
 
@@ -171,7 +202,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMRoom objects that represents all rooms in the home.
  */
-@property(readonly, copy, nonatomic) NSArray *rooms;
+@property(readonly, copy, nonatomic) NSArray<HMRoom *> *rooms;
 
 /*!
  * @brief Adds a room to the home.
@@ -183,7 +214,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addRoomWithName:(NSString *)roomName completionHandler:(void (^)(HMRoom *room, NSError *error))completion;
+- (void)addRoomWithName:(NSString *)roomName completionHandler:(void (^)(HMRoom * __nullable room, NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes a room from the home. 
@@ -198,7 +229,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeRoom:(HMRoom *)room completionHandler:(void (^)(NSError *error))completion;
+- (void)removeRoom:(HMRoom *)room completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief This method returns a room that represents the entire home. This can be used to assign a room
@@ -216,7 +247,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMZone objects that represents all the zones in the home.
  */
-@property(readonly, copy, nonatomic) NSArray *zones;
+@property(readonly, copy, nonatomic) NSArray<HMZone *> *zones;
 
 /*!
  * @brief Adds a zone to the home.
@@ -228,7 +259,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addZoneWithName:(NSString *)zoneName completionHandler:(void (^)(HMZone *zone, NSError *error))completion;
+- (void)addZoneWithName:(NSString *)zoneName completionHandler:(void (^)(HMZone * __nullable zone, NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes a zone from the home.
@@ -239,7 +270,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeZone:(HMZone *)zone completionHandler:(void (^)(NSError *error))completion;
+- (void)removeZone:(HMZone *)zone completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
@@ -249,7 +280,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMServiceGroup objects that represents all service groups in the home.
  */
-@property(readonly, copy, nonatomic) NSArray *serviceGroups;
+@property(readonly, copy, nonatomic) NSArray<HMServiceGroup *> *serviceGroups;
 
 /*!
  * @brief Adds a service group to the home.
@@ -261,7 +292,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addServiceGroupWithName:(NSString *)serviceGroupName completionHandler:(void (^)(HMServiceGroup *group, NSError *error))completion;
+- (void)addServiceGroupWithName:(NSString *)serviceGroupName completionHandler:(void (^)(HMServiceGroup * __nullable group, NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes a service group from the home.
@@ -272,7 +303,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeServiceGroup:(HMServiceGroup *)group completionHandler:(void (^)(NSError *error))completion;
+- (void)removeServiceGroup:(HMServiceGroup *)group completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
@@ -282,7 +313,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMActionSet objects that represents all the action sets in the home.
  */
-@property(readonly, copy, nonatomic) NSArray *actionSets;
+@property(readonly, copy, nonatomic) NSArray<HMActionSet *> *actionSets;
 
 /*!
  * @brief Adds a new action set to the home.
@@ -294,18 +325,18 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addActionSetWithName:(NSString *)actionSetName completionHandler:(void (^)(HMActionSet *actionSet, NSError *error))completion;
+- (void)addActionSetWithName:(NSString *)actionSetName completionHandler:(void (^)(HMActionSet * __nullable actionSet, NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes an existing action set from the home.
  *
- * @param actionSet Action set to remove from the home.
+ * @param actionSet Action set to remove from the home. A builtin action set cannot be removed.
  *
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError *error))completion;
+- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Executes all the actions within an action set.
@@ -316,7 +347,18 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)executeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError *error))completion;
+- (void)executeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion;
+
+/*!
+ * @brief Retrieve a built-in action set for the home.
+ *
+ * @param type Type of the builtin action set. Supported action set types are HMActionSetTypeWakeUp,
+ *             HMActionSetTypeSleep, HMActionSetTypeHomeDeparture and HMActionSetTypeHomeArrival.
+ *
+ * @return Reference to the built-in action set corresponding to type argument,
+ *         nil if no matching action set is found.
+ */
+- (nullable HMActionSet *)builtinActionSetOfType:(NSString *)actionSetType NS_AVAILABLE_IOS(9_0);
 
 @end
 
@@ -326,7 +368,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMTrigger objects that represents all the triggers in the home.
  */
-@property(readonly, copy, nonatomic) NSArray *triggers;
+@property(readonly, copy, nonatomic) NSArray<HMTrigger *> *triggers;
 
 /*!
  * @brief Adds a trigger to the home. Unless the trigger object is added to the home, it cannot be 
@@ -342,7 +384,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError *error))completion;
+- (void)addTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes a trigger from the home. If the trigger is active, they are automatically deactivated.
@@ -353,7 +395,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError *error))completion;
+- (void)removeTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
@@ -362,7 +404,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @brief This delegate receives update on the various accessories, action sets, groups and triggers 
  *        managed in the home.
  */
-NS_AVAILABLE_IOS(8_0)
+NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @protocol HMHomeDelegate <NSObject>
 
 @optional
@@ -397,7 +439,7 @@ NS_AVAILABLE_IOS(8_0)
  *
  * @param home Sender of this message.
  *
- * @param user User who       was granted access to the home.
+ * @param user User who was granted access to the home.
  */
 - (void)home:(HMHome *)home didAddUser:(HMUser *)user;
 
@@ -411,7 +453,7 @@ NS_AVAILABLE_IOS(8_0)
 - (void)home:(HMHome *)home didRemoveUser:(HMUser *)user;
 
 /*!
- * @brief Informs the delegate when a new room is assigned to an an accessory
+ * @brief Informs the delegate when a new room is assigned to an accessory
  *
  * @param home Sender of the message.
  *
@@ -655,5 +697,6 @@ NS_AVAILABLE_IOS(8_0)
  *             corresponding to the dictionary key is an NSError that provides more details on the
  *             underlying error for that accessory.
  */
-HM_EXTERN NSString * const HMUserFailedAccessoriesKey NS_AVAILABLE_IOS(8_0);
+HM_EXTERN NSString * const HMUserFailedAccessoriesKey NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0);
 
+NS_ASSUME_NONNULL_END

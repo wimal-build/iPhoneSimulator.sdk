@@ -9,6 +9,8 @@
 #import <MediaPlayer/MediaPlayerDefines.h>
 #import <MediaPlayer/MPMediaItemCollection.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class MPMediaItem;
 
 // A playlist may have any number of MPMediaPlaylistAttributes associated.
@@ -22,7 +24,9 @@ typedef NS_OPTIONS(NSUInteger, MPMediaPlaylistAttribute) {
 // An MPMediaPlaylist is a collection of related MPMediaItems in an MPMediaLibrary.
 // Playlists have a unique identifier which persists across application launches.
 
-MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMediaPlaylist : MPMediaItemCollection
+MP_EXTERN_CLASS_AVAILABLE(3_0)
+
+@interface MPMediaPlaylist : MPMediaItemCollection
 
 #pragma mark - Properties
 
@@ -32,7 +36,7 @@ MP_EXTERN NSString * const MPMediaPlaylistPropertyPersistentID;                 
 @property (nonatomic, readonly) MPMediaEntityPersistentID persistentID NS_AVAILABLE_IOS(7_0);
 
 MP_EXTERN NSString * const MPMediaPlaylistPropertyName;                                     // filterable
-@property (nonatomic, readonly) NSString *name NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, nullable) NSString *name NS_AVAILABLE_IOS(7_0);
 
 MP_EXTERN NSString * const MPMediaPlaylistPropertyPlaylistAttributes;                       // filterable
 @property (nonatomic, readonly) MPMediaPlaylistAttribute playlistAttributes NS_AVAILABLE_IOS(7_0);
@@ -40,7 +44,8 @@ MP_EXTERN NSString * const MPMediaPlaylistPropertyPlaylistAttributes;           
 // For playlists with attribute MPMediaPlaylistAttributeGenius, the seedItems are the MPMediaItems which were used to the generate the playlist.
 // Returns nil for playlists without MPMediaPlaylistAttributeGenius set.
 MP_EXTERN NSString * const MPMediaPlaylistPropertySeedItems;
-@property (nonatomic, readonly) NSArray *seedItems NS_AVAILABLE_IOS(8_0);
+@property (nonatomic, readonly, nullable) NSArray<MPMediaItem *> *seedItems NS_AVAILABLE_IOS(8_0);
 
 @end
 
+NS_ASSUME_NONNULL_END

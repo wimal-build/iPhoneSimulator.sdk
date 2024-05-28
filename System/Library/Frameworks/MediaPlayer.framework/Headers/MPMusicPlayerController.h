@@ -12,6 +12,8 @@
 #import <MediaPlayer/MPMediaQuery.h>
 #import <MediaPlayer/MPMediaPlayback.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class MPMediaItem, MPMediaQuery, MPMusicPlayerControllerInternal;
 
 typedef NS_ENUM(NSInteger, MPMusicPlaybackState) {
@@ -38,7 +40,9 @@ typedef NS_ENUM(NSInteger, MPMusicShuffleMode) {
 };
 
 // MPMusicPlayerController allows playback of MPMediaItems through the Music application.
-MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMusicPlayerController : NSObject <MPMediaPlayback>
+MP_EXTERN_CLASS_AVAILABLE(3_0)
+
+@interface MPMusicPlayerController : NSObject <MPMediaPlayback>
 
 /// Playing media items with the applicationMusicPlayer will restore the user's Music state after the application quits.
 + (MPMusicPlayerController *)applicationMusicPlayer;
@@ -69,7 +73,7 @@ MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMusicPlayerController : NSObject <MP
 
 // Returns the currently playing media item, or nil if none is playing.
 // Setting the nowPlayingItem to an item in the current queue will begin playback at that item.
-@property (nonatomic, copy) MPMediaItem *nowPlayingItem;
+@property (nonatomic, copy, nullable) MPMediaItem *nowPlayingItem;
 
 // Returns the index of the now playing item in the current playback queue.
 // May return NSNotFound if the index is not valid (e.g. an empty queue or an infinite playlist).
@@ -103,3 +107,5 @@ MP_EXTERN NSString * const MPMusicPlayerControllerNowPlayingItemDidChangeNotific
 
 // Posted when the current volume changes.
 MP_EXTERN NSString * const MPMusicPlayerControllerVolumeDidChangeNotification;
+
+NS_ASSUME_NONNULL_END

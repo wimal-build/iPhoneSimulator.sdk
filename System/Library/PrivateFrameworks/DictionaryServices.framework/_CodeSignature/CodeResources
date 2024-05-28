@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QnKVN89WovCol93uCOZewRRlECA=
+		9ZtzG5xuDfwuYSVx8WnRv6k10S8=
 		</data>
 		<key>Italian.lproj/DefaultDictionaries.plist</key>
 		<dict>
@@ -161,6 +161,18 @@
 		<key>TransformText.xsl</key>
 		<data>
 		4yhtj5Yki9zm7+8vTlWH2nAg7cg=
+		</data>
+		<key>XPCServices/com.apple.DictionaryServiceHelper.xpc/Info.plist</key>
+		<data>
+		wVgyvSUP6N0Tzd0BtdK6nluBKgI=
+		</data>
+		<key>XPCServices/com.apple.DictionaryServiceHelper.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		IiB0e8J31K3anqNV0OZxFNnib/E=
+		</data>
+		<key>XPCServices/com.apple.DictionaryServiceHelper.xpc/com.apple.DictionaryServiceHelper</key>
+		<data>
+		hdJGxVU1ms2R0wrV/IUJi3yxeB8=
 		</data>
 		<key>ar.lproj/DefaultDictionaries.plist</key>
 		<dict>
@@ -252,6 +264,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/DefaultDictionaries.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rm73xAUvMAloj0IcLzcQfHwxi6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/WikipediaPrefs.htm</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q0Dx2E4CmkrJw2hOUoB6QONrxwI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/DefaultDictionaries.plist</key>
 		<dict>
 			<key>hash</key>
@@ -266,6 +296,24 @@
 			<key>hash</key>
 			<data>
 			Q0Dx2E4CmkrJw2hOUoB6QONrxwI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/DefaultDictionaries.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rm73xAUvMAloj0IcLzcQfHwxi6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/WikipediaPrefs.htm</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7gSxAZI99+Xywt46z2V38aBX72E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -630,10 +678,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		Ot4avzlW9uglWzCjxUEBclg8pRg=
-		</data>
 		<key>vi.lproj/DefaultDictionaries.plist</key>
 		<dict>
 			<key>hash</key>
@@ -863,6 +907,18 @@
 		<data>
 		4yhtj5Yki9zm7+8vTlWH2nAg7cg=
 		</data>
+		<key>XPCServices/com.apple.DictionaryServiceHelper.xpc/Info.plist</key>
+		<data>
+		wVgyvSUP6N0Tzd0BtdK6nluBKgI=
+		</data>
+		<key>XPCServices/com.apple.DictionaryServiceHelper.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		IiB0e8J31K3anqNV0OZxFNnib/E=
+		</data>
+		<key>XPCServices/com.apple.DictionaryServiceHelper.xpc/com.apple.DictionaryServiceHelper</key>
+		<data>
+		hdJGxVU1ms2R0wrV/IUJi3yxeB8=
+		</data>
 		<key>ar.lproj/DefaultDictionaries.plist</key>
 		<dict>
 			<key>hash</key>
@@ -953,6 +1009,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/DefaultDictionaries.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rm73xAUvMAloj0IcLzcQfHwxi6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/WikipediaPrefs.htm</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q0Dx2E4CmkrJw2hOUoB6QONrxwI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/DefaultDictionaries.plist</key>
 		<dict>
 			<key>hash</key>
@@ -967,6 +1041,24 @@
 			<key>hash</key>
 			<data>
 			Q0Dx2E4CmkrJw2hOUoB6QONrxwI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/DefaultDictionaries.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rm73xAUvMAloj0IcLzcQfHwxi6U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/WikipediaPrefs.htm</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7gSxAZI99+Xywt46z2V38aBX72E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1331,10 +1423,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		Ot4avzlW9uglWzCjxUEBclg8pRg=
-		</data>
 		<key>vi.lproj/DefaultDictionaries.plist</key>
 		<dict>
 			<key>hash</key>

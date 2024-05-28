@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.private.corerecents</key>
 	<true/>
-	<key>com.apple.seld.cm</key>
+	<key>com.apple.springboard.opensensitiveurl</key>
 	<true/>
 	<key>com.apple.accounts.appleaccount.fullaccess</key>
 	<true/>
@@ -14,11 +14,11 @@
 	<array>
 		<string>kTCCServiceAddressBook</string>
 	</array>
-	<key>com.apple.ci</key>
+	<key>com.apple.payment.all-access</key>
 	<true/>
-	<key>com.apple.sh</key>
+	<key>com.apple.nfcd.hwmanager</key>
 	<true/>
-	<key>com.apple.nfcd.info</key>
+	<key>com.apple.seld.tsmmanager</key>
 	<true/>
 	<key>com.apple.private.CoreAuthentication.SPI</key>
 	<true/>
@@ -56,5 +56,42 @@
 	<array>
 		<string>com.apple.radios.plist</string>
 	</array>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.nfcd.hwmanager</string>
+		<string>com.apple.seld.tsmmanager</string>
+	</array>
+	<key>com.apple.springboard.activateRemoteAlert</key>
+	<true/>
+	<key>com.apple.springboard.appbackgroundstyle</key>
+	<true/>
+	<key>com.apple.authkit.client.internal</key>
+	<true/>
+	<key>com.apple.springboard.openurlswhenlocked</key>
+	<true/>
+	<key>com.apple.passes.add-silently</key>
+	<true/>
+	<key>com.apple.NPKCompanionAgent.client</key>
+	<true/>
+	<key>fairplay-client</key>
+	<integer>87750944</integer>
+	<key>com.apple.CommCenter.fine-grained</key>
+	<array>
+		<string>spi</string>
+	</array>
+	<key>com.apple.nanosystemsettings</key>
+	<array>
+		<string>icloud</string>
+	</array>
+	<key>com.apple.private.ids.messaging</key>
+	<array>
+		<string>com.apple.private.alloy.passbook.provisioning</string>
+	</array>
+	<key>com.apple.private.ids.messaging.urgent-priority</key>
+	<array>
+		<string>com.apple.private.alloy.passbook.provisioning</string>
+	</array>
+	<key>com.apple.private.ids.nearby</key>
+	<true/>
 </dict>
 </plist>

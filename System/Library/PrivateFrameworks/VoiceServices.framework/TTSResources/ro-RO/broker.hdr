@@ -9,7 +9,7 @@ defaultvoice:Ioana
     <language>Romanian</language>
     <langcode>ROR</langcode>
     <langid>78</langid>
-    <langversion>5.2.4.13289</langversion>
+    <langversion>5.2.4.13268</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Ioana</voice>
     <voiceversion>5.2.4.14090</voiceversion>
@@ -51,6 +51,7 @@ defaultvoice:Ioana
     <COMPONENT>fe/fe_udwl</COMPONENT>
     <COMPONENT>fe/fe_clcml</COMPONENT>
     <COMPONENT>fe/fe_promptoriorth</COMPONENT>
+    <COMPONENT>fe/fe_sprop</COMPONENT>
     <COMPONENT>fe/fe_unixlit</COMPONENT>
     <COMPONENT>fe/fe_initlingdb</COMPONENT>
     <COMPONENT>fe/fe_promptorth</COMPONENT>
@@ -65,6 +66,7 @@ defaultvoice:Ioana
     <COMPONENT>fe/fe_prmfx</COMPONENT>
     <COMPONENT>fe/fe_prompt</COMPONENT>
     <COMPONENT>fe/fe_global</COMPONENT>
+    <COMPONENT>fe/be_adapt</COMPONENT>
     <COMPONENT>select/bet3</COMPONENT>
     <COMPONENT>synth/bet3</COMPONENT>
     <COMPONENT>audioinserter</COMPONENT>
@@ -88,6 +90,9 @@ defaultvoice:Ioana
     
     
     
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/ror
+    </RESOURCE>
     
     
     

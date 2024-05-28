@@ -5,6 +5,7 @@
 
 #import <QuartzCore/CABase.h>
 #import <objc/objc.h>
+#import <Foundation/NSObject.h>
 
 /* The CAMediaTiming protocol is implemented by layers and animations, it
  * models a hierarchical timing system, with each object describing the
@@ -25,6 +26,8 @@
  * and optionally to play backwards before repeating. */
 
 @class NSString;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol CAMediaTiming
 
@@ -84,6 +87,4 @@ CA_EXTERN NSString * const kCAFillModeBoth
 CA_EXTERN NSString * const kCAFillModeRemoved
     __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 
-/* Replaced by kCAFillModeForwards before 10.5 shipped. */
-
-CA_EXTERN NSString * const kCAFillModeFrozen CA_DEPRECATED;
+NS_ASSUME_NONNULL_END

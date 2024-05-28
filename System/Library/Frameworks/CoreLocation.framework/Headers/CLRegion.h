@@ -10,6 +10,8 @@
 #import <CoreLocation/CLLocation.h>
 #import <CoreLocation/CLAvailability.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  * CLRegionState
  *
@@ -21,7 +23,7 @@ typedef NS_ENUM(NSInteger, CLRegionState) {
 	CLRegionStateUnknown,
 	CLRegionStateInside,
 	CLRegionStateOutside
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /*
  * CLProximity
@@ -35,7 +37,7 @@ typedef NS_ENUM(NSInteger, CLProximity) {
 	CLProximityImmediate,
 	CLProximityNear,
 	CLProximityFar
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /*
  *  CLRegion
@@ -117,3 +119,5 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 - (BOOL)containsCoordinate:(CLLocationCoordinate2D)coordinate __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7,__MAC_NA,__IPHONE_4_0,__IPHONE_7_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

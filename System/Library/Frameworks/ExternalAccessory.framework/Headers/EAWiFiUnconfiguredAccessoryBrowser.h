@@ -69,7 +69,10 @@ typedef NS_ENUM(NSInteger, EAWiFiUnconfiguredAccessoryConfigurationStatus)
  *             the accessory.
  *
  */
+
 NS_CLASS_AVAILABLE(NA, 8_0)
+NS_ASSUME_NONNULL_BEGIN
+
 @interface EAWiFiUnconfiguredAccessoryBrowser : NSObject
 
 /*!
@@ -78,7 +81,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *  @discussion The delegate object that will receive the browser events.
  *
  */
-@property (weak, nonatomic) id<EAWiFiUnconfiguredAccessoryBrowserDelegate> delegate;
+@property (weak, nonatomic, nullable) id<EAWiFiUnconfiguredAccessoryBrowserDelegate> delegate;
 
 /*!
  * @property unconfiguredAccessories
@@ -87,7 +90,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *             This snapshot will only include objects matching the filter predicate defined when starting the search.
  *
  */
-@property (readonly, copy, atomic) NSSet *unconfiguredAccessories;
+@property (readonly, copy, atomic) NSSet<EAWiFiUnconfiguredAccessory *> *unconfiguredAccessories;
 
 /*!
  * @brief Designated initializer.
@@ -101,7 +104,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  * @return Instance object
  *
  */
-- (instancetype)initWithDelegate:(id<EAWiFiUnconfiguredAccessoryBrowserDelegate>)delegate queue:(dispatch_queue_t)queue NS_DESIGNATED_INITIALIZER NS_AVAILABLE(NA, 8_0);
+- (instancetype)initWithDelegate:(nullable id<EAWiFiUnconfiguredAccessoryBrowserDelegate>)delegate queue:(nullable dispatch_queue_t)queue NS_DESIGNATED_INITIALIZER NS_AVAILABLE(NA, 8_0);
 
 /*!
  * @brief Start the search for unconfigured accessories
@@ -113,7 +116,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  * @param predicate The desired filter for unconfigured accessory results conforming to the EAWiFiUnconfiguredAccessory protocol.
  *
  */
-- (void)startSearchingForUnconfiguredAccessoriesMatchingPredicate:(NSPredicate*)predicate NS_AVAILABLE(NA, 8_0);
+- (void)startSearchingForUnconfiguredAccessoriesMatchingPredicate:(nullable NSPredicate *)predicate NS_AVAILABLE(NA, 8_0);
 
 /*!
  * @brief Stop the search for unconfigured MFi Wireless Accessory Configuration accessories
@@ -133,7 +136,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  * @param viewController The UIViewController that will host the Apple guided setup UI in the host application.
  *
  */
-- (void)configureAccessory:(EAWiFiUnconfiguredAccessory*)accessory withConfigurationUIOnViewController:(UIViewController*)viewController NS_AVAILABLE(NA, 8_0);
+- (void)configureAccessory:(EAWiFiUnconfiguredAccessory *)accessory withConfigurationUIOnViewController:(UIViewController *)viewController NS_AVAILABLE(NA, 8_0);
 
 @end
 
@@ -159,7 +162,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *  @param state   The current state of the EAWiFiUnconfiguredAccessoryBrowser.
  *
  */
-- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser*)browser didUpdateState:(EAWiFiUnconfiguredAccessoryBrowserState)state NS_AVAILABLE(NA, 8_0);
+- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)browser didUpdateState:(EAWiFiUnconfiguredAccessoryBrowserState)state NS_AVAILABLE(NA, 8_0);
 
 /*!
  *  @method accessoryBrowser:didFindUnconfiguredAccessories:
@@ -171,7 +174,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *  @param accessories The set of EAWiFiUnconfiguredAccessory objects that have been found since the last update.
  *
  */
-- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser*)browser didFindUnconfiguredAccessories:(NSSet*)accessories NS_AVAILABLE(NA, 8_0);
+- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)browser didFindUnconfiguredAccessories:(NSSet<EAWiFiUnconfiguredAccessory *> *)accessories NS_AVAILABLE(NA, 8_0);
 
 /*!
  *  @method accessoryBrowser:didRemoveUnconfiguredAccessories:
@@ -183,7 +186,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *  @param accessories The set of EAWiFiUnconfiguredAccessory objects that have been removed from the scan results since the last update.
  *
  */
-- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser*)browser didRemoveUnconfiguredAccessories:(NSSet*)accessories NS_AVAILABLE(NA, 8_0);
+- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)browser didRemoveUnconfiguredAccessories:(NSSet<EAWiFiUnconfiguredAccessory *> *)accessories NS_AVAILABLE(NA, 8_0);
 
 /*!
  *  @method accessoryBrowser:didFinishConfiguringAccessory:withError:
@@ -195,6 +198,8 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *  @param status    The status of the configuration process that has completed.
  *
  */
-- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser*)browser didFinishConfiguringAccessory:(EAWiFiUnconfiguredAccessory*)accessory withStatus:(EAWiFiUnconfiguredAccessoryConfigurationStatus)status NS_AVAILABLE(NA, 8_0);
+- (void)accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)browser didFinishConfiguringAccessory:(EAWiFiUnconfiguredAccessory *)accessory withStatus:(EAWiFiUnconfiguredAccessoryConfigurationStatus)status NS_AVAILABLE(NA, 8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

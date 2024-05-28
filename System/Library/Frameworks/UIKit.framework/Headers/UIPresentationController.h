@@ -14,6 +14,8 @@
 #import <UIKit/UITraitCollection.h>
 #import <UIKit/UIViewControllerTransitionCoordinator.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UIPresentationController;
 
 @protocol UIAdaptivePresentationControllerDelegate <NSObject>
@@ -27,26 +29,26 @@
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_3);
 
 /* If this method is not implemented, or returns nil, then the originally presented view controller is used. */
-- (UIViewController *)presentationController:(UIPresentationController *)controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle)style;
+- (nullable UIViewController *)presentationController:(UIPresentationController *)controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle)style;
 
 // If there is no adaptation happening and an original style is used UIModalPresentationNone will be passed as an argument.
-- (void)presentationController:(UIPresentationController *)presentationController willPresentWithAdaptiveStyle:(UIModalPresentationStyle)style transitionCoordinator:(id <UIViewControllerTransitionCoordinator>)transitionCoordinator NS_AVAILABLE_IOS(8_3);
+- (void)presentationController:(UIPresentationController *)presentationController willPresentWithAdaptiveStyle:(UIModalPresentationStyle)style transitionCoordinator:(nullable id <UIViewControllerTransitionCoordinator>)transitionCoordinator NS_AVAILABLE_IOS(8_3);
 
 
 @end
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAppearanceContainer, UITraitEnvironment, UIContentContainer>
 
-@property(nonatomic, retain, readonly) UIViewController *presentingViewController;
-@property(nonatomic, retain, readonly) UIViewController *presentedViewController;
+@property(nonatomic, strong, readonly) UIViewController *presentingViewController;
+@property(nonatomic, strong, readonly) UIViewController *presentedViewController;
 
-@property(nonatomic,readonly) UIModalPresentationStyle presentationStyle;
+@property(nonatomic, readonly) UIModalPresentationStyle presentationStyle;
 
 // The view in which a presentation occurs. It is an ancestor of both the presenting and presented view controller's views.
 // This view is being passed to the animation controller.
-@property(nonatomic, readonly) UIView *containerView;
+@property(nullable, nonatomic, readonly, strong) UIView *containerView;
 
-@property(nonatomic, assign) id <UIAdaptivePresentationControllerDelegate> delegate;
+@property(nullable, nonatomic, weak) id <UIAdaptivePresentationControllerDelegate> delegate;
 
 - (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController;
 
@@ -62,7 +64,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // A view that's going to be animated during the presentation. Must be an ancestor of a presented view controller's view
 // or a presented view controller's view itself.
 // (Default: presented view controller's view)
-- (UIView *)presentedView;
+- (nullable UIView *)presentedView;
 
 // Position of the presented view in the container view by the end of the presentation transition.
 // (Default: container view bounds)
@@ -84,7 +86,9 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 - (void)dismissalTransitionDidEnd:(BOOL)completed;
 
 // Modifies the trait collection for the presentation controller.
-@property(nonatomic, copy) UITraitCollection *overrideTraitCollection;
+@property(nullable, nonatomic, copy) UITraitCollection *overrideTraitCollection;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

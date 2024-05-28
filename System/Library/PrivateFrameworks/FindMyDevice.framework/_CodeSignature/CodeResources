@@ -6,11 +6,23 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		x7fVux712cDvdaUmsnmUogmZnp0=
+		0+TKgav6Qu2IZzR/fo89xeW81L0=
 		</data>
 		<key>URLTemplates.plist</key>
 		<data>
-		ccT6uVIOKofDCzmzan/FQ38t0jg=
+		s6Cuh21XJVhzlrDuY5Kph9wgODs=
+		</data>
+		<key>XPCServices/FindMyDeviceHelperXPCService.xpc/FindMyDeviceHelperXPCService</key>
+		<data>
+		iTtmnkFhSO7FY0UdkDptrhetB0k=
+		</data>
+		<key>XPCServices/FindMyDeviceHelperXPCService.xpc/Info.plist</key>
+		<data>
+		nQY4vH0i1ciPXFdcV30HpV47+eI=
+		</data>
+		<key>XPCServices/FindMyDeviceHelperXPCService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		keHZwqbZ43/5Wjg5t3aDKZXsXKk=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -25,7 +37,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yWGeCG1/4zfj+SrgBcU993smoVA=
+			5IHaQqh8SVEKWISRO8WHWUUgxGs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -33,17 +45,25 @@
 		<key>fmd_sound.aiff</key>
 		<data>
 		sBqu2vHcr0gV9Xpw0BAii9nyrWw=
-		</data>
-		<key>version.plist</key>
-		<data>
-		JHPSPlhgjFy7e4Ke9LsVn6PuKxU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>URLTemplates.plist</key>
 		<data>
-		ccT6uVIOKofDCzmzan/FQ38t0jg=
+		s6Cuh21XJVhzlrDuY5Kph9wgODs=
+		</data>
+		<key>XPCServices/FindMyDeviceHelperXPCService.xpc/FindMyDeviceHelperXPCService</key>
+		<data>
+		iTtmnkFhSO7FY0UdkDptrhetB0k=
+		</data>
+		<key>XPCServices/FindMyDeviceHelperXPCService.xpc/Info.plist</key>
+		<data>
+		nQY4vH0i1ciPXFdcV30HpV47+eI=
+		</data>
+		<key>XPCServices/FindMyDeviceHelperXPCService.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		keHZwqbZ43/5Wjg5t3aDKZXsXKk=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -58,7 +78,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yWGeCG1/4zfj+SrgBcU993smoVA=
+			5IHaQqh8SVEKWISRO8WHWUUgxGs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -66,10 +86,6 @@
 		<key>fmd_sound.aiff</key>
 		<data>
 		sBqu2vHcr0gV9Xpw0BAii9nyrWw=
-		</data>
-		<key>version.plist</key>
-		<data>
-		JHPSPlhgjFy7e4Ke9LsVn6PuKxU=
 		</data>
 	</dict>
 	<key>rules</key>

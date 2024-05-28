@@ -21,11 +21,13 @@
   stuff.
 */
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class UIView;
 @class UINavigationItem, UIBarButtonItem, UITabBarItem;
 @class UISearchDisplayController;
 @class UIPopoverController;
-@class UIStoryboard, UIStoryboardSegue;
+@class UIStoryboard, UIStoryboardSegue, UIStoryboardUnwindSegueSource;
 @class UIScrollView;
 @protocol UIViewControllerTransitionCoordinator;
 
@@ -87,108 +89,7 @@ typedef NS_ENUM(NSInteger, UIModalPresentationStyle) {
 // Sometimes view controllers that are using showViewController:sender and showDetailViewController:sender: will need to know when the split view controller environment above it has changed. This notification will be posted when that happens (for example, when a split view controller is collapsing or expanding). The NSNotification's object will be the view controller that caused the change.
 UIKIT_EXTERN NSString *const UIViewControllerShowDetailTargetDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer> {
-    @package
-    UIView           *_view;
-    UITabBarItem     *_tabBarItem;
-    UINavigationItem *_navigationItem;
-    NSArray          *_toolbarItems;
-    NSString         *_title;
-    
-    NSString         *_nibName;
-    NSBundle         *_nibBundle;
-    
-    UIViewController *_parentViewController; // Nonretained
-    
-    UIViewController *_childModalViewController;
-    UIViewController *_parentModalViewController; // Nonretained
-    UIViewController *_previousRootViewController; // Nonretained    
-    UIView           *_modalTransitionView;
-    UIResponder	     *_modalPreservedFirstResponder;
-    id               _dimmingView;
-    id               _dropShadowView;
-    
-    id                _currentAction;
-    UIStoryboard     *_storyboard;
-    NSArray          *_storyboardSegueTemplates;
-    NSDictionary     *_externalObjectsTableForViewLoading;
-    NSArray          *_topLevelObjectsToKeepAliveFromStoryboard;
-    
-    UIView           *_savedHeaderSuperview;
-    UIView           *_savedFooterSuperview;
-    
-    UIBarButtonItem  *_editButtonItem;
-    
-    UISearchDisplayController *_searchDisplayController;
-    
-    UIModalTransitionStyle _modalTransitionStyle;
-    UIModalPresentationStyle _modalPresentationStyle;
-    
-    UIInterfaceOrientation _lastKnownInterfaceOrientation;
-
-    UIPopoverController*    _popoverController;
-    UIView *_containerViewInSheet;
-    CGSize _contentSizeForViewInPopover;
-    CGSize _formSheetSize;
-
-    UIScrollView *_recordedContentScrollView;
-
-    void (^_afterAppearance)(void);
-    NSInteger _explicitAppearanceTransitionLevel;
-    
-    NSArray *_keyCommands;
-    
-    NSMapTable *_overrideTraitCollections;
-
-    struct {
-        unsigned int appearState:2;
-        unsigned int isEditing:1;
-        unsigned int isPerformingModalTransition:1;
-        unsigned int hidesBottomBarWhenPushed:1;
-        unsigned int autoresizesArchivedViewToFullSize:1;
-        unsigned int viewLoadedFromControllerNib:1;
-        unsigned int isRootViewController:1;
-        unsigned int customizesForPresentationInPopover:1;
-        unsigned int isSuspended:1;
-        unsigned int wasApplicationFrameAtSuspend:1;
-        unsigned int wantsFullScreenLayout:1;
-        unsigned int shouldUseFullScreenLayout:1;
-        unsigned int allowsAutorotation:1;
-        unsigned int searchControllerRetained:1;
-        unsigned int oldModalInPopover:1;
-        unsigned int isModalInPopover:1;
-        unsigned int isInWillRotateCallback:1;
-        unsigned int disallowMixedOrientationPresentations:1;
-        unsigned int isFinishingModalTransition:1;
-        unsigned int definesPresentationContext:1;
-        unsigned int providesPresentationContextTransitionStyle:1;        
-        unsigned int containmentSupport:1;
-        unsigned int isSettingAppearState:1;
-        unsigned int isInAnimatedVCTransition:1;
-        unsigned int presentationIsChanging:1;
-        unsigned int isBeingPresented:1;        
-        unsigned int containmentIsChanging:1;
-        unsigned int explicitTransitionIsAppearing:1;
-        unsigned int disableAppearanceTransitions:1;
-        unsigned int needsDidMoveCleanup:1;        
-        unsigned int suppressesBottomBar:1;
-        unsigned int disableRootPromotion:1;
-        unsigned int interfaceOrientationReentranceGuard:1;
-        unsigned int isExecutingAfterAppearance:1;
-        unsigned int rootResignationNeeded:1;
-        unsigned int shouldSynthesizeSupportedOrientations:1;
-        unsigned int viewConstraintsNeedUpdateOnAppearance:1;
-        unsigned int shouldForceNonAnimatedTransition:1;
-        unsigned int isInCustomTransition:1;
-        unsigned int usesSharedView:1;
-        unsigned int extendedLayoutIncludesOpaqueBars:1;
-        unsigned int automaticallyAdjustInsets:1;
-        unsigned int previousShouldUnderlapUnderStatusBar:1;
-        unsigned int freezeShouldUnderlapUnderStatusBar:1;
-        unsigned int neverResizeRoot:1;
-        unsigned int monitorsSystemLayoutFittingSize:1;
-    } _viewControllerFlags;
-}
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer>
 
 /*
   The designated initializer. If you subclass UIViewController, you must call the super implementation of this
@@ -199,10 +100,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
   name is the same as your view controller's class. If no such NIB in fact exists then you must either call
   -setView: before -view is invoked, or override the -loadView method to set up your views programatically.
 */
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
-@property(nonatomic,retain) UIView *view; // The getter first invokes [self loadView] if the view hasn't been set yet. Subclasses must call super if they override the setter or getter.
+@property(null_resettable, nonatomic,strong) UIView *view; // The getter first invokes [self loadView] if the view hasn't been set yet. Subclasses must call super if they override the setter or getter.
 - (void)loadView; // This is where subclasses should create their custom view hierarchy if they aren't using a nib. Should never be called directly.
+- (void)loadViewIfNeeded NS_AVAILABLE_IOS(9_0); // Loads the view controller's view if it has not already been set.
+@property(nullable, nonatomic, readonly, strong) UIView *viewIfLoaded NS_AVAILABLE_IOS(9_0); // Returns the view controller's view if loaded, nil if not.
 
 - (void)viewWillUnload NS_DEPRECATED_IOS(5_0,6_0);
 - (void)viewDidUnload NS_DEPRECATED_IOS(3_0,6_0); // Called after the view controller's view is released and set to nil. For example, a memory warning which causes the view to be purged. Not invoked as a result of -dealloc.
@@ -210,22 +114,36 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 - (void)viewDidLoad; // Called after the view has been loaded. For view controllers created in code, this is after -loadView. For view controllers unarchived from a nib, this is after the view is set.
 - (BOOL)isViewLoaded NS_AVAILABLE_IOS(3_0);
 
-@property(nonatomic, readonly, copy) NSString *nibName;     // The name of the nib to be loaded to instantiate the view.
-@property(nonatomic, readonly, retain) NSBundle *nibBundle; // The bundle from which to load the nib.
-@property(nonatomic, readonly, retain) UIStoryboard *storyboard NS_AVAILABLE_IOS(5_0);
+@property(nullable, nonatomic, readonly, copy) NSString *nibName;     // The name of the nib to be loaded to instantiate the view.
+@property(nullable, nonatomic, readonly, strong) NSBundle *nibBundle; // The bundle from which to load the nib.
+@property(nullable, nonatomic, readonly, strong) UIStoryboard *storyboard NS_AVAILABLE_IOS(5_0);
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender NS_AVAILABLE_IOS(5_0);
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender NS_AVAILABLE_IOS(6_0); // Invoked immediately prior to initiating a segue. Return NO to prevent the segue from firing. The default implementation returns YES. This method is not invoked when -performSegueWithIdentifier:sender: is used.
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender NS_AVAILABLE_IOS(5_0);
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(nullable id)sender NS_AVAILABLE_IOS(5_0);
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(nullable id)sender NS_AVAILABLE_IOS(6_0); // Invoked immediately prior to initiating a segue. Return NO to prevent the segue from firing. The default implementation returns YES. This method is not invoked when -performSegueWithIdentifier:sender: is used.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender NS_AVAILABLE_IOS(5_0);
 
 // View controllers will receive this message during segue unwinding. The default implementation returns the result of -respondsToSelector: - controllers can override this to perform any ancillary checks, if necessary.
 - (BOOL)canPerformUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender NS_AVAILABLE_IOS(6_0);
 
-// Custom containers should override this method and search their children for an action handler (using -canPerformUnwindSegueAction:fromViewController:sender:). If a handler is found, the controller should return it. Otherwise, the result of invoking super's implementation should be returned.
-- (UIViewController *)viewControllerForUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender NS_AVAILABLE_IOS(6_0);
+// Returns a subset of the receiver's childViewControllers in the order they should be searched for an unwind destination.
+// The default implementation first sends itself -childViewControllerContainingSegueSource:, then returns a copy of its childViewControllers array excluding that object. A custom container view controller can override this method to affect the order in which its children are searched, or to modify the result of the default implementation.
+// For compatibility, if a view controller overrides the deprecated -viewControllerForUnwindSegueAction:fromViewController:sender: method, but does not override this method, it will receive the deprecated method instead of this method.
+// To affect this view controller's eligibility as an unwind destination, override -canPerformUnwindSegueAction:fromViewController:withSender: instead.
+- (NSArray<UIViewController *> *)allowedChildViewControllersForUnwindingFromSource:(UIStoryboardUnwindSegueSource *)source NS_AVAILABLE_IOS(9_0);
 
-// Custom container view controllers should override this method and return segue instances that will perform the navigation portion of segue unwinding.
-- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier NS_AVAILABLE_IOS(6_0);
+// Returns the child view controller that contains the provided segue source.
+// Custom container view controllers should call this method from their implementation of -allowedChildViewControllersForUnwindingFromSource: to exclude the result from the returned array, as well as to determine the order of the returned array's contents.
+// Do not try to re-implement or override this method; it takes special care to handle situations such as unwinding from a modally-presented view controller.
+- (nullable UIViewController *)childViewControllerContainingSegueSource:(UIStoryboardUnwindSegueSource *)source NS_AVAILABLE_IOS(9_0);
+
+// Deprecated. Returns a direct child of the receiver that responds YES to -canPerformUnwindSegueAction:fromViewController:withSender:, or self if no children respond YES but the receiver itself does. If this method has been overridden, UIViewController's implementation does not consult child view controllers at all, and skips straight to sending -canPerformUnwindSegueAction:... to self.
+- (nullable UIViewController *)viewControllerForUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(nullable id)sender NS_DEPRECATED_IOS(6_0, 9_0);
+
+// Custom container view controllers should override this method to modify themselves as part of an ongoing unwind segue. The subsequentVC is the parent, child, or presented view controller closest to the receiver in the direction of the segue's destinationViewController. For example, UINavigationController's implementation of this method will pop any necessary view controllers to reveal the subsequentVC.
+- (void)unwindForSegue:(UIStoryboardSegue *)unwindSegue towardsViewController:(UIViewController *)subsequentVC NS_AVAILABLE_IOS(9_0);
+
+// Deprecated. Returns a segue that will unwind from the source to destination view controller via the -unwindForSegue:towardViewController: method. When performing an unwind segue defined in a storyboard, if any view controller along the unwind path has overridden this method and returns non-nil, the runtime will use that segue object instead of constructing an instance of the class specified in Interface Builder.
+- (nullable UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(nullable NSString *)identifier NS_DEPRECATED_IOS(6_0, 9_0);
 
 - (void)viewWillAppear:(BOOL)animated;    // Called when the view is about to made visible. Default does nothing
 - (void)viewDidAppear:(BOOL)animated;     // Called when the view has been fully transitioned onto the screen. Default does nothing
@@ -237,7 +155,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 // Called just after the view controller's view's layoutSubviews method is invoked. Subclasses can implement as necessary. The default is a nop.
 - (void)viewDidLayoutSubviews NS_AVAILABLE_IOS(5_0);
 
-@property(nonatomic,copy) NSString *title;  // Localized title for use by a parent controller.
+@property(nullable, nonatomic,copy) NSString *title;  // Localized title for use by a parent controller.
 
 - (void)didReceiveMemoryWarning; // Called when the parent application receives a memory warning. On iOS 6.0 it will no longer clear the view by default.
 
@@ -246,16 +164,16 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
   controller,) this is the containing view controller.  Note that as of 5.0 this no longer will return the
   presenting view controller.
 */
-@property(nonatomic,readonly) UIViewController *parentViewController;
+@property(nullable,nonatomic,weak,readonly) UIViewController *parentViewController;
 
 // This property has been replaced by presentedViewController.
-@property(nonatomic,readonly) UIViewController *modalViewController NS_DEPRECATED_IOS(2_0, 6_0);
+@property(nullable, nonatomic,readonly) UIViewController *modalViewController NS_DEPRECATED_IOS(2_0, 6_0);
 
 // The view controller that was presented by this view controller or its nearest ancestor.
-@property(nonatomic,readonly) UIViewController *presentedViewController  NS_AVAILABLE_IOS(5_0);
+@property(nullable, nonatomic,readonly) UIViewController *presentedViewController  NS_AVAILABLE_IOS(5_0);
 
 // The view controller that presented this view controller (or its farthest ancestor.)
-@property(nonatomic,readonly) UIViewController *presentingViewController NS_AVAILABLE_IOS(5_0);
+@property(nullable, nonatomic,readonly) UIViewController *presentingViewController NS_AVAILABLE_IOS(5_0);
 
 /*
   Determines which parent view controller's view should be presented over for presentations of type
@@ -285,9 +203,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
   dismissModalViewControllerAnimated: The completion handler, if provided, will be invoked after the presented
   controllers viewDidAppear: callback is invoked.
 */
-- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
+- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0);
 // The completion handler, if provided, will be invoked after the dismissed controller's viewDidDisappear: callback is invoked.
-- (void)dismissViewControllerAnimated: (BOOL)flag completion: (void (^)(void))completion NS_AVAILABLE_IOS(5_0);
+- (void)dismissViewControllerAnimated: (BOOL)flag completion: (void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0);
 
 // Display another view controller as a modal child. Uses a vertical sheet transition if animated.This method has been replaced by presentViewController:animated:completion:
 - (void)presentModalViewController:(UIViewController *)modalViewController animated:(BOOL)animated NS_DEPRECATED_IOS(2_0, 6_0);
@@ -327,15 +245,15 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 // This should be called whenever the return values for the view controller's status bar attributes have changed. If it is called from within an animation block, the changes will be animated along with the rest of the animation block.
 - (void)setNeedsStatusBarAppearanceUpdate NS_AVAILABLE_IOS(7_0);
 
-/* This method returns either itself or the nearest ancestor that responds to the action. View controllers can return NO from canPerformAction:withSender: to opt out of being a target for a given action. */
-- (UIViewController *)targetViewControllerForAction:(SEL)action sender:(id)sender NS_AVAILABLE_IOS(8_0);
+/* This method returns either itself or the nearest ancestor that can perform the given action and, if applicable, has overridden UIViewController's default implementation of the action method. View controllers can return NO from canPerformAction:withSender: to opt out of being a target for a given action. */
+- (nullable UIViewController *)targetViewControllerForAction:(SEL)action sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 /* This method will show a view controller appropriately for the current size-class environment. It's implementation calls
  `[self targetViewControllerForAction:sender:]` first and redirects accordingly if the return value is not `self`, otherwise it will present the vc. */
-- (void)showViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+- (void)showViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 /* This method will show a view controller within the semantic "detail" UI associated with the current size-class environment. It's implementation calls  `[self targetViewControllerForAction:sender:]` first and redirects accordingly if the return value is not `self`, otherwise it will present the vc.  */
-- (void)showDetailViewController:(UIViewController *)vc sender:(id)sender NS_AVAILABLE_IOS(8_0);
+- (void)showDetailViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -351,13 +269,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 
 // New Autorotation support.
 - (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0);
-- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0);
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0);
 // Returns interface orientation masks.
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation NS_AVAILABLE_IOS(6_0);
 
 // The rotating header and footer views will slide out during the rotation and back in once it has completed.
-- (UIView *)rotatingHeaderView NS_DEPRECATED_IOS(2_0,8_0, "Header views are animated along with the rest of the view hierarchy");     // Must be in the view hierarchy. Default returns nil.
-- (UIView *)rotatingFooterView NS_DEPRECATED_IOS(2_0,8_0, "Footer views are animated along with the rest of the view hierarchy");     // Must be in the view hierarchy. Default returns nil.
+- (nullable UIView *)rotatingHeaderView NS_DEPRECATED_IOS(2_0,8_0, "Header views are animated along with the rest of the view hierarchy");     // Must be in the view hierarchy. Default returns nil.
+- (nullable UIView *)rotatingFooterView NS_DEPRECATED_IOS(2_0,8_0, "Footer views are animated along with the rest of the view hierarchy");     // Must be in the view hierarchy. Default returns nil.
 
 @property(nonatomic,readonly) UIInterfaceOrientation interfaceOrientation NS_DEPRECATED_IOS(2_0,8_0);
 
@@ -386,7 +304,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
 
 @interface UIViewController (UISearchDisplayControllerSupport)
 
-@property(nonatomic, readonly, retain) UISearchDisplayController *searchDisplayController NS_DEPRECATED_IOS(3_0,8_0);
+@property(nullable, nonatomic, readonly, strong) UISearchDisplayController *searchDisplayController NS_DEPRECATED_IOS(3_0,8_0);
 
 @end
 
@@ -406,7 +324,7 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 @interface UIViewController (UIContainerViewControllerProtectedMethods)
 
 // An array of children view controllers. This array does not include any presented view controllers.
-@property(nonatomic,readonly) NSArray *childViewControllers NS_AVAILABLE_IOS(5_0);
+@property(nonatomic,readonly) NSArray<__kindof UIViewController *> *childViewControllers NS_AVAILABLE_IOS(5_0);
 
 /*
   If the child controller has a different parent controller, it will first be removed from its current parent
@@ -434,7 +352,7 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
   UIView APIs directly. If they are used it is important to ensure that the toViewController's view is added
   to the visible view hierarchy while the fromViewController's view is removed.
 */
-- (void)transitionFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(5_0);
+- (void)transitionFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^ __nullable)(void))animations completion:(void (^ __nullable)(BOOL finished))completion NS_AVAILABLE_IOS(5_0);
 
 // If a custom container controller manually forwards its appearance callbacks, then rather than calling
 // viewWillAppear:, viewDidAppear: viewWillDisappear:, or viewDidDisappear: on the children these methods
@@ -445,12 +363,12 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 - (void)endAppearanceTransition __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
 // Override to return a child view controller or nil. If non-nil, that view controller's status bar appearance attributes will be used. If nil, self is used. Whenever the return values from these methods change, -setNeedsUpdatedStatusBarAttributes should be called.
-- (UIViewController *)childViewControllerForStatusBarStyle NS_AVAILABLE_IOS(7_0);
-- (UIViewController *)childViewControllerForStatusBarHidden NS_AVAILABLE_IOS(7_0);
+- (nullable UIViewController *)childViewControllerForStatusBarStyle NS_AVAILABLE_IOS(7_0);
+- (nullable UIViewController *)childViewControllerForStatusBarHidden NS_AVAILABLE_IOS(7_0);
 
 // Call to modify the trait collection for child view controllers.
-- (void)setOverrideTraitCollection:(UITraitCollection *)collection forChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
-- (UITraitCollection *)overrideTraitCollectionForChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
+- (void)setOverrideTraitCollection:(nullable UITraitCollection *)collection forChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
+- (nullable UITraitCollection *)overrideTraitCollectionForChildViewController:(UIViewController *)childViewController NS_AVAILABLE_IOS(8_0);
 
 @end
 
@@ -488,14 +406,14 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
   didMoveToParentViewController:. Similarly, subclasses will typically define a method that removes a child in
   the reverse manner by first calling [child willMoveToParentViewController:nil].
 */
-- (void)willMoveToParentViewController:(UIViewController *)parent NS_AVAILABLE_IOS(5_0);
-- (void)didMoveToParentViewController:(UIViewController *)parent NS_AVAILABLE_IOS(5_0);
+- (void)willMoveToParentViewController:(nullable UIViewController *)parent NS_AVAILABLE_IOS(5_0);
+- (void)didMoveToParentViewController:(nullable UIViewController *)parent NS_AVAILABLE_IOS(5_0);
 
 @end
 
 @interface UIViewController (UIStateRestoration) <UIStateRestoring>
-@property (nonatomic, copy) NSString *restorationIdentifier NS_AVAILABLE_IOS(6_0);
-@property (nonatomic, readwrite, assign) Class<UIViewControllerRestoration> restorationClass NS_AVAILABLE_IOS(6_0);
+@property (nullable, nonatomic, copy) NSString *restorationIdentifier NS_AVAILABLE_IOS(6_0);
+@property (nullable, nonatomic, readwrite, assign) Class<UIViewControllerRestoration> restorationClass NS_AVAILABLE_IOS(6_0);
 - (void) encodeRestorableStateWithCoder:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
 - (void) decodeRestorableStateWithCoder:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
 - (void) applicationFinishedRestoringState NS_AVAILABLE_IOS(7_0);
@@ -517,14 +435,21 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 
 @interface UIViewController(UIViewControllerTransitioning)
 
-@property (nonatomic,assign) id <UIViewControllerTransitioningDelegate> transitioningDelegate NS_AVAILABLE_IOS(7_0);
+@property (nullable, nonatomic, weak) id <UIViewControllerTransitioningDelegate> transitioningDelegate NS_AVAILABLE_IOS(7_0);
 
 @end
 
 @interface UIViewController (UILayoutSupport)
 // These objects may be used as layout items in the NSLayoutConstraint API
-@property(nonatomic,readonly,retain) id<UILayoutSupport> topLayoutGuide NS_AVAILABLE_IOS(7_0);
-@property(nonatomic,readonly,retain) id<UILayoutSupport> bottomLayoutGuide NS_AVAILABLE_IOS(7_0);
+@property(nonatomic,readonly,strong) id<UILayoutSupport> topLayoutGuide NS_AVAILABLE_IOS(7_0);
+@property(nonatomic,readonly,strong) id<UILayoutSupport> bottomLayoutGuide NS_AVAILABLE_IOS(7_0);
+@end
+
+@interface UIViewController (UIKeyCommand)
+
+- (void)addKeyCommand:(UIKeyCommand *)keyCommand NS_AVAILABLE_IOS(9_0);
+- (void)removeKeyCommand:(UIKeyCommand *)keyCommand NS_AVAILABLE_IOS(9_0);
+
 @end
 
 @class NSExtensionContext;
@@ -532,13 +457,81 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 @interface UIViewController(NSExtensionAdditions) <NSExtensionRequestHandling>
 
 // Returns the extension context. Also acts as a convenience method for a view controller to check if it participating in an extension request.
-@property (nonatomic,readonly,retain) NSExtensionContext *extensionContext NS_AVAILABLE_IOS(8_0);
+@property (nullable, nonatomic,readonly,strong) NSExtensionContext *extensionContext NS_AVAILABLE_IOS(8_0);
 
 @end
 
 @class UIPresentationController, UIPopoverPresentationController;
 
 @interface UIViewController (UIAdaptivePresentations)
-@property (nonatomic,readonly) UIPresentationController *presentationController NS_AVAILABLE_IOS(8_0);
-@property (nonatomic,readonly) UIPopoverPresentationController *popoverPresentationController NS_AVAILABLE_IOS(8_0);
+@property (nullable, nonatomic,readonly) UIPresentationController *presentationController NS_AVAILABLE_IOS(8_0);
+@property (nullable, nonatomic,readonly) UIPopoverPresentationController *popoverPresentationController NS_AVAILABLE_IOS(8_0);
 @end
+
+
+@protocol UIViewControllerPreviewingDelegate;
+
+@protocol UIViewControllerPreviewing <NSObject>
+
+// This gesture can be used to cause the previewing presentation to wait until one of your gestures fails or to allow simultaneous recognition during the initial phase of the preview presentation.
+@property (nonatomic, readonly) UIGestureRecognizer *previewingGestureRecognizerForFailureRelationship NS_AVAILABLE_IOS(9_0);
+
+@property (nonatomic, readonly) id<UIViewControllerPreviewingDelegate> delegate NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, readonly) UIView *sourceView NS_AVAILABLE_IOS(9_0);
+
+// This rect will be set to the bounds of sourceView before each call to
+// -previewingContext:viewControllerForLocation:
+
+@property (nonatomic) CGRect sourceRect NS_AVAILABLE_IOS(9_0);
+
+@end
+
+
+NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIViewControllerPreviewingDelegate <NSObject>
+
+// If you return nil, a preview presentation will not be performed
+- (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location NS_AVAILABLE_IOS(9_0);
+- (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit NS_AVAILABLE_IOS(9_0);
+
+@end
+
+@interface UIViewController (UIViewControllerPreviewingRegistration)
+
+- (id <UIViewControllerPreviewing>)registerForPreviewingWithDelegate:(id<UIViewControllerPreviewingDelegate>)delegate sourceView:(UIView *)sourceView NS_AVAILABLE_IOS(9_0);
+- (void)unregisterForPreviewingWithContext:(id <UIViewControllerPreviewing>)previewing NS_AVAILABLE_IOS(9_0);
+
+@end
+
+@protocol UIPreviewActionItem;
+
+@interface UIViewController ()
+
+- (NSArray <id <UIPreviewActionItem>> *)previewActionItems NS_AVAILABLE_IOS(9_0);
+
+@end
+
+
+NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIPreviewActionItem <NSObject>
+@property(nonatomic, copy, readonly) NSString *title;
+@end
+
+typedef NS_ENUM(NSInteger,UIPreviewActionStyle) {
+    UIPreviewActionStyleDefault=0,
+    UIPreviewActionStyleSelected,
+    UIPreviewActionStyleDestructive,
+} NS_ENUM_AVAILABLE_IOS(9_0);
+
+NS_CLASS_AVAILABLE_IOS(9_0) @interface UIPreviewAction : NSObject <NSCopying,UIPreviewActionItem>
+
+@property(nonatomic, copy, readonly) void (^handler)(id<UIPreviewActionItem> action, UIViewController *previewViewController);
+
++ (instancetype)actionWithTitle:(NSString *)title style:(UIPreviewActionStyle)style handler:(void (^)(UIPreviewAction *action, UIViewController *previewViewController))handler;
+
+@end
+
+NS_CLASS_AVAILABLE_IOS(9_0) @interface UIPreviewActionGroup : NSObject <NSCopying,UIPreviewActionItem>
++ (instancetype)actionGroupWithTitle:(NSString *)title style:(UIPreviewActionStyle)style actions:(NSArray<UIPreviewAction *> *)actions;
+@end
+
+
+NS_ASSUME_NONNULL_END

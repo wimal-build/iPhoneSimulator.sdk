@@ -22,6 +22,6 @@
  @property   newsstandAssetDownload
  @abstract   A pointer to the asset download that this connection is associated with.
  */
-@property (readonly, weak) NKAssetDownload *newsstandAssetDownload NS_AVAILABLE_IOS(5_0);
+@property (readonly, weak, nullable) NKAssetDownload *newsstandAssetDownload NS_AVAILABLE_IOS(5_0);
 
 @end

@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 
-MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPVolumeView : UIView <NSCoding>
+NS_ASSUME_NONNULL_BEGIN
+
+MP_EXTERN_CLASS_AVAILABLE(2_0)
+
+@interface MPVolumeView : UIView <NSCoding>
 
 @property (nonatomic) BOOL showsVolumeSlider NS_AVAILABLE_IOS(4_2); // Default is YES.
 @property (nonatomic) BOOL showsRouteButton NS_AVAILABLE_IOS(4_2);  // Default is YES.
@@ -23,28 +27,28 @@ MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPVolumeView : UIView <NSCoding>
 
 // Volume slider customization
 
-- (void)setMinimumVolumeSliderImage:(UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
-- (void)setMaximumVolumeSliderImage:(UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
-- (void)setVolumeThumbImage:(UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (void)setMinimumVolumeSliderImage:(nullable UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (void)setMaximumVolumeSliderImage:(nullable UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (void)setVolumeThumbImage:(nullable UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
 
-- (UIImage *)minimumVolumeSliderImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
-- (UIImage *)maximumVolumeSliderImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
-- (UIImage *)volumeThumbImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (nullable UIImage *)minimumVolumeSliderImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (nullable UIImage *)maximumVolumeSliderImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (nullable UIImage *)volumeThumbImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
 
 // Sets the image for the EU volume limit. When appropriate, this image will be displayed on top of the
 // maximumVolumeSliderImage. It must be visually distinct from the maximumVolumeSliderImage, and use
 // a color similar to the default, to convey a sense of warning to the user. The same image is used for
 // all control states. For debugging purposes, switch on the "EU Volume Limit" setting in the Developer
 // menu of the Settings application to always enable the volume limit.
-@property (nonatomic, strong) UIImage *volumeWarningSliderImage NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, strong, nullable) UIImage *volumeWarningSliderImage NS_AVAILABLE_IOS(7_0);
 
 - (CGRect)volumeSliderRectForBounds:(CGRect)bounds NS_AVAILABLE_IOS(6_0);
 - (CGRect)volumeThumbRectForBounds:(CGRect)bounds volumeSliderRect:(CGRect)rect value:(float)value NS_AVAILABLE_IOS(6_0);
 
 // Route button customization
 
-- (void)setRouteButtonImage:(UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
-- (UIImage *)routeButtonImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (void)setRouteButtonImage:(nullable UIImage *)image forState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
+- (nullable UIImage *)routeButtonImageForState:(UIControlState)state NS_AVAILABLE_IOS(6_0);
 
 - (CGRect)routeButtonRectForBounds:(CGRect)bounds NS_AVAILABLE_IOS(6_0);
 
@@ -55,3 +59,5 @@ MP_EXTERN NSString *const MPVolumeViewWirelessRoutesAvailableDidChangeNotificati
 
 // Posted when the wirelessRouteActive property changes.
 MP_EXTERN NSString *const MPVolumeViewWirelessRouteActiveDidChangeNotification NS_AVAILABLE_IOS(7_0);
+
+NS_ASSUME_NONNULL_END

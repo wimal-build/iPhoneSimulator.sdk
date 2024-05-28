@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+    
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPrinter : NSObject
 
 /*!
@@ -68,7 +70,7 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
  *		This property's value is undefined until contactPrinter: has been called and
  *		completed successfully.
  */
-@property (readonly,copy) NSString *displayLocation;
+@property (nullable,readonly,copy) NSString *displayLocation;
 
 /*!
  *  @abstract   Returns the supported job types of this printer.
@@ -86,7 +88,7 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
  *		This property's value is undefined until contactPrinter: has been called and
  *		completed successfully.
  */
-@property (readonly,copy) NSString *makeAndModel;
+@property (nullable, readonly,copy) NSString *makeAndModel;
 
 /*!
  *  @abstract   Return whether this printer supports color printing.
@@ -115,6 +117,8 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
  *		supportsColor, and supportsDuplex for the printer.
  *		The operation can take up to 30 seconds.
  */
-- (void)contactPrinter:(void(^)(BOOL available))completionHandler;
+- (void)contactPrinter:(void(^ __nullable)(BOOL available))completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

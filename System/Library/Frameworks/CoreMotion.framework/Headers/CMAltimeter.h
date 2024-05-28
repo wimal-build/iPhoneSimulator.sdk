@@ -9,13 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMAltitude.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  *  CMAltitudeHandler
  *
  *  Discussion:
  *    Typedef of block to be invoked when the device's altitude is updated.
  */
-typedef void (^CMAltitudeHandler)(CMAltitudeData *altitudeData, NSError *error) NS_AVAILABLE(NA,8_0);
+typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSError * __nullable error) NS_AVAILABLE(NA,8_0);
 
 /*
  *  CMAltimeter
@@ -56,3 +58,5 @@ NS_CLASS_AVAILABLE(NA,8_0)
 - (void)stopRelativeAltitudeUpdates;
 
 @end
+
+NS_ASSUME_NONNULL_END

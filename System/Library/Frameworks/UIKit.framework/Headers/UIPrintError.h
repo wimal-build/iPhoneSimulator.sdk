@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 UIKIT_EXTERN NSString *const UIPrintErrorDomain;
 
 enum {
@@ -16,3 +18,5 @@ enum {
     UIPrintUnknownImageFormatError,   // unrecognized image format
     UIPrintJobFailedError,            // internal error with print job
 };
+
+NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 HK_CLASS_AVAILABLE_IOS(8_0)
 @interface HKUnit : NSObject <NSSecureCoding, NSCopying>
 
@@ -56,10 +58,12 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 // atm  (atmospheres)            = 101325.0 Pa
 //
 // [Volume]
-// fl_oz_us  (US fluid ounces)          = 0.0295735295625 L
+// fl_oz_us  (US customary fluid ounces)= 0.0295735295625 L
 // fl_oz_imp (Imperial fluid ounces)    = 0.028413075 L
-// pt_us     (US pint)                  = 0.473176473 L
+// pt_us     (US customary pint)        = 0.473176473 L
 // pt_imp    (Imperial pint)            = 0.5682815 L
+// cup_us    (US customary cup)         = 0.2365882365 L
+// cup_imp   (Imperial cup)             = 0.28413075 L
 
 // [Time]
 // min  (minutes) = 60 s
@@ -133,6 +137,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)meterUnit;  // m
 + (instancetype)inchUnit;   // in
 + (instancetype)footUnit;   // ft
++ (instancetype)yardUnit NS_AVAILABLE_IOS(9_0);   // yd
 + (instancetype)mileUnit;   // mi
 @end
 
@@ -144,7 +149,8 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)fluidOunceImperialUnit; // fl_oz_imp
 + (instancetype)pintUSUnit;             // pt_us
 + (instancetype)pintImperialUnit;       // pt_imp
-
++ (instancetype)cupUSUnit NS_AVAILABLE_IOS(9_0);       // cup_us
++ (instancetype)cupImperialUnit NS_AVAILABLE_IOS(9_0); // cup_imp
 @end
 
 /* Pressure Units */
@@ -202,3 +208,5 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 
 /* Mole Constants */
 #define HKUnitMolarMassBloodGlucose (180.15588000005408)
+
+NS_ASSUME_NONNULL_END

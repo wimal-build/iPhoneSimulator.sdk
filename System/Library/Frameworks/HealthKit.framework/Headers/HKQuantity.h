@@ -7,6 +7,8 @@
 
 #import <HealthKit/HKDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class HKUnit;
 
 /*!
@@ -47,3 +49,4 @@ HK_CLASS_AVAILABLE_IOS(8_0)
 
 @end
 
+NS_ASSUME_NONNULL_END

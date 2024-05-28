@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*
  Accessibility Traits
  
@@ -137,6 +139,20 @@ UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyStringValue NS_AVAILA
 // The corresponding value is an NSNumber representing whether VoiceOver successfully outputted the announcement.
 UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyWasSuccessful NS_AVAILABLE_IOS(6_0);
 
+
+// In order to know when an assistive technology has focused on an element listen to this notification
+// The newly focused element will be referenced by UIAccessibilityElementFocusedKeyElement in the userInfo dictionary.
+UIKIT_EXTERN NSString *const UIAccessibilityElementFocusedNotification NS_AVAILABLE_IOS(9_0);
+
+// The corresponding value is the element that is now focused by the assistive technology.
+UIKIT_EXTERN NSString *const UIAccessibilityFocusedElementKey NS_AVAILABLE_IOS(9_0);
+
+// The corresponding value is the element that had previously been focused by the assistive technology.
+UIKIT_EXTERN NSString *const UIAccessibilityUnfocusedElementKey NS_AVAILABLE_IOS(9_0);
+
+// The corresponding value is the identifier of the assistive technology
+UIKIT_EXTERN NSString *const UIAccessibilityAssistiveTechnologyKey NS_AVAILABLE_IOS(9_0);
+
 /*
  Should be posted after accessibilityScroll: is called and the scrolling action has completed. 
  A string representing the status of the new scroll position should be used as the argument 
@@ -165,6 +181,10 @@ UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityResumeAssistiveTechnolo
  or a UIAccessibilityResumeAssistiveTechnologyNotification.
  */
 UIKIT_EXTERN NSString *const UIAccessibilityNotificationSwitchControlIdentifier NS_AVAILABLE_IOS(8_0);
+
+// Used to identify VoiceOver as the assistive technology.
+UIKIT_EXTERN NSString *const UIAccessibilityNotificationVoiceOverIdentifier NS_AVAILABLE_IOS(9_0);
+
 
 /*
  The following values describe how the receiver's elements should be navigated by an assistive technology.
@@ -209,5 +229,5 @@ UIKIT_EXTERN NSString *const UIAccessibilitySpeechAttributeLanguage NS_AVAILABLE
 // Default value == 1.0f.
 UIKIT_EXTERN NSString *const UIAccessibilitySpeechAttributePitch NS_AVAILABLE_IOS(7_0);
 
-
+NS_ASSUME_NONNULL_END
 

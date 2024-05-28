@@ -1,6 +1,6 @@
 # We claim all messages at Error or below.  This means ASL only sees Error messages.
 
 ? [= Facility com.apple.HealthKit] [> Level error] claim
-? [= Facility com.apple.HealthKit] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/HealthKit/HealthKit.log rotate=local ttl=7 file_max=5M all_max=20M compress uid=501 gid=501
+? [= Facility com.apple.HealthKit] file $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/HealthKit/HealthKit.log rotate=HealthKit.local.log ttl=7 file_max=5M all_max=20M compress uid=501 gid=501 basestamp symlink
 
 > $ENV(SIMULATOR_LOG_ROOT)/CrashReporter/DiagnosticLogs/HealthKit uid=501 gid=501 mode=0755

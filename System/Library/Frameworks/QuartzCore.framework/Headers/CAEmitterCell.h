@@ -5,6 +5,8 @@
 
 #import <QuartzCore/CALayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CAEmitterCell : NSObject <NSCoding, CAMediaTiming>
 {
 @private
@@ -18,12 +20,12 @@
 /* Emitter cells implement the same property model as defined by CALayer.
  * See CALayer.h for more details. */
 
-+ (id)defaultValueForKey:(NSString *)key;
++ (nullable id)defaultValueForKey:(NSString *)key;
 - (BOOL)shouldArchiveValueForKey:(NSString *)key;
 
 /* The name of the cell. Used to construct key paths. Defaults to nil. */
 
-@property(copy) NSString *name;
+@property(nullable, copy) NSString *name;
 
 /* Controls whether or not cells from this emitter are rendered. */
 
@@ -90,7 +92,7 @@
  * color. `color' defaults to opaque white, `colorRange' to (0, 0, 0,
  * 0). Animatable. */
 
-@property CGColorRef color;
+@property(nullable) CGColorRef color;
 
 @property float redRange;
 @property float greenRange;
@@ -109,13 +111,18 @@
 /* The cell contents, typically a CGImageRef. Defaults to nil.
  * Animatable. */
 
-@property(strong) id contents;
+@property(nullable, strong) id contents;
 
 /* The sub-rectangle of the contents image that will be drawn. See
  * CALayer.h for more details. Defaults to the unit rectangle [0 0 1 1].
  * Animatable. */
 
 @property CGRect contentsRect;
+
+/* Defines the scale factor applied to the contents of the cell. See
+ * CALayer.h for more details. */
+
+@property CGFloat contentsScale;
 
 /* The filter parameters used when rendering the `contents' image. See
  * CALayer.h for more details. */
@@ -130,10 +137,12 @@
  * the current particle position and the emission angle is relative to
  * the current direction of the particle. Animatable. */
 
-@property(copy) NSArray *emitterCells;
+@property(nullable, copy) NSArray<CAEmitterCell *> *emitterCells;
 
 /* Inherited attributes similar to in layers. */
 
-@property(copy) NSDictionary *style;
+@property(nullable, copy) NSDictionary *style;
 
 @end
+
+NS_ASSUME_NONNULL_END

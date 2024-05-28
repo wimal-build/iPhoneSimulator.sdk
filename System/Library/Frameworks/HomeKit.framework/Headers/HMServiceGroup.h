@@ -1,9 +1,11 @@
 // HMServiceGroup.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMService;
 
@@ -14,7 +16,7 @@
  *             This allows for association of a set of accessory services into a group.
  *             Eg. A collection of lights can be grouped as the "Desk Lamps" service group.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMServiceGroup : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -27,7 +29,12 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 /*!
  * @brief Array of HMService objects that correspond to the services contained in this group.
  */
-@property(readonly, copy, nonatomic) NSArray *services;
+@property(readonly, copy, nonatomic) NSArray<HMService *> *services;
+
+/*!
+ * @brief A unique identifier for the service group.
+ */
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief This method is used to change the name of the service group.
@@ -38,7 +45,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError *error))completion;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Adds an service to this service group. The service and the group must be part of the same
@@ -51,7 +58,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addService:(HMService *)service completionHandler:(void (^)(NSError *error))completion;
+- (void)addService:(HMService *)service completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Removes an service from this service group.
@@ -62,6 +69,8 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeService:(HMService *)service completionHandler:(void (^)(NSError *error))completion;
+- (void)removeService:(HMService *)service completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -2,13 +2,13 @@
  *  CVMetalTextureCache.h
  *  CoreVideo
  *
- *  Copyright 2011-2014 Apple Inc. All rights reserved.
+ *  Copyright 2011-2015 Apple Inc. All rights reserved.
  *
  */
 
 /*! @header CVMetalTextureCache.h
- @copyright 2011-2014 Apple Inc. All rights reserved.
- @availability iOS 8.0 or later
+ @copyright 2011-2015 Apple Inc. All rights reserved.
+ @availability iOS 8.0 or later. Mac OS X 10.11 or later.
  @discussion A CoreVideo Metal TextureCache is used to cache and manage CVMetalTextures.
  
  */
@@ -24,18 +24,6 @@
 #if defined(__cplusplus)
 extern "C" {
 #endif
-    
-/* CVMetalTextureCacheRef is only available to Objective C code */
-#if defined(__OBJC__) && COREVIDEO_SUPPORTS_METAL
-#import <Metal/MTLPixelFormat.h>
-@protocol MTLDevice;
-    
-/*!
-    @typedef	CVMetalTextureCacheRef
-    @abstract   CoreVideo Metal Texture Cache
-
-*/
-typedef struct __CVMetalTextureCache *CVMetalTextureCacheRef;
 
 //
 // cacheAttributes
@@ -44,12 +32,26 @@ typedef struct __CVMetalTextureCache *CVMetalTextureCacheRef;
 // texture age of zero will disable the age-out mechanism completely.
 // CVMetalTextureCacheFlush() can be used to force eviction in either case.
 
-CV_EXPORT const CFStringRef kCVMetalTextureCacheMaximumTextureAgeKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);
+CV_EXPORT const CFStringRef CV_NONNULL kCVMetalTextureCacheMaximumTextureAgeKey __OSX_AVAILABLE_STARTING(__MAC_10_11,__IPHONE_8_0);
 
 //
 // textureAttributes - reserved for future use
+    
+/* CVMetalTextureCacheRef is only available to Objective C code */
+#if defined(__OBJC__) && COREVIDEO_SUPPORTS_METAL
+#import <Metal/MTLPixelFormat.h>
 
-CV_EXPORT CFTypeID CVMetalTextureCacheGetTypeID(void) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);
+@protocol MTLDevice;
+    
+/*!
+    @typedef	CVMetalTextureCacheRef
+    @abstract   CoreVideo Metal Texture Cache
+
+*/
+typedef struct CV_BRIDGED_TYPE(id) __CVMetalTextureCache *CVMetalTextureCacheRef;
+
+
+CV_EXPORT CFTypeID CVMetalTextureCacheGetTypeID(void) __OSX_AVAILABLE_STARTING(__MAC_10_11,__IPHONE_8_0);
 
 /*!
     @function   CVMetalTextureCacheCreate
@@ -62,11 +64,11 @@ CV_EXPORT CFTypeID CVMetalTextureCacheGetTypeID(void) __OSX_AVAILABLE_STARTING(_
     @result     Returns kCVReturnSuccess on success
 */
 CV_EXPORT CVReturn CVMetalTextureCacheCreate(
-					CFAllocatorRef allocator,
-					CFDictionaryRef cacheAttributes,
-					id <MTLDevice> metalDevice,
-					CFDictionaryRef textureAttributes,
-					CVMetalTextureCacheRef *cacheOut) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);
+					CFAllocatorRef CV_NULLABLE allocator,
+					CFDictionaryRef CV_NULLABLE cacheAttributes,
+					id <MTLDevice> CV_NONNULL metalDevice,
+					CFDictionaryRef CV_NULLABLE textureAttributes,
+					CVMetalTextureCacheRef CV_NULLABLE * CV_NONNULL cacheOut ) __OSX_AVAILABLE_STARTING(__MAC_10_11,__IPHONE_8_0);
 
 /*!
     @function   CVMetalTextureCacheCreateTextureFromImage
@@ -104,15 +106,16 @@ CV_EXPORT CVReturn CVMetalTextureCacheCreate(
                 Mapping a yuvs buffer as a source texture (note: yuvs/f and 2vuy are unpacked and resampled -- not colorspace converted)
                 CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pixelBuffer, NULL, MTLPixelFormatGBGR422, width, height, 1, &outTexture);
 */
-CV_EXPORT CVReturn CVMetalTextureCacheCreateTextureFromImage(CFAllocatorRef allocator,
-								       CVMetalTextureCacheRef textureCache,
-								       CVImageBufferRef sourceImage,
-								       CFDictionaryRef textureAttributes,
+CV_EXPORT CVReturn CVMetalTextureCacheCreateTextureFromImage(
+									   CFAllocatorRef CV_NULLABLE allocator,
+									   CVMetalTextureCacheRef CV_NONNULL textureCache,
+									   CVImageBufferRef CV_NONNULL sourceImage,
+									   CFDictionaryRef CV_NULLABLE textureAttributes,
 								       MTLPixelFormat pixelFormat,
 								       size_t width,
 								       size_t height,
 								       size_t planeIndex,
-								       CVMetalTextureRef *textureOut) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);
+									   CVMetalTextureRef CV_NULLABLE * CV_NONNULL textureOut ) __OSX_AVAILABLE_STARTING(__MAC_10_11,__IPHONE_8_0);
 
 /*!
     @function   CVMetalTextureCacheFlush
@@ -121,7 +124,7 @@ CV_EXPORT CVReturn CVMetalTextureCacheCreateTextureFromImage(CFAllocatorRef allo
     @param      textureCache The texture cache object to flush
     @param      options Currently unused, set to 0.
 */
-CV_EXPORT void CVMetalTextureCacheFlush(CVMetalTextureCacheRef textureCache, CVOptionFlags options) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_8_0);
+CV_EXPORT void CVMetalTextureCacheFlush(CVMetalTextureCacheRef CV_NONNULL textureCache, CVOptionFlags options) __OSX_AVAILABLE_STARTING(__MAC_10_11,__IPHONE_8_0);
     
 #endif
     

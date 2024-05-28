@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
  
-	Copyright 2010-2014 Apple Inc. All rights reserved.
+	Copyright 2010-2015 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -46,7 +46,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @result
     A newly initialized AVCaptureVideoPreviewLayer instance.
 */
-+ (id)layerWithSession:(AVCaptureSession *)session;
++ (instancetype)layerWithSession:(AVCaptureSession *)session;
 
 /*!
  @method initWithSession:
@@ -59,7 +59,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @result
     A newly initialized AVCaptureVideoPreviewLayer instance.
 */
-- (id)initWithSession:(AVCaptureSession *)session;
+- (instancetype)initWithSession:(AVCaptureSession *)session;
 
 /*!
  @method layerWithSessionWithNoConnection:
@@ -75,7 +75,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @result
     A newly initialized AVCaptureVideoPreviewLayer instance.
 */
-+ (id)layerWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
++ (instancetype)layerWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @method initWithSessionWithNoConnection:
@@ -91,7 +91,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @result
     A newly initialized AVCaptureVideoPreviewLayer instance.
 */
-- (id)initWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
+- (instancetype)initWithSessionWithNoConnection:(AVCaptureSession *)session NS_AVAILABLE(10_7, 8_0);
 
 /*!
  @property session
@@ -256,7 +256,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     manipulate the orientation of the receiver.  This property is deprecated.  Use 
     AVCaptureConnection's -isVideoOrientationSupported instead.
 */
-@property (nonatomic, readonly, getter=isOrientationSupported) BOOL orientationSupported NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nonatomic, readonly, getter=isOrientationSupported) BOOL orientationSupported NS_DEPRECATED_IOS(4_0, 6_0, "Use AVCaptureConnection's isVideoOrientationSupported instead.");
 
 /*!
  @property orientation
@@ -269,7 +269,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     exception will be raised if this requirement is ignored.  This property is deprecated.
     Use AVCaptureConnection's -videoOrientation instead.
 */
-@property (nonatomic) AVCaptureVideoOrientation orientation NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nonatomic) AVCaptureVideoOrientation orientation NS_DEPRECATED_IOS(4_0, 6_0, "Use AVCaptureConnection's videoOrientation instead.");
 
 /*!
  @property mirroringSupported
@@ -282,7 +282,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     on the receiver.  This property is deprecated.  Use AVCaptureConnection's 
     -isVideoMirroringSupported instead.
 */
-@property (nonatomic, readonly, getter=isMirroringSupported) BOOL mirroringSupported NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nonatomic, readonly, getter=isMirroringSupported) BOOL mirroringSupported NS_DEPRECATED_IOS(4_0, 6_0, "Use AVCaptureConnection's isVideoMirroringSupported instead.");
 
 /*!
  @property automaticallyAdjustsMirroring
@@ -297,7 +297,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     The default value is YES.  This property is deprecated.  Use AVCaptureConnection's
     -automaticallyAdjustsVideoMirroring instead.
 */
-@property (nonatomic) BOOL automaticallyAdjustsMirroring NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nonatomic) BOOL automaticallyAdjustsMirroring NS_DEPRECATED_IOS(4_0, 6_0, "Use AVCaptureConnection's automaticallyAdjustsVideoMirroring instead.");
 
 /*!
  @property mirrored
@@ -313,7 +313,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     these requirements.  This property is deprecated.  Use AVCaptureConnection's 
     -videoMirrored instead.
 */
-@property (nonatomic, getter=isMirrored) BOOL mirrored NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nonatomic, getter=isMirrored) BOOL mirrored NS_DEPRECATED_IOS(4_0, 6_0, "Use AVCaptureConnection's videoMirrored instead.");
 
 #endif // TARGET_OS_IPHONE
 

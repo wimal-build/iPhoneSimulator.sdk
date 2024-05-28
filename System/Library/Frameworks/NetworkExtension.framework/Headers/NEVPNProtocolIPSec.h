@@ -1,9 +1,15 @@
 /*
- * Copyright (c) 2013-2014 Apple Inc.
+ * Copyright (c) 2013-2015 Apple Inc.
  * All rights reserved.
  */
 
+#ifndef __NE_INDIRECT__
+#error "Please import the NetworkExtension module instead of this file directly."
+#endif
+
 #import <NetworkExtension/NEVPNProtocol.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @typedef NEVPNIKEAuthenticationMethod
@@ -45,18 +51,21 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
  * @property sharedSecretReference
  * @discussion A persistent reference to a keychain item of class kSecClassGenericPassword containing the IKE shared secret.
  */
-@property (copy) NSData *sharedSecretReference NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSData *sharedSecretReference NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @property localIdentifier
  * @discussion A string identifying the local IPSec endpoint for authentication purposes.
  */
-@property (copy) NSString *localIdentifier NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSString *localIdentifier NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @property remoteIdentifier
  * @discussion A string identifying the remote IPSec endpoint for authentication purposes.
  */
-@property (copy) NSString *remoteIdentifier NS_AVAILABLE(10_10, 8_0);
+@property (copy, nullable) NSString *remoteIdentifier NS_AVAILABLE(10_10, 8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END
+

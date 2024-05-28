@@ -36,3 +36,26 @@
 #import <GameKit/GKTurnBasedMatchmakerViewController.h>
 #import <GameKit/GKVoiceChat.h>
 #import <GameKit/GKVoiceChatService.h>
+//
+//  GameKit.h
+//  Game Center
+//
+//  Copyright 2010-2015 Apple Inc. All rights reserved.
+//
+
+#import <TargetConditionals.h>
+#import <simd/simd.h>
+
+#import <UIKit/UIKit.h>
+
+#if !TARGET_OS_SIMULATOR
+#import <Metal/Metal.h>
+#import <MetalKit/MetalKit.h>
+#endif
+
+#import <SpriteKit/SpriteKit.h>
+#import <SceneKit/SceneKit.h>
+#import <GameplayKit/GameplayKit.h>
+#import <GameController/GameController.h>
+#import <ModelIO/ModelIO.h>
+#import <ReplayKit/ReplayKit.h>

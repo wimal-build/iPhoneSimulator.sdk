@@ -1,10 +1,12 @@
 // HMTrigger.h
 // HomeKit
 //
-// Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @class HMActionSet;
 
@@ -14,7 +16,7 @@
  * @discussion This class describes a trigger which is an event that can
  *             be used to execute one or more action sets when the event fires.
  */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(__WATCHOS_2_0)
 @interface HMTrigger : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -35,12 +37,17 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @abstract Array of HMActionSet objects that represent all the action sets associated
  *           with this trigger.
  */
-@property(readonly, copy, nonatomic) NSArray *actionSets;
+@property(readonly, copy, nonatomic) NSArray<HMActionSet *> *actionSets;
 
 /*!
  * @brief The date that this trigger was most recently fired.
  */
-@property(readonly, copy, nonatomic) NSDate *lastFireDate;
+@property(readonly, copy, nonatomic, nullable) NSDate *lastFireDate;
+
+/*!
+ * @brief A unique identifier for the trigger.
+ */
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @brief This method is used to change the name of the trigger.
@@ -50,7 +57,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @param completion Block that is invoked once the request is processed.
  *                   The NSError provides more information on the status of the request.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError *error))completion;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Registers an action set to be executed when the trigger is fired.
@@ -61,7 +68,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request.
  */
-- (void)addActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError *error))completion;
+- (void)addActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief De-registers an action set from the trigger.
@@ -71,7 +78,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request.
  */
-- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError *error))completion;
+- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 /*!
  * @brief Enables or disables the trigger. 
@@ -80,13 +87,16 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *             2. The trigger must have at least one action set associated with it.
  *             3. Each action set added to the trigger must have at least one action.
  *             4. For HMTimerTrigger: The next fire date of the timer trigger must be less
- *                than 5 weeks in the future.
+ *                than 5 weeks in the future. The fire date of a one-shot timer trigger
+ *                must be in the future.
  *
  * @param enable Setting this to TRUE will enable the trigger, FALSE will disable it.
  *
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request.
  */
-- (void)enable:(BOOL)enable completionHandler:(void (^)(NSError *error))completion;
+- (void)enable:(BOOL)enable completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
+
+NS_ASSUME_NONNULL_END

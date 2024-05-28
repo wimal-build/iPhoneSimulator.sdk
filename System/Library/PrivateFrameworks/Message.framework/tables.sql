@@ -20,15 +20,17 @@ CREATE TABLE messages (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
                        external_id TEXT,
                        unique_id INTEGER,
                        content_index_transaction_id INTEGER);
+
 CREATE INDEX date_index ON messages(date_received);
-CREATE INDEX message_infos_index ON messages(mailbox, deleted, sender_vip, flags, conversation_id, date_sent, date_received DESC, ROWID DESC);
+CREATE INDEX message_infos_index ON messages(mailbox, deleted, sender_vip, flags, conversation_id, date_sent, message_id, date_received DESC, ROWID DESC);
 CREATE INDEX message_visible_index ON messages(mailbox, visible, date_received DESC, ROWID DESC);
 CREATE INDEX message_remote_mailbox_index ON messages(remote_mailbox, remote_id);
 CREATE INDEX message_message_id_index ON messages(message_id);
 CREATE INDEX message_conversation_id_index ON messages(conversation_id, mailbox, read, date_received);
 CREATE INDEX message_oldest_conversation_index on messages(mailbox, conversation_id, date_received);
-CREATE INDEX message_content_index_transaction_id_index ON messages(content_index_transaction_id);
+CREATE INDEX message_content_index_transaction_id_index ON messages(content_index_transaction_id, deleted, date_received DESC, ROWID);
 CREATE INDEX message_sequence_identifier_index ON messages(mailbox, remote_id, sequence_identifier);
+CREATE INDEX message_mailbox_content_index ON messages (mailbox, content_index_transaction_id, flags, date_received ASC);
 
 CREATE TABLE mailboxes (ROWID INTEGER PRIMARY KEY,
                         url UNIQUE,

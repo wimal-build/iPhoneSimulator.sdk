@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		w6xa/XZIUonRlLOh5RHw096WqPk=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		7ra/tCh/qm6rrfNpFAKOrMa+Yes=
+		K+f4US/+0gacb8x7Q9SMFQpwJPo=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -134,6 +138,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8WEhaApzYndClYNS196ZkE2AcOA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -162,6 +184,24 @@
 			<true/>
 		</dict>
 		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZL/fNXZBmgl7z8YIKskmn/vqHaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -237,7 +277,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KdRIpgB4vy6sh3q/iIYC/JLFIJ8=
+			7xB5ZdgUW+Y11b3scnR+Wbb78BA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -255,7 +295,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fUjwpqeQbimZBzCNXfwSOHpVuiU=
+			wIHHy+5Ugcog9ciX8k67VqQw0nM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -399,7 +439,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			39UoYj9s2MSn32yMxTMnGixIp8I=
+			jY8NKY0g1Hb2We+QQkYaCX1Y4nU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -602,10 +642,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		TihJ0FcRFOjVekKYNV4XSL9NY3Q=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -681,6 +717,10 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		w6xa/XZIUonRlLOh5RHw096WqPk=
+		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -807,6 +847,24 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8WEhaApzYndClYNS196ZkE2AcOA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -835,6 +893,24 @@
 			<true/>
 		</dict>
 		<key>es.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZL/fNXZBmgl7z8YIKskmn/vqHaE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -910,7 +986,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KdRIpgB4vy6sh3q/iIYC/JLFIJ8=
+			7xB5ZdgUW+Y11b3scnR+Wbb78BA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -928,7 +1004,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fUjwpqeQbimZBzCNXfwSOHpVuiU=
+			wIHHy+5Ugcog9ciX8k67VqQw0nM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1072,7 +1148,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			39UoYj9s2MSn32yMxTMnGixIp8I=
+			jY8NKY0g1Hb2We+QQkYaCX1Y4nU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1275,10 +1351,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		TihJ0FcRFOjVekKYNV4XSL9NY3Q=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
