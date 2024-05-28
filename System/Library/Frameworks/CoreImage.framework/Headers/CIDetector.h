@@ -53,7 +53,7 @@ CORE_IMAGE_EXPORT NSString* const CIDetectorTypeFace __OSX_AVAILABLE_STARTING(__
 CORE_IMAGE_EXPORT NSString* const CIDetectorTypeRectangle __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 /* Specifies a detector type for barcode detection. */
-CORE_IMAGE_EXPORT NSString* const CIDetectorTypeQRCode __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_6_0);
+CORE_IMAGE_EXPORT NSString* const CIDetectorTypeQRCode __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 
 
 // Options that can be used with +[CIDetector detectorOfType:context:options:]

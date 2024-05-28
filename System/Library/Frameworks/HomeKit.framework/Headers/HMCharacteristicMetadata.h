@@ -165,3 +165,8 @@ HM_EXTERN NSString * const HMCharacteristicMetadataUnitsPercentage NS_AVAILABLE_
  * @brief Describes that the unit of the characteristic is an arc degree.
  */
 HM_EXTERN NSString * const HMCharacteristicMetadataUnitsArcDegree NS_AVAILABLE_IOS(8_0);
+
+/*!
+ * @brief Describes that the unit of the characteristic is in seconds.
+ */
+HM_EXTERN NSString * const HMCharacteristicMetadataUnitsSeconds NS_AVAILABLE_IOS(8_3);

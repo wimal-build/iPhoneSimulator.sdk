@@ -18,7 +18,6 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHCollection : PHObject
 @property (nonatomic, assign, readonly) BOOL canContainCollections;
 @property (nonatomic, strong, readonly) NSString *localizedTitle;
 
-
 #pragma mark - Capabilities
 
 - (BOOL)canPerformEditOperation:(PHCollectionEditOperation)anOperation;

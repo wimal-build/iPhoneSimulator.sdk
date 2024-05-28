@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Это видео воспроизводится на телевизоре.',
 
     'Aborted': 'Прервано',
+    'Audio': 'Аудио',
     'Audio Playback': 'Воспроизведение аудио',
     'Captions': 'Сопровод. текст',
     'Choose Wireless Display': 'Выбрать беспроводной дисплей',

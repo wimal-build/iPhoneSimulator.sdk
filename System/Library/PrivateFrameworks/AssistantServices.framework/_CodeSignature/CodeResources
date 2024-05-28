@@ -42,7 +42,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		O39NcHsA9TH+QPA9BXS/nwYWnU8=
+		zYIGSmPIoCzm4pf2H4PJk2kzDbo=
 		</data>
 		<key>InternalConfig.plist</key>
 		<data>
@@ -77,11 +77,11 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/Info.plist</key>
 		<data>
-		mk4JjGRJxd1nMoGqy6f5RCAb81E=
+		EP2jIA1J/brwwhtoH1+Y+CKjguM=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		nuSeU1K4VcJZdqH/225LZR2a3do=
+		69OE9GIWEU+LVgBQVGaPyuIOWTw=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -103,7 +103,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature</key>
 		<data>
-		zjrY3akng3FoP1SN1CkauFcMX7M=
+		UcyLGvQJ8KzJ5osCx6o9OdWfF/w=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -285,6 +285,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>XPCServices/com.apple.siri.acousticsignature.xpc/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -377,7 +386,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/version.plist</key>
 		<data>
-		I5WK/wBBkeXQRHVOJpsjajLFGq4=
+		RgPuSTqrciXNzZZDJf+Xpl3eH6Y=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -562,6 +571,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tcDOeb7eUC12+cQx5zuVnqwfhF8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -666,7 +684,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		I5WK/wBBkeXQRHVOJpsjajLFGq4=
+		RgPuSTqrciXNzZZDJf+Xpl3eH6Y=
 		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -776,11 +794,11 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/Info.plist</key>
 		<data>
-		mk4JjGRJxd1nMoGqy6f5RCAb81E=
+		EP2jIA1J/brwwhtoH1+Y+CKjguM=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		nuSeU1K4VcJZdqH/225LZR2a3do=
+		69OE9GIWEU+LVgBQVGaPyuIOWTw=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -802,7 +820,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/com.apple.siri.acousticsignature</key>
 		<data>
-		zjrY3akng3FoP1SN1CkauFcMX7M=
+		UcyLGvQJ8KzJ5osCx6o9OdWfF/w=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -984,6 +1002,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>XPCServices/com.apple.siri.acousticsignature.xpc/no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1076,7 +1103,7 @@
 		</dict>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/version.plist</key>
 		<data>
-		I5WK/wBBkeXQRHVOJpsjajLFGq4=
+		RgPuSTqrciXNzZZDJf+Xpl3eH6Y=
 		</data>
 		<key>XPCServices/com.apple.siri.acousticsignature.xpc/vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1261,6 +1288,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tcDOeb7eUC12+cQx5zuVnqwfhF8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1365,7 +1401,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		I5WK/wBBkeXQRHVOJpsjajLFGq4=
+		RgPuSTqrciXNzZZDJf+Xpl3eH6Y=
 		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>

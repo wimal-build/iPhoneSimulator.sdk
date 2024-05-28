@@ -9,10 +9,10 @@ defaultvoice:Melina
     <language>Greek</language>
     <langcode>GRG</langcode>
     <langid>54</langid>
-    <langversion>5.2.3.13323</langversion>
+    <langversion>5.2.4.13323</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Melina</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.14126</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -83,7 +83,17 @@ defaultvoice:Melina
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/grg/cfg1
+    </RESOURCE>
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/grg
+    </RESOURCE>
     
     
     

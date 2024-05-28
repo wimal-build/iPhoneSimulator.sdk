@@ -218,6 +218,10 @@ SK_EXPORT @interface SKNode : NSResponder <NSCopying, NSCoding>
 
 - (BOOL)intersectsNode:(SKNode *)node;
 
+/* Returns true if this node has equivalent content to the other object, otherwise false */
+
+- (BOOL)isEqualToNode:(SKNode *)node;
+
 @end
 
 

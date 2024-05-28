@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Acest clip video este în redare pe TV.',
 
     'Aborted': 'Abandonată',
+    'Audio': 'Audio',
     'Audio Playback': 'Redare audio',
     'Captions': 'Legende',
     'Choose Wireless Display': 'Alegeți afișajul wireless',

@@ -68,9 +68,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 // manner.
 // 
 // A very common use is to display a clear button on the right side of the
-// text field, and a standard clear button is provided. Note: if the clear
-// button overlaps one of the other views, the clear button will be given
-// precedence.
+// text field, and a standard clear button is provided.
 
 @property(nonatomic)        UITextFieldViewMode  clearButtonMode; // sets when the clear button shows up. default is UITextFieldViewModeNever
 

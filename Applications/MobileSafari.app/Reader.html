@@ -99,15 +99,14 @@
         }
 
         .page-number {
-            display: none;
+            display: block;
         }
 
         .page:only-of-type .page-number {
             display: none;
         }
 
-        .page-number {
-            display: block;
+        .page-number, #incoming-page-corner {
             font: -apple-system-caption2;
             font-weight: bold;
             margin-left: 12px;
@@ -116,16 +115,6 @@
             right: 10px;
             top: 10px;
             -webkit-user-select: none;
-        }
-
-        .page:first-of-type {
-            margin-top: 0;
-            border-top: none;
-            padding-top: 45px;
-        }
-
-        .page:last-of-type {
-            padding-bottom: 45px;
         }
 
         .page {
@@ -138,6 +127,16 @@
             background-color: white;
             -webkit-text-size-adjust: none;
             border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .page:first-of-type {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 45px;
+        }
+
+        .page:last-of-type {
+            padding-bottom: 45px;
         }
 
         .page video {
@@ -175,6 +174,60 @@
             height: 0px;
         }
 
+        #controls {
+            display: block;
+            position: absolute;
+            padding: 0;
+            margin: 12px 0 0 61px;
+            z-index: 100;
+            -webkit-user-select: none;
+        }
+
+        #controls menu {
+            width: 200px;
+            padding: 0;
+            margin: 0 0 0 -30px;
+        }
+
+        #controls menu * {
+            float: left;
+        }
+
+        #controls menu div.button {
+            position: relative;
+            width: 55px;
+            height: 53px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #controls menu div.text {
+            position: absolute;
+            bottom: 0;
+            color: rgb(0, 128, 252);
+            font-family: -apple-system-font;
+            text-align: left;
+        }
+
+        #controls menu .separator {
+            display: block;
+            width: 1px;
+            height: 18px;
+            margin: 14px 0;
+            background-color: rgb(170, 170, 170);
+        }
+
+        #decrease-text-size .text {
+            font-size: 14px;
+            top: 18px;
+            right: 14px;
+        }
+
+        #increase-text-size .text {
+            font-size: 25px;
+            top: 8px;
+            left: 13px;
+        }
+
         .no-transition {
             -webkit-transition: none !important;
         }
@@ -184,8 +237,7 @@
         }
     }
 
-    /* 1 device pixel page seperators on Retina. */
-    @media screen and (-webkit-device-pixel-ratio:2) {
+    @media screen and (-webkit-min-device-pixel-ratio:2) {
         .page:first-of-type {
             background-image: none;
         }
@@ -196,6 +248,16 @@
             background-repeat: repeat-x;
             background-size: 1px 1px;
         }
+
+        #controls menu .separator {
+            width: 0.5px;
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:3) {
+        #controls menu .separator {
+            width: 0.333px;
+        }
     }
 
     /* Edge-to-edge. */
@@ -205,16 +267,88 @@
         max-width: 100%;
     }
 
-    /* We always do edge-to-edge on narrow layouts, but only in portrait on non-narrow layouts. */
-    @media screen and (orientation: portrait) {
+    #article img.edge-to-edge {
+        margin-right: 0 !important;
+        /* Override max-width: 100%; we need to go wider. */
+        max-width: none;
+    }
+
+    #article img.edge-to-edge {
+        margin-right: 0 !important;
+        max-width: none;
+    }
+
+    @media screen and (min-width: 0px) {
+        /* Includes iPhone 5 in portrait */
+        .page { padding-left: 16px; padding-right: 16px; }
+        #controls { margin-left: 16px; }
         #article img.edge-to-edge {
-            margin: 0 0 0 -60px !important;
+            margin-left: -16px !important;
+            width: calc(100% + 2 * 16px) !important;
+        }
+    }
 
-            /* Marked important because it can conflict with #article .leading-image img.full-width. */
-            width: calc(100% + 120px) !important;
+    @media screen and (min-width: 375px) {
+        /* iPhone 6 in portrait */
+        .page { padding-left: 20px; padding-right: 20px; }
+        #controls { margin-left: 20px; }
+        #article img.edge-to-edge {
+            margin-left: -20px !important;
+            width: calc(100% + 2 * 20px) !important;
+        }
+    }
 
-            /* Override max-width: 100%; we need to go wider. */
-            max-width: none;
+    @media screen and (min-width: 414px) {
+        /* iPhone 6 Plus in portrait */
+        .page { padding-left: 22px; padding-right: 22px; }
+        #controls { margin-left: 22px; }
+        #article img.edge-to-edge {
+            margin-left: -22px !important;
+            width: calc(100% + 2 * 22px) !important;
+        }
+    }
+
+    /* iPhone 5 in landscape (568px) */
+
+    @media screen and (min-width: 667px) {
+        /* iPhone 6 in landscape */
+        .page { padding-left: 40px; padding-right: 40px; }
+        #controls { margin-left: 40px; }
+        #article img.edge-to-edge {
+            margin-left: -40px !important;
+            width: calc(100% + 2 * 40px) !important;
+        }
+    }
+
+    @media screen and (min-width: 704px) {
+        /* iPad in landscape with the sidebar open */
+        .page { padding-left: 42px; padding-right: 42px; }
+        #controls { margin-left: 42px; }
+        #article img.edge-to-edge {
+            margin-left: -42px !important;
+            width: calc(100% + 2 * 42px) !important;
+        }
+    }
+
+    @media screen and (min-width: 736px) {
+        /* iPhone 6 Plus in landscape */
+        .page { padding-left: 60px; padding-right: 60px; }
+        #controls { margin-left: 60px; }
+        #article img.edge-to-edge {
+            margin-left: -60px !important;
+            width: calc(100% + 2 * 60px) !important;
+        }
+    }
+
+    @media only screen and (min-width: 780px) {
+        body {
+            background-color: rgba(0, 30, 30, 0.06);
+        }
+
+        #article {
+            width: 780px;
+            margin: 1em auto 1em auto;
+            border: 0.5px solid rgba(0, 0, 0, 0.2);
         }
     }
 
@@ -247,6 +381,11 @@
     .narrow #incoming-page-corner {
         right: 16px;
     }
+
+    .narrow #controls {
+        margin: 19px 0 0 16px;
+    }
+
     </style>
     <script src="safari-resource:/localizedStrings.js"></script>
     <link rel="stylesheet" type="text/css" href="safari-resource:/WBSReaderSharedStyleSheet.css" id="article-content-shared">
@@ -254,6 +393,17 @@
 <body class="preloading" onload="ReaderJS.loaded();" onscroll="articleHasScrolled();">
     <iframe id="next-page-container"></iframe>
     <div id="article" tabindex="0">
+        <span id="controls">
+            <menu>
+                <div id="decrease-text-size" class="button" ontouchend="makeTextSmaller();" role="button">
+                    <div class="text">A</div>
+                </div>
+                <div class="separator"></div>
+                <div id="increase-text-size" class="button" ontouchend="makeTextLarger();" role="button">
+                    <div class="text">A</div>
+                </div>
+            </menu>
+        </div>
         <!-- This node will contain a number of 'page' class divs. -->
     </div>
 </body>

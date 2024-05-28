@@ -79,7 +79,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismState) {
 } NS_ENUM_AVAILABLE_IOS(8_0);
 
 /*!
- @enum      HMLockMechanismLastKnownAction
+ @enum      HMCharacteristicValueLockMechanismLastKnownAction
 
  @constant  HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior       Last known action was secured using physical movement, interior.
  @constant  HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior     Last known action was unsecured using physical movement, interior.
@@ -90,8 +90,10 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismState) {
  @constant  HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely                            Last known action was secured remotely.
  @constant  HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely                          Last known action was unsecured remotely.
  @constant  HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout          Last known action was secured automatically after timeout.
+ @constant  HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement               Last known action was secured using physical movement.
+ @constant  HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement             Last known action was unsecured using physical movement.
  */
-typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanism) {
+typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismLastKnownAction) {
     HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior = 0,
     HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior,
     HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementExterior,
@@ -101,4 +103,6 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanism) {
     HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely,
     HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely,
     HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout,
+    HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement,
+    HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement,
 } NS_ENUM_AVAILABLE_IOS(8_0);

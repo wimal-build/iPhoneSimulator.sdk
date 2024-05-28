@@ -1,6 +1,6 @@
 /* CoreAnimation - CAAnimation.h
 
-   Copyright (c) 2006-2014, Apple Inc.
+   Copyright (c) 2006-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CALayer.h>
@@ -130,7 +130,9 @@
  * - `byValue' non-nil. Interpolates between the layer's current value
  * of the property in the render tree and that plus `byValue'. */
 
-@property(strong) id fromValue, toValue, byValue;
+@property(strong) id fromValue;
+@property(strong) id toValue;
+@property(strong) id byValue;
 
 @end
 
@@ -193,7 +195,9 @@
  * point's tangents, and so on. Any unspecified values default to zero
  * (giving a Catmull-Rom spline if all are unspecified). */
 
-@property(copy) NSArray *tensionValues, *continuityValues, *biasValues;
+@property(copy) NSArray *tensionValues;
+@property(copy) NSArray *continuityValues;
+@property(copy) NSArray *biasValues;
 
 /* Defines whether or objects animating along paths rotate to match the
  * path tangent. Possible values are `auto' and `autoReverse'. Defaults
@@ -246,7 +250,8 @@ CA_EXTERN NSString * const kCAAnimationRotateAutoReverse
  * `endProgress' must be greater than or equal to `startProgress'.
  * Default values are 0 and 1 respectively. */
 
-@property float startProgress, endProgress;
+@property float startProgress;
+@property float endProgress;
 
 /* An optional filter object implementing the transition. When set the
  * `type' and `subtype' properties are ignored. The filter must

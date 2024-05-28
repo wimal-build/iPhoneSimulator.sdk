@@ -93,4 +93,6 @@ typedef NS_ENUM(NSInteger, HMErrorCode) {
     HMErrorCodeNetworkUnavailable                      = 78,
     HMErrorCodeAddAccessoryFailed                      = 79,
     HMErrorCodeMissingEntitlement                      = 80,
+    HMErrorCodeCannotUnblockNonBridgeAccessory         = 81,
+    HMErrorCodeDeviceLocked                            = 82,
 };

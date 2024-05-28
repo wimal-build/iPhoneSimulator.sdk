@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Den här videon spelas upp på TV:n.',
 
     'Aborted': 'Stoppad',
+    'Audio': 'Ljud',
     'Audio Playback': 'Ljuduppspelning',
     'Captions': 'Textning',
     'Choose Wireless Display': 'Välj trådlös skärm',

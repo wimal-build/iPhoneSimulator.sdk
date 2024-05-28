@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Cette vidéo est en lecture sur le téléviseur.',
 
     'Aborted': 'Interrompue',
+    'Audio': 'Audio',
     'Audio Playback': 'Lecture audio',
     'Captions': 'Sous-titres',
     'Choose Wireless Display': 'Choisir un moniteur sans fil',

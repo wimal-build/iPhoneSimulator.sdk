@@ -4,4 +4,5 @@ localizedStrings["Loading Next Page..."] = "Загрузка следующей 
 localizedStrings["Page %@"] = "Страница %@";
 localizedStrings["Page %@ of %@"] = "Стр. %@ из %@";
 localizedStrings["Connect to the Internet to view remaining pages."] = "Для просмотра оставшихся страниц подключитесь к Интернету.";
-
+localizedStrings["Decrease text size"] = "Уменьшить размер текста";
+localizedStrings["Increase text size"] = "Увеличить размер текста";

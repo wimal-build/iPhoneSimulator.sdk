@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Denne videoen vises på TV-en.',
 
     'Aborted': 'Avbrutt',
+    'Audio': 'Lyd',
     'Audio Playback': 'Lydavspilling',
     'Captions': 'Teksting',
     'Choose Wireless Display': 'Velg trådløs skjerm',

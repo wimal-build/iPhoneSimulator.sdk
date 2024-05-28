@@ -9,10 +9,10 @@ defaultvoice:Damayanti
     <language>Indonesian</language>
     <langcode>IDI</langcode>
     <langid>59</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.13289</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Damayanti</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.14121</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -84,6 +84,13 @@ defaultvoice:Damayanti
     
     
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/idi
+    </RESOURCE>
     
     
     

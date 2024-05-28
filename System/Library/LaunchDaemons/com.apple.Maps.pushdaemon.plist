@@ -4,6 +4,18 @@
 <dict>
 	<key>LaunchEvents</key>
 	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.Maps.mapspushd.launchForAnnouncements</key>
+			<dict>
+				<key>Repeating</key>
+				<true/>
+				<key>Interval</key>
+				<integer>21600</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+			</dict>
+		</dict>
 		<key>com.apple.notifyd.matching</key>
 		<dict>
 			<key>com.apple.Maps.idslaunchnotification</key>
@@ -23,8 +35,6 @@
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
-	<key>StartInterval</key>
-	<real>21600</real>
 	<key>EnableTransactions</key>
 	<true/>
 	<key>MachServices</key>

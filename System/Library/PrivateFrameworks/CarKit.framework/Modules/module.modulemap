@@ -1,0 +1,6 @@
+framework module CarKit {
+  umbrella header "CarKit.h"
+
+  export *
+  module * { export * }
+}

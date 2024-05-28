@@ -18,6 +18,10 @@ typedef NS_ENUM(NSInteger, NEVPNIKEv2EncryptionAlgorithm) {
 	NEVPNIKEv2EncryptionAlgorithmAES128 = 3,
 	/*! @const NEVPNIKEv2EncryptionAlgorithmAES256 Advanced Encryption Standard 256 bit (AES256) */
 	NEVPNIKEv2EncryptionAlgorithmAES256 = 4,
+	/*! @const NEVPNIKEv2EncryptionAlgorithmAES128-GCM Advanced Encryption Standard 128 bit (AES128-GCM) */
+	NEVPNIKEv2EncryptionAlgorithmAES128GCM = 5,
+	/*! @const NEVPNIKEv2EncryptionAlgorithmAES256-GCM Advanced Encryption Standard 256 bit (AES256-GCM) */
+	NEVPNIKEv2EncryptionAlgorithmAES256GCM = 6,
 } NS_ENUM_AVAILABLE(10_10, 8_0);
 
 /*!
@@ -75,6 +79,28 @@ typedef NS_ENUM(NSInteger, NEVPNIKEv2DiffieHellmanGroup) {
 	NEVPNIKEv2DiffieHellmanGroup17 = 17,
 	/*! @const NEVPNIKEv2DiffieHellmanGroup18 Diffie Hellman group 18 */
 	NEVPNIKEv2DiffieHellmanGroup18 = 18,
+	/*! @const NEVPNIKEv2DiffieHellmanGroup19 Diffie Hellman group 19 */
+	NEVPNIKEv2DiffieHellmanGroup19 = 19,
+	/*! @const NEVPNIKEv2DiffieHellmanGroup20 Diffie Hellman group 20 */
+	NEVPNIKEv2DiffieHellmanGroup20 = 20,
+	/*! @const NEVPNIKEv2DiffieHellmanGroup21 Diffie Hellman group 21 */
+	NEVPNIKEv2DiffieHellmanGroup21 = 21,
+	
+} NS_ENUM_AVAILABLE(10_10, 8_0);
+
+/*!
+ * @typedef NEVPNIKEv2CertificateType
+ * @abstract IKEv2 Certificate types
+ */
+typedef NS_ENUM(NSInteger, NEVPNIKEv2CertificateType) {
+    /*! @const NEVPNIKEv2CertificateType RSA */
+    NEVPNIKEv2CertificateTypeRSA = 1,
+    /*! @const NEVPNIKEv2CertificateTypeECDSA256 ECDSA with p-256 curve */
+    NEVPNIKEv2CertificateTypeECDSA256 = 2,
+    /*! @const NEVPNIKEv2CertificateTypeECDSA384 ECDSA with p-384 curve */
+    NEVPNIKEv2CertificateTypeECDSA384 = 3,
+    /*! @const NEVPNIKEv2CertificateTypeECDSA521 ECDSA with p-521 curve */
+    NEVPNIKEv2CertificateTypeECDSA521 = 4,
 } NS_ENUM_AVAILABLE(10_10, 8_0);
 
 /*!
@@ -139,6 +165,12 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
  * @discussion A string containing the value to verify in the IKEv2 server certificate's Subject Common Name field.
  */
 @property (copy) NSString *serverCertificateCommonName NS_AVAILABLE(10_10, 8_0);
+
+/*!
+ * @property CertificateType
+ * @discussion contains the type of certificate if an certificate is configured.  Default is RSA.
+ */
+@property NEVPNIKEv2CertificateType certificateType NS_AVAILABLE(10_10, 8_0);
 
 /*!
  * @property IKESecurityAssociationParameters

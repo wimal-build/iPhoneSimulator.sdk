@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Bu video TV\'de oynatılıyor.',
 
     'Aborted': 'Durduruldu',
+    'Audio': 'Ses',
     'Audio Playback': 'Ses Çalma',
     'Captions': 'Altyazılar',
     'Choose Wireless Display': 'Kablosuz Ekranı Seçin',

@@ -1,6 +1,6 @@
 /* CoreAnimation - CAGradientLayer.h
 
-   Copyright (c) 2008-2014, Apple Inc.
+   Copyright (c) 2008-2015, Apple Inc.
    All rights reserved. */
 
 /* The gradient layer draws a color gradient over its background color,
@@ -32,7 +32,8 @@
  * corner of the layer, [1,1] is the top-right corner.) The default values
  * are [.5,0] and [.5,1] respectively. Both are animatable. */
 
-@property CGPoint startPoint, endPoint;
+@property CGPoint startPoint;
+@property CGPoint endPoint;
 
 /* The kind of gradient that will be drawn. Currently the only allowed
  * value is `axial' (the default value). */

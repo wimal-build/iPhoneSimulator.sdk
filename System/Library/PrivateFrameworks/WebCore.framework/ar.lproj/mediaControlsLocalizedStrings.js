@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'جاري تشغيل هذا الفيديو على التلفاز.',
 
     'Aborted': 'تم الإيقاف قبل الاكتمال',
+    'Audio': 'صوت',
     'Audio Playback': 'تشغيل الصوت',
     'Captions': 'الشرح المكتوب',
     'Choose Wireless Display': 'اختيار شاشة عرض لاسلكية',

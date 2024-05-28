@@ -1,6 +1,6 @@
 /* CoreAnimation - CAReplicatorLayer.h
 
-   Copyright (c) 2008-2014, Apple Inc.
+   Copyright (c) 2008-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CALayer.h>
@@ -48,7 +48,9 @@
  * the modulation color of instance k. Defaults to the clear color (no
  * change). Animatable. */
 
-@property float instanceRedOffset, instanceGreenOffset;
-@property float instanceBlueOffset, instanceAlphaOffset;
+@property float instanceRedOffset;
+@property float instanceGreenOffset;
+@property float instanceBlueOffset;
+@property float instanceAlphaOffset;
 
 @end

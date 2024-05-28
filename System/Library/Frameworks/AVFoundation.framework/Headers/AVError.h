@@ -90,5 +90,7 @@ typedef NS_ENUM(NSInteger, AVError) {
     AVErrorFailedToParse	NS_AVAILABLE(10_10, 8_0)		= -11853,
 	AVErrorFileTypeDoesNotSupportSampleReferences NS_AVAILABLE(10_10, 8_0)	= -11854,  // userInfo contains AVErrorFileTypeKey
     AVErrorUndecodableMediaData NS_AVAILABLE(10_10, 8_0)  = -11855,
+    AVErrorAirPlayControllerRequiresInternet NS_AVAILABLE(10_10, 8_3) = -11856,
+    AVErrorAirPlayReceiverRequiresInternet NS_AVAILABLE(10_10, 8_3) = -11857,
 	
 };

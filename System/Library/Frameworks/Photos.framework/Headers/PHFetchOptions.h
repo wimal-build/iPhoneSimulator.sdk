@@ -16,7 +16,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHFetchOptions : NSObject <NSCopying>
 @property (nonatomic, strong) NSPredicate *predicate;
 @property (nonatomic, strong) NSArray *sortDescriptors;
 
-// Wether hidden assets are included in fetch results. Defaults to NO
+// Whether hidden assets are included in fetch results. Defaults to NO
 @property (nonatomic, assign) BOOL includeHiddenAssets;
 
 // Whether hidden burst assets are included in fetch results. Defaults to NO

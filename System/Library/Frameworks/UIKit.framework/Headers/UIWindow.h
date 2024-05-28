@@ -70,6 +70,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIWindow : UIView {
         unsigned int statusBarFollowsOrientation:1;
         unsigned int secure:1;
         unsigned int isMainSceneSized:1;
+        unsigned int debugNeedsHighlightItemOverlayUpdate:1;
     } _windowFlags;
     
     id _windowController;

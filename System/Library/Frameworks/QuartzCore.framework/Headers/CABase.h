@@ -1,6 +1,6 @@
 /* CoreAnimation - CABase.h
 
-   Copyright (c) 2006-2014, Apple Inc.
+   Copyright (c) 2006-2015, Apple Inc.
    All rights reserved. */
 
 #ifndef CABASE_H
@@ -55,12 +55,12 @@
 #ifndef CA_INLINE
 # if defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L
 #  define CA_INLINE static inline
-# elif defined (__MWERKS__) || defined (__cplusplus)
+# elif defined (__cplusplus)
 #  define CA_INLINE static inline
 # elif CA_GNUC (3, 0)
 #  define CA_INLINE static __inline__ __attribute__ ((always_inline))
 # else
-#  define CA_INLINE static    
+#  define CA_INLINE static
 # endif
 #endif
 

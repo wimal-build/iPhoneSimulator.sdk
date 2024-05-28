@@ -263,7 +263,8 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 
     Note that the dictionary of settings is dependent on the current configuration of the receiver's AVCaptureSession
     and its inputs.  The settings dictionary may change if the session's configuration changes.  As such, you should
-    configure your session first, then query the recommended video settings.
+    configure your session first, then query the recommended video settings.  As of iOS 8.3, movies produced with these
+    settings successfully import into the iOS camera roll and sync to and from like devices via iTunes.
 */
 - (NSDictionary *)recommendedVideoSettingsForAssetWriterWithOutputFileType:(NSString *)outputFileType NS_AVAILABLE_IOS(7_0);
 

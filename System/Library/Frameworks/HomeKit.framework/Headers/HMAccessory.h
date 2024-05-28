@@ -24,6 +24,9 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 
 /*!
  * @brief The name of the accessory.
+ *
+ * @discussion Returns the accessory's name that is associated with HomeKit. The initial value is the name
+ *             provided by the accessory information service of the accessory.
  */
 @property(readonly, copy, nonatomic) NSString *name;
 
@@ -85,7 +88,9 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  *
  * @param name New name for the accessory.
  *
- * @param completion Block that is invoked once the request is processed. 
+ * @discussion The new name is stored in HomeKit and not on the accessory.
+ *
+ * @param completion Block that is invoked once the request is processed.
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */

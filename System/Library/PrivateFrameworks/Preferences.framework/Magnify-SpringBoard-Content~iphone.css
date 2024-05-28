@@ -1,4 +1,5 @@
 .StatusBarTime:before	{ content: "PREVIEW_STATUS_BAR_TIME";}
+.DayOfWeek:before 		{ content: "PREVIEW_SPRINGBOARD_DAY_OF_WEEK";}
 .Messages:before 		{ content: "PREVIEW_SPRINGBOARD_MESSAGES";}
 .Calendar:before 		{ content: "PREVIEW_SPRINGBOARD_CALENDAR";}
 .Photos:before 			{ content: "PREVIEW_SPRINGBOARD_PHOTOS";}

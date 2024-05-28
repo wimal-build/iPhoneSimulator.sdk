@@ -1,0 +1,16 @@
+
+framework module DTXConnectionServices {
+    umbrella header "DTXConnectionServices.h"
+    requires objc
+
+    export *
+    module * {
+        export *
+    }
+
+    explicit module Private {
+        header "DTXConnectionServices_Private.h"
+        header "DTXMachTransport_Private.h"
+        header "DTXSharedMemoryTransport_Private.h"
+    }
+}

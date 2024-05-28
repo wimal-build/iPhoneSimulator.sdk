@@ -11,13 +11,18 @@
 typedef NS_ENUM(NSInteger, LAPolicy)
 {
     /// Device owner was authenticated using a biometric method.
+    ///
     /// @discussion Biometrics (Touch ID) authentication is required. If Touch ID is not available or
     ///             not enabled, policy evaluation will fail.
+    ///
     ///             Touch ID authentication dialog contains a cancel button and a fallback button with
     ///             default title "Enter Password" which can be customized using localizedFallbackTitle
     ///             property.
+    ///
+    ///             Biometric authentication will get locked after 5 unsuccessful attempts. After that,
+    ///             users have to unlock it by entering passcode.
     LAPolicyDeviceOwnerAuthenticationWithBiometrics NS_ENUM_AVAILABLE(NA, 8_0) = kLAPolicyDeviceOwnerAuthenticationWithBiometrics 
-}NS_ENUM_AVAILABLE(10_10, 8_0);
+} NS_ENUM_AVAILABLE(10_10, 8_0);
 
 /// Class that represents an authentication context.
 ///
@@ -98,5 +103,15 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 /// @discussion Allows fallback button title customization. A default title "Enter Password" is used when
 ///             this property is left nil. If set to empty string, the button will be hidden.
 @property (nonatomic, copy) NSString *localizedFallbackTitle;
+
+/// Allows setting the limit for the number of failures during biometric authentication.
+///
+/// @discussion When the specified limit is exceeded, evaluation of LAPolicyDeviceOwnerAuthenticationWithBiometrics
+///             evaluation will fail with LAErrorAuthenticationFailed. By default this property is nil and
+///             the biometric authentication fails after 3 wrong attempts.
+///
+/// @warning Please note that setting this property with high values does not prevent biometry lockout after 5
+///          wrong attempts.
+@property (nonatomic) NSNumber *maxBiometryFailures NS_AVAILABLE(10_10, 8_1);
 
 @end

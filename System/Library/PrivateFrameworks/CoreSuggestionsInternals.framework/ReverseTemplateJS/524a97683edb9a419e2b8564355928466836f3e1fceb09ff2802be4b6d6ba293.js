@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("tingo.com-cancellation-en",function(e){return/Your Reservation Has Been Cancelled/.test(e.subject)},function(e){if(/Your Reservation Has Been Cancelled/.test(e.subject)){var n="en_US",t={};t.nameCancel=/Hi\s(.+?),/,t.reservationIdCancel=/hotel confirmation number (\d+)/,t.hotelNameCancel=/your Tingo reservation at (.+?) on .+/;var a=loadHelper("tingo.com-cancellation-skeleton.js");return a(e,n,t)}},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/317/489/490","SGfae953d3")]);

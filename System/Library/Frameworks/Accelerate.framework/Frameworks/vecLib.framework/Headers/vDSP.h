@@ -5,7 +5,7 @@
 
     Version:    vecLib-514.0
 
-    Copyright:  � 2000-2014 by Apple Inc., all rights reserved.
+    Copyright:  � 2000-2015 by Apple Inc., all rights reserved.
 
     For vDSP documentation, search for "vDSP" at <http://developer.apple.com>
     or search for one of the routine names below.

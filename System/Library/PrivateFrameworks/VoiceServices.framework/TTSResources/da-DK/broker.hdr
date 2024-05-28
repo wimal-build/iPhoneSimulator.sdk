@@ -9,10 +9,10 @@ defaultvoice:Sara
     <language>Danish</language>
     <langcode>DAD</langcode>
     <langid>7</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.14364</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Sara</voice>
-    <voiceversion>5.2.3.13289</voiceversion>
+    <voiceversion>5.2.4.14093</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -83,7 +83,17 @@ defaultvoice:Sara
     <!-- The next entries specify default broker strings tuning resources if available -->
     
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/dad/cfg1
+    </RESOURCE>
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/dad
+    </RESOURCE>
     
     
     

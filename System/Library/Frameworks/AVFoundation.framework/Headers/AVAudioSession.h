@@ -269,7 +269,7 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 - (BOOL)setCategory:(NSString *)category withOptions: (AVAudioSessionCategoryOptions)options error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
 
 /* Returns an enum indicating whether the user has granted or denied permission to record, or has not been asked */
-- (AVAudioSessionRecordPermission) recordPermission;
+- (AVAudioSessionRecordPermission) recordPermission NS_AVAILABLE_IOS(8_0);
 
 /* Checks to see if calling process has permission to record audio.  The 'response' block will be called
  immediately if permission has already been granted or denied.  Otherwise, it presents a dialog to notify

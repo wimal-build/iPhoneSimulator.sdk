@@ -1,41 +1,82 @@
-# Ruleset for Yosemite (Vocalizer Expressive)
+﻿# Ruleset for Yosemite (Vocalizer Expressive) -- shared between Portfolio and Custom voices
 #
 # Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
 #
-#RLSTAG: RLS_FE.ENG_6.0.7
+#RLSTAG: RLS_FE.ENG_6.0.9
 
 [header]
 language = ENG
+charset = utf-8
 
 [data]
-/(\d{2})(\d{2})\s*-\s*(\d{2})\b/ --> "$1$2 to $1$3"
-/"Ms.\s/ --> "Ms "
-/"\)/ --> ")"
-/ - (\D)/ --> " ; $1"
-/ \(Live\)/i --> " ;live "
-/ \(Bonus Track Version\)/i --> " ; bonus track version "
-/ \(Deluxe Version\)/i --> " ; Deluxe Version "
-/ \(Remastered\)/i --> " ; Remastered "
-/E=MC²/ --> "E=MC squared"
-/\$[Pp]yda/ --> "spyda"
-
+/(\d{2})(\d{2})\s*-\s*(\d{2})\b/   -->   "$1$2 to $1$3"
+/"Ms.\s/   -->   "Ms "
+/"\)/   -->   ")"
+/ - (\D)/   -->   " ; $1"
+/ \(Live\)/i   -->   " ;live "
+/ \(Bonus Track Version\)/i   -->   " ; bonus track version "
+/ \(Deluxe Version\)/i   -->   " ; Deluxe Version "
+/ \(Remastered\)/i   -->   " ; Remastered "
+/E=MC²/   -->   "E=MC squared"
+/\$[Pp]yda/   -->   "spyda"
+#
 #  these might be covered in a music-specific text-conditioning rule in Voice Control
-/\bfeat\./i --> "featuring" 
-/\bfeat /i --> "featuring" 
-
-
+/\bfeat\./i   -->   "featuring"
+/\bfeat /i   -->   "featuring"
+#53952
+/[Ss]ana'a/   -->   /sanaa/
+#
+/\b(?i)queen elizabeth ii\b/   -->   "queen elizabeth the second"
 # HI area
-/HI area/ --> "H I area"
-
+/HI area/   -->   "H I area"
+#
 #FB23575
-/xcrun/ --> "X C run"
-
+/xcrun/   -->   "X C run"
+#
 #FB35994
-/(I don't understand) '([A-Za-z0-9]+(?:\s[A-Za-z0-9]+)*)'/ --> "$1 \x1b\\pause=50\\$2"
-
+/(I don't understand) '([A-Za-z0-9]+(?:\s[A-Za-z0-9]+)*)'/   -->   "$1 \x1b\\pause=50\\$2"
+#
+/\b(?i)iMovie\b/   -->   "i Movie"
+/\b(?i)iGadgets\b/   -->   "i gadgets"
+/\b(?i)iMessage\b/   -->   "i Message"
+/\b(?i)iMessages\b/   -->   "i Messages"
+/\b(?i)iDisk\b/   -->   "i Disk"
+/\bSANE\b/   -->   "sane"
+/\b(i)ZZ Top\b/   -->   "ZiZi top"
+/\b(?i)iChat\b/   -->   "i Chat"
+/\b(?i)iSight\b/   -->   "i Sight"
+/\b(?i)iWork\b/   -->   "i Work"
+/\b(?i)ePaper\b/   -->   "e Paper"
+/\b(?i)Trust III\b/  -->   "Trust three"
+/\bRobert Downey Jr\b/  -->   "Robert Downey Junior"
+/\bSiri-ous\b/  -->   "Siri ous"
+# Live Wire
+/\b(?i)Live Wire\b/   -->   "\e\\toi=lhp:Live Wire\\'la&Iv_'wa&I.$R\e\\toi=orth\\"
+/\b(?i)LiveWire\b/   -->   "\e\\toi=lhp:LiveWire\\'la&Iv.'wa&I.$R\e\\toi=orth\\"
+# The Best of Rifftrax Live
+/\b(?i)['‘]?The Best of Rifftrax Live['‘]?\b/   -->   "\e\\toi=lhp:The Best of Rifftrax Live\\'D$_'bEst_'$v_'R+If.tR+@ks_'la&Iv\e\\toi=orth\\"
+#
+/\bADI\b/   -->   "A D I"
+/\bTexnet-It\b/   -->   "Texnet I T"
+/\bLOM\b/   -->   "L O M"
+/\bEinstein's\b/   -->   "Einsteins"
+/\bPOST\b/   -->   "P O S T"
+#
+#radar16856211_fb54433
+/Piccadily/   -->   Piccadilly
+#
 #FB48072/FB48073
-/\b(apple\.com)\/uk/i --> "$1 \x1b\\pause=50\\ slash U K"
-
-
-#FB41267
-/[Ww]ar of 1812/ --> "war of 18 12"
+/\b(apple\.com)\/au/i   -->   "$1 \x1b\\pause=50\\ slash A U"
+/\b(apple\.com)\/uk/i   -->   "$1 \x1b\\pause=50\\ slash U K"
+/\b(apple\.com)\/us/i   -->   "$1 \x1b\\pause=50\\ slash U S"
+#
+/\b(?i)Eiffel\b/   -->   \e\\toi=lhp:Eiffel\\'a&I.f$l\e\\toi=orth\\
+/\b(?i)TriCorder/   -->   \e\\toi=lhp:TriCorder\\'tR+a&I.kOR+.d$R+\e\\toi=orth\\
+/\b(?i)Tarpley\b/   -->   \e\\toi=lhp:Tarpley\\'tAR+.pli\e\\toi=orth\\
+/\b(?i)Tatham\b/   -->   \e\\toi=lhp:Tatham\\'t@t.$m\e\\toi=orth\\
+/\b(?i)Einstein\b/   -->   \e\\toi=lhp:Einstein\\'a&In.sta&In\e\\toi=orth\\
+/\b(?i)Einsteins\b/   -->   \e\\toi=lhp:Einsteins\\'a&In.sta&Inz\e\\toi=orth\\
+/\b(?i)colearning\b/   -->   \e\\toi=lhp:colearning\\ko&U.'lE0.nInK\e\\toi=orth\\
+/\b(?i)calendar\b/   -->   \e\\toi=lhp:calendar\\'k@.lIn.d$\e\\toi=orth\\
+/\b(?i)forehead\b/   -->   \e\\toi=lhp:forehead\\'fA+.R+Id\e\\toi=orth\\
+/\b(?i)Ronaldinho\b/   -->   \e\\toi=lhp:Ronaldinho\\R+o&U.n$l.'di.njU\e\\toi=orth\\

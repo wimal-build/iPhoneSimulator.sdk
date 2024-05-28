@@ -111,8 +111,8 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
  *  @method     contactPrinter:
  *  @abstract   Check if printer is reachable, and update printer information.
  *  @discussion This method checks to see if this printer is available on the network,
- * 		and sets the displayName, location, jobTypesSupported, makeAndModel,
- *		colorSupported, and duplexSupported for the printer.
+ * 		and sets the displayName, displayLocation, supportedJobTypes, makeAndModel,
+ *		supportsColor, and supportsDuplex for the printer.
  *		The operation can take up to 30 seconds.
  */
 - (void)contactPrinter:(void(^)(BOOL available))completionHandler;

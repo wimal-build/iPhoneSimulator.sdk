@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		3Lb2964cUCVu+71sMPZSnnURRHU=
+		h2msyqy8wWxAkQcrNakJFZQgPA8=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -26,9 +26,21 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>com.apple.spotlight.prediction.plist</key>
+		<key>com.apple.spotlight.prediction.PRSLogisticRegressionEngine.plist</key>
 		<data>
-		feaTSlk5wxjZOfbCoX0Eh5+cW6s=
+		D3lFanF8IKjLFuS8cX1BEU8iZLA=
+		</data>
+		<key>com.apple.spotlight.prediction.PRSNaiveBayesCoreEngine.plist</key>
+		<data>
+		//3VwzABxGXEZUBotxIBdf36mKg=
+		</data>
+		<key>com.apple.spotlight.prediction.PRSNaiveBayesGlanceEngine.plist</key>
+		<data>
+		UHDD0sdaOUNw+ne+sHfRhjUQFc4=
+		</data>
+		<key>com.apple.spotlight.prediction.PRSParsecPredictionEngine.plist</key>
+		<data>
+		5BUvGVuARaiotGvUrZuSlcKnfWE=
 		</data>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -311,7 +323,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		Ri9mN8ZhWgqK+89I0dmOm4Dmxmk=
+		F1L5bOy0wKuq6P5Q9Wxo7YRDUYI=
 		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
@@ -370,9 +382,21 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>com.apple.spotlight.prediction.plist</key>
+		<key>com.apple.spotlight.prediction.PRSLogisticRegressionEngine.plist</key>
 		<data>
-		feaTSlk5wxjZOfbCoX0Eh5+cW6s=
+		D3lFanF8IKjLFuS8cX1BEU8iZLA=
+		</data>
+		<key>com.apple.spotlight.prediction.PRSNaiveBayesCoreEngine.plist</key>
+		<data>
+		//3VwzABxGXEZUBotxIBdf36mKg=
+		</data>
+		<key>com.apple.spotlight.prediction.PRSNaiveBayesGlanceEngine.plist</key>
+		<data>
+		UHDD0sdaOUNw+ne+sHfRhjUQFc4=
+		</data>
+		<key>com.apple.spotlight.prediction.PRSParsecPredictionEngine.plist</key>
+		<data>
+		5BUvGVuARaiotGvUrZuSlcKnfWE=
 		</data>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
@@ -655,7 +679,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		Ri9mN8ZhWgqK+89I0dmOm4Dmxmk=
+		F1L5bOy0wKuq6P5Q9Wxo7YRDUYI=
 		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>

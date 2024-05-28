@@ -1,0 +1,6 @@
+framework module SetupAssistant {
+  umbrella header "SetupAssistant.h"
+
+  export *
+  module * { export * }
+}

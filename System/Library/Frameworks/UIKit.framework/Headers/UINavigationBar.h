@@ -61,7 +61,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationBar : UIView <NSCoding, UIBar
         unsigned int cancelledTransition:1;
         unsigned int animationCount:4;
         unsigned int backgroundLayoutNeedsUpdate:1;
-        unsigned int backgroundImageNeedsUpdate:1;
     } _navbarFlags;
 }
 

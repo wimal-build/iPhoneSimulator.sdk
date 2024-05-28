@@ -52,7 +52,7 @@ NS_CLASS_AVAILABLE(10_4, 3_0)
     } _flags;
 }
 
-+ (NSFetchRequest*)fetchRequestWithEntityName:(NSString*)entityName NS_AVAILABLE(10_7, 4_0);
++ (instancetype)fetchRequestWithEntityName:(NSString*)entityName NS_AVAILABLE(10_7, 4_0);
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithEntityName:(NSString*)entityName NS_AVAILABLE(10_7, 4_0);

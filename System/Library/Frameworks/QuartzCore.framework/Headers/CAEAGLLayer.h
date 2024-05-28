@@ -1,6 +1,6 @@
 /* CoreAnimation - CAEAGLLayer.h
 
-   Copyright (c) 2007-2014, Apple Inc.
+   Copyright (c) 2007-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CALayer.h>

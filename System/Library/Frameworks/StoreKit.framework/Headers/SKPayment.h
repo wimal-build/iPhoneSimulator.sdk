@@ -31,6 +31,9 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKPayment : NSObject <NSCopying, NSMut
 // Application-specific user identifier.  Optional.
 @property(nonatomic, copy, readonly) NSString *applicationUsername NS_AVAILABLE_IOS(7_0);
 
+// Force an "ask to buy" flow for this payment, in the sandbox
+@property(nonatomic, readonly) BOOL simulatesAskToBuyInSandbox NS_AVAILABLE_IOS(8_3);
+
 @end
 
 
@@ -40,5 +43,6 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKMutablePayment : SKPayment
 @property(nonatomic, copy, readwrite) NSString *productIdentifier NS_AVAILABLE_IOS(3_0);
 @property(nonatomic, readwrite) NSInteger quantity NS_AVAILABLE_IOS(3_0);
 @property(nonatomic, copy, readwrite) NSData *requestData NS_AVAILABLE_IOS(3_0);
+@property(nonatomic, readwrite) BOOL simulatesAskToBuyInSandbox NS_AVAILABLE_IOS(8_3);
 
 @end

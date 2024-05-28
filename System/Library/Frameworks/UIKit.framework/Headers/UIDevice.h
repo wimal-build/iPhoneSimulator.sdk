@@ -33,12 +33,14 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceIdiom) {
 #endif
 };
 
-/* The UI_USER_INTERFACE_IDIOM() macro is provided for use when deploying to a version of the iOS less than 3.2. If the earliest version of iPhone/iOS that you will be deploying for is 3.2 or greater, you may use -[UIDevice userInterfaceIdiom] directly.
- */
-#define UI_USER_INTERFACE_IDIOM() ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ? [[UIDevice currentDevice] userInterfaceIdiom] : UIUserInterfaceIdiomPhone)
+static inline BOOL UIDeviceOrientationIsPortrait(UIDeviceOrientation orientation) {
+    return ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown);
+}
 
-#define UIDeviceOrientationIsPortrait(orientation)  ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown)
-#define UIDeviceOrientationIsLandscape(orientation) ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight)
+static inline BOOL UIDeviceOrientationIsLandscape(UIDeviceOrientation orientation) {
+    return ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
+}
+
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject {
  @private
@@ -90,6 +92,14 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject {
 @property (nonatomic, readonly) BOOL enableInputClicksWhenVisible; // If YES, an input view will enable playInputClick.
 
 @end
+
+/* The UI_USER_INTERFACE_IDIOM() function is provided for use when deploying to a version of the iOS less than 3.2. If the earliest version of iPhone/iOS that you will be deploying for is 3.2 or greater, you may use -[UIDevice userInterfaceIdiom] directly.
+ */
+static inline UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM() {
+    return ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ?
+            [[UIDevice currentDevice] userInterfaceIdiom] :
+            UIUserInterfaceIdiomPhone);
+}
 
 UIKIT_EXTERN NSString *const UIDeviceOrientationDidChangeNotification;
 UIKIT_EXTERN NSString *const UIDeviceBatteryStateDidChangeNotification   NS_AVAILABLE_IOS(3_0);

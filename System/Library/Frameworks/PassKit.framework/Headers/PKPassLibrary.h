@@ -44,6 +44,12 @@ NS_CLASS_AVAILABLE_IOS(6_0)
  */
 + (BOOL)isPaymentPassActivationAvailable NS_AVAILABLE_IOS(8_0);
 
+/*
+ * Opens the card setup flow (in Passbook on iPhone, Settings on iPad).
+ * Use this to direct a user to card setup directly from your app
+ */
+- (void)openPaymentSetup NS_AVAILABLE_IOS(8_3);
+
 /* These methods may be utilized to activate a payment pass that is provisioned but currently in the inactive state, by providing either a cryptographic OTP, or an activation code.
  */
 - (void)activatePaymentPass:(PKPaymentPass *)paymentPass withActivationData:(NSData *)activationData completion:(void(^)(BOOL success, NSError* error))completion NS_AVAILABLE_IOS(8_0);

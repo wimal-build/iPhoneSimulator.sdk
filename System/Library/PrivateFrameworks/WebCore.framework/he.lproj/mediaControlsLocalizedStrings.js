@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'סרט זה מתנגן כעת בטלוויזיה.',
 
     'Aborted': 'בוטל',
+    'Audio': 'שמע',
     'Audio Playback': 'השמעת אודיו',
     'Captions': 'כתוביות',
     'Choose Wireless Display': 'בחר/י צג אלחוטי',

@@ -41,3 +41,6 @@ SK_EXTERN NSString * const SKStoreProductParameterAffiliateToken NS_AVAILABLE_IO
 
 // iTunes Store affiliate campaign token (NSString)
 SK_EXTERN NSString * const SKStoreProductParameterCampaignToken NS_AVAILABLE_IOS(8_0);
+
+// Analytics provider token (NSString)
+SK_EXTERN NSString * const SKStoreProductParameterProviderToken NS_AVAILABLE_IOS(8_3);

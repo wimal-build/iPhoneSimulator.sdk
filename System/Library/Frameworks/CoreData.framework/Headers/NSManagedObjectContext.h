@@ -110,7 +110,7 @@ NS_CLASS_AVAILABLE(10_4,3_0)
   long _lockCount;
   long _objectStoreLockCount;
   NSTimeInterval _fetchTimestamp;
-  id _reserved2;
+  intptr_t _referenceCallbackRegistration;
   id _referenceQueue;
   id _reserved3;
   id _reserved4;

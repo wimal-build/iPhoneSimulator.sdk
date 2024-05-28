@@ -102,7 +102,7 @@ CV_EXPORT CVReturn CVMetalTextureCacheCreate(
                 CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pixelBuffer, NULL, MTLPixelFormatRG8Unorm width/2, height/2, 1, &outTexture);
 
                 Mapping a yuvs buffer as a source texture (note: yuvs/f and 2vuy are unpacked and resampled -- not colorspace converted)
-                CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pixelBuffer, NULL, MTLPixelFormat422_GBGR, width, height, 1, &outTexture);
+                CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pixelBuffer, NULL, MTLPixelFormatGBGR422, width, height, 1, &outTexture);
 */
 CV_EXPORT CVReturn CVMetalTextureCacheCreateTextureFromImage(CFAllocatorRef allocator,
 								       CVMetalTextureCacheRef textureCache,

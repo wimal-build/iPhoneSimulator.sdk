@@ -42,9 +42,9 @@ SK_EXPORT @interface SKVideoNode : SKNode
 /**
  Initialize a video node from a file.
  */
-- (instancetype)initWithVideoFileNamed:(NSString *)videoFile;
+- (instancetype)initWithVideoFileNamed:(NSString *)videoFile NS_DESIGNATED_INITIALIZER;
 
-- (instancetype)initWithVideoURL:(NSURL *)url;
+- (instancetype)initWithVideoURL:(NSURL *)url NS_DESIGNATED_INITIALIZER;
 
 /**
  Support coding and decoding via NSKeyedArchiver.

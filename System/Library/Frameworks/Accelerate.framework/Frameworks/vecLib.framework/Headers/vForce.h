@@ -1,6 +1,6 @@
 /*
 vForce.h (from vecLib-514.0)
-Copyright 1999-2014 Apple Inc.  All rights reserved.
+Copyright 1999-2015 Apple Inc.  All rights reserved.
 
 @APPLE_LICENSE_HEADER_START@
 

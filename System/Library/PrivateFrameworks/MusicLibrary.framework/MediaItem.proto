@@ -129,6 +129,7 @@ message Song {
     optional bool hasVideo = 11;
     optional string lyrics = 12;
     optional PlaybackInfo playbackInfo = 13;
+    optional int32 lyricsChecksum = 14;
 }
 
 message Movie {

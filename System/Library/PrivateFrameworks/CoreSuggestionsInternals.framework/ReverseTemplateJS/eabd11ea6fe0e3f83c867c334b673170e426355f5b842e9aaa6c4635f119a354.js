@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("airfrance.com-cancellation-en",function(e){return/check-in cancellation/.test(e.subject)},function(e){return/check-in cancellation/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/127/162/163","SGe713871a")]);

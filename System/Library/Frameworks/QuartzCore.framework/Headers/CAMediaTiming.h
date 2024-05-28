@@ -1,6 +1,6 @@
 /* CoreAnimation - CAMediaTiming.h
 
-   Copyright (c) 2006-2014, Apple Inc.
+   Copyright (c) 2006-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CABase.h>
@@ -12,8 +12,8 @@
  *
  * Absolute time is defined as mach time converted to seconds. The
  * CACurrentMediaTime function is provided as a convenience for querying the
- * current absolute time. 
- * 
+ * current absolute time.
+ *
  * The conversion from parent time to local time has two stages:
  *
  * 1. conversion to "active local time". This includes the point at

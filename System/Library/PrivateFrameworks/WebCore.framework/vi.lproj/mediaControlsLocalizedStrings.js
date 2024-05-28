@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Video này đang phát trên TV.',
 
     'Aborted': 'Đã hủy',
+    'Audio': 'Âm thanh',
     'Audio Playback': 'Phát lại Âm thanh',
     'Captions': 'Chú thích',
     'Choose Wireless Display': 'Chọn Màn hình Không dây',

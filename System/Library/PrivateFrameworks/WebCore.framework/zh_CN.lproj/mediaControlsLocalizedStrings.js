@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': '正在电视上播放此视频。',
 
     'Aborted': '已中止',
+    'Audio': '音频',
     'Audio Playback': '音频回放',
     'Captions': '字幕',
     'Choose Wireless Display': '选取无线显示器',

@@ -9,10 +9,10 @@ defaultvoice:Xander
     <language>Dutch</language>
     <langcode>DUN</langcode>
     <langid>18</langid>
-    <langversion>5.2.3.13289</langversion>
+    <langversion>5.2.4.13289</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Xander</voice>
-    <voiceversion>5.2.3.13324</voiceversion>
+    <voiceversion>5.2.4.14231</voiceversion>
     <gender>Male</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
@@ -82,8 +82,18 @@ defaultvoice:Xander
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/dun
+    </RESOURCE>
     
     
+    
+    
+    
+    
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/dun
+    </RESOURCE>
     
     
     

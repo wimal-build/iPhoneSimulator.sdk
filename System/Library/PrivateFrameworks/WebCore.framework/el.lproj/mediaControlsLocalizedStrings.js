@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Αυτό το βίντεο αναπαράγεται στην τηλεόραση.',
 
     'Aborted': 'Ματαιώθηκε',
+    'Audio': 'Ήχος',
     'Audio Playback': 'Αναπαραγωγή ήχου',
     'Captions': 'Λεζάντες',
     'Choose Wireless Display': 'Επιλογή ασύρματης οθόνης',

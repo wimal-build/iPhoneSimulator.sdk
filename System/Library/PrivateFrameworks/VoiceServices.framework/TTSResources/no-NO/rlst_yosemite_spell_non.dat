@@ -1,0 +1,21 @@
+# Ruleset for Yosemite (Vocalizer Expressive)
+#
+# Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
+#
+#RLSTAG: RLS_FE.NON_6.0.2
+
+[header]
+language = NON
+charset = utf-8
+type = spell
+
+[data]
+#FB40057
+/j/ --> " jod, "
+/J/ --> " stor jod, "
+
+
+#reapply Vocalizer domain tag
+/^/ --> "PLACEHOLDER_SPELL"
+/(\s(?:stor\s)?jod,)/ --> "PLACEHOLDER_NORMAL$1PLACEHOLDER_SPELL"
+

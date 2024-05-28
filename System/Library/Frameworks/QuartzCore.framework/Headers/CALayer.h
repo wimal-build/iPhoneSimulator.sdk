@@ -1,11 +1,12 @@
 /* CoreAnimation - CALayer.h
 
-   Copyright (c) 2006-2014, Apple Inc.
+   Copyright (c) 2006-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CAMediaTiming.h>
 #import <QuartzCore/CATransform3D.h>
 #import <Foundation/NSObject.h>
+#import <Foundation/NSNull.h>
 
 @class NSArray, NSDictionary, NSEnumerator, CAAnimation, CALayerArray;
 @protocol CAAction;
@@ -14,10 +15,10 @@
 
 typedef NS_OPTIONS (unsigned int, CAEdgeAntialiasingMask)
 {
-  kCALayerLeftEdge	= 1U << 0,	/* Minimum X edge. */
-  kCALayerRightEdge	= 1U << 1,	/* Maximum X edge. */
-  kCALayerBottomEdge	= 1U << 2,	/* Minimum Y edge. */
-  kCALayerTopEdge	= 1U << 3,	/* Maximum Y edge. */
+  kCALayerLeftEdge      = 1U << 0,      /* Minimum X edge. */
+  kCALayerRightEdge     = 1U << 1,      /* Maximum X edge. */
+  kCALayerBottomEdge    = 1U << 2,      /* Minimum Y edge. */
+  kCALayerTopEdge       = 1U << 3,      /* Maximum Y edge. */
 };
 
 /** The base layer class. **/
@@ -87,13 +88,13 @@ typedef NS_OPTIONS (unsigned int, CAEdgeAntialiasingMask)
  * standard KVC wrapping conventions are used, with extensions to
  * support the following types:
  *
- *	C Type			Class
- *      ------			-----
- *	CGPoint			NSValue
- *	CGSize			NSValue
- *	CGRect			NSValue
- *	CGAffineTransform	NSAffineTransform
- *	CATransform3D		NSValue  */
+ *      C Type                  Class
+ *      ------                  -----
+ *      CGPoint                 NSValue
+ *      CGSize                  NSValue
+ *      CGRect                  NSValue
+ *      CGAffineTransform       NSAffineTransform
+ *      CATransform3D           NSValue  */
 
 /* Returns the default value of the named property, or nil if no
  * default value is known. Subclasses that override this method to
@@ -198,7 +199,7 @@ typedef NS_OPTIONS (unsigned int, CAEdgeAntialiasingMask)
 /* The receiver's superlayer object. Implicitly changed to match the
  * hierarchy described by the `sublayers' properties. */
 
-@property(readonly) CALayer *superlayer; 
+@property(readonly) CALayer *superlayer;
 
 /* Removes the layer from its superlayer, works both if the receiver is
  * in its superlayer's `sublayers' array or set as its `mask' value. */
@@ -618,12 +619,12 @@ typedef NS_OPTIONS (unsigned int, CAEdgeAntialiasingMask)
  * linked directly to properties:
  *
  * onOrderIn
- *	Invoked when the layer is made visible, i.e. either its
- *	superlayer becomes visible, or it's added as a sublayer of a
- *	visible layer
+ *      Invoked when the layer is made visible, i.e. either its
+ *      superlayer becomes visible, or it's added as a sublayer of a
+ *      visible layer
  *
  * onOrderOut
- *	Invoked when the layer becomes non-visible. */
+ *      Invoked when the layer becomes non-visible. */
 
 /* Returns the default action object associated with the event named by
  * the string 'event'. The default implementation returns a suitable
@@ -728,6 +729,12 @@ typedef NS_OPTIONS (unsigned int, CAEdgeAntialiasingMask)
 
 - (void)runActionForKey:(NSString *)event object:(id)anObject
     arguments:(NSDictionary *)dict;
+
+@end
+
+/** NSNull protocol conformance. **/
+
+@interface NSNull (CAActionAdditions) <CAAction>
 
 @end
 

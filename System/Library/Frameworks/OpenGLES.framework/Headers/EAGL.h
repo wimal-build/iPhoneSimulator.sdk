@@ -76,9 +76,6 @@ EAGL_EXTERN_CLASS
 @property (readonly) EAGLSharegroup*    sharegroup;
 
 @property (copy, nonatomic) NSString* debugLabel NS_AVAILABLE_IOS(6_0);
-#if !defined(__NSi_7_1)
-#define __NSi_7_1 __NSi_7_0
-#endif
 @property (getter=isMultiThreaded, nonatomic) BOOL multiThreaded NS_AVAILABLE_IOS(7_1);
 @end
 

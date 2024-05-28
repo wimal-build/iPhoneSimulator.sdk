@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Ovaj videozapis reproducira se na TV-u.',
 
     'Aborted': 'Prekinuto',
+    'Audio': 'Audio',
     'Audio Playback': 'Reprodukcija zvuka',
     'Captions': 'Prošireni titlovi',
     'Choose Wireless Display': 'Odaberite bežični zaslon',

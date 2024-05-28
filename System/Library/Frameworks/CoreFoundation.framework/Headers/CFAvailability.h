@@ -6,9 +6,10 @@
 #define __COREFOUNDATION_CFAVAILABILITY__ 1
 
 #include <TargetConditionals.h>
-#include <Availability.h>
 
 #if (TARGET_OS_MAC || TARGET_OS_EMBEDDED || TARGET_OS_IPHONE || TARGET_OS_WIN32)
+#include <Availability.h>
+
 // Even if unused, these must remain here for compatibility, because projects rely on them being included.
 #include <AvailabilityMacros.h>
 #endif
@@ -46,6 +47,7 @@
 #define __NSi_8_0 introduced=8.0
 #define __NSi_8_1 introduced=8.1
 #define __NSi_8_2 introduced=8.2
+#define __NSi_8_3 introduced=8.3
 #define __NSi_9_0 introduced=9.0
 #define __NSi_9_1 introduced=9.1
 #define __NSi_10_0 introduced=10.0
@@ -79,6 +81,7 @@
 #define __NSd_8_0 ,deprecated=8.0
 #define __NSd_8_1 ,deprecated=8.1
 #define __NSd_8_2 ,deprecated=8.2
+#define __NSd_8_3 ,deprecated=8.3
 #define __NSd_9_0 ,deprecated=9.0
 #define __NSd_9_1 ,deprecated=9.1
 #define __NSd_10_0 ,deprecated=10.0

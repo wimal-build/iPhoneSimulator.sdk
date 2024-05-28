@@ -23,8 +23,15 @@
 /* For iOS8.0, the only supported adaptive presentation styles are UIModalPresentationFullScreen and UIModalPresentationOverFullScreen. */
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller;
 
+// Returning UIModalPresentationNone will indicate that an adaptation should not happen.
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_3);
+
 /* If this method is not implemented, or returns nil, then the originally presented view controller is used. */
 - (UIViewController *)presentationController:(UIPresentationController *)controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle)style;
+
+// If there is no adaptation happening and an original style is used UIModalPresentationNone will be passed as an argument.
+- (void)presentationController:(UIPresentationController *)presentationController willPresentWithAdaptiveStyle:(UIModalPresentationStyle)style transitionCoordinator:(id <UIViewControllerTransitionCoordinator>)transitionCoordinator NS_AVAILABLE_IOS(8_3);
+
 
 @end
 
@@ -47,6 +54,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // UIPopoverPresentationController override this implementation to return UIModalPresentationStyleFullscreen if the delegate does not provide an
 // implementation for adaptivePresentationStyleForPresentationController:
 - (UIModalPresentationStyle)adaptivePresentationStyle;
+- (UIModalPresentationStyle)adaptivePresentationStyleForTraitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_3);
 
 - (void)containerViewWillLayoutSubviews;
 - (void)containerViewDidLayoutSubviews;
@@ -67,7 +75,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 
 // Indicate whether the view controller's view we are transitioning from will be removed from the window in the end of the
 // presentation transition
-// (Default: YES)
+// (Default: NO)
 - (BOOL)shouldRemovePresentersView;
 
 - (void)presentationTransitionWillBegin;

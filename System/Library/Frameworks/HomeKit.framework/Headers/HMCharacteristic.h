@@ -40,7 +40,10 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 @property(readonly, strong, nonatomic) HMCharacteristicMetadata *metadata;
 
 /*!
- * @brief The current value of the characteristic.
+ * @brief The value of the characteristic.
+ *
+ * @discussion The value is a cached value that may have been updated as a result of prior
+ *             interaction with the accessory.
  */
 @property(readonly, copy, nonatomic) id value;
 
@@ -243,12 +246,14 @@ HM_EXTERN NSString * const HMCharacteristicTypeIdentify NS_AVAILABLE_IOS(8_0);
 HM_EXTERN NSString * const HMCharacteristicTypeRotationDirection NS_AVAILABLE_IOS(8_0);
 
 /*!
- * @brief Characteristic type for rotation speed. The value of the characteristic is a float.
+ * @brief Characteristic type for rotation speed. The value of the characteristic is a float representing
+          the percentage of maximum speed.
  */
 HM_EXTERN NSString * const HMCharacteristicTypeRotationSpeed NS_AVAILABLE_IOS(8_0);
 
 /*!
- * @brief Characteristic type for outlet in use. The value of the characteristic is a boolean.
+ * @brief Characteristic type for outlet in use. The value of the characteristic is a boolean, which is true
+ *        if the outlet is in use.
  */
 HM_EXTERN NSString * const HMCharacteristicTypeOutletInUse NS_AVAILABLE_IOS(8_0);
 
@@ -278,17 +283,22 @@ HM_EXTERN NSString * const HMCharacteristicTypeAdminOnlyAccess NS_AVAILABLE_IOS(
 HM_EXTERN NSString * const HMCharacteristicTypeMotionDetected NS_AVAILABLE_IOS(8_0);
 
 /*!
- * @brief Characteristic type for current lock mechanism state. The value of the characteristic is an unsigned 8-bit int.
+ * @brief Characteristic type for current lock mechanism state. The value of the characteristic is one of the values
+ *        defined for HMCharacteristicValueLockMechanismState.
+
  */
 HM_EXTERN NSString * const HMCharacteristicTypeCurrentLockMechanismState NS_AVAILABLE_IOS(8_0);
 
 /*!
- * @brief Characteristic type for target lock mechanism state. The value of the characteristic is an unsigned 8-bit int.
+ * @brief Characteristic type for target lock mechanism state. The value of the characteristic is either
+ *        HMCharacteristicValueLockMechanismStateUnsecured, or HMCharacteristicValueLockMechanismStateSecured,
+ *        as defined by HMCharacteristicValueLockMechanismState.
  */
 HM_EXTERN NSString * const HMCharacteristicTypeTargetLockMechanismState NS_AVAILABLE_IOS(8_0);
 
 /*!
- * @brief Characteristic type for the last known action for a lock mechanism. The value of the characteristic is an unsigned 8-bit int.
+ * @brief Characteristic type for the last known action for a lock mechanism. The value of the characteristic is one of the values
+ *        defined for HMCharacteristicValueLockMechanismLastKnownAction.
  */
 HM_EXTERN NSString * const HMCharacteristicTypeLockMechanismLastKnownAction NS_AVAILABLE_IOS(8_0);
 
@@ -298,6 +308,6 @@ HM_EXTERN NSString * const HMCharacteristicTypeLockMechanismLastKnownAction NS_A
 HM_EXTERN NSString * const HMCharacteristicTypeLockManagementControlPoint NS_AVAILABLE_IOS(8_0);
 
 /*!
- * @brief Characteristic type for the auto secure timeout for lock management. The value of the characteristic is an unsigned 32-bit int.
+ * @brief Characteristic type for the auto secure timeout for lock management. The value of the characteristic is an unsigned 32-bit integer representing the number of seconds.
  */
 HM_EXTERN NSString * const HMCharacteristicTypeLockManagementAutoSecureTimeout NS_AVAILABLE_IOS(8_0);

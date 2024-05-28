@@ -14,8 +14,6 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface NSFileProviderExtension : NSObject
 + (BOOL)writePlaceholderAtURL:(NSURL *)placeholderURL withMetadata:(NSDictionary *)metadata error:(NSError **)error;
 + (NSURL *)placeholderURLForURL:(NSURL *)url;
 
-// You may want to override these.
-
 // An identifier unique to this provider.
 // When modifying the files stored in the directory returned by documentStorageURL, you should pass this identifier
 // to your file coordinator's setPurposeIdentifier: method.
@@ -24,6 +22,8 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface NSFileProviderExtension : NSObject
 
 // The root URL for provided documents. This URL must be writable from your app extension, and must only be used for the extension's files or their placeholders.
 - (NSURL *)documentStorageURL;
+
+// You may want to override these.
 
 // Should return the URL corresponding to a specific identifier. Fail if it's not a subpath of documentStorageURL.
 // This is a static mapping; each identifier must always return a path corresponding to the same file.

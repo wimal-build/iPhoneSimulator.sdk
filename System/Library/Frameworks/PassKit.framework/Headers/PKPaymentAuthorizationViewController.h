@@ -19,7 +19,8 @@ typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
     
     PKPaymentAuthorizationStatusInvalidBillingPostalAddress,  // Merchant refuses service to this billing address.
     PKPaymentAuthorizationStatusInvalidShippingPostalAddress, // Merchant refuses service to this shipping address.
-    PKPaymentAuthorizationStatusInvalidShippingContact        // Supplied contact information is insufficient.
+    PKPaymentAuthorizationStatusInvalidShippingContact,       // Supplied contact information is insufficient.
+    
 } NS_ENUM_AVAILABLE(NA, 8_0);
 
 @protocol PKPaymentAuthorizationViewControllerDelegate <NSObject>
@@ -46,6 +47,12 @@ typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
 - (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller;
 
 @optional
+
+
+// Sent to the delegate before the payment is authorized, but after the user has authenticated using
+// passcode or Touch ID. Optional.
+- (void)paymentAuthorizationViewControllerWillAuthorizePayment:(PKPaymentAuthorizationViewController *)controller NS_AVAILABLE_IOS(8_3);
+
 
 // Sent when the user has selected a new shipping method.  The delegate should determine
 // shipping costs based on the shipping method and either the shipping address supplied in the original

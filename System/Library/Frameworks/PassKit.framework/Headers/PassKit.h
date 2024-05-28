@@ -15,3 +15,4 @@
 #import <PassKit/PKPayment.h>
 #import <PassKit/PKPaymentToken.h>
 #import <PassKit/PKPaymentAuthorizationViewController.h>
+#import <PassKit/PKPaymentButton.h>

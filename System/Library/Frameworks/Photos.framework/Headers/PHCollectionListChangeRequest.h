@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @class PHFetchResult;
+@class PHCollection;
 @class PHCollectionList;
 @class PHObjectPlaceholder;
 

@@ -4,68 +4,76 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>DefaultSettings.plist</key>
-		<data>
-		Iy93WrsutbPEhfGvkBR/Dj56lbQ=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		sV4K7oz98uK5DMelv57H/Hc+0Ek=
+		Sfx+90MVVhn7mFTwMHaz7mBuUMI=
 		</data>
 		<key>LeakAgent</key>
 		<data>
-		Ltnc2l9dct/bMJgRRltC2nHAF2Q=
+		6eBiSXaQlwMvCZDC3iF2Row6g/c=
+		</data>
+		<key>RemoteInjectionAgent</key>
+		<data>
+		NhhDfB8zsPOWw9EvD7/GWttFdv0=
 		</data>
 		<key>itrampoline</key>
 		<data>
-		Xh4wexaYAwtz3RZHRk3LwckexOw=
+		vMDnnPc4GJeqcmnJB5y/IIaf5U0=
+		</data>
+		<key>libRemoteInjectionPayload.dylib</key>
+		<data>
+		1oLZZ89apnaypvERnQ95FqWH+RY=
 		</data>
 		<key>libfsmonitor_interpose.dylib</key>
 		<data>
-		CBs3fgTkrE7nPvnCfOpAPK1rsAM=
+		0dOri/VQ0YXHyna7QlT7yoKENcQ=
 		</data>
 		<key>liboainject.dylib</key>
 		<data>
-		H/hGSa3gDwzdUowr4vna3yAkW5A=
+		FWVCUhebierWKKusijvxmMX1sxI=
 		</data>
 		<key>libsimshim.dylib</key>
 		<data>
-		G3y0s9/Wka6gWngVKFL+tkZEc00=
+		5Vo2iwznvKKTz9f3TOCqxR3dn0Q=
 		</data>
 		<key>version.plist</key>
 		<data>
-		buoaNepN2hvWwBLeDiaGaS+9jRU=
+		6iZdxDSK2yhSnOKJS9pPwI8CkYo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>DefaultSettings.plist</key>
-		<data>
-		Iy93WrsutbPEhfGvkBR/Dj56lbQ=
-		</data>
 		<key>LeakAgent</key>
 		<data>
-		Ltnc2l9dct/bMJgRRltC2nHAF2Q=
+		6eBiSXaQlwMvCZDC3iF2Row6g/c=
+		</data>
+		<key>RemoteInjectionAgent</key>
+		<data>
+		NhhDfB8zsPOWw9EvD7/GWttFdv0=
 		</data>
 		<key>itrampoline</key>
 		<data>
-		Xh4wexaYAwtz3RZHRk3LwckexOw=
+		vMDnnPc4GJeqcmnJB5y/IIaf5U0=
+		</data>
+		<key>libRemoteInjectionPayload.dylib</key>
+		<data>
+		1oLZZ89apnaypvERnQ95FqWH+RY=
 		</data>
 		<key>libfsmonitor_interpose.dylib</key>
 		<data>
-		CBs3fgTkrE7nPvnCfOpAPK1rsAM=
+		0dOri/VQ0YXHyna7QlT7yoKENcQ=
 		</data>
 		<key>liboainject.dylib</key>
 		<data>
-		H/hGSa3gDwzdUowr4vna3yAkW5A=
+		FWVCUhebierWKKusijvxmMX1sxI=
 		</data>
 		<key>libsimshim.dylib</key>
 		<data>
-		G3y0s9/Wka6gWngVKFL+tkZEc00=
+		5Vo2iwznvKKTz9f3TOCqxR3dn0Q=
 		</data>
 		<key>version.plist</key>
 		<data>
-		buoaNepN2hvWwBLeDiaGaS+9jRU=
+		6iZdxDSK2yhSnOKJS9pPwI8CkYo=
 		</data>
 	</dict>
 	<key>rules</key>

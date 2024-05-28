@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("expediamail.com-travel-cancellation-en",function(e){return/^Expedia cancellation confirmed/.test(e.subject)},function(e){return/^Expedia cancellation confirmed/.test(e.subject)?STOP:void 0},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/577/596/609","SG76536a11")]);

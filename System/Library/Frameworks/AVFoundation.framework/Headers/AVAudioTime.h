@@ -94,9 +94,9 @@ NS_CLASS_AVAILABLE(10_10, 8_0)
 // time0 has a valid audio sample representation, but no host time representation.
 AVAudioTime *time0 = [AVAudioTime timeWithSampleTime: 0.0 atRate: 44100.0];
 // anchor has a valid host time representation and sample time representation.
-AVAudioTime *anchor = [node currentTime];
-// fill in  valid host time representation
-AVAudioTime *fullTime = [sampleTime extrapolateTimeFromAnchor: sampleTime];
+AVAudioTime *anchor = [player playerTimeForNodeTime: player.lastRenderTime];
+// fill in valid host time representation
+AVAudioTime *fullTime0 = [time0 extrapolateTimeFromAnchor: anchor];
 </pre>
 */
 - (AVAudioTime *)extrapolateTimeFromAnchor:(AVAudioTime *)anchorTime;

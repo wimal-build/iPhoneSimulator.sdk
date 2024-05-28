@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Denne video afspilles på fjernsynet.',
 
     'Aborted': 'Afbrudt',
+    'Audio': 'Lyd',
     'Audio Playback': 'Afspilning af lyd',
     'Captions': 'Billedtekster',
     'Choose Wireless Display': 'Vælg trådløs skærm',

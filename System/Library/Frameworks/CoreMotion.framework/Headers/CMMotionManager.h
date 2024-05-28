@@ -305,7 +305,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *     Returns a bitmask specifying the available attitude reference frames on the device.
  */
-+ (NSUInteger)availableAttitudeReferenceFrames NS_AVAILABLE(NA,5_0);
++ (CMAttitudeReferenceFrame)availableAttitudeReferenceFrames NS_AVAILABLE(NA,5_0);
 
 /*
  *  attitudeReferenceFrame

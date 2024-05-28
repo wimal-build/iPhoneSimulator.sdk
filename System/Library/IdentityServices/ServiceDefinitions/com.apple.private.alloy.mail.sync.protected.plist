@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AutoConfigureVettedAddresses</key>
+	<true/>
+	<key>DisplayName</key>
+	<string>MailClassAProtected</string>
+	<key>Identifier</key>
+	<string>com.apple.private.alloy.mail.sync.protected</string>
+	<key>ProtocolName</key>
+	<string>com.apple.private.alloy</string>
+	<key>PushTopic</key>
+	<string>com.apple.private.alloy.mail.sync.protected</string>
+	<key>ServiceName</key>
+	<string>com.apple.private.alloy.mail.sync.protected</string>
+	<key>iCloudService</key>
+	<true/>
+	<key>AdHocServiceType</key>
+	<integer>2</integer>
+	<key>LaunchDarwinNotification</key>
+	<string>com.apple.nanomail.idslaunchnotification</string>
+	<key>DuetIdentifiers</key>
+	<array>
+		<string>com.apple.NanoMail</string>
+		<string>com.apple.mobilemail</string>
+		<string>com.apple.NanoMailBulletinService</string>
+	</array>
+	<key>DataProtectionClass</key>
+	<string>A</string>
+</dict>
+</plist>

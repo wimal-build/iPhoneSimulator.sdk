@@ -41,7 +41,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface NSStringDrawingContext : NSObject {
 - (void)drawInRect:(CGRect)rect NS_AVAILABLE_IOS(6_0);
 @end
 
-typedef NS_ENUM(NSInteger, NSStringDrawingOptions) {
+typedef NS_OPTIONS(NSInteger, NSStringDrawingOptions) {
     NSStringDrawingTruncatesLastVisibleLine = 1 << 5, // Truncates and adds the ellipsis character to the last visible line if the text doesn't fit into the bounds specified. Ignored if NSStringDrawingUsesLineFragmentOrigin is not also set.
     NSStringDrawingUsesLineFragmentOrigin = 1 << 0, // The specified origin is the line fragment origin, not the base line origin
     NSStringDrawingUsesFontLeading = 1 << 1, // Uses the font leading for calculating line heights

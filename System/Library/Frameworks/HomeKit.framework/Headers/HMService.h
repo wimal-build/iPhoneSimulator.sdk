@@ -31,6 +31,9 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 
 /*!
  * @brief Name for the service.
+ *
+ * @discussion Returns the service's name that is associated with HomeKit. The initial value is the value of
+ *             the name characteristic of the service, if it has one.
  */
 @property(readonly, copy, nonatomic) NSString *name;
 
@@ -52,6 +55,8 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  * @brief This method is used to change the name of the service.
  *
  * @param name New name for the service.
+ *
+ * @discussion The new name is stored in HomeKit and not on the accessory.
  *
  * @param completion Block that is invoked once the request is processed. 
  *                   The NSError provides more information on the status of the request, error

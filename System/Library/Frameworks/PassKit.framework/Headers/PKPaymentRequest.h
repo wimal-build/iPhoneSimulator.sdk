@@ -7,9 +7,9 @@
 #import <Foundation/Foundation.h>
 #import <AddressBook/ABRecord.h>
 
-extern NSString * const PKPaymentNetworkAmex;
-extern NSString * const PKPaymentNetworkMasterCard;
-extern NSString * const PKPaymentNetworkVisa;
+extern NSString * const PKPaymentNetworkAmex NS_AVAILABLE(NA, 8_0);
+extern NSString * const PKPaymentNetworkMasterCard NS_AVAILABLE(NA, 8_0);
+extern NSString * const PKPaymentNetworkVisa NS_AVAILABLE(NA, 8_0);
 
 typedef NS_OPTIONS(NSUInteger, PKMerchantCapability) {
     PKMerchantCapability3DS = 1UL << 0,  // Merchant supports 3DS
@@ -17,12 +17,20 @@ typedef NS_OPTIONS(NSUInteger, PKMerchantCapability) {
 } NS_ENUM_AVAILABLE(NA, 8_0);
 
 typedef NS_OPTIONS(NSUInteger, PKAddressField) {
-    PKAddressFieldNone              = 0UL,      // No address fields required.
-    PKAddressFieldPostalAddress     = 1UL << 0, // Full street address including name, street, city, state/province, postal code, country.
-    PKAddressFieldPhone             = 1UL << 1,
-    PKAddressFieldEmail             = 1UL << 2,
-    PKAddressFieldAll               = (PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldEmail)
+    PKAddressFieldNone                              = 0UL,      // No address fields required.
+    PKAddressFieldPostalAddress                     = 1UL << 0, // Full street address including name, street, city, state/province, postal code, country.
+    PKAddressFieldPhone                             = 1UL << 1,
+    PKAddressFieldEmail                             = 1UL << 2,
+    PKAddressFieldName NS_ENUM_AVAILABLE_IOS(8_3)   = 1UL << 3,
+    PKAddressFieldAll                               = (PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldEmail|PKAddressFieldName)
 } NS_ENUM_AVAILABLE(NA, 8_0);
+
+typedef NS_ENUM(NSUInteger, PKShippingType) {
+    PKShippingTypeShipping,
+    PKShippingTypeDelivery,
+    PKShippingTypeStorePickup,
+    PKShippingTypeServicePickup
+} NS_ENUM_AVAILABLE(NA, 8_3);
 
 // PKPaymentSummaryItem Defines a line-item for a payment such as tax, shipping, or discount.
 NS_CLASS_AVAILABLE(NA, 8_0)
@@ -95,6 +103,10 @@ NS_CLASS_AVAILABLE(NA, 8_0)
 
 // Shipping methods supported by the merchant.
 @property (nonatomic, copy) NSArray *shippingMethods;
+
+// Indicates the display mode for the shipping (e.g, "Pick Up", "Ship To", "Deliver To"). Localized.
+// The default is PKShippingTypeShipping
+@property (nonatomic, assign) PKShippingType shippingType NS_AVAILABLE_IOS(8_3);
 
 // Optional merchant-supplied information about the payment request.  Examples of this are an order
 // or cart identifier.  It will be signed and included in the resulting PKPaymentToken.

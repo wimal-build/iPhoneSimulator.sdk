@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-new ReverseTemplateList([new ReverseTemplate("ticketmaster.com-confirmation-en_AU",function(e){return/^Your Ticket Order Confirmation/.test(e.subject)},function(e){if(!/^Your Ticket Order Confirmation/.test(e.subject))return CONTINUE;var t={};t.total="Total Charge",t.print="Print my tickets",t.number="Your order number for this purchase is",t.valid="valid";var r="en_AU",n=loadHelper("ticketmaster.com-en_AU-confirmation-skeleton.js");return n(e,r,t)},"0/1/2/3/4/5/3/5/6/6/6/6/4/7/726/760/764","SG133127a4")]);

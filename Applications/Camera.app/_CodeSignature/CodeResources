@@ -12,6 +12,10 @@
 		<data>
 		qnD8U3opMjHcztTHAAeN8n1yQF0=
 		</data>
+		<key>Camera-Guides@3x.png</key>
+		<data>
+		fBy/Rg/a9JWzHPeaB0U1/5PYmGE=
+		</data>
 		<key>Camera-NotificationCenter.png</key>
 		<data>
 		5ehk0NeziJEZNHjlHbK6IZNbBDo=
@@ -19,6 +23,10 @@
 		<key>Camera-NotificationCenter@2x.png</key>
 		<data>
 		WSMEWQ76mTMy8f1Ziq2bhCFL9uk=
+		</data>
+		<key>Camera-NotificationCenter@3x.png</key>
+		<data>
+		JeCp2N69wgayV+MN1YVR9kDeHWs=
 		</data>
 		<key>Camera-settings.png</key>
 		<data>
@@ -28,6 +36,10 @@
 		<data>
 		pemVIL2Yce565GKow6QJcadTk/Y=
 		</data>
+		<key>Camera-settings@3x.png</key>
+		<data>
+		oyJpPcp3teb8bynDqjDtOhKsMak=
+		</data>
 		<key>Camera@2x~ipad.png</key>
 		<data>
 		w+M5D+Zcx5anH09m4/H4Kk6hxjk=
@@ -35,6 +47,10 @@
 		<key>Camera@2x~iphone.png</key>
 		<data>
 		fBy/Rg/a9JWzHPeaB0U1/5PYmGE=
+		</data>
+		<key>Camera@3x~iphone.png</key>
+		<data>
+		9p56p+SLy74Rr0IY2mVIev+rvUQ=
 		</data>
 		<key>Camera~ipad.png</key>
 		<data>
@@ -72,6 +88,15 @@
 		<data>
 		//4kva0DAh0v0D/cL84VgftgqTs=
 		</data>
+		<key>Dutch.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jqogiGMWKW6EBhAkYG+mFcwNBl0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -83,7 +108,7 @@
 		</dict>
 		<key>Entitlements.plist</key>
 		<data>
-		r6dNAqkWP2XSnN70FHhbq0fFAd8=
+		NEIKF7a6GU1xxLKLLOsY6LquFTE=
 		</data>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
@@ -105,7 +130,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		dJmW5f2fnNG7KSgcrtZ/2uezxfE=
+		W/vExSTfoTAbzLfI07XHOrsog2Q=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -138,11 +163,119 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1UPtpTB256InPdYw03RQYOwdan4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fwpTmpVzVkCrzzBNurAxKR2+ZTs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sm56ZfZElA/3w9GmuLDK4gnU6T0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DbG45QxHxCHHMTyDW2xbBFcNZcc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VS9UBmzGRuQ9v0Fh45U9AGwwix4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NMOOcJGhRHTnMHMmbN6DB3psyu8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JcheemQeqaYbjbm+9Np1pWtqV0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KpVyzy4Fwdgmrsr9+hgExb1odno=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6nxq7acx0sBoKqrg5DclPRRe3Kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Wk9/V9AO0ExZhqglUMYmrlHEI6s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZULfGNfjSLyKjRTQ/giZQr4cSxE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WnQsEuoU/Pnsl3KUlitzm5NzGo4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZQfgnVz1ZK3H3HSIJh0xsr/+/X4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -156,10 +289,127 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			85Z5xV3DQq74llnd1Ck7Qekd8L8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m8wgwc+O+J0fqjcLN/PqH62ff40=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yPo9ABJDFxG538NcrWIB6gat0Qg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			myMnNfh0KiwSO8Nug4EXn3CzsxA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+EZUjUEw5cbCspvT+/EK7JAi9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fRF4sy/L6u1gRlHOxsgISsBuios=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sH0ymjlhMFgN8K2MhTSLbjwIqC4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aKyI9MJ+eIPITrr17dthf6KnncQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0N0Wqn+nz4ZXDQ8LJ+72cgEOeZo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Lerf/6BxYt8AMUCbpfpdhvxHhFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			45cl69KxeHjPCx/jk9AKIw28Qwo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HG7ZXItNqYbRTEjBGGtALRWynhg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>version.plist</key>
 		<data>
-		uXwmG7g/SCsP6i2WWv67s2EsDQs=
+		XunZsAFbrUzvSYNLad5xBT6E0Ik=
 		</data>
+		<key>vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kla//o1oB8vDYqKmildebxEYBYY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -198,6 +448,10 @@
 		<data>
 		qnD8U3opMjHcztTHAAeN8n1yQF0=
 		</data>
+		<key>Camera-Guides@3x.png</key>
+		<data>
+		fBy/Rg/a9JWzHPeaB0U1/5PYmGE=
+		</data>
 		<key>Camera-NotificationCenter.png</key>
 		<data>
 		5ehk0NeziJEZNHjlHbK6IZNbBDo=
@@ -205,6 +459,10 @@
 		<key>Camera-NotificationCenter@2x.png</key>
 		<data>
 		WSMEWQ76mTMy8f1Ziq2bhCFL9uk=
+		</data>
+		<key>Camera-NotificationCenter@3x.png</key>
+		<data>
+		JeCp2N69wgayV+MN1YVR9kDeHWs=
 		</data>
 		<key>Camera-settings.png</key>
 		<data>
@@ -214,6 +472,10 @@
 		<data>
 		pemVIL2Yce565GKow6QJcadTk/Y=
 		</data>
+		<key>Camera-settings@3x.png</key>
+		<data>
+		oyJpPcp3teb8bynDqjDtOhKsMak=
+		</data>
 		<key>Camera@2x~ipad.png</key>
 		<data>
 		w+M5D+Zcx5anH09m4/H4Kk6hxjk=
@@ -221,6 +483,10 @@
 		<key>Camera@2x~iphone.png</key>
 		<data>
 		fBy/Rg/a9JWzHPeaB0U1/5PYmGE=
+		</data>
+		<key>Camera@3x~iphone.png</key>
+		<data>
+		9p56p+SLy74Rr0IY2mVIev+rvUQ=
 		</data>
 		<key>Camera~ipad.png</key>
 		<data>
@@ -258,6 +524,15 @@
 		<data>
 		//4kva0DAh0v0D/cL84VgftgqTs=
 		</data>
+		<key>Dutch.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jqogiGMWKW6EBhAkYG+mFcwNBl0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>English.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -269,7 +544,7 @@
 		</dict>
 		<key>Entitlements.plist</key>
 		<data>
-		r6dNAqkWP2XSnN70FHhbq0fFAd8=
+		NEIKF7a6GU1xxLKLLOsY6LquFTE=
 		</data>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
@@ -316,11 +591,119 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1UPtpTB256InPdYw03RQYOwdan4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fwpTmpVzVkCrzzBNurAxKR2+ZTs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sm56ZfZElA/3w9GmuLDK4gnU6T0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DbG45QxHxCHHMTyDW2xbBFcNZcc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VS9UBmzGRuQ9v0Fh45U9AGwwix4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NMOOcJGhRHTnMHMmbN6DB3psyu8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JcheemQeqaYbjbm+9Np1pWtqV0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KpVyzy4Fwdgmrsr9+hgExb1odno=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6nxq7acx0sBoKqrg5DclPRRe3Kg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Wk9/V9AO0ExZhqglUMYmrlHEI6s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZULfGNfjSLyKjRTQ/giZQr4cSxE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WnQsEuoU/Pnsl3KUlitzm5NzGo4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZQfgnVz1ZK3H3HSIJh0xsr/+/X4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -334,10 +717,127 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			85Z5xV3DQq74llnd1Ck7Qekd8L8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m8wgwc+O+J0fqjcLN/PqH62ff40=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yPo9ABJDFxG538NcrWIB6gat0Qg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			myMnNfh0KiwSO8Nug4EXn3CzsxA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+EZUjUEw5cbCspvT+/EK7JAi9U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fRF4sy/L6u1gRlHOxsgISsBuios=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sH0ymjlhMFgN8K2MhTSLbjwIqC4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aKyI9MJ+eIPITrr17dthf6KnncQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0N0Wqn+nz4ZXDQ8LJ+72cgEOeZo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Lerf/6BxYt8AMUCbpfpdhvxHhFk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			45cl69KxeHjPCx/jk9AKIw28Qwo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HG7ZXItNqYbRTEjBGGtALRWynhg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>version.plist</key>
 		<data>
-		uXwmG7g/SCsP6i2WWv67s2EsDQs=
+		XunZsAFbrUzvSYNLad5xBT6E0Ik=
 		</data>
+		<key>vi.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kla//o1oB8vDYqKmildebxEYBYY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>

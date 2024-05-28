@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Ez a videó éppen a tv-n játszódik.',
 
     'Aborted': 'Megszakítva',
+    'Audio': 'Hang',
     'Audio Playback': 'Hanglejátszás',
     'Captions': 'Képfeliratok',
     'Choose Wireless Display': 'Vezeték nélküli kijelző kiválasztása',

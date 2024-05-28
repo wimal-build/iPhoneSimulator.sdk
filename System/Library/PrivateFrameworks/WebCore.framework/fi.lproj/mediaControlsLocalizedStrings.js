@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Videota toistetaan TV:ssä.',
 
     'Aborted': 'Keskeytetty',
+    'Audio': 'Ääni',
     'Audio Playback': 'Äänentoisto',
     'Captions': 'Kuvatekstit',
     'Choose Wireless Display': 'Valitse langaton näyttö',

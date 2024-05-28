@@ -1,6 +1,6 @@
 /* CoreAnimation - CADisplayLink.h
 
-   Copyright (c) 2009-2014, Apple Inc.
+   Copyright (c) 2009-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CABase.h>
@@ -45,7 +45,8 @@
  * normal Core Animation conventions, i.e. Mach host time converted to
  * seconds. */
 
-@property(readonly, nonatomic) CFTimeInterval timestamp, duration;
+@property(readonly, nonatomic) CFTimeInterval timestamp;
+@property(readonly, nonatomic) CFTimeInterval duration;
 
 /* When true the object is prevented from firing. Initial state is
  * false. */

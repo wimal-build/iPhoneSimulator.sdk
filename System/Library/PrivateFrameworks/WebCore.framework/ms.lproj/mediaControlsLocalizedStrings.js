@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Video ini sedang bermain di TV.',
 
     'Aborted': 'Dihenti Paksa',
+    'Audio': 'Audio',
     'Audio Playback': 'Main Balik Audio',
     'Captions': 'Kapsyen',
     'Choose Wireless Display': 'Pilih Paparan Wayarles',

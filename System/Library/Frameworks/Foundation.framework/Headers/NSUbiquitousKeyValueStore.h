@@ -14,6 +14,7 @@ NS_CLASS_AVAILABLE(10_7, 5_0)
     id _private3;
     void *_private4;
     void *_reserved[3];
+    int _daemonWakeToken;
 #if DEPLOYMENT_TARGET_MACOSX
     BOOL _disabledSuddenTermination;
 #endif

@@ -9,7 +9,7 @@ defaultvoice:Nora
     <language>Norwegian</language>
     <langcode>NON</langcode>
     <langid>8</langid>
-    <langversion>5.2.4.13289</langversion>
+    <langversion>5.2.4.14281</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Nora</voice>
     <voiceversion>5.2.4.13302</voiceversion>
@@ -82,12 +82,21 @@ defaultvoice:Nora
 
     <!-- The next entries specify default broker strings tuning resources if available -->
     
-     
+    
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      udct/yosemite/set/non/cfg1
+    </RESOURCE>
     
     
     
     
     
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/set/non
+    </RESOURCE>
+    <RESOURCE content-type="application/x-vocalizer-rettt+text;loader=broker">
+      rlst/yosemite/spell/non
+    </RESOURCE>
     
     
     

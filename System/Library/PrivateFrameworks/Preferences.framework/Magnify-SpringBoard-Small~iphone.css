@@ -7,6 +7,7 @@ BODY {
 }
 
 .StatusBarTime,
+.DayOfWeek,
 .Messages,
 .Calendar,
 .Photos,
@@ -43,6 +44,12 @@ BODY {
 	font: "Helvetica Neue Interface", Times, sans-serif;
 	font-size: 29px;
 	font-weight: 500;
+}
+
+.DayOfWeek {
+    top: 74px;
+    color: #F7281C;
+    font-size: 18px;
 }
 
 .Messages,
@@ -96,6 +103,7 @@ BODY {
 	left:20px;
 }
 
+.DayOfWeek,
 .Calendar,
 .Clock,
 .Reminders,

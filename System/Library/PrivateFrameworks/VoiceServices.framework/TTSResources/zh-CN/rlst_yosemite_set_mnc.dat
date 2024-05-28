@@ -2,7 +2,7 @@
 #
 # Copyright (c) 2013 Nuance Communications, Inc. All Rights Reserved.
 #
-#RLSTAG: RLS_FE.MNC_v6.0.3
+#RLSTAG: RLS_FE.MNC_v6.0.5
 
 [header]
 language = MNC
@@ -313,3 +313,12 @@ charset = utf-8
 /\x1b\\tn=lastname\\房/   -->   "fang2 "
 #Fix for FogBugz case 48927
 /有2种类型/   -->   "有两种类型 "
+#Fix for FogBugz case 62008
+/Pay/   -->   "Apple Pay"
+/WATCH/   -->   "Apple Watch"
+#Fix for FogBugz case 57364
+/马家堡/   -->   "马家铺"
+/白家疃/   -->   "白家滩"
+#Fix for FogBugz 53788
+/咳!/   -->   "hai1"
+/咳！/   -->   "hai1"

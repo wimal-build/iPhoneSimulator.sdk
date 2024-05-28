@@ -1,6 +1,6 @@
 /* CoreAnimation - CAShapeLayer.h
 
-   Copyright (c) 2008-2014, Apple Inc.
+   Copyright (c) 2008-2015, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CALayer.h>
@@ -61,7 +61,8 @@
  * length. strokeStart defaults to zero and strokeEnd to one. Both are
  * animatable. */
 
-@property CGFloat strokeStart, strokeEnd;
+@property CGFloat strokeStart;
+@property CGFloat strokeEnd;
 
 /* The line width used when stroking the path. Defaults to one.
  * Animatable. */

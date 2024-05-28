@@ -133,6 +133,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
     UIViewController *_viewDelegate;
     NSString         *_backgroundColorSystemColorName;
     NSUInteger      _countOfMotionEffectsInSubtree;
+    NSUInteger      _countOfTraitChangeRespondersInDirectSubtree;
     struct {
         unsigned int userInteractionDisabled:1;
         unsigned int implementsDrawRect:1;
@@ -205,7 +206,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
         unsigned int backdropOverlayMode:2;
         unsigned int tintAdjustmentMode:2;
         unsigned int isReferenceView:1;
-        unsigned int focusState:2;
         unsigned int hasUserInterfaceIdiom:1;
         unsigned int userInterfaceIdiom:3;
         unsigned int ancestorDefinesTintColor:1;
@@ -213,9 +213,12 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
         unsigned int needsTraitCollectionDidChange:1;
         unsigned int coloredViewBounds:1;
         unsigned int coloredAlignmentRects:1;
+        unsigned int coloredHighlightItems:1;
         unsigned int preservesSuperviewMargins:1;
         unsigned int hasGeometryObservers:1;
         unsigned int wantsGeometryChanges:1;
+        unsigned int hasTraitStorageList:1;
+        unsigned int dontUpdateInferredLayoutMargins:1;
     } _viewFlags;
 }
 

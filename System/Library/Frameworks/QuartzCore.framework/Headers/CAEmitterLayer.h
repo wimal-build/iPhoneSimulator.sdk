@@ -1,10 +1,10 @@
 /* CoreAnimation - CAEmitterLayer.h
 
-   Copyright (c) 2007-2014, Apple Inc.
+   Copyright (c) 2007-2015, Apple Inc.
    All rights reserved. */
 
 /* Particle emitter layer.
- * 
+ *
  * Each emitter has an array of cells, the cells define how particles
  * are emitted and rendered by the layer.
  *

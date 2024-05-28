@@ -6,6 +6,7 @@ var UIStringTable = {
     '##TVOUT_DEVICE_NAME##': 'Toto video je přehráváno na TV.',
 
     'Aborted': 'Přerušeno',
+    'Audio': 'Zvuk',
     'Audio Playback': 'Přehrávání zvuku',
     'Captions': 'Titulky',
     'Choose Wireless Display': 'Vybrat bezdrátové zobrazení',
