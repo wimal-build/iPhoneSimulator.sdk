@@ -21,6 +21,7 @@
 #import <MediaPlayer/MPPlayableContentDataSource.h>
 #import <MediaPlayer/MPPlayableContentDelegate.h>
 #import <MediaPlayer/MPPlayableContentManager.h>
+#import <MediaPlayer/MPPlayableContentManagerContext.h>
 #import <MediaPlayer/MPRemoteCommand.h>
 #import <MediaPlayer/MPRemoteCommandCenter.h>
 #import <MediaPlayer/MPRemoteCommandEvent.h>

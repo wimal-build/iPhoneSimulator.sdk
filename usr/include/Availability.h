@@ -149,6 +149,7 @@
 #define __IPHONE_8_1     80100
 #define __IPHONE_8_2     80200
 #define __IPHONE_8_3     80300
+#define __IPHONE_8_4     80400
 /* __IPHONE_NA is not defined to a value but is uses as a token by macros to indicate that the API is unavailable */
 
 #include <AvailabilityInternal.h>

@@ -159,6 +159,8 @@ __BEGIN_DECLS
 #define MACH_MULTIQ_DEQUEUE        0x22 /* Result of multiq dequeue */
 #define MACH_SCHED_THREAD_SWITCH   0x23 /* attempt direct context switch to hinted thread */
 #define MACH_SCHED_SMT_BALANCE     0x24 /* SMT load balancing ASTs */
+#define MACH_STACK_WAIT            0x29 /* Thread could not be switched-to because of kernel stack shortage */
+#define MACH_THREAD_BIND           0x2a /* Thread was bound (or unbound) to a processor */
 
 /* Variants for MACH_MULTIQ_DEQUEUE */
 #define MACH_MULTIQ_BOUND     1

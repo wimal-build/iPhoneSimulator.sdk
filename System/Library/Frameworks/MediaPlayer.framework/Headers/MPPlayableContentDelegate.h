@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class MPPlayableContentManager, MPContentItem;
+@class MPPlayableContentManager, MPContentItem, MPPlayableContentManagerContext;
 
 /// The MPPlayableContentDelegate is a protocol that allows for external media
 /// players to send playback commands to an application. For instance,
@@ -24,5 +24,8 @@
 - (void)playableContentManager:(MPPlayableContentManager *)contentManager
 initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *)indexPath
              completionHandler:(void(^)(NSError *))completionHandler;
+
+/// This method is called when the content server notifies the manager that the current context has changed.
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context;
 
 @end

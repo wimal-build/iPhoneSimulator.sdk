@@ -19,7 +19,7 @@ BODY {
 .Notes,
 .Reminders,
 .Stocks,
-.GameCenter,
+.Passbook,
 .Newsstand,
 .iTunesStore,
 .AppStore,
@@ -69,19 +69,18 @@ BODY {
 .Notes,
 .Reminders,
 .Stocks,
-.GameCenter {
+.Passbook {
 	top: 620px;
 }
 
-.Newsstand,
+.iBooks,
 .iTunesStore,
 .AppStore,
-.iBooks {
+.Newsstand {
 	top: 826px;
 }
 
 .Health,
-.Passbook,
 .Settings {
 	top: 1032px;
 }
@@ -97,10 +96,10 @@ BODY {
 .Messages,
 .Weather,
 .Notes,
-.Newsstand,
+.iBooks,
 .Health,
 .Phone {
-	left:20px;
+	left:15px;
 }
 
 .DayOfWeek,
@@ -108,8 +107,8 @@ BODY {
 .Clock,
 .Reminders,
 .iTunesStore,
-.Passbook,
-.Mail {
+.Settings,
+.Safari {
 	left:194px;
 }
 
@@ -117,27 +116,27 @@ BODY {
 .Maps,
 .Stocks,
 .AppStore,
-.Settings {
+.Mail {
 	left:377px;
 }
 
 .Camera,
 .Videos,
-.GameCenter,
-.iBooks,
+.Passbook,
+.Newsstand,
 .Music {
 	left:550px;
 }
 
 .Phone {
-	left:22px;
-}
-
-.Mail {
-	left:197px;
+	left:17px;
 }
 
 .Safari {
+	left:197px;
+}
+
+.Mail {
 	left:372px;
 }
 

@@ -20,6 +20,7 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 
 @property (nonatomic, weak) id<MPPlayableContentDataSource> dataSource;
 @property (nonatomic, weak) id<MPPlayableContentDelegate>   delegate;
+@property (nonatomic, readonly) MPPlayableContentManagerContext *context;
 
 /// Returns the application's instance of the content manager.
 + (instancetype)sharedContentManager;

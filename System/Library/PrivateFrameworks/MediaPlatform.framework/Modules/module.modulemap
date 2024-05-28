@@ -1,0 +1,6 @@
+framework module MediaPlatform {
+  umbrella header "MediaPlatform.h"
+
+  export *
+  module * { export * }
+}
