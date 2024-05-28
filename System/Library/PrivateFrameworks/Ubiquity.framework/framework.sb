@@ -1,1 +1,1 @@
-(allow network-outbound (home-literal "/Library/Application Support/Ubiquity/ubiquity.socket"))
+(allow network-outbound (literal "/private/var/tmp/ubiquity.socket"))

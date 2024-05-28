@@ -28,6 +28,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UILabel : UIView <NSCoding>
     NSInteger  _numberOfLines;
     CGFloat    _lastLineBaseline;
     NSInteger  _lineSpacing;
+    CGFloat    _shadowBlur;
     struct {
         unsigned int lineBreakMode:3;
         unsigned int highlighted:1;

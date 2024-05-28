@@ -126,9 +126,9 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: rgb(244, 244, 244);
             -webkit-user-select: none;
-            background-image:url(./PaperTexture.png);
+            background-color: white;
+            background-image: url(./PaperTexture.png);
         }
 
         .cached embed, .cached applet, .cached object {
@@ -202,10 +202,10 @@
             margin-top: 10px;
             padding: 45px 18px;
             color: black;
-            background: rgb(244, 244, 244);
             position: relative;
             overflow: hidden;
-            background-image:url(./PaperTexture.png);
+            background-color: white;
+            background-image: url(./PaperTexture.png);
             -webkit-text-size-adjust: none;
         }
 
@@ -344,7 +344,7 @@
     @media screen and (-webkit-device-pixel-ratio:2) {
         body, .page {
             background-image:url(./PaperTexture@2x.png);
-            -webkit-background-size:100% auto;
+            -webkit-background-size: 128px auto; /* Texture is currently 256x256, keep in sync if (when) the art changes. */
         }
         #incoming-page-spinner {
             background:url(./ReaderSpinner@2x.png);

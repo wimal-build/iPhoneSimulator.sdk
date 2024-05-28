@@ -141,8 +141,6 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIApplication : UIResponder <UIActionSheet
         unsigned int isHeadsetButtonDown:1;
         unsigned int isFastForwardActive:1;
         unsigned int isRewindActive:1;
-        unsigned int disableViewGroupOpacity:1;
-        unsigned int disableViewEdgeAntialiasing:1;
         unsigned int shakeToEdit:1;
         unsigned int isClassic:1;
         unsigned int zoomInClassicMode:1;
@@ -158,6 +156,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UIApplication : UIResponder <UIActionSheet
         unsigned int delegateWantsNextResponder:1;
         unsigned int isRunningInApplicationSwitcher:1;
         unsigned int isSendingEventForProgrammaticTouchCancellation:1;
+        unsigned int calledInitializationDelegates:1;
     } _applicationFlags;
 }
 

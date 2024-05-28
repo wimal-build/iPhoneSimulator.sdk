@@ -198,6 +198,9 @@ typedef struct AudioFormatListItem AudioFormatListItem;
 					the format to ask about. The value is a UInt32 where non-zero means
 					the format is externally framed. Any format which has variable byte sized packets
 					requires AudioStreamPacketDescriptions.
+    @constant   kAudioFormatProperty_FormatIsEncrypted
+                    Returns whether or not a format is encrypted. The specifier is a UInt32 format ID.
+                    The value is a UInt32 where non-zero means the format is encrypted.
     @constant   kAudioFormatProperty_EncodeFormatIDs
 					No specifier needed. Must be set to NULL.
 					Returns an array of UInt32 format IDs for formats that are valid output formats 
@@ -386,6 +389,7 @@ enum
 	kAudioFormatProperty_FirstPlayableFormatFromList	= 'fpfl',
 	kAudioFormatProperty_FormatIsVBR					= 'fvbr',	
 	kAudioFormatProperty_FormatIsExternallyFramed		= 'fexf',
+	kAudioFormatProperty_FormatIsEncrypted				= 'cryp',
 	kAudioFormatProperty_Encoders						= 'aven',	
 	kAudioFormatProperty_Decoders						= 'avde',
 	kAudioFormatProperty_AvailableEncodeBitRates		= 'aebr',

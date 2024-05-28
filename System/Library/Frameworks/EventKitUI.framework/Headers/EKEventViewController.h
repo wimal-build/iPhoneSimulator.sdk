@@ -58,6 +58,7 @@ EVENTKITUI_CLASS_AVAILABLE(4_0)
     unsigned                _showsAddToCalendar:1;
     unsigned                _icsPreview:1;
     unsigned                _needsReload:1;    
+    unsigned                _showsDoneButton:1;
     
     NSArray                *_items;
     NSArray                *_currentSections;

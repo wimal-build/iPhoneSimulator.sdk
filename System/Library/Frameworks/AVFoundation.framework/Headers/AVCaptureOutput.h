@@ -3,7 +3,7 @@
  	
  	Framework:  AVFoundation
  
-	Copyright 2010 Apple Inc. All rights reserved.
+	Copyright 2010-2012 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
@@ -193,7 +193,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
 	placing a lower bound on the amount of time that should separate consecutive frames. This is equivalent to the
 	inverse of the maximum frame rate. A value of kCMTimeZero or kCMTimeInvalid indicates an unlimited maximum frame
 	rate. The default value is kCMTimeInvalid.  As of iOS 5.0, minFrameDuration is deprecated.  Use AVCaptureConnection's
-	minVideoFrameDuration property instead.
+	videoMinFrameDuration property instead.
 */
 @property(nonatomic) CMTime minFrameDuration NS_DEPRECATED_IOS(4_0, 5_0);
 

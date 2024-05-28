@@ -262,6 +262,7 @@ typedef __darwin_pid_t	pid_t;
 #define F_SINGLE_WRITER		76	/* file being written to a by single writer... if throttling enabled, writes */
                                         /* may be broken into smaller chunks with throttling in between */
 
+#define F_GETPROTECTIONLEVEL	77	/* Get the protection version number for the filesystem */
 
 // FS-specific fcntl()'s numbers begin at 0x00010000 and go up
 #define FCNTL_FS_SPECIFIC_BASE  0x00010000

@@ -92,6 +92,7 @@ typedef struct jetsam_kernel_stats {
 	uint32_t free_pages;
 	uint32_t active_pages;
 	uint32_t inactive_pages;
+	uint32_t throttled_pages;
 	uint32_t purgeable_pages;
 	uint32_t wired_pages;
 } jetsam_kernel_stats_t;

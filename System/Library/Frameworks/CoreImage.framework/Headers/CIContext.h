@@ -14,14 +14,14 @@
  #import <OpenGL/CGLTypes.h>
 #endif 
 
+struct CIContextInternal;
 
 @class CIFilter;
 
 CORE_IMAGE_CLASS_EXPORT
 @interface CIContext : NSObject
 {
-    void* _priv;
-    pthread_mutex_t _mutex;
+    struct CIContextInternal *_priv;
 }
 
 /* Keys that may be passed in the dictionary while creating contexts: */

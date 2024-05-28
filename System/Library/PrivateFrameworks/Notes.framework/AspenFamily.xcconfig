@@ -1,0 +1,92 @@
+//
+// AspenFamily.xcconfig
+//
+
+//
+// Many defines in this file are based on the selected SDK; it does not set an SDK.
+//
+
+// ##################### Common Configuration #######################
+
+// The platform version and the SDK version won't always be the same.
+ASPEN_PLATFORM_VERSION = 5.1  // IPHONE_SDK_MARKETING_VERSION comes from B&I on the commandline
+
+// Internal projects are built with llvm-gcc-4.2 by default (at least for Telluride). <rdar://problem/9785436>
+DEFAULT_COMPILER = com.apple.compilers.llvmgcc42
+
+// Internal projects by default use both <rdar://problem/7466481>
+TARGETED_DEVICE_FAMILY = 1,2
+
+// We're internal, so we expect to use PrivateFrameworks
+FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*] = $(SDKROOT)/System/Library/PrivateFrameworks/ $(inherited)
+FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*] = $(SDKROOT)/System/Library/PrivateFrameworks/ $(inherited)
+
+// Root for platform contents
+ASPEN_PLATFORM_DIR = $(DEVELOPER_DIR)/Platforms/
+
+// The SDK these project target (forward definition, evaluates at buildtime)
+TARGETED_SDK_DIR[sdk=macosx*] = $(ASPEN_SDK_DIR);
+
+// Tell Xcode to always shows every SDK in the overview pop-up
+SHOW_ALL_SDKS_IN_OVERVIEW_POPUP = Yes
+
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos
+
+
+// ##################### Device Specific Configuration #######################
+ASPEN_PLATFORM_FILENAME          = iPhoneOS
+ASPEN_PLATFORM_WRAPPER_NAME      = $(ASPEN_PLATFORM_FILENAME).platform
+ASPEN_PLATFORM_PATH              = $(ASPEN_PLATFORM_DIR)$(ASPEN_PLATFORM_WRAPPER_NAME)
+
+ASPEN_PLATFORM_NAME              = iphoneos
+ASPEN_PLATFORM_DISPLAY_NAME      = iOS
+ASPEN_PLATFORM_FAMILY_NAME       = iOS
+ASPEN_PLATFORM_FAMILY_IDENTIFIER = iphoneos
+
+ASPEN_SDK_DIR                    = $(ASPEN_PLATFORM_PATH)/Developer/SDKs/$(ASPEN_PLATFORM_FILENAME)$(ASPEN_PLATFORM_VERSION).Internal.sdk/
+TARGETED_SDK_DIR[sdk=iphoneos*]  = $(ASPEN_SDK_DIR);
+
+
+// ##################### Simulator Specific Configuration #######################
+INDIGO_PLATFORM_VERSION = $(ASPEN_PLATFORM_VERSION)
+INDIGO_SDK_VERSION      = $(ASPEN_PLATFORM_VERSION)     // The platform version and the SDK version won't always be the same.
+
+INDIGO_PLATFORM_FILE_NAME         = iPhoneSimulator
+INDIGO_PLATFORM_WRAPPER_NAME      = $(INDIGO_PLATFORM_FILE_NAME).platform
+INDIGO_PLATFORM_PATH              = $(ASPEN_PLATFORM_DIR)$(INDIGO_PLATFORM_WRAPPER_NAME)
+
+INDIGO_PLATFORM_NAME              = iphonesimulator
+INDIGO_PLATFORM_DISPLAY_NAME      = iOS Simulator
+INDIGO_PLATFORM_FAMILY_NAME       = iOS
+INDIGO_PLATFORM_FAMILY_IDENTIFIER = iphoneos
+
+INDIGO_SDK_DIR                    = $(INDIGO_PLATFORM_PATH)/Developer/SDKs/$(INDIGO_PLATFORM_FILE_NAME)$(INDIGO_SDK_VERSION).sdk/
+TARGETED_SDK_DIR[sdk=iphonesimulator*] = $(INDIGO_SDK_DIR);
+
+INDIGO_SDK_DISPLAY_NAME_PREFIX    = Simulator - iOS
+
+INDIGO_PLATFORM_APPLICATIONS_PATH = $(INDIGO_PLATFORM_PATH)/Developer/Applications
+
+// This is where iPhoneSimulator sdk goes. 
+INSTALL_PATH_PREFIX[sdk=iphonesimulator*]=$(INDIGO_SDK_DIR);
+
+// Clients MUST set INSTALL_PATH_ACTUAL
+INSTALL_PATH=$(INSTALL_PATH_PREFIX)$(INSTALL_PATH_ACTUAL);
+
+// For projects that depend on the legacy build settings
+INDIGO_INSTALL_PATH_PREFIX[sdk=iphonesimulator*] = $(INDIGO_SDK_DIR);
+INSTALL_PATH[sdk=iphonesimulator*]=$(INSTALL_PATH_PREFIX)$(INSTALL_PATH_ACTUAL);
+
+// Clients building static libraries (like WebKitSystemInterface) MUST set STATIC_LIBRARY_HEADERS_FOLDER_PATH_ACTUAL
+//  AND set PRIVATE_HEADERS_FOLDER_PATH and PUBLIC_HEADERS_FOLDER_PATH to $(STATIC_LIBRARY_HEADERS_FOLDER_PATH)
+STATIC_LIBRARY_HEADERS_FOLDER_PATH=$(INSTALL_PATH_PREFIX)$(STATIC_LIBRARY_HEADERS_FOLDER_PATH_ACTUAL)
+
+LD_DYLIB_INSTALL_NAME[sdk=iphonesimulator*]=$(LD_DYLIB_INSTALL_NAME_$(MACH_O_TYPE));
+LD_DYLIB_INSTALL_NAME_mh_dylib[sdk=iphonesimulator*]=$(INSTALL_PATH_ACTUAL)/$(EXECUTABLE_PATH);
+LD_DYLIB_INSTALL_NAME_mh_execute[sdk=iphonesimulator*]=;
+
+// Defines for frameworks that are currently missing from Indigo, but will likely get added over time.
+INDIGO_MISSING_FRAMEWORKS[sdk=iphonesimulator*]=INDIGO_NO_CSI=1;
+
+// This lets code know it is building for the simulator. Will have to pick a better name.
+GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]=INDIGO=1 $(INDIGO_MISSING_FRAMEWORKS) $(inherited);

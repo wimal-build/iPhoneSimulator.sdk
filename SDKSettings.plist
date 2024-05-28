@@ -5,7 +5,7 @@
 	<key>BuildMachineOSBuild</key>
 	<string>10H575</string>
 	<key>CanonicalName</key>
-	<string>iphonesimulator5.0</string>
+	<string>iphonesimulator5.1</string>
 	<key>CustomProperties</key>
 	<dict/>
 	<key>DTCompiler</key>
@@ -25,13 +25,13 @@
 	<key>DefaultProperties</key>
 	<dict>
 		<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-		<string>5.0</string>
+		<string>5.1</string>
 		<key>MACOSX_DEPLOYMENT_TARGET</key>
 		<string>10.6</string>
 		<key>PLATFORM_NAME</key>
 		<string>iphonesimulator</string>
 		<key>PLATFORM_VERSION_AVAILABILITY_H_FORMAT</key>
-		<string>50000</string>
+		<string>50100</string>
 		<key>SUPPORTED_DEVICE_FAMILIES</key>
 		<array>
 			<string>1</string>
@@ -39,7 +39,7 @@
 		</array>
 	</dict>
 	<key>DisplayName</key>
-	<string>Simulator - iOS 5.0</string>
+	<string>Simulator - iOS 5.1</string>
 	<key>DocSetFeedName</key>
 	<string>Apple iPhone OS</string>
 	<key>DocSetFeedURL</key>
@@ -47,11 +47,11 @@
 	<key>MaximumDeploymentTarget</key>
 	<string>10.6</string>
 	<key>MinimalDisplayName</key>
-	<string>Simulator - 5.0</string>
+	<string>Simulator - 5.1</string>
 	<key>MinimumSupportedToolsVersion</key>
 	<string>3.2.3</string>
 	<key>Version</key>
-	<string>5.0</string>
+	<string>5.1</string>
 	<key>isBaseSDK</key>
 	<string>YES</string>
 </dict>

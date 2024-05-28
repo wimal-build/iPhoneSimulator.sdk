@@ -99,6 +99,10 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITextField : UIControl <UITextInput, NSCo
     UIPopoverController* _definitionPopoverController;
     UIViewController* _definitionModalViewController;
 
+    UIColor         *_shadowColor;
+    CGSize           _shadowOffset;
+    CGFloat          _shadowBlur;
+
     struct {
         unsigned int secureTextChanged:1;
         unsigned int guard:1;

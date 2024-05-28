@@ -27,6 +27,9 @@ NS_CLASS_AVAILABLE(NA, 4_0)
 // Returns the representation's UTI.
 - (NSString *)UTI;
 
+// Returns the dimensions of this representation.  If the representation does not have valid dimensions, this method will return CGSizeZero.
+- (CGSize)dimensions;
+
 // Returns the size of the file for this representation. Callers can use this to allocate buffers of the right size for -getBytes:fromOffset:length:error:
 - (long long)size;
 

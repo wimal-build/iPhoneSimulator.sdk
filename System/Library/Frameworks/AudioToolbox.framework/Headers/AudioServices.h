@@ -1005,6 +1005,10 @@ enum {
                         values defined above.
     @constant       kAudioSessionProperty_InputSources
                         Available with iOS 5.0 or greater
+                        For use with certain accessories, such as some USB audio devices, that support input source selection.  
+                        If the attached accessory supports source selection, provides a description of the available sources.
+                        Not to be confused with kAudioSessionProperty_AudioRouteDescription, which provides a description
+                        of the current audio route.  
                         A CFArray of CFDictionaries with the keys listed below.  If no input sources are 
                         available, a valid CFArray with 0 entries will be returned by a get operation.
                         Key = kAudioSession_InputSourceKey_ID; value is a CFNumberRef representing a system-defined identifier
@@ -1014,6 +1018,10 @@ enum {
                         "Ext 48V Mic", "Instrument", "External Line Connector"
     @constant       kAudioSessionProperty_OutputDestinations
                         Available with iOS 5.0 or greater
+                        For use with certain accessories, such as some USB audio devices, that support output destination selection.  
+                        If the attached accessory supports destination selection, provides a description of the available destinations.
+                        Not to be confused with kAudioSessionProperty_AudioRouteDescription, which provides a description
+                        of the current audio route. 
                         A CFArray of CFDictionaries with the keys listed below.  If no output destinations are 
                         available, a valid CFArray with 0 entries will be returned by a get operation.
                         Key = kAudioSession_OutputDestinationKey_ID; value is a CFNumberRef representing a system-defined identifier
@@ -1022,11 +1030,13 @@ enum {
                         destination suitable for displaying in a user interface. 
     @constant       kAudioSessionProperty_InputSource
                         Available with iOS 5.0 or greater
+                        For use with certain accessories, such as some USB audio devices, that support input source selection. 
                         A CFNumberRef value that specifies the input source to be selected.  The value must be one of the 
                         IDs provided by the kAudioSession_InputSourceKey_ID as part of the data associated with 
                         kAudioSessionProperty_InputSources.
     @constant       kAudioSessionProperty_OutputDestination
                         Available with iOS 5.0 or greater
+                        For use with certain accessories, such as some USB audio devices, that support output destination selection.
                         A CFNumberRef value that specifies the output destination to be selected.  The value must be one 
                         of the IDs provided by the kAudioSession_OutputDestinationKey_ID as part of the data associated with
                         kAudioSessionProperty_OutputDestinations.

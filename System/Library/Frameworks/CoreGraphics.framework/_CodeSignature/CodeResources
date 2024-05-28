@@ -12,13 +12,48 @@
 		<data>
 		SvSo3sNhKTl5i1vDDfdgM3txI2g=
 		</data>
-		<key>Resources/version.plist</key>
+		<key>Resources/libCGCorePDF.A.dylib</key>
 		<data>
-		kiohw3Pei/LJqgDtluFvHyY1qec=
+		C82wLTPiUDwYtmv1Ay2S0dC2uTQ=
+		</data>
+		<key>Resources/libCGFreetype.A.dylib</key>
+		<data>
+		vc0OpGFwYFVIdBekZ4d3ZCRhHV8=
+		</data>
+		<key>Resources/libCGVolute.A.dylib</key>
+		<data>
+		GF2CXdqcUEppj4sVyOjZeKlK3KE=
+		</data>
+		<key>Resources/libCMaps.A.dylib</key>
+		<data>
+		lt4P7txKZa4BKExiyJpvFPiyzvw=
+		</data>
+		<key>Resources/libFontStreams.A.dylib</key>
+		<data>
+		yXLYTCXtUJerh4U9gxxhDGN6Cas=
+		</data>
+		<key>Resources/libJBIG2.A.dylib</key>
+		<data>
+		GLPtq3tg3EAipTx3fI9eV7PFHWY=
+		</data>
+		<key>Resources/libPDFRIP.A.dylib</key>
+		<data>
+		ynAudjQB5Nyb27VXIdrRrI1Tkgg=
+		</data>
+		<key>Resources/libRIP.A.dylib</key>
+		<data>
+		YWW35pypPFaJ0LvSRM4UqMR+PTM=
 		</data>
 	</dict>
 	<key>rules</key>
 	<dict>
+		<key>@[0-9]+</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
 		<key>^Resources/</key>
 		<true/>
 		<key>^Resources/.*\.lproj/</key>
@@ -26,7 +61,7 @@
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
+			<real>30</real>
 		</dict>
 		<key>^Resources/.*\.lproj/locversion.plist$</key>
 		<dict>
@@ -49,6 +84,13 @@
 			<key>weight</key>
 			<real>5</real>
 		</dict>
+		<key>^Resources/.*\.nib/designable\.nib$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>5</real>
+		</dict>
 		<key>^Resources/.*\.nib/info\.nib$</key>
 		<dict>
 			<key>optional</key>
@@ -56,12 +98,19 @@
 			<key>weight</key>
 			<real>5</real>
 		</dict>
+		<key>^Resources/BridgeSupport/[^/]*\.(bridgesupport|dylib)$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
 		<key>^Resources/English\.lproj/</key>
 		<dict>
 			<key>optional</key>
 			<true/>
 			<key>weight</key>
-			<real>20</real>
+			<real>5</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>

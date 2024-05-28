@@ -28,6 +28,14 @@
 extern int _sqlite3_lockstate(const char *path, pid_t pid);
 
 /*
+** Test an open database connection for sqlite locks held by a process ID,
+** if a process has an open database connection this will avoid trashing file
+** locks by re-using open file descriptors for the database file and support
+** files (-shm)
+*/
+#define SQLITE_FCNTL_LOCKSTATE_PID          103
+
+/*
 ** Purges eligible purgable memory regions (holding only unpinned pages) from 
 ** the page cache
 */
@@ -45,7 +53,8 @@ extern void _sqlite3_purgeEligiblePagerCacheMemory(void);
 ** bytes and the first few bytes of the -shm file is scrambled to trigger existing
 ** connections to rebuild the index from the database file contents.
 */
-#define SQLITE_TRUNCATE_DATABASE      101
+#define SQLITE_FCNTL_TRUNCATE_DATABASE      101
+#define SQLITE_TRUNCATE_DATABASE            SQLITE_FCNTL_TRUNCATE_DATABASE
 #define SQLITE_TRUNCATE_JOURNALMODE_WAL           (0x1<<0)
 #define SQLITE_TRUNCATE_AUTOVACUUM_MASK           (0x3<<2)
 #define SQLITE_TRUNCATE_AUTOVACUUM_OFF            (0x1<<2)
@@ -62,6 +71,7 @@ extern void _sqlite3_purgeEligiblePagerCacheMemory(void);
 ** and a sqlite3 pointer to another open database file to safely copy the 
 ** contents of that database file into the receiving database.
 */
-#define SQLITE_REPLACE_DATABASE       102
+#define SQLITE_FCNTL_REPLACE_DATABASE       102
+#define SQLITE_REPLACE_DATABASE             SQLITE_FCNTL_REPLACE_DATABASE
 
 #endif

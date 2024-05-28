@@ -12,7 +12,7 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIGestureRecognizer.h>
 
-@class UIImage, UIColor, UILabel, UIImageView, UIButton, UITextField, UITableView;
+@class UIImage, UIColor, UILabel, UIImageView, UIButton, UITextField, UITableView, UILongPressGestureRecognizer;
 
 typedef enum {
     UITableViewCellStyleDefault,	// Simple cell with text label and optional image view (behavior of UITableViewCell in iPhoneOS 2.x)
@@ -140,6 +140,7 @@ UIKIT_CLASS_AVAILABLE(2_0) @interface UITableViewCell : UIView <NSCoding, UIGest
     UIColor *_selectionTintColor;
     UIColor *_accessoryTintColor;
     UIImage *_reorderControlImage;
+    UILongPressGestureRecognizer* _menuGesture;
 }
 
 // Designated initializer.  If the cell can be reused, you must pass in a reuse identifier.  You should use the same reuse identifier for all cells of the same form.  

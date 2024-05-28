@@ -20,7 +20,6 @@ enum {
 };
 typedef NSInteger GKLeaderboardPlayerScope;
 
-
 @class GKScore;
 
 // GKLeaderboard represents the set of high scores for the current game, always including the local player's best score.

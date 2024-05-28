@@ -3,7 +3,7 @@
  
 	Framework:  AVFoundation
  
-	Copyright 2010 Apple Inc. All rights reserved.
+	Copyright 2010-2012 Apple Inc. All rights reserved.
 
  */
 
@@ -73,4 +73,5 @@ enum {
 	AVErrorEncoderTemporarilyUnavailable				= -11840,  // userInfo may contain AVErrorMediaTypeKey & AVErrorMediaSubTypeKey, if available
 	AVErrorInvalidVideoComposition						= -11841,
 	AVErrorReferenceForbiddenByReferencePolicy			= -11842,
+	AVErrorInvalidOutputURLPathExtension                = -11843,
 };

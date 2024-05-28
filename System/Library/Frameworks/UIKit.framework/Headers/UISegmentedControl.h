@@ -17,7 +17,7 @@ typedef enum {
     UISegmentedControlStylePlain,     // large plain
     UISegmentedControlStyleBordered,  // large bordered
     UISegmentedControlStyleBar,       // small button/nav bar style. tintable
-    UISegmentedControlStyleBezeled,   // large bezeled style. tintable
+    UISegmentedControlStyleBezeled,   // DEPRECATED. Do not use this style.
 } UISegmentedControlStyle;
 
 enum {

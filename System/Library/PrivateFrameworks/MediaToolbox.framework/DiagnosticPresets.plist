@@ -21,5 +21,43 @@
 		<key>fhttpchunk_alt_trace</key>
 		<integer>1</integer>
 	</dict>
+	<key>capture_diagnostic_preset</key>
+	<dict>
+		<key>livesource_trace</key>
+		<integer>2</integer>
+		<key>recorder_trace</key>
+		<integer>2</integer>
+	</dict>
+	<key>playback_diagnostic_preset</key>
+	<dict>
+		<key>cmsession_trace</key>
+		<integer>127</integer>
+		<key>fp_trace</key>
+		<integer>2</integer>
+		<key>faq_trace</key>
+		<integer>1</integer>
+		<key>stream_trace</key>
+		<integer>1</integer>
+		<key>urlasset_trace</key>
+		<integer>1</integer>
+	</dict>
+	<key>export_diagnostic_preset</key>
+	<dict>
+		<key>remaker_trace</key>
+		<integer>1</integer>
+		<key>mixer_trace</key>
+		<integer>1</integer>
+	</dict>
+	<key>network_playback_diagnostic_preset</key>
+	<dict>
+		<key>crabs_trace</key>
+		<integer>1</integer>
+		<key>playmon_trace</key>
+		<integer>2</integer>
+		<key>cfbyteflume_trace</key>
+		<integer>1</integer>
+		<key>httprequest_trace</key>
+		<integer>1</integer>
+	</dict>
 </dict>
 </plist>

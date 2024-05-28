@@ -180,7 +180,7 @@
 					<key>AverageDataRate</key>
 					<integer>1312500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetMedium</key>
@@ -220,7 +220,7 @@
 					<key>AverageDataRate</key>
 					<integer>87500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetLow</key>
@@ -264,7 +264,7 @@
 					<key>AverageDataRate</key>
 					<integer>16000</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetiFrame960x540</key>
@@ -312,7 +312,7 @@
 					<key>AverageDataRate</key>
 					<integer>3750000</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetiFrame1280x720</key>
@@ -360,7 +360,7 @@
 					<key>AverageDataRate</key>
 					<integer>5000000</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset352x288</key>
@@ -400,7 +400,7 @@
 					<key>AverageDataRate</key>
 					<integer>144375</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset640x480</key>
@@ -440,7 +440,7 @@
 					<key>AverageDataRate</key>
 					<integer>437500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset960x540</key>
@@ -480,7 +480,7 @@
 					<key>AverageDataRate</key>
 					<integer>738282</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset1280x720</key>
@@ -520,7 +520,7 @@
 					<key>AverageDataRate</key>
 					<integer>1312500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetConferencing</key>
@@ -584,7 +584,7 @@
 					<key>AverageDataRate</key>
 					<integer>50000</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 		</dict>
@@ -759,7 +759,7 @@
 					<key>AverageDataRate</key>
 					<integer>437500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetMedium</key>
@@ -792,7 +792,7 @@
 					<key>AverageDataRate</key>
 					<integer>87500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetLow</key>
@@ -829,7 +829,7 @@
 					<key>AverageDataRate</key>
 					<integer>16000</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset352x288</key>
@@ -869,7 +869,7 @@
 					<key>AverageDataRate</key>
 					<integer>144375</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPreset640x480</key>
@@ -902,7 +902,7 @@
 					<key>AverageDataRate</key>
 					<integer>437500</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 			<key>AVCaptureSessionPresetConferencing</key>
@@ -970,7 +970,7 @@
 					<key>AverageDataRate</key>
 					<integer>50000</integer>
 					<key>Priority</key>
-					<integer>255</integer>
+					<integer>80</integer>
 				</dict>
 			</dict>
 		</dict>

@@ -328,7 +328,6 @@ enum {
 					process audio files.
 					
 	@constant		kAudioUnitSubType_Varispeed
-						- desktop only
 					An audio unit that can be used to control playback rate (as the rate is faster, 
 					the pitch is higher). It provides a generic view, so can be used in both a UI 
 					and programmatic context. It also comes in an Offline version so can be used 
@@ -368,7 +367,8 @@ enum{
 	kAudioUnitSubType_TimePitch				= 'tmpt',
 	kAudioUnitSubType_DeferredRenderer		= 'defr',
 	kAudioUnitSubType_Splitter				= 'splt',
-	kAudioUnitSubType_Merger				= 'merg'
+	kAudioUnitSubType_Merger				= 'merg',
+	kAudioUnitSubType_RoundTripAAC			= 'raac'
 #else
 	kAudioUnitSubType_Varispeed				= 'vari',
 	kAudioUnitSubType_AUiPodTime			= 'iptm',
@@ -385,27 +385,21 @@ enum{
 					A delay audio unit
 					
 	@constant		kAudioUnitSubType_LowPassFilter			
-						- desktop only
 					A filter that passes frequencies below a specified cut-off frequency
 					
 	@constant		kAudioUnitSubType_HighPassFilter		
-						- desktop only
 					A filter that passes frequencies above a specified cut-off frequency
 					
 	@constant		kAudioUnitSubType_BandPassFilter		
-						- desktop only
 					A filter that passes frequencies between a low and high cut-off frequency.
 					
 	@constant		kAudioUnitSubType_HighShelfFilter		
-						- desktop only
 					A filter that can be used to implement a "treble" control
 					
 	@constant		kAudioUnitSubType_LowShelfFilter		
-						- desktop only
 					A filter that can be used to implement a "bass" control
 
 	@constant		kAudioUnitSubType_ParametricEQ			
-						- desktop only
 					A parametric EQ filter
 					
 	@constant		kAudioUnitSubType_GraphicEQ				
@@ -413,11 +407,9 @@ enum{
 					A 10 or 31 band Graphic EQ
 					
 	@constant		kAudioUnitSubType_PeakLimiter			
-						- desktop only
 					A peak limiter
 					
 	@constant		kAudioUnitSubType_DynamicsProcessor		
-						- desktop only
 					A dynamics compressor/expander
 					
 	@constant		kAudioUnitSubType_MultiBandCompressor	
@@ -447,7 +439,6 @@ enum{
 					across the network (or between different applications)
 					
 	@constant		kAudioUnitSubType_Distortion			
-						- desktop only
 					A distortion audio unit 
 					
 	@constant		kAudioUnitSubType_RogerBeep				
@@ -470,7 +461,6 @@ enum{
 enum {
 	kAudioUnitSubType_PeakLimiter			= 'lmtr',
 	kAudioUnitSubType_DynamicsProcessor		= 'dcmp',
-	kAudioUnitSubType_Reverb2				= 'rvb2',
 	kAudioUnitSubType_LowPassFilter			= 'lpas',
 	kAudioUnitSubType_HighPassFilter		= 'hpas',
 	kAudioUnitSubType_BandPassFilter		= 'bpas',
@@ -487,8 +477,9 @@ enum {
 	kAudioUnitSubType_Pitch					= 'tmpt',
 	kAudioUnitSubType_AUFilter				= 'filt',
 	kAudioUnitSubType_NetSend				= 'nsnd',
-	kAudioUnitSubType_RogerBeep				= 'rogr'
+	kAudioUnitSubType_RogerBeep				= 'rogr',
 #else
+	kAudioUnitSubType_Reverb2				= 'rvb2',
 	kAudioUnitSubType_AUiPodEQ				= 'ipeq',
 	kAudioUnitSubType_NBandEQ				= 'nbeq'
 #endif
@@ -575,13 +566,11 @@ enum {
 	@discussion		These are the subtypes for the various generator units that apple ships
 
 	@constant		kAudioUnitSubType_ScheduledSoundPlayer
-						- desktop only
 					A generator unit that can be used to schedule slices of audio to be played at 
 					a specified time. The audio is scheduled using the time stamps for the render 
 					operation, and can be scheduled from any thread.
 					
 	@constant		kAudioUnitSubType_AudioFilePlayer
-						- desktop only
 					A generator unit that is used to play a file. It presents a custom UI so can 
 					be used in a UI context as well
 					
@@ -591,15 +580,12 @@ enum {
 					sends. It presents a custom UI so can be used in a UI context as well
 */
 enum {
-	kAudioUnitSubType_ScheduledSoundPlayer	= 'sspl',
-	kAudioUnitSubType_AudioFilePlayer		= 'afpl',
-};
-
 #if !TARGET_OS_IPHONE
-enum {
-	kAudioUnitSubType_NetReceive			= 'nrcv'
-};
+	kAudioUnitSubType_NetReceive			= 'nrcv',
 #endif
+	kAudioUnitSubType_ScheduledSoundPlayer	= 'sspl',
+	kAudioUnitSubType_AudioFilePlayer		= 'afpl'
+};
 
 
 //================================================================================================

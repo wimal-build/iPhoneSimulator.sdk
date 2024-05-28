@@ -61,6 +61,20 @@ typedef enum {
     UITextGranularityDocument
 } UITextGranularity;
 
+UIKIT_CLASS_AVAILABLE(5_1) @interface UIDictationPhrase : NSObject {
+    @private
+        NSString *_text;
+        NSArray *_alternativeInterpretations;
+}
+
+/* -text returns the most likely interpretation for a phrase. If there are other 
+ * interpretations, -alternativeInterpretations will return an array of them, with 
+ * the first being most likely and the last being least likely. */
+@property (nonatomic, readonly) NSString *text;
+@property (nonatomic, readonly) NSArray *alternativeInterpretations;
+
+@end
+
 @protocol UITextInput <UIKeyInput>
 @required
 
@@ -140,6 +154,16 @@ typedef enum {
  * character on a line or before the first character on the following line in cases where text
  * wraps across line boundaries. */
 @property (nonatomic) UITextStorageDirection selectionAffinity;
+
+/* This is an optional method for clients that wish to support dictation phrase alternatives. If 
+ * they do not implement this method, dictation will just insert the most likely interpretation 
+ * of what was spoken via -insertText:.
+ * dictationResult is an array of UIDictationPhrases. */
+- (void)insertDictationResult:(NSArray *)dictationResult;
+
+/* These are optional methods for clients that wish know when there are pending dictation results. */
+- (void)dictationRecordingDidEnd;
+- (void)dictationRecognitionFailed;
 
 @end
 

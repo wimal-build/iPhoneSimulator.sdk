@@ -336,6 +336,8 @@ struct ctlname {
 #define KERN_KDGETENTROPY       16
 #define KERN_KDWRITETR		17
 #define KERN_KDWRITEMAP		18
+#define KERN_KDENABLE_BG_TRACE	19
+#define KERN_KDDISABLE_BG_TRACE	20
 
 
 /* KERN_PANICINFO types */

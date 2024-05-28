@@ -651,6 +651,10 @@ const CFStringRef kCFURLFileSecurityKey CF_AVAILABLE(10_7, 5_0);
     /* The file system object's security information encapsulated in a CFFileSecurity object. (Value type CFFileSecurity) */
 
 CF_EXPORT
+const CFStringRef kCFURLIsExcludedFromBackupKey CF_AVAILABLE_IOS(5_1);
+    /* Value is kCFBooleanTrue if resource should be excluded from backups, kCFBooleanFalse otherwise (value type CFBoolean) */
+
+CF_EXPORT
 const CFStringRef kCFURLFileResourceTypeKey CF_AVAILABLE(10_7, 5_0);
     /* Returns the file system object type. (Read-only, value type CFString) */
 

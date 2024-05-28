@@ -9,6 +9,8 @@
 #import <GameKit/GKDefines.h>
 #import <GameKit/GKError.h>
 
+@class UIImage;
+
 NS_CLASS_AVAILABLE(NA, 4_1)
 GK_EXTERN_CLASS @interface GKPlayer : NSObject
 

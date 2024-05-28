@@ -148,11 +148,7 @@ static __inline__ GLKMatrix4 GLKMatrix4Transpose(GLKMatrix4 matrix);
 GLKMatrix4 GLKMatrix4Invert(GLKMatrix4 matrix, bool *isInvertible);
 GLKMatrix4 GLKMatrix4InvertAndTranspose(GLKMatrix4 matrix, bool *isInvertible);
 
-#ifndef __clang__
 static __inline__ GLKMatrix4 GLKMatrix4Multiply(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight);
-#else
-static GLKMatrix4 GLKMatrix4Multiply(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight);
-#endif
 
 static __inline__ GLKMatrix4 GLKMatrix4Add(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight);
 static __inline__ GLKMatrix4 GLKMatrix4Subtract(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight);
@@ -558,11 +554,7 @@ static __inline__ GLKMatrix4 GLKMatrix4Transpose(GLKMatrix4 matrix)
 #endif
 }
 
-#ifndef __clang__
 static __inline__ GLKMatrix4 GLKMatrix4Multiply(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight)
-#else
-static GLKMatrix4 GLKMatrix4Multiply(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight)
-#endif
 {
 #if defined(__ARM_NEON__)
     float32x4x4_t iMatrixLeft = *(float32x4x4_t *)&matrixLeft;

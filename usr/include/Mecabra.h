@@ -57,6 +57,8 @@ enum {
     MecabraAnalysisAutocorrectionMask   = 1 << 6,
     MecabraAnalysisNoLearningMask       = 1 << 7,
     MecabraAnalysisJapaneseRomajiMask   = 1 << 8
+
+    // Values above 1 << 23 are reserved for private usage.
 };
 typedef CFOptionFlags MecabraAnalysisOption;
 
@@ -130,6 +132,16 @@ Boolean MecabraAnalyzeString(MecabraRef mecabra, CFStringRef string, MecabraAnal
 */
 extern 
 MecabraCandidateRef MecabraGetNextCandidate(MecabraRef mecabra);
+
+/*! @function MecabraCancelAnalysis
+    @abstract Cancel ongoing search.
+    @param    mecabra
+              Mecabra object
+    @discussion
+              This function returns immediately. If the cancellation succeeds, on-going or future call to MecabraGetNextCandidate will return NULL.
+ */
+extern
+void MecabraCancelAnalysis(MecabraRef mecabra);
 
 /*! @function MecabraAcceptCandidate
     @abstract Accept a candidate so that mecabra can auto-learn it and also do prediction.
