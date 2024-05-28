@@ -1,0 +1,3981 @@
+<domains>
+<domain>
+    <name>o2.ie</name>
+    <description>O2 Ireland</description>
+    <service>
+        <hostname>pop3.o2.ie</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.o2.ie</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>ameritech.net</name>
+    <description/>
+    <service>
+        <hostname>pop.ameritech.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.att.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>flash.net</name>
+    <description/>
+    <service>
+        <hostname>pop.flash.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.flash.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>nvbell.net</name>
+    <description/>
+    <service>
+        <hostname>pop.nvbell.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.nvbell.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>pacbell.net</name>
+    <description/>
+    <service>
+        <hostname>pop.att.yahoo.com</hostname>
+        <port>995</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.att.yahoo.com</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>prodigy.net</name>
+    <description/>
+    <service>
+        <hostname>pop.prodigy.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.prodigy.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>sbcglobal.net</name>
+    <description/>
+    <service>
+        <hostname>pop.att.yahoo.com</hostname>
+        <port>995</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.att.yahoo.com</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>snet.net</name>
+    <description/>
+    <service>
+        <hostname>pop.snet.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.snet.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>swbell.net</name>
+    <description/>
+    <service>
+        <hostname>pop.swbell.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.swbell.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>wans.net</name>
+    <description/>
+    <service>
+        <hostname>pop.wans.yahoo.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.wans.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>att.net</name>
+    <description/>
+    <service>
+        <hostname>fpostoffice.isp.att.net</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>fmailhost.isp.att.net</hostname>
+        <port>465</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>verizon.net</name>
+    <description/>
+    <service>
+        <hostname>incoming.verizon.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>outgoing.verizon.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>btinternet.com</name>
+    <description/>
+    <service>
+        <hostname>mail.btinternet.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.btinternet.com</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>btopenworld.com</name>
+    <description/>
+    <service>
+        <hostname>mail.btinternet.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.btinternet.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>rogers.com</name>
+    <description/>
+    <service>
+        <hostname>imap.mail.yahoo.com</hostname>
+        <port>143</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mobile.mail.yahoo.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>nl.rogers.com</name>
+    <description/>
+    <service>
+        <hostname>imap.mail.yahoo.com</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mobile.mail.yahoo.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>austin.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.austin.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The austin.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>bak.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.bak.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The bak.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>bham.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.bham.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The bham.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>carolina.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.carolina.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The carolina.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>ca.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.ca.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The ca.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>cfl.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.cfl.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The cfl.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>cinci.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.cinci.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The cinci.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>columbus.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.columbus.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The columbus.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>dc.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.dc.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The dc.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>ec.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.ec.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The ec.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>elmore.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.elmore.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The elmore.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>elp.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.elp.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The elp.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>eufaula.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.eufaula.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The eufaula.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>gt.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.gt.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The gt.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>hawaii.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.hawaii.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The hawaii.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>hot.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.hot.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The hot.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>hvc.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.hvc.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The hvc.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>indy.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.indy.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The indy.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>insight.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.insight.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The insight.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>kc.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.kc.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The kc.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>ma.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.ma.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The ma.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>maine.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.maine.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The maine.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>mass.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.mass.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The mass.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>midsouth.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.midsouth.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The midsouth.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>mn.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.mn.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The mn.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>nc.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.nc.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The nc.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>ne.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.ne.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The ne.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>neb.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.neb.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The neb.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>neo.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.neo.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The neo.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>new.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.new.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The new.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>nj.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.nj.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The nj.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>nyc.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.nyc.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The nyc.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>nycap.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.nycap.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The nycap.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>oh.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.oh.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The oh.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>panhandle.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.panhandle.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The panhandle.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>rgv.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.rgv.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The rgv.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>rochester.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.rochester.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The rochester.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>san.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.san.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The san.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>satx.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.satx.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The satx.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>sc.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.sc.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The sc.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>si.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.si.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The si.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>socal.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.socal.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The socal.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>stny.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.stny.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The stny.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>stx.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.stx.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The stx.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>sw.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.sw.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The sw.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>tampabay.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.tampabay.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The tampabay.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>triad.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.triad.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The triad.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>twcny.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.twcny.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The twcny.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>twmi.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.twmi.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The twmi.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>tx.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.tx.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The tx.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>we.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.we.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The we.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>wi.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.wi.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The wi.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>woh.rr.com</name>
+    <description/>
+    <service>
+        <hostname>pop-server.woh.rr.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The woh.rr.com email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://help.rr.com/HMSLogic/email_help_topic.aspx?topic=E-mail</url>
+        <description>Road Runner Help</description>
+    </support>
+</domain>
+<domain>
+    <name>bulldoghome.com</name>
+    <description>Bulldog Home</description>
+    <service>
+        <hostname>mail.bulldoghome.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.bulldoghome.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>aim.com</name>
+    <description/>
+    <service>
+        <hostname>imap.aol.com</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.aim.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <support>
+        <lang>en</lang>
+        <url>http://about.aol.com/faq/openmailaccess</url>
+        <description>AOL IMAP Information Page</description>
+    </support>
+</domain>
+<domain>
+    <name>cs.com</name>
+    <description/>
+    <service>
+        <hostname>imap.aol.com</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.cs.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <support>
+        <lang>en</lang>
+        <url>http://ourworld.compuserve.com/homepages/iain_noble/imaperr.htm</url>
+        <description>Troubleshooting Compuserve IMAP</description>
+    </support>
+</domain>
+<domain>
+    <name>comcast.net</name>
+    <description/>
+    <service>
+        <hostname>mail.comcast.net</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.comcast.net</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <support>
+        <lang>en</lang>
+        <url>http://www.comcast.net/help/faq/index.jsp?faq=EmailMail_(Mac)18530</url>
+        <description>Comcast Help</description>
+    </support>
+</domain>
+<domain>
+    <name>codetel.net.do</name>
+    <description>Codetel</description>
+    <service>
+        <hostname>pop3.codetel.net.do</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.codetel.net.do</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>earthlink.net</name>
+    <description>Earthlink</description>
+    <service>
+        <hostname>pop.earthlink.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>APOP</authentication>
+    </service>
+    <service>
+        <hostname>smtpauth.earthlink.net</hostname>
+        <port>587</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <support>
+        <lang>en</lang>
+        <url>http://kb.earthlink.net/case.asp?article=4355</url>
+        <description>EarthLink Support Center</description>
+    </support>
+</domain>
+<domain>
+    <name>bellsouth.net</name>
+    <description/>
+    <service>
+        <hostname>mail.bellsouth.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.bellsouth.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <support>
+        <lang>en</lang>
+        <url>http://help.bellsouth.net/bellsouth/asp/browse_subfolder.asp?sprt_fid=cabe88af-0ba4-4201-b880-3d1af5</url>
+        <description>BellSouth Help Center Online</description>
+    </support>
+</domain>
+<domain>
+    <name>charter.net</name>
+    <description/>
+    <service>
+        <hostname>mail.charter.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The charter.net email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://www.charter.com/Visitors/Support.aspx?SupportArticleID=1415</url>
+        <description>Charter Communications Support</description>
+    </support>
+</domain>
+<domain>
+    <name>optonline.net</name>
+    <description/>
+    <service>
+        <hostname>mail.optonline.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>ATT_US</requires>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The optonline.net email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+    <support>
+        <lang>en</lang>
+        <url>http://www.adelphia.com/user_guides/7051_HSI.pdf</url>
+        <description>Adelphia User Guide</description>
+    </support>
+</domain>
+<domain>
+    <name>hanmail.net</name>
+    <description/>
+    <service>
+        <hostname>imap.hanmail.net</hostname>
+        <port>430</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>pop.hanmail.net</hostname>
+        <port>465</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>lycos.com</name>
+    <description/>
+    <service>
+        <hostname>pop.mail.lycos.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mail.lycos.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.com</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.net</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>hotmail.com</name>
+    <description>Hotmail</description>
+    <service>
+        <hostname>pop3.live.com</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.live.com</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>A Windows Live Hotmail Plus subscription is required to use Hotmail accounts with Mail. Visit get.live.com/mailplus/features for details. You can also access your Hotmail account on the web at mail.live.com.</content>
+    </note>
+</domain>
+<domain>
+    <name>msn.com</name>
+    <description>MSN</description>
+    <service>
+        <hostname>pop3.email.msn.com</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.email.msn.com</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>A MSN Premium subscription is required to use MSN accounts with Mail. Vist join.msn.com/premium/features for details. You can also access your MSN account on the web at mail.live.com.</content>
+    </note>
+</domain>
+<domain>
+    <name>turbonett.com</name>
+    <description>TurboNett</description>
+    <service>
+        <hostname>mail1.turbonett.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail1.turbonett.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>mchsi.com</name>
+    <description/>
+    <service>
+        <hostname>mail.mchsi.com</hostname>
+        <port>995</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.mchsi.com</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>hughes.net</name>
+    <description/>
+    <service>
+        <hostname>mail.hughes.net</hostname>
+        <port>143</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.hughes.net</hostname>
+        <port>587</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>speakeasy.net</name>
+    <description/>
+    <service>
+        <hostname>mail.speakeasy.net</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.speakeasy.net</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>speakeasy.org</name>
+    <description/>
+    <service>
+        <hostname>mail.speakeasy.net</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.speakeasy.net</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmu.edu</name>
+    <description/>
+    <service>
+        <hostname>mail.gmu.edu</hostname>
+        <port>993</port>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.gmu.edu</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>fuse.net</name>
+    <description/>
+    <service>
+        <hostname>pop.fuse.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.fuse.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>mailsnare.net</name>
+    <description/>
+    <service>
+        <hostname>mail.mailsnare.net</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.mailsnare.net</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>netzero.com</name>
+    <description/>
+    <service>
+        <hostname>pop.netzero.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>authsmtp.netzero.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>coosahs.net</name>
+    <description/>
+    <service>
+        <hostname>mail.coosahs.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.coosahs.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.fr</name>
+    <description>Orange France</description>
+    <service>
+        <hostname>pop.orange.fr</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange.fr</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>Orange iPhone customers should enter their phone number followed by @orange.fr as the username for the Primary outgoing mail server.  Example: 06xxxxxxxx@orange.fr</content>
+    </note>
+</domain>
+<domain>
+    <name>o2.co.uk</name>
+    <description>O2 UK</description>
+    <service>
+        <hostname>pop.o2.co.uk</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.o2.co.uk</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>blueyonder.co.uk</name>
+    <description>Blue Yonder</description>
+    <service>
+        <hostname>imap4.blueyonder.co.uk</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.blueyonder.co.uk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>tiscali.co.uk</name>
+    <description>Tiscali</description>
+    <service>
+        <hostname>pop.tiscali.co.uk</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>O2_UK</requires>
+        <hostname>smtp.o2.co.uk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The outgoing mail server setting provided is intended for O2 customers in the UK. O2 customers should enter their O2 email address in the Primary Outgoing Mail Server username field and their password.</content>
+    </note>
+</domain>
+<domain>
+    <name>vodafone.co.uk</name>
+    <description>Vodafone</description>
+    <service>
+        <hostname>pop.vodafone.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>send.vodafone.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>sympatico.ca</name>
+    <description>Sympatico</description>
+    <service>
+        <hostname>pop1.sympatico.ca</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.1xbell.ca</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>telus.net</name>
+    <description>Telus</description>
+    <service>
+        <hostname>pop.telus.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.telus.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>shawcable.com</name>
+    <description>Shaw</description>
+    <service>
+        <hostname>mail.shawcable.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.shawcable.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name></name>
+    <description/>
+</domain>
+<domain>
+    <name>itelcel.com</name>
+    <description>Itelcel</description>
+    <service>
+        <hostname>pop.itelcel.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.itelcel.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>porta.net</name>
+    <description>Porta</description>
+    <service>
+        <hostname>mail.porta.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.porta.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>turbonett.com.ni</name>
+    <description>TurboNett Nicaragua</description>
+    <service>
+        <hostname>pop3.turbonett.com.ni</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.turbonett.com.ni</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>cmail.com.ar</name>
+    <description>Claro Argentina</description>
+    <service>
+        <hostname>pop.ctimovil.com.ar</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.ctimovil.com.ar</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>cmail.com.uy</name>
+    <description>Claro Uruguay</description>
+    <service>
+        <hostname>pop.ctimovil.com.uy</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.ctimovil.com.uy</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>cmail.com.py</name>
+    <description>Claro Paraguay</description>
+    <service>
+        <hostname>pop.ctimovil.com.py</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.ctimovil.com.py</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>cogeco.ca</name>
+    <description>Cogeco Canada</description>
+    <service>
+        <hostname>pop.cogeco.ca</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.cogeco.ca</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>mts.net</name>
+    <description>MTS</description>
+    <service>
+        <hostname>pop.mts.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mts.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>comcel.net</name>
+    <description>Comcel</description>
+    <service>
+        <hostname>pop3.comcel.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.comcel.net</hostname>
+        <port></port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>singnet.com.sg</name>
+    <description>SingTel Singapore</description>
+    <service>
+        <hostname>pop.singnet.com.sg</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>bbom-smtp.stm.com.sg</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>mobistar.be</name>
+    <description>Mobistar</description>
+    <service>
+        <hostname>pop.mobistar.be</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>gprsmail.mobistar.be</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orangemail.ch</name>
+    <description>Orange Switzerland</description>
+    <service>
+        <hostname>pop.orangemail.ch</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orangemail.ch</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.pl</name>
+    <description>Orange Poland</description>
+    <service>
+        <hostname>mail.orange.pl</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.orange.pl</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orangemail.sk</name>
+    <description>Orange Slovakia</description>
+    <service>
+        <hostname>213.151.208.170</hostname>
+        <port>110</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>213.151.208.170</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>azet.sk</name>
+    <description>Azet Slovakia</description>
+    <service>
+        <hostname>pop3.azet.sk</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.azet.sk</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>centrum.sk</name>
+    <description>Centrum Slovakia</description>
+    <service>
+        <hostname>pop3.centrum.sk</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>zoznam.sk</name>
+    <description>Zoznam Slovakia</description>
+    <service>
+        <hostname>imap.zoznam.sk</hostname>
+        <port>143</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.zoznam.sk</hostname>
+        <port>587</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>clix.pt</name>
+    <description>Clix</description>
+    <service>
+        <hostname>pop.clix.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mail.optimus.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>kanguru.pt</name>
+    <description>Kanguru</description>
+    <service>
+        <hostname>pop.kanguru.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mail.optimus.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>sapo.pt</name>
+    <description>Sapo</description>
+    <service>
+        <hostname>pop.sapo.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.sapo.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>iol.pt</name>
+    <description>IOL</description>
+    <service>
+        <hostname>pop.iol.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mail.optimus.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>netcabo.pt</name>
+    <description>Netcabo</description>
+    <service>
+        <hostname>pop.netcabo.pt</hostname>
+        <port></port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtpa.netcabo.pt</hostname>
+        <port></port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>telepac.pt</name>
+    <description>Telepac</description>
+    <service>
+        <hostname>pop.telepac.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mail.optimus.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>portugalmail.pt</name>
+    <description>Portugal Mail</description>
+    <service>
+        <hostname>pop.portugalmail.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.mail.optimus.pt</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>pipex.com</name>
+    <description>Pipex DSL</description>
+    <service>
+        <hostname>pop.dsl.pipex.com</hostname>
+        <port></port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtpauth.dsl.pipex.com</hostname>
+        <port></port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange-gsm.com</name>
+    <description>Orange Romania</description>
+    <service>
+        <hostname>pop.orange-gsm.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange-gsm.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>cableone.net</name>
+    <description>Cableone</description>
+    <service>
+        <hostname>mail.cableone.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>authmail.cableone.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>grandecom.net</name>
+    <description>Grande Communications</description>
+    <service>
+        <hostname>mail.grandecom.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.grandecom.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>When using a grandecom.net e-mail account outside of Grande Communication's network you will need to check incoming e-mail first before you can send e-mail. Checking incoming e-mail happens automatically when you first open Mail.</content>
+    </note>
+</domain>
+<domain>
+    <name>pepb.net</name>
+    <description>PEPB Online</description>
+    <service>
+        <hostname>mail.pepb.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>cwmx.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The pepb.net email settings provided on this site are intended for use on the iPhone using the AT&amp;T wireless data network. These settings may not be compatible if the iPhone is connected to a Wi-Fi network or other cellular network.</content>
+    </note>
+</domain>
+<domain>
+    <name>insightbb.com</name>
+    <description>Insight Broadband</description>
+    <service>
+        <hostname>mail.insightbb.com</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.insightbb.com</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>three.com.mo</name>
+    <description/>
+</domain>
+<domain>
+    <name>three.com.hk</name>
+    <description/>
+    <service>
+        <hostname>pop3.three.com.hk</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.three.com.hk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>mail.three.com.hk</name>
+    <description/>
+    <service>
+        <hostname>pop3.mail.three.com.hk</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.three.com.hk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>3gmail.com.hk</name>
+    <description/>
+    <service>
+        <hostname>pop3.3gmail.com.hk</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.3gmail.com.hk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>hgcbroadband.com</name>
+    <description/>
+    <service>
+        <hostname>pop.hgcbroadband.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.three.com.hk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>yahoo.co.jp</name>
+    <description>Yahoo! Japan</description>
+    <service>
+        <hostname>apple.pop.mail.yahoo.co.jp</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>apple.smtp.mail.yahoo.co.jp</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>t-online.de</name>
+    <description>T-Mobile Online Germany</description>
+    <service>
+        <hostname>popmail.t-online.de</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtpmail.t-online.de</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.de</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>web.de</name>
+    <description/>
+    <service>
+        <hostname>imap.web.de</hostname>
+        <port>993</port>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.web.de</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE,PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>freenet.de</name>
+    <description/>
+    <service>
+        <hostname>mx.freenet.de</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mx.freenet.de</hostname>
+        <port>587</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>arcor.de</name>
+    <description/>
+    <service>
+        <hostname>imap.arcor.de</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.arcor.de</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>free.fr</name>
+    <description/>
+    <service>
+        <hostname>pop.free.fr</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.free.fr</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>neuf.fr</name>
+    <description/>
+    <service>
+        <hostname>pop.neuf.fr</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.neuf.fr</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>aliceadsl.fr</name>
+    <description/>
+    <service>
+        <hostname>pop.aliceadsl.fr</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.aliceadsl.fr</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>sasktel.net</name>
+    <description/>
+    <service>
+        <hostname>mail.sasktel.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.sasktel.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>videotron.net</name>
+    <description/>
+    <service>
+        <hostname>pop.videotron.ca</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>relais.videotron.ca</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>videotron.ca</name>
+    <description/>
+    <service>
+        <hostname>pop.videotron.ca</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>relais.videotron.ca</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>radiant.net</name>
+    <description/>
+    <service>
+        <hostname>mail.radiant.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.radiant.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>eastlink.ca</name>
+    <description/>
+    <service>
+        <hostname>pop.eastlink.ca</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.eastlink.ca</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>accesscable.net</name>
+    <description/>
+    <service>
+        <hostname>pop.accesscable.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtpout.accesscable.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>daum.net</name>
+    <description/>
+    <service>
+        <hostname>pop.hanmail.net</hostname>
+        <port>995</port>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>pop.hanmail.net</hostname>
+        <port>465</port>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>i.softbank.jp</name>
+    <description/>
+    <service>
+        <hostname>imap.softbank.jp</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.softbank.jp</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>talktalk.net</name>
+    <description/>
+    <service>
+        <hostname>mail.talktalk.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>O2_UK</requires>
+        <hostname>smtp.o2.co.uk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The outgoing mail server setting provided is intended for O2 customers in the UK. O2 customers should enter their O2 email address in the Primary Outgoing Mail Server username field and their password.</content>
+    </note>
+</domain>
+<domain>
+    <name>virgin.net</name>
+    <description/>
+    <service>
+        <hostname>mail.virgin.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>O2_UK</requires>
+        <hostname>smtp.o2.co.uk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The outgoing mail server setting provided is intended for O2 customers in the UK. O2 customers should enter their O2 email address in the Primary Outgoing Mail Server username field and their password.</content>
+    </note>
+</domain>
+<domain>
+    <name>orangehome.co.uk</name>
+    <description/>
+    <service>
+        <hostname>pop.orangehome.co.uk</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <requires>O2_UK</requires>
+        <hostname>smtp.o2.co.uk</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>The outgoing mail server setting provided is intended for O2 customers in the UK. O2 customers should enter their O2 email address in the Primary Outgoing Mail Server username field and their password.</content>
+    </note>
+</domain>
+<domain>
+    <name>telefonica.net</name>
+    <description>Telefonica</description>
+    <service>
+        <hostname>imap.telefonica.net</hostname>
+        <port>143</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mailhost.telefonica.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>terra.es</name>
+    <description>Terra</description>
+    <service>
+        <hostname>pop3.terra.es</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mailhost.terra.es</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>bluewin.ch</name>
+    <description>Swisscom Bluewin</description>
+    <service>
+        <hostname>imaps.bluewin.ch</hostname>
+        <port>993</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>CRAM-MD5</authentication>
+    </service>
+    <service>
+        <hostname>smtpauths.bluewin.ch</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>CRAM-MD5</authentication>
+    </service>
+</domain>
+<domain>
+    <name>bluemail.ch</name>
+    <description>Swisscom Bluemail</description>
+    <service>
+        <hostname>imaps.bluewin.ch</hostname>
+        <port>993</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>CRAM-MD5</authentication>
+    </service>
+    <service>
+        <hostname>smtpauths.bluewin.ch</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>CRAM-MD5</authentication>
+    </service>
+</domain>
+<domain>
+    <name>bigpond.com</name>
+    <description>Big Pond</description>
+    <service>
+        <hostname>mail.bigpond.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.bigpond.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>live.com</name>
+    <description>Windows Live</description>
+    <service>
+        <hostname>pop3.live.com</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.live.com</hostname>
+        <port></port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <note>
+        <lang>en</lang>
+        <content>A Windows Live Hotmail Plus subscription is required to use live.com accounts with Mail. Visit get.live.com/mailplus/features for details. You can also access your Hotmail account on the web at mail.live.com.</content>
+    </note>
+</domain>
+<domain>
+    <name>bigpond.net.au</name>
+    <description>Big Pond</description>
+    <service>
+        <hostname>mail.bigpond.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.bigpond.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>telstra.com</name>
+    <description>Big Pond</description>
+    <service>
+        <hostname>mail.bigpond.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.bigpond.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>alice.it</name>
+    <description>Alice</description>
+    <service>
+        <hostname>in.alice.it</hostname>
+        <port>143</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>out.alice.it</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name></name>
+    <description/>
+</domain>
+<domain>
+    <name>tim.it</name>
+    <description>iBox</description>
+    <service>
+        <hostname>box.posta.tim.it</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.posta.tim.it</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>tin.it</name>
+    <description>TIN.it</description>
+    <service>
+        <hostname>box.tin.it</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.tin.it</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>virgilio.it</name>
+    <description>Virgilio</description>
+    <service>
+        <hostname>in.virgilio.it</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>out.virgilio.it</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>rcn.com</name>
+    <description>RCN</description>
+    <service>
+        <hostname>pop.rcn.com</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.rcn.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>uvm.edu</name>
+    <description>University of Vermont</description>
+    <service>
+        <hostname>imap.uvm.edu</hostname>
+        <port>993</port>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.uvm.edu</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>suddenlink.net</name>
+    <description>Suddenlink</description>
+    <note>
+        <lang>en</lang>
+        <content>If you don't know the correct mail server information for your area, contact Suddenlink customer support at 1-800-490-9604.</content>
+    </note>
+</domain>
+<domain>
+    <name>mindspring.com</name>
+    <description>Earthlink</description>
+    <service>
+        <hostname>pop.earthlink.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>APOP</authentication>
+    </service>
+    <service>
+        <hostname>smtpauth.earthlink.net</hostname>
+        <port>587</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>show.co.kr</name>
+    <description>show.co.kr</description>
+    <service>
+        <hostname>pop.show.co.kr</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.show.co.kr</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.org</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.info</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.biz</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.eu</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>gmx.tm</name>
+    <description/>
+    <service>
+        <hostname>pop.gmx.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.gmx.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>wanadoo.fr</name>
+    <description/>
+    <service>
+        <hostname>pop.orange.fr</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange.fr</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.mu</name>
+    <description/>
+    <service>
+        <hostname>bow.intnet.mu</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.intnet.mu</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>embarqmail.com</name>
+    <description>Embarq</description>
+    <service>
+        <hostname>pop.embarqmail.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.embarqmail.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>t-email.hu</name>
+    <description/>
+    <service>
+        <hostname>mail.t-email.hu</hostname>
+        <port>143</port>
+        <protocol>IMAP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>mail.t-email.hu</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>sky.com</name>
+    <description>Sky</description>
+    <service>
+        <hostname>imap.tools.sky.com</hostname>
+        <port>993</port>
+        <usernameIncludesDomain/>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.tools.sky.com</hostname>
+        <port>465</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>rivercto.net</name>
+    <description>River City Online</description>
+    <service>
+        <hostname>mail.rivercto.net</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.rivercto.net</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>ybb.ne.jp</name>
+    <description>ybb.ne.jp</description>
+    <service>
+        <hostname>apple.pop.mail.yahoo.co.jp</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>apple.smtp.mail.yahoo.co.jp</hostname>
+        <port>587</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orangemail.jo</name>
+    <description/>
+    <service>
+        <hostname>proxy.orangemail.jo</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+            <note>
+                <lang>en</lang>
+                <content>Username = phone number</content>
+            </note>
+    </service>
+    <service>
+        <hostname>smtp.orangemail.jo</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+            <note>
+                <lang>en</lang>
+                <content>username = phone number</content>
+            </note>
+    </service>
+</domain>
+<domain>
+    <name>orangecaraibe.com</name>
+    <description/>
+    <service>
+        <hostname>mail1.orangecaraibe.com</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orangecaraibe.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orangemali.net</name>
+    <description/>
+    <service>
+        <hostname>mail.orangemali.net</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orangemali.net</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.mg</name>
+    <description/>
+    <service>
+        <hostname>pop.orange.mg</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange.mg</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.co.ke</name>
+    <description/>
+    <service>
+        <hostname>pop.orange.co.ke</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange.co.ke</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange-sonatel.com</name>
+    <description/>
+    <service>
+        <hostname>eldiouf1.orange-sonatel.com</hostname>
+        <port>110</port>
+        <protocol>IMAP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange-sonatel.com</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.cf</name>
+    <description/>
+    <service>
+        <hostname>pop.orange.cf</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtp.orange.cf</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.cm</name>
+    <description/>
+    <service>
+        <hostname>pop.orangemail.cm</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtpauth.orangemail.com</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orange.net.bw</name>
+    <description/>
+    <service>
+        <hostname>pop.orange.net.bw</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp1.orange.net.bw</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orangemail.co.bw</name>
+    <description/>
+    <service>
+        <hostname>pop.orangemail.co.bw</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtpauth.orangemail.co.bw</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>orangemail.cm</name>
+    <description/>
+    <service>
+        <hostname>pop.orangemail.cm</hostname>
+        <port>110</port>
+        <usernameIncludesDomain/>
+        <protocol>POP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+    <service>
+        <hostname>smtpauth.orangemail.cm</hostname>
+        <port>25</port>
+        <usernameIncludesDomain/>
+        <protocol>SMTP</protocol>
+        <authentication>NONE</authentication>
+    </service>
+</domain>
+<domain>
+    <name>movistar.es</name>
+    <description>Movistar</description>
+    <service>
+        <hostname>pop3.movistar.es</hostname>
+        <port>110</port>
+        <protocol>POP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>smtp.movistar.es</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+<domain>
+    <name>eranet.pl</name>
+    <description/>
+    <service>
+        <hostname>mail.eranet.pl</hostname>
+        <port>993</port>
+        <protocol>IMAP</protocol>
+        <ssl/>
+        <authentication>PLAIN</authentication>
+    </service>
+    <service>
+        <hostname>mail.eranet.pl</hostname>
+        <port>25</port>
+        <protocol>SMTP</protocol>
+        <authentication>PLAIN</authentication>
+    </service>
+</domain>
+</domains>
+
+
+        

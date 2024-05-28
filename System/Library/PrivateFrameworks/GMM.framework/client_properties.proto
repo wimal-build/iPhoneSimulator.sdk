@@ -1,0 +1,171 @@
+// Copyright 2009 Google Inc. All Rights Reserved.
+//
+// Defines the protocol for reporting Client Properties.
+// See: http://docs.google.com/a/google.com/Doc?id=cd3j6rgs_1jtskcnc3 for
+// details on how this replaces previous non-proto based Client Properties
+// requests.
+//
+// ** Changes to this file need to be propagated to the client proto files **
+// ** for JavaME and mobile C++.                                           **
+// ** See http://wiki/Main/GmmProtocolBuffers for instructions.            **
+//
+// ** This file must document the protocol semantics for the Apple Maps    **
+// ** engineers, mobile Java and C++ engineers, and server engineers.      **
+
+syntax = "proto2";
+
+package gmm;
+
+import "java/com/google/wireless/googlenav/gmm.protodevel";
+
+option cc_api_version = 1;
+option py_api_version = 1;
+option java_api_version = 1;
+option java_package = "com.google.wireless.googlenav.proto";
+
+// Clients send a client properties request as the first data request in each
+// network request.  It functions as a header-extender, sending client
+// configuration and state needed generally on the GMM Server.  Clients who use
+// this request MUST send this as the first DataRequest.  Clients MUST NOT send
+// more than one ClientProperties request per network request.  Clients which
+// want to serve Ads MUST must send the "cohort" field which means they MUST
+// send this data request.
+// NOTE(jjs): This protobuf gets manually constructed rather than auto-generated.
+// If you change anything here, be sure to update the code here:
+// //depot/googlemobile/src/com/google/common/DataRequestDispatcher.java
+message ClientPropertiesRequestProto {
+  enum ScreenPixelDensity {
+    // For low-end screens <= 140 dpi (e.g. 2.8in with 320x240 pixels).
+    LOW = 1;
+    // For medium-dpi screens < 280 dpi.
+    MEDIUM = 2;
+    // For >= 280 dpi (e.g. 2.8in with 640x480 pixels).
+    HIGH = 3;
+  }
+
+  // User cohort.  This value is assigned by the server in the
+  // ClientPropertiesResponseProto.  For the initial request, this value should
+  // be unset (since no cohort has been assigned yet).  For all subsequent
+  // requests, the value previously returned by the server must be used.
+  optional string cohort = 1;
+
+  // Set whenever the client has any location fix (GPS, Cell ID, WiFi, or
+  // other), whether or not that location is on screen.  This is used by the
+  // server for billing and logging -- some events like driving directions incur
+  // additional map usage costs when the client had a location fix.
+  // Note: This field should agree with the hasALocationFix field in the
+  // Billing Point Request.
+  optional bool has_location_fix = 2 [default=false];
+
+  // Mobile Country Code (MCC) is a GSM standard coding which identifies the
+  // country of a mobile network.  It's essentially a 1:1 mapping from
+  // integers to countries.
+  //
+  // This is intended for a BlackBerry client to inform the server what country
+  // it is in since the server can't determine this from the client's IP address
+  // due to RIM's international proxy. Other clients can also set this field
+  // although they shouldn't need to.
+  //
+  // NOTE: Some mobile OS's (Blackberry & others) report MCC as a binary-coded
+  // decimal (BCD).  This value must be converted to the true decimal value
+  // before sending to the server.
+  //
+  // The server will use this information to construct internationally dialable
+  // phone numbers, to return the right map tiles for countries with their own
+  // notion of borders like India and S. Korea, and possibly other uses.
+  //
+  // This is the phone's current MCC as distinct from its home MCC.
+  //
+  // Do not set this property if the client does not know its current MCC.
+  optional int32 mobile_country_code = 3;
+
+  // Indicates that the client can support gzip-compressed protocol buffer
+  // responses. The server will only send a compressed protocol buffer when it's
+  // in fact smaller than uncompressed prototocol buffer. Therefore the client
+  // needs to check each received protocol buffer to see if its length count is
+  // negative, indicating a compressed protocol buffer.
+  // Note that a standard HTTP "Accept-encoding: gzip" header enables a
+  // compressed HTTP reply while the "gzip_enabled" client property enables
+  // separately-compressed protocol buffers within the reply. If the same
+  // network request has both, the server may select one of them (or neither,
+  // depending on the compressibility of the reply).
+  optional bool gzip_enabled = 4 [default=false];
+
+  // Name of application.  Third-party Map apps (or the libraries they depend
+  // on) must send the name of the application for data-usage purposes).
+  // Any clients which were previously appending the application name to the
+  // platform string should continue to do so; new clients should provide the
+  // application name in this field and leave it out of the platform string.
+  optional string application_name = 5;
+
+  // Ids 6-16 available for use
+
+  // These fields are less commonly used.
+
+  // Android clients send this 39-character alphanumeric Android Maps API key
+  // string that is obtained by developers when agreeing to the TOS.
+  //optional string android_map_key = 17;
+
+  // Android clients send this string containing the MD5 fingerprint of the
+  // developer's certificate that signed the third-party app.  This is needed to
+  // verify the API key.  Apps bundled in the System Image (which should be just
+  // Android Maps) are not signed, so they will send the special string
+  // "SYSTEM".
+  //optional string android_signature = 18;
+
+  // Android clients send this 16-character string encoding a random 64-bit
+  // integer generated at first boot. It's only clearable through Factory Reset.
+  //optional string android_device_id = 19;
+
+  // This is the Compartmentalized token for a logged-in user. (See
+  // https://www.corp.google.com/eng/designdocs/gaia/c18n.html for info on
+  // Compartmentalized tokens).
+  // All Authenticated messages require this token in order to retrieve the GAIA
+  // ID of the user for use in their systems. See GAIA login for installed apps
+  // for details:
+  // http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+  optional string gaia_auth_token = 20;
+
+  // Indicates if the client has access to the voice search feature.  This does
+  // not imply that a query has been run, but only that the conditions were
+  // right (location/country/carrier) to offer the voice search feature.
+  optional bool voice_search_enabled = 21 [default=false];
+
+  // Set this field to indicate the client's screen pixel density, in order to
+  // get icons/images/tiles of appropriate content and/or size.
+  // Where an API to request the screen's dpi is not available, clients should
+  // still make a best estimate using whatever APIs are available, e.g.
+  // default system font size.
+  // Note: A request may contain a ClientCapabilitiesProto field, which
+  // determines the actual size and format of returned images.
+  optional ScreenPixelDensity screen_pixel_density = 22 [default=LOW];
+
+  // Set of experiments the client is currently participating in.
+  // see experiment.proto for details on how the experiment_ids are assigned to
+  // the client.
+  repeated int32 experiment_id = 23;
+
+  // This field allows the client to tell the server whether the map tile cache
+  // is shared between apps.  Due to licensing restrictions, some tile features
+  // can't be made available to third-party apps.  (Note that the server
+  // determines whether a request is from a "third-party" app or not using
+  // the old-style platform_id and the newer application_name field in
+  // this proto.)
+  enum MapTileCacheType {
+    SHARED_CACHE = 0;   // Tile cache is shared by all apps on the platform
+    PER_APP_CACHE = 1;  // Each app on the platform has its own tile cache
+    // Third-party apps share a cache that's distinct from the Maps app's cache
+    SHARED_THIRD_PARTY_CACHE_DISTINCT_FROM_MAPS_CACHE = 2;
+  }
+  optional MapTileCacheType map_tile_cache_type = 24;
+}
+
+// Response sent to client after a ClientPropertiesProto request.
+message ClientPropertiesResponseProto {
+  // New cohort value for the client to use.  Set if the client sent an
+  // empty cohort value, or if the cohort scheme has changed.
+  // Clients MUST save this this value persistently.  It must sent back as the
+  // "cohort" value in subsequent requests for the current applications session
+  // and future sessions.
+  optional string new_cohort = 1;
+}

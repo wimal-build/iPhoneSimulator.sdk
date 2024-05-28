@@ -1,0 +1,17 @@
+//
+// this contains the registration domain for Message defaults
+// 
+
+{
+    AutoFetch = Yes;
+    AutoReplyFormat = No;
+    AutoSelectFont = No;
+    Archive = Yes;
+    PollTime = 5;
+    ExpandPrivateAliases = Yes;
+    ColorQuoterColorIncoming = YES;
+
+    SendWindowsFriendlyAttachments = YES;
+    
+    PreviewPaneVisible = YES;
+}

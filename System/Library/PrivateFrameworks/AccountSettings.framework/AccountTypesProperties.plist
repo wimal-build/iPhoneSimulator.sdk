@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Subscribed Calendar</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Calendars</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+	</dict>
+	<key>CalDAV</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Calendars</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+	</dict>
+	<key>SMTP</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Mail</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+	</dict>
+	<key>Exchange</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Mail</string>
+			<string>com.apple.Dataclass.Contacts</string>
+			<string>com.apple.Dataclass.Calendars</string>
+			<string>com.apple.Dataclass.ContactsSearch</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>Keep Local Data</string>
+			<string>Delete Local Data</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>Delete Sync Data</string>
+		</array>
+	</dict>
+	<key>LDAP</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.ContactsSearch</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+	</dict>
+	<key>Mail</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Mail</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+	</dict>
+	<key>MobileMe</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Merge Data</string>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Mail</string>
+			<string>com.apple.Dataclass.Contacts</string>
+			<string>com.apple.Dataclass.Calendars</string>
+			<string>com.apple.Dataclass.Bookmarks</string>
+			<string>com.apple.Dataclass.DeviceLocator</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>Keep Local Data</string>
+			<string>Delete Local Data</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>Merge Sync Data</string>
+			<string>Delete Sync Data</string>
+		</array>
+	</dict>
+	<key>OnMyDevice</key>
+	<dict>
+		<key>Delete Account Actions</key>
+		<array>
+			<string>Delete Data</string>
+		</array>
+		<key>Supported Dataclasses</key>
+		<array>
+			<string>com.apple.Dataclass.Bookmarks</string>
+			<string>com.apple.Dataclass.Calendars</string>
+			<string>com.apple.Dataclass.Contacts</string>
+			<string>com.apple.Dataclass.Notes</string>
+		</array>
+		<key>Enable Actions</key>
+		<array>
+			<string>None</string>
+		</array>
+		<key>Disable Actions</key>
+		<array>
+			<string>Delete Local Data</string>
+		</array>
+	</dict>
+</dict>
+</plist>

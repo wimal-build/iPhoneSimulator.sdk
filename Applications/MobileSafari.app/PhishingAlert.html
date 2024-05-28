@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+    * {
+        -webkit-box-sizing: border-box;
+    }
+
+    html {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        background-color: rgba(77, 77, 77, 1.0);
+        -webkit-background-composite: copy;
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        padding: 10px;
+        -webkit-user-select: none;
+        -webkit-text-size-adjust: none;
+        cursor: default;
+    }
+
+    .alert {
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .alert-body {
+        /* Gray background image for alert body (PhishingAlertBase.png) */
+        -webkit-border-image: url(data:image/png;base64,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) 0 0 10 0;
+        border-width: 0 0 10px 0;
+        padding-top: 1px;
+    }
+
+    .alert-body p:first-of-type {
+        margin-top: 13px;
+    }
+
+    .alert-body p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        /* Red striped background image for alert title (PhishingAlertTitlebar.png) */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAAEQ2dCSTAAIAIQ80R8AAAADUlIRFIAAAEsAAAAJggGAAAAfpGmpwAAACBjSFJNAAB6JQAAgIMAAPQlAACE0QAAbV8AAOhsAAA8iwAAG1iD5wd4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADMklEQVTt3E1LVFEYwPHnuZM644zKNFq+gGk2uYigVd+hhQUhJBbto52Qq2gRrQzcRfSe2lhBBNUi6CO0Ctpk5miCL5Q24duM2p3Txlo0hW937pwb/7OcxeX++MMDh3PnqPxlqYZCe+MnTtYmTnVGIsn2aOXRY6qhkLBYLFYRljGuu7zy/l02OzoyN//i2bfM65fGuG7BbPrzh0gk2X647ebg+vqh43PzGcllc7K8khVjjAWsHyKyICJevouKSLWI7LE0JWbM/79ZVSVaWSXhSFRqE/ulrGzy7cexC+ez2dGRfw6spoaLPfvqeq6NpWciS0s5wmLGjLkk5lisRtoOJrNfvvZfnpq50V8wsFoOXO1ztOPS5OSo5PN5wmLGjLmkZscJSXNzUvLm1fWJz1d6fw+s2sTpM5GK3idT0+OExYwZs1XmpsZWya72dc3NP3+qquXlba1v0un0dFPhQxwRqbIcuSgieQ+fiRkzZtvMLa2JT+MTHUe0rraze3GhK7W2liMsZsyYrTSHw1GJxlJntbG+LzU729BNWMyYMdtsrq+fGdZEfOBDJqPtW9sDBwHp9b4fM2bMNpjj8dC4VoaHvudy+RrCYsaM2WZzuKJ8TctCw8Z11wmLGTNmq82qjqgjD83OkNUiYuu/dVwp3rEwZsyYS2VWR+4bwmLGjDkIZnXk3i7Uv04bbEYW64QFM2bMfpvVkTuGsJgxYw6C2YOBRVjMmDH7NrBue7QR1oCELcYJC2bMmH0aWLcMYTFjxhwE88bAIixmzJjtN6sjKUNYzJgxB8Gsjjw2hMWMGXMQzOrIsCEsZsyYg2De2BISFjNmzPabVeWRKUQuifffdcQsD4sZM2bbzaoyZAiLGTPmIJhVZdAQFjNmzEEwq8qA2Rzp9R44CGExY8Zsm3mTgUVYzJgx22NW3dIFfoTFjBlz6c2q8sAQFjNmzEEwq27rxlHCYsaMuXRm1W3fOEpYzJgxl8asKncNYTFjxhwEs+qObxwlLGbMmP0172JgERYzZsz+mnc5sAiLGTNm/8yqntzp7orIsnj/2X/U8rCYMWP206wq5zwapXkRWS3CZK7YwNq4MGPG7Kf5J5XSC50AAAAASUVORK5CYII=);
+        background-repeat: no-repeat;
+        height: 38px;
+        text-align: center;
+        font-family: Lucida Grande, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 39px;
+        color: white;
+        text-shadow: rgb(43, 0, 1) 0 -1px 0;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    p {
+        font-family: Lucida Grande, sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        padding: 0 25px;
+        word-wrap: break-word;
+    }
+
+    a {
+        font-weight: bold;
+        color: inherit;
+        line-height: 25px;
+    }
+
+    .button-bar {
+        text-align: center;
+        margin-top: 17px;
+        margin-bottom: 0;
+        padding: 0 10px;
+        height: 104px;
+        line-height: 38px;
+    }
+
+    .button-bar button {
+        border-width: 0 10px 0 10px;
+        height: 45px;
+        width: 280px;
+        /* Image for rounded button when it is not being pushed (Button.png) */
+        -webkit-border-image: url(data:image/png;base64,iVBORw0KGgoAAAAEQ2dCSTAAIAIQ80R8AAAADUlIRFIAAAAVAAAALggGAAAAx6pS+AAAACBjSFJNAAB6JQAAgIMAAPQlAACE0QAAbV8AAOhsAAA8iwAAG1iD5wd4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADi0lEQVS1111IYmkYwPHnPeYKJTWNzhhYgTlUlIK0QW0sSC27ZZ8USWkfdiEYdBHRdhdF0VVtH6cICrzIPrQwij6tXXZCWNqCthGUSBgTLCFndZrCAsc87sWZ2Y2ai218+9+9POf8eC/fB8EXSktL+1EikVQnJSV9y+fzJQRBMD7PKIoKud1uy+np6V8Wi2XRbrf/dv9/dPfA5XJfKRQKbV5enpTP50N8fDzExcUBQv99Fg6H4fLyEi4uLsDtdsPu7q7ZYDCovV7v2wdoSkrK9xqNZk0qlT4Ti8Xwf7NarWA2mz9MTk6WnZyc/PEvyuVyX3V0dBzIZLI4oVAIj83hcIDJZLocGBjI9nq9bxEAQHt7+65cLv9OJBLB12az2cBoNP45ODiYh1JTUwv6+vp+l8lkEGkmkwk6Ozt/QBqNZl6tVtekp6dHjB4fH4NWq11A/f39HqVS+TI2NjZi9OrqCvR6/Ts0MjJyq1KpGARBRIxSFAU6nS6ESJIMNzU1Aa6mpqYAkSQZVqlU2FCdTkejjY2N2NDp6WkabWhowIbOzMzQaH19PTZ0dnaWRuvq6rChc3NzNKpUKrGher2eRhUKBTbUYDDQaG1tLTZ0fn6eRmtqarChCwsLT4jK5XJsqNFopNHq6mps6OLi4hOiVVVV2NClpaUnRCsrK7Ghy8vLNFpRUYENXVlZeUK0vLwcG7q6ukqjZWVl2NC1tTUaLS0txYaur6/TaElJCTZ0Y2ODRouLi7Ghm5ubNIrjHXX3PYVIkgwXFRVhQ7e2tmi0sLAQG7q9vQ1odHT0Y35+PjMqKipi8Pb2FnZ2doJobGzsIjc39xmbzY4Y9fv9sLe39wENDQ29EYlEksTExIjRs7MzsNlsFtTa2jqQnZ39c1ZWVsTo4eEhHBwc/IIyMzMzW1paXgsEgpfJyclfDbpcLnA6ne/Gx8cLEABAd3f3MIfDacnIyGAmJCQ8Gjw/P4ejo6Ogz+cb7+npaUMAADwej9fb26sNBAI/CYXCbx5zY5fLBQ6H4yOLxfq1q6tL7fF4POjO6pjW1tbWQ1FUQXR09AsOhwNsNhtiYmIeQNfX1+D3+8Hn88HNzc3fBEG8Hh4e7rbb7fYHaySPx+M1Nzc3CwQCaSAQSAqFQs+DweDz+yiTyXzPYDDes1isU6fTaZ6YmJjweDyeL+6mnxOLxeKcnJwcwafuz52f2t/f37dardb7838Aoz6bMgAAAABJRU5ErkJggg==) 0 10 0 10;
+        font-family: Lucida Grande, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        min-width: 90px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        vertical-align: bottom;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .button-bar button.active {
+        /* Image for rounded button when it is being pushed (ButtonPushed.png) */
+        -webkit-border-image: url(data:image/png;base64,iVBORw0KGgoAAAAEQ2dCSTAAIAIQ80R8AAAADUlIRFIAAAAVAAAALggGAAAAx6pS+AAAACBjSFJNAAB6JQAAgIMAAPQlAACE0QAAbV8AAOhsAAA8iwAAG1iD5wd4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADIUlEQVTV11FIGnEcwPHfv3LmpZgXelc0tDSz7ExYEBuLoLFBD3tbrN6ijRAGwWBBkSCBbxvspUFERG9ttLc99BALorEhGCuvUkzTmMSdlk48U5ube3CLlj2s/PvQ9+34330ejuP4/RBckEajuW8wGB7RNH2LoigzQqj87DnHcescx617PJ73wWBw+fzz6OyFQqHQ9fb2zjIM002SJFRVVQFBEIDQP7dBMpmEZDIJ0WgUWJZdXVpaehqLxXwFaH19/d2+vr4PWq22mqIo+N94nge/3/99cXHxYSgU+nSKKhQK3dDQkFOv18tJkoTLFo1Gwev1xufm5jpisZgPAQAMDg5+7ujouK1SqeCqhcNhcDqdX+bn5+8gtVrdMzw8/LGpqQmKbXd3F2ZmZu6h/v7+t11dXY+VSmXRaCQSgbW1tXdodHSUZxhGJRaLi0YzmQywLBtG4+PjWZPJVH7+s7lKuVwOXC7XTzQ2NpYzm82Aq42NDSgd2t7ejg3d3NzMoyaTCRvqcrnyKMMw2FCWZUuItrW1YUO3trbyqNFoxIZub2+XEG1tbcWG7uzslBBtaWnBhrrd7jxqMBiwoR6Pp4SoXq/Hhnq93uuG6nQ6bKjP57tuqFarxYb6/f482tjYiA3d29srIdrQ0IANDQQCeVSj0WBDg8FgHlWr1djQ/f39EqETExMntbW1orKyMiyzVCgU+oVsNluMJMlqkUhUNJrNZuHw8DCBbDbbV4IgzFKptGhUEARIp9MuZLFYXtI0/QLX0Mtx3CtkNBqNAwMDKxUVFSqZTHZlMJFIQDabDS8sLPQgAACr1fo6l8s9k8vlIoIgLg0eHx9DPB7/gRB6Y7fbnyMAAIqiKKvVOstx3AOpVHrjMu9XEAQQBOGEpullu93+hOd5/nQmb25ubh4ZGZk8OjrqAQClTCYDsVgMlZWVBVA6nYZMJgOJRAIAIFJTU7MyNTU16Xa73QVrJEVRlMVisdTV1XXH4/GbqVSKTKVSBduaRCKJSiSSqFwu/3ZwcLA6PT09zfM8f+Fu+jeGYZjOzs7Ohj9d8NMIBAKBgMPhcLAsy54//w2DZbxfAAAAAElFTkSuQmCC) 0 10 0 10;
+    }
+
+    .button-bar.goBack .closePage, .button-bar.closePage .goBack {
+        display: none;
+    }
+
+    </style>
+    <script type="text/javascript">
+        String.prototype.format = function()
+        {
+            var stringParts = this.split("%@");
+            for (var i = 0; i < arguments.length; ++i)
+                stringParts.splice(i * 2 + 1, 0, arguments[i].toString());
+            return stringParts.join("");
+        }
+    
+        function Button(element) {
+            this.element = element;
+            this.pressed = false;
+            this.absolutePosition = [0, 0];
+        }
+            
+        touchEndedHandler = function(e, button) {
+            if (button.element.className === "active") {
+                var event = document.createEvent("MouseEvents");
+                event.initMouseEvent("click", true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, button.element);
+                button.element.dispatchEvent(event);
+            }
+        
+            button.element.className = "default";
+        }
+        
+        touchCancelHandler = function(e, button) {
+            button.element.className = "default";
+        }
+
+        touchMoveHandler = function(e, button) {
+            if (e.targetTouches.length != 1)
+                return;
+                
+            e.preventDefault();
+                
+            var x = e.targetTouches[0].clientX;
+            var y = e.targetTouches[0].clientY;
+            if (x < button.absolutePosition[0] || y < button.absolutePosition[1] ||
+                x > button.absolutePosition[0] + button.element.offsetWidth || y > button.absolutePosition[1] + button.element.offsetHeight)
+                button.element.className = "default";
+            else if (button.pressed)
+                button.element.className = "active";
+        }
+
+        touchStartHandler = function(e, button) {
+            e.preventDefault();
+            button.pressed = true;
+            button.element.className = "active";
+        }
+        
+        function positionOfElementOnPage(element) {
+            var positionLeft = 0;
+            var positionTop = 0;
+            
+            do {
+                positionLeft += element.offsetLeft;
+                positionTop += element.offsetTop;
+            } while (element = element.offsetParent);
+            
+            return [positionLeft, positionTop];
+        }
+        
+        const defaultReportAnErrorURL = "http://www.google.com/safebrowsing/report_error/?tpl=generic&continue=http%3A%2F%2Fwww.apple.com%2Fsafari%2Fantiphishing%2Freport_submitted.html";
+        const defaultLearnMoreAboutPhishingURL = "http://www.google.com/support/bin/answer.py?answer=106318";
+
+        var PhishingAlert = {
+            _host: undefined,
+            _source: undefined,
+            _type: undefined,
+            _currentURL: undefined,
+
+            get host()
+            {
+                return this._host
+            },
+
+            set host(value)
+            {
+                if (this._host === value)
+                    return;
+                this._host = value;
+            },
+
+            get currentURL()
+            {
+                return this._currentURL;
+            },
+
+            set currentURL(value)
+            {
+                if (this._currentURL === value)
+                    return;
+                this._currentURL = value;
+            },
+
+            get source()
+            {
+                return this._source;
+            },
+
+            set source(value)
+            {
+                this._source = value;
+            },
+
+            get type()
+            {
+                return this._type;
+            },
+
+            set type(value)
+            {
+                this._type = value;
+            },
+
+            pageLoaded: function()
+            {
+                //DialogController.pageLoaded();
+                PhishingAlertController.loaded();
+            },
+
+            updateUI: function(source, type, host, canGoBack, currentURL, reportAnErrorURL, learnMoreAboutPhishingURL)
+            {
+                if (this.source != source || this.type != type) {
+                    document.getElementById("alert").className = "alert " + type + " " + source;
+                    this.source = source;
+                    this.type = type;
+                }
+
+                if (type === "phishing")
+                    document.title = PhishingAlertController.UIString("Suspected Phishing Site", "Title of warning page for suspected phishing site");
+                else
+                    console.error("Unknown type (%s) passed to updateUI.", type);
+
+                document.getElementById("phishing_warning").innerHTML = PhishingAlertController.UIString("Warning: Suspected phishing site", "Header for warning page for suspected phishing site");
+                document.getElementById("phishing_details").innerHTML = PhishingAlertController.UIString("The website you are visiting has been reported as a “phishing” website. These websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank.", "Detail text for phishing warning");
+                document.getElementById("learn-more-phishing").innerHTML = PhishingAlertController.UIString("Learn more about phishing scams", "Display text for link to learn about phishing scams");
+                document.getElementById("report-an-error").innerHTML = PhishingAlertController.UIString("Report an error", "Display text for link to report an error about phishing warnings to google");
+                document.getElementById("ignore_this_warning").innerHTML = PhishingAlertController.UIString("Ignore this Warning", "Title of button to ignore a fraud warning");
+                document.getElementById("go_back").innerHTML = PhishingAlertController.UIString("Go Back", "Go Back button title");
+                document.getElementById("close_page").innerHTML = PhishingAlertController.UIString("Close this Page", "Title of button to close a page with a fraud warning");
+
+                var closeButton = new Button(document.getElementById("close_page"));
+                var goBackButton = new Button(document.getElementById("go_back"));
+                var ignoreButton = new Button(document.getElementById("ignore_this_warning"));
+
+                closeButton.element.addEventListener('touchstart', function(e) { touchStartHandler(e, closeButton); }, false);
+                goBackButton.element.addEventListener('touchstart', function(e) { touchStartHandler(e, goBackButton); }, false);
+                ignoreButton.element.addEventListener('touchstart', function(e) { touchStartHandler(e, ignoreButton); }, false);
+
+                closeButton.element.addEventListener('touchmove', function(e) { touchMoveHandler(e, closeButton) }, false);
+                goBackButton.element.addEventListener('touchmove', function(e) { touchMoveHandler(e, goBackButton) }, false);
+                ignoreButton.element.addEventListener('touchmove', function(e) { touchMoveHandler(e, ignoreButton) }, false);
+
+                closeButton.element.addEventListener('touchend', function(e) { touchEndedHandler(e, closeButton) }, false);
+                goBackButton.element.addEventListener('touchend', function(e) { touchEndedHandler(e, goBackButton) }, false);
+                ignoreButton.element.addEventListener('touchend', function(e) { touchEndedHandler(e, ignoreButton) }, false);
+
+                closeButton.element.addEventListener('touchcancel', function(e) { touchCancelHandler(e, closeButton) }, false);
+                goBackButton.element.addEventListener('touchcancel', function(e) { touchCancelHandler(e, goBackButton) }, false);
+                ignoreButton.element.addEventListener('touchcancel', function(e) { touchCancelHandler(e, ignoreButton) }, false);
+
+                if (canGoBack) {
+                    document.getElementById("button-bar").removeChild(closeButton.element);
+                    goBackButton.absolutePosition = positionOfElementOnPage(goBackButton.element);
+                } else {
+                    document.getElementById("button-bar").removeChild(goBackButton.element);
+                    closeButton.absolutePosition = positionOfElementOnPage(closeButton.element);
+                }
+                ignoreButton.absolutePosition = positionOfElementOnPage(ignoreButton.element);
+                
+                this.host = host;
+                this.currentURL = currentURL;
+
+                if (reportAnErrorURL === "")
+                    document.getElementById("report-an-error").href = "%@&url=%@&hl=%@".format(defaultReportAnErrorURL, escape(this.currentURL), navigator.language);
+                else
+                    document.getElementById("report-an-error").href = reportAnErrorURL;
+
+                if (learnMoreAboutPhishingURL === "")
+                    document.getElementById("learn-more-phishing").href = "%@&hl=%@".format(defaultLearnMoreAboutPhishingURL, navigator.language);
+                else
+                    document.getElementById("learn-more-phishing").href = learnMoreAboutPhishingURL;
+
+                var elements = document.getElementsByClassName("size-font-to-fit");
+                for (var i = 0; i < elements.length; ++i) {
+                    var element = elements[i];
+
+                    element.style.removeProperty("font-size");
+
+                    if (element.offsetHeight <= element.parentNode.offsetHeight)
+                        continue;
+
+                    var computedStyle = window.getComputedStyle(element, "");
+                    var fontSize = computedStyle.getPropertyCSSValue("font-size").getFloatValue(CSSPrimitiveValue.CSS_PX);
+
+                    do {
+                        --fontSize;
+                        element.style.setProperty("font-size", fontSize + "px", "");
+                    } while (element.offsetHeight > element.parentNode.offsetHeight);
+                }
+            },
+        };
+
+        window.addEventListener("load", function() { PhishingAlert.pageLoaded(); }, false);
+    </script>
+</head>
+<body>
+<div id="alert" class="alert phishing google">
+    <h1 class="phishing" id="phishing_warning"><span class="l12n size-font-to-fit"></span></h1>
+    <div class="alert-body">
+        <p class="phishing l12n" id="phishing_details"></p>
+        <p class="phishing google">
+            <a class="l12n" id="learn-more-phishing"></a><br>
+            <a class="l12n" id="report-an-error"></a>
+        </p>
+        <div class="button-bar goBack closePage" id="button-bar">
+            <button type="submit" class="l12n" onClick="PhishingAlertController.goBackSelected();" id="go_back"></button>
+            <button type="submit" class="l12n" onClick="PhishingAlertController.closePageSelected();" id="close_page"></button>
+            <button type="button" class="l12n" onClick="PhishingAlertController.ignoreWarningSelected();" id="ignore_this_warning"></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
