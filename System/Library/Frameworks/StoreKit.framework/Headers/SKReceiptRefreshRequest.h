@@ -16,6 +16,7 @@ SK_EXTERN_CLASS_AVAILABLE(7_0) @interface SKReceiptRefreshRequest : SKRequest
 
 @end
 
+SK_EXTERN void SKTerminateForInvalidReceipt(void) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_1);
 
 // Receipt properties for sandbox testing:
 SK_EXTERN NSString * const SKReceiptPropertyIsExpired __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);  // NSNumber BOOL, defaults to NO

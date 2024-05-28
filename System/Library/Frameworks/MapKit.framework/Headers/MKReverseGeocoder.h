@@ -25,7 +25,7 @@ MK_CLASS_DEPRECATED(NA, NA, 3_0, 5_0)
 - (void)start NS_DEPRECATED_IOS(3_0,5_0);
 - (void)cancel NS_DEPRECATED_IOS(3_0,5_0);
 
-@property (nonatomic, assign) id<MKReverseGeocoderDelegate> delegate    NS_DEPRECATED_IOS(3_0,5_0);
+@property (nonatomic, weak) id<MKReverseGeocoderDelegate> delegate    NS_DEPRECATED_IOS(3_0,5_0);
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate       NS_DEPRECATED_IOS(3_0,5_0);
 @property (nonatomic, readonly) MKPlacemark *placemark                  NS_DEPRECATED_IOS(3_2,5_0);
 @property (nonatomic, readonly, getter=isQuerying) BOOL querying        NS_DEPRECATED_IOS(3_0,5_0);

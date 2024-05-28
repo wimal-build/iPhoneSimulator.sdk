@@ -66,6 +66,8 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSCoding>
 + (SKAction *)fadeAlphaTo:(CGFloat)alpha duration:(NSTimeInterval)sec;
 
 + (SKAction *)setTexture:(SKTexture *)texture;
++ (SKAction *)setTexture:(SKTexture *)texture resize:(BOOL)resize;
+
 + (SKAction *)animateWithTextures:(NSArray *)textures timePerFrame:(NSTimeInterval)sec;
 + (SKAction *)animateWithTextures:(NSArray *)textures timePerFrame:(NSTimeInterval)sec resize:(BOOL)resize restore:(BOOL)restore;
 

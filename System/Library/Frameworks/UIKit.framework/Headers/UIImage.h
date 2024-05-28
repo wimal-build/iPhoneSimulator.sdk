@@ -52,6 +52,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSCoding> {
 	unsigned int isCIImage:1;
         unsigned int imageSetIdentifer:16;
 	unsigned int renderingMode:2;
+        unsigned int suppressesAccessibilityHairlineThickening:1;
     } _imageFlags;
 }
 

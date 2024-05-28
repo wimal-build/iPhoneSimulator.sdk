@@ -42,8 +42,11 @@
 #define __NSi_6_0 introduced=6.0
 #define __NSi_6_1 introduced=6.1
 #define __NSi_7_0 introduced=7.0
+#define __NSi_7_1 introduced=7.1
 #define __NSi_8_0 introduced=8.0
+#define __NSi_8_1 introduced=8.1
 #define __NSi_9_0 introduced=9.0
+#define __NSi_9_1 introduced=9.1
 #define __NSi_10_0 introduced=10.0
 #define __NSi_10_1 introduced=10.1
 #define __NSi_10_2 introduced=10.2
@@ -70,8 +73,11 @@
 #define __NSd_6_0 ,deprecated=6.0
 #define __NSd_6_1 ,deprecated=6.1
 #define __NSd_7_0 ,deprecated=7.0
+#define __NSd_7_1 ,deprecated=7.1
 #define __NSd_8_0 ,deprecated=8.0
+#define __NSd_8_1 ,deprecated=8.1
 #define __NSd_9_0 ,deprecated=9.0
+#define __NSd_9_1 ,deprecated=9.1
 #define __NSd_10_0 ,deprecated=10.0
 #define __NSd_10_1 ,deprecated=10.1
 #define __NSd_10_2 ,deprecated=10.2

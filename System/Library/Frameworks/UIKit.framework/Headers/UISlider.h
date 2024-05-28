@@ -13,56 +13,7 @@
 
 @class UIImageView, UIImage;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UISlider : UIControl <NSCoding> {
-  @package
-    float _value;
-    float _minValue;
-    float _maxValue;
-    CGFloat _alpha;
-
-    CFMutableDictionaryRef _contentLookup;
-
-    UIImageView *_minValueImageView;
-    UIImageView *_maxValueImageView;
-    UIImageView *_thumbView;
-    UIImageView *_minTrackView;
-    UIImageView *_maxTrackView;
-    UIView      *_maxTrackClipView;
-
-    struct {
-	unsigned int continuous:1;
-	unsigned int animating:1;
-        unsigned int preparingToAnimate:1;
-	unsigned int showValue:1;
-	unsigned int trackEnabled:1;
-	unsigned int creatingSnapshot:1;
-	unsigned int thumbDisabled:1;
-	unsigned int minTrackHidden:1;
-    } _sliderFlags;
-
-    CGFloat _hitOffset;
-    
-    UIColor *_minTintColor;
-    UIColor *_maxTintColor;
-    UIColor *_thumbTintColor;
-    
-    
-    // look neue support
-    CAShapeLayer *_trackMaskLayer;
-    UIView *_trackContainerView;
-    UIView *_thumbViewNeue;
-    CAShapeLayer *_thumbViewNeueShape;
-    BOOL _useLookNeue;
-    
-    
-    BOOL _trackIsArtworkBased; // NO by default // will get set to YES when the user specify an artwork for BOTH the min and the max value trackImages
-    BOOL _thumbIsArtworkBased; // NO by default // will get set to YES when the user specify an artwork the thumb image
-    
-    UIView *_minTrackViewNeue;
-    UIView *_maxTrackViewNeue;
-    CAGradientLayer *_maxTrackGradientLayer;
-    BOOL _maxColorIsValid;
-}
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UISlider : UIControl <NSCoding>
 
 @property(nonatomic) float value;                                 // default 0.0. this value will be pinned to min/max
 @property(nonatomic) float minimumValue;                          // default 0.0. the current value may change if outside new min value

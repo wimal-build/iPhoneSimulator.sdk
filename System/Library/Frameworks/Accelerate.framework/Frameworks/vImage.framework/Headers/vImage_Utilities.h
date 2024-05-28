@@ -287,6 +287,9 @@ Boolean vImageCGImageFormat_IsEqual( const vImage_CGImageFormat *f1,  const vIma
  *          kvImageInvalidParameter             format->decode is not NULL
  *          kvImageInvalidParameter             format->bitsPerComponent is not in {0,1,2,4,5,8,16,32}
  *          kvImageInvalidImageFormat           format->renderingIntent is not a known value
+ *          kvImageInvalidImageFormat           The format called for conversion to an input-only colorspace. Some color profiles
+ *                                              (e.g. those arising from a scanner) are described as input only, because the device can
+ *                                              not produce image output.
  *          kvImageNullPointerArgument          format may not be NULL
  *          kvImageNullPointerArgument          image may not be NULL
  *          kvImageInternalError                Something unexpected went wrong. Please file a bug. 
@@ -518,6 +521,9 @@ void vImageConverter_Release( vImageConverterRef converter ) __OSX_AVAILABLE_STA
  *                                          IEEE-754-2008 binary16 interchange format  (a.k.a. OpenEXR half float). 32-bit floats 
  *                                          are the standard IEEE-754-2008 binary32 interchange format. (a.k.a float in C/C++/ObjC)
  *      kvImageInvalidImageFormat           format->renderingIntent is not a known value
+ *      kvImageInvalidImageFormat           The conversion called for conversion to an input-only colorspace. Some color profiles 
+ *                                          (e.g. those arising from a scanner) are described as input only, because the device can 
+ *                                          not produce image output.
  *
  *      kvImageInternalError                The converter was unable to find a path from the source format to the destination format.
  *                                          This should not happen and indicates incorrect operation of the function. Please file a bug.

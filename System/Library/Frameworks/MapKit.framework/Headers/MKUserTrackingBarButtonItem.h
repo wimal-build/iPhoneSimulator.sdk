@@ -14,6 +14,6 @@ MK_CLASS_AVAILABLE(NA, 5_0)
 @interface MKUserTrackingBarButtonItem : UIBarButtonItem
 
 - (id)initWithMapView:(MKMapView *)mapView;
-@property (nonatomic, retain) MKMapView *mapView;
+@property (nonatomic, strong) MKMapView *mapView;
 
 @end

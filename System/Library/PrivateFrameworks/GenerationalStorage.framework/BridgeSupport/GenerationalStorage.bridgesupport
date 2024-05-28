@@ -3,40 +3,40 @@
 <signatures version='1.0'>
 <opaque type='^{_GSLibrarySaveInProgressToken=}' name='GSLibrarySaveInProgressToken'/>
 <constant type='^{__CFString=}' name='kGSLibraryErrorDomain'/>
-<string_constant value='name' nsstring='true' name='kGSLibraryGenInfosFieldNameKey'/>
-<string_constant value='ODN' nsstring='true' name='kGSLibraryGenInfosFieldODNKey'/>
-<string_constant value='options' nsstring='true' name='kGSLibraryGenInfosFieldOptionsKey'/>
-<string_constant value='URL' nsstring='true' name='kGSLibraryGenInfosFieldPathKey'/>
-<string_constant value='info' nsstring='true' name='kGSLibraryGenInfosFieldUserInfosKey'/>
-<string_constant value='clients' nsstring='true' name='kGSLibraryGenInfosSpecClientsKey'/>
-<string_constant value='fields' nsstring='true' name='kGSLibraryGenInfosSpecFieldsKey'/>
-<string_constant value='withOptions' nsstring='true' name='kGSLibraryGenInfosSpecWithOptionsKey'/>
-<string_constant value='withoutOptions' nsstring='true' name='kGSLibraryGenInfosSpecWithoutOptionsKey'/>
-<enum value='1' name='GENERATIONAL_STORAGE_READ_LOCK_AVAILABLE'/>
-<enum value='10' name='kGSLibraryErrorCorruptStorage'/>
-<enum value='1' name='kGSLibraryErrorInternal'/>
-<enum value='3' name='kGSLibraryErrorInvalidName'/>
-<enum value='9' name='kGSLibraryErrorInvalidOption'/>
-<enum value='7' name='kGSLibraryErrorInvalidStorage'/>
-<enum value='2' name='kGSLibraryErrorInvalidURL'/>
-<enum value='5' name='kGSLibraryErrorNotSupportedHere'/>
-<enum value='6' name='kGSLibraryErrorPermissionDenied'/>
-<enum value='1' name='kGSLibraryGenerationOptionsDefault'/>
-<enum value='8' name='kGSLibraryGenerationOptionsIsPurgeable'/>
-<enum value='16' name='kGSLibraryGenerationOptionsIsSaved'/>
-<enum value='31' name='kGSLibraryGenerationOptionsMask'/>
-<enum value='0' name='kGSLibraryGenerationOptionsUnknown'/>
-<enum value='2' name='kGSLibraryGenerationOptionsWasAutomaticallyGenerated'/>
-<enum value='4' name='kGSLibraryGenerationOptionsWasSyncConflict'/>
-<enum value='1' name='kGSLibraryPrivateTransferOptionAllInfo'/>
-<enum value='16' name='kGSLibraryPrivateTransferOptionFailOnDuplicateGenerations'/>
-<enum value='4' name='kGSLibraryPrivateTransferOptionOverwriteDuplicateGenerations'/>
-<enum value='2' name='kGSLibraryPrivateTransferOptionReplaceAllGenerations'/>
-<enum value='8' name='kGSLibraryPrivateTransferOptionSkipDuplicateGenerations'/>
-<enum value='31' name='kGSLibraryPrivateTransferOptionsMask'/>
-<enum value='1' name='kGSLibraryStorageOptionsDefault'/>
-<enum value='1' name='kGSLibraryStorageOptionsMask'/>
-<enum value='0' name='kGSLibraryStorageOptionsUnknown'/>
+<string_constant name='kGSLibraryGenInfosFieldNameKey' nsstring='true' value='name'/>
+<string_constant name='kGSLibraryGenInfosFieldODNKey' nsstring='true' value='ODN'/>
+<string_constant name='kGSLibraryGenInfosFieldOptionsKey' nsstring='true' value='options'/>
+<string_constant name='kGSLibraryGenInfosFieldPathKey' nsstring='true' value='URL'/>
+<string_constant name='kGSLibraryGenInfosFieldUserInfosKey' nsstring='true' value='info'/>
+<string_constant name='kGSLibraryGenInfosSpecClientsKey' nsstring='true' value='clients'/>
+<string_constant name='kGSLibraryGenInfosSpecFieldsKey' nsstring='true' value='fields'/>
+<string_constant name='kGSLibraryGenInfosSpecWithOptionsKey' nsstring='true' value='withOptions'/>
+<string_constant name='kGSLibraryGenInfosSpecWithoutOptionsKey' nsstring='true' value='withoutOptions'/>
+<enum name='GENERATIONAL_STORAGE_READ_LOCK_AVAILABLE' value='1'/>
+<enum name='kGSLibraryErrorCorruptStorage' value='10'/>
+<enum name='kGSLibraryErrorInternal' value='1'/>
+<enum name='kGSLibraryErrorInvalidName' value='3'/>
+<enum name='kGSLibraryErrorInvalidOption' value='9'/>
+<enum name='kGSLibraryErrorInvalidStorage' value='7'/>
+<enum name='kGSLibraryErrorInvalidURL' value='2'/>
+<enum name='kGSLibraryErrorNotSupportedHere' value='5'/>
+<enum name='kGSLibraryErrorPermissionDenied' value='6'/>
+<enum name='kGSLibraryGenerationOptionsDefault' value='1'/>
+<enum name='kGSLibraryGenerationOptionsIsPurgeable' value='8'/>
+<enum name='kGSLibraryGenerationOptionsIsSaved' value='16'/>
+<enum name='kGSLibraryGenerationOptionsMask' value='31'/>
+<enum name='kGSLibraryGenerationOptionsUnknown' value='0'/>
+<enum name='kGSLibraryGenerationOptionsWasAutomaticallyGenerated' value='2'/>
+<enum name='kGSLibraryGenerationOptionsWasSyncConflict' value='4'/>
+<enum name='kGSLibraryPrivateTransferOptionAllInfo' value='1'/>
+<enum name='kGSLibraryPrivateTransferOptionFailOnDuplicateGenerations' value='16'/>
+<enum name='kGSLibraryPrivateTransferOptionOverwriteDuplicateGenerations' value='4'/>
+<enum name='kGSLibraryPrivateTransferOptionReplaceAllGenerations' value='2'/>
+<enum name='kGSLibraryPrivateTransferOptionSkipDuplicateGenerations' value='8'/>
+<enum name='kGSLibraryPrivateTransferOptionsMask' value='31'/>
+<enum name='kGSLibraryStorageOptionsDefault' value='1'/>
+<enum name='kGSLibraryStorageOptionsMask' value='1'/>
+<enum name='kGSLibraryStorageOptionsUnknown' value='0'/>
 <function name='GSLibraryAddGenerationWithOptionsByCopyingFile'>
 <arg type='^v'/>
 <arg type='^{__CFString=}'/>
@@ -55,18 +55,18 @@
 </function>
 <function name='GSLibraryCopyAllGenerationNamesForFile'>
 <arg type='^{__CFURL=}'/>
-<retval already_retained='true' type='^{__CFDictionary=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyAllGenerationPathsForFile'>
 <arg type='^{__CFURL=}'/>
-<retval already_retained='true' type='^{__CFDictionary=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyAllGenerationsInfos'>
 <arg type='^v'/>
 <arg type='^{__CFURL=}'/>
 <arg type='^{__CFDictionary=}'/>
 <arg type='^^{__CFError}' type_modifier='o'/>
-<retval already_retained='true' type='^{__CFDictionary=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyGeneration'>
 <arg type='^v'/>
@@ -78,13 +78,13 @@
 <function name='GSLibraryCopyGenerationInfoDictionary'>
 <arg type='^v'/>
 <arg type='^{__CFString=}'/>
-<retval already_retained='true' type='^{__CFDictionary=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyGenerationInfoValueForKey'>
 <arg type='^v'/>
 <arg type='^{__CFString=}'/>
 <arg type='^{__CFString=}'/>
-<retval already_retained='true' type='@'/>
+<retval type='@' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyGenerationInfos'>
 <arg type='^v'/>
@@ -93,21 +93,21 @@
 <arg type='^{__CFString=}'/>
 <arg type='^{__CFDictionary=}'/>
 <arg type='^^{__CFError}' type_modifier='o'/>
-<retval already_retained='true' type='^{__CFDictionary=}'/>
+<retval type='^{__CFDictionary=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyGenerationNames'>
 <arg type='^v'/>
-<retval already_retained='true' type='^{__CFArray=}'/>
+<retval type='^{__CFArray=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyGenerationOriginalDisplayName'>
 <arg type='^v'/>
 <arg type='^{__CFString=}'/>
-<retval already_retained='true' type='^{__CFString=}'/>
+<retval type='^{__CFString=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCopyURLForGeneration'>
 <arg type='^v'/>
 <arg type='^{__CFString=}'/>
-<retval already_retained='true' type='^{__CFURL=}'/>
+<retval type='^{__CFURL=}' already_retained='true'/>
 </function>
 <function name='GSLibraryCreateClientManaged'>
 <arg type='^{__CFAllocator=}'/>

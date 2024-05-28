@@ -90,6 +90,8 @@ extern CFStringRef kAXSZoomTouchToggledByPreferenceSwitchPreference;
 extern CFStringRef kAXSAssistiveTouchEnabledNotification;
 extern CFStringRef kAXSAssistiveTouchScannerEnabledNotification;
 extern CFStringRef kAXSAssistiveTouchSettingsChangedNotification;
+extern CFStringRef kAXSAssistiveTouchCustomGestureBeginNotification;
+extern CFStringRef kAXSAssistiveTouchCustomGestureEndNotification;
 
 #pragma mark AX General
 extern CFStringRef kAXSAccessibilityEnabledNotification;    
@@ -157,6 +159,11 @@ extern CFStringRef kAXSEnhanceTextLegibilityChangedNotification;
 extern CFStringRef kAXSReduceMotionChangedNotification;
 extern CFStringRef kAXSEnhanceBackgroundContrastChangedNotification;
 extern CFStringRef kAXSIncreaseButtonLegibilityNotification;
+extern CFStringRef kAXSButtonShapesEnabledNotification;
+extern CFStringRef kAXSReduceWhitePointEnabledNotification;
+extern CFStringRef kAXSDarkenSystemColorsEnabledNotification;
+extern CFStringRef kAXSUseDarkerKeyboardEnabledNotification;
+extern CFStringRef kAXSUseSingleSystemColorNotification;
 
 #pragma mark -
 #pragma mark iTunes
@@ -221,6 +228,7 @@ extern void _AXSSetAccessibilityEnabled();
 // NOTE: THESE SHOULD USUALLY BE PAIRED WITH VOICEOVERTOUCH METHODS
 extern Boolean _AXSApplicationAccessibilityEnabled();
 extern void _AXSApplicationAccessibilitySetEnabled(Boolean enabled);
+extern Boolean _AXSCanDisableApplicationAccessibility();
     
 typedef enum
 {
@@ -393,8 +401,34 @@ extern Boolean _AXSReduceMotionEnabled();
 extern void _AXSSetReduceMotionEnabled(Boolean enabled);
 extern Boolean _AXSIncreaseButtonLegibility();
 extern void _AXSSetIncreaseButtonLegibility(Boolean enabled);
+extern Boolean _AXSButtonShapesEnabled();
+extern void _AXSSetButtonShapesEnabled(Boolean enabled);
+extern Boolean _AXSReduceWhitePointEnabled();
+extern void _AXSSetReduceWhitePointEnabled(Boolean enabled);
+extern Boolean _AXSUseDarkerKeyboard();
+extern void _AXSSetUseDarkerKeyboard(Boolean enabled);
+
+extern Boolean _AXSUseSingleSystemColor();
+extern void _AXSSetUseSingleSystemColor(Boolean enabled);
+
+typedef enum {
+    AXSNamedSingleColorNone,
+    AXSNamedSingleColorBlue,
+    AXSNamedSingleColorRed,
+    AXSNamedSingleColorOrange,
+    AXSNamedSingleColorGreen,
+    AXSNamedSingleColorPink,
+    AXSNamedSingleColorPurple,
+    AXSNamedSingleColorBrown,
+} AXSNamedSingleColor;
+
+extern AXSNamedSingleColor _AXSNamedSingleSystemColor();
+extern void _AXSSetNamedSingleSystemColor(AXSNamedSingleColor);
+extern Boolean _AXSSingleSystemColorValues(AXSNamedSingleColor, float *red, float *green, float *blue, float *alpha);
     
-    
+extern Boolean _AXDarkenSystemColors();
+extern void _AXSSetDarkenSystemColors(Boolean enabled);
+
 #ifdef __cplusplus
 }
 #endif

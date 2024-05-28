@@ -1,5 +1,5 @@
 /*  vfp.h (from vecLib-459.0)
- *  Copyright 1999-2013 Apple Inc.  All rights reserved.
+ *  Copyright 1999-2014 Apple Inc.  All rights reserved.
  *
  *  Overview:
  *  vfp.h provides math library operations for SIMD vectors.  These functions

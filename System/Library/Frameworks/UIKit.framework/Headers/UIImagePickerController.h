@@ -64,6 +64,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImagePickerController : UINavigationCon
     NSArray                          *_mediaTypes;
     NSMutableDictionary              *_properties;
     int                               _previousStatusBarStyle;
+    BOOL                              _previousStatusBarHidden;
     
     struct {
         unsigned int visible:1;

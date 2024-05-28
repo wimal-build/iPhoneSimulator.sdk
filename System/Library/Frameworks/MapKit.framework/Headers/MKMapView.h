@@ -34,7 +34,7 @@ MK_CLASS_AVAILABLE(10_9, NA)
 @interface MKMapView : NSView <NSCoding>
 #endif
 
-@property (nonatomic, assign) id <MKMapViewDelegate> delegate;
+@property (nonatomic, weak) id <MKMapViewDelegate> delegate;
 
 // Changing the map type or region can cause the map to start loading map content.
 // The loading delegate methods will be called as map content is loaded.

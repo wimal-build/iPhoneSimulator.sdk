@@ -69,7 +69,7 @@ NS_CLASS_AVAILABLE_IOS(3_2)
  */
 - (void)dismissPopoverAnimated:(BOOL)animated;
 
-/* Set popover background color. Set to nil to use default background color. Default is nil. Color change animated if popover visible.
+/* Set popover background color. Set to nil to use default background color. Default is nil.
  */
 @property (nonatomic, copy) UIColor *backgroundColor NS_AVAILABLE_IOS(7_0);
 

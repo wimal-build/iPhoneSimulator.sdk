@@ -15,8 +15,8 @@ void main()
 {
 	gl_Position = u_matrix * a_vertex;
     v_texture = a_texture;
-    v_color = a_color * a_alpha;
-    v_haloColor = a_haloColor * a_alpha;
+    v_color = vec4(a_color.rgb, a_color.a * a_alpha);
+    v_haloColor = vec4(a_haloColor.rgb, a_haloColor.a * a_alpha);
 }
 
 

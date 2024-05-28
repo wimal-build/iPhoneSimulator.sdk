@@ -3,12 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>AcceptedDateFormats</key>
-   	<array>
+	<array>
 		<string>MMMM yyyy</string>
 		<string>MMMM yy</string>
 		<string>MMM yyyy</string>
 		<string>MMM yy</string>
-		<string>yyyy</string>
 		<string>MMMM</string>
 		<string>d. MMM</string>
 		<string>dd. MMM</string>
@@ -35,7 +34,7 @@
 		<string>dd.M.yy</string>
 		<string>dd.MM.yy</string>
 		<string>dd. M. yyyy</string>
-		<string>dd. MM. yyyy</string
+		<string>dd. MM. yyyy</string>
 		<string>dd.M.yyyy</string>
 		<string>dd.MM.yyyy</string>
 		<string>d. MMM yy</string>
@@ -125,7 +124,7 @@
 		<string>d/MM</string>
 	</array>
 	<key>AcceptedTimeFormats</key>
-    <array>
+	<array>
 		<string>H:mm</string>
 		<string>H:mm:ss</string>
 		<string>HH:mm:ss</string>

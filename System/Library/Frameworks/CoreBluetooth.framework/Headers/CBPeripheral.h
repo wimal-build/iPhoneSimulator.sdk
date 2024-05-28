@@ -68,7 +68,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : NSObject <NSCopying>
  *  @discussion The unique identifier associated with the peripheral. This identifier can be stored and later provided to a <code>CBCentralManager</code>
  *				to retrieve the peripheral.
  */
-@property(readonly, nonatomic) NSUUID *identifier;
+@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
 
 /*!
  *  @property name

@@ -34,6 +34,7 @@ SK_EXPORT @interface SKView : NSView
 @property (SK_NONATOMIC_IOSONLY) BOOL showsFPS;
 @property (SK_NONATOMIC_IOSONLY) BOOL showsDrawCount;
 @property (SK_NONATOMIC_IOSONLY) BOOL showsNodeCount;
+@property (SK_NONATOMIC_IOSONLY) BOOL showsPhysics;
 
 
 /**

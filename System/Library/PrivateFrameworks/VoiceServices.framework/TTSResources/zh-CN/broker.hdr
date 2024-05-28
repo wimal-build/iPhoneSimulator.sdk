@@ -9,26 +9,31 @@ defaultvoice:Ting-Ting
     <language>Chinese Mandarin</language>
     <langcode>MNC</langcode>
     <langid>31</langid>
-    <langversion>5.2.3.0000</langversion>
+    <langversion>5.2.3.13310</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Ting-Ting</voice>
-    <voiceversion>5.2.3.11327</voiceversion>
+    <voiceversion>5.2.3.13289</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
     <noclmset>enu,eng</noclmset>
     <fedataprefix></fedataprefix>
+    <feextcfgdataprefix></feextcfgdataprefix>
     <fedatapackaging>clc</fedatapackaging>
     <fevoice>Ting-Ting</fevoice>
     <frequencyhz>22050</frequencyhz>
     <voicemodel>bet3</voicemodel>
-    <reduction></reduction>
+    <reduction>bet3</reduction>
     <coder></coder>
     <bitrate></bitrate>
     <overheadframes></overheadframes>
     <audiooutputmimetype>audio/L16;rate=22050</audiooutputmimetype>
     <audiooutputsamplebits>16</audiooutputsamplebits>
     <tokentnnumframesinblock>50</tokentnnumframesinblock>
+    <nlucompatvc6be>yes</nlucompatvc6be>
+    <compatstrongbnd>no</compatstrongbnd>
+    <tnpausedurnormal>300</tnpausedurnormal>
+    <waitfactor>3</waitfactor>
   </PARAMETERS>
   <OBJECTS>
     <AUDIOFETCHER>audiofetch</AUDIOFETCHER>
@@ -67,10 +72,24 @@ defaultvoice:Ting-Ting
     <COMPONENT>xcoder/mrksync</COMPONENT>
   </COMPONENTS>
   <RESOURCES>
-    <!-- The next entry specifies a broker string for the user dict -->
+    <!-- The next entries specify default broker strings for the user dictionary resources, once language specific and once voice specific -->
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      userdct/mnc
+    </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
       ting-ting/userdct/mnc
     </RESOURCE>
+
+    <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </RESOURCES>
 </HEADER>
 </NUANCE>

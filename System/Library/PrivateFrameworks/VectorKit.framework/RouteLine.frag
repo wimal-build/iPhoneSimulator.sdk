@@ -20,7 +20,7 @@ void main()
 #ifdef GL_ES
     lowp vec4 framebuffer = gl_LastFragData[0];
  
-    if (framebuffer.a == 1.0)
+    if (framebuffer.a >= 0.999)
     {
         discard;
     }

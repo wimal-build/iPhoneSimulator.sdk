@@ -59,6 +59,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISegmentedControl : UIControl <NSCoding>
         unsigned int useProportionalWidthSegments:1;
         unsigned int translucentBackground:1;
         unsigned int appearanceNeedsUpdate:1;
+        unsigned int contentTextPaddingEnabled:1;
     } _segmentedControlFlags;
 }
 

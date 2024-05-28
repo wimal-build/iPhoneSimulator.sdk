@@ -25,29 +25,7 @@ typedef NS_ENUM(NSInteger, UIButtonType) {
     UIButtonTypeRoundedRect = UIButtonTypeSystem,   // Deprecated, use UIButtonTypeSystem instead
 };
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIButton : UIControl <NSCoding> {
-  @private
-    CFMutableDictionaryRef _contentLookup;
-    UIEdgeInsets           _contentEdgeInsets;
-    UIEdgeInsets           _titleEdgeInsets;
-    UIEdgeInsets           _imageEdgeInsets;
-    UIImageView           *_backgroundView;
-    UIImageView           *_imageView;
-    UILabel               *_titleView;
-    BOOL                   _initialized;
-    UIControlState         _lastDrawingControlState;
-    struct {
-        unsigned int reversesTitleShadowWhenHighlighted:1;
-        unsigned int adjustsImageWhenHighlighted:1;
-        unsigned int adjustsImageWhenDisabled:1;
-        unsigned int autosizeToFit:1;
-        unsigned int disabledDimsImage:1;
-        unsigned int showsTouchWhenHighlighted:1;
-        unsigned int buttonType:8;
-        unsigned int shouldHandleScrollerMouseEvent:1;
-        unsigned int titleFrozen:1;
-    } _buttonFlags;
-}
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIButton : UIControl <NSCoding>
 
 + (id)buttonWithType:(UIButtonType)buttonType;
 

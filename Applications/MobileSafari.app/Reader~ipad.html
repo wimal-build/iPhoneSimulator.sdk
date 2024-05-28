@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <base>
     <title>Reader</title>
+    <script>
+        // Load localized strings from main bundle.
+        var loadLocalizedStrings = function(controller) {
+            var localizedStringsURL;
+            if (controller.localizedStringsURL)
+                localizedStringsURL = controller.localizedStringsURL;
+            if (!localizedStringsURL)
+                localizedStringsURL = "English.lproj/localizedStrings.js";
+
+            document.write("<script type='text/javascript' charset='utf-8' src='" + localizedStringsURL + "'></" + "script>");
+        }
+
+        ReaderJSController._isIPad = true;
+        loadLocalizedStrings(ReaderJSController);
+
+        ReaderJS.addSharedReaderStyleSheet();
+    </script>
+
     <style id="article-content">
         @media print {
             .original-url {
@@ -13,7 +31,8 @@
         }
 
         h1.title {
-            font: -apple-system-short-headline;
+            font: -apple-system-headline;
+            font-weight: normal;
             text-align: start;
             -webkit-hyphens: manual;
         }
@@ -39,7 +58,7 @@
         }
 
         @media screen and (orientation: portrait) {
-            #article img.expand-past-margins {
+            #article img.edge-to-edge {
                 /* Offset the padding set on .page. */
                 margin: 0 0 0 -28px !important;
                 
@@ -52,7 +71,7 @@
                 max-width: none;
             }
 
-            #article blockquote img.expand-past-margins, #article table img.expand-past-margins {
+            #article blockquote img.edge-to-edge, #article table img.edge-to-edge {
                 margin: auto !important;
                 width: auto !important;
                 max-width: 100%;
@@ -73,11 +92,26 @@
             font: -apple-system-short-subheadline;
         }
 
-        /* FIXME <rdar://problem/13648696>: Need spec for <h1>-<h6> styling in Reader content */
+        h1 {
+            font: -apple-system-subheadline;
+        }
+
+        h2 {
+            font: -apple-system-footnote;
+        }
+
+        h3 {
+            font: -apple-system-caption1;
+        }
+
+        h4, h5, h6 {
+            font: -apple-system-caption2;
+        }
+
         h1, h2, h3, h4, h5, h6 {
-            font: -apple-system-body;
             font-weight: bold;
         }
+
     </style>
     <style id="reader-ui">
     @media screen {
@@ -342,24 +376,6 @@
         }
     }
     </style>
-
-    <script>
-        // Load localized strings from main bundle.
-        var loadLocalizedStrings = function(controller) {
-            var localizedStringsURL;
-            if (controller.localizedStringsURL)
-                localizedStringsURL = controller.localizedStringsURL;
-            if (!localizedStringsURL)
-                localizedStringsURL = "English.lproj/localizedStrings.js";
-            
-            document.write("<script type='text/javascript' charset='utf-8' src='" + localizedStringsURL + "'></" + "script>");
-        }
-
-        ReaderJSController._isIPad = true;
-        loadLocalizedStrings(ReaderJSController);
-
-        ReaderJS.addSharedReaderStyleSheet();
-    </script>
 
 </head>
 <body class="preloading" onload="ReaderJS.loaded();" onscroll="articleHasScrolled();">

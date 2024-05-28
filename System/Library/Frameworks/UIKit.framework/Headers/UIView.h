@@ -187,6 +187,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder<NSCoding, UIAppearan
         unsigned int backdropOverlayMode:2;
         unsigned int tintAdjustmentMode:2;
         unsigned int isReferenceView:1;
+        unsigned int focusState:2;
+        unsigned int hasUserInterfaceIdiom:1;
+        unsigned int userInterfaceIdiom:3;
+        unsigned int ancestorDefinesTintColor:1;
+        unsigned int ancestorDefinesTintAdjustmentMode:1;
     } _viewFlags;
 }
 

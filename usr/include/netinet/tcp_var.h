@@ -339,6 +339,10 @@ struct	tcpstat {
 	u_int32_t	tcps_mp_sndpacks;	/* number of data packs sent */
 	u_int32_t	tcps_mp_sndbytes;	/* number of bytes sent */
 	u_int32_t	tcps_join_rxmts;	/* join ack retransmits */
+
+	u_int32_t	tcps_tailloss_rto;	/* RTO due to tail loss */
+	u_int32_t	tcps_reordered_pkts;	/* packets reorderd */
+	u_int32_t	tcps_recovered_pkts;	/* recovered after loss */
 };
 
 struct tcpstat_local {

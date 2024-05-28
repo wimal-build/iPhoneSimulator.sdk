@@ -35,7 +35,7 @@ CB_EXTERN_CLASS @interface CBCentral : NSObject <NSCopying>
  *  @discussion	The unique identifier associated with the central. This identifier can be used to retrieve the equivalent @link CBPeripheral @/link object
  *				via @link retrievePeripheralsWithIdentifiers: @/link.
  */
-@property(readonly, nonatomic) NSUUID *identifier;
+@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
 
 /*!
  *  @property	maximumUpdateValueLength

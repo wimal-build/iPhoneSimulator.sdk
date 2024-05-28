@@ -14,8 +14,8 @@
 MK_CLASS_AVAILABLE(NA, 4_0)
 @interface MKOverlayPathView : MKOverlayView
 
-@property (retain) UIColor *fillColor NS_DEPRECATED_IOS(4_0, 7_0);
-@property (retain) UIColor *strokeColor NS_DEPRECATED_IOS(4_0, 7_0);
+@property (strong) UIColor *fillColor NS_DEPRECATED_IOS(4_0, 7_0);
+@property (strong) UIColor *strokeColor NS_DEPRECATED_IOS(4_0, 7_0);
 
 @property CGFloat lineWidth NS_DEPRECATED_IOS(4_0, 7_0); // defaults to 0, which is MKRoadWidthAtZoomScale(currentZoomScale)
 @property CGLineJoin lineJoin NS_DEPRECATED_IOS(4_0, 7_0); // defaults to kCGLineJoinRound

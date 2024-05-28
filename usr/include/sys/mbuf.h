@@ -176,7 +176,8 @@ typedef struct mb_class_stat {
 	u_int32_t	mbcl_mc_waiter_cnt;  /* # waiters on the cache */
 	u_int32_t	mbcl_mc_wretry_cnt;  /* # of wait retries */
 	u_int32_t	mbcl_mc_nwretry_cnt; /* # of no-wait retry attempts */
-	u_int64_t	mbcl_reserved[4];    /* for future use */
+	u_int32_t	mbcl_peak_reported; /* last usage peak reported */
+	u_int32_t	mbcl_reserved[7];    /* for future use */
 } mb_class_stat_t;
 
 #define	MCS_DISABLED	0	/* cache is permanently disabled */

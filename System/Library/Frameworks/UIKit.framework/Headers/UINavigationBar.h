@@ -169,7 +169,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationItem : NSObject <NSCoding> {
     UIImageView     *_frozenTitleView;
 }
 
-- (id)initWithTitle:(NSString *)title;
+- (id)initWithTitle:(NSString *)title; // Designated initializer
 
 @property(nonatomic,copy)   NSString        *title;             // Title when topmost on the stack. default is nil
 @property(nonatomic,retain) UIBarButtonItem *backBarButtonItem; // Bar button item to use for the back button in the child navigation item.

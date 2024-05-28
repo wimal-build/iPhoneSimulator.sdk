@@ -216,6 +216,8 @@ extern void kernel_debug_enter(
 #define MACH_CPU_THROTTLE_DISABLE	0x1b	/* Global CPU Throttle Disable */
 #define MACH_RW_PROMOTE            0x1c	/* promoted due to RW lock promotion */
 #define MACH_RW_DEMOTE             0x1d	/* promotion due to RW lock undone */
+#define MACH_SCHED_MAINTENANCE     0x1f /* periodic maintenance thread */
+#define MACH_DISPATCH              0x20 /* context switch completed */
 
 /* Codes for IPC (DBG_MACH_IPC) */
 #define	MACH_TASK_SUSPEND	0x0	/* Suspended a task */

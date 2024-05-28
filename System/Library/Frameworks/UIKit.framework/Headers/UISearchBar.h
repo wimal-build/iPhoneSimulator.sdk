@@ -90,9 +90,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning>
 - (void)setBackgroundImage:(UIImage *)backgroundImage forBarPosition:(UIBarPosition)barPosition barMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;  // Use UIBarMetricsDefaultPrompt to set a separate backgroundImage for a search bar with a prompt
 - (UIImage *)backgroundImageForBarPosition:(UIBarPosition)barPosition barMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;
 
-- (void)setBackgroundImage:(UIImage *)backgroundImage forBarMetrics:(UIBarMetrics)barMetrics NS_DEPRECATED_IOS(7_0,7_0,"use setBackgroundImage:forBarPosition:barMetrics:"); // Use UIBarMetricsDefaultPrompt to set a separate backgroundImage for a search bar with a prompt
-- (UIImage *)backgroundImageForBarMetrics:(UIBarMetrics)barMetrics NS_DEPRECATED_IOS(7_0,7_0,"use backgroundImageForBarPosition:barMetrics:");
-
 /* In general, you should specify a value for the normal state to be used by other states which don't have a custom value set
  */
 

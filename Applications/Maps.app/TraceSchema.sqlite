@@ -30,6 +30,7 @@ end_time                INTEGER,
 start_data              BLOB,               -- PB serialized SearchResultRepr
 end_data                BLOB,               -- PB serialized SearchResultRepr
 simulation              INTEGER,
+route_genius            INTEGER,
 cl_mapmatch             INTEGER,            -- Whether CL MapMatching is enabled
 original_version        INTEGER,
 initial_course          NUMERIC,
@@ -77,6 +78,12 @@ response_error_data BLOB,           -- PB Serialized NSError
 transport_type      NUMERIC NOT NULL -- GEOTransportType
 );
 
+CREATE TABLE likely_routes
+(
+request_data        BLOB NOT NULL,  -- PB Serialized GEODirectionsRequest
+response_data       BLOB NOT NULL   -- PB Serialized GEODirectionsResponse
+);
+
 CREATE TABLE bookmarks
 (
 id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
@@ -91,4 +98,29 @@ timestamp_start     NUMERIC NOT NULL,
 timestamp_end       NUMERIC,
 directions_id       INTEGER NOT NULL,
 route_id            BLOB
+);
+
+CREATE TABLE eta_traffic_updates
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+request_timestamp   NUMERIC NOT NULL,
+response_timestamp  NUMERIC,
+request_data        BLOB NOT NULL,  -- PB Serialized
+response_data       BLOB,           -- PB Serialized
+response_error_data BLOB,           -- PB Serialized NSError
+destination_name    TEXT
+);
+
+CREATE TABLE vehicle_speed_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+speed               NUMERIC NOT NULL
+);
+
+CREATE TABLE vehicle_heading_data
+(
+relative_timestamp  NUMERIC NOT NULL,
+absolute_timestamp  NUMERIC NOT NULL,
+heading             NUMERIC NOT NULL
 );

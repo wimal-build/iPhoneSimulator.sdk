@@ -115,6 +115,15 @@ CB_EXTERN_CLASS @interface CBUUID : NSObject <NSCopying>
 @property(nonatomic, readonly) NSData *data;
 
 /*!
+ * @property UUIDString
+ *
+ *  @discussion
+ *      The UUID as NSString.
+ *
+ */
+@property(nonatomic, readonly) NSString *UUIDString NS_AVAILABLE(NA, 7_1);
+
+/*!
  * @method UUIDWithString:
  *
  *  @discussion

@@ -89,38 +89,36 @@
 /*
  * Set up standard Mac OS X versions
  */
-#define MAC_OS_X_VERSION_10_0 1000
-#define MAC_OS_X_VERSION_10_1 1010
-#define MAC_OS_X_VERSION_10_2 1020
-#define MAC_OS_X_VERSION_10_3 1030
-#define MAC_OS_X_VERSION_10_4 1040
-#define MAC_OS_X_VERSION_10_5 1050
-#define MAC_OS_X_VERSION_10_6 1060
-#define MAC_OS_X_VERSION_10_7 1070
-#define MAC_OS_X_VERSION_10_8 1080
-#define MAC_OS_X_VERSION_10_9 1090
+#define MAC_OS_X_VERSION_10_0         1000
+#define MAC_OS_X_VERSION_10_1         1010
+#define MAC_OS_X_VERSION_10_2         1020
+#define MAC_OS_X_VERSION_10_3         1030
+#define MAC_OS_X_VERSION_10_4         1040
+#define MAC_OS_X_VERSION_10_5         1050
+#define MAC_OS_X_VERSION_10_6         1060
+#define MAC_OS_X_VERSION_10_7         1070
+#define MAC_OS_X_VERSION_10_8         1080
+#define MAC_OS_X_VERSION_10_9         1090
 
 /* 
- * If min OS not specified, assume 10.1 for ppc and 10.4 for all others
- * Note: gcc driver may set _ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED_ based on MACOSX_DEPLOYMENT_TARGET environment variable
+ * If min OS not specified, assume 10.4 for intel
+ * Note: compiler driver may set _ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED_ based on MACOSX_DEPLOYMENT_TARGET environment variable
  */
 #ifndef MAC_OS_X_VERSION_MIN_REQUIRED
     #ifdef __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__
         #if (__i386__ || __x86_64__) && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ < MAC_OS_X_VERSION_10_4)
             #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.
-        #elif __ppc64__ && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ < MAC_OS_X_VERSION_10_4)
-            #warning Building for ppc64 with Mac OS X Deployment Target < 10.4 is invalid.
         #endif
         #define MAC_OS_X_VERSION_MIN_REQUIRED __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__
     #else
-        #if __ppc64__ || __i386__ || __x86_64__
+        #if __i386__ || __x86_64__
             #define MAC_OS_X_VERSION_MIN_REQUIRED MAC_OS_X_VERSION_10_4
         #elif __arm__ || __arm64__
             #define MAC_OS_X_VERSION_MIN_REQUIRED MAC_OS_X_VERSION_10_5
         #else
             #define MAC_OS_X_VERSION_MIN_REQUIRED MAC_OS_X_VERSION_10_1
         #endif
-    #endif
+     #endif
 #endif
 
 /*

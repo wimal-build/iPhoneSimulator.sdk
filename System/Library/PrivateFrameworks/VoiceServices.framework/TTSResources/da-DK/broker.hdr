@@ -4,29 +4,32 @@ defaultvoice:Sara
 <VERSION>NUAN_1.0</VERSION>
 <HEADER>
   <BROKERSTRING>pipeline/Danish/sara/22/bet3/text/pcm</BROKERSTRING>
-  <PRIORITY>4101</PRIORITY>
+  <PRIORITY>4103</PRIORITY>
   <PARAMETERS>
     <language>Danish</language>
     <langcode>DAD</langcode>
     <langid>7</langid>
-    <langversion>5.2.3.0000</langversion>
+    <langversion>5.2.3.13289</langversion>
     <nativetypeofchar>utf-16</nativetypeofchar>
     <voice>Sara</voice>
-    <voiceversion>5.2.3.13003</voiceversion>
+    <voiceversion>5.2.3.13289</voiceversion>
     <gender>Female</gender>
     <age>Adult</age>
     <fecfg>cfg1</fecfg>
     <fedataprefix></fedataprefix>
+    <feextcfgdataprefix></feextcfgdataprefix>
     <fedatapackaging>clc</fedatapackaging>
     <fevoice>Sara</fevoice>
     <frequencyhz>22050</frequencyhz>
     <voicemodel>bet3</voicemodel>
-    <reduction></reduction>
+    <reduction>bet3</reduction>
     <coder></coder>
     <bitrate></bitrate>
     <overheadframes></overheadframes>
     <audiooutputmimetype>audio/L16;rate=22050</audiooutputmimetype>
     <audiooutputsamplebits>16</audiooutputsamplebits>
+    <nlucompatvc6be>yes</nlucompatvc6be>
+    <compatstrongbnd>no</compatstrongbnd>
   </PARAMETERS>
   <OBJECTS>
     <AUDIOFETCHER>audiofetch</AUDIOFETCHER>
@@ -69,10 +72,24 @@ defaultvoice:Sara
     <COMPONENT>xcoder/mrksync</COMPONENT>
   </COMPONENTS>
   <RESOURCES>
-    <!-- The next entry specifies a broker string for the user dict -->
+    <!-- The next entries specify default broker strings for the user dictionary resources, once language specific and once voice specific -->
+    <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
+      userdct/dad
+    </RESOURCE>
     <RESOURCE content-type="application/edct-bin-dictionary;loader=broker">
       sara/userdct/dad
     </RESOURCE>
+
+    <!-- The next entries specify default broker strings tuning resources if available -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </RESOURCES>
 </HEADER>
 </NUANCE>

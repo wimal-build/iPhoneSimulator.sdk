@@ -40,12 +40,12 @@ MK_CLASS_AVAILABLE(10_9, NA)
 // Classes that override must call super.
 - (void)prepareForReuse;
 
-@property (nonatomic, retain) id <MKAnnotation> annotation;
+@property (nonatomic, strong) id <MKAnnotation> annotation;
 
 #if TARGET_OS_IPHONE
-@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, strong) UIImage *image;
 #else
-@property (nonatomic, retain) NSImage *image;
+@property (nonatomic, strong) NSImage *image;
 #endif
 
 // By default, the center of annotation view is placed over the coordinate of the annotation.
@@ -79,16 +79,16 @@ MK_CLASS_AVAILABLE(10_9, NA)
 
 // The left accessory view to be used in the standard callout.
 #if TARGET_OS_IPHONE
-@property (retain, nonatomic) UIView *leftCalloutAccessoryView;
+@property (strong, nonatomic) UIView *leftCalloutAccessoryView;
 #else
-@property (retain, nonatomic) NSView *leftCalloutAccessoryView;
+@property (strong, nonatomic) NSView *leftCalloutAccessoryView;
 #endif
 
 // The right accessory view to be used in the standard callout.
 #if TARGET_OS_IPHONE
-@property (retain, nonatomic) UIView *rightCalloutAccessoryView;
+@property (strong, nonatomic) UIView *rightCalloutAccessoryView;
 #else
-@property (retain, nonatomic) NSView *rightCalloutAccessoryView;
+@property (strong, nonatomic) NSView *rightCalloutAccessoryView;
 #endif
 
 // If YES and the underlying id<MKAnnotation> responds to setCoordinate:, 

@@ -101,7 +101,6 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder <UIActionShee
 {
   @package
     id <UIApplicationDelegate>  _delegate;
-    CFMutableDictionaryRef      _touchMap;
     NSMutableSet               *_exclusiveTouchWindows;
     UIEvent                    *_event;
     UIEvent                    *_touchesEvent;

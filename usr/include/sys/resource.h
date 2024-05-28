@@ -301,6 +301,7 @@ struct rlimit {
  */
 #define RLIMIT_WAKEUPS_MONITOR		0x1 /* Configure the wakeups monitor. */
 #define	RLIMIT_CPU_USAGE_MONITOR	0x2 /* Configure the CPU usage monitor. */
+#define	RLIMIT_THREAD_CPULIMITS		0x3 /* Configure a blocking, per-thread, CPU limits. */
 
 /*
  * Flags for wakeups monitor control.

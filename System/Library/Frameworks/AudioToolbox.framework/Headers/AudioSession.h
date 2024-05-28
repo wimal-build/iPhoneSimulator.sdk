@@ -19,7 +19,7 @@
 /*!
  @header AudioSession
  This header describes the API for audio session services.
- 
+ Note: As of iOS 7, this entire API has been deprecated in favor of AVAudioSession, part of the AVFoundation framework.
  */
 
 //==================================================================================================

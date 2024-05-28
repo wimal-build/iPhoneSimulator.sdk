@@ -13,7 +13,7 @@
 MK_CLASS_AVAILABLE(10_9, 4_0)
 @interface MKMultiPoint : MKShape
 
-@property (nonatomic, readonly) MKMapPoint *points;
+- (MKMapPoint *)points NS_RETURNS_INNER_POINTER;
 @property (nonatomic, readonly) NSUInteger pointCount;
 
 // Unproject and copy points into the provided array of coordinates that

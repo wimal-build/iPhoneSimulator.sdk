@@ -25,10 +25,22 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSCoding>
 + (SKPhysicsBody *)bodyWithCircleOfRadius:(CGFloat)r;
 
 /**
+ Creates a circle of radius r centered at a point in the node's coordinate space.
+ @param r the radius in points
+ */
++ (SKPhysicsBody *)bodyWithCircleOfRadius:(CGFloat)r center:(CGPoint)center;
+
+/**
  Creates a rectangle of the specified size centered at the node's origin.
  @param s the size in points
  */
 + (SKPhysicsBody *)bodyWithRectangleOfSize:(CGSize)s;
+
+/**
+ Creates a rectangle of the specified size centered at a point in the node's coordinate space.
+ @param s the size in points
+ */
++ (SKPhysicsBody *)bodyWithRectangleOfSize:(CGSize)s center:(CGPoint)center;
 
 /**
  The path must represent a convex polygon with counter clockwise winding and no self intersection. Positions are relative to the node's origin.
@@ -60,6 +72,11 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSCoding>
  @param rect the CGRect to use
  */
 + (SKPhysicsBody *)bodyWithEdgeLoopFromRect:(CGRect)rect;
+
+/**
+ Creates an compound body that is the union of the bodies used to create it.
+ */
++ (SKPhysicsBody *)bodyWithBodies:(NSArray *)bodies;
 
 @property (SK_NONATOMIC_IOSONLY, getter = isDynamic) BOOL dynamic;
 @property (SK_NONATOMIC_IOSONLY) BOOL usesPreciseCollisionDetection;
@@ -161,3 +178,4 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSCoding>
 - (NSArray *)allContactedBodies;
 
 @end
+

@@ -20,6 +20,9 @@
 		<xsl:if test="$aria-label != ''">
 			<xsl:attribute name="aria-label"><xsl:value-of select="$aria-label" /></xsl:attribute>
 		</xsl:if>
+		<xsl:if test="$rtl-direction != ''">
+			<xsl:attribute name="dir">rtl</xsl:attribute>
+		</xsl:if>
 		<xsl:apply-templates select="@*|node()" />
 	</xsl:copy>
 </xsl:template>

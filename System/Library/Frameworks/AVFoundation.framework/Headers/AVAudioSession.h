@@ -184,9 +184,12 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionInterruptionType)
 	@constant	AVAudioSessionErrorCodeSiriIsRecording
  		The app tried to do something with the audio session that is not allowed while Siri is recording.
  	@constant	AVAudioSessionErrorCodeCannotStartPlaying
-		The app is not allowed to start playing, usually because of a lack of audio key in its Info.plist.
- 		This could also happen if the app has this key but uses a category that can't play in the background
- 		(AVAudioSessionCategoryAmbient, AVAudioSessionCategorySoloAmbient, etc.).
+		The app is not allowed to start recording and/or playing, usually because of a lack of audio key in
+ 		its Info.plist.  This could also happen if the app has this key but uses a category that can't record 
+ 		and/or play in the background (AVAudioSessionCategoryAmbient, AVAudioSessionCategorySoloAmbient, etc.).
+	@constant	AVAudioSessionErrorCodeCannotStartRecording
+		The app is not allowed to start recording, usually because it is starting a mixable recording from the
+ 		background and is not an Inter-App Audio app.
 	@constant	AVAudioSessionErrorCodeBadParam
  		An illegal value was used for a property.
 	@constant	AVAudioSessionErrorCodeUnspecified
@@ -203,6 +206,7 @@ typedef NS_ENUM(NSInteger, AVAudioSessionErrorCode)
 	AVAudioSessionErrorCodeMissingEntitlement			= 'ent?',			/* 0x656E743F, 1701737535	*/
 	AVAudioSessionErrorCodeSiriIsRecording				= 'siri',			/* 0x73697269, 1936290409	*/
 	AVAudioSessionErrorCodeCannotStartPlaying			= '!pla',			/* 0x21706C61, 561015905	*/
+	AVAudioSessionErrorCodeCannotStartRecording			= '!rec',			/* 0x21726563, 561145187	*/
 	AVAudioSessionErrorCodeBadParam						= -50,
 	AVAudioSessionErrorCodeUnspecified					= 'what'			/* 0x77686174, 2003329396	*/
 } NS_AVAILABLE_IOS(7_0);
@@ -527,6 +531,7 @@ AVF_EXPORT NSString *const AVAudioSessionPortBluetoothLE	  NS_AVAILABLE_IOS(7_0)
 /* port types that refer to either input or output */
 AVF_EXPORT NSString *const AVAudioSessionPortBluetoothHFP NS_AVAILABLE_IOS(6_0); /* Input or output on a Bluetooth Hands-Free Profile device */
 AVF_EXPORT NSString *const AVAudioSessionPortUSBAudio     NS_AVAILABLE_IOS(6_0); /* Input or output on a Universal Serial Bus device */
+AVF_EXPORT NSString *const AVAudioSessionPortCarAudio     NS_AVAILABLE_IOS(7_0); /* Input or output via Car Audio */
 
 #pragma mark -- constants for data source locations, orientations, polar patterns, and channel roles --
 

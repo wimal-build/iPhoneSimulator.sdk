@@ -246,6 +246,18 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeAztecCode NS_AVAILABLE(NA, 7_0);
 
 @class AVMetadataMachineReadableCodeObjectInternal;
 
+/*!
+ @class AVMetadataMachineReadableCodeObject
+ @abstract
+    AVMetadataMachineReadableCodeObject is a concrete subclass of AVMetadataObject defining the features of a detected one-dimensional
+    or two-dimensional barcode.
+ 
+ @discussion
+    AVMetadataMachineReadableCodeObject represents a single detected machine readable code in a picture.  It is an immutable object
+    describing the features and payload of a barcode.
+ 
+    On supported platforms, AVCaptureMetadataOutput outputs arrays of detected machine readable code objects.  See AVCaptureMetadataOutput.h.
+ */
 NS_CLASS_AVAILABLE(NA, 7_0)
 @interface AVMetadataMachineReadableCodeObject : AVMetadataObject
 {

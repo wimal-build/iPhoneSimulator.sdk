@@ -29,7 +29,6 @@ SK_EXPORT @interface SKPhysicsWorld : NSObject<NSCoding>
 
 - (void)addJoint:(SKPhysicsJoint *)joint;
 - (void)removeJoint:(SKPhysicsJoint *)joint;
-
 - (void)removeAllJoints;
 
 - (SKPhysicsBody *)bodyAtPoint:(CGPoint)point;
