@@ -27,6 +27,11 @@
 		</dict>
 		<key>com.apple.notifyd.matching</key>
 		<dict>
+			<key>com.apple.spotlightui.prefschanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.spotlightui.prefschanged</string>
+			</dict>
 			<key>com.apple.datamigrator.migrationDidFinish</key>
 			<dict>
 				<key>Notification</key>
@@ -38,11 +43,11 @@
 			<key>com.apple.searchd.expirations</key>
 			<dict>
 				<key>Interval</key>
-				<integer>86400</integer>
+				<real>86400</real>
 				<key>Delay</key>
 				<integer>86400</integer>
 				<key>GracePeriod</key>
-				<integer>43200</integer>
+				<real>43200</real>
 				<key>Repeating</key>
 				<true/>
 				<key>AllowBattery</key>
@@ -51,6 +56,23 @@
 				<true/>
 				<key>Priority</key>
 				<string>Background</string>
+			</dict>
+			<key>com.apple.searchd.reindex</key>
+			<dict>
+				<key>Interval</key>
+				<real>86400</real>
+				<key>Delay</key>
+				<real>43200</real>
+				<key>GracePeriod</key>
+				<real>86400</real>
+				<key>Repeating</key>
+				<true/>
+				<key>AllowBattery</key>
+				<true/>
+				<key>PowerNap</key>
+				<true/>
+				<key>Priority</key>
+				<string>Maintenance</string>
 			</dict>
 		</dict>
 	</dict>

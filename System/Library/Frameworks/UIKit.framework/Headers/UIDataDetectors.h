@@ -15,4 +15,4 @@ typedef NS_OPTIONS(NSUInteger, UIDataDetectorTypes) {
 
     UIDataDetectorTypeNone          = 0,               // No detection at all
     UIDataDetectorTypeAll           = NSUIntegerMax    // All types
-};
+} __TVOS_PROHIBITED;

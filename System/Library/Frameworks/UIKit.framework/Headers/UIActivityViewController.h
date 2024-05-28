@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void (^UIActivityViewControllerCompletionHandler)(NSString * __nullable activityType, BOOL completed);
 typedef void (^UIActivityViewControllerCompletionWithItemsHandler)(NSString * __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError);
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UIActivityViewController : UIViewController
+NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIActivityViewController : UIViewController
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;

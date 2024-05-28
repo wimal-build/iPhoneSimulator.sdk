@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIButton, UIImageView;
 
-NS_CLASS_AVAILABLE_IOS(5_0) @interface UIStepper : UIControl
+NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIStepper : UIControl
 
 @property(nonatomic,getter=isContinuous) BOOL continuous; // if YES, value change events are sent any time the value changes during interaction. default = YES
 @property(nonatomic) BOOL autorepeat;                     // if YES, press & hold repeatedly alters value. default = YES

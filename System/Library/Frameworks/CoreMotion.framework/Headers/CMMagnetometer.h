@@ -37,7 +37,7 @@ typedef struct {
  *  Discussion:
  *    Contains a single magnetometer measurement.
  */
-NS_CLASS_AVAILABLE(NA,5_0)
+NS_CLASS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED
 @interface CMMagnetometerData : CMLogItem
 {
 @private

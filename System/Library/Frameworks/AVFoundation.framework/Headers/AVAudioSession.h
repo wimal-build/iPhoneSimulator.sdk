@@ -62,7 +62,7 @@ default routes the output to the receiver. */
 typedef NS_ENUM(NSUInteger, AVAudioSessionPortOverride)
 {
 	AVAudioSessionPortOverrideNone    = 0,
-	AVAudioSessionPortOverrideSpeaker = 'spkr'
+	AVAudioSessionPortOverrideSpeaker __TVOS_PROHIBITED = 'spkr'
 } NS_AVAILABLE_IOS(6_0) ;
 
 /* values for AVAudioSessionRouteChangeReasonKey in AVAudioSessionRouteChangeNotification userInfo dictionary
@@ -171,9 +171,9 @@ typedef NS_OPTIONS(NSUInteger, AVAudioSessionCategoryOptions)
 	/* DuckOthers is only valid with AVAudioSessionCategoryPlayAndRecord, AVAudioSessionCategoryPlayback, and AVAudioSessionCategoryMultiRoute */
 	AVAudioSessionCategoryOptionDuckOthers				= 0x2,
 	/* AllowBluetooth is only valid with AVAudioSessionCategoryRecord and AVAudioSessionCategoryPlayAndRecord */
-	AVAudioSessionCategoryOptionAllowBluetooth		= 0x4,
+	AVAudioSessionCategoryOptionAllowBluetooth	__TVOS_PROHIBITED		= 0x4,
 	/* DefaultToSpeaker is only valid with AVAudioSessionCategoryPlayAndRecord */
-	AVAudioSessionCategoryOptionDefaultToSpeaker		= 0x8,
+	AVAudioSessionCategoryOptionDefaultToSpeaker __TVOS_PROHIBITED		= 0x8,
 	/* InterruptSpokenAudioAndMixWithOthers is only valid with AVAudioSessionCategoryPlayAndRecord, AVAudioSessionCategoryPlayback, and AVAudioSessionCategoryMultiRoute */
 	AVAudioSessionCategoryOptionInterruptSpokenAudioAndMixWithOthers NS_AVAILABLE_IOS(9_0) 	= 0x11
 } NS_AVAILABLE_IOS(6_0);
@@ -207,7 +207,7 @@ typedef NS_OPTIONS(NSUInteger, AVAudioSessionRecordPermission)
 	AVAudioSessionRecordPermissionUndetermined		= 'undt',
 	AVAudioSessionRecordPermissionDenied			= 'deny',
 	AVAudioSessionRecordPermissionGranted			= 'grnt'
-} NS_AVAILABLE_IOS(8_0);
+} NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /*!
 	@enum AVAudioSession error codes
@@ -295,7 +295,7 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 @property(readonly) NSString *category;
 
 /* Returns an enum indicating whether the user has granted or denied permission to record, or has not been asked */
-- (AVAudioSessionRecordPermission)recordPermission NS_AVAILABLE_IOS(8_0);
+- (AVAudioSessionRecordPermission)recordPermission NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /* Checks to see if calling process has permission to record audio.  The 'response' block will be called
  immediately if permission has already been granted or denied.  Otherwise, it presents a dialog to notify
@@ -304,7 +304,7 @@ NS_CLASS_AVAILABLE(NA, 3_0)
  */
 typedef void (^PermissionBlock)(BOOL granted);
 
-- (void)requestRecordPermission:(PermissionBlock)response NS_AVAILABLE_IOS(7_0);
+- (void)requestRecordPermission:(PermissionBlock)response NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /* get the current set of AVAudioSessionCategoryOptions */
 @property(readonly) AVAudioSessionCategoryOptions categoryOptions NS_AVAILABLE_IOS(6_0);
@@ -462,19 +462,19 @@ queried if the audio session category does not support them.  Each of these will
  name:        AVAudioSessionInterruptionNotification 
  object:      [AVAudioSession sharedInstance]]; 
  */
-@property(assign, nullable) id<AVAudioSessionDelegate> delegate NS_DEPRECATED_IOS(4_0, 6_0);
+@property(assign, nullable) id<AVAudioSessionDelegate> delegate NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED;
 
 
-- (BOOL)setActive:(BOOL)active withFlags:(NSInteger)flags error:(NSError **)outError NS_DEPRECATED_IOS(4_0, 6_0);
+- (BOOL)setActive:(BOOL)active withFlags:(NSInteger)flags error:(NSError **)outError NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED;
 
-@property(readonly) BOOL inputIsAvailable NS_DEPRECATED_IOS(3_0, 6_0); /* is input hardware available or not? */
+@property(readonly) BOOL inputIsAvailable NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED; /* is input hardware available or not? */
 
 /* deprecated.  Use the corresponding properties without "Hardware" in their names. */
-@property(readonly) double currentHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0);
-@property(readonly) NSInteger currentHardwareInputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0);
-@property(readonly) NSInteger currentHardwareOutputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0);
-- (BOOL)setPreferredHardwareSampleRate:(double)sampleRate error:(NSError **)outError NS_DEPRECATED_IOS(3_0, 6_0);
-@property(readonly) double preferredHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0);
+@property(readonly) double currentHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED;
+@property(readonly) NSInteger currentHardwareInputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED;
+@property(readonly) NSInteger currentHardwareOutputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED;
+- (BOOL)setPreferredHardwareSampleRate:(double)sampleRate error:(NSError **)outError NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED;
+@property(readonly) double preferredHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED;
 
 @end
 
@@ -548,7 +548,7 @@ AVF_EXPORT NSString *const AVAudioSessionCategoryPlayAndRecord;
 
 /*  Use this category when using a hardware codec or signal processor while
  not playing or recording audio. */
-AVF_EXPORT NSString *const AVAudioSessionCategoryAudioProcessing;
+AVF_EXPORT NSString *const AVAudioSessionCategoryAudioProcessing __TVOS_PROHIBITED;
 
 /*  Use this category to customize the usage of available audio accessories and built-in audio hardware.
  For example, this category provides an application with the ability to use an available USB output 
@@ -763,7 +763,7 @@ NS_CLASS_AVAILABLE(NA, 6_0)
 
 #pragma mark -- AVAudioSessionDelegate protocol --
 /* The AVAudioSessionDelegate protocol is deprecated. Instead you should register for notifications. */
-
+__TVOS_PROHIBITED
 @protocol AVAudioSessionDelegate <NSObject>
 @optional 
 
@@ -786,12 +786,12 @@ NS_CLASS_AVAILABLE(NA, 6_0)
  Flags passed to you when endInterruptionWithFlags: is called on the delegate */
 enum {
 	AVAudioSessionInterruptionFlags_ShouldResume = 1
-} NS_DEPRECATED_IOS(4_0, 6_0);
+} NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED;
 
 /* Deprecated in iOS 6.0.  Use AVAudioSessionSetActiveOptions instead.
  flags for use when calling setActive:withFlags:error: */
 enum {	
 	AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation = 1
-} NS_DEPRECATED_IOS(4_0, 6_0);
+} NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END

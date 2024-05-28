@@ -1,0 +1,60 @@
+BODY {
+	direction: rtl !important;
+}
+
+
+/* 768 */
+
+#mail-medium { background: #FFF url(Magnify-Mail-768-RTL-XL~ipad.png) top left no-repeat !important; }
+
+#mail-medium .FromName,
+#mail-medium .ToString, 
+#mail-medium .Subject,
+#mail-medium .Date,
+#mail-medium .BodyText {
+	width: 1366px !important;
+    right: 86px !important;
+	text-align: right !important;
+}
+
+#mail-medium .NavBackContainer {
+	left: auto !important;
+	right: 68px !important;
+}
+
+#mail-medium .NavBack {
+	float:right !important;
+}
+
+#mail-medium .NavArrows {
+	float:right !important;
+}
+
+
+/* 1024 */
+
+#mail-large { background: #FFF url(Magnify-Mail-1024-RTL-XL~ipad.png) top left no-repeat !important; }
+
+
+#mail-large .FromName,
+#mail-large .ToString, 
+#mail-large .Subject,
+#mail-large .Date,
+#mail-large .BodyText {
+	width: 1366px !important;
+    right: 338px !important;
+	text-align: right !important;
+}
+
+#mail-large .NavBackContainer {
+	left: auto !important;
+	right: 68px !important;
+}
+
+#mail-large .NavBack {
+	float:right !important;
+}
+
+#mail-large .NavArrows {
+	float:right !important;
+}

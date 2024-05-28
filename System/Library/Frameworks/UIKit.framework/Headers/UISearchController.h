@@ -32,7 +32,12 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UISearchController : UIViewController <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
+
+#ifndef SDK_HIDE_TIDE
+// Pass nil if you wish to display search results in the same view that you are searching. This is not supported on tvOS; please provide a results controller on tvOS.
+#else
 // Pass nil if you wish to display search results in the same view that you are searching.
+#endif //SDK_HIDE_TIDE
 - (instancetype)initWithSearchResultsController:(nullable UIViewController *)searchResultsController;
 
 // The object responsible for updating the content of the searchResultsController.
@@ -42,7 +47,8 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UISearchController : UIViewController <UI
 @property (nonatomic, assign, getter = isActive) BOOL active;
 
 @property (nullable, nonatomic, weak) id <UISearchControllerDelegate> delegate;
-@property (nonatomic, assign) BOOL dimsBackgroundDuringPresentation;         // default is YES
+@property (nonatomic, assign) BOOL dimsBackgroundDuringPresentation __TVOS_PROHIBITED; // default is YES, and has the same behavior as obscuresBackgroundDuringPresentation.
+@property (nonatomic, assign) BOOL obscuresBackgroundDuringPresentation NS_AVAILABLE_IOS(9_1); // default is YES
 @property (nonatomic, assign) BOOL hidesNavigationBarDuringPresentation;     // default is YES
 
 @property (nullable, nonatomic, strong, readonly) UIViewController *searchResultsController;

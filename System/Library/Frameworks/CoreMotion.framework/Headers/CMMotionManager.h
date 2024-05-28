@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Discussion:
  *    Typedef of block to be invoked when accelerometer data is available.
  */
-typedef void (^CMAccelerometerHandler)(CMAccelerometerData * __nullable accelerometerData, NSError * __nullable error);
+typedef void (^CMAccelerometerHandler)(CMAccelerometerData * __nullable accelerometerData, NSError * __nullable error) __TVOS_PROHIBITED;
 
 /*
  *  CMGyroHandler
@@ -56,7 +56,7 @@ typedef void (^CMAccelerometerHandler)(CMAccelerometerData * __nullable accelero
  *  Discussion:
  *    Typedef of block to be invoked when gyro data is available.
  */
-typedef void (^CMGyroHandler)(CMGyroData * __nullable gyroData, NSError * __nullable error);
+typedef void (^CMGyroHandler)(CMGyroData * __nullable gyroData, NSError * __nullable error) __TVOS_PROHIBITED;
 
 /*
  *  CMDeviceMotionHandler
@@ -64,7 +64,7 @@ typedef void (^CMGyroHandler)(CMGyroData * __nullable gyroData, NSError * __null
  *  Discussion:
  *    Typedef of block to be invoked when device motion data is available.
  */
-typedef void (^CMDeviceMotionHandler)(CMDeviceMotion * __nullable motion, NSError * __nullable error);
+typedef void (^CMDeviceMotionHandler)(CMDeviceMotion * __nullable motion, NSError * __nullable error) __TVOS_PROHIBITED;
 
 /*
  *  CMMagnetometerHandler
@@ -72,7 +72,7 @@ typedef void (^CMDeviceMotionHandler)(CMDeviceMotion * __nullable motion, NSErro
  *  Discussion:
  *    Typedef of block to be invoked when magnetometer data is available.
  */
-typedef void (^CMMagnetometerHandler)(CMMagnetometerData * __nullable magnetometerData, NSError * __nullable error) NS_AVAILABLE(NA,5_0);
+typedef void (^CMMagnetometerHandler)(CMMagnetometerData * __nullable magnetometerData, NSError * __nullable error) NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  CMMotionManager
@@ -100,7 +100,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			timestamps on the delivered CMAcceleration instances to determine the 
  *			true update interval. 
  */
-@property(assign, nonatomic) NSTimeInterval accelerometerUpdateInterval;
+@property(assign, nonatomic) NSTimeInterval accelerometerUpdateInterval __TVOS_PROHIBITED;
 
 /*
  *  accelerometerAvailable
@@ -108,7 +108,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Determines whether accelerometer is available.
  */
-@property(readonly, nonatomic, getter=isAccelerometerAvailable) BOOL accelerometerAvailable;
+@property(readonly, nonatomic, getter=isAccelerometerAvailable) BOOL accelerometerAvailable __TVOS_PROHIBITED;
 
 /*
  *  accelerometerActive
@@ -117,7 +117,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			Determines whether the CMMotionManager is currently providing 
  *			accelerometer updates.
  */
-@property(readonly, nonatomic, getter=isAccelerometerActive) BOOL accelerometerActive;
+@property(readonly, nonatomic, getter=isAccelerometerActive) BOOL accelerometerActive __TVOS_PROHIBITED;
 
 /*
  *  accelerometerData
@@ -126,7 +126,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			Returns the latest sample of accelerometer data, or nil if none is available.
  */
 
-@property(readonly, nullable) CMAccelerometerData *accelerometerData;
+@property(readonly, nullable) CMAccelerometerData *accelerometerData __TVOS_PROHIBITED;
 
 /*
  *  startAccelerometerUpdates
@@ -135,7 +135,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			Starts accelerometer updates with no handler. To receive the latest accelerometer data
  *			when desired, examine the accelerometerData property.
  */
-- (void)startAccelerometerUpdates;
+- (void)startAccelerometerUpdates __TVOS_PROHIBITED;
 
 /*
  *  startAccelerometerUpdatesToQueue:withHandler:
@@ -145,7 +145,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			Note that when the updates are stopped, all operations in the 
  *			given NSOperationQueue will be cancelled.
  */
-- (void)startAccelerometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMAccelerometerHandler)handler;
+- (void)startAccelerometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMAccelerometerHandler)handler __TVOS_PROHIBITED;
 
 /*
  *  stopAccelerometerUpdates
@@ -153,7 +153,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *			Stop accelerometer updates.
  */
-- (void)stopAccelerometerUpdates;
+- (void)stopAccelerometerUpdates __TVOS_PROHIBITED;
 
 /*
  *  gyroUpdateInterval
@@ -168,7 +168,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			timestamps on the delivered CMGyroData instances to determine the 
  *			true update interval. 
  */
-@property(assign, nonatomic) NSTimeInterval gyroUpdateInterval;
+@property(assign, nonatomic) NSTimeInterval gyroUpdateInterval __TVOS_PROHIBITED;
 
 /*
  *  gyroAvailable
@@ -176,7 +176,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Determines whether gyro is available.
  */
-@property(readonly, nonatomic, getter=isGyroAvailable) BOOL gyroAvailable;
+@property(readonly, nonatomic, getter=isGyroAvailable) BOOL gyroAvailable __TVOS_PROHIBITED;
 
 /*
  *  gyroActive
@@ -184,7 +184,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Determines whether the CMMotionManager is currently providing gyro updates.
  */
-@property(readonly, nonatomic, getter=isGyroActive) BOOL gyroActive;
+@property(readonly, nonatomic, getter=isGyroActive) BOOL gyroActive __TVOS_PROHIBITED;
 
 /*
  *  gyroData
@@ -192,7 +192,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *		Returns the latest sample of gyro data, or nil if none is available.
  */
-@property(readonly, nullable) CMGyroData *gyroData;
+@property(readonly, nullable) CMGyroData *gyroData __TVOS_PROHIBITED;
 
 /*
  *  startGyroUpdates
@@ -201,7 +201,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			Starts gyro updates with no handler. To receive the latest gyro data
  *			when desired, examine the gyroData property.
  */
-- (void)startGyroUpdates;
+- (void)startGyroUpdates __TVOS_PROHIBITED;
 
 /*
  *  startGyroUpdatesToQueue:withHandler:
@@ -212,7 +212,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			given NSOperationQueue will be cancelled.
 
  */
-- (void)startGyroUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMGyroHandler)handler;
+- (void)startGyroUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMGyroHandler)handler __TVOS_PROHIBITED;
 
 /*
  *  stopGyroUpdates
@@ -220,7 +220,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *			Stops gyro updates.
  */
-- (void)stopGyroUpdates;
+- (void)stopGyroUpdates __TVOS_PROHIBITED;
 
 /*
  *  magnetometerUpdateInterval
@@ -235,7 +235,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			timestamps on the delivered CMMagnetometerData instances to determine the 
  *			true update interval. 
  */
-@property(assign, nonatomic) NSTimeInterval magnetometerUpdateInterval NS_AVAILABLE(NA,5_0);
+@property(assign, nonatomic) NSTimeInterval magnetometerUpdateInterval NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  magnetometerAvailable
@@ -243,7 +243,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Determines whether magetometer is available.
  */
-@property(readonly, nonatomic, getter=isMagnetometerAvailable) BOOL magnetometerAvailable NS_AVAILABLE(NA,5_0);
+@property(readonly, nonatomic, getter=isMagnetometerAvailable) BOOL magnetometerAvailable NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  magnetometerActive
@@ -251,7 +251,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Determines whether the CMMotionManager is currently providing magnetometer updates.
  */
-@property(readonly, nonatomic, getter=isMagnetometerActive) BOOL magnetometerActive NS_AVAILABLE(NA,5_0);
+@property(readonly, nonatomic, getter=isMagnetometerActive) BOOL magnetometerActive NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  magnetometerData
@@ -259,7 +259,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Returns the latest sample of magnetometer data, or nil if none is available.
  */
-@property(readonly, nullable) CMMagnetometerData *magnetometerData NS_AVAILABLE(NA,5_0);
+@property(readonly, nullable) CMMagnetometerData *magnetometerData NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  startMagnetometerUpdates
@@ -268,7 +268,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *      Starts magnetometer updates with no handler. To receive the latest magnetometer data
  *          when desired, examine the magnetometerData property.
  */
-- (void)startMagnetometerUpdates NS_AVAILABLE(NA,5_0);
+- (void)startMagnetometerUpdates NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  startMagnetometerUpdatesToQueue:withHandler:
@@ -276,7 +276,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Starts magnetometer updates, providing data to the given handler through the given queue. 
  */
-- (void)startMagnetometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMMagnetometerHandler)handler NS_AVAILABLE(NA,5_0);
+- (void)startMagnetometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMMagnetometerHandler)handler NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  stopMagnetometerUpdates
@@ -284,7 +284,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Stops magnetometer updates.
  */
-- (void)stopMagnetometerUpdates NS_AVAILABLE(NA,5_0);
+- (void)stopMagnetometerUpdates NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  deviceMotionUpdateInterval
@@ -299,7 +299,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			timestamps on the delivered CMDeviceMotion instances to determine the 
  *			true update interval. 
  */
-@property(assign, nonatomic) NSTimeInterval deviceMotionUpdateInterval;
+@property(assign, nonatomic) NSTimeInterval deviceMotionUpdateInterval __TVOS_PROHIBITED;
 
 /*
  *  availableAttitudeReferenceFrames
@@ -307,7 +307,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *     Returns a bitmask specifying the available attitude reference frames on the device.
  */
-+ (CMAttitudeReferenceFrame)availableAttitudeReferenceFrames NS_AVAILABLE(NA,5_0);
++ (CMAttitudeReferenceFrame)availableAttitudeReferenceFrames NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  attitudeReferenceFrame
@@ -319,7 +319,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *		is undefined.
  *		
  */
-@property(readonly, nonatomic) CMAttitudeReferenceFrame attitudeReferenceFrame NS_AVAILABLE(NA,5_0);
+@property(readonly, nonatomic) CMAttitudeReferenceFrame attitudeReferenceFrame NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  deviceMotionAvailable
@@ -327,7 +327,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *      Determines whether device motion is available using any available attitude reference frame.
  */
-@property(readonly, nonatomic, getter=isDeviceMotionAvailable) BOOL deviceMotionAvailable;
+@property(readonly, nonatomic, getter=isDeviceMotionAvailable) BOOL deviceMotionAvailable __TVOS_PROHIBITED;
 
 /*
  *  deviceMotionActive
@@ -336,7 +336,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *      Determines whether the CMMotionManager is currently providing device
  *			motion updates.
  */
-@property(readonly, nonatomic, getter=isDeviceMotionActive) BOOL deviceMotionActive;
+@property(readonly, nonatomic, getter=isDeviceMotionActive) BOOL deviceMotionActive __TVOS_PROHIBITED;
 
 /*
  *  deviceMotion
@@ -344,7 +344,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *			Returns the latest sample of device motion data, or nil if none is available.
  */
-@property(readonly, nullable) CMDeviceMotion *deviceMotion;
+@property(readonly, nullable) CMDeviceMotion *deviceMotion __TVOS_PROHIBITED;
 
 /*
  *  startDeviceMotionUpdates
@@ -354,7 +354,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			when desired, examine the deviceMotion property. Uses the default reference frame for
  *			the device. Examine CMMotionManager's attitudeReferenceFrame to determine this.
  */
-- (void)startDeviceMotionUpdates;
+- (void)startDeviceMotionUpdates __TVOS_PROHIBITED;
 
 /*
  *  startDeviceMotionUpdatesToQueue:withHandler:
@@ -365,7 +365,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			attitudeReferenceFrame to determine this.
  *			
  */
-- (void)startDeviceMotionUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler;
+- (void)startDeviceMotionUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler __TVOS_PROHIBITED;
 
 /*
  *  startDeviceMotionUpdatesUsingReferenceFrame:
@@ -376,7 +376,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			reference for the attitude estimates.
  *
  */
-- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame NS_AVAILABLE(NA,5_0);
+- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  startDeviceMotionUpdatesUsingReferenceFrame:toQueue:withHandler
@@ -386,7 +386,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *			The specified frame will be used as reference for the attitude estimates.
  *
  */
-- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame toQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler NS_AVAILABLE(NA,5_0);
+- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame toQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 /*
  *  stopDeviceMotionUpdates
@@ -394,7 +394,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *  Discussion:
  *			Stops device motion updates.
  */
-- (void)stopDeviceMotionUpdates;
+- (void)stopDeviceMotionUpdates __TVOS_PROHIBITED;
 
 /*
  *  showsDeviceMovementDisplay
@@ -405,7 +405,7 @@ NS_CLASS_AVAILABLE(NA,4_0)
  *          CMErrorDeviceRequiresMovement is reported once via CMDeviceMotionHandler. By default,
  *          showsDeviceMovementDisplay is NO.
  */
-@property(assign, nonatomic) BOOL showsDeviceMovementDisplay NS_AVAILABLE(NA,5_0);
+@property(assign, nonatomic) BOOL showsDeviceMovementDisplay NS_AVAILABLE(NA,5_0) __TVOS_PROHIBITED;
 
 @end
 

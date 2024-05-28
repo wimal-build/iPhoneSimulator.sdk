@@ -18,10 +18,32 @@ typedef NS_ENUM(NSInteger, UIApplicationShortcutIconType) {
     UIApplicationShortcutIconTypeAdd,
     UIApplicationShortcutIconTypeLocation,
     UIApplicationShortcutIconTypeSearch,
-    UIApplicationShortcutIconTypeShare
-} NS_ENUM_AVAILABLE_IOS(9_0);
+    UIApplicationShortcutIconTypeShare,
+    UIApplicationShortcutIconTypeProhibit       NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeContact        NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeHome           NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeMarkLocation   NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeFavorite       NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeLove           NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeCloud          NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeInvitation     NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeConfirmation   NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeMail           NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeMessage        NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeDate           NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeTime           NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeCapturePhoto   NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeCaptureVideo   NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeTask           NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeTaskCompleted  NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeAlarm          NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeBookmark       NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeShuffle        NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeAudio          NS_ENUM_AVAILABLE_IOS(9_1),
+    UIApplicationShortcutIconTypeUpdate         NS_ENUM_AVAILABLE_IOS(9_1)
+} NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(9_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 @interface UIApplicationShortcutIcon : NSObject <NSCopying>
 
 // Create an icon using a system-defined image.
@@ -34,7 +56,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 @interface UIApplicationShortcutItem : NSObject <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -55,7 +77,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0)
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 @interface UIMutableApplicationShortcutItem : UIApplicationShortcutItem
 
 // An application-specific string that identifies the type of action to perform.

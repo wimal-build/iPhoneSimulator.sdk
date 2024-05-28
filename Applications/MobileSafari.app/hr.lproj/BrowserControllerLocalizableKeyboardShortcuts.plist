@@ -261,7 +261,7 @@
 	<key>_toggleTabViewKeyPressed</key>
 	<dict>
 		<key>LocalizableKey</key>
-		<string>\</string>
+		<string>ž</string>
 		<key>LocalizableModifierState</key>
 		<dict>
 			<key>Command</key>
@@ -269,7 +269,7 @@
 			<key>Control</key>
 			<false/>
 			<key>Option</key>
-			<false/>
+			<true/>
 			<key>Shift</key>
 			<true/>
 		</dict>

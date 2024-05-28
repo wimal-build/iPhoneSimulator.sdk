@@ -11,6 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#ifndef SDK_HIDE_TIDE
+@class UIPress;
+@class UIPressesEvent;
+
+#endif
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIResponder : NSObject
 
 - (nullable UIResponder*)nextResponder;
@@ -32,7 +37,22 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIResponder : NSObject
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
 - (void)touchesCancelled:(nullable NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event;
+- (void)touchesEstimatedPropertiesUpdated:(NSSet * _Nonnull)touches NS_AVAILABLE_IOS(9_1);
 
+#ifndef SDK_HIDE_TIDE
+// Generally, all responders which do custom press handling should override all four of these methods.
+// Your responder will receive either pressesEnded:withEvent or pressesCancelled:withEvent: for each
+// press it is handling (those presses it received in pressesBegan:withEvent:).
+// pressesChanged:withEvent: will be invoked for presses that provide an analog value
+// (like thumbsticks or analog push buttons)
+// *** You must handle cancelled presses to ensure correct behavior in your application.  Failure to
+// do so is very likely to lead to incorrect behavior or crashes.
+- (void)pressesBegan:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event NS_AVAILABLE_IOS(9_0);
+- (void)pressesChanged:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event NS_AVAILABLE_IOS(9_0);
+- (void)pressesEnded:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event NS_AVAILABLE_IOS(9_0);
+- (void)pressesCancelled:(NSSet<UIPress *> *)presses withEvent:(nullable UIPressesEvent *)event NS_AVAILABLE_IOS(9_0);
+
+#endif
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(nullable UIEvent *)event NS_AVAILABLE_IOS(3_0);
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(nullable UIEvent *)event NS_AVAILABLE_IOS(3_0);
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(nullable UIEvent *)event NS_AVAILABLE_IOS(3_0);
@@ -112,7 +132,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIKeyCommand : NSObject <NSCopying, NSSec
 /// You may modify the returned inputAssistantItem to add to or replace the existing items on the bar.
 /// Modifications made to the returned UITextInputAssistantItem are reflected automatically.
 /// This method should not be overriden. Goes up the responder chain.
-@property (nonnull, nonatomic, readonly, strong) UITextInputAssistantItem *inputAssistantItem NS_AVAILABLE_IOS(9_0) __WATCHOS_PROHIBITED;
+@property (nonnull, nonatomic, readonly, strong) UITextInputAssistantItem *inputAssistantItem NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 // For viewController equivalents of -inputView and -inputAccessoryView
 // Called and presented when object becomes first responder.  Goes up the responder chain.

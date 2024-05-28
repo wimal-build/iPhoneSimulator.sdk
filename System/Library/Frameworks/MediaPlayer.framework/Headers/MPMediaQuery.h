@@ -24,12 +24,12 @@ typedef NS_ENUM(NSInteger, MPMediaGrouping) {
     MPMediaGroupingGenre,
     MPMediaGroupingPlaylist,
     MPMediaGroupingPodcastTitle
-} NS_ENUM_AVAILABLE_IOS(3_0);
+} NS_ENUM_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
 
 // MPMediaQuery represents a collection of items or playlists determined by a chain of MPMediaPredicate objects.
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaQuery : NSObject <NSSecureCoding, NSCopying>
 
 - (instancetype)initWithFilterPredicates:(nullable NSSet<MPMediaPredicate *> *)filterPredicates NS_DESIGNATED_INITIALIZER;
@@ -72,7 +72,7 @@ MP_EXTERN_CLASS_AVAILABLE(3_0)
 // See the concrete subclass MPMediaPropertyPredicate for filtering options.
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaPredicate : NSObject <NSSecureCoding> {}
 @end
 
@@ -83,10 +83,10 @@ MP_EXTERN_CLASS_AVAILABLE(3_0)
 typedef NS_ENUM(NSInteger, MPMediaPredicateComparison) {
     MPMediaPredicateComparisonEqualTo,
     MPMediaPredicateComparisonContains
-} NS_ENUM_AVAILABLE_IOS(3_0);
+} NS_ENUM_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaPropertyPredicate : MPMediaPredicate
 
 + (MPMediaPropertyPredicate *)predicateWithValue:(nullable id)value forProperty:(NSString *)property; // comparisonType is MPMediaPredicateComparisonEqualTo

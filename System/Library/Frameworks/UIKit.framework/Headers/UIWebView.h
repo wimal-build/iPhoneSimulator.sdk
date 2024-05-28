@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, UIWebViewNavigationType) {
     UIWebViewNavigationTypeReload,
     UIWebViewNavigationTypeFormResubmitted,
     UIWebViewNavigationTypeOther
-};
+} __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, UIWebPaginationMode) {
     UIWebPaginationModeUnpaginated,
@@ -27,17 +27,17 @@ typedef NS_ENUM(NSInteger, UIWebPaginationMode) {
     UIWebPaginationModeTopToBottom,
     UIWebPaginationModeBottomToTop,
     UIWebPaginationModeRightToLeft
-};
+} __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, UIWebPaginationBreakingMode) {
     UIWebPaginationBreakingModePage,
     UIWebPaginationBreakingModeColumn
-};
+} __TVOS_PROHIBITED;
 
 @class UIWebViewInternal;
 @protocol UIWebViewDelegate;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate> 
+NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate> 
 
 @property (nullable, nonatomic, assign) id <UIWebViewDelegate> delegate;
 
@@ -86,7 +86,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIWebView : UIView <NSCoding, UIScrollVie
 @property (nonatomic) BOOL allowsLinkPreview NS_AVAILABLE_IOS(9_0); // default is NO
 @end
 
- @protocol UIWebViewDelegate <NSObject>
+__TVOS_PROHIBITED @protocol UIWebViewDelegate <NSObject>
 
 @optional
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;

@@ -1,0 +1,99 @@
+BODY {
+	direction:rtl !important;
+}
+
+/* 768 */
+
+#messages-medium { background: #FFF url(Magnify-Messages-768-RTL-XL~ipad.png) top left no-repeat !important; }
+
+#messages-medium .BlueBubble1,
+#messages-medium .BlueBubble2,
+#messages-medium .BlueBubble3 { text-align: right !important; right: 700px !important; }
+
+#messages-medium .GrayBubble1,
+#messages-medium .GrayBubble2 {	text-align: right !important; left: 64px !important; }
+
+#messages-medium .Timestamp { left: 300px !important; }
+
+#messages-medium .ConversationName1,
+#messages-medium .ConversationName2,
+#messages-medium .ConversationName3,
+#messages-medium .ConversationName4,
+#messages-medium .ConversationName5,
+#messages-medium .ConversationName6,
+#messages-medium .ConversationName7,
+#messages-medium .ConversationName8,
+#messages-medium .ConversationName9,
+#messages-medium .ConversationPreview1,
+#messages-medium .ConversationPreview2,
+#messages-medium .ConversationPreview3,
+#messages-medium .ConversationPreview4,
+#messages-medium .ConversationPreview5,
+#messages-medium .ConversationPreview6,
+#messages-medium .ConversationPreview7,
+#messages-medium .ConversationPreview8,
+#messages-medium .ConversationPreview9 { right: 164px !important; }
+
+#messages-medium .ConversationTime1,
+#messages-medium .ConversationTime2,
+#messages-medium .ConversationTime3,
+#messages-medium .ConversationTime4,
+#messages-medium .ConversationTime5,
+#messages-medium .ConversationTime6,
+#messages-medium .ConversationTime7,
+#messages-medium .ConversationTime8,
+#messages-medium .ConversationTime9 { text-align: left !important; right: 430px !important;	width: 180px !important; }
+
+#messages-medium .NavEdit {	text-align: right !important; right: 16px !important; }
+#messages-medium .NavDetails { text-align: left !important; left: 40px !important; }
+#messages-medium .NavMessages { left: 370px !important; }
+
+
+
+/* 1024 */
+
+#messages-large { background: #FFF url(Magnify-Messages-1024-RTL-XL~ipad.png) top left no-repeat !important; }
+
+#messages-large .BlueBubble1,
+#messages-large .BlueBubble2,
+#messages-large .BlueBubble3 { text-align: right !important; right: 820px !important; }
+
+#messages-large .GrayBubble1,
+#messages-large .GrayBubble2 {	text-align: right !important; left: 64px !important; }
+
+#messages-large .Timestamp { left: 500px !important; }
+
+#messages-large .ConversationName1,
+#messages-large .ConversationName2,
+#messages-large .ConversationName3,
+#messages-large .ConversationName4,
+#messages-large .ConversationName5,
+#messages-large .ConversationName6,
+#messages-large .ConversationName7,
+#messages-large .ConversationName8,
+#messages-large .ConversationName9,
+#messages-large .ConversationPreview1,
+#messages-large .ConversationPreview2,
+#messages-large .ConversationPreview3,
+#messages-large .ConversationPreview4,
+#messages-large .ConversationPreview5,
+#messages-large .ConversationPreview6,
+#messages-large .ConversationPreview7,
+#messages-large .ConversationPreview8,
+#messages-large .ConversationPreview9 { right: 164px !important; }
+
+#messages-large .ConversationTime1,
+#messages-large .ConversationTime2,
+#messages-large .ConversationTime3,
+#messages-large .ConversationTime4,
+#messages-large .ConversationTime5,
+#messages-large .ConversationTime6,
+#messages-large .ConversationTime7,
+#messages-large .ConversationTime8,
+#messages-large .ConversationTime9 { text-align: left !important; right: 530px !important;	width: 180px !important; }
+
+#messages-large .NavEdit {	text-align: right !important; right: 16px !important; }
+#messages-large .NavDetails { text-align: left !important; left: 40px !important; }
+#messages-large .NavMessages { left: 570px !important; }
+#messages-large .NavName { left: 1620px !important; }
+

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 // To display it, present it modally on an existing view controller.
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaPickerController : UIViewController
 
 - (instancetype)initWithMediaTypes:(MPMediaType)mediaTypes NS_DESIGNATED_INITIALIZER;
@@ -35,7 +35,7 @@ MP_EXTERN_CLASS_AVAILABLE(3_0)
 
 @end
 
-
+__TVOS_PROHIBITED
 @protocol MPMediaPickerControllerDelegate<NSObject>
 @optional
 

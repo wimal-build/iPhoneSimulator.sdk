@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CanonicalName</key>
-	<string>iphonesimulator9.0</string>
+	<string>iphonesimulator9.1</string>
 	<key>CustomProperties</key>
 	<dict/>
 	<key>DefaultDeploymentTarget</key>
-	<string>9.0</string>
+	<string>9.1</string>
 	<key>DefaultProperties</key>
 	<dict>
 		<key>DEFAULT_COMPILER</key>
@@ -24,33 +24,34 @@
 			<string>8.3</string>
 			<string>8.4</string>
 			<string>9.0</string>
+			<string>9.1</string>
 		</array>
 		<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-		<string>9.0</string>
+		<string>9.1</string>
 		<key>PLATFORM_NAME</key>
 		<string>iphonesimulator</string>
 		<key>PLATFORM_VERSION_AVAILABILITY_H_FORMAT</key>
-		<string>90000</string>
+		<string>90100</string>
 		<key>SUPPORTED_DEVICE_FAMILIES</key>
 		<string>1,2</string>
 	</dict>
 	<key>DisplayName</key>
-	<string>Simulator - iOS 9.0</string>
+	<string>Simulator - iOS 9.1</string>
 	<key>DocSetFeedName</key>
-	<string>iOS 9.0</string>
+	<string>iOS 9.1</string>
 	<key>DocSetFeedURL</key>
-	<string>http://developer.apple.com/rss/com.apple.adc.documentation.AppleiPhone9_0.atom</string>
+	<string>http://developer.apple.com/rss/com.apple.adc.documentation.AppleiPhone9_1.atom</string>
 	<key>IsBaseSDK</key>
 	<string>YES</string>
 	<key>MaximumDeploymentTarget</key>
-	<string>9.0.99</string>
+	<string>9.1.99</string>
 	<key>MinimalDisplayName</key>
-	<string>Simulator - 9.0</string>
+	<string>Simulator - 9.1</string>
 	<key>Toolchains</key>
 	<array>
-		<string>com.apple.dt.toolchain.iOS9_0</string>
+		<string>com.apple.dt.toolchain.iOS9_1</string>
 	</array>
 	<key>Version</key>
-	<string>9.0</string>
+	<string>9.1</string>
 </dict>
 </plist>

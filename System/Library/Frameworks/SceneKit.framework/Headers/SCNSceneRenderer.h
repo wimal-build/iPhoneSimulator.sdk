@@ -39,7 +39,7 @@ SCN_EXTERN NSString * const SCNHitTestIgnoreHiddenNodesKey NS_AVAILABLE(10_9, 8_
 /*!
  @enum SCNRenderingAPI
  @abstract rendering API used by SCNView and SCNRenderer.
- @discussion Default preferred API is SCNRenderingAPIMetal on iOS and SCNRenderingAPIOpenGLLegacy on OS X.
+ @discussion Default preferred API is SCNRenderingAPIMetal on iOS and it depends on the configuration on OS X.
  If Metal is requested but not available then it fallbacks to SCNRenderingAPIOpenGLES2 on iOS and to SCNRenderingAPIOpenGLLegacy on OS X.
  */
 typedef NS_ENUM(NSUInteger, SCNRenderingAPI) {

@@ -33,6 +33,9 @@
 #ifndef __MAC_10_11
 # define __MAC_10_11    101100
 #endif
+#ifndef __MAC_10_12
+# define __MAC_10_12    101200
+#endif
 
 /* The earliest iOS SDK we support is 7.0 */
 
@@ -56,6 +59,12 @@
 #endif
 #ifndef __IPHONE_9_0
 # define __IPHONE_9_0   90000
+#endif
+#ifndef __IPHONE_9_1
+# define __IPHONE_9_1   90100
+#endif
+#ifndef __IPHONE_9_2
+# define __IPHONE_9_2   90200
 #endif
 
 #ifdef CA_BUILDING_CA

@@ -145,7 +145,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  *
  */
 - (instancetype)initWithDelegate:(nullable id<CBPeripheralManagerDelegate>)delegate
-						   queue:(nullable dispatch_queue_t)queue;
+						   queue:(nullable dispatch_queue_t)queue __TVOS_PROHIBITED;
 
 /*!
  *  @method initWithDelegate:queue:options:
@@ -163,7 +163,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : NSObject
  */
 - (instancetype)initWithDelegate:(nullable id<CBPeripheralManagerDelegate>)delegate
 						   queue:(nullable dispatch_queue_t)queue
-						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER;
+						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
 
 /*!
  *  @method startAdvertising:

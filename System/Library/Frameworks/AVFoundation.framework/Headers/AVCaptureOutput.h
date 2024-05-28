@@ -33,7 +33,7 @@
     Concrete AVCaptureOutput instances can be added to an AVCaptureSession using the -[AVCaptureSession addOutput:] and
     -[AVCaptureSession addOutputWithNoConnections:] methods.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureOutput : NSObject
 {
 @private
@@ -162,7 +162,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     Instances of AVCaptureVideoDataOutput produce video frames suitable for processing using other media APIs.
     Applications can access the frames with the captureOutput:didOutputSampleBuffer:fromConnection: delegate method.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureVideoDataOutput : AVCaptureOutput 
 {
 @private
@@ -330,7 +330,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     Defines an interface for delegates of AVCaptureVideoDataOutput to receive captured video sample buffers and be
     notified of late sample buffers that were dropped.
 */
-
+__TVOS_PROHIBITED
 @protocol AVCaptureVideoDataOutputSampleBufferDelegate <NSObject>
 
 @optional
@@ -411,7 +411,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     Applications can access the sample buffers with the captureOutput:didOutputSampleBuffer:fromConnection: delegate
     method.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureAudioDataOutput : AVCaptureOutput 
 {
 @private
@@ -520,7 +520,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @abstract
     Defines an interface for delegates of AVCaptureAudioDataOutput to receive captured audio sample buffers.
 */
-
+__TVOS_PROHIBITED
 @protocol AVCaptureAudioDataOutputSampleBufferDelegate <NSObject>
 
 @optional
@@ -579,7 +579,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     The concrete subclasses of AVCaptureFileOutput are AVCaptureMovieFileOutput, which records media to a QuickTime movie
     file, and AVCaptureAudioFileOutput, which writes audio media to a variety of audio file formats.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureFileOutput : AVCaptureOutput 
 {
 @private
@@ -795,7 +795,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     Defines an interface for delegates of AVCaptureFileOutput to respond to events that occur in the process of recording
     a single file.
 */
-
+__TVOS_PROHIBITED
 @protocol AVCaptureFileOutputRecordingDelegate <NSObject>
 
 @optional
@@ -1033,7 +1033,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     options specific to the QuickTime file format, including allowing them to write metadata collections to each file,
     specify media encoding options for each track (Mac OS X), and specify an interval at which movie fragments should be written.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureMovieFileOutput : AVCaptureFileOutput
 {
 @private
@@ -1201,7 +1201,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     specific to the audio file formats, including allowing them to write metadata collections to each file and specify
     audio encoding options.
 */
-NS_CLASS_AVAILABLE(10_7, NA)
+NS_CLASS_AVAILABLE(10_7, NA) __TVOS_PROHIBITED
 @interface AVCaptureAudioFileOutput : AVCaptureFileOutput
 {
 @private
@@ -1297,7 +1297,7 @@ NS_CLASS_AVAILABLE(10_7, NA)
     captureStillImageAsynchronouslyFromConnection:completionHandler: method. Clients can also configure still image
     outputs to produce still images in specific image formats.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureStillImageOutput : AVCaptureOutput 
 {
 @private
@@ -1472,7 +1472,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @discussion
     AVCaptureBracketedStillImageSettings may not be instantiated directly.
 */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface AVCaptureBracketedStillImageSettings : NSObject
 @end
 
@@ -1491,7 +1491,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
     still image, you may pass the special value AVCaptureExposureDurationCurrent. To keep ISO unchanged, you may
     pass AVCaptureISOCurrent (see AVCaptureDevice.h).
 */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface AVCaptureManualExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
 
 + (instancetype)manualExposureSettingsWithExposureDuration:(CMTime)duration ISO:(float)ISO;
@@ -1515,7 +1515,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
     an AVCaptureStillImageOutput instance. If you wish to leave exposureTargetBias unchanged for this bracketed
     still image, you may pass the special value AVCaptureExposureTargetBiasCurrent (see AVCaptureDevice.h).
 */
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface AVCaptureAutoExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
 
 + (instancetype)autoExposureSettingsWithExposureTargetBias:(float)exposureTargetBias;
@@ -1660,7 +1660,7 @@ NS_CLASS_AVAILABLE_IOS(8_0)
     being captured by the capture session. The unique ID of a Core Audio device can be obtained from its
     kAudioDevicePropertyDeviceUID property.
 */
-NS_CLASS_AVAILABLE(10_7, NA)
+NS_CLASS_AVAILABLE(10_7, NA) __TVOS_PROHIBITED
 @interface AVCaptureAudioPreviewOutput : AVCaptureOutput 
 {
 @private
@@ -1707,7 +1707,7 @@ NS_CLASS_AVAILABLE(10_7, NA)
     as detected faces. Applications can access the metadata objects with the captureOutput:didOutputMetadataObjects:fromConnection: 
     delegate method.
 */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(NA, 6_0) __TVOS_PROHIBITED
 @interface AVCaptureMetadataOutput : AVCaptureOutput 
 {
 @private
@@ -1809,7 +1809,7 @@ NS_CLASS_AVAILABLE(NA, 6_0)
  @abstract
     Defines an interface for delegates of AVCaptureMetadataOutput to receive emitted objects.
 */
-
+__TVOS_PROHIBITED
 @protocol AVCaptureMetadataOutputObjectsDelegate <NSObject>
 
 @optional

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Data sources are responsible for providing metadata about your media to these
 /// systems in a meaningful way, so that features like user interfaces and play
 /// queues can be setup automatically.
-
+__TVOS_PROHIBITED
 @protocol MPPlayableContentDataSource <NSObject>
 @optional
 

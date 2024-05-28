@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, UIProgressViewStyle) {
     UIProgressViewStyleDefault,     // normal progress bar
-    UIProgressViewStyleBar,     // for use in a toolbar
+    UIProgressViewStyleBar __TVOS_PROHIBITED,     // for use in a toolbar
 };
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIProgressView : UIView <NSCoding>

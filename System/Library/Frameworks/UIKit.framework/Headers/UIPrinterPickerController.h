@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^UIPrinterPickerCompletionHandler)(UIPrinterPickerController *printerPickerController, BOOL userDidSelect, NSError * __nullable error);
 
-
+__TVOS_PROHIBITED
 @protocol UIPrinterPickerControllerDelegate <NSObject>
 @optional
 
@@ -42,7 +42,7 @@ typedef void (^UIPrinterPickerCompletionHandler)(UIPrinterPickerController *prin
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPrinterPickerController : NSObject
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPrinterPickerController : NSObject
 
 /*!
  *  @method     printerPickerControllerWithInitiallySelectedPrinter:

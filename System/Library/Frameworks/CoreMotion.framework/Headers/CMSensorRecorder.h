@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Discussion:
  *   CMRecordedAccelerometerData contains data for each accelerometer sample.
  */
-NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0)
+NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) __TVOS_PROHIBITED
 @interface CMRecordedAccelerometerData : CMAccelerometerData
 
 /*
@@ -51,7 +51,7 @@ NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0)
  *   Due to the large number of samples that can be processed, the
  *   enumeration should not be run on the main/UI thread.
  */
-NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0)
+NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) __TVOS_PROHIBITED
 @interface CMSensorDataList : NSObject<NSFastEnumeration>
 @end
 
@@ -64,7 +64,7 @@ NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0)
  *    available for later access (up to 3 days) when the application
  *    is run at a later time.
  */
-NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0)
+NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) __TVOS_PROHIBITED
 @interface CMSensorRecorder : NSObject
 
 /*

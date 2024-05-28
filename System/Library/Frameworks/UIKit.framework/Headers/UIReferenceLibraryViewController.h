@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(5_0)
+NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED
 @interface UIReferenceLibraryViewController : UIViewController {}
 
 /*! Returns YES if any installed dictionary has a definition for the provided term.

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// MPPlayableContentDataSource) and selects a content item to play. If the media
 /// player decides that it wants to play the item, it will ask the application's
 /// content delegate to initiate playback.
-
+__TVOS_PROHIBITED
 @protocol MPPlayableContentDelegate <NSObject>
 @optional
 
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithCompletionHandler:(void(^)(NSError * __nullable))completionHandler NS_AVAILABLE_IOS(9_0);
 
 /// This method is called when the content server notifies the manager that the current context has changed.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context NS_AVAILABLE_IOS(9_0);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context NS_AVAILABLE_IOS(8_4);
 
 @end
 

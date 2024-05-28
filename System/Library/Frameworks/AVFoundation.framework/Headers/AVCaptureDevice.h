@@ -25,7 +25,7 @@
  @discussion
     The notification object is an AVCaptureDevice instance representing the device that became available.
 */
-AVF_EXPORT NSString *const AVCaptureDeviceWasConnectedNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureDeviceWasConnectedNotification NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVCaptureDeviceWasDisconnectedNotification
@@ -35,7 +35,7 @@ AVF_EXPORT NSString *const AVCaptureDeviceWasConnectedNotification NS_AVAILABLE(
  @discussion
     The notification object is an AVCaptureDevice instance representing the device that became unavailable.
 */
-AVF_EXPORT NSString *const AVCaptureDeviceWasDisconnectedNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureDeviceWasDisconnectedNotification NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 /*!
  @constant  AVCaptureDeviceSubjectAreaDidChangeNotification
@@ -49,7 +49,7 @@ AVF_EXPORT NSString *const AVCaptureDeviceWasDisconnectedNotification NS_AVAILAB
 	to the video subject area.  This notification is only sent if you first set
 	subjectAreaChangeMonitoringEnabled to YES.
  */
-AVF_EXPORT NSString *const AVCaptureDeviceSubjectAreaDidChangeNotification NS_AVAILABLE_IOS(5_0);
+AVF_EXPORT NSString *const AVCaptureDeviceSubjectAreaDidChangeNotification NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
 
 @class AVCaptureDeviceFormat;
 #if TARGET_OS_MAC && ! (TARGET_OS_EMBEDDED || TARGET_OS_IPHONE || TARGET_OS_WIN32)
@@ -72,7 +72,7 @@ AVF_EXPORT NSString *const AVCaptureDeviceSubjectAreaDidChangeNotification NS_AV
     Instances of AVCaptureDevice can be used to provide media data to an AVCaptureSession by creating an
     AVCaptureDeviceInput with the device and adding that to the capture session.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureDevice : NSObject
 {
 @private
@@ -483,7 +483,7 @@ typedef NS_ENUM(NSInteger, AVCaptureDevicePosition) {
 	AVCaptureDevicePositionUnspecified         = 0,
 	AVCaptureDevicePositionBack                = 1,
 	AVCaptureDevicePositionFront               = 2
-} NS_AVAILABLE(10_7, 4_0);
+} NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDevicePosition)
 
@@ -516,7 +516,7 @@ typedef NS_ENUM(NSInteger, AVCaptureFlashMode) {
 	AVCaptureFlashModeOff  = 0,
 	AVCaptureFlashModeOn   = 1,
 	AVCaptureFlashModeAuto = 2
-} NS_AVAILABLE(10_7, 4_0);
+} NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDeviceFlash)
 
@@ -605,7 +605,7 @@ typedef NS_ENUM(NSInteger, AVCaptureTorchMode) {
 	AVCaptureTorchModeOff  = 0,
 	AVCaptureTorchModeOn   = 1,
 	AVCaptureTorchModeAuto = 2,
-} NS_AVAILABLE(10_7, 4_0);
+} NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 /*!
   @constant AVCaptureMaxAvailableTorchLevel
@@ -728,7 +728,7 @@ typedef NS_ENUM(NSInteger, AVCaptureFocusMode) {
 	AVCaptureFocusModeLocked              = 0,
 	AVCaptureFocusModeAutoFocus           = 1,
 	AVCaptureFocusModeContinuousAutoFocus = 2,
-} NS_AVAILABLE(10_7, 4_0);
+} NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 /*!
  @enum AVCaptureAutoFocusRangeRestriction
@@ -746,7 +746,7 @@ typedef NS_ENUM(NSInteger, AVCaptureAutoFocusRangeRestriction) {
 	AVCaptureAutoFocusRangeRestrictionNone = 0,
 	AVCaptureAutoFocusRangeRestrictionNear = 1,
 	AVCaptureAutoFocusRangeRestrictionFar  = 2,
-} NS_AVAILABLE_IOS(7_0);
+} NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDeviceFocus)
 
@@ -943,7 +943,7 @@ typedef NS_ENUM(NSInteger, AVCaptureExposureMode) {
 	AVCaptureExposureModeAutoExpose                        = 1,
 	AVCaptureExposureModeContinuousAutoExposure	           = 2,
 	AVCaptureExposureModeCustom NS_ENUM_AVAILABLE_IOS(8_0) = 3,
-} NS_AVAILABLE(10_7, 4_0);
+} NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDeviceExposure)
 
@@ -1199,7 +1199,7 @@ typedef NS_ENUM(NSInteger, AVCaptureWhiteBalanceMode) {
 	AVCaptureWhiteBalanceModeLocked				        = 0,
 	AVCaptureWhiteBalanceModeAutoWhiteBalance	        = 1,
     AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance = 2,
-} NS_AVAILABLE(10_7, 4_0);
+} NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 /*!
  @typedef	AVCaptureWhiteBalanceGains
@@ -1209,7 +1209,7 @@ typedef struct {
     float redGain;
     float greenGain;
     float blueGain;
-} AVCaptureWhiteBalanceGains NS_AVAILABLE_IOS(8_0);
+} AVCaptureWhiteBalanceGains NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /*!
  @typedef	AVCaptureWhiteBalanceChromaticityValues
@@ -1218,7 +1218,7 @@ typedef struct {
 typedef struct {
     float x;
     float y;
-} AVCaptureWhiteBalanceChromaticityValues NS_AVAILABLE_IOS(8_0);
+} AVCaptureWhiteBalanceChromaticityValues NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /*!
  @typedef	AVCaptureWhiteBalanceTemperatureAndTintValues
@@ -1227,7 +1227,7 @@ typedef struct {
 typedef struct {
 	float temperature;
 	float tint;
-} AVCaptureWhiteBalanceTemperatureAndTintValues NS_AVAILABLE_IOS(8_0);
+} AVCaptureWhiteBalanceTemperatureAndTintValues NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDeviceWhiteBalance)
 
@@ -1598,7 +1598,7 @@ typedef NS_ENUM(NSInteger, AVAuthorizationStatus) {
 	AVAuthorizationStatusRestricted,
 	AVAuthorizationStatusDenied,
 	AVAuthorizationStatusAuthorized
-} NS_AVAILABLE_IOS(7_0);
+} NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 		
 @interface AVCaptureDevice (AVCaptureDeviceAuthorization)
 
@@ -1668,7 +1668,7 @@ typedef float AVCaptureDeviceTransportControlsSpeed;
 typedef NS_ENUM(NSInteger, AVCaptureDeviceTransportControlsPlaybackMode) {
 	AVCaptureDeviceTransportControlsNotPlayingMode      = 0,
 	AVCaptureDeviceTransportControlsPlayingMode         = 1
-} NS_AVAILABLE(10_7, NA);
+} NS_AVAILABLE(10_7, NA) __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDeviceTransportControls)
 
@@ -1791,7 +1791,7 @@ typedef NS_ENUM(NSInteger, AVCaptureDeviceTransportControlsPlaybackMode) {
     AVFrameRateRange expresses min and max frame rate as a rate in frames per second and
     duration (CMTime).  An AVFrameRateRange object is immutable.  Its values do not change for the life of the object.
 */
-NS_CLASS_AVAILABLE(10_7, 7_0)
+NS_CLASS_AVAILABLE(10_7, 7_0) __TVOS_PROHIBITED
 @interface AVFrameRateRange : NSObject
 {
 @private
@@ -1872,7 +1872,7 @@ typedef NS_ENUM(NSInteger, AVCaptureVideoStabilizationMode) {
     AVCaptureVideoStabilizationModeStandard	 = 1,
     AVCaptureVideoStabilizationModeCinematic = 2,
     AVCaptureVideoStabilizationModeAuto      = -1,
-} NS_AVAILABLE_IOS(8_0);
+} NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /*!
  @enum AVCaptureAutoFocusSystem
@@ -1893,7 +1893,7 @@ typedef NS_ENUM(NSInteger, AVCaptureAutoFocusSystem) {
 	AVCaptureAutoFocusSystemNone              = 0,
 	AVCaptureAutoFocusSystemContrastDetection = 1,
 	AVCaptureAutoFocusSystemPhaseDetection    = 2,
-} NS_AVAILABLE_IOS(8_0);
+} NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 
 @class AVCaptureDeviceFormatInternal;
@@ -1912,7 +1912,7 @@ typedef NS_ENUM(NSInteger, AVCaptureAutoFocusSystem) {
     CMFormatDescription, such as min and max frame rate.  An AVCaptureDeviceFormat object is immutable.
     Its values do not change for the life of the object.
 */
-NS_CLASS_AVAILABLE(10_7, 7_0)
+NS_CLASS_AVAILABLE(10_7, 7_0) __TVOS_PROHIBITED
 @interface AVCaptureDeviceFormat : NSObject
 {
 @private
@@ -2121,7 +2121,7 @@ NS_CLASS_AVAILABLE(10_7, 7_0)
     and analog input sources.  A video AVCaptureDevice might have an HDMI input source, or a component 
     input source.
 */
-NS_CLASS_AVAILABLE(10_7, NA)
+NS_CLASS_AVAILABLE(10_7, NA) __TVOS_PROHIBITED
 @interface AVCaptureDeviceInputSource : NSObject
 {
 @private

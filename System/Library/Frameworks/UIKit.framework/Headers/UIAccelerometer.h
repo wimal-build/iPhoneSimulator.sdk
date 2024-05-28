@@ -17,7 +17,7 @@ typedef double UIAccelerationValue;
 
 @protocol UIAccelerometerDelegate;
 
-NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAcceleration has been replaced by the CoreMotion framework")
+NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAcceleration has been replaced by the CoreMotion framework") __TVOS_PROHIBITED
 @interface UIAcceleration : NSObject
 
 @property(nonatomic,readonly) NSTimeInterval timestamp;
@@ -27,7 +27,7 @@ NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAcceleration has been replaced by the CoreM
 
 @end
 
-NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the CoreMotion framework")
+NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the CoreMotion framework") __TVOS_PROHIBITED
 @interface UIAccelerometer : NSObject 
 
 + (UIAccelerometer *)sharedAccelerometer;
@@ -37,11 +37,11 @@ NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the Core
 
 @end
 
-
+ __TVOS_PROHIBITED
 @protocol UIAccelerometerDelegate<NSObject>
 @optional
 
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration NS_DEPRECATED_IOS(2_0, 5_0);
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration NS_DEPRECATED_IOS(2_0, 5_0)  __TVOS_PROHIBITED;
 
 @end
 

@@ -31,9 +31,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 
 // Reorder items. This will display a sheet with all the items listed, allow the user to change/reorder items and shows a 'Done' button at the top
 
-- (void)beginCustomizingItems:(NSArray<UITabBarItem *> *)items;   // list all items that can be reordered. always animates a sheet up. visible items not listed are fixed in place
-- (BOOL)endCustomizingAnimated:(BOOL)animated;    // hide customization sheet. normally you should let the user do it. check list of items to see new layout. returns YES if layout changed
-- (BOOL)isCustomizing;
+- (void)beginCustomizingItems:(NSArray<UITabBarItem *> *)items __TVOS_PROHIBITED;   // list all items that can be reordered. always animates a sheet up. visible items not listed are fixed in place
+- (BOOL)endCustomizingAnimated:(BOOL)animated __TVOS_PROHIBITED;    // hide customization sheet. normally you should let the user do it. check list of items to see new layout. returns YES if layout changed
+- (BOOL)isCustomizing __TVOS_PROHIBITED;
 
 /*
  The behavior of tintColor for bars has changed on iOS 7.0. It no longer affects the bar's background
@@ -51,7 +51,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
  Deprecated in iOS 8.0. On iOS 7.0 and later the selected image takes its color from the
  inherited tintColor of the UITabBar, which may be set separately if necessary.
  */
-@property(nullable,nonatomic,strong) UIColor *selectedImageTintColor NS_DEPRECATED_IOS(5_0,8_0,"Use tintColor") UI_APPEARANCE_SELECTOR;
+@property(nullable,nonatomic,strong) UIColor *selectedImageTintColor NS_DEPRECATED_IOS(5_0,8_0,"Use tintColor") UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 
 /* The background image will be tiled to fit, even if it was not created via the UIImage resizableImage methods.
  */
@@ -75,7 +75,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
     Use UITabBarItemPositioningCenter to force the items to center with a default
  width (or the itemWidth, if set).
  */
-@property(nonatomic) UITabBarItemPositioning itemPositioning NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;
+@property(nonatomic) UITabBarItemPositioning itemPositioning NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 
 /*
  Set the itemWidth to a positive value to be used as the width for tab bar items
@@ -94,7 +94,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 /*
  Valid bar styles are UIBarStyleDefault (default) and UIBarStyleBlack.
  */
-@property(nonatomic) UIBarStyle barStyle NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;
+@property(nonatomic) UIBarStyle barStyle NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 
 /*
  Default is YES.
@@ -122,10 +122,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
  it will be set to nil.
  */
 
-- (void)tabBar:(UITabBar *)tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *)items;                     // called before customize sheet is shown. items is current item list
-- (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray<UITabBarItem *> *)items;                      // called after customize sheet is shown. items is current item list
-- (void)tabBar:(UITabBar *)tabBar willEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed; // called before customize sheet is hidden. items is new item list
-- (void)tabBar:(UITabBar *)tabBar didEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed;  // called after customize sheet is hidden. items is new item list
+- (void)tabBar:(UITabBar *)tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *)items __TVOS_PROHIBITED;                     // called before customize sheet is shown. items is current item list
+- (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray<UITabBarItem *> *)items __TVOS_PROHIBITED;                      // called after customize sheet is shown. items is current item list
+- (void)tabBar:(UITabBar *)tabBar willEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed __TVOS_PROHIBITED; // called before customize sheet is hidden. items is new item list
+- (void)tabBar:(UITabBar *)tabBar didEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed __TVOS_PROHIBITED;  // called after customize sheet is hidden. items is new item list
 
 @end
 

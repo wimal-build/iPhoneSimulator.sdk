@@ -39,11 +39,11 @@ typedef NS_ENUM(NSUInteger, UISearchBarStyle) {
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning, UITextInputTraits>
 
-- (instancetype)init;
-- (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (instancetype)init __TVOS_PROHIBITED;
+- (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
 
-@property(nonatomic)        UIBarStyle              barStyle;              // default is UIBarStyleDefault (blue)
+@property(nonatomic)        UIBarStyle              barStyle __TVOS_PROHIBITED;              // default is UIBarStyleDefault (blue)
 @property(nullable,nonatomic,weak) id<UISearchBarDelegate> delegate;              // weak reference. default is nil
 @property(nullable,nonatomic,copy)   NSString               *text;                  // current/starting search text
 @property(nullable,nonatomic,copy)   NSString               *prompt;                // default is nil
@@ -57,7 +57,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISearchBar : UIView <UIBarPositioning, U
 /// Use this method to modify the contents of the Unified Content Bar, shown on top of the keyboard when search is engaged.
 /// You may modify the returned inputAssistantItem to add to or replace the existing items on the bar.
 /// Modifications made to the returned UITextInputAssistantItem are reflected automatically.
-@property (nonatomic, readonly, strong) UITextInputAssistantItem *inputAssistantItem NS_AVAILABLE_IOS(9_0) __WATCHOS_PROHIBITED;
+@property (nonatomic, readonly, strong) UITextInputAssistantItem *inputAssistantItem NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*
  The behavior of tintColor for bars has changed on iOS 7.0. It no longer affects the bar's background

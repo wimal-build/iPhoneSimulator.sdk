@@ -13,6 +13,9 @@
 #import <UIKit/UIDynamicBehavior.h>
 #import <UIKit/NSLayoutConstraint.h>
 #import <UIKit/UITraitCollection.h>
+#ifndef SDK_HIDE_TIDE
+#import <UIKit/UIFocus.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -137,7 +140,11 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceLayoutDirection) {
 
 @class UIBezierPath, UIEvent, UIWindow, UIViewController, UIColor, UIGestureRecognizer, UIMotionEffect, CALayer, UILayoutGuide;
 
+#ifndef SDK_HIDE_TIDE
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem, UITraitEnvironment, UICoordinateSpace, UIFocusEnvironment>
+#else
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppearance, UIAppearanceContainer, UIDynamicItem, UITraitEnvironment, UICoordinateSpace>
+#endif
 
 + (Class)layerClass;                        // default is [CALayer class]. Used when creating the underlying layer for the view.
 
@@ -148,6 +155,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 @property(nonatomic)                                 NSInteger tag;                // default is 0
 @property(nonatomic,readonly,strong)                 CALayer  *layer;              // returns view's layer. Will always return a non-nil value. view is layer's delegate
 
+#ifndef SDK_HIDE_TIDE
+- (BOOL)canBecomeFocused NS_AVAILABLE_IOS(9_0); // NO by default
+@property (readonly, nonatomic, getter=isFocused) BOOL focused NS_AVAILABLE_IOS(9_0);
+#endif
 + (UIUserInterfaceLayoutDirection)userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute)attribute NS_AVAILABLE_IOS(9_0);
 @property (nonatomic) UISemanticContentAttribute semanticContentAttribute NS_AVAILABLE_IOS(9_0);
 @end
@@ -163,8 +174,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 @property(nonatomic) CGAffineTransform transform;   // default is CGAffineTransformIdentity. animatable
 @property(nonatomic) CGFloat           contentScaleFactor NS_AVAILABLE_IOS(4_0);
 
-@property(nonatomic,getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled;   // default is NO
-@property(nonatomic,getter=isExclusiveTouch) BOOL       exclusiveTouch;         // default is NO
+@property(nonatomic,getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled __TVOS_PROHIBITED;   // default is NO
+@property(nonatomic,getter=isExclusiveTouch) BOOL       exclusiveTouch __TVOS_PROHIBITED;         // default is NO
 
 - (nullable UIView *)hitTest:(CGPoint)point withEvent:(nullable UIEvent *)event;   // recursively calls -pointInside:withEvent:. point is in the receiver's coordinate system
 - (BOOL)pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event;   // default returns YES if point is in bounds
@@ -208,7 +219,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 - (void)didMoveToWindow;
 
 - (BOOL)isDescendantOfView:(UIView *)view;  // returns YES for self.
-- (nullable UIView *)viewWithTag:(NSInteger)tag;     // recursive search. includes self
+- (nullable __kindof UIView *)viewWithTag:(NSInteger)tag; // recursive search. includes self
 
 // Allows you to perform layout before the drawing cycle happens. -layoutIfNeeded forces layout early
 - (void)setNeedsLayout;
@@ -247,7 +258,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 @property(nonatomic)                 BOOL              clearsContextBeforeDrawing; // default is YES. ignored for opaque views. for non-opaque views causes the active CGContext in drawRect: to be pre-filled with transparent pixels
 @property(nonatomic,getter=isHidden) BOOL              hidden;                     // default is NO. doesn't check superviews
 @property(nonatomic)                 UIViewContentMode contentMode;                // default is UIViewContentModeScaleToFill
-@property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle {{0,0} {1,1}}. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
+@property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0) __TVOS_PROHIBITED; // animatable. default is unit rectangle {{0,0} {1,1}}. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
 
 @property(nullable, nonatomic,strong)          UIView           *maskView NS_AVAILABLE_IOS(8_0);
 
@@ -441,7 +452,7 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
  */
 - (UIEdgeInsets)alignmentRectInsets NS_AVAILABLE_IOS(6_0);
 
-- (UIView *)viewForBaselineLayout NS_DEPRECATED_IOS(6_0, 9_0, "Override -viewForFirstBaselineLayout or -viewForLastBaselineLayout as appropriate, instead");
+- (UIView *)viewForBaselineLayout NS_DEPRECATED_IOS(6_0, 9_0, "Override -viewForFirstBaselineLayout or -viewForLastBaselineLayout as appropriate, instead") __TVOS_PROHIBITED;
 
 /* -viewForFirstBaselineLayout is called by the constraints system when interpreting
  the firstBaseline attribute for a view.

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UIVideoEditorControllerDelegate;
 
-NS_CLASS_AVAILABLE_IOS(3_1) @interface UIVideoEditorController : UINavigationController
+NS_CLASS_AVAILABLE_IOS(3_1) __TVOS_PROHIBITED @interface UIVideoEditorController : UINavigationController
 
 + (BOOL)canEditVideoAtPath:(NSString *)videoPath NS_AVAILABLE_IOS(3_1);
 
@@ -26,7 +26,7 @@ NS_CLASS_AVAILABLE_IOS(3_1) @interface UIVideoEditorController : UINavigationCon
 
 @end
 
- @protocol UIVideoEditorControllerDelegate<NSObject>
+__TVOS_PROHIBITED @protocol UIVideoEditorControllerDelegate<NSObject>
 @optional
 // The editor does not dismiss itself; the client dismisses it in these callbacks.
 // The delegate will receive exactly one of the following callbacks, depending whether the user

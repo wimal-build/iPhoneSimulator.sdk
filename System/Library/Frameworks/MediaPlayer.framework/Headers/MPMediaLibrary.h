@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaLibrary : NSObject <NSSecureCoding>
 
 + (MPMediaLibrary *)defaultMediaLibrary;
@@ -41,6 +41,6 @@ MP_EXTERN_CLASS_AVAILABLE(3_0)
 // Notifications
 
 // Any items or playlists which were previously cached should be re-evaluated from queries when MPMediaLibraryDidChangeNotification is posted.
-MP_EXTERN NSString * const MPMediaLibraryDidChangeNotification;
+MP_EXTERN __TVOS_PROHIBITED NSString * const MPMediaLibraryDidChangeNotification;
 
 NS_ASSUME_NONNULL_END

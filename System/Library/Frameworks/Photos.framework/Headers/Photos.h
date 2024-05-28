@@ -13,6 +13,7 @@
 
 #import <Photos/PHObject.h>
 #import <Photos/PHAsset.h>
+#import <Photos/PHLivePhoto.h>
 #import <Photos/PHCollection.h>
 
 #import <Photos/PHFetchOptions.h>

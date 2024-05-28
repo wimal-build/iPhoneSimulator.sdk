@@ -6,27 +6,27 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Uy7i5IznZQ88YmDO95bV0vSXues=
+		3Iw0GkPtqCaz1EPHa17jd2rbDCI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J8KbyvsK7WHSJj61UoVSv7vePpU=
+		xDZUIbth3WB7zSHrCswqxMskdX0=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/Assets.car</key>
 		<data>
-		JTrOghTfzndYOTyTWTTcmuCmmCc=
+		USejH6YfiXztQZf+L/TMtFaENz0=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/BatteryWidget</key>
 		<data>
-		5i6HfvLwuXGNp7vaRpWn1SR9OtU=
+		nue4hZxIzq5QMNNA5bT4Wr8vDcM=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/Info.plist</key>
 		<data>
-		w5PGxJok4mEqHiHNvdEF/f9IKeg=
+		CbxDhGwRyIuR66qDQYxiFOUxmr8=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/_CodeSignature/CodeResources</key>
 		<data>
-		Lz8Irj1hHy9qA6uF8/NUeoFjfAA=
+		NuiAxyyZbP4WW66CKGa0R/DlMWk=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -383,7 +383,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			clZPumjyumEeOtrX0kyn0bjcag0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -397,6 +406,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>batteryglyphs_b222-RFB@2x.png</key>
+		<data>
+		QNTBl5InEkuBI2G7RQMfvpHOOqk=
+		</data>
 		<key>batteryglyphs_b244_RC_HIDE_HARDWARE_JUNE_2015@2x.png</key>
 		<data>
 		C9bVkDVE6nrDLy/Ow8HdAtKhkBQ=
@@ -405,7 +418,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W34H9ddOkedTqPBooahdIICgu78=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -428,6 +450,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -441,7 +472,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s0c66L7M/NKmRWA55EqKlXR4OEc=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -464,6 +504,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -477,7 +526,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YmsVI0D/3GP+XjpHEJLgIK7Zrwg=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -500,6 +558,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -514,6 +581,15 @@
 			<key>hash</key>
 			<data>
 			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -536,6 +612,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -549,7 +634,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xB0CTNx5XIzD51p/X/7gpexhlS8=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -567,7 +661,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n6OWYHVWoslNO1iHqlp0PYE9Wug=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -585,7 +688,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			twIMKymh2EGYDU3ggDrU7QlwKJo=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -603,7 +715,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N2qpuuM+4RkxAeC8BHBAJKaNGbg=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -621,7 +742,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1DQMUHK86ZnMqJvbEureUd3qAls=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -639,7 +769,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U2tSpZEjolbcazak7wUvfIobIbA=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -657,7 +796,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BnXV7M9hlay6wq3e94fEN9UIOE8=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -675,7 +823,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tj4eehUQ+W2EDkftyQMyqazQFe4=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -693,7 +850,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kf+02gJHFY0SfcipiIzS37tJ3j0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -711,7 +877,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2rNDP7bb5h8jyHarFltr2jakc7Y=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -729,7 +904,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wHvFg31dQ1duhypjogYsgjN8ND0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -747,7 +931,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+RurDTIj9tSYSkOkBa0X2Zcx9mM=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -765,7 +958,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GYnLZbmRxN0h2fuk9GB3GrzP0HI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -783,7 +985,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/fBIEUOmwTXog1xu8QNQkeEgNQY=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -801,7 +1012,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2K+3AJzCXZM5HYm/uLK6cwKEZZ4=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -819,7 +1039,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FkEl3IemY45YaXtCndnO+rBTNVA=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -837,7 +1066,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pIePf90UCvk5/U78js0XCch9mFI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -855,7 +1093,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClACnHdlacCkCd1GbX39opfTFvQ=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -873,7 +1120,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClACnHdlacCkCd1GbX39opfTFvQ=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -891,7 +1147,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9eXE/zgiknRlG1MyQhKXhUzY5iI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -909,7 +1174,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JqEyX13CKoxiUILj2HQGYiz5lV0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -927,7 +1201,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DS7lgUthPNsz+u2AAR4Zwr3ehwI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -945,7 +1228,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IzL01LJe1iWQy5dgPr0HUoyxbE4=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -963,7 +1255,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JfFre98H/p6QpN38pRZuEigBRa8=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -981,7 +1282,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QVkEKE7OtdckfOH+D5/DUmyzDoU=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1004,6 +1314,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1017,7 +1336,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Iby/NvYiQWyqGSek6jwWmhRsQs=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1035,7 +1363,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/bdMGE79qwvik2rLYXyKkBr8SKg=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1053,7 +1390,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n5Zzre17+aifXXsjPElHw6y/0W0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1071,7 +1417,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zrhNR+gzwX9IL034GPlCxx2J2QQ=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1090,23 +1445,23 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Uy7i5IznZQ88YmDO95bV0vSXues=
+		3Iw0GkPtqCaz1EPHa17jd2rbDCI=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/Assets.car</key>
 		<data>
-		JTrOghTfzndYOTyTWTTcmuCmmCc=
+		USejH6YfiXztQZf+L/TMtFaENz0=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/BatteryWidget</key>
 		<data>
-		5i6HfvLwuXGNp7vaRpWn1SR9OtU=
+		nue4hZxIzq5QMNNA5bT4Wr8vDcM=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/Info.plist</key>
 		<data>
-		w5PGxJok4mEqHiHNvdEF/f9IKeg=
+		CbxDhGwRyIuR66qDQYxiFOUxmr8=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/_CodeSignature/CodeResources</key>
 		<data>
-		Lz8Irj1hHy9qA6uF8/NUeoFjfAA=
+		NuiAxyyZbP4WW66CKGa0R/DlMWk=
 		</data>
 		<key>PlugIns/BatteryWidget.appex/ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1463,7 +1818,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			clZPumjyumEeOtrX0kyn0bjcag0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1477,6 +1841,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>batteryglyphs_b222-RFB@2x.png</key>
+		<data>
+		QNTBl5InEkuBI2G7RQMfvpHOOqk=
+		</data>
 		<key>batteryglyphs_b244_RC_HIDE_HARDWARE_JUNE_2015@2x.png</key>
 		<data>
 		C9bVkDVE6nrDLy/Ow8HdAtKhkBQ=
@@ -1485,7 +1853,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W34H9ddOkedTqPBooahdIICgu78=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1508,6 +1885,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1521,7 +1907,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s0c66L7M/NKmRWA55EqKlXR4OEc=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1544,6 +1939,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>de.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1557,7 +1961,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YmsVI0D/3GP+XjpHEJLgIK7Zrwg=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1580,6 +1993,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1594,6 +2016,15 @@
 			<key>hash</key>
 			<data>
 			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1616,6 +2047,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1629,7 +2069,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xB0CTNx5XIzD51p/X/7gpexhlS8=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1647,7 +2096,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n6OWYHVWoslNO1iHqlp0PYE9Wug=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_MX.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1665,7 +2123,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			twIMKymh2EGYDU3ggDrU7QlwKJo=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1683,7 +2150,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N2qpuuM+4RkxAeC8BHBAJKaNGbg=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1701,7 +2177,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1DQMUHK86ZnMqJvbEureUd3qAls=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1719,7 +2204,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U2tSpZEjolbcazak7wUvfIobIbA=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1737,7 +2231,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BnXV7M9hlay6wq3e94fEN9UIOE8=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1755,7 +2258,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tj4eehUQ+W2EDkftyQMyqazQFe4=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1773,7 +2285,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kf+02gJHFY0SfcipiIzS37tJ3j0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1791,7 +2312,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2rNDP7bb5h8jyHarFltr2jakc7Y=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1809,7 +2339,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wHvFg31dQ1duhypjogYsgjN8ND0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1827,7 +2366,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+RurDTIj9tSYSkOkBa0X2Zcx9mM=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1845,7 +2393,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GYnLZbmRxN0h2fuk9GB3GrzP0HI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1863,7 +2420,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/fBIEUOmwTXog1xu8QNQkeEgNQY=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1881,7 +2447,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2K+3AJzCXZM5HYm/uLK6cwKEZZ4=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1899,7 +2474,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FkEl3IemY45YaXtCndnO+rBTNVA=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1917,7 +2501,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pIePf90UCvk5/U78js0XCch9mFI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1935,7 +2528,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClACnHdlacCkCd1GbX39opfTFvQ=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1953,7 +2555,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClACnHdlacCkCd1GbX39opfTFvQ=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1971,7 +2582,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9eXE/zgiknRlG1MyQhKXhUzY5iI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1989,7 +2609,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JqEyX13CKoxiUILj2HQGYiz5lV0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2007,7 +2636,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DS7lgUthPNsz+u2AAR4Zwr3ehwI=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2025,7 +2663,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IzL01LJe1iWQy5dgPr0HUoyxbE4=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2043,7 +2690,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JfFre98H/p6QpN38pRZuEigBRa8=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2061,7 +2717,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QVkEKE7OtdckfOH+D5/DUmyzDoU=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2084,6 +2749,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>uk.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>uk.lproj/BatteryCenter.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2097,7 +2771,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Iby/NvYiQWyqGSek6jwWmhRsQs=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2115,7 +2798,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/bdMGE79qwvik2rLYXyKkBr8SKg=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2133,7 +2825,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n5Zzre17+aifXXsjPElHw6y/0W0=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2151,7 +2852,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zrhNR+gzwX9IL034GPlCxx2J2QQ=
+			yRhoqo9qSRsYOWBBrZ1kzBMope4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/BatteryCenter-RFB.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZVGAGOx7E/6Ndo/fvORM3gNEZqo=
 			</data>
 			<key>optional</key>
 			<true/>

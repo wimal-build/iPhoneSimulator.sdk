@@ -88,6 +88,10 @@
 
 #import <UIKit/UIApplicationShortcutItem.h>
 #import <UIKit/UIUserNotificationSettings.h>
+#ifndef SDK_HIDE_TIDE
+#import <UIKit/UIFocus.h>
+#import <UIKit/UIFocusAnimationCoordinator.h>
+#endif
 #import <UIKit/UILocalizedIndexedCollation.h>
 #import <UIKit/UILongPressGestureRecognizer.h>
 #import <UIKit/UIManagedDocument.h>
@@ -106,6 +110,10 @@
 #import <UIKit/UIPinchGestureRecognizer.h>
 #import <UIKit/UIPopoverController.h>
 #import <UIKit/UIPopoverBackgroundView.h>
+#ifndef SDK_HIDE_TIDE
+#import <UIKit/UIPress.h>
+#import <UIKit/UIPressesEvent.h>
+#endif
 #import <UIKit/UIPrinter.h>
 #import <UIKit/UIPrinterPickerController.h>
 #import <UIKit/UIPrintError.h>
@@ -124,6 +132,7 @@
 #import <UIKit/UIScreenMode.h>
 #import <UIKit/UIScrollView.h>
 #import <UIKit/UISearchBar.h>
+#import <UIKit/UISearchContainerViewController.h>
 #import <UIKit/UISearchController.h>
 #import <UIKit/UISearchDisplayController.h>
 #import <UIKit/UISegmentedControl.h>

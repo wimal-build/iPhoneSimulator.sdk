@@ -64,8 +64,8 @@ typedef NS_OPTIONS(NSInteger, NSStringDrawingOptions) {
 
 /************************ Deprecated ************************/
 @interface NSStringDrawingContext (NSStringDrawingContextDeprecated)
-@property(nonatomic) CGFloat minimumTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0);
-@property(nonatomic, readonly) CGFloat actualTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0);
+@property(nonatomic) CGFloat minimumTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+@property(nonatomic, readonly) CGFloat actualTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
 @end
 
 NS_ASSUME_NONNULL_END

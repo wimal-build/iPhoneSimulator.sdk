@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CORESPOTLIGHT_EXPORT NSString * const CSIndexErrorDomain CS_AVAILABLE(NA, 9_0);
+CORESPOTLIGHT_EXPORT NSString * const CSIndexErrorDomain CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
 
 typedef NS_ENUM(NSInteger, CSIndexErrorCode) {
     CSIndexErrorCodeUnknownError =                               -1,
@@ -20,11 +20,12 @@ typedef NS_ENUM(NSInteger, CSIndexErrorCode) {
     CSIndexErrorCodeRemoteConnectionError =                   -1003, //There was an error trying to communicate with the remote process
     CSIndexErrorCodeQuotaExceeded =                           -1004, //Quota for bundle was exceeded
     CSIndexErrorCodeIndexingUnsupported =                     -1005, //Indexing isn't supported on this device
-} CS_AVAILABLE(NA, 9_0);
+} CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
 
 @protocol CSSearchableIndexDelegate;
 
 CS_CLASS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 @interface CSSearchableIndex : NSObject
 
 @property (weak,nullable) id<CSSearchableIndexDelegate> indexDelegate;
@@ -83,6 +84,7 @@ CS_CLASS_AVAILABLE(NA, 9_0)
 //Alternatively, an app can provide an extension whose request handler conforms to this protocol and the extension will be called if the app isn't running.
 
 CS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 @protocol CSSearchableIndexDelegate <NSObject>
 
 @required

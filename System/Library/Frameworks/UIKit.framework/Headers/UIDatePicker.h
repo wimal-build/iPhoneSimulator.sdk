@@ -16,9 +16,9 @@ typedef NS_ENUM(NSInteger, UIDatePickerMode) {
     UIDatePickerModeDate,           // Displays month, day, and year depending on the locale setting (e.g. November | 15 | 2007)
     UIDatePickerModeDateAndTime,    // Displays date, hour, minute, and optionally AM/PM designation depending on the locale setting (e.g. Wed Nov 15 | 6 | 53 | PM)
     UIDatePickerModeCountDownTimer, // Displays hour and minute (e.g. 1 | 53)
-};
+} __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDatePicker : UIControl <NSCoding>
+NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIDatePicker : UIControl <NSCoding>
 @property (nonatomic) UIDatePickerMode datePickerMode; // default is UIDatePickerModeDateAndTime
 
 @property (nullable, nonatomic, strong) NSLocale   *locale;   // default is [NSLocale currentLocale]. setting nil returns to default

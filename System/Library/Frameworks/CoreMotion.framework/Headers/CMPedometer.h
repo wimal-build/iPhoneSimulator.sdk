@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  *      object contains a step count. On supported platforms it also contains
  *      distance, flights of stairs, pace, and cadence.
  */
-NS_CLASS_AVAILABLE(NA, 8_0)
+NS_CLASS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED
 @interface CMPedometerData : NSObject <NSSecureCoding, NSCopying>
 
 /*
@@ -117,7 +117,7 @@ NS_CLASS_AVAILABLE(NA, 8_0)
  *      Typedef of block to be invoked when pedometer data is available. Error
  *      types are defined in "CMError.h".
  */
-typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error);
+typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error) __TVOS_PROHIBITED;
 
 /*
  *  CMPedometer
@@ -135,7 +135,7 @@ typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, N
  *      updates can be stopped by calling stopPedometerUpdates.
  *
  */
-NS_CLASS_AVAILABLE(NA,8_0)
+NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
 @interface CMPedometer : NSObject
 
 /*

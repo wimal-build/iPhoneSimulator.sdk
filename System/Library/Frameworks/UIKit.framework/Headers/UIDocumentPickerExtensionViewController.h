@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIDocumentPickerExtensionViewController : UIViewController
+NS_CLASS_AVAILABLE_IOS(8_0)  __TVOS_PROHIBITED @interface UIDocumentPickerExtensionViewController : UIViewController
 
 // The preconditions for the URL passed to dismissGrantingAccessToURL: vary depending on the document picker mode.
 // In Import mode, any URL that the extension has access to is valid.

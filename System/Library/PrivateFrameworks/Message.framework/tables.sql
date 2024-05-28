@@ -106,3 +106,10 @@ CREATE TABLE offline_cache_replay_data (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
                                         account_id INTEGER,
                                         replay_data);
 CREATE INDEX offline_cache_replay_data_account_index ON offline_cache_operations(account_id, ROWID ASC);
+
+CREATE TABLE spotlight_tombstones (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+                                   type INTEGER,
+                                   identifier TEXT,
+                                   transaction_id INTEGER,
+                                   UNIQUE(type, identifier));
+CREATE INDEX spotlight_tombstones_transaction_index ON spotlight_tombstones(transaction_id, type, identifier);

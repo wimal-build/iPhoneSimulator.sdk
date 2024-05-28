@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIPrintFormatter;
 
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintPageRenderer : NSObject
+NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintPageRenderer : NSObject
 
 @property(nonatomic) CGFloat   headerHeight;   // top of contentRect from printableRect
 @property(nonatomic) CGFloat   footerHeight;   // bottom of contentRect from printableRect

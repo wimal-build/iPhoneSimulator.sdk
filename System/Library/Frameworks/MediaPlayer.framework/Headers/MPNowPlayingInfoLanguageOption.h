@@ -55,6 +55,11 @@ MP_EXTERN_CLASS_AVAILABLE(9_0)
 /// See AVPlayerItem-selectMediaOptionAutomaticallyInMediaSelectionGroup
 - (BOOL)isAutomaticLegibleLanguageOption;
 
+/// Represents a special case that is used to
+/// represent the best audible language option based on system preferences.
+/// See AVPlayerItem-selectMediaOptionAutomaticallyInMediaSelectionGroup
+- (BOOL)isAutomaticAudibleLanguageOption;
+
 /// The type of language option.
 @property (nonatomic, readonly) MPNowPlayingInfoLanguageOptionType languageOptionType;
 

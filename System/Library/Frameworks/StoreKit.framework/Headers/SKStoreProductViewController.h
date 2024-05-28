@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SKStoreProductViewControllerDelegate;
 
 /* View controller to display iTunes Store product information */
-SK_EXTERN_CLASS_AVAILABLE(6_0) @interface SKStoreProductViewController : UIViewController
+SK_EXTERN_CLASS_AVAILABLE(6_0) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController
 
 // Delegate for product page events
 @property(nonatomic, assign, nullable) id <SKStoreProductViewControllerDelegate> delegate NS_AVAILABLE_IOS(6_0);
@@ -30,7 +30,7 @@ SK_EXTERN_CLASS_AVAILABLE(6_0) @interface SKStoreProductViewController : UIViewC
 @optional
 
 // Sent if the user requests that the page be dismissed
-- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController NS_AVAILABLE_IOS(6_0);
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController __TVOS_PROHIBITED NS_AVAILABLE_IOS(6_0);
 
 @end
 

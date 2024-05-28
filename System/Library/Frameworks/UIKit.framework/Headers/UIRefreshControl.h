@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
     
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UIRefreshControl : UIControl
+NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIRefreshControl : UIControl
 
 /* The designated initializer
  * This initializes a UIRefreshControl with a default height and width.

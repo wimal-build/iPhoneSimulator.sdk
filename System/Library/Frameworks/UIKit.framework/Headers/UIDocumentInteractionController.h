@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIImage, UIView, UIPopoverController;
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UIDocumentInteractionController : NSObject <UIActionSheetDelegate>
+NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIDocumentInteractionController : NSObject <UIActionSheetDelegate>
 
 + (UIDocumentInteractionController *)interactionControllerWithURL:(NSURL *)url; // use file to determine UTI. assumes file is complete
 
@@ -58,7 +58,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIDocumentInteractionController : NSObjec
 
 @end
 
- @protocol UIDocumentInteractionControllerDelegate <NSObject>
+__TVOS_PROHIBITED @protocol UIDocumentInteractionControllerDelegate <NSObject>
 
 @optional
 

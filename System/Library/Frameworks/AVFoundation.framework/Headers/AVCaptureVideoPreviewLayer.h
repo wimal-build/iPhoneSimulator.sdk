@@ -28,7 +28,7 @@
     some hardware configurations, the orientation of the layer can be manipulated using
     @"orientation" and @"mirrored".
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureVideoPreviewLayer : CALayer
 {
 @private

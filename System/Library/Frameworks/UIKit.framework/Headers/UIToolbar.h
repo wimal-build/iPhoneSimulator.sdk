@@ -18,9 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class UIBarButtonItem, UIColor;
 @protocol UIToolbarDelegate;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIToolbar : UIView <UIBarPositioning>
+NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIToolbar : UIView <UIBarPositioning>
 
-@property(nonatomic) UIBarStyle barStyle; // default is UIBarStyleDefault (blue)
+@property(nonatomic) UIBarStyle barStyle __TVOS_PROHIBITED; // default is UIBarStyleDefault (blue)
 @property(nullable,nonatomic,copy) NSArray<UIBarButtonItem *> *items; // get/set visible UIBarButtonItem. default is nil. changes not animated. shown in order
 
 /*
@@ -68,7 +68,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIToolbar : UIView <UIBarPositioning>
 @property(nullable, nonatomic,assign) id<UIToolbarDelegate> delegate NS_AVAILABLE_IOS(7_0); // You may not set the delegate when the toolbar is managed by a UINavigationController.
 @end
 
-
+__TVOS_PROHIBITED
 @protocol UIToolbarDelegate <UIBarPositioningDelegate>
 @end
 

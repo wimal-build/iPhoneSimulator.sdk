@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, CMMotionActivityConfidence) {
  *    Note in this case all of the properties are NO.
  *
  */
-NS_CLASS_AVAILABLE(NA, 7_0)
+NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED
 @interface CMMotionActivity : CMLogItem
 
 /*

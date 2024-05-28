@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintPaper : NSObject 
+NS_CLASS_AVAILABLE_IOS(4_2)__TVOS_PROHIBITED @interface UIPrintPaper : NSObject 
 
 + (UIPrintPaper *)bestPaperForPageSize:(CGSize)contentSize withPapersFromArray:(NSArray<UIPrintPaper *> *)paperList; // for use by delegate. pass in list
 
@@ -23,7 +23,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintPaper : NSObject
 //_____________________________________________
 
 @interface UIPrintPaper(Deprecated_Nonfunctional)
-- (CGRect)printRect ;
+- (CGRect)printRect __TVOS_PROHIBITED ;
 @end
 
 NS_ASSUME_NONNULL_END

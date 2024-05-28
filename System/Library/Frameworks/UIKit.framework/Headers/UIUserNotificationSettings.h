@@ -18,28 +18,28 @@ typedef NS_OPTIONS(NSUInteger, UIUserNotificationType) {
     UIUserNotificationTypeBadge   = 1 << 0, // the application may badge its icon upon a notification being received
     UIUserNotificationTypeSound   = 1 << 1, // the application may play a sound upon a notification being received
     UIUserNotificationTypeAlert   = 1 << 2, // the application may display an alert upon a notification being received
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSUInteger, UIUserNotificationActionBehavior) {
     UIUserNotificationActionBehaviorDefault,        // the default action behavior
     UIUserNotificationActionBehaviorTextInput       // system provided action behavior, allows text input from the user
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSUInteger, UIUserNotificationActivationMode) {
     UIUserNotificationActivationModeForeground, // activates the application in the foreground
     UIUserNotificationActivationModeBackground  // activates the application in the background, unless it's already in the foreground
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSUInteger, UIUserNotificationActionContext) {
     UIUserNotificationActionContextDefault,  // the default context of a notification action
     UIUserNotificationActionContextMinimal   // the context of a notification action when space is limited
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIUserNotificationTextInputActionButtonTitleKey NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIUserNotificationTextInputActionButtonTitleKey NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
 
-UIKIT_EXTERN NSString *const UIUserNotificationActionResponseTypedTextKey NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIUserNotificationActionResponseTypedTextKey NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface UIUserNotificationSettings : NSObject
 
 // categories may be nil or an empty set if custom user notification actions will not be used
@@ -53,21 +53,21 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface UIUserNotificationCategory : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
-- (instancetype)init NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
 
 // The category identifier passed in a UILocalNotification or a remote notification payload
-@property (nullable,nonatomic, copy, readonly) NSString *identifier;
+@property (nullable,nonatomic, copy, readonly) NSString *identifier __TVOS_PROHIBITED;
 
 // UIUserNotificationActions in the order to be displayed for the specified context
-- (nullable NSArray<UIUserNotificationAction *> *)actionsForContext:(UIUserNotificationActionContext)context;
+- (nullable NSArray<UIUserNotificationAction *> *)actionsForContext:(UIUserNotificationActionContext)context __TVOS_PROHIBITED;
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface UIMutableUserNotificationCategory : UIUserNotificationCategory
 
 // The category identifier passed in a UILocalNotification or a remote notification payload
@@ -78,36 +78,36 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface UIUserNotificationAction : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
-- (instancetype)init NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
 
 // The unique identifier for this action.
-@property (nullable, nonatomic, copy, readonly) NSString *identifier;
+@property (nullable, nonatomic, copy, readonly) NSString *identifier __TVOS_PROHIBITED;
 
 // The localized title to display for this action.
-@property (nullable, nonatomic, copy, readonly) NSString *title;
+@property (nullable, nonatomic, copy, readonly) NSString *title __TVOS_PROHIBITED;
 
 // The behavior of this action when the user activates it.
-@property (nonatomic, assign, readonly) UIUserNotificationActionBehavior behavior NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign, readonly) UIUserNotificationActionBehavior behavior NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
 
 // Parameters that can be used by some types of actions.
-@property (nonatomic, copy, readonly) NSDictionary *parameters NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, copy, readonly) NSDictionary *parameters NS_AVAILABLE_IOS(9_0)__TVOS_PROHIBITED;
 
 // How the application should be activated in response to the action.
-@property (nonatomic, assign, readonly) UIUserNotificationActivationMode activationMode;
+@property (nonatomic, assign, readonly) UIUserNotificationActivationMode activationMode __TVOS_PROHIBITED;
 
 // Whether this action is secure and should require unlocking before being performed. If the activation mode is UIUserNotificationActivationModeForeground, then the action is considered secure and this property is ignored.
-@property (nonatomic, assign, readonly, getter=isAuthenticationRequired) BOOL authenticationRequired;
+@property (nonatomic, assign, readonly, getter=isAuthenticationRequired) BOOL authenticationRequired __TVOS_PROHIBITED;
 
 // Whether this action should be indicated as destructive when displayed.
-@property (nonatomic, assign, readonly, getter=isDestructive) BOOL destructive;
+@property (nonatomic, assign, readonly, getter=isDestructive) BOOL destructive __TVOS_PROHIBITED;
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface UIMutableUserNotificationAction : UIUserNotificationAction
 
 // The unique identifier for this action.

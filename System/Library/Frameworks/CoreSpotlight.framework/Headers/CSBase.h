@@ -22,3 +22,7 @@
 #ifndef CS_DEPRECATED
 #define CS_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, ...) NS_DEPRECATED(_macIntro, _macDep, _iosIntro, _iosDep, __VA_ARGS__)
 #endif
+
+#ifndef CS_TVOS_UNAVAILABLE
+#define CS_TVOS_UNAVAILABLE __TVOS_PROHIBITED
+#endif

@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface NSFileProviderExtension : NSObject
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface NSFileProviderExtension : NSObject
 // You don't want to override these
 
 // metadata contains NSURLNameKey, NSURLFileSizeKey, NSURLIsPackageKey

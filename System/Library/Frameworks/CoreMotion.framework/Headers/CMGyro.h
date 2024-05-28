@@ -47,7 +47,7 @@ typedef struct {
  *    Contains a single gyro measurement.
  *
  */
-NS_CLASS_AVAILABLE(NA,4_0)
+NS_CLASS_AVAILABLE(NA,4_0) __TVOS_PROHIBITED
 @interface CMGyroData : CMLogItem
 {
 @private

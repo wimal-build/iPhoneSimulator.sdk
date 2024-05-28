@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 CS_CLASS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 // CSSearchableItemAttribute encapsulates a set of properties of an CSSearchableItem.
 // CSSearchableItemAttribute set should only be mutated from one thread at a time. Concurrent access to properties has undefined behavior.
 @interface CSSearchableItemAttributeSet : NSObject <NSCopying,NSSecureCoding>
@@ -22,6 +23,7 @@ CS_CLASS_AVAILABLE(NA, 9_0)
 @end
 
 //CSLocalizedString can be used in place of NSString to support localization
+CS_TVOS_UNAVAILABLE
 @interface CSLocalizedString : NSString
 
 //Takes a dictionary of preferred codes to the localized string for that language
@@ -34,6 +36,7 @@ CS_CLASS_AVAILABLE(NA, 9_0)
 
 //CSCustomAttributeKey allows you to specify a custom attribute as well as various other properties of that attribute.
 CS_CLASS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 @interface CSCustomAttributeKey : NSObject <NSCopying,NSSecureCoding>
 
 //Key names should be ASCII only, with no punctuation other than '_'.
@@ -76,7 +79,7 @@ CS_CLASS_AVAILABLE(NA, 9_0)
 //Attributes to be indexed for a given NSUserActivity
 @interface NSUserActivity (CSSearchableItemAttributeSet)
 
-@property (nullable, copy) CSSearchableItemAttributeSet *contentAttributeSet CS_AVAILABLE(NA, 9_0);
+@property (nullable, copy) CSSearchableItemAttributeSet *contentAttributeSet CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
 
 @end
 

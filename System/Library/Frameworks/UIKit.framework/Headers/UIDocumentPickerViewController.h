@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIDocumentPickerViewController, UIDocumentMenuViewController;
 
- @protocol UIDocumentPickerDelegate <NSObject>
+__TVOS_PROHIBITED @protocol UIDocumentPickerDelegate <NSObject>
 
 - (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentAtURL:(NSURL *)url;
 
@@ -26,9 +26,9 @@ typedef NS_ENUM(NSUInteger, UIDocumentPickerMode) {
     UIDocumentPickerModeOpen,
     UIDocumentPickerModeExportToService,
     UIDocumentPickerModeMoveToService
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIDocumentPickerViewController : UIViewController
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIDocumentPickerViewController : UIViewController
 
 // Initializes the picker instance for selecting a document in a remote location. The valid modes are Import and Open.
 - (instancetype)initWithDocumentTypes:(NSArray <NSString *>*)allowedUTIs inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;

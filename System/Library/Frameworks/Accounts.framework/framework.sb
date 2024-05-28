@@ -9,4 +9,6 @@
 ;;
 (allow mach-lookup (global-name "com.apple.accountsd.accountmanager"))
 (allow mach-lookup (global-name "com.apple.accountsd.oauthsigner"))
+(allow mach-lookup (global-name "com.apple.cdp.daemon"))
+(allow mach-lookup (global-name "com.apple.mobile.keybagd.xpc"))
 

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class NSManagedObjectContext;
 @class NSPersistentStoreCoordinator;
 
-NS_CLASS_AVAILABLE_IOS(5_0) @interface UIManagedDocument : UIDocument
+NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIManagedDocument : UIDocument
 
 /* The name for the persistent store file inside the document's file wrapper.  When working with the Core Data APIs, this path component is appended to the document URL provided by the UIDocument APIs.  The default name is @"documentpersistentstore.db"
  */

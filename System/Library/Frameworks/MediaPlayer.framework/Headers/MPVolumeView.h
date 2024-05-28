@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 MP_EXTERN_CLASS_AVAILABLE(2_0)
-
+__TVOS_PROHIBITED
 @interface MPVolumeView : UIView <NSCoding>
 
 @property (nonatomic) BOOL showsVolumeSlider NS_AVAILABLE_IOS(4_2); // Default is YES.
@@ -55,9 +55,9 @@ MP_EXTERN_CLASS_AVAILABLE(2_0)
 @end
 
 // Posted when the wirelessRoutesAvailable property changes.
-MP_EXTERN NSString *const MPVolumeViewWirelessRoutesAvailableDidChangeNotification NS_AVAILABLE_IOS(7_0);
+MP_EXTERN __TVOS_PROHIBITED NSString *const MPVolumeViewWirelessRoutesAvailableDidChangeNotification NS_AVAILABLE_IOS(7_0);
 
 // Posted when the wirelessRouteActive property changes.
-MP_EXTERN NSString *const MPVolumeViewWirelessRouteActiveDidChangeNotification NS_AVAILABLE_IOS(7_0);
+MP_EXTERN __TVOS_PROHIBITED NSString *const MPVolumeViewWirelessRouteActiveDidChangeNotification NS_AVAILABLE_IOS(7_0);
 
 NS_ASSUME_NONNULL_END

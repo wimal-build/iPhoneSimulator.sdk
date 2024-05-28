@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexiconEntry : NSObject <NSCopying>
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UILexiconEntry : NSObject <NSCopying>
 // -documentText returns the intended text to be inserted into the document for a given -userInput.
 // -userInput represents the expected typed string, which need not match the actual typed string.
 // for example, if the -documentText were "iPhone", the corresponsing -userInput could be "iphone"
@@ -19,7 +19,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexiconEntry : NSObject <NSCopying>
 @property (nonatomic, readonly) NSString *userInput;
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexicon : NSObject <NSCopying>
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UILexicon : NSObject <NSCopying>
 @property (nonatomic, readonly) NSArray<UILexiconEntry *> *entries;
 @end
 

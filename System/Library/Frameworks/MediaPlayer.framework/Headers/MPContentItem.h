@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// developer might want to represent include song files, streaming audio URLs,
 /// or radio stations.
 MP_EXTERN_CLASS_AVAILABLE(7_1)
-
+__TVOS_PROHIBITED
 @interface MPContentItem : NSObject
 
 /// A unique identifier for this content item. (Required)

@@ -66,7 +66,7 @@
  */
 
 #ifndef _DNS_SD_H
-#define _DNS_SD_H 6240101
+#define _DNS_SD_H 6251004
 
 #ifdef  __cplusplus
 extern "C" {
@@ -730,9 +730,8 @@ enum
  * DNS server." Normally, most clients will use 0 for interface index to
  * automatically get the default sensible behaviour.
  *
- * If the client passes a positive interface index, then for multicast names that
- * indicates to do the operation only on that one interface. For unicast names the
- * interface index is ignored unless kDNSServiceFlagsForceMulticast is also set.
+ * If the client passes a positive interface index, then that indicates to do the
+ * operation only on that one specified interface.
  *
  * If the client passes kDNSServiceInterfaceIndexLocalOnly when registering
  * a service, then that service will be found *only* by other local clients

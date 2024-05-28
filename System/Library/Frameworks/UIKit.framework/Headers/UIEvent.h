@@ -17,6 +17,9 @@ typedef NS_ENUM(NSInteger, UIEventType) {
     UIEventTypeTouches,
     UIEventTypeMotion,
     UIEventTypeRemoteControl,
+#ifndef SDK_HIDE_TIDE
+    UIEventTypePresses NS_ENUM_AVAILABLE_IOS(9_0),
+#endif
 };
 
 typedef NS_ENUM(NSInteger, UIEventSubtype) {

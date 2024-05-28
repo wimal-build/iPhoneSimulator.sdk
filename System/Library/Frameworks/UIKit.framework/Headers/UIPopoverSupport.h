@@ -22,7 +22,7 @@ typedef NS_OPTIONS(NSUInteger, UIPopoverArrowDirection) {
 
 /* contentSizeForViewInPopover allows you to set the size of the content from within the view controller. This property is read/write, and you should generally not override it.
  */
-@property (nonatomic,readwrite) CGSize contentSizeForViewInPopover NS_DEPRECATED_IOS(3_2, 7_0, "Use UIViewController.preferredContentSize instead.");
+@property (nonatomic,readwrite) CGSize contentSizeForViewInPopover NS_DEPRECATED_IOS(3_2, 7_0, "Use UIViewController.preferredContentSize instead.") __TVOS_PROHIBITED;
 
 @end
 

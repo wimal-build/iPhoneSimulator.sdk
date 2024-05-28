@@ -289,7 +289,8 @@ typedef struct vm_purgeable_info	*vm_purgeable_info_t;
 #define VM_FLAGS_USER_REMAP	(VM_FLAGS_FIXED |    \
 				 VM_FLAGS_ANYWHERE | \
 				 VM_FLAGS_OVERWRITE| \
-				 VM_FLAGS_RETURN_DATA_ADDR)
+				 VM_FLAGS_RETURN_DATA_ADDR |\
+				 VM_FLAGS_RESILIENT_CODESIGN)
 
 #define VM_FLAGS_SUPERPAGE_SHIFT 16
 #define SUPERPAGE_NONE			0	/* no superpages, if all bits are 0 */

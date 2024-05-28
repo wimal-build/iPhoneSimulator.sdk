@@ -13,7 +13,7 @@
 /// the playable content endpoint. A context is retrievable from an instance
 /// of MPPlayableContentManager.
 MP_EXTERN_CLASS_AVAILABLE(8_4)
-
+__TVOS_PROHIBITED
 @interface MPPlayableContentManagerContext : NSObject
 
 /// The number of items the content server will display when content limiting is enforced.

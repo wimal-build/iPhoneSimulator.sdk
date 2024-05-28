@@ -18,7 +18,7 @@ typedef uint64_t MPMediaEntityPersistentID;
 // Concrete subclasses are MPMediaItem and MPMediaItemCollection.
 
 MP_EXTERN_CLASS_AVAILABLE(4_2)
-
+__TVOS_PROHIBITED
 @interface MPMediaEntity : NSObject <NSSecureCoding>
 
 // Returns YES for properties which can be used to construct MPMediaPropertyPredicates.

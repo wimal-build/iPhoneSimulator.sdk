@@ -47,9 +47,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBarItem : UIBarItem
 
 /*  These methods are now deprecated. Please use -initWithTitle:image:selectedImage:.
  */
-- (void)setFinishedSelectedImage:(nullable UIImage *)selectedImage withFinishedUnselectedImage:(nullable UIImage *)unselectedImage NS_DEPRECATED_IOS(5_0,7_0,"Use initWithTitle:image:selectedImage: or the image and selectedImage properties along with UIImageRenderingModeAlwaysOriginal");
-- (nullable UIImage *)finishedSelectedImage NS_DEPRECATED_IOS(5_0,7_0);
-- (nullable UIImage *)finishedUnselectedImage NS_DEPRECATED_IOS(5_0,7_0);
+- (void)setFinishedSelectedImage:(nullable UIImage *)selectedImage withFinishedUnselectedImage:(nullable UIImage *)unselectedImage NS_DEPRECATED_IOS(5_0,7_0,"Use initWithTitle:image:selectedImage: or the image and selectedImage properties along with UIImageRenderingModeAlwaysOriginal") __TVOS_PROHIBITED;
+- (nullable UIImage *)finishedSelectedImage NS_DEPRECATED_IOS(5_0,7_0) __TVOS_PROHIBITED;
+- (nullable UIImage *)finishedUnselectedImage NS_DEPRECATED_IOS(5_0,7_0) __TVOS_PROHIBITED;
 
 /* To set item label text attributes use the appearance selectors available on the superclass, UIBarItem.
 

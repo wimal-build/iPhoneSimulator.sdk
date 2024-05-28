@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class CLRegion;
 
 // In iOS 8.0 and later, your application must register for user notifications using -[UIApplication registerUserNotificationSettings:] before being able to schedule and present UILocalNotifications
-NS_CLASS_AVAILABLE_IOS(4_0) @interface UILocalNotification : NSObject<NSCopying, NSCoding>       // added in iOS 4.0
+NS_CLASS_AVAILABLE_IOS(4_0) __TVOS_PROHIBITED @interface UILocalNotification : NSObject<NSCopying, NSCoding>       // added in iOS 4.0
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
@@ -57,6 +57,6 @@ NS_CLASS_AVAILABLE_IOS(4_0) @interface UILocalNotification : NSObject<NSCopying,
 @end
 
 
-UIKIT_EXTERN NSString *const UILocalNotificationDefaultSoundName NS_AVAILABLE_IOS(4_0);
+UIKIT_EXTERN NSString *const UILocalNotificationDefaultSoundName NS_AVAILABLE_IOS(4_0) __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END

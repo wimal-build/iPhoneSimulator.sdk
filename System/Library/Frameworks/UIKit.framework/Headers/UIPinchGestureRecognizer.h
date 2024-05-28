@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Changes: when a finger moves while two fingers remain down
 // Ends:    when both fingers have lifted
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UIPinchGestureRecognizer : UIGestureRecognizer 
+NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIPinchGestureRecognizer : UIGestureRecognizer
 
 @property (nonatomic)          CGFloat scale;               // scale relative to the touch points in screen coordinates
 @property (nonatomic,readonly) CGFloat velocity;            // velocity of the pinch in scale/second

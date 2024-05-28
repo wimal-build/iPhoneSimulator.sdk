@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, UIDocumentMenuOrder) {
     UIDocumentMenuOrderFirst,
     UIDocumentMenuOrderLast
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
- @protocol UIDocumentMenuDelegate <NSObject>
+__TVOS_PROHIBITED @protocol UIDocumentMenuDelegate <NSObject>
 
 - (void)documentMenu:(UIDocumentMenuViewController *)documentMenu didPickDocumentPicker:(UIDocumentPickerViewController *)documentPicker;
 @optional
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, UIDocumentMenuOrder) {
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIDocumentMenuViewController : UIViewController
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIDocumentMenuViewController : UIViewController
 
 - (instancetype)initWithDocumentTypes:(NSArray <NSString *> *)allowedUTIs inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithURL:(NSURL *)url inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;

@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
     
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPrinter : NSObject
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPrinter : NSObject
 
 /*!
  *  @enum       UIPrinterJobTypes
@@ -36,7 +36,7 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
     UIPrinterJobTypeRoll = 1 << 5,
     UIPrinterJobTypeLargeFormat = 1 << 6,
     UIPrinterJobTypePostcard = 1 << 7
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 
 /*!

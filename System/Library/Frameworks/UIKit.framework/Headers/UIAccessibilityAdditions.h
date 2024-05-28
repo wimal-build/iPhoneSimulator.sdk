@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
   See UIAccessibility.h for more information about hints and labels.
 */
 
-
+__TVOS_PROHIBITED
 @protocol UIPickerViewAccessibilityDelegate <UIPickerViewDelegate>
 
 @optional

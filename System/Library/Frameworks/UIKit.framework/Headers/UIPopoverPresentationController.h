@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIPopoverPresentationController;
 
-
+__TVOS_PROHIBITED
 @protocol UIPopoverPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
 @optional
 
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPopoverPresentationController : UIPresentationController
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPopoverPresentationController : UIPresentationController
 
 @property (nullable, nonatomic, weak) id <UIPopoverPresentationControllerDelegate> delegate;
 

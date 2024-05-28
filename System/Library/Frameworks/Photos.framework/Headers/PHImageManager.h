@@ -7,21 +7,14 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
+#import <Photos/PhotosTypes.h>
 
 @class PHAsset;
+@class PHLivePhoto;
 
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - PHImageRequestOptions - Configuration
-
-typedef NS_ENUM(NSInteger, PHImageContentMode) {
-    // Fit the asked size by maintaining the aspect ratio, the delivered image may not necessarily be the asked targetSize (see PHImageRequestOptionsDeliveryMode and PHImageRequestOptionsResizeMode)
-    PHImageContentModeAspectFit = 0,
-    // Fill the asked size, some portion of the content may be clipped, the delivered image may not necessarily be the asked targetSize (see PHImageRequestOptionsDeliveryMode && PHImageRequestOptionsResizeMode)
-    PHImageContentModeAspectFill = 1,
-    // Also use PHImageContentModeDefault when size is PHImageManagerMaximumSize (though no scaling/cropping will be done on the result)
-    PHImageContentModeDefault = PHImageContentModeAspectFit
-} NS_ENUM_AVAILABLE_IOS(8_0);
 
 typedef NS_ENUM(NSInteger, PHImageRequestOptionsVersion) {
     PHImageRequestOptionsVersionCurrent = 0, // version with edits (aka adjustments) rendered or unadjusted version if there is no edits
@@ -53,6 +46,15 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHImageRequestOptions : NSObject <NSCopyi
 @property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed; // if necessary will download the image from iCloud (client can monitor or cancel using progressHandler). Defaults to NO (see start/stopCachingImagesForAssets)
 @property (nonatomic, assign, getter=isSynchronous) BOOL synchronous; // return only a single result, blocking until available (or failure). Defaults to NO
 @property (nonatomic, copy, nullable) PHAssetImageProgressHandler progressHandler; // provide caller a way to be told how much progress has been made prior to delivering the data when it comes from iCloud. Defaults to nil, shall be set by caller
+
+@end
+
+
+NS_CLASS_AVAILABLE_IOS(9_1) @interface PHLivePhotoRequestOptions : NSObject <NSCopying>
+
+@property (nonatomic, assign) PHImageRequestOptionsDeliveryMode deliveryMode;
+@property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed;
+@property (nonatomic, copy, nullable) PHAssetImageProgressHandler progressHandler;
 
 @end
 
@@ -110,6 +112,10 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHImageManager : NSObject
 
 #pragma mark - Image
 
+// If the asset's aspect ratio does not match that of the given targetSize, contentMode determines how the image will be resized.
+//      PHImageContentModeAspectFit: Fit the asked size by maintaining the aspect ratio, the delivered image may not necessarily be the asked targetSize (see PHImageRequestOptionsDeliveryMode and PHImageRequestOptionsResizeMode)
+//      PHImageContentModeAspectFill: Fill the asked size, some portion of the content may be clipped, the delivered image may not necessarily be the asked targetSize (see PHImageRequestOptionsDeliveryMode && PHImageRequestOptionsResizeMode)
+//      PHImageContentModeDefault: Use PHImageContentModeDefault when size is PHImageManagerMaximumSize (though no scaling/cropping will be done on the result)
 // If -[PHImageRequestOptions isSynchronous] returns NO (or options is nil), resultHandler may be called 1 or more times.
 //     Typically in this case, resultHandler will be called asynchronously on the main thread with the requested results.
 //     However, if deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic, resultHandler may be called synchronously on the calling thread if any image data is immediately available. If the image data returned in this first pass is of insufficient quality, resultHandler will be called again, asychronously on the main thread at a later time with the "correct" results.
@@ -125,6 +131,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface PHImageManager : NSObject
 - (PHImageRequestID)requestImageDataForAsset:(PHAsset *)asset options:(nullable PHImageRequestOptions *)options resultHandler:(void(^)(NSData *__nullable imageData, NSString *__nullable dataUTI, UIImageOrientation orientation, NSDictionary *__nullable info))resultHandler;
 
 - (void)cancelImageRequest:(PHImageRequestID)requestID;
+
+
+#pragma mark - Live Photo
+
+/// Requests a live photo representation of the asset. With PHImageRequestOptionsDeliveryModeOpportunistic (or if no options are specified), the resultHandler block may be called more than once (the first call may occur before the method returns). The PHImageResultIsDegradedKey key in the result handler's info parameter indicates when a temporary low-quality live photo is provided.
+- (PHImageRequestID)requestLivePhotoForAsset:(PHAsset *)asset targetSize:(CGSize)targetSize contentMode:(PHImageContentMode)contentMode options:(nullable PHLivePhotoRequestOptions *)options resultHandler:(void (^)(PHLivePhoto *__nullable livePhoto, NSDictionary *__nullable info))resultHandler NS_AVAILABLE_IOS(9_1);
 
 
 #pragma mark - Video

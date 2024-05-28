@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class UIPrintInteractionController, UIPrintInfo, UIPrintPaper, UIPrintPageRenderer, UIPrintFormatter, UIPrinter;
 @class UIView, UIBarButtonItem;
 
-typedef void (^UIPrintInteractionCompletionHandler)(UIPrintInteractionController *printInteractionController, BOOL completed, NSError * __nullable error);
+typedef void (^UIPrintInteractionCompletionHandler)(UIPrintInteractionController *printInteractionController, BOOL completed, NSError * __nullable error) __TVOS_PROHIBITED;
 
 
 NS_ENUM_AVAILABLE_IOS(9_0) typedef NS_ENUM(NSInteger, UIPrinterCutterBehavior) {
@@ -24,11 +24,11 @@ NS_ENUM_AVAILABLE_IOS(9_0) typedef NS_ENUM(NSInteger, UIPrinterCutterBehavior) {
     UIPrinterCutterBehaviorCutAfterEachPage,
     UIPrinterCutterBehaviorCutAfterEachCopy,
     UIPrinterCutterBehaviorCutAfterEachJob,
-};
+} __TVOS_PROHIBITED;
 
 @protocol UIPrintInteractionControllerDelegate;
 
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintInteractionController : NSObject
+NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintInteractionController : NSObject
 
 + (BOOL)isPrintingAvailable;                    // return YES if system supports printing. use this to hide HI for unsupported devices.
 
@@ -66,7 +66,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintInteractionController : NSObject
 
 @end
 
- @protocol UIPrintInteractionControllerDelegate <NSObject>
+__TVOS_PROHIBITED @protocol UIPrintInteractionControllerDelegate <NSObject>
 @optional
 
 - (UIViewController *)printInteractionControllerParentViewController:(UIPrintInteractionController *)printInteractionController;

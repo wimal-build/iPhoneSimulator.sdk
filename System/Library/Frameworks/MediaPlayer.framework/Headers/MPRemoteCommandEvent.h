@@ -93,4 +93,12 @@ MP_EXTERN_CLASS_AVAILABLE(9_0)
 
 @end
 
+MP_EXTERN_CLASS_AVAILABLE(8_0)
+@interface MPChangePlaybackPositionCommandEvent : MPRemoteCommandEvent
+
+/// The desired playback position to use when setting the current time of the player.
+@property (nonatomic, readonly) NSTimeInterval positionTime;
+
+@end
+
 NS_ASSUME_NONNULL_END

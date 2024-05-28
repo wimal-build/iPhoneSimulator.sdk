@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationBar : UIView <NSCoding, UIBarPositioning> 
 
-@property(nonatomic,assign) UIBarStyle barStyle;
+@property(nonatomic,assign) UIBarStyle barStyle __TVOS_PROHIBITED;
 @property(nullable,nonatomic,weak) id<UINavigationBarDelegate> delegate;
 
 /*
@@ -89,8 +89,8 @@ vertically if necessary when the navigation bar is in the position UIBarPosition
  The back indicator transition mask image is used as a mask for content during push and pop transitions
  Note: These properties must both be set if you want to customize the back indicator image.
  */
-@property(nullable,nonatomic,strong) UIImage *backIndicatorImage NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;
-@property(nullable,nonatomic,strong) UIImage *backIndicatorTransitionMaskImage NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR;
+@property(nullable,nonatomic,strong) UIImage *backIndicatorImage NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
+@property(nullable,nonatomic,strong) UIImage *backIndicatorTransitionMaskImage NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 
 @end
 
@@ -113,11 +113,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationItem : NSObject <NSCoding>
 @property(nullable, nonatomic,copy)   NSString        *title;             // Title when topmost on the stack. default is nil
 @property(nullable, nonatomic,strong) UIView          *titleView;         // Custom view to use in lieu of a title. May be sized horizontally. Only used when item is topmost on the stack.
 
-@property(nullable,nonatomic,copy)   NSString *prompt;     // Explanatory text to display above the navigation bar buttons.
-@property(nullable,nonatomic,strong) UIBarButtonItem *backBarButtonItem; // Bar button item to use for the back button in the child navigation item.
+@property(nullable,nonatomic,copy)   NSString *prompt __TVOS_PROHIBITED;     // Explanatory text to display above the navigation bar buttons.
+@property(nullable,nonatomic,strong) UIBarButtonItem *backBarButtonItem __TVOS_PROHIBITED; // Bar button item to use for the back button in the child navigation item.
 
-@property(nonatomic,assign) BOOL hidesBackButton; // If YES, this navigation item will hide the back button when it's on top of the stack.
-- (void)setHidesBackButton:(BOOL)hidesBackButton animated:(BOOL)animated;
+@property(nonatomic,assign) BOOL hidesBackButton __TVOS_PROHIBITED; // If YES, this navigation item will hide the back button when it's on top of the stack.
+- (void)setHidesBackButton:(BOOL)hidesBackButton animated:(BOOL)animated __TVOS_PROHIBITED;
 
 /* Use these properties to set multiple items in a navigation bar.
  The older single properties (leftBarButtonItem and rightBarButtonItem) now refer to 
@@ -141,7 +141,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationItem : NSObject <NSCoding>
  would like the left items to appear in addition to the back button (as opposed to instead of it)
  set leftItemsSupplementBackButton to YES.
  */
-@property(nonatomic) BOOL leftItemsSupplementBackButton NS_AVAILABLE_IOS(5_0);
+@property(nonatomic) BOOL leftItemsSupplementBackButton NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;
 
 // Some navigation items want to display a custom left or right item when they're on top of the stack.
 // A custom left item replaces the regular back button unless you set leftItemsSupplementBackButton to YES

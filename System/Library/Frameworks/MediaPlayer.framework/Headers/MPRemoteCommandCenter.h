@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class MPRemoteCommand, MPSkipIntervalCommand, MPRatingCommand, MPChangePlaybackRateCommand, MPFeedbackCommand;
+@class MPRemoteCommand, MPSkipIntervalCommand, MPRatingCommand, MPChangePlaybackRateCommand, MPFeedbackCommand, MPChangePlaybackPositionCommand;
 
 MP_EXTERN_CLASS_AVAILABLE(7_1)
 @interface MPRemoteCommandCenter : NSObject
@@ -48,6 +48,8 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 @property (nonatomic, readonly) MPFeedbackCommand *likeCommand;
 @property (nonatomic, readonly) MPFeedbackCommand *dislikeCommand;
 @property (nonatomic, readonly) MPFeedbackCommand *bookmarkCommand;
+
+@property (nonatomic, readonly) MPChangePlaybackPositionCommand *changePlaybackPositionCommand;
 
 + (MPRemoteCommandCenter *)sharedCommandCenter;
 

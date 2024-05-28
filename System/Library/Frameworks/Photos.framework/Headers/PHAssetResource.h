@@ -8,6 +8,7 @@
 #import <Photos/PhotosTypes.h>
 
 @class PHAsset;
+@class PHLivePhoto;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +22,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PHAssetResource : NSObject
 #pragma mark - Getting resources
 
 + (NSArray<PHAssetResource *> *)assetResourcesForAsset:(PHAsset *)asset;
++ (NSArray<PHAssetResource *> *)assetResourcesForLivePhoto:(PHLivePhoto *)livePhoto NS_AVAILABLE_IOS(9_1);
 
 @end
 

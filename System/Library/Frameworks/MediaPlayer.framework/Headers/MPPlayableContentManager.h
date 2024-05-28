@@ -18,12 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// to browse the media content offered by the application, as well as a delegate,
 /// which allows the media player to relay non-media remote playback commands to the application.
 MP_EXTERN_CLASS_AVAILABLE(7_1)
-
+__TVOS_PROHIBITED
 @interface MPPlayableContentManager : NSObject
 
 @property (nonatomic, weak, nullable) id<MPPlayableContentDataSource> dataSource;
 @property (nonatomic, weak, nullable) id<MPPlayableContentDelegate>   delegate;
-@property (nonatomic, readonly) MPPlayableContentManagerContext *context;
+@property (nonatomic, readonly) MPPlayableContentManagerContext *context NS_AVAILABLE_IOS(8_4);
 
 /// Returns the application's instance of the content manager.
 + (instancetype)sharedContentManager;

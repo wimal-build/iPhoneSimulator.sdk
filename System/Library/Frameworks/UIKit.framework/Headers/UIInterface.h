@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, UIBarStyle) {
     
     UIBarStyleBlackOpaque      = 1, // Deprecated. Use UIBarStyleBlack
     UIBarStyleBlackTranslucent = 2, // Deprecated. Use UIBarStyleBlack and set the translucent property to YES
-};
+} __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, UIUserInterfaceSizeClass) {
     UIUserInterfaceSizeClassUnspecified = 0,
@@ -31,23 +31,23 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceSizeClass) {
 // System colors
 
 @interface UIColor (UIColorSystemColors)
-+ (UIColor *)lightTextColor;                // for a dark background
-+ (UIColor *)darkTextColor;                 // for a light background
++ (UIColor *)lightTextColor __TVOS_PROHIBITED;                // for a dark background
++ (UIColor *)darkTextColor __TVOS_PROHIBITED;                 // for a light background
 
-+ (UIColor *)groupTableViewBackgroundColor;
++ (UIColor *)groupTableViewBackgroundColor __TVOS_PROHIBITED;
 
-+ (UIColor *)viewFlipsideBackgroundColor NS_DEPRECATED_IOS(2_0, 7_0);
-+ (UIColor *)scrollViewTexturedBackgroundColor NS_DEPRECATED_IOS(3_2, 7_0);
-+ (UIColor *)underPageBackgroundColor NS_DEPRECATED_IOS(5_0, 7_0);
++ (UIColor *)viewFlipsideBackgroundColor NS_DEPRECATED_IOS(2_0, 7_0) __TVOS_PROHIBITED;
++ (UIColor *)scrollViewTexturedBackgroundColor NS_DEPRECATED_IOS(3_2, 7_0) __TVOS_PROHIBITED;
++ (UIColor *)underPageBackgroundColor NS_DEPRECATED_IOS(5_0, 7_0) __TVOS_PROHIBITED;
 @end
 
 // System fonts
 
 @interface UIFont (UIFontSystemFonts)
-+ (CGFloat)labelFontSize;
-+ (CGFloat)buttonFontSize;
-+ (CGFloat)smallSystemFontSize;
-+ (CGFloat)systemFontSize;
++ (CGFloat)labelFontSize __TVOS_PROHIBITED;
++ (CGFloat)buttonFontSize __TVOS_PROHIBITED;
++ (CGFloat)smallSystemFontSize __TVOS_PROHIBITED;
++ (CGFloat)systemFontSize __TVOS_PROHIBITED;
 @end
 
 NS_ASSUME_NONNULL_END

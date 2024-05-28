@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, MPMovieScalingMode) {
     MPMovieScalingModeAspectFit,  // Uniform scale until one dimension fits
     MPMovieScalingModeAspectFill, // Uniform scale until the movie fills the visible bounds. One dimension may have clipped contents
     MPMovieScalingModeFill        // Non-uniform scale. Both render dimensions will exactly match the visible bounds
-} NS_DEPRECATED_IOS(2_0, 9_0);
+} NS_DEPRECATED_IOS(2_0, 9_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMoviePlaybackState) {
     MPMoviePlaybackStateStopped,
@@ -28,19 +28,19 @@ typedef NS_ENUM(NSInteger, MPMoviePlaybackState) {
     MPMoviePlaybackStateInterrupted,
     MPMoviePlaybackStateSeekingForward,
     MPMoviePlaybackStateSeekingBackward
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 typedef NS_OPTIONS(NSUInteger, MPMovieLoadState) {
     MPMovieLoadStateUnknown        = 0,
     MPMovieLoadStatePlayable       = 1 << 0,
     MPMovieLoadStatePlaythroughOK  = 1 << 1, // Playback will be automatically started in this state when shouldAutoplay is YES
     MPMovieLoadStateStalled        = 1 << 2, // Playback will be automatically paused in this state, if started
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMovieRepeatMode) {
     MPMovieRepeatModeNone,
     MPMovieRepeatModeOne
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMovieControlStyle) {
     MPMovieControlStyleNone,       // No controls
@@ -48,13 +48,13 @@ typedef NS_ENUM(NSInteger, MPMovieControlStyle) {
     MPMovieControlStyleFullscreen, // Controls for fullscreen playback
     
     MPMovieControlStyleDefault = MPMovieControlStyleEmbedded
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMovieFinishReason) {
     MPMovieFinishReasonPlaybackEnded,
     MPMovieFinishReasonPlaybackError,
     MPMovieFinishReasonUserExited
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 // -----------------------------------------------------------------------------
 // Movie Property Types
@@ -63,13 +63,13 @@ typedef NS_OPTIONS(NSUInteger, MPMovieMediaTypeMask) {
     MPMovieMediaTypeMaskNone  = 0,
     MPMovieMediaTypeMaskVideo = 1 << 0,
     MPMovieMediaTypeMaskAudio = 1 << 1
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMovieSourceType) {
     MPMovieSourceTypeUnknown,
     MPMovieSourceTypeFile,     // Local or progressively downloaded network content
     MPMovieSourceTypeStreaming // Live or on-demand streaming content
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 // -----------------------------------------------------------------------------
 // Movie Player
@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, MPMovieSourceType) {
 
 MP_EXTERN_CLASS_AVAILABLE(2_0)
 NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
-
+__TVOS_PROHIBITED
 @interface MPMoviePlayerController : NSObject <MPMediaPlayback>
 
 - (instancetype)initWithContentURL:(NSURL *)url NS_DESIGNATED_INITIALIZER;
@@ -213,7 +213,7 @@ MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification NS_DEPRECATED
 typedef NS_ENUM(NSInteger, MPMovieTimeOption) {
     MPMovieTimeOptionNearestKeyFrame,
     MPMovieTimeOptionExact
-} NS_DEPRECATED_IOS(3_2, 9_0);
+} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
 
 @interface MPMoviePlayerController (MPMoviePlayerThumbnailGeneration)
 
@@ -248,7 +248,7 @@ MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey NS_DEPRECATED_IOS(3_2,
 
 MP_EXTERN_CLASS_AVAILABLE(4_0)
 NS_DEPRECATED_IOS(4_0, 9_0)
-
+__TVOS_PROHIBITED
 @interface MPTimedMetadata : NSObject
 
 // A key which identifies a piece of timed metadata.
@@ -297,7 +297,7 @@ MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode NS_DEPRECAT
 
 MP_EXTERN_CLASS_AVAILABLE(4_3)
 NS_DEPRECATED_IOS(4_3, 9_0)
-
+__TVOS_PROHIBITED
 @interface MPMovieAccessLog : NSObject <NSCopying>
 
 // Returns the webserver access log into a textual format that conforms to the W3C Extended Log File Format for web server log files.
@@ -317,7 +317,7 @@ NS_DEPRECATED_IOS(4_3, 9_0)
 
 MP_EXTERN_CLASS_AVAILABLE(4_3)
 NS_DEPRECATED_IOS(4_3, 9_0)
-
+__TVOS_PROHIBITED
 @interface MPMovieErrorLog : NSObject <NSCopying>
 
 // Returns the webserver error log into a textual format that conforms to the W3C Extended Log File Format for web server log files.
@@ -337,7 +337,7 @@ NS_DEPRECATED_IOS(4_3, 9_0)
 
 MP_EXTERN_CLASS_AVAILABLE(4_3)
 NS_DEPRECATED_IOS(4_3, 9_0)
-
+__TVOS_PROHIBITED
 @interface MPMovieAccessLogEvent : NSObject <NSCopying>
 
 // A count of media segments downloaded from the server to this client.
@@ -389,7 +389,7 @@ NS_DEPRECATED_IOS(4_3, 9_0)
 
 MP_EXTERN_CLASS_AVAILABLE(4_3)
 NS_DEPRECATED_IOS(4_3, 9_0)
-
+__TVOS_PROHIBITED
 @interface MPMovieErrorLogEvent : NSObject <NSCopying>
 
 // The date and time when the error occured.

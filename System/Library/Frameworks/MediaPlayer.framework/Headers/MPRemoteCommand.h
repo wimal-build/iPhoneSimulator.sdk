@@ -14,14 +14,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, MPRemoteCommandHandlerStatus) {
     /// There was no error executing the requested command.
-    MPRemoteCommandHandlerStatusSuccess        = 0,
+    MPRemoteCommandHandlerStatusSuccess = 0,
     
     /// The command could not be executed because the requested content does not
     /// exist in the current application state.
-    MPRemoteCommandHandlerStatusNoSuchContent  = 100,
+    MPRemoteCommandHandlerStatusNoSuchContent = 100,
+    
+    /// The command could not be executed because there is no now playing item
+    /// available that is required for this command. As an example, an
+    /// application would return this error code if an "enable language option"
+    /// command is received, but nothing is currently playing.
+    MPRemoteCommandHandlerStatusNoActionableNowPlayingItem NS_ENUM_AVAILABLE_IOS(9_1) = 110,
     
     /// The command could not be executed for another reason.
-    MPRemoteCommandHandlerStatusCommandFailed  = 200
+    MPRemoteCommandHandlerStatusCommandFailed = 200
 } NS_ENUM_AVAILABLE_IOS(7_1);
 
 MP_EXTERN_CLASS_AVAILABLE(7_1)
@@ -92,6 +98,11 @@ MP_EXTERN_CLASS_AVAILABLE(7_1)
 /// An array of NSNumbers (floats) that contain supported playback rates that
 /// the command can send.
 @property (nonatomic, copy) NSArray<NSNumber *> *supportedPlaybackRates;
+
+@end
+
+MP_EXTERN_CLASS_AVAILABLE(9_0)
+@interface MPChangePlaybackPositionCommand : MPRemoteCommand
 
 @end
 

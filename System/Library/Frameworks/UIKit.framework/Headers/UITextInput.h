@@ -80,7 +80,7 @@ NS_CLASS_AVAILABLE_IOS(5_1) @interface UIDictationPhrase : NSObject {
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_PROHIBITED @interface UITextInputAssistantItem : NSObject
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UITextInputAssistantItem : NSObject
 
 /// Default is YES, controls if the user is allowed to hide the shortcuts bar. Does not influence the built in auto-hiding logic.
 @property (nonatomic, readwrite, assign) BOOL allowsHidingShortcuts;
@@ -206,9 +206,9 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_PROHIBITED @interface UITextInputAssistant
 //---------------------------------------------------------------------------------------------------
 
 /* UITextInput keys to style dictionaries are deprecated. Use NSAttributedString keys instead, such as NSFontAttribute, etc. */
-UIKIT_EXTERN NSString *const UITextInputTextBackgroundColorKey NS_DEPRECATED_IOS(3_2, 8_0, "Use NSBackgroundColorAttributeName instead"); // Key to a UIColor
-UIKIT_EXTERN NSString *const UITextInputTextColorKey           NS_DEPRECATED_IOS(3_2, 8_0, "Use NSForegroundColorAttributeName instead"); // Key to a UIColor
-UIKIT_EXTERN NSString *const UITextInputTextFontKey            NS_DEPRECATED_IOS(3_2, 8_0, "Use NSFontAttributeName instead"); // Key to a UIFont
+UIKIT_EXTERN NSString *const UITextInputTextBackgroundColorKey NS_DEPRECATED_IOS(3_2, 8_0, "Use NSBackgroundColorAttributeName instead") __TVOS_PROHIBITED; // Key to a UIColor
+UIKIT_EXTERN NSString *const UITextInputTextColorKey           NS_DEPRECATED_IOS(3_2, 8_0, "Use NSForegroundColorAttributeName instead") __TVOS_PROHIBITED; // Key to a UIColor
+UIKIT_EXTERN NSString *const UITextInputTextFontKey            NS_DEPRECATED_IOS(3_2, 8_0, "Use NSFontAttributeName instead") __TVOS_PROHIBITED; // Key to a UIFont
 
 /* To accommodate text entry in documents that contain nested elements, or in which supplying and
  * evaluating characters at indices is an expensive proposition, a position within a text input
@@ -278,7 +278,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UITextInputMode : NSObject <NSSecureCodin
 @property (nullable, nonatomic, readonly, strong) NSString *primaryLanguage; // The primary language, if any, of the input mode.  A BCP 47 language identifier such as en-US
 
 // To query the UITextInputMode, refer to the UIResponder method -textInputMode.
-+ (nullable UITextInputMode *)currentInputMode NS_DEPRECATED_IOS(4_2, 7_0);; // The current input mode.  Nil if unset.
++ (nullable UITextInputMode *)currentInputMode NS_DEPRECATED_IOS(4_2, 7_0)  __TVOS_PROHIBITED;; // The current input mode.  Nil if unset.
 + (NSArray<NSString *> *)activeInputModes; // The activate input modes.
 
 @end

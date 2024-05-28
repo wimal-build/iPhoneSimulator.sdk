@@ -32,13 +32,13 @@ typedef NS_OPTIONS(NSUInteger, MPMediaType) {
     MPMediaTypeAnyVideo     NS_ENUM_AVAILABLE_IOS(5_0) = 0xff00,
     
     MPMediaTypeAny                                     = ~0UL
-} NS_ENUM_AVAILABLE_IOS(3_0);
+} NS_ENUM_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
 
 // An MPMediaItem represents a single piece of media in an MPMediaLibrary.
 // Media items have a unique identifier which persists across application launches.
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaItem : MPMediaEntity
 
 #pragma mark - Properties
@@ -152,7 +152,7 @@ MP_EXTERN NSString * const MPMediaItemPropertyBookmarkTime NS_AVAILABLE_IOS(6_0)
 //-----------------------------------------------------
 
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMediaItemArtwork : NSObject
 
 // Initializes an MPMediaItemArtwork instance with the given full-size image.

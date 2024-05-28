@@ -17,11 +17,11 @@ typedef NS_ENUM(NSInteger, UIMenuControllerArrowDirection) {
     UIMenuControllerArrowDown NS_ENUM_AVAILABLE_IOS(3_2),
     UIMenuControllerArrowLeft NS_ENUM_AVAILABLE_IOS(3_2),
     UIMenuControllerArrowRight NS_ENUM_AVAILABLE_IOS(3_2),
-};
+} __TVOS_PROHIBITED;
 
 @class UIView, UIMenuItem;
 
-NS_CLASS_AVAILABLE_IOS(3_0) @interface UIMenuController : NSObject
+NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED @interface UIMenuController : NSObject
 
 + (UIMenuController *)sharedMenuController;
 
@@ -39,13 +39,13 @@ NS_CLASS_AVAILABLE_IOS(3_0) @interface UIMenuController : NSObject
 
 @end
 
-UIKIT_EXTERN NSString *const UIMenuControllerWillShowMenuNotification;
-UIKIT_EXTERN NSString *const UIMenuControllerDidShowMenuNotification;
-UIKIT_EXTERN NSString *const UIMenuControllerWillHideMenuNotification;
-UIKIT_EXTERN NSString *const UIMenuControllerDidHideMenuNotification;
-UIKIT_EXTERN NSString *const UIMenuControllerMenuFrameDidChangeNotification;
+UIKIT_EXTERN NSString *const UIMenuControllerWillShowMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIMenuControllerDidShowMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIMenuControllerWillHideMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIMenuControllerDidHideMenuNotification __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString *const UIMenuControllerMenuFrameDidChangeNotification __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UIMenuItem : NSObject 
+NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIMenuItem : NSObject 
 
 - (instancetype)initWithTitle:(NSString *)title action:(SEL)action NS_DESIGNATED_INITIALIZER;
 

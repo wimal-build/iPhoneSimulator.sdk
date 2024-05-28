@@ -44,7 +44,7 @@ typedef uint16_t CLBeaconMinorValue;
  *    value.
  *
  */
-NS_CLASS_AVAILABLE(NA, 7_0) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @interface CLBeaconRegion : CLRegion
 
 /*
@@ -134,7 +134,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) __WATCHOS_PROHIBITED
  *    A single beacon within a CLBeaconRegion.
  *
  */
-NS_CLASS_AVAILABLE(NA, 7_0) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @interface CLBeacon : NSObject <NSCopying, NSSecureCoding>
 
 /*

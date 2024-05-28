@@ -32,7 +32,7 @@
     AVCaptureInput instances and AVCaptureOutput instances via AVCaptureConnection objects that define the mapping
     between a set of AVCaptureInputPort objects and a single AVCaptureOutput.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureInput : NSObject 
 {
 @private
@@ -61,7 +61,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
  @discussion
     The notification object is the AVCaptureInputPort instance whose format description changed.
 */
-AVF_EXPORT NSString *const AVCaptureInputPortFormatDescriptionDidChangeNotification NS_AVAILABLE(10_7, 4_0);
+AVF_EXPORT NSString *const AVCaptureInputPortFormatDescriptionDidChangeNotification NS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED;
 
 @class AVCaptureInputPortInternal;
 
@@ -77,7 +77,7 @@ AVF_EXPORT NSString *const AVCaptureInputPortFormatDescriptionDidChangeNotificat
     formatDescription properties, and allow clients to control the flow of data via the enabled property. Input ports
     are used by an AVCaptureConnection to define the mapping between inputs and outputs in an AVCaptureSession.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureInputPort : NSObject
 {
 @private
@@ -153,7 +153,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     Instances of AVCaptureDeviceInput are input sources for AVCaptureSession that provide media data from devices
     connected to the system, represented by instances of AVCaptureDevice.
 */
-NS_CLASS_AVAILABLE(10_7, 4_0)
+NS_CLASS_AVAILABLE(10_7, 4_0) __TVOS_PROHIBITED
 @interface AVCaptureDeviceInput : AVCaptureInput 
 {
 @private
@@ -229,7 +229,7 @@ NS_CLASS_AVAILABLE(10_7, 4_0)
     Instances of AVCaptureScreenInput are input sources for AVCaptureSession that provide media data from
     one of the screens connected to the system, represented by CGDirectDisplayIDs.
 */
-NS_CLASS_AVAILABLE(10_7, NA)
+NS_CLASS_AVAILABLE(10_7, NA) __TVOS_PROHIBITED
 @interface AVCaptureScreenInput : AVCaptureInput 
 {
 @private
@@ -355,7 +355,7 @@ NS_CLASS_AVAILABLE(10_7, NA)
     The metadata supplied over the input port is provided by the client, and must conform to a
     client-supplied CMFormatDescription.  The AVMetadataItems are supplied in an AVTimedMetadataGroup.
 */
-NS_CLASS_AVAILABLE(NA, 9_0)
+NS_CLASS_AVAILABLE(NA, 9_0) __TVOS_PROHIBITED
 @interface AVCaptureMetadataInput : AVCaptureInput 
 {
 @private

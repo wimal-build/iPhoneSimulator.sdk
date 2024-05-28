@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 CS_CLASS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 @interface CSPerson : NSObject <NSSecureCoding,NSCopying>
 
 - (instancetype)initWithDisplayName:(nullable NSString *)displayName handles:(NSArray<NSString*> *)handles handleIdentifier:(NSString *)handleIdentifier;

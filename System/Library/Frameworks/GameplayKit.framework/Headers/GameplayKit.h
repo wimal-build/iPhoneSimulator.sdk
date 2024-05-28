@@ -17,9 +17,13 @@
 #import <GameplayKit/GKGoal.h>
 #import <GameplayKit/GKGraph.h>
 #import <GameplayKit/GKGraphNode.h>
+#import <GameplayKit/GKStrategist.h>
 #import <GameplayKit/GKMinmaxStrategist.h>
+#import <GameplayKit/GKMonteCarloStrategist.h>
+#import <GameplayKit/GKHybridStrategist.h>
 #import <GameplayKit/GKObstacle.h>
 #import <GameplayKit/GKPath.h>
+#import <GameplayKit/GKQuadTree.h>
 #import <GameplayKit/GKRandomDistribution.h>
 #import <GameplayKit/GKRuleSystem.h>
 #import <GameplayKit/GKState.h>

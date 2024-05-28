@@ -13,6 +13,9 @@
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UITraitCollection.h>
 #import <UIKit/UIViewControllerTransitionCoordinator.h>
+#ifndef SDK_HIDE_TIDE
+#import <UIKit/UIFocus.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -37,7 +40,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+#ifndef SDK_HIDE_TIDE
+NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment>
+#else
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAppearanceContainer, UITraitEnvironment, UIContentContainer>
+#endif
 
 @property(nonatomic, strong, readonly) UIViewController *presentingViewController;
 @property(nonatomic, strong, readonly) UIViewController *presentedViewController;

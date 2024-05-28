@@ -54,7 +54,7 @@ typedef struct {
  *    A CMDeviceMotion object contains basic information about the device's
  *		motion.
  */
-NS_CLASS_AVAILABLE(NA,4_0)
+NS_CLASS_AVAILABLE(NA,4_0) __TVOS_PROHIBITED
 @interface CMDeviceMotion : CMLogItem
 {
 @private

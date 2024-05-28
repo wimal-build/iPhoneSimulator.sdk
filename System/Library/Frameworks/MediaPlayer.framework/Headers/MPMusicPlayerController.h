@@ -23,25 +23,25 @@ typedef NS_ENUM(NSInteger, MPMusicPlaybackState) {
     MPMusicPlaybackStateInterrupted,
     MPMusicPlaybackStateSeekingForward,
     MPMusicPlaybackStateSeekingBackward
-};
+} __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMusicRepeatMode) {
     MPMusicRepeatModeDefault, // the user's preference for repeat mode
     MPMusicRepeatModeNone,
     MPMusicRepeatModeOne,
     MPMusicRepeatModeAll
-};
+} __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, MPMusicShuffleMode) {
     MPMusicShuffleModeDefault, // the user's preference for shuffle mode
     MPMusicShuffleModeOff,
     MPMusicShuffleModeSongs,
     MPMusicShuffleModeAlbums
-};
+} __TVOS_PROHIBITED;
 
 // MPMusicPlayerController allows playback of MPMediaItems through the Music application.
 MP_EXTERN_CLASS_AVAILABLE(3_0)
-
+__TVOS_PROHIBITED
 @interface MPMusicPlayerController : NSObject <MPMediaPlayback>
 
 /// Playing media items with the applicationMusicPlayer will restore the user's Music state after the application quits.
@@ -100,12 +100,12 @@ MP_EXTERN_CLASS_AVAILABLE(3_0)
 @end
 
 // Posted when the playback state changes, either programatically or by the user.
-MP_EXTERN NSString * const MPMusicPlayerControllerPlaybackStateDidChangeNotification;
+MP_EXTERN __TVOS_PROHIBITED NSString * const MPMusicPlayerControllerPlaybackStateDidChangeNotification;
 
 // Posted when the currently playing media item changes.
-MP_EXTERN NSString * const MPMusicPlayerControllerNowPlayingItemDidChangeNotification;
+MP_EXTERN __TVOS_PROHIBITED NSString * const MPMusicPlayerControllerNowPlayingItemDidChangeNotification;
 
 // Posted when the current volume changes.
-MP_EXTERN NSString * const MPMusicPlayerControllerVolumeDidChangeNotification;
+MP_EXTERN __TVOS_PROHIBITED NSString * const MPMusicPlayerControllerVolumeDidChangeNotification;
 
 NS_ASSUME_NONNULL_END

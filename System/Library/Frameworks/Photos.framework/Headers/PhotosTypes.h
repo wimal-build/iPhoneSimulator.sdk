@@ -10,6 +10,12 @@
 
 #pragma mark - PHCollectionListTypes
 
+typedef NS_ENUM(NSInteger, PHImageContentMode) {
+    PHImageContentModeAspectFit = 0,
+    PHImageContentModeAspectFill = 1,
+    PHImageContentModeDefault = PHImageContentModeAspectFit
+} NS_ENUM_AVAILABLE_IOS(8_0);
+
 typedef NS_ENUM(NSInteger, PHCollectionListType) {
     PHCollectionListTypeMomentList    = 1,
     PHCollectionListTypeFolder        = 2,
@@ -106,6 +112,8 @@ typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     PHAssetMediaSubtypePhotoPanorama      = (1UL << 0),
     PHAssetMediaSubtypePhotoHDR           = (1UL << 1),
     PHAssetMediaSubtypePhotoScreenshot NS_AVAILABLE_IOS(9_0) = (1UL << 2),
+    PHAssetMediaSubtypePhotoLive NS_AVAILABLE_IOS(9_1) = (1UL << 3),
+
     
     // Video subtypes
     PHAssetMediaSubtypeVideoStreamed      = (1UL << 16),
@@ -127,14 +135,15 @@ typedef NS_OPTIONS(NSUInteger, PHAssetSourceType) {
 } NS_AVAILABLE_IOS(9_0);
 
 typedef NS_ENUM(NSInteger, PHAssetResourceType) {
-    PHAssetResourceTypePhoto                    = 1,
-    PHAssetResourceTypeVideo                    = 2,
-    PHAssetResourceTypeAudio                    = 3,
-    PHAssetResourceTypeAlternatePhoto           = 4,
-    PHAssetResourceTypeFullSizePhoto            = 5,
-    PHAssetResourceTypeFullSizeVideo            = 6,
-    PHAssetResourceTypeAdjustmentData           = 7,
-    PHAssetResourceTypeAdjustmentBasePhoto      = 8,
+    PHAssetResourceTypePhoto                             = 1,
+    PHAssetResourceTypeVideo                             = 2,
+    PHAssetResourceTypeAudio                             = 3,
+    PHAssetResourceTypeAlternatePhoto                    = 4,
+    PHAssetResourceTypeFullSizePhoto                     = 5,
+    PHAssetResourceTypeFullSizeVideo                     = 6,
+    PHAssetResourceTypeAdjustmentData                    = 7,
+    PHAssetResourceTypeAdjustmentBasePhoto               = 8,
+    PHAssetResourceTypePairedVideo NS_AVAILABLE_IOS(9_1) = 9,
 } NS_ENUM_AVAILABLE_IOS(9_0);
 
 #endif

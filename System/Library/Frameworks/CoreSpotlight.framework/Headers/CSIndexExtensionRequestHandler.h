@@ -6,8 +6,10 @@
 //
 
 #import <CoreSpotlight/CSSearchableIndex.h>
+#import <CoreSpotlight/CSBase.h>
 
 CS_CLASS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 @interface CSIndexExtensionRequestHandler : NSObject <NSExtensionRequestHandling,CSSearchableIndexDelegate>
 
 @end

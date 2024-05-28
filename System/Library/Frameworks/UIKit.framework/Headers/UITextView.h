@@ -45,9 +45,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput>
 @property(nullable,nonatomic,strong) UIColor *textColor;
 @property(nonatomic) NSTextAlignment textAlignment;    // default is NSLeftTextAlignment
 @property(nonatomic) NSRange selectedRange;
-@property(nonatomic,getter=isEditable) BOOL editable;
+@property(nonatomic,getter=isEditable) BOOL editable __TVOS_PROHIBITED;
 @property(nonatomic,getter=isSelectable) BOOL selectable NS_AVAILABLE_IOS(7_0); // toggle selectability, which controls the ability of the user to select content and interact with URLs & attachments
-@property(nonatomic) UIDataDetectorTypes dataDetectorTypes NS_AVAILABLE_IOS(3_0);
+@property(nonatomic) UIDataDetectorTypes dataDetectorTypes NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
 
 @property(nonatomic) BOOL allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0); // defaults to NO
 @property(null_resettable,copy) NSAttributedString *attributedText NS_AVAILABLE_IOS(6_0);

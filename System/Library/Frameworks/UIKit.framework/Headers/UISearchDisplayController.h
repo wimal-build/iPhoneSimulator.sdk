@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class UISearchBar, UITableView, UIViewController, UIPopoverController;
 @protocol UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate;
 
-NS_CLASS_DEPRECATED_IOS(3_0, 8_0, "UISearchDisplayController has been replaced with UISearchController")
+NS_CLASS_DEPRECATED_IOS(3_0, 8_0, "UISearchDisplayController has been replaced with UISearchController") __TVOS_PROHIBITED
 @interface UISearchDisplayController : NSObject
 
 - (instancetype)initWithSearchBar:(UISearchBar *)searchBar contentsController:(UIViewController *)viewController;
@@ -39,7 +39,7 @@ NS_CLASS_DEPRECATED_IOS(3_0, 8_0, "UISearchDisplayController has been replaced w
 
 @end
 
-
+__TVOS_PROHIBITED
 @protocol UISearchDisplayDelegate <NSObject>
 
 @optional

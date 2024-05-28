@@ -12,10 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 // When opening a document from Spotlight, the application's application:willContinueUserActivityWithType:
 // method will get called with CSSearchableItemActionType, followed by  application:continueUserActivity:restorationHandler: with an NSUserActivity where the userInfo dictionary has a single key value pair where CSSearchableItemActivityIdentifier is the key and the value is the uniqueIdentifier used when creating the item.
-CORESPOTLIGHT_EXPORT NSString * const CSSearchableItemActionType CS_AVAILABLE(NA, 9_0);
-CORESPOTLIGHT_EXPORT NSString * const CSSearchableItemActivityIdentifier CS_AVAILABLE(NA, 9_0);
+CORESPOTLIGHT_EXPORT NSString * const CSSearchableItemActionType CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
+CORESPOTLIGHT_EXPORT NSString * const CSSearchableItemActivityIdentifier CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
 
 CS_CLASS_AVAILABLE(NA, 9_0)
+CS_TVOS_UNAVAILABLE
 @interface CSSearchableItem : NSObject <NSSecureCoding, NSCopying>
 
 - (instancetype)initWithUniqueIdentifier:(nullable NSString *)uniqueIdentifier //Can be null, one will be generated

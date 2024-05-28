@@ -63,14 +63,14 @@ typedef struct
  *          Note that using this reference frame may require device movement to 
  *          calibrate the magnetometer.
  */
-typedef NS_OPTIONS(NSUInteger, CMAttitudeReferenceFrame) {
+typedef NS_OPTIONS(NSUInteger, CMAttitudeReferenceFrame) __TVOS_PROHIBITED {
 	CMAttitudeReferenceFrameXArbitraryZVertical = 1 << 0,
 	CMAttitudeReferenceFrameXArbitraryCorrectedZVertical = 1 << 1,
 	CMAttitudeReferenceFrameXMagneticNorthZVertical = 1 << 2,
 	CMAttitudeReferenceFrameXTrueNorthZVertical = 1 << 3
 };
 
-NS_CLASS_AVAILABLE(NA,4_0)
+NS_CLASS_AVAILABLE(NA,4_0) __TVOS_PROHIBITED
 @interface CMAttitude : NSObject <NSCopying, NSSecureCoding>
 {
 @private
