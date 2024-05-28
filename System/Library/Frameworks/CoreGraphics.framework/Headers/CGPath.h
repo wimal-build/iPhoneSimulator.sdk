@@ -194,7 +194,7 @@ CG_EXTERN CGRect CGPathGetBoundingBox(CGPathRef path)
    path is empty, then return `CGRectNull'. */
 
 CG_EXTERN CGRect CGPathGetPathBoundingBox(CGPathRef path)
-  CG_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_2_0);
+  CG_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_4_0);
 
 /* Return true if `point' is contained in `path'; false otherwise. A point
    is contained in a path if it is inside the painted region when the path

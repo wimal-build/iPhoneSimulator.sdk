@@ -16,6 +16,7 @@ enum {
 typedef NSInteger GKVoiceChatPlayerState;
 
 // GKVoiceChat represents an instance of a named voice communications channel
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKVoiceChat : NSObject {
 }
 

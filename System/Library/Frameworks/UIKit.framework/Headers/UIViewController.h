@@ -42,7 +42,7 @@ typedef enum {
 } UIModalPresentationStyle;
 
 
-UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIViewController : UIResponder <NSCoding> {
     @package
     UIView           *_view;
     UITabBarItem     *_tabBarItem;
@@ -57,7 +57,7 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
     NSHashTable      *_childViewControllers; // Nonretained
     
     UIViewController *_childModalViewController;
-    UIViewController *_parentModalViewController;
+    UIViewController *_parentModalViewController; // This may be vestigal.
     UIView           *_modalTransitionView;
     UIResponder		 *_modalPreservedFirstResponder;
     UIResponder      *_defaultFirstResponder;
@@ -82,6 +82,7 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
     
     UIInterfaceOrientation _lastKnownInterfaceOrientation;
     CGSize _contentSizeForViewInPopover;
+    CGSize _formSheetSize;
     
     struct {
         unsigned int appearState:2;
@@ -101,6 +102,8 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
 	unsigned int oldModalInPopover:1;
 	unsigned int isModalInPopover:1;
         unsigned int restoreDeepestFirstResponder:1;
+        unsigned int isInWillRotateCallback:1;
+        unsigned int disallowMixedOrientationPresentations:1;        
     } _viewControllerFlags;
 }
 
@@ -142,14 +145,13 @@ UIKIT_EXTERN_CLASS @interface UIViewController : UIResponder <NSCoding> {
 @property(nonatomic,assign) BOOL wantsFullScreenLayout __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 
 @property(nonatomic,readonly) UIViewController *parentViewController; // If this view controller is inside a navigation controller or tab bar controller, or has been presented modally by another view controller, return it.
-
 @end
 
 // To make it more convenient for applications to adopt rotation, a view controller may implement the below methods.
 // Your UIWindow's frame should use [UIScreen mainScreen].bounds as its frame.
 @interface UIViewController (UIViewControllerRotation)
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation; // Override to allow rotation. Default returns YES only for UIDeviceOrientationPortrait
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation; // Override to allow rotation. Default returns YES only for UIInterfaceOrientationPortrait
 
 // The rotating header and footer views will slide out during the rotation and back in once it has completed.
 - (UIView *)rotatingHeaderView;     // Must be in the view hierarchy. Default returns nil.

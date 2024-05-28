@@ -15,6 +15,7 @@
 @class GKMatchPlayersDataRequest;
 
 // GKMatchRequest represents the parameters needed to create the match.
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKMatchRequest : NSObject {
 }
 
@@ -27,6 +28,7 @@
 @end
 
 // GKInvite represents an accepted game invite, it is used to create a GKMatchmakerViewController
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKInvite : NSObject {
 }
 
@@ -37,6 +39,7 @@
 
 
 // GKMatchmaker is a singleton object to manage match creation from invites and auto-matching.
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKMatchmaker : NSObject {
 }
 

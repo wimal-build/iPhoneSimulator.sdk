@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
+NS_CLASS_AVAILABLE(NA,4_0)
 @interface CMLogItem : NSObject <NSCoding, NSCopying>
 {
 @private
@@ -22,6 +22,6 @@
  *    Time at which the item is valid.
  *
  */
-@property(readonly, nonatomic) NSTimeInterval timestamp __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) NSTimeInterval timestamp;
 
 @end

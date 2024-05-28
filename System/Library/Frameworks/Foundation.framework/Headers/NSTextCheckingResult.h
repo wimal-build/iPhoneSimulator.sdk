@@ -37,8 +37,7 @@ enum {
 };
 typedef uint64_t NSTextCheckingTypes;   // a combination of types
 
-#if MAC_OS_X_VERSION_10_6 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
+NS_CLASS_AVAILABLE(10_6, 4_0)
 @interface NSTextCheckingResult : NSObject <NSCopying, NSCoding>
 
 /* Mandatory properties, used with all types of results. */
@@ -57,38 +56,32 @@ typedef uint64_t NSTextCheckingTypes;   // a combination of types
 @property (readonly) NSTimeInterval duration;
 @property (readonly) NSURL *URL;
 @property (readonly) NSString *replacementString;
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-@property (readonly) NSDictionary *components;
-@property (readonly) NSRegularExpression *regularExpression;
-@property (readonly) NSString *phoneNumber;
-#endif /* __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED */
+@property (readonly) NSDictionary *components NS_AVAILABLE(NA, 4_0);
+@property (readonly) NSRegularExpression *regularExpression NS_AVAILABLE(NA, 4_0);
+@property (readonly) NSString *phoneNumber NS_AVAILABLE(NA, 4_0);
 
 @property (readonly) NSDictionary *addressComponents;
 
 /* A result must have at least one range, but may optionally have more (for example, to represent regular expression capture groups).  The range at index 0 always matches the range property.  Additional ranges, if any, will have indexes from 1 to numberOfRanges-1. */
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-@property (readonly) NSUInteger numberOfRanges;
-- (NSRange)rangeAtIndex:(NSUInteger)idx;
-#endif /* __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED */
+@property (readonly) NSUInteger numberOfRanges NS_AVAILABLE(NA, 4_0);
+- (NSRange)rangeAtIndex:(NSUInteger)idx NS_AVAILABLE(NA, 4_0);
 
 @end
 
 
 
 /* Keys for address components. */
-FOUNDATION_EXPORT NSString * const NSTextCheckingNameKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingJobTitleKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingOrganizationKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingStreetKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingCityKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingStateKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingZIPKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingCountryKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingPhoneKey;
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-FOUNDATION_EXPORT NSString * const NSTextCheckingAirlineKey;
-FOUNDATION_EXPORT NSString * const NSTextCheckingFlightKey;
-#endif /* __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED */
+FOUNDATION_EXPORT NSString * const NSTextCheckingNameKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingJobTitleKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingOrganizationKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingStreetKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingCityKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingStateKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingZIPKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingCountryKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingPhoneKey NS_AVAILABLE(10_6, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingAirlineKey NS_AVAILABLE(NA, 4_0);
+FOUNDATION_EXPORT NSString * const NSTextCheckingFlightKey NS_AVAILABLE(NA, 4_0);
 
 
 @interface NSTextCheckingResult (NSTextCheckingResultCreation)
@@ -105,12 +98,8 @@ FOUNDATION_EXPORT NSString * const NSTextCheckingFlightKey;
 + (NSTextCheckingResult *)dashCheckingResultWithRange:(NSRange)range replacementString:(NSString *)replacementString;
 + (NSTextCheckingResult *)replacementCheckingResultWithRange:(NSRange)range replacementString:(NSString *)replacementString;
 + (NSTextCheckingResult *)correctionCheckingResultWithRange:(NSRange)range replacementString:(NSString *)replacementString;
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-+ (NSTextCheckingResult *)regularExpressionCheckingResultWithRanges:(NSRangePointer)ranges count:(NSUInteger)count regularExpression:(NSRegularExpression *)regularExpression;
-+ (NSTextCheckingResult *)phoneNumberCheckingResultWithRange:(NSRange)range phoneNumber:(NSString *)phoneNumber;
-+ (NSTextCheckingResult *)transitInformationCheckingResultWithRange:(NSRange)range components:(NSDictionary *)components;
-#endif /* __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED */
++ (NSTextCheckingResult *)regularExpressionCheckingResultWithRanges:(NSRangePointer)ranges count:(NSUInteger)count regularExpression:(NSRegularExpression *)regularExpression NS_AVAILABLE(NA, 4_0);
++ (NSTextCheckingResult *)phoneNumberCheckingResultWithRange:(NSRange)range phoneNumber:(NSString *)phoneNumber NS_AVAILABLE(NA, 4_0);
++ (NSTextCheckingResult *)transitInformationCheckingResultWithRange:(NSRange)range components:(NSDictionary *)components NS_AVAILABLE(NA, 4_0);
 
 @end
-
-#endif /* MAC_OS_X_VERSION_10_6 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED */

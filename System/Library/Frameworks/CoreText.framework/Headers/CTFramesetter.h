@@ -89,7 +89,7 @@ CTFramesetterRef CTFramesetterCreateWithAttributedString(
 
 	@param		path
 				A CGPath object that specifies the shape which the frame will
-				take on.  Currently accepts only rectangles.
+				take on.
 
 	@param		frameAttributes
 				Additional attributes that control the frame filling process

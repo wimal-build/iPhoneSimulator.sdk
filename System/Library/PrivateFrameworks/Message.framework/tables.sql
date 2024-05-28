@@ -53,6 +53,12 @@ CREATE TABLE message_data(ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
                           UNIQUE(message_id, part));
 CREATE INDEX message_data_part_index ON message_data(message_id, part);
 
+CREATE TABLE message_metadata(ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+                              message_id INTEGER,
+                              key TEXT,
+                              data);
+CREATE UNIQUE INDEX message_metadata_key_index ON message_metadata(message_id, key);
+
 CREATE TABLE properties (ROWID INTEGER PRIMARY KEY,
                          key,
                          value,

@@ -11,6 +11,7 @@
 @class UITableViewCell;
 @protocol ABPersonViewControllerDelegate;
 
+NS_CLASS_AVAILABLE(NA, 2_0)
 @interface ABPersonViewController : UIViewController
 {
     @private

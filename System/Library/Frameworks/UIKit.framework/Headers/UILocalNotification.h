@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 
-UIKIT_EXTERN_CLASS @interface UILocalNotification : NSObject<NSCopying, NSCoding>       // added in iOS 4.0
+UIKIT_CLASS_AVAILABLE(4_0) @interface UILocalNotification : NSObject<NSCopying, NSCoding>       // added in iOS 4.0
 
 // scheduling
 @property(nonatomic,copy) NSDate *fireDate;

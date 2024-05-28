@@ -9,8 +9,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
 enum {
     UIRectCornerTopLeft     = 1 << 0,
     UIRectCornerTopRight    = 1 << 1,
@@ -20,7 +18,7 @@ enum {
 };
 typedef NSUInteger UIRectCorner;
 
-UIKIT_EXTERN_CLASS @interface UIBezierPath : NSObject<NSCopying, NSCoding> {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UIBezierPath : NSObject<NSCopying, NSCoding> {
 @private
     CGPathRef _path;
     CGFloat *_lineDashPattern;
@@ -95,5 +93,3 @@ UIKIT_EXTERN_CLASS @interface UIBezierPath : NSObject<NSCopying, NSCoding> {
 - (void)addClip;
 
 @end
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

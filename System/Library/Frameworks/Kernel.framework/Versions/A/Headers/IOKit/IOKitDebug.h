@@ -82,6 +82,7 @@ enum {
     kOSRegistryModsMode =         0x00040000ULL,  // Change default registry modification handling - panic vs. log
     kIOTraceIOService   =         0x00080000ULL,
     kIOLogHibernate     =         0x00100000ULL,
+    kIOStatistics       =         0x04000000ULL,
 
     // debug aids - change behaviour
     kIONoFreeObjects    =         0x00100000ULL,

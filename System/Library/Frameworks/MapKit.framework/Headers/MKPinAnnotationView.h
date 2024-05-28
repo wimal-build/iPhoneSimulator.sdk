@@ -16,6 +16,7 @@ typedef NSUInteger MKPinAnnotationColor;
 
 @class MKPinAnnotationViewInternal;
 
+NS_CLASS_AVAILABLE(__MAC_NA, 3_0)
 @interface MKPinAnnotationView : MKAnnotationView
 {
 @private

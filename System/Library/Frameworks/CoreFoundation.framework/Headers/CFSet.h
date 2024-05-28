@@ -342,7 +342,7 @@ CF_EXPORT
 const void *CFSetGetValue(CFSetRef theSet, const void *value);
 
 /*!
-	@function CFSetGetValue
+	@function CFSetGetValueIfPresent
 	Retrieves a value in the set which hashes the same as the specified value,
         if present.
 	@param theSet The set to be queried. If this parameter is not a

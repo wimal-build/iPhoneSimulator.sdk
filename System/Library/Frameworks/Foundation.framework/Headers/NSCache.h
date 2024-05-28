@@ -4,10 +4,9 @@
 
 #import <Foundation/NSObject.h>
 
-#if MAC_OS_X_VERSION_10_6 <= MAC_OS_X_VERSION_MAX_ALLOWED
-
 @class NSString;
 
+NS_CLASS_AVAILABLE(10_6, 4_0)
 @interface NSCache : NSObject {
 @private
     id _delegate;
@@ -44,5 +43,4 @@
 - (void)cache:(NSCache *)cache willEvictObject:(id)obj;
 @end
 
-#endif
 

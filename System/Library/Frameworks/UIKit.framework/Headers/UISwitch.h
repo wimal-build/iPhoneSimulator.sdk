@@ -10,7 +10,7 @@
 #import <UIKit/UIControl.h>
 #import <UIKit/UIKitDefines.h>
 
-UIKIT_EXTERN_CLASS @interface UISwitch : UIControl <NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UISwitch : UIControl <NSCoding> {
   @private
     id _control;
 }

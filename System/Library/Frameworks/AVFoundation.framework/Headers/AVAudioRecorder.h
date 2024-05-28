@@ -1,7 +1,9 @@
 /*
-  AVAudioRecorder.h
+	File:  AVAudioRecorder.h
+	
+	Framework:  AVFoundation
 
-  Copyright 2008 Apple Inc. All rights reserved.
+	Copyright 2008-2010 Apple Inc. All rights reserved.
 */
 
 #import <Foundation/NSObject.h>
@@ -68,6 +70,7 @@
 /* if an error occurs while encoding it will be reported to the delegate. */
 - (void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder error:(NSError *)error;
 
+#if TARGET_OS_IPHONE
 /* audioRecorderBeginInterruption: is called when the audio session has been interrupted while the recorder was recording. The recorder will have been paused. */
 - (void)audioRecorderBeginInterruption:(AVAudioRecorder *)recorder;
 
@@ -80,5 +83,7 @@
 
 /* audioRecorderEndInterruption: is called when the preferred method, audioRecorderEndInterruption:withFlags:, is not implemented. */
 - (void)audioRecorderEndInterruption:(AVAudioRecorder *)recorder;
+#endif // TARGET_OS_IPHONE
+
 @end
 

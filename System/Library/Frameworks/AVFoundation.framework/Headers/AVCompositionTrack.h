@@ -58,9 +58,9 @@
     AVMutableCompositionTrackInternal    *_mutablePriv;
 }
 
-/* indicates a timescale in which time values for the track can be operated upon without extraneous numerical conversion
-   if not set, returns the naturalTimeScale of the first non-empty edit, or 600 if there are no non-empty edits
-   set to 0 to revert to default behavior */
+/* Indicates a timescale in which time values for the track can be operated upon without extraneous numerical conversion.
+   If not set, returns the naturalTimeScale of the first non-empty edit, or 600 if there are no non-empty edits.
+   Set to 0 to revert to default behavior. */
 @property (nonatomic) CMTimeScale naturalTimeScale;
 
 /* indicates the language associated with the track, as an ISO 639-2/T language code; if not set, returns nil */
@@ -160,6 +160,6 @@
 		be made via an instance of NSMutableArray, and the resulting array can be tested via
 		-validateTrackSegments:error:.
 */
-- (BOOL)validateTrackSegments:(NSArray *)trackSegments error:(NSError **)error;	// allows clients to pre-flight arrays of trackSegments
+- (BOOL)validateTrackSegments:(NSArray *)trackSegments error:(NSError **)error;
 
 @end

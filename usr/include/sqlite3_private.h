@@ -44,4 +44,11 @@ extern void _sqlite3_purgeEligiblePagerCacheMemory(void);
 */
 #define SQLITE_TRUNCATE_DATABASE      101
 
+/*
+** Pass the SQLITE_REPLACE_DATABASE operation code to sqlite3_file_control() 
+** and a sqlite3 pointer to another open database file to safely copy the 
+** contents of that database file into the receiving database.
+*/
+#define SQLITE_REPLACE_DATABASE       102
+
 #endif

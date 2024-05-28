@@ -14,7 +14,7 @@
 // In -viewDidAppear:, it flashes the table's scroll indicators.
 // Implements -setEditing:animated: to toggle the editing state of the table.
 
-UIKIT_EXTERN_CLASS @interface UITableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
   @private
     UITableViewStyle _tableViewStyle;
     id               _keyboardSupport;

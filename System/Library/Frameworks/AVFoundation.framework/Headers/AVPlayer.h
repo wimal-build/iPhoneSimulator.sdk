@@ -80,7 +80,7 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 /*!
 	@method			playerWithPlayerItem:
 	@abstract		Create an AVPlayer that plays a single audiovisual item.
-	@param			AVPlayerItem
+	@param			item
 	@result			An instance of AVPlayer
 	@discussion		Useful in order to play items for which an AVAsset has previously been created. See -[AVPlayerItem initWithAsset:].
 */
@@ -132,7 +132,7 @@ typedef NSInteger AVPlayerActionAtItemEnd;
  @method			currentTime
  @abstract			Returns the current time of the current item.
  @result			A CMTime
- @discussion		Returns the current time of the current item. Not key-value observable; use -addPeriodicTimeObserverForInterval:usingBlock: instead.
+ @discussion		Returns the current time of the current item. Not key-value observable; use -addPeriodicTimeObserverForInterval:queue:usingBlock: instead.
  */
 - (CMTime)currentTime;
 
@@ -158,14 +158,16 @@ typedef NSInteger AVPlayerActionAtItemEnd;
  */
 - (void)seekToTime:(CMTime)time toleranceBefore:(CMTime)toleranceBefore toleranceAfter:(CMTime)toleranceAfter;
 
-
+/* indicates the current item of the player */
 @property (nonatomic, readonly) AVPlayerItem *currentItem;
 
 /* indicates the current rate of playback; 0.0 means "stopped", 1.0 means "play at the natural rate of the current item" */
 @property (nonatomic) float rate;
 
+/* indicates the action that the player should perform when playback of an item reaches its end time */
 @property (nonatomic) AVPlayerActionAtItemEnd actionAtItemEnd;
 
+/* indicates whether display of closed captions is enabled */
 @property (nonatomic, getter=isClosedCaptionDisplayEnabled) BOOL closedCaptionDisplayEnabled;
 
 @end
@@ -191,9 +193,12 @@ typedef NSInteger AVPlayerActionAtItemEnd;
 /*!
 	@method			replaceCurrentItemWithPlayerItem:
 	@abstract		Replaces the player's current item with the specified player item.
-	@discussion		For best results ensure that the tracks property of an AVPlayerItem's AVAsset, if there is one,
-					has reached the status AVKeyValueStatusLoaded before attempting to replace the current item with it.
-					See -[AVAsset loadValuesAsynchronouslyForKeys:completionHandler:].
+	@param			item
+	  The AVPlayerItem that will become the player's current item.
+	@discussion
+	  For best results ensure that the tracks property of an AVPlayerItem's AVAsset, if there is one,
+	  has reached the status AVKeyValueStatusLoaded before attempting to replace the current item with it.
+	  See -[AVAsset loadValuesAsynchronouslyForKeys:completionHandler:].
 */
 - (void)replaceCurrentItemWithPlayerItem:(AVPlayerItem *)item;
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007-2008 Apple Inc. All rights reserved.
+ * Copyright (c) 2007-2010 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -2905,7 +2905,7 @@ typedef int mpo_posixshm_check_truncate_t(
 	kauth_cred_t cred,
 	struct pshminfo *ps,
 	struct label *shmlabel,
-	size_t len
+	off_t len
 );
 /**
   @brief Access control check for POSIX shared memory unlink
@@ -2965,6 +2965,45 @@ typedef void mpo_posixshm_label_destroy_t(
 */
 typedef void mpo_posixshm_label_init_t(
 	struct label *label
+);
+/**
+ @brief Access control check for privileged operations
+ @param cred Subject credential
+ @param priv Requested privilege (see sys/priv.h)
+
+ Determine whether the subject identified by the credential can perform
+ a privileged operation.  Privileged operations are allowed if the cred
+ is the superuser or any policy returns zero for mpo_priv_grant, unless
+ any policy returns nonzero for mpo_priv_check.
+
+ @return Return 0 if access is granted, otherwise EPERM should be returned.
+*/
+typedef int mpo_priv_check_t(
+	kauth_cred_t cred,
+	int priv
+);
+/**
+ @brief Grant regular users the ability to perform privileged operations
+ @param cred Subject credential
+ @param priv Requested privilege (see sys/priv.h)
+
+ Determine whether the subject identified by the credential should be
+ allowed to perform a privileged operation that in the absense of any
+ MAC policy it would not be able to perform.  Privileged operations are
+ allowed if the cred is the superuser or any policy returns zero for
+ mpo_priv_grant, unless any policy returns nonzero for mpo_priv_check.
+
+ Unlike other MAC hooks which can only reduce the privilege of a
+ credential, this hook raises the privilege of a credential when it
+ returns 0.  Extreme care must be taken when implementing this hook to
+ avoid undermining the security of the system.
+
+ @return Return 0 if additional privilege is granted, otherwise EPERM
+ should be returned.
+*/
+typedef int mpo_priv_grant_t(
+	kauth_cred_t cred,
+	int priv
 );
 /**
   @brief Access control check for debugging process
@@ -3061,6 +3100,37 @@ typedef int mpo_proc_check_getlcid_t(
 	struct proc *p0,
 	struct proc *p,
 	pid_t pid
+);
+/**
+  @brief Access control check for mmap MAP_ANON
+  @param proc User process requesting the memory
+  @param cred Subject credential
+  @param u_addr Start address of the memory range
+  @param u_size Length address of the memory range
+  @param prot mmap protections; see mmap(2)
+  @param flags Type of mapped object; see mmap(2)
+  @param maxprot Maximum rights
+
+  Determine whether the subject identified by the credential should be
+  allowed to obtain anonymous memory using the specified flags and 
+  protections on the new mapping. MAP_ANON will always be present in the
+  flags. Certain combinations of flags with a non-NULL addr may
+  cause a mapping to be rejected before this hook is called. The maxprot field
+  holds the maximum permissions on the new mapping, a combination of
+  VM_PROT_READ, VM_PROT_WRITE and VM_PROT_EXECUTE. To avoid overriding prior
+  access control checks, a policy should only remove flags from maxprot.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned. Suggested failure: EPERM for lack of privilege.
+*/
+typedef int mpo_proc_check_map_anon_t(
+	struct proc *proc,
+	kauth_cred_t cred,
+	user_addr_t u_addr,
+	user_size_t u_size,
+	int prot,
+	int flags,
+	int *maxprot
 );
 /**
   @brief Access control check for setting memory protections
@@ -5143,6 +5213,25 @@ typedef int mpo_vnode_check_revoke_t(
 	struct label *label
 );
 /**
+  @brief Access control check for searchfs
+  @param cred Subject credential
+  @param vp Object vnode
+  @param vlabel Policy label for vp
+  @param alist List of attributes used as search criteria
+
+  Determine whether the subject identified by the credential can search the
+  vnode using the searchfs system call.
+
+  @return Return 0 if access is granted, otherwise an appropriate value for
+  errno should be returned.
+*/
+typedef int mpo_vnode_check_searchfs_t(
+	kauth_cred_t cred,
+	struct vnode *vp,
+	struct label *vlabel,
+	struct attrlist *alist
+);
+/**
   @brief Access control check for select
   @param cred Subject credential
   @param vp Object vnode
@@ -5834,7 +5923,7 @@ typedef void mpo_reserved_hook_t(void);
 /*!
   \struct mac_policy_ops
 */
-#define MAC_POLICY_OPS_VERSION 4 /* inc when new reserved slots are taken */
+#define MAC_POLICY_OPS_VERSION 7 /* inc when new reserved slots are taken */
 struct mac_policy_ops {
 	mpo_audit_check_postselect_t		*mpo_audit_check_postselect;
 	mpo_audit_check_preselect_t		*mpo_audit_check_preselect;
@@ -6148,8 +6237,29 @@ struct mac_policy_ops {
 	mpo_iokit_check_open_t			*mpo_iokit_check_open;
 	mpo_iokit_check_set_properties_t	*mpo_iokit_check_set_properties;
 	mpo_system_check_chud_t			*mpo_system_check_chud;
-	mpo_reserved_hook_t			*mpo_reserved8;
-	mpo_reserved_hook_t			*mpo_reserved9;
+	mpo_vnode_check_searchfs_t		*mpo_vnode_check_searchfs;
+	mpo_priv_check_t			*mpo_priv_check;
+	mpo_priv_grant_t			*mpo_priv_grant;
+	mpo_proc_check_map_anon_t		*mpo_proc_check_map_anon;
+	mpo_reserved_hook_t			*mpo_reserved11;
+	mpo_reserved_hook_t			*mpo_reserved12;
+	mpo_reserved_hook_t			*mpo_reserved13;
+	mpo_reserved_hook_t			*mpo_reserved14;
+	mpo_reserved_hook_t			*mpo_reserved15;
+	mpo_reserved_hook_t			*mpo_reserved16;
+	mpo_reserved_hook_t			*mpo_reserved17;
+	mpo_reserved_hook_t			*mpo_reserved18;
+	mpo_reserved_hook_t			*mpo_reserved19;
+	mpo_reserved_hook_t			*mpo_reserved20;
+	mpo_reserved_hook_t			*mpo_reserved21;
+	mpo_reserved_hook_t			*mpo_reserved22;
+	mpo_reserved_hook_t			*mpo_reserved23;
+	mpo_reserved_hook_t			*mpo_reserved24;
+	mpo_reserved_hook_t			*mpo_reserved25;
+	mpo_reserved_hook_t			*mpo_reserved26;
+	mpo_reserved_hook_t			*mpo_reserved27;
+	mpo_reserved_hook_t			*mpo_reserved28;
+	mpo_reserved_hook_t			*mpo_reserved29;
 };
 
 /**

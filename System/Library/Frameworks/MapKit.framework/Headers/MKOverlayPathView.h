@@ -5,11 +5,10 @@
 //  Copyright 2010 Apple, Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <UIKit/UIKit.h>
 #import <MapKit/MKOverlayView.h>
 
+NS_CLASS_AVAILABLE(__MAC_NA, 4_0)
 @interface MKOverlayPathView : MKOverlayView {
 @package    
     UIColor *_fillColor;
@@ -51,5 +50,3 @@
 - (void)fillPath:(CGPathRef)path inContext:(CGContextRef)context;
 
 @end
-
-#endif

@@ -97,6 +97,7 @@
 @class GKVoiceChatService;
 
 // GKVoiceChatService provides voice chat capabilities depending on your networking situation.
+NS_CLASS_AVAILABLE(NA, 4_1)
 GK_EXTERN_CLASS @interface GKVoiceChatService : NSObject {
 	@private
 	id _voiceChatService;

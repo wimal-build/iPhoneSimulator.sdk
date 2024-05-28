@@ -37,6 +37,7 @@ extern NSString *const ALAssetTypeUnknown __OSX_AVAILABLE_STARTING(__MAC_NA,__IP
 
 @class ALAssetRepresentation;
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface ALAsset : NSObject {
 @package
     id _internal;

@@ -109,7 +109,7 @@ extern "C" {
 */
 #define SQLITE_VERSION        "3.6.23.2"
 #define SQLITE_VERSION_NUMBER 3006023
-#define SQLITE_SOURCE_ID      "2010-06-16 19:48:57 21ca87f69125a9e7124c6ddc566d17f64661b0d3"
+#define SQLITE_SOURCE_ID      "2010-10-02 01:01:04 29a681dd7b41e289c65611389863e83f4b47b8cd"
 
 /*
 ** CAPI3REF: Run-Time Library Version Numbers
@@ -5739,4 +5739,60 @@ SQLITE_API void sqlite3_log(int iErrCode, const char *zFormat, ...);
 }  /* End of the 'extern "C"' block */
 #endif
 #endif
+
+/*
+** 2010 August 30
+**
+** The author disclaims copyright to this source code.  In place of
+** a legal notice, here is a blessing:
+**
+**    May you do good and not evil.
+**    May you find forgiveness for yourself and forgive others.
+**    May you share freely, never taking more than you give.
+**
+*************************************************************************
+*/
+
+#ifndef _SQLITE3RTREE_H_
+#define _SQLITE3RTREE_H_
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct sqlite3_rtree_geometry sqlite3_rtree_geometry;
+
+/*
+** Register a geometry callback named zGeom that can be used as part of an
+** R-Tree geometry query as follows:
+**
+**   SELECT ... FROM <rtree> WHERE <rtree col> MATCH $zGeom(... params ...)
+*/
+SQLITE_API int sqlite3_rtree_geometry_callback(
+  sqlite3 *db,
+  const char *zGeom,
+  int (*xGeom)(sqlite3_rtree_geometry *, int nCoord, double *aCoord, int *pRes),
+  void *pContext
+);
+
+
+/*
+** A pointer to a structure of the following type is passed as the first
+** argument to callbacks registered using rtree_geometry_callback().
+*/
+struct sqlite3_rtree_geometry {
+  void *pContext;                 /* Copy of pContext passed to s_r_g_c() */
+  int nParam;                     /* Size of array aParam[] */
+  double *aParam;                 /* Parameters passed to SQL geom function */
+  void *pUser;                    /* Callback implementation user data */
+  void (*xDelUser)(void *);       /* Called by SQLite to clean up pUser */
+};
+
+
+#ifdef __cplusplus
+}  /* end of the 'extern "C"' block */
+#endif
+
+#endif  /* ifndef _SQLITE3RTREE_H_ */
 

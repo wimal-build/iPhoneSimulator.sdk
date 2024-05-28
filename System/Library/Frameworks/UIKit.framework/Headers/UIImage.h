@@ -21,7 +21,7 @@ typedef enum {
     UIImageOrientationRightMirrored, // vertical flip
 } UIImageOrientation;
 
-UIKIT_EXTERN_CLASS @interface UIImage : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIImage : NSObject {
   @package
     CFTypeRef _imageRef;
     CGFloat   _scale;

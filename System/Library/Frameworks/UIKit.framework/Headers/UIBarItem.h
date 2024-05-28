@@ -11,7 +11,7 @@
 
 @class UIImage;
 
-UIKIT_EXTERN_CLASS @interface UIBarItem : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIBarItem : NSObject {
   @private
 }
 

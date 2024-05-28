@@ -1,4 +1,3 @@
-
 /*
  *  CLLocation.h
  *  CoreLocation
@@ -134,6 +133,7 @@ CLLocationCoordinate2D CLLocationCoordinate2DMake(CLLocationDegrees latitude, CL
  *  Discussion:
  *    Represents a geographical coordinate along with accuracy and timestamp information.
  */
+NS_CLASS_AVAILABLE(10_6, 2_0)
 @interface CLLocation : NSObject <NSCopying, NSCoding>
 {
 @private
@@ -160,6 +160,20 @@ CLLocationCoordinate2D CLLocationCoordinate2DMake(CLLocationDegrees latitude, CL
 	horizontalAccuracy:(CLLocationAccuracy)hAccuracy
 	verticalAccuracy:(CLLocationAccuracy)vAccuracy
 	timestamp:(NSDate *)timestamp;
+
+/*
+ *  initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:course:speed:timestamp:
+ *  
+ *  Discussion:
+ *    Initialize with the specified parameters.
+ */
+- (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate
+    altitude:(CLLocationDistance)altitude
+    horizontalAccuracy:(CLLocationAccuracy)hAccuracy
+    verticalAccuracy:(CLLocationAccuracy)vAccuracy
+    course:(CLLocationDirection)course
+    speed:(CLLocationSpeed)speed
+    timestamp:(NSDate *)timestamp __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
 
 /*
  *  coordinate

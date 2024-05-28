@@ -7,8 +7,6 @@
 
 #import <StoreKit/SKRequest.h>
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0
-
 @class SKProductsRequest, SKProductsResponse;
 
 
@@ -22,7 +20,7 @@
 
 
 // request information about products for your application
-SK_EXTERN_CLASS @interface SKProductsRequest : SKRequest {
+SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProductsRequest : SKRequest {
 @private
     id _productsRequestInternal;
 }
@@ -35,7 +33,7 @@ SK_EXTERN_CLASS @interface SKProductsRequest : SKRequest {
 @end
 
 
-SK_EXTERN_CLASS @interface SKProductsResponse : NSObject {
+SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProductsResponse : NSObject {
 @private
     id _internal;
 }
@@ -47,5 +45,3 @@ SK_EXTERN_CLASS @interface SKProductsResponse : NSObject {
 @property(nonatomic, readonly) NSArray *invalidProductIdentifiers __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
 
 @end
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0

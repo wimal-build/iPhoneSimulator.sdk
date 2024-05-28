@@ -16,7 +16,7 @@
 @protocol UIAlertViewDelegate;
 @class UILabel, UIToolbar, UITabBar, UIWindow, UIBarButtonItem, UIPopoverController;
 
-UIKIT_EXTERN_CLASS @interface UIAlertView : UIView {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIAlertView : UIView {
 @private
     id <UIAlertViewDelegate> _delegate;
     UILabel   *_titleLabel;
@@ -40,6 +40,7 @@ UIKIT_EXTERN_CLASS @interface UIAlertView : UIView {
     UIView *_keyboard;
     UIView *_table;
     UIView *_dimView;
+    UIView *_backgroundImageView;
     struct {
         unsigned int numberOfRows:7;
         unsigned int delegateAlertSheetButtonClicked:1;
@@ -85,6 +86,8 @@ UIKIT_EXTERN_CLASS @interface UIAlertView : UIView {
         unsigned int keyboardShowing:1;
         unsigned int dontCallDismissDelegate:1;
         unsigned int useAutomaticKB:1;
+        unsigned int manualKeyboardVisible:1;
+		unsigned int rotatingManualKeybaord:1;
         unsigned int shouldHandleFirstKeyUpEvent:1; // when presenting with hardware KB we have to handle the first key up event we get so we don't end up repeating the last key
         unsigned int forceKeyboardUse:1;
         unsigned int cancelWhenDoneAnimating:1;

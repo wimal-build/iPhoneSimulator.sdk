@@ -161,6 +161,7 @@ struct iovec {
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 #define	SO_REUSEPORT	0x0200		/* allow local address & port reuse */
 #define	SO_TIMESTAMP	0x0400		/* timestamp received dgram traffic */
+#define SO_TIMESTAMP_MONOTONIC	0x0800	/* Monotonically increasing timestamp */
 #ifndef __APPLE__
 #define	SO_ACCEPTFILTER	0x1000		/* there is an accept filter */
 #else
@@ -610,10 +611,11 @@ struct cmsgcred {
 #endif	/* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 
 /* "Socket"-level control message types: */
-#define	SCM_RIGHTS	0x01		/* access rights (array of int) */
+#define	SCM_RIGHTS			0x01	/* access rights (array of int) */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#define	SCM_TIMESTAMP	0x02		/* timestamp (struct timeval) */
-#define	SCM_CREDS	0x03		/* process creds (struct cmsgcred) */
+#define	SCM_TIMESTAMP			0x02	/* timestamp (struct timeval) */
+#define	SCM_CREDS			0x03	/* process creds (struct cmsgcred) */
+#define	SCM_TIMESTAMP_MONOTONIC		0x04	/* timestamp (uint64_t) */ 
 
 #endif	/* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 
@@ -662,7 +664,6 @@ struct user32_sf_hdtr {
 
 
 #endif	/* !_POSIX_C_SOURCE */
-
 
 
 #include <sys/kpi_socket.h>

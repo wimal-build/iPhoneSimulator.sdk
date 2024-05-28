@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 
 /*!
@@ -15,6 +13,7 @@
     @discussion     The EKAlarm class represents alarms on an event. An alarm can be relative (e.g. 15 mins before) 
                     or absolute (specific time).
 */
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKAlarm : NSObject <NSCopying> {
 @private
     NSDate             *_absoluteDate;
@@ -58,5 +57,3 @@
 @property(nonatomic, copy) NSDate *absoluteDate;
 
 @end
-
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED

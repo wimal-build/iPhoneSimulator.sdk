@@ -276,7 +276,7 @@ typedef NSInteger AVAssetWriterStatus;
  
  @discussion
 	This method must be called after all inputs have added and other configuration properties have been set in order to
-	tell to receiver to prepare to start writing. After this method is called, clients can start writing sessions using
+	tell the receiver to prepare for writing. After this method is called, clients can start writing sessions using
 	startSessionAtSourceTime: and can write media samples using the methods provided by each of the receiver's inputs.
  
 	If writing cannot be started, this method returns NO. Clients can check the values of the status and error properties

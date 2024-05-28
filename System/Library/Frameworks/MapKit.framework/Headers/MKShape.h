@@ -5,11 +5,10 @@
 //  Copyright 2010 Apple, Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <MapKit/MKAnnotation.h>
 
+NS_CLASS_AVAILABLE(__MAC_NA, 4_0)
 @interface MKShape : NSObject <MKAnnotation> {
 @package
     NSString *_title;
@@ -20,5 +19,3 @@
 @property (copy) NSString *subtitle;
 
 @end
-
-#endif

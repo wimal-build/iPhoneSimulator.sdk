@@ -15,7 +15,7 @@ typedef CGFloat UIWindowLevel;
 
 @class UIEvent, UIScreen, NSUndoManager, UIViewController;
 
-UIKIT_EXTERN_CLASS @interface UIWindow : UIView {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIWindow : UIView {
   @package
     id                       _delegate;
     CGFloat                  _windowLevel;

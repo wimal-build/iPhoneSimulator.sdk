@@ -61,7 +61,7 @@ typedef NSInteger AVAssetReaderStatus;
 	AVAssetReaderTrackOutput, a concrete subclass of AVAssetReaderOutput, can either read the track's media samples in
 	the format in which they are stored by the asset or convert the media samples to a different format.
 	
-	AVAssetReaderAudioMixOuput mixes multiple audio tracks of the asset after reading them, while
+	AVAssetReaderAudioMixOutput mixes multiple audio tracks of the asset after reading them, while
 	AVAssetReaderVideoCompositionOutput composites multiple video tracks after reading them.
  */
 @interface AVAssetReader : NSObject
@@ -136,11 +136,11 @@ typedef NSInteger AVAssetReaderStatus;
 /*!
  @property timeRange
  @abstract
-	Specifies a range of time in within the receiver's asset from which media data will be read.
+	Specifies a range of time that may limit the temporal portion of the receiver's asset from which media data will be read.
 
  @discussion
-	The value of this property is a CMTimeRange that specifies the maximum and minimum within which the asset will be
-	read. The default value is CMTimeRangeMake(kCMTimeZero, kCMTimePositiveInfinity).
+	The intersection of the value of timeRange and CMTimeRangeMake(kCMTimeZero, asset.duration) will determine the time range
+	of the asset from which media data will be read. The default value of timeRange is CMTimeRangeMake(kCMTimeZero, kCMTimePositiveInfinity).
 	
 	This property cannot be set after reading has started.
  */
@@ -149,7 +149,7 @@ typedef NSInteger AVAssetReaderStatus;
 /*!
  @property outputs
  @abstract
-	The outputs from which clients of receiver can read media data..
+	The outputs from which clients of receiver can read media data.
 
  @discussion
 	The value of this property is an NSArray containing concrete instances of AVAssetReaderOutput. Outputs can be added

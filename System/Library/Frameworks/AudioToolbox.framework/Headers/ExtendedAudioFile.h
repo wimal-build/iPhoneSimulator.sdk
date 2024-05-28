@@ -78,19 +78,19 @@ typedef struct OpaqueExtAudioFile *	ExtAudioFileRef;
 						to read/write.
 	@constant		kExtAudioFileProperty_ClientChannelLayout
 						An AudioChannelLayout. Specifies the channel layout of the
-						AudioBufferList's passed to ExtAudioFileReadFrames() and
-						ExtAudioFileWriteFrames(). The layout may be different from the file's
+						AudioBufferList's passed to ExtAudioFileRead() and
+						ExtAudioFileWrite(). The layout may be different from the file's
 						channel layout, in which the ExtAudioFileRef's underlying AudioConverter
 						performs the remapping. This must be set after ClientDataFormat, and the
 						number of channels in the layout must match.
 	@constant		kExtAudioFileProperty_CodecManufacturer
 						A UInt32 specifying the manufacturer of the codec to be used. This must be 
 						specified before setting kExtAudioFileProperty_ClientDataFormat, which
-						triggers the creation of the codec. This can be used on iPhoneOS
+						triggers the creation of the codec. This can be used on iOS
 						to choose between a hardware or software encoder, by specifying 
 						kAppleHardwareAudioCodecManufacturer or kAppleSoftwareAudioCodecManufacturer.
 						
-						Available starting on iPhoneOS version 4.0.
+						Available starting on iOS version 4.0.
 	@constant		kExtAudioFileProperty_AudioConverter
 						AudioConverterRef. The underlying AudioConverterRef, if any. Read-only.
 						
@@ -183,14 +183,14 @@ typedef UInt32						ExtAudioFilePropertyID;
 /*!
     @enum           ExtAudioFile errors
     @constant       kExtAudioFileError_CodecUnavailableInputConsumed
-						iPhoneOS only. Returned when ExtAudioFileWrite was interrupted. You must stop calling
+						iOS only. Returned when ExtAudioFileWrite was interrupted. You must stop calling
 						ExtAudioFileWrite. If the underlying audio converter can resume after an
 						interruption (see kAudioConverterPropertyCanResumeFromInterruption), you must
 						wait for an EndInterruption notification from AudioSession, and call AudioSessionSetActive(true)
 						before resuming. In this situation, the buffer you provided to ExtAudioFileWrite was successfully
 						consumed and you may proceed to the next buffer.
     @constant       kExtAudioFileError_CodecUnavailableInputNotConsumed
-						iPhoneOS only. Returned when ExtAudioFileWrite was interrupted. You must stop calling
+						iOS only. Returned when ExtAudioFileWrite was interrupted. You must stop calling
 						ExtAudioFileWrite. If the underlying audio converter can resume after an
 						interruption (see kAudioConverterPropertyCanResumeFromInterruption), you must
 						wait for an EndInterruption notification from AudioSession, and call AudioSessionSetActive(true)

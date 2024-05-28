@@ -12,7 +12,7 @@
 
 @class UIBarButtonItem, UIColor;
 
-UIKIT_EXTERN_CLASS @interface UIToolbar : UIView {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIToolbar : UIView {
   @private
     UIView*                _customizeView;
     id                     _delegate;

@@ -2027,19 +2027,61 @@ typedef struct AudioOutputUnitStartAtTimeParams {
  
 	@constant		kAUVoiceIOProperty_MuteOutput
 	@discussion			Scope: Global
-							Value Type: UInt32
-							Access: read/write
+						Value Type: UInt32
+						Access: read/write
 							Mutes the output of the voice processing unit. 
 							0 (default) = muting off. 1 = mute output.  
+
+	@constant		kAUVoiceIOProperty_FarEndVersionInfo
+	@discussion			Scope: Global
+						Value Type: VoiceIOFarEndVersionInfo
+						Access: read/write
+							The remote end's version information - hardware model, operating system version and voice processing unit component version.
  
 */
 enum {
 	kAUVoiceIOProperty_BypassVoiceProcessing		= 2100,
-	kAUVoiceIOProperty_VoiceProcessingEnableAGC	= 2101,
+	kAUVoiceIOProperty_VoiceProcessingEnableAGC		= 2101,
 	kAUVoiceIOProperty_DuckNonVoiceAudio			= 2102,
 	kAUVoiceIOProperty_VoiceProcessingQuality		= 2103, 
 	kAUVoiceIOProperty_MuteOutput					= 2104, 
+	kAUVoiceIOProperty_FarEndVersionInfo			= 2105
 	
+};
+
+/*!
+ @struct		VoiceIOFarEndVersionInfo
+ @field			farEndHwModel; 
+ @discussion			A UTF-8 encoded string containing the hardware model of the device being used on the remote end.
+						If the field is unknown, the length of the string should be 0.
+ @field			farEndOSVersion;
+ @discussion			A UTF-8 encoded string containing the operating system version running on the device being used on the remote end.
+						If the field is unknown, the length of the string should be 0.
+ @field			farEndAUVersion
+ @discussion			If the remote end is iOS v4.2 or later or Mac OS X v10.7 or later, this field should contain the component version
+						of the voice processing audio unit being used on the remote end. Otherwise set to one of the farEndAUVersion
+						default values defined below.
+ */
+typedef struct VoiceIOFarEndVersionInfo
+{
+	UInt8		farEndHwModel[64];
+	UInt8		farEndOSVersion[64];
+	UInt32 		farEndAUVersion;
+} VoiceIOFarEndVersionInfo;
+
+/*!
+ @enum			VoiceIOFarEndVersionInfo - farEndAUVersion defaults
+ @discussion		
+ @constant		kVoiceIOFarEndAUVersion_RequiresBackwardCompatibility
+ @discussion			Set the farEndAUVersion field of the VoiceIOFarEndVersionInfo struct to this value if the remote end is a 
+						device running a pre iOS v4.2 or pre Mac OS X v10.7 operating system.
+ @constant		kVoiceIOFarEndAUVersion_ThirdParty
+ @discussion			Set the farEndAUVersion field of the VoiceIOFarEndVersionInfo struct to this value if the remote end is a
+						3rd party following Open FaceTime standards.
+ */
+enum {
+	kVoiceIOFarEndAUVersion_RequiresBackwardCompatibility = 1,
+	kVoiceIOFarEndAUVersion_ThirdParty	= 2
 };
 #endif
 

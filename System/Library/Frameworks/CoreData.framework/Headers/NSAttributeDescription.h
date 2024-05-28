@@ -38,6 +38,7 @@
 typedef NSUInteger NSAttributeType;
 
 // Attributes represent individual values like strings, numbers, dates, etc.
+NS_CLASS_AVAILABLE(10_4, 3_0)
 @interface NSAttributeDescription : NSPropertyDescription {
 @private
 	Class _attributeValueClass;

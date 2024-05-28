@@ -144,10 +144,10 @@ typedef NSUInteger NSDataSearchOptions;
 
 @end
 
-#if MAC_OS_X_VERSION_10_6 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 
 /****************	    Purgeable Data	****************/
 
+NS_CLASS_AVAILABLE(10_6, 4_0)
 @interface NSPurgeableData : NSMutableData <NSDiscardableContent> {
 @private
     NSUInteger _length;
@@ -158,5 +158,4 @@ typedef NSUInteger NSDataSearchOptions;
 
 @end
 
-#endif
 

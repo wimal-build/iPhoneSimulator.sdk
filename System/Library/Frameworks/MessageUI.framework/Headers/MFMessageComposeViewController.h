@@ -42,6 +42,7 @@ typedef enum MessageComposeResult MessageComposeResult;   // available in iPhone
 			  <p>Prior to use, clients should verify the user has set up the device for sending messages via
 			  <tt>+[MFMessageComposeViewController canSendText]</tt>.
  */
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface MFMessageComposeViewController : UINavigationController {
 @private
 	id<MFMessageComposeViewControllerDelegate> _messageComposeDelegate;

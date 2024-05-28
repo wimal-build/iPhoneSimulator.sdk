@@ -70,7 +70,7 @@ COREDATA_EXTERN id NSOverwriteMergePolicy __OSX_AVAILABLE_STARTING(__MAC_10_4, _
 // This policy discards all state for the changed objects in conflict. The persistent store's version of the object is used.
 COREDATA_EXTERN id NSRollbackMergePolicy __OSX_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_3_0);    
 
-
+NS_CLASS_AVAILABLE(10_4, 3_0)
 @interface NSManagedObjectContext : NSObject <NSCoding, NSLocking> {
 @private
 	int32_t _spinLock;

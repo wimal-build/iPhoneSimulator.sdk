@@ -10,8 +10,6 @@
 //  setting an event to use the new rule. When a new recurrence rule is set on an EKEvent, that change is not saved 
 //  until the client has passed the modified event to EKEventStore's saveEvent: method.
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 
 @class EKEventStore;
@@ -44,6 +42,7 @@ enum {
                 A EKRecurrenceEnd initialized with an end date will return 0 for occurrenceCount.
                 One initialized with a number of occurrences will return nil for its endDate.
 */
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKRecurrenceEnd : NSObject <NSCopying> {
 @private
     NSDate *_endDate;
@@ -97,6 +96,7 @@ enum {
                 recurrence.
 */
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKRecurrenceDayOfWeek : NSObject <NSCopying> {
 @private
     NSInteger _dayOfTheWeek;
@@ -155,6 +155,7 @@ typedef enum {
     @class      EKRecurrenceRule
     @abstract   Represents how an event repeats.
 */
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKRecurrenceRule : NSObject {
 @private
     id                      _owner;
@@ -333,5 +334,3 @@ typedef enum {
 @property(nonatomic, readonly) NSArray *setPositions;
 
 @end
-
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED

@@ -9,8 +9,8 @@
 #import <GameKit/GKDefines.h>
 #import <GameKit/GKError.h>
 
-GK_EXTERN_CLASS @interface GKPlayer : NSObject {
-}
+NS_CLASS_AVAILABLE(NA, 4_1)
+GK_EXTERN_CLASS @interface GKPlayer : NSObject
 
 // Load the players for the identifiers provided. Error will be nil on success.
 // Possible reasons for error:

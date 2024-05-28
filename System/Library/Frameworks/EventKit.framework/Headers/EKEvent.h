@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <EventKit/EKParticipant.h>
 
@@ -35,6 +33,7 @@ typedef enum {
                 event is saved, however, it belongs to the store it was saved into. It cannot be saved into
                 a different store later.
 */
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKEvent : NSObject {
 @private
     EKEventStore       *_store;
@@ -66,6 +65,7 @@ typedef enum {
     NSDate             *_originalStartDate;
     NSArray            *_exceptionDates;
     NSArray            *_recurrenceRules;
+    NSInteger           _birthdayId;
     UInt64              _loadFlags;
     UInt64              _dirtyFlags;
 }
@@ -241,5 +241,3 @@ typedef enum {
 - (BOOL)refresh;
 
 @end
-
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED

@@ -37,7 +37,7 @@ typedef enum {
     UIEventSubtypeRemoteControlEndSeekingForward    = 109,
 } UIEventSubtype;
 
-UIKIT_EXTERN_CLASS @interface UIEvent : NSObject
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIEvent : NSObject
 {
   @private
     NSTimeInterval _timestamp;

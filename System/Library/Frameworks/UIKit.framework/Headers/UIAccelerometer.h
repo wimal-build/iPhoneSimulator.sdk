@@ -13,7 +13,7 @@ typedef double UIAccelerationValue;
 
 @protocol UIAccelerometerDelegate;
 
-UIKIT_EXTERN_CLASS @interface UIAcceleration : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIAcceleration : NSObject {
   @private
     NSTimeInterval timestamp;
     UIAccelerationValue x, y, z;
@@ -26,7 +26,7 @@ UIKIT_EXTERN_CLASS @interface UIAcceleration : NSObject {
 
 @end
 
-UIKIT_EXTERN_CLASS @interface UIAccelerometer : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIAccelerometer : NSObject {
   @private
     NSTimeInterval               _updateInterval;
     id <UIAccelerometerDelegate> _delegate;

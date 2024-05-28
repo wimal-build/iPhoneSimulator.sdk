@@ -10,6 +10,7 @@
 
 @protocol ABNewPersonViewControllerDelegate;
 
+NS_CLASS_AVAILABLE(NA, 2_0)
 @interface ABNewPersonViewController : UIViewController
 {
     @private

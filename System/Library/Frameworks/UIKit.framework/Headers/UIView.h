@@ -80,7 +80,7 @@ typedef NSUInteger UIViewAnimationOptions;
 
 @class UIEvent, UIWindow, UIViewController, UIColor, UIGestureRecognizer, CALayer;
 
-UIKIT_EXTERN_CLASS @interface UIView : UIResponder<NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIView : UIResponder<NSCoding> {
   @package
     CALayer        *_layer;
     id              _tapInfo;

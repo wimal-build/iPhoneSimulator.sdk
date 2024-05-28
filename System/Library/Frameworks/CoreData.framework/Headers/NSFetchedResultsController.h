@@ -1,7 +1,7 @@
 /*
     NSFetchedResultsController.h
     Core Data
-    Copyright (c) 2009 Apple Inc.
+    Copyright (c) 2009-2010 Apple Inc.
     All rights reserved.
 
 Class Overview
@@ -47,6 +47,7 @@ Handling of Invalidated Objects
 @class NSFetchRequest;
 @class NSManagedObjectContext;
 
+NS_CLASS_AVAILABLE(NA, 3_0)
 @interface NSFetchedResultsController : NSObject {
 @private
 	NSFetchRequest *_fetchRequest;

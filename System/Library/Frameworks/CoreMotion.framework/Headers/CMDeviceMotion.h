@@ -17,6 +17,7 @@
  *    A CMDeviceMotion object contains basic information about the device's
  *		motion.
  */
+NS_CLASS_AVAILABLE(NA,4_0)
 @interface CMDeviceMotion : CMLogItem
 {
 @private
@@ -30,7 +31,7 @@
  *    Returns the attitude of the device.
  *
  */
-@property(readonly, nonatomic) CMAttitude *attitude __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMAttitude *attitude;
 
 /*
  *  rotationRate
@@ -39,7 +40,7 @@
  *    Returns the rotation rate of the device.
  *
  */
-@property(readonly, nonatomic) CMRotationRate rotationRate __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMRotationRate rotationRate;
 
 /*
  *  gravity
@@ -50,7 +51,7 @@
  *		userAcceleration.
  *
  */
-@property(readonly, nonatomic) CMAcceleration gravity __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMAcceleration gravity;
 
 /*
  *  userAcceleration
@@ -61,7 +62,6 @@
  *		userAcceleration.
  *
  */
-@property(readonly, nonatomic) CMAcceleration userAcceleration __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
-
+@property(readonly, nonatomic) CMAcceleration userAcceleration;
 
 @end

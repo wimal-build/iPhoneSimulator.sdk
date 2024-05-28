@@ -392,7 +392,7 @@
 #if U_HAVE_LIB_SUFFIX
 # ifndef U_ICU_ENTRY_POINT_RENAME
 /* Renaming pattern:    u_strcpy_41_suffix */
-#  define U_ICU_ENTRY_POINT_RENAME(x)    x ## _ ## 44 ## 
+#  define U_ICU_ENTRY_POINT_RENAME(x)    x ## _ ## 45 ## 
 #  define U_DEF_ICUDATA_ENTRY_POINT(major, minor) icudt####major##minor##_dat
 
 # endif

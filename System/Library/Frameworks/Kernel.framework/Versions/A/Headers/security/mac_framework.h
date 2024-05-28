@@ -298,7 +298,7 @@ int	mac_posixshm_check_mmap(kauth_cred_t cred, struct pshminfo *pshm,
 int	mac_posixshm_check_open(kauth_cred_t cred, struct pshminfo *pshm);
 int	mac_posixshm_check_stat(kauth_cred_t cred, struct pshminfo *pshm);
 int	mac_posixshm_check_truncate(kauth_cred_t cred, struct pshminfo *pshm,
-	    size_t s);
+	    off_t s);
 int	mac_posixshm_check_unlink(kauth_cred_t cred, struct pshminfo *pshm,
 	    const char *name);
 void	mac_posixshm_vnode_label_associate(kauth_cred_t cred,
@@ -317,6 +317,8 @@ int	mac_proc_check_getaudit(proc_t proc);
 int	mac_proc_check_getauid(proc_t proc);
 int     mac_proc_check_getlcid(proc_t proc1, proc_t proc2,
 	    pid_t pid);
+int	mac_proc_check_map_anon(proc_t proc, user_addr_t u_addr,
+	    user_size_t u_size, int prot, int flags, int *maxprot);
 int	mac_proc_check_mprotect(proc_t proc,
 	    user_addr_t addr, user_size_t size, int prot);
 int	mac_proc_check_run_cs_invalid(proc_t proc);

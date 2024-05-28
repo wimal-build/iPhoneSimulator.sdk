@@ -114,5 +114,5 @@ Any negative number will loop indefinitely until stopped.
 
 /* audioPlayerEndInterruption: is called when the preferred method, audioPlayerEndInterruption:withFlags:, is not implemented. */
 - (void)audioPlayerEndInterruption:(AVAudioPlayer *)player;
-#endif
+#endif // TARGET_OS_IPHONE
 @end

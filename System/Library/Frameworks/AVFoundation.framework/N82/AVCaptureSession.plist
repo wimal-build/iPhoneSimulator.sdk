@@ -86,13 +86,6 @@
 				<string>p</string>
 				<key>ExcludedOutputs</key>
 				<dict>
-					<key>AVCaptureVideoDataOutput</key>
-					<dict>
-						<key>ConnectionMediaTypes</key>
-						<array>
-							<string>vide</string>
-						</array>
-					</dict>
 					<key>AVCaptureAudioDataOutput</key>
 					<dict>
 						<key>ConnectionMediaTypes</key>

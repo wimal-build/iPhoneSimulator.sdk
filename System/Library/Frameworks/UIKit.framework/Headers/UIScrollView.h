@@ -23,7 +23,7 @@ UIKIT_EXTERN const float UIScrollViewDecelerationRateFast __OSX_AVAILABLE_STARTI
 @class UIEvent, UIImageView;
 @protocol UIScrollViewDelegate;
 
-UIKIT_EXTERN_CLASS @interface UIScrollView : UIView <NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIScrollView : UIView <NSCoding> {
   @package
     CGSize       _contentSize;
     UIEdgeInsets _contentInset;
@@ -40,7 +40,6 @@ UIKIT_EXTERN_CLASS @interface UIScrollView : UIView <NSCoding> {
         unsigned int horizontalBouncing:1;
         unsigned int bouncesZoom:1;
         unsigned int zoomBouncing:1;
-        unsigned int animatingZoom:1;
         unsigned int alwaysBounceHorizontal:1;
         unsigned int alwaysBounceVertical:1;
         unsigned int canCancelContentTouches:1;
@@ -97,6 +96,9 @@ UIKIT_EXTERN_CLASS @interface UIScrollView : UIView <NSCoding> {
         unsigned int pinnedYMax:1;
         unsigned int skipLinkChecks:1;
         unsigned int wasIgnoringTapsInDimmingView:1;
+        unsigned int isAnimatingScroll:1;
+        unsigned int isAnimatingZoom:1;
+        unsigned int staysCenteredDuringPinch:1;
     } _scrollViewFlags;
     CGFloat           _farthestDistance;
     CGPoint           _initialTouchPosition;
@@ -143,6 +145,7 @@ UIKIT_EXTERN_CLASS @interface UIScrollView : UIView <NSCoding> {
     CGPoint           _rotationCenterPoint;
     CGFloat           _accuracy;
     CGFloat           _hysteresis;
+    NSUInteger        _zoomAnimationCount;
 }
 
 @property(nonatomic)         CGPoint                      contentOffset;                  // default CGPointZero

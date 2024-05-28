@@ -23,7 +23,7 @@ enum {
 
 @class UIImage, UIColor;
 
-UIKIT_EXTERN_CLASS @interface UISegmentedControl : UIControl <NSCoding>
+UIKIT_CLASS_AVAILABLE(2_0) @interface UISegmentedControl : UIControl <NSCoding>
 {
   @private
   // Note: all instance variables will become private in the future. Do not access directly.

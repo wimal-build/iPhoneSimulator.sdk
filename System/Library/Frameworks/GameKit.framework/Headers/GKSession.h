@@ -15,6 +15,7 @@
 
 /* The GKSession handles networking between peers for a game, which includes establishing and maintaining connections over a game network, and network data transport.
 */
+NS_CLASS_AVAILABLE(NA, 4_1)
 GK_EXTERN_CLASS @interface GKSession : NSObject {
 @private
 	id _session;

@@ -5,11 +5,16 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <UIKit/UIKit.h>
+#import "EKEventEditViewController.h"
 
 @class EKEvent, EKEventStore;
+
+typedef enum {
+    EKEventViewActionDone,                  // simply closed
+    EKEventViewActionResponded,             // event invitation was responded to and saved
+    EKEventViewActionDeleted,               // event was deleted
+} EKEventViewAction;
 
 /*!
     @class      EKEventViewController
@@ -22,20 +27,45 @@
                 the underlying event gets deleted, this controller will remove itself from
                 the stack and clear its event property.
 */
-@interface EKEventViewController : UIViewController <UIActionSheetDelegate> {
+@protocol EKEventViewDelegate;
+
+NS_CLASS_AVAILABLE(NA, 4_0)
+@interface EKEventViewController : UIViewController {
 @private
-    EKEventStore           *_store;
     EKEvent                *_event;
     NSString               *_eventId;
-    unsigned                _options;
-    id                      _editor;
     UIActionSheet*          _alertSheet;
     int                     _pendingStatus;
-    id                      _internal;
-    BOOL                    _didAppear;
-    BOOL                    _autoPop;
+	
+    id<EKEventViewDelegate> _delegate;
+    id                      _editor;
+    
+    UIButton*               _responseButtons[3];
+    UIToolbar              *_buttonBar;
+    UIInterfaceOrientation  _lastOrientation;
+    
+    id                      _currentEditItem;
+    UITableView            *_tableView;
+
+    unsigned                _didAppear:1;
+    unsigned                _autoPop:1;
+    unsigned                _allowsEditing:1;
+    unsigned                _allowsSubitems:1;
+    unsigned                _showsPreview:1;
+    unsigned                _forcePreview:1;
+    unsigned                _trustsStatus:1;
+    unsigned                _allowsInviteResponses:1;
+    unsigned                _showsAddToCalendar:1;
+    unsigned                _icsPreview:1;
+    unsigned                _needsReload:1;    
+    
+    NSArray                *_items;
+    NSArray                *_currentSections;
+    
+    int                     _scrollToSection;    
 }
 
+@property(nonatomic, assign) id<EKEventViewDelegate>  delegate __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
 
 /*!
     @property   event
@@ -66,4 +96,23 @@
 
 @end
 
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
+
+@protocol EKEventViewDelegate <NSObject>
+@required
+
+/*!
+ @method     eventViewController:didCompleteWithAction:
+ @abstract   Called to let delegate know that an action has occurred that should cause the
+             controller to be dismissed.
+ @discussion If the user taps a button which deletes the event, or responds to an invite, this
+             method is called on the delegate so that the delegate can decide to dismiss
+             the view controller. When presented in a popover, it also reports when the Done
+             button is pressed.
+ 
+ @param      controller          the controller in question
+ @param      action              the action that is triggering the dismissal
+ */
+- (void)eventViewController:(EKEventViewController *)controller didCompleteWithAction:(EKEventViewAction)action __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
+
+@end
+

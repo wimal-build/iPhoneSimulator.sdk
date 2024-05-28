@@ -53,6 +53,7 @@ typedef NSUInteger GKPeerPickerConnectionType;
  
  You must provide a delegate that conforms to the GKPeerPickerControllerDelegate protocol in order to use this class. After the user interface starts, this class notifies your delegate of the user’s actions.
  */
+NS_CLASS_AVAILABLE(NA, 4_1)
 GK_EXTERN_CLASS @interface GKPeerPickerController : NSObject {
 @private
 	id _picker;

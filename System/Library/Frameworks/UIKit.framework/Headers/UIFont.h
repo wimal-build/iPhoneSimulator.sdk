@@ -9,7 +9,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
 
-UIKIT_EXTERN_CLASS @interface UIFont : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIFont : NSObject {
   @private
 }
 

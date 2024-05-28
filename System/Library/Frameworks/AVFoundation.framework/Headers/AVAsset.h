@@ -74,7 +74,7 @@
 /*	indicates the natural rate at which the asset is to be played; often but not always 1.0 */
 @property (nonatomic, readonly) float preferredRate;
 
-/*	indicates the preferred volume at which the audible media of asset is to be played; often but not always 1.0 */
+/*	indicates the preferred volume at which the audible media of an asset is to be played; often but not always 1.0 */
 @property (nonatomic, readonly) float preferredVolume;
 
 /*	indicates the preferred transform to apply to the visual content of the asset for presentation or processing;
@@ -153,7 +153,7 @@
 @property (nonatomic, readonly) NSArray *commonMetadata;
 
 /* Provides an NSArray of NSStrings, each representing a metadata format that's available to the asset (e.g. ID3, iTunes metadata, etc.).
-   Metadata formats are defined in AVMetadataItem.h. */
+   Metadata formats are defined in AVMetadataFormat.h. */
 @property (nonatomic, readonly) NSArray *availableMetadataFormats;
 
 /*!
@@ -171,12 +171,20 @@
 @end
 
 
+@interface AVAsset (AVAssetProtectedContent)
+
+/*! Indicates whether or not the asset has protected content. */
+@property (nonatomic, readonly) BOOL hasProtectedContent;
+
+@end
+
+
 // Keys for options dictionary for use with -initWithURL:options:
 
 /*!
 	@constant		AVURLAssetPreferPreciseDurationAndTimingKey
 	@abstract		Indicates whether the asset should be prepared to indicate a precise duration and provide precise random access by time.
-	                The value for this key is a boolean NSValue.
+	                The value for this key is a boolean NSNumber.
 	@discussion		Pass YES if longer loading times are acceptable in cases in which precise timing is required.
 					Note that such precision may require additional parsing of the resource in advance
 					of operations that make use of any portion of it, depending on the specifics of its container format.

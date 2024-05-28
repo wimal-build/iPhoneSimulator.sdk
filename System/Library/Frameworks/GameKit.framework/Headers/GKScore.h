@@ -12,6 +12,7 @@
 @class GKPlayer;
 
 // GKScore represents a score in the leaderboards.
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKScore : NSObject <NSCoding> {
 }
 

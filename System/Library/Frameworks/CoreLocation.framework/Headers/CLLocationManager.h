@@ -8,6 +8,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CLLocation.h>
 
 /*
  *  CLDeviceOrientation
@@ -26,6 +27,23 @@ typedef enum {
 	CLDeviceOrientationFaceDown
 } CLDeviceOrientation;
 
+/*
+ *  CLAuthorizationStatus
+ *  
+ *  Discussion:
+ *      Represents the current authorization state of the application.
+ *      
+ */
+typedef enum {
+    kCLAuthorizationStatusNotDetermined = 0, // User has not yet made a choice with regards to this application
+    kCLAuthorizationStatusRestricted,        // This application is not authorized to use location services.  Due
+                                             // to active restrictions on location services, the user cannot change
+                                             // this status, and may not have personally denied authorization
+    kCLAuthorizationStatusDenied,            // User has explicitly denied authorization for this application, or
+                                             // location services are disabled in Settings
+    kCLAuthorizationStatusAuthorized         // User has authorized this application to use location services
+} CLAuthorizationStatus;
+
 @class CLLocation;
 @class CLHeading;
 @class CLRegion;
@@ -37,6 +55,7 @@ typedef enum {
  *  Discussion:
  *    The CLLocationManager object is your entry point to the location service.
  */
+NS_CLASS_AVAILABLE(10_6, 2_0)
 @interface CLLocationManager : NSObject
 {
 @private
@@ -85,6 +104,14 @@ typedef enum {
  *      Determines whether region monitoring services are enabled on the device.
  */
 + (BOOL)regionMonitoringEnabled __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+/*
+ *  authorizationStatus
+ *  
+ *  Discussion:
+ *      Returns the current authorization status of the calling application.
+ */
++ (CLAuthorizationStatus)authorizationStatus __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
 
 @property(assign, nonatomic) id<CLLocationManagerDelegate> delegate;
 

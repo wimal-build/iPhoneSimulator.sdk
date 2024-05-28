@@ -504,7 +504,7 @@ SCNetworkInterfaceCopyMediaSubTypes		(CFArrayRef			available)	__OSX_AVAILABLE_ST
 	@discussion For the provided interface configuration options and specific
 		subtype, return a list of available media options.
 	@param available The available options as returned by the
-		NetworkInterfaceCopyMediaOptions function.
+		SCNetworkInterfaceCopyMediaOptions function.
 	@param subType The subtype
 	@result An array of available media options.  Each of the available options
 		is returned as an array of CFString's (e.g. <half-duplex>,

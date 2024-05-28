@@ -7,15 +7,18 @@
 
 #import <UIKit/UIKit.h>
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 
 enum {
+#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
     ADErrorUnknown = 0,
     ADErrorServerFailure = 1,
     ADErrorLoadingThrottled = 2,
     ADErrorInventoryUnavailable = 3,
+#endif
+#if __IPHONE_4_1 <= __IPHONE_OS_VERSION_MAX_ALLOWED
     ADErrorConfigurationError = 4,
     ADErrorBannerVisibleWithoutContent = 5
+#endif
 };
 typedef NSUInteger ADError;
 
@@ -31,7 +34,7 @@ typedef NSUInteger ADError;
  ADBannerView must be added to a view hierarchy managed by a UIViewController.
  */
 
-@interface ADBannerView : UIView
+NS_CLASS_AVAILABLE(NA, 4_0) @interface ADBannerView : UIView
 
 // The banner view delegate is notified when advertisements are loaded, when errors occur in 
 // getting ads, and when banner actions begin and end.
@@ -44,7 +47,9 @@ typedef NSUInteger ADError;
 // be specified necessary if the banner view will actually change size while ad content is loaded, 
 // such as when its view controller autorotates. This indicates to the ad server that it must only 
 // provide ads which have a visible representation for all of the specified size identifiers. The set 
-// must include only supported constants. Default is {ADBannerContentSizeIdentifier320x50}.
+// must include only supported constants.
+// On iOS 4.0-4.1, defaults to {ADBannerContentSizeIdentifier320x50}.
+// On iOS 4.2, defaults to {ADBannerContentSizeIdentifierPortrait, ADBannerContentSizeIdentifierLandscape}.
 @property (nonatomic, copy) NSSet *requiredContentSizeIdentifiers;
 
 // The content size identifier for the current display mode. This will resize the banner view appropriately. 
@@ -102,7 +107,7 @@ extern NSString * const ADErrorDomain;
 
 // Supported sizes of banner ads available from ad server. Dimensions are in points, not pixels.
 // The dimensions are part of the value names to assist with design-time planning for view layout.
-extern NSString * const ADBannerContentSizeIdentifier320x50;
-extern NSString * const ADBannerContentSizeIdentifier480x32;
-
-#endif
+extern NSString * const ADBannerContentSizeIdentifier320x50 __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA,__MAC_NA,__IPHONE_4_0,__IPHONE_4_2);
+extern NSString * const ADBannerContentSizeIdentifier480x32 __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA,__MAC_NA,__IPHONE_4_0,__IPHONE_4_2);
+extern NSString * const ADBannerContentSizeIdentifierPortrait __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
+extern NSString * const ADBannerContentSizeIdentifierLandscape __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);

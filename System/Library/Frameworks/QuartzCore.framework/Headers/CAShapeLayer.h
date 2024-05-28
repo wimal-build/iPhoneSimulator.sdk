@@ -54,6 +54,15 @@
 
 @property CGColorRef strokeColor;
 
+/* These values define the subregion of the path used to draw the
+ * stroked outline. The values must be in the range [0,1] with zero
+ * representing the start of the path and one the end. Values in
+ * between zero and one are interpolated linearly along the path
+ * length. strokeStart defaults to zero and strokeEnd to one. Both are
+ * animatable. */
+
+@property CGFloat strokeStart, strokeEnd;
+
 /* The line width used when stroking the path. Defaults to one.
  * Animatable. */
 

@@ -20,8 +20,6 @@ enum {
 };
 typedef NSInteger MPMovieScalingMode;
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
 enum {
     MPMoviePlaybackStateStopped,
     MPMoviePlaybackStatePlaying,
@@ -79,13 +77,12 @@ enum {
 };
 typedef NSInteger MPMovieSourceType;
 
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
-
 // -----------------------------------------------------------------------------
 // Movie Player
+// 
+// See MPMediaPlayback.h for the playback methods.
 
-MP_EXTERN_CLASS @interface MPMoviePlayerController : NSObject {
+MP_EXTERN_CLASS_AVAILABLE(2_0) @interface MPMoviePlayerController : NSObject <MPMediaPlayback> {
 @private
     id _internal;
 }
@@ -93,8 +90,6 @@ MP_EXTERN_CLASS @interface MPMoviePlayerController : NSObject {
 - (id)initWithContentURL:(NSURL *)url;
 
 - (NSURL *)contentURL;
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 
 - (void)setContentURL:(NSURL *)contentURL;
 
@@ -128,8 +123,6 @@ MP_EXTERN_CLASS @interface MPMoviePlayerController : NSObject {
 @property(nonatomic, getter=isFullscreen) BOOL fullscreen;
 - (void)setFullscreen:(BOOL)fullscreen animated:(BOOL)animated;
 
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
 // Determines how the content scales to fit the view. Defaults to MPMovieScalingModeAspectFit.
 @property(nonatomic) MPMovieScalingMode scalingMode;
 
@@ -137,8 +130,6 @@ MP_EXTERN_CLASS @interface MPMoviePlayerController : NSObject {
 
 // -----------------------------------------------------------------------------
 // Movie properties of the current movie prepared for playback.
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 
 @interface MPMoviePlayerController (MPMovieProperties)
 
@@ -167,24 +158,6 @@ MP_EXTERN_CLASS @interface MPMoviePlayerController : NSObject {
 @end
 
 // -----------------------------------------------------------------------------
-
-@interface MPMoviePlayerController () <MPMediaPlayback>
-
-// See MPMediaPlayback.h for the playback methods
-
-@end
-
-#else 
-
-@interface MPMoviePlayerController (MPMediaPlayback)
-- (void)play;
-- (void)stop;
-- (void)setInitialPlaybackTime:(NSTimeInterval)initialPlaybackTime;
-@end
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
-// -----------------------------------------------------------------------------
 // Movie Player Notifications
 
 // Posted when the scaling mode changes.
@@ -192,8 +165,6 @@ MP_EXTERN NSString *const MPMoviePlayerScalingModeDidChangeNotification;
 
 // Posted when movie playback ends or a user exits playback.
 MP_EXTERN NSString *const MPMoviePlayerPlaybackDidFinishNotification;
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 
 MP_EXTERN NSString *const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey NS_AVAILABLE_IPHONE(3_2); // NSNumber (MPMovieFinishReason)
 
@@ -254,21 +225,17 @@ MP_EXTERN NSString *const MPMoviePlayerThumbnailImageKey NS_AVAILABLE_IPHONE(3_2
 MP_EXTERN NSString *const MPMoviePlayerThumbnailTimeKey NS_AVAILABLE_IPHONE(3_2);  // NSNumber (double)
 MP_EXTERN NSString *const MPMoviePlayerThumbnailErrorKey NS_AVAILABLE_IPHONE(3_2); // NSError
 
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
 // -----------------------------------------------------------------------------
 // Timed Metadata
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
 
 @interface MPMoviePlayerController (MPMoviePlayerTimedMetadataAdditions)
 
 // Returns an array of the most recent MPTimedMetadata objects provided by the media stream.
-- (NSArray *)timedMetadata;
+- (NSArray *)timedMetadata NS_AVAILABLE_IPHONE(4_0);
 
 @end
 
-@interface MPTimedMetadata : NSObject {
+MP_EXTERN_CLASS_AVAILABLE(4_0) @interface MPTimedMetadata : NSObject {
 @private
     id _internal;
 }
@@ -291,17 +258,15 @@ MP_EXTERN NSString *const MPMoviePlayerThumbnailErrorKey NS_AVAILABLE_IPHONE(3_2
 @end
 
 // Posted when new timed metadata arrives.
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataUpdatedNotification NS_AVAILABLE_IPHONE(3_2);
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataUserInfoKey NS_AVAILABLE_IPHONE(3_2);       // NSArray of the most recent MPTimedMetadata objects.
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataUpdatedNotification NS_AVAILABLE_IPHONE(4_0);
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataUserInfoKey NS_AVAILABLE_IPHONE(4_0);       // NSArray of the most recent MPTimedMetadata objects.
 
 // Additional dictionary keys for use with the 'allMetadata' property. All keys are optional.
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyName NS_AVAILABLE_IPHONE(3_2);           // NSString
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyInfo NS_AVAILABLE_IPHONE(3_2);           // NSString
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyMIMEType NS_AVAILABLE_IPHONE(3_2);       // NSString
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyDataType NS_AVAILABLE_IPHONE(3_2);       // NSString
-MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyLanguageCode NS_AVAILABLE_IPHONE(3_2);   // NSString (ISO 639-2)
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyName NS_AVAILABLE_IPHONE(4_0);           // NSString
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyInfo NS_AVAILABLE_IPHONE(4_0);           // NSString
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyMIMEType NS_AVAILABLE_IPHONE(4_0);       // NSString
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyDataType NS_AVAILABLE_IPHONE(4_0);       // NSString
+MP_EXTERN NSString *const MPMoviePlayerTimedMetadataKeyLanguageCode NS_AVAILABLE_IPHONE(4_0);   // NSString (ISO 639-2)
 
 // -----------------------------------------------------------------------------
 // Deprecated methods and properties

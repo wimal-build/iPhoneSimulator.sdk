@@ -92,6 +92,11 @@
     #endif
 #endif
 
+// Some compilers provide the capability to test if certain features are available. This macro provides a compatibility path for other compilers.
+#ifndef __has_feature
+#define __has_feature(x) 0
+#endif
+
 // Marks methods and functions which return an object that needs to be released by the caller but whose names are not consistent with Cocoa naming rules. The recommended fix to this is the rename the methods or functions, but this macro can be used to let the clang static analyzer know of any exceptions that cannot be fixed.
 #if defined(__clang__)
 #define NS_RETURNS_RETAINED __attribute__((ns_returns_retained))
@@ -149,11 +154,15 @@
 
 #endif
 
-#if !defined(__IPHONE_3_2)
-#define __IPHONE_3_2 30200
-#endif
-#if !defined(__IPHONE_4_0)
-#define __IPHONE_4_0 40000
+// This macro is to be used by system frameworks to support the weak linking of classes.
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_3_1 && \
+    ((__has_feature(objc_weak_class) || \
+     (defined(__llvm__) && defined(__APPLE_CC__) && (__APPLE_CC__ >= 5658)) || \
+     (defined(__APPLE_CC__) && (__APPLE_CC__ >= 5666)))) 
+#define NS_CLASS_AVAILABLE(_mac, _iphone) __OSX_AVAILABLE_STARTING(__MAC_##_mac, __IPHONE_##_iphone)
+#else
+// class weak import is not supported
+#define NS_CLASS_AVAILABLE(_mac, _iphone)
 #endif
 
 FOUNDATION_EXPORT double NSFoundationVersionNumber;
@@ -217,6 +226,8 @@ FOUNDATION_EXPORT double NSFoundationVersionNumber;
 #define NSFoundationVersionNumber_iPhoneOS_2_2  678.29
 #define NSFoundationVersionNumber_iPhoneOS_3_0  678.47
 #define NSFoundationVersionNumber_iPhoneOS_3_1  678.51
+#define NSFoundationVersionNumber_iPhoneOS_3_2  678.60
+#define NSFoundationVersionNumber_iOS_4_0  751.32
 #endif
 
 #if __LP64__ || (TARGET_OS_EMBEDDED && !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64

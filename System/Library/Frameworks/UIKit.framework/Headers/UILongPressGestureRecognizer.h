@@ -5,8 +5,6 @@
 //  Copyright 2008-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 
 #import <UIKit/UIGestureRecognizer.h>
@@ -16,7 +14,7 @@
 // Changes: when a finger moves
 // Ends:    when a finger is lifted
 
-UIKIT_EXTERN_CLASS @interface UILongPressGestureRecognizer : UIGestureRecognizer {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UILongPressGestureRecognizer : UIGestureRecognizer {
   @package
     NSArray          *_touches;
     NSMutableSet     *_activeTouches;
@@ -41,5 +39,3 @@ UIKIT_EXTERN_CLASS @interface UILongPressGestureRecognizer : UIGestureRecognizer
 @property (nonatomic) CGFloat allowableMovement;           // Default is 10. Maximum movement in pixels allowed before the gesture fails. Once recognized (after minimumPressDuration) there is no limit on finger movement for the remainder of the touch tracking
 
 @end
-
-#endif

@@ -5,8 +5,6 @@
 //  Copyright 2008-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
@@ -28,7 +26,7 @@ typedef enum {
     UIGestureRecognizerStateRecognized = UIGestureRecognizerStateEnded // the recognizer has received touches recognized as the gesture. the action method will be called at the next turn of the run loop and the recognizer will be reset to UIGestureRecognizerStatePossible
 } UIGestureRecognizerState;
 
-UIKIT_EXTERN_CLASS @interface UIGestureRecognizer : NSObject {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UIGestureRecognizer : NSObject {
   @package
     NSMutableArray                   *_targets;
     NSMutableArray                   *_delayedTouches;
@@ -39,6 +37,8 @@ UIKIT_EXTERN_CLASS @interface UIGestureRecognizer : NSObject {
     
     NSMutableSet                     *_failureRequirements;
     NSMutableSet                     *_failureDependents;
+    NSMutableSet                     *_dynamicFailureRequirements;
+    NSMutableSet                     *_dynamicFailureDependents;
     NSMutableSet                     *_unfailedGestures;
     NSMutableSet                     *_unfailedGesturesForReset;
     
@@ -52,13 +52,19 @@ UIKIT_EXTERN_CLASS @interface UIGestureRecognizer : NSObject {
         unsigned int delegateCanBePrevented:1;
         unsigned int delegateShouldRecognizeSimultaneously:1;
         unsigned int delegateShouldReceiveTouch:1;
+        unsigned int delegateShouldRequireFailure:1;
         unsigned int delegateFailed:1;
+        unsigned int privateDelegateShouldBegin:1;
+        unsigned int privateDelegateShouldRecognizeSimultaneously:1;
+        unsigned int privateDelegateShouldReceiveTouch:1;
+        unsigned int subclassShouldRequireFailure:1;
         unsigned int cancelsTouchesInView:1;
         unsigned int delaysTouchesBegan:1;
         unsigned int delaysTouchesEnded:1;
         unsigned int notExclusive:1;
         unsigned int disabled:1;
         unsigned int dirty:1;
+        unsigned int queriedFailureRequirements:1;
         unsigned int delivered:1;
         unsigned int continuous:1;
         unsigned int requiresDelayedBegan:1;
@@ -86,7 +92,7 @@ UIKIT_EXTERN_CLASS @interface UIGestureRecognizer : NSObject {
 @property(nonatomic) BOOL delaysTouchesBegan;         // default is NO.  causes all touch events to be delivered to the target view only after this gesture has failed recognition. set to YES to prevent views from processing any touches that may be recognized as part of this gesture
 @property(nonatomic) BOOL delaysTouchesEnded;         // default is YES. causes touchesEnded events to be delivered to the target view only after this gesture has failed recognition. this ensures that a touch that is part of the gesture can be cancelled if the gesture is recognized
 
-// create a relationship with another gesture recognizer that will delay a transition out of UIGestureRecognizerStatePossible until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed
+// create a relationship with another gesture recognizer that will prevent this gesture's actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed
 // if otherGestureRecognizer transitions to UIGestureRecognizerStateRecognized or UIGestureRecognizerStateBegan then this recognizer will instead transition to UIGestureRecognizerStateFailed
 // example usage: a single tap may require a double tap to fail
 - (void)requireGestureRecognizerToFail:(UIGestureRecognizer *)otherGestureRecognizer;
@@ -113,6 +119,5 @@ UIKIT_EXTERN_CLASS @interface UIGestureRecognizer : NSObject {
 
 // called before touchesBegan:withEvent: is called on the gesture recognizer for a new touch. return NO to prevent the gesture recognizer from seeing this touch
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;
-@end
 
-#endif
+@end

@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 
@@ -115,4 +113,12 @@ UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityLayoutChangedNotificati
  */
 UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityAnnouncementNotification __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 
-#endif
+/*
+ Should be posted after accessibilityScroll: is called and the scrolling action has completed. 
+ A string representing the status of the new scroll position should be used as the argument 
+ (e.g. "Page 2 of 5"). If the same status is used repeatedly, the assistive technology will 
+ indicate a border has been reached.
+ The argument is a NSString.
+ */
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPageScrolledNotification __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_2);
+

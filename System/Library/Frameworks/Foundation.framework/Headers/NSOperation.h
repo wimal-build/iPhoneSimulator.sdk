@@ -59,9 +59,9 @@ typedef NSInteger NSOperationQueuePriority;
 @end
 
 
-#if MAC_OS_X_VERSION_10_6 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 #if NS_BLOCKS_AVAILABLE
 
+NS_CLASS_AVAILABLE(10_6, 4_0)
 @interface NSBlockOperation : NSOperation {
 @private
     id _private2;
@@ -75,7 +75,6 @@ typedef NSInteger NSOperationQueuePriority;
 
 @end
 
-#endif
 #endif
 
 

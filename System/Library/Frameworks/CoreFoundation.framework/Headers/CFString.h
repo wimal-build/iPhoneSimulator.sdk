@@ -506,6 +506,33 @@ void CFStringGetLineBounds(CFStringRef theString, CFRange range, CFIndex *lineBe
 CF_EXPORT
 void CFStringGetParagraphBounds(CFStringRef string, CFRange range, CFIndex *parBeginIndex, CFIndex *parEndIndex, CFIndex *contentsEndIndex) CF_AVAILABLE(10_5, 2_0);
 
+/*!
+ @function CFStringGetHyphenationLocationBeforeIndex
+ Retrieve the first potential hyphenation location found before the specified location.
+ @param string The CFString which is to be hyphenated.  If this
+ parameter is not a valid CFString, the behavior is
+ undefined.
+ @param location An index in the string.  If a valid hyphen index is returned, it 
+ will be before this index.
+ @param limitRange The range of characters within the string to search. If
+ the range location or end point (defined by the location
+ plus length minus 1) are outside the index space of the
+ string (0 to N-1 inclusive, where N is the length of the
+ string), the behavior is undefined. If the range length is
+ negative, the behavior is undefined. The range may be empty
+ (length 0), in which case no hyphen location is generated.
+ @param options Reserved for future use.
+ @param locale Specifies which language's hyphenation conventions to use.
+ This must be a valid locale.
+ @param character The suggested hyphen character to insert.  Pass NULL if you
+ do not need this information.
+ @result an index in the string where it is appropriate to insert a hyphen, if
+ one exists; else kCFNotFound
+ */
+CF_EXPORT
+CFIndex CFStringGetHyphenationLocationBeforeIndex(CFStringRef string, CFIndex location, CFRange limitRange, CFOptionFlags options, CFLocaleRef locale, UTF32Char *character) CF_AVAILABLE(NA, 4_2);
+
+
 /*** Exploding and joining strings with a separator string ***/
 
 CF_EXPORT

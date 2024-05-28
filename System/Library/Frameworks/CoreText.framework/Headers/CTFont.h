@@ -25,6 +25,7 @@
 #endif // !TARGET_OS_IPHONE
 #include <CoreGraphics/CGFont.h>
 #include <CoreGraphics/CGPath.h>
+#include <CoreGraphics/CGContext.h>
 
 #if defined(__cplusplus)
 extern "C" {
@@ -198,7 +199,7 @@ CTFontRef CTFontCreateWithFontDescriptor(
     @constant   kCTFontOptionsPreferSystemFont
                 Font matching will prefer to match Apple system fonts.
 */
-enum {	
+enum {
     kCTFontOptionsDefault               = 0,
     kCTFontOptionsPreventAutoActivation = 1 << 0,
     kCTFontOptionsPreferSystemFont      = 1 << 2
@@ -885,7 +886,7 @@ CGPathRef CTFontCreatePathForGlyph(
     const CGAffineTransform *   transform ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
-    @group Font Variations  (this functionality is not supported on iPhone OS)
+    @group Font Variations        (this functionality is not supported on iOS)
 *///--------------------------------------------------------------------------
 
 /*!
@@ -942,7 +943,7 @@ CFArrayRef CTFontCopyVariationAxes( CTFontRef font ) CT_AVAILABLE_STARTING( __MA
 CFDictionaryRef CTFontCopyVariation( CTFontRef font ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 /*! --------------------------------------------------------------------------
-    @group Font Features     (only AAT features are supported on iPhone OS)
+    @group Font Features              (only AAT features are supported on iOS)
 *///--------------------------------------------------------------------------
 
 /*!
@@ -1186,6 +1187,8 @@ enum {
     kCTFontTablePost    = 'post',   // PostScript information
     kCTFontTablePrep    = 'prep',   // CVT program
     kCTFontTableProp    = 'prop',   // Properties
+    kCTFontTableSbit    = 'sbit',   // Bitmap data
+    kCTFontTableSbix    = 'sbix',   // Extended bitmap data
     kCTFontTableTrak    = 'trak',   // Tracking
     kCTFontTableVhea    = 'vhea',   // Vertical header
     kCTFontTableVmtx    = 'vmtx'    // Vertical metrics
@@ -1232,6 +1235,68 @@ CFDataRef CTFontCopyTable(
     CTFontRef           font,
     CTFontTableTag      table,
     CTFontTableOptions  options ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
+
+
+/*!
+    @function   CTFontDrawGlyphs
+    @abstract   Renders the given glyphs from the CTFont at the given positions in the CGContext.
+    @discussion This function will modify the CGContext's font, text size, and text matrix if specified in the CTFont. These attributes will not be restored.
+        The given glyphs should be the result of proper Unicode text layout operations (such as CTLine). Results from CTFontGetGlyphsForCharacters (or similar APIs) do not perform any Unicode text layout.
+
+    @param      font
+                The font to render glyphs from. If the font has a size or matrix attribute, the CGContext will be set with these values.
+
+    @param      glyphs
+                The glyphs to be rendered. See above discussion of how the glyphs should be derived.
+
+    @param      positions
+                The positions (origins) for each glyph. The positions are in user space. The number of positions passed in must be equivalent to the number of glyphs.
+
+    @param      count
+                The number of glyphs to be rendered from the glyphs array.
+
+    @param      context
+                CGContext used to render the glyphs.
+
+    @result     void
+*/
+void CTFontDrawGlyphs(
+    CTFontRef font, 
+    const CGGlyph glyphs[], 
+    const CGPoint positions[], 
+    size_t count, 
+    CGContextRef context) CT_AVAILABLE_STARTING( __MAC_10_7, __IPHONE_4_2);
+
+
+/*!
+    @function   CTFontGetLigatureCaretPositions
+    @abstract   Returns caret positions within a glyph.
+    @discussion This function is used to obtain caret positions for a specific glyph.
+                The return value is the max number of positions possible, and the function
+                will populate the caller's positions buffer with available positions if possible.
+                This function may not be able to produce positions if the font does not
+                have the appropriate data, in which case it will return 0.
+ 
+    @param      font
+                The font reference.
+    
+    @param      glyph
+                The glyph.
+ 
+    @param      positions
+                A buffer of at least maxPositions to receive the ligature caret positions for
+                the glyph.
+ 
+    @param      maxPositions
+                The maximum number of positions to return.
+ 
+    @result     Returns the number of caret positions for the specified glyph.
+ */
+CFIndex CTFontGetLigatureCaretPositions(
+    CTFontRef       font,
+    CGGlyph         glyph,
+    CGFloat         positions[],
+    CFIndex         maxPositions ) CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
 #if defined(__cplusplus)
 }

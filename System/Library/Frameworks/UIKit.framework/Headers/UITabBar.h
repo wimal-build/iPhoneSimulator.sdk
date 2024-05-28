@@ -12,7 +12,7 @@
 @class UITabBarItem;
 @protocol UITabBarDelegate;
 
-UIKIT_EXTERN_CLASS @interface UITabBar : UIView {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITabBar : UIView {
   @private
     UIView*                _customizeView;
     id<UITabBarDelegate>   _delegate;

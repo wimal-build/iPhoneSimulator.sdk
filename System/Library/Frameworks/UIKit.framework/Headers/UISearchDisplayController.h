@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
 #import <UIKit/UIKitDefines.h>
@@ -16,7 +14,7 @@
 @class UISearchBar, UITableView, UIViewController, UIPopoverController;
 @protocol UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate;
 
-UIKIT_EXTERN_CLASS @interface UISearchDisplayController : NSObject {
+UIKIT_CLASS_AVAILABLE(3_0) @interface UISearchDisplayController : NSObject {
   @private
     UIViewController           *_viewController;
     UITableView                *_tableView;
@@ -32,6 +30,7 @@ UIKIT_EXTERN_CLASS @interface UISearchDisplayController : NSObject {
     CGFloat                     _lastFooterAdjustment;
     UIPopoverController        *_popoverController;
     UITableViewStyle            _searchResultsTableViewStyle;
+    id                          _navigationControllerBookkeeper;
     struct {
         unsigned int visible:1;
         unsigned int animating:1;
@@ -86,5 +85,3 @@ UIKIT_EXTERN_CLASS @interface UISearchDisplayController : NSObject {
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption;
 
 @end
-
-#endif

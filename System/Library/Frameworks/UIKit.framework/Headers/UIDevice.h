@@ -32,12 +32,14 @@ typedef enum {
 #endif
 } UIUserInterfaceIdiom;
 
+/* The UI_USER_INTERFACE_IDIOM() macro is provided for use when deploying to a version of the iOS less than 3.2. If the earliest version of iPhone/iOS that you will be deploying for is 3.2 or greater, you may use -[UIDevice userInterfaceIdiom] directly.
+ */
 #define UI_USER_INTERFACE_IDIOM() ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ? [[UIDevice currentDevice] userInterfaceIdiom] : UIUserInterfaceIdiomPhone)
 
 #define UIDeviceOrientationIsPortrait(orientation)  ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown)
 #define UIDeviceOrientationIsLandscape(orientation) ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight)
 
-UIKIT_EXTERN_CLASS @interface UIDevice : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIDevice : NSObject {
  @private
     NSInteger _numDeviceOrientationObservers;
     float     _batteryLevel;
@@ -53,10 +55,10 @@ UIKIT_EXTERN_CLASS @interface UIDevice : NSObject {
 + (UIDevice *)currentDevice;
 
 @property(nonatomic,readonly,retain) NSString    *name;              // e.g. "My iPhone"
-@property(nonatomic,readonly,retain) NSString    *model;             // e.g. @"iPhone", @"iPod Touch"
+@property(nonatomic,readonly,retain) NSString    *model;             // e.g. @"iPhone", @"iPod touch"
 @property(nonatomic,readonly,retain) NSString    *localizedModel;    // localized version of model
 @property(nonatomic,readonly,retain) NSString    *systemName;        // e.g. @"iOS"
-@property(nonatomic,readonly,retain) NSString    *systemVersion;     // e.g. @"2.0"
+@property(nonatomic,readonly,retain) NSString    *systemVersion;     // e.g. @"4.0"
 @property(nonatomic,readonly) UIDeviceOrientation orientation;       // return current device orientation
 @property(nonatomic,readonly,retain) NSString    *uniqueIdentifier;  // a string unique to each device based on various hardware info.
 
@@ -74,6 +76,15 @@ UIKIT_EXTERN_CLASS @interface UIDevice : NSObject {
 @property(nonatomic,readonly,getter=isMultitaskingSupported) BOOL multitaskingSupported __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
 @property(nonatomic,readonly) UIUserInterfaceIdiom userInterfaceIdiom __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2);
+
+- (void)playInputClick __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);  // Plays a click only if an enabling input view is on-screen and user has enabled input clicks.
+
+@end
+
+@protocol UIInputViewAudioFeedback <NSObject>
+@optional
+
+@property (nonatomic, readonly) BOOL enableInputClicksWhenVisible; // If YES, an input view will enable playInputClick.
 
 @end
 

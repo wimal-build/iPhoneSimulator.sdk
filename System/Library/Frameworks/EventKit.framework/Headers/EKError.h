@@ -9,9 +9,9 @@
 
 /*!
     @const      EKErrorDomain 
-    @abstract   Error domain for NSError values stemming from the Calendar Framework API.
-    @discussion This error domain is used as the domain for all NSError instances stemmming from the
-                Calendar Framework.
+    @abstract   Error domain for NSError values stemming from the EventKit Framework API.
+    @discussion This error domain is used as the domain for all NSError instances stemming from the
+                EventKit Framework.
 */
 extern NSString *const EKErrorDomain __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 
@@ -33,7 +33,8 @@ extern NSString *const EKErrorDomain __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_
     @constant   EKErrorStartDateTooFarInFuture          The start date is further into the future than the calendar will display.
     @constant   EKErrorStartDateCollidesWithOtherOccurrence The start date specified collides with another occurrence of that event, and the current calendar doesn't allow it.
     @constant   EKErrorObjectBelongsToDifferentStore    The object you are passing doesn't belong to the calendar store you're dealing with.
-    @constant   EKErrorInvitesCannotBeMoved             The event is an invite, and it cannot move to another calendar.
+    @constant   EKErrorInvitesCannotBeMoved             The event is an invite, and therefore cannot move to another calendar.
+    @constant   EKErrorInvalidSpan                      An invalid span was passed when saving/deleting.
 */
 
 #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
@@ -51,6 +52,7 @@ typedef enum EKErrorCode {
     EKErrorStartDateCollidesWithOtherOccurrence,
     EKErrorObjectBelongsToDifferentStore,
     EKErrorInvitesCannotBeMoved,
+    EKErrorInvalidSpan,
     
     EKErrorLast // used internally
 } EKErrorCode;

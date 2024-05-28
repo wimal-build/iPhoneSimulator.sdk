@@ -19,7 +19,7 @@ typedef struct
 	double m11, m12, m13;
 	double m21, m22, m23;
 	double m31, m32, m33;
-} CMRotationMatrix __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+} CMRotationMatrix;
 
 /*
  *  CMQuaternion
@@ -34,8 +34,9 @@ typedef struct
 typedef struct
 {
 	double x, y, z, w;
-} CMQuaternion __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+} CMQuaternion;
 
+NS_CLASS_AVAILABLE(NA,4_0)
 @interface CMAttitude : NSObject <NSCopying, NSCoding>
 {
 @private
@@ -49,7 +50,7 @@ typedef struct
  *    Returns the roll of the device in radians.
  *
  */
-@property(readonly, nonatomic) double roll __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) double roll;
 
 /*
  *  pitch
@@ -58,7 +59,7 @@ typedef struct
  *    Returns the pitch of the device in radians.
  *
  */
-@property(readonly, nonatomic) double pitch __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) double pitch;
 
 /*
  *  yaw
@@ -67,7 +68,7 @@ typedef struct
  *    Returns the yaw of the device in radians.
  *
  */
-@property(readonly, nonatomic) double yaw __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) double yaw;
 
 /*
  *  rotationMatrix
@@ -76,7 +77,7 @@ typedef struct
  *    Returns a rotation matrix representing the device's attitude.
  *
  */
-@property(readonly, nonatomic) CMRotationMatrix rotationMatrix __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMRotationMatrix rotationMatrix;
 
 /*
  *  quaternion
@@ -85,7 +86,7 @@ typedef struct
  *    Returns a quaternion representing the device's attitude.
  *
  */
-@property(readonly, nonatomic) CMQuaternion quaternion __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMQuaternion quaternion;
 
 /*
  *  multiplyByInverseOfAttitude:
@@ -94,6 +95,6 @@ typedef struct
  *      Multiplies attitude by the inverse of the specified attitude. This gives
  *			the attitude change from the specified attitude.
  */
-- (void)multiplyByInverseOfAttitude:(CMAttitude *)attitude __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+- (void)multiplyByInverseOfAttitude:(CMAttitude *)attitude;
 
 @end

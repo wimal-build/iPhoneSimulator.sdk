@@ -809,6 +809,7 @@ extern CFTypeRef kSecUseItemList
         on disk or passed between processes.
       * If more than one of these result types is specified, the result is
         returned as a CFDictionaryRef containing all the requested data.
+      * If a result type is not specified, no results are returned.
 
     By default, this function returns only the first match found. To obtain
     more than one matching item at a time, specify kSecMatchLimit with a value
@@ -854,14 +855,14 @@ OSStatus SecItemCopyMatching(CFDictionaryRef query, CFTypeRef *result)
         specify kSecReturnAttributes with a value of kCFBooleanTrue.
       * To obtain a reference to the added item (SecKeychainItemRef, SecKeyRef,
         SecCertificateRef, or SecIdentityRef), specify kSecReturnRef with a
-        value of kCFBooleanTrue. This is the default behavior if a result
-        type is not explicitly specified.
+        value of kCFBooleanTrue.
       * To obtain a persistent reference to the added item (CFDataRef), specify
         kSecReturnPersistentRef with a value of kCFBooleanTrue. Note that
         unlike normal references, a persistent reference may be stored on disk
         or passed between processes.
       * If more than one of these result types is specified, the result is
         returned as a CFDictionaryRef containing all the requested data.
+      * If a result type is not specified, no results are returned.
 */
 OSStatus SecItemAdd(CFDictionaryRef attributes, CFTypeRef *result)
     __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
@@ -901,11 +902,14 @@ OSStatus SecItemUpdate(CFDictionaryRef query,
     You can change this behavior by specifying one of the follow keys:
 
       * To delete an item identified by a transient reference, specify
-        kSecMatchItemList with a reference returned by using the kSecReturnRef
+        kSecValueRef with a reference returned by using the kSecReturnRef
         key in a previous call to SecItemCopyMatching or SecItemAdd.
       * To delete an item identified by a persistent reference, specify
-        kSecMatchItemList with a persistent reference returned by using the
-        kSecReturnPersistentRef key to SecItemCopyMatching or SecItemAdd.
+        kSecValuePersistentRef with a persistent reference returned by 
+        using the kSecReturnPersistentRef key to SecItemCopyMatching or 
+        SecItemAdd.
+      * To delete multiple items specify kSecMatchItemList with an array
+        of references.
       * If more than one of these result keys is specified, the behavior is
         undefined.
 */

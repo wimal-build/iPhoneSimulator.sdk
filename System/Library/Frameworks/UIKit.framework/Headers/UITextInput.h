@@ -5,9 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <CoreGraphics/CoreGraphics.h>
 
 #import <UIKit/UITextInputTraits.h>
@@ -158,11 +155,11 @@ UIKIT_EXTERN NSString *const UITextInputTextFontKey;            // Key to a UIFo
  * evaluating characters at indices is an expensive proposition, a position within a text input
  * document is represented as an object, not an integer.  UITextRange and UITextPosition are abstract
  * classes provided to be subclassed when adopting UITextInput */
-UIKIT_EXTERN_CLASS @interface UITextPosition : NSObject
+UIKIT_CLASS_AVAILABLE(3_2) @interface UITextPosition : NSObject
 
 @end
 
-UIKIT_EXTERN_CLASS @interface UITextRange : NSObject
+UIKIT_CLASS_AVAILABLE(3_2) @interface UITextRange : NSObject
 
 @property (nonatomic, readonly, getter=isEmpty) BOOL empty;     //  Whether the range is zero-length.
 @property (nonatomic, readonly) UITextPosition *start;
@@ -196,7 +193,7 @@ UIKIT_EXTERN_CLASS @interface UITextRange : NSObject
 
 /* A recommended base implementation of the tokenizer protocol. Subclasses are responsible
  * for handling directions and granularities affected by layout.*/
-UIKIT_EXTERN_CLASS @interface UITextInputStringTokenizer : NSObject <UITextInputTokenizer> {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UITextInputStringTokenizer : NSObject <UITextInputTokenizer> {
   @package
     UIResponder <UITextInput> *_textInput;
 }
@@ -205,4 +202,12 @@ UIKIT_EXTERN_CLASS @interface UITextInputStringTokenizer : NSObject <UITextInput
 
 @end
 
-#endif
+UIKIT_CLASS_AVAILABLE(4_2) @interface UITextInputMode : NSObject
+
+@property (nonatomic, readonly, retain) NSString *primaryLanguage; // The primary language, if any, of the input mode.  A BCP 47 language identifier such as en-US
+
++ (UITextInputMode *)currentInputMode; // The current input mode.  Nil if unset.
+
+@end
+
+UIKIT_EXTERN NSString *const UITextInputCurrentInputModeDidChangeNotification __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);

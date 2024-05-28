@@ -44,7 +44,9 @@
 #undef stpcpy
 #endif  /* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 #undef strncpy
+#if ! (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED < 32000)
 #undef strcat
+#endif
 #undef strncat
 
 #define memcpy(dest, src, len)					\
@@ -127,6 +129,7 @@ __inline_strcat_chk (char *__restrict __dest, const char *__restrict __src)
   return __builtin___strcat_chk (__dest, __src, __darwin_obsz(__dest));
 }
 
+#if ! (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED < 32000)
 #define strncat(dest, src, len)					\
   ((__darwin_obsz0 (dest) != (size_t) -1)				\
    ? __builtin___strncat_chk (dest, src, len, __darwin_obsz (dest))	\
@@ -138,6 +141,7 @@ __inline_strncat_chk (char *__restrict __dest, const char *__restrict __src,
 {
   return __builtin___strncat_chk (__dest, __src, __len, __darwin_obsz(__dest));
 }
+#endif
 
 #endif
 #endif

@@ -87,7 +87,55 @@ typedef uint32_t CTFrameProgression;
 
 extern const CFStringRef kCTFrameProgressionAttributeName CT_AVAILABLE_STARTING( __MAC_10_5, __IPHONE_3_2);
 
+/*!
+	@enum		CTFramePathFillRule
+	@abstract	These constants specify fill rule used by the frame.
+ 
+	@discussion When a path intersects with itself, the client should specify which rule to use for deciding the 
+				area of the path.
+ 
+	@constant	kCTFramePathFillEvenOdd
+				Text is filled in the area that would be painted if the path were given to CGContextEOFillPath.
 
+	@constant	kCTFramePathFillWindingNumber
+				Text is fill in the area that would be painted if the path were given to CGContextFillPath.
+ 
+ 
+ */
+
+enum
+{
+	kCTFramePathFillEvenOdd = 0,
+	kCTFramePathFillWindingNumber = 1
+};
+typedef uint32_t CTFramePathFillRule;
+
+
+/*!
+	@const		kCTFramePathFillRuleAttributeName
+	@abstract	Specifies fill rule for a frame.
+
+	@discussion Value must be a CFNumberRef containing a CTFramePathFill.
+				Default is kCTFramePathFillEvenOdd.
+
+	@seealso	CTFramesetterCreateFrame
+ */
+
+extern const CFStringRef kCTFramePathFillRuleAttributeName CT_AVAILABLE_STARTING( __MAC_10_7, __IPHONE_4_2);
+
+/*!
+	@const		kCTFramePathWidthAttributeName
+	@abstract	Specifies frame width.
+
+	@discussion Value must be a CFNumberRef specifying frame width.
+				Default is zero.
+
+	@seealso	CTFramesetterCreateFrame
+ */
+
+extern const CFStringRef kCTFramePathWidthAttributeName CT_AVAILABLE_STARTING( __MAC_10_7, __IPHONE_4_2);
+
+	
 /* --------------------------------------------------------------------------- */
 /* Frame Accessors */
 /* --------------------------------------------------------------------------- */

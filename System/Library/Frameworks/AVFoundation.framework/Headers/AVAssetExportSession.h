@@ -68,13 +68,29 @@ extern NSString *const AVAssetExportPresetHighestQuality    __OSX_AVAILABLE_STAR
 extern NSString *const AVAssetExportPreset640x480   __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 extern NSString *const AVAssetExportPreset960x540   __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 extern NSString *const AVAssetExportPreset1280x720  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+#if ! TARGET_OS_IPHONE
+extern NSString *const AVAssetExportPreset1920x1080  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+#endif // ! TARGET_OS_IPHONE
 
 /*  This export option will produce an audio-only .m4a file with appropriate iTunes gapless playback data */
 extern NSString *const AVAssetExportPresetAppleM4A	__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 
-/* This export option will let all tracks passed through unless it is not possible. This option
-	will not show up in the -allExportPresets and -exportPresetsCompatibleWithAsset methods. */
+/* This export option will cause the media of all tracks to be passed through to the output exactly as stored in the source asset, except for
+   tracks for which passthrough is not possible, usually because of constraints of the container format as indicated by the specified outputFileType.
+   This option is not included in the arrays returned by -allExportPresets and -exportPresetsCompatibleWithAsset. */
 extern NSString *const AVAssetExportPresetPassthrough __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+
+#if ! TARGET_OS_IPHONE
+/* These export options are used to produce files that can be played on the specified Apple devices. 
+	These presets are available for Desktop export only.
+	The files should have .m4v extensions (or .m4a for exports with audio only sources). */
+extern NSString *const AVAssetExportPresetAppleM4VCellular   __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+extern NSString *const AVAssetExportPresetAppleM4V480pSD     __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+extern NSString *const AVAssetExportPresetAppleM4VAppleTV    __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+extern NSString *const AVAssetExportPresetAppleM4VWiFi       __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+extern NSString *const AVAssetExportPresetAppleM4V720pHD     __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
+
+#endif // ! TARGET_OS_IPHONE
 
 
 @class AVAsset;

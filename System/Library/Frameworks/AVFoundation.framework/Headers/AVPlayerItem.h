@@ -70,7 +70,7 @@ typedef NSInteger AVPlayerItemStatus;
 
 /*!
  @method			playerItemWithURL:
- @abstract		Returns an instance of AVPlayerItem for playing a resource at the localation specified.
+ @abstract		Returns an instance of AVPlayerItem for playing a resource at the specified location.
  @param			URL
  @result			An instance of AVPlayerItem.
  @discussion	
@@ -173,9 +173,9 @@ typedef NSInteger AVPlayerItemStatus;
 	The end time for forward playback.
  
  @discussion
-	The value of this property is a CMTime that specifies a custom time at which the should receiver should end when its
-	player's rate is positive.  The default value is kCMTimeInvalid, which indicates that no custom end time is set. In
-	this case, the effective maximum time is the receiver's duration.
+	Specifies the time at which playback should end when the playback rate is positive (see AVPlayer's rate property).
+	The default value is kCMTimeInvalid, which indicates that no end time for forward playback is specified.
+	In this case, the effective end time for forward playback is the receiver's duration.
 
 	The value of this property has no effect on playback when the rate is negative.
 */
@@ -188,9 +188,9 @@ typedef NSInteger AVPlayerItemStatus;
 	The end time for reverse playback.
  
  @discussion
-	The value of this property is a CMTime that specifies a custom time at which the should receiver should end when its
-	player's rate is negative. The default value is kCMTimeInvalid, which indicates that no custom end time is set. In
-	this case, the effective minimum time is kCMTimeZero.
+	Specifies the time at which playback should end when the playback rate is negative (see AVPlayer's rate property).
+	The default value is kCMTimeInvalid, which indicates that no end time for reverse playback is specified.
+	In this case, the effective end time for reverse playback is kCMTimeZero.
 
 	The value of this property has no effect on playback when the rate is positive.
  */

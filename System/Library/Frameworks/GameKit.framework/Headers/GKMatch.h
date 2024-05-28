@@ -25,6 +25,7 @@ enum {
 typedef NSInteger GKPlayerConnectionState;
 
 // GKMatch represents an active networking sessions between players. It handles network communications and can report player connection status. All matches are created by a GKMatchmaker.
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKMatch : NSObject {
 }
 

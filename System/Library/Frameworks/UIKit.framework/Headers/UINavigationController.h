@@ -30,7 +30,7 @@ UIKIT_EXTERN const CGFloat UINavigationControllerHideShowBarDuration;
 @class UIView, UINavigationBar, UINavigationItem, UIToolbar, UILayoutContainerView;
 @protocol UINavigationControllerDelegate;
 
-UIKIT_EXTERN_CLASS @interface UINavigationController : UIViewController {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UINavigationController : UIViewController {
   @package
     UIView           *_containerView;
     UINavigationBar  *_navigationBar;
@@ -64,6 +64,7 @@ UIKIT_EXTERN_CLASS @interface UINavigationController : UIViewController {
         unsigned int isChangingOrientationForPop:1;
         unsigned int pretendNavBarHidden:1;
         unsigned int avoidMovingNavBarOffscreenBeforeUnhiding:1;
+        unsigned int searchBarHidNavBar:1;        
     } _navigationControllerFlags;
 }
 

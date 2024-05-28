@@ -20,6 +20,7 @@
 
 @class AVURLAsset;
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface ALAssetRepresentation : NSObject {
 @package
     id _internal;

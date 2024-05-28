@@ -34,6 +34,7 @@ COREDATA_EXTERN NSString * const NSMigrationEntityPolicyKey __OSX_AVAILABLE_STAR
 @class NSEntityMapping;
 @class NSMigrationManager;
 
+NS_CLASS_AVAILABLE(10_5, 3_0)
 @interface NSEntityMigrationPolicy : NSObject
 
 

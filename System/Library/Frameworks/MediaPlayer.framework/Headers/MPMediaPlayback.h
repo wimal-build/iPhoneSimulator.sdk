@@ -8,8 +8,6 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
 @protocol MPMediaPlayback
 
 // Prepares the current queue for playback, interrupting any active (non-mixible) audio sessions.
@@ -43,6 +41,4 @@
 @end
 
 // Posted when the prepared state changes of an object conforming to the MPMediaPlayback protocol changes.
-MP_EXTERN NSString *const MPMediaPlaybackIsPreparedToPlayDidChangeNotification;
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
+MP_EXTERN NSString *const MPMediaPlaybackIsPreparedToPlayDidChangeNotification NS_AVAILABLE_IPHONE(3_2);

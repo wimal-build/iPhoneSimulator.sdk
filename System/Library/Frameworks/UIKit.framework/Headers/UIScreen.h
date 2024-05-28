@@ -16,7 +16,7 @@ UIKIT_EXTERN NSString *const UIScreenDidDisconnectNotification; // object is the
 
 UIKIT_EXTERN NSString *const UIScreenModeDidChangeNotification; // object is the UIScreen. [object currentMode] is the new UIScreenMode
 
-UIKIT_EXTERN_CLASS @interface UIScreen : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIScreen : NSObject {
   @private
     id _display;
     CGRect _bounds;

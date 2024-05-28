@@ -106,13 +106,6 @@
 				<string>p</string>
 				<key>ExcludedOutputs</key>
 				<dict>
-					<key>AVCaptureVideoDataOutput</key>
-					<dict>
-						<key>ConnectionMediaTypes</key>
-						<array>
-							<string>vide</string>
-						</array>
-					</dict>
 					<key>AVCaptureAudioDataOutput</key>
 					<dict>
 						<key>ConnectionMediaTypes</key>
@@ -659,28 +652,21 @@
 				<string>p</string>
 				<key>ExcludedOutputs</key>
 				<dict>
-					<key>AVCaptureVideoDataOutput</key>
+					<key>AVCaptureAudioDataOutput</key>
+					<dict>
+						<key>ConnectionMediaTypes</key>
+						<array>
+							<string>soun</string>
+						</array>
+					</dict>
+					<key>AVCaptureMovieFileOutput</key>
 					<dict>
 						<key>ConnectionMediaTypes</key>
 						<array>
 							<string>vide</string>
+							<string>soun</string>
 						</array>
 					</dict>
-				</dict>
-				<key>AVCaptureAudioDataOutput</key>
-				<dict>
-					<key>ConnectionMediaTypes</key>
-					<array>
-						<string>soun</string>
-					</array>
-				</dict>
-				<key>AVCaptureMovieFileOutput</key>
-				<dict>
-					<key>ConnectionMediaTypes</key>
-					<array>
-						<string>vide</string>
-						<string>soun</string>
-					</array>
 				</dict>
 				<key>Description</key>
 				<string>Front Facing VGA Photo</string>

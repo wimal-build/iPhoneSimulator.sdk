@@ -36,7 +36,7 @@ typedef struct {
 	double x;
 	double y;
 	double z;	
-} CMRotationRate __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+} CMRotationRate;
 
 /*
  *  CMAccelerometerData
@@ -45,6 +45,7 @@ typedef struct {
  *    Contains a single accelerometer measurement.
  *
  */
+NS_CLASS_AVAILABLE(NA,4_0)
 @interface CMGyroData : CMLogItem
 {
 @private
@@ -58,6 +59,6 @@ typedef struct {
  *    The rotation rate as measured by the gyro.
  *
  */
-@property(readonly, nonatomic) CMRotationRate rotationRate __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMRotationRate rotationRate;
 
 @end

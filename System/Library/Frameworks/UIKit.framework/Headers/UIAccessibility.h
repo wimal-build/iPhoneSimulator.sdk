@@ -5,8 +5,6 @@
 //  Copyright 2008-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
@@ -173,6 +171,23 @@
 - (void)accessibilityIncrement __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 - (void)accessibilityDecrement __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_0);
 
+/*
+ If the user interface requires a scrolling action (e.g. turning the page of a book), a view in the view 
+ hierarchy should implement the following method. The return result indicates whether the action 
+ succeeded for that direction. If the action failed, the method will be called on a view higher 
+ in the hierarchy. If the action succeeds, UIAccessibilityPageScrolledNotification must be posted after
+ the scrolling completes.
+ default == NO
+ */
+typedef enum {
+    UIAccessibilityScrollDirectionRight = 1,
+    UIAccessibilityScrollDirectionLeft,
+    UIAccessibilityScrollDirectionUp,
+    UIAccessibilityScrollDirectionDown
+} UIAccessibilityScrollDirection;
+
+- (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_4_2);
+
 @end
 
 /*
@@ -194,5 +209,3 @@ UIKIT_EXTERN void UIAccessibilityPostNotification(UIAccessibilityNotifications n
  */
 UIKIT_EXTERN BOOL UIAccessibilityIsVoiceOverRunning() __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 UIKIT_EXTERN NSString *const UIAccessibilityVoiceOverStatusChanged __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0); 
-
-#endif

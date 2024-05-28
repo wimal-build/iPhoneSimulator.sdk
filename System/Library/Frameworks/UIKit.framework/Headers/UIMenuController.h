@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
@@ -23,7 +21,7 @@ typedef enum {
 
 @class UIView;
 
-UIKIT_EXTERN_CLASS @interface UIMenuController : NSObject {
+UIKIT_CLASS_AVAILABLE(3_0) @interface UIMenuController : NSObject {
   @private
     CGRect _targetRect;
     UIMenuControllerArrowDirection _arrowDirection;
@@ -51,11 +49,7 @@ UIKIT_EXTERN NSString *const UIMenuControllerWillHideMenuNotification;
 UIKIT_EXTERN NSString *const UIMenuControllerDidHideMenuNotification;
 UIKIT_EXTERN NSString *const UIMenuControllerMenuFrameDidChangeNotification;
 
-#endif
-
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
-UIKIT_EXTERN_CLASS @interface UIMenuItem : NSObject {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UIMenuItem : NSObject {
   @private
     NSString *_title;
     SEL       _action;
@@ -67,5 +61,3 @@ UIKIT_EXTERN_CLASS @interface UIMenuItem : NSObject {
 @property(nonatomic)      SEL       action;    // default is NULL
 
 @end
-
-#endif

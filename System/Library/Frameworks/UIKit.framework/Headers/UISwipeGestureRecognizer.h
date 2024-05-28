@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIGestureRecognizer.h>
 
@@ -25,7 +23,7 @@ typedef enum {
     UISwipeGestureRecognizerDirectionDown  = 1 << 3
 } UISwipeGestureRecognizerDirection;
 
-UIKIT_EXTERN_CLASS @interface UISwipeGestureRecognizer : UIGestureRecognizer {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UISwipeGestureRecognizer : UIGestureRecognizer {
   @package
     CFTimeInterval    _maximumDuration;
     CGFloat           _minimumPrimaryMovement;
@@ -40,10 +38,8 @@ UIKIT_EXTERN_CLASS @interface UISwipeGestureRecognizer : UIGestureRecognizer {
     
     CGPoint           _startLocation;
     CGPoint          *_startLocations;
-    CGPoint           _startContentOffset;
     CFTimeInterval    _startTime;
     
-    unsigned int      _tableViewGesture:1;
     unsigned int      _failed:1;
 }
 
@@ -51,5 +47,3 @@ UIKIT_EXTERN_CLASS @interface UISwipeGestureRecognizer : UIGestureRecognizer {
 @property(nonatomic) UISwipeGestureRecognizerDirection direction;               // default is UISwipeGestureRecognizerDirectionRight. the desired direction of the swipe. multiple directions may be specified
 
 @end
-
-#endif

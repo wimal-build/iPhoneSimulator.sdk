@@ -27,7 +27,7 @@ typedef enum {
 #define UITOUCH_IVARS_PRIVATE @package
 #endif
 
-UIKIT_EXTERN_CLASS @interface UITouch : NSObject
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITouch : NSObject
 {
 UITOUCH_IVARS_PRIVATE
     NSTimeInterval  _timestamp;

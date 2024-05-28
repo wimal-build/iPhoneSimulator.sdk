@@ -21,6 +21,7 @@
 @class NSManagedObject;
 
 // Entities describe the "types" of objects available.
+NS_CLASS_AVAILABLE(10_4, 3_0)
 @interface NSEntityDescription : NSObject <NSCoding, NSCopying, NSFastEnumeration> {
 @private
 	int32_t  _cd_rc;

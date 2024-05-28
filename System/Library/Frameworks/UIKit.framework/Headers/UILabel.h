@@ -13,7 +13,7 @@
 
 @class UIColor, UIFont;
 
-UIKIT_EXTERN_CLASS @interface UILabel : UIView <NSCoding>
+UIKIT_CLASS_AVAILABLE(2_0) @interface UILabel : UIView <NSCoding>
 {
   @private
     CGSize     _size;

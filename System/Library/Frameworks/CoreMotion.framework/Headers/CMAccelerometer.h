@@ -7,9 +7,7 @@
  */
 
 #import <Foundation/Foundation.h>
-
 #import <CoreMotion/CMLogItem.h>
-
 
 /*
  *  CMAcceleration
@@ -29,7 +27,7 @@ typedef struct {
 	double x;
 	double y;
 	double z;
-} CMAcceleration __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+} CMAcceleration;
 
 /*
  *  CMAccelerometerData
@@ -38,6 +36,7 @@ typedef struct {
  *    Contains a single accelerometer measurement.
  *
  */
+NS_CLASS_AVAILABLE(NA,4_0)
 @interface CMAccelerometerData : CMLogItem
 {
 @private
@@ -51,6 +50,6 @@ typedef struct {
  *    The acceleration measured by the accelerometer.
  *
  */
-@property(readonly, nonatomic) CMAcceleration acceleration __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(readonly, nonatomic) CMAcceleration acceleration;
 
 @end

@@ -49,7 +49,7 @@ typedef enum {
 
 @class UIImage, UIView;
 
-UIKIT_EXTERN_CLASS @interface UIBarButtonItem : UIBarItem {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIBarButtonItem : UIBarItem {
   @private
     NSString     *_title;
     NSSet        *_possibleTitles;

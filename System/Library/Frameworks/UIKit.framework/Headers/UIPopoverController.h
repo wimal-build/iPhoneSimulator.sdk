@@ -5,7 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -26,12 +25,13 @@ enum {
 };
 typedef NSUInteger UIPopoverArrowDirection;
 
-UIKIT_EXTERN_CLASS
+UIKIT_CLASS_AVAILABLE(3_2)
 @interface UIPopoverController : NSObject {
   @private
     id _delegate;
     UIViewController *_contentViewController;
     UIView *_popoverView;
+    id _private1;
     NSArray *_passthroughViews;
     UIPopoverArrowDirection _popoverArrowDirection;
     NSUInteger _popoverBackgroundStyle;
@@ -43,12 +43,14 @@ UIKIT_EXTERN_CLASS
     UIViewController *_slidingViewController;
     id _target;
     SEL _didEndSelector;
+    UIBarStyle _existingNavBarStyle;
+    UIBarStyle _existingToolBarStyle;
     struct {
 	unsigned int isPresentingOrDismissing:1;
         unsigned int isPresentingModalViewController:1;
         unsigned int isPresentingActionSheet:1;
         unsigned int needsRepresentAfterRotation:1;
-	unsigned int dimsWhenModal:1;
+        unsigned int dimsWhenModal:1;
     } _popoverControllerFlags;
 }
 
@@ -118,5 +120,3 @@ UIKIT_EXTERN_CLASS
 @property (nonatomic,readwrite,getter=isModalInPopover) BOOL modalInPopover __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
 
 @end
-
-#endif

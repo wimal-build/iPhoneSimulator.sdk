@@ -18,7 +18,7 @@ typedef enum {
 
 @class UIPickerView;
 
-UIKIT_EXTERN_CLASS @interface UIDatePicker : UIControl <NSCoding>
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIDatePicker : UIControl <NSCoding>
 {
   @private
     UIPickerView *_pickerView;

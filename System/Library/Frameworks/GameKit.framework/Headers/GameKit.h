@@ -11,6 +11,7 @@
 #import <GameKit/GKAchievementViewController.h>
 #import <GameKit/GKDefines.h>
 #import <GameKit/GKError.h>
+#import <GameKit/GKFriendRequestComposeViewController.h>
 #import <GameKit/GKLeaderboard.h>
 #import <GameKit/GKLeaderboardViewController.h>
 #import <GameKit/GKLocalPlayer.h>

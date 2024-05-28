@@ -25,7 +25,7 @@
 @class UIView, UIImage, UINavigationController, UITabBarItem;
 @protocol UITabBarControllerDelegate;
 
-UIKIT_EXTERN_CLASS @interface UITabBarController : UIViewController <UITabBarDelegate, NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITabBarController : UIViewController <UITabBarDelegate, NSCoding> {
   @package
     UITabBar               *_tabBar;
     

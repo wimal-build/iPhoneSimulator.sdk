@@ -272,12 +272,13 @@ CF_EXPORT double kCFCoreFoundationVersionNumber;
 #endif
 
 #if TARGET_OS_IPHONE
-#define kCFCoreFoundationVersionNumber_iPhoneOS_2_0	478.23
+#define kCFCoreFoundationVersionNumber_iPhoneOS_2_0 478.23
 #define kCFCoreFoundationVersionNumber_iPhoneOS_2_1 478.26
 #define kCFCoreFoundationVersionNumber_iPhoneOS_2_2 478.29
 #define kCFCoreFoundationVersionNumber_iPhoneOS_3_0 478.47
 #define kCFCoreFoundationVersionNumber_iPhoneOS_3_1 478.52
 #define kCFCoreFoundationVersionNumber_iPhoneOS_3_2 478.61
+#define kCFCoreFoundationVersionNumber_iOS_4_0 550.32
 #endif
 
 typedef unsigned long CFTypeID;

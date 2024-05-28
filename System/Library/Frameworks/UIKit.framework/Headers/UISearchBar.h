@@ -15,7 +15,7 @@
 @protocol UISearchBarDelegate;
 @class UITextField, UILabel, UIButton, UIColor;
 
-UIKIT_EXTERN_CLASS @interface UISearchBar : UIView { 
+UIKIT_CLASS_AVAILABLE(2_0) @interface UISearchBar : UIView { 
   @private
     UITextField            *_searchField;
     UILabel                *_promptLabel;
@@ -30,6 +30,7 @@ UIKIT_EXTERN_CLASS @interface UISearchBar : UIView {
     UIView                 *_background;
     UIView                 *_scopeBar;
     UIEdgeInsets            _contentInset;
+    id                      _appearance;
     struct {
         unsigned int barStyle:3;
         unsigned int showsBookmarkButton:1;

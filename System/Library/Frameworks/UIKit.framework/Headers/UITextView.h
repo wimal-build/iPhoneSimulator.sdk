@@ -44,7 +44,7 @@
 @end
 
 
-UIKIT_EXTERN_CLASS @interface UITextView : UIScrollView <UITextInputTraits> 
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITextView : UIScrollView <UITextInputTraits> 
 {
   @package
     WebFrame           *m_frame;

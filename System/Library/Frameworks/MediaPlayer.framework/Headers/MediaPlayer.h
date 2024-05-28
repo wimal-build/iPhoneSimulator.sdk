@@ -12,6 +12,7 @@
 #import <MediaPlayer/MPMediaPickerController.h>
 #import <MediaPlayer/MPMediaPlaylist.h>
 #import <MediaPlayer/MPMediaQuery.h>
+#import <MediaPlayer/MPMediaQuerySection.h>
 #import <MediaPlayer/MPMoviePlayerController.h>
 #import <MediaPlayer/MPMoviePlayerViewController.h>
 #import <MediaPlayer/MPMusicPlayerController.h>

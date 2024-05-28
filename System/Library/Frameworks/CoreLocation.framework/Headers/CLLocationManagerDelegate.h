@@ -9,11 +9,11 @@
 
 #import <Availability.h>
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CLLocationManager.h>
 
 @class CLLocation;
 @class CLHeading;
 @class CLRegion;
-@class CLLocationManager;
 
 /*
  *  CLLocationManagerDelegate
@@ -92,5 +92,13 @@
 - (void)locationManager:(CLLocationManager *)manager
 	monitoringDidFailForRegion:(CLRegion *)region
 	withError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+/*
+ *  locationManager:didChangeAuthorizationStatus:
+ *  
+ *  Discussion:
+ *    Invoked when the authorization status changes for this application.
+ */
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
 
 @end

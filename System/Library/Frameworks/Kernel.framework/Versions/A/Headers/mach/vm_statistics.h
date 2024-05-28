@@ -326,6 +326,18 @@ typedef struct vm_statistics64	vm_statistics64_data_t;
 /* memory allocated for GLSL */
 #define VM_MEMORY_GLSL  66
 
+/* memory allocated for OpenCL.framework */
+#define VM_MEMORY_OPENCL    67
+
+/* memory allocated for QuartzCore.framework */
+#define VM_MEMORY_COREIMAGE 68
+
+/* memory allocated for WebCore Purgeable Buffers */
+#define VM_MEMORY_WEBCORE_PURGEABLE_BUFFERS 69
+
+/* ImageIO memory */
+#define VM_MEMORY_IMAGEIO	70
+
 /* Reserve 240-255 for application */
 #define VM_MEMORY_APPLICATION_SPECIFIC_1 240
 #define VM_MEMORY_APPLICATION_SPECIFIC_16 255

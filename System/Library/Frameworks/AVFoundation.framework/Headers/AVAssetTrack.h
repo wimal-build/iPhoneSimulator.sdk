@@ -132,8 +132,8 @@
 
 @interface AVAssetTrack (AVAssetTrackSegments)
 
-/* provides the array of time mappings from the track's media samples to the timeline of the track; an array of AVAssetTrackSegments.
-   Empty edits, i.e. timeRanges for which no media data is available to be presented, have source.start and source.duration equal to kCMTimeInvalid. */
+/* Provides an array of AVAssetTrackSegments with time mappings from the timeline of the track's media samples to the timeline of the track.
+   Empty edits, i.e. timeRanges for which no media data is available to be presented, have a value of AVAssetTrackSegment.empty equal to YES. */
 @property (nonatomic, copy, readonly) NSArray *segments;
 
 /*!
@@ -176,6 +176,6 @@
 	@result			An NSArray containing AVMetadataItems; may be nil if there is no metadata of the specified format.
 	@discussion		Becomes callable without blocking when the key @"availableMetadataFormats" has been loaded
 */
-- (NSArray *)metadataForFormat:(NSString *)format;	// array of AVMetadataItems stored in specified metadata format; all locales
+- (NSArray *)metadataForFormat:(NSString *)format;
 
 @end

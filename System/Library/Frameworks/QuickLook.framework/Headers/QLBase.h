@@ -18,9 +18,6 @@
     #define QL_EXTERN_C_END
 #endif
 
-/* XXX */
-#define QUICKLOOK_VERSION 2540
-
 #define QL_EXPORT extern
 #define QL_PRIVATE_EXPORT __attribute__((visibility("hidden")))
 #define QL_INLINE static __inline__ __attribute__((always_inline))

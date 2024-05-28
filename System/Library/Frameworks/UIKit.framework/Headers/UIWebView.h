@@ -23,7 +23,7 @@ typedef NSUInteger UIWebViewNavigationType;
 @class UIWebViewInternal;
 @protocol UIWebViewDelegate;
 
-UIKIT_EXTERN_CLASS @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate> { 
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate> { 
  @private
     UIWebViewInternal *_internal;
 }

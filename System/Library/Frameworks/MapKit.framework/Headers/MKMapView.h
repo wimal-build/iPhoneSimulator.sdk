@@ -29,6 +29,7 @@
 
 @protocol MKMapViewDelegate;
 
+NS_CLASS_AVAILABLE(__MAC_NA, 3_0)
 @interface MKMapView : UIView <NSCoding>
 {
 @private
@@ -91,8 +92,9 @@
 - (void)removeAnnotations:(NSArray *)annotations;
 
 @property (nonatomic, readonly) NSArray *annotations;
+- (NSSet *)annotationsInMapRect:(MKMapRect)mapRect __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
 
-// Currently displayed view for an annotation; returns nil if the view for the annotation hasn't been created yet.
+// Currently displayed view for an annotation; returns nil if the view for the annotation isn't being displayed.
 - (MKAnnotationView *)viewForAnnotation:(id <MKAnnotation>)annotation;
 
 // Used by the delegate to acquire an already allocated annotation view, in lieu of allocating a new one.

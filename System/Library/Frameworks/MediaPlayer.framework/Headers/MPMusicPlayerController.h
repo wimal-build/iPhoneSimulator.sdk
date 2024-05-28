@@ -11,8 +11,6 @@
 #import <MediaPlayer/MPMediaItem.h>
 #import <MediaPlayer/MPMediaQuery.h>
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0
-
 @class MPMediaItem, MPMediaQuery, MPMusicPlayerControllerInternal;
 
 enum {
@@ -43,7 +41,7 @@ typedef NSInteger MPMusicShuffleMode;
 
 // MPMusicPlayerController allows playback of MPMediaItems through the iPod application.
 
-MP_EXTERN_CLASS @interface MPMusicPlayerController : NSObject {
+MP_EXTERN_CLASS_AVAILABLE(3_0) @interface MPMusicPlayerController : NSObject {
     MPMusicPlayerControllerInternal *_internal;
 }
 
@@ -118,5 +116,3 @@ MP_EXTERN NSString *const MPMusicPlayerControllerNowPlayingItemDidChangeNotifica
 
 // Posted when the current volume changes.
 MP_EXTERN NSString *const MPMusicPlayerControllerVolumeDidChangeNotification;
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_0

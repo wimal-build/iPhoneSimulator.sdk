@@ -11,7 +11,7 @@
 
 @class UIImage;
 
-UIKIT_EXTERN_CLASS @interface UIColor : NSObject <NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIColor : NSObject <NSCoding> {
   @private
 }
 

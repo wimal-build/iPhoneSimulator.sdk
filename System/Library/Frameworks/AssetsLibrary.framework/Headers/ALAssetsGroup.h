@@ -34,6 +34,7 @@ extern NSString *const ALAssetsGroupPropertyName __OSX_AVAILABLE_STARTING(__MAC_
 extern NSString *const ALAssetsGroupPropertyType __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);              // An ALAssetsGroupType wrapped in an NSNumber
 extern NSString *const ALAssetsGroupPropertyPersistentID __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);      // An NSString with the group's persistent ID. 
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface ALAssetsGroup : NSObject {
 @package
     id _internal;

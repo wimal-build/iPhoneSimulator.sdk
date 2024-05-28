@@ -5,12 +5,10 @@
 //  Copyright 2008-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 
-UIKIT_EXTERN_CLASS @interface UINib : NSObject {
+UIKIT_CLASS_AVAILABLE(4_0) @interface UINib : NSObject {
   @private
     id storage;
 }
@@ -28,5 +26,3 @@ UIKIT_EXTERN_CLASS @interface UINib : NSObject {
 // Options are identical to the options specified with -[NSBundle loadNibNamed:owner:options:]
 - (NSArray *)instantiateWithOwner:(id)ownerOrNil options:(NSDictionary *)optionsOrNil;
 @end
-
-#endif

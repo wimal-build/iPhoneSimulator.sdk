@@ -21,7 +21,7 @@ typedef enum {
     UIActionSheetStyleBlackOpaque      = UIBarStyleBlackOpaque,
 } UIActionSheetStyle;
 
-UIKIT_EXTERN_CLASS @interface UIActionSheet : UIView {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIActionSheet : UIView {
 @private
     id <UIActionSheetDelegate> _delegate;
     UILabel   *_titleLabel;
@@ -40,12 +40,20 @@ UIKIT_EXTERN_CLASS @interface UIActionSheet : UIView {
     NSInteger  _dismissButtonIndex;
     CGFloat    _bodyTextHeight;
     NSMutableArray *_buttons;
+    NSMutableArray *_buttonsInTable;
     NSMutableArray *_textFields;
     UIView *_keyboard;
     UIView *_table;
     UIView *_buttonTableView;
     UIView *_dimView;
     UIPopoverController * _popoverController;
+    CGFloat _fontSizeInTableView; // font size for 'complex' buttons (phone numbers || doc interaction controller)
+    CGFloat _iconOffset; // doc interaction controller app icon
+    CGFloat _labelOffset; // phone numbers layout 
+    CGFloat _labelWidth;
+    CGFloat _titleWidth;
+    BOOL _oldIgnoreTapsValue;
+    
     struct {
         unsigned int numberOfRows:7;
         unsigned int delegateAlertSheetButtonClicked:1;
@@ -92,8 +100,15 @@ UIKIT_EXTERN_CLASS @interface UIActionSheet : UIView {
         unsigned int twoColumnsLayoutMode:7; // one column || even width (leaves empty space) || first button wider || last button wider
         unsigned int shouldHandleFirstKeyUpEvent:1; // when presenting with hardware KB we have to handle the first key up event we get so we don't end up repeating the last key
         unsigned int cancelWhenDoneAnimating:1;
+        unsigned int useThreePartButtons:1; // phone numbers layout
+        unsigned int useTwoPartButtons:1; // doc interaction layout
+        unsigned int displaySelectedButtonGlyph:1;
+        int indexOfSelectedButton:7; // default -1 (no checkmark) otherwise will display a checkbox (this for the airtunes action sheet)
+        unsigned int useCustomSelectedButtonGlyph:1;
     } _modalViewFlags;
     UIActionSheetStyle _actionSheetStyle;
+    UIImage *_selectedButtonGlyphImage;
+    UIImage *_selectedButtonGlyphHighlightedImage;
 }
 
 - (id)initWithTitle:(NSString *)title delegate:(id<UIActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;

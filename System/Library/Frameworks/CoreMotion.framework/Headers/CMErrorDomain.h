@@ -15,4 +15,4 @@
  *  Discussion:
  *    Error returned as the domain to NSError from CoreMotion.
  */
-extern NSString *const CMErrorDomain __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+extern NSString *const CMErrorDomain NS_AVAILABLE(NA,4_0);

@@ -164,6 +164,9 @@ class OSString;
 class OSObject : public OSMetaClassBase
 {
     OSDeclareAbstractStructors(OSObject)
+#if IOKITSTATS
+    friend class IOStatistics;
+#endif
 
 private:
    /* Not to be included in headerdoc.

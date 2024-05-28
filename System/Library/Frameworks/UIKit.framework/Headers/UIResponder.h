@@ -9,7 +9,7 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIEvent.h>
 
-UIKIT_EXTERN_CLASS @interface UIResponder : NSObject {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIResponder : NSObject {
   @private
 }
 

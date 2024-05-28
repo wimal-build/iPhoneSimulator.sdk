@@ -14,7 +14,8 @@
 
 @class QLPreviewControllerReserved;
 
-@interface QLPreviewController : UIViewController <UIDocumentInteractionControllerDelegate> {
+NS_CLASS_AVAILABLE(NA, 4_0)
+@interface QLPreviewController : UIViewController {
     QLPreviewControllerReserved * _reserved;
 }
 
@@ -115,6 +116,18 @@
  */
 - (BOOL)previewController:(QLPreviewController *)controller shouldOpenURL:(NSURL *)url forPreviewItem:(id <QLPreviewItem>)item;
 
+/*!
+ * @abstract Invoked when the preview controller is about to be presented full screen or dismissed from full screen, to provide a zoom effect.
+ * @discussion Return the origin of the zoom. It should be relative to view, or screen based if view is not set. The controller will fade in/out if the rect is CGRectZero.
+ */
+- (CGRect)previewController:(QLPreviewController *)controller frameForPreviewItem:(id <QLPreviewItem>)item inSourceView:(UIView **)view ;
+
+/*!
+ * @abstract Invoked when the preview controller is about to be presented full screen or dismissed from full screen, to provide a smooth transition when zooming.
+ * @param contentRect The rect within the image that actually represents the content of the document. For example, for icons the actual rect is generally smaller than the icon itself.
+ * @discussion Return an image the controller will crossfade with when zooming. You can specify the actual "document" content rect in the image in contentRect.
+ */
+- (UIImage *)previewController:(QLPreviewController *)controller transitionImageForPreviewItem:(id <QLPreviewItem>)item contentRect:(CGRect *)contentRect;
 
 @end
 

@@ -73,7 +73,7 @@ typedef enum {
 //
 typedef enum {
     UIKeyboardAppearanceDefault,          // Default apperance for the current input method.
-    UIKeyboardAppearanceAlert,            // Appearance suitable for use in "alert" scenarios.
+    UIKeyboardAppearanceAlert             // Appearance suitable for use in "alert" scenarios.
 } UIKeyboardAppearance;
 
 //
@@ -108,7 +108,7 @@ typedef enum {
 
 @optional
 
-@property(nonatomic) UITextAutocapitalizationType autocapitalizationType; // default is UITextAutocapitalizationTypeNone
+@property(nonatomic) UITextAutocapitalizationType autocapitalizationType; // default is UITextAutocapitalizationTypeSentences
 @property(nonatomic) UITextAutocorrectionType autocorrectionType;         // default is UITextAutocorrectionTypeDefault
 @property(nonatomic) UIKeyboardType keyboardType;                         // default is UIKeyboardTypeDefault
 @property(nonatomic) UIKeyboardAppearance keyboardAppearance;             // default is UIKeyboardAppearanceDefault

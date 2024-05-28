@@ -54,7 +54,7 @@ typedef NSUInteger UITableViewCellStateMask;        // available in iPhone OS 3.
 
 #define UITableViewCellStateEditingMask UITableViewCellStateShowingEditControlMask
 
-UIKIT_EXTERN_CLASS @interface UITableViewCell : UIView <NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITableViewCell : UIView <NSCoding> {
   @private
     id           _layoutManager;
     id           _target;

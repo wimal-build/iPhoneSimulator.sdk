@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIGestureRecognizer.h>
 
@@ -14,8 +12,9 @@
 // Changes: when a finger moves while two fingers are down
 // Ends:    when both fingers have lifted
 
-UIKIT_EXTERN_CLASS @interface UIRotationGestureRecognizer : UIGestureRecognizer {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UIRotationGestureRecognizer : UIGestureRecognizer {
   @package
+    double            _initialTouchDistance;
     double            _initialTouchAngle;
     double            _currentTouchAngle;
     NSInteger         _currentRotationCount;
@@ -30,5 +29,3 @@ UIKIT_EXTERN_CLASS @interface UIRotationGestureRecognizer : UIGestureRecognizer 
 @property (nonatomic,readonly) CGFloat velocity;            // velocity of the pinch in radians/second
 
 @end
-
-#endif

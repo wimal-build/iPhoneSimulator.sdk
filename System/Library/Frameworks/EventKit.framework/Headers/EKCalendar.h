@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -49,6 +47,8 @@ typedef NSUInteger EKCalendarEventAvailabilityMask;
                  calendars are immutable. You can inspect them, but you cannot alter them,
                  nor can you add or delete calendars from the calendar store.
 */
+
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKCalendar : NSObject {
 @private
     EKEventStore       *_store;
@@ -102,5 +102,3 @@ typedef NSUInteger EKCalendarEventAvailabilityMask;
 @property(nonatomic, readonly) EKCalendarEventAvailabilityMask supportedEventAvailabilities;
 
 @end
-
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED

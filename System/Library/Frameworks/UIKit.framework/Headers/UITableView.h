@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIScrollView.h>
+#import <UIKit/UISwipeGestureRecognizer.h>
 #import <UIKit/UITableViewCell.h>
 #import <UIKit/UIKitDefines.h>
 
@@ -106,7 +107,7 @@ UIKIT_EXTERN NSString *const UITableViewSelectionDidChangeNotification;
 
 //_______________________________________________________________________________________________________________
 
-UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITableView : UIScrollView <NSCoding> {
   @private
     UITableViewStyle            _style;
 
@@ -169,6 +170,8 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
     UIColor                    *_sectionBorderColor;
     
     NSArray                    *_defaultSectionIndexTitles;
+    
+    UISwipeGestureRecognizer   *_swipeGestureRecognizer;
 
     NSInteger                   _updateCount;
     
@@ -261,6 +264,7 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
         unsigned int hideScrollIndicators:1;
         unsigned int sendReloadFinished:1;
         unsigned int keepFirstResponderWhenInteractionDisabled:1;
+        unsigned int keepFirstResponderVisibleOnBoundsChange:1;
     } _tableFlags;
     
     unsigned int _selectedSection;
@@ -278,7 +282,7 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
 @property(nonatomic)          CGFloat                    sectionHeaderHeight;   // will return the default value if unset
 @property(nonatomic)          CGFloat                    sectionFooterHeight;   // will return the default value if unset
 
-@property(nonatomic, readwrite, retain) UIView *backgroundView;                 // the background view will be automatically resized to track the size of the table view.  this will be placed as a subview of the table view behind all cells and headers/footers.  default may be non-nil for some devices.
+@property(nonatomic, readwrite, retain) UIView *backgroundView __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2); // the background view will be automatically resized to track the size of the table view.  this will be placed as a subview of the table view behind all cells and headers/footers.  default may be non-nil for some devices.
 
 // Data
 
@@ -356,7 +360,7 @@ UIKIT_EXTERN_CLASS @interface UITableView : UIScrollView <NSCoding> {
 
 @required
 
-- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)

@@ -17,3 +17,4 @@
 #include <CoreMedia/CMBufferQueue.h>
 #include <CoreMedia/CMBlockBuffer.h>
 #include <CoreMedia/CMSampleBuffer.h>
+#include <CoreMedia/CMSimpleQueue.h>

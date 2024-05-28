@@ -27,7 +27,7 @@ typedef enum {
 
 @class UIView, UIImage;
 
-UIKIT_EXTERN_CLASS @interface UITabBarItem : UIBarItem {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UITabBarItem : UIBarItem {
 @private
     NSString     *_title;
     NSSet        *_possibleTitles;

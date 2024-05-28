@@ -12,7 +12,7 @@
 
 @protocol UIPickerViewDataSource, UIPickerViewDelegate;
 
-UIKIT_EXTERN_CLASS @interface UIPickerView : UIView <NSCoding>
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIPickerView : UIView <NSCoding>
 { 
   @private
     NSMutableArray            *_tables;

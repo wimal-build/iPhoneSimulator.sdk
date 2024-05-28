@@ -7,6 +7,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#include <CoreTelephony/CoreTelephonyDefines.h>
 
 @class CTCarrier;
 
@@ -16,6 +17,7 @@
  *  Discussion:
  *    The CTTelephonyNetworkInfo object is your entry point to the telephony service.
  */
+CORETELEPHONY_EXTERN_CLASS
 @interface CTTelephonyNetworkInfo : NSObject
 {
 @private

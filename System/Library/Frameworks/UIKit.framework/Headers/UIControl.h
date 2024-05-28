@@ -64,7 +64,7 @@ typedef NSUInteger UIControlState;
 
 //______________________________________________________
 
-UIKIT_EXTERN_CLASS @interface UIControl : UIView {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIControl : UIView {
   @package
     NSMutableArray* _targetActions;
     CGPoint         _previousPoint;

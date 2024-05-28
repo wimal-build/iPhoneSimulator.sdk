@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
 
@@ -39,6 +37,8 @@ typedef enum {
                 you pass has no calendar set, the default calendar as set in Settings will be used.
 */
 @protocol EKEventEditViewDelegate;
+
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKEventEditViewController : UINavigationController {
 @private
     EKEventStore                   *_store;
@@ -104,5 +104,3 @@ typedef enum {
 
 
 @end
-
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED

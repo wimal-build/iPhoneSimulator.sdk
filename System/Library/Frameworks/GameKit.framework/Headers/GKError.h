@@ -28,6 +28,7 @@ enum {
     GKErrorUnderage,
     GKErrorGameUnrecognized,
     GKErrorNotSupported,
+    GKErrorInvalidParameter,
 };
 typedef NSInteger GKErrorCode;
 

@@ -27,6 +27,7 @@ typedef NSUInteger MKAnnotationViewDragState;
 @class MKAnnotationViewInternal;
 @protocol MKAnnotation;
 
+NS_CLASS_AVAILABLE(__MAC_NA, 3_0)
 @interface MKAnnotationView : UIView
 {
 @private
@@ -78,6 +79,9 @@ typedef NSUInteger MKAnnotationViewDragState;
 // Automatically set to MKAnnotationViewDragStateStarting, Canceling, and Ending when necessary.
 // Implementer is responsible for transitioning to Dragging and None states as appropriate.
 @property (nonatomic) MKAnnotationViewDragState dragState __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+
+// Developers targeting iOS 4.2 and after must use setDragState:animated: instead of setDragState:.
+- (void)setDragState:(MKAnnotationViewDragState)newDragState animated:(BOOL)animated __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
 
 
 @end

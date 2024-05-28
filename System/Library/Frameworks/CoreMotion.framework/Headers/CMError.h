@@ -14,4 +14,4 @@
  */
 typedef enum {
 	CMErrorNULL = 100
-} CMError __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+} CMError;

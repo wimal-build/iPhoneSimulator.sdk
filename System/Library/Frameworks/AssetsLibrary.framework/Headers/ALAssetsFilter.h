@@ -14,6 +14,7 @@
 
 #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface ALAssetsFilter : NSObject {
 @package
     id _internal;

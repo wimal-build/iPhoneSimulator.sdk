@@ -17,6 +17,7 @@ extern NSString *const AVErrorTimeKey                           __OSX_AVAILABLE_
 extern NSString *const AVErrorFileSizeKey                       __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 extern NSString *const AVErrorPIDKey                            __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
 extern NSString *const AVErrorRecordingSuccessfullyFinishedKey  __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+extern NSString *const AVErrorDiscontinuityFlagsKey				__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_NA);
 
 enum {
 	AVErrorUnknown                                      = -11800,
@@ -35,8 +36,8 @@ enum {
 	AVErrorDeviceNotConnected                           = -11814,
 	AVErrorDeviceInUseByAnotherApplication              = -11815,
 	AVErrorDeviceLockedForConfigurationByAnotherProcess = -11817,
-	AVErrorSessionWasInterrupted						= -11818,
 #if TARGET_OS_IPHONE
+	AVErrorSessionWasInterrupted						= -11818,
 	AVErrorMediaServicesWereReset						= -11819,
 #endif
 	AVErrorExportFailed									= -11820,

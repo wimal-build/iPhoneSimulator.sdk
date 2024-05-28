@@ -63,7 +63,11 @@
 	<CoreVideo/CVPixelBuffer.h> are not currently supported. The only value currently supported for
 	AVVideoCodecKey is AVVideoCodecH264.
 
-	Currently, non-nil output settings must be specified.
+	Passing nil for output settings instructs the input to pass through appended samples, doing no processing
+	before they are written to the output file.  This is useful if, for example, you are appending buffers that
+	are already in a desirable compressed format.  However, passthrough is currently supported only when writing
+	to QuickTime Movie files (i.e. the AVAssetWriter was initialized with AVFileTypeQuickTimeMovie).  For other
+	file types, non-nil output settings must be specified.
  */
 + (AVAssetWriterInput *)assetWriterInputWithMediaType:(NSString *)mediaType outputSettings:(NSDictionary *)outputSettings;
 
@@ -93,7 +97,11 @@
 	<CoreVideo/CVPixelBuffer.h> are not currently supported. The only value currently supported for
 	AVVideoCodecKey is AVVideoCodecH264.
 
-	Currently, non-nil output settings must be specified.
+	Passing nil for output settings instructs the input to pass through appended samples, doing no processing
+	before they are written to the output file.  This is useful if, for example, you are appending buffers that
+	are already in a desirable compressed format.  However, passthrough is currently supported only when writing
+	to QuickTime Movie files (i.e. the AVAssetWriter was initialized with AVFileTypeQuickTimeMovie).  For other
+	file types, non-nil output settings must be specified.
  */
 - (id)initWithMediaType:(NSString *)mediaType outputSettings:(NSDictionary *)outputSettings;
 
@@ -226,6 +234,14 @@
         }
     }];
  
+	This method is not recommended for use with a push-style buffer source, such as AVCaptureAudioDataOutput or
+	AVCaptureVideoDataOutput, because such a combination will likely require intermediate queueing of buffers.  Instead, this
+	method is better suited to a pull-style buffer source such as AVAssetReaderOutput, as illustrated in the above example.
+ 
+	When using a push-style buffer source, it is generally better to immediately append each buffer to the AVAssetWriterInput,
+	directly via -[AVAssetWriter appendSampleBuffer:], as it is received.  Using this strategy, it is often possible to avoid 
+	having to queue up buffers in between the buffer source and the AVAssetWriterInput.  Note that many of these push-style
+	buffer sources also produce buffers in real-time, in which case the client should set expectsMediaDataInRealTime to YES.
  */
 - (void)requestMediaDataWhenReadyOnQueue:(dispatch_queue_t)queue usingBlock:(void (^)(void))block;
 

@@ -232,7 +232,7 @@ OSStatus SecKeyEncrypt(
 
 
 /*!
-    @function SecKeyEncrypt
+    @function SecKeyDecrypt
     @abstract Decrypt a block of ciphertext. 
     @param key Private key with which to decrypt the data.
     @param padding See Padding Types above, typically kSecPaddingPKCS1.

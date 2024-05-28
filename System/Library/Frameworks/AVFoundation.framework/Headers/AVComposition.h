@@ -163,7 +163,7 @@
 	@abstract		Changes the duration of a timeRange of all tracks.
 	@param			timeRange
 					Specifies the timeRange of the composition to be scaled.
-	@param			toDuration
+	@param			duration
 					Specifies the new duration of the timeRange.
 	@discussion
 		Each trackSegment affected by the scaling operation will be presented at a rate equal to

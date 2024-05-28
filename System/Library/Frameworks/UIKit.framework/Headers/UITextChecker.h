@@ -11,9 +11,7 @@
 /* A UITextChecker object is used by a client (e.g. a document in an application) to check a given NSString. Generally one UITextChecker instance should be created per document.  Multiple related pieces of text may share a single UITextChecker instance, if they are intended to share ignored words and other similar state.
 */
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-
-UIKIT_EXTERN_CLASS @interface UITextChecker : NSObject {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UITextChecker : NSObject {
 @private
     id _checker;
     id _reserved;
@@ -43,5 +41,3 @@ UIKIT_EXTERN_CLASS @interface UITextChecker : NSObject {
 + (NSArray *)availableLanguages;
 
 @end
-
-#endif // __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

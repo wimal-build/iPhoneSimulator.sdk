@@ -24,6 +24,7 @@ typedef NSInteger GKLeaderboardPlayerScope;
 @class GKScore;
 
 // GKLeaderboard represents the set of high scores for the current game, always including the local player's best score.
+NS_CLASS_AVAILABLE(NA, 4_1)
 @interface GKLeaderboard : NSObject {
 }
 

@@ -2,6 +2,7 @@ CREATE TRIGGER after_delete_message AFTER DELETE ON messages
   BEGIN
     DELETE FROM threads WHERE threads.message_id == OLD.ROWID;
     DELETE FROM message_data WHERE message_id = OLD.ROWID;
+    DELETE FROM message_metadata WHERE message_id = OLD.ROWID;
 
     UPDATE mailboxes SET total_count = total_count - 1 WHERE mailboxes.ROWID = old.mailbox;
     UPDATE mailboxes SET unread_count = unread_count - 1 WHERE mailboxes.ROWID = old.mailbox AND old.flags&1 = 0;

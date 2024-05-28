@@ -17,6 +17,7 @@
     // The ABPeoplePickerNavigationController allows the user to select a person or value by presenting
     // the entire address book.
 
+NS_CLASS_AVAILABLE(NA, 2_0)
 @interface ABPeoplePickerNavigationController : UINavigationController
 {
     @package
@@ -40,7 +41,7 @@
             unsigned            allowsEditing:1;
             unsigned            allowsCancel:1;
             unsigned            allowsActions:1;
-            unsigned            allowsSound:1;
+            unsigned            allowsSounds:1;
             unsigned            hidesSearchableStores:1;
         } _flags;
 }

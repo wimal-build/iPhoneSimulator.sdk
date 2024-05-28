@@ -213,9 +213,9 @@ CA_EXTERN NSString * const kCAAnimationDiscrete
 CA_EXTERN NSString * const kCAAnimationPaced
     __OSX_AVAILABLE_STARTING (__MAC_10_5, __IPHONE_2_0);
 CA_EXTERN NSString * const kCAAnimationCubic
-    __OSX_AVAILABLE_STARTING (__MAC_NA, __IPHONE_4_0);
+    __OSX_AVAILABLE_STARTING (__MAC_10_7, __IPHONE_4_0);
 CA_EXTERN NSString * const kCAAnimationCubicPaced
-    __OSX_AVAILABLE_STARTING (__MAC_NA, __IPHONE_4_0);
+    __OSX_AVAILABLE_STARTING (__MAC_10_7, __IPHONE_4_0);
 
 /* `rotationMode' strings. */
 

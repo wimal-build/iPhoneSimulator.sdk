@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIViewController.h>
@@ -15,7 +13,7 @@
 
 @class UIImage, UIView, UIPopoverController;
 
-UIKIT_EXTERN_CLASS @interface UIDocumentInteractionController : NSObject <UIActionSheetDelegate> {
+UIKIT_CLASS_AVAILABLE(3_2) @interface UIDocumentInteractionController : NSObject <UIActionSheetDelegate> {
 @private
     id <UIDocumentInteractionControllerDelegate> _delegate;
     id _previewItemProxy;
@@ -32,6 +30,7 @@ UIKIT_EXTERN_CLASS @interface UIDocumentInteractionController : NSObject <UIActi
     
     CGRect       _presentRect;
     UIView      *_presentView;
+    UIBarButtonItem *_presentItem;
     
     NSArray     *_availableApplications;
     UIViewController    *_openInViewController;
@@ -42,6 +41,7 @@ UIKIT_EXTERN_CLASS @interface UIDocumentInteractionController : NSObject <UIActi
     NSInteger    _defaultOpenButtonIndex;
     NSInteger    _alternateOpenButtonIndex;
     NSInteger    _copyButtonIndex;
+    NSInteger    _printButtonIndex;
     
     CGSize      _openInTableViewSize;
 
@@ -143,8 +143,6 @@ UIKIT_EXTERN_CLASS @interface UIDocumentInteractionController : NSObject <UIActi
 
 - (BOOL)documentInteractionController:(UIDocumentInteractionController *)controller canPerformAction:(SEL)action;
 - (BOOL)documentInteractionController:(UIDocumentInteractionController *)controller performAction:(SEL)action;
-// Used to handle additional menu items that can be performed on the item specified by URL.  Currently only supports the "copy:" action.
+// Used to handle additional menu items that can be performed on the item specified by URL.  Currently only supports the "copy:" and "print:" actions.
 
 @end 
-
-#endif

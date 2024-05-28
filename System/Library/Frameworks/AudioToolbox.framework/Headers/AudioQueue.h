@@ -3,7 +3,7 @@
 
     Contains:   AudioQueue Interfaces for the AudioToolbox
 
-    Copyright:  © 2006-2008 by Apple, Inc., all rights reserved.
+    Copyright:  © 2006-2010 by Apple, Inc., all rights reserved.
 
     Bugs?:      For bug reports, consult the following page on
                 the World Wide Web:
@@ -96,7 +96,7 @@ extern "C" {
     @constant   kAudioQueueErr_CannotStart          The audio queue has encountered a problem and
                                                     cannot start.
     @constant   kAudioQueueErr_InvalidDevice        The device assigned to the queue could not
-                                                    be located.
+                                                    be located, or is not properly configured.
     @constant   kAudioQueueErr_BufferInQueue        The buffer cannot be disposed of when it is
                                                     enqueued.
     @constant   kAudioQueueErr_InvalidRunState      The queue is running but the function can
@@ -980,6 +980,10 @@ AudioQueueEnqueueBuffer(            AudioQueueRef                       inAQ,
         queued. If multiple buffers are queued, their times must be in ascending order or NULL;
         otherwise, an error occurs. The start time indicates when the actual audio data in the
         buffer is to be played (that is, the trim frames are not counted).
+        
+        Note: When specifying a start time for a buffer, if the buffer is not the first enqueued
+        since AudioQueueStop or AudioQueueReset, it is normally necessary to call AudioQueueFlush
+        before AudioQueueEnqueueBufferWithParameters.
     @param      outActualStartTime
         On return, points to an AudioTimeStamp structure indicating when the buffer will
         actually play.

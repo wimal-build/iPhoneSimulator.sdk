@@ -5,12 +5,11 @@
 //  Copyright 2010 Apple, Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <MapKit/MKShape.h>
 #import <MapKit/MKOverlay.h>
 #import <MapKit/MKGeometry.h>
 
+NS_CLASS_AVAILABLE(__MAC_NA, 4_0)
 @interface MKCircle : MKShape <MKOverlay> {
 @package
     CLLocationCoordinate2D _coordinate;
@@ -30,5 +29,3 @@
 @property (nonatomic, readonly) MKMapRect boundingMapRect; 
 
 @end
-
-#endif

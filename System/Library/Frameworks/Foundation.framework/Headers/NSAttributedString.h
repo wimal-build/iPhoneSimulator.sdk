@@ -2,11 +2,10 @@
 	Copyright (c) 1994-2010, Apple Inc. All rights reserved.
 */
 
-#if MAC_OS_X_VERSION_10_0 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_3_2 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/NSString.h>
 #import <Foundation/NSDictionary.h>
 
+NS_CLASS_AVAILABLE(10_0, 3_2)
 @interface NSAttributedString : NSObject <NSCopying, NSMutableCopying, NSCoding>
 
 - (NSString *)string;
@@ -42,6 +41,7 @@ typedef NSUInteger NSAttributedStringEnumerationOptions;
 
 @end
 
+NS_CLASS_AVAILABLE(10_0, 3_2)
 @interface NSMutableAttributedString : NSAttributedString
 
 - (void)replaceCharactersInRange:(NSRange)range withString:(NSString *)str;
@@ -68,4 +68,3 @@ typedef NSUInteger NSAttributedStringEnumerationOptions;
 
 @end
 
-#endif

@@ -668,6 +668,9 @@ enum
 	kCMMPEG2VideoProfile_XDCAM_HD422_1080p30_CBR50 =	'xd5f',
 	kCMMPEG2VideoProfile_XDCAM_HD_540p =				'xdhd',
 	kCMMPEG2VideoProfile_XDCAM_HD422_540p =			'xdh2',
+	kCMMPEG2VideoProfile_XDCAM_HD422_720p24_CBR50 = 'xd54',
+	kCMMPEG2VideoProfile_XDCAM_HD422_720p25_CBR50 = 'xd55',
+	kCMMPEG2VideoProfile_XDCAM_HD422_720p30_CBR50 = 'xd51',
 };
 
 CM_EXPORT const CFStringRef kCMFormatDescriptionExtension_TemporalQuality			// CFNumber
@@ -894,10 +897,12 @@ typedef CMFormatDescriptionRef CMClosedCaptionFormatDescriptionRef;
 				Note:  use CMFormatDescriptionCreate to create a CMClosedCaptionFormatDescriptionRef.
 	@constant	kCMClosedCaptionFormatType_CEA608	CEA 608-compliant samples
 	@constant	kCMClosedCaptionFormatType_CEA708	CEA 708-compliant samples
+	@constant	kCMClosedCaptionFormatType_ATSC		ATSC/52 part-4 compliant samples
 */
 enum {
 	kCMClosedCaptionFormatType_CEA608	= 'c608',
-	kCMClosedCaptionFormatType_CEA708	= 'c708'
+	kCMClosedCaptionFormatType_CEA708	= 'c708',
+	kCMClosedCaptionFormatType_ATSC		= 'atcc'
 };
 typedef FourCharCode CMClosedCaptionFormatType;
 

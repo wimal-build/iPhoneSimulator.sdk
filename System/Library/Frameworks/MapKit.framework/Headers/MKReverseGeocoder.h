@@ -17,6 +17,7 @@
 @class MKReverseGeocoderInternal;
 @protocol MKReverseGeocoderDelegate;
 
+NS_CLASS_AVAILABLE(__MAC_NA, 3_0)
 @interface MKReverseGeocoder : NSObject {
 @private
     MKReverseGeocoderInternal *_internal;

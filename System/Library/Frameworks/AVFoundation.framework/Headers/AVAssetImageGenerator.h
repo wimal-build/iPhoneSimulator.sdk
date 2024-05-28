@@ -78,12 +78,23 @@ typedef NSInteger AVAssetImageGeneratorResult;
 
 /* Specifies the video composition to use when extracting images from assets with multiple video tracks.
    If no videoComposition is specified, only the first enabled video track will be used.
-   If a videoComposition is specified, the "appliesTrackTransform" properties are ignored. */
+   If a videoComposition is specified, the value of appliesPreferredTrackTransform is ignored. */
 @property (nonatomic, copy) AVVideoComposition *videoComposition;
 
 /*!
 	@method			assetImageGeneratorWithAsset:
 	@abstract		Returns an instance of AVAssetImageGenerator for use with the specified asset.
+	@param			asset
+					The asset from which images will be extracted.
+	@result			An instance of AVAssetImageGenerator
+	@discussion		This method may succeed even if the asset possesses no visual tracks at the time of initialization.
+					Clients may wish to test whether an asset has any tracks with the visual characteristic via
+					-[AVAsset tracksWithMediaCharacteristic:].
+					
+					Note also that assets that represent mutable compositions may gain visual tracks after
+					initialization of an associated AVAssetImageGenerator.
+					
+					AVAssetImageGenerator will use the default enabled video track(s) to generate images.
 */
 + (AVAssetImageGenerator *)assetImageGeneratorWithAsset:(AVAsset *)asset;
 
@@ -97,7 +108,7 @@ typedef NSInteger AVAssetImageGeneratorResult;
 					Clients may wish to test whether an asset has any tracks with the visual characteristic via
 					-[AVAsset tracksWithMediaCharacteristic:].
 					
-					Note also that assets that represent mutable compositions or mutable movies may gain visual tracks after
+					Note also that assets that represent mutable compositions may gain visual tracks after
 					initialization of an associated AVAssetImageGenerator.
 					
 					AVAssetImageGenerator will use the default enabled video track(s) to generate images.
@@ -105,7 +116,7 @@ typedef NSInteger AVAssetImageGeneratorResult;
 - (id)initWithAsset:(AVAsset *)asset;
 
 /*!
-	@method			copyCGImageAtTime:actualTime:
+	@method			copyCGImageAtTime:actualTime:error:
 	@abstract		Returns a CFRetained CGImageRef for an asset at or near the specified time.
 	@param			requestedTime
 					The time at which the image of the asset is to be created.
@@ -137,7 +148,7 @@ typedef void (^AVAssetImageGeneratorCompletionHandler)(CMTime requestedTime, CGI
 - (void)generateCGImagesAsynchronouslyForTimes:(NSArray *)requestedTimes completionHandler:(AVAssetImageGeneratorCompletionHandler)handler;
 
 /*!
-	@method			cancelAllCGImagePreparation
+	@method			cancelAllCGImageGeneration
 	@abstract		Cancels all outstanding image generation requests.
 	@discussion		Calls the handler block with AVAssetImageGeneratorCancelled for each image time in every previous invocation of -generateCGImagesAsynchronouslyForTimes:completionHandler:
 					for which images have not yet been supplied.

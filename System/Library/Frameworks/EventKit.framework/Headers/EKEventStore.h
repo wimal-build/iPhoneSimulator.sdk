@@ -5,8 +5,6 @@
 //  Copyright 2009-2010 Apple Inc. All rights reserved.
 //
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 #import <Foundation/Foundation.h>
 
 @class EKCalendar, EKEvent;
@@ -33,8 +31,13 @@ typedef void (^EKEventSearchCallback)(EKEvent *event, BOOL *stop);
     @abstract    The EKEventStore class provides an interface for accessing and manipulating calendar events.
     @discussion  The EKEventStore class is the main point of contact for accessing Calendar data. You must
                  create a EKEventStore object in order to retrieve/add/delete events from the Calendar database.
+                 
+                 Events and Calendar objects gotten from an event store cannot be used with any other event
+                 store. It is generally best to hold onto a long-lived instance of an event store, most
+                 likely as a singleton instance in your application.
 */
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface EKEventStore : NSObject {
 @private
     id                      _database;
@@ -152,8 +155,6 @@ typedef void (^EKEventSearchCallback)(EKEvent *event, BOOL *stop);
 - (NSPredicate *)predicateForEventsWithStartDate:(NSDate *)startDate endDate:(NSDate *)endDate calendars:(NSArray *)calendars;
 
 @end
-
-#endif // #if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
 
 /*!
     @constant   EKEventStoreChangedNotification

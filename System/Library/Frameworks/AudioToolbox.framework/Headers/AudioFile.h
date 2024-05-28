@@ -119,6 +119,8 @@ typedef UInt32			AudioFileTypeID;
     @constant   kAudioFileOperationNotSupportedError 
 		The operation cannot be performed. For example, setting kAudioFilePropertyAudioDataByteCount to increase 
 		the size of the audio data in a file is not a supported operation. Write the data instead.
+    @constant   kAudioFileNotOpenError 
+		The file is closed.
 	@constant   kAudioFileEndOfFileError 
 		End of file.
 	@constant   kAudioFilePositionError 
@@ -141,6 +143,7 @@ enum {
         kAudioFileInvalidFileError						= 'dta?',
 		kAudioFileOperationNotSupportedError			= 0x6F703F3F, // 'op??', integer used because of trigraph
 		// general file error codes
+		kAudioFileNotOpenError							= -38,
 		kAudioFileEndOfFileError						= -39,
 		kAudioFilePositionError							= -40,
 		kAudioFileFileNotFoundError						= -43

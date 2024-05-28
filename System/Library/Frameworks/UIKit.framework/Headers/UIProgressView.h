@@ -14,12 +14,14 @@ typedef enum {
     UIProgressViewStyleBar,         // for use in a toolbar
 } UIProgressViewStyle;
 
-UIKIT_EXTERN_CLASS @interface UIProgressView : UIView <NSCoding>
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIProgressView : UIView <NSCoding>
 { 
   @private
     UIProgressViewStyle _progressViewStyle;
     float               _progress;
     UIBarStyle          _barStyle;
+    UIColor*            _customColor;
+    UIImage*            _customColorImage;
 }
 
 - (id)initWithProgressViewStyle:(UIProgressViewStyle)style; // sets the view height according to the style

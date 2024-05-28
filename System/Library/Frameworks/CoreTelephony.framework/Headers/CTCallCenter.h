@@ -7,9 +7,11 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <CoreTelephony/CoreTelephonyDefines.h>
 
 @class CTCall;
 
+CORETELEPHONY_EXTERN_CLASS
 @interface CTCallCenter : NSObject
 {
 @private

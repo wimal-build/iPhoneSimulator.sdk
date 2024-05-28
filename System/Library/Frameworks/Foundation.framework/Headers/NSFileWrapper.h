@@ -5,8 +5,6 @@
 
 #import <Foundation/NSObject.h>
 
-#if MAC_OS_X_VERSION_10_0 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 @class NSData, NSDictionary, NSError, NSURL;
 
 #if MAC_OS_X_VERSION_10_6 <= MAC_OS_X_VERSION_MAX_ALLOWED || __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
@@ -45,6 +43,7 @@ enum {
 
 typedef NSUInteger NSFileWrapperWritingOptions;
 
+NS_CLASS_AVAILABLE(10_0, 4_0)
 @interface NSFileWrapper : NSObject<NSCoding> {
     @private
     NSDictionary *_fileAttributes;
@@ -200,4 +199,3 @@ typedef NSUInteger NSFileWrapperWritingOptions;
 
 #endif
 
-#endif

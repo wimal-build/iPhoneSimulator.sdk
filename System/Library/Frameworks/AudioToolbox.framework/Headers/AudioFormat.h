@@ -277,6 +277,12 @@ typedef struct AudioFormatListItem AudioFormatListItem;
 					an AudioChannelLayout containing the layout description. The value
 					is a CFStringRef. The caller is responsible for releasing the
 					returned string.
+    @constant   kAudioFormatProperty_ChannelLayoutSimpleName
+					Returns the a simpler name for a channel layout than does kAudioFormatProperty_ChannelLayoutName. 
+					It omits the channel labels from the name. The specifier is
+					an AudioChannelLayout containing the layout description. The value
+					is a CFStringRef. The caller is responsible for releasing the
+					returned string.
     @constant   kAudioFormatProperty_ChannelName
 					Returns the name for a particular channel. The specifier is an
 					AudioChannelDescription which has the mChannelLabel field set. The value
@@ -381,6 +387,7 @@ enum
 	kAudioFormatProperty_ChannelLayoutName				= 'lonm',
 	kAudioFormatProperty_ChannelLayoutForBitmap			= 'cmpb',
 	kAudioFormatProperty_ChannelName					= 'cnam',
+	kAudioFormatProperty_ChannelLayoutSimpleName		= 'lsnm',
 	kAudioFormatProperty_ChannelShortName				= 'csnm',
 
 	kAudioFormatProperty_TagsForNumberOfChannels		= 'tagc',				

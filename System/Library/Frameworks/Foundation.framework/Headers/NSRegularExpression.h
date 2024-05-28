@@ -8,8 +8,6 @@
 
 @class NSArray;
 
-#if __IPHONE_4_0 <= __IPHONE_OS_VERSION_MAX_ALLOWED
-
 /* NSRegularExpression is a class used to represent and apply regular expressions.  An instance of this class is an immutable representation of a compiled regular expression pattern and various option flags.
 */
 
@@ -24,6 +22,7 @@ enum {
 };
 typedef NSUInteger NSRegularExpressionOptions;
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface NSRegularExpression : NSObject <NSCopying, NSCoding> {
     @protected   // all instance variables are private
     NSString *_pattern;
@@ -111,7 +110,7 @@ NSRegularExpression is designed to be immutable and threadsafe, so that a single
 
 @end
 
-
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface NSDataDetector : NSRegularExpression {
     @protected   // all instance variables are private
     NSTextCheckingTypes _types;
@@ -126,4 +125,3 @@ NSRegularExpression is designed to be immutable and threadsafe, so that a single
 
 @end
 
-#endif /* __IPHONE_OS_VERSION_MAX_ALLOWED */

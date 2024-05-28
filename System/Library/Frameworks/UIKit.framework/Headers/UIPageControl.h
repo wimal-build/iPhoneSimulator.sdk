@@ -9,7 +9,7 @@
 #import <UIKit/UIControl.h>
 #import <UIKit/UIKitDefines.h>
 
-UIKIT_EXTERN_CLASS @interface UIPageControl : UIControl {
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIPageControl : UIControl {
   @private
     NSMutableArray* _indicators;
     NSInteger       _currentPage;

@@ -17,6 +17,7 @@
 @class NSPredicate;
 @class NSString;
 
+NS_CLASS_AVAILABLE(10_4, 3_0)
 @interface NSFetchRequest : NSObject <NSCoding, NSCopying> {
 @private
 	NSArray *_affectedStores;

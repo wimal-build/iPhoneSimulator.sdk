@@ -48,7 +48,7 @@
 #import <AVFoundation/AVAudioSession.h>
 #endif
 
-#if TARGET_OS_EMBEDDED
+#if (TARGET_OS_EMBEDDED || (!TARGET_OS_IPHONE && defined(__MAC_10_7)))
 #import <AVFoundation/AVCaptureSession.h>
 #import <AVFoundation/AVCaptureDevice.h>
 #import <AVFoundation/AVCaptureInput.h>

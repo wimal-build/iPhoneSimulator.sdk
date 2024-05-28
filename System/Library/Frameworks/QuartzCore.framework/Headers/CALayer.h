@@ -358,7 +358,8 @@ enum CAEdgeAntialiasingMask
 @property(copy) NSString *minificationFilter, *magnificationFilter;
 
 /* The bias factor added when determining which levels of detail to use
- * when minifying using trilinear filtering. The default value is 0. */
+ * when minifying using trilinear filtering. The default value is 0.
+ * Animatable. */
 
 @property float minificationFilterBias;
 

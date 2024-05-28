@@ -59,6 +59,7 @@ typedef void (^ALAssetsLibraryWriteImageCompletionBlock)(NSURL *assetURL, NSErro
 typedef void (^ALAssetsLibraryWriteVideoCompletionBlock)(NSURL *assetURL, NSError *error);
 
 
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface ALAssetsLibrary : NSObject {
 @package
     id _internal;

@@ -9,6 +9,7 @@
 #import <GameKit/GKPlayer.h>
 #import <GameKit/GKDefines.h>
 
+NS_CLASS_AVAILABLE(NA, 4_1)
 GK_EXTERN_CLASS @interface GKLocalPlayer : GKPlayer {
 }
 
@@ -21,6 +22,7 @@ GK_EXTERN_CLASS @interface GKLocalPlayer : GKPlayer {
 @property(nonatomic, readonly, getter=isUnderage)       BOOL underage;      // Underage state
 
 // Authenticate the player for access to player details and game statistics. This may present login UI to the user if necessary to login or create an account. The user must be autheticated in order to use other APIs. This should be called for each launch of the application as soon as the UI is ready.
+// The completion handler will be copied, and may be called again when the app enters the foreground.  Apps should check the local player's authenticated and player ID properties to determine if the local player is valid or has changed.
 // Possible reasons for error:
 // 1. Communications problem
 // 2. User credentials invalid

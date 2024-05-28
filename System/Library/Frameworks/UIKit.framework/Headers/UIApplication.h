@@ -64,7 +64,7 @@ UIKIT_EXTERN const NSTimeInterval UIMinimumKeepAliveTimeout  __OSX_AVAILABLE_STA
 @class UIView, UIWindow, UIStatusBar, UIStatusBarWindow, UILocalNotification;
 @protocol UIApplicationDelegate;
 
-UIKIT_EXTERN_CLASS @interface UIApplication : UIResponder <UIActionSheetDelegate>
+UIKIT_CLASS_AVAILABLE(2_0) @interface UIApplication : UIResponder <UIActionSheetDelegate>
 {
   @package
     id <UIApplicationDelegate>  _delegate;
@@ -110,6 +110,7 @@ UIKIT_EXTERN_CLASS @interface UIApplication : UIResponder <UIActionSheetDelegate
         unsigned int deviceOrientation:3;
         unsigned int delegateShouldBeReleasedUponSet:1;
         unsigned int delegateHandleOpenURL:1;
+        unsigned int delegateOpenURL:1;
         unsigned int delegateDidReceiveMemoryWarning:1;
         unsigned int delegateWillTerminate:1;
         unsigned int delegateSignificantTimeChange:1;
@@ -125,7 +126,6 @@ UIKIT_EXTERN_CLASS @interface UIApplication : UIResponder <UIActionSheetDelegate
         unsigned int delegateWillEnterForeground:1;
         unsigned int delegateWillSuspend:1;
         unsigned int delegateDidResume:1;
-        unsigned int idleTimerDisableActive:1;
         unsigned int userDefaultsSyncDisabled:1;
         unsigned int headsetButtonClickCount:4;
         unsigned int isHeadsetButtonDown:1;
@@ -140,7 +140,10 @@ UIKIT_EXTERN_CLASS @interface UIApplication : UIResponder <UIActionSheetDelegate
         unsigned int touchRotationDisabled:1;
         unsigned int taskSuspendingUnsupported:1;
         unsigned int isUnitTests:1;
-	unsigned int disableViewContentScaling:1;
+        unsigned int requiresHighResolution:1;
+        unsigned int disableViewContentScaling:1;
+        unsigned int singleUseLaunchOrientation:3;
+        unsigned int defaultInterfaceOrientation:3;
     } _applicationFlags;
 }
 
@@ -214,7 +217,7 @@ UIKIT_EXTERN_CLASS @interface UIApplication : UIResponder <UIActionSheetDelegate
 - (void)scheduleLocalNotification:(UILocalNotification *)notification __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);  // copies notification
 - (void)cancelLocalNotification:(UILocalNotification *)notification __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
 - (void)cancelAllLocalNotifications __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
-- (NSArray *)scheduledLocalNotifications __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
+@property(nonatomic,copy) NSArray *scheduledLocalNotifications __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);         // setter added in iOS 4.2
 
 @end
 
@@ -234,7 +237,8 @@ UIKIT_EXTERN_CLASS @interface UIApplication : UIResponder <UIActionSheetDelegate
 
 - (void)applicationDidBecomeActive:(UIApplication *)application;
 - (void)applicationWillResignActive:(UIApplication *)application;
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url;  // no equiv. notification. return NO if the application can't open for some reason
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url;  // Will be deprecated at some point, please replace with application:openURL:sourceApplication:annotation:
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2); // no equiv. notification. return NO if the application can't open for some reason
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application;      // try to clean up as much memory as possible. next step is to terminate app
 - (void)applicationWillTerminate:(UIApplication *)application;

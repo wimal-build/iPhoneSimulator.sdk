@@ -46,6 +46,12 @@
 #import <UIKit/UIPickerView.h>
 #import <UIKit/UIPinchGestureRecognizer.h>
 #import <UIKit/UIPopoverController.h>
+#import <UIKit/UIPrintError.h>
+#import <UIKit/UIPrintFormatter.h>
+#import <UIKit/UIPrintInfo.h>
+#import <UIKit/UIPrintInteractionController.h>
+#import <UIKit/UIPrintPageRenderer.h>
+#import <UIKit/UIPrintPaper.h>
 #import <UIKit/UIProgressView.h>
 #import <UIKit/UIResponder.h>
 #import <UIKit/UIRotationGestureRecognizer.h>

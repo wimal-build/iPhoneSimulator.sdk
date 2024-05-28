@@ -15,6 +15,7 @@
  *  Discussion:
  *    A geographic area.
  */
+NS_CLASS_AVAILABLE(NA, 4_0)
 @interface CLRegion : NSObject <NSCopying, NSCoding>
 {
 @private
