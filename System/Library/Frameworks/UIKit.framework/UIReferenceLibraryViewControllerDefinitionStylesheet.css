@@ -7,7 +7,7 @@ td{}
 div[class="dic"]{}
 *.entry{display:block;margin:0em 0em 0em 0em;margin-bottom:1.0em;}
 d\:entry{display:block;margin:0em 0em 0em 0em;margin-bottom:1.0em;}
-span.hsb:before{content:'\2022';font-size:80%%;vertical-align:-9%%;}
+/* span.hsb:before{content:'\2022';font-size:80%%;vertical-align:-9%%;} */
 span.SB{display:block;margin-left:1em;text-indent:-1em;}
 span.encBlock,span.phrBlock,span.pvBlock,span.drvBlock,span.etymBlock,span.usage{display:block;margin-top:1em;text-indent:0px;}
 span.SB+span.SB{margin-top:1em;}

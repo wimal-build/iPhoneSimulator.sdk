@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2010 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2012 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -67,6 +67,7 @@
 #include <sys/appleapiopts.h>
 #include <sys/cdefs.h>
 #include <sys/kernel_types.h>
+#include <sys/param.h>
 #include <sys/signal.h>
 
 /*
@@ -143,6 +144,7 @@ enum vtagtype	{
 #define IO_ENCRYPTED	0x20000		/* Retrieve encrypted blocks from the filesystem */
 #define IO_RETURN_ON_THROTTLE	0x40000
 #define IO_SINGLE_WRITER	0x80000
+#define IO_SYSCALL_DISPATCH		0x100000	/* I/O was originated from a file table syscall */
 
 /*
  * Component Name: this structure describes the pathname
@@ -430,14 +432,15 @@ extern int		vttoif_tab[];
 
 #define	REVOKEALL	0x0001		/* vnop_revoke: revoke all aliases */
 
-/* VNOP_REMOVE: do not delete busy files (Carbon remove file semantics) */
-#define VNODE_REMOVE_NODELETEBUSY  0x0001  
+/* VNOP_REMOVE/unlink flags */
+#define VNODE_REMOVE_NODELETEBUSY  			0x0001 /* Don't delete busy files (Carbon) */  
+#define VNODE_REMOVE_SKIP_NAMESPACE_EVENT	0x0002 /* Do not upcall to userland handlers */
 
 /* VNOP_READDIR flags: */
 #define VNODE_READDIR_EXTENDED    0x0001   /* use extended directory entries */
 #define VNODE_READDIR_REQSEEKOFF  0x0002   /* requires seek offset (cookies) */
 #define VNODE_READDIR_SEEKOFF32   0x0004   /* seek offset values should fit in 32 bits */
-
+#define VNODE_READDIR_NAMEMAX     0x0008   /* For extended readdir, try to limit names to NAME_MAX bytes */
 
 #define	NULLVP	((struct vnode *)NULL)
 

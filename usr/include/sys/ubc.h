@@ -38,7 +38,7 @@
 #include <sys/kernel_types.h>
 #include <kern/locks.h>
 #include <mach/memory_object_types.h>
-
+#include <sys/ucred.h>
 
 /* defns for ubc_sync_range() and ubc_msync */
 
@@ -101,6 +101,7 @@ int	ubc_upl_commit(upl_t);
 int	ubc_upl_commit_range(upl_t, upl_offset_t, upl_size_t, int);
 int	ubc_upl_abort(upl_t, int);
 int	ubc_upl_abort_range(upl_t, upl_offset_t, upl_size_t, int);
+void	ubc_upl_range_needed(upl_t, int, int);
 
 upl_page_info_t *ubc_upl_pageinfo(upl_t);
 upl_size_t ubc_upl_maxbufsize(void);

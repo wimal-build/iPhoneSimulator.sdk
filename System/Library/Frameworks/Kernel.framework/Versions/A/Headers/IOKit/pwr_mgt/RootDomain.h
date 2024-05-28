@@ -30,7 +30,6 @@
 
 #include <IOKit/IOService.h>
 #include <IOKit/pwr_mgt/IOPM.h>
-#include "IOKit/pwr_mgt/IOPMPrivate.h"
 #include <IOKit/IOBufferMemoryDescriptor.h> 
 
 

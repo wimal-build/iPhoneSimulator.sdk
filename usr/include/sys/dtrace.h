@@ -2510,7 +2510,8 @@ extern void *dtrace_invop_callsite_post;
 
 #endif
 
-#if defined(__arm__) 		/* XXX ARMTODO */
+#if defined(__arm__)
+/* XXX ARMTODO  */
 #define DTRACE_INVOP_PUSHL_EBP          1
 #define DTRACE_INVOP_POPL_EBP           2
 #define DTRACE_INVOP_LEAVE              3

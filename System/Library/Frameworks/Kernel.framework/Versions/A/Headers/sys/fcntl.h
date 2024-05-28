@@ -172,6 +172,8 @@ typedef __darwin_pid_t	pid_t;
 
 #define FSINGLE_WRITER	0x4000000       /* fcntl(F_SINGLE_WRITER, 1) */
 
+#define O_CLOFORK	0x8000000	/* implicitly set FD_CLOFORK */
+
 /* Data Protection Flags */
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 #define O_DP_GETRAWENCRYPTED	0x0001
@@ -234,8 +236,9 @@ typedef __darwin_pid_t	pid_t;
 #define F_SETSIZE       43		/* Truncate a file without zeroing space */	
 #define F_RDADVISE      44              /* Issue an advisory read async with no copy to user */
 #define F_RDAHEAD       45              /* turn read ahead off/on for this fd */
-#define F_READBOOTSTRAP 46              /* Read bootstrap from disk */
-#define F_WRITEBOOTSTRAP 47             /* Write bootstrap on disk */
+/*
+ * 46,47 used to be F_READBOOTSTRAP and F_WRITEBOOTSTRAP 
+ */
 #define F_NOCACHE       48              /* turn data caching off/on for this fd */
 #define F_LOG2PHYS	49		/* file offset to device offset */
 #define F_GETPATH       50              /* return the full path of the fd */
@@ -278,7 +281,8 @@ typedef __darwin_pid_t	pid_t;
 #define F_SINGLE_WRITER		76	/* file being written to a by single writer... if throttling enabled, writes */
                                         /* may be broken into smaller chunks with throttling in between */
 
-#define F_GETPROTECTIONLEVEL	77	/* Get the protection version number for the filesystem */
+#define F_GETPROTECTIONLEVEL	77	/* Get the protection version number for this filesystem */
+
 
 // FS-specific fcntl()'s numbers begin at 0x00010000 and go up
 #define FCNTL_FS_SPECIFIC_BASE  0x00010000
@@ -299,8 +303,9 @@ typedef __darwin_pid_t	pid_t;
 #define	F_WAIT		0x010		/* Wait until lock is granted */
 #define	F_FLOCK		0x020	 	/* Use flock(2) semantics for lock */
 #define	F_POSIX		0x040	 	/* Use POSIX semantics for lock */
-#define	F_PROV		0x080		/* Non-coelesced provisional lock */
+#define	F_PROV		0x080		/* Non-coalesced provisional lock */
 #define F_WAKE1_SAFE    0x100           /* its safe to only wake one waiter */
+#define	F_ABORT		0x200		/* lock attempt aborted (force umount) */
 
 /*
  * [XSI] The values used for l_whence shall be defined as described

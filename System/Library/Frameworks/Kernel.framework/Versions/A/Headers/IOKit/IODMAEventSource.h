@@ -59,9 +59,12 @@ class IODMAEventSource : public IOEventSource
   
   virtual IOReturn startDMACommand(IODMACommand *dmaCommand, IODirection direction, IOByteCount byteCount = 0, IOByteCount byteOffset = 0);
   virtual IOReturn stopDMACommand(bool flush = false, uint64_t timeout = UINT64_MAX);
-  
+
   virtual IOReturn queryDMACommand(IODMACommand **dmaCommand, IOByteCount *transferCount, bool waitForIdle = false);
   virtual IOByteCount getFIFODepth();
+
+  virtual IOReturn setDMAConfig(UInt32 dmaIndex);
+  virtual bool validDMAConfig(UInt32 dmaIndex);
   
  private:
   IOService       *dmaProvider;
@@ -79,6 +82,7 @@ class IODMAEventSource : public IOEventSource
 		    Action notification = 0,
 		    UInt32 dmaIndex = 0);
   virtual bool checkForWork(void);
+  virtual void free(void);
 };
 
 #endif /* _IOKIT_IODMAEVENTSOURCE_H */

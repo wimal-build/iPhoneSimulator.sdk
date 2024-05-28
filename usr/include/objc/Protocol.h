@@ -28,14 +28,20 @@
 #ifndef _OBJC_PROTOCOL_H_
 #define _OBJC_PROTOCOL_H_
 
-#include <objc/Object.h>
-
 #if __OBJC2__
+
+#include <Foundation/NSObject.h>
 
 // All methods of class Protocol are unavailable. 
 // Use the functions in objc/runtime.h instead.
 
+__OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
+@interface Protocol : NSObject
+@end
+
 #else
+
+#include <objc/Object.h>
 
 __OSX_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0)
 @interface Protocol : Object

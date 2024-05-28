@@ -105,20 +105,32 @@ routine vm_region(
  *	of the specified size.  The address at which the
  *	allocation actually took place is returned.
  */
+
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+skip;
+#else
 routine PREFIX(vm_allocate)(
 		target_task	: vm_task_entry_t;
 	inout	address		: vm_address_t;
 		size		: vm_size_t;
 		flags		: int);
 
+#endif
+
 /*
  *	Deallocate the specified range from the virtual
  *	address space of the target task.
  */
+
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+skip;
+#else
 routine PREFIX(vm_deallocate)(
 		target_task	: vm_task_entry_t;
 		address		: vm_address_t;
 		size		: vm_size_t);
+
+#endif
 
 /*
  *	Set the current or maximum protection attribute
@@ -130,12 +142,17 @@ routine PREFIX(vm_deallocate)(
  *	Protections are specified as a set of {read, write, execute}
  *	*permissions*.
  */
+
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+skip;
+#else
 routine PREFIX(vm_protect)(
 		target_task	: vm_task_entry_t;
 		address		: vm_address_t;
 		size		: vm_size_t;
 		set_maximum	: boolean_t;
 		new_protection	: vm_prot_t);
+#endif
 
 /*
  *	Set the inheritance attribute for the specified range

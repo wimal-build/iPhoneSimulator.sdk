@@ -4,9 +4,31 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/English.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i2Q/SLDmo5XipsAi/rCBXJEfmdI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/locversion.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			akcUZW9l1krCz5WumjsK6Z/HTq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/OTASyncAgent</key>
 		<data>
-		tJWL4XwuzSTmqAzqtatQ55xLupI=
+		ej5CzGkKM6WvQ/5cpGVh16oHUac=
+		</data>
+		<key>version.plist</key>
+		<data>
+		lgqedQ+dDlUVopwZKxn6EYulduU=
 		</data>
 	</dict>
 	<key>rules</key>
@@ -17,6 +39,13 @@
 			<true/>
 			<key>weight</key>
 			<real>10</real>
+		</dict>
+		<key>\.licns$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>50</real>
 		</dict>
 		<key>^Resources/</key>
 		<true/>
@@ -74,7 +103,7 @@
 			<key>optional</key>
 			<true/>
 			<key>weight</key>
-			<real>5</real>
+			<real>40</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>

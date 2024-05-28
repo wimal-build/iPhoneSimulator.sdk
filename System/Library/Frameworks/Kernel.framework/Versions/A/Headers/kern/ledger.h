@@ -32,12 +32,6 @@
 #ifndef _KERN_LEDGER_H_
 #define _KERN_LEDGER_H_
 
-#if CONFIG_LEDGER_SUPPORT
-#define	LEDGER_PARAMETER
-#else
-#define	LEDGER_PARAMETER __unused
-#endif
-
 #define	LEDGER_INFO		0
 #define	LEDGER_ENTRY_INFO	1
 #define	LEDGER_TEMPLATE_INFO	2

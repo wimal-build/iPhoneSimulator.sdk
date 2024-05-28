@@ -25,109 +25,122 @@
  * 
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-/*!
-	@header kern_memorystatus.h
-	This header defines a kernel event subclass for the OSMemoryNotification API
- */
 
-#ifndef SYS_KERN_MEMORYSTATUS_H
-#define SYS_KERN_MEMORYSTATUS_H
-
+#ifndef SYS_MEMORYSTATUS_H
+#define SYS_MEMORYSTATUS_H
 
 #include <stdint.h>
 #include <sys/time.h>
 #include <sys/proc.h>
+#include <sys/param.h>
 
-#define DEFAULT_JETSAM_PRIORITY -100
+#define DEFAULT_JETSAM_PRIORITY    -100
+#define FOREGROUND_JETSAM_PRIORITY  0
+#define IDLE_JETSAM_PRIORITY        1000000000
 
-/*
- * Define Memory Status event subclass.
- * Subclass of KEV_SYSTEM_CLASS
- */
-
-/*!
-	@defined KEV_MEMORYSTATUS_SUBCLASS
-	@discussion The kernel event subclass for memory status events.
-*/
 #define KEV_MEMORYSTATUS_SUBCLASS        3
 
 enum {
-	kMemoryStatusLevelNote = 1,
-	kMemoryStatusSnapshotNote = 2,
-	kMemoryStatusFreezeNote = 3,
-	kMemoryStatusPressureNote = 4
+	kMemorystatusLevelNote = 1,
+	kMemorystatusSnapshotNote = 2,
+	kMemorystatusFreezeNote = 3,
+	kMemorystatusPressureNote = 4
 };
 
 enum {
-	kMemoryStatusLevelAny = -1,
-	kMemoryStatusLevelNormal = 0,
-	kMemoryStatusLevelWarning = 1,
-	kMemoryStatusLevelUrgent = 2,
-	kMemoryStatusLevelCritical = 3
+	kMemorystatusLevelAny = -1,
+	kMemorystatusLevelNormal = 0,
+	kMemorystatusLevelWarning = 1,
+	kMemorystatusLevelUrgent = 2,
+	kMemorystatusLevelCritical = 3
 };
 
-typedef struct jetsam_priority_entry {
+typedef struct memorystatus_priority_entry {
 	pid_t pid;
-	uint32_t flags;
-	int32_t hiwat_pages;
 	int32_t priority;
-	int32_t reserved;
-	int32_t reserved2;
-} jetsam_priority_entry_t;
-
-typedef struct jetsam_snapshot_entry {
-	pid_t pid;
-	char name[MAXCOMLEN+1];
-	uint32_t pages;
-	uint32_t flags;
-	uint8_t uuid[16];
-} jetsam_snapshot_entry_t;
+	int32_t hiwat_pages;
+	uint64_t user_data;
+} memorystatus_priority_entry_t;
 
 /*
 ** how many processes to snapshot
 */
 #define kMaxSnapshotEntries 128 
 
-typedef struct jetsam_kernel_stats {
+typedef struct memorystatus_kernel_stats {
 	uint32_t free_pages;
 	uint32_t active_pages;
 	uint32_t inactive_pages;
 	uint32_t throttled_pages;
 	uint32_t purgeable_pages;
 	uint32_t wired_pages;
-} jetsam_kernel_stats_t;
+} memorystatus_kernel_stats_t;
 
 /*
 ** This is a variable-length struct.
-** Allocate a buffer of the size returned by the sysctl, cast to a jetsam_snapshot_t *
+** Allocate a buffer of the size returned by the sysctl, cast to a memorystatus_snapshot_t *
 */
+
+typedef struct jetsam_snapshot_entry {
+	pid_t pid;
+	char name[MAXCOMLEN+1];
+	int32_t priority;
+	uint32_t pages;
+	uint32_t max_pages;
+	uint32_t state;
+	uint32_t killed;
+	uint64_t user_data;
+	uint8_t uuid[16];
+} memorystatus_jetsam_snapshot_entry_t;
 
 typedef struct jetsam_snapshot {
 	uint64_t snapshot_time;
 	uint64_t notification_time;
-	jetsam_kernel_stats_t stats;
+	memorystatus_kernel_stats_t stats;
 	size_t entry_count;
-	jetsam_snapshot_entry_t entries[1];
-} jetsam_snapshot_t;
+	memorystatus_jetsam_snapshot_entry_t entries[];
+} memorystatus_jetsam_snapshot_t;
 
-typedef struct jetsam_freeze_entry {
- 	uint32_t pid;
+typedef struct memorystatus_freeze_entry {
+ 	int32_t pid;
  	uint32_t flags;
  	uint32_t pages;
-} jetsam_freeze_entry_t;
+} memorystatus_freeze_entry_t;
 
+/* State */
+#define kMemorystatusSuspended        0x1
+#define kMemorystatusFrozen           0x2
+#define kMemorystatusWasThawed        0x4
+#define kMemorystatusSupportsIdleExit 0x8
+#define kMemorystatusDirty            0x10
 
+/* Cause */
 enum {
-	kJetsamFlagsFrontmost =        (1 << 0),
-	kJetsamFlagsKilled =           (1 << 1),
-	kJetsamFlagsKilledHiwat =      (1 << 2),
- 	kJetsamFlagsFrozen     =       (1 << 3),
- 	kJetsamFlagsKilledVnodes =     (1 << 4),
- 	kJetsamFlagsKilledSwap =       (1 << 5),
-  	kJetsamFlagsThawed =           (1 << 6),
-  	kJetsamFlagsKilledVM =         (1 << 7),
-	kJetsamFlagsSuspForDiagnosis = (1 << 8),
-	kJetsamFlagsActive =           (1 << 9)
+	kMemorystatusKilled = 1,
+	kMemorystatusKilledHiwat,
+ 	kMemorystatusKilledVnodes,
+  	kMemorystatusKilledVM,
+  	kMemorystatusKilledPerProcessLimit,
+	kMemorystatusKilledDiagnostic
 };
 
-#endif /* SYS_KERN_MEMORYSTATUS_H */
+/* Memorystatus control */
+#define MEMORYSTATUS_BUFFERSIZE_MAX 65536
+
+int memorystatus_control(uint32_t command, int32_t pid, uint32_t flags, void *buffer, size_t buffersize);
+
+/* Commands */
+#define MEMORYSTATUS_CMD_GET_PRIORITY_LIST            1
+#define MEMORYSTATUS_CMD_SET_PRIORITY_PROPERTIES      2
+#define MEMORYSTATUS_CMD_GET_JETSAM_SNAPSHOT          3
+#define MEMORYSTATUS_CMD_GET_PRESSURE_STATUS          4
+#define MEMORYSTATUS_CMD_SET_JETSAM_HIGH_WATER_MARK   5
+
+
+typedef struct memorystatus_priority_properties {
+	int32_t  priority;
+	uint64_t user_data;
+} memorystatus_priority_properties_t;
+
+
+#endif /* SYS_MEMORYSTATUS_H */

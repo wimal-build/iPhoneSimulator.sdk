@@ -665,6 +665,7 @@ enum {
 // Maintenance wake calendar.
 #define kIOPMSettingMaintenanceWakeCalendarKey      "MaintenanceWakeCalendarDate"
 
+
 struct IOPMCalendarStruct {
     UInt32      year;
     UInt8       month;
@@ -672,6 +673,7 @@ struct IOPMCalendarStruct {
     UInt8       hour;
     UInt8       minute;
     UInt8       second;
+    UInt8       selector;
 };
 typedef struct IOPMCalendarStruct IOPMCalendarStruct;
 
@@ -741,25 +743,6 @@ enum {
 // Internal power management data structures
 // **********************************************
 
-#if KERNEL && __cplusplus
-class IOService;
-
-enum {
-    kIOPowerEmergencyLevel = 1000
-};
-
-enum {
-    kIOPMSubclassPolicy,
-    kIOPMSuperclassPolicy1
-};
-
-struct stateChangeNote {
-    IOPMPowerFlags    stateFlags;
-    unsigned long    stateNum;
-    void *         powerRef;
-};
-typedef struct stateChangeNote stateChangeNote;
-
 struct IOPowerStateChangeNotification {
     void *        powerRef;
     unsigned long    returnValue;
@@ -768,7 +751,6 @@ struct IOPowerStateChangeNotification {
 };
 typedef struct IOPowerStateChangeNotification IOPowerStateChangeNotification;
 typedef IOPowerStateChangeNotification sleepWakeNote;
-#endif /* KERNEL && __cplusplus */
 
 /*! @struct IOPMSystemCapabilityChangeParameters
     @abstract A structure describing a system capability change.

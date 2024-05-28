@@ -74,8 +74,6 @@
 #define	_SECURITY_MAC_FRAMEWORK_H_
 
 
-#if CONFIG_MACF
-
 struct attrlist;
 struct auditinfo;
 struct bpf_d;
@@ -113,11 +111,14 @@ struct thread;
 struct timespec;
 struct ucred;
 struct uio;
+struct uthread;
 struct vfs_attr;
 struct vfs_context;
 struct vnode;
 struct vnode_attr;
 struct vop_setlabel_args;
+
+#if CONFIG_MACF
 
 #ifndef __IOKIT_PORTS_DEFINED__
 #define __IOKIT_PORTS_DEFINED__
@@ -165,6 +166,7 @@ void	mac_cred_label_destroy(kauth_cred_t cred);
 int	mac_cred_label_externalize_audit(proc_t p, struct mac *mac);
 void	mac_cred_label_free(struct label *label);
 void	mac_cred_label_init(kauth_cred_t cred);
+int	mac_cred_label_compare(struct label *a, struct label *b);
 void	mac_cred_label_update(kauth_cred_t cred, struct label *newlabel);
 int	mac_cred_label_update_execve(vfs_context_t ctx, kauth_cred_t newcred,
 	    struct vnode *vp, struct label *scriptvnodelabel,
@@ -323,6 +325,7 @@ void	mac_posixshm_label_init(struct pshminfo *pshm);
 int	mac_priv_check(kauth_cred_t cred, int priv);
 int	mac_priv_grant(kauth_cred_t cred, int priv);
 int	mac_proc_check_debug(proc_t proc1, proc_t proc2);
+int	mac_proc_check_cpumon(proc_t curp);
 int	mac_proc_check_fork(proc_t proc);
 int	mac_proc_check_suspend_resume(proc_t proc, int sr);
 int	mac_proc_check_get_task_name(kauth_cred_t cred, struct proc *p);
@@ -399,6 +402,7 @@ int	mac_system_check_swapon(kauth_cred_t cred, struct vnode *vp);
 int	mac_system_check_sysctl(kauth_cred_t cred, int *name,
 	    u_int namelen, user_addr_t oldctl, user_addr_t oldlenp, int inkernel,
 	    user_addr_t newctl, size_t newlen);
+int	mac_system_check_kas_info(kauth_cred_t cred, int selector);
 void	mac_sysvmsg_label_associate(kauth_cred_t cred,
 	    struct msqid_kernel *msqptr, struct msg *msgptr);
 void	mac_sysvmsg_label_init(struct msg *msgptr);
@@ -443,6 +447,10 @@ void	mac_sysvshm_label_associate(kauth_cred_t cred,
 void	mac_sysvshm_label_destroy(struct shmid_kernel *shmsegptr);
 void	mac_sysvshm_label_init(struct shmid_kernel* shmsegptr);
 void	mac_sysvshm_label_recycle(struct shmid_kernel *shmsegptr);
+struct label * mac_thread_label_alloc(void);
+void	mac_thread_label_destroy(struct uthread *uthread);
+void	mac_thread_label_free(struct label *label);
+void	mac_thread_label_init(struct uthread *uthread);
 int	mac_vnode_check_access(vfs_context_t ctx, struct vnode *vp,
 	    int acc_mode);
 int	mac_vnode_check_chdir(vfs_context_t ctx, struct vnode *dvp);

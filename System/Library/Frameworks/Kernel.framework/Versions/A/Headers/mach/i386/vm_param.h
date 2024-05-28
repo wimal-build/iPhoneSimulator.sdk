@@ -150,7 +150,7 @@
 
 /* process-relative values (all 32-bit legacy only for now) */
 #define VM_MIN_ADDRESS		((vm_offset_t) 0)
-#define VM_USRSTACK32		((vm_offset_t) 0xC0000000)
+#define VM_USRSTACK32		((vm_offset_t) 0xC0000000)	/* ASLR slides stack down by up to 1 MB */
 #define VM_MAX_ADDRESS		((vm_offset_t) 0xFFE00000)
 
 

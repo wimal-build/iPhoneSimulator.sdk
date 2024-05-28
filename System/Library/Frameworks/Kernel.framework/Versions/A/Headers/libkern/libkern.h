@@ -142,9 +142,7 @@ ulmin(u_int32_t a, u_int32_t b)
 
 /* Prototypes for non-quad routines. */
 extern int	ffs(int);
-extern int	locc(int, char *, u_int);
 extern u_int32_t	random(void);
-extern char	*rindex(const char *, int);
 extern int	scanc(u_int, u_char *, const u_char *, int);
 extern int	skpc(int, int, char *);
 extern long	strtol(const char*, char **, int);

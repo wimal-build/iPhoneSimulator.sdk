@@ -95,6 +95,10 @@ enum {
     kIOUserNotifyMaxMessageSize = 64
 };
 
+enum {
+    kIOUserNotifyOptionCanDrop = 0x1 /* Fail if queue is full, rather than infinitely queuing. */
+};
+
 // keys for clientHasPrivilege
 #define kIOClientPrivilegeAdministrator	"root"
 #define kIOClientPrivilegeLocalUser	"local"
@@ -138,7 +142,11 @@ struct IOExternalMethodArguments
     IOMemoryDescriptor * structureOutputDescriptor;
     uint32_t		 structureOutputDescriptorSize;
 
-    uint32_t		__reserved[32];
+    uint32_t		__reservedA;
+
+    OSObject **         structureVariableOutputData;
+
+    uint32_t		__reserved[30];
 };
 
 typedef IOReturn (*IOExternalMethodAction)(OSObject * target, void * reference, 
@@ -153,7 +161,7 @@ struct IOExternalMethodDispatch
 };
 
 enum {
-#define IO_EXTERNAL_METHOD_ARGUMENTS_CURRENT_VERSION	1
+#define IO_EXTERNAL_METHOD_ARGUMENTS_CURRENT_VERSION	2
     kIOExternalMethodArgumentsCurrentVersion = IO_EXTERNAL_METHOD_ARGUMENTS_CURRENT_VERSION
 };
 
@@ -236,9 +244,13 @@ protected:
 
     static IOReturn sendAsyncResult64(OSAsyncReference64 reference,
                                         IOReturn result, io_user_reference_t args[], UInt32 numArgs);
+
+
     static void setAsyncReference64(OSAsyncReference64 asyncRef,
 					mach_port_t wakePort,
 					mach_vm_address_t callback, io_user_reference_t refcon);
+
+
 public:
 
     static IOReturn clientHasPrivilege( void * securityToken,
@@ -300,6 +312,8 @@ private:
 									IOVirtualAddress atAddress = 0 );
 #endif
 
+    static IOReturn _sendAsyncResult64(OSAsyncReference64 reference,
+                                    IOReturn result, io_user_reference_t args[], UInt32 numArgs, IOOptionBits options);
 public:
 
     /*!

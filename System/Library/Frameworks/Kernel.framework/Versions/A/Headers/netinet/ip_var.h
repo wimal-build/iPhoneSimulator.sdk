@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2012 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -113,6 +113,13 @@ struct	ipstat {
 	u_int32_t	ips_notmember;		/* multicasts for unregistered grps */
 	u_int32_t	ips_nogif;		/* no match gif found */
 	u_int32_t	ips_badaddr;		/* invalid address on header */
+	u_int32_t	ips_pktdropcntrl;	/* pkt dropped, no mbufs for control data */
+	u_int32_t	ips_rcv_swcsum;		/* ip hdr swcksum (inbound), packets */
+	u_int32_t	ips_rcv_swcsum_bytes;	/* ip hdr swcksum (inbound), bytes */
+	u_int32_t	ips_snd_swcsum;		/* ip hdr swcksum (outbound), packets */
+	u_int32_t	ips_snd_swcsum_bytes;	/* ip hdr swcksum (outbound), bytes */
+	u_int32_t	ips_adj;		/* total packets trimmed/adjusted */
+	u_int32_t	ips_adj_hwcsum_clr;	/* hwcksum info discarded during adjustment */
 };
 
 struct ip_linklocal_stat {

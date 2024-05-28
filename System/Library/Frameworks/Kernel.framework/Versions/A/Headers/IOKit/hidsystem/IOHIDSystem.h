@@ -257,7 +257,7 @@ private:
                /* level */     unsigned l);
   /* Message the event consumer to process posted events */
   void kickEventConsumer();
-  void sendStackShotMessage();
+  void sendStackShotMessage(UInt32 flavor);
   
   OSDictionary * createFilteredParamPropertiesForService(IOService * service, OSDictionary * dict);
 
@@ -558,6 +558,9 @@ public:
   IOReturn extSetBounds( IOGBounds * bounds );
     IOReturn extGetModifierLockState(void*,void*,void*,void*,void*,void*);
     IOReturn extSetModifierLockState(void*,void*,void*,void*,void*,void*);
+    IOReturn extRegisterVirtualDisplay(void*,void*,void*,void*,void*,void*);
+    IOReturn extUnregisterVirtualDisplay(void*,void*,void*,void*,void*,void*);
+    IOReturn extSetVirtualDisplayBounds(void*,void*,void*,void*,void*,void*);
 
 /*
  * HISTORICAL NOTE:
@@ -578,7 +581,7 @@ public:
         /* virtual bounds */ IOGBounds * vbp);
 private:
     static IOReturn doRegisterScreen(IOHIDSystem *self, IOGraphicsDevice *io_gd, IOGBounds *bp, IOGBounds * vbp, void *arg3);
-    void            registerScreenGated(IOGraphicsDevice *io_gd, IOGBounds *bp, IOGBounds * vbp);
+    IOReturn        registerScreenGated(IOGraphicsDevice *io_gd, IOGBounds *bp, IOGBounds * vbp, SInt32 *index);
 public:
     
 
@@ -689,9 +692,12 @@ static	IOReturn	doSetEventsEnablePre (IOHIDSystem *self, void *p1);
 static	IOReturn	doSetEventsEnablePost (IOHIDSystem *self, void *p1);
         IOReturn	setEventsEnablePostGated (void *p1);
         
-static	IOReturn	doUnregisterScreen (IOHIDSystem *self, void * arg0);
-        void		unregisterScreenGated (int index);
+static	IOReturn	doUnregisterScreen (IOHIDSystem *self, void * arg0, void *arg1);
+        IOReturn	unregisterScreenGated (int index, bool internal);
 
+static	IOReturn	doSetDisplayBounds (IOHIDSystem *self, void * arg0, void * arg1);
+        IOReturn	setDisplayBoundsGated (UInt32 index, IOGBounds *bounds);
+    
 static	IOReturn	doCreateShmem (IOHIDSystem *self, void * arg0);
         IOReturn	createShmemGated (void * p1);
 

@@ -91,13 +91,26 @@ subsystem
  */
 #if !defined(_MACH_VM_PUBLISH_AS_LOCAL_)
 routine PREFIX(mach_vm_allocate) (
-#else
-routine PREFIX(vm_allocate) (
-#endif
 		target		: vm_task_entry_t;
 	inout	address		: mach_vm_address_t;
 		size		: mach_vm_size_t;
 		flags		: int);
+
+#else
+
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+skip;
+#else
+routine PREFIX(vm_allocate) (
+		target		: vm_task_entry_t;
+	inout	address		: mach_vm_address_t;
+		size		: mach_vm_size_t;
+		flags		: int);
+
+#endif
+
+#endif
+
 
 /*
  *	Deallocate the specified range from the virtual
@@ -105,12 +118,22 @@ routine PREFIX(vm_allocate) (
  */
 #if !defined(_MACH_VM_PUBLISH_AS_LOCAL_)
 routine PREFIX(mach_vm_deallocate) (
-#else
-routine PREFIX(vm_deallocate) (
-#endif
 		target		: vm_task_entry_t;
 		address		: mach_vm_address_t;
 		size		: mach_vm_size_t);
+
+#else
+
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+skip;
+#else
+routine PREFIX(vm_deallocate) (
+		target		: vm_task_entry_t;
+		address		: mach_vm_address_t;
+		size		: mach_vm_size_t);
+#endif
+
+#endif
 
 /*
  *	Set the current or maximum protection attribute
@@ -124,14 +147,29 @@ routine PREFIX(vm_deallocate) (
  */
 #if !defined(_MACH_VM_PUBLISH_AS_LOCAL_)
 routine PREFIX(mach_vm_protect) (
-#else
-routine PREFIX(vm_protect) (
-#endif
 		target_task	: vm_task_entry_t;
 		address		: mach_vm_address_t;
 		size		: mach_vm_size_t;
 		set_maximum	: boolean_t;
 		new_protection	: vm_prot_t);
+
+
+#else
+
+#if !KERNEL && !LIBSYSCALL_INTERFACE
+skip;
+#else
+
+routine PREFIX(vm_protect) (
+		target_task	: vm_task_entry_t;
+		address		: mach_vm_address_t;
+		size		: mach_vm_size_t;
+		set_maximum	: boolean_t;
+		new_protection	: vm_prot_t);
+
+#endif
+
+#endif
 
 /*
  *	Set the inheritance attribute for the specified range

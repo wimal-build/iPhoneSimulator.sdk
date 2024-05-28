@@ -148,7 +148,9 @@ varying float         v_fog;
 // Temps
 /////////////////////////////////////////////////////////////////////////////////////
 highp vec3 normalEye;
+<codeblock label="modelview matrix" type="cond" class="EFFECT">
 highp vec4 positionEye;
+</codeblock>
 
 <codeblock label="color material enabled" type="cond" class="EFFECT">
 #define materialAmbientColor (a_color)
@@ -177,7 +179,9 @@ void main(void)
 <codeblock label="main epilog" type="std" class="STATIC_BLOCK">
     // Default value for eye space normal
     normalEye = vec3(0.0, 0.0, 1.0);
+    <codeblock label="modelview matrix" type="cond" class="EFFECT">
     positionEye = modelviewMatrix * a_position;
+    </codeblock>
     
     <codeblock label="normalized normals" type="cond" class="EFFECT">
 <![CDATA[
@@ -248,7 +252,7 @@ void main(void)
 
             <codeblock label="attenuate lighting enabled" type="cond" class="LIGHT">
             {
-                float vertexToLightVecMagnitude = sqrt(dot(vertexToLightVec, vertexToLightVec));
+                float vertexToLightVecMagnitude = distance(light_positionEye[currLight].xyz, positionEye.xyz);
 
                 attenuationFactor = (1.0 /
                     (light_constantAttenuation[currLight] +
@@ -390,7 +394,8 @@ void main(void)
 
         v_fog = clamp(v_fog, 0.0, 1.0);
     </codeblock>
-
+    
     gl_Position = mvpMatrix * a_position;
+
 }
 </codeblock>

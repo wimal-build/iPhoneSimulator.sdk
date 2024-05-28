@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2000 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 1998-2011 Apple Computer, Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -345,7 +345,7 @@ OSDictionary *
 #else
 struct OSDictionary *
 #endif
-IOOFPathMatching( const char * path, char * buf, int maxLen );
+IOOFPathMatching( const char * path, char * buf, int maxLen ) __attribute__((deprecated));
 
 /*
  * Convert between size and a power-of-two alignment.

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Configuration.plist</key>
 		<data>
-		NaC4dT5BvxlG7UMRIrNT1HlfKlQ=
+		vowK9AwbPCqzunGIvBIoXnBHnVs=
 		</data>
 		<key>Resources/Info-macos.plist</key>
 		<data>
@@ -14,35 +14,39 @@
 		</data>
 		<key>Resources/libCGCorePDF.A.dylib</key>
 		<data>
-		C82wLTPiUDwYtmv1Ay2S0dC2uTQ=
+		K/ZoRRwwH8y+4iGn7RtZuS+u394=
 		</data>
 		<key>Resources/libCGFreetype.A.dylib</key>
 		<data>
-		vc0OpGFwYFVIdBekZ4d3ZCRhHV8=
+		L222YJcPQUmoSVl9yZa1a0z45kk=
 		</data>
 		<key>Resources/libCGVolute.A.dylib</key>
 		<data>
-		GF2CXdqcUEppj4sVyOjZeKlK3KE=
+		bRvbAiE2rksKv/dg2nVTHryQWzo=
 		</data>
 		<key>Resources/libCMaps.A.dylib</key>
 		<data>
-		lt4P7txKZa4BKExiyJpvFPiyzvw=
+		5QaClPQhK4AABUwfbkr66HphudI=
 		</data>
 		<key>Resources/libFontStreams.A.dylib</key>
 		<data>
-		yXLYTCXtUJerh4U9gxxhDGN6Cas=
+		MaRxuSPnIBWg5yvODD5dnneOlGw=
 		</data>
 		<key>Resources/libJBIG2.A.dylib</key>
 		<data>
-		GLPtq3tg3EAipTx3fI9eV7PFHWY=
+		DN2X3n+6w0vzTpnbQ9V7eCOIT8w=
 		</data>
 		<key>Resources/libPDFRIP.A.dylib</key>
 		<data>
-		ynAudjQB5Nyb27VXIdrRrI1Tkgg=
+		q9QHhaFI8TG9SCblmmudRQcW35s=
 		</data>
 		<key>Resources/libRIP.A.dylib</key>
 		<data>
-		YWW35pypPFaJ0LvSRM4UqMR+PTM=
+		uCqeh3PpbGQ59JYk/bfopK1W5S0=
+		</data>
+		<key>Resources/version.plist</key>
+		<data>
+		jlUf6UhLsT0t4skaOdNab+bFupE=
 		</data>
 	</dict>
 	<key>rules</key>
@@ -53,6 +57,13 @@
 			<true/>
 			<key>weight</key>
 			<real>10</real>
+		</dict>
+		<key>\.licns$</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>50</real>
 		</dict>
 		<key>^Resources/</key>
 		<true/>
@@ -110,7 +121,7 @@
 			<key>optional</key>
 			<true/>
 			<key>weight</key>
-			<real>5</real>
+			<real>40</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>

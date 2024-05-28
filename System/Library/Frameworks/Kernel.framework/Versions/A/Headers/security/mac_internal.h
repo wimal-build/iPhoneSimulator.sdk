@@ -184,8 +184,6 @@ extern struct mac_policy_list mac_policy_list;
  * at all in the system.
  */
 extern unsigned int mac_device_enforce;
-extern unsigned int mac_file_enforce;
-extern unsigned int mac_iokit_enforce;
 extern unsigned int mac_pipe_enforce;
 extern unsigned int mac_posixsem_enforce;
 extern unsigned int mac_posixshm_enforce;
@@ -198,24 +196,20 @@ extern unsigned int mac_sysvshm_enforce;
 extern unsigned int mac_vm_enforce;
 extern unsigned int mac_vnode_enforce;
 
-#if CONFIG_MACF_MACH
-extern unsigned int mac_port_enforce;
-extern unsigned int mac_task_enforce;
-#endif
-
 #if CONFIG_MACF_NET
 extern unsigned int mac_label_mbufs;
 #endif
 
 extern unsigned int mac_label_vnodes;
 
-static int mac_proc_check_enforce(proc_t p, int enforce_flag);
+static int mac_proc_check_enforce(proc_t p, int enforce_flags);
 
 static __inline__ int mac_proc_check_enforce(proc_t p, int enforce_flags)
 {
 #if CONFIG_MACF
 	return ((p->p_mac_enforce & enforce_flags) != 0);
 #else
+#pragma unused(p,enforce_flags)
 	return 0;
 #endif
 }
@@ -235,12 +229,16 @@ static __inline__ int mac_context_check_enforce(vfs_context_t ctx, int enforce_f
 
 static __inline__ void mac_context_set_enforce(vfs_context_t ctx, int enforce_flags)
 {
+#if CONFIG_MACF
 	proc_t proc = vfs_context_proc(ctx);
 
 	if (proc == NULL)
 		return;
 
 	mac_proc_set_enforce(proc, enforce_flags);
+#else
+#pragma unused(ctx,enforce_flags)
+#endif
 }
 
 
@@ -260,11 +258,7 @@ void           mac_labelzone_free(struct label *label);
 
 void  mac_label_init(struct label *label);
 void  mac_label_destroy(struct label *label);
-#if KERNEL
 int   mac_check_structmac_consistent(struct user_mac *mac);
-#else
-int   mac_check_structmac_consistent(struct mac *mac);
-#endif
 	
 int mac_cred_label_externalize(struct label *, char *e, char *out, size_t olen, int flags);
 int mac_lctx_label_externalize(struct label *, char *e, char *out, size_t olen);

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2000-2011 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2012 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -294,6 +294,29 @@ struct	tcpstat {
 
 	u_int32_t	tcps_bg_rcvtotal;	/* total background packets received */
 	u_int32_t	tcps_rxtfindrop;	/* drop conn after retransmitting FIN */
+	u_int32_t	tcps_fcholdpacket;	/* packets withheld because of flow control */
+
+	/* LRO related stats */
+	u_int32_t	tcps_coalesced_pack;	/* number of coalesced packets */
+	u_int32_t	tcps_flowtbl_full;	/* times flow table was full */
+	u_int32_t	tcps_flowtbl_collision;	/* collisions in flow tbl */
+	u_int32_t	tcps_lro_twopack;	/* 2 packets coalesced */
+	u_int32_t	tcps_lro_multpack;	/* 3 or 4 pkts coalesced */
+	u_int32_t	tcps_lro_largepack;	/* 5 or more pkts coalesced */
+
+	u_int32_t	tcps_limited_txt;	/* Limited transmit used */
+	u_int32_t	tcps_early_rexmt;	/* Early retransmit used */
+	u_int32_t	tcps_sack_ackadv;	/* Cumulative ack advanced along with sack */
+
+	/* Checksum related stats */
+	u_int32_t	tcps_rcv_swcsum;	/* tcp swcksum (inbound), packets */
+	u_int32_t	tcps_rcv_swcsum_bytes;	/* tcp swcksum (inbound), bytes */
+	u_int32_t	tcps_rcv6_swcsum;	/* tcp6 swcksum (inbound), packets */
+	u_int32_t	tcps_rcv6_swcsum_bytes;	/* tcp6 swcksum (inbound), bytes */
+	u_int32_t	tcps_snd_swcsum;	/* tcp swcksum (outbound), packets */
+	u_int32_t	tcps_snd_swcsum_bytes;	/* tcp swcksum (outbound), bytes */
+	u_int32_t	tcps_snd6_swcsum;	/* tcp6 swcksum (outbound), packets */
+	u_int32_t	tcps_snd6_swcsum_bytes;	/* tcp6 swcksum (outbound), bytes */
 };
 
 struct tcpstat_local {

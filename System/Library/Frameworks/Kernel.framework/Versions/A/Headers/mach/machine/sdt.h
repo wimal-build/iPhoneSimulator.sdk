@@ -191,7 +191,7 @@
 	DTRACE_PROBE1(__io_, name, arg1);
 
 #define	DTRACE_IO2(name, type1, arg1, type2, arg2)			\
-	DTRACE_PROBE2(__io_, name, type1, arg1, type2, arg2);
+	DTRACE_PROBE2(__io_, name, arg1, arg2);
 
 #define	DTRACE_IO3(name, type1, arg1, type2, arg2, type3, arg3)		\
 	DTRACE_PROBE3(__io_, name, arg1, arg2, arg3);
@@ -271,6 +271,12 @@
     type4, arg4, type5, arg5)                                           \
         DTRACE_PROBE5(__tcp_, name, arg1, arg2, arg3, arg4, arg5)
 
+#define DTRACE_FSINFO(name, type, vp)					\
+	DTRACE_PROBE1(__fsinfo_, name, vp)
+
+#define DTRACE_FSINFO_IO(name, type1, vp, type2, size)			\
+	DTRACE_PROBE2(__fsinfo_, name, vp, size)
+
 #else /* CONFIG_DTRACE */
 
 #define	DTRACE_SCHED(name) do {} while (0)
@@ -313,6 +319,9 @@
 #define DTRACE_TCP3(name, type1, arg1, type2, arg2, type3, arg3) do {} while(0)
 #define DTRACE_TCP4(name, type1, arg1, type2, arg2, type3, arg3, type4, arg4) do {} while(0)
 #define DTRACE_TCP5(name, type1, arg1, type2, arg2, type3, arg3, type4, arg4, type5, arg5) do {} while(0)
+
+#define DTRACE_FSINFO(name, type, vp) do {} while(0)
+#define DTRACE_FSINFO_IO(name, type1, vp, type2, size) do {} while (0)
 
 #endif /* CONFIG_DTRACE */
 

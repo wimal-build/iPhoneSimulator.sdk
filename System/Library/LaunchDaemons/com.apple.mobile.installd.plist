@@ -13,15 +13,32 @@
 		<key>com.apple.mobile.installd</key>
 		<true/>
 	</dict>
-	<key>OnDemand</key>
-	<true/>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/libexec/installd</string>
-		<string>-t</string>
-		<string>30</string>
+		<string>--idleExit</string>
 	</array>
 	<key>POSIXSpawnType</key>
-	<string>Interactive</string>
+	<string>Adaptive</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>JetsamProperties</key>
+	<dict>
+		<key>JetsamMemoryLimit</key>
+		<integer>5000</integer>
+	</dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.mobile.developer_image_mounted</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobile.developer_image_mounted</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

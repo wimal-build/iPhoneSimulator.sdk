@@ -32,6 +32,8 @@
 #include <sys/cdefs.h>
 #include <stdint.h>
 
+#include <TargetConditionals.h>
+
 #ifdef __APPLE_API_PRIVATE
 #ifdef __APPLE_API_UNSTABLE
 
@@ -80,7 +82,10 @@ struct mem_and_io_snapshot {
 	uint32_t	wired_pages;
 	uint32_t	speculative_pages;
 	uint32_t	throttled_pages;
-        int		busy_buffer_count;
+	int			busy_buffer_count;
+	uint32_t	pages_wanted;
+	uint32_t	pages_reclaimed;
+	uint8_t		pages_wanted_reclaimed_valid; // did mach_vm_pressure_monitor succeed?
 } __attribute__((packed));
 
 
@@ -92,6 +97,8 @@ enum {
 	kPidSuspended = 0x10,  // true for suspended task
 	kFrozen = 0x20         // true for hibernated task (along with pidsuspended)
 };
+
+#define VM_PRESSURE_TIME_WINDOW 5 /* seconds */
 
 enum {
 	STACKSHOT_GET_DQ = 0x1,
@@ -121,8 +128,13 @@ extern void panic(const char *string, ...) __printflike(1,2);
 #define __STRINGIFY(x) #x
 #define LINE_NUMBER(x) __STRINGIFY(x)
 #define PANIC_LOCATION __FILE__ ":" LINE_NUMBER(__LINE__)
+#if CONFIG_EMBEDDED || TARGET_OS_EMBEDDED
+#define panic(ex, ...) \
+	(panic)(# ex, ## __VA_ARGS__)
+#else
 #define panic(ex, ...) \
 	(panic)(# ex "@" PANIC_LOCATION, ## __VA_ARGS__)
+#endif
 #endif /* CONFIGS_NO_PANIC_STRINGS */
 
 void 		populate_model_name(char *);

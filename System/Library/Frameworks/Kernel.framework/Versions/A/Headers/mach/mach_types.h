@@ -124,11 +124,16 @@ typedef struct processor		*processor_t;
 typedef struct processor_set		*processor_set_t;
 typedef struct processor_set		*processor_set_control_t;
 typedef struct semaphore 		*semaphore_t;
-typedef struct lock_set 		*lock_set_t;
 typedef struct ledger 			*ledger_t;
 typedef	struct alarm			*alarm_t;
 typedef	struct clock			*clock_serv_t;
 typedef	struct clock			*clock_ctrl_t;
+
+/*
+ * OBSOLETE: lock_set interfaces are obsolete.
+ */
+typedef struct lock_set 		*lock_set_t;
+struct lock_set ;
 
 
 __BEGIN_DECLS
@@ -139,7 +144,6 @@ struct host ;
 struct processor ;
 struct processor_set ;
 struct semaphore ;
-struct lock_set ;
 struct ledger ;
 struct alarm ;
 struct clock ;

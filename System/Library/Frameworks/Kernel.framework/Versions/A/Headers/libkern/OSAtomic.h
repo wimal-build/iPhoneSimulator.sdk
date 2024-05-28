@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2000 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 2007-2012 Apple Inc. All rights reserved.
+ * Copyright (c) 2000-2006 Apple Computer, Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
@@ -553,6 +554,8 @@ static __inline__ void OSSynchronizeIO(void)
 {
 }
 #endif
+
+
 #if defined(__cplusplus)
 }
 #endif

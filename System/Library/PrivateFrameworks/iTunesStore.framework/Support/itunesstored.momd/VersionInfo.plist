@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSManagedObjectModel_CurrentVersionName</key>
-	<string>itunesstored.2.0</string>
+	<string>itunesstored.5</string>
 	<key>NSManagedObjectModel_VersionHashes</key>
 	<dict>
 		<key>itunesstored</key>
@@ -30,6 +30,75 @@
 			<key>MicroPaymentClient</key>
 			<data>
 			2aUBg5iYGkTjpTrpNrx0mAhMPdMcIdjLxyx9enuLyIE=
+			</data>
+			<key>MicroPaymentRefund</key>
+			<data>
+			INIvjwPBlhO69+gMvT/HjCShe53QODAAWqWqqHUWcNw=
+			</data>
+		</dict>
+		<key>itunesstored.3.0</key>
+		<dict>
+			<key>MicroPayment</key>
+			<data>
+			RHBdQ7hE27YGzPkQpQdnbfD/L1/H1kg5eNJuToxWQGU=
+			</data>
+			<key>MicroPaymentBase</key>
+			<data>
+			/pkhr2pbPhLsWCCOL5b5w03Yo79SQgg3rSn8UBJXEsY=
+			</data>
+			<key>MicroPaymentClient</key>
+			<data>
+			2aUBg5iYGkTjpTrpNrx0mAhMPdMcIdjLxyx9enuLyIE=
+			</data>
+			<key>MicroPaymentDownload</key>
+			<data>
+			eg381SlKxi88PnwoJRwONnH2i0aAIB1hVLpqmUQ5IkU=
+			</data>
+			<key>MicroPaymentRefund</key>
+			<data>
+			INIvjwPBlhO69+gMvT/HjCShe53QODAAWqWqqHUWcNw=
+			</data>
+		</dict>
+		<key>itunesstored.4.0</key>
+		<dict>
+			<key>MicroPayment</key>
+			<data>
+			RHBdQ7hE27YGzPkQpQdnbfD/L1/H1kg5eNJuToxWQGU=
+			</data>
+			<key>MicroPaymentBase</key>
+			<data>
+			/pkhr2pbPhLsWCCOL5b5w03Yo79SQgg3rSn8UBJXEsY=
+			</data>
+			<key>MicroPaymentClient</key>
+			<data>
+			uj2yMXvoBDj9jKRFoMHyrRJ+H1A+6V3pEqATGi7AV/Q=
+			</data>
+			<key>MicroPaymentDownload</key>
+			<data>
+			eg381SlKxi88PnwoJRwONnH2i0aAIB1hVLpqmUQ5IkU=
+			</data>
+			<key>MicroPaymentRefund</key>
+			<data>
+			INIvjwPBlhO69+gMvT/HjCShe53QODAAWqWqqHUWcNw=
+			</data>
+		</dict>
+		<key>itunesstored.5</key>
+		<dict>
+			<key>MicroPayment</key>
+			<data>
+			RHBdQ7hE27YGzPkQpQdnbfD/L1/H1kg5eNJuToxWQGU=
+			</data>
+			<key>MicroPaymentBase</key>
+			<data>
+			/pkhr2pbPhLsWCCOL5b5w03Yo79SQgg3rSn8UBJXEsY=
+			</data>
+			<key>MicroPaymentClient</key>
+			<data>
+			Ph20zNEIvgPKrhplBMwkQ3Q+5+omOngZQ5Gve7ksFdg=
+			</data>
+			<key>MicroPaymentDownload</key>
+			<data>
+			eg381SlKxi88PnwoJRwONnH2i0aAIB1hVLpqmUQ5IkU=
 			</data>
 			<key>MicroPaymentRefund</key>
 			<data>

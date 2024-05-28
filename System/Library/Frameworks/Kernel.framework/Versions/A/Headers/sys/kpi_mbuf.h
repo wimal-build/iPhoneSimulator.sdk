@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008-2011 Apple Inc. All rights reserved.
+ * Copyright (c) 2008-2012 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  * 
@@ -1338,8 +1338,8 @@ extern mbuf_traffic_class_t mbuf_get_traffic_class(mbuf_t mbuf);
 	@function mbuf_set_traffic_class
 	@discussion Set the traffic class of an mbuf packet.
 	@param mbuf The mbuf to set the traffic class on.
-	@ac The traffic class
-	@result 0 on success, EINVAL if bad paramater is passed
+	@tc The traffic class
+	@result 0 on success, EINVAL if bad parameter is passed
 */
 extern errno_t mbuf_set_traffic_class(mbuf_t mbuf, mbuf_traffic_class_t tc);
 

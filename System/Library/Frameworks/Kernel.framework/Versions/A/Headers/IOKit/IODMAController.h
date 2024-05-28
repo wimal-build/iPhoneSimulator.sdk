@@ -55,6 +55,8 @@ class IODMAController : public IOService
   virtual void notifyDMACommand(IODMAEventSource *dmaES, IODMACommand *dmaCommand, IOReturn status, IOByteCount actualByteCount);
   virtual IOReturn queryDMACommand(UInt32 dmaIndex, IODMACommand **dmaCommand, IOByteCount *transferCount, bool waitForIdle = false) = 0;
   virtual IOByteCount getFIFODepth(UInt32 dmaIndex) = 0;
+  virtual IOReturn setDMAConfig(UInt32 dmaIndex, IOService *provider, UInt32 reqIndex) = 0;
+  virtual bool validDMAConfig(UInt32 dmaIndex, IOService *provider, UInt32 reqIndex) = 0;
   
  public:
   static const OSSymbol *createControllerName(UInt32 phandle);

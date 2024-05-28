@@ -1,0 +1,84 @@
+/*
+
+TraceSchema.sqlite
+Maps
+
+Created by Brady Law on 12/22/11.
+Copyright (c) 2011 Apple, Inc. All rights reserved.
+
+--
+
+Schema for saving Navigation session ("trace") data.
+
+If you make a change to the schema, you MUST create a migrator from the previous version
+and change TRACE_CURRENT_VERSION.
+The migrator must be named [FromVersion].migrator.sqlite and added as a Maps resource.
+
+*/
+
+CREATE TABLE info
+(
+name                    TEXT,
+version                 INTEGER NOT NULL,
+maps_version            TEXT,
+mapkit_version          TEXT,
+geoservices_version     TEXT,
+vectorkit_version       TEXT,
+protocolbuffer_version  TEXT,
+start_time              INTEGER,
+end_time                INTEGER,
+start_data              BLOB,               -- PB serialized SearchResultRepr
+end_data                BLOB,               -- PB serialized SearchResultRepr
+simulation              INTEGER,
+cl_mapmatch             INTEGER,            -- Whether CL MapMatching is enabled
+original_version        INTEGER
+);
+
+CREATE TABLE locations
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+db_timestamp        NUMERIC NOT NULL,
+cl_timestamp        NUMERIC,
+latitude            NUMERIC,
+longitude           NUMERIC,
+raw_latitude        NUMERIC,
+raw_longitude       NUMERIC,
+horizontal_accuracy NUMERIC,
+vertical_accuracy   NUMERIC,
+altitude            NUMERIC,
+speed               NUMERIC,
+speed_accuracy      NUMERIC,
+course              NUMERIC,
+raw_course          NUMERIC,
+course_accuracy     NUMERIC,
+type                INTEGER,
+error_data          BLOB,           -- PB Serialized NSError
+event_type          INTEGER
+);
+
+CREATE TABLE directions
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+request_timestamp   NUMERIC NOT NULL,
+response_timestamp  NUMERIC,
+request_data        BLOB NOT NULL,  -- PB Serialized GEODirectionsRequest
+response_data       BLOB,           -- PB Serialized GEODirectionsResponse
+response_error_data BLOB,           -- PB Serialized NSError
+transport_type      NUMERIC NOT NULL -- GEOTransportType
+);
+
+CREATE TABLE bookmarks
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp           NUMERIC NOT NULL,
+screenshot_data     BLOB            -- PNG screenshot
+);
+
+CREATE TABLE route_selections
+(
+id                  INTEGER PRIMARY KEY ASC AUTOINCREMENT,
+timestamp_start     NUMERIC NOT NULL,
+timestamp_end       NUMERIC,
+directions_id       INTEGER NOT NULL,
+route_id            BLOB
+);

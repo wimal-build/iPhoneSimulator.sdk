@@ -17,6 +17,9 @@
 <xsl:template match="html">
 	<xsl:copy>
 		<xsl:attribute name="class">apple_client-application</xsl:attribute>
+		<xsl:if test="$aria-label != ''">
+			<xsl:attribute name="aria-label"><xsl:value-of select="$aria-label" /></xsl:attribute>
+		</xsl:if>
 		<xsl:apply-templates select="@*|node()" />
 	</xsl:copy>
 </xsl:template>

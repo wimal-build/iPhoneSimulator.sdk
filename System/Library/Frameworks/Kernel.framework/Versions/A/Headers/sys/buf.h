@@ -92,6 +92,7 @@
 #define B_THROTTLED_IO	0x00002000	/* low priority I/O */
 #define B_ENCRYPTED_IO	0x00004000	/* Encrypted I/O */
 #define B_STATICCONTENT 0x00008000	/* Buffer is likely to remain unaltered */
+
 /*
  * make sure to check when adding flags that
  * that the new flags don't overlap the definitions
@@ -1030,7 +1031,7 @@ void	buf_set_redundancy_flags(buf_t, uint32_t);
  @function buf_attr
  @abstract Gets the attributes for this buf.
  @param bp Buffer whose attributes to get.
- @return void *.
+ @return bufattr_t.
  */
 bufattr_t buf_attr(buf_t);
 

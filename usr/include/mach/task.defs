@@ -172,7 +172,12 @@ routine task_set_special_port(
  *	the port representing the first thr_act in that new thread.  The
  *	initial execution state of the thread is undefined.
  */
-routine thread_create(
+routine
+#ifdef KERNEL_SERVER
+thread_create_from_user(
+#else
+thread_create(
+#endif
 		parent_task	: task_t;
 	out	child_act	: thread_act_t);
 
@@ -183,7 +188,12 @@ routine thread_create(
  *	by flavor and new_state. Returns the port representing 
  *	the new thread.
  */
-routine thread_create_running(
+routine
+#ifdef KERNEL_SERVER
+thread_create_running_from_user(
+#else
+thread_create_running(
+#endif
                 parent_task     : task_t;
                 flavor          : thread_state_flavor_t;
                 new_state       : thread_state_t;
@@ -232,8 +242,7 @@ routine	task_swap_exception_ports(
 	  out	old_flavors	: exception_flavor_array_t, SameCount);
 
 /*
- * Create and destroy lock_set and semaphore synchronizers on a
- * per-task basis (i.e. the task owns them).
+ * OBSOLETE interface.
  */
 routine lock_set_create(
 		task		: task_t;
@@ -241,9 +250,17 @@ routine lock_set_create(
 		n_ulocks	: int;
 		policy		: int);
 
+/*
+ * OBSOLETE interface.
+ */
 routine lock_set_destroy(
 		task		: task_t;
 		lock_set	: lock_set_t);
+
+/*
+ * Create and destroy semaphore synchronizers on a
+ * per-task basis (i.e. the task owns them).
+ */
 
 routine semaphore_create(
 		task		: task_t;

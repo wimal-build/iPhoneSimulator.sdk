@@ -328,7 +328,7 @@ _ptmf2ptf(const OSMetaClassBase *self, void (OSMetaClassBase::*func)(void))
 }
 
 #else /* !APPLE_KEXT_LEGACY_ABI */
-#ifdef __arm__
+#if defined(__arm__)
 typedef long int ptrdiff_t;
 /*
  * Ugly reverse engineered ABI.  Where does it come from?  Nobody knows.
@@ -358,13 +358,13 @@ _ptmf2ptf(const OSMetaClassBase *self, void (OSMetaClassBase::*func)(void))
         u.fObj = self;
 
         // Virtual member function so dereference table
-        return *(_ptf_t *)(((uintptr_t)*u.vtablep) + (unsigned int)map.pTMF.fPFN);
+        return *(_ptf_t *)(((uintptr_t)*u.vtablep) + (uintptr_t)map.pTMF.fPFN);
     } else {
         // Not virtual, i.e. plain member func
         return map.pTMF.fPFN;
     } 
 }
-#else /* __arm__ */
+#elif defined(__i386__) || defined(__x86_64__)
 
 // Slightly less arcane and slightly less evil code to do
 // the same for kexts compiled with the standard Itanium C++
@@ -397,6 +397,8 @@ _ptmf2ptf(const OSMetaClassBase *self, void (OSMetaClassBase::*func)(void))
     }
 }
 
+#else
+#error Unknown architecture.
 #endif /* __arm__ */
 
 #endif /* !APPLE_KEXT_LEGACY_ABI */
@@ -793,6 +795,7 @@ private:
 } APPLE_KEXT_COMPATIBILITY;
 
 
+
 /*!
  * @class OSMetaClass
  *
@@ -887,10 +890,8 @@ private:
     // Can never be allocated must be created at compile time
     static void * operator new(size_t size);
 
-    struct ExpansionData { };
-
    /* Reserved for future use.  (Internal use only) */
-    ExpansionData *reserved;
+    struct ExpansionData *reserved;
 
    /* superClass Handle to the superclass's meta class. */
     const OSMetaClass *superClassLink;
@@ -1513,7 +1514,6 @@ public:
     */
     const OSMetaClass * getSuperClass() const;
 
-
    /*!
     * @function getKmodName
     *
@@ -1540,6 +1540,7 @@ public:
     * Returns the name of the C++ class managed by this metaclass.
     */
     const char * getClassName() const;
+    const OSSymbol * getClassNameSymbol() const;
 
 
    /*!

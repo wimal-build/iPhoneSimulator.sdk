@@ -239,7 +239,8 @@
             /* Workaround for <rdar://problem/8662842> iOS Reader: loading multiple pages stops at the 2nd page. */
             /*display: none;*/
             left: -1000px;
-            width: 0px;
+            /* The iframe needs to be wider than the width threshold value for Reader detection, see <rdar://problem/9599297>. */
+            width: 320px;
             height: 0px;
         }
         

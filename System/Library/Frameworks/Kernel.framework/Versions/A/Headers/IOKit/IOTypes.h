@@ -32,12 +32,7 @@
 #define IOKIT 1
 #endif /* !IOKIT */
 
-#if KERNEL
 #include <IOKit/system.h>
-#else
-#include <mach/message.h>
-#include <mach/vm_types.h>
-#endif
 
 #include <IOKit/IOReturn.h>
 
@@ -65,9 +60,7 @@ extern "C" {
 #endif /* __TYPES__ */
 #endif /* __MACTYPES__ */
 
-#if KERNEL
 #include <libkern/OSBase.h>
-#endif
 
 typedef UInt32		IOOptionBits;
 typedef SInt32		IOFixed;
@@ -233,6 +226,10 @@ enum {
     kMillisecondScale = 1000 * 1000,
     kSecondScale      = 1000 * 1000 * 1000,
     kTickScale        = (kSecondScale / 100)
+};
+
+enum {
+    kIOConnectMethodVarOutputSize = -3
 };
 
 /* compatibility types */

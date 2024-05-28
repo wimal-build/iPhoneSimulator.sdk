@@ -229,7 +229,7 @@ void main()
 
         <codeblock label="attenuate lighting enabled" type="cond" class="LIGHT">
         {
-            float vertexToLightVecMagnitude = sqrt(dot(vertexToLightVec, vertexToLightVec));
+            float vertexToLightVecMagnitude = distance(light_positionEye[currLight].xyz, v_positionEye.xyz);
 
             attenuationFactor = (1.0 /
                 (light_constantAttenuation[currLight] +
@@ -502,7 +502,7 @@ void main()
             </codeblock>
             <codeblock label="texture env mode decal" type="cond" class="TEXTURE">
             // else if(textures[currTex].envMode == GLKTextureEnvAttribDecal)
-                color.rgb = color.rgb * (1.0 - texColor.a) + texColor.rgb * texColor.a;
+                color.rgb = mix(color.rgb, texColor.rgb, texColor.a);
             </codeblock>
         }
         </codeblock>

@@ -5,7 +5,8 @@ General:
     server instead of the default server.
 
 Committing data:
---commit - tell the server to commit to the db once before aggregatectl exits.
+--commit - tell the server to flush the log to disk before exiting
+--checkpoint - tell the server to checkpoint the log to the db before exiting
 --setCommitInterval INTERVAL - tell the server to automatically commit after
     receiving INTERVAL messages. Set to <0 to turn off autocommit.
 --getCommitInterval - prints the number of messages between automatically

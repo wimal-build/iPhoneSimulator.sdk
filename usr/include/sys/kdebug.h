@@ -88,11 +88,14 @@ __BEGIN_DECLS
 #define DBG_DLIL	        8
 #define DBG_SECURITY		9
 #define DBG_CORESTORAGE		10
+#define DBG_CG         		11
 #define DBG_MISC		20
 #define DBG_DYLD           	31
 #define DBG_QT              	32
 #define DBG_APPS            	33
 #define DBG_LAUNCHD         	34
+#define DBG_PERF                37
+#define DBG_IMPDONATION        	38
 #define DBG_MIG			255
 
 /* **** The Kernel Debug Sub Classes for Mach (DBG_MACH) **** */
@@ -135,11 +138,19 @@ __BEGIN_DECLS
 #define MACH_FAIRSHARE_EXIT     0xd	/* exit fairshare band */
 #define MACH_FAILSAFE           0xe	/* tripped fixed-pri/RT failsafe */
 #define MACH_BLOCK              0xf	/* thread block */
-#define MACH_WAIT              0x10	/* thread wait assertion */
+#define MACH_WAIT		0x10	/* thread wait assertion */
 #define	MACH_GET_URGENCY	0x14	/* Urgency queried by platform */
 #define	MACH_URGENCY		0x15	/* Urgency (RT/BG/NORMAL) communicated
-					 * to platform */
+   					 * to platform
+					 */
+#define	MACH_REDISPATCH		0x16	/* "next thread" thread redispatched */
+#define	MACH_REMOTE_AST		0x17	/* AST signal issued to remote processor */
+
 #define	MACH_SCHED_LPA_BROKEN	0x18	/* last_processor affinity broken in choose_processor */
+
+/* Codes for IPC (DBG_MACH_IPC) */
+#define	MACH_TASK_SUSPEND	0x0	/* Suspended a task */
+#define	MACH_TASK_RESUME   	0x1	/* Resumed a task */
 
 /* Codes for pmap (DBG_MACH_PMAP) */     
 #define PMAP__CREATE		0x0
@@ -239,6 +250,7 @@ __BEGIN_DECLS
 #define DBG_DRVGRAPHICS		18  /* Graphics */
 #define DBG_DRVSD		19 	/* Secure Digital */
 #define DBG_DRVNAND		20	/* NAND drivers and layers */
+#define DBG_SSD			21	/* SSD */
 
 /* Backwards compatibility */
 #define	DBG_DRVPOINTING		DBG_DRVHID		/* OBSOLETE: Use DBG_DRVHID instead */
@@ -260,9 +272,12 @@ __BEGIN_DECLS
 #define DBG_IOCTL     6       /* ioctl to the disk */
 #define DBG_BOOTCACHE 7       /* bootcache operations */
 #define DBG_HFS       8       /* HFS-specific events; see bsd/hfs/hfs_kdebug.h */
+#define DBG_EXFAT     0xE     /* ExFAT-specific events; see the exfat project */
+#define DBG_MSDOS     0xF     /* FAT-specific events; see the msdosfs project */
 
 /* The Kernel Debug Sub Classes for BSD */
 #define DBG_BSD_PROC		0x01	/* process/signals related */
+#define DBG_BSD_MEMSTAT		0x02	/* memorystatus / jetsam operations */
 #define	DBG_BSD_EXCP_SC		0x0C	/* System Calls */
 #define	DBG_BSD_AIO		0x0D	/* aio (POSIX async IO) */
 #define DBG_BSD_SC_EXTENDED_INFO 0x0E	/* System Calls, extended info */
@@ -273,6 +288,13 @@ __BEGIN_DECLS
 #define BSD_PROC_EXIT		1	/* process exit */
 #define BSD_PROC_FRCEXIT 	2	/* Kernel force termination */
 
+/* Codes for BSD subcode class DBG_BSD_MEMSTAT */
+#define BSD_MEMSTAT_SCAN             1  /* memorystatus thread awake */
+#define BSD_MEMSTAT_JETSAM           2  /* LRU jetsam */
+#define BSD_MEMSTAT_JETSAM_HIWAT     3  /* highwater jetsam */
+#define BSD_MEMSTAT_FREEZE           4  /* freeze process */
+#define BSD_MEMSTAT_LATENCY_COALESCE 5  /* delay imposed to coalesce jetsam reports */	
+
 /* The Kernel Debug Sub Classes for DBG_TRACE */
 #define DBG_TRACE_DATA      0
 #define DBG_TRACE_STRING    1
@@ -280,6 +302,8 @@ __BEGIN_DECLS
 
 /* The Kernel Debug Sub Classes for DBG_CORESTORAGE */
 #define DBG_CS_IO	0
+
+/* Sub-class codes for CoreGraphics (DBG_CG) are defined in its component. */
 
 /* The Kernel Debug Sub Classes for DBG_MISC */
 #define DBG_EVENT	0x10
@@ -301,6 +325,12 @@ __BEGIN_DECLS
 #define DBG_APP_SAMBA	128
 
 
+/* Codes for MACH Importance Donation (DBG_IMPDONATION) */     
+#define IMP_BOOST              0x0     /* Imp boost */
+#define IMP_DROP               0x1     /* Imp drop  */
+#define IMP_APPLY_BG           0x2     /* apply BG */
+#define IMP_DROP_BG            0x3     /* drop BG */
+#define IMP_MSG_DELV           0x4     /* importance message delivered */
 /**********************************************************************/
 
 #define KDBG_CODE(Class, SubClass, code) (((Class & 0xff) << 24) | ((SubClass & 0xff) << 16) | ((code & 0x3fff)  << 2))
@@ -333,6 +363,8 @@ __BEGIN_DECLS
 
 #define PMAP_CODE(code) MACHDBG_CODE(DBG_MACH_PMAP, code)
 
+
+#define IMPDONATION_CODE(SubClass, code) KDBG_CODE(DBG_IMPDONATION, SubClass, code)
 
 /*   Usage:
 * kernel_debug((KDBG_CODE(DBG_NETWORK, DNET_PROTOCOL, 51) | DBG_FUNC_START), 

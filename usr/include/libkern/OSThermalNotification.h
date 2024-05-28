@@ -88,6 +88,19 @@ extern OSThermalNotificationLevel OSThermalNotificationCurrentLevel(void) __OSX_
 
 extern const char * const kOSThermalNotificationName __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_0);
 
+/*
+** External notify(3) string for alerting user of a thermal condition
+*/
+
+extern const char * const kOSThermalNotificationAlert __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_6_0);
+
+/*
+** External notify(3) string for notifying system the options taken to resolve thermal condition
+*/
+
+extern const char * const kOSThermalNotificationDecision __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_6_0);
+
+
 __END_DECLS
 
 #endif /* _OSTHERMALNOTIFICATION_H_ */

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1999-2011 Apple Inc. All rights reserved.
+ * Copyright (c) 1999-2012 Apple Inc. All rights reserved.
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_START@
  *
@@ -83,8 +83,6 @@
 #include <sys/appleapiopts.h>
 
 
-
-
 /* mbuf types */
 #define	MT_FREE		0	/* should be on free list */
 #define	MT_DATA		1	/* dynamic (data) allocation */
@@ -161,9 +159,7 @@ typedef struct mb_class_stat {
 	u_int32_t	mbcl_active;	/* # of active buffers */
 	u_int32_t	mbcl_infree;	/* # of available buffers */
 	u_int32_t	mbcl_slab_cnt;	/* # of available slabs */
-#if defined(KERNEL) || defined(__LP64__)
 	u_int32_t	mbcl_pad;	/* padding */
-#endif /* KERNEL || __LP64__ */
 	u_int64_t	mbcl_alloc_cnt;	/* # of times alloc is called */
 	u_int64_t	mbcl_free_cnt;	/* # of times free is called */
 	u_int64_t	mbcl_notified;	/* # of notified wakeups */
@@ -189,9 +185,7 @@ typedef struct mb_class_stat {
 
 typedef struct mb_stat {
 	u_int32_t	mbs_cnt;	/* number of classes */
-#if defined(KERNEL) || defined(__LP64__)
 	u_int32_t	mbs_pad;	/* padding */
-#endif /* KERNEL || __LP64__ */
 	mb_class_stat_t	mbs_class[1];	/* class array */
 } mb_stat_t;
 
