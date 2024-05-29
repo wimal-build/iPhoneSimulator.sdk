@@ -11,8 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-MP_EXTERN_CLASS_AVAILABLE(2_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(2.0, 10.12.2, 2.0)
 @interface MPVolumeView : UIView <NSCoding>
 
 @property (nonatomic) BOOL showsVolumeSlider NS_AVAILABLE_IOS(4_2); // Default is YES.

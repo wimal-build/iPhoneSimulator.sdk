@@ -5,7 +5,7 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import <Availability.h>
+#import <os/availability.h>
 #import <Foundation/NSObject.h>
 #import <VideoSubscriberAccount/VideoSubscriberAccountDefines.h>
 
@@ -28,18 +28,18 @@ typedef NS_ENUM(NSInteger, VSAccountAccessStatus)
     VSAccountAccessStatusDenied = 2, // The user has explicitly decided to not allow the app to access subscription information.
     VSAccountAccessStatusGranted = 3, // The user has currently decided to allow the app to access subscription information.
 }
-NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE;
+API_AVAILABLE(ios(10.0), tvos(10.0));
 
 /// Options that may be provided when checking access status.
 typedef NSString * VSCheckAccessOption NS_STRING_ENUM
-NS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE;
+API_AVAILABLE(ios(10.0), tvos(10.0));
 
 /// A boolean indicating whether the user may be prompted to grant access.
 VS_EXTERN VSCheckAccessOption const VSCheckAccessOptionPrompt
-NS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE;
+API_AVAILABLE(ios(10.0), tvos(10.0));
 
 /// A VSAccountManager instance coordinates access to a subscriber's account.
-NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
+VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 @interface VSAccountManager : NSObject
 
 /// An object that can help the account manager by presenting and dismissing view controllers when needed.
@@ -65,7 +65,7 @@ NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
 
 
 /// A VSAccountManager instance coordinates access to a subscriber's account.
-VS_EXPORT NS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
+API_AVAILABLE(ios(10.0), tvos(10.0))
 @protocol VSAccountManagerDelegate <NSObject>
 
 @required

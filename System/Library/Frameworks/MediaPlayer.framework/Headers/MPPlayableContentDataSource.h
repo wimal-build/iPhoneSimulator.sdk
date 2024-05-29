@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Data sources are responsible for providing metadata about your media to these
 /// systems in a meaningful way, so that features like user interfaces and play
 /// queues can be setup automatically.
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_TVOS_PROHIBITED(7.1, 10.12.2, 7.1)
 @protocol MPPlayableContentDataSource <NSObject>
 @optional
 
@@ -41,7 +41,7 @@ __TVOS_PROHIBITED
 /// to be retrieved.
 /// Client applications should always call the completion handler after loading
 /// has finished, if this method is implemented.
-- (void)contentItemForIdentifier:(NSString *)identifier completionHandler:(void(^)(MPContentItem *__nullable, NSError * __nullable))completionHandler NS_AVAILABLE_IOS(10_0);
+- (void)contentItemForIdentifier:(NSString *)identifier completionHandler:(void(^)(MPContentItem *__nullable, NSError * __nullable))completionHandler MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.0, 10.12.2, 10.0);
 
 @required
 /// Returns the number of child nodes at the specified index path. In a virtual

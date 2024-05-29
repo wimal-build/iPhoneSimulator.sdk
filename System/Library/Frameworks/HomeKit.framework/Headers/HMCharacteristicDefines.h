@@ -247,10 +247,12 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSmokeDetectionStatus) {
 
  @constant  HMCharacteristicValueChargingStateNone              Charging is not in progress.
  @constant  HMCharacteristicValueChargingStateInProgress        Charging is in progress.
+ @constant  HMCharacteristicValueChargingStateNotChargeable     Charging is not supported.
  */
 typedef NS_ENUM(NSInteger, HMCharacteristicValueChargingState) {
     HMCharacteristicValueChargingStateNone = 0,
     HMCharacteristicValueChargingStateInProgress,
+    HMCharacteristicValueChargingStateNotChargeable NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1),
 } NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
 
 
@@ -319,3 +321,175 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSecuritySystemAlarmType) {
     HMCharacteristicValueSecuritySystemAlarmTypeNoAlarm = 0,
     HMCharacteristicValueSecuritySystemAlarmTypeUnknown,
 } NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
+/*!
+ @enum      HMCharacteristicValueLockPhysicalControlsState
+
+ @constant  HMCharacteristicValueLockPhysicalControlsStateNotLocked     Physical controls not locked.
+ @constant  HMCharacteristicValueLockPhysicalControlsStateLocked        Physical controls locked.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueLockPhysicalControlsState) {
+    HMCharacteristicValueLockPhysicalControlsStateNotLocked = 0,
+    HMCharacteristicValueLockPhysicalControlsStateLocked,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueCurrentAirPurifierState
+
+ @constant  HMCharacteristicValueCurrentAirPurifierStateInactive    Inactive.
+ @constant  HMCharacteristicValueCurrentAirPurifierStateIdle        Idle.
+ @constant  HMCharacteristicValueCurrentAirPurifierStateActive      Active.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentAirPurifierState) {
+    HMCharacteristicValueCurrentAirPurifierStateInactive = 0,
+    HMCharacteristicValueCurrentAirPurifierStateIdle,
+    HMCharacteristicValueCurrentAirPurifierStateActive,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueTargetAirPurifierState
+
+ @constant  HMCharacteristicValueTargetAirPurifierStateManual       Air Purifier is in manual mode.
+ @constant  HMCharacteristicValueTargetAirPurifierStateAutomatic    Air Purifier is in automatic mode.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetAirPurifierState) {
+    HMCharacteristicValueTargetAirPurifierStateManual = 0,
+    HMCharacteristicValueTargetAirPurifierStateAutomatic,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueCurrentSlatState
+
+ @constant  HMCharacteristicValueCurrentSlatStateStationary         Slats are stationary.
+ @constant  HMCharacteristicValueCurrentSlatStateJammed             Slats are jammed.
+ @constant  HMCharacteristicValueCurrentSlatStateOscillating        Slats are oscillating.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentSlatState) {
+    HMCharacteristicValueCurrentSlatStateStationary = 0,
+    HMCharacteristicValueCurrentSlatStateJammed,
+    HMCharacteristicValueCurrentSlatStateOscillating,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueSlatType
+
+ @constant  HMCharacteristicValueSlatTypeHorizontal          Slat type is horizontal.
+ @constant  HMCharacteristicValueSlatTypeVertical            Slat type is vertical.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueSlatType) {
+    HMCharacteristicValueSlatTypeHorizontal = 0,
+    HMCharacteristicValueSlatTypeVertical,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueFilterChange
+
+ @constant  HMCharacteristicValueFilterChangeNotNeeded      Filter does not need to be changed.
+ @constant  HMCharacteristicValueFilterChangeNeeded         Filter needs to be changed.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueFilterChange) {
+    HMCharacteristicValueFilterChangeNotNeeded = 0,
+    HMCharacteristicValueFilterChangeNeeded,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueCurrentFanState
+
+ @constant  HMCharacteristicValueCurrentFanStateInactive            Inactive.
+ @constant  HMCharacteristicValueCurrentFanStateIdle                Idle.
+ @constant  HMCharacteristicValueCurrentFanStateActive              Active.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentFanState) {
+    HMCharacteristicValueCurrentFanStateInactive = 0,
+    HMCharacteristicValueCurrentFanStateIdle,
+    HMCharacteristicValueCurrentFanStateActive,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueTargetFanState
+
+ @constant  HMCharacteristicValueTargetFanStateManual       Fan is in manual mode.
+ @constant  HMCharacteristicValueTargetFanStateAutomatic    Fan is in automatic mode.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetFanState) {
+    HMCharacteristicValueTargetFanStateManual = 0,
+    HMCharacteristicValueTargetFanStateAutomatic,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueCurrentHeaterCoolerState
+
+ @constant  HMCharacteristicValueCurrentHeaterCoolerStateInactive   Inactive.
+ @constant  HMCharacteristicValueCurrentHeaterCoolerStateIdle       Idle.
+ @constant  HMCharacteristicValueCurrentHeaterCoolerStateHeating    Heating.
+ @constant  HMCharacteristicValueCurrentHeaterCoolerStateCooling    Cooling.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentHeaterCoolerState) {
+    HMCharacteristicValueCurrentHeaterCoolerStateInactive = 0,
+    HMCharacteristicValueCurrentHeaterCoolerStateIdle,
+    HMCharacteristicValueCurrentHeaterCoolerStateHeating,
+    HMCharacteristicValueCurrentHeaterCoolerStateCooling,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueTargetHeaterCoolerState
+
+ @constant  HMCharacteristicValueTargetHeaterCoolerStateAutomatic       Automatic mode.
+ @constant  HMCharacteristicValueTargetHeaterCoolerStateHeat            Heat mode.
+ @constant  HMCharacteristicValueTargetHeaterCoolerStateCool            Cool mode.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetHeaterCoolerState) {
+    HMCharacteristicValueTargetHeaterCoolerStateAutomatic = 0,
+    HMCharacteristicValueTargetHeaterCoolerStateHeat,
+    HMCharacteristicValueTargetHeaterCoolerStateCool,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueCurrentHumidifierDehumidifierState
+
+ @constant  HMCharacteristicValueCurrentHumidifierDehumidifierStateInactive         Inactive.
+ @constant  HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle             Idle.
+ @constant  HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying      Humidifying.
+ @constant  HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying    Dehumidifying.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentHumidifierDehumidifierState) {
+    HMCharacteristicValueCurrentHumidifierDehumidifierStateInactive = 0,
+    HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle,
+    HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying,
+    HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueTargetHumidifierDehumidifierState
+
+ @constant  HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic             Automatic mode.
+ @constant  HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify              Humidify mode.
+ @constant  HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify            Dehumidify mode.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetHumidifierDehumidifierState) {
+    HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic = 0,
+    HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify,
+    HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueSwingMode
+
+ @constant  HMCharacteristicValueSwingModeDisabled                  Swing mode is disabled.
+ @constant  HMCharacteristicValueSwingModeEnabled                   Swing mode is enabled.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueSwingMode) {
+    HMCharacteristicValueSwingModeDisabled = 0,
+    HMCharacteristicValueSwingModeEnabled,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueActivationState
+
+ @constant  HMCharacteristicValueActivationStateInactive            Service is inactive.
+ @constant  HMCharacteristicValueActivationStateActive              Service is active.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueActivationState) {
+    HMCharacteristicValueActivationStateInactive = 0,
+    HMCharacteristicValueActivationStateActive,
+} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);

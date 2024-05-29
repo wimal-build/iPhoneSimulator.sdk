@@ -1,2 +1,2 @@
 // Copyright 2014 Apple Inc.  All Rights Reserved.
-(function(){return function(e,n,r){var t,a,l=loadHelper("clearifcontainstags.js"),s=loadHelper("stripurl.js"),i=e.replace(/\r?\n/gm," ").replace(/\s+/g," ");for(a=0;n.nameInSubject.length>a&&(!t||!t.exists());a++)t=r.getDetachedSpan(i).innerCapture(n.nameInSubject[a],1);if(!t.exists())for(a=0;n.nameInBody.length>a&&(!t||!t.exists());a++)t=r.getSpan().innerCapture(n.nameInBody[a],1);return t=l(r,t),t=s(t)}}).call();
+(function(){return function(n,t){for(var r,e=0;n.modifyUrl.length>e&&(!r||!r.exists());e++)r=t.getSpan().next(n.modifyUrl[e]).nextLink();return r}}).call();

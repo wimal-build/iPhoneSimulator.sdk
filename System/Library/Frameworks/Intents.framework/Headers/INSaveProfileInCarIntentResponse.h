@@ -14,12 +14,12 @@ typedef NS_ENUM(NSInteger, INSaveProfileInCarIntentResponseCode) {
     INSaveProfileInCarIntentResponseCodeSuccess,
     INSaveProfileInCarIntentResponseCodeFailure,
     INSaveProfileInCarIntentResponseCodeFailureRequiringAppLaunch,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(watchos, macosx);
 
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(watchos, macosx)
 @interface INSaveProfileInCarIntentResponse : INIntentResponse
 
 - (id)init NS_UNAVAILABLE;

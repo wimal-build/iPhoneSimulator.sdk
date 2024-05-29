@@ -67,6 +67,23 @@
 				<key>Priority</key>
 				<string>Maintenance</string>
 			</dict>
+			<key>com.apple.searchd.sendmlfeedback</key>
+			<dict>
+				<key>Interval</key>
+				<integer>86400</integer>
+				<key>Delay</key>
+				<integer>86400</integer>
+				<key>GracePeriod</key>
+				<integer>0</integer>
+				<key>Repeating</key>
+				<true/>
+				<key>AllowBattery</key>
+				<true/>
+				<key>PowerNap</key>
+				<true/>
+				<key>Priority</key>
+				<string>Maintenance</string>
+			</dict>
 			<key>com.apple.searchd.reindex</key>
 			<dict>
 				<key>Interval</key>

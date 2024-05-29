@@ -12,14 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class MPMediaItem, MPMediaItemCollection, MPMediaQuery;
 
-MP_EXTERN_CLASS_AVAILABLE(10_1)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
 @interface MPMusicPlayerQueueDescriptor : NSObject<NSSecureCoding>
 
 @end
 
-MP_EXTERN_CLASS_AVAILABLE(10_1)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
 @interface MPMusicPlayerMediaItemQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithQuery:(MPMediaQuery *)query;
@@ -34,8 +32,7 @@ __TVOS_PROHIBITED
 
 @end
 
-MP_EXTERN_CLASS_AVAILABLE(10_1)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
 @interface MPMusicPlayerStoreQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithStoreIDs:(NSArray<NSString *> *)storeIDs;

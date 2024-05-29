@@ -1,2 +1,2 @@
 // Copyright 2014 Apple Inc.  All Rights Reserved.
-(function(){return function(e,t,a){var n,i,s=a.getSpan().firstDate();if(void 0!==t.date)for(i=0;t.date.length>i&&(!n||!n.exists());i++)n=a.getSpan().next(t.date[i]).nextDate(),n.exists()&&(s=n);if(void 0!==t.skipDate)for(i=0;t.skipDate.length>i;i+=1)a.getSpan().next(t.skipDate[i]).contains(s)&&(s=s.nextDate());if(s!==a.getNullSpan()&&!hasTime_(unSpanDate_(s)))for(var l=a.getSpan().allDates(),r=null!==l?l.length:0,f=0;r>f;f++)if(hasTime_(unSpanDate_(l[f]))){s=combineDateAndTime(s,l[f]);break}return s}}).call();
+(function(){return function(e){var s=loadHelper("UseCaseEnum.js"),a=loadHelper("UseCaseClassifierModeEnum.js"),r=loadHelper("UseCase.js")(a.Regular,e.subject,e.from);return r.use_case!==s.NoEvent}}).call();

@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("edreams.com-flight-confirmation-it",function(e){return/Conferma prenotazione:/.test(e.subject)},function(e){if(!/Conferma prenotazione:/.test(e.subject))return CONTINUE;var t="it_IT",n={legCheckRegExp:/Partenza/,passengerCheckRegExp:/Andata: \d+/};return loadHelper("edreams.com-flight-confirmation-skeleton.js")(e,t,n)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1014/1057/1060","SGacc18cc5")]);

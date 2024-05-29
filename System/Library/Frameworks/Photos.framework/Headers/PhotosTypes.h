@@ -87,6 +87,7 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeSmartAlbumUserLibrary = 209,
     PHAssetCollectionSubtypeSmartAlbumSelfPortraits PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 210,
     PHAssetCollectionSubtypeSmartAlbumScreenshots PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 211,
+    PHAssetCollectionSubtypeSmartAlbumDepthEffect PHOTOS_AVAILABLE_IOS_TVOS(10_2, 10_1) = 212,
     
     // Used for fetching, if you don't care about the exact subtype
     PHAssetCollectionSubtypeAny = NSIntegerMax
@@ -115,6 +116,7 @@ typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     PHAssetMediaSubtypePhotoHDR           = (1UL << 1),
     PHAssetMediaSubtypePhotoScreenshot PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = (1UL << 2),
     PHAssetMediaSubtypePhotoLive PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0) = (1UL << 3),
+    PHAssetMediaSubtypePhotoDepthEffect PHOTOS_AVAILABLE_IOS_TVOS(10_2, 10_1) = (1UL << 4),
 
     // Video subtypes
     PHAssetMediaSubtypeVideoStreamed      = (1UL << 16),

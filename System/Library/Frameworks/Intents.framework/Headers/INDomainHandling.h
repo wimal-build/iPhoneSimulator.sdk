@@ -7,12 +7,12 @@
 
 #import <Intents/INIntents.h>
 
-API_AVAILABLE(macosx(10.12),ios(10.0))
+API_AVAILABLE(macosx(10.12), ios(10.0))
 @protocol INCallsDomainHandling <INStartAudioCallIntentHandling, INStartVideoCallIntentHandling, INSearchCallHistoryIntentHandling>
 @end
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @protocol INCarPlayDomainHandling <INSetAudioSourceInCarIntentHandling, INSetClimateSettingsInCarIntentHandling, INSetDefrosterSettingsInCarIntentHandling, INSetSeatSettingsInCarIntentHandling, INSetProfileInCarIntentHandling, INSaveProfileInCarIntentHandling>
 @end
 
@@ -22,7 +22,7 @@ API_UNAVAILABLE(macosx)
 @end
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @protocol INRadioDomainHandling <INSetRadioStationIntentHandling>
 @end
 

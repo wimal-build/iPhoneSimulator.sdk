@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>CDA.xsd</key>
-		<data>
-		nOfsOHbxsKNVFsd2aCICOun4Kg4=
-		</data>
 		<key>Headers/HKActivitySummary.h</key>
 		<data>
 		F2WN9Yl2r+eJuyTIzERwNNW86pw=
@@ -146,7 +142,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HVQdXouIrBoqOrbBWgAOmNsGN0o=
+		tCzbfd4IAv/AGdWfy3RLc7yiZjY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -165,7 +161,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RbzkroIE9cRySAFjEmrYKk9Q8pM=
+			fLicSrGpRiZPHCPU/hW19ZqARF8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,6 +256,34 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cda_validation/CDA_SDTC.xsd</key>
+		<data>
+		YDqHwwFXfhp2woaJiFz0/zSEYdM=
+		</data>
+		<key>cda_validation/NarrativeBlock.xsd</key>
+		<data>
+		hV0dKDkDObwhD8tNVSGplvd2/Dc=
+		</data>
+		<key>cda_validation/POCD_MT000040_SDTC.xsd</key>
+		<data>
+		7t9onltkqD2KEoYvjcrOJFXilPI=
+		</data>
+		<key>cda_validation/SDTC.xsd</key>
+		<data>
+		kr+eFc8l2RQA1CJUZDV9YeSrslw=
+		</data>
+		<key>cda_validation/datatypes-base_SDTC.xsd</key>
+		<data>
+		Vt2SsEGfwqYFNOiROekwJ/xnu+o=
+		</data>
+		<key>cda_validation/datatypes.xsd</key>
+		<data>
+		Ju3j1qLHiLRVaQLkoVoV1ZO9ncc=
+		</data>
+		<key>cda_validation/voc.xsd</key>
+		<data>
+		+d/IFhMy5bFPUPnfbGo0kZuMflg=
+		</data>
 		<key>cs.lproj/Achievements-Ariel.strings</key>
 		<dict>
 			<key>hash</key>
@@ -910,7 +934,7 @@
 		</dict>
 		<key>healthd</key>
 		<data>
-		fOijnJTrWvDfjdEHOlpxP297MCo=
+		13JVesH7b88l0K7FjDD7H7/vcH8=
 		</data>
 		<key>hi.lproj/Achievements-Ariel.strings</key>
 		<dict>
@@ -1150,7 +1174,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/BkEberNmkTwRdADLX8xotbtB9w=
+			LXsjpNR10AJMk8j4ElvDgsilq1g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1195,7 +1219,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O0SnoSbqLt89+VsmKLIqm0bxzpM=
+			8sb5IU8nb+ZNDuUHY88omzO88Zo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1204,7 +1228,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8OwSEjwupCt844OlhOJe1CVgAQY=
+			OwtAe371UhNTS5bNfZbgEstFGLE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1249,7 +1273,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ntRf/OUQv7hJMmXtcE8gY5tOxx0=
+			bNrGh9eI+r5crY5cE7OVENHUq94=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1501,7 +1525,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qk7uVTVyAe5FPLqQUYgDCJ9Qcv0=
+			NbaOlR83AOBAjyF9+bMFXXsHMG4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1573,7 +1597,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3oEhAoJEA9N6NglronauEFPxKaQ=
+			qA+6hHvyfUIuq/Kb6AekpsMKjyU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1897,7 +1921,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w1v0/4BbGsZu1f8RzUbxKePcpTQ=
+			jo8Ftqkm4WErPDhSGkqbk6OSq5Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2068,7 +2092,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PSbn5cXF2sHvlySa1l1qHIoRvm8=
+			OxSt5OYEzgrCpyCtf0BnYCwKwbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2113,7 +2137,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ulhNrDeXSVopQOx9yAFqbh0pEcg=
+			qkEFNeEJnf3NHovcBzz01VEqjDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2167,7 +2191,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SLIHF5gVHwdYjaBFus+2H0eK+Rc=
+			FCMzqrUqRz2SXhi3WJNCJ380tR4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2203,7 +2227,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HcZN2YhARtFiNhmfTnSXJbZ3/2c=
+			cRjPnzUaOM5J7a1vJxQI6d25DnU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2211,10 +2235,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>CDA.xsd</key>
-		<data>
-		nOfsOHbxsKNVFsd2aCICOun4Kg4=
-		</data>
 		<key>Headers/HKActivitySummary.h</key>
 		<data>
 		F2WN9Yl2r+eJuyTIzERwNNW86pw=
@@ -2368,7 +2388,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RbzkroIE9cRySAFjEmrYKk9Q8pM=
+			fLicSrGpRiZPHCPU/hW19ZqARF8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2463,6 +2483,34 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cda_validation/CDA_SDTC.xsd</key>
+		<data>
+		YDqHwwFXfhp2woaJiFz0/zSEYdM=
+		</data>
+		<key>cda_validation/NarrativeBlock.xsd</key>
+		<data>
+		hV0dKDkDObwhD8tNVSGplvd2/Dc=
+		</data>
+		<key>cda_validation/POCD_MT000040_SDTC.xsd</key>
+		<data>
+		7t9onltkqD2KEoYvjcrOJFXilPI=
+		</data>
+		<key>cda_validation/SDTC.xsd</key>
+		<data>
+		kr+eFc8l2RQA1CJUZDV9YeSrslw=
+		</data>
+		<key>cda_validation/datatypes-base_SDTC.xsd</key>
+		<data>
+		Vt2SsEGfwqYFNOiROekwJ/xnu+o=
+		</data>
+		<key>cda_validation/datatypes.xsd</key>
+		<data>
+		Ju3j1qLHiLRVaQLkoVoV1ZO9ncc=
+		</data>
+		<key>cda_validation/voc.xsd</key>
+		<data>
+		+d/IFhMy5bFPUPnfbGo0kZuMflg=
+		</data>
 		<key>cs.lproj/Achievements-Ariel.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3113,7 +3161,7 @@
 		</dict>
 		<key>healthd</key>
 		<data>
-		fOijnJTrWvDfjdEHOlpxP297MCo=
+		13JVesH7b88l0K7FjDD7H7/vcH8=
 		</data>
 		<key>hi.lproj/Achievements-Ariel.strings</key>
 		<dict>
@@ -3353,7 +3401,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/BkEberNmkTwRdADLX8xotbtB9w=
+			LXsjpNR10AJMk8j4ElvDgsilq1g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3398,7 +3446,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O0SnoSbqLt89+VsmKLIqm0bxzpM=
+			8sb5IU8nb+ZNDuUHY88omzO88Zo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3407,7 +3455,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8OwSEjwupCt844OlhOJe1CVgAQY=
+			OwtAe371UhNTS5bNfZbgEstFGLE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3452,7 +3500,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ntRf/OUQv7hJMmXtcE8gY5tOxx0=
+			bNrGh9eI+r5crY5cE7OVENHUq94=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3704,7 +3752,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qk7uVTVyAe5FPLqQUYgDCJ9Qcv0=
+			NbaOlR83AOBAjyF9+bMFXXsHMG4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3776,7 +3824,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3oEhAoJEA9N6NglronauEFPxKaQ=
+			qA+6hHvyfUIuq/Kb6AekpsMKjyU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4100,7 +4148,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w1v0/4BbGsZu1f8RzUbxKePcpTQ=
+			jo8Ftqkm4WErPDhSGkqbk6OSq5Y=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4271,7 +4319,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PSbn5cXF2sHvlySa1l1qHIoRvm8=
+			OxSt5OYEzgrCpyCtf0BnYCwKwbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4316,7 +4364,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ulhNrDeXSVopQOx9yAFqbh0pEcg=
+			qkEFNeEJnf3NHovcBzz01VEqjDk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4370,7 +4418,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SLIHF5gVHwdYjaBFus+2H0eK+Rc=
+			FCMzqrUqRz2SXhi3WJNCJ380tR4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -4406,7 +4454,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HcZN2YhARtFiNhmfTnSXJbZ3/2c=
+			cRjPnzUaOM5J7a1vJxQI6d25DnU=
 			</data>
 			<key>optional</key>
 			<true/>

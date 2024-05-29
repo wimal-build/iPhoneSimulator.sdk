@@ -104,3 +104,27 @@ HM_EXTERN NSString * const HMAccessoryCategoryTypeWindow NS_AVAILABLE_IOS(9_0) _
  */
 HM_EXTERN NSString * const HMAccessoryCategoryTypeWindowCovering NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
+/*!
+ * @brief Category type for Air Purifier.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeAirPurifier NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Category type for Air Heater.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeAirHeater NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Category type for Air Conditioner.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeAirConditioner NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Category type for Air Humidifier.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeAirHumidifier NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Category type for Air Dehumidifier.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeAirDehumidifier NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);

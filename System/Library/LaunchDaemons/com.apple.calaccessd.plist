@@ -20,6 +20,39 @@
 	</dict>
 	<key>LaunchEvents</key>
 	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.calendar.daemon.identityorphancleanup</key>
+			<dict>
+				<key>Repeating</key>
+				<true/>
+				<key>Delay</key>
+				<real>86400</real>
+				<key>GracePeriod</key>
+				<integer>86400</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>AllowBattery</key>
+				<false/>
+				<key>RequireScreenSleep</key>
+				<true/>
+			</dict>
+			<key>com.apple.calendar.daemon.idlechangetrackingclientcleanup</key>
+			<dict>
+				<key>Repeating</key>
+				<true/>
+				<key>Delay</key>
+				<real>28800</real>
+				<key>GracePeriod</key>
+				<real>28800</real>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>AllowBattery</key>
+				<false/>
+				<key>RequireScreenSleep</key>
+				<true/>
+			</dict>
+		</dict>
 		<key>com.apple.notifyd.matching</key>
 		<dict>
 			<key>SignificantTimeChangeNotification</key>

@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("hanatour.com-confirmation-ko",function(e){return/\uc608\uc57d \uc548\ub0b4 \uc785\ub2c8\ub2e4/.test(e.subject)},function(e){if(/\uc608\uc57d \uc548\ub0b4 \uc785\ub2c8\ub2e4/.test(e.subject)){var t={};t.reservationId_prefix="\uc608\uc57d\ubc88\ud638";var r="ko_KR",n=loadHelper("hanatour.com-confirmation-skeleton.js");return n(e,r,t)}return CONTINUE},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1014/1116/1117","SGdf277f9c")]);

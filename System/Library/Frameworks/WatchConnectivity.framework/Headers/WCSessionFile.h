@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 NS_CLASS_AVAILABLE_IOS(9.0)
 @interface WCSessionFile : NSObject
-@property (nonatomic, readonly) NSURL *fileURL;
+@property (nonatomic, readonly, nullable) NSURL *fileURL;
 @property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *, id> *metadata;
 @end
 

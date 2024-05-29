@@ -44,6 +44,8 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INPaymentMethodType.h>
 #import <Intents/INPerson.h>
 #import <Intents/INSpeakableString.h>
+#import <Intents/INPersonHandleLabel.h>
+#import <Intents/INPersonRelationship.h>
 
 // Common Resolution Results
 #import <Intents/INBooleanResolutionResult.h>
@@ -168,6 +170,7 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INWorkoutGoalUnitTypeResolutionResult.h>
 #import <Intents/INWorkoutLocationType.h>
 #import <Intents/INWorkoutLocationTypeResolutionResult.h>
+#import <Intents/INWorkoutNameIdentifier.h>
 
 // Restaurant Booking
 #import <Intents/INIntentRestaurantReservation.h>
@@ -181,3 +184,9 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/CLPlacemark+IntentsAdditions.h>
 #import <Intents/NSUserActivity+IntentsAdditions.h>
 #import <Intents/INPerson+SiriAdditions.h>
+
+// Deprecated
+#import <Intents/INPerson_Deprecated.h>
+#import <Intents/INRideDriver_Deprecated.h>
+#import <Intents/INSaveProfileInCarIntent_Deprecated.h>
+#import <Intents/INSetProfileInCarIntent_Deprecated.h>

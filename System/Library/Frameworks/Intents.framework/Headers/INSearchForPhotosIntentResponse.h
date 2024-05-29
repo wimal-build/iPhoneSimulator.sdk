@@ -13,6 +13,7 @@ typedef NS_ENUM(NSInteger, INSearchForPhotosIntentResponseCode) {
     INSearchForPhotosIntentResponseCodeContinueInApp,
     INSearchForPhotosIntentResponseCodeFailure,
     INSearchForPhotosIntentResponseCodeFailureRequiringAppLaunch,
+    INSearchForPhotosIntentResponseCodeFailureAppConfigurationRequired,
 } API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN

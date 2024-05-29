@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx)
 @interface INCurrencyAmountResolutionResult : INIntentResolutionResult
 
-// This resolution result is for when the app extension wants to tell Siri to proceed with a given currency amount. The resolvedCurrencyAmount need not be identical to the input currency amount. If the app extension wants to continue with a 'nil' value, it must use +notRequired.
+// This resolution result is for when the app extension wants to tell Siri to proceed, with a given INCurrencyAmount. The resolvedCurrencyAmount can be different than the original INCurrencyAmount. This allows app extension to apply business logic constraints. For example, the extension could round the amount to the nearest dollar.
+// Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedCurrencyAmount:(INCurrencyAmount *)resolvedCurrencyAmount NS_SWIFT_NAME(success(with:));
 
 // This resolution result is to ask Siri to disambiguate between the provided currency amounts.

@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("restaurant-generic",function(e){return loadHelper("shouldDownloadMessageWithClassifier.js")(e)},function(e){var s=loadHelper("UseCaseEnum.js"),a=loadHelper("UseCaseClassifierModeEnum.js"),l=loadHelper("UseCase.js")(a.Regular,e.subject,e.from);if(jsClassifierLogs=l,l.use_case===s.NoEvent)return CONTINUE;var r=loadHelper("vocab.js")(l.locale);return loadHelper("genericskeleton.js")(e,l.locale,r,l.use_case)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1219/1012/1338","SGb97e543a")]);

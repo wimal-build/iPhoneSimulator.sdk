@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .activityIndicator {
+                width: 50;
+                height: 50;
+            }
+            <!-- this is always vibrant and handled in the loading controller -->
+            .activityIndicatorTitle {
+                tv-text-style: title2;
+                text-align: center;
+                tv-text-max-lines: 1;
+            }
+        </style>
+    </head>
+    <loadingTemplate>
+        <activityIndicator class="activityIndicator">
+            <title class="activityIndicatorTitle"/>
+            <subtitle class="activityIndicatorTitle"/>
+            <text class="activityIndicatorTitle"/>
+        </activityIndicator>
+    </loadingTemplate>
+</document>

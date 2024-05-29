@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .bannerTitle {
+                color: rgb(0, 0, 0, 0.4);
+                tv-text-style: title2;
+            }
+            
+            .list {
+                width: 488;
+                margin: 45 68 0 100;
+            }
+            
+            .rcActivity {
+                margin: 0 90 0 68;
+            }
+            
+            .rcGrid {
+                margin: 0 90 0 68;
+                padding: 45 0 60 0;
+                tv-interitem-spacing: 48px;
+            }
+            .monogramTitle {
+                tv-minimum-scale-factor: 0.84;
+            }
+            .monogramSubtitle {
+                tv-text-highlight-style: marquee-and-show-on-highlight;
+            }
+            .lockupOverlay {
+                padding: 36px 30px;
+            }
+            .lockupOverlayTitle {
+                tv-position: bottom;
+                tv-text-style: headline;
+                color: rgb(255,255,255);
+                text-align: left;
+                tv-text-max-lines: 2;
+            }
+            .lockupOverlayText {
+                tv-position: bottom;
+                tv-text-style: footnote;
+                color: rgba(255,255,255,0.6);
+                text-align: left;
+                tv-text-max-lines: 1;
+            }
+            .lockupOverlayProgressBar {
+                height: 6;
+                margin: 0 10 12;
+                tv-position: bottom;
+                tv-align: center;
+                tv-tint-color: rgb(255, 255, 255);
+            }
+            @media tv-template and (tv-theme:dark) {
+                .bannerTitle {
+                    color: rgba(255, 255, 255, 0.25);
+                }
+            }
+            @media tv-template and (-tv-banner) {
+                .list {
+                    padding: 0 0 60;
+                }
+            }
+        </style>
+    </head>
+    
+    <catalogTemplate>
+        <banner>
+            <title class="bannerTitle" />
+        </banner>
+		<relatedContent>
+			<grid class="rcGrid">
+				<section>
+					<monogramLockup>
+						<monogram class="baseMonogram" />
+						<title class="baseMonogramTitle monogramTitle" />
+						<subtitle class="baseMonogramSubtitle monogramSubtitle" />
+					</monogramLockup>
+				</section>
+			</grid>
+			<activityIndicator class="rcActivity">
+			</activityIndicator>
+		</relatedContent>
+        <list class="list"/>
+        <overlay class="lockupOverlay">
+            <title class="lockupOverlayTitle"/>
+            <subtitle  class="lockupOverlayText"/>
+            <text class="lockupOverlayText" />
+            <progressBar class="lockupOverlayProgressBar"/>
+        </overlay>
+    </catalogTemplate>
+</document>

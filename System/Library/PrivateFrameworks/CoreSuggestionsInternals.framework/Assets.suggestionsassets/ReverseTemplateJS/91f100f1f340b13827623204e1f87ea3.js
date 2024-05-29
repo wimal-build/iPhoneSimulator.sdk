@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("venere-cancellation-it",function(e){return/La tua prenotazione \xe8 stata cancellata/.test(e.subject)},function(e){if(/La tua prenotazione \xe8 stata cancellata/.test(e.subject)){var a=loadHelper("venere-schemaorg-parser.js"),t=a(e);if(t)return t}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/662/955/957","SGabce6bbd")]);

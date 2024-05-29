@@ -44,7 +44,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 @property (nonatomic, readonly, nullable) MSMessage *selectedMessage;
 
 /*!
- @method     insertMessage:localizedChangeDescription:completionHandler:
+ @method     insertMessage:completionHandler:
  @abstract   Stages provided the MSMessage for sending.
  @discussion This method inserts a MSMessage object into the Messages input field,
  Subsequent calls to this method will replace any existing message on the input field. 

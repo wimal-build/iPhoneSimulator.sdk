@@ -9,7 +9,6 @@
 #define INMessageAttribute_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INMessageAttribute) {
@@ -18,6 +17,6 @@ typedef NS_ENUM(NSInteger, INMessageAttribute) {
     INMessageAttributeUnread,
     INMessageAttributeFlagged,
     INMessageAttributeUnflagged,
-};
+} API_AVAILABLE(ios(10.0));
 
 #endif // INMessageAttribute_h

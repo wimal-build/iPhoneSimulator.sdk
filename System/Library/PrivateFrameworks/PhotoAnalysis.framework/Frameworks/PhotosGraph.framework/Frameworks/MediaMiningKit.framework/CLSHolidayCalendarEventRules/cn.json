@@ -3,8 +3,8 @@
     {
       "dateRules" : [
         {
-          "day" : 10,
-          "month" : 1
+          "day" : 1,
+          "month" : 10
         }
       ],
       "name" : "National Day",
@@ -112,7 +112,108 @@
       "dateRules" : [
         {
           "day" : 4,
-          "month" : 4
+          "month" : 4,
+          "year" : 2000
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2001
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2002
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2003
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2004
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2005
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2006
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2007
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2008
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2009
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2010
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2011
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2012
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2013
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2014
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2015
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2016
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2017
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2018
+        },
+        {
+          "day" : 5,
+          "month" : 4,
+          "year" : 2019
+        },
+        {
+          "day" : 4,
+          "month" : 4,
+          "year" : 2020
         }
       ],
       "name" : "Tomb-Sweeping Day",
@@ -333,7 +434,7 @@
         },
         {
           "day" : 30,
-          "month" : 6,
+          "month" : 5,
           "year" : 2017
         },
         {
@@ -409,6 +510,76 @@
     {
       "dateRules" : [
         {
+          "day" : 6,
+          "month" : 8,
+          "year" : 2000
+        },
+        {
+          "day" : 25,
+          "month" : 8,
+          "year" : 2001
+        },
+        {
+          "day" : 15,
+          "month" : 8,
+          "year" : 2002
+        },
+        {
+          "day" : 4,
+          "month" : 8,
+          "year" : 2003
+        },
+        {
+          "day" : 22,
+          "month" : 8,
+          "year" : 2004
+        },
+        {
+          "day" : 11,
+          "month" : 8,
+          "year" : 2005
+        },
+        {
+          "day" : 31,
+          "month" : 7,
+          "year" : 2006
+        },
+        {
+          "day" : 19,
+          "month" : 8,
+          "year" : 2007
+        },
+        {
+          "day" : 7,
+          "month" : 8,
+          "year" : 2008
+        },
+        {
+          "day" : 26,
+          "month" : 8,
+          "year" : 2009
+        },
+        {
+          "day" : 16,
+          "month" : 8,
+          "year" : 2010
+        },
+        {
+          "day" : 6,
+          "month" : 8,
+          "year" : 2011
+        },
+        {
+          "day" : 23,
+          "month" : 8,
+          "year" : 2012
+        },
+        {
+          "day" : 13,
+          "month" : 8,
+          "year" : 2013
+        },
+        {
           "day" : 2,
           "month" : 8,
           "year" : 2014
@@ -437,6 +608,11 @@
           "day" : 7,
           "month" : 8,
           "year" : 2019
+        },
+        {
+          "day" : 25,
+          "month" : 8,
+          "year" : 2020
         }
       ],
       "name" : "Chinese Valentine’s Day",
@@ -528,57 +704,107 @@
     {
       "dateRules" : [
         {
-          "day" : 14,
+          "day" : 5,
+          "month" : 2,
+          "year" : 2000
+        },
+        {
+          "day" : 24,
+          "month" : 1,
+          "year" : 2001
+        },
+        {
+          "day" : 12,
+          "month" : 2,
+          "year" : 2002
+        },
+        {
+          "day" : 1,
+          "month" : 2,
+          "year" : 2003
+        },
+        {
+          "day" : 22,
+          "month" : 1,
+          "year" : 2004
+        },
+        {
+          "day" : 9,
+          "month" : 2,
+          "year" : 2005
+        },
+        {
+          "day" : 29,
+          "month" : 1,
+          "year" : 2006
+        },
+        {
+          "day" : 18,
+          "month" : 2,
+          "year" : 2007
+        },
+        {
+          "day" : 7,
+          "month" : 2,
+          "year" : 2008
+        },
+        {
+          "day" : 26,
+          "month" : 1,
+          "year" : 2009
+        },
+        {
+          "day" : 13,
           "month" : 2,
           "year" : 2010
         },
         {
-          "day" : 3,
+          "day" : 2,
           "month" : 2,
           "year" : 2011
         },
         {
-          "day" : 23,
+          "day" : 22,
           "month" : 1,
           "year" : 2012
         },
         {
-          "day" : 10,
+          "day" : 9,
           "month" : 2,
           "year" : 2013
         },
         {
-          "day" : 31,
+          "day" : 30,
           "month" : 1,
           "year" : 2014
         },
         {
-          "day" : 19,
+          "day" : 18,
           "month" : 2,
           "year" : 2015
         },
         {
-          "day" : 8,
+          "day" : 7,
           "month" : 2,
           "year" : 2016
         },
         {
-          "day" : 28,
+          "day" : 27,
           "month" : 1,
           "year" : 2017
         },
         {
-          "day" : 16,
+          "day" : 15,
           "month" : 2,
           "year" : 2018
         },
         {
-          "day" : 5,
+          "day" : 4,
           "month" : 2,
           "year" : 2019
         },
         {
-          "day" : 25,
+          "day" : 24,
           "month" : 1,
           "year" : 2020
         }
@@ -623,7 +849,7 @@
       "dateRules" : [
         {
           "day" : 20,
-          "month" : 3,
+          "month" : 3
         }
       ],
       "name" : "Spring Equinox",

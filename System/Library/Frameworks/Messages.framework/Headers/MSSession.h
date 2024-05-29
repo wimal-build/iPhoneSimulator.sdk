@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  entry in the conversation transcript.
  */
 NS_CLASS_AVAILABLE_IOS(10_0)
-@interface MSSession : NSObject
+@interface MSSession : NSObject <NSSecureCoding>
 @end
 
 NS_ASSUME_NONNULL_END

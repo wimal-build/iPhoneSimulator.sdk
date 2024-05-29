@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class SFTranscription;
 
 // A recognized utterance, corresponding to a segment of recorded audio with speech and containing one or more transcriptions hypotheses
+API_AVAILABLE(ios(10.0))
 @interface SFSpeechRecognitionResult : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly, copy) SFTranscription *bestTranscription;

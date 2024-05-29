@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("aircorsica.com-eticket-fr",function(e){return/^Votre carte d'embarquement Air Corsica/.test(e.subject)},function(e){if(/^Votre carte d'embarquement Air Corsica/.test(e.subject)){var r="fr_FR",t={};t.name="Cher/Ch\xe8re",t.reservationId="Num\xe9ro E-Ticket:",t.flight="Vol:",t.departureAirport="De:",t.arrivalAirport="Vers:";var a=loadHelper("aircorsica.com-eticket-skeleton.js");return a(e,r,t)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/244/307/310","SG6b3a1cf6")]);

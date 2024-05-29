@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .collectionList { margin: 0 0 60.0; tv-line-spacing: 0; }
+
+            .navigationItemButton { color: keyblue; }
+
+            <!-- Up Next Card -->
+            .upNextCard { padding: 0; }
+            .upNextCard_LockupImg { border-radius: small; border-color: rgba(0,0,0,0.16); border-width: 1.0; }
+            .upNextCardTitle { text-transform: uppercase; color: keyblue; text-align: natural; tv-align: left; tv-text-max-lines: 1; }
+            .upNextCardOrganizerImg { tv-position: left; border-radius: small; border-color: rgba(0,0,0,0.16); }
+            .upNextCardOrganizerTitle { color: black; }
+            .upNextCardOrganizerSubtitle { color: systemgray; }
+        </style>
+    </head>
+    
+    <stackTemplate>
+        <navigationItem class="navigationItem">
+            <button class="navigationItemButton" />
+        </navigationItem>
+        
+        <collectionList class="collectionList" />
+
+        <!-- Up Next Card in Watch Now tab -->
+        <upNextCard class="upNextCard">
+            <title class="upNextCardTitle" />
+            <lockup>
+                <img class="upNextCard_LockupImg" />
+                <!-- Use the default lockup overlay -->
+                <organizer>
+                    <img class="upNextCardOrganizerImg"></img>
+                    <title class="upNextCardOrganizerTitle"></title>
+                    <subtitle class="upNextCardOrganizerSubtitle"></subtitle>
+                </organizer>
+            </lockup>
+        </upNextCard>
+        <grid>
+            <upNextCard class="upNextCard upNextCard_Grid">
+                <title class="upNextCardTitle" />
+                <lockup>
+                    <img class="upNextCard_LockupImg upNextCard_LockupImg_Grid" />
+                    <organizer>
+                        <img class="upNextCardOrganizerImg"></img>
+                        <title class="upNextCardOrganizerTitle"></title>
+                        <subtitle class="upNextCardOrganizerSubtitle"></subtitle>
+                    </organizer>
+                </lockup>
+            </upNextCard>
+        </grid>
+    </stackTemplate>
+</document>

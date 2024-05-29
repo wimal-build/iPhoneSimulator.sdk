@@ -9,7 +9,6 @@
 #define INWorkoutGoalUnitType_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INWorkoutGoalUnitType) {
@@ -24,6 +23,6 @@ typedef NS_ENUM(NSInteger, INWorkoutGoalUnitType) {
     INWorkoutGoalUnitTypeHour,
     INWorkoutGoalUnitTypeJoule,
     INWorkoutGoalUnitTypeKiloCalorie,
-};
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INWorkoutGoalUnitType_h

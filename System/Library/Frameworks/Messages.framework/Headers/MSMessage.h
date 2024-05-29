@@ -25,7 +25,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @method     initWithSession:
  @abstract   Initializes a message with a session.
- @see insertMessage:localizedChangeDescription:completionHandler:
+ @see        insertMessage:completionHandler:
  @param      session  The session that new message will join.
  @discussion A message initialized with a session will be updated 
  and moved to the bottom of the conversation transcript when another message created
@@ -50,7 +50,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 
 /*!
  @property   layout
- @abstract   A subclass of to MSMessageLayout.
+ @abstract   A subclass of MSMessageLayout.
  @discussion The MSMessageLayout subclass will be used to construct UI
  representing the message in the conversation transcript.
  */

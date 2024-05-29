@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("first_air-confirmation-en",function(e){return/^Electronic ticket receipt/.test(e.subject)},function(e){if(/^Electronic ticket receipt/.test(e.subject)){var t="en_US",r={};r.reservationId="Reservation code",r.departure="Departure:",r.arrival="Arrival:",r.seat=/(Seat\(s\):)/;var i=loadHelper("first_air-confirmation-skeleton.js");return i(e,t,r)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/244/447/448","SGf291c14b")]);

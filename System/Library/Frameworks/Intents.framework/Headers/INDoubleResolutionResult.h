@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx)
 @interface INDoubleResolutionResult : INIntentResolutionResult
 
-// This resolution result is for when the app extension wants to tell Siri to proceed with a given value. The resolvedValue need not be identical to the input value. If the app extension wants to continue with a 'nil' value, it must use +notRequired.
+// This resolution result is for when the app extension wants to tell Siri to proceed, with a given number. The resolvedValue can be different than the original number. This allows app extensions to apply business logic constraints. For example, the extension could precisely control rounding the value.
+// Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedValue:(double)resolvedValue NS_SWIFT_NAME(success(with:));
 
 // This resolution result is to ask Siri to confirm if this is the double value with which the user wants to continue.

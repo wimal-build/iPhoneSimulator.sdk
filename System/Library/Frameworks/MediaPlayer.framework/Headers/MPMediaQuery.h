@@ -24,12 +24,11 @@ typedef NS_ENUM(NSInteger, MPMediaGrouping) {
     MPMediaGroupingGenre,
     MPMediaGroupingPlaylist,
     MPMediaGroupingPodcastTitle
-} NS_ENUM_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
+} MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0);
 
 // MPMediaQuery represents a collection of items or playlists determined by a chain of MPMediaPredicate objects.
 
-MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMediaQuery : NSObject <NSSecureCoding, NSCopying>
 
 - (instancetype)initWithFilterPredicates:(nullable NSSet<MPMediaPredicate *> *)filterPredicates NS_DESIGNATED_INITIALIZER;
@@ -71,8 +70,7 @@ __TVOS_PROHIBITED
 // MPMediaPredicate is an abstract class that allows filtering media in an MPMediaQuery.
 // See the concrete subclass MPMediaPropertyPredicate for filtering options.
 
-MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMediaPredicate : NSObject <NSSecureCoding> {}
 @end
 
@@ -83,10 +81,9 @@ __TVOS_PROHIBITED
 typedef NS_ENUM(NSInteger, MPMediaPredicateComparison) {
     MPMediaPredicateComparisonEqualTo,
     MPMediaPredicateComparisonContains
-} NS_ENUM_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
+} MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0);
 
-MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMediaPropertyPredicate : MPMediaPredicate
 
 + (MPMediaPropertyPredicate *)predicateWithValue:(nullable id)value forProperty:(NSString *)property; // comparisonType is MPMediaPredicateComparisonEqualTo

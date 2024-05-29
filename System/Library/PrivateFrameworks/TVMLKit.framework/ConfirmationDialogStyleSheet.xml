@@ -1,0 +1,42 @@
+<document>
+    <head>
+        <style>
+            .template {
+                border-radius: 9.0;
+                height: 200;
+                width: 200;
+            }
+            
+            .badge {
+                height: 76;
+                width: 76;
+                margin: 50 61 0 61;
+            }
+            
+            .title {
+                color: rgba(0, 0, 0, 0.64);
+                font-size: 17;
+                font-weight: semibold;
+                margin: 21 0 0 0;
+                text-align: center;                
+                tv-text-max-lines: 1;
+            }
+            
+            .text {
+                color: rgba(0, 0, 0, 0.64);
+                font-size: 12;
+                font-weight: regular;
+                margin: 8 8 0 8;
+                text-align: center;
+                tv-text-max-lines: 2;
+            }
+        </style>
+    </head>
+    <confirmationDialogTemplate class="template">
+        <card>
+            <badge class="badge" />
+            <title class="title" />
+            <text class="text" />
+        </card>
+    </confirmationDialogTemplate>
+</document>

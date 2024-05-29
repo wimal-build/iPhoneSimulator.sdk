@@ -4,6 +4,11 @@
 <dict>
 	<key>Label</key>
 	<string>com.apple.imautomatichistorydeletionagent</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.private.alloy.madrid.healthcheck-idswake</key>
+		<true/>
+	</dict>
 	<key>LaunchEvents</key>
 	<dict>
 		<key>com.apple.notifyd.matching</key>

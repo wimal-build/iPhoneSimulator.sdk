@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .template {
+                padding: 52 22 0;
+                margin: 0 0 22;
+                background-color: transparent;
+            }
+            .title {
+                tv-text-style: headline;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                max-width: 370;
+                tv-text-max-lines: 4;
+            }
+            .description {
+                tv-text-style: body;
+                color: rgb(255, 255, 255);
+                tv-text-max-lines: 6;
+                text-align: center;
+                max-width: 370;
+                margin: 22 0 0;
+            }
+            .text {
+                tv-text-style: caption2;
+                color: rgb(255, 255, 255);
+                tv-text-max-lines: 2;
+                text-align: center;
+                max-width: 370;
+                margin: 0 0 21;
+            }
+            @media tv-template and (tv-theme:light) {
+                .title {
+                    color: rgb(0, 0, 0);
+                }
+                .description {
+                    color: rgb(0, 0, 0);
+                }
+                .text {
+                    color: rgb(0, 0, 0);
+                }
+            }
+        </style>
+    </head>
+    <alertTemplate class="template">
+        <title class="title"/>
+        <description class="description"/>
+        <button class="baseButton rowButton">
+            <text class="baseButtonText" />
+            <img class="baseButtonImg"/>
+            <badge class="baseButtonBadge" />
+        </button>
+        <text class="text"/>
+    </alertTemplate>
+</document>

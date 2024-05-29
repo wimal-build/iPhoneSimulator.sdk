@@ -22,25 +22,24 @@ typedef NS_ENUM(NSInteger, MPMusicPlaybackState) {
     MPMusicPlaybackStateInterrupted,
     MPMusicPlaybackStateSeekingForward,
     MPMusicPlaybackStateSeekingBackward
-} __TVOS_PROHIBITED;
+} MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0);
 
 typedef NS_ENUM(NSInteger, MPMusicRepeatMode) {
     MPMusicRepeatModeDefault, // the user's preference for repeat mode
     MPMusicRepeatModeNone,
     MPMusicRepeatModeOne,
     MPMusicRepeatModeAll
-} __TVOS_PROHIBITED;
+} MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0);
 
 typedef NS_ENUM(NSInteger, MPMusicShuffleMode) {
     MPMusicShuffleModeDefault, // the user's preference for shuffle mode
     MPMusicShuffleModeOff,
     MPMusicShuffleModeSongs,
     MPMusicShuffleModeAlbums
-} __TVOS_PROHIBITED;
+} MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0);
 
 // MPMusicPlayerController allows playback of MPMediaItems through the Music application.
-MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMusicPlayerController : NSObject <MPMediaPlayback>
 
 /// Playing media items with the applicationMusicPlayer will restore the user's Music state after the application quits.

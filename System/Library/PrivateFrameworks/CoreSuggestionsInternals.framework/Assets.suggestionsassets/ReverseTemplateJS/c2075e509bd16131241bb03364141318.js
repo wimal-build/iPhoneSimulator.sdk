@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("eventregist.com-invitation-jp",function(e){return!0},function(e){if(!/\u3042\u306a\u305f\u306b\u4e0b\u8a18\u30a4\u30d9\u30f3\u30c8\u3078\u306e\u62db\u5f85\u304c\u5c4a\u304d\u307e\u3057\u305f\u3002/.test(e.html))return CONTINUE;var t="ja_JP",n={};n.dates="\u958b\u50ac\u65e5\u6642";var r=loadHelper("eventregist.com-invitation-skeleton.js");return r(e,t,n)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/980/985/986","SG75d870f3")]);

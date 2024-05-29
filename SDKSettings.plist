@@ -3,13 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CanonicalName</key>
-	<string>iphonesimulator10.1</string>
+	<string>iphonesimulator10.2</string>
 	<key>CustomProperties</key>
 	<dict/>
 	<key>DefaultDeploymentTarget</key>
-	<string>10.1</string>
+	<string>10.2</string>
 	<key>DefaultProperties</key>
 	<dict>
+		<key>AD_HOC_CODE_SIGNING_ALLOWED</key>
+		<string>YES</string>
+		<key>CODE_SIGNING_REQUIRED</key>
+		<string>YES</string>
+		<key>CODE_SIGN_ENTITLEMENTS</key>
+		<string></string>
+		<key>DEAD_CODE_STRIPPING</key>
+		<string>YES</string>
 		<key>DEFAULT_COMPILER</key>
 		<string>com.apple.compilers.llvm.clang.1_0</string>
 		<key>DEPLOYMENT_TARGET_SUGGESTED_VALUES</key>
@@ -25,33 +33,34 @@
 			<string>9.3</string>
 			<string>10.0</string>
 			<string>10.1</string>
+			<string>10.2</string>
 		</array>
+		<key>ENTITLEMENTS_REQUIRED</key>
+		<string>YES</string>
 		<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-		<string>10.1</string>
+		<string>10.2</string>
 		<key>PLATFORM_NAME</key>
 		<string>iphonesimulator</string>
-		<key>PLATFORM_VERSION_AVAILABILITY_H_FORMAT</key>
-		<string>100100</string>
 		<key>SUPPORTED_DEVICE_FAMILIES</key>
 		<string>1,2</string>
 	</dict>
 	<key>DisplayName</key>
-	<string>Simulator - iOS 10.1</string>
+	<string>Simulator - iOS 10.2</string>
 	<key>DocSetFeedName</key>
-	<string>iOS 10.1</string>
+	<string>iOS 10.2</string>
 	<key>DocSetFeedURL</key>
-	<string>http://developer.apple.com/rss/com.apple.adc.documentation.AppleiPhone10_1.atom</string>
+	<string>http://developer.apple.com/rss/com.apple.adc.documentation.AppleiPhone10_2.atom</string>
 	<key>IsBaseSDK</key>
 	<string>YES</string>
 	<key>MaximumDeploymentTarget</key>
-	<string>10.1.99</string>
+	<string>10.2.99</string>
 	<key>MinimalDisplayName</key>
-	<string>Simulator - 10.1</string>
+	<string>Simulator - 10.2</string>
 	<key>Toolchains</key>
 	<array>
-		<string>com.apple.dt.toolchain.iOS10_1</string>
+		<string>com.apple.dt.toolchain.iOS10_2</string>
 	</array>
 	<key>Version</key>
-	<string>10.1</string>
+	<string>10.2</string>
 </dict>
 </plist>

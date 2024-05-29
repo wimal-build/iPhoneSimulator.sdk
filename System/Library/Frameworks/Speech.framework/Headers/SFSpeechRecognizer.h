@@ -25,8 +25,9 @@ typedef NS_ENUM(NSInteger, SFSpeechRecognizerAuthorizationStatus) {
     SFSpeechRecognizerAuthorizationStatusDenied,
     SFSpeechRecognizerAuthorizationStatusRestricted,
     SFSpeechRecognizerAuthorizationStatusAuthorized,
-};
+} API_AVAILABLE(ios(10.0));
 
+API_AVAILABLE(ios(10.0))
 @interface SFSpeechRecognizer : NSObject
 
 // Locales which support speech recognition.
@@ -64,6 +65,7 @@ typedef NS_ENUM(NSInteger, SFSpeechRecognizerAuthorizationStatus) {
 
 @end
 
+API_AVAILABLE(ios(10.0))
 @protocol SFSpeechRecognizerDelegate <NSObject>
 @optional
 

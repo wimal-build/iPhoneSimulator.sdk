@@ -12,31 +12,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx)
 @interface INRideDriver : INPerson <NSCopying, NSSecureCoding>
 
-- (instancetype)initWithPersonHandle:(INPersonHandle *)personHandle
-                nameComponents:(nullable NSPersonNameComponents *)nameComponents
-                   displayName:(nullable NSString *)displayName
-                         image:(nullable INImage *)image
-                        rating:(nullable NSString *)rating
-                   phoneNumber:(nullable NSString *)phoneNumber NS_DESIGNATED_INITIALIZER;
-
-- (instancetype)initWithHandle:(NSString *)handle
-                   displayName:(nullable NSString *)displayName
-                         image:(nullable INImage *)image
-                        rating:(nullable NSString *)rating
-                   phoneNumber:(nullable NSString *)phoneNumber NS_DEPRECATED(10_12, 10_12, 10_0, 10_0, "Use the designated initializer instead");
-
-- (instancetype)initWithHandle:(NSString *)handle
-                nameComponents:(NSPersonNameComponents *)nameComponents
-                         image:(nullable INImage *)image
-                        rating:(nullable NSString *)rating
-                   phoneNumber:(nullable NSString *)phoneNumber NS_DEPRECATED(10_12, 10_12, 10_0, 10_0, "Use the designated initializer instead");
-
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *rating;
-
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *phoneNumber;
 
-@end
+- (instancetype)initWithPhoneNumber:(NSString *)phoneNumber
+                     nameComponents:(nullable NSPersonNameComponents *)nameComponents
+                        displayName:(nullable NSString *)displayName
+                              image:(nullable INImage *)image
+                             rating:(nullable NSString *)rating NS_DESIGNATED_INITIALIZER API_AVAILABLE(ios(10.2)) API_UNAVAILABLE(macosx);
 
+@end
+ 
 NS_ASSUME_NONNULL_END

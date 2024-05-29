@@ -18,8 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 // MPMediaPickerController is a UIViewController for visually selecting media items.
 // To display it, present it modally on an existing view controller.
 
-MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMediaPickerController : UIViewController
 
 - (instancetype)initWithMediaTypes:(MPMediaType)mediaTypes NS_DESIGNATED_INITIALIZER;

@@ -22,8 +22,9 @@ typedef NS_OPTIONS(NSUInteger, UICloudSharingPermissionOptions) {
 
     UICloudSharingPermissionAllowReadOnly = 1 << 2,  // The user is allowed to grant participants read-only permissions
     UICloudSharingPermissionAllowReadWrite = 1 << 3, // The user is allowed to grant participants read/write permissions
-} NS_ENUM_AVAILABLE_IOS(10_0);
+} NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
+__TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @protocol UICloudSharingControllerDelegate <NSObject>
 
 - (void)cloudSharingController:(UICloudSharingController *)csc failedToSaveShareWithError:(NSError *)error;
@@ -42,7 +43,7 @@ typedef NS_OPTIONS(NSUInteger, UICloudSharingPermissionOptions) {
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UICloudSharingController : UIViewController
+NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UICloudSharingController : UIViewController
 
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;

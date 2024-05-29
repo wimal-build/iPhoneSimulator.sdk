@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .modalPageTemplate {
+                background-color: rgb(255, 255, 255);
+                border-radius: 20px;
+                width: 524px;
+                height: 547px;
+            }
+            
+            .modalPageBackground {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            
+            .collection {
+                padding: 24px;
+            }
+            
+            .collectionHeader {
+            }
+            
+            .collectionHeaderTitle {
+                tv-text-style: title1;
+                font-weight: heavy;
+            }
+            
+            .shelf {
+            }
+            
+            .grid {
+            }
+        </style>
+    </head>
+    
+    <modalPageTemplate class="modalPageTemplate">
+        <background class="modalPageBackground">
+        </background>
+        
+        <!-- Common header styling -->
+        <header class="collectionHeader">
+            <title class="collectionHeaderTitle"></title>
+        </header>
+        
+        <shelf class="collection shelf">
+        </shelf>
+        
+        <grid class="collection grid">
+        </grid>
+        
+        <collectionList class="collectionList" />
+    </modalPageTemplate>
+</document>

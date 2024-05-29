@@ -1,0 +1,32 @@
+<document>
+	<head>
+		<style>
+            .navigationItemButton {
+                color: keyblue;
+            }
+            .messageText {
+                max-width: 370;
+                tv-text-max-lines: 2;
+                tv-text-style: body;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .collectionList {
+                margin: 0 0 60;
+                tv-line-spacing: 0;
+            }
+		</style>
+	</head>
+	<searchTemplate class="searchTemplate">
+        <navigationItem class="navigationItem">
+            <button class="navigationItemButton"/>
+        </navigationItem>
+        
+		<searchField class="searchField"/>
+
+        <text class="messageText"/>
+        
+        <collectionList class="collectionList" />
+	</searchTemplate>
+</document>

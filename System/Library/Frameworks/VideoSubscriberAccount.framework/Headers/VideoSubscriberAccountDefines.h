@@ -5,7 +5,7 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import <Availability.h>
+#import <os/availability.h>
 #import <Foundation/NSObjCRuntime.h>
 
 #define VS_EXPORT __attribute__((visibility ("default")))
@@ -15,4 +15,3 @@
 #else
 #define VS_EXTERN extern VS_EXPORT
 #endif
-

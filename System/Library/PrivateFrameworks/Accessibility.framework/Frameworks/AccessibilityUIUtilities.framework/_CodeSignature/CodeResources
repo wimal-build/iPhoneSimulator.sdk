@@ -13,6 +13,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Dutch.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DY7CtwBHMNgZRGXaQfVQYPF4dVc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -27,6 +36,15 @@
 			<key>hash</key>
 			<data>
 			d3S5OfOAqhr8B4eEUrbSWOGhfPE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DjzjCOhUM/ny5zZX48u5IsEF8iM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -49,6 +67,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GW+dRGAx9zcQb8kGIXNfMUiGqZ0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -67,6 +94,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>German.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJPMyz0Kn3E5RtxB6JNEe8YdNDo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>German.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -78,13 +114,22 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		j35J2Nfv6RHpAvtf4Ogu01PaEEI=
+		+LJKe+dYcjJ1d6GcaBiuzGDxfDA=
 		</data>
 		<key>Italian.lproj/AXUILocalizedStrings.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			RVCY9VSz1Rtyuym1A/K9qTb3H5M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Italian.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kz2cVCZkY9/5gPuFaXLPn54is9w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,6 +152,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Japanese.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UV4YVR9Lrtnxq+rOSoV47neKLGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Japanese.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -121,6 +175,15 @@
 			<key>hash</key>
 			<data>
 			tMg8dTzy6h1s7HhboK5tRgNNrDY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Spanish.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w8GVenpXb3rN3vu7Q7IukN1eEc0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -143,6 +206,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+cSjKRPgFliOkK/xCwMCefazdt8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -157,6 +229,15 @@
 			<key>hash</key>
 			<data>
 			bDTaYNksubyeMLCsMjTlnmlvwdU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pk06y5u374GYjhed3BqIwVmbuXc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -179,6 +260,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>cs.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sx4FIQSz9bQvzF7NviIAetFSzCI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -193,6 +283,15 @@
 			<key>hash</key>
 			<data>
 			kodbhCxSF4cmrAe8FN0H62T1Yhk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9BkulrHN/WIh6g8Ucs0xQj7L2kk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,6 +314,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>el.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZPEL3mOiIFiJRgJIl1dEKJolUDI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>el.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -229,6 +337,15 @@
 			<key>hash</key>
 			<data>
 			QnCI4su3ziF+Pm+IIPCqttOkKq8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BYZWyV1m+Iv5aWusaw6x4BS7UbE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,6 +368,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UZulP6kBdq+3WE9Nn21tT22O/is=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -265,6 +391,15 @@
 			<key>hash</key>
 			<data>
 			T6k/M/OVM6G4OPQ7KLWeb5y7BMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LmWVLcufjzWq/L+jsMKtk5DjV6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -296,6 +431,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wdl8Egx/zNhMdQuvvI+RnCqh/r0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -310,6 +454,15 @@
 			<key>hash</key>
 			<data>
 			Atze9bsAwVDZe9qf8xjsqYeUxTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VesDgQsMRI3l18Bs0RbC3Iy0q1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -332,6 +485,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kbdwlWoNK+Td4oLtxIuBtAxOIVo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -346,6 +508,15 @@
 			<key>hash</key>
 			<data>
 			UlC87LWgj0JN7/W04UqHD9HDmVw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rYHSpr4PWxaqCmSAo5lx3NvcG2A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -368,6 +539,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ts1NQlwQkGLPcv2hoN5h3VJ0nqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -382,6 +562,15 @@
 			<key>hash</key>
 			<data>
 			ugR1qa7A06173NJoL8KbT+Y8Nsw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EgyntzpE8Sn2pjsgWAr7kU2o+sU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -404,6 +593,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jraI/fkbDPsDGKaz3CHqwZPNF6s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -418,6 +616,15 @@
 			<key>hash</key>
 			<data>
 			CFuBzJm2LEQWAPuswe9SSbYGFCQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aNrQwugjgSsbybiRLWeSjz/EGZA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -440,6 +647,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y6XUVbIGzU7a3kcN7mQpzgJ+vUI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -454,6 +670,15 @@
 			<key>hash</key>
 			<data>
 			q1RBeR+TuZeLcLO81VhSXD3aEn0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RNin5NOEehfWp6rkiG3uePMUu+w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -476,6 +701,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9GF/v3+yy+xjQCtG0qYhFWzsD88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -490,6 +724,15 @@
 			<key>hash</key>
 			<data>
 			Svi5TLiwyVdGv4bZpGq3j+3HzcU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4BNUjzQNVQSERbuNm6POCPm1Pp0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -512,6 +755,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gcvSvpeVt+su4VWFirqOkWkaaIk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -526,6 +778,15 @@
 			<key>hash</key>
 			<data>
 			5vCcOwYRzTKhzpHUcSoVr6KzSzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a1qKIIWZGUIqS/DZa07whzZjPpg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -548,6 +809,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yue0t4RdwPKN6/lKOhy5C0SHvr8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -562,6 +832,15 @@
 			<key>hash</key>
 			<data>
 			wWzOY/iO/T6aEkcvHVhzeypNoRo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YqK6HvkebcGgdOOo+f0uPA5BBfM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -584,6 +863,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HMnwqufXpIQm4fklQJsJyBqUOR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -598,6 +886,15 @@
 			<key>hash</key>
 			<data>
 			o0bO7QTj3JDZoRf4qQvDiN7Lh5U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SRupVKUoxwF64730/cT6obUM/q4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -620,6 +917,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x8yDWPcfha1tSG3ug0L2k74IA44=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -634,6 +940,15 @@
 			<key>hash</key>
 			<data>
 			j8bXRkqQrxz2MARZ/cy5svojR2w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N1YKWVJxn9EkDX02K/rjSL8YDWY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -656,6 +971,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WsypzfyIErpTSv11aKHgVPiEUYc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -670,6 +994,15 @@
 			<key>hash</key>
 			<data>
 			OX0RrDAGfEgKfoCay1p1aptocyQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mSBF1ma0ouOQimAXF7yVYNYI65g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -692,6 +1025,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M62zj7qf+YpKR4P79dZpVqY8Zoo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -706,6 +1048,15 @@
 			<key>hash</key>
 			<data>
 			qavx6/Jf5qPUuEwWruf2b0cImOU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+3eXo8BEEjckgnnoeyFt50yKNfM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -731,6 +1082,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Dutch.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DY7CtwBHMNgZRGXaQfVQYPF4dVc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Dutch.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -745,6 +1105,15 @@
 			<key>hash</key>
 			<data>
 			d3S5OfOAqhr8B4eEUrbSWOGhfPE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>English.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DjzjCOhUM/ny5zZX48u5IsEF8iM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -767,6 +1136,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>French.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GW+dRGAx9zcQb8kGIXNfMUiGqZ0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>French.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -781,6 +1159,15 @@
 			<key>hash</key>
 			<data>
 			frAya94q1kSQv5GD3eoDRCmhpG0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJPMyz0Kn3E5RtxB6JNEe8YdNDo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -803,6 +1190,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Italian.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Kz2cVCZkY9/5gPuFaXLPn54is9w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -817,6 +1213,15 @@
 			<key>hash</key>
 			<data>
 			pNi7e/4TC05BRHI+TbzMVkImLHg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UV4YVR9Lrtnxq+rOSoV47neKLGo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -839,6 +1244,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Spanish.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w8GVenpXb3rN3vu7Q7IukN1eEc0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Spanish.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -853,6 +1267,15 @@
 			<key>hash</key>
 			<data>
 			nTHBf/+ByhgH6Bw2Ek9Hzmt18Jo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+cSjKRPgFliOkK/xCwMCefazdt8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -875,6 +1298,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ca.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pk06y5u374GYjhed3BqIwVmbuXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ca.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -889,6 +1321,15 @@
 			<key>hash</key>
 			<data>
 			XUu3idxG/ap+wKJi/a/rdrsqVqY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sx4FIQSz9bQvzF7NviIAetFSzCI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -911,6 +1352,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>da.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9BkulrHN/WIh6g8Ucs0xQj7L2kk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>da.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -925,6 +1375,15 @@
 			<key>hash</key>
 			<data>
 			2GxMjE8HS0H4RfPFo5NXyqpGLhw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZPEL3mOiIFiJRgJIl1dEKJolUDI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -947,6 +1406,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BYZWyV1m+Iv5aWusaw6x4BS7UbE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -965,6 +1433,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_GB.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UZulP6kBdq+3WE9Nn21tT22O/is=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -979,6 +1456,15 @@
 			<key>hash</key>
 			<data>
 			T6k/M/OVM6G4OPQ7KLWeb5y7BMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es_419.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LmWVLcufjzWq/L+jsMKtk5DjV6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1010,6 +1496,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>fi.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wdl8Egx/zNhMdQuvvI+RnCqh/r0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1024,6 +1519,15 @@
 			<key>hash</key>
 			<data>
 			Atze9bsAwVDZe9qf8xjsqYeUxTA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VesDgQsMRI3l18Bs0RbC3Iy0q1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1046,6 +1550,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>he.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kbdwlWoNK+Td4oLtxIuBtAxOIVo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>he.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1060,6 +1573,15 @@
 			<key>hash</key>
 			<data>
 			UlC87LWgj0JN7/W04UqHD9HDmVw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rYHSpr4PWxaqCmSAo5lx3NvcG2A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1082,6 +1604,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>hr.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ts1NQlwQkGLPcv2hoN5h3VJ0nqM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1096,6 +1627,15 @@
 			<key>hash</key>
 			<data>
 			ugR1qa7A06173NJoL8KbT+Y8Nsw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EgyntzpE8Sn2pjsgWAr7kU2o+sU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1118,6 +1658,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>id.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jraI/fkbDPsDGKaz3CHqwZPNF6s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1132,6 +1681,15 @@
 			<key>hash</key>
 			<data>
 			CFuBzJm2LEQWAPuswe9SSbYGFCQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aNrQwugjgSsbybiRLWeSjz/EGZA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1154,6 +1712,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ms.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y6XUVbIGzU7a3kcN7mQpzgJ+vUI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1168,6 +1735,15 @@
 			<key>hash</key>
 			<data>
 			q1RBeR+TuZeLcLO81VhSXD3aEn0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RNin5NOEehfWp6rkiG3uePMUu+w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1190,6 +1766,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pl.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9GF/v3+yy+xjQCtG0qYhFWzsD88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pl.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1204,6 +1789,15 @@
 			<key>hash</key>
 			<data>
 			Svi5TLiwyVdGv4bZpGq3j+3HzcU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4BNUjzQNVQSERbuNm6POCPm1Pp0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1226,6 +1820,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>pt_PT.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gcvSvpeVt+su4VWFirqOkWkaaIk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pt_PT.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1240,6 +1843,15 @@
 			<key>hash</key>
 			<data>
 			5vCcOwYRzTKhzpHUcSoVr6KzSzU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a1qKIIWZGUIqS/DZa07whzZjPpg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1262,6 +1874,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ru.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yue0t4RdwPKN6/lKOhy5C0SHvr8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ru.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1276,6 +1897,15 @@
 			<key>hash</key>
 			<data>
 			wWzOY/iO/T6aEkcvHVhzeypNoRo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YqK6HvkebcGgdOOo+f0uPA5BBfM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1298,6 +1928,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HMnwqufXpIQm4fklQJsJyBqUOR8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1312,6 +1951,15 @@
 			<key>hash</key>
 			<data>
 			o0bO7QTj3JDZoRf4qQvDiN7Lh5U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SRupVKUoxwF64730/cT6obUM/q4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1334,6 +1982,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x8yDWPcfha1tSG3ug0L2k74IA44=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1348,6 +2005,15 @@
 			<key>hash</key>
 			<data>
 			j8bXRkqQrxz2MARZ/cy5svojR2w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N1YKWVJxn9EkDX02K/rjSL8YDWY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1370,6 +2036,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>vi.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WsypzfyIErpTSv11aKHgVPiEUYc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1384,6 +2059,15 @@
 			<key>hash</key>
 			<data>
 			OX0RrDAGfEgKfoCay1p1aptocyQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mSBF1ma0ouOQimAXF7yVYNYI65g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1406,6 +2090,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M62zj7qf+YpKR4P79dZpVqY8Zoo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1420,6 +2113,15 @@
 			<key>hash</key>
 			<data>
 			qavx6/Jf5qPUuEwWruf2b0cImOU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/Accessibility.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+3eXo8BEEjckgnnoeyFt50yKNfM=
 			</data>
 			<key>optional</key>
 			<true/>

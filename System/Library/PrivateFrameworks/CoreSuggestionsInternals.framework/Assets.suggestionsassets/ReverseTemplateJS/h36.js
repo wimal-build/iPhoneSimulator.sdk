@@ -1,2 +1,2 @@
 // Copyright 2014 Apple Inc.  All Rights Reserved.
-(function(){var e=loadHelper("en_us.js")();return e.subject=[/\u5df2\u88ab\u53d6\u6d88$/,/\u78ba\u8a8d$/,/\u7684\u9810\u8a02\u5df2\u88ab\u7de8\u8f2f$/],e.cancel=[/\u53d6\u6d88/],e.nameInSubject=[/\u5728(.*?)\uff0c.*\u7684\u9810\u8a02\u78ba\u8a8d/i,/\u4f60\u5728(.*?)\uff0c.*\u7684\u9810\u8a02\u5df2\u88ab\u53d6\u6d88/i,/\u4f60\u5728(.*?)\u7684\u9810\u8a02\u5df2\u88ab\u7de8\u8f2f/i],e.partySize=[/(\d{1,2}) \u4eba\u4eba/i],e}).call();
+(function(){return{Confirmed:"http://schema.org/ReservationConfirmed",Pending:"http://schema.org/ReservationConfirmed",Cancelled:"http://schema.org/ReservationCancelled",NoEvent:"http://apple.com/NoEvent"}}).call();

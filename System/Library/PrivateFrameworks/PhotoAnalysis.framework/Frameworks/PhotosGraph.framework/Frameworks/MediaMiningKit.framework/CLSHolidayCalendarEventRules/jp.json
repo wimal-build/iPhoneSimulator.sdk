@@ -1,9 +1,6 @@
 {
   "events" : [
     {
-      "localizations" : {
-        "en" : "New Year’s Day"
-      },
       "dateRules" : [
         {
           "day" : 1,
@@ -24,9 +21,6 @@
       "uuid" : "3887F46B-C56F-4D76-83BA-751DEE784611"
     },
     {
-      "localizations" : {
-        "en" : "Coming of Age Day"
-      },
       "dateRules" : [
         {
           "month" : 1,
@@ -36,7 +30,7 @@
       ],
       "name" : "Coming of Age Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 3,
         "mustContainMe" : false,
@@ -49,9 +43,6 @@
       "uuid" : "D22FA577-A2F8-4FAB-AEF7-002E8FE75CAA"
     },
     {
-      "localizations" : {
-        "en" : "Foundation Day"
-      },
       "dateRules" : [
         {
           "day" : 11,
@@ -73,9 +64,6 @@
       "uuid" : "BAEEAFE8-7B53-4D22-BA32-4E1BA0F994E9"
     },
     {
-      "localizations" : {
-        "en" : "White Day"
-      },
       "dateRules" : [
         {
           "day" : 14,
@@ -84,7 +72,7 @@
       ],
       "name" : "White Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 3,
         "mustContainMe" : false,
@@ -96,9 +84,6 @@
       "uuid" : "D4B094CB-3342-4246-B8B0-4EE935E428D6"
     },
     {
-      "localizations" : {
-        "en" : "Shōwa Day"
-      },
       "dateRules" : [
         {
           "day" : 29,
@@ -107,7 +92,7 @@
       ],
       "name" : "Showa Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 7,
         "mustContainMe" : false,
@@ -127,7 +112,7 @@
       ],
       "name" : "Constitution Memorial Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 7,
         "mustContainMe" : false,
@@ -139,9 +124,6 @@
       "uuid" : "67CB2CA9-7A47-429E-BA1B-1A6761FF87CE"
     },
     {
-      "localizations" : {
-        "en" : "Greenery Day"
-      },
       "dateRules" : [
         {
           "day" : 4,
@@ -150,7 +132,7 @@
       ],
       "name" : "Greenery Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{0, 5}",
         "peopleTrait" : 7,
         "mustContainMe" : false,
@@ -162,9 +144,6 @@
       "uuid" : "6DFC7AFE-8EA8-464F-B307-DA4E6D781B6E"
     },
     {
-      "localizations" : {
-        "en" : "Children’s Day"
-      },
       "dateRules" : [
         {
           "day" : 5,
@@ -185,9 +164,6 @@
       "uuid" : "BE61DF88-A468-4EBE-8FAC-DFD9BA7C3FA2"
     },
     {
-      "localizations" : {
-        "en" : "Mother’s Day"
-      },
       "dateRules" : [
         {
           "month" : 5,
@@ -209,9 +185,6 @@
       "uuid" : "9C30FFBD-01AC-4B12-9A47-41560E0D22B5"
     },
     {
-      "localizations" : {
-        "en" : "Father’s Day"
-      },
       "dateRules" : [
         {
           "month" : 6,
@@ -233,9 +206,6 @@
       "uuid" : "3DC75843-0296-41BC-A3D1-D7D4B4B762BE"
     },
     {
-      "localizations" : {
-        "en" : "Tanabata Star Festival"
-      },
       "dateRules" : [
         {
           "day" : 7,
@@ -244,7 +214,7 @@
       ],
       "name" : "Tanabata Star Festival",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 3,
         "mustContainMe" : false,
@@ -256,9 +226,6 @@
       "uuid" : "FF3F610D-807E-4BFE-8A5B-4B22DABA427F"
     },
     {
-      "localizations" : {
-        "en" : "Marine Day"
-      },
       "dateRules" : [
         {
           "month" : 7,
@@ -268,7 +235,7 @@
       ],
       "name" : "Marine Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 7,
         "mustContainMe" : false,
@@ -282,9 +249,6 @@
       "uuid" : "BEA2219B-583E-444D-AB74-BEC02F1F439B"
     },
     {
-      "localizations" : {
-        "en" : "Mountain Day"
-      },
       "dateRules" : [
         {
           "day" : 11,
@@ -293,7 +257,7 @@
       ],
       "name" : "Mountain Day",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 7,
         "mustContainMe" : false,
@@ -309,9 +273,6 @@
       "uuid" : "260F7AD4-BB1E-407F-B76D-CBE45EAECD0C"
     },
     {
-      "localizations" : {
-        "en" : "Obon"
-      },
       "dateRules" : [
         {
           "day" : 13,
@@ -320,7 +281,7 @@
       ],
       "name" : "Obon",
       "traits" : {
-        "locationTrait" : 0,
+        "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
         "peopleTrait" : 3,
         "mustContainMe" : false,
@@ -334,9 +295,6 @@
       "uuid" : "C6DB87F7-1C8B-478D-AC9C-E06F68C60A43"
     },
     {
-      "localizations" : {
-        "en" : "Respect-for-the-Aged Day"
-      },
       "dateRules" : [
         {
           "month" : 9,
@@ -359,9 +317,6 @@
       "uuid" : "F00D8855-2C65-4860-B4B8-2CFB18E34094"
     },
     {
-      "localizations" : {
-        "en" : "Autumnal Equinox Day"
-      },
       "dateRules" : [
         {
           "day" : 23,
@@ -419,7 +374,7 @@
           "year" : 2020
         }
       ],
-      "name" : "Autumnal Equinox Day",
+      "name" : "Autumnal Equinox",
       "traits" : {
         "locationTrait" : 7,
         "peopleCountRange" : "{1, 5}",
@@ -433,9 +388,6 @@
       "uuid" : "EC231DF0-7B81-4321-B030-9EC9F6380C01"
     },
     {
-      "localizations" : {
-        "en" : "Halloween"
-      },
       "dateRules" : [
         {
           "day" : 31,
@@ -459,9 +411,6 @@
       "uuid" : "207F5D78-175B-4A88-B31C-5ADC2CD59CA1"
     },
     {
-      "localizations" : {
-        "en" : "Shichi-go-san"
-      },
       "dateRules" : [
         {
           "day" : 15,
@@ -483,9 +432,6 @@
       "uuid" : ""
     },
     {
-      "localizations" : {
-        "en" : "Christmas Eve"
-      },
       "dateRules" : [
         {
           "day" : 24,
@@ -511,9 +457,6 @@
       "uuid" : "59B0D073-7962-45BF-B84D-D1B67ED2D6A6"
     },
     {
-      "localizations" : {
-        "en" : "Christmas Day"
-      },
       "dateRules" : [
         {
           "day" : 25,
@@ -539,9 +482,6 @@
       "uuid" : "0DF12300-8A09-4F8E-A579-3E551D883FB5"
     },
     {
-      "localizations" : {
-        "en" : "New Year’s Eve"
-      },
       "dateRules" : [
         {
           "day" : 31,
@@ -563,6 +503,363 @@
         ]
       },
       "uuid" : "258BEE9E-0E81-4DD4-BF84-0331005C1471"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2000
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2001
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2002
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2003
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2004
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2005
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2006
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2007
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2008
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2009
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2010
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2011
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2012
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2013
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2014
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2015
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2016
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2017
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2018
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2019
+        },
+        {
+          "day" : 20,
+          "month" : 3,
+          "year" : 2020
+        }
+      ],
+      "name" : "Spring Equinox",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "53656E82-D448-4137-8CA5-8DA2B8BCACE8"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2005
+        },
+        {
+          "day" : 22,
+          "month" : 3,
+          "year" : 2010
+        },
+        {
+          "day" : 21,
+          "month" : 3,
+          "year" : 2016
+        }
+      ],
+      "name" : "Spring Equinox",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+
+        ]
+      },
+      "uuid" : "53656E82-D448-4137-8CA5-8DA2B8BCACE8"
+    },
+    {
+      "dateRules" : [
+        {
+          "month" : 10,
+          "weekday" : 2,
+          "weekdayOrdinal" : 2
+        }
+      ],
+      "name" : "Health and Sports Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "sports"
+        ]
+      },
+      "uuid" : "85AB0203-3483-4971-A05F-841EAD9842BB"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 3,
+          "month" : 11
+        }
+      ],
+      "name" : "Culture Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "F92AEE4A-D381-4727-A66F-1FE72B07A32F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 4,
+          "month" : 11,
+          "year" : 2002
+        },
+        {
+          "day" : 4,
+          "month" : 11,
+          "year" : 2013
+        },
+        {
+          "day" : 4,
+          "month" : 11,
+          "year" : 2019
+        },
+      ],
+      "name" : "Culture Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "F92AEE4A-D381-4727-A66F-1FE72B07A32F"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 11,
+        },
+      ],
+      "name" : "Labor Thanksgiving Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "6DAA3A51-3239-4122-96FE-BABD806EFF7B"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 11,
+          "year" : 2003
+        },
+        {
+          "day" : 24,
+          "month" : 11,
+          "year" : 2008
+        },
+        {
+          "day" : 24,
+          "month" : 11,
+          "year" : 2014
+        },
+      ],
+      "name" : "Labor Thanksgiving Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "6DAA3A51-3239-4122-96FE-BABD806EFF7B"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 23,
+          "month" : 12
+        },
+      ],
+      "name" : "Emperor’s Birthday",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "C5EE688A-190E-431D-853F-765399E8CD66"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 24,
+          "month" : 12,
+          "year" : 2001
+        },
+        {
+          "day" : 24,
+          "month" : 12,
+          "year" : 2007
+        },
+        {
+          "day" : 24,
+          "month" : 12,
+          "year" : 2012
+        },
+        {
+          "day" : 24,
+          "month" : 12,
+          "year" : 2018
+        }
+      ],
+      "name" : "Emperor’s Birthday",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 5}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "culture"
+        ]
+      },
+      "uuid" : "C5EE688A-190E-431D-853F-765399E8CD66"
+    },
+    {
+      "dateRules" : [
+        {
+          "day" : 14,
+          "month" : 2
+        }
+      ],
+      "name" : "Valentine’s Day",
+      "traits" : {
+        "locationTrait" : 7,
+        "peopleCountRange" : "{1, 2}",
+        "peopleTrait" : 7,
+        "mustContainMe" : false,
+        "eventType" : 1,
+        "categories" : [
+          "restaurant",
+          "wine_bottle",
+          "bedroom",
+          "balloon",
+          "necklace",
+          "vase",
+          "food"
+        ]
+      },
+      "uuid" : "D7C29957-868B-419A-AF49-4F9811BCC691"
     }
   ],
   "info" : {

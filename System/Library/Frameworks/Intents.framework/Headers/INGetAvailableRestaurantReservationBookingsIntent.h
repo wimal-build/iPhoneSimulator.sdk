@@ -43,7 +43,7 @@ API_UNAVAILABLE(macosx)
  @brief handling method
  
  @abstract Execute the task represented by the INGetAvailableRestaurantReservationBookingsIntent that's passed in
- @discussion This method are called to actually execute the intent, the app must return a response for this intent and an NSUserActivity capturing the state that the app must be restored to at the end of handling this intent
+ @discussion This method is called to actually execute the intent, the app must return a response for this intent and an NSUserActivity capturing the state that the app must be restored to at the end of handling this intent
  
  @param  showBookingsIntent The input intent
  @param  completion The response handling block to invoke with the response to handling the intent.

@@ -96,6 +96,11 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  */
 - (void)processSampleBuffer:(CMSampleBufferRef)sampleBuffer withType:(RPSampleBufferType)sampleBufferType;
 
+/*! @abstract Method that should be called when broadcasting can not proceed due to an error. Calling this method will stop the broadcast and deliver the error back to the broadcasting app through RPBroadcastController's delegate.
+    @param error NSError object that will be passed back to the broadcasting app through RPBroadcastControllerDelegate's broadcastController:didFinishWithError: method.
+ */
+- (void)finishBroadcastWithError:(NSError *)error;
+
 @end
 NS_ASSUME_NONNULL_END
 

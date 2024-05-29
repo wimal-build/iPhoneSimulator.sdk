@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("resdiary.com-cancellation-en",function(e){return/^Cancellation/.test(e.subject)},function(e){if(/^Cancellation/.test(e.subject)){var n={};n.dear="Dear",n.reference="Reference:",n.guest="guest",n.at="Cancellation at",n.booking="for booking";var t="en_GB",a=loadHelper("resdiary.com-cancellation-skeleton.js");return a(e,t,n)}return CONTINUE},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1219/1301/1302","SG4f692f92")]);

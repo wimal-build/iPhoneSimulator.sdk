@@ -48,7 +48,7 @@ WK_AVAILABLE_WATCHOS_ONLY(2.0)
 - (void)applicationDidEnterBackground;
 
 // iOS app started a workout. -[HKHealthStore startWorkoutSession:] should be called from here
-- (void)handleWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration;
+- (void)handleWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration WK_AVAILABLE_WATCHOS_ONLY(3.0);
 
 - (void)handleUserActivity:(nullable NSDictionary *)userInfo;
 

@@ -1,0 +1,160 @@
+<document>
+    <head>
+        <style>
+			.stack {
+                margin:60.0 0.0 0.0 180.0;
+                height:669;
+                width:804;
+            }
+            .stackTitle {
+                tv-position:top;
+            }
+            .stackTitleImg {
+                tv-position:top;
+            }
+            .stackSubtitle {
+                tv-text-style: headline;
+                color: rgb(255, 255, 255);
+                text-align: left;
+                tv-text-max-lines:1;
+                margin:0 0 -2;
+            }
+            .stackRow {
+                margin:-2 0 0;
+            }
+            .stackRowText {
+                tv-text-style: body;
+            }
+            .stackText {
+                tv-text-style: body;
+                margin:0;
+            }
+            .stackDescription {
+                margin:37 0 30;
+            }
+            .heroImg {
+                margin:60.0 0.0 0.0 180.0;
+                width:666.0;
+                height:666.0;
+            }
+            .relatedContent {
+                <!-- lockupRelatedInfoTable.max-height + lockupRelatedInfoTable.margin.top + extra space to next cell -->
+                height:452;
+            }
+            .lockupRelatedInfoTable {
+                max-height:250;
+                width:1382;
+                <!-- vertical space between info rows -->
+                tv-line-spacing:17;
+                margin:109 0 0 90;
+            }
+            .lockupRelatedInfoTableHeader {
+                <!-- l=infoTableInfoHeader.width + margin.left -->
+                margin:0 0 0 530;
+            }
+            .lockupRelatedInfoTableHeaderTitle {
+                tv-text-style: headline;
+                color: rgb(255, 255, 255);
+                text-align: left;
+                tv-text-max-lines: 1;
+                tv-minimum-scale-factor: 0.6;
+            }
+            .lockupRelatedInfoTableInfo {
+                <!-- vertical space between data items -->
+                tv-line-spacing:0;
+            }
+            .lockupRelatedInfoTableInfoHeader {
+                width:490;
+                margin:0 40 0 0;
+            }
+            .lockupRelatedInfoTableInfoHeaderTitle {
+                tv-text-style: body;
+                color: rgb(255, 255, 255);
+                text-align: right;
+                tv-text-max-lines:4;
+            }
+            .lockupRelatedInfoTableInfoRow {
+                margin: 0;
+                tv-interitem-spacing:19;
+                tv-align:left;
+            }
+            .lockupRelatedInfoRowText {
+                tv-text-style: body;
+                color: rgb(255, 255, 255);
+                text-align: left;
+                tv-text-max-lines: 5;
+                tv-align: left;
+            }
+            .lockupInfoTableInfoText {
+                tv-text-style: body;
+                color: rgba(255, 255, 255, 0.6);
+                text-align: left;
+                tv-text-max-lines: 4;
+            }
+            .lockupInfoTableInfoDescription {
+                color: rgba(255, 255, 255, 0.5);
+                tv-highlight-color: rgb(255, 255, 255);
+            }
+            @media tv-template and (tv-theme:light) {
+                .stackSubtitle {
+                    color: rgb(0, 0, 0);
+                }
+                .lockupRelatedInfoTableInfoHeaderTitle {
+                    color: rgb(0, 0, 0);
+                }
+                .lockupRelatedInfoTableHeaderTitle {
+                    color: rgb(0, 0, 0);
+                }
+                .lockupRelatedInfoRowText {
+                    color: rgb(0, 0, 0);
+                }
+                .lockupInfoTableInfoText {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+                .lockupInfoTableInfoDescription {
+                    color: rgba(0, 0, 0, 0.5);
+                    tv-highlight-color: rgba(0, 0, 0, 0.7);
+                }
+            }
+        </style>
+    </head>
+    <productBundleTemplate>
+        <banner style="height:775.0;">
+            <stack class="stack">
+                <img class="stackTitleImg" />
+                <title class="stackTitle" />
+                <subtitle class="stackSubtitle"/>
+                <row class="stackRow">
+                    <text class="stackRowText" />
+                </row>
+                <text class="stackText" />
+                <description class="stackDescription" />
+            </stack>
+            <heroImg class="heroImg" />
+            <img class="heroImg" />
+        </banner>
+        <shelf>
+            <section>
+                <lockup>
+                    <relatedContent class="relatedContent">
+                        <infoTable class="lockupRelatedInfoTable">
+                            <header class="lockupRelatedInfoTableHeader">
+                                <title class="lockupRelatedInfoTableHeaderTitle" />
+                            </header>
+                            <info class="lockupRelatedInfoTableInfo">
+                                <header class="lockupRelatedInfoTableInfoHeader">
+                                    <title class="lockupRelatedInfoTableInfoHeaderTitle" />
+                                </header>
+                                <row class="lockupRelatedInfoTableInfoRow">
+                                    <text class="lockupRelatedInfoRowText" />
+                                </row>
+                                <text class="lockupInfoTableInfoText" />
+                                <description class="lockupInfoTableInfoText lockupInfoTableInfoDescription" />
+                            </info>
+                        </infoTable>
+                    </relatedContent>
+                </lockup>
+            </section>
+        </shelf>
+    </productBundleTemplate>
+</document>

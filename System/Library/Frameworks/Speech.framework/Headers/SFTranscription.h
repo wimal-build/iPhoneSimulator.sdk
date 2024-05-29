@@ -10,6 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class SFTranscriptionSegment;
 
 // A hypothesized text form of a speech recording
+API_AVAILABLE(ios(10.0))
 @interface SFTranscription : NSObject <NSCopying, NSSecureCoding>
 
 // Contains the entire recognition, formatted into a single user-displayable string

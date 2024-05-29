@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("ticketonline.de-confirmation-de",function(e){return/^Ihre Bestellung bei/.test(e.subject)},function(e){if(!/^Ihre Bestellung bei/.test(e.subject))return CONTINUE;var t={};t.hello="Guten Tag",t.total="Gesamt",t.number="Ihre Ordernummer lautet",t.date="Datum / Zeit",t.place="Ort";var n="de_DE",r=loadHelper("ticketonline.de-confirmation-skeleton.js");return r(e,n,t)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1340/1437/1439","SGfe5ef92a")]);

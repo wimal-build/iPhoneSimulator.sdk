@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MediaPlayer/MediaPlayerDefines.h>
 #import <MediaPlayer/MPMediaPlayback.h>
 #import <UIKit/UIKit.h>
 
@@ -19,7 +20,7 @@ typedef NS_ENUM(NSInteger, MPMovieScalingMode) {
     MPMovieScalingModeAspectFit,  // Uniform scale until one dimension fits
     MPMovieScalingModeAspectFill, // Uniform scale until the movie fills the visible bounds. One dimension may have clipped contents
     MPMovieScalingModeFill        // Non-uniform scale. Both render dimensions will exactly match the visible bounds
-} NS_DEPRECATED_IOS(2_0, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0);
 
 typedef NS_ENUM(NSInteger, MPMoviePlaybackState) {
     MPMoviePlaybackStateStopped,
@@ -28,19 +29,19 @@ typedef NS_ENUM(NSInteger, MPMoviePlaybackState) {
     MPMoviePlaybackStateInterrupted,
     MPMoviePlaybackStateSeekingForward,
     MPMoviePlaybackStateSeekingBackward
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 typedef NS_OPTIONS(NSUInteger, MPMovieLoadState) {
     MPMovieLoadStateUnknown        = 0,
     MPMovieLoadStatePlayable       = 1 << 0,
     MPMovieLoadStatePlaythroughOK  = 1 << 1, // Playback will be automatically started in this state when shouldAutoplay is YES
     MPMovieLoadStateStalled        = 1 << 2, // Playback will be automatically paused in this state, if started
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 typedef NS_ENUM(NSInteger, MPMovieRepeatMode) {
     MPMovieRepeatModeNone,
     MPMovieRepeatModeOne
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 typedef NS_ENUM(NSInteger, MPMovieControlStyle) {
     MPMovieControlStyleNone,       // No controls
@@ -48,13 +49,13 @@ typedef NS_ENUM(NSInteger, MPMovieControlStyle) {
     MPMovieControlStyleFullscreen, // Controls for fullscreen playback
     
     MPMovieControlStyleDefault = MPMovieControlStyleEmbedded
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 typedef NS_ENUM(NSInteger, MPMovieFinishReason) {
     MPMovieFinishReasonPlaybackEnded,
     MPMovieFinishReasonPlaybackError,
     MPMovieFinishReasonUserExited
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // -----------------------------------------------------------------------------
 // Movie Property Types
@@ -63,22 +64,20 @@ typedef NS_OPTIONS(NSUInteger, MPMovieMediaTypeMask) {
     MPMovieMediaTypeMaskNone  = 0,
     MPMovieMediaTypeMaskVideo = 1 << 0,
     MPMovieMediaTypeMaskAudio = 1 << 1
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 typedef NS_ENUM(NSInteger, MPMovieSourceType) {
     MPMovieSourceTypeUnknown,
     MPMovieSourceTypeFile,     // Local or progressively downloaded network content
     MPMovieSourceTypeStreaming // Live or on-demand streaming content
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // -----------------------------------------------------------------------------
 // Movie Player
 // 
 // See MPMediaPlayback.h for the playback methods.
 
-MP_EXTERN_CLASS_AVAILABLE(2_0)
-NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
-__TVOS_PROHIBITED
+MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 @interface MPMoviePlayerController : NSObject <MPMediaPlayback>
 
 - (instancetype)initWithContentURL:(NSURL *)url NS_DESIGNATED_INITIALIZER;
@@ -126,39 +125,39 @@ __TVOS_PROHIBITED
 @interface MPMoviePlayerController (MPMovieProperties)
 
 // The types of media in the movie, or MPMovieMediaTypeNone if not known.
-@property (nonatomic, readonly) MPMovieMediaTypeMask movieMediaTypes NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.");
+@property (nonatomic, readonly) MPMovieMediaTypeMask movieMediaTypes MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0);
 
 // The playback type of the movie. Defaults to MPMovieSourceTypeUnknown.
 // Specifying a playback type before playing the movie can result in faster load times.
-@property (nonatomic) MPMovieSourceType movieSourceType NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic) MPMovieSourceType movieSourceType MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 ;
 
 // The duration of the movie, or 0.0 if not known.
-@property (nonatomic, readonly) NSTimeInterval duration NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic, readonly) NSTimeInterval duration MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 ;
 
 // The currently playable duration of the movie, for progressively downloaded network content.
-@property (nonatomic, readonly) NSTimeInterval playableDuration NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic, readonly) NSTimeInterval playableDuration MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 ;
 
 // The natural size of the movie, or CGSizeZero if not known/applicable.
-@property (nonatomic, readonly) CGSize naturalSize NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic, readonly) CGSize naturalSize MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 ;
 
 // The start time of movie playback. Defaults to NaN, indicating the natural start time of the movie.
-@property (nonatomic) NSTimeInterval initialPlaybackTime NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic) NSTimeInterval initialPlaybackTime MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 ;
 
 // The end time of movie playback. Defaults to NaN, which indicates natural end time of the movie.
-@property (nonatomic) NSTimeInterval endPlaybackTime NS_DEPRECATED_IOS(2_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic) NSTimeInterval endPlaybackTime MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0)
 ;
 
 // Indicates whether the movie player allows AirPlay video playback. Defaults to YES on iOS 5.0 and later.
-@property (nonatomic) BOOL allowsAirPlay NS_DEPRECATED_IOS(4_3, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic) BOOL allowsAirPlay MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0)
 ;
 
 // Indicates whether the movie player is currently playing video via AirPlay.
-@property (nonatomic, readonly, getter=isAirPlayVideoActive) BOOL airPlayVideoActive NS_DEPRECATED_IOS(5_0, 9_0, "Use AVPlayerViewController in AVKit.")
+@property (nonatomic, readonly, getter=isAirPlayVideoActive) BOOL airPlayVideoActive MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 5.0, 9.0, 10.12.2, 10.12.2, 5.0, 9.0)
 ;
 
 @end
@@ -167,45 +166,45 @@ __TVOS_PROHIBITED
 // Movie Player Notifications
 
 // Posted when the scaling mode changes.
-MP_EXTERN NSString * const MPMoviePlayerScalingModeDidChangeNotification NS_DEPRECATED_IOS(2_0, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerScalingModeDidChangeNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0);
 
 // Posted when movie playback ends or a user exits playback.
-MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishNotification NS_DEPRECATED_IOS(2_0, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(2.0, 9.0, 10.12.2, 10.12.2, 2.0, 9.0);
 
-MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey NS_DEPRECATED_IOS(3_2, 9_0); // NSNumber (MPMovieFinishReason)
+MP_EXTERN NSString * const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0); // NSNumber (MPMovieFinishReason)
 
 // Posted when the playback state changes, either programatically or by the user.
-MP_EXTERN NSString * const MPMoviePlayerPlaybackStateDidChangeNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerPlaybackStateDidChangeNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // Posted when the network load state changes.
-MP_EXTERN NSString * const MPMoviePlayerLoadStateDidChangeNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerLoadStateDidChangeNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // Posted when the currently playing movie changes.
-MP_EXTERN NSString * const MPMoviePlayerNowPlayingMovieDidChangeNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerNowPlayingMovieDidChangeNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // Posted when the movie player enters or exits fullscreen mode.
-MP_EXTERN NSString * const MPMoviePlayerWillEnterFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMoviePlayerDidEnterFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMoviePlayerWillExitFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMoviePlayerDidExitFullscreenNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationDurationUserInfoKey NS_DEPRECATED_IOS(3_2, 9_0); // NSNumber of double (NSTimeInterval)
-MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationCurveUserInfoKey NS_DEPRECATED_IOS(3_2, 9_0);     // NSNumber of NSUInteger (UIViewAnimationCurve)
+MP_EXTERN NSString * const MPMoviePlayerWillEnterFullscreenNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMoviePlayerDidEnterFullscreenNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMoviePlayerWillExitFullscreenNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMoviePlayerDidExitFullscreenNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationDurationUserInfoKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0); // NSNumber of double (NSTimeInterval)
+MP_EXTERN NSString * const MPMoviePlayerFullscreenAnimationCurveUserInfoKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);     // NSNumber of NSUInteger (UIViewAnimationCurve)
 
 // Posted when the movie player begins or ends playing video via AirPlay.
-MP_EXTERN NSString * const MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification NS_DEPRECATED_IOS(5_0, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(5.0, 9.0, 10.12.2, 10.12.2, 5.0, 9.0);
 
 // Posted when the ready for display state changes.
-MP_EXTERN NSString * const MPMoviePlayerReadyForDisplayDidChangeNotification NS_DEPRECATED_IOS(6_0, 9_0);
+MP_EXTERN NSString * const MPMoviePlayerReadyForDisplayDidChangeNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(6.0, 9.0, 10.12.2, 10.12.2, 6.0, 9.0);
 
 // -----------------------------------------------------------------------------
 // Movie Property Notifications
 
 // Calling -prepareToPlay on the movie player will begin determining movie properties asynchronously.
 // These notifications are posted when the associated movie property becomes available.
-MP_EXTERN NSString * const MPMovieMediaTypesAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMovieSourceTypeAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0); // Posted if the movieSourceType is MPMovieSourceTypeUnknown when preparing for playback.
-MP_EXTERN NSString * const MPMovieDurationAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification NS_DEPRECATED_IOS(3_2, 9_0);
+MP_EXTERN NSString * const MPMovieMediaTypesAvailableNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMovieSourceTypeAvailableNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0); // Posted if the movieSourceType is MPMovieSourceTypeUnknown when preparing for playback.
+MP_EXTERN NSString * const MPMovieDurationAvailableNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // -----------------------------------------------------------------------------
 // Thumbnails
@@ -213,28 +212,28 @@ MP_EXTERN NSString * const MPMovieNaturalSizeAvailableNotification NS_DEPRECATED
 typedef NS_ENUM(NSInteger, MPMovieTimeOption) {
     MPMovieTimeOptionNearestKeyFrame,
     MPMovieTimeOptionExact
-} NS_DEPRECATED_IOS(3_2, 9_0) __TVOS_PROHIBITED;
+} MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 @interface MPMoviePlayerController (MPMoviePlayerThumbnailGeneration)
 
 // Returns a thumbnail at the given time.
 // Deprecated.  Use -requestThumbnailImagesAtTimes:timeOption: / MPMoviePlayerThumbnailImageRequestDidFinishNotification instead.
-- (UIImage *)thumbnailImageAtTime:(NSTimeInterval)playbackTime timeOption:(MPMovieTimeOption)option NS_DEPRECATED_IOS(3_2, 7_0);
+- (UIImage *)thumbnailImageAtTime:(NSTimeInterval)playbackTime timeOption:(MPMovieTimeOption)option MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 7.0, 10.12.2, 10.12.2, 3.2, 7.0);
 
 // Asynchronously request thumbnails for one or more times, provided as an array of NSNumbers (double).
 // Posts MPMoviePlayerThumbnailImageRequestDidFinishNotification on completion.
-- (void)requestThumbnailImagesAtTimes:(NSArray *)playbackTimes timeOption:(MPMovieTimeOption)option NS_DEPRECATED_IOS(3_2, 9_0);
+- (void)requestThumbnailImagesAtTimes:(NSArray *)playbackTimes timeOption:(MPMovieTimeOption)option MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 // Cancels all pending asynchronous thumbnail requests.
-- (void)cancelAllThumbnailImageRequests NS_DEPRECATED_IOS(3_2, 9_0);
+- (void)cancelAllThumbnailImageRequests MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
 
 @end
 
 // Posted when each thumbnail image request is completed.
-MP_EXTERN NSString * const MPMoviePlayerThumbnailImageRequestDidFinishNotification NS_DEPRECATED_IOS(3_2, 9_0);
-MP_EXTERN NSString * const MPMoviePlayerThumbnailImageKey NS_DEPRECATED_IOS(3_2, 9_0); // UIImage, may be nil if an error occurred.
-MP_EXTERN NSString * const MPMoviePlayerThumbnailTimeKey NS_DEPRECATED_IOS(3_2, 9_0);  // NSNumber (double)
-MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey NS_DEPRECATED_IOS(3_2, 9_0); // NSError
+MP_EXTERN NSString * const MPMoviePlayerThumbnailImageRequestDidFinishNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+MP_EXTERN NSString * const MPMoviePlayerThumbnailImageKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0); // UIImage, may be nil if an error occurred.
+MP_EXTERN NSString * const MPMoviePlayerThumbnailTimeKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0); // NSNumber (double)
+MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0); // NSError
 
 // -----------------------------------------------------------------------------
 // Timed Metadata
@@ -242,13 +241,11 @@ MP_EXTERN NSString * const MPMoviePlayerThumbnailErrorKey NS_DEPRECATED_IOS(3_2,
 @interface MPMoviePlayerController (MPMoviePlayerTimedMetadataAdditions)
 
 // Returns an array of the most recent MPTimedMetadata objects provided by the media stream.
-@property (nonatomic, readonly) NSArray *timedMetadata NS_DEPRECATED_IOS(4_0, 9_0);
+@property (nonatomic, readonly) NSArray *timedMetadata MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);
 
 @end
 
-MP_EXTERN_CLASS_AVAILABLE(4_0)
-NS_DEPRECATED_IOS(4_0, 9_0)
-__TVOS_PROHIBITED
+MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0)
 @interface MPTimedMetadata : NSObject
 
 // A key which identifies a piece of timed metadata.
@@ -269,25 +266,25 @@ __TVOS_PROHIBITED
 @end
 
 // Posted when new timed metadata arrives.
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUpdatedNotification NS_DEPRECATED_IOS(4_0, 9_0);
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUserInfoKey NS_DEPRECATED_IOS(4_0, 9_0);       // NSDictionary of the most recent MPTimedMetadata objects.
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUpdatedNotification MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataUserInfoKey MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);       // NSDictionary of the most recent MPTimedMetadata objects.
 
 // Additional dictionary keys for use with the 'allMetadata' property. All keys are optional.
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyName NS_DEPRECATED_IOS(4_0, 9_0);           // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyInfo NS_DEPRECATED_IOS(4_0, 9_0);           // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyMIMEType NS_DEPRECATED_IOS(4_0, 9_0);       // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyDataType NS_DEPRECATED_IOS(4_0, 9_0);       // NSString
-MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode NS_DEPRECATED_IOS(4_0, 9_0);   // NSString (ISO 639-2)
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyName MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);           // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyInfo MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);           // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyMIMEType MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);       // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyDataType MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);       // NSString
+MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.0, 9.0, 10.12.2, 10.12.2, 4.0, 9.0);   // NSString (ISO 639-2)
 
 // -----------------------------------------------------------------------------
 
 @interface MPMoviePlayerController (MPMovieLogging)
 
 // Returns an object that represents a snapshot of the network access log. Can be nil.
-@property (nonatomic, readonly) MPMovieAccessLog *accessLog NS_DEPRECATED_IOS(4_3, 9_0);
+@property (nonatomic, readonly) MPMovieAccessLog *accessLog MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0);
 
 // Returns an object that represents a snapshot of the error log. Can be nil.
-@property (nonatomic, readonly) MPMovieErrorLog *errorLog NS_DEPRECATED_IOS(4_3, 9_0);
+@property (nonatomic, readonly) MPMovieErrorLog *errorLog MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0);
 
 @end
 
@@ -295,9 +292,7 @@ MP_EXTERN NSString * const MPMoviePlayerTimedMetadataKeyLanguageCode NS_DEPRECAT
 // An MPMovieAccessLog accumulates key metrics about network playback and presents them as a collection of MPMovieAccessLogEvent instances.
 // Each MPMovieAccessLogEvent instance collates the data that relates to each uninterrupted period of playback.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3)
-NS_DEPRECATED_IOS(4_3, 9_0)
-__TVOS_PROHIBITED
+MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0)
 @interface MPMovieAccessLog : NSObject <NSCopying>
 
 // Returns the webserver access log into a textual format that conforms to the W3C Extended Log File Format for web server log files.
@@ -315,9 +310,7 @@ __TVOS_PROHIBITED
 // -----------------------------------------------------------------------------
 // An MPMovieErrorLog provides data to identify if, and when, network resource playback failures occured.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3)
-NS_DEPRECATED_IOS(4_3, 9_0)
-__TVOS_PROHIBITED
+MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0)
 @interface MPMovieErrorLog : NSObject <NSCopying>
 
 // Returns the webserver error log into a textual format that conforms to the W3C Extended Log File Format for web server log files.
@@ -335,9 +328,7 @@ __TVOS_PROHIBITED
 // -----------------------------------------------------------------------------
 // An MPMovieAccessLogEvent repesents a single access log entry.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3)
-NS_DEPRECATED_IOS(4_3, 9_0)
-__TVOS_PROHIBITED
+MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0)
 @interface MPMovieAccessLogEvent : NSObject <NSCopying>
 
 // A count of media segments downloaded from the server to this client.
@@ -387,9 +378,7 @@ __TVOS_PROHIBITED
 // -----------------------------------------------------------------------------
 // An MPMovieErrorLogEvent repesents a single error log entry.
 
-MP_EXTERN_CLASS_AVAILABLE(4_3)
-NS_DEPRECATED_IOS(4_3, 9_0)
-__TVOS_PROHIBITED
+MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(4.3, 9.0, 10.12.2, 10.12.2, 4.3, 9.0)
 @interface MPMovieErrorLogEvent : NSObject <NSCopying>
 
 // The date and time when the error occured.
@@ -423,6 +412,6 @@ __TVOS_PROHIBITED
 
 // Indicates if the movie player should inherit the application's audio session instead of creating a new session (which would interrupt the application's session).
 // Defaults to YES. Setting this property during playback will not take effect until playback is stopped and started again.
-@property (nonatomic) BOOL useApplicationAudioSession NS_DEPRECATED_IOS(3_2, 6_0);
+@property (nonatomic) BOOL useApplicationAudioSession MP_API_IOS_DEPRECATED_MACOS_TVOS_PROHIBITED(3.2, 6.0, 10.12.2, 10.12.2, 3.2, 6.0);
 
 @end

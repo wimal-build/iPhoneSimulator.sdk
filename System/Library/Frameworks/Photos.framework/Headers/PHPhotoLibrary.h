@@ -47,7 +47,6 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHPhotoLibrary : NSObject
 - (void)performChanges:(dispatch_block_t)changeBlock completionHandler:(nullable void(^)(BOOL success, NSError *__nullable error))completionHandler;
 - (BOOL)performChangesAndWait:(dispatch_block_t)changeBlock error:(NSError *__autoreleasing *)error;
 
-
 #pragma mark - Change Handling
 
 - (void)registerChangeObserver:(id<PHPhotoLibraryChangeObserver>)observer;

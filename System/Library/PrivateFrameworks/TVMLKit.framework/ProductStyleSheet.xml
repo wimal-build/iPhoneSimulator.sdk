@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .productTemplate { margin: 0 0 60.0; }
+            .navigationItem { }
+            .navigationItemButton { color: keyblue; }
+            .popover { }
+            .popoverBadge { tv-tint-color: keyblue; }
+            .popoverText { color: keyblue; tv-text-style: title3; }
+            
+            <!-- Banner (Page Header B) Overrides from Page Header A  -->
+            .baseBanner { min-height: 66; }
+            .baseBannerTitle { tv-text-max-lines: 2; }
+            @media (interface-idiom: phone) {
+                .baseBanner { min-height: 50; }
+                .baseBannerTitle { margin: 8 0 -10; }
+                .baseBannerButtonPosition { tv-position: top-right; margin: 20 0 0 16; }
+                .baseBannerRow { tv-position: top-right; margin: 20 0 0 16; }
+            }
+
+            <!-- review cards -->
+            .reviewCard { padding: 12 16 16 16; background-color: rgba(255, 255, 255, 0.8); tv-img-treatment: corner-small; }
+            .reviewCardRow { tv-position: top; height: 22; tv-interitem-spacing: 9; }
+            .reviewCardBadge { width: 22; height: 22; }
+            .reviewCardTitle { tv-text-style: title2; color: black; }
+            .reviewCardText { tv-position: top; margin: 8 0 0 32; tv-text-style: caption1; color: systemgray; text-transform: uppercase; font-weight: medium; }
+            .reviewCardDescription { tv-position: bottom; tv-minimum-scale-factor: 0.84; margin: 38 0 0 32; tv-text-max-lines: 4; tv-text-style: subhead-short; text-align: natural; color: systemgray; }
+            
+            <!-- rating cards -->
+            .ratingCard { padding: 12 16 16 16; background-color: rgba(255, 255, 255, 0.8); tv-img-treatment: corner-small; }
+            .ratingCardTitle { tv-position: top; margin: 0 0 3 0; tv-text-style: title2; color: black; text-align: natural; }
+            .ratingCardRow { tv-position: top; height: 22; tv-interitem-spacing: 6; }
+            .ratingCardRowBadge { width: 22; height: 22; }
+            .ratingCardRowTitle { tv-text-style: title2; color: black; text-align: natural; }
+			.ratingCardStarRating { tv-position: top; height: 17; tv-interitem-spacing: 2; tv-tint-color: black; tv-rating-style: star-s; }
+            .ratingCardText { tv-position: top; margin: 8 0 0 0; tv-text-style: caption1; text-align: natural; font-weight: medium; color: systemgray; text-transform: uppercase; }
+            .ratingCardDescription { tv-position: bottom; margin: 38 0 0 0; tv-minimum-scale-factor: 0.84; tv-text-max-lines: 4; tv-text-style: subhead-short; color: systemgray; text-align: natural; }
+            .ratingCardInfoTable { tv-position: bottom; }
+            .ratingCardInfo { }
+            .ratingCardInfoHeader { width: 64; margin: 0 10 0 0; }
+            .ratingCardInfoTitle { tv-text-style: subhead-short; color: systemgray; text-align: left; }
+            .ratingCardInfoText { tv-text-style: subhead-short; color: systemgray; text-align: right; }
+        </style>
+    </head>
+    <productTemplate class="productTemplate">
+        <navigationItem class="navigationItem">
+            <button class="navigationItemButton" />
+        </navigationItem>
+        <background>
+            <img style="tv-img-treatment: product-background;" />
+        </background>
+        <reviewCard class="reviewCard baseReviewCard_Long">
+            <row class="reviewCardRow">
+                <badge class="reviewCardBadge" />
+                <title class="reviewCardTitle" />
+            </row>
+            <description class="reviewCardDescription" />
+            <text class="reviewCardText" />
+        </reviewCard>
+        <ratingCard class="ratingCard baseReviewCard_Short">
+            <row class="ratingCardRow">
+                <badge class="ratingCardRowBadge" />
+                <title class="ratingCardRowTitle" />
+            </row>
+            <title class="ratingCardTitle" />
+            <starRating class="ratingCardStarRating" />
+            <ratingBadge class="ratingCardStarRating" />
+            <text class="ratingCardText" />
+            <description class="ratingCardDescription" />
+            <infoTable class="ratingCardInfoTable">
+                <info class="ratingCardInfo">
+                    <header class="ratingCardInfoHeader">
+                        <title class="ratingCardInfoTitle" />
+                    </header>
+                    <text class="ratingCardInfoText" />
+                </info>
+            </infoTable>
+        </ratingCard>
+        <popover class="popover">
+            <relatedContent>
+                <popoverOption>
+                    <text class="popoverText" />
+                    <title class="popoverText" />
+                    <badge class="popoverBadge" />
+                </popoverOption>
+                <popoverGroup>
+                    <text class="popoverText" />
+                    <title class="popoverText" />
+                    <badge class="popoverBadge" />
+                    <relatedContent>
+                        <popoverOption>
+                            <text class="popoverText" />
+                            <title class="popoverText" />
+                            <badge class="popoverBadge" />
+                        </popoverOption>
+                    </relatedContent>
+                </popoverGroup>
+            </relatedContent>
+        </popover>
+    </productTemplate>
+</document>

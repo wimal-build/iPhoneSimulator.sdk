@@ -6,9 +6,9 @@
 //
 
 #import <MediaPlayer/MediaPlayerDefines.h>
-#import <MediaPlayer/MPContentItem.h>
-#import <MediaPlayer/MPError.h>
-#import <MediaPlayer/MPMediaItem.h>
+#import <TargetConditionals.h>
+
+#if TARGET_OS_IPHONE
 #import <MediaPlayer/MPMediaItemCollection.h>
 #import <MediaPlayer/MPMediaLibrary.h>
 #import <MediaPlayer/MPMediaPickerController.h>
@@ -19,15 +19,21 @@
 #import <MediaPlayer/MPMoviePlayerViewController.h>
 #import <MediaPlayer/MPMusicPlayerController.h>
 #import <MediaPlayer/MPMusicPlayerQueueDescriptor.h>
-#import <MediaPlayer/MPNowPlayingInfoCenter.h>
-#import <MediaPlayer/MPNowPlayingInfoLanguageOption.h>
 #import <MediaPlayer/MPPlayableContentDataSource.h>
 #import <MediaPlayer/MPPlayableContentDelegate.h>
 #import <MediaPlayer/MPPlayableContentManager.h>
 #import <MediaPlayer/MPPlayableContentManagerContext.h>
+#import <MediaPlayer/MPVolumeSettings.h>
+#import <MediaPlayer/MPVolumeView.h>
+#endif
+
+#import <MediaPlayer/AVFoundation+MPNowPlayingInfoLanguageOptionAdditions.h>
+#import <MediaPlayer/MPContentItem.h>
+#import <MediaPlayer/MPError.h>
+#import <MediaPlayer/MPMediaItem.h>
+#import <MediaPlayer/MPNowPlayingInfoCenter.h>
+#import <MediaPlayer/MPNowPlayingInfoLanguageOption.h>
 #import <MediaPlayer/MPRemoteCommand.h>
 #import <MediaPlayer/MPRemoteCommandCenter.h>
 #import <MediaPlayer/MPRemoteCommandEvent.h>
 #import <MediaPlayer/MPRemoteControlTypes.h>
-#import <MediaPlayer/MPVolumeSettings.h>
-#import <MediaPlayer/MPVolumeView.h>

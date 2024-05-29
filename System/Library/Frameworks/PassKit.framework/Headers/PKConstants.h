@@ -50,7 +50,8 @@ typedef NS_ENUM(NSInteger, PKPaymentButtonType) {
     PKPaymentButtonTypePlain = 0,
     PKPaymentButtonTypeBuy,
     PKPaymentButtonTypeSetUp NS_ENUM_AVAILABLE_IOS(9_0),
-    PKPaymentButtonTypeInStore NS_ENUM_AVAILABLE_IOS(10_0)
+    PKPaymentButtonTypeInStore NS_ENUM_AVAILABLE_IOS(10_0),
+    PKPaymentButtonTypeDonate NS_ENUM_AVAILABLE_IOS(10_2)
 } NS_ENUM_AVAILABLE_IOS(8_3);
 
 #endif // PKCONSTANTS_H

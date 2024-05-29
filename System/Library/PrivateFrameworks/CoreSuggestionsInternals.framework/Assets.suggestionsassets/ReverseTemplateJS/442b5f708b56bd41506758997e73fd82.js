@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("stubhub.com-cancellation-en",function(e){return/^Account Credit Applied/i.test(e.subject)||/^Event cancelled/i.test(e.subject)},function(e){if(/^Account Credit Applied/i.test(e.subject)||/^Event cancelled/i.test(e.subject)){var t=loadHelper("stubhub.com-schemaorg-parser.js"),c=t(e);if(c)return c;var n=loadHelper("stubhub.com-skeleton.js");return n(e)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1340/1405/1406","SG0dad434c")]);

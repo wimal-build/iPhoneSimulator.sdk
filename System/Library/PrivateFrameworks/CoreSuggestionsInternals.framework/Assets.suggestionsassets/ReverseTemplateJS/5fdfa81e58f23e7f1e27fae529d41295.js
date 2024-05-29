@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("ticketbud.com-confirmation-en",function(e){return/Ticketbud : Your Tickets/.test(e.subject)},function(e){if(!/Ticketbud : Your Tickets/.test(e.subject))return CONTINUE;var t={};t.purchaser="Purchaser",t.total="Total",t.order="Order ID",t.confirmation="Order Confirmation",t.start="Starts",t.end="Ends";var r="en_US",n=loadHelper("ticketbud.com-confirmation-skeleton.js");return n(e,r,t)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1340/1413/1414","SG55fc6bc1")]);

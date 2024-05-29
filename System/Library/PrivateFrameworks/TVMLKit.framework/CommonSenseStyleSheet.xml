@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<head>
+		<style>
+			.footer {
+				margin: 60 0 0 0;
+			}
+			.footerLogo {
+				margin: 30 0 0 0;
+			}
+			.header {
+				width: 644;
+				margin: 0 0 0 0;
+			}
+			.headerBadge {
+				margin: 0 0 -6 0;
+			}
+			.headerTitle {
+				tv-text-style: title2;
+				color: rgba(255, 255, 255, 0.9);
+				tv-position: top;
+				margin: 0 0 90 0;
+				text-align: center;
+			}
+			.headerDescription {
+				tv-text-style: body;
+				color: rgba(255, 255, 255, 0.6);
+                tv-text-max-lines: 5;
+                tv-position: bottom;
+                text-align: left;
+                margin: 0 0 72 0;
+			}
+			.infoTable {
+                width: 644;
+                tv-line-spacing: 0;
+			}
+			.infoTableInfo {
+                tv-line-spacing:0;
+			}			
+			.infoTableInfoHeader {
+                <!-- infoTable.width / 2 -->
+                width: 470;
+                margin: 0 60 0 0;
+			}
+			.infoTableInfoHeaderTitle {
+				text-align: left;
+				color: rgba(255, 255, 255, 0.9);
+				tv-text-style: headline;
+			}
+			.infoTableInfoRatingBadge {
+				tv-position: right;
+				tv-rating-style: circle;
+                <!-- Default Gray -->
+				tv-tint-color: rgba(255, 255, 255, 0.2);
+				<!-- Default White -->
+				tv-tint-color2: rgb(255, 255, 255);
+                tv-interitem-spacing: 8;
+                margin: 19 0 0 0;
+			}
+		</style>
+	</head>
+	<commonSenseTemplate>
+	     <header class="header">
+	         <title class="headerTitle">
+	         	<badge class="headerBadge"/>
+	         </title>
+	         <description class="headerDescription"/>
+	     </header>
+	     <infoTable class="infoTable">
+			<info class="infoTableInfo">
+				<header class="infoTableInfoHeader">
+					<title class="infoTableInfoHeaderTitle" />
+				</header>
+				<ratingBadge class="infoTableInfoRatingBadge" />
+			</info>
+		</infoTable>
+		<footer class="footer">
+			<img class="footerLogo"/>
+		</footer>
+	</commonSenseTemplate>
+</document>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .title {
+                tv-text-style: title2;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                max-width: 370;
+                tv-text-max-lines: 1;
+                margin: 53 0 31;
+            }
+            .headerImg {
+                margin: 90 0 15;
+            }
+            .description {
+                color: rgb(255, 255, 255);
+                tv-text-style: body;
+                width: 370;
+            }
+            .infoTable {
+                width: 370;
+                <!-- vertical space between info rows -->
+                tv-line-spacing:0;
+                margin: 59 0 0;
+            }
+            .infoTableInfoHeader {
+                width: 370;
+                margin:0 50 0 0;
+            }
+            .infoTableInfo {
+                <!-- vertical space between data items -->
+                tv-line-spacing:0;
+            }
+            .infoTableInfoHeaderTitle {
+                tv-text-style: subtitle2;
+                color: rgba(255, 255, 255,0.7);
+                text-align: right;
+                tv-text-max-lines: 1;
+            }
+            .infoTableInfoText {
+                tv-text-style: headline;
+                color: rgb(255, 255, 255);
+                text-align: natural;
+                tv-text-max-lines: 1;
+            }
+            .shelf {
+                margin: 12px 0 22px 0;
+                padding: 0px 22px;
+                tv-interitem-spacing: 9px;
+            }
+            .lockupOverlay {
+                padding: 36px 30px;
+            }
+            .lockupOverlayTitle {
+                tv-position: bottom;
+                tv-text-style: headline;
+                color: rgb(255,255,255);
+                text-align: natural;
+                tv-text-max-lines: 2;
+            }
+            .lockupOverlayText {
+                tv-position: bottom;
+                tv-text-style: footnote;
+                color: rgba(255,255,255,0.6);
+                text-align: natural;
+                tv-text-max-lines: 1;
+            }
+            .row {
+                tv-interitem-spacing:50;
+                margin: 60 0 46 0;
+            }
+            .rowButton {
+                max-width: 370;
+            }
+            .button {
+                margin: 14 0;
+            }
+            .template {
+                background-color: transparent;
+            }
+            .text {
+                tv-text-style: caption2;
+                color: rgb(255, 255, 255);
+                tv-text-max-lines: 2;
+                text-align: center;
+                max-width: 370;
+                margin: 0 0 21;
+            }
+            .shelfLockupTitle {
+                margin: 4px 0px 0px;
+                tv-text-style: callout;
+                color:rgba(255.0, 255.0, 255.0, 0.5);
+                tv-highlight-color: rgb(255,255,255);
+                text-align: center;
+                tv-text-max-lines: 1;
+            }
+            .shelfLockupSubtitle {
+                margin: 0px 0px 0px;
+                tv-text-style: callout;
+                color:rgba(255.0, 255.0, 255.0, 0.3);
+                tv-highlight-color: rgb(255,255,255);
+                text-align: center;
+                tv-text-max-lines: 1;
+            }
+            @media tv-template and (tv-theme:light) {
+                .title {
+                    color: rgb(0, 0, 0);
+                }
+                .description {
+                    color: rgb(0, 0, 0);
+                }
+                .infoTableInfoHeaderTitle {
+                    color: rgba(0, 0, 0, 0.7);
+                }
+                .infoTableInfoText {
+                    color: rgb(0, 0, 0);
+                }
+                .text {
+                    color: rgb(0, 0, 0);
+                }
+                .shelfLockupTitle {
+                    color:rgba(0, 0, 0, 0.6);
+                }
+                .shelfLockupSubtitle {
+                    color:rgba(0, 0, 0, 0.4);
+                }
+            }
+        </style>
+    </head>
+    <descriptiveAlertTemplate class="template">
+        <title class="title" />
+        <img class="headerImg" />
+        <description class="description" />
+        <infoTable class="infoTable">
+            <info class="infoTableInfo">
+                <header class="infoTableInfoHeader">
+                    <title class="infoTableInfoHeaderTitle" />
+                </header>
+                <text class="infoTableInfoText" />
+            </info>
+        </infoTable>
+        <shelf class="shelf">
+            <lockup>
+                <title class="shelfLockupTitle"></title>
+                <subtitle class="shelfLockupSubtitle"></subtitle>
+                <img/>
+                <overlay class="lockupOverlay">
+                    <title class="lockupOverlayTitle"/>
+                    <text class="lockupOverlayText"/>
+                </overlay>
+            </lockup>
+        </shelf>
+        <row class="row">
+            <button class="baseButton rowButton">
+                <text class="baseButtonText" />
+				<img class="baseButtonImg"/>
+				<badge class="baseButtonBadge" />
+            </button>
+        </row>
+        <button class="button"/>
+        <text class="text"/>
+    </descriptiveAlertTemplate>
+</document>
+

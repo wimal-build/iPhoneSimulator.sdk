@@ -19,6 +19,7 @@ API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx)
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSDecimalNumber *amount;
 
+// The ISO 4217 currency code that applies to the monetary amount.
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *currencyCode;
 
 @end

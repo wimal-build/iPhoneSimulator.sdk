@@ -92,7 +92,7 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 - (void)pickerDidSettle:(WKInterfacePicker *)picker WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex;  // row selection if controller has WKInterfaceTable property
-- (void)handleActionWithIdentifier:(nullable NSString *)identifier forNotification:(UNNotification *)notification WK_CLASS_AVAILABLE_IOS(10.0); // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
+- (void)handleActionWithIdentifier:(nullable NSString *)identifier forNotification:(UNNotification *)notification WK_AVAILABLE_IOS_ONLY(10.0); // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
 - (void)handleUserActivity:(nullable NSDictionary *)userInfo; // called on root controller(s) with user info
 
 - (void)setTitle:(nullable NSString *)title;        // title of controller. displayed when controller active

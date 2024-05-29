@@ -290,7 +290,7 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionIOType)
 		The app attempted to use the audio session during or after a Media Services failure.  App should
  		wait for a AVAudioSessionMediaServicesWereResetNotification and then rebuild all its state.
 	@constant	AVAudioSessionErrorCodeIsBusy
- 		The app attempted to set its audio session inactive, but it is still actively playing and/or recording.
+ 		The app attempted to set its audio session inactive or change its AVAudioSessionIOType, but it is still actively playing and/or recording.
  	@constant	AVAudioSessionErrorCodeIncompatibleCategory
  		The app tried to perform an operation on a session but its category does not support it.
  		For instance, if the app calls setPreferredInputNumberOfChannels: while in a playback-only category.

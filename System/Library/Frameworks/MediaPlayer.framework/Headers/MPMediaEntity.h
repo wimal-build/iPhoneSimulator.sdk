@@ -17,8 +17,7 @@ typedef uint64_t MPMediaEntityPersistentID;
 // An MPMediaEntity represents an abstract member of an MPMediaLibrary.
 // Concrete subclasses are MPMediaItem and MPMediaItemCollection.
 
-MP_EXTERN_CLASS_AVAILABLE(4_2)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(4.2, 10.12.2, 4.2)
 @interface MPMediaEntity : NSObject <NSSecureCoding>
 
 // Returns YES for properties which can be used to construct MPMediaPropertyPredicates.
@@ -37,7 +36,7 @@ __TVOS_PROHIBITED
 
 #pragma mark - Properties
 
-MP_EXTERN NSString * const MPMediaEntityPropertyPersistentID NS_AVAILABLE_IOS(4_2);         // filterable
+MP_EXTERN NSString * const MPMediaEntityPropertyPersistentID NS_AVAILABLE(10_12_2, 4_2);        // filterable
 @property (nonatomic, readonly) MPMediaEntityPersistentID persistentID NS_AVAILABLE_IOS(7_0);
 
 @end

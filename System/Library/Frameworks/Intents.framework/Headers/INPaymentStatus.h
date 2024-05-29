@@ -9,7 +9,6 @@
 #define INPaymentStatus_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INPaymentStatus) {
@@ -18,6 +17,6 @@ typedef NS_ENUM(NSInteger, INPaymentStatus) {
     INPaymentStatusCompleted,
     INPaymentStatusCanceled,
     INPaymentStatusFailed,
-};
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INPaymentStatus_h

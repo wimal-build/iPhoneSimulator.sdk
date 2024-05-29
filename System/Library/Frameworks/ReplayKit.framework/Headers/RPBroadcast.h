@@ -33,12 +33,12 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 
  The view controller will present the user with a list of broadcast services available on the device and allow the user to set up a broadcast with the service through the service's UI.
 
- The RPBroadcastActivityViewController can be presented using [UIViewController presentViewController:animated:completion:] and should be dismissed when the delegate's broadcastActivityViewController:didFinishWithBroadcastController:error: method is called.
+ The RPBroadcastActivityViewController can be presented using [UIViewController presentViewController:animated:completion:] and should be dismissed when the delegate's broadcastActivityViewController:didFinishWithBroadcastController:error: method is called. Note that on large screen devices such as iPad, the default presentation style for view controllers is a popover. For an instance of RPBroadcastActivityViewController to present properly on iPad, it needs to have its popoverPresentationController's sourceRect and sourceView configured.
 
  @param broadcastActivityViewController The RPBroadcastActivityViewController which can be presented.
  @param error Optional error in the RPRecordingErrorCode domain which is supplied in the event the view controller could not be loaded.
  */
-+ (void)loadBroadcastActivityViewControllerWithHandler:(void(^)(RPBroadcastActivityViewController * __nullable broadcastActivityViewController, NSError * __nullable error))handler;
++ (void)loadBroadcastActivityViewControllerWithHandler:(nonnull void(^)(RPBroadcastActivityViewController * __nullable broadcastActivityViewController, NSError * __nullable error))handler;
 
 /*  @abstract Delegate that is notified when the activity view controller is complete. */
 @property (nonatomic, weak, nullable) id<RPBroadcastActivityViewControllerDelegate> delegate;
@@ -88,13 +88,19 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 - (void)finishBroadcastWithHandler:(void(^)(NSError * __nullable error))handler;
 @end
 
+@protocol RPBroadcastControllerDelegate <NSObject>
+@optional
+
 /*  @abstract Called when broadcasting finishes due to an error.
  @param broadcastController The controller instance.
  @param error Required error in the RPRecordingErrorCode domain.
  */
-@protocol RPBroadcastControllerDelegate <NSObject>
-@optional
+
 - (void)broadcastController:(RPBroadcastController *)broadcastController didFinishWithError:(NSError * __nullable)error;
+/*  @abstract Called when the broadcast service has data to pass back to broadcasting app.
+ @param broadcastController The controller instance.
+ @param serviceInfo NSDictionary instance with keys and values defined by the broadcasting service.
+ */
 - (void)broadcastController:(RPBroadcastController *)broadcastController didUpdateServiceInfo:(NSDictionary <NSString *, NSObject <NSCoding> *> *)serviceInfo;
 @end
 

@@ -68,7 +68,7 @@ CA_CLASS_AVAILABLE_IOS(3.1, 9.0, 2.0)
  * DEPRECATED - use preferredFrameRate. */
 
 @property(nonatomic) NSInteger frameInterval
-  CA_AVAILABLE_BUT_DEPRECATED_IOS (3.1, 10.0, 2.0, 3.0, 9.0, 10.0, "use preferredFramesPerSecond");
+  CA_AVAILABLE_BUT_DEPRECATED_IOS (3.1, 10.0, 9.0, 10.0, 2.0, 3.0, "use preferredFramesPerSecond");
 
 /* Defines the desired callback rate in frames per second for this display link.
  * A value of 100.0 would result in 100 callbacks per second.

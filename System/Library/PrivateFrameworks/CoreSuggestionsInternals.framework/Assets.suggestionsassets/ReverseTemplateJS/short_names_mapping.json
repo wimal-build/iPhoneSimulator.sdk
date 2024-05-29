@@ -820,10 +820,6 @@
       "locale": "en_US", 
       "shortname": "SG6a284409"
     }, 
-    "email/flight/aeroflot/aeroflot.ru-confirmation-payment-en": {
-      "locale": "en_US", 
-      "shortname": "SGdaa36178"
-    }, 
     "email/flight/aeromexico/aeromexico-confirmation-2016-en": {
       "locale": "en_US", 
       "shortname": "SG2931bfd4"
@@ -935,10 +931,6 @@
     "email/flight/aircanada/aircanada.ca-Itinerary-fr": {
       "locale": "fr_FR", 
       "shortname": "SG420b8476"
-    }, 
-    "email/flight/aircanada/aircanada.ca-Itinerary-jp": {
-      "locale": "ja_JP", 
-      "shortname": "SG24bc6396"
     }, 
     "email/flight/aircanada/aircanada.ca-Itinerary-zh": {
       "locale": "zh_Hans_CN", 
@@ -1500,22 +1492,6 @@
       "locale": "es_ES", 
       "shortname": "SGb58d1544"
     }, 
-    "email/flight/iberia/iberia.com-confirmation-de": {
-      "locale": "de_DE", 
-      "shortname": "SGeee03e72"
-    }, 
-    "email/flight/iberia/iberia.com-confirmation-en": {
-      "locale": "en_US", 
-      "shortname": "SGaea6c850"
-    }, 
-    "email/flight/iberia/iberia.com-confirmation-es": {
-      "locale": "es_ES", 
-      "shortname": "SG305bc889"
-    }, 
-    "email/flight/iberia/iberia.com-confirmation-fr": {
-      "locale": "fr_FR", 
-      "shortname": "SG5b6a33bd"
-    }, 
     "email/flight/interjet/interjet-flight-confirmation-es": {
       "locale": "es_MX", 
       "shortname": "SGd6d009e5"
@@ -1559,10 +1535,6 @@
     "email/flight/jetblue/jetblue.com-itinerary-checkin-2014": {
       "locale": "en_US", 
       "shortname": "SG8f76c399"
-    }, 
-    "email/flight/jetstar/jetstart-confirmation-en": {
-      "locale": "en_US", 
-      "shortname": "SGa18bd319"
     }, 
     "email/flight/jetstar/jetstart-confirmation-ja": {
       "locale": "ja_JP", 
@@ -1656,73 +1628,9 @@
       "locale": "nl_NL", 
       "shortname": "SGe8db79f7"
     }, 
-    "email/flight/lufthansa/lufthansa-schemaorg": {
-      "locale": "unknown", 
-      "shortname": "SG240e70da"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-de": {
-      "locale": "de_DE", 
-      "shortname": "SG6ed3f19d"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-en": {
-      "locale": "en_US", 
-      "shortname": "SG22e4ad3c"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-es": {
-      "locale": "es_ES", 
-      "shortname": "SG4311a120"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-fr": {
-      "locale": "fr_FR", 
-      "shortname": "SGb5e73444"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-it": {
-      "locale": "it_IT", 
-      "shortname": "SGf53d4269"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-ja": {
-      "locale": "ja_JP", 
-      "shortname": "SG8e92413e"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-cancellation-zh_cn": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG8b99c1ff"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-change-en": {
-      "locale": "en_US", 
-      "shortname": "SG2cd78066"
-    }, 
     "email/flight/lufthansa/lufthansa.com-check-in-en": {
       "locale": "en_GB", 
       "shortname": "SG8189270b"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-de": {
-      "locale": "de_DE", 
-      "shortname": "SG8a25d69b"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-en": {
-      "locale": "en_US", 
-      "shortname": "SGafd81162"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-es": {
-      "locale": "es_ES", 
-      "shortname": "SG114a03d7"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-fr": {
-      "locale": "fr_FR", 
-      "shortname": "SG8490cd36"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-it": {
-      "locale": "it_IT", 
-      "shortname": "SG55a5f61f"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-ja": {
-      "locale": "ja_JP", 
-      "shortname": "SG37c5fe38"
-    }, 
-    "email/flight/lufthansa/lufthansa.com-confirmation-zh_cn": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SGcaf83b3e"
     }, 
     "email/flight/lufthansa/lufthansa.com-e-ticket-en": {
       "locale": "en_US", 
@@ -2031,22 +1939,6 @@
     "email/flight/thomson/thomson-ticket-en": {
       "locale": "en_GB", 
       "shortname": "SG7080da5b"
-    }, 
-    "email/flight/transavia/transavia-confirmation-en": {
-      "locale": "en_US", 
-      "shortname": "SGb7a496c5"
-    }, 
-    "email/flight/transavia/transavia-confirmation-es": {
-      "locale": "es_ES", 
-      "shortname": "SGb2c41fba"
-    }, 
-    "email/flight/transavia/transavia-confirmation-fr": {
-      "locale": "fr_FR", 
-      "shortname": "SG75ed47ac"
-    }, 
-    "email/flight/transavia/transavia-confirmation-nl": {
-      "locale": "nl_NL", 
-      "shortname": "SG3713848a"
     }, 
     "email/flight/united/united.com-boarding-pass-en": {
       "locale": "unknown", 
@@ -2435,42 +2327,6 @@
     "email/hotel/bestwestern/cs.bestwestern.com-fr": {
       "locale": "en_US", 
       "shortname": "SG86cdeb30"
-    }, 
-    "email/hotel/booking/booking-schemaorg-de": {
-      "locale": "de_DE", 
-      "shortname": "SG855c69de"
-    }, 
-    "email/hotel/booking/booking-schemaorg-en": {
-      "locale": "en_US", 
-      "shortname": "SGf486b562"
-    }, 
-    "email/hotel/booking/booking-schemaorg-es": {
-      "locale": "es_ES", 
-      "shortname": "SGf3e9e9ca"
-    }, 
-    "email/hotel/booking/booking-schemaorg-fr": {
-      "locale": "fr_FR", 
-      "shortname": "SG3571e019"
-    }, 
-    "email/hotel/booking/booking-schemaorg-it": {
-      "locale": "it_IT", 
-      "shortname": "SG1873ae63"
-    }, 
-    "email/hotel/booking/booking-schemaorg-jp": {
-      "locale": "ja_JP", 
-      "shortname": "SGefe5ef05"
-    }, 
-    "email/hotel/booking/booking-schemaorg-ko": {
-      "locale": "ko_KR", 
-      "shortname": "SGfad96b0e"
-    }, 
-    "email/hotel/booking/booking-schemaorg-nl": {
-      "locale": "nl_NL", 
-      "shortname": "SG9605576b"
-    }, 
-    "email/hotel/booking/booking-schemaorg-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG3ea76227"
     }, 
     "email/hotel/booking/booking.com-cancellation-de": {
       "locale": "de_DE", 
@@ -4532,10 +4388,6 @@
       "locale": "de_DE", 
       "shortname": "SGf5948950"
     }, 
-    "email/tickets/eventbrite/eventbrite.com-confirmation-en": {
-      "locale": "en_US", 
-      "shortname": "SG5c9f7905"
-    }, 
     "email/tickets/eventbrite/eventbrite.com-confirmation-en-2011-13": {
       "locale": "en_US", 
       "shortname": "SG01dfe458"
@@ -4675,10 +4527,6 @@
     "email/tickets/stubhub/stubhub.com-cancellation-en": {
       "locale": "en_US", 
       "shortname": "SG0dad434c"
-    }, 
-    "email/tickets/stubhub/stubhub.com-confirmation-en": {
-      "locale": "en_US", 
-      "shortname": "SG72dac5a3"
     }, 
     "email/tickets/ticket_world/ticketworld.it-confirmation-it": {
       "locale": "it_IT", 
@@ -4844,10 +4692,6 @@
       "locale": "unknown", 
       "shortname": "SGe36f3d99"
     }, 
-    "sms/car/1hai/1hai-cancellation-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG5a0a6a3c"
-    }, 
     "sms/car/1hai/1hai-confirmation-zh": {
       "locale": "zh_Hans_CN", 
       "shortname": "SGa08e958f"
@@ -4896,10 +4740,6 @@
       "locale": "zh_Hans_CN", 
       "shortname": "SG99482615"
     }, 
-    "sms/flight/hainanairlines/hainanairlines-cancellation-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG62617e5d"
-    }, 
     "sms/flight/hainanairlines/hainanairlines-confirmation-zh": {
       "locale": "zh_Hans_CN", 
       "shortname": "SGf711e945"
@@ -4919,14 +4759,6 @@
     "sms/flight/juneyao/juneyao-modification-zh": {
       "locale": "zh_Hans_CN", 
       "shortname": "SGb7f5a2a7"
-    }, 
-    "sms/flight/lucky/lucky-flight-confirmation-2-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG5dea7d33"
-    }, 
-    "sms/flight/lucky/lucky-flight-confirmation-3-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG69cf6788"
     }, 
     "sms/flight/lucky/lucky-flight-confirmation-zh": {
       "locale": "zh_Hans_CN", 
@@ -4967,14 +4799,6 @@
     "sms/flight/tianjin/tianjin-cancellation-zh": {
       "locale": "zh_Hans_CN", 
       "shortname": "SGe4de714a"
-    }, 
-    "sms/flight/tianjin/tianjin-confirmation-pay-1-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG5a4d8193"
-    }, 
-    "sms/flight/tianjin/tianjin-confirmation-pay-2-zh": {
-      "locale": "zh_Hans_CN", 
-      "shortname": "SG57bd773b"
     }, 
     "sms/flight/tianjin/tianjin-confirmation-zh": {
       "locale": "zh_Hans_CN", 
@@ -5842,6 +5666,14 @@
       "locale": "unknown", 
       "shortname": "SG246fcf7c"
     }, 
+    "email/flight/aeroflot/aeroflot.ru-confirmation-payment-en": {
+      "locale": "en_US", 
+      "shortname": "SGdaa36178"
+    }, 
+    "email/flight/aircanada/aircanada.ca-Itinerary-jp": {
+      "locale": "ja_JP", 
+      "shortname": "SG24bc6396"
+    }, 
     "email/flight/germanwings/germanwings.com-confirmation-de": {
       "locale": "unknown", 
       "shortname": "SGb802a4f5"
@@ -5849,6 +5681,22 @@
     "email/flight/germanwings/germanwings.com-confirmation-en": {
       "locale": "unknown", 
       "shortname": "SGf24625bf"
+    }, 
+    "email/flight/iberia/iberia.com-confirmation-de": {
+      "locale": "de_DE", 
+      "shortname": "SGeee03e72"
+    }, 
+    "email/flight/iberia/iberia.com-confirmation-en": {
+      "locale": "en_US", 
+      "shortname": "SGaea6c850"
+    }, 
+    "email/flight/iberia/iberia.com-confirmation-es": {
+      "locale": "es_ES", 
+      "shortname": "SG305bc889"
+    }, 
+    "email/flight/iberia/iberia.com-confirmation-fr": {
+      "locale": "fr_FR", 
+      "shortname": "SG5b6a33bd"
     }, 
     "email/flight/jal/jal.com-confirmation-jp": {
       "locale": "ja_JP", 
@@ -5858,9 +5706,93 @@
       "locale": "unknown", 
       "shortname": "SG0562f025"
     }, 
+    "email/flight/jetstar/jetstart-confirmation-en": {
+      "locale": "en_US", 
+      "shortname": "SGa18bd319"
+    }, 
+    "email/flight/lufthansa/lufthansa-schemaorg": {
+      "locale": "unknown", 
+      "shortname": "SG240e70da"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-de": {
+      "locale": "de_DE", 
+      "shortname": "SG6ed3f19d"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-en": {
+      "locale": "en_US", 
+      "shortname": "SG22e4ad3c"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-es": {
+      "locale": "es_ES", 
+      "shortname": "SG4311a120"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-fr": {
+      "locale": "fr_FR", 
+      "shortname": "SGb5e73444"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-it": {
+      "locale": "it_IT", 
+      "shortname": "SGf53d4269"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-ja": {
+      "locale": "ja_JP", 
+      "shortname": "SG8e92413e"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-cancellation-zh_cn": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG8b99c1ff"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-change-en": {
+      "locale": "en_US", 
+      "shortname": "SG2cd78066"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-de": {
+      "locale": "de_DE", 
+      "shortname": "SG8a25d69b"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-en": {
+      "locale": "en_US", 
+      "shortname": "SGafd81162"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-es": {
+      "locale": "es_ES", 
+      "shortname": "SG114a03d7"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-fr": {
+      "locale": "fr_FR", 
+      "shortname": "SG8490cd36"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-it": {
+      "locale": "it_IT", 
+      "shortname": "SG55a5f61f"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-ja": {
+      "locale": "ja_JP", 
+      "shortname": "SG37c5fe38"
+    }, 
+    "email/flight/lufthansa/lufthansa.com-confirmation-zh_cn": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SGcaf83b3e"
+    }, 
     "email/flight/lufthansa/lufthansa.com-travel-information": {
       "locale": "unknown", 
       "shortname": "SG91103af2"
+    }, 
+    "email/flight/transavia/transavia-confirmation-en": {
+      "locale": "en_US", 
+      "shortname": "SGb7a496c5"
+    }, 
+    "email/flight/transavia/transavia-confirmation-es": {
+      "locale": "es_ES", 
+      "shortname": "SGb2c41fba"
+    }, 
+    "email/flight/transavia/transavia-confirmation-fr": {
+      "locale": "fr_FR", 
+      "shortname": "SG75ed47ac"
+    }, 
+    "email/flight/transavia/transavia-confirmation-nl": {
+      "locale": "nl_NL", 
+      "shortname": "SG3713848a"
     }, 
     "email/flight/usairways/usairways.com-departure-reminder-en": {
       "locale": "unknown", 
@@ -5873,6 +5805,42 @@
     "email/hotel/agoda/agoda.com-confirmation-2-en": {
       "locale": "unknown", 
       "shortname": "SG9b4e3edc"
+    }, 
+    "email/hotel/booking/booking-schemaorg-de": {
+      "locale": "de_DE", 
+      "shortname": "SG855c69de"
+    }, 
+    "email/hotel/booking/booking-schemaorg-en": {
+      "locale": "en_US", 
+      "shortname": "SGf486b562"
+    }, 
+    "email/hotel/booking/booking-schemaorg-es": {
+      "locale": "es_ES", 
+      "shortname": "SGf3e9e9ca"
+    }, 
+    "email/hotel/booking/booking-schemaorg-fr": {
+      "locale": "fr_FR", 
+      "shortname": "SG3571e019"
+    }, 
+    "email/hotel/booking/booking-schemaorg-it": {
+      "locale": "it_IT", 
+      "shortname": "SG1873ae63"
+    }, 
+    "email/hotel/booking/booking-schemaorg-jp": {
+      "locale": "ja_JP", 
+      "shortname": "SGefe5ef05"
+    }, 
+    "email/hotel/booking/booking-schemaorg-ko": {
+      "locale": "ko_KR", 
+      "shortname": "SGfad96b0e"
+    }, 
+    "email/hotel/booking/booking-schemaorg-nl": {
+      "locale": "nl_NL", 
+      "shortname": "SG9605576b"
+    }, 
+    "email/hotel/booking/booking-schemaorg-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG3ea76227"
     }, 
     "email/hotel/ihg/holidayinn-express.zh": {
       "locale": "unknown", 
@@ -5910,6 +5878,10 @@
       "locale": "unknown", 
       "shortname": "SG92de2a83"
     }, 
+    "email/tickets/eventbrite/eventbrite.com-confirmation-en": {
+      "locale": "en_US", 
+      "shortname": "SG5c9f7905"
+    }, 
     "email/tickets/eventim/eventim.de-confirmation-de": {
       "locale": "de_DE", 
       "shortname": "SG7de7ae1c"
@@ -5917,6 +5889,10 @@
     "email/tickets/eventim/eventim.de-noevent-de": {
       "locale": "unknown", 
       "shortname": "SGbcd3a4ec"
+    }, 
+    "email/tickets/stubhub/stubhub.com-confirmation-en": {
+      "locale": "en_US", 
+      "shortname": "SG72dac5a3"
     }, 
     "flight/aa/aa.com-cancellation-en": {
       "locale": "unknown", 
@@ -9374,9 +9350,33 @@
       "locale": "unknown", 
       "shortname": "SG9d3dfcbf"
     }, 
+    "sms/car/1hai/1hai-cancellation-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG5a0a6a3c"
+    }, 
     "sms/car/1hai/1hai-noevent-zh": {
       "locale": "unknown", 
       "shortname": "SG331bbbba"
+    }, 
+    "sms/flight/hainanairlines/hainanairlines-cancellation-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG62617e5d"
+    }, 
+    "sms/flight/lucky/lucky-flight-confirmation-2-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG5dea7d33"
+    }, 
+    "sms/flight/lucky/lucky-flight-confirmation-3-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG69cf6788"
+    }, 
+    "sms/flight/tianjin/tianjin-confirmation-pay-1-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG5a4d8193"
+    }, 
+    "sms/flight/tianjin/tianjin-confirmation-pay-2-zh": {
+      "locale": "zh_Hans_CN", 
+      "shortname": "SG57bd773b"
     }, 
     "tickets/4alltickets/4alltickets.nl-confirmation-nl": {
       "locale": "unknown", 

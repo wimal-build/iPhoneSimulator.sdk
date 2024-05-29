@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MediaPlayer/MediaPlayerDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,14 +18,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// MPPlayableContentDataSource) and selects a content item to play. If the media
 /// player decides that it wants to play the item, it will ask the application's
 /// content delegate to initiate playback.
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(7.1, 10.12.2, 7.1)
 @protocol MPPlayableContentDelegate <NSObject>
 @optional
 
 /// This method is called when a media player interface wants to play a requested
 /// content item. The application should call the completion handler with an
 /// appropriate error if there was an error beginning playback for the item.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *)indexPath completionHandler:(void(^)(NSError * __nullable))completionHandler NS_AVAILABLE_IOS(7_1);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *)indexPath completionHandler:(void(^)(NSError * __nullable))completionHandler MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(7.1, 10.12.2, 7.1);
 
 
 /// This method is called when a media player interface wants the now playing
@@ -44,10 +45,10 @@ __TVOS_PROHIBITED
 /// anything it deems appropriate.
 /// The app should call the provided completion handler once it is ready to play
 /// something.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithContentItems:(nullable NSArray *)contentItems completionHandler:(void(^)(NSError * __nullable))completionHandler NS_AVAILABLE_IOS(9_3);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithContentItems:(nullable NSArray *)contentItems completionHandler:(void(^)(NSError * __nullable))completionHandler MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(9.3, 10.12.2, 9.3);
 
 /// This method is called when the content server notifies the manager that the current context has changed.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context NS_AVAILABLE_IOS(8_4);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(8.4, 10.12.2, 8.4);
 
 @end
 

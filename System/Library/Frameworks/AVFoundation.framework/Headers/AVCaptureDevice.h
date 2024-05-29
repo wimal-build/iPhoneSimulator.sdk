@@ -437,21 +437,27 @@ AVF_EXPORT AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInWideAngleCamera N
 AVF_EXPORT AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInTelephotoCamera NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
 
 /*!
- @constant AVCaptureDeviceTypeBuiltInDuoCamera
+ @constant AVCaptureDeviceTypeBuiltInDualCamera
     A device that consists of two fixed focal length cameras, one wide and one telephoto. Note that devices of this type may only be discovered using an AVCaptureDeviceDiscoverySession.
 
     A device of this device type supports the following new features:
     - Auto switching from one camera to the other when zoom factor, light level, and focus position allow this.
-	- Higher quality zoom for still captures by fusing images from both cameras.
+    - Higher quality zoom for still captures by fusing images from both cameras.
 
     A device of this device type does not support the following features:
-	- AVCaptureExposureModeCustom and manual exposure bracketing.
+    - AVCaptureExposureModeCustom and manual exposure bracketing.
     - Locking focus with a lens position other than AVCaptureLensPositionCurrent.
-	- Locking auto white balance with device white balance gains other than AVCaptureWhiteBalanceGainsCurrent.
+    - Locking auto white balance with device white balance gains other than AVCaptureWhiteBalanceGainsCurrent.
 
     Even when locked, exposure duration, ISO, aperture, white balance gains, or lens position may change when the device switches from one camera to the other. The overall exposure, white balance, and focus position however should be consistent.
  */
-AVF_EXPORT AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInDuoCamera NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInDualCamera NS_AVAILABLE_IOS(10_2) __TVOS_PROHIBITED;
+
+/*!
+ @constant AVCaptureDeviceTypeBuiltInDuoCamera
+    A deprecated synonym for AVCaptureDeviceTypeBuiltIntDualCamera. Please use AVCaptureDeviceTypeBuiltInDualCamera instead.
+ */
+AVF_EXPORT AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInDuoCamera NS_DEPRECATED_IOS(10_0, 10_2, "Use AVCaptureDeviceTypeBuiltInDualCamera instead") __TVOS_PROHIBITED;
 
 @interface AVCaptureDevice (AVCaptureDeviceType)
 

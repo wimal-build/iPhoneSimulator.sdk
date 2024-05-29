@@ -9,7 +9,6 @@
 #define INPaymentMethodType_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INPaymentMethodType) {
@@ -22,6 +21,6 @@ typedef NS_ENUM(NSInteger, INPaymentMethodType) {
     INPaymentMethodTypePrepaid,
     INPaymentMethodTypeStore,
     INPaymentMethodTypeApplePay,
-};
+} API_AVAILABLE(ios(10.0));
 
 #endif // INPaymentMethodType_h

@@ -5,8 +5,9 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import <Availability.h>
+#import <os/availability.h>
 #import <VideoSubscriberAccount/VideoSubscriberAccountDefines.h>
+#import <VideoSubscriberAccount/VSAccountProviderResponse.h>
 #import <Foundation/NSObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Specifies which information the app wants to obtain about the subscriber's account.
 /// You should only request the information you need to fulfill your contractual obligations.
-NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
+VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 @interface VSAccountMetadataRequest : NSObject
 
 /// Identifies who is making the request.
@@ -47,6 +48,12 @@ NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
 
 /// Attributes to add to a SAML attributeQuery request and sent to the account provider.
 @property (nonatomic, copy) NSArray<NSString *> *attributeNames;
+
+/// The collection of authentication schemes that the app supports for this request.
+/// This list may be used to determine compatibility of the app with providers.
+/// Defaults to SAML.
+@property (nonatomic, copy) NSArray<VSAccountProviderAuthenticationScheme> *supportedAuthenticationSchemes
+API_AVAILABLE(ios(10.2), tvos(10.1));
 
 @end
 

@@ -175,4 +175,34 @@ HM_EXTERN NSString * const HMServiceTypeMicrophone NS_AVAILABLE_IOS(10_0) __WATC
  */
 HM_EXTERN NSString * const HMServiceTypeSpeaker NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
 
+/*!
+ * @brief Service type for air purifier.
+ */
+HM_EXTERN NSString * const HMServiceTypeAirPurifier NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Service type for ventilation fan.
+ */
+HM_EXTERN NSString * const HMServiceTypeVentilationFan NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Service type for filter maintenance.
+ */
+HM_EXTERN NSString * const HMServiceTypeFilterMaintenance NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Service type for heater/cooler.
+ */
+HM_EXTERN NSString * const HMServiceTypeHeaterCooler NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Service type for humidifier/dehumidifier.
+ */
+HM_EXTERN NSString * const HMServiceTypeHumidifierDehumidifier NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Service type for slats.
+ */
+HM_EXTERN NSString * const HMServiceTypeSlats NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
 NS_ASSUME_NONNULL_END

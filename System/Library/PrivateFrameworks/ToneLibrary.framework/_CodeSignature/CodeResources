@@ -92,11 +92,35 @@
 		<data>
 		LKFKaEge3WfYUob08tSlhIPEBsU=
 		</data>
+		<key>AlertTones/SOS-Countdown-Tick.caf</key>
+		<data>
+		8a/WydRQPoCapxqGol0c0oNOCOA=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		clhplryiLIu6XQ+wxM5VAjRP7c8=
+		N12Sm8Iy07FVnGgu55UCgJMrT08=
 		</data>
-		<key>Vibrations/Other/Text-Message-Alert-In-Conversation.plist</key>
+		<key>Vibrations/Other/Classic/SOS-Countdown-Tick.plist</key>
+		<data>
+		cXTNmuHH02wpywYHca4a0ON2/bk=
+		</data>
+		<key>Vibrations/Other/Classic/SOS-Dial-Start.plist</key>
+		<data>
+		++oiDCHqdI5JjJ4ptZpxOVKO94Q=
+		</data>
+		<key>Vibrations/Other/Classic/Text-Message-Alert-In-Conversation.plist</key>
+		<data>
+		bzWEB8R1gBnIoMEGw2RCtBwsl88=
+		</data>
+		<key>Vibrations/Other/Modern/SOS-Countdown-Tick.plist</key>
+		<data>
+		MnRCFwBbkakfF7dvnCT6r/fq7EY=
+		</data>
+		<key>Vibrations/Other/Modern/SOS-Dial-Start.plist</key>
+		<data>
+		++oiDCHqdI5JjJ4ptZpxOVKO94Q=
+		</data>
+		<key>Vibrations/Other/Modern/Text-Message-Alert-In-Conversation.plist</key>
 		<data>
 		bzWEB8R1gBnIoMEGw2RCtBwsl88=
 		</data>
@@ -474,15 +498,15 @@
 		</data>
 		<key>XPCServices/com.apple.tonelibraryd.xpc/Info.plist</key>
 		<data>
-		WRjyuam/PmRivwc/8W/DPxJ35Xg=
+		DuV8YrvyH5BWbUFyK5Uqr723SrM=
 		</data>
 		<key>XPCServices/com.apple.tonelibraryd.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		Qc6V0fP5PZYMEE7oMNPSPbP/Mz4=
+		cgr7lveIl4LdFjElrRnCta6Qbqw=
 		</data>
 		<key>XPCServices/com.apple.tonelibraryd.xpc/com.apple.tonelibraryd</key>
 		<data>
-		kvUoTqYxTcxwxx08QREd6vuIv+4=
+		Aweq+AypWDQBiqcsDOrCz0PgCEU=
 		</data>
 		<key>ar.lproj/TL.strings</key>
 		<dict>
@@ -605,7 +629,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5c4vaJfhySzqZeFJagYHEHk7Q5g=
+			cs2dCQDVrXd7HvIL34vKoCbQQ6I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -668,7 +692,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0lOsnp+M8+tuiZtSFNM1NnXwkBg=
+			EslTIpxH1j46wW7vJfAEr2M2pNA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -686,7 +710,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BFgtpt9uK3XIAqhEeBOBH2hrcSI=
+			NzLFecLJ3liZ1HioOciAJr4lrt8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -713,7 +737,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/W95FPeX7SM7tWiVMHRDJb7DCm4=
+			7pKx6QLeK5fFD/CwIPDEu2Mo8uc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -917,7 +941,31 @@
 		<data>
 		LKFKaEge3WfYUob08tSlhIPEBsU=
 		</data>
-		<key>Vibrations/Other/Text-Message-Alert-In-Conversation.plist</key>
+		<key>AlertTones/SOS-Countdown-Tick.caf</key>
+		<data>
+		8a/WydRQPoCapxqGol0c0oNOCOA=
+		</data>
+		<key>Vibrations/Other/Classic/SOS-Countdown-Tick.plist</key>
+		<data>
+		cXTNmuHH02wpywYHca4a0ON2/bk=
+		</data>
+		<key>Vibrations/Other/Classic/SOS-Dial-Start.plist</key>
+		<data>
+		++oiDCHqdI5JjJ4ptZpxOVKO94Q=
+		</data>
+		<key>Vibrations/Other/Classic/Text-Message-Alert-In-Conversation.plist</key>
+		<data>
+		bzWEB8R1gBnIoMEGw2RCtBwsl88=
+		</data>
+		<key>Vibrations/Other/Modern/SOS-Countdown-Tick.plist</key>
+		<data>
+		MnRCFwBbkakfF7dvnCT6r/fq7EY=
+		</data>
+		<key>Vibrations/Other/Modern/SOS-Dial-Start.plist</key>
+		<data>
+		++oiDCHqdI5JjJ4ptZpxOVKO94Q=
+		</data>
+		<key>Vibrations/Other/Modern/Text-Message-Alert-In-Conversation.plist</key>
 		<data>
 		bzWEB8R1gBnIoMEGw2RCtBwsl88=
 		</data>
@@ -1295,15 +1343,15 @@
 		</data>
 		<key>XPCServices/com.apple.tonelibraryd.xpc/Info.plist</key>
 		<data>
-		WRjyuam/PmRivwc/8W/DPxJ35Xg=
+		DuV8YrvyH5BWbUFyK5Uqr723SrM=
 		</data>
 		<key>XPCServices/com.apple.tonelibraryd.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		Qc6V0fP5PZYMEE7oMNPSPbP/Mz4=
+		cgr7lveIl4LdFjElrRnCta6Qbqw=
 		</data>
 		<key>XPCServices/com.apple.tonelibraryd.xpc/com.apple.tonelibraryd</key>
 		<data>
-		kvUoTqYxTcxwxx08QREd6vuIv+4=
+		Aweq+AypWDQBiqcsDOrCz0PgCEU=
 		</data>
 		<key>ar.lproj/TL.strings</key>
 		<dict>
@@ -1426,7 +1474,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5c4vaJfhySzqZeFJagYHEHk7Q5g=
+			cs2dCQDVrXd7HvIL34vKoCbQQ6I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1489,7 +1537,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0lOsnp+M8+tuiZtSFNM1NnXwkBg=
+			EslTIpxH1j46wW7vJfAEr2M2pNA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1507,7 +1555,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BFgtpt9uK3XIAqhEeBOBH2hrcSI=
+			NzLFecLJ3liZ1HioOciAJr4lrt8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1534,7 +1582,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/W95FPeX7SM7tWiVMHRDJb7DCm4=
+			7pKx6QLeK5fFD/CwIPDEu2Mo8uc=
 			</data>
 			<key>optional</key>
 			<true/>

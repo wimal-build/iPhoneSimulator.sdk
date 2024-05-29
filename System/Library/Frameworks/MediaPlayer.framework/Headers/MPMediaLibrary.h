@@ -30,8 +30,7 @@ typedef NS_ENUM(NSInteger, MPMediaLibraryAuthorizationStatus) {
     MPMediaLibraryAuthorizationStatusAuthorized,
 } NS_ENUM_AVAILABLE_IOS(9_3);
 
-MP_EXTERN_CLASS_AVAILABLE(3_0)
-__TVOS_PROHIBITED
+MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMediaLibrary : NSObject <NSSecureCoding>
 
 + (MPMediaLibrary *)defaultMediaLibrary;

@@ -9,7 +9,6 @@
 #define INCarSeat_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INCarSeat) {
@@ -25,6 +24,6 @@ typedef NS_ENUM(NSInteger, INCarSeat) {
     INCarSeatThirdRowLeft,
     INCarSeatThirdRowRight,
     INCarSeatThirdRow,
-};
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INCarSeat_h

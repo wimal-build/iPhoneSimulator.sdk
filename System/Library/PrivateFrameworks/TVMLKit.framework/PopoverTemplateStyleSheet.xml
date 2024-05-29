@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .popoverTemplate {
+            
+            }
+            
+            .popover {
+            
+            }
+            
+            .popoverBadge {
+                tv-tint-color: keyblue;
+            }
+            
+            .popoverText {
+                color: keyblue;
+                tv-text-style: title3;
+            }
+        </style>
+    </head>
+    <popoverTemplate class="popoverTemplate">
+        <popover class="popover">
+            <relatedContent>
+                <popoverOption>
+                    <text class="popoverText" />
+                    <title class="popoverText" />
+                    <badge class="popoverBadge" />
+                </popoverOption>
+                <popoverGroup>
+                    <text class="popoverText" />
+                    <title class="popoverText" />
+                    <badge class="popoverBadge" />
+                    <relatedContent>
+                        <popoverOption>
+                            <text class="popoverText" />
+                            <title class="popoverText" />
+                            <badge class="popoverBadge" />
+                        </popoverOption>
+                    </relatedContent>
+                </popoverGroup>
+            </relatedContent>
+        </popover>
+    </popoverTemplate>
+</document>

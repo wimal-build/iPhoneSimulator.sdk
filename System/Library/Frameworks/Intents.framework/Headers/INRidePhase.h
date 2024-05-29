@@ -9,7 +9,6 @@
 #define INRidePhase_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INRidePhase) {
@@ -20,6 +19,6 @@ typedef NS_ENUM(NSInteger, INRidePhase) {
     INRidePhaseCompleted,
     INRidePhaseApproachingPickup,
     INRidePhasePickup,
-};
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INRidePhase_h

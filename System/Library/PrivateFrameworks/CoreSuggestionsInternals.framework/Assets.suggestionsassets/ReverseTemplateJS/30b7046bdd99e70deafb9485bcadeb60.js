@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("thomson-confirmation-en",function(e){return/^Successful Booking/.test(e.subject)},function(e){if(/^Successful Booking/.test(e.subject)){var n="en_GB",o={},t=loadHelper("thomson-confirmation-skeleton.js");return o.reservationId_prefix="Flight booking reference:",o.underPersonName_prefix="Passengers",o.totalPrice_prefix="Total cost of booking:",o.flightLegs_prefix="Your itinerary",t(e,n,o)}},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/244/599/601","SG8d17827d")]);

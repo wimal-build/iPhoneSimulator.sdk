@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("4alltickets.nl-confirmation-nl",function(e){return/4AllTickets Bestelling/.test(e.subject)},function(e){if(!/4AllTickets Bestelling/.test(e.subject))return CONTINUE;var t,l="nl_NL",i={};return i.personUnderNamePrefix="Mr|Mevr|missen|mevrouw",i.ticketsBlockPrefix="Hoeveelheid",i.priceBlockPrefix="Totaal artikelprijzen",i.pricePrefix="Totaal",(t=loadHelper("4alltickets.nl-confirmation-skeleton.js"))(e,l,i)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1340/1341/1342","SG7055096e")]);

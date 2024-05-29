@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-MP_EXTERN NSString * const MPErrorDomain NS_AVAILABLE_IOS(9_3);
+MP_EXTERN NSString * const MPErrorDomain NS_AVAILABLE(10_12_2, 9_3);
 
 // error codes for the MPErrorDomain
 typedef NS_ENUM(NSInteger, MPErrorCode) {

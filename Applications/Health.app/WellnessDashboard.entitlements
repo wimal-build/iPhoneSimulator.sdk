@@ -69,6 +69,7 @@
 	<key>com.apple.security.exception.mach-lookup.global-name</key>
 	<array>
 		<string>com.apple.telephonyutilities.callservicesdaemon.callprovidermanager</string>
+		<string>com.apple.private.healthcloudd.server</string>
 	</array>
 	<key>com.apple.excludes-extensions</key>
 	<true/>
@@ -76,6 +77,17 @@
 	<array>
 		<string>/Media/PhotoData/</string>
 		<string>/Library/UserConfigurationProfile/</string>
+	</array>
+	<key>com.apple.sos.contacts</key>
+	<true/>
+	<key>com.apple.security.exception.shared-preference.read-write</key>
+	<array>
+		<string>com.apple.SOS</string>
+		<string>com.apple.mobilephone</string>
+	</array>
+	<key>com.apple.CommCenter.fine-grained</key>
+	<array>
+		<string>spi</string>
 	</array>
 </dict>
 </plist>

@@ -9,7 +9,6 @@
 #define INRelativeSetting_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_ENUM(NSInteger, INRelativeSetting) {
@@ -18,6 +17,6 @@ typedef NS_ENUM(NSInteger, INRelativeSetting) {
     INRelativeSettingLower,
     INRelativeSettingHigher,
     INRelativeSettingHighest,
-};
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INRelativeSetting_h

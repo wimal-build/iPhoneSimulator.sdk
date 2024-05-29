@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // A request for a speech recognition from an audio source
+API_AVAILABLE(ios(10.0))
 @interface SFSpeechRecognitionRequest : NSObject
 
 @property (nonatomic) SFSpeechRecognitionTaskHint taskHint;
@@ -29,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 // A request to recognize speech from a recorded audio file
+API_AVAILABLE(ios(10.0))
 @interface SFSpeechURLRecognitionRequest : SFSpeechRecognitionRequest
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -41,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 // A request to recognize speech from arbitrary audio buffers
+API_AVAILABLE(ios(10.0))
 @interface SFSpeechAudioBufferRecognitionRequest : SFSpeechRecognitionRequest
 
 // Preferred audio format for optimal speech recognition

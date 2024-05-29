@@ -5,14 +5,14 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import <Availability.h>
+#import <os/availability.h>
 #import <Foundation/NSObject.h>
 #import <VideoSubscriberAccount/VideoSubscriberAccountDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Represents an in-flight request to an account manger.
-NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
+VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 @interface VSAccountManagerResult : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

@@ -505,4 +505,162 @@ HM_EXTERN NSString * const HMCharacteristicTypeImageRotation NS_AVAILABLE_IOS(10
  */
 HM_EXTERN NSString * const HMCharacteristicTypeImageMirroring NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
 
+/*!
+ * @brief Characteristic type for active status. The value is boolean.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeActive NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for air purifier current state. The value is
+ *        one of the value defined for HMCharacteristicValueCurrentAirPurifierState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeCurrentAirPurifierState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for air purifier target state. The value is
+ *        one of the value defined for HMCharacteristicValueTargetAirPurifierState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeTargetAirPurifierState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for current fan state. The value is
+ *        one of the values defined for HMCharacteristicValueCurrentFanState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeCurrentFanState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for heater/cooler current state. The value is
+ *        one of the values defined for HMCharacteristicValueCurrentHeaterCoolerState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeCurrentHeaterCoolerState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for humidifier/dehumidifier current state. The value is
+ *        one of the values defined for HMCharacteristicValueCurrentHumidifierDehumidifierState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeCurrentHumidifierDehumidifierState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for current slat state. The value is
+ *        one of the values defined for HMCharacteristicValueCurrentSlatState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeCurrentSlatState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for water level. The value is in percentage units.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeWaterLevel NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for filter change indication. The value is
+ *        one of the values defined for HMCharacteristicValueFilterChange.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeFilterChangeIndication NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for filter life level. The value is in percentage units.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeFilterLifeLevel NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for resetting filter change indication. The characteristic
+ *        is write-only that takes a boolean value of 1.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeFilterResetChangeIndication NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for locking physical controls. The value is
+ *        one of the values defined for HMCharacteristicValueLockPhysicalControlsState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeLockPhysicalControls NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for swing mode. The value is
+ *        one of the values defined for HMCharacteristicValueSwingMode.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeSwingMode NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for target heater/cooler state. The value is
+ *        one of the values defined for HMCharacteristicValueTargetHeaterCoolerState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeTargetHeaterCoolerState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for target humidifier/dehumidifier state. The value
+ *        is one of the values defined for HMCharacteristicValueTargetHumidifierDehumidifierState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeTargetHumidifierDehumidifierState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for target fan state. The value is
+ *        one of the values defined for HMCharacteristicValueTargetFanState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeTargetFanState NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for slat type. The value is
+ *        one of the values defined for HMCharacteristicValueSlatType.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeSlatType NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for current tilt angle. The value is a float representing the angle in arc degrees.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeCurrentTilt NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for target tilt angle. The value is a float representing the angle in arc degrees.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeTargetTilt NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for density of ozone. The value of the characteristic is
+ *        in units of micrograms/m^3.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeOzoneDensity NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for density of nitrogen dioxide. The value of the characteristic is
+ *        in units of micrograms/m^3.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeNitrogenDioxideDensity NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for density of sulphur dioxide. The value of the characteristic is
+ *        in units of micrograms/m^3.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeSulphurDioxideDensity NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for density of air-particulate matter of size 2.5 micrograms. The
+ *        value of the characteristic is in units of micrograms/m^3.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypePM2_5Density NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for density of air-particulate matter of size 10 micrograms. The
+ *        value of the characteristic is in units of micrograms/m^3.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypePM10Density NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for density of volatile organic compounds. The value of the
+ *        characteristic is in units of micrograms/m^3.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeVolatileOrganicCompoundDensity NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for dehumidifier threshold. The value of the characteristic is
+ *        a float value in percent.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeDehumidifierThreshold NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Characteristic type for humidifier threshold. The value of the characteristic is
+ *        a float value in percent.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeHumidifierThreshold NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+
 NS_ASSUME_NONNULL_END

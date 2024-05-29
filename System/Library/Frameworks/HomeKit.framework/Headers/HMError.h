@@ -104,6 +104,7 @@ typedef NS_ENUM(NSInteger, HMErrorCode) {
     HMErrorCodeInvalidOrMissingAuthorizationData       NS_ENUM_AVAILABLE_IOS(10) = 87,
     HMErrorCodeBridgedAccessoryNotReachable            NS_ENUM_AVAILABLE_IOS(10) = 88,
     HMErrorCodeNotAuthorizedForMicrophoneAccess        NS_ENUM_AVAILABLE_IOS(10) = 89,
+    HMErrorCodeIncompatibleNetwork                     NS_ENUM_AVAILABLE_IOS(10_2) = 90,
 } NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 
 NS_ASSUME_NONNULL_END

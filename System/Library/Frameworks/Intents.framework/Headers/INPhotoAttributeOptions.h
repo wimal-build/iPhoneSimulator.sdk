@@ -9,7 +9,6 @@
 #define INPhotoAttributeOptions_h
 
 #import <Foundation/Foundation.h>
-
 #import <Intents/IntentsDefines.h>
 
 typedef NS_OPTIONS(NSUInteger, INPhotoAttributeOptions) {
@@ -37,6 +36,6 @@ typedef NS_OPTIONS(NSUInteger, INPhotoAttributeOptions) {
     INPhotoAttributeOptionMonoFilter = (1UL << 21),
     INPhotoAttributeOptionFadeFilter = (1UL << 22),
     INPhotoAttributeOptionProcessFilter = (1UL << 23),
-};
+} API_AVAILABLE(ios(10.0));
 
 #endif // INPhotoAttributeOptions_h

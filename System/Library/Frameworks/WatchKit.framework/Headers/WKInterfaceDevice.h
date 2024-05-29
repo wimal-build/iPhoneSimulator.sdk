@@ -53,6 +53,7 @@ typedef NS_ENUM(NSInteger, WKWaterResistanceRating) {
     WKWaterResistanceRatingWR50 NS_SWIFT_NAME(wr50),
 } WK_AVAILABLE_WATCHOS_ONLY(3.0);
 #endif
+
 @interface WKInterfaceDevice : NSObject
 
 + (WKInterfaceDevice *)currentDevice;
@@ -82,6 +83,7 @@ typedef NS_ENUM(NSInteger, WKWaterResistanceRating) {
 #if TARGET_OS_WATCH
 @property (nonatomic,readonly) WKWaterResistanceRating waterResistanceRating WK_AVAILABLE_WATCHOS_ONLY(3.0);
 #endif
+
 - (void)playHaptic:(WKHapticType)type WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
 @end

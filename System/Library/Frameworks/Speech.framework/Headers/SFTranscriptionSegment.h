@@ -8,6 +8,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // Substrings of a hypothesized transcription
+API_AVAILABLE(ios(10.0))
 @interface SFTranscriptionSegment : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly, copy) NSString *substring;

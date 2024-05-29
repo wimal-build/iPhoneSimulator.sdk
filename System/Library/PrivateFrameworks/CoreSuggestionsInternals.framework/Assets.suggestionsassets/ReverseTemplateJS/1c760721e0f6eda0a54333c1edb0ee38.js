@@ -1,0 +1,2 @@
+// Copyright 2014 Apple Inc.  All Rights Reserved.
+new ReverseTemplateList([new ReverseTemplate("tickets-generic",function(e){return loadHelper("shouldDownloadMessageWithClassifier.js")(e)},function(e){var s=(loadHelper("UseCaseEnum.js"),loadHelper("UseCaseClassifierModeEnum.js")),l=loadHelper("UseCase.js")(s.Regular,e.subject,e.from),a=loadHelper("vocab.js")(l.locale);return jsClassifierLogs=l,loadHelper("genericskeleton.js")(e,l.locale,a,l.use_case)},"0/1/2/3/4/5/6/5/7/7/7/7/4/8/9/1340/1012/1461","SGe36f3d99")]);

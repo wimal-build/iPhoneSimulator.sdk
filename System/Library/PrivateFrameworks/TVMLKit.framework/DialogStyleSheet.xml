@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <style>
+            .title {
+                tv-text-style: headline;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                max-width: 960;
+                tv-text-max-lines: 4;
+            }
+            .description {
+                tv-text-style: body;
+                color: rgb(255, 255, 255);
+                tv-text-max-lines: 6;
+                text-align: center;
+                max-width: 960;
+                margin: 22 0 37;
+            }
+            .text {
+                tv-text-style: caption2;
+                color: rgb(255, 255, 255);
+                tv-text-max-lines: 2;
+                text-align: center;
+                max-width: 960;
+                margin: 21 0;
+            }
+            .button {
+                max-width: 960;
+                min-width: 340;
+                height: 66pt;
+                padding: 0 39;
+                margin: 34 0 44;
+            }
+            .buttonText {
+                tv-text-style: headline;
+            }
+            .template {
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <dialogTemplate class="template">
+        <title class="title"/>
+        <description class="description"/>
+        <button class="button">
+            <text class="buttonText"/>
+        </button>
+        <text class="text"/>
+    </dialogTemplate>
+</document>

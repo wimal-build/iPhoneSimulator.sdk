@@ -5,7 +5,7 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import <Availability.h>
+#import <os/availability.h>
 #import <Foundation/NSObject.h>
 #import <VideoSubscriberAccount/VideoSubscriberAccountDefines.h>
 
@@ -13,9 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class NSDate;
 @class NSString;
+@class VSAccountProviderResponse;
 
 /// A collection of information about a subscriber's account.
-NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
+VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 @interface VSAccountMetadata : NSObject
 
 /// A value that uniquely identifies the account provider.
@@ -33,6 +34,12 @@ NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10.0) __WATCHOS_UNAVAILABLE
 /// The SAML AttributeQuery response received from the account provider.
 /// The value might be nil if your account metadata request did not specify any SAML attributes or if the user does not have a valid authentication.
 @property (nonatomic, readonly, copy, nullable) NSString *SAMLAttributeQueryResponse;
+
+/// The response received from the account provider.
+/// The value might be nil if your account metadata request did not specify any
+/// attributes, or if the user does not have a valid authentication.
+@property (nonatomic, readonly, strong, nullable) VSAccountProviderResponse *accountProviderResponse
+API_AVAILABLE(ios(10.2), tvos(10.1));
 
 @end
 
