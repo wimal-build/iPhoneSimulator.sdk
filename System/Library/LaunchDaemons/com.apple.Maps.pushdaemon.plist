@@ -11,6 +11,11 @@
 				<key>Notification</key>
 				<string>com.apple.GeoServices.countryCodeChanged</string>
 			</dict>
+			<key>com.apple.Preferences.ResetPrivacyWarningsNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.Preferences.ResetPrivacyWarningsNotification</string>
+			</dict>
 		</dict>
 		<key>com.apple.xpc.activity</key>
 		<dict>

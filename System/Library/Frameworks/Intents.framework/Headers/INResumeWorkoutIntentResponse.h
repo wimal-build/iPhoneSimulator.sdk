@@ -14,11 +14,11 @@ typedef NS_ENUM(NSInteger, INResumeWorkoutIntentResponseCode) {
     INResumeWorkoutIntentResponseCodeFailure,
     INResumeWorkoutIntentResponseCodeFailureRequiringAppLaunch,
     INResumeWorkoutIntentResponseCodeFailureNoMatchingWorkout,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), watchos(3.2))
 API_UNAVAILABLE(macosx)
 @interface INResumeWorkoutIntentResponse : INIntentResponse
 
@@ -30,7 +30,6 @@ API_UNAVAILABLE(macosx)
 - (instancetype)initWithCode:(INResumeWorkoutIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INResumeWorkoutIntentResponseCode code;
-
 @end
 
 NS_ASSUME_NONNULL_END

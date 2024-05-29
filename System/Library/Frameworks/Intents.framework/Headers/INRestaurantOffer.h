@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @interface INRestaurantOffer : NSObject <NSSecureCoding, NSCopying>
 
 @property (copy, NS_NONATOMIC_IOSONLY) NSString *offerTitleText;

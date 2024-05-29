@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED @interface UILocalizedIndexedCollation : NSObject
+NS_CLASS_AVAILABLE_IOS(3_0) @interface UILocalizedIndexedCollation : NSObject
 
 + (instancetype)currentCollation;
 

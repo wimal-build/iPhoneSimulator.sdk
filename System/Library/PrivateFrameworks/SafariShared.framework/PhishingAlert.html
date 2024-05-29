@@ -36,6 +36,10 @@
             -webkit-user-select: none;
         }
 
+        #title {
+            overflow: hidden;
+        }
+
         .alert {
             background-color: white;
             min-width: 320px;
@@ -117,9 +121,10 @@
         }
 
         #exclamation {
+            float: left;
             width: 30px;
-            top: 3px;
-            margin-right: 10px;
+            top: 4px;
+            margin-right: 15px;
             position: relative;
         }
 
@@ -231,14 +236,23 @@
                 fill: var(--compact-font-color);
             }
         }
+
+        /* RTL support */
+
+        html[dir="rtl"] .bottom-bar button {
+            float: left;
+        }
+
+        html[dir="rtl"] #exclamation {
+            float: right;
+            margin-left: 15px;
+            margin-right: 0;
+        }
+
     </style>
     <script type="text/javascript" src="safari-resource:/Utilities.js" charset="utf-8"></script>
     <script type="text/javascript" src="safari-resource:/WBSHTMLViewController.js" charset="utf-8"></script>
     <script type="text/javascript">
-        const googleMalwareDetailsURL = "https://google.com/safebrowsing/diagnostic?tpl=safari";
-        const reportAnErrorURL = "https://www.google.com/safebrowsing/report_error/?tpl=safari";
-        const learnMoreAboutPhishingFromGoogleURL = "https://www.google.com/support/bin/answer.py?answer=106318";
-
         var PhishingAlert = {
             _host: undefined,
             _source: undefined,
@@ -270,6 +284,7 @@
                     return;
                 this._currentURL = value;
 
+                var reportAnErrorURL = PhishingAlertController.reportAnErrorURL(this.source);
                 document.getElementById("report-an-error").href = "%@&url=%@&hl=%@".format(reportAnErrorURL, escape(this.currentURL), navigator.language);
             },
 
@@ -304,6 +319,11 @@
                 PhishingAlertController.loaded();
                 window.addEventListener("resize", layOut, false);
                 layOut();
+            },
+
+            setTextDirection: function(textDirection)
+            {
+                document.documentElement.setAttribute("dir", textDirection);
             },
 
             updateUI: function(source, type, host, canGoBack, currentURL)
@@ -343,12 +363,17 @@
 
             updateDetailsStrings: function()
             {
+                var source = this.source;
+                var safeBrowsingProvider = PhishingAlertController.safeBrowsingProviderString(source);
+                var malwareDetailsURL = PhishingAlertController.malwareDetailsURL(source);
+                var learnMoreAboutPhishingURL = PhishingAlertController.learnMoreAboutPhishingURL(source);
+
                 switch (this.type) {
                 case "malware":
                     var details = document.getElementById("malware-details");
 
-                    var firstParagraph = HTMLViewController.UIString("Safari warns you about websites where malicious software has been detected. You can check the %status-link% on the Google Safe Browsing diagnostic page.");
-                    var statusLinkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(googleMalwareDetailsURL, escape(this.host), navigator.language, HTMLViewController.UIString("malware status of “%site%”").replace("%site%", this.host));
+                    var firstParagraph = HTMLViewController.UIString("Safari warns you about websites where malicious software has been detected. You can check the %status-link% on the %safeBrowsingProvider% diagnostic page.").replace("%safeBrowsingProvider%", safeBrowsingProvider);
+                    var statusLinkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(malwareDetailsURL, escape(this.host), navigator.language, HTMLViewController.UIString("malware status of “%site%”").replace("%site%", this.host));
                     firstParagraph = firstParagraph.replace("%status-link%", statusLinkHTML);
 
                     var secondParagraph = HTMLViewController.UIString("If you understand the risks involved, you can %visit-this-unsafe-site-link%.");
@@ -366,7 +391,7 @@
 
                     var learnMoreAnchor = document.createElement("a");
                     learnMoreAnchor.innerText = HTMLViewController.UIString("Learn more…");
-                    learnMoreAnchor.href = "%@&hl=%@".format(learnMoreAboutPhishingFromGoogleURL, navigator.language);
+                    learnMoreAnchor.href = "%@&hl=%@".format(learnMoreAboutPhishingURL, navigator.language);
                     firstParagraph = firstParagraph.replace("%phishing-learn-more%", learnMoreAnchor.outerHTML)
 
                     var secondParagraph = HTMLViewController.UIString("If you believe this website is safe, you can %report-an-error%. Or, if you understand the risks involved, you can %bypass-link%.");
@@ -386,7 +411,7 @@
                     var details = document.getElementById("unwantedSoftware-details");
 
                     var firstParagraph = HTMLViewController.UIString("Safari warns you about websites where harmful software has been detected. You can check %the-status-of-site% on the Google Safe Browsing diagnostic page.");
-                    var statusLinkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(googleMalwareDetailsURL, escape(this.host), navigator.language, HTMLViewController.UIString("the status of “%site%”").replace("%site%", this.host));
+                    var statusLinkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(malwareDetailsURL, escape(this.host), navigator.language, HTMLViewController.UIString("the status of “%site%”").replace("%site%", this.host));
                     firstParagraph = firstParagraph.replace("%the-status-of-site%", statusLinkHTML);
 
                     var secondParagraph = HTMLViewController.UIString("If you understand the risks involved, you can %visit-this-unsafe-site-link%.");
@@ -442,14 +467,12 @@
 <body>
     <div id="alert" class="alert phishing google">
         <h1>
-            <span>
-                <svg id="exclamation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
-                    <circle class="exclamation-circle" cx="15" cy="15" r="14"/>
-                    <circle class="explaimation-mark" cx="15" cy="22.3" r="1.6"/>
-                    <path class="explaimation-mark" d="M15,18.2L15,18.2c-0.9,0-1.6-0.7-1.6-1.6V7.9c0-0.9,0.7-1.6,1.6-1.6h0c0.9,0,1.6,0.7,1.6,1.6v8.8 C16.6,17.5,15.9,18.2,15,18.2z"/>
-                </svg>
-            <span>
-            <span id="title"></span>
+            <svg id="exclamation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                <circle class="exclamation-circle" cx="15" cy="15" r="14"/>
+                <circle class="explaimation-mark" cx="15" cy="22.3" r="1.6"/>
+                <path class="explaimation-mark" d="M15,18.2L15,18.2c-0.9,0-1.6-0.7-1.6-1.6V7.9c0-0.9,0.7-1.6,1.6-1.6h0c0.9,0,1.6,0.7,1.6,1.6v8.8 C16.6,17.5,15.9,18.2,15,18.2z"/>
+            </svg>
+            <div id="title"></div>
         </h1>
         <div class="alert-body">
             <div class="malware">

@@ -30,7 +30,6 @@ API_UNAVAILABLE(watchos, macosx)
 - (instancetype)initWithCode:(INSetProfileInCarIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INSetProfileInCarIntentResponseCode code;
-
 @end
 
 NS_ASSUME_NONNULL_END

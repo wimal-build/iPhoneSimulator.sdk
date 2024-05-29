@@ -14,10 +14,12 @@
 @class INSpeakableStringResolutionResult;
 @class INIntegerResolutionResult;
 @class INPaymentMethod;
+@class INDateComponentsRange;
+@class INDateComponentsRangeResolutionResult;
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), watchos(3.2))
 API_UNAVAILABLE(macosx)
 @interface INRequestRideIntent : INIntent
 
@@ -25,7 +27,8 @@ API_UNAVAILABLE(macosx)
                        dropOffLocation:(nullable CLPlacemark *)dropOffLocation
                         rideOptionName:(nullable INSpeakableString *)rideOptionName
                              partySize:(nullable NSNumber *)partySize
-                         paymentMethod:(nullable INPaymentMethod *)paymentMethod NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT;
+                         paymentMethod:(nullable INPaymentMethod *)paymentMethod
+                   scheduledPickupTime:(nullable INDateComponentsRange *)scheduledPickupTime NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT API_AVAILABLE(ios(10.3), watchos(3.2));
 
 // Specifies the location to to begin the ride.
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) CLPlacemark *pickupLocation;
@@ -40,6 +43,8 @@ API_UNAVAILABLE(macosx)
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INPaymentMethod *paymentMethod;
 
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INDateComponentsRange *scheduledPickupTime API_AVAILABLE(ios(10.3), watchos(3.2));
+
 @end
 
 @class INRequestRideIntentResponse;
@@ -50,7 +55,7 @@ API_UNAVAILABLE(macosx)
  @discussion The minimum requirement for an implementing class is that it should be able to handle the intent. The resolution and confirmation methods are optional. The handling method is always called last, after resolving and confirming the intent.
  */
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), watchos(3.2))
 API_UNAVAILABLE(macosx)
 @protocol INRequestRideIntentHandling <NSObject>
 
@@ -111,6 +116,9 @@ API_UNAVAILABLE(macosx)
 
 - (void)resolvePartySizeForRequestRide:(INRequestRideIntent *)intent
                         withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolvePartySize(forRequestRide:with:));
+
+- (void)resolveScheduledPickupTimeForRequestRide:(INRequestRideIntent *)intent
+                                  withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveScheduledPickupTime(forRequestRide:with:))API_AVAILABLE(ios(10.3), watchos(3.2));
 
 @end
 

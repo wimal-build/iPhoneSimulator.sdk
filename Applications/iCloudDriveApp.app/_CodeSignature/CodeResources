@@ -58,13 +58,13 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		80M65vdBmYiZ0VYCRj6TdFXTmpo=
+		YnjURa0080JccA7yZMmdaR+3Dm8=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KUtAStPqL6Hnak/A6MRhhiMP79k=
+			gZBBpF8Hg0/GDvygjn34f8Hipgg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -74,6 +74,15 @@
 			<key>hash</key>
 			<data>
 			aT9sMBqgqQSm3JcWjuldW/Lam1w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -146,6 +155,15 @@
 			<key>hash</key>
 			<data>
 			65Gp0X+FPafgtqNphTC7ZtB68kY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SGXB0f9k/n0avr4OIAS5ONIq1V4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +242,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		LFBUaavKWQeBtzZJc0lRSwT0F6o=
+		yV/VZqPlPbSOlZ2KLd/SCRklj4Y=
 		</data>
 		<key>Italian.lproj/InfoPlist.strings</key>
 		<dict>
@@ -374,6 +392,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -406,6 +433,15 @@
 			<key>hash</key>
 			<data>
 			BrB947OVPryHM0/F3cBv4TSdJs0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -581,6 +617,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -613,6 +658,15 @@
 			<key>hash</key>
 			<data>
 			HM1y6wKvZMafJBuB46D7RvFTeYY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -666,7 +720,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MbwTl0847gGxJfvCDQvze0H1dxQ=
+			UfHxWtxOvhTuwN4YDJMJafNKvZs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -684,7 +738,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dd3TTDFelgKfshFZfkz9CPthW9Y=
+			Y1+yik8RoKI5uUuMJ4BxLc/9Rxw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -739,6 +793,15 @@
 			<key>hash</key>
 			<data>
 			3j9u8AUZyk0MFciB7kyvvABb6dA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -810,7 +873,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+AcTtlc/lh39ZzrswPGaDqgVW28=
+			9h6CzA94vMSQ4Bz/QbOW/e+vejw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -907,7 +970,7 @@
 		</dict>
 		<key>iCloudDriveApp.entitlements</key>
 		<data>
-		IQkiz7cbC3GlwLriQ+GhL/V7/6Y=
+		44KLYdH05rjw1oRd6aS645r3qZk=
 		</data>
 		<key>iCloudDriveApp.sb</key>
 		<data>
@@ -963,6 +1026,15 @@
 			<key>hash</key>
 			<data>
 			FDir+izljwWGFqqTqLdpgeVOHYA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1048,6 +1120,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1080,6 +1161,15 @@
 			<key>hash</key>
 			<data>
 			W5fsOc2bO7TA9FZK58s6rDbLZOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SGXB0f9k/n0avr4OIAS5ONIq1V4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1196,7 +1286,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ahq+AeEIWsgd4iMe2cSm3Kizsf4=
+			aiE3Fl7otbolCrxGt3HxqcehLz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1206,6 +1296,15 @@
 			<key>hash</key>
 			<data>
 			NX66BmEY8ebKb8B0durxWRLdExY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1242,6 +1341,15 @@
 			<key>hash</key>
 			<data>
 			92FCwuBe3MX3ZIHcfIdqr8CX+4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SGXB0f9k/n0avr4OIAS5ONIq1V4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1327,6 +1435,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1408,6 +1525,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1430,7 +1556,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s/HsvYYgjMifodUHDPIvkhvuzP8=
+			Ez43rIlgaBj2DHBpHEsCC6tH6e8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1440,6 +1566,15 @@
 			<key>hash</key>
 			<data>
 			L4XaS/Kc6WtnaHMQXtRz3zj9OgU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1471,15 +1606,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		2464tWkzeiUbxoyrKHInGqMuROU=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			HWLqGslihcT4XTy0oIcOyM5CuoI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1520,6 +1660,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1556,6 +1705,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1588,6 +1746,15 @@
 			<key>hash</key>
 			<data>
 			ox1fWcpjY+Wc3Z96B9tYoHVdjD0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1676,13 +1843,13 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		80M65vdBmYiZ0VYCRj6TdFXTmpo=
+		YnjURa0080JccA7yZMmdaR+3Dm8=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KUtAStPqL6Hnak/A6MRhhiMP79k=
+			gZBBpF8Hg0/GDvygjn34f8Hipgg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1692,6 +1859,15 @@
 			<key>hash</key>
 			<data>
 			aT9sMBqgqQSm3JcWjuldW/Lam1w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Dutch.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1764,6 +1940,15 @@
 			<key>hash</key>
 			<data>
 			65Gp0X+FPafgtqNphTC7ZtB68kY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>French.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SGXB0f9k/n0avr4OIAS5ONIq1V4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1984,6 +2169,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>ar.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2016,6 +2210,15 @@
 			<key>hash</key>
 			<data>
 			BrB947OVPryHM0/F3cBv4TSdJs0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2191,6 +2394,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en_AU.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en_AU.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2223,6 +2435,15 @@
 			<key>hash</key>
 			<data>
 			HM1y6wKvZMafJBuB46D7RvFTeYY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2276,7 +2497,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MbwTl0847gGxJfvCDQvze0H1dxQ=
+			UfHxWtxOvhTuwN4YDJMJafNKvZs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2294,7 +2515,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dd3TTDFelgKfshFZfkz9CPthW9Y=
+			Y1+yik8RoKI5uUuMJ4BxLc/9Rxw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2349,6 +2570,15 @@
 			<key>hash</key>
 			<data>
 			3j9u8AUZyk0MFciB7kyvvABb6dA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2420,7 +2650,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+AcTtlc/lh39ZzrswPGaDqgVW28=
+			9h6CzA94vMSQ4Bz/QbOW/e+vejw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2517,7 +2747,7 @@
 		</dict>
 		<key>iCloudDriveApp.entitlements</key>
 		<data>
-		IQkiz7cbC3GlwLriQ+GhL/V7/6Y=
+		44KLYdH05rjw1oRd6aS645r3qZk=
 		</data>
 		<key>iCloudDriveApp.sb</key>
 		<data>
@@ -2573,6 +2803,15 @@
 			<key>hash</key>
 			<data>
 			FDir+izljwWGFqqTqLdpgeVOHYA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2658,6 +2897,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>no.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>no.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2690,6 +2938,15 @@
 			<key>hash</key>
 			<data>
 			W5fsOc2bO7TA9FZK58s6rDbLZOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SGXB0f9k/n0avr4OIAS5ONIq1V4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2806,7 +3063,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ahq+AeEIWsgd4iMe2cSm3Kizsf4=
+			aiE3Fl7otbolCrxGt3HxqcehLz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2816,6 +3073,15 @@
 			<key>hash</key>
 			<data>
 			NX66BmEY8ebKb8B0durxWRLdExY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2852,6 +3118,15 @@
 			<key>hash</key>
 			<data>
 			92FCwuBe3MX3ZIHcfIdqr8CX+4w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SGXB0f9k/n0avr4OIAS5ONIq1V4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2937,6 +3212,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sv.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>sv.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3018,6 +3302,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tr.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3040,7 +3333,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s/HsvYYgjMifodUHDPIvkhvuzP8=
+			Ez43rIlgaBj2DHBpHEsCC6tH6e8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3050,6 +3343,15 @@
 			<key>hash</key>
 			<data>
 			L4XaS/Kc6WtnaHMQXtRz3zj9OgU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3081,15 +3383,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		2464tWkzeiUbxoyrKHInGqMuROU=
-		</data>
 		<key>vi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			HWLqGslihcT4XTy0oIcOyM5CuoI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3130,6 +3437,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_CN.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_CN.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3166,6 +3482,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>zh_HK.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>zh_HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3198,6 +3523,15 @@
 			<key>hash</key>
 			<data>
 			ox1fWcpjY+Wc3Z96B9tYoHVdjD0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OkFcAVsbzKthYTiuhoKjNdYipVM=
 			</data>
 			<key>optional</key>
 			<true/>

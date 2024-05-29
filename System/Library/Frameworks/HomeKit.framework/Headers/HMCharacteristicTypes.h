@@ -506,6 +506,23 @@ HM_EXTERN NSString * const HMCharacteristicTypeImageRotation NS_AVAILABLE_IOS(10
 HM_EXTERN NSString * const HMCharacteristicTypeImageMirroring NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
 
 /*!
+ * @brief Characteristic type for label namespace used to label the services on an accessory with
+ *        multiple services of the same type. The value of the characteristic is one of the values
+ *        defined for HMCharacteristicValueLabelNamespace.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeLabelNamespace NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+
+/*!
+ * @brief Characteristic type describing the index of the label for the service on accessory with multiple
+ *        instances of the same service. The value is an integer and starts from 1.
+ *        For a label namespace of HMCharacteristicValueLabelNamespaceDot, label index indicates the
+ *        number of dots - ., .., ..., and so on.
+ *        For a label namespace of HMCharacteristicValueLabelNamespaceNumeral, label index indicates the arabic
+ *        numeral - 1, 2, 3, and so on.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeLabelIndex NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+
+/*!
  * @brief Characteristic type for active status. The value is boolean.
  */
 HM_EXTERN NSString * const HMCharacteristicTypeActive NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);

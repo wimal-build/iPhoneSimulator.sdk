@@ -4,12 +4,13 @@
         <style>
             .list {
                 tv-align: left;
-                width: 486;
-                margin:0 81 0 115;
+                width: 567;
+				padding: 50 81 60 0;
+                margin:0 0 0 115;
                 tv-interitem-spacing: 16;
             }
             .rcLockup {
-                margin: 136 238 0 230;
+                margin: 136 238 0 149;
             }
 
             .rcActivity {
@@ -17,8 +18,7 @@
             }
             
             .rcGrid {
-                margin: 0 90 0 81;
-                padding: 0 0 60 0;
+                padding: 0 90 60 0;
                 tv-interitem-spacing: 51px;
             }
             .rcGridHeader {
@@ -80,14 +80,22 @@
 
             @media tv-template and (-tv-uber) {
                 .rcLockup {
-                    margin: -100 238 0 230;
+                    margin: -100 238 0 149;
                 }
             }
 
             @media tv-template and (-tv-uber) and (-tv-header) {
                 .list {
-                    margin: -120 80 0 120;
+					width: 566;
+					padding: -43 80 43 0;
+                    margin: -120 0 0 120;
                 }
+				.rcLockup {
+					margin: -100 238 0 150;
+				}
+				.rcGrid {
+					margin: 0 0 0 1;
+				}
             }
         </style>
     </head>

@@ -18,7 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @interface INGetAvailableRestaurantReservationBookingsIntent : INIntent <NSCopying>
 
 @property (copy, NS_NONATOMIC_IOSONLY) INRestaurant *restaurant;
@@ -36,7 +36,7 @@ API_UNAVAILABLE(macosx)
 @class INGetAvailableRestaurantReservationBookingsIntentResponse;
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @protocol INGetAvailableRestaurantReservationBookingsIntentHandling <NSObject>
 
 /*!

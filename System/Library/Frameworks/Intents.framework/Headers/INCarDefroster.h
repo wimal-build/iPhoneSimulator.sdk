@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, INCarDefroster) {
     INCarDefrosterUnknown = 0,
     INCarDefrosterFront,
     INCarDefrosterRear,
+    INCarDefrosterAll,
 } API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INCarDefroster_h

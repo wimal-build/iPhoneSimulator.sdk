@@ -14,12 +14,11 @@ typedef NS_ENUM(NSInteger, INStartPhotoPlaybackIntentResponseCode) {
     INStartPhotoPlaybackIntentResponseCodeFailure,
     INStartPhotoPlaybackIntentResponseCodeFailureRequiringAppLaunch,
     INStartPhotoPlaybackIntentResponseCodeFailureAppConfigurationRequired,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12));
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12))
 @interface INStartPhotoPlaybackIntentResponse : INIntentResponse
 
 - (id)init NS_UNAVAILABLE;
@@ -32,7 +31,6 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INStartPhotoPlaybackIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *searchResultsCount NS_REFINED_FOR_SWIFT;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -152,7 +152,6 @@ extern const CFStringRef kSecPropertyTypeError
     @constant kSecTrustCertificateTransparencyWhiteList
         This key will be present and have a value of kCFBooleanTrue
         if this chain is EV, not CT qualified, but included of the CT WhiteList.
-
  */
 extern const CFStringRef kSecTrustEvaluationDate
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
@@ -388,9 +387,9 @@ OSStatus SecTrustGetTrustResult(SecTrustRef trust,
     been evaluated.
     @param trust A reference to the trust object which has been evaluated.
     @result The certificate's public key, or NULL if it the public key could
-    not be extracted (this can happen with DSA certificate chains if the
-    parameters in the chain cannot be found).  The caller is responsible
-    for calling CFRelease on the returned key when it is no longer needed.
+    not be extracted (this can happen if the public key algorithm is not
+    supported).  The caller is responsible for calling CFRelease on the
+    returned key when it is no longer needed.
  */
 __nullable
 SecKeyRef SecTrustCopyPublicKey(SecTrustRef trust)

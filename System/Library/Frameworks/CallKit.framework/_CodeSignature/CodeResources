@@ -6,7 +6,7 @@
 	<dict>
 		<key>CallDirectoryTemplate.db</key>
 		<data>
-		88yAlGCAMSVO9jHQWpVkemSgBM4=
+		P4hjUfy+KUaW7Lv7WbeyHcpFzlQ=
 		</data>
 		<key>Headers/CXAction.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/CXError.h</key>
 		<data>
-		7loZu9S9DP0QyBFztJtNkyYB9zE=
+		52M6cYZozgThGzwPdqYjq6jyD9M=
 		</data>
 		<key>Headers/CXHandle.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ItikiM21NX5v/NR8yBxOnMOM/70=
+		kyTO6Bt9UMO8CfNn/A8dclXgCQg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,22 +114,34 @@
 		</data>
 		<key>XPCServices/com.apple.CallKit.CallDirectory.xpc/Info.plist</key>
 		<data>
-		9sicRDrUdFIkyp8lrUzVhcPhepU=
+		o7seOL4glXtZ0KduA90xX9GwC4g=
 		</data>
 		<key>XPCServices/com.apple.CallKit.CallDirectory.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		hMrxEvjjPLGSsCsgZ0lcoZggYNw=
+		lZ55wfWsme8uEwTWg6sE8WceVdU=
 		</data>
 		<key>XPCServices/com.apple.CallKit.CallDirectory.xpc/com.apple.CallKit.CallDirectory</key>
 		<data>
-		5FUB1jCz0oeuieGNPIas1Mzp6cw=
+		KS1yBPZ9QDyCFlIIM3suwD5Wrqs=
+		</data>
+		<key>XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/Info.plist</key>
+		<data>
+		4md9vrA4ZVgDxjc/RkaFXfU0aiU=
+		</data>
+		<key>XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		Z40CEc3A53BQ40ZK18DeW3Ppxj4=
+		</data>
+		<key>XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/com.apple.CallKit.CallDirectoryMaintenance</key>
+		<data>
+		U4DTZ8C4cambHRaUMCEdy1u9tPk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>CallDirectoryTemplate.db</key>
 		<data>
-		88yAlGCAMSVO9jHQWpVkemSgBM4=
+		P4hjUfy+KUaW7Lv7WbeyHcpFzlQ=
 		</data>
 		<key>Headers/CXAction.h</key>
 		<data>
@@ -185,7 +197,7 @@
 		</data>
 		<key>Headers/CXError.h</key>
 		<data>
-		7loZu9S9DP0QyBFztJtNkyYB9zE=
+		52M6cYZozgThGzwPdqYjq6jyD9M=
 		</data>
 		<key>Headers/CXHandle.h</key>
 		<data>
@@ -233,15 +245,27 @@
 		</data>
 		<key>XPCServices/com.apple.CallKit.CallDirectory.xpc/Info.plist</key>
 		<data>
-		9sicRDrUdFIkyp8lrUzVhcPhepU=
+		o7seOL4glXtZ0KduA90xX9GwC4g=
 		</data>
 		<key>XPCServices/com.apple.CallKit.CallDirectory.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		hMrxEvjjPLGSsCsgZ0lcoZggYNw=
+		lZ55wfWsme8uEwTWg6sE8WceVdU=
 		</data>
 		<key>XPCServices/com.apple.CallKit.CallDirectory.xpc/com.apple.CallKit.CallDirectory</key>
 		<data>
-		5FUB1jCz0oeuieGNPIas1Mzp6cw=
+		KS1yBPZ9QDyCFlIIM3suwD5Wrqs=
+		</data>
+		<key>XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/Info.plist</key>
+		<data>
+		4md9vrA4ZVgDxjc/RkaFXfU0aiU=
+		</data>
+		<key>XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		Z40CEc3A53BQ40ZK18DeW3Ppxj4=
+		</data>
+		<key>XPCServices/com.apple.CallKit.CallDirectoryMaintenance.xpc/com.apple.CallKit.CallDirectoryMaintenance</key>
+		<data>
+		U4DTZ8C4cambHRaUMCEdy1u9tPk=
 		</data>
 	</dict>
 	<key>rules</key>

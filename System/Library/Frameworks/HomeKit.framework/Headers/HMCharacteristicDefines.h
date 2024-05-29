@@ -259,12 +259,12 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueChargingState) {
 /*!
  @enum      HMCharacteristicValueContactState
 
- @constant  HMCharacteristicValueContactStateNone               Contact is not detected.
  @constant  HMCharacteristicValueContactStateDetected           Contact is detected.
+ @constant  HMCharacteristicValueContactStateNone               Contact is not detected.
  */
 typedef NS_ENUM(NSInteger, HMCharacteristicValueContactState) {
-    HMCharacteristicValueContactStateNone = 0,
-    HMCharacteristicValueContactStateDetected,
+    HMCharacteristicValueContactStateDetected = 0,
+    HMCharacteristicValueContactStateNone,
 } NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
 
 /*!
@@ -321,6 +321,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSecuritySystemAlarmType) {
     HMCharacteristicValueSecuritySystemAlarmTypeNoAlarm = 0,
     HMCharacteristicValueSecuritySystemAlarmTypeUnknown,
 } NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+
 
 /*!
  @enum      HMCharacteristicValueLockPhysicalControlsState
@@ -493,3 +494,27 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueActivationState) {
     HMCharacteristicValueActivationStateInactive = 0,
     HMCharacteristicValueActivationStateActive,
 } NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ @enum      HMCharacteristicValueInputEvent
+
+ @constant  HMCharacteristicValueInputEventSinglePress              Single tap or press.
+ @constant  HMCharacteristicValueInputEventDoublePress              Double tap or press.
+ @constant  HMCharacteristicValueInputEventLongPress                Long press.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueInputEvent) {
+    HMCharacteristicValueInputEventSinglePress = 0,
+    HMCharacteristicValueInputEventDoublePress,
+    HMCharacteristicValueInputEventLongPress,
+} NS_ENUM_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+
+/*!
+ @enum      HMCharacteristicValueLabelNamespace
+
+ @constant  HMCharacteristicValueLabelNamespaceDot                      Service labels are dots.
+ @constant  HMCharacteristicValueLabelNamespaceNumeral                  Service labels are Arabic numerals.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueLabelNamespace) {
+    HMCharacteristicValueLabelNamespaceDot = 0,
+    HMCharacteristicValueLabelNamespaceNumeral,
+} NS_ENUM_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);

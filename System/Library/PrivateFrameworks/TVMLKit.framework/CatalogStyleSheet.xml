@@ -8,17 +8,18 @@
             }
             
             .list {
-                width: 488;
-                margin: 45 68 0 100;
+                width: 556;
+				padding: 50 68 60 0;
+                margin: 45 0 0 100;
             }
             
             .rcActivity {
-                margin: 0 90 0 68;
+                margin: 0 90 0 0;
             }
             
             .rcGrid {
-                margin: 0 90 0 68;
-                padding: 45 0 60 0;
+                margin: 0 0 0 0;
+                padding: 45 90 60 0;
                 tv-interitem-spacing: 48px;
             }
             .monogramTitle {
@@ -58,7 +59,7 @@
             }
             @media tv-template and (-tv-banner) {
                 .list {
-                    padding: 0 0 60;
+                    padding: 0 68 60 0;
                 }
             }
         </style>

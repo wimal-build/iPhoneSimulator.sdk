@@ -46,6 +46,7 @@ typedef NS_ENUM(NSInteger, CXErrorCodeCallDirectoryManagerError) {
     CXErrorCodeCallDirectoryManagerErrorDuplicateEntries = 4,
     CXErrorCodeCallDirectoryManagerErrorMaximumEntriesExceeded = 5,
     CXErrorCodeCallDirectoryManagerErrorExtensionDisabled = 6,
+    CXErrorCodeCallDirectoryManagerErrorCurrentlyLoading = 7,
 } API_AVAILABLE(ios(10.0));
 
 NS_ASSUME_NONNULL_END

@@ -56,6 +56,9 @@ EAGL_EXTERN NSString * const kEAGLColorFormatSRGBA8 NS_AVAILABLE_IOS(7_0);
 /* Request the native window system display the OpenGL ES renderbuffer bound to <target> at specified time */
 - (BOOL)presentRenderbuffer:(NSUInteger)target atTime:(CFTimeInterval)presentationTime;
 
+/* Request the native window system display the OpenGL ES renderbuffer bound to <target> after the previous frame is presented for at least duration time */
+- (BOOL)presentRenderbuffer:(NSUInteger)target afterMinimumDuration:(CFTimeInterval)duration;
+
 @end /* EAGLDrawable protocol */
 
 

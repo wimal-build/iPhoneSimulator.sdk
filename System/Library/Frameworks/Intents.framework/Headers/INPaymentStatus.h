@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, INPaymentStatus) {
     INPaymentStatusCompleted,
     INPaymentStatusCanceled,
     INPaymentStatusFailed,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+    INPaymentStatusUnpaid,
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 #endif // INPaymentStatus_h

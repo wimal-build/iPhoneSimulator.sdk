@@ -15,6 +15,6 @@ typedef NS_ENUM(NSInteger, INWorkoutLocationType) {
     INWorkoutLocationTypeUnknown = 0,
     INWorkoutLocationTypeOutdoor,
     INWorkoutLocationTypeIndoor,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 #endif // INWorkoutLocationType_h

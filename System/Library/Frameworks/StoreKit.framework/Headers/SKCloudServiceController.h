@@ -32,6 +32,8 @@ SK_EXTERN_CLASS_AVAILABLE(9_3) @interface SKCloudServiceController : NSObject
 - (void)requestStorefrontIdentifierWithCompletionHandler:(void(^)(NSString * __nullable storefrontIdentifier, NSError * __nullable error))completionHandler;
 - (void)requestCapabilitiesWithCompletionHandler:(void(^)(SKCloudServiceCapability capabilities, NSError * __nullable error))completionHandler;
 
+- (void)requestPersonalizationTokenForClientToken:(NSString *)clientToken withCompletionHandler:(void(^)(NSString * __nullable personalizationToken, NSError * __nullable error))completionHandler NS_AVAILABLE_IOS(10_3);
+
 @end
 
 SK_EXTERN NSString * const SKStorefrontIdentifierDidChangeNotification NS_AVAILABLE_IOS(9_3);

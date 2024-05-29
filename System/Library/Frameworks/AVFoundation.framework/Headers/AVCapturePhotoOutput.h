@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
     AVCapturePhotoOutput is a concrete subclass of AVCaptureOutput that supersedes AVCaptureStillImageOutput as the preferred interface for capturing photos. In addition to capturing all flavors of still image supported by AVCaptureStillImageOutput, it supports Live Photo capture, preview-sized image delivery, wide color, RAW, RAW+JPG and RAW+DNG formats.
  
  @discussion
-    Taking a photo is multi-step process. Clients wishing to build a responsive UI need to know about the progress of a photo capture request as it advances from capture to processing to finished delivery. AVCapturePhotoOutput informs clients of photo capture progress through a delegate protocol. To take a picture, a client instantiates and configures an AVCapturePhotoSettings object, then calls AVCapturePhotoOutput's -capturePhotoWithSettings:delegate:, passing a delegate to be informed when events relating to the photo capture occur (e.g. the photo is about to be captured, the photo has been captured but not processed yet, the Live Photo movie is ready, etc.).
+    Taking a photo is multi-step process. Clients wishing to build a responsive UI need to know about the progress of a photo capture request as it advances from capture to processing to finished delivery. AVCapturePhotoOutput informs clients of photo capture progress through a delegate protocol. To take a picture, a client instantiates and configures an AVCapturePhotoSettings object, then calls AVCapturePhotoOutput's -capturePhotoWithSettings:delegate:, passing a delegate to be informed when events relating to the photo capture occur (e.g., the photo is about to be captured, the photo has been captured but not processed yet, the Live Photo movie is ready, etc.).
  
     Some AVCapturePhotoSettings properties are "Auto", such as autoStillImageStabilizationEnabled. When set to YES, the photo output decides at capture time whether the current scene and lighting conditions require still image stabilization. Thus the client doesn't know with certainty which features are enabled when making the capture request. With the first and each subsequent delegate callback, the client is provided an AVCaptureResolvedPhotoSettings instance that indicates the settings that were applied to the capture. All "Auto" features have now been resolved to on or off. The AVCaptureResolvedPhotoSettings object passed in the client's delegate callbacks has a uniqueID identical to the AVCapturePhotoSettings request. This uniqueID allows clients to pair unresolved and resolved settings objects. See AVCapturePhotoCaptureDelegate below for a detailed discussion of the delegate callbacks.
  
@@ -388,7 +388,7 @@ __TVOS_PROHIBITED
  @param photoSampleBuffer
     A CMSampleBuffer containing an uncompressed pixel buffer or compressed data, along with timing information and metadata. May be nil if there was an error.
  @param previewPhotoSampleBuffer
-    An optional CMSampleBuffer containing an uncompressed, down-scaled preview pixel buffer. May be nil.
+    An optional CMSampleBuffer containing an uncompressed, down-scaled preview pixel buffer. Note that the preview sample buffer contains no metadata. Refer to the photoSampleBuffer for metadata (e.g., the orientation). May be nil.
  @param resolvedSettings
     An instance of AVCaptureResolvedPhotoSettings indicating which capture features have been selected.
  @param bracketSettings
@@ -411,7 +411,7 @@ __TVOS_PROHIBITED
  @param rawSampleBuffer
     A CMSampleBuffer containing Bayer RAW pixel data, along with timing information and metadata. May be nil if there was an error.
  @param previewPhotoSampleBuffer
-    An optional CMSampleBuffer containing an uncompressed, down-scaled preview pixel buffer. May be nil.
+    An optional CMSampleBuffer containing an uncompressed, down-scaled preview pixel buffer. Note that the preview sample buffer contains no metadata. Refer to the rawSampleBuffer for metadata (e.g., the orientation). May be nil.
  @param resolvedSettings
     An instance of AVCaptureResolvedPhotoSettings indicating which capture features have been selected.
  @param bracketSettings

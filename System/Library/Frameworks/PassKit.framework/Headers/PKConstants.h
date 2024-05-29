@@ -17,6 +17,7 @@ extern PKEncryptionScheme const PKEncryptionSchemeRSA_V2 NS_AVAILABLE_IOS(10_0);
 
 typedef NSString * PKPaymentNetwork NS_EXTENSIBLE_STRING_ENUM;
 extern PKPaymentNetwork const PKPaymentNetworkAmex NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
+extern PKPaymentNetwork const PKPaymentNetworkCarteBancaire NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3.2);
 extern PKPaymentNetwork const PKPaymentNetworkChinaUnionPay NS_AVAILABLE_IOS(9_2) __WATCHOS_AVAILABLE(3.0);
 extern PKPaymentNetwork const PKPaymentNetworkDiscover NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(3.0);
 extern PKPaymentNetwork const PKPaymentNetworkInterac NS_AVAILABLE_IOS(9_2) __WATCHOS_AVAILABLE(3.0);
@@ -25,6 +26,8 @@ extern PKPaymentNetwork const PKPaymentNetworkPrivateLabel NS_AVAILABLE_IOS(9_0)
 extern PKPaymentNetwork const PKPaymentNetworkVisa NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
 extern PKPaymentNetwork const PKPaymentNetworkJCB NS_AVAILABLE_IOS(10_1) __WATCHOS_AVAILABLE(3.1);
 extern PKPaymentNetwork const PKPaymentNetworkSuica NS_AVAILABLE_IOS(10_1) __WATCHOS_AVAILABLE(3.1);
+extern PKPaymentNetwork const PKPaymentNetworkQuicPay NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3.2);
+extern PKPaymentNetwork const PKPaymentNetworkIDCredit NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3.2);
 
 typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
     PKPaymentAuthorizationStatusSuccess, // Merchant auth'd (or expects to auth) the transaction successfully.

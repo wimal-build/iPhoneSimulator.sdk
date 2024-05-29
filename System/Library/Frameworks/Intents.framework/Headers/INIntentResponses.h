@@ -11,12 +11,16 @@
 #import <Intents/INSearchCallHistoryIntentResponse.h>
 
 // CarPlay Intent Responses
+#import <Intents/INActivateCarSignalIntentResponse.h>
+#import <Intents/INGetCarLockStatusIntentResponse.h>
+#import <Intents/INGetCarPowerLevelStatusIntentResponse.h>
+#import <Intents/INSaveProfileInCarIntentResponse.h>
 #import <Intents/INSetAudioSourceInCarIntentResponse.h>
+#import <Intents/INSetCarLockStatusIntentResponse.h>
 #import <Intents/INSetClimateSettingsInCarIntentResponse.h>
 #import <Intents/INSetDefrosterSettingsInCarIntentResponse.h>
-#import <Intents/INSetSeatSettingsInCarIntentResponse.h>
 #import <Intents/INSetProfileInCarIntentResponse.h>
-#import <Intents/INSaveProfileInCarIntentResponse.h>
+#import <Intents/INSetSeatSettingsInCarIntentResponse.h>
 
 // Messages Intent Responses
 #import <Intents/INSendMessageIntentResponse.h>
@@ -29,6 +33,8 @@
 // Payments Intent Responses
 #import <Intents/INSendPaymentIntentResponse.h>
 #import <Intents/INRequestPaymentIntentResponse.h>
+#import <Intents/INPayBillIntentResponse.h>
+#import <Intents/INSearchForBillsIntentResponse.h>
 
 // Photos Intent Responses
 #import <Intents/INSearchForPhotosIntentResponse.h>

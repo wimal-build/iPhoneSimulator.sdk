@@ -118,6 +118,20 @@ NS_AVAILABLE(10_11, 8_0)
  */
 @property (nullable, copy, atomic) NSString *label;
 
+@property (readonly) CFTimeInterval kernelStartTime NS_AVAILABLE_IOS(10_3);
+@property (readonly) CFTimeInterval kernelEndTime NS_AVAILABLE_IOS(10_3);
+
+/*!
+ @property GPUStartTime
+ @abstract The host time in seconds that GPU starts exeucting this command buffer. Returns zero if it has not started. This usually can be called in command buffer completion handler.
+ */
+@property (readonly) CFTimeInterval GPUStartTime NS_AVAILABLE_IOS(10_3);
+/*!
+ @property GPUEndTime
+ @abstract The host time in seconds that GPU finishes exeucting this command buffer. Returns zero if CPU has not received completion notification. This usually can be called in command buffer completion handler.
+ */
+@property (readonly) CFTimeInterval GPUEndTime NS_AVAILABLE_IOS(10_3);
+
 /*!
  @method enqueue
  @abstract Append this command buffer to the end of its MTLCommandQueue.
@@ -139,15 +153,26 @@ NS_AVAILABLE(10_11, 8_0)
 /*!
  @method presentDrawable:
  @abstract Add a drawable present that will be invoked when this command buffer has been scheduled for execution.
+ @discussion The submission thread will be lock stepped with present call been serviced by window server
  */
 - (void)presentDrawable:(id <MTLDrawable>)drawable;
 
 /*!
  @method presentDrawable:atTime:
  @abstract Add a drawable present for a specific host time that will be invoked when this command buffer has been scheduled for execution.
- */
+ @discussion The submission thread will be lock stepped with present call been serviced by window server
+*/
 - (void)presentDrawable:(id <MTLDrawable>)drawable atTime:(CFTimeInterval)presentationTime;
 
+/*!
+ @method presentDrawable:afterMinimumDuration:
+ @abstract Add a drawable present for a specific host time that allows previous frame to be on screen for at least duration time.
+ @param drawable The drawable to be presented
+ @param duration The minimum time that previous frame should be displayed. The time is double preceision floating point in the unit of seconds.
+ @discussion The difference of this API versus presentDrawable:atTime is that this API defers calculation of the presentation time until the previous frame's actual presentation time is known, thus to be able to maintain a more consistent and stable frame time. This also provides an easy way to set frame rate.
+    The submission thread will be lock stepped with present call been serviced by window server 
+ */
+- (void)presentDrawable:(id <MTLDrawable>)drawable afterMinimumDuration:(CFTimeInterval)duration;
 
 /*!
  @method waitUntilScheduled

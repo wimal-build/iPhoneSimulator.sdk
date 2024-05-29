@@ -69,7 +69,6 @@
 	<key>com.apple.security.exception.mach-lookup.global-name</key>
 	<array>
 		<string>com.apple.telephonyutilities.callservicesdaemon.callprovidermanager</string>
-		<string>com.apple.private.healthcloudd.server</string>
 	</array>
 	<key>com.apple.excludes-extensions</key>
 	<true/>

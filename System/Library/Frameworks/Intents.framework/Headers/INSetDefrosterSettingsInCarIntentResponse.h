@@ -30,7 +30,6 @@ API_UNAVAILABLE(watchos, macosx)
 - (instancetype)initWithCode:(INSetDefrosterSettingsInCarIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INSetDefrosterSettingsInCarIntentResponseCode code;
-
 @end
 
 NS_ASSUME_NONNULL_END

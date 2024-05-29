@@ -16,11 +16,12 @@ typedef NS_ENUM(NSInteger, INSetMessageAttributeIntentResponseCode) {
     INSetMessageAttributeIntentResponseCodeFailureRequiringAppLaunch,
     INSetMessageAttributeIntentResponseCodeFailureMessageNotFound,
     INSetMessageAttributeIntentResponseCodeFailureMessageAttributeNotSet,
-} API_AVAILABLE(macosx(10.12), ios(10.0));
+} API_AVAILABLE(macosx(10.12), ios(10.0)) API_UNAVAILABLE(watchos);
 
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(macosx(10.12), ios(10.0))
+API_UNAVAILABLE(watchos)
 @interface INSetMessageAttributeIntentResponse : INIntentResponse
 
 - (id)init NS_UNAVAILABLE;
@@ -31,7 +32,6 @@ API_AVAILABLE(macosx(10.12), ios(10.0))
 - (instancetype)initWithCode:(INSetMessageAttributeIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INSetMessageAttributeIntentResponseCode code;
-
 @end
 
 NS_ASSUME_NONNULL_END

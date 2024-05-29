@@ -21,11 +21,11 @@ typedef NS_ENUM(NSInteger, INRequestPaymentIntentResponseCode) {
     INRequestPaymentIntentResponseCodeFailurePaymentsAmountAboveMaximum,
     INRequestPaymentIntentResponseCodeFailurePaymentsCurrencyUnsupported,
     INRequestPaymentIntentResponseCodeFailureNoBankAccount,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), watchos(3.2))
 API_UNAVAILABLE(macosx)
 @interface INRequestPaymentIntentResponse : INIntentResponse
 
@@ -39,7 +39,6 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INRequestPaymentIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INPaymentRecord *paymentRecord;
-
 @end
 
 NS_ASSUME_NONNULL_END

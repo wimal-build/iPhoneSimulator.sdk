@@ -16,8 +16,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(3.0)
 @property (nonatomic, strong, nullable) NSString        *emailAddress;
 @property (nonatomic, strong, nullable) CNPhoneNumber   *phoneNumber;
 
-// CNPostalAddress does not support a distinct sublocality field. Some regions require a distinct sublocality,
-// and the Apple Pay sheet will prompt users to input it. Access the sublocality value here.
-@property (nonatomic, retain, nullable) NSString        *supplementarySubLocality NS_AVAILABLE_IOS(9_2);
+// This property is now deprecated. Use the -subLocality property on [PKContact -postalAddress] instead
+@property (nonatomic, retain, nullable) NSString        *supplementarySubLocality API_DEPRECATED("Use subLocality and subAdministrativeArea on -postalAddress instead", ios(9.2, 10.3), watchos(3.0, 3.2));
 
 @end

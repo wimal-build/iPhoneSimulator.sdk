@@ -20,11 +20,11 @@ typedef NS_ENUM(NSInteger, INRequestRideIntentResponseCode) {
     INRequestRideIntentResponseCodeFailureRequiringAppLaunchNoServiceInArea,
     INRequestRideIntentResponseCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable,
     INRequestRideIntentResponseCodeFailureRequiringAppLaunchPreviousRideNeedsCompletion,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), watchos(3.2))
 API_UNAVAILABLE(macosx)
 @interface INRequestRideIntentResponse : INIntentResponse
 
@@ -38,7 +38,6 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INRequestRideIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INRideStatus *rideStatus;
-
 @end
 
 NS_ASSUME_NONNULL_END

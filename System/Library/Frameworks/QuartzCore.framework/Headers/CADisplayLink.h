@@ -1,6 +1,6 @@
 /* CoreAnimation - CADisplayLink.h
 
-   Copyright (c) 2009-2016, Apple Inc.
+   Copyright (c) 2009-2017, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CABase.h>
@@ -65,17 +65,16 @@ CA_CLASS_AVAILABLE_IOS(3.1, 9.0, 2.0)
  * link will fire for every display frame. Setting the interval to two
  * will cause the display link to fire every other display frame, and
  * so on. The behavior when using values less than one is undefined.
- * DEPRECATED - use preferredFrameRate. */
+ * DEPRECATED - use preferredFramesPerSecond. */
 
 @property(nonatomic) NSInteger frameInterval
   CA_AVAILABLE_BUT_DEPRECATED_IOS (3.1, 10.0, 9.0, 10.0, 2.0, 3.0, "use preferredFramesPerSecond");
 
-/* Defines the desired callback rate in frames per second for this display link.
- * A value of 100.0 would result in 100 callbacks per second.
- *
- * Default value is zero, which means the display link will fire at the native
- * cadence of the display hardware. CoreAnimation will make the best attempt
- * at issuing callbacks at the requested rate, but there are no guarantees. */
+/* Defines the desired callback rate in frames-per-second for this
+ * display link. The default value is 60. If set to zero, the
+ * display link will fire at the native cadence of the display hardware.
+ * The display link will make a best-effort attempt at issuing callbacks
+ * at the requested rate. */
 
 @property(nonatomic) NSInteger preferredFramesPerSecond CA_AVAILABLE_IOS_STARTING(10.0, 10.0, 3.0);
 

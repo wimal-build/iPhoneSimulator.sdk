@@ -6,19 +6,19 @@
 	<dict>
 		<key>DTServiceHub</key>
 		<data>
-		DNVZkqmLxtJe6rORjkTydqeDqt0=
+		t26h1/wd3eYjYqeK51vDZTDvH/Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I+QeQaoNWaZMnn43db4szoXTa48=
+		elZE8AMIPerrKN7CTrTjH86JswM=
 		</data>
 		<key>LeakAgent</key>
 		<data>
-		9ipEnHZVbiqnOKTxSM9WbBLfu5Y=
+		1how9HnsYQ6+ZGGijEXu32O/NRg=
 		</data>
 		<key>RemoteInjectionAgent</key>
 		<data>
-		zgOGzYext8qSFV8g53ygqZdmPBA=
+		gSNeLhU83zq0FOrBdZZupgcCQNs=
 		</data>
 		<key>a7.serialized</key>
 		<data>
@@ -98,15 +98,15 @@
 		</data>
 		<key>libRemoteInjectionPayload.dylib</key>
 		<data>
-		hmj6WNrFhDy62ecoRXfAhq/GWVk=
+		kKC1CeMIWDsZzSJkb0VOQhPSs9U=
 		</data>
 		<key>libfsmonitor_interpose.dylib</key>
 		<data>
-		oVd7hlBHS2EY2ckxua1O1uKMYko=
+		Apu5Y9sM/Xh6bUTXqVvqAVPDOKs=
 		</data>
 		<key>liboainject.dylib</key>
 		<data>
-		OBvQaKroki5uHxqRQpWMPY+/uew=
+		t33yprbACOcqm9F5NUqy0i7MukQ=
 		</data>
 		<key>osx_10.10_trace.codes</key>
 		<data>
@@ -119,21 +119,25 @@
 		<key>osx_10.9_trace.codes</key>
 		<data>
 		zDw2zY5y9hDnIsZN9JfTI2ZlyAA=
+		</data>
+		<key>sysmon.plist</key>
+		<data>
+		A12gjEZwqJ4uyQefNsxiP+GtDwc=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>DTServiceHub</key>
 		<data>
-		DNVZkqmLxtJe6rORjkTydqeDqt0=
+		t26h1/wd3eYjYqeK51vDZTDvH/Y=
 		</data>
 		<key>LeakAgent</key>
 		<data>
-		9ipEnHZVbiqnOKTxSM9WbBLfu5Y=
+		1how9HnsYQ6+ZGGijEXu32O/NRg=
 		</data>
 		<key>RemoteInjectionAgent</key>
 		<data>
-		zgOGzYext8qSFV8g53ygqZdmPBA=
+		gSNeLhU83zq0FOrBdZZupgcCQNs=
 		</data>
 		<key>a7.serialized</key>
 		<data>
@@ -213,15 +217,15 @@
 		</data>
 		<key>libRemoteInjectionPayload.dylib</key>
 		<data>
-		hmj6WNrFhDy62ecoRXfAhq/GWVk=
+		kKC1CeMIWDsZzSJkb0VOQhPSs9U=
 		</data>
 		<key>libfsmonitor_interpose.dylib</key>
 		<data>
-		oVd7hlBHS2EY2ckxua1O1uKMYko=
+		Apu5Y9sM/Xh6bUTXqVvqAVPDOKs=
 		</data>
 		<key>liboainject.dylib</key>
 		<data>
-		OBvQaKroki5uHxqRQpWMPY+/uew=
+		t33yprbACOcqm9F5NUqy0i7MukQ=
 		</data>
 		<key>osx_10.10_trace.codes</key>
 		<data>
@@ -234,6 +238,10 @@
 		<key>osx_10.9_trace.codes</key>
 		<data>
 		zDw2zY5y9hDnIsZN9JfTI2ZlyAA=
+		</data>
+		<key>sysmon.plist</key>
+		<data>
+		A12gjEZwqJ4uyQefNsxiP+GtDwc=
 		</data>
 	</dict>
 	<key>rules</key>

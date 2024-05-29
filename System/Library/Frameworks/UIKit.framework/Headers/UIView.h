@@ -84,6 +84,11 @@ typedef NS_OPTIONS(NSUInteger, UIViewAnimationOptions) {
     UIViewAnimationOptionTransitionCrossDissolve   = 5 << 20,
     UIViewAnimationOptionTransitionFlipFromTop     = 6 << 20,
     UIViewAnimationOptionTransitionFlipFromBottom  = 7 << 20,
+
+    UIViewAnimationOptionPreferredFramesPerSecondDefault     = 0 << 24,
+    UIViewAnimationOptionPreferredFramesPerSecond60          = 3 << 24,
+    UIViewAnimationOptionPreferredFramesPerSecond30          = 7 << 24,
+    
 } NS_ENUM_AVAILABLE_IOS(4_0);
 
 typedef NS_OPTIONS(NSUInteger, UIViewKeyframeAnimationOptions) {

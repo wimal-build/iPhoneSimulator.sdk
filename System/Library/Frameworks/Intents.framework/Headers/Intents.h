@@ -90,14 +90,16 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INSetRadioStationIntent.h>
 #import <Intents/INSetRadioStationIntentResponse.h>
 
-#import <Intents/INCarAudioSource.h>
-#import <Intents/INCarAudioSourceResolutionResult.h>
 #import <Intents/INCarAirCirculationMode.h>
 #import <Intents/INCarAirCirculationModeResolutionResult.h>
+#import <Intents/INCarAudioSource.h>
+#import <Intents/INCarAudioSourceResolutionResult.h>
 #import <Intents/INCarDefroster.h>
 #import <Intents/INCarDefrosterResolutionResult.h>
 #import <Intents/INCarSeat.h>
 #import <Intents/INCarSeatResolutionResult.h>
+#import <Intents/INCarSignalOptions.h>
+#import <Intents/INCarSignalOptionsResolutionResult.h>
 #import <Intents/INRadioType.h>
 #import <Intents/INRadioTypeResolutionResult.h>
 #import <Intents/INRelativeReference.h>
@@ -120,13 +122,18 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INMessageAttributeOptionsResolutionResult.h>
 
 // Payments Domain
-#import <Intents/INSendPaymentIntent.h>
-#import <Intents/INSendPaymentIntentResponse.h>
-#import <Intents/INRequestPaymentIntent.h>
-#import <Intents/INRequestPaymentIntentResponse.h>
-
+#import <Intents/INBillDetails.h>
+#import <Intents/INBillPayee.h>
+#import <Intents/INBillPayeeResolutionResult.h>
+#import <Intents/INBillType.h>
 #import <Intents/INPaymentRecord.h>
 #import <Intents/INPaymentStatus.h>
+#import <Intents/INPaymentAccount.h>
+#import <Intents/INPaymentAccountResolutionResult.h>
+#import <Intents/INPaymentAmount.h>
+#import <Intents/INPaymentAmountResolutionResult.h>
+#import <Intents/INBillTypeResolutionResult.h>
+#import <Intents/INPaymentStatusResolutionResult.h>
 
 // Photos Domain
 #import <Intents/INSearchForPhotosIntent.h>
@@ -187,6 +194,7 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 
 // Deprecated
 #import <Intents/INPerson_Deprecated.h>
+#import <Intents/INRequestRideIntent_Deprecated.h>
 #import <Intents/INRideDriver_Deprecated.h>
 #import <Intents/INSaveProfileInCarIntent_Deprecated.h>
 #import <Intents/INSetProfileInCarIntent_Deprecated.h>

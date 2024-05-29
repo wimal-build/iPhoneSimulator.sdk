@@ -13,16 +13,18 @@
     <div id="player"></div>
     <script>
         var player;
+        var hasAddedPresentationModeChangeListener = false;
 
         /* Parameters avaliable from the hosting environment:
         
             window.parameters = {
                 videoId: <String>,
                 startsPlayingAutomatically: <Boolean>,
+                startsPlayingMuted: <Boolean>,
                 playerVars: Object
                     rel: <Double: 0 or 1>
                     showinfo: <Double: 0 or 1>
-                    constrols: <Double: 0 or 1>
+                    controls: <Double: 0 or 1>
                     start: <Double>,
                     end: <Double>,
             };
@@ -56,6 +58,9 @@
             if (shouldUseNativeMessagePassing())
                 window.webkit.messageHandlers.playerContainer.postMessage({ message: "onReady", data: event.data});
 
+            if (parameters.startsPlayingMuted)
+                event.target.mute();
+
             if (parameters.startsPlayingAutomatically)
                 event.target.playVideo();
         }
@@ -71,9 +76,9 @@
                 window.webkit.messageHandlers.playerContainer.postMessage({ message: "onStateChange", data: event.data});
             else {
                 if (event.data == YT.PlayerState.PAUSED)
-                    window.frameElement.dispatchEvent(new window.parent.Event("pause", true, true));
+                    window.frameElement.dispatchEvent(new window.parent.Event("pause"));
                 else if (event.data == YT.PlayerState.PLAYING)
-                    window.frameElement.dispatchEvent(new window.parent.Event("play", true, true));
+                    window.frameElement.dispatchEvent(new window.parent.Event("play"));
             }
         }
 
@@ -82,7 +87,13 @@
             if (shouldUseNativeMessagePassing())
                 window.webkit.messageHandlers.playerContainer.postMessage({ message: "onError", data: event.data});
             else
-                window.frameElement.dispatchEvent(new window.parent.Event("error", true, true));
+                window.frameElement.dispatchEvent(new window.parent.Event("error"));
+        }
+
+        function onPresentationModeChange(event)
+        {
+            if (shouldUseNativeMessagePassing())
+                window.webkit.messageHandlers.playerContainer.postMessage({ message: "onPresentationModeChange", "isFullScreen": videoIsFullScreen() });
         }
 
         function playerState()
@@ -125,6 +136,38 @@
             if (!player)
                 return;
             player.unMute();
+        }
+
+        function enterFullScreen()
+        {
+            if (!player)
+                return;
+
+            videoElement().webkitEnterFullscreen();
+
+            if (hasAddedPresentationModeChangeListener)
+                return;
+
+            hasAddedPresentationModeChangeListener = true;
+            videoElement().addEventListener("webkitpresentationmodechanged", onPresentationModeChange);
+        }
+
+        function exitFullScreen()
+        {
+            if (!player)
+                return;
+
+            videoElement().webkitExitFullscreen();
+        }
+
+        function videoElement()
+        {
+            return frames[0].document.getElementsByTagName("video")[0];
+        }
+
+        function videoIsFullScreen()
+        {
+            return videoElement().webkitPresentationMode == "fullscreen";
         }
     </script>
 </body>

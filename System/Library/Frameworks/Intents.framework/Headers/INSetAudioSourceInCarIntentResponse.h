@@ -30,7 +30,6 @@ API_UNAVAILABLE(watchos, macosx)
 - (instancetype)initWithCode:(INSetAudioSourceInCarIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INSetAudioSourceInCarIntentResponseCode code;
-
 @end
 
 NS_ASSUME_NONNULL_END

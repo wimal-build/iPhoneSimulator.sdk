@@ -10,6 +10,7 @@
 #import <Intents/INRidePhase.h>
 
 @class CLPlacemark;
+@class INDateComponentsRange;
 @class INRideVehicle;
 @class INRideDriver;
 @class INRideOption;
@@ -36,6 +37,9 @@ NS_CLASS_AVAILABLE(NA, 10_0) __TVOS_PROHIBITED __WATCHOS_AVAILABLE(3_0)
 // This is the date after arrival at the pickup location after which the ride may stop waiting for the passenger to be picked up.
 // The passenger is expected to arrive at pickup before this date.
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSDate *estimatedPickupEndDate;
+
+// Time range for the scheduled pickup.
+@property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INDateComponentsRange *scheduledPickupTime API_AVAILABLE(ios(10.3), watchos(3.2));
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) CLPlacemark *pickupLocation;
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSArray<CLPlacemark *> *waypoints;

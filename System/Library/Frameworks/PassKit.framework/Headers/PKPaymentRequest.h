@@ -119,20 +119,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
 // If the merchant already has a billing address on file, set it here.
 @property (nonatomic, strong, nullable) PKContact *billingContact NS_AVAILABLE_IOS(9_0);
 
-#if TARGET_OS_IOS
-@property (nonatomic, assign, nullable) ABRecordRef billingAddress __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(8_0, 9_0, "Use billingContact instead");
-#endif
-
 // Indicates which shipping address fields the merchant requires in order to process a transaction.
 // The default is PKAddressFieldNone.
 @property (nonatomic, assign) PKAddressField requiredShippingAddressFields;
 
 // If the merchant already has a shipping address on file, set it here.
 @property (nonatomic, strong, nullable) PKContact *shippingContact NS_AVAILABLE_IOS(9_0);
-
-#if TARGET_OS_IOS
-@property (nonatomic, assign, nullable) ABRecordRef shippingAddress __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(8_0, 9_0, "Use shippingContact instead");
-#endif
 
 // Shipping methods supported by the merchant.
 @property (nonatomic, copy, nullable) NSArray<PKShippingMethod *> *shippingMethods;
@@ -144,6 +136,13 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
 // Optional merchant-supplied information about the payment request.  Examples of this are an order
 // or cart identifier.  It will be signed and included in the resulting PKPaymentToken.
 @property (nonatomic, copy, nullable) NSData *applicationData;
+
+#if TARGET_OS_IOS
+// These properties have been deprecated and should not be used.
+@property (nonatomic, assign, nullable) ABRecordRef shippingAddress __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(8_0, 9_0, "ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to shippingContact.");
+
+@property (nonatomic, assign, nullable) ABRecordRef billingAddress __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(8_0, 9_0, "ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to billingContact.");
+#endif
 
 @end
 

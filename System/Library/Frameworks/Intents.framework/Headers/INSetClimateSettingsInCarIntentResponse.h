@@ -30,7 +30,6 @@ API_UNAVAILABLE(watchos, macosx)
 - (instancetype)initWithCode:(INSetClimateSettingsInCarIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INSetClimateSettingsInCarIntentResponseCode code;
-
 @end
 
 NS_ASSUME_NONNULL_END

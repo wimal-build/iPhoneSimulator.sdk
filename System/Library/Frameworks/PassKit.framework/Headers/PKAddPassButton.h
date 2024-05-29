@@ -4,7 +4,7 @@
 //
 //  Copyright © 2015 Apple, Inc. All rights reserved.
 //
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS || TARGET_OS_WATCH
 
 #import <UIKit/UIKit.h>
 

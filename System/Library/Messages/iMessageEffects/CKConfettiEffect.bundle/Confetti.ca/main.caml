@@ -3,7 +3,7 @@
 <caml xmlns="http://www.apple.com/CoreAnimation/1.0">
   <CALayer backgroundColor="1 1 1" bounds="0 0 750 1334" name="root" position="375 667" sublayerTransform="perspective(7891.07)">
     <sublayers>
-      <CAEmitterLayer id="0" cullRect="-Inf -Inf Inf Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 750 1334" hidden="0" name="0" position="375 667">
+      <CAEmitterLayer id="0" cullRect="-Inf -Inf Inf Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 750 1334" hidden="0" name="0" position="375 667" updateInterval="0.01666666667">
 	<emitterBehaviors>
 	  <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" keyPath="scale" additive="1">
 	    <values>
@@ -46,7 +46,7 @@
 	  </CAEmitterCell>
 	</emitterCells>
       </CAEmitterLayer>
-      <CAEmitterLayer id="1" birthRate="0" cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="80 80" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 160 160" hidden="0" name="1" position="375 667">
+      <CAEmitterLayer id="1" birthRate="0" cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="80 80" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 160 160" hidden="0" name="1" position="375 667" updateInterval="0.01666666667">
 	<emitterBehaviors>
 	  <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" additive="1" keyPath="scale">
 	    <values>
@@ -74,7 +74,7 @@
 	  </CAEmitterBehavior>
 	</emitterBehaviors>
       </CAEmitterLayer>
-      <CAEmitterLayer id="2" birthRate="0" cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="80 80" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 160 160" hidden="0" name="2" position="375 667">
+      <CAEmitterLayer id="2" birthRate="0" cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="80 80" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 160 160" hidden="0" name="2" position="375 667" updateInterval="0.01666666667">
 	<emitterBehaviors>
 	  <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" keyPath="scale" additive="1">
 	    <values>
@@ -102,7 +102,7 @@
 	  </CAEmitterBehavior>
 	</emitterBehaviors>
       </CAEmitterLayer>
-      <CAEmitterLayer id="3" cullRect="-Inf -Inf Inf Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 750 1334" hidden="0" name="3" position="375 667">
+      <CAEmitterLayer id="3" cullRect="-Inf -Inf Inf Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" bounds="0 0 750 1334" hidden="0" name="3" position="375 667" updateInterval="0.01666666667">
 	<emitterBehaviors>
 	  <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" additive="1" keyPath="scale">
 	    <values>

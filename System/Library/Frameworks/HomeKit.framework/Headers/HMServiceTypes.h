@@ -205,4 +205,9 @@ HM_EXTERN NSString * const HMServiceTypeHumidifierDehumidifier NS_AVAILABLE_IOS(
  */
 HM_EXTERN NSString * const HMServiceTypeSlats NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
 
+/*!
+ * @brief Service type for label namespace when accessory supports multiple services of the same type.
+ */
+HM_EXTERN NSString * const HMServiceTypeLabel NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+
 NS_ASSUME_NONNULL_END

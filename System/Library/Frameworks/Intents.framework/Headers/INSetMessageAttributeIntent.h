@@ -16,6 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(macosx(10.12), ios(10.0))
+API_UNAVAILABLE(watchos)
 @interface INSetMessageAttributeIntent : INIntent
 
 - (instancetype)initWithIdentifiers:(nullable NSArray<NSString *> *)identifiers
@@ -36,6 +37,7 @@ API_AVAILABLE(macosx(10.12), ios(10.0))
  */
 
 API_AVAILABLE(macosx(10.12), ios(10.0))
+API_UNAVAILABLE(watchos)
 @protocol INSetMessageAttributeIntentHandling <NSObject>
 
 @required

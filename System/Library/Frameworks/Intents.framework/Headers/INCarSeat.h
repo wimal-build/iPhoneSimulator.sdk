@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger, INCarSeat) {
     INCarSeatThirdRowLeft,
     INCarSeatThirdRowRight,
     INCarSeatThirdRow,
+    INCarSeatAll,
 } API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
 #endif // INCarSeat_h

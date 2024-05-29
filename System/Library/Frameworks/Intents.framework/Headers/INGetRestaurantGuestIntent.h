@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @interface INGetRestaurantGuestIntent : INIntent
 
 @end
@@ -22,7 +22,7 @@ API_UNAVAILABLE(macosx)
 @class INGetRestaurantGuestIntentResponse;
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @protocol INGetRestaurantGuestIntentHandling <NSObject>
 
 /*!

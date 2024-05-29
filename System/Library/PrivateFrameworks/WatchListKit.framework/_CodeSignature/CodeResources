@@ -6,17 +6,26 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		XBlrzzq/nlc8BHkiPDMluoO0Ey8=
+		hWXxNukTpaCaDXeBPCda2EhKpLA=
 		</data>
 		<key>Support/watchlistd</key>
 		<data>
-		NyNnGiH2EHj6vTFZIDHaS+AiD+k=
+		Kcc0yN0/RH5auoHGB7ImInuWsYQ=
 		</data>
+		<key>de.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uqFm8HzUKFGM2sAHsUPZP6Kyj8A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/WatchListSettings.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aTP7yKQG5DqfS70wYkB9/fN7lng=
+			6bFEoatzGAGFLptdll4/LR2yMG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -25,7 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xtV7hCet909nWmwflzvSBmzTg9g=
+			6bFEoatzGAGFLptdll4/LR2yMG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -34,7 +43,70 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5Yd4a7cWhvH7hNZGfANHIwgBwU=
+			E3qREqCgMUyTVupSS8U3dA7P8D4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aB3vKfGod2OZlZQpU4ghnJY2/x0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KEdRb24/bOCGwwFxTtV9zdo8Gz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9PI/gA+7cRLKi18pK3HCvS0KQoQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			khwgMsKBjcF/uzY6rkx+XtTGJS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K//0XWqMWZXo/O7+Be6lk1wlfdc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DJQaP1AOM9372/2YTNt4WrvkxBE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Itd3E4ctJL98OZ2sazQb9L3cw8c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,13 +116,22 @@
 	<dict>
 		<key>Support/watchlistd</key>
 		<data>
-		NyNnGiH2EHj6vTFZIDHaS+AiD+k=
+		Kcc0yN0/RH5auoHGB7ImInuWsYQ=
 		</data>
+		<key>de.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uqFm8HzUKFGM2sAHsUPZP6Kyj8A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/WatchListSettings.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aTP7yKQG5DqfS70wYkB9/fN7lng=
+			6bFEoatzGAGFLptdll4/LR2yMG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -59,7 +140,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xtV7hCet909nWmwflzvSBmzTg9g=
+			6bFEoatzGAGFLptdll4/LR2yMG8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -68,7 +149,70 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5Yd4a7cWhvH7hNZGfANHIwgBwU=
+			E3qREqCgMUyTVupSS8U3dA7P8D4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aB3vKfGod2OZlZQpU4ghnJY2/x0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KEdRb24/bOCGwwFxTtV9zdo8Gz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9PI/gA+7cRLKi18pK3HCvS0KQoQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			khwgMsKBjcF/uzY6rkx+XtTGJS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K//0XWqMWZXo/O7+Be6lk1wlfdc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DJQaP1AOM9372/2YTNt4WrvkxBE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/WatchListSettings.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Itd3E4ctJL98OZ2sazQb9L3cw8c=
 			</data>
 			<key>optional</key>
 			<true/>

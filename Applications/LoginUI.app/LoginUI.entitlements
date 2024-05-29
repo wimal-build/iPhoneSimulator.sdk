@@ -40,7 +40,9 @@
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>com.apple.identities</string>
+        <string>apple</string>
+        <string>com.apple.identities</string>
+        <string>com.apple.certificates</string>
 		<string>com.apple.LoginUI</string>
 	</array>
 	<key>com.apple.wifi.manager-access</key>
@@ -49,7 +51,7 @@
 	<true/>
 	<key>com.apple.BTServer.allowRestrictedServices</key>
 	<true/>
-	<key>com.apple.security.system-group-containers</key>
+	<key>com.apple.security.system-groups</key>
 	<array>
 		<string>systemgroup.com.apple.userimagecache</string>
 	</array>
@@ -60,6 +62,8 @@
 	<key>com.apple.securebackupd.access</key>
 	<true/>
 	<key>com.apple.private.defaults-shared-ipad-loginui</key>
+	<true/>
+	<key>com.apple.springboard.hardware-button-service.event-consumption</key>
 	<true/>
 </dict>
 </plist>

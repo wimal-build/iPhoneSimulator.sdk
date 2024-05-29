@@ -20,7 +20,7 @@ typedef NS_ENUM (NSUInteger, INRestaurantReservationUserBookingStatus) {
 };
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 NS_ASSUME_NONNULL_BEGIN
 @interface INRestaurantReservationUserBooking : INRestaurantReservationBooking <NSCopying>
 

@@ -44,6 +44,12 @@ SK_EXTERN SKCloudServiceSetupOptionsKey const SKCloudServiceSetupOptionsActionKe
 /// Identifier of the iTunes Store item the user is trying to access which requires cloud service setup (NSNumber).
 SK_EXTERN SKCloudServiceSetupOptionsKey const SKCloudServiceSetupOptionsITunesItemIdentifierKey NS_SWIFT_NAME(iTunesItemIdentifier) NS_AVAILABLE_IOS(10_1);
 
+/// iTunes Store affiliate token (NSString).
+SK_EXTERN SKCloudServiceSetupOptionsKey const SKCloudServiceSetupOptionsAffiliateTokenKey NS_AVAILABLE_IOS(10_3);
+
+/// iTunes Store affiliate campaign token (NSString).
+SK_EXTERN SKCloudServiceSetupOptionsKey const SKCloudServiceSetupOptionsCampaignTokenKey NS_AVAILABLE_IOS(10_3);
+
 // Supported actions for setup entry point.
 
 SK_EXTERN SKCloudServiceSetupAction const SKCloudServiceSetupActionSubscribe NS_AVAILABLE_IOS(10_1);

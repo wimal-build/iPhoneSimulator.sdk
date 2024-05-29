@@ -86,6 +86,27 @@
                 .upNextCardOrganizerTitle { tv-text-style: title3; }
                 .upNextCardOrganizerSubtitle { tv-text-style: subhead-short; }
             }
+            @media (width:504) {
+                .basePadding { padding: 0.0 20.0 0.0 20.0; }
+                .baseCollection { tv-interitem-spacing: 10.0; }
+                .baseMonogram { width:148.0; height:148.0; font-size:56; }
+                .baseReviewCard_Short { width:227.0; min-height:177.0; }
+                .baseReviewCard_Long { width:464.0; min-height:177.0; }
+                .baseInfoList { tv-interitem-spacing: 20.0; tv-max-lines: 0; }
+                .baseILInfo { width: 222.0; }
+                .baseProductInfo { tv-interitem-spacing: 10.0; }
+                .baseInfoTable { width: 464.0; }
+                .baseInfoHeader { width: 58; margin: 0 20.0 0 0; }
+                .baseShelfLIL { width: 464.0; min-height:56; }
+                .baseLIL { padding: 0 0 0 20.0; }
+                .baseLIL_DecorationImg { margin: 0 20.0 0 12.0; }
+                .upNextCard { width:464.0; min-height:261.0; }
+                .upNextCard_LockupImg { width:464.0; height:261.0; }
+                .upNextCardTitle { tv-text-style: caption2; margin: 0 0 7 0; }
+                .upNextCardOrganizerImg { width: 36.0; height: 36.0; margin: 12 10 12 0; }
+                .upNextCardOrganizerTitle { tv-text-style: title3; }
+                .upNextCardOrganizerSubtitle { tv-text-style: subhead-short; }
+            }
             @media (width:507) {
                 .basePadding { padding: 0.0 20.0 0.0 20.0; }
                 .baseCollection { tv-interitem-spacing: 10.0; }
@@ -102,6 +123,27 @@
                 .baseLIL_DecorationImg { margin: 0 20.0 0 12.0; }
                 .upNextCard { width:467.0; min-height:262.0; }
                 .upNextCard_LockupImg { width:467.0; height:262.0; }
+                .upNextCardTitle { tv-text-style: caption2; margin: 0 0 7 0; }
+                .upNextCardOrganizerImg { width: 36.0; height: 36.0; margin: 12 10 12 0; }
+                .upNextCardOrganizerTitle { tv-text-style: title3; }
+                .upNextCardOrganizerSubtitle { tv-text-style: subhead-short; }
+            }
+            @media (width:551) {
+                .basePadding { padding: 0.0 20.0 0.0 20.0; }
+                .baseCollection { tv-interitem-spacing: 10.0; }
+                .baseMonogram { width:163.0; height:163.0; font-size:62; }
+                .baseReviewCard_Short { width:250.5; min-height:177.0; }
+                .baseReviewCard_Long { width:511.0; min-height:177.0; }
+                .baseInfoList { tv-interitem-spacing: 20.0; tv-max-lines: 0; }
+                .baseILInfo { width: 245.5; }
+                .baseProductInfo { tv-interitem-spacing: 10.0; }
+                .baseInfoTable { width: 511.0; }
+                .baseInfoHeader { width: 58; margin: 0 20.0 0 0; }
+                .baseShelfLIL { width: 511.0; min-height:56; }
+                .baseLIL { padding: 0 0 0 20.0; }
+                .baseLIL_DecorationImg { margin: 0 20.0 0 12.0; }
+                .upNextCard { width:511.0; min-height:287.0; }
+                .upNextCard_LockupImg { width:511.0; height:287.0; }
                 .upNextCardTitle { tv-text-style: caption2; margin: 0 0 7 0; }
                 .upNextCardOrganizerImg { width: 36.0; height: 36.0; margin: 12 10 12 0; }
                 .upNextCardOrganizerTitle { tv-text-style: title3; }
@@ -191,6 +233,48 @@
                 .upNextCardOrganizerTitle { tv-text-style: title3; }
                 .upNextCardOrganizerSubtitle { tv-text-style: body-short; }
             }
+            @media (width:782) {
+                .basePadding { padding: 0.0 34.0 0.0 34.0; }
+                .baseCollection { tv-interitem-spacing: 20.0; }
+                .baseMonogram { width:163.5; height:163.5; font-size:60; }
+                .baseReviewCard_Short { width:163.5; min-height:177.0; }
+                .baseReviewCard_Long { width:530.5; min-height:177.0; }
+                .baseInfoList { tv-interitem-spacing: 20.0; tv-max-lines: 0; }
+                .baseILInfo { width: 163.5; }
+                .baseProductInfo { tv-interitem-spacing: 20.0; }
+                .baseInfoTable { width: 224.0; }
+                .baseInfoHeader { max-width: 58; margin: 0 12.0 0 0; }
+                .baseShelfLIL { width: 347.0; min-height:56; }
+                .baseLIL { padding: 0 0 0 34.0; }
+                .baseLIL_DecorationImg { margin: 0 34.0 0 12.0; }
+                .upNextCard { width:347.0; min-height:195.0; }
+                .upNextCard_LockupImg { width:347.0; height:195.0; }
+                .upNextCardTitle { tv-text-style: footnote-short; font-weight: semibold; margin: 0 0 7 0; }
+                .upNextCardOrganizerImg { width: 35.0; height: 35.0; margin: 12 10 12 0; }
+                .upNextCardOrganizerTitle { tv-text-style: title3; }
+                .upNextCardOrganizerSubtitle { tv-text-style: body-short; }
+            }
+            @media (width:834) {
+                .basePadding { padding: 0.0 34.0 0.0 34.0; }
+                .baseCollection { tv-interitem-spacing: 20.0; }
+                .baseMonogram { width:176.5; height:176.5; font-size:60; }
+                .baseReviewCard_Short { width:176.5; min-height:177.0; }
+                .baseReviewCard_Long { width:569.5; min-height:177.0; }
+                .baseInfoList { tv-interitem-spacing: 20.0; tv-max-lines: 0; }
+                .baseILInfo { width: 176.5; }
+                .baseProductInfo { tv-interitem-spacing: 20.0; }
+                .baseInfoTable { width: 242.0; }
+                .baseInfoHeader { max-width: 58; margin: 0 12.0 0 0; }
+                .baseShelfLIL { width: 373.0; min-height:56; }
+                .baseLIL { padding: 0 0 0 34.0; }
+                .baseLIL_DecorationImg { margin: 0 34.0 0 12.0; }
+                .upNextCard { width:373.0; min-height:209.0; }
+                .upNextCard_LockupImg { width:373.0; height:209.0; }
+                .upNextCardTitle { tv-text-style: footnote-short; font-weight: semibold; margin: 0 0 7 0; }
+                .upNextCardOrganizerImg { width: 35.0; height: 35.0; margin: 12 10 12 0; }
+                .upNextCardOrganizerTitle { tv-text-style: title3; }
+                .upNextCardOrganizerSubtitle { tv-text-style: body-short; }
+            }
             @media (width:981) {
                 .basePadding { padding: 0.0 34.0 0.0 34.0; }
                 .baseCollection { tv-interitem-spacing: 20.0; }
@@ -234,6 +318,30 @@
                 .upNextCardOrganizerSubtitle { tv-text-style: body-short; }
                 .upNextCard_Grid { width:286.0; min-height:160.0; }
                 .upNextCard_LockupImg_Grid { width:286.0; height:160.0; }
+                
+            }
+            @media (width:1112) {
+                .basePadding { padding: 0.0 52.0 0.0 52.0; }
+                .baseCollection { tv-interitem-spacing: 30.0; }
+                .baseMonogram { width:177.0; height:177.0; font-size:60; }
+                .baseReviewCard_Short { width:177.0; min-height:177.0; }
+                .baseReviewCard_Long { width:592.0; min-height:177.0; }
+                .baseInfoList { tv-interitem-spacing: 30.0; tv-max-lines: 5; }
+                .baseILInfo { width: 177.0; }
+                .baseProductInfo { tv-interitem-spacing: 30.0; }
+                .baseInfoTable { width: 316.0; }
+                .baseInfoHeader { max-width: 58; margin: 0 12.0 0 0; }
+                .baseShelfLIL { width: 489.0; min-height:56; }
+                .baseLIL { padding: 0 0 0 52.0; }
+                .baseLIL_DecorationImg { margin: 0 52.0 0 12.0; }
+                .upNextCard { width:385.0; min-height:216.6; }
+                .upNextCard_LockupImg { width:385.0; height:216.6; }
+                .upNextCardTitle { tv-text-style: footnote-short; font-weight: semibold; margin: 0 0 7 0; }
+                .upNextCardOrganizerImg { width: 35.0; height: 35.0; margin: 12 10 12 0; }
+                .upNextCardOrganizerTitle { tv-text-style: title3; }
+                .upNextCardOrganizerSubtitle { tv-text-style: body-short; }
+                .upNextCard_Grid { width:316.0; min-height:177.0; }
+                .upNextCard_LockupImg_Grid { width:316.0; height:177.0; }
                 
             }
             @media (width:1366) {
@@ -336,9 +444,10 @@
 
             .baseSeparator { tv-tint-color: systemmidgray; }
 			
+            .baseActivityIndicator { width: 25; height: 25; }
+
 			<!-- Product Info Panel (default for Pad) -->
             .baseProductInfo { tv-line-spacing: 24; }
-            .baseInfoTable { max-height: 460; }
             .baseInfoTableHeader { margin: 0 0 12 0; }
             .baseITHTitle { tv-text-style: title2; font-weight: heavy; }
             .baseInfoTableFooter { margin: 17 0 0; }
@@ -478,6 +587,7 @@
             </listItemLockup>
         </list>
         <separator class="basePadding baseSeparator" />
+        <activityIndicator class="baseActivityIndicator"/>
         
         <!-- Product Info -->
         <productInfo class="basePadding baseProductInfo">

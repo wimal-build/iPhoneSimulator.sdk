@@ -36,6 +36,6 @@ typedef NS_OPTIONS(NSUInteger, INPhotoAttributeOptions) {
     INPhotoAttributeOptionMonoFilter = (1UL << 21),
     INPhotoAttributeOptionFadeFilter = (1UL << 22),
     INPhotoAttributeOptionProcessFilter = (1UL << 23),
-} API_AVAILABLE(ios(10.0));
+} API_AVAILABLE(ios(10.0), watchos(3.2));
 
 #endif // INPhotoAttributeOptions_h

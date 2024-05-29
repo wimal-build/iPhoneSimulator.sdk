@@ -49,3 +49,6 @@ aggregatectl --addScalar com.apple.testKeyA:1 --addScalar com.apple.testKeyB:2
 
 aggregatectl --scalarsWithPrefix app
   List all scalars in the database with the prefix "app".
+
+aggregatectl --scalarsWithPrefix app --days 3
+  List scalar data in the database with the prefix "app" for the past 3 days (defaults to 7).

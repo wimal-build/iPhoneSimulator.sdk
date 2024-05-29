@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx)
+API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx)
 @interface INPaymentMethod : NSObject <NSCopying, NSSecureCoding>
 
 - (instancetype)init NS_UNAVAILABLE;

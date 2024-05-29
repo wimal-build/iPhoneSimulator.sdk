@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		mDhZGIwdnqAjhEYp5RFRpSzR1hY=
+		9H+5q97KMiS7IE5RTMl1nR2o5M0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RXTc/QTUgmoZcmlWczeA0TB/hzs=
+		/0ij69lB74fJJGdPIhnO7eWNm2M=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -656,6 +656,24 @@
 			<key>hash</key>
 			<data>
 			HKLd6BTKU66mCezOe7UyPdjlFZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>yue_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>yue_CN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PMNuZWho+v7NB1nPehSuKzVESNM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -719,7 +737,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		mDhZGIwdnqAjhEYp5RFRpSzR1hY=
+		9H+5q97KMiS7IE5RTMl1nR2o5M0=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1365,6 +1383,24 @@
 			<key>hash</key>
 			<data>
 			HKLd6BTKU66mCezOe7UyPdjlFZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>yue_CN.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>yue_CN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PMNuZWho+v7NB1nPehSuKzVESNM=
 			</data>
 			<key>optional</key>
 			<true/>

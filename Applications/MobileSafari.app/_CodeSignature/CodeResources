@@ -58,7 +58,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Sk3A0QBYJYPKfMruJA1yF6GTods=
+		CN2nbOVB7eLj7rYF44sS2ZEO878=
 		</data>
 		<key>BuiltInBookmarkItemApple.plist</key>
 		<data>
@@ -88,15 +88,6 @@
 		<data>
 		eXLYfcTGhBP3DsxOAmmc2zLEAy4=
 		</data>
-		<key>Dutch.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Dutch.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -119,16 +110,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HFcj8kA9WryEP4kTxC/mMMoeW6E=
+			yCB5TWwINp3EUIeHRm22BuTuReA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>English.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>Dutch.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bau0OLj5bYVECiD/9xGviUPI/Pc=
+			dVH+wJfhQzy4rnKz9Blx5PARRIc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -155,16 +146,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b8V/f7lSEqxRsvjGtdtAsROoPhY=
+			QlLklam3iTCoxSm7dlbnib5fF2I=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>French.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>English.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yR4LAphr+XrjsSW7An1iqy4Hv1g=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -191,16 +182,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eVzcw6cEvBvc6zH863/1nlRdR2k=
+			dZ45dbb7m6LAG3d/dg9N65bxjQA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>German.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>French.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W7ctxMqbIqCKqbl5QPwz+xna3Yw=
+			VD5sBaKenIrF6Yobb9vf4kGSx44=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -227,24 +218,24 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JNFaceiL16bndHzfY0hWYGNhK0Y=
+			v6GsndFD+oFJTPTIJbUBPr8WPTM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>German.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		bbMKzoCWmrFbCCrpXPIKlEnbY/0=
+		ypTM8FTXzlbsM1mJ9RU+2ViPK1E=
 		</data>
-		<key>Italian.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0C0EktPagoI7q5soqVAp3xha4+A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Italian.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -267,16 +258,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8ziBatDDWKSgqtDQoVuLHhhndto=
+			dmhKGt5IvQg6ykrM3Cw+Kbcxwv4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Japanese.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>Italian.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eZ00XkRANG2sMb9/F0Xwftchqk8=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -303,7 +294,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j97lhUuXmmu3zNc6AYbOC4uDSRY=
+			OHHmrwPa1dJYt2IGcAE1CdFw9WE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hA1ANx4+OQOcUgU5rOZjDp94VYQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -314,11 +314,11 @@
 		</data>
 		<key>Launch.storyboardc/UIViewController-Ywo-Mq-y0B.nib</key>
 		<data>
-		aK8Y+SpZSGr/36P2OQubdQcdU6Q=
+		Pwk5O32qC8ZbTdU1FANbwZqLmh4=
 		</data>
 		<key>Launch.storyboardc/Ywo-Mq-y0B-view-EkI-QO-1QP.nib</key>
 		<data>
-		cjESIKlsfGNI/b+NQQoj8fFbJXQ=
+		smjVu3ZYnneJSxYDOq3ATIcSUX4=
 		</data>
 		<key>LaunchPrivateBrowsing.storyboardc/Info.plist</key>
 		<data>
@@ -326,11 +326,11 @@
 		</data>
 		<key>LaunchPrivateBrowsing.storyboardc/UIViewController-Ywo-Mq-y0B.nib</key>
 		<data>
-		Nc277Y0Evf8kj9Tkl5EBBf1bHi0=
+		3RmMilksfpABFeEjm4CIpYsdEuQ=
 		</data>
 		<key>LaunchPrivateBrowsing.storyboardc/Ywo-Mq-y0B-view-EkI-QO-1QP.nib</key>
 		<data>
-		YIxVKNtq438hL0ebkXjoW0SeyQA=
+		OSj8d9/B4793nbVwl7+spS9BW54=
 		</data>
 		<key>MoreDots@2x~ipad.png</key>
 		<data>
@@ -354,49 +354,32 @@
 		</data>
 		<key>PlugIns/Safari.wkbundle/Info.plist</key>
 		<data>
-		B2XYgVIRx1jfojAd0JW9D9ZBXu4=
+		KBY8JquzdacCAALg9nC/PVRLLTI=
 		</data>
 		<key>PlugIns/Safari.wkbundle/Safari</key>
 		<data>
-		7gusxsFYTwn8zAG9PxsV9kxSTbc=
+		ZQjx6VJ+Jjyrlp1An0gjCNWZxbc=
 		</data>
 		<key>PlugIns/Safari.wkbundle/_CodeSignature/CodeResources</key>
 		<data>
-		l+zxULHY+zYBMEBJD/JKRgVPK5U=
-		</data>
-		<key>PlugIns/Safari.wkbundle/version.plist</key>
-		<data>
-		nU9LyoLtq0apftO+P+v/Q1zaGxw=
+		hMdj5Rc0azA2yH65bk6ai2NPtK0=
 		</data>
 		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/Info.plist</key>
 		<data>
-		Fy4qc43vp5tOEaj6grR9hACoYFQ=
+		ivMTMcM6SaRwPQVkm7JtVuftL3I=
 		</data>
 		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		0esqeQ2NYGDtB9VmmhU0NwkLKu8=
+		7rC0ZmGa87UtvkLzqAgK3EWzuYE=
 		</data>
 		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/com.apple.mobilesafari.SafariDiagnosticExtension</key>
 		<data>
-		ItmIEkuLhj0GD6qrb/CqQbUgrdo=
-		</data>
-		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/version.plist</key>
-		<data>
-		nU9LyoLtq0apftO+P+v/Q1zaGxw=
+		Lpbt9tc0ZafSzHeMr9IKm/PGj0s=
 		</data>
 		<key>RequestDesktopSiteUIActivity.js</key>
 		<data>
-		tLFjnT5IpvWAFHdhLrSHpas5nms=
+		11Pd+WKOHhUCL/dSgjUeoSHL7+Y=
 		</data>
-		<key>Spanish.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZI4kbn5D+Y4nh26nUJIhmnfzNJo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Spanish.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -419,16 +402,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0qyU6sm0pTUO0iP/iMQi3LE3NUc=
+			2aTkmgukvYq5Qrtc6/MuxF7Ist8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ar.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>Spanish.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			2y32snSLbshxqhNGpd2bQEsIH9g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -455,16 +438,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PpHkSUXm6xBmBVyASXq6irc9vCw=
+			ng11GxzM4ANdTwgtRc5fS64knAg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ar.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zxi0ryVjI0npDvrSF/oZBKMaR8U=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -491,7 +474,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UIQdQJe7t6bzJjBIeTtBXTSd0wA=
+			54JXF6zn75WB2lPjcgCq0xkD/iU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -500,15 +492,6 @@
 		<data>
 		W1Uf43sh60DRXIeHzWavEpPB1hQ=
 		</data>
-		<key>cs.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>cs.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -531,16 +514,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			egU2KAzY7KHjJSzz3JgyjsfoN38=
+			8mn3MT9ExutyiO7X+K456gnzVHY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>cs.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pJOQ7sidLOhmmdDkKGyWpYUpBxQ=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -567,16 +550,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GYM8StarStrbKTYBfMMgaqLAYu0=
+			KWaCUPqXDSZmvCVpQVppIVM7VU8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>da.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -603,16 +586,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3EhJ4wv5bkaihYXv8OWT9A1EJ94=
+			BwwhpbDOxtbyTZjlpuLPifz99hI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>el.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			nx6XLeBzVup4RXpUoyaEje/4KBQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -639,16 +622,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a5xmxM8xpI06qTxbaLlGoWMXYQE=
+			NxJkLrMi9wcy4fjvnWkRzGUhdTw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>en_AU.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			phndeFj5x24eu34/xOZNdN2NYYQ=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -675,16 +658,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u4RODPe3z6OKuqLe3J8eZAegr1k=
+			3GcWdpOaJ7ERVsNJxKIVLVc/FGI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>en_GB.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -711,16 +694,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+KDWRjZbXu6+BBQH7J4/DEQn6gk=
+			7bLFKuFE/gZscyFzxm0mQ73Zulg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>fi.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -747,16 +730,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nP2GRibBT09NXgjSl1JpbAV7zrI=
+			OKCBgsRX6Gmum9zlVmz/ju0FOGo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>fr_CA.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GCV+zFXs8JqFbKGc1tXAj1a5OwA=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -783,16 +766,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UZAzwv8SG74hCHOCEWXcxllq1Pc=
+			Vw5guv3J6HlLNpH0wCUCMEH34Zg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>he.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -819,16 +802,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xdjZARzZWzXWMYwxxcz2VKZ1UJ0=
+			vXLBKn+Uoqa5YSz67pDJyHoHG24=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>hi.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			abwTKu1rKH/dhbMlpHhsIzBEnn0=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -855,16 +838,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gFjwPsjyvzK33V2FWxHXE2LmTkQ=
+			p6jsqVYoSjvgpoc19GL/8VnAHqU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>hr.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7TNnJBF2vjldd3+p9ZFPi2+zXMI=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -891,16 +874,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U8YouDfo3BnXtNEhbWKwdY8bcGc=
+			U2MTpfy4/VZIc6mDfGY5vTGc1EU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>hu.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			d6yzayI4FK7329nlP1SBpXjQK4I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -927,16 +910,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wi9kbshjwLrH0kmxlXk556E3WU0=
+			CPuPs47hAWvT/DrH7giXwPGc4FY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>id.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -963,16 +946,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UHGHsoqK7J6VwAJDJgkW8r1VJmI=
+			3QDEFoD9Ab/6np3Fku+Hys9asTU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ko.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -999,16 +982,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jvxy0CKk6lkOo5KVAsHmTgPoDR4=
+			McMzvvq7UiyzK8gjezMY8FVxgzA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ms.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CBJU8qCP39ICnDhv0GmaJwGcQB0=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1035,16 +1018,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jrPrSJplhBZlWxCwu0kwS9/eq28=
+			KIB5lgoAXFol2vWimu6jAfWDYuc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>no.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			/Ps0sWsg3FdQg3HjMDkkIhwh/H8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1071,16 +1054,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			twmzjpdQVPVjk7djqqDgS6Tc7/w=
+			HBzElpRXdjwNIcgyfX32V0KA/Rs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>pl.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1107,16 +1090,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U4eA6Y7hXPtfV3jncxpC2OCnaIs=
+			gO+SWC3c6pvGBnKyULccxSbPuBQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>pt.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1143,16 +1126,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OHvpv+APTAgxhEPTHaK8jSKsbHs=
+			Yz8oARCHpt129kLSrpyrSKmlMkI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>pt_PT.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iuMDeUvtxA0zEuflLzApQLexYW4=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1179,16 +1162,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w9YAf9rggla3JxNJBsF2So5kTb4=
+			JMOd0R43dP5fLwIc64pHVfTxzZ8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ro.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1215,16 +1198,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YuJrbPk+vX7aaoTMUTpwZAG4Lx0=
+			6nzNHZofH1Sv44LuGhU3v3t1qcU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ru.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1251,16 +1234,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LykURrxN/Gihq7/eY//Xl50QTEI=
+			PfH7Wzshbj+rQd7IfAiqLc/F1yk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>sk.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ox/qTqWRjWFEk84Ds++7bLx7G6g=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1287,16 +1270,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GnAuI4pOiTp44NPn2DxwHQcx70Y=
+			5UJHQskj01Iu1R96ErgNJuWqLYM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>sv.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			2SnvNLcCMttiprJzsIOhM2TzEZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1323,16 +1306,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h0WX6XnDs0Em5atFevzsZmmkQpk=
+			U/W/4HBowhCTz9Ra3BVsz2tNysc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>th.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LmLP77mDUS5KjKDMchUZ2GFuyoE=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1359,16 +1342,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FZi0f8x6XG782/Kx0RNym5C4ZPk=
+			awznnskGMedyFRZ3N/XJp0dDsFk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>tr.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1395,20 +1378,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/RC5EGhj1ekldHlQMchfyCHaimw=
+			fMqWOBgU26+N+eId7eZPL5x5T2o=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		DvVSiKAhYtu5qTOlDhiRJdAWZXU=
-		</data>
-		<key>vi.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>uk.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1417,7 +1396,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0JV1fjd0TCWGh+GNhKhGUKSHWD4=
+			QiMMbsEu9G3vnl3xbAgzhuZl7v4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1435,16 +1414,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qLkO/b96yd4QjUgEnlBXg2kxNV0=
+			QwJOrYdn54EOe8x2opfJePqeSdA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>vi.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1471,16 +1450,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0yvBMlx5h6/nYgrD6h95upMpkEU=
+			sVrcdHE/gvLXACenaOWnw/IzgIY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>zh_CN.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1507,16 +1486,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pf1xwEGNryDiCxmvKb9Dyvn/+c8=
+			Ez9XL+CUBEbVQ7k6mYeTvF56zqU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>zh_HK.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1543,7 +1522,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JpIow8oIhRNjTNRbbZ9F1o2ZCP4=
+			GSjmitU1zG5oM2JXR0a5aq+fGH0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1605,7 +1593,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Sk3A0QBYJYPKfMruJA1yF6GTods=
+		CN2nbOVB7eLj7rYF44sS2ZEO878=
 		</data>
 		<key>BuiltInBookmarkItemApple.plist</key>
 		<data>
@@ -1635,15 +1623,6 @@
 		<data>
 		eXLYfcTGhBP3DsxOAmmc2zLEAy4=
 		</data>
-		<key>Dutch.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Dutch.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1666,16 +1645,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HFcj8kA9WryEP4kTxC/mMMoeW6E=
+			yCB5TWwINp3EUIeHRm22BuTuReA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>English.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>Dutch.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bau0OLj5bYVECiD/9xGviUPI/Pc=
+			dVH+wJfhQzy4rnKz9Blx5PARRIc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1702,16 +1681,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b8V/f7lSEqxRsvjGtdtAsROoPhY=
+			QlLklam3iTCoxSm7dlbnib5fF2I=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>French.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>English.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yR4LAphr+XrjsSW7An1iqy4Hv1g=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1738,16 +1717,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eVzcw6cEvBvc6zH863/1nlRdR2k=
+			dZ45dbb7m6LAG3d/dg9N65bxjQA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>German.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>French.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W7ctxMqbIqCKqbl5QPwz+xna3Yw=
+			VD5sBaKenIrF6Yobb9vf4kGSx44=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1774,16 +1753,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JNFaceiL16bndHzfY0hWYGNhK0Y=
+			v6GsndFD+oFJTPTIJbUBPr8WPTM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Italian.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>German.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0C0EktPagoI7q5soqVAp3xha4+A=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1810,16 +1789,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8ziBatDDWKSgqtDQoVuLHhhndto=
+			dmhKGt5IvQg6ykrM3Cw+Kbcxwv4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Japanese.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>Italian.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eZ00XkRANG2sMb9/F0Xwftchqk8=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1846,7 +1825,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j97lhUuXmmu3zNc6AYbOC4uDSRY=
+			OHHmrwPa1dJYt2IGcAE1CdFw9WE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Japanese.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hA1ANx4+OQOcUgU5rOZjDp94VYQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1857,11 +1845,11 @@
 		</data>
 		<key>Launch.storyboardc/UIViewController-Ywo-Mq-y0B.nib</key>
 		<data>
-		aK8Y+SpZSGr/36P2OQubdQcdU6Q=
+		Pwk5O32qC8ZbTdU1FANbwZqLmh4=
 		</data>
 		<key>Launch.storyboardc/Ywo-Mq-y0B-view-EkI-QO-1QP.nib</key>
 		<data>
-		cjESIKlsfGNI/b+NQQoj8fFbJXQ=
+		smjVu3ZYnneJSxYDOq3ATIcSUX4=
 		</data>
 		<key>LaunchPrivateBrowsing.storyboardc/Info.plist</key>
 		<data>
@@ -1869,11 +1857,11 @@
 		</data>
 		<key>LaunchPrivateBrowsing.storyboardc/UIViewController-Ywo-Mq-y0B.nib</key>
 		<data>
-		Nc277Y0Evf8kj9Tkl5EBBf1bHi0=
+		3RmMilksfpABFeEjm4CIpYsdEuQ=
 		</data>
 		<key>LaunchPrivateBrowsing.storyboardc/Ywo-Mq-y0B-view-EkI-QO-1QP.nib</key>
 		<data>
-		YIxVKNtq438hL0ebkXjoW0SeyQA=
+		OSj8d9/B4793nbVwl7+spS9BW54=
 		</data>
 		<key>MoreDots@2x~ipad.png</key>
 		<data>
@@ -1893,49 +1881,32 @@
 		</data>
 		<key>PlugIns/Safari.wkbundle/Info.plist</key>
 		<data>
-		B2XYgVIRx1jfojAd0JW9D9ZBXu4=
+		KBY8JquzdacCAALg9nC/PVRLLTI=
 		</data>
 		<key>PlugIns/Safari.wkbundle/Safari</key>
 		<data>
-		7gusxsFYTwn8zAG9PxsV9kxSTbc=
+		ZQjx6VJ+Jjyrlp1An0gjCNWZxbc=
 		</data>
 		<key>PlugIns/Safari.wkbundle/_CodeSignature/CodeResources</key>
 		<data>
-		l+zxULHY+zYBMEBJD/JKRgVPK5U=
-		</data>
-		<key>PlugIns/Safari.wkbundle/version.plist</key>
-		<data>
-		nU9LyoLtq0apftO+P+v/Q1zaGxw=
+		hMdj5Rc0azA2yH65bk6ai2NPtK0=
 		</data>
 		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/Info.plist</key>
 		<data>
-		Fy4qc43vp5tOEaj6grR9hACoYFQ=
+		ivMTMcM6SaRwPQVkm7JtVuftL3I=
 		</data>
 		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		0esqeQ2NYGDtB9VmmhU0NwkLKu8=
+		7rC0ZmGa87UtvkLzqAgK3EWzuYE=
 		</data>
 		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/com.apple.mobilesafari.SafariDiagnosticExtension</key>
 		<data>
-		ItmIEkuLhj0GD6qrb/CqQbUgrdo=
-		</data>
-		<key>PlugIns/com.apple.mobilesafari.SafariDiagnosticExtension.appex/version.plist</key>
-		<data>
-		nU9LyoLtq0apftO+P+v/Q1zaGxw=
+		Lpbt9tc0ZafSzHeMr9IKm/PGj0s=
 		</data>
 		<key>RequestDesktopSiteUIActivity.js</key>
 		<data>
-		tLFjnT5IpvWAFHdhLrSHpas5nms=
+		11Pd+WKOHhUCL/dSgjUeoSHL7+Y=
 		</data>
-		<key>Spanish.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZI4kbn5D+Y4nh26nUJIhmnfzNJo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Spanish.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1958,16 +1929,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0qyU6sm0pTUO0iP/iMQi3LE3NUc=
+			2aTkmgukvYq5Qrtc6/MuxF7Ist8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ar.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>Spanish.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			2y32snSLbshxqhNGpd2bQEsIH9g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1994,16 +1965,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PpHkSUXm6xBmBVyASXq6irc9vCw=
+			ng11GxzM4ANdTwgtRc5fS64knAg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ca.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ar.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zxi0ryVjI0npDvrSF/oZBKMaR8U=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2030,7 +2001,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UIQdQJe7t6bzJjBIeTtBXTSd0wA=
+			54JXF6zn75WB2lPjcgCq0xkD/iU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2039,15 +2019,6 @@
 		<data>
 		W1Uf43sh60DRXIeHzWavEpPB1hQ=
 		</data>
-		<key>cs.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>cs.lproj/BuiltinBookmarks.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2070,16 +2041,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			egU2KAzY7KHjJSzz3JgyjsfoN38=
+			8mn3MT9ExutyiO7X+K456gnzVHY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>da.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>cs.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pJOQ7sidLOhmmdDkKGyWpYUpBxQ=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2106,16 +2077,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GYM8StarStrbKTYBfMMgaqLAYu0=
+			KWaCUPqXDSZmvCVpQVppIVM7VU8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>el.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>da.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2142,16 +2113,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3EhJ4wv5bkaihYXv8OWT9A1EJ94=
+			BwwhpbDOxtbyTZjlpuLPifz99hI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_AU.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>el.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			nx6XLeBzVup4RXpUoyaEje/4KBQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2178,16 +2149,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a5xmxM8xpI06qTxbaLlGoWMXYQE=
+			NxJkLrMi9wcy4fjvnWkRzGUhdTw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>en_AU.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			phndeFj5x24eu34/xOZNdN2NYYQ=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2214,16 +2185,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u4RODPe3z6OKuqLe3J8eZAegr1k=
+			3GcWdpOaJ7ERVsNJxKIVLVc/FGI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fi.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>en_GB.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2250,16 +2221,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+KDWRjZbXu6+BBQH7J4/DEQn6gk=
+			7bLFKuFE/gZscyFzxm0mQ73Zulg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>fi.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2286,16 +2257,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nP2GRibBT09NXgjSl1JpbAV7zrI=
+			OKCBgsRX6Gmum9zlVmz/ju0FOGo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>he.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>fr_CA.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GCV+zFXs8JqFbKGc1tXAj1a5OwA=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2322,16 +2293,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UZAzwv8SG74hCHOCEWXcxllq1Pc=
+			Vw5guv3J6HlLNpH0wCUCMEH34Zg=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>he.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2358,16 +2329,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xdjZARzZWzXWMYwxxcz2VKZ1UJ0=
+			vXLBKn+Uoqa5YSz67pDJyHoHG24=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>hi.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			abwTKu1rKH/dhbMlpHhsIzBEnn0=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2394,16 +2365,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gFjwPsjyvzK33V2FWxHXE2LmTkQ=
+			p6jsqVYoSjvgpoc19GL/8VnAHqU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hu.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>hr.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7TNnJBF2vjldd3+p9ZFPi2+zXMI=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2430,16 +2401,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U8YouDfo3BnXtNEhbWKwdY8bcGc=
+			U2MTpfy4/VZIc6mDfGY5vTGc1EU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>id.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>hu.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			d6yzayI4FK7329nlP1SBpXjQK4I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2466,16 +2437,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wi9kbshjwLrH0kmxlXk556E3WU0=
+			CPuPs47hAWvT/DrH7giXwPGc4FY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ko.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>id.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2502,16 +2473,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UHGHsoqK7J6VwAJDJgkW8r1VJmI=
+			3QDEFoD9Ab/6np3Fku+Hys9asTU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ko.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2538,16 +2509,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jvxy0CKk6lkOo5KVAsHmTgPoDR4=
+			McMzvvq7UiyzK8gjezMY8FVxgzA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ms.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CBJU8qCP39ICnDhv0GmaJwGcQB0=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2574,16 +2545,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jrPrSJplhBZlWxCwu0kwS9/eq28=
+			KIB5lgoAXFol2vWimu6jAfWDYuc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>no.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			/Ps0sWsg3FdQg3HjMDkkIhwh/H8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2610,16 +2581,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			twmzjpdQVPVjk7djqqDgS6Tc7/w=
+			HBzElpRXdjwNIcgyfX32V0KA/Rs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>pl.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2646,16 +2617,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U4eA6Y7hXPtfV3jncxpC2OCnaIs=
+			gO+SWC3c6pvGBnKyULccxSbPuBQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt_PT.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>pt.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2682,16 +2653,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OHvpv+APTAgxhEPTHaK8jSKsbHs=
+			Yz8oARCHpt129kLSrpyrSKmlMkI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>pt_PT.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iuMDeUvtxA0zEuflLzApQLexYW4=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2718,16 +2689,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w9YAf9rggla3JxNJBsF2So5kTb4=
+			JMOd0R43dP5fLwIc64pHVfTxzZ8=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ru.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ro.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2754,16 +2725,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YuJrbPk+vX7aaoTMUTpwZAG4Lx0=
+			6nzNHZofH1Sv44LuGhU3v3t1qcU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>ru.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e2NfF4h1j2352ix5AdBol2xLDNc=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2790,16 +2761,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LykURrxN/Gihq7/eY//Xl50QTEI=
+			PfH7Wzshbj+rQd7IfAiqLc/F1yk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sv.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>sk.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ox/qTqWRjWFEk84Ds++7bLx7G6g=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2826,16 +2797,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GnAuI4pOiTp44NPn2DxwHQcx70Y=
+			5UJHQskj01Iu1R96ErgNJuWqLYM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>sv.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			2SnvNLcCMttiprJzsIOhM2TzEZI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2862,16 +2833,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h0WX6XnDs0Em5atFevzsZmmkQpk=
+			U/W/4HBowhCTz9Ra3BVsz2tNysc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>tr.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>th.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LmLP77mDUS5KjKDMchUZ2GFuyoE=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2898,16 +2869,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FZi0f8x6XG782/Kx0RNym5C4ZPk=
+			awznnskGMedyFRZ3N/XJp0dDsFk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>tr.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2934,20 +2905,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/RC5EGhj1ekldHlQMchfyCHaimw=
+			fMqWOBgU26+N+eId7eZPL5x5T2o=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>version.plist</key>
-		<data>
-		DvVSiKAhYtu5qTOlDhiRJdAWZXU=
-		</data>
-		<key>vi.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>uk.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2956,7 +2923,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0JV1fjd0TCWGh+GNhKhGUKSHWD4=
+			QiMMbsEu9G3vnl3xbAgzhuZl7v4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2974,16 +2941,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qLkO/b96yd4QjUgEnlBXg2kxNV0=
+			QwJOrYdn54EOe8x2opfJePqeSdA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>vi.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3010,16 +2977,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0yvBMlx5h6/nYgrD6h95upMpkEU=
+			sVrcdHE/gvLXACenaOWnw/IzgIY=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>zh_CN.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3046,16 +3013,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pf1xwEGNryDiCxmvKb9Dyvn/+c8=
+			Ez9XL+CUBEbVQ7k6mYeTvF56zqU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_TW.lproj/BrowserControllerLocalizableKeyboardShortcuts.plist</key>
+		<key>zh_HK.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PzJ8/PHfr2nzYhhkGpv/RDs5XXU=
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3082,7 +3049,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JpIow8oIhRNjTNRbbZ9F1o2ZCP4=
+			GSjmitU1zG5oM2JXR0a5aq+fGH0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SafariLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Knxp/twjCAgeu8N+P67qZamBNw=
 			</data>
 			<key>optional</key>
 			<true/>

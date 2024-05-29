@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class INPaymentMethod;
 @class INPerson;
 
-API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx)
+API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx)
 @interface INPaymentRecord : NSObject <NSCopying, NSSecureCoding>
 
 - (id)init NS_UNAVAILABLE;

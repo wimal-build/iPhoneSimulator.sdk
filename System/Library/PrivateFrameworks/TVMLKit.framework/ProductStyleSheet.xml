@@ -25,7 +25,7 @@
             .reviewCardBadge { width: 22; height: 22; }
             .reviewCardTitle { tv-text-style: title2; color: black; }
             .reviewCardText { tv-position: top; margin: 8 0 0 32; tv-text-style: caption1; color: systemgray; text-transform: uppercase; font-weight: medium; }
-            .reviewCardDescription { tv-position: bottom; tv-minimum-scale-factor: 0.84; margin: 38 0 0 32; tv-text-max-lines: 4; tv-text-style: subhead-short; text-align: natural; color: systemgray; }
+            .reviewCardDescription { tv-position: bottom; margin: 38 0 0 32; tv-text-max-lines: 4; tv-text-style: subhead-short; text-align: natural; color: systemgray; }
             
             <!-- rating cards -->
             .ratingCard { padding: 12 16 16 16; background-color: rgba(255, 255, 255, 0.8); tv-img-treatment: corner-small; }
@@ -35,7 +35,7 @@
             .ratingCardRowTitle { tv-text-style: title2; color: black; text-align: natural; }
 			.ratingCardStarRating { tv-position: top; height: 17; tv-interitem-spacing: 2; tv-tint-color: black; tv-rating-style: star-s; }
             .ratingCardText { tv-position: top; margin: 8 0 0 0; tv-text-style: caption1; text-align: natural; font-weight: medium; color: systemgray; text-transform: uppercase; }
-            .ratingCardDescription { tv-position: bottom; margin: 38 0 0 0; tv-minimum-scale-factor: 0.84; tv-text-max-lines: 4; tv-text-style: subhead-short; color: systemgray; text-align: natural; }
+            .ratingCardDescription { tv-position: bottom; margin: 38 0 0 0; tv-text-max-lines: 4; tv-text-style: subhead-short; color: systemgray; text-align: natural; }
             .ratingCardInfoTable { tv-position: bottom; }
             .ratingCardInfo { }
             .ratingCardInfoHeader { width: 64; margin: 0 10 0 0; }

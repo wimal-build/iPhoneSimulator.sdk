@@ -18,11 +18,11 @@ typedef NS_ENUM(NSInteger, INGetRideStatusIntentResponseCode) {
     INGetRideStatusIntentResponseCodeFailureRequiringAppLaunch,
     INGetRideStatusIntentResponseCodeFailureRequiringAppLaunchMustVerifyCredentials,
     INGetRideStatusIntentResponseCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), watchos(3.2))
 API_UNAVAILABLE(macosx)
 @interface INGetRideStatusIntentResponse : INIntentResponse
 
@@ -36,7 +36,6 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INGetRideStatusIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INRideStatus *rideStatus;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -22,7 +22,7 @@
 	      <CAFilter filter="multiplyColor" name="multiplyColor" inputColor="0.3704 0.374 0.3536"/>
 	    </filters>
 	    <sublayers>
-	      <CAEmitterLayer cullMaxZ="0" cullRect="-Inf -Inf Inf Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="firstEmitter" position="375 667">
+	      <CAEmitterLayer cullMaxZ="0" cullRect="-Inf -Inf Inf Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="firstEmitter" position="375 667" updateInterval="0.01666666667">
 		<emitterBehaviors>
 		  <CAEmitterBehavior behavior="attractor" name="attractor" zPosition="10" orientationLatitude="1.570796370506" attractorType="radial" falloffDistance="-500" falloff="-Inf" orientationLongitude="-1.570796370506" position="375 667">
 		    <stiffness type="integer" value="0"/>
@@ -857,7 +857,7 @@
 		  </CAEmitterCell>
 		</emitterCells>
 	      </CAEmitterLayer>
-	      <CAEmitterLayer cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 160 160" hidden="0" name="secondEmitter" position="850 1500">
+	      <CAEmitterLayer cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 160 160" hidden="0" name="secondEmitter" position="850 1500" updateInterval="0.01666666667">
 		<emitterBehaviors>
 		  <CAEmitterBehavior behavior="attractor" name="attractor" zPosition="-10" orientationLatitude="1.570796370506" attractorType="radial" falloffDistance="0" falloff="-290" orientationLongitude="-1.570796370506" position="8000 8000">
 		    <stiffness type="integer" value="10"/>
@@ -1064,7 +1064,7 @@
 		  </CAEmitterCell>
 		</emitterCells>
 	      </CAEmitterLayer>
-	      <CAEmitterLayer cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 160 160" hidden="0" name="thirdEmitter" position="850 1500">
+	      <CAEmitterLayer cullMinZ="0" cullRect="-8.988465674312e307 -8.988465674312e307 1.797693134862e308 Inf" emitterDepth="160" emitterPath="" emitterPosition="375 667" emitterShape="sphere" emitterSize="160 160" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 160 160" hidden="0" name="thirdEmitter" position="850 1500" updateInterval="0.01666666667">
 		<emitterBehaviors>
 		  <CAEmitterBehavior behavior="attractor" name="attractor" position="8000 8000" orientationLongitude="-1.570796370506" falloff="-290" falloffDistance="0" attractorType="radial" orientationLatitude="1.570796370506" zPosition="-10">
 		    <radius type="integer" value="600"/>

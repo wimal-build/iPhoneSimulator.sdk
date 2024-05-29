@@ -29,7 +29,16 @@ typedef NS_ENUM(NSInteger, INVocabularyStringType) {
     /// The name of a vehicle configuration profile, for example "Roadtrip", "Rally", "Good Weather".
     /// For use by automaker apps that are enabled to work with CarPlay <https://developer.apple.com/carplay/>.
     INVocabularyStringTypeCarProfileName = 300,
-};
+    
+    /// The name of a vehicle as a person will say it, for example “BMW”, “My Convertible”.
+    INVocabularyStringTypeCarName NS_ENUM_AVAILABLE_IOS(10_3),
+    
+    /// The name of an organization to pay as a person will say it, for example “PG&E”, “Comcast”.
+    INVocabularyStringTypePaymentsOrganizationName NS_ENUM_AVAILABLE_IOS(10_3) = 400,
+    
+    /// The name of an account nick name as a person will say it, for example “Checking”, “Rainy day savings”.
+    INVocabularyStringTypePaymentsAccountNickname NS_ENUM_AVAILABLE_IOS(10_3),
+} __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos)
 @interface INVocabulary : NSObject

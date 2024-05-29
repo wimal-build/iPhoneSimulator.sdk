@@ -52,6 +52,54 @@
 	</dict>
 	<dict>
 		<key>EventName</key>
+		<string>AppIntents</string>
+		<key>KnowledgeBaseEventName</key>
+		<string>/app/intents</string>
+		<key>EventDescription</key>
+		<string>Events capturing active application intents.</string>
+		<key>EventType</key>
+		<string>EventValueCategorical</string>
+		<key>FutureEvent</key>
+		<false/>
+		<key>SetupOnDemand</key>
+		<false/>
+		<key>CanBeSpeculative</key>
+		<false/>
+		<key>EphemeralityInSeconds</key>
+		<real>1209600</real>
+		<key>CanPersistOnStorage</key>
+		<true/>
+		<key>TimestampPrecisionInSeconds</key>
+		<integer>1</integer>
+		<key>DeResolutionPolicy</key>
+		<string>Default</string>
+		<key>DataProtectionClass</key>
+		<string>NSFileProtectionCompleteUntilFirstUserAuthentication</string>
+		<key>TotalNumberOfEventsLimit</key>
+		<real>10000</real>
+		<key>RateLimitPeriodInSeconds</key>
+		<string>60</string>
+		<key>RateLimitCount</key>
+		<string>30</string>
+		<key>CanBeShared</key>
+		<true/>
+		<key>DataSharingPolicy</key>
+		<string>DataSharingPolicyShareDefault</string>
+		<key>MaxVisibilityLatencyInSeconds</key>
+		<integer>10</integer>
+		<key>CanSendToServer</key>
+		<false/>
+		<key>HasStats</key>
+		<false/>
+		<key>StatisticsType</key>
+		<string>Default</string>
+		<key>IsInstant</key>
+		<false/>
+		<key>IsHistorical</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>EventName</key>
 		<string>NowPlaying</string>
 		<key>KnowledgeBaseEventName</key>
 		<string>/media/nowPlaying</string>
@@ -2653,6 +2701,54 @@
 		<true/>
 		<key>IsHistorical</key>
 		<false/>
+	</dict>
+	<dict>
+		<key>EventName</key>
+		<string>InternalQueryDataCollection</string>
+		<key>KnowledgeBaseEventName</key>
+		<string>/internal/queryDataCollection</string>
+		<key>EventDescription</key>
+		<string>Events to carry the desired query-related metrics</string>
+		<key>EventType</key>
+		<string>EventValueCategorical</string>
+		<key>FutureEvent</key>
+		<false/>
+		<key>SetupOnDemand</key>
+		<false/>
+		<key>CanBeSpeculative</key>
+		<false/>
+		<key>EphemeralityInSeconds</key>
+		<integer>604800</integer>
+		<key>CanPersistOnStorage</key>
+		<true/>
+		<key>TimestampPrecisionInSeconds</key>
+		<integer>1</integer>
+		<key>DeResolutionPolicy</key>
+		<string>Default</string>
+		<key>DataProtectionClass</key>
+		<string>NSFileProtectionCompleteUntilFirstUserAuthentication</string>
+		<key>TotalNumberOfEventsLimit</key>
+		<integer>10000</integer>
+		<key>RateLimitPeriodInSeconds</key>
+		<string>60</string>
+		<key>RateLimitCount</key>
+		<string>10</string>
+		<key>CanBeShared</key>
+		<true/>
+		<key>DataSharingPolicy</key>
+		<string>DataSharingPolicyShareDefault</string>
+		<key>MaxVisibilityLatencyInSeconds</key>
+		<integer>10</integer>
+		<key>CanSendToServer</key>
+		<false/>
+		<key>HasStats</key>
+		<false/>
+		<key>StatisticsType</key>
+		<string>Default</string>
+		<key>IsInstant</key>
+		<false/>
+		<key>IsHistorical</key>
+		<true/>
 	</dict>
 </array>
 </plist>

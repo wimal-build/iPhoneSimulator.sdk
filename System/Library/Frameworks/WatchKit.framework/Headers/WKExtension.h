@@ -51,6 +51,7 @@ WK_AVAILABLE_WATCHOS_ONLY(2.0)
 - (void)handleWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration WK_AVAILABLE_WATCHOS_ONLY(3.0);
 
 - (void)handleUserActivity:(nullable NSDictionary *)userInfo;
+- (void)handleActivity:(NSUserActivity *)userActivity WK_AVAILABLE_WATCHOS_ONLY(3.2);
 
 - (void)handleBackgroundTasks:(NSSet <WKRefreshBackgroundTask *> *)backgroundTasks WK_AVAILABLE_WATCHOS_ONLY(3.0);
 

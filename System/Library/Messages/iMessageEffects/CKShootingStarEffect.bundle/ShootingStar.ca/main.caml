@@ -15,7 +15,7 @@
 	      <real value="0.75"/>
 	    </locations>
 	  </CAGradientLayer>
-	  <CAEmitterLayer emitterDepth="200" emitterPosition="187.5 333.5" emitterShape="cuboid" emitterSize="200 200" emitterZPosition="-900" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="1" opacity="0" position="375 667">
+	  <CAEmitterLayer emitterDepth="200" emitterPosition="187.5 333.5" emitterShape="cuboid" emitterSize="200 200" emitterZPosition="-900" preservesDepth="1" renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="1" opacity="0" position="375 667" updateInterval="0.01666666667">
 	    <emitterCells>
 	      <CAEmitterCell alphaRange="1" alphaSpeed="0" birthRate="400" contentsFrameCount="1" contentsFrameMode="single" contentsFramesPerRow="1" contentsRect="0 0 1 1" contentsScale="4" emissionLatitude="0" emissionRange="6.283185482025" enabled="1" lifetime="4" lifetimeRange="2" mass="1" massRange="0" name="cell1" orientationLatitude="0" orientationLongitude="0" orientationRange="0" particleType="sprite" redRange="0" redSpeed="0" rotation="0" rotationRange="0" scaleRange="0" scaleSpeed="0" spinRange="0" velocity="0" velocityRange="0" xAcceleration="0" yAcceleration="0">
 		<color opacity="0.75" value="0.3439 0.7309 1"/>
@@ -39,7 +39,7 @@
 	      </CAEmitterCell>
 	    </emitterCells>
 	  </CAEmitterLayer>
-	  <CAEmitterLayer renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="2" position="375 667">
+	  <CAEmitterLayer renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="2" position="375 667" updateInterval="0.01666666667">
 	    <emitterBehaviors>
 	      <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" enabled="0" keyPath="scale" additive="1">
 		<values>
@@ -77,7 +77,7 @@
 	      </CAEmitterCell>
 	    </emitterCells>
 	  </CAEmitterLayer>
-	  <CAEmitterLayer emitterMode="points" emitterPosition="375 667" renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="3" position="375 667" transform="scale(0, 0, 1)">
+	  <CAEmitterLayer emitterMode="points" emitterPosition="375 667" renderMode="cheapAdditive" bounds="0 0 750 1334" hidden="0" name="3" position="375 667" transform="scale(0, 0, 1)" updateInterval="0.01666666667">
 	    <emitterBehaviors>
 	      <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife 2" enabled="0" additive="1" keyPath="scale">
 		<values>

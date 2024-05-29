@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger,SKErrorCode) {
     SKErrorStoreProductNotAvailable,                                          // Product is not available in the current storefront
     SKErrorCloudServicePermissionDenied NS_ENUM_AVAILABLE_IOS(9_3),           // user has not allowed access to cloud service information
     SKErrorCloudServiceNetworkConnectionFailed NS_ENUM_AVAILABLE_IOS(9_3),    // the device could not connect to the nework
+    SKErrorCloudServiceRevoked NS_ENUM_AVAILABLE_IOS(10_3),                   // user has revoked permission to use this cloud service
 };
 
 NS_ASSUME_NONNULL_END

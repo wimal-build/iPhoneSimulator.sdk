@@ -4,9 +4,9 @@
         <style>
             .list {
                 tv-align:left;
-                width: 846;
-                margin:0 78 0 160;
-                padding: 50 0 90;
+                width: 924;
+				padding: 50 78 90 0;
+                margin:0 0 0 160;
             }
             .listHeader {
                 margin: 66 0 15;
@@ -41,7 +41,7 @@
                 tv-text-style: body;
             }
             .itemBanner {
-                margin: 136 90 0 183;
+                margin: 136 90 0 105;
             }
 
             .collection {
@@ -85,8 +85,8 @@
 
             @media tv-template and (-tv-uber) {
                 .list {
-                    width: 926;
-                    padding: 43 0 43;
+                    width: 1004;
+                    padding: 43 78 43 0;
                 }
                 .listHeader {
                     margin: -24 0 15;
@@ -96,7 +96,7 @@
                     height: 556;
                 }
                 .itemBanner {
-                    margin: -24 90 0 188;
+                    margin: -24 90 0 110;
                     width: 556;
                 }
                 .itemBannerRow {
@@ -113,7 +113,7 @@
 
             @media tv-template and (-tv-bg-uber) {
                 .itemBanner {
-                    margin: 836 90 0 183;
+                    margin: 836 90 0 105;
                 }
                 .itemBannerRow {
                     margin: 0;

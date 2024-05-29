@@ -9,7 +9,7 @@
 // http://mapsconnect.apple.com/info/extensions
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @interface INRestaurantGuestDisplayPreferences : NSObject <NSSecureCoding, NSCopying>
 
 @property (NS_NONATOMIC_IOSONLY) BOOL nameFieldFirstNameOptional; // indicates whether first name field is marked optional, defaults to NO

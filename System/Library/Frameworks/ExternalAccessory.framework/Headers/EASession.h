@@ -21,12 +21,12 @@ EA_EXTERN_CLASS_AVAILABLE(3_0) @interface EASession : NSObject {
     BOOL _openCompleted;
 }
 
-- (instancetype)initWithAccessory:(EAAccessory *)accessory forProtocol:(NSString *)protocolString __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (instancetype)initWithAccessory:(EAAccessory *)accessory forProtocol:(NSString *)protocolString __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __TVOS_AVAILABLE(10.0);
 
-@property (nonatomic, readonly) EAAccessory *accessory __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
-@property (nonatomic, readonly) NSString *protocolString __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
-@property (nonatomic, readonly, nullable) NSInputStream *inputStream __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
-@property (nonatomic, readonly, nullable) NSOutputStream *outputStream __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+@property (nonatomic, readonly) EAAccessory *accessory __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __TVOS_AVAILABLE(10.0);
+@property (nonatomic, readonly) NSString *protocolString __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __TVOS_AVAILABLE(10.0);
+@property (nonatomic, readonly, nullable) NSInputStream *inputStream __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __TVOS_AVAILABLE(10.0);
+@property (nonatomic, readonly, nullable) NSOutputStream *outputStream __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0) __TVOS_AVAILABLE(10.0);
 @end
 
 NS_ASSUME_NONNULL_END

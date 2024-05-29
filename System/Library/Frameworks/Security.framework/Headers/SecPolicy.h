@@ -2,14 +2,14 @@
  * Copyright (c) 2002-2016 Apple Inc. All Rights Reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
- * 
+ *
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
  * Version 2.0 (the 'License'). You may not use this file except in
  * compliance with the License. Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this
  * file.
- * 
+ *
  * The Original Code and all software distributed under the License are
  * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
@@ -17,15 +17,15 @@
  * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
  * Please see the License for the specific language governing rights and
  * limitations under the License.
- * 
+ *
  * @APPLE_LICENSE_HEADER_END@
  */
 
 /*!
-	@header SecPolicy
-	The functions provided in SecPolicy.h provide an interface to various
-	X.509 certificate trust policies.
-*/
+     @header SecPolicy
+     The functions provided in SecPolicy.h provide an interface to various
+     X.509 certificate trust policies.
+ */
 
 #ifndef _SECURITY_SECPOLICY_H_
 #define _SECURITY_SECPOLICY_H_
@@ -40,24 +40,24 @@ CF_ASSUME_NONNULL_BEGIN
 CF_IMPLICIT_BRIDGING_ENABLED
 
 /*!
-	@enum Policy Constants
-	@discussion Predefined constants used to specify a policy.
-	@constant kSecPolicyAppleX509Basic
-	@constant kSecPolicyAppleSSL
-	@constant kSecPolicyAppleSMIME
-	@constant kSecPolicyAppleEAP
-	@constant kSecPolicyAppleiChat
-	@constant kSecPolicyAppleIPsec
-	@constant kSecPolicyApplePKINITClient
-	@constant kSecPolicyApplePKINITServer
-	@constant kSecPolicyAppleCodeSigning
-	@constant kSecPolicyMacAppStoreReceipt
-	@constant kSecPolicyAppleIDValidation
-	@constant kSecPolicyAppleTimeStamping
-	@constant kSecPolicyAppleRevocation
-	@constant kSecPolicyApplePassbookSigning
-	@constant kSecPolicyApplePayIssuerEncryption
-*/
+     @enum Policy Constants
+     @discussion Predefined constants used to specify a policy.
+     @constant kSecPolicyAppleX509Basic
+     @constant kSecPolicyAppleSSL
+     @constant kSecPolicyAppleSMIME
+     @constant kSecPolicyAppleEAP
+     @constant kSecPolicyAppleiChat
+     @constant kSecPolicyAppleIPsec
+     @constant kSecPolicyApplePKINITClient
+     @constant kSecPolicyApplePKINITServer
+     @constant kSecPolicyAppleCodeSigning
+     @constant kSecPolicyMacAppStoreReceipt
+     @constant kSecPolicyAppleIDValidation
+     @constant kSecPolicyAppleTimeStamping
+     @constant kSecPolicyAppleRevocation
+     @constant kSecPolicyApplePassbookSigning
+     @constant kSecPolicyApplePayIssuerEncryption
+ */
 extern const CFStringRef kSecPolicyAppleX509Basic
     __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
 extern const CFStringRef kSecPolicyAppleSSL
@@ -94,7 +94,7 @@ extern const CFStringRef kSecPolicyApplePayIssuerEncryption
 /*!
     @enum Policy Value Constants
     @abstract Predefined property key constants used to get or set values in
-        a dictionary for a policy instance.
+    a dictionary for a policy instance.
     @discussion
         All policies will have the following read-only value:
             kSecPolicyOid       (the policy object identifier)
@@ -124,125 +124,125 @@ extern const CFStringRef kSecPolicyApplePayIssuerEncryption
         the Organizational Unit field of the certificate subject.
  */
 extern const CFStringRef kSecPolicyOid
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
 extern const CFStringRef kSecPolicyName
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
 extern const CFStringRef kSecPolicyClient
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
 extern const CFStringRef kSecPolicyRevocationFlags
-	__OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 extern const CFStringRef kSecPolicyTeamIdentifier
     __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 
 /*!
-    @function SecPolicyGetTypeID
-    @abstract Returns the type identifier of SecPolicy instances.
-    @result The CFTypeID of SecPolicy instances.
-*/
+ @function SecPolicyGetTypeID
+ @abstract Returns the type identifier of SecPolicy instances.
+ @result The CFTypeID of SecPolicy instances.
+ */
 CFTypeID SecPolicyGetTypeID(void)
-	__OSX_AVAILABLE_STARTING(__MAC_10_3, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_3, __IPHONE_2_0);
 
 /*!
-    @function SecPolicyCopyProperties
-    @abstract Returns a dictionary of this policy's properties.
-    @param policyRef A policy reference.
-    @result A properties dictionary. See "Policy Value Constants" for a list
-    of currently defined property keys. It is the caller's responsibility to
-    CFRelease this reference when it is no longer needed.
-    @result A result code. See "Security Error Codes" (SecBase.h).
-    @discussion This function returns the properties for a policy, as set by the
-    policy's construction function or by a prior call to SecPolicySetProperties.
-*/
+ @function SecPolicyCopyProperties
+ @abstract Returns a dictionary of this policy's properties.
+ @param policyRef A policy reference.
+ @result A properties dictionary. See "Policy Value Constants" for a list
+ of currently defined property keys. It is the caller's responsibility to
+ CFRelease this reference when it is no longer needed.
+ @result A result code. See "Security Error Codes" (SecBase.h).
+ @discussion This function returns the properties for a policy, as set by the
+ policy's construction function or by a prior call to SecPolicySetProperties.
+ */
 __nullable
 CFDictionaryRef SecPolicyCopyProperties(SecPolicyRef policyRef)
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_7_0);
 
 /*!
-    @function SecPolicyCreateBasicX509
-    @abstract Returns a policy object for the default X.509 policy.
-    @result A policy object. The caller is responsible for calling CFRelease
-    on this when it is no longer needed.
-*/
+ @function SecPolicyCreateBasicX509
+ @abstract Returns a policy object for the default X.509 policy.
+ @result A policy object. The caller is responsible for calling CFRelease
+ on this when it is no longer needed.
+ */
 SecPolicyRef SecPolicyCreateBasicX509(void)
-	__OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_2_0);
 
 /*!
-    @function SecPolicyCreateSSL
-    @abstract Returns a policy object for evaluating SSL certificate chains.
-    @param server Passing true for this parameter creates a policy for SSL
-    server certificates.
-    @param hostname (Optional) If present, the policy will require the specified
-    hostname to match the hostname in the leaf certificate.
-    @result A policy object. The caller is responsible for calling CFRelease
-    on this when it is no longer needed.
-*/
+ @function SecPolicyCreateSSL
+ @abstract Returns a policy object for evaluating SSL certificate chains.
+ @param server Passing true for this parameter creates a policy for SSL
+ server certificates.
+ @param hostname (Optional) If present, the policy will require the specified
+ hostname to match the hostname in the leaf certificate.
+ @result A policy object. The caller is responsible for calling CFRelease
+ on this when it is no longer needed.
+ */
 SecPolicyRef SecPolicyCreateSSL(Boolean server, CFStringRef __nullable hostname)
-	__OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_2_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_2_0);
 
 /*!
-	@enum Revocation Policy Constants
-	@abstract Predefined constants which allow you to specify how revocation
-	checking will be performed for a trust evaluation.
-	@constant kSecRevocationOCSPMethod If this flag is set, perform revocation
-	checking using OCSP (Online Certificate Status Protocol).
-	@constant kSecRevocationCRLMethod If this flag is set, perform revocation
-	checking using the CRL (Certificate Revocation List) method.
-	@constant kSecRevocationPreferCRL If this flag is set, then CRL revocation
-	checking will be preferred over OCSP (by default, OCSP is preferred.)
-	Note that this flag only matters if both revocation methods are specified.
-	@constant kSecRevocationRequirePositiveResponse If this flag is set, then
-	the policy will fail unless a verified positive response is obtained. If
-	the flag is not set, revocation checking is done on a "best attempt" basis,
-	where failure to reach the server is not considered fatal.
-	@constant kSecRevocationNetworkAccessDisabled If this flag is set, then
-	no network access is performed; only locally cached replies are consulted.
-	@constant kSecRevocationUseAnyAvailableMethod Specifies that either
-	OCSP or CRL may be used, depending on the method(s) specified in the
-	certificate and the value of kSecRevocationPreferCRL.
+     @enum Revocation Policy Constants
+     @abstract Predefined constants which allow you to specify how revocation
+     checking will be performed for a trust evaluation.
+     @constant kSecRevocationOCSPMethod If this flag is set, perform revocation
+     checking using OCSP (Online Certificate Status Protocol).
+     @constant kSecRevocationCRLMethod If this flag is set, perform revocation
+     checking using the CRL (Certificate Revocation List) method.
+     @constant kSecRevocationPreferCRL If this flag is set, then CRL revocation
+     checking will be preferred over OCSP (by default, OCSP is preferred.)
+     Note that this flag only matters if both revocation methods are specified.
+     @constant kSecRevocationRequirePositiveResponse If this flag is set, then
+     the policy will fail unless a verified positive response is obtained. If
+     the flag is not set, revocation checking is done on a "best attempt" basis,
+     where failure to reach the server is not considered fatal.
+     @constant kSecRevocationNetworkAccessDisabled If this flag is set, then
+     no network access is performed; only locally cached replies are consulted.
+     @constant kSecRevocationUseAnyAvailableMethod Specifies that either
+     OCSP or CRL may be used, depending on the method(s) specified in the
+     certificate and the value of kSecRevocationPreferCRL.
  */
 CF_ENUM(CFOptionFlags) {
-	kSecRevocationOCSPMethod = (1 << 0),
-	kSecRevocationCRLMethod = (1 << 1),
-	kSecRevocationPreferCRL = (1 << 2),
-	kSecRevocationRequirePositiveResponse = (1 << 3),
-	kSecRevocationNetworkAccessDisabled = (1 << 4),
-	kSecRevocationUseAnyAvailableMethod = (kSecRevocationOCSPMethod |
-		kSecRevocationCRLMethod)
+    kSecRevocationOCSPMethod = (1 << 0),
+    kSecRevocationCRLMethod = (1 << 1),
+    kSecRevocationPreferCRL = (1 << 2),
+    kSecRevocationRequirePositiveResponse = (1 << 3),
+    kSecRevocationNetworkAccessDisabled = (1 << 4),
+    kSecRevocationUseAnyAvailableMethod = (kSecRevocationOCSPMethod |
+                                           kSecRevocationCRLMethod)
 };
 
 /*!
-	@function SecPolicyCreateRevocation
-	@abstract Returns a policy object for checking revocation of certificates.
-	@result A policy object. The caller is responsible for calling CFRelease
-	on this when it is no longer needed.
-	@param revocationFlags Flags to specify revocation checking options.
-	@discussion Use this function to create a revocation policy with behavior
-	specified by revocationFlags. See the "Revocation Policy Constants" section
-	for a description of these flags. Note: it is usually not necessary to
-	create a revocation policy yourself unless you wish to override default
-	system behavior (e.g. to force a particular method, or to disable
-	revocation checking entirely.)
-*/
+     @function SecPolicyCreateRevocation
+     @abstract Returns a policy object for checking revocation of certificates.
+     @result A policy object. The caller is responsible for calling CFRelease
+     on this when it is no longer needed.
+     @param revocationFlags Flags to specify revocation checking options.
+     @discussion Use this function to create a revocation policy with behavior
+     specified by revocationFlags. See the "Revocation Policy Constants" section
+     for a description of these flags. Note: it is usually not necessary to
+     create a revocation policy yourself unless you wish to override default
+     system behavior (e.g. to force a particular method, or to disable
+     revocation checking entirely.)
+ */
 __nullable
 SecPolicyRef SecPolicyCreateRevocation(CFOptionFlags revocationFlags)
-	__OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 /*!
-	@function SecPolicyCreateWithProperties
-	@abstract Returns a policy object based on an object identifier for the
-	policy type. See the "Policy Constants" section for a list of defined
-	policy object identifiers.
-	@param policyIdentifier The identifier for the desired policy type.
-	@param properties (Optional) A properties dictionary. See "Policy Value
-	Constants" for a list of currently defined property keys.
-	@result The returned policy reference, or NULL if the policy could not be
-	created.
-*/
+     @function SecPolicyCreateWithProperties
+     @abstract Returns a policy object based on an object identifier for the
+     policy type. See the "Policy Constants" section for a list of defined
+     policy object identifiers.
+     @param policyIdentifier The identifier for the desired policy type.
+     @param properties (Optional) A properties dictionary. See "Policy Value
+     Constants" for a list of currently defined property keys.
+     @result The returned policy reference, or NULL if the policy could not be
+     created.
+ */
 __nullable
 SecPolicyRef SecPolicyCreateWithProperties(CFTypeRef policyIdentifier,
-	CFDictionaryRef __nullable properties)
-	__OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
+                                           CFDictionaryRef __nullable properties)
+    __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_7_0);
 
 CF_IMPLICIT_BRIDGING_DISABLED
 CF_ASSUME_NONNULL_END
@@ -312,107 +312,107 @@ CF_IMPLICIT_BRIDGING_ENABLED
         have a key usage that permits it to be used for decryption only.
  */
 extern const CFStringRef kSecPolicyKU_DigitalSignature
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_NonRepudiation
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_KeyEncipherment
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_DataEncipherment
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_KeyAgreement
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_KeyCertSign
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_CRLSign
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_EncipherOnly
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 extern const CFStringRef kSecPolicyKU_DecipherOnly
-	__OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
+    __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_NA);
 
 /*!
-	@function SecPolicyCreateWithOID
-	@abstract Returns a policy object based on an object identifier for the
-	policy type. See the "Policy Constants" section for a list of defined
-	policy object identifiers.
-	@param policyOID The OID of the desired policy.
-	@result The returned policy reference, or NULL if the policy could not be
-	created.
-	@discussion This function is deprecated in Mac OS X 10.9 and later;
-	use SecPolicyCreateWithProperties (or a more specific policy creation
-	function) instead.
-*/
+     @function SecPolicyCreateWithOID
+     @abstract Returns a policy object based on an object identifier for the
+     policy type. See the "Policy Constants" section for a list of defined
+     policy object identifiers.
+     @param policyOID The OID of the desired policy.
+     @result The returned policy reference, or NULL if the policy could not be
+     created.
+     @discussion This function is deprecated in Mac OS X 10.9 and later;
+     use SecPolicyCreateWithProperties (or a more specific policy creation
+     function) instead.
+ */
 __nullable
 SecPolicyRef SecPolicyCreateWithOID(CFTypeRef policyOID)
-	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_9, __IPHONE_NA, __IPHONE_NA);
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_9, __IPHONE_NA, __IPHONE_NA);
 
 /*!
-	@function SecPolicyGetOID
-	@abstract Returns a policy's object identifier.
-	@param policyRef A policy reference.
-	@param oid On return, a pointer to the policy's object identifier.
-	@result A result code. See "Security Error Codes" (SecBase.h).
-	@discussion This function is deprecated in Mac OS X 10.7 and later;
-	use SecPolicyCopyProperties instead.
-*/
+     @function SecPolicyGetOID
+     @abstract Returns a policy's object identifier.
+     @param policyRef A policy reference.
+     @param oid On return, a pointer to the policy's object identifier.
+     @result A result code. See "Security Error Codes" (SecBase.h).
+     @discussion This function is deprecated in Mac OS X 10.7 and later;
+     use SecPolicyCopyProperties instead.
+ */
 OSStatus SecPolicyGetOID(SecPolicyRef policyRef, CSSM_OID *oid)
-	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
 
 /*!
-	@function SecPolicyGetValue
-	@abstract Returns a policy's value.
-	@param policyRef A policy reference.
-	@param value On return, a pointer to the policy's value.
-	@result A result code. See "Security Error Codes" (SecBase.h).
-	@discussion This function is deprecated in Mac OS X 10.7 and later;
-	use SecPolicyCopyProperties instead.
-*/
+     @function SecPolicyGetValue
+     @abstract Returns a policy's value.
+     @param policyRef A policy reference.
+     @param value On return, a pointer to the policy's value.
+     @result A result code. See "Security Error Codes" (SecBase.h).
+     @discussion This function is deprecated in Mac OS X 10.7 and later;
+     use SecPolicyCopyProperties instead.
+ */
 OSStatus SecPolicyGetValue(SecPolicyRef policyRef, CSSM_DATA *value)
-	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
 
 /*!
-	@function SecPolicySetValue
-	@abstract Sets a policy's value.
-	@param policyRef A policy reference.
-	@param value The value to be set into the policy object, replacing any
-	previous value.
-	@result A result code. See "Security Error Codes" (SecBase.h).
-	@discussion This function is deprecated in Mac OS X 10.7 and later. Policy
-	instances should be considered read-only; in cases where your code would
-	consider changing properties of a policy, it should instead create a new
-	policy instance with the desired properties.
-*/
+     @function SecPolicySetValue
+     @abstract Sets a policy's value.
+     @param policyRef A policy reference.
+     @param value The value to be set into the policy object, replacing any
+     previous value.
+     @result A result code. See "Security Error Codes" (SecBase.h).
+     @discussion This function is deprecated in Mac OS X 10.7 and later. Policy
+     instances should be considered read-only; in cases where your code would
+     consider changing properties of a policy, it should instead create a new
+     policy instance with the desired properties.
+ */
 OSStatus SecPolicySetValue(SecPolicyRef policyRef, const CSSM_DATA *value)
-	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
 
 /*!
-	@function SecPolicySetProperties
-	@abstract Sets a policy's properties.
-	@param policyRef A policy reference.
-	@param properties A properties dictionary. See "Policy Value Constants"
-	for a list of currently defined property keys. This dictionary replaces the
-	policy's existing properties, if any. Note that the policy OID (specified
-	by kSecPolicyOid) is a read-only property of the policy and cannot be set.
-	@result A result code. See "Security Error Codes" (SecBase.h).
-	@discussion This function is deprecated in Mac OS X 10.9 and later. Policy
-	instances should be considered read-only; in cases where your code would
-	consider changing properties of a policy, it should instead create a new
-	policy instance with the desired properties.
-*/
+     @function SecPolicySetProperties
+     @abstract Sets a policy's properties.
+     @param policyRef A policy reference.
+     @param properties A properties dictionary. See "Policy Value Constants"
+     for a list of currently defined property keys. This dictionary replaces the
+     policy's existing properties, if any. Note that the policy OID (specified
+     by kSecPolicyOid) is a read-only property of the policy and cannot be set.
+     @result A result code. See "Security Error Codes" (SecBase.h).
+     @discussion This function is deprecated in Mac OS X 10.9 and later. Policy
+     instances should be considered read-only; in cases where your code would
+     consider changing properties of a policy, it should instead create a new
+     policy instance with the desired properties.
+ */
 OSStatus SecPolicySetProperties(SecPolicyRef policyRef,
-	CFDictionaryRef properties)
-	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_9, __IPHONE_NA, __IPHONE_NA);
+                                CFDictionaryRef properties)
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_9, __IPHONE_NA, __IPHONE_NA);
 
 /*!
-	@function SecPolicyGetTPHandle
-	@abstract Returns the CSSM trust policy handle for the given policy.
-	@param policyRef A policy reference.
-	@param tpHandle On return, a pointer to a value of type CSSM_TP_HANDLE.
-	@result A result code. See "Security Error Codes" (SecBase.h).
-	@discussion This function is deprecated in Mac OS X 10.7 and later.
-*/
+     @function SecPolicyGetTPHandle
+     @abstract Returns the CSSM trust policy handle for the given policy.
+     @param policyRef A policy reference.
+     @param tpHandle On return, a pointer to a value of type CSSM_TP_HANDLE.
+     @result A result code. See "Security Error Codes" (SecBase.h).
+     @discussion This function is deprecated in Mac OS X 10.7 and later.
+ */
 OSStatus SecPolicyGetTPHandle(SecPolicyRef policyRef, CSSM_TP_HANDLE *tpHandle)
-	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
+    __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_7, __IPHONE_NA, __IPHONE_NA);
 
 CF_IMPLICIT_BRIDGING_DISABLED
 CF_ASSUME_NONNULL_END

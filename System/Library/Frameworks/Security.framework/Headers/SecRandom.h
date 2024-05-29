@@ -1,15 +1,15 @@
 /*
- * Copyright (c) 2007-2009,2012-2013 Apple Inc. All Rights Reserved.
- * 
+ * Copyright (c) 2007-2009,2011-2013,2016 Apple Inc. All Rights Reserved.
+ *
  * @APPLE_LICENSE_HEADER_START@
- * 
+ *
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apple Public Source License
  * Version 2.0 (the 'License'). You may not use this file except in
  * compliance with the License. Please obtain a copy of the License at
  * http://www.opensource.apple.com/apsl/ and read it before using this
  * file.
- * 
+ *
  * The Original Code and all software distributed under the License are
  * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
@@ -17,14 +17,14 @@
  * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
  * Please see the License for the specific language governing rights and
  * limitations under the License.
- * 
+ *
  * @APPLE_LICENSE_HEADER_END@
  */
 
 /*!
-	@header SecRandom
-	The functions provided in SecRandom.h implement high-level accessors
-    to cryptographically secure random numbers.
+     @header SecRandom
+     The functions provided in SecRandom.h implement high-level accessors
+     to cryptographically secure random numbers.
 */
 
 #ifndef _SECURITY_SECRANDOM_H_
@@ -51,11 +51,11 @@ extern const SecRandomRef kSecRandomDefault
     __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_2_0);
 
 /*!
-	@function SecRandomCopyBytes
-	@abstract Return count random bytes in *bytes, allocated by the caller.
-         It is critical to check the return value for error
-	@result Return 0 on success or -1 if something went wrong, check errno
-    to find out the real error.
+     @function SecRandomCopyBytes
+     @abstract Return count random bytes in *bytes, allocated by the caller.
+        It is critical to check the return value for error
+     @result Return 0 on success or -1 if something went wrong, check errno
+     to find out the real error.
 */
 int SecRandomCopyBytes(SecRandomRef __nullable rnd, size_t count, uint8_t *bytes)
     __attribute__ ((warn_unused_result))

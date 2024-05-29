@@ -13,10 +13,7 @@
             }
 
             .list {
-                tv-align:right;
-                width: 786;
                 padding: 50 0 60;
-                margin: 0 115 0 78;
                 tv-interitem-spacing: 16;
             }
             .listHeader {
@@ -46,45 +43,6 @@
                 margin: 23 0 0;
             }
 
-            .listSegmentBarHeader {
-                margin: 66 0 27;
-            }
-            .segmentBarTitle {
-                tv-text-style: title2;
-                color: rgb(0, 0, 0);
-                tv-position: center;
-                text-align: center;
-            }
-            .segmentBarSubtitle {
-                tv-text-style: body;
-                color: rgb(0, 0, 0);
-                tv-position: center;
-                text-align: center;
-            }
-            .segmentBar {
-                tv-position: bottom;
-                tv-align: center;
-                margin: 10px 0px 0px;
-            }
-            .segmentBarItemTitle {
-            }
-
-            .tumblerBar {
-                margin: 66 0 27;
-            }
-            .tumblerItem {
-                tv-align: center;
-                text-align: center;
-            }
-            .tumblerItemTitle {
-                tv-text-style: title2;
-                color: rgb(0, 0, 0);
-            }
-            .tumblerItemSubtitle {
-                tv-text-style: body;
-                color: rgba(0, 0, 0, 0.6);
-            }
-
             .listSectionHeader {
                 margin:43 20 13;
             }
@@ -93,7 +51,7 @@
                 color: rgba(0, 0, 0, 0.4);
                 tv-position: center;
                 tv-align:left;
-                text-align:left;
+                text-align: natural;
             }
 
             .listItemLockup {
@@ -111,9 +69,8 @@
             }
             .lilTitle {
                 tv-text-style: headline;
-				tv-text-highlight-style: marquee-on-highlight;
                 color: rgb(0, 0, 0);
-                text-align: left;
+                text-align: natural;
                 tv-text-max-lines: 1;
                 tv-position:center;
                 tv-align: left;
@@ -122,7 +79,7 @@
             .lilSubtitle {
                 tv-text-style: subtitle1;
                 color: rgba(0, 0, 0, 0.6);
-                text-align: left;
+                text-align: natural;
                 tv-text-max-lines: 1;
                 tv-position:center;
                 tv-align: left;
@@ -131,7 +88,7 @@
             .lilDecorationLabel {
                 tv-text-style: subtitle1;
                 color: rgba(0, 0, 0, 0.4);
-                text-align: left;
+                text-align: natural;
                 tv-text-max-lines: 1;
                 tv-position:right;
                 margin:0 20 0 0;
@@ -141,69 +98,11 @@
                 margin:0 20 0 0;
             }
 
-            .rcLockup {
-                margin: 136 78 0 90;
-                width: 846;
-            }
-            .rcImg {
-                width: 846;
-                height: 525;
-            }
-            .rcLockupTitle {
-                margin: 10 0;
-                tv-text-style: headline;
-                color: rgba(0, 0, 0, 0.6);
-                text-align:left;
-            }
-            .rcLockupSubtitle {
-                margin: 10 0;
-                tv-text-style: body;
-                color: rgba(0, 0, 0, 0.6);
-                text-align:left;
-            }
-            .rcDescription {
-                margin: 10 0;
-                tv-text-style: body;
-                color: rgba(0, 0, 0);
-                text-align:left;
-                tv-text-max-lines:4;
-            }
-
-            .rcActivity {
-                tv-align: center;
-                width:66;
-                height:66;
-                margin: 0 0 0 90;
-            }
-            .rcActivityTitle {
-                margin:0 0 5;
-                font-size: 40pt;
-                font-weight: normal;
-                color:rgba(0, 0, 0, 0.6);
-                text-align:center;
-            }
-
-            .heroImg {
-                width: 640;
-                height: 640;
-                tv-align: top;
-            }
-            .itemBanner {
-                margin: 136 187 0 187;
-                width: 640;
-            }
-            .itemBannerRow {
-                margin: 60 0 0;
-                tv-interitem-spacing: 24;
-                tv-position: bottom;
-                tv-align: center;
-                tv-content-align: top;
-            }
             .listDescription {
                 tv-text-style: body;
                 color: rgb(0, 0, 0);
                 background-color: rgba(255, 255, 255, 0.25);
-                text-align: left;
+                text-align: natural;
                 tv-text-max-lines: 2;
                 padding: 0 20;
                 margin: -30 0 56;
@@ -212,140 +111,13 @@
 				background-color: rgba(0, 0, 0, 0.2);
 				tv-highlight-color: rgb(255, 255, 255);
 			}
-
-            /* light is default */
-            @media tv-template and (tv-theme:dark) {
-                .bannerTitle {
-                    color: rgb(255, 255, 255);
-                }
-                .listHeaderTitle {
-                    color: rgb(255, 255, 255);
-                }
-                .listHeaderSubtitle {
-                    color: rgb(255, 255, 255);
-                }
-                .listHeaderText {
-                    color: rgb(255, 255, 255);
-                }
-
-                .segmentBarTitle {
-                    color: rgb(255, 255, 255);
-                }
-                .segmentBarSubtitle {
-                    color: rgb(255, 255, 255);
-                }
-
-                .tumblerItemTitle {
-                    color: rgb(255, 255, 255);
-                }
-                .tumblerItemSubtitle {
-                    color: rgba(255, 255, 255, 0.6);
-                }
-
-                .listSectionHeaderTitle {
-                    color: rgba(255, 255, 255, 0.25);
-                }
-
-                .lilOrdinal {
-                    color: rgba(255, 255, 255, 0.3);
-                    tv-highlight-color: rgba(0, 0, 0, 0.6);
-                }
-                .lilTitle {
-                    color: rgb(255, 255, 255);
-                    tv-highlight-color: rgb(0, 0, 0);
-                }
-                .lilSubtitle {
-                    color: rgba(255, 255, 255, 0.6);
-                    tv-highlight-color: rgb(0, 0, 0, 0.6);
-                }
-                .lilDecorationLabel {
-                    color: rgba(255, 255, 255, 0.3);
-                    tv-highlight-color: rgba(0, 0, 0, 0.6);
-                }
-                .rcLockupTitle {
-                    color: rgba(255, 255, 255, 0.6);
-                }
-                .rcLockupSubtitle {
-                    color: rgba(255, 255, 255, 0.6);
-                }
-                .rcDescription {
-                    color: rgba(255, 255, 255);
-                }
-
-                .rcActivityTitle {
-                    color:rgba(255, 255, 255, 0.6);
-                }
-
-                .listDescription {
-                    color: rgb(255, 255, 255);
-                    background-color: rgba(255, 255, 255, 0.2);
-                }
-				.listButton {
-					background-color: rgba(255, 255, 255, 0.2);
-				}
-            }
-
-            @media tv-template and (-tv-uber) {
-                .listHeaderTitle {
-                    color: rgb(255, 255, 255);
-                }
-                .listHeaderSubtitle {
-                    color: rgb(255, 255, 255);
-                }
-                .listHeaderText {
-                    color: rgb(255, 255, 255);
-                }
-                .rcLockup {
-                    margin: -100 78 0 90;
-                }
-                .itemBanner {
-                    margin: -100 187 0 187;
-                }
-            }
-
-            @media tv-template and (-tv-uber) and (-tv-header) {
-                .listHeader {
-                    margin: 0 0 43;
-                }
-                .list {
-                    padding: -43 0 43;
-                    margin: -120 120 0 78;
-                }
-            }
         </style>
     </head>
     
     <listTemplate>
-       <banner class="banner">
-            <background />
+        <banner class="banner">
             <title class="bannerTitle" />
         </banner>
-
-        <relatedContent>
-            <lockup class="rcLockup">
-                <img class="rcImg"/>
-                <title class="rcLockupTitle" />
-                <subtitle class="rcLockupSubtitle" />
-                <description class="rcDescription" />
-            </lockup>
-            <activityIndicator class="rcActivity">
-                <title class="rcActivityTitle"/>
-            </activityIndicator>
-            <heroImg class="heroImg" />
-            <itemBanner class="itemBanner">
-                <img class="heroImg"/>
-				<heroImg class="heroImg"/>
-                <row class="itemBannerRow">
-                    <buttonLockup class="baseButtonLockup">
-                        <img />
-                        <badge class="baseButtonLockupBadge"/>
-                        <seasonBadge class="baseButtonLockupSeasonBadge" />
-                        <text class="baseButtonLockupText"/>
-                        <title class="baseButtonLockupTitle"/>
-                    </buttonLockup>
-                </row>
-            </itemBanner>
-        </relatedContent>
 
         <list class="list">
             <header class="listHeader">
@@ -356,24 +128,6 @@
                     <text class="listHeaderText" />
                 </row>
             </header>
-
-            <segmentBarHeader class="listSegmentBarHeader">
-                <title class="segmentBarTitle"/>
-                <subtitle class="segmentBarSubtitle"/>
-
-                <segmentBar class="segmentBar">
-                    <segmentBarItem>
-                        <title class="segmentBarItemTitle"/>
-                    </segmentBarItem>
-                </segmentBar>
-            </segmentBarHeader>
-
-            <tumblerBar class="tumblerBar">
-                <tumblerItem class="tumblerItem">
-                    <title class="tumblerItemTitle" />
-                    <subtitle class="tumblerItemSubtitle" />
-                </tumblerItem>
-            </tumblerBar>
 
             <section>
                 <header class="listSectionHeader">

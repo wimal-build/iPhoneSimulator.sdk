@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, INBookRestaurantReservationIntentCode) {
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @interface INBookRestaurantReservationIntentResponse : INIntentResponse
 
 - (instancetype)initWithCode:(INBookRestaurantReservationIntentCode)code userActivity:(nullable NSUserActivity *)userActivity;

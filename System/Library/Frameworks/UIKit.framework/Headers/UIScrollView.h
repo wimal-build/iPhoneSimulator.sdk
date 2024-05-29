@@ -26,6 +26,11 @@ typedef NS_ENUM(NSInteger, UIScrollViewKeyboardDismissMode) {
     UIScrollViewKeyboardDismissModeInteractive, // the keyboard follows the dragging touch off screen, and may be pulled upward again to cancel the dismiss
 } NS_ENUM_AVAILABLE_IOS(7_0);
 
+typedef NS_ENUM(NSInteger, UIScrollViewIndexDisplayMode) {
+    UIScrollViewIndexDisplayModeAutomatic,    // the index will show or hide automatically as needed
+    UIScrollViewIndexDisplayModeAlwaysHidden, // the index will never be displayed
+} API_AVAILABLE(tvos(10.2));
+
 UIKIT_EXTERN const CGFloat UIScrollViewDecelerationRateNormal NS_AVAILABLE_IOS(3_0);
 UIKIT_EXTERN const CGFloat UIScrollViewDecelerationRateFast NS_AVAILABLE_IOS(3_0);
 
@@ -49,6 +54,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding>
 @property(nonatomic)         UIEdgeInsets                 scrollIndicatorInsets;          // default is UIEdgeInsetsZero. adjust indicators inside of insets
 @property(nonatomic)         UIScrollViewIndicatorStyle   indicatorStyle;                 // default is UIScrollViewIndicatorStyleDefault
 @property(nonatomic)         CGFloat                      decelerationRate NS_AVAILABLE_IOS(3_0);
+@property(nonatomic)         UIScrollViewIndexDisplayMode indexDisplayMode API_AVAILABLE(tvos(10.2));
 
 - (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;  // animate at constant velocity to new offset
 - (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated;         // scroll so rect is just visible (nearest edges). nothing if rect completely visible

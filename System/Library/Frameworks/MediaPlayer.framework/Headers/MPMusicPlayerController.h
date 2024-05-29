@@ -13,6 +13,8 @@
 #import <MediaPlayer/MPMediaPlayback.h>
 #import <MediaPlayer/MPMusicPlayerQueueDescriptor.h>
 
+@class MPMusicPlayerApplicationController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, MPMusicPlaybackState) {
@@ -42,8 +44,12 @@ typedef NS_ENUM(NSInteger, MPMusicShuffleMode) {
 MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 @interface MPMusicPlayerController : NSObject <MPMediaPlayback>
 
+
 /// Playing media items with the applicationMusicPlayer will restore the user's Music state after the application quits.
 + (MPMusicPlayerController *)applicationMusicPlayer;
+
+/// Similar to applicationMusicPlayer, but allows direct manipulation of the queue. 
++ (MPMusicPlayerApplicationController *)applicationQueuePlayer NS_AVAILABLE_IOS(10_3);
 
 /// Playing media items with the systemMusicPlayer will replace the user's current Music state.
 + (MPMusicPlayerController *)systemMusicPlayer;
@@ -83,13 +89,20 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 - (void)setQueueWithStoreIDs:(NSArray<NSString *> *)storeIDs NS_AVAILABLE_IOS(9_3);
 - (void)setQueueWithDescriptor:(MPMusicPlayerQueueDescriptor *)descriptor NS_AVAILABLE_IOS(10_1);
 
+// Inserts the contents of the queue descriptor after the now playing item
+- (void)prependQueueDescriptor:(MPMusicPlayerQueueDescriptor *)descriptor NS_AVAILABLE_IOS(10_3);
+
+// Adds the contents of the queue descriptor to the end of the queue
+- (void)appendQueueDescriptor:(MPMusicPlayerQueueDescriptor *)descriptor NS_AVAILABLE_IOS(10_3);
+
 // The completion handler will be called when the first item from the queue is buffered and ready to play.
 // If a first item has been specified using MPMusicPlayerQueueDescriptor, the error will be non-nil if the specified item cannot be prepared for playback.
 // If a first item is not specified, the error will be non-nil if an item cannot be prepared for playback.
 // Errors will be in MPErrorDomain.
 - (void)prepareToPlayWithCompletionHandler:(void (^)(NSError *_Nullable error))completionHandler NS_AVAILABLE_IOS(10_1);
 
-// Skips to the next item in the queue. If already at the last item, this will end playback.
+// Skips to the next item in the queue.
+// If already at the last item, this resets the queue to the first item in a paused playback state.
 - (void)skipToNextItem;
 
 // Restarts playback at the beginning of the currently playing media item.

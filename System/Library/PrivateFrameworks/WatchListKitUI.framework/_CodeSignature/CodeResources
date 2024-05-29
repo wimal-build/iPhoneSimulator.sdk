@@ -6,13 +6,22 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		BZ+Sulypnfz3ipqvlWzp1imWgpo=
+		bS2Gj0hmfKxCRLipCgucLd0Xhmk=
 		</data>
+		<key>de.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GQVXaLx1c3TWqCNfX7TS0lqlhp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/WatchListKitUI.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LoPDt4KEkkfUmu7rKifhkWHUBqI=
+			8YnoqOjsfw070p0ARd3ojkVAZhw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -21,7 +30,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2FrM4Du0lG3I+bbM4V18CqTd5x0=
+			Vn3guWXru6fTkKQwT0e6b5p3LUU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,7 +39,70 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ueBezhtovm4ixj3BwvyjaNUY8aE=
+			DGelnCiTXm7aTpQXxtEucCcIFnU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hrL01a5EU8ImJXH6RzDaYBwqKas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8DbQmHUxn6ZKEV1jMRTHUNZZIVo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+R1rpHjZrz8aitKpw5NmW6KiJlE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Q4j9LPRJGqzpWMGJfwkxqTNzJE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sw1U9rF7Sz9TTGKSTOphB+dzjGk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r90YV2TTUkP214LIYGgGDv+9kBU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gAMoi87jVOGU6mKVcbdgnXJRZt8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -38,11 +110,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>de.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GQVXaLx1c3TWqCNfX7TS0lqlhp0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/WatchListKitUI.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LoPDt4KEkkfUmu7rKifhkWHUBqI=
+			8YnoqOjsfw070p0ARd3ojkVAZhw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -51,7 +132,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2FrM4Du0lG3I+bbM4V18CqTd5x0=
+			Vn3guWXru6fTkKQwT0e6b5p3LUU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -60,7 +141,70 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ueBezhtovm4ixj3BwvyjaNUY8aE=
+			DGelnCiTXm7aTpQXxtEucCcIFnU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hrL01a5EU8ImJXH6RzDaYBwqKas=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8DbQmHUxn6ZKEV1jMRTHUNZZIVo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+R1rpHjZrz8aitKpw5NmW6KiJlE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Q4j9LPRJGqzpWMGJfwkxqTNzJE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sw1U9rF7Sz9TTGKSTOphB+dzjGk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r90YV2TTUkP214LIYGgGDv+9kBU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/WatchListKitUI.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gAMoi87jVOGU6mKVcbdgnXJRZt8=
 			</data>
 			<key>optional</key>
 			<true/>

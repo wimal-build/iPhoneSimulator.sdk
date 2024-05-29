@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @interface INGetAvailableRestaurantReservationBookingDefaultsIntent : INIntent
 
 @property (copy, nullable, NS_NONATOMIC_IOSONLY) INRestaurant *restaurant; // an optional restaurant that the extension may or may not use to tailor reservation defaults
@@ -26,7 +26,7 @@ API_UNAVAILABLE(macosx)
 @class INGetAvailableRestaurantReservationBookingDefaultsIntentResponse;
 
 API_AVAILABLE(ios(10.0))
-API_UNAVAILABLE(macosx)
+API_UNAVAILABLE(macosx, watchos)
 @protocol INGetAvailableRestaurantReservationBookingDefaultsIntentHandling <NSObject>
 
 /*!

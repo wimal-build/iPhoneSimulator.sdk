@@ -66,12 +66,12 @@
             font-size: 1em !important;
             font-weight: normal !important;
             font-style: normal !important;
-            display: inline;
+            display: inline !important;
             margin: 0;
         }
 
         .metadata :matches(.byline, .date) {
-            display: inline-block;
+            display: inline !important;
         }
 
         .metadata :matches(ul, ol, li) {
@@ -262,8 +262,8 @@
         }
 
         pre {
-            font-size: 0.93em;
-            line-height: 1.5em;
+            font-size: 0.9em;
+            line-height: 1.45em;
         }
 
         blockquote, q {
@@ -311,13 +311,18 @@
             border: 1px solid rgb(216, 216, 216);
         }
 
-        .delimeter {
+        .delimiter {
             margin-left: 0.45em;
             margin-right: 0.45em;
+            margin-top: 0.07em;
             padding: 0;
         }
-        .delimeter::after {
+        .metadata.singleline .delimiter::after {
             content: "•";
+        }
+        .metadata:not(.singleline) .delimiter {
+            content: "";
+            display: block !important;
         }
 
         .page table th {
@@ -352,16 +357,30 @@
         .heitisc { font-family: 'Heiti SC'; }
         .songtisc { font-family: 'Songti SC'; }
         .kaitisc { font-family: 'Kaiti SC'; }
-        .yuantisc { font-family: 'Yuanti SC'; }
+        .yuantisc {
+            font-family: 'Yuanti SC';
+            letter-spacing: 1px;
+        }
+        .libiansc { font-family: 'Libian SC'; }
+        .weibeisc { font-family: 'Weibei SC' }
+        .yuppysc { font-family: 'Yuppy SC' }
+
 
         .pingfangtc { font-family: 'PingFang TC'; }
         .heititc { font-family: 'Heiti TC'; }
         .songtitc { font-family: 'Songti TC'; }
         .kaititc { font-family: 'Kaiti TC'; }
-        .yuantitc { font-family: 'Yuanti TC'; }
+        .yuantitc {
+            font-family: 'Yuanti TC';
+            letter-spacing: 1px;
+        }
+        .libiantc { font-family: 'Libian TC'; }
+        .weibeitc { font-family: 'Weibei TC' }
+        .yuppytc { font-family: 'Yuppy TC' }
 
         .applesdgothicneo { font-family: 'Apple SD Gothic Neo'; }
-        .nanummyeongjo { font-family: 'NanumMyeongjo'; }
+        .nanumgothic { font-family: 'Nanum Gothic'; }
+        .nanummyeongjo { font-family: 'Nanum Myeongjo'; }
 
         .khmersangammn { font-family: 'Khmer Sangam MN'; }
 
@@ -429,7 +448,7 @@
             color: rgba(0, 0, 0, 0.8);
         }
 
-        .exported .delimeter::after {
+        .exported .delimiter::after {
             content: "";
         }
     </style>
@@ -571,6 +590,16 @@
         max-width: none;
     }
 
+    .iframe-wrapper {
+        background-color: black;
+        max-width: none;
+        text-align: center;
+    }
+
+    iframe {
+        border: 0;
+    }
+
     @media screen and (min-width: 0px) {
         /* Includes iPhone 5 in portrait */
         .page { padding-left: 16px; padding-right: 16px; }
@@ -632,9 +661,10 @@
         }
         .metadata {
             font-size: 0.9em;
+            line-height: 1.6em;
         }
         .title + .metadata {
-            margin-top: -0.75em;
+            margin-top: -0.65em;
         }
     }
 
@@ -670,6 +700,24 @@
         body.palatino #article { max-width: 97ex; }
         body.seravek #article { max-width: 87ex; }
         body.times #article { max-width: 97ex; }
+
+        :matches(body.pingfangsc, body.pingfangtc) #article { max-width: 87.6ex; }
+        :matches(body.heitisc, body.heititc) #article { max-width: 74.8ex; }
+        :matches(body.songtisc, body.songtitc) #article { max-width: 102ex; }
+        :matches(body.kaitisc, body.kaititc) #article { max-width: 102ex; }
+        :matches(body.yuantisc, body.yuantitc) #article { max-width: 86.2ex; }
+        :matches(body.libiansc, body.libiantc) #article { max-width: 95ex; }
+        :matches(body.weibeisc, body.weibeitc) #article { max-width: 99ex; }
+        :matches(body.yuppysc, body.yuppytc) #article { max-width: 87.6ex; }
+
+        body.hiraginosans #article { max-width: 75.7ex; }
+        body.hiraginokaku #article { max-width: 76.4ex; }
+        body.hiraginomincho #article { max-width: 77.5ex; }
+        body.hiraginomaru #article { max-width: 75.1ex; }
+
+        body.applesdgothicneo #article { max-width: 82ex; }
+        body.nanumgothic #article { max-width: 88.6ex; }
+        body.nanummyeongjo #article { max-width: 94.1ex; }
 
         .page {
             /* We don't want the lines seperating pages to extend beyond the primary text column. */
@@ -888,6 +936,22 @@
             background-color: rgba(255, 255, 255, 0.045);
         }
     </style>
+
+    <style id="locale-specific-adjustments">
+        .locale-ja .page {
+            text-align: justify;
+        }
+
+        .locale-zh-Hans .page {
+            text-align: justify;
+        }
+
+        .locale-zh-Hant .page {
+            text-align: justify;
+            word-break: break-all;
+        }
+    </style>
+
     <style id="dynamic-article-content"></style>
     <script src="safari-resource:/WBSLocalizedStrings.js"></script>
 </head>

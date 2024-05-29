@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		fVBAauaKnePYBWXOz3taCHfK/gQ=
+		zJZDuvumHmEOKJMOOJrv/R9B97Q=
 		</data>
 		<key>Headers/SFContentBlockerManager.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UdpZbqyg62l5CQDHM516V+4YO5o=
+		Sw2v0nbU0IQHHEpZJnsGoF+fxvc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,15 +46,15 @@
 		</data>
 		<key>PlugIns/SafariServices.wkbundle/Info.plist</key>
 		<data>
-		gTOH9HddpsGhMD+okeljGDnjjSI=
+		c3ieClV78SNrwx5sG9WCghEaJmE=
 		</data>
 		<key>PlugIns/SafariServices.wkbundle/SafariServices</key>
 		<data>
-		/JGL42OiNx0U7ncMREdqCGa6GfI=
+		y6NpFE9BshxWUJT0bKnZb6n98/E=
 		</data>
 		<key>PlugIns/SafariServices.wkbundle/_CodeSignature/CodeResources</key>
 		<data>
-		sVfqm2u+NWrGBJpBcDFhqDfm7o4=
+		0dEXJbJ0gsb8ADfOzlPir8ePb5g=
 		</data>
 		<key>StandardError.html</key>
 		<data>
@@ -62,15 +62,15 @@
 		</data>
 		<key>XPCServices/com.apple.SafariServices.ContentBlockerLoader.xpc/Info.plist</key>
 		<data>
-		UWSBRzqIKz3kB57iyuJaSNas/Ss=
+		6aKjL4rn0AyVop+PxsCeSB6AEaI=
 		</data>
 		<key>XPCServices/com.apple.SafariServices.ContentBlockerLoader.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		82m2WiKuQ9AdHrTWdjYOr4fJa0o=
+		/JlhIG/cGCagshF+BJofxYjAP5s=
 		</data>
 		<key>XPCServices/com.apple.SafariServices.ContentBlockerLoader.xpc/com.apple.SafariServices.ContentBlockerLoader</key>
 		<data>
-		AObjXu4+wt19Byp9YymKDwSjiEY=
+		JLuP6sK3oMUGxBMav8vxa6hxnWU=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -85,7 +85,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hxVTdDRG9hHF97Nz1PSdAzAJj5s=
+			9IeJR8CItiZt4WSK1ugkja1ao8s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -112,7 +121,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mDJtlgAGI25XM1uI3N6+nDpfOKE=
+			/KaN4/JhZjh1x5piudMpCO880Xo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -139,7 +157,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I/Kwgf3bXu0WtKdvYLKeUa48XSg=
+			gRxnXiC2vchHulHC5fYGZfLidEU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -166,7 +193,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/6vY9PJ0vyy5PHtYU2GPt6wpqBw=
+			ho7m3gquloul4SSsZtTLapLIqfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -176,6 +203,15 @@
 			<key>hash</key>
 			<data>
 			s7rzONxhvbqcXLN+KRv0IO5zT04=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l1qohQZp57zEI4KSkQxmaof5xPw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -202,7 +238,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9l4MxIGxBwvh4XZu0VLYGmD7cyI=
+			ow5XQUfeopodGyzwPjB9UjBbb88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -229,7 +274,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3NFpL5uBaQmSAhxhiVR6zurT92M=
+			2VPXt/Vc44U+4t5w/xlzw3PzCfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -239,6 +284,15 @@
 			<key>hash</key>
 			<data>
 			+dCGzYWBKN/pjlZaXuVCWgsGilE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -265,7 +319,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T6LAh571q5JQrj1KHtJXmMsNkhQ=
+			Z4Tz/nYgbXxAp/7rLLeSLYClMjA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -292,7 +355,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DCosYqtrjswY2/xuGGbgZjZvyMA=
+			jKObvlmF9eJRsntuon2JyvtvHoU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -319,7 +391,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JkUqZfNAnfS2nR3OVd75nMgINLw=
+			J1zlXooxNf6hq8BgldGU126E8uk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -346,7 +427,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TiBT8i2cp7hyeF3SxYME/U05ZrE=
+			2jISniIJhycJSK5hpMskX5DqHGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8NoSqmwCLpL/hP1XtAisStEnzhc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -373,7 +463,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5pepCwX9/c1WwBugiFKOb5gVjN0=
+			prf53yCDhPAF4Qag6LXwZHsknjg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -400,7 +499,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SXaevAQjQ1mqzTH3ljGjEuMgLWM=
+			Q0tuj/0Gbjac21NSRL0YWMJHLSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v6go5C1CPq6nNuaI/krzHQaglj0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -427,7 +535,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O3NYEhSsYPeGRYdqwkbfrU5qk2Y=
+			X0lSs8zFT9uApL536ZrRT+L9Qa0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -454,7 +571,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6K4djYvz2jgegQdOoLd60yLAVhs=
+			NcvF1KX6bcSGASSLjR6UVIV1bbs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sl0QHISRAr28+VSOpeUTG1bbyHo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -481,7 +607,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Adp2Jkz8sxtG+6ysI1D80I6oWPQ=
+			1LB7ltDqTTgj2dAIrnNhtX+zDbU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -508,7 +643,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uz/wTphc33ySdByq7+k1hCPNtI4=
+			5Se2VM5DHepJH0i6xtyPbLb1cz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -535,7 +679,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2AGw2PLLQkOq2Sav+Kr+iZcu+kY=
+			F7KcdB1H2T/h9yXOuCI80UaA/DQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -562,7 +715,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G6iKp2HdOFhhrxRVoLBTOkpm2gg=
+			ud4fURF37vkPIYgBYICzMWeXHHo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -589,7 +751,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qKGOxWB0lusXiVG+EJtbEYv9rR4=
+			K1XsfUTTfEFoYk7QQYd0xvnPgSM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ge+ZXRTpvcVxOv0LVXYm3TqwnwQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -616,7 +787,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			41n0N9mvRDOMxdQJeVNcUeILExo=
+			mxWZcIP7Hq7H76/dYA+0WmVmmj4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -643,7 +823,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YroGB9GCpaB65DUKi1GeEYvVnmk=
+			zyG/yoDEML3qixzK2UrVU+nTnT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -670,7 +859,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C0yyYVPFVIoWKsi0rRUiHRi7KCs=
+			K7AmBW2HSqNTHE7Z+NQ8ffh/66k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -680,6 +869,15 @@
 			<key>hash</key>
 			<data>
 			ng/WyZnSG6ieyAtOMGYDGDSObeg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -706,7 +904,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6oGOUw1PhfToxcURNbGFLgVU/P4=
+			ilCc2rC0SMv9nS84GzHg07OIq2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -733,7 +940,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SmXl3XQk3xqRsFvZxpMWec/LCg8=
+			dwmv/ZIxk5QFKlcTFuWef1mwtfI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ci4ELmc0hSVGc/UT3Jb4dYNUPig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -760,7 +976,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VRWetWQsgLtw6w9iqr/6+gHJm5w=
+			nujbXrl+sedT1jfuB630vo3fnCM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -787,7 +1012,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gm7OXoBKK2kwQHG/FxF4eWona5E=
+			tIjtLD8idWnXVsibTpI2HIdpDu8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -814,7 +1048,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zRnucBi+fKuBTr2l+P6hFc2xIAg=
+			HzSBBOp+9gsk1GzOn3F0hfp15Pc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -824,6 +1058,15 @@
 			<key>hash</key>
 			<data>
 			ceNTDWI+PojwtMpSZOFflOBx1ps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -850,7 +1093,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			chk5ruFbYkhLDnmKq56pvR4Xzn8=
+			O5K3LQ54AxNw+AlLQQ3MjD/dM/g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -877,7 +1129,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yBOeQNma9ecuCsPeYbXs74KTKnA=
+			nx4ruqg6ucRH4/hc2GYSGw5+UMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -904,7 +1165,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Zzye4FokCdpDqK8ZLCYJKQUa8E=
+			+IurYJxDYPQgM3Txwvxg3dmEc5o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -931,7 +1201,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yiap/CJJnP1VDdBUv10IHS+5UVc=
+			AoJNZLJr/1FzubvNli+BjTYrHVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f/lxh7HAYIRSlzE12yLMn9M2CUY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -958,7 +1237,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d8h3Rd1kDs3MRAJ/K5hDRbeGKpc=
+			Se5p72mENlETHacF/9bGXk5kzZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -985,7 +1273,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/lhBpGKWrs3bbtFyBbcybT5PQcE=
+			v9POj9wIzedZFtB6T+hzicsRwBw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -994,7 +1291,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mcgziQHrrqalguUYnqRyO0sLKR0=
+			TDSX+BrFSiX3Wntow0XSp9d92rg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1012,7 +1309,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uKwc9u8IuKuQnXOErzG1aWd3+yE=
+			7zj8GtSAKRKtWE0YOqCULWYcAns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WqN4V6U9mK1zQJkZ8PCrQj3XQh8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1039,7 +1345,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OV7/cjp5sk7n7MyeEK5W7r3kPLQ=
+			h3yXKALdsN5jyLveTCeci5tFixs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1066,7 +1381,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uqqDOmfV5obmkco7Zt/8wcCkGiE=
+			puQVWXU08bWicYo49g3l9RXqdO8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMBBRlYE7ByTv2RwOrz1r4jI+bQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1093,7 +1417,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RByKLLpO8191dBHraG6p7T0UISg=
+			5kPd6n/Q/fRq4QHFa3wbhye3LKY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1120,7 +1453,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OlcjY8LdkIJQ8dTbvERc6JmgOJo=
+			xWppwXkoQk9wwD7Xvv5GBgKa+XA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1139,7 +1481,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		fVBAauaKnePYBWXOz3taCHfK/gQ=
+		zJZDuvumHmEOKJMOOJrv/R9B97Q=
 		</data>
 		<key>Headers/SFContentBlockerManager.h</key>
 		<data>
@@ -1175,15 +1517,15 @@
 		</data>
 		<key>PlugIns/SafariServices.wkbundle/Info.plist</key>
 		<data>
-		gTOH9HddpsGhMD+okeljGDnjjSI=
+		c3ieClV78SNrwx5sG9WCghEaJmE=
 		</data>
 		<key>PlugIns/SafariServices.wkbundle/SafariServices</key>
 		<data>
-		/JGL42OiNx0U7ncMREdqCGa6GfI=
+		y6NpFE9BshxWUJT0bKnZb6n98/E=
 		</data>
 		<key>PlugIns/SafariServices.wkbundle/_CodeSignature/CodeResources</key>
 		<data>
-		sVfqm2u+NWrGBJpBcDFhqDfm7o4=
+		0dEXJbJ0gsb8ADfOzlPir8ePb5g=
 		</data>
 		<key>StandardError.html</key>
 		<data>
@@ -1191,15 +1533,15 @@
 		</data>
 		<key>XPCServices/com.apple.SafariServices.ContentBlockerLoader.xpc/Info.plist</key>
 		<data>
-		UWSBRzqIKz3kB57iyuJaSNas/Ss=
+		6aKjL4rn0AyVop+PxsCeSB6AEaI=
 		</data>
 		<key>XPCServices/com.apple.SafariServices.ContentBlockerLoader.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		82m2WiKuQ9AdHrTWdjYOr4fJa0o=
+		/JlhIG/cGCagshF+BJofxYjAP5s=
 		</data>
 		<key>XPCServices/com.apple.SafariServices.ContentBlockerLoader.xpc/com.apple.SafariServices.ContentBlockerLoader</key>
 		<data>
-		AObjXu4+wt19Byp9YymKDwSjiEY=
+		JLuP6sK3oMUGxBMav8vxa6hxnWU=
 		</data>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
@@ -1214,7 +1556,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hxVTdDRG9hHF97Nz1PSdAzAJj5s=
+			9IeJR8CItiZt4WSK1ugkja1ao8s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1241,7 +1592,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mDJtlgAGI25XM1uI3N6+nDpfOKE=
+			/KaN4/JhZjh1x5piudMpCO880Xo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ca.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1268,7 +1628,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I/Kwgf3bXu0WtKdvYLKeUa48XSg=
+			gRxnXiC2vchHulHC5fYGZfLidEU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>cs.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1295,7 +1664,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/6vY9PJ0vyy5PHtYU2GPt6wpqBw=
+			ho7m3gquloul4SSsZtTLapLIqfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1305,6 +1674,15 @@
 			<key>hash</key>
 			<data>
 			s7rzONxhvbqcXLN+KRv0IO5zT04=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>da.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l1qohQZp57zEI4KSkQxmaof5xPw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1331,7 +1709,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9l4MxIGxBwvh4XZu0VLYGmD7cyI=
+			ow5XQUfeopodGyzwPjB9UjBbb88=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1358,7 +1745,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3NFpL5uBaQmSAhxhiVR6zurT92M=
+			2VPXt/Vc44U+4t5w/xlzw3PzCfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1368,6 +1755,15 @@
 			<key>hash</key>
 			<data>
 			+dCGzYWBKN/pjlZaXuVCWgsGilE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>el.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1394,7 +1790,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T6LAh571q5JQrj1KHtJXmMsNkhQ=
+			Z4Tz/nYgbXxAp/7rLLeSLYClMjA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1421,7 +1826,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DCosYqtrjswY2/xuGGbgZjZvyMA=
+			jKObvlmF9eJRsntuon2JyvtvHoU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_AU.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1448,7 +1862,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JkUqZfNAnfS2nR3OVd75nMgINLw=
+			J1zlXooxNf6hq8BgldGU126E8uk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en_GB.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1475,7 +1898,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TiBT8i2cp7hyeF3SxYME/U05ZrE=
+			2jISniIJhycJSK5hpMskX5DqHGo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8NoSqmwCLpL/hP1XtAisStEnzhc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1502,7 +1934,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5pepCwX9/c1WwBugiFKOb5gVjN0=
+			prf53yCDhPAF4Qag6LXwZHsknjg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fi.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1529,7 +1970,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SXaevAQjQ1mqzTH3ljGjEuMgLWM=
+			Q0tuj/0Gbjac21NSRL0YWMJHLSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v6go5C1CPq6nNuaI/krzHQaglj0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1556,7 +2006,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O3NYEhSsYPeGRYdqwkbfrU5qk2Y=
+			X0lSs8zFT9uApL536ZrRT+L9Qa0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr_CA.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1583,7 +2042,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6K4djYvz2jgegQdOoLd60yLAVhs=
+			NcvF1KX6bcSGASSLjR6UVIV1bbs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>he.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sl0QHISRAr28+VSOpeUTG1bbyHo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1610,7 +2078,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Adp2Jkz8sxtG+6ysI1D80I6oWPQ=
+			1LB7ltDqTTgj2dAIrnNhtX+zDbU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1637,7 +2114,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uz/wTphc33ySdByq7+k1hCPNtI4=
+			5Se2VM5DHepJH0i6xtyPbLb1cz0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hr.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1664,7 +2150,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2AGw2PLLQkOq2Sav+Kr+iZcu+kY=
+			F7KcdB1H2T/h9yXOuCI80UaA/DQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1691,7 +2186,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G6iKp2HdOFhhrxRVoLBTOkpm2gg=
+			ud4fURF37vkPIYgBYICzMWeXHHo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>id.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1718,7 +2222,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qKGOxWB0lusXiVG+EJtbEYv9rR4=
+			K1XsfUTTfEFoYk7QQYd0xvnPgSM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ge+ZXRTpvcVxOv0LVXYm3TqwnwQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1745,7 +2258,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			41n0N9mvRDOMxdQJeVNcUeILExo=
+			mxWZcIP7Hq7H76/dYA+0WmVmmj4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ja.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1772,7 +2294,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YroGB9GCpaB65DUKi1GeEYvVnmk=
+			zyG/yoDEML3qixzK2UrVU+nTnT8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1799,7 +2330,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C0yyYVPFVIoWKsi0rRUiHRi7KCs=
+			K7AmBW2HSqNTHE7Z+NQ8ffh/66k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1809,6 +2340,15 @@
 			<key>hash</key>
 			<data>
 			ng/WyZnSG6ieyAtOMGYDGDSObeg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ms.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1835,7 +2375,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6oGOUw1PhfToxcURNbGFLgVU/P4=
+			ilCc2rC0SMv9nS84GzHg07OIq2g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1862,7 +2411,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SmXl3XQk3xqRsFvZxpMWec/LCg8=
+			dwmv/ZIxk5QFKlcTFuWef1mwtfI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>no.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ci4ELmc0hSVGc/UT3Jb4dYNUPig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1889,7 +2447,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VRWetWQsgLtw6w9iqr/6+gHJm5w=
+			nujbXrl+sedT1jfuB630vo3fnCM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1916,7 +2483,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gm7OXoBKK2kwQHG/FxF4eWona5E=
+			tIjtLD8idWnXVsibTpI2HIdpDu8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1943,7 +2519,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zRnucBi+fKuBTr2l+P6hFc2xIAg=
+			HzSBBOp+9gsk1GzOn3F0hfp15Pc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1953,6 +2529,15 @@
 			<key>hash</key>
 			<data>
 			ceNTDWI+PojwtMpSZOFflOBx1ps=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt_PT.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1979,7 +2564,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			chk5ruFbYkhLDnmKq56pvR4Xzn8=
+			O5K3LQ54AxNw+AlLQQ3MjD/dM/g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ro.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2006,7 +2600,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yBOeQNma9ecuCsPeYbXs74KTKnA=
+			nx4ruqg6ucRH4/hc2GYSGw5+UMk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2033,7 +2636,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Zzye4FokCdpDqK8ZLCYJKQUa8E=
+			+IurYJxDYPQgM3Txwvxg3dmEc5o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2060,7 +2672,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yiap/CJJnP1VDdBUv10IHS+5UVc=
+			AoJNZLJr/1FzubvNli+BjTYrHVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f/lxh7HAYIRSlzE12yLMn9M2CUY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2087,7 +2708,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d8h3Rd1kDs3MRAJ/K5hDRbeGKpc=
+			Se5p72mENlETHacF/9bGXk5kzZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2114,7 +2744,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/lhBpGKWrs3bbtFyBbcybT5PQcE=
+			v9POj9wIzedZFtB6T+hzicsRwBw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2123,7 +2762,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mcgziQHrrqalguUYnqRyO0sLKR0=
+			TDSX+BrFSiX3Wntow0XSp9d92rg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2141,7 +2780,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uKwc9u8IuKuQnXOErzG1aWd3+yE=
+			7zj8GtSAKRKtWE0YOqCULWYcAns=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>uk.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WqN4V6U9mK1zQJkZ8PCrQj3XQh8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2168,7 +2816,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OV7/cjp5sk7n7MyeEK5W7r3kPLQ=
+			h3yXKALdsN5jyLveTCeci5tFixs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>vi.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2195,7 +2852,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uqqDOmfV5obmkco7Zt/8wcCkGiE=
+			puQVWXU08bWicYo49g3l9RXqdO8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_CN.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SMBBRlYE7ByTv2RwOrz1r4jI+bQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2222,7 +2888,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RByKLLpO8191dBHraG6p7T0UISg=
+			5kPd6n/Q/fRq4QHFa3wbhye3LKY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_HK.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2249,7 +2924,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OlcjY8LdkIJQ8dTbvERc6JmgOJo=
+			xWppwXkoQk9wwD7Xvv5GBgKa+XA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh_TW.lproj/SFLocalizableKeyboardShortcuts.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6IS/T7Shw2hJNuWIhDRhNYLp2LA=
 			</data>
 			<key>optional</key>
 			<true/>

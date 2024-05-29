@@ -259,6 +259,17 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
 @property (nullable, nonatomic, copy) NSArray<UIApplicationShortcutItem *> *shortcutItems NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
 @end
 
+@interface UIApplication (UIAlternateApplicationIcons)
+// If false, alternate icons are not supported for the current process.
+@property (readonly, nonatomic) BOOL supportsAlternateIcons NS_EXTENSION_UNAVAILABLE("Extensions may not have alternate icons") API_AVAILABLE(ios(10.3), tvos(10.2));
+
+// Pass `nil` to use the primary application icon. The completion handler will be invoked asynchronously on an arbitrary background queue; be sure to dispatch back to the main queue before doing any further UI work.
+- (void)setAlternateIconName:(nullable NSString *)alternateIconName completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler NS_EXTENSION_UNAVAILABLE("Extensions may not have alternate icons") API_AVAILABLE(ios(10.3), tvos(10.2));
+
+// If `nil`, the primary application icon is being used.
+@property (nullable, readonly, nonatomic) NSString *alternateIconName NS_EXTENSION_UNAVAILABLE("Extensions may not have alternate icons") API_AVAILABLE(ios(10.3), tvos(10.2));
+@end
+
 @protocol UIStateRestoring;
 @interface UIApplication (UIStateRestoration)
 // These methods are used to inform the system that state restoration is occuring asynchronously after the application

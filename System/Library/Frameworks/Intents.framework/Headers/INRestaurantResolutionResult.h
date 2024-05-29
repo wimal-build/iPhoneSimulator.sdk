@@ -15,6 +15,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))
+API_UNAVAILABLE(watchos)
 @interface INRestaurantResolutionResult : INIntentResolutionResult
 
 + (instancetype)successWithResolvedRestaurant:(INRestaurant *)resolvedRestaurant NS_SWIFT_NAME(success(with:));

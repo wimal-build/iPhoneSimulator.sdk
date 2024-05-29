@@ -43,6 +43,9 @@ WK_AVAILABLE_WATCHOS_ONLY(2.0)
 @property (nonatomic, readonly) WKAudioFilePlayerItemStatus status;
 @property (nonatomic, readonly, nullable) NSError *error;
 @property (nonatomic, readonly) NSTimeInterval currentTime;
+
+- (void)setCurrentTime:(NSTimeInterval)currentTime WK_AVAILABLE_WATCHOS_ONLY(3.2);
+
 @end
 
 NS_ASSUME_NONNULL_END

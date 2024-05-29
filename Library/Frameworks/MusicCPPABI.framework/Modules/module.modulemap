@@ -1,6 +1,0 @@
-framework module MusicCPPABI {
-  umbrella header "MusicCPPABI.h"
-
-  export *
-  module * { export * }
-}

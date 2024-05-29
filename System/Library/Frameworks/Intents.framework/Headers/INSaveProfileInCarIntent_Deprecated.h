@@ -1,8 +1,7 @@
 //
-//  INSaveProfileInCarIntent+INSaveProfileInCarIntent_Deprecated.h
+//  INSaveProfileInCarIntent_Deprecated.h
 //  Intents
 //
-//  Created by Yifeng Gui on 8/30/16.
 //  Copyright © 2016 Apple. All rights reserved.
 //
 

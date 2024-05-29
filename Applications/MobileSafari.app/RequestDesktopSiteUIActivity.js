@@ -286,7 +286,7 @@ DesktopSiteDataFinder.prototype = {
 
         // Desktop site links are often located within the footer of a site.
         for (var ancestorElement = element.parentElement; ancestorElement; ancestorElement = ancestorElement.parentElement) {
-            ancestorElementTagName = ancestorElement.tagName;
+            var ancestorElementTagName = ancestorElement.tagName;
             if (ancestorElementTagName === "DIV") {
                 var ancestorElementID = ancestorElement.getAttribute("id");
                 if (ancestorElementID && stringContainsCaseInsensitiveString(ancestorElementID, "footer"))
