@@ -2,18 +2,21 @@
 //  UITextView.h
 //  UIKit
 //
-//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIScrollView.h>
 #import <UIKit/UIStringDrawing.h>
+#import <UIKit/UITextDragging.h>
+#import <UIKit/UITextDropping.h>
 #import <UIKit/UITextInput.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDataDetectors.h>
 #import <UIKit/UITextInteraction.h>
 #import <UIKit/UIContentSizeCategoryAdjusting.h>
+#import <UIKit/UITextPasteConfigurationSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -45,13 +48,14 @@ NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput, UIContentSizeCategoryAdjusting>
 
 @property(nullable,nonatomic,weak) id<UITextViewDelegate> delegate;
+
 @property(null_resettable,nonatomic,copy) NSString *text;
 @property(nullable,nonatomic,strong) UIFont *font;
 @property(nullable,nonatomic,strong) UIColor *textColor;
 @property(nonatomic) NSTextAlignment textAlignment;    // default is NSLeftTextAlignment
 @property(nonatomic) NSRange selectedRange;
 @property(nonatomic,getter=isEditable) BOOL editable __TVOS_PROHIBITED;
-@property(nonatomic,getter=isSelectable) BOOL selectable NS_AVAILABLE_IOS(7_0); // toggle selectability, which controls the ability of the user to select content and interact with URLs & attachments
+@property(nonatomic,getter=isSelectable) BOOL selectable NS_AVAILABLE_IOS(7_0); // toggle selectability, which controls the ability of the user to select content and interact with URLs & attachments. On tvOS this also makes the text view focusable.
 @property(nonatomic) UIDataDetectorTypes dataDetectorTypes NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
 
 @property(nonatomic) BOOL allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0); // defaults to NO
@@ -85,6 +89,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput, U
 @property(null_resettable, nonatomic, copy) NSDictionary<NSString *, id> *linkTextAttributes NS_AVAILABLE_IOS(7_0);
 
 @end
+
+#if TARGET_OS_IOS
+
+@interface UITextView () <UITextDraggable, UITextDroppable, UITextPasteConfigurationSupporting>
+@end
+
+#endif
 
 UIKIT_EXTERN NSNotificationName const UITextViewTextDidBeginEditingNotification;
 UIKIT_EXTERN NSNotificationName const UITextViewTextDidChangeNotification;

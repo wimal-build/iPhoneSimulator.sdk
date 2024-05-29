@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class         HKQuantitySample
  @abstract      An HKObject subclass representing a quantity measurement.
  */
-HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
+HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKQuantitySample : HKSample
 
 @property (readonly, strong) HKQuantityType *quantityType;
@@ -61,11 +61,11 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                              startDate:(NSDate *)startDate
                                endDate:(NSDate *)endDate
                                 device:(nullable HKDevice *)device
-                              metadata:(nullable NSDictionary<NSString *, id> *)metadata HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+                              metadata:(nullable NSDictionary<NSString *, id> *)metadata API_AVAILABLE(ios(9.0), watchos(2.0));
 
 @end
 
 // Predicate Key Paths
-HK_EXTERN NSString * const HKPredicateKeyPathQuantity HK_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
+HK_EXTERN NSString * const HKPredicateKeyPathQuantity API_AVAILABLE(ios(8.0), watchos(2.0));
 
 NS_ASSUME_NONNULL_END

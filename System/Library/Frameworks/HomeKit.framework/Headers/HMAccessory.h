@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class HMService;
 @class HMCharacteristic;
 @class HMAccessoryCategory;
+@class HMAccessoryProfile;
 @protocol HMAccessoryDelegate;
 
 /*!
@@ -102,10 +103,30 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @property(readonly, copy, nonatomic) NSArray<HMService *> *services;
 
 /*!
+ *  @abstract   Accessory profiles of the receiver.
+ */
+@property(readonly, copy) NSArray<HMAccessoryProfile *> *profiles API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
+
+/*!
  * @brief TRUE if the accessory is blocked, FALSE otherwise.
  */
 
 @property(readonly, getter=isBlocked, nonatomic) BOOL blocked;
+
+/*!
+ *  @abstract   Model of the accessory.
+ */
+@property (nullable, readonly, copy, nonatomic) NSString *model API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
+
+/*!
+ *  @abstract   Manufacturer of the accessory.
+ */
+@property (nullable, readonly, copy, nonatomic) NSString *manufacturer API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
+
+/*!
+ *  @abstract   Accessory's firmware version.
+ */
+@property (nullable, readonly, copy, nonatomic) NSString *firmwareVersion API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 /*!
  * @brief This method is used to change the name of the accessory.
@@ -175,6 +196,22 @@ NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 - (void)accessoryDidUpdateServices:(HMAccessory *)accessory;
 
 /*!
+ *  @abstract   Informs the delegate when a profile is added to an accessory.
+ *
+ *  @param      accessory   Sender of the message.
+ *  @param      profile     The added profile.
+ */
+- (void)accessory:(HMAccessory *)accessory didAddProfile:(HMAccessoryProfile *)profile API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
+
+/*!
+ *  @abstract   Informs the delegate when a profile is removed from an accessory.
+ *
+ *  @param      accessory   Sender of the message.
+ *  @param      profile     The removed profile.
+ */
+- (void)accessory:(HMAccessory *)accessory didRemoveProfile:(HMAccessoryProfile *)profile API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
+
+/*!
  * @brief Informs the delegate when the reachability of the accessory changes.
  *
  * @param accessory Sender of the message.
@@ -184,13 +221,22 @@ NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief Informs the delegate of a change in value of a characteristic. 
  *
- * @param accessory Sender of this messqage
+ * @param accessory Sender of this message
  *
  * @param service HMService that contains the characteristic whose value was modified.
  *
  * @param characteristic The characteristic whose value was changed.
  */
 - (void)accessory:(HMAccessory *)accessory service:(HMService *)service didUpdateValueForCharacteristic:(HMCharacteristic *)characteristic;
+
+/*!
+ * @brief Informs the delegate when firmwareVersion has been changed for an accessory.
+ *
+ * @param accessory Sender of the message.
+ *
+ * @param firmwareVersion The newly updated firmwareVersion.
+ */
+- (void)accessory:(HMAccessory *)accessory didUpdateFirmwareVersion:(NSString *)firmwareVersion API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 @end
 

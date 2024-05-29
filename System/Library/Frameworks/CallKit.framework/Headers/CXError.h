@@ -10,16 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CX_EXTERN NSString *const CXErrorDomain API_AVAILABLE(ios(10.0));
-CX_EXTERN NSString *const CXErrorDomainIncomingCall API_AVAILABLE(ios(10.0));
-CX_EXTERN NSString *const CXErrorDomainRequestTransaction API_AVAILABLE(ios(10.0));
-CX_EXTERN NSString *const CXErrorDomainCallDirectoryManager API_AVAILABLE(ios(10.0));
+CX_EXTERN NSErrorDomain const CXErrorDomain API_AVAILABLE(ios(10.0));
+CX_EXTERN NSErrorDomain const CXErrorDomainIncomingCall API_AVAILABLE(ios(10.0));
+CX_EXTERN NSErrorDomain const CXErrorDomainRequestTransaction API_AVAILABLE(ios(10.0));
+CX_EXTERN NSErrorDomain const CXErrorDomainCallDirectoryManager API_AVAILABLE(ios(10.0));
 
-typedef NS_ENUM(NSInteger, CXErrorCode) {
+typedef NS_ERROR_ENUM(CXErrorDomain, CXErrorCode) {
     CXErrorCodeUnknownError = 0,
 } API_AVAILABLE(ios(10.0));
 
-typedef NS_ENUM(NSInteger, CXErrorCodeIncomingCallError) {
+typedef NS_ERROR_ENUM(CXErrorDomainIncomingCall, CXErrorCodeIncomingCallError) {
     CXErrorCodeIncomingCallErrorUnknown = 0,
     CXErrorCodeIncomingCallErrorUnentitled = 1,
     CXErrorCodeIncomingCallErrorCallUUIDAlreadyExists = 2,
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, CXErrorCodeIncomingCallError) {
     CXErrorCodeIncomingCallErrorFilteredByBlockList = 4,
 } API_AVAILABLE(ios(10.0));
 
-typedef NS_ENUM(NSInteger, CXErrorCodeRequestTransactionError) {
+typedef NS_ERROR_ENUM(CXErrorDomainRequestTransaction, CXErrorCodeRequestTransactionError) {
     CXErrorCodeRequestTransactionErrorUnknown = 0,
     CXErrorCodeRequestTransactionErrorUnentitled = 1,
     CXErrorCodeRequestTransactionErrorUnknownCallProvider = 2,
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, CXErrorCodeRequestTransactionError) {
     CXErrorCodeRequestTransactionErrorMaximumCallGroupsReached = 7,
 } API_AVAILABLE(ios(10.0));
 
-typedef NS_ENUM(NSInteger, CXErrorCodeCallDirectoryManagerError) {
+typedef NS_ERROR_ENUM(CXErrorDomainCallDirectoryManager, CXErrorCodeCallDirectoryManagerError) {
     CXErrorCodeCallDirectoryManagerErrorUnknown = 0,
     CXErrorCodeCallDirectoryManagerErrorNoExtensionFound = 1,
     CXErrorCodeCallDirectoryManagerErrorLoadingInterrupted = 2,
@@ -46,7 +46,8 @@ typedef NS_ENUM(NSInteger, CXErrorCodeCallDirectoryManagerError) {
     CXErrorCodeCallDirectoryManagerErrorDuplicateEntries = 4,
     CXErrorCodeCallDirectoryManagerErrorMaximumEntriesExceeded = 5,
     CXErrorCodeCallDirectoryManagerErrorExtensionDisabled = 6,
-    CXErrorCodeCallDirectoryManagerErrorCurrentlyLoading = 7,
+    CXErrorCodeCallDirectoryManagerErrorCurrentlyLoading API_AVAILABLE(ios(10.3)) = 7,
+    CXErrorCodeCallDirectoryManagerErrorUnexpectedIncrementalRemoval API_AVAILABLE(ios(11.0)) = 8,
 } API_AVAILABLE(ios(10.0));
 
 NS_ASSUME_NONNULL_END

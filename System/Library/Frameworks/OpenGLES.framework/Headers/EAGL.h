@@ -34,6 +34,7 @@ typedef NS_ENUM(NSUInteger, EAGLRenderingAPI)
 	kEAGLRenderingAPIOpenGLES3 = 3,
 };
 
+NS_ASSUME_NONNULL_BEGIN
 
 /************************************************************************/
 /* EAGL Functions                                                       */
@@ -52,7 +53,7 @@ EAGL_EXTERN_CLASS
 	struct _EAGLSharegroupPrivate *_private;
 }
 
-@property (copy, nonatomic) NSString* debugLabel NS_AVAILABLE_IOS(6_0);
+@property (nullable, copy, nonatomic) NSString* debugLabel NS_AVAILABLE_IOS(6_0);
 
 @end
 
@@ -67,20 +68,21 @@ EAGL_EXTERN_CLASS
 	struct _EAGLContextPrivate *_private;
 }
 
-- (instancetype) init NS_UNAVAILABLE;
-- (instancetype) initWithAPI:(EAGLRenderingAPI) api;
-- (instancetype) initWithAPI:(EAGLRenderingAPI) api sharegroup:(EAGLSharegroup*) sharegroup NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype) init NS_UNAVAILABLE;
+- (nullable instancetype) initWithAPI:(EAGLRenderingAPI) api;
+- (nullable instancetype) initWithAPI:(EAGLRenderingAPI) api sharegroup:(EAGLSharegroup*) sharegroup NS_DESIGNATED_INITIALIZER;
 
-+ (BOOL)            setCurrentContext:(EAGLContext*) context;
-+ (EAGLContext*)    currentContext;
++ (BOOL)                     setCurrentContext:(nullable EAGLContext*) context;
++ (nullable EAGLContext*)    currentContext;
 
-@property (readonly) EAGLRenderingAPI   API;
-@property (readonly) EAGLSharegroup*    sharegroup;
+@property (readonly)          EAGLRenderingAPI   API;
+@property (nonnull, readonly) EAGLSharegroup*    sharegroup;
 
-@property (copy, nonatomic) NSString* debugLabel NS_AVAILABLE_IOS(6_0);
+@property (nullable, copy, nonatomic) NSString* debugLabel NS_AVAILABLE_IOS(6_0);
 @property (getter=isMultiThreaded, nonatomic) BOOL multiThreaded NS_AVAILABLE_IOS(7_1);
 @end
 
+NS_ASSUME_NONNULL_END
 
 #endif /* _EAGL_H_ */
 

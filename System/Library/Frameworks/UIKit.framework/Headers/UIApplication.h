@@ -2,7 +2,7 @@
 //  UIApplication.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -83,7 +83,7 @@ typedef NS_ENUM(NSInteger, UIBackgroundRefreshStatus) {
     UIBackgroundRefreshStatusRestricted, //< unavailable on this system due to device configuration; the user cannot enable the feature
     UIBackgroundRefreshStatusDenied,     //< explicitly disabled by the user for this application
     UIBackgroundRefreshStatusAvailable   //< enabled for this application
-} NS_ENUM_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+} API_AVAILABLE(ios(7.0), tvos(11.0));
     
 typedef NS_ENUM(NSInteger, UIApplicationState) {
     UIApplicationStateActive,
@@ -94,13 +94,15 @@ typedef NS_ENUM(NSInteger, UIApplicationState) {
 typedef NSUInteger UIBackgroundTaskIdentifier;
 UIKIT_EXTERN const UIBackgroundTaskIdentifier UIBackgroundTaskInvalid  NS_AVAILABLE_IOS(4_0);
 UIKIT_EXTERN const NSTimeInterval UIMinimumKeepAliveTimeout  NS_AVAILABLE_IOS(4_0);
-UIKIT_EXTERN const NSTimeInterval UIApplicationBackgroundFetchIntervalMinimum NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN const NSTimeInterval UIApplicationBackgroundFetchIntervalNever NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN const NSTimeInterval UIApplicationBackgroundFetchIntervalMinimum API_AVAILABLE(ios(7.0), tvos(11.0));
+UIKIT_EXTERN const NSTimeInterval UIApplicationBackgroundFetchIntervalNever API_AVAILABLE(ios(7.0), tvos(11.0));
 
 @class CKShareMetadata;
 @class UIView, UIWindow;
 @class UIStatusBar, UIStatusBarWindow, UILocalNotification;
 @protocol UIApplicationDelegate;
+@class INIntent;
+@class INIntentResponse;
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
 
@@ -177,12 +179,12 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
     This setter will have no effect unless your application has the "fetch" 
     UIBackgroundMode. See the UIApplicationDelegate method
     `application:performFetchWithCompletionHandler:` for more. */
-- (void)setMinimumBackgroundFetchInterval:(NSTimeInterval)minimumBackgroundFetchInterval NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+- (void)setMinimumBackgroundFetchInterval:(NSTimeInterval)minimumBackgroundFetchInterval API_AVAILABLE(ios(7.0), tvos(11.0));
 
 /*! When background refresh is available for an application, it may launched or resumed in the background to handle significant
     location changes, remote notifications, background fetches, etc. Observe UIApplicationBackgroundRefreshStatusDidChangeNotification to
     be notified of changes. */
-@property (nonatomic, readonly) UIBackgroundRefreshStatus backgroundRefreshStatus NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+@property (nonatomic, readonly) UIBackgroundRefreshStatus backgroundRefreshStatus API_AVAILABLE(ios(7.0), tvos(11.0));
 
 @property(nonatomic,readonly,getter=isProtectedDataAvailable) BOOL protectedDataAvailable NS_AVAILABLE_IOS(4_0);
 
@@ -231,13 +233,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
 @interface UIApplication (UIUserNotificationSettings)
 
 // Registering UIUserNotificationSettings more than once results in previous settings being overwritten.
-- (void)registerUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+- (void)registerUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:] and -[UNUserNotificationCenter setNotificationCategories:]") __TVOS_PROHIBITED;
 
 // Returns the enabled user notification settings, also taking into account any systemwide settings.
 #if UIKIT_DEFINE_AS_PROPERTIES
-@property(nonatomic, readonly, nullable) UIUserNotificationSettings *currentUserNotificationSettings NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+@property(nonatomic, readonly, nullable) UIUserNotificationSettings *currentUserNotificationSettings NS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenter getNotificationSettingsWithCompletionHandler:] and -[UNUserNotificationCenter getNotificationCategoriesWithCompletionHandler:]") __TVOS_PROHIBITED;
 #else
-- (nullable UIUserNotificationSettings *)currentUserNotificationSettings NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+- (nullable UIUserNotificationSettings *)currentUserNotificationSettings NS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenter getNotificationSettingsWithCompletionHandler:] and -[UNUserNotificationCenter getNotificationCategoriesWithCompletionHandler:]") __TVOS_PROHIBITED;
 #endif
 
 @end
@@ -334,7 +336,7 @@ typedef NSString * UIApplicationOpenURLOptionsKey;
 - (void)application:(UIApplication *)application didChangeStatusBarFrame:(CGRect)oldStatusBarFrame __TVOS_PROHIBITED;
 
 // This callback will be made upon calling -[UIApplication registerUserNotificationSettings:]. The settings the user has granted to the application will be passed in as the second argument.
- - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+ - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:]") __TVOS_PROHIBITED;
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken NS_AVAILABLE_IOS(3_0);
 
@@ -364,7 +366,7 @@ typedef NSString * UIApplicationOpenURLOptionsKey;
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler NS_AVAILABLE_IOS(7_0);
 
 /// Applications with the "fetch" background mode may be given opportunities to fetch updated content in the background or when it is convenient for the system. This method will be called in these situations. You should call the fetchCompletionHandler as soon as you're finished performing that operation, so the system can accurately estimate its power and data cost.
-- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler API_AVAILABLE(ios(7.0), tvos(11.0));
 
 // Called when the user activates your application by selecting a shortcut on the home screen,
 // except when -application:willFinishLaunchingWithOptions: or -application:didFinishLaunchingWithOptions returns NO.
@@ -375,11 +377,13 @@ typedef NSString * UIApplicationOpenURLOptionsKey;
 // attention. Once a session has been created from a configuration object with that identifier, the session's delegate will begin receiving
 // callbacks. If such a session has already been created (if the app is being resumed, for instance), then the delegate will start receiving
 // callbacks without any action by the application. You should call the completionHandler as soon as you're finished handling the callbacks.
-- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler NS_AVAILABLE_IOS(7_0);
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler NS_AVAILABLE_IOS(7_0);
 
 - (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(nullable NSDictionary *)userInfo reply:(void(^)(NSDictionary * __nullable replyInfo))reply NS_AVAILABLE_IOS(8_2);
 
 - (void)applicationShouldRequestHealthAuthorization:(UIApplication *)application NS_AVAILABLE_IOS(9_0);
+
+- (void)application:(UIApplication *)application handleIntent:(INIntent *)intent completionHandler:(void(^)(INIntentResponse *intentResponse))completionHandler NS_AVAILABLE_IOS(11_0);
 
 - (void)applicationDidEnterBackground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
 - (void)applicationWillEnterForeground:(UIApplication *)application NS_AVAILABLE_IOS(4_0);
@@ -455,14 +459,14 @@ typedef NSString * UIApplicationExtensionPointIdentifier;
 @property(readwrite, nonatomic,getter=isStatusBarHidden) BOOL statusBarHidden NS_DEPRECATED_IOS(2_0, 9_0, "Use -[UIViewController prefersStatusBarHidden]") __TVOS_PROHIBITED;
 - (void)setStatusBarHidden:(BOOL)hidden withAnimation:(UIStatusBarAnimation)animation NS_DEPRECATED_IOS(3_2, 9_0, "Use -[UIViewController prefersStatusBarHidden]") __TVOS_PROHIBITED;
 
-- (BOOL)setKeepAliveTimeout:(NSTimeInterval)timeout handler:(void(^ __nullable)(void))keepAliveHandler NS_DEPRECATED_IOS(4_0, 9_0, "Please use UIRemoteNotificationTypeVoIP remote notifications for VoIP applications") __TVOS_PROHIBITED;
-- (void)clearKeepAliveTimeout NS_DEPRECATED_IOS(4_0, 9_0, "Please use UIRemoteNotificationTypeVoIP remote notifications for VoIP applications") __TVOS_PROHIBITED;
+- (BOOL)setKeepAliveTimeout:(NSTimeInterval)timeout handler:(void(^ __nullable)(void))keepAliveHandler NS_DEPRECATED_IOS(4_0, 9_0, "Please use PushKit for VoIP applications instead of calling this method") __TVOS_PROHIBITED;
+- (void)clearKeepAliveTimeout NS_DEPRECATED_IOS(4_0, 9_0, "Please use PushKit for VoIP applications instead of calling this method") __TVOS_PROHIBITED;
 
 @end
 
 // If nil is specified for principalClassName, the value for NSPrincipalClass from the Info.plist is used. If there is no
 // NSPrincipalClass key specified, the UIApplication class is used. The delegate class will be instantiated using init.
-UIKIT_EXTERN int UIApplicationMain(int argc, char *argv[], NSString * __nullable principalClassName, NSString * __nullable delegateClassName);
+UIKIT_EXTERN int UIApplicationMain(int argc, char * _Nonnull * _Null_unspecified argv, NSString * _Nullable principalClassName, NSString * _Nullable delegateClassName);
 
 UIKIT_EXTERN NSRunLoopMode const UITrackingRunLoopMode;
 
@@ -481,7 +485,7 @@ UIKIT_EXTERN NSString *const UIApplicationStatusBarOrientationUserInfoKey __TVOS
 UIKIT_EXTERN NSNotificationName const UIApplicationWillChangeStatusBarFrameNotification __TVOS_PROHIBITED;       // userInfo contains NSValue with new frame
 UIKIT_EXTERN NSNotificationName const UIApplicationDidChangeStatusBarFrameNotification __TVOS_PROHIBITED;        // userInfo contains NSValue with old frame
 UIKIT_EXTERN NSString *const UIApplicationStatusBarFrameUserInfoKey __TVOS_PROHIBITED;                  // userInfo dictionary key for status bar frame
-UIKIT_EXTERN NSNotificationName const UIApplicationBackgroundRefreshStatusDidChangeNotification NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIApplicationBackgroundRefreshStatusDidChangeNotification API_AVAILABLE(ios(7.0), tvos(11.0));
 
 UIKIT_EXTERN NSNotificationName const UIApplicationProtectedDataWillBecomeUnavailable    NS_AVAILABLE_IOS(4_0);
 UIKIT_EXTERN NSNotificationName const UIApplicationProtectedDataDidBecomeAvailable       NS_AVAILABLE_IOS(4_0);
@@ -525,7 +529,7 @@ UIKIT_EXTERN NSString *const UIApplicationOpenSettingsURLString NS_AVAILABLE_IOS
 #if UIKIT_STRING_ENUMS
 UIKIT_EXTERN UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsSourceApplicationKey NS_SWIFT_NAME(sourceApplication) NS_AVAILABLE_IOS(9_0);   // value is an NSString containing the bundle ID of the originating application
 UIKIT_EXTERN UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsAnnotationKey NS_SWIFT_NAME(annotation) NS_AVAILABLE_IOS(9_0);   // value is a property-list typed object corresponding to what the originating application passed in UIDocumentInteractionController's annotation property
-UIKIT_EXTERN UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsOpenInPlaceKey NS_SWIFT_NAME(openInPlace) NS_AVAILABLE_IOS(9_0);   // value is a bool NSNumber, set to YES if the file needs to be copied before use
+UIKIT_EXTERN UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsOpenInPlaceKey NS_SWIFT_NAME(openInPlace) NS_AVAILABLE_IOS(9_0);   // value is a bool NSNumber. Copy the file before use if this value is NO, or is not present.
 #else
 UIKIT_EXTERN UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsSourceApplicationKey NS_AVAILABLE_IOS(9_0);   // value is an NSString containing the bundle ID of the originating application
 UIKIT_EXTERN UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsAnnotationKey NS_AVAILABLE_IOS(9_0);   // value is a property-list typed object corresponding to what the originating application passed in UIDocumentInteractionController's annotation property

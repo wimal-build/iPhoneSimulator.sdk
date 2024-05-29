@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-(function(){return function(e,t){if(/reservas\@restaurantes\.com/i.test(t.from)&&""===e.startTime){var r=Scanner.fromMessage(t);r.setLocale("es_ES");var a=r.getSpan().allDates();e.startTime=combineDateAndTime(a[0],a[1])}return/roomservice\@hotel\.com\.au/i.test(t.from)&&!e.checkinDate?null:/customer.service@booking.com/i.test(t.from)&&!e.checkinDate?null:e}}).call();

@@ -2,12 +2,13 @@
 //  UITabBar.h
 //  UIKit
 //
-//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIControl.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -134,5 +135,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBar : UIView
 - (void)tabBar:(UITabBar *)tabBar didEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed __TVOS_PROHIBITED;  // called after customize sheet is hidden. items is new item list
 
 @end
+
+#if TARGET_OS_IOS
+@interface UITabBar (SpringLoading) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END

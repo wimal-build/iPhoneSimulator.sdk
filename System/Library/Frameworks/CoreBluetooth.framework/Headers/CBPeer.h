@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(N_A, 8_0)
+NS_CLASS_AVAILABLE(10_13, 8_0)
 CB_EXTERN_CLASS @interface CBPeer : NSObject <NSCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -21,7 +21,7 @@ CB_EXTERN_CLASS @interface CBPeer : NSObject <NSCopying>
  *
  *  @discussion The unique, persistent identifier associated with the peer.
  */
-@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
+@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(10_13, 7_0);
 
 @end
 

@@ -2,7 +2,7 @@
 //  UIContentSizeCategory.h
 //  UIKit
 //
-//  Copyright (c) 2016-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -33,5 +33,8 @@ UIKIT_EXTERN UIContentSizeCategory const UIContentSizeCategoryAccessibilityExtra
 // Notification is emitted when the user has changed the preferredContentSizeCategory for the system
 UIKIT_EXTERN NSNotificationName const UIContentSizeCategoryDidChangeNotification NS_AVAILABLE_IOS(7_0); // userInfo dictionary will contain new value for UIContentSizeCategoryNewValueKey
 UIKIT_EXTERN NSString *const UIContentSizeCategoryNewValueKey NS_AVAILABLE_IOS(7_0); // NSString instance with new content size category in userInfo
+
+UIKIT_EXTERN BOOL UIContentSizeCategoryIsAccessibilityCategory(UIContentSizeCategory category) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0)) NS_REFINED_FOR_SWIFT;
+UIKIT_EXTERN NSComparisonResult UIContentSizeCategoryCompareToCategory(UIContentSizeCategory lhs, UIContentSizeCategory rhs) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0)) NS_REFINED_FOR_SWIFT;
 
 NS_ASSUME_NONNULL_END

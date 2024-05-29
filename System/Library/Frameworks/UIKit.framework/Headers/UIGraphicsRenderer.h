@@ -2,7 +2,7 @@
 //  UIGraphicsRenderer.h
 //  UIKit
 //
-//  Copyright (c) 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,8 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
  context created by its associated renderer class.
  */
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsRendererFormat : NSObject <NSCopying>
+
 // returns a default configured format object, best suited for the current device.
-+ (instancetype)defaultFormat;
++ (instancetype)defaultFormat API_DEPRECATED_WITH_REPLACEMENT("+preferredFormat", tvos(10.0, 11.0)) API_AVAILABLE(ios(10.0), watchos(3.0));
+
+// Returns a new format object best suited for the main screen’s current configuration.
++ (instancetype)preferredFormat API_AVAILABLE(ios(11.0), tvos(11.0), watchos(4.0));
 
 // returns the bounds for drawing into the owning UIGraphicsRendererContext.
 @property (nonatomic, readonly) CGRect bounds;

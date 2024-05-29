@@ -2,7 +2,7 @@
 //  UITraitCollection.h
 //  UIKit
 //
-//  Copyright (c) 2013-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,7 +24,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UITraitCollection : NSObject <NSCopying, 
 - (BOOL)containsTraitsInCollection:(nullable UITraitCollection *)trait;
 
 /*! Returns a trait collection by merging the traits in `traitCollections`. The last trait along any given
- axis (e.g. interface usage) will supercede any others. */
+ axis (e.g. interface usage) will supersede any others. */
 + (UITraitCollection *)traitCollectionWithTraitsFromCollections:(NSArray<UITraitCollection *> *)traitCollections;
 
 

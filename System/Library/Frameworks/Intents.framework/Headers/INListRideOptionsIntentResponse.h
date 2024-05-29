@@ -2,18 +2,18 @@
 //  INListRideOptionsIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
 
-@class INRideOption;
 @class INPaymentMethod;
+@class INRideOption;
 
 typedef NS_ENUM(NSInteger, INListRideOptionsIntentResponseCode) {
     INListRideOptionsIntentResponseCodeUnspecified = 0,
     INListRideOptionsIntentResponseCodeReady,
-    INListRideOptionsIntentResponseCodeInProgress,
+    INListRideOptionsIntentResponseCodeInProgress API_DEPRECATED("INListRideOptionsIntentResponseCodeInProgress is deprecated.", ios(10.0, 11.0), watchos(3.2, 4.0)),
     INListRideOptionsIntentResponseCodeSuccess,
     INListRideOptionsIntentResponseCodeFailure,
     INListRideOptionsIntentResponseCodeFailureRequiringAppLaunch,
@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, INListRideOptionsIntentResponseCode) {
     INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchNoServiceInArea,
     INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable,
     INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchPreviousRideNeedsCompletion,
+    INListRideOptionsIntentResponseCodeFailurePreviousRideNeedsFeedback API_AVAILABLE(ios(11.0), watchos(4.0)),
 } API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -43,6 +44,7 @@ API_UNAVAILABLE(macosx)
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSArray<INPaymentMethod *> *paymentMethods;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSDate *expirationDate;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -2,7 +2,7 @@
 //  INGetCarPowerLevelStatusIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
@@ -36,6 +36,7 @@ API_UNAVAILABLE(macosx)
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *chargePercentRemaining NS_REFINED_FOR_SWIFT;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSMeasurement<NSUnitLength *> *distanceRemaining;
+
 @end
 
 NS_ASSUME_NONNULL_END

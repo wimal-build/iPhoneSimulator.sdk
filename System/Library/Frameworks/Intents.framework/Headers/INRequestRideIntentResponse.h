@@ -2,7 +2,7 @@
 //  INRequestRideIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
@@ -12,7 +12,7 @@
 typedef NS_ENUM(NSInteger, INRequestRideIntentResponseCode) {
     INRequestRideIntentResponseCodeUnspecified = 0,
     INRequestRideIntentResponseCodeReady,
-    INRequestRideIntentResponseCodeInProgress,
+    INRequestRideIntentResponseCodeInProgress API_DEPRECATED("INRequestRideIntentResponseCodeInProgress is deprecated.", ios(10.0, 11.0), watchos(3.2, 4.0)),
     INRequestRideIntentResponseCodeSuccess,
     INRequestRideIntentResponseCodeFailure,
     INRequestRideIntentResponseCodeFailureRequiringAppLaunch,
@@ -38,6 +38,7 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INRequestRideIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INRideStatus *rideStatus;
+
 @end
 
 NS_ASSUME_NONNULL_END

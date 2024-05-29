@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
 
-MP_EXTERN __TVOS_PROHIBITED void MPVolumeSettingsAlertShow();
-MP_EXTERN __TVOS_PROHIBITED void MPVolumeSettingsAlertHide();
-MP_EXTERN __TVOS_PROHIBITED BOOL MPVolumeSettingsAlertIsVisible();
+MP_EXTERN void MPVolumeSettingsAlertShow(void) MP_PROHIBITED(tvos);
+MP_EXTERN void MPVolumeSettingsAlertHide(void) MP_PROHIBITED(tvos);
+MP_EXTERN BOOL MPVolumeSettingsAlertIsVisible(void) MP_PROHIBITED(tvos);

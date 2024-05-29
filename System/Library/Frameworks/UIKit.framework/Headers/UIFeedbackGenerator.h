@@ -2,7 +2,7 @@
 //  UIFeedbackGenerator.h
 //  UIKit
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright © 2016-2017 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>

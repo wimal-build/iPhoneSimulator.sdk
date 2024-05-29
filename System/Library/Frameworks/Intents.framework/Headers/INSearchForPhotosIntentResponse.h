@@ -2,7 +2,7 @@
 //  INSearchForPhotosIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
@@ -14,11 +14,12 @@ typedef NS_ENUM(NSInteger, INSearchForPhotosIntentResponseCode) {
     INSearchForPhotosIntentResponseCodeFailure,
     INSearchForPhotosIntentResponseCodeFailureRequiringAppLaunch,
     INSearchForPhotosIntentResponseCodeFailureAppConfigurationRequired,
-} API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12));
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12))
+API_AVAILABLE(ios(10.0), watchos(3.2))
+API_UNAVAILABLE(macosx)
 @interface INSearchForPhotosIntentResponse : INIntentResponse
 
 - (id)init NS_UNAVAILABLE;
@@ -31,6 +32,7 @@ API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12))
 @property (readonly, NS_NONATOMIC_IOSONLY) INSearchForPhotosIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *searchResultsCount NS_REFINED_FOR_SWIFT;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -2,7 +2,7 @@
 //  UIImagePickerController.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -45,15 +45,22 @@ typedef NS_ENUM(NSInteger, UIImagePickerControllerCameraFlashMode) {
     UIImagePickerControllerCameraFlashModeOn   = 1
 } __TVOS_PROHIBITED;
 
+typedef NS_ENUM(NSInteger, UIImagePickerControllerImageURLExportPreset) {
+    UIImagePickerControllerImageURLExportPresetCompatible = 0,
+    UIImagePickerControllerImageURLExportPresetCurrent
+} NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;
+
 // info dictionary keys
 UIKIT_EXTERN NSString *const UIImagePickerControllerMediaType __TVOS_PROHIBITED;      // an NSString (UTI, i.e. kUTTypeImage)
 UIKIT_EXTERN NSString *const UIImagePickerControllerOriginalImage __TVOS_PROHIBITED;  // a UIImage
 UIKIT_EXTERN NSString *const UIImagePickerControllerEditedImage __TVOS_PROHIBITED;    // a UIImage
 UIKIT_EXTERN NSString *const UIImagePickerControllerCropRect __TVOS_PROHIBITED;       // an NSValue (CGRect)
 UIKIT_EXTERN NSString *const UIImagePickerControllerMediaURL __TVOS_PROHIBITED;       // an NSURL
-UIKIT_EXTERN NSString *const UIImagePickerControllerReferenceURL        NS_AVAILABLE_IOS(4_1) __TVOS_PROHIBITED;  // an NSURL that references an asset in the AssetsLibrary framework
+UIKIT_EXTERN NSString *const UIImagePickerControllerReferenceURL        NS_DEPRECATED_IOS(4_1, 11_0, "Replace with public API: UIImagePickerControllerPHAsset") __TVOS_PROHIBITED;  // an NSURL that references an asset in the AssetsLibrary framework
 UIKIT_EXTERN NSString *const UIImagePickerControllerMediaMetadata       NS_AVAILABLE_IOS(4_1) __TVOS_PROHIBITED;  // an NSDictionary containing metadata from a captured photo
 UIKIT_EXTERN NSString *const UIImagePickerControllerLivePhoto NS_AVAILABLE_IOS(9_1) __TVOS_PROHIBITED;  // a PHLivePhoto
+UIKIT_EXTERN NSString *const UIImagePickerControllerPHAsset NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // a PHAsset
+UIKIT_EXTERN NSString *const UIImagePickerControllerImageURL NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // an NSURL
 
 NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIImagePickerController : UINavigationController <NSCoding>
 
@@ -71,10 +78,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIImagePickerController
     // default value is an array containing kUTTypeImage.
 @property(nonatomic)           BOOL                                  allowsEditing NS_AVAILABLE_IOS(3_1);     // replacement for -allowsImageEditing; default value is NO.
 @property(nonatomic)           BOOL                                  allowsImageEditing NS_DEPRECATED_IOS(2_0, 3_1);
+@property(nonatomic)           UIImagePickerControllerImageURLExportPreset imageExportPreset NS_AVAILABLE_IOS(11_0);   // default value is UIImagePickerControllerImageExportPresetCompatible.
 
 // video properties apply only if mediaTypes includes kUTTypeMovie
 @property(nonatomic)           NSTimeInterval                        videoMaximumDuration NS_AVAILABLE_IOS(3_1); // default value is 10 minutes.
 @property(nonatomic)           UIImagePickerControllerQualityType    videoQuality NS_AVAILABLE_IOS(3_1);         // default value is UIImagePickerControllerQualityTypeMedium. If the cameraDevice does not support the videoQuality, it will use the default value.
+@property(nonatomic, copy)     NSString                              *videoExportPreset NS_AVAILABLE_IOS(11_0);  // videoExportPreset can be used to specify the transcoding quality for videos (via a AVAssetExportPreset* string). If the value is nil (the default) then the transcodeQuality is determined by videoQuality instead. Not valid if the source type is UIImagePickerControllerSourceTypeCamera
+
 
 // camera additions available only if sourceType is UIImagePickerControllerSourceTypeCamera.
 @property(nonatomic)           BOOL                                  showsCameraControls NS_AVAILABLE_IOS(3_1);   // set to NO to hide all standard camera UI. default is YES

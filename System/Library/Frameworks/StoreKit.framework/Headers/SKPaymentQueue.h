@@ -11,6 +11,7 @@
 @class SKDownload;
 @class SKPayment;
 @class SKPaymentTransaction;
+@class SKProduct;
 @protocol SKPaymentTransactionObserver;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -73,6 +74,9 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKPaymentQueue : NSObject {
 
 // Sent when the download state has changed.
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedDownloads:(NSArray<SKDownload *> *)downloads NS_AVAILABLE_IOS(6_0);
+
+// Sent when a user initiates an IAP buy from the App Store
+- (BOOL)paymentQueue:(SKPaymentQueue *)queue shouldAddStorePayment:(SKPayment *)payment forProduct:(SKProduct *)product NS_SWIFT_NAME(paymentQueue(_:shouldAddStorePayment:for:)) NS_AVAILABLE_IOS(11_0);
 
 @end
 

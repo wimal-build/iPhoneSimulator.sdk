@@ -32,7 +32,7 @@ AVF_EXPORT const float AVSpeechUtteranceDefaultSpeechRate NS_AVAILABLE_IOS(7_0);
 AVF_EXPORT NSString *const AVSpeechSynthesisVoiceIdentifierAlex NS_AVAILABLE_IOS(9_0);
 
 //NSString, containing International Phonetic Alphabet (IPA) symbols. Controls pronunciation of a certain word or phrase, e.g. a proper name.
-AVF_EXPORT NSString *const AVSpeechSynthesisIPANotationAttribute NS_AVAILABLE_IOS(10_0);
+AVF_EXPORT NSString *const AVSpeechSynthesisIPANotationAttribute API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 @protocol AVSpeechSynthesizerDelegate;
 
@@ -95,16 +95,16 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 @interface AVSpeechUtterance : NSObject<NSCopying, NSSecureCoding>
 
 + (instancetype)speechUtteranceWithString:(NSString *)string;
-+ (instancetype)speechUtteranceWithAttributedString:(NSAttributedString *)string NS_AVAILABLE_IOS(10_0);
++ (instancetype)speechUtteranceWithAttributedString:(NSAttributedString *)string API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 - (instancetype)initWithString:(NSString *)string;
-- (instancetype)initWithAttributedString:(NSAttributedString *)string NS_AVAILABLE_IOS(10_0);
+- (instancetype)initWithAttributedString:(NSAttributedString *)string API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 /* If no voice is specified, the system's default will be used. */
 @property(nonatomic, retain, nullable) AVSpeechSynthesisVoice *voice;
 
 @property(nonatomic, readonly) NSString *speechString;
-@property(nonatomic, readonly) NSAttributedString *attributedSpeechString NS_AVAILABLE_IOS(10_0);
+@property(nonatomic, readonly) NSAttributedString *attributedSpeechString API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 /* Setting these values after a speech utterance has been enqueued will have no effect. */
 
@@ -129,7 +129,7 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 NS_CLASS_AVAILABLE_IOS(7_0)
 @interface AVSpeechSynthesizer : NSObject
 
-@property(nonatomic, assign, nullable) id<AVSpeechSynthesizerDelegate> delegate;
+@property(nonatomic, weak, nullable) id<AVSpeechSynthesizerDelegate> delegate;
 
 @property(nonatomic, readonly, getter=isSpeaking) BOOL speaking;
 @property(nonatomic, readonly, getter=isPaused) BOOL paused;
@@ -148,7 +148,7 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 // Specify the audio channels to be used for synthesized speech as described by the channel descriptions in AVAudioSession's current route.
 // Speech audio will be replicated to each specified channel.
 // Default is nil, which implies system defaults.
-@property(nonatomic, retain, nullable) NSArray<AVAudioSessionChannelDescription *> *outputChannels NS_AVAILABLE_IOS(10_0);
+@property(nonatomic, retain, nullable) NSArray<AVAudioSessionChannelDescription *> *outputChannels API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 @end
 

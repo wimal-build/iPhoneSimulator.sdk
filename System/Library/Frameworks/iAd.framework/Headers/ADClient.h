@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 NS_CLASS_AVAILABLE_IOS(7_1) @interface ADClient : NSObject
 
 /*!
@@ -85,7 +87,7 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * Provides a way for an app to determine when an iAd was shown to the user
  * which resulted in the user's purchase of the app.
  */
-- (void)lookupAdConversionDetails:(void (^)(NSDate *appPurchaseDate, NSDate *iAdImpressionDate))completionHandler NS_DEPRECATED_IOS(8_0, 9_0, "Use requestAttributionDetailsWithBlock instead.");
+- (void)lookupAdConversionDetails:(void (^)(NSDate *appPurchaseDate, NSDate * _Nullable iAdImpressionDate))completionHandler NS_DEPRECATED_IOS(8_0, 9_0, "Use requestAttributionDetailsWithBlock instead.");
 
 /*!
  * @method requestAttributionDetailsWithBlock:
@@ -102,7 +104,7 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * Provides a way for an app to determine when an iAd was shown to the user
  * which resulted in the user's purchase of the app.
  */
-- (void)requestAttributionDetailsWithBlock:(void (^)(NSDictionary *attributionDetails, NSError *error))completionHandler NS_AVAILABLE_IOS(9_0);
+- (void)requestAttributionDetailsWithBlock:(void (^)(NSDictionary<NSString *, NSObject *> * _Nullable attributionDetails, NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(9_0);
 
 /*!
  * @method addClientToSegments:replaceExisting:
@@ -120,6 +122,9 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * application.  If Limit Ad Tracking is enabled on the device, this method will
  * have no effect.
  */
-- (void)addClientToSegments:(NSArray *)segmentIdentifiers replaceExisting:(BOOL)replaceExisting NS_AVAILABLE_IOS(8_0);
+- (void)addClientToSegments:(NSArray<NSString *> *)segmentIdentifiers replaceExisting:(BOOL)replaceExisting NS_AVAILABLE_IOS(8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END
+

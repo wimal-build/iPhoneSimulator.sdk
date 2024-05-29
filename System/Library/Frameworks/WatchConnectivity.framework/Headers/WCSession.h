@@ -34,7 +34,7 @@ NS_CLASS_AVAILABLE_IOS(9.0)
 + (BOOL)isSupported;
 
 /** Use the default session for all transferring of content and state monitoring. */
-+ (WCSession *)defaultSession;
+@property (class, readonly) WCSession *defaultSession;
 
 /** Use the default session instead. */
 - (instancetype)init NS_UNAVAILABLE;

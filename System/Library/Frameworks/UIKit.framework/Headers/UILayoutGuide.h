@@ -2,7 +2,7 @@
 //  UILayoutGuide.h
 //  UIKit
 //
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright © 2015-2017 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -41,16 +41,16 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 
 /* Constraint creation conveniences. See NSLayoutAnchor.h for details.
  */
-@property(readonly, strong) NSLayoutXAxisAnchor *leadingAnchor;
-@property(readonly, strong) NSLayoutXAxisAnchor *trailingAnchor;
-@property(readonly, strong) NSLayoutXAxisAnchor *leftAnchor;
-@property(readonly, strong) NSLayoutXAxisAnchor *rightAnchor;
-@property(readonly, strong) NSLayoutYAxisAnchor *topAnchor;
-@property(readonly, strong) NSLayoutYAxisAnchor *bottomAnchor;
-@property(readonly, strong) NSLayoutDimension *widthAnchor;
-@property(readonly, strong) NSLayoutDimension *heightAnchor;
-@property(readonly, strong) NSLayoutXAxisAnchor *centerXAnchor;
-@property(readonly, strong) NSLayoutYAxisAnchor *centerYAnchor;
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *leadingAnchor;
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *trailingAnchor;
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *leftAnchor;
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *rightAnchor;
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *topAnchor;
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *bottomAnchor;
+@property(nonatomic,readonly,strong) NSLayoutDimension *widthAnchor;
+@property(nonatomic,readonly,strong) NSLayoutDimension *heightAnchor;
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *centerXAnchor;
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *centerYAnchor;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -2,7 +2,7 @@
 //  UIGeometry.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 
@@ -15,6 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 typedef struct UIEdgeInsets {
     CGFloat top, left, bottom, right;  // specify amount to inset (positive) for each of the edges. values can be negative to 'outset'
 } UIEdgeInsets;
+
+/* Specifically for use in methods and functions supporting user interface layout direction
+ */
+typedef struct NSDirectionalEdgeInsets {
+    CGFloat top, leading, bottom, trailing;  // specify amount to inset (positive) for each of the edges. values can be negative to 'outset'
+} NSDirectionalEdgeInsets API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 
 typedef struct UIOffset {
     CGFloat horizontal, vertical; // specify amount to offset a position, positive for right or down, negative for left or up
@@ -31,6 +37,12 @@ typedef NS_OPTIONS(NSUInteger, UIRectEdge) {
 
 UIKIT_STATIC_INLINE UIEdgeInsets UIEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat bottom, CGFloat right) {
     UIEdgeInsets insets = {top, left, bottom, right};
+    return insets;
+}
+
+UIKIT_STATIC_INLINE NSDirectionalEdgeInsets NSDirectionalEdgeInsetsMake(CGFloat top, CGFloat leading, CGFloat bottom, CGFloat trailing) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0))
+{
+    NSDirectionalEdgeInsets insets = {top, leading, bottom, trailing};
     return insets;
 }
 
@@ -51,15 +63,22 @@ UIKIT_STATIC_INLINE BOOL UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets insets1, UIE
     return insets1.left == insets2.left && insets1.top == insets2.top && insets1.right == insets2.right && insets1.bottom == insets2.bottom;
 }
 
+UIKIT_STATIC_INLINE BOOL NSDirectionalEdgeInsetsEqualToDirectionalEdgeInsets(NSDirectionalEdgeInsets insets1, NSDirectionalEdgeInsets insets2) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0))
+{
+    return insets1.leading == insets2.leading && insets1.top == insets2.top && insets1.trailing == insets2.trailing && insets1.bottom == insets2.bottom;
+}
+
 UIKIT_STATIC_INLINE BOOL UIOffsetEqualToOffset(UIOffset offset1, UIOffset offset2) {
     return offset1.horizontal == offset2.horizontal && offset1.vertical == offset2.vertical;
 }
 
 #if UIKIT_REMOVE_ZERO_FROM_SWIFT
 UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero NS_SWIFT_UNAVAILABLE("Use UIEdgeInsets.zero instead");
+UIKIT_EXTERN const NSDirectionalEdgeInsets NSDirectionalEdgeInsetsZero API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 UIKIT_EXTERN const UIOffset UIOffsetZero NS_SWIFT_UNAVAILABLE("Use UIOffset.zero instead");
 #else
 UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero;
+UIKIT_EXTERN const NSDirectionalEdgeInsets NSDirectionalEdgeInsetsZero;
 UIKIT_EXTERN const UIOffset UIOffsetZero;
 #endif
 
@@ -69,6 +88,7 @@ UIKIT_EXTERN NSString *NSStringFromCGSize(CGSize size);
 UIKIT_EXTERN NSString *NSStringFromCGRect(CGRect rect);
 UIKIT_EXTERN NSString *NSStringFromCGAffineTransform(CGAffineTransform transform);
 UIKIT_EXTERN NSString *NSStringFromUIEdgeInsets(UIEdgeInsets insets);
+UIKIT_EXTERN NSString *NSStringFromDirectionalEdgeInsets(NSDirectionalEdgeInsets insets) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 UIKIT_EXTERN NSString *NSStringFromUIOffset(UIOffset offset);
 
 UIKIT_EXTERN CGPoint CGPointFromString(NSString *string);
@@ -77,6 +97,7 @@ UIKIT_EXTERN CGSize CGSizeFromString(NSString *string);
 UIKIT_EXTERN CGRect CGRectFromString(NSString *string);
 UIKIT_EXTERN CGAffineTransform CGAffineTransformFromString(NSString *string);
 UIKIT_EXTERN UIEdgeInsets UIEdgeInsetsFromString(NSString *string);
+UIKIT_EXTERN NSDirectionalEdgeInsets NSDirectionalEdgeInsetsFromString(NSString *string) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 
 @interface NSValue (NSValueUIGeometryExtensions)
@@ -87,6 +108,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 + (NSValue *)valueWithCGRect:(CGRect)rect;
 + (NSValue *)valueWithCGAffineTransform:(CGAffineTransform)transform;
 + (NSValue *)valueWithUIEdgeInsets:(UIEdgeInsets)insets;
++ (NSValue *)valueWithDirectionalEdgeInsets:(NSDirectionalEdgeInsets)insets API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 + (NSValue *)valueWithUIOffset:(UIOffset)insets NS_AVAILABLE_IOS(5_0);
 
 #if UIKIT_DEFINE_AS_PROPERTIES
@@ -96,6 +118,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 @property(nonatomic, readonly) CGRect CGRectValue;
 @property(nonatomic, readonly) CGAffineTransform CGAffineTransformValue;
 @property(nonatomic, readonly) UIEdgeInsets UIEdgeInsetsValue;
+@property(nonatomic, readonly) NSDirectionalEdgeInsets directionalEdgeInsetsValue API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 @property(nonatomic, readonly) UIOffset UIOffsetValue NS_AVAILABLE_IOS(5_0);
 #else
 - (CGPoint)CGPointValue;
@@ -104,6 +127,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 - (CGRect)CGRectValue;
 - (CGAffineTransform)CGAffineTransformValue;
 - (UIEdgeInsets)UIEdgeInsetsValue;
+- (NSDirectionalEdgeInsets)directionalEdgeInsetsValue API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 - (UIOffset)UIOffsetValue NS_AVAILABLE_IOS(5_0);
 #endif
 
@@ -117,6 +141,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 - (void)encodeCGRect:(CGRect)rect forKey:(NSString *)key;
 - (void)encodeCGAffineTransform:(CGAffineTransform)transform forKey:(NSString *)key;
 - (void)encodeUIEdgeInsets:(UIEdgeInsets)insets forKey:(NSString *)key;
+- (void)encodeDirectionalEdgeInsets:(NSDirectionalEdgeInsets)insets forKey:(NSString *)key API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 - (void)encodeUIOffset:(UIOffset)offset forKey:(NSString *)key NS_AVAILABLE_IOS(5_0);
 
 - (CGPoint)decodeCGPointForKey:(NSString *)key;
@@ -125,6 +150,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 - (CGRect)decodeCGRectForKey:(NSString *)key;
 - (CGAffineTransform)decodeCGAffineTransformForKey:(NSString *)key;
 - (UIEdgeInsets)decodeUIEdgeInsetsForKey:(NSString *)key;
+- (NSDirectionalEdgeInsets)decodeDirectionalEdgeInsetsForKey:(NSString *)key API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
 - (UIOffset)decodeUIOffsetForKey:(NSString *)key NS_AVAILABLE_IOS(5_0);
 
 @end

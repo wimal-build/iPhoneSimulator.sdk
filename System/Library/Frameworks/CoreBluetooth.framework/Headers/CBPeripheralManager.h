@@ -11,11 +11,13 @@
 #warning Please do not import this header file directly. Use <CoreBluetooth/CoreBluetooth.h> instead.
 #endif
 
+#import <Foundation/Foundation.h>
 #import <CoreBluetooth/CBDefines.h>
 #import <CoreBluetooth/CBError.h>
 #import <CoreBluetooth/CBManager.h>
+#import <CoreBluetooth/CBL2CAPChannel.h>
+
 #import <CoreBluetooth/CBPeripheralManagerConstants.h>
-#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,7 +37,7 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerAuthorizationStatus) {
 	CBPeripheralManagerAuthorizationStatusRestricted,
 	CBPeripheralManagerAuthorizationStatusDenied,
 	CBPeripheralManagerAuthorizationStatusAuthorized,		
-} NS_ENUM_AVAILABLE(NA, 7_0);
+} NS_ENUM_AVAILABLE(10_9, 7_0);
 
 /*!
  *  @enum CBPeripheralManagerState
@@ -57,7 +59,7 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerState) {
 	CBPeripheralManagerStateUnauthorized = CBManagerStateUnauthorized,
 	CBPeripheralManagerStatePoweredOff = CBManagerStatePoweredOff,
 	CBPeripheralManagerStatePoweredOn = CBManagerStatePoweredOn,
-} NS_DEPRECATED(NA, NA, 6_0, 10_0, "Use CBManagerState instead");
+} NS_DEPRECATED(10_9, 10_13, 6_0, 10_0, "Use CBManagerState instead");
 
 /*!
  *  @enum CBPeripheralManagerConnectionLatency
@@ -73,7 +75,7 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerConnectionLatency) {
 	CBPeripheralManagerConnectionLatencyLow = 0,
 	CBPeripheralManagerConnectionLatencyMedium,
 	CBPeripheralManagerConnectionLatencyHigh
-} NS_ENUM_AVAILABLE(NA, 6_0);
+} NS_ENUM_AVAILABLE(10_9, 6_0);
 
 @class CBCentral, CBService, CBMutableService, CBCharacteristic, CBMutableCharacteristic, CBATTRequest;
 @protocol CBPeripheralManagerDelegate;
@@ -94,7 +96,7 @@ typedef NS_ENUM(NSInteger, CBPeripheralManagerConnectionLatency) {
  *              applications. This means that even if you aren't advertising at the moment, someone else might be!
  *
  */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(10_9, 6_0)
 CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
 
 /*!
@@ -123,7 +125,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
  *
  *  @see		CBPeripheralManagerAuthorizationStatus
  */
-+ (CBPeripheralManagerAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 7_0);
++ (CBPeripheralManagerAuthorizationStatus)authorizationStatus NS_AVAILABLE(10_9, 7_0);
 
 - (instancetype)init;
 
@@ -138,7 +140,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
  *
  */
 - (instancetype)initWithDelegate:(nullable id<CBPeripheralManagerDelegate>)delegate
-						   queue:(nullable dispatch_queue_t)queue __TVOS_PROHIBITED;
+						   queue:(nullable dispatch_queue_t)queue __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*!
  *  @method initWithDelegate:queue:options:
@@ -156,7 +158,7 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
  */
 - (instancetype)initWithDelegate:(nullable id<CBPeripheralManagerDelegate>)delegate
 						   queue:(nullable dispatch_queue_t)queue
-						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(10_9, 7_0) NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /*!
  *  @method startAdvertising:
@@ -270,6 +272,31 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
  *	@seealso				maximumUpdateValueLength
  */
 - (BOOL)updateValue:(NSData *)value forCharacteristic:(CBMutableCharacteristic *)characteristic onSubscribedCentrals:(nullable NSArray<CBCentral *> *)centrals;
+
+/*!
+ *  @method publishL2CAPChannelWithEncryption:
+ *
+ *  @param encryptionRequired		YES if the service requires the link to be encrypted before a stream can be established.  NO if the service can be used over
+ *									an unsecured link.
+ *
+ *  @discussion     Create a listener for incoming L2CAP Channel connections.  The system will determine an unused PSM at the time of publishing, which will be returned
+ *					with @link peripheralManager:didPublishL2CAPChannel:error: @/link.  L2CAP Channels are not discoverable by themselves, so it is the application's
+ *					responsibility to handle PSM discovery on the client.
+ *
+ */
+- (void)publishL2CAPChannelWithEncryption:(BOOL)encryptionRequired NS_AVAILABLE(NA, 11_0);
+
+/*!
+ *  @method unpublishL2CAPChannel:
+ *
+ *  @param PSM		The service PSM to be removed from the system.
+ *
+ *  @discussion     Removes a published service from the local system.  No new connections for this PSM will be accepted, and any existing L2CAP channels
+ *					using this PSM will be closed.
+ *
+ */
+- (void)unpublishL2CAPChannel:(CBL2CAPPSM)PSM NS_AVAILABLE(NA, 11_0);
+
 
 @end
 
@@ -411,6 +438,46 @@ CB_EXTERN_CLASS @interface CBPeripheralManager : CBManager
  */
 - (void)peripheralManagerIsReadyToUpdateSubscribers:(CBPeripheralManager *)peripheral;
 
+/*!
+ *  @method peripheralManager:didPublishL2CAPChannel:error:
+ *
+ *  @param peripheral   The peripheral manager requesting this information.
+ *  @param PSM			The PSM of the channel that was published.
+ *  @param error		If an error occurred, the cause of the failure.
+ *
+ *  @discussion         This method is the response to a  @link publishL2CAPChannel: @/link call.  The PSM will contain the PSM that was assigned for the published
+ *						channel
+ *
+ */
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didPublishL2CAPChannel:(CBL2CAPPSM)PSM error:(nullable NSError *)error;
+
+/*!
+ *  @method peripheralManager:didUnublishL2CAPChannel:error:
+ *
+ *  @param peripheral   The peripheral manager requesting this information.
+ *  @param PSM			The PSM of the channel that was published.
+ *  @param error		If an error occurred, the cause of the failure.
+ *
+ *  @discussion         This method is the response to a  @link unpublishL2CAPChannel: @/link call.
+ *
+ */
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didUnpublishL2CAPChannel:(CBL2CAPPSM)PSM error:(nullable NSError *)error;
+
+/*!
+ *  @method peripheralManager:didOpenL2CAPChannel:error:
+ *
+ *  @param peripheral   The peripheral manager requesting this information.
+ *  @param requests     A list of one or more <code>CBATTRequest</code> objects.
+ *
+ *  @discussion         This method is invoked when <i>peripheral</i> receives an ATT request or command for one or more characteristics with a dynamic value.
+ *                      For every invocation of this method, @link respondToRequest:withResult: @/link should be called exactly once. If <i>requests</i> contains
+ *                      multiple requests, they must be treated as an atomic unit. If the execution of one of the requests would cause a failure, the request
+ *                      and error reason should be provided to <code>respondToRequest:withResult:</code> and none of the requests should be executed.
+ *
+ *  @see                CBATTRequest
+ *
+ */
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didOpenL2CAPChannel:(nullable CBL2CAPChannel *)channel error:(nullable NSError *)error;
 @end
 
 NS_ASSUME_NONNULL_END

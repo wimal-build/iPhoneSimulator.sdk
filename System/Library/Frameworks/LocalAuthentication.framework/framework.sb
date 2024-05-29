@@ -1,3 +1,0 @@
-;; allow clients to communicate with coreauthd
-(allow mach-lookup (global-name "com.apple.CoreAuthentication.daemon"))
-(allow mach-lookup (global-name "com.apple.CoreAuthentication.agent"))

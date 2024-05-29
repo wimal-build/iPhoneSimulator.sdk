@@ -2,7 +2,7 @@
 //  UITextInteraction.h
 //  UIKit
 //
-//  Copyright (c) 2016-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 typedef NS_ENUM(NSInteger, UITextItemInteraction) {

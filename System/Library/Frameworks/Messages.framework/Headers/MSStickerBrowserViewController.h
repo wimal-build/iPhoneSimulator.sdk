@@ -3,8 +3,8 @@
  @copyright  Copyright (c) 2016 Apple Inc. All rights reserved.
  */
 
-#import <UIKit/UIKit.h>
 #import <Messages/MSStickerBrowserView.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

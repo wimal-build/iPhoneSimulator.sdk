@@ -2,7 +2,7 @@
 //  UICollectionViewLayout.h
 //  UIKit
 //
-//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -10,6 +10,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/CATransform3D.h>
 #import <UIKit/UIDynamicBehavior.h>
+#import <UIKit/UIInterface.h>
 
 // The UICollectionViewLayout class is provided as an abstract class for subclassing to define custom collection layouts.
 // Defining a custom layout is an advanced operation intended for applications with complex needs.
@@ -144,6 +145,9 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewLayout : NSObject <NSCodi
 #else
 - (CGSize)collectionViewContentSize; // Subclasses must override this method and use it to return the width and height of the collection view’s content. These values represent the width and height of all the content, not just the content that is currently visible. The collection view uses this information to configure its own content size to facilitate scrolling.
 #endif
+
+@property (nonatomic, readonly) UIUserInterfaceLayoutDirection developmentLayoutDirection; // Default implementation returns the layout direction of the main bundle's development region; FlowLayout returns leftToRight. Subclasses may override this to specify the implementation-time layout direction of the layout.
+@property(nonatomic, readonly) BOOL flipsHorizontallyInOppositeLayoutDirection; // Base implementation returns false. If your subclass’s implementation overrides this property to return true, a UICollectionView showing this layout will ensure its bounds.origin is always found at the leading edge, flipping its coordinate system horizontally if necessary.
 
 @end
 

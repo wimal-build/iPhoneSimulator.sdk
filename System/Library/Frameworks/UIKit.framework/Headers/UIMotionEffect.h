@@ -1,6 +1,6 @@
 //
 //  UIMotionEffect.h
-//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,7 +2,7 @@
 //  UITextField.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,8 +11,11 @@
 #import <UIKit/UIControl.h>
 #import <UIKit/UIFont.h>
 #import <UIKit/UIStringDrawing.h>
+#import <UIKit/UITextDragging.h>
+#import <UIKit/UITextDropping.h>
 #import <UIKit/UITextInput.h>
 #import <UIKit/UIContentSizeCategoryAdjusting.h>
+#import <UIKit/UITextPasteConfigurationSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -70,6 +73,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 @property(nonatomic) BOOL allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0); // default is NO. allows editing text attributes with style operations and pasting rich text
 @property(nullable, nonatomic,copy) NSDictionary<NSString *, id> *typingAttributes NS_AVAILABLE_IOS(6_0); // automatically resets when the selection changes
 
+
 // You can supply custom views which are displayed at the left or right
 // sides of the text field. Uses for such views could be to show an icon or
 // a button to operate on the text in the field in an application-defined
@@ -107,6 +111,13 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 @property(nonatomic) BOOL clearsOnInsertion NS_AVAILABLE_IOS(6_0); // defaults to NO. if YES, the selection UI is hidden, and inserting text will replace the contents of the field. changing the selection will automatically set this to NO.
 
 @end
+
+#if TARGET_OS_IOS
+
+@interface UITextField () <UITextDraggable, UITextDroppable, UITextPasteConfigurationSupporting>
+@end
+
+#endif
 
 @interface UIView (UITextField)
 - (BOOL)endEditing:(BOOL)force;    // use to make the view or any subview that is the first responder resign (optionally force)

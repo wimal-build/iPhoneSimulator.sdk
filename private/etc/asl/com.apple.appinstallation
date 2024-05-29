@@ -1,5 +1,0 @@
-
-? [= Facility com.apple.appinstallation] claim
-? [= Facility com.apple.appinstallation] file /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/AppInstallation/AppInstallation.log format=std rotate=AppInstallation.seq.log ttl=7 file_max=1M all_max=5M compress uid=501 gid=501 basestamp symlink
-
-> /var/mobile/Library/Logs/CrashReporter/DiagnosticLogs/AppInstallation uid=501 gid=501 mode=0755

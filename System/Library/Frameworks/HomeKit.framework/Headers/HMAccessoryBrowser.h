@@ -35,8 +35,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
  * @brief Starts searching for accessories that are not associated to any home.
  *
  * @discussion If any accessories are discovered, updates are sent to the delegate.
- *             This will only scan for any accessories that are already on the
- *             infrastructure IP network or any Bluetooth LE accessories.
+ *             This will scan for the following types of accessories:
+ *                 Accessories supporting HomeKit Wireless Accessory Configuration profile
+ *                 Accessories supporting HomeKit Accessory Protocol and are already on
+ *                     the same infrastructure IP network
+ *                 Accessories supporting HomeKit Accessory Protocol on Bluetooth LE transport
  *             The array of discovered accessories will be updated when this method
  *             is called, so applications should clear and reload any stored copies
  *             of that array or previous new accessory objects.
@@ -50,7 +53,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
  * @discussion After this method is called, updates will not be sent to the delegate
  *             if new accessories are found or removed. Scanning may continue for system
  *             reasons or if other delegates are still in active searching sessions.
- *             The array of discovered accessories will not be updated until 
+ *             The contents of the array of discovered accessories will not be updated until 
  *             startSearchingForNewAccessories is called.
  */
 - (void)stopSearchingForNewAccessories;

@@ -7,6 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  * @const ADErrorDomain
  *
@@ -129,7 +131,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
  * Initialize the view with a specific ad type. The ad type cannot be changed
  * after initialization.
  */
-- (instancetype)initWithAdType:(ADAdType)type NS_AVAILABLE_IOS(6_0);
+- (nullable instancetype)initWithAdType:(ADAdType)type NS_AVAILABLE_IOS(6_0);
 
 /*!
  * @property adType
@@ -150,7 +152,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
  * On iOS 5 and later, this property is a weak reference and cannot be used with
  * objects that modify the behavior of release or retain.
  */
-@property (nonatomic, weak) id<ADBannerViewDelegate> delegate;
+@property (nullable, nonatomic, weak) id<ADBannerViewDelegate> delegate;
 
 /*!
  * @property bannerLoaded
@@ -183,7 +185,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
  * @discussion
  * Reserved for future use.
  */
-@property (nonatomic, copy) NSString *advertisingSection;
+@property (nullable, nonatomic, copy) NSString *advertisingSection;
 
 @end
 
@@ -253,3 +255,6 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
 - (void)bannerViewActionDidFinish:(ADBannerView *)banner;
 
 @end
+
+NS_ASSUME_NONNULL_END
+

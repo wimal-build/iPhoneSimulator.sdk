@@ -598,18 +598,19 @@ CF_ENUM(AudioUnitScope) {
 						Value Type:			CFArrayRef
 						Access:				read
 
-						The host will also need to determine how many MIDI output streams the audio unit can generate 
-						(and the name for each of these outputs). Each MIDI output is a complete MIDI data stream, 
-						such as embodied by a MIDIEndpointRef in CoreMIDI.
+						Used to determine how many MIDI output streams the audio unit can generate  (and the name for 
+						each of these outputs). Each MIDI output is a complete MIDI data stream, such as embodied by a 
+						MIDIEndpointRef in CoreMIDI.
 						
-						To do, the host uses this property and retrieves an array of CFStringRefs:
+						The host can retrieve an array of CFStringRefs published by the audio unit, where :
 							- the size of the array is the number of MIDI Outputs the audio unit supports
 							- each item in the array is the name for that output at that index
 						
 						The host should release the array when it is finished with it.
 						
-						Once the host has determined the audio unit supports this feature, it then instantiates a callback 
-						with the unit that the unit will call with MIDI data (see kAudioUnitProperty_MIDIOutputCallback).
+						Once the host has determined that the audio unit supports this feature, it can then provide a 
+						callback, through which the audio unit can send the MIDI data.
+						See the documentation for the kAudioUnitProperty_MIDIOutputCallback property.
 	
 	@constant		kAudioUnitProperty_MIDIOutputCallback
 						Scope:				Global
@@ -811,9 +812,10 @@ CF_ENUM(AudioUnitPropertyID)
 	kAudioUnitProperty_CocoaUI						= 31,
 	kAudioUnitProperty_IconLocation					= 39,
 	kAudioUnitProperty_AUHostIdentifier				= 46,
-	kAudioUnitProperty_MIDIOutputCallbackInfo		= 47,
-	kAudioUnitProperty_MIDIOutputCallback			= 48,
 #endif
+
+	kAudioUnitProperty_MIDIOutputCallbackInfo       = 47,
+	kAudioUnitProperty_MIDIOutputCallback           = 48,
 };
 
 #if TARGET_OS_IPHONE
@@ -1143,7 +1145,7 @@ typedef struct AUDependentParameter {
 */
 typedef struct AudioUnitCocoaViewInfo {
 	CFURLRef	mCocoaAUViewBundleLocation;
-	CFStringRef	mCocoaAUViewClass[1];
+	CFStringRef	__nonnull mCocoaAUViewClass[1];
 } AudioUnitCocoaViewInfo;
 
 /*!
@@ -1154,6 +1156,7 @@ typedef struct AUHostVersionIdentifier {
 	CFStringRef 		hostName;	
 	UInt32				hostVersion;
 } AUHostVersionIdentifier;
+#endif //!TARGET_OS_IPHONE
 
 /*!
 	@struct			MIDIPacketList
@@ -1180,7 +1183,6 @@ typedef struct AUMIDIOutputCallbackStruct {
 	AUMIDIOutputCallback	midiOutputCallback;
 	void * __nullable		userData;
 } AUMIDIOutputCallbackStruct;
-#endif //!TARGET_OS_IPHONE
 
 /*!
 	@struct			AUInputSamplesInOutputCallbackStruct
@@ -2595,7 +2597,8 @@ typedef CF_ENUM(UInt32, AUSpatializationAlgorithm) {
 	kSpatializationAlgorithm_HRTF			 		= 2,
 	kSpatializationAlgorithm_SoundField		 		= 3,
 	kSpatializationAlgorithm_VectorBasedPanning		= 4,
-	kSpatializationAlgorithm_StereoPassThrough		= 5
+	kSpatializationAlgorithm_StereoPassThrough		= 5,
+    kSpatializationAlgorithm_HRTFHQ                 = 6
 };
 
 /*!

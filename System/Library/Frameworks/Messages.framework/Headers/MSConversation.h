@@ -54,7 +54,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param      message            The MSMessage instance describing the message to be sent.
  @param      completionHandler  A completion handler called when the message has been staged or if there was an error.
  */
-- (void)insertMessage:(MSMessage *)message completionHandler:(nullable void (^)(NSError * _Nullable))completionHandler;
+- (void)insertMessage:(MSMessage *)message completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler;
 
 /*!
  @method     insertSticker:completionHandler:
@@ -62,7 +62,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param      sticker            The sticker to be inserted.
  @param      completionHandler  A completion handler called when the insert is complete.
  */
-- (void)insertSticker:(MSSticker *)sticker completionHandler:(nullable void (^)(NSError * _Nullable))completionHandler;
+- (void)insertSticker:(MSSticker *)sticker completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler;
 
 /*!
  @method     insertText:completionHandler:
@@ -70,7 +70,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param      text               The text to be inserted.
  @param      completionHandler  A completion handler called when the insert is complete.
  */
-- (void)insertText:(NSString *)text completionHandler:(nullable void (^)(NSError * _Nullable))completionHandler;
+- (void)insertText:(NSString *)text completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler;
 
 /*!
  @method     insertAttachment:withAlternateFilename:completionHandler:
@@ -80,9 +80,43 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param      filename           If you supply a string here, the message UI uses it for the attachment. Use an alternate filename to better describe the attachment or to make the name more readable.
  @param      completionHandler  A completion handler called when the insert is complete.
  */
-- (void)insertAttachment:(NSURL *)URL withAlternateFilename:(nullable NSString *)filename completionHandler:(nullable void (^)(NSError * _Nullable))completionHandler;
+- (void)insertAttachment:(NSURL *)URL withAlternateFilename:(nullable NSString *)filename completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler;
 
+/*!
+ @method     sendMessage:completionHandler:
+ @abstract   Start sending a message
+ @discussion This method begins sending the provided MSMessage. The app must be visible and have had a recent touch interaction since either last launch or last send to succeed. If the message started sending successfully, the completion handler will be called with a nil error parameter. Otherwise the error parameter will be populated with an NSError object describing the failure.
+ @param      message            The MSMessage instance describing the message to be sent.
+ @param      completionHandler  A completion handler called when the message has been staged or if there was an error.
+ */
+- (void)sendMessage:(MSMessage *)message completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
 
+/*!
+ @method     sendSticker:completionHandler:
+ @abstract   Start sending a sticker
+ @param      sticker            The sticker to be inserted.
+ @param      completionHandler  A completion handler called when the insert is complete.
+ */
+- (void)sendSticker:(MSSticker *)sticker completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @method     sendText:completionHandler:
+ @abstract   Start sending text
+ @discussion This method begins sending the provided NSString. The app must be visible and have had a recent touch interaction since either last launch or last send to succeed. If the message started sending successfully, the completion handler will be called with a nil error parameter. Otherwise the error parameter will be populated with an NSError object describing the failure.
+ @param      text               The text to be inserted.
+ @param      completionHandler  A completion handler called when the insert is complete.
+ */
+- (void)sendText:(NSString *)text completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @method     sendAttachment:withAlternateFilename:completionHandler:
+ @abstract   Start sending a file located at the provided URL. This must be a file URL.
+ @discussion This method begins sending the file at the provided file URL. The app must be visible and have had a recent touch interaction since either last launch or last send to succeed. If the message started sending successfully, the completion handler will be called with a nil error parameter. Otherwise the error parameter will be populated with an NSError object describing the failure.
+ @param      URL                The URL to the media file to be inserted.
+ @param      filename           If you supply a string here, the message UI uses it for the attachment. Use an alternate filename to better describe the attachment or to make the name more readable.
+ @param      completionHandler  A completion handler called when the insert is complete.
+ */
+- (void)sendAttachment:(NSURL *)URL withAlternateFilename:(nullable NSString *)filename completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
 
 @end
 

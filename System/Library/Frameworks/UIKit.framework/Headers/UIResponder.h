@@ -2,12 +2,13 @@
 //  UIResponder.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIEvent.h>
+#import <UIKit/UIPasteConfigurationSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -112,7 +113,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIKeyCommand : NSObject <NSCopying, NSSec
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic,readonly) NSString *input;
+@property (nullable,nonatomic,readonly) NSString *input;
 @property (nonatomic,readonly) UIKeyModifierFlags modifierFlags;
 @property (nullable,nonatomic,copy) NSString *discoverabilityTitle NS_AVAILABLE_IOS(9_0);
 
@@ -157,7 +158,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIKeyCommand : NSObject <NSCopying, NSSec
 @property (nullable, nonatomic, readonly, strong) UITextInputMode *textInputMode NS_AVAILABLE_IOS(7_0);
 /* When the first responder changes and an identifier is queried, the system will establish a context to
  * track the textInputMode automatically. The system will save and restore the state of that context to
- * the user defaults via the app identifier. Use of -textInputMode above will supercede use of -textInputContextIdentifier. */
+ * the user defaults via the app identifier. Use of -textInputMode above will supersede use of -textInputContextIdentifier. */
 @property (nullable, nonatomic, readonly, strong) NSString *textInputContextIdentifier NS_AVAILABLE_IOS(7_0);
 // This call is to remove stored app identifier state that is no longer needed.
 + (void)clearTextInputContextIdentifier:(NSString *)identifier NS_AVAILABLE_IOS(7_0);
@@ -179,6 +180,11 @@ UIKIT_EXTERN NSString *const UIKeyInputEscape          NS_AVAILABLE_IOS(7_0);
 - (void)updateUserActivityState:(NSUserActivity *)activity NS_AVAILABLE_IOS(8_0);
 - (void)restoreUserActivityState:(NSUserActivity *)activity NS_AVAILABLE_IOS(8_0);
 @end
+
+#if TARGET_OS_IOS
+@interface UIResponder (UIPasteConfigurationSupporting) <UIPasteConfigurationSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END
 

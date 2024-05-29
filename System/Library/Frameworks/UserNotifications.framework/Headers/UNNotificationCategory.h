@@ -12,15 +12,21 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_OPTIONS(NSUInteger, UNNotificationCategoryOptions) {
-    UNNotificationCategoryOptionNone = (0),
     
     // Whether dismiss action should be sent to the UNUserNotificationCenter delegate
     UNNotificationCategoryOptionCustomDismissAction = (1 << 0),
     
     // Whether notifications of this category should be allowed in CarPlay
-    UNNotificationCategoryOptionAllowInCarPlay = (2 << 0),
+    UNNotificationCategoryOptionAllowInCarPlay = (1 << 1),
+    
+    // Whether the title should be shown if the user has previews off
+    UNNotificationCategoryOptionHiddenPreviewsShowTitle __IOS_AVAILABLE(11.0) __WATCHOS_PROHIBITED = (1 << 2),
+    // Whether the subtitle should be shown if the user has previews off
+    UNNotificationCategoryOptionHiddenPreviewsShowSubtitle __IOS_AVAILABLE(11.0) __WATCHOS_PROHIBITED  = (1 << 3),
 
 } __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED;
+
+static const UNNotificationCategoryOptions UNNotificationCategoryOptionNone NS_SWIFT_UNAVAILABLE("Use [] instead.") __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED = 0;
 
 __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED
 @interface UNNotificationCategory : NSObject <NSCopying, NSSecureCoding>
@@ -36,7 +42,12 @@ __IOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __TVOS_PROHIBITED
 
 @property (NS_NONATOMIC_IOSONLY, readonly) UNNotificationCategoryOptions options;
 
+// The format string that will replace the notification body if previews are hidden.
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *hiddenPreviewsBodyPlaceholder __IOS_AVAILABLE(11.0) __WATCHOS_PROHIBITED;
+
 + (instancetype)categoryWithIdentifier:(NSString *)identifier actions:(NSArray<UNNotificationAction *> *)actions intentIdentifiers:(NSArray<NSString *> *)intentIdentifiers options:(UNNotificationCategoryOptions)options;
+
++ (instancetype)categoryWithIdentifier:(NSString *)identifier actions:(NSArray<UNNotificationAction *> *)actions intentIdentifiers:(NSArray<NSString *> *)intentIdentifiers hiddenPreviewsBodyPlaceholder:(NSString *)hiddenPreviewsBodyPlaceholder options:(UNNotificationCategoryOptions)options __IOS_AVAILABLE(11.0) __WATCHOS_PROHIBITED;
 
 - (instancetype)init NS_UNAVAILABLE;
 

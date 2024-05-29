@@ -8,7 +8,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(10_1) @interface PKLabeledValue : NSObject
+API_AVAILABLE(ios(10.1))
+@interface PKLabeledValue : NSObject
 
 - (instancetype)initWithLabel:(NSString *)label
                         value:(NSString *)value NS_DESIGNATED_INITIALIZER;

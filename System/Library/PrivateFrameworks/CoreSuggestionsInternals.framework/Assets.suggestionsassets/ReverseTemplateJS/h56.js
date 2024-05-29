@@ -1,2 +1,0 @@
-// Copyright 2014 Apple Inc.  All Rights Reserved.
-(function(){return function(){var e={};return e.underNameCapture=/Beste\s+(.*),/,e.pickupDate=/OPHAALDATUM/,e.dropoffDate=/INLEVERDATUM/,e.reservationIdCapture=/(?:Uw Avis-reserveringsbevestiging|reservering\s+\(nummer)\s+(.*?)(?:\s|\))/,e.pickupLocation=/OPHAALLOCATIE/,e.dropoffLocation=/INLEVERLOCATIE/,e.cancellation=/Bevestiging annulering/,e.brandLabel=/Uw reserveringsgegevens:/,e}}).call();

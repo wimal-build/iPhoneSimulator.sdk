@@ -10,6 +10,8 @@
 #if TARGET_OS_IOS && TARGET_OS_EMBEDDED
 #import <MediaPlayer/MediaPlayer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  * @category MPMoviePlayerController (iAdPreroll)
  *
@@ -53,7 +55,7 @@
  * MPMoviePlayerController starts regular playback during pre-roll playback, the
  * ad will be skipped immediately.
  */
-- (void)playPrerollAdWithCompletionHandler:(void (^)(NSError *error))completionHandler NS_AVAILABLE_IOS(7_0);
+- (void)playPrerollAdWithCompletionHandler:(void (^)(NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(7_0);
 
 /*!
  * @method -cancelPreroll
@@ -64,4 +66,8 @@
 - (void)cancelPreroll NS_AVAILABLE_IOS(8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END
+
 #endif
+

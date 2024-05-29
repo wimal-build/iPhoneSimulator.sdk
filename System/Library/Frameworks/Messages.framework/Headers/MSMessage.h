@@ -20,7 +20,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @method     init
  @abstract   Initializes a new message that is not part of a session.
  */
--(instancetype)init NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 /*!
  @method     initWithSession:
@@ -31,13 +31,20 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  and moved to the bottom of the conversation transcript when another message created
  with the same session is sent.
  */
--(instancetype)initWithSession:(MSSession *)session NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSession:(MSSession *)session NS_DESIGNATED_INITIALIZER;
 
 /*!
  @property   session
  @abstract   An MSSession that identifies the session that message belongs to.
  */
 @property (nonatomic, readonly, nullable) MSSession *session;
+
+/*!
+ @property   pending
+ @abstract   A BOOL representing whether the message is a pending message or is a message that has been sent/received.
+ @discussion This value starts as `YES` when creating an `MSMessage` for sending. After calling `-[MSConversation insertMessage:completionHandler:]`, `isPending` still returns `YES` until `-[MSMessagesAppViewController didStartSendingMessage:conversation]` is called. This property is useful for knowing if the `selectedMessage` of `-[MSMessagesAppViewController activeConversation]` represents an unsent message.
+ */
+@property (nonatomic, readonly, getter=isPending) BOOL pending NS_AVAILABLE_IOS(11_0);
 
 /*!
  @property   senderParticipantIdentifier
@@ -54,7 +61,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @discussion The MSMessageLayout subclass will be used to construct UI
  representing the message in the conversation transcript.
  */
-@property (nonatomic, copy, nullable) MSMessageLayout* layout;
+@property (nonatomic, copy, nullable) MSMessageLayout *layout;
 
 /*!
  @property   URL

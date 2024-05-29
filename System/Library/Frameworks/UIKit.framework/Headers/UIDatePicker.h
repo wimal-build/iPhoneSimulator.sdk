@@ -2,7 +2,7 @@
 //  UIDatePicker.h
 //  UIKit
 //
-//  Copyright (c) 2006-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

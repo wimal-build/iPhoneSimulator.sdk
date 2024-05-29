@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <EventKitUI/EventKitUIDefines.h>
+#import <EventKitUI/EventKitUIBundle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -42,7 +43,7 @@ EVENTKITUI_CLASS_AVAILABLE(4_0)
     @abstract   Specifies the event to view.
     @discussion You must set this prior to displaying the view controller.
 */
-@property(nonatomic, retain) EKEvent *event;
+@property(nonatomic, retain, null_unspecified) EKEvent *event;
 
 /*!
     @property   allowsEditing

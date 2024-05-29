@@ -23,12 +23,16 @@ CX_CLASS_AVAILABLE(ios(10.0))
 @property (nonatomic) NSUInteger maximumCallGroups; // Default 2
 @property (nonatomic) NSUInteger maximumCallsPerCallGroup; // Default 5
 
+/// Whether this provider's calls should be included in the system's Recents list at the end of each call.
+/// Default: YES
+@property (nonatomic) BOOL includesCallsInRecents API_AVAILABLE(ios(11.0));
+
 @property (nonatomic) BOOL supportsVideo; // Default NO
 
 // Numbers are of type CXHandleType
 @property (nonatomic, copy) NSSet<NSNumber *> *supportedHandleTypes;
 
-- (instancetype)initWithLocalizedName:(NSString *)localizedName;
+- (instancetype)initWithLocalizedName:(NSString *)localizedName NS_DESIGNATED_INITIALIZER;
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

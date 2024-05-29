@@ -9,6 +9,8 @@
 
 @interface AVPlayerViewController (iAdPreroll)
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  * @method +preparePrerollAds
  *
@@ -36,7 +38,7 @@
  *
  * Passing nil as the completion handler is an error and will throw an exception.
  */
-- (void)playPrerollAdWithCompletionHandler:(void (^)(NSError *error))completionHandler NS_AVAILABLE_IOS(8_0);
+- (void)playPrerollAdWithCompletionHandler:(void (^)(NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(8_0);
 
 /*!
  * @method -cancelPreroll
@@ -47,3 +49,5 @@
 - (void)cancelPreroll NS_AVAILABLE_IOS(8_0);
 
 @end
+
+NS_ASSUME_NONNULL_END

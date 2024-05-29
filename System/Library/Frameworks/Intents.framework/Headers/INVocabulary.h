@@ -2,12 +2,14 @@
 //  INVocabulary.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol INSpeakable;
 
 typedef NS_ENUM(NSInteger, INVocabularyStringType) {
     /// The name of a contact as a person will say it, for example “Jon Smith”, “Apple”.
@@ -38,6 +40,12 @@ typedef NS_ENUM(NSInteger, INVocabularyStringType) {
     
     /// The name of an account nick name as a person will say it, for example “Checking”, “Rainy day savings”.
     INVocabularyStringTypePaymentsAccountNickname NS_ENUM_AVAILABLE_IOS(10_3),
+    
+    /// The title of a note, task, or task list as a person will say it; for example, "Grocery list" or "Weekly meeting minutes".
+    INVocabularyStringTypeNotebookItemTitle NS_ENUM_AVAILABLE_IOS(11_0) = 500,
+    
+    /// The name of the note or task list's group (folder, directory, account); for example, "iCloud" or "Shopping"
+    INVocabularyStringTypeNotebookItemGroupName NS_ENUM_AVAILABLE_IOS(11_0),
 } __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos)
@@ -50,6 +58,8 @@ API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos)
 /// There is no guarantee that every provided string will be used, but preference is given to strings at the beginning of the set.
 /// Any strings larger than 1024 bytes when encoded as UTF-16 (roughly 500 characters) will be discarded.
 - (void)setVocabularyStrings:(NSOrderedSet<NSString *> *)vocabulary ofType:(INVocabularyStringType)type NS_EXTENSION_UNAVAILABLE("INVocabulary is not available to extensions. The main app is responsible for providing all vocabulary.");
+
+- (void)setVocabulary:(NSOrderedSet<id<INSpeakable>> *)vocabulary ofType:(INVocabularyStringType)type API_AVAILABLE(ios(11.0)) NS_EXTENSION_UNAVAILABLE("INVocabulary is not available to extensions. The main app is responsible for providing all vocabulary.");
 
 /// Removes all vocabulary strings for every INVocabularyStringType the calling app has previously registered.
 - (void)removeAllVocabularyStrings NS_EXTENSION_UNAVAILABLE("INVocabulary is not available to extensions. The main app is responsible for providing all vocabulary.");

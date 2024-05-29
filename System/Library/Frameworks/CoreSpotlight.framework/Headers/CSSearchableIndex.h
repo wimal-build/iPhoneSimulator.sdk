@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CORESPOTLIGHT_EXPORT NSString * const CSIndexErrorDomain CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
+CORESPOTLIGHT_EXPORT NSString * const CSIndexErrorDomain CS_AVAILABLE(10_13, 9_0) CS_TVOS_UNAVAILABLE;
 
 typedef NS_ENUM(NSInteger, CSIndexErrorCode) {
     CSIndexErrorCodeUnknownError =                               -1,
@@ -20,11 +20,11 @@ typedef NS_ENUM(NSInteger, CSIndexErrorCode) {
     CSIndexErrorCodeRemoteConnectionError =                   -1003, //There was an error trying to communicate with the remote process
     CSIndexErrorCodeQuotaExceeded =                           -1004, //Quota for bundle was exceeded
     CSIndexErrorCodeIndexingUnsupported =                     -1005, //Indexing isn't supported on this device
-} CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
+} CS_AVAILABLE(10_13, 9_0) CS_TVOS_UNAVAILABLE;
 
 @protocol CSSearchableIndexDelegate;
 
-CS_CLASS_AVAILABLE(NA, 9_0)
+CS_CLASS_AVAILABLE(10_13, 9_0)
 CS_TVOS_UNAVAILABLE
 @interface CSSearchableIndex : NSObject
 
@@ -39,7 +39,7 @@ CS_TVOS_UNAVAILABLE
 - (instancetype)initWithName:(NSString *)name;
 
 //Apps can set a default protection class for items in their entitlements.  You can alternately create an instance with a custom protection class to use on iOS.  It should be one of NSFileProtectionComplete, NSFileProtectionCompleteUnlessOpen, or NSFileProtectionCompleteUntilFirstUserAuthentication.
-- (instancetype)initWithName:(NSString *)name protectionClass:(nullable NSString *)protectionClass;
+- (instancetype)initWithName:(NSString *)name protectionClass:(nullable NSFileProtectionType)protectionClass;
 
 // Call this method to add or update items in the index.
 // Completion handlers will be called once the data has been journaled by the index.  If the completion handler returns an error, the client should retry, as it was not journaled correctly.
@@ -86,7 +86,7 @@ CS_TVOS_UNAVAILABLE
 //An application that is long running should provide a CSSearchableIndexDelegate conforming object to handle communication from the index.
 //Alternatively, an app can provide an extension whose request handler conforms to this protocol and the extension will be called if the app isn't running.
 
-CS_AVAILABLE(NA, 9_0)
+CS_AVAILABLE(10_13, 9_0)
 CS_TVOS_UNAVAILABLE
 @protocol CSSearchableIndexDelegate <NSObject>
 
@@ -113,6 +113,13 @@ CS_TVOS_UNAVAILABLE
 //The developer may want to optionally implement these methods to receive notice that indexing is being throttled and react accordingly (e.g. by priortizing indexing of more important content).
 - (void)searchableIndexDidThrottle:(CSSearchableIndex *)searchableIndex;
 - (void)searchableIndexDidFinishThrottle:(CSSearchableIndex *)searchableIndex;
+
+
+// The developer may provided a NSData representation if type was specified in providerDataTypeIdentifiers property.
+- (nullable NSData *)dataForSearchableIndex:(CSSearchableIndex *)searchableIndex itemIdentifier:(NSString *)itemIdentifier typeIdentifier:(NSString *)typeIdentifier error:(out NSError ** __nullable)outError CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+// The developer may provided a NSURL to file representation representation if type was specified from providerDataTypeIdentifiers or providerInPlaceFileTypeIdentifiers property.
+- (nullable NSURL *)fileURLForSearchableIndex:(CSSearchableIndex *)searchableIndex itemIdentifier:(NSString *)itemIdentifier typeIdentifier:(NSString *)typeIdentifier inPlace:(BOOL)inPlace error:(out NSError ** __nullable)outError CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
 
 @end
 

@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 9653A3FA-63EF-34E5-8F84-0B31D803E3E5', 'x86_64: 273268B8-8150-3172-827B-B0D842385B63' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/CoreAudioKit.framework/CoreAudioKit
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    objc-classes:    [ _AUAudioUnitRemoteViewController, _AUAudioUnitViewConfiguration, 
+                       _AUAudioUnitViewService, _AUViewController, _CABTMIDICentralViewController, 
+                       _CABTMIDILocalPeripheralViewController, _CAInterAppAudioSwitcherView, 
+                       _CAInterAppAudioTransportView ]
+...

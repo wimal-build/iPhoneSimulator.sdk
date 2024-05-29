@@ -36,8 +36,8 @@ extern "C" {
 
 */
 typedef CVImageBufferRef CVOpenGLESTextureRef;
-
-CV_EXPORT CFTypeID CVOpenGLESTextureGetTypeID(void) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+	
+CV_EXPORT CFTypeID CVOpenGLESTextureGetTypeID(void) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureGetTarget
@@ -45,7 +45,8 @@ CV_EXPORT CFTypeID CVOpenGLESTextureGetTypeID(void) __OSX_AVAILABLE_STARTING(__M
     @param      image Target CVOpenGLESTexture
     @result     OpenGLES texture target
 */
-CV_EXPORT GLenum CVOpenGLESTextureGetTarget( CVOpenGLESTextureRef CV_NONNULL image ) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+	
+CV_EXPORT GLenum CVOpenGLESTextureGetTarget( CVOpenGLESTextureRef CV_NONNULL image ) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureGetName
@@ -53,7 +54,7 @@ CV_EXPORT GLenum CVOpenGLESTextureGetTarget( CVOpenGLESTextureRef CV_NONNULL ima
     @param      image Target CVOpenGLESTexture
     @result     OpenGLES texture target name
 */
-CV_EXPORT GLuint CVOpenGLESTextureGetName( CVOpenGLESTextureRef CV_NONNULL image ) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+CV_EXPORT GLuint CVOpenGLESTextureGetName( CVOpenGLESTextureRef CV_NONNULL image ) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureIsFlipped
@@ -61,7 +62,7 @@ CV_EXPORT GLuint CVOpenGLESTextureGetName( CVOpenGLESTextureRef CV_NONNULL image
     @param      image Target CVOpenGLESTexture
     @result     True if 0,0 in the texture is upper left, false if 0,0 is lower left
 */
-CV_EXPORT Boolean CVOpenGLESTextureIsFlipped( CVOpenGLESTextureRef CV_NONNULL image ) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+CV_EXPORT Boolean CVOpenGLESTextureIsFlipped( CVOpenGLESTextureRef CV_NONNULL image ) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureGetCleanTexCoords 
@@ -73,11 +74,11 @@ CV_EXPORT Boolean CVOpenGLESTextureIsFlipped( CVOpenGLESTextureRef CV_NONNULL im
     @param      upperRight - array of two GLfloats where the s and t normalized texture coordinates of the upper right corner of the image will be stored
     @param      upperLeft  - array of two GLfloats where the s and t normalized texture coordinates of the upper right corner of the image will be stored
 */
-CV_EXPORT void CVOpenGLESTextureGetCleanTexCoords( CVOpenGLESTextureRef CV_NONNULL image, 
-                                                   GLfloat lowerLeft[2], 
-                                                   GLfloat lowerRight[2], 
-                                                   GLfloat upperRight[2],
-                                                   GLfloat upperLeft[2] ) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+CV_EXPORT void CVOpenGLESTextureGetCleanTexCoords( CVOpenGLESTextureRef CV_NONNULL image,
+                                                   GLfloat lowerLeft[CV_NONNULL 2],
+                                                   GLfloat lowerRight[CV_NONNULL 2],
+                                                   GLfloat upperRight[CV_NONNULL 2],
+                                                   GLfloat upperLeft[CV_NONNULL 2] ) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 #if defined(__cplusplus)
 }

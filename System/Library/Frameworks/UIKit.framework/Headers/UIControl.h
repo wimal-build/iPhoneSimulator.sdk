@@ -2,7 +2,7 @@
 //  UIControl.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -49,6 +49,8 @@ typedef NS_ENUM(NSInteger, UIControlContentHorizontalAlignment) {
     UIControlContentHorizontalAlignmentLeft   = 1,
     UIControlContentHorizontalAlignmentRight  = 2,
     UIControlContentHorizontalAlignmentFill   = 3,
+    UIControlContentHorizontalAlignmentLeading  API_AVAILABLE(ios(11.0), tvos(11.0)) = 4,
+    UIControlContentHorizontalAlignmentTrailing API_AVAILABLE(ios(11.0), tvos(11.0)) = 5,
 };
 
 typedef NS_OPTIONS(NSUInteger, UIControlState) {
@@ -73,7 +75,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIControl : UIView
 @property(nonatomic,getter=isSelected) BOOL selected;                                // default is NO may be used by some subclasses or by application
 @property(nonatomic,getter=isHighlighted) BOOL highlighted;                          // default is NO. this gets set/cleared automatically when touch enters/exits during tracking and cleared on up
 @property(nonatomic) UIControlContentVerticalAlignment contentVerticalAlignment;     // how to position content vertically inside control. default is center
-@property(nonatomic) UIControlContentHorizontalAlignment contentHorizontalAlignment; // how to position content hozontally inside control. default is center
+@property(nonatomic) UIControlContentHorizontalAlignment contentHorizontalAlignment; // how to position content horizontally inside control. default is center
+@property(nonatomic, readonly) UIControlContentHorizontalAlignment effectiveContentHorizontalAlignment; // how to position content horizontally inside control, guaranteed to return 'left' or 'right' for any 'leading' or 'trailing'
 
 @property(nonatomic,readonly) UIControlState state;                  // could be more than one state (e.g. disabled|selected). synthesized from other flags.
 @property(nonatomic,readonly,getter=isTracking) BOOL tracking;

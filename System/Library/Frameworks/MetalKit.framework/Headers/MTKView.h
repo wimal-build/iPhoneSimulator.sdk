@@ -129,7 +129,7 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 /*!
  @method releaseDrawables
  @abstract Release the depthStencilTexture and multisampleColorTexture
- @discussion Can be called by the app to release the textures in order to conserve memory when it goes into the background
+ @discussion Can be called by the app to release the textures in order to conserve memory when it goes into the background.   The view will recreate multisampleColorTexture or depthStencilTexture upon the next access of the respective properties.  Both multisampleColorTexture and depthStencilTexture will be recreated in the access to currentRenderPassDescriptor.
  */
 - (void)releaseDrawables;
 
@@ -157,7 +157,7 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 /*!
  @property autoResizeDrawable
  @abstract Controls whether to resize the drawable as the view changes size.
- @discussion If true, the size of the currentDrawable's texture, depthStencilTexture, and multisampleColorTexture will automatically resize as the view resizes.  If false, these textures will take on the size of drawableSize and drawaableSize will not change. The default value is true.
+ @discussion If true, the size of the currentDrawable's texture, depthStencilTexture, and multisampleColorTexture will automatically resize as the view resizes.  If false, these textures will take on the size of drawableSize and drawableSize will not change. The default value is true.
  */
 @property (nonatomic) BOOL autoResizeDrawable;
 

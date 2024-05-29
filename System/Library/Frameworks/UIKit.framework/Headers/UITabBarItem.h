@@ -2,13 +2,14 @@
 //  UITabBarItem.h
 //  UIKit
 //
-//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIBarItem.h>
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -67,5 +68,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBarItem : UIBarItem
 - (nullable NSDictionary<NSString *,id> *)badgeTextAttributesForState:(UIControlState)state NS_AVAILABLE_IOS(10_0) UI_APPEARANCE_SELECTOR;
 
 @end
+
+#if TARGET_OS_IOS
+@interface UITabBarItem (SpringLoading) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END

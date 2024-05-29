@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // MPMediaPickerController is a UIViewController for visually selecting media items.
 // To display it, present it modally on an existing view controller.
-
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
+MP_API(ios(3.0))
+MP_PROHIBITED(tvos)
 @interface MPMediaPickerController : UIViewController
 
 - (instancetype)initWithMediaTypes:(MPMediaType)mediaTypes NS_DESIGNATED_INITIALIZER;
@@ -28,15 +28,15 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 
 @property (nonatomic) BOOL allowsPickingMultipleItems; // default is NO
 
-@property (nonatomic) BOOL showsCloudItems NS_AVAILABLE_IOS(6_0); // default is YES
+@property (nonatomic) BOOL showsCloudItems MP_API(ios(6.0)); // default is YES
 
-@property (nonatomic) BOOL showsItemsWithProtectedAssets NS_AVAILABLE_IOS(9_2); // default is YES
+@property (nonatomic) BOOL showsItemsWithProtectedAssets MP_API(ios(9.2)); // default is YES
 
 @property (nonatomic, copy, nullable) NSString *prompt; // displays a prompt for the user above the navigation bar buttons
 
 @end
 
-__TVOS_PROHIBITED
+MP_PROHIBITED(tvos)
 @protocol MPMediaPickerControllerDelegate<NSObject>
 @optional
 

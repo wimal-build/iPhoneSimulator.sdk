@@ -2,12 +2,16 @@
 //  UICollectionView.h
 //  UIKit
 //
-//  Copyright (c) 2011-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/NSIndexPath+UIKitAdditions.h>
 #import <UIKit/UIScrollView.h>
 #import <UIKit/UIKitDefines.h>
-#import <Foundation/Foundation.h>
+#import <UIKit/UIDataSourceTranslating.h>
+#import <UIKit/UIDropInteraction.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,14 +30,19 @@ typedef NS_OPTIONS(NSUInteger, UICollectionViewScrollPosition) {
     UICollectionViewScrollPositionRight                = 1 << 5
 };
 
-@class UICollectionView;
-@class UICollectionViewCell;
-@class UICollectionViewLayout;
-@class UICollectionViewTransitionLayout;
-@class UICollectionViewLayoutAttributes;
-@class UITouch;
-@class UINib;
-@class UICollectionReusableView;
+
+typedef NS_ENUM(NSInteger, UICollectionViewReorderingCadence) {
+    UICollectionViewReorderingCadenceImmediate,
+    UICollectionViewReorderingCadenceFast,
+    UICollectionViewReorderingCadenceSlow
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+@class UICollectionView, UICollectionReusableView, UICollectionViewCell, UICollectionViewLayout, UICollectionViewTransitionLayout, UICollectionViewLayoutAttributes, UITouch, UINib;
+@class UIDragItem, UIDragPreviewParameters, UIDragPreviewTarget;
+@class UICollectionViewDropProposal, UICollectionViewPlaceholder, UICollectionViewDropPlaceholder;
+@protocol UIDataSourceTranslating, UISpringLoadedInteractionContext;
+@protocol UIDragSession, UIDropSession;
+@protocol UICollectionViewDragDelegate, UICollectionViewDropDelegate, UICollectionViewDropCoordinator, UICollectionViewDropItem, UICollectionViewDropPlaceholderContext;
 
 // layout transition block signature
 typedef void (^UICollectionViewLayoutInteractiveTransitionCompletion)(BOOL completed, BOOL finished);
@@ -130,9 +139,20 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UICollectionViewFocusUpdateContext : UIFo
 
 - (CGPoint)collectionView:(UICollectionView *)collectionView targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset NS_AVAILABLE_IOS(9_0); // customize the content offset to be applied during transition or update animations
 
+// Spring Loading
+
+/* Allows opting-out of spring loading for an particular item.
+ *
+ * If you want the interaction effect on a different subview of the spring loaded cell, modify the context.targetView property.
+ * The default is the cell.
+ *
+ * If this method is not implemented, the default is YES.
+ */
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSpringLoadItemAtIndexPath:(NSIndexPath *)indexPath withContext:(id<UISpringLoadedInteractionContext>)context API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
 @end
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
+NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView <UIDataSourceTranslating>
 
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
@@ -143,6 +163,21 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 
 @property (nonatomic, weak, nullable) id<UICollectionViewDataSourcePrefetching> prefetchDataSource NS_AVAILABLE_IOS(10_0);
 @property (nonatomic, getter=isPrefetchingEnabled) BOOL prefetchingEnabled NS_AVAILABLE_IOS(10_0);
+
+@property (nonatomic, weak, nullable) id <UICollectionViewDragDelegate> dragDelegate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+@property (nonatomic, weak, nullable) id <UICollectionViewDropDelegate> dropDelegate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+
+/* To enable intra-app drags on iPhone, set this to YES.
+ * You can also force drags to be disabled for this collection view by setting this to NO.
+ * By default, For iPad this will return YES and iPhone will return NO.
+ */
+@property (nonatomic) BOOL dragInteractionEnabled API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+/* Reordering cadence affects how easily reordering occurs while dragging around a reorder-capable drop destination.
+ * Default is UICollectionViewReorderingCadenceImmediate.
+ */
+@property (nonatomic) UICollectionViewReorderingCadence reorderingCadence API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 @property (nonatomic, strong, nullable) UIView *backgroundView; // will be automatically resized to track the size of the collection view and placed behind all cells and supplementary views.
 
@@ -170,6 +205,10 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 - (void)selectItemAtIndexPath:(nullable NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UICollectionViewScrollPosition)scrollPosition;
 - (void)deselectItemAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
 
+// Returns YES if the collection view is reordering or has drop placeholders.
+@property (nonatomic, readonly) BOOL hasUncommittedUpdates API_AVAILABLE(ios(11.0));
+
+// Note: -reloadData will discard any uncommitted updates (e.g. placeholders)
 - (void)reloadData; // discard the dataSource and delegate data and requery as necessary
 
 - (void)setCollectionViewLayout:(UICollectionViewLayout *)layout animated:(BOOL)animated; // transition from one layout to another
@@ -222,7 +261,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 - (void)reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
 - (void)moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
 
-- (void)performBatchUpdates:(void (^ __nullable)(void))updates completion:(void (^ __nullable)(BOOL finished))completion; // allows multiple insert/delete/reload/move calls to be animated simultaneously. Nestable.
+- (void)performBatchUpdates:(void (NS_NOESCAPE ^ _Nullable)(void))updates completion:(void (^ _Nullable)(BOOL finished))completion; // allows multiple insert/delete/reload/move calls to be animated simultaneously. Nestable.
 
 // Support for reordering
 - (BOOL)beginInteractiveMovementForItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(9_0); // returns NO if reordering was prevented from beginning - otherwise YES
@@ -233,14 +272,280 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionView : UIScrollView
 // Support for Focus
 @property (nonatomic) BOOL remembersLastFocusedIndexPath NS_AVAILABLE_IOS(9_0); // defaults to NO. If YES, when focusing on a collection view the last focused index path is focused automatically. If the collection view has never been focused, then the preferred focused index path is used.
 
+// Drag & Drop
+
+/* YES if a drag session is currently active. A drag session begins after items are "lifted" from the collection view.
+ */
+@property (nonatomic, readonly) BOOL hasActiveDrag API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+/* YES if collection view is currently tracking a drop session.
+ */
+@property (nonatomic, readonly) BOOL hasActiveDrop API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
 @end
 
-@interface NSIndexPath (UICollectionViewAdditions)
+// _______________________________________________________________________________________________________________
+// Drag & Drop
 
-+ (instancetype)indexPathForItem:(NSInteger)item inSection:(NSInteger)section NS_AVAILABLE_IOS(6_0);
 
-@property (nonatomic, readonly) NSInteger item NS_AVAILABLE_IOS(6_0);
+#if TARGET_OS_IOS
+@interface UICollectionView (UIDragAndDrop) <UISpringLoadedInteractionSupporting>
+@end
+#endif
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UICollectionViewDragDelegate <NSObject>
+
+@required
+
+/* Provide items to begin a drag associated with a given indexPath.
+ * If an empty array is returned a drag session will not begin.
+ */
+- (NSArray<UIDragItem *> *)collectionView:(UICollectionView *)collectionView itemsForBeginningDragSession:(id<UIDragSession>)session atIndexPath:(NSIndexPath *)indexPath;
+
+@optional
+
+/* Called to request items to add to an existing drag session in response to the add item gesture.
+ * You can use the provided point (in the collection view's coordinate space) to do additional hit testing if desired.
+ * If not implemented, or if an empty array is returned, no items will be added to the drag and the gesture
+ * will be handled normally.
+ */
+- (NSArray<UIDragItem *> *)collectionView:(UICollectionView *)collectionView itemsForAddingToDragSession:(id<UIDragSession>)session atIndexPath:(NSIndexPath *)indexPath point:(CGPoint)point;
+
+/* Allows customization of the preview used for the item being lifted from or cancelling back to the collection view.
+ * If not implemented or if nil is returned, the entire cell will be used for the preview.
+ */
+- (nullable UIDragPreviewParameters *)collectionView:(UICollectionView *)collectionView dragPreviewParametersForItemAtIndexPath:(NSIndexPath *)indexPath;
+
+/* Called after the lift animation has completed to signal the start of a drag session.
+ * This call will always be balanced with a corresponding call to -collectionView:dragSessionDidEnd:
+ */
+- (void)collectionView:(UICollectionView *)collectionView dragSessionWillBegin:(id<UIDragSession>)session;
+
+/* Called to signal the end of the drag session.
+ */
+- (void)collectionView:(UICollectionView *)collectionView dragSessionDidEnd:(id<UIDragSession>)session;
+
+
+/* Controls whether move operations (see UICollectionViewDropProposal.operation) are allowed for the drag session.
+ * If not implemented this will default to YES.
+ */
+- (BOOL)collectionView:(UICollectionView *)collectionView dragSessionAllowsMoveOperation:(id<UIDragSession>)session;
+
+/* Controls whether the drag session is restricted to the source application.
+ * If YES the current drag session will not be permitted to drop into another application.
+ * If not implemented this will default to NO.
+ */
+- (BOOL)collectionView:(UICollectionView *)collectionView dragSessionIsRestrictedToDraggingApplication:(id<UIDragSession>)session;
 
 @end
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UICollectionViewDropDelegate <NSObject>
+
+@required
+
+/* Called when the user initiates the drop.
+ * Use the dropCoordinator to specify how you wish to animate the dropSession's items into their final position as
+ * well as update the collection view's data source with data retrieved from the dropped items.
+ * If the supplied method does nothing, default drop animations will be supplied and the collection view will
+ * revert back to its initial pre-drop session state.
+ */
+- (void)collectionView:(UICollectionView *)collectionView performDropWithCoordinator:(id<UICollectionViewDropCoordinator>)coordinator;
+
+@optional
+
+/* If NO is returned no further delegate methods will be called for this drop session.
+ * If not implemented, a default value of YES is assumed.
+ */
+- (BOOL)collectionView:(UICollectionView *)collectionView canHandleDropSession:(id<UIDropSession>)session;
+
+/* Called when the drop session begins tracking in the collection view's coordinate space.
+ */
+- (void)collectionView:(UICollectionView *)collectionView dropSessionDidEnter:(id<UIDropSession>)session;
+
+/* Called frequently while the drop session being tracked inside the collection view's coordinate space.
+ * When the drop is at the end of a section, the destination index path passed will be for a item that does not yet exist (equal
+ * to the number of items in that section), where an inserted item would append to the end of the section.
+ * The destination index path may be nil in some circumstances (e.g. when dragging over empty space where there are no cells).
+ * Note that in some cases your proposal may not be allowed and the system will enforce a different proposal.
+ * You may perform your own hit testing via -[UIDropSession locationInView]
+ */
+- (UICollectionViewDropProposal *)collectionView:(UICollectionView *)collectionView dropSessionDidUpdate:(id<UIDropSession>)session withDestinationIndexPath:(nullable NSIndexPath *)destinationIndexPath;
+
+/* Called when the drop session is no longer being tracked inside the collection view's coordinate space.
+ */
+- (void)collectionView:(UICollectionView *)collectionView dropSessionDidExit:(id<UIDropSession>)session;
+
+/* Called when the drop session completed, regardless of outcome. Useful for performing any cleanup.
+ */
+- (void)collectionView:(UICollectionView *)collectionView dropSessionDidEnd:(id<UIDropSession>)session;
+
+/* Allows customization of the preview used for the item being dropped.
+ * If not implemented or if nil is returned, the entire cell will be used for the preview.
+ *
+ * This will be called as needed when animating drops via -[UICollectionViewDropCoordinator dropItem:toItemAtIndexPath:]
+ * (to customize placeholder drops, please see UICollectionViewDropPlaceholder.previewParametersProvider)
+ */
+- (nullable UIDragPreviewParameters *)collectionView:(UICollectionView *)collectionView dropPreviewParametersForItemAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+typedef NS_ENUM(NSInteger, UICollectionViewDropIntent) {
+    /* Collection view will accept the drop, but the location is not yet known and will be determined later.
+     * Will not open a gap. You may wish to provide some visual treatment to communicate this to the user.
+     */
+    UICollectionViewDropIntentUnspecified,
+    
+    /* The drop will be placed in item(s) inserted at the destination index path.
+     * Opens a gap at the specified location simulating the final dropped layout.
+     */
+    UICollectionViewDropIntentInsertAtDestinationIndexPath,
+    
+    /* The drop will be placed inside the item at the destination index path (e.g. the item is a container of other items).
+     * Will not open a gap. Collection view will highlight the item at the destination index path.
+     */
+    UICollectionViewDropIntentInsertIntoDestinationIndexPath,
+    
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@interface UICollectionViewDropProposal : UIDropProposal
+
+- (instancetype)initWithDropOperation:(UIDropOperation)operation intent:(UICollectionViewDropIntent)intent;
+
+/* The default is UICollectionViewDropIntentUnspecified.
+ */
+@property (nonatomic, readonly) UICollectionViewDropIntent intent;
+
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UICollectionViewDropCoordinator <NSObject>
+
+/* Ordered list of items available for this drop.
+ */
+@property (nonatomic, readonly) NSArray<id<UICollectionViewDropItem>> *items;
+
+/* The last hit-tested index path known during the drop session.
+ * If this is nil, the proposal's intent will be .unspecified
+ */
+@property (nonatomic, readonly, nullable) NSIndexPath *destinationIndexPath;
+
+/* The current drop proposal at the time of the drop.
+ */
+@property (nonatomic, readonly) UICollectionViewDropProposal *proposal;
+
+
+@property (nonatomic, readonly) id<UIDropSession> session;
+
+/* Animate the dragItem to an automatically inserted placeholder item.
+ *
+ * A placeholder cell will be created for the reuse identifier and inserted at the specified indexPath without requiring a dataSource update.
+ *
+ * The cellUpdateHandler will be called whenever the placeholder cell becomes visible; -collectionView:cellForItemAtIndexPath: will not be called
+ * for the placeholder.
+ *
+ * Once the dragItem data is available, you can exchange the temporary placeholder cell with the final cell using
+ * the placeholder context method -commitInsertionWithDataSourceUpdates:
+ *
+ * UICollectionViewDropPlaceholderContext also conforms to UIDragAnimating to allow adding alongside animations and completion handlers.
+ */
+- (id<UICollectionViewDropPlaceholderContext>)dropItem:(UIDragItem *)dragItem toPlaceholder:(UICollectionViewDropPlaceholder*)placeholder;
+
+/* Animate the dragItem to a newly inserted item at the specified index path.
+ * You must call -performBatchUpdates:completion: to update your data source and insert a new item into the collection view prior to calling this method.
+ *
+ * To tweak the appearance of the preview being dropping (e.g. supply a clipping path), see -collectionView:dropPreviewParametersForItemAtIndexPath:
+ */
+- (id<UIDragAnimating>)dropItem:(UIDragItem *)dragItem toItemAtIndexPath:(NSIndexPath *)indexPath;
+
+/* Animate the dragItem to a rect inside an existing item.
+ * The rect is in the coordinate space of the cell at this index path.
+ * The item will be animated with an aspect fit scale transform to fit inside the rect. Use a rect with zero size to shrink the item to a single point.
+ */
+- (id<UIDragAnimating>)dropItem:(UIDragItem *)dragItem intoItemAtIndexPath:(NSIndexPath *)indexPath rect:(CGRect)rect;
+
+/* Animate the dragItem to a location specified by the UIDragPreviewTarget.
+ */
+- (id<UIDragAnimating>)dropItem:(UIDragItem *)dragItem toTarget:(UIDragPreviewTarget *)target;
+
+@end
+
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos,watchos)
+@interface UICollectionViewPlaceholder : NSObject
+
+- (instancetype)initWithInsertionIndexPath:(NSIndexPath*)insertionIndexPath reuseIdentifier:(NSString *)reuseIdentifier NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+
+/* Called whenever the placeholder cell is visible to update the contents of the cell.
+ */
+@property (nonatomic, nullable, copy) void(^cellUpdateHandler)(__kindof UICollectionViewCell *);
+
+@end
+
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos,watchos)
+@interface UICollectionViewDropPlaceholder : UICollectionViewPlaceholder
+
+/* If specified, will be used to modify the appearance (e.g. visiblePath to supply a "cut out" region of the placeholder cell) of the animating dropped item.
+ * Handler will be called as-needed.
+ */
+@property (nonatomic, nullable, copy) UIDragPreviewParameters * _Nullable (^previewParametersProvider)(__kindof UICollectionViewCell *);
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UICollectionViewDropItem <NSObject>
+
+@property (nonatomic, readonly) UIDragItem *dragItem;
+
+/* If this drop item is also from this collection view this indexPath will specify the location of the item.
+ * If the dragItem comes from some other source (e.g. another source inside or outside of the app), it will be nil.
+ * This is useful for directly accessing the model objects in the data source instead of using the item provider
+ * to retrieve the data.
+ */
+@property (nonatomic, readonly, nullable) NSIndexPath *sourceIndexPath;
+
+/* May be useful for computing the UIDragPreviewTarget transform for UICollectionViewDropCoordinator dropItem:toTarget:
+ * Returns CGSizeZero if the dragItem does not have a visible drop preview.
+ */
+@property (nonatomic, readonly) CGSize previewSize;
+
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UICollectionViewDropPlaceholderContext <UIDragAnimating>
+
+/* Retrieve drop data from the dragItem's itemProvider.
+ */
+@property (nonatomic, readonly) UIDragItem *dragItem;
+
+
+/* Exchange the placeholder for the final cell.
+ * You are only responsible for updating your data source inside the block using the provided insertionIndexPath.
+ * If the placeholder is no longer available (e.g. -reloadData has been called) the dataSourceUpdates block
+ * will not be executed and this will return NO.
+ */
+- (BOOL)commitInsertionWithDataSourceUpdates:(void(NS_NOESCAPE ^)(NSIndexPath *insertionIndexPath))dataSourceUpdates;
+
+/* If the placeholder is no longer needed or you wish to manually insert a cell for the drop data, you can
+ * remove the placeholder via this method.
+ * If the placeholder is no longer available (e.g. -reloadData has been called) this will return NO.
+ */
+- (BOOL)deletePlaceholder;
+
+/* Call this method to request an update of the placeholder cell's content via the updateCellHandler.
+ * This will only be called if the placeholder is visible. If the placeholder becomes visible via scrolling,
+ * the updateCellHandler will automatically be called.
+ */
+- (void)setNeedsCellUpdate;
+
+@end
+
+
 
 NS_ASSUME_NONNULL_END

@@ -2,7 +2,7 @@
 //  UIAccessibilityConstants.h
 //  UIKit
 //
-//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -214,6 +214,14 @@ typedef NS_ENUM(NSInteger, UIAccessibilityNavigationStyle) {
     UIAccessibilityNavigationStyleCombined = 2,
 } NS_ENUM_AVAILABLE_IOS(8_0);
 
+
+typedef NS_ENUM(NSInteger, UIAccessibilityContainerType) {
+    UIAccessibilityContainerTypeNone = 0,
+    UIAccessibilityContainerTypeDataTable,     // If using this container type, you must also implement the UIAccessibilityContainerDataTable protocol.
+    UIAccessibilityContainerTypeList,
+    UIAccessibilityContainerTypeLandmark,
+} NS_ENUM_AVAILABLE_IOS(11_0);
+
 /*
  Accessibility Speech Attributes
  
@@ -234,6 +242,33 @@ UIKIT_EXTERN NSString *const UIAccessibilitySpeechAttributeLanguage NS_AVAILABLE
 // For example, you may want to lower the pitch when an object is deleted, or raise the pitch if an object is inserted.
 // Default value == 1.0f.
 UIKIT_EXTERN NSString *const UIAccessibilitySpeechAttributePitch NS_AVAILABLE_IOS(7_0);
+
+// The corresponding value for this key should be a NSNumber with a YES or NO value.
+// If YES, then this announcement will be queued behind existing speech; if NO, then it will interrupt existing speech.
+// Default behavior is to interrupt existing speech.
+UIKIT_EXTERN NSString *const UIAccessibilitySpeechAttributeQueueAnnouncement NS_AVAILABLE_IOS(11_0);
+
+// Use an NSString, containing International Phonetic Alphabet (IPA) symbols.
+// Controls the pronunciation of a word or phrase, e.g. a proper name.
+UIKIT_EXTERN NSString *const UIAccessibilitySpeechAttributeIPANotation NS_AVAILABLE_IOS(11_0);
+
+/*
+ Accessibility Text Attributes
+ 
+ The following attributes can be used in the NSAttributedString returned by attributeText methods of views conforming to UITextInput
+ to convey extra information about the text.
+ 
+ Use existing NSAttributedString attributes for properties not defined here from <UIKit/NSAttributedString.h>
+ 
+ To include an inline element (like an image or table), use NSAttachmentAttributeName and set the value to the element.
+ */
+
+// Use an NSNumber where the value is [0, 6]. Use 0 to indicate the absence of a specific heading level.
+UIKIT_EXTERN NSString *const UIAccessibilityTextAttributeHeadingLevel NS_AVAILABLE_IOS(11_0);
+
+// Use an NSArray of localized NSStrings to convey custom text attributes.
+// For example, a range of text may have multiple custom 'annotation styles, which can be described with this key.
+UIKIT_EXTERN NSString *const UIAccessibilityTextAttributeCustom NS_AVAILABLE_IOS(11_0);
 
 NS_ASSUME_NONNULL_END
 

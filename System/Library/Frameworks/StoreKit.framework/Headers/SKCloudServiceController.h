@@ -2,7 +2,7 @@
 //  SKCloudServiceController.h
 //  StoreKit
 //
-//  Copyright © 2015-2016 Apple Inc. All rights reserved.
+//  Copyright © 2015-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -29,14 +29,18 @@ SK_EXTERN_CLASS_AVAILABLE(9_3) @interface SKCloudServiceController : NSObject
 + (SKCloudServiceAuthorizationStatus)authorizationStatus;
 + (void)requestAuthorization:(void(^)(SKCloudServiceAuthorizationStatus status))handler;
 
-- (void)requestStorefrontIdentifierWithCompletionHandler:(void(^)(NSString * __nullable storefrontIdentifier, NSError * __nullable error))completionHandler;
-- (void)requestCapabilitiesWithCompletionHandler:(void(^)(SKCloudServiceCapability capabilities, NSError * __nullable error))completionHandler;
+- (void)requestCapabilitiesWithCompletionHandler:(void(^)(SKCloudServiceCapability capabilities, NSError * _Nullable error))completionHandler;
 
-- (void)requestPersonalizationTokenForClientToken:(NSString *)clientToken withCompletionHandler:(void(^)(NSString * __nullable personalizationToken, NSError * __nullable error))completionHandler NS_AVAILABLE_IOS(10_3);
+- (void)requestStorefrontCountryCodeWithCompletionHandler:(void(^)(NSString * _Nullable storefrontCountryCode, NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
+- (void)requestStorefrontIdentifierWithCompletionHandler:(void(^)(NSString * _Nullable storefrontIdentifier, NSError * _Nullable error))completionHandler;
+
+- (void)requestUserTokenForDeveloperToken:(NSString *)developerToken completionHandler:(void(^)(NSString * _Nullable userToken, NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
+- (void)requestPersonalizationTokenForClientToken:(NSString *)clientToken withCompletionHandler:(void(^)(NSString * _Nullable personalizationToken, NSError * _Nullable error))completionHandler API_DEPRECATED_WITH_REPLACEMENT("requestUserTokenForDeveloperToken:completionHandler:", ios(10.3, 11.0));
 
 @end
 
-SK_EXTERN NSString * const SKStorefrontIdentifierDidChangeNotification NS_AVAILABLE_IOS(9_3);
-SK_EXTERN NSString * const SKCloudServiceCapabilitiesDidChangeNotification NS_AVAILABLE_IOS(9_3);
+SK_EXTERN NSNotificationName const SKCloudServiceCapabilitiesDidChangeNotification NS_AVAILABLE_IOS(9_3);
+SK_EXTERN NSNotificationName const SKStorefrontCountryCodeDidChangeNotification NS_AVAILABLE_IOS(11_0);
+SK_EXTERN NSNotificationName const SKStorefrontIdentifierDidChangeNotification NS_AVAILABLE_IOS(9_3);
 
 NS_ASSUME_NONNULL_END

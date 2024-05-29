@@ -13,7 +13,7 @@
 @class PKPaymentPass;
 
 NS_ASSUME_NONNULL_BEGIN
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(3.0)
+API_AVAILABLE(ios(9.0), watchos(3.0))
 @interface PKPaymentMethod : NSObject
 
 typedef NS_ENUM(NSUInteger, PKPaymentMethodType) {
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, PKPaymentMethodType) {
     PKPaymentMethodTypeCredit,
     PKPaymentMethodTypePrepaid,
     PKPaymentMethodTypeStore
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(3.0);
+} API_AVAILABLE(ios(9.0), watchos(3.0));
 
 // A string describing the instrument that's suitable for display
 // This property will be nil prior to the user authorizing the payment

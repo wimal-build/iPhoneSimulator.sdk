@@ -2,7 +2,7 @@
 //  MPMusicPlayerQueueDescriptor.h
 //  MediaPlayerFramework
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright © 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,12 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class MPMediaItem, MPMediaItemCollection, MPMediaQuery;
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
+MP_API(ios(10.1))
+MP_PROHIBITED(tvos)
 @interface MPMusicPlayerQueueDescriptor : NSObject<NSSecureCoding>
 
 @end
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
+MP_API(ios(10.1))
+MP_PROHIBITED(tvos)
 @interface MPMusicPlayerMediaItemQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithQuery:(MPMediaQuery *)query;
@@ -32,7 +34,8 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
 
 @end
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
+MP_API(ios(10.1))
+MP_PROHIBITED(tvos)
 @interface MPMusicPlayerStoreQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithStoreIDs:(NSArray<NSString *> *)storeIDs;
@@ -42,6 +45,32 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.1, 10.12.2, 10.1)
 
 - (void)setStartTime:(NSTimeInterval)startTime forItemWithStoreID:(NSString *)storeID;
 - (void)setEndTime:(NSTimeInterval)endTime forItemWithStoreID:(NSString *)storeID;
+
+@end
+
+MP_API(ios(11.0))
+MP_PROHIBITED(tvos)
+@interface MPMusicPlayerPlayParameters : NSObject<NSSecureCoding>
+
+- (instancetype)init NS_UNAVAILABLE;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
+
+@property (nonatomic, copy, readonly) NSDictionary<NSString *, id> *dictionary;
+
+@end
+
+MP_API(ios(11.0))
+MP_PROHIBITED(tvos)
+@interface MPMusicPlayerPlayParametersQueueDescriptor : MPMusicPlayerQueueDescriptor
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithPlayParametersQueue:(NSArray<MPMusicPlayerPlayParameters *> *)playParametersQueue;
+
+@property (nonatomic, copy) NSArray<MPMusicPlayerPlayParameters *> *playParametersQueue;
+@property (nonatomic, strong, nullable) MPMusicPlayerPlayParameters *startItemPlayParameters;
+
+- (void)setStartTime:(NSTimeInterval)startTime forItemWithPlayParameters:(MPMusicPlayerPlayParameters *)playParameters;
+- (void)setEndTime:(NSTimeInterval)endTime forItemWithPlayParameters:(MPMusicPlayerPlayParameters *)playParameters;
 
 @end
 

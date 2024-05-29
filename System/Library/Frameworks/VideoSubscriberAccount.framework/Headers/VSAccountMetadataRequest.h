@@ -26,6 +26,11 @@ VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 /// If non-empty, limits which account providers can respond to the request.
 @property (nonatomic, copy) NSArray<NSString *> *supportedAccountProviderIdentifiers;
 
+/// If non-empty, specifies providers which may be given more prominent placement
+/// when choosing an account provider during authentication.
+@property (nonatomic, copy) NSArray<NSString *> *featuredAccountProviderIdentifiers
+API_AVAILABLE(ios(11.0), tvos(11.0));
+
 /// A value that the account provider may use to verify the identity of the requesting app.
 @property (nonatomic, copy, nullable) NSString *verificationToken;
 

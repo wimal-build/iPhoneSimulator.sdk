@@ -2,7 +2,7 @@
 //  INBookRestaurantReservationIntent.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 // This API requires you to work with Apple Maps before your application can use it. For information on how to get started, please go to MapsConnect.
 //
@@ -25,6 +25,14 @@ API_AVAILABLE(ios(10.0))
 API_UNAVAILABLE(macosx, watchos)
 @interface INBookRestaurantReservationIntent : INIntent <NSCopying>
 
+- (instancetype)initWithRestaurant:(INRestaurant *)restaurant
+             bookingDateComponents:(NSDateComponents *)bookingDateComponents
+                         partySize:(NSUInteger)partySize
+                 bookingIdentifier:(nullable NSString *)bookingIdentifier
+                             guest:(nullable INRestaurantGuest *)guest
+                     selectedOffer:(nullable INRestaurantOffer *)selectedOffer
+   guestProvidedSpecialRequestText:(nullable NSString *)guestProvidedSpecialRequestText API_AVAILABLE(ios(11.0));
+
 @property (copy, NS_NONATOMIC_IOSONLY) INRestaurant *restaurant;
 @property (copy, NS_NONATOMIC_IOSONLY) NSDateComponents *bookingDateComponents;
 @property (NS_NONATOMIC_IOSONLY) NSUInteger partySize;
@@ -42,12 +50,10 @@ API_UNAVAILABLE(macosx, watchos)
 @protocol INBookRestaurantReservationIntentHandling <NSObject>
 
 /*!
- @brief handling method
- 
- @abstract Execute the task represented by the INBookRestaurantReservationIntent that's passed in
+ @abstract Handling method - Execute the task represented by the INBookRestaurantReservationIntent that's passed in
  @discussion This method is called to actually execute the intent, the app must return a response for this intent and an NSUserActivity capturing the state that the app must be restored to at the end of handling this intent
  
- @param  bookingIntent The input intent
+ @param  intent The input intent
  @param  completion The response handling block to invoke with the response to handling the intent.
  
  @see  INBookRestaurantReservationIntentResponse
@@ -59,11 +65,10 @@ API_UNAVAILABLE(macosx, watchos)
 @optional
 
 /*!
- @brief Confirmation method
- @abstract Validate that this intent is ready for the next step (i.e. handling)
+ @abstract Confirmation method - Validate that this intent is ready for the next step (i.e. handling)
  @discussion These methods are called prior to asking the app to handle the intent. The app should return a response object that contains additional information about the intent, which may be relevant for the system to show the user prior to handling. If unimplemented, the system will assume the intent is valid following resolution, and will assume there is no additional information relevant to this intent.
  
- @param  bookingIntent The input intent
+ @param  intent The input intent
  @param  completion The response block contains an INBookRestaurantReservationIntentResponse containing additional details about the intent that may be relevant for the system to show the user prior to handling.
  
  @see INEndWorkoutIntentResponse
@@ -73,11 +78,10 @@ API_UNAVAILABLE(macosx, watchos)
 - (void)confirmBookRestaurantReservation:(INBookRestaurantReservationIntent *)intent completion:(void (^)(INBookRestaurantReservationIntentResponse *response))completion  NS_SWIFT_NAME(confirm(bookRestaurantReservation:completion:));
 
 /*!
- @brief Resolution methods
- @abstract Determine if this intent is ready for the next step (confirmation)
+ @abstract Resolution methods - Determine if this intent is ready for the next step (confirmation)
  @discussion These methods are called to make sure the app extension is capable of handling this intent in its current form. This method is for validating if the intent needs any further fleshing out.
  
- @param  bookingIntent The input intent
+ @param  intent The input intent
  @param  completion The response block contains an INIntentResolutionResult for the parameter being resolved
  
  @see INIntentResolutionResult

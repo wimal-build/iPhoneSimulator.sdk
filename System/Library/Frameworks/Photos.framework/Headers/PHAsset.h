@@ -2,7 +2,7 @@
 //  PHAsset.h
 //  Photos
 //
-//  Copyright (c) 2013 Apple Inc. All rights reserved.
+//  Copyright (c) 2017 Apple Inc. All rights reserved.
 //
 
 #import <Photos/PHObject.h>
@@ -11,7 +11,6 @@
 #import <Photos/PHPhotoLibrary.h>
 #import <Photos/PhotosDefines.h>
 
-#import <UIKit/UIImage.h>
 #import <ImageIO/ImageIO.h>
 #import <CoreLocation/CLLocation.h>
 
@@ -19,13 +18,15 @@
 @class PHFetchOptions;
 @class PHAssetCollection;
 @class PHPerson;
-@class PHFaceCollection;
 
 NS_ASSUME_NONNULL_BEGIN
 
 PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAsset : PHObject
 
 #pragma mark - Properties
+
+// Playback style describes how the asset should be presented to the user (regardless of the backing media for that asset).  Use this value to choose the type of view and the appropriate APIs on the PHImageManager to display this asset
+@property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0);
 
 @property (nonatomic, assign, readonly) PHAssetMediaType mediaType;
 @property (nonatomic, assign, readonly) PHAssetMediaSubtype mediaSubtypes;
@@ -58,7 +59,7 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAsset : PHObject
 #pragma mark - Fetching assets
 
 + (PHFetchResult<PHAsset *> *)fetchAssetsInAssetCollection:(PHAssetCollection *)assetCollection options:(nullable PHFetchOptions *)options;
-+ (PHFetchResult<PHAsset *> *)fetchAssetsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options;
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options; // includes hidden assets by default
 + (nullable PHFetchResult<PHAsset *> *)fetchKeyAssetsInAssetCollection:(PHAssetCollection *)assetCollection options:(nullable PHFetchOptions *)options;
 + (PHFetchResult<PHAsset *> *)fetchAssetsWithBurstIdentifier:(NSString *)burstIdentifier options:(nullable PHFetchOptions *)options;
 
@@ -67,7 +68,7 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAsset : PHObject
 + (PHFetchResult<PHAsset *> *)fetchAssetsWithMediaType:(PHAssetMediaType)mediaType options:(nullable PHFetchOptions *)options;
 
 // assetURLs are URLs retrieved from ALAsset's ALAssetPropertyAssetURL
-+ (PHFetchResult<PHAsset *> *)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> *)assetURLs options:(nullable PHFetchOptions *)options;
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> *)assetURLs options:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8.0, 11.0), tvos(8.0, 11.0));
 
 @end
 

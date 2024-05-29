@@ -2,7 +2,7 @@
  *  UIStateRestoration.h
  *  UIKit
  *
- *  Copyright 2012-2011 Apple Inc. All rights reserved.
+ *  Copyright 2012-2017 Apple Inc. All rights reserved.
  *
  */
 
@@ -20,7 +20,7 @@ UIKIT_EXTERN NSString *const UIStateRestorationViewControllerStoryboardKey NS_AV
 // NSString with value of info.plist's Bundle Version (app version) when state was last saved for the app
 UIKIT_EXTERN NSString *const UIApplicationStateRestorationBundleVersionKey NS_AVAILABLE_IOS(6_0);
 
-// NSNumber containing the UIUSerInterfaceIdiom enum value of the app that saved state
+// NSNumber containing the UIUserInterfaceIdiom enum value of the app that saved state
 UIKIT_EXTERN NSString *const UIApplicationStateRestorationUserInterfaceIdiomKey NS_AVAILABLE_IOS(6_0);
 
 // NSDate specifying the date/time the state restoration archive was saved. This is in UTC.

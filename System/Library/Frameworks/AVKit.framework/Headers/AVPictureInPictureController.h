@@ -3,17 +3,17 @@
 	
 	Framework:  AVKit
 	
-	Copyright © 2015-2016 Apple Inc. All rights reserved.
+	Copyright © 2015-2017 Apple Inc. All rights reserved.
 	
  */
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 #import <AVKit/AVKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class AVPlayerLayer;
 @class UIImage;
 @class UITraitCollection;
 @protocol AVPictureInPictureControllerDelegate;
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 	@abstract	AVPictureInPictureController is a subclass of NSObject that can be used to present the contents of an AVPlayerLayer floating on top of applications.
  */
 
-NS_CLASS_AVAILABLE_IOS(9_0)
+API_AVAILABLE(ios(9.0))
 @interface AVPictureInPictureController : NSObject
 
 /*!

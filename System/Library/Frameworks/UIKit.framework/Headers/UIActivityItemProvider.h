@@ -2,7 +2,7 @@
 //  UIActivityItemProvider.h
 //  UIKit
 //
-//  Copyright 2012-2016 Apple Inc. All rights reserved.
+//  Copyright 2012-2017 Apple Inc. All rights reserved.
 //
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 
 - (id)activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController;	// called to determine data type. only the class of the return type is consulted. it should match what -itemForActivityType: returns later
-- (nullable id)activityViewController:(UIActivityViewController *)activityViewController itemForActivityType:(UIActivityType)activityType;	// called to fetch data after an activity is selected. you can return nil.
+- (nullable id)activityViewController:(UIActivityViewController *)activityViewController itemForActivityType:(nullable UIActivityType)activityType;	// called to fetch data after an activity is selected. you can return nil.
 
 @optional
 

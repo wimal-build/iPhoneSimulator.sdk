@@ -18,14 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// MPPlayableContentDataSource) and selects a content item to play. If the media
 /// player decides that it wants to play the item, it will ask the application's
 /// content delegate to initiate playback.
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(7.1, 10.12.2, 7.1)
+MP_API(ios(7.1))
+MP_PROHIBITED(tvos, macos)
 @protocol MPPlayableContentDelegate <NSObject>
 @optional
 
 /// This method is called when a media player interface wants to play a requested
 /// content item. The application should call the completion handler with an
 /// appropriate error if there was an error beginning playback for the item.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *)indexPath completionHandler:(void(^)(NSError * __nullable))completionHandler MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(7.1, 10.12.2, 7.1);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager initiatePlaybackOfContentItemAtIndexPath:(NSIndexPath *)indexPath completionHandler:(void(^)(NSError * __nullable))completionHandler MP_API(ios(7.1)) MP_PROHIBITED(tvos, macos);
 
 
 /// This method is called when a media player interface wants the now playing
@@ -34,7 +35,7 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(7.1, 10.12.2, 7.1)
 /// received or if the playable content manager requests to play something else.
 /// The app should call the provided completion handler once it is ready to play
 /// something.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithCompletionHandler:(void(^)(NSError * __nullable))completionHandler NS_AVAILABLE_IOS(9_0) NS_DEPRECATED_IOS(9_0, 9_3, "Use initializePlaybackQueueWithContentItems:completionHandler: instead");
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithCompletionHandler:(void(^)(NSError * __nullable))completionHandler MP_DEPRECATED("Use -playableContentManager:initializePlaybackQueueWithContentItems:completionHandler:", ios(9.0, 9.3));
 
 /// This method is called when a media player interface wants the now playing
 /// app to setup a playback queue for later playback. The application should
@@ -45,10 +46,10 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(7.1, 10.12.2, 7.1)
 /// anything it deems appropriate.
 /// The app should call the provided completion handler once it is ready to play
 /// something.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithContentItems:(nullable NSArray *)contentItems completionHandler:(void(^)(NSError * __nullable))completionHandler MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(9.3, 10.12.2, 9.3);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager initializePlaybackQueueWithContentItems:(nullable NSArray *)contentItems completionHandler:(void(^)(NSError * __nullable))completionHandler MP_API(ios(9.3)) MP_PROHIBITED(tvos, macos);
 
 /// This method is called when the content server notifies the manager that the current context has changed.
-- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(8.4, 10.12.2, 8.4);
+- (void)playableContentManager:(MPPlayableContentManager *)contentManager didUpdateContext:(MPPlayableContentManagerContext *)context MP_API(ios(8.4)) MP_PROHIBITED(tvos, macos);
 
 @end
 

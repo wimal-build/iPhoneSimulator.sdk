@@ -25,7 +25,7 @@ typedef NS_OPTIONS(NSUInteger, PKMerchantCapability) {
     PKMerchantCapabilityEMV                                  = 1UL << 1,   // Merchant supports EMV
     PKMerchantCapabilityCredit NS_ENUM_AVAILABLE_IOS(9_0) = 1UL << 2,   // Merchant supports credit
     PKMerchantCapabilityDebit  NS_ENUM_AVAILABLE_IOS(9_0) = 1UL << 3    // Merchant supports debit
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
+} API_AVAILABLE(ios(8.0), watchos(3.0));
 
 typedef NS_OPTIONS(NSUInteger, PKAddressField) {
     PKAddressFieldNone                               = 0UL,      // No address fields required.
@@ -34,26 +34,26 @@ typedef NS_OPTIONS(NSUInteger, PKAddressField) {
     PKAddressFieldEmail                              = 1UL << 2,
     PKAddressFieldName NS_ENUM_AVAILABLE_IOS(8_3) = 1UL << 3,
     PKAddressFieldAll                                = (PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldEmail|PKAddressFieldName)
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
+} API_DEPRECATED("Use PKContactField and -requiredShippingContactFields / -requiredBillingContactFields", ios(8.0, 11.0), watchos(3.0, 4.0));
 
 typedef NS_ENUM(NSUInteger, PKShippingType) {
     PKShippingTypeShipping,
     PKShippingTypeDelivery,
     PKShippingTypeStorePickup,
     PKShippingTypeServicePickup
-} NS_ENUM_AVAILABLE_IOS(8_3) __WATCHOS_AVAILABLE(3.0);
+}  API_AVAILABLE(ios(8.3), watchos(3.0));
 
 typedef NS_ENUM(NSUInteger, PKPaymentSummaryItemType) {
     PKPaymentSummaryItemTypeFinal,      // The payment summary item's amount is known to be correct
     PKPaymentSummaryItemTypePending     // The payment summary item's amount is estimated or unknown - e.g, a taxi fare
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(3.0);
+}  API_AVAILABLE(ios(9.0), watchos(3.0));
 
 // PKPaymentSummaryItem Defines a line-item for a payment such as tax, shipping, or discount.
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
+API_AVAILABLE(ios(8.0), watchos(3.0))
 @interface PKPaymentSummaryItem : NSObject
 
 + (instancetype)summaryItemWithLabel:(NSString *)label amount:(NSDecimalNumber *)amount;
-+ (instancetype)summaryItemWithLabel:(NSString *)label amount:(NSDecimalNumber *)amount type:(PKPaymentSummaryItemType)type NS_AVAILABLE_IOS(9_0);
++ (instancetype)summaryItemWithLabel:(NSString *)label amount:(NSDecimalNumber *)amount type:(PKPaymentSummaryItemType)type API_AVAILABLE(ios(9.0), watchos(3.0));
 
 // A short localized description of the item, e.g. "Tax" or "Gift Card".
 @property (nonatomic, copy) NSString *label;
@@ -64,12 +64,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
 
 // Defaults to PKPaymentSummaryItemTypeFinal
 // Set to PKPaymentSummaryItemTypePending if the amount of the item is not known at this time
-@property (nonatomic, assign) PKPaymentSummaryItemType type NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign) PKPaymentSummaryItemType type API_AVAILABLE(ios(9.0), watchos(3.0));
 
 @end
 
 // Defines a shipping method for delivering physical goods.
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
+API_AVAILABLE(ios(8.0), watchos(3.0))
 @interface PKShippingMethod : PKPaymentSummaryItem
 
 // Application-defined unique identifier for this shipping method.  The application will receive this
@@ -85,11 +85,28 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
 // PKPaymentRequest defines an application's request to produce a payment instrument for the
 // purchase of goods and services. It encapsulates information about the selling party's payment
 // processing capabilities, an amount to pay, and the currency code.
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
+API_AVAILABLE(ios(8.0), watchos(3.0))
 @interface PKPaymentRequest : NSObject
 
 // The payment networks and platforms supported for in-app payment
-+ (NSArray<PKPaymentNetwork> *)availableNetworks NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3.0);
++ (NSArray<PKPaymentNetwork> *)availableNetworks API_AVAILABLE(ios(10.0), watchos(3.0));
+
+// Convenience method to create a payment contact error with the supplied field
+// You may optionally provide a localized description to be displayed to the user.
+// Available display space for descriptions may be limited, so you should keep your messages concise
++ (NSError *)paymentContactInvalidErrorWithContactField:(PKContactField)field
+                                   localizedDescription:(nullable NSString *)localizedDescription API_AVAILABLE(ios(11.0), watchos(4.0));
+
+// Convenience method to create a payment shipping address error with the supplied CNPostalAddressKey and description
++ (NSError *)paymentShippingAddressInvalidErrorWithKey:(NSString *)postalAddressKey
+                                  localizedDescription:(nullable NSString *)localizedDescription API_AVAILABLE(ios(11.0), watchos(4.0));
+
+// Convenience method to create a payment billing address error with the supplied CNPostalAddressKey and description
++ (NSError *)paymentBillingAddressInvalidErrorWithKey:(NSString *)postalAddressKey
+                                 localizedDescription:(nullable NSString *)localizedDescription API_AVAILABLE(ios(11.0), watchos(4.0));
+
+// Convenience method to create a payment shipping address service error with the supplied description
++ (NSError *)paymentShippingAddressUnserviceableErrorWithLocalizedDescription:(nullable NSString *)localizedDescription API_AVAILABLE(ios(11.0), watchos(4.0));
 
 // Identifies the merchant, as previously agreed with Apple.  Must match one of the merchant
 // identifiers in the application's entitlement.
@@ -112,36 +129,48 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
 // Currency code for this payment.
 @property (nonatomic, copy) NSString *currencyCode;
 
-// Indicates which billing address fields the merchant requires in order to process a transaction.
-// The default is PKAddressFieldNone.
-@property (nonatomic, assign) PKAddressField requiredBillingAddressFields;
+// Indicates which billing contact fields the merchant requires in order to process a transaction.
+// Currently only postal address may be requested for billing contact. For all other fields use -requiredShippingContactFields
+@property (nonatomic, strong) NSSet<PKContactField> *requiredBillingContactFields API_AVAILABLE(ios(11.0), watchos(4.0));
+
+// Indicates which billing address fields are required. The default is PKAddressFieldNone.
+// This property is deprecated and should not be used.
+@property (nonatomic, assign) PKAddressField requiredBillingAddressFields API_DEPRECATED_WITH_REPLACEMENT("requiredBillingContactFields", ios(8.0, 11.0), watchos(2.0, 4.0));
 
 // If the merchant already has a billing address on file, set it here.
-@property (nonatomic, strong, nullable) PKContact *billingContact NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, strong, nullable) PKContact *billingContact API_AVAILABLE(ios(9.0), watchos(3.0));
 
-// Indicates which shipping address fields the merchant requires in order to process a transaction.
-// The default is PKAddressFieldNone.
-@property (nonatomic, assign) PKAddressField requiredShippingAddressFields;
+// Indicates which shipping contact fields the merchant requires in order to process a transactions
+//
+@property (nonatomic, strong) NSSet<PKContactField> *requiredShippingContactFields API_AVAILABLE(ios(11.0), watchos(4.0));
+
+// Indicates which shipping address fields are required. The default is PKAddressFieldNone.
+// This property is deprecated and should not be used
+@property (nonatomic, assign) PKAddressField requiredShippingAddressFields API_DEPRECATED_WITH_REPLACEMENT("requiredShippingContactFields", ios(8.0, 11.0), watchos(2.0, 4.0));
 
 // If the merchant already has a shipping address on file, set it here.
-@property (nonatomic, strong, nullable) PKContact *shippingContact NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, strong, nullable) PKContact *shippingContact API_AVAILABLE(ios(9.0), watchos(3.0));
 
 // Shipping methods supported by the merchant.
 @property (nonatomic, copy, nullable) NSArray<PKShippingMethod *> *shippingMethods;
 
 // Indicates the display mode for the shipping (e.g, "Pick Up", "Ship To", "Deliver To"). Localized.
 // The default is PKShippingTypeShipping
-@property (nonatomic, assign) PKShippingType shippingType NS_AVAILABLE_IOS(8_3);
+@property (nonatomic, assign) PKShippingType shippingType API_AVAILABLE(ios(8.3), watchos(3.0));
 
 // Optional merchant-supplied information about the payment request.  Examples of this are an order
 // or cart identifier.  It will be signed and included in the resulting PKPaymentToken.
 @property (nonatomic, copy, nullable) NSData *applicationData;
 
+// Set of two-letter ISO 3166 country codes. When provided will filter the selectable payment passes to those
+// issued in the supported countries.
+@property (nonatomic, copy, nullable) NSSet<NSString *> *supportedCountries API_AVAILABLE(ios(11.0), watchos(4.0));
+
 #if TARGET_OS_IOS
 // These properties have been deprecated and should not be used.
-@property (nonatomic, assign, nullable) ABRecordRef shippingAddress __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(8_0, 9_0, "ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to shippingContact.");
+@property (nonatomic, assign, nullable) ABRecordRef shippingAddress __WATCHOS_PROHIBITED API_DEPRECATED("ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to shippingContact.", ios(8.0, 9.0));
 
-@property (nonatomic, assign, nullable) ABRecordRef billingAddress __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(8_0, 9_0, "ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to billingContact.");
+@property (nonatomic, assign, nullable) ABRecordRef billingAddress __WATCHOS_PROHIBITED API_DEPRECATED("ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to billingContact.", ios(8.0, 9.0));
 #endif
 
 @end

@@ -60,6 +60,14 @@ CB_EXTERN NSString * const CBUUIDCharacteristicAggregateFormatString;
 CB_EXTERN NSString * const CBUUIDCharacteristicValidRangeString;
 
 /*!
+ *  @const CBUUIDL2CAPPSMCharacteristicString
+ *  @discussion The PSM (a little endian uint16_t) of an L2CAP Channel associated with the GATT service
+ *				containing this characteristic.  Servers can publish this characteristic with the UUID
+ *				ABDD3056-28FA-441D-A470-55A75A52553A
+ */
+CB_EXTERN NSString * const CBUUIDL2CAPPSMCharacteristicString NS_AVAILABLE(10_13, 11_0);
+
+/*!
  * @class CBUUID
  *
  * @discussion
@@ -86,7 +94,7 @@ CB_EXTERN_CLASS @interface CBUUID : NSObject <NSCopying>
  *      The UUID as NSString.
  *
  */
-@property(nonatomic, readonly) NSString *UUIDString NS_AVAILABLE(NA, 7_1);
+@property(nonatomic, readonly) NSString *UUIDString NS_AVAILABLE(10_10, 7_1);
 
 /*!
  * @method UUIDWithString:
@@ -114,7 +122,7 @@ CB_EXTERN_CLASS @interface CBUUID : NSObject <NSCopying>
  *      Creates a CBUUID with a CFUUIDRef.
  *
  */
-+ (CBUUID *)UUIDWithCFUUID:(CFUUIDRef)theUUID NS_DEPRECATED(NA, NA, 5_0, 9_0);
++ (CBUUID *)UUIDWithCFUUID:(CFUUIDRef)theUUID NS_DEPRECATED(10_7, 10_13, 5_0, 9_0);
 
 /*!
  * @method UUIDWithNSUUID:
@@ -123,7 +131,7 @@ CB_EXTERN_CLASS @interface CBUUID : NSObject <NSCopying>
  *      Creates a CBUUID with a NSUUID.
  *
  */
-+ (CBUUID *)UUIDWithNSUUID:(NSUUID *)theUUID NS_AVAILABLE(NA, 7_0);
++ (CBUUID *)UUIDWithNSUUID:(NSUUID *)theUUID NS_AVAILABLE(10_9, 7_0);
 
 @end
 

@@ -9,6 +9,7 @@
 #import <Metal/MTLDefines.h>
 #import <Metal/MTLTexture.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, MTLDataType){
     
@@ -85,7 +86,31 @@ typedef NS_ENUM(NSUInteger, MTLDataType){
     MTLDataTypeBool2 = 54,
     MTLDataTypeBool3 = 55,
     MTLDataTypeBool4 = 56,
+
+    
+    MTLDataTypeTexture NS_ENUM_AVAILABLE(10_13, 11_0) = 58,
+    MTLDataTypeSampler NS_ENUM_AVAILABLE(10_13, 11_0) = 59,
+    MTLDataTypePointer NS_ENUM_AVAILABLE(10_13, 11_0) = 60,
+
+    MTLDataTypeR8Unorm         NS_ENUM_AVAILABLE(NA, 11_0) = 62,
+    MTLDataTypeR8Snorm         NS_ENUM_AVAILABLE(NA, 11_0) = 63,
+    MTLDataTypeR16Unorm        NS_ENUM_AVAILABLE(NA, 11_0) = 64,
+    MTLDataTypeR16Snorm        NS_ENUM_AVAILABLE(NA, 11_0) = 65,
+    MTLDataTypeRG8Unorm        NS_ENUM_AVAILABLE(NA, 11_0) = 66,
+    MTLDataTypeRG8Snorm        NS_ENUM_AVAILABLE(NA, 11_0) = 67,
+    MTLDataTypeRG16Unorm       NS_ENUM_AVAILABLE(NA, 11_0) = 68,
+    MTLDataTypeRG16Snorm       NS_ENUM_AVAILABLE(NA, 11_0) = 69,
+    MTLDataTypeRGBA8Unorm      NS_ENUM_AVAILABLE(NA, 11_0) = 70,
+    MTLDataTypeRGBA8Unorm_sRGB NS_ENUM_AVAILABLE(NA, 11_0) = 71,
+    MTLDataTypeRGBA8Snorm      NS_ENUM_AVAILABLE(NA, 11_0) = 72,
+    MTLDataTypeRGBA16Unorm     NS_ENUM_AVAILABLE(NA, 11_0) = 73,
+    MTLDataTypeRGBA16Snorm     NS_ENUM_AVAILABLE(NA, 11_0) = 74,
+    MTLDataTypeRGB10A2Unorm    NS_ENUM_AVAILABLE(NA, 11_0) = 75,
+    MTLDataTypeRG11B10Float    NS_ENUM_AVAILABLE(NA, 11_0) = 76,
+    MTLDataTypeRGB9E5Float     NS_ENUM_AVAILABLE(NA, 11_0) = 77,
 } NS_ENUM_AVAILABLE(10_11, 8_0);
+
+@class MTLArgument;
 
 /*!
  @enum MTLArgumentType
@@ -109,7 +134,10 @@ typedef NS_ENUM(NSUInteger, MTLArgumentType) {
     MTLArgumentTypeThreadgroupMemory= 1,
     MTLArgumentTypeTexture = 2,
     MTLArgumentTypeSampler = 3,
-    
+
+    MTLArgumentTypeImageblockData NS_ENUM_AVAILABLE_IOS(11_0)     = 16,
+    MTLArgumentTypeImageblock NS_ENUM_AVAILABLE_IOS(11_0)         = 17,
+
 } NS_ENUM_AVAILABLE(10_11, 8_0);
 
 /*!
@@ -125,6 +153,13 @@ typedef NS_ENUM(NSUInteger, MTLArgumentAccess) {
 
 @class MTLStructType;
 @class MTLArrayType;
+@class MTLTextureReferenceType;
+@class MTLPointerType;
+
+NS_CLASS_AVAILABLE(10_13, 11_0)
+@interface MTLType : NSObject
+@property (readonly) MTLDataType dataType;
+@end
 
 NS_CLASS_AVAILABLE(10_11, 8_0)
 @interface MTLStructMember : NSObject
@@ -132,30 +167,67 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @property (readonly) NSString *name;
 @property (readonly) NSUInteger offset;
 @property (readonly) MTLDataType dataType;
- 
+
 - (nullable MTLStructType *)structType;
 - (nullable MTLArrayType *)arrayType;
- 
+
+- (nullable MTLTextureReferenceType *)textureReferenceType  NS_AVAILABLE(10_13, 11_0);
+- (nullable MTLPointerType *)pointerType  NS_AVAILABLE(10_13, 11_0);
+
+@property (readonly) NSUInteger argumentIndex NS_AVAILABLE(10_13, 11_0);
+
+
 @end
  
 NS_CLASS_AVAILABLE(10_11, 8_0)
-@interface MTLStructType  : NSObject
+@interface MTLStructType  : MTLType
 
 @property (readonly) NSArray <MTLStructMember *> *members;
 
 - (nullable MTLStructMember *)memberByName:(NSString *)name;
+
 @end
- 
+
 NS_CLASS_AVAILABLE(10_11, 8_0)
-@interface MTLArrayType  : NSObject
- 
-@property (readonly) NSUInteger arrayLength;
- 
+@interface MTLArrayType  : MTLType
+
 @property (readonly) MTLDataType elementType;
+
+@property (readonly) NSUInteger arrayLength;
 @property (readonly) NSUInteger stride;
- 
+@property (readonly) NSUInteger argumentIndexStride NS_AVAILABLE(10_13, 11_0);
 - (nullable MTLStructType *)elementStructType;
 - (nullable MTLArrayType *)elementArrayType;
+- (nullable MTLTextureReferenceType *)elementTextureReferenceType  NS_AVAILABLE(10_13, 11_0);
+- (nullable MTLPointerType *)elementPointerType  NS_AVAILABLE(10_13, 11_0);
+
+
+@end
+
+NS_CLASS_AVAILABLE(10_13, 11_0)
+@interface MTLPointerType : MTLType
+
+@property (readonly) MTLDataType elementType;           // MTLDataTypeFloat, MTLDataTypeFloat4, MTLDataTypeStruct, ...
+@property (readonly) MTLArgumentAccess access;
+@property (readonly) NSUInteger alignment;              // min alignment for the element data
+@property (readonly) NSUInteger dataSize;               // sizeof(T) for T *argName
+
+@property (readonly) BOOL elementIsArgumentBuffer NS_AVAILABLE(10_13, 11_0);
+
+- (nullable MTLStructType *)elementStructType  NS_AVAILABLE(10_13, 11_0);
+- (nullable MTLArrayType *)elementArrayType  NS_AVAILABLE(10_13, 11_0);
+
+@end
+
+NS_CLASS_AVAILABLE(10_13, 11_0)
+@interface MTLTextureReferenceType : MTLType
+
+@property (readonly) MTLDataType textureDataType; // half, float, int, or uint.
+@property (readonly) MTLTextureType textureType;  // texture1D, texture2D...
+@property (readonly) MTLArgumentAccess access;    // read, write, read-write
+@property (readonly) BOOL isDepthTexture;         // true for depth textures
+
+
 @end
 
 /*!
@@ -169,13 +241,16 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @property (readonly) MTLArgumentAccess access;
 @property (readonly) NSUInteger index;
 
+
 @property (readonly, getter=isActive) BOOL active;
 
 // for buffer arguments
-@property (readonly) NSUInteger     bufferAlignment;		// min alignment of starting offset in the buffer
-@property (readonly) NSUInteger     bufferDataSize; 		// sizeof(T) for T *argName
-@property (readonly) MTLDataType    bufferDataType; 		// MTLDataTypeFloat, MTLDataTypeFloat4, MTLDataTypeStruct, ...
-@property (readonly) MTLStructType *bufferStructType;
+@property (readonly) NSUInteger      bufferAlignment;		// min alignment of starting offset in the buffer
+@property (readonly) NSUInteger      bufferDataSize; 		// sizeof(T) for T *argName
+@property (readonly) MTLDataType     bufferDataType; 		// MTLDataTypeFloat, MTLDataTypeFloat4, MTLDataTypeStruct, ...
+@property (readonly) MTLStructType  *bufferStructType;
+@property (readonly, nullable) MTLPointerType *bufferPointerType NS_AVAILABLE(10_13, 11_0);
+
 
 // for threadgroup memory arguments
 @property (readonly) NSUInteger     threadgroupMemoryAlignment;
@@ -184,9 +259,9 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 // for texture arguments
 @property (readonly) MTLTextureType textureType; // texture1D, texture2D...
 @property (readonly) MTLDataType    textureDataType; // half, float, int, or uint.
-
 @property (readonly) BOOL           isDepthTexture NS_AVAILABLE(10_12, 10_0); // true for depth textures
-@property (readonly) NSUInteger     arrayLength NS_AVAILABLE(10_12, 10_0);
+@property (readonly) NSUInteger     arrayLength NS_AVAILABLE(10_13, 10_0);
 
 @end
+
 NS_ASSUME_NONNULL_END

@@ -1,7 +1,7 @@
 //
 //  SCNParametricGeometry.h
 //
-//  Copyright (c) 2012-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2017 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SCNGeometry.h>
@@ -60,14 +60,14 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract The corner radius. Animatable.
  @discussion If the value is strictly less than 0, the geometry is empty. The default value is 0.
  */
-@property(nonatomic) CGFloat cornerRadius API_AVAILABLE(macosx(10.9));
+@property(nonatomic) CGFloat cornerRadius API_AVAILABLE(macos(10.9));
 
 /*!
  @property cornerSegmentCount
  @abstract The number of subdivisions for the rounded corners. Animatable.
  @discussion If the value is less than 1, the behavior is undefined. The default value is 10.
  */
-@property(nonatomic) NSInteger cornerSegmentCount API_AVAILABLE(macosx(10.9));
+@property(nonatomic) NSInteger cornerSegmentCount API_AVAILABLE(macos(10.9));
 
 @end
 
@@ -539,21 +539,21 @@ NS_ASSUME_NONNULL_BEGIN
  @property reflectionCategoryBitMask
  @abstract Determines the node categories to reflect. Defaults to all bits set.
  */
-@property(nonatomic) NSUInteger reflectionCategoryBitMask API_AVAILABLE(macosx(10.12), ios(10.0), tvos(10.0));
+@property(nonatomic) NSUInteger reflectionCategoryBitMask API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));
 
 /*!
  @property width
  @abstract The floor extent along the X axis. Animatable.
  @discussion If the value is equal to 0, the floor is infinite on the X axis. The default value is 0.
  */
-@property(nonatomic) CGFloat width;
+@property(nonatomic) CGFloat width API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));
 
 /*!
  @property length
  @abstract The floor extent along the Z axis. Animatable.
  @discussion If the value is equal to 0, the floor is infinite on the Z axis. The default value is 0.
  */
-@property(nonatomic) CGFloat length;
+@property(nonatomic) CGFloat length API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));
 
 
 /*!
@@ -562,7 +562,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Defaults to 0.5.
 #endif
 */
-@property(nonatomic) CGFloat reflectionResolutionScaleFactor API_AVAILABLE(macosx(10.10));
+@property(nonatomic) CGFloat reflectionResolutionScaleFactor API_AVAILABLE(macos(10.10));
 
 @end
 
@@ -649,22 +649,22 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Specifies the accuracy (or smoothness) with which fonts are rendered.
  @discussion Smaller numbers give smoother curves at the expense of more computation and heavier geometries in terms of vertices. The default value is 1.0, which yields smooth curves.
  */
-@property(nonatomic) CGFloat flatness API_AVAILABLE(macosx(10.9));
+@property(nonatomic) CGFloat flatness API_AVAILABLE(macos(10.9));
 
 @end
 
-/*!
- @class SCNShape
- @abstract SCNShape represents a 2D shape (cubic Bezier spline) than can be extruded.
- */
 
 typedef NS_ENUM(NSInteger, SCNChamferMode) {
     SCNChamferModeBoth,
     SCNChamferModeFront,
     SCNChamferModeBack
-} API_AVAILABLE(macosx(10.9));
+} API_AVAILABLE(macos(10.9));
 
-API_AVAILABLE(macosx(10.9))
+/*!
+ @class SCNShape
+ @abstract SCNShape represents a 2D shape (cubic Bezier spline) than can be extruded.
+ */
+API_AVAILABLE(macos(10.9))
 @interface SCNShape : SCNGeometry
 
 /*!

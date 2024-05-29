@@ -20,7 +20,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 ///
 /// - If the call for this action's UUID is already in a group, it should leave that group if necessary.
 /// - If nil, leave any group the call is currently in.
-@property (nonatomic, nullable) NSUUID *callUUIDToGroupWith;
+@property (nonatomic, copy, nullable) NSUUID *callUUIDToGroupWith;
 
 @end
 

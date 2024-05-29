@@ -22,31 +22,43 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)loadBroadcastingApplicationInfoWithCompletion:(void(^)(NSString *bundleID, NSString *displayName, UIImage * __nullable appIcon))handler;
 
-/*! @abstract Method to be called when the extension should finish.
+/*! @abstract Method to be called when the extension should finish. Deprecated.
     @param broadcastURL URL that can be used to redirect the user to the ongoing or completed broadcast. This URL is made available to the running application via a property in RPBroadcastController.
     @param broadcastConfiguration Configuration to use for generating movie clips
     @param setupInfo Dictionary that can be used to share any setup information required by the upload extension. The values and keys in this dictionary are to be defined by the extension developer.
  */
-- (void)completeRequestWithBroadcastURL:(NSURL *)broadcastURL broadcastConfiguration:(RPBroadcastConfiguration *)broadcastConfiguration setupInfo:(nullable NSDictionary <NSString *, NSObject <NSCoding> *> *)setupInfo;
+- (void)completeRequestWithBroadcastURL:(NSURL *)broadcastURL broadcastConfiguration:(RPBroadcastConfiguration *)broadcastConfiguration setupInfo:(nullable NSDictionary <NSString *, NSObject <NSCoding> *> *)setupInfo API_DEPRECATED("No longer supported", ios(10.0,11.0),tvos(10.0,11.0));
+
+/*! @abstract Method to be called when the extension should finish.
+    @param broadcastURL URL that can be used to redirect the user to the ongoing or completed broadcast. This URL is made available to the running application via a property in RPBroadcastController.
+    @param setupInfo Dictionary that can be used to share any setup information required by the upload extension. The values and keys in this dictionary are to be defined by the extension developer.
+ */
+- (void)completeRequestWithBroadcastURL:(NSURL *)broadcastURL setupInfo:(nullable NSDictionary <NSString *, NSObject <NSCoding> *> *)setupInfo API_AVAILABLE(ios(11.0),tvos(11.0));
+
 @end
 
 /*!
  @class RPBroadcastProcessExtension
  @abstract Base class for extensions that are responsible for handling video and audio data.
  */
-NS_CLASS_AVAILABLE_IOS(10_0)
+API_AVAILABLE(ios(10.0),tvos(10.0))
 @interface RPBroadcastHandler : NSObject <NSExtensionRequestHandling>
 /*! @abstract Call this method, supplying it with a dictionary defined by the service, to populate the serviceInfo property on RPBroadcastController. This can be used to communicate viewing stats or messages back to the broadcasting app.
  @param serviceInfo Dictionary that can be passed back to the broadcasting app that may contain information about the ongoing broadcast.
  */
 - (void)updateServiceInfo:(NSDictionary<NSString *, NSObject <NSCoding> *> *)serviceInfo;
+
+/*! @abstract Call this method, supplying it with a URL to update the broadcastURL property on RPBroadcastController.
+ @param broadcastURL URL of the resource where broadcast can be viewed which will be passed to the broadcasting app.
+ */
+- (void)updateBroadcastURL:(NSURL *)broadcastURL API_AVAILABLE(ios(11.0), tvos(11.0));
 @end
 
 /*! 
     @class RPBroadcastMP4ClipHandler
     @abstract Subclass this class to handle movie clips as they are recorded by ReplayKit during the broadcast flow. ReplayKit will call processMP4ClipWithURL when a movie clip is available for processing.
  */
-NS_CLASS_AVAILABLE_IOS(10_0)
+API_DEPRECATED("No longer supported, use RPBroadcastSampleHandler instead.", ios(10.0,11.0),tvos(10.0,11.0))
 @interface RPBroadcastMP4ClipHandler : RPBroadcastHandler
 /*! @abstract Method which ReplayKit will call when an MP4 movie clip is ready for processing.
  @param mp4ClipURL URL that points to the location of the movie clip recorded by ReplayKit. Note that the URL may be nil in certain cases such as an error.
@@ -62,7 +74,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 - (void)finishedProcessingMP4ClipWithUpdatedBroadcastConfiguration:(nullable RPBroadcastConfiguration *)broadcastConfiguration error:(nullable NSError *)error;
 @end
 
-NS_ENUM_AVAILABLE_IOS(10_0)
+API_AVAILABLE(ios(10.0),tvos(10.0))
 typedef NS_ENUM(NSInteger, RPSampleBufferType) {
     RPSampleBufferTypeVideo = 1,
     RPSampleBufferTypeAudioApp,
@@ -73,11 +85,11 @@ typedef NS_ENUM(NSInteger, RPSampleBufferType) {
  @class RPBroadcastSampleHandler
  @abstract Subclass this class to handle CMSampleBuffer objects as they are captured by ReplayKit. To enable this mode of handling, set the RPBroadcastProcessMode in the extension's info.plist to RPBroadcastProcessModeSampleBuffer.
  */
-NS_CLASS_AVAILABLE_IOS(10_0)
+API_AVAILABLE(ios(10.0),tvos(10.0))
 @interface RPBroadcastSampleHandler : RPBroadcastHandler
 
 /*! @abstract Method is called when the RPBroadcastController startBroadcast method is called from the broadcasting application.
-    @param serviceInfo Dictionary that can be supplied by the UI extension to the sample handler.
+    @param setupInfo Dictionary that can be supplied by the UI extension to the sample handler.
  */
 - (void)broadcastStartedWithSetupInfo:(nullable NSDictionary <NSString *, NSObject *> *)setupInfo;
 

@@ -2,7 +2,7 @@
 //  NSTextContainer.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -25,7 +25,7 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextContainer : NSObject <NSCoding, N
 
 // Accessor for the NSLayoutManager object owning the receiver.
 // Avoid assigning a layout manager directly through this property.  Adding a text container to a layout manager through -[NSLayoutManager addTextContainer:] will use the property for assigning the new layout manager.
-@property(nullable, assign, NS_NONATOMIC_IOSONLY) NSLayoutManager *layoutManager;
+@property (nullable, assign, NS_NONATOMIC_IOSONLY) NSLayoutManager *layoutManager;
 
 // This method should be used instead of the primitive -setLayoutManager: if you need to replace a container's layoutManager with a new one leaving the rest of the web intact.  All the NSTextContainers on the old NSLayoutManager get transferred to the new one.  This method deals with all the work of making sure the containers don't get deallocated and removing the old layoutManager from the text storage and replacing it with the new one.
 - (void)replaceLayoutManager:(NSLayoutManager *)newLayoutManager NS_AVAILABLE(10_0, 9_0);
@@ -34,21 +34,21 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextContainer : NSObject <NSCoding, N
 /************************* Container shape properties *************************/
 
 // Default value: CGSizeZero  Defines the maximum size for the layout area returned from -lineFragmentRectForProposedRect:writingDirection:remainingRect:.  0.0 and less means no limitation.
-@property(NS_NONATOMIC_IOSONLY) CGSize size NS_AVAILABLE(10_11, 7_0);
+@property (NS_NONATOMIC_IOSONLY) CGSize size NS_AVAILABLE(10_11, 7_0);
 
 // Default value : empty array  An array of UIBezierPath representing the exclusion paths inside the receiver's bounding rect.
-@property(copy, NS_NONATOMIC_IOSONLY) NSArray<UIBezierPath *> *exclusionPaths NS_AVAILABLE(10_11, 7_0);
+@property (copy, NS_NONATOMIC_IOSONLY) NSArray<UIBezierPath *> *exclusionPaths NS_AVAILABLE(10_11, 7_0);
 
 // Default value: NSLineBreakByWordWrapping  The line break mode defines the behavior of the last line inside the text container.
-@property(NS_NONATOMIC_IOSONLY) NSLineBreakMode lineBreakMode NS_AVAILABLE(10_11, 7_0);
+@property (NS_NONATOMIC_IOSONLY) NSLineBreakMode lineBreakMode NS_AVAILABLE(10_11, 7_0);
 
 /************************* Layout constraint properties *************************/
 
 // Default value: 5.0  The layout padding at the beginning and end of the line fragment rects insetting the layout width available for the contents.  This value is utilized by NSLayoutManager for determining the layout width.
-@property(NS_NONATOMIC_IOSONLY) CGFloat lineFragmentPadding;
+@property (NS_NONATOMIC_IOSONLY) CGFloat lineFragmentPadding;
 
 // Default value: 0 (no limit)  The maximum number of lines that can be stored in the receiver.  This value is utilized by NSLayoutManager for determining the maximum number of lines associated with the text container.
-@property(NS_NONATOMIC_IOSONLY) NSUInteger maximumNumberOfLines NS_AVAILABLE(10_11, 7_0);
+@property (NS_NONATOMIC_IOSONLY) NSUInteger maximumNumberOfLines NS_AVAILABLE(10_11, 7_0);
 
 /**************************** Line fragments ****************************/
 
@@ -62,8 +62,8 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextContainer : NSObject <NSCoding, N
 /**************************** View synchronization ****************************/
 
 // Default value: NO  Define whether the text container view bounds changes can affect the text container size.
-@property(NS_NONATOMIC_IOSONLY) BOOL widthTracksTextView;
-@property(NS_NONATOMIC_IOSONLY) BOOL heightTracksTextView;
+@property (NS_NONATOMIC_IOSONLY) BOOL widthTracksTextView;
+@property (NS_NONATOMIC_IOSONLY) BOOL heightTracksTextView;
 
 @end
 

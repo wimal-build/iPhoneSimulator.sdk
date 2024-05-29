@@ -12,6 +12,8 @@
 #import <Metal/MTLPixelFormat.h>
 #import <Metal/MTLArgument.h>
 #import <Metal/MTLFunctionConstantValues.h>
+#import <Metal/MTLPipeline.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 @class MTLVertexDescriptor;
@@ -32,6 +34,10 @@ typedef NS_ENUM(NSUInteger, MTLBlendFactor) {
     MTLBlendFactorOneMinusBlendColor = 12,
     MTLBlendFactorBlendAlpha = 13,
     MTLBlendFactorOneMinusBlendAlpha = 14,
+    MTLBlendFactorSource1Color              NS_AVAILABLE(10_12, 10_11) = 15,
+    MTLBlendFactorOneMinusSource1Color      NS_AVAILABLE(10_12, 10_11) = 16,
+    MTLBlendFactorSource1Alpha              NS_AVAILABLE(10_12, 10_11) = 17,
+    MTLBlendFactorOneMinusSource1Alpha      NS_AVAILABLE(10_12, 10_11) = 18,
 } NS_ENUM_AVAILABLE(10_11, 8_0);
 
 typedef NS_ENUM(NSUInteger, MTLBlendOperation) {
@@ -56,7 +62,7 @@ typedef NS_ENUM(NSUInteger, MTLPrimitiveTopologyClass) {
     MTLPrimitiveTopologyClassPoint = 1,
     MTLPrimitiveTopologyClassLine = 2,
     MTLPrimitiveTopologyClassTriangle = 3,
-} NS_ENUM_AVAILABLE_MAC(10_11);
+} NS_ENUM_AVAILABLE(10_11, NA);
 
 typedef NS_ENUM(NSUInteger, MTLTessellationPartitionMode) {
     MTLTessellationPartitionModePow2 = 0,
@@ -124,7 +130,7 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 
 @property (nullable, readonly) NSArray <MTLArgument *> *vertexArguments;
 @property (nullable, readonly) NSArray <MTLArgument *> *fragmentArguments;
-
+@property (nullable, readonly) NSArray <MTLArgument *> *tileArguments NS_AVAILABLE_IOS(11_0);
 @end
 
 NS_CLASS_AVAILABLE(10_11, 8_0)
@@ -138,17 +144,20 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @property (nullable, copy, nonatomic) MTLVertexDescriptor *vertexDescriptor;
 
 /* Rasterization and visibility state */
-@property (readwrite, nonatomic) NSUInteger sampleCount;
+@property (readwrite, nonatomic) NSUInteger sampleCount; //DEPRECATED - aliases rasterSampleCount property
+@property (readwrite, nonatomic) NSUInteger rasterSampleCount;
 @property (readwrite, nonatomic, getter = isAlphaToCoverageEnabled) BOOL alphaToCoverageEnabled;
 @property (readwrite, nonatomic, getter = isAlphaToOneEnabled) BOOL alphaToOneEnabled;
 @property (readwrite, nonatomic, getter = isRasterizationEnabled) BOOL rasterizationEnabled;
+
+
 
 @property (readonly) MTLRenderPipelineColorAttachmentDescriptorArray *colorAttachments;
 
 @property (nonatomic) MTLPixelFormat depthAttachmentPixelFormat;
 @property (nonatomic) MTLPixelFormat stencilAttachmentPixelFormat;
 
-@property (readwrite, nonatomic) MTLPrimitiveTopologyClass inputPrimitiveTopology NS_AVAILABLE_MAC(10_11);
+@property (readwrite, nonatomic) MTLPrimitiveTopologyClass inputPrimitiveTopology NS_AVAILABLE(10_11, NA);
 
 @property (readwrite, nonatomic) MTLTessellationPartitionMode tessellationPartitionMode NS_AVAILABLE(10_12, 10_0);
 @property (readwrite, nonatomic) NSUInteger maxTessellationFactor NS_AVAILABLE(10_12, 10_0);
@@ -157,6 +166,9 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @property (readwrite, nonatomic) MTLTessellationControlPointIndexType tessellationControlPointIndexType NS_AVAILABLE(10_12, 10_0);
 @property (readwrite, nonatomic) MTLTessellationFactorStepFunction tessellationFactorStepFunction NS_AVAILABLE(10_12, 10_0);
 @property (readwrite, nonatomic) MTLWinding tessellationOutputWindingOrder NS_AVAILABLE(10_12, 10_0);
+
+@property (readonly) MTLPipelineBufferDescriptorArray *vertexBuffers NS_AVAILABLE(10_13, 11_0);
+@property (readonly) MTLPipelineBufferDescriptorArray *fragmentBuffers NS_AVAILABLE(10_13, 11_0);
 
 /*!
  @method reset
@@ -178,6 +190,32 @@ NS_AVAILABLE(10_11, 8_0)
 @property (nullable, readonly) NSString *label;
 @property (readonly) id <MTLDevice> device;
 
+/*!
+ @property maxTotalThreadsPerThreadgroup
+ @abstract The maximum total number of threads that can be in a single threadgroup.
+ */
+@property (readonly) NSUInteger maxTotalThreadsPerThreadgroup NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @property threadgroupSizeMatchesTileSize
+ @abstract Returns true when the pipeline state requires a threadgroup size equal to the tile size
+ */
+@property (readonly) BOOL threadgroupSizeMatchesTileSize NS_AVAILABLE_IOS(11_0);
+
+
+
+/*!
+ @property imageblockSampleLength
+ @brief Returns imageblock memory length used by a single sample when rendered using this pipeline.
+ */
+@property (readonly) NSUInteger imageblockSampleLength NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @method imageblockMemoryLengthForDimensions:sampleCount:
+ @brief Returns imageblock memory length for given image block dimensions. Dimensions must be valid tile dimensions.
+ */
+- (NSUInteger)imageblockMemoryLengthForDimensions:(MTLSize)imageblockDimensions NS_AVAILABLE_IOS(11_0);
+
 @end
 
 NS_CLASS_AVAILABLE(10_11, 8_0)
@@ -190,6 +228,62 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 - (void)setObject:(nullable MTLRenderPipelineColorAttachmentDescriptor *)attachment atIndexedSubscript:(NSUInteger)attachmentIndex;
 
 @end
+
+
+NS_CLASS_AVAILABLE_IOS(11_0)
+@interface MTLTileRenderPipelineColorAttachmentDescriptor : NSObject <NSCopying>
+
+/*! Pixel format.  Defaults to MTLPixelFormatInvalid */
+@property (nonatomic) MTLPixelFormat pixelFormat;
+
+@end
+
+NS_CLASS_AVAILABLE_IOS(11_0)
+@interface MTLTileRenderPipelineColorAttachmentDescriptorArray : NSObject
+
+/* Individual tile attachment state access */
+- (MTLTileRenderPipelineColorAttachmentDescriptor*)objectAtIndexedSubscript:(NSUInteger)attachmentIndex;
+
+/* This always uses 'copy' semantics.  It is safe to set the attachment state at any legal index to nil, which resets that attachment descriptor state to default vaules. */
+- (void)setObject:(MTLTileRenderPipelineColorAttachmentDescriptor*)attachment atIndexedSubscript:(NSUInteger)attachmentIndex;
+
+@end
+
+NS_CLASS_AVAILABLE_IOS(11_0)
+@interface MTLTileRenderPipelineDescriptor : NSObject <NSCopying>
+
+/*!
+ @property label:
+ @abstract The descriptor label.
+ */
+@property (copy, nonatomic) NSString *label;
+
+/*!
+ @property tileFunction:
+ @abstract  The kernel or fragment function that serves as the tile shader for this pipeline.
+ @discussion Both kernel-based and fragment-based tile pipelines dispatches will barrier against previous
+ draws and other dispatches. Kernel-based pipelines will wait until all prior access to the tile completes.
+ Fragment-based pipelines will only wait until all prior access to the fragment's location completes.
+ */
+@property (readwrite, nonatomic, strong) id <MTLFunction> tileFunction;
+
+/* Rasterization and visibility state */
+@property (readwrite, nonatomic) NSUInteger rasterSampleCount;
+@property (readonly) MTLTileRenderPipelineColorAttachmentDescriptorArray *colorAttachments;
+
+/*!
+ @property threadgroupSizeMatchesTileSize:
+ @abstract Whether all threadgroups associated with this pipeline will cover tiles entirely.
+ @discussion Metal can optimize code generation for this case.
+ */
+@property (readwrite, nonatomic) BOOL threadgroupSizeMatchesTileSize;
+
+@property (readonly) MTLPipelineBufferDescriptorArray *tileBuffers NS_AVAILABLE_IOS(11_0);
+
+- (void)reset;
+
+@end
+
 
 
 NS_ASSUME_NONNULL_END

@@ -6,9 +6,7 @@
 //
 
 #ifdef __cplusplus
-#define MESSAGES_EXTERN		extern "C" __attribute__((visibility ("default")))
+#define MESSAGES_EXTERN extern "C" __attribute__((visibility("default")))
 #else
-#define MESSAGES_EXTERN	        extern __attribute__((visibility ("default")))
+#define MESSAGES_EXTERN extern __attribute__((visibility("default")))
 #endif
-
-

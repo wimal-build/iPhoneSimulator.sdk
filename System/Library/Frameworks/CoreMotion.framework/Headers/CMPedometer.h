@@ -7,8 +7,8 @@
  */
 
 #import <Foundation/Foundation.h>
-
 #import <CoreMotion/CMAvailability.h>
+#import <CoreMotion/CMAuthorization.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -258,6 +258,14 @@ NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
  *      Determines whether the device supports pedometer events.
  */
 + (BOOL)isPedometerEventTrackingAvailable NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
+
+/*
+ *  authorizationStatus
+ *
+ *  Discussion:
+ *      Returns the current authorization status for pedometer.
+ */
++ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
 
 /*
  *  queryPedometerDataFromDate:toDate:withHandler:

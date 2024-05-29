@@ -2,7 +2,7 @@
 //  UIStackView.h
 //  UIKit
 //
-//  Copyright © 2015-2016 Apple Inc. All rights reserved.
+//  Copyright © 2015-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
@@ -79,6 +79,23 @@ typedef NS_ENUM(NSInteger, UIStackViewAlignment) {
     UIStackViewAlignmentBottom = UIStackViewAlignmentTrailing,
     UIStackViewAlignmentLastBaseline, // Valid for horizontal axis only
 } NS_ENUM_AVAILABLE_IOS(9_0);
+
+/* Used when setting custom spacing after an arranged subview to indicate reverting to 
+ the value specified by the spacing property. 
+ 
+ See -setCustomSpacing:afterView:, -customSpacingAfterView:
+ */
+static const CGFloat UIStackViewSpacingUseDefault API_AVAILABLE(ios(11.0),tvos(11.0)) = FLT_MAX;
+
+/* Used when setting custom spacing after an arranged subview to request the system 
+ spacing to the neighboring view. 
+ 
+ Also used as a token for the spacing property to request system spacing between
+ arranged subviews.
+ 
+ See spacing, -setCustomSpacing:afterView:, -customSpacingAfterView:
+ */
+static const CGFloat UIStackViewSpacingUseSystem API_AVAILABLE(ios(11.0),tvos(11.0)) = FLT_MIN;
 
 /* UIStackView is a non-rendering subclass of UIView, intended for managing layout of its subviews.
  You may not override +[UIStackView layerClass], and -drawLayer:inContext: will not be sent to
@@ -160,8 +177,38 @@ and a stack with a vertical axis is a column of arrangedSubviews.
  Used as a strict spacing for the Fill distributions, and
  as a minimum spacing for the EqualCentering and EqualSpacing
  distributions. Use negative values to allow overlap.
+ 
+ On iOS 11.0 or later, use UIStackViewSpacingUseSystem (Swift: UIStackView.spacingUseSystem) 
+ to get a system standard spacing value. Setting spacing to UIStackViewSpacingUseDefault 
+ (Swift: UIStackView.spacingUseDefault) will result in a spacing of 0.
+ 
+ System spacing between views depends on the views involved, and may vary across the 
+ stack view.
+ 
+ In vertical stack views with baselineRelativeArrangement == YES, the spacing between 
+ text-containing views (such as UILabels) will depend on the fonts involved.
  */
 @property(nonatomic) CGFloat spacing;
+
+/* Set and get custom spacing after a view. 
+ 
+ This custom spacing takes precedence over any other value that might otherwise be used 
+ for the space following the arranged subview.
+ 
+ Defaults to UIStackViewSpacingUseDefault (Swift: UIStackView.spacingUseDefault), where 
+ resolved value will match the spacing property.
+ 
+ You may also set the custom spacing to UIStackViewSpacingUseSystem (Swift: UIStackView.spacingUseSystem),
+ where the resolved value will match the system-defined value for the space to the neighboring view, 
+ independent of the spacing property.
+ 
+ Maintained when the arranged subview changes position in the stack view, but not after it
+ is removed from the arrangedSubviews list.
+ 
+ Ignored if arrangedSubview is not actually an arranged subview.
+ */
+- (void)setCustomSpacing:(CGFloat)spacing afterView:(UIView *)arrangedSubview API_AVAILABLE(ios(11.0),tvos(11.0));
+- (CGFloat)customSpacingAfterView:(UIView *)arrangedSubview API_AVAILABLE(ios(11.0),tvos(11.0));
 
 /* Baseline-to-baseline spacing in vertical stacks.
     The baselineRelativeArrangement property supports specifications of vertical 
@@ -178,5 +225,6 @@ and a stack with a vertical axis is a column of arrangedSubviews.
     Defaults to NO.
  */
 @property(nonatomic,getter=isLayoutMarginsRelativeArrangement) BOOL layoutMarginsRelativeArrangement;    
+
 @end
 NS_ASSUME_NONNULL_END

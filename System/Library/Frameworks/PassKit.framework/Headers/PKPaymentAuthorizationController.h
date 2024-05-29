@@ -16,23 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 @class PKPaymentMethod;
 @class PKShippingMethod;
 @class PKPaymentSummaryItem;
+@class PKPaymentAuthorizationResult;
 @class PKPaymentAuthorizationController;
+@class PKPaymentRequestPaymentMethodUpdate;
+@class PKPaymentRequestShippingMethodUpdate;
+@class PKPaymentRequestShippingContactUpdate;
 
 @protocol PKPaymentAuthorizationControllerDelegate <NSObject>
 
 @required
-
-// Sent to the delegate after the user has acted on the payment request.  The application
-// should inspect the payment to determine whether the payment request was authorized.
-//
-// If the application requested a shipping contact then the full contact is now part of the payment.
-//
-// The delegate must call completion with an appropriate authorization status, as may be determined
-// by submitting the payment credential to a processing gateway for payment authorization.
-- (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
-                   didAuthorizePayment:(PKPayment *)payment
-                            completion:(void (^)(PKPaymentAuthorizationStatus status))completion;
-
 
 // Sent to the delegate when payment authorization is finished.  This may occur when
 // the user cancels the request, or after the PKPaymentAuthorizationStatus parameter of the
@@ -43,6 +35,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
+// Sent to the delegate after the user has acted on the payment request.  The application
+// should inspect the payment to determine whether the payment request was authorized.
+//
+// If the application requested a shipping contact then the full contact is now part of the payment.
+//
+// The delegate must call completion with an appropriate authorization status, as may be determined
+// by submitting the payment credential to a processing gateway for payment authorization.
+- (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
+                   didAuthorizePayment:(PKPayment *)payment
+                               handler:(void (^)(PKPaymentAuthorizationResult *result))completion API_AVAILABLE(ios(11.0), watchos(4.0));
+
+- (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
+                   didAuthorizePayment:(PKPayment *)payment
+                            completion:(void (^)(PKPaymentAuthorizationStatus status))completion API_DEPRECATED("Use paymentAuthorizationController:didAuthorizePayment:handler: instead to provide more granular errors", ios(10.0, 11.0), watchos(3.0, 4.0));
 
 // Sent to the delegate before the payment is authorized, but after the user has authenticated using
 // the side button. Optional.
@@ -60,27 +66,43 @@ NS_ASSUME_NONNULL_BEGIN
 // until it has invoked the completion block.
 - (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
                didSelectShippingMethod:(PKShippingMethod *)shippingMethod
-                            completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKPaymentSummaryItem *> *summaryItems))completion;
+                               handler:(void (^)(PKPaymentRequestShippingMethodUpdate *requestUpdate))completion API_AVAILABLE(ios(11.0), watchos(4.0));
 
 - (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
               didSelectShippingContact:(PKContact *)contact
-                            completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods,
-                                                 NSArray<PKPaymentSummaryItem *> *summaryItems))completion;
+                               handler:(void (^)(PKPaymentRequestShippingContactUpdate *requestUpdate))completion API_AVAILABLE(ios(11.0), watchos(4.0));
+
 
 // Sent when the user has selected a new payment card.  Use this delegate callback if you need to
 // update the summary items in response to the card type changing (for example, applying credit card surcharges)
 //
 // The delegate will receive no further callbacks except paymentAuthorizationControllerDidFinish:
 // until it has invoked the completion block.
+
 - (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
                 didSelectPaymentMethod:(PKPaymentMethod *)paymentMethod
-                            completion:(void (^)(NSArray<PKPaymentSummaryItem *> *summaryItems))completion;
+                               handler:(void (^)(PKPaymentRequestPaymentMethodUpdate *requestUpdate))completion API_AVAILABLE(ios(11.0), watchos(4.0));
+
+// These delegate methods are deprecated and have been replaced with new callbacks that allow more granular
+// and comprehensive errors to be surfaced to users
+- (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
+               didSelectShippingMethod:(PKShippingMethod *)shippingMethod
+                            completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationController:didSelectShippingMethod:handler: instead to provide more granular errors", ios(10.0, 11.0), watchos(3.0, 4.0));
+
+- (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
+              didSelectShippingContact:(PKContact *)contact
+                            completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods,
+                                                 NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationController:didSelectShippingContact:handler: instead to provide more granular errors", ios(10.0, 11.0), watchos(3.0, 4.0));
+
+- (void)paymentAuthorizationController:(PKPaymentAuthorizationController *)controller
+                didSelectPaymentMethod:(PKPaymentMethod *)paymentMethod
+                            completion:(void (^)(NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationController:didSelectPaymentMethod:handler: instead to provide more granular errors", ios(10.0, 11.0), watchos(3.0, 4.0));
 
 @end
 
 // PKPaymentAuthorizationController prompts the user to authorize a PKPaymentRequest, funding the
 // payment amount with a valid payment card.
-__WATCHOS_AVAILABLE(3.0) __IOS_AVAILABLE(10.0)
+API_AVAILABLE(ios(10.0), watchos(3.0))
 @interface PKPaymentAuthorizationController : NSObject
 
 // Determine whether this device can process payment requests.

@@ -49,13 +49,13 @@ typedef void *CVEAGLContext;
 // By default, textures will age out after one second.  Setting a maximum
 // texture age of zero will disable the age-out mechanism completely.
 // CVOpenGLESTextureCacheFlush() can be used to force eviction in either case.
-
-CV_EXPORT const CFStringRef CV_NONNULL kCVOpenGLESTextureCacheMaximumTextureAgeKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+	
+CV_EXPORT const CFStringRef CV_NONNULL kCVOpenGLESTextureCacheMaximumTextureAgeKey API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 //
 // textureAttributes - reserved for future use
-
-CV_EXPORT CFTypeID CVOpenGLESTextureCacheGetTypeID(void) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+	
+CV_EXPORT CFTypeID CVOpenGLESTextureCacheGetTypeID(void) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureCacheCreate
@@ -72,7 +72,7 @@ CV_EXPORT CVReturn CVOpenGLESTextureCacheCreate(
     CFDictionaryRef CV_NULLABLE cacheAttributes,
     CVEAGLContext CV_NONNULL eaglContext,
     CFDictionaryRef CV_NULLABLE textureAttributes,
-    CV_RETURNS_RETAINED_PARAMETER CVOpenGLESTextureCacheRef CV_NULLABLE * CV_NONNULL cacheOut) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+    CV_RETURNS_RETAINED_PARAMETER CVOpenGLESTextureCacheRef CV_NULLABLE * CV_NONNULL cacheOut) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureCacheCreateTextureFromImage
@@ -126,7 +126,7 @@ CV_EXPORT CVReturn CVOpenGLESTextureCacheCreateTextureFromImage(
     GLenum format,
     GLenum type,
     size_t planeIndex,
-    CV_RETURNS_RETAINED_PARAMETER CVOpenGLESTextureRef CV_NULLABLE * CV_NONNULL textureOut ) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+    CV_RETURNS_RETAINED_PARAMETER CVOpenGLESTextureRef CV_NULLABLE * CV_NONNULL textureOut ) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 /*!
     @function   CVOpenGLESTextureCacheFlush
@@ -137,7 +137,7 @@ CV_EXPORT CVReturn CVOpenGLESTextureCacheCreateTextureFromImage(
     @param      textureCache The texture cache object to flush
     @param      options Currently unused, set to 0.
 */
-CV_EXPORT void CVOpenGLESTextureCacheFlush( CVOpenGLESTextureCacheRef CV_NONNULL textureCache, CVOptionFlags options ) __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+CV_EXPORT void CVOpenGLESTextureCacheFlush( CVOpenGLESTextureCacheRef CV_NONNULL textureCache, CVOptionFlags options ) API_AVAILABLE(ios(5.0), tvos(9.0)) API_UNAVAILABLE(macosx) __WATCHOS_PROHIBITED;
 
 #if defined(__cplusplus)
 }

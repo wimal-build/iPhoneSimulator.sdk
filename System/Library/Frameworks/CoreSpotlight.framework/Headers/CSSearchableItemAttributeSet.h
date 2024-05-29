@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CS_CLASS_AVAILABLE(NA, 9_0)
+CS_CLASS_AVAILABLE(10_13, 9_0)
 CS_TVOS_UNAVAILABLE
 // CSSearchableItemAttribute encapsulates a set of properties of an CSSearchableItem.
 // CSSearchableItemAttribute set should only be mutated from one thread at a time. Concurrent access to properties has undefined behavior.
@@ -35,7 +35,7 @@ CS_TVOS_UNAVAILABLE
 @end
 
 //CSCustomAttributeKey allows you to specify a custom attribute as well as various other properties of that attribute.
-CS_CLASS_AVAILABLE(NA, 9_0)
+CS_CLASS_AVAILABLE(10_13, 9_0)
 CS_TVOS_UNAVAILABLE
 @interface CSCustomAttributeKey : NSObject <NSCopying,NSSecureCoding>
 
@@ -81,7 +81,7 @@ CS_TVOS_UNAVAILABLE
 //Attributes to be indexed for a given NSUserActivity
 @interface NSUserActivity (CSSearchableItemAttributeSet)
 
-@property (nullable, copy) CSSearchableItemAttributeSet *contentAttributeSet CS_AVAILABLE(NA, 9_0) CS_TVOS_UNAVAILABLE;
+@property (nullable, copy) CSSearchableItemAttributeSet *contentAttributeSet CS_AVAILABLE(10_13, 9_0) CS_TVOS_UNAVAILABLE;
 
 @end
 

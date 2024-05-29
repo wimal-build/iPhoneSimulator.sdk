@@ -2,7 +2,7 @@
 //  UICollectionViewCell.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
@@ -15,6 +15,19 @@ NS_ASSUME_NONNULL_BEGIN
 @class UICollectionView;
 @class UICollectionViewLayoutAttributes;
 @class UILongPressGestureRecognizer;
+
+typedef NS_ENUM(NSInteger, UICollectionViewCellDragState) {
+    UICollectionViewCellDragStateNone,
+    /* The cell is in the "lifting" state.
+     */
+    UICollectionViewCellDragStateLifting,
+    
+    /* A cell in the "dragging" state is left behind with a
+     * "ghosted" appearance to denote where the drag
+     * started from.
+     */
+    UICollectionViewCellDragStateDragging
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionReusableView : UIView
 
@@ -49,6 +62,13 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewCell : UICollectionReusab
 // The collection view may call the setters inside an animation block.
 @property (nonatomic, getter=isSelected) BOOL selected;
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
+
+// Override this method to modify the visual appearance for a particular
+// dragState.
+//
+// Call super if you want to add to the existing default implementation.
+//
+- (void)dragStateDidChange:(UICollectionViewCellDragState)dragState API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 // The background view is a subview behind all other views.
 // If selectedBackgroundView is different than backgroundView, it will be placed above the background view and animated in on selection.

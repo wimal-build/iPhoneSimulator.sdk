@@ -2,8 +2,10 @@
 //  INUIHostedViewSiriProviding.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016 Apple Inc. All rights reserved.
 //
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol INUIHostedViewSiriProviding <NSObject>
 
@@ -14,3 +16,5 @@
 @property (nonatomic, assign, readonly) BOOL displaysPaymentTransaction;
 
 @end
+
+NS_ASSUME_NONNULL_END

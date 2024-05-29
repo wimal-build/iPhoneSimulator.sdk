@@ -2,15 +2,15 @@
 //  INPayBillIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
 
-@class INPaymentAccount;
 @class INBillDetails;
-@class INPaymentAmount;
 @class INDateComponentsRange;
+@class INPaymentAccount;
+@class INPaymentAmount;
 
 typedef NS_ENUM(NSInteger, INPayBillIntentResponseCode) {
     INPayBillIntentResponseCodeUnspecified = 0,
@@ -47,6 +47,7 @@ API_UNAVAILABLE(macosx)
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INDateComponentsRange *transactionScheduledDate;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *transactionNote;
+
 @end
 
 NS_ASSUME_NONNULL_END

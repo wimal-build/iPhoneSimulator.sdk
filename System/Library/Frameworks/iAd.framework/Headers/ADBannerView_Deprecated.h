@@ -7,6 +7,8 @@
 
 #import <iAd/ADBannerView.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  * @category ADBannerView (Deprecated)
  *
@@ -26,9 +28,9 @@
  */
 @interface ADBannerView (Deprecated)
 
-@property (nonatomic, copy) NSSet *requiredContentSizeIdentifiers NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nullable, nonatomic, copy) NSSet *requiredContentSizeIdentifiers NS_DEPRECATED_IOS(4_0, 6_0);
 
-@property (nonatomic, copy) NSString *currentContentSizeIdentifier NS_DEPRECATED_IOS(4_0, 6_0);
+@property (nullable, nonatomic, copy) NSString *currentContentSizeIdentifier NS_DEPRECATED_IOS(4_0, 6_0);
 
 + (CGSize)sizeFromBannerContentSizeIdentifier:(NSString *)contentSizeIdentifier NS_DEPRECATED_IOS(4_0, 6_0);
 
@@ -38,3 +40,5 @@ extern NSString * const ADBannerContentSizeIdentifier320x50 NS_DEPRECATED_IOS(4_
 extern NSString * const ADBannerContentSizeIdentifier480x32 NS_DEPRECATED_IOS(4_0, 4_2);
 extern NSString * const ADBannerContentSizeIdentifierPortrait NS_DEPRECATED_IOS(4_2, 6_0);
 extern NSString * const ADBannerContentSizeIdentifierLandscape NS_DEPRECATED_IOS(4_2, 6_0);
+
+NS_ASSUME_NONNULL_END

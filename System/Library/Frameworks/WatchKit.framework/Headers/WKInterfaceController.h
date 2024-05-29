@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class WKInterfaceTable;
 @class WKInterfacePicker;
 @class WKCrownSequencer;
+@class WKInterfaceObject;
 @class UIImage;
 @class UILocalNotification;
 @class PKPass;
@@ -56,6 +57,17 @@ typedef NS_ENUM(NSInteger, WKAlertControllerStyle) {
     WKAlertControllerStyleActionSheet,
 } WK_AVAILABLE_WATCHOS_ONLY(2.0);
 
+typedef NS_ENUM(NSInteger, WKPageOrientation) {
+    WKPageOrientationHorizontal,
+    WKPageOrientationVertical,
+} WK_AVAILABLE_WATCHOS_ONLY(4.0);
+
+typedef NS_ENUM(NSInteger, WKInterfaceScrollPosition) {
+    WKInterfaceScrollPositionTop,
+    WKInterfaceScrollPositionCenteredVertically,
+    WKInterfaceScrollPositionBottom
+} WK_AVAILABLE_WATCHOS_ONLY(4.0);
+
 
 typedef NS_ENUM(NSInteger, WKVideoGravity)  {
 	WKVideoGravityResizeAspect,
@@ -93,15 +105,20 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex;  // row selection if controller has WKInterfaceTable property
 - (void)handleActionWithIdentifier:(nullable NSString *)identifier forNotification:(UNNotification *)notification WK_AVAILABLE_IOS_ONLY(10.0); // when the app is launched from a notification. If launched from app icon in notification UI, identifier will be empty
-- (void)handleUserActivity:(nullable NSDictionary *)userInfo; // called on root controller(s) with user info
+- (void)handleUserActivity:(nullable NSDictionary *)userInfo WK_DEPRECATED_WATCHOS(2.0, 4.0, "use WKExtensionDelegate's handleUserActivity:"); // called on root controller(s) with user info
 
 - (void)setTitle:(nullable NSString *)title;        // title of controller. displayed when controller active
 
-- (void)pushControllerWithName:(NSString *)name context:(nullable id)context;  // context passed to child controller via initWithContext:
+- (void)pushControllerWithName:(NSString *)name context:(nullable id)context;  // context passed to child controller via awakeWithContext:
 - (void)popController;
 - (void)popToRootController;
+- (void)scrollToObject:(WKInterfaceObject *)object atScrollPosition:(WKInterfaceScrollPosition)scrollPosition animated:(BOOL)animated WK_AVAILABLE_WATCHOS_ONLY(4.0);
+- (void)interfaceDidScrollToTop WK_AVAILABLE_WATCHOS_ONLY(4.0); // Called when user tapped on status bar for scroll-to-top gesture and scrolling animation finished. May be called immediately if already at top
+- (void)interfaceOffsetDidScrollToTop WK_AVAILABLE_WATCHOS_ONLY(4.0); // called when user scrolled to the top of the interface controller and scrolling animation finished
+- (void)interfaceOffsetDidScrollToBottom WK_AVAILABLE_WATCHOS_ONLY(4.0); // called when user scrolled to the bottom of the interface controller and scrolling animation finished
 
-+ (void)reloadRootControllersWithNames:(NSArray<NSString*> *)names contexts:(nullable NSArray *)contexts;
++ (void)reloadRootControllersWithNames:(NSArray<NSString*> *)names contexts:(nullable NSArray *)contexts WK_DEPRECATED_WATCHOS(2.0, 4.0, "use reloadRootPageControllersWithNames:contexts:orientation:pageIndex:");
++ (void)reloadRootPageControllersWithNames:(NSArray<NSString*> *)names contexts:(nullable NSArray *)contexts orientation:(WKPageOrientation)orientation pageIndex:(NSInteger)pageIndex WK_AVAILABLE_WATCHOS_ONLY(4.0);
 - (void)becomeCurrentPage;
 
 - (void)presentControllerWithName:(NSString *)name context:(nullable id)context; // modal presentation
@@ -109,7 +126,7 @@ WK_CLASS_AVAILABLE_IOS(8_2)
 - (void)dismissController;
 
 - (void)presentTextInputControllerWithSuggestions:(nullable NSArray<NSString*> *)suggestions allowedInputMode:(WKTextInputMode)inputMode completion:(void(^)(NSArray * __nullable results))completion; // results is nil if cancelled
-- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * __nullable (^ __nullable)(NSString *inputLanguage))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode completion:(void(^)(NSArray * __nullable results))completion;
+- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * __nullable (^ __nullable)(NSString *inputLanguage))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode completion:(void(^)(NSArray * __nullable results))completion; // will never go straight to dictation because allows for switching input language
 - (void)dismissTextInputController;
 
 WKI_EXTERN NSString *const UIUserNotificationActionResponseTypedTextKey WK_AVAILABLE_WATCHOS_ONLY(2.0);
@@ -153,8 +170,8 @@ WKI_EXTERN NSString *const WKAudioRecorderControllerOptionsMaximumDurationKey WK
 
 + (BOOL)openParentApplication:(NSDictionary *)userInfo reply:(nullable void(^)(NSDictionary * replyInfo, NSError * __nullable error)) reply WK_AVAILABLE_IOS_ONLY(8.2);    // launches containing iOS application on the phone. userInfo must be non-nil
 
-- (void)beginGlanceUpdates WK_AVAILABLE_WATCHOS_ONLY(2.0);
-- (void)endGlanceUpdates WK_AVAILABLE_WATCHOS_ONLY(2.0);
+- (void)beginGlanceUpdates WK_DEPRECATED_WATCHOS(2.0, 4.0, "Glances are no longer supported");
+- (void)endGlanceUpdates WK_DEPRECATED_WATCHOS(2.0, 4.0, "Glances are no longer supported");
 
 // deprecated
 - (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification WK_DEPRECATED_WATCHOS_IOS(2.0, 3.0, 8.2, 10.0, "use UNUserNotificationCenterDelegate");

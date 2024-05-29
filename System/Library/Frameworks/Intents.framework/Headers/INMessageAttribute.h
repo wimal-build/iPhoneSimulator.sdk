@@ -2,7 +2,7 @@
 //  INMessageAttribute.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #ifndef INMessageAttribute_h
@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, INMessageAttribute) {
     INMessageAttributeUnread,
     INMessageAttributeFlagged,
     INMessageAttributeUnflagged,
-} API_AVAILABLE(ios(10.0), watchos(3.2));
+    INMessageAttributePlayed API_AVAILABLE(ios(11.0), watchos(4.0), macosx(10.13)),
+} API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12));
 
 #endif // INMessageAttribute_h

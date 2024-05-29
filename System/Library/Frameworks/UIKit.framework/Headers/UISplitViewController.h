@@ -2,7 +2,7 @@
 //  UISplitViewController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -17,6 +17,11 @@ typedef NS_ENUM(NSInteger, UISplitViewControllerDisplayMode) {
     UISplitViewControllerDisplayModeAllVisible,
     UISplitViewControllerDisplayModePrimaryOverlay,
 } NS_ENUM_AVAILABLE_IOS(8_0);
+
+typedef NS_ENUM(NSInteger, UISplitViewControllerPrimaryEdge) {
+    UISplitViewControllerPrimaryEdgeLeading,
+    UISplitViewControllerPrimaryEdgeTrailing,
+} API_AVAILABLE(ios(11.0), tvos(11.0));
 
 // This constant can be used with any sizing-related `UISplitViewController` properties to get the default system behavior.
 UIKIT_EXTERN CGFloat const UISplitViewControllerAutomaticDimension NS_AVAILABLE_IOS(8_0);
@@ -56,6 +61,9 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 
 // The current primary view controller's column width.
 @property(nonatomic,readonly) CGFloat primaryColumnWidth NS_AVAILABLE_IOS(8_0);
+
+// The edge of the UISplitViewController where the primary view controller should be positioned
+@property(nonatomic) UISplitViewControllerPrimaryEdge primaryEdge API_AVAILABLE(ios(11.0), tvos(11.0)); // default: UISplitViewControllerPrimaryEdgeLeading
 
 // In a horizontally-regular environment this will set either the master or detail view controller depending on the original target. In a compact environment this defaults to a full screen presentation. In general the master or detail view controller will have implemented showViewController:sender: so this method would not be invoked.
 - (void)showViewController:(UIViewController *)vc sender:(nullable id)sender NS_AVAILABLE_IOS(8_0);

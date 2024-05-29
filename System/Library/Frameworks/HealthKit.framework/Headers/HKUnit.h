@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
+HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKUnit : NSObject <NSSecureCoding, NSCopying>
 
 /// Returns a unique string representation for the unit that could be used with +unitFromString:
@@ -78,6 +78,12 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 // degC (degrees Celsius)    = 1.0 K - 273.15
 // degF (degrees Fahrenheit) = 1.8 K - 459.67
 //
+// [Conductance]
+// S    (siemens)
+//
+// [Pharmacology]
+// IU   (international unit)
+//
 // [Scalar]
 // count = 1
 // %     = 1/100
@@ -118,7 +124,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
     HKMetricPrefixMega,     //10^6
     HKMetricPrefixGiga,     //10^9
     HKMetricPrefixTera      //10^12
-} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /* Mass Units */
 @interface HKUnit (Mass)
@@ -137,7 +143,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)meterUnit;  // m
 + (instancetype)inchUnit;   // in
 + (instancetype)footUnit;   // ft
-+ (instancetype)yardUnit HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);   // yd
++ (instancetype)yardUnit API_AVAILABLE(ios(9.0), watchos(2.0));   // yd
 + (instancetype)mileUnit;   // mi
 @end
 
@@ -149,8 +155,8 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)fluidOunceImperialUnit; // fl_oz_imp
 + (instancetype)pintUSUnit;             // pt_us
 + (instancetype)pintImperialUnit;       // pt_imp
-+ (instancetype)cupUSUnit HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);       // cup_us
-+ (instancetype)cupImperialUnit HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0); // cup_imp
++ (instancetype)cupUSUnit API_AVAILABLE(ios(9.0), watchos(2.0));       // cup_us
++ (instancetype)cupImperialUnit API_AVAILABLE(ios(9.0), watchos(2.0)); // cup_imp
 @end
 
 /* Pressure Units */
@@ -175,8 +181,10 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 @interface HKUnit (Energy)
 + (instancetype)jouleUnitWithMetricPrefix:(HKMetricPrefix)prefix;      // J
 + (instancetype)jouleUnit;          // J
-+ (instancetype)calorieUnit;        // cal
-+ (instancetype)kilocalorieUnit;    // kcal
++ (instancetype)kilocalorieUnit;    // 1 kcal = 4184.0 J
++ (instancetype)smallCalorieUnit API_AVAILABLE(ios(11.0), watchos(4.0));    // 1 cal = 4.1840 J
++ (instancetype)largeCalorieUnit API_AVAILABLE(ios(11.0), watchos(4.0));    // 1 Cal = 4184.0 J
++ (instancetype)calorieUnit API_DEPRECATED("Use smallCalorieUnit or largeCalorieUnit, depending on which you mean", ios(8.0, 11.0), watchos(2.0, 4.0));
 @end
 
 /* Temperature Units */
@@ -190,6 +198,11 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 @interface HKUnit(Conductance)
 + (instancetype)siemenUnitWithMetricPrefix:(HKMetricPrefix)prefix;     // S
 + (instancetype)siemenUnit; // S
+@end
+
+/* Pharmacology Units */
+@interface HKUnit (Pharmacology)
++ (instancetype)internationalUnit NS_SWIFT_NAME(internationalUnit()) API_AVAILABLE(ios(11.0), watchos(4.0));  // IU
 @end
 
 /* Scalar Units */

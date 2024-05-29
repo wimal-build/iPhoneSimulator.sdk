@@ -2,7 +2,7 @@
 //  UIImage.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,6 +13,7 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIColor.h>
 #import <UIKit/UIGeometry.h>
+#import <UIKit/NSItemProvider+UIKitAdditions.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -146,6 +147,15 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding>
 - (UIImage *)imageWithHorizontallyFlippedOrientation NS_AVAILABLE_IOS(10_0);
 
 @end
+
+#if TARGET_OS_IOS
+@interface UIImage (NSItemProvider) <NSItemProviderReading, NSItemProviderWriting, UIItemProviderPresentationSizeProviding>
+#else
+@interface UIImage (NSItemProvider) <NSItemProviderReading, NSItemProviderWriting>
+#endif
+
+@end
+
 
 @interface UIImage(UIImageDeprecated)
 

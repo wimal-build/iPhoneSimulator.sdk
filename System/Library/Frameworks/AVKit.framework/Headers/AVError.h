@@ -15,16 +15,16 @@
 	@constant	AVKitErrorDomain
 	@abstract	Domain for errors from AVKit APIs.
  */
-AVKIT_EXTERN NSString * const AVKitErrorDomain NS_AVAILABLE_IOS(9_0);
+AVKIT_EXTERN NSString * const AVKitErrorDomain API_AVAILABLE(ios(9.0));
 
 
 /*!
 	@constant	AVKitErrorUnknown
-	@abstract	Unknown error.
+				Unknown error.
 	@constant	AVKitErrorPictureInPictureStartFailed
-	@abstract	Failed to start Picture in Picture.
+				Failed to start Picture in Picture.
  */
 typedef NS_ENUM(NSInteger, AVKitError) {
 	AVKitErrorUnknown						= -1000,
 	AVKitErrorPictureInPictureStartFailed	= -1001
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} API_AVAILABLE(ios(9.0));

@@ -1,6 +1,6 @@
 framework module VideoSubscriberAccount {
-  umbrella header "VideoSubscriberAccount.h"
+    umbrella header "VideoSubscriberAccount.h"
 
-  export *
-  module * { export * }
+    export *
+    module * { export * }
 }

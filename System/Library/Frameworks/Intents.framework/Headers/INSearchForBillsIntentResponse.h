@@ -2,7 +2,7 @@
 //  INSearchForBillsIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
@@ -36,6 +36,7 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INSearchForBillsIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSArray<INBillDetails *> *bills;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class CBPeripheral, CBCentral;
 @class CBService, CBCharacteristic, CBDescriptor;
 
-NS_CLASS_AVAILABLE(N_A, 8_0)
+NS_CLASS_AVAILABLE(10_13, 8_0)
 CB_EXTERN_CLASS @interface CBAttribute : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

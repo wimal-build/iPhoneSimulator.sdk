@@ -2,15 +2,20 @@
 //  UITableView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/NSIndexPath+UIKitAdditions.h>
 #import <UIKit/UIScrollView.h>
 #import <UIKit/UISwipeGestureRecognizer.h>
+#import <UIKit/UISwipeActionsConfiguration.h>
 #import <UIKit/UITableViewCell.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UIDataSourceTranslating.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
+#import <UIKit/UIDropInteraction.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -45,14 +50,11 @@ UIKIT_EXTERN NSString *const UITableViewIndexSearch NS_AVAILABLE_IOS(3_0) __TVOS
 // tableView:titleForHeaderInSection: or tableView:titleForFooterInSection: if the title is not nil.
 UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
-@class UITableView;
-@class UINib;
-@protocol UITableViewDataSource;
-@protocol UITableViewDataSourcePrefetching;
-@class UILongPressGestureRecognizer;
-@class UITableViewHeaderFooterView;
-@class UIRefreshControl;
-@class UIVisualEffect;
+@class UITableView, UINib, UITableViewHeaderFooterView, UIVisualEffect;
+@protocol UITableViewDataSource, UITableViewDataSourcePrefetching;
+@class UIDragItem, UIDragPreviewParameters, UIDragPreviewTarget, UITableViewDropProposal, UITableViewPlaceholder, UITableViewDropPlaceholder;
+@protocol UISpringLoadedInteractionContext, UIDragSession, UIDropSession;
+@protocol UITableViewDragDelegate, UITableViewDropDelegate, UITableViewDropCoordinator, UITableViewDropItem, UITableViewDropPlaceholderContext;
 
 typedef NS_ENUM(NSInteger, UITableViewRowActionStyle) {
     UITableViewRowActionStyleDefault = 0,
@@ -60,7 +62,9 @@ typedef NS_ENUM(NSInteger, UITableViewRowActionStyle) {
     UITableViewRowActionStyleNormal
 } NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UITableViewRowAction : NSObject <NSCopying>
+// Use UIContextualAction instead of this class, which will be deprecated in a future release.
+NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
+@interface UITableViewRowAction : NSObject <NSCopying>
 
 + (instancetype)rowActionWithStyle:(UITableViewRowActionStyle)style title:(nullable NSString *)title handler:(void (^)(UITableViewRowAction *action, NSIndexPath *indexPath))handler;
 
@@ -136,7 +140,16 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UITableViewFocusUpdateContext : UIFocusUp
 // Allows customization of the editingStyle for a particular cell located at 'indexPath'. If not implemented, all editable cells will have UITableViewCellEditingStyleDelete set for them when the table has editing property set to YES.
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (nullable NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
-- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED; // supercedes -tableView:titleForDeleteConfirmationButtonForRowAtIndexPath: if return value is non-nil
+
+// Use -tableView:trailingSwipeActionsConfigurationForRowAtIndexPath: instead of this method, which will be deprecated in a future release.
+// This method supersedes -tableView:titleForDeleteConfirmationButtonForRowAtIndexPath: if return value is non-nil
+- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+
+// Swipe actions
+// These methods supersede -editActionsForRowAtIndexPath: if implemented
+// return nil to get the default swipe actions
+- (nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos);
+- (nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos);
 
 // Controls whether the background is indented while editing.  If not implemented, the default is YES.  This is unrelated to the indentation level below.  This method only applies to grouped style table views.
 - (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -167,36 +180,52 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UITableViewFocusUpdateContext : UIFocusUp
 - (void)tableView:(UITableView *)tableView didUpdateFocusInContext:(UITableViewFocusUpdateContext *)context withAnimationCoordinator:(UIFocusAnimationCoordinator *)coordinator NS_AVAILABLE_IOS(9_0);
 - (nullable NSIndexPath *)indexPathForPreferredFocusedViewInTableView:(UITableView *)tableView NS_AVAILABLE_IOS(9_0);
 
+// Spring Loading
+
+// Allows opting-out of spring loading for an particular row.
+// If you want the interaction effect on a different subview of the spring loaded cell, modify the context.targetView property. The default is the cell.
+// If this method is not implemented, the default is YES except when the row is part of a drag session.
+- (BOOL)tableView:(UITableView *)tableView shouldSpringLoadRowAtIndexPath:(NSIndexPath *)indexPath withContext:(id<UISpringLoadedInteractionContext>)context API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
 @end
 
 UIKIT_EXTERN NSNotificationName const UITableViewSelectionDidChangeNotification;
 
+typedef NS_ENUM(NSInteger, UITableViewSeparatorInsetReference) {
+    // The value set to the separatorInset property is interpreted as an offset from the edges of the cell.
+    UITableViewSeparatorInsetFromCellEdges,
+    
+    // The value set to the separatorInset property is interpreted as an offset from the automatic separator insets.
+    UITableViewSeparatorInsetFromAutomaticInsets
+} API_AVAILABLE(ios(11.0), tvos(11.0));
+
 
 //_______________________________________________________________________________________________________________
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding, UIDataSourceTranslating>
 
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style NS_DESIGNATED_INITIALIZER; // must specify style at creation. -initWithFrame: calls this with UITableViewStylePlain
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, readonly) UITableViewStyle style;
+
 @property (nonatomic, weak, nullable) id <UITableViewDataSource> dataSource;
 @property (nonatomic, weak, nullable) id <UITableViewDelegate> delegate;
-@property (nonatomic, weak) id<UITableViewDataSourcePrefetching> prefetchDataSource NS_AVAILABLE_IOS(10_0);
-@property (nonatomic) CGFloat rowHeight;             // will return the default value if unset
-@property (nonatomic) CGFloat sectionHeaderHeight;   // will return the default value if unset
-@property (nonatomic) CGFloat sectionFooterHeight;   // will return the default value if unset
-@property (nonatomic) CGFloat estimatedRowHeight NS_AVAILABLE_IOS(7_0); // default is 0, which means there is no estimate
-@property (nonatomic) CGFloat estimatedSectionHeaderHeight NS_AVAILABLE_IOS(7_0); // default is 0, which means there is no estimate
-@property (nonatomic) CGFloat estimatedSectionFooterHeight NS_AVAILABLE_IOS(7_0); // default is 0, which means there is no estimate
-@property (nonatomic) UIEdgeInsets separatorInset NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR; // allows customization of the frame of cell separators
+@property (nonatomic, weak, nullable) id <UITableViewDataSourcePrefetching> prefetchDataSource NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, weak, nullable) id <UITableViewDragDelegate> dragDelegate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+@property (nonatomic, weak, nullable) id <UITableViewDropDelegate> dropDelegate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+@property (nonatomic) CGFloat rowHeight;             // default is UITableViewAutomaticDimension
+@property (nonatomic) CGFloat sectionHeaderHeight;   // default is UITableViewAutomaticDimension
+@property (nonatomic) CGFloat sectionFooterHeight;   // default is UITableViewAutomaticDimension
+@property (nonatomic) CGFloat estimatedRowHeight NS_AVAILABLE_IOS(7_0); // default is UITableViewAutomaticDimension, set to 0 to disable
+@property (nonatomic) CGFloat estimatedSectionHeaderHeight NS_AVAILABLE_IOS(7_0); // default is UITableViewAutomaticDimension, set to 0 to disable
+@property (nonatomic) CGFloat estimatedSectionFooterHeight NS_AVAILABLE_IOS(7_0); // default is UITableViewAutomaticDimension, set to 0 to disable
+
+@property (nonatomic) UIEdgeInsets separatorInset NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR; // allows customization of the frame of cell separators; see also the separatorInsetReference property. Use UITableViewAutomaticDimension for the automatic inset for that edge.
+@property (nonatomic) UITableViewSeparatorInsetReference separatorInsetReference API_AVAILABLE(ios(11.0), tvos(11.0)); // Changes how custom separatorInset values are interpreted. The default value is UITableViewSeparatorInsetFromCellEdges
 
 @property (nonatomic, strong, nullable) UIView *backgroundView NS_AVAILABLE_IOS(3_2); // the background view will be automatically resized to track the size of the table view.  this will be placed as a subview of the table view behind all cells and headers/footers.  default may be non-nil for some devices.
-
-// Data
-
-- (void)reloadData; // reloads everything from scratch. redisplays visible rows. because we only keep info about visible rows, this is cheap. will adjust offset if table shrinks
-- (void)reloadSectionIndexTitles NS_AVAILABLE_IOS(3_0);   // reloads the index bar.
 
 // Info
 
@@ -222,10 +251,14 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 - (void)scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
 - (void)scrollToNearestSelectedRowAtScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
 
-// Row insertion/deletion/reloading.
+// Reloading and Updating
 
-- (void)beginUpdates;   // allow multiple insert/delete of rows and sections to be animated simultaneously. Nestable
-- (void)endUpdates;     // only call insert/delete/reload calls or change the editing state inside an update block.  otherwise things like row count, etc. may be invalid.
+// Allows multiple insert/delete/reload/move calls to be animated simultaneously. Nestable.
+- (void)performBatchUpdates:(void (NS_NOESCAPE ^ _Nullable)(void))updates completion:(void (^ _Nullable)(BOOL finished))completion API_AVAILABLE(ios(11.0), tvos(11.0));
+
+// Use -performBatchUpdates:completion: instead of these methods, which will be deprecated in a future release.
+- (void)beginUpdates;
+- (void)endUpdates;
 
 - (void)insertSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
 - (void)deleteSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation;
@@ -236,6 +269,15 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 - (void)deleteRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
 - (void)reloadRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation NS_AVAILABLE_IOS(3_0);
 - (void)moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath NS_AVAILABLE_IOS(5_0);
+
+// Returns YES if the table view is in the middle of reordering, is displaying a drop target gap, or has drop placeholders. If possible, avoid calling -reloadData while there are uncommitted updates to avoid interfering with user-initiated interactions that have not yet completed.
+@property (nonatomic, readonly) BOOL hasUncommittedUpdates API_AVAILABLE(ios(11.0), tvos(11.0));
+
+// Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
+- (void)reloadData;
+
+// Reloads the section index bar.
+- (void)reloadSectionIndexTitles NS_AVAILABLE_IOS(3_0);
 
 // Editing. When set, rows show insert/delete/reorder controls based on data source queries
 
@@ -268,6 +310,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 @property (nonatomic, copy, nullable) UIVisualEffect *separatorEffect NS_AVAILABLE_IOS(8_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED; // effect to apply to table separators
 
 @property (nonatomic) BOOL cellLayoutMarginsFollowReadableWidth NS_AVAILABLE_IOS(9_0); // if cell margins are derived from the width of the readableContentGuide.
+@property (nonatomic) BOOL insetsContentViewsToSafeArea API_AVAILABLE(ios(11.0), tvos(11.0)); // default value is YES
 
 @property (nonatomic, strong, nullable) UIView *tableHeaderView;                           // accessory view for above row content. default is nil. not to be confused with section header
 @property (nonatomic, strong, nullable) UIView *tableFooterView;                           // accessory view below content. default is nil. not to be confused with section footer
@@ -289,7 +332,25 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 
 @property (nonatomic) BOOL remembersLastFocusedIndexPath NS_AVAILABLE_IOS(9_0); // defaults to NO. If YES, when focusing on a table view the last focused index path is focused automatically. If the table view has never been focused, then the preferred focused index path is used.
 
+// Drag & Drop
+
+// To enable intra-app drags on iPhone, set this to YES.
+// You can also force drags to be disabled for this table view by setting this to NO.
+// By default, this will return YES on iPad and NO on iPhone.
+@property (nonatomic) BOOL dragInteractionEnabled API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+// YES if a drag session is currently active. A drag session begins after rows are "lifted" from the table view.
+@property (nonatomic, readonly) BOOL hasActiveDrag API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+// YES if table view is currently tracking a drop session.
+@property (nonatomic, readonly) BOOL hasActiveDrop API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
 @end
+
+#if TARGET_OS_IOS
+@interface UITableView (UIDragAndDrop) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 //_______________________________________________________________________________________________________________
 // this protocol represents the data model object. as such, it supplies no information about appearance (including the cells)
@@ -358,15 +419,224 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding>
 @end
 
 
-//_______________________________________________________________________________________________________________
+// _______________________________________________________________________________________________________________
+// Drag & Drop
 
-// This category provides convenience methods to make it easier to use an NSIndexPath to represent a section and row
-@interface NSIndexPath (UITableView)
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UITableViewDragDelegate <NSObject>
 
-+ (instancetype)indexPathForRow:(NSInteger)row inSection:(NSInteger)section;
+@required
 
-@property (nonatomic, readonly) NSInteger section;
-@property (nonatomic, readonly) NSInteger row;
+// Provide items to begin a drag associated with a given index path.
+// You can use -[session locationInView:] to do additional hit testing if desired.
+// If an empty array is returned a drag session will not begin.
+- (NSArray<UIDragItem *> *)tableView:(UITableView *)tableView itemsForBeginningDragSession:(id<UIDragSession>)session atIndexPath:(NSIndexPath *)indexPath;
+
+@optional
+
+// Called to request items to add to an existing drag session in response to the add item gesture.
+// You can use the provided point (in the table view's coordinate space) to do additional hit testing if desired.
+// If not implemented, or if an empty array is returned, no items will be added to the drag and the gesture
+// will be handled normally.
+- (NSArray<UIDragItem *> *)tableView:(UITableView *)tableView itemsForAddingToDragSession:(id<UIDragSession>)session atIndexPath:(NSIndexPath *)indexPath point:(CGPoint)point;
+
+// Allows customization of the preview used for the row when it is lifted or if the drag cancels.
+// If not implemented or if nil is returned, the entire cell will be used for the preview.
+- (nullable UIDragPreviewParameters *)tableView:(UITableView *)tableView dragPreviewParametersForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+// Called after the lift animation has completed to signal the start of a drag session.
+// This call will always be balanced with a corresponding call to -tableView:dragSessionDidEnd:
+- (void)tableView:(UITableView *)tableView dragSessionWillBegin:(id<UIDragSession>)session;
+
+// Called to signal the end of the drag session.
+- (void)tableView:(UITableView *)tableView dragSessionDidEnd:(id<UIDragSession>)session;
+
+// Controls whether move operations are allowed for the drag session.
+// If not implemented, defaults to YES.
+- (BOOL)tableView:(UITableView *)tableView dragSessionAllowsMoveOperation:(id<UIDragSession>)session;
+
+// Controls whether the drag session is restricted to the source application.
+// If not implemented, defaults to NO.
+- (BOOL)tableView:(UITableView *)tableView dragSessionIsRestrictedToDraggingApplication:(id<UIDragSession>)session;
+
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UITableViewDropDelegate <NSObject>
+
+@required
+
+// Called when the user initiates the drop.
+// Use the drop coordinator to access the items in the drop and the final destination index path and proposal for the drop,
+// as well as specify how you wish to animate each item to its final position.
+// If your implementation of this method does nothing, default drop animations will be supplied and the table view will
+// revert back to its initial state before the drop session entered.
+- (void)tableView:(UITableView *)tableView performDropWithCoordinator:(id<UITableViewDropCoordinator>)coordinator;
+
+@optional
+
+// If NO is returned no further delegate methods will be called for this drop session.
+// If not implemented, a default value of YES is assumed.
+- (BOOL)tableView:(UITableView *)tableView canHandleDropSession:(id<UIDropSession>)session;
+
+// Called when the drop session begins tracking in the table view's coordinate space.
+- (void)tableView:(UITableView *)tableView dropSessionDidEnter:(id<UIDropSession>)session;
+
+// Called frequently while the drop session being tracked inside the table view's coordinate space.
+// When the drop is at the end of a section, the destination index path passed will be for a row that does not yet exist (equal
+// to the number of rows in that section), where an inserted row would append to the end of the section.
+// The destination index path may be nil in some circumstances (e.g. when dragging over empty space where there are no cells).
+// Note that in some cases your proposal may not be allowed and the system will enforce a different proposal.
+// You may perform your own hit testing via -[session locationInView:]
+- (UITableViewDropProposal *)tableView:(UITableView *)tableView dropSessionDidUpdate:(id<UIDropSession>)session withDestinationIndexPath:(nullable NSIndexPath *)destinationIndexPath;
+
+// Called when the drop session is no longer being tracked inside the table view's coordinate space.
+- (void)tableView:(UITableView *)tableView dropSessionDidExit:(id<UIDropSession>)session;
+
+// Called when the drop session completed, regardless of outcome. Useful for performing any cleanup.
+- (void)tableView:(UITableView *)tableView dropSessionDidEnd:(id<UIDropSession>)session;
+
+// Allows customization of the preview used when dropping to a newly inserted row.
+// If not implemented or if nil is returned, the entire cell will be used for the preview.
+- (nullable UIDragPreviewParameters *)tableView:(UITableView *)tableView dropPreviewParametersForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+
+typedef NS_ENUM(NSInteger, UITableViewDropIntent) {
+    // Table view will accept the drop, but the location is not yet known and will be determined later.
+    // Will not open a gap. You may wish to provide some visual treatment to communicate this to the user.
+    UITableViewDropIntentUnspecified,
+    
+    // The drop will be placed in row(s) inserted at the destination index path.
+    // Opens a gap at the specified location simulating the final dropped layout.
+    UITableViewDropIntentInsertAtDestinationIndexPath,
+    
+    // The drop will be placed inside the row at the destination index path (e.g. the row is a container of other items).
+    // Will not open a gap. Table view will highlight the row at the destination index path.
+    UITableViewDropIntentInsertIntoDestinationIndexPath,
+    
+    // The table view will automatically choose between .insertAtDestinationIndexPath and
+    // .insertIntoDestinationIndexPath depending on the position of the drop. This should be used instead
+    // of .insertIntoDestinationIndexPath when the item being dropped can either be placed inside the row
+    // at the destination index path or inserted in a new row at the index path of the container row.
+    UITableViewDropIntentAutomatic
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@interface UITableViewDropProposal : UIDropProposal
+
+- (instancetype)initWithDropOperation:(UIDropOperation)operation intent:(UITableViewDropIntent)intent;
+
+// The default is UITableViewDropIntentUnspecified.
+@property (nonatomic, readonly) UITableViewDropIntent intent;
+
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UITableViewDropCoordinator <NSObject>
+
+// Ordered list of items available for this drop.
+@property (nonatomic, readonly) NSArray<id<UITableViewDropItem>> *items;
+
+// The last hit-tested index path known during the drop session.
+// When the drop is at the end of a section, this index path will be for a row that does not yet exist (equal
+// to the number of rows in that section), where an inserted row would append to the end of the section.
+// This index path may be nil in some circumstances (e.g. when dragging over empty space where there are no cells),
+// and if it is nil, the proposal's intent will always be UITableViewDropIntentUnspecified.
+@property (nonatomic, readonly, nullable) NSIndexPath *destinationIndexPath;
+
+// The current drop proposal at the time of the drop.
+@property (nonatomic, readonly) UITableViewDropProposal *proposal;
+
+// The drop session.
+@property (nonatomic, readonly) id<UIDropSession> session;
+
+// Animate the dragItem to an automatically inserted placeholder row.
+// Once the dragItem data is available, you can exchange the temporary placeholder cell with the final cell using the placeholder context
+// method -commitInsertionWithDataSourceUpdates:
+- (id<UITableViewDropPlaceholderContext>)dropItem:(UIDragItem *)dragItem toPlaceholder:(UITableViewDropPlaceholder *)placeholder;
+
+// Animate the dragItem to a row that you inserted at this index path.
+// You must call -performBatchUpdates:completion: to update your data source and insert a new row into the table view prior to calling this method.
+// If desired, use the drop delegate method -tableView:dropPreviewParametersForRowAtIndexPath: to provide preview parameters.
+- (id<UIDragAnimating>)dropItem:(UIDragItem *)dragItem toRowAtIndexPath:(NSIndexPath *)indexPath;
+
+// Animate the dragItem to a rect inside an existing row.
+// The rect is in the coordinate space of the cell at this index path.
+// The item will be animated with an aspect fit scale transform to fit inside the rect. Use a rect with zero size to shrink the item to a single point.
+- (id<UIDragAnimating>)dropItem:(UIDragItem *)dragItem intoRowAtIndexPath:(NSIndexPath *)indexPath rect:(CGRect)rect;
+
+// Animate the dragItem to a location specified by the UIDragPreviewTarget.
+// The -[UITableViewDropItem previewSize] may be helpful to compute an appropriate transform.
+- (id<UIDragAnimating>)dropItem:(UIDragItem *)dragItem toTarget:(UIDragPreviewTarget *)target;
+
+@end
+
+
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@interface UITableViewPlaceholder : NSObject
+
+// A placeholder cell will be dequeued for the reuse identifier and inserted at the specified index path without requiring a data source update.
+// You may use UITableViewAutomaticDimension for the rowHeight to have the placeholder cell self-size if the table view is using estimated row heights.
+- (instancetype)initWithInsertionIndexPath:(NSIndexPath *)insertionIndexPath reuseIdentifier:(NSString *)reuseIdentifier rowHeight:(CGFloat)rowHeight NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+
+// Called whenever the placeholder cell is visible to update the contents of the cell.
+@property (nonatomic, nullable, copy) void(^cellUpdateHandler)(__kindof UITableViewCell *);
+
+@end
+
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@interface UITableViewDropPlaceholder : UITableViewPlaceholder
+
+// Allows customization of the preview used when dropping to a placeholder.
+// If no block is set, or if nil is returned, the entire cell will be used for the preview.
+@property (nonatomic, nullable, copy) UIDragPreviewParameters * _Nullable (^previewParametersProvider)(__kindof UITableViewCell *);
+
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UITableViewDropItem <NSObject>
+
+// Retrieve drop data from the dragItem's itemProvider.
+@property (nonatomic, readonly) UIDragItem *dragItem;
+
+// If this drop item is also from this table view this index path will specify the location of the row it came from.
+// If the dragItem comes from some other source (e.g. another source inside or outside of the app), or if the source
+// table view is updated or reloaded after the drag begins, this index path will be nil.
+// This is useful for directly accessing the model object in your data source instead of using the item provider
+// to retrieve the data.
+@property (nonatomic, readonly, nullable) NSIndexPath *sourceIndexPath;
+
+// May be useful for computing the UIDragPreviewTarget transform for UITableViewDropCoordinator dropItem:toTarget:
+// Returns CGSizeZero if the dragItem does not have a visible drop preview.
+@property (nonatomic, readonly) CGSize previewSize;
+
+@end
+
+
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
+@protocol UITableViewDropPlaceholderContext <UIDragAnimating>
+
+// The drag item this placeholder was created for.
+@property (nonatomic, readonly) UIDragItem *dragItem;
+
+// Exchange the placeholder for the final cell.
+// You are only responsible for updating your data source inside the block using the provided insertionIndexPath.
+// If the placeholder is no longer available (e.g. -reloadData has been called) the dataSourceUpdates block
+// will not be executed and this will return NO.
+- (BOOL)commitInsertionWithDataSourceUpdates:(void(NS_NOESCAPE ^)(NSIndexPath *insertionIndexPath))dataSourceUpdates;
+
+// If the placeholder is no longer needed or you wish to manually insert a cell for the drop data, you can
+// remove the placeholder via this method.
+// If the placeholder is no longer available (e.g. -reloadData has been called) this will return NO.
+- (BOOL)deletePlaceholder;
 
 @end
 

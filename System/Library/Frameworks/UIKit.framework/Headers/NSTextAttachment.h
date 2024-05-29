@@ -2,7 +2,7 @@
 //  NSTextAttachment.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -47,22 +47,22 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextAttachment : NSObject <NSTextAtta
 /**************************** Content properties ****************************/
 
 // These two properties define the contents for the text attachment.  Modifying these properties have a side effect of invalidating -image and -fileWrapper properties. -fileType is an UTI describing the format for -contents.
-@property(nullable, copy, NS_NONATOMIC_IOSONLY) NSData *contents NS_AVAILABLE(10_11, 7_0);
-@property(nullable, copy, NS_NONATOMIC_IOSONLY) NSString *fileType NS_AVAILABLE(10_11, 7_0);
+@property (nullable, copy, NS_NONATOMIC_IOSONLY) NSData *contents NS_AVAILABLE(10_11, 7_0);
+@property (nullable, copy, NS_NONATOMIC_IOSONLY) NSString *fileType NS_AVAILABLE(10_11, 7_0);
 
 /**************************** Rendering/layout properties ****************************/
 
 // Image representing the text attachment contents. Modifying this property invalidates -contents, -fileType, and -FileWrapper properties.
-@property(nullable, strong, NS_NONATOMIC_IOSONLY) UIImage *image NS_AVAILABLE(10_11, 7_0);
+@property (nullable, strong, NS_NONATOMIC_IOSONLY) UIImage *image NS_AVAILABLE(10_11, 7_0);
 
 // Defines the layout bounds of the receiver's graphical representation in the text coordinate system.  The origin is at the glyph location on the text baseline.  The default value is CGRectZero.
-@property(NS_NONATOMIC_IOSONLY) CGRect bounds NS_AVAILABLE(10_11, 7_0);
+@property (NS_NONATOMIC_IOSONLY) CGRect bounds NS_AVAILABLE(10_11, 7_0);
 #endif
 
 /**************************** Non-image contents properties ****************************/
 
 // Optionally, NSTextAttachment can be associated with a file wrapper. Modifying this property has a side effect of invalidating -image, -contents, and fileType properties.
-@property(nullable, strong, NS_NONATOMIC_IOSONLY) NSFileWrapper *fileWrapper;
+@property (nullable, strong, NS_NONATOMIC_IOSONLY) NSFileWrapper *fileWrapper;
 
 
 @end

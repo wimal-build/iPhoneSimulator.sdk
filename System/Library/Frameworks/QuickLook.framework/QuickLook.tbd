@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 28B7E15A-3DDB-3034-8F9D-7365749A437B', 'x86_64: 0CF4C229-D775-39D2-BA61-6B958E5A616B' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/QuickLook.framework/QuickLook
+objc-constraint: none
+exports:         
+  - archs:           [ i386 ]
+    symbols:         [ _QLGetDefaultZoomForContentType, _QLPreviewItemContentTypeIsAudio, 
+                       _QLPreviewSupportsContentType ]
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _QLFrameworkBundle, _QLGuessEncodingForTextFileAtURL, _QLGuessEncodingForTextFileFromData, 
+                       _QLLocalizedErrorString, _QLLocalizedString, _QLPreviewControllerSupportsContentType, 
+                       _QLPreviewCopyEmbeddedIWorkThumbnailDataInData, _QLPreviewCopyEmbeddedIWorkThumbnailDataInFile, 
+                       _QLPreviewCopyEmbeddedPDF, _QLPreviewGetSupportedMIMETypes, 
+                       _QLPreviewNeedsHelpUnzippingURL, _QLPreviewRequestAppendDataToAttachment, 
+                       _QLPreviewRequestCreateAttachmentURL, _QLPreviewRequestGetDocumentObject, 
+                       _QLPreviewRequestIsCancelled, _QLPreviewRequestSetDataRepresentation, 
+                       _QLPreviewRequestSetDocumentObject, _QLPreviewRequestSetError, 
+                       _QLPreviewRequestStartDataRepresentation, _QLPreviewScheme, 
+                       _QLTypeCopyBestMimeTypeForFileNameAndMimeType, _QLTypeCopyBestMimeTypeForURLAndMimeType, 
+                       _QLTypeCopyUTIForURLAndMimeType, __QLContentTypeConformsToContentTypeInSet, 
+                       __QLContentTypeEqualsToContentTypeInSet, __QLCopyArchiveExtensionIfIsArchiveFileName, 
+                       __QLCopyPackageExtensionIfIsArchiveFileName, __QLTypeCopyUTIForFileNameAndMimeType, 
+                       _kQLPreviewOptionPasswordKey, _kQLPreviewPropertyAllowJavascriptKey, 
+                       _kQLPreviewPropertyAttachmentDataKey, _kQLPreviewPropertyAttachmentsKey, 
+                       _kQLPreviewPropertyHeightKey, _kQLPreviewPropertyMIMETypeKey, 
+                       _kQLPreviewPropertyTextEncodingNameKey, _kQLPreviewPropertyWidthKey, 
+                       _kQLTestingNotificationTimestampKey ]
+    objc-classes:    [ _QLDismissAction, _QLEditedItem, _QLExtensionManager, _QLFileThumbnailRequest, 
+                       _QLItem, _QLItemThumbnailGenerator, _QLItemViewController, 
+                       _QLNotificationCenter, _QLPreviewCollectionHostContext, _QLPreviewCollectionServiceContext, 
+                       _QLPreviewController, _QLPreviewConverter, _QLRemotePreviewHostContext, 
+                       _QLRemotePreviewServiceContext, _QLServiceViewController, 
+                       _QLThumbnail, _QLThumbnailCreationOperation, _QLThumbnailDescriptor, 
+                       _QLThumbnailHostContext, _QLThumbnailProvider, _QLThumbnailReply, 
+                       _QLThumbnailServiceContext, _QLZipArchive, _QLZipArchiveEntry ]
+...

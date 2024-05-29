@@ -2,7 +2,7 @@
 //  UIBarButtonItem.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -12,6 +12,7 @@
 #import <UIKit/UIAppearance.h>
 #import <UIKit/UIApplication.h>
 #import <UIKit/UIBarCommon.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -45,7 +46,7 @@ typedef NS_ENUM(NSInteger, UIBarButtonSystemItem) {
     UIBarButtonSystemItemFastForward,
     UIBarButtonSystemItemUndo NS_ENUM_AVAILABLE_IOS(3_0),
     UIBarButtonSystemItemRedo NS_ENUM_AVAILABLE_IOS(3_0),
-    UIBarButtonSystemItemPageCurl NS_ENUM_AVAILABLE_IOS(4_0),
+    UIBarButtonSystemItemPageCurl NS_ENUM_DEPRECATED_IOS(4_0, 11_0)
 };
 
 @class UIImage, UIView;
@@ -117,6 +118,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIBarButtonItem : UIBarItem <NSCoding>
 - (CGFloat)backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 
 @end
+
+#if TARGET_OS_IOS
+@interface UIBarButtonItem (SpringLoading) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END
 

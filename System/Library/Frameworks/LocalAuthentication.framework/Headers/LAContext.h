@@ -144,7 +144,7 @@ typedef NS_ENUM(NSInteger, LACredentialType)
     ///             LocalAuthentication will not show password entry user interface.
     ///             When entered from the LocalAuthentication user interface, the password is stored as
     ///             UTF-8 encoded string.
-    LACredentialTypeApplicationPassword __TVOS_UNAVAILABLE = 0,
+    LACredentialTypeApplicationPassword __TVOS_AVAILABLE(11.0) = kLACredentialTypeApplicationPassword,
 } NS_ENUM_AVAILABLE(10_11, 9_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0);
 
 /// Sets a credential to this context.
@@ -160,7 +160,7 @@ typedef NS_ENUM(NSInteger, LACredentialType)
 /// @return YES if the credential was set successfully, NO otherwise.
 ///
 - (BOOL)setCredential:(nullable NSData *)credential
-                 type:(LACredentialType)type NS_AVAILABLE(10_11, 9_0) __WATCHOS_AVAILABLE(3.0) __TVOS_UNAVAILABLE;
+                 type:(LACredentialType)type NS_AVAILABLE(10_11, 9_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(11.0);
 
 /// Reveals if credential was set with this context.
 ///
@@ -168,7 +168,7 @@ typedef NS_ENUM(NSInteger, LACredentialType)
 ///
 /// @return YES on success, NO otherwise.
 ///
-- (BOOL)isCredentialSet:(LACredentialType)type NS_AVAILABLE(10_11, 9_0) __WATCHOS_AVAILABLE(3.0) __TVOS_UNAVAILABLE;
+- (BOOL)isCredentialSet:(LACredentialType)type NS_AVAILABLE(10_11, 9_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(11.0);
 
 typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 {
@@ -283,6 +283,45 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 ///
 /// @see LATouchIDAuthenticationMaximumAllowableReuseDuration
 @property (nonatomic) NSTimeInterval touchIDAuthenticationAllowableReuseDuration NS_AVAILABLE(10_12, 9_0) __WATCHOS_UNAVAILABLE __TVOS_UNAVAILABLE;
+
+/// Allows setting the default localized authentication reason on context.
+///
+/// @discussion A localized string from this property is displayed in the authentication UI if the caller didn't specify
+///             its own authentication reason (e.g. a keychain operation with kSecUseAuthenticationContext). This property
+///             is ignored if the authentication reason was provided by caller.
+@property (nonatomic, copy) NSString *localizedReason API_AVAILABLE(macos(10.13), ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+
+/// Allows running authentication in non-interactive mode.
+///
+/// @discussion If the context is used in a keychain query by the means of kSecUseAuthenticationContext,
+///             then setting this property to YES has the same effect as passing kSecUseNoAuthenticationUI
+///             in the query, i.e. the keychain call will eventually fail with errSecInteractionNotAllowed
+///             instead of displaying the authentication UI.
+///
+///             If this property is used with a LocalAuthentication evaluation, it will eventually fail with
+///             LAErrorNotInteractive instead of displaying the authentication UI.
+@property (nonatomic) BOOL interactionNotAllowed;
+
+
+typedef NS_ENUM(NSInteger, LABiometryType)
+{
+    /// The device does not support biometry.
+    LABiometryNone,
+    
+    /// The device supports Touch ID.
+    LABiometryTypeTouchID,
+    
+    /// The device supports Face ID.
+    LABiometryTypeFaceID,
+} NS_ENUM_AVAILABLE(NA, 11_0) __WATCHOS_UNAVAILABLE __TVOS_UNAVAILABLE;
+
+
+/// Indicates the type of the biometry supported by the device.
+///
+/// @discussion  This property is set only when canEvaluatePolicy succeeds for a biometric policy.
+///              The default value is LABiometryNone.
+@property (nonatomic, readonly) LABiometryType biometryType NS_AVAILABLE(NA, 11_0) __WATCHOS_UNAVAILABLE __TVOS_UNAVAILABLE;
+
 
 @end
 

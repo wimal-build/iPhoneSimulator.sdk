@@ -17,7 +17,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define CX_CLASS_AVAILABLE(...) CX_EXTERN API_AVAILABLE(__VA_ARGS__)
 
-#define CXBundleIdentifier "com.apple.CallKit"
-#define CXBundleIdentifierLowercase "com.apple.callkit"
-
 NS_ASSUME_NONNULL_END

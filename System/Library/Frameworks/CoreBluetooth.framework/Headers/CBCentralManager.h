@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, CBCentralManagerState) {
 	CBCentralManagerStateUnauthorized = CBManagerStateUnauthorized,
 	CBCentralManagerStatePoweredOff = CBManagerStatePoweredOff,
 	CBCentralManagerStatePoweredOn = CBManagerStatePoweredOn,
-} NS_DEPRECATED(NA, NA, 5_0, 10_0, "Use CBManagerState instead");
+} NS_DEPRECATED(10_7, 10_13, 5_0, 10_0, "Use CBManagerState instead");
 
 @protocol CBCentralManagerDelegate;
 @class CBUUID, CBPeripheral;
@@ -67,7 +67,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @discussion Whether or not the central is currently scanning.
  *
  */
-@property(nonatomic, assign, readonly) BOOL isScanning NS_AVAILABLE(NA, 9_0);
+@property(nonatomic, assign, readonly) BOOL isScanning NS_AVAILABLE(10_13, 9_0);
 
 - (instancetype)init;
 
@@ -100,7 +100,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  */
 - (instancetype)initWithDelegate:(nullable id<CBCentralManagerDelegate>)delegate
 						   queue:(nullable dispatch_queue_t)queue
-						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(NA, 7_0) NS_DESIGNATED_INITIALIZER;
+						 options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE(10_9, 7_0) NS_DESIGNATED_INITIALIZER;
 
 /*!
  *  @method retrievePeripheralsWithIdentifiers:
@@ -112,7 +112,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *	@return				A list of <code>CBPeripheral</code> objects.
  *
  */
-- (NSArray<CBPeripheral *> *)retrievePeripheralsWithIdentifiers:(NSArray<NSUUID *> *)identifiers NS_AVAILABLE(NA, 7_0);
+- (NSArray<CBPeripheral *> *)retrievePeripheralsWithIdentifiers:(NSArray<NSUUID *> *)identifiers NS_AVAILABLE(10_9, 7_0);
 
 /*!
  *  @method retrieveConnectedPeripheralsWithServices
@@ -124,7 +124,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *	@return		A list of <code>CBPeripheral</code> objects.
  *
  */
-- (NSArray<CBPeripheral *> *)retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID *> *)serviceUUIDs NS_AVAILABLE(NA, 7_0);
+- (NSArray<CBPeripheral *> *)retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID *> *)serviceUUIDs NS_AVAILABLE(10_9, 7_0);
 
 /*!
  *  @method scanForPeripheralsWithServices:options:

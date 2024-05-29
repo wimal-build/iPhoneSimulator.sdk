@@ -2,7 +2,7 @@
 //  UIBezierPath.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,7 +19,7 @@ typedef NS_OPTIONS(NSUInteger, UIRectCorner) {
     UIRectCornerAllCorners  = ~0UL
 };
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSCoding>
+NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>
 
 + (instancetype)bezierPath;
 + (instancetype)bezierPathWithRect:(CGRect)rect;

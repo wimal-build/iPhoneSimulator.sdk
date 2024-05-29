@@ -34,7 +34,7 @@
 @property(nullable, copy) NSString *relatedUniqueIdentifier;
 
 //For activities, this is the unique identifier for an item this activity is related to. Unlike relatedUniqueIdentifier, this attribute does not link the life time of the items.
-@property(nullable, copy) NSString *weakRelatedUniqueIdentifier CS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE;
+@property(nullable, copy) NSString *weakRelatedUniqueIdentifier CS_AVAILABLE(10_13, 10_0) CS_TVOS_UNAVAILABLE;
 
 
 //This is the date that the last metadata attribute was changed.
@@ -56,10 +56,31 @@
 //A version specifier for this item.
 @property(nullable, copy) NSString *version;
 
+//This property is used to indicate if the indexed item was created by the user
+//It is used to distinguish pushed app content from content that required explicit user interaction
+//Example content that may set this field: user created notes, documents
+@property(nullable, strong, getter=isUserCreated) NSNumber *userCreated CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+//This property is used to indicate if the indexed item has been purchased or otherwise acquired by the user
+//Example content are songs bought by a user and made searchable
+@property(nullable, strong, getter=isUserOwned) NSNumber *userOwned CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+//This property is used to indicate if the indexed item was selected by the user
+//It is used to distinguish pushed app content from content that a user has chosen to add to a collection
+//Example content that may set this field: downloaded media content, bookmarked websites/news articles
+@property(nullable, strong, getter=isUserCurated) NSNumber *userCurated CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+//This property allows content donors to provide a ranking signal to each indexed item
+//It will inform the ranker, allowing it to distinguish more easily between otherwise similar items
+//This is query-independent and should be used to indicate the relative importance of an item w.r.t. all other items for the same application
+//Expected value ∈ [0-100]; preferably integral values
+//Monotonically increasing with larger values being considered better results
+@property(nullable, strong) NSNumber *rankingHint CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
 // This property has the same semantics as -[CSSearchableItem domainIdentifier].
 // It can be set on the contentAttributeSet property of a NSUserActivity instance and then used to delete the user activity
 // by calling [[CSSearchableIndex defaultSearchableIndex] deleteSearchableItemsWithDomainIdentifiers:].
-@property(nullable, copy) NSString *domainIdentifier CS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE;
+@property(nullable, copy) NSString *domainIdentifier CS_AVAILABLE(10_13, 10_0) CS_TVOS_UNAVAILABLE;
 
 @end
 
@@ -78,4 +99,17 @@
 @property(nullable, strong) NSNumber *containerOrder;
 @end
 
+@interface CSSearchableItemAttributeSet (CSItemProvider)
+// The string value of type identifer can only be used by one providerTypeIdentifier array.
+
+// An array of types identifiers that owner can provided a NSData representation.
+@property(nullable, copy) NSArray<NSString *> *providerDataTypeIdentifiers CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+// An array of types identifiers that owner can provided a NSURL to file representation.
+@property(nullable, copy) NSArray<NSString *> *providerFileTypeIdentifiers CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+// An array of types identifiers that owner can provided a NSURL to inplace file representation.
+@property(nullable, copy) NSArray<NSString *> *providerInPlaceFileTypeIdentifiers CS_AVAILABLE(10_13, 11_0) CS_TVOS_UNAVAILABLE;
+
+@end
 

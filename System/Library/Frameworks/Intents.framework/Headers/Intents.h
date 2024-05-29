@@ -2,7 +2,7 @@
 //  Intents.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -27,6 +27,7 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INDomainHandling.h>
 #import <Intents/INInteraction.h>
 #import <Intents/INSpeakable.h>
+#import <Intents/INParameter.h>
 
 // Intents & Intent Responses
 #import <Intents/INIntents.h>
@@ -43,6 +44,7 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INPaymentMethod.h>
 #import <Intents/INPaymentMethodType.h>
 #import <Intents/INPerson.h>
+#import <Intents/INRecurrenceRule.h>
 #import <Intents/INSpeakableString.h>
 #import <Intents/INPersonHandleLabel.h>
 #import <Intents/INPersonRelationship.h>
@@ -63,33 +65,16 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INRestaurantGuestResolutionResult.h>
 
 // Calls Domain
-#import <Intents/INSearchCallHistoryIntent.h>
-#import <Intents/INSearchCallHistoryIntentResponse.h>
-#import <Intents/INStartAudioCallIntent.h>
-#import <Intents/INStartAudioCallIntentResponse.h>
-#import <Intents/INStartVideoCallIntent.h>
-#import <Intents/INStartVideoCallIntentResponse.h>
-
+#import <Intents/INCallRecord.h>
 #import <Intents/INCallRecordType.h>
 #import <Intents/INCallRecordTypeResolutionResult.h>
+#import <Intents/INCallDestinationType.h>
+#import <Intents/INCallDestinationTypeResolutionResult.h>
+#import <Intents/INCallCapability.h>
 #import <Intents/INCallCapabilityOptions.h>
+#import <Intents/INCallRecordTypeOptionsResolutionResult.h>
 
 // CarPlay & Radio Domains
-#import <Intents/INSetAudioSourceInCarIntent.h>
-#import <Intents/INSetAudioSourceInCarIntentResponse.h>
-#import <Intents/INSetClimateSettingsInCarIntent.h>
-#import <Intents/INSetClimateSettingsInCarIntentResponse.h>
-#import <Intents/INSetDefrosterSettingsInCarIntent.h>
-#import <Intents/INSetDefrosterSettingsInCarIntentResponse.h>
-#import <Intents/INSetSeatSettingsInCarIntent.h>
-#import <Intents/INSetSeatSettingsInCarIntentResponse.h>
-#import <Intents/INSetProfileInCarIntent.h>
-#import <Intents/INSetProfileInCarIntentResponse.h>
-#import <Intents/INSaveProfileInCarIntent.h>
-#import <Intents/INSaveProfileInCarIntentResponse.h>
-#import <Intents/INSetRadioStationIntent.h>
-#import <Intents/INSetRadioStationIntentResponse.h>
-
 #import <Intents/INCarAirCirculationMode.h>
 #import <Intents/INCarAirCirculationModeResolutionResult.h>
 #import <Intents/INCarAudioSource.h>
@@ -108,12 +93,7 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INRelativeSettingResolutionResult.h>
 
 // Messages Domain
-#import <Intents/INSearchForMessagesIntent.h>
-#import <Intents/INSearchForMessagesIntentResponse.h>
-#import <Intents/INSendMessageIntent.h>
-#import <Intents/INSendMessageIntentResponse.h>
-#import <Intents/INSetMessageAttributeIntent.h>
-#import <Intents/INSetMessageAttributeIntentResponse.h>
+#import <Intents/INSendMessageRecipientResolutionResult.h>
 
 #import <Intents/INMessage.h>
 #import <Intents/INMessageAttribute.h>
@@ -122,6 +102,9 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INMessageAttributeOptionsResolutionResult.h>
 
 // Payments Domain
+#import <Intents/INAccountTypeResolutionResult.h>
+#import <Intents/INBalanceAmount.h>
+#import <Intents/INBalanceTypeResolutionResult.h>
 #import <Intents/INBillDetails.h>
 #import <Intents/INBillPayee.h>
 #import <Intents/INBillPayeeResolutionResult.h>
@@ -134,23 +117,15 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INPaymentAmountResolutionResult.h>
 #import <Intents/INBillTypeResolutionResult.h>
 #import <Intents/INPaymentStatusResolutionResult.h>
+#import <Intents/INSendPaymentCurrencyAmountResolutionResult.h>
+#import <Intents/INRequestPaymentCurrencyAmountResolutionResult.h>
+#import <Intents/INSendPaymentPayeeResolutionResult.h>
+#import <Intents/INRequestPaymentPayerResolutionResult.h>
 
 // Photos Domain
-#import <Intents/INSearchForPhotosIntent.h>
-#import <Intents/INSearchForPhotosIntentResponse.h>
-#import <Intents/INStartPhotoPlaybackIntent.h>
-#import <Intents/INStartPhotoPlaybackIntentResponse.h>
-
 #import <Intents/INPhotoAttributeOptions.h>
 
 // Ridesharing Domain
-#import <Intents/INListRideOptionsIntent.h>
-#import <Intents/INListRideOptionsIntentResponse.h>
-#import <Intents/INRequestRideIntent.h>
-#import <Intents/INRequestRideIntentResponse.h>
-#import <Intents/INGetRideStatusIntent.h>
-#import <Intents/INGetRideStatusIntentResponse.h>
-
 #import <Intents/INPriceRange.h>
 #import <Intents/INRideOption.h>
 #import <Intents/INRideStatus.h>
@@ -160,19 +135,13 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INRideFareLineItem.h>
 #import <Intents/INRidePartySizeOption.h>
 #import <Intents/INRideCompletionStatus.h>
+#import <Intents/INRideFeedbackTypeOptions.h>
+
+// Visual Code Domain
+#import <Intents/INVisualCodeType.h>
+#import <Intents/INVisualCodeTypeResolutionResult.h>
 
 // Workouts Domain
-#import <Intents/INStartWorkoutIntent.h>
-#import <Intents/INStartWorkoutIntentResponse.h>
-#import <Intents/INPauseWorkoutIntent.h>
-#import <Intents/INPauseWorkoutIntentResponse.h>
-#import <Intents/INEndWorkoutIntent.h>
-#import <Intents/INEndWorkoutIntentResponse.h>
-#import <Intents/INCancelWorkoutIntent.h>
-#import <Intents/INCancelWorkoutIntentResponse.h>
-#import <Intents/INResumeWorkoutIntent.h>
-#import <Intents/INResumeWorkoutIntentResponse.h>
-
 #import <Intents/INWorkoutGoalUnitType.h>
 #import <Intents/INWorkoutGoalUnitTypeResolutionResult.h>
 #import <Intents/INWorkoutLocationType.h>
@@ -192,9 +161,40 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/NSUserActivity+IntentsAdditions.h>
 #import <Intents/INPerson+SiriAdditions.h>
 
+// Notes
+#import <Intents/INNoteContent.h>
+#import <Intents/INTextNoteContent.h>
+#import <Intents/INNote.h>
+#import <Intents/INTask.h>
+#import <Intents/INTaskList.h>
+#import <Intents/INSpatialEventTrigger.h>
+#import <Intents/INTemporalEventTrigger.h>
+#import <Intents/INDateSearchType.h>
+#import <Intents/INLocationSearchType.h>
+#import <Intents/INNoteContentType.h>
+#import <Intents/INNotebookItemType.h>
+#import <Intents/INImageNoteContent.h>
+#import <Intents/INSortType.h>
+
+#import <Intents/INDateSearchTypeResolutionResult.h>
+#import <Intents/INLocationSearchTypeResolutionResult.h>
+#import <Intents/INNoteResolutionResult.h>
+#import <Intents/INNoteContentResolutionResult.h>
+#import <Intents/INNoteContentTypeResolutionResult.h>
+#import <Intents/INNotebookItemTypeResolutionResult.h>
+#import <Intents/INTaskResolutionResult.h>
+#import <Intents/INTaskListResolutionResult.h>
+#import <Intents/INTaskStatusResolutionResult.h>
+#import <Intents/INSpatialEventTriggerResolutionResult.h>
+#import <Intents/INTemporalEventTriggerResolutionResult.h>
+
 // Deprecated
 #import <Intents/INPerson_Deprecated.h>
 #import <Intents/INRequestRideIntent_Deprecated.h>
 #import <Intents/INRideDriver_Deprecated.h>
 #import <Intents/INSaveProfileInCarIntent_Deprecated.h>
+#import <Intents/INSearchCallHistoryIntent_Deprecated.h>
+#import <Intents/INStartAudioCallIntent_Deprecated.h>
+#import <Intents/INSearchForMessagesIntent_Deprecated.h>
+#import <Intents/INSendMessageIntent_Deprecated.h>
 #import <Intents/INSetProfileInCarIntent_Deprecated.h>

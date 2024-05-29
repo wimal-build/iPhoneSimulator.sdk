@@ -14,6 +14,7 @@
 #import <CoreMotion/CMAltimeter.h>
 #import <CoreMotion/CMAltitude.h>
 #import <CoreMotion/CMAttitude.h>
+#import <CoreMotion/CMAuthorization.h>
 #import <CoreMotion/CMAvailability.h>
 #import <CoreMotion/CMDeviceMotion.h>
 #import <CoreMotion/CMError.h>

@@ -502,7 +502,7 @@ NS_CLASS_AVAILABLE(NA, 9_0)
  *   nil if no network interfaces are being managed,
  *   non-nil NSArray of NEHotspotNetwork objects otherwise.
  */
-+ (NSArray *)supportedNetworkInterfaces /* of NEHotspotNetwork */
++ (NSArray *_Nullable)supportedNetworkInterfaces /* of NEHotspotNetwork */
 	NS_AVAILABLE(NA, 9_0);
 
 @end

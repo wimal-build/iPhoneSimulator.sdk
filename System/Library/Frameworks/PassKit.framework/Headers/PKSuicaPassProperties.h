@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(10_1) __WATCHOS_AVAILABLE(3.1)
+API_AVAILABLE(ios(10.1), watchos(3.1))
 @interface PKSuicaPassProperties : NSObject
 
 /// Properties for a given pass, or nil if the pass doesn’t support the set of properties being requested

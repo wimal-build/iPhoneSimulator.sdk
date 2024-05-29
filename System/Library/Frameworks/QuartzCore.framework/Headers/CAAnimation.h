@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 CA_CLASS_AVAILABLE (10.5, 2.0, 9.0, 2.0)
 @interface CAAnimation : NSObject
-    <NSCoding, NSCopying, CAMediaTiming, CAAction>
+    <NSSecureCoding, NSCopying, CAMediaTiming, CAAction>
 {
 @private
   void *_attr;
@@ -297,15 +297,6 @@ CA_CLASS_AVAILABLE (10.5, 2.0, 9.0, 2.0)
 
 @property float startProgress;
 @property float endProgress;
-
-/* An optional filter object implementing the transition. When set the
- * `type' and `subtype' properties are ignored. The filter must
- * implement `inputImage', `inputTargetImage' and `inputTime' input
- * keys, and the `outputImage' output key. Optionally it may support
- * the `inputExtent' key, which will be set to a rectangle describing
- * the region in which the transition should run. Defaults to nil. */
-
-@property(nullable, strong) id filter;
 
 @end
 

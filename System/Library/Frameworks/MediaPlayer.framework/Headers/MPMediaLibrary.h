@@ -28,9 +28,10 @@ typedef NS_ENUM(NSInteger, MPMediaLibraryAuthorizationStatus) {
     MPMediaLibraryAuthorizationStatusDenied,
     MPMediaLibraryAuthorizationStatusRestricted,
     MPMediaLibraryAuthorizationStatusAuthorized,
-} NS_ENUM_AVAILABLE_IOS(9_3);
+} MP_API(ios(9.3)) MP_PROHIBITED(tvos, macos);
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
+MP_API(ios(3.0))
+MP_PROHIBITED(tvos, macos)
 @interface MPMediaLibrary : NSObject <NSSecureCoding>
 
 + (MPMediaLibrary *)defaultMediaLibrary;
@@ -42,10 +43,10 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 - (void)beginGeneratingLibraryChangeNotifications;
 - (void)endGeneratingLibraryChangeNotifications;
 
-+ (MPMediaLibraryAuthorizationStatus)authorizationStatus NS_AVAILABLE_IOS(9_3);
-+ (void)requestAuthorization:(void (^)(MPMediaLibraryAuthorizationStatus status))handler NS_AVAILABLE_IOS(9_3);
++ (MPMediaLibraryAuthorizationStatus)authorizationStatus MP_API(ios(9.3));
++ (void)requestAuthorization:(void (^)(MPMediaLibraryAuthorizationStatus status))handler MP_API(ios(9.3));
 
-- (void)addItemWithProductID:(NSString *)productID completionHandler:(nullable void (^)(NSArray <__kindof MPMediaEntity *> *entities, NSError * __nullable error))completionHandler NS_AVAILABLE_IOS(9_3);
+- (void)addItemWithProductID:(NSString *)productID completionHandler:(nullable void (^)(NSArray <__kindof MPMediaEntity *> *entities, NSError * __nullable error))completionHandler MP_API(ios(9.3));
 
 /*!
  * Finds the playlist associated with the UUID.
@@ -55,7 +56,7 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
  * @discussion The UUID should typically be pre-generated to avoid creating a new playlist with every call.
  */
 
-- (void)getPlaylistWithUUID:(NSUUID *)uuid creationMetadata:(nullable MPMediaPlaylistCreationMetadata *)creationMetadata completionHandler:(void (^)(MPMediaPlaylist * __nullable playlist, NSError * __nullable error))completionHandler NS_AVAILABLE_IOS(9_3);
+- (void)getPlaylistWithUUID:(NSUUID *)uuid creationMetadata:(nullable MPMediaPlaylistCreationMetadata *)creationMetadata completionHandler:(void (^)(MPMediaPlaylist * __nullable playlist, NSError * __nullable error))completionHandler MP_API(ios(9.3));
 
 @end
 
@@ -64,6 +65,6 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 // Notifications
 
 // Any items or playlists which were previously cached should be re-evaluated from queries when MPMediaLibraryDidChangeNotification is posted.
-MP_EXTERN __TVOS_PROHIBITED NSString * const MPMediaLibraryDidChangeNotification;
+MP_EXTERN NSString * const MPMediaLibraryDidChangeNotification MP_PROHIBITED(tvos);
 
 NS_ASSUME_NONNULL_END

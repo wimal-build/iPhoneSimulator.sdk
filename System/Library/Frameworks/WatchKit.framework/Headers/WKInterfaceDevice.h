@@ -54,6 +54,13 @@ typedef NS_ENUM(NSInteger, WKWaterResistanceRating) {
 } WK_AVAILABLE_WATCHOS_ONLY(3.0);
 #endif
 
+typedef NS_ENUM(NSInteger, WKInterfaceDeviceBatteryState) {
+    WKInterfaceDeviceBatteryStateUnknown,
+    WKInterfaceDeviceBatteryStateUnplugged,   // on battery, discharging
+    WKInterfaceDeviceBatteryStateCharging,    // plugged in, less than 100%
+    WKInterfaceDeviceBatteryStateFull,        // plugged in, at 100%
+} WK_AVAILABLE_WATCHOS_ONLY(4.0);
+
 @interface WKInterfaceDevice : NSObject
 
 + (WKInterfaceDevice *)currentDevice;
@@ -66,6 +73,9 @@ typedef NS_ENUM(NSInteger, WKWaterResistanceRating) {
 
 @property (nonatomic, readonly) CGRect screenBounds;
 @property (nonatomic, readonly) CGFloat screenScale;
+@property (nonatomic,getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled WK_AVAILABLE_WATCHOS_ONLY(4.0); // default is NO
+@property (nonatomic, readonly) float batteryLevel WK_AVAILABLE_WATCHOS_ONLY(4.0); // 0 .. 1.0. -1.0 if WKInterfaceDeviceBatteryStateUnknown
+@property (nonatomic, readonly) WKInterfaceDeviceBatteryState batteryState WK_AVAILABLE_WATCHOS_ONLY(4.0); // WKInterfaceDeviceBatteryStateUnknown if monitoring disabled
 @property (nonatomic, readonly, copy)  NSString *preferredContentSizeCategory;
 @property (nonatomic, readonly) WKInterfaceLayoutDirection layoutDirection WK_AVAILABLE_WATCHOS_ONLY(2.1);
 
@@ -85,7 +95,6 @@ typedef NS_ENUM(NSInteger, WKWaterResistanceRating) {
 #endif
 
 - (void)playHaptic:(WKHapticType)type WK_AVAILABLE_WATCHOS_ONLY(2.0);
-
 @end
 
 NS_ASSUME_NONNULL_END

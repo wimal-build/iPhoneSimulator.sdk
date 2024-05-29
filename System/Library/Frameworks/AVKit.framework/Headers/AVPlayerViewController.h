@@ -3,15 +3,15 @@
 	
 	Framework:  AVKit
 	
-	Copyright © 2014-2016 Apple Inc. All rights reserved.
+	Copyright © 2014-2017 Apple Inc. All rights reserved.
 	
  */
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class AVPlayer;
 @protocol AVPlayerViewControllerDelegate;
 
 /*!
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 	@abstract	AVPlayerViewController is a subclass of UIViewController that can be used to display the visual content of an AVPlayer object and the standard playback controls.
  */
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+API_AVAILABLE(ios(8.0))
 @interface AVPlayerViewController : UIViewController
 
 /*!
@@ -32,7 +32,6 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 	@property	showsPlaybackControls
 	@abstract	Whether or not the receiver shows playback controls. Default is YES.
 	@discussion	Clients can set this property to NO when they don't want to have any playback controls on top of the visual content (e.g. for a game splash screen).
-				This property should not be used to temporarily change the visibility of the playback controls since it will create or destroy UI elements.
  */
 @property (nonatomic) BOOL showsPlaybackControls;
 
@@ -66,19 +65,33 @@ NS_CLASS_AVAILABLE_IOS(8_0)
 	@property	allowsPictureInPicturePlayback
 	@abstract	Whether or not the receiver allows Picture in Picture playback. Default is YES.
  */
-@property (nonatomic) BOOL allowsPictureInPicturePlayback NS_AVAILABLE_IOS(9_0);
+@property (nonatomic) BOOL allowsPictureInPicturePlayback API_AVAILABLE(ios(9.0));
 
 /*!
 	@property	updatesNowPlayingInfoCenter
 	@abstract	Whether or not the now playing info center should be updated. Default is YES.
  */
-@property (nonatomic) BOOL updatesNowPlayingInfoCenter NS_AVAILABLE_IOS(10_0);
+@property (nonatomic) BOOL updatesNowPlayingInfoCenter API_AVAILABLE(ios(10.0));
+
+/*!
+	@property	entersFullScreenWhenPlaybackBegins
+	@abstract	Whether or not the receiver automatically enters full screen when the play button is tapped. Default is NO.
+	@discussion	If YES, the receiver will show a user interface tailored to this behavior.
+ */
+@property (nonatomic) BOOL entersFullScreenWhenPlaybackBegins API_AVAILABLE(ios(11.0));
+
+/*!
+	@property	exitsFullScreenWhenPlaybackEnds
+	@abstract	Whether or not the receiver automatically exits full screen when playback ends. Default is NO.
+	@discussion	If multiple player items have been enqueued, the receiver exits fullscreen once no more items are remaining in the queue.
+ */
+@property (nonatomic) BOOL exitsFullScreenWhenPlaybackEnds API_AVAILABLE(ios(11.0));
 
 /*!
 	@property	delegate
 	@abstract	The receiver's delegate.
  */
-@property (nonatomic, weak, nullable) id <AVPlayerViewControllerDelegate> delegate NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, weak, nullable) id <AVPlayerViewControllerDelegate> delegate API_AVAILABLE(ios(9.0));
 
 @end
 

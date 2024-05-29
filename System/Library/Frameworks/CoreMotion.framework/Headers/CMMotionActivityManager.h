@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMMotionActivity.h>
-
 #import <CoreMotion/CMAvailability.h>
+#import <CoreMotion/CMAuthorization.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -54,6 +54,14 @@ NS_CLASS_AVAILABLE(NA,7_0) __TVOS_PROHIBITED
 + (BOOL)isActivityAvailable;
 
 /*
+ *  authorizationStatus
+ *
+ *  Discussion:
+ *      Returns the current authorization status for activity.
+ */
++ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
+
+/*
  * queryActivityStartingFrom:to:toQueue:withHandler:
  *
  * Discussion:
@@ -62,7 +70,7 @@ NS_CLASS_AVAILABLE(NA,7_0) __TVOS_PROHIBITED
  *      for the last seven days.  The result is returned to the handler/queue
  *      specified.
  *
- *      The first activity returned may have a startDate before start, this
+ *      The first activity returned may have a startDate before start. This
  *      activity represents what the state was at the start time.
  *
  */

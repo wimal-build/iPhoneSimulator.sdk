@@ -11,6 +11,8 @@
 #import <Metal/MTLBuffer.h>
 #import <Metal/MTLTypes.h>
 
+
+
 NS_ASSUME_NONNULL_BEGIN
 /*!
  @enum MTLTextureType
@@ -24,7 +26,7 @@ typedef NS_ENUM(NSUInteger, MTLTextureType)
     MTLTextureType2DArray = 3,
     MTLTextureType2DMultisample = 4,
     MTLTextureTypeCube = 5,
-    MTLTextureTypeCubeArray NS_AVAILABLE_MAC(10_11) = 6,
+    MTLTextureTypeCubeArray NS_AVAILABLE(10_11, 11_0) = 6,
     MTLTextureType3D = 7,
 } NS_ENUM_AVAILABLE(10_11, 8_0);
 
@@ -151,7 +153,7 @@ NS_AVAILABLE(10_11, 8_0)
  @property rootResource
  @abstract The resource this texture was created from. It may be a texture or a buffer. If this texture is not reusing storage of another MTLResource, then nil is returned.
  */
-@property (nullable, readonly) id <MTLResource> rootResource NS_DEPRECATED(10_11, 10_12, 8_0, 10_0);
+@property (nullable, readonly) id <MTLResource> rootResource NS_DEPRECATED(10_11, 10_12, 8_0, 10_0, "Use parentTexture or buffer instead");
 
 /*!
  @property parentTexture
@@ -283,13 +285,13 @@ NS_AVAILABLE(10_11, 8_0)
  @method newTextureViewWithPixelFormat:
  @abstract Create a new texture which shares the same storage as the source texture, but with a different (but compatible) pixel format.
  */
-- (id<MTLTexture>)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat;
+- (nullable id<MTLTexture>)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat;
 
 /*!
  @method newTextureViewWithPixelFormat:textureType:levels:slices:
  @abstract Create a new texture which shares the same storage as the source texture, but with a different (but compatible) pixel format, texture type, levels and slices.
  */
-- (id<MTLTexture>)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat textureType:(MTLTextureType)textureType levels:(NSRange)levelRange slices:(NSRange)sliceRange NS_AVAILABLE(10_11, 9_0);
+- (nullable id<MTLTexture>)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat textureType:(MTLTextureType)textureType levels:(NSRange)levelRange slices:(NSRange)sliceRange NS_AVAILABLE(10_11, 9_0);
 
 @end
 NS_ASSUME_NONNULL_END

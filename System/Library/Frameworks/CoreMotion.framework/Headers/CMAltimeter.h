@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMAltitude.h>
 #import <CoreMotion/CMAvailability.h>
+#import <CoreMotion/CMAuthorization.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +25,7 @@ typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSEr
  *  CMAltimeter
  *
  *  Discussion:
- *		CMAltimeter provides information about the altiude of the device.
+ *		CMAltimeter provides information about the altitude of the device.
  */
 NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
 @interface CMAltimeter : NSObject
@@ -36,6 +37,14 @@ NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
  *		Determines whether the device supports reporting relative altitude changes.
  */
 + (BOOL)isRelativeAltitudeAvailable;
+
+/*
+ *  authorizationStatus
+ *
+ *  Discussion:
+ *		Returns the current authorization status for altimeter.
+ */
++ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
 
 /*
  *  startRelativeAltitudeUpdatesToQueue:withHandler:

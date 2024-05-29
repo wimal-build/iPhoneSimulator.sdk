@@ -6,8 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SafariServices/SFFoundation.h>
 
-NS_CLASS_AVAILABLE_IOS(10_0)
+SF_EXTERN API_AVAILABLE(ios(10.0))
 @interface SFContentBlockerState : NSObject
 
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;

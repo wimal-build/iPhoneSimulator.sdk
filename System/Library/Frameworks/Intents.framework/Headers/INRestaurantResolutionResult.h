@@ -2,7 +2,7 @@
 //  INRestaurantResolutionResult.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 //  This API requires you to work with Apple Maps before your application can use it. For information on how to get started, please go to MapsConnect.
 //
@@ -18,10 +18,14 @@ API_AVAILABLE(ios(10.0))
 API_UNAVAILABLE(watchos)
 @interface INRestaurantResolutionResult : INIntentResolutionResult
 
+// This resolution result is for when the app extension wants to proceed, with a given restaurant. The resolvedRestaurant can be different than the original restaurant. This allows app extensions to apply business logic constraints.
+// Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedRestaurant:(INRestaurant *)resolvedRestaurant NS_SWIFT_NAME(success(with:));
 
+// This resolution result is to disambiguate between the provided restaurants.
 + (instancetype)disambiguationWithRestaurantsToDisambiguate:(NSArray<INRestaurant *> *)restaurantsToDisambiguate NS_SWIFT_NAME(disambiguation(with:));
 
+// This resolution result is to confirm if this is the restaurant with which the user wants to continue.
 + (instancetype)confirmationRequiredWithRestaurantToConfirm:(nullable INRestaurant *)restaurantToConfirm NS_SWIFT_NAME(confirmationRequired(with:));
 
 @end

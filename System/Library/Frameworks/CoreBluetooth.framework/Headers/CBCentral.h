@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @discussion Represents a remote central.
  *
  */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(10_9, 6_0)
 CB_EXTERN_CLASS @interface CBCentral : CBPeer
 
 /*!

@@ -139,5 +139,6 @@
 #define	AUE_sudo		45028		/* OpenBSM-allocated. */
 #define	AUE_audit_recovery	45029		/* OpenBSM-allocated. */
 #define	AUE_ssauthmech		45030		/* Darwin-specific. */
+#define	AUE_sec_assessment	45031		/* Darwin-specific. */
 
 #endif /* !_BSM_AUDIT_UEVENTS_H_ */

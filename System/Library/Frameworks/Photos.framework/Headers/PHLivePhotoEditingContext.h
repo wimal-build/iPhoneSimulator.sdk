@@ -111,6 +111,6 @@ typedef NS_ENUM(NSInteger, PHLivePhotoFrameType) {
 /// If set to NO (the default) the live photo will always be rendered before playback
 /// If set to YES, the editing context might still choose to render first for performance reasons
 /// This option is ignored by the saveLivePhotoToOutput method
-extern PHLivePhotoEditingOption PHLivePhotoShouldRenderAtPlaybackTime NS_AVAILABLE(10_12, 10_0);
+extern PHLivePhotoEditingOption PHLivePhotoShouldRenderAtPlaybackTime NS_AVAILABLE(10_12, 11_0);
 
 NS_ASSUME_NONNULL_END

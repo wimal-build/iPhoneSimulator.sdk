@@ -13,8 +13,12 @@
 #include <QuickLook/QLBase.h>
 
 #if __OBJC__
+#import <QuickLook/QLPreviewingController.h>
 #import <QuickLook/QLPreviewController.h>
 #import <QuickLook/QLPreviewItem.h>
+#import <QuickLook/QLThumbnailProvider.h>
+#import <QuickLook/QLThumbnailRequest.h>
+#import <QuickLook/QLThumbnailReply.h>
 #endif
 
 #endif

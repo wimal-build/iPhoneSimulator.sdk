@@ -2,7 +2,7 @@
 //  UITextInputTraits.h
 //  UIKit
 //
-//  Copyright (c) 2006-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -46,6 +46,36 @@ typedef NS_ENUM(NSInteger, UITextSpellCheckingType) {
     UITextSpellCheckingTypeNo,
     UITextSpellCheckingTypeYes,
 } NS_ENUM_AVAILABLE_IOS(5_0);
+
+//
+// UITextSmartQuotesType
+//
+// Controls the automatic conversion of typographic quote characters for a text widget.
+typedef NS_ENUM(NSInteger, UITextSmartQuotesType) {
+    UITextSmartQuotesTypeDefault,
+    UITextSmartQuotesTypeNo,
+    UITextSmartQuotesTypeYes,
+} NS_ENUM_AVAILABLE_IOS(11_0);
+
+//
+// UITextSmartDashesType
+//
+// Controls the automatic conversion of hyphens into en/em-dashes for a text widget.
+typedef NS_ENUM(NSInteger, UITextSmartDashesType) {
+    UITextSmartDashesTypeDefault,
+    UITextSmartDashesTypeNo,
+    UITextSmartDashesTypeYes,
+} NS_ENUM_AVAILABLE_IOS(11_0);
+
+//
+// UITextSmartInsertDeleteType
+//
+// Controls the automatic insertion/removal of spaces for a text widget.
+typedef NS_ENUM(NSInteger, UITextSmartInsertDeleteType) {
+    UITextSmartInsertDeleteTypeDefault,
+    UITextSmartInsertDeleteTypeNo,
+    UITextSmartInsertDeleteTypeYes,
+} NS_ENUM_AVAILABLE_IOS(11_0);
 
 //
 // UIKeyboardType
@@ -133,6 +163,9 @@ typedef NSString * UITextContentType;
 @property(nonatomic) UITextAutocapitalizationType autocapitalizationType; // default is UITextAutocapitalizationTypeSentences
 @property(nonatomic) UITextAutocorrectionType autocorrectionType;         // default is UITextAutocorrectionTypeDefault
 @property(nonatomic) UITextSpellCheckingType spellCheckingType NS_AVAILABLE_IOS(5_0); // default is UITextSpellCheckingTypeDefault;
+@property(nonatomic) UITextSmartQuotesType smartQuotesType NS_AVAILABLE_IOS(11_0); // default is UITextSmartQuotesTypeDefault;
+@property(nonatomic) UITextSmartDashesType smartDashesType NS_AVAILABLE_IOS(11_0); // default is UITextSmartDashesTypeDefault;
+@property(nonatomic) UITextSmartInsertDeleteType smartInsertDeleteType NS_AVAILABLE_IOS(11_0); // default is UITextSmartInsertDeleteTypeDefault;
 @property(nonatomic) UIKeyboardType keyboardType;                         // default is UIKeyboardTypeDefault
 @property(nonatomic) UIKeyboardAppearance keyboardAppearance;             // default is UIKeyboardAppearanceDefault
 @property(nonatomic) UIReturnKeyType returnKeyType;                       // default is UIReturnKeyDefault (See note under UIReturnKeyType enum)
@@ -168,4 +201,6 @@ UIKIT_EXTERN UITextContentType const UITextContentTypeTelephoneNumber           
 UIKIT_EXTERN UITextContentType const UITextContentTypeEmailAddress              NS_AVAILABLE_IOS(10_0);
 UIKIT_EXTERN UITextContentType const UITextContentTypeURL                       NS_AVAILABLE_IOS(10_0);
 UIKIT_EXTERN UITextContentType const UITextContentTypeCreditCardNumber          NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN UITextContentType const UITextContentTypeUsername                  NS_AVAILABLE_IOS(11_0);
+UIKIT_EXTERN UITextContentType const UITextContentTypePassword                  NS_AVAILABLE_IOS(11_0);
 

@@ -2,7 +2,7 @@
 //  UIGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -73,6 +73,8 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIGestureRecognizer : NSObject
 - (NSUInteger)numberOfTouches;                                          // number of touches involved for which locations can be queried
 #endif
 - (CGPoint)locationOfTouch:(NSUInteger)touchIndex inView:(nullable UIView*)view; // the location of a particular touch
+
+@property (nullable, nonatomic, copy) NSString *name API_AVAILABLE(ios(11.0), tvos(11.0)); // name for debugging to appear in logging
 
 @end
 

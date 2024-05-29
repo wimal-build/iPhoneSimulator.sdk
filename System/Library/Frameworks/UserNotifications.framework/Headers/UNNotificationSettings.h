@@ -20,6 +20,17 @@ typedef NS_ENUM(NSInteger, UNAuthorizationStatus) {
     UNAuthorizationStatusAuthorized
 } __IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0);
 
+typedef NS_ENUM(NSInteger, UNShowPreviewsSetting) {
+    // Notification previews are always shown.
+    UNShowPreviewsSettingAlways,
+    
+    // Notifications previews are only shown when authenticated.
+    UNShowPreviewsSettingWhenAuthenticated,
+    
+    // Notifications previews are never shown.
+    UNShowPreviewsSettingNever
+} __IOS_AVAILABLE(11.0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+
 typedef NS_ENUM(NSInteger, UNNotificationSetting) {
     // The application does not support this notification type
     UNNotificationSettingNotSupported  = 0,
@@ -52,6 +63,7 @@ __IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0)
 
 @property (NS_NONATOMIC_IOSONLY, readonly) UNAlertStyle alertStyle __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
+@property (NS_NONATOMIC_IOSONLY, readonly) UNShowPreviewsSetting showPreviewsSetting  __IOS_AVAILABLE(11.0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

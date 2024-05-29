@@ -74,7 +74,7 @@ CB_EXTERN_CLASS @interface CBService : CBAttribute
  *		@link CBService @/link class.
  *
  */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(10_9, 6_0)
 CB_EXTERN_CLASS @interface CBMutableService : CBService
 
 @property(retain, readwrite, nullable) NSArray<CBService *> *includedServices;
@@ -89,7 +89,7 @@ CB_EXTERN_CLASS @interface CBMutableService : CBService
  *  @discussion			Returns a service, initialized with a service type and UUID.
  *
  */
-- (instancetype)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+- (instancetype)initWithType:(CBUUID *)UUID primary:(BOOL)isPrimary NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 @end
 

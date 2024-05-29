@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  * @enum ADInterstitialPresentationPolicy
  *
@@ -95,7 +97,7 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
  * disabled, the view controller's content view will remain embedded - that operation
  * will not be reversed.
  */
-@property (nonatomic, retain, readonly) UIView *originalContentView NS_DEPRECATED_IOS(7_0, 10_0);
+@property (nullable, nonatomic, retain, readonly) UIView *originalContentView NS_DEPRECATED_IOS(7_0, 10_0);
 
 /*!
  * @property presentingFullScreenAd
@@ -144,3 +146,6 @@ typedef NS_ENUM(NSInteger, ADInterstitialPresentationPolicy) {
 @property (NS_NONATOMIC_IOSONLY, readonly) BOOL shouldPresentInterstitialAd NS_DEPRECATED_IOS(7_0, 10_0);
 
 @end
+
+NS_ASSUME_NONNULL_END
+

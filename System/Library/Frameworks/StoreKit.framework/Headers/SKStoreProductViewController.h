@@ -38,6 +38,9 @@ SK_EXTERN_CLASS_AVAILABLE(6_0) __TVOS_PROHIBITED @interface SKStoreProductViewCo
 // iTunes Store item identifier (NSNumber) of the product
 SK_EXTERN NSString * const SKStoreProductParameterITunesItemIdentifier NS_AVAILABLE_IOS(6_0);
 
+// SKU for the In-App Purchase product (NSString) to render at the top of the product page
+SK_EXTERN NSString * const SKStoreProductParameterProductIdentifier NS_AVAILABLE_IOS(11_0);
+
 // iTunes Store affiliate token (NSString)
 SK_EXTERN NSString * const SKStoreProductParameterAffiliateToken NS_AVAILABLE_IOS(8_0);
 

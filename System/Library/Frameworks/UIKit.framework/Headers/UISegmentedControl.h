@@ -2,7 +2,7 @@
 //  UISegmentedControl.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,6 +12,8 @@
 #import <UIKit/UIApplication.h>
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UIBarButtonItem.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -100,6 +102,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UISegmentedControl : UIControl <NSCoding>
 - (UIOffset)contentPositionAdjustmentForSegmentType:(UISegmentedControlSegment)leftCenterRightOrAlone barMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 @end
+
+#if TARGET_OS_IOS
+@interface UISegmentedControl (SpringLoading) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END
 

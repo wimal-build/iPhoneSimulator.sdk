@@ -2,7 +2,7 @@
 //  UIPinchGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>

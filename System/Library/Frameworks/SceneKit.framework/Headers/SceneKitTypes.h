@@ -1,7 +1,7 @@
 //
 //  SceneKitTypes.h
 //
-//  Copyright (c) 2012-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,31 @@
 #endif
 
 
+// Color
+#define SCNColor UIColor
+
+/*! @enum SCNActionTimingMode
+ @abstract The modes that an action can use to adjust the apparent timing of the action.
+ */
+typedef NS_ENUM(NSInteger, SCNActionTimingMode) {
+    SCNActionTimingModeLinear,
+    SCNActionTimingModeEaseIn,
+    SCNActionTimingModeEaseOut,
+    SCNActionTimingModeEaseInEaseOut
+} API_AVAILABLE(macos(10.10), ios(8.0));
+
+/*! @enum SCNColorComponent
+ @abstract Color components
+ */
+typedef NS_OPTIONS(NSInteger, SCNColorMask) {
+    SCNColorMaskNone   = 0,
+    SCNColorMaskRed    = 0x1 << 3,
+    SCNColorMaskGreen  = 0x1 << 2,
+    SCNColorMaskBlue   = 0x1 << 1,
+    SCNColorMaskAlpha  = 0x1 << 0,
+    SCNColorMaskAll    = 0xf
+} API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0));
+
 #pragma mark - Vectors
 
 typedef struct SCNVector3 {
@@ -33,10 +58,10 @@ typedef struct SCNVector4 {
 } SCNVector4;
 
 /* The null vector: [0 0 0]. */
-FOUNDATION_EXTERN const SCNVector3 SCNVector3Zero API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN const SCNVector3 SCNVector3Zero API_AVAILABLE(macos(10.10));
 
 /* The null vector: [0 0 0 0]. */
-FOUNDATION_EXTERN const SCNVector4 SCNVector4Zero API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN const SCNVector4 SCNVector4Zero API_AVAILABLE(macos(10.10));
 
 /* Returns true if 'a' is exactly equal to 'b'. */
 FOUNDATION_EXTERN bool SCNVector3EqualToVector3 (SCNVector3 a, SCNVector3 b);
@@ -72,13 +97,13 @@ typedef struct SCNMatrix4 {
 } SCNMatrix4;
 
 /* The identity matrix: [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1]. */
-FOUNDATION_EXTERN const SCNMatrix4 SCNMatrix4Identity API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN const SCNMatrix4 SCNMatrix4Identity API_AVAILABLE(macos(10.10));
 
 /* Returns true if 'm' is the identity matrix. */
-FOUNDATION_EXTERN bool SCNMatrix4IsIdentity(SCNMatrix4 m) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN bool SCNMatrix4IsIdentity(SCNMatrix4 m) API_AVAILABLE(macos(10.10));
 
 /* Returns true if 'a' is exactly equal to 'b'. */
-FOUNDATION_EXTERN bool SCNMatrix4EqualToMatrix4(SCNMatrix4 a, SCNMatrix4 b) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN bool SCNMatrix4EqualToMatrix4(SCNMatrix4 a, SCNMatrix4 b) API_AVAILABLE(macos(10.10));
 
 /* Returns a transform that translates by '(tx, ty, tz)':
  * m' =  [1 0 0 0; 0 1 0 0; 0 0 1 0; tx ty tz 1]. */
@@ -101,7 +126,7 @@ NS_INLINE SCNMatrix4 SCNMatrix4MakeScale(float sx, float sy, float sz) {
 }
 
 /* Returns a matrix that rotates by 'angle' radians about the vector '(x, y, z)'. */
-FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4MakeRotation(float angle, float x, float y, float z) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4MakeRotation(float angle, float x, float y, float z) API_AVAILABLE(macos(10.10));
 
 /* Translate 'm' by '(tx, ty, tz)' and return the result:
  * m' = translate(tx, ty, tz) * m. */
@@ -114,17 +139,17 @@ NS_INLINE SCNMatrix4 SCNMatrix4Translate(SCNMatrix4 m, float tx, float ty, float
 
 /* Scale 'm' by '(sx, sy, sz)' and return the result:
  * m' = scale(sx, sy, sz) * m. */
-FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Scale(SCNMatrix4 m, float sx, float sy, float sz) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Scale(SCNMatrix4 m, float sx, float sy, float sz) API_AVAILABLE(macos(10.10));
 
 /* Rotate 'm' by 'angle' radians about the vector '(x, y, z)' and return the result:
  * m' = rotation(angle, x, y, z) * m. */
-FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Rotate(SCNMatrix4 m, float angle, float x, float y, float z) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Rotate(SCNMatrix4 m, float angle, float x, float y, float z) API_AVAILABLE(macos(10.10));
 
 /* Invert 'm' and return the result. */
-FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Invert(SCNMatrix4 m) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Invert(SCNMatrix4 m) API_AVAILABLE(macos(10.10));
 
 /* Concatenate 'b' to 'a' and return the result: m' = a * b. */
-FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Mult(SCNMatrix4 a, SCNMatrix4 b) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4Mult(SCNMatrix4 a, SCNMatrix4 b) API_AVAILABLE(macos(10.10));
 
 
 #pragma mark - GLKit Bridge
@@ -149,8 +174,8 @@ NS_INLINE GLKVector4 SCNVector4ToGLKVector4(SCNVector4 vector) {
     return v;
 }
 
-FOUNDATION_EXTERN GLKMatrix4 SCNMatrix4ToGLKMatrix4(SCNMatrix4 mat) API_AVAILABLE(macosx(10.10));
-FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4FromGLKMatrix4(GLKMatrix4 mat) API_AVAILABLE(macosx(10.10));
+FOUNDATION_EXTERN GLKMatrix4 SCNMatrix4ToGLKMatrix4(SCNMatrix4 mat) API_AVAILABLE(macos(10.10));
+FOUNDATION_EXTERN SCNMatrix4 SCNMatrix4FromGLKMatrix4(GLKMatrix4 mat) API_AVAILABLE(macos(10.10));
 
 
 #pragma mark - SIMD Bridge
@@ -205,11 +230,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSValue *)valueWithSCNVector3:(SCNVector3)v;
 + (NSValue *)valueWithSCNVector4:(SCNVector4)v;
-+ (NSValue *)valueWithSCNMatrix4:(SCNMatrix4)v API_AVAILABLE(macosx(10.10));
++ (NSValue *)valueWithSCNMatrix4:(SCNMatrix4)v API_AVAILABLE(macos(10.10));
 
 @property(nonatomic, readonly) SCNVector3 SCNVector3Value;
 @property(nonatomic, readonly) SCNVector4 SCNVector4Value;
-@property(nonatomic, readonly) SCNMatrix4 SCNMatrix4Value API_AVAILABLE(macosx(10.10));
+@property(nonatomic, readonly) SCNMatrix4 SCNMatrix4Value API_AVAILABLE(macos(10.10));
 
 @end
 

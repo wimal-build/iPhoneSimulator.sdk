@@ -3,7 +3,7 @@
 	
 	Framework:  AVFoundation
 	
-	Copyright 2009-2016 Apple Inc. All rights reserved.
+	Copyright 2009-2017 Apple Inc. All rights reserved.
 	
 */
 
@@ -35,7 +35,6 @@ NS_ASSUME_NONNULL_BEGIN
  ports include built-in speaker, wired microphone, or Bluetooth A2DP output.
 */
 
-
 #pragma mark -- enumerations --
 
 /* For use with AVAudioSessionInterruptionNotification */
@@ -61,9 +60,9 @@ Route audio output to speaker.  Use this override with AVAudioSessionCategoryPla
 default routes the output to the receiver. */
 typedef NS_ENUM(NSUInteger, AVAudioSessionPortOverride)
 {
-	AVAudioSessionPortOverrideNone    = 0,
+	AVAudioSessionPortOverrideNone = 0,
 	AVAudioSessionPortOverrideSpeaker __TVOS_PROHIBITED __WATCHOS_PROHIBITED = 'spkr'
-} NS_AVAILABLE_IOS(6_0) ;
+} NS_AVAILABLE_IOS(6_0);
 
 /* values for AVAudioSessionRouteChangeReasonKey in AVAudioSessionRouteChangeNotification userInfo dictionary
  AVAudioSessionRouteChangeReasonUnknown
@@ -199,11 +198,11 @@ typedef NS_OPTIONS(NSUInteger, AVAudioSessionCategoryOptions)
 	/* DefaultToSpeaker is only valid with AVAudioSessionCategoryPlayAndRecord */
 	AVAudioSessionCategoryOptionDefaultToSpeaker __TVOS_PROHIBITED __WATCHOS_PROHIBITED		= 0x8,
 	/* InterruptSpokenAudioAndMixWithOthers is only valid with AVAudioSessionCategoryPlayAndRecord, AVAudioSessionCategoryPlayback, and AVAudioSessionCategoryMultiRoute */
-	AVAudioSessionCategoryOptionInterruptSpokenAudioAndMixWithOthers NS_AVAILABLE_IOS(9_0) 	= 0x11,
-    /* AllowBluetoothA2DP is only valid with AVAudioSessionCategoryPlayAndRecord */
-    AVAudioSessionCategoryOptionAllowBluetoothA2DP NS_AVAILABLE_IOS(10_0) = 0x20,
-    /* AllowAirPlay is only valid with AVAudioSessionCategoryPlayAndRecord */
-    AVAudioSessionCategoryOptionAllowAirPlay NS_AVAILABLE_IOS(10_0) __WATCHOS_PROHIBITED = 0x40,
+	AVAudioSessionCategoryOptionInterruptSpokenAudioAndMixWithOthers NS_AVAILABLE_IOS(9_0) = 0x11,
+	/* AllowBluetoothA2DP is only valid with AVAudioSessionCategoryPlayAndRecord */
+	AVAudioSessionCategoryOptionAllowBluetoothA2DP API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) = 0x20,
+	/* AllowAirPlay is only valid with AVAudioSessionCategoryPlayAndRecord */
+	AVAudioSessionCategoryOptionAllowAirPlay API_AVAILABLE(ios(10.0), tvos(10.0)) __WATCHOS_PROHIBITED = 0x40,
 } NS_AVAILABLE_IOS(6_0);
 
 typedef NS_ENUM(NSUInteger, AVAudioSessionInterruptionType)
@@ -230,12 +229,12 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionSilenceSecondaryAudioHintType)
  		The user has been asked and has granted permission.
 */
 
-typedef NS_OPTIONS(NSUInteger, AVAudioSessionRecordPermission)
+typedef NS_ENUM(NSUInteger, AVAudioSessionRecordPermission)
 {
 	AVAudioSessionRecordPermissionUndetermined		= 'undt',
 	AVAudioSessionRecordPermissionDenied			= 'deny',
 	AVAudioSessionRecordPermissionGranted			= 'grnt'
-} NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+} __TVOS_PROHIBITED API_AVAILABLE(ios(8.0), watchos(4.0));
 
 /*
  @enum AVAudioSessionIOType values
@@ -279,7 +278,30 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionIOType)
 {
 	AVAudioSessionIOTypeNotSpecified = 0,
 	AVAudioSessionIOTypeAggregated = 1
-} NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+} API_AVAILABLE(ios(10.0)) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+
+/*!
+	@enum		AVAudioSessionRouteSharingPolicy
+	@constant	AVAudioSessionRouteSharingPolicyDefault
+		Follow normal rules for routing audio output.
+	@constant	AVAudioSessionRouteSharingPolicyLongForm
+		Route output to the shared long-form audio output. A session whose primary use case is as a
+		music or podcast player may use this value to play to the same output as the built-in Music (iOS), 
+		Podcasts, or iTunes (macOS) applications. Typically applications that use this policy will also
+		want sign up for remote control events as documented in “Event Handling Guide for UIKit Apps” 
+		and will want to utilize MediaPlayer framework’s MPNowPlayingInfoCenter class. All applications
+		on the system that use the long-form route sharing policy will have their audio routed to the
+		same location.
+	@constant	AVAudioSessionRouteSharingPolicyIndependent
+		Applications should not attempt to set this value directly. On iOS, this value will be set by
+		the system in cases where route picker UI is used to direct video to a wireless route.
+*/
+typedef NS_ENUM(NSUInteger, AVAudioSessionRouteSharingPolicy)
+{
+	AVAudioSessionRouteSharingPolicyDefault			= 0,
+	AVAudioSessionRouteSharingPolicyLongForm		= 1,
+	AVAudioSessionRouteSharingPolicyIndependent		= 2,
+} API_AVAILABLE(ios(11.0), tvos(11.0)) __WATCHOS_PROHIBITED;
 
 /*!
 	@enum AVAudioSession error codes
@@ -334,17 +356,18 @@ typedef NS_ENUM(NSInteger, AVAudioSessionErrorCode)
 	AVAudioSessionErrorInsufficientPriority				= '!pri',			/* 0x21707269, 561017449	*/
 	AVAudioSessionErrorCodeResourceNotAvailable			= '!res',			/* 0x21726573, 561145203	*/
 	AVAudioSessionErrorCodeUnspecified					= 'what'			/* 0x77686174, 2003329396	*/
-} NS_AVAILABLE_IOS(7_0);
+} API_AVAILABLE(ios(7.0), watchos(2.0), tvos(7.0));
 
-#pragma mark -- AVAudioSession interface --
+#if !TARGET_OS_OSX
+#pragma mark -- iOS/tvOS/watchOS AVAudioSession interface --
 NS_CLASS_AVAILABLE(NA, 3_0)
 @interface AVAudioSession : NSObject {
 @private
-    void * _impl;
+	void *_impl;
 }
 
- /* returns singleton instance */
-+ (AVAudioSession*)sharedInstance;
+/* returns singleton instance */
++ (AVAudioSession *)sharedInstance;
 
 /* Set the session active or inactive. Note that activating an audio session is a synchronous (blocking) operation.
  Therefore, we recommend that applications not activate their session from a thread where a long blocking operation will be problematic.
@@ -356,20 +379,45 @@ NS_CLASS_AVAILABLE(NA, 3_0)
 
 // Get the list of categories available on the device.  Certain categories may be unavailable on particular devices.  For example,
 // AVAudioSessionCategoryRecord will not be available on devices that have no support for audio input.
-@property(readonly) NSArray<NSString *> *availableCategories NS_AVAILABLE_IOS(9_0);
+@property (readonly) NSArray<NSString *> *availableCategories NS_AVAILABLE_IOS(9_0);
 
 /* set session category */
 - (BOOL)setCategory:(NSString *)category error:(NSError **)outError;
 /* set session category with options */
 - (BOOL)setCategory:(NSString *)category withOptions:(AVAudioSessionCategoryOptions)options error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
 /* set session category and mode with options */
-- (BOOL)setCategory:(NSString *)category mode:(NSString *)mode options:(AVAudioSessionCategoryOptions)options error:(NSError **)outError NS_AVAILABLE_IOS(10_0);
+- (BOOL)setCategory:(NSString *)category mode:(NSString *)mode options:(AVAudioSessionCategoryOptions)options error:(NSError **)outError API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
+
+/* set session category, mode, routing sharing policy, and options 
+ Use of the long-form route sharing policy is only valid in conjunction with a limited set of category, mode, and option values.
+ Allowed categories: AVAudioSessionCategoryPlayback
+ Allowed modes: AVAudioSessionModeDefault, AVAudioSessionModeMoviePlayback, AVAudioSessionModeSpokenAudio
+ Allowed options: None. Options are allowed when changing the routing policy back to Default, however. */
+- (BOOL)setCategory:(NSString *)category mode:(NSString *)mode routeSharingPolicy:(AVAudioSessionRouteSharingPolicy)policy options:(AVAudioSessionCategoryOptions)options error:(NSError **)outError API_AVAILABLE(ios(11.0), tvos(11.0)) __WATCHOS_PROHIBITED;
 
 /* get session category. Examples: AVAudioSessionCategoryRecord, AVAudioSessionCategoryPlayAndRecord, etc. */
-@property(readonly) NSString *category;
+@property (readonly) NSString *category;
+
+/* get the current set of AVAudioSessionCategoryOptions */
+@property (readonly) AVAudioSessionCategoryOptions categoryOptions NS_AVAILABLE_IOS(6_0);
+
+/* Get the routing policy. See AVAudioSessionRouteSharingPolicy for a description of the available policies
+ See -setCategory:mode:routeSharingPolicy:options:error: method for additional discussion. */
+@property (readonly) AVAudioSessionRouteSharingPolicy routeSharingPolicy API_AVAILABLE(ios(11.0), tvos(11.0)) __WATCHOS_PROHIBITED;
+
+// Modes modify the audio category in order to introduce behavior that is tailored to the specific
+// use of audio within an application. Examples:  AVAudioSessionModeVideoRecording, AVAudioSessionModeVoiceChat,
+// AVAudioSessionModeMeasurement, etc.
+
+// Get the list of modes available on the device.  Certain modes may be unavailable on particular devices.  For example,
+// AVAudioSessionModeVideoRecording will not be available on devices that have no support for recording video.
+@property (readonly) NSArray<NSString *> *availableModes NS_AVAILABLE_IOS(9_0);
+
+- (BOOL)setMode:(NSString *)mode error:(NSError **)outError NS_AVAILABLE_IOS(5_0); /* set session mode */
+@property (readonly) NSString *mode NS_AVAILABLE_IOS(5_0); /* get session mode */
 
 /* Returns an enum indicating whether the user has granted or denied permission to record, or has not been asked */
-- (AVAudioSessionRecordPermission)recordPermission NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+- (AVAudioSessionRecordPermission)recordPermission __TVOS_PROHIBITED API_AVAILABLE(ios(8.0), watchos(4.0));
 
 /* Checks to see if calling process has permission to record audio.  The 'response' block will be called
  immediately if permission has already been granted or denied.  Otherwise, it presents a dialog to notify
@@ -378,23 +426,9 @@ NS_CLASS_AVAILABLE(NA, 3_0)
  */
 typedef void (^PermissionBlock)(BOOL granted);
 
-- (void)requestRecordPermission:(PermissionBlock)response NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+- (void)requestRecordPermission:(PermissionBlock)response __TVOS_PROHIBITED API_AVAILABLE(ios(7.0), watchos(4.0));
 
-/* get the current set of AVAudioSessionCategoryOptions */
-@property(readonly) AVAudioSessionCategoryOptions categoryOptions NS_AVAILABLE_IOS(6_0);
-
-// Modes modify the audio category in order to introduce behavior that is tailored to the specific
-// use of audio within an application. Examples:  AVAudioSessionModeVideoRecording, AVAudioSessionModeVoiceChat,
-// AVAudioSessionModeMeasurement, etc.
-
-// Get the list of modes available on the device.  Certain modes may be unavailable on particular devices.  For example,
-// AVAudioSessionModeVideoRecording will not be available on devices that have no support for recording video.
-@property(readonly) NSArray<NSString *> *availableModes NS_AVAILABLE_IOS(9_0);
-
-- (BOOL)setMode:(NSString *)mode error:(NSError **)outError NS_AVAILABLE_IOS(5_0); /* set session mode */
-@property(readonly) NSString *mode NS_AVAILABLE_IOS(5_0); /* get session mode */
-
-- (BOOL)overrideOutputAudioPort:(AVAudioSessionPortOverride)portOverride  error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
+- (BOOL)overrideOutputAudioPort:(AVAudioSessionPortOverride)portOverride error:(NSError **)outError NS_AVAILABLE_IOS(6_0);
 
 /* Will be true when another application is playing audio.
 Note: As of iOS 8.0, Apple recommends that most applications use secondaryAudioShouldBeSilencedHint instead of this property.
@@ -402,31 +436,29 @@ The otherAudioPlaying property will be true if any other audio (including audio 
 is playing, whereas the secondaryAudioShouldBeSilencedHint property is more restrictive in its consideration of whether 
 primary audio from another application is playing.  
 */
-@property(readonly, getter=isOtherAudioPlaying) BOOL otherAudioPlaying  NS_AVAILABLE_IOS(6_0);
+@property (readonly, getter=isOtherAudioPlaying) BOOL otherAudioPlaying NS_AVAILABLE_IOS(6_0);
 
 /* Will be true when another application with a non-mixable audio session is playing audio.  Applications may use
 this property as a hint to silence audio that is secondary to the functionality of the application. For example, a game app
 using AVAudioSessionCategoryAmbient may use this property to decide to mute its soundtrack while leaving its sound effects unmuted.
 Note: This property is closely related to AVAudioSessionSilenceSecondaryAudioHintNotification.
 */
-@property(readonly) BOOL secondaryAudioShouldBeSilencedHint  NS_AVAILABLE_IOS(8_0);
+@property (readonly) BOOL secondaryAudioShouldBeSilencedHint NS_AVAILABLE_IOS(8_0);
 
 /* A description of the current route, consisting of zero or more input ports and zero or more output ports */
-@property(readonly) AVAudioSessionRouteDescription *currentRoute NS_AVAILABLE_IOS(6_0);
-
+@property (readonly) AVAudioSessionRouteDescription *currentRoute NS_AVAILABLE_IOS(6_0);
 
 /* Select a preferred input port for audio routing. If the input port is already part of the current audio route, this will have no effect.
    Otherwise, selecting an input port for routing will initiate a route change to use the preferred input port, provided that the application's
    session controls audio routing. Setting a nil value will clear the preference. */
 - (BOOL)setPreferredInput:(nullable AVAudioSessionPortDescription *)inPort error:(NSError **)outError NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
-@property(readonly, nullable) AVAudioSessionPortDescription * preferredInput NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED; /* Get the preferred input port.  Will be nil if no preference has been set */
+@property (readonly, nullable) AVAudioSessionPortDescription *preferredInput NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED; /* Get the preferred input port.  Will be nil if no preference has been set */
 
 /* Get the set of input ports that are available for routing. Note that this property only applies to the session's current category and mode.
    For example, if the session's current category is AVAudioSessionCategoryPlayback, there will be no available inputs.  */
-@property(readonly, nullable) NSArray<AVAudioSessionPortDescription *> * availableInputs NS_AVAILABLE_IOS(7_0);
+@property (readonly, nullable) NSArray<AVAudioSessionPortDescription *> *availableInputs NS_AVAILABLE_IOS(7_0);
 
 @end
-
 
 /* AVAudioSessionHardwareConfiguration manages the set of properties that reflect the current state of
  audio hardware in the current route.  Applications whose functionality depends on these properties should
@@ -436,28 +468,27 @@ Note: This property is closely related to AVAudioSessionSilenceSecondaryAudioHin
 /* Get and set preferred values for hardware properties.  Note: that there are corresponding read-only
  properties that describe the actual values for sample rate, I/O buffer duration, etc. */
 
-	/* The preferred hardware sample rate for the session. The actual sample rate may be different. */
-- (BOOL)setPreferredSampleRate:(double)sampleRate  error:(NSError **)outError NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
-@property(readonly) double preferredSampleRate NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
+/* The preferred hardware sample rate for the session. The actual sample rate may be different. */
+- (BOOL)setPreferredSampleRate:(double)sampleRate error:(NSError **)outError NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
+@property (readonly) double preferredSampleRate NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
 
-	/* The preferred hardware IO buffer duration in seconds. The actual IO buffer duration may be different.  */
+/* The preferred hardware IO buffer duration in seconds. The actual IO buffer duration may be different.  */
 - (BOOL)setPreferredIOBufferDuration:(NSTimeInterval)duration error:(NSError **)outError __WATCHOS_PROHIBITED;
-@property(readonly) NSTimeInterval preferredIOBufferDuration __WATCHOS_PROHIBITED;
+@property (readonly) NSTimeInterval preferredIOBufferDuration __WATCHOS_PROHIBITED;
 
-	/* Sets the number of input channels that the app would prefer for the current route */
+/* Sets the number of input channels that the app would prefer for the current route */
 - (BOOL)setPreferredInputNumberOfChannels:(NSInteger)count error:(NSError **)outError NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
-@property(readonly) NSInteger preferredInputNumberOfChannels NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly) NSInteger preferredInputNumberOfChannels NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
-	/* Sets the number of output channels that the app would prefer for the current route */
+/* Sets the number of output channels that the app would prefer for the current route */
 - (BOOL)setPreferredOutputNumberOfChannels:(NSInteger)count error:(NSError **)outError NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
-@property(readonly) NSInteger preferredOutputNumberOfChannels NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
-
+@property (readonly) NSInteger preferredOutputNumberOfChannels NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* Returns the largest number of audio input channels available for the current route */
-@property (readonly) NSInteger	maximumInputNumberOfChannels NS_AVAILABLE_IOS(7_0);
+@property (readonly) NSInteger maximumInputNumberOfChannels NS_AVAILABLE_IOS(7_0);
 
 /* Returns the largest number of audio output channels available for the current route */
-@property (readonly) NSInteger	maximumOutputNumberOfChannels NS_AVAILABLE_IOS(7_0);
+@property (readonly) NSInteger maximumOutputNumberOfChannels NS_AVAILABLE_IOS(7_0);
 
 /* A value defined over the range [0.0, 1.0], with 0.0 corresponding to the lowest analog
 gain setting and 1.0 corresponding to the highest analog gain setting.  Attempting to set values
@@ -467,15 +498,15 @@ When no applications are using the input gain control, the system will restore t
 gain setting for the input source.  Note that some audio accessories, such as USB devices, may
 not have a default value.  This property is only valid if inputGainSettable
 is true.  Note: inputGain is key-value observable */
-- (BOOL)setInputGain:(float)gain  error:(NSError **)outError NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
-@property(readonly) float inputGain NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED; /* value in range [0.0, 1.0] */
+- (BOOL)setInputGain:(float)gain error:(NSError **)outError NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
+@property (readonly) float inputGain NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED; /* value in range [0.0, 1.0] */
 
 /* True when audio input gain is available.  Some input ports may not provide the ability to set the
 input gain, so check this value before attempting to set input gain. */
-@property(readonly, getter=isInputGainSettable) BOOL inputGainSettable  NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
+@property (readonly, getter=isInputGainSettable) BOOL inputGainSettable NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
 
 /* True if input hardware is available. */
-@property(readonly, getter=isInputAvailable) BOOL inputAvailable  NS_AVAILABLE_IOS(6_0);
+@property (readonly, getter=isInputAvailable) BOOL inputAvailable NS_AVAILABLE_IOS(6_0);
 
 /* DataSource methods are for use with routes that support input or output data source selection.
 If the attached accessory supports data source selection, the data source properties/methods provide for discovery and 
@@ -484,52 +515,51 @@ equivalent to the properties and methods on AVAudioSessionPortDescription. The m
 routed ports. */
 
 /* Key-value observable. */
-@property(readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> * inputDataSources NS_AVAILABLE_IOS(6_0);
+@property (readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> *inputDataSources NS_AVAILABLE_IOS(6_0);
 
 /* Get and set the currently selected data source.  Will be nil if no data sources are available.
 Setting a nil value will clear the data source preference. */
-@property(readonly, nullable) AVAudioSessionDataSourceDescription *inputDataSource NS_AVAILABLE_IOS(6_0);
+@property (readonly, nullable) AVAudioSessionDataSourceDescription *inputDataSource NS_AVAILABLE_IOS(6_0);
 - (BOOL)setInputDataSource:(nullable AVAudioSessionDataSourceDescription *)dataSource error:(NSError **)outError NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
 
 /* Key-value observable. */
-@property(readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> * outputDataSources NS_AVAILABLE_IOS(6_0);
+@property (readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> *outputDataSources NS_AVAILABLE_IOS(6_0);
 
 /* Get and set currently selected data source.  Will be nil if no data sources are available. 
 Setting a nil value will clear the data source preference. */
-@property(readonly, nullable) AVAudioSessionDataSourceDescription *outputDataSource NS_AVAILABLE_IOS(6_0);
+@property (readonly, nullable) AVAudioSessionDataSourceDescription *outputDataSource NS_AVAILABLE_IOS(6_0);
 - (BOOL)setOutputDataSource:(nullable AVAudioSessionDataSourceDescription *)dataSource error:(NSError **)outError NS_AVAILABLE_IOS(6_0) __WATCHOS_PROHIBITED;
-
 
 /* Current values for hardware properties.  Note that most of these properties have corresponding methods 
 for getting and setting preferred values.  Input- and output-specific properties will generate an error if they are 
 queried if the audio session category does not support them.  Each of these will return 0 (or 0.0) if there is an error.  */
 
-	/* The current hardware sample rate */
-@property(readonly) double sampleRate NS_AVAILABLE_IOS(6_0);
+/* The current hardware sample rate */
+@property (readonly) double sampleRate NS_AVAILABLE_IOS(6_0);
 
-	/* The current number of hardware input channels. Is key-value observable */
-@property(readonly) NSInteger inputNumberOfChannels NS_AVAILABLE_IOS(6_0);
+/* The current number of hardware input channels. Is key-value observable */
+@property (readonly) NSInteger inputNumberOfChannels NS_AVAILABLE_IOS(6_0);
 
-	/* The current number of hardware output channels. Is key-value observable */
-@property(readonly) NSInteger outputNumberOfChannels NS_AVAILABLE_IOS(6_0);
+/* The current number of hardware output channels. Is key-value observable */
+@property (readonly) NSInteger outputNumberOfChannels NS_AVAILABLE_IOS(6_0);
 
-	/* The current output volume. Is key-value observable */
-@property(readonly) float outputVolume  NS_AVAILABLE_IOS(6_0); /* value in range [0.0, 1.0] */
+/* The current output volume. Is key-value observable */
+@property (readonly) float outputVolume NS_AVAILABLE_IOS(6_0); /* value in range [0.0, 1.0] */
 
-	/* The current hardware input latency in seconds. */
-@property(readonly) NSTimeInterval inputLatency  NS_AVAILABLE_IOS(6_0);
+/* The current hardware input latency in seconds. */
+@property (readonly) NSTimeInterval inputLatency NS_AVAILABLE_IOS(6_0);
 
-	/* The current hardware output latency in seconds. */
-@property(readonly) NSTimeInterval outputLatency  NS_AVAILABLE_IOS(6_0);
+/* The current hardware output latency in seconds. */
+@property (readonly) NSTimeInterval outputLatency NS_AVAILABLE_IOS(6_0);
 
-	/* The current hardware IO buffer duration in seconds. */
-@property(readonly) NSTimeInterval IOBufferDuration  NS_AVAILABLE_IOS(6_0);
+/* The current hardware IO buffer duration in seconds. */
+@property (readonly) NSTimeInterval IOBufferDuration NS_AVAILABLE_IOS(6_0);
 
 /* Set inIOType to AVAudioSessionIOTypeAggregated if your app uses AVAudioSessionCategoryPlayAndRecord
  and requires input and output audio to be presented in the same realtime I/O callback. See the AVAudioSessionIOType
  documentation for more details.
  */
-- (BOOL)setAggregatedIOPreference:(AVAudioSessionIOType)inIOType error:(NSError **)outError NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+- (BOOL)setAggregatedIOPreference:(AVAudioSessionIOType)inIOType error:(NSError **)outError API_AVAILABLE(ios(10.0)) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 @end
 
@@ -570,13 +600,13 @@ AVF_EXPORT NSString *const AVAudioSessionSilenceSecondaryAudioHintNotification N
 #pragma mark -- Keys for NSNotification userInfo dictionaries --
 
 /* keys for AVAudioSessionInterruptionNotification */
-	/* Value is an NSNumber representing an AVAudioSessionInterruptionType */
+/* Value is an NSNumber representing an AVAudioSessionInterruptionType */
 AVF_EXPORT NSString *const AVAudioSessionInterruptionTypeKey NS_AVAILABLE_IOS(6_0);
 
-	/* Only present for end interruption events.  Value is of type AVAudioSessionInterruptionOptions.*/
+/* Only present for end interruption events.  Value is of type AVAudioSessionInterruptionOptions.*/
 AVF_EXPORT NSString *const AVAudioSessionInterruptionOptionKey NS_AVAILABLE_IOS(6_0);
 
-	/* Only present in begin interruption events, where the interruption is a direct result of the application being suspended
+/* Only present in begin interruption events, where the interruption is a direct result of the application being suspended
 	by the operating sytem. Value is a boolean NSNumber, where a true value indicates that the interruption is the result
 	of the application being suspended, rather than being interrupted by another audio session.
 	
@@ -586,11 +616,10 @@ AVF_EXPORT NSString *const AVAudioSessionInterruptionOptionKey NS_AVAILABLE_IOS(
 	at the time the session was deactivated by the system and the notification can only be delivered once the app is running again. */
 AVF_EXPORT NSString *const AVAudioSessionInterruptionWasSuspendedKey NS_AVAILABLE_IOS(10_3);
 
-	
 /* keys for AVAudioSessionRouteChangeNotification */
-	/* value is an NSNumber representing an AVAudioSessionRouteChangeReason */
+/* value is an NSNumber representing an AVAudioSessionRouteChangeReason */
 AVF_EXPORT NSString *const AVAudioSessionRouteChangeReasonKey NS_AVAILABLE_IOS(6_0);
-	/* value is AVAudioSessionRouteDescription * */
+/* value is AVAudioSessionRouteDescription * */
 AVF_EXPORT NSString *const AVAudioSessionRouteChangePreviousRouteKey NS_AVAILABLE_IOS(6_0);
 
 /* keys for AVAudioSessionSilenceSecondaryAudioHintNotification */
@@ -602,7 +631,7 @@ AVF_EXPORT NSString *const AVAudioSessionSilenceSecondaryAudioHintTypeKey NS_AVA
 /*  Use this category for background sounds such as rain, car engine noise, etc.  
  Mixes with other music. */
 AVF_EXPORT NSString *const AVAudioSessionCategoryAmbient;
-	
+
 /*  Use this category for background sounds.  Other music will stop playing. */
 AVF_EXPORT NSString *const AVAudioSessionCategorySoloAmbient;
 
@@ -732,7 +761,7 @@ AVF_EXPORT NSString *const AVAudioSessionPolarPatternSubcardioid		NS_AVAILABLE_I
 NS_CLASS_AVAILABLE(NA, 6_0)
 @interface AVAudioSessionChannelDescription : NSObject {
 @private
-    void *_impl;
+	void *_impl;
 }
 
 @property(readonly) NSString *			channelName;
@@ -745,17 +774,17 @@ NS_CLASS_AVAILABLE(NA, 6_0)
 NS_CLASS_AVAILABLE(NA, 6_0)
 @interface AVAudioSessionPortDescription : NSObject {
 @private
-    void * _impl;
+	void *_impl;
 }
 
 /* Value is one of the AVAudioSessionPort constants declared above. */
-@property(readonly) NSString *portType;
+@property (readonly) NSString *portType;
 
 /* A descriptive name for the port */
-@property(readonly) NSString *portName;
+@property (readonly) NSString *portName;
 
 /* A system-assigned unique identifier for the port */
-@property(readonly) NSString *UID;
+@property (readonly) NSString *UID;
 
 /* This property's value will be true if the associated hardware port has built-in processing for two-way 
  voice communication. Applications that use their own proprietary voice processing algorithms should use 
@@ -763,20 +792,20 @@ NS_CLASS_AVAILABLE(NA, 6_0)
  I/O unit (subtype kAudioUnitSubType_VoiceProcessingIO), the system will automatically manage this for the 
  application. In particular, ports of type AVAudioSessionPortBluetoothHFP and AVAudioSessionPortCarAudio
  often have hardware voice processing. */
-@property(readonly) BOOL hasHardwareVoiceCallProcessing NS_AVAILABLE_IOS(10_0);
+@property (readonly) BOOL hasHardwareVoiceCallProcessing API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
-@property(readonly, nullable) NSArray<AVAudioSessionChannelDescription *> *	channels;
+@property (readonly, nullable) NSArray<AVAudioSessionChannelDescription *> *channels;
 
 /* Will be nil if there are no selectable data sources. */
-@property(readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> *	dataSources NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> *dataSources NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* Will be nil if there are no selectable data sources. In all other cases, this
  property reflects the currently selected data source.*/
-@property(readonly, nullable) AVAudioSessionDataSourceDescription *selectedDataSource NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly, nullable) AVAudioSessionDataSourceDescription *selectedDataSource NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* This property reflects the application's preferred data source for the Port.
  Will be nil if there are no selectable data sources or if no preference has been set.*/
-@property(readonly, nullable) AVAudioSessionDataSourceDescription *preferredDataSource NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly, nullable) AVAudioSessionDataSourceDescription *preferredDataSource NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* Select the preferred data source for this port. The input dataSource parameter must be one of the dataSources exposed by 
 the dataSources property. Setting a nil value will clear the preference.
@@ -790,43 +819,43 @@ not result in an immediate route reconfiguration.  Use AVAudioSession's setPrefe
 NS_CLASS_AVAILABLE(NA, 6_0)
 @interface AVAudioSessionRouteDescription : NSObject {
 @private
-    void * _impl;
+	void *_impl;
 }
 
-@property(readonly) NSArray<AVAudioSessionPortDescription *> * inputs;
+@property (readonly) NSArray<AVAudioSessionPortDescription *> *inputs;
 
-@property(readonly) NSArray<AVAudioSessionPortDescription *> * outputs;
+@property (readonly) NSArray<AVAudioSessionPortDescription *> *outputs;
 @end
 
 NS_CLASS_AVAILABLE(NA, 6_0)
 @interface AVAudioSessionDataSourceDescription : NSObject {
 @private
-    void * _impl;
+	void *_impl;
 }
 
 /* system-assigned ID for the data source */
-@property(readonly) NSNumber *dataSourceID;
+@property (readonly) NSNumber *dataSourceID;
 
 /* human-readable name for the data source */
-@property(readonly) NSString *dataSourceName;
+@property (readonly) NSString *dataSourceName;
 
 /* Location and orientation can be used to distinguish between multiple data sources belonging to a single port.  For example, in the case of a port of type AVAudioSessionPortBuiltInMic, one can
    use these properties to differentiate between an upper/front-facing microphone and a lower/bottom-facing microphone. */
 
 /* Describes the general location of a data source. Will be nil for data sources for which the location is not known. */
-@property(readonly, nullable) NSString *	location NS_AVAILABLE_IOS(7_0);
+@property (readonly, nullable) NSString *location NS_AVAILABLE_IOS(7_0);
 
 /* Describes the orientation of a data source.  Will be nil for data sources for which the orientation is not known. */
-@property(readonly, nullable) NSString *	orientation NS_AVAILABLE_IOS(7_0);
+@property (readonly, nullable) NSString *orientation NS_AVAILABLE_IOS(7_0);
 
 /* Array of one or more NSStrings describing the supported polar patterns for a data source.  Will be nil for data sources that have no selectable patterns. */
-@property(readonly, nullable) NSArray<NSString *> *	supportedPolarPatterns NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly, nullable) NSArray<NSString *> *supportedPolarPatterns NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* Describes the currently selected polar pattern.  Will be nil for data sources that have no selectable patterns. */
-@property(readonly, nullable) NSString *	selectedPolarPattern NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly, nullable) NSString *selectedPolarPattern NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* Describes the preferred polar pattern.  Will be nil for data sources that have no selectable patterns or if no preference has been set. */
-@property(readonly, nullable) NSString *	preferredPolarPattern NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
+@property (readonly, nullable) NSString *preferredPolarPattern NS_AVAILABLE_IOS(7_0) __WATCHOS_PROHIBITED;
 
 /* Select the desired polar pattern from the set of available patterns. Setting a nil value will clear the preference.
    Note: if the owning port and data source are part of the active audio route,
@@ -848,21 +877,21 @@ NS_CLASS_AVAILABLE(NA, 6_0)
  name:        AVAudioSessionInterruptionNotification
  object:      [AVAudioSession sharedInstance]];
  */
-@property(assign, nullable) id<AVAudioSessionDelegate> delegate NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property (assign, nullable) id<AVAudioSessionDelegate> delegate NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 /* AVAudioSession is a singleton. Use +sharedInstance instead of -init */
--(instancetype) init NS_DEPRECATED_IOS(3_0, 10_0) __WATCHOS_PROHIBITED;
+- (instancetype)init NS_DEPRECATED_IOS(3_0, 10_0) __WATCHOS_PROHIBITED;
 
 - (BOOL)setActive:(BOOL)active withFlags:(NSInteger)flags error:(NSError **)outError NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
-@property(readonly) BOOL inputIsAvailable NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED; /* is input hardware available or not? */
+@property (readonly) BOOL inputIsAvailable NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED; /* is input hardware available or not? */
 
 /* deprecated.  Use the corresponding properties without "Hardware" in their names. */
-@property(readonly) double currentHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(readonly) NSInteger currentHardwareInputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(readonly) NSInteger currentHardwareOutputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property (readonly) double currentHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property (readonly) NSInteger currentHardwareInputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property (readonly) NSInteger currentHardwareOutputNumberOfChannels NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 - (BOOL)setPreferredHardwareSampleRate:(double)sampleRate error:(NSError **)outError NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(readonly) double preferredHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property (readonly) double preferredHardwareSampleRate NS_DEPRECATED_IOS(3_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 @end
 
@@ -870,20 +899,19 @@ NS_CLASS_AVAILABLE(NA, 6_0)
 /* The AVAudioSessionDelegate protocol is deprecated. Instead you should register for notifications. */
 __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @protocol AVAudioSessionDelegate <NSObject>
-@optional 
+@optional
 
 - (void)beginInterruption; /* something has caused your audio session to be interrupted */
 
 /* the interruption is over */
 - (void)endInterruptionWithFlags:(NSUInteger)flags NS_AVAILABLE_IOS(4_0); /* Currently the only flag is AVAudioSessionInterruptionFlags_ShouldResume. */
-		
+
 - (void)endInterruption; /* endInterruptionWithFlags: will be called instead if implemented. */
 
 /* notification for input become available or unavailable */
 - (void)inputIsAvailableChanged:(BOOL)isInputAvailable;
 
 @end
-
 
 #pragma mark -- Deprecated enumerations --
 
@@ -895,8 +923,10 @@ enum {
 
 /* Deprecated in iOS 6.0.  Use AVAudioSessionSetActiveOptions instead.
  flags for use when calling setActive:withFlags:error: */
-enum {	
+enum {
 	AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation = 1
 } NS_DEPRECATED_IOS(4_0, 6_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+
+#endif // ! TARGET_OS_OSX
 
 NS_ASSUME_NONNULL_END

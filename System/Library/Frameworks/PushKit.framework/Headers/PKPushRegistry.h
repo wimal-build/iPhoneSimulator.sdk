@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 PK_EXPORT PKPushType const PKPushTypeVoIP NS_AVAILABLE_IOS(8_0);
 PK_EXPORT PKPushType const PKPushTypeComplication NS_AVAILABLE_IOS(9_0);
+PK_EXPORT PKPushType const PKPushTypeFileProvider NS_AVAILABLE_IOS(11_0);
 
 @protocol PKPushRegistryDelegate;
 @class PKPushCredentials, PKPushPayload;
@@ -81,12 +82,15 @@ NS_CLASS_AVAILABLE_IOS(8_0)
                 PKPushType.
  @param         registry
                 The PKPushRegistry instance responsible for the delegate callback.
- @param         credentials
+ @param         pushCredentials
                 The push credentials that can be used to send pushes to the device for the specified PKPushType.
  @param         type
                 This is a PKPushType constant which is present in [registry desiredPushTypes].
  */
-- (void)pushRegistry:(PKPushRegistry *)registry didUpdatePushCredentials:(PKPushCredentials *)credentials forType:(PKPushType)type;
+- (void)pushRegistry:(PKPushRegistry *)registry didUpdatePushCredentials:(PKPushCredentials *)pushCredentials forType:(PKPushType)type;
+
+
+@optional
 
 /*!
  @method        pushRegistry:didReceiveIncomingPushWithPayload:forType:
@@ -98,10 +102,21 @@ NS_CLASS_AVAILABLE_IOS(8_0)
  @param         type
                 This is a PKPushType constant which is present in [registry desiredPushTypes].
  */
-- (void)pushRegistry:(PKPushRegistry *)registry didReceiveIncomingPushWithPayload:(PKPushPayload *)payload forType:(PKPushType)type;
+- (void)pushRegistry:(PKPushRegistry *)registry didReceiveIncomingPushWithPayload:(PKPushPayload *)payload forType:(PKPushType)type NS_DEPRECATED_IOS(8_0, 11_0);
 
-
-@optional
+/*!
+ @method        pushRegistry:didReceiveIncomingPushWithPayload:forType:withCompletionHandler:
+ @abstract      This method is invoked when a push notification has been received for the specified PKPushType.
+ @param         registry
+                The PKPushRegistry instance responsible for the delegate callback.
+ @param         payload
+                The push payload sent by a developer via APNS server API.
+ @param         type
+                This is a PKPushType constant which is present in [registry desiredPushTypes].
+ @param         completion
+                This completion handler should be called to signify the completion of payload processing.
+ */
+- (void)pushRegistry:(PKPushRegistry *)registry didReceiveIncomingPushWithPayload:(PKPushPayload *)payload forType:(PKPushType)type withCompletionHandler:(void(^)(void))completion NS_AVAILABLE_IOS(11_0);
 
 /*!
  @method        pushRegistry:didInvalidatePushTokenForType:

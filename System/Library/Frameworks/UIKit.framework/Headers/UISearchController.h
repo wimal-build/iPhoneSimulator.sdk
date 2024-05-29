@@ -2,7 +2,7 @@
 //  UISearchController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIPresentationController.h>
@@ -44,7 +44,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UISearchController : UIViewController <UI
 
 @property (nullable, nonatomic, weak) id <UISearchControllerDelegate> delegate;
 @property (nonatomic, assign) BOOL dimsBackgroundDuringPresentation __TVOS_PROHIBITED; // default is YES, and has the same behavior as obscuresBackgroundDuringPresentation.
-@property (nonatomic, assign) BOOL obscuresBackgroundDuringPresentation NS_AVAILABLE_IOS(9_1); // default is YES
+@property (nonatomic, assign) BOOL obscuresBackgroundDuringPresentation NS_AVAILABLE_IOS(9_1); // default is YES. On tvOS, defaults to NO when contained in UISearchContainerViewController.
 @property (nonatomic, assign) BOOL hidesNavigationBarDuringPresentation;     // default is YES
 
 @property (nullable, nonatomic, strong, readonly) UIViewController *searchResultsController;

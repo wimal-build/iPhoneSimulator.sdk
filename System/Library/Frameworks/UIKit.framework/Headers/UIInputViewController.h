@@ -2,7 +2,7 @@
 //  UIInputViewController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,10 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, readonly) NSString *documentContextBeforeInput;
 @property (nullable, nonatomic, readonly) NSString *documentContextAfterInput;
+@property (nullable, nonatomic, readonly) NSString *selectedText API_AVAILABLE(ios(11.0));
 
 // An app can store UITextInputMode in its document context, when user switches to the document, the host will pass the inputMode as documentInputMode to the UIInputViewController,
 // which can switch to the inputMode and set primaryLanguage if it supports it.
 @property (nullable, nonatomic, readonly) UITextInputMode *documentInputMode NS_AVAILABLE_IOS(10_0);
+
+@property (nonatomic, readonly, copy) NSUUID *documentIdentifier API_AVAILABLE(ios(11.0));
 
 - (void)adjustTextPositionByCharacterOffset:(NSInteger)offset;
 
@@ -36,6 +39,9 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController 
 // The primary language of the UIInputViewController.  A BCP 47 language identifier such as en-US
 // If specified, this will supersede any PrimaryLanguage in the Info.plist.
 @property (nullable, nonatomic, copy) NSString *primaryLanguage;
+
+@property (nonatomic, readonly) BOOL hasFullAccess API_AVAILABLE(ios(11.0));
+@property (nonatomic, readonly) BOOL needsInputModeSwitchKey API_AVAILABLE(ios(11.0));
 
 - (void)dismissKeyboard;
 - (void)advanceToNextInputMode;

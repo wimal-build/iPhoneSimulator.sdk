@@ -2,7 +2,7 @@
 //  INSendPaymentIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, INSendPaymentIntentResponseCode) {
     INSendPaymentIntentResponseCodeFailurePaymentsCurrencyUnsupported,
     INSendPaymentIntentResponseCodeFailureInsufficientFunds,
     INSendPaymentIntentResponseCodeFailureNoBankAccount,
+    INSendPaymentIntentResponseCodeFailureNotEligible,
 } API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -40,6 +41,7 @@ API_UNAVAILABLE(macosx)
 @property (readonly, NS_NONATOMIC_IOSONLY) INSendPaymentIntentResponseCode code;
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INPaymentRecord *paymentRecord;
+
 @end
 
 NS_ASSUME_NONNULL_END

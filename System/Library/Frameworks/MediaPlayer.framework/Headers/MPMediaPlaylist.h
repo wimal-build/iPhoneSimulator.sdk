@@ -19,12 +19,12 @@ typedef NS_OPTIONS(NSUInteger, MPMediaPlaylistAttribute) {
     MPMediaPlaylistAttributeOnTheGo = (1 << 0), // if set, the playlist was created on a device rather than synced from iTunes
     MPMediaPlaylistAttributeSmart   = (1 << 1),
     MPMediaPlaylistAttributeGenius  = (1 << 2)
-} MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos);
 
 // An MPMediaPlaylist is a collection of related MPMediaItems in an MPMediaLibrary.
 // Playlists have a unique identifier which persists across application launches.
-
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
+MP_API(ios(3.0))
+MP_PROHIBITED(tvos, macos)
 @interface MPMediaPlaylist : MPMediaItemCollection
 
 #pragma mark - Properties
@@ -32,31 +32,32 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(3.0, 10.12.2, 3.0)
 // Properties marked filterable can also be used to build MPMediaPropertyPredicates (see MPMediaQuery.h).
 
 MP_EXTERN NSString * const MPMediaPlaylistPropertyPersistentID;                             // filterable
-@property (nonatomic, readonly) MPMediaEntityPersistentID persistentID NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly) MPMediaEntityPersistentID persistentID MP_API(ios(7.0));
 
 MP_EXTERN NSString * const MPMediaPlaylistPropertyName;                                     // filterable
-@property (nonatomic, readonly, nullable) NSString *name NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, nullable) NSString *name MP_API(ios(7.0));
 
 MP_EXTERN NSString * const MPMediaPlaylistPropertyPlaylistAttributes;                       // filterable
-@property (nonatomic, readonly) MPMediaPlaylistAttribute playlistAttributes NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly) MPMediaPlaylistAttribute playlistAttributes MP_API(ios(7.0));
 
 // For playlists with attribute MPMediaPlaylistAttributeGenius, the seedItems are the MPMediaItems which were used to the generate the playlist.
 // Returns nil for playlists without MPMediaPlaylistAttributeGenius set.
 MP_EXTERN NSString * const MPMediaPlaylistPropertySeedItems;
-@property (nonatomic, readonly, nullable) NSArray<MPMediaItem *> *seedItems NS_AVAILABLE_IOS(8_0);
+@property (nonatomic, readonly, nullable) NSArray<MPMediaItem *> *seedItems MP_API(ios(8.0));
 
-MP_EXTERN NSString * const MPMediaPlaylistPropertyDescriptionText NS_AVAILABLE_IOS(9_3);
-@property (nonatomic, readonly, nullable) NSString *descriptionText NS_AVAILABLE_IOS(9_3);
+MP_EXTERN NSString * const MPMediaPlaylistPropertyDescriptionText MP_API(ios(9.3));
+@property (nonatomic, readonly, nullable) NSString *descriptionText MP_API(ios(9.3));
 
-MP_EXTERN NSString * const MPMediaPlaylistPropertyAuthorDisplayName NS_AVAILABLE_IOS(9_3);
-@property (nonatomic, readonly, nullable) NSString *authorDisplayName NS_AVAILABLE_IOS(9_3);
+MP_EXTERN NSString * const MPMediaPlaylistPropertyAuthorDisplayName MP_API(ios(9.3));
+@property (nonatomic, readonly, nullable) NSString *authorDisplayName MP_API(ios(9.3));
 
-- (void)addItemWithProductID:(NSString *)productID completionHandler:(nullable void (^)(NSError * __nullable error))completionHandler NS_AVAILABLE_IOS(9_3);
-- (void)addMediaItems:(NSArray<MPMediaItem *> *)mediaItems completionHandler:(nullable void (^)(NSError * __nullable error))completionHandler NS_AVAILABLE_IOS(9_3);
+- (void)addItemWithProductID:(NSString *)productID completionHandler:(nullable void (^)(NSError * __nullable error))completionHandler MP_API(ios(9.3));
+- (void)addMediaItems:(NSArray<MPMediaItem *> *)mediaItems completionHandler:(nullable void (^)(NSError * __nullable error))completionHandler MP_API(ios(9.3));
 
 @end
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(9.3, 10.12.2, 9.3)
+MP_API(ios(9.3))
+MP_PROHIBITED(tvos, macos)
 @interface MPMediaPlaylistCreationMetadata : NSObject
 
 - (id)init NS_UNAVAILABLE;

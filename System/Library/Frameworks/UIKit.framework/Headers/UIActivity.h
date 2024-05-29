@@ -2,7 +2,7 @@
 //  UIActivity.h
 //  UIKit
 //
-//  Copyright 2012-2016 Apple Inc. All rights reserved.
+//  Copyright 2012-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -33,6 +33,7 @@ UIKIT_EXTERN UIActivityType const UIActivityTypePostToVimeo        NS_AVAILABLE_
 UIKIT_EXTERN UIActivityType const UIActivityTypePostToTencentWeibo NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 UIKIT_EXTERN UIActivityType const UIActivityTypeAirDrop            NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 UIKIT_EXTERN UIActivityType const UIActivityTypeOpenInIBooks       NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN UIActivityType const UIActivityTypeMarkupAsPDF        NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, UIActivityCategory) {
     UIActivityCategoryAction,

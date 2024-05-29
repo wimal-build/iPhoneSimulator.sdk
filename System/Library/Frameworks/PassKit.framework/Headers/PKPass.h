@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, PKPassType) {
     PKPassTypeBarcode,
     PKPassTypePayment,
     PKPassTypeAny = ~(NSUInteger)0
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} API_AVAILABLE(ios(8.0), watchos(3.0));
 
 @class PKPaymentPass;
 
@@ -27,8 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithData:(NSData *)data error:(NSError **)error;
 
-@property (nonatomic, assign, readonly) PKPassType           passType NS_AVAILABLE_IOS(8_0);
-@property (nonatomic, readonly, nullable) PKPaymentPass      *paymentPass NS_AVAILABLE_IOS(8_0);
+@property (nonatomic, assign, readonly) PKPassType           passType API_AVAILABLE(ios(8.0), watchos(3.0));
+@property (nonatomic, readonly, nullable) PKPaymentPass      *paymentPass API_AVAILABLE(ios(8.0), watchos(3.0));
 
 @property (nonatomic, copy, readonly) NSString               *serialNumber;
 @property (nonatomic, copy, readonly) NSString               *passTypeIdentifier;
@@ -43,12 +43,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString               *localizedDescription; // e.g. "SFO -> LHR"
 @property (nonatomic, copy, readonly) NSString               *organizationName; // e.g. "Great Airways"
 @property (nonatomic, copy, readonly, nullable) NSDate       *relevantDate; // may be useful for sorting
-@property (nonatomic, copy, readonly, nullable) NSDictionary *userInfo NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, copy, readonly, nullable) NSDictionary *userInfo API_AVAILABLE(ios(7.0), watchos(3.0));
 
 @property (nonatomic, copy, readonly, nullable) NSURL *passURL; // open to view pass in Wallet app
 
-@property (nonatomic, assign, readonly, getter=isRemotePass)   BOOL       remotePass NS_AVAILABLE_IOS(9_0);
-@property (nonatomic, copy, readonly)                          NSString   *deviceName NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign, readonly, getter=isRemotePass)   BOOL       remotePass API_AVAILABLE(ios(9.0), watchos(3.0));
+@property (nonatomic, copy, readonly)                          NSString   *deviceName API_AVAILABLE(ios(9.0), watchos(3.0));
 
 - (nullable id)localizedValueForFieldKey:(NSString *)key; // IBOutlet-like; allows access to field data from pass file format
 

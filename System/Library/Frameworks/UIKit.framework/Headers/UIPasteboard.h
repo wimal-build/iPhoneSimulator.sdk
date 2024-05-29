@@ -2,7 +2,7 @@
 //  UIPasteboard.h
 //  UIKit
 //
-//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -39,6 +39,16 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 @property(readonly,getter=isPersistent,nonatomic) BOOL persistent;
 - (void)setPersistent:(BOOL)persistent NS_DEPRECATED_IOS(3_0, 10_0, "Do not set persistence on pasteboards. This property is set automatically.");
 @property(readonly,nonatomic) NSInteger changeCount;
+
+// Item provider interface
+
+@property (nonatomic, copy) NSArray<__kindof NSItemProvider *> *itemProviders API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+
+- (void)setItemProviders:(NSArray<NSItemProvider *> *)itemProviders localOnly:(BOOL)localOnly expirationDate:(NSDate * _Nullable)expirationDate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+
+// Automatically creates item providers wrapping the objects passed in.
+- (void)setObjects:(NSArray<id<NSItemProviderWriting>> *)objects API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+- (void)setObjects:(NSArray<id<NSItemProviderWriting>> *)objects localOnly:(BOOL)localOnly expirationDate:(NSDate * _Nullable)expirationDate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 // First item
 

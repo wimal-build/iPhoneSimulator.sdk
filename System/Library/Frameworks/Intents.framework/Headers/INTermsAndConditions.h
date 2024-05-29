@@ -2,7 +2,7 @@
 //  INTermsAndConditions.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 // This API requires you to work with Apple Maps before your application can use it. For information on how to get started, please go to MapsConnect.
 //

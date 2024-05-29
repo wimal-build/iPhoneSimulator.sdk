@@ -96,7 +96,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief Enables/disables notifications or indications for the value of a specified characteristic.
  *
- * @param enabled A Boolean value indicating whether you wish to receive notifications or 
+ * @param enable A Boolean value indicating whether you wish to receive notifications or
  *                indications whenever the characteristic’s value changes.
  *
  * @param completion Block that is invoked once the request is processed. 

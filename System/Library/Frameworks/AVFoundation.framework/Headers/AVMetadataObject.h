@@ -1,15 +1,28 @@
 /*
-	File:  AVMetadataObject.h
+    File:  AVMetadataObject.h
  
-	Framework:  AVFoundation
+    Framework:  AVFoundation
  
-	Copyright 2012-2014 Apple Inc. All rights reserved.
+    Copyright 2012-2017 Apple Inc. All rights reserved.
 */
 
 #import <AVFoundation/AVBase.h>
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CMTime.h>
 #import <CoreGraphics/CGGeometry.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+/*!
+ @group AVMetadataObjectType string constants
+ 
+ @discussion
+    Constants indicating the type of an AVMetadataObject.
+ */
+typedef NSString * AVMetadataObjectType NS_STRING_ENUM NS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED;
+
+
+#pragma mark - AVMetadataObject
 
 @class AVMetadataObjectInternal;
 
@@ -27,8 +40,10 @@ NS_CLASS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED
 @interface AVMetadataObject : NSObject
 {
 @private
-	AVMetadataObjectInternal *_objectInternal;
+    AVMetadataObjectInternal *_objectInternal;
 }
+
+AV_INIT_UNAVAILABLE
 
 /*!
  @property time
@@ -66,11 +81,12 @@ NS_CLASS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED
     An identifier for the metadata object.
  
  @discussion
-    The value of this property is an NSString representing the type of the metadata object. Clients inspecting a collection of metadata objects can use this property to filter objects with a matching type.
+    The value of this property is an AVMetadataObjectType representing the type of the metadata object. Clients inspecting a collection of metadata objects can use this property to filter objects with a matching type.
  */
-@property(readonly) NSString *type;
+@property(readonly) AVMetadataObjectType type;
 
 @end
+
 
 /*!
  @constant AVMetadataObjectTypeFace
@@ -80,7 +96,10 @@ NS_CLASS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED
  @discussion
     AVMetadataFaceObject objects return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeFace NS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeFace NS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED;
+
+
+#pragma mark - AVMetadataFaceObject
 
 @class AVMetadataFaceObjectInternal;
 
@@ -91,14 +110,14 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeFace NS_AVAILABLE(10_10, 6_0) __T
  
  @discussion
     AVMetadataFaceObject represents a single detected face in a picture. It is an immutable object describing the various features found in the face.
-
+ 
     On supported platforms, AVCaptureMetadataOutput outputs arrays of detected face objects. See AVCaptureOutput.h.
  */
 NS_CLASS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED
 @interface AVMetadataFaceObject : AVMetadataObject <NSCopying>
 {
 @private
-	AVMetadataFaceObjectInternal *_internal;
+    AVMetadataFaceObjectInternal *_internal;
 }
 
 /*!
@@ -132,8 +151,6 @@ NS_CLASS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED
  @property hasYawAngle
  @abstract
     A BOOL indicating whether the yawAngle property is valid for this receiver.
- 
- @discussion
  */
 @property(readonly) BOOL hasYawAngle;
 
@@ -149,15 +166,16 @@ NS_CLASS_AVAILABLE(10_10, 6_0) __TVOS_PROHIBITED
 
 @end
 
+
 /*!
  @constant AVMetadataObjectTypeUPCECode
  @abstract
     An identifier for an instance of AVMetadataMachineReadableCodeObject having a type AVMetadataObjectTypeUPCECode.
-
+ 
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from UPC-E codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeUPCECode NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeUPCECode NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeCode39Code
@@ -167,7 +185,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeUPCECode NS_AVAILABLE(NA, 7_0) __
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from Code 39 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeCode39Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeCode39Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeCode39Mod43Code
@@ -177,7 +195,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeCode39Code NS_AVAILABLE(NA, 7_0) 
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from Code 39 mod 43 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeCode39Mod43Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeCode39Mod43Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeEAN13Code
@@ -187,7 +205,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeCode39Mod43Code NS_AVAILABLE(NA, 
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from EAN-13 (including UPC-A) codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeEAN13Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeEAN13Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeEAN8Code
@@ -197,7 +215,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeEAN13Code NS_AVAILABLE(NA, 7_0) _
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from EAN-8 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeEAN8Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeEAN8Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeCode93Code
@@ -207,7 +225,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeEAN8Code NS_AVAILABLE(NA, 7_0) __
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from Code 93 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeCode93Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeCode93Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeCode128Code
@@ -217,7 +235,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeCode93Code NS_AVAILABLE(NA, 7_0) 
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from Code 128 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeCode128Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeCode128Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypePDF417Code
@@ -227,7 +245,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeCode128Code NS_AVAILABLE(NA, 7_0)
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from PDF417 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypePDF417Code NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypePDF417Code NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeQRCode
@@ -237,7 +255,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypePDF417Code NS_AVAILABLE(NA, 7_0) 
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from QR codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeQRCode NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeQRCode NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeAztecCode
@@ -247,7 +265,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeQRCode NS_AVAILABLE(NA, 7_0) __TV
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from Aztec codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeAztecCode NS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeAztecCode NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeInterleaved2of5Code
@@ -257,7 +275,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeAztecCode NS_AVAILABLE(NA, 7_0) _
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from Interleaved 2 of 5 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeInterleaved2of5Code NS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeInterleaved2of5Code NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeITF14Code
@@ -267,7 +285,7 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeInterleaved2of5Code NS_AVAILABLE(
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from ITF14 codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeITF14Code NS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeITF14Code NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
 /*!
  @constant AVMetadataObjectTypeDataMatrixCode
@@ -277,7 +295,10 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeITF14Code NS_AVAILABLE(NA, 8_0) _
  @discussion
     AVMetadataMachineReadableCodeObject objects generated from DataMatrix codes return this constant as their type.
  */
-AVF_EXPORT NSString *const AVMetadataObjectTypeDataMatrixCode NS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED;
+AVF_EXPORT AVMetadataObjectType const AVMetadataObjectTypeDataMatrixCode NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+
+
+#pragma mark - AVMetadataMachineReadableCodeObject
 
 @class AVMetadataMachineReadableCodeObjectInternal;
 
@@ -291,11 +312,11 @@ AVF_EXPORT NSString *const AVMetadataObjectTypeDataMatrixCode NS_AVAILABLE(NA, 8
  
     On supported platforms, AVCaptureMetadataOutput outputs arrays of detected machine readable code objects. See AVCaptureMetadataOutput.h.
  */
-NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED
 @interface AVMetadataMachineReadableCodeObject : AVMetadataObject
 {
 @private
-	AVMetadataMachineReadableCodeObjectInternal *_internal;
+    AVMetadataMachineReadableCodeObjectInternal *_internal;
 }
 
 /*!
@@ -304,9 +325,9 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED
     The points defining the (X,Y) locations of the corners of the machine-readable code.
  
  @discussion
-    The value of this property is an NSArray of CFDictionaries, each of which has been created from a CGPoint using CGPointCreateDictionaryRepresentation(), representing the coordinates of the corners of the object with respect to the image in which it resides. If the metadata originates from video, the points may be expressed as scalar values from 0. - 1. The points in the corners differ from the bounds rectangle in that bounds is axis-aligned to orientation of the captured image, and the values of the corners reside within the bounds rectangle. The points are arranged in counter-clockwise order (clockwise if the code or image is mirrored), starting with the top-left of the code in its canonical orientation.
+    The value of this property is an NSArray of NSDictionaries, each of which has been created from a CGPoint using CGPointCreateDictionaryRepresentation(), representing the coordinates of the corners of the object with respect to the image in which it resides. If the metadata originates from video, the points may be expressed as scalar values from 0. - 1. The points in the corners differ from the bounds rectangle in that bounds is axis-aligned to orientation of the captured image, and the values of the corners reside within the bounds rectangle. The points are arranged in counter-clockwise order (clockwise if the code or image is mirrored), starting with the top-left of the code in its canonical orientation.
  */
-@property(readonly) NSArray *corners;
+@property(readonly) NSArray<NSDictionary *> *corners;
 
 /*!
  @property stringValue
@@ -316,6 +337,25 @@ NS_CLASS_AVAILABLE(NA, 7_0) __TVOS_PROHIBITED
  @discussion
     The value of this property is an NSString created by decoding the binary payload according to the format of the machine readable code. Returns nil if a string representation cannot be created from the payload.
  */
-@property(readonly) NSString *stringValue;
+@property(readonly, nullable) NSString *stringValue;
 
 @end
+
+
+@class CIBarcodeDescriptor;
+
+@interface AVMetadataMachineReadableCodeObject (AVMetadataMachineReadableCodeDescriptor)
+
+/*!
+ @property descriptor
+ @abstract
+    An abstract representation of a machine readable code's symbol attributes.
+ 
+ @discussion
+    The value may be nil if an abstract representation of a machine readable code object is not defined for the code type or could not be detected.
+ */
+@property(readonly, nullable) CIBarcodeDescriptor *descriptor NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;
+
+@end
+
+NS_ASSUME_NONNULL_END

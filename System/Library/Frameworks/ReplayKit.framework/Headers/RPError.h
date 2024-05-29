@@ -19,5 +19,10 @@ typedef NS_ENUM(NSInteger, RPRecordingErrorCode) {
     RPRecordingErrorInterrupted = -5806, // Recording interrupted by other app
     RPRecordingErrorContentResize = -5807, // Recording interrupted by multitasking and Content Resizing
     RPRecordingErrorBroadcastInvalidSession = -5808, // Attempted to start a broadcast without a prior session
-    RPRecordingErrorSystemDormancy = -5809 // Recording was forced to end when user pressed the power button
+    RPRecordingErrorSystemDormancy = -5809, // Recording was forced to end when user pressed the power button
+    RPRecordingErrorEntitlements = -5810, // Recording failed due to missing entitlements
+    RPRecordingErrorActivePhoneCall = -5811, // Recording unable to to record due to active phone call
+    RPRecordingErrorFailedToSave = -5812, // Failed to save recording to camera roll
+    RPRecordingErrorCarPlay = -5813 // Failed to start recording due to carplay being active
+    
 };

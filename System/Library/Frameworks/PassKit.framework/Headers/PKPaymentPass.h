@@ -18,10 +18,10 @@ typedef NS_ENUM(NSUInteger, PKPaymentPassActivationState) {
     PKPaymentPassActivationStateActivating,
     PKPaymentPassActivationStateSuspended,
     PKPaymentPassActivationStateDeactivated
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} API_AVAILABLE(ios(8.0), watchos(3.0));
 
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+API_AVAILABLE(ios(8.0), watchos(3.0))
 @interface PKPaymentPass : PKPass
 
 @property (nonatomic, copy, readonly) NSString *primaryAccountIdentifier;

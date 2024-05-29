@@ -11,7 +11,8 @@
 
 @class MPMoviePlayerController;
 
-MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0)
+MP_DEPRECATED("Use AVPlayerViewController in AVKit.", ios(3.2, 9.0))
+MP_PROHIBITED(tvos)
 @interface MPMoviePlayerViewController : UIViewController
 
 - (instancetype)initWithContentURL:(NSURL *)contentURL NS_DESIGNATED_INITIALIZER;
@@ -26,7 +27,7 @@ MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewCo
 
 @interface UIViewController (MPMoviePlayerViewController)
 
-- (void)presentMoviePlayerViewControllerAnimated:(MPMoviePlayerViewController *)moviePlayerViewController MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
-- (void)dismissMoviePlayerViewControllerAnimated MP_API_IOS_DEPRECATED_WITH_REPLACEMENT_MACOS_TVOS_PROHIBITED("Use AVPlayerViewController in AVKit.", 3.2, 9.0, 10.12.2, 10.12.2, 3.2, 9.0);
+- (void)presentMoviePlayerViewControllerAnimated:(MPMoviePlayerViewController *)moviePlayerViewController MP_DEPRECATED("Use AVPlayerViewController in AVKit.", ios(3.2, 9.0)) MP_PROHIBITED(tvos);
+- (void)dismissMoviePlayerViewControllerAnimated MP_DEPRECATED("Use AVPlayerViewController in AVKit.", ios(3.2, 9.0)) MP_PROHIBITED(tvos);
 
 @end

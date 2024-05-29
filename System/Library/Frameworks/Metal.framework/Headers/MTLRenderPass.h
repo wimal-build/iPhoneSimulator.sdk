@@ -8,6 +8,11 @@
 #import <Foundation/Foundation.h>
 #import <Metal/MTLDefines.h>
 
+
+
+
+#import <Metal/MTLTypes.h>
+
 NS_ASSUME_NONNULL_BEGIN
 @protocol MTLDevice;
 
@@ -21,9 +26,15 @@ typedef NS_ENUM(NSUInteger, MTLStoreAction) {
     MTLStoreActionDontCare = 0,
     MTLStoreActionStore = 1,
     MTLStoreActionMultisampleResolve = 2,
-    MTLStoreActionStoreAndMultisampleResolve NS_ENUM_AVAILABLE(10_12,10_0) = 3,
-    MTLStoreActionUnknown NS_ENUM_AVAILABLE(10_12,10_0) = 4,
+    MTLStoreActionStoreAndMultisampleResolve NS_ENUM_AVAILABLE(10_12, 10_0) = 3,
+    MTLStoreActionUnknown NS_ENUM_AVAILABLE(10_12, 10_0) = 4,
+    MTLStoreActionCustomSampleDepthStore NS_ENUM_AVAILABLE(10_13, 11_0) = 5,
 } NS_ENUM_AVAILABLE(10_11, 8_0);
+
+typedef NS_OPTIONS(NSUInteger, MTLStoreActionOptions) {
+    MTLStoreActionOptionNone                  = 0,
+    MTLStoreActionOptionCustomSamplePositions = 1 << 0,
+} NS_ENUM_AVAILABLE(10_13, 11_0);
 
 typedef struct
 {
@@ -33,7 +44,6 @@ typedef struct
     double alpha;
 } MTLClearColor;
 
-// Should we provide a set of APIs similar to the old methods below?
 MTL_INLINE MTLClearColor MTLClearColorMake(double red, double green, double blue, double alpha);
 
 @protocol MTLTexture;
@@ -105,6 +115,13 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
  */
 @property (nonatomic) MTLStoreAction storeAction;
 
+/*!
+ @property storeActionOptions
+ @abstract Optional configuration for the store action performed with this attachment at the end of a render pass.  Default is
+ MTLStoreActionOptionNone.
+ */
+@property (nonatomic) MTLStoreActionOptions storeActionOptions NS_AVAILABLE(10_13, 11_0);
+
 @end
 
 NS_CLASS_AVAILABLE(10_11, 8_0)
@@ -146,6 +163,10 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 
 @end
 
+
+
+
+
 NS_CLASS_AVAILABLE(10_11, 8_0)
 @interface MTLRenderPassStencilAttachmentDescriptor : MTLRenderPassAttachmentDescriptor
 
@@ -155,7 +176,10 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
  */
 @property (nonatomic) uint32_t clearStencil;
 
+
 @end
+
+
 
 NS_CLASS_AVAILABLE(10_11, 8_0)
 @interface MTLRenderPassColorAttachmentDescriptorArray : NSObject
@@ -196,7 +220,79 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
  @property renderTargetArrayLength:
  @abstract The number of active layers
  */
-@property (nonatomic) NSUInteger renderTargetArrayLength NS_AVAILABLE_MAC(10_11);
+@property (nonatomic) NSUInteger renderTargetArrayLength NS_AVAILABLE(10_11, NA);
+
+
+/*!
+ @property imageblockSampleLength:
+ @abstract The per sample size in bytes of the largest explicit imageblock layout in the renderPass.
+ */
+@property (nonatomic) NSUInteger imageblockSampleLength NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @property threadgroupMemoryLength:
+ @abstract The per tile size in bytes of the persistent threadgroup memory allocation.
+ */
+@property (nonatomic) NSUInteger threadgroupMemoryLength NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @property tileWidth:
+ @abstract The width in pixels of the tile.
+ @discssion Defaults to 0. Zero means Metal chooses a width that fits within the local memory.
+ */
+@property (nonatomic) NSUInteger tileWidth NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @property tileHeight:
+ @abstract The height in pixels of the tile.
+ @discssion Defaults to 0. Zero means Metal chooses a height that fits within the local memory.
+ */
+@property (nonatomic) NSUInteger tileHeight NS_AVAILABLE_IOS(11_0);
+
+
+@property (nonatomic) NSUInteger defaultSampleCount NS_DEPRECATED_IOS(11_0, 11_0);
+
+/*!
+ @property defaultRasterSampleCount:
+ @abstract The raster sample count for the render pass when no attachments are given.
+ */
+@property (nonatomic) NSUInteger defaultRasterSampleCount NS_AVAILABLE_IOS(11_0);
+
+
+
+/*!
+ @property renderTargetWidth:
+ @abstract The width in pixels to constain the render target to.
+ @discssion Defaults to 0. If non-zero the value must be smaller than or equal to the minimum width of all attachments.
+ */
+@property (nonatomic) NSUInteger renderTargetWidth NS_AVAILABLE_IOS(11_0);
+
+/*!
+ @property renderTargetHeight:
+ @abstract The height in pixels to constain the render target to.
+ @discssion Defaults to 0. If non-zero the value must be smaller than or equal to the minimum height of all attachments.
+ */
+@property (nonatomic) NSUInteger renderTargetHeight NS_AVAILABLE_IOS(11_0);
+
+
+
+/*!
+ @method setSamplePositions:count:
+ @abstract Configure the custom sample positions, to be used in MSAA rendering (i.e. when sample count > 1).
+ @param positions The source array for custom sample position data.
+ @param count Specifies the length of the positions array, and must be a valid sample count or 0 (to disable custom sample positions).
+ */
+- (void)setSamplePositions:(const MTLSamplePosition * _Nullable)positions count:(NSUInteger)count NS_AVAILABLE(10_13, 11_0);
+
+/*!
+ @method getSamplePositions:count:
+ @abstract Retrieve the previously configured custom sample positions. The positions input array will only be modified when count specifies a length sufficient for the number of previously configured positions.
+ @param positions The destination array for custom sample position data.
+ @param count Specifies the length of the positions array, which must be large enough to hold all configured sample positions.
+ @return The number of previously configured custom sample positions.
+ */
+- (NSUInteger)getSamplePositions:(MTLSamplePosition * _Nullable)positions count:(NSUInteger)count NS_AVAILABLE(10_13, 11_0);
+
 
 @end
 

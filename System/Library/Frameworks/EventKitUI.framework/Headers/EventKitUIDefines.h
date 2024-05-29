@@ -6,7 +6,6 @@
  *
  */
 
-
 #ifdef __cplusplus
 #define EVENTKITUI_EXTERN               extern "C" __attribute__((visibility ("default")))
 #else
@@ -17,14 +16,6 @@
 
 #ifndef EKUI_HAS_HEADER
 #define EKUI_HAS_HEADER(include_path) (defined(__has_include) && __has_include(include_path))
-#endif
-
-#ifndef EKUI_IS_NANO
-#define EKUI_IS_NANO (defined(TARGET_OS_WATCH) && TARGET_OS_WATCH)
-#endif
-
-#ifndef EKUI_IS_ZEUS
-#define EKUI_IS_ZEUS (defined(TARGET_OS_TV) && TARGET_OS_TV)
 #endif
 
 #ifndef EKUI_IS_IOS

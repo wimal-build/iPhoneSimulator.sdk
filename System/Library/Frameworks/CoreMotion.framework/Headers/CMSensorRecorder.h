@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CMAccelerometer.h>
-
 #import <CoreMotion/CMAvailability.h>
+#import <CoreMotion/CMAuthorization.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -78,12 +78,20 @@ NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) __TVOS_PROHIBITED
 + (BOOL)isAccelerometerRecordingAvailable;
 
 /*
+ * authorizationStatus
+ *
+ * Discussion:
+ *   Returns the current authorization status for sensor recording.
+ */
++ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
+
+/*
  * isAuthorizedForRecording
  *
  * Discussion:
  *   Determines whether the application is authorized for sensor recording.
  */
-+ (BOOL)isAuthorizedForRecording;
++ (BOOL)isAuthorizedForRecording __API_DEPRECATED_WITH_REPLACEMENT("authorizationStatus", ios(9_0, 11_0), watchos(2_0, 4_0));
 
 /*
  * accelerometerDataFromDate:ToDate:

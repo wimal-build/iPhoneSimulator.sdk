@@ -25,7 +25,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param      error  If this method could not initialize a sticker, this will contain an NSError object describing the failure.
  @return     A new sticker object or nil if the method could not initialize a sticker from the specified file and localizedDescription.
  */
-- (nullable instancetype)initWithContentsOfFileURL:(NSURL *)fileURL localizedDescription:(NSString *)localizedDescription error:(NSError * _Nullable *)error NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithContentsOfFileURL:(NSURL *)fileURL localizedDescription:(NSString *)localizedDescription error:(NSError *_Nullable *)error NS_DESIGNATED_INITIALIZER;
 
 /*!
  @property   imageFileURL

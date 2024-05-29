@@ -10,7 +10,7 @@
 #import <CoreBluetooth/CBDefines.h>
 #import <Foundation/Foundation.h>
 
-NS_CLASS_AVAILABLE(N_A, 10_0)
+NS_CLASS_AVAILABLE(10_13, 10_0)
 CB_EXTERN_CLASS @interface CBManager : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, CBManagerState) {
 	CBManagerStateUnauthorized,
 	CBManagerStatePoweredOff,
 	CBManagerStatePoweredOn,
-} NS_ENUM_AVAILABLE(NA, 10_0);
+} NS_ENUM_AVAILABLE(10_13, 10_0);
 
 /*!
  *  @property state

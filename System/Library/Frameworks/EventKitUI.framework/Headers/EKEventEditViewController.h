@@ -52,7 +52,7 @@ EVENTKITUI_CLASS_AVAILABLE(4_0)
     @abstract   The event store to use to save events.
     @discussion You must set this before presenting the view controller.
 */
-@property(nonatomic, retain) EKEventStore   *eventStore;
+@property(nonatomic, retain, null_unspecified) EKEventStore   *eventStore;
 
 /*!
     @property   event

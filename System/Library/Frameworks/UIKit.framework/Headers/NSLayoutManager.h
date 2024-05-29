@@ -2,7 +2,7 @@
 //  NSLayoutManager.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger, NSControlCharacterAction) {
 
 @protocol NSTextLayoutOrientationProvider
 // A property describing the receiver's layout orientation.  This property defines the default value for the range of string laid out in the receiver in absence of explicit NSVerticalGlyphFormAttributeName attribute.  For example, when NSTextLayoutOrientationVertical, the default value for NSVerticalGlyphFormAttributeName is 1.  When rendering into the receiver, the Text System assumes the coordinate system is appropriately rotated.
-@property(readonly, NS_NONATOMIC_IOSONLY) NSTextLayoutOrientation layoutOrientation NS_AVAILABLE(10_7, 7_0);
+@property (readonly, NS_NONATOMIC_IOSONLY) NSTextLayoutOrientation layoutOrientation NS_AVAILABLE(10_7, 7_0);
 @end
 
 
@@ -58,14 +58,14 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 
 // Accessor for the NSTextStorage object owning the receiver.
 // Avoid assigning a text storage directly through this property.  Adding a layout manager to a text storage through -[NSTextStorage addLayoutManager:] will use the property for assigning the new text storage.
-@property(nullable, assign, NS_NONATOMIC_IOSONLY) NSTextStorage *textStorage;
+@property (nullable, assign, NS_NONATOMIC_IOSONLY) NSTextStorage *textStorage;
 
 
 
 /**************************** Text containers ****************************/
 
 // NSTextContainer objects owner by the receiver.
-@property(readonly, NS_NONATOMIC_IOSONLY) NSArray<NSTextContainer *> *textContainers;
+@property (readonly, NS_NONATOMIC_IOSONLY) NSArray<NSTextContainer *> *textContainers;
 
 // Add a container to the end of the array.  Must invalidate layout of all glyphs after the previous last container (i.e., glyphs that were not previously laid out because they would not fit anywhere).
 - (void)addTextContainer:(NSTextContainer *)container;
@@ -83,28 +83,28 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 
 /**************************** Delegate ****************************/
 
-@property(nullable, assign, NS_NONATOMIC_IOSONLY) id <NSLayoutManagerDelegate> delegate;
+@property (nullable, weak, NS_NONATOMIC_IOSONLY) id <NSLayoutManagerDelegate> delegate;
 
 
 /*********************** Global layout manager options ***********************/
 
 // If YES, then whitespace and other "invisible" characters will be shown with special glyphs or other drawing.  The default is NO.
-@property(NS_NONATOMIC_IOSONLY) BOOL showsInvisibleCharacters;
+@property (NS_NONATOMIC_IOSONLY) BOOL showsInvisibleCharacters;
 
 // If YES, then control characters will be rendered visibly (usually like "^M").  The default is NO.
-@property(NS_NONATOMIC_IOSONLY) BOOL showsControlCharacters;
+@property (NS_NONATOMIC_IOSONLY) BOOL showsControlCharacters;
 
 // 0.0 - 1.0.  Whenever (width of the real contents of the line) / (the line fragment width) is below this value, hyphenation will be attempted when laying out the line.  By default, the value is 0.0, meaning hyphenation is off.  A value of 1.0 causes hyphenation to be attempted always.  Note that hyphenation will slow down text layout and increase memory usage, so it should be used sparingly.  Maybe overridden on a per-paragraph basis by the NSParagraphStyle's hyphenationFactor.
-@property(NS_NONATOMIC_IOSONLY) CGFloat hyphenationFactor;
+@property (NS_NONATOMIC_IOSONLY) CGFloat hyphenationFactor;
 
 // By default, a layout manager will use leading as specified by the font.  However, this is not appropriate for most UI text, for which a fixed leading is usually specified by UI layout guidelines.  These methods allow the use of the font's leading to be turned off.
-@property(NS_NONATOMIC_IOSONLY) BOOL usesFontLeading;
+@property (NS_NONATOMIC_IOSONLY) BOOL usesFontLeading;
 
 // If YES, then the layout manager may perform glyph generation and layout for a given portion of the text, without having glyphs or layout for preceding portions.  The default is NO.  Turning this setting on will significantly alter which portions of the text will have glyph generation or layout performed when a given generation-causing method is invoked.  It also gives significant performance benefits, especially for large documents.
-@property(NS_NONATOMIC_IOSONLY) BOOL allowsNonContiguousLayout NS_AVAILABLE(10_5, 7_0);
+@property (NS_NONATOMIC_IOSONLY) BOOL allowsNonContiguousLayout NS_AVAILABLE(10_5, 7_0);
 
 // Even if non-contiguous layout is allowed, it may not always be used, and there may not always be layout holes.  This method returns YES if there might currently be non-contiguous portions of the text laid out.
-@property(readonly, NS_NONATOMIC_IOSONLY) BOOL hasNonContiguousLayout NS_AVAILABLE(10_5, 7_0);
+@property (readonly, NS_NONATOMIC_IOSONLY) BOOL hasNonContiguousLayout NS_AVAILABLE(10_5, 7_0);
 
 
 
@@ -144,12 +144,12 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 /************************ Get glyphs and glyph properties ************************/
 
 // Returns the total number of glyphs.  If non-contiguous layout is not enabled, this will force generation of glyphs for all characters.
-@property(readonly, NS_NONATOMIC_IOSONLY) NSUInteger numberOfGlyphs;
+@property (readonly, NS_NONATOMIC_IOSONLY) NSUInteger numberOfGlyphs;
 
 // If non-contiguous layout is not enabled, these will cause generation of all glyphs up to and including glyphIndex.  The first CGGlyphAtIndex variant returns kCGFontIndexInvalid if the requested index is out of the range (0, numberOfGlyphs), and optionally returns a flag indicating whether the requested index is in range.  The second CGGlyphAtIndex variant raises a NSRangeError if the requested index is out of range.
 - (CGGlyph)CGGlyphAtIndex:(NSUInteger)glyphIndex isValidIndex:(nullable BOOL *)isValidIndex NS_AVAILABLE(10_11,7_0);
 - (CGGlyph)CGGlyphAtIndex:(NSUInteger)glyphIndex NS_AVAILABLE(10_11,7_0);
-- (BOOL)isValidGlyphIndex:(NSUInteger)glyphIndex NS_AVAILABLE(10_11,7_0);
+- (BOOL)isValidGlyphIndex:(NSUInteger)glyphIndex API_AVAILABLE(macosx(10.0), ios(7.0), watchos(2.0), tvos(9.0));
 
 // If non-contiguous layout is not enabled, this will cause generation of all glyphs up to and including glyphIndex.  It will return the glyph property associated with the glyph at the specified index.
 - (NSGlyphProperty)propertyForGlyphAtIndex:(NSUInteger)glyphIndex NS_AVAILABLE(10_5, 7_0);
@@ -192,14 +192,8 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 
 // Returns (by reference for the "get" method) the character index or glyph index or both of the first unlaid character/glyph in the layout manager at this time.
 - (void)getFirstUnlaidCharacterIndex:(nullable NSUInteger *)charIndex glyphIndex:(nullable NSUInteger *)glyphIndex;
-
-#if UIKIT_DEFINE_AS_PROPERTIES
-@property(nonatomic, readonly) NSUInteger firstUnlaidCharacterIndex;
-@property(nonatomic, readonly) NSUInteger firstUnlaidGlyphIndex;
-#else
 - (NSUInteger)firstUnlaidCharacterIndex;
 - (NSUInteger)firstUnlaidGlyphIndex;
-#endif
 
 // Returns the container in which the given glyph is laid and (optionally) by reference the whole range of glyphs that are in that container.  This will cause glyph generation and layout for the line fragment containing the specified glyph, or if non-contiguous layout is not enabled, up to and including that line fragment; if non-contiguous layout is not enabled and effectiveGlyphRange is non-NULL, this will additionally cause glyph generation and layout for the entire text container containing the specified glyph.
 - (nullable NSTextContainer *)textContainerForGlyphAtIndex:(NSUInteger)glyphIndex effectiveRange:(nullable NSRangePointer)effectiveGlyphRange;
@@ -218,9 +212,9 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 - (CGRect)lineFragmentUsedRectForGlyphAtIndex:(NSUInteger)glyphIndex effectiveRange:(nullable NSRangePointer)effectiveGlyphRange withoutAdditionalLayout:(BOOL)flag NS_AVAILABLE(10_0, 9_0);
 
 // Return info about the extra line fragment.  The extra line fragment is used for displaying the line at the end of document when the last character in the document causes a line or paragraph break.  Since the extra line is not associated with any glyph inside the layout manager, the information is handed separately from other line fragment rects.  Typically the extra line fragment is placed in the last document content text container along with other normal line fragment rects.  Line fragment rects and line fragment used rects are always in container coordinates.
-@property(readonly, NS_NONATOMIC_IOSONLY) CGRect extraLineFragmentRect;
-@property(readonly, NS_NONATOMIC_IOSONLY) CGRect extraLineFragmentUsedRect;
-@property(nullable, readonly, NS_NONATOMIC_IOSONLY) NSTextContainer *extraLineFragmentTextContainer;
+@property (readonly, NS_NONATOMIC_IOSONLY) CGRect extraLineFragmentRect;
+@property (readonly, NS_NONATOMIC_IOSONLY) CGRect extraLineFragmentUsedRect;
+@property (nullable, readonly, NS_NONATOMIC_IOSONLY) NSTextContainer *extraLineFragmentTextContainer;
 
 
 // Returns the location for the given glyph within its line fragment.  If this glyph does not have an explicit location set for it (i.e., it is part of (but not first in) a sequence of nominally spaced characters), the location is calculated by glyph advancements from the location of the most recent preceding glyph with a location set.  Glyph locations are relative to their line fragment rect's origin.  This will cause glyph generation and layout for the line fragment containing the specified glyph, or if non-contiguous layout is not enabled, up to and including that line fragment.
@@ -285,7 +279,7 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 - (void)drawGlyphsForGlyphRange:(NSRange)glyphsToShow atPoint:(CGPoint)origin;
 
 // This is the glyph rendering primitive method.  Renders glyphs at positions into the graphicsContext.  The positions are in the user space coordinate system.  graphicsContext that passed in is already configured according to the text attributes arguments: font, textMatrix, and attributes.  The font argument represents the font applied to the graphics state.  The value can be different from the NSFontAttributeName value in the attributes argument because of various font substitutions that the system automatically executes.  The textMatrix is the affine transform mapping the text space coordinate system to the user space coordinate system.  The tx and ty components of textMatrix are ignored since Quartz overrides them with the glyph positions.
-- (void)showCGGlyphs:(const CGGlyph *)glyphs positions:(const CGPoint *)positions count:(NSUInteger)glyphCount font:(UIFont *)font matrix:(CGAffineTransform)textMatrix attributes:(NSDictionary<NSString *, id> *)attributes inContext:(CGContextRef)graphicsContext NS_AVAILABLE(10_7, 7_0);
+- (void)showCGGlyphs:(const CGGlyph *)glyphs positions:(const CGPoint *)positions count:(NSUInteger)glyphCount font:(UIFont *)font matrix:(CGAffineTransform)textMatrix attributes:(NSDictionary<NSAttributedStringKey, id> *)attributes inContext:(CGContextRef)graphicsContext NS_AVAILABLE(10_7, 7_0);
 
 // This is the primitive used by -drawBackgroundForGlyphRange:atPoint: for actually filling rects with a particular background color, whether due to a background color attribute, a selected or marked range highlight, a block decoration, or any other rect fill needed by that method.  As with -showCGGlyphs:..., the character range and color are merely for informational purposes; the color will already be set in the graphics state.  If for any reason you modify it, you must restore it before returning from this method.  You should never call this method, but you might override it.  The default implementation will simply fill the specified rect array.
 - (void)fillBackgroundRectArray:(const CGRect *)rectArray count:(NSUInteger)rectCount forCharacterRange:(NSRange)charRange color:(UIColor *)color NS_AVAILABLE(10_6, 7_0);

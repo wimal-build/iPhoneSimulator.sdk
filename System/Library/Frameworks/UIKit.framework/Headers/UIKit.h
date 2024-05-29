@@ -2,7 +2,7 @@
 //  UIKit.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKitDefines.h>
@@ -13,6 +13,10 @@
 #endif
 
 #import <UIKit/UIAccessibilityConstants.h>
+
+#if __has_include(<UIKit/UIAccessibilityContentSizeCategoryImageAdjusting.h>)
+#import <UIKit/UIAccessibilityContentSizeCategoryImageAdjusting.h>
+#endif
 
 #if __has_include(<UIKit/UIActivityIndicatorView.h>)
 #import <UIKit/UIActivityIndicatorView.h>
@@ -58,12 +62,16 @@
 #import <UIKit/UIDocumentPickerExtensionViewController.h>
 #import <UIKit/UICloudSharingController.h>
 #import <UIKit/NSFileProviderExtension.h>
+#import <UIKit/UIVisualEffect.h>
+#import <UIKit/UIBlurEffect.h>
+#import <UIKit/UIVibrancyEffect.h>
 #import <UIKit/UIVisualEffectView.h>
 #import <UIKit/UIEvent.h>
 #endif
 
 #import <UIKit/UIFont.h>
 #import <UIKit/UIFontDescriptor.h>
+#import <UIKit/UIFontMetrics.h>
 #import <UIKit/UIGeometry.h>
 
 #if __has_include(<UIKit/UIGestureRecognizer.h>)
@@ -98,8 +106,10 @@
 #import <UIKit/UIApplicationShortcutItem.h>
 #import <UIKit/UIUserNotificationSettings.h>
 #import <UIKit/UIFocus.h>
+#import <UIKit/UIFocusSystem.h>
 #import <UIKit/UIFocusGuide.h>
 #import <UIKit/UIFocusAnimationCoordinator.h>
+#import <UIKit/UIFocusDebugger.h>
 #import <UIKit/UILocalizedIndexedCollation.h>
 #import <UIKit/UILongPressGestureRecognizer.h>
 #import <UIKit/UIManagedDocument.h>
@@ -114,6 +124,8 @@
 #import <UIKit/UIPageViewController.h>
 #import <UIKit/UIPanGestureRecognizer.h>
 #import <UIKit/UIPasteboard.h>
+#import <UIKit/UIPasteConfiguration.h>
+#import <UIKit/UIPasteConfigurationSupporting.h>
 #import <UIKit/UIPickerView.h>
 #import <UIKit/UIPinchGestureRecognizer.h>
 #import <UIKit/UIPopoverController.h>
@@ -172,9 +184,25 @@
 #import <UIKit/UIViewController.h>
 #import <UIKit/UIWebView.h>
 #import <UIKit/UIWindow.h>
+
+#import <UIKit/UIDragInteraction.h>
+#import <UIKit/UIDragItem.h>
+#import <UIKit/UIDragPreview.h>
+#import <UIKit/UIDragPreviewParameters.h>
+#import <UIKit/UIDragSession.h>
+#import <UIKit/UIDropInteraction.h>
+#import <UIKit/UIInteraction.h>
+#import <UIKit/UITargetedDragPreview.h>
+#import <UIKit/UISpringLoadedInteraction.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
+
 #endif
 
 #import <UIKit/NSAttributedString.h>
+
+#if __has_include(<UIKit/NSItemProvider+UIKitAdditions.h>)
+#import <UIKit/NSItemProvider+UIKitAdditions.h>
+#endif
 
 #if __has_include(<UIKit/NSLayoutConstraint.h>)
 #import <UIKit/NSLayoutConstraint.h>
@@ -185,6 +213,7 @@
 #endif
 
 #import <UIKit/NSParagraphStyle.h>
+
 
 #if __has_include(<UIKit/NSShadow.h>)
 #import <UIKit/NSShadow.h>
@@ -215,6 +244,14 @@
 #import <UIKit/UIRegion.h>
 #endif
 
+#if __has_include(<UIKit/UITextDragging.h>)
+#import <UIKit/UITextDragging.h>
+#import <UIKit/UITextDropping.h>
+#import <UIKit/UITextDropProposal.h>
+#import <UIKit/UITextDragPreviewRenderer.h>
+#import <UIKit/UITextDragURLPreviews.h>
+#endif
+
 #if __has_include(<UIKit/UIViewPropertyAnimator.h>)
 #import <UIKit/UIViewPropertyAnimator.h>
 #endif
@@ -224,4 +261,8 @@
 #import <UIKit/UISelectionFeedbackGenerator.h>
 #import <UIKit/UIImpactFeedbackGenerator.h>
 #import <UIKit/UINotificationFeedbackGenerator.h>
+#endif
+
+#if __has_include(<DocumentManager/DocumentManager.h>)
+#import <DocumentManager/DocumentManager.h>
 #endif

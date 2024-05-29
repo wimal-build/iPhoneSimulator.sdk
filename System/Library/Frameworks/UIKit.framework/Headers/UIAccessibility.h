@@ -3,7 +3,7 @@
 //  UIAccessibility.h
 //  UIKit
 //
-//  Copyright (c) 2008-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -13,12 +13,14 @@
 
 #import <UIKit/UIAccessibilityAdditions.h>
 #import <UIKit/UIAccessibilityConstants.h>
+#import <UIKit/UIAccessibilityContainer.h>
 #import <UIKit/UIAccessibilityCustomAction.h>
 #import <UIKit/UIAccessibilityCustomRotor.h>
 #import <UIKit/UIAccessibilityElement.h>
 #import <UIKit/UIAccessibilityIdentification.h>
 #import <UIKit/UIAccessibilityZoom.h>
 #import <UIKit/UIGuidedAccessRestrictions.h>
+#import <UIKit/UIAccessibilityLocationDescriptor.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -61,6 +63,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *accessibilityLabel;
 
 /*
+ The underlying attributed version of the accessibility label. Setting this property will change the
+ value of the accessibilityLabel property and vice-versa.
+ */
+@property (nullable, nonatomic, copy) NSAttributedString *accessibilityAttributedLabel API_AVAILABLE(ios(11.0),tvos(11.0));
+
+/*
  Returns a localized string that describes the result of performing an action on the element, when the result is non-obvious.
  The hint should be a brief phrase.
  For example: "Purchases the item." or "Downloads the attachment."
@@ -68,6 +76,12 @@ NS_ASSUME_NONNULL_BEGIN
  Setting the property will change the hint that is returned to the accessibility client. 
  */
 @property (nullable, nonatomic, copy) NSString *accessibilityHint;
+
+/*
+ The underlying attributed version of the accessibility hint. Setting this property will change the
+ value of the accessibilityHint property and vice-versa.
+ */
+@property (nullable, nonatomic, copy) NSAttributedString *accessibilityAttributedHint API_AVAILABLE(ios(11.0),tvos(11.0));
 
 /*
  Returns a localized string that represents the value of the element, such as the value 
@@ -78,6 +92,12 @@ NS_ASSUME_NONNULL_BEGIN
  Setting the property will change the value that is returned to the accessibility client.  
  */
 @property (nullable, nonatomic, copy) NSString *accessibilityValue;
+
+/*
+ The underlying attributed version of the accessibility value. Setting this property will change the
+ value of the accessibilityValue property and vice-versa.
+ */
+@property (nullable, nonatomic, copy) NSAttributedString *accessibilityAttributedValue API_AVAILABLE(ios(11.0),tvos(11.0));
 
 /*
  Returns a UIAccessibilityTraits mask that is the OR combination of
@@ -174,47 +194,6 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
 @end
 
 
-/*
- UIAccessibilityContainer
- 
- UIAccessibilityContainer methods can be overridden to vend individual elements
- that are managed by a single UIView.
- 
- For example, a single UIView might draw several items that (to an
- end user) have separate meaning and functionality.  It is important to vend
- each item as an individual accessibility element.
- 
- Sub-elements of a container that are not represented by concrete UIView
- instances (perhaps painted text or icons) can be represented using instances
- of UIAccessibilityElement class (see UIAccessibilityElement.h).
- 
- Accessibility containers MUST return NO to -isAccessibilityElement.
- */
-@interface NSObject (UIAccessibilityContainer)
-
-/*
- Returns the number of accessibility elements in the container.
- */
-- (NSInteger)accessibilityElementCount;
-
-/*
- Returns the accessibility element in order, based on index.
- default == nil 
- */
-- (nullable id)accessibilityElementAtIndex:(NSInteger)index;
-
-/*
- Returns the ordered index for an accessibility element
- default == NSNotFound 
- */
-- (NSInteger)indexOfAccessibilityElement:(id)element;
-
-// A list of container elements managed by the receiver.
-// This can be used as an alternative to implementing the dynamic methods.
-// default == nil
-@property (nullable, nonatomic, strong) NSArray *accessibilityElements NS_AVAILABLE_IOS(8_0);
-
-@end
 
 /*
  UIAccessibilityFocus
@@ -333,6 +312,55 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
 // Returns a string representing the text displayed on the current page.
 - (nullable NSString *)accessibilityPageContent NS_AVAILABLE_IOS(5_0);
 
+@optional
+// If an object adopting this protocol responds to these methods, the system will try sending them before sending the non-attributed versions.
+- (nullable NSAttributedString *)accessibilityAttributedContentForLineNumber:(NSInteger)lineNumber API_AVAILABLE(ios(11.0), tvos(11.0));
+- (nullable NSAttributedString *)accessibilityAttributedPageContent API_AVAILABLE(ios(11.0), tvos(11.0));
+
+@end
+
+@interface NSObject(UIAccessibilityDragging)
+
+/* By default, if an accessible view or its subtree has drag and/or drop interactions, they will be
+ * automatically exposed by assistive technologies. However, if there is more than one such
+ * interaction, each drag or drop should have a name to disambiguate it and give a good user
+ * experience. Also, there may be situations in which you want to expose drags or drops from an
+ * element, and those interactions are installed on views that are not part of that element's view
+ * hierarchy subtree.
+ *
+ * This is trivially the case when the element is not a view at all, but an instance of
+ * UIAccessibilityElement.
+ *
+ * Another example is when a container view maintains interactions that are logically
+ * associated with subviews. For instance, UITableView has associated drag interactions that allow
+ * for dragging its rows; to make the rows draggable by assistive technologies, UITableViewCell has
+ * drag descriptors that describe where in the table view to start a drag to activate dragging of
+ * the cell.
+ * (Note that this implementation detail is noted here for expository purposes only and may change
+ * at any time without warning.)
+ *
+ * Properties defined here allow you to fine-tune how drags and drops are exposed to assistive
+ * technologies. Both of their getter methods can be overridden to provide information on-demand.
+ * For each location descriptor, the associated view should be the UIView with the appropriate
+ * UIInteraction object for that drag or drop.
+ *
+ * `accessibilityDragSourceDescriptors` is an array of UIAccessibilityLocationDescriptor
+ * objects and is used to define and describe what drags are available from an element.
+ *
+ * `accessibilityDropPointDescriptors` is similarly an array of
+ * UIAccessibilityLocationDescriptor objects and is used to define and describe where
+ * drops are possible on this element.
+ *
+ * To restore the default automatic behavior for these properties, assign (or return) the default
+ * value of nil. Note that nil does not describe the same behavior as the empty array, which
+ * specifies that there are no relevant interactions for this element.
+ *
+ */
+@property (nullable, nonatomic, copy) NSArray<UIAccessibilityLocationDescriptor *> *accessibilityDragSourceDescriptors API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+
+@property (nullable, nonatomic, copy) NSArray<UIAccessibilityLocationDescriptor *> *accessibilityDropPointDescriptors API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+
+
 @end
 
 /*
@@ -349,10 +377,11 @@ UIKIT_EXTERN void UIAccessibilityPostNotification(UIAccessibilityNotifications n
  Assistive Technology
  
  Use UIAccessibilityIsVoiceOverRunning() to determine if VoiceOver is running.
- Listen for UIAccessibilityVoiceOverStatusChanged to know when VoiceOver starts or stops.
+ Listen for UIAccessibilityVoiceOverStatusDidChangeNotification to know when VoiceOver starts or stops.
  */
 UIKIT_EXTERN BOOL UIAccessibilityIsVoiceOverRunning(void) NS_AVAILABLE_IOS(4_0);
-UIKIT_EXTERN NSString *const UIAccessibilityVoiceOverStatusChanged NS_AVAILABLE_IOS(4_0);
+UIKIT_EXTERN NSString *const UIAccessibilityVoiceOverStatusChanged API_DEPRECATED_WITH_REPLACEMENT("UIAccessibilityVoiceOverStatusDidChangeNotification", ios(4.0, 11.0), tvos(9.0, 11.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityVoiceOverStatusDidChangeNotification API_AVAILABLE(ios(11.0), tvos(11.0));
 
 // Returns whether system audio is mixed down from stereo to mono.
 UIKIT_EXTERN BOOL UIAccessibilityIsMonoAudioEnabled(void) NS_AVAILABLE_IOS(5_0);

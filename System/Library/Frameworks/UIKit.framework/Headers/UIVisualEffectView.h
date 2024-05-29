@@ -2,10 +2,12 @@
 //  UIVisualEffectView.h
 //  UIKit
 //
-//  Copyright (c) 2014-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
+#import <UIKit/UIBlurEffect.h>
+#import <UIKit/UIVibrancyEffect.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,33 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
  • Correctly capturing snapshots - Many effects require support from the window that hosts the view. As such, attempting to take a snapshot of just the UIVisualEffectView will result in the snapshot not containing the effect at all or it appearing incorrectly. To properly snapshot a view hierarchy that contains a UIVisualEffectView, you must snapshot the entire UIWindow or UIScreen that contains it.
  */
 
-typedef NS_ENUM(NSInteger, UIBlurEffectStyle) {
-    UIBlurEffectStyleExtraLight,
-    UIBlurEffectStyleLight,
-    UIBlurEffectStyleDark,
-    UIBlurEffectStyleExtraDark __TVOS_AVAILABLE(10_0) __IOS_PROHIBITED __WATCHOS_PROHIBITED,
-    UIBlurEffectStyleRegular NS_ENUM_AVAILABLE_IOS(10_0), // Adapts to user interface style
-    UIBlurEffectStyleProminent NS_ENUM_AVAILABLE_IOS(10_0), // Adapts to user interface style
-} NS_ENUM_AVAILABLE_IOS(8_0);
-
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIVisualEffect : NSObject <NSCopying, NSSecureCoding> @end
-
-/* UIBlurEffect will provide a blur that appears to have been applied to the content layered behind the UIVisualEffectView. Views added to the contentView of a blur visual effect are not blurred themselves. */
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIBlurEffect : UIVisualEffect
-+ (UIBlurEffect *)effectWithStyle:(UIBlurEffectStyle)style;
-@end
-
-/* UIVibrancyEffect amplifies and adjusts the color of content layered behind the view, allowing content placed inside the contentView to become more vivid. It is intended to be placed over, or as a subview of, a UIVisualEffectView that has been configured with a UIBlurEffect. This effect only affects content added to the contentView. Because the vibrancy effect is color dependent, subviews added to the contentView need to be tintColorDidChange aware and must be prepared to update themselves accordingly. UIImageView will need its image to have a rendering mode of UIImageRenderingModeAlwaysTemplate to receive the proper effect.
- */
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIVibrancyEffect : UIVisualEffect
-+ (UIVibrancyEffect *)effectForBlurEffect:(UIBlurEffect *)blurEffect;
-@end
-
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UIVisualEffectView : UIView <NSSecureCoding>
+
 @property (nonatomic, strong, readonly) UIView *contentView; // Do not add subviews directly to UIVisualEffectView, use this view instead.
+
 @property (nonatomic, copy, nullable) UIVisualEffect *effect;
+
 - (instancetype)initWithEffect:(nullable UIVisualEffect *)effect NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
 @end
 
 NS_ASSUME_NONNULL_END

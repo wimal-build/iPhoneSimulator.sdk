@@ -2,7 +2,7 @@
 //  UIButton.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,6 +10,7 @@
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UIStringDrawing.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +25,9 @@ typedef NS_ENUM(NSInteger, UIButtonType) {
     UIButtonTypeInfoDark,
     UIButtonTypeContactAdd,
     
-    UIButtonTypeRoundedRect = UIButtonTypeSystem,   // Deprecated, use UIButtonTypeSystem instead
+    UIButtonTypePlain API_AVAILABLE(tvos(11.0)) __IOS_PROHIBITED __WATCHOS_PROHIBITED, // standard system button without the blurred background view
+    
+    UIButtonTypeRoundedRect = UIButtonTypeSystem   // Deprecated, use UIButtonTypeSystem instead
 };
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIButton : UIControl <NSCoding>
@@ -91,5 +94,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIButton : UIControl <NSCoding>
 @property(nonatomic)        CGSize          titleShadowOffset NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
 
 @end
+
+#if TARGET_OS_IOS
+@interface UIButton (SpringLoading) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END

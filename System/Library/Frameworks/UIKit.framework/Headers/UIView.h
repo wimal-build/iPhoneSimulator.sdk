@@ -2,7 +2,7 @@
 //  UIView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -238,14 +238,30 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 
 - (void)layoutSubviews;    // override point. called by layoutIfNeeded automatically. As of iOS 6.0, when constraints-based layout is used the base implementation applies the constraints-based layout, otherwise it does nothing.
 
-/*
- -layoutMargins returns a set of insets from the edge of the view's bounds that denote a default spacing for laying out content.
- If preservesSuperviewLayoutMargins is YES, margins cascade down the view tree, adjusting for geometry offsets, so that setting the left value of layoutMargins on a superview will affect the left value of layoutMargins for subviews positioned close to the left edge of their superview's bounds
- If your view subclass uses layoutMargins in its layout or drawing, override -layoutMarginsDidChange in order to refresh your view if the margins change.
+/* -layoutMargins returns a set of insets from the edge of the view's bounds that denote a default spacing for laying out content.
+ If preservesSuperviewLayoutMargins is YES, margins cascade down the view tree, adjusting for geometry offsets, so that setting
+ the left value of layoutMargins on a superview will affect the left value of layoutMargins for subviews positioned close to the
+ left edge of their superview's bounds
+   If your view subclass uses layoutMargins in its layout or drawing, override -layoutMarginsDidChange in order to refresh your 
+ view if the margins change.
+   On iOS 11.0 and later, please support both user interface layout directions by setting the directionalLayoutMargins property
+ instead of the layoutMargins property. After setting the directionalLayoutMargins property, the values in the left and right
+ fields of the layoutMargins property will depend on the user interface layout direction.
  */
 @property (nonatomic) UIEdgeInsets layoutMargins NS_AVAILABLE_IOS(8_0);
+
+/* directionalLayoutMargins.leading is used on the left when the user interface direction is LTR and on the right for RTL.
+ Vice versa for directionalLayoutMargins.trailing.
+ */
+@property (nonatomic) NSDirectionalEdgeInsets directionalLayoutMargins API_AVAILABLE(ios(11.0),tvos(11.0));
+
 @property (nonatomic) BOOL preservesSuperviewLayoutMargins NS_AVAILABLE_IOS(8_0); // default is NO - set to enable pass-through or cascading behavior of margins from this view’s parent to its children
+@property (nonatomic) BOOL insetsLayoutMarginsFromSafeArea API_AVAILABLE(ios(11.0),tvos(11.0));  // Default: YES
+
 - (void)layoutMarginsDidChange NS_AVAILABLE_IOS(8_0);
+
+@property (nonatomic,readonly) UIEdgeInsets safeAreaInsets API_AVAILABLE(ios(11.0),tvos(11.0));
+- (void)safeAreaInsetsDidChange API_AVAILABLE(ios(11.0),tvos(11.0));
 
 /* The edges of this guide are constrained to equal the edges of the view inset by the layoutMargins
  */
@@ -253,6 +269,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 
 /// This content guide provides a layout area that you can use to place text and related content whose width should generally be constrained to a size that is easy for the user to read. This guide provides a centered region that you can place content within to get this behavior for this view.
 @property (nonatomic, readonly, strong) UILayoutGuide *readableContentGuide  NS_AVAILABLE_IOS(9_0);
+
+/* The top of the safeAreaLayoutGuide indicates the unobscured top edge of the view (e.g, not behind
+ the status bar or navigation bar, if present). Similarly for the other edges.
+ */
+@property(nonatomic,readonly,strong) UILayoutGuide *safeAreaLayoutGuide API_AVAILABLE(ios(11.0),tvos(11.0));
 @end
 
 @interface UIView(UIViewRendering)
@@ -563,18 +584,18 @@ UIKIT_EXTERN const CGSize UILayoutFittingExpandedSize NS_AVAILABLE_IOS(6_0);
 @interface UIView (UIViewLayoutConstraintCreation)
 /* Constraint creation conveniences. See NSLayoutAnchor.h for details.
  */
-@property(readonly, strong) NSLayoutXAxisAnchor *leadingAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutXAxisAnchor *trailingAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutXAxisAnchor *leftAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutXAxisAnchor *rightAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutYAxisAnchor *topAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutYAxisAnchor *bottomAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutDimension *widthAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutDimension *heightAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutXAxisAnchor *centerXAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutYAxisAnchor *centerYAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutYAxisAnchor *firstBaselineAnchor NS_AVAILABLE_IOS(9_0);
-@property(readonly, strong) NSLayoutYAxisAnchor *lastBaselineAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *leadingAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *trailingAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *leftAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *rightAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *topAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *bottomAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutDimension *widthAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutDimension *heightAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutXAxisAnchor *centerXAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *centerYAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *firstBaselineAnchor NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly,strong) NSLayoutYAxisAnchor *lastBaselineAnchor NS_AVAILABLE_IOS(9_0);
 
 @end
 

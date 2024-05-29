@@ -2,7 +2,7 @@
 //  IntentsUI.h
 //  IntentsUI
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

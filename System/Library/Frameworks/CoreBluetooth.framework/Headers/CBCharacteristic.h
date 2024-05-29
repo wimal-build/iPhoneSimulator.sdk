@@ -40,8 +40,8 @@ typedef NS_OPTIONS(NSUInteger, CBCharacteristicProperties) {
 	CBCharacteristicPropertyIndicate												= 0x20,
 	CBCharacteristicPropertyAuthenticatedSignedWrites								= 0x40,
 	CBCharacteristicPropertyExtendedProperties										= 0x80,
-	CBCharacteristicPropertyNotifyEncryptionRequired NS_ENUM_AVAILABLE(NA, 6_0)		= 0x100,
-	CBCharacteristicPropertyIndicateEncryptionRequired NS_ENUM_AVAILABLE(NA, 6_0)	= 0x200
+	CBCharacteristicPropertyNotifyEncryptionRequired NS_ENUM_AVAILABLE(10_9, 6_0)	= 0x100,
+	CBCharacteristicPropertyIndicateEncryptionRequired NS_ENUM_AVAILABLE(10_9, 6_0)	= 0x200
 };
 
 
@@ -99,7 +99,7 @@ CB_EXTERN_CLASS @interface CBCharacteristic : CBAttribute
  *      Whether the characteristic is currently broadcasted or not.
  *
  */
-@property(readonly) BOOL isBroadcasted NS_DEPRECATED(NA, NA, 5_0, 8_0);
+@property(readonly) BOOL isBroadcasted NS_DEPRECATED(10_9, 10_13, 5_0, 8_0);
 
 /*!
  * @property isNotifying
@@ -128,7 +128,7 @@ typedef NS_OPTIONS(NSUInteger, CBAttributePermissions) {
 	CBAttributePermissionsWriteable					= 0x02,
 	CBAttributePermissionsReadEncryptionRequired	= 0x04,
 	CBAttributePermissionsWriteEncryptionRequired	= 0x08
-} NS_ENUM_AVAILABLE(NA, 6_0);
+} NS_ENUM_AVAILABLE(10_9, 6_0);
 
 
 /*!
@@ -142,7 +142,7 @@ typedef NS_OPTIONS(NSUInteger, CBAttributePermissions) {
  *				<i>value</i> of <i>nil</i>.
  *
  */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(10_9, 6_0)
 CB_EXTERN_CLASS @interface CBMutableCharacteristic : CBCharacteristic
 
 /*!
@@ -159,7 +159,7 @@ CB_EXTERN_CLASS @interface CBMutableCharacteristic : CBCharacteristic
  *
  *  @discussion For notifying characteristics, the set of currently subscribed centrals.
  */
-@property(retain, readonly, nullable) NSArray<CBCentral *> *subscribedCentrals NS_AVAILABLE(NA, 7_0);
+@property(retain, readonly, nullable) NSArray<CBCentral *> *subscribedCentrals NS_AVAILABLE(10_9, 7_0);
 
 @property(assign, readwrite, nonatomic) CBCharacteristicProperties properties;
 @property(retain, readwrite, nullable) NSData *value;
@@ -176,7 +176,7 @@ CB_EXTERN_CLASS @interface CBMutableCharacteristic : CBCharacteristic
  *  @discussion			Returns an initialized characteristic.
  *
  */
-- (instancetype)initWithType:(CBUUID *)UUID properties:(CBCharacteristicProperties)properties value:(nullable NSData *)value permissions:(CBAttributePermissions)permissions NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+- (instancetype)initWithType:(CBUUID *)UUID properties:(CBCharacteristicProperties)properties value:(nullable NSData *)value permissions:(CBAttributePermissions)permissions NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 @end
 

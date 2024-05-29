@@ -2,12 +2,13 @@
 //  UIFocus.h
 //  UIKit
 //
-//  Copyright © 2015-2016 Apple Inc. All rights reserved.
+//  Copyright © 2015-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIFocusGuide.h>
 #import <UIKit/UIFocusAnimationCoordinator.h>
+#import <UIKit/UIKitDefines.h>
 
 @class UIView, UIFocusUpdateContext;
 
@@ -20,6 +21,12 @@ typedef NS_OPTIONS(NSUInteger, UIFocusHeading) {
     UIFocusHeadingNext          = 1 << 4,
     UIFocusHeadingPrevious      = 1 << 5,
 } NS_ENUM_AVAILABLE_IOS(9_0);
+
+#if UIKIT_STRING_ENUMS
+typedef NSString * UIFocusSoundIdentifier NS_EXTENSIBLE_STRING_ENUM;
+#else
+typedef NSString * UIFocusSoundIdentifier;
+#endif
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -45,6 +52,12 @@ NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIFocusEnvironment <NSObject>
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext *)context withAnimationCoordinator:(UIFocusAnimationCoordinator *)coordinator;
 
 @optional
+
+/// Specifies an identifier corresponding to a sound that should be played for a focus update.
+/// Return UIFocusSoundIdentifierNone to opt out of sounds, UIFocusSoundIdentifierDefault for the system
+/// default sounds, a previously registered identifier for a custom sound, or nil to defer the decision
+/// to the parent.
+- (nullable UIFocusSoundIdentifier)soundIdentifierForFocusUpdateInContext:(UIFocusUpdateContext *)context API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios, watchos);
 
 @property (nonatomic, weak, readonly, nullable) UIView *preferredFocusedView NS_DEPRECATED_IOS(9_0, 10_0, "Use -preferredFocusEnvironments instead.");
 
@@ -77,15 +90,30 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UIFocusUpdateContext : NSObject
 
 /// The view that was focused before the update. May be nil if no view was focused, such as when setting initial focus.
 /// If previouslyFocusedItem is not a view, this returns that item's containing view, otherwise they are equal.
+/// NOTE: This property will be deprecated in a future release. Use previouslyFocusedItem instead.
 @property (nonatomic, weak, readonly, nullable) UIView *previouslyFocusedView;
 
 /// The view that will be focused after the update. May be nil if no view will be focused.
 /// If nextFocusedItem is not a view, this returns that item's containing view, otherwise they are equal.
+/// NOTE: This property will be deprecated in a future release. Use nextFocusedItem instead.
 @property (nonatomic, weak, readonly, nullable) UIView *nextFocusedView;
 
 /// The focus heading in which the update is occuring.
 @property (nonatomic, assign, readonly) UIFocusHeading focusHeading;
 
 @end
+
+
+UIKIT_EXTERN NSNotificationName const UIFocusDidUpdateNotification API_AVAILABLE(ios(11.0), tvos(11.0));
+UIKIT_EXTERN NSNotificationName const UIFocusMovementDidFailNotification API_AVAILABLE(ios(11.0), tvos(11.0));
+
+UIKIT_EXTERN NSString * const UIFocusUpdateContextKey API_AVAILABLE(ios(11.0), tvos(11.0));
+UIKIT_EXTERN NSString * const UIFocusUpdateAnimationCoordinatorKey API_AVAILABLE(ios(11.0), tvos(11.0));
+
+/// Sound identifier for disabling sound during a focus update.
+UIKIT_EXTERN UIFocusSoundIdentifier const UIFocusSoundIdentifierNone API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios, watchos);
+
+/// Sound identifier for playing the default sound during a focus update.
+UIKIT_EXTERN UIFocusSoundIdentifier const UIFocusSoundIdentifierDefault API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios, watchos);
 
 NS_ASSUME_NONNULL_END

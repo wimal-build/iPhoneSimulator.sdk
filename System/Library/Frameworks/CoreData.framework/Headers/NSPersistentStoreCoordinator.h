@@ -1,7 +1,7 @@
 /*
     NSPersistentStoreCoordinator.h
     Core Data
-    Copyright (c) 2004-2016, Apple Inc.
+    Copyright (c) 2004-2017, Apple Inc.
     All rights reserved.
 */
 
@@ -109,12 +109,34 @@ COREDATA_EXTERN NSString * const NSPersistentStoreOSCompatibility API_AVAILABLE(
  */
 COREDATA_EXTERN NSString * const NSPersistentStoreConnectionPoolMaxSizeKey API_AVAILABLE(macosx(10.12),ios(10.0),tvos(10.0),watchos(3.0));
 
+/* Spotlight indexing and external record support keys */
+
+COREDATA_EXTERN NSString * const NSCoreDataCoreSpotlightExporter API_AVAILABLE(macosx(10.13),ios(11.0)) API_UNAVAILABLE(tvos,watchos);
+
 /* store option for the destroy... and replace... to indicate that the store file should be destroyed even if the operation might be unsafe (overriding locks
  */
 COREDATA_EXTERN NSString * const NSPersistentStoreForceDestroyOption API_AVAILABLE(macosx(10.8),ios(6.0));
 
 /* Key to represent the protection class for the persistent store.  Backward compatibility may preclude some features.  The acceptable values are those defined in Foundation for the NSFileProtectionKey.  The default value of NSPersistentStoreFileProtectionKey is NSFileProtectionCompleteUntilFirstUserAuthentication for all applications built on or after iOS5.  The default value for all older applications is NSFileProtectionNone. */
 COREDATA_EXTERN NSString * const NSPersistentStoreFileProtectionKey API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macosx);
+
+/* Dictionary key for enabling persistent history - default is NO */
+COREDATA_EXTERN NSString * const NSPersistentHistoryTrackingKey API_AVAILABLE(macosx(10.13),ios(11.0),tvos(11.0),watchos(4.0));
+
+/*
+ Allows developers to provide an additional set of classes (which must implement NSSecureCoding) that should be used while
+ decoding a binary store.
+ Using this option is preferable to using NSBinaryStoreInsecureDecodingCompatibilityOption.
+ */
+COREDATA_EXTERN NSString * const NSBinaryStoreSecureDecodingClasses API_AVAILABLE(macosx(10.13),ios(11.0),tvos(11.0),watchos(4.0));
+
+/*
+ Indicate that the binary store should be decoded insecurely. This may be necessary if a store has metadata or transformable
+ properties containing non-standard classes. If possible, developers should use the NSBinaryStoreSecureDecodingClasses option
+ to specify the contained classes, allowing the binary store to to be securely decoded.
+ Applications linked before the availability date will default to using this option.
+ */
+COREDATA_EXTERN NSString * const NSBinaryStoreInsecureDecodingCompatibilityOption API_AVAILABLE(macosx(10.13),ios(11.0),tvos(11.0),watchos(4.0));
 
 API_AVAILABLE(macosx(10.4),ios(3.0))
 @interface NSPersistentStoreCoordinator : NSObject <NSLocking> {
@@ -189,10 +211,10 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 - (BOOL)replacePersistentStoreAtURL:(NSURL *)destinationURL destinationOptions:(nullable NSDictionary *)destinationOptions withPersistentStoreFromURL:(NSURL *)sourceURL sourceOptions:(nullable NSDictionary *)sourceOptions storeType:(NSString *)storeType error:(NSError**)error API_AVAILABLE(macosx(10.11),ios(9.0));
 
 /* asynchronously performs the block on the coordinator's queue.  Encapsulates an autorelease pool. */
-- (void)performBlock:(void (^)())block  API_AVAILABLE(macosx(10.10),ios(8.0));
+- (void)performBlock:(void (^)(void))block  API_AVAILABLE(macosx(10.10),ios(8.0));
 
 /* synchronously performs the block on the coordinator's queue.  May safely be called reentrantly. Encapsulates an autorelease pool. */
-- (void)performBlockAndWait:(void (^)())block  API_AVAILABLE(macosx(10.10),ios(8.0));
+- (void)performBlockAndWait:(void (NS_NOESCAPE ^)(void))block  API_AVAILABLE(macosx(10.10),ios(8.0));
 
 - (void)lock API_DEPRECATED( "Use -performBlockAndWait: instead", macosx(10.4,10.10), ios(3.0,8.0));
 - (void)unlock API_DEPRECATED( "Use -performBlockAndWait: instead", macosx(10.4,10.10), ios(3.0,8.0));

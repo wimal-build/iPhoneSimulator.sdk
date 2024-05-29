@@ -54,7 +54,7 @@ CB_EXTERN_CLASS @interface CBDescriptor : CBAttribute
  *		Format</code> descriptors are currently supported. The <code>Characteristic Extended Properties</code> and <code>Client Characteristic 
  *		Configuration</code> descriptors will be created automatically upon publication of the parent service, depending on the properties of the characteristic itself.
  */
-NS_CLASS_AVAILABLE(NA, 6_0)
+NS_CLASS_AVAILABLE(10_9, 6_0)
 CB_EXTERN_CLASS @interface CBMutableDescriptor : CBDescriptor
 
 /*!
@@ -67,7 +67,7 @@ CB_EXTERN_CLASS @interface CBMutableDescriptor : CBDescriptor
  *					once the parent service has been published.
  *
  */
-- (instancetype)initWithType:(CBUUID *)UUID value:(nullable id)value NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED;
+- (instancetype)initWithType:(CBUUID *)UUID value:(nullable id)value NS_DESIGNATED_INITIALIZER __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
 
 @end
 

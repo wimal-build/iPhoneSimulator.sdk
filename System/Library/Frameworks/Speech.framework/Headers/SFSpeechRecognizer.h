@@ -13,7 +13,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SFSpeechRecognitionRequest;
-@class SFSpeechRecordingRecognitionRequest;
 @class SFSpeechRecognitionResult;
 @class SFSpeechRecognitionTask;
 

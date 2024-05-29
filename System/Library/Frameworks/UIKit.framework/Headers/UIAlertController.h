@@ -2,10 +2,11 @@
 //  UIAlertController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
+#import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,5 +49,10 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAlertController : UIViewController
 @property (nonatomic, readonly) UIAlertControllerStyle preferredStyle;
 
 @end
+
+#if TARGET_OS_IOS
+@interface UIAlertController (SpringLoading) <UISpringLoadedInteractionSupporting>
+@end
+#endif
 
 NS_ASSUME_NONNULL_END

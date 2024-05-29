@@ -3,7 +3,7 @@
     @abstract   The MFMailComposeViewController class provides an interface for editing and sending email.
     @discussion MFMailComposeViewController is used for implementing a simple interface for users to enter
                 and send email.
-    @copyright  Copyright 2008-2010 Apple Inc. All rights reserved.
+    @copyright  Copyright 2008-2016 Apple Inc. All rights reserved.
 */
 #import <UIKit/UIKit.h>
 
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeResult) {
     MFMailComposeResultSaved,
     MFMailComposeResultSent,
     MFMailComposeResultFailed
-} NS_ENUM_AVAILABLE_IOS(3_0);
+} API_AVAILABLE(ios(3.0));
 
 /*!
     @const      MFMailComposeErrorDomain
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeResult) {
                 MFMailCompose API.  Valid error code values are declared in the <tt>MFMailComposeErrorCode</tt>
                 space.
 */
-extern NSString *const MFMailComposeErrorDomain __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+extern NSErrorDomain const MFMailComposeErrorDomain API_AVAILABLE(ios(3.0));
 
 /*!
     @enum       MFMailComposeErrorCode
@@ -52,8 +52,7 @@ extern NSString *const MFMailComposeErrorDomain __OSX_AVAILABLE_STARTING(__MAC_N
 typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
     MFMailComposeErrorCodeSaveFailed,
     MFMailComposeErrorCodeSendFailed
-} NS_ENUM_AVAILABLE_IOS(3_0);
-
+} API_AVAILABLE(ios(3.0));
 
 @protocol MFMailComposeViewControllerDelegate;
 
@@ -66,6 +65,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                  of the user's composition completion and how they chose to complete the operation.<p>Prior to use, clients
                  should verify the user has set up the device for sending email via <tt>+[MFMailComposeViewController canSendMail]</tt>.
 */
+API_AVAILABLE(ios(3.0))
 @interface MFMailComposeViewController : UINavigationController
 {
 @private
@@ -79,13 +79,13 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                 was the result, the client has a couple options.  It may choose to simply notify the user of the inability to
                 send mail, or it may issue a "mailto" URL via <tt>-[UIApplication openURL:]</tt>.
 */
-+ (BOOL)canSendMail __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
++ (BOOL)canSendMail;
 
 /*!
     @property   mailComposeDelegate
     @abstract   This property is the delegate for the MFMailComposeViewControllerDelegate method callbacks.
  */
-@property (nonatomic, assign, nullable) id<MFMailComposeViewControllerDelegate> mailComposeDelegate /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0)*/;
+@property (nonatomic, nullable, assign) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
 
 /*!
     @method     setSubject:
@@ -95,7 +95,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                 </p>After the view has been presented to the user, this method will no longer change the value.
     @param      subject  A NSString specifying the message's Subject header.
 */
-- (void)setSubject:(NSString *)subject __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)setSubject:(NSString *)subject;
 
 /*!
     @method     setToRecipients:
@@ -105,7 +105,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                 </p>After the view has been presented to the user, this method will no longer change the value.
     @param      toRecipients  A NSArray of NSString instances specifying the email addresses of recipients.
 */
-- (void)setToRecipients:(nullable NSArray<NSString *> *)toRecipients __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)setToRecipients:(nullable NSArray<NSString *> *)toRecipients;
 
 /*!
     @method     setCcRecipients:
@@ -115,7 +115,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                 </p>After the view has been presented to the user, this method will no longer change the value.
     @param      ccRecipients  A NSArray of NSString instances specifying the email addresses of recipients.
  */
-- (void)setCcRecipients:(nullable NSArray<NSString *> *)ccRecipients __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)setCcRecipients:(nullable NSArray<NSString *> *)ccRecipients;
 
 /*!
     @method     setBccRecipients:
@@ -125,7 +125,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                 </p>After the view has been presented to the user, this method will no longer change the value.
     @param      bccRecipients    A NSArray of NSString instances specifying the email addresses of recipients.
  */
-- (void)setBccRecipients:(nullable NSArray<NSString *> *)bccRecipients __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)setBccRecipients:(nullable NSArray<NSString *> *)bccRecipients;
 
 /*!
     @method     setMessageBody:isHTML:
@@ -135,7 +135,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
     @param      body A NSString containing the body contents of the email message.
     @param      isHTML  A boolean value indicating if the body argument is to be interpreted as HTML content.
 */
-- (void)setMessageBody:(NSString *)body isHTML:(BOOL)isHTML __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)setMessageBody:(NSString *)body isHTML:(BOOL)isHTML;
 
 /*!
     @method     addAttachmentData:mimeType:fileName:
@@ -148,7 +148,17 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
     @param      filename     NSString specifying the intended filename for the attachment.  This is displayed below
                                 the attachment's icon if the attachment is not decoded when displayed.  Must not be <tt>nil</tt>.
 */
-- (void)addAttachmentData:(NSData *)attachment mimeType:(NSString *)mimeType fileName:(NSString *)filename __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)addAttachmentData:(NSData *)attachment mimeType:(NSString *)mimeType fileName:(NSString *)filename;
+
+/*!
+ @method     setPreferredSendingEmailAddress:
+ @abstract   This method sets the preferred sending account of the email message.
+ @discussion This method will set the sending account of the message to the specified email address if the user has an account with such an address set up. If there is no account with such an address, the default account will be used instead.
+ The sending email address should be specified as per RFC5322.
+ After the view has been presented to the user, this method will no longer change the value.
+ @param      emailAddress  A NSString specifying the preferred email address used to send this message.
+ */
+- (void)setPreferredSendingEmailAddress:(NSString *)emailAddress API_AVAILABLE(ios(11.0));
 
 @end
 
@@ -172,7 +182,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
     @param      error        NSError indicating the failure reason if failure did occur.  This will be <tt>nil</tt> if
                              result did not indicate failure.
 */
-- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(nullable NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(nullable NSError *)error;
 
 @end
 

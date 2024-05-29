@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  *        set to a particular value.
  */
 NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
-@interface HMCharacteristicEvent<TriggerValueType : id<NSCopying>> : HMEvent
+@interface HMCharacteristicEvent<TriggerValueType : id<NSCopying>> : HMEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -56,7 +56,32 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateTriggerValue:(nullable TriggerValueType)triggerValue completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateTriggerValue:(nullable TriggerValueType)triggerValue completionHandler:(void (^)(NSError * __nullable error))completion NS_DEPRECATED_IOS(9_0, 11_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+
+@end
+
+
+
+
+/*!
+ * @brief This class represents an event that is evaluated based on the value of a characteristic
+ *        set to a particular value.
+ */
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+@interface HMMutableCharacteristicEvent<TriggerValueType : id<NSCopying>> : HMCharacteristicEvent
+
+- (instancetype)init NS_UNAVAILABLE;
+
+/*!
+ * @brief The characteristic associated with the event.
+ */
+@property(readwrite, strong, nonatomic) HMCharacteristic *characteristic;
+
+/*!
+ * @brief The value of the characteristic that triggers the event.
+ *        A value of nil corresponds to any change in the value of the characteristic.
+ */
+@property(readwrite, copy, nonatomic, nullable) TriggerValueType triggerValue;
 
 @end
 

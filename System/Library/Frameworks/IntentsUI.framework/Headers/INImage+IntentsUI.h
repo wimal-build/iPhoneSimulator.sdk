@@ -2,7 +2,7 @@
 //  INImage+IntentsUI.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INImage.h>
@@ -11,6 +11,8 @@
 #import <UIKit/UIKit.h>
 
 @class INIntentResponse;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface INImage (IntentsUI)
 
@@ -22,4 +24,8 @@
  */
 + (CGSize)imageSizeForIntentResponse:(INIntentResponse *)response API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
 
+- (void)fetchUIImageWithCompletion:(void (^)(UIImage * _Nullable image))completion;
+
 @end
+
+NS_ASSUME_NONNULL_END

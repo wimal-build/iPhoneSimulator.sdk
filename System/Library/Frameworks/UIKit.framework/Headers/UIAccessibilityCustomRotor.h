@@ -2,7 +2,7 @@
 //  UIAccessibilityCustomRotor.h
 //  UIKit
 //
-//  Copyright (c) 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,6 +31,32 @@ typedef NS_ENUM(NSInteger, UIAccessibilityCustomRotorDirection) {
     UIAccessibilityCustomRotorDirectionNext NS_ENUM_AVAILABLE_IOS(10_0),
 };
 
+/*
+ UIAccessibilityCustomSystemRotorType should be used when you want to allow searching for one of the following types.
+ This will allow VoiceOver to use appropriate gestures and keyboard commands for these specific search types.
+ */
+typedef NS_ENUM(NSInteger, UIAccessibilityCustomSystemRotorType) {
+    UIAccessibilityCustomSystemRotorTypeNone = 0,
+    UIAccessibilityCustomSystemRotorTypeLink,
+    UIAccessibilityCustomSystemRotorTypeVisitedLink,
+    UIAccessibilityCustomSystemRotorTypeHeading,
+    UIAccessibilityCustomSystemRotorTypeHeadingLevel1,
+    UIAccessibilityCustomSystemRotorTypeHeadingLevel2,
+    UIAccessibilityCustomSystemRotorTypeHeadingLevel3,
+    UIAccessibilityCustomSystemRotorTypeHeadingLevel4,
+    UIAccessibilityCustomSystemRotorTypeHeadingLevel5,
+    UIAccessibilityCustomSystemRotorTypeHeadingLevel6,
+    UIAccessibilityCustomSystemRotorTypeBoldText,
+    UIAccessibilityCustomSystemRotorTypeItalicText,
+    UIAccessibilityCustomSystemRotorTypeUnderlineText,
+    UIAccessibilityCustomSystemRotorTypeMisspelledWord,
+    UIAccessibilityCustomSystemRotorTypeImage,
+    UIAccessibilityCustomSystemRotorTypeTextField,
+    UIAccessibilityCustomSystemRotorTypeTable,
+    UIAccessibilityCustomSystemRotorTypeList,
+    UIAccessibilityCustomSystemRotorTypeLandmark,
+} NS_AVAILABLE_IOS(11_0);
+
 typedef UIAccessibilityCustomRotorItemResult *_Nullable(^UIAccessibilityCustomRotorSearch)(UIAccessibilityCustomRotorSearchPredicate *predicate);
 
 // Create the array of UIAccessibilityCustomRotors and set it on the target element or ancestor element to which it applies.
@@ -48,15 +74,26 @@ NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotorSearchPredicat
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotor : NSObject
 
 - (instancetype)initWithName:(NSString *)name itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock;
+- (instancetype)initWithAttributedName:(NSAttributedString *)attributedName itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock API_AVAILABLE(ios(11.0), tvos(11.0));
+- (instancetype)initWithSystemType:(UIAccessibilityCustomSystemRotorType)type itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock NS_AVAILABLE_IOS(11_0);
 
 // The localized name the assistive technology will use to describe the custom rotor.
 @property (nonatomic, copy) NSString *name;
+
+// Underlying attributed version of the "name" property. Setting this property will change the
+// value of the "name" property and vice-versa.
+@property (nonatomic, copy) NSAttributedString *attributedName API_AVAILABLE(ios(11.0), tvos(11.0));
 
 // A block that takes a UIAccessibilityCustomRotorItemResult and the search direction and returns the next/previous instance of that rotor item.
 // If the currentItem is nil, that implies the first/last item should be returned.
 @property (nonatomic, copy) UIAccessibilityCustomRotorSearch itemSearchBlock;
 
+// The system rotor type that was optionally used during initialization.
+// default = UIAccessibilityCustomSystemRotorTypeNone
+@property (nonatomic, readonly) UIAccessibilityCustomSystemRotorType systemRotorType;
+
 @end
+
 
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotorItemResult : NSObject
 

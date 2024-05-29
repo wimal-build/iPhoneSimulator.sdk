@@ -26,11 +26,27 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
 /// Request a transaction to be performed by the in-app provider.
 ///
-/// If the completion block is called with a nil error, then the transaction will be passed back via the executeTransaction delegate callback.
+/// If the completion block is called with a nil error, then the transaction will be passed to the CXProvider's -provider:executeTransaction: delegate callback.
 /// A non-nil error indicates that the requested transaction could not be executed.
 ///
 /// Completion block is performed on the queue supplied to designated initializer.
 - (void)requestTransaction:(CXTransaction *)transaction completion:(void (^)(NSError *_Nullable error))completion;
+
+/// Request a transaction containing the specified actions to be performed by the in-app provider.
+///
+/// If the completion block is called with a nil error, then the transaction will be passed to the CXProvider's -provider:executeTransaction: delegate callback.
+/// A non-nil error indicates that the requested transaction could not be executed.
+///
+/// Completion block is performed on the queue supplied to designated initializer.
+- (void)requestTransactionWithActions:(NSArray<CXAction *> *)actions completion:(void (^)(NSError *_Nullable error))completion API_AVAILABLE(ios(11.0));
+
+/// Request a transaction containing the specified action to be performed by the in-app provider.
+///
+/// If the completion block is called with a nil error, then the transaction will be passed to the CXProvider's -provider:executeTransaction: delegate callback.
+/// A non-nil error indicates that the requested transaction could not be executed.
+///
+/// Completion block is performed on the queue supplied to designated initializer.
+- (void)requestTransactionWithAction:(CXAction *)action completion:(void (^)(NSError *_Nullable error))completion API_AVAILABLE(ios(11.0));
 
 @end
 

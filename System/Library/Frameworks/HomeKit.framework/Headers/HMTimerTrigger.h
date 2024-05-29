@@ -50,7 +50,6 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
                   recurrence:(nullable NSDateComponents *)recurrence
           recurrenceCalendar:(nullable NSCalendar *)recurrenceCalendar NS_DESIGNATED_INITIALIZER __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
-
 /*!
  * @brief Specifies when, in an absolute time, the trigger should fire the first time.
  *

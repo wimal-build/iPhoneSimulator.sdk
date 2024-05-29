@@ -2,7 +2,7 @@
 //  INSetClimateSettingsInCarIntent.h
 //  Intents
 //
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntent.h>
@@ -14,11 +14,11 @@
 
 @class INBooleanResolutionResult;
 @class INCarAirCirculationModeResolutionResult;
-@class INIntegerResolutionResult;
+@class INCarSeatResolutionResult;
 @class INDoubleResolutionResult;
+@class INIntegerResolutionResult;
 @class INRelativeSettingResolutionResult;
 @class INTemperatureResolutionResult;
-@class INCarSeatResolutionResult;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -65,8 +65,7 @@ API_UNAVAILABLE(watchos, macosx)
 @class INSetClimateSettingsInCarIntentResponse;
 
 /*!
- @brief Protocol to declare support for handling an INSetClimateSettingsInCarIntent 
- @abstract By implementing this protocol, a class can provide logic for resolving, confirming and handling the intent.
+ @abstract Protocol to declare support for handling an INSetClimateSettingsInCarIntent. By implementing this protocol, a class can provide logic for resolving, confirming and handling the intent.
  @discussion The minimum requirement for an implementing class is that it should be able to handle the intent. The resolution and confirmation methods are optional. The handling method is always called last, after resolving and confirming the intent.
  */
 
@@ -77,81 +76,75 @@ API_UNAVAILABLE(watchos, macosx)
 @required
 
 /*!
- @brief handling method
-
- @abstract Execute the task represented by the INSetClimateSettingsInCarIntent that's passed in
+ @abstract Handling method - Execute the task represented by the INSetClimateSettingsInCarIntent that's passed in
  @discussion Called to actually execute the intent. The app must return a response for this intent.
 
- @param  setClimateSettingsInCarIntent The input intent
+ @param  intent The input intent
  @param  completion The response handling block takes a INSetClimateSettingsInCarIntentResponse containing the details of the result of having executed the intent
 
  @see  INSetClimateSettingsInCarIntentResponse
  */
 
 - (void)handleSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                           completion:(void (^)(INSetClimateSettingsInCarIntentResponse *response))completion NS_SWIFT_NAME(handle(setClimateSettingsInCar:completion:));
+                           completion:(void (^)(INSetClimateSettingsInCarIntentResponse *response))completion NS_SWIFT_NAME(handle(intent:completion:));
 
 @optional
 
 /*!
- @brief Confirmation method
- @abstract Validate that this intent is ready for the next step (i.e. handling)
+ @abstract Confirmation method - Validate that this intent is ready for the next step (i.e. handling)
  @discussion Called prior to asking the app to handle the intent. The app should return a response object that contains additional information about the intent, which may be relevant for the system to show the user prior to handling. If unimplemented, the system will assume the intent is valid following resolution, and will assume there is no additional information relevant to this intent.
 
- @param  setClimateSettingsInCarIntent The input intent
+ @param  intent The input intent
  @param  completion The response block contains an INSetClimateSettingsInCarIntentResponse containing additional details about the intent that may be relevant for the system to show the user prior to handling.
 
  @see INSetClimateSettingsInCarIntentResponse
-
  */
 
 - (void)confirmSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                            completion:(void (^)(INSetClimateSettingsInCarIntentResponse *response))completion NS_SWIFT_NAME(confirm(setClimateSettingsInCar:completion:));
+                            completion:(void (^)(INSetClimateSettingsInCarIntentResponse *response))completion NS_SWIFT_NAME(confirm(intent:completion:));
 
 /*!
- @brief Resolution methods
- @abstract Determine if this intent is ready for the next step (confirmation)
+ @abstract Resolution methods - Determine if this intent is ready for the next step (confirmation)
  @discussion Called to make sure the app extension is capable of handling this intent in its current form. This method is for validating if the intent needs any further fleshing out.
 
- @param  setClimateSettingsInCarIntent The input intent
+ @param  intent The input intent
  @param  completion The response block contains an INIntentResolutionResult for the parameter being resolved
 
  @see INIntentResolutionResult
-
  */
 
 - (void)resolveEnableFanForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                    withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableFan(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableFan(for:with:));
 
 - (void)resolveEnableAirConditionerForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                               withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableAirConditioner(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableAirConditioner(for:with:));
 
 - (void)resolveEnableClimateControlForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                               withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableClimateControl(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableClimateControl(for:with:));
 
 - (void)resolveEnableAutoModeForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                         withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableAutoMode(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveEnableAutoMode(for:with:));
 
 - (void)resolveAirCirculationModeForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                             withCompletion:(void (^)(INCarAirCirculationModeResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveAirCirculationMode(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INCarAirCirculationModeResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveAirCirculationMode(for:with:));
 
 - (void)resolveFanSpeedIndexForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                        withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveFanSpeedIndex(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveFanSpeedIndex(for:with:));
 
 - (void)resolveFanSpeedPercentageForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                             withCompletion:(void (^)(INDoubleResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveFanSpeedPercentage(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INDoubleResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveFanSpeedPercentage(for:with:));
 
 - (void)resolveRelativeFanSpeedSettingForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                                  withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveRelativeFanSpeedSetting(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveRelativeFanSpeedSetting(for:with:));
 
 - (void)resolveTemperatureForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                      withCompletion:(void (^)(INTemperatureResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveTemperature(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INTemperatureResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveTemperature(for:with:));
 
 - (void)resolveRelativeTemperatureSettingForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                                     withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveRelativeTemperatureSetting(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveRelativeTemperatureSetting(for:with:));
 
 - (void)resolveClimateZoneForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
-                                      withCompletion:(void (^)(INCarSeatResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveClimateZone(forSetClimateSettingsInCar:with:));
+                    withCompletion:(void (^)(INCarSeatResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveClimateZone(for:with:));
 
 @end
 

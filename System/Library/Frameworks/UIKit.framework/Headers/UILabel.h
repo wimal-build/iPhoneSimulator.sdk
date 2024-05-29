@@ -2,7 +2,7 @@
 //  UILabel.h
 //  UIKit
 //
-//  Copyright (c) 2006-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -43,7 +43,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSize
 
 @property(nonatomic) NSInteger numberOfLines;
 
-// these next 3 property allow the label to be autosized to fit a certain width by scaling the font size(s) by a scaling factor >= the minimum scaling factor
+// these next 3 properties allow the label to be autosized to fit a certain width by scaling the font size(s) by a scaling factor >= the minimum scaling factor
 // and to specify how the text baseline moves when it needs to shrink the font.
 
 @property(nonatomic) BOOL adjustsFontSizeToFitWidth;         // default is NO

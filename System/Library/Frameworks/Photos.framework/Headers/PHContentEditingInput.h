@@ -25,6 +25,10 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHContentEditingInput : NS
 @property (readonly, copy, nullable) CLLocation *location;
 @property (readonly, copy, nullable) NSString *uniformTypeIdentifier;
 
+// Playback style describes how the content should be presented to the user.  Use this value to choose the type of view and the appropriate APIs on the content editing input to display this content.
+// When editing a live photo with a PHAssetPlaybackStyleLoopingVideo, you should provide an updated video that includes the looping video metadata on the PHContentEditingOutput's renderedContentURL.
+@property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0);
+
 // Adjustments to be applied onto the provided input image or video.
 @property (readonly, strong, nullable) PHAdjustmentData *adjustmentData;
 

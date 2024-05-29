@@ -5,7 +5,7 @@
 			 message.
  @discussion MFMessageComposeViewController is used for implementing a simple interface for users to enter
 			 and send a text message including multimedia attachments.
- @copyright  Copyright 2009 - 2012 Apple Inc. All rights reserved.
+ @copyright  Copyright 2009 - 2016 Apple Inc. All rights reserved.
  */
 #import <UIKit/UIKit.h>
 
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, MessageComposeResult) {
     MessageComposeResultCancelled,
     MessageComposeResultSent,
     MessageComposeResultFailed
-} NS_ENUM_AVAILABLE_IOS(4_0);
+} API_AVAILABLE(ios(4.0));
 
 /*!
  @constant  MFMessageComposeViewControllerAttachmentURL   The url for the given attachment.
@@ -46,7 +46,7 @@ extern NSString *const MFMessageComposeViewControllerAttachmentAlternateFilename
  @discussion This notification is posted when the value of <tt>+[MFMessageComposeViewController canSendText]</tt>
              has changed. Clients should invalidate any caches and update UI as appropriate.
 */
-extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification API_AVAILABLE(ios(5.0));
 
 /*!
  @const      MFMessageComposeViewControllerTextMessageAvailabilityKey
@@ -55,7 +55,7 @@ extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityDidC
  @discussion The value of this key is an NSNumber containing a BOOL value. This value matches
              the result of <tt>+[MFMessageComposeViewController canSendText]</tt>.
 */
-extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityKey __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
+extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityKey API_AVAILABLE(ios(5.0));
 
 @class MSMessage;
 @protocol MFMessageComposeViewControllerDelegate;
@@ -71,7 +71,7 @@ extern NSString *const MFMessageComposeViewControllerTextMessageAvailabilityKey 
 			  <p>Prior to use, clients should verify the user has set up the device for sending messages via
 			  <tt>+[MFMessageComposeViewController canSendText]</tt>.
  */
-NS_CLASS_AVAILABLE(NA, 4_0)
+API_AVAILABLE(ios(4.0))
 @interface MFMessageComposeViewController : UINavigationController {
 }
 
@@ -82,19 +82,19 @@ NS_CLASS_AVAILABLE(NA, 4_0)
 			 If the return value is NO, the client may notify the user of the failure, or the
 			 client may open an SMS URL via <tt>-[UIApplication openURL:]</tt>.
  */
-+ (BOOL)canSendText  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0);
++ (BOOL)canSendText;
 
 /*!
  @method     canSendSubject
  @abstract   Returns <tt>YES</tt> if the user has set up the device for including subjects in messages.</tt>.
  */
-+ (BOOL)canSendSubject __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
++ (BOOL)canSendSubject API_AVAILABLE(ios(7.0));
 
 /*!
  @method     canSendAttachments
  @abstract   Returns <tt>YES</tt> if the user has set up the device for including attachments in messages.</tt>.
  */
-+ (BOOL)canSendAttachments __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
++ (BOOL)canSendAttachments API_AVAILABLE(ios(7.0));
 
 /*!
  @method     isSupportedAttachmentUTI:
@@ -102,20 +102,20 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  @discussion If the return value is YES, the UTI is acceptable for attachment to a message, a return value of NO
  indicates that the given UTI is unsupported.
  */
-+ (BOOL)isSupportedAttachmentUTI:(NSString *)uti __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
++ (BOOL)isSupportedAttachmentUTI:(NSString *)uti API_AVAILABLE(ios(7.0));
 
 /*!
  @property   messageComposeDelegate
  @abstract   This property is the delegate for the MFMessageComposeViewController method callbacks.
  */
-@property(nonatomic,assign,nullable) id<MFMessageComposeViewControllerDelegate> messageComposeDelegate /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0)*/;
+@property (nonatomic, nullable, assign) id<MFMessageComposeViewControllerDelegate> messageComposeDelegate;
 
 /*!
  @method     disableUserAttachments;
  @abstract   Calling this method will disable the camera/attachment button in the view controller.  After the controller has been presented,
              this call will have no effect.  The camera / attachment button is visible by default.
  */
-- (void)disableUserAttachments __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+- (void)disableUserAttachments API_AVAILABLE(ios(7.0));
 
 /*!
  @property   recipients
@@ -125,7 +125,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
 			 to display.
 			 </p>After the view has been presented to the user, this property will no longer change the value.
  */
-@property(nonatomic,copy,nullable) NSArray<NSString *> *recipients /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0)*/;
+@property (nonatomic, nullable, copy) NSArray<NSString *> *recipients;
 
 /*!
  @property   body
@@ -134,7 +134,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
 			 to display.
 			 </p>After the view has been presented to the user, this property will no longer change the value.
  */
-@property(nonatomic,copy,nullable) NSString *body /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_0)*/;
+@property (nonatomic, nullable, copy) NSString *body;
 
 /*!
  @property   subject
@@ -143,7 +143,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  to display.
  </p>After the view has been presented to the user, this property will no longer change the value.
  */
-@property(nonatomic,copy,nullable) NSString *subject /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0)*/;
+@property (nonatomic, nullable, copy) NSString *subject API_AVAILABLE(ios(7.0));
 
 /*!
  @property   attachments
@@ -151,16 +151,13 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  @discussion This property returns an NSArray of NSDictionaries describing the properties of the current attachments.
              See MFMessageComposeViewControllerAttachmentURL, MFMessageComposeViewControllerAttachmentAlternateFilename.
  */
-@property(nonatomic,copy,readonly,nullable) NSArray<NSDictionary *> *attachments /*__OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0)*/;
-
+@property (nonatomic, nullable, readonly, copy) NSArray<NSDictionary *> *attachments API_AVAILABLE(ios(7.0));
 
 /*!
  @property   message
  @abstract   This property sets the initial interactive message.
  */
-@property(nonatomic,copy,nullable) MSMessage *message __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_10_0);
-
-
+@property (nonatomic, nullable, copy) MSMessage *message API_AVAILABLE(ios(10.0));
 
 /*!
  @method     addAttachmentURL:withAlternateFilename:
@@ -170,7 +167,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
              URL must not be NIL.  The alternate filename will be display to the user in leiu of the attachments URL.
              The alternate filename may be NIL.
  */
-- (BOOL)addAttachmentURL:(NSURL *)attachmentURL withAlternateFilename:(nullable NSString *)alternateFilename __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+- (BOOL)addAttachmentURL:(NSURL *)attachmentURL withAlternateFilename:(nullable NSString *)alternateFilename API_AVAILABLE(ios(7.0));
 
 /*!
  @method     addAttachmentData:typeIdentifier:filename:
@@ -178,7 +175,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  @discussion If the return value is YES, the attachment was added to the composition. If the return value is NO,
  the attachment was not added to the composition.  The data and typeIdentifer must be non-nil.  typeIdentifier should be a valid Uniform Type Identifier.
  */
-- (BOOL)addAttachmentData:(NSData *)attachmentData typeIdentifier:(NSString *)uti filename:(NSString *)filename __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
+- (BOOL)addAttachmentData:(NSData *)attachmentData typeIdentifier:(NSString *)uti filename:(NSString *)filename API_AVAILABLE(ios(7.0));
 
 @end
 

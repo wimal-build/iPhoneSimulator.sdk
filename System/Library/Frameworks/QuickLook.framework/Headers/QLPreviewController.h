@@ -133,7 +133,6 @@ QL_EXPORT @protocol QLPreviewControllerDelegate <NSObject>
  */
 - (UIView* _Nullable)previewController:(QLPreviewController *)controller transitionViewForPreviewItem:(id <QLPreviewItem>)item NS_AVAILABLE_IOS(10_0);
 
-
 @end
 
 NS_ASSUME_NONNULL_END

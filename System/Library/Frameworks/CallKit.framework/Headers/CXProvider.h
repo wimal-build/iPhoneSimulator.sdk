@@ -107,7 +107,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 /// List of all transactions that are incomplete.
 @property (nonatomic, readonly, copy) NSArray<CXTransaction *> *pendingTransactions;
 
-/// Returns subset of call actions contained in any transaction in -pendingTransactions of the specified class and with the specified call UUID
+/// Returns subset of call actions contained in any transaction in -pendingTransactions of the specified class and with the specified call UUID.
 - (NSArray<__kindof CXCallAction *> *)pendingCallActionsOfClass:(Class)callActionClass withCallUUID:(NSUUID *)callUUID;
 
 @end

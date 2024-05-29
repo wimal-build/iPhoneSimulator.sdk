@@ -1,3 +1,0 @@
-(if (entitlement "com.apple.private.corerecents")
-    (begin
-       (allow mach-lookup (global-name "com.apple.corerecents.recentsd"))))

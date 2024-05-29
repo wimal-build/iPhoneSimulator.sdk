@@ -38,27 +38,26 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @property   animationDuration
  @abstract   The amount of time it takes to go through one cycle of the sticker animation.
  */
-@property(nonatomic, readonly) NSTimeInterval animationDuration;
+@property (nonatomic, readonly) NSTimeInterval animationDuration;
 
 /*!
  @method    startAnimating
  @abstract  Starts animating the sticker in the receiver.
  @discussion This method always starts the animation from the first frame.
  */
--(void) startAnimating;
+- (void)startAnimating;
 
 /*!
  @method    stopAnimating
  @abstract  Stops animating the sticker in the receiver.
  */
--(void) stopAnimating;
+- (void)stopAnimating;
 
 /*!
  @method   isAnimating
  @abstract   Returns a Boolean value indicating whether the animation is running.
  */
 - (BOOL)isAnimating;
-
 
 @end
 

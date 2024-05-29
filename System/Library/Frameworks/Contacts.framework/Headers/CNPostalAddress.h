@@ -30,7 +30,7 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 @property (readonly, copy, NS_NONATOMIC_IOSONLY) NSString *ISOCountryCode;
 
 /*! Returns a user displayable property name. */
-+ (NSString*)localizedStringForKey:(NSString *)key;
++ (NSString *)localizedStringForKey:(NSString *)key;
 
 @end
 

@@ -2,7 +2,7 @@
 //  NSStringDrawing.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSString.h>
@@ -19,20 +19,20 @@ NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_AVAILABLE(10_11, 6_0) @interface NSStringDrawingContext : NSObject
 
 // Minimum scale factor for drawWithRect:options:context: and boundingRectWithSize:options:context: methods. If this property is set, the extended string drawing methods will attempt to draw the attributed string in the given bounds by proportionally scaling the font(s) in the attributed string
-@property(NS_NONATOMIC_IOSONLY) CGFloat minimumScaleFactor;
+@property (NS_NONATOMIC_IOSONLY) CGFloat minimumScaleFactor;
 
 // actual scale factor used by the last drawing call where minimum scale factor was specified
-@property(readonly, NS_NONATOMIC_IOSONLY) CGFloat actualScaleFactor;
+@property (readonly, NS_NONATOMIC_IOSONLY) CGFloat actualScaleFactor;
 
 // bounds of the string drawn by the previous invocation of drawWithRect:options:context:
-@property(readonly, NS_NONATOMIC_IOSONLY) CGRect totalBounds;
+@property (readonly, NS_NONATOMIC_IOSONLY) CGRect totalBounds;
 
 @end
 
 @interface NSString(NSStringDrawing)
-- (CGSize)sizeWithAttributes:(nullable NSDictionary<NSString *, id> *)attrs NS_AVAILABLE(10_0, 7_0);
-- (void)drawAtPoint:(CGPoint)point withAttributes:(nullable NSDictionary<NSString *, id> *)attrs NS_AVAILABLE(10_0, 7_0);
-- (void)drawInRect:(CGRect)rect withAttributes:(nullable NSDictionary<NSString *, id> *)attrs NS_AVAILABLE(10_0, 7_0);
+- (CGSize)sizeWithAttributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attrs NS_AVAILABLE(10_0, 7_0);
+- (void)drawAtPoint:(CGPoint)point withAttributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attrs NS_AVAILABLE(10_0, 7_0);
+- (void)drawInRect:(CGRect)rect withAttributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attrs NS_AVAILABLE(10_0, 7_0);
 @end
 
 @interface NSAttributedString(NSStringDrawing)
@@ -53,8 +53,8 @@ typedef NS_OPTIONS(NSInteger, NSStringDrawingOptions) {
 // NOTE: All of the following methods will default to drawing on a baseline, limiting drawing to a single line.
 // To correctly draw and size multi-line text, pass NSStringDrawingUsesLineFragmentOrigin in the options parameter.
 @interface NSString (NSExtendedStringDrawing)
-- (void)drawWithRect:(CGRect)rect options:(NSStringDrawingOptions)options attributes:(nullable NSDictionary<NSString *, id> *)attributes context:(nullable NSStringDrawingContext *)context NS_AVAILABLE(10_11, 7_0);
-- (CGRect)boundingRectWithSize:(CGSize)size options:(NSStringDrawingOptions)options attributes:(nullable NSDictionary<NSString *, id> *)attributes context:(nullable NSStringDrawingContext *)context NS_AVAILABLE(10_11, 7_0);
+- (void)drawWithRect:(CGRect)rect options:(NSStringDrawingOptions)options attributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attributes context:(nullable NSStringDrawingContext *)context NS_AVAILABLE(10_11, 7_0);
+- (CGRect)boundingRectWithSize:(CGSize)size options:(NSStringDrawingOptions)options attributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attributes context:(nullable NSStringDrawingContext *)context NS_AVAILABLE(10_11, 7_0);
 @end
 
 @interface NSAttributedString (NSExtendedStringDrawing)
@@ -64,8 +64,8 @@ typedef NS_OPTIONS(NSInteger, NSStringDrawingOptions) {
 
 /************************ Deprecated ************************/
 @interface NSStringDrawingContext (NSStringDrawingContextDeprecated)
-@property(nonatomic) CGFloat minimumTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
-@property(nonatomic, readonly) CGFloat actualTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+@property (nonatomic) CGFloat minimumTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+@property (nonatomic, readonly) CGFloat actualTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
 @end
 
 NS_ASSUME_NONNULL_END

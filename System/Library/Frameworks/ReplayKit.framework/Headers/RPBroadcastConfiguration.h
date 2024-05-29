@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-NS_CLASS_AVAILABLE_IOS(10_0)
+API_DEPRECATED("No longer supported", ios(10.0,11.0), tvos(10.0,11.0))
 
 NS_ASSUME_NONNULL_BEGIN
 @interface RPBroadcastConfiguration : NSObject <NSCoding, NSSecureCoding>

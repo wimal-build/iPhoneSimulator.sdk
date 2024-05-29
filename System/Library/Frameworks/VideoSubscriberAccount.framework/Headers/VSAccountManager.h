@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class NSDictionary<KeyType, ValueType>;
+@class NSString;
 @class NSError;
 @class UIViewController;
 @class VSAccountManagerResult;
@@ -42,7 +43,7 @@ API_AVAILABLE(ios(10.0), tvos(10.0));
 VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 @interface VSAccountManager : NSObject
 
-/// An object that can help the account manager by presenting and dismissing view controllers when needed.
+/// An object that can help the account manager by presenting and dismissing view controllers when needed, and deciding whether to allow authentication with the selected provider.
 /// Some requests may fail if a delegate is not provided.  For example, an account metadata request may require a delegate if it allows interruption.
 @property (nonatomic, weak) id<VSAccountManagerDelegate> delegate;
 
@@ -51,7 +52,7 @@ VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 /// @param completionHandler A block to be called when the request finishes.  It will always be called exactly once.  It may be called before the method call returns.  It may be called on any queue.
 /// @param accessStatus The current state the application's access to the user's subscription information.
 /// @param error If the user did not grant access to the app, this will contain an error describing the result of the operation.
-- (void)checkAccessStatusWithOptions:(NSDictionary<VSCheckAccessOption, id> *)options completionHandler:(void (^)(VSAccountAccessStatus accessStatus, NSError * __nullable error))completionHandler;
+- (void)checkAccessStatusWithOptions:(NSDictionary<VSCheckAccessOption, id> *)options completionHandler:(void (^)(VSAccountAccessStatus accessStatus, NSError * _Nullable error))completionHandler;
 
 /// Begins requesting information about the subscriber's account.
 /// @param request This identifies what specific information the app wants to know.
@@ -59,7 +60,7 @@ VS_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0))
 /// @param metadata If the request finished successfully, this will contain information about the subscriber's account.
 /// @param error If the request did not finish successfully, this will contain an error describing the result of the operation.
 /// @returns A result object that may be used to cancel the in-flight request.  Cancellation is advisory, and does not guarantee that the request will finish immediately.
-- (VSAccountManagerResult *)enqueueAccountMetadataRequest:(VSAccountMetadataRequest *)request completionHandler:(void (^)(VSAccountMetadata * __nullable metadata, NSError * __nullable error))completionHandler;
+- (VSAccountManagerResult *)enqueueAccountMetadataRequest:(VSAccountMetadataRequest *)request completionHandler:(void (^)(VSAccountMetadata * _Nullable metadata, NSError * _Nullable error))completionHandler;
 
 @end
 
@@ -79,6 +80,19 @@ API_AVAILABLE(ios(10.0), tvos(10.0))
 /// @param accountManager The account manager instance that previously asked to show the view controller.
 /// @param viewController The view controller that is being presented to the user.  You must use -dismissViewControllerAnimated:completion: to begin dismissing the view controller before returning from this method.
 - (void)accountManager:(VSAccountManager *)accountManager dismissViewController:(UIViewController *)viewController;
+
+@optional
+
+/// This method can be used to temporarily refrain from authenticating with an
+/// otherwise-supported provider during a transient outage.
+/// This method will be called when the user chooses a supported provider from
+/// the list of providers.
+/// If you do not implement this method, the user will be able to authenticate
+/// with all supported providers.
+/// @param accountManager The account manager instance that received a metadata request.
+/// @param accountProviderIdentifier Identifies the otherwise-supported account provider.
+/// @returns Returning NO will cause the request will fail with an unsupported provider error.
+- (BOOL)accountManager:(VSAccountManager *)accountManager shouldAuthenticateAccountProviderWithIdentifier:(NSString *)accountProviderIdentifier;
 
 @end
 

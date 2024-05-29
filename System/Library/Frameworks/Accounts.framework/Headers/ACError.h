@@ -5,6 +5,7 @@
 //  Copyright (c) 2011-2012 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <Accounts/AccountsDefines.h>
 
 ACCOUNTS_EXTERN NSString * const ACErrorDomain NS_AVAILABLE(NA, 5_0);

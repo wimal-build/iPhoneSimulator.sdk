@@ -26,23 +26,25 @@ CB_EXTERN NSString * const CBErrorDomain;
  */
 typedef NS_ENUM(NSInteger, CBError) {
 	CBErrorUnknown												= 0,
-	CBErrorInvalidParameters NS_ENUM_AVAILABLE(NA, 6_0)			= 1,
-	CBErrorInvalidHandle NS_ENUM_AVAILABLE(NA, 6_0)				= 2,
-	CBErrorNotConnected NS_ENUM_AVAILABLE(NA, 6_0)				= 3,
-	CBErrorOutOfSpace NS_ENUM_AVAILABLE(NA, 6_0)				= 4,
-	CBErrorOperationCancelled NS_ENUM_AVAILABLE(NA, 6_0)		= 5,
-	CBErrorConnectionTimeout NS_ENUM_AVAILABLE(NA, 6_0)			= 6,
-	CBErrorPeripheralDisconnected NS_ENUM_AVAILABLE(NA, 6_0)	= 7,
-	CBErrorUUIDNotAllowed NS_ENUM_AVAILABLE(NA, 6_0)			= 8,
-	CBErrorAlreadyAdvertising NS_ENUM_AVAILABLE(NA, 6_0)		= 9,
-	CBErrorConnectionFailed NS_ENUM_AVAILABLE(NA, 7_1)			= 10,
-	CBErrorConnectionLimitReached NS_ENUM_AVAILABLE(NA, 9_0)	= 11
+	CBErrorInvalidParameters NS_ENUM_AVAILABLE(10_9, 6_0)		= 1,
+	CBErrorInvalidHandle NS_ENUM_AVAILABLE(10_9, 6_0)			= 2,
+	CBErrorNotConnected NS_ENUM_AVAILABLE(10_9, 6_0)			= 3,
+	CBErrorOutOfSpace NS_ENUM_AVAILABLE(10_9, 6_0)				= 4,
+	CBErrorOperationCancelled NS_ENUM_AVAILABLE(10_9, 6_0)		= 5,
+	CBErrorConnectionTimeout NS_ENUM_AVAILABLE(10_9, 6_0)		= 6,
+	CBErrorPeripheralDisconnected NS_ENUM_AVAILABLE(10_9, 6_0)	= 7,
+	CBErrorUUIDNotAllowed NS_ENUM_AVAILABLE(10_9, 6_0)			= 8,
+	CBErrorAlreadyAdvertising NS_ENUM_AVAILABLE(10_9, 6_0)		= 9,
+	CBErrorConnectionFailed NS_ENUM_AVAILABLE(10_13, 7_1)		= 10,
+	CBErrorConnectionLimitReached NS_ENUM_AVAILABLE(10_13, 9_0)	= 11,
+	CBErrorUnkownDevice NS_ENUM_AVAILABLE(10_13, 9_0)			= 12
+
 };
 
 CB_EXTERN NSString * const CBATTErrorDomain;
 
 typedef NS_ENUM(NSInteger, CBATTError) {
-	CBATTErrorSuccess NS_ENUM_AVAILABLE(NA, 6_0)	= 0x00,
+	CBATTErrorSuccess NS_ENUM_AVAILABLE(10_9, 6_0)	= 0x00,
 	CBATTErrorInvalidHandle							= 0x01,
 	CBATTErrorReadNotPermitted						= 0x02,
 	CBATTErrorWriteNotPermitted						= 0x03,

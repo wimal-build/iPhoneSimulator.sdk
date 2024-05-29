@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  @class         HKHealthStore
  @abstract      The HKHealthStore class provides an interface for accessing and storing the user's health data.
  */
-HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
+HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKHealthStore : NSObject
 
 /*!
@@ -80,7 +80,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                 the user, if necessary, completed successfully and was not cancelled by the user.  It does NOT indicate
                 whether the application was granted authorization.
  */
-- (void)handleAuthorizationForExtensionWithCompletion:(void (^)(BOOL success, NSError * _Nullable error))completion HK_AVAILABLE_IOS_ONLY(9_0) NS_EXTENSION_UNAVAILABLE("Not available to extensions") ;
+- (void)handleAuthorizationForExtensionWithCompletion:(void (^)(BOOL success, NSError * _Nullable error))completion API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(watchos) NS_EXTENSION_UNAVAILABLE("Not available to extensions");
 
 /*!
  @method        earliestPermittedSampleDate
@@ -88,7 +88,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    On some platforms, only samples with end dates newer than the value returned by earliestPermittedSampleDate
                 may be saved or retrieved.
  */
-- (NSDate *)earliestPermittedSampleDate HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+- (NSDate *)earliestPermittedSampleDate API_AVAILABLE(ios(9.0), watchos(2.0));
 
 /*!
  @method        saveObject:withCompletion:
@@ -128,7 +128,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    An application may only delete objects that it previously saved.  This operation is performed
                 asynchronously and the completion will be executed on an arbitrary background queue.
  */
-- (void)deleteObjects:(NSArray<HKObject *> *)objects withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+- (void)deleteObjects:(NSArray<HKObject *> *)objects withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion API_AVAILABLE(ios(9.0), watchos(2.0));
 
 /*!
  @method        deleteObjectsOfType:predicate:withCompletion:
@@ -136,7 +136,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    An application may only delete objects that it previously saved.  This operation is performed
                 asynchronously and the completion will be executed on an arbitrary background queue.
  */
-- (void)deleteObjectsOfType:(HKObjectType *)objectType predicate:(NSPredicate *)predicate withCompletion:(void(^)(BOOL success, NSUInteger deletedObjectCount, NSError * _Nullable error))completion HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+- (void)deleteObjectsOfType:(HKObjectType *)objectType predicate:(NSPredicate *)predicate withCompletion:(void(^)(BOOL success, NSUInteger deletedObjectCount, NSError * _Nullable error))completion API_AVAILABLE(ios(9.0), watchos(2.0));
 
 /*!
  @method        executeQuery:
@@ -173,9 +173,9 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
 - (void)splitTotalEnergy:(HKQuantity *)totalEnergy
                startDate:(NSDate *)startDate
                  endDate:(NSDate *)endDate
-          resultsHandler:(void(^)(HKQuantity * _Nullable restingEnergy, HKQuantity * _Nullable activeEnergy, NSError * _Nullable error))resultsHandler HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+          resultsHandler:(void(^)(HKQuantity * _Nullable restingEnergy, HKQuantity * _Nullable activeEnergy, NSError * _Nullable error))resultsHandler API_DEPRECATED("No longer supported", ios(9.0, 11.0), watchos(2.0, 4.0));
 
-- (nullable NSDate *)dateOfBirthWithError:(NSError **)error NS_DEPRECATED_IOS(8_0, 10_0, "Use dateOfBirthComponentsWithError:") __WATCHOS_DEPRECATED(2_0, 3_0, "Use dateOfBirthComponentsWithError:");
+- (nullable NSDate *)dateOfBirthWithError:(NSError **)error API_DEPRECATED_WITH_REPLACEMENT("dateOfBirthComponentsWithError:", ios(8.0, 10.0), watchos(2.0, 3.0));
 
 /*!
  @method        dateOfBirthComponentsWithError:
@@ -183,7 +183,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    Before calling this method, the application should request authorization to access objects with the
                 HKCharacteristicType identified by HKCharacteristicTypeIdentifierDateOfBirth.
  */
-- (nullable NSDateComponents *)dateOfBirthComponentsWithError:(NSError **)error HK_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
+- (nullable NSDateComponents *)dateOfBirthComponentsWithError:(NSError **)error API_AVAILABLE(ios(10.0), watchos(3.0));
 
 /*!
  @method        biologicalSexWithError:
@@ -207,7 +207,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    Before calling this method, the application should request authorization to access objects with the
                 HKCharacteristicType identified by HKCharacteristicTypeIdentifierFitzpatrickSkinType.
  */
-- (nullable HKFitzpatrickSkinTypeObject *)fitzpatrickSkinTypeWithError:(NSError **)error HK_AVAILABLE_IOS_WATCHOS(9_0, 2_0);
+- (nullable HKFitzpatrickSkinTypeObject *)fitzpatrickSkinTypeWithError:(NSError **)error API_AVAILABLE(ios(9.0), watchos(2.0));
 
 /*!
  @method        wheelchairUseWithError:
@@ -215,7 +215,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    Before calling this method, the application should request authorization to access objects with the
                 HKCharacteristicType identified by HKCharacteristicTypeIdentifierWheelchairUse.
  */
-- (nullable HKWheelchairUseObject *)wheelchairUseWithError:(NSError **)error HK_AVAILABLE_IOS_WATCHOS(10_0, 3_0);
+- (nullable HKWheelchairUseObject *)wheelchairUseWithError:(NSError **)error API_AVAILABLE(ios(10.0), watchos(3.0));
 
 @end
 
@@ -238,7 +238,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
  @discussion    This method will asynchronously begin a workout session. The methods on the session's delegate will be 
                 called when the session has successfully started or fails to start.
  */
-- (void)startWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(2_0);
+- (void)startWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(2.0)) API_UNAVAILABLE(ios);
 
 /*!
  @method        endWorkoutSession:
@@ -247,7 +247,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                 transition to HKWorkoutSessionStateEnded. Once a workout session is ended, it cannot be reused to start
                 a new workout session.
  */
-- (void)endWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(2_0);
+- (void)endWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(2.0)) API_UNAVAILABLE(ios);
 
 /*!
  @method        pauseWorkoutSession:
@@ -256,7 +256,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                 will transition to HKWorkoutSessionStatePaused. An HKWorkoutEventTypePause will be generated and
                 delivered to the workout session's delegate.
  */
-- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(3_0);
+- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(3.0)) API_UNAVAILABLE(ios);
 
 /*!
  @method        resumeWorkoutSession:
@@ -265,7 +265,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                 will transition to HKWorkoutSessionStateRunning. An HKWorkoutEventTypeResume will be generated and
                 delivered to the workout session's delegate.
  */
-- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession HK_AVAILABLE_WATCHOS_ONLY(3_0);
+- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(3.0)) API_UNAVAILABLE(ios);
 
 /*!
  @method        startWatchAppWithWorkoutConfiguration:completion:
@@ -275,7 +275,7 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                 protocol will be called with the HKWorkoutConfiguration as a parameter. The receiving Watch app can use
                 this configuration object to create an HKWorkoutSession and start it with -startWorkoutSession:.
  */
-- (void)startWatchAppWithWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration completion:(void (^)(BOOL success, NSError * _Nullable error))completion HK_AVAILABLE_IOS_ONLY(10_0);
+- (void)startWatchAppWithWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration completion:(void (^)(BOOL success, NSError * _Nullable error))completion API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(watchos);
 
 @end
 
@@ -291,23 +291,23 @@ HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
                 HKQuantityTypeIdentifierStepCount) have a minimum frequency of HKUpdateFrequencyHourly. This is enforced
                 transparently to the caller.
  */
-- (void)enableBackgroundDeliveryForType:(HKObjectType *)type frequency:(HKUpdateFrequency)frequency withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_UNAVAILABLE;
+- (void)enableBackgroundDeliveryForType:(HKObjectType *)type frequency:(HKUpdateFrequency)frequency withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_PROHIBITED;
 
-- (void)disableBackgroundDeliveryForType:(HKObjectType *)type withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_UNAVAILABLE;
+- (void)disableBackgroundDeliveryForType:(HKObjectType *)type withCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_PROHIBITED;
 
-- (void)disableAllBackgroundDeliveryWithCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_UNAVAILABLE;
+- (void)disableAllBackgroundDeliveryWithCompletion:(void(^)(BOOL success, NSError * _Nullable error))completion __WATCHOS_PROHIBITED;
 
 @end
 
 /*!
  @constant      HKUserPreferencesDidChangeNotification
  @abstract      A notification posted every time the user updates their preferred units.
- @discussion    Each HKHealthStore posts a HKUserPreferencesDidChangeNotification notification when the preferred unit 
-                for a HKQuantityType is changed by the user. To guarantee your listener will only receive a single 
+ @discussion    Each HKHealthStore posts a HKUserPreferencesDidChangeNotification notification when the preferred unit
+                for a HKQuantityType is changed by the user. To guarantee your listener will only receive a single
                 notification when this occurs, it is necessary to provide an HKHealthStore instance for the object
                 parameter of NSNotificationCenter's addObserver methods.
  */
-HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification HK_AVAILABLE_IOS_WATCHOS(8_2, 2_0);
+HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification API_AVAILABLE(ios(8.2), watchos(2.0));
 
 @interface HKHealthStore (HKUserPreferences)
 
@@ -325,7 +325,7 @@ HK_EXTERN NSString * const HKUserPreferencesDidChangeNotification HK_AVAILABLE_I
  
                 The returned dictionary will map HKQuantityType to HKUnit.
  */
-- (void)preferredUnitsForQuantityTypes:(NSSet<HKQuantityType *> *)quantityTypes completion:(void(^)(NSDictionary<HKQuantityType*, HKUnit *> *preferredUnits, NSError * _Nullable error))completion HK_AVAILABLE_IOS_WATCHOS(8_2, 2_0);
+- (void)preferredUnitsForQuantityTypes:(NSSet<HKQuantityType *> *)quantityTypes completion:(void(^)(NSDictionary<HKQuantityType *, HKUnit *> *preferredUnits, NSError * _Nullable error))completion API_AVAILABLE(ios(8.2), watchos(2.0));
 
 @end
 

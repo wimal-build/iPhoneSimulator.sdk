@@ -22,6 +22,20 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol HMHomeDelegate;
 
 /*!
+ @enum      HMHomeHubState
+
+ @constant  HMHomeHubStateNotAvailable      No home hub is present.
+ @constant  HMHomeHubStateConnected         Home hub is connected.
+ @constant  HMHomeHubStateDisconnected      No home hub is connected.
+ */
+typedef NS_ENUM(NSUInteger, HMHomeHubState)
+{
+    HMHomeHubStateNotAvailable = 0,
+    HMHomeHubStateConnected,
+    HMHomeHubStateDisconnected
+} NS_ENUM_AVAILABLE_IOS(11_0);
+
+/*!
  * @brief Represents a home.
  *
  * @discussion This class represents a home and is the entry point to communicate and
@@ -48,6 +62,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @brief Specifies whether this home is the primary home.
  */
 @property(readonly, getter=isPrimary, nonatomic) BOOL primary;
+
+/*!
+ * @brief Specifies the state of the home hub.
+ */
+@property(readonly, nonatomic) HMHomeHubState homeHubState API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 /*!
  * @brief A unique identifier for the home.
@@ -362,8 +381,8 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief Retrieve a built-in action set for the home.
  *
- * @param type Type of the builtin action set. Supported action set types are HMActionSetTypeWakeUp,
- *             HMActionSetTypeSleep, HMActionSetTypeHomeDeparture and HMActionSetTypeHomeArrival.
+ * @param actionSetType Type of the builtin action set. Supported action set types are HMActionSetTypeWakeUp,
+ *                      HMActionSetTypeSleep, HMActionSetTypeHomeDeparture and HMActionSetTypeHomeArrival.
  *
  * @return Reference to the built-in action set corresponding to type argument,
  *         nil if no matching action set is found.
@@ -425,6 +444,13 @@ NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @param home Sender of this message.
  */
 - (void)homeDidUpdateName:(HMHome *)home;
+
+/*!
+ * @brief Informs the delegate when the access control for current user has been updated.
+ *
+ * @param home Sender of the message.
+ */
+- (void)homeDidUpdateAccessControlForCurrentUser:(HMHome *)home API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 /*!
  * @brief Informs the delegate of addition of an accessory to the home.
@@ -695,6 +721,15 @@ NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  */
 
 - (void)home:(HMHome *)home didEncounterError:(NSError*)error forAccessory:(HMAccessory *)accessory;
+
+/*!
+ * @brief Informs the delegate when state of the home hub changes.
+ *
+ * @param home Sender of the message.
+ *
+ * @param homeHubState The new home hub state.
+ */
+- (void)home:(HMHome *)home didUpdateHomeHubState:(HMHomeHubState)homeHubState API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 @end
 

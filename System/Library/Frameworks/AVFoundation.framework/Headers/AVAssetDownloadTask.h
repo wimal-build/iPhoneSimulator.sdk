@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
 
-	Copyright 2015 Apple Inc. All rights reserved.
+	Copyright 2015-2016 Apple Inc. All rights reserved.
 
 */
 
@@ -36,10 +36,10 @@ AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey NS_AVAILABLE_IOS
 /*!
  @class			AVAssetDownloadTask
  @abstract		A NSURLSessionTask that accepts remote AVURLAssets to download locally.
- @discussion	Should be created with -[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:destinationURL:options:]. To utilize local data for playback for downloads that are in-progress, re-use the URLAsset supplied in initialization. An AVAssetDownloadTask may be instantiated with a destinationURL pointing to an existing asset on disk, for the purpose of completing or augmenting a downloaded asset.
+ @discussion	Should be created with -[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:]. To utilize local data for playback for downloads that are in-progress, re-use the URLAsset supplied in initialization. An AVAssetDownloadTask may be instantiated with a destinationURL pointing to an existing asset on disk, for the purpose of completing or augmenting a downloaded asset.
 */
 
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @interface AVAssetDownloadTask : NSURLSessionTask
 
 /*!
@@ -76,13 +76,34 @@ AV_INIT_UNAVAILABLE
 
 @end
 
+/*!
+ @class			AVAggregateAssetDownloadTask
+ @abstract		An AVAssetDownloadTask used for downloading multiple AVMediaSelections for a single AVAsset, under the umbrella of a single download task.
+ @discussion	Should be created with -[AVAssetDownloadURLSession aggregateAssetDownloadTaskWithURLAsset:mediaSelections:assetTitle:assetArtworkData:options:. For progress tracking, monitor the delegate callbacks for each childAssetDownloadTask.
+*/
+NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
+@interface AVAggregateAssetDownloadTask : NSURLSessionTask
+
+/*!
+ @property		URLAsset
+ @abstract		The asset supplied to the download task upon initialization.
+*/
+@property (nonatomic, readonly) AVURLAsset *URLAsset;
+
+// NSURLRequest and NSURLResponse objects are not available for AVAggregateAssetDownloadTask
+AV_INIT_UNAVAILABLE
+@property (readonly, copy) NSURLRequest *originalRequest NS_UNAVAILABLE;
+@property (readonly, copy) NSURLRequest *currentRequest NS_UNAVAILABLE;
+@property (readonly, copy) NSURLResponse *response NS_UNAVAILABLE;
+
+@end
 
 /*!
  @protocol		AVAssetDownloadDelegate
- @abstract		Delegate method to implement when adopting AVAssetDownloadTask.
+ @abstract		Delegate methods to implement when adopting AVAssetDownloadTask.
 */
 
-__TVOS_PROHIBITED
+__TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @protocol AVAssetDownloadDelegate <NSURLSessionTaskDelegate>
 @optional
 /*!
@@ -100,7 +121,7 @@ __TVOS_PROHIBITED
 
 /*!
  @method		URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:
- @abstract		Method to adopt to subscribe to progress updates of the AVAssetDownloadTask
+ @abstract		Method to adopt to subscribe to progress updates of an AVAssetDownloadTask.
  @param			session
 				The session the asset download task is on.
  @param			assetDownloadTask
@@ -125,6 +146,49 @@ __TVOS_PROHIBITED
 				The resolved media selection for the download task. For the best chance of playing back downloaded content without further network I/O, apply this selection to subsequent AVPlayerItems.
 */
 - (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didResolveMediaSelection:(AVMediaSelection *)resolvedMediaSelection NS_AVAILABLE_IOS(9_0);
+
+/*
+ @method		URLSession:aggregateAssetDownloadTask:willDownloadToURL:
+ @abstract		Method called when the an aggregate download task determines the location this asset will be downloaded to.
+ @discussion	This URL should be saved for future instantiations of AVAsset. While an AVAsset already exists for this content, it is advisable to re-use that instance.
+ @param			session
+				The session the aggregate asset download task is on.
+ @param			aggregateAssetDownloadTask
+				The AVAggregateAssetDownloadTask.
+ @param			location
+				The file URL this task will download media data to.
+*/
+- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask willDownloadToURL:(NSURL *)location NS_AVAILABLE_IOS(11_0);
+
+/*
+ @method		URLSession:aggregateAssetDownloadTask:didCompleteForMediaSelection:
+ @abstract		Method called when a child AVAssetDownloadTask completes.
+ @param			session
+				The session the aggregate asset download task is on.
+ @param			aggregateAssetDownloadTask
+				The AVAggregateAssetDownloadTask.
+ @param			mediaSelection
+				The AVMediaSelection which is now fully available for offline use.
+*/
+- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask didCompleteForMediaSelection:(AVMediaSelection *)mediaSelection NS_AVAILABLE_IOS(11_0);
+
+/*
+ @method		URLSession:aggregateAssetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelection:
+ @abstract		Method to adopt to subscribe to progress updates of an AVAggregateAssetDownloadTask
+ @param			session
+				The session the asset download task is on.
+ @param			aggregateAssetDownloadTask
+				The AVAggregateAssetDownloadTask.
+ @param			timeRange
+				A CMTimeRange indicating the time range loaded for the media selection being downloaded.
+ @param			loadedTimeRanges
+				A NSArray of NSValues of CMTimeRanges indicating all the time ranges loaded for the media selection being downloaded.
+ @param			timeRangeExpectedToLoad
+				A CMTimeRange indicating the single time range that is expected to be loaded when the download is complete for the media selection being downloaded.
+ @param			mediaSelection
+				The media selection which has additional media data loaded for offline use.
+*/
+- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask didLoadTimeRange:(CMTimeRange)timeRange totalTimeRangesLoaded:(NSArray<NSValue *> *)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad forMediaSelection:(AVMediaSelection *)mediaSelection NS_AVAILABLE_IOS(11_0);
 
 @end
 
@@ -170,11 +234,28 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
  @param			assetTitle
 				A human readable title for this asset, expected to be as suitable as possible for the user's preferred languages. Will show up in the usage pane of the settings app.
  @param			assetArtworkData
-				Artwork data for this asset. Optional. Will show up in the usage pane of the settings app.
+				NSData representing artwork data for this asset. Optional. Will show up in the usage pane of the settings app. Must work with +[UIImage imageWithData:].
  @param			options
 				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task. Using this parameter is required for downloading non-default media selections for HLS assets.
 */
 - (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE_IOS(10_0);
+
+/*!
+ @method		aggregateAssetDownloadTaskWithURLAsset:mediaSelections:assetTitle:assetArtworkData:options:
+ @abstract		Creates and initializes an AVAggregateAssetDownloadTask to download multiple AVMediaSelections on an AVURLAsset.
+ @discussion	This method may return nil if the URLSession has been invalidated. The value of AVAssetDownloadTaskMediaSelectionKey will be ignored.
+ @param			URLAsset
+				The AVURLAsset to download locally.
+ @param			mediaSelections
+				A list of AVMediaSelections. Each AVMediaSelection will correspond to a childAssetDownloadTask. Use -[AVAsset allMediaSelections] to download all AVMediaSelections on this AVAsset.
+ @param			assetTitle
+				A human readable title for this asset, expected to be as suitable as possible for the user's preferred languages. Will show up in the usage pane of the settings app.
+ @param			assetArtworkData
+				Artwork data for this asset. Optional. Will show up in the usage pane of the settings app.
+ @param			options
+				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task.
+*/
+- (nullable AVAggregateAssetDownloadTask *)aggregateAssetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset mediaSelections:(NSArray <AVMediaSelection *> *)mediaSelections assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE_IOS(11_0);
 
 // only AVAssetDownloadTasks can be created with AVAssetDownloadURLSession
 AV_INIT_UNAVAILABLE

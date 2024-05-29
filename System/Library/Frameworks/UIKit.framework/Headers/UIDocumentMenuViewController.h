@@ -2,7 +2,7 @@
 //  UIDocumentMenuViewController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, UIDocumentMenuOrder) {
     UIDocumentMenuOrderFirst,
     UIDocumentMenuOrderLast
-} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+} NS_ENUM_DEPRECATED_IOS(8_0,11_0) __TVOS_PROHIBITED;
 
 __TVOS_PROHIBITED @protocol UIDocumentMenuDelegate <NSObject>
 
@@ -24,7 +24,8 @@ __TVOS_PROHIBITED @protocol UIDocumentMenuDelegate <NSObject>
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIDocumentMenuViewController : UIViewController
+NS_CLASS_DEPRECATED_IOS(8_0, 11_0, "UIDocumentMenuViewController is deprecated. Use UIDocumentPickerViewController directly.")
+__TVOS_PROHIBITED @interface UIDocumentMenuViewController : UIViewController
 
 - (instancetype)initWithDocumentTypes:(NSArray <NSString *> *)allowedUTIs inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithURL:(NSURL *)url inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER;

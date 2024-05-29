@@ -1,11 +1,13 @@
 /*	NSLayoutAnchor.h
-	Copyright (c) 2015, Apple Inc. All rights reserved.
+	Copyright (c) 2015-2017, Apple Inc. All rights reserved.
 */
 
 #import <Foundation/Foundation.h>
-#import <UIKit/NSLayoutConstraint.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class NSLayoutConstraint;
 
 /* An NSLayoutAnchor represents an edge or dimension of a layout item.  Its concrete 
  subclasses allow concise creation of constraints.  
@@ -39,18 +41,48 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 
 /* Axis-specific subclasses for location anchors: top/bottom, leading/trailing, baseline, etc.
  */
-@class NSLayoutXAxisAnchor, NSLayoutYAxisAnchor;
+@class NSLayoutXAxisAnchor, NSLayoutYAxisAnchor, NSLayoutDimension;
 NS_CLASS_AVAILABLE_IOS(9_0)
 @interface NSLayoutXAxisAnchor : NSLayoutAnchor<NSLayoutXAxisAnchor *>
+// A composite anchor for creating constraints relating horizontal distances between locations.
+- (NSLayoutDimension *)anchorWithOffsetToAnchor:(NSLayoutXAxisAnchor *)otherAnchor API_AVAILABLE(ios(10.0),tvos(10.0));
+
+@end
+
+@interface NSLayoutXAxisAnchor (UIViewDynamicSystemSpacingSupport)
+/* Constraints of the form,
+        receiver [= | ≥ | ≤] 'anchor' + 'multiplier' * system space, 
+ where the value of the system space is determined from information available from the anchors.
+    The constraint affects how far the receiver will be positioned trailing 'anchor', per the effective user interface layout direction.
+ */
+- (NSLayoutConstraint *)constraintEqualToSystemSpacingAfterAnchor:(NSLayoutXAxisAnchor *)anchor multiplier:(CGFloat)multiplier API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToSystemSpacingAfterAnchor:(NSLayoutXAxisAnchor *)anchor multiplier:(CGFloat)multiplier API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSLayoutConstraint *)constraintLessThanOrEqualToSystemSpacingAfterAnchor:(NSLayoutXAxisAnchor *)anchor multiplier:(CGFloat)multiplier API_AVAILABLE(ios(11.0),tvos(11.0));
+
 @end
 NS_CLASS_AVAILABLE_IOS(9_0)
 @interface NSLayoutYAxisAnchor : NSLayoutAnchor<NSLayoutYAxisAnchor *>
+// A composite anchor for creating constraints relating vertical distances between locations.
+- (NSLayoutDimension *)anchorWithOffsetToAnchor:(NSLayoutYAxisAnchor *)otherAnchor API_AVAILABLE(ios(10.0),tvos(10.0));
+
+@end
+
+@interface NSLayoutYAxisAnchor (UIViewDynamicSystemSpacingSupport)
+/* Constraints of the form,
+        receiver [= | ≥ | ≤] 'anchor' + 'multiplier' * system space, 
+ where the value of the system space is determined from information available from the anchors.
+    The constraint affects how far the receiver will be positioned below 'anchor'. 
+    If either the receiver or 'anchor' is the firstBaselineAnchor or lastBaselineAnchor of a view with text content
+ then the spacing will depend on the fonts involved and will change when those do.
+ */
+- (NSLayoutConstraint *)constraintEqualToSystemSpacingBelowAnchor:(NSLayoutYAxisAnchor *)anchor multiplier:(CGFloat)multiplier API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToSystemSpacingBelowAnchor:(NSLayoutYAxisAnchor *)anchor multiplier:(CGFloat)multiplier API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSLayoutConstraint *)constraintLessThanOrEqualToSystemSpacingBelowAnchor:(NSLayoutYAxisAnchor *)anchor multiplier:(CGFloat)multiplier API_AVAILABLE(ios(11.0),tvos(11.0));
 @end
 
 
 /* This layout anchor subclass is used for sizes (width & height).
  */
-@class NSLayoutDimension;
 NS_CLASS_AVAILABLE_IOS(9_0)
 @interface NSLayoutDimension : NSLayoutAnchor<NSLayoutDimension *>
 

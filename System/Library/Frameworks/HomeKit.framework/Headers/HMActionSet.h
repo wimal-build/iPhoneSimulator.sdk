@@ -50,7 +50,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief Specifies the last execution date for the action set.
  */
-@property(readonly, copy, nonatomic) NSDate *lastExecutionDate NS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0);
+@property(readonly, copy, nonatomic, nullable) NSDate *lastExecutionDate NS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0);
 
 /*!
  * @brief This method is used to change the name of the action set.

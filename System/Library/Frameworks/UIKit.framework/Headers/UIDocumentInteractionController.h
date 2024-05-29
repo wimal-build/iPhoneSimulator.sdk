@@ -2,7 +2,7 @@
 //  UIDocumentInteractionController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,11 +22,11 @@ NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIDocumentInteractionCo
 
 @property(nullable, nonatomic, weak) id<UIDocumentInteractionControllerDelegate> delegate; // default is nil
 
-@property(nullable, strong)   NSURL    *URL;             // default is nil. if set, updates UTI, icon and name
-@property(nullable, nonatomic, copy)     NSString *UTI;             // determined from name if set, URL otherwise, override if the name or URL uses a custom scheme and the UTI can't be determined automatically
-@property(nullable, copy)               NSString *name;            // determined from URL, override if the URL uses a custom scheme and the name can't be determined automatically
-@property(nonatomic, readonly) NSArray<UIImage *>  *icons;           // determined from name if set, URL otherwise. will return a generic document icon if an icon cannot be determined. returns an array of icons sorted from smallest to largest.
-@property(nullable, nonatomic, strong)   id        annotation;      // additional plist information for application to pass to receiver (must be a plist object). default is nil.
+@property(nullable, strong)             NSURL    *URL;              // default is nil. if set, updates UTI, icon and name
+@property(nullable, nonatomic, copy)    NSString *UTI;              // determined from name if set, URL otherwise, override if the name or URL uses a custom scheme and the UTI can't be determined automatically
+@property(nullable, copy)               NSString *name;             // determined from URL, override if the URL uses a custom scheme and the name can't be determined automatically
+@property(nonatomic, readonly)          NSArray<UIImage *>  *icons; // determined from name if set, URL otherwise. will return a generic document icon if an icon cannot be determined. returns an array of icons sorted from smallest to largest.
+@property(nullable, nonatomic, strong)  id annotation;              // additional plist information for application to pass to receiver (must be a plist object). default is nil.
 
 // This is the default method you should call to give your users the option to quick look, open, or copy the document.
 // Presents a menu allowing the user to Quick Look, open, or copy the item specified by URL.

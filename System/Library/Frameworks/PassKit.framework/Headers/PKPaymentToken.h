@@ -10,18 +10,18 @@
 
 // Contains the user's payment credentials, encrypted to the merchant.
 NS_ASSUME_NONNULL_BEGIN
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0)
+API_AVAILABLE(ios(8.0), watchos(3.0))
 @interface PKPaymentToken : NSObject
 
 // Describes the properties of the underlying payment instrument selected to fund the payment
-@property (nonatomic, strong, readonly) PKPaymentMethod *paymentMethod NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, strong, readonly) PKPaymentMethod *paymentMethod API_AVAILABLE(ios(9.0), watchos(3.0));
 
 // A string that describes the payment instrument the user has selected to fund the payment.
 // Suitable for display, e.g. "Amex 1234".
-@property (nonatomic, copy, readonly) NSString *paymentInstrumentName NS_DEPRECATED_IOS(8_0, 9_0, "Use paymentMethod instead") __WATCHOS_PROHIBITED;
+@property (nonatomic, copy, readonly) NSString *paymentInstrumentName API_DEPRECATED("Use paymentMethod instead", ios(8.0, 9.0)) __WATCHOS_PROHIBITED;
 
 // Payment network for the card that funds the payment.
-@property (nonatomic, copy, readonly) NSString *paymentNetwork NS_DEPRECATED_IOS(8_0, 9_0, "Use paymentMethod instead") __WATCHOS_PROHIBITED;
+@property (nonatomic, copy, readonly) NSString *paymentNetwork API_DEPRECATED("Use paymentMethod instead", ios(8.0, 9.0)) __WATCHOS_PROHIBITED;
 
 // A string that describes a globally unique identifier for this transaction that can be used
 // for receipt purposes.

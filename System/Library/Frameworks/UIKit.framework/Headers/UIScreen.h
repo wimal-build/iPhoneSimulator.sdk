@@ -2,7 +2,7 @@
 //  UIScreen.h
 //  UIKit
 //
-//  Copyright (c) 2007-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,6 +22,8 @@ UIKIT_EXTERN NSNotificationName const UIScreenDidDisconnectNotification NS_AVAIL
 // Object is the UIScreen which changed. [object currentMode] is the new UIScreenMode.
 UIKIT_EXTERN NSNotificationName const UIScreenModeDidChangeNotification NS_AVAILABLE_IOS(3_2);
 UIKIT_EXTERN NSNotificationName const UIScreenBrightnessDidChangeNotification NS_AVAILABLE_IOS(5_0);
+// Object is the UIScreen which changed. [object isCaptured] is the new value of captured property.
+UIKIT_EXTERN NSNotificationName const UIScreenCapturedDidChangeNotification NS_AVAILABLE_IOS(11_0);
 
 // when the connected screen is overscanning, UIScreen can attempt to compensate for the overscan to avoid clipping
 typedef NS_ENUM(NSInteger, UIScreenOverscanCompensation) {
@@ -57,6 +59,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject <UITraitEnvironment>
 @property(nonatomic,readonly) UIEdgeInsets overscanCompensationInsets NS_AVAILABLE_IOS(9_0);  // The amount that should be inset to avoid clipping
 
 @property(nullable, nonatomic,readonly,strong) UIScreen *mirroredScreen NS_AVAILABLE_IOS(4_3);          // The screen being mirrored by the receiver. nil if mirroring is disabled or unsupported. Moving a UIWindow to this screen will disable mirroring
+@property(nonatomic,readonly,getter=isCaptured) BOOL captured NS_AVAILABLE_IOS(11_0); // True if this screen is being captured (e.g. recorded, AirPlayed, mirrored, etc.)
 
 @property(nonatomic) CGFloat brightness NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED;        // 0 .. 1.0, where 1.0 is maximum brightness. Only supported by main screen.
 @property(nonatomic) BOOL wantsSoftwareDimming NS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED; // Default is NO. If YES, brightness levels lower than that of which the hardware is capable are emulated in software, if neccessary. Having enabled may entail performance cost.
@@ -71,8 +74,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScreen : NSObject <UITraitEnvironment>
 
 @property (readonly) NSInteger maximumFramesPerSecond  NS_AVAILABLE_IOS(10_3); // The maximumFramesPerSecond this screen is capable of
 
-@property (nullable, nonatomic, weak, readonly) id<UIFocusItem> focusedItem NS_AVAILABLE_IOS(10_0);
-@property (nullable, nonatomic, weak, readonly) UIView *focusedView NS_AVAILABLE_IOS(9_0); // If focusedItem is not a view, this returns that item's containing view. Otherwise they are equal.
+@property (nullable, nonatomic, weak, readonly) id<UIFocusItem> focusedItem NS_AVAILABLE_IOS(10_0); // Returns the focused item for this screen's focus system. Use UIFocusSystem's focusedItem property instead – this property will be deprecated in a future release.
+@property (nullable, nonatomic, weak, readonly) UIView *focusedView NS_AVAILABLE_IOS(9_0); // If focusedItem is not a view, this returns that item's containing view. Otherwise they are equal. Use UIFocusSystem's focusedItem property instead – this property will be deprecated in a future release.
 @property (readonly, nonatomic) BOOL supportsFocus NS_AVAILABLE_IOS(9_0);
 
 @property(nonatomic,readonly) CGRect applicationFrame NS_DEPRECATED_IOS(2_0, 9_0, "Use -[UIScreen bounds]") __TVOS_PROHIBITED;

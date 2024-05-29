@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*! @class RPBroadcastActivityViewController
  @abstract View controller that presents the user with a list of broadcast services installed on the device.
  */
-NS_CLASS_AVAILABLE_IOS(10_0)
+API_AVAILABLE(ios(10.0),tvos(10.0))
 @interface RPBroadcastActivityViewController : UIViewController
 
 /*  @abstract Loads a RPBroadcastActivityViewController instance and returns it in the handler block.
@@ -38,12 +38,25 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param broadcastActivityViewController The RPBroadcastActivityViewController which can be presented.
  @param error Optional error in the RPRecordingErrorCode domain which is supplied in the event the view controller could not be loaded.
  */
-+ (void)loadBroadcastActivityViewControllerWithHandler:(nonnull void(^)(RPBroadcastActivityViewController * __nullable broadcastActivityViewController, NSError * __nullable error))handler;
++ (void)loadBroadcastActivityViewControllerWithHandler:(void(^)(RPBroadcastActivityViewController * _Nullable broadcastActivityViewController, NSError * _Nullable error))handler;
+
+/*  @abstract Loads a RPBroadcastActivityViewController instance and returns it in the handler block.
+ 
+ The view controller will present the user with a view that shows the preferred streaming extension service and allow the user to set up a broadcast with the service through the service's UI.
+ 
+ The RPBroadcastActivityViewController can be presented using [UIViewController presentViewController:animated:completion:] and should be dismissed when the delegate's broadcastActivityViewController:didFinishWithBroadcastController:error: method is called. Note that on large screen devices such as iPad, the default presentation style for view controllers is a popover. For an instance of RPBroadcastActivityViewController to present properly on iPad, it needs to have its popoverPresentationController's sourceRect and sourceView configured.
+ 
+ @param preferredExtension The extension bundle identifier for the preferred broadcast extension service 
+ @param broadcastActivityViewController The RPBroadcastActivityViewController which can be presented, returns nil if ther eis no matching extension.
+ @param error Optional error in the RPRecordingErrorCode domain which is supplied in the event the view controller could not be loaded.
+ */
++ (void)loadBroadcastActivityViewControllerWithPreferredExtension:(NSString * _Nullable)preferredExtension handler:(nonnull void(^)(RPBroadcastActivityViewController * _Nullable broadcastActivityViewController, NSError * _Nullable error))handler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos);
 
 /*  @abstract Delegate that is notified when the activity view controller is complete. */
 @property (nonatomic, weak, nullable) id<RPBroadcastActivityViewControllerDelegate> delegate;
 @end
 
+API_AVAILABLE(ios(10.0),tvos(10.0))
 @protocol RPBroadcastActivityViewControllerDelegate <NSObject>
 
 /*  @abstract Called when the view controller is finished.
@@ -51,13 +64,13 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param broadcastController An RPBroadcastController instance that can be used to start and stop broadcasts to a user selected service.
  @param error Optional error in the RPRecordingErrorCode domain. A nil error signifies that the user has successfully set up the broadcast with a broadcast service and is ready to start broadcasting.
  */
-- (void)broadcastActivityViewController:(RPBroadcastActivityViewController *)broadcastActivityViewController didFinishWithBroadcastController:(nullable RPBroadcastController *)broadcastController error:(nullable NSError *)error;
+- (void)broadcastActivityViewController:(RPBroadcastActivityViewController *)broadcastActivityViewController didFinishWithBroadcastController:(nullable RPBroadcastController *)broadcastController error:(nullable NSError *)error API_AVAILABLE(ios(10.0), tvos(10.0));
 @end
 
 /*! @class RPBroadcastController
  @abstract Available once a user has successfully initiated a broadcast using an RPBroadcastActivityViewController. Can be used to start, pause and stop a broadcast.
  */
-NS_CLASS_AVAILABLE_IOS(10_0)
+API_AVAILABLE(ios(10.0),tvos(10.0))
 @interface RPBroadcastController : NSObject
 /*  @abstract Indicates whether the controller is currently broadcasting. */
 @property (nonatomic, readonly, getter=isBroadcasting) BOOL broadcasting;
@@ -70,11 +83,11 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*  @abstract Delegate which will be notified when an error occurs during broadcast. */
 @property (nonatomic, weak) id<RPBroadcastControllerDelegate> delegate;
 /*  @abstract bundleID of the broadcast extension which was selected by the user. */
-@property (nonatomic, readonly) NSString *broadcastExtensionBundleID;
+@property (nonatomic, readonly) NSString *broadcastExtensionBundleID API_DEPRECATED("No longer supported",ios(10.0,11.0),tvos(10.0,11.0));
 /*  @abstract Start the broadcast.
  @param error Optional error in the RPRecordingErrorCode domain. A nil error signifies that broadcasting has started successfully.
  */
-- (void)startBroadcastWithHandler:(void(^)(NSError * __nullable error))handler;
+- (void)startBroadcastWithHandler:(void(^)(NSError * _Nullable error))handler;
 
 /*  @abstract Pause the broadcast. The broadcast will pause immediately. */
 - (void)pauseBroadcast;
@@ -85,9 +98,10 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*  @abstract Finish the broadcast.
  @param error Optional error in the RPRecordingErrorCode domain. A nil error signifies that broadcasting has finished successfully.
  */
-- (void)finishBroadcastWithHandler:(void(^)(NSError * __nullable error))handler;
+- (void)finishBroadcastWithHandler:(void(^)(NSError * _Nullable error))handler;
 @end
 
+API_AVAILABLE(ios(10.0),tvos(10.0))
 @protocol RPBroadcastControllerDelegate <NSObject>
 @optional
 
@@ -96,12 +110,18 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @param error Required error in the RPRecordingErrorCode domain.
  */
 
-- (void)broadcastController:(RPBroadcastController *)broadcastController didFinishWithError:(NSError * __nullable)error;
+- (void)broadcastController:(RPBroadcastController *)broadcastController didFinishWithError:(nullable NSError *)error;
 /*  @abstract Called when the broadcast service has data to pass back to broadcasting app.
  @param broadcastController The controller instance.
  @param serviceInfo NSDictionary instance with keys and values defined by the broadcasting service.
  */
 - (void)broadcastController:(RPBroadcastController *)broadcastController didUpdateServiceInfo:(NSDictionary <NSString *, NSObject <NSCoding> *> *)serviceInfo;
+
+/*  @abstract Called when the broadcast service has updated broadcastURL.
+ @param broadcastController The controller instance.
+ @param broadcastURL NSURL instance with URL of the resource where broacast can be viewed. Defined by broadcast service. 
+ */
+- (void)broadcastController:(RPBroadcastController *)broadcastController didUpdateBroadcastURL:(NSURL *)broadcastURL API_AVAILABLE(ios(11.0), tvos(11.0));
 @end
 
 NS_ASSUME_NONNULL_END

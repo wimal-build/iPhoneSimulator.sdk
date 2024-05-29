@@ -2,7 +2,7 @@
 //  NSLayoutConstraint.h
 //  UIKit
 //	
-//  Copyright (c) 2009-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -69,9 +69,24 @@ typedef NS_OPTIONS(NSUInteger, NSLayoutFormatOptions) {
     NSLayoutFormatDirectionRightToLeft = 2 << 16,  
     
     NSLayoutFormatDirectionMask = 0x3 << 16,  
+    
+    /* choose only one spacing format
+     */
+    NSLayoutFormatSpacingEdgeToEdge API_AVAILABLE(ios(11.0),tvos(11.0)) = 0 << 19, // default
+    
+    /* Valid only for vertical layouts. Between views with text content the value
+     will be used to determine the distance from the last baseline of the view above
+     to the first baseline of the view below. For views without text content the top
+     or bottom edge will be used in lieu of the baseline position.
+     The default spacing "]-[" will be determined from the line heights of the fonts
+     involved in views with text content, when present.
+     */
+    NSLayoutFormatSpacingBaselineToBaseline API_AVAILABLE(ios(11.0),tvos(11.0)) = 1 << 19,
+    
+    NSLayoutFormatSpacingMask API_AVAILABLE(ios(11.0),tvos(11.0)) = 0x1 << 19,
 };
 
-typedef float UILayoutPriority;
+typedef float UILayoutPriority NS_TYPED_EXTENSIBLE_ENUM;
 static const UILayoutPriority UILayoutPriorityRequired NS_AVAILABLE_IOS(6_0) = 1000; // A required constraint.  Do not exceed this.
 static const UILayoutPriority UILayoutPriorityDefaultHigh NS_AVAILABLE_IOS(6_0) = 750; // This is the priority level with which a button resists compressing its content.
 static const UILayoutPriority UILayoutPriorityDefaultLow NS_AVAILABLE_IOS(6_0) = 250; // This is the priority level at which a button hugs its contents horizontally.
@@ -111,7 +126,7 @@ UIKIT_EXTERN  NSDictionary *_NSDictionaryOfVariableBindings(NSString *commaSepar
  firstItem.firstAttribute {==,<=,>=} secondItem.secondAttribute * multiplier + constant
  Access to these properties is not recommended. Use the `firstAnchor` and `secondAnchor` properties instead.
  */
-@property (readonly, assign) id firstItem;
+@property (nullable, readonly, assign) id firstItem;
 @property (readonly) NSLayoutAttribute firstAttribute;
 @property (nullable, readonly, assign) id secondItem;
 @property (readonly) NSLayoutAttribute secondAttribute;

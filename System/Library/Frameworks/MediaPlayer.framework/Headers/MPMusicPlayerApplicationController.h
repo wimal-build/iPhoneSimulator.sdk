@@ -2,7 +2,7 @@
 //  MPMusicPlayerApplicationController.h
 //  MediaPlayer
 //
-//  Copyright 2016 Apple, Inc. All rights reserved.
+//  Copyright © 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <MediaPlayer/MediaPlayer.h>
@@ -10,7 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.3, 10.12.1, 10.3)
+MP_API(ios(10.3))
+MP_PROHIBITED(tvos)
 @interface MPMusicPlayerControllerQueue : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -19,7 +20,8 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.3, 10.12.1, 10.3)
 
 @end
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.3, 10.12.1, 10.3)
+MP_API(ios(10.3))
+MP_PROHIBITED(tvos)
 @interface MPMusicPlayerControllerMutableQueue : MPMusicPlayerControllerQueue
 
 - (void)insertQueueDescriptor:(MPMusicPlayerQueueDescriptor *)queueDescriptor afterItem:(nullable MPMediaItem *)afterItem;
@@ -27,7 +29,8 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.3, 10.12.1, 10.3)
 
 @end
 
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.3, 10.12.1, 10.3)
+MP_API(ios(10.3))
+MP_PROHIBITED(tvos)
 @interface MPMusicPlayerApplicationController : MPMusicPlayerController
 
 - (void)performQueueTransaction:(void (^)(MPMusicPlayerControllerMutableQueue *queue))queueTransaction completionHandler:(void (^)(MPMusicPlayerControllerQueue *queue, NSError *_Nullable error))completionHandler;
@@ -35,6 +38,6 @@ MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(10.3, 10.12.1, 10.3)
 @end
 
 // Posted when the queue changes
-MP_EXTERN __TVOS_PROHIBITED NSString * const MPMusicPlayerControllerQueueDidChangeNotification;
+MP_EXTERN NSString * const MPMusicPlayerControllerQueueDidChangeNotification MP_PROHIBITED(tvos);
 
 NS_ASSUME_NONNULL_END

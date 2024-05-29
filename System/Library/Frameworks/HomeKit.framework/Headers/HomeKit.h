@@ -22,13 +22,24 @@
 #import <HomeKit/HMUser.h>
 #import <HomeKit/HMHomeAccessControl.h>
 #import <HomeKit/HMAccessoryCategory.h>
+
 #import <HomeKit/HMEvent.h>
 #import <HomeKit/HMCharacteristicEvent.h>
 #import <HomeKit/HMLocationEvent.h>
+#import <HomeKit/HMCalendarEvent.h>
+#import <HomeKit/HMCalendarEvent.h>
+
 #import <HomeKit/HMEventTrigger.h>
 #import <HomeKit/HMError.h>
 #import <HomeKit/HMAccessoryProfile.h>
+#import <HomeKit/HMSignificantTimeEvent.h>
+#import <HomeKit/HMDurationEvent.h>
+#import <HomeKit/HMCharacteristicThresholdRangeEvent.h>
+#import <HomeKit/HMPresenceEvent.h>
+#import <HomeKit/HMNumberRange.h>
+#import <HomeKit/HMEventTriggerActivationState.h>
 #import <HomeKit/HMSignificantEvents.h>
+#import <HomeKit/HMPresenceEventDefines.h>
 
 #if __has_include(<UIKit/UIView.h>)
 #import <HomeKit/HMCameraView.h>

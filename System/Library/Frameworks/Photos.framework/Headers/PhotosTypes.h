@@ -89,7 +89,8 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeSmartAlbumScreenshots PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 211,
     PHAssetCollectionSubtypeSmartAlbumDepthEffect PHOTOS_AVAILABLE_IOS_TVOS(10_2, 10_1) = 212,
     PHAssetCollectionSubtypeSmartAlbumLivePhotos PHOTOS_AVAILABLE_IOS_TVOS(10_3, 10_2) = 213,
-    
+    PHAssetCollectionSubtypeSmartAlbumAnimated PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0) = 214,
+    PHAssetCollectionSubtypeSmartAlbumLongExposures PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0) = 215,
     // Used for fetching, if you don't care about the exact subtype
     PHAssetCollectionSubtypeAny = NSIntegerMax
 } PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
@@ -101,6 +102,15 @@ typedef NS_ENUM(NSInteger, PHAssetEditOperation) {
     PHAssetEditOperationContent    = 2,
     PHAssetEditOperationProperties = 3,
 } PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+
+typedef NS_ENUM(NSInteger, PHAssetPlaybackStyle) {
+    PHAssetPlaybackStyleUnsupported     = 0,
+    PHAssetPlaybackStyleImage           = 1,
+    PHAssetPlaybackStyleImageAnimated   = 2,
+    PHAssetPlaybackStyleLivePhoto       = 3,
+    PHAssetPlaybackStyleVideo           = 4,
+    PHAssetPlaybackStyleVideoLooping    = 5,
+} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(11_0, 11_0) NS_SWIFT_NAME(PHAsset.PlaybackStyle);
 
 typedef NS_ENUM(NSInteger, PHAssetMediaType) {
     PHAssetMediaTypeUnknown = 0,

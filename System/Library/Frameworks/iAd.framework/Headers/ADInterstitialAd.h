@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <iAd/ADBannerView.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 #define IAD_DEPRECATED_IOS_MSG(_iosIntro, _iosDep, _msg) \
     __OSX_AVAILABLE_BUT_DEPRECATED_MSG(__MAC_NA, __MAC_NA, __IPHONE_##_iosIntro, __IPHONE_##_iosDep, _msg)
 
@@ -45,7 +47,7 @@ NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
  * On iOS 5 and later, this property is a weak reference and cannot be used with
  * objects that modify the behavior of release or retain.
  */
-@property (nonatomic, weak) id<ADInterstitialAdDelegate> delegate;
+@property (nullable, nonatomic, weak) id<ADInterstitialAdDelegate> delegate;
 
 /*!
  * @property loaded
@@ -196,3 +198,6 @@ NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
 - (void)interstitialAdActionDidFinish:(ADInterstitialAd *)interstitialAd;
 
 @end
+
+NS_ASSUME_NONNULL_END
+

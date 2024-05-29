@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: FD92A58D-C382-3EF3-97FC-E3C661A09F7E', 'x86_64: 5AFCDE65-CFD0-38E8-8EB6-3313082D2D23' ]
+platform:        ios
+install-name:    /usr/lib/libcharset.1.dylib
+current-version: 2
+compatibility-version: 2
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ ___charset_1VersionNumber, ___charset_1VersionString, _libcharset_relocate, 
+                       _libcharset_set_relocation_prefix, _locale_charset ]
+...

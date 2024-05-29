@@ -9,18 +9,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CORESPOTLIGHT_EXPORT NSString * const CSSearchQueryErrorDomain CS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE;
+CORESPOTLIGHT_EXPORT NSString * const CSSearchQueryErrorDomain CS_AVAILABLE(10_12, 10_0) CS_TVOS_UNAVAILABLE;
 
 typedef NS_ENUM(NSInteger, CSSearchQueryErrorCode) {
     CSSearchQueryErrorCodeUnknown = -2000,
     CSSearchQueryErrorCodeIndexUnreachable = -2001,
     CSSearchQueryErrorCodeInvalidQuery = -2002,
     CSSearchQueryErrorCodeCancelled = -2003,
-} CS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE;
+} CS_AVAILABLE(10_12, 10_0) CS_TVOS_UNAVAILABLE;
 
 @class CSSearchableItem;
 
-CS_CLASS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE
+CS_CLASS_AVAILABLE(10_12, 10_0) CS_TVOS_UNAVAILABLE
 @interface CSSearchQuery : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -46,7 +46,7 @@ CS_CLASS_AVAILABLE(NA, 10_0) CS_TVOS_UNAVAILABLE
 // or NSFileProtectionCompleteUntilFirstUserAuthentication.
 // By default the data protection will be read from the "com.apple.developer.default-data-protection"
 // entitlement if any or NSFileProtectionCompleteUntilFirstUserAuthentication will be used otherwise.
-@property (copy) NSArray<NSString *> *protectionClasses;
+@property (copy) NSArray<NSFileProtectionType> *protectionClasses;
 
 - (void)start;
 - (void)cancel;

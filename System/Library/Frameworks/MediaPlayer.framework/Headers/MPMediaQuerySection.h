@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // An MPMediaQuerySection object represents a single section grouping for a query.
-
-MP_API_IOS_AVAILABLE_MACOS_TVOS_PROHIBITED(4.2, 10.12.2, 4.2)
+MP_API(ios(4.2))
+MP_PROHIBITED(tvos, macos)
 @interface MPMediaQuerySection : NSObject <NSSecureCoding, NSCopying>
 
 // The localized title of the section grouping.

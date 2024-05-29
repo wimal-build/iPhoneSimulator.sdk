@@ -70,7 +70,7 @@ CB_EXTERN NSString * const CBAdvertisementDataManufacturerDataKey;
  *  @see        startAdvertising:
  *
  */
-CB_EXTERN NSString * const CBAdvertisementDataOverflowServiceUUIDsKey NS_AVAILABLE(NA, 6_0);
+CB_EXTERN NSString * const CBAdvertisementDataOverflowServiceUUIDsKey NS_AVAILABLE(10_9, 6_0);
 
 
 /*!
@@ -80,7 +80,7 @@ CB_EXTERN NSString * const CBAdvertisementDataOverflowServiceUUIDsKey NS_AVAILAB
  *				whether or not a peripheral is connectable in that instant.
  *
  */
-CB_EXTERN NSString * const CBAdvertisementDataIsConnectable NS_AVAILABLE(NA, 7_0);
+CB_EXTERN NSString * const CBAdvertisementDataIsConnectable NS_AVAILABLE(10_9, 7_0);
 
 
 /*!
@@ -89,6 +89,6 @@ CB_EXTERN NSString * const CBAdvertisementDataIsConnectable NS_AVAILABLE(NA, 7_0
  *  @discussion A list of one or more <code>CBUUID</code> objects, representing <code>CBService</code> UUIDs.
  *
  */
-CB_EXTERN NSString * const CBAdvertisementDataSolicitedServiceUUIDsKey NS_AVAILABLE(NA, 7_0);
+CB_EXTERN NSString * const CBAdvertisementDataSolicitedServiceUUIDsKey NS_AVAILABLE(10_9, 7_0);
 
 NS_ASSUME_NONNULL_END

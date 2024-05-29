@@ -37,13 +37,13 @@ typedef NS_OPTIONS(NSUInteger, HKStatisticsOptions) {
     HKStatisticsOptionDiscreteMin               = 1 << 2,
     HKStatisticsOptionDiscreteMax               = 1 << 3,
     HKStatisticsOptionCumulativeSum             = 1 << 4,
-} HK_ENUM_AVAILABLE_IOS_WATCHOS(8_0, 2_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /*!
  @class         HKStatistics
  @abstract      Represents statistics for quantity samples over a period of time.
  */
-HK_CLASS_AVAILABLE_IOS_WATCHOS(8_0, 2_0)
+HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKStatistics : NSObject <NSSecureCoding, NSCopying>
 
 @property (readonly, strong) HKQuantityType *quantityType;

@@ -26,7 +26,8 @@ API_AVAILABLE(ios(10.0))
 
 // True if recognition audio input has stopped
 @property (nonatomic, readonly, getter=isFinishing) BOOL finishing;
-// Instructs the task to stop accepting new audio (e.g. stop recording) but complete processing on anything already
+// Instructs the task to stop accepting new audio (e.g. stop recording) but complete processing on audio already buffered.
+// This has no effect on URL-based recognition requests, which effectively buffer the entire file immediately.
 - (void)finish;
 
 // True if recognition has been cancelled

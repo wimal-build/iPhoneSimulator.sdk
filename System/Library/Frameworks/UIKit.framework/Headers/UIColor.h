@@ -2,7 +2,7 @@
 //  UIColor.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,9 +12,11 @@
 #endif
 #import <UIKit/UIKitDefines.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class UIImage;
+@class UITraitCollection;
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCopying>
 
@@ -101,6 +103,12 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 
 @end
 
+
+@interface UIColor (UINSItemProvider) <NSItemProviderReading, NSItemProviderWriting>
+
+@end
+
+
 #if __has_include(<CoreImage/CoreImage.h>)
 @interface CIColor(UIKitAdditions)
 
@@ -108,5 +116,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 
 @end
 #endif
+
+@interface UIColor (UIColorNamedColors)
++ (nullable UIColor *)colorNamed:(NSString *)name NS_AVAILABLE_IOS(11_0);      // load from main bundle
++ (nullable UIColor *)colorNamed:(NSString *)name inBundle:(nullable NSBundle *)bundle compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection NS_AVAILABLE_IOS(11_0);
+@end
 
 NS_ASSUME_NONNULL_END

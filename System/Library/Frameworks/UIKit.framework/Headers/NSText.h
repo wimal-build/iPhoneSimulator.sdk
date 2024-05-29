@@ -2,7 +2,7 @@
 //  NSText.h
 //  UIKit
 //
-//  Copyright (c) 2011-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

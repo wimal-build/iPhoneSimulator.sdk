@@ -17,9 +17,10 @@ typedef NS_ENUM(NSInteger, PKAddPaymentPassError) {
     PKAddPaymentPassErrorUnsupported,
     PKAddPaymentPassErrorUserCancelled,
     PKAddPaymentPassErrorSystemCancelled
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} API_AVAILABLE(ios(9.0));
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NSObject
+API_AVAILABLE(ios(9.0))
+@interface PKAddPaymentPassRequestConfiguration : NSObject
 
 /* Schemes defined in PKConstants.h.
  * Supported Schemes:
@@ -38,7 +39,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
 @property (nonatomic, copy, nullable) NSString *cardholderName;
 @property (nonatomic, copy, nullable) NSString *primaryAccountSuffix;
 
-@property (nonatomic, copy) NSArray<PKLabeledValue *> *cardDetails NS_AVAILABLE_IOS(10_1);
+@property (nonatomic, copy) NSArray<PKLabeledValue *> *cardDetails API_AVAILABLE(ios(10.1));
 
 @property (nonatomic, copy, nullable) NSString *localizedDescription;
 
@@ -51,7 +52,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
  */
 @property (nonatomic, copy, nullable) PKPaymentNetwork paymentNetwork;
 
-@property (nonatomic, assign) BOOL requiresFelicaSecureElement NS_AVAILABLE_IOS(10_1);
+@property (nonatomic, assign) BOOL requiresFelicaSecureElement API_AVAILABLE(ios(10.1));
 
 @end
 
@@ -72,8 +73,8 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequest : NSObject
 @protocol PKAddPaymentPassViewControllerDelegate<NSObject>
 
 /* Certificates is an array of NSData, each a DER encoded X.509 certificate, with the leaf first and root last.
- * The continuation handler must be called within 20 seconds, or the flow will terminate with
- * PKAddPaymentPassErrorInvalidRequest.
+ * The continuation handler must be called within 20 seconds or an error will be displayed. 
+ * Subsequent to timeout, the continuation handler is invalid and invocations will be ignored.
  */
 - (void)addPaymentPassViewController:(PKAddPaymentPassViewController *)controller
  generateRequestWithCertificateChain:(NSArray<NSData *> *)certificates
@@ -87,7 +88,8 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequest : NSObject
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassViewController : UIViewController
+API_AVAILABLE(ios(9.0))
+@interface PKAddPaymentPassViewController : UIViewController
 
 + (BOOL)canAddPaymentPass;
 

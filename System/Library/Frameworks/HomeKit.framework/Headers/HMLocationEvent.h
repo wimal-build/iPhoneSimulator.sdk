@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  *        exit from a Region
  */
 NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
-@interface HMLocationEvent : HMEvent
+@interface HMLocationEvent : HMEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -45,7 +45,25 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateRegion:(CLRegion *)region completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateRegion:(CLRegion *)region completionHandler:(void (^)(NSError * __nullable error))completion NS_DEPRECATED_IOS(9_0, 11_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+
+@end
+
+
+/*!
+ * @brief This class represents an event that is evaluated based on entry to and/or
+ *        exit from a Region
+ */
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+@interface HMMutableLocationEvent : HMLocationEvent
+
+- (instancetype)init NS_UNAVAILABLE;
+
+/*!
+ * @brief Region on which events are triggered based on the properties notifyOnEntry and notifyOnExit.
+ *        This property will be nil when an application is not authorized for location services.
+ */
+@property(readwrite, strong, nonatomic, nullable) CLRegion *region;
 
 @end
 

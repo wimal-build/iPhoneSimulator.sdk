@@ -2,7 +2,7 @@
 //  UIGraphicsImageRenderer.h
 //  UIKit
 //
-//  Copyright (c) 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIGraphicsRenderer.h>
@@ -16,9 +16,15 @@ typedef void (^UIGraphicsImageDrawingActions)(UIGraphicsImageRendererContext *re
 
 
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRendererFormat : UIGraphicsRendererFormat
-@property (nonatomic) CGFloat scale; // display scale of the context. defaults to mainScreen scale.
-@property (nonatomic) BOOL opaque; // indicates the bitmap context will draw fully opaque. defaults to NO.
-@property (nonatomic) BOOL prefersExtendedRange; // indicates the bitmap context should draw into a context capable of rendering extended color images. Defaults to NO on hardware that does not support deep color, YES on hardware that does.
+
+@property (nonatomic) CGFloat scale; // display scale of the context. The preferredFormat uses the scale most appropriate for the main screen's current configuration.
+@property (nonatomic) BOOL opaque; // indicates the bitmap context will draw fully opaque. The preferredFormat sets this to NO.
+@property (nonatomic) BOOL prefersExtendedRange; // indicates the bitmap context should draw into a context capable of rendering extended color images. The preferredFormat sets this according to the main screen's current configuration.
+
+// Returns a format optimized for the specified trait collection, taking into account properties such as displayScale and displayGamut.
+// Traits that are not specified will be ignored, with their corresponding format properties defaulting to the values in preferredFormat.
++ (instancetype)formatForTraitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(11_0);
+
 @end
 
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRendererContext : UIGraphicsRendererContext

@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Apple Inc. All rights reserved.
 //
 
-#import <SafariServices/SFFoundation.h>
 #import <Foundation/Foundation.h>
+#import <SafariServices/SFFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
     @class SSReadingList
     Provides an interface for adding to a user's Reading List.
 */
-NS_CLASS_AVAILABLE_IOS(7_0)
+SF_EXTERN API_AVAILABLE(ios(7.0))
 @interface SSReadingList : NSObject
 
 /*!
@@ -44,15 +44,15 @@ NS_CLASS_AVAILABLE_IOS(7_0)
     @result Returns YES if the item was added, otherwise returns NO and error param is set.
     @discussion Only URLs with http:// or https:// schemes are supported by Reading List.
 */
-- (BOOL)addReadingListItemWithURL:(NSURL *)URL title:(nullable NSString *)title previewText:(nullable NSString *)previewText error:(NSError **)error NS_AVAILABLE_IOS(7_0);
+- (BOOL)addReadingListItemWithURL:(NSURL *)URL title:(nullable NSString *)title previewText:(nullable NSString *)previewText error:(NSError **)error;
 
 @end
 
 // domain for NSError
-SF_EXTERN NSString *const SSReadingListErrorDomain NS_AVAILABLE_IOS(7_0);
+SF_EXTERN NSString * const SSReadingListErrorDomain API_AVAILABLE(ios(7.0));
 
 typedef NS_ENUM(NSInteger, SSReadingListErrorCode) {
     SSReadingListErrorURLSchemeNotAllowed = 1,
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} API_AVAILABLE(ios(7.0));
 
 NS_ASSUME_NONNULL_END

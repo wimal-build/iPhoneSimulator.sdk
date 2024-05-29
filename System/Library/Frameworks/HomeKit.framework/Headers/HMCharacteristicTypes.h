@@ -131,17 +131,17 @@ HM_EXTERN NSString * const HMCharacteristicTypeName NS_AVAILABLE_IOS(8_0) __WATC
 /*!
  * @brief Characteristic type for manufacturer. The value of the characteristic is a string.
  */
-HM_EXTERN NSString * const HMCharacteristicTypeManufacturer NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMCharacteristicTypeManufacturer API_DEPRECATED_WITH_REPLACEMENT("Use -[HMAccessory manufacturer] instead", ios(8.0,11.0), watchos(2.0,4.0), tvos(10.0,11.0));
 
 /*!
  * @brief Characteristic type for model. The value of the characteristic is a string.
  */
-HM_EXTERN NSString * const HMCharacteristicTypeModel NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMCharacteristicTypeModel API_DEPRECATED_WITH_REPLACEMENT("Use -[HMAccessory model] instead", ios(8.0,11.0), watchos(2.0,4.0), tvos(10.0,11.0));
 
 /*!
  * @brief Characteristic type for serial number. The value of the characteristic is a string.
  */
-HM_EXTERN NSString * const HMCharacteristicTypeSerialNumber NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMCharacteristicTypeSerialNumber API_DEPRECATED("No longer supported", ios(8.0,11.0), watchos(2.0,4.0), tvos(10.0,11.0));
 
 /*!
  * @brief Characteristic type for identify. The characteristic is write-only that takes a boolean.
@@ -332,7 +332,7 @@ HM_EXTERN NSString * const HMCharacteristicTypeCurrentVerticalTilt NS_AVAILABLE_
  * @brief Characteristic type for firmware version. The value of the characteristic is a string value
  *        describing the firmware version of the accessory.
  */
-HM_EXTERN NSString * const HMCharacteristicTypeFirmwareVersion NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMCharacteristicTypeFirmwareVersion API_DEPRECATED_WITH_REPLACEMENT("Use -[HMAccessory firmwareVersion] instead", ios(8.0,11.0), watchos(2.0,4.0), tvos(10.0,11.0));
 
 /*!
  * @brief Characteristic type for hardware version. The value of the characteristic is a string value
@@ -679,5 +679,10 @@ HM_EXTERN NSString * const HMCharacteristicTypeDehumidifierThreshold NS_AVAILABL
  */
 HM_EXTERN NSString * const HMCharacteristicTypeHumidifierThreshold NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
 
+/*!
+ * @brief Characteristic type for color temperature. The value of the characteristic is
+ *        an int representing the mired value of the color temperature.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeColorTemperature API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 NS_ASSUME_NONNULL_END

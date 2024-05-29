@@ -2,7 +2,7 @@
 //  UITableViewCell.h
 //  UIKit
 //
-//  Copyright (c) 2005-2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, UITableViewCellStyle) {
 typedef NS_ENUM(NSInteger, UITableViewCellSeparatorStyle) {
     UITableViewCellSeparatorStyleNone,
     UITableViewCellSeparatorStyleSingleLine,
-    UITableViewCellSeparatorStyleSingleLineEtched   // This separator style is only supported for grouped style table views currently
+    UITableViewCellSeparatorStyleSingleLineEtched NS_ENUM_DEPRECATED_IOS(2_0, 11_0, "Use UITableViewCellSeparatorStyleSingleLine for a single line separator.")
 } __TVOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, UITableViewCellSelectionStyle) {
@@ -61,6 +61,12 @@ typedef NS_OPTIONS(NSUInteger, UITableViewCellStateMask) {
     UITableViewCellStateShowingDeleteConfirmationMask   = 1 << 1
 };
 
+typedef NS_ENUM(NSInteger, UITableViewCellDragState) {
+    UITableViewCellDragStateNone,
+    UITableViewCellDragStateLifting, // The cell is lifting from the table view before it joins the drag session.
+    UITableViewCellDragStateDragging // The cell is involved in a drag session.
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
 #define UITableViewCellStateEditingMask UITableViewCellStateShowingEditControlMask
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGestureRecognizerDelegate>
@@ -88,9 +94,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGes
 @property (nonatomic, strong, nullable) UIView *multipleSelectionBackgroundView NS_AVAILABLE_IOS(5_0);
 
 @property (nonatomic, readonly, copy, nullable) NSString *reuseIdentifier;
-- (void)prepareForReuse;                                                        // if the cell is reusable (has a reuse identifier), this is called just before the cell is returned from the table view method dequeueReusableCellWithIdentifier:.  If you override, you MUST call super.
+- (void)prepareForReuse NS_REQUIRES_SUPER;                                                        // if the cell is reusable (has a reuse identifier), this is called just before the cell is returned from the table view method dequeueReusableCellWithIdentifier:.  If you override, you MUST call super.
 
-@property (nonatomic) UITableViewCellSelectionStyle   selectionStyle;             // default is UITableViewCellSelectionStyleBlue.
+@property (nonatomic) UITableViewCellSelectionStyle   selectionStyle;             // default is UITableViewCellSelectionStyleDefault.
 @property (nonatomic, getter=isSelected) BOOL         selected;                   // set selected state (title, image, background). default is NO. animated is NO
 @property (nonatomic, getter=isHighlighted) BOOL      highlighted;                // set highlighted state (title, image, background). default is NO. animated is NO
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;                     // animate between regular and selected state
@@ -121,6 +127,16 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGes
 // but the UITableViewCellStateShowingEditControlMask will not be set.
 - (void)willTransitionToState:(UITableViewCellStateMask)state NS_AVAILABLE_IOS(3_0);
 - (void)didTransitionToState:(UITableViewCellStateMask)state NS_AVAILABLE_IOS(3_0);
+
+/* Override this method to receive notifications that the cell's drag state has changed.
+ * Call super if you want to apply the default appearance.
+ */
+- (void)dragStateDidChange:(UITableViewCellDragState)dragState API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+
+/* Controls whether the cell in the table view allows user interaction once it is part of a drag (UITableViewCellDragStateDragging).
+ * Default is NO.
+ */
+@property (nonatomic) BOOL userInteractionEnabledWhileDragging API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 @end
 

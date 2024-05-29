@@ -27,10 +27,10 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHChange : NSObject
 PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHObjectChangeDetails<ObjectType: PHObject *> : NSObject
 
 // the object in the state before this change (returns the object that was passed in to changeDetailsForObject:)
-@property (atomic, strong, readonly) __kindof ObjectType objectBeforeChanges;
+@property (atomic, strong, readonly) ObjectType objectBeforeChanges;
 
 // the object in the state after this change
-@property (atomic, strong, readonly, nullable) __kindof ObjectType objectAfterChanges;
+@property (atomic, strong, readonly, nullable) ObjectType objectAfterChanges;
 
 // YES if the image or video content for this object has been changed
 @property (atomic, readonly) BOOL assetContentChanged;

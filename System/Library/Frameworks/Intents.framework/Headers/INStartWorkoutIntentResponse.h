@@ -2,7 +2,7 @@
 //  INStartWorkoutIntentResponse.h
 //  Intents
 //
-//  Copyright © 2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Intents/INIntentResponse.h>
@@ -10,11 +10,13 @@
 typedef NS_ENUM(NSInteger, INStartWorkoutIntentResponseCode) {
     INStartWorkoutIntentResponseCodeUnspecified = 0,
     INStartWorkoutIntentResponseCodeReady,
-    INStartWorkoutIntentResponseCodeContinueInApp,
+    INStartWorkoutIntentResponseCodeContinueInApp API_AVAILABLE(watchos(3.2)) API_DEPRECATED("INStartWorkoutIntentResponseCodeContinueInApp is deprecated on iOS. Please use INStartWorkoutIntentResponseCodeHandleInApp instead", ios(10.0, 11.0)),
     INStartWorkoutIntentResponseCodeFailure,
     INStartWorkoutIntentResponseCodeFailureRequiringAppLaunch,
     INStartWorkoutIntentResponseCodeFailureOngoingWorkout,
     INStartWorkoutIntentResponseCodeFailureNoMatchingWorkout,
+    INStartWorkoutIntentResponseCodeSuccess NS_EXTENSION_UNAVAILABLE("INStartWorkoutIntentResponseCodeSuccess is not available to extensions. This can only be returned from the app.") API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos),
+    INStartWorkoutIntentResponseCodeHandleInApp API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos),
 } API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -31,6 +33,7 @@ API_UNAVAILABLE(macosx)
 - (instancetype)initWithCode:(INStartWorkoutIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INStartWorkoutIntentResponseCode code;
+
 @end
 
 NS_ASSUME_NONNULL_END

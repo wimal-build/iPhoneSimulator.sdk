@@ -1,14 +1,18 @@
 /*
     File:  AVCaptureStillImageOutput.h
- 	
- 	Framework:  AVFoundation
  
-	Copyright 2010-2016 Apple Inc. All rights reserved.
+    Framework:  AVFoundation
+ 
+    Copyright 2010-2017 Apple Inc. All rights reserved.
 */
 
-#import <AVFoundation/AVCaptureOutput.h>
+#import <AVFoundation/AVCaptureOutputBase.h>
+#import <AVFoundation/AVVideoSettings.h>
+#import <CoreMedia/CMSampleBuffer.h>
 
-#pragma mark - AVCaptureStillImageOutput
+NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark AVCaptureStillImageOutput
 
 @class AVCaptureStillImageOutputInternal;
 
@@ -16,7 +20,7 @@
  @class AVCaptureStillImageOutput
  @abstract
     AVCaptureStillImageOutput is a concrete subclass of AVCaptureOutput that can be used to capture high-quality still images with accompanying metadata.
-
+ 
  @discussion
     Instances of AVCaptureStillImageOutput can be used to capture, on demand, high quality snapshots from a realtime capture source. Clients can request a still image for the current time using the captureStillImageAsynchronouslyFromConnection:completionHandler: method. Clients can also configure still image outputs to produce still images in specific image formats.
  */
@@ -24,40 +28,44 @@ NS_CLASS_DEPRECATED(10_7, NA, 4_0, 10_0, "Use AVCapturePhotoOutput instead") __T
 @interface AVCaptureStillImageOutput : AVCaptureOutput 
 {
 @private
-	AVCaptureStillImageOutputInternal *_internal;
+    AVCaptureStillImageOutputInternal *_internal;
 }
+
+- (instancetype)init;
+
++ (instancetype)new;
 
 /*!
  @property outputSettings
  @abstract
     Specifies the options the receiver uses to encode still images before they are delivered.
-
+ 
  @discussion
     See AVVideoSettings.h for more information on how to construct an output settings dictionary.
-
-    On iOS, the only currently supported keys are AVVideoCodecKey and kCVPixelBufferPixelFormatTypeKey. Use -availableImageDataCVPixelFormatTypes and -availableImageDataCodecTypes to determine what codec keys and pixel formats are supported. AVVideoQualityKey is supported on iOS 6.0 and later and may only be used when AVVideoCodecKey is set to AVVideoCodecJPEG.
+ 
+    On iOS, the only currently supported keys are AVVideoCodecKey and kCVPixelBufferPixelFormatTypeKey. Use -availableImageDataCVPixelFormatTypes and -availableImageDataCodecTypes to determine what codec keys and pixel formats are supported. AVVideoQualityKey is supported on iOS 6.0 and later and may only be used when AVVideoCodecKey is set to AVVideoCodecTypeJPEG.
  */
-@property(nonatomic, copy) NSDictionary *outputSettings;
+@property(nonatomic, copy) NSDictionary<NSString *, id> *outputSettings;
 
 /*!
  @property availableImageDataCVPixelFormatTypes
  @abstract
     Indicates the supported image pixel formats that can be specified in outputSettings.
-
+ 
  @discussion
     The value of this property is an NSArray of NSNumbers that can be used as values for the kCVPixelBufferPixelFormatTypeKey in the receiver's outputSettings property. The first format in the returned list is the most efficient output format.
  */
-@property(nonatomic, readonly) NSArray *availableImageDataCVPixelFormatTypes;
+@property(nonatomic, readonly) NSArray<NSNumber *> *availableImageDataCVPixelFormatTypes;
 
 /*!
  @property availableImageDataCodecTypes
  @abstract
     Indicates the supported image codec formats that can be specified in outputSettings.
-
+ 
  @discussion
-    The value of this property is an NSArray of NSStrings that can be used as values for the AVVideoCodecKey in the receiver's outputSettings property.
+    The value of this property is an NSArray of AVVideoCodecTypes that can be used as values for the AVVideoCodecKey in the receiver's outputSettings property.
  */
-@property(nonatomic, readonly) NSArray *availableImageDataCodecTypes;
+@property(nonatomic, readonly) NSArray<AVVideoCodecType> *availableImageDataCodecTypes;
 
 #if TARGET_OS_IPHONE
 
@@ -107,7 +115,7 @@ NS_CLASS_DEPRECATED(10_7, NA, 4_0, 10_0, "Use AVCapturePhotoOutput instead") __T
  @property capturingStillImage
  @abstract
     A boolean value that becomes true when a still image is being captured.
-
+ 
  @discussion
     The value of this property is a BOOL that becomes true when a still image is being captured, and false when no still image capture is underway. This property is key-value observable.
  */
@@ -117,39 +125,40 @@ NS_CLASS_DEPRECATED(10_7, NA, 4_0, 10_0, "Use AVCapturePhotoOutput instead") __T
  @method captureStillImageAsynchronouslyFromConnection:completionHandler:
  @abstract
     Initiates an asynchronous still image capture, returning the result to a completion handler.
-
+ 
  @param connection
     The AVCaptureConnection object from which to capture the still image.
  @param handler
     A block that will be called when the still image capture is complete. The block will be passed a CMSampleBuffer object containing the image data or an NSError object if an image could not be captured.
-
+ 
  @discussion
     This method will return immediately after it is invoked, later calling the provided completion handler block when image data is ready. If the request could not be completed, the error parameter will contain an NSError object describing the failure.
-
+ 
     Attachments to the image data sample buffer may contain metadata appropriate to the image data format. For instance, a sample buffer containing JPEG data may carry a kCGImagePropertyExifDictionary as an attachment. See <ImageIO/CGImageProperties.h> for a list of keys and value types.
-
+ 
     Clients should not assume that the completion handler will be called on a specific thread.
  
     Calls to captureStillImageAsynchronouslyFromConnection:completionHandler: are not synchronized with AVCaptureDevice manual control completion handlers. Setting a device manual control, waiting for its completion, then calling captureStillImageAsynchronouslyFromConnection:completionHandler: DOES NOT ensure that the still image returned reflects your manual control change. It may be from an earlier time. You can compare your manual control completion handler sync time to the returned still image's presentation time. You can retrieve the sample buffer's pts using CMSampleBufferGetPresentationTimestamp(). If the still image has an earlier timestamp, your manual control command does not apply to it.
  */
-- (void)captureStillImageAsynchronouslyFromConnection:(AVCaptureConnection *)connection completionHandler:(void (^)(CMSampleBufferRef imageDataSampleBuffer, NSError *error))handler;
+- (void)captureStillImageAsynchronouslyFromConnection:(AVCaptureConnection *)connection completionHandler:(void (^)(CMSampleBufferRef _Nullable imageDataSampleBuffer, NSError * _Nullable error))handler;
 
 /*!
  @method jpegStillImageNSDataRepresentation:
  @abstract
     Converts the still image data and metadata attachments in a JPEG sample buffer to an NSData representation.
-
+ 
  @param jpegSampleBuffer
     The sample buffer carrying JPEG image data, optionally with Exif metadata sample buffer attachments. This method throws an NSInvalidArgumentException if jpegSampleBuffer is NULL or not in the JPEG format.
-
+ 
  @discussion
     This method returns an NSData representation of a JPEG still image sample buffer, merging the image data and Exif metadata sample buffer attachments without recompressing the image. The returned NSData is suitable for writing to disk.
  */
-+ (NSData *)jpegStillImageNSDataRepresentation:(CMSampleBufferRef)jpegSampleBuffer;
++ (nullable NSData *)jpegStillImageNSDataRepresentation:(CMSampleBufferRef)jpegSampleBuffer;
 
 @end
 
-#if TARGET_OS_IPHONE
+
+#pragma mark - AVCaptureBracketedStillImageSettings
 
 /*!
  @class AVCaptureBracketedStillImageSettings
@@ -161,7 +170,13 @@ NS_CLASS_DEPRECATED(10_7, NA, 4_0, 10_0, "Use AVCapturePhotoOutput instead") __T
  */
 NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface AVCaptureBracketedStillImageSettings : NSObject
+
+AV_INIT_UNAVAILABLE
+
 @end
+
+
+#pragma mark - AVCaptureManualExposureBracketedStillImageSettings
 
 /*!
  @class AVCaptureManualExposureBracketedStillImageSettings
@@ -174,12 +189,38 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface AVCaptureManualExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
 
+/*!
+ @method manualExposureSettingsWithExposureDuration:ISO:
+ @abstract
+    Creates an AVCaptureManualExposureBracketedStillImageSettings using the specified exposure duration and ISO.
+ 
+ @param duration
+    The exposure duration in seconds. Pass AVCaptureExposureDurationCurrent to leave the duration unchanged for this bracketed image.
+ @param ISO
+    The ISO. Pass AVCaptureISOCurrent to leave the ISO unchanged for this bracketed image.
+ @result
+    An initialized AVCaptureManualExposureBracketedStillImageSettings instance.
+ */
 + (instancetype)manualExposureSettingsWithExposureDuration:(CMTime)duration ISO:(float)ISO;
 
+/*!
+ @property exposureDuration
+ @abstract
+    The exposure duration for the still image.
+ */
 @property(readonly) CMTime exposureDuration;
+
+/*!
+ @property ISO
+ @abstract
+    The ISO for the still image.
+ */
 @property(readonly) float ISO;
 
 @end
+
+
+#pragma mark - AVCaptureAutoExposureBracketedStillImageSettings
 
 /*!
  @class AVCaptureAutoExposureBracketedStillImageSettings
@@ -192,14 +233,30 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
 @interface AVCaptureAutoExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
 
+/*!
+ @method autoExposureSettingsWithExposureTargetBias
+ @abstract
+     Creates an AVCaptureAutoExposureBracketedStillImageSettings using the specified exposure target bias.
+ 
+ @param exposureTargetBias
+     The exposure target bias. Pass AVCaptureExposureTargetBiasCurrent to leave the exposureTargetBias unchanged for this image.
+ @result
+     An initialized AVCaptureAutoExposureBracketedStillImageSettings instance.
+ */
 + (instancetype)autoExposureSettingsWithExposureTargetBias:(float)exposureTargetBias;
 
+/*!
+ @property exposureTargetBias
+ @abstract
+     The exposure bias for the auto exposure bracketed settings
+ */
 @property(readonly) float exposureTargetBias;
 
 @end
 
+
 /*!
- @category AVCaptureStillImageOutput (BracketedCaptureMethods)
+ @category AVCaptureStillImageOutput (AVCaptureStillImageOutputBracketedCapture)
  @abstract
     A category of methods for bracketed still image capture.
  
@@ -208,13 +265,13 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
  
     In a bracketed capture, AVCaptureDevice flashMode property is ignored (flash is forced off), as is AVCaptureStillImageOutput's automaticallyEnablesStillImageStabilizationWhenAvailable property (stabilization is forced off).
  */
-@interface AVCaptureStillImageOutput ( BracketedCaptureMethods )
+@interface AVCaptureStillImageOutput (AVCaptureStillImageOutputBracketedCapture)
 
 /*!
  @property maxBracketedCaptureStillImageCount
  @abstract
     Specifies the maximum number of still images that may be taken in a single bracket.
-
+ 
  @discussion
     AVCaptureStillImageOutput can only satisfy a limited number of image requests in a single bracket without exhausting system resources. The maximum number of still images that may be taken in a single bracket depends on the size of the images being captured, and consequently may vary with AVCaptureSession -sessionPreset and AVCaptureDevice -activeFormat. Some formats do not support bracketed capture and return a maxBracketedCaptureStillImageCount of 0. This read-only property is key-value observable. If you exceed -maxBracketedCaptureStillImageCount, then -captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler: fails and the completionHandler is called [settings count] times with a NULL sample buffer and AVErrorMaximumStillImageCaptureRequestsExceeded.
  */
@@ -247,18 +304,15 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
  
  @param connection
     The connection through which the still image bracket should be captured.
- 
  @param settings
     An array of AVCaptureBracketedStillImageSettings objects. All must be of the same kind of AVCaptureBracketedStillImageSettings subclass, or an NSInvalidArgumentException is thrown.
- 
- @param completionHandler
+ @param handler
     A user provided block that will be called asynchronously once resources have successfully been allocated for the specified bracketed capture operation. If sufficient resources could not be allocated, the "prepared" parameter contains NO, and "error" parameter contains a non-nil error value. If [settings count] exceeds -maxBracketedCaptureStillImageCount, then AVErrorMaximumStillImageCaptureRequestsExceeded is returned. You should not assume that the completion handler will be called on a specific thread.
  
  @discussion
     -maxBracketedCaptureStillImageCount tells you the maximum number of images that may be taken in a single bracket given the current AVCaptureDevice/AVCaptureSession/AVCaptureStillImageOutput configuration. But before taking a still image bracket, additional resources may need to be allocated. By calling -prepareToCaptureStillImageBracketFromConnection:withSettingsArray:completionHandler: first, you are able to deterministically know when the receiver is ready to capture the bracket with the specified settings array.
-
  */
-- (void)prepareToCaptureStillImageBracketFromConnection:(AVCaptureConnection *)connection withSettingsArray:(NSArray *)settings completionHandler:(void (^)(BOOL prepared, NSError *error))handler NS_DEPRECATED_IOS(8_0, 10_0, "Use AVCapturePhotoOutput setPreparedPhotoSettingsArray:completionHandler: instead");
+- (void)prepareToCaptureStillImageBracketFromConnection:(AVCaptureConnection *)connection withSettingsArray:(NSArray<__kindof AVCaptureBracketedStillImageSettings *> *)settings completionHandler:(void (^)(BOOL prepared, NSError * _Nullable error))handler NS_DEPRECATED_IOS(8_0, 10_0, "Use AVCapturePhotoOutput setPreparedPhotoSettingsArray:completionHandler: instead");
 
 /*!
  @method captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:
@@ -267,19 +321,16 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED
  
  @param connection
     The connection through which the still image bracket should be captured.
- 
  @param settings
     An array of AVCaptureBracketedStillImageSettings objects. All must be of the same kind of AVCaptureBracketedStillImageSettings subclass, or an NSInvalidArgumentException is thrown.
- 
- @param completionHandler
+ @param handler
     A user provided block that will be called asynchronously as each still image in the bracket is captured. If the capture request is successful, the "sampleBuffer" parameter contains a valid CMSampleBuffer, the "stillImageSettings" parameter contains the settings object corresponding to this still image, and a nil "error" parameter. If the bracketed capture fails, sample buffer is NULL and error is non-nil. If [settings count] exceeds -maxBracketedCaptureStillImageCount, then AVErrorMaximumStillImageCaptureRequestsExceeded is returned. You should not assume that the completion handler will be called on a specific thread.
  
  @discussion
     If you have not called -prepareToCaptureStillImageBracketFromConnection:withSettingsArray:completionHandler: for this still image bracket request, the bracket may not be taken immediately, as the receiver may internally need to prepare resources.
  */
-- (void)captureStillImageBracketAsynchronouslyFromConnection:(AVCaptureConnection *)connection withSettingsArray:(NSArray *)settings completionHandler:(void (^)(CMSampleBufferRef sampleBuffer, AVCaptureBracketedStillImageSettings *stillImageSettings, NSError *error))handler NS_DEPRECATED_IOS(8_0, 10_0, "Use AVCapturePhotoOutput capturePhotoWithSettings:delegate: instead");
+- (void)captureStillImageBracketAsynchronouslyFromConnection:(AVCaptureConnection *)connection withSettingsArray:(NSArray<__kindof AVCaptureBracketedStillImageSettings *> *)settings completionHandler:(void (^)(CMSampleBufferRef _Nullable sampleBuffer, AVCaptureBracketedStillImageSettings * _Nullable stillImageSettings, NSError * _Nullable error))handler NS_DEPRECATED_IOS(8_0, 10_0, "Use AVCapturePhotoOutput capturePhotoWithSettings:delegate: instead");
 
 @end
 
-#endif // TARGET_OS_IPHONE
-
+NS_ASSUME_NONNULL_END

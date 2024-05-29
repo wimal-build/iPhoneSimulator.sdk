@@ -21,6 +21,9 @@
 #if __has_include(<PassKit/PKPaymentRequest.h>)
 #import <PassKit/PKPaymentRequest.h>
 #endif
+#if __has_include(<PassKit/PKPaymentRequestStatus.h>)
+#import <PassKit/PKPaymentRequestStatus.h>
+#endif
 #if __has_include(<PassKit/PKPayment.h>)
 #import <PassKit/PKPayment.h>
 #endif

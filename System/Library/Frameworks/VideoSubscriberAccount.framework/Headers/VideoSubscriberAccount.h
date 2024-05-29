@@ -12,3 +12,5 @@
 #import <VideoSubscriberAccount/VSAccountMetadata.h>
 #import <VideoSubscriberAccount/VSAccountMetadataRequest.h>
 #import <VideoSubscriberAccount/VSAccountProviderResponse.h>
+#import <VideoSubscriberAccount/VSSubscription.h>
+#import <VideoSubscriberAccount/VSSubscriptionRegistrationCenter.h>

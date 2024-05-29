@@ -3,8 +3,8 @@
  @copyright  Copyright (c) 2016 Apple Inc. All rights reserved.
  */
 
-#import <UIKit/UIKit.h>
 #import <Messages/MSStickerBrowserViewDataSource.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, MSStickerSize) {
     MSStickerSizeSmall,
     MSStickerSizeRegular,
-    MSStickerSizeLarge
+    MSStickerSizeLarge,
 } NS_ENUM_AVAILABLE_IOS(10_0);
 
 /*!
@@ -58,7 +58,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @abstract The Sticker Browser View data source.
  */
-@property (nonatomic, weak, nullable) id <MSStickerBrowserViewDataSource> dataSource;
+@property (nonatomic, weak, nullable) id<MSStickerBrowserViewDataSource> dataSource;
 
 /*!
  @abstract The Sticker Browser View content offset.
