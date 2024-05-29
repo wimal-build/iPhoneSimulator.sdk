@@ -75,7 +75,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="351" id="2Km-Ot-mic"/>
-                                    <constraint firstItem="bRl-UA-3MQ" firstAttribute="centerX" secondItem="uJu-H1-ZMq" secondAttribute="centerX" id="3AN-T6-m0W"/>
+                                    <constraint firstItem="bRl-UA-3MQ" firstAttribute="centerX" secondItem="uJu-H1-ZMq" secondAttribute="centerX" constant="10" id="3AN-T6-m0W"/>
                                     <constraint firstItem="zzj-CA-T10" firstAttribute="leading" secondItem="uJu-H1-ZMq" secondAttribute="leading" constant="36" id="3dh-aX-zTx"/>
                                     <constraint firstAttribute="bottom" secondItem="VxT-Ob-YLB" secondAttribute="bottom" constant="36" id="3w0-fY-sQB"/>
                                     <constraint firstAttribute="trailing" secondItem="zzj-CA-T10" secondAttribute="trailing" constant="36" id="ASp-We-uQV"/>
@@ -96,7 +96,7 @@
                                     <constraint firstItem="VxT-Ob-YLB" firstAttribute="top" secondItem="zzj-CA-T10" secondAttribute="bottom" constant="23" id="wbW-Sc-fPJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <userDefinedRuntimeAttribute type="number" keyPath="continuousCornerRadius">
                                         <integer key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
@@ -163,6 +163,12 @@
                                         <color key="textColor" red="0.36862745099999999" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoneCheck.png" translatesAutoresizingMaskIntoConstraints="NO" id="3qw-yT-oWs">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="149" id="E5x-fs-lUx"/>
+                                            <constraint firstAttribute="height" constant="149" id="vAp-hb-3bd"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6x-fH-jVy">
                                         <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -181,13 +187,10 @@
                                             <action selector="handleDoneButton:" destination="MYz-3Y-rNn" eventType="touchUpInside" id="dn6-18-kDL"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeH-ZJ-SSz" userLabel="Progress Label">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="279" id="DPW-p0-Xl1"/>
-                                            <constraint firstAttribute="height" constant="36" id="Yhh-8L-azV"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeH-ZJ-SSz" userLabel="Progress Label">
                                         <string key="text">Do Not Localize
-Successfully set up.</string>
+Successfully set up
+And another line.</string>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -195,40 +198,34 @@ Successfully set up.</string>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="IeH-ZJ-SSz" secondAttribute="trailing" constant="36" id="4Ak-jw-7wj"/>
                                     <constraint firstItem="LMX-Ud-vBS" firstAttribute="leading" secondItem="IRk-ts-NQu" secondAttribute="leading" constant="10" id="7bl-aV-rD0"/>
                                     <constraint firstItem="LMX-Ud-vBS" firstAttribute="centerX" secondItem="IRk-ts-NQu" secondAttribute="centerX" id="AOQ-9j-rZ5"/>
                                     <constraint firstItem="d6x-fH-jVy" firstAttribute="leading" secondItem="IRk-ts-NQu" secondAttribute="leading" constant="36" id="AoH-0P-Upg"/>
                                     <constraint firstItem="LMX-Ud-vBS" firstAttribute="top" secondItem="IRk-ts-NQu" secondAttribute="top" constant="22" id="BIm-qT-xKR"/>
                                     <constraint firstAttribute="bottom" secondItem="d6x-fH-jVy" secondAttribute="bottom" constant="36" id="LXf-5I-rNf"/>
+                                    <constraint firstItem="IeH-ZJ-SSz" firstAttribute="centerX" secondItem="IRk-ts-NQu" secondAttribute="centerX" id="MeJ-07-WIK"/>
                                     <constraint firstAttribute="trailing" secondItem="LMX-Ud-vBS" secondAttribute="trailing" constant="10" id="N72-pg-BTa"/>
-                                    <constraint firstItem="IeH-ZJ-SSz" firstAttribute="leading" secondItem="IRk-ts-NQu" secondAttribute="leading" constant="36" id="RUK-DA-YXI"/>
-                                    <constraint firstItem="IeH-ZJ-SSz" firstAttribute="centerX" secondItem="IRk-ts-NQu" secondAttribute="centerX" id="T4Z-qo-vAJ"/>
+                                    <constraint firstItem="d6x-fH-jVy" firstAttribute="top" secondItem="IeH-ZJ-SSz" secondAttribute="bottom" constant="23" id="Q0k-f3-Wyi"/>
+                                    <constraint firstAttribute="trailing" secondItem="IeH-ZJ-SSz" secondAttribute="trailing" constant="36" id="Q8c-YF-i6z"/>
                                     <constraint firstAttribute="trailing" secondItem="d6x-fH-jVy" secondAttribute="trailing" constant="36" id="Tha-aH-KGl"/>
+                                    <constraint firstItem="3qw-yT-oWs" firstAttribute="centerX" secondItem="IRk-ts-NQu" secondAttribute="centerX" id="dwY-Cs-r8D"/>
                                     <constraint firstAttribute="height" constant="390" id="hel-0D-kel"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="351" id="q7T-Tm-uvu"/>
+                                    <constraint firstItem="3qw-yT-oWs" firstAttribute="top" secondItem="LMX-Ud-vBS" secondAttribute="bottom" constant="14" id="s6b-ms-eGT"/>
+                                    <constraint firstItem="IeH-ZJ-SSz" firstAttribute="leading" secondItem="IRk-ts-NQu" secondAttribute="leading" constant="36" id="zLC-7j-97m"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <userDefinedRuntimeAttribute type="number" keyPath="continuousCornerRadius">
                                         <integer key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoneCheck.png" translatesAutoresizingMaskIntoConstraints="NO" id="3qw-yT-oWs">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="E5x-fs-lUx"/>
-                                    <constraint firstAttribute="height" constant="60" id="vAp-hb-3bd"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01286922089" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IRk-ts-NQu" firstAttribute="centerX" secondItem="gKa-ZA-gzM" secondAttribute="centerX" id="1Vu-E6-SjY"/>
                             <constraint firstItem="IRk-ts-NQu" firstAttribute="leading" secondItem="gKa-ZA-gzM" secondAttribute="leadingMargin" priority="750" constant="-4" id="Z61-7t-gVS"/>
-                            <constraint firstItem="IeH-ZJ-SSz" firstAttribute="top" secondItem="3qw-yT-oWs" secondAttribute="bottom" constant="61" id="a4X-nr-EDM"/>
-                            <constraint firstItem="3qw-yT-oWs" firstAttribute="top" secondItem="LMX-Ud-vBS" secondAttribute="bottom" constant="57" id="hha-FP-S2Z"/>
                             <constraint firstItem="bto-gJ-Rzu" firstAttribute="top" secondItem="IRk-ts-NQu" secondAttribute="bottom" constant="10" id="mbh-mz-Nbs"/>
-                            <constraint firstItem="3qw-yT-oWs" firstAttribute="centerX" secondItem="gKa-ZA-gzM" secondAttribute="centerX" id="sDU-6T-ZCF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IRk-ts-NQu" secondAttribute="trailing" priority="750" constant="-4" id="w6X-qd-ZRb"/>
                         </constraints>
                     </view>
@@ -238,6 +235,7 @@ Successfully set up.</string>
                         <outlet property="_doneButton" destination="d6x-fH-jVy" id="eS8-lR-VUS"/>
                         <outlet property="_imageView" destination="3qw-yT-oWs" id="vmZ-Lf-ysv"/>
                         <outlet property="_infoLabel" destination="IeH-ZJ-SSz" id="hNv-JZ-IGd"/>
+                        <outlet property="_titleLabel" destination="LMX-Ud-vBS" id="Ntz-hK-8bB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpK-vy-DFj" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -106,8 +106,8 @@ NS_CLASS_AVAILABLE(10_10, 8_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0)
 ///
 /// @param localizedReason Application reason for authentication. This string must be provided in correct
 ///                        localization and should be short and clear. It will be eventually displayed in
-///                        the authentication dialog subtitle. A name of the calling application will be
-///                        already displayed in title, so it should not be duplicated here.
+///                        the authentication dialog. A name of the calling application will be already
+///                        displayed in title, so it should not be duplicated here.
 ///
 /// @warning localizedReason parameter is mandatory and the call will throw NSInvalidArgumentException if
 ///          nil or empty string is specified.
@@ -217,8 +217,8 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 ///
 /// @param localizedReason Application reason for authentication. This string must be provided in correct
 ///                        localization and should be short and clear. It will be eventually displayed in
-///                        the authentication dialog subtitle. A name of the calling application will be
-///                        already displayed in title, so it should not be duplicated here.
+///                        the authentication dialog. A name of the calling application will be already
+///                        displayed in title, so it should not be duplicated here.
 ///
 /// @param reply Reply block that is executed when access control evaluation finishes.
 ///              success Reply parameter that is YES if the access control has been evaluated successfully or

@@ -7,21 +7,8 @@
 #if TARGET_OS_IPHONE
 
 #import <UIKit/UIKit.h>
-
+#import <PassKit/PKConstants.h>
 NS_ASSUME_NONNULL_BEGIN
-
-typedef NS_ENUM(NSInteger, PKPaymentButtonStyle) {
-    PKPaymentButtonStyleWhite = 0,
-    PKPaymentButtonStyleWhiteOutline,
-    PKPaymentButtonStyleBlack
-} NS_ENUM_AVAILABLE_IOS(8_3);
-
-typedef NS_ENUM(NSInteger, PKPaymentButtonType) {
-    PKPaymentButtonTypePlain = 0,
-    PKPaymentButtonTypeBuy,
-    PKPaymentButtonTypeSetUp NS_ENUM_AVAILABLE_IOS(9_0),
-    PKPaymentButtonTypeInStore NS_ENUM_AVAILABLE_IOS(10_0)
-} NS_ENUM_AVAILABLE_IOS(8_3);
 
 // PKPaymentButton vends a number of Apple Pay related buttons for use inside of your app
 // These buttons can be used to prompt the user to pay with Apple Pay, or set up cards for payment

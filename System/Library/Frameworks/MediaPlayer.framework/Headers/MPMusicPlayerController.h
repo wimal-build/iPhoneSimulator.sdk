@@ -11,10 +11,9 @@
 #import <MediaPlayer/MPMediaItem.h>
 #import <MediaPlayer/MPMediaQuery.h>
 #import <MediaPlayer/MPMediaPlayback.h>
+#import <MediaPlayer/MPMusicPlayerQueueDescriptor.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class MPMediaItem, MPMediaQuery, MPMusicPlayerControllerInternal;
 
 typedef NS_ENUM(NSInteger, MPMusicPlaybackState) {
     MPMusicPlaybackStateStopped,
@@ -83,6 +82,13 @@ __TVOS_PROHIBITED
 - (void)setQueueWithQuery:(MPMediaQuery *)query;
 - (void)setQueueWithItemCollection:(MPMediaItemCollection *)itemCollection;
 - (void)setQueueWithStoreIDs:(NSArray<NSString *> *)storeIDs NS_AVAILABLE_IOS(9_3);
+- (void)setQueueWithDescriptor:(MPMusicPlayerQueueDescriptor *)descriptor NS_AVAILABLE_IOS(10_1);
+
+// The completion handler will be called when the first item from the queue is buffered and ready to play.
+// If a first item has been specified using MPMusicPlayerQueueDescriptor, the error will be non-nil if the specified item cannot be prepared for playback.
+// If a first item is not specified, the error will be non-nil if an item cannot be prepared for playback.
+// Errors will be in MPErrorDomain.
+- (void)prepareToPlayWithCompletionHandler:(void (^)(NSError *_Nullable error))completionHandler NS_AVAILABLE_IOS(10_1);
 
 // Skips to the next item in the queue. If already at the last item, this will end playback.
 - (void)skipToNextItem;

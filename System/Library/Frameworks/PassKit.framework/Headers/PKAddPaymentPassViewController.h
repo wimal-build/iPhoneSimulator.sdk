@@ -11,7 +11,7 @@
 #import <PassKit/PKConstants.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@class PKAddPaymentPassViewController, PKPaymentPass;
+@class PKAddPaymentPassViewController, PKPaymentPass, PKLabeledValue;
 
 typedef NS_ENUM(NSInteger, PKAddPaymentPassError) {
     PKAddPaymentPassErrorUnsupported,
@@ -25,6 +25,8 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
  * Supported Schemes:
  *  PKEncryptionSchemeECC_V2:
  *      ephemeralPublicKey
+ *  PKEncryptionSchemeRSA_V2:
+ *      wrappedKey
  */
 - (nullable instancetype)initWithEncryptionScheme:(PKEncryptionScheme)encryptionScheme NS_DESIGNATED_INITIALIZER;
 
@@ -35,6 +37,9 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
  */
 @property (nonatomic, copy, nullable) NSString *cardholderName;
 @property (nonatomic, copy, nullable) NSString *primaryAccountSuffix;
+
+@property (nonatomic, copy) NSArray<PKLabeledValue *> *cardDetails NS_AVAILABLE_IOS(10_1);
+
 @property (nonatomic, copy, nullable) NSString *localizedDescription;
 
 /* Pass Library Filters:
@@ -45,6 +50,8 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface PKAddPaymentPassRequestConfiguration : NS
 /* Filters introduction page to a specific network - does not function as a restriction.
  */
 @property (nonatomic, copy, nullable) PKPaymentNetwork paymentNetwork;
+
+@property (nonatomic, assign) BOOL requiresFelicaSecureElement NS_AVAILABLE_IOS(10_1);
 
 @end
 

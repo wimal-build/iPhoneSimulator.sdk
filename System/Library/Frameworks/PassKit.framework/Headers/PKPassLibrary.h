@@ -81,6 +81,9 @@ NS_CLASS_AVAILABLE_IOS(6_0)
 // a payment pass with the supplied primary account identifier.
 - (BOOL)canAddPaymentPassWithPrimaryAccountIdentifier:(NSString *)primaryAccountIdentifier NS_AVAILABLE_IOS(9_0);
 
+// If the library can add Felica passes, this method will return YES. Otherwise, NO will be returned.
+- (BOOL)canAddFelicaPass NS_AVAILABLE_IOS(10_1);
+
 // These methods may be utilized to activate a payment pass that is provisioned but currently in the inactive state, by providing
 // either a cryptographic OTP, or an activation code.
 - (void)activatePaymentPass:(PKPaymentPass *)paymentPass withActivationData:(NSData *)activationData completion:(nullable void(^)(BOOL success, NSError* error))completion __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(8_0);

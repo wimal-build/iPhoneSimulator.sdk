@@ -23,6 +23,8 @@ extern PKPaymentNetwork const PKPaymentNetworkInterac NS_AVAILABLE_IOS(9_2) __WA
 extern PKPaymentNetwork const PKPaymentNetworkMasterCard NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
 extern PKPaymentNetwork const PKPaymentNetworkPrivateLabel NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(3.0);
 extern PKPaymentNetwork const PKPaymentNetworkVisa NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
+extern PKPaymentNetwork const PKPaymentNetworkJCB NS_AVAILABLE_IOS(10_1) __WATCHOS_AVAILABLE(3.1);
+extern PKPaymentNetwork const PKPaymentNetworkSuica NS_AVAILABLE_IOS(10_1) __WATCHOS_AVAILABLE(3.1);
 
 typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
     PKPaymentAuthorizationStatusSuccess, // Merchant auth'd (or expects to auth) the transaction successfully.
@@ -37,5 +39,18 @@ typedef NS_ENUM(NSInteger, PKPaymentAuthorizationStatus) {
     PKPaymentAuthorizationStatusPINLockout NS_ENUM_AVAILABLE_IOS(9_2)    // PIN retry limit exceeded.
 
 } NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(3.0);
+
+typedef NS_ENUM(NSInteger, PKPaymentButtonStyle) {
+    PKPaymentButtonStyleWhite = 0,
+    PKPaymentButtonStyleWhiteOutline,
+    PKPaymentButtonStyleBlack
+} NS_ENUM_AVAILABLE_IOS(8_3);
+
+typedef NS_ENUM(NSInteger, PKPaymentButtonType) {
+    PKPaymentButtonTypePlain = 0,
+    PKPaymentButtonTypeBuy,
+    PKPaymentButtonTypeSetUp NS_ENUM_AVAILABLE_IOS(9_0),
+    PKPaymentButtonTypeInStore NS_ENUM_AVAILABLE_IOS(10_0)
+} NS_ENUM_AVAILABLE_IOS(8_3);
 
 #endif // PKCONSTANTS_H

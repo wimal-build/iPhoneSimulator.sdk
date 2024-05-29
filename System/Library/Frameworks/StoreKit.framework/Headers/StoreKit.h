@@ -6,6 +6,7 @@
 //
 
 #import <StoreKit/SKCloudServiceController.h>
+#import <StoreKit/SKCloudServiceSetupViewController.h>
 #import <StoreKit/SKDownload.h>
 #import <StoreKit/SKError.h>
 #import <StoreKit/SKPayment.h>

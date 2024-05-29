@@ -2,7 +2,7 @@
 //  SKCloudServiceController.h
 //  StoreKit
 //
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright © 2015-2016 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, SKCloudServiceAuthorizationStatus) {
 typedef NS_OPTIONS(NSUInteger, SKCloudServiceCapability) {
     SKCloudServiceCapabilityNone                           = 0,
     SKCloudServiceCapabilityMusicCatalogPlayback           = 1 << 0,
+    SKCloudServiceCapabilityMusicCatalogSubscriptionEligible    NS_ENUM_AVAILABLE_IOS(10_1)  = 1 << 1,
     SKCloudServiceCapabilityAddToCloudMusicLibrary         = 1 << 8,
 } NS_AVAILABLE_IOS(9_3);
 

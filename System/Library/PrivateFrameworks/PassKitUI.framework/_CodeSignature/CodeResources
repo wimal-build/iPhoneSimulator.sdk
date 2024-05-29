@@ -240,6 +240,18 @@
 		<data>
 		KQOvWR9Sj1U3bdNusA60VTlFYZE=
 		</data>
+		<key>HeroPhone_D10_1242@3x.png</key>
+		<data>
+		ZUlsHwP4Dg/kx/luBZXz3Epwpiw=
+		</data>
+		<key>HeroPhone_D10_640@2x.png</key>
+		<data>
+		Bl1qCgAmKJIpErvsKO1f4nOhPbA=
+		</data>
+		<key>HeroPhone_D10_750@2x.png</key>
+		<data>
+		ZmPUjjOFVWEOiQk9GBXlW39b5ZM=
+		</data>
 		<key>HeroWatch-compact@2x.png</key>
 		<data>
 		srML8EI1lCyH4GkTus2BQ/559o4=
@@ -274,7 +286,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v+ZgEb7oGSVZal80xjLZuFheXZc=
+		kMmxCKYtrnqNkL5B7J8KA9eZWcQ=
 		</data>
 		<key>Interac_Small_Logo@2x.png</key>
 		<data>
@@ -568,29 +580,11 @@
 		<data>
 		bryK5VjcHgrC/WfMjZFYr4px4VU=
 		</data>
-		<key>ar.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8raWfotwF/DEc5JMRoW/v1m/fUE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ca.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w3cZzdUUixEU5fKExOFdT3TT+6I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -604,29 +598,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CGYv7Y5edEqaLhPVbIdziK/NwwU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>da.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ph9csZ2a7evLkrqZFsh9c5o5ZBM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -640,29 +616,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ecN/iR9YxMt0tjc2MFHTq+pC4Ho=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>de.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>el.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SLaFDnkHfpnnEHSURttN6sea2js=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -676,29 +634,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MRbJ/WfBBwq4PRe1XqGz+oyfBNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en_AU.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k7jA/4SQMGaxNjt3dkQRGu8dQv0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -712,29 +652,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YnIuP6xAt9kscXIolrDkZ2USes4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			j0ZW4HT5Tuk5hKNrQ63/Ea1jBkY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -748,38 +670,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es_419.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IlECx5eh0eCLsUM++YqTIbq14a8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fi.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DqCij+58IiyAvj25Z5r/cHSKf6o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2uLoGHx9CbFqq0JNSjGs9gE0Xlc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -793,29 +688,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PXOUMqpJidxMWGJ9i+J0yLAXa+M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>he.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nNCwXZYBKao1vfiGUvJFtdmJ86k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -829,15 +706,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qm6WGjV0KuBoLY1ZAdzVAPpQ5YI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -847,29 +715,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rxZb+cN7LMG1x5lWPOE2qvCmXTY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hu.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T7QGYdXBw9OK53hKMianqM7LWsI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -891,29 +741,11 @@
 		<data>
 		c3/QL+lHslSEp80bDFcwX5b0i6o=
 		</data>
-		<key>id.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ceq9jHf2MM1EXIydzrs2HqfLKFI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>it.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h0Zgp34oFncGRsAG5wUx5fk/lN8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -927,29 +759,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UUHXbF8cae5hwuveUTPPTqUTKEU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W6J7LYBCKGBYYTS2yVFyceXLb+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -963,29 +777,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SLBh6vxT1K6oh1iyw1BWGgoCUco=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>nl.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MuNry7p8D1NkweNG4H6NyJMoIoY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -999,29 +795,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Rx18Yur4VPuznmQF46xR6rGJNlg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pl.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LPTpn9r/2jXV/rDdMYxJR/LU2AQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1035,29 +813,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TnPVZg7Xp5pHU6GJKbLJiXkWVlk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt_PT.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HJ6Mz+ZnuFIh7SCC4sWFrSezVWY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1071,29 +831,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			36BhlymKjOC2lsycUIRwiGgwgcM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ru.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5tzAjpFoY+IR8btn/5svqMdfHQ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1107,29 +849,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WJG4iYpJB/1FgCdhDr0K/kwh8HY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>sv.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OmiwyAoHiwpp+3NL/ZB/PCFlqqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1143,29 +867,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6ElSP5/wJXFlGfecu8ds+xMSINo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ELoYH3cHPgTfUlR3qDmpJPEc9h8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1179,29 +885,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/sfZyxu7VVFhRJ47hLNvIuDcpao=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>vi.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SBDQCvZaxV9pIDG8g+d0fRJhW0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1215,15 +903,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/XjSuQsIvdiMEy69H5XARzpi9ds=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1233,29 +912,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uOseTzIffNn81XzsmYnpMu2Xgkk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_TW.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iecsLkx4TKfhJlrY154DOVhB2yY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1508,6 +1169,18 @@
 		<data>
 		KQOvWR9Sj1U3bdNusA60VTlFYZE=
 		</data>
+		<key>HeroPhone_D10_1242@3x.png</key>
+		<data>
+		ZUlsHwP4Dg/kx/luBZXz3Epwpiw=
+		</data>
+		<key>HeroPhone_D10_640@2x.png</key>
+		<data>
+		Bl1qCgAmKJIpErvsKO1f4nOhPbA=
+		</data>
+		<key>HeroPhone_D10_750@2x.png</key>
+		<data>
+		ZmPUjjOFVWEOiQk9GBXlW39b5ZM=
+		</data>
 		<key>HeroWatch-compact@2x.png</key>
 		<data>
 		srML8EI1lCyH4GkTus2BQ/559o4=
@@ -1832,29 +1505,11 @@
 		<data>
 		bryK5VjcHgrC/WfMjZFYr4px4VU=
 		</data>
-		<key>ar.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8raWfotwF/DEc5JMRoW/v1m/fUE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ca.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w3cZzdUUixEU5fKExOFdT3TT+6I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1868,29 +1523,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>cs.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CGYv7Y5edEqaLhPVbIdziK/NwwU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>cs.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>da.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ph9csZ2a7evLkrqZFsh9c5o5ZBM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1904,29 +1541,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ecN/iR9YxMt0tjc2MFHTq+pC4Ho=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>de.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>el.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SLaFDnkHfpnnEHSURttN6sea2js=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1940,29 +1559,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MRbJ/WfBBwq4PRe1XqGz+oyfBNc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en_AU.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k7jA/4SQMGaxNjt3dkQRGu8dQv0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1976,29 +1577,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en_GB.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YnIuP6xAt9kscXIolrDkZ2USes4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>en_GB.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			j0ZW4HT5Tuk5hKNrQ63/Ea1jBkY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2012,38 +1595,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es_419.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IlECx5eh0eCLsUM++YqTIbq14a8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fi.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DqCij+58IiyAvj25Z5r/cHSKf6o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>fi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2uLoGHx9CbFqq0JNSjGs9gE0Xlc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2057,29 +1613,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fr_CA.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PXOUMqpJidxMWGJ9i+J0yLAXa+M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>fr_CA.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>he.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nNCwXZYBKao1vfiGUvJFtdmJ86k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2093,15 +1631,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hi.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qm6WGjV0KuBoLY1ZAdzVAPpQ5YI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>hi.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2111,29 +1640,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hr.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rxZb+cN7LMG1x5lWPOE2qvCmXTY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>hr.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hu.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T7QGYdXBw9OK53hKMianqM7LWsI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2155,29 +1666,11 @@
 		<data>
 		c3/QL+lHslSEp80bDFcwX5b0i6o=
 		</data>
-		<key>id.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ceq9jHf2MM1EXIydzrs2HqfLKFI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>id.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>it.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h0Zgp34oFncGRsAG5wUx5fk/lN8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2191,29 +1684,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ja.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UUHXbF8cae5hwuveUTPPTqUTKEU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ja.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W6J7LYBCKGBYYTS2yVFyceXLb+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2227,29 +1702,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ms.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SLBh6vxT1K6oh1iyw1BWGgoCUco=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ms.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>nl.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MuNry7p8D1NkweNG4H6NyJMoIoY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2263,29 +1720,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>no.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Rx18Yur4VPuznmQF46xR6rGJNlg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>no.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pl.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LPTpn9r/2jXV/rDdMYxJR/LU2AQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2299,29 +1738,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pt.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TnPVZg7Xp5pHU6GJKbLJiXkWVlk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>pt.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt_PT.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HJ6Mz+ZnuFIh7SCC4sWFrSezVWY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2335,29 +1756,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>ro.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			36BhlymKjOC2lsycUIRwiGgwgcM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ro.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ru.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5tzAjpFoY+IR8btn/5svqMdfHQ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2371,29 +1774,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>sk.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WJG4iYpJB/1FgCdhDr0K/kwh8HY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>sk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>sv.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OmiwyAoHiwpp+3NL/ZB/PCFlqqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2407,29 +1792,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>th.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6ElSP5/wJXFlGfecu8ds+xMSINo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>th.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ELoYH3cHPgTfUlR3qDmpJPEc9h8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2443,29 +1810,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>uk.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/sfZyxu7VVFhRJ47hLNvIuDcpao=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>uk.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>vi.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SBDQCvZaxV9pIDG8g+d0fRJhW0A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2479,15 +1828,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_CN.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/XjSuQsIvdiMEy69H5XARzpi9ds=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>zh_CN.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2497,29 +1837,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh_HK.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uOseTzIffNn81XzsmYnpMu2Xgkk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>zh_HK.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh_TW.lproj/Icefall_Localizable-ICE.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iecsLkx4TKfhJlrY154DOVhB2yY=
 			</data>
 			<key>optional</key>
 			<true/>

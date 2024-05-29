@@ -11,7 +11,13 @@
 #import <PassKit/PKPaymentPass.h>
 #import <PassKit/PKError.h>
 #import <PassKit/PKPassLibrary.h>
+#if __has_include(<PassKit/PKLabeledValue.h>)
+#import <PassKit/PKLabeledValue.h>
+#endif
 #import <PassKit/PKContact.h>
+#if __has_include(<PassKit/PKSuicaPassProperties.h>)
+#import <PassKit/PKSuicaPassProperties.h>
+#endif
 #if __has_include(<PassKit/PKPaymentRequest.h>)
 #import <PassKit/PKPaymentRequest.h>
 #endif

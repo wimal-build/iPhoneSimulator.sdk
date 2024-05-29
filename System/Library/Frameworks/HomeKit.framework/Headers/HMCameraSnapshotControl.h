@@ -8,8 +8,6 @@
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMCameraControl.h>
 
-#import <CoreGraphics/CoreGraphics.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 @class HMCameraSnapshot;
@@ -22,7 +20,7 @@ __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
 @interface HMCameraSnapshotControl : HMCameraControl
 
 /*!
- * @brief Delegate that receives updates on the camera stream changes.
+ * @brief Delegate that receives updates on the camera snapshot changes.
  */
 @property(weak, nonatomic) id<HMCameraSnapshotControlDelegate> delegate;
 
@@ -33,8 +31,6 @@ __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
 
 /*!
  * @brief Takes an image snapshot.
- *
- * @param resolution Desired video resolution of the stream. This parameter is only a suggested resolution.
  */
 - (void)takeSnapshot;
 
@@ -42,7 +38,7 @@ __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
 
 
 /*!
- * @brief This delegate receives updates on the camera stream.
+ * @brief This delegate receives updates on the camera snapshot.
  */
 __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
 @protocol HMCameraSnapshotControlDelegate <NSObject>
@@ -61,6 +57,13 @@ __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
 - (void)cameraSnapshotControl:(HMCameraSnapshotControl *)cameraSnapshotControl
               didTakeSnapshot:(HMCameraSnapshot *__nullable)snapshot
                         error:(NSError *__nullable)error;
+
+/*!
+ * @brief Informs the delegate that the mostRecentSnapshot was updated.
+ *
+ * @param cameraStreamControl Sender of this message.
+ */
+- (void)cameraSnapshotControlDidUpdateMostRecentSnapshot:(HMCameraSnapshotControl *)cameraSnapshotControl;
 
 @end
 
