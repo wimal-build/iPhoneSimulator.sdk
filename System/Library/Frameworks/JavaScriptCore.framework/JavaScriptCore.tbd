@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: F7528F72-3B96-3C8B-97AA-DFBDC16E5187' ]
+uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 93BA607A-EB69-333A-8438-B99D1C1D99C7' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-current-version: 606.1.36
+current-version: 606.2.104
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -101,8 +101,9 @@ exports:
                        __ZN3JSC8Subspace8allocateEm, __ZN3JSC8SubspaceC1EN3WTF7CStringERNS_4HeapENS_19AllocatorAttributesE, 
                        __ZN3JSC8SubspaceC2EN3WTF7CStringERNS_4HeapENS_19AllocatorAttributesE, 
                        __ZN3JSC8Watchdog13terminateSoonEv, __ZN3JSC9ExecState11callerFrameERPNS_12VMEntryFrameE, 
-                       __ZN3JSC9HeapTimer10setRunLoopEP11__CFRunLoop, __ZN3JSC9HeapTimerD0Ev, 
-                       __ZN3JSC9HeapTimerD1Ev, __ZN3JSC9HeapTimerD2Ev, __ZN3JSC9Structure21nonPropertyTransitionERNS_2VMEPS0_NS_21NonPropertyTransitionE, 
+                       __ZN3JSC9ExecState19vmEntryGlobalObjectEv, __ZN3JSC9HeapTimer10setRunLoopEP11__CFRunLoop, 
+                       __ZN3JSC9HeapTimerD0Ev, __ZN3JSC9HeapTimerD1Ev, __ZN3JSC9HeapTimerD2Ev, 
+                       __ZN3JSC9Structure21nonPropertyTransitionERNS_2VMEPS0_NS_21NonPropertyTransitionE, 
                        __ZN3JSC9Structure25changePrototypeTransitionERNS_2VMEPS0_NS_7JSValueE, 
                        __ZN3JSC9Structure33prototypeChainMayInterceptStoreToERNS_2VMENS_12PropertyNameE, 
                        __ZN3JSC9parseDateERNS_2VMERKN3WTF6StringE, __ZN3WTF10ParkingLot11forEachImplERKNS_12ScopedLambdaIFvjPKvEEE, 
@@ -744,8 +745,8 @@ exports:
                        __ZN3JSC8JSObject38putDirectIndexSlowOrBeyondVectorLengthEPNS_9ExecStateEjNS_7JSValueEjNS_18PutDirectIndexModeE, 
                        __ZN3JSC8JSObject40putDirectNativeFunctionWithoutTransitionERNS_2VMEPNS_14JSGlobalObjectERKNS_12PropertyNameEjNS_14NativeFunctionENS_9IntrinsicEj, 
                        __ZN3JSC8JSObject9classNameEPKS0_RNS_2VME, __ZN3JSC8Subspace33parallelNotEmptyMarkedBlockSourceEv, 
-                       __ZN3JSC8SubspaceC2EN3WTF7CStringERNS_4HeapE, __ZN3JSC9ExecState11callerFrameERPNS_10EntryFrameE, 
-                       __ZN3JSC9ExecState18callerSourceOriginEv, __ZN3JSC9JSPromise7resolveERNS_14JSGlobalObjectENS_7JSValueE, 
+                       __ZN3JSC8SubspaceC2EN3WTF7CStringERNS_4HeapE, __ZN3JSC9ExecState18callerSourceOriginEv, 
+                       __ZN3JSC9JSPromise7resolveERNS_14JSGlobalObjectENS_7JSValueE, 
                        __ZN3JSC9Structure25nonPropertyTransitionSlowERNS_2VMEPS0_NS_21NonPropertyTransitionE, 
                        __ZN3JSC9parseDateEPNS_9ExecStateERNS_2VMERKN3WTF6StringE, 
                        __ZN3WTF10ParkingLot11forEachImplERKNS_12ScopedLambdaIFvRNS_6ThreadEPKvEEE, 
@@ -1330,7 +1331,8 @@ exports:
                        __ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_7Network7Metrics8PriorityEEESt8optionalIT_ERKN3WTF6StringE, 
                        __ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_7Network8Response6SourceEEESt8optionalIT_ERKN3WTF6StringE, 
                        __ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_9Recording4TypeEEESt8optionalIT_ERKN3WTF6StringE, 
-                       __ZNK3JSC14FullCodeOrigin4dumpERN3WTF11PrintStreamE, __ZNK3JSC9ClassInfo4dumpERN3WTF11PrintStreamE, 
+                       __ZNK3JSC14FullCodeOrigin4dumpERN3WTF11PrintStreamE, __ZNK3JSC2VM19vmEntryGlobalObjectEPKNS_9ExecStateE, 
+                       __ZNK3JSC9ClassInfo4dumpERN3WTF11PrintStreamE, __ZNK3JSC9ExecState11callerFrameERPNS_10EntryFrameE, 
                        __ZNK3JSC9JSPromise6resultERNS_2VME, __ZNK3JSC9JSPromise6statusERNS_2VME, 
                        __ZNK3JSC9JSPromise9isHandledERNS_2VME, __ZNK3WTF10StackTrace4dumpERNS_11PrintStreamEPKc, 
                        __ZNK3WTF10StringImpl10startsWithEPKcj, __ZNK3WTF10StringImpl10tryGetUtf8ENS_14ConversionModeE, 
@@ -1939,12 +1941,11 @@ exports:
                        __ZN3JSC9CodeBlock19baselineAlternativeEv, __ZN3JSC9CodeBlockD1Ev, 
                        __ZN3JSC9CodeBlockD2Ev, __ZN3JSC9Exception6createERNS_2VMENS_7JSValueENS0_18StackCaptureActionE, 
                        __ZN3JSC9Exception6s_infoE, __ZN3JSC9ExecState10codeOriginEv, 
-                       __ZN3JSC9ExecState13describeFrameEv, __ZN3JSC9ExecState19vmEntryGlobalObjectEv, 
-                       __ZN3JSC9HandleSet12writeBarrierEPNS_7JSValueERKS1_, __ZN3JSC9HandleSet4growEv, 
-                       __ZN3JSC9JSONParseEPNS_9ExecStateERKN3WTF6StringE, __ZN3JSC9JSPromise6s_infoE, 
-                       __ZN3JSC9JSWeakMap6s_infoE, __ZN3JSC9JSWeakSet6s_infoE, __ZN3JSC9Structure14sealTransitionERNS_2VMEPS0_, 
-                       __ZN3JSC9Structure16allocateRareDataERNS_2VME, __ZN3JSC9Structure16freezeTransitionERNS_2VMEPS0_, 
-                       __ZN3JSC9Structure18willStoreValueSlowERNS_2VMENS_12PropertyNameENS_7JSValueEbNS_17InferredTypeTable17StoredPropertyAgeE, 
+                       __ZN3JSC9ExecState13describeFrameEv, __ZN3JSC9HandleSet12writeBarrierEPNS_7JSValueERKS1_, 
+                       __ZN3JSC9HandleSet4growEv, __ZN3JSC9JSONParseEPNS_9ExecStateERKN3WTF6StringE, 
+                       __ZN3JSC9JSPromise6s_infoE, __ZN3JSC9JSWeakMap6s_infoE, __ZN3JSC9JSWeakSet6s_infoE, 
+                       __ZN3JSC9Structure14sealTransitionERNS_2VMEPS0_, __ZN3JSC9Structure16allocateRareDataERNS_2VME, 
+                       __ZN3JSC9Structure16freezeTransitionERNS_2VMEPS0_, __ZN3JSC9Structure18willStoreValueSlowERNS_2VMENS_12PropertyNameENS_7JSValueEbNS_17InferredTypeTable17StoredPropertyAgeE, 
                        __ZN3JSC9Structure21addPropertyTransitionERNS_2VMEPS0_NS_12PropertyNameEjRi, 
                        __ZN3JSC9Structure24addNewPropertyTransitionERNS_2VMEPS0_NS_12PropertyNameEjRiNS_15PutPropertySlot7ContextEPNS_41DeferredStructureTransitionWatchpointFireE, 
                        __ZN3JSC9Structure24materializePropertyTableERNS_2VMEb, __ZN3JSC9Structure25attributeChangeTransitionERNS_2VMEPS0_NS_12PropertyNameEj, 

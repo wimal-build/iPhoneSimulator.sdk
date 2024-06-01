@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: 6D10B63C-78B9-3E8A-8297-67EE0FBFB3CB' ]
+uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: C9C0B972-5616-3213-96C3-8FD355DE0066' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UIKit.framework/UIKit
 current-version: 61000
@@ -1407,10 +1407,10 @@ exports:
                        /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 902194E7-7A55-34ED-956D-7B50D60276A1' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2EF7D401-05E4-3AC1-BF8A-F3700661BC6A' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager
-current-version: 68.100.37
+current-version: 68.100.38
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -1459,10 +1459,10 @@ exports:
                        UIDocumentBrowserViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: 77A2986C-52F7-3689-AE11-D8D26B55F1A2' ]
+uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: 2D96A110-37B9-3FE3-B8D3-52608FF10199' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-current-version: 550.34
+current-version: 552.1
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -1713,7 +1713,7 @@ exports:
                        _NSCachedAttributedString._runs ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9BACC3A5-10C6-3D77-95BC-D9803623BCA7' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2DB941E0-513E-3750-9278-C8AFB85CB3C0' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
 current-version: 61000
@@ -2686,9 +2686,10 @@ exports:
                        _UIPasteboardNameFind, _UIPasteboardNameGeneral, _UIPasteboardOptionExpirationDate, 
                        _UIPasteboardOptionLocalOnly, _UIPasteboardRemovedNotification, 
                        _UIPasteboardTypeAutomatic, _UIPasteboardTypeListColor, _UIPasteboardTypeListImage, 
-                       _UIPasteboardTypeListString, _UIPasteboardTypeListURL, _UIPhoneNumberSuggestionForString, 
-                       _UIPhonePrefixFromNumber, _UIPointAlongLine, _UIPointIntegral, 
-                       _UIPointRoundToScale, _UIPointRoundToViewScale, _UIPresentationControllerDismissalTransitionDidEndNotification, 
+                       _UIPasteboardTypeListString, _UIPasteboardTypeListURL, _UIPencilPreferredTapActionKey, 
+                       _UIPhoneNumberSuggestionForString, _UIPhonePrefixFromNumber, 
+                       _UIPointAlongLine, _UIPointIntegral, _UIPointRoundToScale, 
+                       _UIPointRoundToViewScale, _UIPresentationControllerDismissalTransitionDidEndNotification, 
                        _UIPresentationControllerDismissalTransitionWillBeginNotification, 
                        _UIPresentationControllerPresentationTransitionDidEndNotification, 
                        _UIPresentationControllerPresentationTransitionWillBeginNotification, 
@@ -2875,9 +2876,9 @@ exports:
                        __UIBundleIDIsAccountBased, __UIButtonBarStopImage, __UICanvasDidActivateNotification, 
                        __UICanvasDidConnectNotification, __UICanvasWillDeactivateNotification, 
                        __UICanvasWillDisconnectNotification, __UIClassicApplicationWillChangeZoomNotification, 
-                       __UIClassicControllerScaleFactorForZoomedIn, __UIClassicIsZoomedUserInfoKey, 
-                       __UIContentSizeCategoryCompareToContentSizeCategory, __UIContentSizeCategoryFromString, 
-                       __UIContentSizeCategoryIsAccessibilityContentSizeCategory, 
+                       __UIClassicControllerScaleFactorForZoomedIn, __UIClassicControllerStatusBarInsetsForPadOnRoundedPad, 
+                       __UIClassicIsZoomedUserInfoKey, __UIContentSizeCategoryCompareToContentSizeCategory, 
+                       __UIContentSizeCategoryFromString, __UIContentSizeCategoryIsAccessibilityContentSizeCategory, 
                        __UICreateCGImageFromIOSurfaceWithOptions, __UICreateScreenUIImage, 
                        __UICreateScreenUIImageFromRect, __UICreateScreenUIImageFromRectUnchecked, 
                        __UICreateScreenUIImageFromRectUncheckedWithRotation, __UICreateScreenUIImageFromRectUncheckedWithRotationEnforceSecureMode, 
@@ -2893,7 +2894,9 @@ exports:
                        __UIDynamicAnimationUnitSizeTranslation, __UIEffectiveSourceDataOwnerForReportedDataOwner, 
                        __UIExtensionElectionStateIsIgnore, __UIFocusEngineGestureDidBeginNotification, 
                        __UIFocusSystemEnabledStateDidChangeNotification, __UIFromValueForAnimation, 
-                       __UIGestureRecognizerStateString, __UIGetAnimationCurveSpline, 
+                       __UIGestureRecognizerStateString, __UIGestureStudyInteractionMetadataDeviceOrientation, 
+                       __UIGestureStudyInteractionMetadataHasAttention, __UIGestureStudyInteractionMetadataProximitySensorIsCovered, 
+                       __UIGestureStudyInteractionMetadataTimeSinceWake, __UIGetAnimationCurveSpline, 
                        __UIGetDefaultSpringParameters, __UIGetLookupBackgroundEffect, 
                        __UIGetTintedBackButtonImage, __UIGetTintedCircularButtonDefaultBlueColor, 
                        __UIGetTintedCircularButtonDefaultGreenColor, __UIGetTintedCircularButtonDefaultRedColor, 
@@ -3018,7 +3021,8 @@ exports:
                        __UITraitNamePrimaryInteractionModel, __UITraitNameTouchLevel, 
                        __UITraitNameUserInterfaceIdiom, __UITraitNameUserInterfaceLayoutDirection, 
                        __UITraitNameUserInterfaceStyle, __UITraitNameVerticalSizeClass, 
-                       __UIUseMiniHeightInLandscape, __UIUseModernBars, __UIValidateAccountBasedDelegateRespondsToSelector, 
+                       __UIUseMiniHeightInLandscape, __UIUseModernBars, __UIUserInterfaceSizeClassForHeight, 
+                       __UIUserInterfaceSizeClassForWidth, __UIValidateAccountBasedDelegateRespondsToSelector, 
                        __UIVideoEditorControllerVideoPath, __UIVideoEditorControllerVideoURL, 
                        __UIViewATVButtonVertPaddingForBaselineSpacing, __UIViewBaselineToBaselineSpacing, 
                        __UIViewBaselineToEdgeSpacing, __UIViewConstraints, __UIViewControllerLayoutGuideIdentifierBottom, 
@@ -3032,18 +3036,19 @@ exports:
                        __UIViewInsetsNormalizedToInnerRect, __UIViewReadableWidthForView, 
                        __UIViewResolvedMargins, __UIViewSafeAreaWidthExceedsReadableWidth, 
                        __UIViewScaledSpacing, __UIViewServiceErrorDomain, __UIViewServiceProxyAwaitingReplyErrorDomain, 
-                       __UIViewTopDownSubtreeTraversal, __UIVisualAltitudeFloatAboveSuperview, 
-                       __UIVisualAltitudeLevelWithSuperview, __UIVisualAltitudeOverlayOnSuperview, 
-                       __UIVisualEffectDidEndAlphaTransitionNotification, __UIVisualEffectOptionUseKeyframeWorkaround, 
-                       __UIVisualEffectWillBeginAlphaTransitionNotification, __UIWebDoubleTapAtLocation, 
-                       __UIWebGeolocationPromptInfoDialogAllowButtonTitleKey, __UIWebGeolocationPromptInfoDialogDenyButtonTitleKey, 
-                       __UIWebGeolocationPromptInfoDialogTitleKey, __UIWebRotateToFrame, 
-                       __UIWebTwoFingerDoubleTapAtLocation, __UIWhitePointAdaptivityStyleFromString, 
-                       __UIWhitePointAdaptivityStyleKey, __UIWindowConvertPointFromOrientationToOrientation, 
-                       __UIWindowConvertRectFromOrientationToOrientation, __UIWindowFirstResponderDidChangeNotification, 
-                       __UIWindowFirstResponderUserInfoKey, __UIWindowVisible, __UIWindowWillBecomeKeyNotification, 
-                       ___UIAnimationDragCoefficient, ___UIApplicationLinkedOnOrAfter, 
-                       ___UIFaultDebugAssertLog, ___UIImageCacheKeySentinel, ___UIImageCacheKeyWithSentinel, 
+                       __UIViewSortedConstraintsForDebugging, __UIViewTopDownSubtreeTraversal, 
+                       __UIVisualAltitudeFloatAboveSuperview, __UIVisualAltitudeLevelWithSuperview, 
+                       __UIVisualAltitudeOverlayOnSuperview, __UIVisualEffectDidEndAlphaTransitionNotification, 
+                       __UIVisualEffectOptionUseKeyframeWorkaround, __UIVisualEffectWillBeginAlphaTransitionNotification, 
+                       __UIWebDoubleTapAtLocation, __UIWebGeolocationPromptInfoDialogAllowButtonTitleKey, 
+                       __UIWebGeolocationPromptInfoDialogDenyButtonTitleKey, __UIWebGeolocationPromptInfoDialogTitleKey, 
+                       __UIWebRotateToFrame, __UIWebTwoFingerDoubleTapAtLocation, 
+                       __UIWhitePointAdaptivityStyleFromString, __UIWhitePointAdaptivityStyleKey, 
+                       __UIWindowConvertPointFromOrientationToOrientation, __UIWindowConvertRectFromOrientationToOrientation, 
+                       __UIWindowFirstResponderDidChangeNotification, __UIWindowFirstResponderUserInfoKey, 
+                       __UIWindowVisible, __UIWindowWillBecomeKeyNotification, ___UIAnimationDragCoefficient, 
+                       ___UIApplicationLinkedOnOrAfter, ___UIFaultDebugAssertLog, 
+                       ___UIImageCacheKeySentinel, ___UIImageCacheKeyWithSentinel, 
                        ___UILogGetCategoryCachedImpl, ___UILogGetCategoryImpl, ___UILogIdenticalLayouts, 
                        ___UILogRegulatoryLog, ___UILogSyncCategories, ___UITraitEnvironmentLayoutDirectionFromCUILayoutDirection, 
                        ___UIViewInProcessInProcessAnimationCommitMode, ___UIViewReadableWidthForBodyFont, 
@@ -3163,7 +3168,7 @@ exports:
                        UIOpenInIBooksActivity, UIOpenURLAction, UIPageControl, UIPageController, 
                        UIPageControllerScrollView, UIPageViewController, UIPanGestureRecognizer, 
                        UIPanelBorderView, UIPasscodeField, UIPasteConfiguration, 
-                       UIPasteboard, UIPasteboardOptions, UIPercentDrivenInteractiveTransition, 
+                       UIPasteboard, UIPasteboardOptions, UIPencilInteraction, UIPercentDrivenInteractiveTransition, 
                        UIPeripheralHost, UIPickerContentView, UIPickerView, UIPinchGestureRecognizer, 
                        UIPopoverBackgroundView, UIPopoverController, UIPopoverPresentationController, 
                        UIPresentationController, UIPress, UIPressesEvent, UIPreviewAction, 
@@ -3279,8 +3284,9 @@ exports:
                        _UIFocusItemRegion, _UIFocusLinearMovementSequence, _UIFocusMapRect, 
                        _UIFocusMoveTest, _UIFocusMovementInfo, _UIFocusRegion, _UIFocusSpeedBumpRegion, 
                        _UIFocusSwipeTest, _UIFocusTest, _UIFocusUpdateRequest, _UIForceLevelClassifier, 
-                       _UIFormSheetPresentationController, _UIGlintyStringView, _UIGraphicsLetterpressStyle, 
-                       _UIGroupedBar, _UIHighlightView, _UIHostedWindow, _UIHostedWindowHostingHandle, 
+                       _UIFormSheetPresentationController, _UIGestureStudyInteraction, 
+                       _UIGlintyStringView, _UIGraphicsLetterpressStyle, _UIGroupedBar, 
+                       _UIHighlightView, _UIHostedWindow, _UIHostedWindowHostingHandle, 
                        _UIIdleModeLayoutAttributes, _UIImpactFeedbackGeneratorConfiguration, 
                        _UIItemProviderRepresentationOptions, _UIKeyboardAnimator, 
                        _UIKeyboardChangedInformation, _UIKeyboardFeedbackGenerator, 

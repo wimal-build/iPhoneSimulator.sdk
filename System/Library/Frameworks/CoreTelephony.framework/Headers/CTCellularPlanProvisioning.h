@@ -2,7 +2,7 @@
 //  CTCellularPlanProvisioning.h
 //  CoreTelephony
 //
-//  Copyright © 2018 Apple Inc. All rights reserved.
+//  Copyright (c) 2018 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <CoreTelephony/CoreTelephonyDefines.h>

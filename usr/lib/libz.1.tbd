@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 21BE9505-D81D-3729-83AA-844C0BEEE287', 'x86_64: 1829D440-A461-3F31-831C-31BDD0C49521' ]
+uuids:           [ 'i386: 21BE9505-D81D-3729-83AA-844C0BEEE287', 'x86_64: DF3C6C61-4967-3DA8-BF36-6D9CE3417237' ]
 platform:        ios
 install-name:    /usr/lib/libz.1.dylib
 current-version: 1.2.11

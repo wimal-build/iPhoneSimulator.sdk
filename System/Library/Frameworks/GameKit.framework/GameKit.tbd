@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: E43401D2-F974-3357-B60B-18E9C5116769' ]
+uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: 4BFDBB9F-94B4-3D44-AB12-03BD5F88A167' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/GameKit.framework/GameKit
 current-version: 563.125
@@ -16,7 +16,7 @@ exports:
                        _kGameKitGameKitVersionString ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 62C94408-1B36-3953-BED7-E7182DCD3779', 'x86_64: 14D2B052-ABD8-323E-BF1B-7AEC86FF2372' ]
+uuids:           [ 'i386: 62C94408-1B36-3953-BED7-E7182DCD3779', 'x86_64: 6EF73B78-CB7B-37F7-AFC4-40D2DCB13D1C' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/GameCenter.framework/GameCenter
 current-version: 563.125
@@ -30,7 +30,7 @@ exports:
                        _kGameCenterGameCenterVersionString ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: 41E979C4-AE1C-3E0B-B044-B245C96F5E84' ]
+uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: B6706763-39D1-38AF-BC27-314C15E4ABDB' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation
 objc-constraint: none
@@ -337,7 +337,7 @@ exports:
                        _GKStateMachine._validTransitions ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: A3DF2004-ED4F-3A72-9F4B-39681D01D2C6' ]
+uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: B4DAEB1D-5A4F-357F-A9A6-66A87639D0E0' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI
 objc-constraint: none
@@ -412,7 +412,7 @@ exports:
                        GKUITheme._resourceCache ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: DE47A7A3-7A59-3A9E-9DE6-E7DC10F9E2D7' ]
+uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: C41FA356-8D9D-3544-BF0B-1BB686DD30C0' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit
 objc-constraint: none

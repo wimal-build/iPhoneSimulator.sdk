@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 135F4C14-FA25-3F3A-BE37-2499327D2CE7' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E2E8D814-420B-3D6C-B92A-91B414CAC808' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
-current-version: 121.0.2
+current-version: 121.1.1
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -16,10 +16,10 @@ exports:
                        _MPSSupportsMTLDevice ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4DC4F5BF-C609-3086-BB4A-769F7B033609' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 84BA25A5-1A38-3CFD-B88D-673311ADA8C9' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore
-current-version: 121.0.2
+current-version: 121.1.1
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -90,10 +90,10 @@ exports:
                        MPSVirtualImage ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7C27B9E2-4D74-3180-B1C5-EB485BBD245B' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2E658299-4A80-348C-936F-977798DE20F2' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage
-current-version: 121.0.2
+current-version: 121.1.1
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -124,10 +124,10 @@ exports:
                        MPSImageTranspose, MPSMatrixCopyToImage, MPSUnaryImageKernel ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 992E8A2C-D8D8-3190-9576-2556508BD6D4' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A4B975CF-2604-31DF-A75E-83BD15CC9C31' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix
-current-version: 121.0.2
+current-version: 121.1.1
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -145,10 +145,10 @@ exports:
                        MPSTemporaryMatrix, MPSTemporaryVector, MPSVector, MPSVectorDescriptor ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 455BFCF4-18AF-3AF2-B43B-DA1F7253BFAB' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1FCA6083-69A9-30A2-B428-20050F878748' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork
-current-version: 121.0.2
+current-version: 121.1.1
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -213,30 +213,41 @@ exports:
                        MPSMatrixBatchNormalizationGradient, MPSMatrixFullyConnected, 
                        MPSMatrixFullyConnectedGradient, MPSMatrixNeuron, MPSMatrixNeuronGradient, 
                        MPSMatrixSum, MPSNNAdditionGradientNode, MPSNNAdditionNode, 
-                       MPSNNBilinearScaleNode, MPSNNBinaryGradientStateNode, MPSNNConcatenation, 
-                       MPSNNConcatenationNode, MPSNNCropAndResizeBilinear, MPSNNDefaultPadding, 
-                       MPSNNDivisionNode, MPSNNFilterNode, MPSNNGradientFilterNode, 
-                       MPSNNGradientStateNode, MPSNNGraph, MPSNNImageNode, MPSNNLanczosScaleNode, 
-                       MPSNNMultiplicationGradientNode, MPSNNMultiplicationNode, 
-                       MPSNNNeuronDescriptor, MPSNNOptimizer, MPSNNOptimizerAdam, 
-                       MPSNNOptimizerDescriptor, MPSNNOptimizerRMSProp, MPSNNOptimizerStochasticGradientDescent, 
-                       MPSNNReduceColumnMax, MPSNNReduceColumnMean, MPSNNReduceColumnMin, 
-                       MPSNNReduceColumnSum, MPSNNReduceFeatureChannelsAndWeightsMean, 
-                       MPSNNReduceFeatureChannelsAndWeightsSum, MPSNNReduceFeatureChannelsArgumentMax, 
-                       MPSNNReduceFeatureChannelsArgumentMin, MPSNNReduceFeatureChannelsMax, 
-                       MPSNNReduceFeatureChannelsMean, MPSNNReduceFeatureChannelsMin, 
-                       MPSNNReduceFeatureChannelsSum, MPSNNReduceRowMax, MPSNNReduceRowMean, 
-                       MPSNNReduceRowMin, MPSNNReduceRowSum, MPSNNReshape, MPSNNResizeBilinear, 
+                       MPSNNBilinearScaleNode, MPSNNBinaryGradientStateNode, MPSNNCompare, 
+                       MPSNNComparisonNode, MPSNNConcatenation, MPSNNConcatenationNode, 
+                       MPSNNCropAndResizeBilinear, MPSNNDefaultPadding, MPSNNDivisionNode, 
+                       MPSNNFilterNode, MPSNNGradientFilterNode, MPSNNGradientStateNode, 
+                       MPSNNGraph, MPSNNImageNode, MPSNNLanczosScaleNode, MPSNNMultiplicationGradientNode, 
+                       MPSNNMultiplicationNode, MPSNNNeuronDescriptor, MPSNNOptimizer, 
+                       MPSNNOptimizerAdam, MPSNNOptimizerDescriptor, MPSNNOptimizerRMSProp, 
+                       MPSNNOptimizerStochasticGradientDescent, MPSNNPad, MPSNNPadGradient, 
+                       MPSNNPadGradientNode, MPSNNPadNode, MPSNNReduceColumnMax, 
+                       MPSNNReduceColumnMean, MPSNNReduceColumnMin, MPSNNReduceColumnSum, 
+                       MPSNNReduceFeatureChannelsAndWeightsMean, MPSNNReduceFeatureChannelsAndWeightsSum, 
+                       MPSNNReduceFeatureChannelsArgumentMax, MPSNNReduceFeatureChannelsArgumentMin, 
+                       MPSNNReduceFeatureChannelsMax, MPSNNReduceFeatureChannelsMean, 
+                       MPSNNReduceFeatureChannelsMin, MPSNNReduceFeatureChannelsSum, 
+                       MPSNNReduceRowMax, MPSNNReduceRowMean, MPSNNReduceRowMin, 
+                       MPSNNReduceRowSum, MPSNNReductionColumnMaxNode, MPSNNReductionColumnMeanNode, 
+                       MPSNNReductionColumnMinNode, MPSNNReductionColumnSumNode, 
+                       MPSNNReductionFeatureChannelsArgumentMaxNode, MPSNNReductionFeatureChannelsArgumentMinNode, 
+                       MPSNNReductionFeatureChannelsMaxNode, MPSNNReductionFeatureChannelsMeanNode, 
+                       MPSNNReductionFeatureChannelsMinNode, MPSNNReductionFeatureChannelsSumNode, 
+                       MPSNNReductionRowMaxNode, MPSNNReductionRowMeanNode, MPSNNReductionRowMinNode, 
+                       MPSNNReductionRowSumNode, MPSNNReductionSpatialMeanGradientNode, 
+                       MPSNNReductionSpatialMeanNode, MPSNNReshape, MPSNNReshapeGradient, 
+                       MPSNNReshapeGradientNode, MPSNNReshapeNode, MPSNNResizeBilinear, 
                        MPSNNScaleNode, MPSNNSlice, MPSNNSubtractionGradientNode, 
-                       MPSNNSubtractionNode, MPSRNNDescriptor, MPSRNNImageInferenceLayer, 
-                       MPSRNNMatrixInferenceLayer, MPSRNNMatrixTrainingLayer, MPSRNNMatrixTrainingState, 
-                       MPSRNNRecurrentImageState, MPSRNNRecurrentMatrixState, MPSRNNSingleGateDescriptor ]
+                       MPSNNSubtractionNode, MPSNNUnaryReductionNode, MPSRNNDescriptor, 
+                       MPSRNNImageInferenceLayer, MPSRNNMatrixInferenceLayer, MPSRNNMatrixTrainingLayer, 
+                       MPSRNNMatrixTrainingState, MPSRNNRecurrentImageState, MPSRNNRecurrentMatrixState, 
+                       MPSRNNSingleGateDescriptor ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: AE6CD088-9A0F-303C-995E-5FF11158808F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 45AA6BA3-5F2C-3769-AC60-37F35B6E3647' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector
-current-version: 121.0.2
+current-version: 121.1.1
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         

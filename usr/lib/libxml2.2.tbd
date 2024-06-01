@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A656DB96-F180-3BBE-A13B-92067F4C38C6', 'x86_64: 034B5608-4E85-3266-9C24-981F76BC0B8B' ]
+uuids:           [ 'i386: A656DB96-F180-3BBE-A13B-92067F4C38C6', 'x86_64: 5DF69C71-DC61-38BB-92EA-6A82D38DDE09' ]
 platform:        ios
 install-name:    /usr/lib/libxml2.2.dylib
 current-version: 10.9

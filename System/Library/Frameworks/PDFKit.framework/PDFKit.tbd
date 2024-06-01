@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 47D13F08-6D32-3185-BF31-C9D40A3F3151' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 005792DF-D4BE-3553-8328-F5421F6429A2' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/PDFKit.framework/PDFKit
 objc-constraint: none

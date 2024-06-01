@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B24043A8-EEF0-3EB4-9ABE-F8A1895F1EA3' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8B23CF4F-E749-3AE4-B642-D3FCB83218E4' ]
 platform:        ios
 install-name:    /usr/lib/libSystem.B.dylib
 current-version: 1252.200.5
@@ -35,7 +35,7 @@ exports:
                        _libSystem_atfork_prepare, _mach_init_routine ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AC9701E-3F42-3829-BD24-AF0B40C20845', 'x86_64: D117AADC-1719-3CF3-986F-3548DB4E69F5' ]
+uuids:           [ 'i386: 7AC9701E-3F42-3829-BD24-AF0B40C20845', 'x86_64: FDEC132D-3A69-36F8-AEAF-198512F43CA2' ]
 platform:        ios
 install-name:    /usr/lib/system/libcache.dylib
 current-version: 81
@@ -56,10 +56,10 @@ exports:
                        _cache_value_make_nonpurgeable_cb, _cache_value_make_purgeable_cb ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4ACE1E70-E6F5-3DFC-A8AD-6484E1C9BA9C', 'x86_64: F636801B-58ED-3F06-857A-57F7FEC7472D' ]
+uuids:           [ 'i386: 4ACE1E70-E6F5-3DFC-A8AD-6484E1C9BA9C', 'x86_64: 0F0D3DE4-E247-35E4-A905-B92D574BECC9' ]
 platform:        ios
 install-name:    /usr/lib/system/libcommonCrypto.dylib
-current-version: 60118.200.6
+current-version: 60118.220.1
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -131,7 +131,7 @@ exports:
                        _kCCRandomDefault, _kCCRandomDevRandom ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0DDBD7DA-B601-3D90-9960-0FA44B980F4D', 'x86_64: 964F83B9-E2D9-390D-BFC5-4F3FF63B0DAD' ]
+uuids:           [ 'i386: 0DDBD7DA-B601-3D90-9960-0FA44B980F4D', 'x86_64: A1CD3551-4658-3FD9-BF90-D1D77CE37B81' ]
 platform:        ios
 install-name:    /usr/lib/system/libcompiler_rt.dylib
 current-version: 63.2
@@ -304,7 +304,7 @@ exports:
                        _atomic_signal_fence, _atomic_thread_fence, _vers ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00ADAD73-89CA-3C79-BB5B-8BC020077ABC', 'x86_64: EEE54053-F9A3-3490-8E75-9E68680AE526' ]
+uuids:           [ 'i386: 00ADAD73-89CA-3C79-BB5B-8BC020077ABC', 'x86_64: BCC72CCC-82B6-3441-9894-2193E7EE30FC' ]
 platform:        ios
 install-name:    /usr/lib/system/libcopyfile.dylib
 objc-constraint: none
@@ -317,10 +317,10 @@ exports:
                        _xattr_name_with_flags, _xattr_name_without_flags, _xattr_preserve_for_intent ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A63A9FF4-7120-3068-855B-67664E399969', 'x86_64: B2F4C05C-CF14-3E03-93D4-3481F752A3F1' ]
+uuids:           [ 'i386: A63A9FF4-7120-3068-855B-67664E399969', 'x86_64: 39BACA1B-A171-326F-911D-E68994A6E615' ]
 platform:        ios
 install-name:    /usr/lib/system/libcorecrypto.dylib
-current-version: 602.200.50
+current-version: 602.220.6
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -464,39 +464,40 @@ exports:
                        _ccrc4, _ccrc4_eay, _ccrmd128_ltc_di, _ccrmd160_ltc_di, _ccrmd256_ltc_di, 
                        _ccrmd320_ltc_di, _ccrng, _ccrng_drbg_done, _ccrng_drbg_init, 
                        _ccrng_drbg_reseed, _ccrng_ecfips_test_init, _ccrng_pbkdf2_prng_init, 
-                       _ccrng_rsafips_test_init, _ccrng_sequence_init, _ccrng_system_done, 
-                       _ccrng_system_init, _ccrng_test_done, _ccrng_test_init, _ccrsa_crt_makekey, 
-                       _ccrsa_decrypt_eme_pkcs1v15, _ccrsa_decrypt_eme_pkcs1v15_blinded, 
-                       _ccrsa_decrypt_oaep, _ccrsa_decrypt_oaep_blinded, _ccrsa_dump_full_key, 
-                       _ccrsa_dump_public_key, _ccrsa_eme_pkcs1v15_decode, _ccrsa_eme_pkcs1v15_encode, 
-                       _ccrsa_emsa_pkcs1v15_encode, _ccrsa_emsa_pkcs1v15_verify, 
-                       _ccrsa_emsa_pss_decode, _ccrsa_emsa_pss_encode, _ccrsa_encrypt_eme_pkcs1v15, 
-                       _ccrsa_encrypt_oaep, _ccrsa_export_pub, _ccrsa_generate_fips186_key, 
-                       _ccrsa_generate_fips186_key_trace, _ccrsa_generate_key, _ccrsa_get_fullkey_components, 
-                       _ccrsa_get_pubkey_components, _ccrsa_import_pub, _ccrsa_init_pub, 
-                       _ccrsa_make_fips186_key, _ccrsa_make_fips186_key_trace, _ccrsa_make_pub, 
-                       _ccrsa_oaep_decode_parameter, _ccrsa_oaep_encode_parameter, 
-                       _ccrsa_priv_crypt, _ccrsa_priv_crypt_blinded, _ccrsa_pub_crypt, 
-                       _ccrsa_sign_pkcs1v15, _ccrsa_sign_pkcs1v15_blinded, _ccrsa_sign_pss, 
-                       _ccrsa_sign_pss_blinded, _ccrsa_verify_pkcs1v15, _ccrsa_verify_pkcs1v15_allowshortsigs, 
-                       _ccrsa_verify_pss, _ccsha1_di, _ccsha1_eay_di, _ccsha1_ltc_di, 
-                       _ccsha1_vng_intel_SupplementalSSE3_di, _ccsha224_di, _ccsha224_ltc_di, 
-                       _ccsha224_vng_intel_SupplementalSSE3_di, _ccsha256_di, _ccsha256_ltc_di, 
-                       _ccsha256_vng_intel_SupplementalSSE3_di, _ccsha384_di, _ccsha384_ltc_di, 
-                       _ccsha512_di, _ccsha512_ltc_di, _ccsrp_client_process_challenge, 
-                       _ccsrp_client_start_authentication, _ccsrp_client_verify_session, 
-                       _ccsrp_generate_salt_and_verification, _ccsrp_generate_verifier, 
-                       _ccsrp_gp_rfc5054_1024, _ccsrp_gp_rfc5054_2048, _ccsrp_gp_rfc5054_3072, 
-                       _ccsrp_gp_rfc5054_4096, _ccsrp_gp_rfc5054_8192, _ccsrp_server_compute_session, 
-                       _ccsrp_server_generate_public_key, _ccsrp_server_start_authentication, 
-                       _ccsrp_server_verify_session, _ccsrp_test_calculations, _ccwrap_auth_decrypt, 
-                       _ccwrap_auth_encrypt, _ccwrap_unwrapped_size, _ccwrap_wrapped_size, 
-                       _ccxts_one_shot, _ccz_add, _ccz_addi, _ccz_bit, _ccz_bitlen, 
-                       _ccz_cmp, _ccz_cmpi, _ccz_divmod, _ccz_expmod, _ccz_free, 
-                       _ccz_gcd, _ccz_init, _ccz_invmod, _ccz_is_negative, _ccz_is_one, 
-                       _ccz_is_prime, _ccz_is_zero, _ccz_lcm, _ccz_lprint, _ccz_lsl, 
-                       _ccz_lsr, _ccz_mod, _ccz_mul, _ccz_muli, _ccz_mulmod, _ccz_neg, 
-                       _ccz_print, _ccz_random_bits, _ccz_read_radix, _ccz_read_uint, 
+                       _ccrng_rsafips_test_init, _ccrng_rsafips_test_set_next, _ccrng_sequence_init, 
+                       _ccrng_system_done, _ccrng_system_init, _ccrng_test_done, 
+                       _ccrng_test_init, _ccrsa_crt_makekey, _ccrsa_decrypt_eme_pkcs1v15, 
+                       _ccrsa_decrypt_eme_pkcs1v15_blinded, _ccrsa_decrypt_oaep, 
+                       _ccrsa_decrypt_oaep_blinded, _ccrsa_dump_full_key, _ccrsa_dump_public_key, 
+                       _ccrsa_eme_pkcs1v15_decode, _ccrsa_eme_pkcs1v15_encode, _ccrsa_emsa_pkcs1v15_encode, 
+                       _ccrsa_emsa_pkcs1v15_verify, _ccrsa_emsa_pss_decode, _ccrsa_emsa_pss_encode, 
+                       _ccrsa_encrypt_eme_pkcs1v15, _ccrsa_encrypt_oaep, _ccrsa_export_pub, 
+                       _ccrsa_generate_fips186_key, _ccrsa_generate_fips186_key_trace, 
+                       _ccrsa_generate_key, _ccrsa_get_fullkey_components, _ccrsa_get_pubkey_components, 
+                       _ccrsa_import_pub, _ccrsa_init_pub, _ccrsa_make_fips186_key, 
+                       _ccrsa_make_fips186_key_trace, _ccrsa_make_pub, _ccrsa_oaep_decode_parameter, 
+                       _ccrsa_oaep_encode_parameter, _ccrsa_priv_crypt, _ccrsa_priv_crypt_blinded, 
+                       _ccrsa_pub_crypt, _ccrsa_sign_pkcs1v15, _ccrsa_sign_pkcs1v15_blinded, 
+                       _ccrsa_sign_pss, _ccrsa_sign_pss_blinded, _ccrsa_verify_pkcs1v15, 
+                       _ccrsa_verify_pkcs1v15_allowshortsigs, _ccrsa_verify_pss, 
+                       _ccsha1_di, _ccsha1_eay_di, _ccsha1_ltc_di, _ccsha1_vng_intel_SupplementalSSE3_di, 
+                       _ccsha224_di, _ccsha224_ltc_di, _ccsha224_vng_intel_SupplementalSSE3_di, 
+                       _ccsha256_di, _ccsha256_ltc_di, _ccsha256_vng_intel_SupplementalSSE3_di, 
+                       _ccsha384_di, _ccsha384_ltc_di, _ccsha512_di, _ccsha512_ltc_di, 
+                       _ccsrp_client_process_challenge, _ccsrp_client_start_authentication, 
+                       _ccsrp_client_verify_session, _ccsrp_generate_salt_and_verification, 
+                       _ccsrp_generate_verifier, _ccsrp_gp_rfc5054_1024, _ccsrp_gp_rfc5054_2048, 
+                       _ccsrp_gp_rfc5054_3072, _ccsrp_gp_rfc5054_4096, _ccsrp_gp_rfc5054_8192, 
+                       _ccsrp_server_compute_session, _ccsrp_server_generate_public_key, 
+                       _ccsrp_server_start_authentication, _ccsrp_server_verify_session, 
+                       _ccsrp_test_calculations, _ccwrap_auth_decrypt, _ccwrap_auth_decrypt_withiv, 
+                       _ccwrap_auth_encrypt, _ccwrap_auth_encrypt_withiv, _ccwrap_unwrapped_size, 
+                       _ccwrap_wrapped_size, _ccxts_one_shot, _ccz_add, _ccz_addi, 
+                       _ccz_bit, _ccz_bitlen, _ccz_cmp, _ccz_cmpi, _ccz_divmod, _ccz_expmod, 
+                       _ccz_free, _ccz_gcd, _ccz_init, _ccz_invmod, _ccz_is_negative, 
+                       _ccz_is_one, _ccz_is_prime, _ccz_is_zero, _ccz_lcm, _ccz_lprint, 
+                       _ccz_lsl, _ccz_lsr, _ccz_mod, _ccz_mul, _ccz_muli, _ccz_mulmod, 
+                       _ccz_neg, _ccz_print, _ccz_random_bits, _ccz_read_radix, _ccz_read_uint, 
                        _ccz_set, _ccz_set_bit, _ccz_seti, _ccz_size, _ccz_sqr, _ccz_sqrmod, 
                        _ccz_sub, _ccz_subi, _ccz_trailing_zeros, _ccz_write_int, 
                        _ccz_write_int_size, _ccz_write_radix, _ccz_write_radix_size, 
@@ -506,10 +507,10 @@ exports:
                        _fipspost_post, _fipspost_trace_vtable ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0F904697-8E4C-3B70-8658-A7D5973409AA', 'x86_64: 4DE4FC4C-91B8-34CE-B0F6-6F1C8EABA102' ]
+uuids:           [ 'i386: 0F904697-8E4C-3B70-8658-A7D5973409AA', 'x86_64: 3A776B57-01CC-3558-80C8-1D6DAF4930E0' ]
 platform:        ios
 install-name:    /usr/lib/system/libdispatch.dylib
-current-version: 1008.200.78
+current-version: 1008.220.2
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -634,10 +635,10 @@ exports:
                        OS_dispatch_workloop, OS_object, OS_voucher ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6510E287-0ABF-32FD-9AC5-5CF2BF1137F8', 'x86_64: 6F11C511-22B0-31B0-9063-2F4E42387E84' ]
+uuids:           [ 'i386: 6510E287-0ABF-32FD-9AC5-5CF2BF1137F8', 'x86_64: CB1815CE-5E9E-35C2-B530-1FD5980839DA' ]
 platform:        ios
 install-name:    /usr/lib/system/libdyld.dylib
-current-version: 625.11.5
+current-version: 631.1
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -674,10 +675,10 @@ exports:
                        _environ, dyld_stub_binder ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DCB66768-50DF-33C0-9B93-2863273F0C78', 'x86_64: EAF4A2E5-15B4-3513-AF2B-6664D1B89A3D' ]
+uuids:           [ 'i386: DCB66768-50DF-33C0-9B93-2863273F0C78', 'x86_64: A895554E-A2CE-3BF3-9BEE-B832CF0E2705' ]
 platform:        ios
 install-name:    /usr/lib/system/liblaunch.dylib
-current-version: 1336.200.98
+current-version: 1336.220.5
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -724,7 +725,7 @@ exports:
                        _vproc_transaction_end, _vprocmgr_lookup_vproc ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 25811EB3-E68D-385F-B1C5-9356057F0E02', 'x86_64: F6193EDC-2DE5-381C-B946-AF7AB94CAD98' ]
+uuids:           [ 'i386: 25811EB3-E68D-385F-B1C5-9356057F0E02', 'x86_64: 0F2D221C-F375-393D-9A28-5D173CF9C7FA' ]
 platform:        ios
 install-name:    /usr/lib/system/libmacho.dylib
 current-version: 918.1.1
@@ -772,7 +773,7 @@ exports:
                        _swap_x86_thread_state64 ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B01EFDA0-DAC7-3012-8BE7-21AC3885B753', 'x86_64: 9DA69CCF-1A8E-39BC-A29B-F3CBF6552EC6' ]
+uuids:           [ 'i386: B01EFDA0-DAC7-3012-8BE7-21AC3885B753', 'x86_64: 6553373E-68F5-3854-A27E-2C28C33FE9DB' ]
 platform:        ios
 install-name:    /usr/lib/system/libremovefile.dylib
 current-version: 45.200.2
@@ -787,7 +788,7 @@ exports:
                        _removefile_state_free, _removefile_state_get, _removefile_state_set ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: BF84113B-046D-35A0-B62D-C957CF69CFE6', 'x86_64: F775277A-BD07-30D5-882A-8EBB67D86627' ]
+uuids:           [ 'i386: BF84113B-046D-35A0-B62D-C957CF69CFE6', 'x86_64: BA255D00-E146-339F-88DF-E8773A55C00A' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_asl.dylib
 current-version: 356.200.4
@@ -867,7 +868,7 @@ exports:
                        _setlogmask, _syslog, _vsyslog ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D780BB92-A01C-34F4-B25E-F21600EB5D66', 'x86_64: 4098F8D2-10ED-3D0A-AD56-EBD51649D574' ]
+uuids:           [ 'i386: D780BB92-A01C-34F4-B25E-F21600EB5D66', 'x86_64: 03604E2C-1791-3C18-92BF-A2319F4AC310' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_blocks.dylib
 current-version: 73
@@ -884,7 +885,7 @@ exports:
                        __NSConcreteStackBlock, __NSConcreteWeakBlockVariable ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8905BA62-494B-3D96-8CDC-452DC631FFA5', 'x86_64: 21E84D3C-3578-39A9-B062-FFA19BF0FC0E' ]
+uuids:           [ 'i386: 8905BA62-494B-3D96-8CDC-452DC631FFA5', 'x86_64: B850D2C9-EB00-3525-A05B-58613C33C244' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_c.dylib
 current-version: 1272.200.26
@@ -1166,7 +1167,7 @@ exports:
                        _wscanf, _wscanf_l, _wtmpxname, _xprintf, _xprintf_exec, mcount ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E588984C-360F-3688-865B-12F7A82577B5', 'x86_64: 80911E5E-FD2F-31D9-985E-C1CFAA09E99D' ]
+uuids:           [ 'i386: E588984C-360F-3688-865B-12F7A82577B5', 'x86_64: 068B56DC-B6D4-3F8D-ACF7-9AA05085C1B0' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_configuration.dylib
 current-version: 963.200.27
@@ -1187,7 +1188,7 @@ exports:
                        _nwi_state_get_reachability_flags, _nwi_state_release ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1F3BC52A-54CF-3FB5-99AA-7FF97CA592A3', 'x86_64: 3A8E9599-EBDB-34F5-839D-071FD20A665E' ]
+uuids:           [ 'i386: 1F3BC52A-54CF-3FB5-99AA-7FF97CA592A3', 'x86_64: EA4D94D1-E662-3292-825D-C7C492C835D2' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_containermanager.dylib
 objc-constraint: none
@@ -1228,7 +1229,7 @@ exports:
                        _container_user_managed_assets_relative_path ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 514806F5-7669-3C78-9614-2A3A7CA78F4E', 'x86_64: 96190E6D-9C42-3C6C-A640-FFAD32E57916' ]
+uuids:           [ 'i386: 514806F5-7669-3C78-9614-2A3A7CA78F4E', 'x86_64: 9AFED38C-2158-36A2-ACB5-9229385F9C6C' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_coreservices.dylib
 current-version: 65
@@ -1245,7 +1246,7 @@ exports:
                        _sysdir_start_search_path_enumeration, _sysdir_start_search_path_enumeration_private ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7F2120ED-62D2-3A40-BDC5-B7BFCB88003E' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5999445D-3773-3101-9CA6-5899037FDA1D' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_darwin.dylib
 objc-constraint: none
@@ -1267,7 +1268,7 @@ exports:
                        _verr_np, _verrc_np, _vwarn_np, _warn_np, _zsnprintf_np ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9BD2C371-FBE1-389A-AFA6-0AE129F510CF', 'x86_64: 2E15C0CC-A43A-30DE-8824-A356FC575399' ]
+uuids:           [ 'i386: 9BD2C371-FBE1-389A-AFA6-0AE129F510CF', 'x86_64: 27526F93-BBD1-314A-95BA-0D52C36DBDBB' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_dnssd.dylib
 current-version: 878.200.35
@@ -1296,7 +1297,7 @@ exports:
                        _TXTRecordSetValue ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B444B89A-A4C0-365F-9A20-9D51844DDB4F', 'x86_64: E5E9B858-1209-3D24-99F2-B701019F5022' ]
+uuids:           [ 'i386: B444B89A-A4C0-365F-9A20-9D51844DDB4F', 'x86_64: 07391A3E-5052-35B5-A527-D21ADEDEFDFF' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_info.dylib
 objc-constraint: none
@@ -1868,7 +1869,7 @@ exports:
                        _work_interval_notify_simple, _write, _writev ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 526494EB-5D11-369E-A63D-A1B45773DDDE', 'x86_64: 21FCE15C-CB4A-3C83-9FEA-F86B19377036' ]
+uuids:           [ 'i386: 526494EB-5D11-369E-A63D-A1B45773DDDE', 'x86_64: D3ECE698-27FB-3860-A2B0-9868BED01040' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_m.dylib
 current-version: 3158.200.7
@@ -1953,10 +1954,10 @@ exports:
                        _tgammaf, _tgammal, _trunc, _truncf, _truncl, _y0, _y1, _yn ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3005CDAF-88F0-38C0-A28F-841F518EBA97', 'x86_64: 54BF1F59-9B24-31FE-8333-FCA68C6F2B62' ]
+uuids:           [ 'i386: 3005CDAF-88F0-38C0-A28F-841F518EBA97', 'x86_64: 2E256A7F-BBFC-3619-AC9B-B54B7D1723D5' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_malloc.dylib
-current-version: 166.200.60
+current-version: 166.220.1
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -2022,7 +2023,7 @@ exports:
                        _turn_on_stack_logging, _valloc, _vfree, _zeroify_scalable_zone ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 22BB0ADE-3A6E-343A-88FD-94F0C11E5867', 'x86_64: 50086943-60B6-3A23-BDBB-516A7E0DE20E' ]
+uuids:           [ 'i386: 22BB0ADE-3A6E-343A-88FD-94F0C11E5867', 'x86_64: 59AC35A0-1B40-3277-95A7-99BD88DEA1BE' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_notify.dylib
 current-version: 172.200.21
@@ -2228,10 +2229,10 @@ exports:
                        _thread_start ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B4F5DA93-46B1-37CD-A078-14726323EE36', 'x86_64: F31C92B9-D333-356E-AA6F-472EDE4343DE' ]
+uuids:           [ 'i386: B4F5DA93-46B1-37CD-A078-14726323EE36', 'x86_64: 58259566-7CD3-3B66-8516-5F2B5560BEDF' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sandbox.dylib
-current-version: 851.200.150
+current-version: 851.220.9
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -2284,7 +2285,7 @@ exports:
                        _sandbox_suspend, _sandbox_unsuspend ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CAA59D7B-F145-3FCC-B899-186B85E2A7ED', 'x86_64: 498A80DB-6E1D-3C35-B176-2A670BA0DCD5' ]
+uuids:           [ 'i386: CAA59D7B-F145-3FCC-B899-186B85E2A7ED', 'x86_64: 01F491FD-CF4F-3A51-A081-42073C2D2D3D' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sim_kernel.dylib
 current-version: 193.200.9
@@ -2331,7 +2332,7 @@ exports:
                        _work_interval_instance_start, _work_interval_instance_update ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6B9C8FC8-90B5-3CB2-AA12-81A1A629C25E', 'x86_64: 68D03B9D-5AA6-31E7-AE28-6C724E31BCD8' ]
+uuids:           [ 'i386: 6B9C8FC8-90B5-3CB2-AA12-81A1A629C25E', 'x86_64: 01CF8A44-8C01-3401-BAE9-74FFCBA563BB' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sim_kernel_host.dylib
 current-version: 193.200.9
@@ -2376,7 +2377,7 @@ exports:
                        ___interposition_sim_system_work_interval_instance_update ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 207D9CF8-C3D5-3B1F-9A9E-021F167FFFAA', 'x86_64: E7A9448B-FBC6-307C-BBB0-A9F8FAF57072' ]
+uuids:           [ 'i386: 207D9CF8-C3D5-3B1F-9A9E-021F167FFFAA', 'x86_64: 3E3F0852-1757-34D8-881C-03BB40653D98' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sim_platform.dylib
 current-version: 193.200.9
@@ -2403,7 +2404,7 @@ exports:
                        _os_unfair_recursive_lock_tryunlock4objc, _os_unfair_recursive_lock_unlock ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C2CE4D3C-B55D-349C-8EB2-7A71E4EDBD15', 'x86_64: 62731E44-01CF-37B0-A15B-483C16E795CE' ]
+uuids:           [ 'i386: C2CE4D3C-B55D-349C-8EB2-7A71E4EDBD15', 'x86_64: D37C3F61-4F05-387A-BB48-EA2E85599AFA' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sim_platform_host.dylib
 current-version: 193.200.9
@@ -2438,7 +2439,7 @@ exports:
                        ___interposition_sim_system_os_unfair_recursive_lock_unlock ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C7755093-B451-3759-B503-6484CF0D99C2', 'x86_64: 369990AC-4CC3-38AD-8EA3-5A2434D6F043' ]
+uuids:           [ 'i386: C7755093-B451-3759-B503-6484CF0D99C2', 'x86_64: ED949D92-5CC0-320B-AAD1-2124C4AEB783' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sim_pthread.dylib
 current-version: 193.200.9
@@ -2464,7 +2465,7 @@ exports:
                        _pthread_dependency_wait_np, _pthread_stack_frame_decode_np ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D6773FC8-D925-3922-BE8B-789BE35DDC27', 'x86_64: DF6488D4-3D48-3ED2-83B4-9BB01BF6F04D' ]
+uuids:           [ 'i386: D6773FC8-D925-3922-BE8B-789BE35DDC27', 'x86_64: BAF49FBD-BEAB-35F7-B4F8-166AE7FC1A79' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_sim_pthread_host.dylib
 current-version: 193.200.9
@@ -2485,10 +2486,10 @@ exports:
                        ___interposition_sim_system_pthread_stack_frame_decode_np ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AAE3FBF7-06A6-3E8B-B227-4F2966E704AC', 'x86_64: AF30E669-048A-3D6D-A6E1-BA624E9586CD' ]
+uuids:           [ 'i386: AAE3FBF7-06A6-3E8B-B227-4F2966E704AC', 'x86_64: 29B76846-8833-3F8D-B3FF-ECB62CBD5AE1' ]
 platform:        ios
 install-name:    /usr/lib/system/libsystem_trace.dylib
-current-version: 906.200.86
+current-version: 906.220.1
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -2545,10 +2546,10 @@ exports:
     objc-classes:    [ OS_os_log ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6D3D8BDA-B543-32B4-B118-A646F2688187', 'x86_64: 6E44D882-2C32-32AE-9281-B1C0C45FB8F3' ]
+uuids:           [ 'i386: 6D3D8BDA-B543-32B4-B118-A646F2688187', 'x86_64: 3C1434B3-315E-31B8-A164-685D139706B7' ]
 platform:        ios
 install-name:    /usr/lib/system/libunwind.dylib
-current-version: 128.1
+current-version: 128.2
 objc-constraint: none
 parent-umbrella: System
 exports:         
@@ -2568,10 +2569,10 @@ exports:
                        _unw_regname, _unw_resume, _unw_set_fpreg, _unw_set_reg, _unw_step ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 44A745E0-1D73-3560-AC8C-3660040A82E3', 'x86_64: 28B7F54A-6A8C-33A0-BA46-FFA5278B041E' ]
+uuids:           [ 'i386: 44A745E0-1D73-3560-AC8C-3660040A82E3', 'x86_64: F7D4B188-D5C2-3E5E-BB76-BC7C6A368166' ]
 platform:        ios
 install-name:    /usr/lib/system/libxpc.dylib
-current-version: 1336.200.98
+current-version: 1336.220.5
 objc-constraint: none
 parent-umbrella: System
 exports:         

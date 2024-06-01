@@ -368,3 +368,7 @@
 #if __has_include(<UIKit/UIFocusMovementHint.h>)
 #import <UIKit/UIFocusMovementHint.h>
 #endif
+
+#if __has_include(<UIKit/UIPencilInteraction.h>)
+    #import <UIKit/UIPencilInteraction.h>
+#endif

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 98F02F7F-3BDC-3033-9920-563D8C4197E6' ]
+uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 1D4BD427-F0E7-33C5-9CE7-A6325B50FB6E' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Contacts.framework/Contacts
 current-version: 0
@@ -124,17 +124,18 @@ exports:
                        CNDataMapperContactStore, CNDate, CNDatesDescription, CNDepartmentDescription, 
                        CNDraggingContact, CNEmailAddressesDescription, CNErrorFactory, 
                        CNFamilyNameDescription, CNFavorites, CNFavoritesEntry, CNFavoritesLookupChangeRecord, 
-                       CNFullscreenImageDataDescription, CNGeminiHandle, CNGeminiManager, 
-                       CNGivenNameDescription, CNGroup, CNIOSLegacyIdentifierDescription, 
-                       CNImageDataAvailableDescription, CNImageDataDescription, CNIndexRequestHandler, 
-                       CNInstantMessageAddress, CNInstantMessageAddressesDescription, 
-                       CNInternalIdentifierDescription, CNJobTitleDescription, CNLabeledValue, 
-                       CNLaunchServicesRemoteAdapter, CNLinkIdentifierDescription, 
-                       CNMapsDataDescription, CNMiddleNameDescription, CNModificationDateDescription, 
-                       CNMultiValuePropertyDescription, CNMutableContact, CNMutableContactKeyVector, 
-                       CNMutableContainer, CNMutableGroup, CNMutableInstantMessageAddress, 
-                       CNMutablePostalAddress, CNMutableSocialProfile, CNNamePrefixDescription, 
-                       CNNameSuffixDescription, CNNicknameNameDescription, CNNonGregorianBirthdayDescription, 
+                       CNFullscreenImageDataDescription, CNGeminiChannel, CNGeminiHandle, 
+                       CNGeminiManager, CNGeminiResult, CNGivenNameDescription, CNGroup, 
+                       CNIOSLegacyIdentifierDescription, CNImageDataAvailableDescription, 
+                       CNImageDataDescription, CNIndexRequestHandler, CNInstantMessageAddress, 
+                       CNInstantMessageAddressesDescription, CNInternalIdentifierDescription, 
+                       CNJobTitleDescription, CNLabeledValue, CNLaunchServicesRemoteAdapter, 
+                       CNLinkIdentifierDescription, CNMapsDataDescription, CNMiddleNameDescription, 
+                       CNModificationDateDescription, CNMultiValuePropertyDescription, 
+                       CNMutableContact, CNMutableContactKeyVector, CNMutableContainer, 
+                       CNMutableGroup, CNMutableInstantMessageAddress, CNMutablePostalAddress, 
+                       CNMutableSocialProfile, CNNamePrefixDescription, CNNameSuffixDescription, 
+                       CNNicknameNameDescription, CNNonGregorianBirthdayDescription, 
                        CNNoteDescription, CNOrganizationNameDescription, CNPerContactPropertyKeyDescriptor, 
                        CNPermissivePolicy, CNPhoneNumber, CNPhoneNumbersDescription, 
                        CNPhonemeDataDescription, CNPhoneticFamilyNameDescription, 

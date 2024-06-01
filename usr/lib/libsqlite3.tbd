@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 575F3B50-29F6-3FD9-BEDE-3012236CF907', 'x86_64: C4955D6D-2DA8-38B7-A4F5-4BDE83117B3A' ]
+uuids:           [ 'i386: 575F3B50-29F6-3FD9-BEDE-3012236CF907', 'x86_64: 7F03A889-6A68-3B38-8DA2-2E9069461504' ]
 platform:        ios
 install-name:    /usr/lib/libsqlite3.dylib
 current-version: 274.20

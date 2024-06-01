@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: 3B711BB4-DED3-3EC6-A161-1F3716F3761F' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: F9B77517-0334-3E7F-BB96-DC210FA1808D' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/WebKit.framework/WebKit
-current-version: 606.1.36
+current-version: 606.2.104
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -810,10 +810,10 @@ exports:
                        _WKWebsiteDataStoreConfiguration, _WKWebsitePolicies ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: 3F8F99EC-B9A2-31D7-83AB-C4B80CFE58AB' ]
+uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: D8EB9F73-F18F-38A2-BC27-777C1BDC10FB' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy
-current-version: 606.1.36
+current-version: 606.2.104
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

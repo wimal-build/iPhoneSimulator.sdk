@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: 93D872EE-F849-3339-A830-57007F9A2D37' ]
+uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: A9FA11AC-AF9C-31A3-8CFE-95D9159B8B29' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Security.framework/Security
-current-version: 58286.202.3
+current-version: 58286.222.2
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -759,9 +759,10 @@ exports:
                        _kSecAttrAccessGroupToken, _kSecAttrAccessible, _kSecAttrAccessibleAfterFirstUnlock, 
                        _kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly, _kSecAttrAccessibleAlways, 
                        _kSecAttrAccessibleAlwaysPrivate, _kSecAttrAccessibleAlwaysThisDeviceOnly, 
-                       _kSecAttrAccessibleAlwaysThisDeviceOnlyPrivate, _kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly, 
-                       _kSecAttrAccessibleWhenUnlocked, _kSecAttrAccessibleWhenUnlockedThisDeviceOnly, 
-                       _kSecAttrAccount, _kSecAttrAddress, _kSecAttrAlias, _kSecAttrApplicationLabel, 
+                       _kSecAttrAccessibleAlwaysThisDeviceOnlyPrivate, _kSecAttrAccessibleUntilReboot, 
+                       _kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly, _kSecAttrAccessibleWhenUnlocked, 
+                       _kSecAttrAccessibleWhenUnlockedThisDeviceOnly, _kSecAttrAccount, 
+                       _kSecAttrAddress, _kSecAttrAlias, _kSecAttrApplicationLabel, 
                        _kSecAttrApplicationTag, _kSecAttrAuthenticationType, _kSecAttrAuthenticationTypeDPA, 
                        _kSecAttrAuthenticationTypeDefault, _kSecAttrAuthenticationTypeHTMLForm, 
                        _kSecAttrAuthenticationTypeHTTPBasic, _kSecAttrAuthenticationTypeHTTPDigest, 

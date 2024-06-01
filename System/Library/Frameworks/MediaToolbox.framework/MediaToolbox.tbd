@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: 0A81C5BE-8EBD-36E3-AC90-1E3AED7FF004' ]
+uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: 3D297362-A0FA-31CD-9C64-3EE8C94FFF52' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
 objc-constraint: none
@@ -909,13 +909,14 @@ exports:
                        _kFigAudioQueueOfflineMixerProperty_ThrottleForBackground, 
                        _kFigAudioQueueOfflineMixerProperty_TimelineMilestone, _kFigAudioQueueOfflineMixerTimelineMilestoneParameter_TimeStamp, 
                        _kFigAudioQueueOfflineMixerTimelineMilestonePassed, _kFigAudioQueuePlayResourceReleased, 
-                       _kFigAudioQueueProperty_AllowedToUseHardware, _kFigAudioQueueProperty_AudioCurveRampStyle, 
-                       _kFigAudioQueueProperty_AudioCurves, _kFigAudioQueueProperty_AudioDynamicRangeCompression, 
-                       _kFigAudioQueueProperty_AudioProcessingTap, _kFigAudioQueueProperty_AudioSessionID, 
-                       _kFigAudioQueueProperty_ClientName, _kFigAudioQueueProperty_Clock, 
-                       _kFigAudioQueueProperty_ClockDevice, _kFigAudioQueueProperty_CodecProgramTargetLevel, 
-                       _kFigAudioQueueProperty_DeviceChannelMap, _kFigAudioQueueProperty_DeviceUID, 
-                       _kFigAudioQueueProperty_DiscardSampleBuffers, _kFigAudioQueueProperty_DisconnectOfflineMixerWhileResetting, 
+                       _kFigAudioQueuePreemptedError, _kFigAudioQueueProperty_AllowedToUseHardware, 
+                       _kFigAudioQueueProperty_AudioCurveRampStyle, _kFigAudioQueueProperty_AudioCurves, 
+                       _kFigAudioQueueProperty_AudioDynamicRangeCompression, _kFigAudioQueueProperty_AudioProcessingTap, 
+                       _kFigAudioQueueProperty_AudioSessionID, _kFigAudioQueueProperty_ClientName, 
+                       _kFigAudioQueueProperty_Clock, _kFigAudioQueueProperty_ClockDevice, 
+                       _kFigAudioQueueProperty_CodecProgramTargetLevel, _kFigAudioQueueProperty_DeviceChannelMap, 
+                       _kFigAudioQueueProperty_DeviceUID, _kFigAudioQueueProperty_DiscardSampleBuffers, 
+                       _kFigAudioQueueProperty_DisconnectOfflineMixerWhileResetting, 
                        _kFigAudioQueueProperty_EQPreset, _kFigAudioQueueProperty_EnableSweepFilter, 
                        _kFigAudioQueueProperty_EnableTimePitch, _kFigAudioQueueProperty_EndPresentationTimeForDecodedSamples, 
                        _kFigAudioQueueProperty_EndPresentationTimeForQueuedSamples, 
@@ -2109,10 +2110,10 @@ exports:
                        _kFigRenderPipelineNotificationParameter_RequestID, _kFigRenderPipelineNotification_CompletedDecodeForPreroll, 
                        _kFigRenderPipelineNotification_DecodeError, _kFigRenderPipelineNotification_DefaultDeviceChanged, 
                        _kFigRenderPipelineNotification_FirstVideoFrameEnqueued, _kFigRenderPipelineNotification_ImageReleased, 
-                       _kFigRenderPipelineNotification_LatencyChanged, _kFigRenderPipelineNotification_PlayResourceReleased, 
-                       _kFigRenderPipelineNotification_PrerollLost, _kFigRenderPipelineNotification_RanDry, 
-                       _kFigRenderPipelineNotification_SegmentFinished, _kFigRenderPipelineNotification_StartupFailed, 
-                       _kFigRenderPipelineNotification_SynchronousFrameEnqueued, 
+                       _kFigRenderPipelineNotification_LatencyChanged, _kFigRenderPipelineNotification_PlayResourcePreempted, 
+                       _kFigRenderPipelineNotification_PlayResourceReleased, _kFigRenderPipelineNotification_PrerollLost, 
+                       _kFigRenderPipelineNotification_RanDry, _kFigRenderPipelineNotification_SegmentFinished, 
+                       _kFigRenderPipelineNotification_StartupFailed, _kFigRenderPipelineNotification_SynchronousFrameEnqueued, 
                        _kFigRenderPipelineOption_AllowAMRDecode, _kFigRenderPipelineOption_AllowAudibleContent, 
                        _kFigRenderPipelineOption_AllowCaptionGroupSampleBuffers, 
                        _kFigRenderPipelineOption_AllowClientProcessDecode, _kFigRenderPipelineOption_AudioDeviceUID, 

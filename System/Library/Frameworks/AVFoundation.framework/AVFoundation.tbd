@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 6ED06E74-DFD0-32AC-B645-C5070BAA9322' ]
+uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: CF3D1D57-11DB-3FE2-8993-2A62FE7AB5BA' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 current-version: 2
@@ -1597,7 +1597,7 @@ exports:
                        AVMutableMetadataItem._mutablePriv ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: FAEB6167-677C-3CE1-A879-5307C4C90BC5' ]
+uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: F69CB0FD-A21C-3912-A8F7-7916CF9E6F75' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio
 objc-constraint: none
@@ -1629,25 +1629,26 @@ exports:
                        _AVAudioSessionModeMeasurement, _AVAudioSessionModeMoviePlayback, 
                        _AVAudioSessionModeRaw, _AVAudioSessionModeSOS, _AVAudioSessionModeSpatialRecording, 
                        _AVAudioSessionModeSpeechRecognition, _AVAudioSessionModeSpokenAudio, 
-                       _AVAudioSessionModeVideoChat, _AVAudioSessionModeVideoRecording, 
-                       _AVAudioSessionModeVoiceChat, _AVAudioSessionModeVoiceMessages, 
-                       _AVAudioSessionModeVoicePrompt, _AVAudioSessionOrientationBack, 
-                       _AVAudioSessionOrientationBottom, _AVAudioSessionOrientationFront, 
-                       _AVAudioSessionOrientationLeft, _AVAudioSessionOrientationRight, 
-                       _AVAudioSessionOrientationTop, _AVAudioSessionPickableRouteChangeNotification, 
-                       _AVAudioSessionPolarPatternCardioid, _AVAudioSessionPolarPatternOmnidirectional, 
-                       _AVAudioSessionPolarPatternSubcardioid, _AVAudioSessionPortAirPlay, 
-                       _AVAudioSessionPortBluetoothA2DP, _AVAudioSessionPortBluetoothHFP, 
-                       _AVAudioSessionPortBluetoothLE, _AVAudioSessionPortBuiltInMic, 
-                       _AVAudioSessionPortBuiltInReceiver, _AVAudioSessionPortBuiltInSpeaker, 
-                       _AVAudioSessionPortCarAudio, _AVAudioSessionPortHDMI, _AVAudioSessionPortHeadphones, 
-                       _AVAudioSessionPortHeadsetMic, _AVAudioSessionPortLineIn, 
-                       _AVAudioSessionPortLineOut, _AVAudioSessionPortSPDIF, _AVAudioSessionPortUSBAudio, 
-                       _AVAudioSessionRouteChangeNotification, _AVAudioSessionRouteChangePreviousRouteKey, 
-                       _AVAudioSessionRouteChangeReasonKey, _AVAudioSessionRoutingContextChangeNotification, 
-                       _AVAudioSessionSilenceSecondaryAudioHintNotification, _AVAudioSessionSilenceSecondaryAudioHintTypeKey, 
-                       _AVAudioUnitComponentTagsDidChangeNotification, _AVAudioUnitManufacturerNameApple, 
-                       _AVAudioUnitTypeEffect, _AVAudioUnitTypeFormatConverter, _AVAudioUnitTypeGenerator, 
+                       _AVAudioSessionModeVideoChat, _AVAudioSessionModeVideoChatForMedia, 
+                       _AVAudioSessionModeVideoRecording, _AVAudioSessionModeVoiceChat, 
+                       _AVAudioSessionModeVoiceMessages, _AVAudioSessionModeVoicePrompt, 
+                       _AVAudioSessionOrientationBack, _AVAudioSessionOrientationBottom, 
+                       _AVAudioSessionOrientationFront, _AVAudioSessionOrientationLeft, 
+                       _AVAudioSessionOrientationRight, _AVAudioSessionOrientationTop, 
+                       _AVAudioSessionPickableRouteChangeNotification, _AVAudioSessionPolarPatternCardioid, 
+                       _AVAudioSessionPolarPatternOmnidirectional, _AVAudioSessionPolarPatternSubcardioid, 
+                       _AVAudioSessionPortAirPlay, _AVAudioSessionPortBluetoothA2DP, 
+                       _AVAudioSessionPortBluetoothHFP, _AVAudioSessionPortBluetoothLE, 
+                       _AVAudioSessionPortBuiltInMic, _AVAudioSessionPortBuiltInReceiver, 
+                       _AVAudioSessionPortBuiltInSpeaker, _AVAudioSessionPortCarAudio, 
+                       _AVAudioSessionPortHDMI, _AVAudioSessionPortHeadphones, _AVAudioSessionPortHeadsetMic, 
+                       _AVAudioSessionPortLineIn, _AVAudioSessionPortLineOut, _AVAudioSessionPortSPDIF, 
+                       _AVAudioSessionPortUSBAudio, _AVAudioSessionRouteChangeNotification, 
+                       _AVAudioSessionRouteChangePreviousRouteKey, _AVAudioSessionRouteChangeReasonKey, 
+                       _AVAudioSessionRoutingContextChangeNotification, _AVAudioSessionSilenceSecondaryAudioHintNotification, 
+                       _AVAudioSessionSilenceSecondaryAudioHintTypeKey, _AVAudioUnitComponentTagsDidChangeNotification, 
+                       _AVAudioUnitManufacturerNameApple, _AVAudioUnitTypeEffect, 
+                       _AVAudioUnitTypeFormatConverter, _AVAudioUnitTypeGenerator, 
                        _AVAudioUnitTypeMIDIProcessor, _AVAudioUnitTypeMixer, _AVAudioUnitTypeMusicDevice, 
                        _AVAudioUnitTypeMusicEffect, _AVAudioUnitTypeOfflineEffect, 
                        _AVAudioUnitTypeOutput, _AVAudioUnitTypePanner, _AVChannelLayoutKey, 

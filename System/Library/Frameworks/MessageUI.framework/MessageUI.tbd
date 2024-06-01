@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A245CB39-B6B8-39A1-B653-3FD4535483BF', 'x86_64: 41B81F34-3061-3708-98E1-1E483DCEF04E' ]
+uuids:           [ 'i386: A245CB39-B6B8-39A1-B653-3FD4535483BF', 'x86_64: AFE4501A-E166-3041-A24B-630C6BA453BB' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MessageUI.framework/MessageUI
-current-version: 3445.100.35
+current-version: 3445.100.42
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -118,7 +118,9 @@ exports:
                        _MFMailComposeViewFirstDraw, _MFMailCompositionValuesAutosaveIdentifier, 
                        _MFMailCompositionValuesBccRecipients, _MFMailCompositionValuesBody, 
                        _MFMailCompositionValuesBodyIsHTML, _MFMailCompositionValuesCaretPosition, 
-                       _MFMailCompositionValuesCcRecipients, _MFMailCompositionValuesContentInitiallyVisible, 
+                       _MFMailCompositionValuesCcRecipients, _MFMailCompositionValuesCloudPhotoIDs, 
+                       _MFMailCompositionValuesContentInitiallyVisible, _MFMailCompositionValuesContentText, 
+                       _MFMailCompositionValuesContentURLs, _MFMailCompositionValuesPhotoIDs, 
                        _MFMailCompositionValuesPreferredSendingEmailAddress, _MFMailCompositionValuesShowKeyboardImmediately, 
                        _MFMailCompositionValuesSourceAccountManagement, _MFMailCompositionValuesSubject, 
                        _MFMailCompositionValuesToRecipients, _MFMailCompositionValuesURL, 

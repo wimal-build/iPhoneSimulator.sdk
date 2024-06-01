@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: F8DA51F8-5683-3CE7-847F-9231226D2EC3' ]
+uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: 80ACDA5E-AD72-3857-AF41-395941288C21' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-current-version: 1556
+current-version: 1560.10
 compatibility-version: 150
 objc-constraint: none
 exports:         

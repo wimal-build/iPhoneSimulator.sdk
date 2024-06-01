@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9D64E5B3-2A59-366A-8D46-E0378CA67666', 'x86_64: 31565762-8BAC-3234-B5D9-54F1C1540485' ]
+uuids:           [ 'i386: 9D64E5B3-2A59-366A-8D46-E0378CA67666', 'x86_64: 7201BB38-7A5F-3A16-885B-092D2978830A' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/HomeKit.framework/HomeKit
-current-version: 484.0.70
+current-version: 484.2.2
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -87,6 +87,7 @@ exports:
                        _HMAccessorySupportsIdentifyCodingKey, _HMAccessorySupportsMediaAccessControlCodingKey, 
                        _HMAccessorySymptomsHandlerUpdatedMessage, _HMAccessoryTargetControlSupportCodingKey, 
                        _HMAccessoryTargetControlSupportMessageKey, _HMAccessoryTargetControlUpdatedMessage, 
+                       _HMAccessoryTargetControllerHardwareSupportCodingKey, _HMAccessoryTargetControllerHardwareSupportMessageKey, 
                        _HMAccessoryTargetControllerSupportCodingKey, _HMAccessoryTargetControllerSupportMessageKey, 
                        _HMAccessoryUpdateControlTargetsMessageKey, _HMAccessoryWiFiNetworkInfoCodingKey, 
                        _HMActionSetTypeHomeArrival, _HMActionSetTypeHomeDeparture, 

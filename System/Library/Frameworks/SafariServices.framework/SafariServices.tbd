@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: A9757DDD-0E80-3F61-AA70-3C2D4813E8C8' ]
+uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: 20723A76-6FFB-344C-A7BD-351D46325C73' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/SafariServices.framework/SafariServices
 objc-constraint: none
@@ -31,11 +31,11 @@ exports:
                        __SFBarItemEnumerateCases, __SFBarItemNull, __SFBookmarksUserActivityType, 
                        __SFCGPointsEqualWithEpsilon, __SFCGRectGrowToSize, __SFCeilingFloatToPixels, 
                        __SFClampPercent, __SFContentBlockerStoreURL, __SFCustomUserAgentStringIfNeeded, 
-                       __SFDataOwnerForWebViewInteraction, __SFDeviceSupportsHighQualityGraphics, 
-                       __SFDisableICECandidateFiltering, __SFDoNotTrackEnabledDefaultsKey, 
-                       __SFEnableEnumeratingAllNetworkInterfaces, __SFEnableMediaCapture, 
-                       __SFEnableMockCaptureDevices, __SFEnableWebRTCLegacyAPI, __SFEqualWithEpsilon, 
-                       __SFFloorFloatToPixels, __SFFormMetadataFocusingForStreamlinedLogin, 
+                       __SFDataOwnerForWebViewInteraction, __SFDeviceHasHomeButton, 
+                       __SFDeviceSupportsHighQualityGraphics, __SFDisableICECandidateFiltering, 
+                       __SFDoNotTrackEnabledDefaultsKey, __SFEnableEnumeratingAllNetworkInterfaces, 
+                       __SFEnableMediaCapture, __SFEnableMockCaptureDevices, __SFEnableWebRTCLegacyAPI, 
+                       __SFEqualWithEpsilon, __SFFloorFloatToPixels, __SFFormMetadataFocusingForStreamlinedLogin, 
                        __SFHasCompletedReadingListArchivePreferenceMigrationKey, 
                        __SFIconsInTabsEnabledKey, __SFImageForMediaCaptureDeviceIcon, 
                        __SFIncrementAggdKey, __SFInlineMediaPlaybackRequiresPlaysInlineAttributeKey, 

@@ -17,10 +17,16 @@ IL_EXTERN API_AVAILABLE(ios(12.0))
 @property (nonatomic, readonly, assign) ILClassificationAction action;
 
 /*
- This data will be sent to developers as either a JSON string or object,
- depending on the transport medium. The keys and values in this
- dictionary must conform to the NSJSONSerialization specifications:
- 
+ The value of this string will be sent when a value for
+ ILClassificationExtensionSMSReportDestination has been set in the extension's Info.plist
+ */
+@property (nonatomic, readwrite, copy, nullable) NSString *userString API_AVAILABLE(ios(12.1));
+
+/*
+ The JSON representation of this dictionary will be sent when a value for
+ ILClassificationExtensionNetworkReportDestination has been set in the extension's Info.plist
+
+ The keys and values in this dictionary must conform to the NSJSONSerialization specifications:
  - Top level object is an NSDictionary
  - All objects are NSString, NSNumber, NSArray, NSDictionary, or NSNull
  - All dictionary keys are NSStrings

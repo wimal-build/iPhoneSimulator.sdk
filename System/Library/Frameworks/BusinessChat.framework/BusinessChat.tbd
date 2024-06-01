@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: FB4869AC-0628-3BA7-98FA-D7B0A83E323A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D373F3F7-142F-3A45-8494-8E2B9E3B7799' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/BusinessChat.framework/BusinessChat
 objc-constraint: none

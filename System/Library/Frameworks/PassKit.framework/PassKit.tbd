@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 63464E71-1298-3B54-BB0F-33D8D75CF0BD', 'x86_64: D812C270-FA20-360E-A411-DAA0A665B42E' ]
+uuids:           [ 'i386: 63464E71-1298-3B54-BB0F-33D8D75CF0BD', 'x86_64: DEC7E2AF-1F28-37E5-8B0E-3CB0C356A91E' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/PassKit.framework/PassKit
 objc-constraint: none
@@ -20,7 +20,7 @@ exports:
                        PKPaymentButton, PKRemoteAddPaymentPassViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 212C8780-5900-32AE-A315-E84983326FC0', 'x86_64: C6A3C1AE-D7A0-319F-88A3-64B4D52E6930' ]
+uuids:           [ 'i386: 212C8780-5900-32AE-A315-E84983326FC0', 'x86_64: 813F13E7-97B5-3524-8F8E-76127BC3FC80' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore
 objc-constraint: none
@@ -308,12 +308,12 @@ exports:
                        _PKAggDKeyWebServicesErrorUnnecessaryPush, _PKAggDKeyWebServicesErrorUnregisteredPass, 
                        _PKAggDKeyWebServicesErrorUpdateDespiteMisuse, _PKAggDKeyWebServicesErrorWarningInvalidPass, 
                        _PKAllowHTTP, _PKAllowHTTPKey, _PKAppIconVisibilityPreference, 
-                       _PKApplePayButtonDefaultCornerRadius, _PKApplePayContainerEnvironment, 
-                       _PKApplePayContainerEnvironmentKey, _PKApplicationIsInBackground, 
-                       _PKApplyFormatToString, _PKAssertionErrorDomain, _PKAssertionMachServiceName, 
-                       _PKAssertionTypeRequiresForegroundApplicationToAcquire, _PKAssignedDeviceName, 
-                       _PKAttributedStringByParsingLinksInString, _PKAutomaticLoggingEnabledKey, 
-                       _PKAutomaticLoginEnabled, _PKAutomaticPeerPaymentRegistrationDisabled, 
+                       _PKAppleAccountManagerTokenIdentifier, _PKApplePayButtonDefaultCornerRadius, 
+                       _PKApplePayContainerEnvironment, _PKApplePayContainerEnvironmentKey, 
+                       _PKApplicationIsInBackground, _PKApplyFormatToString, _PKAssertionErrorDomain, 
+                       _PKAssertionMachServiceName, _PKAssertionTypeRequiresForegroundApplicationToAcquire, 
+                       _PKAssignedDeviceName, _PKAttributedStringByParsingLinksInString, 
+                       _PKAutomaticLoggingEnabledKey, _PKAutomaticLoginEnabled, _PKAutomaticPeerPaymentRegistrationDisabled, 
                        _PKAutomaticPeerPaymentRegistrationDisabledKey, _PKBackgroundTaskInvalid, 
                        _PKBackgroundWebServiceContextPath, _PKBarcodeFilterNameForFormat, 
                        _PKBeginBackgroundTask, _PKBulletinProviderMachServiceName, 
@@ -338,6 +338,10 @@ exports:
                        _PKCloudStoreOperationGroupInitialSetup, _PKCloudStoreOperationGroupInitialUpload, 
                        _PKCloudStoreOperationGroupPeriodic, _PKCloudStoreOperationGroupPushTriggered, 
                        _PKCloudStoreOperationGroupResetSync, _PKCloudStoreOperationGroupSharingSetup, 
+                       _PKCloudStoreOperationGroupSuffixCKAccountChangedNotification, 
+                       _PKCloudStoreOperationGroupSuffixCKIdentityUpdateNotification, 
+                       _PKCloudStoreOperationGroupSuffixPKDeletePeerPaymentWebService, 
+                       _PKCloudStoreOperationGroupSuffixPKICloudAccountSignOut, _PKCloudStoreOperationGroupSuffixPKPassdStartup, 
                        _PKCloudStoreOperationGroupUserActionExplicit, _PKCloudStoreOperationGroupUserActionImplicit, 
                        _PKCloudStorePassesContainerName, _PKCloudStorePassesZoneName, 
                        _PKCloudStoreRemoteAssestsZoneName, _PKCloudStoreServiceInterface, 
@@ -1059,11 +1063,10 @@ exports:
                        _PKWebServiceAccountCredentialRenewalRequiredNotification, 
                        _PKWebServiceAccountCredentialRenewalSucceededNotification, 
                        _PKWebServiceConfigurationInterval, _PKWebServiceErrorDomain, 
-                       _PKWebServiceFeaturesCredential, _PKWebServiceTokenIdentifier, 
-                       _PKWebServiceUnsupportedRegionConfigurationInterval, _PKWebServicesLogFacility, 
-                       _PKWinterpegEntitlement, _PKWriteBadPass, _PKiMessageIsActive, 
-                       _PassbookEnvironmentsURL, __BOMCopierFileConflictError, __BOMCopierFileError, 
-                       __BOMExtractionFatalFileHandler, __BOMExtractionFatalHandler, 
+                       _PKWebServiceFeaturesCredential, _PKWebServiceUnsupportedRegionConfigurationInterval, 
+                       _PKWebServicesLogFacility, _PKWinterpegEntitlement, _PKWriteBadPass, 
+                       _PKiMessageIsActive, _PassbookEnvironmentsURL, __BOMCopierFileConflictError, 
+                       __BOMCopierFileError, __BOMExtractionFatalFileHandler, __BOMExtractionFatalHandler, 
                        __BOMSys_NoSymlinks, __ColorForSQLValue, __CreateAttributedStringWithFontSize, 
                        __DateForSQLValue, __DrawBorder, __DrawLogoPDFIntoContext, 
                        __MaximumFontSizeForStringInRect, __PDGetDestinationCoordinate, 
@@ -1088,8 +1091,9 @@ exports:
                        PDScheduledActivityClient, PDScheduledActivityCriteria, PDScheduledActivityRegistration, 
                        PDXPCService, PKActivityEvent, PKActivityEventPeerPaymentTransaction, 
                        PKActivityEventTransaction, PKAddressFinder, PKAddressSearchModel, 
-                       PKAddressSearchRequest, PKAggregateDictionary, PKApplicationRegistry, 
-                       PKAssertion, PKAssertionCoordinator, PKAsyncCache, PKAsyncCacheRetrievalInfo, 
+                       PKAddressSearchRequest, PKAggregateDictionary, PKAppleAccountInformation, 
+                       PKAppleAccountManager, PKApplicationRegistry, PKAssertion, 
+                       PKAssertionCoordinator, PKAsyncCache, PKAsyncCacheRetrievalInfo, 
                        PKAuthorizedPeerPaymentQuote, PKAutomaticPassPresentationSuppressor, 
                        PKBarcode, PKBeacon, PKBundleResourceDescriptor, PKCacheRecipientItem, 
                        PKCacheScoreItem, PKCatalog, PKCatalogGroup, PKCloudDeletedRecord, 
@@ -1277,7 +1281,7 @@ exports:
                        PKPassField._value ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4053637A-A2C4-3255-B0B7-9055930436C5', 'x86_64: 4174E198-91FC-3C22-8457-086C763396C6' ]
+uuids:           [ 'i386: 4053637A-A2C4-3255-B0B7-9055930436C5', 'x86_64: 9982703A-AA04-321C-BCC2-04CE14CB2C99' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI
 objc-constraint: none
@@ -1330,34 +1334,36 @@ exports:
                        _PKBridgeFooterHyperlinkColor, _PKBridgeForegroundColor, _PKBridgeSeparatorColor, 
                        _PKBridgeSetupBackgroundColor, _PKBridgeTableViewCellAccessoryColor, 
                        _PKBridgeTableViewCellAccessoryHighlightColor, _PKBridgeTextColor, 
-                       _PKBridgeTintColor, _PKBridgeUsesDarkAppearance, _PKConstrainedAuthorizationViewBodyFont, 
-                       _PKConstrainedAuthorizationViewCellLabelLargeFont, _PKConstrainedAuthorizationViewCellLabelSmallFont, 
-                       _PKDOverlayWhiteColor, _PKDeviceSpecificLocalizedStringKeyForKey, 
-                       _PKEdgeInsetsFromRectToRect, _PKEditTableViewControllerActionCellIdentifier, 
-                       _PKEditTableViewControllerPassCellIdentifier, _PKFloatCeilToPixel, 
-                       _PKFloatFloorToPixel, _PKFloatRoundToPixel, _PKFontForTextStyleWithMaximumContentSizeCategory, 
-                       _PKFontMatchingCriteria, _PKFontTextStyleShortBody, _PKFontTextStyleShortFootnote, 
+                       _PKBridgeTintColor, _PKBridgeUsesDarkAppearance, _PKBuddyPadMaximumContentWidth, 
+                       _PKConstrainedAuthorizationViewBodyFont, _PKConstrainedAuthorizationViewCellLabelLargeFont, 
+                       _PKConstrainedAuthorizationViewCellLabelSmallFont, _PKDOverlayWhiteColor, 
+                       _PKDeviceSpecificLocalizedStringKeyForKey, _PKEdgeInsetsFromRectToRect, 
+                       _PKEditTableViewControllerActionCellIdentifier, _PKEditTableViewControllerPassCellIdentifier, 
+                       _PKFloatCeilToPixel, _PKFloatFloorToPixel, _PKFloatRoundToPixel, 
+                       _PKFontForTextStyleWithMaximumContentSizeCategory, _PKFontMatchingCriteria, 
+                       _PKFontTextStyleShortBody, _PKFontTextStyleShortFootnote, 
                        _PKIsLowEndDevice, _PKLargerValueForValueWithMaximumContentSizeCategory, 
                        _PKLinkedAppViewHeight, _PKLinkedApplicationNotificationBundleIDKey, 
                        _PKLinkedApplicationNotificationLaunchURLKey, _PKLinkedApplicationOpenNotification, 
-                       _PKLocalizedD3xPaymentString, _PKNumberPadKeyButtonValueToString, 
-                       _PKPadSpecificLocalizedStringKeyForKey, _PKPaddingBetweenLabelAndTextField, 
-                       _PKPassFooterContentViewHorizontalContentInset, _PKPassbookCardTableCellActionButtonEnabledKey, 
-                       _PKPassbookCardTableCellContextKey, _PKPassbookCardTableCellCustomSubTitleColorKey, 
-                       _PKPassbookCardTableCellCustomSubTitleKey, _PKPassbookCardTableCellPassKey, 
-                       _PKPassbookCardTableCellShowAddButtonKey, _PKPassbookCardTableCellShowStateKey, 
-                       _PKPassbookCardTableCellShowSubTitleKey, _PKPassbookCardTableCellTransitPropertiesKey, 
-                       _PKPaymentCardIneligibleReasonForEligibilityStatus, _PKPaymentCardIneligibleReasonForRequirementsStatus, 
-                       _PKPaymentPassDetailApplyViewStyleAppearance, _PKPaymentPassDetailVCDidAppearNotification, 
-                       _PKPaymentPassDetailVCRequestedServiceMode, _PKPaymentProgressStateBaseBiometricState, 
-                       _PKPaymentProgressStateBaseStateForRecognizingState, _PKPaymentProgressStateIsBaseBiometricState, 
-                       _PKPaymentProgressStateIsRecognizing, _PKPaymentProvisioningMethodCardImage2xScale, 
-                       _PKPaymentProvisioningMethodCardImage3xScale, _PKPaymentProvisioningMethodCardImages, 
-                       _PKPaymentSetupApplyContextAppearance, _PKPaymentSetupContextForViewStyle, 
-                       _PKPaymentSetupContextIsBridge, _PKPaymentSetupContextIsIssuerApp, 
-                       _PKPaymentSetupContextIsMerchantApp, _PKPaymentSetupContextIsSetupAssistant, 
-                       _PKPaymentTransactionTableCellAvatarViewSize, _PKPaymentTransactionTableCellLayoutMaximumFontSize, 
-                       _PKPaymentVerificationErrorDomain, _PKPeerPaymentAccountResolutionForAccountAndPeerPaymentPass, 
+                       _PKLocalizedD3xPaymentString, _PKLocalizedJ3xxPearlString, 
+                       _PKNumberPadKeyButtonValueToString, _PKPadSpecificLocalizedStringKeyForKey, 
+                       _PKPaddingBetweenLabelAndTextField, _PKPassFooterContentViewHorizontalContentInset, 
+                       _PKPassbookCardTableCellActionButtonEnabledKey, _PKPassbookCardTableCellContextKey, 
+                       _PKPassbookCardTableCellCustomSubTitleColorKey, _PKPassbookCardTableCellCustomSubTitleKey, 
+                       _PKPassbookCardTableCellPassKey, _PKPassbookCardTableCellShowAddButtonKey, 
+                       _PKPassbookCardTableCellShowStateKey, _PKPassbookCardTableCellShowSubTitleKey, 
+                       _PKPassbookCardTableCellTransitPropertiesKey, _PKPaymentCardIneligibleReasonForEligibilityStatus, 
+                       _PKPaymentCardIneligibleReasonForRequirementsStatus, _PKPaymentPassDetailApplyViewStyleAppearance, 
+                       _PKPaymentPassDetailVCDidAppearNotification, _PKPaymentPassDetailVCRequestedServiceMode, 
+                       _PKPaymentProgressStateBaseBiometricState, _PKPaymentProgressStateBaseStateForRecognizingState, 
+                       _PKPaymentProgressStateIsBaseBiometricState, _PKPaymentProgressStateIsRecognizing, 
+                       _PKPaymentProvisioningMethodCardImage2xScale, _PKPaymentProvisioningMethodCardImage3xScale, 
+                       _PKPaymentProvisioningMethodCardImages, _PKPaymentSetupApplyContextAppearance, 
+                       _PKPaymentSetupContextForViewStyle, _PKPaymentSetupContextIsBridge, 
+                       _PKPaymentSetupContextIsIssuerApp, _PKPaymentSetupContextIsMerchantApp, 
+                       _PKPaymentSetupContextIsSetupAssistant, _PKPaymentTransactionTableCellAvatarViewSize, 
+                       _PKPaymentTransactionTableCellLayoutMaximumFontSize, _PKPaymentVerificationErrorDomain, 
+                       _PKPeerPaymentAccountResolutionForAccountAndPeerPaymentPass, 
                        _PKPeerPaymentAccountResolutionStateToString, _PKPeerPaymentAccountResolutionUserInfoActivateCurrencyAmount, 
                        _PKPeerPaymentAccountResolutionUserInfoActivateFlowState, 
                        _PKPeerPaymentAccountResolutionUserInfoActivateSenderAddress, 
