@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1D4F2837-7440-32B2-AE09-2058F5F57816', 'x86_64: E0EAD781-8D3A-328D-A0A2-375644B9F500' ]
+uuids:           [ 'i386: 1D4F2837-7440-32B2-AE09-2058F5F57816', 'x86_64: D9629335-D799-35B1-A2F0-3A635CC519B4' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/HealthKitUI.framework/HealthKitUI
 objc-constraint: none

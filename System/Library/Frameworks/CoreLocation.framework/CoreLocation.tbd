@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: AC710596-6048-3A11-960F-1D6BC8EBB923' ]
+uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: 1A9D597D-531A-3B16-8DF7-C9F318B9DA17' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreLocation.framework/CoreLocation
 current-version: 2245.0.41

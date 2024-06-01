@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: 5234EF0F-E01A-3463-8E0C-CE9256115909' ]
+uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: E79B4216-7F6C-34DA-8E2E-A4F3048888CA' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension
 objc-constraint: none
@@ -633,7 +633,7 @@ exports:
     objc-ivars:      [ NEFilterBlockPage._organization, NEFilterExtensionProviderContext._queue ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1EF6A61D-2D91-31CE-B48B-771ABA79222A', 'x86_64: F09BF359-7D7F-3C30-BC17-78FED6CA5827' ]
+uuids:           [ 'i386: 1EF6A61D-2D91-31CE-B48B-771ABA79222A', 'x86_64: B7244DF3-A73D-3537-B064-425D488E3669' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/Network.framework/Network
 objc-constraint: none

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: A0AEECBD-56FC-35E6-8919-25F212AE6EB4' ]
+uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: B8A9A959-42F2-3C53-A4FD-4B789C62177F' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreMotion.framework/CoreMotion
 current-version: 2245.0.41

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: 392F95B3-15C2-3FC3-8E41-4C3546B73511' ]
+uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: 385D3488-8E4A-371A-BBB3-97627CACB298' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/GameplayKit.framework/GameplayKit
 objc-constraint: none

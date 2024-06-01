@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: 46FDDC9C-EEC7-3810-90BD-EF091FA25CF5' ]
+uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: 4DCF1EF7-6816-3E5C-B595-C0DD3227C50C' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVKit.framework/AVKit
 objc-constraint: none

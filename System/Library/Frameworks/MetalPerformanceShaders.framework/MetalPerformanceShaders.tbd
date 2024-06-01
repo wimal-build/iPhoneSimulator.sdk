@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C87A89CD-56B5-3CC1-8A89-046815435815' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C75CB7D9-BD1E-3DAF-9EDC-4A2EBCDBAAD7' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
 current-version: 100.6
@@ -14,7 +14,7 @@ exports:
     symbols:         [ _MPSSupportsMTLDevice ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F1298F81-E814-322A-BD24-3148745D391C' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F4BA7482-4948-3E65-B31C-2F0E38E79B0E' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore
 current-version: 100.6
@@ -85,7 +85,7 @@ exports:
                        MPSVirtualImage ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CA808DB2-0EAD-3BB9-86FC-87F2825A6469' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: AFDDEC19-2459-353D-BF03-E1303DBF9BAF' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage
 current-version: 100.6
@@ -117,7 +117,7 @@ exports:
                        MPSImageTranspose, MPSUnaryImageKernel ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 510762B6-FF8C-386F-90DB-3365E2CDA957' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6AC2E720-B53B-32F4-AB7C-4958D6E13E2A' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix
 current-version: 100.6
@@ -138,7 +138,7 @@ exports:
                        MPSVector, MPSVectorDescriptor ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1650460F-A8B2-3C6B-A326-B52222CD8E0A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 124512A9-B61B-36B6-ABEB-1EECD3B24225' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork
 current-version: 100.6

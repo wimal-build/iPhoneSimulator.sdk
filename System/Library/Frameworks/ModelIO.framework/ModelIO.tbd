@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3490D6B6-DA19-383C-83DB-E4FC1FB9AF89', 'x86_64: 172E772A-07C3-3F36-BD95-D6A0EE9DBC54' ]
+uuids:           [ 'i386: 3490D6B6-DA19-383C-83DB-E4FC1FB9AF89', 'x86_64: DCAB6713-751A-3159-8697-781FA827923C' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ModelIO.framework/ModelIO
 objc-constraint: none

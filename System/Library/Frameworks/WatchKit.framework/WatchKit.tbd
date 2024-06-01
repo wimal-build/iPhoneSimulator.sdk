@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8DED1303-C655-3F07-9536-2FCEF679B73B', 'x86_64: 56FDA053-3114-3D1E-AFCB-6ED2BF46F545' ]
+uuids:           [ 'i386: 8DED1303-C655-3F07-9536-2FCEF679B73B', 'x86_64: D134EC51-74B2-3ED6-BEA2-66F7108613FF' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/WatchKit.framework/WatchKit
 objc-constraint: none

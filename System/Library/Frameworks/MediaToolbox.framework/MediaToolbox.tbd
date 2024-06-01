@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: 4C01E15A-19C2-397A-96C5-1F3D8B0B5834' ]
+uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: A21152D8-CEAB-3B32-8ABD-0A2A160D3265' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
 objc-constraint: none
@@ -944,13 +944,13 @@ exports:
                        _kFigByteFlumeProperty_BandwidthSample, _kFigByteFlumeProperty_BandwidthSampleCount, 
                        _kFigByteFlumeProperty_BandwidthStandardDeviation, _kFigByteFlumeProperty_CustomURLProvider, 
                        _kFigByteFlumeProperty_EntireLength, _kFigByteFlumeProperty_HTTPResponseHeaders, 
-                       _kFigByteFlumeProperty_InteractivePlaybackAssertion, _kFigByteFlumeProperty_LastError, 
-                       _kFigByteFlumeProperty_MIMEType, _kFigByteFlumeProperty_NetworkInterfaceStatistics, 
-                       _kFigByteFlumeProperty_NoCache, _kFigByteFlumeProperty_PlaybackSessionID, 
-                       _kFigByteFlumeProperty_RemoteIPAddress, _kFigByteFlumeProperty_ReportingAgent, 
-                       _kFigByteFlumeProperty_StorageSession, _kFigByteFlumeProperty_SuggestedFileName, 
-                       _kFigByteFlumeProperty_URL, _kFigBytePumpAlternateEntryGroupLocatorMapKey_Channels, 
-                       _kFigBytePumpAlternateEntryGroupLocatorMapKey_ClosedCaptionType, 
+                       _kFigByteFlumeProperty_InactivityTimeout, _kFigByteFlumeProperty_InteractivePlaybackAssertion, 
+                       _kFigByteFlumeProperty_LastError, _kFigByteFlumeProperty_MIMEType, 
+                       _kFigByteFlumeProperty_NetworkInterfaceStatistics, _kFigByteFlumeProperty_NoCache, 
+                       _kFigByteFlumeProperty_PlaybackSessionID, _kFigByteFlumeProperty_RemoteIPAddress, 
+                       _kFigByteFlumeProperty_ReportingAgent, _kFigByteFlumeProperty_StorageSession, 
+                       _kFigByteFlumeProperty_SuggestedFileName, _kFigByteFlumeProperty_URL, 
+                       _kFigBytePumpAlternateEntryGroupLocatorMapKey_Channels, _kFigBytePumpAlternateEntryGroupLocatorMapKey_ClosedCaptionType, 
                        _kFigBytePumpAlternateEntryGroupLocatorMapKey_StableStreamIdentifier, 
                        _kFigBytePumpAlternateEntryGroupLocatorMapKey_URL, _kFigBytePumpAlternateEntryKey_AlternateIndex, 
                        _kFigBytePumpAlternateEntryKey_AudioGroupID, _kFigBytePumpAlternateEntryKey_AudioGroupLocatorMap, 

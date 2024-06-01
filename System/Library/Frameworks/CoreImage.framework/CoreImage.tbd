@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 678DEA2C-E33F-3144-95AD-2C62DCA19D27', 'x86_64: 61096886-3ED9-34B3-BF8C-1CCAF4948BD1' ]
+uuids:           [ 'i386: 678DEA2C-E33F-3144-95AD-2C62DCA19D27', 'x86_64: ED2DB79A-EFD7-388F-B987-35BDE69637F2' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreImage.framework/CoreImage
 current-version: 5

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A3F0262-7FEE-3E05-AF6D-CC633CA44BBC', 'x86_64: 80E21DC2-879E-3E83-9767-8A5F0902B9F9' ]
+uuids:           [ 'i386: 2A3F0262-7FEE-3E05-AF6D-CC633CA44BBC', 'x86_64: D945A756-A7A4-3873-859E-D03B222CA8FC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility
 current-version: 62

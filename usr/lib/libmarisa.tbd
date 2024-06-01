@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 85139251-9FD6-3373-9CAD-BE60ED27367B', 'x86_64: FD438427-0055-370A-847A-346877A49DB7' ]
+uuids:           [ 'i386: 85139251-9FD6-3373-9CAD-BE60ED27367B', 'x86_64: DC0E0079-3761-31EE-85D4-EC6D97A27AD7' ]
 platform:        ios
 install-name:    /usr/lib/libmarisa.dylib
 objc-constraint: none

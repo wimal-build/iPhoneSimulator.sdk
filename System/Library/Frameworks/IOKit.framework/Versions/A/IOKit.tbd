@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8C4EA2AB-65F8-3B2C-A4DA-A0C5A4407AE1', 'x86_64: 8E60B0C4-B1DC-3402-81F0-1DB370811E70' ]
+uuids:           [ 'i386: 8C4EA2AB-65F8-3B2C-A4DA-A0C5A4407AE1', 'x86_64: 4948E268-E78F-35B4-A641-B516E1F41A34' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
 current-version: 275
@@ -503,15 +503,15 @@ exports:
                        __IOServiceSetAuthorizationID, __IOWriteBytesToFile, __OSKextBasicFilesystemAuthentication, 
                        __OSKextCopyKernelRequests, __OSKextCreateFolderForCacheURL, 
                        __OSKextReadCache, __OSKextReadFromIdentifierCacheForFolder, 
-                       __OSKextSendResource, __OSKextSetAuthenticationFunction, __OSKextSetStrictAuthentication, 
-                       __OSKextSetStrictRecordingByLastOpened, __OSKextWriteCache, 
-                       __OSKextWriteIdentifierCacheForKextsInDirectory, ___CachedPropertiesRefreshApplierFunction, 
-                       ___ConnectionFunctionPickBatchInterval, ___CopyRecordForCientFunction, 
-                       ___FunctionApplierForParameters, ___GDBIOHIDEventSystemDump, 
-                       ___IOHIDApplyPropertiesToDeviceFromDictionary, ___IOHIDApplyPropertyToDeviceSet, 
-                       ___IOHIDDeviceGetRootKey, ___IOHIDDeviceGetUUIDKey, ___IOHIDDeviceGetUUIDString, 
-                       ___IOHIDDeviceLoadProperties, ___IOHIDDeviceSaveProperties, 
-                       ___IOHIDElementGetRootKey, ___IOHIDElementLoadProperties, 
+                       __OSKextSendResource, __OSKextSetAuthenticationFunction, __OSKextSetLoadAuditFunction, 
+                       __OSKextSetStrictAuthentication, __OSKextSetStrictRecordingByLastOpened, 
+                       __OSKextWriteCache, __OSKextWriteIdentifierCacheForKextsInDirectory, 
+                       ___CachedPropertiesRefreshApplierFunction, ___ConnectionFunctionPickBatchInterval, 
+                       ___CopyRecordForCientFunction, ___FunctionApplierForParameters, 
+                       ___GDBIOHIDEventSystemDump, ___IOHIDApplyPropertiesToDeviceFromDictionary, 
+                       ___IOHIDApplyPropertyToDeviceSet, ___IOHIDDeviceGetRootKey, 
+                       ___IOHIDDeviceGetUUIDKey, ___IOHIDDeviceGetUUIDString, ___IOHIDDeviceLoadProperties, 
+                       ___IOHIDDeviceSaveProperties, ___IOHIDElementGetRootKey, ___IOHIDElementLoadProperties, 
                        ___IOHIDElementRegister, ___IOHIDElementSaveProperties, ___IOHIDEventSystemClientFinalizeStateHandler, 
                        ___IOHIDEventSystemClientInitReplyPort, ___IOHIDEventSystemClientRefresh, 
                        ___IOHIDEventSystemClientRefreshServiceCallback, ___IOHIDEventSystemClientServiceReplaceCallback, 

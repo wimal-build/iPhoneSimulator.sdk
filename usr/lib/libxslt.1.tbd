@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 86E9DA49-FF72-344F-874C-DC5F018A044C', 'x86_64: 70D7CA66-C047-3DC8-B2BE-6C58C744A107' ]
+uuids:           [ 'i386: 86E9DA49-FF72-344F-874C-DC5F018A044C', 'x86_64: 6C984B0E-FE57-314E-B077-888C454DEBE5' ]
 platform:        ios
 install-name:    /usr/lib/libxslt.1.dylib
 current-version: 3.26

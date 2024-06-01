@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: C1CCAEAF-BF67-3972-8FB4-1E84B618B84E' ]
+uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: D5C041E7-06AF-31E9-A787-5765DE87EA75' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 current-version: 2
@@ -689,12 +689,14 @@ exports:
                        _AVOutOfBandAlternateTrackDisplayNameKey, _AVOutOfBandAlternateTrackExtendedLanguageTagKey, 
                        _AVOutOfBandAlternateTrackIdentifierKey, _AVOutOfBandAlternateTrackIsDefaultKey, 
                        _AVOutOfBandAlternateTrackMediaCharactersticsKey, _AVOutOfBandAlternateTrackSourceKey, 
+                       _AVOutputContextAddOutputDeviceOptionAuthorizationToken, _AVOutputContextAddOutputDeviceOptionCancelIfAuthRequired, 
                        _AVOutputContextCanSetVolumeDidChangeNotification, _AVOutputContextCommunicationChannelControlTypeDirect, 
                        _AVOutputContextCommunicationChannelControlTypeRelayed, _AVOutputContextCommunicationChannelOptionControlType, 
                        _AVOutputContextDestinationChangeCancellationReasonAuthorizationSkipped, 
                        _AVOutputContextDestinationChangeInitiatedNotification, _AVOutputContextDestinationChangeKey, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceInUse, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceOutOfRange, 
+                       _AVOutputContextDeviceConnectionFailureReasonNotAPeerInHomeGroup, 
                        _AVOutputContextDeviceGroupControlOptionCancelAddDeviceIfAuthRequired, 
                        _AVOutputContextGlobalOutputDeviceConfigurationDidChangeNotification, 
                        _AVOutputContextManagerFailureReasonKey, _AVOutputContextManagerOutputContextDidFailToConnectToOutputDeviceNotification, 
@@ -709,6 +711,8 @@ exports:
                        _AVOutputDeviceAuthorizationTokenTypePIN, _AVOutputDeviceAuthorizationTokenTypePassword, 
                        _AVOutputDeviceBatteryLevelCaseKey, _AVOutputDeviceBatteryLevelLeftKey, 
                        _AVOutputDeviceBatteryLevelRightKey, _AVOutputDeviceCanSetVolumeDidChangeNotification, 
+                       _AVOutputDeviceConfigurationCancellationReasonAuthorizationSkipped, 
+                       _AVOutputDeviceConfigurationOptionCancelConfigurationIfAuthRequired, 
                        _AVOutputDeviceDiscoveryPresenceKey, _AVOutputDeviceDiscoverySessionAvailableOutputDevicesDidChangeNotification, 
                        _AVOutputDeviceFrecencyInfoFrecencyScoreKey, _AVOutputDeviceFrecencyInfoLastUsedTimestampKey, 
                        _AVOutputDeviceFrecentsList, _AVOutputDeviceVolumeDidChangeNotification, 
@@ -1618,7 +1622,7 @@ exports:
                        AVWaitForNotificationOrDeallocationOperation._weakReferenceToSelf ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: ABB36BD0-CD9C-32FB-896A-F5457DB98F80' ]
+uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: 0D274348-2249-38A6-9335-9055B99E5D3D' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio
 objc-constraint: none

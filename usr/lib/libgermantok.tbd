@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 55A05D88-1D0A-3672-8CB8-564ED2D28F26', 'x86_64: 88B6C7A5-B193-3F6F-BA2A-09CDF70C1BB1' ]
+uuids:           [ 'i386: 55A05D88-1D0A-3672-8CB8-564ED2D28F26', 'x86_64: BFBA0167-50F5-3375-9197-501BB71F5347' ]
 platform:        ios
 install-name:    /usr/lib/libgermantok.dylib
 objc-constraint: none

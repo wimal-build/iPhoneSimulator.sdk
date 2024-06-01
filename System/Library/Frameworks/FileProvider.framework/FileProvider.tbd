@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7C1CB92F-8947-3758-89BA-A08F88E7A05E' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 85A6A3C4-72A8-3B35-A9A6-4278DC5E56AD' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/FileProvider.framework/FileProvider
 objc-constraint: none

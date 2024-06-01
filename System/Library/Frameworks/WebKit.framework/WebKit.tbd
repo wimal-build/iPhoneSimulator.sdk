@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: C0E3798B-4885-3ADC-8256-A3DDF013F04D' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: 61F74039-E1D5-33BC-84A8-1B5240783FC5' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/WebKit.framework/WebKit
-current-version: 605.1.33
+current-version: 605.2.8
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -269,18 +269,18 @@ exports:
                        _WKDictionarySetItem, _WKDoubleCreate, _WKDoubleGetTypeID, 
                        _WKDoubleGetValue, _WKDownloadCancel, _WKDownloadCopyRedirectChain, 
                        _WKDownloadCopyRequest, _WKDownloadGetID, _WKDownloadGetOriginatingPage, 
-                       _WKDownloadGetResumeData, _WKDownloadGetTypeID, _WKDownloadGetWasUserInitiated, 
-                       _WKErrorCopyCFError, _WKErrorCopyDomain, _WKErrorCopyFailingURL, 
-                       _WKErrorCopyLocalizedDescription, _WKErrorCopyWKErrorDomain, 
-                       _WKErrorCreateWithCFError, _WKErrorDomain, _WKErrorGetErrorCode, 
-                       _WKErrorGetTypeID, _WKFormSubmissionListenerContinue, _WKFormSubmissionListenerGetTypeID, 
-                       _WKFrameCanProvideSource, _WKFrameCanShowMIMEType, _WKFrameCopyMIMEType, 
-                       _WKFrameCopyProvisionalURL, _WKFrameCopyTitle, _WKFrameCopyURL, 
-                       _WKFrameCopyUnreachableURL, _WKFrameCreateFrameHandle, _WKFrameCreateFrameInfo, 
-                       _WKFrameGetCertificateInfo, _WKFrameGetFrameLoadState, _WKFrameGetMainResourceData, 
-                       _WKFrameGetPage, _WKFrameGetResourceData, _WKFrameGetTypeID, 
-                       _WKFrameGetWebArchive, _WKFrameHandleGetFrameID, _WKFrameHandleGetTypeID, 
-                       _WKFrameInfoGetFrameHandleRef, _WKFrameInfoGetTypeID, _WKFrameIsDisplayingMarkupDocument, 
+                       _WKDownloadGetResumeData, _WKDownloadGetTypeID, _WKErrorCopyCFError, 
+                       _WKErrorCopyDomain, _WKErrorCopyFailingURL, _WKErrorCopyLocalizedDescription, 
+                       _WKErrorCopyWKErrorDomain, _WKErrorCreateWithCFError, _WKErrorDomain, 
+                       _WKErrorGetErrorCode, _WKErrorGetTypeID, _WKFormSubmissionListenerContinue, 
+                       _WKFormSubmissionListenerGetTypeID, _WKFrameCanProvideSource, 
+                       _WKFrameCanShowMIMEType, _WKFrameCopyMIMEType, _WKFrameCopyProvisionalURL, 
+                       _WKFrameCopyTitle, _WKFrameCopyURL, _WKFrameCopyUnreachableURL, 
+                       _WKFrameCreateFrameHandle, _WKFrameCreateFrameInfo, _WKFrameGetCertificateInfo, 
+                       _WKFrameGetFrameLoadState, _WKFrameGetMainResourceData, _WKFrameGetPage, 
+                       _WKFrameGetResourceData, _WKFrameGetTypeID, _WKFrameGetWebArchive, 
+                       _WKFrameHandleGetFrameID, _WKFrameHandleGetTypeID, _WKFrameInfoGetFrameHandleRef, 
+                       _WKFrameInfoGetTypeID, _WKFrameIsDisplayingMarkupDocument, 
                        _WKFrameIsDisplayingStandaloneImageDocument, _WKFrameIsFrameSet, 
                        _WKFrameIsMainFrame, _WKFramePolicyListenerDownload, _WKFramePolicyListenerGetTypeID, 
                        _WKFramePolicyListenerIgnore, _WKFramePolicyListenerUse, _WKFramePolicyListenerUseWithPolicies, 
@@ -780,10 +780,10 @@ exports:
                        _WKWebsitePolicies ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: D07CF1CB-2827-394B-902A-ADE4E4761506' ]
+uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: D4957E39-BC32-33EB-B1DD-67E4FC71755B' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy
-current-version: 605.1.33
+current-version: 605.2.8
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

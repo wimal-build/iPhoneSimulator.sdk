@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 01ADEFB7-F195-34E8-8EF0-6E9F7C4B780B' ]
+uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 7AC56C8C-5423-3A0D-85BF-6C4259631A21' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-current-version: 605.1.33
+current-version: 605.2.8
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -58,7 +58,8 @@ exports:
                        __ZN3JSC21loadAndEvaluateModuleEPNS_9ExecStateERKN3WTF6StringENS_7JSValueE, 
                        __ZN3JSC22ArrayAllocationProfile18updateIndexingTypeEv, __ZN3JSC22JSPropertyNameIterator6s_infoE, 
                        __ZN3JSC23JSModuleNamespaceObject14finishCreationEPNS_9ExecStateEPNS_14JSGlobalObjectEPNS_20AbstractModuleRecordERKN3WTF7HashSetINS7_6RefPtrINS7_17UniquedStringImplEEENS_17IdentifierRepHashENS7_10HashTraitsISB_EEEE, 
-                       __ZN3JSC23MacroAssemblerX86Common16s_sse2CheckStateE, __ZN3JSC23setUpStaticFunctionSlotERNS_2VMEPKNS_14HashTableValueEPNS_8JSObjectENS_12PropertyNameERNS_12PropertySlotE, 
+                       __ZN3JSC23MacroAssemblerX86Common16s_sse2CheckStateE, __ZN3JSC23createBuiltinExecutableERNS_2VMERKNS_10SourceCodeERKNS_10IdentifierENS_15ConstructorKindENS_16ConstructAbilityE, 
+                       __ZN3JSC23setUpStaticFunctionSlotERNS_2VMEPKNS_14HashTableValueEPNS_8JSObjectENS_12PropertyNameERNS_12PropertySlotE, 
                        __ZN3JSC26getHashMapImplKeyClassInfoEv, __ZN3JSC28JSDestructibleObjectSubspaceC1EN3WTF7CStringERNS_4HeapE, 
                        __ZN3JSC28JSDestructibleObjectSubspaceC2EN3WTF7CStringERNS_4HeapE, 
                        __ZN3JSC28JSDestructibleObjectSubspaceD0Ev, __ZN3JSC28JSDestructibleObjectSubspaceD1Ev, 
@@ -82,6 +83,7 @@ exports:
                        __ZN3JSC7JSArray22tryCreateUninitializedERNS_2VMEPNS_17GCDeferralContextEPNS_9StructureEj, 
                        __ZN3JSC8DataView6createEN3WTF10PassRefPtrINS_11ArrayBufferEEEjj, 
                        __ZN3JSC8JSObject22fillGetterPropertySlotERNS_12PropertySlotENS_7JSValueEji, 
+                       __ZN3JSC8JSObject24getOwnStaticPropertySlotERNS_2VMENS_12PropertyNameERNS_12PropertySlotE, 
                        __ZN3JSC8JSObject32putDirectIndexBeyondVectorLengthEPNS_9ExecStateEjNS_7JSValueEjNS_18PutDirectIndexModeE, 
                        __ZN3JSC8Subspace11tryAllocateEPNS_17GCDeferralContextEm, 
                        __ZN3JSC8Subspace11tryAllocateEm, __ZN3JSC8Subspace8allocateEPNS_17GCDeferralContextEm, 
@@ -573,7 +575,8 @@ exports:
                        __ZN3JSC11IsoSubspaceC2EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEm, 
                        __ZN3JSC11IsoSubspaceD0Ev, __ZN3JSC11IsoSubspaceD1Ev, __ZN3JSC11IsoSubspaceD2Ev, 
                        __ZN3JSC11JSWithScope6createERNS_2VMEPNS_14JSGlobalObjectEPNS_7JSScopeEPNS_8JSObjectE, 
-                       __ZN3JSC11MarkedBlock15aboutToMarkSlowEj, __ZN3JSC11ProxyObject14finishCreationERNS_2VMEPNS_9ExecStateENS_7JSValueES5_, 
+                       __ZN3JSC11MarkedBlock15aboutToMarkSlowEj, __ZN3JSC11ParserError31throwStackOverflowOrOutOfMemoryEPNS_9ExecStateE, 
+                       __ZN3JSC11ProxyObject14finishCreationERNS_2VMEPNS_9ExecStateENS_7JSValueES5_, 
                        __ZN3JSC11ProxyObject18structureForTargetEPNS_14JSGlobalObjectENS_7JSValueE, 
                        __ZN3JSC11ProxyObjectC1ERNS_2VMEPNS_9StructureE, __ZN3JSC11ProxyObjectC2ERNS_2VMEPNS_9StructureE, 
                        __ZN3JSC11RegisterSet12argumentGPRSEv, __ZN3JSC11SlotVisitor10appendSlowEPNS_6JSCellEN3WTF10DependencyE, 
@@ -654,7 +657,7 @@ exports:
                        __ZN3JSC23SimpleMarkingConstraintC2EN3WTF7CStringES2_NS1_8FunctionIFvRNS_11SlotVisitorEEEENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE, 
                        __ZN3JSC23SimpleMarkingConstraintD0Ev, __ZN3JSC23SimpleMarkingConstraintD1Ev, 
                        __ZN3JSC23SimpleMarkingConstraintD2Ev, __ZN3JSC23errorMesasgeForTransferEPNS_11ArrayBufferE, 
-                       __ZN3JSC23setUpStaticFunctionSlotERNS_2VMEPKNS_9ClassInfoEPKNS_14HashTableValueEPNS_8JSObjectENS_12PropertyNameERNS_12PropertySlotE, 
+                       __ZN3JSC23setUpStaticFunctionSlotEPNS_9ExecStateEPKNS_9ClassInfoEPKNS_14HashTableValueEPNS_8JSObjectENS_12PropertyNameERNS_12PropertySlotE, 
                        __ZN3JSC24DOMAttributeGetterSetter6s_infoE, __ZN3JSC24JSAsyncGeneratorFunction6s_infoE, 
                        __ZN3JSC24useFastPermisionsJITCopyE, __ZN3JSC25JSInternalPromiseDeferred6rejectEPNS_9ExecStateEPNS_9ExceptionE, 
                        __ZN3JSC25uniqueSecurityOriginTokenEv, __ZN3JSC29jitWriteSeparateHeapsFunctionE, 
@@ -691,6 +694,7 @@ exports:
                        __ZN3JSC8Debugger15ProfilingClientD0Ev, __ZN3JSC8Debugger15ProfilingClientD1Ev, 
                        __ZN3JSC8Debugger15ProfilingClientD2Ev, __ZN3JSC8JSBigInt6equalsEPS0_S1_, 
                        __ZN3JSC8JSBigInt6s_infoE, __ZN3JSC8JSObject22fillGetterPropertySlotERNS_12PropertySlotEPNS_6JSCellEji, 
+                       __ZN3JSC8JSObject24getOwnStaticPropertySlotEPNS_9ExecStateENS_12PropertyNameERNS_12PropertySlotE, 
                        __ZN3JSC8JSObject33prototypeChainMayInterceptStoreToERNS_2VMENS_12PropertyNameE, 
                        __ZN3JSC8JSObject38putDirectIndexSlowOrBeyondVectorLengthEPNS_9ExecStateEjNS_7JSValueEjNS_18PutDirectIndexModeE, 
                        __ZN3JSC8Subspace33parallelNotEmptyMarkedBlockSourceEv, __ZN3JSC8SubspaceC2EN3WTF7CStringERNS_4HeapE, 
@@ -1664,7 +1668,6 @@ exports:
                        __ZN3JSC23JSModuleNamespaceObjectC2ERNS_2VMEPNS_9StructureE, 
                        __ZN3JSC23MacroAssemblerX86Common15s_avxCheckStateE, __ZN3JSC23MacroAssemblerX86Common18s_sse4_1CheckStateE, 
                        __ZN3JSC23VariableWriteFireDetail5touchERNS_2VMEPNS_13WatchpointSetEPNS_8JSObjectERKNS_12PropertyNameE, 
-                       __ZN3JSC23createBuiltinExecutableERNS_2VMERKNS_10SourceCodeERKNS_10IdentifierENS_15ConstructorKindENS_16ConstructAbilityE, 
                        __ZN3JSC23createBuiltinExecutableERNS_2VMERKNS_10SourceCodeERKNS_10IdentifierENS_16ConstructAbilityE, 
                        __ZN3JSC23getUint16ArrayClassInfoEv, __ZN3JSC23getUint32ArrayClassInfoEv, 
                        __ZN3JSC23objectConstructorFreezeEPNS_9ExecStateEPNS_8JSObjectE, 
@@ -1837,7 +1840,6 @@ exports:
                        __ZN3JSC8JSObject23putDirectNativeFunctionERNS_2VMEPNS_14JSGlobalObjectERKNS_12PropertyNameEjPFxPNS_9ExecStateEENS_9IntrinsicEPKNS_6DOMJIT9SignatureEj, 
                        __ZN3JSC8JSObject23putDirectNativeFunctionERNS_2VMEPNS_14JSGlobalObjectERKNS_12PropertyNameEjPFxPNS_9ExecStateEENS_9IntrinsicEj, 
                        __ZN3JSC8JSObject24getOwnPropertyDescriptorEPNS_9ExecStateENS_12PropertyNameERNS_18PropertyDescriptorE, 
-                       __ZN3JSC8JSObject24getOwnStaticPropertySlotERNS_2VMENS_12PropertyNameERNS_12PropertySlotE, 
                        __ZN3JSC8JSObject24putDirectBuiltinFunctionERNS_2VMEPNS_14JSGlobalObjectERKNS_12PropertyNameEPNS_18FunctionExecutableEj, 
                        __ZN3JSC8JSObject25getOwnPropertySlotByIndexEPS0_PNS_9ExecStateEjRNS_12PropertySlotE, 
                        __ZN3JSC8JSObject25getStructurePropertyNamesEPS0_PNS_9ExecStateERNS_17PropertyNameArrayENS_15EnumerationModeE, 

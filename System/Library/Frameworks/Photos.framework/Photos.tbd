@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 89A9FDD0-D99B-3DDF-AF6B-F81D0EA1B794' ]
+uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 5F03DF0E-F1CB-372C-B5E1-316BE8CEECAE' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Photos.framework/Photos
 objc-constraint: none

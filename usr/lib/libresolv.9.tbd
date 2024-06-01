@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D31F167E-6E80-3771-9960-66088B5F3BFF', 'x86_64: 6D16DEA6-68D9-369C-BF66-9E304A4586A1' ]
+uuids:           [ 'i386: D31F167E-6E80-3771-9960-66088B5F3BFF', 'x86_64: FB13C2C0-2864-3475-A2DA-E8546BB903AC' ]
 platform:        ios
 install-name:    /usr/lib/libresolv.9.dylib
 objc-constraint: none

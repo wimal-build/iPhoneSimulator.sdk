@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A86020C8-924C-36D4-B300-418461B79B43' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: FAC182BD-0168-34FC-8315-F020AAB2D524' ]
 platform:        ios
 install-name:    /usr/lib/libapple_crypto.dylib
 current-version: 0

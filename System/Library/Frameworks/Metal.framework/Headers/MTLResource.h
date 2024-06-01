@@ -142,10 +142,6 @@ typedef NS_ENUM(NSUInteger, MTLStorageMode)
 #define MTLResourceHazardTrackingModeShift      8
 #define MTLResourceHazardTrackingModeMask       (0x1UL << MTLResourceHazardTrackingModeShift)
 
-#define MTLResourceReservedPrivateBitsShift     16
-#define MTLResourceReservedPrivateBit1         (0x1UL << MTLResourceReservedPrivateBitsShift)
-#define MTLResourceReservedPrivateBitsMask     (0xfUL << MTLResourceReservedPrivateBitsShift)
-
 typedef NS_OPTIONS(NSUInteger, MTLResourceOptions)
 {
     MTLResourceCPUCacheModeDefaultCache  = MTLCPUCacheModeDefaultCache  << MTLResourceCPUCacheModeShift,

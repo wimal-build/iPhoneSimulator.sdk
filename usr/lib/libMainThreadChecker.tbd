@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1D4C0B90-86E5-344A-AF05-8C17BDE11384' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5F147E47-155F-36D4-B6F2-5E7EAC5A047D' ]
 platform:        ios
 install-name:    /usr/lib/libMainThreadChecker.dylib
 objc-constraint: none

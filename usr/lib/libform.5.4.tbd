@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3954EF16-7EB0-3DE9-AD28-4B2DAC60171D', 'x86_64: 3870F21C-3D07-36CA-A0F1-E73307210C5B' ]
+uuids:           [ 'i386: 3954EF16-7EB0-3DE9-AD28-4B2DAC60171D', 'x86_64: 3EA2CB4C-BD73-3EE3-8ABF-7253EA25CFE2' ]
 platform:        ios
 install-name:    /usr/lib/libform.5.4.dylib
 current-version: 5.4

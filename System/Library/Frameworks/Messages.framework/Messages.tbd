@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1A6296A0-2313-3F92-AF4D-CDA5617762D5', 'x86_64: 0A2580B1-CC36-3B7B-ADA4-87239A58ACCE' ]
+uuids:           [ 'i386: 1A6296A0-2313-3F92-AF4D-CDA5617762D5', 'x86_64: 9B1F58E4-187A-37AD-875F-EBBCCB4CF374' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Messages.framework/Messages
 objc-constraint: none

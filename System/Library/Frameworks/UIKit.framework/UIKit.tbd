@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: ACF9D4D9-0378-3996-A9DA-C3F24CCD797D' ]
+uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: 43B826C4-9E66-3533-B688-8873F5C738E5' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UIKit.framework/UIKit
-current-version: 3698.52.10
+current-version: 3698.54.4
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -1637,10 +1637,10 @@ exports:
                        _UIViewControllerOneToOneTransitionContext._isToViewSet, _UIViewControllerOneToOneTransitionContext._toView ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8B42DCC5-6773-3491-B979-56DEC2549D27' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 564E2FFA-43AE-3A58-AFD4-31E270EC3475' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UIKit.framework/Frameworks/DocumentManager.framework/DocumentManager
-current-version: 68.7.11
+current-version: 68.8
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -1687,10 +1687,10 @@ exports:
                        UIDocumentBrowserViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: 6AC7D8AE-BB3F-3D6F-B223-2B91135B0C72' ]
+uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: B3527499-EE4D-3FDC-B152-B1551E6639FE' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-current-version: 546.2
+current-version: 546.4
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

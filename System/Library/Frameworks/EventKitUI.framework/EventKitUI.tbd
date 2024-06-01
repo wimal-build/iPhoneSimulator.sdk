@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 2332A648-BB2F-3D5C-B215-E176B0A7FEB9' ]
+uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 494560E9-89CE-3F19-9942-3B59CD8601EB' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/EventKitUI.framework/EventKitUI
 objc-constraint: none

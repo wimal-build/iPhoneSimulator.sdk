@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3B72D78C-F8B1-3572-89C5-583895F0DEDA', 'x86_64: 4E156849-FA15-3C6A-BBFC-69C7B259C641' ]
+uuids:           [ 'i386: 3B72D78C-F8B1-3572-89C5-583895F0DEDA', 'x86_64: BDAD7136-805F-3875-B17D-1E8EA8562F21' ]
 platform:        ios
 install-name:    /usr/lib/libAWDSupportFramework.dylib
 objc-constraint: none
@@ -65,7 +65,20 @@ exports:
                        AWDCFNetworkStreamTaskTiming._has, AWDCFNetworkStreamTaskTiming._isCellular, 
                        AWDCFNetworkStreamTaskTiming._procname, AWDCFNetworkStreamTaskTiming._resumeStart, 
                        AWDCFNetworkStreamTaskTiming._secureConnectionStart, AWDCFNetworkStreamTaskTiming._taskCreationStart, 
-                       AWDCFNetworkStreamTaskTiming._timestamp, AWDCoreRoutineDeletionGroupStats._has, 
+                       AWDCFNetworkStreamTaskTiming._timestamp, AWDCFNetworkTaskMetrics._activityUUID, 
+                       AWDCFNetworkTaskMetrics._didCompleteWithError, AWDCFNetworkTaskMetrics._error, 
+                       AWDCFNetworkTaskMetrics._has, AWDCFNetworkTaskMetrics._isBackground, 
+                       AWDCFNetworkTaskMetrics._numberOfRedirects, AWDCFNetworkTaskMetrics._numberOfRetries, 
+                       AWDCFNetworkTaskMetrics._taskResume, AWDCFNetworkTaskMetrics._taskType, 
+                       AWDCFNetworkTaskMetrics._timestamp, AWDCFNetworkTaskMetrics._transactionMetrics, 
+                       AWDCFNetworkTaskMetrics._underlyingError, AWDCFNetworkTaskMetrics._underlyingErrorDomain, 
+                       AWDCFNetworkTransactionMetrics._connectionUUID, AWDCFNetworkTransactionMetrics._has, 
+                       AWDCFNetworkTransactionMetrics._isRedirected, AWDCFNetworkTransactionMetrics._networkLoadType, 
+                       AWDCFNetworkTransactionMetrics._networkProtocolName, AWDCFNetworkTransactionMetrics._requestEnd, 
+                       AWDCFNetworkTransactionMetrics._requestStart, AWDCFNetworkTransactionMetrics._responseEnd, 
+                       AWDCFNetworkTransactionMetrics._responseStart, AWDCFNetworkTransactionMetrics._reusedConnection, 
+                       AWDCFNetworkTransactionMetrics._timestamp, AWDCFNetworkTransactionMetrics._totalBytesRead, 
+                       AWDCFNetworkTransactionMetrics._totalBytesWritten, AWDCoreRoutineDeletionGroupStats._has, 
                        AWDCoreRoutineDeletionGroupStats._itemType, AWDCoreRoutineDeletionGroupStats._oldestRecordAgeInDays, 
                        AWDCoreRoutineDeletionGroupStats._records, AWDCoreRoutineDeletionRecordStats._ageInDays, 
                        AWDCoreRoutineDeletionRecordStats._has, AWDCoreRoutineDeletionStats._deleteType, 
@@ -188,17 +201,19 @@ exports:
                        AWDNWConnectionReport._bytesRetransmitted, AWDNWConnectionReport._currentRTT, 
                        AWDNWConnectionReport._firstParty, AWDNWConnectionReport._ipv4Available, 
                        AWDNWConnectionReport._ipv4DNSServerCount, AWDNWConnectionReport._ipv6Available, 
-                       AWDNWConnectionReport._ipv6DNSServerCount, AWDNWConnectionReport._multipathBytesInCell, 
-                       AWDNWConnectionReport._multipathBytesInInitial, AWDNWConnectionReport._multipathBytesInWiFi, 
-                       AWDNWConnectionReport._multipathBytesOutCell, AWDNWConnectionReport._multipathBytesOutInitial, 
-                       AWDNWConnectionReport._multipathBytesOutWiFi, AWDNWConnectionReport._multipathServiceType, 
-                       AWDNWConnectionReport._packetsIn, AWDNWConnectionReport._packetsOut, 
-                       AWDNWConnectionReport._rTTvariance, AWDNWConnectionReport._smoothedRTT, 
-                       AWDNWConnectionReport._stackLevel, AWDNWConnectionReport._synRetransmissionCount, 
-                       AWDNWConnectionReport._synthesizedExtraIPv6Address, AWDNWConnectionReport._tfoUsed, 
-                       AWDNWConnectionReport._tlsVersion, AWDNWConnectionReport._tlsVersionTimeout, 
-                       AWDPushFilterChanged._changedReason, AWDPushFilterChanged._changedTopicsCount, 
-                       AWDPushFilterChanged._guid, AWDPushFilterChanged._has, AWDPushFilterChanged._timestamp, 
+                       AWDNWConnectionReport._ipv6DNSServerCount, AWDNWConnectionReport._isDaemon, 
+                       AWDNWConnectionReport._multipathBytesInCell, AWDNWConnectionReport._multipathBytesInInitial, 
+                       AWDNWConnectionReport._multipathBytesInWiFi, AWDNWConnectionReport._multipathBytesOutCell, 
+                       AWDNWConnectionReport._multipathBytesOutInitial, AWDNWConnectionReport._multipathBytesOutWiFi, 
+                       AWDNWConnectionReport._multipathServiceType, AWDNWConnectionReport._packetsIn, 
+                       AWDNWConnectionReport._packetsOut, AWDNWConnectionReport._processName, 
+                       AWDNWConnectionReport._rTTvariance, AWDNWConnectionReport._secondsSinceInterfaceChange, 
+                       AWDNWConnectionReport._smoothedRTT, AWDNWConnectionReport._stackLevel, 
+                       AWDNWConnectionReport._synRetransmissionCount, AWDNWConnectionReport._synthesizedExtraIPv6Address, 
+                       AWDNWConnectionReport._tfoUsed, AWDNWConnectionReport._tlsVersion, 
+                       AWDNWConnectionReport._tlsVersionTimeout, AWDPushFilterChanged._changedReason, 
+                       AWDPushFilterChanged._changedTopicsCount, AWDPushFilterChanged._guid, 
+                       AWDPushFilterChanged._has, AWDPushFilterChanged._timestamp, 
                        AWDPushFilterChanged._topic, AWDPushFilterSent._connectionType, 
                        AWDPushFilterSent._guid, AWDPushFilterSent._has, AWDPushFilterSent._linkQuality, 
                        AWDPushFilterSent._sentReason, AWDPushFilterSent._timestamp, 
@@ -227,6 +242,7 @@ exports:
                        AWDSpringBoardClawGesture._has, AWDSpringBoardClawGesture._timestamp ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _AWDCFNetworkCacheMetricsReadFrom, _AWDCFNetworkStreamTaskTimingReadFrom, 
+                       _AWDCFNetworkTaskMetricsReadFrom, _AWDCFNetworkTransactionMetricsReadFrom, 
                        _AWDCFNetworkW3CNavigationTimingReadFrom, _AWDCompanionSyncErrorEventReadFrom, 
                        _AWDCompanionSyncErrorNotificationReadFrom, _AWDCompanionSyncFullSyncDurationReadFrom, 
                        _AWDCompanionSyncReceiveEventReadFrom, _AWDCoreRoutineAssetVersionReadFrom, 
@@ -301,7 +317,8 @@ exports:
                        _AWDSpringBoardPressSequenceReadFrom, _AWDSpringBoardSOSAlertResponseReadFrom, 
                        _AWDSpringBoardSwitcherPresentationInteractionReadFrom, _AWDSpringBoardSwitcherToAppTransitionReadFrom, 
                        _AWDSpringBoardSystemGestureReadFrom, _AWDTupleReadFrom ]
-    objc-classes:    [ AWDCFNetworkCacheMetrics, AWDCFNetworkStreamTaskTiming, AWDCFNetworkW3CNavigationTiming, 
+    objc-classes:    [ AWDCFNetworkCacheMetrics, AWDCFNetworkStreamTaskTiming, AWDCFNetworkTaskMetrics, 
+                       AWDCFNetworkTransactionMetrics, AWDCFNetworkW3CNavigationTiming, 
                        AWDCompanionSyncErrorEvent, AWDCompanionSyncErrorNotification, 
                        AWDCompanionSyncFullSyncDuration, AWDCompanionSyncReceiveEvent, 
                        AWDCoreRoutineAssetVersion, AWDCoreRoutineDeletionGroupStats, 

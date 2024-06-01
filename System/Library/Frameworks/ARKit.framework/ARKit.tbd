@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D5DABF74-A489-3740-856A-C55BFCD353F3' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CB1F4CEA-00D4-3C44-ACE5-D4A230DD4AF3' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ARKit.framework/ARKit
 objc-constraint: none

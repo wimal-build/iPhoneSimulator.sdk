@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 2E41082A-987F-3E0E-9EF2-0D5D81F0395D' ]
+uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 3CF1C89F-021C-3C50-8660-BB13CBE9C05A' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-current-version: 1161.10
+current-version: 1161.21
 compatibility-version: 64
 objc-constraint: none
 exports:         

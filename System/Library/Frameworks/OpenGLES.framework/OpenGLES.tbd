@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 806E8754-BE82-33F1-ADC5-C665F2028F24', 'x86_64: 2D38ACE6-BE41-3809-9B47-06B2F9F41516' ]
+uuids:           [ 'i386: 806E8754-BE82-33F1-ADC5-C665F2028F24', 'x86_64: B8D9F8F0-1B8F-3D2F-B701-033766745F1B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/OpenGLES.framework/OpenGLES
 objc-constraint: none
