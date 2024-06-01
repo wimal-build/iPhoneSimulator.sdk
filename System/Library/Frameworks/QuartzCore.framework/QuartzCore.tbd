@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: 59DE97E7-08CC-3FD4-820D-1F3BBE24C6F9' ]
+uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: E2D9E5F0-02A0-340F-81AE-B9EBA004F68D' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 current-version: 1.11
@@ -41,8 +41,8 @@ exports:
                        _CAImageProviderSetImageSize, _CAImageProviderSetSubImage, 
                        _CAImageProviderSetSubImageWithSeed, _CAImageQueueCollect, 
                        _CAImageQueueConsumeUnconsumedInRange, _CAImageQueueCreate, 
-                       _CAImageQueueDeleteBuffer, _CAImageQueueFlush, _CAImageQueueFlushWithTransaction, 
-                       _CAImageQueueGetCapacity, _CAImageQueueGetDisplayMask, _CAImageQueueGetDisplayTime, 
+                       _CAImageQueueDeleteBuffer, _CAImageQueueFlush, _CAImageQueueGetCapacity, 
+                       _CAImageQueueGetDisplayMask, _CAImageQueueGetDisplayTime, 
                        _CAImageQueueGetDisplayedPixelCount, _CAImageQueueGetFlags, 
                        _CAImageQueueGetFramebufferID, _CAImageQueueGetGPURegistryID, 
                        _CAImageQueueGetHeight, _CAImageQueueGetLastUpdateHostTime, 
@@ -170,9 +170,10 @@ exports:
                        _kCADepthNormalizationNone, _kCADepthNormalizationWidth, _kCADisplayAuto, 
                        _kCADisplayClonedFrameCount, _kCADisplayDeviceName, _kCADisplayDolbyVision, 
                        _kCADisplayDolbyVisionLowLatency, _kCADisplayDolbyVisionNative, 
-                       _kCADisplayDolbyVisionTunneled, _kCADisplayFrameCount, _kCADisplayHDR10YCbCr420, 
-                       _kCADisplayHDR10YCbCr420LimitedRange, _kCADisplayHDR10YCbCr422, 
-                       _kCADisplayHDR10YCbCr422LimitedRange, _kCADisplayId, _kCADisplayInsetBounds, 
+                       _kCADisplayDolbyVisionTunneled, _kCADisplayFrameCount, _kCADisplayHDR10RGBFullRange, 
+                       _kCADisplayHDR10YCbCr420, _kCADisplayHDR10YCbCr420LimitedRange, 
+                       _kCADisplayHDR10YCbCr422, _kCADisplayHDR10YCbCr422LimitedRange, 
+                       _kCADisplayHDR10YCbCr444LimitedRange, _kCADisplayId, _kCADisplayInsetBounds, 
                        _kCADisplayModeDolby, _kCADisplayModeGamutBT2020, _kCADisplayModeGamutP3, 
                        _kCADisplayModeGamutSRGB, _kCADisplayModeHDR10, _kCADisplayModeHLG, 
                        _kCADisplayModeSDR, _kCADisplayName, _kCADisplayNone, _kCADisplayOrientationRotation0, 

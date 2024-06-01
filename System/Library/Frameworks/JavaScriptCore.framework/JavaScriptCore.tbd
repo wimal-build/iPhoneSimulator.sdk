@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 78D76A94-6C86-3920-A347-2D76537D4BB6' ]
+uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 9079D082-0D43-33D3-BA0F-46F83ACEDEF4' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-current-version: 607.1.40
+current-version: 607.3.9
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -833,7 +833,7 @@ exports:
                        __ZN3JSC8JSObject9classNameEPKS0_RNS_2VME, __ZN3JSC8Subspace33parallelNotEmptyMarkedBlockSourceEv, 
                        __ZN3JSC8SubspaceC2EN3WTF7CStringERNS_4HeapE, __ZN3JSC9ExecState18callerSourceOriginEv, 
                        __ZN3JSC9JSPromise7resolveERNS_14JSGlobalObjectENS_7JSValueE, 
-                       __ZN3JSC9Structure25nonPropertyTransitionSlowERNS_2VMEPS0_NS_21NonPropertyTransitionE, 
+                       __ZN3JSC9Structure16isValidPrototypeENS_7JSValueE, __ZN3JSC9Structure25nonPropertyTransitionSlowERNS_2VMEPS0_NS_21NonPropertyTransitionE, 
                        __ZN3JSC9constructEPNS_9ExecStateENS_7JSValueERKNS_7ArgListEPKc, 
                        __ZN3JSC9parseDateEPNS_9ExecStateERNS_2VMERKN3WTF6StringE, 
                        __ZN3WTF10ParkingLot11forEachImplERKNS_12ScopedLambdaIFvRNS_6ThreadEPKvEEE, 
@@ -1531,11 +1531,12 @@ exports:
                        __ZN9Inspector8Protocol16InspectorHelpers24parseEnumValueFromStringINS0_9Recording9InitiatorEEEN3WTF8OptionalIT_EERKNS5_6StringE, 
                        __ZNK3JSC11ArrayBuffer5sliceEd, __ZNK3JSC11ArrayBuffer5sliceEdd, 
                        __ZNK3JSC14FullCodeOrigin4dumpERN3WTF11PrintStreamE, __ZNK3JSC19HeapSnapshotBuilder18descriptionForCellEPNS_6JSCellE, 
-                       __ZNK3JSC2VM19vmEntryGlobalObjectEPKNS_9ExecStateE, __ZNK3JSC9ClassInfo4dumpERN3WTF11PrintStreamE, 
-                       __ZNK3JSC9ExecState11callerFrameERPNS_10EntryFrameE, __ZNK3JSC9JSPromise6resultERNS_2VME, 
-                       __ZNK3JSC9JSPromise6statusERNS_2VME, __ZNK3JSC9JSPromise9isHandledERNS_2VME, 
-                       __ZNK3WTF10StackTrace4dumpERNS_11PrintStreamEPKc, __ZNK3WTF10StringImpl10startsWithEPKcj, 
-                       __ZNK3WTF10StringImpl10tryGetUtf8ENS_14ConversionModeE, __ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE, 
+                       __ZNK3JSC2VM19vmEntryGlobalObjectEPKNS_9ExecStateE, __ZNK3JSC8JSObject43anyObjectInChainMayInterceptIndexedAccessesERNS_2VME, 
+                       __ZNK3JSC9ClassInfo4dumpERN3WTF11PrintStreamE, __ZNK3JSC9ExecState11callerFrameERPNS_10EntryFrameE, 
+                       __ZNK3JSC9JSPromise6resultERNS_2VME, __ZNK3JSC9JSPromise6statusERNS_2VME, 
+                       __ZNK3JSC9JSPromise9isHandledERNS_2VME, __ZNK3WTF10StackTrace4dumpERNS_11PrintStreamEPKc, 
+                       __ZNK3WTF10StringImpl10startsWithEPKcj, __ZNK3WTF10StringImpl10tryGetUtf8ENS_14ConversionModeE, 
+                       __ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE, 
                        __ZNK3WTF10StringImpl8endsWithEPKcj, __ZNK3WTF10StringView10tryGetUtf8ENS_14ConversionModeE, 
                        __ZNK3WTF10StringView14createCFStringEv, __ZNK3WTF10StringView23convertToASCIILowercaseEv, 
                        __ZNK3WTF10StringView23convertToASCIIUppercaseEv, __ZNK3WTF11Persistence7Decoder28bufferIsLargeEnoughToContainEm, 

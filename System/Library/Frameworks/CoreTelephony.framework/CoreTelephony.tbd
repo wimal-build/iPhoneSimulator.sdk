@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DF73425C-6876-3347-9359-77900FBA1F08', 'x86_64: 1D6CE371-176B-3DA5-A864-019BB1F02BED' ]
+uuids:           [ 'i386: DF73425C-6876-3347-9359-77900FBA1F08', 'x86_64: AFD5A983-C733-3313-A37B-969F6B0E5173' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
 current-version: 0
@@ -885,14 +885,15 @@ exports:
                        _kCTRegistrationDataIndicator, _kCTRegistrationDataIndicator2G, 
                        _kCTRegistrationDataIndicator2_5G, _kCTRegistrationDataIndicator3G, 
                        _kCTRegistrationDataIndicator3_5G, _kCTRegistrationDataIndicator3_75G, 
-                       _kCTRegistrationDataIndicator4G, _kCTRegistrationDataIndicator5G, 
-                       _kCTRegistrationDataIndicator6G, _kCTRegistrationDataIndicator7G, 
-                       _kCTRegistrationDataIndicator8G, _kCTRegistrationDataIndicator9G, 
-                       _kCTRegistrationDataIndicatorH_Plus, _kCTRegistrationDataIndicatorNone, 
-                       _kCTRegistrationDataIndicatorOverride, _kCTRegistrationDataRate2G, 
-                       _kCTRegistrationDataRate3G, _kCTRegistrationDataRate4G, _kCTRegistrationDataRate5G, 
-                       _kCTRegistrationDataRate6G, _kCTRegistrationDataRate7G, _kCTRegistrationDataRate8G, 
-                       _kCTRegistrationDataRate9G, _kCTRegistrationDataRateUnknown, 
+                       _kCTRegistrationDataIndicator4G, _kCTRegistrationDataIndicator4G_5GE, 
+                       _kCTRegistrationDataIndicator4G_LTEA, _kCTRegistrationDataIndicator4G_LTEPlus, 
+                       _kCTRegistrationDataIndicator5G, _kCTRegistrationDataIndicator6G, 
+                       _kCTRegistrationDataIndicator7G, _kCTRegistrationDataIndicator8G, 
+                       _kCTRegistrationDataIndicator9G, _kCTRegistrationDataIndicatorH_Plus, 
+                       _kCTRegistrationDataIndicatorNone, _kCTRegistrationDataIndicatorOverride, 
+                       _kCTRegistrationDataRate2G, _kCTRegistrationDataRate3G, _kCTRegistrationDataRate4G, 
+                       _kCTRegistrationDataRate5G, _kCTRegistrationDataRate6G, _kCTRegistrationDataRate7G, 
+                       _kCTRegistrationDataRate8G, _kCTRegistrationDataRate9G, _kCTRegistrationDataRateUnknown, 
                        _kCTRegistrationDataStatus, _kCTRegistrationDataStatusAttached, 
                        _kCTRegistrationDataStatusAttachedAndActive, _kCTRegistrationDataStatusChangedNotification, 
                        _kCTRegistrationDataStatusInternationalRoaming, _kCTRegistrationDataStatusUnattached, 

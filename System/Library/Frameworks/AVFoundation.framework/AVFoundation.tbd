@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 32B90D8A-BF01-3199-8511-C786EEAFD010' ]
+uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 747FD428-210E-380B-8638-D42A0EE5955B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 current-version: 2
@@ -845,7 +845,8 @@ exports:
                        _AVCaptureSystemPressureLevelShutdown, _AVCaptureVideoPreviewLayerDidStartRunningNotification, 
                        _AVCaptureWhiteBalanceGainsCurrent, _AVCaptureWhiteBalanceGainsInvalid, 
                        _AVContentAuthorizationInfoPlayInfoKey, _AVContentAuthorizationInfoSessionIDKey, 
-                       _AVContentKeyRequestProtocolVersionsKey, _AVContentKeyRequestRetryReasonReceivedObsoleteContentKey, 
+                       _AVContentKeyRequestProtocolVersionsKey, _AVContentKeyRequestRequiresExtendedValidationDataInSecureTokenKey, 
+                       _AVContentKeyRequestRetryReasonReceivedObsoleteContentKey, 
                        _AVContentKeyRequestRetryReasonReceivedResponseWithExpiredLease, 
                        _AVContentKeyRequestRetryReasonTimedOut, _AVContentKeySessionServerPlaybackContextOptionProtocolVersions, 
                        _AVContentKeySessionServerPlaybackContextOptionServerChallenge, 
@@ -865,7 +866,9 @@ exports:
                        _AVExternalDevicePerformanceReportPostedNotification, _AVExternalDeviceScreenBecameAvailableNotification, 
                        _AVExternalDeviceScreenBecameUnavailableNotification, _AVExternalDeviceScreenInputCapabilityHighFidelityTouch, 
                        _AVExternalDeviceScreenInputCapabilityKnobs, _AVExternalDeviceScreenInputCapabilityLowFidelityTouch, 
-                       _AVExternalDeviceScreenInputCapabilityTouchpad, _AVExternalProtectionMonitorExternalProtectionStateChangedNotification, 
+                       _AVExternalDeviceScreenInputCapabilityTouchpad, _AVExternalPlaybackMonitorAirPlayVideoActiveDidChangeNotification, 
+                       _AVExternalPlaybackMonitorAirPlayVideoPlayingDidChangeNotification, 
+                       _AVExternalProtectionMonitorExternalProtectionStateChangedNotification, 
                        _AVFileType3GPP, _AVFileType3GPP2, _AVFileTypeAC3, _AVFileTypeAIFC, 
                        _AVFileTypeAIFF, _AVFileTypeAMR, _AVFileTypeAVCI, _AVFileTypeAppleM4A, 
                        _AVFileTypeAppleM4V, _AVFileTypeAppleiTT, _AVFileTypeCoreAudioFormat, 
@@ -1201,8 +1204,8 @@ exports:
                        _AVOutputContextCanSetVolumeDidChangeNotification, _AVOutputContextCommunicationChannelControlTypeDirect, 
                        _AVOutputContextCommunicationChannelControlTypeRelayed, _AVOutputContextCommunicationChannelOptionControlType, 
                        _AVOutputContextDestinationChangeCancellationReasonAuthorizationSkipped, 
-                       _AVOutputContextDestinationChangeInitiatedNotification, _AVOutputContextDestinationChangeKey, 
-                       _AVOutputContextDeviceConnectionFailureReasonDeviceInUse, 
+                       _AVOutputContextDestinationChangeInitiatedNotification, _AVOutputContextDestinationChangeInitiatorKey, 
+                       _AVOutputContextDestinationChangeKey, _AVOutputContextDeviceConnectionFailureReasonDeviceInUse, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceNotConnectedToInternet, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceOutOfRange, 
                        _AVOutputContextDeviceConnectionFailureReasonNotAPeerInHomeGroup, 
@@ -1211,13 +1214,13 @@ exports:
                        _AVOutputContextManagerFailureReasonKey, _AVOutputContextManagerOutputContextDidFailToConnectToOutputDeviceNotification, 
                        _AVOutputContextManagerOutputDeviceKey, _AVOutputContextOutputDeviceDidChangeNotification, 
                        _AVOutputContextOutputDevicesDidChangeNotification, _AVOutputContextProvidesControlForAllVolumeFeaturesDidChangeNotification, 
-                       _AVOutputContextSetOutputDeviceCancelIfAuthRequiredKey, _AVOutputContextSetOutputDevicePasswordKey, 
-                       _AVOutputContextSetOutputDeviceSuppressUserInteractionOnSenderOnlyKey, 
-                       _AVOutputContextTypeAudio, _AVOutputContextTypeGroupControl, 
-                       _AVOutputContextTypeScreen, _AVOutputContextTypeSharedAudioPresentation, 
-                       _AVOutputContextTypeSharedSystemAudio, _AVOutputContextTypeSharedSystemScreen, 
-                       _AVOutputContextTypeVideo, _AVOutputContextVolumeDidChangeNotification, 
-                       _AVOutputDeviceAuthorizationRequestRetryReasonIncorrectAuthorizationToken, 
+                       _AVOutputContextSetOutputDeviceCancelIfAuthRequiredKey, _AVOutputContextSetOutputDeviceInitiatorKey, 
+                       _AVOutputContextSetOutputDevicePasswordKey, _AVOutputContextSetOutputDeviceSuppressUserInteractionOnSenderOnlyKey, 
+                       _AVOutputContextSetOutputDevicesOptionInitiator, _AVOutputContextTypeAudio, 
+                       _AVOutputContextTypeGroupControl, _AVOutputContextTypeScreen, 
+                       _AVOutputContextTypeSharedAudioPresentation, _AVOutputContextTypeSharedSystemAudio, 
+                       _AVOutputContextTypeSharedSystemScreen, _AVOutputContextTypeVideo, 
+                       _AVOutputContextVolumeDidChangeNotification, _AVOutputDeviceAuthorizationRequestRetryReasonIncorrectAuthorizationToken, 
                        _AVOutputDeviceAuthorizationTokenTypePIN, _AVOutputDeviceAuthorizationTokenTypePassword, 
                        _AVOutputDeviceBatteryLevelCaseKey, _AVOutputDeviceBatteryLevelLeftKey, 
                        _AVOutputDeviceBatteryLevelRightKey, _AVOutputDeviceCanSetVolumeDidChangeNotification, 
@@ -1267,6 +1270,9 @@ exports:
                        _AVPlayerWaitingWhileEvaluatingBufferingRateReason, _AVPlayerWaitingWithNoItemToPlayReason, 
                        _AVPropertyListForProxyCreationOption_ReduceMetadataForPhotoLibrary, 
                        _AVProtectedContentProviderFairPlay, _AVRouteDetectorMultipleRoutesDetectedDidChangeNotification, 
+                       _AVRoutingSessionManagerAllLikelyDestinationsDidChangeNotification, 
+                       _AVRoutingSessionManagerCurrentSessionDidChangeNotification, 
+                       _AVRoutingSessionManagerLikelyExternalDestinationsDidChangeNotification, 
                        _AVSampleBufferAudioRendererFlushTimeKey, _AVSampleBufferAudioRendererWasFlushedAutomaticallyNotification, 
                        _AVSampleBufferDisplayLayerFailedToDecodeNotification, _AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey, 
                        _AVSampleBufferRenderSynchronizerRateDidChangeNotification, 
@@ -1276,16 +1282,18 @@ exports:
                        _AVTrackAssociationTypeMetadataReferent, _AVTrackAssociationTypeSelectionFollower, 
                        _AVTrackAssociationTypeTimecode, _AVURLAssetAirPlayAuthorizationInfoKey, 
                        _AVURLAssetAllowedHTTPProtocolTypesKey, _AVURLAssetAllowsCellularAccessKey, 
-                       _AVURLAssetAlternativeConfigurationHierarchyTokenKey, _AVURLAssetAlternativeConfigurationOptionsKey, 
-                       _AVURLAssetAlternativeConfigurationServiceIdentifierKey, _AVURLAssetApplicationTransportSecurityKey, 
-                       _AVURLAssetBoundNetworkInterfaceName, _AVURLAssetCacheKey, 
-                       _AVURLAssetCacheNonPurgeableMemoryLimitKey, _AVURLAssetCacheUseNonPurgeableMemoryKey, 
-                       _AVURLAssetClientAuditTokenKey, _AVURLAssetClientBundleIdentifierKey, 
-                       _AVURLAssetDownloadCompleteFailedNotification, _AVURLAssetDownloadCompleteNotificationErrorKey, 
-                       _AVURLAssetDownloadCompleteSuccessNotification, _AVURLAssetDownloadDestinationURLKey, 
-                       _AVURLAssetDownloadIsLowPriorityKey, _AVURLAssetDownloadTokenKey, 
-                       _AVURLAssetEnableQUICKey, _AVURLAssetForceQUICKey, _AVURLAssetHTTPCookiesKey, 
-                       _AVURLAssetHTTPHeaderFieldsKey, _AVURLAssetInheritURIQueryComponentFromReferencingURIKey, 
+                       _AVURLAssetAlternativeConfigurationContentProviderKey, _AVURLAssetAlternativeConfigurationHierarchyTokenKey, 
+                       _AVURLAssetAlternativeConfigurationMediaIdentifierKey, _AVURLAssetAlternativeConfigurationOptionsKey, 
+                       _AVURLAssetAlternativeConfigurationServiceIdentifierKey, _AVURLAssetAlternativeConfigurationiTunesServiceMonitoringKey, 
+                       _AVURLAssetApplicationTransportSecurityKey, _AVURLAssetBoundNetworkInterfaceName, 
+                       _AVURLAssetCacheKey, _AVURLAssetCacheNonPurgeableMemoryLimitKey, 
+                       _AVURLAssetCacheUseNonPurgeableMemoryKey, _AVURLAssetClientAuditTokenKey, 
+                       _AVURLAssetClientBundleIdentifierKey, _AVURLAssetDownloadCompleteFailedNotification, 
+                       _AVURLAssetDownloadCompleteNotificationErrorKey, _AVURLAssetDownloadCompleteSuccessNotification, 
+                       _AVURLAssetDownloadDestinationURLKey, _AVURLAssetDownloadIsLowPriorityKey, 
+                       _AVURLAssetDownloadTokenKey, _AVURLAssetEnableQUICKey, _AVURLAssetForceQUICKey, 
+                       _AVURLAssetHTTPCookiesKey, _AVURLAssetHTTPHeaderFieldsKey, 
+                       _AVURLAssetInheritURIQueryComponentFromReferencingURIKey, 
                        _AVURLAssetLoggingIdentifier, _AVURLAssetMaxSizeAllowedForCellularAccessKey, 
                        _AVURLAssetNetworkLatencyMitigationKeyPodcastsOnly, _AVURLAssetNetworkProbeRequestDisabledKey, 
                        _AVURLAssetOptimizeAccessForLinearMoviePlaybackKey, _AVURLAssetOutOfBandAlternateTracksKey, 
@@ -1401,7 +1409,7 @@ exports:
                        AVContentKeySession, AVDateRangeMetadataGroup, AVDepthData, 
                        AVDisplayCriteria, AVDisplayCriteriaInternal, AVExecutionEnvironment, 
                        AVExternalDevice, AVExternalDeviceHID, AVExternalDeviceIcon, 
-                       AVExternalProtectionMonitor, AVExternalProtectionMonitorInternal, 
+                       AVExternalPlaybackMonitor, AVExternalProtectionMonitor, AVExternalProtectionMonitorInternal, 
                        AVFigAssetInspectorLoader, AVFigEndpointOutputDeviceImpl, 
                        AVFlashlight, AVFlashlightInternal, AVFragmentedAsset, AVFragmentedAssetMinder, 
                        AVFragmentedAssetTrack, AVFrameRateRange, AVFrameRateRangeInternal, 
@@ -1430,7 +1438,8 @@ exports:
                        AVPlayerItemMediaDataCollector, AVPlayerItemMetadataCollector, 
                        AVPlayerItemMetadataOutput, AVPlayerItemOutput, AVPlayerItemTrack, 
                        AVPlayerItemVideoOutput, AVPlayerLayer, AVPlayerLooper, AVPlayerMediaSelectionCriteria, 
-                       AVPortraitEffectsMatte, AVQueuePlayer, AVRouteDetector, AVRunLoopCondition, 
+                       AVPortraitEffectsMatte, AVQueuePlayer, AVRouteDetector, AVRoutingSession, 
+                       AVRoutingSessionDestination, AVRoutingSessionManager, AVRunLoopCondition, 
                        AVSampleBufferAudioRenderer, AVSampleBufferDisplayLayer, AVSampleBufferRenderSynchronizer, 
                        AVScheduledAudioParameters, AVSpecifiedLoggingIdentifier, 
                        AVStreamingResourceInspector, AVSynchronizedLayer, AVTextStyleRule, 
@@ -1601,7 +1610,7 @@ exports:
                        AVMutableMetadataItem._mutablePriv ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: E2BD6C3F-4C9C-365B-8001-D217D91D51C5' ]
+uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: 1795A4F7-932E-3F2D-AA27-3D2C42A94135' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio
 objc-constraint: none

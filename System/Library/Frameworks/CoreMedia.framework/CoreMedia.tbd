@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1B902B83-989C-3FA0-A587-476FCD5F3AF2', 'x86_64: B666AB8B-FDB5-331C-8D9B-AE4C7005E7CE' ]
+uuids:           [ 'i386: 1B902B83-989C-3FA0-A587-476FCD5F3AF2', 'x86_64: D924E184-9663-3031-A9BC-7A9B1541F1C3' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreMedia.framework/CoreMedia
 objc-constraint: none
@@ -660,8 +660,8 @@ exports:
                        _FigRegistryCopyFilteredItemList, _FigRegistryCopyItemList, 
                        _FigRegistryCreate, _FigRegistryGetTypeID, _FigRegistryItemCopyBundle, 
                        _FigRegistryItemCopyDescription, _FigRegistryItemCopyMatchingInfo, 
-                       _FigRegistryItemGetFactory, _FigRegistryItemGetTypeID, _FigRegistryRescan, 
-                       _FigRegistrySetIORegistryEntryArray, _FigReplaceStringWithURL, 
+                       _FigRegistryItemCreateCopy, _FigRegistryItemGetFactory, _FigRegistryItemGetTypeID, 
+                       _FigRegistryRescan, _FigRegistrySetIORegistryEntryArray, _FigReplaceStringWithURL, 
                        _FigReplaceURLWithString, _FigRetainProxyConditionVariableWaitRelative, 
                        _FigRetainProxyCreate, _FigRetainProxyGetLockCount, _FigRetainProxyGetOwner, 
                        _FigRetainProxyGetTypeID, _FigRetainProxyInvalidate, _FigRetainProxyIsInvalidated, 
@@ -1974,6 +1974,7 @@ exports:
                        _kFigEndpointPlaybackSessionEventType_UnhandledURLRequest, 
                        _kFigEndpointPlaybackSessionFPSSecureStopGeneratedKey_Record, 
                        _kFigEndpointPlaybackSessionItemType_Match, _kFigEndpointPlaybackSessionItemType_Purchased, 
+                       _kFigEndpointPlaybackSessionKey_AlternativeConfigurationOptions, 
                        _kFigEndpointPlaybackSessionKey_AppID, _kFigEndpointPlaybackSessionKey_AssetID, 
                        _kFigEndpointPlaybackSessionKey_BuyParams, _kFigEndpointPlaybackSessionKey_ClientBundleID, 
                        _kFigEndpointPlaybackSessionKey_ClientProcName, _kFigEndpointPlaybackSessionKey_ContentLocation, 
@@ -2068,7 +2069,7 @@ exports:
                        _kFigEndpointProperty_TightSyncBuddyNotReachable, _kFigEndpointProperty_TightSyncIsGroupLeader, 
                        _kFigEndpointProperty_TightSyncPeerP2PAddress, _kFigEndpointProperty_TightSyncUUID, 
                        _kFigEndpointProperty_TransportType, _kFigEndpointProperty_Type, 
-                       _kFigEndpointProperty_UseIndirectStarkSpeechModeTransitions, 
+                       _kFigEndpointProperty_URLPlaybackActivationToken, _kFigEndpointProperty_UseIndirectStarkSpeechModeTransitions, 
                        _kFigEndpointProperty_UseLegacyStarkModeActions, _kFigEndpointProperty_VehicleInformation, 
                        _kFigEndpointProperty_VoiceActivationType, _kFigEndpointProperty_Volume, 
                        _kFigEndpointProperty_VolumeControlSupported, _kFigEndpointProperty_VolumeControlType, 
@@ -2263,12 +2264,12 @@ exports:
                        _kFigQuadraRemosaicSampleBufferProcessorProperty_PaddingBottom, 
                        _kFigQuadraRemosaicSampleBufferProcessorProperty_PaddingTop, 
                        _kFigQuadraRemosaicSampleBufferProcessorProperty_QHDRSensorDefectivePixelInfo, 
-                       _kFigRegistry_IORegistry_Identifier, _kFigRegistry_IORegistry_Removable, 
-                       _kFigRegistry_IORegistry_Service, _kFigSampleAttachmentKey_EventMessageInfo, 
-                       _kFigSampleAttachmentKey_PreSwitch, _kFigSampleAttachmentKey_RestoreFromSaved, 
-                       _kFigSampleAttachmentKey_SaveForFuture, _kFigSampleBufferAttachmentKey_DepthDataDiscardedReason, 
-                       _kFigSampleBufferAttachmentKey_DepthMetadata, _kFigSampleBufferAttachmentKey_DestRect, 
-                       _kFigSampleBufferAttachmentKey_DurationFromMarkedSampleToEOF, 
+                       _kFigRegistry_IORegistry_External, _kFigRegistry_IORegistry_Identifier, 
+                       _kFigRegistry_IORegistry_Service, _kFigRegistry_IORegistry_Slotted, 
+                       _kFigSampleAttachmentKey_EventMessageInfo, _kFigSampleAttachmentKey_PreSwitch, 
+                       _kFigSampleAttachmentKey_RestoreFromSaved, _kFigSampleAttachmentKey_SaveForFuture, 
+                       _kFigSampleBufferAttachmentKey_DepthDataDiscardedReason, _kFigSampleBufferAttachmentKey_DepthMetadata, 
+                       _kFigSampleBufferAttachmentKey_DestRect, _kFigSampleBufferAttachmentKey_DurationFromMarkedSampleToEOF, 
                        _kFigSampleBufferAttachmentKey_HasCorrespondingDepthData, 
                        _kFigSampleBufferAttachmentKey_HasCorrespondingVisionData, 
                        _kFigSampleBufferAttachmentKey_LoudnessInfo, _kFigSampleBufferAttachmentKey_PortraitEffectsMatteMetadata, 

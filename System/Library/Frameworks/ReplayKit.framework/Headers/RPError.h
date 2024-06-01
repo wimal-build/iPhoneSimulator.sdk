@@ -28,5 +28,7 @@ typedef NS_ENUM(NSInteger, RPRecordingErrorCode) {
     RPRecordingErrorFailedApplicationConnectionInterrupted = -5815, // Failed during recording appliation connection interrupted
     RPRecordingErrorFailedNoMatchingApplicationContext = -5816, // Failed during recording context id does not match application
     RPRecordingErrorFailedMediaServicesFailure = -5817, // Failed during recording due to mediaservices failure
-    RPRecordingErrorVideoMixingFailure = -5818 // Failed during recording due to audio/video mixing failure
+    RPRecordingErrorVideoMixingFailure = -5818, // Failed during recording due to audio/video mixing failure
+    RPRecordingErrorBroadcastSetupFailed = -5819, // Broadcast setup failed because client process doesn't have required entitlement
+    RPRecordingErrorCodeSuccessful = 0 //Successfully saved video to camera
 };

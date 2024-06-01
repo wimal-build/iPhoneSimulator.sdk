@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DE751FE0-B1ED-3CF8-A3B2-62A102EB35CC', 'x86_64: F6E04425-055D-34A9-8783-1CF3DDF9866C' ]
+uuids:           [ 'i386: DE751FE0-B1ED-3CF8-A3B2-62A102EB35CC', 'x86_64: AE12B758-A750-367E-B59E-F2D3EC19B1B7' ]
 platform:        ios
 install-name:    /usr/lib/libutil.dylib
 objc-constraint: none

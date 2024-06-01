@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: 428D07F6-32FA-35E2-8B8C-FED00B023E7D' ]
+uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: 1EFD798D-85E8-3FCD-9221-42C3AF7DABB9' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
 objc-constraint: none
@@ -796,17 +796,17 @@ exports:
                        MPMediaChapterTimeMarker, MPMediaCompoundAllPredicate, MPMediaCompoundAnyPredicate, 
                        MPMediaCompoundPredicate, MPMediaConditionalPredicate, MPMediaContainmentPredicate, 
                        MPMediaControls, MPMediaControlsConfiguration, MPMediaControlsLanguageOptions, 
-                       MPMediaControlsStandaloneViewController, MPMediaControlsViewController, 
-                       MPMediaDownload, MPMediaDownloadManager, MPMediaEntity, MPMediaItem, 
-                       MPMediaItemArtwork, MPMediaItemCollection, MPMediaLibrary, 
-                       MPMediaLibraryAlbumAppData, MPMediaLibraryArtwork, MPMediaLibraryArtworkDataSource, 
-                       MPMediaLibraryArtworkRequest, MPMediaLibraryConnectionAssertion, 
-                       MPMediaLibraryDataProviderML3, MPMediaLibraryPlaybackItemMetadata, 
-                       MPMediaPersistentIDsPredicate, MPMediaPickerController, MPMediaPlaybackItemMetadata, 
-                       MPMediaPlaylist, MPMediaPlaylistCreationMetadata, MPMediaPredicate, 
-                       MPMediaPropertyPredicate, MPMediaQuery, MPMediaQueryCriteria, 
-                       MPMediaQueryMutableSectionInfo, MPMediaQueryNowPlayingItem, 
-                       MPMediaQueryQueueFeeder, MPMediaQueryQueueFeederItemIdentifier, 
+                       MPMediaControlsStandaloneViewController, MPMediaControlsStatusBarStyleOverridesCoordinator, 
+                       MPMediaControlsViewController, MPMediaDownload, MPMediaDownloadManager, 
+                       MPMediaEntity, MPMediaItem, MPMediaItemArtwork, MPMediaItemCollection, 
+                       MPMediaLibrary, MPMediaLibraryAlbumAppData, MPMediaLibraryArtwork, 
+                       MPMediaLibraryArtworkDataSource, MPMediaLibraryArtworkRequest, 
+                       MPMediaLibraryConnectionAssertion, MPMediaLibraryDataProviderML3, 
+                       MPMediaLibraryPlaybackItemMetadata, MPMediaPersistentIDsPredicate, 
+                       MPMediaPickerController, MPMediaPlaybackItemMetadata, MPMediaPlaylist, 
+                       MPMediaPlaylistCreationMetadata, MPMediaPredicate, MPMediaPropertyPredicate, 
+                       MPMediaQuery, MPMediaQueryCriteria, MPMediaQueryMutableSectionInfo, 
+                       MPMediaQueryNowPlayingItem, MPMediaQueryQueueFeeder, MPMediaQueryQueueFeederItemIdentifier, 
                        MPMediaQuerySection, MPMediaQuerySectionInfo, MPMiddlewareChain, 
                        MPModalPresentationWindow, MPModelAlbum, MPModelAlbumKind, 
                        MPModelArtist, MPModelArtistKind, MPModelComposer, MPModelComposerKind, 

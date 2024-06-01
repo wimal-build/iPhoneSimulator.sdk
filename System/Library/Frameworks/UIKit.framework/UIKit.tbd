@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: A981CA84-A6B5-3113-9575-E2482946CD68' ]
+uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: 0EB46229-24EB-3F37-8502-983466C32FD1' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UIKit.framework/UIKit
 current-version: 61000
@@ -1407,7 +1407,7 @@ exports:
                        /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0369DA98-937F-3253-A749-920F3FA6DFA6' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CA89C5E6-42EE-3581-9B7E-FB15DC925B69' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager
 current-version: 68.100.44
@@ -1459,7 +1459,7 @@ exports:
                        UIDocumentBrowserViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: 49C07382-810E-37CA-AA6D-CCE08A51ACC3' ]
+uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: C0D1DB00-267D-3FE8-9F77-A68696266E72' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 current-version: 553
@@ -1714,7 +1714,7 @@ exports:
                        _NSCachedAttributedString._runs ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2E773D57-D12B-34F5-BA2E-2AA7D6DC219D' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 993C712F-6B43-3BA2-9E6D-1540124AA857' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
 current-version: 61000
@@ -2733,7 +2733,8 @@ exports:
                        _UIStatusBarStyleIsTranslucent, _UIStatusBarStyleIsTranslucentWithLegacyAppearance, 
                        _UIStatusBarStyleKey, _UIStatusBarStyleLightContentString, 
                        _UIStatusBarStyleOpaqueBlackString, _UIStatusBarStyleOverrideAirPrintString, 
-                       _UIStatusBarStyleOverrideAssistantEyesFreeString, _UIStatusBarStyleOverrideBackgroundLocationString, 
+                       _UIStatusBarStyleOverrideAssistantEyesFreeString, _UIStatusBarStyleOverrideAutoAirPlayPlayingString, 
+                       _UIStatusBarStyleOverrideAutoAirPlayReadyString, _UIStatusBarStyleOverrideBackgroundLocationString, 
                        _UIStatusBarStyleOverrideCarPlayString, _UIStatusBarStyleOverrideDeveloperToolsString, 
                        _UIStatusBarStyleOverrideDiagnosticsString, _UIStatusBarStyleOverrideHearingAidRecordingString, 
                        _UIStatusBarStyleOverrideInCallString, _UIStatusBarStyleOverrideInVideoConferenceString, 
@@ -3100,10 +3101,10 @@ exports:
                        UIApplicationShortcutIcon, UIApplicationShortcutItem, UIAssignToContactActivity, 
                        UIAttachmentBehavior, UIAutoRotatingWindow, UIAutofillExtrasSuggestion, 
                        UIAutonomousSingleAppModeConfiguration, UIAutonomousSingleAppModeSession, 
-                       UIBarButtonItem, UIBarButtonItemGroup, UIBarItem, UIBezierPath, 
-                       UIBlurEffect, UIButton, UICalloutBar, UICalloutView, UICheckeredPatternView, 
-                       UIClassSwapper, UIClassicController, UICloudSharingController, 
-                       UICollectionLayoutGeometry, UICollectionLayoutGeometryAttribute, 
+                       UIBannerAction, UIBarButtonItem, UIBarButtonItemGroup, UIBarItem, 
+                       UIBezierPath, UIBlurEffect, UIButton, UICalloutBar, UICalloutView, 
+                       UICheckeredPatternView, UIClassSwapper, UIClassicController, 
+                       UICloudSharingController, UICollectionLayoutGeometry, UICollectionLayoutGeometryAttribute, 
                        UICollectionLayoutGeometryGroupAttribute, UICollectionLayoutGeometryGroupConfiguration, 
                        UICollectionLayoutGeometryGroupItemAttribute, UICollectionLayoutGeometryGroupItemConfiguration, 
                        UICollectionReusableView, UICollectionView, UICollectionViewCell, 
@@ -3252,10 +3253,10 @@ exports:
                        _UIAppearanceRecorder, _UIApplicationCanvas, _UIArrayController, 
                        _UIAssetManager, _UIAsyncInvocation, _UIAsyncInvocationObserver, 
                        _UIBackdropColorSettings, _UIBackdropView, _UIBackdropViewSettings, 
-                       _UIBatteryView, _UIBlendingHighlightView, _UIBlurThroughEffect, 
-                       _UIBoundingTextRectsSolver, _UIButtonBar, _UIButtonFeedbackGenerator, 
-                       _UIButtonFeedbackGeneratorConfiguration, _UICAPackageView, 
-                       _UICanvas, _UIClickFeedbackGenerator, _UIClickInteraction, 
+                       _UIBannerContent, _UIBannerController, _UIBatteryView, _UIBlendingHighlightView, 
+                       _UIBlurThroughEffect, _UIBoundingTextRectsSolver, _UIButtonBar, 
+                       _UIButtonFeedbackGenerator, _UIButtonFeedbackGeneratorConfiguration, 
+                       _UICAPackageView, _UICanvas, _UIClickFeedbackGenerator, _UIClickInteraction, 
                        _UICollectionViewCompositionLayout, _UICollectionViewCompositionLayoutInvalidationContext, 
                        _UICollectionViewControllerLayoutToLayoutTransition, _UICompatibilityTextView, 
                        _UICompatibilityTextViewPrintFormatter, _UIContentUnavailableView, 

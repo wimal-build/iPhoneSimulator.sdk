@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: E2F07E7B-E0FE-3CAC-8E17-3AB6A1042C54' ]
+uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: D54153D7-3393-3F21-8126-42330591E693' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-current-version: 1570.15
+current-version: 1575.17
 compatibility-version: 150
 objc-constraint: none
 exports:         
@@ -863,20 +863,21 @@ exports:
                        __kCFURLFileIDKey, __kCFURLFilePathKey, __kCFURLFileSecurityKey, 
                        __kCFURLFileSizeOfResourceForkKey, __kCFURLFinderInfoKey, 
                        __kCFURLGroupIDKey, __kCFURLInodeNumberKey, __kCFURLIsApplicationKey, 
-                       __kCFURLIsCompressedKey, __kCFURLIsExecutableKey, __kCFURLIsReadableKey, 
-                       __kCFURLIsRestrictedKey, __kCFURLIsSystemAppendKey, __kCFURLIsSystemArchivedKey, 
-                       __kCFURLIsSystemNoUnlinkKey, __kCFURLIsUserAppendKey, __kCFURLIsUserDataVaultKey, 
-                       __kCFURLIsUserNoDumpKey, __kCFURLIsUserOpaqueKey, __kCFURLIsUserTrackedKey, 
-                       __kCFURLIsWriteableKey, __kCFURLLocalizedNameComponentsKey, 
-                       __kCFURLLocalizedNameDictionaryKey, __kCFURLLocalizedNameWithExtensionsHiddenDictionaryKey, 
-                       __kCFURLLocalizedTypeDescriptionDictionaryKey, __kCFURLNameExtensionKey, 
-                       __kCFURLOwnerIDKey, __kCFURLParentDirectoryIDKey, __kCFURLParentDirectoryIsVolumeRootKey, 
-                       __kCFURLPathKey, __kCFURLPromiseLogicalNameKey, __kCFURLPromisePhysicalURLKey, 
-                       __kCFURLPromisePropertiesKey, __kCFURLResolvedFromBookmarkDataKey, 
-                       __kCFURLShortVersionStringKey, __kCFURLStatModeKey, __kCFURLTypeBindingKey, 
-                       __kCFURLUbiquitousItemDownloadRequestedKey, __kCFURLUserCanExecuteKey, 
-                       __kCFURLUserCanReadKey, __kCFURLUserCanWriteKey, __kCFURLVersionKey, 
-                       __kCFURLVolumeCreationDateKey, __kCFURLVolumeDeviceIDKey, 
+                       __kCFURLIsCompressedKey, __kCFURLIsExcludedFromCloudBackupKey, 
+                       __kCFURLIsExcludedFromUnencryptedBackupKey, __kCFURLIsExecutableKey, 
+                       __kCFURLIsReadableKey, __kCFURLIsRestrictedKey, __kCFURLIsSystemAppendKey, 
+                       __kCFURLIsSystemArchivedKey, __kCFURLIsSystemNoUnlinkKey, 
+                       __kCFURLIsUserAppendKey, __kCFURLIsUserDataVaultKey, __kCFURLIsUserNoDumpKey, 
+                       __kCFURLIsUserOpaqueKey, __kCFURLIsUserTrackedKey, __kCFURLIsWriteableKey, 
+                       __kCFURLLocalizedNameComponentsKey, __kCFURLLocalizedNameDictionaryKey, 
+                       __kCFURLLocalizedNameWithExtensionsHiddenDictionaryKey, __kCFURLLocalizedTypeDescriptionDictionaryKey, 
+                       __kCFURLNameExtensionKey, __kCFURLOwnerIDKey, __kCFURLParentDirectoryIDKey, 
+                       __kCFURLParentDirectoryIsVolumeRootKey, __kCFURLPathKey, __kCFURLPromiseLogicalNameKey, 
+                       __kCFURLPromisePhysicalURLKey, __kCFURLPromisePropertiesKey, 
+                       __kCFURLResolvedFromBookmarkDataKey, __kCFURLShortVersionStringKey, 
+                       __kCFURLStatModeKey, __kCFURLTypeBindingKey, __kCFURLUbiquitousItemDownloadRequestedKey, 
+                       __kCFURLUserCanExecuteKey, __kCFURLUserCanReadKey, __kCFURLUserCanWriteKey, 
+                       __kCFURLVersionKey, __kCFURLVolumeCreationDateKey, __kCFURLVolumeDeviceIDKey, 
                        __kCFURLVolumeDontBrowseKey, __kCFURLVolumeIDKey, __kCFURLVolumeIsAutomountKey, 
                        __kCFURLVolumeIsCDKey, __kCFURLVolumeIsDVDKey, __kCFURLVolumeIsDeviceFileSystemKey, 
                        __kCFURLVolumeIsDiskImageKey, __kCFURLVolumeIsEjectableKey, 

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: A2BB1979-51F0-3DE7-AA7A-5A62F7BC65DE' ]
+uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: EB65EF2C-862F-3AF3-AED0-28FA7E0D52EE' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Security.framework/Security
-current-version: 58286.252.1
+current-version: 58286.255.3
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -417,9 +417,10 @@ exports:
                        _SecCertificateCreateWithPEM, _SecCertificateCreateWithXPCArrayAtIndex, 
                        _SecCertificateGetAuthorityKeyID, _SecCertificateGetBasicConstraints, 
                        _SecCertificateGetBytePtr, _SecCertificateGetCAIssuers, _SecCertificateGetCRLDistributionPoints, 
-                       _SecCertificateGetCertificatePolicies, _SecCertificateGetExcludedSubtrees, 
-                       _SecCertificateGetExtensionValue, _SecCertificateGetInhibitAnyPolicySkipCerts, 
-                       _SecCertificateGetKeyUsage, _SecCertificateGetLength, _SecCertificateGetNormalizedIssuerContent, 
+                       _SecCertificateGetCertificatePolicies, _SecCertificateGetDeveloperIDDate, 
+                       _SecCertificateGetExcludedSubtrees, _SecCertificateGetExtensionValue, 
+                       _SecCertificateGetInhibitAnyPolicySkipCerts, _SecCertificateGetKeyUsage, 
+                       _SecCertificateGetLength, _SecCertificateGetNormalizedIssuerContent, 
                        _SecCertificateGetNormalizedSubjectContent, _SecCertificateGetOCSPResponders, 
                        _SecCertificateGetPermittedSubtrees, _SecCertificateGetPolicyConstraints, 
                        _SecCertificateGetPolicyMappings, _SecCertificateGetPublicKeyAlgorithm, 

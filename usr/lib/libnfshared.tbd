@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 65F4250F-DD7D-3AD8-B5BB-CA3F4B5193FF' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B57BBA55-379B-36B2-92E2-8A9ACE876AA2' ]
 platform:        ios
 install-name:    /usr/lib/libnfshared.dylib
 objc-constraint: none
@@ -21,7 +21,8 @@ exports:
                        _TLVCreateWithData, _TLVCreateWithDataMixed, _TLVCreateWithFirstChild, 
                        _TLVCreateWithValue, _TLVRelease, _TLVRetain, __NFSharedLogClose, 
                        __NFSharedLogOpen, ___NFSharedLogv, _gRootQueueMutex, _postAWDHardwareExceptionEvent, 
-                       _postAWDLPCDStatistic, _postAWDMiddlewareExceptionEvent, _resetAWDLoadStackExceptionCount ]
+                       _postAWDLPCDStatistic, _postAWDMainSERemovedEvent, _postAWDMiddlewareExceptionEvent, 
+                       _resetAWDLoadStackExceptionCount ]
     objc-classes:    [ NFAWDLogger, NFCurrency, NFJSONEncoder, NFMSEIParser, NFMemoryObserver, 
                        NFNdefMessageInternal, NFNdefRecordInternal, NFPowerAssertion, 
                        NFPowerObserver, NFPreferenceObserver, NFPropertyCoder, NFReaderSessionCallbacks, 

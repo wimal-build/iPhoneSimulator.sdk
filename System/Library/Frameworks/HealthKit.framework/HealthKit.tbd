@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 68017FAA-DCE1-31DE-B07D-193E528607D5', 'x86_64: E5F3EBB0-A177-32F1-A5D4-430B30AC7BEC' ]
+uuids:           [ 'i386: 68017FAA-DCE1-31DE-B07D-193E528607D5', 'x86_64: 0D0039AA-BE14-3BD6-AD5D-9808158366F3' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/HealthKit.framework/HealthKit
 objc-constraint: none
@@ -132,16 +132,17 @@ exports:
                        _HKConditionallyRedactedHeartRhythmString, _HKConnectedGymSourceName, 
                        _HKCorrelationTypeIdentifierBloodPressure, _HKCorrelationTypeIdentifierFood, 
                        _HKCountryCodeAmericanSamoa, _HKCountryCodeAustria, _HKCountryCodeBelgium, 
-                       _HKCountryCodeChina, _HKCountryCodeDenmark, _HKCountryCodeFinland, 
-                       _HKCountryCodeFrance, _HKCountryCodeGermany, _HKCountryCodeGreece, 
-                       _HKCountryCodeGuam, _HKCountryCodeHongKong, _HKCountryCodeHungary, 
+                       _HKCountryCodeChina, _HKCountryCodeCroatia, _HKCountryCodeCzechRepublic, 
+                       _HKCountryCodeDenmark, _HKCountryCodeFinland, _HKCountryCodeFrance, 
+                       _HKCountryCodeGermany, _HKCountryCodeGreece, _HKCountryCodeGuam, 
+                       _HKCountryCodeHongKong, _HKCountryCodeHungary, _HKCountryCodeIceland, 
                        _HKCountryCodeIreland, _HKCountryCodeItaly, _HKCountryCodeLuxembourg, 
                        _HKCountryCodeNetherlands, _HKCountryCodeNorthernMarianaIslands, 
-                       _HKCountryCodeNorway, _HKCountryCodePortugal, _HKCountryCodePuertoRico, 
-                       _HKCountryCodeRomania, _HKCountryCodeSpain, _HKCountryCodeSweden, 
-                       _HKCountryCodeSwitzerland, _HKCountryCodeUSOutlyingIslands, 
-                       _HKCountryCodeUSVirginIslands, _HKCountryCodeUnitedKingdom, 
-                       _HKCountryCodeUnitedStates, _HKCreateConcurrentDispatchQueue, 
+                       _HKCountryCodeNorway, _HKCountryCodePoland, _HKCountryCodePortugal, 
+                       _HKCountryCodePuertoRico, _HKCountryCodeRomania, _HKCountryCodeSlovakia, 
+                       _HKCountryCodeSpain, _HKCountryCodeSweden, _HKCountryCodeSwitzerland, 
+                       _HKCountryCodeUSOutlyingIslands, _HKCountryCodeUSVirginIslands, 
+                       _HKCountryCodeUnitedKingdom, _HKCountryCodeUnitedStates, _HKCreateConcurrentDispatchQueue, 
                        _HKCreateSerialDispatchQueue, _HKCreateSerialDispatchQueueWithQOSClass, 
                        _HKCreateSerialUtilityDispatchQueue, _HKDailyBriskMinutesGoal, 
                        _HKDailyStandingHoursGoal, _HKDataTypeDefinitions, _HKDateMax, 
@@ -161,9 +162,10 @@ exports:
                        _HKDeviceRegionCodeIcelandSouthAfrica, _HKDeviceRegionCodeIrelandJerseyUK, 
                        _HKDeviceRegionCodeItalyPortugalSpain, _HKDeviceRegionCodeJapan, 
                        _HKDeviceRegionCodeMalaysia, _HKDeviceRegionCodeSeries4CentralEurope, 
-                       _HKDeviceRegionCodeSeries4CzechRepublicHungary, _HKDeviceRegionCodeSeries4DenmarkNorway, 
-                       _HKDeviceRegionCodeSeries4FinlandSweden, _HKDeviceRegionCodeSeries4GermanyAustriaSwitzerland, 
-                       _HKDeviceRegionCodeSeries4GreeceKazakstan, _HKDeviceRegionCodeSeries4HongKongMacau, 
+                       _HKDeviceRegionCodeSeries4CroatiaSlovakia, _HKDeviceRegionCodeSeries4CzechRepublicHungary, 
+                       _HKDeviceRegionCodeSeries4DenmarkNorway, _HKDeviceRegionCodeSeries4FinlandSweden, 
+                       _HKDeviceRegionCodeSeries4GermanyAustriaSwitzerland, _HKDeviceRegionCodeSeries4GreeceKazakstan, 
+                       _HKDeviceRegionCodeSeries4HongKongMacau, _HKDeviceRegionCodeSeries4IcelandSouthAfrica, 
                        _HKDeviceRegionCodeSeries4IrelandJerseyGuernseyUK, _HKDeviceRegionCodeSeries4ItalySpain, 
                        _HKDeviceRegionCodeSeries4PolandRomania, _HKDeviceRegionCodeSeries4Portugal, 
                        _HKDeviceRegionCodeSouthAmerica, _HKDeviceRegionCodeUnitedStates, 

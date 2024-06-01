@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3E414E22-6902-3A1C-B020-F370871FABCC' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 586818B4-DCE8-34AD-9531-2F602B3E1EC8' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/IOSurface.framework/IOSurface
 objc-constraint: none

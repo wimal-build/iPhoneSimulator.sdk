@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FA1710E4-822F-3729-B3D2-702147BB9917', 'x86_64: DBD915FF-6281-3D23-93A2-D0093E0552F8' ]
+uuids:           [ 'i386: FA1710E4-822F-3729-B3D2-702147BB9917', 'x86_64: CEA8B756-4511-376B-9BCB-A2A7D0152AEE' ]
 platform:        ios
 install-name:    /usr/lib/libicucore.A.dylib
 current-version: 62.1
@@ -246,7 +246,8 @@ exports:
                        __ZN3icu15SimpleFormatter6formatEPKDsiPKPKNS_13UnicodeStringERS3_S5_aPiiR10UErrorCode, 
                        __ZN3icu16BytesTrieBuilder3addENS_11StringPieceEiR10UErrorCode, 
                        __ZN3icu16DateIntervalInfo16DateIntervalSinkD0Ev, __ZN3icu16DateIntervalInfo16DateIntervalSinkD1Ev, 
-                       __ZN3icu16DateIntervalInfo16DateIntervalSinkD2Ev, __ZN3icu16ReorderingBuffer12appendZeroCCEPKDsS2_R10UErrorCode, 
+                       __ZN3icu16DateIntervalInfo16DateIntervalSinkD2Ev, __ZN3icu16JapaneseCalendar18enableTentativeEraEv, 
+                       __ZN3icu16ReorderingBuffer12appendZeroCCEPKDsS2_R10UErrorCode, 
                        __ZN3icu16ReorderingBuffer6appendEPKDsihhR10UErrorCode, __ZN3icu16ReorderingBufferC1ERKNS_15Normalizer2ImplERNS_13UnicodeStringER10UErrorCode, 
                        __ZN3icu16ReorderingBufferC2ERKNS_15Normalizer2ImplERNS_13UnicodeStringER10UErrorCode, 
                        __ZN3icu16SimpleDateFormat12isSyntaxCharEDs, __ZN3icu16SimpleDateFormat16getLevelFromCharEDs, 
@@ -563,8 +564,10 @@ exports:
                        __ZN3icu7unisets10chooseFromENS_13UnicodeStringENS0_3KeyE, 
                        __ZN3icu7unisets10chooseFromENS_13UnicodeStringENS0_3KeyES2_, 
                        __ZN3icu7unisets3getENS0_3KeyE, __ZN3icu8Calendar17computeZoneOffsetEddR10UErrorCode, 
-                       __ZN3icu8ZoneMeta23getShortIDFromCanonicalEPKDs, __ZN3icu8numparse4impl12ParsedNumber11postProcessEv, 
-                       __ZN3icu8numparse4impl12ParsedNumber12isBetterThanERKS2_, 
+                       __ZN3icu8EraRules14createInstanceEPKcaR10UErrorCode, __ZN3icu8EraRules14initCurrentEraEv, 
+                       __ZN3icu8EraRulesC1ERNS_11LocalMemoryIiEEi, __ZN3icu8EraRulesC2ERNS_11LocalMemoryIiEEi, 
+                       __ZN3icu8EraRulesD1Ev, __ZN3icu8EraRulesD2Ev, __ZN3icu8ZoneMeta23getShortIDFromCanonicalEPKDs, 
+                       __ZN3icu8numparse4impl12ParsedNumber11postProcessEv, __ZN3icu8numparse4impl12ParsedNumber12isBetterThanERKS2_, 
                        __ZN3icu8numparse4impl12ParsedNumber16setCharsConsumedERKNS1_13StringSegmentE, 
                        __ZN3icu8numparse4impl12ParsedNumber5clearEv, __ZN3icu8numparse4impl12ParsedNumberC1Ev, 
                        __ZN3icu8numparse4impl12ParsedNumberC2Ev, __ZN3icu8numparse4impl13StringSegment11resetLengthEv, 
@@ -815,8 +818,9 @@ exports:
                        __ZNK3icu6number5Scale7applyToERNS0_4impl15DecimalQuantityE, 
                        __ZNK3icu6number9Precision12withCurrencyERKNS_12CurrencyUnitER10UErrorCode, 
                        __ZNK3icu6number9Precision8withModeE25UNumberFormatRoundingMode, 
-                       __ZNK3icu8Collator7compareEPKDsiS2_i, __ZNK3icu8numparse4impl12ParsedNumber10seenNumberEv, 
-                       __ZNK3icu8numparse4impl12ParsedNumber19populateFormattableERNS_11FormattableEi, 
+                       __ZNK3icu8Collator7compareEPKDsiS2_i, __ZNK3icu8EraRules11getEraIndexEiiiR10UErrorCode, 
+                       __ZNK3icu8EraRules12getStartDateEiRA3_iR10UErrorCode, __ZNK3icu8EraRules12getStartYearEiR10UErrorCode, 
+                       __ZNK3icu8numparse4impl12ParsedNumber10seenNumberEv, __ZNK3icu8numparse4impl12ParsedNumber19populateFormattableERNS_11FormattableEi, 
                        __ZNK3icu8numparse4impl12ParsedNumber7successEv, __ZNK3icu8numparse4impl12ParsedNumber9getDoubleEv, 
                        __ZNK3icu8numparse4impl13SeriesMatcher11postProcessERNS1_12ParsedNumberE, 
                        __ZNK3icu8numparse4impl13SeriesMatcher5matchERNS1_13StringSegmentERNS1_12ParsedNumberER10UErrorCode, 

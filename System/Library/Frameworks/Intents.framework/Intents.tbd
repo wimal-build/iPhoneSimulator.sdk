@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADDA75B9-764A-387D-81E9-39CCE6592628', 'x86_64: 59EF9E63-2FBA-3E71-B7B0-805DA5272953' ]
+uuids:           [ 'i386: ADDA75B9-764A-387D-81E9-39CCE6592628', 'x86_64: A3E45431-48AF-30F7-8814-F6D8DAB31B92' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Intents.framework/Intents
 objc-constraint: none
@@ -351,10 +351,10 @@ exports:
                        _INIntentsRestrictedWhileLocked, _INIntentsRestrictedWhileProtectedDataUnavailable, 
                        _INIntentsServiceExtensionPointName, _INIntentsUIServiceExtensionPointName, 
                        _INInteractionAudioCallContentType, _INInteractionContentType, 
-                       _INInteractionMediaPlaybackContentType, _INInteractionMessageContentType, 
-                       _INInteractionSpotlightDomain, _INInteractionSpotlightIdentifierPrefix, 
-                       _INInteractionVideoCallContentType, _INInteractionWithTypedInteraction, 
-                       _INIsDeviceLocked, _INIssueSandboxExtensionsForFileURLEnumerable, 
+                       _INInteractionMediaAirPlayContentType, _INInteractionMediaPlaybackContentType, 
+                       _INInteractionMessageContentType, _INInteractionSpotlightDomain, 
+                       _INInteractionSpotlightIdentifierPrefix, _INInteractionVideoCallContentType, 
+                       _INInteractionWithTypedInteraction, _INIsDeviceLocked, _INIssueSandboxExtensionsForFileURLEnumerable, 
                        _INIssueSandboxExtensionsForFileURLEnumerableToProcess, _INItemIntentClassAttribute, 
                        _INItemIntentDataAttribute, _INKeyImageUtilitiesDefaultCompareSubProducers, 
                        _INKeyImageUtilitiesKeyImageBySubProducerComparison, _INKeyImageUtilitiesSortedSubProducersForSlotComposingProducer, 

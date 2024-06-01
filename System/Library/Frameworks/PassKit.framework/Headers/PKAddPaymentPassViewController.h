@@ -58,6 +58,10 @@ API_AVAILABLE(ios(9.0))
  */
 @property (nonatomic, copy, nullable) PKPaymentNetwork paymentNetwork;
 
+/* Filters introduction page to a specific set of images - does not function as a restriction.
+ */
+@property (nonatomic, copy) NSSet<NSString *> *productIdentifiers API_AVAILABLE(ios(12.3));
+
 @property (nonatomic, assign) BOOL requiresFelicaSecureElement API_AVAILABLE(ios(10.1));
 
 @end

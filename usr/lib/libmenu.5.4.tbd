@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E98CAC34-BB2B-3976-AD26-6B69C5E20E60', 'x86_64: 8284EC0F-C3B3-3BD9-B0AD-2CCBC9526201' ]
+uuids:           [ 'i386: E98CAC34-BB2B-3976-AD26-6B69C5E20E60', 'x86_64: 59B4EC5F-4AC0-30C8-A2E3-DC686E21DF38' ]
 platform:        ios
 install-name:    /usr/lib/libmenu.5.4.dylib
 current-version: 5.4

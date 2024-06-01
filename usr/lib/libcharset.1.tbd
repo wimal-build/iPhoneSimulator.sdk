@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FD92A58D-C382-3EF3-97FC-E3C661A09F7E', 'x86_64: EB6954EE-7D2A-3944-B750-180A69B5BDE7' ]
+uuids:           [ 'i386: FD92A58D-C382-3EF3-97FC-E3C661A09F7E', 'x86_64: 5654FAC4-50EC-3320-A5CA-78F27B0E56E6' ]
 platform:        ios
 install-name:    /usr/lib/libcharset.1.dylib
 current-version: 2
