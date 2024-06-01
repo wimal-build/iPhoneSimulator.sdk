@@ -23,9 +23,8 @@ typedef NS_ENUM(NSInteger, EKCalendarChooserDisplayStyle) {
 
 @protocol EKCalendarChooserDelegate;
 
-NS_EXTENSION_UNAVAILABLE_IOS("EventKitUI is not supported in extensions")
-EVENTKITUI_CLASS_AVAILABLE(5_0)
-@interface EKCalendarChooser : UIViewController
+
+EVENTKITUI_EXTERN @interface EKCalendarChooser : UIViewController
 
 - (id)initWithSelectionStyle:(EKCalendarChooserSelectionStyle)selectionStyle
                 displayStyle:(EKCalendarChooserDisplayStyle)displayStyle

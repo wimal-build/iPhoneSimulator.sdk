@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see -[GCExtendedGamepad saveSnapshot]
  */
-GAMECONTROLLER_EXPORT
+API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0))
 @interface GCExtendedGamepadSnapshot : GCExtendedGamepad
 @property (atomic, copy) NSData *snapshotData;
 
@@ -32,9 +32,9 @@ GAMECONTROLLER_EXPORT
 typedef NS_ENUM(NSInteger, GCExtendedGamepadSnapshotDataVersion) {
     GCExtendedGamepadSnapshotDataVersion1 = 0x0100,
     GCExtendedGamepadSnapshotDataVersion2 = 0x0101
-};
+} API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 
-extern const GCExtendedGamepadSnapshotDataVersion GCCurrentExtendedGamepadSnapshotDataVersion;
+extern const GCExtendedGamepadSnapshotDataVersion GCCurrentExtendedGamepadSnapshotDataVersion API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 
 #pragma pack(push, 1)
 typedef struct {
@@ -55,7 +55,7 @@ typedef struct {
     float buttonY;
     float leftShoulder;
     float rightShoulder;
-
+    
     // Axes in the range [-1.0, 1.0]
     float leftThumbstickX;
     float leftThumbstickY;
@@ -67,27 +67,28 @@ typedef struct {
     float rightTrigger;
     
 #pragma mark - GCExtendedGamepadSnapshotDataVersion2+
+    // Boolean indicating whether the controller supports clickable thumbsticks (1) or not (0)
+    BOOL supportsClickableThumbsticks API_AVAILABLE(macos(10.14.1), ios(12.1), tvos(12.1));
+    
     // Left and right thumbstick clickable values (0, 1)
-    BOOL leftThumbstickButton API_AVAILABLE(macos(10.14.4), ios(12.2), tvos(12.2));
-    BOOL rightThumbstickButton API_AVAILABLE(macos(10.14.4), ios(12.2), tvos(12.2));
-
-} GCExtendedGamepadSnapshotData;
+    BOOL leftThumbstickButton API_AVAILABLE(macos(10.14.1), ios(12.1), tvos(12.1));
+    BOOL rightThumbstickButton API_AVAILABLE(macos(10.14.1), ios(12.1), tvos(12.1));
+    
+} GCExtendedGamepadSnapshotData API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 #pragma pack(pop)
 
 /**Fills out a snapshot from any compatible NSData source
  
  @return NO if data is nil, snapshotData is nil or the contents of data does not contain a compatible snapshot. YES for all other cases.
  */
-GAMECONTROLLER_EXPORT
-BOOL GCExtendedGamepadSnapshotDataFromNSData(GCExtendedGamepadSnapshotData *__nullable snapshotData, NSData *__nullable data);
+BOOL GCExtendedGamepadSnapshotDataFromNSData(GCExtendedGamepadSnapshotData *__nullable snapshotData, NSData *__nullable data) API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 
 /**Creates an NSData object from a snapshot.
  If the version and size is not set in the snapshot the data will automatically have the version GCCurrentExtendedGamepadSnapshotDataVersion and sizeof(GCExtendedGamepadSnapshotData) set as the values implicitly.
  
  @return nil if the snapshot is NULL, otherwise an NSData instance compatible with GCExtendedGamepadSnapshot.snapshotData
  */
-GAMECONTROLLER_EXPORT
-NSData *__nullable NSDataFromGCExtendedGamepadSnapshotData(GCExtendedGamepadSnapshotData *__nullable snapshotData);
+NSData *__nullable NSDataFromGCExtendedGamepadSnapshotData(GCExtendedGamepadSnapshotData *__nullable snapshotData) API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 
 
 #pragma mark - Deprecated Versioning System
@@ -121,21 +122,19 @@ typedef struct {
     float leftTrigger;
     float rightTrigger;
     
-} GCExtendedGamepadSnapShotDataV100 __attribute__((deprecated("GCExtendedGamepadSnapShotDataV100 has been deprecated, use GCExtendedGamepadSnapshotData instead")));
+} GCExtendedGamepadSnapShotDataV100 API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 #pragma pack(pop)
 
 /**Fills out a v100 snapshot from any compatible NSData source
  
  @return NO if data is nil, snapshotData is nil or the contents of data does not contain a compatible snapshot. YES for all other cases.
  */
-GAMECONTROLLER_EXPORT
-BOOL GCExtendedGamepadSnapShotDataV100FromNSData(GCExtendedGamepadSnapShotDataV100 *__nullable snapshotData, NSData *__nullable data) __attribute__((deprecated("GCExtendedGamepadSnapShotDataV100FromNSData has been deprecated, use GCExtendedGamepadSnapshotDataFromNSData instead")));
+BOOL GCExtendedGamepadSnapShotDataV100FromNSData(GCExtendedGamepadSnapShotDataV100 *__nullable snapshotData, NSData *__nullable data) API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 
 /**Creates an NSData object from a v100 snapshot.
  If the version and size is not set in the snapshot the data will automatically have version 0x100 and sizeof(GCExtendedGamepadSnapShotDataV100) set as the values implicitly.
  
  @return nil if the snapshot is NULL, otherwise an NSData instance compatible with GCExtendedGamepadSnapshot.snapshotData
  */
-GAMECONTROLLER_EXPORT
-NSData *__nullable NSDataFromGCExtendedGamepadSnapShotDataV100(GCExtendedGamepadSnapShotDataV100 *__nullable snapshotData) __attribute__((deprecated("NSDataFromGCExtendedGamepadSnapShotDataV100 has been deprecated, use NSDataFromGCExtendedGamepadSnapshotData instead")));
+NSData *__nullable NSDataFromGCExtendedGamepadSnapShotDataV100(GCExtendedGamepadSnapShotDataV100 *__nullable snapshotData) API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController controllerWithExtendedGamepad] instead", macos(10.11, 10.15), ios(9.0, 13.0), tvos(9.0, 13.0));
 NS_ASSUME_NONNULL_END

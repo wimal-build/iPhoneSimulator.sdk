@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityContainer.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibilityContainer.h>)
 //
 //  UIAccessibilityContainer.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIAccessibilityConstants.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -49,12 +50,12 @@ NS_ASSUME_NONNULL_BEGIN
 // A list of container elements managed by the receiver.
 // This can be used as an alternative to implementing the dynamic methods.
 // default == nil
-@property (nullable, nonatomic, strong) NSArray *accessibilityElements NS_AVAILABLE_IOS(8_0);
+@property (nullable, nonatomic, strong) NSArray *accessibilityElements API_AVAILABLE(ios(8.0));
 
 // Some containers provide more context for accessibility elements, such as tables or lists.
 // Set this property so that assistive technologies can output more information.
 // default == UIAccessibilityContainerTypeNone
-@property (nonatomic) UIAccessibilityContainerType accessibilityContainerType NS_AVAILABLE_IOS(11_0);
+@property (nonatomic) UIAccessibilityContainerType accessibilityContainerType API_AVAILABLE(ios(11.0));
 
 @end
 
@@ -63,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  convey more information specific to tables that contain structured data.
  */
 
-NS_CLASS_AVAILABLE_IOS(11_0) @protocol UIAccessibilityContainerDataTableCell <NSObject>
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) @protocol UIAccessibilityContainerDataTableCell <NSObject>
 @required
 
 // The row/column index + the row/column span.
@@ -73,7 +74,7 @@ NS_CLASS_AVAILABLE_IOS(11_0) @protocol UIAccessibilityContainerDataTableCell <NS
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(11_0) @protocol UIAccessibilityContainerDataTable <NSObject>
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) @protocol UIAccessibilityContainerDataTable <NSObject>
 @required
 
 // Return the cell element for a specific row/column, including elements that span rows/columns.

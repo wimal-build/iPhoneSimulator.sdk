@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrintPageRenderer.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPrintPageRenderer.h>)
 //
 //  UIPrintPageRenderer.h
 //  UIKit
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIPrintFormatter;
 
-NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintPageRenderer : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(4.2)) API_UNAVAILABLE(tvos) @interface UIPrintPageRenderer : NSObject
 
 @property(nonatomic) CGFloat   headerHeight;   // top of contentRect from printableRect
 @property(nonatomic) CGFloat   footerHeight;   // bottom of contentRect from printableRect
@@ -24,7 +24,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintPageRenderer : N
 
 @property(nonatomic,readonly) NSInteger numberOfPages;  // override point. page count. default is maximum page count needed for all formatters or 0
 
-@property(nullable,nonatomic,copy) NSArray<UIPrintFormatter *> *printFormatters;
+@property(nullable,atomic,copy) NSArray<UIPrintFormatter *> *printFormatters;
 - (nullable NSArray<UIPrintFormatter *> *)printFormattersForPageAtIndex:(NSInteger)pageIndex;
 - (void)addPrintFormatter:(UIPrintFormatter *)formatter startingAtPageAtIndex:(NSInteger)pageIndex;
 

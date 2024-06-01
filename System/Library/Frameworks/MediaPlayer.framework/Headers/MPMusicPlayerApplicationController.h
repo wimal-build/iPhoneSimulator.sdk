@@ -5,7 +5,9 @@
 //  Copyright © 2016-2017 Apple Inc. All rights reserved.
 //
 
-#import <MediaPlayer/MediaPlayer.h>
+#import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
+#import <MediaPlayer/MPMediaItem.h>
 #import <MediaPlayer/MPMusicPlayerController.h>
 
 NS_ASSUME_NONNULL_BEGIN

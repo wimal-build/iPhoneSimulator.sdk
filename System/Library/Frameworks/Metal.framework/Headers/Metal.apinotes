@@ -216,6 +216,34 @@ Enumerators:
   SwiftName: astc_12x10_ldr
 - Name: MTLPixelFormatASTC_12x12_LDR
   SwiftName: astc_12x12_ldr
+- Name: MTLPixelFormatASTC_4x4_HDR          
+  SwiftName: astc_4x4_hdr
+- Name: MTLPixelFormatASTC_5x4_HDR          
+  SwiftName: astc_5x4_hdr
+- Name: MTLPixelFormatASTC_5x5_HDR          
+  SwiftName: astc_5x6_hdr
+- Name: MTLPixelFormatASTC_6x5_HDR          
+  SwiftName: astc_6x5_hdr
+- Name: MTLPixelFormatASTC_6x6_HDR          
+  SwiftName: astc_6x5_hdr
+- Name: MTLPixelFormatASTC_8x5_HDR          
+  SwiftName: astc_8x5_hdr
+- Name: MTLPixelFormatASTC_8x6_HDR          
+  SwiftName: astc_8x6_hdr
+- Name: MTLPixelFormatASTC_8x8_HDR          
+  SwiftName: astc_8x8_hdr
+- Name: MTLPixelFormatASTC_10x5_HDR         
+  SwiftName: astc_10x5_hdr
+- Name: MTLPixelFormatASTC_10x6_HDR         
+  SwiftName: astc_10x6_hdr
+- Name: MTLPixelFormatASTC_10x8_HDR         
+  SwiftName: astc_10x8_hdr
+- Name: MTLPixelFormatASTC_10x10_HDR        
+  SwiftName: astc_10x10_hdr
+- Name: MTLPixelFormatASTC_12x10_HDR        
+  SwiftName: astc_12x10_hdr
+- Name: MTLPixelFormatASTC_12x12_HDR        
+  SwiftName: astc_12x12_hdr
 - Name: MTLTessellationControlPointIndexTypeUInt16
   SwiftName: uint16
 - Name: MTLTessellationControlPointIndexTypeUInt32
@@ -358,6 +386,37 @@ Classes:
     MethodKind: Instance
     SwiftPrivate: true
   - Selector: 'getSamplePositions:count:'
+    MethodKind: Instance
+    SwiftPrivate: true
+- Name: MTLRasterizationRateMapDescriptor
+  Methods:
+  - Selector: 'rasterizationRateMapDescriptorWithScreenSize:layerCount:layers:'
+    MethodKind: Class
+    SwiftPrivate: true
+  - Selector: 'rasterizationRateMapDescriptorWithScreenSize:layer:'
+    MethodKind: Class
+    SwiftPrivate: true
+  - Selector: 'rasterizationRateMapDescriptorWithScreenSize:'
+    MethodKind: Class
+    SwiftPrivate: true
+- Name: MTLRasterizationRateLayerDescriptor
+  Methods:
+  - Selector: 'initWithSampleCount:horizontal:vertical:'
+    MethodKind: Instance
+    SwiftPrivate: true
+  Properties:
+  - Name: 'horizontalSampleStorage'
+    PropertyKind: Instance
+    SwiftPrivate: true
+  - Name: 'verticalSampleStorage'
+    PropertyKind: Instance
+    SwiftPrivate: true
+- Name: MTLRasterizationRateSampleArray
+  Methods:
+  - Selector: 'objectAtIndexedSubscript:'
+    MethodKind: Instance
+    SwiftPrivate: true
+  - Selector: 'setObject:atIndexedSubscript:'
     MethodKind: Instance
     SwiftPrivate: true
 Protocols:
@@ -627,6 +686,12 @@ Protocols:
   - Selector: 'newIndirectCommandBufferWithDescriptor:maxCommandCount:options:'
     SwiftName: makeIndirectCommandBuffer(descriptor:maxCommandCount:options:)
     MethodKind: Instance
+  - Selector: 'newRasterizationRateMapWithDescriptor:'
+    MethodKind: Instance
+    SwiftName: makeRasterizationRateMap(descriptor:)
+  - Selector: 'supportsRasterizationRateMapWithLayerCount:'
+    MethodKind: Instance
+    SwiftName: supportsRasterizationRateMap(layerCount:)
 - Name: MTLDrawable
   Methods:
   - Selector: 'presentAtTime:'
@@ -642,6 +707,12 @@ Protocols:
     MethodKind: Instance
   - Selector: 'newTextureWithDescriptor:'
     SwiftName: makeTexture(descriptor:)
+    MethodKind: Instance
+  - Selector: 'newBufferWithLength:options:offset:'
+    SwiftName: makeBuffer(length:options:offset:)
+    MethodKind: Instance
+  - Selector: 'newTextureWithDescriptor:offset:'
+    SwiftName: makeTexture(descriptor:offset:)
     MethodKind: Instance
 - Name: MTLIndirectArgumentEncoder
   Methods:
@@ -705,12 +776,6 @@ Protocols:
     MethodKind: Instance
 - Name: MTLFunction
   Methods:
-  - Selector: 'newIndirectArgumentEncoderWithBufferIndex:'
-    SwiftName: makeIndirectArgumentEncoder(bufferIndex:)
-    MethodKind: Instance
-  - Selector: 'newIndirectArgumentEncoderWithBufferIndex:reflection:'
-    SwiftName: makeIndirectArgumentEncoder(bufferIndex:reflection:)
-    MethodKind: Instance
   - Selector: 'newArgumentEncoderWithBufferIndex:'
     SwiftName: makeArgumentEncoder(bufferIndex:)
     MethodKind: Instance
@@ -728,6 +793,24 @@ Protocols:
   - Selector: 'setColorStoreActionOptions:atIndex:'
     SwiftName: setColorStoreActionOptions(_:index:)
     MethodKind: Instance
+- Name: MTLRasterizationRateMap
+  Properties:
+  - Name: 'parameterBufferSizeAndAlign'
+    PropertyKind: Instance
+    SwiftName: parameterDataSizeAndAlign
+  Methods:
+  - Selector: 'copyParameterDataToBuffer:offset:'
+    MethodKind: Instance
+    SwiftName: copyParameterData(buffer:offset:)
+  - Selector: 'physicalSizeForLayer:'
+    MethodKind: Instance
+    SwiftName: physicalSize(layer:)
+  - Selector: 'mapScreenToPhysicalCoordinates:forLayer:'
+    MethodKind: Instance
+    SwiftName: physicalCoordinates(screenCoordinates:layer:)
+  - Selector: 'mapPhysicalToScreenCoordinates:forLayer:'
+    MethodKind: Instance
+    SwiftName: screenCoordinates(physicalCoordinates:layer:)
 - Name: MTLRenderCommandEncoder
   Methods:
   - Selector: 'setViewports:count:'
@@ -919,6 +1002,9 @@ Protocols:
     SwiftName: makeTextureView(pixelFormat:)
     MethodKind: Instance
   - Selector: 'newTextureViewWithPixelFormat:textureType:levels:slices:'
+    MethodKind: Instance
+    SwiftPrivate: true
+  - Selector: 'newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:'
     MethodKind: Instance
     SwiftPrivate: true
   - Selector: 'replaceRegion:mipmapLevel:withBytes:bytesPerRow:'
@@ -1346,6 +1432,10 @@ SwiftVersions:
       NullabilityOfRet: N
     - Selector: 'newTextureViewWithPixelFormat:textureType:levels:slices:'
       SwiftName: makeTextureView(pixelFormat:textureType:levels:slices:)
+      MethodKind: Instance
+      NullabilityOfRet: N
+    - Selector: 'newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:'
+      SwiftName: makeTextureView(pixelFormat:textureType:levels:slices:swizzle:)
       MethodKind: Instance
       NullabilityOfRet: N
 - Version: 4

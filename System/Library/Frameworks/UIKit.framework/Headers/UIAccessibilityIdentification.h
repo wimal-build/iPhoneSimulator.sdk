@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityIdentification.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibilityIdentification.h>)
 //
 //  UIAccessibilityIdentification.h
 //  UIKit
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  A string that identifies the user interface element.
  default == nil
 */
-@property(nullable, nonatomic, copy) NSString *accessibilityIdentifier NS_AVAILABLE_IOS(5_0);
+@property(nullable, nonatomic, copy) NSString *accessibilityIdentifier API_AVAILABLE(ios(5.0));
 
 @end
 

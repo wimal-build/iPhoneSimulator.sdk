@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXCall : NSObject
 
 @property (nonatomic, readonly, copy) NSUUID *UUID;
@@ -22,7 +22,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
 - (instancetype)init NS_UNAVAILABLE;
 
-- (BOOL)isEqualToCall:(CXCall *)call NS_SWIFT_UNAVAILABLE("Use == operator instead");
+- (BOOL)isEqualToCall:(CXCall *)call;
 
 @end
 

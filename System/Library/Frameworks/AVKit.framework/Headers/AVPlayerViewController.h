@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 	@abstract	AVPlayerViewController is a subclass of UIViewController that can be used to display the visual content of an AVPlayer object and the standard playback controls.
  */
 
-API_AVAILABLE(ios(8.0))
+API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @interface AVPlayerViewController : UIViewController
 
 /*!
@@ -87,6 +87,13 @@ API_AVAILABLE(ios(8.0))
 @property (nonatomic) BOOL exitsFullScreenWhenPlaybackEnds API_AVAILABLE(ios(11.0));
 
 /*!
+ 	@property	pixelBufferAttributes
+ 	@abstract	The client requirements for the visual output during playback.
+ 	@discussion	Pixel buffer attribute keys are defined in <CoreVideo/CVPixelBuffer.h>
+ */
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> *pixelBufferAttributes API_AVAILABLE(ios(9.0));
+
+/*!
 	@property	delegate
 	@abstract	The receiver's delegate.
  */
@@ -102,6 +109,28 @@ API_AVAILABLE(ios(8.0))
 
 @protocol AVPlayerViewControllerDelegate <NSObject>
 @optional
+
+/*!
+ 	@method		playerViewController:willBeginFullScreenPresentationWithAnimationCoordinator:
+ 	@param		playerViewController
+ 				The player view controller.
+ 	@param		coordinator
+ 				An object conforming to UIViewControllerTransitionCoordinator.
+ 	@abstract	Informs the delegate that AVPlayerViewController is about to start displaying its contents full screen.
+ 	@discussion	This method will not be called if a playerViewController is embedded inside a view controller that is being presented. If the receiver is embedded in a parent view controller, its content will be presented in a new full screen view controller and perhaps in a new window. Use the coordinator to determine whether the playerViewController or its full screen counterpart is being transitioned. Transitions can be interrupted -- use a completion block of one of the coordinator's animation methods to determine whether it has completed.
+ */
+- (void)playerViewController:(AVPlayerViewController *)playerViewController willBeginFullScreenPresentationWithAnimationCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator API_AVAILABLE(ios(12.0));
+
+/*!
+ 	@method		playerViewController:willEndFullScreenPresentationWithAnimationCoordinator:
+ 	@param		playerViewController
+ 				The player view controller.
+	@param		coordinator
+				An object conforming to UIViewControllerTransitionCoordinator.
+	@abstract	Informs the delegate that AVPlayerViewController is about to stop displaying its contents full screen.
+	@discussion	See the discussion of -[AVPlayerViewControllerDelegatePrivate playerViewController:willBeginFullScreenPresentationWithAnimationCoordinator:].
+ */
+- (void)playerViewController:(AVPlayerViewController *)playerViewController willEndFullScreenPresentationWithAnimationCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator API_AVAILABLE(ios(12.0));
 
 /*!
 	@method		playerViewControllerWillStartPictureInPicture:

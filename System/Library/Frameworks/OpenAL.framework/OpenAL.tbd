@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: EF7BDE07-F23C-35FB-B7D3-B6B9A4994BF4' ]
+uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: 46A33C15-02E1-3EF7-9038-99424B8D5844' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/OpenAL.framework/OpenAL
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/OpenAL.framework/OpenAL'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _alBuffer3f, _alBuffer3i, _alBufferData, _alBufferf, _alBufferfv, 

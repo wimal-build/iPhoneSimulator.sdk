@@ -9,7 +9,6 @@
 #import <Photos/PhotosTypes.h>
 #import <Photos/PHFetchResult.h>
 #import <Photos/PHPhotoLibrary.h>
-#import <Photos/PhotosDefines.h>
 
 #import <ImageIO/ImageIO.h>
 #import <CoreLocation/CLLocation.h>
@@ -17,16 +16,17 @@
 
 @class PHFetchOptions;
 @class PHAssetCollection;
-@class PHPerson;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.13), ios(8), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAsset : PHObject
+OS_EXPORT
+@interface PHAsset : PHObject
 
 #pragma mark - Properties
 
 // Playback style describes how the asset should be presented to the user (regardless of the backing media for that asset).  Use this value to choose the type of view and the appropriate APIs on the PHImageManager to display this asset
-@property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0);
+@property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle API_AVAILABLE(macos(10.15), ios(11), tvos(11));
 
 @property (nonatomic, assign, readonly) PHAssetMediaType mediaType;
 @property (nonatomic, assign, readonly) PHAssetMediaSubtype mediaSubtypes;
@@ -46,30 +46,31 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAsset : PHObject
 
 @property (nonatomic, assign, readonly, getter=isFavorite) BOOL favorite;
 
-@property (nonatomic, strong, readonly, nullable) NSString *burstIdentifier;
-@property (nonatomic, assign, readonly) PHAssetBurstSelectionType burstSelectionTypes;
-@property (nonatomic, assign, readonly) BOOL representsBurst;
+@property (nonatomic, strong, readonly, nullable) NSString *burstIdentifier API_AVAILABLE(macos(10.15));
+@property (nonatomic, assign, readonly) PHAssetBurstSelectionType burstSelectionTypes API_AVAILABLE(macos(10.15));
+@property (nonatomic, assign, readonly) BOOL representsBurst API_AVAILABLE(macos(10.15));
 
-@property (nonatomic, assign, readonly) PHAssetSourceType sourceType PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
+@property (nonatomic, assign, readonly) PHAssetSourceType sourceType API_AVAILABLE(ios(9));
 
 #pragma mark - Capabilities
 
-- (BOOL)canPerformEditOperation:(PHAssetEditOperation)editOperation;
+- (BOOL)canPerformEditOperation:(PHAssetEditOperation)editOperation API_AVAILABLE(macos(10.15));
 
 #pragma mark - Fetching assets
 
 + (PHFetchResult<PHAsset *> *)fetchAssetsInAssetCollection:(PHAssetCollection *)assetCollection options:(nullable PHFetchOptions *)options;
 + (PHFetchResult<PHAsset *> *)fetchAssetsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options; // includes hidden assets by default
 + (nullable PHFetchResult<PHAsset *> *)fetchKeyAssetsInAssetCollection:(PHAssetCollection *)assetCollection options:(nullable PHFetchOptions *)options;
-+ (PHFetchResult<PHAsset *> *)fetchAssetsWithBurstIdentifier:(NSString *)burstIdentifier options:(nullable PHFetchOptions *)options;
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithBurstIdentifier:(NSString *)burstIdentifier options:(nullable PHFetchOptions *)options API_AVAILABLE(macos(10.15));
 
 // Fetches PHAssetSourceTypeUserLibrary assets by default (use includeAssetSourceTypes option to override)
-+ (PHFetchResult<PHAsset *> *)fetchAssetsWithOptions:(nullable PHFetchOptions *)options;
-+ (PHFetchResult<PHAsset *> *)fetchAssetsWithMediaType:(PHAssetMediaType)mediaType options:(nullable PHFetchOptions *)options;
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithOptions:(nullable PHFetchOptions *)options API_AVAILABLE(macos(10.15));
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithMediaType:(PHAssetMediaType)mediaType options:(nullable PHFetchOptions *)options API_AVAILABLE(macos(10.15));
 
 // assetURLs are URLs retrieved from ALAsset's ALAssetPropertyAssetURL
-+ (PHFetchResult<PHAsset *> *)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> *)assetURLs options:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8.0, 11.0), tvos(8.0, 11.0));
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> *)assetURLs options:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8, 11), tvos(8, 11)) API_UNAVAILABLE(macCatalyst, macos);
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

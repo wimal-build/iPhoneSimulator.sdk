@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6F271AE7-E916-379B-B746-84C44BB12724', 'x86_64: 5F565BE2-92E6-3B9E-8AE6-D4B1DDB84DE0' ]
+uuids:           [ 'i386: 6F271AE7-E916-379B-B746-84C44BB12724', 'x86_64: F71B2B10-9313-3EE4-9536-39818645521C' ]
 platform:        ios
-install-name:    /usr/lib/libheimdal-asn1.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libheimdal-asn1.dylib'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ ___crashreporter_info__, __asn1_bmember_isset_bit, __asn1_bmember_put_bit, 

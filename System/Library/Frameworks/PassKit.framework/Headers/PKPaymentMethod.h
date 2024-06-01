@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <PassKit/PKConstants.h>
 
+@class CNContact;
 @class PKPaymentPass;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -37,6 +38,9 @@ typedef NS_ENUM(NSUInteger, PKPaymentMethodType) {
 
 // The payment pass - will only be provided if your app is entitled to view the pass in question
 @property (nonatomic, copy, readonly, nullable) PKPaymentPass *paymentPass;
+
+// A partially redacted billing address. Only available if no shipping address info was requested.
+@property (nonatomic, copy, readonly, nullable) CNContact *billingAddress API_AVAILABLE(ios(13.0), watchos(6.0));
 
 @end
 

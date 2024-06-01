@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibility.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibility.h>)
 
 //
 //  UIAccessibility.h
@@ -123,7 +123,7 @@ NS_ASSUME_NONNULL_BEGIN
 // The accessibilityFrame is expected to be in screen coordinates.
 // To help convert the frame to screen coordinates, use the following method.
 // The rect should exist in the view space of the UIView argument.
-UIKIT_EXTERN CGRect UIAccessibilityConvertFrameToScreenCoordinates(CGRect rect, UIView *view) NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN CGRect UIAccessibilityConvertFrameToScreenCoordinates(CGRect rect, UIView *view) API_AVAILABLE(ios(7.0));
 
 /*
  Returns the path of the element in screen coordinates.
@@ -131,18 +131,18 @@ UIKIT_EXTERN CGRect UIAccessibilityConvertFrameToScreenCoordinates(CGRect rect, 
  Setting the property, or overriding the method, will cause the assistive technology to prefer the path over the accessibility.
  frame when highlighting the element.
  */
-@property (nullable, nonatomic, copy) UIBezierPath *accessibilityPath NS_AVAILABLE_IOS(7_0);
+@property (nullable, nonatomic, copy) UIBezierPath *accessibilityPath API_AVAILABLE(ios(7.0));
 
 // The accessibilityPath is expected to be in screen coordinates.
 // To help convert the path to screen coordinates, use the following method.
 // The path should exist in the view space of the UIView argument.
-UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezierPath *path, UIView *view) NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezierPath *path, UIView *view) API_AVAILABLE(ios(7.0));
 
 /*
  Returns the activation point for an accessible element in screen coordinates.
  default == Mid-point of the accessibilityFrame.
  */
-@property (nonatomic) CGPoint accessibilityActivationPoint NS_AVAILABLE_IOS(5_0);
+@property (nonatomic) CGPoint accessibilityActivationPoint API_AVAILABLE(ios(5.0));
 
 /*
  Returns the language code that the element's label, value and hint should be spoken in. 
@@ -157,14 +157,14 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  Marks all the accessible elements contained within as hidden.
  default == NO
  */
-@property (nonatomic) BOOL accessibilityElementsHidden NS_AVAILABLE_IOS(5_0);
+@property (nonatomic) BOOL accessibilityElementsHidden API_AVAILABLE(ios(5.0));
 
 /*
  Informs whether the receiving view should be considered modal by accessibility. If YES, then 
  elements outside this view will be ignored. Only elements inside this view will be exposed.
  default == NO
  */
-@property (nonatomic) BOOL accessibilityViewIsModal NS_AVAILABLE_IOS(5_0);
+@property (nonatomic) BOOL accessibilityViewIsModal API_AVAILABLE(ios(5.0));
 
 /*
  Forces children elements to be grouped together regardless of their position on screen.
@@ -173,7 +173,7 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  a parent view of the items in the vertical column, VoiceOver will navigate the order correctly.
  default == NO
  */
-@property (nonatomic) BOOL shouldGroupAccessibilityChildren NS_AVAILABLE_IOS(6_0);
+@property (nonatomic) BOOL shouldGroupAccessibilityChildren API_AVAILABLE(ios(6.0));
 
 /*
  Some assistive technologies allow the user to select a parent view or container to navigate its elements.
@@ -182,7 +182,32 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  See UIAccessibilityConstants.h for the list of supported values.
  default == UIAccessibilityNavigationStyleAutomatic
  */
-@property (nonatomic) UIAccessibilityNavigationStyle accessibilityNavigationStyle NS_AVAILABLE_IOS(8_0);
+@property (nonatomic) UIAccessibilityNavigationStyle accessibilityNavigationStyle API_AVAILABLE(ios(8.0));
+
+/*
+ Returns whether the element performs an action based on user interaction.
+ For example, a button that causes UI to update when it is tapped should return YES.
+ A label whose only purpose is to display information should return NO.
+ default == derived from other accessibility properties (for example, an element with UIAccessibilityTraitNotEnabled returns NO)
+ */
+@property (nonatomic) BOOL accessibilityRespondsToUserInteraction API_AVAILABLE(ios(13.0),tvos(13.0));
+
+/*
+ Returns the localized label(s) that should be provided by the user to refer to this element.
+ Use this property when the accessibilityLabel is not appropriate for dictated or typed input.
+ For example, an element that contains additional descriptive information in its accessibilityLabel can return a more concise label.
+ The primary label should be first in the array, optionally followed by alternative labels in descending order of importance.
+ If this property returns an empty or invalid value, the accessibilityLabel will be used instead.
+ default == an empty array
+ default on UIKit controls == an array with an appropriate label, if different from accessibilityLabel
+ */
+@property (null_resettable, nonatomic, strong) NSArray<NSString *> *accessibilityUserInputLabels API_AVAILABLE(ios(13.0),tvos(13.0));
+
+/*
+ The underlying attributed versions of the accessibility user input label(s).
+ Setting this property will change the value of the accessibilityUserInputLabels property and vice versa.
+ */
+@property (null_resettable, nonatomic, copy) NSArray<NSAttributedString *> *accessibilityAttributedUserInputLabels API_AVAILABLE(ios(13.0),tvos(13.0));
 
 /*
  The elements considered to be the headers for this element. May be set on an instance of
@@ -191,6 +216,16 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
  To avoid retain cycles, a weak copy of the elements will be held.
  */
 @property(nullable, nonatomic, copy) NSArray *accessibilityHeaderElements UIKIT_AVAILABLE_TVOS_ONLY(9_0);
+
+/*
+ Returns an appropriate, named context to help identify and classify the type of text inside this element.
+ This can be used by assistive technologies to choose an appropriate way to output the text.
+ For example, when encountering a source coding context, VoiceOver could choose to speak all punctuation.
+ To specify a substring within the textual context, use the UIAccessibilityTextAttributeContext attributed key.
+ default == nil
+ */
+@property(nullable, nonatomic, strong) UIAccessibilityTextualContext accessibilityTextualContext API_AVAILABLE(ios(13.0), tvos(13.0));
+
 
 @end
 
@@ -205,20 +240,20 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
 @interface NSObject (UIAccessibilityFocus)
 
 // Override the following methods to know when an assistive technology has set or unset its virtual focus on the element. 
-- (void)accessibilityElementDidBecomeFocused NS_AVAILABLE_IOS(4_0);
-- (void)accessibilityElementDidLoseFocus NS_AVAILABLE_IOS(4_0);
+- (void)accessibilityElementDidBecomeFocused API_AVAILABLE(ios(4.0));
+- (void)accessibilityElementDidLoseFocus API_AVAILABLE(ios(4.0));
 
 // Returns whether an assistive technology is focused on the element.
-- (BOOL)accessibilityElementIsFocused NS_AVAILABLE_IOS(4_0);
+- (BOOL)accessibilityElementIsFocused API_AVAILABLE(ios(4.0));
 
 // Returns a set of identifier keys indicating which technology is focused on this object
-- (nullable NSSet<UIAccessibilityAssistiveTechnologyIdentifier> *)accessibilityAssistiveTechnologyFocusedIdentifiers NS_AVAILABLE_IOS(9_0);
+- (nullable NSSet<UIAccessibilityAssistiveTechnologyIdentifier> *)accessibilityAssistiveTechnologyFocusedIdentifiers API_AVAILABLE(ios(9.0));
 
 // Returns the element that is currently focused by an assistive technology.
 // default = nil.
 // Pass in a specific identifier (e.g. UIAccessibilityNotificationVoiceOverIdentifier) in order to choose the focused element for a specific product.
 // If no argument is used, the function will returned the element that was most recently focused.
-UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(UIAccessibilityAssistiveTechnologyIdentifier __nullable assistiveTechnologyIdentifier) NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(UIAccessibilityAssistiveTechnologyIdentifier __nullable assistiveTechnologyIdentifier) API_AVAILABLE(ios(9.0));
 
 @end
 
@@ -236,7 +271,7 @@ UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(UIAccessibilityAssistiv
  If your implementation successfully handles activate, return YES, otherwise return NO.
  default == NO
  */
-- (BOOL)accessibilityActivate NS_AVAILABLE_IOS(7_0);
+- (BOOL)accessibilityActivate API_AVAILABLE(ios(7.0));
 
 /* 
  If an element has the UIAccessibilityTraitAdjustable trait, it must also implement
@@ -244,8 +279,8 @@ UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(UIAccessibilityAssistiv
  while decrementing decreases its content. For example, accessibilityIncrement will increase the value
  of a UISlider, and accessibilityDecrement will decrease the value.
  */   
-- (void)accessibilityIncrement NS_AVAILABLE_IOS(4_0);
-- (void)accessibilityDecrement NS_AVAILABLE_IOS(4_0);
+- (void)accessibilityIncrement API_AVAILABLE(ios(4.0));
+- (void)accessibilityDecrement API_AVAILABLE(ios(4.0));
 
 /*
  If the user interface requires a scrolling action (e.g. turning the page of a book), a view in the view 
@@ -260,11 +295,11 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
     UIAccessibilityScrollDirectionLeft,
     UIAccessibilityScrollDirectionUp,
     UIAccessibilityScrollDirectionDown,
-    UIAccessibilityScrollDirectionNext NS_ENUM_AVAILABLE_IOS(5_0),
-    UIAccessibilityScrollDirectionPrevious NS_ENUM_AVAILABLE_IOS(5_0),
+    UIAccessibilityScrollDirectionNext API_AVAILABLE(ios(5.0)),
+    UIAccessibilityScrollDirectionPrevious API_AVAILABLE(ios(5.0)),
 };
 
-- (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction NS_AVAILABLE_IOS(4_2);
+- (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction API_AVAILABLE(ios(4.2));
 
 /* 
  Implement accessibilityPerformEscape on an element or containing view to exit a modal or hierarchical interface view.
@@ -273,7 +308,7 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
  If your implementation successfully dismisses the current UI, return YES, otherwise return NO.
  default == NO
  */
-- (BOOL)accessibilityPerformEscape NS_AVAILABLE_IOS(5_0);
+- (BOOL)accessibilityPerformEscape API_AVAILABLE(ios(5.0));
 
 /* 
  Implement accessibilityPerformMagicTap on an element, or the application, in order to provide a context-sensitive action.
@@ -281,7 +316,7 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
  Return YES to indicate that the action was handled.
  default == NO
  */
-- (BOOL)accessibilityPerformMagicTap NS_AVAILABLE_IOS(6_0);
+- (BOOL)accessibilityPerformMagicTap API_AVAILABLE(ios(6.0));
 
 /*
  Return an array of UIAccessibilityCustomAction objects to make custom actions for an element accessible to an assistive technology.
@@ -289,7 +324,7 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
  If the view returns a delete action from this property, VoiceOver and Switch Control users will be able to delete photos without performing the flick gesture.
  default == nil
  */
-@property (nullable, nonatomic, strong) NSArray <UIAccessibilityCustomAction *> *accessibilityCustomActions NS_AVAILABLE_IOS(8_0);
+@property (nullable, nonatomic, strong) NSArray <UIAccessibilityCustomAction *> *accessibilityCustomActions API_AVAILABLE(ios(8.0));
 @end
 
 /* 
@@ -302,16 +337,16 @@ typedef NS_ENUM(NSInteger, UIAccessibilityScrollDirection) {
 @required
 
 // Returns the line number given a point in the view's coordinate space.
-- (NSInteger)accessibilityLineNumberForPoint:(CGPoint)point NS_AVAILABLE_IOS(5_0);
+- (NSInteger)accessibilityLineNumberForPoint:(CGPoint)point API_AVAILABLE(ios(5.0));
 
 // Returns the content associated with a line number as a string.
-- (nullable NSString *)accessibilityContentForLineNumber:(NSInteger)lineNumber NS_AVAILABLE_IOS(5_0);
+- (nullable NSString *)accessibilityContentForLineNumber:(NSInteger)lineNumber API_AVAILABLE(ios(5.0));
 
 // Returns the on-screen rectangle for a line number.
-- (CGRect)accessibilityFrameForLineNumber:(NSInteger)lineNumber NS_AVAILABLE_IOS(5_0);
+- (CGRect)accessibilityFrameForLineNumber:(NSInteger)lineNumber API_AVAILABLE(ios(5.0));
 
 // Returns a string representing the text displayed on the current page.
-- (nullable NSString *)accessibilityPageContent NS_AVAILABLE_IOS(5_0);
+- (nullable NSString *)accessibilityPageContent API_AVAILABLE(ios(5.0));
 
 @optional
 // If an object adopting this protocol responds to these methods, the system will try sending them before sending the non-attributed versions.
@@ -380,69 +415,81 @@ UIKIT_EXTERN void UIAccessibilityPostNotification(UIAccessibilityNotifications n
  Use UIAccessibilityIsVoiceOverRunning() to determine if VoiceOver is running.
  Listen for UIAccessibilityVoiceOverStatusDidChangeNotification to know when VoiceOver starts or stops.
  */
-UIKIT_EXTERN BOOL UIAccessibilityIsVoiceOverRunning(void) NS_AVAILABLE_IOS(4_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsVoiceOverRunning(void) API_AVAILABLE(ios(4.0));
 UIKIT_EXTERN NSString *const UIAccessibilityVoiceOverStatusChanged API_DEPRECATED_WITH_REPLACEMENT("UIAccessibilityVoiceOverStatusDidChangeNotification", ios(4.0, 11.0), tvos(9.0, 11.0));
 UIKIT_EXTERN NSNotificationName const UIAccessibilityVoiceOverStatusDidChangeNotification API_AVAILABLE(ios(11.0), tvos(11.0));
 
 // Returns whether system audio is mixed down from stereo to mono.
-UIKIT_EXTERN BOOL UIAccessibilityIsMonoAudioEnabled(void) NS_AVAILABLE_IOS(5_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityMonoAudioStatusDidChangeNotification NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsMonoAudioEnabled(void) API_AVAILABLE(ios(5.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityMonoAudioStatusDidChangeNotification API_AVAILABLE(ios(5.0));
 
 // Returns whether the system preference for closed captioning is enabled.
-UIKIT_EXTERN BOOL UIAccessibilityIsClosedCaptioningEnabled(void) NS_AVAILABLE_IOS(5_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityClosedCaptioningStatusDidChangeNotification NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsClosedCaptioningEnabled(void) API_AVAILABLE(ios(5.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityClosedCaptioningStatusDidChangeNotification API_AVAILABLE(ios(5.0));
 
 // Returns whether the system preference for invert colors is enabled.
-UIKIT_EXTERN BOOL UIAccessibilityIsInvertColorsEnabled(void) NS_AVAILABLE_IOS(6_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityInvertColorsStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsInvertColorsEnabled(void) API_AVAILABLE(ios(6.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityInvertColorsStatusDidChangeNotification API_AVAILABLE(ios(6.0));
 
 // Returns whether the app is running under Guided Access mode.
-UIKIT_EXTERN BOOL UIAccessibilityIsGuidedAccessEnabled(void) NS_AVAILABLE_IOS(6_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityGuidedAccessStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsGuidedAccessEnabled(void) API_AVAILABLE(ios(6.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityGuidedAccessStatusDidChangeNotification API_AVAILABLE(ios(6.0));
 
 // Returns whether the system preference for bold text is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsBoldTextEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityBoldTextStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsBoldTextEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityBoldTextStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 // Returns whether the system preference for grayscale is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsGrayscaleEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityGrayscaleStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsGrayscaleEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityGrayscaleStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 // Returns whether the system preference for reduce transparency is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsReduceTransparencyEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityReduceTransparencyStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsReduceTransparencyEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityReduceTransparencyStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 // Returns whether the system preference for reduce motion is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsReduceMotionEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityReduceMotionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsReduceMotionEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityReduceMotionStatusDidChangeNotification API_AVAILABLE(ios(8.0));
+
+// Returns whether the system preference for auto-play videos is enabled
+UIKIT_EXTERN BOOL UIAccessibilityIsVideoAutoplayEnabled(void) API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityVideoAutoplayStatusDidChangeNotification API_AVAILABLE(ios(13.0), tvos(13.0));
 
 // Returns whether the system preference for darker colors is enabled
-UIKIT_EXTERN BOOL UIAccessibilityDarkerSystemColorsEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityDarkerSystemColorsEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 /*
  Use UIAccessibilityIsSwitchControlRunning() to determine if Switch Control is running.
  Listen for UIAccessibilitySwitchControlStatusDidChangeNotification to know when Switch Control starts or stops.
 */
-UIKIT_EXTERN BOOL UIAccessibilityIsSwitchControlRunning(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilitySwitchControlStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsSwitchControlRunning(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilitySwitchControlStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 // Returns whether the system preference for Speak Selection is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsSpeakSelectionEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilitySpeakSelectionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsSpeakSelectionEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilitySpeakSelectionStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 // Returns whether the system preference for Speak Screen is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsSpeakScreenEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilitySpeakScreenStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsSpeakScreenEnabled(void) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilitySpeakScreenStatusDidChangeNotification API_AVAILABLE(ios(8.0));
 
 // Returns whether the system preference for Shake to Undo is enabled
-UIKIT_EXTERN BOOL UIAccessibilityIsShakeToUndoEnabled(void) NS_AVAILABLE_IOS(9_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityShakeToUndoDidChangeNotification NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsShakeToUndoEnabled(void) API_AVAILABLE(ios(9.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityShakeToUndoDidChangeNotification API_AVAILABLE(ios(9.0));
 
 // Returns whether the system preference for AssistiveTouch is enabled.
 // This always returns false if Guided Access is not enabled.
-UIKIT_EXTERN BOOL UIAccessibilityIsAssistiveTouchRunning(void) NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN NSNotificationName const UIAccessibilityAssistiveTouchStatusDidChangeNotification NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN BOOL UIAccessibilityIsAssistiveTouchRunning(void) API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityAssistiveTouchStatusDidChangeNotification API_AVAILABLE(ios(10.0));
+
+// Returns whether the system preference for Differentiate without Color is enabled.
+UIKIT_EXTERN BOOL UIAccessibilityShouldDifferentiateWithoutColor(void) API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN NSString *const UIAccessibilityShouldDifferentiateWithoutColorDidChangeNotification API_AVAILABLE(ios(13.0), tvos(13.0));
+
+// Returns whether the system preference for On/Off labels is enabled.
+UIKIT_EXTERN BOOL UIAccessibilityIsOnOffSwitchLabelsEnabled(void) API_AVAILABLE(ios(13.0));
+UIKIT_EXTERN NSNotificationName const UIAccessibilityOnOffSwitchLabelsDidChangeNotification API_AVAILABLE(ios(13.0));
 
 /*
  Use UIAccessibilityRequestGuidedAccessSession() to request this app be locked into or released
@@ -450,18 +497,18 @@ UIKIT_EXTERN NSNotificationName const UIAccessibilityAssistiveTouchStatusDidChan
  and the app's bundle identifier has been whitelisted using Mobile Device Management. If you successfully request Single
  App mode, it is your responsibility to release the device by balancing this call.
  */
-UIKIT_EXTERN void UIAccessibilityRequestGuidedAccessSession(BOOL enable, void(^completionHandler)(BOOL didSucceed)) NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN void UIAccessibilityRequestGuidedAccessSession(BOOL enable, void(^completionHandler)(BOOL didSucceed)) API_AVAILABLE(ios(7.0));
 
 typedef NS_OPTIONS(NSUInteger, UIAccessibilityHearingDeviceEar) {
     UIAccessibilityHearingDeviceEarNone    = 0,
     UIAccessibilityHearingDeviceEarLeft    = 1 << 1,
     UIAccessibilityHearingDeviceEarRight   = 1 << 2,
     UIAccessibilityHearingDeviceEarBoth    = UIAccessibilityHearingDeviceEarLeft | UIAccessibilityHearingDeviceEarRight,
-} NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(tvos);
 
 // Returns the current pairing status of MFi hearing aids
-UIKIT_EXTERN UIAccessibilityHearingDeviceEar UIAccessibilityHearingDevicePairedEar(void) NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSNotificationName const UIAccessibilityHearingDevicePairedEarDidChangeNotification NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN UIAccessibilityHearingDeviceEar UIAccessibilityHearingDevicePairedEar(void) API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(tvos);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityHearingDevicePairedEarDidChangeNotification API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(tvos);
 
 NS_ASSUME_NONNULL_END
 

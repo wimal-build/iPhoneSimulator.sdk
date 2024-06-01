@@ -54,7 +54,7 @@ SK_EXPORT @interface SK3DNode : SKNode
 /**
  @method hitTest:options:
  @abstract Returns an array of SCNHitTestResult for each node that contains a specified point.
- @param thePoint A point in the coordinate system of the receiver.
+ @param point A point in the coordinate system of the receiver.
  @param options Optional parameters (see the "Hit test options" group for the available options).
 */
 - (NSArray<SCNHitTestResult *> *)hitTest:(CGPoint)point options:(nullable NSDictionary<NSString *, id> *)options;

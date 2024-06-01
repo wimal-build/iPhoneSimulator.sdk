@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextInput.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextInput.h>)
 //
 //  UITextInput.h
 //  UIKit
@@ -9,7 +9,10 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 #import <UIKit/UITextInputTraits.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIResponder.h>
+#import <UIKit/NSText.h>
+
 
 //===================================================================================================
 // Responders that implement the UIKeyInput protocol will be driven by the system-provided keyboard,
@@ -19,11 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UIKeyInput <UITextInputTraits>
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) BOOL hasText;
-#else
-- (BOOL)hasText;
-#endif
 - (void)insertText:(NSString *)text;
 - (void)deleteBackward;
 
@@ -56,12 +55,6 @@ typedef NS_ENUM(NSInteger, UITextLayoutDirection) {
 
 typedef NSInteger UITextDirection NS_TYPED_ENUM;
 
-typedef NS_ENUM(NSInteger, UITextWritingDirection) {
-    UITextWritingDirectionNatural = -1,
-    UITextWritingDirectionLeftToRight = 0,
-    UITextWritingDirectionRightToLeft,
-};
-
 typedef NS_ENUM(NSInteger, UITextGranularity) {
     UITextGranularityCharacter,
     UITextGranularityWord,
@@ -71,7 +64,7 @@ typedef NS_ENUM(NSInteger, UITextGranularity) {
     UITextGranularityDocument
 };
 
-NS_CLASS_AVAILABLE_IOS(5_1) @interface UIDictationPhrase : NSObject {
+UIKIT_EXTERN API_AVAILABLE(ios(5.1)) @interface UIDictationPhrase : NSObject {
     @private
         NSString *_text;
         NSArray * __nullable _alternativeInterpretations;
@@ -85,7 +78,7 @@ NS_CLASS_AVAILABLE_IOS(5_1) @interface UIDictationPhrase : NSObject {
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UITextInputAssistantItem : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) @interface UITextInputAssistantItem : NSObject
 
 /// Default is YES, controls if the user is allowed to hide the shortcuts bar. Does not influence the built in auto-hiding logic.
 @property (nonatomic, readwrite, assign) BOOL allowsHidingShortcuts;
@@ -95,6 +88,16 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 @property (nonatomic, readwrite, copy) NSArray<UIBarButtonItemGroup *> *trailingBarButtonGroups;
 
 @end
+
+UIKIT_EXTERN API_AVAILABLE(ios(13.0)) @interface UITextPlaceholder : NSObject
+// Return the rects of the placeholder
+@property (nonatomic, readonly) NSArray<UITextSelectionRect *> *rects;
+@end
+
+typedef NS_ENUM(NSInteger, UITextAlternativeStyle) {
+    UITextAlternativeStyleNone,
+    UITextAlternativeStyleLowConfidence
+};
 
 @protocol UITextInput <UIKeyInput>
 @required
@@ -145,13 +148,13 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 - (nullable UITextRange *)characterRangeByExtendingPosition:(UITextPosition *)position inDirection:(UITextLayoutDirection)direction;
 
 /* Writing direction */
-- (UITextWritingDirection)baseWritingDirectionForPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction;
-- (void)setBaseWritingDirection:(UITextWritingDirection)writingDirection forRange:(UITextRange *)range;
+- (NSWritingDirection)baseWritingDirectionForPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction;
+- (void)setBaseWritingDirection:(NSWritingDirection)writingDirection forRange:(UITextRange *)range;
 
 /* Geometry used to provide, for example, a correction rect. */
 - (CGRect)firstRectForRange:(UITextRange *)range;
 - (CGRect)caretRectForPosition:(UITextPosition *)position;
-- (NSArray<UITextSelectionRect *> *)selectionRectsForRange:(UITextRange *)range NS_AVAILABLE_IOS(6_0);       // Returns an array of UITextSelectionRects
+- (NSArray<UITextSelectionRect *> *)selectionRectsForRange:(UITextRange *)range API_AVAILABLE(ios(6.0));       // Returns an array of UITextSelectionRects
 
 /* Hit testing. */
 - (nullable UITextPosition *)closestPositionToPoint:(CGPoint)point;
@@ -160,7 +163,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 
 @optional
 
-- (BOOL)shouldChangeTextInRange:(UITextRange *)range replacementText:(NSString *)text NS_AVAILABLE_IOS(6_0);   // return NO to not change text
+- (BOOL)shouldChangeTextInRange:(UITextRange *)range replacementText:(NSString *)text API_AVAILABLE(ios(6.0));   // return NO to not change text
 
 /* Text styling information can affect, for example, the appearance of a correction rect.
  * Returns a dictionary containing NSAttributedString keys. */
@@ -193,41 +196,52 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
  * pending dictation results. -insertDictationPlaceholder must return a reference to the 
  * placeholder. This reference will be used to identify the placeholder by the other methods
  * (there may be more than one placeholder). */
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) id insertDictationResultPlaceholder;
-#else
-- (id)insertDictationResultPlaceholder;
-#endif
 - (CGRect)frameForDictationResultPlaceholder:(id)placeholder;
 /* willInsertResult will be NO if the recognition failed. */
 - (void)removeDictationResultPlaceholder:(id)placeholder willInsertResult:(BOOL)willInsertResult;
+
+// This is an optional method for clients that wish to support text phrase alternatives. If they do not implement this method,
+// the text will be inserted by -insertText: without the phase alternatives.
+- (void)insertText:(NSString *)text alternatives:(NSArray<NSString *> *)alternatives style:(UITextAlternativeStyle)style;
+
+// set attributedString as markedText, selectedRange is a range within the markedText
+- (void)setAttributedMarkedText:(nullable NSAttributedString *)markedText selectedRange:(NSRange)selectedRange;
+
+// Insert a placeholder
+// If `size.height` is <= 0, then the placeholder is inline and line height.
+// If `size.height` is > 0, then the placeholder is treated as a paragraph of height `size.height`.
+- (UITextPlaceholder *)insertTextPlaceholderWithSize:(CGSize)size;
+
+// Remove the placeholder.
+- (void)removeTextPlaceholder:(UITextPlaceholder *)textPlaceholder;
 
 /* The following three optional methods are for clients that wish to display a floating cursor to
  * guide user manipulation of the selected text range via the system-provided keyboard. If a client
  * does not implement these methods, user feedback will be limited to the outcome after setting the
  * selected text range using positions resulting from hit testing. */
-- (void)beginFloatingCursorAtPoint:(CGPoint)point NS_AVAILABLE_IOS(9_0);
-- (void)updateFloatingCursorAtPoint:(CGPoint)point NS_AVAILABLE_IOS(9_0);
-- (void)endFloatingCursor NS_AVAILABLE_IOS(9_0);
+- (void)beginFloatingCursorAtPoint:(CGPoint)point API_AVAILABLE(ios(9.0));
+- (void)updateFloatingCursorAtPoint:(CGPoint)point API_AVAILABLE(ios(9.0));
+- (void)endFloatingCursor API_AVAILABLE(ios(9.0));
 
 @end
 
 //---------------------------------------------------------------------------------------------------
 
 /* UITextInput keys to style dictionaries are deprecated. Use NSAttributedString keys instead, such as NSFontAttribute, etc. */
-UIKIT_EXTERN NSString *const UITextInputTextBackgroundColorKey NS_DEPRECATED_IOS(3_2, 8_0, "Use NSBackgroundColorAttributeName instead") __TVOS_PROHIBITED; // Key to a UIColor
-UIKIT_EXTERN NSString *const UITextInputTextColorKey           NS_DEPRECATED_IOS(3_2, 8_0, "Use NSForegroundColorAttributeName instead") __TVOS_PROHIBITED; // Key to a UIColor
-UIKIT_EXTERN NSString *const UITextInputTextFontKey            NS_DEPRECATED_IOS(3_2, 8_0, "Use NSFontAttributeName instead") __TVOS_PROHIBITED; // Key to a UIFont
+UIKIT_EXTERN NSString *const UITextInputTextBackgroundColorKey API_DEPRECATED_WITH_REPLACEMENT("NSBackgroundColorAttributeName", ios(3.2, 8.0)) API_UNAVAILABLE(tvos); // Key to a UIColor
+UIKIT_EXTERN NSString *const UITextInputTextColorKey           API_DEPRECATED_WITH_REPLACEMENT("NSForegroundColorAttributeName", ios(3.2, 8.0)) API_UNAVAILABLE(tvos); // Key to a UIColor
+UIKIT_EXTERN NSString *const UITextInputTextFontKey            API_DEPRECATED_WITH_REPLACEMENT("NSFontAttributeName", ios(3.2, 8.0)) API_UNAVAILABLE(tvos); // Key to a UIFont
 
 /* To accommodate text entry in documents that contain nested elements, or in which supplying and
  * evaluating characters at indices is an expensive proposition, a position within a text input
  * document is represented as an object, not an integer.  UITextRange and UITextPosition are abstract
  * classes provided to be subclassed when adopting UITextInput */
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextPosition : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) @interface UITextPosition : NSObject
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextRange : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) @interface UITextRange : NSObject
 
 @property (nonatomic, readonly, getter=isEmpty) BOOL empty;     //  Whether the range is zero-length.
 @property (nonatomic, readonly) UITextPosition *start;
@@ -238,10 +252,10 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextRange : NSObject
 /* UITextSelectionRect defines an annotated selection rect used by the system to
  * offer rich text interaction experience.  It also serves as an abstract class
  * provided to be subclassed when adopting UITextInput */
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UITextSelectionRect : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(6.0)) @interface UITextSelectionRect : NSObject
 
 @property (nonatomic, readonly) CGRect rect;
-@property (nonatomic, readonly) UITextWritingDirection writingDirection;
+@property (nonatomic, readonly) NSWritingDirection writingDirection;
 @property (nonatomic, readonly) BOOL containsStart; // Returns YES if the rect contains the start of the selection.
 @property (nonatomic, readonly) BOOL containsEnd; // Returns YES if the rect contains the end of the selection.
 @property (nonatomic, readonly) BOOL isVertical; // Returns YES if the rect is for vertically oriented text.
@@ -274,7 +288,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UITextSelectionRect : NSObject
 
 /* A recommended base implementation of the tokenizer protocol. Subclasses are responsible
  * for handling directions and granularities affected by layout.*/
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextInputStringTokenizer : NSObject <UITextInputTokenizer> 
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) @interface UITextInputStringTokenizer : NSObject <UITextInputTokenizer> 
 
 - (instancetype)initWithTextInput:(UIResponder <UITextInput> *)textInput;
 
@@ -282,21 +296,23 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextInputStringTokenizer : NSObject <UI
 
 /* The UITextInputMode class should not be subclassed. It is to allow other in-app functionality to adapt 
  * based on the keyboard language. Different UITextInputMode objects may have the same primaryLanguage. */
-NS_CLASS_AVAILABLE_IOS(4_2) @interface UITextInputMode : NSObject <NSSecureCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(4.2)) @interface UITextInputMode : NSObject <NSSecureCoding>
 
 @property (nullable, nonatomic, readonly, strong) NSString *primaryLanguage; // The primary language, if any, of the input mode.  A BCP 47 language identifier such as en-US
 
 // To query the UITextInputMode, refer to the UIResponder method -textInputMode.
-+ (nullable UITextInputMode *)currentInputMode NS_DEPRECATED_IOS(4_2, 7_0)  __TVOS_PROHIBITED; // The current input mode.  Nil if unset.
-#if UIKIT_DEFINE_AS_PROPERTIES
++ (nullable UITextInputMode *)currentInputMode API_DEPRECATED("", ios(4.2, 7.0))  API_UNAVAILABLE(tvos); // The current input mode.  Nil if unset.
 @property(class, nonatomic, readonly) NSArray<UITextInputMode *> *activeInputModes; // The active input modes.
-#else
-+ (NSArray<UITextInputMode *> *)activeInputModes; // The active input modes.
-#endif
 
 @end
 
-UIKIT_EXTERN NSNotificationName const UITextInputCurrentInputModeDidChangeNotification NS_AVAILABLE_IOS(4_2);
+UIKIT_EXTERN NSNotificationName const UITextInputCurrentInputModeDidChangeNotification API_AVAILABLE(ios(4.2));
+
+typedef NSWritingDirection UITextWritingDirection API_DEPRECATED_WITH_REPLACEMENT("NSWritingDirection", ios(3.2, 13.0), tvos(9.0, 13.0));
+
+static const UITextWritingDirection UITextWritingDirectionNatural API_DEPRECATED_WITH_REPLACEMENT("NSWritingDirectionNatural", ios(3.2, 13.0), tvos(9.0, 13.0)) = NSWritingDirectionNatural;
+static const UITextWritingDirection UITextWritingDirectionLeftToRight API_DEPRECATED_WITH_REPLACEMENT("NSWritingDirectionLeftToRight", ios(3.2, 13.0), tvos(9.0, 13.0)) = NSWritingDirectionLeftToRight;
+static const UITextWritingDirection UITextWritingDirectionRightToLeft API_DEPRECATED_WITH_REPLACEMENT("NSWritingDirectionRightToLeft", ios(3.2, 13.0), tvos(9.0, 13.0)) = NSWritingDirectionRightToLeft;
 
 NS_ASSUME_NONNULL_END
 

@@ -1,10 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 599E4592-2459-34EA-BF6F-46D9321A630E', 'x86_64: 50EFA008-4B4D-31A7-B69F-7FBBCDCBA193' ]
+uuids:           [ 'i386: 599E4592-2459-34EA-BF6F-46D9321A630E', 'x86_64: CC9C9B14-3E74-3447-83F5-D47F0AEAF69B' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Twitter.framework/Twitter
+install-name:    '/System/Library/Frameworks/Twitter.framework/Twitter'
 current-version: 164
-objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
     objc-classes:    [ TWRequest, TWTweetComposeViewController ]

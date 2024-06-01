@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIReferenceLibraryViewController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIReferenceLibraryViewController.h>)
 //
 //  UIReferenceLibraryViewController.h
 //  UIKit
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIViewController.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED
+UIKIT_EXTERN API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(tvos)
 @interface UIReferenceLibraryViewController : UIViewController {}
 
 /*! Returns YES if any installed dictionary has a definition for the provided term.
@@ -20,7 +21,7 @@ NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED
 /*! Initializes an instance of a UIReferenceLibraryViewController with the term provided.
  */
 - (instancetype)initWithTerm:(NSString *)term NS_DESIGNATED_INITIALIZER;
-- (instancetype) initWithCoder:(nonnull NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER; // Declared solely for the sake of potential subclassers.
+- (instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER; // Declared solely for the sake of potential subclassers.
 
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;

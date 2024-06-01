@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  A GCGamepadSnapshot snapshot is a concrete GCGamepad implementation. It can be used directly in an
- application to implement controller input replays. It is also returned as the result of polling
+ application to implement controller input replays. It is also returned as the result API_DEPRECATED("GCGamepad has been deprecated, use GCExtendedGamepad instead", macos(10.9, 10.15), ios(7.0, 13.0), tvos(7.0, 13.0))of polling
  a controller.
  
  The current snapshotData is readily available to access as NSData. A developer can serialize this to any
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @see -[GCGamepad saveSnapshot]
  */
-GAMECONTROLLER_EXPORT
+API_DEPRECATED("GCGamepad has been deprecated, use GCExtendedGamepad instead", macos(10.9, 10.15), ios(7.0, 13.0), tvos(7.0, 13.0))
 @interface GCGamepadSnapshot : GCGamepad
 @property (atomic, copy) NSData *snapshotData;
 
@@ -49,22 +49,20 @@ typedef struct {
     float leftShoulder;
     float rightShoulder;
     
-} GCGamepadSnapShotDataV100;
+} GCGamepadSnapShotDataV100 API_DEPRECATED("GCGamepad has been deprecated, use GCExtendedGamepad instead", macos(10.9, 10.15), ios(7.0, 13.0), tvos(7.0, 13.0));
 #pragma pack(pop)
 
 /**Fills out a v100 snapshot from any compatible NSData source
  
  @return NO if data is nil, snapshotData is nil or the contents of data does not contain a compatible snapshot. YES for all other cases.
  */
-GAMECONTROLLER_EXPORT
-BOOL GCGamepadSnapShotDataV100FromNSData(GCGamepadSnapShotDataV100 *__nullable snapshotData, NSData *__nullable data);
+BOOL GCGamepadSnapShotDataV100FromNSData(GCGamepadSnapShotDataV100 *__nullable snapshotData, NSData *__nullable data) API_DEPRECATED("GCGamepad has been deprecated, use GCExtendedGamepad instead", macos(10.9, 10.15), ios(7.0, 13.0), tvos(7.0, 13.0));
 
 /**Creates an NSData object from a v100 snapshot.
  If the version and size is not set in the snapshot the data will automatically have version 0x100 and sizeof(GCGamepadSnapShotDataV100) set as the values implicitly.
  
  @return nil if the snapshot is NULL, otherwise an NSData instance compatible with GCGamepadSnapshot.snapshotData
  */
-GAMECONTROLLER_EXPORT
-NSData *__nullable NSDataFromGCGamepadSnapShotDataV100(GCGamepadSnapShotDataV100 *__nullable snapshotData);
+NSData *__nullable NSDataFromGCGamepadSnapShotDataV100(GCGamepadSnapShotDataV100 *__nullable snapshotData) API_DEPRECATED("GCGamepad has been deprecated, use GCExtendedGamepad instead", macos(10.9, 10.15), ios(7.0, 13.0), tvos(7.0, 13.0));
 
 NS_ASSUME_NONNULL_END

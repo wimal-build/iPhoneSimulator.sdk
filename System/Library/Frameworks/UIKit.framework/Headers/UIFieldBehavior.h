@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFieldBehavior.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIFieldBehavior.h>)
 //
 //  UIFieldBehavior.h
 //  UIKit
@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIDynamicBehavior.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class UIRegion;
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIFieldBehavior : UIDynamicBehavior
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIFieldBehavior : UIDynamicBehavior
 
 - (instancetype)init NS_UNAVAILABLE; // Use one of the convenience initializers
 

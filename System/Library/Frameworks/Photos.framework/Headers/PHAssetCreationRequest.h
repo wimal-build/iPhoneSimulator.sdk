@@ -7,13 +7,14 @@
 
 #import <Photos/PhotosTypes.h>
 #import <Photos/PHAssetChangeRequest.h>
-#import <Photos/PhotosDefines.h>
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.15), ios(9), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceCreationOptions : NSObject <NSCopying>
+OS_EXPORT
+@interface PHAssetResourceCreationOptions : NSObject <NSCopying>
 
 // The filename for the resource. If not specified, one will be inferred from a fileURL if available, or else generated.
 @property (nonatomic, copy, nullable) NSString *originalFilename;
@@ -28,7 +29,8 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceCreationOpt
 
 
 // PHAssetCreationRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetCreationRequest : PHAssetChangeRequest
+OS_EXPORT
+@interface PHAssetCreationRequest : PHAssetChangeRequest
 
 + (instancetype)creationRequestForAsset;
 
@@ -42,4 +44,5 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetCreationRequest : P
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

@@ -19,11 +19,28 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSUInteger, MTLIndirectCommandType) {
     MTLIndirectCommandTypeDraw                = (1 << 0),
     MTLIndirectCommandTypeDrawIndexed         = (1 << 1),
-    MTLIndirectCommandTypeDrawPatches         = (1 << 2),
-    MTLIndirectCommandTypeDrawIndexedPatches  = (1 << 3) ,
+    MTLIndirectCommandTypeDrawPatches         API_UNAVAILABLE(tvos) = (1 << 2),
+    MTLIndirectCommandTypeDrawIndexedPatches  API_UNAVAILABLE(tvos) = (1 << 3) ,
+
+    MTLIndirectCommandTypeConcurrentDispatch  API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos) = (1 << 5), /* Dispatch threadgroups with concurrent execution */
+     MTLIndirectCommandTypeConcurrentDispatchThreads  API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos) = (1 << 6), /* Dispatch threads with concurrent execution */
 } API_AVAILABLE(macos(10.14), ios(12.0));
 
 
+/*!
+ @abstract The data layout required for specifying an indirect command buffer execution range.
+ */
+typedef struct
+{
+    uint32_t location;
+    uint32_t length;
+}  MTLIndirectCommandBufferExecutionRange API_AVAILABLE(macos(10.14), macCatalyst(13.0), ios(13.0));
+
+MTL_INLINE MTLIndirectCommandBufferExecutionRange MTLIndirectCommandBufferExecutionRangeMake(uint32_t location, uint32_t length) API_AVAILABLE(macos(10.14), macCatalyst(13.0), ios(13.0))
+{
+    MTLIndirectCommandBufferExecutionRange icbRange = {location, length};
+    return icbRange;
+}
 
 /*!
  @abstract
@@ -44,7 +61,7 @@ MTL_EXPORT API_AVAILABLE(macos(10.14), ios(12.0))
  @abstract
  Whether the render or compute pipeline are inherited from the encoder
  */
-@property (readwrite, nonatomic) BOOL inheritPipelineState API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios);
+@property (readwrite, nonatomic) BOOL inheritPipelineState API_AVAILABLE(macos(10.14), ios(13.0));
 
 /*!
  @abstract
@@ -64,6 +81,11 @@ MTL_EXPORT API_AVAILABLE(macos(10.14), ios(12.0))
  */
 @property (readwrite, nonatomic) NSUInteger maxFragmentBufferBindCount;
 
+/*!
+ @absract
+ The maximum bind index of kernel (or tile) argument buffers that can be set per command.
+ */
+@property (readwrite, nonatomic) NSUInteger maxKernelBufferBindCount API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos);
 
 
 @end
@@ -77,6 +99,7 @@ API_AVAILABLE(macos(10.14), ios(12.0))
 -(void)resetWithRange:(NSRange)range;
 
 - (id <MTLIndirectRenderCommand>)indirectRenderCommandAtIndex:(NSUInteger)commandIndex;
+- (id <MTLIndirectComputeCommand>)indirectComputeCommandAtIndex:(NSUInteger)commandIndex API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos);
 
 @end
 

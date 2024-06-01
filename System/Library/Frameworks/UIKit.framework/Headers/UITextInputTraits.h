@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextInputTraits.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextInputTraits.h>)
 //
 //  UITextInputTraits.h
 //  UIKit
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, UITextSpellCheckingType) {
     UITextSpellCheckingTypeDefault,
     UITextSpellCheckingTypeNo,
     UITextSpellCheckingTypeYes,
-} NS_ENUM_AVAILABLE_IOS(5_0);
+} API_AVAILABLE(ios(5.0));
 
 //
 // UITextSmartQuotesType
@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, UITextSmartQuotesType) {
     UITextSmartQuotesTypeDefault,
     UITextSmartQuotesTypeNo,
     UITextSmartQuotesTypeYes,
-} NS_ENUM_AVAILABLE_IOS(11_0);
+} API_AVAILABLE(ios(11.0));
 
 //
 // UITextSmartDashesType
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, UITextSmartDashesType) {
     UITextSmartDashesTypeDefault,
     UITextSmartDashesTypeNo,
     UITextSmartDashesTypeYes,
-} NS_ENUM_AVAILABLE_IOS(11_0);
+} API_AVAILABLE(ios(11.0));
 
 //
 // UITextSmartInsertDeleteType
@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, UITextSmartInsertDeleteType) {
     UITextSmartInsertDeleteTypeDefault,
     UITextSmartInsertDeleteTypeNo,
     UITextSmartInsertDeleteTypeYes,
-} NS_ENUM_AVAILABLE_IOS(11_0);
+} API_AVAILABLE(ios(11.0));
 
 //
 // UIKeyboardType
@@ -99,10 +99,10 @@ typedef NS_ENUM(NSInteger, UIKeyboardType) {
     UIKeyboardTypePhonePad,               // A phone pad (1-9, *, 0, #, with letters under the numbers).
     UIKeyboardTypeNamePhonePad,           // A type optimized for entering a person's name or phone number.
     UIKeyboardTypeEmailAddress,           // A type optimized for multiple email address entry (shows space @ . prominently).
-    UIKeyboardTypeDecimalPad NS_ENUM_AVAILABLE_IOS(4_1),   // A number pad with a decimal point.
-    UIKeyboardTypeTwitter NS_ENUM_AVAILABLE_IOS(5_0),      // A type optimized for twitter text entry (easy access to @ #)
-    UIKeyboardTypeWebSearch NS_ENUM_AVAILABLE_IOS(7_0),    // A default keyboard type with URL-oriented addition (shows space . prominently).
-    UIKeyboardTypeASCIICapableNumberPad NS_ENUM_AVAILABLE_IOS(10_0), // A number pad (0-9) that will always be ASCII digits.
+    UIKeyboardTypeDecimalPad API_AVAILABLE(ios(4.1)),   // A number pad with a decimal point.
+    UIKeyboardTypeTwitter API_AVAILABLE(ios(5.0)),      // A type optimized for twitter text entry (easy access to @ #)
+    UIKeyboardTypeWebSearch API_AVAILABLE(ios(7.0)),    // A default keyboard type with URL-oriented addition (shows space . prominently).
+    UIKeyboardTypeASCIICapableNumberPad API_AVAILABLE(ios(10.0)), // A number pad (0-9) that will always be ASCII digits.
 
     UIKeyboardTypeAlphabet = UIKeyboardTypeASCIICapable, // Deprecated
 
@@ -119,8 +119,8 @@ typedef NS_ENUM(NSInteger, UIKeyboardType) {
 //
 typedef NS_ENUM(NSInteger, UIKeyboardAppearance) {
     UIKeyboardAppearanceDefault,          // Default apperance for the current input method.
-    UIKeyboardAppearanceDark NS_ENUM_AVAILABLE_IOS(7_0),
-    UIKeyboardAppearanceLight NS_ENUM_AVAILABLE_IOS(7_0),
+    UIKeyboardAppearanceDark API_AVAILABLE(ios(7.0)),
+    UIKeyboardAppearanceLight API_AVAILABLE(ios(7.0)),
     UIKeyboardAppearanceAlert = UIKeyboardAppearanceDark,  // Deprecated
 };
 
@@ -144,16 +144,12 @@ typedef NS_ENUM(NSInteger, UIReturnKeyType) {
     UIReturnKeyYahoo,
     UIReturnKeyDone,
     UIReturnKeyEmergencyCall,
-    UIReturnKeyContinue NS_ENUM_AVAILABLE_IOS(9_0),
+    UIReturnKeyContinue API_AVAILABLE(ios(9.0)),
 };
 
-#if UIKIT_STRING_ENUMS
 typedef NSString * UITextContentType NS_TYPED_ENUM;
-#else
-typedef NSString * UITextContentType;
-#endif
 
-NS_CLASS_AVAILABLE_IOS(12_0) @interface UITextInputPasswordRules : NSObject <NSSecureCoding, NSCopying>
+UIKIT_EXTERN API_AVAILABLE(ios(12.0)) @interface UITextInputPasswordRules : NSObject <NSSecureCoding, NSCopying>
 
 @property (nonatomic,readonly) NSString *passwordRulesDescriptor;
 
@@ -175,10 +171,10 @@ NS_CLASS_AVAILABLE_IOS(12_0) @interface UITextInputPasswordRules : NSObject <NSS
 
 @property(nonatomic) UITextAutocapitalizationType autocapitalizationType; // default is UITextAutocapitalizationTypeSentences
 @property(nonatomic) UITextAutocorrectionType autocorrectionType;         // default is UITextAutocorrectionTypeDefault
-@property(nonatomic) UITextSpellCheckingType spellCheckingType NS_AVAILABLE_IOS(5_0); // default is UITextSpellCheckingTypeDefault;
-@property(nonatomic) UITextSmartQuotesType smartQuotesType NS_AVAILABLE_IOS(11_0); // default is UITextSmartQuotesTypeDefault;
-@property(nonatomic) UITextSmartDashesType smartDashesType NS_AVAILABLE_IOS(11_0); // default is UITextSmartDashesTypeDefault;
-@property(nonatomic) UITextSmartInsertDeleteType smartInsertDeleteType NS_AVAILABLE_IOS(11_0); // default is UITextSmartInsertDeleteTypeDefault;
+@property(nonatomic) UITextSpellCheckingType spellCheckingType API_AVAILABLE(ios(5.0)); // default is UITextSpellCheckingTypeDefault;
+@property(nonatomic) UITextSmartQuotesType smartQuotesType API_AVAILABLE(ios(11.0)); // default is UITextSmartQuotesTypeDefault;
+@property(nonatomic) UITextSmartDashesType smartDashesType API_AVAILABLE(ios(11.0)); // default is UITextSmartDashesTypeDefault;
+@property(nonatomic) UITextSmartInsertDeleteType smartInsertDeleteType API_AVAILABLE(ios(11.0)); // default is UITextSmartInsertDeleteTypeDefault;
 @property(nonatomic) UIKeyboardType keyboardType;                         // default is UIKeyboardTypeDefault
 @property(nonatomic) UIKeyboardAppearance keyboardAppearance;             // default is UIKeyboardAppearanceDefault
 @property(nonatomic) UIReturnKeyType returnKeyType;                       // default is UIReturnKeyDefault (See note under UIReturnKeyType enum)
@@ -186,45 +182,45 @@ NS_CLASS_AVAILABLE_IOS(12_0) @interface UITextInputPasswordRules : NSObject <NSS
 @property(nonatomic,getter=isSecureTextEntry) BOOL secureTextEntry;       // default is NO
 
 // The textContentType property is to provide the keyboard with extra information about the semantic intent of the text document.
-@property(null_unspecified,nonatomic,copy) UITextContentType textContentType NS_AVAILABLE_IOS(10_0); // default is nil
+@property(null_unspecified,nonatomic,copy) UITextContentType textContentType API_AVAILABLE(ios(10.0)); // default is nil
 
 // The passwordRules property is used to communicate requirements for passwords for your service
 // to ensure iOS can generate compatible passwords for users. It only works when secureTextEntry
 // is YES. You do not need to use this property if the passwords that iOS generates are already
 // compatible with your service. You can learn more about the purpose of and syntax for these rules
 // on the Password Rules documentation guide.
-@property(nullable,nonatomic,copy) UITextInputPasswordRules *passwordRules NS_AVAILABLE_IOS(12_0); // default is nil
+@property(nullable,nonatomic,copy) UITextInputPasswordRules *passwordRules API_AVAILABLE(ios(12.0)); // default is nil
 
 @end
 
 
-UIKIT_EXTERN UITextContentType const UITextContentTypeName                      NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeNamePrefix                NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeGivenName                 NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeMiddleName                NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeFamilyName                NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeNameSuffix                NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeNickname                  NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeJobTitle                  NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeOrganizationName          NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeLocation                  NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeFullStreetAddress         NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeStreetAddressLine1        NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeStreetAddressLine2        NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeAddressCity               NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeAddressState              NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeAddressCityAndState       NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeSublocality               NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeCountryName               NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypePostalCode                NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeTelephoneNumber           NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeEmailAddress              NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeURL                       NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeCreditCardNumber          NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeUsername                  NS_AVAILABLE_IOS(11_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypePassword                  NS_AVAILABLE_IOS(11_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeNewPassword               NS_AVAILABLE_IOS(12_0);
-UIKIT_EXTERN UITextContentType const UITextContentTypeOneTimeCode               NS_AVAILABLE_IOS(12_0);
+UIKIT_EXTERN UITextContentType const UITextContentTypeName                      API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeNamePrefix                API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeGivenName                 API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeMiddleName                API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeFamilyName                API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeNameSuffix                API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeNickname                  API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeJobTitle                  API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeOrganizationName          API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeLocation                  API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeFullStreetAddress         API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeStreetAddressLine1        API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeStreetAddressLine2        API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeAddressCity               API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeAddressState              API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeAddressCityAndState       API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeSublocality               API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeCountryName               API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypePostalCode                API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeTelephoneNumber           API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeEmailAddress              API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeURL                       API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeCreditCardNumber          API_AVAILABLE(ios(10.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeUsername                  API_AVAILABLE(ios(11.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypePassword                  API_AVAILABLE(ios(11.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeNewPassword               API_AVAILABLE(ios(12.0));
+UIKIT_EXTERN UITextContentType const UITextContentTypeOneTimeCode               API_AVAILABLE(ios(12.0));
 
 
 NS_ASSUME_NONNULL_END

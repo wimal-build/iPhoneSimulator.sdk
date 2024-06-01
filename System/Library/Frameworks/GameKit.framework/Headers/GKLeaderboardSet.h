@@ -38,6 +38,7 @@ NS_CLASS_AVAILABLE(10_10, 7_0) __WATCHOS_AVAILABLE(3_0)
 @end
 NS_ASSUME_NONNULL_END
 
+#import <GameKit/GKLeaderboardSet.h>
 
 @interface GKLeaderboardSet (UI)
 

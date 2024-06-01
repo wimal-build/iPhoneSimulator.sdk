@@ -61,6 +61,11 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(9.0))
 @property (readonly) MTLPipelineBufferDescriptorArray *buffers API_AVAILABLE(macos(10.13), ios(11.0));
 
 /*!
+ @property supportIndirectCommandBuffers
+ @abstract This flag makes this pipeline usable with indirect command buffers.
+ */
+@property (readwrite, nonatomic) BOOL supportIndirectCommandBuffers API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos);
+/*!
  @method reset
  @abstract Restore all compute pipeline descriptor properties to their default values.
  */
@@ -108,8 +113,14 @@ API_AVAILABLE(macos(10.11), ios(8.0))
  @method imageblockMemoryLengthForDimensions:
  @brief Returns imageblock memory length for given image block dimensions.
  */
-- (NSUInteger)imageblockMemoryLengthForDimensions:(MTLSize)imageblockDimensions API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+- (NSUInteger)imageblockMemoryLengthForDimensions:(MTLSize)imageblockDimensions API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
+
+/*!
+ @property supportIndirectCommandBuffers
+ @abstract Tells whether this pipeline state is usable through an Indirect Command Buffer.
+ */
+@property (readonly) BOOL supportIndirectCommandBuffers API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos);
 
 @end
 

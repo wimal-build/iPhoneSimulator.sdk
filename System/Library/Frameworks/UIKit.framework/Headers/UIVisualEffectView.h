@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIVisualEffectView.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIVisualEffectView.h>)
 //
 //  UIVisualEffectView.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIBlurEffect.h>
 #import <UIKit/UIVibrancyEffect.h>
 
@@ -23,14 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
  • Correctly capturing snapshots - Many effects require support from the window that hosts the view. As such, attempting to take a snapshot of just the UIVisualEffectView will result in the snapshot not containing the effect at all or it appearing incorrectly. To properly snapshot a view hierarchy that contains a UIVisualEffectView, you must snapshot the entire UIWindow or UIScreen that contains it.
  */
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIVisualEffectView : UIView <NSSecureCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) @interface UIVisualEffectView : UIView <NSSecureCoding>
 
 @property (nonatomic, strong, readonly) UIView *contentView; // Do not add subviews directly to UIVisualEffectView, use this view instead.
 
 @property (nonatomic, copy, nullable) UIVisualEffect *effect;
 
 - (instancetype)initWithEffect:(nullable UIVisualEffect *)effect NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 @end
 

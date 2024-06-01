@@ -32,7 +32,7 @@ GK_BASE_AVAILABILITY_2 @interface GKQuadtree <ElementType : NSObject*>: NSObject
  * Creates a quadtree with a bounding quad and minimum allowed cell size
  *
  * @param quad the quad that specifies of the bounds of this quadtree. Elements must only be within these bounds.
- * @param minimumCellSize the minimum allowed cell size.  The quadtree will not create quadrants that have a width or height smaller than this size.
+ * @param minCellSize the minimum allowed cell size.  The quadtree will not create quadrants that have a width or height smaller than this size.
  */
 +(instancetype)quadtreeWithBoundingQuad:(GKQuad)quad minimumCellSize:(float)minCellSize;
 -(instancetype)initWithBoundingQuad:(GKQuad)quad minimumCellSize:(float)minCellSize NS_DESIGNATED_INITIALIZER;
@@ -51,7 +51,7 @@ GK_BASE_AVAILABILITY_2 @interface GKQuadtree <ElementType : NSObject*>: NSObject
  * Adds an NSObject to this quadtree with a given quad.
  * This data will reside in the lowest node that its quad fits in completely.
  *
- * @param data the data to store
+ * @param element the element to store
  * @param quad the quad associated with the element you want to store
  * @return the quad tree node the element was added to
  */
@@ -68,7 +68,7 @@ GK_BASE_AVAILABILITY_2 @interface GKQuadtree <ElementType : NSObject*>: NSObject
 /**
  * Returns all of the elements that resides in quad tree nodes which intersect the given quad
  *
- * @param quadOrigin the quad you want to test
+ * @param quad the quad you want to test
  * @return an NSArray of all the elements in all of the nodes that intersect the given quad
  *
  */
@@ -88,7 +88,7 @@ GK_BASE_AVAILABILITY_2 @interface GKQuadtree <ElementType : NSObject*>: NSObject
  * Removes the given NSObject from the given quadtree node
  * Note that this is not an exhaustive search and is faster than removeData:
  *
- * @param element the element to be removed
+ * @param data the data to be removed
  * @param node the node in which this data resides
  * @return returns YES if the data was removed, NO otherwise
  */

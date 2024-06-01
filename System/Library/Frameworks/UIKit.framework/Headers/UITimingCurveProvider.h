@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITimingCurveProvider.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITimingCurveProvider.h>)
 //
 //  UITimingCurveProvider.h
 //  UIKit
@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, UITimingCurveType) {
     UITimingCurveTypeCubic,
     UITimingCurveTypeSpring,
     UITimingCurveTypeComposed,        
-} NS_ENUM_AVAILABLE_IOS(10_0);
+} API_AVAILABLE(ios(10.0));
 
 @class UICubicTimingParameters, UISpringTimingParameters;
 

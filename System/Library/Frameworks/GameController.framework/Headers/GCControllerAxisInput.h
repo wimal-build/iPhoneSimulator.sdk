@@ -5,12 +5,13 @@
 //  Copyright (c) 2012 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #import <GameController/GameController.h>
-#import <GameController/GameControllerExtern.h>
+#import <GameController/GCExtern.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-GAMECONTROLLER_EXPORT
 @interface GCControllerAxisInput : GCControllerElement
 
 /**
@@ -31,6 +32,15 @@ typedef void (^GCControllerAxisValueChangedHandler)(GCControllerAxisInput *axis,
  Any value greater than or less than zero is not in the deadzone.
  */
 @property (nonatomic, readonly) float value;
+
+/**
+ Sets the normalized value for the input.
+ 
+ @param value the value to set the input to.
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see value
+ */
+- (void)setValue:(float)value;
 
 @end
 

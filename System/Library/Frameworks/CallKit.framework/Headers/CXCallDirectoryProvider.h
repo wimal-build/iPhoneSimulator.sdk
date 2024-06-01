@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class CXCallDirectoryExtensionContext;
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXCallDirectoryProvider : NSObject <NSExtensionRequestHandling>
 
 - (void)beginRequestWithExtensionContext:(CXCallDirectoryExtensionContext *)context;

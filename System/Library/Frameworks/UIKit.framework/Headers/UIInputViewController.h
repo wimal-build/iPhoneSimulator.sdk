@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIInputViewController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIInputViewController.h>)
 //
 //  UIInputViewController.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewController.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIInputView.h>
 #import <UIKit/UITextInput.h>
 
@@ -23,15 +24,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 // An app can store UITextInputMode in its document context, when user switches to the document, the host will pass the inputMode as documentInputMode to the UIInputViewController,
 // which can switch to the inputMode and set primaryLanguage if it supports it.
-@property (nullable, nonatomic, readonly) UITextInputMode *documentInputMode NS_AVAILABLE_IOS(10_0);
+@property (nullable, nonatomic, readonly) UITextInputMode *documentInputMode API_AVAILABLE(ios(10.0));
 
 @property (nonatomic, readonly, copy) NSUUID *documentIdentifier API_AVAILABLE(ios(11.0));
 
 - (void)adjustTextPositionByCharacterOffset:(NSInteger)offset;
 
+// Setting marked text either replaces the existing marked text or, if none is present, inserts it in place of the current input location.
+- (void)setMarkedText:(NSString *)markedText selectedRange:(NSRange)selectedRange API_AVAILABLE(ios(13.0));
+
+// Unmark the currently marked text.
+- (void)unmarkText API_AVAILABLE(ios(13.0));
+
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController <UITextInputDelegate>
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) @interface UIInputViewController : UIViewController <UITextInputDelegate>
 
 @property (nullable, nonatomic, strong) UIInputView *inputView;
 
@@ -53,7 +60,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController 
 // Launch inputMode list above the view when long pressing or swiping up from the view,
 // Advance to nextInputMode when short tapping on the view.
 // Example: [KeyboardButton addTarget:self action:@selector(handleInputModeListFromView:withEvent:) forControlEvents:UIControlEventAllTouchEvents].
-- (void)handleInputModeListFromView:(nonnull UIView *)view withEvent:(nonnull UIEvent *)event NS_AVAILABLE_IOS(10_0);
+- (void)handleInputModeListFromView:(nonnull UIView *)view withEvent:(nonnull UIEvent *)event API_AVAILABLE(ios(10.0));
 
 // This will not provide a complete repository of a language's vocabulary.
 // It is solely intended to supplement existing lexicons.

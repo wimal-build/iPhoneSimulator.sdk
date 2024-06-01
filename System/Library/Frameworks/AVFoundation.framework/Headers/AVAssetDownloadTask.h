@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 				The value for this key should be a NSNumber.
  @discussion	By default, the highest media bitrate will be selected for download.
 */
-AVF_EXPORT NSString *const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos, watchos);
+AVF_EXPORT NSString *const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey API_AVAILABLE(macos(15.0), ios(9.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*!
  @constant		AVAssetDownloadTaskMediaSelectionKey
@@ -31,7 +31,15 @@ AVF_EXPORT NSString *const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey API
 				The value for this key should be an AVMediaSelection.
  @discussion	By default, media selections for AVAssetDownloadTask will be automatically selected.
 */
-AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos, watchos);
+AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey API_AVAILABLE(macos(15.0), ios(9.0)) API_UNAVAILABLE(tvos, watchos);
+
+/*!
+ @constant		AVAssetDownloadTaskMediaSelectionPrefersMultichannelKey
+ @abstract		Download the specified media selections with or without support for multichannel playback.
+ 				The value for this key should be an NSNumber representing a BOOL.
+ @discussion	By default AVAssetDownloadTask will prefer multichannel by downloading the most capable multichannel rendition available in additon to stereo.
+*/
+AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionPrefersMultichannelKey API_AVAILABLE(macos(15.0), ios(13.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*!
  @class			AVAssetDownloadTask
@@ -39,7 +47,7 @@ AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey API_AVAILABLE(io
  @discussion	Should be created with -[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:]. To utilize local data for playback for downloads that are in-progress, re-use the URLAsset supplied in initialization. An AVAssetDownloadTask may be instantiated with a destinationURL pointing to an existing asset on disk, for the purpose of completing or augmenting a downloaded asset.
 */
 
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
+API_AVAILABLE(macos(10.15), ios(9.0)) API_UNAVAILABLE(tvos, watchos)
 @interface AVAssetDownloadTask : NSURLSessionTask
 
 /*!
@@ -53,7 +61,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @abstract		The file URL supplied to the download task upon initialization.
  @discussion	This URL may have been appended with the appropriate extension for the asset.
 */
-@property (nonatomic, readonly) NSURL *destinationURL NS_DEPRECATED_IOS(9_0, 10_0);
+@property (nonatomic, readonly) NSURL *destinationURL API_DEPRECATED("No longer supported", ios(9.0, 10.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /*!
  @property		options
@@ -81,7 +89,7 @@ AV_INIT_UNAVAILABLE
  @abstract		An AVAssetDownloadTask used for downloading multiple AVMediaSelections for a single AVAsset, under the umbrella of a single download task.
  @discussion	Should be created with -[AVAssetDownloadURLSession aggregateAssetDownloadTaskWithURLAsset:mediaSelections:assetTitle:assetArtworkData:options:. For progress tracking, monitor the delegate callbacks for each childAssetDownloadTask.
 */
-NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
+API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos)
 @interface AVAggregateAssetDownloadTask : NSURLSessionTask
 
 /*!
@@ -103,7 +111,7 @@ AV_INIT_UNAVAILABLE
  @abstract		Delegate methods to implement when adopting AVAssetDownloadTask.
 */
 
-__TVOS_PROHIBITED __WATCHOS_PROHIBITED
+API_AVAILABLE(macos(10.15), ios(9.0)) API_UNAVAILABLE(tvos, watchos)
 @protocol AVAssetDownloadDelegate <NSURLSessionTaskDelegate>
 @optional
 /*!
@@ -117,7 +125,7 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @param			location
 				The location the asset has been downloaded to.
 */
-- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didFinishDownloadingToURL:(NSURL *)location NS_AVAILABLE_IOS(10_0);
+- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didFinishDownloadingToURL:(NSURL *)location API_AVAILABLE(macos(10.15), ios(10.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*!
  @method		URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:
@@ -133,7 +141,7 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @param			timeRangeExpectedToLoad
 				A CMTimeRange indicating the single time range that is expected to be loaded when the download is complete.
 */
-- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didLoadTimeRange:(CMTimeRange)timeRange totalTimeRangesLoaded:(NSArray<NSValue *> *)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad NS_AVAILABLE_IOS(9_0);
+- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didLoadTimeRange:(CMTimeRange)timeRange totalTimeRangesLoaded:(NSArray<NSValue *> *)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad API_AVAILABLE(macos(10.15), ios(9.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*
  @method		URLSession:assetDownloadTask:didResolveMediaSelection:
@@ -145,11 +153,11 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @param			resolvedMediaSelection
 				The resolved media selection for the download task. For the best chance of playing back downloaded content without further network I/O, apply this selection to subsequent AVPlayerItems.
 */
-- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didResolveMediaSelection:(AVMediaSelection *)resolvedMediaSelection NS_AVAILABLE_IOS(9_0);
+- (void)URLSession:(NSURLSession *)session assetDownloadTask:(AVAssetDownloadTask *)assetDownloadTask didResolveMediaSelection:(AVMediaSelection *)resolvedMediaSelection API_AVAILABLE(macos(10.15), ios(9.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*
  @method		URLSession:aggregateAssetDownloadTask:willDownloadToURL:
- @abstract		Method called when the an aggregate download task determines the location this asset will be downloaded to.
+ @abstract		Method called when the aggregate download task determines the location this asset will be downloaded to.
  @discussion	This URL should be saved for future instantiations of AVAsset. While an AVAsset already exists for this content, it is advisable to re-use that instance.
  @param			session
 				The session the aggregate asset download task is on.
@@ -158,7 +166,7 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @param			location
 				The file URL this task will download media data to.
 */
-- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask willDownloadToURL:(NSURL *)location NS_AVAILABLE_IOS(11_0);
+- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask willDownloadToURL:(NSURL *)location API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*
  @method		URLSession:aggregateAssetDownloadTask:didCompleteForMediaSelection:
@@ -170,7 +178,7 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @param			mediaSelection
 				The AVMediaSelection which is now fully available for offline use.
 */
-- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask didCompleteForMediaSelection:(AVMediaSelection *)mediaSelection NS_AVAILABLE_IOS(11_0);
+- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask didCompleteForMediaSelection:(AVMediaSelection *)mediaSelection API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*
  @method		URLSession:aggregateAssetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelection:
@@ -188,7 +196,7 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @param			mediaSelection
 				The media selection which has additional media data loaded for offline use.
 */
-- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask didLoadTimeRange:(CMTimeRange)timeRange totalTimeRangesLoaded:(NSArray<NSValue *> *)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad forMediaSelection:(AVMediaSelection *)mediaSelection NS_AVAILABLE_IOS(11_0);
+- (void)URLSession:(NSURLSession *)session aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask *)aggregateAssetDownloadTask didLoadTimeRange:(CMTimeRange)timeRange totalTimeRangesLoaded:(NSArray<NSValue *> *)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad forMediaSelection:(AVMediaSelection *)mediaSelection API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 @end
 
@@ -197,7 +205,7 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
  @class			AVAssetDownloadURLSession
  @abstract		A subclass of NSURLSession to support AVAssetDownloadTask.
 */
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
+API_AVAILABLE(macos(10.15), ios(9.0)) API_UNAVAILABLE(tvos, watchos)
 @interface AVAssetDownloadURLSession : NSURLSession
 
 /*!
@@ -223,7 +231,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
  @param			options
 				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task. Using this parameter is required for downloading non-default media selections for HLS assets.
 */
-- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset destinationURL:(NSURL *)destinationURL options:(nullable NSDictionary<NSString *, id> *)options NS_DEPRECATED_IOS(9_0, 10_0);
+- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset destinationURL:(NSURL *)destinationURL options:(nullable NSDictionary<NSString *, id> *)options API_DEPRECATED("No longer supported", ios(9.0, 10.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /*!
  @method		assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:
@@ -238,7 +246,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
  @param			options
 				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task. Using this parameter is required for downloading non-default media selections for HLS assets.
 */
-- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE_IOS(10_0);
+- (nullable AVAssetDownloadTask *)assetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options API_AVAILABLE(macos(10.15), ios(10.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*!
  @method		aggregateAssetDownloadTaskWithURLAsset:mediaSelections:assetTitle:assetArtworkData:options:
@@ -255,7 +263,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
  @param			options
 				See AVAssetDownloadTask*Key above. Configures non-default behavior for the download task.
 */
-- (nullable AVAggregateAssetDownloadTask *)aggregateAssetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset mediaSelections:(NSArray <AVMediaSelection *> *)mediaSelections assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options NS_AVAILABLE_IOS(11_0);
+- (nullable AVAggregateAssetDownloadTask *)aggregateAssetDownloadTaskWithURLAsset:(AVURLAsset *)URLAsset mediaSelections:(NSArray <AVMediaSelection *> *)mediaSelections assetTitle:(NSString *)title assetArtworkData:(nullable NSData *)artworkData options:(nullable NSDictionary<NSString *, id> *)options API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 // only AVAssetDownloadTasks can be created with AVAssetDownloadURLSession
 AV_INIT_UNAVAILABLE

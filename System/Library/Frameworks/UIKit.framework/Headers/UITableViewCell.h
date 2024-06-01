@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITableViewCell.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITableViewCell.h>)
 //
 //  UITableViewCell.h
 //  UIKit
@@ -28,19 +28,19 @@ typedef NS_ENUM(NSInteger, UITableViewCellSeparatorStyle) {
     UITableViewCellSeparatorStyleNone,
     UITableViewCellSeparatorStyleSingleLine,
     UITableViewCellSeparatorStyleSingleLineEtched NS_ENUM_DEPRECATED_IOS(2_0, 11_0, "Use UITableViewCellSeparatorStyleSingleLine for a single line separator.")
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UITableViewCellSelectionStyle) {
     UITableViewCellSelectionStyleNone,
     UITableViewCellSelectionStyleBlue,
     UITableViewCellSelectionStyleGray,
-    UITableViewCellSelectionStyleDefault NS_ENUM_AVAILABLE_IOS(7_0)
+    UITableViewCellSelectionStyleDefault API_AVAILABLE(ios(7.0))
 };
 
 typedef NS_ENUM(NSInteger, UITableViewCellFocusStyle) {
     UITableViewCellFocusStyleDefault,
     UITableViewCellFocusStyleCustom
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} API_AVAILABLE(ios(9.0));
 
 typedef NS_ENUM(NSInteger, UITableViewCellEditingStyle) {
     UITableViewCellEditingStyleNone,
@@ -51,9 +51,9 @@ typedef NS_ENUM(NSInteger, UITableViewCellEditingStyle) {
 typedef NS_ENUM(NSInteger, UITableViewCellAccessoryType) {
     UITableViewCellAccessoryNone,                                                      // don't show any accessory view
     UITableViewCellAccessoryDisclosureIndicator,                                       // regular chevron. doesn't track
-    UITableViewCellAccessoryDetailDisclosureButton __TVOS_PROHIBITED,                 // info button w/ chevron. tracks
+    UITableViewCellAccessoryDetailDisclosureButton API_UNAVAILABLE(tvos),                 // info button w/ chevron. tracks
     UITableViewCellAccessoryCheckmark,                                                 // checkmark. doesn't track
-    UITableViewCellAccessoryDetailButton NS_ENUM_AVAILABLE_IOS(7_0)  __TVOS_PROHIBITED // info button. tracks
+    UITableViewCellAccessoryDetailButton API_AVAILABLE(ios(7.0))  API_UNAVAILABLE(tvos) // info button. tracks
 };
 
 typedef NS_OPTIONS(NSUInteger, UITableViewCellStateMask) {
@@ -70,17 +70,17 @@ typedef NS_ENUM(NSInteger, UITableViewCellDragState) {
 
 #define UITableViewCellStateEditingMask UITableViewCellStateShowingEditControlMask
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGestureRecognizerDelegate>
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UITableViewCell : UIView <NSCoding, UIGestureRecognizerDelegate>
 
 // Designated initializer.  If the cell can be reused, you must pass in a reuse identifier.  You should use the same reuse identifier for all cells of the same form.  
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier NS_AVAILABLE_IOS(3_0) NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier API_AVAILABLE(ios(3.0)) NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 // Content.  These properties provide direct access to the internal label and image views used by the table view cell.  These should be used instead of the content properties below.
-@property (nonatomic, readonly, strong, nullable) UIImageView *imageView NS_AVAILABLE_IOS(3_0);   // default is nil.  image view will be created if necessary.
+@property (nonatomic, readonly, strong, nullable) UIImageView *imageView API_AVAILABLE(ios(3.0));   // default is nil.  image view will be created if necessary.
 
-@property (nonatomic, readonly, strong, nullable) UILabel *textLabel NS_AVAILABLE_IOS(3_0);   // default is nil.  label will be created if necessary.
-@property (nonatomic, readonly, strong, nullable) UILabel *detailTextLabel NS_AVAILABLE_IOS(3_0); // default is nil.  label will be created if necessary (and the current style supports a detail label).
+@property (nonatomic, readonly, strong, nullable) UILabel *textLabel API_AVAILABLE(ios(3.0));   // default is nil.  label will be created if necessary.
+@property (nonatomic, readonly, strong, nullable) UILabel *detailTextLabel API_AVAILABLE(ios(3.0)); // default is nil.  label will be created if necessary (and the current style supports a detail label).
 
 // If you want to customize cells by simply adding additional views, you should add them to the content view so they will be positioned appropriately as the cell transitions into and out of editing mode.
 @property (nonatomic, readonly, strong) UIView *contentView;
@@ -92,7 +92,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGes
 @property (nonatomic, strong, nullable) UIView *selectedBackgroundView;
 
 // If not nil, takes the place of the selectedBackgroundView when using multiple selection.
-@property (nonatomic, strong, nullable) UIView *multipleSelectionBackgroundView NS_AVAILABLE_IOS(5_0);
+@property (nonatomic, strong, nullable) UIView *multipleSelectionBackgroundView API_AVAILABLE(ios(5.0));
 
 @property (nonatomic, readonly, copy, nullable) NSString *reuseIdentifier;
 - (void)prepareForReuse NS_REQUIRES_SUPER;                                                        // if the cell is reusable (has a reuse identifier), this is called just before the cell is returned from the table view method dequeueReusableCellWithIdentifier:.  If you override, you MUST call super.
@@ -114,20 +114,20 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGes
 
 @property (nonatomic) NSInteger                       indentationLevel;           // adjust content indent. default is 0
 @property (nonatomic) CGFloat                         indentationWidth;           // width for each level. default is 10.0
-@property (nonatomic) UIEdgeInsets                    separatorInset NS_AVAILABLE_IOS(7_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED; // allows customization of the separator frame
+@property (nonatomic) UIEdgeInsets                    separatorInset API_AVAILABLE(ios(7.0)) UI_APPEARANCE_SELECTOR API_UNAVAILABLE(tvos); // allows customization of the separator frame
 
 @property (nonatomic, getter=isEditing) BOOL          editing;                    // show appropriate edit controls (+/- & reorder). By default -setEditing: calls setEditing:animated: with NO for animated.
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated;
 
 @property(nonatomic, readonly) BOOL                   showingDeleteConfirmation;  // currently showing "Delete" button
 
-@property (nonatomic) UITableViewCellFocusStyle       focusStyle NS_AVAILABLE_IOS(9_0) UI_APPEARANCE_SELECTOR;
+@property (nonatomic) UITableViewCellFocusStyle       focusStyle API_AVAILABLE(ios(9.0)) UI_APPEARANCE_SELECTOR;
 
 // These methods can be used by subclasses to animate additional changes to the cell when the cell is changing state
 // Note that when the cell is swiped, the cell will be transitioned into the UITableViewCellStateShowingDeleteConfirmationMask state,
 // but the UITableViewCellStateShowingEditControlMask will not be set.
-- (void)willTransitionToState:(UITableViewCellStateMask)state NS_AVAILABLE_IOS(3_0);
-- (void)didTransitionToState:(UITableViewCellStateMask)state NS_AVAILABLE_IOS(3_0);
+- (void)willTransitionToState:(UITableViewCellStateMask)state API_AVAILABLE(ios(3.0));
+- (void)didTransitionToState:(UITableViewCellStateMask)state API_AVAILABLE(ios(3.0));
 
 /* Override this method to receive notifications that the cell's drag state has changed.
  * Call super if you want to apply the default appearance.
@@ -144,27 +144,27 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewCell : UIView <NSCoding, UIGes
 @interface UITableViewCell (UIDeprecated)
 
 // Frame is ignored.  The size will be specified by the table view width and row height.
-- (id)initWithFrame:(CGRect)frame reuseIdentifier:(nullable NSString *)reuseIdentifier NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
+- (id)initWithFrame:(CGRect)frame reuseIdentifier:(nullable NSString *)reuseIdentifier API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);
 
 // Content properties.  These properties were deprecated in iPhone OS 3.0.  The textLabel and imageView properties above should be used instead.
 // For selected attributes, set the highlighted attributes on the textLabel and imageView.
-@property (nonatomic, copy, nullable)   NSString *text NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;                        // default is nil
-@property (nonatomic, strong, nullable) UIFont   *font NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;                        // default is nil (Use default font)
-@property (nonatomic) NSTextAlignment   textAlignment NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;               // default is UITextAlignmentLeft
-@property (nonatomic) NSLineBreakMode   lineBreakMode NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;               // default is UILineBreakModeTailTruncation
-@property (nonatomic, strong, nullable) UIColor  *textColor NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;                   // default is nil (text draws black)
-@property (nonatomic, strong, nullable) UIColor  *selectedTextColor NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;           // default is nil (text draws white)
+@property (nonatomic, copy, nullable)   NSString *text API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);                        // default is nil
+@property (nonatomic, strong, nullable) UIFont   *font API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);                        // default is nil (Use default font)
+@property (nonatomic) NSTextAlignment   textAlignment API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);               // default is UITextAlignmentLeft
+@property (nonatomic) NSLineBreakMode   lineBreakMode API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);               // default is UILineBreakModeTailTruncation
+@property (nonatomic, strong, nullable) UIColor  *textColor API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);                   // default is nil (text draws black)
+@property (nonatomic, strong, nullable) UIColor  *selectedTextColor API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);           // default is nil (text draws white)
 
-@property (nonatomic, strong, nullable) UIImage  *image NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;                       // default is nil. appears on left next to title.
-@property (nonatomic, strong, nullable) UIImage  *selectedImage NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;               // default is nil
+@property (nonatomic, strong, nullable) UIImage  *image API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);                       // default is nil. appears on left next to title.
+@property (nonatomic, strong, nullable) UIImage  *selectedImage API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);               // default is nil
 
 // Use the new editingAccessoryType and editingAccessoryView instead
-@property (nonatomic) BOOL              hidesAccessoryWhenEditing NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;   // default is YES
+@property (nonatomic) BOOL              hidesAccessoryWhenEditing API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);   // default is YES
 
 // Use the table view data source method -tableView:commitEditingStyle:forRowAtIndexPath: or the table view delegate method -tableView:accessoryButtonTappedForRowWithIndexPath: instead
-@property (nonatomic, assign, nullable) id        target NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;                      // target for insert/delete/accessory clicks. default is nil (i.e. go up responder chain). weak reference
-@property (nonatomic, nullable) SEL               editAction NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;                  // action to call on insert/delete call. set by UITableView
-@property (nonatomic, nullable) SEL               accessoryAction NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;             // action to call on accessory view clicked. set by UITableView
+@property (nonatomic, assign, nullable) id        target API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);                      // target for insert/delete/accessory clicks. default is nil (i.e. go up responder chain). weak reference
+@property (nonatomic, nullable) SEL               editAction API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);                  // action to call on insert/delete call. set by UITableView
+@property (nonatomic, nullable) SEL               accessoryAction API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);             // action to call on accessory view clicked. set by UITableView
 
 @end
 

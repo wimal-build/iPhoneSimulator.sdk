@@ -55,8 +55,8 @@ GK_BASE_AVAILABILITY_2 @interface GKMeshGraph<NodeType : GKGraphNode2D*> : GKGra
  * Creates a graph with a given buffer radius
  * Obstacles can then be added to this graph prior to a call to [GKMeshGraph trianglulate]
  * @param bufferRadius the circular radius of a potential agent that will navigate this graph.  Obstacles are extruded by this amount to create the graph.  Must be positive.  Negative values are clipped to 0.0f
- * @param minCoordinate the minimum coordinate (lower left corner) of the bounding box that will encapsulate this graph.  No obstacles should fall outside this bounding box.
- * @param maxCoordinate the maximum coordinate (upper right corner) of the bounding box that will encapsulate this graph.  No obstacles should fall outside this bounding box.
+ * @param min the minimum coordinate (lower left corner) of the bounding box that will encapsulate this graph.  No obstacles should fall outside this bounding box.
+ * @param max the maximum coordinate (upper right corner) of the bounding box that will encapsulate this graph.  No obstacles should fall outside this bounding box.
  * @param nodeClass the class of the nodes that this graph should create.  Must descend from GKGraphNode2D
  */
 + (instancetype)graphWithBufferRadius:(float)bufferRadius minCoordinate:(vector_float2)min maxCoordinate:(vector_float2)max nodeClass:(Class)nodeClass;

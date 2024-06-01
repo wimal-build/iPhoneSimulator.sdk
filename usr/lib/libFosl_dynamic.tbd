@@ -1,19 +1,25 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 5C77CB9F-C702-378F-AC41-56492BEB29DD', 'x86_64: 033521CC-ADD2-3837-901D-CB78F7305AB4' ]
+uuids:           [ 'i386: 5C77CB9F-C702-378F-AC41-56492BEB29DD', 'x86_64: 08763A11-E64A-3090-8929-6E06548F41E7' ]
 platform:        ios
-install-name:    /usr/lib/libFosl_dynamic.dylib
+install-name:    '/usr/lib/libFosl_dynamic.dylib'
 current-version: 0
 compatibility-version: 0
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
-    symbols:         [ _fosl_filter_createReadPixel, _fosl_setStage ]
-  - archs:           [ i386, x86_64 ]
     symbols:         [ _fosl_addPrelude, _fosl_astPrint, _fosl_astPrintReachable, 
                        _fosl_codeComplete, _fosl_codeCompleteLineColumn, _fosl_createParser, 
-                       _fosl_destroyParser, _fosl_filter_addChild, _fosl_filter_addLibraryFunction, 
-                       _fosl_filter_assignRoot, _fosl_filter_createConstant, _fosl_filter_createCoordinateTransform, 
+                       _fosl_destroyParser, _fosl_filter_createReadPixel, _fosl_frontend_parseFile, 
+                       _fosl_frontend_parseString, _fosl_getDiagnostics, _fosl_getNumDiagnostics, 
+                       _fosl_getSpecializedUniforms, _fosl_getUsedUniforms, _fosl_parseShader, 
+                       _fosl_removeSpecialization, _fosl_setPrimarySource, _fosl_setStage, 
+                       _fosl_specializeBool, _fosl_specializeBoolVector, _fosl_specializeFloat, 
+                       _fosl_specializeFloatMatrix, _fosl_specializeFloatVector, 
+                       _fosl_specializeInt, _fosl_specializeIntVector, _fosl_specializeUInt, 
+                       _fosl_specializeUIntVector ]
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _fosl_filter_addChild, _fosl_filter_addLibraryFunction, _fosl_filter_assignRoot, 
+                       _fosl_filter_createConstant, _fosl_filter_createCoordinateTransform, 
                        _fosl_filter_createGraph, _fosl_filter_createImage, _fosl_filter_createKernel, 
                        _fosl_filter_createPositionUpdate, _fosl_filter_createSampleTransform, 
                        _fosl_filter_createSampler, _fosl_filter_createTransformMatrix, 
@@ -36,12 +42,5 @@ exports:
                        _fosl_filter_setPositionUpdateContinuation, _fosl_filter_setPositionUpdatePosition, 
                        _fosl_filter_setSamplerNeedsSRGBToLinear, _fosl_filter_setSamplerSwizzleMacro, 
                        _fosl_filter_setSamplerSwizzleMask, _fosl_filter_synthesizeMainInGraph, 
-                       _fosl_filter_synthesizeMainInGraphOfType, _fosl_filter_synthesizeMainInGraphOfTypeWithOptions, 
-                       _fosl_frontend_parseFile, _fosl_frontend_parseString, _fosl_getDiagnostics, 
-                       _fosl_getNumDiagnostics, _fosl_getSpecializedUniforms, _fosl_getUsedUniforms, 
-                       _fosl_parseShader, _fosl_removeSpecialization, _fosl_setPrimarySource, 
-                       _fosl_specializeBool, _fosl_specializeBoolVector, _fosl_specializeFloat, 
-                       _fosl_specializeFloatMatrix, _fosl_specializeFloatVector, 
-                       _fosl_specializeInt, _fosl_specializeIntVector, _fosl_specializeUInt, 
-                       _fosl_specializeUIntVector ]
+                       _fosl_filter_synthesizeMainInGraphOfType, _fosl_filter_synthesizeMainInGraphOfTypeWithOptions ]
 ...

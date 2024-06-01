@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, ILClassificationAction) {
     
     /// Report communication(s) as junk and block the sender.
     ILClassificationActionReportJunkAndBlockSender = 3,
-} API_AVAILABLE(ios(12.0));
+} API_AVAILABLE(ios(12.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos);
 
 NS_ASSUME_NONNULL_END
 

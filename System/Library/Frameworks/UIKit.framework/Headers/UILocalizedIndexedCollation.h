@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILocalizedIndexedCollation.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UILocalizedIndexedCollation.h>)
 //
 //  UILocalizedIndexedCollation.h
 //  UIKit
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(3_0) @interface UILocalizedIndexedCollation : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(3.0)) @interface UILocalizedIndexedCollation : NSObject
 
 + (instancetype)currentCollation;
 

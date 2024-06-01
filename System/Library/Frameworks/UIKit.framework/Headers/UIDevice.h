@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDevice.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIDevice.h>)
 //
 //  UIDevice.h
 //  UIKit
@@ -19,72 +19,68 @@ typedef NS_ENUM(NSInteger, UIDeviceOrientation) {
     UIDeviceOrientationLandscapeRight,      // Device oriented horizontally, home button on the left
     UIDeviceOrientationFaceUp,              // Device oriented flat, face up
     UIDeviceOrientationFaceDown             // Device oriented flat, face down
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIDeviceBatteryState) {
     UIDeviceBatteryStateUnknown,
     UIDeviceBatteryStateUnplugged,   // on battery, discharging
     UIDeviceBatteryStateCharging,    // plugged in, less than 100%
     UIDeviceBatteryStateFull,        // plugged in, at 100%
-} __TVOS_PROHIBITED;              // available in iPhone 3.0
+} API_UNAVAILABLE(tvos);              // available in iPhone 3.0
 
 typedef NS_ENUM(NSInteger, UIUserInterfaceIdiom) {
     UIUserInterfaceIdiomUnspecified = -1,
-    UIUserInterfaceIdiomPhone NS_ENUM_AVAILABLE_IOS(3_2), // iPhone and iPod touch style UI
-    UIUserInterfaceIdiomPad NS_ENUM_AVAILABLE_IOS(3_2), // iPad style UI
-    UIUserInterfaceIdiomTV NS_ENUM_AVAILABLE_IOS(9_0), // Apple TV style UI
-    UIUserInterfaceIdiomCarPlay NS_ENUM_AVAILABLE_IOS(9_0), // CarPlay style UI
+    UIUserInterfaceIdiomPhone API_AVAILABLE(ios(3.2)), // iPhone and iPod touch style UI
+    UIUserInterfaceIdiomPad API_AVAILABLE(ios(3.2)), // iPad style UI
+    UIUserInterfaceIdiomTV API_AVAILABLE(ios(9.0)), // Apple TV style UI
+    UIUserInterfaceIdiomCarPlay API_AVAILABLE(ios(9.0)), // CarPlay style UI
 };
 
-static inline BOOL UIDeviceOrientationIsPortrait(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+static inline BOOL UIDeviceOrientationIsPortrait(UIDeviceOrientation orientation)  API_UNAVAILABLE(tvos) {
     return ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown);
 }
 
-static inline BOOL UIDeviceOrientationIsLandscape(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+static inline BOOL UIDeviceOrientationIsLandscape(UIDeviceOrientation orientation)  API_UNAVAILABLE(tvos) {
     return ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
 }
 
-static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsFlat(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsFlat(UIDeviceOrientation orientation)  API_UNAVAILABLE(tvos) {
     return ((orientation) == UIDeviceOrientationFaceUp || (orientation) == UIDeviceOrientationFaceDown);
 }
 
-static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsValidInterfaceOrientation(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsValidInterfaceOrientation(UIDeviceOrientation orientation)  API_UNAVAILABLE(tvos) {
     return ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown || (orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
 }
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject 
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UIDevice : NSObject
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(class, nonatomic, readonly) UIDevice *currentDevice;
-#else
-+ (UIDevice *)currentDevice;
-#endif
 
 @property(nonatomic,readonly,strong) NSString    *name;              // e.g. "My iPhone"
 @property(nonatomic,readonly,strong) NSString    *model;             // e.g. @"iPhone", @"iPod touch"
 @property(nonatomic,readonly,strong) NSString    *localizedModel;    // localized version of model
 @property(nonatomic,readonly,strong) NSString    *systemName;        // e.g. @"iOS"
 @property(nonatomic,readonly,strong) NSString    *systemVersion;     // e.g. @"4.0"
-@property(nonatomic,readonly) UIDeviceOrientation orientation __TVOS_PROHIBITED;       // return current device orientation.  this will return UIDeviceOrientationUnknown unless device orientation notifications are being generated.
+@property(nonatomic,readonly) UIDeviceOrientation orientation API_UNAVAILABLE(tvos);       // return current device orientation.  this will return UIDeviceOrientationUnknown unless device orientation notifications are being generated.
 
-@property(nullable, nonatomic,readonly,strong) NSUUID      *identifierForVendor NS_AVAILABLE_IOS(6_0);      // a UUID that may be used to uniquely identify the device, same across apps from a single vendor.
+@property(nullable, nonatomic,readonly,strong) NSUUID      *identifierForVendor API_AVAILABLE(ios(6.0));      // a UUID that may be used to uniquely identify the device, same across apps from a single vendor.
 
-@property(nonatomic,readonly,getter=isGeneratingDeviceOrientationNotifications) BOOL generatesDeviceOrientationNotifications __TVOS_PROHIBITED;
-- (void)beginGeneratingDeviceOrientationNotifications __TVOS_PROHIBITED;      // nestable
-- (void)endGeneratingDeviceOrientationNotifications __TVOS_PROHIBITED;
+@property(nonatomic,readonly,getter=isGeneratingDeviceOrientationNotifications) BOOL generatesDeviceOrientationNotifications API_UNAVAILABLE(tvos);
+- (void)beginGeneratingDeviceOrientationNotifications API_UNAVAILABLE(tvos);      // nestable
+- (void)endGeneratingDeviceOrientationNotifications API_UNAVAILABLE(tvos);
 
-@property(nonatomic,getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;  // default is NO
-@property(nonatomic,readonly) UIDeviceBatteryState          batteryState NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;  // UIDeviceBatteryStateUnknown if monitoring disabled
-@property(nonatomic,readonly) float                         batteryLevel NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;  // 0 .. 1.0. -1.0 if UIDeviceBatteryStateUnknown
+@property(nonatomic,getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled API_AVAILABLE(ios(3.0)) API_UNAVAILABLE(tvos);  // default is NO
+@property(nonatomic,readonly) UIDeviceBatteryState          batteryState API_AVAILABLE(ios(3.0)) API_UNAVAILABLE(tvos);  // UIDeviceBatteryStateUnknown if monitoring disabled
+@property(nonatomic,readonly) float                         batteryLevel API_AVAILABLE(ios(3.0)) API_UNAVAILABLE(tvos);  // 0 .. 1.0. -1.0 if UIDeviceBatteryStateUnknown
 
-@property(nonatomic,getter=isProximityMonitoringEnabled) BOOL proximityMonitoringEnabled NS_AVAILABLE_IOS(3_0); // default is NO
-@property(nonatomic,readonly)                            BOOL proximityState NS_AVAILABLE_IOS(3_0);  // always returns NO if no proximity detector
+@property(nonatomic,getter=isProximityMonitoringEnabled) BOOL proximityMonitoringEnabled API_AVAILABLE(ios(3.0)); // default is NO
+@property(nonatomic,readonly)                            BOOL proximityState API_AVAILABLE(ios(3.0));  // always returns NO if no proximity detector
 
-@property(nonatomic,readonly,getter=isMultitaskingSupported) BOOL multitaskingSupported NS_AVAILABLE_IOS(4_0);
+@property(nonatomic,readonly,getter=isMultitaskingSupported) BOOL multitaskingSupported API_AVAILABLE(ios(4.0));
 
-@property(nonatomic,readonly) UIUserInterfaceIdiom userInterfaceIdiom NS_AVAILABLE_IOS(3_2);
+@property(nonatomic,readonly) UIUserInterfaceIdiom userInterfaceIdiom API_AVAILABLE(ios(3.2));
 
-- (void)playInputClick NS_AVAILABLE_IOS(4_2);  // Plays a click only if an enabling input view is on-screen and user has enabled input clicks.
+- (void)playInputClick API_AVAILABLE(ios(4.2));  // Plays a click only if an enabling input view is on-screen and user has enabled input clicks.
 
 @end
 
@@ -97,16 +93,16 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 
 /* The UI_USER_INTERFACE_IDIOM() function is provided for use when deploying to a version of the iOS less than 3.2. If the earliest version of iPhone/iOS that you will be deploying for is 3.2 or greater, you may use -[UIDevice userInterfaceIdiom] directly.
  */
-static inline UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM() {
+static inline UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM() API_DEPRECATED("Use -[UIDevice userInterfaceIdiom] directly.", ios(2.0, 13.0), tvos(9.0, 11.0)) {
     return ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ?
             [[UIDevice currentDevice] userInterfaceIdiom] :
             UIUserInterfaceIdiomPhone);
 }
 
-UIKIT_EXTERN NSNotificationName const UIDeviceOrientationDidChangeNotification __TVOS_PROHIBITED;
-UIKIT_EXTERN NSNotificationName const UIDeviceBatteryStateDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSNotificationName const UIDeviceBatteryLevelDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSNotificationName const UIDeviceProximityStateDidChangeNotification NS_AVAILABLE_IOS(3_0);
+UIKIT_EXTERN NSNotificationName const UIDeviceOrientationDidChangeNotification API_UNAVAILABLE(tvos);
+UIKIT_EXTERN NSNotificationName const UIDeviceBatteryStateDidChangeNotification   API_AVAILABLE(ios(3.0)) API_UNAVAILABLE(tvos);
+UIKIT_EXTERN NSNotificationName const UIDeviceBatteryLevelDidChangeNotification   API_AVAILABLE(ios(3.0)) API_UNAVAILABLE(tvos);
+UIKIT_EXTERN NSNotificationName const UIDeviceProximityStateDidChangeNotification API_AVAILABLE(ios(3.0));
 
 NS_ASSUME_NONNULL_END
 

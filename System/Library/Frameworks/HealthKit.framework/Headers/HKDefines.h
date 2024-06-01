@@ -19,7 +19,7 @@ HK_EXTERN NSString * const HKErrorDomain API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /*!
  @enum      HKErrorCode
- 
+
  @constant  HKNoError                           No error.
  @constant  HKErrorHealthDataUnavailable        HealthKit is not available on this device.
  @constant  HKErrorHealthDataRestricted         HealthKit is restricted on this device.
@@ -62,8 +62,8 @@ typedef NS_ENUM(NSInteger, HKUpdateFrequency) {
  @enum      HKAuthorizationStatus
  @abstract  This enumerated type is used to indicate the currently granted authorization status for a specific
             HKObjectType.
- 
- @constant  HKAuthorizationStatusNotDetermined      The user has not yet made a choice regarding whether this 
+
+ @constant  HKAuthorizationStatusNotDetermined      The user has not yet made a choice regarding whether this
                                                     application may save objects of the specified type.
  @constant  HKAuthorizationStatusSharingDenied      This application is not allowed to save objects of the specified type.
  @constant  HKAuthorizationStatusSharingAuthorized  This application is authorized to save objects of the specified type.
@@ -77,7 +77,7 @@ typedef NS_ENUM(NSInteger, HKAuthorizationStatus) {
 /*!
  @enum      HKAuthorizationRequestStatus
  @abstract  This enumerated type is used to indicate whether it is necessary to request authorization from the user.
- 
+
  @constant  HKAuthorizationRequestStatusUnknown         The authorization request status could not be determined because
                                                         an error occurred.
  @constant  HKAuthorizationRequestStatusShouldRequest   The application should request authorization from the user.
@@ -119,8 +119,8 @@ typedef NS_ENUM(NSInteger, HKBloodType) {
 /*!
  @enum          HKCategoryValueSleepAnalysis
  @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryTypeIdentifierSleepAnalysis type.
- @discussion    To represent the user being both in bed and asleep, use two or more samples with overlapping times. By comparing the 
-                start and end times of these samples, it is possible to calculate a number of secondary statistics: 
+ @discussion    To represent the user being both in bed and asleep, use two or more samples with overlapping times. By comparing the
+                start and end times of these samples, it is possible to calculate a number of secondary statistics:
                 1) The amount of time it took for the user to fall asleep
                 2) The percentage of time in bed that the user actually spent sleeping,
                 3) The number of times the user woke while in bed
@@ -136,7 +136,7 @@ typedef NS_ENUM(NSInteger, HKCategoryValueSleepAnalysis) {
 /*!
  @enum          HKCategoryValueAppleStandHour
  @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryTypeIdentifierAppleStandHour type.
- 
+
  @constant      HKCategoryValueAppleStandHourStood  The user stood up and moved a little for at least one minute during
                                                     the sample.
  @constant      HKCategoryValueAppleStandHourIdle   The user did not stand up and move a little for at least one
@@ -173,7 +173,7 @@ typedef NS_ENUM(NSInteger, HKFitzpatrickSkinType) {
 /*!
  @enum          HKWheelchairUse
  @abstract      This enumerated type is used to represent whether the user uses a wheelchair.
- 
+
  @constant      HKWheelchairUseNo      The user does not use a wheelchair.
  @constant      HKWheelchairUseYes     The user does use a wheelchair.
  */
@@ -199,13 +199,15 @@ typedef NS_ENUM(NSInteger, HKCategoryValueCervicalMucusQuality) {
 /*!
  @enum          HKCategoryValueOvulationTestResult
  @abstract      Set of values that may be used for HKCategorySamples with the HKCategoryValueOvulationTestResult type.
- @discussion    This category value tracks the result of a home ovulation test that use surges in luteinizing hormone 
-                levels to indicate fertility.
+ @discussion    This category value tracks the result of a home ovulation test that use surges in hormone levels to
+                indicate fertility.
  */
 typedef NS_ENUM(NSInteger, HKCategoryValueOvulationTestResult) {
     HKCategoryValueOvulationTestResultNegative = 1,
-    HKCategoryValueOvulationTestResultPositive,
-    HKCategoryValueOvulationTestResultIndeterminate,
+    HKCategoryValueOvulationTestResultLuteinizingHormoneSurge API_AVAILABLE(ios(13.0), watchos(6.0)) = 2,
+    HKCategoryValueOvulationTestResultPositive API_DEPRECATED_WITH_REPLACEMENT("HKCategoryValueOvulationTestResultLuteinizingHormoneSurge", ios(9.0, 13.0), watchos(2.0, 6.0)) = HKCategoryValueOvulationTestResultLuteinizingHormoneSurge,
+    HKCategoryValueOvulationTestResultIndeterminate = 3,
+    HKCategoryValueOvulationTestResultEstrogenSurge API_AVAILABLE(ios(13.0), watchos(6.0)) = 4,
 } API_AVAILABLE(ios(9.0), watchos(2.0));
 
 /*!
@@ -227,5 +229,13 @@ typedef NS_ENUM(NSInteger, HKCategoryValueMenstrualFlow) {
 typedef NS_ENUM(NSInteger, HKCategoryValue) {
     HKCategoryValueNotApplicable = 0,
 } API_AVAILABLE(ios(9.0), watchos(2.0));
+
+/*!
+ @enum          HKCategoryValueAudioExposureEvent
+ @abstract      Specifies the kind of audio exposure event associated with the sample.
+ */
+typedef NS_ENUM(NSInteger, HKCategoryValueAudioExposureEvent) {
+    HKCategoryValueAudioExposureEventLoudEnvironment = 1,
+} API_AVAILABLE(ios(13.0), watchos(6.0));
 
 NS_ASSUME_NONNULL_END

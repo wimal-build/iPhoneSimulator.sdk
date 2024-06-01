@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITableViewHeaderFooterView.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITableViewHeaderFooterView.h>)
 //
 //  UITableViewHeaderFooterView.h
 //  UIKit
@@ -8,15 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UITableView.h>
 
 // Either the header or footer for a section
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UITableViewHeaderFooterView : UIView
+UIKIT_EXTERN API_AVAILABLE(ios(6.0)) @interface UITableViewHeaderFooterView : UIView
 
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, readonly, strong, nullable) UILabel *textLabel;
 @property (nonatomic, readonly, strong, nullable) UILabel *detailTextLabel; // only supported for headers in grouped style

@@ -13,3 +13,4 @@
 #endif
 #endif
 
+typedef void (^HMErrorBlock)(NSError * _Nullable error);

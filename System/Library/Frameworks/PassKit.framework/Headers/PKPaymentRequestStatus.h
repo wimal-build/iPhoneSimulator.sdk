@@ -65,6 +65,12 @@ API_AVAILABLE(ios(11.0), watchos(4.0))
 API_AVAILABLE(ios(11.0), watchos(4.0))
 @interface PKPaymentRequestPaymentMethodUpdate : PKPaymentRequestUpdate
 
+// You may optionally supply errors here.
+// See PKError for specific NSError keys to use.
+- (instancetype)initWithErrors:(nullable NSArray<NSError *> *)errors
+           paymentSummaryItems:(NSArray<PKPaymentSummaryItem *> *)paymentSummaryItems NS_DESIGNATED_INITIALIZER;
+
+@property (null_resettable, nonatomic, copy) NSArray<NSError *> *errors;
 @end
 
 NS_ASSUME_NONNULL_END

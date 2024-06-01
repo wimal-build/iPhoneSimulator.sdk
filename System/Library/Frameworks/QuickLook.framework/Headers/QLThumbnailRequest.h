@@ -5,8 +5,8 @@
 //  Copyright 2016 Apple Inc. All rights reserved.
 //
 
-#if !defined(USE_PUBLIC_QUICKLOOK_HEADERS) && __has_include(<QuickLookSupport/QLThumbnailProvider.h>)
-#import <QuickLookSupport/QLThumbnailRequest.h>
+#if !defined(USE_PUBLIC_QUICKLOOK_HEADERS) && __has_include(<QuickLookThumbnailing/QLThumbnailRequest.h>)
+#import <QuickLookThumbnailing/QLThumbnailRequest.h>
 #else
 
 #import <CoreGraphics/CoreGraphics.h>

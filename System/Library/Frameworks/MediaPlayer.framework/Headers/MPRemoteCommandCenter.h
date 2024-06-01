@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -58,7 +58,7 @@ MP_API(ios(7.1), tvos(7.1), macos(10.12.2), watchos(5.0))
 @property (nonatomic, readonly) MPFeedbackCommand *bookmarkCommand;
 
 + (MPRemoteCommandCenter *)sharedCommandCenter;
-- (id)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

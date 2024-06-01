@@ -39,8 +39,7 @@ GK_BASE_AVAILABILITY @interface GKGridGraph<NodeType : GKGridGraphNode *>  : GKG
 
 /**
  * Creates a bidirectional graph connecting all of the points on a 2D grid
- * @param x starting x value of the grid
- * @param y starting y value of the grid
+ * @param position starting position in the grid
  * @param width how wide the grid will be; the grid will continue along the positive X axis from the starting x value
  * @param height how high the grid will be; the grid will continue along the positive Y axis from the starting y value
  * @param diagonalsAllowed should diagonal connections between nodes be made?  If not, only cardinal directions will be connected.
@@ -50,8 +49,7 @@ GK_BASE_AVAILABILITY @interface GKGridGraph<NodeType : GKGridGraphNode *>  : GKG
 
 /**
  * Creates a bidirectional graph connecting all of the points on a 2D grid
- * @param x starting x value of the grid
- * @param y starting y value of the grid
+ * @param position starting position in the grid
  * @param width how wide the grid will be; the grid will continue along the positive X axis from the starting x value
  * @param height how high the grid will be; the grid will continue along the positive Y axis from the starting y value
  * @param diagonalsAllowed should diagonal connections between nodes be made?  If not, only cardinal directions will be connected.
@@ -63,8 +61,7 @@ GK_BASE_AVAILABILITY @interface GKGridGraph<NodeType : GKGridGraphNode *>  : GKG
 /**
  * Returns the GKGridGraphNode at the indicated X and Y coordinate
  * Returns nil if it is outside the bounds of minCoordinates and maxCoordinates
- * @param x x coordinate of the grid node to return
- * @param y y coordinate of the grid node to return
+ * @param position starting position in the grid
  */
 - (nullable NodeType)nodeAtGridPosition:(vector_int2)position;
 

@@ -1,9 +1,9 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSItemProvider+UIKitAdditions.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/NSItemProvider+UIKitAdditions.h>)
 //
 //  NSItemProvider+UIKitAdditions.h
 //  UIKit
 //
-//  Copyright © 2017-2018 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

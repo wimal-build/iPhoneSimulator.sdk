@@ -2,7 +2,7 @@
 //  SCNHitTest.h
 //  SceneKit
 //
-//  Copyright © 2012-2018 Apple Inc. All rights reserved.
+//  Copyright © 2012-2019 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SceneKitTypes.h>
@@ -31,6 +31,7 @@ SCN_EXPORT SCNHitTestOption const SCNHitTestRootNodeKey;                        
 SCN_EXPORT SCNHitTestOption const SCNHitTestIgnoreHiddenNodesKey  API_AVAILABLE(macos(10.9));                                       // Determines whether hidden nodes should be ignored. Defaults to YES.
 SCN_EXPORT SCNHitTestOption const SCNHitTestOptionCategoryBitMask API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));               // Determines the node categories to test. Defaults to all bits set.
 SCN_EXPORT SCNHitTestOption const SCNHitTestOptionSearchMode      API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0)); // Determines whether the search should be exhaustive. Defaults to SCNHitTestSearchModeClosest.
+SCN_EXPORT SCNHitTestOption const SCNHitTestOptionIgnoreLightArea API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0)); // Determines whether the shape of an area light should not be taken into account. Defaults to YES.
 
 SCN_EXPORT SCNHitTestOption const SCNHitTestFirstFoundOnlyKey;                                                                      // Deprecated, use SCNHitTestSearchModeAny for the SCNHitTestOptionSearchMode option instead
 SCN_EXPORT SCNHitTestOption const SCNHitTestSortResultsKey;                                                                         // Deprecated, use SCNHitTestSearchModeAll for the SCNHitTestOptionSearchMode option instead
@@ -84,6 +85,16 @@ SCN_EXPORT
  @param channel The texture coordinates source index of the geometry to use. The channel must exists on the geometry otherwise {0,0} will be returned.
  */
 - (CGPoint)textureCoordinatesWithMappingChannel:(NSInteger)channel;
+
+@end
+
+@interface SCNHitTestResult (SIMD)
+
+@property(nonatomic, readonly) simd_float3 simdLocalCoordinates API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
+@property(nonatomic, readonly) simd_float3 simdWorldCoordinates API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
+@property(nonatomic, readonly) simd_float3 simdLocalNormal API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
+@property(nonatomic, readonly) simd_float3 simdWorldNormal API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
+@property(nonatomic, readonly) simd_float4x4 simdModelTransform API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
 
 @end
 

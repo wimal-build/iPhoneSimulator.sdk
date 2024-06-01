@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINibLoading.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UINibLoading.h>)
 //
 //  UINibLoading.h
 //  UIKit
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NSString * UINibOptionsKey NS_TYPED_ENUM;
 
-UIKIT_EXTERN UINibOptionsKey const UINibExternalObjects NS_AVAILABLE_IOS(3_0);
+UIKIT_EXTERN UINibOptionsKey const UINibExternalObjects API_AVAILABLE(ios(3.0));
 
 @interface NSBundle(UINibLoadingAdditions)
 - (nullable NSArray *)loadNibNamed:(NSString *)name owner:(nullable id)owner options:(nullable NSDictionary<UINibOptionsKey, id> *)options;
@@ -21,10 +21,10 @@ UIKIT_EXTERN UINibOptionsKey const UINibExternalObjects NS_AVAILABLE_IOS(3_0);
 
 @interface NSObject(UINibLoadingAdditions)
 - (void)awakeFromNib NS_REQUIRES_SUPER;
-- (void)prepareForInterfaceBuilder NS_AVAILABLE_IOS(8_0);
+- (void)prepareForInterfaceBuilder API_AVAILABLE(ios(8.0));
 @end
 
-UIKIT_EXTERN NSString * const UINibProxiedObjectsKey NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSString * const UINibProxiedObjectsKey API_DEPRECATED("", ios(2.0, 3.0)) API_UNAVAILABLE(tvos);
 
 NS_ASSUME_NONNULL_END
 

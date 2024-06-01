@@ -15,13 +15,25 @@
 #define EVENTKITUI_CLASS_AVAILABLE(_iphoneIntro) __attribute__((visibility("default"))) NS_CLASS_AVAILABLE(NA, _iphoneIntro)
 
 #ifndef EKUI_HAS_HEADER
-#define EKUI_HAS_HEADER(include_path) (defined(__has_include) && __has_include(include_path))
+#if defined(__has_include)
+#define EKUI_HAS_HEADER(include_path) (__has_include(include_path))
+#else
+#define EKUI_HAS_HEADER(include_path) (0)
+#endif
 #endif
 
 #ifndef EKUI_IS_IOS
-#define EKUI_IS_IOS (defined(TARGET_OS_IOS) && TARGET_OS_IOS)
+#if defined(TARGET_OS_IOS)
+#define EKUI_IS_IOS (TARGET_OS_IOS)
+#else
+#define EKUI_IS_IOS (0)
+#endif
 #endif
 
 #ifndef EKUI_IS_SIMULATOR
-#define EKUI_IS_SIMULATOR (defined(TARGET_OS_SIMULATOR) && TARGET_OS_SIMULATOR)
+#if defined(TARGET_OS_SIMULATOR)
+#define EKUI_IS_SIMULATOR (TARGET_OS_SIMULATOR)
+#else
+#define EKUI_IS_SIMULATOR (0)
+#endif
 #endif

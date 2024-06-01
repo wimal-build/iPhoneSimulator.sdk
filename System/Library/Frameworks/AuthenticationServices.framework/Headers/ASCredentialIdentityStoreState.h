@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-AS_EXTERN API_AVAILABLE(ios(12.0)) 
+AS_EXTERN API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macCatalyst, macos, tvos, watchos)
 @interface ASCredentialIdentityStoreState : NSObject
 
 /*! @abstract Get the enabled state of the credential identity store.

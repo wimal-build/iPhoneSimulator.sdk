@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMCharacteristicTypes.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief Represent a characteristic on a service of an accessory.
  */
-API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristic : NSObject
 
 /*!

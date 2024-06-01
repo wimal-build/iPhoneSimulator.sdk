@@ -1,12 +1,11 @@
 //
 //  PDFKitPlatform.h
-//  PDFKit
+//  Copyright © 2019 Apple. All rights reserved.
 //
 
 #import <TargetConditionals.h>
 
     #define PDFKIT_PLATFORM_IOS
-
 
 #ifndef PDFKIT_EXTERN
     #ifdef __cplusplus

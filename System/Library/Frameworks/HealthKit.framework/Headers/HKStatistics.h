@@ -29,7 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
  @constant      HKStatisticsOptionDiscreteMin          Calculate minQuantity when creating statistics.
  @constant      HKStatisticsOptionDiscreteMax          Calculate maxQuantity when creating statistics.
  @constant      HKStatisticsOptionCumulativeSum        Calculate sumQuantity when creating statistics.
- @constant      HKStatisticsOptionDiscreteMostRecent   Calculate mostRecentQuantity when creating statistics.
+ @constant      HKStatisticsOptionMostRecent           Calculate mostRecentQuantity when creating statistics.
+ @constant      HKStatisticsOptionDuration             Calculate duration when creating statistics.
  */
 typedef NS_OPTIONS(NSUInteger, HKStatisticsOptions) {
     HKStatisticsOptionNone              		= 0,
@@ -38,7 +39,9 @@ typedef NS_OPTIONS(NSUInteger, HKStatisticsOptions) {
     HKStatisticsOptionDiscreteMin               = 1 << 2,
     HKStatisticsOptionDiscreteMax               = 1 << 3,
     HKStatisticsOptionCumulativeSum             = 1 << 4,
-    HKStatisticsOptionDiscreteMostRecent API_AVAILABLE(ios(12.0), watchos(5.0))  = 1 << 5,
+    HKStatisticsOptionMostRecent API_AVAILABLE(ios(13.0), watchos(6.0))  = 1 << 5,
+    HKStatisticsOptionDiscreteMostRecent API_DEPRECATED_WITH_REPLACEMENT("HKStatisticsOptionMostRecent", ios(12.0, 13.0), watchos(5.0, 6.0))  = HKStatisticsOptionMostRecent,
+    HKStatisticsOptionDuration API_AVAILABLE(ios(13.0), watchos(6.0))  = 1 << 6,
 } API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /*!
@@ -52,6 +55,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @property (readonly, strong) NSDate *startDate;
 @property (readonly, strong) NSDate *endDate;
 @property (readonly, strong, nullable) NSArray<HKSource *> *sources;
+
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -137,6 +141,22 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
  @abstract      Returns the sum of quantities in the time period represented by the receiver.
  */
 - (nullable HKQuantity *)sumQuantity;
+
+/// Total duration (in seconds) covered by the samples represented by these statistics.
+/// Only present if HKStatisticsOptionDuration is is specified.
+/*!
+ @method        duration
+ @abstract      Total duration, as a time-unit compatible quantity, covered by the samples represented by these statistics.
+ @discussion    Only present if HKStatisticsOptionDuration is is specified.
+ */
+- (nullable HKQuantity *)duration API_AVAILABLE(ios(13.0), watchos(6.0));
+
+/*!
+ @method        durationForSource:
+ @abstract      Returns the duration, as a time-unit compatible quantity, for the given source in the time period represented by the receiver.
+ @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
+ */
+- (nullable HKQuantity *)durationForSource:(HKSource *)source API_AVAILABLE(ios(13.0), watchos(6.0));
 
 @end
 

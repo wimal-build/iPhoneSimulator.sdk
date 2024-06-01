@@ -1,6 +1,6 @@
 //
 //  PDFAppearanceCharacteristics.h
-//  Copyright © 2017 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFAppearanceCharacteristics represents a dictionary that is specific to widget annotation types,
 //  containing additional information for constructing the annotation’s appearance.

@@ -5,12 +5,16 @@
 //  Copyright (c) 2012 Apple Inc. All rights reserved.
 //
 
-#import <GameController/GameController.h>
+#import <Foundation/Foundation.h>
+#import <GameController/GCExtern.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class GCController;
 @class GCExtendedGamepadSnapshot;
+@class GCControllerDirectionPad;
+@class GCControllerElement;
+@class GCControllerButtonInput;
 
 /**
  Extended Gamepad profile. Has all the physical features of a Standard Gamepad and more.
@@ -54,7 +58,7 @@ typedef void (^GCExtendedGamepadValueChangedHandler)(GCExtendedGamepad *gamepad,
  If your application is heavily multithreaded this may also be useful to guarantee atomicity of input handling as
  a snapshot will not change based on user input once it is taken.
  */
-- (GCExtendedGamepadSnapshot *)saveSnapshot;
+- (GCExtendedGamepadSnapshot *)saveSnapshot API_DEPRECATED("GCExtendedGamepadSnapshot has been deprecated, use [GCController capture] instead", macos(10.9, 10.15), ios(7.0, 13.0), tvos(7.0, 13.0));
 
 /**
  Required to be analog in the Extended profile. All the elements of this directional input are thus analog.
@@ -76,6 +80,16 @@ typedef void (^GCExtendedGamepadValueChangedHandler)(GCExtendedGamepad *gamepad,
 @property (nonatomic, readonly) GCControllerButtonInput *buttonB;
 @property (nonatomic, readonly) GCControllerButtonInput *buttonX;
 @property (nonatomic, readonly) GCControllerButtonInput *buttonY;
+
+/**
+ Button menu is the primary menu button, and should be used to enter the main menu and pause the game.
+ */
+@property (nonatomic, readonly) GCControllerButtonInput *buttonMenu API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
+ Button options is the secondary menu button. It should be used to enter a secondary menu, such as graphics and sound configuration, and pause the game.
+ */
+@property (nonatomic, readonly, nullable) GCControllerButtonInput *buttonOptions API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
 
 /**
  A thumbstick is a 2-axis control that is physically required to be analog. All the elements of this directional input are thus analog.
@@ -107,6 +121,14 @@ typedef void (^GCExtendedGamepadValueChangedHandler)(GCExtendedGamepad *gamepad,
  */
 @property (nonatomic, readonly, nullable) GCControllerButtonInput *leftThumbstickButton API_AVAILABLE(macos(10.14.1), ios(12.1), tvos(12.1));
 @property (nonatomic, readonly, nullable) GCControllerButtonInput *rightThumbstickButton API_AVAILABLE(macos(10.14.1), ios(12.1), tvos(12.1));
+
+/**
+ Sets the state vector of the extended gamepad to a copy of the input extended gamepad's state vector.
+ 
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see GCController.snapshot
+ */
+- (void) setStateFromExtendedGamepad:(GCExtendedGamepad *)extendedGamepad API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
 
 @end
 

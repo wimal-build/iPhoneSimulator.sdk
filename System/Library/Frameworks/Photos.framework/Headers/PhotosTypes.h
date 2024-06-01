@@ -9,23 +9,8 @@
 #define Photos_PhotosTypes_h
 
 #import <Foundation/Foundation.h>
-#import <Photos/PhotosDefines.h>
 
-#if TARGET_OS_OSX
-typedef CF_ENUM( int16_t, FigEXIFCustomRenderedValue ) {
-    kFigEXIFCustomRenderedValue_NotCustom                        = 0,
-    kFigEXIFCustomRenderedValue_Custom                            = 1,
-    // CustomRendered values above 1 are defined in the Exif spec as "Reserved"
-    kFigEXIFCustomRenderedValue_HDRImage                        = 2, // Set on the HDR sbuf metadata when "Keep Normal Photo" is off
-    kFigEXIFCustomRenderedValue_HDRPlusEV0_HDRImage                = 3, // Set on the HDR sbuf metadata when "Keep Normal Photo" is on
-    kFigEXIFCustomRenderedValue_HDRPlusEV0_EV0Image                = 4, // Set on the EV0 sbuf metadata when "Keep Normal Photo" is on
-    // Leaving a hole here, reserved for some future HDR hotness, maybe
-    kFigEXIFCustomRenderedValue_PanoramaImage                    = 6,
-    kFigEXIFCustomRenderedValue_SDOFImage                        = 7, // Set on the SDOF sbuf metadata when only an SDOF is requested
-    kFigEXIFCustomRenderedValue_SDOFPlusOriginal_SDOFImage        = 8, // Set on the SDOF sbuf metadata when both an SDOF and an original are requested
-    kFigEXIFCustomRenderedValue_SDOFPlusOriginal_OriginalImage    = 9, // Set on the original sbuf metadata when both an SDOF and an original are requested
-};
-#endif
+API_AVAILABLE_BEGIN(macos(10.11), ios(8), tvos(10))
 
 #pragma mark - PHCollectionListTypes
 
@@ -33,20 +18,23 @@ typedef NS_ENUM(NSInteger, PHImageContentMode) {
     PHImageContentModeAspectFit = 0,
     PHImageContentModeAspectFill = 1,
     PHImageContentModeDefault = PHImageContentModeAspectFit
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 typedef NS_ENUM(NSInteger, PHCollectionListType) {
-    PHCollectionListTypeMomentList    = 1,
+
+    PHCollectionListTypeMomentList    API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos) = 1,
+
     PHCollectionListTypeFolder        = 2,
     PHCollectionListTypeSmartFolder   = 3,
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 typedef NS_ENUM(NSInteger, PHCollectionListSubtype) {
     
     // PHCollectionListTypeMomentList subtypes
-    PHCollectionListSubtypeMomentListCluster    = 1,
-    PHCollectionListSubtypeMomentListYear       = 2,
-    
+
+    PHCollectionListSubtypeMomentListCluster    API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos) = 1,
+    PHCollectionListSubtypeMomentListYear       API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos) = 2,
+
     // PHCollectionListTypeFolder subtypes
     PHCollectionListSubtypeRegularFolder        = 100,
     
@@ -56,7 +44,7 @@ typedef NS_ENUM(NSInteger, PHCollectionListSubtype) {
     
     // Used for fetching if you don't care about the exact subtype
     PHCollectionListSubtypeAny = NSIntegerMax
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 #pragma mark - PHCollection types
 
@@ -68,15 +56,17 @@ typedef NS_ENUM(NSInteger, PHCollectionEditOperation) {
     PHCollectionEditOperationRearrangeContent = 5, // Change the order of things
     PHCollectionEditOperationDelete           = 6, // Deleting of the container, not the content
     PHCollectionEditOperationRename           = 7, // Renaming of the container, not the content
-} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 #pragma mark - PHAssetCollection types
 
 typedef NS_ENUM(NSInteger, PHAssetCollectionType) {
     PHAssetCollectionTypeAlbum      = 1,
     PHAssetCollectionTypeSmartAlbum = 2,
-    PHAssetCollectionTypeMoment     = 3,
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
+
+    PHAssetCollectionTypeMoment     API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos) = 3,
+
+};
 
 typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     
@@ -102,15 +92,17 @@ typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
     PHAssetCollectionSubtypeSmartAlbumBursts     = 207,
     PHAssetCollectionSubtypeSmartAlbumSlomoVideos = 208,
     PHAssetCollectionSubtypeSmartAlbumUserLibrary = 209,
-    PHAssetCollectionSubtypeSmartAlbumSelfPortraits PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 210,
-    PHAssetCollectionSubtypeSmartAlbumScreenshots PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = 211,
-    PHAssetCollectionSubtypeSmartAlbumDepthEffect PHOTOS_AVAILABLE_IOS_TVOS(10_2, 10_1) = 212,
-    PHAssetCollectionSubtypeSmartAlbumLivePhotos PHOTOS_AVAILABLE_IOS_TVOS(10_3, 10_2) = 213,
-    PHAssetCollectionSubtypeSmartAlbumAnimated PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0) = 214,
-    PHAssetCollectionSubtypeSmartAlbumLongExposures PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0) = 215,
+    PHAssetCollectionSubtypeSmartAlbumSelfPortraits API_AVAILABLE(ios(9)) = 210,
+    PHAssetCollectionSubtypeSmartAlbumScreenshots API_AVAILABLE(ios(9)) = 211,
+    PHAssetCollectionSubtypeSmartAlbumDepthEffect API_AVAILABLE(macos(10.13), ios(10.2), tvos(10.1)) = 212,
+    PHAssetCollectionSubtypeSmartAlbumLivePhotos API_AVAILABLE(macos(10.13), ios(10.3), tvos(10.2)) = 213,
+    PHAssetCollectionSubtypeSmartAlbumAnimated API_AVAILABLE(macos(10.15), ios(11), tvos(11)) = 214,
+    PHAssetCollectionSubtypeSmartAlbumLongExposures API_AVAILABLE(macos(10.15), ios(11), tvos(11)) = 215,
+    PHAssetCollectionSubtypeSmartAlbumUnableToUpload API_AVAILABLE(macos(10.15), ios(13), tvos(13)) = 216,
+
     // Used for fetching, if you don't care about the exact subtype
     PHAssetCollectionSubtypeAny = NSIntegerMax
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 #pragma mark - PHAsset types
 
@@ -118,7 +110,7 @@ typedef NS_ENUM(NSInteger, PHAssetEditOperation) {
     PHAssetEditOperationDelete     = 1,
     PHAssetEditOperationContent    = 2,
     PHAssetEditOperationProperties = 3,
-} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 typedef NS_ENUM(NSInteger, PHAssetPlaybackStyle) {
     PHAssetPlaybackStyleUnsupported     = 0,
@@ -127,14 +119,14 @@ typedef NS_ENUM(NSInteger, PHAssetPlaybackStyle) {
     PHAssetPlaybackStyleLivePhoto       = 3,
     PHAssetPlaybackStyleVideo           = 4,
     PHAssetPlaybackStyleVideoLooping    = 5,
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(11_0, 11_0) NS_SWIFT_NAME(PHAsset.PlaybackStyle);
+} API_AVAILABLE(macos(10.13), ios(11), tvos(11)) NS_SWIFT_NAME(PHAsset.PlaybackStyle);
 
 typedef NS_ENUM(NSInteger, PHAssetMediaType) {
     PHAssetMediaTypeUnknown = 0,
     PHAssetMediaTypeImage   = 1,
     PHAssetMediaTypeVideo   = 2,
     PHAssetMediaTypeAudio   = 3,
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     PHAssetMediaSubtypeNone               = 0,
@@ -142,28 +134,29 @@ typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
     // Photo subtypes
     PHAssetMediaSubtypePhotoPanorama      = (1UL << 0),
     PHAssetMediaSubtypePhotoHDR           = (1UL << 1),
-    PHAssetMediaSubtypePhotoScreenshot PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0) = (1UL << 2),
-    PHAssetMediaSubtypePhotoLive PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0) = (1UL << 3),
-    PHAssetMediaSubtypePhotoDepthEffect PHOTOS_AVAILABLE_IOS_TVOS(10_2, 10_1) = (1UL << 4),
+    PHAssetMediaSubtypePhotoScreenshot API_AVAILABLE(ios(9)) = (1UL << 2),
+    PHAssetMediaSubtypePhotoLive API_AVAILABLE(ios(9.1)) = (1UL << 3),
+    PHAssetMediaSubtypePhotoDepthEffect API_AVAILABLE(macos(10.12.2), ios(10.2), tvos(10.1)) = (1UL << 4),
 
+    
     // Video subtypes
     PHAssetMediaSubtypeVideoStreamed      = (1UL << 16),
     PHAssetMediaSubtypeVideoHighFrameRate = (1UL << 17),
     PHAssetMediaSubtypeVideoTimelapse     = (1UL << 18),
-} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 typedef NS_OPTIONS(NSUInteger, PHAssetBurstSelectionType) {
     PHAssetBurstSelectionTypeNone     = 0,
     PHAssetBurstSelectionTypeAutoPick = (1UL << 0),
     PHAssetBurstSelectionTypeUserPick = (1UL << 1),
-} PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+};
 
 typedef NS_OPTIONS(NSUInteger, PHAssetSourceType) {
     PHAssetSourceTypeNone            = 0,
     PHAssetSourceTypeUserLibrary     = (1UL << 0),
     PHAssetSourceTypeCloudShared     = (1UL << 1),
     PHAssetSourceTypeiTunesSynced    = (1UL << 2),
-} PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
+} API_AVAILABLE(ios(9));
 
 typedef NS_ENUM(NSInteger, PHAssetResourceType) {
     PHAssetResourceTypePhoto                             = 1,
@@ -174,9 +167,12 @@ typedef NS_ENUM(NSInteger, PHAssetResourceType) {
     PHAssetResourceTypeFullSizeVideo                     = 6,
     PHAssetResourceTypeAdjustmentData                    = 7,
     PHAssetResourceTypeAdjustmentBasePhoto               = 8,
-    PHAssetResourceTypePairedVideo PHOTOS_AVAILABLE_IOS_TVOS(9_1, 10_0) = 9,
-    PHAssetResourceTypeFullSizePairedVideo PHOTOS_AVAILABLE_IOS_TVOS(10_0, 10_0) = 10,
-    PHAssetResourceTypeAdjustmentBasePairedVideo PHOTOS_AVAILABLE_IOS_TVOS(10_0, 10_0) = 11,
-} PHOTOS_ENUM_AVAILABLE_IOS_TVOS(9_0, 10_0);
+    PHAssetResourceTypePairedVideo API_AVAILABLE(ios(9.1)) = 9,
+    PHAssetResourceTypeFullSizePairedVideo API_AVAILABLE(macos(10.15), ios(10)) = 10,
+    PHAssetResourceTypeAdjustmentBasePairedVideo API_AVAILABLE(macos(10.15), ios(10)) = 11,
+    PHAssetResourceTypeAdjustmentBaseVideo API_AVAILABLE(macos(10.15), ios(13)) = 12,
 
+} API_AVAILABLE(ios(9));
+
+API_AVAILABLE_END
 #endif

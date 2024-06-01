@@ -20,6 +20,7 @@
 #import <StoreKit/SKProductStorePromotionController.h>
 #import <StoreKit/SKReceiptRefreshRequest.h>
 #import <StoreKit/SKRequest.h>
+#import <StoreKit/SKStorefront.h>
 #import <StoreKit/SKStoreProductViewController.h>
 #import <StoreKit/SKStoreReviewController.h>
 #import <StoreKit/StoreKitDefines.h>

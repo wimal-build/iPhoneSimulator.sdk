@@ -10,14 +10,36 @@
 #import <UIKit/UIApplication.h>
 #import <simd/simd.h>
 #import <ARKit/ARHitTestResult.h>
+#import <ARKit/ARRaycastQuery.h>
 
 @class ARAnchor;
 @class ARCamera;
 @class ARLightEstimate;
 @class ARPointCloud;
 @class AVDepthData;
+@class ARBody2D;
+
+@protocol MTLTexture;
 
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ Segmentation classes which defines a pixel's semantic label.
+ @discussion When running a configuration with 'ARFrameSemanticPersonSegmentation' every pixel in the
+ segmentationBuffer on the ARFrame will conform to one of these classes.
+ @see -[ARConfiguration setFrameSemantics:]
+ @see -[ARFrame segmentationBuffer]
+*/
+API_AVAILABLE(ios(13.0))
+typedef NS_ENUM(uint8_t, ARSegmentationClass) {
+
+     /* Pixel has been not been classified. */
+    ARSegmentationClassNone      = 0,
+
+    /* Pixel has been classified as person. */
+    ARSegmentationClassPerson    = 255
+
+} NS_SWIFT_NAME(ARFrame.SegmentationClass);
 
 /**
  A value describing the world mapping status for the area visible in a given frame.
@@ -58,6 +80,27 @@ API_AVAILABLE(ios(11.0))
 @property (nonatomic, readonly) CVPixelBufferRef capturedImage;
 
 /**
+ A tileable texture that contains image noise matching the current camera streams
+ noise properties.
+ 
+ @discussion A camera stream depicts image noise that gives the captured image
+    a grainy look and varies with light conditions.
+ The variations are stored along the depth dimension of the camera grain texture
+ and can be selected at runtime using the camera grain intensity of the current frame.
+ */
+@property (nonatomic, nullable, readonly) id<MTLTexture> cameraGrainTexture API_AVAILABLE(ios(13.0));
+
+/**
+ The frame’s camera grain intensity in range 0 to 1.
+ 
+ @discussion A camera stream depicts image noise that gives the captured image
+ a grainy look and varies with light conditions.
+ The camera grain intensity can be used to select a texture slice from the frames
+ camera grain texture.
+ */
+@property (nonatomic, readonly) float cameraGrainIntensity API_AVAILABLE(ios(13.0));
+
+/**
  The frame’s captured depth data.
  @discussion Depth data is only provided with face tracking on frames where depth data was captured.
  */
@@ -77,7 +120,7 @@ API_AVAILABLE(ios(11.0))
 /**
  A list of anchors in the scene.
  */
-@property (nonatomic, copy, readonly) NSArray<ARAnchor *> *anchors;
+@property (nonatomic, copy, readonly) NSArray<__kindof ARAnchor *> *anchors;
 
 /**
  A light estimate representing the light in the scene.
@@ -99,6 +142,29 @@ API_AVAILABLE(ios(11.0))
 @property (nonatomic, readonly) ARWorldMappingStatus worldMappingStatus API_AVAILABLE(ios(12.0));
 
 /**
+ A buffer that represents the segmented content of the capturedImage.
+ @discussion In order to identify to which class a pixel has been classified one needs to compare its intensity value with the values
+ found in `ARSegmentationClass`.
+ @see ARSegmentationClass
+ @see -[ARConfiguration setFrameSemantics:]
+*/
+@property (nonatomic, nullable, readonly) CVPixelBufferRef segmentationBuffer API_AVAILABLE(ios(13.0));
+
+/**
+ A buffer that represents the estimated depth values for a performed segmentation.
+ @discussion For each non-background pixel in the segmentation buffer the corresponding depth value can be accessed in this buffer.
+ @see -[ARConfiguration setFrameSemantics:]
+ @see -[ARFrame segmentationBuffer]
+ */
+@property (nonatomic, nullable, readonly) CVPixelBufferRef estimatedDepthData API_AVAILABLE(ios(13.0));
+
+/**
+ A detected body in the current frame.
+ @see -[ARConfiguration setFrameSemantics:]
+ */
+@property (nonatomic, nullable, readonly) ARBody2D *detectedBody API_AVAILABLE(ios(13.0));
+
+/**
  Searches the frame for objects corresponding to a point in the captured image.
  
  @discussion A 2D point in the captured image’s coordinate space can refer to any point along a line segment
@@ -111,6 +177,16 @@ API_AVAILABLE(ios(11.0))
 - (NSArray<ARHitTestResult *> *)hitTest:(CGPoint)point types:(ARHitTestResultType)types;
 
 /**
+ Creates a raycast query originating from the point on the captured image, aligned along the center of the field of view of the camera.
+ @discussion A 2D point in the captured image’s coordinate space and the field of view of the frame's camera is used to create a ray in the 3D cooridnate space originating at the point.
+ @param point A point in the image-space coordinate system of the captured image.
+ Values should range from (0,0) - upper left corner to (1,1) - lower right corner.
+ @param target Type of target where the ray should terminate.
+ @param alignment Alignment of the target.
+ */
+- (ARRaycastQuery *)raycastQueryFromPoint:(CGPoint)point allowingTarget:(ARRaycastTarget)target alignment:(ARRaycastTargetAlignment)alignment API_AVAILABLE(ios(13.0));
+
+/**
  Returns a display transform for the provided viewport size and orientation.
  
  @discussion The display transform can be used to convert normalized points in the image-space coordinate system
@@ -120,6 +196,7 @@ API_AVAILABLE(ios(11.0))
  @param viewportSize The size of the viewport.
  */
 - (CGAffineTransform)displayTransformForOrientation:(UIInterfaceOrientation)orientation viewportSize:(CGSize)viewportSize;
+
 
 /** Unavailable */
 - (instancetype)init NS_UNAVAILABLE;

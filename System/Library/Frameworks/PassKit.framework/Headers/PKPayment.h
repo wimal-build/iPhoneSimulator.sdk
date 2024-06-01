@@ -4,9 +4,9 @@
 //  Copyright (c) 2014 Apple, Inc. All rights reserved.
 //
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 #import <AddressBook/ABRecord.h>
-#endif // TARGET_OS_IOS
+#endif // TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 #import <PassKit/PKPaymentToken.h>
 
 @class PKShippingMethod;
@@ -28,9 +28,9 @@ API_AVAILABLE(ios(8.0), watchos(3.0))
 // the requiredBillingAddressFields property of the PKPaymentRequest.
 @property (nonatomic, strong, readonly, nullable) PKContact *billingContact API_AVAILABLE(ios(9.0), watchos(3.0));
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 @property (nonatomic, assign, readonly, nullable) ABRecordRef billingAddress API_DEPRECATED("Use billingContact instead", ios(8.0, 9.0)) __WATCHOS_PROHIBITED;
-#endif // TARGET_OS_IOS
+#endif // TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 
 // The full shipping address that the user selected for this transaction.  Fields are
 // constrained to those specified in the requiredShippingAddressFields property of the original
@@ -38,9 +38,9 @@ API_AVAILABLE(ios(8.0), watchos(3.0))
 // the requiredShippingAddressFields property of the PKPaymentRequest.
 @property (nonatomic, strong, readonly, nullable) PKContact *shippingContact API_AVAILABLE(ios(9.0), watchos(3.0));
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 @property (nonatomic, assign, readonly, nullable) ABRecordRef shippingAddress API_DEPRECATED("Use shippingContact instead", ios(8.0, 9.0)) __WATCHOS_PROHIBITED;
-#endif // TARGET_OS_IOS
+#endif // TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 
 // The shipping method that the user chose.  This property is only set when the
 // application has set the shippingMethods property of the PKPaymentRequest.

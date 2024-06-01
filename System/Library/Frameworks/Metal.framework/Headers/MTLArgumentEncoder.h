@@ -109,14 +109,25 @@ API_AVAILABLE(macos(10.13), ios(11.0))
  * @method setRenderPipelineState:atIndex
  * @brief Sets a render pipeline state at a given bind point index
  */
-- (void)setRenderPipelineState:(nullable id <MTLRenderPipelineState>)pipeline atIndex:(NSUInteger)index API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios);
+- (void)setRenderPipelineState:(nullable id <MTLRenderPipelineState>)pipeline atIndex:(NSUInteger)index API_AVAILABLE(macos(10.14), macCatalyst(13.0), ios(13.0));
 
 /*!
  * @method setRenderPipelineStates:withRange
  * @brief Set an array of render pipeline states at a given bind point index range
  */
-- (void)setRenderPipelineStates:(const id <MTLRenderPipelineState> __nullable [__nonnull])pipelines withRange:(NSRange)range API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios);
+- (void)setRenderPipelineStates:(const id <MTLRenderPipelineState> __nullable [__nonnull])pipelines withRange:(NSRange)range API_AVAILABLE(macos(10.14), macCatalyst(13.0), ios(13.0));
 
+/*!
+ * @method setComputePipelineState:atIndex
+ * @brief Sets a compute pipeline state at a given bind point index
+ */
+- (void)setComputePipelineState:(nullable id <MTLComputePipelineState>)pipeline atIndex:(NSUInteger)index API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos);
+
+/*!
+ * @method setComputePipelineStates:withRange
+ * @brief Set an array of compute pipeline states at a given bind point index range
+ */
+- (void)setComputePipelineStates:(const id <MTLComputePipelineState> __nullable [__nonnull])pipelines withRange:(NSRange)range API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @method setIndirectCommandBuffer:atIndex
@@ -136,7 +147,7 @@ API_AVAILABLE(macos(10.13), ios(11.0))
  * in the buffer associated with a given index.
  * Returns nil if the resource at the given index is not an argument buffer.
  */
-- (nullable id<MTLArgumentEncoder>)newArgumentEncoderForBufferAtIndex:(NSUInteger)index API_AVAILABLE(macos(10.13), ios(10.0));
+- (nullable id<MTLArgumentEncoder>)newArgumentEncoderForBufferAtIndex:(NSUInteger)index API_AVAILABLE(macos(10.13), ios(11.0));
 
 @end
 

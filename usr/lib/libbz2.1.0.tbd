@@ -1,10 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E298690C-3F60-3224-A33C-42F893BBE46F', 'x86_64: 5B1ECB62-1214-3E5F-AA81-294623DBBCFB' ]
+uuids:           [ 'i386: E298690C-3F60-3224-A33C-42F893BBE46F', 'x86_64: 2346EEED-79F8-3A32-9982-120C106290D3' ]
 platform:        ios
-install-name:    /usr/lib/libbz2.1.0.dylib
+install-name:    '/usr/lib/libbz2.1.0.dylib'
 current-version: 1.0.5
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _BZ2_blockSort, _BZ2_bsInitWrite, _BZ2_bz__AssertH__fail, 

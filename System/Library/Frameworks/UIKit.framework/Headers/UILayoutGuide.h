@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILayoutGuide.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UILayoutGuide.h>)
 //
 //  UILayoutGuide.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKitDefines.h>
 #import <Foundation/Foundation.h>
 
 @class NSLayoutXAxisAnchor, NSLayoutYAxisAnchor, NSLayoutDimension;
@@ -19,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  Create a UILayoutGuide with -init, and add to a view with -[UIView addLayoutGuide:]
  before using it in a constraint.
  */
-NS_CLASS_AVAILABLE_IOS(9_0)
+UIKIT_EXTERN API_AVAILABLE(ios(9.0))
 @interface UILayoutGuide : NSObject <NSCoding>
 
 /* The frame of the UILayoutGuide in its owningView's coordinate system.

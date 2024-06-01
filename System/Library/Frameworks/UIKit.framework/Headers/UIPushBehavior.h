@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPushBehavior.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPushBehavior.h>)
 //
 //  UIPushBehavior.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDynamicBehavior.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, UIPushBehaviorMode) {
     UIPushBehaviorModeContinuous,
     UIPushBehaviorModeInstantaneous
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} API_AVAILABLE(ios(7.0));
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIPushBehavior : UIDynamicBehavior
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIPushBehavior : UIDynamicBehavior
 
 - (instancetype)initWithItems:(NSArray<id <UIDynamicItem>> *)items mode:(UIPushBehaviorMode)mode NS_DESIGNATED_INITIALIZER;
 

@@ -72,7 +72,7 @@ typedef NS_OPTIONS(NSUInteger, CMAttitudeReferenceFrame) API_UNAVAILABLE(tvos) {
 	CMAttitudeReferenceFrameXTrueNorthZVertical = 1 << 3
 };
 
-NS_CLASS_AVAILABLE(NA,4_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(4.0)) API_UNAVAILABLE(tvos)
 @interface CMAttitude : NSObject <NSCopying, NSSecureCoding>
 {
 @private

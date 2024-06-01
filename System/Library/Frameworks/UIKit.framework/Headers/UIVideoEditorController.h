@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIVideoEditorController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIVideoEditorController.h>)
 //
 //  UIVideoEditorController.h
 //  UIKit
@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UIVideoEditorControllerDelegate;
 
-NS_CLASS_AVAILABLE_IOS(3_1) __TVOS_PROHIBITED @interface UIVideoEditorController : UINavigationController
+UIKIT_EXTERN API_AVAILABLE(ios(3.1)) API_UNAVAILABLE(tvos) @interface UIVideoEditorController : UINavigationController
 
-+ (BOOL)canEditVideoAtPath:(NSString *)videoPath NS_AVAILABLE_IOS(3_1);
++ (BOOL)canEditVideoAtPath:(NSString *)videoPath API_AVAILABLE(ios(3.1));
 
 @property(nullable, nonatomic,assign)    id <UINavigationControllerDelegate, UIVideoEditorControllerDelegate> delegate;
 
@@ -27,7 +27,7 @@ NS_CLASS_AVAILABLE_IOS(3_1) __TVOS_PROHIBITED @interface UIVideoEditorController
 
 @end
 
-__TVOS_PROHIBITED @protocol UIVideoEditorControllerDelegate<NSObject>
+API_UNAVAILABLE(tvos) @protocol UIVideoEditorControllerDelegate<NSObject>
 @optional
 // The editor does not dismiss itself; the client dismisses it in these callbacks.
 // The delegate will receive exactly one of the following callbacks, depending whether the user

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE_IOS(11_0) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos)
 @interface MKUserTrackingButton : UIView
 
 + (instancetype)userTrackingButtonWithMapView:(nullable MKMapView *)mapView;

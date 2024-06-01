@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIActionSheet.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIActionSheet.h>)
 //
 //  UIActionSheet.h
 //  UIKit
@@ -21,9 +21,9 @@ typedef NS_ENUM(NSInteger, UIActionSheetStyle) {
     UIActionSheetStyleDefault          = UIBarStyleDefault,
     UIActionSheetStyleBlackTranslucent = UIBarStyleBlackTranslucent,
     UIActionSheetStyleBlackOpaque      = UIBarStyleBlackOpaque ,
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos) API_DEPRECATED("UIActionSheet is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleActionSheet instead.", ios(2.0, 13.0));
 
-NS_CLASS_DEPRECATED_IOS(2_0, 8_3, "UIActionSheet is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleActionSheet instead") __TVOS_PROHIBITED
+UIKIT_EXTERN API_DEPRECATED("UIActionSheet is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleActionSheet instead", ios(2.0, 8.3)) API_UNAVAILABLE(tvos)
 @interface UIActionSheet : UIView
 
 - (instancetype)initWithTitle:(nullable NSString *)title delegate:(nullable id<UIActionSheetDelegate>)delegate cancelButtonTitle:(nullable NSString *)cancelButtonTitle destructiveButtonTitle:(nullable NSString *)destructiveButtonTitle otherButtonTitles:(nullable NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION NS_EXTENSION_UNAVAILABLE_IOS("Use UIAlertController instead.");
@@ -48,8 +48,8 @@ NS_CLASS_DEPRECATED_IOS(2_0, 8_3, "UIActionSheet is deprecated. Use UIAlertContr
 // UIActionSheetStyleDefault if automatic style set
 - (void)showFromToolbar:(UIToolbar *)view;
 - (void)showFromTabBar:(UITabBar *)view;
-- (void)showFromBarButtonItem:(UIBarButtonItem *)item animated:(BOOL)animated NS_AVAILABLE_IOS(3_2);
-- (void)showFromRect:(CGRect)rect inView:(UIView *)view animated:(BOOL)animated NS_AVAILABLE_IOS(3_2);
+- (void)showFromBarButtonItem:(UIBarButtonItem *)item animated:(BOOL)animated API_AVAILABLE(ios(3.2));
+- (void)showFromRect:(CGRect)rect inView:(UIView *)view animated:(BOOL)animated API_AVAILABLE(ios(3.2));
 - (void)showInView:(UIView *)view;
 
 // hides alert sheet or popup. use this method when you need to explicitly dismiss the alert.
@@ -59,22 +59,22 @@ NS_CLASS_DEPRECATED_IOS(2_0, 8_3, "UIActionSheet is deprecated. Use UIAlertContr
 @end
 
 
-__TVOS_PROHIBITED
+API_UNAVAILABLE(tvos)
 @protocol UIActionSheetDelegate <NSObject>
 @optional
 
 // Called when a button is clicked. The view will be automatically dismissed after this call returns
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 8_3) __TVOS_PROHIBITED;
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex API_DEPRECATED("Use UIAlertController instead.", ios(2.0, 8.3)) API_UNAVAILABLE(tvos);
 
 // Called when we cancel a view (eg. the user clicks the Home button). This is not called when the user clicks the cancel button.
 // If not defined in the delegate, we simulate a click in the cancel button
-- (void)actionSheetCancel:(UIActionSheet *)actionSheet NS_DEPRECATED_IOS(2_0, 8_3) __TVOS_PROHIBITED;
+- (void)actionSheetCancel:(UIActionSheet *)actionSheet API_DEPRECATED("Use UIAlertController instead.", ios(2.0, 8.3)) API_UNAVAILABLE(tvos);
 
-- (void)willPresentActionSheet:(UIActionSheet *)actionSheet NS_DEPRECATED_IOS(2_0, 8_3)__TVOS_PROHIBITED;  // before animation and showing view
-- (void)didPresentActionSheet:(UIActionSheet *)actionSheet NS_DEPRECATED_IOS(2_0, 8_3) __TVOS_PROHIBITED;  // after animation
+- (void)willPresentActionSheet:(UIActionSheet *)actionSheet API_DEPRECATED("Use UIAlertController instead.", ios(2.0, 8.3)) API_UNAVAILABLE(tvos);  // before animation and showing view
+- (void)didPresentActionSheet:(UIActionSheet *)actionSheet API_DEPRECATED("Use UIAlertController instead.", ios(2.0, 8.3)) API_UNAVAILABLE(tvos);  // after animation
 
-- (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 8_3) __TVOS_PROHIBITED; // before animation and hiding view
-- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 8_3) __TVOS_PROHIBITED;  // after animation
+- (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex API_DEPRECATED("Use UIAlertController instead.", ios(2.0, 8.3)) API_UNAVAILABLE(tvos); // before animation and hiding view
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex API_DEPRECATED("Use UIAlertController instead.", ios(2.0, 8.3)) API_UNAVAILABLE(tvos);  // after animation
 
 @end
 

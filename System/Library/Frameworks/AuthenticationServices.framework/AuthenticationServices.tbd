@@ -1,14 +1,23 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D7616650-83BF-358B-B40F-B9E6800E4D40' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B67AEC90-527F-360E-A086-22E1E84DDD91' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices'
 exports:         
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _ASCredentialIdentityStoreErrorDomain, _ASExtensionErrorDomain, 
-                       _ASWebAuthenticationSessionErrorDomain ]
-    objc-classes:    [ ASCredentialIdentityStore, ASCredentialIdentityStoreState, 
+    symbols:         [ _ASAuthorizationAppleIDProviderCredentialRevokedNotification, 
+                       _ASAuthorizationErrorDomain, _ASAuthorizationOperationImplicit, 
+                       _ASAuthorizationOperationLogin, _ASAuthorizationOperationLogout, 
+                       _ASAuthorizationOperationRefresh, _ASAuthorizationScopeEmail, 
+                       _ASAuthorizationScopeFullName, _ASCredentialIdentityStoreErrorDomain, 
+                       _ASExtensionErrorDomain, _ASWebAuthenticationSessionErrorDomain ]
+    objc-classes:    [ ASAuthorization, ASAuthorizationAppleIDButton, ASAuthorizationAppleIDCredential, 
+                       ASAuthorizationAppleIDProvider, ASAuthorizationAppleIDRequest, 
+                       ASAuthorizationController, ASAuthorizationOpenIDRequest, ASAuthorizationPasswordProvider, 
+                       ASAuthorizationPasswordRequest, ASAuthorizationProviderExtensionAuthorizationRequest, 
+                       ASAuthorizationRequest, ASAuthorizationSingleSignOnCredential, 
+                       ASAuthorizationSingleSignOnProvider, ASAuthorizationSingleSignOnRequest, 
+                       ASCredentialIdentityStore, ASCredentialIdentityStoreState, 
                        ASCredentialProviderExtensionContext, ASCredentialProviderViewController, 
                        ASCredentialServiceIdentifier, ASPasswordCredential, ASPasswordCredentialIdentity, 
                        ASWebAuthenticationSession, _ASCredentialListViewController, 

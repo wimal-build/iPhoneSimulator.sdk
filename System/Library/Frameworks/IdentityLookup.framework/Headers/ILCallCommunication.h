@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-IL_EXTERN API_AVAILABLE(ios(12.0))
+IL_EXTERN API_AVAILABLE(ios(12.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILCallCommunication : ILCommunication
 
 - (BOOL)isEqualToCallCommunication:(ILCallCommunication *)communication NS_SWIFT_UNAVAILABLE("Use == operator instead");;

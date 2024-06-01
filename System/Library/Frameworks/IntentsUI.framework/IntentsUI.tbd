@@ -1,18 +1,19 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADF9743D-D79A-39E8-80F1-2B867D8B6DF5', 'x86_64: 7AC06B81-07D8-3681-A2C5-E8D462EB9530' ]
+uuids:           [ 'i386: ADF9743D-D79A-39E8-80F1-2B867D8B6DF5', 'x86_64: 27C57804-A737-3171-9FC1-4D52457279F7' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/IntentsUI.framework/IntentsUI
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/IntentsUI.framework/IntentsUI'
 exports:         
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _INUIRemoteViewControllerErrorDomain, _IntentsUIVersionNumber, 
+    symbols:         [ _INUIRemoteViewControllerErrorDomain, _INUIVoiceShortcutExtensionItemBundleURLKey, 
+                       _INUIVoiceShortcutExtensionItemSandboxExtensionDataKey, _IntentsUIVersionNumber, 
                        _IntentsUIVersionString, __INUIRemoteViewControllerErrorDomain, 
                        __INUIUtilitiesBestFittingSizeForSizeBySystemVersionDictionary ]
     objc-classes:    [ INUIAddVoiceShortcutButton, INUIAddVoiceShortcutViewController, 
                        INUIAppIntentDeliverer, INUIEditVoiceShortcutViewController, 
                        INUIExtensionRequestInfo, INUIExtensionViewControllerConfiguration, 
-                       INUIImageLoader, INUIImageServiceConnection, INUIInterfaceSection, 
-                       INUIPortableImageLoaderHelper, INUIRemoteViewController, INUISearchFoundationImageAdapter, 
+                       INUIImageLoader, INUIImageServiceConnection, INUIImageSizeProvider, 
+                       INUIInterfaceSection, INUIPortableImageLoaderHelper, INUIRemoteViewController, 
+                       INUISearchFoundationImageAdapter, INUIVoiceShortcutXPCInterface, 
                        _INUIExtensionContextState ]
 ...

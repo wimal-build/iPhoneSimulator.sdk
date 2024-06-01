@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E0EFC219-61B9-3818-909A-1E596DE25151' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1957E127-630A-3635-88F6-A28624700BE8' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/BusinessChat.framework/BusinessChat
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/BusinessChat.framework/BusinessChat'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _BCAuthenticationResponseStatusAuthenticated, _BCAuthenticationResponseStatusFailed, 

@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6ECEA8F7-663D-3BAF-A674-66E5F2CBBF9A', 'x86_64: B37CDF8A-1AD1-3B78-B38D-6A26283C4A11' ]
+uuids:           [ 'i386: 6ECEA8F7-663D-3BAF-A674-66E5F2CBBF9A', 'x86_64: 489EA012-C438-3A99-8715-793EBF00E7F1' ]
 platform:        ios
-install-name:    /usr/lib/libprotobuf.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libprotobuf.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ __ZN6google8protobuf10ReflectionD0Ev, __ZN6google8protobuf10ReflectionD1Ev, 
@@ -2732,5 +2731,5 @@ exports:
                         __ZTSN20wireless_diagnostics6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
                         __ZTSN20wireless_diagnostics6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE ]
   - archs:           [ i386, x86_64 ]
-    re-exports:      [ /usr/lib/libprotobuf-lite.dylib ]
+    re-exports:      [ '/usr/lib/libprotobuf-lite.dylib' ]
 ...

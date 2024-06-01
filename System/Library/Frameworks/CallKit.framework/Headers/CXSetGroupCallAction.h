@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXSetGroupCallAction : CXCallAction
 
 - (instancetype)initWithCallUUID:(NSUUID *)callUUID callUUIDToGroupWith:(nullable NSUUID *)callUUIDToGroupWith NS_DESIGNATED_INITIALIZER;

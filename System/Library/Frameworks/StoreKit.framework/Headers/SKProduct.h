@@ -15,56 +15,53 @@ typedef NS_ENUM(NSUInteger, SKProductPeriodUnit) {
     SKProductPeriodUnitWeek,
     SKProductPeriodUnitMonth,
     SKProductPeriodUnitYear
-} NS_SWIFT_NAME(SKProduct.PeriodUnit) NS_AVAILABLE(10_13_2, 11_2);
+} NS_SWIFT_NAME(SKProduct.PeriodUnit) API_AVAILABLE(ios(11.2), macos(10.13.2));
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXTERN_CLASS_AVAILABLE(10_13_2, 11_2) @interface SKProductSubscriptionPeriod : NSObject {
+SK_EXTERN_CLASS API_AVAILABLE(ios(11.2), macos(10.13.2)) @interface SKProductSubscriptionPeriod : NSObject {
 @private
     id _internal;
 }
 
-@property(nonatomic, readonly) NSUInteger numberOfUnits;
+@property(nonatomic, readonly) NSUInteger numberOfUnits API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly) SKProductPeriodUnit unit;
+@property(nonatomic, readonly) SKProductPeriodUnit unit API_AVAILABLE(ios(11.2), macos(10.13.2));
 
 @end
 
-SK_EXTERN_CLASS_AVAILABLE(10_7, 3_0) @interface SKProduct : NSObject {
+SK_EXTERN_CLASS API_AVAILABLE(ios(3.0), macos(10.7)) @interface SKProduct : NSObject {
 @private
     id _internal;
 }
 
-@property(nonatomic, readonly) NSString *localizedDescription NS_AVAILABLE(10_7, 3_0);
+@property(nonatomic, readonly) NSString *localizedDescription API_AVAILABLE(ios(3.0), macos(10.7));
 
-@property(nonatomic, readonly) NSString *localizedTitle NS_AVAILABLE(10_7, 3_0);
+@property(nonatomic, readonly) NSString *localizedTitle API_AVAILABLE(ios(3.0), macos(10.7));
 
-@property(nonatomic, readonly) NSDecimalNumber *price NS_AVAILABLE(10_7, 3_0);
+@property(nonatomic, readonly) NSDecimalNumber *price API_AVAILABLE(ios(3.0), macos(10.7));
 
-@property(nonatomic, readonly) NSLocale *priceLocale NS_AVAILABLE(10_7, 3_0);
+@property(nonatomic, readonly) NSLocale *priceLocale API_AVAILABLE(ios(3.0), macos(10.7));
 
-@property(nonatomic, readonly) NSString *productIdentifier NS_AVAILABLE(10_7, 3_0);
+@property(nonatomic, readonly) NSString *productIdentifier API_AVAILABLE(ios(3.0), macos(10.7));
 
 // YES if this product has content downloadable using SKDownload
-#if TARGET_OS_OSX
-@property(nonatomic, readonly) BOOL downloadable NS_AVAILABLE_MAC(10_8);
-#else
-@property(nonatomic, readonly, getter=isDownloadable) BOOL downloadable NS_AVAILABLE_IOS(6_0);
-#endif
+@property(nonatomic, readonly) BOOL isDownloadable API_AVAILABLE(ios(6.0), macos(10.15));
+@property(nonatomic, readonly) BOOL downloadable API_DEPRECATED_WITH_REPLACEMENT("-[SKProduct isDownloadable]", macos(10.8, 10.15)) API_UNAVAILABLE(ios);
 
 // Sizes in bytes (NSNumber [long long]) of the downloads available for this product
-@property(nonatomic, readonly) NSArray<NSNumber *> *contentLengths NS_DEPRECATED_MAC(10_8, 10_14, "Use [SKProduct downloadContentLengths] instead");
-@property(nonatomic, readonly) NSArray<NSNumber *> *downloadContentLengths NS_AVAILABLE(10_14, 6_0);
+@property(nonatomic, readonly) NSArray<NSNumber *> *contentLengths API_DEPRECATED_WITH_REPLACEMENT("-[SKProduct downloadContentLengths]", macos(10.8, 10.14)) API_UNAVAILABLE(ios, tvos);
+@property(nonatomic, readonly) NSArray<NSNumber *> *downloadContentLengths API_AVAILABLE(ios(6.0), macos(10.14));
 
 // Version of the downloadable content
-@property(nonatomic, readonly) NSString *contentVersion NS_DEPRECATED_MAC(10_8, 10_14, "Use [SKProduct downloadContentVersion] instead");
-@property(nonatomic, readonly) NSString *downloadContentVersion NS_AVAILABLE(10_14, 6_0);
+@property(nonatomic, readonly) NSString *contentVersion API_DEPRECATED_WITH_REPLACEMENT("-[SKProduct downloadContentVersion]", macos(10.8, 10.14));
+@property(nonatomic, readonly) NSString *downloadContentVersion API_AVAILABLE(ios(6.0), macos(10.14));
 
-@property(nonatomic, readonly, nullable) SKProductSubscriptionPeriod *subscriptionPeriod NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly, nullable) SKProductSubscriptionPeriod *subscriptionPeriod API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly, nullable) SKProductDiscount *introductoryPrice NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly, nullable) SKProductDiscount *introductoryPrice API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly, nullable) NSString *subscriptionGroupIdentifier NS_AVAILABLE(10_14, 12_0);
+@property(nonatomic, readonly, nullable) NSString *subscriptionGroupIdentifier API_AVAILABLE(ios(12.0), macos(10.14));
 
 @property(nonatomic, readonly) NSArray<SKProductDiscount *> *discounts NS_AVAILABLE(10_14_4, 12_2);
 

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXPORT NS_AVAILABLE(10_11, 9_0) @interface SKReferenceNode : SKNode
+SK_EXPORT API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11)) @interface SKReferenceNode : SKNode
 
 /** Create a reference node with a url */
 - (instancetype)initWithURL:(nullable NSURL *)url NS_DESIGNATED_INITIALIZER;

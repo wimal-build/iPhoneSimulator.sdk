@@ -496,4 +496,20 @@ HK_EXTERN NSString * const HKMetadataKeyCrossTrainerDistance API_AVAILABLE(ios(1
  */
 HK_EXTERN NSString * const HKMetadataKeyHeartRateEventThreshold API_AVAILABLE(ios(12.2), watchos(5.2));
 
+/*!
+ @constant      HKMetadataKeyAverageMETs
+ @abstract      Represents the average METs, or Metabolic Equivalent of Task during a workout.
+ @discussion    The expected value type is an HKQuantity expressed in a METs (kcal/(kg*hr)) unit. This key may be set on an
+                HKWorkout object to represent the average workout intensity represented as METs over the entire workout duration.
+ */
+HK_EXTERN NSString * const HKMetadataKeyAverageMETs API_AVAILABLE(ios(13.0), watchos(6.0));
+
+/*!
+ @constant      HKMetadataKeyAudioExposureLevel
+ @abstract      Represents the audio level associated with an audio event.
+ @discussion    The expected value is an HKQuantity whose value is the audio level
+                associated with the event measured in dbASPL units.
+ */
+HK_EXTERN NSString * const HKMetadataKeyAudioExposureLevel API_AVAILABLE(ios(13.0), watchos(6.0));
+
 NS_ASSUME_NONNULL_END

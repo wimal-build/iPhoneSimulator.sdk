@@ -49,6 +49,11 @@ NS_CLASS_AVAILABLE(10_8, 4_1) __WATCHOS_AVAILABLE(3_0)
 // Default number of players to use during matchmaking.  If not set we default to maxPlayers
 @property(assign) NSUInteger defaultNumberOfPlayers NS_AVAILABLE(10_8, 6_0);
 
+// Whether or not a match will be created only using auto-match.  If YES, then a player will not be able to
+// invite anyone (including contacts, friends, and nearby players) to the match, but rely on auto-matching to
+// find players for the match.  Default is NO.
+@property(assign) BOOL restrictToAutomatch API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0)) API_UNAVAILABLE(watchos);
+
 // An recipientResponseHandler can be set in order to receive responses from programmatically invited players.
 @property(copy, nullable) void(^recipientResponseHandler)(GKPlayer *player, GKInviteRecipientResponse response) NS_AVAILABLE(10_10, 8_0);
 @property(copy, nullable) void(^inviteeResponseHandler)(NSString *playerID, GKInviteeResponse response) NS_DEPRECATED(10_9, 10_10, 6_0, 8_0, "use recipientResponseHandler") ;

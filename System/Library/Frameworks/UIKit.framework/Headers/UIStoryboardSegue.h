@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStoryboardSegue.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIStoryboardSegue.h>)
 //
 //  UIStoryboardSegue.h
 //  UIKit
@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIViewController;
 
-NS_CLASS_AVAILABLE_IOS(5_0) @interface UIStoryboardSegue : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(5.0)) @interface UIStoryboardSegue : NSObject
 
 // Convenience constructor for returning a segue that performs a handler block in its -perform method.
-+ (instancetype)segueWithIdentifier:(nullable NSString *)identifier source:(UIViewController *)source destination:(UIViewController *)destination performHandler:(void (^)(void))performHandler NS_AVAILABLE_IOS(6_0);
++ (instancetype)segueWithIdentifier:(nullable NSString *)identifier source:(UIViewController *)source destination:(UIViewController *)destination performHandler:(void (^)(void))performHandler API_AVAILABLE(ios(6.0));
 
 - (instancetype)initWithIdentifier:(nullable NSString *)identifier source:(UIViewController *)source destination:(UIViewController *)destination NS_DESIGNATED_INITIALIZER;
 - (instancetype)init NS_UNAVAILABLE;
@@ -32,8 +32,8 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface UIStoryboardSegue : NSObject
 @end
 
 /// Encapsulates the source of a prospective unwind segue.
-/// You do not create instances of this class directly. Instead, UIKit creates an instance of this class and sends -allowedChildViewControllersForUnwindingFromSource: to each ancestor of the sourceViewController until it finds a view controller which returns YES from -canPerformUnwindSegueAction:fromViewController:withSender:.
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIStoryboardUnwindSegueSource : NSObject
+/// You do not create instances of this class directly. Instead, UIKit creates an instance of this class and sends -allowedChildViewControllersForUnwindingFromSource: to each ancestor of the sourceViewController until it finds a view controller which returns YES from -canPerformUnwindSegueAction:fromViewController:sender:.
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIStoryboardUnwindSegueSource : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 

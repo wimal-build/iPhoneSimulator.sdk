@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<DocumentManager/UIDocumentBrowserViewController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<DocumentManager/UIDocumentBrowserViewController.h>)
 //
 //  UIDocumentBrowserViewController.h
 //  UIKit
@@ -15,29 +15,29 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol UIDocumentBrowserViewControllerDelegate;
 @class UIImage, UIColor, UIActivity, UIActivityViewController, UIDocumentBrowserAction, UIDocumentBrowserTransitionController;
 
-extern NSString * const UIDocumentBrowserErrorDomain API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos) ;
+extern NSErrorDomain const UIDocumentBrowserErrorDomain API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos);
 typedef NS_ERROR_ENUM(UIDocumentBrowserErrorDomain, UIDocumentBrowserErrorCode) {
-    UIDocumentBrowserErrorGeneric                                      = 1,
-    UIDocumentBrowserErrorNoLocationAvailable API_AVAILABLE(ios(12.0))  = 2,
-} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos) ;
+    UIDocumentBrowserErrorGeneric                                                                  = 1,
+    UIDocumentBrowserErrorNoLocationAvailable API_AVAILABLE(ios(12.0)) = 2,
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos);
 
 typedef NS_ENUM(NSUInteger, UIDocumentBrowserImportMode) {
     UIDocumentBrowserImportModeNone,
     UIDocumentBrowserImportModeCopy,
     UIDocumentBrowserImportModeMove,
-} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)  NS_SWIFT_NAME(UIDocumentBrowserViewController.ImportMode);
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos) NS_SWIFT_NAME(UIDocumentBrowserViewController.ImportMode);
 
 typedef NS_ENUM(NSUInteger, UIDocumentBrowserUserInterfaceStyle) {
     UIDocumentBrowserUserInterfaceStyleWhite = 0,
     UIDocumentBrowserUserInterfaceStyleLight,
     UIDocumentBrowserUserInterfaceStyleDark,
-} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)  NS_SWIFT_NAME(UIDocumentBrowserViewController.BrowserUserInterfaceStyle);
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos) NS_SWIFT_NAME(UIDocumentBrowserViewController.BrowserUserInterfaceStyle);
 
 
 #pragma mark -
 
 /// UIDocumentBrowserViewController is a view controller to browse the files on the user's device or cloud services and open them directly in your application
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos) 
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos)
 @interface UIDocumentBrowserViewController : UIViewController <NSCoding>
 
 /// @param allowedContentTypes  The document types that the user should be able to open. If nil, the types specified via the CFBundleDocumentTypes key in the application plist will be used instead.
@@ -59,6 +59,14 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)
 
 @property (readonly, copy, nonatomic) NSArray<NSString *> *allowedContentTypes;
 
+/// Array of content types supported for Recents documents.
+/// Default is same as allowedContentTypes.
+/// Can be defined via the 'UIDocumentBrowserRecentDocumentContentTypes' key in the app Info.plist.
+/// Note that the recentDocumentsContentTypes must be a subset conforming to the types declared in allowedContentTypes.
+@property (readonly, copy, nonatomic) NSArray<NSString *> *recentDocumentsContentTypes API_AVAILABLE(ios(13.0));
+
+/// Force the display of file extensions (default: NO).
+@property (assign, nonatomic) BOOL shouldShowFileExtensions API_AVAILABLE(ios(13.0));
 
 #pragma mark Additional Navigation Bar Buttons
 
@@ -93,19 +101,24 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)
 #pragma mark Custom actions
 
 /// Allows clients to add custom actions in the menu and the navigation bar. These actions are contextual to the document items.
-@property (strong, nonatomic) NSArray <UIDocumentBrowserAction *> *customActions;
+@property (copy, nonatomic) NSArray <UIDocumentBrowserAction *> *customActions;
 
 #pragma mark UI Customization
 
 /// Allows clients to customize the look of the browser. Default: UIDocumentBrowserUserInterfaceStyleWhite
 @property (assign, nonatomic) UIDocumentBrowserUserInterfaceStyle browserUserInterfaceStyle;
 
+/// Title of the Create Document button (default: "Create Document”).
+@property(copy, nonatomic) NSString * localizedCreateDocumentActionTitle API_AVAILABLE(ios(13.0));
+
+/// Aspect ratio of the Create Document button defined as width / height (default: 2/3).
+@property(assign, nonatomic) CGFloat defaultDocumentAspectRatio API_AVAILABLE(ios(13.0));
 
 @end
 
 
 #pragma mark -
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos) 
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos)
 @protocol UIDocumentBrowserViewControllerDelegate <NSObject>
 
 @optional
@@ -149,7 +162,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)
 /// Class to handle the loading and animation transition when opening or closing a document.
 /// @discussion You can use this object to display a loading indicator if you need time to perform time-consuming operations (loading, parsing, …) after the document download and before presenting it. You can also get a transition controller to pass to UIKit when pushing or presenting your document view
 /// in response to @c documentBrowser:didPickItem:, or when popping or dismissing it.
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos) 
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos)
 @interface UIDocumentBrowserTransitionController : NSObject <UIViewControllerAnimatedTransitioning>
 
 - (instancetype)init NS_UNAVAILABLE;

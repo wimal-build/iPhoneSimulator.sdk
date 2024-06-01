@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrintPaper.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPrintPaper.h>)
 //
 //  UIPrintPaper.h
 //  UIKit
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(4_2)__TVOS_PROHIBITED @interface UIPrintPaper : NSObject 
+UIKIT_EXTERN API_AVAILABLE(ios(4.2))API_UNAVAILABLE(tvos) @interface UIPrintPaper : NSObject 
 
 + (UIPrintPaper *)bestPaperForPageSize:(CGSize)contentSize withPapersFromArray:(NSArray<UIPrintPaper *> *)paperList; // for use by delegate. pass in list
 
@@ -24,7 +24,7 @@ NS_CLASS_AVAILABLE_IOS(4_2)__TVOS_PROHIBITED @interface UIPrintPaper : NSObject
 //_____________________________________________
 
 @interface UIPrintPaper(Deprecated_Nonfunctional)
-- (CGRect)printRect __TVOS_PROHIBITED ;
+- (CGRect)printRect API_UNAVAILABLE(tvos) ;
 @end
 
 NS_ASSUME_NONNULL_END

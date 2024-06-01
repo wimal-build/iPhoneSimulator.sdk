@@ -46,7 +46,7 @@ typedef NS_ENUM(NSUInteger, HMHomeHubState)
  *             all the rooms, zones, service groups, users, triggers, and action sets in
  *             the home.
  */
-API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMHome : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -172,6 +172,7 @@ API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 
 /*!
  * @brief Add accessory with the given setup payload to the home.
+ * @note  This SPI requires entitlement: com.apple.homekit.developer.allow-setup-payload
  *
  * @param completion Block that is invoked once the request is processed.
  *                   Accessories provides the list of added accessories.

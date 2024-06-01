@@ -1,10 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 21BE9505-D81D-3729-83AA-844C0BEEE287', 'x86_64: 0588BC46-55CB-35C4-9DDF-978D760E896E' ]
+uuids:           [ 'i386: 21BE9505-D81D-3729-83AA-844C0BEEE287', 'x86_64: 53D6B5B6-37F7-3076-8A7D-B93A86C5C471' ]
 platform:        ios
-install-name:    /usr/lib/libz.1.dylib
+install-name:    '/usr/lib/libz.1.dylib'
 current-version: 1.2.11
-objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _adler32, _adler32_combine, _adler32_z, _compress, _compress2, 

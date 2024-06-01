@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 685F1294-30E4-3763-A0AE-EC7B054FDD21', 'x86_64: 9E1AD27F-2092-3530-A1ED-9675F89828C1' ]
+uuids:           [ 'i386: 685F1294-30E4-3763-A0AE-EC7B054FDD21', 'x86_64: F23F445C-FC29-33BE-A2EB-568F15840928' ]
 platform:        ios
-install-name:    /usr/lib/libAXSafeCategoryBundle.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libAXSafeCategoryBundle.dylib'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _AXSetUIAXReportSenderErrorLoggerFunction, _AXSetValidationErrorLoggingFunction, 

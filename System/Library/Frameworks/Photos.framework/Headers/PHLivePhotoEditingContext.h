@@ -11,6 +11,7 @@
 #import <ImageIO/CGImageProperties.h>
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.12), ios(10), tvos(10))
 
 @protocol PHLivePhotoFrame;
 @class PHContentEditingInput;
@@ -21,7 +22,7 @@ typedef CIImage * _Nullable (^PHLivePhotoFrameProcessingBlock)(id <PHLivePhotoFr
 
 typedef NSString * const PHLivePhotoEditingOption NS_STRING_ENUM;
 
-NS_AVAILABLE(10_12, 10_0)
+OS_EXPORT
 @interface PHLivePhotoEditingContext : NSObject
 
 /// Initializer from the specified live photo input
@@ -84,7 +85,7 @@ typedef NS_ENUM(NSInteger, PHLivePhotoFrameType) {
     
     /// Indicates a video frame
     PHLivePhotoFrameTypeVideo,
-} NS_ENUM_AVAILABLE(10_12, 10_0);
+};
 
 /// Protocol that describes a single frame of a live photo
 @protocol PHLivePhotoFrame
@@ -111,6 +112,20 @@ typedef NS_ENUM(NSInteger, PHLivePhotoFrameType) {
 /// If set to NO (the default) the live photo will always be rendered before playback
 /// If set to YES, the editing context might still choose to render first for performance reasons
 /// This option is ignored by the saveLivePhotoToOutput method
-extern PHLivePhotoEditingOption PHLivePhotoShouldRenderAtPlaybackTime NS_AVAILABLE(10_12, 11_0);
+extern PHLivePhotoEditingOption PHLivePhotoShouldRenderAtPlaybackTime API_AVAILABLE(ios(11), tvos(11));
 
+// ------------------------------------------------------------------------
+// Errors
+// ------------------------------------------------------------------------
+
+/// The error domain for all Live Photo Editing errors (Deprecated).
+extern NSString * const PHLivePhotoEditingErrorDomain API_DEPRECATED_WITH_REPLACEMENT("PHPhotosErrorDomain", macos(10.12, 10.15)) API_UNAVAILABLE(ios, tvos, macCatalyst);
+
+/// Error code for Live Photo Editing errors (Deprecated)
+typedef NS_ENUM(NSInteger, PHLivePhotoEditingErrorCode) {
+    PHLivePhotoEditingErrorCodeUnknown API_DEPRECATED_WITH_REPLACEMENT("PHPhotosErrorInvalid", macos(10.12, 10.15)),
+    PHLivePhotoEditingErrorCodeAborted API_DEPRECATED_WITH_REPLACEMENT("PHPhotosErrorUserCancelled", macos(10.12, 10.15)),
+} API_UNAVAILABLE(ios, tvos, macCatalyst);
+
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

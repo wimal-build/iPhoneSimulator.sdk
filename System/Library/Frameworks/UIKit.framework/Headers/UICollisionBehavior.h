@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollisionBehavior.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UICollisionBehavior.h>)
 //
 //  UICollisionBehavior.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIBezierPath.h>
 #import <UIKit/UIDynamicBehavior.h>
 
@@ -19,7 +20,7 @@ typedef NS_OPTIONS(NSUInteger, UICollisionBehaviorMode) {
     UICollisionBehaviorModeItems        = 1 << 0,
     UICollisionBehaviorModeBoundaries   = 1 << 1,
     UICollisionBehaviorModeEverything   = NSUIntegerMax
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} API_AVAILABLE(ios(7.0));
 
 @protocol UICollisionBehaviorDelegate <NSObject>
 @optional
@@ -34,7 +35,7 @@ typedef NS_OPTIONS(NSUInteger, UICollisionBehaviorMode) {
 @end
 
     
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UICollisionBehavior : UIDynamicBehavior
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UICollisionBehavior : UIDynamicBehavior
 
 - (instancetype)initWithItems:(NSArray<id <UIDynamicItem>> *)items NS_DESIGNATED_INITIALIZER;
 

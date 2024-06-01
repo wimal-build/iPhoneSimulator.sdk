@@ -26,22 +26,22 @@ typedef NS_ENUM(NSUInteger, MKAnnotationViewDragState) {
     MKAnnotationViewDragStateDragging,      // View is dragging ("lift" animations are complete)
     MKAnnotationViewDragStateCanceling,     // View was not dragged and should return to its starting position (e.g. pin drop)
     MKAnnotationViewDragStateEnding         // View was dragged, new coordinate is set and view should return to resting position (e.g. pin drop)
-} NS_ENUM_AVAILABLE(10_9, 4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+} NS_ENUM_AVAILABLE(10_9, 4_0) API_UNAVAILABLE(tvos, watchos);
 
-typedef float MKFeatureDisplayPriority NS_TYPED_EXTENSIBLE_ENUM NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED;
-static const MKFeatureDisplayPriority MKFeatureDisplayPriorityRequired NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED = 1000;
-static const MKFeatureDisplayPriority MKFeatureDisplayPriorityDefaultHigh NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED = 750;
-static const MKFeatureDisplayPriority MKFeatureDisplayPriorityDefaultLow NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED = 250;
+typedef float MKFeatureDisplayPriority NS_TYPED_EXTENSIBLE_ENUM NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos);
+static const MKFeatureDisplayPriority MKFeatureDisplayPriorityRequired NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos) = 1000;
+static const MKFeatureDisplayPriority MKFeatureDisplayPriorityDefaultHigh NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos) = 750;
+static const MKFeatureDisplayPriority MKFeatureDisplayPriorityDefaultLow NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos) = 250;
 
 typedef NS_ENUM(NSInteger, MKAnnotationViewCollisionMode) {
     MKAnnotationViewCollisionModeRectangle,
     MKAnnotationViewCollisionModeCircle
-} NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED;
+} NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos);
 
 @protocol MKAnnotation;
 
 #if TARGET_OS_IPHONE
-NS_CLASS_AVAILABLE(NA, 3_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 3_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos)
 @interface MKAnnotationView : UIView
 #else
 NS_CLASS_AVAILABLE(10_9, NA)
@@ -73,13 +73,11 @@ NS_CLASS_AVAILABLE(10_9, NA)
 // calloutOffset is the offset in screen points from the top-middle of the annotation view, where the anchor of the callout should be shown.
 @property (nonatomic) CGPoint calloutOffset;
 
-#if !TARGET_OS_IPHONE
 // leftCalloutOffset is the offset in screen points from the middle-left of the annotation view, where the anchor of the callout should be shown when oriented off the left side of the annotation view
-@property (nonatomic) CGPoint leftCalloutOffset;
+@property (nonatomic) CGPoint leftCalloutOffset API_AVAILABLE(macos(10.9), macCatalyst(13.0)) API_UNAVAILABLE(ios, tvos, watchos);
 
 // rightCalloutOffset is the offset in screen points from the middle-right of the annotation view, where the anchor of the callout should be shown when oriented off the right side of the annotation view
-@property (nonatomic) CGPoint rightCalloutOffset;
-#endif
+@property (nonatomic) CGPoint rightCalloutOffset API_AVAILABLE(macos(10.9), macCatalyst(13.0)) API_UNAVAILABLE(ios, tvos, watchos);
 
 // Defaults to YES. If NO, ignores touch events and subclasses may draw differently.
 @property (nonatomic, getter=isEnabled) BOOL enabled;
@@ -118,14 +116,14 @@ NS_CLASS_AVAILABLE(10_9, NA)
 
 // If YES and the underlying id<MKAnnotation> responds to setCoordinate:, 
 // the user will be able to drag this annotation view around the map.
-@property (nonatomic, getter=isDraggable) BOOL draggable NS_AVAILABLE(10_9, 4_0) __TVOS_PROHIBITED;
+@property (nonatomic, getter=isDraggable) BOOL draggable NS_AVAILABLE(10_9, 4_0) API_UNAVAILABLE(tvos);
 
 // Automatically set to MKAnnotationViewDragStateStarting, Canceling, and Ending when necessary.
 // Implementer is responsible for transitioning to Dragging and None states as appropriate.
-@property (nonatomic) MKAnnotationViewDragState dragState NS_AVAILABLE(10_9, 4_0) __TVOS_PROHIBITED;
+@property (nonatomic) MKAnnotationViewDragState dragState NS_AVAILABLE(10_9, 4_0) API_UNAVAILABLE(tvos);
 
 // Developers targeting iOS 4.2 and after must use setDragState:animated: instead of setDragState:.
-- (void)setDragState:(MKAnnotationViewDragState)newDragState animated:(BOOL)animated NS_AVAILABLE(10_9, 4_2) __TVOS_PROHIBITED;
+- (void)setDragState:(MKAnnotationViewDragState)newDragState animated:(BOOL)animated NS_AVAILABLE(10_9, 4_2) API_UNAVAILABLE(tvos);
 
 // Annotation views with equal non-nil identifiers can cluster together.
 @property (nonatomic, copy, nullable) NSString *clusteringIdentifier  NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0);

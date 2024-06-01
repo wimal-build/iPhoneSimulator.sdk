@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 SK_EXPORT @interface SKLabelNode : SKNode
 
 + (instancetype)labelNodeWithText:(nullable NSString *)text;
-+ (instancetype)labelNodeWithAttributedText:(nullable NSAttributedString *)attributedText NS_AVAILABLE(10_13, 11);
++ (instancetype)labelNodeWithAttributedText:(nullable NSAttributedString *)attributedText API_AVAILABLE(ios(11.0), tvos(11.0), watchos(4.0), macos(10.13));
 + (instancetype)labelNodeWithFontNamed:(nullable NSString *)fontName;
 
 - (instancetype)initWithFontNamed:(nullable NSString *)fontName;

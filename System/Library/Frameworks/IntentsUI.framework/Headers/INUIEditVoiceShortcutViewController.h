@@ -2,7 +2,7 @@
 //  INUIEditVoiceShortcutViewController.h
 //  IntentsUI
 //
-//  Copyright © 2018 Apple. All rights reserved.
+//  Copyright © 2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion To have the user edit a voice shortcut, create an @c INUIEditVoiceShortcutViewController object with the @c INVoiceShortcut that they wish to edit, and set its delegate. Then, present the view controller modally from another view controller in your app. Your delegate must dismiss the view controller when the user finishes editing.
  */
 API_AVAILABLE(ios(12.0))
-API_UNAVAILABLE(watchos, tvos)
+API_UNAVAILABLE(watchos, macosx, tvos)
 @interface INUIEditVoiceShortcutViewController : UIViewController
 
 @property (nonatomic, nullable, weak) id<INUIEditVoiceShortcutViewControllerDelegate> delegate;
@@ -25,12 +25,12 @@ API_UNAVAILABLE(watchos, tvos)
 /*!
  @param voiceShortcut The voice shortcut to be edited.
  */
-- (instancetype)initWithVoiceShortcut:(INVoiceShortcut *)voiceShortcut;
+- (instancetype)initWithVoiceShortcut:(INVoiceShortcut *)voiceShortcut API_UNAVAILABLE(macCatalyst);
 
 @end
 
 API_AVAILABLE(ios(12.0))
-API_UNAVAILABLE(watchos, tvos)
+API_UNAVAILABLE(watchos, macosx, tvos)
 @protocol INUIEditVoiceShortcutViewControllerDelegate <NSObject>
 
 /*!

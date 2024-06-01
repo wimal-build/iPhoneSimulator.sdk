@@ -1,13 +1,12 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ED2B144A-7E77-393C-8126-5FE6761D7577', 'x86_64: FE927AB7-81B2-344C-BB7D-0E05233EA9C2' ]
+uuids:           [ 'i386: ED2B144A-7E77-393C-8126-5FE6761D7577', 'x86_64: 8456563B-2D78-3AB9-8C26-A5F05794D3C4' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+install-name:    '/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI'
 current-version: 33
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
-    re-exports:      [ /System/Library/Frameworks/Contacts.framework/Contacts ]
+    re-exports:      [ '/System/Library/Frameworks/Contacts.framework/Contacts' ]
     symbols:         [ _ABAccountIdentifierGlobal, _ABAccountIdentifierLocal, _ABAccountIdentifierSearchPrefix, 
                        _ABAccountPrimarySourceNameForPerson, _ABAccountSourceIsICloud, 
                        _ABAddressBookBundle, _ABAddressBookGetDefaultRotationContentSettings, 

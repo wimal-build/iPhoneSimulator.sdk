@@ -6,9 +6,12 @@
 //
 
 #import <FileProvider/NSFileProviderDefines.h>
+#import <FileProvider/NSFileProviderExtension.h>
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString *NSFileProviderExtensionActionIdentifier NS_EXTENSIBLE_STRING_ENUM;
 
 /**
  This category encapsulates common user-driven actions on FileProvider's items.
@@ -43,6 +46,11 @@ NS_ASSUME_NONNULL_BEGIN
  server then the file provider should send a delete for the temporary, local
  identifier immediately followed by an add with the final identifier.
 
+ A reasonable way of organizing files in the file provider storage is:
+     <file provider storage path>/<itemIdentifier>/<filename>.<extension>
+ If the item identifier was to change, you should move the file on disk to
+ update its path, under coordination with NSFileCoordinatorWritingForMoving.
+
  This is expected to work offline even if there might be a collision (another
  item with the same filename and parentItemIdentifier) only detected when later
  syncing up this change to the server.  In that case, it is suggested that a
@@ -73,7 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)importDocumentAtURL:(NSURL *)fileURL
      toParentItemIdentifier:(NSFileProviderItemIdentifier)parentItemIdentifier
-          completionHandler:(void (^)(NSFileProviderItem _Nullable importedDocumentItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+          completionHandler:(void (^)(NSFileProviderItem _Nullable importedDocumentItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Create a directory.
@@ -95,7 +103,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)createDirectoryWithName:(NSString *)directoryName
          inParentItemIdentifier:(NSFileProviderItemIdentifier)parentItemIdentifier
-              completionHandler:(void (^)(NSFileProviderItem _Nullable createdDirectoryItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+              completionHandler:(void (^)(NSFileProviderItem _Nullable createdDirectoryItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
+
 
 /**
  Rename a document or a directory.
@@ -113,7 +122,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)renameItemWithIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
                           toName:(NSString *)itemName
-               completionHandler:(void (^)(NSFileProviderItem _Nullable renamedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+               completionHandler:(void (^)(NSFileProviderItem _Nullable renamedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Move an item to a new directory.
@@ -130,7 +139,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)reparentItemWithIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
         toParentItemWithIdentifier:(NSFileProviderItemIdentifier)parentItemIdentifier
                            newName:(nullable NSString *)newName
-                 completionHandler:(void (^)(NSFileProviderItem _Nullable reparentedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+                 completionHandler:(void (^)(NSFileProviderItem _Nullable reparentedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Move an item to the trash.
@@ -153,7 +162,7 @@ NS_ASSUME_NONNULL_BEGIN
  NSFileProviderItemCapabilitiesAllowsTrashing.
  */
 - (void)trashItemWithIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
-              completionHandler:(void (^)(NSFileProviderItem _Nullable trashedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+              completionHandler:(void (^)(NSFileProviderItem _Nullable trashedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Move an item out of the trash.
@@ -171,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)untrashItemWithIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
            toParentItemIdentifier:(nullable NSFileProviderItemIdentifier)parentItemIdentifier
-                completionHandler:(void (^)(NSFileProviderItem _Nullable untrashedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+                completionHandler:(void (^)(NSFileProviderItem _Nullable untrashedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Delete an item forever.
@@ -184,7 +193,7 @@ NS_ASSUME_NONNULL_BEGIN
  NSFileProviderItemCapabilitiesAllowsDeleting.
  */
 - (void)deleteItemWithIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
-               completionHandler:(void (^)(NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+               completionHandler:(void (^)(NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Mark an item as recently used, or clear its lastUsedDate if nil.
@@ -202,7 +211,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setLastUsedDate:(nullable NSDate *)lastUsedDate
       forItemIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
-      completionHandler:(void (^)(NSFileProviderItem _Nullable recentlyUsedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      completionHandler:(void (^)(NSFileProviderItem _Nullable recentlyUsedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Tag an item, or untag it if tagData is nil.
@@ -222,7 +231,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setTagData:(nullable NSData *)tagData
  forItemIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
- completionHandler:(void(^)(NSFileProviderItem _Nullable taggedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+ completionHandler:(void (^)(NSFileProviderItem _Nullable taggedItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
 
 /**
  Mark a directory as favorite (or no longer favorite if favoriteRank is nil.)
@@ -241,7 +250,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setFavoriteRank:(nullable NSNumber *)favoriteRank
       forItemIdentifier:(NSFileProviderItemIdentifier)itemIdentifier
-      completionHandler:(void (^)(NSFileProviderItem _Nullable favoriteItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      completionHandler:(void (^)(NSFileProviderItem _Nullable favoriteItem, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos, watchos) API_UNAVAILABLE(macos);
+
+
+/**
+ Perform a custom action identified by `actionIdentifier`, on items identified by
+ `itemIdentifiers`.
+
+ Custom actions are defined in the File Provider Extension's Info.plist.
+ */
+- (NSProgress *)performActionWithIdentifier:(NSFileProviderExtensionActionIdentifier)actionIdentifier onItemsWithIdentifiers:(NSArray <NSFileProviderItemIdentifier> *)itemIdentifiers completionHandler:(void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(performAction(with:onItemsWithIdentifiers:completionHandler:)) API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(watchos, tvos) API_UNAVAILABLE(ios);
 
 @end
 

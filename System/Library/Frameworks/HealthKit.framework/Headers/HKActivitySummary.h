@@ -35,7 +35,7 @@ HK_EXTERN API_AVAILABLE(ios(9.3), watchos(2.2))
 /**
   @property      appleExerciseTime
   @abstract      The amount of exercise time that the user performed.
-  @discussion    This quantity is compatible with time units. The measurement criteria of 
+  @discussion    This quantity is compatible with time units. The measurement criteria of
                  exercise time is defined by Apple.
   */
 @property (nonatomic, strong) HKQuantity *appleExerciseTime;

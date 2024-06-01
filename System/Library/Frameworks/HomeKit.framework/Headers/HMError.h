@@ -113,6 +113,9 @@ typedef NS_ENUM(NSInteger, HMErrorCode) {
     HMErrorCodeIncompatibleAccessory                   API_AVAILABLE(ios(11.3)) = 93,
     HMErrorCodeIncompatibleHomeHub                     API_DEPRECATED_WITH_REPLACEMENT("HMErrorCodeNoCompatibleHomeHub", ios(11.0, 11.0), watchos(4.0, 4.0), tvos(11.0, 11.0)) API_UNAVAILABLE(macos) = HMErrorCodeNoCompatibleHomeHub,
     HMErrorCodeObjectWithSimilarNameExists             API_AVAILABLE(ios(12.0)) = 95,
+    HMErrorCodeOwnershipFailure                        API_AVAILABLE(ios(13.0)) = 96,
+    HMErrorCodeMaximumAccessoriesOfTypeInHome          API_AVAILABLE(ios(13.0)) = 97,
+    HMErrorCodeWiFiCredentialGenerationFailed          API_AVAILABLE(ios(13.0)) = 98,
 } API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 NS_ASSUME_NONNULL_END

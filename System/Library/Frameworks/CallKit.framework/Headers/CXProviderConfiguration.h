@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXProviderConfiguration : NSObject <NSCopying>
 
 /// Localized name of the provider
@@ -25,7 +25,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
 /// Whether this provider's calls should be included in the system's Recents list at the end of each call.
 /// Default: YES
-@property (nonatomic) BOOL includesCallsInRecents API_AVAILABLE(ios(11.0));
+@property (nonatomic) BOOL includesCallsInRecents API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 @property (nonatomic) BOOL supportsVideo; // Default NO
 

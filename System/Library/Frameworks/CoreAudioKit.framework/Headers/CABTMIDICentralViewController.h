@@ -10,6 +10,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_CLASS_AVAILABLE_IOS(8_0)
+API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, watchos)
 @interface CABTMIDICentralViewController : UITableViewController
 @end

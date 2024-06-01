@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class CXCallObserver;
 @class CXTransaction;
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXCallController : NSObject
 
 /// Initialize call controller with a private, serial queue.
@@ -39,7 +39,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 /// A non-nil error indicates that the requested transaction could not be executed.
 ///
 /// Completion block is performed on the queue supplied to designated initializer.
-- (void)requestTransactionWithActions:(NSArray<CXAction *> *)actions completion:(void (^)(NSError *_Nullable error))completion API_AVAILABLE(ios(11.0));
+- (void)requestTransactionWithActions:(NSArray<CXAction *> *)actions completion:(void (^)(NSError *_Nullable error))completion API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 /// Request a transaction containing the specified action to be performed by the in-app provider.
 ///
@@ -47,7 +47,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 /// A non-nil error indicates that the requested transaction could not be executed.
 ///
 /// Completion block is performed on the queue supplied to designated initializer.
-- (void)requestTransactionWithAction:(CXAction *)action completion:(void (^)(NSError *_Nullable error))completion API_AVAILABLE(ios(11.0));
+- (void)requestTransactionWithAction:(CXAction *)action completion:(void (^)(NSError *_Nullable error))completion API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 @end
 

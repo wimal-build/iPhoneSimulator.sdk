@@ -13,11 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 @class HMAction;
 @class HMCharacteristic;
 
+
 /*!
  * @brief This class represents a collection of action objects that can be executed. 
  *        The order of execution of these actions is undefined.
  */             
-API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMActionSet : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -42,7 +43,7 @@ API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
  *        Builtin action sets cannot be removed from the home. trigger-owned action sets cannot
  *        be executed, renamed or associated with another trigger.
  */
-@property(readonly, copy, nonatomic) NSString *actionSetType API_AVAILABLE(ios(9.0));
+@property(readonly, copy, nonatomic) NSString * actionSetType API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief A unique identifier for the action set.

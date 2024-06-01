@@ -83,7 +83,7 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSSecureCoding>
  @param texture the texture to be interpreted
  @param size of the generated physics body
  */
-+ (SKPhysicsBody *)bodyWithTexture:(SKTexture*)texture size:(CGSize)size NS_AVAILABLE(10_10, 8_0);
++ (SKPhysicsBody *)bodyWithTexture:(SKTexture*)texture size:(CGSize)size API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /**
  Creates a body from the alpha values in the supplied texture.
@@ -91,7 +91,7 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSSecureCoding>
  @param alphaThreshold the alpha value above which a pixel is interpreted as opaque
  @param size of the generated physics body
  */
-+ (SKPhysicsBody *)bodyWithTexture:(SKTexture*)texture alphaThreshold:(float)alphaThreshold size:(CGSize)size NS_AVAILABLE(10_10, 8_0);
++ (SKPhysicsBody *)bodyWithTexture:(SKTexture*)texture alphaThreshold:(float)alphaThreshold size:(CGSize)size API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /**
@@ -102,7 +102,7 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSSecureCoding>
 @property (nonatomic, getter = isDynamic) BOOL dynamic;
 @property (nonatomic) BOOL usesPreciseCollisionDetection;
 @property (nonatomic) BOOL allowsRotation;
-@property (nonatomic) BOOL pinned NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic) BOOL pinned API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /**
@@ -122,7 +122,7 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSSecureCoding>
  electric and magnetic fields. Note that this is a unitless quantity, it is up to the developer to
  set charge and field strength appropriately. Defaults to 0.0
  */
-@property (nonatomic) CGFloat charge NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic) CGFloat charge API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /**
  Determines the 'bounciness' of the physics body (0.0 - 1.0). Defaults to 0.2
@@ -173,7 +173,7 @@ SK_EXPORT @interface SKPhysicsBody : NSObject <NSCopying, NSSecureCoding>
  Defines what logical 'categories' of fields this body responds to. Defaults to all bits set (all categories).
  Can be forced off via affectedByGravity.
  */
-@property (nonatomic, assign) uint32_t fieldBitMask NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic, assign) uint32_t fieldBitMask API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /**
  Defines what logical 'categories' this body belongs to. Defaults to all bits set (all categories).

@@ -6,9 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <UIKit/UIImage.h>
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.11), ios(8)) API_UNAVAILABLE_BEGIN(macCatalyst)
 
 @class PHAdjustmentData, PHContentEditingInput, PHContentEditingOutput;
 
@@ -33,4 +35,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+API_AVAILABLE_END API_UNAVAILABLE_END
 NS_ASSUME_NONNULL_END

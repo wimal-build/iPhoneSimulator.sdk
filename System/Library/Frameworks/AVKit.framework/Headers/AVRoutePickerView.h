@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 	@abstract	AVRoutePickerView is a subclass of UIView that displays controls for picking playback routes.
  */
 
-API_AVAILABLE(ios(11.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), tvos(11.0)) API_UNAVAILABLE(macos, watchos)
 @interface AVRoutePickerView : UIView
 
 /*!
@@ -52,6 +52,12 @@ typedef NS_ENUM(NSInteger, AVRoutePickerViewButtonStyle) {
 	@abstract	The route picker button style.
  */
 @property (nonatomic) AVRoutePickerViewButtonStyle routePickerButtonStyle API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios);
+
+/*!
+ 	@property	prioritizesVideoDevices
+ 	@abstract	Whether or not the route picker should sort video capable output devices to the top of the list.
+ */
+@property (nonatomic) BOOL prioritizesVideoDevices API_AVAILABLE(ios(13.0), tvos(13.0));
 
 @end
 

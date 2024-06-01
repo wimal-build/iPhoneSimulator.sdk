@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class represents an event when a characteristic's value falls within the specified 
  * number range.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristicThresholdRangeEvent : HMEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -29,7 +29,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
  * @param characteristic The characteristic bound to the event. The characteristic must
  *                       support notification. An exception will be thrown otherwise.
  *
- * @param numberRange The range for the characteristic value to trigger the event.
+ * @param thresholdRange The range for the characteristic value to trigger the event.
  *
  * @return Instance object representing the characteristic event.
  */
@@ -53,7 +53,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
  * @brief This class represents an event when a characteristic's value falls within the specified
  * number range.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMMutableCharacteristicThresholdRangeEvent : HMCharacteristicThresholdRangeEvent
 
 - (instancetype)init NS_UNAVAILABLE;

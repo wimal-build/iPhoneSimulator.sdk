@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  An MKGeodesicPolyline follows the shortest path along the surface of the earth,
  which may appear as a curved line when drawn on the projected MKMapView.
  */
-NS_CLASS_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos)
 @interface MKGeodesicPolyline : MKPolyline
 
 + (instancetype)polylineWithPoints:(const MKMapPoint *)points count:(NSUInteger)count;

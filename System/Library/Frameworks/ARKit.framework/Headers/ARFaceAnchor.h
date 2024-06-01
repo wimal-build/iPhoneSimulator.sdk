@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Blend shape locations of a face geometry.
  @discussion Each location defines an area of the face that can be displaced with a provided coefficient.
+ @note Blend shapes are computed based on the captured image. For example, if the detected person has a closed right eye, the eye on the left side of the captured image will appear closed and reported as
+ blend shape activation  by ARKit.
+ @see -[ARFrame capturedImage]
  */
 typedef NSString *ARBlendShapeLocation NS_STRING_ENUM NS_SWIFT_NAME(ARFaceAnchor.BlendShapeLocation) API_AVAILABLE(ios(11.0));
 FOUNDATION_EXTERN ARBlendShapeLocation const ARBlendShapeLocationBrowDownLeft           API_AVAILABLE(ios(11.0));

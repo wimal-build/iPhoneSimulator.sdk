@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Photos/PhotosDefines.h>
 #import <Photos/PHFetchResult.h>
 
 @class PHObject;
@@ -14,8 +13,10 @@
 @class PHFetchResultChangeDetails;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.13), ios(8), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHChange : NSObject
+OS_EXPORT
+@interface PHChange : NSObject
 
 - (nullable PHObjectChangeDetails *)changeDetailsForObject:(PHObject *)object;
 - (nullable PHFetchResultChangeDetails *)changeDetailsForFetchResult:(PHFetchResult *)object;
@@ -23,8 +24,9 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHChange : NSObject
 @end
 
 
-
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHObjectChangeDetails<ObjectType: PHObject *> : NSObject
+#pragma mark -
+OS_EXPORT
+@interface PHObjectChangeDetails<ObjectType: PHObject *> : NSObject
 
 // the object in the state before this change (returns the object that was passed in to changeDetailsForObject:)
 @property (atomic, strong, readonly) ObjectType objectBeforeChanges;
@@ -41,8 +43,9 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHObjectChangeDetails<Obje
 @end
 
 
-
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHFetchResultChangeDetails<ObjectType: PHObject *> : NSObject
+#pragma mark -
+OS_EXPORT
+@interface PHFetchResultChangeDetails<ObjectType: PHObject *> : NSObject
 
 // fetch result with the state of the fetched objects before this change (returns the fetch result passed in to changeDetailsForFetchResult:)
 @property (atomic, strong, readonly) PHFetchResult<ObjectType> *fetchResultBeforeChanges;
@@ -76,10 +79,10 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHFetchResultChangeDetails
 // returns NO if hasIncrementalChanges is NO
 @property (atomic, assign, readonly) BOOL hasMoves;
 
-
 // Provides a "diff" between 2 PHFetchResult objects.
 + (instancetype)changeDetailsFromFetchResult:(PHFetchResult<ObjectType> *)fromResult toFetchResult:(PHFetchResult<ObjectType> *)toResult changedObjects:(NSArray<ObjectType> *)changedObjects;
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

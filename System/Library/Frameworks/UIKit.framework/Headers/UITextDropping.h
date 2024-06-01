@@ -1,9 +1,9 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextDropping.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextDropping.h>)
 //
 //  UITextDropping.h
 //  UIKit
 //
-//  Copyright © 2017-2018 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,7 +31,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos)
 
 /* Returns whether this control currently has at least one active drag session.
  */
-@property (nonatomic, readonly, getter=isTextDropActive) bool textDropActive;
+@property (nonatomic, readonly, getter=isTextDropActive) BOOL textDropActive;
 
 @end
 

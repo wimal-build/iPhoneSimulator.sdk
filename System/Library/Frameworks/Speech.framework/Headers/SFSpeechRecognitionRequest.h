@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // A request for a speech recognition from an audio source
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), macos(10.15))
 @interface SFSpeechRecognitionRequest : NSObject
 
 @property (nonatomic) SFSpeechRecognitionTaskHint taskHint;
@@ -27,10 +27,16 @@ API_AVAILABLE(ios(10.0))
 // String which can be used to identify the receiver by the developer
 @property (nonatomic, copy, nullable) NSString *interactionIdentifier;
 
+// If true, speech recogition will not send any audio over the Internet
+// This will reduce accuracy but enables certain applications where it is
+// inappropriate to transmit user speech to a remote service.
+// Default is false
+@property (nonatomic) BOOL requiresOnDeviceRecognition API_AVAILABLE(ios(13), macos(10.15));
+
 @end
 
 // A request to recognize speech from a recorded audio file
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), macos(10.15))
 @interface SFSpeechURLRecognitionRequest : SFSpeechRecognitionRequest
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -43,7 +49,7 @@ API_AVAILABLE(ios(10.0))
 @end
 
 // A request to recognize speech from arbitrary audio buffers
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), macos(10.15))
 @interface SFSpeechAudioBufferRecognitionRequest : SFSpeechRecognitionRequest
 
 // Preferred audio format for optimal speech recognition

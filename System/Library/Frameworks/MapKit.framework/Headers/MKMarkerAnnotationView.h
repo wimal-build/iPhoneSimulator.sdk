@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos)
 @interface MKMarkerAnnotationView : MKAnnotationView
 
 @property (nonatomic) MKFeatureVisibility titleVisibility;

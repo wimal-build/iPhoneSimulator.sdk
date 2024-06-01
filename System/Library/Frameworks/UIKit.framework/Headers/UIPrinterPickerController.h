@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrinterPickerController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPrinterPickerController.h>)
 //
 //  UIPrinterPickerController.h
 //  UIKit
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^UIPrinterPickerCompletionHandler)(UIPrinterPickerController *printerPickerController, BOOL userDidSelect, NSError * __nullable error);
 
-__TVOS_PROHIBITED
+API_UNAVAILABLE(tvos)
 @protocol UIPrinterPickerControllerDelegate <NSObject>
 @optional
 
@@ -43,7 +43,7 @@ __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPrinterPickerController : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos) @interface UIPrinterPickerController : NSObject
 
 /*!
  *  @method     printerPickerControllerWithInitiallySelectedPrinter:

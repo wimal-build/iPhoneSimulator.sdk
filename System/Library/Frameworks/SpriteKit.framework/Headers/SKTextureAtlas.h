@@ -17,7 +17,7 @@ SK_EXPORT @interface SKTextureAtlas : NSObject <NSSecureCoding>
 + (instancetype)atlasNamed:(NSString *)name;
 
 /* Create a texture atlas on the fly */
-+ (instancetype)atlasWithDictionary:(NSDictionary<NSString*, id> *)properties NS_AVAILABLE(10_10, 8_0);
++ (instancetype)atlasWithDictionary:(NSDictionary<NSString*, id> *)properties API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /* Individual texture for image name within the atlas */
 - (SKTexture *)textureNamed:(NSString *)name;
@@ -26,7 +26,7 @@ SK_EXPORT @interface SKTextureAtlas : NSObject <NSSecureCoding>
  Start a texture atlas preload operation on an array of texture atlas
  
  @param textureAtlases an array of SKTextureAtlas to be preloaded
- @param completionhandler will be called upon the preload completion
+ @param completionHandler will be called upon the preload completion
  
  */
 + (void)preloadTextureAtlases:(NSArray<SKTextureAtlas*> *)textureAtlases withCompletionHandler:(void(^)(void))completionHandler;
@@ -36,10 +36,10 @@ SK_EXPORT @interface SKTextureAtlas : NSObject <NSSecureCoding>
  else an NSError is returned and the user info will contain a list of the atlases that couldn't be found
  the ones that could be found are looked up and prefetched.
 
- @param foundAtlases is an array of the SKTextureAtlas, that were located and preloaded.
- @param error will contain which ones couldn't be found.
+ @param atlasNames is an array of the SKTextureAtlas, that were located and preloaded.
+ @param completionHandler will be called upon the preload completion.
  */
-+ (void)preloadTextureAtlasesNamed:(NSArray<NSString *> *)atlasNames withCompletionHandler:(void (^)(NSError * __nullable error, NSArray<SKTextureAtlas *> *foundAtlases))completionHandler NS_AVAILABLE(10_11, 9_0);
++ (void)preloadTextureAtlasesNamed:(NSArray<NSString *> *)atlasNames withCompletionHandler:(void (^)(NSError * __nullable error, NSArray<SKTextureAtlas *> *foundAtlases))completionHandler API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /**
  Request that this texture atlas be loaded into vram on the next render update, with a callback handler.

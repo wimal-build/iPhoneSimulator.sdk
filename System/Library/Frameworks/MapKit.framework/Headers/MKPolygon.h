@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(10_9, 4_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(10_9, 4_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos)
 @interface MKPolygon : MKMultiPoint <MKOverlay>
 
 + (instancetype)polygonWithPoints:(const MKMapPoint *)points count:(NSUInteger)count;
@@ -20,7 +20,7 @@ NS_CLASS_AVAILABLE(10_9, 4_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
 + (instancetype)polygonWithCoordinates:(const CLLocationCoordinate2D *)coords count:(NSUInteger)count;
 + (instancetype)polygonWithCoordinates:(const CLLocationCoordinate2D *)coords count:(NSUInteger)count interiorPolygons:(nullable NSArray<MKPolygon *> *)interiorPolygons;
 
-@property (readonly, nullable) NSArray<MKPolygon *> *interiorPolygons;
+@property (atomic, readonly, nullable) NSArray<MKPolygon *> *interiorPolygons;
 
 @end
 

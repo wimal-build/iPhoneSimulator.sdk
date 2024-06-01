@@ -6,6 +6,9 @@ Classes:
     - Name: localPlayer
       PropertyKind: Class
       SwiftName: local
+    - Name: local
+      PropertyKind: Class
+      SwiftPrivate: true
   - Name: GKPlayer
     Properties:
     - Name: playerID

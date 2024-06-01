@@ -20,7 +20,10 @@
 
 @class MKUserLocation;
 @class MKMapCamera;
+@class MKMapCameraZoomRange;
+@class MKMapCameraBoundary;
 @class MKClusterAnnotation;
+@class MKPointOfInterestFilter;
 
 @protocol MKMapViewDelegate;
 
@@ -29,21 +32,21 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, MKUserTrackingMode) {
 	MKUserTrackingModeNone = 0, // the user's location is not followed
 	MKUserTrackingModeFollow, // the map follows the user's location
-	MKUserTrackingModeFollowWithHeading __TVOS_PROHIBITED, // the map follows the user's location and heading
-} NS_ENUM_AVAILABLE(NA, 5_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED;
+	MKUserTrackingModeFollowWithHeading API_UNAVAILABLE(tvos), // the map follows the user's location and heading
+} NS_ENUM_AVAILABLE(NA, 5_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos);
 
 MK_EXTERN NSString * const MKMapViewDefaultAnnotationViewReuseIdentifier NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0);
 MK_EXTERN NSString * const MKMapViewDefaultClusterAnnotationViewReuseIdentifier NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0);
 
 #if TARGET_OS_IPHONE
-NS_CLASS_AVAILABLE(NA, 3_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 3_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos)
 @interface MKMapView : UIView <NSCoding>
 #else
 NS_CLASS_AVAILABLE(10_9, NA)
 @interface MKMapView : NSView <NSCoding>
 #endif
 
-@property (nonatomic, weak, nullable) id <MKMapViewDelegate> delegate;
+@property (nonatomic, weak, nullable) IBOutlet id <MKMapViewDelegate> delegate;
 
 // Changing the map type or region can cause the map to start loading map content.
 // The loading delegate methods will be called as map content is loaded.
@@ -80,6 +83,12 @@ NS_CLASS_AVAILABLE(10_9, NA)
 @property (nonatomic, copy) MKMapCamera *camera NS_AVAILABLE(10_9, 7_0);
 - (void)setCamera:(MKMapCamera *)camera animated:(BOOL)animated NS_AVAILABLE(10_9, 7_0);
 
+@property (nonatomic, copy, null_resettable) MKMapCameraZoomRange *cameraZoomRange API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0)) API_UNAVAILABLE(watchos);
+- (void)setCameraZoomRange:(nullable MKMapCameraZoomRange *)cameraZoomRange animated:(BOOL)animated API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0)) API_UNAVAILABLE(watchos);
+
+@property (nonatomic, copy, nullable) MKMapCameraBoundary *cameraBoundary API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0)) API_UNAVAILABLE(watchos);
+- (void)setCameraBoundary:(nullable MKMapCameraBoundary *)cameraBoundary animated:(BOOL)animated API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0)) API_UNAVAILABLE(watchos);
+
 #if TARGET_OS_IPHONE
 - (CGPoint)convertCoordinate:(CLLocationCoordinate2D)coordinate toPointToView:(nullable UIView *)view;
 - (CLLocationCoordinate2D)convertPoint:(CGPoint)point toCoordinateFromView:(nullable UIView *)view;
@@ -97,18 +106,19 @@ NS_CLASS_AVAILABLE(10_9, NA)
 @property (nonatomic, getter=isZoomEnabled) BOOL zoomEnabled;
 @property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 // Rotate and pitch are enabled by default on Mac OS X and on iOS 7.0 and later.
-@property (nonatomic, getter=isRotateEnabled) BOOL rotateEnabled NS_AVAILABLE(10_9, 7_0) __TVOS_PROHIBITED;
-@property (nonatomic, getter=isPitchEnabled) BOOL pitchEnabled NS_AVAILABLE(10_9, 7_0) __TVOS_PROHIBITED;
+@property (nonatomic, getter=isRotateEnabled) BOOL rotateEnabled NS_AVAILABLE(10_9, 7_0) API_UNAVAILABLE(tvos);
+@property (nonatomic, getter=isPitchEnabled) BOOL pitchEnabled NS_AVAILABLE(10_9, 7_0) API_UNAVAILABLE(tvos);
 
-#if !TARGET_OS_IPHONE
-@property (nonatomic) BOOL showsZoomControls NS_AVAILABLE(10_9, NA);
+#if TARGET_OS_OSX || TARGET_OS_MACCATALYST
+@property (nonatomic) BOOL showsZoomControls API_AVAILABLE(macos(10.9), macCatalyst(13.0)) API_UNAVAILABLE(ios, watchos, tvos);
 #endif
 
 
-@property (nonatomic) BOOL showsCompass NS_AVAILABLE(10_9, 9_0) __TVOS_PROHIBITED;
+@property (nonatomic) BOOL showsCompass NS_AVAILABLE(10_9, 9_0) API_UNAVAILABLE(tvos);
 @property (nonatomic) BOOL showsScale NS_AVAILABLE(10_10, 9_0);
 
-@property (nonatomic) BOOL showsPointsOfInterest NS_AVAILABLE(10_9, 7_0); // Affects MKMapTypeStandard and MKMapTypeHybrid
+@property (nonatomic, copy, nullable) MKPointOfInterestFilter *pointOfInterestFilter API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0)) API_UNAVAILABLE(watchos);
+@property (nonatomic) BOOL showsPointsOfInterest API_DEPRECATED("Use pointOfInterestFilter", macos(10.9, 10.15), ios(7.0, 13.0), tvos(9.0, 13.0)) API_UNAVAILABLE(watchos); // Affects MKMapTypeStandard and MKMapTypeHybrid
 @property (nonatomic) BOOL showsBuildings NS_AVAILABLE(10_9, 7_0); // Affects MKMapTypeStandard
 @property (nonatomic) BOOL showsTraffic NS_AVAILABLE(10_11, 9_0); // Affects MKMapTypeStandard and MKMapTypeHybrid
 
@@ -166,7 +176,7 @@ NS_CLASS_AVAILABLE(10_9, NA)
 typedef NS_ENUM(NSInteger, MKOverlayLevel) {
     MKOverlayLevelAboveRoads = 0, // note that labels include shields and point of interest icons.
     MKOverlayLevelAboveLabels
-} NS_ENUM_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED;
+} NS_ENUM_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos);
 
 @interface MKMapView (OverlaysAPI)
 
@@ -195,7 +205,7 @@ typedef NS_ENUM(NSInteger, MKOverlayLevel) {
 #if TARGET_OS_IPHONE
 // Currently displayed view for overlay; returns nil if the view has not been created yet.
 // Prefer using MKOverlayRenderer and -rendererForOverlay.
-- (MKOverlayView *)viewForOverlay:(id <MKOverlay>)overlay NS_DEPRECATED_IOS(4_0, 7_0) __TVOS_PROHIBITED;
+- (MKOverlayView *)viewForOverlay:(id <MKOverlay>)overlay API_DEPRECATED_WITH_REPLACEMENT("-rendererForOverlay:", ios(4.0, 13.0)) API_UNAVAILABLE(macos, tvos, watchos);
 #endif
 
 // These methods operate implicitly on overlays in MKOverlayLevelAboveLabels and may be deprecated in a future release in favor of the methods that specify the level.
@@ -207,7 +217,7 @@ typedef NS_ENUM(NSInteger, MKOverlayLevel) {
 
 @end
 
-__WATCHOS_PROHIBITED
+API_UNAVAILABLE(watchos)
 @protocol MKMapViewDelegate <NSObject>
 @optional
 
@@ -235,7 +245,7 @@ __WATCHOS_PROHIBITED
 
 #if TARGET_OS_IPHONE
 // mapView:annotationView:calloutAccessoryControlTapped: is called when the user taps on left & right callout accessory UIControls.
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control __TVOS_PROHIBITED;
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control API_UNAVAILABLE(tvos);
 #endif
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view NS_AVAILABLE(10_9, 4_0);
@@ -247,7 +257,7 @@ __WATCHOS_PROHIBITED
 - (void)mapView:(MKMapView *)mapView didFailToLocateUserWithError:(NSError *)error NS_AVAILABLE(10_9, 4_0);
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view didChangeDragState:(MKAnnotationViewDragState)newState 
-   fromOldState:(MKAnnotationViewDragState)oldState NS_AVAILABLE(10_9, 4_0) __TVOS_PROHIBITED;
+   fromOldState:(MKAnnotationViewDragState)oldState NS_AVAILABLE(10_9, 4_0) API_UNAVAILABLE(tvos);
 
 #if TARGET_OS_IPHONE
 - (void)mapView:(MKMapView *)mapView didChangeUserTrackingMode:(MKUserTrackingMode)mode animated:(BOOL)animated NS_AVAILABLE(NA, 5_0);
@@ -258,14 +268,14 @@ __WATCHOS_PROHIBITED
 
 #if TARGET_OS_IPHONE
 // Prefer -mapView:rendererForOverlay:
-- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay NS_DEPRECATED_IOS(4_0, 7_0) __TVOS_PROHIBITED;
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay API_DEPRECATED_WITH_REPLACEMENT("-mapView:rendererForOverlay:", ios(4.0, 13.0)) API_UNAVAILABLE(macos, tvos, watchos);
 // Called after the provided overlay views have been added and positioned in the map.
 // Prefer -mapView:didAddOverlayRenderers:
-- (void)mapView:(MKMapView *)mapView didAddOverlayViews:(NSArray *)overlayViews NS_DEPRECATED_IOS(4_0, 7_0) __TVOS_PROHIBITED;
+- (void)mapView:(MKMapView *)mapView didAddOverlayViews:(NSArray *)overlayViews API_DEPRECATED_WITH_REPLACEMENT("-mapView:didAddOverlayRenderers:", ios(4.0, 13.0)) API_UNAVAILABLE(macos, tvos, watchos);
 #endif
 
 // Return nil for default MKClusterAnnotation, it is illegal to return a cluster annotation not containing the identical array of member annotations given.
-- (MKClusterAnnotation *)mapView:(MKMapView *)mapView clusterAnnotationForMemberAnnotations:(NSArray<id<MKAnnotation>>*)memberAnnotations NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED;
+- (MKClusterAnnotation *)mapView:(MKMapView *)mapView clusterAnnotationForMemberAnnotations:(NSArray<id<MKAnnotation>>*)memberAnnotations NS_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0) API_UNAVAILABLE(watchos);
 
 @end
 

@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPresentationController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPresentationController.h>)
 //
 //  UIPresentationController.h
 //  UIKit
@@ -24,22 +24,39 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-/* For iOS8.0, the only supported adaptive presentation styles are UIModalPresentationFullScreen and UIModalPresentationOverFullScreen. */
+// For iOS 8.0, the only supported adaptive presentation styles are UIModalPresentationFullScreen and UIModalPresentationOverFullScreen.
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller;
 
 // Returning UIModalPresentationNone will indicate that an adaptation should not happen.
-- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_3);
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection API_AVAILABLE(ios(8.3));
 
-/* If this method is not implemented, or returns nil, then the originally presented view controller is used. */
+// If this method is not implemented, or returns nil, then the originally presented view controller is used.
 - (nullable UIViewController *)presentationController:(UIPresentationController *)controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle)style;
 
 // If there is no adaptation happening and an original style is used UIModalPresentationNone will be passed as an argument.
-- (void)presentationController:(UIPresentationController *)presentationController willPresentWithAdaptiveStyle:(UIModalPresentationStyle)style transitionCoordinator:(nullable id <UIViewControllerTransitionCoordinator>)transitionCoordinator NS_AVAILABLE_IOS(8_3);
+- (void)presentationController:(UIPresentationController *)presentationController willPresentWithAdaptiveStyle:(UIModalPresentationStyle)style transitionCoordinator:(nullable id <UIViewControllerTransitionCoordinator>)transitionCoordinator API_AVAILABLE(ios(8.3));
 
+// Called on the delegate when the presentation controller will dismiss in response to user action.
+// This method is not called if the presentedViewController isModalInPresentation or if the presentation is dismissed programatically.
+// Return NO to prevent dismissal of the view controller.
+- (BOOL)presentationControllerShouldDismiss:(UIPresentationController *)presentationController API_AVAILABLE(ios(13.0));
+
+// Called on the delegate when the user has taken action to dismiss the presentation, before interaction or animations begin.
+// Use this callback to setup alongside animations or interaction notifications with the presentingViewController's transitionCoordinator.
+// This is not called if the presentation is dismissed programatically.
+- (void)presentationControllerWillDismiss:(UIPresentationController *)presentationController API_AVAILABLE(ios(13.0));
+
+// Called on the delegate when the user has taken action to dismiss the presentation successfully, after all animations are finished.
+// This is not called if the presentation is dismissed programatically.
+- (void)presentationControllerDidDismiss:(UIPresentationController *)presentationController API_AVAILABLE(ios(13.0));
+
+// Called on the delegate when the user attempts to dismiss the presentation, but user-initiated dismissal is prevented because the presentedViewController isModalInPresentation or presentationControllerShouldDismiss: returned NO.
+// When this method is called, it is recommended that the user be informed why they cannot dismiss the presentation, such as by presenting an instance of UIAlertController.
+- (void)presentationControllerDidAttemptToDismiss:(UIPresentationController *)presentationController API_AVAILABLE(ios(13.0));
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment>
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) @interface UIPresentationController : NSObject <UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment>
 
 @property(nonatomic, strong, readonly) UIViewController *presentingViewController;
 @property(nonatomic, strong, readonly) UIViewController *presentedViewController;
@@ -58,12 +75,8 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // By default this implementation defers to the delegate, if one exists, or returns the current presentation style. UIFormSheetPresentationController, and
 // UIPopoverPresentationController override this implementation to return UIModalPresentationStyleFullscreen if the delegate does not provide an
 // implementation for adaptivePresentationStyleForPresentationController:
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) UIModalPresentationStyle adaptivePresentationStyle;
-#else
-- (UIModalPresentationStyle)adaptivePresentationStyle;
-#endif
-- (UIModalPresentationStyle)adaptivePresentationStyleForTraitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_3);
+- (UIModalPresentationStyle)adaptivePresentationStyleForTraitCollection:(UITraitCollection *)traitCollection API_AVAILABLE(ios(8.3));
 
 - (void)containerViewWillLayoutSubviews;
 - (void)containerViewDidLayoutSubviews;
@@ -71,7 +84,6 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // A view that's going to be animated during the presentation. Must be an ancestor of a presented view controller's view
 // or a presented view controller's view itself.
 // (Default: presented view controller's view)
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly, nullable) UIView *presentedView;
 
 // Position of the presented view in the container view by the end of the presentation transition.
@@ -79,7 +91,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 @property(nonatomic, readonly) CGRect frameOfPresentedViewInContainerView;
 
 // By default each new presentation is full screen.
-// This behavior can be overriden with the following method to force a current context presentation.
+// This behavior can be overridden with the following method to force a current context presentation.
 // (Default: YES)
 @property(nonatomic, readonly) BOOL shouldPresentInFullscreen;
 
@@ -87,23 +99,6 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 // presentation transition
 // (Default: NO)
 @property(nonatomic, readonly) BOOL shouldRemovePresentersView;
-#else
-- (nullable UIView *)presentedView;
-
-// Position of the presented view in the container view by the end of the presentation transition.
-// (Default: container view bounds)
-- (CGRect)frameOfPresentedViewInContainerView;
-
-// By default each new presentation is full screen.
-// This behavior can be overriden with the following method to force a current context presentation.
-// (Default: YES)
-- (BOOL)shouldPresentInFullscreen;
-
-// Indicate whether the view controller's view we are transitioning from will be removed from the window in the end of the
-// presentation transition
-// (Default: NO)
-- (BOOL)shouldRemovePresentersView;
-#endif
 
 - (void)presentationTransitionWillBegin;
 - (void)presentationTransitionDidEnd:(BOOL)completed;

@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextField.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextField.h>)
 //
 //  UITextField.h
 //  UIKit
@@ -49,20 +49,20 @@ typedef NS_ENUM(NSInteger, UITextFieldViewMode) {
 typedef NS_ENUM(NSInteger, UITextFieldDidEndEditingReason) {
     UITextFieldDidEndEditingReasonCommitted,
     UITextFieldDidEndEditingReasonCancelled UIKIT_AVAILABLE_TVOS_ONLY(10_0)
-} NS_ENUM_AVAILABLE_IOS(10_0);
+} API_AVAILABLE(ios(10.0));
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSCoding, UIContentSizeCategoryAdjusting>
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UITextField : UIControl <UITextInput, NSCoding, UIContentSizeCategoryAdjusting>
 
 @property(nullable, nonatomic,copy)   NSString               *text;                 // default is nil
-@property(nullable, nonatomic,copy)   NSAttributedString     *attributedText NS_AVAILABLE_IOS(6_0); // default is nil
+@property(nullable, nonatomic,copy)   NSAttributedString     *attributedText API_AVAILABLE(ios(6.0)); // default is nil
 @property(nullable, nonatomic,strong) UIColor                *textColor;            // default is nil. use opaque black
 @property(nullable, nonatomic,strong) UIFont                 *font;                 // default is nil. use system font 12 pt
 @property(nonatomic)        NSTextAlignment         textAlignment;        // default is NSLeftTextAlignment
 @property(nonatomic)        UITextBorderStyle       borderStyle;          // default is UITextBorderStyleNone. If set to UITextBorderStyleRoundedRect, custom background images are ignored.
-@property(nonatomic,copy)   NSDictionary<NSAttributedStringKey,id> *defaultTextAttributes NS_AVAILABLE_IOS(7_0); // applies attributes to the full range of text. Unset attributes act like default values.
+@property(nonatomic,copy)   NSDictionary<NSAttributedStringKey,id> *defaultTextAttributes API_AVAILABLE(ios(7.0)); // applies attributes to the full range of text. Unset attributes act like default values.
 
 @property(nullable, nonatomic,copy)   NSString               *placeholder;          // default is nil. string is drawn 70% gray
-@property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder NS_AVAILABLE_IOS(6_0); // default is nil
+@property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder API_AVAILABLE(ios(6.0)); // default is nil
 @property(nonatomic)        BOOL                    clearsOnBeginEditing; // default is NO which moves cursor to location clicked. if YES, all text cleared
 @property(nonatomic)        BOOL                    adjustsFontSizeToFitWidth; // default is NO. if YES, text will shrink to minFontSize along baseline
 @property(nonatomic)        CGFloat                 minimumFontSize;      // default is 0.0. actual min may be pinned to something readable. used if adjustsFontSizeToFitWidth is YES
@@ -71,8 +71,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 @property(nullable, nonatomic,strong) UIImage                *disabledBackground;   // default is nil. ignored if background not set. image should be stretchable
 
 @property(nonatomic,readonly,getter=isEditing) BOOL editing;
-@property(nonatomic) BOOL allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0); // default is NO. allows editing text attributes with style operations and pasting rich text
-@property(nullable, nonatomic,copy) NSDictionary<NSAttributedStringKey,id> *typingAttributes NS_AVAILABLE_IOS(6_0); // automatically resets when the selection changes
+@property(nonatomic) BOOL allowsEditingTextAttributes API_AVAILABLE(ios(6.0)); // default is NO. allows editing text attributes with style operations and pasting rich text
+@property(nullable, nonatomic,copy) NSDictionary<NSAttributedStringKey,id> *typingAttributes API_AVAILABLE(ios(6.0)); // automatically resets when the selection changes
 
 
 // You can supply custom views which are displayed at the left or right
@@ -109,7 +109,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 @property (nullable, readwrite, strong) UIView *inputView;             
 @property (nullable, readwrite, strong) UIView *inputAccessoryView;
 
-@property(nonatomic) BOOL clearsOnInsertion NS_AVAILABLE_IOS(6_0); // defaults to NO. if YES, the selection UI is hidden, and inserting text will replace the contents of the field. changing the selection will automatically set this to NO.
+@property(nonatomic) BOOL clearsOnInsertion API_AVAILABLE(ios(6.0)); // defaults to NO. if YES, the selection UI is hidden, and inserting text will replace the contents of the field. changing the selection will automatically set this to NO.
 
 @end
 
@@ -132,9 +132,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 - (void)textFieldDidBeginEditing:(UITextField *)textField;           // became first responder
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField;          // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
 - (void)textFieldDidEndEditing:(UITextField *)textField;             // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
-- (void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason NS_AVAILABLE_IOS(10_0); // if implemented, called in place of textFieldDidEndEditing:
+- (void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason API_AVAILABLE(ios(10.0)); // if implemented, called in place of textFieldDidEndEditing:
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;   // return NO to not change text
+
+- (void)textFieldDidChangeSelection:(UITextField *)textField API_AVAILABLE(ios(13.0), tvos(13.0));
 
 - (BOOL)textFieldShouldClear:(UITextField *)textField;               // called when clear button pressed. return NO to ignore (no notifications)
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;              // called when 'return' key pressed. return NO to ignore.
@@ -145,7 +147,7 @@ UIKIT_EXTERN NSNotificationName const UITextFieldTextDidBeginEditingNotification
 UIKIT_EXTERN NSNotificationName const UITextFieldTextDidEndEditingNotification;
 UIKIT_EXTERN NSNotificationName const UITextFieldTextDidChangeNotification;
 
-UIKIT_EXTERN NSString *const UITextFieldDidEndEditingReasonKey NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN NSString *const UITextFieldDidEndEditingReasonKey API_AVAILABLE(ios(10.0));
 
 NS_ASSUME_NONNULL_END
 

@@ -22,7 +22,7 @@ NS_CLASS_DEPRECATED(10_8, 10_12, 4_2, 10_0)
 @interface GKFriendRequestComposeViewController : UINavigationController
 @end
 #else
-#import <GameKit/GKDialogController.h>
+#import <GameCenterUICore/GKDialogController.h>
 NS_ASSUME_NONNULL_BEGIN
 NS_CLASS_DEPRECATED(10_8, 10_12, 4_2, 10_0)
 @interface GKFriendRequestComposeViewController : NSViewController <GKViewController> {

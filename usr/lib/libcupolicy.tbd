@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4847F48E-6BFC-32D8-BB52-47ACD817F82D', 'x86_64: 7CF94445-75C5-3E90-96BE-EFE64164C7B0' ]
+uuids:           [ 'i386: 4847F48E-6BFC-32D8-BB52-47ACD817F82D', 'x86_64: 88BE55E9-8EF1-37DA-AC63-C4535BE8740C' ]
 platform:        ios
-install-name:    /usr/lib/libcupolicy.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libcupolicy.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ __ZN30cellular_usage_policy_client_sC1Ev, __ZN30cellular_usage_policy_client_sC2Ev, 
@@ -11,9 +10,6 @@ exports:
                        _cellular_usage_policy_create_client, _cellular_usage_policy_destroy_client, 
                        _cellular_usage_policy_get_bundle_from_policy, _cellular_usage_policy_get_data_allowed_from_policy, 
                        _cellular_usage_policy_is_data_allowed_for_bundle, _cellular_usage_policy_set_changed_handler ]
-  - archs:           [ x86_64 ]
-    weak-def-symbols: [ __ZTIN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE, 
-                        __ZTSN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _network_usage_policy_create_client, _network_usage_policy_destroy_client, 
                        _network_usage_policy_get_WiFi_data_allowed_from_policy, _network_usage_policy_get_bundle_from_policy, 

@@ -5,6 +5,8 @@
  *  Copyright (c) 2013 Apple Inc. All rights reserved.
  *
  */
+#ifndef CMAvailability_h
+#define CMAvailability_h
 
 #import <Availability.h>
 #import <os/availability.h>
@@ -16,3 +18,5 @@
 #endif
 
 #define COREMOTION_EXPORT __attribute__((visibility ("default")))
+
+#endif // CMAvailability_h

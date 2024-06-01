@@ -1,7 +1,7 @@
 /*
     NSPersistentStoreResult.h
     Core Data
-    Copyright (c) 2004-2018, Apple Inc.
+    Copyright (c) 2004-2019, Apple Inc.
     All rights reserved.
 */
 
@@ -17,6 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 @class NSPersistentStoreAsynchronousResult;
 @class NSAsynchronousFetchResult;
 @class NSAsynchronousFetchRequest;
+
+typedef NS_ENUM(NSUInteger, NSBatchInsertRequestResultType) {
+    NSBatchInsertRequestResultTypeStatusOnly = 0x0,            // Return a status boolean
+    NSBatchInsertRequestResultTypeObjectIDs = 0x1,             // Return the object IDs of the rows that were inserted/updated
+    NSBatchInsertRequestResultTypeCount = 0x2                  // Return the number of rows that were inserted/updated
+} API_AVAILABLE(macosx(10.15),ios(13.0),tvos(13.0),watchos(6.0));
 
 typedef NS_ENUM(NSUInteger, NSBatchUpdateRequestResultType) {
     NSStatusOnlyResultType = 0x0,            // Return a status boolean
@@ -65,6 +71,17 @@ API_AVAILABLE(macosx(10.10),ios(8.0))
 
 @property (strong, readonly) NSAsynchronousFetchRequest<ResultType> * fetchRequest;
 @property (nullable, strong, readonly) NSArray<ResultType> * finalResult;
+
+@end
+
+// The result returned when executing an NSBatchInsertRequest
+API_AVAILABLE(macosx(10.15),ios(13.0),tvos(13.0),watchos(6.0))
+@interface NSBatchInsertResult : NSPersistentStoreResult {
+}
+
+// Return the result. See NSBatchInsertRequestResultType for options
+@property (nullable, strong, readonly) id result;
+@property (readonly) NSBatchInsertRequestResultType resultType;
 
 @end
 

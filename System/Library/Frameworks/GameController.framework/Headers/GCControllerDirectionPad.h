@@ -5,9 +5,12 @@
 //  Copyright (c) 2012 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #import <GameController/GameController.h>
 
 @class GCControllerAxisInput;
+@class GCControllerButtonInput;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,6 +39,17 @@ typedef void (^GCControllerDirectionPadValueChangedHandler)(GCControllerDirectio
 
 @property (nonatomic, readonly) GCControllerButtonInput *left;
 @property (nonatomic, readonly) GCControllerButtonInput *right;
+
+/**
+ Sets the normalized value for the direction pad's axis inputs. Will update the states of the direction pad's button inputs as well.
+ 
+ @param xAxis the value to set the xAxis of the touchpad to.
+ @param yAxis the value to set the yAxis of the touchpad to.
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see value
+ @see pressed
+ */
+- (void)setValueForXAxis:(float)xAxis yAxis:(float)yAxis;
 
 @end
 

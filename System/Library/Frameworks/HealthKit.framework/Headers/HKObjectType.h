@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class HKActivitySummaryType;
+@class HKAudiogramSampleType;
 @class HKCategoryType;
 @class HKCharacteristicType;
 @class HKCorrelationType;
@@ -45,6 +46,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 + (nullable HKSeriesType *)seriesTypeForIdentifier:(NSString *)identifier API_AVAILABLE(ios(11.0), watchos(4.0));
 + (HKWorkoutType *)workoutType;
 + (HKActivitySummaryType *)activitySummaryType API_AVAILABLE(ios(9.3), watchos(2.2));
++ (HKAudiogramSampleType *)audiogramSampleType API_AVAILABLE(ios(13.0), watchos(6.0));
 
 @end
 
@@ -62,6 +64,35 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
  */
 HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKSampleType : HKObjectType
+
+/*!
+ @property      isMaximumDurationRestricted
+ @abstract      Returns YES if the start and end date for samples of this type are restricted by a maximum duration.
+ */
+@property (nonatomic, readonly) BOOL isMaximumDurationRestricted;
+
+/*!
+ @property      maximumAllowedDuration
+ @abstract      When the duration is restricted for samples of this type, returns the maximum duration allowed,
+                calculated as the difference between end and start dates.
+ @discussion    Throws an exception if there is no maximum restriction on duration for samples of this type.
+ */
+@property (nonatomic, readonly) NSTimeInterval maximumAllowedDuration;
+
+/*!
+ @property      isMinimumDurationRestricted
+ @abstract      Returns YES if the start and end date for samples of this type are restricted by a minimum duration.
+ */
+@property (nonatomic, readonly) BOOL isMinimumDurationRestricted;
+
+/*!
+ @property      minimumAllowedDuration
+ @abstract      When the duration is restricted for samples of this type, returns the minimum duration allowed,
+                calculated as the difference between end and start dates.
+ @discussion    Throws an exception if there is no minimum restriction on duration for samples of this type.
+ */
+@property (nonatomic, readonly) NSTimeInterval minimumAllowedDuration;
+
 @end
 
 /*!
@@ -122,6 +153,7 @@ HK_EXTERN API_AVAILABLE(ios(11.0), watchos(4.0))
 @interface HKSeriesType : HKSampleType
 
 + (instancetype)workoutRouteType;
++ (instancetype)heartbeatSeriesType API_AVAILABLE(ios(13.0), watchos(6.0));
 
 @end
 
@@ -132,6 +164,15 @@ HK_EXTERN API_AVAILABLE(ios(11.0), watchos(4.0))
 HK_EXTERN API_AVAILABLE(ios(9.3), watchos(2.2))
 @interface HKActivitySummaryType : HKObjectType
 @end
+
+/*!
+ @class    HKAudiogramSampleType
+ @abstract Represents an audiogram sample.
+ */
+HK_EXTERN API_AVAILABLE(ios(13.0), watchos(6.0))
+@interface HKAudiogramSampleType : HKSampleType
+@end
+
 
 
 NS_ASSUME_NONNULL_END

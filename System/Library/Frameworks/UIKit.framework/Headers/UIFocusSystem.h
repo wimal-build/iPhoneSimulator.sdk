@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFocusSystem.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIFocusSystem.h>)
 //
 //  UIFocusSystem.h
 //  UIKit
@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIFocus.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// UIFocusSystem instances manage focus state within a part of the user interface. They are in charge of tracking the current focused item, as well as processing focus updates.
-NS_CLASS_AVAILABLE_IOS(11_0) @interface UIFocusSystem : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) @interface UIFocusSystem : NSObject
 
 /// The currently focused item in this focus system.
 @property (nonatomic, weak, readonly, nullable) id<UIFocusItem> focusedItem API_AVAILABLE(tvos(12.0), ios(12.0));

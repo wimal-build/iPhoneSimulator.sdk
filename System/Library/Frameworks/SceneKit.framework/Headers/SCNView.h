@@ -2,7 +2,7 @@
 //  SCNView.h
 //  SceneKit
 //
-//  Copyright © 2012-2018 Apple Inc. All rights reserved.
+//  Copyright © 2012-2019 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -20,16 +20,16 @@ typedef NSString * SCNViewOption NS_STRING_ENUM;
  @constant SCNViewOptionPreferredRenderingAPI Specifies the preferred rendering API to be used by the renderer.
  @discussion Pass it as the key in the options dictionary given to initWithFrame:options:. The value is a NSNumber wrapping a SCNRenderingAPI. You can also select the preferred rendering API directly from the SCNView inspector in InterfaceBuilder.
  */
-SCN_EXPORT SCNViewOption const SCNPreferredRenderingAPIKey API_AVAILABLE(macos(10.11), ios(9.0)) API_UNAVAILABLE(watchos);
+SCN_EXPORT SCNViewOption const SCNPreferredRenderingAPIKey API_AVAILABLE(macos(10.11), ios(9.0)) API_UNAVAILABLE(watchos, macCatalyst);
 
 /*!
- @constant SCNViewOptionPreferredDevice Specifies the preferred metal device to be used by the renderer.
+ @constant SCNViewOptionPreferredDevice Specifies the preferred Metal device to be used by the renderer.
  @discussion The value is directly a id <MTLDevice>.
  */
 SCN_EXPORT SCNViewOption const SCNPreferredDeviceKey API_AVAILABLE(macos(10.11), ios(9.0));
 
 /*!
- @constant SCNViewOptionPreferLowPowerDevice Specifies if the renderer should prefer a low power metal device.
+ @constant SCNViewOptionPreferLowPowerDevice Specifies if the renderer should prefer a low power Metal device.
  @discussion The value is a NSNumber wrapping a BOOL. Defaults to NO.
  */
 SCN_EXPORT SCNViewOption const SCNPreferLowPowerDeviceKey API_AVAILABLE(macos(10.11), ios(9.0));
@@ -145,12 +145,17 @@ SCN_EXPORT
  */
 @property(nonatomic) NSInteger preferredFramesPerSecond API_AVAILABLE(macos(10.12));
 
+
+#if SCN_ENABLE_OPENGL
+
 /*!
  @property eaglContext
  @abstract Specifies the EAGL context associated with the receiver.
  @discussion This property returns nil and has no effect if the current API is Metal.
  */
-@property(nonatomic, retain, nullable) EAGLContext *eaglContext;
+@property(nonatomic, retain, nullable) EAGLContext *eaglContext SCN_GL_DEPRECATED_IOS(8_0, 12_0); // SCN_GL_DEPRECATED(ios(8.0, 12.0), tvos(9.0, 12.0));
+
+#endif
 
 /*!
  @property antialiasingMode

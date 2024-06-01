@@ -5,9 +5,9 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMCameraControl.h>
 #import <HomeKit/HMCameraDefines.h>
+#import <HomeKit/HMDefines.h>
 
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @abstract This class can be used to control the stream from a camera.
  */
-API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCameraStreamControl : HMCameraControl
 
 /*!

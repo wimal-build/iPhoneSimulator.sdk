@@ -13,9 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @class ARAnchor;
 @class ARCamera;
 @class ARFrame;
+@class ARCollaborationData;
 @class ARWorldMap;
+@class ARRay;
+@class ARRaycastQuery;
+@class ARRaycastResult;
+@class ARTrackedRaycast;
+
 @protocol ARSessionDelegate;
-@protocol MTLTexture;
 
 /**
  Set of options for running the session.
@@ -29,7 +34,10 @@ typedef NS_OPTIONS(NSUInteger, ARSessionRunOptions) {
     ARSessionRunOptionResetTracking           = (1 << 0),
     
     /** The session will remove existing anchors. */
-    ARSessionRunOptionRemoveExistingAnchors   = (1 << 1)
+    ARSessionRunOptionRemoveExistingAnchors   = (1 << 1),
+    
+    /** The session will stop currently active tracked raycasts. */
+    ARSessionRunOptionStopTrackedRaycasts   = (1 << 2)
 } NS_SWIFT_NAME(ARSession.RunOptions);
 
 /**
@@ -37,6 +45,13 @@ typedef NS_OPTIONS(NSUInteger, ARSessionRunOptions) {
  */
 API_AVAILABLE(ios(11.0))
 @interface ARSession : NSObject
+
+/**
+ Unique identifier of the running session.
+ 
+ @discussion The identifier may change after calling runWithConfiguration.
+ */
+@property (atomic, strong, readonly) NSUUID *identifier API_AVAILABLE(ios(13.0));
 
 /**
  A delegate for receiving ARSession updates.
@@ -59,13 +74,18 @@ API_AVAILABLE(ios(11.0))
  */
 @property (nonatomic, copy, nullable, readonly) ARConfiguration *configuration;
 
+
+
+
 /**
  Runs the session with the provided configuration.
  @discussion Calling run on a session that has already started will
  transition immediately to using the new configuration.
  @param configuration The configuration to use.
  */
+
 - (void)runWithConfiguration:(ARConfiguration *)configuration NS_SWIFT_UNAVAILABLE("Use run(_:options:) instead");
+
 
 /**
  Runs the session with the provided configuration and options.
@@ -75,6 +95,7 @@ API_AVAILABLE(ios(11.0))
  @param configuration The configuration to use.
  @param options The run options to use.
  */
+
 - (void)runWithConfiguration:(ARConfiguration *)configuration options:(ARSessionRunOptions)options NS_SWIFT_NAME(run(_:options:));
 
 /**
@@ -89,20 +110,19 @@ API_AVAILABLE(ios(11.0))
  @discussion The anchor will be added in the next frame update.
  @param anchor The anchor to add.
  */
-- (void)addAnchor:(ARAnchor *)anchor NS_SWIFT_NAME(add(anchor:));
+- (void)addAnchor:(__kindof ARAnchor *)anchor NS_SWIFT_NAME(add(anchor:));
 
 /**
  Removes an anchor from the session.
  @discussion The anchor will be removed from subsequent frame updates.
  @param anchor The anchor to remove.
  */
-- (void)removeAnchor:(ARAnchor *)anchor NS_SWIFT_NAME(remove(anchor:));
+- (void)removeAnchor:(__kindof ARAnchor *)anchor NS_SWIFT_NAME(remove(anchor:));
 
 /**
- Sets the world origin of the session to be at the position and orientation
- specified by the provided transform.
- @param relativeTransform The rotation, translation and scale from the current world origin
- to the desired world origin.
+ Sets the world origin of the session to be at the position and orientation specified by the provided transform.
+ @param relativeTransform The rotation and translation from the current world origin to the desired world origin.
+ Any scale on the transform is ignored.
  */
 - (void)setWorldOrigin:(simd_float4x4)relativeTransform NS_SWIFT_NAME(setWorldOrigin(relativeTransform:)) API_AVAILABLE(ios(11.3));
 
@@ -138,8 +158,40 @@ API_AVAILABLE(ios(11.0))
                           completionHandler:(void (^)(ARReferenceObject * _Nullable referenceObject, NSError * _Nullable error))completionHandler
 NS_SWIFT_NAME(createReferenceObject(transform:center:extent:completionHandler:)) API_AVAILABLE(ios(12.0));
 
-@end
+#pragma mark - Raycasting
 
+/**
+ Perform a raycast.
+ @param query Raycast query used for raycasting.
+ @return List of raycast results, sorted from nearest to farthest (in distance from the camera). The results could be empty if raycast fails.
+ */
+- (NSArray<ARRaycastResult *> *)raycast:(ARRaycastQuery *)query API_AVAILABLE(ios(13.0));
+
+/**
+ Perform a tracked raycast.
+ @discussion The session performs continuous raycasting and calls the update handler with the updated results.
+ The ARTrackedRaycast object returned can be used to update the raycast with a new raycast query or stop raycasting.
+ @param query Raycast query used for raycasting.
+ @param updateHandler update handler where updated list of results, sorted from nearest to farthest (in distance from
+        the camera) are delivered. updateHandler will be called on session's delegate queue.
+ @return Tracked raycast object used to update or stop raycasting. This could be nil if the raycast fails or if the
+         configuration is not `ARWorldTrackingConfiguration` or its subclasses.
+ */
+- (nullable ARTrackedRaycast *)trackedRaycast:(ARRaycastQuery *)query updateHandler:(void (^)(NSArray<ARRaycastResult *> *))updateHandler API_AVAILABLE(ios(13.0));
+
+#pragma mark - Collaboration
+
+/**
+ Update session with collaboration data.
+ 
+ @discussion Use this to update the session with collaboration data received from other participants.
+ 
+ @param collaborationData Collaboration data for updating the session.
+ @see ARCollaborationData
+ */
+- (void)updateWithCollaborationData:(ARCollaborationData *)collaborationData API_AVAILABLE(ios(13.0));
+
+@end
 
 #pragma mark - ARSessionObserver
 
@@ -212,6 +264,17 @@ API_AVAILABLE(ios(11.0))
  */
 - (void)session:(ARSession *)session didOutputAudioSampleBuffer:(CMSampleBufferRef)audioSampleBuffer;
 
+/**
+ This is called when the session generated new collaboration data.
+ 
+ @discussion This data should be sent to all participants.
+ 
+ @param session The session that produced world tracking collaboration data.
+ @param data Collaboration data to be sent to participants.
+ @see ARCollaborationData
+ */
+- (void)session:(ARSession *)session didOutputCollaborationData:(ARCollaborationData *)data API_AVAILABLE(ios(13.0));
+
 @end
 
 #pragma mark - ARSessionDelegate
@@ -236,7 +299,7 @@ API_AVAILABLE(ios(11.0))
  @param session The session being run.
  @param anchors An array of added anchors.
  */
-- (void)session:(ARSession *)session didAddAnchors:(NSArray<ARAnchor*>*)anchors;
+- (void)session:(ARSession *)session didAddAnchors:(NSArray<__kindof ARAnchor*>*)anchors;
 
 /**
  This is called when anchors are updated.
@@ -244,7 +307,7 @@ API_AVAILABLE(ios(11.0))
  @param session The session being run.
  @param anchors An array of updated anchors.
  */
-- (void)session:(ARSession *)session didUpdateAnchors:(NSArray<ARAnchor*>*)anchors;
+- (void)session:(ARSession *)session didUpdateAnchors:(NSArray<__kindof ARAnchor*>*)anchors;
 
 /**
  This is called when anchors are removed from the session.
@@ -252,7 +315,18 @@ API_AVAILABLE(ios(11.0))
  @param session The session being run.
  @param anchors An array of removed anchors.
  */
-- (void)session:(ARSession *)session didRemoveAnchors:(NSArray<ARAnchor*>*)anchors;
+- (void)session:(ARSession *)session didRemoveAnchors:(NSArray<__kindof ARAnchor*>*)anchors;
+
+
+@end
+
+/**
+ A data source for an ARSession
+ */
+@protocol ARSessionProviding <NSObject>
+
+/// To ensure session changes are detected, Swift classes should mark this property as `@objc` and `dynamic`
+@property (readonly) ARSession *session;
 
 @end
 

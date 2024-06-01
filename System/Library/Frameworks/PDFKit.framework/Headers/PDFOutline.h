@@ -1,6 +1,6 @@
 //
 //  PDFOutline.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFOutline represents a node in an outline hierarchy, which is always constructed
 //  of these node types. A root PDFOutline node can have any number of children,

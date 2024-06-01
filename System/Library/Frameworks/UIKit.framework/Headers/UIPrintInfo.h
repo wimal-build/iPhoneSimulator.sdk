@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrintInfo.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPrintInfo.h>)
 //
 //  UIPrintInfo.h
 //  UIKit
@@ -16,23 +16,23 @@ typedef NS_ENUM(NSInteger, UIPrintInfoOutputType) {
     UIPrintInfoOutputGeneral,           // B&W or color, normal quality output for mixed text, graphics, and images
     UIPrintInfoOutputPhoto,             // B&W or color, best quality output for images
     UIPrintInfoOutputGrayscale,         // B&W content only
-    UIPrintInfoOutputPhotoGrayscale NS_ENUM_AVAILABLE_IOS(7_0),    // B&W only, best quality output for images
- } __TVOS_PROHIBITED;
+    UIPrintInfoOutputPhotoGrayscale API_AVAILABLE(ios(7.0)),    // B&W only, best quality output for images
+ } API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIPrintInfoOrientation) {
     UIPrintInfoOrientationPortrait,
     UIPrintInfoOrientationLandscape,
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIPrintInfoDuplex) {
     UIPrintInfoDuplexNone,
     UIPrintInfoDuplexLongEdge,       // flip back page along long edge (same orientation in portrait, flipped for landscape)
     UIPrintInfoDuplexShortEdge,      // flip back page along short edge (flipped orientation for portrait, same in landscape)
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
-NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIPrintInfo : NSObject <NSCopying, NSCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(4.2)) API_UNAVAILABLE(tvos) @interface UIPrintInfo : NSObject <NSCopying, NSCoding>
 
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 + (UIPrintInfo *)printInfo;
 + (UIPrintInfo *)printInfoWithDictionary:(nullable NSDictionary *)dictionary;

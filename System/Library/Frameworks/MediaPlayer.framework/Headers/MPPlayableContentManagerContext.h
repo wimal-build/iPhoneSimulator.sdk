@@ -5,8 +5,8 @@
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 
 /// MPPlayableContentManagerContext represents the current state of
 /// the playable content endpoint. A context is retrievable from an instance

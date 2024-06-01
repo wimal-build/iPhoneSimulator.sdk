@@ -11,3 +11,6 @@ Classes:
       - Selector: "replaceCredentialIdentitiesWithIdentities:completion:"
         MethodKind: Instance
         SwiftName: "replaceCredentialIdentities(with:completion:)"
+Globals:
+  - Name: ASAuthorizationAppleIDProviderCredentialRevokedNotification
+    SwiftName: ASAuthorizationAppleIDProvider.credentialRevokedNotification

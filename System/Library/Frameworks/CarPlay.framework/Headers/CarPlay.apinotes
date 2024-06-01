@@ -17,6 +17,16 @@ Classes:
     SwiftName: 'updateEstimates(_:for:)'
     MethodKind: Instance
 
+Protocols:
+- Name: CPTemplateApplicationSceneDelegate
+  Methods:
+  - Selector: 'templateApplicationScene:didConnectInterfaceController:toWindow:'
+    SwiftName: 'templateApplicationScene(_:didConnect:to:)'
+    MethodKind: Instance
+  - Selector: 'templateApplicationScene:didDisconnectInterfaceController:fromWindow:'
+    SwiftName: 'templateApplicationScene(_:didDisconnect:from:)'
+    MethodKind: Instance
+
 Tags:
 - Name: CPAlertActionStyle
   SwiftName: CPAlertAction.Style
@@ -28,3 +38,7 @@ Tags:
   SwiftName: CPNavigationAlert.DismissalContext
 - Name: CPTripPauseReason
   SwiftName: CPNavigationSession.PauseReason
+
+Globals:
+- Name: CPTemplateApplicationSceneSessionRoleApplication
+  SwiftName: carTemplateApplication

@@ -8,7 +8,9 @@
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#if !TARGET_OS_MACCATALYST
 #import <AddressBook/ABRecord.h>
+#endif
 #else
 #import <AppKit/AppKit.h>
 #import <AddressBook/ABAddressBookC.h>
@@ -102,19 +104,21 @@ NS_ASSUME_NONNULL_BEGIN
                    didSelectShippingMethod:(PKShippingMethod *)shippingMethod
                                 completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationViewController:didSelectShippingMethod:handler: instead to provide more granular errors", ios(8.0, 11.0));
 
+#if !TARGET_OS_MACCATALYST
 - (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
                   didSelectShippingAddress:(ABRecordRef)address
                                 completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods,
                                                      NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("ABRecordRef has been deprecated. Please migrate away from this delegate callback as soon as possible.", ios(8.0, 9.0));
+#endif
 
 - (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
                   didSelectShippingContact:(PKContact *)contact
                                 completion:(void (^)(PKPaymentAuthorizationStatus status, NSArray<PKShippingMethod *> *shippingMethods,
-                                                     NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationViewController:didSelectShippingContact:handler: instead to provide more granular errors", ios(8.0, 11.0));
+                                                     NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationViewController:didSelectShippingContact:handler: instead to provide more granular errors", ios(9.0, 11.0));
 
 - (void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller
                     didSelectPaymentMethod:(PKPaymentMethod *)paymentMethod
-                                completion:(void (^)(NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationViewController:didSelectPaymentMethod:handler: instead to provide more granular errors", ios(8.0, 11.0));
+                                completion:(void (^)(NSArray<PKPaymentSummaryItem *> *summaryItems))completion API_DEPRECATED("Use paymentAuthorizationViewController:didSelectPaymentMethod:handler: instead to provide more granular errors", ios(9.0, 11.0));
 
 @end
 

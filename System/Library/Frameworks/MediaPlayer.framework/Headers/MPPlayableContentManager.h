@@ -5,10 +5,10 @@
 //  Copyright (c) 2013 Apple Inc. All rights reserved.
 //
 
+#import <MediaPlayer/MediaPlayerDefines.h>
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MPPlayableContentDataSource.h>
 #import <MediaPlayer/MPPlayableContentDelegate.h>
-#import <MediaPlayer/MediaPlayerDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

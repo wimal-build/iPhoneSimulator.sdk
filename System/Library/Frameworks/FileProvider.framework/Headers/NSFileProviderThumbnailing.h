@@ -32,11 +32,14 @@ NS_ASSUME_NONNULL_BEGIN
  If the system decides that an in-flight thumbnail request is not needed anymore,
  it will call the returned @p NSProgress object's @p -cancel method,
  at which time the implementation should clean up any held resources.
+
+ The system will cache the thumbnail for the item, and the cache will be
+ invalidated when itemVersion.contentVersion changes.
  */
 - (NSProgress *)fetchThumbnailsForItemIdentifiers:(NSArray<NSFileProviderItemIdentifier> *)itemIdentifiers
                                     requestedSize:(CGSize)size
                     perThumbnailCompletionHandler:(void (^)(NSFileProviderItemIdentifier identifier, NSData * _Nullable imageData, NSError * _Nullable error))perThumbnailCompletionHandler
-                                completionHandler:(void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(fetchThumbnails(for:requestedSize:perThumbnailCompletionHandler:completionHandler:)) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+                                completionHandler:(void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(fetchThumbnails(for:requestedSize:perThumbnailCompletionHandler:completionHandler:)) API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos);
 
 @end
 

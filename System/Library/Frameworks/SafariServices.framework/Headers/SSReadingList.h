@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
     @class SSReadingList
     Provides an interface for adding to a user's Reading List.
 */
-SF_EXTERN API_AVAILABLE(ios(7.0))
+SF_EXTERN API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macCatalyst)
 @interface SSReadingList : NSObject
 
 /*!
@@ -49,10 +49,10 @@ SF_EXTERN API_AVAILABLE(ios(7.0))
 @end
 
 // domain for NSError
-SF_EXTERN NSString * const SSReadingListErrorDomain API_AVAILABLE(ios(7.0));
+SF_EXTERN NSString * const SSReadingListErrorDomain API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macCatalyst);
 
 typedef NS_ENUM(NSInteger, SSReadingListErrorCode) {
     SSReadingListErrorURLSchemeNotAllowed = 1,
-} API_AVAILABLE(ios(7.0));
+} API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macCatalyst);
 
 NS_ASSUME_NONNULL_END

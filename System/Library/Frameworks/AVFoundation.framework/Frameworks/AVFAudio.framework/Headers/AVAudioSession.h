@@ -8,11 +8,11 @@
 
 #ifdef __OBJC2__
 
-#import <AVFoundation/AVBase.h>
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDate.h> /* for NSTimeInterval */
 #import <Foundation/NSObject.h>
 #import <CoreAudio/CoreAudioTypes.h>
+#import <CoreAudioTypes/AudioSessionTypes.h>
 #import <os/availability.h>
 #import <os/base.h>
 
@@ -316,53 +316,67 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionIOType)
 
 /*!
 	@enum		AVAudioSessionRouteSharingPolicy
- 	@abstract   Starting in iOS 11, tvOS 11, and watchOS 5, the route sharing policy allows a session
+	@abstract   Starting in iOS 11, tvOS 11, and watchOS 5, the route sharing policy allows a session
 		to specify that its output audio should be routed somewhere other than the default system output,
 		when appropriate alternative routes are available.
 	@constant	AVAudioSessionRouteSharingPolicyDefault
 		Follow normal rules for routing audio output.
-	@constant	AVAudioSessionRouteSharingPolicyLongForm
+	@constant	AVAudioSessionRouteSharingPolicyLongFormAudio
 		Route output to the shared long-form audio output. A session whose primary use case is as a
 		music or podcast player may use this value to play to the same output as the built-in Music (iOS), 
 		Podcasts, or iTunes (macOS) applications. Typically applications that use this policy will also
 		want sign up for remote control events as documented in “Event Handling Guide for UIKit Apps” 
 		and will want to utilize MediaPlayer framework’s MPNowPlayingInfoCenter class. All applications
-		on the system that use the long-form route sharing policy will have their audio routed to the
+		on the system that use the long-form audio route sharing policy will have their audio routed to the
 		same location.
 		Apps running on watchOS using this policy will also be able to play audio in the background,
- 		as long as an eligible audio route can be activated. Apps running on watchOS using this policy
- 		must use -activateWithOptions:completionHandler: instead of -setActive:withOptions:error: in
-  		order to ensure	that the user will be given the opportunity to pick an appropriate audio route
- 		in cases where the system is unable to automatically pick the route.
+		as long as an eligible audio route can be activated. Apps running on watchOS using this policy
+		must use -activateWithOptions:completionHandler: instead of -setActive:withOptions:error: in
+		order to ensure that the user will be given the opportunity to pick an appropriate audio route
+		in cases where the system is unable to automatically pick the route.
+	@constant	AVAudioSessionRouteSharingPolicyLongForm
+		Deprecated. Replaced by AVAudioSessionRouteSharingPolicyLongFormAudio.
 	@constant	AVAudioSessionRouteSharingPolicyIndependent
 		Applications should not attempt to set this value directly. On iOS, this value will be set by
 		the system in cases where route picker UI is used to direct video to a wireless route.
+	@constant	AVAudioSessionRouteSharingPolicyLongFormVideo
+		Route output to the shared long-form video output. A session whose primary use case is as a
+		movie or other long-form video content player may use this value to play to the same output as
+		other long-form video content applications such as the built-in TV (iOS) application. Applications
+		that use this policy will also want to also set the AVInitialRouteSharingPolicy key
+		in their Info.plist to "LongFormVideo". All applications on the system that use the long-form video
+		route sharing policy will have their audio and video routed to the same location (e.g. AppleTV when
+		an AirPlay route is selected). Video content not using this route sharing policy will remain local
+		to the playback device even when long form video content is being routed to AirPlay.
 */
 typedef NS_ENUM(NSUInteger, AVAudioSessionRouteSharingPolicy)
 {
-	AVAudioSessionRouteSharingPolicyDefault			= 0,
-	AVAudioSessionRouteSharingPolicyLongForm		= 1,
-	AVAudioSessionRouteSharingPolicyIndependent		= 2,
+	AVAudioSessionRouteSharingPolicyDefault = 0,
+	AVAudioSessionRouteSharingPolicyLongFormAudio = 1,
+	AVAudioSessionRouteSharingPolicyLongForm API_DEPRECATED_WITH_REPLACEMENT("AVAudioSessionRouteSharingPolicyLongFormAudio", ios(11.0, 13.0), watchos(4.0, 6.0), tvos(11.0, 13.0)) API_UNAVAILABLE(macos) = AVAudioSessionRouteSharingPolicyLongFormAudio,
+	AVAudioSessionRouteSharingPolicyIndependent = 2,
+	AVAudioSessionRouteSharingPolicyLongFormVideo API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, tvos, macos) = 3,
 };
+
 
 /*!
  @enum AVAudioSessionPromptStyle values
  @abstract
-     The prompt style is a hint to sessions that use AVAudioSessionModeVoicePrompt to modify the type of
-     prompt they play in response to other audio activity on the system, such as Siri or phone calls.
-     Sessions that issue voice prompts are encouraged to pay attention to changes in the prompt style and
-     modify their prompts in response. Apple encourages the use of non-verbal prompts when the Short
-     style is requested.
+ The prompt style is a hint to sessions that use AVAudioSessionModeVoicePrompt to modify the type of
+ prompt they play in response to other audio activity on the system, such as Siri or phone calls.
+ Sessions that issue voice prompts are encouraged to pay attention to changes in the prompt style and
+ modify their prompts in response. Apple encourages the use of non-verbal prompts when the Short
+ style is requested.
  @constant AVAudioSessionPromptStyleNone
-     Indicates that another session is actively using microphone input and would be negatively impacted
-     by having prompts play at that time. For example if Siri is recognizing speech, having navigation or
-     exercise prompts play, could interfere with its ability to accurately recognize the user’s speech.
-     Client sessions should refrain from playing any prompts while the prompt style is None.
+ Indicates that another session is actively using microphone input and would be negatively impacted
+ by having prompts play at that time. For example if Siri is recognizing speech, having navigation or
+ exercise prompts play, could interfere with its ability to accurately recognize the user’s speech.
+ Client sessions should refrain from playing any prompts while the prompt style is None.
  @constant AVAudioSessionPromptStyleShort
-     Indicates one of three states: Siri is active but not recording, voicemail playback is active, or
-     voice call is active. Short, non-verbal versions of prompts should be used.
+ Indicates one of three states: Siri is active but not recording, voicemail playback is active, or
+ voice call is active. Short, non-verbal versions of prompts should be used.
  @constant AVAudioSessionPromptStyleNormal
-     Indicates that normal (long, verbal) versions of prompts may be used.
+ Indicates that normal (long, verbal) versions of prompts may be used.
  */
 typedef NS_ENUM(NSUInteger, AVAudioSessionPromptStyle)
 {
@@ -371,63 +385,8 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionPromptStyle)
     AVAudioSessionPromptStyleNormal = 'nrml',
 };
 
-/*!
-	@enum AVAudioSession error codes
-	@abstract   These are the error codes returned from the AVAudioSession API.
-	@constant   AVAudioSessionErrorCodeNone
-		Operation succeeded.
-	@constant   AVAudioSessionErrorCodeMediaServicesFailed
-		The app attempted to use the audio session during or after a Media Services failure.  App should
- 		wait for a AVAudioSessionMediaServicesWereResetNotification and then rebuild all its state.
-	@constant	AVAudioSessionErrorCodeIsBusy
- 		The app attempted to set its audio session inactive or change its AVAudioSessionIOType, but it is still actively playing and/or recording.
- 	@constant	AVAudioSessionErrorCodeIncompatibleCategory
- 		The app tried to perform an operation on a session but its category does not support it.
- 		For instance, if the app calls setPreferredInputNumberOfChannels: while in a playback-only category.
-	@constant	AVAudioSessionErrorCodeCannotInterruptOthers
-		The app's audio session is non-mixable and trying to go active while in the background.
- 		This is allowed only when the app is the NowPlaying app.
-	@constant	AVAudioSessionErrorCodeMissingEntitlement
-		The app does not have the required entitlements to perform an operation.
-	@constant	AVAudioSessionErrorCodeSiriIsRecording
- 		The app tried to do something with the audio session that is not allowed while Siri is recording.
- 	@constant	AVAudioSessionErrorCodeCannotStartPlaying
-		The app is not allowed to start recording and/or playing, usually because of a lack of audio key in
- 		its Info.plist.  This could also happen if the app has this key but uses a category that can't record 
- 		and/or play in the background (AVAudioSessionCategoryAmbient, AVAudioSessionCategorySoloAmbient, etc.).
-	@constant	AVAudioSessionErrorCodeCannotStartRecording
-		The app is not allowed to start recording, usually because it is starting a mixable recording from the
- 		background and is not an Inter-App Audio app.
-	@constant	AVAudioSessionErrorCodeBadParam
- 		An illegal value was used for a property.
-	@constant	AVAudioSessionErrorCodeInsufficientPriority
- 		The app was not allowed to set the audio category because another app (Phone, etc.) is controlling it.
-	@constant	AVAudioSessionErrorCodeResourceNotAvailable
-		The operation failed because the device does not have sufficient hardware resources to complete the action. 
-		For example, the operation requires audio input hardware, but the device has no audio input available.
-	@constant	AVAudioSessionErrorCodeUnspecified
- 		An unspecified error has occurred.
-*/
-
-typedef NS_ENUM(NSInteger, AVAudioSessionErrorCode)
-{
-	AVAudioSessionErrorCodeNone							=  0,
-	AVAudioSessionErrorCodeMediaServicesFailed			= 'msrv',			/* 0x6D737276, 1836282486	*/
-	AVAudioSessionErrorCodeIsBusy						= '!act',			/* 0x21616374, 560030580	*/
-	AVAudioSessionErrorCodeIncompatibleCategory			= '!cat',			/* 0x21636174, 560161140	*/
-	AVAudioSessionErrorCodeCannotInterruptOthers		= '!int',			/* 0x21696E74, 560557684	*/
-	AVAudioSessionErrorCodeMissingEntitlement			= 'ent?',			/* 0x656E743F, 1701737535	*/
-	AVAudioSessionErrorCodeSiriIsRecording				= 'siri',			/* 0x73697269, 1936290409	*/
-	AVAudioSessionErrorCodeCannotStartPlaying			= '!pla',			/* 0x21706C61, 561015905	*/
-	AVAudioSessionErrorCodeCannotStartRecording			= '!rec',			/* 0x21726563, 561145187	*/
-	AVAudioSessionErrorCodeBadParam						= -50,
-	AVAudioSessionErrorCodeInsufficientPriority			= '!pri',			/* 0x21707269, 561017449	*/
-	AVAudioSessionErrorCodeResourceNotAvailable			= '!res',			/* 0x21726573, 561145203	*/
-	AVAudioSessionErrorCodeUnspecified					= 'what'			/* 0x77686174, 2003329396	*/
-};
-
 #pragma mark -- AVAudioSession interface --
-OS_EXPORT API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
+API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
 @interface AVAudioSession : NSObject {
 @private
 	void *_impl;
@@ -448,12 +407,12 @@ OS_EXPORT API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos
 - (BOOL)setActive:(BOOL)active withOptions:(AVAudioSessionSetActiveOptions)options error:(NSError **)outError API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Asynchronously activate the session. This is relatively time consuming operation. The completion handler will be called when the activation completes or
- if an error occurs while attempting to activate the session. If the session is configured to use AVAudioSessionRouteSharingPolicyLongForm on watchOS, this method
+ if an error occurs while attempting to activate the session. If the session is configured to use AVAudioSessionRouteSharingPolicyLongFormAudio on watchOS, this method
  will also cause a route picker to be presented to the user in cases where an appropriate output route has not already been selected automatically.
- watchOS apps using AVAudioSessionRouteSharingPolicyLongForm should be prepared for this method to fail if no eligible audio route can be activated or if the user
+ watchOS apps using AVAudioSessionRouteSharingPolicyLongFormAudio should be prepared for this method to fail if no eligible audio route can be activated or if the user
  cancels the route picker view.
  */
-- (void)activateWithOptions:(AVAudioSessionActivationOptions)options completionHandler:(void (^)(BOOL activated, NSError * _Nullable error))handler API_AVAILABLE(watchos(5.0)) API_UNAVAILABLE(ios, tvos) API_UNAVAILABLE(macos);
+- (void)activateWithOptions:(AVAudioSessionActivationOptions)options completionHandler:(void (^)(BOOL activated, NSError * _Nullable error))handler API_AVAILABLE(watchos(5.0)) API_UNAVAILABLE(ios, tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 // Get the list of categories available on the device.  Certain categories may be unavailable on particular devices.  For example,
 // AVAudioSessionCategoryRecord will not be available on devices that have no support for audio input.
@@ -540,7 +499,13 @@ Note: This property is closely related to AVAudioSessionSilenceSecondaryAudioHin
 /* The prompt style is a hint to sessions using AVAudioSessionModeVoicePrompt to alter the type of prompts they issue in
  response to other audio activity on the system, such as Siri and phone calls. This property is key-value observable.
  */
-@property(readonly) AVAudioSessionPromptStyle promptStyle API_AVAILABLE(ios(12.2), watchos(5.2), tvos(12.2)) API_UNAVAILABLE(macos);
+@property(readonly) AVAudioSessionPromptStyle promptStyle API_AVAILABLE(ios(13.0), watchos(6.0), tvos(13.0)) API_UNAVAILABLE(macos);
+
+// Set allowHapticsAndSystemSoundsDuringRecording to YES in order to allow system sounds and haptics to play while the session is actively using audio input.
+// Default value is NO.
+- (BOOL)setAllowHapticsAndSystemSoundsDuringRecording:(BOOL)inValue error:(NSError **)outError API_AVAILABLE(ios(13.0), watchos(6.0), tvos(13.0)) API_UNAVAILABLE(macos);
+
+@property(readonly) BOOL allowHapticsAndSystemSoundsDuringRecording API_AVAILABLE(ios(13.0), watchos(6.0), tvos(13.0)) API_UNAVAILABLE(macos);
 
 @end
 
@@ -656,22 +621,22 @@ queried if the audio session category does not support them.  Each of these will
  In cases where the interruption is a consequence of the application being suspended, the info dictionary will contain
  AVAudioSessionInterruptionWasSuspendedKey, with the boolean value set to true.
  */
-AVF_EXPORT NSNotificationName const AVAudioSessionInterruptionNotification API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSNotificationName const AVAudioSessionInterruptionNotification API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Registered listeners will be notified when a route change has occurred.  Check the notification's userInfo dictionary for the
  route change reason and for a description of the previous audio route.
  */
-AVF_EXPORT NSNotificationName const AVAudioSessionRouteChangeNotification API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSNotificationName const AVAudioSessionRouteChangeNotification API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Registered listeners will be notified if the media server is killed.  In the event that the server is killed,
  take appropriate steps to handle requests that come in before the server resets.  See Technical Q&A QA1749.
  */
-AVF_EXPORT NSNotificationName const AVAudioSessionMediaServicesWereLostNotification API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSNotificationName const AVAudioSessionMediaServicesWereLostNotification API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Registered listeners will be notified when the media server restarts.  In the event that the server restarts,
  take appropriate steps to re-initialize any audio objects used by your application.  See Technical Q&A QA1749.
  */
-AVF_EXPORT NSNotificationName const AVAudioSessionMediaServicesWereResetNotification API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSNotificationName const AVAudioSessionMediaServicesWereResetNotification API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Registered listeners that are currently in the foreground and have active audio sessions will be notified 
  when primary audio from other applications starts and stops.  Check the notification's userInfo dictionary 
@@ -679,16 +644,16 @@ AVF_EXPORT NSNotificationName const AVAudioSessionMediaServicesWereResetNotifica
  Foreground applications may use this notification as a hint to enable or disable audio that is secondary
  to the functionality of the application. For more information, see the related property secondaryAudioShouldBeSilencedHint.
 */
-AVF_EXPORT NSNotificationName const AVAudioSessionSilenceSecondaryAudioHintNotification API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSNotificationName const AVAudioSessionSilenceSecondaryAudioHintNotification API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 #pragma mark -- Keys for NSNotification userInfo dictionaries --
 
 /* keys for AVAudioSessionInterruptionNotification */
 /* Value is an NSNumber representing an AVAudioSessionInterruptionType */
-AVF_EXPORT NSString *const AVAudioSessionInterruptionTypeKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSString *const AVAudioSessionInterruptionTypeKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Only present for end interruption events.  Value is of type AVAudioSessionInterruptionOptions.*/
-AVF_EXPORT NSString *const AVAudioSessionInterruptionOptionKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSString *const AVAudioSessionInterruptionOptionKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Only present in begin interruption events, where the interruption is a direct result of the application being suspended
 	by the operating sytem. Value is a boolean NSNumber, where a true value indicates that the interruption is the result
@@ -698,39 +663,39 @@ AVF_EXPORT NSString *const AVAudioSessionInterruptionOptionKey API_AVAILABLE(ios
 	being suspended. When the app starts running again, it will receive the notification that its session has been deactivated
 	by the system. Note that the notification is necessarily delayed in time, due to the fact that the application was suspended
 	at the time the session was deactivated by the system and the notification can only be delivered once the app is running again. */
-AVF_EXPORT NSString *const AVAudioSessionInterruptionWasSuspendedKey API_AVAILABLE(ios(10.3), watchos(2.3), tvos(10.3)) API_UNAVAILABLE(macos);
+extern NSString *const AVAudioSessionInterruptionWasSuspendedKey API_AVAILABLE(ios(10.3), watchos(2.3), tvos(10.3)) API_UNAVAILABLE(macos);
 
 /* keys for AVAudioSessionRouteChangeNotification */
 /* value is an NSNumber representing an AVAudioSessionRouteChangeReason */
-AVF_EXPORT NSString *const AVAudioSessionRouteChangeReasonKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSString *const AVAudioSessionRouteChangeReasonKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 /* value is AVAudioSessionRouteDescription * */
-AVF_EXPORT NSString *const AVAudioSessionRouteChangePreviousRouteKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSString *const AVAudioSessionRouteChangePreviousRouteKey API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* keys for AVAudioSessionSilenceSecondaryAudioHintNotification */
 /* value is an NSNumber representing an AVAudioSessionSilenceSecondaryAudioHintType */
-AVF_EXPORT NSString *const AVAudioSessionSilenceSecondaryAudioHintTypeKey API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern NSString *const AVAudioSessionSilenceSecondaryAudioHintTypeKey API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 #pragma mark -- Values for the category property --
 
 /*  Use this category for background sounds such as rain, car engine noise, etc.  
  Mixes with other music. */
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryAmbient API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategoryAmbient API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /*  Use this category for background sounds.  Other music will stop playing. */
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategorySoloAmbient API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategorySoloAmbient API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Use this category for music tracks.*/
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryPlayback API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategoryPlayback API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /*  Use this category when recording audio. */
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryRecord API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategoryRecord API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /*  Use this category when recording and playing back audio. */
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryPlayAndRecord API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategoryPlayAndRecord API_AVAILABLE(ios(3.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /*  Use this category when using a hardware codec or signal processor while
  not playing or recording audio. */
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryAudioProcessing API_DEPRECATED("No longer supported", ios(3.0, 10.0)) API_UNAVAILABLE(watchos, tvos) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategoryAudioProcessing API_DEPRECATED("No longer supported", ios(3.0, 10.0)) API_UNAVAILABLE(watchos, tvos) API_UNAVAILABLE(macos);
 
 /*  Use this category to customize the usage of available audio accessories and built-in audio hardware.
  For example, this category provides an application with the ability to use an available USB output 
@@ -745,7 +710,7 @@ AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryAudioProcessing AP
 	and AVAudioSessionPortBuiltInSpeaker.  
  Note that AVAudioSessionPortBuiltInSpeaker is only allowed to be used when there are no other eligible 
  outputs connected.  */
-AVF_EXPORT AVAudioSessionCategory const AVAudioSessionCategoryMultiRoute API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionCategory const AVAudioSessionCategoryMultiRoute API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 #pragma mark -- Values for the mode property --
 
@@ -755,91 +720,91 @@ use of audio within an application.  Available in iOS 5.0 and greater.
  */
 
 /* The default mode */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeDefault API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeDefault API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Only valid with AVAudioSessionCategoryPlayAndRecord.  Appropriate for Voice over IP
 (VoIP) applications.  Reduces the number of allowable audio routes to be only those
 that are appropriate for VoIP applications and may engage appropriate system-supplied
 signal processing.  Has the side effect of setting AVAudioSessionCategoryOptionAllowBluetooth */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeVoiceChat API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeVoiceChat API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Set by Game Kit on behalf of an application that uses a GKVoiceChat object; valid
  only with the AVAudioSessionCategoryPlayAndRecord category.
  Do not set this mode directly. If you need similar behavior and are not using
  a GKVoiceChat object, use AVAudioSessionModeVoiceChat instead. */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeGameChat API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeGameChat API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Only valid with AVAudioSessionCategoryPlayAndRecord or AVAudioSessionCategoryRecord.
  Modifies the audio routing options and may engage appropriate system-supplied signal processing. */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeVideoRecording API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeVideoRecording API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Appropriate for applications that wish to minimize the effect of system-supplied signal
 processing for input and/or output audio signals. */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeMeasurement API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeMeasurement API_AVAILABLE(ios(5.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Engages appropriate output signal processing for movie playback scenarios.  Currently
 only applied during playback over built-in speaker. */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeMoviePlayback API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeMoviePlayback API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Only valid with kAudioSessionCategory_PlayAndRecord. Reduces the number of allowable audio
 routes to be only those that are appropriate for video chat applications. May engage appropriate
 system-supplied signal processing.  Has the side effect of setting
 AVAudioSessionCategoryOptionAllowBluetooth and AVAudioSessionCategoryOptionDefaultToSpeaker. */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeVideoChat API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeVideoChat API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Appropriate for applications which play spoken audio and wish to be paused (via audio session interruption) rather than ducked
 if another app (such as a navigation app) plays a spoken audio prompt.  Examples of apps that would use this are podcast players and
 audio books.  For more information, see the related category option AVAudioSessionCategoryOptionInterruptSpokenAudioAndMixWithOthers. */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeSpokenAudio API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeSpokenAudio API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* Appropriate for applications which play audio using text to speech. Setting this mode allows for different routing behaviors when
 connected to certain audio devices such as CarPlay. An example of an app that would use this mode is a turn by turn navigation app that
 plays short prompts to the user. Typically, these same types of applications would also configure their session to use
 AVAudioSessionCategoryOptionDuckOthers and AVAudioSessionCategoryOptionInterruptSpokenAudioAndMixWithOthers */
-AVF_EXPORT AVAudioSessionMode const AVAudioSessionModeVoicePrompt API_AVAILABLE(ios(12.0), watchos(5.0), tvos(12.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionMode const AVAudioSessionModeVoicePrompt API_AVAILABLE(ios(12.0), watchos(5.0), tvos(12.0)) API_UNAVAILABLE(macos);
 
 #pragma mark -- constants for port types --
 
 /* input port types */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortLineIn       API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Line level input on a dock connector */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortBuiltInMic   API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Built-in microphone on an iOS device */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortHeadsetMic   API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Microphone on a wired headset.  Headset refers to an
+extern AVAudioSessionPort const AVAudioSessionPortLineIn       API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Line level input on a dock connector */
+extern AVAudioSessionPort const AVAudioSessionPortBuiltInMic   API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Built-in microphone on an iOS device */
+extern AVAudioSessionPort const AVAudioSessionPortHeadsetMic   API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Microphone on a wired headset.  Headset refers to an
 																				   accessory that has headphone outputs paired with a
 																				   microphone. */
 
 /* output port types */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortLineOut          API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Line level output on a dock connector */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortHeadphones       API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Headphone or headset output */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortBluetoothA2DP    API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output on a Bluetooth A2DP device */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortBuiltInReceiver  API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* The speaker you hold to your ear when on a phone call */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortBuiltInSpeaker   API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Built-in speaker on an iOS device */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortHDMI             API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output via High-Definition Multimedia Interface */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortAirPlay          API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output on a remote Air Play device */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortBluetoothLE	  API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output on a Bluetooth Low Energy device */
+extern AVAudioSessionPort const AVAudioSessionPortLineOut          API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Line level output on a dock connector */
+extern AVAudioSessionPort const AVAudioSessionPortHeadphones       API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Headphone or headset output */
+extern AVAudioSessionPort const AVAudioSessionPortBluetoothA2DP    API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output on a Bluetooth A2DP device */
+extern AVAudioSessionPort const AVAudioSessionPortBuiltInReceiver  API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* The speaker you hold to your ear when on a phone call */
+extern AVAudioSessionPort const AVAudioSessionPortBuiltInSpeaker   API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Built-in speaker on an iOS device */
+extern AVAudioSessionPort const AVAudioSessionPortHDMI             API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output via High-Definition Multimedia Interface */
+extern AVAudioSessionPort const AVAudioSessionPortAirPlay          API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output on a remote Air Play device */
+extern AVAudioSessionPort const AVAudioSessionPortBluetoothLE	  API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Output on a Bluetooth Low Energy device */
 
 /* port types that refer to either input or output */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortBluetoothHFP API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Input or output on a Bluetooth Hands-Free Profile device */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortUSBAudio     API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Input or output on a Universal Serial Bus device */
-AVF_EXPORT AVAudioSessionPort const AVAudioSessionPortCarAudio     API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Input or output via Car Audio */
+extern AVAudioSessionPort const AVAudioSessionPortBluetoothHFP API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Input or output on a Bluetooth Hands-Free Profile device */
+extern AVAudioSessionPort const AVAudioSessionPortUSBAudio     API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Input or output on a Universal Serial Bus device */
+extern AVAudioSessionPort const AVAudioSessionPortCarAudio     API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos); /* Input or output via Car Audio */
 
 #pragma mark -- constants for data source locations, orientations, polar patterns, and channel roles --
 
 /* The following represent the location of a data source on an iOS device. */
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionLocationUpper					API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionLocationLower					API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionLocationUpper					API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionLocationLower					API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* The following represent the orientation or directionality of a data source on an iOS device. */
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionOrientationTop					API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionOrientationBottom				API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionOrientationFront				API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionOrientationBack				API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionOrientationLeft				API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionOrientationRight				API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionOrientationTop					API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionOrientationBottom				API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionOrientationFront				API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionOrientationBack				API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionOrientationLeft				API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionOrientationRight				API_AVAILABLE(ios(8.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 /* The following represent the possible polar patterns for a data source on an iOS device. */
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionPolarPatternOmnidirectional	API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionPolarPatternCardioid			API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
-AVF_EXPORT AVAudioSessionLocation const AVAudioSessionPolarPatternSubcardioid		API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionPolarPatternOmnidirectional	API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionPolarPatternCardioid			API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+extern AVAudioSessionLocation const AVAudioSessionPolarPatternSubcardioid		API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 
 #pragma mark -- helper class interfaces --
 
@@ -848,7 +813,7 @@ AVF_EXPORT AVAudioSessionLocation const AVAudioSessionPolarPatternSubcardioid		A
  AudioQueues, AURemoteIO and AUVoiceIO instances can be assigned to communicate with specific 
  hardware channels by setting an array of <port UID, channel index> pairs.
  */
-OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
+API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
 @interface AVAudioSessionChannelDescription : NSObject {
 @private
 	void *_impl;
@@ -861,7 +826,7 @@ OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos
 
 @end
 
-OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
+API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
 @interface AVAudioSessionPortDescription : NSObject {
 @private
 	void *_impl;
@@ -906,7 +871,7 @@ not result in an immediate route reconfiguration.  Use AVAudioSession's setPrefe
 
 @end
 
-OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
+API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
 @interface AVAudioSessionRouteDescription : NSObject {
 @private
 	void *_impl;
@@ -917,7 +882,7 @@ OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos
 @property (readonly) NSArray<AVAudioSessionPortDescription *> *outputs API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 @end
 
-OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
+API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos) 
 @interface AVAudioSessionDataSourceDescription : NSObject {
 @private
 	void *_impl;
@@ -970,19 +935,19 @@ OS_EXPORT API_AVAILABLE(ios(6.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos
 @property (assign, nullable) id<AVAudioSessionDelegate> delegate API_DEPRECATED("No longer supported", ios(4.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
 
 /* AVAudioSession is a singleton. Use +sharedInstance instead of -init */
-- (instancetype)init API_DEPRECATED_WITH_REPLACEMENT("+sharedInstance", ios(3.0, 10.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
+- (instancetype)init API_DEPRECATED_WITH_REPLACEMENT("+sharedInstance", ios(3.0, 10.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst);
 
-- (BOOL)setActive:(BOOL)active withFlags:(NSInteger)flags error:(NSError **)outError API_DEPRECATED_WITH_REPLACEMENT("-setActive:withOptions:error:", ios(4.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
+- (BOOL)setActive:(BOOL)active withFlags:(NSInteger)flags error:(NSError **)outError API_DEPRECATED_WITH_REPLACEMENT("-setActive:withOptions:error:", ios(4.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst);
 
 //isInputAvailable
-@property (readonly) BOOL inputIsAvailable API_DEPRECATED_WITH_REPLACEMENT("isInputAvailable", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos); /* is input hardware available or not? */
+@property (readonly) BOOL inputIsAvailable API_DEPRECATED_WITH_REPLACEMENT("isInputAvailable", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst); /* is input hardware available or not? */
 
 /* deprecated.  Use the corresponding properties without "Hardware" in their names. */
-@property (readonly) double currentHardwareSampleRate API_DEPRECATED_WITH_REPLACEMENT("sampleRate", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
-@property (readonly) NSInteger currentHardwareInputNumberOfChannels API_DEPRECATED_WITH_REPLACEMENT("inputNumberOfChannels", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
-@property (readonly) NSInteger currentHardwareOutputNumberOfChannels API_DEPRECATED_WITH_REPLACEMENT("outputNumberOfChannels", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
-- (BOOL)setPreferredHardwareSampleRate:(double)sampleRate error:(NSError **)outError API_DEPRECATED_WITH_REPLACEMENT("setPreferredSampleRate:error:", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
-@property (readonly) double preferredHardwareSampleRate API_DEPRECATED_WITH_REPLACEMENT("preferredSampleRate", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos);
+@property (readonly) double currentHardwareSampleRate API_DEPRECATED_WITH_REPLACEMENT("sampleRate", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst);
+@property (readonly) NSInteger currentHardwareInputNumberOfChannels API_DEPRECATED_WITH_REPLACEMENT("inputNumberOfChannels", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst);
+@property (readonly) NSInteger currentHardwareOutputNumberOfChannels API_DEPRECATED_WITH_REPLACEMENT("outputNumberOfChannels", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst);
+- (BOOL)setPreferredHardwareSampleRate:(double)sampleRate error:(NSError **)outError API_DEPRECATED_WITH_REPLACEMENT("setPreferredSampleRate:error:", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos,macCatalyst);
+@property (readonly) double preferredHardwareSampleRate API_DEPRECATED_WITH_REPLACEMENT("preferredSampleRate", ios(3.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos, macCatalyst);
 
 @end
 
@@ -1016,10 +981,6 @@ enum {
  flags for use when calling setActive:withFlags:error: */
 enum {
 	AVAudioSessionSetActiveFlags_NotifyOthersOnDeactivation API_DEPRECATED_WITH_REPLACEMENT("AVAudioSessionSetActiveOptions", ios(4.0, 6.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED API_UNAVAILABLE(macos) = 1
-};
-
-enum {
-	AVAudioSessionErrorInsufficientPriority API_DEPRECATED_WITH_REPLACEMENT("AVAudioSessionErrorCodeInsufficientPriority", ios(7.0, 12.0)) API_UNAVAILABLE(macos) = AVAudioSessionErrorCodeInsufficientPriority
 };
 
 NS_ASSUME_NONNULL_END

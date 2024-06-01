@@ -1,5 +1,5 @@
 /*	Foundation.h
-	Copyright (c) 1994-2018, Apple Inc. All rights reserved.
+	Copyright (c) 1994-2019, Apple Inc. All rights reserved.
 */
 
 
@@ -27,6 +27,8 @@
 #import <Foundation/NSMeasurementFormatter.h>
 #import <Foundation/NSPersonNameComponents.h>
 #import <Foundation/NSPersonNameComponentsFormatter.h>
+#import <Foundation/NSRelativeDateTimeFormatter.h>
+#import <Foundation/NSListFormatter.h>
 #import <Foundation/NSDecimal.h>
 #import <Foundation/NSDecimalNumber.h>
 #import <Foundation/NSDictionary.h>
@@ -98,7 +100,7 @@
 
 #import <Foundation/FoundationErrors.h>
 
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)) || (TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)
+#if TARGET_OS_OSX || TARGET_OS_IPHONE
 
 #import <Foundation/NSAttributedString.h>
 #import <Foundation/NSByteCountFormatter.h>
@@ -128,7 +130,7 @@
 #import <Foundation/NSUUID.h>
 #endif
 
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)) || 0
+#if TARGET_OS_OSX
 
 #import <Foundation/NSArchiver.h>
 #import <Foundation/NSBackgroundActivityScheduler.h>
@@ -153,7 +155,7 @@
 
 #endif
 
-#if (TARGET_OS_MAC && !(TARGET_OS_EMBEDDED || TARGET_OS_IPHONE))
+#if TARGET_OS_OSX
 
 #import <Foundation/NSAffineTransform.h>
 #import <Foundation/NSAppleEventDescriptor.h>

@@ -1,10 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D3F92F6D-990B-34A3-942E-5B61495D66E7', 'x86_64: E76744B3-E9C0-3EA1-BEF8-FDBB98A531F3' ]
+uuids:           [ 'i386: D3F92F6D-990B-34A3-942E-5B61495D66E7', 'x86_64: 8B167AC6-CE9A-3693-82A2-9813BD35CBA6' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+install-name:    '/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI'
 current-version: 69
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _MIDISetNotificationRunLoop ]
@@ -48,16 +47,17 @@ exports:
                        _kMIDIPropertyManufacturer, _kMIDIPropertyMaxReceiveChannels, 
                        _kMIDIPropertyMaxSysExSpeed, _kMIDIPropertyMaxTransmitChannels, 
                        _kMIDIPropertyModel, _kMIDIPropertyName, _kMIDIPropertyNameConfiguration, 
-                       _kMIDIPropertyOffline, _kMIDIPropertyPanDisruptsStereo, _kMIDIPropertyPrivate, 
-                       _kMIDIPropertyReceiveChannels, _kMIDIPropertyReceivesBankSelectLSB, 
-                       _kMIDIPropertyReceivesBankSelectMSB, _kMIDIPropertyReceivesClock, 
-                       _kMIDIPropertyReceivesMTC, _kMIDIPropertyReceivesNotes, _kMIDIPropertyReceivesProgramChanges, 
-                       _kMIDIPropertySingleRealtimeEntity, _kMIDIPropertySupportsGeneralMIDI, 
-                       _kMIDIPropertySupportsMMC, _kMIDIPropertySupportsShowControl, 
-                       _kMIDIPropertyTransmitChannels, _kMIDIPropertyTransmitsBankSelectLSB, 
-                       _kMIDIPropertyTransmitsBankSelectMSB, _kMIDIPropertyTransmitsClock, 
-                       _kMIDIPropertyTransmitsMTC, _kMIDIPropertyTransmitsNotes, 
-                       _kMIDIPropertyTransmitsProgramChanges, _kMIDIPropertyUniqueID ]
+                       _kMIDIPropertyNameConfigurationDictionary, _kMIDIPropertyOffline, 
+                       _kMIDIPropertyPanDisruptsStereo, _kMIDIPropertyPrivate, _kMIDIPropertyReceiveChannels, 
+                       _kMIDIPropertyReceivesBankSelectLSB, _kMIDIPropertyReceivesBankSelectMSB, 
+                       _kMIDIPropertyReceivesClock, _kMIDIPropertyReceivesMTC, _kMIDIPropertyReceivesNotes, 
+                       _kMIDIPropertyReceivesProgramChanges, _kMIDIPropertySingleRealtimeEntity, 
+                       _kMIDIPropertySupportsGeneralMIDI, _kMIDIPropertySupportsMMC, 
+                       _kMIDIPropertySupportsShowControl, _kMIDIPropertyTransmitChannels, 
+                       _kMIDIPropertyTransmitsBankSelectLSB, _kMIDIPropertyTransmitsBankSelectMSB, 
+                       _kMIDIPropertyTransmitsClock, _kMIDIPropertyTransmitsMTC, 
+                       _kMIDIPropertyTransmitsNotes, _kMIDIPropertyTransmitsProgramChanges, 
+                       _kMIDIPropertyUniqueID ]
     objc-classes:    [ BLEMIDIAccessor, MIDICIProfile, MIDICIProfileState, MIDICISession, 
                        MIDINetworkConnection, MIDINetworkHost, MIDINetworkSession ]
 ...

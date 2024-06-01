@@ -6,15 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #if TARGET_OS_IPHONE
 #import <UIKit/UIViewController.h>
 #else
 #import <AppKit/NSViewController.h>
 #endif
 
-#import <GameController/GameControllerExtern.h>
-#import <GameController/GCControllerElement.h>
+#import <GameController/GCExtern.h>
 
+#import <GameController/GCControllerElement.h>
 #import <GameController/GCControllerAxisInput.h>
 #import <GameController/GCControllerButtonInput.h>
 #import <GameController/GCControllerDirectionPad.h>
@@ -31,3 +32,4 @@
 #import <GameController/GCMicroGamepadSnapshot.h>
 
 #import <GameController/GCController.h>
+#import <GameController/GCEventViewController.h>

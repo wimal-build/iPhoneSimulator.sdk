@@ -39,6 +39,7 @@ HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceSwimmin
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierSwimmingStrokeCount API_AVAILABLE(ios(10.0), watchos(3.0));        // Scalar(Count),               Cumulative
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierVO2Max API_AVAILABLE(ios(11.0), watchos(4.0));                     // ml/(kg*min)                  Discrete
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceDownhillSnowSports API_AVAILABLE(ios(11.2), watchos(4.2)); // Length,                      Cumulative
+HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleStandTime API_AVAILABLE(ios(13.0), watchos(6.0));             // Time,                        Cumulative
 
 // Vitals
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeartRate API_AVAILABLE(ios(8.0), watchos(2.0));                   // Scalar(Count)/Time,          Discrete
@@ -66,6 +67,8 @@ HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBloodAlcoholCon
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierForcedVitalCapacity API_AVAILABLE(ios(8.0), watchos(2.0));         // Volume,                      Discrete
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierForcedExpiratoryVolume1 API_AVAILABLE(ios(8.0), watchos(2.0));     // Volume,                      Discrete
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierPeakExpiratoryFlowRate API_AVAILABLE(ios(8.0), watchos(2.0));      // Volume/Time,                 Discrete
+HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierEnvironmentalAudioExposure API_AVAILABLE(ios(13.0), watchos(6.0)); // Pressure,                    Cumulative
+HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeadphoneAudioExposure API_AVAILABLE(ios(13.0), watchos(6.0));     // Pressure,                    Cumulative
 
 // Nutrition
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryFatTotal API_AVAILABLE(ios(8.0), watchos(2.0));             // Mass,   Cumulative
@@ -128,6 +131,8 @@ HK_EXTERN HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMindfulSession 
 HK_EXTERN HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHighHeartRateEvent API_AVAILABLE(ios(12.2), watchos(5.2));         // HKCategoryValue
 HK_EXTERN HKCategoryTypeIdentifier const HKCategoryTypeIdentifierLowHeartRateEvent API_AVAILABLE(ios(12.2), watchos(5.2));          // HKCategoryValue
 HK_EXTERN HKCategoryTypeIdentifier const HKCategoryTypeIdentifierIrregularHeartRhythmEvent API_AVAILABLE(ios(12.2), watchos(5.2));  // HKCategoryValue
+HK_EXTERN HKCategoryTypeIdentifier const HKCategoryTypeIdentifierAudioExposureEvent API_AVAILABLE(ios(13.0), watchos(6.0));         // HKCategoryValueAudioExposureEvent
+HK_EXTERN HKCategoryTypeIdentifier const HKCategoryTypeIdentifierToothbrushingEvent API_AVAILABLE(ios(13.0), watchos(6.0));         // HKCategoryValue
 
 /*--------------------------------------*/
 /*   HKCharacteristicType Identifiers   */
@@ -169,5 +174,6 @@ HK_EXTERN NSString * const HKWorkoutTypeIdentifier API_AVAILABLE(ios(8.0), watch
 /*--------------------------------*/
 
 HK_EXTERN NSString * const HKWorkoutRouteTypeIdentifier API_AVAILABLE(ios(11.0), watchos(4.0));
+HK_EXTERN NSString * const HKDataTypeIdentifierHeartbeatSeries API_AVAILABLE(ios(13.0), watchos(6.0));
 
 NS_ASSUME_NONNULL_END

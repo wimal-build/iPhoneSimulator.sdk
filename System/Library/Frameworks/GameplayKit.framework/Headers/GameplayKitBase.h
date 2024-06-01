@@ -19,6 +19,9 @@
 #define GK_EXPORT extern __attribute__((visibility ("default")))
 #endif
 
+//Visibility
+#define GK_DEFAULT __attribute__((visibility ("default")))
+
 //Availability
 #define GK_BASE_AVAILABILITY NS_CLASS_AVAILABLE(10_11, 9_0)
 #define GK_BASE_AVAILABILITY_2 NS_CLASS_AVAILABLE(10_12, 10_0)

@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPopoverController.h>)
 //
 //  UIPopoverController.h
 //  UIKit
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol UIPopoverControllerDelegate;
 
 
-NS_CLASS_DEPRECATED_IOS(3_2, 9_0, "UIPopoverController is deprecated. Popovers are now implemented as UIViewController presentations. Use a modal presentation style of UIModalPresentationPopover and UIPopoverPresentationController.")
+UIKIT_EXTERN API_DEPRECATED("UIPopoverController is deprecated. Popovers are now implemented as UIViewController presentations. Use a modal presentation style of UIModalPresentationPopover and UIPopoverPresentationController.", ios(3.2, 9.0))
 @interface UIPopoverController : NSObject <UIAppearanceContainer> {}
 
 /* The view controller provided becomes the content view controller for the UIPopoverController. This is the designated initializer for UIPopoverController.
@@ -67,15 +67,15 @@ NS_CLASS_DEPRECATED_IOS(3_2, 9_0, "UIPopoverController is deprecated. Popovers a
 
 /* Set popover background color. Set to nil to use default background color. Default is nil.
  */
-@property (nullable, nonatomic, copy) UIColor *backgroundColor NS_AVAILABLE_IOS(7_0);
+@property (nullable, nonatomic, copy) UIColor *backgroundColor API_AVAILABLE(ios(7.0));
 
 /* Clients may wish to change the available area for popover display. The default implementation of this method always returns insets which define 10 points from the edges of the display, and presentation of popovers always accounts for the status bar. The rectangle being inset is always expressed in terms of the current device orientation; (0, 0) is always in the upper-left of the device. This may require insets to change on device rotation.
  */
-@property (nonatomic, readwrite) UIEdgeInsets popoverLayoutMargins NS_AVAILABLE_IOS(5_0);
+@property (nonatomic, readwrite) UIEdgeInsets popoverLayoutMargins API_AVAILABLE(ios(5.0));
 
 /* Clients may customize the popover background chrome by providing a class which subclasses `UIPopoverBackgroundView` and which implements the required instance and class methods on that class.
  */
-@property (nullable, nonatomic, readwrite, strong) Class popoverBackgroundViewClass NS_AVAILABLE_IOS(5_0);
+@property (nullable, nonatomic, readwrite, strong) Class popoverBackgroundViewClass API_AVAILABLE(ios(5.0));
 
 @end
 
@@ -84,15 +84,15 @@ NS_CLASS_DEPRECATED_IOS(3_2, 9_0, "UIPopoverController is deprecated. Popovers a
 
 /* Called on the delegate when the popover controller will dismiss the popover. Return NO to prevent the dismissal of the view.
  */
-- (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController NS_DEPRECATED_IOS(3_2, 9_0);
+- (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController API_DEPRECATED("", ios(3.2, 9.0));
 
 /* Called on the delegate when the user has taken action to dismiss the popover. This is not called when -dismissPopoverAnimated: is called directly.
  */
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController NS_DEPRECATED_IOS(3_2, 9_0);
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController API_DEPRECATED("", ios(3.2, 9.0));
 
 /* -popoverController:willRepositionPopoverToRect:inView: is called on your delegate when the popover may require a different view or rectangle
  */
-- (void)popoverController:(UIPopoverController *)popoverController willRepositionPopoverToRect:(inout CGRect *)rect inView:(inout UIView * __nonnull * __nonnull)view NS_DEPRECATED_IOS(7_0,9_0);
+- (void)popoverController:(UIPopoverController *)popoverController willRepositionPopoverToRect:(inout CGRect *)rect inView:(inout UIView * __nonnull * __nonnull)view API_DEPRECATED("", ios(7.0, 9.0));
 
 @end
 

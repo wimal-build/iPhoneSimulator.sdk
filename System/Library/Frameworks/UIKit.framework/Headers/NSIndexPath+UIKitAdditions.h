@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSIndexPath+UIKitAdditions.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/NSIndexPath+UIKitAdditions.h>)
 //
 //  NSIndexPath+UIKitAdditions.h
 //  UIKit
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSIndexPath (UIKitAdditions)
 
 + (instancetype)indexPathForRow:(NSInteger)row inSection:(NSInteger)section;
-+ (instancetype)indexPathForItem:(NSInteger)item inSection:(NSInteger)section NS_AVAILABLE_IOS(6_0);
++ (instancetype)indexPathForItem:(NSInteger)item inSection:(NSInteger)section API_AVAILABLE(ios(6.0));
 
 // Returns the index at position 0.
 @property (nonatomic, readonly) NSInteger section;
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Returns the index at position 1.
 @property (nonatomic, readonly) NSInteger row;
 // Returns the index at position 1 if it exists, otherwise returns NSNotFound.
-@property (nonatomic, readonly) NSInteger item NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, readonly) NSInteger item API_AVAILABLE(ios(6.0));
 
 @end
 

@@ -45,6 +45,13 @@ API_AVAILABLE(ios(11.0))
 @property (nonatomic, nullable, readonly) NSString *name API_AVAILABLE(ios(12.0));
 
 /**
+ Identifier of the session that owns the anchor.
+ 
+ @discussion The session identifier will be assigned to anchor when added to the session.
+ */
+@property (nonatomic, nullable, readonly) NSUUID *sessionIdentifier API_AVAILABLE(ios(13.0));
+
+/**
  The transformation matrix that defines the anchor’s rotation, translation and scale in world coordinates.
  */
 @property (nonatomic, readonly) simd_float4x4 transform;

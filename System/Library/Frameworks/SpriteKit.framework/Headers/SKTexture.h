@@ -44,20 +44,20 @@ SK_EXPORT @interface SKTexture : NSObject <NSCopying, NSSecureCoding>
  Create a texture containing directional noise. The RGBA values in this
  texture can be used as a normal map or as direction possibly with length. XYZ are a three dimensional direction, and A is a magnitude.
  
- @param rect the size of the resulting texture.
+ @param size the size of the resulting texture.
  @param smoothness how similar neighboring pixels are. A value of zero is like static, one is smooth.
  */
-+ (instancetype)textureVectorNoiseWithSmoothness:(CGFloat)smoothness size:(CGSize)size NS_AVAILABLE(10_10, 8_0);
++ (instancetype)textureVectorNoiseWithSmoothness:(CGFloat)smoothness size:(CGSize)size API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /**
  Create a texture containing colored noise. The noise texture is tileable with itself.
  
- @param rect the size of the resulting texture.
+ @param size the size of the resulting texture.
  @param smoothness how similar neighboring pixels are. A value of zero is like static, one is smooth.
  @param grayscale if YES, RGB and A will all be the same. If no, RGB and A will all be different. A is not pre-multiplied, because the intent is that if you read a texel in a shader, all four values will be exactly the same value if grayscale, or four different, uncorrelated values if not grayscale.
  */
-+ (instancetype)textureNoiseWithSmoothness:(CGFloat)smoothness size:(CGSize)size grayscale:(BOOL)grayscale NS_AVAILABLE(10_10, 8_0);
++ (instancetype)textureNoiseWithSmoothness:(CGFloat)smoothness size:(CGSize)size grayscale:(BOOL)grayscale API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /**
@@ -107,7 +107,7 @@ SK_EXPORT @interface SKTexture : NSObject <NSCopying, NSSecureCoding>
 /**
  Create new texture by generating a normal map texture.
   */
-- (instancetype)textureByGeneratingNormalMap NS_AVAILABLE(10_10, 8_0);
+- (instancetype)textureByGeneratingNormalMap API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /**
@@ -116,7 +116,7 @@ SK_EXPORT @interface SKTexture : NSObject <NSCopying, NSSecureCoding>
  @param smoothness the smooth level of the generated normal map.
  @param contrast  the scale applied to the generated normal map.
  */
-- (instancetype)textureByGeneratingNormalMapWithSmoothness:(CGFloat)smoothness contrast:(CGFloat)contrast NS_AVAILABLE(10_10, 8_0);
+- (instancetype)textureByGeneratingNormalMapWithSmoothness:(CGFloat)smoothness contrast:(CGFloat)contrast API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /**
  Used to choose the area of the texture you want to display. The origin and size should both be in the range 0.0 - 1.0, values outside of this range produces unpredictable results. Defaults to the entire texture {(0,0) (1,1)}.
@@ -143,13 +143,13 @@ SK_EXPORT @interface SKTexture : NSObject <NSCopying, NSSecureCoding>
 /**
  Convert the current SKTexture into a CGImageRef object
  */
-- (CGImageRef)CGImage CF_RETURNS_RETAINED NS_AVAILABLE(10_11, 9_0);
+- (CGImageRef)CGImage CF_RETURNS_RETAINED API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /**
  Start a texture preload operation on an array of textures
  
  @param textures an array of SKTextures to be preloaded
- @param completionhandler will be called upon the preload completion
+ @param completionHandler will be called upon the preload completion
  
  */
 + (void)preloadTextures:(NSArray<SKTexture*> *)textures withCompletionHandler:(void(^)(void))completionHandler;

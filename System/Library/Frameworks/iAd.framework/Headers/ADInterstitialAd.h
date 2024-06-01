@@ -12,9 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma clang system_header
 
-#define IAD_DEPRECATED_IOS_MSG(_iosIntro, _iosDep, _msg) \
-    __OSX_AVAILABLE_BUT_DEPRECATED_MSG(__MAC_NA, __MAC_NA, __IPHONE_##_iosIntro, __IPHONE_##_iosDep, _msg)
-
+NS_CLASS_DEPRECATED(10_14, 10_14, 4_3, 10_0)
 @protocol ADInterstitialAdDelegate;
 
 /*!
@@ -37,7 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
  * Note that using interstitial ads on iPhones running iOS < 7.0 will cause an
  * exception to be thrown.
  */
-NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
+
+NS_CLASS_DEPRECATED(10_14, 10_14, 4_3, 10_0)
+@interface ADInterstitialAd : NSObject
 
 /*!
  * @property delegate
@@ -120,13 +120,15 @@ NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
  * User dismissal of either the interstitial or the ad unit to which it is
  * linked will restore control to the application immediately.
  */
-- (void)presentFromViewController:(UIViewController *)viewController IAD_DEPRECATED_IOS_MSG(4_3, 7_0, "Use -[UIViewController requestInterstitialAdPresentation] and related APIs documented in <iAd/UIViewControlleriAdAdditions.h>.");
+- (void)presentFromViewController:(UIViewController *)viewController;
 
 @end
 
 /*!
  * @protocol ADInterstitialAdDelegate
  */
+
+NS_CLASS_DEPRECATED(10_14, 10_14, 4_3, 10_0)
 @protocol ADInterstitialAdDelegate <NSObject>
 
 /*!
@@ -201,12 +203,10 @@ NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
 
 @end
 
+NS_CLASS_DEPRECATED(10_14, 10_14, 12_0, 13_0)
 @interface ADInterstitialAdPresentationViewController : UIViewController
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (id)initForInterstitialAd:(ADInterstitialAd *)interstitialAd;
-#pragma clang diagnostic pop
 - (BOOL)shouldTestVisibilityAtPoint:(CGPoint)point;
 
 @end

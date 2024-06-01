@@ -2,7 +2,7 @@
 //  INUIAddVoiceShortcutViewController.h
 //  IntentsUI
 //
-//  Copyright © 2018 Apple. All rights reserved.
+//  Copyright © 2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion First create the @c INShortcut object that represents the shortcut the user wants to perform. Then create an @c INUIAddVoiceShortcutViewController object and set its delegate. Then, present the view controller modally from another view controller in your app. The delegate must dismiss the view controller when the user completes the set up.
  */
 API_AVAILABLE(ios(12.0))
-API_UNAVAILABLE(watchos, tvos)
+API_UNAVAILABLE(watchos, macosx, tvos)
 @interface INUIAddVoiceShortcutViewController : UIViewController
 
 @property (nonatomic, nullable, weak) id<INUIAddVoiceShortcutViewControllerDelegate> delegate;
@@ -26,12 +26,12 @@ API_UNAVAILABLE(watchos, tvos)
 /*!
  @param shortcut The shortcut is what will be run when the resulting voice shortcut is invoked. It also provides the suggested invocation phrase, via the @c suggestedInvocationPhrase property on the intent or user activity.
  */
-- (instancetype)initWithShortcut:(INShortcut *)shortcut;
+- (instancetype)initWithShortcut:(INShortcut *)shortcut API_UNAVAILABLE(macCatalyst);
 
 @end
 
 API_AVAILABLE(ios(12.0))
-API_UNAVAILABLE(watchos, tvos)
+API_UNAVAILABLE(watchos, macosx, tvos)
 @protocol INUIAddVoiceShortcutViewControllerDelegate <NSObject>
 
 /*!

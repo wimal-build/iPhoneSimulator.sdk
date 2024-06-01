@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-__WATCHOS_PROHIBITED
+API_AVAILABLE(ios(4.0), tvos(9.2), macos(10.9)) API_UNAVAILABLE(watchos)
 @protocol MKOverlay <MKAnnotation>
 @required
 

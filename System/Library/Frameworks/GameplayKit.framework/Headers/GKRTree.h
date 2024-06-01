@@ -68,7 +68,7 @@ GK_BASE_AVAILABILITY_2 @interface GKRTree <ElementType : NSObject*>: NSObject
 /**
  * Queries all the elements that are in this RTree within the given bounding rect.
  *
- * @param min the min point (lower left) of the rect to query
+ * @param rectMin the min point (lower left) of the rect to query
  * @param rectMax the max point (upper right) of the rect to query
  *
  * @return an NSArray of all of the elements that fall within the query rect

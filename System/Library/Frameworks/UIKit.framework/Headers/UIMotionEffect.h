@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIMotionEffect.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIMotionEffect.h>)
 //
 //  UIMotionEffect.h
 //  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIGeometry.h>
+#import <UIKit/UIKitDefines.h>
 
 /*! UIMotionEffect is an abstract superclass which declaratively represents a rendering
     effect that depends on the motion of the device. Given some device pose, subclassers
@@ -14,10 +15,10 @@
     Subclasses must implement conformance for NSCopying and NSCoding. */
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIMotionEffect : NSObject <NSCopying, NSCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIMotionEffect : NSObject <NSCopying, NSCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 /*! Abstract method. Given the `viewerOffset`, this method should compute a set of key paths
     and relative values pairs which will represent the effect of the device's motion on
@@ -58,10 +59,10 @@ typedef NS_ENUM(NSInteger, UIInterpolatingMotionEffectType) {
     Animation's implementation of interpolation for all the standard types.
  
     `keyPath` should be expressed relative to the effect's target view. */
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIInterpolatingMotionEffect : UIMotionEffect
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIInterpolatingMotionEffect : UIMotionEffect
 
 - (instancetype)initWithKeyPath:(NSString *)keyPath type:(UIInterpolatingMotionEffectType)type NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 @property (readonly, nonatomic) NSString *keyPath;
 @property (readonly, nonatomic) UIInterpolatingMotionEffectType type;
 
@@ -74,7 +75,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIInterpolatingMotionEffect : UIMotionEff
 
 /*! Behaves like CAAnimationGroup. Merges key/value pairs of constituent
     using Core Animation's implementations of addition for all the standard types. */
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIMotionEffectGroup : UIMotionEffect
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIMotionEffectGroup : UIMotionEffect
 @property (nullable, copy, nonatomic) NSArray<__kindof UIMotionEffect *> *motionEffects;
 @end
 

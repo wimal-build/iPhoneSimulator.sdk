@@ -44,6 +44,13 @@ API_AVAILABLE(ios(12.0))
 @property (nonatomic, readonly) simd_float3 scale;
 
 /**
+ The AR resource group name for this object.
+ @discussion If this object was loaded via an AR resource group in the Xcode asset catalogue this property will have the name of the resource group,
+ else be set to nil.
+ */
+@property (nonatomic, strong, nullable, readonly) NSString *resourceGroupName API_AVAILABLE(ios(13.0));
+
+/**
  The feature points of the object.
  */
 @property (nonatomic, strong, readonly) ARPointCloud *rawFeaturePoints;

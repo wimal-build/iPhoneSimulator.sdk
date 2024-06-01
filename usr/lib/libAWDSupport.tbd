@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: ED45D025-7407-3F72-A780-447A8754163C' ]
+uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: CBBFA960-402B-3A6B-95E9-DE2CD84B0EDE' ]
 platform:        ios
-install-name:    /usr/lib/libAWDSupport.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libAWDSupport.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ __Z12getHexStringy, __Z12getHexStringym, __Z14getStringVargsPKcz, 
@@ -200,16 +199,23 @@ exports:
                        __Z20sConvertMetricToJsonRKNSt3__110shared_ptrI17AwdMetadataLoaderEEPKhm, 
                        __Z21sConvertTriggerToJsonRKNSt3__110shared_ptrI17AwdMetadataLoaderEEPKhm, 
                        __Z40sCreateAwdMetadataLoaderForXpcConversionv, __Z41sCreateAwdMetadataLoaderForJsonConversionv, 
+                       __Z44sCreateLazyAwdMetadataLoaderForXpcConversionv, __ZN18LazyMetadataLoader15setBaseMetadataEPv, 
+                       __ZN18LazyMetadataLoader19baseMetadataIsValidEv, __ZN18LazyMetadataLoader21shouldRequestMetadataEy, 
+                       __ZN18LazyMetadataLoader23hasMetadataForComponentEj, __ZN18LazyMetadataLoader23setMetadataForComponentEPvj, 
                        __ZN32BestChoiceMetadataLoaderDelegate14getMetricIndexEv, 
                        __ZN3awd14GetProtobufTagEPKhm, __ZN3awd15serializeMetricERKN20wireless_diagnostics6google8protobuf11MessageLiteEj, 
-                       __ZN3awd15serializeMetricERKN2PB4BaseEj, __ZN3awd7reflect13getPackedTypeENS0_4TypeE, 
-                       __ZN3awd8protobuf9skipFieldERN20wireless_diagnostics6google8protobuf2io16CodedInputStreamENS_7reflect8WireTypeE, 
+                       __ZN3awd15serializeMetricERKN2PB4BaseEj, __ZN3awd25getCoreAnalyticsEventNameEj, 
+                       __ZN3awd7reflect13getPackedTypeENS0_4TypeE, __ZN3awd8protobuf9skipFieldERN20wireless_diagnostics6google8protobuf2io16CodedInputStreamENS_7reflect8WireTypeE, 
                        __ZNK14MetadataHandle10getMessageEv, __ZNK14MetadataHandle7getEnumEv, 
                        __ZNK14MetadataHandle8getFieldEv, __ZNK17AwdMetadataLoader14getMetricIndexEv ]
-    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+    weak-def-symbols: [ __ZTI17AwdMetadataLoader, __ZTIN5boost6system14error_category12std_categoryE, 
+                        __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
                         __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTS17AwdMetadataLoader, __ZTSN5boost6system14error_category12std_categoryE, 
                         __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ __Z14sDumpMetricLogNSt3__110shared_ptrI17AwdMetadataLoaderEEPKvm10DumpFormat, 
                        __Z15sDumpMetricFileNSt3__110shared_ptrI17AwdMetadataLoaderEEPKvm10DumpFormat, 

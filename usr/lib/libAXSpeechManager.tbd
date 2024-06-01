@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C476129C-F286-3F0B-89A4-1A808775E4DE', 'x86_64: 83350E73-C60C-38B4-BEB4-9DD855D8975F' ]
+uuids:           [ 'i386: C476129C-F286-3F0B-89A4-1A808775E4DE', 'x86_64: 4DF20BCB-A4B0-32C4-893D-18C611C41C90' ]
 platform:        ios
-install-name:    /usr/lib/libAXSpeechManager.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libAXSpeechManager.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _AXLanguageCanonicalFormToGeneralLanguage, __AXSpeechReplaceEmoticons ]

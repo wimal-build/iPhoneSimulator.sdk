@@ -8,7 +8,9 @@
 #import <Foundation/Foundation.h>
 extern NSString * const __nonnull RPRecordingErrorDomain;
 
-NS_ENUM_AVAILABLE_IOS(9_0)
+NS_ASSUME_NONNULL_BEGIN
+
+NS_ENUM_AVAILABLE(10_15, 9_0)
 typedef NS_ENUM(NSInteger, RPRecordingErrorCode) {
     RPRecordingErrorUnknown = -5800,
     RPRecordingErrorUserDeclined = -5801, // The user declined app recording.
@@ -29,6 +31,21 @@ typedef NS_ENUM(NSInteger, RPRecordingErrorCode) {
     RPRecordingErrorFailedNoMatchingApplicationContext = -5816, // Failed during recording context id does not match application
     RPRecordingErrorFailedMediaServicesFailure = -5817, // Failed during recording due to mediaservices failure
     RPRecordingErrorVideoMixingFailure = -5818, // Failed during recording due to audio/video mixing failure
-    RPRecordingErrorBroadcastSetupFailed = -5819, // Broadcast setup failed because client process doesn't have required entitlement
-    RPRecordingErrorCodeSuccessful = 0 //Successfully saved video to camera
+    RPRecordingErrorBroadcastSetupFailed = -5819, // Failed during saving to camera roll
+    RPRecordingErrorFailedToObtainURL = -5820, // Failed to obtain video URL
+    RPRecordingErrorFailedIncorrectTimeStamps = -5821, // Failed to due to malformed start and end time intervals
+    RPRecordingErrorFailedToProcessFirstSample = -5822, // Failed to failure to process first sample buffer for the asset writer
+    RPRecordingErrorFailedAssetWriterFailedToSave = -5823, // Failed due to finishWritingWithCompletionHandler failed
+    RPRecordingErrorFailedNoAssetWriter = -5824, // Failed due to no asset writer
+    RPRecordingErrorFailedAssetWriterInWrongState = -5825, // Failed due to no asset writer being in wrong state
+    RPRecordingErrorFailedAssetWriterExportFailed = -5826, // Failed due to export session failing
+    RPRecordingErrorFailedToRemoveFile = -5827, // Failed to properly remove temp file for recording
+    RPRecordingErrorFailedAssetWriterExportCanceled = -5828, // Failed due to export session being canceled
+    RPRecordingErrorAttemptToStopNonRecording = -5829, // Failed due to attempting to stop a recording that wasn't in recording state
+    RPRecordingErrorAttemptToStartInRecordingState = -5830, // Failed due to attempting to start a recording thats already in a recording state
+    RPRecordingErrorPhotoFailure = -5831, // Failed during saving to camera roll
+    RPRecordingErrorRecordingInvalidSession = -5832, // Attempted to start an invalid recording session
+    RPRecordingErrorCodeSuccessful = 0 //Successfully saved video to camera roll
 };
+
+NS_ASSUME_NONNULL_END

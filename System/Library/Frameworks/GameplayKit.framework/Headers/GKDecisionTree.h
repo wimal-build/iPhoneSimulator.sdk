@@ -15,7 +15,7 @@ GK_BASE_AVAILABILITY_2 @interface GKDecisionNode : NSObject
 /**
  * Creates a numeric branch to a node containing the specified attribute
  *
- * @param branch The branch of this node for the specified value
+ * @param value The value to create a branch with
  * @param attribute The attribute of the created node
  * @return The node lead to by the branch
  */
@@ -24,7 +24,7 @@ GK_BASE_AVAILABILITY_2 @interface GKDecisionNode : NSObject
 /**
  * Creates a predicated branch to a node containing the specified attribute
  *
- * @param branch The branch of this node for the provided predicate
+ * @param predicate The predicate to create a branch with
  * @param attribute The attribute of the created node
  * @return The node lead to by the branch
  */
@@ -33,7 +33,7 @@ GK_BASE_AVAILABILITY_2 @interface GKDecisionNode : NSObject
 /**
  * Creates a random branch to a node containing the specified attribute
  *
- * @param branch The branch of this node with the given weight (weighted for random selection)
+ * @param weight The weight to create a branch with (weighted for random selection)
  * @param attribute The attribute of the created node
  * @return The node lead to by the branch
  *
@@ -71,7 +71,7 @@ GK_BASE_AVAILABILITY_2 @interface GKDecisionTree : NSObject <NSSecureCoding>
  * Initializes and constructs a decision tree by learning from the provided examples & attributes
  *
  * @param examples Must be an array of examples (with each example being a collection of the various attributes at a given state)
- * @param results An array of the corresponding results for each example. Ordered such that the first result matches with the first example in examples.
+ * @param actions An array of the corresponding actions for each example. Ordered such that the first action matches with the first example in examples.
  * @param attributes The list of attributes. Ordered such that the first attribute matches with the first result in each example.
  * So if we have two attributes: [distance, jump height], and two examples: [[20, 8], [15, 14]], and the resulting actions here: [Roll, Jump], we can think of this as a matrix:
  *

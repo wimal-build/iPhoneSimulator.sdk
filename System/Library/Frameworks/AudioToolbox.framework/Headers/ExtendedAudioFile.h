@@ -1,3 +1,4 @@
+#if (defined(USE_AUDIOTOOLBOX_PUBLIC_HEADERS) && USE_AUDIOTOOLBOX_PUBLIC_HEADERS) || !__has_include(<AudioToolboxCore/ExtendedAudioFile.h>)
 /*!
 	@file		ExtendedAudioFile.h
 	@framework	AudioToolbox.framework
@@ -15,13 +16,8 @@
 #define AudioToolbox_ExtendedAudioFile_h
 
 #include <Availability.h>
-#if !defined(__COREAUDIO_USE_FLAT_INCLUDES__)
-	#include <CoreFoundation/CoreFoundation.h>
-	#include <AudioToolbox/AudioFile.h>
-#else
-	#include <CoreFoundation.h>
-	#include <AudioFile.h>
-#endif
+#include <CoreFoundation/CoreFoundation.h>
+#include <AudioToolbox/AudioFile.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -509,8 +505,6 @@ ExtAudioFileSeek(			ExtAudioFileRef			inExtAudioFile,
 					On exit, the file's current read/write position in sample frames. This is specified in the 
 					sample rate and frame count of the file's format (not the client format)
 	@result		An OSStatus error code.
-	
-	@discussion
 */
 extern OSStatus
 ExtAudioFileTell(			ExtAudioFileRef			inExtAudioFile,
@@ -536,8 +530,6 @@ ExtAudioFileTell(			ExtAudioFileRef			inExtAudioFile,
 	@param		outWritable
 					If non-null, on exit, this indicates whether the property value is settable.
 	@result		An OSStatus error code.
-
-	@discussion
 */
 extern OSStatus
 ExtAudioFileGetPropertyInfo(ExtAudioFileRef			inExtAudioFile,
@@ -560,8 +552,6 @@ ExtAudioFileGetPropertyInfo(ExtAudioFileRef			inExtAudioFile,
 	@param		outPropertyData
 					The value of the property is copied to the memory this points to.
 	@result		An OSStatus error code.
-
-	@discussion
 */
 extern OSStatus
 ExtAudioFileGetProperty(	ExtAudioFileRef			inExtAudioFile,
@@ -583,8 +573,6 @@ ExtAudioFileGetProperty(	ExtAudioFileRef			inExtAudioFile,
 	@param		inPropertyData
 					Points to the property's new value.
 	@result		An OSStatus error code.
-
-	@discussion
 */
 extern OSStatus
 ExtAudioFileSetProperty(	ExtAudioFileRef			inExtAudioFile,
@@ -600,3 +588,6 @@ CF_ASSUME_NONNULL_END
 #endif
 
 #endif // AudioToolbox_ExtendedAudioFile_h
+#else
+#include <AudioToolboxCore/ExtendedAudioFile.h>
+#endif

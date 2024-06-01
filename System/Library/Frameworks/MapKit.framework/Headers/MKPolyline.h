@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(10_9, 4_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(10_9, 4_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos)
 @interface MKPolyline : MKMultiPoint <MKOverlay>
 
 + (instancetype)polylineWithPoints:(const MKMapPoint *)points count:(NSUInteger)count;

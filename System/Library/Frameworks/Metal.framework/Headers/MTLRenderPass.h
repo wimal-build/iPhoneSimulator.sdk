@@ -10,11 +10,13 @@
 
 
 
+@protocol MTLRasterizationRateMap;
 
 #import <Metal/MTLTypes.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol MTLDevice;
+
 
 typedef NS_ENUM(NSUInteger, MTLLoadAction) {
     MTLLoadActionDontCare = 0,
@@ -182,7 +184,7 @@ typedef NS_ENUM(NSUInteger, MTLMultisampleStencilResolveFilter)
      @abstract The stencil sample corresponding to whichever depth sample is selected by the depth resolve filter. If depth resolve is not enabled, the stencil sample is chosen based on what a depth resolve filter would have selected.
      */
     MTLMultisampleStencilResolveFilterDepthResolvedSample   = 1,
-} API_AVAILABLE(macos(10.14), ios(12.0));
+} API_AVAILABLE(macos(10.14), ios(12.0)) API_UNAVAILABLE(tvos);
 
 
 
@@ -199,7 +201,7 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
  @property stencilResolveFilter
  @abstract The filter to be used for stencil multisample resolve. Defaults to MTLMultisampleStencilResolveFilterSample0.
  */
-@property (nonatomic) MTLMultisampleStencilResolveFilter stencilResolveFilter API_AVAILABLE(macos(10.14), ios(12.0));
+@property (nonatomic) MTLMultisampleStencilResolveFilter stencilResolveFilter API_AVAILABLE(macos(10.14), ios(12.0)) API_UNAVAILABLE(tvos);
 
 @end
 
@@ -214,6 +216,7 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 - (void)setObject:(nullable MTLRenderPassColorAttachmentDescriptor *)attachment atIndexedSubscript:(NSUInteger)attachmentIndex;
 
 @end
+
 
 /*!
  @class MTLRenderPassDescriptor
@@ -244,58 +247,54 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
  @property renderTargetArrayLength:
  @abstract The number of active layers
  */
-@property (nonatomic) NSUInteger renderTargetArrayLength API_AVAILABLE(macos(10.11), ios(12.0));
+@property (nonatomic) NSUInteger renderTargetArrayLength API_AVAILABLE(macos(10.11), ios(12.0)) API_UNAVAILABLE(tvos);
 
 
 /*!
  @property imageblockSampleLength:
  @abstract The per sample size in bytes of the largest explicit imageblock layout in the renderPass.
  */
-@property (nonatomic) NSUInteger imageblockSampleLength API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+@property (nonatomic) NSUInteger imageblockSampleLength API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @property threadgroupMemoryLength:
  @abstract The per tile size in bytes of the persistent threadgroup memory allocation.
  */
-@property (nonatomic) NSUInteger threadgroupMemoryLength API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+@property (nonatomic) NSUInteger threadgroupMemoryLength API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @property tileWidth:
  @abstract The width in pixels of the tile.
  @discssion Defaults to 0. Zero means Metal chooses a width that fits within the local memory.
  */
-@property (nonatomic) NSUInteger tileWidth API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+@property (nonatomic) NSUInteger tileWidth API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @property tileHeight:
  @abstract The height in pixels of the tile.
  @discssion Defaults to 0. Zero means Metal chooses a height that fits within the local memory.
  */
-@property (nonatomic) NSUInteger tileHeight API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+@property (nonatomic) NSUInteger tileHeight API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @property defaultRasterSampleCount:
  @abstract The raster sample count for the render pass when no attachments are given.
  */
-@property (nonatomic) NSUInteger defaultRasterSampleCount API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
-
-
+@property (nonatomic) NSUInteger defaultRasterSampleCount API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @property renderTargetWidth:
- @abstract The width in pixels to constain the render target to.
- @discssion Defaults to 0. If non-zero the value must be smaller than or equal to the minimum width of all attachments.
+ @abstract The width in pixels to constrain the render target to.
+ @discussion Defaults to 0. If non-zero the value must be smaller than or equal to the minimum width of all attachments.
  */
-@property (nonatomic) NSUInteger renderTargetWidth API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+@property (nonatomic) NSUInteger renderTargetWidth API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @property renderTargetHeight:
- @abstract The height in pixels to constain the render target to.
- @discssion Defaults to 0. If non-zero the value must be smaller than or equal to the minimum height of all attachments.
+ @abstract The height in pixels to constrain the render target to.
+ @discussion Defaults to 0. If non-zero the value must be smaller than or equal to the minimum height of all attachments.
  */
-@property (nonatomic) NSUInteger renderTargetHeight API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
-
-
+@property (nonatomic) NSUInteger renderTargetHeight API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst);
 
 /*!
  @method setSamplePositions:count:
@@ -313,6 +312,14 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
  @return The number of previously configured custom sample positions.
  */
 - (NSUInteger)getSamplePositions:(MTLSamplePosition * _Nullable)positions count:(NSUInteger)count API_AVAILABLE(macos(10.13), ios(11.0));
+
+
+/*!
+ @property rasterizationRateMap
+ @abstract The variable rasterization rate map to use when rendering this pass, or nil to not use variable rasterization rate.
+ @discussion The default value is nil. Enabling variable rasterization rate allows for decreasing the rasterization rate in unimportant regions of screen space.
+ */
+@property (nullable, nonatomic, strong) id<MTLRasterizationRateMap> rasterizationRateMap API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, macCatalyst);
 
 
 @end

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Discussion:
  *    Typedef of block to be invoked when the device's activity is updated.
  */
-typedef void (^CMMotionActivityHandler)(CMMotionActivity * __nullable activity) NS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos);
+typedef void (^CMMotionActivityHandler)(CMMotionActivity * __nullable activity) COREMOTION_EXPORT API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macos);
 
 /*
  *  CMMotionActivityQueryHandler
@@ -27,7 +27,7 @@ typedef void (^CMMotionActivityHandler)(CMMotionActivity * __nullable activity) 
  *    Typedef of block to be invoked when the historical activity query is
  *    completed.  The array is an array of CMMotionActivity objects.
  */
-typedef void (^CMMotionActivityQueryHandler)(NSArray<CMMotionActivity *> * __nullable activities, NSError * __nullable error) NS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos);
+typedef void (^CMMotionActivityQueryHandler)(NSArray<CMMotionActivity *> * __nullable activities, NSError * __nullable error) COREMOTION_EXPORT API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macos);
 
 /*
  *   CMMotionActivityManager
@@ -42,7 +42,7 @@ typedef void (^CMMotionActivityQueryHandler)(NSArray<CMMotionActivity *> * __nul
  *      2. By providing a queue and a block to startActivityUpdatesToQueue:withHandler:
  *      which will provide live activity updates to a running application.
  */
-NS_CLASS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macos)
 @interface CMMotionActivityManager : NSObject
 
 /*
@@ -59,7 +59,7 @@ NS_CLASS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos)
  *  Discussion:
  *      Returns the current authorization status for activity.
  */
-+ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
++ (CMAuthorizationStatus)authorizationStatus COREMOTION_EXPORT API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macos);
 
 /*
  * queryActivityStartingFrom:to:toQueue:withHandler:

@@ -16,7 +16,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXPORT NS_AVAILABLE(10_10, 8_0) @interface SKFieldNode : SKNode
+SK_EXPORT API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10)) @interface SKFieldNode : SKNode
 
 /** The region property is the domain of the field's effect. No force is applied to objects outside the region.
  */
@@ -150,7 +150,7 @@ SK_EXPORT NS_AVAILABLE(10_10, 8_0) @interface SKFieldNode : SKNode
  To freeze the noise in place, set animationSpeed to 0.0. Mass is ignored.
 
  @param smoothness value of 0 means as noisy as possible, 1 means as smooth as possible
- @param animationSpeed is the general rate in Hz that any particular texel changes to a different value
+ @param speed is the general rate in Hz that any particular texel changes to a different value
  
  @see smoothness
  @see animationSpeed
@@ -161,7 +161,7 @@ SK_EXPORT NS_AVAILABLE(10_10, 8_0) @interface SKFieldNode : SKNode
  Just like Noise, except the strength of the noise is proportional to the velocity of the object in the field.
  
  @param smoothness value of 0 means as noisy as possible, 1 means as smooth as possible
- @param animationSpeed is the general rate in Hz that any particular texel changes to a different value
+ @param speed is the general rate in Hz that any particular texel changes to a different value
  
  @see smoothness
  @see animationSpeed

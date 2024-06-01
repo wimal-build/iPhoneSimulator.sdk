@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStateRestoration.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIStateRestoration.h>)
 /*
  *  UIStateRestoration.h
  *  UIKit
@@ -16,19 +16,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 // UIStoryBoard that originally created the ViewController that saved state, nil if no UIStoryboard
 
-UIKIT_EXTERN NSString *const UIStateRestorationViewControllerStoryboardKey NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSString *const UIStateRestorationViewControllerStoryboardKey API_AVAILABLE(ios(6.0));
 
 // NSString with value of info.plist's Bundle Version (app version) when state was last saved for the app
-UIKIT_EXTERN NSString *const UIApplicationStateRestorationBundleVersionKey NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSString *const UIApplicationStateRestorationBundleVersionKey API_AVAILABLE(ios(6.0));
 
 // NSNumber containing the UIUserInterfaceIdiom enum value of the app that saved state
-UIKIT_EXTERN NSString *const UIApplicationStateRestorationUserInterfaceIdiomKey NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSString *const UIApplicationStateRestorationUserInterfaceIdiomKey API_AVAILABLE(ios(6.0));
 
 // NSDate specifying the date/time the state restoration archive was saved. This is in UTC.
-UIKIT_EXTERN NSString *const UIApplicationStateRestorationTimestampKey NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSString *const UIApplicationStateRestorationTimestampKey API_AVAILABLE(ios(7.0));
 
 // NSString with value of the system version (iOS version) when state was last saved for the app
-UIKIT_EXTERN NSString *const UIApplicationStateRestorationSystemVersionKey NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSString *const UIApplicationStateRestorationSystemVersionKey API_AVAILABLE(ios(7.0));
 
 @class UIView;
 @class UIViewController;

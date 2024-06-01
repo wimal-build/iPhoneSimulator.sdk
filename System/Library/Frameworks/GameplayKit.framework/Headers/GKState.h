@@ -61,7 +61,7 @@ GK_BASE_AVAILABILITY @interface GKState : NSObject
 /**
  * Called by GKStateMachine when it is updated
  *
- * @param deltaTime the time, in seconds, since the last update
+ * @param seconds the time in seconds since the last update
  */
 - (void)updateWithDeltaTime:(NSTimeInterval)seconds;
 

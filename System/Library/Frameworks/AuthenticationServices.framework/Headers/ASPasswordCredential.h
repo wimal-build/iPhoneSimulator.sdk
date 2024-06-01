@@ -6,12 +6,13 @@
 //
 
 #import <AuthenticationServices/ASFoundation.h>
+#import <AuthenticationServices/ASAuthorizationCredential.h>
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-AS_EXTERN API_AVAILABLE(ios(12.0)) 
-@interface ASPasswordCredential : NSObject <NSCopying, NSSecureCoding>
+AS_EXTERN API_AVAILABLE(ios(12.0), macos(10.15), tvos(13.0), watchos(6.0))
+@interface ASPasswordCredential : NSObject <ASAuthorizationCredential>
 
 /*! @abstract Initializes an ASPasswordCredential object.
  @param user the user.

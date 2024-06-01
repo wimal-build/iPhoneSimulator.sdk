@@ -1,18 +1,18 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIActivityItemProvider.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<ShareSheet/UIActivityItemProvider.h>)
 //
 //  UIActivityItemProvider.h
 //  UIKit
 //
 //  Copyright 2012-2018 Apple Inc. All rights reserved.
 //
-#import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import <UIKit/UIKitDefines.h>
+#import <Foundation/Foundation.h>
 #import <UIKit/UIActivity.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class UIActivityViewController, UIImage;
+@class UIActivityViewController, UIImage, LPLinkMetadata;
 
 @protocol UIActivityItemSource <NSObject>
 
@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)activityViewController:(UIActivityViewController *)activityViewController subjectForActivityType:(nullable UIActivityType)activityType; // if activity supports a Subject field. iOS 7.0
 - (NSString *)activityViewController:(UIActivityViewController *)activityViewController dataTypeIdentifierForActivityType:(nullable UIActivityType)activityType; // UTI for item if it is an NSData. iOS 7.0. will be called with nil activity and then selected activity
 - (nullable UIImage *)activityViewController:(UIActivityViewController *)activityViewController thumbnailImageForActivityType:(nullable UIActivityType)activityType suggestedSize:(CGSize)size; // if activity supports preview image. iOS 7.0
+- (nullable LPLinkMetadata *)activityViewControllerLinkMetadata:(UIActivityViewController *)activityViewController API_AVAILABLE(ios(13.0)); // called to fetch LinkPresentation metadata for the activity item. iOS 13.0
 
 @end
 
@@ -37,16 +38,12 @@ NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIActivityItemProvider 
 @property(nullable,nonatomic,strong,readonly) id        placeholderItem;
 @property(nullable,nonatomic,copy,readonly)   UIActivityType activityType;     // activity type available when -item is called. nil at other times. use this in your -item method to customize the data to return
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonnull, nonatomic, readonly) id item;   // called on secondary thread when user selects an activity. you must subclass and return a non-nil value. The item can use the UIActivityItemSource protocol to return extra information
-#else
-- (nonnull id)item;   // called on secondary thread when user selects an activity. you must subclass and return a non-nil value. The item can use the UIActivityItemSource protocol to return extra information
-#endif
 
 @end
 
 NS_ASSUME_NONNULL_END
 
 #else
-#import <UIKitCore/UIActivityItemProvider.h>
+#import <ShareSheet/UIActivityItemProvider.h>
 #endif

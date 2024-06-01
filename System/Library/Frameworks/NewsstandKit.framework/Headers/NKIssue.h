@@ -13,13 +13,13 @@
  @constant   NKIssueDownloadCompletedNotification
  @abstract   Notification when an issue's assets have all been downloaded.
  */
-extern __attribute__((visibility ("default"))) NSString * __nonnull const NKIssueDownloadCompletedNotification NS_AVAILABLE_IOS(5_0);
+extern __attribute__((visibility ("default"))) NSString * __nonnull const NKIssueDownloadCompletedNotification NS_DEPRECATED_IOS(5.0, 13.0, "Use the Remote Notifications Background Modes instead: https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/pushing_updates_to_your_app_silently");
 
 typedef NS_ENUM(NSInteger, NKIssueContentStatus) {
     NKIssueContentStatusNone,
     NKIssueContentStatusDownloading,
     NKIssueContentStatusAvailable,
-} NS_ENUM_AVAILABLE_IOS(5_0);
+} NS_ENUM_DEPRECATED_IOS(5.0, 13.0, "Use the Remote Notifications Background Modes instead: https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/pushing_updates_to_your_app_silently");
 
 
 /*!
@@ -37,7 +37,8 @@ typedef NS_ENUM(NSInteger, NKIssueContentStatus) {
  -[NKLibrary addIssueWithName:date:].
  */
 NS_ASSUME_NONNULL_BEGIN
-NS_CLASS_AVAILABLE_IOS(5_0) @interface NKIssue : NSObject
+NS_CLASS_DEPRECATED_IOS(5.0, 13.0, "Use the Remote Notifications Background Modes instead: https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/pushing_updates_to_your_app_silently")
+@interface NKIssue : NSObject
 
 /*!
  @property   downloadingAssets

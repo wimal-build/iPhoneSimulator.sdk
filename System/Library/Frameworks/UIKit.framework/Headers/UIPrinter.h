@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrinter.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPrinter.h>)
 //
 //  UIPrinter.h
 //  UIKit
@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
     
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPrinter : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos) @interface UIPrinter : NSObject
 
 /*!
  *  @enum       UIPrinterJobTypes
@@ -37,7 +38,7 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
     UIPrinterJobTypeRoll = 1 << 5,
     UIPrinterJobTypeLargeFormat = 1 << 6,
     UIPrinterJobTypePostcard = 1 << 7
-} NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
+} API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos);
 
 
 /*!

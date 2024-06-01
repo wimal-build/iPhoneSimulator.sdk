@@ -5,10 +5,11 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
-#import "RPBroadcastConfiguration.h"
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
+
+#import <ReplayKit/RPBroadcastConfiguration.h>
 
 NS_ASSUME_NONNULL_BEGIN
 /*! 

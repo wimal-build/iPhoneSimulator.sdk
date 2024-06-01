@@ -19,52 +19,55 @@ typedef NS_CLOSED_ENUM(NSInteger, SKDownloadState) {
     SKDownloadStateFinished,    // Download is finished, content is available
     SKDownloadStateFailed,      // Download failed
     SKDownloadStateCancelled,   // Download was cancelled
-} NS_AVAILABLE(10_8, 6_0);
+} API_AVAILABLE(ios(6.0), macos(10.8));
 
-SK_EXTERN NSTimeInterval SKDownloadTimeRemainingUnknown NS_AVAILABLE(10_14, 6_0);
+SK_EXTERN NSTimeInterval SKDownloadTimeRemainingUnknown API_AVAILABLE(ios(6.0), macos(10.14));
 
-SK_EXTERN_CLASS_AVAILABLE(10_8, 6_0) @interface SKDownload : NSObject {
+SK_EXTERN_CLASS API_AVAILABLE(ios(6.0), macos(10.8)) @interface SKDownload : NSObject {
 @private
     id _internal;
 }
 
 // State of the download
-@property(nonatomic, readonly) SKDownloadState state NS_AVAILABLE(10_8, 12_0);
-@property(nonatomic, readonly) SKDownloadState downloadState NS_DEPRECATED_IOS(6_0, 12_0, "Use [SKDownload state] instead");
+@property(nonatomic, readonly) SKDownloadState state API_AVAILABLE(ios(12.0), macos(10.8));
+@property(nonatomic, readonly) SKDownloadState downloadState API_DEPRECATED_WITH_REPLACEMENT("-[SKDownload state]", ios(6.0, 12.0)) API_UNAVAILABLE(macos);
 
 // Total size of the content, in bytes
 #if TARGET_OS_OSX
-@property(nonatomic, copy, readonly) NSNumber *contentLength NS_AVAILABLE_MAC(10_8);
+@property(nonatomic, copy, readonly) NSNumber *contentLength API_DEPRECATED_WITH_REPLACEMENT("-[SKDownload expectedContentLength]", macos(10.8, 10.15)) API_UNAVAILABLE(ios, tvos);
 #else
-@property(nonatomic, readonly) long long contentLength NS_AVAILABLE_IOS(6_0);
+@property(nonatomic, readonly) long long contentLength API_DEPRECATED_WITH_REPLACEMENT("-[SKDownload expectedContentLength]", ios(6.0, 13.0), tvos(9.0, 13.0)) API_UNAVAILABLE(macos, macCatalyst);
 #endif
 
+// Total size of the content, in bytes
+@property(nonatomic, readonly) long long expectedContentLength API_AVAILABLE(ios(13.0), macos(10.15), tvos(13.0));
+
 // Identifier for this content
-@property(nonatomic, readonly) NSString *contentIdentifier NS_AVAILABLE(10_8, 6_0);
+@property(nonatomic, readonly) NSString *contentIdentifier API_AVAILABLE(ios(6.0), macos(10.8));
 
 // Location of the content data, if state is SKDownloadStateFinished
-@property(nonatomic, readonly, nullable) NSURL *contentURL NS_AVAILABLE(10_8, 6_0);
+@property(nonatomic, readonly, nullable) NSURL *contentURL API_AVAILABLE(ios(6.0), macos(10.8));
 
 // Content version
-@property(nonatomic, readonly) NSString *contentVersion NS_AVAILABLE(10_8, 6_0);
+@property(nonatomic, readonly) NSString *contentVersion API_AVAILABLE(ios(6.0), macos(10.8));
 
 // Failure error, if state is SKDownloadStateFailed
-@property(nonatomic, readonly, nullable) NSError *error NS_AVAILABLE(10_8, 6_0);
+@property(nonatomic, readonly, nullable) NSError *error API_AVAILABLE(ios(6.0), macos(10.8));
 
 // Overall progress for the download [0..1]
-@property(nonatomic, readonly) float progress NS_AVAILABLE(10_8, 6_0);
+@property(nonatomic, readonly) float progress API_AVAILABLE(ios(6.0), macos(10.8));
 
 // Estimated time remaining to complete the download, in seconds.  Value is SKDownloadTimeRemainingUnknown if estimate is unknownxx.
-@property(nonatomic, readonly) NSTimeInterval timeRemaining NS_AVAILABLE(10_8, 6_0);
+@property(nonatomic, readonly) NSTimeInterval timeRemaining API_AVAILABLE(ios(6.0), macos(10.8));
 
 // Transaction for this download
-@property(nonatomic, readonly) SKPaymentTransaction *transaction NS_AVAILABLE(10_11, 6_0);
+@property(nonatomic, readonly) SKPaymentTransaction *transaction API_AVAILABLE(ios(6.0), macos(10.11));
 
 
-+ (nullable NSURL *)contentURLForProductID:(NSString *)productID NS_AVAILABLE_MAC(10_8);
++ (nullable NSURL *)contentURLForProductID:(NSString *)productID API_AVAILABLE(macos(10.8), macCatalyst(13.0)) API_UNAVAILABLE(ios, tvos);
 
 // Deletes the content for that identifier from disk
-+ (void)deleteContentForProductID:(NSString *)productID NS_AVAILABLE_MAC(10_8);
++ (void)deleteContentForProductID:(NSString *)productID API_AVAILABLE(macos(10.8), macCatalyst(13.0)) API_UNAVAILABLE(ios, tvos);
 @end
 
 NS_ASSUME_NONNULL_END

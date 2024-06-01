@@ -39,6 +39,7 @@ typedef NS_ENUM(NSInteger, GKErrorCode) {
     GKErrorPlayerPhotoFailure                   = 26,
     GKErrorUbiquityContainerUnavailable         = 27,
     GKErrorMatchNotConnected                    = 28,
-    GKErrorGameSessionRequestInvalid            = 29
+    GKErrorGameSessionRequestInvalid            = 29,
+    GKErrorRestrictedToAutomatch                = 30,
+    GKErrorAPINotAvailable                      = 31
 };
-

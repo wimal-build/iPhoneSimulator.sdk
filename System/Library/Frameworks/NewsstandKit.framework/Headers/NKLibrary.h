@@ -21,7 +21,8 @@
  -[NKAssetDownload downloadWithDelegate:].
  */
 NS_ASSUME_NONNULL_BEGIN
-NS_CLASS_AVAILABLE_IOS(5_0) @interface NKLibrary : NSObject
+NS_CLASS_DEPRECATED_IOS(5.0, 13.0, "Use the Remote Notifications Background Modes instead: https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/pushing_updates_to_your_app_silently")
+@interface NKLibrary : NSObject
 
 /*!
  @property   issues

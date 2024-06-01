@@ -2,7 +2,7 @@
 //  SCNTechnique.h
 //  SceneKit
 //
-//  Copyright © 2014-2018 Apple Inc. All rights reserved.
+//  Copyright © 2014-2019 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SCNShadable.h>
@@ -61,7 +61,12 @@ SCN_EXPORT API_AVAILABLE(macos(10.10))
          <target description>
      }
      [...]
-   }
+   },
+
+   //optional
+
+   bundle: <bundleIdentifier>,
+   metalLibraryName: <metalLibraryName>,
 }
 
 <outputs>:
@@ -212,6 +217,12 @@ The values can be a single string referencing a symbol or a semantic or a target
  scaleFactor: a float value (encapsulated in a NSNumber) that controls the size of the render target. Defaults to 1, which means 1x the size of the main viewport.
  size: a string with the format %dx%d that controls the size of the render target.
  persistent: a boolean that tells if this target should persist from one frame to the next. It permits to create temporal effects suchs as motion blur. Defaults to NO.
+
+ <bundleIdentifier>
+ An optional bundle identifier to load metal programs from
+
+ <metalLibraryName>
+ An optional metal library name to load metal programs from. The metallib file is located from the default or specified bundle using NSBundle pathForResource:ofType:.
  */
 + (nullable SCNTechnique *)techniqueWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
@@ -261,6 +272,14 @@ The values can be a single string referencing a symbol or a semantic or a target
  */
 - (nullable id)objectForKeyedSubscript:(id)key API_AVAILABLE(macos(10.11), ios(9.0));
 - (void)setObject:(nullable id)obj forKeyedSubscript:(id <NSCopying>)key API_AVAILABLE(macos(10.11), ios(9.0));
+
+#if SCN_ENABLE_METAL
+/*!
+ @property library
+ @abstract The Metal library to use to load the Metal programs specified in the technique description. Defaults to nil which corresponds to the default Metal library.
+ */
+@property(nonatomic, strong, nullable) id<MTLLibrary> library API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0));
+#endif
 
 @end
 

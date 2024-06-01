@@ -44,6 +44,9 @@ typedef NS_ERROR_ENUM(ARErrorDomain, ARErrorCode) {
     /** Invalid configuration. */
     ARErrorCodeInvalidConfiguration          API_AVAILABLE(ios(12.0)) = 303,
     
+    /** Collaboration data is not available. */
+    ARErrorCodeCollaborationDataUnavailable  API_AVAILABLE(ios(13.0)) = 304,
+    
     /** Insufficient features. */
     ARErrorCodeInsufficientFeatures          API_AVAILABLE(ios(12.0)) = 400,
     

@@ -5,6 +5,18 @@ Classes:
   Properties:
   - Name: 'supportedHandleTypes'
     SwiftPrivate: true
+- Name: CXCall
+  Methods:
+  - Selector: 'isEqualToCall:'
+    MethodKind: Instance
+    Availability: nonswift
+    AvailabilityMsg: "prefer == operator"
+- Name: CXHandle
+  Methods:
+  - Selector: 'isEqualToHandle:'
+    MethodKind: Instance
+    Availability: nonswift
+    AvailabilityMsg: "prefer == operator"
 Tags:
 - Name: CXErrorCode
   NSErrorDomain: CXErrorDomain

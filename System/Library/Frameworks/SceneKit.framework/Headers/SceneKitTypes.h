@@ -2,26 +2,39 @@
 //  SceneKitTypes.h
 //  SceneKit
 //
-//  Copyright © 2012-2018 Apple Inc. All rights reserved.
+//  Copyright © 2012-2019 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SceneKitAvailability.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <simd/simd.h>
 
-#import <QuartzCore/QuartzCore.h>
-#import <GLKit/GLKMathTypes.h>
-
 /*! @header SceneKitTypes
  @abstract Various types and utility functions used throughout SceneKit
  */
 
-#define SCN_ENABLE_METAL (!TARGET_OS_SIMULATOR)
+#define SCN_ENABLE_METAL 1
+#define SCN_ENABLE_OPENGL 1
+
+#ifdef SCN_SILENCE_GL_DEPRECATION
+#define SCN_GL_DEPRECATED_MAC(from, to) NS_AVAILABLE_MAC(from)
+#define SCN_GL_DEPRECATED_IOS(from, to) NS_AVAILABLE_IOS(from)
+#define SCN_GL_DEPRECATED(fromM,toM, fromI,toI) NS_AVAILABLE(fromM,fromI)
+#else
+#define SCN_GL_DEPRECATED_MAC(from, to) NS_DEPRECATED_MAC(from, to, "OpenGL API deprecated, please use Metal instead. (Define SCN_SILENCE_GL_DEPRECATION to silence these warnings)")
+#define SCN_GL_DEPRECATED_IOS(from, to) NS_DEPRECATED_IOS(from, to, "OpenGL API deprecated, please use Metal instead. (Define SCN_SILENCE_GL_DEPRECATION to silence these warnings)")
+#define SCN_GL_DEPRECATED(fromM, toM, fromI, toI) NS_DEPRECATED(fromM, toM, fromI, toI, "OpenGL API deprecated, please use Metal instead. (Define SCN_SILENCE_GL_DEPRECATION to silence these warnings)")
+#endif
 
 #if SCN_ENABLE_METAL
 #import <Metal/Metal.h>
 #endif
 
+#if SCN_ENABLE_OPENGL
+#import <GLKit/GLKMathTypes.h>
+#endif
+
+#import <QuartzCore/QuartzCore.h>
 
 // Color
 #define SCNColor UIColor
@@ -143,7 +156,8 @@ NS_INLINE SCNMatrix4 SCNMatrix4Translate(SCNMatrix4 m, float tx, float ty, float
 SCN_EXPORT SCNMatrix4 SCNMatrix4Scale(SCNMatrix4 m, float sx, float sy, float sz) API_AVAILABLE(macos(10.10));
 
 /* Rotate 'm' by 'angle' radians about the vector '(x, y, z)' and return the result:
- * m' = rotation(angle, x, y, z) * m. */
+ * m' = rotation(angle, x, y, z) * m.
+ Note: on iOS 10.12 or before, the matrix are combined in the wrong order: m' = m * rotation(angle, x, y, z) */
 SCN_EXPORT SCNMatrix4 SCNMatrix4Rotate(SCNMatrix4 m, float angle, float x, float y, float z) API_AVAILABLE(macos(10.10));
 
 /* Invert 'm' and return the result. */
@@ -155,6 +169,8 @@ SCN_EXPORT SCNMatrix4 SCNMatrix4Mult(SCNMatrix4 a, SCNMatrix4 b) API_AVAILABLE(m
 
 #pragma mark - GLKit Bridge
 
+#if SCN_ENABLE_OPENGL
+    
 NS_INLINE SCNVector3 SCNVector3FromGLKVector3(GLKVector3 vector) {
     return (SCNVector3){vector.v[0], vector.v[1], vector.v[2]};
 }
@@ -173,6 +189,8 @@ NS_INLINE GLKVector4 SCNVector4ToGLKVector4(SCNVector4 vector) {
 
 SCN_EXPORT GLKMatrix4 SCNMatrix4ToGLKMatrix4(SCNMatrix4 mat) API_AVAILABLE(macos(10.10));
 SCN_EXPORT SCNMatrix4 SCNMatrix4FromGLKMatrix4(GLKMatrix4 mat) API_AVAILABLE(macos(10.10));
+
+#endif //SCN_ENABLE_OPENGL
 
 
 #pragma mark - SIMD Bridge

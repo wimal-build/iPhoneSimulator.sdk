@@ -1,11 +1,10 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E98CAC34-BB2B-3976-AD26-6B69C5E20E60', 'x86_64: 59B4EC5F-4AC0-30C8-A2E3-DC686E21DF38' ]
+uuids:           [ 'i386: E98CAC34-BB2B-3976-AD26-6B69C5E20E60', 'x86_64: B18BC088-8C98-3A3A-B08D-58E545D53614' ]
 platform:        ios
-install-name:    /usr/lib/libmenu.5.4.dylib
+install-name:    '/usr/lib/libmenu.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
     symbols:         [ ___menu_5_4VersionNumber, ___menu_5_4VersionString, __nc_Calculate_Item_Length_and_Width, 

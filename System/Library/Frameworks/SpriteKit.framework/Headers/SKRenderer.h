@@ -8,8 +8,8 @@
 #import <SpriteKit/SpriteKitBase.h>
 #import <SpriteKit/SKScene.h>
 
-/* SKRenderer is not available for WatchKit apps and the iOS simulator */
-#if SKVIEW_AVAILABLE && !TARGET_OS_SIMULATOR
+/* SKRenderer is not available for WatchKit apps*/
+#if SKVIEW_AVAILABLE
 
 #import <Metal/Metal.h>
 
@@ -18,8 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  A renderer for displaying a SpriteKit scene in an existing Metal workflow.
  */
-NS_AVAILABLE(10_13, 11_0)
-SK_EXPORT @interface SKRenderer : NSObject
+API_AVAILABLE(ios(11.0), tvos(11.0), watchos(4.0), macos(10.13)) SK_EXPORT @interface SKRenderer : NSObject
 
 /**
  Creates a renderer with the specified Metal device.

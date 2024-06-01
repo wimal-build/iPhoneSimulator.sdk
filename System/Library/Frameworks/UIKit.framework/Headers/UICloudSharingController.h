@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICloudSharingController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UICloudSharingController.h>)
 //
 //  UICloudSharingController.h
 //  UIKit
@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIViewController.h>
-#import <UIKit/UIActivityItemProvider.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class UICloudSharingController, CKShare, CKContainer;
+
+@protocol UIActivityItemSource;
 
 typedef NS_OPTIONS(NSUInteger, UICloudSharingPermissionOptions) {
     UICloudSharingPermissionStandard = 0, // Allow the user to configure the share with the standard set of options
@@ -23,9 +24,9 @@ typedef NS_OPTIONS(NSUInteger, UICloudSharingPermissionOptions) {
 
     UICloudSharingPermissionAllowReadOnly = 1 << 2,  // The user is allowed to grant participants read-only permissions
     UICloudSharingPermissionAllowReadWrite = 1 << 3, // The user is allowed to grant participants read/write permissions
-} NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
-__TVOS_PROHIBITED __WATCHOS_PROHIBITED
+API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos)
 @protocol UICloudSharingControllerDelegate <NSObject>
 
 - (void)cloudSharingController:(UICloudSharingController *)csc failedToSaveShareWithError:(NSError *)error;
@@ -44,10 +45,10 @@ __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UICloudSharingController : UIViewController
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) @interface UICloudSharingController : UIViewController
 
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
 
 /* Use this initializer when you want to share a set of CKRecords but haven't yet saved a CKShare.
  The preparation handler is called when it is time to save the share to the server.

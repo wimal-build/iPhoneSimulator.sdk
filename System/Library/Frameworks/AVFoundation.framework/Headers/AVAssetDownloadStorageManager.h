@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 	@group		AVAssetDownloadedAssetEvictionPriority string constants
 	@brief		Used by AVAssetDownloadStorageManagementPolicy.
 */
-typedef NSString *AVAssetDownloadedAssetEvictionPriority NS_STRING_ENUM API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos);
+typedef NSString *AVAssetDownloadedAssetEvictionPriority NS_STRING_ENUM API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
 /*!
 	@enum		AVAssetDownloadedAssetEvictionPriority
@@ -37,10 +37,10 @@ typedef NSString *AVAssetDownloadedAssetEvictionPriority NS_STRING_ENUM API_AVAI
 	@constant	AVAssetDownloadedAssetEvictionPriorityDefault
 				Used to mark assets have the default priority. They will be the first to be purged.
 */
-AVF_EXPORT AVAssetDownloadedAssetEvictionPriority const AVAssetDownloadedAssetEvictionPriorityImportant				API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos);
-AVF_EXPORT AVAssetDownloadedAssetEvictionPriority const AVAssetDownloadedAssetEvictionPriorityDefault				API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos);
+AVF_EXPORT AVAssetDownloadedAssetEvictionPriority const AVAssetDownloadedAssetEvictionPriorityImportant				API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
+AVF_EXPORT AVAssetDownloadedAssetEvictionPriority const AVAssetDownloadedAssetEvictionPriorityDefault				API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos)
+API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos)
 @interface AVAssetDownloadStorageManager : NSObject
 
 /*!
@@ -77,7 +77,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos)
  */
 @class AVAssetDownloadStorageManagementPolicyInternal;
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos)
+API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos)
 @interface AVAssetDownloadStorageManagementPolicy : NSObject <NSCopying, NSMutableCopying> {
 @private
 	AVAssetDownloadStorageManagementPolicyInternal    *_storageManagementPolicy;
@@ -105,7 +105,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos)
  
 	@discussion	System will put in best-effort to evict all the assets based on expirationDate before evicting based on priority.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos, watchos)
+API_AVAILABLE(macos(10.15), ios(11.0)) API_UNAVAILABLE(tvos, watchos)
 @interface AVMutableAssetDownloadStorageManagementPolicy : AVAssetDownloadStorageManagementPolicy
 
 /*

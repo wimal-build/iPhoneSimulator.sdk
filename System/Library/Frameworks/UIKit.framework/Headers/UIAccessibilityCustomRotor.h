@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityCustomRotor.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibilityCustomRotor.h>)
 //
 //  UIAccessibilityCustomRotor.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UITextInput.h>
+#import <UIKit/UIKitDefines.h>
 
 /*
  UIAccessibilityCustomRotor
@@ -28,8 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class UIAccessibilityCustomRotor, UIAccessibilityCustomRotorItemResult, UIAccessibilityCustomRotorSearchPredicate;
 
 typedef NS_ENUM(NSInteger, UIAccessibilityCustomRotorDirection) {
-    UIAccessibilityCustomRotorDirectionPrevious NS_ENUM_AVAILABLE_IOS(10_0),
-    UIAccessibilityCustomRotorDirectionNext NS_ENUM_AVAILABLE_IOS(10_0),
+    UIAccessibilityCustomRotorDirectionPrevious API_AVAILABLE(ios(10.0)),
+    UIAccessibilityCustomRotorDirectionNext API_AVAILABLE(ios(10.0)),
 };
 
 /*
@@ -56,27 +57,27 @@ typedef NS_ENUM(NSInteger, UIAccessibilityCustomSystemRotorType) {
     UIAccessibilityCustomSystemRotorTypeTable,
     UIAccessibilityCustomSystemRotorTypeList,
     UIAccessibilityCustomSystemRotorTypeLandmark,
-} NS_AVAILABLE_IOS(11_0);
+} API_AVAILABLE(ios(11.0));
 
 typedef UIAccessibilityCustomRotorItemResult *_Nullable(^UIAccessibilityCustomRotorSearch)(UIAccessibilityCustomRotorSearchPredicate *predicate);
 
 // Create the array of UIAccessibilityCustomRotors and set it on the target element or ancestor element to which it applies.
 @interface NSObject (UIAccessibilityCustomRotor)
-@property (nonatomic, retain, nullable) NSArray<UIAccessibilityCustomRotor *> *accessibilityCustomRotors NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, retain, nullable) NSArray<UIAccessibilityCustomRotor *> *accessibilityCustomRotors API_AVAILABLE(ios(10.0));
 @end
 
 // UIAccessibilityCustomRotorSearchPredicate is a container for search parameters.
 // It should be examined to determine the next matching UIAccessibilityCustomRotorItemResult.
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotorSearchPredicate : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIAccessibilityCustomRotorSearchPredicate : NSObject
 @property (nonatomic, retain) UIAccessibilityCustomRotorItemResult *currentItem;
 @property (nonatomic) UIAccessibilityCustomRotorDirection searchDirection;
 @end
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotor : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIAccessibilityCustomRotor : NSObject
 
 - (instancetype)initWithName:(NSString *)name itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock;
 - (instancetype)initWithAttributedName:(NSAttributedString *)attributedName itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock API_AVAILABLE(ios(11.0), tvos(11.0));
-- (instancetype)initWithSystemType:(UIAccessibilityCustomSystemRotorType)type itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock NS_AVAILABLE_IOS(11_0);
+- (instancetype)initWithSystemType:(UIAccessibilityCustomSystemRotorType)type itemSearchBlock:(UIAccessibilityCustomRotorSearch)itemSearchBlock API_AVAILABLE(ios(11.0));
 
 // The localized name the assistive technology will use to describe the custom rotor.
 @property (nonatomic, copy) NSString *name;
@@ -91,12 +92,12 @@ NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotor : NSObject
 
 // The system rotor type that was optionally used during initialization.
 // default = UIAccessibilityCustomSystemRotorTypeNone
-@property (nonatomic, readonly) UIAccessibilityCustomSystemRotorType systemRotorType NS_AVAILABLE_IOS(11_0);
+@property (nonatomic, readonly) UIAccessibilityCustomSystemRotorType systemRotorType API_AVAILABLE(ios(11.0));
 
 @end
 
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotorItemResult : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIAccessibilityCustomRotorItemResult : NSObject
 
 - (instancetype)initWithTargetElement:(id<NSObject>)targetElement targetRange:(nullable UITextRange *)targetRange;
 

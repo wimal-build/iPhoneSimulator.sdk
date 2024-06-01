@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_END
 @class NSImage;
 #endif
 
+#import <GameKit/GKAchievementDescription.h>
+
 @interface GKAchievementDescription (UI)
 
 #if TARGET_OS_IPHONE

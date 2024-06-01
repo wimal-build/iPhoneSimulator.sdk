@@ -2,7 +2,7 @@
 //  INUIAddVoiceShortcutButton
 //  IntentsUI
 //
-//  Copyright © 2018 Apple. All rights reserved.
+//  Copyright © 2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,7 +13,9 @@ typedef NS_ENUM(NSUInteger, INUIAddVoiceShortcutButtonStyle) {
     INUIAddVoiceShortcutButtonStyleWhite = 0,
     INUIAddVoiceShortcutButtonStyleWhiteOutline,
     INUIAddVoiceShortcutButtonStyleBlack,
-    INUIAddVoiceShortcutButtonStyleBlackOutline
+    INUIAddVoiceShortcutButtonStyleBlackOutline,
+    INUIAddVoiceShortcutButtonStyleAutomatic API_AVAILABLE(ios(13.0)),
+    INUIAddVoiceShortcutButtonStyleAutomaticOutline API_AVAILABLE(ios(13.0)),
 } API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(watchos, macosx, tvos);
 
 @class INShortcut, INUIAddVoiceShortcutButton, INUIAddVoiceShortcutViewController, INUIEditVoiceShortcutViewController;
@@ -29,11 +31,13 @@ API_UNAVAILABLE(watchos, macosx, tvos)
 
 API_AVAILABLE(ios(12.0))
 API_UNAVAILABLE(watchos, macosx, tvos)
-@interface INUIAddVoiceShortcutButton : UIButton
+IB_DESIGNABLE @interface INUIAddVoiceShortcutButton : UIButton
 
-- (instancetype)initWithStyle:(INUIAddVoiceShortcutButtonStyle)style;
+- (instancetype)initWithStyle:(INUIAddVoiceShortcutButtonStyle)style API_UNAVAILABLE(macCatalyst);
 
 @property (nonatomic, readonly) INUIAddVoiceShortcutButtonStyle style;
+
+- (void)setStyle:(INUIAddVoiceShortcutButtonStyle)style API_AVAILABLE(ios(13.0));
 
 @property (nonatomic, weak) id<INUIAddVoiceShortcutButtonDelegate> delegate;
 @property (nonatomic, strong, nullable) INShortcut *shortcut;
@@ -42,7 +46,7 @@ API_UNAVAILABLE(watchos, macosx, tvos)
  @abstract A custom corner radius for the @c INUIAddVoiceShortcutButton.
  @discussion If the provided corner radius is greater than half of the button’s height, it will be capped at half of the button’s height.
  */
-@property (nonatomic, assign) CGFloat cornerRadius API_AVAILABLE(ios(13.0));
+@property (nonatomic, assign) IBInspectable CGFloat cornerRadius API_AVAILABLE(ios(13.0));
 
 @end
 

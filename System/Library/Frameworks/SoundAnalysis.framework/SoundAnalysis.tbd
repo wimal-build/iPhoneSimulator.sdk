@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1167962C-7EF6-3390-BB87-42F092CC23B8' ]
+platform:        ios
+install-name:    '/System/Library/Frameworks/SoundAnalysis.framework/SoundAnalysis'
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _SNErrorDomain, _SNSoundIdentifierApplause, _SNSoundIdentifierBabble, 
+                       _SNSoundIdentifierCheering, _SNSoundIdentifierDistressedBaby, 
+                       _SNSoundIdentifierLaughter, _SNSoundIdentifierMusic, _SNSoundIdentifierSpeech, 
+                       _SNVGGishFeatureEmbeddingCustomModelName, _SNVGGishFrontEndProcessingCustomModelName ]
+    objc-classes:    [ SNAudioFileAnalyzer, SNAudioOffsetResult, SNAudioStreamAnalyzer, 
+                       SNClassification, SNClassificationResult, SNClassifySoundRequest, 
+                       SNCreateFeaturePrintRequest, SNDetectSignalThresholdRequest, 
+                       SNDetectSoundRequest, SNDetectSpeechUtteranceRequest, SNDetectionResult, 
+                       SNDirectionOfArrivalResult, SNEstimateAudioOffsetRequest, 
+                       SNEstimateDirectionOfArrivalRequest, SNFeaturePrint, SNLKFSResult, 
+                       SNMeasureLKFSRequest, SNNullRequest, SNNullResult, SNResultsCollector, 
+                       SNSignalThresholdResult, SNSpeechUtteranceResult ]
+...

@@ -2,7 +2,7 @@
 //  SCNConstraint.h
 //  SceneKit
 //
-//  Copyright © 2013-2018 Apple Inc. All rights reserved.
+//  Copyright © 2013-2019 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SceneKitTypes.h>
@@ -34,7 +34,7 @@ SCN_EXPORT API_AVAILABLE(macos(10.9))
 
 /*!
  @property incremental
- @abstract Specifies whether or not the contraint should applies incrementally and have it's effect being cumulated over the rendered frames. Defaults to YES on macOS 10.13, iOS 11, tvOS 11 and watchOS 4. Defaults to NO in earlier versions.
+ @abstract Specifies whether or not the contraint should applies incrementally and have it's effect being cumulated over the rendered frames. Defaults to YES starting macOS 10.13, iOS 11, tvOS 11 and watchOS 4. Defaults to NO in previous versions.
  */
 @property(nonatomic, getter=isIncremental) BOOL incremental API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0));
 

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Discussion:
  *   CMRecordedAccelerometerData contains data for each accelerometer sample.
  */
-NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(9.0), watchos(2.0)) API_UNAVAILABLE(macos)
 @interface CMRecordedAccelerometerData : CMAccelerometerData
 
 /*
@@ -53,7 +53,7 @@ NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) API_UNAVAILABLE(tvos)
  *   Due to the large number of samples that can be processed, the
  *   enumeration should not be run on the main/UI thread.
  */
-NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(9.0), watchos(2.0)) API_UNAVAILABLE(macos)
 @interface CMSensorDataList : NSObject <NSFastEnumeration>
 @end
 
@@ -66,7 +66,7 @@ NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) API_UNAVAILABLE(tvos)
  *    available for later access (up to 3 days) when the application
  *    is run at a later time.
  */
-NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(9.0), watchos(2.0)) API_UNAVAILABLE(macos)
 @interface CMSensorRecorder : NSObject
 
 /*
@@ -83,7 +83,7 @@ NS_CLASS_AVAILABLE(NA, 9_0) __WATCHOS_AVAILABLE(2.0) API_UNAVAILABLE(tvos)
  * Discussion:
  *   Returns the current authorization status for sensor recording.
  */
-+ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
++ (CMAuthorizationStatus)authorizationStatus COREMOTION_EXPORT API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macos);
 
 /*
  * isAuthorizedForRecording

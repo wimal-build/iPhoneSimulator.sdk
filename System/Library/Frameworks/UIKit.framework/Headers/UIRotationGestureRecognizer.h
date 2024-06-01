@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIRotationGestureRecognizer.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIRotationGestureRecognizer.h>)
 //
 //  UIRotationGestureRecognizer.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIGestureRecognizer.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Changes: when a finger moves while two fingers are down
 // Ends:    when both fingers have lifted
 
-NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIRotationGestureRecognizer : UIGestureRecognizer
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) API_UNAVAILABLE(tvos) @interface UIRotationGestureRecognizer : UIGestureRecognizer
 
 @property (nonatomic)          CGFloat rotation;            // rotation in radians
 @property (nonatomic,readonly) CGFloat velocity;            // velocity of the pinch in radians/second

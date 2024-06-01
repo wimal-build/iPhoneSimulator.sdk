@@ -7,27 +7,33 @@
 
 #import <FileProvider/NSFileProviderExtension.h>
 #import <FileProvider/NSFileProviderItem.h>
+#import <FileProvider/NSFileProviderSearchQuery.h>
+#if TARGET_OS_OSX
+#import <CoreGraphics/CoreGraphics.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- A user-defined chunk of data that defines a starting point to enumerate changes from.
+ A user-defined chunk of data that defines a starting point to enumerate changes
+ from.
 
  The size of a sync anchor should not exceed a combined 500 bytes.
  */
 typedef NSData *NSFileProviderSyncAnchor NS_TYPED_EXTENSIBLE_ENUM;
 
 /**
- A user- or system-defined chunk of data that defines a page to continue the enumeration from.
- Initial enumeration is started from one of the below system-defined pages.
+ A user- or system-defined chunk of data that defines a page to continue the
+ enumeration from.  Initial enumeration is started from one of the below
+ system-defined pages.
 
  The size of a page should not exceed 500 bytes.
  */
 typedef NSData *NSFileProviderPage NS_TYPED_EXTENSIBLE_ENUM;
 
-FOUNDATION_EXPORT API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+FOUNDATION_EXPORT API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos)
 NSFileProviderPage const NSFileProviderInitialPageSortedByDate;
-FOUNDATION_EXPORT API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+FOUNDATION_EXPORT API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos)
 NSFileProviderPage const NSFileProviderInitialPageSortedByName;
 
 @protocol NSFileProviderEnumerationObserver <NSObject>
@@ -87,7 +93,6 @@ NSFileProviderPage const NSFileProviderInitialPageSortedByName;
  nil.
  */
 - (void)finishEnumeratingWithError:(NSError *)error;
-
 @end
 
 
@@ -121,9 +126,9 @@ NSFileProviderPage const NSFileProviderInitialPageSortedByName;
  changes (not restricted to a specific page) since the given sync anchor.
 
  Until the enumeration update is invalidated, a call to -[NSFileProviderManager
- signalEnumeratorForContainerItemIdentifier:completionHandler:] will trigger a call
- to enumerateFromSyncAnchor with the latest known sync anchor, giving the file
- provider (app or extension) a chance to notify about changes.
+ signalEnumeratorForContainerItemIdentifier:completionHandler:] will trigger a
+ call to enumerateFromSyncAnchor with the latest known sync anchor, giving the
+ file provider (app or extension) a chance to notify about changes.
 
  The anchor data should contain whatever information is needed to resume
  enumerating changes from the previous synchronization point.  A naive sync
@@ -133,9 +138,9 @@ NSFileProviderPage const NSFileProviderInitialPageSortedByName;
  would only return the changes that happened after that date, which are
  therefore changes that the client doesn't yet know about.
 
- If anchor is nil, then the system is enumerating from scratch: the system wants
- to receives changes to reconstruct the list of items in this enumeration as if
- starting from an empty list.
+ NOTE that the change-based observation methods are marked optional for historical
+ reasons, but are really required. System performance will be severely degraded if
+ they are not implemented.
  */
 - (void)enumerateChangesForObserver:(id<NSFileProviderChangeObserver>)observer
                      fromSyncAnchor:(NSFileProviderSyncAnchor)syncAnchor NS_SWIFT_NAME(enumerateChanges(for:from:));
@@ -155,10 +160,15 @@ NSFileProviderPage const NSFileProviderInitialPageSortedByName;
    with moreComing:NO
 
  This method will be called again if you signal that there are more changes with
- -[NSFileProviderManager signalEnumeratorForContainerItemIdentifier:completionHandler:] and again,
- the system will enumerate changes until finishEnumeratingChangesUpToSyncAnchor:
- is called with moreComing:NO.
- */
+ -[NSFileProviderManager signalEnumeratorForContainerItemIdentifier:
+ completionHandler:] and again, the system will enumerate changes until
+ finishEnumeratingChangesUpToSyncAnchor: is called with moreComing:NO.
+
+ NOTE that the change-based observation methods are marked optional for historical
+ reasons, but are really required. System performance will be severely degraded if
+ they are not implemented.
+*/
+
 - (void)currentSyncAnchorWithCompletionHandler:(void(^)(_Nullable NSFileProviderSyncAnchor currentAnchor))completionHandler;
 
 @end
@@ -194,6 +204,26 @@ NSFileProviderPage const NSFileProviderInitialPageSortedByName;
  */
 - (nullable id<NSFileProviderEnumerator>)enumeratorForContainerItemIdentifier:(NSFileProviderItemIdentifier)containerItemIdentifier
                                                                         error:(NSError **)error NS_SWIFT_NAME(enumerator(for:));
+
+/**
+ Create an enumerator for all items matching a given search query.
+
+ In order to be invoked to perform a remote search a provider needs to specify
+ in its plist an array of supported search filters under the property name
+ NSExtensionFileProviderSupportedSearchCapabilities. The allowed values are:
+   - NSExtensionFileProviderSearchByFilename
+   - NSExtensionFileProviderSearchByContentType
+   - NSExtensionFileProviderSearchScopedToDirectory
+
+ NSExtensionFileProviderSearchByFilename is always assumed to be available.
+
+ The enumerator returned will be invalidated when the search results are
+ discarded.
+
+ If returning nil, you must set the error out parameter.
+ */
+- (nullable id<NSFileProviderEnumerator>)enumeratorForSearchQuery:(NSFileProviderSearchQuery *)searchQuery
+                                                            error:(NSError **)error API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(watchos, tvos) API_UNAVAILABLE(ios);
 
 @end
 

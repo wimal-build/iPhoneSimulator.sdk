@@ -1,5 +1,5 @@
 //
-//  RPVideoPreviewViewController.h
+//  RPPreviewViewController.h
 //  ReplayKit
 //
 //  Copyright © 2015 Apple Inc. All rights reserved.
@@ -16,11 +16,12 @@ typedef NS_ENUM(NSInteger, RPPreviewViewControllerMode) {
 
 NS_CLASS_AVAILABLE_IOS(9_0)
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol RPPreviewViewControllerDelegate;
+
 /*! @class RPPreviewViewController
  @abstract View controller that allows the user to preview/edit a movie recorded with ReplayKit. Passed into the completion handler supplied to [RPScreenRecorder stopRecordingWithHandler:].
  */
-@protocol RPPreviewViewControllerDelegate;
-
 @interface RPPreviewViewController : UIViewController
 @property (nonatomic, weak, nullable) id<RPPreviewViewControllerDelegate>previewControllerDelegate;
 @property (nonatomic, assign) RPPreviewViewControllerMode mode __IOS_PROHIBITED __TVOS_AVAILABLE(10_0);  // Set

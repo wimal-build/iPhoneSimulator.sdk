@@ -5,6 +5,7 @@
 //  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
+#import <TargetConditionals.h>
 #import <UIKit/UIKitDefines.h>
 
 #if __has_include(<UIKit/UIAccelerometer.h>)
@@ -18,11 +19,17 @@
 #import <UIKit/UIAccessibilityContentSizeCategoryImageAdjusting.h>
 #endif
 
-#if __has_include(<UIKit/UIActivityIndicatorView.h>)
-#import <UIKit/UIActivityIndicatorView.h>
+#if TARGET_OS_MACCATALYST
+#if __has_include(<UIKit/UIActivity.h>)
 #import <UIKit/UIActivity.h>
 #import <UIKit/UIActivityItemProvider.h>
 #import <UIKit/UIActivityViewController.h>
+#import <UIKit/UIDocumentInteractionController.h>
+#endif
+#endif
+
+#if __has_include(<UIKit/UIActivityIndicatorView.h>)
+#import <UIKit/UIActivityIndicatorView.h>
 #import <UIKit/UIActionSheet.h>
 #import <UIKit/UIAlertController.h>
 #import <UIKit/UIAlertView.h>
@@ -44,9 +51,16 @@
 #import <UIKit/UICollectionViewFlowLayout.h>
 #import <UIKit/UICollectionViewLayout.h>
 #import <UIKit/UICollectionViewTransitionLayout.h>
+#import <UIKit/UICollectionViewCompositionalLayout.h>
+#import <UIKit/UIDiffableDataSource.h>
 #endif
 
 #import <UIKit/UIColor.h>
+
+#if __has_include(<UIKit/UICommand.h>)
+#import <UIKit/UICommand.h>
+#import <UIKit/UIKeyCommand.h>
+#endif
 
 #if __has_include(<UIKit/UIContentSizeCategoryAdjusting.h>)
 #import <UIKit/UIContentSizeCategoryAdjusting.h>
@@ -56,7 +70,6 @@
 #import <UIKit/UIDatePicker.h>
 #import <UIKit/UIDevice.h>
 #import <UIKit/UIDocument.h>
-#import <UIKit/UIDocumentInteractionController.h>
 #import <UIKit/UIDocumentPickerViewController.h>
 #import <UIKit/UIDocumentMenuViewController.h>
 #import <UIKit/UIDocumentPickerExtensionViewController.h>
@@ -74,12 +87,19 @@
 #import <UIKit/UIFontMetrics.h>
 #import <UIKit/UIGeometry.h>
 
+#if __has_include(<UIKit/UIFontPickerViewController.h>)
+#import <UIKit/UIFontPickerViewController.h>
+#import <UIKit/UIFontPickerViewControllerConfiguration.h>
+#endif
+
 #if __has_include(<UIKit/UIGestureRecognizer.h>)
 #import <UIKit/UIGestureRecognizer.h>
 #endif
 
 #import <UIKit/UIGraphics.h>
 #import <UIKit/UIImage.h>
+#import <UIKit/UIImageConfiguration.h>
+#import <UIKit/UIImageSymbolConfiguration.h>
 
 #if __has_include(<UIKit/UIGraphicsRenderer.h>)
 #import <UIKit/UIGraphicsRenderer.h>
@@ -87,9 +107,10 @@
 #import <UIKit/UIGraphicsPDFRenderer.h>
 #endif
 
+#import <UIKit/NSDataAsset.h>
+
 #if __has_include(<UIKit/UIImageAsset.h>)
 #import <UIKit/UIImageAsset.h>
-#import <UIKit/NSDataAsset.h>
 #import <UIKit/UIImagePickerController.h>
 #import <UIKit/UIImageView.h>
 #import <UIKit/UIInputView.h>
@@ -97,6 +118,10 @@
 #import <UIKit/UIInterface.h>
 #import <UIKit/UILabel.h>
 #import <UIKit/UILexicon.h>
+#endif
+
+#if __has_include(<UIKit/UILargeContentViewer.h>)
+#import <UIKit/UILargeContentViewer.h>
 #endif
 
 #import <UIKit/UILocalNotification.h>
@@ -111,6 +136,7 @@
 #import <UIKit/UIFocusAnimationCoordinator.h>
 #import <UIKit/UIFocusDebugger.h>
 #import <UIKit/UIFocusMovementHint.h>
+#import <UIKit/UIHoverGestureRecognizer.h>
 #import <UIKit/UILocalizedIndexedCollation.h>
 #import <UIKit/UILongPressGestureRecognizer.h>
 #import <UIKit/UIManagedDocument.h>
@@ -154,6 +180,7 @@
 #import <UIKit/UISearchContainerViewController.h>
 #import <UIKit/UISearchController.h>
 #import <UIKit/UISearchDisplayController.h>
+#import <UIKit/UISearchTextField.h>
 #import <UIKit/UISegmentedControl.h>
 #import <UIKit/UISlider.h>
 #import <UIKit/UISplitViewController.h>
@@ -197,6 +224,18 @@
 #import <UIKit/UITargetedDragPreview.h>
 #import <UIKit/UISpringLoadedInteraction.h>
 #import <UIKit/UISpringLoadedInteractionSupporting.h>
+#import <UIKit/UITargetedPreview.h>
+#import <UIKit/UIPreviewParameters.h>
+
+#import <UIKit/UIBarAppearance.h>
+#import <UIKit/UIBarButtonItemAppearance.h>
+#import <UIKit/UINavigationBarAppearance.h>
+#import <UIKit/UIToolbarAppearance.h>
+#import <UIKit/UITabBarAppearance.h>
+
+#import <UIKit/UIActivityItemsConfigurationReading.h>
+#import <UIKit/UIActivityItemsConfiguration.h>
+#import <UIKit/UIResponder+UIActivityItemsConfiguration.h>
 
 #endif
 
@@ -277,6 +316,10 @@
 #import <UIKit/UIPopoverSupport.h>
 #endif
 
+#if __has_include(<UIKit/UITextInteraction.h>)
+#import <UIKit/UITextInteraction.h>
+#endif
+
 #if __has_include(<UIKit/UITextItemInteraction.h>)
 #import <UIKit/UITextItemInteraction.h>
 #endif
@@ -338,6 +381,7 @@
 #endif
 
 #if __has_include(<UIKit/UIGuidedAccessRestrictions.h>)
+#import <UIKit/UIGuidedAccess.h>
 #import <UIKit/UIGuidedAccessRestrictions.h>
 #endif
 
@@ -371,4 +415,44 @@
 
 #if __has_include(<UIKit/UIPencilInteraction.h>)
     #import <UIKit/UIPencilInteraction.h>
+#endif
+
+#if __has_include(<UIKit/UIScene.h>)
+    #import <UIKit/UISceneDefinitions.h>
+    #import <UIKit/UISceneOptions.h>
+    #import <UIKit/UIScene.h>
+    #import <UIKit/UIWindowScene.h>
+    #import <UIKit/UISceneSession.h>
+    #import <UIKit/UISceneActivationConditions.h>
+    #import <UIKit/UIOpenURLContext.h>
+    #import <UIKit/UIStatusBarManager.h>
+    #import <UIKit/UIScreenshotService.h>
+#endif
+
+#if __has_include(<UIKit/NSUserActivity+NSItemProvider.h>)
+    #import <UIKit/NSUserActivity+NSItemProvider.h>
+#endif
+
+#if __has_include(<UIKit/UNNotificationResponse+UIKitAdditions.h>)
+    #import <UIKit/UNNotificationResponse+UIKitAdditions.h>
+#endif
+	
+#if __has_include(<UIKit/UIAction.h>)
+#import <UIKit/UIAction.h>
+#endif
+
+#if __has_include(<UIKit/UIMenu.h>)
+#import <UIKit/UIMenu.h>
+#import <UIKit/UIMenuBuilder.h>
+#import <UIKit/UIMenuElement.h>
+#import <UIKit/UIMenuSystem.h>
+#endif
+
+#if __has_include(<UIKit/UIContextMenuInteraction.h>)
+#import <UIKit/UIContextMenuInteraction.h>
+#import <UIKit/UIContextMenuConfiguration.h>
+#endif
+
+#if __has_include(<UIKit/UITextFormattingCoordinator.h>)
+#import <UIKit/UITextFormattingCoordinator.h>
 #endif

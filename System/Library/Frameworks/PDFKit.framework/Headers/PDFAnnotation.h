@@ -1,6 +1,6 @@
 //
 //  PDFAnnotation.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFAnnotation is a wrapper class of all annotation types for a PDF document.
 //  It is a container of key-value pairs that map directly to the PDF file format, defined

@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Photos/PHChangeRequest.h>
 #import <Photos/PHFetchResult.h>
 
 @class PHAsset;
@@ -13,9 +14,11 @@
 @class PHObjectPlaceholder;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.15), ios(8), tvos(10))
 
 // PHAssetCollectionChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
-@interface PHAssetCollectionChangeRequest : NSObject
+OS_EXPORT
+@interface PHAssetCollectionChangeRequest : PHChangeRequest
 
 #pragma mark - Creating Asset Collections
 
@@ -27,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Deleting Asset Collections
 
-// requests that the specified asset collections be deleted 
+// requests that the specified asset collections be deleted
 + (void)deleteAssetCollections:(id<NSFastEnumeration>)assetCollections;
 
 #pragma mark - Modifying Asset Collections
@@ -51,4 +54,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

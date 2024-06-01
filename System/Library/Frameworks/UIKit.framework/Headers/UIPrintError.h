@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrintError.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPrintError.h>)
 //
 //  UIPrintError.h
 //  UIKit
@@ -11,14 +11,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-UIKIT_EXTERN NSErrorDomain const UIPrintErrorDomain __TVOS_PROHIBITED;
+UIKIT_EXTERN NSErrorDomain const UIPrintErrorDomain API_UNAVAILABLE(tvos);
 
 typedef NS_ERROR_ENUM(UIPrintErrorDomain, UIPrintErrorCode) {
     UIPrintingNotAvailableError = 1,  // cannot print at this time
     UIPrintNoContentError,            // empty list of files or images
     UIPrintUnknownImageFormatError,   // unrecognized image format
     UIPrintJobFailedError,            // internal error with print job
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 NS_ASSUME_NONNULL_END
 

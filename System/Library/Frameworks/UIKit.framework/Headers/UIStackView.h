@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStackView.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIStackView.h>)
 //
 //  UIStackView.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 
 /* Distribution—the layout along the stacking axis.
  
@@ -49,7 +50,7 @@ typedef NS_ENUM(NSInteger, UIStackViewDistribution) {
      (edge-to-edge) spacing as a minimum.
      */
     UIStackViewDistributionEqualCentering,
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} API_AVAILABLE(ios(9.0));
 
 /* Alignment—the layout transverse to the stacking axis.
  */
@@ -79,7 +80,7 @@ typedef NS_ENUM(NSInteger, UIStackViewAlignment) {
     UIStackViewAlignmentTrailing,
     UIStackViewAlignmentBottom = UIStackViewAlignmentTrailing,
     UIStackViewAlignmentLastBaseline, // Valid for horizontal axis only
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} API_AVAILABLE(ios(9.0));
 
 /* Used when setting custom spacing after an arranged subview to indicate reverting to 
  the value specified by the spacing property. 
@@ -119,7 +120,7 @@ static const CGFloat UIStackViewSpacingUseSystem API_AVAILABLE(ios(11.0),tvos(11
  viewForFirst/LastBaselineLayout from that stack view.
  */
 NS_ASSUME_NONNULL_BEGIN
-NS_CLASS_AVAILABLE_IOS(9_0)
+UIKIT_EXTERN API_AVAILABLE(ios(9.0))
 @interface UIStackView : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;

@@ -21,7 +21,11 @@
 #import <ARKit/ARReferenceImage.h>
 #import <ARKit/ARReferenceObject.h>
 #import <ARKit/ARVideoFormat.h>
+#import <ARKit/ARCollaborationData.h>
 #import <ARKit/ARWorldMap.h>
+#import <ARKit/ARRaycastQuery.h>
+#import <ARKit/ARTrackedRaycast.h>
+#import <ARKit/ARRaycastResult.h>
 
 #import <ARKit/ARAnchor.h>
 #import <ARKit/AREnvironmentProbeAnchor.h>
@@ -29,8 +33,18 @@
 #import <ARKit/ARFaceGeometry.h>
 #import <ARKit/ARImageAnchor.h>
 #import <ARKit/ARObjectAnchor.h>
+#import <ARKit/ARParticipantAnchor.h>
 #import <ARKit/ARPlaneAnchor.h>
 #import <ARKit/ARPlaneGeometry.h>
 
+#import <ARKit/ARSkeleton.h>
+#import <ARKit/ARSkeletonDefinition.h>
+#import <ARKit/ARBody2D.h>
+#import <ARKit/ARBodyAnchor.h>
+
+#import <ARKit/ARCoachingOverlayView.h>
 #import <ARKit/ARSCNView.h>
 #import <ARKit/ARSKView.h>
+#import <ARKit/ARMatteGenerator.h>
+
+#import <ARKit/ARQuickLookPreviewItem.h>

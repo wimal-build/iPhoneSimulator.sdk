@@ -1,6 +1,6 @@
 //
 //  PDFKit.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 
 // Cross-platform support

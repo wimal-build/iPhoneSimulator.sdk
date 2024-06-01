@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <FileProvider/NSFileProviderExtension.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NSString *NSFileProviderDomainIdentifier NS_EXTENSIBLE_STRING_ENUM;
@@ -32,7 +33,7 @@ typedef NSString *NSFileProviderDomainIdentifier NS_EXTENSIBLE_STRING_ENUM;
  common directory. That directory path is indicated by the
  @p pathRelativeToDocumentStorage property.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos)
 @interface NSFileProviderDomain : NSObject
 
 /**
@@ -65,11 +66,23 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  */
 @property (readonly, copy) NSString *pathRelativeToDocumentStorage;
 
+
+/* If set, the domain is present, but disconnected from its extension.
+ In this state, the user continues to be able to browse the domain's contents,
+ but the extension doesn't receive updates on modifications to the files, nor is
+ it consulted to update folder's contents.
+
+ The disconnected state can be modified on an existing domain by recreating a domain
+ with the same identifier, then passing it to addDomain.
+ */
+@property (readwrite, getter=isDisconnected) BOOL disconnected API_AVAILABLE(macos(10.15)) API_UNAVAILABLE(watchos, tvos) API_UNAVAILABLE(ios);
+
 @end
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos)
 @interface NSFileProviderExtension (NSFileProviderDomain)
 @property(nonatomic, readonly, nullable) NSFileProviderDomain *domain;
 @end
 
 NS_ASSUME_NONNULL_END
+

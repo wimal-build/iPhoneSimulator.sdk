@@ -1,10 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E2AF092D-E69E-3E2B-A672-76C4021611F3', 'x86_64: 9525677A-E645-31EF-B14D-AACC43D595FD' ]
+uuids:           [ 'i386: E2AF092D-E69E-3E2B-A672-76C4021611F3', 'x86_64: 2D5D52D3-A38B-30E5-83C1-2E2211AC7D0C' ]
 platform:        ios
-install-name:    /usr/lib/libChineseTokenizer.dylib
-current-version: 28.15.3
-objc-constraint: none
+install-name:    '/usr/lib/libChineseTokenizer.dylib'
+current-version: 34
 exports:         
   - archs:           [ i386 ]
     weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 

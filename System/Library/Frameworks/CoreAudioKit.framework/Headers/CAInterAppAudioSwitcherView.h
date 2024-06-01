@@ -12,9 +12,9 @@
 #import <AudioUnit/AudioUnit.h>
 #import <UIKit/UIKit.h>
 
-NS_CLASS_AVAILABLE_IOS(8_0)
-
 NS_ASSUME_NONNULL_BEGIN
+
+API_DEPRECATED("Inter-App Audio API is deprecated in favor of Audio Units", ios(8.0, 13.0)) API_UNAVAILABLE(macCatalyst, macos, tvos, watchos)
 @interface CAInterAppAudioSwitcherView : UIView
 @property (getter = isShowingAppNames) BOOL showingAppNames; // Defaults to NO
 

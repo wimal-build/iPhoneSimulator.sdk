@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPinchGestureRecognizer.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPinchGestureRecognizer.h>)
 //
 //  UIPinchGestureRecognizer.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIGestureRecognizer.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Changes: when a finger moves while two fingers remain down
 // Ends:    when both fingers have lifted
 
-NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIPinchGestureRecognizer : UIGestureRecognizer
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) API_UNAVAILABLE(tvos) @interface UIPinchGestureRecognizer : UIGestureRecognizer
 
 @property (nonatomic)          CGFloat scale;               // scale relative to the touch points in screen coordinates
 @property (nonatomic,readonly) CGFloat velocity;            // velocity of the pinch in scale/second

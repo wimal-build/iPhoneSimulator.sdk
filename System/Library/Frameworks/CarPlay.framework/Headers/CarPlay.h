@@ -27,6 +27,7 @@
 #import <CarPlay/CPSearchTemplate.h>
 #import <CarPlay/CPSessionConfiguration.h>
 #import <CarPlay/CPTemplate.h>
+#import <CarPlay/CPTemplateApplicationScene.h>
 #import <CarPlay/CPTravelEstimates.h>
 #import <CarPlay/CPTrip.h>
 #import <CarPlay/CPTripPreviewTextConfiguration.h>

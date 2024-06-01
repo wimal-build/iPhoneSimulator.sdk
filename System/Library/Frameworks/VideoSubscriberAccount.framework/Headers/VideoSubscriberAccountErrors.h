@@ -40,8 +40,9 @@ typedef NS_ENUM(NSInteger, VSErrorCode)
     VSErrorCodeUnsupportedProvider = 1, // The system does not currently support the user's subscription provider.
     VSErrorCodeUserCancelled = 2, // The request was cancelled by the user.
     VSErrorCodeServiceTemporarilyUnavailable = 3, // The request failed, but a subsequent attempt might succeed.
-    VSErrorCodeProviderRejected = 4,// The user's subscription provider did not allow the request to proceed, e.g. because the subscription tier doesn't include the resource, or interactive reauthentication is required, but the request does not allow interruption.
-    VSErrorCodeInvalidVerificationToken = 5,// The request's verification token was rejected by the user's subscription provider.
+    VSErrorCodeProviderRejected = 4, // The user's subscription provider did not allow the request to proceed, e.g. because the subscription tier doesn't include the resource, or interactive reauthentication is required, but the request does not allow interruption.
+    VSErrorCodeInvalidVerificationToken = 5, // The request's verification token was rejected by the user's subscription provider.
+    VSErrorCodeRejected = 6 // For use by TV Provider applications only.
 }
 API_AVAILABLE(ios(10.0), tvos(10.0));
 

@@ -8,18 +8,19 @@
 #import <Photos/PHObject.h>
 #import <Photos/PHFetchResult.h>
 #import <Photos/PhotosTypes.h>
-#import <Photos/PhotosDefines.h>
 
 @class PHAsset, PHCollectionList, PHFetchResult, PHFetchOptions;
 @class CLLocation;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.15), ios(8), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollection : PHObject
+OS_EXPORT API_AVAILABLE(macos(10.13))
+@interface PHCollection : PHObject
 
 @property (nonatomic, assign, readonly) BOOL canContainAssets;
 @property (nonatomic, assign, readonly) BOOL canContainCollections;
-@property (nonatomic, strong, readonly, nullable) NSString *localizedTitle;
+@property (nonatomic, strong, readonly, nullable) NSString *localizedTitle API_AVAILABLE(macos(10.13));
 
 #pragma mark - Capabilities
 
@@ -34,7 +35,9 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollection : PHObject
 @end
 
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetCollection : PHCollection
+#pragma mark -
+OS_EXPORT API_AVAILABLE(macos(10.13))
+@interface PHAssetCollection : PHCollection
 
 @property (nonatomic, assign, readonly) PHAssetCollectionType assetCollectionType;
 @property (nonatomic, assign, readonly) PHAssetCollectionSubtype assetCollectionSubtype;
@@ -64,10 +67,12 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetCollection : PHColl
 + (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsWithALAssetGroupURLs:(NSArray<NSURL *> *)assetGroupURLs options:(nullable PHFetchOptions *)options;
 
 
-#pragma mark - Fetching moment asset collections
+#pragma mark - Fetching moment asset collections (Deprecated)
 
-+ (PHFetchResult<PHAssetCollection *> *)fetchMomentsInMomentList:(PHCollectionList *)momentList options:(nullable PHFetchOptions *)options;
-+ (PHFetchResult<PHAssetCollection *> *)fetchMomentsWithOptions:(nullable PHFetchOptions *)options;
+
++ (PHFetchResult<PHAssetCollection *> *)fetchMomentsInMomentList:(PHCollectionList *)momentList options:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos);
++ (PHFetchResult<PHAssetCollection *> *)fetchMomentsWithOptions:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos);
+
 
 
 #pragma mark - Transient asset collections
@@ -80,7 +85,9 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetCollection : PHColl
 @end
 
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionList : PHCollection
+#pragma mark -
+OS_EXPORT API_AVAILABLE(macos(10.13))
+@interface PHCollectionList : PHCollection
 
 @property (nonatomic, assign, readonly) PHCollectionListType collectionListType;
 @property (nonatomic, assign, readonly) PHCollectionListSubtype collectionListSubtype;
@@ -104,10 +111,12 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionList : PHColle
 + (PHFetchResult<PHCollectionList *> *)fetchCollectionListsWithType:(PHCollectionListType)collectionListType subtype:(PHCollectionListSubtype)subtype options:(nullable PHFetchOptions *)options;
 
 
-#pragma mark - Fetching moment collection lists
+#pragma mark - Fetching moment collection lists (Deprecated)
 
-+ (PHFetchResult<PHCollectionList *> *)fetchMomentListsWithSubtype:(PHCollectionListSubtype)momentListSubtype containingMoment:(PHAssetCollection *)moment options:(nullable PHFetchOptions *)options;
-+ (PHFetchResult<PHCollectionList *> *)fetchMomentListsWithSubtype:(PHCollectionListSubtype)momentListSubtype options:(nullable PHFetchOptions *)options;
+
++ (PHFetchResult<PHCollectionList *> *)fetchMomentListsWithSubtype:(PHCollectionListSubtype)momentListSubtype containingMoment:(PHAssetCollection *)moment options:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos);
++ (PHFetchResult<PHCollectionList *> *)fetchMomentListsWithSubtype:(PHCollectionListSubtype)momentListSubtype options:(nullable PHFetchOptions *)options API_DEPRECATED("Will be removed in a future release", ios(8, 13), tvos(10, 13)) API_UNAVAILABLE(macos);
+
 
 
 #pragma mark - Transient collection lists
@@ -118,4 +127,5 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionList : PHColle
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

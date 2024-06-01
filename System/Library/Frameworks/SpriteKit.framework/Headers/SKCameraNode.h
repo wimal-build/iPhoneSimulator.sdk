@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  * In order to use a camera; set it on the scene that contains the camera.
  * @see SKScene.camera
  */
-SK_EXPORT NS_AVAILABLE(10_11, 9_0) @interface SKCameraNode : SKNode
+SK_EXPORT API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11)) @interface SKCameraNode : SKNode
 
 /**Checks if the node is contained inside the viewport of the camera.
  * The camera and node must both be in the same scene and presented on a view in order

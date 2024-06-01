@@ -9,7 +9,7 @@
 #if TARGET_OS_IOS
 #import <AVKit/AVPlayerViewController.h>
 
-@interface AVPlayerViewController (iAdPreroll)
+NS_CLASS_DEPRECATED(10_14, 10_14, 8_0, 13_0) @interface AVPlayerViewController (iAdPreroll)
 
 NS_ASSUME_NONNULL_BEGIN
 

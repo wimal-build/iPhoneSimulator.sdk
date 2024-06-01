@@ -1,9 +1,9 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINibDeclarations.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UINibDeclarations.h>)
 //
 //  UINibDeclarations.h
 //  UIKit
 //
-//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2019 Apple Inc. All rights reserved.
 //
 
 #ifndef IBOutlet
@@ -24,6 +24,10 @@
 
 #ifndef IB_DESIGNABLE
 #define IB_DESIGNABLE
+#endif
+
+#ifndef IBSegueAction
+#define IBSegueAction
 #endif
 
 

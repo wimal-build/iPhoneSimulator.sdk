@@ -13,13 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class CXCallDirectoryExtensionContext;
 
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @protocol CXCallDirectoryExtensionContextDelegate <NSObject>
 
 - (void)requestFailedForExtensionContext:(CXCallDirectoryExtensionContext *)extensionContext withError:(NSError *)error;
 
 @end
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXCallDirectoryExtensionContext : NSExtensionContext
 
 @property (nonatomic, weak, nullable) id<CXCallDirectoryExtensionContextDelegate> delegate;
@@ -33,7 +34,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
  a "complete" set of entries, adding the full list of entries from scratch (and removing none), regardless of whether data has ever been
  successfully loaded in the past.
  */
-@property (nonatomic, readonly, getter=isIncremental) BOOL incremental API_AVAILABLE(ios(11.0));
+@property (nonatomic, readonly, getter=isIncremental) BOOL incremental API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 - (void)addBlockingEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber;
 
@@ -45,7 +46,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
  @param phoneNumber The blocking entry phone number to remove.
  */
-- (void)removeBlockingEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber API_AVAILABLE(ios(11.0));
+- (void)removeBlockingEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 /**
  Remove all currently-stored blocking entries.
@@ -53,7 +54,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
  May only be used when `-isIncremental` returns YES, indicating that the request should provide incremental entries and thus may use this
  API to remove all previously-added blocking entries.
  */
-- (void)removeAllBlockingEntries API_AVAILABLE(ios(11.0));
+- (void)removeAllBlockingEntries API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 - (void)addIdentificationEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber label:(NSString *)label;
 
@@ -66,7 +67,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
  @param phoneNumber The identification entry phone number to remove.
  */
-- (void)removeIdentificationEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber API_AVAILABLE(ios(11.0));
+- (void)removeIdentificationEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 /**
  Remove all currently-stored identification entries.
@@ -74,7 +75,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
  May only be used when `-isIncremental` returns YES, indicating that the request should provide incremental entries and thus may use this
  API to remove all previously-added identification entries.
  */
-- (void)removeAllIdentificationEntries API_AVAILABLE(ios(11.0));
+- (void)removeAllIdentificationEntries API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE(macos, watchos);
 
 - (void)completeRequestWithCompletionHandler:(nullable void (^)(BOOL expired))completion;
 

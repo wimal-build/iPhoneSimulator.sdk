@@ -27,6 +27,7 @@ CB_EXTERN_CLASS @interface CBManager : NSObject
  *  @constant CBManagerStatePoweredOff    Bluetooth is currently powered off.
  *  @constant CBManagerStatePoweredOn     Bluetooth is currently powered on and available to use.
  *
+ *	@seealso  authorization
  */
 typedef NS_ENUM(NSInteger, CBManagerState) {
 	CBManagerStateUnknown = 0,
@@ -45,5 +46,33 @@ typedef NS_ENUM(NSInteger, CBManagerState) {
  *
  */
 @property(nonatomic, assign, readonly) CBManagerState state;
+
+/*!
+ *  @enum CBManagerAuthorization
+ *
+ *  @discussion Represents the current authorization state of a CBManager.
+ *
+ *  @constant CBManagerAuthorizationStatusNotDetermined			User has not yet made a choice with regards to this application.
+ *  @constant CBManagerAuthorizationStatusRestricted			This application is not authorized to use bluetooth. The user cannot change this application’s status,
+ * 																possibly due to active restrictions such as parental controls being in place.
+ *  @constant CBManagerAuthorizationStatusDenied				User has explicitly denied this application from using bluetooth.
+ *  @constant CBManagerAuthorizationStatusAuthorizedAlways		User has authorized this application to use bluetooth always.
+ *
+ */
+typedef NS_ENUM(NSInteger, CBManagerAuthorization) {
+	CBManagerAuthorizationNotDetermined = 0,
+	CBManagerAuthorizationRestricted,
+	CBManagerAuthorizationDenied,
+	CBManagerAuthorizationAllowedAlways
+} NS_ENUM_AVAILABLE(10_15, 13_0);
+
+/*!
+ *  @property authorization
+ *
+ *  @discussion The current authorization of the manager, initially set to <code>CBManagerAuthorizationNotDetermined</code>.
+ *				Updates are provided by required delegate method {@link managerDidUpdateState:}.
+ *  @seealso	state
+ */
+@property(nonatomic, assign, readonly) CBManagerAuthorization authorization;
 
 @end

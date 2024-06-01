@@ -91,6 +91,8 @@ typedef NS_ENUM(NSUInteger, HKWorkoutActivityType) {
     HKWorkoutActivityTypeTaiChi             API_AVAILABLE(ios(11.0), watchos(4.0)),
     HKWorkoutActivityTypeMixedCardio        API_AVAILABLE(ios(11.0), watchos(4.0)),    // HKWorkoutActivityTypeMixedMetabolicCardioTraining
     HKWorkoutActivityTypeHandCycling        API_AVAILABLE(ios(11.0), watchos(4.0)),
+    HKWorkoutActivityTypeDiscSports         API_AVAILABLE(ios(13.0), watchos(6.0)),
+    HKWorkoutActivityTypeFitnessGaming      API_AVAILABLE(ios(13.0), watchos(6.0)),
     
     HKWorkoutActivityTypeOther = 3000,
 } API_AVAILABLE(ios(8.0), watchos(2.0));

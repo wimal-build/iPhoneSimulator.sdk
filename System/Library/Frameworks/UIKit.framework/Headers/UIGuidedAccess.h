@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGuidedAccess.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIGuidedAccess.h>)
 //
 //  UIGuidedAccess.h
 //  UIKit
@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, UIGuidedAccessRestrictionState) {
  
  The initial state of all Guided Access restrictions is UIGuidedAccessRestrictionStateAllow.
  */
-NS_CLASS_AVAILABLE_IOS(7_0) @protocol UIGuidedAccessRestrictionDelegate <NSObject>
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @protocol UIGuidedAccessRestrictionDelegate <NSObject>
 
 @required
 
@@ -55,11 +55,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @protocol UIGuidedAccessRestrictionDelegate <NSObjec
  Each restriction identifier must be unique string.
  For example: com.MyCompany.MyApp.SomeRestrictionIdentifier
  */
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly, nullable) NSArray<NSString *> *guidedAccessRestrictionIdentifiers;
-#else
-- (nullable NSArray<NSString *> *)guidedAccessRestrictionIdentifiers;
-#endif
 
 // Called each time the restriction associated with the identifier changes state.
 - (void)guidedAccessRestrictionWithIdentifier:(NSString *)restrictionIdentifier didChangeState:(UIGuidedAccessRestrictionState)newRestrictionState;
@@ -75,7 +71,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @protocol UIGuidedAccessRestrictionDelegate <NSObjec
 @end
 
 // Returns the state of the restriction associated with the identifier.
-UIKIT_EXTERN UIGuidedAccessRestrictionState UIGuidedAccessRestrictionStateForIdentifier(NSString *restrictionIdentifier) NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIGuidedAccessRestrictionState UIGuidedAccessRestrictionStateForIdentifier(NSString *restrictionIdentifier) API_AVAILABLE(ios(7.0));
 
 /*
  * Applications that are locked into Guided Access via a Single App Mode profile are granted the ability to configure certain accessibility features,

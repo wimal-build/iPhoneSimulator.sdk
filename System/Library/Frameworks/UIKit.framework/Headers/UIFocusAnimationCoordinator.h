@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFocusAnimationCoordinator.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIFocusAnimationCoordinator.h>)
 //
 //  UIFocusAnimationCoordinator.h
 //  UIKit
@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 
 /// UIFocusAnimationContext is used to provide UIKit-determined context about animations that are related to a focus update.
-NS_CLASS_AVAILABLE_IOS(11_0) @protocol UIFocusAnimationContext <NSObject>
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) @protocol UIFocusAnimationContext <NSObject>
 
 /// The duration of the main animations in seconds.
 @property (nonatomic, readonly) NSTimeInterval duration;
@@ -20,7 +21,7 @@ NS_CLASS_AVAILABLE_IOS(11_0) @protocol UIFocusAnimationContext <NSObject>
 @end
 
 /// UIFocusAnimationCoordinator is used to coordinate disparate animations that are related to a focus update.
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIFocusAnimationCoordinator : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIFocusAnimationCoordinator : NSObject
 
 /**
  Specifies focus-related animations that should be coordinated with the animations of the focusing or un-focusing view.

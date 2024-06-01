@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIViewControllerTransitioning.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIViewControllerTransitioning.h>)
 //
 //  UIViewControllerTransitioning.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewController.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIViewControllerTransitionCoordinator.h>
 #import <UIKit/UIViewAnimating.h>
 #import <UIKit/UITimingParameters.h>
@@ -19,19 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 // The following keys are understood by UIViewControllerContextTransitioning context objects
 // that are created by the system.
 
-#if UIKIT_STRING_ENUMS
-UIKIT_EXTERN UITransitionContextViewControllerKey const UITransitionContextFromViewControllerKey NS_SWIFT_NAME(from) NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN UITransitionContextViewControllerKey const UITransitionContextToViewControllerKey NS_SWIFT_NAME(to) NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UITransitionContextViewControllerKey const UITransitionContextFromViewControllerKey NS_SWIFT_NAME(from) API_AVAILABLE(ios(7.0));
+UIKIT_EXTERN UITransitionContextViewControllerKey const UITransitionContextToViewControllerKey NS_SWIFT_NAME(to) API_AVAILABLE(ios(7.0));
 
-UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextFromViewKey NS_SWIFT_NAME(from) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_SWIFT_NAME(to) NS_AVAILABLE_IOS(8_0);
-#else
-UIKIT_EXTERN UITransitionContextViewControllerKey const UITransitionContextFromViewControllerKey NS_AVAILABLE_IOS(7_0);
-UIKIT_EXTERN UITransitionContextViewControllerKey const UITransitionContextToViewControllerKey NS_AVAILABLE_IOS(7_0);
-
-UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextFromViewKey NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AVAILABLE_IOS(8_0);
-#endif
+UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextFromViewKey NS_SWIFT_NAME(from) API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_SWIFT_NAME(to) API_AVAILABLE(ios(8.0));
 
 
 // A transition context object is constructed by the system and passed to the
@@ -74,32 +67,18 @@ UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AV
 @protocol UIViewControllerContextTransitioning <NSObject>
 
 // The view in which the animated transition should take place.
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) UIView *containerView;
-#else
-- (UIView *)containerView;
-#endif
 
 // Most of the time this is YES. For custom transitions that use the new UIModalPresentationCustom
 // presentation type we will invoke the animateTransition: even though the transition should not be
 // animated. This allows the custom transition to add or remove subviews to the container view. 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly, getter=isAnimated) BOOL animated;
 
+// The next two values can change if the animating transition is interruptible.
 @property(nonatomic, readonly, getter=isInteractive) BOOL interactive; // This indicates whether the transition is currently interactive.
-
 @property(nonatomic, readonly) BOOL transitionWasCancelled;
 
 @property(nonatomic, readonly) UIModalPresentationStyle presentationStyle;
-#else
-- (BOOL)isAnimated;
-
-// The next two values can change if the animating transition is interruptible.
-- (BOOL)isInteractive; // This indicates whether the transition is currently interactive.
-- (BOOL)transitionWasCancelled;
-
-- (UIModalPresentationStyle)presentationStyle;
-#endif
 
 // An interaction controller that conforms to the
 // UIViewControllerInteractiveTransitioning protocol (which is vended by a
@@ -116,7 +95,7 @@ UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AV
 
 // This should be called if the transition animation is interruptible and it 
 // is being paused.
-- (void)pauseInteractiveTransition NS_AVAILABLE_IOS(10_0);
+- (void)pauseInteractiveTransition API_AVAILABLE(ios(10.0));
 
 // This must be called whenever a transition completes (or is cancelled.)
 // Typically this is called by the object conforming to the
@@ -138,13 +117,9 @@ UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AV
 // UITransitionContextFromViewKey, and UITransitionContextToViewKey
 // viewForKey: may return nil which would indicate that the animator should not
 // manipulate the associated view controller's view.
-- (nullable __kindof UIView *)viewForKey:(UITransitionContextViewKey)key NS_AVAILABLE_IOS(8_0);
+- (nullable __kindof UIView *)viewForKey:(UITransitionContextViewKey)key API_AVAILABLE(ios(8.0));
 
-#if UIKIT_DEFINE_AS_PROPERTIES
-@property(nonatomic, readonly) CGAffineTransform targetTransform NS_AVAILABLE_IOS(8_0);
-#else
-- (CGAffineTransform)targetTransform NS_AVAILABLE_IOS(8_0);
-#endif
+@property(nonatomic, readonly) CGAffineTransform targetTransform API_AVAILABLE(ios(8.0));
 
 // The frame's are set to CGRectZero when they are not known or
 // otherwise undefined.  For example the finalFrame of the
@@ -171,7 +146,7 @@ UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AV
 /// be interrupted. For example, it could return an instance of a
 /// UIViewPropertyAnimator. It is expected that this method will return the same
 /// instance for the life of a transition.
-- (id <UIViewImplicitlyAnimating>) interruptibleAnimatorForTransition:(id <UIViewControllerContextTransitioning>)transitionContext NS_AVAILABLE_IOS(10_0);
+- (id <UIViewImplicitlyAnimating>) interruptibleAnimatorForTransition:(id <UIViewControllerContextTransitioning>)transitionContext API_AVAILABLE(ios(10.0));
 
 // This is a convenience and if implemented will be invoked by the system when the transition context's completeTransition: method is invoked.
 - (void)animationEnded:(BOOL) transitionCompleted;
@@ -183,20 +158,15 @@ UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AV
 - (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning>)transitionContext;
 
 @optional
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) CGFloat completionSpeed;
 @property(nonatomic, readonly) UIViewAnimationCurve completionCurve;
-#else
-- (CGFloat)completionSpeed;
-- (UIViewAnimationCurve)completionCurve;
-#endif
 
 /// In 10.0, if an object conforming to UIViewControllerAnimatedTransitioning is
 /// known to be interruptible, it is possible to start it as if it was not
 /// interactive and then interrupt the transition and interact with it. In this
 /// case, implement this method and return NO. If an interactor does not
 /// implement this method, YES is assumed.
-@property (nonatomic, readonly) BOOL wantsInteractiveStart NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) BOOL wantsInteractiveStart API_AVAILABLE(ios(10.0));
 
 @end
 
@@ -213,11 +183,11 @@ UIKIT_EXTERN UITransitionContextViewKey const UITransitionContextToViewKey NS_AV
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator;
 
-- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0);
+- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source API_AVAILABLE(ios(8.0));
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIPercentDrivenInteractiveTransition : NSObject <UIViewControllerInteractiveTransitioning>
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIPercentDrivenInteractiveTransition : NSObject <UIViewControllerInteractiveTransitioning>
 
 /// This is the non-interactive duration that was returned when the
 /// animators transitionDuration: method was called when the transition started.
@@ -242,17 +212,17 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIPercentDrivenInteractiveTransition : NS
 /// For an interruptible animator, one can specify a different timing curve provider to use when the
 /// transition is continued. This property is ignored if the animated transitioning object does not
 /// vend an interruptible animator.
-@property (nullable, nonatomic, strong)id <UITimingCurveProvider> timingCurve NS_AVAILABLE_IOS(10_0);
+@property (nullable, nonatomic, strong)id <UITimingCurveProvider> timingCurve API_AVAILABLE(ios(10.0));
 
 /// Set this to NO in order to start an interruptible transition non
 /// interactively. By default this is YES, which is consistent with the behavior
 /// before 10.0.
-@property (nonatomic) BOOL wantsInteractiveStart NS_AVAILABLE_IOS(10_0);
+@property (nonatomic) BOOL wantsInteractiveStart API_AVAILABLE(ios(10.0));
 
 /// Use this method to pause a running interruptible animator. This will ensure that all blocks
 /// provided by a transition coordinator's notifyWhenInteractionChangesUsingBlock: method
 /// are executed when a transition moves in and out of an interactive mode.
-- (void)pauseInteractiveTransition NS_AVAILABLE_IOS(10_0);
+- (void)pauseInteractiveTransition API_AVAILABLE(ios(10.0));
 
 // These methods should be called by the gesture recognizer or some other logic
 // to drive the interaction. This style of interaction controller should only be

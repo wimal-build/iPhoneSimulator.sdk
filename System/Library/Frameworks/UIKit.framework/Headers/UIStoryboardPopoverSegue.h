@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStoryboardPopoverSegue.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIStoryboardPopoverSegue.h>)
 //
 //  UIStoryboardPopoverSegue.h
 //  UIKit
@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIStoryboardSegue.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class UIPopoverController;
 
-NS_CLASS_DEPRECATED_IOS(5_0, 9_0, "Access destinationViewController.popoverPresentationController from your segue's performHandler or override of -perform") @interface UIStoryboardPopoverSegue : UIStoryboardSegue {
+UIKIT_EXTERN API_DEPRECATED("Access destinationViewController.popoverPresentationController from your segue's performHandler or override of -perform", ios(5.0, 9.0)) @interface UIStoryboardPopoverSegue : UIStoryboardSegue {
 }
 
 @property (nonatomic, strong, readonly) UIPopoverController *popoverController;

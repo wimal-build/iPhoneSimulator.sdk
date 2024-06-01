@@ -43,7 +43,6 @@
 #define __AddressBook__
 
 #include <AddressBook/ABAddressBook.h>
-#include <AddressBook/ABAddressBook.h>
 #include <AddressBook/ABRecord.h>
 #include <AddressBook/ABPerson.h>
 #include <AddressBook/ABGroup.h>

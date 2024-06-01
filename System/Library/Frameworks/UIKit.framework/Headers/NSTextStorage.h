@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSTextStorage.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/NSTextStorage.h>)
 //
 //  NSTextStorage.h
 //  UIKit
@@ -9,6 +9,7 @@
 #import <Foundation/NSObject.h>
 #import <Foundation/NSNotification.h>
 #import <UIKit/NSAttributedString.h>
+#import <UIKit/UIKitDefines.h>
 
 @class NSArray, NSLayoutManager, NSNotification;
 
@@ -19,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSUInteger, NSTextStorageEditActions) {
     NSTextStorageEditedAttributes = (1 << 0),
     NSTextStorageEditedCharacters = (1 << 1)
-} NS_ENUM_AVAILABLE(10_11, 7_0);
+} API_AVAILABLE(macos(10.11), ios(7.0));
 
 
 /* Note for subclassing NSTextStorage: NSTextStorage is a semi-abstract subclass of NSMutableAttributedString. It implements change management (beginEditing/endEditing), verification of attributes, delegate handling, and layout management notification. The one aspect it does not implement is the actual attributed string storage --- this is left up to the subclassers, which need to override the two NSMutableAttributedString primitives in addition to two NSAttributedString primitives:
@@ -33,7 +34,7 @@ typedef NS_OPTIONS(NSUInteger, NSTextStorageEditActions) {
  These primitives should perform the change then call edited:range:changeInLength: to get everything else to happen.
 */
 
-NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextStorage : NSMutableAttributedString
+UIKIT_EXTERN API_AVAILABLE(macos(10.0), ios(7.0)) @interface NSTextStorage : NSMutableAttributedString <NSSecureCoding>
 
 /**************************** Layout manager ****************************/
 
@@ -94,17 +95,17 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextStorage : NSMutableAttributedStri
 @optional
 
 // Sent inside -processEditing right before fixing attributes.  Delegates can change the characters or attributes.
-- (void)textStorage:(NSTextStorage *)textStorage willProcessEditing:(NSTextStorageEditActions)editedMask range:(NSRange)editedRange changeInLength:(NSInteger)delta NS_AVAILABLE(10_11, 7_0);
+- (void)textStorage:(NSTextStorage *)textStorage willProcessEditing:(NSTextStorageEditActions)editedMask range:(NSRange)editedRange changeInLength:(NSInteger)delta API_AVAILABLE(macos(10.11), ios(7.0));
 
 // Sent inside -processEditing right before notifying layout managers.  Delegates can change the attributes.
-- (void)textStorage:(NSTextStorage *)textStorage didProcessEditing:(NSTextStorageEditActions)editedMask range:(NSRange)editedRange changeInLength:(NSInteger)delta NS_AVAILABLE(10_11, 7_0);
+- (void)textStorage:(NSTextStorage *)textStorage didProcessEditing:(NSTextStorageEditActions)editedMask range:(NSRange)editedRange changeInLength:(NSInteger)delta API_AVAILABLE(macos(10.11), ios(7.0));
 
 @end
 
 /**** Notifications ****/
 
-UIKIT_EXTERN NSNotificationName const NSTextStorageWillProcessEditingNotification NS_AVAILABLE(10_0, 7_0);
-UIKIT_EXTERN NSNotificationName const NSTextStorageDidProcessEditingNotification NS_AVAILABLE(10_0, 7_0);
+UIKIT_EXTERN NSNotificationName const NSTextStorageWillProcessEditingNotification API_AVAILABLE(macos(10.0), ios(7.0));
+UIKIT_EXTERN NSNotificationName const NSTextStorageDidProcessEditingNotification API_AVAILABLE(macos(10.0), ios(7.0));
 
 
 

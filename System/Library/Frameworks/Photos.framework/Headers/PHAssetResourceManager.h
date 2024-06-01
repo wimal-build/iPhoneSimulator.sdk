@@ -6,28 +6,31 @@
 //
 
 #import <Photos/PhotosTypes.h>
-#import <Photos/PhotosDefines.h>
 
+
+NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.15), ios(9), tvos(10))
 
 // Uniquely identify a resource data request
-typedef int32_t PHAssetResourceDataRequestID PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
+typedef int32_t PHAssetResourceDataRequestID;
 static const PHAssetResourceDataRequestID PHInvalidAssetResourceDataRequestID = 0;
 
 // Progress handler, called in an arbitrary serial queue.
-typedef void (^PHAssetResourceProgressHandler)(double progress) PHOTOS_AVAILABLE_IOS_TVOS(9_0, 10_0);
+typedef void (^PHAssetResourceProgressHandler)(double progress);
 
 @class PHAssetResource;
 
-NS_ASSUME_NONNULL_BEGIN
-
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceRequestOptions : NSObject <NSCopying>
+OS_EXPORT
+@interface PHAssetResourceRequestOptions : NSObject <NSCopying>
 
 @property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed;
 @property (nonatomic, copy, nullable) PHAssetResourceProgressHandler progressHandler;
 
 @end
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceManager : NSObject
+
+OS_EXPORT
+@interface PHAssetResourceManager : NSObject
 
 + (PHAssetResourceManager *)defaultManager;
 
@@ -47,4 +50,5 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(9_0, 10_0) @interface PHAssetResourceManager : N
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

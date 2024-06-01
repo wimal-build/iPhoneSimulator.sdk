@@ -5,8 +5,8 @@
 //  Copyright © 2008-2017 Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 #import <MediaPlayer/MPMediaItemCollection.h>
 #import <MediaPlayer/MPMediaItem.h>
 #import <MediaPlayer/MPMediaQuery.h>

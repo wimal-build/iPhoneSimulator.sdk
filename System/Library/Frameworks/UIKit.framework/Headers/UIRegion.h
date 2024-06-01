@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIRegion.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIRegion.h>)
 //
 //  UIRegion.h
 //  UIKit
@@ -8,18 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIGeometry.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIRegion : NSObject <NSCopying, NSCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIRegion : NSObject <NSCopying, NSCoding>
 
 /*! A shared infinite region
  */
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(class, nonatomic, readonly) UIRegion *infiniteRegion;
-#else
-+ (UIRegion *)infiniteRegion;
-#endif
 
 /*! Create a circular region with radius
  */

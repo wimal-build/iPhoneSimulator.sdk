@@ -6,20 +6,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#if !TARGET_OS_OSX
-#import <UIKit/UIImage.h>
-#endif
 #import <Photos/PhotosTypes.h>
-#import <Photos/PhotosDefines.h>
 
 @class PHAdjustmentData;
-@class AVAsset, AVAudioMix, AVVideoComposition;
+@class AVAsset;
 @class CLLocation;
 @class PHLivePhoto;
+@class UIImage;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.11), ios(8), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS_OSX(8_0, 10_0, 10_12) @interface PHContentEditingInput : NSObject
+OS_EXPORT
+@interface PHContentEditingInput : NSObject
 
 @property (readonly, assign) PHAssetMediaType mediaType;
 @property (readonly, assign) PHAssetMediaSubtype mediaSubtypes;
@@ -29,27 +28,24 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS_OSX(8_0, 10_0, 10_12) @interface PHContentEditin
 
 // Playback style describes how the content should be presented to the user.  Use this value to choose the type of view and the appropriate APIs on the content editing input to display this content.
 // When editing a live photo with a PHAssetPlaybackStyleLoopingVideo, you should provide an updated video that includes the looping video metadata on the PHContentEditingOutput's renderedContentURL.
-@property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle PHOTOS_AVAILABLE_IOS_TVOS(11_0, 11_0);
+@property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle API_AVAILABLE(macos(10.13), ios(11), tvos(11));
 
 // Adjustments to be applied onto the provided input image or video.
 @property (readonly, strong, nullable) PHAdjustmentData *adjustmentData;
 
 // Input image:
-#if TARGET_OS_OSX
-@property (readonly, strong, nullable) NSImage *displaySizeImage;
-#else
 @property (readonly, strong, nullable) UIImage *displaySizeImage;
-#endif
 @property (readonly, copy, nullable) NSURL *fullSizeImageURL;
 @property (readonly, assign) int fullSizeImageOrientation; // EXIF value
 
 // Input video:
-@property (readonly, strong, nullable) AVAsset *avAsset NS_DEPRECATED_IOS(8_0, 9_0);
-@property (readonly, strong, nullable) AVAsset *audiovisualAsset PHOTOS_AVAILABLE_IOS_TVOS_OSX(9_0, 10_0, 10_13);
+@property (readonly, strong, nullable) AVAsset *avAsset API_DEPRECATED_WITH_REPLACEMENT("-audiovisualAsset", ios(8,9)) API_UNAVAILABLE(macos);
+@property (readonly, strong, nullable) AVAsset *audiovisualAsset API_AVAILABLE(macos(10.11), ios(9));
 
 // Input Live Photo:
-@property (readonly, strong, nullable) PHLivePhoto *livePhoto PHOTOS_AVAILABLE_IOS_TVOS_OSX(10_0, 10_0, 10_12);
+@property (readonly, strong, nullable) PHLivePhoto *livePhoto API_AVAILABLE(macos(10.12), ios(10));
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

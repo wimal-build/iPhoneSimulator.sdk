@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// A response to an ILClassificationRequest.
-IL_EXTERN API_AVAILABLE(ios(12.0))
+IL_EXTERN API_AVAILABLE(ios(12.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILClassificationResponse : NSObject <NSSecureCoding>
 
 @property (nonatomic, readonly, assign) ILClassificationAction action;

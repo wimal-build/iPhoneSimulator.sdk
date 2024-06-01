@@ -618,6 +618,12 @@ _STRUCT_X86_DEBUG_STATE32
 };
 #endif /* !__DARWIN_UNIX03 */
 
+#define	_STRUCT_X86_PAGEIN_STATE	struct __x86_pagein_state
+_STRUCT_X86_PAGEIN_STATE
+{
+	int __pagein_error;
+};
+
 /*
  * 64 bit versions of the above
  */

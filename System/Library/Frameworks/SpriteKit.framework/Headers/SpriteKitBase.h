@@ -4,6 +4,9 @@
 //
 //  Copyright (c) 2011 Apple, Inc. All rights reserved.
 //
+#ifndef PHYSICSKIT_MINUS_GL_IMPORTS
+#define PHYSICSKIT_MINUS_GL_IMPORTS 1
+#endif
 
 #import <Availability.h>
 #import <TargetConditionals.h>

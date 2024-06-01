@@ -2,7 +2,7 @@
 //  SCNNode.h
 //  SceneKit
 //
-//  Copyright © 2012-2018 Apple Inc. All rights reserved.
+//  Copyright © 2012-2019 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SCNAnimation.h>
@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class SCNHitTestResult;
 @class SCNRenderer;
 @protocol SCNNodeRendererDelegate;
+@protocol UIFocusItem;
 
 /*! @group Rendering arguments
     @discussion These keys are used for the 'semantic' argument of -[SCNProgram setSemantic:forSymbol:options:]

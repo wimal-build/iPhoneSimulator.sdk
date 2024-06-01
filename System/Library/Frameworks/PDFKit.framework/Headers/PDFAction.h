@@ -1,6 +1,6 @@
 //
 //  PDFAction.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFAction is an abstract class, representing an event a user can trigger through
 //  interaction with the owning annotation. These events are PDFActionGoTo, PDFActionNamed,

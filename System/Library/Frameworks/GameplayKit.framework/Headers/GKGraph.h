@@ -55,7 +55,7 @@ GK_BASE_AVAILABILITY @interface GKGraph : NSObject <NSCopying, NSSecureCoding>
  * If it doesn't exist, the array returned will be empty.
  * Asserts if neither of these nodes are in this graph.  Use [GKGraphNode findPathFromNode:] instead.
  * @param startNode node to start pathing from
- * @param toNode goal node of the pathfinding attempt
+ * @param endNode goal node of the pathfinding attempt
  */
 - (NSArray<__kindof GKGraphNode *> *)findPathFromNode:(GKGraphNode*)startNode toNode:(GKGraphNode*)endNode;
 

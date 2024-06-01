@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPasteboard.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPasteboard.h>)
 //
 //  UIPasteboard.h
 //  UIKit
@@ -11,24 +11,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#if UIKIT_STRING_ENUMS
 typedef NSString * UIPasteboardName NS_TYPED_EXTENSIBLE_ENUM;
-#else
-typedef NSString * UIPasteboardName;
-#endif
 
-UIKIT_EXTERN UIPasteboardName const UIPasteboardNameGeneral __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIPasteboardNameFind __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_DEPRECATED_IOS(3_0, 10_0, "The Find pasteboard is no longer available.");
+UIKIT_EXTERN UIPasteboardName const UIPasteboardNameGeneral API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+UIKIT_EXTERN NSString *const UIPasteboardNameFind API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_DEPRECATED("The Find pasteboard is no longer available.", ios(3.0, 10.0));
 
 @class UIColor, UIImage;
 
-NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UIPasteboard : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(3.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) @interface UIPasteboard : NSObject
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(class, nonatomic, readonly) UIPasteboard *generalPasteboard;
-#else
-+ (UIPasteboard *)generalPasteboard;
-#endif
 
 + (nullable UIPasteboard *)pasteboardWithName:(UIPasteboardName)pasteboardName create:(BOOL)create;
 + (UIPasteboard *)pasteboardWithUniqueName;
@@ -38,7 +30,7 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 + (void)removePasteboardWithName:(UIPasteboardName)pasteboardName;
 
 @property(readonly,getter=isPersistent,nonatomic) BOOL persistent;
-- (void)setPersistent:(BOOL)persistent NS_DEPRECATED_IOS(3_0, 10_0, "Do not set persistence on pasteboards. This property is set automatically.");
+- (void)setPersistent:(BOOL)persistent API_DEPRECATED("Do not set persistence on pasteboards. This property is set automatically.", ios(3.0, 10.0));
 @property(readonly,nonatomic) NSInteger changeCount;
 
 // Item provider interface
@@ -53,11 +45,7 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 
 // First item
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) NSArray<NSString *> * pasteboardTypes;
-#else
-- (NSArray<NSString *> *)pasteboardTypes;
-#endif
 - (BOOL)containsPasteboardTypes:(NSArray<NSString *> *)pasteboardTypes;
 - (nullable NSData *)dataForPasteboardType:(NSString *)pasteboardType;
 
@@ -81,52 +69,52 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 @property(nonatomic,copy) NSArray<NSDictionary<NSString *, id> *> *items;
 - (void)addItems:(NSArray<NSDictionary<NSString *, id> *> *)items;
 
-typedef NSString * UIPasteboardOption NS_TYPED_ENUM NS_AVAILABLE_IOS(10_0);
+typedef NSString * UIPasteboardOption NS_TYPED_ENUM API_AVAILABLE(ios(10.0));
 
-UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionExpirationDate __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0) NS_SWIFT_NAME(UIPasteboardOption.expirationDate); // Value: NSDate.
-UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionLocalOnly __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0) NS_SWIFT_NAME(UIPasteboardOption.localOnly); // Value: NSNumber, boolean.
+UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionExpirationDate API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0)) NS_SWIFT_NAME(UIPasteboardOption.expirationDate); // Value: NSDate.
+UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionLocalOnly API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0)) NS_SWIFT_NAME(UIPasteboardOption.localOnly); // Value: NSNumber, boolean.
 
-- (void)setItems:(NSArray<NSDictionary<NSString *, id> *> *)items options:(NSDictionary<UIPasteboardOption, id> *)options NS_AVAILABLE_IOS(10_0);
+- (void)setItems:(NSArray<NSDictionary<NSString *, id> *> *)items options:(NSDictionary<UIPasteboardOption, id> *)options API_AVAILABLE(ios(10.0));
 
-@property(nullable,nonatomic,copy) NSString *string __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<NSString *> *strings __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) NSString *string API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+@property(nullable,nonatomic,copy) NSArray<NSString *> *strings API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
-@property(nullable,nonatomic,copy) NSURL *URL __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<NSURL *> *URLs __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) NSURL *URL API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+@property(nullable,nonatomic,copy) NSArray<NSURL *> *URLs API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
-@property(nullable,nonatomic,copy) UIImage *image __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<UIImage *> *images __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) UIImage *image API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+@property(nullable,nonatomic,copy) NSArray<UIImage *> *images API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
-@property(nullable,nonatomic,copy) UIColor *color __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-@property(nullable,nonatomic,copy) NSArray<UIColor *> *colors __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+@property(nullable,nonatomic,copy) UIColor *color API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+@property(nullable,nonatomic,copy) NSArray<UIColor *> *colors API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
 // Queries
 
-@property (nonatomic, readonly) BOOL hasStrings __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
-@property (nonatomic, readonly) BOOL hasURLs __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
-@property (nonatomic, readonly) BOOL hasImages __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
-@property (nonatomic, readonly) BOOL hasColors __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) BOOL hasStrings API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0));
+@property (nonatomic, readonly) BOOL hasURLs API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0));
+@property (nonatomic, readonly) BOOL hasImages API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0));
+@property (nonatomic, readonly) BOOL hasColors API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0));
 
 @end
 
 // Notification
 
-UIKIT_EXTERN NSNotificationName const UIPasteboardChangedNotification __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIPasteboardChangedTypesAddedKey __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIPasteboardChangedTypesRemovedKey __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIPasteboardChangedNotification API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+UIKIT_EXTERN NSString *const UIPasteboardChangedTypesAddedKey API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+UIKIT_EXTERN NSString *const UIPasteboardChangedTypesRemovedKey API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
-UIKIT_EXTERN NSNotificationName const UIPasteboardRemovedNotification __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIPasteboardRemovedNotification API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
 // Types
 
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListString __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListURL __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListImage __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
-UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListColor __TVOS_PROHIBITED __WATCHOS_PROHIBITED;
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListString API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListURL API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListImage API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
+UIKIT_EXTERN NSArray<NSString *> *UIPasteboardTypeListColor API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos);
 
 // Use the following type in setItems: or setItems:options: to automatically insert appropriate UTIs for supported types.
 // Supported types are: NSString, NSURL, UIImage, UIColor, NSAttributedString.
-UIKIT_EXTERN NSString * const UIPasteboardTypeAutomatic __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN NSString * const UIPasteboardTypeAutomatic API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos) API_AVAILABLE(ios(10.0));
 
 NS_ASSUME_NONNULL_END
     

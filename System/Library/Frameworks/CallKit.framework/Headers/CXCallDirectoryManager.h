@@ -14,9 +14,9 @@ typedef NS_ENUM(NSInteger, CXCallDirectoryEnabledStatus) {
     CXCallDirectoryEnabledStatusUnknown = 0,
     CXCallDirectoryEnabledStatusDisabled = 1,
     CXCallDirectoryEnabledStatusEnabled = 2,
-} API_AVAILABLE(ios(10.0));
+} API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos);
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXCallDirectoryManager : NSObject
 
 @property (readonly, class) CXCallDirectoryManager *sharedInstance;

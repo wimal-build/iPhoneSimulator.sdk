@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIEvent.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIEvent.h>)
 //
 //  UIEvent.h
 //  UIKit
@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, UIEventType) {
     UIEventTypeTouches,
     UIEventTypeMotion,
     UIEventTypeRemoteControl,
-    UIEventTypePresses NS_ENUM_AVAILABLE_IOS(9_0),
+    UIEventTypePresses API_AVAILABLE(ios(9.0)),
 };
 
 typedef NS_ENUM(NSInteger, UIEventSubtype) {
@@ -42,27 +42,23 @@ typedef NS_ENUM(NSInteger, UIEventSubtype) {
 };
 
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIEvent : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UIEvent : NSObject
 
-@property(nonatomic,readonly) UIEventType     type NS_AVAILABLE_IOS(3_0);
-@property(nonatomic,readonly) UIEventSubtype  subtype NS_AVAILABLE_IOS(3_0);
+@property(nonatomic,readonly) UIEventType     type API_AVAILABLE(ios(3.0));
+@property(nonatomic,readonly) UIEventSubtype  subtype API_AVAILABLE(ios(3.0));
 
 @property(nonatomic,readonly) NSTimeInterval  timestamp;
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly, nullable) NSSet <UITouch *> *allTouches;
-#else
-- (nullable NSSet <UITouch *> *)allTouches;
-#endif
 - (nullable NSSet <UITouch *> *)touchesForWindow:(UIWindow *)window;
 - (nullable NSSet <UITouch *> *)touchesForView:(UIView *)view;
-- (nullable NSSet <UITouch *> *)touchesForGestureRecognizer:(UIGestureRecognizer *)gesture NS_AVAILABLE_IOS(3_2);
+- (nullable NSSet <UITouch *> *)touchesForGestureRecognizer:(UIGestureRecognizer *)gesture API_AVAILABLE(ios(3.2));
 
 // An array of auxiliary UITouch’s for the touch events that did not get delivered for a given main touch. This also includes an auxiliary version of the main touch itself.
-- (nullable NSArray <UITouch *> *)coalescedTouchesForTouch:(UITouch *)touch NS_AVAILABLE_IOS(9_0);
+- (nullable NSArray <UITouch *> *)coalescedTouchesForTouch:(UITouch *)touch API_AVAILABLE(ios(9.0));
 
 // An array of auxiliary UITouch’s for touch events that are predicted to occur for a given main touch. These predictions may not exactly match the real behavior of the touch as it moves, so they should be interpreted as an estimate.
-- (nullable NSArray <UITouch *> *)predictedTouchesForTouch:(UITouch *)touch NS_AVAILABLE_IOS(9_0);
+- (nullable NSArray <UITouch *> *)predictedTouchesForTouch:(UITouch *)touch API_AVAILABLE(ios(9.0));
 
 @end
 

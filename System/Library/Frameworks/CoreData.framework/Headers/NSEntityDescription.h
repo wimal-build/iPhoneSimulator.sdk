@@ -1,7 +1,7 @@
 /*
     NSEntityDescription.h
     Core Data
-    Copyright (c) 2004-2018, Apple Inc.
+    Copyright (c) 2004-2019, Apple Inc.
     All rights reserved.
 */
 
@@ -68,7 +68,6 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
  */
 @property (copy) NSArray <NSFetchIndexDescription *>*indexes API_AVAILABLE(macosx(10.13),ios(11.0),tvos(11.0),watchos(4.0));
 
-
 /* Returns/sets uniqueness constraints for the entity. A uniqueness constraint is a set of one or more attributes whose value must be unique over the set of instances of that entity.
 
     Sets an array of arrays, each of which contains one or more NSAttributeDescription or NSString instances (strings must be the names of attributes on the entity) on which the constraint is registered.
@@ -77,7 +76,6 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
     Discussion: uniqueness constraint violations can be computationally expensive to handle. It is highly suggested that there be only one uniqueness constraint per entity hierarchy,
     although subentites may extend a sueprentity's constraint.
 */
-                                                                                                                                                                      
 @property (strong)NSArray<NSArray<id> *> *uniquenessConstraints API_AVAILABLE(macosx(10.11),ios(9.0));
 
 /*  Getter returns an array of arrays of NSPropertyDescription objects describing the components of the indexes.

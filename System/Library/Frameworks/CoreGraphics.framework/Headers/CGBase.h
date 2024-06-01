@@ -46,9 +46,9 @@
 
 #if !defined(CG_EXTERN)
 #  if defined(__cplusplus)
-#   define CG_EXTERN extern "C"
+#   define CG_EXTERN extern "C" __attribute__((visibility("default")))
 #  else
-#   define CG_EXTERN extern
+#   define CG_EXTERN extern __attribute__((visibility("default")))
 #  endif
 #endif /* !defined(CG_EXTERN) */
 
@@ -298,11 +298,7 @@ typedef CGFLOAT_TYPE CGFloat;
 # define CG_PRIVATE_EXTERN CG_LOCAL
 #endif
 
-#if !TARGET_OS_SIMULATOR
-
 typedef struct  CF_BRIDGED_TYPE(id) __IOSurface *IOSurfaceRef __attribute__((swift_name("IOSurfaceRef")));
-
-#endif
 
 /* 'cg_nullable' will be dropped for new Swift clients. All others get currently the old behavior */
 

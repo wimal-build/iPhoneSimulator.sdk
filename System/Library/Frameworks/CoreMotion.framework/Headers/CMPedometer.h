@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  *      object contains a step count. On supported platforms it also contains
  *      distance, flights of stairs, pace, and cadence.
  */
-NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(8.0))
 @interface CMPedometerData : NSObject <NSSecureCoding, NSCopying>
 
 /*
@@ -93,7 +93,7 @@ NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
  *         (3) Unsupported platform.
  *
  */
-@property(readonly, nonatomic, nullable) NSNumber *currentPace NS_AVAILABLE(NA,9_0);
+@property(readonly, nonatomic, nullable) NSNumber *currentPace COREMOTION_EXPORT API_AVAILABLE(ios(9.0));
 
 /*
  * currentCadence
@@ -108,7 +108,7 @@ NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
  *         (3) Unsupported platform.
  *
  */
-@property(readonly, nonatomic, nullable) NSNumber *currentCadence NS_AVAILABLE(NA,9_0);
+@property(readonly, nonatomic, nullable) NSNumber *currentCadence COREMOTION_EXPORT API_AVAILABLE(ios(9.0));
 
 /*
  * averageActivePace
@@ -128,7 +128,7 @@ NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
  *         (2) Unsupported platform.
  *
  */
-@property(readonly, nonatomic, nullable) NSNumber *averageActivePace NS_AVAILABLE(NA,10_0);
+@property(readonly, nonatomic, nullable) NSNumber *averageActivePace COREMOTION_EXPORT API_AVAILABLE(ios(10.0));
 
 @end
 
@@ -141,7 +141,7 @@ NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
 typedef NS_ENUM(NSInteger, CMPedometerEventType) {
 	CMPedometerEventTypePause,
 	CMPedometerEventTypeResume
-} NS_ENUM_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos);
+} API_AVAILABLE(ios(10.0), watchos(3.0));
 
 /*
  *  CMPedometerEvent
@@ -149,7 +149,7 @@ typedef NS_ENUM(NSInteger, CMPedometerEventType) {
  *  Discussion:
  *      An event marking the change in user's pedestrian activity.
  */
-NS_CLASS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(10.0), watchos(3.0))
 @interface CMPedometerEvent : NSObject <NSSecureCoding, NSCopying>
 
 /*
@@ -177,7 +177,7 @@ NS_CLASS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos)
  *      Typedef of block to be invoked when pedometer data is available. Error
  *      types are defined in "CMError.h".
  */
-typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error) API_UNAVAILABLE(tvos);
+typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error);
 
 /*
  *  CMPedometerEventHandler
@@ -186,7 +186,7 @@ typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, N
  *      Typedef of block that will be invoked when pedometer event is available.
  *      Error types are defined in "CMError.h".
  */
-typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerEvent, NSError * __nullable error) NS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos);
+typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerEvent, NSError * __nullable error) COREMOTION_EXPORT API_AVAILABLE(ios(10.0), watchos(3.0));
 
 /*
  *  CMPedometer
@@ -204,7 +204,7 @@ typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerE
  *      updates can be stopped by calling stopPedometerUpdates.
  *
  */
-NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(8.0))
 @interface CMPedometer : NSObject
 
 /*
@@ -240,7 +240,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *      Determines whether the device supports pace estimation
  *      in addition to step counting.
  */
-+ (BOOL)isPaceAvailable NS_AVAILABLE(NA,9_0);
++ (BOOL)isPaceAvailable COREMOTION_EXPORT API_AVAILABLE(ios(9.0));
 
 /*
  *  isCadenceAvailable
@@ -249,7 +249,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *      Determines whether the device supports cadence estimation
  *      in addition to step counting.
  */
-+ (BOOL)isCadenceAvailable NS_AVAILABLE(NA,9_0);
++ (BOOL)isCadenceAvailable COREMOTION_EXPORT API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos);
 
 /*
  *  isPedometerEventTrackingAvailable
@@ -257,7 +257,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *  Discussion:
  *      Determines whether the device supports pedometer events.
  */
-+ (BOOL)isPedometerEventTrackingAvailable NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
++ (BOOL)isPedometerEventTrackingAvailable COREMOTION_EXPORT API_AVAILABLE(ios(10.0), watchos(3.0)) API_UNAVAILABLE(macos);
 
 /*
  *  authorizationStatus
@@ -265,7 +265,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *  Discussion:
  *      Returns the current authorization status for pedometer.
  */
-+ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
++ (CMAuthorizationStatus)authorizationStatus COREMOTION_EXPORT API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macos);
 
 /*
  *  queryPedometerDataFromDate:toDate:withHandler:
@@ -311,7 +311,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *      Starts pedometer event updates on a serial queue.
  *      Events are available only when the apps are running in foreground / background.
  */
-- (void)startPedometerEventUpdatesWithHandler:(CMPedometerEventHandler)handler NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
+- (void)startPedometerEventUpdatesWithHandler:(CMPedometerEventHandler)handler COREMOTION_EXPORT API_AVAILABLE(ios(10.0), watchos(3.0)) API_UNAVAILABLE(macos);
 
 /*
  *  stopPedometerEventUpdates
@@ -319,7 +319,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *  Discussion:
  *      Stops pedometer event updates.
  */
-- (void)stopPedometerEventUpdates NS_AVAILABLE(NA,10_0) __WATCHOS_AVAILABLE(3_0);
+- (void)stopPedometerEventUpdates COREMOTION_EXPORT API_AVAILABLE(ios(10.0), watchos(3.0)) API_UNAVAILABLE(macos);
 
 @end
 

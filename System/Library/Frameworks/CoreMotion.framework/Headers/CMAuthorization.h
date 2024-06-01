@@ -25,4 +25,4 @@ typedef NS_ENUM(NSInteger, CMAuthorizationStatus) {
 	CMAuthorizationStatusRestricted,
 	CMAuthorizationStatusDenied,
 	CMAuthorizationStatusAuthorized
-} NS_ENUM_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4.0) API_UNAVAILABLE(tvos);
+} API_AVAILABLE(ios(11.0), watchos(4.0));

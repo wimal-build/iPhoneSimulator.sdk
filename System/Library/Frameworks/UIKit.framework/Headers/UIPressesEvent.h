@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPressesEvent.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPressesEvent.h>)
 //
 //  UIPressesEvent.h
 //  UIKit
@@ -7,18 +7,15 @@
 //
 
 #import <UIKit/UIEvent.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIPress.h>
 #import <UIKit/UIGestureRecognizer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIPressesEvent : UIEvent
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIPressesEvent : UIEvent
 
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly) NSSet <UIPress *> *allPresses;
-#else
-- (NSSet <UIPress *> *)allPresses;
-#endif
 - (NSSet <UIPress *> *)pressesForGestureRecognizer:(UIGestureRecognizer *)gesture;
 
 @end

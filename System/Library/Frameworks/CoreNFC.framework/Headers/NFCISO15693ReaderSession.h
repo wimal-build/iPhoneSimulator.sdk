@@ -7,10 +7,6 @@
 #ifndef NFCISO15693ReaderSession_h
 #define NFCISO15693ReaderSession_h
 
-#ifndef CoreNFC_H
-#error Please import <CoreNFC/CoreNFC.h> from your source file
-#endif
-
 #import <Foundation/Foundation.h>
 
 @protocol NFCReaderSessionDelegate;
@@ -27,16 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * NOTE:
  * Only one NFCReaderSession can be active at any time in the system. Subsequent opened sessions will get queued up and processed by the system in FIFO order.
+ * The NFCISO15693 tag object returned by this session will only respond to the legacy APIs that are introducted in iOS11.  
  */
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
 @interface NFCISO15693ReaderSession : NFCReaderSession
-
-/*!
- * @property readingAvailable
- *
- * @discussion YES if device supports NFC tag reading.
- */
-@property (class, nonatomic, readonly) BOOL readingAvailable;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -49,7 +39,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
  *
  * @return          A new NFCISO15693ReaderSession instance.
  */
-- (instancetype)initWithDelegate:(id<NFCReaderSessionDelegate>)delegate queue:(nullable dispatch_queue_t)queue NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithDelegate:(id<NFCReaderSessionDelegate>)delegate queue:(nullable dispatch_queue_t)queue NS_DESIGNATED_INITIALIZER NS_EXTENSION_UNAVAILABLE("Not available to extensions");
 
 /*!
  * @method restartPolling
@@ -60,8 +50,8 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
  */
 - (void)restartPolling;
 
-NS_ASSUME_NONNULL_END
-
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif

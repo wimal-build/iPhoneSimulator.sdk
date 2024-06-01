@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// A request to classify a communication.
-IL_EXTERN API_AVAILABLE(ios(12.0))
+IL_EXTERN API_AVAILABLE(ios(12.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILClassificationRequest : NSObject <NSSecureCoding>
 
 @end

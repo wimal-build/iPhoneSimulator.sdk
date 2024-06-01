@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 #import <MediaPlayer/MPRemoteControlTypes.h>
 
 NS_ASSUME_NONNULL_BEGIN

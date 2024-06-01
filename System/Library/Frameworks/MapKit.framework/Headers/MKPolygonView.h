@@ -13,7 +13,7 @@
 #import <MapKit/MKOverlayPathView.h>
 
 // Prefer MKPolygonRenderer
-NS_CLASS_AVAILABLE(NA, 4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
+API_DEPRECATED_WITH_REPLACEMENT("MKPolygonRenderer", ios(4.0, 13.0)) API_UNAVAILABLE(macos, tvos, watchos)
 @interface MKPolygonView : MKOverlayPathView
 
 - (instancetype)initWithPolygon:(MKPolygon *)polygon NS_DEPRECATED_IOS(4_0, 7_0);

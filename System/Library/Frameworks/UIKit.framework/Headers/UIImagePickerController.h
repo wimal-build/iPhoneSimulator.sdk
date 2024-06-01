@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIImagePickerController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIImagePickerController.h>)
 //
 //  UIImagePickerController.h
 //  UIKit
@@ -19,101 +19,101 @@ typedef NS_ENUM(NSInteger, UIImagePickerControllerSourceType) {
     UIImagePickerControllerSourceTypePhotoLibrary,
     UIImagePickerControllerSourceTypeCamera,
     UIImagePickerControllerSourceTypeSavedPhotosAlbum
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIImagePickerControllerQualityType) {
     UIImagePickerControllerQualityTypeHigh = 0,       // highest quality
     UIImagePickerControllerQualityTypeMedium = 1,     // medium quality, suitable for transmission via Wi-Fi 
     UIImagePickerControllerQualityTypeLow = 2,         // lowest quality, suitable for tranmission via cellular network
-    UIImagePickerControllerQualityType640x480 NS_ENUM_AVAILABLE_IOS(4_0) = 3,    // VGA quality
-    UIImagePickerControllerQualityTypeIFrame1280x720 NS_ENUM_AVAILABLE_IOS(5_0) = 4,
-    UIImagePickerControllerQualityTypeIFrame960x540 NS_ENUM_AVAILABLE_IOS(5_0) = 5,
-} __TVOS_PROHIBITED;
+    UIImagePickerControllerQualityType640x480 API_AVAILABLE(ios(4.0)) = 3,    // VGA quality
+    UIImagePickerControllerQualityTypeIFrame1280x720 API_AVAILABLE(ios(5.0)) = 4,
+    UIImagePickerControllerQualityTypeIFrame960x540 API_AVAILABLE(ios(5.0)) = 5,
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIImagePickerControllerCameraCaptureMode) {
     UIImagePickerControllerCameraCaptureModePhoto,
     UIImagePickerControllerCameraCaptureModeVideo
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIImagePickerControllerCameraDevice) {
     UIImagePickerControllerCameraDeviceRear,
     UIImagePickerControllerCameraDeviceFront
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIImagePickerControllerCameraFlashMode) {
     UIImagePickerControllerCameraFlashModeOff  = -1,
     UIImagePickerControllerCameraFlashModeAuto = 0,
     UIImagePickerControllerCameraFlashModeOn   = 1
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIImagePickerControllerImageURLExportPreset) {
     UIImagePickerControllerImageURLExportPresetCompatible = 0,
     UIImagePickerControllerImageURLExportPresetCurrent
-} NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos);
 
 typedef NSString * UIImagePickerControllerInfoKey NS_TYPED_ENUM;
 
 // info dictionary keys
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaType __TVOS_PROHIBITED;      // an NSString (UTI, i.e. kUTTypeImage)
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerOriginalImage __TVOS_PROHIBITED;  // a UIImage
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerEditedImage __TVOS_PROHIBITED;    // a UIImage
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerCropRect __TVOS_PROHIBITED;       // an NSValue (CGRect)
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaURL __TVOS_PROHIBITED;       // an NSURL
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerReferenceURL        NS_DEPRECATED_IOS(4_1, 11_0, "Replace with public API: UIImagePickerControllerPHAsset") __TVOS_PROHIBITED;  // an NSURL that references an asset in the AssetsLibrary framework
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaMetadata       NS_AVAILABLE_IOS(4_1) __TVOS_PROHIBITED;  // an NSDictionary containing metadata from a captured photo
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerLivePhoto NS_AVAILABLE_IOS(9_1) __TVOS_PROHIBITED;  // a PHLivePhoto
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerPHAsset NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // a PHAsset
-UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerImageURL NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // an NSURL
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaType API_UNAVAILABLE(tvos);      // an NSString (UTI, i.e. kUTTypeImage)
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerOriginalImage API_UNAVAILABLE(tvos);  // a UIImage
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerEditedImage API_UNAVAILABLE(tvos);    // a UIImage
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerCropRect API_UNAVAILABLE(tvos);       // an NSValue (CGRect)
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaURL API_UNAVAILABLE(tvos);       // an NSURL
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerReferenceURL        API_DEPRECATED_WITH_REPLACEMENT("UIImagePickerControllerPHAsset", ios(4.1, 11.0)) API_UNAVAILABLE(tvos);  // an NSURL that references an asset in the AssetsLibrary framework
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaMetadata       API_AVAILABLE(ios(4.1)) API_UNAVAILABLE(tvos);  // an NSDictionary containing metadata from a captured photo
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerLivePhoto API_AVAILABLE(ios(9.1)) API_UNAVAILABLE(tvos);  // a PHLivePhoto
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerPHAsset API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos);  // a PHAsset
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerImageURL API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos);  // an NSURL
 
-NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIImagePickerController : UINavigationController <NSCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) API_UNAVAILABLE(tvos) @interface UIImagePickerController : UINavigationController <NSCoding>
 
 + (BOOL)isSourceTypeAvailable:(UIImagePickerControllerSourceType)sourceType;                 // returns YES if source is available (i.e. camera present)
 + (nullable NSArray<NSString *> *)availableMediaTypesForSourceType:(UIImagePickerControllerSourceType)sourceType; // returns array of available media types (i.e. kUTTypeImage)
 
-+ (BOOL)isCameraDeviceAvailable:(UIImagePickerControllerCameraDevice)cameraDevice                   NS_AVAILABLE_IOS(4_0); // returns YES if camera device is available 
-+ (BOOL)isFlashAvailableForCameraDevice:(UIImagePickerControllerCameraDevice)cameraDevice           NS_AVAILABLE_IOS(4_0); // returns YES if camera device supports flash and torch.
-+ (nullable NSArray<NSNumber *> *)availableCaptureModesForCameraDevice:(UIImagePickerControllerCameraDevice)cameraDevice NS_AVAILABLE_IOS(4_0); // returns array of NSNumbers (UIImagePickerControllerCameraCaptureMode)
++ (BOOL)isCameraDeviceAvailable:(UIImagePickerControllerCameraDevice)cameraDevice                   API_AVAILABLE(ios(4.0)); // returns YES if camera device is available 
++ (BOOL)isFlashAvailableForCameraDevice:(UIImagePickerControllerCameraDevice)cameraDevice           API_AVAILABLE(ios(4.0)); // returns YES if camera device supports flash and torch.
++ (nullable NSArray<NSNumber *> *)availableCaptureModesForCameraDevice:(UIImagePickerControllerCameraDevice)cameraDevice API_AVAILABLE(ios(4.0)); // returns array of NSNumbers (UIImagePickerControllerCameraCaptureMode)
 
 @property(nullable,nonatomic,weak)      id <UINavigationControllerDelegate, UIImagePickerControllerDelegate> delegate;
 
 @property(nonatomic)           UIImagePickerControllerSourceType     sourceType;                                                        // default value is UIImagePickerControllerSourceTypePhotoLibrary.
 @property(nonatomic,copy)      NSArray<NSString *>                   *mediaTypes;
     // default value is an array containing kUTTypeImage.
-@property(nonatomic)           BOOL                                  allowsEditing NS_AVAILABLE_IOS(3_1);     // replacement for -allowsImageEditing; default value is NO.
-@property(nonatomic)           BOOL                                  allowsImageEditing NS_DEPRECATED_IOS(2_0, 3_1);
-@property(nonatomic)           UIImagePickerControllerImageURLExportPreset imageExportPreset NS_AVAILABLE_IOS(11_0);   // default value is UIImagePickerControllerImageExportPresetCompatible.
+@property(nonatomic)           BOOL                                  allowsEditing API_AVAILABLE(ios(3.1));     // replacement for -allowsImageEditing; default value is NO.
+@property(nonatomic)           BOOL                                  allowsImageEditing API_DEPRECATED("", ios(2.0, 3.1));
+@property(nonatomic)           UIImagePickerControllerImageURLExportPreset imageExportPreset API_AVAILABLE(ios(11.0));   // default value is UIImagePickerControllerImageExportPresetCompatible.
 
 // video properties apply only if mediaTypes includes kUTTypeMovie
-@property(nonatomic)           NSTimeInterval                        videoMaximumDuration NS_AVAILABLE_IOS(3_1); // default value is 10 minutes.
-@property(nonatomic)           UIImagePickerControllerQualityType    videoQuality NS_AVAILABLE_IOS(3_1);         // default value is UIImagePickerControllerQualityTypeMedium. If the cameraDevice does not support the videoQuality, it will use the default value.
-@property(nonatomic, copy)     NSString                              *videoExportPreset NS_AVAILABLE_IOS(11_0);  // videoExportPreset can be used to specify the transcoding quality for videos (via a AVAssetExportPreset* string). If the value is nil (the default) then the transcodeQuality is determined by videoQuality instead. Not valid if the source type is UIImagePickerControllerSourceTypeCamera
+@property(nonatomic)           NSTimeInterval                        videoMaximumDuration API_AVAILABLE(ios(3.1)); // default value is 10 minutes.
+@property(nonatomic)           UIImagePickerControllerQualityType    videoQuality API_AVAILABLE(ios(3.1));         // default value is UIImagePickerControllerQualityTypeMedium. If the cameraDevice does not support the videoQuality, it will use the default value.
+@property(nonatomic, copy)     NSString                              *videoExportPreset API_AVAILABLE(ios(11.0));  // videoExportPreset can be used to specify the transcoding quality for videos (via a AVAssetExportPreset* string). If the value is nil (the default) then the transcodeQuality is determined by videoQuality instead. Not valid if the source type is UIImagePickerControllerSourceTypeCamera
 
 
 // camera additions available only if sourceType is UIImagePickerControllerSourceTypeCamera.
-@property(nonatomic)           BOOL                                  showsCameraControls NS_AVAILABLE_IOS(3_1);   // set to NO to hide all standard camera UI. default is YES
-@property(nullable, nonatomic,strong) __kindof UIView                *cameraOverlayView  NS_AVAILABLE_IOS(3_1);   // set a view to overlay the preview view.
-@property(nonatomic)           CGAffineTransform                     cameraViewTransform NS_AVAILABLE_IOS(3_1);   // set the transform of the preview view.
+@property(nonatomic)           BOOL                                  showsCameraControls API_AVAILABLE(ios(3.1));   // set to NO to hide all standard camera UI. default is YES
+@property(nullable, nonatomic,strong) __kindof UIView                *cameraOverlayView  API_AVAILABLE(ios(3.1));   // set a view to overlay the preview view.
+@property(nonatomic)           CGAffineTransform                     cameraViewTransform API_AVAILABLE(ios(3.1));   // set the transform of the preview view.
 
-- (void)takePicture NS_AVAILABLE_IOS(3_1);                                                   
+- (void)takePicture API_AVAILABLE(ios(3.1));                                                   
 // programatically initiates still image capture. ignored if image capture is in-flight.
 // clients can initiate additional captures after receiving -imagePickerController:didFinishPickingMediaWithInfo: delegate callback
 
-- (BOOL)startVideoCapture NS_AVAILABLE_IOS(4_0);
-- (void)stopVideoCapture  NS_AVAILABLE_IOS(4_0);
+- (BOOL)startVideoCapture API_AVAILABLE(ios(4.0));
+- (void)stopVideoCapture  API_AVAILABLE(ios(4.0));
 
-@property(nonatomic) UIImagePickerControllerCameraCaptureMode cameraCaptureMode NS_AVAILABLE_IOS(4_0); // default is UIImagePickerControllerCameraCaptureModePhoto
-@property(nonatomic) UIImagePickerControllerCameraDevice      cameraDevice      NS_AVAILABLE_IOS(4_0); // default is UIImagePickerControllerCameraDeviceRear
-@property(nonatomic) UIImagePickerControllerCameraFlashMode   cameraFlashMode   NS_AVAILABLE_IOS(4_0); // default is UIImagePickerControllerCameraFlashModeAuto. 
+@property(nonatomic) UIImagePickerControllerCameraCaptureMode cameraCaptureMode API_AVAILABLE(ios(4.0)); // default is UIImagePickerControllerCameraCaptureModePhoto
+@property(nonatomic) UIImagePickerControllerCameraDevice      cameraDevice      API_AVAILABLE(ios(4.0)); // default is UIImagePickerControllerCameraDeviceRear
+@property(nonatomic) UIImagePickerControllerCameraFlashMode   cameraFlashMode   API_AVAILABLE(ios(4.0)); // default is UIImagePickerControllerCameraFlashModeAuto. 
 // cameraFlashMode controls the still-image flash when cameraCaptureMode is Photo. cameraFlashMode controls the video torch when cameraCaptureMode is Video.
 
 @end
 
-__TVOS_PROHIBITED @protocol UIImagePickerControllerDelegate<NSObject>
+API_UNAVAILABLE(tvos) @protocol UIImagePickerControllerDelegate<NSObject>
 @optional
 // The picker does not dismiss itself; the client dismisses it in these callbacks.
 // The delegate will receive one or the other, but not both, depending whether the user
 // confirms or cancels.
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<UIImagePickerControllerInfoKey, id> *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0);
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<UIImagePickerControllerInfoKey, id> *)editingInfo API_DEPRECATED("", ios(2.0, 3.0));
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> *)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker;
 
@@ -122,14 +122,14 @@ __TVOS_PROHIBITED @protocol UIImagePickerControllerDelegate<NSObject>
 
 // Adds a photo to the saved photos album.  The optional completionSelector should have the form:
 //  - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo;
-UIKIT_EXTERN void UIImageWriteToSavedPhotosAlbum(UIImage *image, __nullable id completionTarget, __nullable SEL completionSelector, void * __nullable contextInfo) __TVOS_PROHIBITED;
+UIKIT_EXTERN void UIImageWriteToSavedPhotosAlbum(UIImage *image, __nullable id completionTarget, __nullable SEL completionSelector, void * __nullable contextInfo) API_UNAVAILABLE(tvos);
 
 // Is a specific video eligible to be saved to the saved photos album? 
-UIKIT_EXTERN BOOL UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(NSString *videoPath) NS_AVAILABLE_IOS(3_1) __TVOS_PROHIBITED;
+UIKIT_EXTERN BOOL UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(NSString *videoPath) API_AVAILABLE(ios(3.1)) API_UNAVAILABLE(tvos);
 
 // Adds a video to the saved photos album. The optional completionSelector should have the form:
 //  - (void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo;
-UIKIT_EXTERN void UISaveVideoAtPathToSavedPhotosAlbum(NSString *videoPath, __nullable id completionTarget, __nullable SEL completionSelector, void * __nullable contextInfo) NS_AVAILABLE_IOS(3_1) __TVOS_PROHIBITED;
+UIKIT_EXTERN void UISaveVideoAtPathToSavedPhotosAlbum(NSString *videoPath, __nullable id completionTarget, __nullable SEL completionSelector, void * __nullable contextInfo) API_AVAILABLE(ios(3.1)) API_UNAVAILABLE(tvos);
 
 NS_ASSUME_NONNULL_END
 

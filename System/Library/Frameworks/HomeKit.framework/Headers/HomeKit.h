@@ -24,6 +24,7 @@
 #import <HomeKit/HMUser.h>
 #import <HomeKit/HMHomeAccessControl.h>
 #import <HomeKit/HMAccessoryCategory.h>
+#import <HomeKit/HMAccessoryCategoryTypes.h>
 
 #import <HomeKit/HMEvent.h>
 #import <HomeKit/HMCharacteristicEvent.h>
@@ -43,6 +44,8 @@
 #import <HomeKit/HMSignificantEvents.h>
 #import <HomeKit/HMPresenceEventDefines.h>
 #import <HomeKit/HMAccessorySetupPayload.h>
+#import <HomeKit/HMAddAccessoryRequest.h>
+#import <HomeKit/HMNetworkConfigurationProfile.h>
 
 #import <HomeKit/HMCameraView.h>
 

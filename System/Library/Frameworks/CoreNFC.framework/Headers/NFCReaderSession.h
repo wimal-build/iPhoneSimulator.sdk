@@ -8,10 +8,6 @@
 #ifndef NFCReaderSession_h
 #define NFCReaderSession_h
 
-#ifndef CoreNFC_H
-#error Please import <CoreNFC/CoreNFC.h> from your source file
-#endif
-
 #import <Foundation/Foundation.h>
 #import <dispatch/dispatch.h>
 
@@ -49,6 +45,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
  */
 @property (nonatomic, copy) NSString *alertMessage;
 
+
 /*!
  * @method beginSession:
  *
@@ -65,6 +62,14 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
  * @discussion Closes the reader session.  The session cannot be re-used.
  */
 - (void)invalidateSession;
+
+/*!
+ * @method invalidateSessionWithErrorMessage:
+ *
+ * @discussion Closes the reader session.  The session cannot be re-used.  The specified error message and an error symbol will be displayed momentarily
+ *             on the action sheet before it is automatically dismissed.
+ */
+- (void)invalidateSessionWithErrorMessage:(NSString *)errorMessage API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, macos, tvos);
 
 @end
 
@@ -90,16 +95,6 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
 - (void)readerSessionDidBecomeActive:(NFCReaderSession *)session;
 
 /*!
- * @method readerSession:didDetectTags:
- *
- * @param session   The session object used for tag detection.
- * @param tags      Array of @link NFCTag @link/ objects.
- *
- * @discussion      Gets called when the reader detects NFC tag(s) in the polling sequence.
- */
-- (void)readerSession:(NFCReaderSession *)session didDetectTags:(NSArray<__kindof id<NFCTag>> *)tags;
-
-/*!
  * @method readerSession:didInvalidateWithError:
  *
  * @param session   The session object that is invalidated.
@@ -109,6 +104,17 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
  *                  the returned session object.
  */
 - (void)readerSession:(NFCReaderSession *)session didInvalidateWithError:(NSError *)error;
+
+@optional
+/*!
+ * @method readerSession:didDetectTags:
+ *
+ * @param session   The session object used for tag detection.
+ * @param tags      Array of @link NFCTag @link/ objects.
+ *
+ * @discussion      Gets called when the reader detects NFC tag(s) in the polling sequence.
+ */
+- (void)readerSession:(NFCReaderSession *)session didDetectTags:(NSArray<__kindof id<NFCTag>> *)tags;
 
 @end
 
@@ -124,6 +130,13 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, macos, tvos)
 @interface NFCReaderSession : NSObject<NFCReaderSession>
 
 @property (nonatomic, weak, readonly) id delegate;
+
+/*!
+ * @property readingAvailable
+ *
+ * @discussion YES if device supports NFC tag reading.
+ */
+@property (class, nonatomic, readonly) BOOL readingAvailable;
 
 /*!
  * @property sessionQueue

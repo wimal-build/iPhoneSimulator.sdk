@@ -7,9 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
-#import <HomeKit/HMTrigger.h>
 #import <HomeKit/HMEventTriggerActivationState.h>
 #import <HomeKit/HMSignificantTimeEvent.h>
+#import <HomeKit/HMTrigger.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -44,7 +44,7 @@ HM_EXTERN NSString * const HMPresenceKeyPath API_AVAILABLE(ios(11.0), watchos(4.
  *
  * @discussion This class represents a trigger that is based on events.
  */
-API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMEventTrigger : HMTrigger
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -98,8 +98,7 @@ API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 /*!
  * @brief The events that correspond to executing the restore of the scene before the trigger was executed.
  *        E.g. Execute the scene for 10 mins and restore original state is achieved by specifying a corresponding
- *        HMDurationEvent in the list of endEvents. HMCharacteristicEvent or HMCharacteristicThresholdRangeEvents
- *        can also be added to end events
+ *        HMDurationEvent in the list of endEvents.
  */
 @property(readonly, copy, nonatomic) NSArray<HMEvent *> *endEvents API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
@@ -160,7 +159,7 @@ API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 /*!
  * @brief Updates the set of events in the event trigger.
  *
- * @param events Events to update in the event trigger
+ * @param endEvents Events to update in the event trigger
  *
  * @param completion Block that is invoked once the request is processed.
  *                   The NSError provides more information on the status of the request, error
@@ -295,9 +294,9 @@ API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 /*!
  * @brief Creates a predicate that will evaluate whether the event occurred between two times.
  *
- * @param firstSignificantEvent The first date component.
+ * @param firstDateComponents The first date component.
  *
- * @param secondSignificantEvent The second date component.
+ * @param secondDateWithComponents The second date component.
  *
  * @return Predicate object representing a condition to evaluate before executing the action set.
  */

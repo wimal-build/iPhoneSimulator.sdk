@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Photos/PhotosDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.11), ios(8), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAdjustmentData : NSObject
+OS_EXPORT
+@interface PHAdjustmentData : NSObject
 
 - (instancetype)initWithFormatIdentifier:(NSString *)formatIdentifier formatVersion:(NSString *)formatVersion data:(NSData *)data;
 
@@ -23,4 +24,5 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAdjustmentData : NSObjec
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

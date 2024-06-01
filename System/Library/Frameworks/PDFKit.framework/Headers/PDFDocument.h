@@ -1,6 +1,6 @@
 //
 //  PDFDocument.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFDocument is the logical representation of a PDF file. It is a container of PDFPages,
 //  giving you the ability to load, modify, and save a set of PDF pages. It also gives you the

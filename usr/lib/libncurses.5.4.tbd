@@ -1,11 +1,10 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FEB20B48-86EF-3069-A68B-0B268EEDF670', 'x86_64: 696053ED-ACB6-3903-A864-E9E0311A8CA3' ]
+uuids:           [ 'i386: FEB20B48-86EF-3069-A68B-0B268EEDF670', 'x86_64: 6AF5D88A-D0E0-3112-85B0-ED84A4605061' ]
 platform:        ios
-install-name:    /usr/lib/libncurses.5.4.dylib
+install-name:    '/usr/lib/libncurses.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
     symbols:         [ ___ncurses_5_4VersionNumber, ___ncurses_5_4VersionString, 

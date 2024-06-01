@@ -1,6 +1,6 @@
 //
 //  PDFActionRemoteGoTo.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFActionRemoteGoTo is an interaction event tied with an annotation. This action
 //  is the same action type as PDFActionGoTo, but references another document, allowing

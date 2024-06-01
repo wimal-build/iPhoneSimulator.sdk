@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollectionViewTransitionLayout.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UICollectionViewTransitionLayout.h>)
 //
 //  UICollectionView.h
 //  UIKit
@@ -7,17 +7,18 @@
 //
 
 #import <UIKit/UICollectionViewLayout.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UICollectionViewTransitionLayout : UICollectionViewLayout
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UICollectionViewTransitionLayout : UICollectionViewLayout
 
 @property (assign, nonatomic) CGFloat transitionProgress;
 @property (readonly, nonatomic) UICollectionViewLayout *currentLayout;
 @property (readonly, nonatomic) UICollectionViewLayout *nextLayout;
 
 - (instancetype)initWithCurrentLayout:(UICollectionViewLayout *)currentLayout nextLayout:(UICollectionViewLayout *)newLayout NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
 

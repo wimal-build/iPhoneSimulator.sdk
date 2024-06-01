@@ -6,13 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Photos/PhotosDefines.h>
 
 @class PHContentEditingInput, PHAdjustmentData;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.11), ios(8), tvos(10))
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHContentEditingOutput : NSObject
+OS_EXPORT
+@interface PHContentEditingOutput : NSObject
 
 - (instancetype)initWithContentEditingInput:(PHContentEditingInput *)contentEditingInput;
 
@@ -23,4 +24,5 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHContentEditingOutput : N
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIViewAnimating.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIViewAnimating.h>)
 //
 //  UIViewAnimating.h
 //  UIKit
@@ -15,13 +15,13 @@ typedef NS_ENUM(NSInteger, UIViewAnimatingState)
     UIViewAnimatingStateInactive, // The animation is not executing.
     UIViewAnimatingStateActive,   // The animation is executing.
     UIViewAnimatingStateStopped,  // The animation has been stopped and has not transitioned to inactive.
-} NS_ENUM_AVAILABLE_IOS(10_0) ;
+} API_AVAILABLE(ios(10.0)) ;
 
 typedef NS_ENUM(NSInteger, UIViewAnimatingPosition) {
     UIViewAnimatingPositionEnd,
     UIViewAnimatingPositionStart,
     UIViewAnimatingPositionCurrent,
-} NS_ENUM_AVAILABLE_IOS(10_0);
+} API_AVAILABLE(ios(10.0));
 
 
 NS_ASSUME_NONNULL_BEGIN

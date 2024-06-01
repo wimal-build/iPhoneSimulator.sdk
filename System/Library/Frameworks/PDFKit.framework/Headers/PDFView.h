@@ -1,6 +1,6 @@
 //
 //  PDFView.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  This class is the main view of PDFKit: you can instantiate a PDFView or create one
 //  in Interface Builder that will host the contents of a PDFDocument. Note that you can
@@ -315,8 +315,9 @@ PDFKIT_CLASS_AVAILABLE(10_4, 11_0)
 // Returns an array of PDFPage objects representing the currently visible pages. May return empty array if no document is assigned.
 @property (nonatomic, readonly) NSArray<PDFPage *> *visiblePages PDFKIT_AVAILABLE(10_5, 11_0);
 
-// Turns on or off data detection. If enabled, page text will be scanned for URL's as the page becomes visible. Where
-// URL's are found, Link annotations are created in place. These are temporary annotations and are not saved.
+// Turns on or off data detection. If enabled, page text will be scanned for results such as URL's, addresses, phone numbers,
+// times/dates, etc., as the page becomes visible. Where URL's are found, Link annotations are created in place. These are
+// temporary annotations and are not saved.
 @property (nonatomic) BOOL enableDataDetectors PDFKIT_AVAILABLE(10_6, 11_0);
 
 @end
@@ -327,6 +328,11 @@ PDFKIT_CLASS_AVAILABLE(10_4, 11_0)
 // Delegates implementing the following method will be called to handle clicks on URL links within the PDFView. The
 // default implementation calls [[NSWorkspace sharedWorkspace] openURL: url].
 - (void)PDFViewWillClickOnLink:(PDFView *)sender withURL:(NSURL *)url PDFKIT_AVAILABLE(10_5, 11_0);
+
+
+// A delegate that should return the main view controller the PDFView resides in. This is to add additional
+// support to one's view such as 'Lookup' from the text selection menu, along with support of entering text for notes.
+- (PDFKitPlatformViewController*) PDFViewParentViewController PDFKIT_AVAILABLE(10_15, 13_0);
 
 
 // Certain PDFAction's may request that the PDF viewer application perform a Find. Delegates responding to the below

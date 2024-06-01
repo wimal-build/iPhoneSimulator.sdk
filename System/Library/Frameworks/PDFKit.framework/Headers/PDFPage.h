@@ -1,6 +1,6 @@
 //
 //  PDFPage.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFPage is a logical representation of a PDF document's page. Typically pages are
 //  retrieved from a PDFDocument, though they can be constructed from scratch via either
@@ -102,7 +102,7 @@ PDFKIT_CLASS_AVAILABLE(10_4, 11_0)
 - (void)transformContext:(CGContextRef)context forBox:(PDFDisplayBox)box PDFKIT_AVAILABLE(10_12, 11_0);
 
 // Convenience function that returns an image of this page, with annotations, that fits the given size.
-// Note that the produced image is "size to fit": it retains the original page geometry. The size you give
+// Note that the produced image is "size to fit": it retains the original page aspect-ratio. The size you give
 // may not match the size of the returned image, but the returned image is guaranteed to be equal or less.
 - (PDFKitPlatformImage *)thumbnailOfSize:(PDFSize)size forBox:(PDFDisplayBox)box PDFKIT_AVAILABLE(10_13, 11_0);
 
@@ -128,7 +128,8 @@ PDFKIT_CLASS_AVAILABLE(10_4, 11_0)
 - (nullable PDFSelection *)selectionForRect:(PDFRect)rect;
 
 // Given a point in page-space, returns a selection representing a whole word at that point. May return NULL if no 
-// character (and by extension no word) under point.
+// character (and by extension no word) under point. If data dectors are enabled (-[PDFView enableDataDetectors]),
+// this return the smart-selection for the content at the given point.
 - (nullable PDFSelection *)selectionForWordAtPoint:(PDFPoint)point;
 
 // Given a point in page-space, returns a selection representing a whole line at that point. May return NULL if no 
@@ -138,8 +139,8 @@ PDFKIT_CLASS_AVAILABLE(10_4, 11_0)
 // Returns a selection representing text between startPt and endPt. Points are sorted first top to bottom, left to right.
 - (nullable PDFSelection *)selectionFromPoint:(PDFPoint)startPoint toPoint:(PDFPoint)endPoint;
 
-// Given a range, returns a selection representing text within that range. Will raise an exception if the range length 
-// is zero or if the range is outside the range of the characters on the page.
+// Given a range, returns a selection representing text within that range. Will clamp any range that goes out of bounds.
+// Will return NULL for an empty selection.
 - (nullable PDFSelection *)selectionForRange:(NSRange)range;
 
 // -------- misc

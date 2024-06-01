@@ -1,6 +1,6 @@
 //
 //  PDFBorder.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFBorder represents an array structure that is common for graphical annotations,
 //  defining properties like line-stroke width, color, and dashed patterns.

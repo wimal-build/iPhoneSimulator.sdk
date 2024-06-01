@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityConstants.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibilityConstants.h>)
 //
 //  UIAccessibilityConstants.h
 //  UIKit
@@ -37,7 +37,7 @@ UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitButton;
 UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitLink;
 
 // Used when an element acts as a header for a content section (e.g. the title of a navigation bar).
-UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitHeader NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitHeader API_AVAILABLE(ios(6.0));
 
 // Used when the text field element should also be treated as a search field.
 UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitSearchField;
@@ -81,29 +81,29 @@ UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitUpdatesFrequently;
  Used when activating an element starts a media session (e.g. playing a movie, recording audio) 
  that should not be interrupted by output from an assistive technology, like VoiceOver.
  */
-UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitStartsMediaSession NS_AVAILABLE_IOS(4_0);
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitStartsMediaSession API_AVAILABLE(ios(4.0));
 
 /*
  Used when an element can be "adjusted" (e.g. a slider). The element must also 
  implement accessibilityIncrement and accessibilityDecrement.
  */
-UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitAdjustable NS_AVAILABLE_IOS(4_0);
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitAdjustable API_AVAILABLE(ios(4.0));
 
 // Used when an element allows direct touch interaction for VoiceOver users (for example, a view representing a piano keyboard).
-UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitAllowsDirectInteraction NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitAllowsDirectInteraction API_AVAILABLE(ios(5.0));
 
 /*
  Informs VoiceOver that it should scroll to the next page when it finishes reading the contents of the
  element. VoiceOver will scroll by calling accessibilityScroll: with UIAccessibilityScrollDirectionNext and will 
  stop scrolling when it detects the content has not changed.
  */
-UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitCausesPageTurn NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitCausesPageTurn API_AVAILABLE(ios(5.0));
 
 /*
  Used when a view or accessibility container represents an ordered list of tabs.
  The object with this trait should return NO for isAccessibilityElement.
  */
-UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitTabBar NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN UIAccessibilityTraits UIAccessibilityTraitTabBar API_AVAILABLE(ios(10.0));
 
 /*
  Accessibility Notifications
@@ -132,7 +132,7 @@ UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityLayoutChangedNotificati
  VoiceOver will output the announcement string that is used as the argument.
  The argument is a NSString.
  */
-UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityAnnouncementNotification NS_AVAILABLE_IOS(4_0);
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityAnnouncementNotification API_AVAILABLE(ios(4.0));
 
 /*
  Should be posted after accessibilityScroll: is called and the scrolling action has completed.
@@ -141,7 +141,7 @@ UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityAnnouncementNotificatio
  indicate a border has been reached.
  The argument is a NSString.
  */
-UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPageScrolledNotification NS_AVAILABLE_IOS(4_2);
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPageScrolledNotification API_AVAILABLE(ios(4.2));
 
 /*
  Should be posted to pause an assistive technology's operations temporarily.
@@ -154,34 +154,34 @@ UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPageScrolledNotificatio
  it may do so before it receives the corresponding UIAccessibilityResumeAssistiveTechnologyNotification.
  The argument is a NSString.
  */
-UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPauseAssistiveTechnologyNotification NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityResumeAssistiveTechnologyNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityPauseAssistiveTechnologyNotification API_AVAILABLE(ios(8.0));
+UIKIT_EXTERN UIAccessibilityNotifications UIAccessibilityResumeAssistiveTechnologyNotification API_AVAILABLE(ios(8.0));
 
 /*
  Listen for this notification to know when VoiceOver finishes outputting an announcement. 
  The userInfo dictionary contains UIAccessibilityAnnouncementKeyString and UIAccessibilityAnnouncementKeyWasSuccessful.
  */
-UIKIT_EXTERN NSNotificationName const UIAccessibilityAnnouncementDidFinishNotification NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityAnnouncementDidFinishNotification API_AVAILABLE(ios(6.0));
 
 // The corresponding value is the string that was used for the announcement.
-UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyStringValue NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyStringValue API_AVAILABLE(ios(6.0));
 
 // The corresponding value is an NSNumber representing whether VoiceOver successfully outputted the announcement.
-UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyWasSuccessful NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSString *const UIAccessibilityAnnouncementKeyWasSuccessful API_AVAILABLE(ios(6.0));
 
 
 // In order to know when an assistive technology has focused on an element listen to this notification
 // The newly focused element will be referenced by UIAccessibilityElementFocusedKeyElement in the userInfo dictionary.
-UIKIT_EXTERN NSNotificationName const UIAccessibilityElementFocusedNotification NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityElementFocusedNotification API_AVAILABLE(ios(9.0));
 
 // The corresponding value is the element that is now focused by the assistive technology.
-UIKIT_EXTERN NSString *const UIAccessibilityFocusedElementKey NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIAccessibilityFocusedElementKey API_AVAILABLE(ios(9.0));
 
 // The corresponding value is the element that had previously been focused by the assistive technology.
-UIKIT_EXTERN NSString *const UIAccessibilityUnfocusedElementKey NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIAccessibilityUnfocusedElementKey API_AVAILABLE(ios(9.0));
 
 // The corresponding value is the identifier of the assistive technology
-UIKIT_EXTERN NSString *const UIAccessibilityAssistiveTechnologyKey NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSString *const UIAccessibilityAssistiveTechnologyKey API_AVAILABLE(ios(9.0));
 
 typedef NSString * UIAccessibilityAssistiveTechnologyIdentifier NS_TYPED_ENUM;
 
@@ -189,10 +189,10 @@ typedef NSString * UIAccessibilityAssistiveTechnologyIdentifier NS_TYPED_ENUM;
  The following identifier should be used as the argument when posting a UIAccessibilityPauseAssistiveTechnologyNotification
  or a UIAccessibilityResumeAssistiveTechnologyNotification.
  */
-UIKIT_EXTERN UIAccessibilityAssistiveTechnologyIdentifier const UIAccessibilityNotificationSwitchControlIdentifier NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN UIAccessibilityAssistiveTechnologyIdentifier const UIAccessibilityNotificationSwitchControlIdentifier API_AVAILABLE(ios(8.0));
 
 // Used to identify VoiceOver as the assistive technology.
-UIKIT_EXTERN UIAccessibilityAssistiveTechnologyIdentifier const UIAccessibilityNotificationVoiceOverIdentifier NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN UIAccessibilityAssistiveTechnologyIdentifier const UIAccessibilityNotificationVoiceOverIdentifier API_AVAILABLE(ios(9.0));
 
 
 /*
@@ -215,7 +215,7 @@ typedef NS_ENUM(NSInteger, UIAccessibilityNavigationStyle) {
      When the combined item has been selected, the assistive technology will navigate each element separately.
      */
     UIAccessibilityNavigationStyleCombined = 2,
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} API_AVAILABLE(ios(8.0));
 
 
 typedef NS_ENUM(NSInteger, UIAccessibilityContainerType) {
@@ -223,7 +223,20 @@ typedef NS_ENUM(NSInteger, UIAccessibilityContainerType) {
     UIAccessibilityContainerTypeDataTable,     // If using this container type, you must also implement the UIAccessibilityContainerDataTable protocol.
     UIAccessibilityContainerTypeList,
     UIAccessibilityContainerTypeLandmark,
-} NS_ENUM_AVAILABLE_IOS(11_0);
+    UIAccessibilityContainerTypeSemanticGroup API_AVAILABLE(ios(13.0),tvos(13.0)) // Assistive technologies might query the accessibility properties set on the container, such as the accessibilityLabel, in order to output appropriate information about the semantic group to the user
+} API_AVAILABLE(ios(11.0));
+
+
+// The following constants can be used with either the accessibilityTextualContext property, or with the
+// UIAccessibilityTextAttributeContext attributed key.
+typedef NSString * UIAccessibilityTextualContext NS_TYPED_EXTENSIBLE_ENUM API_AVAILABLE(ios(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextWordProcessing API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextNarrative API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextMessaging API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextSpreadsheet API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextFileSystem API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextSourceCode API_AVAILABLE(ios(13.0), tvos(13.0));
+UIKIT_EXTERN UIAccessibilityTextualContext const UIAccessibilityTextualContextConsole API_AVAILABLE(ios(13.0), tvos(13.0));
 
 /*
  Accessibility Speech Attributes
@@ -236,24 +249,27 @@ typedef NS_ENUM(NSInteger, UIAccessibilityContainerType) {
 // If YES, then all punctuation will be spoken (e.g. when displaying code).
 // If NO, then no punctuation will be spoken.
 // By default, if this attribute is not present, the user's settings will be used.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributePunctuation NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributePunctuation API_AVAILABLE(ios(7.0));
 
 // Use an NSString with a BCP-47 language code to identify the language of a segment of a string.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeLanguage NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeLanguage API_AVAILABLE(ios(7.0));
 
 // Use an NSNumber with a value between [0-2] that specifies the pitch.
 // For example, you may want to lower the pitch when an object is deleted, or raise the pitch if an object is inserted.
 // Default value == 1.0f.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributePitch NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributePitch API_AVAILABLE(ios(7.0));
 
 // The corresponding value for this key should be a NSNumber with a YES or NO value.
 // If YES, then this announcement will be queued behind existing speech; if NO, then it will interrupt existing speech.
 // Default behavior is to interrupt existing speech.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeQueueAnnouncement NS_AVAILABLE_IOS(11_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeQueueAnnouncement API_AVAILABLE(ios(11.0));
 
 // Use an NSString, containing International Phonetic Alphabet (IPA) symbols.
 // Controls the pronunciation of a word or phrase, e.g. a proper name.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeIPANotation NS_AVAILABLE_IOS(11_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeIPANotation API_AVAILABLE(ios(11.0));
+
+// Use an NSNumber with a YES or NO value to specify whether each letter in the string should be spoken separately.
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeSpellOut API_AVAILABLE(ios(13.0));
 
 /*
  Accessibility Text Attributes
@@ -267,11 +283,14 @@ UIKIT_EXTERN NSAttributedStringKey const UIAccessibilitySpeechAttributeIPANotati
  */
 
 // Use an NSNumber where the value is [0, 6]. Use 0 to indicate the absence of a specific heading level.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilityTextAttributeHeadingLevel NS_AVAILABLE_IOS(11_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilityTextAttributeHeadingLevel API_AVAILABLE(ios(11.0));
 
 // Use an NSArray of localized NSStrings to convey custom text attributes.
 // For example, a range of text may have multiple custom 'annotation styles, which can be described with this key.
-UIKIT_EXTERN NSAttributedStringKey const UIAccessibilityTextAttributeCustom NS_AVAILABLE_IOS(11_0);
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilityTextAttributeCustom API_AVAILABLE(ios(11.0));
+
+// Use a UIAccessibilityTextualContext to specify how this text content should be interpreted by assistive technologies.
+UIKIT_EXTERN NSAttributedStringKey const UIAccessibilityTextAttributeContext API_AVAILABLE(ios(13.0), tvos(13.0));
 
 #ifdef __swift__
 // This struct is not available in Objective-C. Its only purpose is to create a namespace for accessibility symbols in Swift.

@@ -8,32 +8,26 @@
 #import <Foundation/Foundation.h>
 
 #import <Photos/PHAsset.h>
+#import <Photos/PHChangeRequest.h>
 #import <Photos/PHContentEditingOutput.h>
-#import <Photos/PhotosDefines.h>
 
-#if TARGET_OS_OSX
-@class NSImage;
-#else
 @class UIImage;
-#endif
 @class CLLocation;
 @class PHAssetResource;
 @class PHObjectPlaceholder;
 @class PHContentEditingInputRequestOptions;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.15), ios(8), tvos(10))
 
 // PHAssetChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetChangeRequest : NSObject
+OS_EXPORT
+@interface PHAssetChangeRequest : PHChangeRequest
 
 #pragma mark - Creating Assets
 
 // Basic asset creation. For finer-grained control, see PHAssetCreationRequest.
-#if TARGET_OS_OSX
-+ (instancetype)creationRequestForAssetFromImage:(NSImage *)image;
-#else
 + (instancetype)creationRequestForAssetFromImage:(UIImage *)image;
-#endif
 + (nullable instancetype)creationRequestForAssetFromImageAtFileURL:(NSURL *)fileURL;
 + (nullable instancetype)creationRequestForAssetFromVideoAtFileURL:(NSURL *)fileURL;
 
@@ -66,9 +60,10 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetChangeRequest : NSO
 @end
 
 
-typedef NSUInteger PHContentEditingInputRequestID PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+typedef NSUInteger PHContentEditingInputRequestID;
 
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHContentEditingInputRequestOptions : NSObject
+OS_EXPORT
+@interface PHContentEditingInputRequestOptions : NSObject
 
 // Block to be provided by the client, used to determine if the given adjustment data can be handled (i.e. can be decoded and rendered).
 @property (nonatomic, copy) BOOL (^canHandleAdjustmentData)(PHAdjustmentData *adjustmentData);
@@ -83,15 +78,15 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHContentEditingInputReque
 @interface PHAsset (PHContentEditingInput)
 
 // Completion and progress handlers are called on an arbitrary serial queue.
-- (PHContentEditingInputRequestID)requestContentEditingInputWithOptions:(nullable PHContentEditingInputRequestOptions *)options completionHandler:(void (^)(PHContentEditingInput *__nullable contentEditingInput, NSDictionary *info))completionHandler PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
-- (void)cancelContentEditingInputRequest:(PHContentEditingInputRequestID)requestID PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+- (PHContentEditingInputRequestID)requestContentEditingInputWithOptions:(nullable PHContentEditingInputRequestOptions *)options completionHandler:(void (^)(PHContentEditingInput *__nullable contentEditingInput, NSDictionary *info))completionHandler;
+- (void)cancelContentEditingInputRequest:(PHContentEditingInputRequestID)requestID;
 
 @end
 
 // Completion handler info dictionary keys
-extern NSString *const PHContentEditingInputResultIsInCloudKey PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
-extern NSString *const PHContentEditingInputCancelledKey PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
-extern NSString *const PHContentEditingInputErrorKey PHOTOS_AVAILABLE_IOS_TVOS(8_0, 10_0);
+extern NSString *const PHContentEditingInputResultIsInCloudKey;
+extern NSString *const PHContentEditingInputCancelledKey;
+extern NSString *const PHContentEditingInputErrorKey;
 
 
 @interface PHContentEditingOutput (PHAssetChangeRequest)
@@ -101,4 +96,5 @@ extern NSString *const PHContentEditingInputErrorKey PHOTOS_AVAILABLE_IOS_TVOS(8
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

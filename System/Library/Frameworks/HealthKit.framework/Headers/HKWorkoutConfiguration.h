@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, HKWorkoutSessionLocationType) {
 
 /*!
  @class         HKWorkoutConfiguration
- @abstract      An HKWorkoutConfiguration is an object that can be used to describe the a workout activity.
+ @abstract      An HKWorkoutConfiguration is an object that can be used to describe the workout activity.
  */
 HK_EXTERN API_AVAILABLE(ios(10.0), watchos(3.0))
 @interface HKWorkoutConfiguration : NSObject <NSCopying, NSSecureCoding>

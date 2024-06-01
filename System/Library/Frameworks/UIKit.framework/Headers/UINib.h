@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINib.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UINib.h>)
 //
 //  UINib.h
 //  UIKit
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
     
-NS_CLASS_AVAILABLE_IOS(4_0) @interface UINib : NSObject 
+UIKIT_EXTERN API_AVAILABLE(ios(4.0)) @interface UINib : NSObject 
 
 // If the bundle parameter is nil, the main bundle is used.
 // Releases resources in response to memory pressure (e.g. memory warning), reloading from the bundle when necessary.

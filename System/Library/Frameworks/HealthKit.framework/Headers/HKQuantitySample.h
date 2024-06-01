@@ -2,7 +2,7 @@
 //  HKQuantitySample.h
 //  HealthKit
 //
-//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2019 Apple Inc. All rights reserved.
 //
 
 #import <HealthKit/HKSample.h>
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @class         HKQuantitySample
- @abstract      An HKObject subclass representing a quantity measurement.
+ @abstract      An abstract HKSample subclass representing a quantity measurement.
  */
 HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKQuantitySample : HKSample
@@ -74,5 +74,6 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 
 // Predicate Key Paths
 HK_EXTERN NSString * const HKPredicateKeyPathQuantity API_AVAILABLE(ios(8.0), watchos(2.0));
+HK_EXTERN NSString * const HKPredicateKeyPathCount API_AVAILABLE(ios(13.0), watchos(6.0));
 
 NS_ASSUME_NONNULL_END

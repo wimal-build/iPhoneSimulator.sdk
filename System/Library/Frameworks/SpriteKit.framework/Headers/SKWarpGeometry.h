@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class SKTexture, SKShader, SKWarpGeometry, SKWarpGeometryGrid;
 
 
-SK_EXPORT NS_AVAILABLE(10_12, 10_0) @protocol SKWarpable <NSObject>
+SK_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12)) @protocol SKWarpable <NSObject>
 
 /* Warp geometry used to define the distortion */
 @property (nonatomic, nullable) SKWarpGeometry *warpGeometry;
@@ -30,10 +30,10 @@ SK_EXPORT NS_AVAILABLE(10_12, 10_0) @protocol SKWarpable <NSObject>
 
 
 /* Base class for future expansion */
-SK_EXPORT NS_AVAILABLE(10_12, 10_0) @interface SKWarpGeometry : NSObject <NSCopying, NSSecureCoding>
+SK_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12)) @interface SKWarpGeometry : NSObject <NSCopying, NSSecureCoding>
 @end
 
-SK_EXPORT NS_AVAILABLE(10_12, 10_0) @interface SKWarpGeometryGrid : SKWarpGeometry <NSSecureCoding>
+SK_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12)) @interface SKWarpGeometryGrid : SKWarpGeometry <NSSecureCoding>
 
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
@@ -124,7 +124,7 @@ SK_EXPORT NS_AVAILABLE(10_12, 10_0) @interface SKWarpGeometryGrid : SKWarpGeomet
  from the node current warp.
  */
 + (nullable SKAction *)warpTo:(SKWarpGeometry *)warp
-                     duration:(NSTimeInterval)duration NS_AVAILABLE(10_12, 10_0);
+                     duration:(NSTimeInterval)duration API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 /* Animate through an array of warps
  
@@ -132,7 +132,7 @@ SK_EXPORT NS_AVAILABLE(10_12, 10_0) @interface SKWarpGeometryGrid : SKWarpGeomet
  Times are specified in seconds and must be increasing values.
  */
 + (nullable SKAction *)animateWithWarps:(NSArray<SKWarpGeometry *> *)warps
-                                  times:(NSArray<NSNumber *> *)times NS_AVAILABLE(10_12, 10_0);
+                                  times:(NSArray<NSNumber *> *)times API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 /* Animate through an array of warps
  
@@ -142,7 +142,7 @@ SK_EXPORT NS_AVAILABLE(10_12, 10_0) @interface SKWarpGeometryGrid : SKWarpGeomet
  */
 + (nullable SKAction *)animateWithWarps:(NSArray<SKWarpGeometry *> *)warps
                                   times:(NSArray<NSNumber *> *)times
-                                restore:(BOOL)restore NS_AVAILABLE(10_12, 10_0);
+                                restore:(BOOL)restore API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 @end
 
 NS_ASSUME_NONNULL_END

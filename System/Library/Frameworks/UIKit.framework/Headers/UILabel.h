@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILabel.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UILabel.h>)
 //
 //  UILabel.h
 //  UIKit
@@ -17,22 +17,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIColor, UIFont;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSizeCategoryAdjusting>
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UILabel : UIView <NSCoding, UIContentSizeCategoryAdjusting>
 
-@property(nullable, nonatomic,copy)   NSString           *text;            // default is nil
-@property(null_resettable, nonatomic,strong) UIFont      *font;            // default is nil (system font 17 plain)
-@property(null_resettable, nonatomic,strong) UIColor     *textColor;       // default is nil (text draws black)
-@property(nullable, nonatomic,strong) UIColor            *shadowColor;     // default is nil (no shadow)
-@property(nonatomic)        CGSize             shadowOffset;    // default is CGSizeMake(0, -1) -- a top shadow
+@property(nullable, nonatomic,copy)   NSString           *text; // default is nil
+@property(null_resettable, nonatomic,strong) UIFont      *font UI_APPEARANCE_SELECTOR; // default is nil (system font 17 plain)
+@property(null_resettable, nonatomic,strong) UIColor     *textColor UI_APPEARANCE_SELECTOR; // default is labelColor
+@property(nullable, nonatomic,strong) UIColor            *shadowColor UI_APPEARANCE_SELECTOR; // default is nil (no shadow)
+@property(nonatomic)        CGSize             shadowOffset UI_APPEARANCE_SELECTOR; // default is CGSizeMake(0, -1) -- a top shadow
 @property(nonatomic)        NSTextAlignment    textAlignment;   // default is NSTextAlignmentNatural (before iOS 9, the default was NSTextAlignmentLeft)
 @property(nonatomic)        NSLineBreakMode    lineBreakMode;   // default is NSLineBreakByTruncatingTail. used for single and multiple lines of text
 
 // the underlying attributed string drawn by the label, if set, the label ignores the properties above.
-@property(nullable, nonatomic,copy)   NSAttributedString *attributedText NS_AVAILABLE_IOS(6_0);  // default is nil
+@property(nullable, nonatomic,copy)   NSAttributedString *attributedText API_AVAILABLE(ios(6.0));  // default is nil
 
 // the 'highlight' property is used by subclasses for such things as pressed states. it's useful to make it part of the base class as a user property
 
-@property(nullable, nonatomic,strong)               UIColor *highlightedTextColor; // default is nil
+@property(nullable, nonatomic,strong)               UIColor *highlightedTextColor UI_APPEARANCE_SELECTOR; // default is nil
 @property(nonatomic,getter=isHighlighted) BOOL     highlighted;          // default is NO
 
 @property(nonatomic,getter=isUserInteractionEnabled) BOOL userInteractionEnabled;  // default is NO
@@ -49,12 +49,12 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSize
 
 @property(nonatomic) BOOL adjustsFontSizeToFitWidth;         // default is NO
 @property(nonatomic) UIBaselineAdjustment baselineAdjustment; // default is UIBaselineAdjustmentAlignBaselines
-@property(nonatomic) CGFloat minimumScaleFactor NS_AVAILABLE_IOS(6_0); // default is 0.0
+@property(nonatomic) CGFloat minimumScaleFactor API_AVAILABLE(ios(6.0)); // default is 0.0
 
 
 // Tightens inter-character spacing in attempt to fit lines wider than the available space if the line break mode is one of the truncation modes before starting to truncate.
 // The maximum amount of tightening performed is determined by the system based on contexts such as font, line width, etc.
-@property(nonatomic) BOOL allowsDefaultTighteningForTruncation NS_AVAILABLE_IOS(9_0); // default is NO
+@property(nonatomic) BOOL allowsDefaultTighteningForTruncation API_AVAILABLE(ios(9.0)); // default is NO
 
 // override points. can adjust rect before calling super.
 // label has default content mode of UIViewContentModeRedraw
@@ -65,7 +65,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSize
 
 // Support for constraint-based layout (auto layout)
 // If nonzero, this is used when determining -intrinsicContentSize for multiline labels
-@property(nonatomic) CGFloat preferredMaxLayoutWidth NS_AVAILABLE_IOS(6_0);
+@property(nonatomic) CGFloat preferredMaxLayoutWidth API_AVAILABLE(ios(6.0));
 
 
 // If YES, the UILabel will scroll its text while any of its immediate or distant superviews become focused. Also, lineBreakMode, adjustsFontSizeToFitWidth, and allowsDefaultTighteningForTruncation are ignored.
@@ -74,10 +74,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSize
 
 // deprecated:
 
-@property(nonatomic) CGFloat minimumFontSize NS_DEPRECATED_IOS(2_0, 6_0) __TVOS_PROHIBITED; // deprecated - use minimumScaleFactor. default is 0.0
+@property(nonatomic) CGFloat minimumFontSize API_DEPRECATED("", ios(2.0, 6.0)) API_UNAVAILABLE(tvos); // deprecated - use minimumScaleFactor. default is 0.0
 
 // Non-functional.  Hand tune by using NSKernAttributeName to affect tracking, or consider using the allowsDefaultTighteningForTruncation property.
-@property(nonatomic) BOOL adjustsLetterSpacingToFitWidth NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+@property(nonatomic) BOOL adjustsLetterSpacingToFitWidth API_DEPRECATED("", ios(6.0, 7.0)) API_UNAVAILABLE(tvos);
 
 @end
 

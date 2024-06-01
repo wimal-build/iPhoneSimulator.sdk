@@ -1,21 +1,22 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 867B7245-4BC3-3198-AF11-0163849A29B6' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3CFADE1B-451E-313B-B23E-E1BBA61736F2' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/CarPlay.framework/CarPlay
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/CarPlay.framework/CarPlay'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _CPColorMeetsContrastRequirement, _CPContrastRatioForColors, 
                        _CPContrastingColorForColor, _CPGuidanceStyleForColor, _CPLuminanceForColor, 
-                       _CPMaximumListItemImageSize, _CPSanitizedBackgroundColor, 
-                       _kCPGridTemplateMaximumItems ]
+                       _CPMaximumListItemImageSize, _CPSStringFromBOOL, _CPSanitizedBackgroundColor, 
+                       _CPTemplateApplicationSceneSessionRoleApplication, _kCPGridTemplateMaximumItems ]
     objc-classes:    [ CPActionSheetTemplate, CPAlertAction, CPAlertTemplate, CPBarButton, 
                        CPEndpointListenerWrapper, CPGridButton, CPGridTemplate, CPImageSet, 
                        CPInterfaceController, CPListItem, CPListSection, CPListTemplate, 
                        CPManeuver, CPMapButton, CPMapTemplate, CPNavigationAlert, 
                        CPNavigationSession, CPRequestEndpointAction, CPRouteChoice, 
-                       CPSearchTemplate, CPSessionConfiguration, CPTemplate, CPTravelEstimates, 
-                       CPTrip, CPTripPreviewTextConfiguration, CPVoiceControlState, 
+                       CPSearchTemplate, CPSessionConfiguration, CPTemplate, CPTemplateApplicationScene, 
+                       CPTravelEstimates, CPTrip, CPTripPreviewTextConfiguration, 
+                       CPUIMutableTemplateApplicationSceneSettings, CPUITemplateApplicationSceneSettings, 
+                       CPUITemplateApplicationSceneSpecification, CPVoiceControlState, 
                        CPVoiceControlTemplate, CPWindow ]
 ...

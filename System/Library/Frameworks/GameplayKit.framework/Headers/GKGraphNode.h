@@ -22,7 +22,7 @@ GK_BASE_AVAILABILITY @interface GKGraphNode : NSObject <NSSecureCoding>
 /**
  * Add a connection to a group of other nodes indicating those nodes can be reached from this node.
  * A new connection is not created if it already exists.
- * @param array of nodes that are end points for their respective connections
+ * @param nodes The array of nodes that are end points for their respective connections
  * @param bidirectional should a connection also be added connecting the destination node back to this node?
  */
 - (void)addConnectionsToNodes:(NSArray<GKGraphNode *> *)nodes bidirectional:(BOOL)bidirectional;
@@ -30,14 +30,14 @@ GK_BASE_AVAILABILITY @interface GKGraphNode : NSObject <NSSecureCoding>
 /**
  * Removes connections to a group of other nodes indicating those nodes can no longer be reached from this node.
  * Nothing happens if a particular connection does not exist.
- * @param node the end point of the edge to be removed
+ * @param nodes The array of nodes that are end points of the edges to be removed
   * @param bidirectional should the connection also be added the destination node back to this node also be removed if it exists?
  */
 - (void)removeConnectionsToNodes:(NSArray<GKGraphNode *> *)nodes bidirectional:(BOOL)bidirectional;
 
 /**
  * Returns the estimated heuristic cost to reach the indicated node from this node
- * @param the end point of the edge who's cost is to be estimated
+ * @param node The end point of the edge who's cost is to be estimated
  */
 - (float)estimatedCostToNode:(GKGraphNode *)node;
 

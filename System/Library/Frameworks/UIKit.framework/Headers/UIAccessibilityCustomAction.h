@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityCustomAction.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibilityCustomAction.h>)
 //
 //  UIAccessibilityCustomAction.h
 //  UIKit
@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAccessibilityCustomAction : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) @interface UIAccessibilityCustomAction : NSObject
 
 - (instancetype)initWithName:(NSString *)name target:(nullable id)target selector:(SEL)selector;
 - (instancetype)initWithAttributedName:(NSAttributedString *)attributedName target:(nullable id)target selector:(SEL)selector API_AVAILABLE(ios(11.0), tvos(11.0));
+
+typedef BOOL(^UIAccessibilityCustomActionHandler)(UIAccessibilityCustomAction *customAction);
+- (instancetype)initWithName:(NSString *)name actionHandler:(UIAccessibilityCustomActionHandler)actionHandler API_AVAILABLE(ios(13.0), tvos(13.0));
+- (instancetype)initWithAttributedName:(NSAttributedString *)attributedName actionHandler:(UIAccessibilityCustomActionHandler)actionHandler API_AVAILABLE(ios(13.0), tvos(13.0));
 
 /*
  A localized name that describes the action.
@@ -38,6 +43,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAccessibilityCustomAction : NSObject
  - (BOOL)myPerformActionMethod:(UIAccessibilityCustomAction *)action;
  */
 @property (nonatomic, assign) SEL selector;
+
+/*
+ If the actionHandler is set, it will be preferred over the target/selector.
+ */
+@property (nonatomic, copy, nullable) UIAccessibilityCustomActionHandler actionHandler API_AVAILABLE(ios(13.0), tvos(13.0));
 
 @end
 

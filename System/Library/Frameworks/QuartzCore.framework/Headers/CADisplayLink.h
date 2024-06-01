@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Class representing a timer bound to the display vsync. **/
 
-API_AVAILABLE(macos(10.14), ios(3.1), watchos(2.0), tvos(9.0))
+API_AVAILABLE(ios(3.1), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos)
 @interface CADisplayLink : NSObject
 {
 @private
@@ -54,7 +54,7 @@ API_AVAILABLE(macos(10.14), ios(3.1), watchos(2.0), tvos(9.0))
 /* The next timestamp that the client should target their render for. */
 
 @property(readonly, nonatomic) CFTimeInterval targetTimestamp
-    API_AVAILABLE(macos(10.14), ios(10.0), watchos(3.0), tvos(10.0));
+    API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 /* When true the object is prevented from firing. Initial state is
  * false. */

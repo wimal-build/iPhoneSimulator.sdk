@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIBezierPath.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIBezierPath.h>)
 //
 //  UIBezierPath.h
 //  UIKit
@@ -10,17 +10,11 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKitDefines.h>
 
+#import "UIGeometry.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_OPTIONS(NSUInteger, UIRectCorner) {
-    UIRectCornerTopLeft     = 1 << 0,
-    UIRectCornerTopRight    = 1 << 1,
-    UIRectCornerBottomLeft  = 1 << 2,
-    UIRectCornerBottomRight = 1 << 3,
-    UIRectCornerAllCorners  = ~0UL
-};
-
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) @interface UIBezierPath : NSObject<NSCopying, NSSecureCoding>
 
 + (instancetype)bezierPath;
 + (instancetype)bezierPathWithRect:(CGRect)rect;
@@ -31,7 +25,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSSecu
 + (instancetype)bezierPathWithCGPath:(CGPathRef)CGPath;
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 // Returns an immutable CGPathRef which is only valid until the UIBezierPath is further mutated.
 // Setting the path will create an immutable copy of the provided CGPathRef, so any further mutations on a provided CGMutablePathRef will be ignored.
@@ -44,7 +38,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSSecu
 - (void)addLineToPoint:(CGPoint)point;
 - (void)addCurveToPoint:(CGPoint)endPoint controlPoint1:(CGPoint)controlPoint1 controlPoint2:(CGPoint)controlPoint2;
 - (void)addQuadCurveToPoint:(CGPoint)endPoint controlPoint:(CGPoint)controlPoint;
-- (void)addArcWithCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(BOOL)clockwise NS_AVAILABLE_IOS(4_0);
+- (void)addArcWithCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(BOOL)clockwise API_AVAILABLE(ios(4.0));
 - (void)closePath;
 
 - (void)removeAllPoints;
@@ -55,7 +49,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSSecu
 
 // Modified paths
 
-- (UIBezierPath *)bezierPathByReversingPath NS_AVAILABLE_IOS(6_0);
+- (UIBezierPath *)bezierPathByReversingPath API_AVAILABLE(ios(6.0));
 
 // Transforming paths
 

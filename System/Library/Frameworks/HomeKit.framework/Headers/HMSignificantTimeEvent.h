@@ -4,16 +4,15 @@
 //  Copyright (c) 2017 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
-#import <HomeKit/HMDefines.h>
-#import <HomeKit/HMTimeEvent.h>
 #import <HomeKit/HMSignificantEvents.h>
+#import <HomeKit/HMTimeEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @brief This class is used to represent a significant time event.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMSignificantTimeEvent : HMTimeEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -38,7 +37,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @property(readonly, strong, nonatomic) HMSignificantEvent significantEvent;
 
 /*!
- * @param offset An offset from the time of the signficant event. To specify an offset before the significant event, the
+ * @brief offset An offset from the time of the signficant event. To specify an offset before the significant event, the
  *               properties of the NSDateComponents must be negative value. e.g. To specify 30 mins before sunset, the
  *               'minute' property must be set to -30.
  */
@@ -52,7 +51,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 /*!
  * @brief This class is used to represent a significant time event.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMMutableSignificantTimeEvent : HMSignificantTimeEvent
 
 /*!
@@ -61,7 +60,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @property(readwrite, strong, nonatomic) HMSignificantEvent significantEvent;
 
 /*!
- * @param offset An offset from the time of the signficant event. To specify an offset before the significant event, the
+ * @brief offset An offset from the time of the signficant event. To specify an offset before the significant event, the
  *               properties of the NSDateComponents must be negative value. e.g. To specify 30 mins before sunset, the
  *               'minute' property must be set to -30.
  */

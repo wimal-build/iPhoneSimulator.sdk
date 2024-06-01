@@ -14,33 +14,33 @@ typedef NS_ENUM(NSUInteger, SKProductDiscountPaymentMode) {
     SKProductDiscountPaymentModePayAsYouGo,
     SKProductDiscountPaymentModePayUpFront,
     SKProductDiscountPaymentModeFreeTrial
-} NS_SWIFT_NAME(SKProductDiscount.PaymentMode) NS_AVAILABLE(10_13_2, 11_2);
+} NS_SWIFT_NAME(SKProductDiscount.PaymentMode) API_AVAILABLE(ios(11.2), macos(10.13.2));
 
 typedef NS_ENUM(NSUInteger, SKProductDiscountType) {
     SKProductDiscountTypeIntroductory,
     SKProductDiscountTypeSubscription,
-} NS_SWIFT_NAME(SKProductDiscount.Type) NS_AVAILABLE(10_14_4, 12_2);
+} NS_SWIFT_NAME(SKProductDiscount.Type) API_AVAILABLE(ios(12.2), macos(10.14.4));
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXTERN_CLASS_AVAILABLE(10_13_2, 11_2) @interface SKProductDiscount : NSObject {
+SK_EXTERN_CLASS API_AVAILABLE(ios(11.2), macos(10.13.2)) @interface SKProductDiscount : NSObject {
 @private
     id _internal;
 }
 
-@property(nonatomic, readonly) NSDecimalNumber *price NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly) NSDecimalNumber *price API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly) NSLocale *priceLocale NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly) NSLocale *priceLocale API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly, nullable) NSString *identifier NS_AVAILABLE(10_14_4, 12_2);
+@property(nonatomic, readonly, nullable) NSString *identifier API_AVAILABLE(ios(12.2), macos(10.14.4));
 
-@property(nonatomic, readonly) SKProductSubscriptionPeriod *subscriptionPeriod NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly) SKProductSubscriptionPeriod *subscriptionPeriod API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly) NSUInteger numberOfPeriods NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly) NSUInteger numberOfPeriods API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly) SKProductDiscountPaymentMode paymentMode NS_AVAILABLE(10_13_2, 11_2);
+@property(nonatomic, readonly) SKProductDiscountPaymentMode paymentMode API_AVAILABLE(ios(11.2), macos(10.13.2));
 
-@property(nonatomic, readonly) SKProductDiscountType type NS_AVAILABLE(10_14_4, 12_2);
+@property(nonatomic, readonly) SKProductDiscountType type API_AVAILABLE(ios(12.2), macos(10.14.4));
 
 @end
 

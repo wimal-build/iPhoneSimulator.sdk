@@ -14,9 +14,9 @@ typedef NS_ENUM(NSInteger, CXHandleType) {
     CXHandleTypeGeneric = 1,
     CXHandleTypePhoneNumber = 2,
     CXHandleTypeEmailAddress = 3,
-} API_AVAILABLE(ios(10.0));
+} API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos);
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXHandle : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly) CXHandleType type;
@@ -25,7 +25,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 - (instancetype)initWithType:(CXHandleType)type value:(NSString *)value NS_DESIGNATED_INITIALIZER;
 - (instancetype)init NS_UNAVAILABLE;
 
-- (BOOL)isEqualToHandle:(CXHandle *)handle NS_SWIFT_UNAVAILABLE("Use == operator instead");
+- (BOOL)isEqualToHandle:(CXHandle *)handle;
 
 @end
 

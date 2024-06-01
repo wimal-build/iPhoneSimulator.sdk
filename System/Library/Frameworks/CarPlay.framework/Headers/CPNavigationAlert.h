@@ -60,6 +60,13 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
                              imageSet:(nullable CPImageSet *)imageSet
                         primaryAction:(CPAlertAction *)primaryAction
                       secondaryAction:(nullable CPAlertAction *)secondaryAction
+                             duration:(NSTimeInterval)duration API_DEPRECATED_WITH_REPLACEMENT("initWithTitleVariants:subtitleVariants:image:primaryAction:secondaryAction:duration", ios(12.0, 13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+
+- (instancetype)initWithTitleVariants:(NSArray <NSString *> *)titleVariants
+                     subtitleVariants:(nullable NSArray <NSString *> *)subtitleVariants
+                                image:(nullable UIImage *)image
+                        primaryAction:(CPAlertAction *)primaryAction
+                      secondaryAction:(nullable CPAlertAction *)secondaryAction
                              duration:(NSTimeInterval)duration;
 
 /**
@@ -77,6 +84,7 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @property (nonatomic, readonly, copy) NSArray <NSString *> *titleVariants;
 @property (nonatomic, readonly, copy) NSArray <NSString *> *subtitleVariants;
 @property (nullable, nonatomic, readonly, copy) CPImageSet *imageSet;
+@property (nullable, nonatomic, readonly, copy) UIImage *image;
 @property (nonatomic, readonly, strong) CPAlertAction *primaryAction;
 @property (nullable, nonatomic, readonly, strong) CPAlertAction *secondaryAction;
 @property (nonatomic, readonly) NSTimeInterval duration;

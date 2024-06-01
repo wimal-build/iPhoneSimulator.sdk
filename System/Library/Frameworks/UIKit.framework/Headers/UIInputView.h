@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIInputView.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIInputView.h>)
 //
 //  UIInputView.h
 //  UIKit
@@ -7,22 +7,23 @@
 //
 
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, UIInputViewStyle) {
     UIInputViewStyleDefault,
     UIInputViewStyleKeyboard,       // mimics the keyboard background
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} API_AVAILABLE(ios(7.0));
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIInputView : UIView
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIInputView : UIView
 
 @property (nonatomic, readonly) UIInputViewStyle inputViewStyle;
 
-@property (nonatomic, assign) BOOL allowsSelfSizing NS_AVAILABLE_IOS(9_0); // defaults to NO
+@property (nonatomic, assign) BOOL allowsSelfSizing API_AVAILABLE(ios(9.0)); // defaults to NO
 
 - (instancetype)initWithFrame:(CGRect)frame inputViewStyle:(UIInputViewStyle)inputViewStyle NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 @end
 

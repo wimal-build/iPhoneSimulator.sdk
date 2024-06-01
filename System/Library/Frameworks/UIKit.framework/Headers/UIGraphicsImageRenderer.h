@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGraphicsImageRenderer.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIGraphicsImageRenderer.h>)
 //
 //  UIGraphicsImageRenderer.h
 //  UIKit
@@ -7,39 +7,40 @@
 //
 
 #import <UIKit/UIGraphicsRenderer.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIImage.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class UIGraphicsImageRendererContext;
 
-typedef void (^UIGraphicsImageDrawingActions)(UIGraphicsImageRendererContext *rendererContext) NS_AVAILABLE_IOS(10_0);
+typedef void (^UIGraphicsImageDrawingActions)(UIGraphicsImageRendererContext *rendererContext) API_AVAILABLE(ios(10.0));
 
 typedef NS_ENUM(NSInteger, UIGraphicsImageRendererFormatRange) {
     UIGraphicsImageRendererFormatRangeUnspecified = -1,
     UIGraphicsImageRendererFormatRangeAutomatic = 0,
     UIGraphicsImageRendererFormatRangeExtended,
     UIGraphicsImageRendererFormatRangeStandard
-} NS_ENUM_AVAILABLE_IOS(12_0);
+} API_AVAILABLE(ios(12.0));
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRendererFormat : UIGraphicsRendererFormat
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIGraphicsImageRendererFormat : UIGraphicsRendererFormat
 
 @property (nonatomic) CGFloat scale; // display scale of the context. The preferredFormat uses the scale most appropriate for the main screen's current configuration.
 @property (nonatomic) BOOL opaque; // indicates the bitmap context will draw fully opaque. The preferredFormat sets this to NO.
-@property (nonatomic) BOOL prefersExtendedRange NS_DEPRECATED_IOS(10_0, 12_0, "Use the preferredRange property instead"); // indicates the bitmap context should draw into a context capable of rendering extended color images. The preferredFormat sets this according to the main screen's current configuration.
+@property (nonatomic) BOOL prefersExtendedRange API_DEPRECATED("Use the preferredRange property instead", ios(10.0, 12.0)); // indicates the bitmap context should draw into a context capable of rendering extended color images. The preferredFormat sets this according to the main screen's current configuration.
 
-@property (nonatomic) UIGraphicsImageRendererFormatRange preferredRange NS_AVAILABLE_IOS(12_0);
+@property (nonatomic) UIGraphicsImageRendererFormatRange preferredRange API_AVAILABLE(ios(12.0));
 
 // Returns a format optimized for the specified trait collection, taking into account properties such as displayScale and displayGamut.
 // Traits that are not specified will be ignored, with their corresponding format properties defaulting to the values in preferredFormat.
-+ (instancetype)formatForTraitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(11_0);
++ (instancetype)formatForTraitCollection:(UITraitCollection *)traitCollection API_AVAILABLE(ios(11.0));
 @end
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRendererContext : UIGraphicsRendererContext
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIGraphicsImageRendererContext : UIGraphicsRendererContext
 @property (nonatomic, readonly) UIImage *currentImage; // Returns a UIImage representing the current state of the renderer's CGContext
 @end
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRenderer : UIGraphicsRenderer
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIGraphicsImageRenderer : UIGraphicsRenderer
 - (instancetype)initWithSize:(CGSize)size;
 - (instancetype)initWithSize:(CGSize)size format:(UIGraphicsImageRendererFormat *)format NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithBounds:(CGRect)bounds format:(UIGraphicsImageRendererFormat *)format NS_DESIGNATED_INITIALIZER;

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief Abstract class for source of data from a camera.
  */
-API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCameraSource : NSObject
 
 @end

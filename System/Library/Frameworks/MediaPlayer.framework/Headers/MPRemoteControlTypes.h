@@ -5,8 +5,8 @@
 //  Copyright (c) 2016 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, MPShuffleType) {
     MPShuffleTypeOff,           /// Nothing is shuffled during playback.

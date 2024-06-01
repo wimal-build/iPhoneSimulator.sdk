@@ -60,6 +60,10 @@ API_AVAILABLE(ios(11.0), tvos(11.0));
 @property (nonatomic, copy) NSArray<VSAccountProviderAuthenticationScheme> *supportedAuthenticationSchemes
 API_AVAILABLE(ios(10.2), tvos(10.1));
 
+/// A value that an account provider application may set to pass an existing authentication session.
+/// For use by TV Provider applications only.
+@property (nonatomic, copy, nullable) NSString *accountProviderAuthenticationToken API_AVAILABLE(ios(13.0), tvos(13.0));
+
 @end
 
 NS_ASSUME_NONNULL_END

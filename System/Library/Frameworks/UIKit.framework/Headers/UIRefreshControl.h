@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIRefreshControl.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIRefreshControl.h>)
 //
 //  UIRefreshControl.h
 //  UIKit
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
     
-NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIRefreshControl : UIControl
+UIKIT_EXTERN API_AVAILABLE(ios(6.0)) API_UNAVAILABLE(tvos) @interface UIRefreshControl : UIControl
 
 /* The designated initializer
  * This initializes a UIRefreshControl with a default height and width.
@@ -28,9 +28,9 @@ NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIRefreshControl : UICo
 @property (nullable, nonatomic, strong) NSAttributedString *attributedTitle UI_APPEARANCE_SELECTOR;
 
 // May be used to indicate to the refreshControl that an external event has initiated the refresh action
-- (void)beginRefreshing NS_AVAILABLE_IOS(6_0);
+- (void)beginRefreshing API_AVAILABLE(ios(6.0));
 // Must be explicitly called when the refreshing has completed
-- (void)endRefreshing NS_AVAILABLE_IOS(6_0);
+- (void)endRefreshing API_AVAILABLE(ios(6.0));
 
 @end
 

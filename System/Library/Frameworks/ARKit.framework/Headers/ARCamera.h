@@ -102,6 +102,16 @@ API_AVAILABLE(ios(11.0))
 @property (nonatomic, readonly) CGSize imageResolution;
 
 /**
+ The camera exposure duration in seconds.
+ */
+@property (nonatomic, readonly) NSTimeInterval exposureDuration API_AVAILABLE(ios(13.0));
+
+/**
+ The camera exposure offset in EV (exposure value) units.
+ */
+@property (nonatomic, readonly) float exposureOffset API_AVAILABLE(ios(13.0));
+
+/**
  The projection matrix of the camera.
  @discussion The projection matrix assumes no far clipping plane limit.
 */

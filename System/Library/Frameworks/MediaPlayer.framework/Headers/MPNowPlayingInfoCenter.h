@@ -5,8 +5,8 @@
 //  Copyright 2011 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -67,7 +67,7 @@ MP_API(ios(5.0), tvos(5.0), macos(10.12.2), watchos(5.0))
 /// the application's audio session. This property must be set every time
 /// the app begins or halts playback, otherwise remote control functionality may
 /// not work as expected.
-@property (nonatomic) MPNowPlayingPlaybackState playbackState MP_API(macos(10.12.2));
+@property (nonatomic) MPNowPlayingPlaybackState playbackState MP_API(macos(10.12.2), ios(13.0), macCatalyst(13.0));
 
 @end
 

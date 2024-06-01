@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @abstract This view can render a camera source.
  */
 
-API_AVAILABLE(ios(10.0), tvos(10.0)) API_UNAVAILABLE(watchos)
+HM_EXTERN API_AVAILABLE(ios(10.0), tvos(10.0)) API_UNAVAILABLE(watchos)
 @interface HMCameraView : UIView
 
 /*!

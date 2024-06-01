@@ -1,9 +1,9 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFocusDebugger.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIFocusDebugger.h>)
 //
 //  UIFocusDebugger.h
 //  UIKit Framework
 //
-//  Copyright © 2017-2018 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// UIFocusDebugger provides a collection of runtime utilities for debugging issues related to focus interaction.
-NS_CLASS_AVAILABLE_IOS(11_0) @interface UIFocusDebugger : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) @interface UIFocusDebugger : NSObject
 
 /// Outputs an overview of all supported debugging utilities and other relevant information.
 ///   - To use in Swift, enter `po UIFocusDebugger.help()` when paused in lldb.
@@ -38,7 +38,7 @@ NS_CLASS_AVAILABLE_IOS(11_0) @interface UIFocusDebugger : NSObject
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(11_0) @protocol UIFocusDebuggerOutput <NSObject>
+UIKIT_EXTERN API_AVAILABLE(ios(11.0)) @protocol UIFocusDebuggerOutput <NSObject>
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,8 +7,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SFVoiceAnalytics;
+
 // Substrings of a hypothesized transcription
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), macos(10.15))
 @interface SFTranscriptionSegment : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly, copy) NSString *substring;
@@ -23,6 +25,8 @@ API_AVAILABLE(ios(10.0))
 
 // Other possible interpretations of this segment
 @property (nonatomic, readonly) NSArray<NSString *> *alternativeSubstrings;
+
+@property (nonatomic, nullable, readonly) SFVoiceAnalytics *voiceAnalytics API_AVAILABLE(ios(13.0), macos(10.15));
 
 @end
 

@@ -2,17 +2,19 @@
 //  MediaPlayerDefines.h
 //  MediaPlayer
 //
-//  Copyright 2008 Apple, Inc. All rights reserved.
+//  Copyright 2008-2019 Apple Inc. All rights reserved.
 //
 
 #import <Availability.h>
 #import <TargetConditionals.h>
 
 #ifdef __cplusplus
-#define MP_EXTERN extern "C" __attribute__((visibility ("default")))
+#define _MP_EXTERN extern "C"
 #else
-#define MP_EXTERN extern __attribute__((visibility ("default")))
+#define _MP_EXTERN extern
 #endif
+
+#define MP_EXTERN _MP_EXTERN __attribute__((visibility("default")))
 
 #define MP_API(...) __API_AVAILABLE(__VA_ARGS__)
 #define MP_DEPRECATED(...) __API_DEPRECATED(__VA_ARGS__)

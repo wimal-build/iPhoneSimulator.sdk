@@ -59,7 +59,7 @@ API_AVAILABLE(macos(10.11), ios(8.0))
  It is not valid to invoke this method on buffers of other storage modes.
  @param range The range of bytes that have been modified.
  */
-- (void)didModifyRange:(NSRange)range API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios);
+- (void)didModifyRange:(NSRange)range API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios);
 
 /*!
  @method newTextureWithDescriptor:offset:bytesPerRow:

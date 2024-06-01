@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class CXProvider;
 @class CXProviderConfiguration;
 @class CXTransaction;
+@class CXAction;
+@class CXCallAction;
 @class CXStartCallAction;
 @class CXAnswerCallAction;
 @class CXEndCallAction;
@@ -32,8 +34,9 @@ typedef NS_ENUM(NSInteger, CXCallEndedReason) {
     CXCallEndedReasonUnanswered = 3, // The call never started connecting and was never explicitly ended (e.g. outgoing/incoming call timeout)
     CXCallEndedReasonAnsweredElsewhere = 4, // The call was answered on another device
     CXCallEndedReasonDeclinedElsewhere = 5, // The call was declined on another device
-} API_AVAILABLE(ios(10.0));
+} API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos);
 
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @protocol CXProviderDelegate <NSObject>
 
 /// Called when the provider has been reset. Delegates must respond to this callback by cleaning up all internal call state (disconnecting communication channels, releasing network resources, etc.). This callback can be treated as a request to end all calls without the need to respond to any actions
@@ -70,7 +73,7 @@ typedef NS_ENUM(NSInteger, CXCallEndedReason) {
 
 @end
 
-CX_CLASS_AVAILABLE(ios(10.0))
+CX_EXTERN API_AVAILABLE(ios(10.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface CXProvider : NSObject
 
 /// Initialize a new provider instance with the supplied configuration
@@ -103,7 +106,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 /// The receiver's current configuration.
 @property (nonatomic, readwrite, copy) CXProviderConfiguration *configuration;
 
-/// Invalidate the provider. All existing calls will be marked as ended in failure. The provider must be invalidated before it is deallocated.
+/// Invalidate the receiver. All existing calls will be marked as ended in failure. The provider must be invalidated before it is deallocated.
 - (void)invalidate;
 
 /// List of all transactions that are incomplete.

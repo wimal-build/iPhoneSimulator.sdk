@@ -1,6 +1,6 @@
 //
 //  PDFActionURL.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFActionURL is an interaction event tied with an annotation. This action allows
 //  the user to open a URL, either being a local file or web URL.

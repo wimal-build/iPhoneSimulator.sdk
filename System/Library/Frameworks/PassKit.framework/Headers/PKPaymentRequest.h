@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 #import <PassKit/PKConstants.h>
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 #import <AddressBook/ABRecord.h>
 #endif // TARGET_OS_IOS
 
@@ -166,7 +166,7 @@ API_AVAILABLE(ios(8.0), watchos(3.0))
 // issued in the supported countries.
 @property (nonatomic, copy, nullable) NSSet<NSString *> *supportedCountries API_AVAILABLE(ios(11.0), watchos(4.0));
 
-#if TARGET_OS_IOS
+#if TARGET_OS_IOS && !TARGET_OS_MACCATALYST
 // These properties have been deprecated and should not be used.
 @property (nonatomic, assign, nullable) ABRecordRef shippingAddress __WATCHOS_PROHIBITED API_DEPRECATED("ABRecordRef has been deprecated, and does not support all available address properties. You should migrate to shippingContact.", ios(8.0, 9.0));
 

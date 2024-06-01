@@ -1,19 +1,18 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 72975735-ED0B-3F5F-9C76-BAC9732F5BDA', 'x86_64: 9F8290F8-F370-398D-BA68-75D121F88A7A' ]
+uuids:           [ 'i386: 72975735-ED0B-3F5F-9C76-BAC9732F5BDA', 'x86_64: 5541C08D-2EA5-3C48-834A-9E2FE87A97FC' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory'
 exports:         
   - archs:           [ x86_64 ]
     objc-ivars:      [ EAInputStream._useSocket, EAOutputStream._useSocket ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _EAAccessoryAccessibilityActionKey, _EAAccessoryAccessibilityContextKey, 
-                       _EAAccessoryAccessibilityHeightKey, _EAAccessoryAccessibilityItemPropertyKey, 
-                       _EAAccessoryAccessibilityPointXKey, _EAAccessoryAccessibilityPointYKey, 
-                       _EAAccessoryAccessibilityResponseKey, _EAAccessoryAccessibilityScaleFactorKey, 
-                       _EAAccessoryAccessibilitySystemPropertyKey, _EAAccessoryAccessibilitySystemPropertySpeakingRateKey, 
-                       _EAAccessoryAccessibilitySystemPropertyVoiceOverEnabledKey, 
+    symbols:         [ _ACCExternalAccessoryProtocolDetailsKey, _EAAccessoryAccessibilityActionKey, 
+                       _EAAccessoryAccessibilityContextKey, _EAAccessoryAccessibilityHeightKey, 
+                       _EAAccessoryAccessibilityItemPropertyKey, _EAAccessoryAccessibilityPointXKey, 
+                       _EAAccessoryAccessibilityPointYKey, _EAAccessoryAccessibilityResponseKey, 
+                       _EAAccessoryAccessibilityScaleFactorKey, _EAAccessoryAccessibilitySystemPropertyKey, 
+                       _EAAccessoryAccessibilitySystemPropertySpeakingRateKey, _EAAccessoryAccessibilitySystemPropertyVoiceOverEnabledKey, 
                        _EAAccessoryAccessibilitySystemPropertyVoiceOverVolumeKey, 
                        _EAAccessoryAccessibilityTextKey, _EAAccessoryAccessibilityTouchPhaseKey, 
                        _EAAccessoryAccessibilityTraitAdjustable, _EAAccessoryAccessibilityTraitBackButton, 
@@ -54,6 +53,8 @@ exports:
                        _EAIAPAppAccessoryCertDataKey, _EAIAPAppAccessoryCertSerialNumberKey, 
                        _EAIPAccessoryAvailableNotification, _EAIPAccessoryConnectionCompleteNotification, 
                        _EAIPAccessoryDisconnectedNotification, _EAIPAccessoryNotAvailableNotification, 
+                       _EAProtocolEndpointUUIDKey, _EAProtocolFirmwareVersionActiveKey, 
+                       _EAProtocolFirmwareVersionPendingKey, _EAProtocolIndexKey, 
                        _EASessionOpenCompletedNotification, _EATimeSyncInfoMeasurementInterval, 
                        _EATimeSyncInfoOffsetEstimate, _EATimeSyncInfoOffsetUncertainty, 
                        _EATimeSyncInfoUncertaintyThreshold, _EATimeSyncOffsetMeasurementInterval, 

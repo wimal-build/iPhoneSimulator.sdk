@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINotificationFeedbackGenerator.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UINotificationFeedbackGenerator.h>)
 //
 //  UINotificationFeedbackGenerator.h
 //  UIKit

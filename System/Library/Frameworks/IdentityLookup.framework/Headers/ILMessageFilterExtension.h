@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Parent class for a MessageFilter extension's principal class.
-IL_EXTERN API_AVAILABLE(ios(11.0))
+IL_EXTERN API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILMessageFilterExtension : NSObject
 @end
 

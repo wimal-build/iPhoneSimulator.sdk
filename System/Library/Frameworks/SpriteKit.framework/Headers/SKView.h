@@ -48,9 +48,9 @@ SK_EXPORT @interface SKView : NSView <NSSecureCoding>
 @property (nonatomic) BOOL showsFPS;
 @property (nonatomic) BOOL showsDrawCount;
 @property (nonatomic) BOOL showsNodeCount;
-@property (nonatomic) BOOL showsQuadCount NS_AVAILABLE(10_10, 8_0);
-@property (nonatomic) BOOL showsPhysics NS_AVAILABLE(10_10, 8_0);
-@property (nonatomic) BOOL showsFields NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic) BOOL showsQuadCount API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
+@property (nonatomic) BOOL showsPhysics API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
+@property (nonatomic) BOOL showsFields API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /**
@@ -62,7 +62,7 @@ SK_EXPORT @interface SKView : NSView <NSSecureCoding>
  Toggles whether the view allows transparent rendering. This allows content under the view to show through if
  a non-opaque backgroundColor is set on the scene. Defaults to NO.
  */
-@property (nonatomic) BOOL allowsTransparency NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic) BOOL allowsTransparency API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /**
  Ignores sibling and traversal order to sort the rendered contents of a scene into the most efficient batching possible.
@@ -76,18 +76,18 @@ SK_EXPORT @interface SKView : NSView <NSSecureCoding>
 @property (nonatomic) BOOL ignoresSiblingOrder;
 
 
-@property (nonatomic) BOOL shouldCullNonVisibleNodes NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic) BOOL shouldCullNonVisibleNodes API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /* Defines the desired rate for this SKView to it's content. 
  Actual rate maybe be limited by hardware or other software. */
-@property (nonatomic) NSInteger preferredFramesPerSecond NS_AVAILABLE(10_12, 10_0);
+@property (nonatomic) NSInteger preferredFramesPerSecond API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 
 /**
  Optional view delegate, see SKViewDelegate.
  */
-@property (nonatomic, weak, nullable) NSObject<SKViewDelegate> *delegate NS_AVAILABLE(10_12, 10_0);
+@property (nonatomic, weak, nullable) NSObject<SKViewDelegate> *delegate API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 
 /* Deprecated, please use preferredFramesPerSecond.
@@ -133,7 +133,7 @@ SK_EXPORT @interface SKView : NSView <NSSecureCoding>
  Create an SKTexture containing a snapshot of how it would have been rendered in this view.
  The texture is cropped to the specified rectangle
  @param node the node subtree to render to the texture.
- @param rect the crop
+ @param crop the crop
  */
 - (nullable SKTexture *)textureFromNode:(SKNode *)node crop:(CGRect)crop;
 
@@ -157,7 +157,7 @@ SK_EXPORT @interface SKView : NSView <NSSecureCoding>
 
 
 
-SK_EXPORT NS_AVAILABLE(10_12, 10_0) @protocol SKViewDelegate <NSObject>
+SK_EXPORT API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12)) @protocol SKViewDelegate <NSObject>
 @optional
 /**
  Allows the client to dynamically control the render rate.

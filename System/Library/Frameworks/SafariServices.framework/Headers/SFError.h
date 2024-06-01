@@ -14,4 +14,4 @@ typedef NS_ENUM(NSInteger, SFErrorCode) {
     SFErrorNoExtensionFound = 1,
     SFErrorNoAttachmentFound = 2,
     SFErrorLoadingInterrupted = 3,
-} API_AVAILABLE(ios(10.0));
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macCatalyst);

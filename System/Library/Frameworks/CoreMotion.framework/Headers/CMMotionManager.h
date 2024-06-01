@@ -74,7 +74,7 @@ typedef void (^CMDeviceMotionHandler)(CMDeviceMotion * __nullable motion, NSErro
  *  Discussion:
  *    Typedef of block to be invoked when magnetometer data is available.
  */
-typedef void (^CMMagnetometerHandler)(CMMagnetometerData * __nullable magnetometerData, NSError * __nullable error) NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+typedef void (^CMMagnetometerHandler)(CMMagnetometerData * __nullable magnetometerData, NSError * __nullable error) COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  CMMotionManager
@@ -82,7 +82,7 @@ typedef void (^CMMagnetometerHandler)(CMMagnetometerData * __nullable magnetomet
  *  Discussion:
  *    The CMMotionManager object is your entry point to the motion service.
  */
-NS_CLASS_AVAILABLE(NA, 4_0)
+COREMOTION_EXPORT API_AVAILABLE(ios(4.0)) API_UNAVAILABLE(macos)
 @interface CMMotionManager : NSObject
 {
 @private
@@ -237,7 +237,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *    timestamps on the delivered CMMagnetometerData instances to determine the
  *    true update interval.
  */
-@property(assign, nonatomic) NSTimeInterval magnetometerUpdateInterval NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+@property(assign, nonatomic) NSTimeInterval magnetometerUpdateInterval COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  magnetometerAvailable
@@ -245,7 +245,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *  Discussion:
  *    Determines whether magetometer is available.
  */
-@property(readonly, nonatomic, getter=isMagnetometerAvailable) BOOL magnetometerAvailable NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+@property(readonly, nonatomic, getter=isMagnetometerAvailable) BOOL magnetometerAvailable COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  magnetometerActive
@@ -253,7 +253,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *  Discussion:
  *    Determines whether the CMMotionManager is currently providing magnetometer updates.
  */
-@property(readonly, nonatomic, getter=isMagnetometerActive) BOOL magnetometerActive NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+@property(readonly, nonatomic, getter=isMagnetometerActive) BOOL magnetometerActive COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  magnetometerData
@@ -261,7 +261,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *  Discussion:
  *    Returns the latest sample of magnetometer data, or nil if none is available.
  */
-@property(readonly, nullable) CMMagnetometerData *magnetometerData NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+@property(readonly, nullable) CMMagnetometerData *magnetometerData COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  startMagnetometerUpdates
@@ -270,7 +270,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *    Starts magnetometer updates with no handler. To receive the latest magnetometer data
  *    when desired, examine the magnetometerData property.
  */
-- (void)startMagnetometerUpdates NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+- (void)startMagnetometerUpdates COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  startMagnetometerUpdatesToQueue:withHandler:
@@ -278,7 +278,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *  Discussion:
  *    Starts magnetometer updates, providing data to the given handler through the given queue.
  */
-- (void)startMagnetometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMMagnetometerHandler)handler NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+- (void)startMagnetometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMMagnetometerHandler)handler COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  stopMagnetometerUpdates
@@ -286,7 +286,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *  Discussion:
  *    Stops magnetometer updates.
  */
-- (void)stopMagnetometerUpdates NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+- (void)stopMagnetometerUpdates COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  deviceMotionUpdateInterval
@@ -309,7 +309,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *  Discussion:
  *     Returns a bitmask specifying the available attitude reference frames on the device.
  */
-+ (CMAttitudeReferenceFrame)availableAttitudeReferenceFrames NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
++ (CMAttitudeReferenceFrame)availableAttitudeReferenceFrames COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  attitudeReferenceFrame
@@ -321,7 +321,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *    is undefined.
  *
  */
-@property(readonly, nonatomic) CMAttitudeReferenceFrame attitudeReferenceFrame NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+@property(readonly, nonatomic) CMAttitudeReferenceFrame attitudeReferenceFrame COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  deviceMotionAvailable
@@ -378,7 +378,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *    reference for the attitude estimates.
  *
  */
-- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  startDeviceMotionUpdatesUsingReferenceFrame:toQueue:withHandler
@@ -388,7 +388,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *    The specified frame will be used as reference for the attitude estimates.
  *
  */
-- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame toQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+- (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame toQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 /*
  *  stopDeviceMotionUpdates
@@ -407,7 +407,7 @@ NS_CLASS_AVAILABLE(NA, 4_0)
  *    CMErrorDeviceRequiresMovement is reported once via CMDeviceMotionHandler. By default,
  *    showsDeviceMovementDisplay is NO.
  */
-@property(assign, nonatomic) BOOL showsDeviceMovementDisplay NS_AVAILABLE(NA, 5_0) API_UNAVAILABLE(tvos);
+@property(assign, nonatomic) BOOL showsDeviceMovementDisplay COREMOTION_EXPORT API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos);
 
 @end
 

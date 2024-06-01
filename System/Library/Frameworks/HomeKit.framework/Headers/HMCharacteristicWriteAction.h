@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMAction.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class is used to represent an entry in an action set that writes a specific
  *        value to a characteristic.
  */
-API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristicWriteAction<TargetValueType : id<NSCopying>> : HMAction
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -31,8 +31,7 @@ API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
  *
  * @return Instance object representing the characteristic write action.
  */
-- (instancetype)initWithCharacteristic:(HMCharacteristic *)characteristic
-                           targetValue:(TargetValueType)targetValue NS_DESIGNATED_INITIALIZER API_UNAVAILABLE(watchos, tvos);
+- (instancetype)initWithCharacteristic:(HMCharacteristic *)characteristic targetValue:(TargetValueType)targetValue NS_DESIGNATED_INITIALIZER API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief The characteristic associated with the action.

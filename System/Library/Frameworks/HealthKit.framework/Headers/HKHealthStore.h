@@ -279,7 +279,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 will transition to HKWorkoutSessionStatePaused. An HKWorkoutEventTypePause will be generated and
                 delivered to the workout session's delegate.
  */
-- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's pause method", watchos(2.0, 5.0)) __IOS_PROHIBITED;
+- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's pause method", watchos(3.0, 5.0)) __IOS_PROHIBITED;
 
 /*!
  @method        resumeWorkoutSession:
@@ -288,7 +288,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 will transition to HKWorkoutSessionStateRunning. An HKWorkoutEventTypeResume will be generated and
                 delivered to the workout session's delegate.
  */
-- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's resume method", watchos(2.0, 5.0)) __IOS_PROHIBITED;
+- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's resume method", watchos(3.0, 5.0)) __IOS_PROHIBITED;
 
 /*!
  @method        startWatchAppWithWorkoutConfiguration:completion:

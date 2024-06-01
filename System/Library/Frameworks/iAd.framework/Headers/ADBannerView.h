@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
  *   • -[ADInterstitialAdDelegate interstitialAd:didFailWithError:]
  *
  */
+
+NS_DEPRECATED(10_14, 10_14, 4_1, 13_0)
 extern NSString * const ADErrorDomain;
 
 /*!
@@ -86,7 +88,7 @@ typedef NS_ENUM(NSInteger, ADError) {
     ADErrorAdResponseValidateFailure = 9,
     ADErrorAdAssetLoadPending = 10
 #endif
-} NS_ENUM_DEPRECATED_IOS(4_0, 10_0);
+} NS_ENUM_DEPRECATED(10_14, 10_14, 4_0, 10_0);
 
 /*!
  * @enum ADAdType
@@ -106,7 +108,7 @@ typedef NS_ENUM(NSInteger, ADError) {
 typedef NS_ENUM(NSInteger, ADAdType) {
     ADAdTypeBanner,
     ADAdTypeMediumRectangle
-} NS_ENUM_DEPRECATED_IOS(6_0, 10_0);
+} NS_ENUM_DEPRECATED(10_14, 10_14, 6_0, 10_0);
 
 @protocol ADBannerViewDelegate;
 
@@ -124,7 +126,8 @@ typedef NS_ENUM(NSInteger, ADAdType) {
  * managing the banner view must be correctly configured to ensure banner action
  * presentation works correctly.
  */
-NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
+NS_CLASS_DEPRECATED(10_14, 10_14, 4_0, 10_0)
+@interface ADBannerView : UIView
 
 /*!
  * @method initWithAdType:
@@ -194,6 +197,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
 /*!
  * @protocol ADBannerViewDelegate
  */
+NS_DEPRECATED(10_14, 10_14, 4_1, 13_0)
 @protocol ADBannerViewDelegate <NSObject>
 @optional
 
@@ -258,7 +262,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
 
 @end
 
+NS_DEPRECATED(10_14, 10_14, 12_0, 13_0)
 CGSize ADClampedBannerSize(CGSize size);
 
 NS_ASSUME_NONNULL_END
-

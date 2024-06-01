@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class ILClassificationRequest;
 
 /// Represents a view controller to subclass for displaying classification UI
-IL_EXTERN API_AVAILABLE(ios(12.0))
+IL_EXTERN API_AVAILABLE(ios(12.0), macCatalyst(13.0)) API_UNAVAILABLE( macos, tvos, watchos)
 @interface ILClassificationUIExtensionViewController : UIViewController
 
 /// The extension context to use for completing the classification request

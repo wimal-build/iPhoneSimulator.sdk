@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityElement.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccessibilityElement.h>)
 //
 //  UIAccessibilityElement.h
 //  UIAccessibility
@@ -8,6 +8,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIAccessibilityConstants.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIAccessibilityIdentification.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,12 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
  backed by a UIView (for example: painted text or icon).
  */
 
-NS_CLASS_AVAILABLE_IOS(3_0) @interface UIAccessibilityElement : NSObject<UIAccessibilityIdentification>
+UIKIT_EXTERN API_AVAILABLE(ios(3.0)) @interface UIAccessibilityElement : UIResponder<UIAccessibilityIdentification>
 
 // initialize with the accessibility container that contains this element
 - (instancetype)initWithAccessibilityContainer:(id)container;
 
-@property (nullable, nonatomic, assign) id accessibilityContainer;
+@property (nullable, nonatomic, weak) id accessibilityContainer;
 @property (nonatomic, assign) BOOL isAccessibilityElement;
 @property (nullable, nonatomic, strong) NSString *accessibilityLabel;
 @property (nullable, nonatomic, strong) NSString *accessibilityHint;
@@ -36,7 +37,7 @@ NS_CLASS_AVAILABLE_IOS(3_0) @interface UIAccessibilityElement : NSObject<UIAcces
 
 // When set, -[UIAccessibilityElement accessibilityFrame] will automatically adjust for the container's frame.
 // This can be useful when the element is a descendant of a scroll view, for instance.
-@property (nonatomic, assign) CGRect accessibilityFrameInContainerSpace NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, assign) CGRect accessibilityFrameInContainerSpace API_AVAILABLE(ios(10.0));
 
 @end
 

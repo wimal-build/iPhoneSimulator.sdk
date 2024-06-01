@@ -1,6 +1,6 @@
 //
 //  PDFDestination.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFDestination represents a dictionary used in annotations, typically as
 //  a property for an action. Destinations are a coordinate and zoom factor

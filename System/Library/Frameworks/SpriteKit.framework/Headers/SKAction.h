@@ -65,7 +65,7 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
  the 'timingMode' property is taken into account, defaults to nil
  @see SKActionTimingFunction
  */
-@property (nonatomic) SKActionTimingFunction timingFunction NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic) SKActionTimingFunction timingFunction API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** A speed factor that modifies how fast an action runs. Default value is 1.0 */
 @property (nonatomic) CGFloat speed;
@@ -153,10 +153,10 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
  Adjust the sprite's xScale & yScale to achieve the desired size (in parent's coordinate space)
  @param duration The duration of the animation, in seconds
 */
-+ (SKAction *)scaleToSize:(CGSize)size duration:(NSTimeInterval)duration NS_AVAILABLE(10_12, 10_0);
++ (SKAction *)scaleToSize:(CGSize)size duration:(NSTimeInterval)duration API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 /** Creates an action that runs a collection of actions sequentially
- @param sequence An array of SKAction objects
+ @param actions An array of SKAction objects
  
  @discussion When the action executes, the first action in the sequence starts
  and runs to completion. Subsequent actions in the sequence run in a
@@ -218,35 +218,35 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
 + (SKAction *)fadeAlphaTo:(CGFloat)alpha duration:(NSTimeInterval)duration;
 
 /** Creates an action that hides a node */
-+ (SKAction *)hide NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)hide API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that unhides a node */
-+ (SKAction *)unhide NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)unhide API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that changes a sprite’s texture
  @param texture The new texture to use on the sprite
  */
-+ (SKAction *)setTexture:(SKTexture *)texture NS_AVAILABLE(10_10, 7_1);
-+ (SKAction *)setNormalTexture:(SKTexture *)texture NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)setTexture:(SKTexture *)texture API_AVAILABLE(ios(7.1), tvos(7.1), watchos(1.0), macos(10.10));
++ (SKAction *)setNormalTexture:(SKTexture *)texture API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
 
 /** Creates an action that changes a sprite’s texture, possibly resizing the sprite
  @param texture The new texture to use on the sprite
  @param resize If YES, the sprite is resized to match the new texture.
  If NO, the size of the sprite is unchanged.
  */
-+ (SKAction *)setTexture:(SKTexture *)texture resize:(BOOL)resize NS_AVAILABLE(10_10, 7_1);
-+ (SKAction *)setNormalTexture:(SKTexture *)texture resize:(BOOL)resize NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)setTexture:(SKTexture *)texture resize:(BOOL)resize API_AVAILABLE(ios(7.1), tvos(7.1), watchos(1.0), macos(10.10));
++ (SKAction *)setNormalTexture:(SKTexture *)texture resize:(BOOL)resize API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /** Creates an action that animates changes to a sprite’s texture
  @param textures An array of textures to use when animating a sprite
- @param timePerFrame The amount of time that each texture is displayed
+ @param sec The amount of time that each texture is displayed
  */
 + (SKAction *)animateWithTextures:(NSArray<SKTexture*> *)textures timePerFrame:(NSTimeInterval)sec;
-+ (SKAction *)animateWithNormalTextures:(NSArray<SKTexture*> *)textures timePerFrame:(NSTimeInterval)sec NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)animateWithNormalTextures:(NSArray<SKTexture*> *)textures timePerFrame:(NSTimeInterval)sec API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /** Creates an action that animates changes to a sprite’s texture
  @param textures An array of textures to use when animating a sprite
- @param timePerFrame The amount of time that each texture is displayed
+ @param sec The amount of time that each texture is displayed
  @param resize If YES, the sprite is resized to match each new texture.
  If NO, the size of the sprite remains at a constant size.
  @param restore If YES, When the action completes, the sprite’s texture is restored
@@ -257,11 +257,11 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
  set to the final texture in the array.
  */
 + (SKAction *)animateWithTextures:(NSArray<SKTexture*> *)textures timePerFrame:(NSTimeInterval)sec resize:(BOOL)resize restore:(BOOL)restore;
-+ (SKAction *)animateWithNormalTextures:(NSArray<SKTexture*> *)textures timePerFrame:(NSTimeInterval)sec resize:(BOOL)resize restore:(BOOL)restore NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)animateWithNormalTextures:(NSArray<SKTexture*> *)textures timePerFrame:(NSTimeInterval)sec resize:(BOOL)resize restore:(BOOL)restore API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /** Creates an action that plays a sound
  @param soundFile The name of a sound file in the app’s bundle
- @param waitForCompletion If YES, then the duration of this action is the same
+ @param wait If YES, then the duration of this action is the same
  as the length of the audio playback. If NO, the action is considered
  to have completed immediately.
  
@@ -271,7 +271,7 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
 + (SKAction *)playSoundFileNamed:(NSString*)soundFile waitForCompletion:(BOOL)wait;
 
 /** Creates an animation that animates a sprite’s color and blend factor
- @param The new color for the sprite
+ @param color The new color for the sprite
  @param colorBlendFactor The new blend factor for the sprite
  @param duration The duration of the animation, in seconds
  */
@@ -283,14 +283,14 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
  @param duration The duration of the animation, in seconds
  @see SKFieldNode
  */
-+ (SKAction *)falloffTo:(float)falloff duration:(NSTimeInterval)duration NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)falloffTo:(float)falloff duration:(NSTimeInterval)duration API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that sets the falloff of a field
  @param falloff The value to modify falloff by
  @param duration The duration of the animation, in seconds
  @see SKFieldNode
  */
-+ (SKAction *)falloffBy:(float)falloff duration:(NSTimeInterval)duration NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)falloffBy:(float)falloff duration:(NSTimeInterval)duration API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 
 /** Creates an action that moves the node along a relative path, orienting the
@@ -306,10 +306,10 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
  
  @param path A Core Graphics path whose coordinates are relative to the node’s
  current position
- @param asOffset If YES, the points in the path are relative offsets to the
+ @param offset If YES, the points in the path are relative offsets to the
  node’s starting position. If NO, the points in the node are absolute
  coordinate values.
- @param orientToPath If YES, the node’s zRotation property animates so that
+ @param orient If YES, the node’s zRotation property animates so that
  the node turns to follow the path. If NO, the zRotation property of
  the node is unchanged.
  @param duration The duration of the animation
@@ -343,51 +343,51 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
  This action must be run on a descendent of the rootNode for animation to occur.
  Running this action on the rootNode itself will not cause any animation to occur.
  @param position The position (in screen space) to reach for
- @param rootNode Where to start the inverse kinematic operation from
+ @param root Where to start the inverse kinematic operation from
  @param duration The duration of the animation, in seconds
  */
-+ (SKAction *)reachTo:(CGPoint)position rootNode:(SKNode *)root duration:(NSTimeInterval)duration NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)reachTo:(CGPoint)position rootNode:(SKNode *)root duration:(NSTimeInterval)duration API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that performs an inverse kinematic reach.
  This action must be run on a descendent of the rootNode for animation to occur.
  Running this action on the rootNode itself will not cause any animation to occur.
  @param position The position (in screen space) to reach for
- @param rootNode Where to start the inverse kinematic operation from
+ @param root Where to start the inverse kinematic operation from
  @param velocity The speed in points per second of the end node in the chain
  */
-+ (SKAction *)reachTo:(CGPoint)position rootNode:(SKNode *)root velocity:(CGFloat)velocity NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)reachTo:(CGPoint)position rootNode:(SKNode *)root velocity:(CGFloat)velocity API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that performs an inverse kinematic reach.
  This action must be run on a descendent of the rootNode for animation to occur.
  Running this action on the rootNode itself will not cause any animation to occur.
  @param node The node to reach for
- @param rootNode Where to start the inverse kinematic operation from
- @param duration The duration of the animation, in seconds
+ @param root Where to start the inverse kinematic operation from
+ @param sec The duration of the animation, in seconds
  */
-+ (SKAction *)reachToNode:(SKNode *)node rootNode:(SKNode *)root duration:(NSTimeInterval)sec NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)reachToNode:(SKNode *)node rootNode:(SKNode *)root duration:(NSTimeInterval)sec API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that performs an inverse kinematic reach.
  This action must be run on a descendent of the rootNode for animation to occur.
  Running this action on the rootNode itself will not cause any animation to occur.
  @param node The node to reach for
- @param rootNode Where to start the inverse kinematic operation from
+ @param root Where to start the inverse kinematic operation from
  @param velocity The speed in points per second of the end node in the chain
  */
-+ (SKAction *)reachToNode:(SKNode *)node rootNode:(SKNode *)root velocity:(CGFloat)velocity NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)reachToNode:(SKNode *)node rootNode:(SKNode *)root velocity:(CGFloat)velocity API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that sets the strength of a field
  @param strength The new value for strength
  @param duration The duration of the animation, in seconds
  @see SKFieldNode
  */
-+ (SKAction *)strengthTo:(float)strength duration:(NSTimeInterval)duration NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)strengthTo:(float)strength duration:(NSTimeInterval)duration API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that sets the strength of a field
  @param strength The value to modify strength by
  @param duration The duration of the animation, in seconds
  @see SKFieldNode
  */
-+ (SKAction *)strengthBy:(float)strength duration:(NSTimeInterval)duration NS_AVAILABLE(10_10, 8_0);
++ (SKAction *)strengthBy:(float)strength duration:(NSTimeInterval)duration API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /** Creates an action that idles for a specified period of time
  @param duration The duration of the idle, in seconds
@@ -396,7 +396,7 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
 
 /** Creates an action that idles for a randomized period of time
  @param duration The duration of the idle, in seconds
- @param withRange The range of possible values for the duration
+ @param durationRange The range of possible values for the duration
  */
 + (SKAction *)waitForDuration:(NSTimeInterval)duration withRange:(NSTimeInterval)durationRange;
 
@@ -405,7 +405,7 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
 
 /** Creates an action that calls a method on an object
  @param selector The selector of the method to call
- @param onTarget The target object
+ @param target The target object
  */
 + (SKAction *)performSelector:(SEL)selector onTarget:(id)target;
 
@@ -429,7 +429,7 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
 
 /** Creates an action that executes a block over a duration
  @param duration The duration of the animation, in seconds
- @param actionBlock The block to run. The block takes the following parameters:
+ @param block The block to run. The block takes the following parameters:
  node The node on which the action is running.
  elapsedTime The amount of time that has passed in the animation.
  */
@@ -438,64 +438,64 @@ SK_EXPORT @interface SKAction : NSObject <NSCopying, NSSecureCoding>
 /** Creates an action of the given name from an action file.
  @param name The name of the action
  */
-+ (nullable SKAction *)actionNamed:(NSString *)name NS_AVAILABLE(10_11, 9_0);
++ (nullable SKAction *)actionNamed:(NSString *)name API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /** Creates an action of the given name from an action file with a new duration.
  @param name The name of the action
  @param duration The duration of the action
  */
-+ (nullable SKAction *)actionNamed:(NSString *)name duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (nullable SKAction *)actionNamed:(NSString *)name duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /** Creates an action of the given name from an action file.
  @param name The name of the action
  @param url The url of the file containing the action
  */
-+ (nullable SKAction *)actionNamed:(NSString *)name fromURL:(NSURL *)url NS_AVAILABLE(10_11, 9_0);
++ (nullable SKAction *)actionNamed:(NSString *)name fromURL:(NSURL *)url API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /** Creates an action of the given name from an action file with a new duration.
  @param name The name of the action
  @param url The url of the file containing the action
  @param duration The duration of the action
  */
-+ (nullable SKAction *)actionNamed:(NSString *)name fromURL:(NSURL *)url duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (nullable SKAction *)actionNamed:(NSString *)name fromURL:(NSURL *)url duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 @end
 
 @interface SKAction (NodeWithPhysicsBody)
 
-+ (SKAction *)changeChargeTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changeChargeBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changeChargeTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)changeChargeBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)changeMassTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changeMassBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changeMassTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)changeMassBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)applyForce:(CGVector)force duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)applyForce:(CGVector)force atPoint:(CGPoint)point duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)applyForce:(CGVector)force duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
++ (SKAction *)applyForce:(CGVector)force atPoint:(CGPoint)point duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)applyTorque:(CGFloat)torque duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)applyTorque:(CGFloat)torque duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)applyImpulse:(CGVector)impulse duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)applyImpulse:(CGVector)impulse atPoint:(CGPoint)point duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)applyImpulse:(CGVector)impulse duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)applyImpulse:(CGVector)impulse atPoint:(CGPoint)point duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)applyAngularImpulse:(CGFloat)impulse duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)applyAngularImpulse:(CGFloat)impulse duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
 
 @end
 
 @interface SKAction (PlaybackControl)
 
-+ (SKAction *)play NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)pause NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)stop NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)play API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)pause API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)stop API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)changePlaybackRateTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changePlaybackRateBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changePlaybackRateTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
++ (SKAction *)changePlaybackRateBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
 
 @end
 
 @interface SKAction (MixerControl)
 
-+ (SKAction *)changeVolumeTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changeVolumeBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changeVolumeTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
++ (SKAction *)changeVolumeBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
 
 @end
 

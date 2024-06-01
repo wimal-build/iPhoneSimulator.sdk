@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// A request to query a MessageFilter extension about how to interpret a received message.
-IL_EXTERN API_AVAILABLE(ios(11.0))
+IL_EXTERN API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILMessageFilterQueryRequest : NSObject <NSSecureCoding>
 
 /// The sender of the message the receiver relates to.

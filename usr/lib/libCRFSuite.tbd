@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A1D58B1-37E3-31F8-89E4-3D7380FEB623', 'x86_64: 4473D3EC-B079-31CD-BB04-63036E878FF3' ]
+uuids:           [ 'i386: 2A1D58B1-37E3-31F8-89E4-3D7380FEB623', 'x86_64: 07797CD3-5766-32AA-9102-1C4036AAFB81' ]
 platform:        ios
-install-name:    /usr/lib/libCRFSuite.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libCRFSuite.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _crfsuite_dictionary_create_instance ]

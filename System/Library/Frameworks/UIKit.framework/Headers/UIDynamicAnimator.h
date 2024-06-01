@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDynamicAnimator.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIDynamicAnimator.h>)
 //
 //  UIDynamicAnimator.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UICollectionViewLayout.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -23,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicAnimator: NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIDynamicAnimator: NSObject
 
 // When you initialize a dynamic animator with this method, you should only associates views with your behaviors.
 // the behaviors (and their dynamic items) that you add to the animator employ the reference view’s coordinate system.
@@ -42,11 +43,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicAnimator: NSObject
 - (void)updateItemUsingCurrentState:(id <UIDynamicItem>)item;
 
 @property (nonatomic, readonly, getter = isRunning) BOOL running;
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property (nonatomic, readonly) NSTimeInterval elapsedTime;
-#else
-- (NSTimeInterval)elapsedTime;
-#endif
 
 @property (nullable, nonatomic, weak) id <UIDynamicAnimatorDelegate> delegate;
 

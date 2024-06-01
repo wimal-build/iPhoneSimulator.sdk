@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMTrigger.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @discussion This class represents a trigger that is based on timers.
  */
-API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMTimerTrigger : HMTrigger
 
 - (instancetype)init NS_UNAVAILABLE;

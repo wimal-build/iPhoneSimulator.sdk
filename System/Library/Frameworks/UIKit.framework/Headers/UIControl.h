@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIControl.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIControl.h>)
 //
 //  UIControl.h
 //  UIKit
@@ -24,7 +24,7 @@ typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
     UIControlEventTouchCancel                                       = 1 <<  8,
 
     UIControlEventValueChanged                                      = 1 << 12,     // sliders, etc.
-    UIControlEventPrimaryActionTriggered NS_ENUM_AVAILABLE_IOS(9_0) = 1 << 13,     // semantic action: for buttons, etc.
+    UIControlEventPrimaryActionTriggered API_AVAILABLE(ios(9.0)) = 1 << 13,     // semantic action: for buttons, etc.
 
     UIControlEventEditingDidBegin                                   = 1 << 16,     // UITextField
     UIControlEventEditingChanged                                    = 1 << 17,
@@ -39,10 +39,10 @@ typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
 };
 
 typedef NS_ENUM(NSInteger, UIControlContentVerticalAlignment) {
-    UIControlContentVerticalAlignmentCenter  = 0,
-    UIControlContentVerticalAlignmentTop     = 1,
-    UIControlContentVerticalAlignmentBottom  = 2,
-    UIControlContentVerticalAlignmentFill    = 3,
+    UIControlContentVerticalAlignmentCenter        = 0,
+    UIControlContentVerticalAlignmentTop           = 1,
+    UIControlContentVerticalAlignmentBottom        = 2,
+    UIControlContentVerticalAlignmentFill          = 3,
 };
 
 typedef NS_ENUM(NSInteger, UIControlContentHorizontalAlignment) {
@@ -59,7 +59,7 @@ typedef NS_OPTIONS(NSUInteger, UIControlState) {
     UIControlStateHighlighted  = 1 << 0,                  // used when UIControl isHighlighted is set
     UIControlStateDisabled     = 1 << 1,
     UIControlStateSelected     = 1 << 2,                  // flag usable by app (see below)
-    UIControlStateFocused NS_ENUM_AVAILABLE_IOS(9_0) = 1 << 3, // Applicable only when the screen supports focus
+    UIControlStateFocused API_AVAILABLE(ios(9.0)) = 1 << 3, // Applicable only when the screen supports focus
     UIControlStateApplication  = 0x00FF0000,              // additional flags available for application use
     UIControlStateReserved     = 0xFF000000               // flags reserved for internal framework use
 };
@@ -69,7 +69,7 @@ typedef NS_OPTIONS(NSUInteger, UIControlState) {
 
 //______________________________________________________
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIControl : UIView
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UIControl : UIView
 
 
 @property(nonatomic,getter=isEnabled) BOOL enabled;                                  // default is YES. if NO, ignores touch events and subclasses may draw differently
@@ -97,13 +97,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIControl : UIView
 - (void)removeTarget:(nullable id)target action:(nullable SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
 // get info about target & actions. this makes it possible to enumerate all target/actions by checking for each event kind
-#if UIKIT_DEFINE_AS_PROPERTIES
-@property(nonatomic,readonly) NSSet *allTargets;
+@property(nonatomic,readonly) NSSet *allTargets;                                           // set may include NSNull to indicate at least one nil target
 @property(nonatomic,readonly) UIControlEvents allControlEvents;                            // list of all events that have at least one action
-#else
-- (NSSet *)allTargets;                                                                     // set may include NSNull to indicate at least one nil target
-- (UIControlEvents)allControlEvents;                                                       // list of all events that have at least one action
-#endif
 
 - (nullable NSArray<NSString *> *)actionsForTarget:(nullable id)target forControlEvent:(UIControlEvents)controlEvent;    // single event. returns NSArray of NSString selector names. returns nil if none
 

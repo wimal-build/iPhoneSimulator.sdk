@@ -8,6 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SFVoiceAnalytics;
 @class SFSpeechRecognitionResult;
 @class SFTranscription;
 
@@ -17,9 +18,9 @@ typedef NS_ENUM(NSInteger, SFSpeechRecognitionTaskState) {
     SFSpeechRecognitionTaskStateFinishing = 2,      // No more audio is being recorded, but more recognition results may arrive
     SFSpeechRecognitionTaskStateCanceling = 3,      // No more recognition reuslts will arrive, but recording may not have stopped yet
     SFSpeechRecognitionTaskStateCompleted = 4,      // No more results will arrive, and recording is stopped.
-} API_AVAILABLE(ios(10.0));
+} API_AVAILABLE(ios(10.0), macos(10.15));
 
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), macos(10.15))
 @interface SFSpeechRecognitionTask : NSObject
 
 @property (nonatomic, readonly) SFSpeechRecognitionTaskState state;
@@ -40,7 +41,7 @@ API_AVAILABLE(ios(10.0))
 @end
 
 // Recognition result receiver, to be used for complex or multi-utterance speech recognition requests
-API_AVAILABLE(ios(10.0))
+API_AVAILABLE(ios(10.0), macos(10.15))
 @protocol SFSpeechRecognitionTaskDelegate <NSObject>
 
 @optional

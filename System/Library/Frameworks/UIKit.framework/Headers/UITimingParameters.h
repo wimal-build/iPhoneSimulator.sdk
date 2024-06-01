@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITimingParameters.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITimingParameters.h>)
 //
 //  UITimingParameters.h
 //  UIKit
@@ -8,31 +8,32 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UITimingCurveProvider.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UICubicTimingParameters : NSObject  <UITimingCurveProvider>
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UICubicTimingParameters : NSObject  <UITimingCurveProvider>
 
 @property(nonatomic, readonly) UIViewAnimationCurve animationCurve;
 @property(nonatomic, readonly) CGPoint controlPoint1;
 @property(nonatomic, readonly) CGPoint controlPoint2;
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER; // initializes with the default CA timing curve
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithAnimationCurve:(UIViewAnimationCurve)curve NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithControlPoint1:(CGPoint)point1 controlPoint2:(CGPoint)point2 NS_DESIGNATED_INITIALIZER;
 
 @end
 
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UISpringTimingParameters : NSObject  <UITimingCurveProvider>
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UISpringTimingParameters : NSObject  <UITimingCurveProvider>
 
 @property(nonatomic, readonly) CGVector initialVelocity;
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER; // Initializes with the default system spring parameters
 
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 // Performs `animations` using a timing curve described by the motion of a
 // spring. When `dampingRatio` is 1, the animation will smoothly decelerate to

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class ILNetworkResponse;
 
 /// Represents a MessageFilter extension request's context.
-IL_EXTERN API_AVAILABLE(ios(11.0))
+IL_EXTERN API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILMessageFilterExtensionContext : NSExtensionContext
 
 /**

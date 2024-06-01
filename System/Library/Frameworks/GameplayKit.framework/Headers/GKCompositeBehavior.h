@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  * A GKBehavior that can also contain a number of sub-behaviors
  * Sub-behaviors and goals are both weighted and produce a force to apply to a GKAGENT
  */
+GK_DEFAULT
 @interface GKCompositeBehavior : GKBehavior
 
 /**

@@ -87,7 +87,7 @@ SK_EXPORT @interface SKShader : NSObject <NSCopying, NSSecureCoding>
 - (nullable SKUniform *)uniformNamed:(NSString *)name;
 - (void)removeUniformNamed:(NSString *)name;
 
-@property (nonatomic, copy, nonnull) NSArray<SKAttribute*> *attributes NS_AVAILABLE(10_11, 9_0);
+@property (nonatomic, copy, nonnull) NSArray<SKAttribute*> *attributes API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));;
 
 @end
 

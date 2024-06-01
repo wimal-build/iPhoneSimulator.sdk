@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDynamicBehavior.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIDynamicBehavior.h>)
 //
 //  UIDynamicBehavior.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIGeometry.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +19,7 @@ typedef NS_ENUM(NSUInteger, UIDynamicItemCollisionBoundsType) {
     UIDynamicItemCollisionBoundsTypeRectangle,
     UIDynamicItemCollisionBoundsTypeEllipse, // radii will be determined from the items bounds width, height
     UIDynamicItemCollisionBoundsTypePath
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} API_AVAILABLE(ios(9.0));
 
 @protocol UIDynamicItem <NSObject>
 
@@ -31,17 +32,17 @@ typedef NS_ENUM(NSUInteger, UIDynamicItemCollisionBoundsType) {
  The collision type represents how the dynamics system will evaluate collisions with 
  respect to the dynamic item. defaults to UIDynamicItemCollisionBoundsTypeRectangle
  */
-@property (nonatomic, readonly) UIDynamicItemCollisionBoundsType collisionBoundsType NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, readonly) UIDynamicItemCollisionBoundsType collisionBoundsType API_AVAILABLE(ios(9.0));
 
 /**
  The path must represent a convex polygon with counter clockwise winding and no self intersection. 
  The point (0,0) in the path corresponds to the dynamic item's center.
  */
-@property (nonatomic, readonly) UIBezierPath *collisionBoundingPath NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, readonly) UIBezierPath *collisionBoundingPath API_AVAILABLE(ios(9.0));
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIDynamicItemGroup : NSObject <UIDynamicItem>
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIDynamicItemGroup : NSObject <UIDynamicItem>
 
 - (instancetype)initWithItems:(NSArray<id <UIDynamicItem>> *)items;
 
@@ -49,7 +50,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UIDynamicItemGroup : NSObject <UIDynamicI
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicBehavior : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIDynamicBehavior : NSObject
 
 - (void)addChildBehavior:(UIDynamicBehavior *)behavior;
 - (void)removeChildBehavior:(UIDynamicBehavior *)behavior;

@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4238CA04-A3AD-3D87-AB79-57F1D919D195', 'x86_64: F8891CC6-0E0A-35D1-8422-B5A0E260E49E' ]
+uuids:           [ 'i386: 4238CA04-A3AD-3D87-AB79-57F1D919D195', 'x86_64: A136ECF0-FA2C-3856-B242-1F47EBC76BB1' ]
 platform:        ios
-install-name:    /usr/lib/libBacktraceRecording.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libBacktraceRecording.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ ___introspection_dispatch_get_queues, ___introspection_dispatch_item_info_data_offset, 

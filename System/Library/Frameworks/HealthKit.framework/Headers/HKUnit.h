@@ -57,6 +57,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 // mmHg (millimeters of mercury) = 133.3224 Pa          
 // cmAq (centimeters of water)   = 98.06650 Pa
 // atm  (atmospheres)            = 101325.0 Pa
+// dBASPL (sound pressure level)  = 10^(dBASPL/20) * 2.0E-05 Pa
 //
 // [Volume]
 // fl_oz_us  (US customary fluid ounces)= 0.0295735295625 L
@@ -89,6 +90,9 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 // count = 1
 // %     = 1/100
 //
+// [Hearing Sensitivity]
+// dBHL (decibel Hearing Level)
+//
 
 // Units can be combined using multiplication (. or *) and division (/), and raised to integral powers (^).
 // For simplicity, only a single '/' is allowed in a unit string, and multiplication is evaluated first.
@@ -111,20 +115,21 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @end
 
 typedef NS_ENUM(NSInteger, HKMetricPrefix) {
-    HKMetricPrefixNone = 0, //10^0
+    HKMetricPrefixNone      = 0,    //10^0
     
-    HKMetricPrefixPico,     //10^-12
-    HKMetricPrefixNano,     //10^-9
-    HKMetricPrefixMicro,    //10^-6
-    HKMetricPrefixMilli,    //10^-3
-    HKMetricPrefixCenti,    //10^-2
-    HKMetricPrefixDeci,     //10^-1
-    HKMetricPrefixDeca,     //10^1
-    HKMetricPrefixHecto,    //10^2
-    HKMetricPrefixKilo,     //10^3
-    HKMetricPrefixMega,     //10^6
-    HKMetricPrefixGiga,     //10^9
-    HKMetricPrefixTera      //10^12
+    HKMetricPrefixFemto     API_AVAILABLE(ios(13.0), watchos(6.0)) = 13, //10^-15
+    HKMetricPrefixPico      = 1,    //10^-12
+    HKMetricPrefixNano      = 2,    //10^-9
+    HKMetricPrefixMicro     = 3,    //10^-6
+    HKMetricPrefixMilli     = 4,    //10^-3
+    HKMetricPrefixCenti     = 5,    //10^-2
+    HKMetricPrefixDeci      = 6,    //10^-1
+    HKMetricPrefixDeca      = 7,    //10^1
+    HKMetricPrefixHecto     = 8,    //10^2
+    HKMetricPrefixKilo      = 9,    //10^3
+    HKMetricPrefixMega      = 10,   //10^6
+    HKMetricPrefixGiga      = 11,   //10^9
+    HKMetricPrefixTera      = 12,   //10^12
 } API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /* Mass Units */
@@ -167,6 +172,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)millimeterOfMercuryUnit;    // mmHg
 + (instancetype)centimeterOfWaterUnit;      // cmAq
 + (instancetype)atmosphereUnit;             // atm
++ (instancetype)decibelAWeightedSoundPressureLevelUnit API_AVAILABLE(ios(13.0), watchos(6.0)); // dBASPL
 @end
 
 /* Time Units */
@@ -212,11 +218,22 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)percentUnit;    // % (0.0 - 1.0)
 @end
 
+/* Hearing Sensitivity */
+@interface HKUnit (HearingSensitivity)
++ (instancetype)decibelHearingLevelUnit API_AVAILABLE(ios(13.0), watchos(6.0));  // dBHL
+@end
+
 @interface HKUnit (Math)
 - (HKUnit *)unitMultipliedByUnit:(HKUnit *)unit;
 - (HKUnit *)unitDividedByUnit:(HKUnit *)unit;
 - (HKUnit *)unitRaisedToPower:(NSInteger)power;
 - (HKUnit *)reciprocalUnit;
+@end
+
+/* Frequency Units */
+@interface HKUnit (Frequency)
++ (instancetype)hertzUnitWithMetricPrefix:(HKMetricPrefix)prefix API_AVAILABLE(ios(13.0), watchos(6.0));      // Hz
++ (instancetype)hertzUnit API_AVAILABLE(ios(13.0), watchos(6.0));  // Hz
 @end
 
 /* Mole Constants */

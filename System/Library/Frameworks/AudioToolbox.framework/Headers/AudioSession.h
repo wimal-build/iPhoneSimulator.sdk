@@ -579,7 +579,7 @@ extern "C"
 		kAudioSessionProperty_OutputDestination                     = 'odst',   // CFNumberRef      (get/set)
 		kAudioSessionProperty_InputGainAvailable                    = 'igav',   // UInt32           (get only/property listener)
 		kAudioSessionProperty_InputGainScalar                       = 'igsc',   // Float32          (get/set/property listener)
-		kAudioSessionProperty_AudioRouteDescription                 = 'crar'    // CFDictionaryRef  (get only)
+		kAudioSessionProperty_AudioRouteDescription                 = 'crar'   // CFDictionaryRef  (get only)
 	};
     
 	//==================================================================================================

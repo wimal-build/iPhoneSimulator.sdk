@@ -5,7 +5,7 @@
 //  Copyright (c) 2012 Apple Inc. All rights reserved.
 //
 
-#import <GameController/GameController.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -94,7 +94,7 @@ typedef struct GCQuaternion {
  
  @see GCController.motion
  */
-NS_CLASS_AVAILABLE(10_10, 8_0)
+API_AVAILABLE(macos(10.10), ios(8.0), tvos(8.0))
 @interface GCMotion : NSObject
 
 /**
@@ -135,7 +135,7 @@ typedef void (^GCMotionValueChangedHandler)(GCMotion *motion);
 /**
  The controller generating the motion data has sensors that can accurately determine the current attitude and rotation rate. If this is enabled the motion data for attitude and rotation rate are usable for inputs.
  */
-@property (nonatomic, assign, readonly) BOOL hasAttitudeAndRotationRate __TVOS_AVAILABLE(11.0);
+@property (nonatomic, assign, readonly) BOOL hasAttitudeAndRotationRate API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0));
 
 /**
  The current attitude of the controller.
@@ -144,7 +144,7 @@ typedef void (^GCMotionValueChangedHandler)(GCMotion *motion);
  @see hasAttitudeAndRotationRate
  @see GCMicroGamepad
  */
-@property (nonatomic, assign, readonly) GCQuaternion attitude __TVOS_AVAILABLE(11.0);
+@property (nonatomic, assign, readonly) GCQuaternion attitude API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0));
 
 /**
  The current rotation rate of the controller.
@@ -153,7 +153,47 @@ typedef void (^GCMotionValueChangedHandler)(GCMotion *motion);
  @see hasAttitudeAndRotationRate
  @see GCMicroGamepad
  */
-@property (nonatomic, assign, readonly) GCRotationRate rotationRate __TVOS_AVAILABLE(11.0);
+@property (nonatomic, assign, readonly) GCRotationRate rotationRate API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0));
+
+/**
+ Sets the gravity vector expressed in the controller's reference frame.
+ 
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see gravity
+ */
+- (void)setGravity:(GCAcceleration)gravity API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
+ Sets the acceleration that the user is giving to the controller.
+ 
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see userAcceleration
+ */
+- (void)setUserAcceleration:(GCAcceleration)userAcceleration API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
+ Sets the current rotation rate of the controller.
+ 
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see attitude
+ */
+- (void)setAttitude:(GCQuaternion)attitude API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
+ Sets the current rotation rate of the controller.
+ 
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see rotationRate
+ */
+- (void)setRotationRate:(GCRotationRate)rotationRate API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
+ Sets the state vector of the motion profile to a copy of the input motion profile's state vector.
+ 
+ @note If the controller's snapshot flag is set to NO, this method has no effect.
+ @see GCController.snapshot
+ */
+- (void) setStateFromMotion:(GCMotion *)motion API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
 
 @end
 

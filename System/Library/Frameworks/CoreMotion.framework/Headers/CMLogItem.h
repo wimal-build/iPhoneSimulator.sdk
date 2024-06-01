@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(NA,4_0)
+COREMOTION_EXPORT API_AVAILABLE(ios(4.0))
 @interface CMLogItem : NSObject <NSSecureCoding, NSCopying>
 {
 @private

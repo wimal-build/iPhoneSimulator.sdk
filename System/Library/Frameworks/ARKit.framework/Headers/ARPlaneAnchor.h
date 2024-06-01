@@ -49,7 +49,9 @@ typedef NS_ENUM(NSInteger, ARPlaneClassification) {
     ARPlaneClassificationFloor,
     ARPlaneClassificationCeiling,
     ARPlaneClassificationTable,
-    ARPlaneClassificationSeat
+    ARPlaneClassificationSeat,
+    ARPlaneClassificationWindow,
+    ARPlaneClassificationDoor
 } NS_REFINED_FOR_SWIFT;
 
 /**

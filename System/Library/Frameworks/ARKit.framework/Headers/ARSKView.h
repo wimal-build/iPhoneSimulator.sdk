@@ -79,7 +79,7 @@ API_AVAILABLE(ios(11.0))
  @discussion The view draws the camera background, and projects and maps anchors to nodes.
  */
 API_AVAILABLE(ios(11.0))
-@interface ARSKView : SKView
+@interface ARSKView : SKView<ARSessionProviding>
 
 /**
  Specifies the view’s delegate.

@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class ILMessageCommunication;
 
-IL_EXTERN API_AVAILABLE(ios(12.0))
+IL_EXTERN API_AVAILABLE(ios(12.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILMessageClassificationRequest : ILClassificationRequest <NSSecureCoding>
 
 // An array of message communications sorted by date received

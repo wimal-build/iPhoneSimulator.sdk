@@ -7,6 +7,7 @@
 
 #import <HealthKit/HKActivitySummary.h>
 #import <HealthKit/HKActivitySummaryQuery.h>
+#import <HealthKit/HKAudiogramSample.h>
 #import <HealthKit/HKAnchoredObjectQuery.h>
 #import <HealthKit/HKCDADocumentSample.h>
 #import <HealthKit/HKCategorySample.h>
@@ -15,14 +16,19 @@
 #import <HealthKit/HKClinicalType.h>
 #import <HealthKit/HKCorrelation.h>
 #import <HealthKit/HKCorrelationQuery.h>
+#import <HealthKit/HKCumulativeQuantitySample.h>
 #import <HealthKit/HKCumulativeQuantitySeriesSample.h>
 #import <HealthKit/HKDefines.h>
 #import <HealthKit/HKDeletedObject.h>
 #import <HealthKit/HKDevice.h>
+#import <HealthKit/HKDiscreteQuantitySample.h>
 #import <HealthKit/HKDocumentQuery.h>
 #import <HealthKit/HKDocumentSample.h>
 #import <HealthKit/HKFHIRResource.h>
 #import <HealthKit/HKHealthStore.h>
+#import <HealthKit/HKHeartbeatSeriesBuilder.h>
+#import <HealthKit/HKHeartbeatSeriesQuery.h>
+#import <HealthKit/HKHeartbeatSeriesSample.h>
 #import <HealthKit/HKLiveWorkoutBuilder.h>
 #import <HealthKit/HKLiveWorkoutDataSource.h>
 #import <HealthKit/HKMetadata.h>
@@ -34,6 +40,7 @@
 #import <HealthKit/HKQuantitySeriesSampleBuilder.h>
 #import <HealthKit/HKQuantitySeriesSampleQuery.h>
 #import <HealthKit/HKQuery.h>
+#import <HealthKit/HKQueryAnchor.h>
 #import <HealthKit/HKSample.h>
 #import <HealthKit/HKSampleQuery.h>
 #import <HealthKit/HKSeriesBuilder.h>

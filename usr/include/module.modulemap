@@ -204,6 +204,10 @@ module Darwin [system] [extern_c] [no_undeclared_includes] {
    export *
   }
 
+  module ctermid {
+   header "_ctermid.h"
+   export *
+  }
  }
 
  // POSIX

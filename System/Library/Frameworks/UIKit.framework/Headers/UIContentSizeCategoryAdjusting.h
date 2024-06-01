@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIContentSizeCategoryAdjusting.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIContentSizeCategoryAdjusting.h>)
 //
 //  UIContentSizeCategoryAdjusting.h
 //  UIKit
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(10_0) @protocol UIContentSizeCategoryAdjusting <NSObject>
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @protocol UIContentSizeCategoryAdjusting <NSObject>
 
 /*
  Indicates whether the corresponding element should automatically update its font when the device’s UIContentSizeCategory is changed.

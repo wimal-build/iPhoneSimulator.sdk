@@ -37,6 +37,7 @@ CLS_EXTERN NSString * const CLSErrorCodeDomain API_AVAILABLE(ios(11.3)) API_UNAV
  @constant  CLSErrorCodeLimits                       Limits exceeded.
  @constant  CLSErrorCodeInvalidCreate                Attempted to save new object that already exists in the data store.
  @constant  CLSErrorCodeInvalidUpdate                Failed to save updated object in the data store.
+ @constant  CLSErrorCodePartialFailure               Returned if an operation resulted in a mix of successes and failures.
  */
 typedef NS_ERROR_ENUM(CLSErrorCodeDomain, CLSErrorCode) {
     CLSErrorCodeNone = 0,

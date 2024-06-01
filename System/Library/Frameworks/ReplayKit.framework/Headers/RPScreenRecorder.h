@@ -15,8 +15,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "RPPreviewViewController.h"
-#import "RPBroadcastExtension.h"
+#import <ReplayKit/RPPreviewViewController.h>
+#import <ReplayKit/RPBroadcastExtension.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -46,17 +46,17 @@ API_AVAILABLE(ios(9.0), tvos(10.0))
  
  @abstract Starts app recording with a completion handler. Note that before recording actually starts, the user may be prompted with UI to confirm recording.
  @param microphoneEnabled Determines whether the microphone input should be included in the recorded movie audio.
- @result handler Called after user interactions are complete. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue starting the recording.
+ @discussion handler Called after user interactions are complete. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue starting the recording.
  */
 - (void)startRecordingWithMicrophoneEnabled:(BOOL)microphoneEnabled handler:(nullable void(^)(NSError * _Nullable error))handler API_DEPRECATED("Use microphoneEnabaled property", ios(9.0, 10.0));
 
 /*! @abstract Starts app recording with a completion handler. Note that before recording actually starts, the user may be prompted with UI to confirm recording.
- @result handler Called after user interactions are complete. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue starting the recording.
+ @discussion handler Called after user interactions are complete. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue starting the recording.
  */
 - (void)startRecordingWithHandler:(nullable void(^)(NSError * _Nullable error))handler API_AVAILABLE(ios(10.0), tvos(10.0));
 
 /*! @abstract Stops app recording with a completion handler.
- @result handler Called when the movie is ready. Will return an instance of RPPreviewViewController on success which should be presented using [UIViewController presentViewController:animated:completion:]. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue stopping the recording.
+ @discussion handler Called when the movie is ready. Will return an instance of RPPreviewViewController on success which should be presented using [UIViewController presentViewController:animated:completion:]. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue stopping the recording.
  */
 - (void)stopRecordingWithHandler:(nullable void(^)(RPPreviewViewController * _Nullable previewViewController, NSError * _Nullable error))handler;
 
@@ -65,12 +65,12 @@ API_AVAILABLE(ios(9.0), tvos(10.0))
 - (void)discardRecordingWithHandler:(void(^)(void))handler;
 
 /*! @abstract Starts screen and audio capture and continually calls the supplied handler with the current sampleBuffer and bufferType and passed it back to the application. Note that before recording actually starts, the user may be prompted with UI to confirm recording.
- @result handler Called continually with sampleBuffers and the bufferType. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue starting the capture.
+ @discussion handler Called continually with sampleBuffers and the bufferType. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue starting the capture.
  */
 - (void)startCaptureWithHandler:(nullable void(^)(CMSampleBufferRef sampleBuffer, RPSampleBufferType bufferType, NSError * _Nullable error))captureHandler completionHandler:(nullable void(^)(NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0), tvos(11.0));
 
 /*! @abstract Stops screen capture with a completion handler
- @result handler Called after the screen capture has stopped. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue stopping the capture
+ @discussion handler Called after the screen capture has stopped. Will be passed an optional NSError in the RPRecordingErrorDomain domain if there was an issue stopping the capture
  */
 - (void)stopCaptureWithHandler:(nullable void(^)(NSError * _Nullable error))handler API_AVAILABLE(ios(11.0), tvos(11.0));
 

@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextItemInteraction.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextItemInteraction.h>)
 //
 //  UITextItemInteraction.h
 //  UIKit
@@ -10,7 +10,7 @@ typedef NS_ENUM(NSInteger, UITextItemInteraction) {
     UITextItemInteractionInvokeDefaultAction,
     UITextItemInteractionPresentActions,
     UITextItemInteractionPreview,
-} NS_ENUM_AVAILABLE_IOS(10_0);
+} API_AVAILABLE(ios(10.0));
 
 #else
 #import <UIKitCore/UITextItemInteraction.h>

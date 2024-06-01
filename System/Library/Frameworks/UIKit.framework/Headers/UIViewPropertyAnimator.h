@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIViewPropertyAnimator.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIViewPropertyAnimator.h>)
 //
 //  UIViewPropertyAnimator.h
 //  UIKit
@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewAnimating.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UITimingParameters.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(10_0) @interface UIViewPropertyAnimator : NSObject <UIViewImplicitlyAnimating, NSCopying>
+UIKIT_EXTERN API_AVAILABLE(ios(10.0)) @interface UIViewPropertyAnimator : NSObject <UIViewImplicitlyAnimating, NSCopying>
 
 @property(nullable, nonatomic, copy, readonly) id <UITimingCurveProvider> timingParameters;
 
@@ -31,10 +32,10 @@ NS_CLASS_AVAILABLE_IOS(10_0) @interface UIViewPropertyAnimator : NSObject <UIVie
 @property(nonatomic, getter=isInterruptible) BOOL interruptible;
 
 /// Defaults to YES. Provides the ability for an animator to pause and scrub either linearly or using the animator’s current timing.
-@property(nonatomic) BOOL scrubsLinearly NS_AVAILABLE_IOS(11_0);
+@property(nonatomic) BOOL scrubsLinearly API_AVAILABLE(ios(11.0));
 
 /// Defaults to NO. Provides the ability for an animator to pause on completion instead of transitioning to the .inactive state.
-@property(nonatomic) BOOL pausesOnCompletion NS_AVAILABLE_IOS(11_0);
+@property(nonatomic) BOOL pausesOnCompletion API_AVAILABLE(ios(11.0));
 
 - (instancetype)initWithDuration:(NSTimeInterval)duration timingParameters:(id <UITimingCurveProvider>)parameters NS_DESIGNATED_INITIALIZER;
 

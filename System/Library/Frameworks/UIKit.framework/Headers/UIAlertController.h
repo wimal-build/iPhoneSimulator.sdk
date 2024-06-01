@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAlertController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAlertController.h>)
 //
 //  UIAlertController.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIViewController.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UISpringLoadedInteractionSupporting.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,14 +16,14 @@ typedef NS_ENUM(NSInteger, UIAlertActionStyle) {
     UIAlertActionStyleDefault = 0,
     UIAlertActionStyleCancel,
     UIAlertActionStyleDestructive
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} API_AVAILABLE(ios(8.0));
 
 typedef NS_ENUM(NSInteger, UIAlertControllerStyle) {
     UIAlertControllerStyleActionSheet = 0,
     UIAlertControllerStyleAlert
-} NS_ENUM_AVAILABLE_IOS(8_0);
+} API_AVAILABLE(ios(8.0));
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAlertAction : NSObject <NSCopying>
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) @interface UIAlertAction : NSObject <NSCopying>
 
 + (instancetype)actionWithTitle:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction *action))handler;
 
@@ -32,14 +33,14 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAlertAction : NSObject <NSCopying>
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAlertController : UIViewController
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) @interface UIAlertController : UIViewController
 
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle;
 
 - (void)addAction:(UIAlertAction *)action;
 @property (nonatomic, readonly) NSArray<UIAlertAction *> *actions;
 
-@property (nonatomic, strong, nullable) UIAlertAction *preferredAction NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, strong, nullable) UIAlertAction *preferredAction API_AVAILABLE(ios(9.0));
 
 - (void)addTextFieldWithConfigurationHandler:(void (^ __nullable)(UITextField *textField))configurationHandler;
 @property (nullable, nonatomic, readonly) NSArray<UITextField *> *textFields;

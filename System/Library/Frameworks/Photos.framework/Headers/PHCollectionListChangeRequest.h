@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Photos/PhotosDefines.h>
+#import <Photos/PHChangeRequest.h>
 #import <Photos/PHFetchResult.h>
 
 @class PHCollection;
@@ -14,9 +14,11 @@
 @class PHObjectPlaceholder;
 
 NS_ASSUME_NONNULL_BEGIN
+API_AVAILABLE_BEGIN(macos(10.15), ios(8), tvos(10))
 
 // PHCollectionListChangeRequest can only be created or used within a -[PHPhotoLibrary performChanges:] or -[PHPhotoLibrary performChangesAndWait:] block.
-PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionListChangeRequest : NSObject
+OS_EXPORT
+@interface PHCollectionListChangeRequest : PHChangeRequest
 
 #pragma mark - Creating Collection Lists
 
@@ -55,4 +57,5 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHCollectionListChangeRequ
 
 @end
 
+API_AVAILABLE_END
 NS_ASSUME_NONNULL_END

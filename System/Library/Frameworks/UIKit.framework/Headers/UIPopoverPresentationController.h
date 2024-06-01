@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverPresentationController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPopoverPresentationController.h>)
 //
 //  UIPopoverPresentationController.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIPresentationController.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIPopoverSupport.h>
 #import <UIKit/UIPopoverBackgroundView.h>
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIPopoverPresentationController;
 
-__TVOS_PROHIBITED
+API_UNAVAILABLE(tvos)
 @protocol UIPopoverPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
 @optional
 
@@ -22,10 +23,10 @@ __TVOS_PROHIBITED
 
 // Called on the delegate when the popover controller will dismiss the popover. Return NO to prevent the
 // dismissal of the view.
-- (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *)popoverPresentationController;
+- (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *)popoverPresentationController API_DEPRECATED_WITH_REPLACEMENT("presentationControllerShouldDismiss:", ios(8.0, 13.0));;
 
 // Called on the delegate when the user has taken action to dismiss the popover. This is not called when the popover is dimissed programatically.
-- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController;
+- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController API_DEPRECATED_WITH_REPLACEMENT("presentationControllerDidDismiss:", ios(8.0, 13.0));
 
 // -popoverPresentationController:willRepositionPopoverToRect:inView: is called on your delegate when the
 // popover may require a different view or rectangle.
@@ -33,7 +34,7 @@ __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPopoverPresentationController : UIPresentationController
+UIKIT_EXTERN API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(tvos) @interface UIPopoverPresentationController : UIPresentationController
 
 @property (nullable, nonatomic, weak) id <UIPopoverPresentationControllerDelegate> delegate;
 
@@ -44,7 +45,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPopoverPresentationCo
 
 // By default, a popover is not allowed to overlap its source view rect.
 // When this is set to YES, popovers with more content than available space are allowed to overlap the source view rect in order to accommodate the content.
-@property (nonatomic, assign) BOOL canOverlapSourceViewRect NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, assign) BOOL canOverlapSourceViewRect API_AVAILABLE(ios(9.0));
 
 @property (nullable, nonatomic, strong) UIBarButtonItem *barButtonItem;
 

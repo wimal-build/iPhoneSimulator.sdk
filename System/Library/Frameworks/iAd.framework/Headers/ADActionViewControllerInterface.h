@@ -1,5 +1,5 @@
 //
-//  ADSActionViewControllerInterface.h
+//  ADActionViewControllerInterface.h
 //  iAd
 //
 //  Created by David Wilson on 3/28/14.
@@ -10,6 +10,7 @@
 
 @class ADAdSpace;
 
+NS_DEPRECATED(10_14, 10_14, 8_0, 13_0)
 @protocol ADActionViewControllerInterface <NSObject>
 
 @property (nonatomic, readonly) BOOL readyForPresentation;
@@ -22,6 +23,7 @@
 
 @end
 
+NS_DEPRECATED(10_14, 10_14, 8_0, 13_0)
 @protocol ADActionViewControllerChildInterface <NSObject>
 
 - (void)actionViewControllerClosed;

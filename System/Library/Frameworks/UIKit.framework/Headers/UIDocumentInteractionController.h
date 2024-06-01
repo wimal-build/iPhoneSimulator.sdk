@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDocumentInteractionController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<ShareSheet/UIDocumentInteractionController.h>)
 //
 //  UIDocumentInteractionController.h
 //  UIKit
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class UIImage, UIView, UIPopoverController;
 
-NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIDocumentInteractionController : NSObject <UIActionSheetDelegate>
+API_AVAILABLE(ios(3.2)) __TVOS_PROHIBITED @interface UIDocumentInteractionController : NSObject <UIActionSheetDelegate>
 
 + (UIDocumentInteractionController *)interactionControllerWithURL:(NSURL *)url; // use file to determine UTI. assumes file is complete
 
@@ -59,7 +59,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIDocumentInteractionCo
 
 @end
 
-__TVOS_PROHIBITED @protocol UIDocumentInteractionControllerDelegate <NSObject>
+API_AVAILABLE(ios(3.2)) __TVOS_PROHIBITED @protocol UIDocumentInteractionControllerDelegate <NSObject>
 
 @optional
 
@@ -100,5 +100,5 @@ __TVOS_PROHIBITED @protocol UIDocumentInteractionControllerDelegate <NSObject>
 NS_ASSUME_NONNULL_END
 
 #else
-#import <UIKitCore/UIDocumentInteractionController.h>
+#import <ShareSheet/UIDocumentInteractionController.h>
 #endif

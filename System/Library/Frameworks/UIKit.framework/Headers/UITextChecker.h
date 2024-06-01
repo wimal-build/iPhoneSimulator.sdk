@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextChecker.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextChecker.h>)
 //
 //  UITextChecker.h
 //  UIKit
@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextChecker : NSObject 
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) @interface UITextChecker : NSObject 
 
 /* Initiates a spell-check of a string.  Returns the range of the first misspelled word, or {NSNotFound, 0} if none is found.  Checking is limited to the range specified, and starts at the specified offset (which should lie within the range), but if wrapFlag is YES then it will check from the beginning of the range if no misspelling is found between startingOffset and the end of the range. */
 - (NSRange)rangeOfMisspelledWordInString:(NSString *)stringToCheck range:(NSRange)range startingAt:(NSInteger)startingOffset wrap:(BOOL)wrapFlag language:(NSString *)language;
@@ -27,12 +27,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextChecker : NSObject
 
 /* Methods for dealing with ignored words. */
 - (void)ignoreWord:(NSString *)wordToIgnore;
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, strong, nullable) NSArray<NSString *> *ignoredWords;
-#else
-- (nullable NSArray *)ignoredWords;
-- (void)setIgnoredWords:(nullable NSArray *)words;
-#endif
 
 /* These allow clients to programmatically instruct the checker to learn and unlearn words, and to determine whether a word has been learned (and hence can potentially be unlearned). */
 + (void)learnWord:(NSString *)word;
@@ -40,11 +35,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITextChecker : NSObject
 + (void)unlearnWord:(NSString *)word;
 
 /* Entries in the availableLanguages list are all available spellchecking languages in user preference order, usually language abbreviations such as en_US. */
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(class, nonatomic, readonly) NSArray<NSString *> *availableLanguages;
-#else
-+ (NSArray *)availableLanguages;
-#endif
 
 @end
 

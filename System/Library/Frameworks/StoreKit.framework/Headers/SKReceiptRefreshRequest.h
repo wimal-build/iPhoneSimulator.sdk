@@ -11,21 +11,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXTERN_CLASS_AVAILABLE(10_9, 7_0) @interface SKReceiptRefreshRequest : SKRequest {
+SK_EXTERN_CLASS API_AVAILABLE(ios(7.0), macos(10.9)) @interface SKReceiptRefreshRequest : SKRequest {
 @private
     NSDictionary *_properties;
 }
 
-- (instancetype)initWithReceiptProperties:(nullable NSDictionary<NSString *, id> *)properties NS_AVAILABLE(10_9, 7_0);
-@property (nonatomic, readonly, nullable) NSDictionary<NSString *, id> *receiptProperties NS_AVAILABLE(10_9, 7_0);
+- (instancetype)initWithReceiptProperties:(nullable NSDictionary<NSString *, id> *)properties API_AVAILABLE(ios(7.0), macos(10.9));
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *, id> *receiptProperties API_AVAILABLE(ios(7.0), macos(10.9));
 
 @end
 
-SK_EXTERN void SKTerminateForInvalidReceipt(void) NS_AVAILABLE(10_14, 7_1);
+SK_EXTERN void SKTerminateForInvalidReceipt(void) API_AVAILABLE(ios(7.1), macos(10.14));
 
 // Receipt properties for sandbox testing:
-SK_EXTERN NSString * const SKReceiptPropertyIsExpired NS_AVAILABLE(10_9, 7_0);  // NSNumber BOOL, defaults to NO
-SK_EXTERN NSString * const SKReceiptPropertyIsRevoked NS_AVAILABLE(10_9, 7_0);  // NSNumber BOOL, defaults to NO
-SK_EXTERN NSString * const SKReceiptPropertyIsVolumePurchase NS_AVAILABLE(10_9, 7_0);  // NSNumber BOOL, defaults to NO
+SK_EXTERN NSString * const SKReceiptPropertyIsExpired API_AVAILABLE(ios(7.0), macos(10.9));  // NSNumber BOOL, defaults to NO
+SK_EXTERN NSString * const SKReceiptPropertyIsRevoked API_AVAILABLE(ios(7.0), macos(10.9));  // NSNumber BOOL, defaults to NO
+SK_EXTERN NSString * const SKReceiptPropertyIsVolumePurchase API_AVAILABLE(ios(7.0), macos(10.9));  // NSNumber BOOL, defaults to NO
 
 NS_ASSUME_NONNULL_END

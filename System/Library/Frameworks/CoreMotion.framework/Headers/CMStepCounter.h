@@ -27,7 +27,7 @@ typedef void (^CMStepQueryHandler)(NSInteger numberOfSteps, NSError * __nullable
  *      Typedef of block to be invoked on every update.  The total step count since startStepCountingUpdatesToQueue
  *      was called along with the timestamp associated with the latest determination will be returned.
  */
-typedef void (^CMStepUpdateHandler)(NSInteger numberOfSteps, NSDate *timestamp, NSError * __nullable error) API_UNAVAILABLE(watchos, tvos);
+typedef void (^CMStepUpdateHandler)(NSInteger numberOfSteps, NSDate *timestamp, NSError * __nullable error) API_UNAVAILABLE(watchos);
 
 /*
  *  CMStepCounter
@@ -47,7 +47,7 @@ typedef void (^CMStepUpdateHandler)(NSInteger numberOfSteps, NSDate *timestamp, 
  *      by either calling stopStepCountingUpdates or upon CMStepCounter deallocation.
  *
  */
-NS_CLASS_DEPRECATED_IOS(7_0,8_0,"Use CMPedometer instead") API_UNAVAILABLE(watchos, tvos)
+NS_CLASS_DEPRECATED_IOS(7_0,8_0,"Use CMPedometer instead") API_UNAVAILABLE(watchos)
 @interface CMStepCounter : NSObject
 
 /*

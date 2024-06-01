@@ -1,12 +1,12 @@
 /*
     NSCoreDataCoreSpotlightDelegate.h
     Core Data
-    Copyright (c) 2017-2018, Apple Inc.
+    Copyright (c) 2017-2019, Apple Inc.
     All rights reserved.
 */
 
-
 #import <Foundation/NSArray.h>
+
 
 @class NSManagedObjectContext;
 @class NSPersistentStoreDescription;
@@ -26,9 +26,9 @@ API_AVAILABLE(macosx(10.13),ios(11.0)) API_UNAVAILABLE(tvos,watchos)
 
 /* CoreSpotlight domain identifer; default nil */
 - (NSString *)domainIdentifier;
+
 /* CoreSpotlight index name; default is the store's identifier */
 - (nullable NSString *)indexName;
-
 
 - (instancetype)initForStoreWithDescription:(NSPersistentStoreDescription *)description  model:(NSManagedObjectModel *)model NS_DESIGNATED_INITIALIZER;
 

@@ -56,7 +56,7 @@ typedef struct {
  *    A CMDeviceMotion object contains basic information about the device's
  *    motion.
  */
-NS_CLASS_AVAILABLE(NA, 4_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(4.0)) API_UNAVAILABLE(tvos)
 @interface CMDeviceMotion : CMLogItem
 {
 @private
@@ -112,7 +112,7 @@ NS_CLASS_AVAILABLE(NA, 4_0) API_UNAVAILABLE(tvos)
  *    bias (Earth's magnetic field plus surrounding fields, without device bias),
  *    unlike CMMagnetometerData magneticField.
  */
-@property(readonly, nonatomic) CMCalibratedMagneticField magneticField NS_AVAILABLE(NA, 5_0);
+@property(readonly, nonatomic) CMCalibratedMagneticField magneticField COREMOTION_EXPORT API_AVAILABLE(ios(5.0));
 
 /*
  *  heading
@@ -122,7 +122,7 @@ NS_CLASS_AVAILABLE(NA, 4_0) API_UNAVAILABLE(tvos)
  *    for CMAttitudeReferenceFrameXArbitraryZVertical and CMAttitudeReferenceFrameXArbitraryCorrectedZVertical.
  *
  */
-@property(readonly, nonatomic) double heading NS_AVAILABLE(NA, 11_0);
+@property(readonly, nonatomic) double heading COREMOTION_EXPORT API_AVAILABLE(ios(11.0));
 
 @end
 

@@ -17,15 +17,7 @@
 // View controller that provides the standard user interface for achievements. Present modally from the top view controller.
 NS_CLASS_DEPRECATED(10_8, 10_10, 4_1, 7_0, "Use GKGameCenterViewController instead") 
 @interface GKAchievementViewController : GKGameCenterViewController
-#if !TARGET_OS_IPHONE
-{
-    id<GKAchievementViewControllerDelegate> _achievementDelegate;
-}
-#endif
-@end
-
-@interface GKAchievementViewController ()
-@property (assign, NS_NONATOMIC_IOSONLY) id<GKAchievementViewControllerDelegate> achievementDelegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id<GKAchievementViewControllerDelegate> achievementDelegate;
 @end
 
 // Optional delegate

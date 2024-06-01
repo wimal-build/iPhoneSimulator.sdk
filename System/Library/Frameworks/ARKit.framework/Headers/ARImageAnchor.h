@@ -22,6 +22,14 @@ API_AVAILABLE(ios(11.3))
  */
 @property (nonatomic, strong, readonly) ARReferenceImage *referenceImage;
 
+/**
+ The factor between estimated physical size and provided size.
+ 
+ @discussion This value will be estimated if automaticImageScaleEstimationEnabled is set to true on the ARWorldTrackingConfiguration. It is used to
+ correct the transform's translation. Default value is 1.0.
+ */
+@property (nonatomic, readonly) CGFloat estimatedScaleFactor API_AVAILABLE(ios(13.0));
+
 /** Unavailable */
 - (instancetype)initWithTransform:(simd_float4x4)transform NS_UNAVAILABLE;
 - (instancetype)initWithName:(NSString *)name transform:(simd_float4x4)transform NS_UNAVAILABLE;

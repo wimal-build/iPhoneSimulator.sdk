@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverSupport.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPopoverSupport.h>)
 //
 //  UIPopoverSupport.h
 //  UIKit
@@ -21,11 +21,11 @@ typedef NS_OPTIONS(NSUInteger, UIPopoverArrowDirection) {
 
 /* modalInPopover is set on the view controller when you wish to force the popover hosting the view controller into modal behavior. When this is active, the popover will ignore events outside of its bounds until this is set to NO.
  */
-@property (nonatomic,readwrite,getter=isModalInPopover) BOOL modalInPopover NS_AVAILABLE_IOS(3_2);
+@property (nonatomic,readwrite,getter=isModalInPopover) BOOL modalInPopover API_DEPRECATED_WITH_REPLACEMENT("modalInPresentation", ios(3.2, 13.0));
 
 /* contentSizeForViewInPopover allows you to set the size of the content from within the view controller. This property is read/write, and you should generally not override it.
  */
-@property (nonatomic,readwrite) CGSize contentSizeForViewInPopover NS_DEPRECATED_IOS(3_2, 7_0, "Use UIViewController.preferredContentSize instead.") __TVOS_PROHIBITED;
+@property (nonatomic,readwrite) CGSize contentSizeForViewInPopover API_DEPRECATED_WITH_REPLACEMENT("preferredContentSize.", ios(3.2, 7.0)) API_UNAVAILABLE(tvos);
 
 @end
 

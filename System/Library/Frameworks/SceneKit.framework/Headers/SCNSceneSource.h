@@ -2,7 +2,7 @@
 //  SCNSceneSource.h
 //  SceneKit
 //
-//  Copyright © 2012-2018 Apple Inc. All rights reserved.
+//  Copyright © 2012-2019 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -129,8 +129,8 @@ SCN_EXPORT SCNSceneSourceLoadingOption const SCNSceneSourceAnimationImportPolicy
 
 /*!
  @constant SCNSceneSourceLoadingOptionPreserveOriginalTopology
- @abstract Pass YES to make SceneKit preserve the original topology instead of triangulating at load time.
- This can be useful to get better results when subdividing a geometry. Defaults to NO.
+ @abstract Pass YES to make SceneKit preserve the original topology instead of triangulating at load time. This can be useful to get better results when subdividing a geometry.
+ @discussion Defaults to YES starting macOS 10.15, iOS 13, tvOS 13 and watchOS 6. Defaults to NO in previous versions.
  */
 SCN_EXPORT SCNSceneSourceLoadingOption const SCNSceneSourceLoadingOptionPreserveOriginalTopology API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));
 

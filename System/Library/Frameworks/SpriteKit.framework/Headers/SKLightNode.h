@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXPORT NS_AVAILABLE(10_10, 8_0) @interface SKLightNode : SKNode
+SK_EXPORT API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10)) @interface SKLightNode : SKNode
 
 /**
  Enables or disables lighting contribution from this light node.

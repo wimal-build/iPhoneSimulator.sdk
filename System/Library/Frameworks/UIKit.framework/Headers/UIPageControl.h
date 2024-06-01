@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPageControl.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPageControl.h>)
 //
 //  UIPageControl.h
 //  UIKit
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIPageControl : UIControl 
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UIPageControl : UIControl 
 
 @property(nonatomic) NSInteger numberOfPages;          // default is 0
 @property(nonatomic) NSInteger currentPage;            // default is 0. value pinned to 0..numberOfPages-1
@@ -24,8 +24,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIPageControl : UIControl
 
 - (CGSize)sizeForNumberOfPages:(NSInteger)pageCount;   // returns minimum size required to display dots for given page count. can be used to size control if page count could change
 
-@property(nullable, nonatomic,strong) UIColor *pageIndicatorTintColor NS_AVAILABLE_IOS(6_0) UI_APPEARANCE_SELECTOR;
-@property(nullable, nonatomic,strong) UIColor *currentPageIndicatorTintColor NS_AVAILABLE_IOS(6_0) UI_APPEARANCE_SELECTOR;
+@property(nullable, nonatomic,strong) UIColor *pageIndicatorTintColor API_AVAILABLE(ios(6.0)) UI_APPEARANCE_SELECTOR;
+@property(nullable, nonatomic,strong) UIColor *currentPageIndicatorTintColor API_AVAILABLE(ios(6.0)) UI_APPEARANCE_SELECTOR;
 
 @end
 

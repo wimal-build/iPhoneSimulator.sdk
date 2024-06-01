@@ -1,6 +1,6 @@
 //
 //  PDFThumbnailView.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFThumbnailView is a custom view that contains a set of PDFPage thumbnails
 //  that a user can scroll over, interact with, and have these interactions drive
@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 // Layout mode for thumbnail view.
 PDFKIT_ENUM_AVAILABLE(NA, 11_0)
 typedef NS_ENUM(NSInteger, PDFThumbnailLayoutMode)
@@ -19,20 +20,21 @@ typedef NS_ENUM(NSInteger, PDFThumbnailLayoutMode)
     PDFThumbnailLayoutModeHorizontal = 1
 };
 
-@class PDFView, PDFPage, PDFThumbnailViewPrivateVars;
+
+@class PDFView, PDFPage, PDFThumbnailViewPrivate;
 
 // Notification when PDFDocument is modified.
-PDFKIT_EXTERN NSString *PDFThumbnailViewDocumentEditedNotification PDFKIT_AVAILABLE(10_4, 11_0);
+PDFKIT_EXTERN NSString* const PDFThumbnailViewDocumentEditedNotification PDFKIT_AVAILABLE(10_4, 11_0);
 
 PDFKIT_CLASS_AVAILABLE(10_5, 11_0)
 @interface PDFThumbnailView : PDFKitPlatformView <NSCoding>
 {
 @private
-    PDFThumbnailViewPrivateVars *_private;
+    PDFThumbnailViewPrivate *_private;
 }
 
 // PDFView associated with the thumbnail view.
-@property (nonatomic, strong, nullable) PDFView *PDFView;
+@property (nonatomic, weak, nullable) PDFView *PDFView;
 
 // Background color of view.
 @property (nonatomic, copy, nullable) PDFKitPlatformColor *backgroundColor;
@@ -48,7 +50,7 @@ PDFKIT_CLASS_AVAILABLE(10_5, 11_0)
 // Default PDFThumbnailLayoutModeVertical.
 @property (nonatomic) PDFThumbnailLayoutMode layoutMode PDFKIT_AVAILABLE(NA, 11_0);
 
-// Default UIEdgeInsetsZero. Add additional scroll area around content
+// Inset for the placement of icons within the thumbnail view. Default UIEdgeInsetsZero.
 @property (nonatomic) UIEdgeInsets contentInset PDFKIT_AVAILABLE(NA, 11_0);
 
 

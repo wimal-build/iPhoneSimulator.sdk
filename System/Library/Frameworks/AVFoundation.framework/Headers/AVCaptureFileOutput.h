@@ -427,7 +427,7 @@ API_AVAILABLE(macos(10.7), ios(4.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
  @discussion
     Returns an NSArray of NSStrings listing the allowable keys in the receiver's setOutputSettings:forConnection: dictionary.
  */
-- (NSArray<NSString *> *)supportedOutputSettingsKeysForConnection:(AVCaptureConnection *)connection API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, tvos, watchos);
+- (NSArray<NSString *> *)supportedOutputSettingsKeysForConnection:(AVCaptureConnection *)connection API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos) API_UNAVAILABLE(tvos, watchos);
 
 /*!
  @method outputSettingsForConnection:

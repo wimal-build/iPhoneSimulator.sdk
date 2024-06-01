@@ -1,23 +1,21 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: E41866A3-E813-3809-98D8-B48EE4BF7DE4' ]
+uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: 388E5CD8-E216-3464-83D0-CF3E3BCC33B6' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Accelerate
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Accelerate'
 current-version: 4
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
-    re-exports:      [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib ]
+    re-exports:      [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib' ]
   - archs:           [ i386, x86_64 ]
-    re-exports:      [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib ]
+    re-exports:      [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib' ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: 601A5D17-196D-33F0-B499-86CC2D0942D4' ]
+uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: 300CAA7F-367E-395B-AB02-CC6A52187611' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-current-version: 506.20
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage'
+current-version: 524
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _Init_vImage, _SetvImageThreadCount, _SetvImageThreadState, 
@@ -44,10 +42,11 @@ exports:
                        _vImageBuffer_InitForCopyToCVPixelBuffer, _vImageBuffer_InitWithCGImage, 
                        _vImageBuffer_InitWithCVPixelBuffer, _vImageByteSwap_Planar16U, 
                        _vImageCGCompositeConstMask_ARGB16F, _vImageCGCompositeConstShape_ARGB16F, 
-                       _vImageCGCompositeMarkConstDeepMaskARGB_ARGB16F, _vImageCGCompositeMarkConstDeepMaskBGColorARGB_ARGB16F, 
-                       _vImageCGCompositeMarkConstDeepMaskXRGB_ARGB16F, _vImageCGCompositePixelMask_ARGB16F, 
-                       _vImageCGCompositePixelShape_ARGB16F, _vImageCGImageFormat_GetComponentCount, 
-                       _vImageCGImageFormat_IsEqual, _vImageCVImageFormat_Copy, _vImageCVImageFormat_CopyChannelDescription, 
+                       _vImageCGCompositeImage_ARGB16F, _vImageCGCompositeMarkConstDeepMaskARGB_ARGB16F, 
+                       _vImageCGCompositeMarkConstDeepMaskBGColorARGB_ARGB16F, _vImageCGCompositeMarkConstDeepMaskXRGB_ARGB16F, 
+                       _vImageCGCompositePixelMask_ARGB16F, _vImageCGCompositePixelShape_ARGB16F, 
+                       _vImageCGImageFormat_GetComponentCount, _vImageCGImageFormat_IsEqual, 
+                       _vImageCVImageFormat_Copy, _vImageCVImageFormat_CopyChannelDescription, 
                        _vImageCVImageFormat_CopyConversionMatrix, _vImageCVImageFormat_Create, 
                        _vImageCVImageFormat_CreateWithCVPixelBuffer, _vImageCVImageFormat_GetAlphaHint, 
                        _vImageCVImageFormat_GetChannelCount, _vImageCVImageFormat_GetChannelDescription, 
@@ -180,45 +179,51 @@ exports:
                        _vImageCopyBuffer, _vImageCreateCGImageFromBuffer, _vImageCreateGammaFunction, 
                        _vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction, 
                        _vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction, 
-                       _vImageDeepmapDecode, _vImageDeepmapDecodeScratchBufferSize, 
+                       _vImageDecodeVectorHalf, _vImageDeepmap2Decode, _vImageDeepmap2DecodeScratchBufferSize, 
+                       _vImageDeepmap2DecodeStreamCreate, _vImageDeepmap2DecodeStreamProcess, 
+                       _vImageDeepmap2DecodeStreamRelease, _vImageDeepmap2DecodeStreamScratchBufferSize, 
+                       _vImageDeepmap2Encode, _vImageDeepmap2EncodeCreateBuffer, 
+                       _vImageDeepmap2PixelSize, _vImageDeepmapDecode, _vImageDeepmapDecodeScratchBufferSize, 
                        _vImageDeepmapDecodeStreamCreate, _vImageDeepmapDecodeStreamProcess, 
                        _vImageDeepmapDecodeStreamRelease, _vImageDeepmapDecodeStreamScratchBufferSize, 
                        _vImageDeepmapEncode, _vImageDeepmapEncodeCreateBuffer, _vImageDeepmapPixelSize, 
                        _vImageDestroyGammaFunction, _vImageDestroyResamplingFilter, 
                        _vImageDilate_ARGB8888, _vImageDilate_ARGBFFFF, _vImageDilate_Planar8, 
-                       _vImageDilate_PlanarF, _vImageEndsInContrastStretch_ARGB8888, 
-                       _vImageEndsInContrastStretch_ARGBFFFF, _vImageEndsInContrastStretch_Planar8, 
-                       _vImageEndsInContrastStretch_PlanarF, _vImageEqualization_ARGB8888, 
-                       _vImageEqualization_ARGBFFFF, _vImageEqualization_Planar8, 
-                       _vImageEqualization_PlanarF, _vImageErode_ARGB8888, _vImageErode_ARGBFFFF, 
-                       _vImageErode_Planar8, _vImageErode_PlanarF, _vImageExtractChannel_ARGB16U, 
-                       _vImageExtractChannel_ARGB8888, _vImageExtractChannel_ARGBFFFF, 
-                       _vImageFlatten_ARGB16Q12, _vImageFlatten_ARGB16U, _vImageFlatten_ARGB8888, 
-                       _vImageFlatten_ARGB8888ToRGB888, _vImageFlatten_ARGBFFFF, 
-                       _vImageFlatten_ARGBFFFFToRGBFFF, _vImageFlatten_BGRA8888ToRGB888, 
-                       _vImageFlatten_BGRAFFFFToRGBFFF, _vImageFlatten_RGBA16Q12, 
-                       _vImageFlatten_RGBA16U, _vImageFlatten_RGBA8888, _vImageFlatten_RGBA8888ToRGB888, 
-                       _vImageFlatten_RGBAFFFF, _vImageFlatten_RGBAFFFFToRGBFFF, 
-                       _vImageGamma_Planar8toPlanarF, _vImageGamma_PlanarF, _vImageGamma_PlanarFtoPlanar8, 
+                       _vImageDilate_PlanarF, _vImageEncodeVectorHalf, _vImageEncodeVectorOptionsCreate, 
+                       _vImageEncodeVectorOptionsFree, _vImageEncodeVectorOptionsSetQuantization, 
+                       _vImageEndsInContrastStretch_ARGB8888, _vImageEndsInContrastStretch_ARGBFFFF, 
+                       _vImageEndsInContrastStretch_Planar8, _vImageEndsInContrastStretch_PlanarF, 
+                       _vImageEqualization_ARGB8888, _vImageEqualization_ARGBFFFF, 
+                       _vImageEqualization_Planar8, _vImageEqualization_PlanarF, 
+                       _vImageErode_ARGB8888, _vImageErode_ARGBFFFF, _vImageErode_Planar8, 
+                       _vImageErode_PlanarF, _vImageExtractChannel_ARGB16U, _vImageExtractChannel_ARGB8888, 
+                       _vImageExtractChannel_ARGBFFFF, _vImageFlatten_ARGB16Q12, 
+                       _vImageFlatten_ARGB16U, _vImageFlatten_ARGB8888, _vImageFlatten_ARGB8888ToRGB888, 
+                       _vImageFlatten_ARGBFFFF, _vImageFlatten_ARGBFFFFToRGBFFF, 
+                       _vImageFlatten_BGRA8888ToRGB888, _vImageFlatten_BGRAFFFFToRGBFFF, 
+                       _vImageFlatten_RGBA16Q12, _vImageFlatten_RGBA16U, _vImageFlatten_RGBA8888, 
+                       _vImageFlatten_RGBA8888ToRGB888, _vImageFlatten_RGBAFFFF, 
+                       _vImageFlatten_RGBAFFFFToRGBFFF, _vImageGamma_Planar8toPlanarF, 
+                       _vImageGamma_PlanarF, _vImageGamma_PlanarFtoPlanar8, _vImageGaussianBoxDiffConvolve_Planar8, 
                        _vImageGetResamplingFilterExtent, _vImageGetResamplingFilterSize, 
-                       _vImageHistogramCalculation_ARGB8888, _vImageHistogramCalculation_ARGBFFFF, 
-                       _vImageHistogramCalculation_Planar8, _vImageHistogramCalculation_PlanarF, 
-                       _vImageHistogramSpecification_ARGB8888, _vImageHistogramSpecification_ARGBFFFF, 
-                       _vImageHistogramSpecification_Planar8, _vImageHistogramSpecification_PlanarF, 
-                       _vImageHorizontalReflect_ARGB16S, _vImageHorizontalReflect_ARGB16U, 
-                       _vImageHorizontalReflect_ARGB8888, _vImageHorizontalReflect_ARGBFFFF, 
-                       _vImageHorizontalReflect_Planar16U, _vImageHorizontalReflect_Planar8, 
-                       _vImageHorizontalReflect_PlanarF, _vImageHorizontalShearD_ARGB16S, 
-                       _vImageHorizontalShearD_ARGB16U, _vImageHorizontalShearD_ARGB8888, 
-                       _vImageHorizontalShearD_ARGBFFFF, _vImageHorizontalShearD_Planar8, 
-                       _vImageHorizontalShearD_PlanarF, _vImageHorizontalShear_ARGB16S, 
-                       _vImageHorizontalShear_ARGB16U, _vImageHorizontalShear_ARGB8888, 
-                       _vImageHorizontalShear_ARGBFFFF, _vImageHorizontalShear_CbCr16U, 
-                       _vImageHorizontalShear_CbCr8, _vImageHorizontalShear_Planar16S, 
-                       _vImageHorizontalShear_Planar16U, _vImageHorizontalShear_Planar8, 
-                       _vImageHorizontalShear_PlanarF, _vImageHorizontalShear_XRGB2101010W, 
-                       _vImageInterpolatedLookupTable_PlanarF, _vImageInvert_16U, 
-                       _vImageInvert_8, _vImageInvert_F, _vImageLinearTransform_16Q12to8, 
+                       _vImageGradientSobel_Planar8to16S, _vImageHistogramCalculation_ARGB8888, 
+                       _vImageHistogramCalculation_ARGBFFFF, _vImageHistogramCalculation_Planar8, 
+                       _vImageHistogramCalculation_PlanarF, _vImageHistogramSpecification_ARGB8888, 
+                       _vImageHistogramSpecification_ARGBFFFF, _vImageHistogramSpecification_Planar8, 
+                       _vImageHistogramSpecification_PlanarF, _vImageHorizontalReflect_ARGB16S, 
+                       _vImageHorizontalReflect_ARGB16U, _vImageHorizontalReflect_ARGB8888, 
+                       _vImageHorizontalReflect_ARGBFFFF, _vImageHorizontalReflect_Planar16U, 
+                       _vImageHorizontalReflect_Planar8, _vImageHorizontalReflect_PlanarF, 
+                       _vImageHorizontalShearD_ARGB16S, _vImageHorizontalShearD_ARGB16U, 
+                       _vImageHorizontalShearD_ARGB8888, _vImageHorizontalShearD_ARGBFFFF, 
+                       _vImageHorizontalShearD_Planar8, _vImageHorizontalShearD_PlanarF, 
+                       _vImageHorizontalShear_ARGB16S, _vImageHorizontalShear_ARGB16U, 
+                       _vImageHorizontalShear_ARGB8888, _vImageHorizontalShear_ARGBFFFF, 
+                       _vImageHorizontalShear_CbCr16U, _vImageHorizontalShear_CbCr8, 
+                       _vImageHorizontalShear_Planar16S, _vImageHorizontalShear_Planar16U, 
+                       _vImageHorizontalShear_Planar8, _vImageHorizontalShear_PlanarF, 
+                       _vImageHorizontalShear_XRGB2101010W, _vImageInterpolatedLookupTable_PlanarF, 
+                       _vImageInvert_16U, _vImageInvert_8, _vImageInvert_F, _vImageLinearTransform_16Q12to8, 
                        _vImageLinearTransform_16Uto8, _vImageLinearTransform_16UtoF, 
                        _vImageLinearTransform_8to16Q12, _vImageLinearTransform_8to16U, 
                        _vImageLinearTransform_8toF, _vImageLinearTransform_Fto16U, 
@@ -226,13 +231,14 @@ exports:
                        _vImageLookupTable_Planar8toPlanar128, _vImageLookupTable_Planar8toPlanar16, 
                        _vImageLookupTable_Planar8toPlanar24, _vImageLookupTable_Planar8toPlanar48, 
                        _vImageLookupTable_Planar8toPlanar96, _vImageLookupTable_Planar8toPlanarF, 
-                       _vImageLookupTable_PlanarFtoPlanar8, _vImageMatrixMultiply_ARGB8888, 
-                       _vImageMatrixMultiply_ARGB8888ToPlanar8, _vImageMatrixMultiply_ARGBFFFF, 
-                       _vImageMatrixMultiply_ARGBFFFFToPlanarF, _vImageMatrixMultiply_Planar16S, 
-                       _vImageMatrixMultiply_Planar8, _vImageMatrixMultiply_PlanarF, 
-                       _vImageMax_ARGB8888, _vImageMax_ARGBFFFF, _vImageMax_Planar8, 
-                       _vImageMax_PlanarF, _vImageMin_ARGB8888, _vImageMin_ARGBFFFF, 
-                       _vImageMin_Planar8, _vImageMin_PlanarF, _vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12, 
+                       _vImageLookupTable_PlanarFtoPlanar8, _vImageMapping_CreateFromMap_Image8U, 
+                       _vImageMapping_Release, _vImageMatrixMultiply_ARGB8888, _vImageMatrixMultiply_ARGB8888ToPlanar8, 
+                       _vImageMatrixMultiply_ARGBFFFF, _vImageMatrixMultiply_ARGBFFFFToPlanarF, 
+                       _vImageMatrixMultiply_Planar16S, _vImageMatrixMultiply_Planar8, 
+                       _vImageMatrixMultiply_PlanarF, _vImageMax_ARGB8888, _vImageMax_ARGBFFFF, 
+                       _vImageMax_Planar8, _vImageMax_PlanarF, _vImageMin_ARGB8888, 
+                       _vImageMin_ARGBFFFF, _vImageMin_Planar8, _vImageMin_PlanarF, 
+                       _vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12, 
                        _vImageMultiDimensionalInterpolatedLookupTable_PlanarF, _vImageMultidimensionalTable_Create, 
                        _vImageMultidimensionalTable_Release, _vImageMultidimensionalTable_Retain, 
                        _vImageNewResamplingFilter, _vImageNewResamplingFilterForFunctionUsingBuffer, 
@@ -264,7 +270,7 @@ exports:
                        _vImagePremultiplyData_ARGBFFFF, _vImagePremultiplyData_Planar8, 
                        _vImagePremultiplyData_PlanarF, _vImagePremultiplyData_RGBA16Q12, 
                        _vImagePremultiplyData_RGBA16U, _vImagePremultiplyData_RGBA8888, 
-                       _vImagePremultiplyData_RGBAFFFF, _vImageRichardsonLucyDeConvolve_ARGB8888, 
+                       _vImagePremultiplyData_RGBAFFFF, _vImageRemap_Image8U, _vImageRichardsonLucyDeConvolve_ARGB8888, 
                        _vImageRichardsonLucyDeConvolve_ARGBFFFF, _vImageRichardsonLucyDeConvolve_Planar8, 
                        _vImageRichardsonLucyDeConvolve_PlanarF, _vImageRotate90_ARGB16S, 
                        _vImageRotate90_ARGB16U, _vImageRotate90_ARGB8888, _vImageRotate90_ARGBFFFF, 
@@ -298,25 +304,24 @@ exports:
                        _vImageVerticalShear_XRGB2101010W ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: 52AA25A7-F66F-3E7E-96F9-F980E40614DF' ]
+uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: 35D4DFF8-A91E-37CC-964A-77697C29B286' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _appleblas_i16gemm, _appleblas_i8gemm ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _APL_dgemm, _APL_dgemm_LU, _APL_dgemm_QR, _APL_dtrsm, _APL_sgemm, 
-                       _APL_sgemm_LU, _APL_sgemm_QR, _APL_strsm, _APPLE_NTHREADS, 
-                       _ATLU_DestroyThreadMemory, _SetBLASParamErrorProc, _appleblas_dgeadd, 
-                       _appleblas_sgeadd, _catlas_caxpby, _catlas_cset, _catlas_daxpby, 
-                       _catlas_dset, _catlas_saxpby, _catlas_sset, _catlas_zaxpby, 
-                       _catlas_zset, _caxpy_, _cblas_caxpy, _cblas_ccopy, _cblas_cdotc_sub, 
-                       _cblas_cdotu_sub, _cblas_cgbmv, _cblas_cgemm, _cblas_cgemv, 
-                       _cblas_cgerc, _cblas_cgeru, _cblas_chbmv, _cblas_chemm, _cblas_chemv, 
-                       _cblas_cher, _cblas_cher2, _cblas_cher2k, _cblas_cherk, _cblas_chpmv, 
-                       _cblas_chpr, _cblas_chpr2, _cblas_crotg, _cblas_cscal, _cblas_csrot, 
-                       _cblas_csscal, _cblas_cswap, _cblas_csymm, _cblas_csyr2k, 
+    symbols:         [ _APL_dgemm, _APL_dgemm_LU, _APL_dgemm_QR, _APL_dsyrk, _APL_dtrsm, 
+                       _APL_sgemm, _APL_sgemm_LU, _APL_sgemm_QR, _APL_ssyrk, _APL_strsm, 
+                       _APPLE_NTHREADS, _ATLU_DestroyThreadMemory, _SetBLASParamErrorProc, 
+                       _appleblas_dgeadd, _appleblas_sgeadd, _catlas_caxpby, _catlas_cset, 
+                       _catlas_daxpby, _catlas_dset, _catlas_saxpby, _catlas_sset, 
+                       _catlas_zaxpby, _catlas_zset, _caxpy_, _cblas_caxpy, _cblas_ccopy, 
+                       _cblas_cdotc_sub, _cblas_cdotu_sub, _cblas_cgbmv, _cblas_cgemm, 
+                       _cblas_cgemv, _cblas_cgerc, _cblas_cgeru, _cblas_chbmv, _cblas_chemm, 
+                       _cblas_chemv, _cblas_cher, _cblas_cher2, _cblas_cher2k, _cblas_cherk, 
+                       _cblas_chpmv, _cblas_chpr, _cblas_chpr2, _cblas_crotg, _cblas_cscal, 
+                       _cblas_csrot, _cblas_csscal, _cblas_cswap, _cblas_csymm, _cblas_csyr2k, 
                        _cblas_csyrk, _cblas_ctbmv, _cblas_ctbsv, _cblas_ctpmv, _cblas_ctpsv, 
                        _cblas_ctrmm, _cblas_ctrmv, _cblas_ctrsm, _cblas_ctrsv, _cblas_dasum, 
                        _cblas_daxpy, _cblas_dcopy, _cblas_ddot, _cblas_dgbmv, _cblas_dgemm, 
@@ -379,26 +384,34 @@ exports:
                        _ztpmv_, _ztpsv_, _ztrmm_, _ztrmv_, _ztrsm_, _ztrsv_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: 5CB22A61-2E4D-3534-82F2-6D62B359BDF1' ]
+uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: 17D651C9-93C3-3EF4-AD6A-7CF82EE9E9F2' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib'
 exports:         
   - archs:           [ x86_64 ]
     allowable-clients: [ vecLib ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _BNNSApplyVectorActivationLayer, _BNNSDequantize, _BNNSFilterApply, 
-                       _BNNSFilterApplyBatch, _BNNSFilterCreateConvolutionLayer, 
-                       _BNNSFilterCreateConvolutionWeightsTensorConversionLayer, 
-                       _BNNSFilterCreateFullyConnectedLayer, _BNNSFilterCreateImageTensorConversionLayer, 
-                       _BNNSFilterCreatePoolingLayer, _BNNSFilterCreateTensorConvolutionLayer, 
-                       _BNNSFilterCreateVectorActivationLayer, _BNNSFilterDestroy ]
+    symbols:         [ _BNNSApplyVectorActivationLayer, _BNNSBatchNormFilterApplyBackwardBatch, 
+                       _BNNSBatchNormFilterApplyBatch, _BNNSDequantize, _BNNSDirectApplyActivationBatch, 
+                       _BNNSDirectApplyBroadcastMatMul, _BNNSDirectApplyConvolutionBatch, 
+                       _BNNSDirectApplyFullyConnectedBatch, _BNNSDirectApplyLossBatch, 
+                       _BNNSDirectApplyPoolingBatch, _BNNSDirectApplyTransposedConvolutionBatch, 
+                       _BNNSFilterApply, _BNNSFilterApplyBackwardBatch, _BNNSFilterApplyBatch, 
+                       _BNNSFilterCreateConvolutionLayer, _BNNSFilterCreateFullyConnectedLayer, 
+                       _BNNSFilterCreateFusedLayer, _BNNSFilterCreateLayerActivation, 
+                       _BNNSFilterCreateLayerBatchNorm, _BNNSFilterCreateLayerConvolution, 
+                       _BNNSFilterCreateLayerFullyConnected, _BNNSFilterCreateLayerLoss, 
+                       _BNNSFilterCreateLayerOptimizer, _BNNSFilterCreateLayerPooling, 
+                       _BNNSFilterCreateLayerSparseFullyConnected, _BNNSFilterCreateLayerTransposedConvolution, 
+                       _BNNSFilterCreatePoolingLayer, _BNNSFilterCreateVectorActivationLayer, 
+                       _BNNSFilterDestroy, _BNNSFunctionGRUFusedGates, _BNNSFusedFilterApplyBackwardBatch, 
+                       _BNNSFusedFilterApplyBatch, _BNNSInitGumbel, _BNNSLossFilterApplyBatch, 
+                       _BNNSOptimizerFilterApply ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: 4B025602-7EEF-3F45-9694-672B426A7209' ]
+uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: B240D92C-B8B6-3BFC-8287-6FB5272C4B9B' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _cbdsqr_, _cgbbrd_, _cgbcon_, _cgbequ_, _cgbequb_, _cgbrfs_, 
@@ -647,10 +660,9 @@ exports:
                        _zunmrq_, _zunmrz_, _zunmtr_, _zupgtr_, _zupmtr_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: 3CCCFA68-BFFC-39D7-8CCC-01659212EF69' ]
+uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: F3D90B5A-BB6D-3252-9DE0-8CA9FBE41004' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib'
 exports:         
   - archs:           [ x86_64 ]
     allowable-clients: [ vecLib ]
@@ -671,10 +683,9 @@ exports:
                        _la_vector_to_double_buffer, _la_vector_to_float_buffer ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: F44409DD-8783-3EB7-AC27-5A362FAFB798' ]
+uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: 716FDE81-2B31-3C10-9012-392E72A1A205' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib'
 exports:         
   - archs:           [ x86_64 ]
     allowable-clients: [ vecLib ]
@@ -682,10 +693,9 @@ exports:
     symbols:         [ _quadrature_integrate ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9B4CEA96-6839-37DA-94DD-9918F28FBD99' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A01A54FC-444A-3659-905F-E2ACFD936D59' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib'
 exports:         
   - archs:           [ x86_64 ]
     symbols:         [ __Z10SparseLSMR17SparseLSMROptions, __Z10SparseLSMRv, __Z11SparseGMRES18SparseGMRESOptions, 
@@ -801,14 +811,16 @@ exports:
                        __Z17SparseMultiplyAddd19SparseMatrix_Double18DenseVector_DoubleS0_, 
                        __Z17SparseMultiplyAddf18SparseMatrix_Float17DenseMatrix_FloatS0_, 
                        __Z17SparseMultiplyAddf18SparseMatrix_Float17DenseVector_FloatS0_, 
+                       __Z17SparseWriteMatrixP7__sFILEjPKc18SparseMatrix_Float, __Z17SparseWriteMatrixP7__sFILEjPKc19SparseMatrix_Double, 
                        __Z18SparseGetTranspose18SparseMatrix_Float, __Z18SparseGetTranspose19SparseMatrix_Double, 
                        __Z18SparseGetTranspose27SparseOpaqueSubfactor_Float, __Z18SparseGetTranspose28SparseOpaqueSubfactor_Double, 
                        __Z18SparseGetTranspose31SparseOpaqueFactorization_Float, 
                        __Z18SparseGetTranspose32SparseOpaqueFactorization_Double, 
                        __Z21SparseCreateSubfactorh31SparseOpaqueFactorization_Float, 
                        __Z21SparseCreateSubfactorh32SparseOpaqueFactorization_Double, 
-                       __Z23SparseConjugateGradient15SparseCGOptions, __Z23SparseConjugateGradientv, 
-                       __Z23SparseConvertFromOpaqueP14sparse_m_float, __Z23SparseConvertFromOpaqueP15sparse_m_double, 
+                       __Z22SparseReadMatrix_FloatP7__sFILEjmPc, __Z23SparseConjugateGradient15SparseCGOptions, 
+                       __Z23SparseConjugateGradientv, __Z23SparseConvertFromOpaqueP14sparse_m_float, 
+                       __Z23SparseConvertFromOpaqueP15sparse_m_double, __Z23SparseReadMatrix_DoubleP7__sFILEjmPc, 
                        __Z24SparseGetStateSize_Float21SparseIterativeMethodbiii, 
                        __Z25SparseGetStateSize_Double21SparseIterativeMethodbiii, 
                        __Z26SparseCreatePreconditioneri18SparseMatrix_Float, __Z26SparseCreatePreconditioneri19SparseMatrix_Double, 
@@ -818,8 +830,9 @@ exports:
                        __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKfPvS4_ ]
   - archs:           [ i386, x86_64 ]
     allowable-clients: [ vecLib ]
-    symbols:         [ __SparseCGIterate_Double, __SparseCGIterate_Float, __SparseCGSolve_Double, 
-                       __SparseCGSolve_Float, __SparseConvertFromCoordinate_Double, 
+    symbols:         [ __SparseAMD, __SparseAMDWorkspaceSize, __SparseCGIterate_Double, 
+                       __SparseCGIterate_Float, __SparseCGSolve_Double, __SparseCGSolve_Float, 
+                       __SparseCOLAMD, __SparseCOLAMDWorkspaceSize, __SparseConvertFromCoordinate_Double, 
                        __SparseConvertFromCoordinate_Float, __SparseConvertFromOpaque_Double, 
                        __SparseConvertFromOpaque_Float, __SparseCreatePreconditioner_Double, 
                        __SparseCreatePreconditioner_Float, __SparseDestroyOpaqueNumeric_Double, 
@@ -845,10 +858,9 @@ exports:
                        __SparseTrap ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: FA3EFBE3-1EEC-3F93-8E0F-5D40292A6A8B' ]
+uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: D1B2BF51-1EDF-3FB2-8538-080A77BC5FC4' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib'
 exports:         
   - archs:           [ x86_64 ]
     allowable-clients: [ Sparse, vecLib ]
@@ -886,11 +898,10 @@ exports:
                        _sparse_vector_triangular_solve_dense_float ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: 68D1E0A3-6175-3325-9CC5-C2056603167D' ]
+uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: E4D521CB-0C26-363A-BB81-7D142A812AD0' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
-current-version: 671.250.4
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib'
+current-version: 735
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _FFTCSForPFAs, _FFTCSForPFAv, _HasCharacteristic, _conv, _convD, 
@@ -1025,11 +1036,10 @@ exports:
                        _vDSP_zvsub, _vDSP_zvsubD, _vDSP_zvzsml, _vDSP_zvzsmlD ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: F2F0E059-3EC9-3AC0-B8BE-A1978F367829' ]
+uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: 06B495C2-28BA-3E0E-B1F6-71CDCE62518F' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
-current-version: 671.250.4
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib'
+current-version: 735
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _VVACOS, _VVACOSF, _VVACOSF_, _VVACOSH, _VVACOSHF, _VVACOSHF_, 
@@ -1098,22 +1108,21 @@ exports:
                        _vvtanpif_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: 07C338BF-4BC6-369A-94DE-BE13ECECB245' ]
+uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: 4983C4C7-B377-36E6-BA7D-824A5AD74FAA' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib
-current-version: 671.250.4
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib'
+current-version: 735
 exports:         
   - archs:           [ x86_64 ]
     allowable-clients: [ Accelerate ]
   - archs:           [ i386, x86_64 ]
-    re-exports:      [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib ]
+    re-exports:      [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib', 
+                       '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib' ]
 ...

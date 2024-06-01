@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverBackgroundView.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPopoverBackgroundView.h>)
 //
 //  UIPopoverBackgroundView.h
 //  UIKit
@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIGeometry.h>
 #import <UIKit/UIPopoverController.h>
 
@@ -26,7 +27,7 @@
 + (CGFloat)arrowHeight;
 @end
 
-NS_CLASS_AVAILABLE_IOS(5_0)
+UIKIT_EXTERN API_AVAILABLE(ios(5.0))
 @interface UIPopoverBackgroundView : UIView <UIPopoverBackgroundViewMethods>
 
 /* The arrow offset represents how far from the center of the view the center of the arrow should appear. For `UIPopoverArrowDirectionUp` and `UIPopoverArrowDirectionDown`, this is a left-to-right offset; negative is to the left. For `UIPopoverArrowDirectionLeft` and `UIPopoverArrowDirectionRight`, this is a top-to-bottom offset; negative to toward the top.
@@ -41,11 +42,7 @@ NS_CLASS_AVAILABLE_IOS(5_0)
 
 /* This method may be overridden to prevent the drawing of the content inset and drop shadow inside the popover. The default implementation of this method returns YES.
  */
-#if UIKIT_DEFINE_AS_PROPERTIES
-@property(class, nonatomic, readonly) BOOL wantsDefaultContentAppearance NS_AVAILABLE_IOS(6_0);
-#else
-+ (BOOL)wantsDefaultContentAppearance NS_AVAILABLE_IOS(6_0);
-#endif
+@property(class, nonatomic, readonly) BOOL wantsDefaultContentAppearance API_DEPRECATED("No longer supported", ios(6.0, 13.0));
 
 @end
 

@@ -35,7 +35,7 @@ API_AVAILABLE(ios(12.0))
 /**
  A list of anchors in the map.
  */
-@property (nonatomic, copy) NSArray<ARAnchor *> *anchors;
+@property (nonatomic, copy) NSArray<__kindof ARAnchor *> *anchors;
 
 /**
  The feature points in the map.

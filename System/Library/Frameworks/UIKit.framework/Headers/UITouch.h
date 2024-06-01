@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITouch.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITouch.h>)
 //
 //  UITouch.h
 //  UIKit
@@ -31,68 +31,68 @@ typedef NS_ENUM(NSInteger, UIForceTouchCapability) {
 typedef NS_ENUM(NSInteger, UITouchType) {
     UITouchTypeDirect,                       // A direct touch from a finger (on a screen)
     UITouchTypeIndirect,                     // An indirect touch (not a screen)
-    UITouchTypePencil NS_AVAILABLE_IOS(9_1), // Add pencil name variant
-    UITouchTypeStylus NS_AVAILABLE_IOS(9_1) = UITouchTypePencil, // A touch from a stylus (deprecated name, use pencil)
-} NS_ENUM_AVAILABLE_IOS(9_0);
+    UITouchTypePencil API_AVAILABLE(ios(9.1)), // Add pencil name variant
+    UITouchTypeStylus API_AVAILABLE(ios(9.1)) = UITouchTypePencil, // A touch from a stylus (deprecated name, use pencil)
+} API_AVAILABLE(ios(9.0));
 
 typedef NS_OPTIONS(NSInteger, UITouchProperties) {
     UITouchPropertyForce = (1UL << 0),
     UITouchPropertyAzimuth = (1UL << 1),
     UITouchPropertyAltitude = (1UL << 2),
     UITouchPropertyLocation = (1UL << 3), // For predicted Touches
-} NS_AVAILABLE_IOS(9_1);
+} API_AVAILABLE(ios(9.1));
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UITouch : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UITouch : NSObject
 
 @property(nonatomic,readonly) NSTimeInterval      timestamp;
 @property(nonatomic,readonly) UITouchPhase        phase;
 @property(nonatomic,readonly) NSUInteger          tapCount;   // touch down within a certain point within a certain amount of time
-@property(nonatomic,readonly) UITouchType         type NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly) UITouchType         type API_AVAILABLE(ios(9.0));
 
 // majorRadius and majorRadiusTolerance are in points
 // The majorRadius will be accurate +/- the majorRadiusTolerance
-@property(nonatomic,readonly) CGFloat majorRadius NS_AVAILABLE_IOS(8_0);
-@property(nonatomic,readonly) CGFloat majorRadiusTolerance NS_AVAILABLE_IOS(8_0);
+@property(nonatomic,readonly) CGFloat majorRadius API_AVAILABLE(ios(8.0));
+@property(nonatomic,readonly) CGFloat majorRadiusTolerance API_AVAILABLE(ios(8.0));
 
 @property(nullable,nonatomic,readonly,strong) UIWindow                        *window;
 @property(nullable,nonatomic,readonly,strong) UIView                          *view;
-@property(nullable,nonatomic,readonly,copy)   NSArray <UIGestureRecognizer *> *gestureRecognizers NS_AVAILABLE_IOS(3_2);
+@property(nullable,nonatomic,readonly,copy)   NSArray <UIGestureRecognizer *> *gestureRecognizers API_AVAILABLE(ios(3.2));
 
 - (CGPoint)locationInView:(nullable UIView *)view;
 - (CGPoint)previousLocationInView:(nullable UIView *)view;
 
 // Use these methods to gain additional precision that may be available from touches.
 // Do not use precise locations for hit testing. A touch may hit test inside a view, yet have a precise location that lies just outside.
-- (CGPoint)preciseLocationInView:(nullable UIView *)view NS_AVAILABLE_IOS(9_1);
-- (CGPoint)precisePreviousLocationInView:(nullable UIView *)view NS_AVAILABLE_IOS(9_1);
+- (CGPoint)preciseLocationInView:(nullable UIView *)view API_AVAILABLE(ios(9.1));
+- (CGPoint)precisePreviousLocationInView:(nullable UIView *)view API_AVAILABLE(ios(9.1));
 
 // Force of the touch, where 1.0 represents the force of an average touch
-@property(nonatomic,readonly) CGFloat force NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly) CGFloat force API_AVAILABLE(ios(9.0));
 // Maximum possible force with this input mechanism
-@property(nonatomic,readonly) CGFloat maximumPossibleForce NS_AVAILABLE_IOS(9_0);
+@property(nonatomic,readonly) CGFloat maximumPossibleForce API_AVAILABLE(ios(9.0));
 
 // Azimuth angle. Valid only for stylus touch types. Zero radians points along the positive X axis.
 // Passing a nil for the view parameter will return the azimuth relative to the touch's window.
-- (CGFloat)azimuthAngleInView:(nullable UIView *)view NS_AVAILABLE_IOS(9_1);
+- (CGFloat)azimuthAngleInView:(nullable UIView *)view API_AVAILABLE(ios(9.1));
 // A unit vector that points in the direction of the azimuth angle. Valid only for stylus touch types.
 // Passing nil for the view parameter will return a unit vector relative to the touch's window.
-- (CGVector)azimuthUnitVectorInView:(nullable UIView *)view NS_AVAILABLE_IOS(9_1);
+- (CGVector)azimuthUnitVectorInView:(nullable UIView *)view API_AVAILABLE(ios(9.1));
 
 // Altitude angle. Valid only for stylus touch types.
 // Zero radians indicates that the stylus is parallel to the screen surface,
 // while M_PI/2 radians indicates that it is normal to the screen surface.
-@property(nonatomic,readonly) CGFloat altitudeAngle NS_AVAILABLE_IOS(9_1);
+@property(nonatomic,readonly) CGFloat altitudeAngle API_AVAILABLE(ios(9.1));
 
 // An index which allows you to correlate updates with the original touch.
 // Is only guaranteed non-nil if this UITouch expects or is an update.
-@property(nonatomic,readonly) NSNumber * _Nullable estimationUpdateIndex NS_AVAILABLE_IOS(9_1);
+@property(nonatomic,readonly) NSNumber * _Nullable estimationUpdateIndex API_AVAILABLE(ios(9.1));
 // A set of properties that has estimated values
 // Only denoting properties that are currently estimated
-@property(nonatomic,readonly) UITouchProperties estimatedProperties NS_AVAILABLE_IOS(9_1);
+@property(nonatomic,readonly) UITouchProperties estimatedProperties API_AVAILABLE(ios(9.1));
 // A set of properties that expect to have incoming updates in the future.
 // If no updates are expected for an estimated property the current value is our final estimate.
 // This happens e.g. for azimuth/altitude values when entering from the edges
-@property(nonatomic,readonly) UITouchProperties estimatedPropertiesExpectingUpdates NS_AVAILABLE_IOS(9_1);
+@property(nonatomic,readonly) UITouchProperties estimatedPropertiesExpectingUpdates API_AVAILABLE(ios(9.1));
 
 
 @end

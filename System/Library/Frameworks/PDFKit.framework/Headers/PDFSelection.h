@@ -1,6 +1,6 @@
 //
 //  PDFSelection.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  PDFSelection tracks a range of text on one or many pages, from a starting
 //  to end position. From a selection over a range of text, you have the ability

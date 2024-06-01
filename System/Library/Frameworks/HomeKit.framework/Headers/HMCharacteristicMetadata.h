@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  *		  further information about a characteristic’s value, which can be used
  * 		  for presentation purposes.
  */
-API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
+HM_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristicMetadata : NSObject
 
 /*!

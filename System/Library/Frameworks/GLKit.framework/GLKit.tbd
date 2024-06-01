@@ -1,10 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4CDCCBFE-99E9-3A7B-A4B7-D601B5549AEC', 'x86_64: FB7401C8-7D90-3553-AD88-05066226CEF9' ]
+uuids:           [ 'i386: 4CDCCBFE-99E9-3A7B-A4B7-D601B5549AEC', 'x86_64: D0C4677A-2601-3787-A084-BB49A2C5673B' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/GLKit.framework/GLKit
-current-version: 103.2
-objc-constraint: none
+install-name:    '/System/Library/Frameworks/GLKit.framework/GLKit'
+current-version: 106
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _GLKMathProject, _GLKMathUnproject, _GLKMatrix3Identity, _GLKMatrix3Invert, 

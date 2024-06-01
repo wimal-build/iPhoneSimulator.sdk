@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKitBase.h>
 
-SK_EXPORT NS_AVAILABLE(10_10, 8_0) @interface SKReachConstraints : NSObject <NSSecureCoding>
+SK_EXPORT API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10)) @interface SKReachConstraints : NSObject <NSSecureCoding>
 
 /**
  Lower angle limit in radians

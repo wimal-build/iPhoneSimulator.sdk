@@ -5,8 +5,8 @@
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 #import <MediaPlayer/AVFoundation+MPNowPlayingInfoLanguageOptionAdditions.h>
 
 NS_ASSUME_NONNULL_BEGIN

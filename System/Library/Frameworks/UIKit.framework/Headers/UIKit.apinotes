@@ -1,3 +1,5 @@
+# This file is a superset of the apinotes containing UIKitCore and UIKitCore Clients (Sharing and DocumentManager)
+# Any changes not involving a UIKitCore clients API should be mirrored in UIKitCore.apinotes.
 #
 # Swift 3 specific notes are at the end of the file.
 # The following are notes applicable to Swift 3 and Swift 4.
@@ -5,6 +7,76 @@
 ---
 Name: UIKit
 Classes:
+- Name: NSDiffableDataSourceSnapshot
+  SwiftName: NSDiffableDataSourceSnapshotReference
+  SwiftImportAsNonGeneric: true
+- Name: UICollectionViewDiffableDataSource
+  SwiftName: UICollectionViewDiffableDataSourceReference
+  SwiftImportAsNonGeneric: true
+- Name: UITableViewDiffableDataSource
+  SwiftName: UITableViewDiffableDataSourceReference
+  SwiftImportAsNonGeneric: true
+- Name: NSCollectionLayoutDimension
+  Methods:
+  - Selector: "fractionalWidthDimension:"
+    MethodKind: Class
+    SwiftName: fractionalWidth(_:)
+  - Selector: "fractionalHeightDimension:"
+    MethodKind: Class
+    SwiftName: fractionalHeight(_:)
+  - Selector: "absoluteDimension:"
+    MethodKind: Class
+    SwiftName: absolute(_:)
+  - Selector: "estimatedDimension:"
+    MethodKind: Class
+    SwiftName: estimated(_:)
+- Name: NSCollectionLayoutGroup
+  Methods:
+  - Selector: "horizontalGroupWithLayoutSize:subitem:count:"
+    MethodKind: Class
+    SwiftName: horizontal(layoutSize:subitem:count:)
+  - Selector: "horizontalGroupWithLayoutSize:subitems:"
+    MethodKind: Class
+    SwiftName: horizontal(layoutSize:subitems:)
+  - Selector: "verticalGroupWithLayoutSize:subitem:count:"
+    MethodKind: Class
+    SwiftName: vertical(layoutSize:subitem:count:)
+  - Selector: "verticalGroupWithLayoutSize:subitems:"
+    MethodKind: Class
+    SwiftName: vertical(layoutSize:subitems:)
+  - Selector: "customGroupWithLayoutSize:itemProvider:"
+    MethodKind: Class
+    SwiftName: custom(layoutSize:itemProvider:)
+- Name: NSCollectionLayoutSection
+  Methods:
+  - Selector: "sectionWithGroup:"
+    MethodKind: Class
+    SwiftName: init(group:)
+- Name: NSCollectionLayoutSpacing
+  Methods:
+  - Selector: "flexibleSpacing:"
+    MethodKind: Class
+    SwiftName: flexible(_:)
+  - Selector: "fixedSpacing:"
+    MethodKind: Class
+    SwiftName: fixed(_:)
+  Properties:
+  - Name: isFlexibleSpacing
+    PropertyKind: Instance
+    SwiftName: isFlexible
+  - Name: isFixedSpacing
+    PropertyKind: Instance
+    SwiftName: isFixed
+- Name: NSCollectionLayoutEdgeSpacing
+  Methods:
+  - Selector: "spacingForLeading:top:trailing:bottom:"
+    MethodKind: Class
+    SwiftName: init(leading:top:trailing:bottom:)
+- Name: NSCollectionLayoutDecorationItem
+  Methods:
+  - Selector: "backgroundDecorationItemWithElementKind:"
+    MethodKind: Class
+    SwiftName: background(elementKind:)
 - Name: UIActivityIndicatorView
   Methods:
   - Selector: "initWithActivityIndicatorStyle:"
@@ -223,6 +295,11 @@ Classes:
   - Selector: 'unregisterImageWithTraitCollection:'
     SwiftName: unregister(imageWith:)
     MethodKind: Instance
+- Name: UIImpactFeedbackGenerator
+  Methods:
+  - Selector: 'impactOccurredWithIntensity:'
+    SwiftName: impactOccurred(intensity:)
+    MethodKind: Instance
 - Name: UILocalizedIndexedCollation
   Methods:
   - Selector: 'sectionForSectionIndexTitleAtIndex:'
@@ -293,6 +370,14 @@ Classes:
   - Selector: 'touchesShouldCancelInContentView:'
     SwiftName: touchesShouldCancel(in:)
     MethodKind: Instance
+- Name: UIStoryboard
+  Methods:
+  - Selector: 'instantiateInitialViewControllerWithCreator:'
+    MethodKind: Instance
+    SwiftPrivate: true
+  - Selector: 'instantiateViewControllerWithIdentifier:creator:'
+    MethodKind: Instance
+    SwiftPrivate: true
 - Name: UIStoryboardSegue
   Properties:
   - Name: sourceViewController
@@ -383,6 +468,9 @@ Classes:
   - Selector: 'effectForBlurEffect:'
     SwiftName: init(blurEffect:)
     MethodKind: Class
+  - Selector: 'effectForBlurEffect:style:'
+    SwiftName: init(blurEffect:style:)
+    MethodKind: Class
 - Name: UIWindow
   Properties:
   - Name: isKeyWindow
@@ -433,6 +521,42 @@ Classes:
   - Selector: 'environment:containsEnvironment:'
     MethodKind: Class
     Availability: nonswift
+- Name: UISceneConnectionOptions
+  SwiftName: UIScene.ConnectionOptions
+- Name: UISceneOpenURLOptions
+  SwiftName: UIScene.OpenURLOptions
+- Name: UISceneOpenExternalURLOptions
+  SwiftName: UIScene.OpenExternalURLOptions
+- Name: UISceneActivationRequestOptions
+  SwiftName: UIScene.ActivationRequestOptions
+- Name: UITraitCollection
+  Methods:
+  - Selector: 'performAsCurrentTraitCollection:'
+    MethodKind: Instance
+    SwiftName: 'performAsCurrent(_:)'
+  - Selector: 'hasDifferentColorAppearanceComparedToTraitCollection:'
+    MethodKind: Instance
+    SwiftName: 'hasDifferentColorAppearance(comparedTo:)'
+- Name: UIFontPickerViewControllerConfiguration
+  SwiftName: UIFontPickerViewController.Configuration
+- Name: UIImage
+  Methods:
+  - Selector: 'imageNamed:'
+    MethodKind: Class
+    SwiftName: 'init(named:withConfiguration:)'
+  - Selector: 'systemImageNamed:'
+    MethodKind: Class
+    SwiftName: 'init(systemName:)'
+  - Selector: 'systemImageNamed:withConfiguration:'
+    MethodKind: Class
+    SwiftName: 'init(systemName:withConfiguration:)'
+  - Selector: 'systemImageNamed:compatibleWithTraitCollection:'
+    MethodKind: Class
+    SwiftName: 'init(systemName:compatibleWith:)'
+- Name: UIImageConfiguration
+  SwiftName: UIImage.Configuration
+- Name: UIImageSymbolConfiguration
+  SwiftName: UIImage.SymbolConfiguration
 Protocols:
 - Name: UIAppearance
   Methods:
@@ -514,6 +638,11 @@ Protocols:
   Methods:
   - Selector: 'prepareForPopoverPresentation:'
     SwiftName: prepareForPopoverPresentation(_:)
+    MethodKind: Instance
+- Name: UIAdaptivePresentationControllerDelegate
+  Methods:
+  - Selector: 'presentationControllerDidAttemptToDismiss:'
+    SwiftName: presentationControllerDidAttemptToDismiss(_:)
     MethodKind: Instance
 - Name: UIScrollViewDelegate
   Methods:
@@ -608,6 +737,36 @@ Protocols:
   Methods:
   - Selector: 'textDraggableView:willAnimateLiftWithAnimator:session:'
     SwiftName: 'textDraggableView(_:willAnimateLiftWith:session:)'
+    MethodKind: Instance
+- Name: UICollectionViewDelegate
+  Methods:
+  - Selector: 'collectionView:contextMenuConfigurationForItemAtIndexPath:'
+    SwiftName: 'collectionView(_:contextMenuConfigurationForItemAtIndexPath:)'
+    MethodKind: Instance
+  - Selector: 'collectionView:previewForHighlightingContextMenuWithConfiguration:'
+    SwiftName: 'collectionView(_:previewForHighlightingContextMenuWithConfiguration:)'
+    MethodKind: Instance
+  - Selector: 'collectionView:previewForDismissingContextMenuWithConfiguration:'
+    SwiftName: 'collectionView(_:previewForDismissingContextMenuWithConfiguration:)'
+    MethodKind: Instance
+- Name: UITableViewDelegate
+  Methods:
+  - Selector: 'tableView:contextMenuConfigurationForRowAtIndexPath:'
+    SwiftName: 'tableView(_:contextMenuConfigurationForRowAtIndexPath:)'
+    MethodKind: Instance
+  - Selector: 'tableView:previewForHighlightingContextMenuWithConfiguration:'
+    SwiftName: 'tableView(_:previewForHighlightingContextMenuWithConfiguration:)'
+    MethodKind: Instance
+  - Selector: 'tableView:previewForDismissingContextMenuWithConfiguration:'
+    SwiftName: 'tableView(_:previewForDismissingContextMenuWithConfiguration:)'
+    MethodKind: Instance
+- Name: UIContextMenuInteractionDelegate
+  Methods:
+  - Selector: 'contextMenuInteraction:previewForHighlightingMenuWithConfiguration:'
+    SwiftName: 'contextMenuInteraction(_:previewForHighlightingMenuWithConfiguration:)'
+    MethodKind: Instance
+  - Selector: 'contextMenuInteraction:previewForDismissingMenuWithConfiguration:'
+    SwiftName: 'contextMenuInteraction(_:previewForDismissingMenuWithConfiguration:)'
     MethodKind: Instance
 Tags:
 - Name: NSTextLayoutOrientation
@@ -747,6 +906,8 @@ Tags:
   SwiftName: UIBarButtonItem.SystemItem
 - Name: UIBarButtonItemStyle
   SwiftName: UIBarButtonItem.Style
+- Name: UITabBarItemAppearanceStyle
+  SwiftName: UITabBarItemAppearance.Style
 - Name: UISearchBarIcon
   SwiftName: UISearchBar.Icon
 - Name: UISearchBarStyle
@@ -757,6 +918,8 @@ Tags:
   SwiftName: UITabBarItem.SystemItem
 - Name: UISplitViewControllerPrimaryEdge
   SwiftName: UISplitViewController.PrimaryEdge
+- Name: UISplitViewControllerBackgroundStyle
+  SwiftName: UISplitViewController.BackgroundStyle
 - Name: UISplitViewControllerDisplayMode
   SwiftName: UISplitViewController.DisplayMode
 - Name: UINavigationControllerOperation
@@ -849,6 +1012,10 @@ Tags:
   SwiftName: UIImage.ResizingMode
 - Name: UIImageRenderingMode
   SwiftName: UIImage.RenderingMode
+- Name: UIImageSymbolScale
+  SwiftName: UIImage.SymbolScale
+- Name: UIImageSymbolWeight
+  SwiftName: UIImage.SymbolWeight
 - Name: UIPrinterCutterBehavior
   SwiftName: UIPrinter.CutterBehavior
 - Name: UIPrinterJobTypes
@@ -871,7 +1038,17 @@ Tags:
   SwiftName: UIAccessibility.GuidedAccessRestrictionState
 - Name: UIGuidedAccessErrorCode
   SwiftName: UIAccessibility.GuidedAccessError
+- Name: UISceneActivationState
+  SwiftName: UIScene.ActivationState
+- Name: UIWindowSceneDismissalAnimation
+  SwiftName: UIWindowScene.DismissalAnimation
 Typedefs:
+- Name: UITableViewDiffableDataSourceCellProvider
+  SwiftName: UITableViewDiffableDataSourceReferenceCellProvider
+- Name: UICollectionViewDiffableDataSourceSupplementaryViewProvider
+  SwiftName: UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider
+- Name: UICollectionViewDiffableDataSourceCellProvider
+  SwiftName: UICollectionViewDiffableDataSourceReferenceCellProvider
 - Name: NSAttributedStringDocumentAttributeKey
   SwiftName: NSAttributedString.DocumentAttributeKey
 - Name: NSAttributedStringDocumentReadingOptionKey
@@ -894,6 +1071,10 @@ Typedefs:
   SwiftName: UIFontDescriptor.SystemDesign
 - Name: UIFontWeight
   SwiftName: UIFont.Weight
+- Name: UIStoryboardViewControllerCreator
+  SwiftPrivate: true
+- Name: UISceneSessionRole
+  SwiftName: UISceneSession.Role
 # Swift 4.2 Renames
 - Name: UIActivityType
   SwiftName: UIActivity.ActivityType
@@ -946,9 +1127,15 @@ Typedefs:
   SwiftName: UIScrollView.DecelerationRate
 - Name: UIAccessibilityAssistiveTechnologyIdentifier
   SwiftName: UIAccessibility.AssistiveTechnologyIdentifier
+- Name: UIAccessibilityCustomActionHandler
+  SwiftName: UIAccessibilityCustomAction.Handler
 Enumerators:
 - Name: NSLayoutFormatDirectionLeadingToTrailing
   SwiftName: directionLeadingToTrailing
+- Name: NSTextScalingStandard
+  SwiftName: standard
+- Name: NSTextScalingiOS
+  SwiftName: iOS
 - Name: NSUnderlineStyleSingle
   SwiftName: single
 - Name: NSUnderlineStyleThick
@@ -985,6 +1172,36 @@ Enumerators:
   SwiftName: showingEditControl
 - Name: UITableViewCellStateShowingDeleteConfirmationMask
   SwiftName: showingDeleteConfirmation
+- Name: UIImageSymbolScaleDefault
+  SwiftName: default
+- Name: UIImageSymbolScaleUnspecified
+  SwiftName: unspecified
+- Name: UIImageSymbolScaleSmall
+  SwiftName: small
+- Name: UIImageSymbolScaleMedium
+  SwiftName: medium
+- Name: UIImageSymbolScaleLarge
+  SwiftName: large
+- Name: UIImageSymbolWeightUnspecified
+  SwiftName: unspecified
+- Name: UIImageSymbolWeightUltraLight
+  SwiftName: ultraLight
+- Name: UIImageSymbolWeightThin
+  SwiftName: thin
+- Name: UIImageSymbolWeightLight
+  SwiftName: light
+- Name: UIImageSymbolWeightRegular
+  SwiftName: regular
+- Name: UIImageSymbolWeightMedium
+  SwiftName: medium
+- Name: UIImageSymbolWeightSemibold
+  SwiftName: semibold
+- Name: UIImageSymbolWeightBold
+  SwiftName: bold
+- Name: UIImageSymbolWeightHeavy
+  SwiftName: heavy
+- Name: UIImageSymbolWeightBlack
+  SwiftName: black
 Globals:
 - Name: UIEdgeInsetsZero
   SwiftName: UIEdgeInsets.zero
@@ -1068,6 +1285,10 @@ Globals:
   SwiftName: hyphenationFactor
 - Name: NSDefaultTabIntervalDocumentAttribute
   SwiftName: defaultTabInterval
+- Name: NSTextScalingDocumentAttribute
+  SwiftName: textScaling
+- Name: NSSourceTextScalingDocumentAttribute
+  SwiftName: sourceTextScaling
 - Name: NSTextLayoutSectionsAttribute
   SwiftName: textLayoutSections
 - Name: NSTabColumnTerminatorsAttributeName
@@ -1082,6 +1303,10 @@ Globals:
   SwiftName: defaultAttributes
 - Name: NSCharacterEncodingDocumentOption
   SwiftName: characterEncoding
+- Name: NSTargetTextScalingDocumentOption
+  SwiftName: targetTextScaling
+- Name: NSSourceTextScalingDocumentOption
+  SwiftName: sourceTextScaling
 - Name: NSUnderlinePatternSolid
   Availability: nonswift
 - Name: NSUnderlinePatternDot
@@ -1148,6 +1373,34 @@ Globals:
   SwiftName: heavy
 - Name: UIFontWeightBlack
   SwiftName: black
+- Name: UILargeContentViewerInteractionEnabledStatusDidChangeNotification
+  SwiftName: UILargeContentViewerInteraction.enabledStatusDidChangeNotification
+- Name: UITextWritingDirectionNatural
+  Availability: nonswift
+- Name: UITextWritingDirectionLeftToRight
+  Availability: nonswift
+- Name: UITextWritingDirectionRightToLeft
+  Availability: nonswift
+- Name: UISceneWillConnectNotification
+  SwiftName: UIScene.willConnectNotification
+- Name: UISceneDidConnectNotification
+  SwiftName: UIScene.didConnectNotification
+- Name: UISceneWillDisconnectNotification
+  SwiftName: UIScene.willDisconnectNotification
+- Name: UISceneDidDisconnectNotification
+  SwiftName: UIScene.didDisconnectNotification
+- Name: UISceneDidActivateNotification
+  SwiftName: UIScene.didActivateNotification
+- Name: UISceneWillDeactivateNotification
+  SwiftName: UIScene.willDeactivateNotification
+- Name: UISceneWillEnterForegroundNotification
+  SwiftName: UIScene.willEnterForegroundNotification
+- Name: UISceneDidEnterBackgroundNotification
+  SwiftName: UIScene.didEnterBackgroundNotification
+- Name: UIWindowSceneSessionRoleApplication
+  SwiftName: windowApplication
+- Name: UIWindowSceneSessionRoleExternalDisplay
+  SwiftName: windowExternalDisplay
 # Swift 4.2 Renames
 - Name: UIApplicationBackgroundRefreshStatusDidChangeNotification
   SwiftName: UIApplication.backgroundRefreshStatusDidChangeNotification
@@ -1285,12 +1538,18 @@ Globals:
   SwiftName: UIAccessibility.invertColorsStatusDidChangeNotification
 - Name: UIAccessibilityMonoAudioStatusDidChangeNotification
   SwiftName: UIAccessibility.monoAudioStatusDidChangeNotification
+- Name: UIAccessibilityOnOffSwitchLabelsDidChangeNotification
+  SwiftName: UIAccessibility.onOffSwitchLabelsDidChangeNotification
 - Name: UIAccessibilityReduceMotionStatusDidChangeNotification
   SwiftName: UIAccessibility.reduceMotionStatusDidChangeNotification
+- Name: UIAccessibilityVideoAutoplayStatusDidChangeNotification
+  SwiftName: UIAccessibility.videoAutoplayStatusDidChangeNotification
 - Name: UIAccessibilityReduceTransparencyStatusDidChangeNotification
   SwiftName: UIAccessibility.reduceTransparencyStatusDidChangeNotification
 - Name: UIAccessibilityShakeToUndoDidChangeNotification
   SwiftName: UIAccessibility.shakeToUndoDidChangeNotification
+- Name: UIAccessibilityShouldDifferentiateWithoutColorDidChangeNotification
+  SwiftName: UIAccessibility.differentiateWithoutColorDidChangeNotification
 - Name: UIAccessibilitySpeakScreenStatusDidChangeNotification
   SwiftName: UIAccessibility.speakScreenStatusDidChangeNotification
 - Name: UIAccessibilitySpeakSelectionStatusDidChangeNotification
@@ -1421,6 +1680,8 @@ Globals:
   SwiftName: accessibilitySpeechQueueAnnouncement
 - Name: UIAccessibilitySpeechAttributeIPANotation
   SwiftName: accessibilitySpeechIPANotation
+- Name: UIAccessibilitySpeechAttributeSpellOut
+  SwiftName: accessibilitySpeechSpellOut
 - Name: UIAccessibilityTextAttributeHeadingLevel
   SwiftName: accessibilityTextHeadingLevel
 - Name: UIAccessibilityTextAttributeCustom
@@ -1478,6 +1739,10 @@ Globals:
 - Name: UIGuidedAccessErrorDomain
   SwiftName: UIAccessibility.guidedAccessErrorDomain
 Functions:
+- Name: UIFontWeightForImageSymbolWeight
+  SwiftName: "UIImageSymbolWeight.fontWeight(self:)"
+- Name: UIImageSymbolWeightForFontWeight
+  SwiftName: "UIFontWeight.symbolWeight(self:)"
 - Name: UIInterfaceOrientationIsPortrait
   SwiftName: "getter:UIInterfaceOrientation.isPortrait(self:)"
 - Name: UIInterfaceOrientationIsLandscape
@@ -1590,12 +1855,18 @@ Functions:
   SwiftName: "getter:UIAccessibility.isMonoAudioEnabled()"
 - Name: UIAccessibilityIsReduceMotionEnabled
   SwiftName: "getter:UIAccessibility.isReduceMotionEnabled()"
+- Name: UIAccessibilityIsVideoAutoplayEnabled
+  SwiftName: "getter:UIAccessibility.isVideoAutoplayEnabled()"
 - Name: UIAccessibilityIsReduceTransparencyEnabled
   SwiftName: "getter:UIAccessibility.isReduceTransparencyEnabled()"
 - Name: UIAccessibilityIsSpeakScreenEnabled
   SwiftName: "getter:UIAccessibility.isSpeakScreenEnabled()"
 - Name: UIAccessibilityIsSpeakSelectionEnabled
   SwiftName: "getter:UIAccessibility.isSpeakSelectionEnabled()"
+- Name: UIAccessibilityIsOnOffSwitchLabelsEnabled
+  SwiftName: "getter:UIAccessibility.isOnOffSwitchLabelsEnabled()"
+- Name: UIAccessibilityShouldDifferentiateWithoutColor
+  SwiftName: "getter:UIAccessibility.shouldDifferentiateWithoutColor()"
 - Name: UIGuidedAccessRestrictionStateForIdentifier
   SwiftName: "UIAccessibility.guidedAccessRestrictionState(forIdentifier:)"
 - Name: UIGuidedAccessConfigureAccessibilityFeatures
@@ -1642,6 +1913,9 @@ SwiftVersions:
     - Selector: "scopeBarButtonTitleTextAttributesForState:"
       MethodKind: Instance
       ResultType: "NSDictionary<NSString *, id> * _Nullable"
+    - Selector: "setShowsScopeBar:animated:"
+      SwiftName: setShowsScopeBar(_:animated:)
+      MethodKind: Instance
   - Name: UITextView
     Properties:
     - Name: typingAttributes
@@ -1972,6 +2246,8 @@ SwiftVersions:
     SwiftName: UIBarButtonSystemItem
   - Name: UIBarButtonItemStyle
     SwiftName: UIBarButtonItemStyle
+  - Name: UITabBarItemAppearanceStyle
+    SwiftName: UITabBarItemAppearance.Style
   - Name: UISearchBarIcon
     SwiftName: UISearchBarIcon
   - Name: UISearchBarStyle
@@ -2511,12 +2787,6 @@ SwiftVersions:
     SwiftName: UIAccessibilityTraitCausesPageTurn
   - Name: UIAccessibilityTraitTabBar
     SwiftName: UIAccessibilityTraitTabBar
-  - Name: UIEdgeInsetsZero
-    Availability: nonswift
-    AvailabilityMsg: "Use UIEdgeInsets.zero"
-  - Name: UIOffsetZero
-    Availability: nonswift
-    AvailabilityMsg: "Use UIOffset.zero"
   - Name: UITrackingRunLoopMode
     SwiftName: UITrackingRunLoopMode
   - Name: UIFontSymbolicTrait

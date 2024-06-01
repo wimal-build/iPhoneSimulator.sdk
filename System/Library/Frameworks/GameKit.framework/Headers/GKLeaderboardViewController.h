@@ -15,7 +15,6 @@ NS_CLASS_DEPRECATED(10_8, 10_10, 4_1, 7_0, "Use GKGameCenterViewController inste
 @interface GKLeaderboardViewController : GKGameCenterViewController
 #if !TARGET_OS_IPHONE
 {
-    id<GKLeaderboardViewControllerDelegate> _leaderboardDelegate;
     NSString *_category;
     GKLeaderboardTimeScope _timeScope;
 }
@@ -25,7 +24,7 @@ NS_CLASS_DEPRECATED(10_8, 10_10, 4_1, 7_0, "Use GKGameCenterViewController inste
 @interface GKLeaderboardViewController ()
 @property (assign, NS_NONATOMIC_IOSONLY) GKLeaderboardTimeScope timeScope;
 @property (copy, NS_NONATOMIC_IOSONLY)   NSString *category;
-@property (assign, NS_NONATOMIC_IOSONLY) id <GKLeaderboardViewControllerDelegate> leaderboardDelegate;
+@property (weak, NS_NONATOMIC_IOSONLY) id <GKLeaderboardViewControllerDelegate> leaderboardDelegate;
 
 @end
 

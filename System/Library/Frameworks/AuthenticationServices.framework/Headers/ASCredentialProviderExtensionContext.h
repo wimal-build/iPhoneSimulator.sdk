@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-AS_EXTERN API_AVAILABLE(ios(12.0)) 
+AS_EXTERN API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macCatalyst, macos, tvos, watchos)
 NSErrorDomain const ASExtensionErrorDomain;
 
 typedef NS_ERROR_ENUM(ASExtensionErrorDomain, ASExtensionErrorCode) {
@@ -20,9 +20,9 @@ typedef NS_ERROR_ENUM(ASExtensionErrorDomain, ASExtensionErrorCode) {
     ASExtensionErrorCodeUserCanceled = 1,
     ASExtensionErrorCodeUserInteractionRequired = 100,
     ASExtensionErrorCodeCredentialIdentityNotFound = 101,
-} API_AVAILABLE(ios(12.0)) ;
+} API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macCatalyst, macos, tvos);
 
-AS_EXTERN API_AVAILABLE(ios(12.0)) 
+AS_EXTERN API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macCatalyst, macos, tvos, watchos)
 @interface ASCredentialProviderExtensionContext : NSExtensionContext
 
 /*! @abstract Complete the request by providing the user selected credential.

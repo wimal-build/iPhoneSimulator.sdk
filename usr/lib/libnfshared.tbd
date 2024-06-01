@@ -1,9 +1,8 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B57BBA55-379B-36B2-92E2-8A9ACE876AA2' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E6A9F246-27FB-3122-A22E-C7E9E744F28E' ]
 platform:        ios
-install-name:    /usr/lib/libnfshared.dylib
-objc-constraint: none
+install-name:    '/usr/lib/libnfshared.dylib'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _GetElapsedTimeInMillisecondsFromMachTime, _NFCreateRootQueue, 
@@ -15,9 +14,9 @@ exports:
                        _NFDataScannerRead8, _NFDataScannerReadData, _NFDataScannerRelease, 
                        _NFDataScannerRetain, _NFGetRootQueue, _NFGetThreadPriority, 
                        _NFSetRootQueue, _NFSetThreadPriority, _NFSharedDumpTransport, 
-                       _NFSharedLogLock, _NFSharedLogSetDiagnosticLogging, _NFSharedLogSetSynchronousLogging, 
-                       _NFSharedLogTransport, _NFSharedLogUnlock, _NFSharedLogv, 
-                       _NFSharedLogv_GreenTea, _NFSharedSignpostLog, _NFSimulateCrash, 
+                       _NFSharedLogLock, _NFSharedLogSetSynchronousLogging, _NFSharedLogTransport, 
+                       _NFSharedLogUnlock, _NFSharedLogv, _NFSharedLogv_GreenTea, 
+                       _NFSharedSignpostLog, _NFSimulateCrash, _NF_isFeatureSupported, 
                        _TLVCreateWithData, _TLVCreateWithDataMixed, _TLVCreateWithFirstChild, 
                        _TLVCreateWithValue, _TLVRelease, _TLVRetain, __NFSharedLogClose, 
                        __NFSharedLogOpen, ___NFSharedLogv, _gRootQueueMutex, _postAWDHardwareExceptionEvent, 
@@ -25,7 +24,6 @@ exports:
                        _resetAWDLoadStackExceptionCount ]
     objc-classes:    [ NFAWDLogger, NFCurrency, NFJSONEncoder, NFMSEIParser, NFMemoryObserver, 
                        NFNdefMessageInternal, NFNdefRecordInternal, NFPowerAssertion, 
-                       NFPowerObserver, NFPreferenceObserver, NFPropertyCoder, NFReaderSessionCallbacks, 
-                       NFReaderSessionInterface, NFRunScriptParameters, NFTLV, NFTagInternal, 
-                       NFTimer, NFWeakReference ]
+                       NFPowerObserver, NFPreferenceObserver, NFPropertyCoder, NFRunScriptParameters, 
+                       NFTLV, NFTagInternal, NFTimer, NFWeakReference ]
 ...

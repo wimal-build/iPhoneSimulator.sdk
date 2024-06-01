@@ -16,17 +16,17 @@ typedef NS_CLOSED_ENUM(NSInteger, SKProductStorePromotionVisibility) {
     SKProductStorePromotionVisibilityDefault,
     SKProductStorePromotionVisibilityShow,
     SKProductStorePromotionVisibilityHide,
-} NS_ENUM_AVAILABLE_IOS(11_0);
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst);
 
-SK_EXTERN_CLASS_AVAILABLE_IOS(11_0) @interface SKProductStorePromotionController : NSObject
+SK_EXTERN_CLASS API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst) @interface SKProductStorePromotionController : NSObject
 
-+ (instancetype)defaultController NS_AVAILABLE_IOS(11_0);
++ (instancetype)defaultController API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst);
 
-- (void)fetchStorePromotionVisibilityForProduct:(SKProduct *)product completionHandler:(nullable void (^)(SKProductStorePromotionVisibility storePromotionVisibility, NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
-- (void)updateStorePromotionVisibility:(SKProductStorePromotionVisibility)promotionVisibility forProduct:(SKProduct *)product completionHandler:(nullable void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(update(storePromotionVisibility:for:completionHandler:)) NS_AVAILABLE_IOS(11_0);
+- (void)fetchStorePromotionVisibilityForProduct:(SKProduct *)product completionHandler:(nullable void (^)(SKProductStorePromotionVisibility storePromotionVisibility, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst);
+- (void)updateStorePromotionVisibility:(SKProductStorePromotionVisibility)promotionVisibility forProduct:(SKProduct *)product completionHandler:(nullable void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(update(storePromotionVisibility:for:completionHandler:)) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst);
 
-- (void)fetchStorePromotionOrderWithCompletionHandler:(nullable void (^)(NSArray<SKProduct *> *storePromotionOrder, NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(11_0);
-- (void)updateStorePromotionOrder:(NSArray<SKProduct *> *)storePromotionOrder completionHandler:(nullable void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(update(storePromotionOrder:completionHandler:)) NS_AVAILABLE_IOS(11_0);
+- (void)fetchStorePromotionOrderWithCompletionHandler:(nullable void (^)(NSArray<SKProduct *> *storePromotionOrder, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst);
+- (void)updateStorePromotionOrder:(NSArray<SKProduct *> *)storePromotionOrder completionHandler:(nullable void (^)(NSError * _Nullable error))completionHandler NS_SWIFT_NAME(update(storePromotionOrder:completionHandler:)) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, macCatalyst);
 
 @end
 

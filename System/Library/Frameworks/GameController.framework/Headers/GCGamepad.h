@@ -5,12 +5,16 @@
 //  Copyright (c) 2012 Apple Inc. All rights reserved.
 //
 
-#import <GameController/GameController.h>
+#import <Foundation/Foundation.h>
+#import <GameController/GCExtern.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class GCController;
 @class GCGamepadSnapshot;
+@class GCControllerDirectionPad;
+@class GCControllerElement;
+@class GCControllerButtonInput;
 
 /**
  Standard Gamepad profile.
@@ -20,18 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
  A profile maps the hardware notion of a controller into a logical controller. One that a developer can design for
  and depend on, no matter the underlying hardware.
  */
-NS_CLASS_DEPRECATED(10_9, 10_12, 7_0, 10_0)
-GAMECONTROLLER_EXPORT
+
+API_DEPRECATED_WITH_REPLACEMENT("GCExtendedGamepad", macos(10.9, 10.12), ios(7.0, 10.0), tvos(7.0, 10.0))
 @interface GCGamepad : NSObject
 
 /**
  A profile keeps a reference to the controller that this profile is mapping input from.
  */
-#if !__has_feature(objc_arc)
-@property (nonatomic, readonly, assign) GCController *controller;
-#else
 @property (nonatomic, readonly, weak) GCController *controller;
-#endif
 
 /**
  Set this block if you want to be notified when a value on a element changed. If multiple elements have changed this block will be called

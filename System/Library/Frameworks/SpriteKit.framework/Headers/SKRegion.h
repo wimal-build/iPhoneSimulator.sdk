@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXPORT NS_AVAILABLE(10_10, 8_0) @interface SKRegion : NSObject <NSCopying, NSSecureCoding>
+SK_EXPORT API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10)) @interface SKRegion : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly, nullable) CGPathRef path;
 

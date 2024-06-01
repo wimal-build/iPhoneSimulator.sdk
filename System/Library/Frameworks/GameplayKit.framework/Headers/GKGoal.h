@@ -37,7 +37,7 @@ GK_BASE_AVAILABILITY @interface GKGoal : NSObject <NSCopying>
 
 /**
  * Creates a goal to avoid colliding with a group of agents taking into account those agent's momentum
- * @param timeBeforeCollisionToAvoid how far ahead in the future, in seconds, should we look for potential collisions
+ * @param maxPredictionTime how far ahead in the future, in seconds, should we look for potential collisions
  */
 + (instancetype)goalToAvoidAgents:(NSArray<GKAgent *> *)agents maxPredictionTime:(NSTimeInterval)maxPredictionTime;
 
@@ -70,7 +70,6 @@ GK_BASE_AVAILABILITY @interface GKGoal : NSObject <NSCopying>
 
 /**
  * Creates a goal that will make the agent appear to wander, aimlessly moving forward and turning randomly
- * @param deltaTime how much time, in seconds, has elapsed since the last simulation step
  * @param speed the speed at which to wander
  */
 + (instancetype)goalToWander:(float)speed;

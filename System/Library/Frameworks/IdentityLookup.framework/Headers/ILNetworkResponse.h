@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// A response to an HTTPS network request.
-IL_EXTERN API_AVAILABLE(ios(11.0))
+IL_EXTERN API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos)
 @interface ILNetworkResponse : NSObject <NSSecureCoding>
 
 /// Represents the URL response itself. See documentation for NSHTTPURLResponse.

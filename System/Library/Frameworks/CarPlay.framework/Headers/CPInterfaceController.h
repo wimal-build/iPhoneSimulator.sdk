@@ -26,6 +26,12 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
  */
 @property (nonatomic, weak) id<CPInterfaceControllerDelegate> delegate;
 
+/**
+ Set the preferred interface style to UIUserInterfaceStyleDark for all templates. Set this value to YES prior to setting a root template
+ or pushing any templates for first appearance to have style UIUserInterfaceStyleDark. The default value is NO which will allow templates to change between light and dark styles.
+ */
+@property (nonatomic, assign) BOOL prefersDarkUserInterfaceStyle API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+
 #pragma mark - Templates
 
 /**
@@ -119,7 +125,7 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
 
  @discussion This must be implemented by the same object that serves as your application's delegate object.
  */
-API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_DEPRECATED_WITH_REPLACEMENT("CPTemplateApplicationSceneDelegate", ios(12.0, 13.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @protocol CPApplicationDelegate <UIApplicationDelegate>
 
 @required

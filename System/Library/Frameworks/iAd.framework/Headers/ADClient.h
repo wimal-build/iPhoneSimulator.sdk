@@ -10,30 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(7_1) @interface ADClient : NSObject
-
-/*!
- * @method sharedClient
- *
- * @return
- * The shared singleton instance of ADClient.
- *
- * @discussion
- * ADClient is a singleton object.
- */
-+ (ADClient *)sharedClient NS_AVAILABLE_IOS(7_1);
-
 /*!
  * @const ADClientErrorDomain
  *
  * @discussion
- * Error domain for NSErrors passed to the completionHandler as a 
+ * Error domain for NSErrors passed to the completionHandler as a
  * result of calling:
  *
  *   • -[[ADClient SharedClient] requestAttributionDetailsWithBlock]
  *
  */
-extern NSString * const ADClientErrorDomain;
+extern NSString * const ADClientErrorDomain NS_AVAILABLE(10_14, 7_1);
 
 /*!
  * @enum ADClientError
@@ -62,7 +49,20 @@ typedef NS_ENUM(NSInteger, ADClientError) {
     ADClientErrorLimitAdTracking = 1,
     ADClientErrorMissingData = 2,
     ADClientErrorCorruptResponse = 3
-};
+} NS_ENUM_AVAILABLE(10_14, 7_1);
+
+NS_CLASS_AVAILABLE(10_14, 7_1) @interface ADClient : NSObject
+
+/*!
+ * @method sharedClient
+ *
+ * @return
+ * The shared singleton instance of ADClient.
+ *
+ * @discussion
+ * ADClient is a singleton object.
+ */
++ (ADClient *)sharedClient NS_AVAILABLE(10_14, 7_1);
 
 /*!
  * @method determineAppInstallationAttributionWithCompletionHandler:
@@ -80,7 +80,8 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * Provides a way for an app to determine if it was installed by the user in
  * response to seeing an iAd for the app.
  */
-- (void)determineAppInstallationAttributionWithCompletionHandler:(void (^)(BOOL appInstallationWasAttributedToiAd))completionHandler NS_DEPRECATED_IOS(7_1, 9_0, "Use requestAttributionDetailsWithBlock instead.");
+
+- (void)determineAppInstallationAttributionWithCompletionHandler:(void (^)(BOOL appInstallationWasAttributedToiAd))completionHandler NS_DEPRECATED(10_14, 10_14, 7_1, 9_0, "Use requestAttributionDetailsWithBlock instead.");
 
 /*!
  * @method lookupAdConversionDetails:
@@ -95,7 +96,7 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * Provides a way for an app to determine when an iAd was shown to the user
  * which resulted in the user's purchase of the app.
  */
-- (void)lookupAdConversionDetails:(void (^)(NSDate * _Nullable appPurchaseDate, NSDate * _Nullable iAdImpressionDate))completionHandler NS_DEPRECATED_IOS(8_0, 9_0, "Use requestAttributionDetailsWithBlock instead.");
+- (void)lookupAdConversionDetails:(void (^)(NSDate * _Nullable appPurchaseDate, NSDate * _Nullable iAdImpressionDate))completionHandler NS_DEPRECATED(10_14, 10_14, 8_0, 9_0, "Use requestAttributionDetailsWithBlock instead.");
 
 /*!
  * @method requestAttributionDetailsWithBlock:
@@ -112,7 +113,7 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * Provides a way for an app to determine when an iAd was shown to the user
  * which resulted in the user's purchase of the app.
  */
-- (void)requestAttributionDetailsWithBlock:(void (^)(NSDictionary<NSString *, NSObject *> * _Nullable attributionDetails, NSError * _Nullable error))completionHandler NS_AVAILABLE_IOS(9_0);
+- (void)requestAttributionDetailsWithBlock:(void (^)(NSDictionary<NSString *, NSObject *> * _Nullable attributionDetails, NSError * _Nullable error))completionHandler NS_AVAILABLE(10_14, 9_0);
 
 /*!
  * @method addClientToSegments:replaceExisting:
@@ -130,7 +131,7 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * application.  If Limit Ad Tracking is enabled on the device, this method will
  * have no effect.
  */
-- (void)addClientToSegments:(NSArray<NSString *> *)segmentIdentifiers replaceExisting:(BOOL)replaceExisting NS_AVAILABLE_IOS(8_0);
+- (void)addClientToSegments:(NSArray<NSString *> *)segmentIdentifiers replaceExisting:(BOOL)replaceExisting NS_DEPRECATED(10_14, 10_14, 8_0, 13_0);
 
 @end
 

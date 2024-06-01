@@ -33,3 +33,5 @@
 #import <Metal/MTLIndirectCommandEncoder.h>
 #import <Metal/MTLFence.h>
 #import <Metal/MTLEvent.h>
+#import <Metal/MTLResourceStateCommandEncoder.h>
+#import <Metal/MTLRasterizationRate.h>

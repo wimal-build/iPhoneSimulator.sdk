@@ -207,7 +207,7 @@ SK_EXPORT @interface SKNode : NSResponder <NSCopying, NSSecureCoding>
 - (void)removeAllChildren;
 
 - (void)removeFromParent;
-- (void)moveToParent:(SKNode *)parent NS_AVAILABLE(10_11, 9_0);
+- (void)moveToParent:(SKNode *)parent API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 - (nullable SKNode *)childNodeWithName:(NSString *)name;
 
@@ -224,7 +224,7 @@ SK_EXPORT @interface SKNode : NSResponder <NSCopying, NSSecureCoding>
  * @param name An Xpath style path that can include simple regular expressions for matching node names.
  * @see enumerateChildNodesWithName:usingBlock:
  */
-- (NSArray<SKNode*> *)objectForKeyedSubscript:(NSString *)name NS_AVAILABLE(10_10, 8_0);
+- (NSArray<SKNode*> *)objectForKeyedSubscript:(NSString *)name API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /* Returns true if the specified parent is in this node's chain of parents */
 

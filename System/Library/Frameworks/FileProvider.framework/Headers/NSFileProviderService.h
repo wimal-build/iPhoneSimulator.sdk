@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class NSXPCListenerEndpoint;
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos)
 @protocol NSFileProviderServiceSource
 
 /**
@@ -46,9 +46,8 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  */
 @interface NSFileProviderExtension (NSFileProviderService)
 
-- (nullable NSArray <id <NSFileProviderServiceSource>> *)supportedServiceSourcesForItemIdentifier:(NSFileProviderItemIdentifier)itemIdentifier error:(NSError **)error NS_SWIFT_NAME(supportedServiceSources(for:)) API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+- (nullable NSArray <id <NSFileProviderServiceSource>> *)supportedServiceSourcesForItemIdentifier:(NSFileProviderItemIdentifier)itemIdentifier error:(NSError **)error NS_SWIFT_NAME(supportedServiceSources(for:)) API_AVAILABLE(ios(11.0), macos(10.15)) API_UNAVAILABLE(watchos, tvos);
 
 @end
 
 NS_ASSUME_NONNULL_END
-

@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDynamicItemBehavior.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIDynamicItemBehavior.h>)
 //
 //  UIDynamicItemBehavior.h
 //  UIKit
@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIDynamicBehavior.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicItemBehavior : UIDynamicBehavior
+UIKIT_EXTERN API_AVAILABLE(ios(7.0)) @interface UIDynamicItemBehavior : UIDynamicBehavior
 
 - (instancetype)initWithItems:(NSArray<id <UIDynamicItem>> *)items NS_DESIGNATED_INITIALIZER;
 
@@ -30,14 +31,14 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicItemBehavior : UIDynamicBehavior
  electric and magnetic fields. Note that this is a unitless quantity, it is up to the developer to
  set charge and field strength appropriately. Defaults to 0.0
  */
-@property (readwrite, nonatomic) CGFloat charge NS_AVAILABLE_IOS(9_0);
+@property (readwrite, nonatomic) CGFloat charge API_AVAILABLE(ios(9.0));
 
 /*!
  If an item is anchored, it can participate in collisions, but will not exhibit
  any dynamic response. i.e. The item will behave more like a collision boundary.
  The default is NO
  */
-@property (nonatomic, getter = isAnchored) BOOL anchored NS_AVAILABLE_IOS(9_0);
+@property (nonatomic, getter = isAnchored) BOOL anchored API_AVAILABLE(ios(9.0));
 
 @property (readwrite, nonatomic) BOOL allowsRotation; // force an item to never rotate
 

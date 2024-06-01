@@ -42,5 +42,11 @@ typedef NSString * PKPaymentErrorKey NS_STRING_ENUM;
 extern PKPaymentErrorKey const PKPaymentErrorContactFieldUserInfoKey  API_AVAILABLE(ios(11.0), watchos(4.0)); // a PKContactField the error relates to. Use with PKPaymentShippingContactInvalidError
 extern PKPaymentErrorKey const PKPaymentErrorPostalAddressUserInfoKey API_AVAILABLE(ios(11.0), watchos(4.0)); // if the error relates to PKContactFieldPostalAddress you may set the specific key here
 
+typedef NS_ENUM(NSInteger, PKAddPaymentPassError) {
+    PKAddPaymentPassErrorUnsupported,
+    PKAddPaymentPassErrorUserCancelled,
+    PKAddPaymentPassErrorSystemCancelled
+} API_AVAILABLE(ios(9.0), watchos(6.0));
+
 NS_ASSUME_NONNULL_END
 #endif // __PKERROR_H

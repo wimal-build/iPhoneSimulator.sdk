@@ -34,7 +34,7 @@ SK_EXPORT @interface SKPhysicsWorld : NSObject<NSSecureCoding>
 - (void)removeJoint:(SKPhysicsJoint *)joint;
 - (void)removeAllJoints;
 
-- (vector_float3)sampleFieldsAt:(vector_float3)position NS_AVAILABLE(10_10, 8_0);
+- (vector_float3)sampleFieldsAt:(vector_float3)position API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 - (nullable SKPhysicsBody *)bodyAtPoint:(CGPoint)point;
 - (nullable SKPhysicsBody *)bodyInRect:(CGRect)rect;

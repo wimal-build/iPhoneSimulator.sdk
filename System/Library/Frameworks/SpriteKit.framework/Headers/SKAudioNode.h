@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @see AVAudio3DMixing
  * @see SKScene.listener
  */
-SK_EXPORT NS_AVAILABLE(10_11, 9_0) @interface SKAudioNode : SKNode <NSSecureCoding>
+SK_EXPORT API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11)) @interface SKAudioNode : SKNode <NSSecureCoding>
 
 /**Creates a SpriteKit scene graph audio node from the given AVAudioNode.
  * @see AVAudioNode
@@ -72,17 +72,17 @@ SK_EXPORT NS_AVAILABLE(10_11, 9_0) @interface SKAudioNode : SKNode <NSSecureCodi
  */
 @interface SKAction (SKAudioNode)
 
-+ (SKAction *)stereoPanTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)stereoPanBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)stereoPanTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)stereoPanBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)changeReverbTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changeReverbBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changeReverbTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)changeReverbBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)changeObstructionTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changeObstructionBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changeObstructionTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)changeObstructionBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
-+ (SKAction *)changeOcclusionTo:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
-+ (SKAction *)changeOcclusionBy:(float)v duration:(NSTimeInterval)duration NS_AVAILABLE(10_11, 9_0);
++ (SKAction *)changeOcclusionTo:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
++ (SKAction *)changeOcclusionBy:(float)v duration:(NSTimeInterval)duration API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 @end
 

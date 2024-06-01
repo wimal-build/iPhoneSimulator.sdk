@@ -5,8 +5,8 @@
 //  Copyright 2008 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 #import <MediaPlayer/MPMediaItemCollection.h>
 
 NS_ASSUME_NONNULL_BEGIN

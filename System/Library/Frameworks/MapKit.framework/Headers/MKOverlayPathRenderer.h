@@ -15,7 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
+NS_CLASS_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos)
 @interface MKOverlayPathRenderer : MKOverlayRenderer
 
 #if TARGET_OS_IPHONE
@@ -32,6 +32,16 @@ NS_CLASS_AVAILABLE(10_9, 7_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED
 @property CGFloat miterLimit; // defaults to 10
 @property CGFloat lineDashPhase; // defaults to 0
 @property (copy, nullable) NSArray<NSNumber *> *lineDashPattern; // defaults to nil
+
+/*
+ For renderers which support vector drawing, controls whether the overlay is rendered
+ as a bitmap when being composited with the map.
+
+ When false (the default), the overlay will be rendered as vector geometry whenever possible.
+ Note that certain geometry or configurations may force rasterization even when the value
+ of this property is false.
+ */
+@property (nonatomic, assign) BOOL shouldRasterize API_AVAILABLE(ios(13.0), tvos(13.0), macos(10.15)) API_UNAVAILABLE(watchos);
 
 // subclassers should override this to create a path and then set it on
 // themselves with self.path = newPath;

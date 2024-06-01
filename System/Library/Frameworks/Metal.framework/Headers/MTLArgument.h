@@ -11,104 +11,104 @@
 
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSUInteger, MTLDataType){
-    
+typedef NS_ENUM(NSUInteger, MTLDataType) {
+
     MTLDataTypeNone = 0,
-    
+
     MTLDataTypeStruct = 1,
     MTLDataTypeArray  = 2,
-    
+
     MTLDataTypeFloat  = 3,
     MTLDataTypeFloat2 = 4,
     MTLDataTypeFloat3 = 5,
     MTLDataTypeFloat4 = 6,
-    
+
     MTLDataTypeFloat2x2 = 7,
     MTLDataTypeFloat2x3 = 8,
     MTLDataTypeFloat2x4 = 9,
-    
+
     MTLDataTypeFloat3x2 = 10,
     MTLDataTypeFloat3x3 = 11,
     MTLDataTypeFloat3x4 = 12,
-    
+
     MTLDataTypeFloat4x2 = 13,
     MTLDataTypeFloat4x3 = 14,
     MTLDataTypeFloat4x4 = 15,
-    
+
     MTLDataTypeHalf  = 16,
     MTLDataTypeHalf2 = 17,
     MTLDataTypeHalf3 = 18,
     MTLDataTypeHalf4 = 19,
-    
+
     MTLDataTypeHalf2x2 = 20,
     MTLDataTypeHalf2x3 = 21,
     MTLDataTypeHalf2x4 = 22,
-    
+
     MTLDataTypeHalf3x2 = 23,
     MTLDataTypeHalf3x3 = 24,
     MTLDataTypeHalf3x4 = 25,
-    
+
     MTLDataTypeHalf4x2 = 26,
     MTLDataTypeHalf4x3 = 27,
     MTLDataTypeHalf4x4 = 28,
-    
+
     MTLDataTypeInt  = 29,
     MTLDataTypeInt2 = 30,
     MTLDataTypeInt3 = 31,
     MTLDataTypeInt4 = 32,
-    
+
     MTLDataTypeUInt  = 33,
     MTLDataTypeUInt2 = 34,
     MTLDataTypeUInt3 = 35,
     MTLDataTypeUInt4 = 36,
-    
+
     MTLDataTypeShort  = 37,
     MTLDataTypeShort2 = 38,
     MTLDataTypeShort3 = 39,
     MTLDataTypeShort4 = 40,
-    
+
     MTLDataTypeUShort = 41,
     MTLDataTypeUShort2 = 42,
     MTLDataTypeUShort3 = 43,
     MTLDataTypeUShort4 = 44,
-    
+
     MTLDataTypeChar  = 45,
     MTLDataTypeChar2 = 46,
     MTLDataTypeChar3 = 47,
     MTLDataTypeChar4 = 48,
-    
+
     MTLDataTypeUChar  = 49,
     MTLDataTypeUChar2 = 50,
     MTLDataTypeUChar3 = 51,
     MTLDataTypeUChar4 = 52,
-    
+
     MTLDataTypeBool  = 53,
     MTLDataTypeBool2 = 54,
     MTLDataTypeBool3 = 55,
     MTLDataTypeBool4 = 56,
 
-    
     MTLDataTypeTexture API_AVAILABLE(macos(10.13), ios(11.0)) = 58,
     MTLDataTypeSampler API_AVAILABLE(macos(10.13), ios(11.0)) = 59,
     MTLDataTypePointer API_AVAILABLE(macos(10.13), ios(11.0)) = 60,
 
-    MTLDataTypeR8Unorm         API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 62,
-    MTLDataTypeR8Snorm         API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 63,
-    MTLDataTypeR16Unorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 64,
-    MTLDataTypeR16Snorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 65,
-    MTLDataTypeRG8Unorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 66,
-    MTLDataTypeRG8Snorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 67,
-    MTLDataTypeRG16Unorm       API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 68,
-    MTLDataTypeRG16Snorm       API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 69,
-    MTLDataTypeRGBA8Unorm      API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 70,
-    MTLDataTypeRGBA8Unorm_sRGB API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 71,
-    MTLDataTypeRGBA8Snorm      API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 72,
-    MTLDataTypeRGBA16Unorm     API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 73,
-    MTLDataTypeRGBA16Snorm     API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 74,
-    MTLDataTypeRGB10A2Unorm    API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 75,
-    MTLDataTypeRG11B10Float    API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 76,
-    MTLDataTypeRGB9E5Float     API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos) = 77,
-    MTLDataTypeRenderPipeline  API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios) = 78,
+    MTLDataTypeR8Unorm         API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 62,
+    MTLDataTypeR8Snorm         API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 63,
+    MTLDataTypeR16Unorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 64,
+    MTLDataTypeR16Snorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 65,
+    MTLDataTypeRG8Unorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 66,
+    MTLDataTypeRG8Snorm        API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 67,
+    MTLDataTypeRG16Unorm       API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 68,
+    MTLDataTypeRG16Snorm       API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 69,
+    MTLDataTypeRGBA8Unorm      API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 70,
+    MTLDataTypeRGBA8Unorm_sRGB API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 71,
+    MTLDataTypeRGBA8Snorm      API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 72,
+    MTLDataTypeRGBA16Unorm     API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 73,
+    MTLDataTypeRGBA16Snorm     API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 74,
+    MTLDataTypeRGB10A2Unorm    API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 75,
+    MTLDataTypeRG11B10Float    API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 76,
+    MTLDataTypeRGB9E5Float     API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst) = 77,
+    MTLDataTypeRenderPipeline  API_AVAILABLE(macos(10.14), ios(13.0)) = 78,
+    MTLDataTypeComputePipeline API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos) = 79,
     MTLDataTypeIndirectCommandBuffer   API_AVAILABLE(macos(10.14), ios(12.0)) = 80,
 } API_AVAILABLE(macos(10.11), ios(8.0));
 
@@ -131,26 +131,24 @@ typedef NS_ENUM(NSUInteger, MTLDataType){
  This input is a sampler.
 */
 typedef NS_ENUM(NSUInteger, MTLArgumentType) {
-    
+
     MTLArgumentTypeBuffer = 0,
     MTLArgumentTypeThreadgroupMemory= 1,
     MTLArgumentTypeTexture = 2,
     MTLArgumentTypeSampler = 3,
 
-    MTLArgumentTypeImageblockData API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos)     = 16,
-    MTLArgumentTypeImageblock API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos)         = 17,
-
+    MTLArgumentTypeImageblockData API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst)     = 16,
+    MTLArgumentTypeImageblock API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos, macCatalyst)         = 17,
 } API_AVAILABLE(macos(10.11), ios(8.0));
 
 /*!
  @enum MTLArgumentAccess
 */
 typedef NS_ENUM(NSUInteger, MTLArgumentAccess) {
-    
+
     MTLArgumentAccessReadOnly   = 0,
     MTLArgumentAccessReadWrite  = 1,
     MTLArgumentAccessWriteOnly  = 2,
-    
 } API_AVAILABLE(macos(10.11), ios(8.0));
 
 @class MTLStructType;
@@ -229,7 +227,6 @@ MTL_EXPORT API_AVAILABLE(macos(10.13), ios(11.0))
 @property (readonly) MTLArgumentAccess access;    // read, write, read-write
 @property (readonly) BOOL isDepthTexture;         // true for depth textures
 
-
 @end
 
 /*!
@@ -243,7 +240,6 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @property (readonly) MTLArgumentAccess access;
 @property (readonly) NSUInteger index;
 
-
 @property (readonly, getter=isActive) BOOL active;
 
 // for buffer arguments
@@ -252,7 +248,6 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @property (readonly) MTLDataType     bufferDataType; 		// MTLDataTypeFloat, MTLDataTypeFloat4, MTLDataTypeStruct, ...
 @property (readonly, nullable) MTLStructType  *bufferStructType;
 @property (readonly, nullable) MTLPointerType *bufferPointerType API_AVAILABLE(macos(10.13), ios(11.0));
-
 
 // for threadgroup memory arguments
 @property (readonly) NSUInteger     threadgroupMemoryAlignment;

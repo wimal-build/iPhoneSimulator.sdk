@@ -7,12 +7,18 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <AVFoundation/AVCaptureDevice.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(11.3))
 NS_SWIFT_NAME(ARConfiguration.VideoFormat)
 @interface ARVideoFormat : NSObject <NSCopying>
+
+/**
+ Indicates the physical position of an AVCaptureDevice's hardware on the system.
+ */
+@property (nonatomic, readonly) AVCaptureDevicePosition captureDevicePosition API_AVAILABLE(ios(13.0));
 
 /**
  Image resolution.

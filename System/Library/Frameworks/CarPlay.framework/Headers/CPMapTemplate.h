@@ -59,7 +59,7 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @property (nonatomic, strong) UIColor *guidanceBackgroundColor;
 
 /**
- The style used to display trip estimates during active navigation. Default is CPTripEstimateStyleDark.
+ The style used to display trip estimates during active navigation. If not set, will update automatically with changes to UIUserInterfaceStyle.
  */
 @property (nonatomic, assign) CPTripEstimateStyle tripEstimateStyle;
 
@@ -168,7 +168,7 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
  in the completion block indicates whether any visible alert was dismissed (YES) or
  if no action was taken because there was no alert to dismiss (NO).
  */
-- (void)dismissNavigationAlertAnimated:(BOOL)animated completion:(void (^)(BOOL))completion;
+- (void)dismissNavigationAlertAnimated:(BOOL)animated completion:(void (^)(BOOL dismissed))completion;
 
 @end
 

@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, CMMotionActivityConfidence) {
  *    Note in this case all of the properties are NO.
  *
  */
-NS_CLASS_AVAILABLE(NA, 7_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macos)
 @interface CMMotionActivity : CMLogItem
 
 /*
@@ -115,7 +115,7 @@ NS_CLASS_AVAILABLE(NA, 7_0) API_UNAVAILABLE(tvos)
  *  Discussion:
  *    True if the device is on a bicycle.
  */
-@property(readonly, nonatomic) BOOL cycling NS_AVAILABLE(NA, 8_0);
+@property(readonly, nonatomic) BOOL cycling COREMOTION_EXPORT API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos);
 
 @end
 

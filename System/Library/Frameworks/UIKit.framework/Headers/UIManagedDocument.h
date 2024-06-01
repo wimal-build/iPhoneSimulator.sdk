@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIManagedDocument.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIManagedDocument.h>)
 //
 //  UIManagedDocument.h
 //  UIKit
@@ -8,6 +8,7 @@
 //
 
 #import <UIKit/UIDocument.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,15 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @class NSManagedObjectContext;
 @class NSPersistentStoreCoordinator;
 
-NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIManagedDocument : UIDocument
+UIKIT_EXTERN API_AVAILABLE(ios(5.0)) API_UNAVAILABLE(tvos) @interface UIManagedDocument : UIDocument
 
 /* The name for the persistent store file inside the document's file wrapper.  When working with the Core Data APIs, this path component is appended to the document URL provided by the UIDocument APIs.  The default name is @"documentpersistentstore.db"
  */
-#if UIKIT_DEFINE_AS_PROPERTIES
 @property(class, nonatomic, readonly) NSString *persistentStoreName;
-#else
-+ (NSString *)persistentStoreName;
-#endif
 
 /* Persistent documents always have a managed object context and a persistent store coordinator through that context.  The managed object context is required to be initialized with the concurrency type NSMainQueueConcurrencyType and it must have a parent context initialized with the concurrency type NSPrivateQueueConcurrencyType.
  */

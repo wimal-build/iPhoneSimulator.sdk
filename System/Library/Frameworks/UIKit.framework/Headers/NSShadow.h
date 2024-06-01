@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSShadow.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/NSShadow.h>)
 //
 //  NSShadow.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKitDefines.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,10 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
  To set a shadow on an NSAttributedString use it as a value for NSShadowAttributeName.
  */
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface NSShadow : NSObject <NSCopying, NSSecureCoding>
+UIKIT_EXTERN API_AVAILABLE(ios(6.0)) @interface NSShadow : NSObject <NSCopying, NSSecureCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, assign) CGSize shadowOffset;      // offset in user space of the shadow from the original drawing
 @property (nonatomic, assign) CGFloat shadowBlurRadius; // blur radius of the shadow in default user space units

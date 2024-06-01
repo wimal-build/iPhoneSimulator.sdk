@@ -178,8 +178,8 @@ MK_EXTERN MKMapRect MKMapRectRemainder(MKMapRect rect) NS_AVAILABLE(10_9, 4_0) _
 + (NSValue *)valueWithMKCoordinate:(CLLocationCoordinate2D)coordinate __TVOS_AVAILABLE(9_2);
 + (NSValue *)valueWithMKCoordinateSpan:(MKCoordinateSpan)span __TVOS_AVAILABLE(9_2);
 
-@property (readonly) CLLocationCoordinate2D MKCoordinateValue __TVOS_AVAILABLE(9_2);
-@property (readonly) MKCoordinateSpan MKCoordinateSpanValue __TVOS_AVAILABLE(9_2);
+@property (atomic, readonly) CLLocationCoordinate2D MKCoordinateValue __TVOS_AVAILABLE(9_2);
+@property (atomic, readonly) MKCoordinateSpan MKCoordinateSpanValue __TVOS_AVAILABLE(9_2);
 
 @end
 

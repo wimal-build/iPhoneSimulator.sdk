@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollectionViewCell.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UICollectionViewCell.h>)
 //
 //  UICollectionViewCell.h
 //  UIKit
@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, UICollectionViewCellDragState) {
     UICollectionViewCellDragStateDragging
 } API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos);
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionReusableView : UIView
+UIKIT_EXTERN API_AVAILABLE(ios(6.0)) @interface UICollectionReusableView : UIView
 
 @property (nonatomic, readonly, copy, nullable) NSString *reuseIdentifier;
 
@@ -49,11 +49,11 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionReusableView : UIView
 - (void)willTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout;
 - (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout;
 
-- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes NS_AVAILABLE_IOS(8_0);
+- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes API_AVAILABLE(ios(8.0));
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewCell : UICollectionReusableView
+UIKIT_EXTERN API_AVAILABLE(ios(6.0)) @interface UICollectionViewCell : UICollectionReusableView
 
 @property (nonatomic, readonly) UIView *contentView; // add custom subviews to the cell's contentView
 

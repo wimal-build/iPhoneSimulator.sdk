@@ -1,6 +1,8 @@
 #ifndef AL_ALC_H
 #define AL_ALC_H
 
+#include <os/availability.h>
+
 #if defined(__cplusplus)
 extern "C" {
 #endif
@@ -179,38 +181,42 @@ typedef void ALCvoid;
 #define ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER     0x311
 #define ALC_CAPTURE_SAMPLES                      0x312
 
+#ifndef OPENAL_DEPRECATED
+#define OPENAL_DEPRECATED API_DEPRECATED("OpenAL is deprecated", macos(10.4, 10.15), ios(2.0, 13.0))
+#endif // OPENAL_DEPRECATED
 
+    
 /*
  * Context Management
  */
-ALC_API ALCcontext *    ALC_APIENTRY alcCreateContext( ALCdevice *device, const ALCint* attrlist );
+ALC_API ALCcontext *    ALC_APIENTRY alcCreateContext( ALCdevice *device, const ALCint* attrlist ) OPENAL_DEPRECATED;
 
-ALC_API ALCboolean      ALC_APIENTRY alcMakeContextCurrent( ALCcontext *context );
+ALC_API ALCboolean      ALC_APIENTRY alcMakeContextCurrent( ALCcontext *context ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcProcessContext( ALCcontext *context );
+ALC_API void            ALC_APIENTRY alcProcessContext( ALCcontext *context ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcSuspendContext( ALCcontext *context );
+ALC_API void            ALC_APIENTRY alcSuspendContext( ALCcontext *context ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcDestroyContext( ALCcontext *context );
+ALC_API void            ALC_APIENTRY alcDestroyContext( ALCcontext *context ) OPENAL_DEPRECATED;
 
-ALC_API ALCcontext *    ALC_APIENTRY alcGetCurrentContext( void );
+ALC_API ALCcontext *    ALC_APIENTRY alcGetCurrentContext( void ) OPENAL_DEPRECATED;
 
-ALC_API ALCdevice*      ALC_APIENTRY alcGetContextsDevice( ALCcontext *context );
+ALC_API ALCdevice*      ALC_APIENTRY alcGetContextsDevice( ALCcontext *context ) OPENAL_DEPRECATED;
 
 
 /*
  * Device Management
  */
-ALC_API ALCdevice *     ALC_APIENTRY alcOpenDevice( const ALCchar *devicename );
+ALC_API ALCdevice *     ALC_APIENTRY alcOpenDevice( const ALCchar *devicename ) OPENAL_DEPRECATED;
 
-ALC_API ALCboolean      ALC_APIENTRY alcCloseDevice( ALCdevice *device );
+ALC_API ALCboolean      ALC_APIENTRY alcCloseDevice( ALCdevice *device ) OPENAL_DEPRECATED;
 
 
 /*
  * Error support.
  * Obtain the most recent Context error
  */
-ALC_API ALCenum         ALC_APIENTRY alcGetError( ALCdevice *device );
+ALC_API ALCenum         ALC_APIENTRY alcGetError( ALCdevice *device ) OPENAL_DEPRECATED;
 
 
 /* 
@@ -218,33 +224,33 @@ ALC_API ALCenum         ALC_APIENTRY alcGetError( ALCdevice *device );
  * Query for the presence of an extension, and obtain any appropriate
  * function pointers and enum values.
  */
-ALC_API ALCboolean      ALC_APIENTRY alcIsExtensionPresent( ALCdevice *device, const ALCchar *extname );
+ALC_API ALCboolean      ALC_APIENTRY alcIsExtensionPresent( ALCdevice *device, const ALCchar *extname ) OPENAL_DEPRECATED;
 
-ALC_API void  *         ALC_APIENTRY alcGetProcAddress( ALCdevice *device, const ALCchar *funcname );
+ALC_API void  *         ALC_APIENTRY alcGetProcAddress( ALCdevice *device, const ALCchar *funcname ) OPENAL_DEPRECATED;
 
-ALC_API ALCenum         ALC_APIENTRY alcGetEnumValue( ALCdevice *device, const ALCchar *enumname );
+ALC_API ALCenum         ALC_APIENTRY alcGetEnumValue( ALCdevice *device, const ALCchar *enumname ) OPENAL_DEPRECATED;
 
 
 /*
  * Query functions
  */
-ALC_API const ALCchar * ALC_APIENTRY alcGetString( ALCdevice *device, ALCenum param );
+ALC_API const ALCchar * ALC_APIENTRY alcGetString( ALCdevice *device, ALCenum param ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcGetIntegerv( ALCdevice *device, ALCenum param, ALCsizei size, ALCint *data );
+ALC_API void            ALC_APIENTRY alcGetIntegerv( ALCdevice *device, ALCenum param, ALCsizei size, ALCint *data ) OPENAL_DEPRECATED;
 
 
 /*
  * Capture functions
  */
-ALC_API ALCdevice*      ALC_APIENTRY alcCaptureOpenDevice( const ALCchar *devicename, ALCuint frequency, ALCenum format, ALCsizei buffersize );
+ALC_API ALCdevice*      ALC_APIENTRY alcCaptureOpenDevice( const ALCchar *devicename, ALCuint frequency, ALCenum format, ALCsizei buffersize ) OPENAL_DEPRECATED;
 
-ALC_API ALCboolean      ALC_APIENTRY alcCaptureCloseDevice( ALCdevice *device );
+ALC_API ALCboolean      ALC_APIENTRY alcCaptureCloseDevice( ALCdevice *device ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcCaptureStart( ALCdevice *device );
+ALC_API void            ALC_APIENTRY alcCaptureStart( ALCdevice *device ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcCaptureStop( ALCdevice *device );
+ALC_API void            ALC_APIENTRY alcCaptureStop( ALCdevice *device ) OPENAL_DEPRECATED;
 
-ALC_API void            ALC_APIENTRY alcCaptureSamples( ALCdevice *device, ALCvoid *buffer, ALCsizei samples );
+ALC_API void            ALC_APIENTRY alcCaptureSamples( ALCdevice *device, ALCvoid *buffer, ALCsizei samples ) OPENAL_DEPRECATED;
 
 /*
  * Pointer-to-function types, useful for dynamically getting ALC entry points.

@@ -11,8 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString * CATextLayerTruncationMode NS_STRING_ENUM;
-typedef NSString * CATextLayerAlignmentMode NS_STRING_ENUM;
+typedef NSString * CATextLayerTruncationMode NS_TYPED_ENUM;
+typedef NSString * CATextLayerAlignmentMode NS_TYPED_ENUM;
 
 API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0))
 @interface CATextLayer : CALayer
@@ -26,9 +26,10 @@ API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0))
 
 @property(nullable, copy) id string;
 
-/* The font to use, currently may be either a CTFontRef, a CGFontRef,
- * or a string naming the font. Defaults to the Helvetica font. Only
- * used when the `string' property is not an NSAttributedString. */
+/* The font to use, currently may be either a CTFontRef (toll-free
+ * bridged from UIFont), a CGFontRef, or a string naming the font.
+ * Defaults to the Helvetica font. Only used when the `string' property
+ * is not an NSAttributedString. */
 
 @property(nullable) CFTypeRef font;
 

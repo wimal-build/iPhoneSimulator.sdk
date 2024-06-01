@@ -1,12 +1,13 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDragInteraction.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIDragInteraction.h>)
 //
 //  UIDragInteraction.h
 //  UIKit
 //
-//  Copyright © 2017-2018 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIDropInteraction.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIInteraction.h>
 #import <UIKit/UIViewAnimating.h>
 

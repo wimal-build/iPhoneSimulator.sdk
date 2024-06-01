@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Discussion:
  *    Typedef of block to be invoked when the device's altitude is updated.
  */
-typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSError * __nullable error) NS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos);
+typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSError * __nullable error) API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos);
 
 /*
  *  CMAltimeter
@@ -27,7 +27,7 @@ typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSEr
  *  Discussion:
  *		CMAltimeter provides information about the altitude of the device.
  */
-NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
+COREMOTION_EXPORT API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos)
 @interface CMAltimeter : NSObject
 
 /*
@@ -44,7 +44,7 @@ NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
  *  Discussion:
  *		Returns the current authorization status for altimeter.
  */
-+ (CMAuthorizationStatus)authorizationStatus NS_AVAILABLE(NA, 11_0) __WATCHOS_AVAILABLE(4_0);
++ (CMAuthorizationStatus)authorizationStatus API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macos);
 
 /*
  *  startRelativeAltitudeUpdatesToQueue:withHandler:

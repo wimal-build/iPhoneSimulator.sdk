@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDocumentPickerExtensionViewController.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIDocumentPickerExtensionViewController.h>)
 //
 //  UIDocumentPickerExtensionViewController.h
 //  UIKit
@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewController.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDocumentPickerViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE_IOS(8_0)  __TVOS_PROHIBITED @interface UIDocumentPickerExtensionViewController : UIViewController
+UIKIT_EXTERN API_AVAILABLE(ios(8.0))  API_UNAVAILABLE(tvos) @interface UIDocumentPickerExtensionViewController : UIViewController
 
 // The preconditions for the URL passed to dismissGrantingAccessToURL: vary depending on the document picker mode.
 // In Import mode, any URL that the extension has access to is valid.

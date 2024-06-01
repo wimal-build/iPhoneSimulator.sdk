@@ -62,10 +62,10 @@ SK_EXPORT @interface SKEffectNode : SKNode <SKWarpable>
  Optional dictionary of SKAttributeValues
  Attributes can be used with custom SKShaders.
  */
-@property (nonatomic, nonnull, copy) NSDictionary<NSString *, SKAttributeValue *> *attributeValues NS_AVAILABLE(10_12, 10_0);
+@property (nonatomic, nonnull, copy) NSDictionary<NSString *, SKAttributeValue *> *attributeValues API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
-- (nullable SKAttributeValue*)valueForAttributeNamed:(nonnull NSString *)key NS_AVAILABLE(10_12, 10_0);
-- (void)setValue:(SKAttributeValue*)value forAttributeNamed:(nonnull NSString *)key NS_SWIFT_NAME(setValue(_:forAttribute:)) NS_AVAILABLE(10_12, 10_0);
+- (nullable SKAttributeValue*)valueForAttributeNamed:(nonnull NSString *)key API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
+- (void)setValue:(SKAttributeValue*)value forAttributeNamed:(nonnull NSString *)key NS_SWIFT_NAME(setValue(_:forAttribute:)) API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 @end
 

@@ -122,7 +122,6 @@ GK_BASE_AVAILABILITY_2 @interface GKNoiseMap : NSObject
  * @param position Sample index of the extracted 2D plane at which to set the value.  Valid range
  * is from 0 to sampleCount-1, inclusive.
  *
- * @return The noise map value at the specified sample index.
  */
 - (void)setValue:(float)value atPosition:(vector_int2)position;
 

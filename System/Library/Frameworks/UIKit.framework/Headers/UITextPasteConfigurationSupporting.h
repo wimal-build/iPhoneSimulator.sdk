@@ -1,13 +1,14 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextPasteConfigurationSupporting.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UITextPasteConfigurationSupporting.h>)
 //
 //  UITextPasteConfigurationSupporting.h
 //  UIKit 
 //
-//  Copyright © 2017-2018 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIPasteConfigurationSupporting.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIPasteConfiguration.h>
 #import <UIKit/UITextPasteDelegate.h>
 

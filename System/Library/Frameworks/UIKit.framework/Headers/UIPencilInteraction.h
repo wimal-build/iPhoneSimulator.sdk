@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPencilInteraction.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPencilInteraction.h>)
 //
 //  UIPencilInteraction.h
 //  UIKit
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIInteraction.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -55,7 +56,6 @@ API_AVAILABLE(ios(12.1)) API_UNAVAILABLE(watchos, tvos) @protocol UIPencilIntera
 @end
 
 NS_ASSUME_NONNULL_END
-
 
 #else
 #import <UIKitCore/UIPencilInteraction.h>

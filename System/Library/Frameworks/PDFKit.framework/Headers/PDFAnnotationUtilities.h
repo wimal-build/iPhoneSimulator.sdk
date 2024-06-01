@@ -1,6 +1,6 @@
 //
 //  PDFAnnotationUtilities.h
-//  Copyright © 2016 Apple. All rights reserved.
+//  Copyright © 2019 Apple. All rights reserved.
 //
 //  This file includes several helper functions that match legacy PDFAnnotation
 //  subclass functions, helping simplify creating properties for common annotations.
@@ -211,7 +211,7 @@ PDFKIT_EXTERN PDFAnnotationHighlightingMode PDFAnnotationHighlightingModePush PD
 @property (nonatomic) BOOL radiosInUnison;
 
 // Determines if a text field should be editable or not.
-// Used by annotations type(s): /Widget (field type(s): /Tx).
+// Used by annotations type(s): /Widget (field type(s): /Btn, /Ch, /Tx).
 @property (nonatomic, getter=isReadOnly) BOOL readOnly;
 
 // There are two flavors of Choice widget annotations, lists and pop-up menus. This method allow you to differentiate.

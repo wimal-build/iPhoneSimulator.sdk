@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPress.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIPress.h>)
 //
 //  UIPress.h
 //  UIKit
@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UITouch.h>
+#import <UIKit/UIKitDefines.h>
 
 @class UIGestureRecognizer;
 @class UIResponder;
 @class UIWindow;
 
-NS_ENUM_AVAILABLE_IOS(9_0) typedef NS_ENUM(NSInteger, UIPressPhase) {
+API_AVAILABLE(ios(9.0)) typedef NS_ENUM(NSInteger, UIPressPhase) {
     UIPressPhaseBegan,         // whenever a button press begins.
     UIPressPhaseChanged,       // whenever a button moves.
     UIPressPhaseStationary,    // whenever a buttons was pressed and is still being held down.
@@ -21,7 +22,7 @@ NS_ENUM_AVAILABLE_IOS(9_0) typedef NS_ENUM(NSInteger, UIPressPhase) {
     UIPressPhaseCancelled,     // whenever a button press doesn't end but we need to stop tracking.
 };
 
-NS_ENUM_AVAILABLE_IOS(9_0) typedef NS_ENUM(NSInteger, UIPressType) {
+API_AVAILABLE(ios(9.0)) typedef NS_ENUM(NSInteger, UIPressType) {
     UIPressTypeUpArrow,
     UIPressTypeDownArrow,
     UIPressTypeLeftArrow,
@@ -32,7 +33,7 @@ NS_ENUM_AVAILABLE_IOS(9_0) typedef NS_ENUM(NSInteger, UIPressType) {
     UIPressTypePlayPause,
 };
 
-NS_CLASS_AVAILABLE_IOS(9_0) @interface UIPress : NSObject
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) @interface UIPress : NSObject
 
 @property(nonatomic,readonly) NSTimeInterval   timestamp;
 @property(nonatomic,readonly) UIPressPhase     phase;

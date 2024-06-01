@@ -19,6 +19,6 @@ typedef NS_ENUM(NSInteger, ILMessageFilterAction) {
 
     /// Prevent the message from being shown normally.
     ILMessageFilterActionFilter = 2,
-} API_AVAILABLE(ios(11.0));
+} API_AVAILABLE(ios(11.0), macCatalyst(13.0)) API_UNAVAILABLE( tvos) API_UNAVAILABLE(macos, watchos);
 
 NS_ASSUME_NONNULL_END

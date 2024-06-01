@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIWebView.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIWebView.h>)
 //
 //  UIWebView.h
 //  UIKit
@@ -10,7 +10,6 @@
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDataDetectors.h>
 #import <UIKit/UIScrollView.h>
-#import <Availability.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,7 +42,7 @@ UIKIT_EXTERN API_DEPRECATED("No longer supported; please adopt WKWebView.", ios(
 
 @property (nullable, nonatomic, assign) id <UIWebViewDelegate> delegate;
 
-@property (nonatomic, readonly, strong) UIScrollView *scrollView NS_AVAILABLE_IOS(5_0);
+@property (nonatomic, readonly, strong) UIScrollView *scrollView API_AVAILABLE(ios(5.0));
 
 - (void)loadRequest:(NSURLRequest *)request;
 - (void)loadHTMLString:(NSString *)string baseURL:(nullable NSURL *)baseURL;
@@ -65,27 +64,27 @@ UIKIT_EXTERN API_DEPRECATED("No longer supported; please adopt WKWebView.", ios(
 
 @property (nonatomic) BOOL scalesPageToFit;
 
-@property (nonatomic) BOOL detectsPhoneNumbers NS_DEPRECATED_IOS(2_0, 3_0);
-@property (nonatomic) UIDataDetectorTypes dataDetectorTypes NS_AVAILABLE_IOS(3_0);
+@property (nonatomic) BOOL detectsPhoneNumbers API_DEPRECATED("", ios(2.0, 3.0));
+@property (nonatomic) UIDataDetectorTypes dataDetectorTypes API_AVAILABLE(ios(3.0));
 
-@property (nonatomic) BOOL allowsInlineMediaPlayback NS_AVAILABLE_IOS(4_0); // iPhone Safari defaults to NO. iPad Safari defaults to YES
-@property (nonatomic) BOOL mediaPlaybackRequiresUserAction NS_AVAILABLE_IOS(4_0); // iPhone and iPad Safari both default to YES
+@property (nonatomic) BOOL allowsInlineMediaPlayback API_AVAILABLE(ios(4.0)); // iPhone Safari defaults to NO. iPad Safari defaults to YES
+@property (nonatomic) BOOL mediaPlaybackRequiresUserAction API_AVAILABLE(ios(4.0)); // iPhone and iPad Safari both default to YES
 
-@property (nonatomic) BOOL mediaPlaybackAllowsAirPlay NS_AVAILABLE_IOS(5_0); // iPhone and iPad Safari both default to YES
+@property (nonatomic) BOOL mediaPlaybackAllowsAirPlay API_AVAILABLE(ios(5.0)); // iPhone and iPad Safari both default to YES
 
-@property (nonatomic) BOOL suppressesIncrementalRendering NS_AVAILABLE_IOS(6_0); // iPhone and iPad Safari both default to NO
+@property (nonatomic) BOOL suppressesIncrementalRendering API_AVAILABLE(ios(6.0)); // iPhone and iPad Safari both default to NO
 
-@property (nonatomic) BOOL keyboardDisplayRequiresUserAction NS_AVAILABLE_IOS(6_0); // default is YES
+@property (nonatomic) BOOL keyboardDisplayRequiresUserAction API_AVAILABLE(ios(6.0)); // default is YES
 
-@property (nonatomic) UIWebPaginationMode paginationMode NS_AVAILABLE_IOS(7_0);
-@property (nonatomic) UIWebPaginationBreakingMode paginationBreakingMode NS_AVAILABLE_IOS(7_0);
-@property (nonatomic) CGFloat pageLength NS_AVAILABLE_IOS(7_0);
-@property (nonatomic) CGFloat gapBetweenPages NS_AVAILABLE_IOS(7_0);
-@property (nonatomic, readonly) NSUInteger pageCount NS_AVAILABLE_IOS(7_0);
+@property (nonatomic) UIWebPaginationMode paginationMode API_AVAILABLE(ios(7.0));
+@property (nonatomic) UIWebPaginationBreakingMode paginationBreakingMode API_AVAILABLE(ios(7.0));
+@property (nonatomic) CGFloat pageLength API_AVAILABLE(ios(7.0));
+@property (nonatomic) CGFloat gapBetweenPages API_AVAILABLE(ios(7.0));
+@property (nonatomic, readonly) NSUInteger pageCount API_AVAILABLE(ios(7.0));
 
-@property (nonatomic) BOOL allowsPictureInPictureMediaPlayback NS_AVAILABLE_IOS(9_0);
+@property (nonatomic) BOOL allowsPictureInPictureMediaPlayback API_AVAILABLE(ios(9.0));
 
-@property (nonatomic) BOOL allowsLinkPreview NS_AVAILABLE_IOS(9_0); // default is NO
+@property (nonatomic) BOOL allowsLinkPreview API_AVAILABLE(ios(9.0)); // default is NO
 @end
 
 API_UNAVAILABLE(tvos) @protocol UIWebViewDelegate <NSObject>

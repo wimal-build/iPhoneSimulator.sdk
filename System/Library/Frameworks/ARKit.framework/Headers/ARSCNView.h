@@ -8,6 +8,7 @@
 #import <SceneKit/SceneKit.h>
 #import <ARKit/ARSession.h>
 #import <ARKit/ARHitTestResult.h>
+#import <ARKit/ARTrackedRaycast.h>
 
 @protocol ARSCNViewDelegate;
 
@@ -20,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  manages nodes for anchors, and updates lighting.
  */
 API_AVAILABLE(ios(11.0))
-@interface ARSCNView : SCNView
+@interface ARSCNView : SCNView<ARSessionProviding>
 
 /**
  Specifies the renderer delegate.
@@ -44,6 +45,23 @@ API_AVAILABLE(ios(11.0))
  light estimates the session provides. Defaults to YES.
  */
 @property (nonatomic, assign) BOOL automaticallyUpdatesLighting;
+
+/**
+ Determines whether view renders camera grain.
+ 
+ @discussion When set, the view will automatically add camera grain to rendered
+ content that matches the grainy noise of the camera stream. Enabled by default.
+ */
+@property (nonatomic, assign) BOOL rendersCameraGrain API_AVAILABLE(ios(13.0));
+
+/**
+ Determines whether view renders motion blur.
+ 
+ @discussion When set, the view will automatically add motion blur to rendered
+ content that matches the motion blur of the camera stream.
+ Overwrites SCNCamera's motionBlurIntensity property. Disabled by default.
+ */
+@property (nonatomic, assign) BOOL rendersMotionBlur API_AVAILABLE(ios(13.0));
 
 /**
  Searches the scene hierarchy for an anchor associated with the provided node.
@@ -79,6 +97,15 @@ API_AVAILABLE(ios(11.0))
  @return 3D position in world coordinates or a NAN values if unprojection is not possible.
  */
 - (simd_float3)unprojectPoint:(CGPoint)point ontoPlaneWithTransform:(simd_float4x4)planeTransform API_AVAILABLE(ios(12.0)) NS_REFINED_FOR_SWIFT;
+
+/**
+ Creates a raycast query originating from the point on view, aligned along the center of the field of view of the camera.
+ @discussion A 2D point in the view's coordinate space and the frame camera's field of view is used to create a ray in the 3D cooridnate space originating at the point.
+ @param point A point in the view’s coordinate system.
+ @param target Type of target where the ray should terminate.
+ @param alignment Alignment of the target.
+ */
+- (nullable ARRaycastQuery *)raycastQueryFromPoint:(CGPoint)point allowingTarget:(ARRaycastTarget)target alignment:(ARRaycastTargetAlignment)alignment API_AVAILABLE(ios(13.0));
 
 @end
 

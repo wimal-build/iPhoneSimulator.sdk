@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, WCSessionActivationState) {
 	WCSessionActivationStateActivated     = 2,
 } __IOS_AVAILABLE(9.3) __WATCHOS_AVAILABLE(2.2);
 
-/** -------------------------------- WCSession ----------------------------------
+/** -------------------------------- WCSession --------------------------------
  *  The default session is used to communicate between two counterpart apps
  *  (i.e. iOS app and its native WatchKit extension). The session provides
  *  methods for sending, receiving, and tracking state.
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, WCSessionActivationState) {
  *  activate. This will allow the system to populate the state properties and
  *  deliver any outstanding background transfers.
  */
-NS_CLASS_AVAILABLE_IOS(9.0)
+API_AVAILABLE(ios(9.0), macCatalyst(13.0), watchos(2.0)) API_UNAVAILABLE(macos, tvos)
 @interface WCSession : NSObject
 
 /** Check if session is supported on this iOS device. Session is always available on WatchOS */
@@ -72,7 +72,12 @@ NS_CLASS_AVAILABLE_IOS(9.0)
 /** Use this directory to persist any data specific to the selected Watch. The location of the URL will change when the selected Watch changes. This directory will be deleted upon next launch if the watch app is uninstalled for the selected Watch, or that Watch is unpaired. If the watch app is not installed for the selected Watch the value will be nil. */
 @property (nonatomic, readonly, nullable) NSURL *watchDirectoryURL __WATCHOS_UNAVAILABLE;
 
+/** ------------------------- Watch App State ---------------------------
+ *  State specific to the Watch app.
+ */
 
+/** Check if the companion app is installed on the paired iPhone. This only applies to Watch apps that can run independently. */
+@property (nonatomic, readonly, getter=isCompanionAppInstalled) BOOL companionAppInstalled __IOS_UNAVAILABLE __WATCHOS_AVAILABLE(6.0);
 
 /** -------------------------- Interactive Messaging ---------------------------
  *  Interactive messages can only be sent between two actively running apps.
@@ -150,6 +155,9 @@ NS_CLASS_AVAILABLE_IOS(9.0)
 
 /** Called when any of the Watch state properties change. */
 - (void)sessionWatchStateDidChange:(WCSession *)session __WATCHOS_UNAVAILABLE;
+
+/** Called when the installed state of the Companion app changes. */
+- (void)sessionCompanionAppInstalledDidChange:(WCSession *)session __IOS_UNAVAILABLE __WATCHOS_AVAILABLE(6.0);
 
 /** ------------------------- Interactive Messaging ------------------------- */
 

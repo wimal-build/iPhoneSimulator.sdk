@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, MKMapType) {
     MKMapTypeSatelliteFlyover NS_ENUM_AVAILABLE(10_11, 9_0),
     MKMapTypeHybridFlyover NS_ENUM_AVAILABLE(10_11, 9_0),
     MKMapTypeMutedStandard NS_ENUM_AVAILABLE(10_13, 11_0) __TVOS_AVAILABLE(11_0),
-} NS_ENUM_AVAILABLE(10_9, 3_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED;
+} NS_ENUM_AVAILABLE(10_9, 3_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos);
 
 MK_EXTERN NSString *MKErrorDomain __TVOS_AVAILABLE(9_2);
 
@@ -25,13 +25,14 @@ typedef NS_ENUM(NSUInteger, MKErrorCode) {
     MKErrorServerFailure,
     MKErrorLoadingThrottled,
     MKErrorPlacemarkNotFound,
-    MKErrorDirectionsNotFound NS_ENUM_AVAILABLE(10_9, 7_0)
-} NS_ENUM_AVAILABLE(10_9, 3_0) __TVOS_AVAILABLE(9_2) __WATCHOS_PROHIBITED;
+    MKErrorDirectionsNotFound NS_ENUM_AVAILABLE(10_9, 7_0),
+    MKErrorDecodingFailed API_AVAILABLE(ios(13.0), tvos(13.0), macos(10.15)) API_UNAVAILABLE(watchos),
+} NS_ENUM_AVAILABLE(10_9, 3_0) __TVOS_AVAILABLE(9_2) API_UNAVAILABLE(watchos);
 
 typedef NS_ENUM(NSInteger, MKFeatureVisibility) {
     MKFeatureVisibilityAdaptive,
     MKFeatureVisibilityHidden,
     MKFeatureVisibilityVisible
-} NS_AVAILABLE_IOS(11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED;
+} API_AVAILABLE(ios(11.0), tvos(11.0)) API_UNAVAILABLE(macos, watchos);
 
 NS_ASSUME_NONNULL_END

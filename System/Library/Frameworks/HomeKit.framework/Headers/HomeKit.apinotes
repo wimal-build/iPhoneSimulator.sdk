@@ -62,6 +62,19 @@ Classes:
   - Selector: 'initWithName:fireDate:timeZone:recurrences:'
     SwiftName: 'init(name:fireDate:timeZone:recurrences:)'
     MethodKind: Instance
+- Name: HMHomeManagerDelegate
+  Methods:
+  - Selector: 'homeManager:didReceiveAddAccessoryRequest:'
+    SwiftName: 'homeManager(_:didReceiveAddAccessoryRequest:)'
+    MethodKind: Instance
+- Name: HMAddAccessoryRequest
+  Methods:
+  - Selector: 'payloadWithOwnershipToken:'
+    SwiftName: 'makePayload(ownershipToken:)'
+    MethodKind: Instance
+  - Selector: 'payloadWithURL:ownershipToken:'
+    SwiftName: 'makePayload(url:ownershipToken:)'
+    MethodKind: Instance
 Tags:
 - Name: HMErrorCode
   NSErrorDomain: HMErrorDomain

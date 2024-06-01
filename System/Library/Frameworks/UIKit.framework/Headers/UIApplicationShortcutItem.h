@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIApplicationShortcutItem.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIApplicationShortcutItem.h>)
 //
 //  UIApplicationShortcutItem.h
 //  UIKit
@@ -21,31 +21,31 @@ typedef NS_ENUM(NSInteger, UIApplicationShortcutIconType) {
     UIApplicationShortcutIconTypeLocation,
     UIApplicationShortcutIconTypeSearch,
     UIApplicationShortcutIconTypeShare,
-    UIApplicationShortcutIconTypeProhibit       NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeContact        NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeHome           NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeMarkLocation   NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeFavorite       NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeLove           NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeCloud          NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeInvitation     NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeConfirmation   NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeMail           NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeMessage        NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeDate           NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeTime           NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeCapturePhoto   NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeCaptureVideo   NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeTask           NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeTaskCompleted  NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeAlarm          NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeBookmark       NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeShuffle        NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeAudio          NS_ENUM_AVAILABLE_IOS(9_1),
-    UIApplicationShortcutIconTypeUpdate         NS_ENUM_AVAILABLE_IOS(9_1)
-} API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos);
+    UIApplicationShortcutIconTypeProhibit       API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeContact        API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeHome           API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeMarkLocation   API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeFavorite       API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeLove           API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeCloud          API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeInvitation     API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeConfirmation   API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeMail           API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeMessage        API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeDate           API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeTime           API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeCapturePhoto   API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeCaptureVideo   API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeTask           API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeTaskCompleted  API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeAlarm          API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeBookmark       API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeShuffle        API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeAudio          API_AVAILABLE(ios(9.1)),
+    UIApplicationShortcutIconTypeUpdate         API_AVAILABLE(ios(9.1))
+} API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos);
 
-UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos)
 @interface UIApplicationShortcutIcon : NSObject <NSCopying>
 
 // Create an icon using a system-defined image.
@@ -56,9 +56,13 @@ UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos
 // and will be masked to conform to the system-defined icon style.
 + (instancetype)iconWithTemplateImageName:(NSString *)templateImageName;
 
+// Create an icon using a system image.
+// You can use any of the names here that are usable with -systemImageNamed:.
++ (instancetype)iconWithSystemImageName:(NSString *)systemImageName;
+
 @end
 
-UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos)
 @interface UIApplicationShortcutItem : NSObject <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -77,9 +81,12 @@ UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos
 // Will throw an exception if the NSDictionary is not plist-encodable.
 @property (nullable, nonatomic, copy, readonly) NSDictionary<NSString *, id <NSSecureCoding>> *userInfo;
 
+// used with UISceneActivationConditions to customize what scene should be activated for a shortcut
+@property (nullable, nonatomic, copy, readonly) id targetContentIdentifier;
+
 @end
 
-UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos)
 @interface UIMutableApplicationShortcutItem : UIApplicationShortcutItem
 
 // An application-specific string that identifies the type of action to perform.
@@ -93,6 +100,9 @@ UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos
 // Application-specific information needed to perform the action.
 // Will throw an exception if the NSDictionary is not plist-encodable.
 @property (nullable, nonatomic, copy) NSDictionary<NSString *, id <NSSecureCoding>> *userInfo;
+
+// used with UISceneActivationConditions to customize what scene should be activated for a shortcut
+@property (nullable, nonatomic, copy) id targetContentIdentifier;
 
 @end
 

@@ -1,6 +1,17 @@
 ---
 Name:            MapKit
 Classes:
+- Name: MKMultiPolyline
+  Methods:
+  - Selector: "initWithPolylines:"
+    MethodKind: Instance
+    SwiftName: "init(_:)"
+- Name: MKMultiPolygon
+  Methods:
+  - Selector: "initWithPolygons:"
+    MethodKind: Instance
+    SwiftName: "init(_:)"
+
 # Swift 4.2 renames
 - Name: MKDirectionsRequest
   SwiftName: MKDirections.Request
@@ -52,18 +63,43 @@ Classes:
   - Selector: "setNeedsDisplayInMapRect:zoomScale:"
     MethodKind: Instance
     SwiftName: "setNeedsDisplay(_:zoomScale:)"
+- Name: MKMapCameraZoomRange
+  SwiftName: "MKMapView.CameraZoomRange"
+- Name: MKMapCameraBoundary
+  SwiftName: "MKMapView.CameraBoundary"
+- Name: MKPointOfInterestFilter
+  Properties:
+  - Name: "filterIncludingAllCategories"
+    PropertyKind: Class
+    SwiftName: "includingAll"
+  - Name: "filterExcludingAllCategories"
+    PropertyKind: Class
+    SwiftName: "excludingAll"
+  Methods:
+  - Selector: "initIncludingCategories:"
+    MethodKind: Instance
+    SwiftName: "init(including:)"
+  - Selector: "initExcludingCategories:"
+    MethodKind: Instance
+    SwiftName: "init(excluding:)"
+  - Selector: "includesCategory:"
+    MethodKind: Instance
+    SwiftName: "includes(_:)"
+  - Selector: "excludesCategory:"
+    MethodKind: Instance
+    SwiftName: "excludes(_:)"
 Functions:
 # Swift 4.2 Renames
 - Name: MKCoordinateRegionMake
-  SwiftName: "MKCoordinateRegion.init(center:span:)"
+  Availability: nonswift
 - Name: MKCoordinateRegionMakeWithDistance
   SwiftName: "MKCoordinateRegion.init(center:latitudinalMeters:longitudinalMeters:)"
 - Name: MKCoordinateSpanMake
-  SwiftName: "MKCoordinateSpan.init(latitudeDelta:longitudeDelta:)"
+  Availability: nonswift
 - Name: MKMapPointMake
-  SwiftName: "MKMapPoint.init(x:y:)"
+  Availability: nonswift
 - Name: MKMapSizeMake
-  SwiftName: "MKMapSize.init(width:height:)"
+  Availability: nonswift
 - Name: MKMapRectMake
   SwiftName: "MKMapRect.init(x:y:width:height:)"
 - Name: MKMapPointForCoordinate
@@ -138,6 +174,10 @@ Tags:
   SwiftName: MKScaleView.Alignment
 - Name: MKTileOverlayPath
   SwiftName: MKTileOverlay.Path
+- Name: MKLocalSearchCompleterResultType
+  SwiftName: MKLocalSearchCompleter.ResultType
+- Name: MKLocalSearchResultType
+  SwiftName: MKLocalSearch.ResultType
 Typedefs:
 - Name: MKDirectionsHandler
   SwiftName: MKDirections.DirectionsHandler

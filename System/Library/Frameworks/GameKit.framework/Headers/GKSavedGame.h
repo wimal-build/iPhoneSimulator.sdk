@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-#if !TARGET_OS_WATCH
+#if !TARGET_OS_WATCH && !TARGET_OS_TV
 @interface GKLocalPlayer (GKSavedGame) <GKSavedGameListener>
 
 // Asynchronously fetch saved games. The handler is called with an array of GKSavedGame objects or an error.

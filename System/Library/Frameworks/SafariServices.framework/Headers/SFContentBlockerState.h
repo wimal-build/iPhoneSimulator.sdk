@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <SafariServices/SFFoundation.h>
 
-SF_EXTERN API_AVAILABLE(ios(10.0))
+SF_EXTERN API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macCatalyst)
 @interface SFContentBlockerState : NSObject
 
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;

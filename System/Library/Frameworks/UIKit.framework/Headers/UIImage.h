@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIImage.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIImage.h>)
 //
 //  UIImage.h
 //  UIKit
@@ -15,6 +15,9 @@
 #import <UIKit/UIColor.h>
 #import <UIKit/UIGeometry.h>
 #import <UIKit/NSItemProvider+UIKitAdditions.h>
+#if __has_include(<UIKit/NSTextAttachment.h>)
+#import <UIKit/NSTextAttachment.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -54,53 +57,77 @@ typedef NS_ENUM(NSInteger, UIImageRenderingMode) {
     
     UIImageRenderingModeAlwaysOriginal,     // Always draw the original image, without treating it as a template
     UIImageRenderingModeAlwaysTemplate,     // Always draw the image as a template image, ignoring its color information
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} API_AVAILABLE(ios(7.0));
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding> 
+@class UIImageConfiguration;
+@class UIImageSymbolConfiguration;
+
+UIKIT_EXTERN API_AVAILABLE(ios(2.0)) @interface UIImage : NSObject <NSSecureCoding> 
+
+/*
+ * Retrieve a system-provided image with the specified name.
+ * This will only return system-provided images. If you want a custom
+ * image as defined in your own catalogs, you should use +imageNamed:.
+ *
+ * UIKit applications on macOS may pass NSImageName values (defined in
+ * <AppKit/NSImage.h>) for the name to access macOS system images.
+ *
+ * Returns nil if an image with specified name doesn't exist.
+ */
++ (nullable UIImage *)systemImageNamed:(NSString *)name API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
++ (nullable UIImage *)systemImageNamed:(NSString *)name withConfiguration:(nullable UIImageConfiguration *)configuration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+#if __has_include(<UIKit/UITraitCollection.h>)
++ (nullable UIImage *)systemImageNamed:(NSString *)name compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+#endif
+
 
 + (nullable UIImage *)imageNamed:(NSString *)name;      // load from main bundle
++ (nullable UIImage *)imageNamed:(NSString *)name inBundle:(nullable NSBundle *)bundle withConfiguration:(nullable UIImageConfiguration *)configuration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
 #if __has_include(<UIKit/UITraitCollection.h>)
-+ (nullable UIImage *)imageNamed:(NSString *)name inBundle:(nullable NSBundle *)bundle compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection NS_AVAILABLE_IOS(8_0);
++ (nullable UIImage *)imageNamed:(NSString *)name inBundle:(nullable NSBundle *)bundle compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection API_AVAILABLE(ios(8.0));
 #endif
 
 + (nullable UIImage *)imageWithContentsOfFile:(NSString *)path;
 + (nullable UIImage *)imageWithData:(NSData *)data;
-+ (nullable UIImage *)imageWithData:(NSData *)data scale:(CGFloat)scale NS_AVAILABLE_IOS(6_0);
++ (nullable UIImage *)imageWithData:(NSData *)data scale:(CGFloat)scale API_AVAILABLE(ios(6.0));
 + (UIImage *)imageWithCGImage:(CGImageRef)cgImage;
-+ (UIImage *)imageWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(4_0);
++ (UIImage *)imageWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation API_AVAILABLE(ios(4.0));
 #if __has_include(<CoreImage/CoreImage.h>)
-+ (UIImage *)imageWithCIImage:(CIImage *)ciImage NS_AVAILABLE_IOS(5_0);
-+ (UIImage *)imageWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(6_0);
++ (UIImage *)imageWithCIImage:(CIImage *)ciImage API_AVAILABLE(ios(5.0));
++ (UIImage *)imageWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation API_AVAILABLE(ios(6.0));
 #endif
 
 - (nullable instancetype)initWithContentsOfFile:(NSString *)path;
 - (nullable instancetype)initWithData:(NSData *)data;
-- (nullable instancetype)initWithData:(NSData *)data scale:(CGFloat)scale NS_AVAILABLE_IOS(6_0);
+- (nullable instancetype)initWithData:(NSData *)data scale:(CGFloat)scale API_AVAILABLE(ios(6.0));
 - (instancetype)initWithCGImage:(CGImageRef)cgImage;
-- (instancetype)initWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(4_0);
+- (instancetype)initWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation API_AVAILABLE(ios(4.0));
 #if __has_include(<CoreImage/CoreImage.h>)
-- (instancetype)initWithCIImage:(CIImage *)ciImage NS_AVAILABLE_IOS(5_0);
-- (instancetype)initWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation NS_AVAILABLE_IOS(6_0);
+- (instancetype)initWithCIImage:(CIImage *)ciImage API_AVAILABLE(ios(5.0));
+- (instancetype)initWithCIImage:(CIImage *)ciImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation API_AVAILABLE(ios(6.0));
 #endif
 
 @property(nonatomic,readonly) CGSize size; // reflects orientation setting. In iOS 4.0 and later, this is measured in points. In 3.x and earlier, measured in pixels
 @property(nullable, nonatomic,readonly) CGImageRef CGImage; // returns underlying CGImageRef or nil if CIImage based
 - (nullable CGImageRef)CGImage NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED;
 #if __has_include(<CoreImage/CoreImage.h>)
-@property(nullable,nonatomic,readonly) CIImage *CIImage NS_AVAILABLE_IOS(5_0); // returns underlying CIImage or nil if CGImageRef based
+@property(nullable,nonatomic,readonly) CIImage *CIImage API_AVAILABLE(ios(5.0)); // returns underlying CIImage or nil if CGImageRef based
 #endif
 @property(nonatomic,readonly) UIImageOrientation imageOrientation; // this will affect how the image is composited
-@property(nonatomic,readonly) CGFloat scale NS_AVAILABLE_IOS(4_0);
+@property(nonatomic,readonly) CGFloat scale API_AVAILABLE(ios(4.0));
+
+@property(nonatomic,readonly,getter=isSymbolImage) BOOL symbolImage API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
 
 // animated images. When set as UIImageView.image, animation will play in an infinite loop until removed. Drawing will render the first image
 
-+ (nullable UIImage *)animatedImageNamed:(NSString *)name duration:(NSTimeInterval)duration NS_AVAILABLE_IOS(5_0);  // read sequence of files with suffix starting at 0 or 1
-+ (nullable UIImage *)animatedResizableImageNamed:(NSString *)name capInsets:(UIEdgeInsets)capInsets duration:(NSTimeInterval)duration NS_AVAILABLE_IOS(5_0); // sequence of files
-+ (nullable UIImage *)animatedResizableImageNamed:(NSString *)name capInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode duration:(NSTimeInterval)duration NS_AVAILABLE_IOS(6_0);
-+ (nullable UIImage *)animatedImageWithImages:(NSArray<UIImage *> *)images duration:(NSTimeInterval)duration NS_AVAILABLE_IOS(5_0);
++ (nullable UIImage *)animatedImageNamed:(NSString *)name duration:(NSTimeInterval)duration API_AVAILABLE(ios(5.0));  // read sequence of files with suffix starting at 0 or 1
++ (nullable UIImage *)animatedResizableImageNamed:(NSString *)name capInsets:(UIEdgeInsets)capInsets duration:(NSTimeInterval)duration API_AVAILABLE(ios(5.0)); // sequence of files
++ (nullable UIImage *)animatedResizableImageNamed:(NSString *)name capInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode duration:(NSTimeInterval)duration API_AVAILABLE(ios(6.0));
++ (nullable UIImage *)animatedImageWithImages:(NSArray<UIImage *> *)images duration:(NSTimeInterval)duration API_AVAILABLE(ios(5.0));
 
-@property(nullable, nonatomic,readonly) NSArray<UIImage *> *images   NS_AVAILABLE_IOS(5_0); // default is nil for non-animated images
-@property(nonatomic,readonly) NSTimeInterval duration NS_AVAILABLE_IOS(5_0); // total duration for all frames. default is 0 for non-animated images
+@property(nullable, nonatomic,readonly) NSArray<UIImage *> *images   API_AVAILABLE(ios(5.0)); // default is nil for non-animated images
+@property(nonatomic,readonly) NSTimeInterval duration API_AVAILABLE(ios(5.0)); // total duration for all frames. default is 0 for non-animated images
 
 // the these draw the image 'right side up' in the usual coordinate system with 'point' being the top-left.
 
@@ -111,41 +138,135 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding>
 
 - (void)drawAsPatternInRect:(CGRect)rect; // draws the image as a CGPattern
 
-- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets NS_AVAILABLE_IOS(5_0); // create a resizable version of this image. the interior is tiled when drawn.
-- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode NS_AVAILABLE_IOS(6_0); // the interior is resized according to the resizingMode
+- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets API_AVAILABLE(ios(5.0)); // create a resizable version of this image. the interior is tiled when drawn.
+- (UIImage *)resizableImageWithCapInsets:(UIEdgeInsets)capInsets resizingMode:(UIImageResizingMode)resizingMode API_AVAILABLE(ios(6.0)); // the interior is resized according to the resizingMode
 
-@property(nonatomic,readonly) UIEdgeInsets capInsets               NS_AVAILABLE_IOS(5_0);   // default is UIEdgeInsetsZero for non resizable images
-@property(nonatomic,readonly) UIImageResizingMode resizingMode NS_AVAILABLE_IOS(6_0); // default is UIImageResizingModeTile
+@property(nonatomic,readonly) UIEdgeInsets capInsets               API_AVAILABLE(ios(5.0));   // default is UIEdgeInsetsZero for non resizable images
+@property(nonatomic,readonly) UIImageResizingMode resizingMode API_AVAILABLE(ios(6.0)); // default is UIImageResizingModeTile
 
 // Support for constraint-based layout (auto layout)
 // The alignmentRectInsets of a UIImage are used by UIImageView and other UIView and UIControl
 //  subclasses that take custom images to determine the view's alignment rect insets for
 //  constraint-based layout.
 // The default alignmentRectInsets are UIEdgeInsetsZero.
-- (UIImage *)imageWithAlignmentRectInsets:(UIEdgeInsets)alignmentInsets NS_AVAILABLE_IOS(6_0);
-@property(nonatomic,readonly) UIEdgeInsets alignmentRectInsets NS_AVAILABLE_IOS(6_0);
+- (UIImage *)imageWithAlignmentRectInsets:(UIEdgeInsets)alignmentInsets API_AVAILABLE(ios(6.0));
+@property(nonatomic,readonly) UIEdgeInsets alignmentRectInsets API_AVAILABLE(ios(6.0));
 
 // Create a version of this image with the specified rendering mode. By default, images have a rendering mode of UIImageRenderingModeAutomatic.
-- (UIImage *)imageWithRenderingMode:(UIImageRenderingMode)renderingMode NS_AVAILABLE_IOS(7_0);
-@property(nonatomic, readonly) UIImageRenderingMode renderingMode NS_AVAILABLE_IOS(7_0);
+- (UIImage *)imageWithRenderingMode:(UIImageRenderingMode)renderingMode API_AVAILABLE(ios(7.0));
+@property(nonatomic, readonly) UIImageRenderingMode renderingMode API_AVAILABLE(ios(7.0));
 
 #if __has_include(<UIKit/UIGraphicsImageRenderer.h>)
 // Returns an optimal UIGraphicsImageRendererFormat instance for this image, maintaining pixel format and color space.
-@property (nonatomic, readonly) UIGraphicsImageRendererFormat *imageRendererFormat NS_AVAILABLE_IOS(10_0);
+@property (nonatomic, readonly) UIGraphicsImageRendererFormat *imageRendererFormat API_AVAILABLE(ios(10.0));
 #endif
 
 #if __has_include(<UIKit/UITraitCollection.h>)
-@property (nonatomic, readonly, copy) UITraitCollection *traitCollection NS_AVAILABLE_IOS(8_0); // describes the image in terms of its traits
-@property (nullable, nonatomic, readonly) UIImageAsset *imageAsset NS_AVAILABLE_IOS(8_0); // The asset is not encoded along with the image. Returns nil if the image is not CGImage based.
+@property (nonatomic, readonly, copy) UITraitCollection *traitCollection API_AVAILABLE(ios(8.0)); // describes the image in terms of its traits
+@property (nullable, nonatomic, readonly) UIImageAsset *imageAsset API_AVAILABLE(ios(8.0)); // The asset is not encoded along with the image. Returns nil if the image is not CGImage based.
 #endif
 
 // Creates a version of this image that, when assigned to a UIImageView’s image property, draws its underlying image contents horizontally mirrored when running under a right-to-left language. Affects the flipsForRightToLeftLayoutDirection property; does not affect the imageOrientation property.
 // This method cannot be used to create a left-to-right version of a right-to-left source image, and will be deprecated in a future release. New code should instead use -imageWithHorizontallyFlippedOrientation to construct a UIImageAsset.
-- (UIImage *)imageFlippedForRightToLeftLayoutDirection NS_AVAILABLE_IOS(9_0);
-@property (nonatomic, readonly) BOOL flipsForRightToLeftLayoutDirection NS_AVAILABLE_IOS(9_0);
+- (UIImage *)imageFlippedForRightToLeftLayoutDirection API_AVAILABLE(ios(9.0));
+@property (nonatomic, readonly) BOOL flipsForRightToLeftLayoutDirection API_AVAILABLE(ios(9.0));
 
 // Creates a version of this image with an imageOrientation property that is horizontally mirrored from this image’s. Does not affect the flipsForRightToLeftLayoutDirection property.
-- (UIImage *)imageWithHorizontallyFlippedOrientation NS_AVAILABLE_IOS(10_0);
+- (UIImage *)imageWithHorizontallyFlippedOrientation API_AVAILABLE(ios(10.0));
+
+/*
+ * The baseline offset is expressed in points from the bottom of the image (positive = up, negative = down).
+ * If the image doesn't have a defined baseline, this value will be 0, but you can
+ * use -hasBaseline to see if it actually has one defined (because it is perfectly possible to have
+ * a baseline with the value of 0).
+ */
+@property (nonatomic, readonly) CGFloat baselineOffsetFromBottom API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)) NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) BOOL hasBaseline API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)) NS_REFINED_FOR_SWIFT;
+- (UIImage *)imageWithBaselineOffsetFromBottom:(CGFloat)baselineOffset API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+- (UIImage *)imageWithoutBaseline API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+/*
+ * Configuration support
+ * ---------------------
+ * This describes the configuration of the image.
+ * Depending on which type of image, the configuration might be different.
+ * Symbol images will always have a UIImageSymbolConfiguration, even if you give it another
+ * type of configuration (it will merge the trait info from the other configuration into
+ * its current configuration).
+ * Images start off with an unspecified configuration but can be modified by the methods below.
+ * The preferred ways of adding configurations for displaying images is to specify them on
+ * the image view, but it is possible to modify images with a more specific configuration.
+ */
+@property (nullable, nonatomic, copy, readonly) __kindof UIImageConfiguration *configuration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+/*
+ * Create a new image by replacing the existing configuration with a new one.
+ * For symbol images this will always result in an image with a UIImageSymbolConfiguration,
+ * even if you give it another type of configuration (the trait info from the new configuration
+ * will be merged into the current symbol configuration resulting in anew symbol configuration).
+ * For non-symbol images, this will replace the configuration of the image with a new one.
+ *
+ * Important note! Given (for example):
+ *
+ *    image = image(named:"the_image").withRenderingMode(.alwaysTemplate)
+
+ * the following two statements aren't exactly equivalent:
+ *
+ *    a = image.imageAsset.withConfiguration(configuration)
+ *    b = image.withConfiguration(configuration)
+ *
+ * The first one will resolve the image again from the asset catalog (if it is originating from one),
+ * resulting in a fresh image without any modifications. In other words, `a` won't have the
+ * rendering mode change set anymore, and it will be "reverted" to `.automatic`.
+ * The second one will resolve the image, but apply and changes that were made to the image.
+ * That means that `b` might be a different image, but it will still have the same rendering mode
+ * as `image`.
+ */
+- (UIImage *)imageWithConfiguration:(UIImageConfiguration *)configuration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+/*
+ * Symbol configuration support
+ * ----------------------------
+ * This describes the symbol configuration of a symbol image.
+ * Symbol images start off with an unspecified configuration but can be modified by using
+ * `image.withConfiguration(:)`.
+ *
+ * However... the preferred ways of adding configurations for displaying images is to specify
+ * them on the image view using `preferredSymbolConfiguration`, but it is possible to modify
+ * images with a more specific configuration. This include image related traits, for example
+ * you can use this to fix a symbol image to a dynamic type style at a fixed preferred content size
+ * category.
+ */
+@property (nullable, nonatomic, copy, readonly) UIImageSymbolConfiguration *symbolConfiguration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+/*
+ * This is a convience method to apply another symbol configuration over an existing one.
+ * If the image doesn't have a symbolconfiguration, it will just merge the traits of the existing
+ * with the new one (where the new traits override the old traits). The symbol in
+ *
+ * Create a new image by applying the specified configuration over the existing  one.
+ * This only works if the configuration already has a configuration (i.e. is a symbol image).
+ * The image will be configured with a combination of both configurations.
+ *
+ * If you use this on a symbol image with other layout modifications done (e.g. changed baseline),
+ * those changes will be lost and overwritten with the new configuration's layout properties.
+ * This applies to size, contentInsets and baseline.
+ */
+- (nullable UIImage *)imageByApplyingSymbolConfiguration:(UIImageSymbolConfiguration *)configuration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+
+- (UIImage *)imageWithTintColor:(UIColor *)color API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+- (UIImage *)imageWithTintColor:(UIColor *)color renderingMode:(UIImageRenderingMode)renderingMode API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0));
+
+@end
+
+@interface UIImage (PreconfiguredSystemImages)
+
+@property (class, readonly, strong) UIImage *actionsImage API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)); // currently: white ellipsis on tinted filled circle
+@property (class, readonly, strong) UIImage *addImage API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)); // currently: white + on green filled cirlce
+@property (class, readonly, strong) UIImage *removeImage API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)); // currently: white - on red filled circle
+@property (class, readonly, strong) UIImage *checkmarkImage API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)); // currently: white ✓ on tinted filled circle
+@property (class, readonly, strong) UIImage *strokedCheckmarkImage API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0)); // currently: white ✓ on tinted filled and white stroked circle
 
 @end
 
@@ -157,14 +278,22 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding>
 
 @end
 
+#if __has_include(<UIKit/NSTextAttachment.h>)
+@interface NSTextAttachment (UIImage)
+
++ (NSTextAttachment *)textAttachmentWithImage:(UIImage *)image API_AVAILABLE(ios(13.0),tvos(13.0));
+
+@end
+#endif
+
 
 @interface UIImage(UIImageDeprecated)
 
 // use resizableImageWithCapInsets: and capInsets.
 
-- (UIImage *)stretchableImageWithLeftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight __TVOS_PROHIBITED;
-@property(nonatomic,readonly) NSInteger leftCapWidth __TVOS_PROHIBITED;   // default is 0. if non-zero, horiz. stretchable. right cap is calculated as width - leftCapWidth - 1
-@property(nonatomic,readonly) NSInteger topCapHeight __TVOS_PROHIBITED;   // default is 0. if non-zero, vert. stretchable. bottom cap is calculated as height - topCapWidth - 1
+- (UIImage *)stretchableImageWithLeftCapWidth:(NSInteger)leftCapWidth topCapHeight:(NSInteger)topCapHeight API_UNAVAILABLE(tvos);
+@property(nonatomic,readonly) NSInteger leftCapWidth API_UNAVAILABLE(tvos);   // default is 0. if non-zero, horiz. stretchable. right cap is calculated as width - leftCapWidth - 1
+@property(nonatomic,readonly) NSInteger topCapHeight API_UNAVAILABLE(tvos);   // default is 0. if non-zero, vert. stretchable. bottom cap is calculated as height - topCapWidth - 1
 
 @end
 
@@ -172,8 +301,8 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding>
 #if __has_include(<CoreImage/CoreImage.h>)
 @interface CIImage(UIKitAdditions)
 
-- (nullable instancetype)initWithImage:(UIImage *)image NS_AVAILABLE_IOS(5_0);
-- (nullable instancetype)initWithImage:(UIImage *)image options:(nullable NSDictionary<CIImageOption, id> *)options NS_AVAILABLE_IOS(5_0);
+- (nullable instancetype)initWithImage:(UIImage *)image API_AVAILABLE(ios(5.0));
+- (nullable instancetype)initWithImage:(UIImage *)image options:(nullable NSDictionary<CIImageOption, id> *)options API_AVAILABLE(ios(5.0));
 
 @end
 #endif

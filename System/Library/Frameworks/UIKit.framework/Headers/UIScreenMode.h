@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIScreenMode.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIScreenMode.h>)
 //
 //  UIScreenMode.h
 //  UIKit
@@ -10,7 +10,7 @@
 #import <UIKit/UIKitDefines.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-NS_CLASS_AVAILABLE_IOS(3_2) @interface UIScreenMode : NSObject 
+UIKIT_EXTERN API_AVAILABLE(ios(3.2)) @interface UIScreenMode : NSObject 
 
 @property(readonly,nonatomic) CGSize  size;             // The width and height in pixels
 @property(readonly,nonatomic) CGFloat pixelAspectRatio; // The aspect ratio of a single pixel. The ratio is defined as X/Y.

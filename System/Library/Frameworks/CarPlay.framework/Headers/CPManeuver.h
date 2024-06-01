@@ -21,10 +21,17 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  symbolSet is a @c CPImageSet representing the maneuver.
  */
-@property (nullable, nonatomic, strong) CPImageSet *symbolSet;
+@property (nullable, nonatomic, strong) CPImageSet *symbolSet API_DEPRECATED_WITH_REPLACEMENT("symbolImage", ios(12.0, 13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+
+/**
+ symbolImage is a @c UIImage representing the maneuver. Provide variants for UIUserInterfaceStyleLight and UIUserInterfaceStyleDark that will be used against light backgrounds and dark backgrounds.
+ */
+@property (nullable, nonatomic, strong) UIImage *symbolImage;
 
 /**
  junctionImage is a @c UIImage used to display a junction for the maneuver.
+ 
+ @note The maximum image size is 140 points by 100 points. If necessary, images will be scaled down to fit while maintaining the aspect ratio.
  */
 @property (nullable, nonatomic, strong) UIImage *junctionImage;
 

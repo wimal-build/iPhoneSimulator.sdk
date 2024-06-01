@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccelerometer.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UIAccelerometer.h>)
 //
 //  UIAccelerometer.h
 //  UIKit
@@ -14,11 +14,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef double UIAccelerationValue;
+typedef double UIAccelerationValue API_DEPRECATED("UIAcceleration has been replaced by the CoreMotion framework", ios(2.0, 13.0), tvos(9.0, 13.0));
 
 @protocol UIAccelerometerDelegate;
 
-NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAcceleration has been replaced by the CoreMotion framework") __TVOS_PROHIBITED
+UIKIT_EXTERN API_DEPRECATED("UIAcceleration has been replaced by the CoreMotion framework", ios(2.0, 5.0)) API_UNAVAILABLE(tvos)
 @interface UIAcceleration : NSObject
 
 @property(nonatomic,readonly) NSTimeInterval timestamp;
@@ -28,7 +28,7 @@ NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAcceleration has been replaced by the CoreM
 
 @end
 
-NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the CoreMotion framework") __TVOS_PROHIBITED
+UIKIT_EXTERN API_DEPRECATED("UIAccelerometer has been replaced by the CoreMotion framework", ios(2.0, 5.0)) API_UNAVAILABLE(tvos)
 @interface UIAccelerometer : NSObject 
 
 + (UIAccelerometer *)sharedAccelerometer;
@@ -38,11 +38,11 @@ NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the Core
 
 @end
 
- __TVOS_PROHIBITED
+ API_UNAVAILABLE(tvos) API_DEPRECATED("UIAcceleration has been replaced by the CoreMotion framework", ios(2.0, 13.0))
 @protocol UIAccelerometerDelegate<NSObject>
 @optional
 
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration NS_DEPRECATED_IOS(2_0, 5_0)  __TVOS_PROHIBITED;
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration API_DEPRECATED("", ios(2.0, 5.0))  API_UNAVAILABLE(tvos);
 
 @end
 

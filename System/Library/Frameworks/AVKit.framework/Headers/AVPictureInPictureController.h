@@ -3,7 +3,7 @@
 	
 	Framework:  AVKit
 	
-	Copyright © 2015-2017 Apple Inc. All rights reserved.
+	Copyright © 2015-2019 Apple Inc. All rights reserved.
 	
  */
 
@@ -14,16 +14,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#if TARGET_OS_IPHONE
 @class UIImage;
 @class UITraitCollection;
+#elif TARGET_OS_OSX
+@class NSImage;
+#endif // TARGET_OS_IPHONE
+
 @protocol AVPictureInPictureControllerDelegate;
 
 /*!
 	@class		AVPictureInPictureController
-	@abstract	AVPictureInPictureController is a subclass of NSObject that can be used to present the contents of an AVPlayerLayer floating on top of applications.
+	@abstract	AVPictureInPictureController is a subclass of NSObject that can be used to present the contents of an AVPlayerLayer or AVPlayerView floating on top of applications.
  */
 
-API_AVAILABLE(ios(9.0))
+API_AVAILABLE(ios(9.0), macos(10.15)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos)
 @interface AVPictureInPictureController : NSObject
 
 /*!
@@ -33,6 +38,7 @@ API_AVAILABLE(ios(9.0))
  */
 + (BOOL)isPictureInPictureSupported;
 
+#if TARGET_OS_IPHONE
 /*!
 	@method		pictureInPictureButtonStartImageCompatibleWithTraitCollection:
 	@param		traitCollection
@@ -50,10 +56,35 @@ API_AVAILABLE(ios(9.0))
 + (UIImage *)pictureInPictureButtonStopImageCompatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection;
 
 /*!
-	@method		initWithPlayerLayer:
-	@param		playerLayer
-				The player layer from which to source the media content for the Picture in Picture controller.
-	@abstract	Designated initializer.
+	@property	pictureInPictureButtonStartImage
+	@abstract	System default Picture in Picture start template image for use in client's Picture in Picture button.
+ */
+@property (class, nonatomic, readonly) UIImage *pictureInPictureButtonStartImage API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(tvos);
+
+/*!
+ 	@property	pictureInPictureButtonStopImage
+ 	@abstract	System default Picture in Picture stop template image for use in client's Picture in Picture button.
+ */
+@property (class, nonatomic, readonly) UIImage *pictureInPictureButtonStopImage API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(tvos);
+#elif TARGET_OS_OSX
+/*!
+	@property	pictureInPictureButtonStartImage
+	@abstract	System default Picture in Picture start template image for use in client's Picture in Picture button.
+ */
+@property (class, nonatomic, readonly) NSImage *pictureInPictureButtonStartImage;
+
+/*!
+	@property	pictureInPictureButtonStopImage
+ 	@abstract	System default Picture in Picture stop template image for use in client's Picture in Picture button.
+ */
+@property (class, nonatomic, readonly) NSImage *pictureInPictureButtonStopImage;
+#endif // TARGET_OS_IPHONE
+
+/*!
+ @method		initWithPlayerLayer:
+ @param			playerLayer
+ 				The player layer from which to source the media content for the Picture in Picture controller.
+ @abstract		Designated initializer.
  */
 - (nullable instancetype)initWithPlayerLayer:(AVPlayerLayer *)playerLayer NS_DESIGNATED_INITIALIZER;
 
@@ -109,6 +140,7 @@ API_AVAILABLE(ios(9.0))
 	@abstract	A protocol for delegates of AVPictureInPictureController.
  */
 
+API_AVAILABLE(ios(9.0), macos(10.15)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(watchos)
 @protocol AVPictureInPictureControllerDelegate <NSObject>
 @optional
 

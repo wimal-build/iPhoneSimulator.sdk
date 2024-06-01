@@ -19,7 +19,7 @@ typedef struct {  vector_float4 vector; } simd_quatf;
  * The physics and constraints of the children will behave as if none
  * of them were transformed.
  */
-NS_AVAILABLE(10_13, 11_0) SK_EXPORT @interface SKTransformNode : SKNode
+API_AVAILABLE(ios(11.0), tvos(11.0), watchos(4.0), macos(10.13)) SK_EXPORT @interface SKTransformNode : SKNode
 
 @property (nonatomic) CGFloat xRotation;
 @property (nonatomic) CGFloat yRotation;

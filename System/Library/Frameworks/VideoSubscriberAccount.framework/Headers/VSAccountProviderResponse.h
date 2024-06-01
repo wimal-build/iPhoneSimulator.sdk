@@ -18,6 +18,11 @@ VS_EXTERN VSAccountProviderAuthenticationScheme const VSAccountProviderAuthentic
 NS_SWIFT_NAME(saml)
 API_AVAILABLE(ios(10.2), tvos(10.1));
 
+/// The identifier for responses that use any authentication protocol.
+VS_EXTERN VSAccountProviderAuthenticationScheme const VSAccountProviderAuthenticationSchemeAPI
+NS_SWIFT_NAME(api)
+API_AVAILABLE(ios(13.0), tvos(13.0));
+
 /// A value object that encapsulates the response given by an account provider.
 VS_EXPORT API_AVAILABLE(ios(10.2), tvos(10.1))
 @interface VSAccountProviderResponse : NSObject

@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, SKSceneScaleMode) {
     SKSceneScaleModeResizeFill      /* Modify the SKScene's actual size to exactly match the SKView. */
 } NS_ENUM_AVAILABLE(10_9, 7_0);
 
-NS_AVAILABLE(10_10, 8_0) @protocol SKSceneDelegate <NSObject>
+API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10)) @protocol SKSceneDelegate <NSObject>
 @optional
 - (void)update:(NSTimeInterval)currentTime forScene:(SKScene *)scene;
 - (void)didEvaluateActionsForScene:(SKScene *)scene;
@@ -53,7 +53,7 @@ SK_EXPORT @interface SKScene : SKEffectNode
 
 /* This is called once after the scene has been initialized or decoded,
  this is the recommended place to perform one-time setup */
-- (void)sceneDidLoad NS_AVAILABLE(10_12, 10_0);
+- (void)sceneDidLoad API_AVAILABLE(ios(10.0), tvos(10.0), watchos(3.0), macos(10.12));
 
 @property (nonatomic) CGSize size;
 
@@ -65,19 +65,19 @@ SK_EXPORT @interface SKScene : SKEffectNode
 /**
  The camera that is used to obtain the view scale and translation based on where the camera is in relation to the scene.
  */
-@property (nonatomic, weak, nullable) SKCameraNode *camera NS_AVAILABLE(10_11, 9_0);
+@property (nonatomic, weak, nullable) SKCameraNode *camera API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /**
  The node that is currently the listener for positional audio coming from SKAudioNodes
  @see SKAudioNode
  */
-@property (nonatomic, weak, nullable) SKNode *listener NS_AVAILABLE(10_11, 9_0);
+@property (nonatomic, weak, nullable) SKNode *listener API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 
 /**
  The audio engine that the listener and the scene's audio nodes use to process their sound through.
  */
 #if __has_include(<AVFoundation/AVAudioEngine.h>)
-@property (nonatomic, retain, readonly) AVAudioEngine *audioEngine NS_AVAILABLE(10_11, 9_0);
+@property (nonatomic, retain, readonly) AVAudioEngine *audioEngine API_AVAILABLE(ios(9.0), tvos(9.0), watchos(2.0), macos(10.11));
 #endif
 
 /**
@@ -85,7 +85,7 @@ SK_EXPORT @interface SKScene : SKEffectNode
  */
 @property (nonatomic, retain) SKColor *backgroundColor;
 
-@property (nonatomic, weak, nullable) id<SKSceneDelegate> delegate NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic, weak, nullable) id<SKSceneDelegate> delegate API_AVAILABLE(ios(8.0), tvos(9.0), watchos(2.0), macos(10.10));
 
 /**
  Used to choose the origin of the scene's coordinate system
@@ -128,14 +128,14 @@ SK_EXPORT @interface SKScene : SKEffectNode
 /**
  Override this to perform game logic. Called exactly once per frame after any enabled constraints have been applied. Any additional actions applied is not evaluated until the next update. Any changes to physics bodies is not simulated until the next update. Any changes to constarints will not be applied until the next update.
  */
-- (void)didApplyConstraints NS_AVAILABLE(10_10, 8_0);
+- (void)didApplyConstraints API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 /**
  Override this to perform game logic. Called after all update logic has been completed. Any additional actions applied are not evaluated until the next update. Any changes to physics bodies are not simulated until the next update. Any changes to constarints will not be applied until the next update.
  
  No futher update logic will be applied to the scene after this call. Any values set on nodes here will be used when the scene is rendered for the current frame.
  */
-- (void)didFinishUpdate NS_AVAILABLE(10_10, 8_0);
+- (void)didFinishUpdate API_AVAILABLE(ios(8.0), tvos(9.0), watchos(1.0), macos(10.10));
 
 #if SKVIEW_AVAILABLE
 - (void)didMoveToView:(SKView *)view;

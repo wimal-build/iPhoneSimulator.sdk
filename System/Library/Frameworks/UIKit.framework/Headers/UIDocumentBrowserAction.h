@@ -1,4 +1,4 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<DocumentManager/UIDocumentBrowserAction.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<DocumentManager/UIDocumentBrowserAction.h>)
 //
 //  UIDocumentBrowserAction.h
 //  UIKit
@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSInteger, UIDocumentBrowserActionAvailability) {
     UIDocumentBrowserActionAvailabilityMenu = 1,                        // The action can be shown in the menu
     UIDocumentBrowserActionAvailabilityNavigationBar = 1 << 1,          // The action can be shown in navigation bar
-} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)  NS_SWIFT_NAME(UIDocumentBrowserAction.Availability);
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos) NS_SWIFT_NAME(UIDocumentBrowserAction.Availability);
 
 /// UIDocumentBrowserAction instances are custom, contextual actions that are presented to the user by a UIDocumentBrowserViewController.
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos,watchos,tvos)  @interface UIDocumentBrowserAction : NSObject
+API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos,tvos) @interface UIDocumentBrowserAction : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithIdentifier:(NSString *)identifier localizedTitle:(NSString *)localizedTitle availability:(UIDocumentBrowserActionAvailability)availability handler:(void(^)(NSArray <NSURL *> *))handler NS_DESIGNATED_INITIALIZER;

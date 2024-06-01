@@ -1,18 +1,17 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: CE89C331-0CFB-3B3B-8644-8B6134792481' ]
+uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: C39E4719-921B-3B3A-9B64-A3F2F27C2A5A' ]
 platform:        ios
-install-name:    /System/Library/Frameworks/Social.framework/Social
+install-name:    '/System/Library/Frameworks/Social.framework/Social'
 current-version: 87
-objc-constraint: none
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _SLOpenGraphNodeChanged ]
     objc-classes:    [ SLGoogleAuthFlowController, SLGoogleClient, SLGoogleUserInfoRequest, 
                        SLGoogleWebAuthIdentity, SLLastAccountManager, SLOpenGraphNode, 
-                       SLRemoteServicePlistLoader, SLYahooAuthFlowController, SLYahooClient, 
-                       SLYahooOAuth2TokenRequest, SLYahooOAuth2TokenResponse, SLYahooWebAuthIdentity, 
-                       SLYouTubeAuthFlowController ]
+                       SLRemoteServicePlistLoader, SLSheetAction, SLYahooAuthFlowController, 
+                       SLYahooClient, SLYahooOAuth2TokenRequest, SLYahooOAuth2TokenResponse, 
+                       SLYahooWebAuthIdentity, SLYouTubeAuthFlowController ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _SLAttachmentPayloadIsAssetLibraryURL, _SLAttachmentPayloadIsVideoFileURL, 
                        _SLCreateThumbnailImageForImageData, _SLDownSampledImageData, 
@@ -77,16 +76,16 @@ exports:
                        SLPlace, SLRemoteService, SLRemoteSession, SLRemoteSessionProxy, 
                        SLRequest, SLRequestBodyInputStream, SLRequestMultiPart, SLRequestMultiPartInputStream, 
                        SLSafeLocationManagerDelegate, SLService, SLServiceListener, 
-                       SLSheetAction, SLSheetContentView, SLSheetImagePreviewView, 
-                       SLSheetNavigationController, SLSheetPhotoAlbumImageView, SLSheetPlaceSearchController, 
+                       SLSheetContentView, SLSheetImagePreviewView, SLSheetNavigationController, 
+                       SLSheetPhotoAlbumImageView, SLSheetPlaceSearchController, 
                        SLSheetPlaceViewController, SLSheetPreviewImageSource, SLSheetTextComposeView, 
                        SLSystemConfigManager, SLTencentWeiboServerInterface, SLTencentWeiboSession, 
                        SLTencentWeiboUserRecord, SLTwitterRequest, SLTwitterReverseAuthRequest, 
                        SLTwitterSession, SLTwitterUserRecord, SLURLAttachment, SLURLPreviewGenerator, 
                        SLVideoAttachment, SLWebAuthController, SLWebAuthFlowController, 
-                       SLWebAuthIdentity, SLWebUserInfoResponse, SLWeiboServerInterface, 
-                       SLWeiboSession, SLWeiboUserRecord, SLYahooLoginTokenRequest, 
-                       SLYahooLoginTokenResponse, SLYahooOAuth2MigrationRequest, 
+                       SLWebAuthIdentity, SLWebTokenHandlerController, SLWebUserInfoResponse, 
+                       SLWeiboServerInterface, SLWeiboSession, SLWeiboUserRecord, 
+                       SLYahooLoginTokenRequest, SLYahooLoginTokenResponse, SLYahooOAuth2MigrationRequest, 
                        SLYahooOAuth2MigrationResponse, SLYahooWebAuthController, 
                        SLYahooWebAuthRequest, SLYahooWebClient, SLYahooWebOAuth2TokenRequest, 
                        SLYahooWebOAuth2TokenResponse, SL_OOPAWebViewController, _SLAuthHostExtensionContext, 

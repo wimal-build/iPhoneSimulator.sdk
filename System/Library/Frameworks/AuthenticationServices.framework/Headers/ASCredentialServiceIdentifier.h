@@ -18,9 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, ASCredentialServiceIdentifierType) {
     ASCredentialServiceIdentifierTypeDomain,
     ASCredentialServiceIdentifierTypeURL,
-} API_AVAILABLE(ios(12.0))  NS_SWIFT_NAME(ASCredentialServiceIdentifier.IdentifierType);
+} API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macCatalyst, macos, tvos, watchos) NS_SWIFT_NAME(ASCredentialServiceIdentifier.IdentifierType);
 
-AS_EXTERN API_AVAILABLE(ios(12.0)) 
+AS_EXTERN API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macCatalyst, macos, tvos, watchos)
 @interface ASCredentialServiceIdentifier : NSObject <NSCopying, NSSecureCoding>
 
 /*! @abstract Initializes an ASCredentialServiceIdentifier object.

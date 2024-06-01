@@ -2,8 +2,7 @@
 archs:           [ i386, x86_64 ]
 uuids:           [ 'i386: C3DAF0E2-A2B1-3534-8E65-D28169426893', 'x86_64: D44E2818-37FF-30E0-8B94-9E7F220568DD' ]
 platform:        ios
-install-name:    /System/Library/TextInput/libTextInputCore.dylib
-objc-constraint: retain_release_for_simulator
+install-name:    '/System/Library/TextInput/libTextInputCore.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ __ZN19TICandQualityFilter37set_word_medial_punctuation_predicateEU13block_pointerFbmE, 

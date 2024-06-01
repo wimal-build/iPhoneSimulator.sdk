@@ -5,8 +5,11 @@
 //  Copyright (c) 2012 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <GameController/GameController.h>
-#import <GameController/GameControllerExtern.h>
+#import <GameController/GCExtern.h>
+
+@class GCMotion;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,44 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 GAMECONTROLLER_EXTERN NSString *const GCControllerDidConnectNotification;
 GAMECONTROLLER_EXTERN NSString *const GCControllerDidDisconnectNotification;
-
-/**
- A view controller subclass that allows fine grained control of the user interface system's handling
- of game controller events. Set an instance of this class as your root view controller if you intend
- to use GCController APIs for handling game controllers.
- */
-#if TARGET_OS_IPHONE || TARGET_OS_TV
-NS_CLASS_AVAILABLE(10_11, 9_0)
-@interface GCEventViewController : UIViewController
-#else
-NS_CLASS_AVAILABLE(10_11, 9_0)
-@interface GCEventViewController : NSViewController
-#endif
-
-/**
- Controllers can be used to control the general UIKit user interface and for many views that is
- the default behavior. By using a controller event view controller you get fine grained control
- over whether the controller events go trough the UIEvent & UIResponder chain, or if they are
- decoupled from the UI and all incoming data is served via GCController.
-
- Defaults to NO - suppressing UIEvents from game controllers and presenting them via the GCController
- API whilst this controller's view or any of it's subviews are the first responders. If you are not
- using any UIView components or UIEvents in your application you should leave this as NO and process
- your game controller events via the normal GCController API.
- 
- If set to YES the controller input will start flowing through UIEvent and the UIResponder
- chain will be used. This gives you fine grained control over the event handling of the
- controlled view and its subviews. You should stop using GCController instances and the corresponding
- profiles if you no longer need to read input from them.
- 
- Note that unlike UIView.userInteractionEnabled this only controls the flow of game controller events.
- 
- @see GCController
- @see UIView.userInteractionEnabled
- */
-@property (nonatomic, assign) BOOL controllerUserInteractionEnabled;
-
-@end
 
 /**
  This is the player index that a connected controller will have if it has never been assigned a player index on the current system.
@@ -106,10 +71,14 @@ GAMECONTROLLER_EXPORT
  notify the application using this block such that the application can handle the suspension and resumption from the given controller.
  
  Use this to implement your canonical transition to a pause menu for example if that is your application's desired handling
- of suspension in play. You may pause and resume base don game state as well so the event is only called each time the
+ of suspension in play. You may pause and resume based on game state as well so the event is only called each time the
  pause/resume button is pressed.
+ 
+ @note This handler has been deprecated in favor of the Menu button found on GCMicroGamepad and GCExtendedGamepad.
+ @see microGamepad
+ @see extendedGamepad
  */
-@property (nonatomic, copy, nullable) void (^controllerPausedHandler)(GCController *controller);
+@property (nonatomic, copy, nullable) void (^controllerPausedHandler)(GCController *controller) API_DEPRECATED("controllerPausedHandler has been deprecated. Use the Menu button found on the controller's profile, if it exists.", macos(10.9, 10.15), ios(7.0, 13.0), tvos(9.0, 13.0));
 
 /**
  The dispatch queue that element value change handlers are submitted on. The default queue is main, and setting this to any
@@ -123,9 +92,9 @@ GAMECONTROLLER_EXPORT
  @see GCMotion.valueChangedHandler
  */
 #if defined(OS_OBJECT_USE_OBJC) && OS_OBJECT_USE_OBJC==1
-@property (retain) dispatch_queue_t handlerQueue;
+@property (nonatomic, retain) dispatch_queue_t handlerQueue;
 #else
-@property (assign) dispatch_queue_t handlerQueue;
+@property (nonatomic, assign) dispatch_queue_t handlerQueue;
 #endif
 
 /**
@@ -135,11 +104,27 @@ GAMECONTROLLER_EXPORT
 @property (nonatomic, readonly, copy, nullable) NSString *vendorName;
 
 /**
+ The product category the controller belongs to. This is useful for setting appropriate UI elements based on what type of controller is connected.
+ */
+@property (nonatomic, readonly) NSString * productCategory API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
  A controller may be form fitting or otherwise closely attached to the device. This closeness to other inputs on the device
  may suggest that interaction with the device may use other inputs easily. This is presented to developers to allow them to
- make informed descisions about UI and interactions to choose for their game in this situation.
+ make informed decisions about UI and interactions to choose for their game in this situation.
  */
 @property (nonatomic, readonly, getter = isAttachedToDevice) BOOL attachedToDevice;
+
+/**
+ A controller may represent a real device managed by the operating system, or a virtual snapshot created by the developer.
+ If a controller is directly created by the developer, it is considered to be a snapshot, allowing direct writes to any
+ GCControllerElement of its profiles. If the controller is not snapshot, the system will reject any write requests to GCControllerElement.
+ 
+ @see controllerWithMicroGamepad
+ @see controllerWithExtendedGamepad
+ @see capture
+ */
+@property (atomic, readonly, getter = isSnapshot) BOOL snapshot API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
 
 /**
  A player index for the controller, defaults to GCControllerPlayerIndexUnset.
@@ -147,7 +132,7 @@ GAMECONTROLLER_EXPORT
  This can be set both for the application to keep track of controllers and as a signal to make a controller display a player
  index on a set of LEDs or some other mechanism.
  
- A controller is not guranteed to have a visual display of the playerIndex, playerIndex does not persist for a controller
+ A controller is not guaranteed to have a visual display of the playerIndex, playerIndex does not persist for a controller
  with regards to a system.
  
  Negative values less than GCControllerPlayerIndexUnset will just map back to GCControllerPlayerIndexUnset when read back.
@@ -157,7 +142,7 @@ GAMECONTROLLER_EXPORT
 /**
  Gets the profile for the controller that suits current application.
  
- There are two supported profiles, with an additional optional profile for motion as well. 
+ There are several supported profiles, with an additional optional profile for motion as well.
  Each controller may be able to map its inputs into all profiles or just one kind of profile. Query for the controller
  profile that suits your game, the simplest kind will be supported by the broadest variety
  of controllers. A controller supporting the Extended Gamepad profile for example supports the Gamepad profile and more.
@@ -170,7 +155,7 @@ GAMECONTROLLER_EXPORT
  application requires a specific kind of profile.
  @see motion
  */
-@property (nonatomic, retain, readonly, nullable) GCGamepad *gamepad;
+@property (nonatomic, retain, readonly, nullable) GCGamepad *gamepad API_DEPRECATED_WITH_REPLACEMENT("-extendedGamepad", macos(10.9, 10.12), ios(7.0, 10.0), tvos(7.0, 10.0));
 @property (nonatomic, retain, readonly, nullable) GCMicroGamepad *microGamepad;
 @property (nonatomic, retain, readonly, nullable) GCExtendedGamepad *extendedGamepad;
 
@@ -180,7 +165,18 @@ GAMECONTROLLER_EXPORT
  @see gamepad
  @see extendedGamepad
  */
-@property (nonatomic, retain, readonly, nullable) GCMotion *motion NS_AVAILABLE(10_10, 8_0);
+@property (nonatomic, retain, readonly, nullable) GCMotion *motion API_AVAILABLE(macos(10.10), ios(8.0), tvos(8.0));
+
+/**
+ Polls the state vector of the controller and saves it to a new and writable instance of GCController.
+ 
+ If your application is heavily multithreaded this may also be useful to guarantee atomicity of input handling as
+ a snapshot will not change based on user input once it is taken.
+ 
+ @see snapshot
+ @return A new controller with the duplicated state vector of the current controller
+ */
+- (GCController *) capture API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
 
 /**
  Get a list of controllers currently attached to the system.
@@ -225,6 +221,26 @@ GAMECONTROLLER_EXPORT
  @see startWirelessControllerDiscoveryWithCompletionHandler:
  */
 + (void)stopWirelessControllerDiscovery;
+
+/**
+ Creates a controller with a micro gamepad profile.
+ 
+ This controller will be considered a snapshot, allowing developers to write to any GCControllerElement of its profiles.
+ 
+ @see snapshot
+ @return A new controller with a micro gamepad profile
+ */
++ (GCController *) controllerWithMicroGamepad API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
+
+/**
+ Creates a controller with an extended gamepad profile.
+ 
+ This controller will be considered a snapshot, allowing developers to write to any GCControllerElement of its profiles.
+ 
+ @see snapshot
+ @return A new controller with an extended gamepad profile
+ */
++ (GCController *) controllerWithExtendedGamepad API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0));
 
 @end
 

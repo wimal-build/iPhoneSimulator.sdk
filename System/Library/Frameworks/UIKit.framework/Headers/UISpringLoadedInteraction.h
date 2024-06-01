@@ -1,12 +1,13 @@
-#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UISpringLoadedInteraction.h>)
+#if (defined(USE_UIKIT_PUBLIC_HEADERS) && USE_UIKIT_PUBLIC_HEADERS) || !__has_include(<UIKitCore/UISpringLoadedInteraction.h>)
 //
 //  UISpringLoadedInteraction.h
 //  UIKit
 //
-//  Copyright © 2017-2018 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 #import <UIKit/UIInteraction.h>
 
 NS_ASSUME_NONNULL_BEGIN

@@ -5,8 +5,8 @@
 //  Copyright 2009-2010 Apple, Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayerDefines.h>
+#import <Foundation/Foundation.h>
 
 @protocol MPMediaPlayback
 
