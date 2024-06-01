@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 593FE2ED-75A4-3A33-8533-99BD74A8FC24' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E25F359A-4F36-3707-AC84-10F36DE2A6C6' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/IdentityLookup.framework/IdentityLookup
 objc-constraint: none

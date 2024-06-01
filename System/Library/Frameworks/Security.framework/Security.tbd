@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: F81CCA37-68C5-32D6-809B-C71B41A0D4DC' ]
+uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: 7A1B161A-2A6F-3851-98E8-312955C8928B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Security.framework/Security
 current-version: 0

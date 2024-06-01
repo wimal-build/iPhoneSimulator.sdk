@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5F17F0E6-8A9D-3D30-8FB4-6F1F55E0FBF9' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4A7D3F4B-51E3-3A59-9D02-4531B2B39C0C' ]
 platform:        ios
 install-name:    /usr/lib/libcups.dylib
 current-version: 0

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C8BBF7D7-2215-310C-9318-41593959ECE3' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5CF38E2A-289B-35D3-A337-38883C521F83' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Vision.framework/Vision
 current-version: 1.0.37

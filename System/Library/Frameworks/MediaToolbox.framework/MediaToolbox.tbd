@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: 5B8743C2-AD08-3BAF-A060-C89D1938B667' ]
+uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: E7369560-F756-393D-8C54-54897FC51F67' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
 objc-constraint: none

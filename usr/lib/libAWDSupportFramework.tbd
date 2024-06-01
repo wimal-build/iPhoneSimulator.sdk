@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3B72D78C-F8B1-3572-89C5-583895F0DEDA', 'x86_64: 058B9666-83FD-3E5A-AB63-8CF628003779' ]
+uuids:           [ 'i386: 3B72D78C-F8B1-3572-89C5-583895F0DEDA', 'x86_64: 0212A5B0-F4E2-3656-BDEA-E44131605E14' ]
 platform:        ios
 install-name:    /usr/lib/libAWDSupportFramework.dylib
 objc-constraint: none
@@ -219,7 +219,9 @@ exports:
                        _AWDPushTopicPolicyChange._timestamp, _AWDPushTopicPolicyChange._topic, 
                        _AWDSpringBoardAppBrightness._appBundleID, _AWDSpringBoardAppBrightness._brightness, 
                        _AWDSpringBoardAppBrightness._duration, _AWDSpringBoardAppBrightness._has, 
-                       _AWDSpringBoardAppBrightness._timestamp, _AWDSpringBoardClawGesture._didPressLock, 
+                       _AWDSpringBoardAppBrightness._timestamp, _AWDSpringBoardBiometricUnlock._has, 
+                       _AWDSpringBoardBiometricUnlock._machTimestampInMilliseconds, 
+                       _AWDSpringBoardBiometricUnlock._timestamp, _AWDSpringBoardClawGesture._didPressLock, 
                        _AWDSpringBoardClawGesture._didPressVolumeDown, _AWDSpringBoardClawGesture._didPressVolumeUp, 
                        _AWDSpringBoardClawGesture._didTriggerSOS, _AWDSpringBoardClawGesture._duration, 
                        _AWDSpringBoardClawGesture._has, _AWDSpringBoardClawGesture._timestamp ]
@@ -292,12 +294,12 @@ exports:
                        _AWDSiriSpeechRecognizedReadFrom, _AWDSiriVoiceRecordingEndReadFrom, 
                        _AWDSiriVoiceRecordingStartReadFrom, _AWDSiriVoiceSendEndReadFrom, 
                        _AWDSiriVoiceSendStartReadFrom, _AWDSpringBoardAppBrightnessReadFrom, 
-                       _AWDSpringBoardBreadcrumbReadFrom, _AWDSpringBoardClawGestureReadFrom, 
-                       _AWDSpringBoardDoNotDisturbChangeReadFrom, _AWDSpringBoardFolderStatsReadFrom, 
-                       _AWDSpringBoardIconLaunchReadFrom, _AWDSpringBoardPressSequenceReadFrom, 
-                       _AWDSpringBoardSOSAlertResponseReadFrom, _AWDSpringBoardSwitcherPresentationInteractionReadFrom, 
-                       _AWDSpringBoardSwitcherToAppTransitionReadFrom, _AWDSpringBoardSystemGestureReadFrom, 
-                       _AWDTupleReadFrom ]
+                       _AWDSpringBoardBiometricUnlockReadFrom, _AWDSpringBoardBreadcrumbReadFrom, 
+                       _AWDSpringBoardClawGestureReadFrom, _AWDSpringBoardDoNotDisturbChangeReadFrom, 
+                       _AWDSpringBoardFolderStatsReadFrom, _AWDSpringBoardIconLaunchReadFrom, 
+                       _AWDSpringBoardPressSequenceReadFrom, _AWDSpringBoardSOSAlertResponseReadFrom, 
+                       _AWDSpringBoardSwitcherPresentationInteractionReadFrom, _AWDSpringBoardSwitcherToAppTransitionReadFrom, 
+                       _AWDSpringBoardSystemGestureReadFrom, _AWDTupleReadFrom ]
     objc-classes:    [ _AWDCFNetworkStreamTaskTiming, _AWDCFNetworkW3CNavigationTiming, 
                        _AWDCompanionSyncErrorEvent, _AWDCompanionSyncErrorNotification, 
                        _AWDCompanionSyncFullSyncDuration, _AWDCompanionSyncReceiveEvent, 
@@ -361,7 +363,8 @@ exports:
                        _AWDSiriServerConnectionStart, _AWDSiriSessionLoadTimeout, 
                        _AWDSiriSpeechRecognized, _AWDSiriVoiceRecordingEnd, _AWDSiriVoiceRecordingStart, 
                        _AWDSiriVoiceSendEnd, _AWDSiriVoiceSendStart, _AWDSpringBoardAppBrightness, 
-                       _AWDSpringBoardBreadcrumb, _AWDSpringBoardClawGesture, _AWDSpringBoardDoNotDisturbChange, 
+                       _AWDSpringBoardBiometricUnlock, _AWDSpringBoardBreadcrumb, 
+                       _AWDSpringBoardClawGesture, _AWDSpringBoardDoNotDisturbChange, 
                        _AWDSpringBoardFolderStats, _AWDSpringBoardIconLaunch, _AWDSpringBoardPressSequence, 
                        _AWDSpringBoardSOSAlertResponse, _AWDSpringBoardSwitcherPresentationInteraction, 
                        _AWDSpringBoardSwitcherToAppTransition, _AWDSpringBoardSystemGesture, 

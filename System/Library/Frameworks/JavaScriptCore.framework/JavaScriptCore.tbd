@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: CB19EDF7-D7EF-3D10-96D3-A06975F9CEA3' ]
+uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 4A6FF503-7974-37E4-83BD-6DA71D00D2B4' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
-current-version: 604.1.38
+current-version: 604.3.5
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

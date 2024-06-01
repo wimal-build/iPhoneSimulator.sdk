@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D2554067-ABEC-3DAA-A0A2-C11FD7CB18D8', 'x86_64: D2C086DA-6C45-370D-B73F-1F72A4E0DF94' ]
+uuids:           [ 'i386: D2554067-ABEC-3DAA-A0A2-C11FD7CB18D8', 'x86_64: 5103D5CA-5D6B-3C55-AD1C-55E931936164' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight
 objc-constraint: none

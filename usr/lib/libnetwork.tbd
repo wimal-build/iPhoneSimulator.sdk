@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7D568B5F-0772-31A2-ACAA-207A8143F831', 'x86_64: AB16C2E6-2051-30C8-8557-B2305B088DE3' ]
+uuids:           [ 'i386: 7D568B5F-0772-31A2-ACAA-207A8143F831', 'x86_64: 4FAC3122-D59A-33B4-B2F8-74C994B7B5F4' ]
 platform:        ios
 install-name:    /usr/lib/libnetwork.dylib
 objc-constraint: none

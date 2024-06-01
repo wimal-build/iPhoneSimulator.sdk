@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 24E649BE-E40F-3080-AC36-71FA52F17912', 'x86_64: 6F45DEC9-4295-354E-94BF-66A9D1475B9E' ]
+uuids:           [ 'i386: 24E649BE-E40F-3080-AC36-71FA52F17912', 'x86_64: ADED2F96-803A-3569-8C67-739F035AE628' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/SceneKit.framework/SceneKit
-current-version: 429.3
+current-version: 431.5
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

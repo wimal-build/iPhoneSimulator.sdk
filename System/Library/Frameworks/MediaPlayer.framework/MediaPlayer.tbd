@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: 95F47C90-97FC-379F-B16D-FA76712A32D5' ]
+uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: 1DB3022E-6772-3C93-8A72-85D962981612' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
 objc-constraint: none
@@ -156,8 +156,8 @@ exports:
                        _MPContentTasteControllerNotificationUserInfoKeyStoreAdamID, 
                        _MPContentTasteControllerNotificationUserInfoKeyTasteType, 
                        _MPContentTasteControllerWillSetTasteTypeNotification, _MPContentTasteTypeFromSSVMediaContentTasteType, 
-                       _MPCreateBlockWithEnforcedQOS, _MPErrorDomain, _MPHasAudioBackgroundMode, 
-                       _MPIsMainScreenMirrored, _MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles, 
+                       _MPCreateBlockWithEnforcedQOS, _MPDispatchToMainQueue, _MPErrorDomain, 
+                       _MPHasAudioBackgroundMode, _MPIsMainScreenMirrored, _MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles, 
                        _MPLanguageOptionCharacteristicDescribesMusicAndSound, _MPLanguageOptionCharacteristicDescribesVideo, 
                        _MPLanguageOptionCharacteristicDubbedTranslation, _MPLanguageOptionCharacteristicEasyToRead, 
                        _MPLanguageOptionCharacteristicIsAuxiliaryContent, _MPLanguageOptionCharacteristicIsMainProgramContent, 
@@ -537,20 +537,20 @@ exports:
                        _MPNowPlayingContentItemUserInfoKeyShouldShowComposer, _MPNowPlayingInfoCollectionIdentifier, 
                        _MPNowPlayingInfoPropertyAssetURL, _MPNowPlayingInfoPropertyAvailableLanguageOptions, 
                        _MPNowPlayingInfoPropertyChapterCount, _MPNowPlayingInfoPropertyChapterNumber, 
-                       _MPNowPlayingInfoPropertyCurrentLanguageOptions, _MPNowPlayingInfoPropertyDefaultPlaybackRate, 
-                       _MPNowPlayingInfoPropertyElapsedPlaybackTime, _MPNowPlayingInfoPropertyExternalContentIdentifier, 
-                       _MPNowPlayingInfoPropertyExternalUserProfileIdentifier, _MPNowPlayingInfoPropertyIsLiveStream, 
-                       _MPNowPlayingInfoPropertyMediaType, _MPNowPlayingInfoPropertyPlaybackProgress, 
-                       _MPNowPlayingInfoPropertyPlaybackQueueCount, _MPNowPlayingInfoPropertyPlaybackQueueIndex, 
-                       _MPNowPlayingInfoPropertyPlaybackRate, _MPNowPlayingInfoPropertyServiceIdentifier, 
-                       _MPNowPlayingObserverArtworkCacheIdentifier, _MPNowPlayingPlaybackStateFromMediaRemotePlaybackState, 
-                       _MPNowPlayingPlaybackStateToMediaRemotePlaybackState, _MPPComparisonTypeFromProtocolComparisonType, 
-                       _MPPCompoundPredicateReadFrom, _MPPConditionalPredicateReadFrom, 
-                       _MPPCreateFoundationObjectFromPredicateValue, _MPPCreateMediaPredicateFromProtocolPredicate, 
-                       _MPPCreatePredicateValueFromFoundationObject, _MPPEntityOrderFromProtocolEntityOrder, 
-                       _MPPEntityTypeFromProtocolEntityType, _MPPMediaGroupingTypeFromProtocolGroupingType, 
-                       _MPPMediaPredicateReadFrom, _MPPMediaPredicateValueReadFrom, 
-                       _MPPMediaQueryReadFrom, _MPPPersistentIDsPredicateReadFrom, 
+                       _MPNowPlayingInfoPropertyCurrentLanguageOptions, _MPNowPlayingInfoPropertyCurrentPlaybackDate, 
+                       _MPNowPlayingInfoPropertyDefaultPlaybackRate, _MPNowPlayingInfoPropertyElapsedPlaybackTime, 
+                       _MPNowPlayingInfoPropertyExternalContentIdentifier, _MPNowPlayingInfoPropertyExternalUserProfileIdentifier, 
+                       _MPNowPlayingInfoPropertyIsLiveStream, _MPNowPlayingInfoPropertyMediaType, 
+                       _MPNowPlayingInfoPropertyPlaybackProgress, _MPNowPlayingInfoPropertyPlaybackQueueCount, 
+                       _MPNowPlayingInfoPropertyPlaybackQueueIndex, _MPNowPlayingInfoPropertyPlaybackRate, 
+                       _MPNowPlayingInfoPropertyServiceIdentifier, _MPNowPlayingObserverArtworkCacheIdentifier, 
+                       _MPNowPlayingPlaybackStateFromMediaRemotePlaybackState, _MPNowPlayingPlaybackStateToMediaRemotePlaybackState, 
+                       _MPPComparisonTypeFromProtocolComparisonType, _MPPCompoundPredicateReadFrom, 
+                       _MPPConditionalPredicateReadFrom, _MPPCreateFoundationObjectFromPredicateValue, 
+                       _MPPCreateMediaPredicateFromProtocolPredicate, _MPPCreatePredicateValueFromFoundationObject, 
+                       _MPPEntityOrderFromProtocolEntityOrder, _MPPEntityTypeFromProtocolEntityType, 
+                       _MPPMediaGroupingTypeFromProtocolGroupingType, _MPPMediaPredicateReadFrom, 
+                       _MPPMediaPredicateValueReadFrom, _MPPMediaQueryReadFrom, _MPPPersistentIDsPredicateReadFrom, 
                        _MPPPropertyPredicateReadFrom, _MPPProtocolComparisonTypeFromComparisonType, 
                        _MPPProtocolEntityOrderFromEntityOrder, _MPPProtocolEntityTypeFromEntityType, 
                        _MPPProtocolGroupingTypeFromMediaGroupingType, _MPPSearchStringPredicateReadFrom, 

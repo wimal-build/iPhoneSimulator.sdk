@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 58B2D18A-CA77-347D-BE24-C9A3E1C748F9', 'x86_64: 0C8A1A52-2E3F-36F0-9162-910B04D923D2' ]
+uuids:           [ 'i386: 58B2D18A-CA77-347D-BE24-C9A3E1C748F9', 'x86_64: 5A9B062C-4B16-303F-BE85-6DBF41CAA05F' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 current-version: 492

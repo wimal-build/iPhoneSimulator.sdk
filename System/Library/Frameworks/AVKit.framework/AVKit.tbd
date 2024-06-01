@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: A653101F-A30C-3150-ADB7-CFE1DFBE679F' ]
+uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: C909F5AD-0BFE-3000-B37C-D0BDA0D957AF' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVKit.framework/AVKit
 objc-constraint: none
@@ -14,19 +14,20 @@ exports:
                        _AVMediaSelectionOffOption, _AVMicaPackageNameRoutePickerCircularGlyph, 
                        _AVMicaPackageNameRoutePickerSquareGlyph, _AVMicaPackageNameVolumeGlyph, 
                        _AVMobileImageNameDone, _AVMobileImageNameEnterFullScreen, 
-                       _AVMobileImageNameExitFullScreen, _AVMobileImageNameFullScreenAirPlay, 
-                       _AVMobileImageNameFullScreenEnterPIP, _AVMobileImageNameFullScreenGotoLive, 
-                       _AVMobileImageNameFullScreenMediaSelection, _AVMobileImageNameFullScreenPause, 
-                       _AVMobileImageNameFullScreenPlay, _AVMobileImageNameFullScreenSkipBack15, 
-                       _AVMobileImageNameFullScreenSkipForward15, _AVMobileImageNameInlineAirPlay, 
-                       _AVMobileImageNameInlineEnterPIP, _AVMobileImageNameInlineGotoLive, 
-                       _AVMobileImageNameInlineMediaSelection, _AVMobileImageNameInlinePause, 
-                       _AVMobileImageNameInlinePlay, _AVMobileImageNameInlineSkipBack15, 
-                       _AVMobileImageNameInlineSkipForward15, _AVMobileImageNameProminentPlayLarge, 
-                       _AVMobileImageNameProminentPlaySmall, _AVMobileImageNameVolumeHigh, 
-                       _AVMobileImageNameVolumeLow, _AVMobileImageNameVolumeMedium, 
-                       _AVMobileImageNameVolumeMuted, _AVMobileImageNameVolumeZero, 
-                       _AVNowPlayingInfoControllerDidReceiveStopCommandEventNotification, 
+                       _AVMobileImageNameFullScreenAirPlay, _AVMobileImageNameFullScreenEnterPIP, 
+                       _AVMobileImageNameFullScreenGotoLive, _AVMobileImageNameFullScreenMediaSelection, 
+                       _AVMobileImageNameFullScreenPause, _AVMobileImageNameFullScreenPlay, 
+                       _AVMobileImageNameFullScreenSkipBack15, _AVMobileImageNameFullScreenSkipForward15, 
+                       _AVMobileImageNameInlineAirPlay, _AVMobileImageNameInlineEnterPIP, 
+                       _AVMobileImageNameInlineGotoLive, _AVMobileImageNameInlineMediaSelection, 
+                       _AVMobileImageNameInlinePause, _AVMobileImageNameInlinePlay, 
+                       _AVMobileImageNameInlineSkipBack15, _AVMobileImageNameInlineSkipForward15, 
+                       _AVMobileImageNameProminentPlayLarge, _AVMobileImageNameProminentPlaySmall, 
+                       _AVMobileImageNameScaleToFillLetterbox, _AVMobileImageNameScaleToFillPillarbox, 
+                       _AVMobileImageNameScaleToFitLetterbox, _AVMobileImageNameScaleToFitPillarbox, 
+                       _AVMobileImageNameVolumeHigh, _AVMobileImageNameVolumeLow, 
+                       _AVMobileImageNameVolumeMedium, _AVMobileImageNameVolumeMuted, 
+                       _AVMobileImageNameVolumeZero, _AVNowPlayingInfoControllerDidReceiveStopCommandEventNotification, 
                        _AVNowPlayingInfoControllerIdentifierKey, _AVObjectDesc, _AVPlayerControllerCurrentTimeJumpedNotification, 
                        _AVPlayerControllerDidSeekChapterChapterKey, _AVPlayerControllerDidSeekChapterNotification, 
                        _AVPlayerControllerPlaybackDidEndNotification, _AVRoutePickerGlyphStateNameActive, 

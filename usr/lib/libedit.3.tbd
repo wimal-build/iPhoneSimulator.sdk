@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EA0AEBB5-8CFF-39FC-A301-F1090FBC6C13', 'x86_64: A2D26683-8422-385B-86AE-E42E6D0726A4' ]
+uuids:           [ 'i386: EA0AEBB5-8CFF-39FC-A301-F1090FBC6C13', 'x86_64: EB72B1A5-74AB-3281-A732-B3F744193EF1' ]
 platform:        ios
 install-name:    /usr/lib/libedit.3.dylib
 current-version: 3

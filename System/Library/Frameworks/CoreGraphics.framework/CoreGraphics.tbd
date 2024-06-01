@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 3C85D8C8-090C-3502-8430-CDD2414C2E2A' ]
+uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 8266A922-899F-309C-895B-76BA1BDFC2EA' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 current-version: 1125.2.1

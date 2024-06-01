@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D20DE7FD-92D3-3C03-9CA6-5470FC34DF9C' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: BE10B86D-5446-3EEC-BB76-5AFA6DDB98F9' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
 current-version: 88.2

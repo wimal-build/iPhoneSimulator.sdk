@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADDA75B9-764A-387D-81E9-39CCE6592628', 'x86_64: CF54FB37-1B29-3480-9ECD-6273DD7CCB95' ]
+uuids:           [ 'i386: ADDA75B9-764A-387D-81E9-39CCE6592628', 'x86_64: BFA0305A-9363-3D4D-93FC-9027CBF9A82E' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Intents.framework/Intents
 objc-constraint: none

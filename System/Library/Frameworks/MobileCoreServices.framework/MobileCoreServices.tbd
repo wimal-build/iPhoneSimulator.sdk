@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3DE0E92C-0A96-3FFA-9534-FC12B21DAFB6', 'x86_64: 61134EE0-F6DC-3409-B218-4C5AD9575FC0' ]
+uuids:           [ 'i386: 3DE0E92C-0A96-3FFA-9534-FC12B21DAFB6', 'x86_64: 82BCFD09-2F52-3E8E-B13E-DD16BDB8FF0F' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-current-version: 822.8
+current-version: 822.12
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

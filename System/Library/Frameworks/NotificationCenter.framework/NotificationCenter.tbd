@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A4135715-C63F-3E6F-B1BE-22F9F6C3AAE2', 'x86_64: 5F80B2AB-A52D-3B8E-849D-60916CE451EF' ]
+uuids:           [ 'i386: A4135715-C63F-3E6F-B1BE-22F9F6C3AAE2', 'x86_64: 9A2E3EAA-104B-3849-8B81-E863979E1201' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/NotificationCenter.framework/NotificationCenter
 objc-constraint: none

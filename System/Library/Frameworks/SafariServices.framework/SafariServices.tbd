@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: 92248007-58DD-32FA-8458-90E908DB6505' ]
+uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: 766EE502-386D-3225-991A-A2F8C218A383' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/SafariServices.framework/SafariServices
 objc-constraint: none
@@ -22,17 +22,16 @@ exports:
                        __SFApplePayDisclosureAllowedKey, __SFApplicationNameForUserAgent, 
                        __SFAudioPlaybackRequiresUserActionKey, __SFAuthenticationContextDidInvalidateNotification, 
                        __SFAuthenticationContextErrorDomain, __SFAuthenticationContextInvalidatedError, 
-                       __SFAuthenticationContextNoTimeout, __SFAutoFillRequiresAuthenticationDefaultsKey, 
-                       __SFAutomaticallyArchiveReadingListItemsEnabledKey, __SFBackdropGroupNameForOwner, 
-                       __SFCGRectGrowToSize, __SFCeilingFloatToPixels, __SFClampPercent, 
-                       __SFContentBlockerStoreURL, __SFCustomUserAgentStringIfNeeded, 
+                       __SFAuthenticationContextNoTimeout, __SFAutomaticallyArchiveReadingListItemsEnabledKey, 
+                       __SFBackdropGroupNameForOwner, __SFCGRectGrowToSize, __SFCeilingFloatToPixels, 
+                       __SFClampPercent, __SFContentBlockerStoreURL, __SFCustomUserAgentStringIfNeeded, 
                        __SFDeviceSupportsHighQualityGraphics, __SFDisableICECandidateFiltering, 
                        __SFDoNotTrackEnabledDefaultsKey, __SFEnableEnumeratingAllNetworkInterfaces, 
                        __SFEnableMediaCapture, __SFEnableMockCaptureDevices, __SFEnableWebRTCLegacyAPI, 
                        __SFEqualWithEpsilon, __SFFloorFloatToPixels, __SFHasCompletedReadingListArchivePreferenceMigrationKey, 
                        __SFImageForMediaCaptureDeviceIcon, __SFIncrementAggdKey, 
-                       __SFInlineMediaPlaybackRequiresPlaysInlineAttributeKey, __SFInterpolate, 
-                       __SFInvisibleAutoplayNotPermittedKey, __SFJavaScriptCanOpenWindowsAutomaticallyDefaultsKey, 
+                       __SFInlineMediaPlaybackRequiresPlaysInlineAttributeKey, __SFInsetIsInvalid, 
+                       __SFInterpolate, __SFInvisibleAutoplayNotPermittedKey, __SFJavaScriptCanOpenWindowsAutomaticallyDefaultsKey, 
                        __SFJavaScriptEnabledDefaultsKey, __SFLegacyEncryptedMediaAPIEnabledKey, 
                        __SFLocalizedTitleStringForShortcutItemType, __SFLowDataModeEnabledKey, 
                        __SFMacSafariUserAgentString, __SFMainContentUserGestureOverrideEnabledKey, 
@@ -87,10 +86,10 @@ exports:
                        __SFImageActivityItemProvider, __SFInjectedJavaScriptController, 
                        __SFKillWebContentProcessUIActivity, __SFLinkPreviewHeader, 
                        __SFMailContentProvider, __SFManagedActivityViewController, 
-                       __SFMicrodataExtractor, __SFNavigationBar, __SFNavigationBarItem, 
-                       __SFNavigationIntent, __SFNavigationResult, __SFPageLoadErrorController, 
-                       __SFPopoverSizingTableViewController, __SFPrintController, 
-                       __SFQRCodeDetectionController, __SFQRImagePreviewViewController, 
+                       __SFManagedFeatureObserver, __SFMicrodataExtractor, __SFNavigationBar, 
+                       __SFNavigationBarItem, __SFNavigationIntent, __SFNavigationResult, 
+                       __SFPageLoadErrorController, __SFPopoverSizingTableViewController, 
+                       __SFPrintController, __SFQRCodeDetectionController, __SFQRImagePreviewViewController, 
                        __SFQuickLookDocument, __SFQuickLookDocumentController, __SFQuickLookDocumentView, 
                        __SFQuickLookDocumentWriter, __SFReaderAppearanceViewController, 
                        __SFReaderController, __SFReaderCustomProtocols, __SFReaderWebProcessPlugInPageController, 

@@ -48,6 +48,7 @@
 #import <AVFoundation/AVCaptureInput.h>
 #import <AVFoundation/AVCaptureOutput.h>
 #import <AVFoundation/AVCaptureSession.h>
+#import <AVFoundation/AVCaptureSystemPressure.h>
 #import <AVFoundation/AVCaptureVideoPreviewLayer.h>
 #endif
 

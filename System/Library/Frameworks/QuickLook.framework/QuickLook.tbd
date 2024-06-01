@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 28B7E15A-3DDB-3034-8F9D-7365749A437B', 'x86_64: 0CF4C229-D775-39D2-BA61-6B958E5A616B' ]
+uuids:           [ 'i386: 28B7E15A-3DDB-3034-8F9D-7365749A437B', 'x86_64: 33888718-EA6C-3E48-900A-798D2584B604' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/QuickLook.framework/QuickLook
 objc-constraint: none

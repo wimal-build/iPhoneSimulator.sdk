@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CE38C631-B119-3BC5-AF68-C1739DA40E68', 'x86_64: E2A438D5-F550-37DD-A751-CEE04B8D56F9' ]
+uuids:           [ 'i386: CE38C631-B119-3BC5-AF68-C1739DA40E68', 'x86_64: 34B7229A-06DA-3C65-AB12-A96DDC4A0E81' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 objc-constraint: none

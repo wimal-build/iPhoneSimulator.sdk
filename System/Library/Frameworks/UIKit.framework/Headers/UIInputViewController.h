@@ -40,6 +40,9 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController 
 // If specified, this will supersede any PrimaryLanguage in the Info.plist.
 @property (nullable, nonatomic, copy) NSString *primaryLanguage;
 
+// When this property is set to YES, the system dictation key, if provided, will be disabled. 
+@property (nonatomic) BOOL hasDictationKey;
+
 @property (nonatomic, readonly) BOOL hasFullAccess API_AVAILABLE(ios(11.0));
 @property (nonatomic, readonly) BOOL needsInputModeSwitchKey API_AVAILABLE(ios(11.0));
 

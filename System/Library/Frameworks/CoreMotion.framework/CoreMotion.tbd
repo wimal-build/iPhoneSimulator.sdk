@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: 25945538-0816-3CFE-B7C7-9E7B47D8E813' ]
+uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: C0103509-C496-3439-83BC-E2DAF455B1A6' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-current-version: 2235.0.2
+current-version: 2236.0.11
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

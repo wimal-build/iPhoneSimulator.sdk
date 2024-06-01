@@ -181,6 +181,8 @@ Classes:
     MethodKind: Class
     Availability: nonswift
     AvailabilityMsg: 'use object initializers instead'
+- Name: AVCaptureSystemPressureState
+  SwiftName: AVCaptureDevice.SystemPressureState
 - Name: AVCaptureVideoDataOutput
   Methods:
   - Selector: 'availableVideoCodecTypesForAssetWriterWithOutputFileType:'
@@ -549,6 +551,8 @@ Tags:
   SwiftName: AVCaptureOutput.DataDroppedReason
 - Name: AVCaptureSessionInterruptionReason
   SwiftName: AVCaptureSession.InterruptionReason
+- Name: AVCaptureSystemPressureFactors
+  SwiftName: AVCaptureSystemPressureState.Factors
 - Name: AVCaptureTorchMode
   SwiftName: AVCaptureDevice.TorchMode
 - Name: AVCaptureWhiteBalanceMode
@@ -566,6 +570,8 @@ Typedefs:
   SwiftName: AVCaptureDevice.DeviceType
 - Name: AVCaptureSessionPreset
   SwiftName: AVCaptureSession.Preset
+- Name: AVCaptureSystemPressureLevel
+  SwiftName: AVCaptureSystemPressureState.Level
 - Name: AVCaptureWhiteBalanceChromaticityValues
   SwiftName: AVCaptureDevice.WhiteBalanceChromaticityValues
 - Name: AVCaptureWhiteBalanceGains

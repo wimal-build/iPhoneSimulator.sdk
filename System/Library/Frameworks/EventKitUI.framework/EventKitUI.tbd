@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 2507261C-2149-3667-A4DD-8721F3C7EDCE' ]
+uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: EE3E2255-7008-3EAC-A6F8-69DAB4A4F10C' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/EventKitUI.framework/EventKitUI
 objc-constraint: none
@@ -21,16 +21,16 @@ exports:
     objc-ivars:      [ _EKCalendarChooserCell._checkMarkColor, _EKCalendarChooserCell._colorDotAttachment, 
                        _EKEventAttendeesEditViewController._picker, _PreferencesTwoPartValueCell._largePart2TextLabel ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _AdjustedColorForColor, _AllDayBottomPadding, _BirthdayImage, 
-                       _BirthdayMonthCalendarColor, _BirthdayPadDayViewImage, _BirthdayPadMonthViewImage, 
-                       _BirthdayPadWeekViewImage, _BirthdayPhoneSmallImage, _BusyImage, 
-                       _CalCalendar, _CalCeilToScreenScale, _CalCheckEventStartDateAgainstOccurrenceCacheBounds, 
-                       _CalDateComponentsForRecurrenceTypeAndInterval, _CalDateCountdownString, 
-                       _CalDateIntervalMonthDayYear, _CalDateIntervalMonthYear, _CalDateIntervalShortMonthDay, 
-                       _CalDateIntervalShortMonthDayYear, _CalDateIntervalShortMonthYear, 
-                       _CalDateIntervalVeryShortMonthDay, _CalDayLongMonthStringForDate, 
-                       _CalDetailStringsForCalendarEvent, _CalDetailStringsForDate, 
-                       _CalDetermineWeekStart, _CalDisplayStringForAvailability, 
+    symbols:         [ _AdjustedColorForBackgroundColor, _AdjustedColorForColor, 
+                       _AllDayBottomPadding, _BirthdayImage, _BirthdayMonthCalendarColor, 
+                       _BirthdayPadDayViewImage, _BirthdayPadMonthViewImage, _BirthdayPadWeekViewImage, 
+                       _BirthdayPhoneSmallImage, _BusyImage, _CalCalendar, _CalCeilToScreenScale, 
+                       _CalCheckEventStartDateAgainstOccurrenceCacheBounds, _CalDateComponentsForRecurrenceTypeAndInterval, 
+                       _CalDateCountdownString, _CalDateIntervalMonthDayYear, _CalDateIntervalMonthYear, 
+                       _CalDateIntervalShortMonthDay, _CalDateIntervalShortMonthDayYear, 
+                       _CalDateIntervalShortMonthYear, _CalDateIntervalVeryShortMonthDay, 
+                       _CalDayLongMonthStringForDate, _CalDetailStringsForCalendarEvent, 
+                       _CalDetailStringsForDate, _CalDetermineWeekStart, _CalDisplayStringForAvailability, 
                        _CalDisplayStringForNotificationIdentity, _CalDisplayStringForTravelTimeUsingShortFormat, 
                        _CalDisplayStringLocationUsingFirstCommaSeparatedFragment, 
                        _CalDisplayStringLocationUsingFirstLine, _CalDisplayStringTravelTimeAndDuration, 
@@ -94,7 +94,7 @@ exports:
                        _CalendarAppTintColor, _CalendarColorDonutImageForColor, _CalendarColorDotImageForColor, 
                        _CalendarColorDotImageForColorAndRadius, _CalendarColorDotImageForColorNeue, 
                        _CalendarColorDotImageForColor_SuggestedEvent, _CalendarColorDotImageWithDashedOutlineForColor, 
-                       _CalendarColorIsWhite, _CalendarDataSourceSearchResultsAvailableNotification, 
+                       _CalendarColorIsBlack, _CalendarColorIsWhite, _CalendarDataSourceSearchResultsAvailableNotification, 
                        _CalendarExtraLightGrayBarColor, _CalendarForegroundColorForColor, 
                        _CalendarImageWithInset, _CalendarInvitationDot, _CalendarInvitationTitleColor, 
                        _CalendarInvitationTitleColorOpaque, _CalendarModelAccountErrorCountChangedNotification, 

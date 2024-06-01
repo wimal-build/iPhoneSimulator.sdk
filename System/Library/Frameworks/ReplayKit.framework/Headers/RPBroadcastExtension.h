@@ -82,6 +82,13 @@ typedef NS_ENUM(NSInteger, RPSampleBufferType) {
 };
 
 /*!
+ @key RPVideoSampleOrientationKey
+ @abstract Use this key in conjunction with CMGetAttachment on CMSampleBufferRef to get the orientation for the sample. The orientation will follow the enum CGImagePropertyOrientation
+ */
+API_AVAILABLE(ios(11.0),tvos(11.0))
+extern NSString *const RPVideoSampleOrientationKey;
+
+/*!
  @class RPBroadcastSampleHandler
  @abstract Subclass this class to handle CMSampleBuffer objects as they are captured by ReplayKit. To enable this mode of handling, set the RPBroadcastProcessMode in the extension's info.plist to RPBroadcastProcessModeSampleBuffer.
  */

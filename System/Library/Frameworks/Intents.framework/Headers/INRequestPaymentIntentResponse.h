@@ -21,7 +21,8 @@ typedef NS_ENUM(NSInteger, INRequestPaymentIntentResponseCode) {
     INRequestPaymentIntentResponseCodeFailurePaymentsAmountAboveMaximum,
     INRequestPaymentIntentResponseCodeFailurePaymentsCurrencyUnsupported,
     INRequestPaymentIntentResponseCodeFailureNoBankAccount,
-    INRequestPaymentIntentResponseCodeFailureNotEligible,
+    INRequestPaymentIntentResponseCodeFailureNotEligible API_AVAILABLE(ios(11.0), watchos(4.0)),
+    INRequestPaymentIntentResponseCodeFailureTermsAndConditionsAcceptanceRequired API_AVAILABLE(ios(11.1), watchos(4.1)),
 } API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN

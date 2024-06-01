@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A245CB39-B6B8-39A1-B653-3FD4535483BF', 'x86_64: DECB44B9-F1D9-3AFA-9B1E-F6D61BAFCCFB' ]
+uuids:           [ 'i386: A245CB39-B6B8-39A1-B653-3FD4535483BF', 'x86_64: 62330F1E-6EED-3440-89DC-47430BEAB248' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MessageUI.framework/MessageUI
-current-version: 3445.0.12
+current-version: 3445.4.9
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -29,18 +29,18 @@ exports:
                        _MFPhoneSearchOperation, _MFPlaceholderMessageRewriter, _MFRecentsSearchOperation, 
                        _MFRecipientTableViewCellDetailView, _MFRecipientTableViewCellTitleView, 
                        _MFReformattedAddress, _MFSearchInAccountWithIDOperation, 
-                       _MFUbiquitouslyPersistedDictionary, _MFWebKitMainThread, __MFAtomContainerView, 
-                       __MFAtomTextAttachment, __MFAtomTextSelectionRect, __MFAtomTextView, 
-                       __MFAutocompleteResultsTableViewModel, __MFCRRecentContactABContext, 
-                       __MFCountableMatchesContext, __MFFontToFontDescriptorTransformer, 
-                       __MFMailAccountProxySource, __MFMailComposeAttachmentLoader, 
-                       __MFMailComposeAttachmentWrapper, __MFMailComposePlaceholderView, 
-                       __MFMailRecipientTextField, __MFMessageAppExtensionContext, 
-                       __MFMessageAppExtensionHostContext, __MFMessageBodyConsumableNewline, 
-                       __MFMessageBodyDOMElement, __MFMessageBodyHTMLElement, __MFMessageContext, 
-                       __MFMessageMediaPayload, __MFModernAddressAtomEffectButton, 
-                       __MFParsedHTMLNode, __MFParsedHTMLTag, __MFParsedHTMLText, 
-                       __MFPlaceholderComposeRecipient, __MFQuoteLevelPopoverViewController, 
+                       _MFUbiquitouslyPersistedDictionary, _MFVariableLayoutConstraint, 
+                       _MFWebKitMainThread, __MFAtomContainerView, __MFAtomTextAttachment, 
+                       __MFAtomTextSelectionRect, __MFAtomTextView, __MFAutocompleteResultsTableViewModel, 
+                       __MFCRRecentContactABContext, __MFCountableMatchesContext, 
+                       __MFFontToFontDescriptorTransformer, __MFMailAccountProxySource, 
+                       __MFMailComposeAttachmentLoader, __MFMailComposeAttachmentWrapper, 
+                       __MFMailComposePlaceholderView, __MFMailRecipientTextField, 
+                       __MFMessageAppExtensionContext, __MFMessageAppExtensionHostContext, 
+                       __MFMessageBodyConsumableNewline, __MFMessageBodyDOMElement, 
+                       __MFMessageBodyHTMLElement, __MFMessageContext, __MFMessageMediaPayload, 
+                       __MFModernAddressAtomEffectButton, __MFParsedHTMLNode, __MFParsedHTMLTag, 
+                       __MFParsedHTMLText, __MFPlaceholderComposeRecipient, __MFQuoteLevelPopoverViewController, 
                        __MFSearchAddResultsOperation, __MFSearchProcessResultsOperation, 
                        __MFSecureMIMEPersonHeaderBackgroundView, __MFSecureMIMEPersonHeaderLabel, 
                        __MFTableCellAttributesCache, __MFValueTransformer ]
@@ -88,17 +88,19 @@ exports:
                        _MFAttachmentAttributeActionKey, _MFAttachmentAttributeContentIDKey, 
                        _MFAttachmentAttributeContentTypeKey, _MFAttachmentAttributeProgressKey, 
                        _MFAttachmentAttributeSubtitleKey, _MFAttachmentAttributeTitleKey, 
-                       _MFCSSLinkColor, _MFCSSStringFromDictionary, _MFCameraRollSaveAssetWithURL, 
-                       _MFCameraRollSaveImage, _MFComposeBodyFieldAttachmentURLsDeletedNotification, 
-                       _MFComposeBodyFieldAttachmentURLsLoadedNotification, _MFComposeBodyFieldBecameFirstResponderDeferred, 
-                       _MFComposeBodyFieldEmptyString, _MFComposeRecipientDragType, 
-                       _MFComposeRecipientStringMatchAddress, _MFComposeRecipientStringMatchFirstName, 
-                       _MFComposeRecipientStringMatchLastName, _MFComposeRecipientStringMatchMiddleName, 
-                       _MFComposeRecipientStringMatchType, _MFComposeRecipientTextViewIsCollectingPreviousKeyResponder, 
+                       _MFAutomaticHorizontalEdgeInsets, _MFCSSLinkColor, _MFCSSStringFromDictionary, 
+                       _MFCameraRollSaveAssetWithURL, _MFCameraRollSaveImage, _MFCenteredRectInRectWithViewScale, 
+                       _MFComposeBodyFieldAttachmentURLsDeletedNotification, _MFComposeBodyFieldAttachmentURLsLoadedNotification, 
+                       _MFComposeBodyFieldBecameFirstResponderDeferred, _MFComposeBodyFieldEmptyString, 
+                       _MFComposeRecipientDragType, _MFComposeRecipientStringMatchAddress, 
+                       _MFComposeRecipientStringMatchFirstName, _MFComposeRecipientStringMatchLastName, 
+                       _MFComposeRecipientStringMatchMiddleName, _MFComposeRecipientStringMatchType, 
+                       _MFComposeRecipientTextViewIsCollectingPreviousKeyResponder, 
                        _MFComposeRecipientViewDidChangeNotification, _MFContentTypeIsPlainText, 
                        _MFCopyClosestMatchingExistingPersonUsingAddressesAndDisplayName, 
                        _MFDefaultComposeFontPixelSize, _MFDefaultSendingAccountKey, 
-                       _MFFileAttachmentsKey, _MFFirstIndexInRangePassingTest, _MFFirstIndexPassingTest, 
+                       _MFEdgeInsetsFromDirectionalEdgeInsets, _MFFileAttachmentsKey, 
+                       _MFFirstIndexInRangePassingTest, _MFFirstIndexPassingTest, 
                        _MFFloatToCSSPixelString, _MFFontMetricCacheInvalidationNotification, 
                        _MFHtmlEdgeToEdgeParagraphElementClassName, _MFHtmlIDSelectionEnd, 
                        _MFHtmlIDSelectionStart, _MFHtmlTemporaryEditingElement, _MFHtmlTemporaryPresentationElement, 
@@ -130,10 +132,11 @@ exports:
                        _MFModernUIApplicationPreferredContentSizeCode, _MFModernUIApplicationPreferredContentSizeIsAccessibility, 
                        _MFModernUIApplicationPreferredContentSizeIsLargerThanLarge, 
                        _MFModernUIContentSizeAwareImageNameWithPrefix, _MFModernUIContentSizeCategoryOrdering, 
-                       _MFPreferredAbbreviatedNameForAddressAndDisplayName, _MFPreferredCompositeNameForAddressAndDisplayName, 
-                       _MFPreferredCompositeNameForPerson, _MFUTTypeInternalMessageTransfer, 
-                       _MFUserStyleSheetCSS, _MFUserStyleSheetDictionary, _MFWebDataProtocolScheme, 
-                       __MFShowAttachmentMarkup, _kMFContinuationErrorDomain, _kMFMessageProgressLayerFadeDuration ]
+                       _MFPointRoundedToViewScale, _MFPreferredAbbreviatedNameForAddressAndDisplayName, 
+                       _MFPreferredCompositeNameForAddressAndDisplayName, _MFPreferredCompositeNameForPerson, 
+                       _MFUTTypeInternalMessageTransfer, _MFUserStyleSheetCSS, _MFUserStyleSheetDictionary, 
+                       _MFWebDataProtocolScheme, __MFShowAttachmentMarkup, _kMFContinuationErrorDomain, 
+                       _kMFMessageProgressLayerFadeDuration ]
     objc-classes:    [ _MFAddressBookManager, _MFAddressConcatenator, _MFAddressPickerReformatter, 
                        _MFAtomTextView, _MFAttachmentDragPreviewInfo, _MFAttachmentImageGenerator, 
                        _MFAttachmentPasteboardRepresentation, _MFAutocompleteResultsTableViewController, 
@@ -166,8 +169,7 @@ exports:
                        _MFProgressView, _MFRecentComposeRecipient, _MFRecentComposeRecipientGroup, 
                        _MFRecipientTableViewCell, _MFSearchShadowView, _MFSecureMIMEPersonHeaderView, 
                        _MFSimpleAnimationCoordinator, _MFSoundController, _MFSpringAnimation, 
-                       _MFStringAccumulator, _MFVariableLayoutConstraint, __MFAtomFieldEditor, 
-                       __MFMailCompositionContext ]
+                       _MFStringAccumulator, __MFAtomFieldEditor, __MFMailCompositionContext ]
     objc-ivars:      [ _MFAttachmentImageGenerator._displayString, _MFAttachmentImageGenerator._image, 
                        _MFAttachmentImageGenerator._maxImageHeight, _MFAttachmentImageGenerator._textSize, 
                        _MFCalendarComposeRecipient._calAttendeeName, _MFCalendarComposeRecipient._participant, 

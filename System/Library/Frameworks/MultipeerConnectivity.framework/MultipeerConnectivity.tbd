@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: E971124E-A940-3AFA-B22C-5FA32DECE092' ]
+uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: 38D605B5-CD06-3BC1-AC63-48A9D98632EE' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity
-current-version: 146
+current-version: 146.1
 objc-constraint: none
 exports:         
   - archs:           [ x86_64 ]

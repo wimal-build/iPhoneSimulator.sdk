@@ -11,6 +11,7 @@ typedef NS_ENUM(NSInteger, INSendPaymentPayeeUnsupportedReason) {
     INSendPaymentPayeeUnsupportedReasonCredentialsUnverified = 1,
     INSendPaymentPayeeUnsupportedReasonInsufficientFunds,
     INSendPaymentPayeeUnsupportedReasonNoAccount,
+    INSendPaymentPayeeUnsupportedReasonNoValidHandle API_AVAILABLE(ios(11.1), watchos(4.1)),
 } API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN

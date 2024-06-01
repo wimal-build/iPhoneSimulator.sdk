@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: A49F8B01-2B9D-3AB5-B786-F5BB045187BE' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: AA42C5E1-F77A-399B-A487-7A77E7CFF4A2' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/WebKit.framework/WebKit
-current-version: 604.1.38
+current-version: 604.3.5
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
