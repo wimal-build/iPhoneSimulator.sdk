@@ -2,7 +2,7 @@
 //  INSpatialEventTrigger.h
 //  Intents
 //
-//  Copyright (c) 2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,13 +13,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(macosx(10.13), ios(11.0), watchos(4.0))
-@interface INSpatialEventTrigger : NSObject <NSSecureCoding>
+API_AVAILABLE(ios(11.0), watchos(4.0))
+API_UNAVAILABLE(macosx)
+@interface INSpatialEventTrigger : NSObject <NSCopying, NSSecureCoding>
 
-- (instancetype)initWithPlacemark:(CLPlacemark *)placemark event:(INSpatialEvent)event;
+- (instancetype)initWithPlacemark:(CLPlacemark *)placemark
+                            event:(INSpatialEvent)event NS_DESIGNATED_INITIALIZER;
 
-@property (readonly) CLPlacemark *placemark;
-@property (readonly) INSpatialEvent event;
+@property (readonly, copy, NS_NONATOMIC_IOSONLY) CLPlacemark *placemark;
+
+@property (readonly, assign, NS_NONATOMIC_IOSONLY) INSpatialEvent event;
 
 @end
+
 NS_ASSUME_NONNULL_END

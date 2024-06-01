@@ -1,6 +1,6 @@
 /* CoreAnimation - CAEAGLLayer.h
 
-   Copyright (c) 2007-2017, Apple Inc.
+   Copyright (c) 2007-2018, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CALayer.h>
@@ -13,7 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
  * `drawableProperties' property defined by the protocol to configure
  * the created surface. */
 
-CA_CLASS_AVAILABLE_IOS(2.0, 9.0, 2.0)
+#ifndef GLES_SILENCE_DEPRECATION
+API_DEPRECATED("OpenGLES is deprecated",
+               ios(2.0, 12.0), watchos(2.0, 5.0), tvos(9.0, 12.0))
+#else
+API_AVAILABLE(ios(2.0), watchos(2.0), tvos(9.0))
+#endif
+API_UNAVAILABLE(macos)
 @interface CAEAGLLayer : CALayer <EAGLDrawable>
 {
 @private
@@ -25,7 +31,7 @@ CA_CLASS_AVAILABLE_IOS(2.0, 9.0, 2.0)
  * changes to the GLES content are sent to the screen via the standard
  * CATransaction mechanisms. */
 
-@property BOOL presentsWithTransaction CA_AVAILABLE_IOS_STARTING (9.0, 9.0, 2.0);
+@property BOOL presentsWithTransaction API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0));
 
 /* Note: the default value of the `opaque' property in this class is true,
  * not false as in CALayer. */

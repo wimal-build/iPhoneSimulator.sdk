@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 72975735-ED0B-3F5F-9C76-BAC9732F5BDA', 'x86_64: 2269EA8C-8E77-32C6-BBD4-CB0993769FD2' ]
+uuids:           [ 'i386: 72975735-ED0B-3F5F-9C76-BAC9732F5BDA', 'x86_64: B4C4D9D3-3CD6-3DCE-A7B0-4AFE74086E42' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory
 objc-constraint: none
@@ -77,12 +77,13 @@ exports:
                        _kAirPortAssistantWACDeviceFriendlyNameKey, _kAirPortAssistantWACDeviceMACAddressKey, 
                        _kAirPortAssistantWACDeviceManufacturerNameKey, _kAirPortAssistantWACDeviceModelNameKey, 
                        _kAirPortAssistantWACDeviceSSIDKey, _kAirPortAssistantWACDeviceSupportsAirPlayKey, 
-                       _kAirPortAssistantWACDeviceSupportsSpruce, _kCFAccessoryPortA2DPIn, 
-                       _kCFAccessoryPortA2DPOut, _kCFAccessoryPortDisplayPort, _kCFAccessoryPortHFP, 
-                       _kCFAccessoryPortLineIn, _kCFAccessoryPortLineOut, _kCFAccessoryPortPropertyAudioLatencyInSeconds, 
-                       _kCFAccessoryPortPropertyAutoPlayOnConnect, _kCFAccessoryPortPropertyCurrentSampleRate, 
-                       _kCFAccessoryPortPropertyFullDuplexIsSupported, _kCFAccessoryPortPropertyIsActive, 
-                       _kCFAccessoryPortPropertyIsConnected, _kCFAccessoryPortPropertyIsVoiceSignalProcessingSupported, 
+                       _kAirPortAssistantWACDeviceSupportsSpruce, _kCFAccessoryDestinationSharingOptionsKey, 
+                       _kCFAccessoryPortA2DPIn, _kCFAccessoryPortA2DPOut, _kCFAccessoryPortDisplayPort, 
+                       _kCFAccessoryPortHFP, _kCFAccessoryPortLineIn, _kCFAccessoryPortLineOut, 
+                       _kCFAccessoryPortPropertyAudioLatencyInSeconds, _kCFAccessoryPortPropertyAutoPlayOnConnect, 
+                       _kCFAccessoryPortPropertyCurrentSampleRate, _kCFAccessoryPortPropertyFullDuplexIsSupported, 
+                       _kCFAccessoryPortPropertyIsActive, _kCFAccessoryPortPropertyIsConnected, 
+                       _kCFAccessoryPortPropertyIsVoiceSignalProcessingSupported, 
                        _kCFAccessoryPortPropertyNumSupportedSampleRates, _kCFAccessoryPortPropertySupportedSampleRatesInHz, 
                        _kCFAccessoryPortPropertyVolumeControlIsSupported, _kCFAccessoryPortPropertyVolumeScalar, 
                        _kCFAccessoryPortUSBIn, _kCFAccessoryPortUSBOut, _kErrorBadState, 

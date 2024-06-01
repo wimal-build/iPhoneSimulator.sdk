@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIInputViewController.h>)
 //
 //  UIInputViewController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -61,3 +62,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIInputViewController : UIViewController 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIInputViewController.h>
+#endif

@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, PKPassType) {
 NS_ASSUME_NONNULL_BEGIN
 @interface PKPass : PKObject
 
-- (instancetype)initWithData:(NSData *)data error:(NSError **)error;
+- (nullable instancetype)initWithData:(NSData *)data error:(NSError **)error;
 
 @property (nonatomic, assign, readonly) PKPassType           passType API_AVAILABLE(ios(8.0), watchos(3.0));
 @property (nonatomic, readonly, nullable) PKPaymentPass      *paymentPass API_AVAILABLE(ios(8.0), watchos(3.0));

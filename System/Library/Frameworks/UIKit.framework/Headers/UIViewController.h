@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIViewController.h>)
 //
 //  UIViewController.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -410,7 +411,7 @@ UIKIT_EXTERN NSExceptionName const UIViewControllerHierarchyInconsistencyExcepti
 - (void)beginAppearanceTransition:(BOOL)isAppearing animated:(BOOL)animated __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 - (void)endAppearanceTransition __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_5_0);
 
-// Override to return a child view controller or nil. If non-nil, that view controller's status bar appearance attributes will be used. If nil, self is used. Whenever the return values from these methods change, -setNeedsUpdatedStatusBarAttributes should be called.
+// Override to return a child view controller or nil. If non-nil, that view controller's status bar appearance attributes will be used. If nil, self is used. Whenever the return values from these methods change, -setNeedsStatusBarAppearanceUpdate should be called.
 #if UIKIT_DEFINE_AS_PROPERTIES
 @property(nonatomic, readonly, nullable) UIViewController *childViewControllerForStatusBarStyle NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
 @property(nonatomic, readonly, nullable) UIViewController *childViewControllerForStatusBarHidden NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED;
@@ -587,10 +588,10 @@ NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIViewControllerPreviewingDelegate <NSObje
 @interface UIViewController (UIScreenEdgesDeferringSystemGestures)
 
 // Override to return a child view controller or nil. If non-nil, that view controller's screen edges deferring system gestures will be used. If nil, self is used. Whenever the return value changes, -setNeedsScreenEdgesDeferringSystemGesturesUpdate should be called.
-- (nullable UIViewController *)childViewControllerForScreenEdgesDeferringSystemGestures API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+@property (nonatomic, readonly, nullable) UIViewController *childViewControllerForScreenEdgesDeferringSystemGestures API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 // Controls the application's preferred screen edges deferring system gestures when this view controller is shown. Default is UIRectEdgeNone.
-- (UIRectEdge)preferredScreenEdgesDeferringSystemGestures API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+@property (nonatomic, readonly) UIRectEdge preferredScreenEdgesDeferringSystemGestures API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 // This should be called whenever the return values for the view controller's screen edges deferring system gestures have changed.
 - (void)setNeedsUpdateOfScreenEdgesDeferringSystemGestures API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
@@ -601,10 +602,10 @@ NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIViewControllerPreviewingDelegate <NSObje
 @interface UIViewController (UIHomeIndicatorAutoHidden)
 
 // Override to return a child view controller or nil. If non-nil, that view controller's home indicator auto-hiding will be used. If nil, self is used. Whenever the return value changes, -setNeedsHomeIndicatorAutoHiddenUpdate should be called.
-- (nullable UIViewController *)childViewControllerForHomeIndicatorAutoHidden API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+@property (nonatomic, readonly, nullable) UIViewController *childViewControllerForHomeIndicatorAutoHidden API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 // Controls the application's preferred home indicator auto-hiding when this view controller is shown.
-- (BOOL)prefersHomeIndicatorAutoHidden API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+@property (nonatomic, readonly) BOOL prefersHomeIndicatorAutoHidden API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 // This should be called whenever the return values for the view controller's home indicator auto-hiding have changed.
 - (void)setNeedsUpdateOfHomeIndicatorAutoHidden API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
@@ -648,3 +649,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UIPreviewActionGroup : NSObject <NSCopyin
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIViewController.h>
+#endif

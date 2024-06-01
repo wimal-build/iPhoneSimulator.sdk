@@ -1,7 +1,8 @@
 //
 //  SCNLight.h
+//  SceneKit
 //
-//  Copyright (c) 2012-2017 Apple Inc. All rights reserved.
+//  Copyright © 2012-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,18 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Describes the various light types available.
  */
 
-#if defined(SWIFT_SDK_OVERLAY2_SCENEKIT_EPOCH) && SWIFT_SDK_OVERLAY2_SCENEKIT_EPOCH >= 3
 typedef NSString * SCNLightType NS_STRING_ENUM;
-#else
-typedef NSString * SCNLightType;
-#endif
-
-FOUNDATION_EXTERN SCNLightType const SCNLightTypeAmbient;                                                  // Ambient light
-FOUNDATION_EXTERN SCNLightType const SCNLightTypeOmni;                                                     // Omnidirectional light
-FOUNDATION_EXTERN SCNLightType const SCNLightTypeDirectional;                                              // Directional light
-FOUNDATION_EXTERN SCNLightType const SCNLightTypeSpot;                                                     // Spot light
-FOUNDATION_EXTERN SCNLightType const SCNLightTypeIES API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));   // IES light
-FOUNDATION_EXTERN SCNLightType const SCNLightTypeProbe API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0)); // Light probe
+SCN_EXPORT SCNLightType const SCNLightTypeAmbient;                                                                // Ambient light
+SCN_EXPORT SCNLightType const SCNLightTypeOmni;                                                                   // Omnidirectional light
+SCN_EXPORT SCNLightType const SCNLightTypeDirectional;                                                            // Directional light
+SCN_EXPORT SCNLightType const SCNLightTypeSpot;                                                                   // Spot light
+SCN_EXPORT SCNLightType const SCNLightTypeIES   API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));               // IES light
+SCN_EXPORT SCNLightType const SCNLightTypeProbe API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));               // Light probe
 
 /*! @enum SCNShadowMode
  @abstract The different modes available to compute shadows.
@@ -47,6 +43,7 @@ typedef NS_ENUM(NSInteger, SCNShadowMode) {
  @abstract SCNLight represents a light that can be attached to a SCNNode. 
  */
 
+SCN_EXPORT
 @interface SCNLight : NSObject <SCNAnimatable, SCNTechniqueSupport, NSCopying, NSSecureCoding>
 
 /*! 
@@ -220,7 +217,7 @@ typedef NS_ENUM(NSInteger, SCNShadowMode) {
 @property(nonatomic) CGFloat attenuationFalloffExponent API_AVAILABLE(macos(10.10));
 
 
-#pragma mark - Spot parameters
+#pragma mark - Spot light parameters
 
 /*!
  @property spotInnerAngle
@@ -235,6 +232,25 @@ typedef NS_ENUM(NSInteger, SCNShadowMode) {
 @property(nonatomic) CGFloat spotOuterAngle API_AVAILABLE(macos(10.10));
 
 
+#pragma mark - IES light parameters
+
+/*!
+ @property IESProfileURL
+ @abstract Specifies the IES file from which the shape, direction, and intensity of illumination is determined. Defaults to nil.
+ */
+@property(nonatomic, retain, nullable) NSURL *IESProfileURL API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));
+
+
+#pragma mark - Light probes parameters
+
+/*!
+ @property sphericalHarmonicsCoefficients
+ @abstract The receiver's spherical harmonics coefficients.
+ @discussion Currently spherical harmonics are only supported by light probes (SCNLightTypeProbe). The data is an array of 27 32-bit floating-point values, containing three non-interleaved data sets corresponding to the red, green, and blue sets of coefficients.
+ */
+@property(nonatomic, copy, readonly) NSData *sphericalHarmonicsCoefficients API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0));
+
+
 #pragma mark - Other
 
 /*!
@@ -245,23 +261,11 @@ typedef NS_ENUM(NSInteger, SCNShadowMode) {
 @property(nonatomic, readonly, nullable) SCNMaterialProperty *gobo API_AVAILABLE(macos(10.9));
 
 /*!
- @property IESProfileURL
- @abstract Specifies the IES file from which the shape, direction, and intensity of illumination is determined. Defaults to nil.
- */
-@property(nonatomic, retain, nullable) NSURL *IESProfileURL API_AVAILABLE(macos(10.12), ios(10.0), tvos(10.0));
-
-/*!
  @property categoryBitMask
  @abstract Determines the node categories that will be lit by the receiver. Defaults to all bit set.
  */
 @property(nonatomic) NSUInteger categoryBitMask API_AVAILABLE(macos(10.10));
 
-/*!
- @property sphericalHarmonicsCoefficients
- @abstract The receiver's spherical harmonics coefficients.
- @discussion Currently spherical harmonics are only supported by light probes (SCNLightTypeProbe). The data is an array of 27 32-bit floating-point values, containing three non-interleaved data sets corresponding to the red, green, and blue sets of coefficients.
- */
-@property(nonatomic, copy, readonly) NSData *sphericalHarmonicsCoefficients API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0));
 
 
 @end

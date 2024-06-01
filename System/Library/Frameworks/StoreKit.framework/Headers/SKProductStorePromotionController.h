@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, SKProductStorePromotionVisibility) {
     SKProductStorePromotionVisibilityHide,
 } NS_ENUM_AVAILABLE_IOS(11_0);
 
-SK_EXTERN_CLASS_AVAILABLE(11_0) @interface SKProductStorePromotionController : NSObject
+SK_EXTERN_CLASS_AVAILABLE_IOS(11_0) @interface SKProductStorePromotionController : NSObject
 
 + (instancetype)defaultController NS_AVAILABLE_IOS(11_0);
 

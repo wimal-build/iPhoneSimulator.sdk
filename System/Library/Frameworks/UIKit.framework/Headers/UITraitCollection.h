@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITraitCollection.h>)
 //
 //  UITraitCollection.h
 //  UIKit
 //
-//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,8 +32,9 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UITraitCollection : NSObject <NSCopying, 
 + (UITraitCollection *)traitCollectionWithUserInterfaceIdiom:(UIUserInterfaceIdiom)idiom;
 @property (nonatomic, readonly) UIUserInterfaceIdiom userInterfaceIdiom; // unspecified: UIUserInterfaceIdiomUnspecified
 
-+ (UITraitCollection *)traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle __TVOS_AVAILABLE(10_0) __WATCHOS_PROHIBITED __IOS_PROHIBITED;
-@property (nonatomic, readonly) UIUserInterfaceStyle userInterfaceStyle __TVOS_AVAILABLE(10_0) __WATCHOS_PROHIBITED __IOS_PROHIBITED; // unspecified: UIUserInterfaceStyleUnspecified
+/*! On iOS, UIUserInterfaceStyle is only available on trait environments with UIUserInterfaceIdiomCarPlay. */
++ (UITraitCollection *)traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle __TVOS_AVAILABLE(10_0) __IOS_AVAILABLE(12_0) __WATCHOS_PROHIBITED;
+@property (nonatomic, readonly) UIUserInterfaceStyle userInterfaceStyle __TVOS_AVAILABLE(10_0) __IOS_AVAILABLE(12_0) __WATCHOS_PROHIBITED; // unspecified: UIUserInterfaceStyleUnspecified
 
 + (UITraitCollection *)traitCollectionWithLayoutDirection:(UITraitEnvironmentLayoutDirection)layoutDirection NS_AVAILABLE_IOS(10_0);
 @property (nonatomic, readonly) UITraitEnvironmentLayoutDirection layoutDirection NS_AVAILABLE_IOS(10_0); // unspecified: UITraitEnvironmentLayoutDirectionUnspecified
@@ -66,3 +68,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UITraitCollection : NSObject <NSCopying, 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITraitCollection.h>
+#endif

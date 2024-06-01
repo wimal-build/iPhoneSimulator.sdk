@@ -1,18 +1,19 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E2AF092D-E69E-3E2B-A672-76C4021611F3', 'x86_64: C7CEF420-066C-38BB-8D16-C82EF8DCD48C' ]
+uuids:           [ 'i386: E2AF092D-E69E-3E2B-A672-76C4021611F3', 'x86_64: 10A7A279-B558-3D18-8908-F5921A8118AE' ]
 platform:        ios
 install-name:    /usr/lib/libChineseTokenizer.dylib
-current-version: 28
+current-version: 28.15.3
 objc-constraint: none
 exports:         
+  - archs:           [ i386 ]
+    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _ChineseTokenizerAdvanceToNextToken, _ChineseTokenizerCreate, 
                        _ChineseTokenizerGetCurrentTokenRange, _ChineseTokenizerGoToTokenAtIndex, 
                        _ChineseTokenizerRelease, _ChineseTokenizerSetCustomWordCheckBlock, 
                        _ChineseTokenizerSetDynamicLexicon, _ChineseTokenizerSetString ]
-    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
 ...

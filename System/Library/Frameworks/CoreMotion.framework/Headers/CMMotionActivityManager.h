@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Discussion:
  *    Typedef of block to be invoked when the device's activity is updated.
  */
-typedef void (^CMMotionActivityHandler)(CMMotionActivity * __nullable activity) NS_AVAILABLE(NA,7_0) __TVOS_PROHIBITED;
+typedef void (^CMMotionActivityHandler)(CMMotionActivity * __nullable activity) NS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos);
 
 /*
  *  CMMotionActivityQueryHandler
@@ -27,7 +27,7 @@ typedef void (^CMMotionActivityHandler)(CMMotionActivity * __nullable activity) 
  *    Typedef of block to be invoked when the historical activity query is
  *    completed.  The array is an array of CMMotionActivity objects.
  */
-typedef void (^CMMotionActivityQueryHandler)(NSArray<CMMotionActivity *> * __nullable activities, NSError * __nullable error) NS_AVAILABLE(NA,7_0) __TVOS_PROHIBITED;
+typedef void (^CMMotionActivityQueryHandler)(NSArray<CMMotionActivity *> * __nullable activities, NSError * __nullable error) NS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos);
 
 /*
  *   CMMotionActivityManager
@@ -42,7 +42,7 @@ typedef void (^CMMotionActivityQueryHandler)(NSArray<CMMotionActivity *> * __nul
  *      2. By providing a queue and a block to startActivityUpdatesToQueue:withHandler:
  *      which will provide live activity updates to a running application.
  */
-NS_CLASS_AVAILABLE(NA,7_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA,7_0) API_UNAVAILABLE(tvos)
 @interface CMMotionActivityManager : NSObject
 
 /*

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDocumentMenuViewController.h>)
 //
 //  UIDocumentMenuViewController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -38,3 +39,7 @@ __TVOS_PROHIBITED @interface UIDocumentMenuViewController : UIViewController
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIDocumentMenuViewController.h>
+#endif

@@ -13,12 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface INInteraction ()
 
-- (nullable id)parameterValueForParameter:(INParameter *)parameter;
+- (nullable id)parameterValueForParameter:(INParameter *)parameter API_AVAILABLE(ios(11.0));
 
 @end
 
 API_AVAILABLE(ios(11.0))
-@interface INParameter : NSObject <NSSecureCoding>
+@interface INParameter : NSObject <NSSecureCoding, NSCopying>
 
 + (instancetype)parameterForClass:(Class)aClass keyPath:(NSString *)keyPath;
 

@@ -37,7 +37,6 @@
 #import <GameKit/GKGameSession.h>
 #import <GameKit/GKGameSessionError.h>
 #import <GameKit/GKGameSessionEventListener.h>
-#import <GameKit/GKGameSessionEventListenerPrivate.h>
 #import <GameKit/GKGameSessionSharingViewController.h>
 #import <GameKit/GKLeaderboard.h>
 #import <GameKit/GKLeaderboardSet.h>

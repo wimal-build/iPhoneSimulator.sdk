@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIApplication.h>)
 //
 //  UIApplication.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -55,8 +56,6 @@ typedef NS_OPTIONS(NSUInteger, UIInterfaceOrientationMask) {
     UIInterfaceOrientationMaskAllButUpsideDown = (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight),
 } __TVOS_PROHIBITED;
 
-#define UIDeviceOrientationIsValidInterfaceOrientation(orientation) ((UIDeviceOrientation)(orientation) == UIDeviceOrientationPortrait || (UIDeviceOrientation)(orientation) == UIDeviceOrientationPortraitUpsideDown || (UIDeviceOrientation)(orientation) == UIDeviceOrientationLandscapeLeft || (UIDeviceOrientation)(orientation) == UIDeviceOrientationLandscapeRight)
-
 static inline BOOL UIInterfaceOrientationIsPortrait(UIInterfaceOrientation orientation) __TVOS_PROHIBITED {
     return ((orientation) == UIInterfaceOrientationPortrait || (orientation) == UIInterfaceOrientationPortraitUpsideDown);
 }
@@ -91,11 +90,13 @@ typedef NS_ENUM(NSInteger, UIApplicationState) {
     UIApplicationStateBackground
 } NS_ENUM_AVAILABLE_IOS(4_0);
 
-typedef NSUInteger UIBackgroundTaskIdentifier;
+typedef NSUInteger UIBackgroundTaskIdentifier NS_TYPED_ENUM;
 UIKIT_EXTERN const UIBackgroundTaskIdentifier UIBackgroundTaskInvalid  NS_AVAILABLE_IOS(4_0);
 UIKIT_EXTERN const NSTimeInterval UIMinimumKeepAliveTimeout  NS_AVAILABLE_IOS(4_0);
 UIKIT_EXTERN const NSTimeInterval UIApplicationBackgroundFetchIntervalMinimum API_AVAILABLE(ios(7.0), tvos(11.0));
 UIKIT_EXTERN const NSTimeInterval UIApplicationBackgroundFetchIntervalNever API_AVAILABLE(ios(7.0), tvos(11.0));
+
+typedef NSString * UIApplicationOpenExternalURLOptionsKey NS_TYPED_ENUM;
 
 @class CKShareMetadata;
 @class UIView, UIWindow;
@@ -131,7 +132,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
 // behavior as the older openURL call, aside from the fact that this is asynchronous and calls the completion handler rather
 // than returning a result.
 // The completion handler is called on the main queue.
-- (void)openURL:(NSURL*)url options:(NSDictionary<NSString *, id> *)options completionHandler:(void (^ __nullable)(BOOL success))completion NS_AVAILABLE_IOS(10_0) NS_EXTENSION_UNAVAILABLE_IOS("");
+- (void)openURL:(NSURL*)url options:(NSDictionary<UIApplicationOpenExternalURLOptionsKey, id> *)options completionHandler:(void (^ __nullable)(BOOL success))completion NS_AVAILABLE_IOS(10_0) NS_EXTENSION_UNAVAILABLE_IOS("");
 
 - (void)sendEvent:(UIEvent *)event;
 
@@ -258,7 +259,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
 @class UIApplicationShortcutItem;
 @interface UIApplication (UIShortcutItems)
 // Register shortcuts to display on the home screen, or retrieve currently registered shortcuts.
-@property (nullable, nonatomic, copy) NSArray<UIApplicationShortcutItem *> *shortcutItems NS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
+@property (nullable, nonatomic, copy) NSArray<UIApplicationShortcutItem *> *shortcutItems API_AVAILABLE(ios(9.0)) __TVOS_PROHIBITED API_UNAVAILABLE(macos);
 @end
 
 @interface UIApplication (UIAlternateApplicationIcons)
@@ -293,7 +294,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder
 
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIApplicationLaunchOptionsKey NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIApplicationLaunchOptionsKey NS_TYPED_ENUM;
 #else
 typedef NSString * UIApplicationLaunchOptionsKey;
 #endif
@@ -318,7 +319,7 @@ typedef NSString * UIApplicationLaunchOptionsKey;
 
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIApplicationOpenURLOptionsKey NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIApplicationOpenURLOptionsKey NS_TYPED_ENUM;
 #else
 typedef NSString * UIApplicationOpenURLOptionsKey;
 #endif
@@ -346,6 +347,8 @@ typedef NSString * UIApplicationOpenURLOptionsKey;
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification NS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate willPresentNotification:withCompletionHandler:] or -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]") __TVOS_PROHIBITED;
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wstrict-prototypes"
 // Called when your app has been activated by the user selecting an action from a local notification.
 // A nil action identifier indicates the default action.
 // You should call the completion handler as soon as you've finished handling the action.
@@ -359,6 +362,7 @@ typedef NSString * UIApplicationOpenURLOptionsKey;
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void(^)())completionHandler NS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]") __TVOS_PROHIBITED;
 
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler NS_DEPRECATED_IOS(9_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]") __TVOS_PROHIBITED;
+#pragma clang diagnostic pop
 
 /*! This delegate method offers an opportunity for applications with the "remote-notification" background mode to fetch appropriate new data in response to an incoming remote notification. You should call the fetchCompletionHandler as soon as you're finished performing that operation, so the system can accurately estimate its power and data cost.
  
@@ -396,7 +400,7 @@ typedef NSString * UIApplicationOpenURLOptionsKey;
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window  NS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED;
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIApplicationExtensionPointIdentifier NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIApplicationExtensionPointIdentifier NS_TYPED_ENUM;
 #else
 typedef NSString * UIApplicationExtensionPointIdentifier;
 #endif
@@ -408,7 +412,7 @@ typedef NSString * UIApplicationExtensionPointIdentifier;
 
 #pragma mark -- State Restoration protocol adopted by UIApplication delegate --
 
-- (nullable UIViewController *) application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
+- (nullable UIViewController *) application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray<NSString *> *)identifierComponents coder:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
 - (BOOL) application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
 - (BOOL) application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
 - (void) application:(UIApplication *)application willEncodeRestorableStateWithCoder:(NSCoder *)coder NS_AVAILABLE_IOS(6_0);
@@ -426,7 +430,7 @@ typedef NSString * UIApplicationExtensionPointIdentifier;
 // You can create/fetch any restorable objects associated with the user activity, and pass them to the restorationHandler. They will then have the UIResponder restoreUserActivityState: method
 // invoked with the user activity. Invoking the restorationHandler is optional. It may be copied and invoked later, and it will bounce to the main thread to complete its work and call
 // restoreUserActivityState on all objects.
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0);
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0);
 
 // If the user activity cannot be fetched after willContinueUserActivityWithType is called, this will be called on the main thread when implemented.
 - (void)application:(UIApplication *)application didFailToContinueUserActivityWithType:(NSString *)userActivityType error:(NSError *)error NS_AVAILABLE_IOS(8_0);
@@ -466,7 +470,7 @@ typedef NSString * UIApplicationExtensionPointIdentifier;
 
 // If nil is specified for principalClassName, the value for NSPrincipalClass from the Info.plist is used. If there is no
 // NSPrincipalClass key specified, the UIApplication class is used. The delegate class will be instantiated using init.
-UIKIT_EXTERN int UIApplicationMain(int argc, char * _Nonnull * _Null_unspecified argv, NSString * _Nullable principalClassName, NSString * _Nullable delegateClassName);
+UIKIT_EXTERN int UIApplicationMain(int argc, char * _Nullable argv[_Nonnull], NSString * _Nullable principalClassName, NSString * _Nullable delegateClassName);
 
 UIKIT_EXTERN NSRunLoopMode const UITrackingRunLoopMode;
 
@@ -550,6 +554,10 @@ UIKIT_EXTERN UIApplicationExtensionPointIdentifier const UIApplicationKeyboardEx
 
 // Option for openURL:options:CompletionHandler: only open URL if it is a valid universal link with an application configured to open it
 // If there is no application configured, or the user disabled using it to open the link, completion handler called with NO
-UIKIT_EXTERN NSString *const UIApplicationOpenURLOptionUniversalLinksOnly NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN UIApplicationOpenExternalURLOptionsKey const UIApplicationOpenURLOptionUniversalLinksOnly NS_AVAILABLE_IOS(10_0);
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIApplication.h>
+#endif

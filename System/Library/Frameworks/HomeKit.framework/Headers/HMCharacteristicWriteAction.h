@@ -1,9 +1,12 @@
-// HMCharacteristicWriteAction.h
-// HomeKit
 //
-// Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  HMCharacteristicWriteAction.h
+//  HomeKit
+//
+//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMAction.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class is used to represent an entry in an action set that writes a specific
  *        value to a characteristic.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristicWriteAction<TargetValueType : id<NSCopying>> : HMAction
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -29,7 +32,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @return Instance object representing the characteristic write action.
  */
 - (instancetype)initWithCharacteristic:(HMCharacteristic *)characteristic
-                           targetValue:(TargetValueType)targetValue NS_DESIGNATED_INITIALIZER __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+                           targetValue:(TargetValueType)targetValue NS_DESIGNATED_INITIALIZER API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief The characteristic associated with the action.
@@ -50,7 +53,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateTargetValue:(TargetValueType)targetValue completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateTargetValue:(TargetValueType)targetValue completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 

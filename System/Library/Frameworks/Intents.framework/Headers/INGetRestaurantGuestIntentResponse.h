@@ -8,7 +8,7 @@
 //
 // http://mapsconnect.apple.com/info/extensions
 
-#import <Intents/Intents.h>
+#import <Intents/INIntentResponse.h>
 #import <Intents/INRestaurantGuest.h>
 #import <Intents/INRestaurantGuestDisplayPreferences.h>
 

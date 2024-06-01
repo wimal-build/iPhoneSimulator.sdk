@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrintFormatter.h>)
 //
 //  UIPrintFormatter.h
 //  UIKit
 //
-//  Copyright 2010-2017 Apple Inc. All rights reserved.
+//  Copyright 2010-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -81,3 +82,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) __TVOS_PROHIBITED @interface UIViewPrintFormatter : 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPrintFormatter.h>
+#endif

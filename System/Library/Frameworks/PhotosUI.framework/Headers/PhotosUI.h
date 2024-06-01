@@ -12,6 +12,7 @@
 
 #if !TARGET_OS_TV
 #import <PhotosUI/PHContentEditingController.h>
+#import <PhotosUI/PHEditingExtensionContext.h>
 #endif
 #import <PhotosUI/PHLivePhotoView.h>
 

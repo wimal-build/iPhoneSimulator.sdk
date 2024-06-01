@@ -42,6 +42,13 @@ NS_ASSUME_NONNULL_BEGIN
 @class MTLComputePipelineReflection;
 @class MTLCommandQueueDescriptor;
 @class MTLHeapDescriptor;
+@class MTLIndirectCommandBufferDescriptor;
+@protocol MTLIndirectRenderCommandEncoder;
+@protocol MTLIndirectComputeCommandEncoder;
+@protocol MTLIndirectCommandBuffer;
+@protocol MTLEvent;
+@protocol MTLSharedEvent;
+@class MTLSharedEventHandle;
 
 /*!
  @brief Returns a reference to the preferred system default Metal device.
@@ -50,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
  GPU.  On other systems that support more than one GPU it will return the GPU that
  is associated with the main display.
  */
-MTL_EXTERN id <MTLDevice> __nullable MTLCreateSystemDefaultDevice(void) NS_AVAILABLE(10_11, 8_0) NS_RETURNS_RETAINED;
+MTL_EXTERN id <MTLDevice> __nullable MTLCreateSystemDefaultDevice(void) API_AVAILABLE(macos(10.11), ios(8.0)) NS_RETURNS_RETAINED;
 
 /*!
  @brief Returns all Metal devices in the system.
@@ -58,44 +65,56 @@ MTL_EXTERN id <MTLDevice> __nullable MTLCreateSystemDefaultDevice(void) NS_AVAIL
  decision about which GPU to use up to the application based on whatever criteria
  it deems appropriate.
 */
-MTL_EXTERN NSArray <id<MTLDevice>> *MTLCopyAllDevices(void) NS_AVAILABLE_MAC(10_11) NS_RETURNS_RETAINED;
+MTL_EXTERN NSArray <id<MTLDevice>> *MTLCopyAllDevices(void) API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios) NS_RETURNS_RETAINED;
 
 typedef NS_ENUM(NSUInteger, MTLFeatureSet)
 {
-    MTLFeatureSet_iOS_GPUFamily1_v1 NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_UNAVAILABLE = 0,
-    MTLFeatureSet_iOS_GPUFamily2_v1 NS_ENUM_AVAILABLE_IOS(8_0) __TVOS_UNAVAILABLE = 1,
+    MTLFeatureSet_iOS_GPUFamily1_v1 API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, tvos) = 0,
+    MTLFeatureSet_iOS_GPUFamily2_v1 API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, tvos) = 1,
 
-    MTLFeatureSet_iOS_GPUFamily1_v2 NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_UNAVAILABLE = 2,
-    MTLFeatureSet_iOS_GPUFamily2_v2 NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_UNAVAILABLE = 3,
-    MTLFeatureSet_iOS_GPUFamily3_v1 NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_UNAVAILABLE = 4,
+    MTLFeatureSet_iOS_GPUFamily1_v2 API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos) = 2,
+    MTLFeatureSet_iOS_GPUFamily2_v2 API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos) = 3,
+    MTLFeatureSet_iOS_GPUFamily3_v1 API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos) = 4,
 
-    MTLFeatureSet_iOS_GPUFamily1_v3 NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_UNAVAILABLE = 5,
-    MTLFeatureSet_iOS_GPUFamily2_v3 NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_UNAVAILABLE = 6,
-    MTLFeatureSet_iOS_GPUFamily3_v2 NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_UNAVAILABLE = 7,
+    MTLFeatureSet_iOS_GPUFamily1_v3 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macos, tvos) = 5,
+    MTLFeatureSet_iOS_GPUFamily2_v3 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macos, tvos) = 6,
+    MTLFeatureSet_iOS_GPUFamily3_v2 API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macos, tvos) = 7,
 
-    MTLFeatureSet_iOS_GPUFamily1_v4 NS_ENUM_AVAILABLE_IOS(11_0) __TVOS_UNAVAILABLE = 8,
-    MTLFeatureSet_iOS_GPUFamily2_v4 NS_ENUM_AVAILABLE_IOS(11_0) __TVOS_UNAVAILABLE = 9,
-    MTLFeatureSet_iOS_GPUFamily3_v3 NS_ENUM_AVAILABLE_IOS(11_0) __TVOS_UNAVAILABLE = 10,
-    MTLFeatureSet_iOS_GPUFamily4_v1 NS_ENUM_AVAILABLE_IOS(10_0) __TVOS_UNAVAILABLE = 11,
+    MTLFeatureSet_iOS_GPUFamily1_v4 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos) = 8,
+    MTLFeatureSet_iOS_GPUFamily2_v4 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos) = 9,
+    MTLFeatureSet_iOS_GPUFamily3_v3 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos) = 10,
+    MTLFeatureSet_iOS_GPUFamily4_v1 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, tvos) = 11,
+    
+    MTLFeatureSet_iOS_GPUFamily1_v5 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, tvos) = 12,
+    MTLFeatureSet_iOS_GPUFamily2_v5 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, tvos) = 13,
+    MTLFeatureSet_iOS_GPUFamily3_v4 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, tvos) = 14,
+    MTLFeatureSet_iOS_GPUFamily4_v2 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, tvos) = 15,
+    MTLFeatureSet_iOS_GPUFamily5_v1 API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, tvos) = 16,
+    
 
-    MTLFeatureSet_macOS_GPUFamily1_v1 NS_ENUM_AVAILABLE_MAC(10_11) = 10000,
-    MTLFeatureSet_OSX_GPUFamily1_v1 NS_ENUM_AVAILABLE_MAC(10_11) = MTLFeatureSet_macOS_GPUFamily1_v1, // deprecated
+    MTLFeatureSet_macOS_GPUFamily1_v1 API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios) = 10000,
+    MTLFeatureSet_OSX_GPUFamily1_v1 API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios) = MTLFeatureSet_macOS_GPUFamily1_v1, // deprecated
 
-    MTLFeatureSet_macOS_GPUFamily1_v2 NS_ENUM_AVAILABLE_MAC(10_12) = 10001,
-    MTLFeatureSet_OSX_GPUFamily1_v2 NS_ENUM_AVAILABLE_MAC(10_12) = MTLFeatureSet_macOS_GPUFamily1_v2, // deprecated
-    MTLFeatureSet_macOS_ReadWriteTextureTier2 NS_ENUM_AVAILABLE_MAC(10_12) = 10002,
-    MTLFeatureSet_OSX_ReadWriteTextureTier2 NS_ENUM_AVAILABLE_MAC(10_12) = MTLFeatureSet_macOS_ReadWriteTextureTier2, // deprecated
+    MTLFeatureSet_macOS_GPUFamily1_v2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = 10001,
+    MTLFeatureSet_OSX_GPUFamily1_v2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = MTLFeatureSet_macOS_GPUFamily1_v2, // deprecated
+    MTLFeatureSet_macOS_ReadWriteTextureTier2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = 10002,
+    MTLFeatureSet_OSX_ReadWriteTextureTier2 API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios) = MTLFeatureSet_macOS_ReadWriteTextureTier2, // deprecated
 
-    MTLFeatureSet_macOS_GPUFamily1_v3 NS_ENUM_AVAILABLE_MAC(10_13) = 10003,
+    MTLFeatureSet_macOS_GPUFamily1_v3 API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios) = 10003,
+    
+    MTLFeatureSet_macOS_GPUFamily1_v4 API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios) = 10004,
+    MTLFeatureSet_macOS_GPUFamily2_v1 API_AVAILABLE(macos(10.14)) API_UNAVAILABLE(ios) = 10005,
 
 
-    MTLFeatureSet_tvOS_GPUFamily1_v1 __TVOS_AVAILABLE(9_0) __IOS_UNAVAILABLE __OSX_UNAVAILABLE = 30000,
-    MTLFeatureSet_TVOS_GPUFamily1_v1 __TVOS_AVAILABLE(9_0) __IOS_UNAVAILABLE __OSX_UNAVAILABLE = MTLFeatureSet_tvOS_GPUFamily1_v1, // deprecated
-
-    MTLFeatureSet_tvOS_GPUFamily1_v2 __TVOS_AVAILABLE(10_0) __IOS_UNAVAILABLE __OSX_UNAVAILABLE = 30001,
-
-    MTLFeatureSet_tvOS_GPUFamily1_v3 __TVOS_AVAILABLE(11_0) __IOS_UNAVAILABLE __OSX_UNAVAILABLE = 30002,
-} NS_ENUM_AVAILABLE(10_11, 8_0) __TVOS_AVAILABLE(9_0);
+    MTLFeatureSet_tvOS_GPUFamily1_v1 API_AVAILABLE(tvos(9.0)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macos) = 30000,
+    MTLFeatureSet_TVOS_GPUFamily1_v1 API_AVAILABLE(tvos(9.0)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macos) = MTLFeatureSet_tvOS_GPUFamily1_v1, // deprecated
+    
+    MTLFeatureSet_tvOS_GPUFamily1_v2 API_AVAILABLE(tvos(10.0)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macos) = 30001,
+    
+    MTLFeatureSet_tvOS_GPUFamily1_v3 API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macos) = 30002,
+    
+    MTLFeatureSet_tvOS_GPUFamily1_v4 API_AVAILABLE(tvos(12.0)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macos) = 30004,
+} API_AVAILABLE(macos(10.11), ios(8.0)) API_AVAILABLE(tvos(9.0));
 
 /*!
  @enum MTLPipelineOption
@@ -106,7 +125,7 @@ typedef NS_OPTIONS(NSUInteger, MTLPipelineOption)
     MTLPipelineOptionNone               = 0,
     MTLPipelineOptionArgumentInfo       = 1 << 0,
     MTLPipelineOptionBufferTypeInfo     = 1 << 1,
-} NS_ENUM_AVAILABLE(10_11, 8_0);
+} API_AVAILABLE(macos(10.11), ios(8.0));
 
 /*!
  @enum MTLReadWriteTextureTier
@@ -117,7 +136,7 @@ typedef NS_ENUM(NSUInteger, MTLReadWriteTextureTier)
     MTLReadWriteTextureTierNone = 0,
     MTLReadWriteTextureTier1 = 1,
     MTLReadWriteTextureTier2 = 2,
-} NS_ENUM_AVAILABLE(10_13, 11_0);
+} API_AVAILABLE(macos(10.13), ios(11.0));
 
 /*!
  @enum MTLArgumentBuffersTier
@@ -127,7 +146,7 @@ typedef NS_ENUM(NSUInteger, MTLArgumentBuffersTier)
 {
     MTLArgumentBuffersTier1 = 0,
     MTLArgumentBuffersTier2 = 1,
-} NS_ENUM_AVAILABLE(10_13, 11_0);
+} API_AVAILABLE(macos(10.13), ios(11.0));
 
 
 /*!
@@ -155,7 +174,7 @@ typedef void (^MTLNewComputePipelineStateWithReflectionCompletionHandler)(id <MT
  * @class MTLArgumentDescriptor
  * @abstract Represents a member of an argument buffer
  */
-NS_CLASS_AVAILABLE(10_13, 11_0)
+MTL_EXPORT API_AVAILABLE(macos(10.13), ios(11.0))
 @interface MTLArgumentDescriptor : NSObject <NSCopying>
 
 /*!
@@ -211,7 +230,7 @@ NS_CLASS_AVAILABLE(10_13, 11_0)
  @protocol MTLDevice
  @abstract MTLDevice represents a processor capable of data parallel computations
  */
-NS_AVAILABLE(10_11, 8_0)
+API_AVAILABLE(macos(10.11), ios(8.0))
 @protocol MTLDevice <NSObject>
 
 /*!
@@ -226,25 +245,25 @@ NS_AVAILABLE(10_11, 8_0)
  @discussion The registryID value for a Metal device is global to all tasks, and may be used
  to identify the GPU across task boundaries.
 */
-@property (readonly) uint64_t registryID NS_AVAILABLE(10_13, 11_0) ;
+@property (readonly) uint64_t registryID API_AVAILABLE(macos(10.13), ios(11.0)) ;
 
 /*!
  @property maxThreadsPerThreadgroup
  @abstract The maximum number of threads along each dimension.
  */
-@property (readonly) MTLSize maxThreadsPerThreadgroup NS_AVAILABLE(10_11, 9_0);
+@property (readonly) MTLSize maxThreadsPerThreadgroup API_AVAILABLE(macos(10.11), ios(9.0));
 
 /*!
  @property lowPower
  @abstract On systems that support automatic graphics switching, this will return YES for the the low power device.
  */
-@property (readonly, getter=isLowPower) BOOL lowPower NS_AVAILABLE_MAC(10_11);
+@property (readonly, getter=isLowPower) BOOL lowPower API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios);
 
 /*!
  @property headless
  @abstract On systems that include more that one GPU, this will return YES for any device that does not support any displays.  Only available on Mac OS X.
  */
-@property (readonly, getter=isHeadless) BOOL headless NS_AVAILABLE_MAC(10_11);
+@property (readonly, getter=isHeadless) BOOL headless API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios);
 
 /*!
  @property removable
@@ -252,7 +271,7 @@ NS_AVAILABLE(10_11, 8_0)
  @discussion If a GPU is is removed without warning, APIs may fail even with good input, even before a notification can get posted informing
  the application that the device has been removed.
  */
-@property (readonly, getter=isRemovable) BOOL removable NS_AVAILABLE_MAC(10_13);
+@property (readonly, getter=isRemovable) BOOL removable API_AVAILABLE(macos(10.13)) API_UNAVAILABLE(ios);
 
 /*!
  @property recommendedMaxWorkingSetSize
@@ -260,27 +279,29 @@ NS_AVAILABLE(10_11, 8_0)
  @discussion Performance may be improved by keeping the total size of all resources (texture and buffers)
  and heaps less than this threshold, beyond which the device is likely to be overcommitted and incur a
  performance penalty. */
-@property (readonly) uint64_t recommendedMaxWorkingSetSize NS_AVAILABLE_MAC(10_12);
+@property (readonly) uint64_t recommendedMaxWorkingSetSize API_AVAILABLE(macos(10.12)) API_UNAVAILABLE(ios);
 
 /*!
  @property depth24Stencil8PixelFormatSupported
  @abstract If YES, device supports MTLPixelFormatDepth24Unorm_Stencil8.
  */
-@property (readonly, getter=isDepth24Stencil8PixelFormatSupported) BOOL depth24Stencil8PixelFormatSupported NS_AVAILABLE_MAC(10_11);
+@property (readonly, getter=isDepth24Stencil8PixelFormatSupported) BOOL depth24Stencil8PixelFormatSupported API_AVAILABLE(macos(10.11)) API_UNAVAILABLE(ios);
 
 /*!
  @property readWriteTextureSupport
  @abstract Query support tier for read-write texture formats.
  @return MTLReadWriteTextureTier enum value.
  */
-@property (readonly) MTLReadWriteTextureTier readWriteTextureSupport NS_AVAILABLE(10_13, 11_0);
+@property (readonly) MTLReadWriteTextureTier readWriteTextureSupport API_AVAILABLE(macos(10.13), ios(11.0));
 
 /*!
  @property argumentBuffersSupport
  @abstract Query support tier for Argument Buffers.
  @return MTLArgumentBuffersTier enum value.
  */
-@property (readonly) MTLArgumentBuffersTier argumentBuffersSupport NS_AVAILABLE(10_13, 11_0);
+@property (readonly) MTLArgumentBuffersTier argumentBuffersSupport API_AVAILABLE(macos(10.13), ios(11.0));
+
+
 
 
 /*!
@@ -288,14 +309,14 @@ NS_AVAILABLE(10_11, 8_0)
  @abstract Query device for raster order groups support.
  @return BOOL value. If YES, the device supports raster order groups. If NO, the device does not.
  */
-@property (readonly, getter=areRasterOrderGroupsSupported) BOOL rasterOrderGroupsSupported NS_AVAILABLE(10_13, 11_0);
+@property (readonly, getter=areRasterOrderGroupsSupported) BOOL rasterOrderGroupsSupported API_AVAILABLE(macos(10.13), ios(11.0));
 
 
 /*!
  @property currentAllocatedSize
  @abstract The current size in bytes of all resources allocated by this device
  */
-@property (readonly) NSUInteger currentAllocatedSize NS_AVAILABLE(10_13, 11_0);
+@property (readonly) NSUInteger currentAllocatedSize API_AVAILABLE(macos(10.13), ios(11.0));
 
 /*!
  @method newCommandQueue
@@ -316,20 +337,20 @@ NS_AVAILABLE(10_11, 8_0)
  @abstract Determine the byte size of textures when sub-allocated from a heap.
  @discussion This method can be used to help determine the required heap size.
  */
-- (MTLSizeAndAlign)heapTextureSizeAndAlignWithDescriptor:(MTLTextureDescriptor *)desc NS_AVAILABLE(10_13, 10_0);
+- (MTLSizeAndAlign)heapTextureSizeAndAlignWithDescriptor:(MTLTextureDescriptor *)desc API_AVAILABLE(macos(10.13), ios(10.0));
 
 /*!
  @method heapBufferSizeAndAlignWithLength:options:
  @abstract Determine the byte size of buffers when sub-allocated from a heap.
  @discussion This method can be used to help determine the required heap size.
  */
-- (MTLSizeAndAlign)heapBufferSizeAndAlignWithLength:(NSUInteger)length options:(MTLResourceOptions)options NS_AVAILABLE(10_13, 10_0);
+- (MTLSizeAndAlign)heapBufferSizeAndAlignWithLength:(NSUInteger)length options:(MTLResourceOptions)options API_AVAILABLE(macos(10.13), ios(10.0));
 
 /*!
  @method newHeapWithDescriptor:
  @abstract Create a new heap with the given descriptor.
  */
-- (nullable id <MTLHeap>)newHeapWithDescriptor:(MTLHeapDescriptor *)descriptor NS_AVAILABLE(10_13, 10_0);
+- (nullable id <MTLHeap>)newHeapWithDescriptor:(MTLHeapDescriptor *)descriptor API_AVAILABLE(macos(10.13), ios(10.0));
 
 /*!
  @method newBufferWithLength:options:
@@ -361,6 +382,8 @@ NS_AVAILABLE(10_11, 8_0)
  */
 - (nullable id <MTLTexture>)newTextureWithDescriptor:(MTLTextureDescriptor *)descriptor;
 
+
+
 /*!
  @method newSamplerStateWithDescriptor:
  @abstract Create a new sampler.
@@ -379,7 +402,7 @@ NS_AVAILABLE(10_11, 8_0)
  @abstract Returns the default library for a given bundle.
  @return A pointer to the library, nil if an error occurs.
 */
-- (nullable id <MTLLibrary>)newDefaultLibraryWithBundle:(NSBundle *)bundle error:(__autoreleasing NSError **)error NS_AVAILABLE(10_12, 10_0);
+- (nullable id <MTLLibrary>)newDefaultLibraryWithBundle:(NSBundle *)bundle error:(__autoreleasing NSError **)error API_AVAILABLE(macos(10.12), ios(10.0));
 
 /*!
  @method newLibraryWithFile:
@@ -391,7 +414,7 @@ NS_AVAILABLE(10_11, 8_0)
  @method newLibraryWithURL:
  @abstract Load a MTLLibrary from a metallib file.
  */
-- (nullable id <MTLLibrary>)newLibraryWithURL:(NSURL *)url error:(__autoreleasing NSError **)error NS_AVAILABLE(10_13, 11_0);
+- (nullable id <MTLLibrary>)newLibraryWithURL:(NSURL *)url error:(__autoreleasing NSError **)error API_AVAILABLE(macos(10.13), ios(11.0));
 
 /*!
  @method newLibraryWithData:
@@ -465,19 +488,19 @@ NS_AVAILABLE(10_11, 8_0)
  @method newComputePipelineStateWithDescriptor:options:reflection:error:
  @abstract Create and compile a new MTLComputePipelineState object synchronously.
  */
-- (nullable id <MTLComputePipelineState>)newComputePipelineStateWithDescriptor:(MTLComputePipelineDescriptor *)descriptor options:(MTLPipelineOption)options reflection:(MTLAutoreleasedComputePipelineReflection * __nullable)reflection error:(__autoreleasing NSError **)error NS_AVAILABLE(10_11, 9_0);
+- (nullable id <MTLComputePipelineState>)newComputePipelineStateWithDescriptor:(MTLComputePipelineDescriptor *)descriptor options:(MTLPipelineOption)options reflection:(MTLAutoreleasedComputePipelineReflection * __nullable)reflection error:(__autoreleasing NSError **)error API_AVAILABLE(macos(10.11), ios(9.0));
 
 /*!
  @method newComputePipelineStateWithDescriptor:options:completionHandler:
  @abstract Create and compile a new MTLComputePipelineState object asynchronously.
  */
-- (void)newComputePipelineStateWithDescriptor:(MTLComputePipelineDescriptor *)descriptor options:(MTLPipelineOption)options completionHandler:(MTLNewComputePipelineStateWithReflectionCompletionHandler)completionHandler NS_AVAILABLE(10_11, 9_0);
+- (void)newComputePipelineStateWithDescriptor:(MTLComputePipelineDescriptor *)descriptor options:(MTLPipelineOption)options completionHandler:(MTLNewComputePipelineStateWithReflectionCompletionHandler)completionHandler API_AVAILABLE(macos(10.11), ios(9.0));
 
 /*!
  @method newFence
  @abstract Create a new MTLFence object
  */
-- (nullable id <MTLFence>)newFence NS_AVAILABLE(10_13, 10_0);
+- (nullable id <MTLFence>)newFence API_AVAILABLE(macos(10.13), ios(10.0));
 
 /*!
  @method supportsFeatureSet:
@@ -490,41 +513,53 @@ NS_AVAILABLE(10_11, 8_0)
  @brief Query device if it support textures with a given sampleCount.
  @return BOOL value. If YES, device supports the given sampleCount for textures. If NO, device does not support the given sampleCount.
  */
-- (BOOL)supportsTextureSampleCount:(NSUInteger)sampleCount NS_AVAILABLE(10_11, 9_0);
+- (BOOL)supportsTextureSampleCount:(NSUInteger)sampleCount API_AVAILABLE(macos(10.11), ios(9.0));
 
 /*!
  @method minimumLinearTextureAlignmentForPixelFormat:
  @abstract Returns the minimum alignment required for offset and rowBytes when creating a linear texture. An error is thrown for queries with invalid pixel formats (depth, stencil, or compressed formats).
  */
-- (NSUInteger)minimumLinearTextureAlignmentForPixelFormat:(MTLPixelFormat)format NS_AVAILABLE(10_13, 11_0);
+- (NSUInteger)minimumLinearTextureAlignmentForPixelFormat:(MTLPixelFormat)format API_AVAILABLE(macos(10.13), ios(11.0));
+
+/*!
+ @method minimumTextureBufferAlignmentForPixelFormat:
+ @abstract Returns the minimum alignment required for offset and rowBytes when creating a texture buffer from a buffer.
+ */
+- (NSUInteger)minimumTextureBufferAlignmentForPixelFormat:(MTLPixelFormat)format API_AVAILABLE(macos(10.14), ios(12.0));
 
 
 /*!
  @method newRenderPipelineStateWithTileDescriptor:options:reflection:error:
  @abstract Create and compile a new MTLRenderPipelineState object synchronously given a MTLTileRenderPipelineDescriptor.
  */
-- (nullable id <MTLRenderPipelineState>)newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor*)descriptor options:(MTLPipelineOption)options reflection:(MTLAutoreleasedRenderPipelineReflection * __nullable)reflection error:(__autoreleasing NSError **)error NS_AVAILABLE_IOS(11_0);
+- (nullable id <MTLRenderPipelineState>)newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor*)descriptor options:(MTLPipelineOption)options reflection:(MTLAutoreleasedRenderPipelineReflection * __nullable)reflection error:(__autoreleasing NSError **)error API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 
 
 /*!
  @method newRenderPipelineStateWithTileDescriptor:options:completionHandler:
  @abstract Create and compile a new MTLRenderPipelineState object asynchronously given a MTLTileRenderPipelineDescriptor.
  */
-- (void)newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor *)descriptor options:(MTLPipelineOption)options completionHandler:(MTLNewRenderPipelineStateWithReflectionCompletionHandler)completionHandler NS_AVAILABLE_IOS(11_0);
-
+- (void)newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor *)descriptor options:(MTLPipelineOption)options completionHandler:(MTLNewRenderPipelineStateWithReflectionCompletionHandler)completionHandler API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 
 /*!
  @property maxThreadgroupMemoryLength
  @abstract The maximum threadgroup memory available, in bytes.
  */
-@property (readonly) NSUInteger maxThreadgroupMemoryLength NS_AVAILABLE(10_13, 11_0);
+@property (readonly) NSUInteger maxThreadgroupMemoryLength API_AVAILABLE(macos(10.13), ios(11.0));
+
+/*!
+ @property maxArgumentBufferSamplerCount
+ @abstract The maximum number of unique argument buffer samplers per app.
+ @discussion This limit is only applicable to samplers that have their supportArgumentBuffers property set to true. A MTLSamplerState object is considered unique if the configuration of its originating MTLSamplerDescriptor properties is unique. For example, two samplers with equal minFilter values but different magFilter values are considered unique.
+ */
+@property (readonly) NSUInteger maxArgumentBufferSamplerCount API_AVAILABLE(macos(10.14), ios(12.0));
 
 /*!
  @property programmableSaplePositionsSupported
  @abstract Query device for programmable sample position support.
  @return BOOL value. If YES, the device supports programmable sample positions. If NO, the device does not.
  */
-@property (readonly, getter=areProgrammableSamplePositionsSupported) BOOL programmableSamplePositionsSupported NS_AVAILABLE(10_13, 11_0);
+@property (readonly, getter=areProgrammableSamplePositionsSupported) BOOL programmableSamplePositionsSupported API_AVAILABLE(macos(10.13), ios(11.0));
 
 /*!
  @method getDefaultSamplePositions:count:
@@ -532,17 +567,51 @@ NS_AVAILABLE(10_11, 8_0)
  @param positions The destination array for default sample position data.
  @param count Specifies the sample count for which to retrieve the default positions, the length of the positions array, and must be set to a valid sample count.
  */
-- (void)getDefaultSamplePositions:(MTLSamplePosition *)positions count:(NSUInteger)count NS_AVAILABLE(10_13, 11_0);
+- (void)getDefaultSamplePositions:(MTLSamplePosition *)positions count:(NSUInteger)count API_AVAILABLE(macos(10.13), ios(11.0));
 
 
 /*!
  * @method newArgumentEncoderWithArguments:count:
  * @abstract Creates an argument encoder for an array of argument descriptors which will be encoded sequentially.
  */
-- (nullable id <MTLArgumentEncoder>)newArgumentEncoderWithArguments:(NSArray <MTLArgumentDescriptor *> *)arguments NS_AVAILABLE(10_13, 11_0);
+- (nullable id <MTLArgumentEncoder>)newArgumentEncoderWithArguments:(NSArray <MTLArgumentDescriptor *> *)arguments API_AVAILABLE(macos(10.13), ios(11.0));
 
 
 
 
+
+/*!
+ * @method newIndirectCommandBufferWithDescriptor:maxCommandCount:options
+ * @abstract Creates a new indirect command buffer with the given descriptor and count.
+ * @param descriptor The descriptor encodes the maximum logical stride of each command.
+ * @param maxCount The maximum number of commands that this buffer can contain.
+ * @param options The options for the indirect command buffer.
+ * @discussion The returned buffer can be safely executed without first encoding into (but is wasteful).
+ */
+- (nullable id <MTLIndirectCommandBuffer>)newIndirectCommandBufferWithDescriptor:(MTLIndirectCommandBufferDescriptor*)descriptor maxCommandCount:(NSUInteger)maxCount options:(MTLResourceOptions)options API_AVAILABLE(macos(10.14), ios(12.0));
+
+/*!
+ @method newEvent
+ @abstract Returns a new single-device non-shareable Metal event object
+*/
+- (nullable id <MTLEvent>)newEvent API_AVAILABLE(macos(10.14), ios(12.0));
+
+/*!
+ @method newSharedEvent
+ @abstract Returns a shareable multi-device event.
+ */
+- (nullable id <MTLSharedEvent>)newSharedEvent API_AVAILABLE(macos(10.14), ios(12.0));
+
+/*!
+ @method newSharedEventWithHandle
+ @abstract Creates a shareable multi-device event from an existing shared event handle.
+*/
+- (nullable id <MTLSharedEvent>)newSharedEventWithHandle:(MTLSharedEventHandle *)sharedEventHandle API_AVAILABLE(macos(10.14), ios(12.0));
+
+
+
+
+
+@property (readonly) NSUInteger maxBufferLength;
 @end
 NS_ASSUME_NONNULL_END

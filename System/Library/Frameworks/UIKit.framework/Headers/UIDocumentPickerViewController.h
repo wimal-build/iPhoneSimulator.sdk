@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDocumentPickerViewController.h>)
 //
 //  UIDocumentPickerViewController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,7 +17,6 @@ __TVOS_PROHIBITED @protocol UIDocumentPickerDelegate <NSObject>
 
 @optional
 
-// Required
 - (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray <NSURL *>*)urls NS_AVAILABLE_IOS(11_0);
 
 // called if the user dismisses the document picker without selecting a document (using the Cancel button)
@@ -51,3 +51,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIDocumentPickerViewCon
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIDocumentPickerViewController.h>
+#endif

@@ -33,22 +33,22 @@ typedef NS_ENUM(NSInteger, INVocabularyStringType) {
     INVocabularyStringTypeCarProfileName = 300,
     
     /// The name of a vehicle as a person will say it, for example “BMW”, “My Convertible”.
-    INVocabularyStringTypeCarName NS_ENUM_AVAILABLE_IOS(10_3),
+    INVocabularyStringTypeCarName API_AVAILABLE(ios(10.3)),
     
     /// The name of an organization to pay as a person will say it, for example “PG&E”, “Comcast”.
-    INVocabularyStringTypePaymentsOrganizationName NS_ENUM_AVAILABLE_IOS(10_3) = 400,
+    INVocabularyStringTypePaymentsOrganizationName API_AVAILABLE(ios(10.3)) = 400,
     
     /// The name of an account nick name as a person will say it, for example “Checking”, “Rainy day savings”.
-    INVocabularyStringTypePaymentsAccountNickname NS_ENUM_AVAILABLE_IOS(10_3),
+    INVocabularyStringTypePaymentsAccountNickname API_AVAILABLE(ios(10.3)),
     
     /// The title of a note, task, or task list as a person will say it; for example, "Grocery list" or "Weekly meeting minutes".
-    INVocabularyStringTypeNotebookItemTitle NS_ENUM_AVAILABLE_IOS(11_0) = 500,
+    INVocabularyStringTypeNotebookItemTitle API_AVAILABLE(ios(11.0)) = 500,
     
     /// The name of the note or task list's group (folder, directory, account); for example, "iCloud" or "Shopping"
-    INVocabularyStringTypeNotebookItemGroupName NS_ENUM_AVAILABLE_IOS(11_0),
-} __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+    INVocabularyStringTypeNotebookItemGroupName API_AVAILABLE(ios(11.0)),
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(watchos, tvos, macosx);
 
-API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos)
+API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(watchos, tvos, macosx)
 @interface INVocabulary : NSObject
 
 + (instancetype)sharedVocabulary;

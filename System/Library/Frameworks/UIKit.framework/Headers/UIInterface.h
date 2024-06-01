@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIInterface.h>)
 //
 //  UIInterface.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -28,11 +29,12 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceSizeClass) {
     UIUserInterfaceSizeClassRegular     = 2,
 } NS_ENUM_AVAILABLE_IOS(8_0);
 
+// On iOS, these values are only available on trait environments with UIUserInterfaceIdiomCarPlay. 
 typedef NS_ENUM(NSInteger, UIUserInterfaceStyle) {
     UIUserInterfaceStyleUnspecified,
     UIUserInterfaceStyleLight,
     UIUserInterfaceStyleDark,
-} __TVOS_AVAILABLE(10_0) __IOS_PROHIBITED __WATCHOS_PROHIBITED;
+} __TVOS_AVAILABLE(10_0) __IOS_AVAILABLE(12_0) __WATCHOS_PROHIBITED;
 
 typedef NS_ENUM(NSInteger, UIUserInterfaceLayoutDirection) {
     UIUserInterfaceLayoutDirectionLeftToRight,
@@ -94,3 +96,7 @@ typedef NS_ENUM(NSInteger, UIDisplayGamut) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIInterface.h>
+#endif

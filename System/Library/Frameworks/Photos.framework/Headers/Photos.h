@@ -9,7 +9,6 @@
 #define Photos_Photos_h
 
 #import <Photos/PHPhotoLibrary.h>
-#import <Photos/PhotosTypes.h>
 
 #import <Photos/PHObject.h>
 #import <Photos/PHAsset.h>
@@ -35,7 +34,5 @@
 #import <Photos/PHAdjustmentData.h>
 #import <Photos/PHContentEditingInput.h>
 #import <Photos/PHContentEditingOutput.h>
-
-#import <Photos/PhotosDefines.h>
 
 #endif

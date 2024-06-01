@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 5C5B4316-72FB-3B98-95DB-695623E75B0A', 'x86_64: 942195AE-657D-39A3-9A57-3508DC0815C8' ]
+uuids:           [ 'i386: 5C5B4316-72FB-3B98-95DB-695623E75B0A', 'x86_64: 735DECB9-CB4D-3EF2-B3A4-CEFD69994CFD' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/EventKit.framework/EventKit
 current-version: 100
@@ -76,21 +76,22 @@ exports:
                        EKCalendarInviteReplyNotification, EKCalendarItem, EKCalendarItemChange, 
                        EKCalendarNotification, EKCalendarNotificationReference, EKCalendarResourceChangeNotification, 
                        EKCalendarSharedCalendarNotification, EKCalendarSuggestionNotification, 
-                       EKCalendarVisibilityManager, EKDaemonConnection, EKDataProtectionObserver, 
-                       EKDebugPreferences, EKDirectoryGroup, EKDirectoryLocation, 
-                       EKDirectoryPerson, EKDirectoryRecord, EKDirectoryResource, 
-                       EKDirectorySearchOperation, EKDirectorySearchQuery, EKDirectorySearchResultSet, 
-                       EKEvent, EKEventChange, EKEventStore, EKFeatureSet, EKInviteeAlternativeTimeSearcher, 
-                       EKObjectChange, EKObjectID, EKOccurrenceCacheLocationSearch, 
-                       EKOccurrenceCacheSearch, EKOrganizer, EKParticipant, EKParticipantForSorting, 
-                       EKPersistentAlarm, EKPersistentAttachment, EKPersistentAttendee, 
-                       EKPersistentCalendar, EKPersistentEvent, EKPersistentEventAction, 
-                       EKPersistentExceptionDate, EKPersistentLocation, EKPersistentObject, 
-                       EKPersistentOrganizer, EKPersistentParticipant, EKPersistentRecurrenceRule, 
-                       EKPersistentReminder, EKPersistentSharee, EKPersistentSource, 
-                       EKPersistentSuggestedEventInfo, EKPreferences, EKReadWriteLock, 
-                       EKRecents, EKRecurrenceDayOfWeek, EKRecurrenceEnd, EKRecurrenceGenerator, 
-                       EKRecurrenceRule, EKRelation, EKReminder, EKRequestAvailabilityOperation, 
+                       EKCalendarVisibilityManager, EKChangeTrackingClientId, EKDaemonConnection, 
+                       EKDataProtectionObserver, EKDebugPreferences, EKDirectoryGroup, 
+                       EKDirectoryLocation, EKDirectoryPerson, EKDirectoryRecord, 
+                       EKDirectoryResource, EKDirectorySearchOperation, EKDirectorySearchQuery, 
+                       EKDirectorySearchResultSet, EKEvent, EKEventChange, EKEventStore, 
+                       EKFeatureSet, EKInviteeAlternativeTimeSearcher, EKObjectChange, 
+                       EKObjectID, EKOccurrenceCacheLocationSearch, EKOccurrenceCacheSearch, 
+                       EKOrganizer, EKParticipant, EKParticipantForSorting, EKPersistentAlarm, 
+                       EKPersistentAttachment, EKPersistentAttendee, EKPersistentCalendar, 
+                       EKPersistentEvent, EKPersistentEventAction, EKPersistentExceptionDate, 
+                       EKPersistentLocation, EKPersistentObject, EKPersistentOrganizer, 
+                       EKPersistentParticipant, EKPersistentRecurrenceRule, EKPersistentReminder, 
+                       EKPersistentSharee, EKPersistentSource, EKPersistentSuggestedEventInfo, 
+                       EKPreferences, EKReadWriteLock, EKRecents, EKRecurrenceDayOfWeek, 
+                       EKRecurrenceEnd, EKRecurrenceGenerator, EKRecurrenceRule, 
+                       EKRelation, EKReminder, EKRequestAvailabilityOperation, EKSecureKeyedArchiverSerializer, 
                        EKSharee, EKSource, EKStructuredLocation, EKStructuredLocationPrediction, 
                        EKSuggestedEventInfo, EKSyntheticGEORouteHypothesis, EKTimedEventStorePurger, 
                        EKTravelAdvisoryTimelinessAuthority, EKTravelEngineHypothesis, 

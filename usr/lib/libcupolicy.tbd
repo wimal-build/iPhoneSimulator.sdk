@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4847F48E-6BFC-32D8-BB52-47ACD817F82D', 'x86_64: E2A2232B-8875-33E8-96A5-E974BC36D537' ]
+uuids:           [ 'i386: 4847F48E-6BFC-32D8-BB52-47ACD817F82D', 'x86_64: C6F343CA-CF39-37EB-9441-8AA9393753F7' ]
 platform:        ios
 install-name:    /usr/lib/libcupolicy.dylib
 objc-constraint: none
@@ -12,7 +12,8 @@ exports:
                        _cellular_usage_policy_get_bundle_from_policy, _cellular_usage_policy_get_data_allowed_from_policy, 
                        _cellular_usage_policy_is_data_allowed_for_bundle, _cellular_usage_policy_set_changed_handler ]
   - archs:           [ x86_64 ]
-    symbols:         [ __ZN29network_usage_policy_client_sC1Ev, __ZN29network_usage_policy_client_sC2Ev ]
+    weak-def-symbols: [ __ZTIN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE, 
+                        __ZTSN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _network_usage_policy_create_client, _network_usage_policy_destroy_client, 
                        _network_usage_policy_get_WiFi_data_allowed_from_policy, _network_usage_policy_get_bundle_from_policy, 

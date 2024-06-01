@@ -5,6 +5,10 @@
 //  Copyright 2017, Apple. All rights reserved.
 //
 
+#import <MapKit/MKFoundation.h>
+
+#if MK_SUPPORTS_VIEW_CLASSES
+
 // System
 #import <UIKit/UIKit.h>
 #import <MapKit/MKTypes.h>
@@ -31,3 +35,4 @@ NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_AVAILABLE(11_0)
 
 NS_ASSUME_NONNULL_END
 
+#endif // MK_SUPPORTS_VIEW_CLASSES

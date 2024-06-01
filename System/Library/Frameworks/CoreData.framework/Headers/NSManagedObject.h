@@ -1,7 +1,7 @@
 /*
     NSManagedObject.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -43,10 +43,10 @@ API_AVAILABLE(macosx(10.4),ios(3.0)) NS_REQUIRES_PROPERTY_DEFINITIONS
  */
 + (NSFetchRequest*)fetchRequest API_AVAILABLE(macosx(10.12),ios(10.0),tvos(10.0),watchos(3.0));
 
-// The designated initializer.
+/* The designated initializer. */
 - (__kindof NSManagedObject*)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(nullable NSManagedObjectContext *)context NS_DESIGNATED_INITIALIZER;
 
-/* Returns a new object, inserted into managedObjectContext. This method is only legal to call on subclasses of NSManagedObject that represent a single entity in the model.
+/* Returns a new object, inserted into managedObjectContext. This method is only legal to call on subclasses of NSManagedObject that represent a single entity in the model. 
  */
 -(instancetype)initWithContext:(NSManagedObjectContext*)moc API_AVAILABLE(macosx(10.12),ios(10.0),tvos(10.0),watchos(3.0));
 
@@ -114,13 +114,13 @@ API_AVAILABLE(macosx(10.4),ios(3.0)) NS_REQUIRES_PROPERTY_DEFINITIONS
 // value access (includes key-value coding methods)
 
 // KVC - overridden to access generic dictionary storage unless subclasses explicitly provide accessors
-- (nullable id)valueForKey:(NSString *)key;
+- (nullable id)valueForKey:(NSString *)key;    
 
 // KVC - overridden to access generic dictionary storage unless subclasses explicitly provide accessors
-- (void)setValue:(nullable id)value forKey:(NSString *)key;
+- (void)setValue:(nullable id)value forKey:(NSString *)key;    
 
 // primitive methods give access to the generic dictionary storage from subclasses that implement explicit accessors like -setName/-name to add custom document logic
-- (nullable id)primitiveValueForKey:(NSString *)key;
+- (nullable id)primitiveValueForKey:(NSString *)key;    
 - (void)setPrimitiveValue:(nullable id)value forKey:(NSString *)key;
 
 // returns a dictionary of the last fetched or saved keys and values of this object.  Pass nil to get all persistent modeled properties.
@@ -137,6 +137,7 @@ API_AVAILABLE(macosx(10.4),ios(3.0)) NS_REQUIRES_PROPERTY_DEFINITIONS
 - (BOOL)validateForInsert:(NSError **)error;
 - (BOOL)validateForUpdate:(NSError **)error;
 
+    
 @end
 
 NS_ASSUME_NONNULL_END

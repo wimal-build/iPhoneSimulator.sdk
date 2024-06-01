@@ -1,7 +1,7 @@
 /*
     NSMergePolicy.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -65,7 +65,7 @@ API_AVAILABLE(macosx(10.7),ios(5.0))
  *
  *  A newVersion number of 0 means the object was deleted and the corresponding snapshot is nil.
  */
-- (instancetype)initWithSource:(NSManagedObject*)srcObject newVersion:(NSUInteger)newvers oldVersion:(NSUInteger)oldvers cachedSnapshot:(nullable NSDictionary<NSString *, id> *)cachesnap persistedSnapshot:(nullable NSDictionary<NSString *, id> *)persnap NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSource:(NSManagedObject*)srcObject newVersion:(NSUInteger)newvers oldVersion:(NSUInteger)oldvers cachedSnapshot:(nullable NSDictionary<NSString *, id> *)cachesnap persistedSnapshot:(nullable NSDictionary<NSString *, id>  *)persnap NS_DESIGNATED_INITIALIZER;
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
@@ -79,12 +79,12 @@ API_AVAILABLE(macosx(10.11),ios(9.0))
 @interface NSConstraintConflict : NSObject {
 }
 
-@property (readonly, retain) NSArray<NSString*> *constraint; // The constraint which has been violated.
-@property (readonly, retain) NSDictionary<NSString *, id> *constraintValues; // The values which the conflictingObjects had when this conflict was created. May no longer match the values of any conflicted object if something else resolved the conflict.
+@property (readonly, copy) NSArray <NSString *> *constraint; // The constraint which has been violated.
+@property (readonly, copy) NSDictionary <NSString *, id> *constraintValues; // The values which the conflictingObjects had when this conflict was created. May no longer match the values of any conflicted object if something else resolved the conflict.
 @property (nullable, readonly, retain) NSManagedObject *databaseObject; // Object whose DB row is using constraint values. May be null if this is a context-level violation.
 @property (nullable, readonly, retain) NSDictionary<NSString *, id> *databaseSnapshot; // DB row already using constraint values. May be null if this is a context-level violation.
-@property (readonly, retain) NSArray<NSManagedObject *> *conflictingObjects; // The objects in violation of the constraint. May contain one (in the case of a db level conflict) or more objects.
-@property (readonly, retain) NSArray<NSDictionary *> *conflictingSnapshots; // The original property values of objects in violation of the constraint.  Will contain as many objects as there are conflictingObjects. If an object was unchanged, its snapshot will instead be -[NSNull null].
+@property (readonly, copy) NSArray <NSManagedObject *> *conflictingObjects; // The objects in violation of the constraint. May contain one (in the case of a db level conflict) or more objects.
+@property (readonly, copy) NSArray <NSDictionary *> *conflictingSnapshots; // The original property values of objects in violation of the constraint.  Will contain as many objects as there are conflictingObjects. If an object was unchanged, its snapshot will instead be -[NSNull null].
 
 /*
  * There are two situations in which a constraint conflict may occur:

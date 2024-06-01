@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:           [ i386, x86_64 ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 61D101B4-FD51-3CB7-B030-BDC2A3751E43' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
+objc-constraint: none
+exports:         
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _ASCredentialIdentityStoreErrorDomain, _ASExtensionErrorDomain, 
+                       _ASWebAuthenticationSessionErrorDomain ]
+    objc-classes:    [ ASCredentialIdentityStore, ASCredentialIdentityStoreState, 
+                       ASCredentialProviderExtensionContext, ASCredentialProviderViewController, 
+                       ASCredentialServiceIdentifier, ASPasswordCredential, ASPasswordCredentialIdentity, 
+                       ASWebAuthenticationSession, _ASCredentialProviderExtensionConfigurationViewController, 
+                       _ASCredentialProviderExtensionHostContext, _ASCredentialProviderExtensionViewController, 
+                       _ASPasswordCredentialAuthenticationViewController ]
+...

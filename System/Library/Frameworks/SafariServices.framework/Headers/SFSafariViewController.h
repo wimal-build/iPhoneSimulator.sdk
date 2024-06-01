@@ -108,8 +108,10 @@ API_AVAILABLE(ios(9.0))
  */
 - (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully;
 
-/*! @abstract Called when the browser is redirected to another URL before the first page load finishes.
+/*! @abstract Called when the browser is redirected to another URL while loading the initial page.
     @param URL The new URL to which the browser was redirected.
+    @discussion This method may be called even after -safariViewController:didCompleteInitialLoad: if
+    the web page performs additional redirects without user interaction.
  */
 - (void)safariViewController:(SFSafariViewController *)controller initialLoadDidRedirectToURL:(NSURL *)URL API_AVAILABLE(ios(11.0));
 

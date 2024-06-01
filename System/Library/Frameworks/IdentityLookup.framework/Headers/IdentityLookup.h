@@ -17,7 +17,17 @@
 
 #import <IdentityLookup/ILMessageFilterExtension.h>
 #import <IdentityLookup/ILMessageFilterExtensionContext.h>
-
 #import <IdentityLookup/ILMessageFilterQueryHandling.h>
 #import <IdentityLookup/ILMessageFilterQueryRequest.h>
 #import <IdentityLookup/ILMessageFilterQueryResponse.h>
+
+#import <IdentityLookup/ILCommunication.h>
+#import <IdentityLookup/ILCallCommunication.h>
+#import <IdentityLookup/ILMessageCommunication.h>
+
+#import <IdentityLookup/ILClassificationRequest.h>
+#import <IdentityLookup/ILClassificationResponse.h>
+#import <IdentityLookup/ILClassificationActions.h>
+
+#import <IdentityLookup/ILMessageClassificationRequest.h>
+#import <IdentityLookup/ILCallClassificationRequest.h>

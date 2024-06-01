@@ -5,9 +5,10 @@
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //
 
-
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CGBase.h>
+#import <CoreGraphics/CGGeometry.h>
 #import <WatchKit/WKDefines.h>
-
 
 WK_AVAILABLE_WATCHOS_ONLY(3.0)
 typedef NS_ENUM(NSInteger, WKGestureRecognizerState) {

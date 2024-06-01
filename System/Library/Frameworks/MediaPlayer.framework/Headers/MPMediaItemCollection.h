@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 // An MPMediaItemCollection is a collection of related MPMediaItems in a media library.
 
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPMediaItemCollection : MPMediaEntity
 
 // Creates a media item collection by copying an array of MPMediaItems.

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollectionView.h>)
 //
 //  UICollectionView.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -549,3 +550,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UICollectionView.h>
+#endif

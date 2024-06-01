@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDynamicItemBehavior.h>)
 //
 //  UIDynamicItemBehavior.h
 //  UIKit
 //
-//  Copyright (c) 2012-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -53,3 +54,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIDynamicItemBehavior : UIDynamicBehavior
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIDynamicItemBehavior.h>
+#endif

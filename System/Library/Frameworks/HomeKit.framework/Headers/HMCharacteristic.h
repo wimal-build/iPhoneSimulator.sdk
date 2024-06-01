@@ -1,7 +1,9 @@
-// HMCharacteristic.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMCharacteristic.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
@@ -16,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief Represent a characteristic on a service of an accessory.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristic : NSObject
 
 /*!
@@ -27,7 +29,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief The localized description of the characteristic.
  */
-@property(readonly, copy, nonatomic) NSString *localizedDescription NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSString *localizedDescription API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Service that contains this characteristic.
@@ -65,7 +67,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief A unique identifier for the characteristic.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 
 /*!
@@ -114,7 +116,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateAuthorizationData:(nullable NSData *)data completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateAuthorizationData:(nullable NSData *)data completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 

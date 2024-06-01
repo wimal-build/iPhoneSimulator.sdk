@@ -1,14 +1,16 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIResponder.h>)
 //
 //  UIResponder.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIEvent.h>
 #import <UIKit/UIPasteConfigurationSupporting.h>
+#import <UIKit/UIUserActivity.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -175,7 +177,7 @@ UIKIT_EXTERN NSString *const UIKeyInputLeftArrow       NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIKeyInputRightArrow      NS_AVAILABLE_IOS(7_0);
 UIKIT_EXTERN NSString *const UIKeyInputEscape          NS_AVAILABLE_IOS(7_0);
 
-@interface UIResponder (ActivityContinuation)
+@interface UIResponder (ActivityContinuation) <UIUserActivityRestoring>
 @property (nullable, nonatomic, strong) NSUserActivity *userActivity NS_AVAILABLE_IOS(8_0);
 - (void)updateUserActivityState:(NSUserActivity *)activity NS_AVAILABLE_IOS(8_0);
 - (void)restoreUserActivityState:(NSUserActivity *)activity NS_AVAILABLE_IOS(8_0);
@@ -188,3 +190,7 @@ UIKIT_EXTERN NSString *const UIKeyInputEscape          NS_AVAILABLE_IOS(7_0);
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIResponder.h>
+#endif

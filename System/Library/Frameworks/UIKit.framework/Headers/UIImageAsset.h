@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIImageAsset.h>)
 //
 //  UIImageAsset.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIImage.h>
@@ -23,3 +24,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIImageAsset : NSObject <NSSecureCoding>
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIImageAsset.h>
+#endif

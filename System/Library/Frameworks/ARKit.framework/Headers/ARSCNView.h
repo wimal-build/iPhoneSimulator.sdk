@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion The view draws the camera background, provides and updates a camera,
  manages nodes for anchors, and updates lighting.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARSCNView : SCNView
 
 /**
@@ -35,7 +35,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  Specifies the scene of the view.
  */
-@property(nonatomic, strong) SCNScene *scene;
+@property (nonatomic, strong) SCNScene *scene;
 
 /**
  Determines whether the view will update the scene’s lighting.
@@ -43,7 +43,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  @discussion When set, the view will automatically create and update lighting for 
  light estimates the session provides. Defaults to YES.
  */
-@property(nonatomic) BOOL automaticallyUpdatesLighting;
+@property (nonatomic, assign) BOOL automaticallyUpdatesLighting;
 
 /**
  Searches the scene hierarchy for an anchor associated with the provided node.
@@ -68,13 +68,25 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  */
 - (NSArray<ARHitTestResult *> *)hitTest:(CGPoint)point types:(ARHitTestResultType)types;
 
+/**
+ Unproject a 2D point from the view onto a plane in 3D world coordinates.
+ 
+ @discussion A 2D point in the view’s coordinate space can refer to any point along a line segment
+ in the 3D coordinate space. Unprojecting gets the 3D position of the point along this line segment that intersects the provided plane.
+ @param point A point in the view’s coordinate system.
+ @param planeTransform The transform used to define the coordinate system of the plane.
+ The coordinate system’s positive Y axis is assumed to be the normal of the plane.
+ @return 3D position in world coordinates or a NAN values if unprojection is not possible.
+ */
+- (simd_float3)unprojectPoint:(CGPoint)point ontoPlaneWithTransform:(simd_float4x4)planeTransform API_AVAILABLE(ios(12.0)) NS_REFINED_FOR_SWIFT;
+
 @end
 
 
 #pragma mark - ARSCNViewDelegate
 
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @protocol ARSCNViewDelegate <SCNSceneRendererDelegate, ARSessionObserver>
 @optional
 
@@ -132,14 +144,14 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  Extended debug options for an ARSCNView
  */
-struct ARSCNDebugOptions {} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos);
+typedef SCNDebugOptions ARSCNDebugOptions API_AVAILABLE(ios(11.0));
 
 /** Show the world origin in the scene. */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 FOUNDATION_EXTERN const SCNDebugOptions ARSCNDebugOptionShowWorldOrigin NS_SWIFT_NAME(ARSCNDebugOptions.showWorldOrigin);
 
 /** Show detected 3D feature points in the world. */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 FOUNDATION_EXTERN const SCNDebugOptions ARSCNDebugOptionShowFeaturePoints NS_SWIFT_NAME(ARSCNDebugOptions.showFeaturePoints);
 
 NS_ASSUME_NONNULL_END

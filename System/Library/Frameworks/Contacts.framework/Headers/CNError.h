@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, CNErrorCode)
     CNErrorCodeContainmentCycle = 202,
     CNErrorCodeContainmentScope = 203,
     CNErrorCodeParentRecordDoesNotExist = 204,
+    CNErrorCodeRecordIdentifierInvalid = 205,
     
     CNErrorCodeValidationMultipleErrors = 300,
     CNErrorCodeValidationTypeMismatch = 301,
@@ -36,6 +37,7 @@ typedef NS_ENUM(NSInteger, CNErrorCode)
     CNErrorCodeClientIdentifierDoesNotExist = 601,
     
     CNErrorCodeVCardMalformed NS_ENUM_AVAILABLE(10_13, 11_0) = 700,
+    CNErrorCodeVCardSummarizationError NS_ENUM_AVAILABLE(10_14, 12_0) = 701,
     
 }  NS_ENUM_AVAILABLE(10_11, 9_0);
 

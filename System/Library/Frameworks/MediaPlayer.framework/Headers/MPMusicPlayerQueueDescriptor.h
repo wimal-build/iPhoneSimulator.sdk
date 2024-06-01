@@ -13,14 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @class MPMediaItem, MPMediaItemCollection, MPMediaQuery;
 
 MP_API(ios(10.1))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMusicPlayerQueueDescriptor : NSObject
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 @end
 
 MP_API(ios(10.1))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMusicPlayerMediaItemQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithQuery:(MPMediaQuery *)query;
@@ -36,7 +36,7 @@ MP_PROHIBITED(tvos)
 @end
 
 MP_API(ios(10.1))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMusicPlayerStoreQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithStoreIDs:(NSArray<NSString *> *)storeIDs;
@@ -50,7 +50,7 @@ MP_PROHIBITED(tvos)
 @end
 
 MP_API(ios(11.0))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMusicPlayerPlayParameters : NSObject
 
 - (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
@@ -60,7 +60,7 @@ MP_PROHIBITED(tvos)
 @end
 
 MP_API(ios(11.0))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMusicPlayerPlayParametersQueueDescriptor : MPMusicPlayerQueueDescriptor
 
 - (instancetype)initWithPlayParametersQueue:(NSArray<MPMusicPlayerPlayParameters *> *)playParametersQueue;

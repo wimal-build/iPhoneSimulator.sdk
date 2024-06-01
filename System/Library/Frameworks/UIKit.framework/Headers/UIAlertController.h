@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAlertController.h>)
 //
 //  UIAlertController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -56,3 +57,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIAlertController : UIViewController
 #endif
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIAlertController.h>
+#endif

@@ -6,6 +6,9 @@
 #define _EAGL_H_
 
 #include <Foundation/Foundation.h>
+#include <Availability.h>
+#include <OpenGLES/OpenGLESAvailability.h>
+
 
 #ifdef __cplusplus
 #define EAGL_EXTERN extern "C" __attribute__((visibility ("default")))
@@ -40,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /* EAGL Functions                                                       */
 /************************************************************************/
 
-EAGL_EXTERN void EAGLGetVersion(unsigned int* major, unsigned int* minor);
+EAGL_EXTERN void EAGLGetVersion(unsigned int* major, unsigned int* minor) OPENGLES_DEPRECATED(ios(2.0, 12.0), tvos(9.0, 12.0));
 
 /************************************************************************/
 /* EAGL Sharegroup                                                      */
@@ -62,7 +65,8 @@ EAGL_EXTERN_CLASS
 /************************************************************************/
 
 EAGL_EXTERN_CLASS
-@interface EAGLContext : NSObject
+OPENGLES_DEPRECATED(ios(2.0, 12.0), tvos(9.0, 12.0))
+@interface EAGLContext : NSObject 
 {
 @public
 	struct _EAGLContextPrivate *_private;

@@ -124,4 +124,15 @@ API_AVAILABLE(ios(10.0),tvos(10.0))
 - (void)broadcastController:(RPBroadcastController *)broadcastController didUpdateBroadcastURL:(NSURL *)broadcastURL API_AVAILABLE(ios(11.0), tvos(11.0));
 @end
 
+/*! @class RPSystemBroadcastPickerView
+ @abstract View that presents the user with a button for starting iOS system broadcast using preferred broadcast service.
+ */
+API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(tvos)
+@interface RPSystemBroadcastPickerView : UIView <NSCoding>
+/*  @abstract Bundle identifier of extension that should be used for broadcast. Default is nil which means that all extensions will be presented */
+@property (nonatomic, strong, nullable) NSString *preferredExtension;
+/*  @abstract Indicates whether the Microphone button is visible in broadcast picker view. Default is YES. */
+@property (nonatomic, assign) BOOL showsMicrophoneButton;
+@end
+
 NS_ASSUME_NONNULL_END

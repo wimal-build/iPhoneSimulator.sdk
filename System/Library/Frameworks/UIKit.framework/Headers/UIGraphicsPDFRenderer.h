@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGraphicsPDFRenderer.h>)
 //
 //  UIGraphicsPDFRenderer.h
 //  UIKit
 //
-//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIGraphicsRenderer.h>
@@ -36,3 +37,7 @@ NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsPDFRenderer : UIGraphicsRender
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIGraphicsPDFRenderer.h>
+#endif

@@ -24,31 +24,31 @@ typedef NS_ENUM(NSInteger, MPMusicPlaybackState) {
     MPMusicPlaybackStateInterrupted,
     MPMusicPlaybackStateSeekingForward,
     MPMusicPlaybackStateSeekingBackward
-} MP_API(ios(3.0)) MP_PROHIBITED(tvos);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, watchos);
 
 typedef NS_ENUM(NSInteger, MPMusicRepeatMode) {
     MPMusicRepeatModeDefault, // the user's preference for repeat mode
     MPMusicRepeatModeNone,
     MPMusicRepeatModeOne,
     MPMusicRepeatModeAll
-} MP_API(ios(3.0)) MP_PROHIBITED(tvos);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, watchos);
 
 typedef NS_ENUM(NSInteger, MPMusicShuffleMode) {
     MPMusicShuffleModeDefault, // the user's preference for shuffle mode
     MPMusicShuffleModeOff,
     MPMusicShuffleModeSongs,
     MPMusicShuffleModeAlbums
-} MP_API(ios(3.0)) MP_PROHIBITED(tvos);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, watchos);
 
 @protocol MPSystemMusicPlayerController <NSObject>
 /// Switches to Music to play the content provided by the queue descriptor.
-- (void)openToPlayQueueDescriptor:(MPMusicPlayerQueueDescriptor *)queueDescriptor MP_API(ios(11.0)) MP_PROHIBITED(tvos) NS_SWIFT_NAME(openToPlay(_:));
+- (void)openToPlayQueueDescriptor:(MPMusicPlayerQueueDescriptor *)queueDescriptor MP_API(ios(11.0)) MP_PROHIBITED(tvos, watchos) NS_SWIFT_NAME(openToPlay(_:));
 @end
 
 // MPMusicPlayerController allows playback of MPMediaItems through the Music application.
 // See MPMediaPlayback.h for basic playback control.
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMusicPlayerController : NSObject <MPMediaPlayback>
 
 /// Playing items with applicationMusicPlayer does not affect Music's playback state.
@@ -122,12 +122,12 @@ MP_PROHIBITED(tvos)
 @end
 
 // Posted when the playback state changes, either programatically or by the user.
-MP_EXTERN NSNotificationName const MPMusicPlayerControllerPlaybackStateDidChangeNotification MP_PROHIBITED(tvos);
+MP_EXTERN NSNotificationName const MPMusicPlayerControllerPlaybackStateDidChangeNotification MP_PROHIBITED(tvos, watchos);
 
 // Posted when the currently playing media item changes.
-MP_EXTERN NSNotificationName const MPMusicPlayerControllerNowPlayingItemDidChangeNotification MP_PROHIBITED(tvos);
+MP_EXTERN NSNotificationName const MPMusicPlayerControllerNowPlayingItemDidChangeNotification MP_PROHIBITED(tvos, watchos);
 
 // Posted when the current volume changes.
-MP_EXTERN NSNotificationName const MPMusicPlayerControllerVolumeDidChangeNotification MP_PROHIBITED(tvos);
+MP_EXTERN NSNotificationName const MPMusicPlayerControllerVolumeDidChangeNotification MP_PROHIBITED(tvos, watchos);
 
 NS_ASSUME_NONNULL_END

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINibDeclarations.h>)
 //
 //  UINibDeclarations.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #ifndef IBOutlet
@@ -25,3 +26,7 @@
 #define IB_DESIGNABLE
 #endif
 
+
+#else
+#import <UIKitCore/UINibDeclarations.h>
+#endif

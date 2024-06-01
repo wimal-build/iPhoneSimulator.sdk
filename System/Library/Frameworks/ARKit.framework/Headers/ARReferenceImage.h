@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  A reference image to be detected in the scene.
  */
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
-@interface ARReferenceImage : NSObject<NSCopying>
+API_AVAILABLE(ios(11.3))
+@interface ARReferenceImage : NSObject
 
 /**
  An optional name used to identify the image.
@@ -36,7 +36,6 @@ API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
  @param image The reference image as CGImage.
  @param orientation The image orientation.
  @param physicalWidth The width in meters of the physical object.
- @return Reference image or nil on error.
  */
 - (instancetype)initWithCGImage:(CGImageRef)image orientation:(CGImagePropertyOrientation)orientation physicalWidth:(CGFloat)physicalWidth NS_SWIFT_NAME(init(_:orientation:physicalWidth:));
 
@@ -46,7 +45,6 @@ API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
  @param pixelBuffer The reference image as CVPixelBuffer.
  @param physicalWidth The width in meters of the physical object.
  @param orientation The image orientation.
- @return Reference image or nil on error.
  */
 - (instancetype)initWithPixelBuffer:(CVPixelBufferRef)pixelBuffer orientation:(CGImagePropertyOrientation)orientation physicalWidth:(CGFloat)physicalWidth NS_SWIFT_NAME(init(_:orientation:physicalWidth:));
 

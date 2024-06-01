@@ -30,8 +30,8 @@ API_UNAVAILABLE(watchos, macos)
 - (instancetype)initWithCode:(INCancelRideIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;
 
 @property (readonly, NS_NONATOMIC_IOSONLY) INCancelRideIntentResponseCode code;
-@property (readwrite, nullable, NS_NONATOMIC_IOSONLY) INCurrencyAmount *cancellationFee; // Used during confirmation to warn the user about any cancellation fees
-@property (readwrite, nullable, NS_NONATOMIC_IOSONLY) NSDateComponents *cancellationFeeThreshold; // The time after which canceling the ride will incur the cancellation fee
+@property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) INCurrencyAmount *cancellationFee; // Used during confirmation to warn the user about any cancellation fees
+@property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) NSDateComponents *cancellationFeeThreshold; // The time after which canceling the ride will incur the cancellation fee
 
 @end
 

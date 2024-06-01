@@ -1,9 +1,12 @@
-// HMRoom.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMRoom.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -12,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief This class describes a room in the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMRoom : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -31,7 +34,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief A unique identifier for the room.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief This method is used to change the name of the room.
@@ -42,7 +45,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 

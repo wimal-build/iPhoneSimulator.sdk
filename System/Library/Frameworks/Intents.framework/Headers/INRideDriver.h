@@ -12,7 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx)
+API_AVAILABLE(ios(10.0), watchos(3.2))
+API_UNAVAILABLE(macosx)
 @interface INRideDriver : INPerson <NSCopying, NSSecureCoding>
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *rating;

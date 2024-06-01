@@ -1,7 +1,9 @@
-// HMActionSet.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMActionSet.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
@@ -15,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class represents a collection of action objects that can be executed. 
  *        The order of execution of these actions is undefined.
  */             
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMActionSet : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -40,17 +42,17 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *        Builtin action sets cannot be removed from the home. trigger-owned action sets cannot
  *        be executed, renamed or associated with another trigger.
  */
-@property(readonly, copy, nonatomic) NSString *actionSetType NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSString *actionSetType API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief A unique identifier for the action set.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Specifies the last execution date for the action set.
  */
-@property(readonly, copy, nonatomic, nullable) NSDate *lastExecutionDate NS_AVAILABLE_IOS(10_0) __TVOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0);
+@property(readonly, copy, nonatomic, nullable) NSDate *lastExecutionDate API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 /*!
  * @brief This method is used to change the name of the action set.
@@ -61,7 +63,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Adds an action to the action set.
@@ -72,7 +74,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addAction:(HMAction *)action completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addAction:(HMAction *)action completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes an existing action from the action set.
@@ -83,34 +85,35 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeAction:(HMAction *)action completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeAction:(HMAction *)action completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 
 /*!
  * @brief Builtin action set type for WakeUp.
  */
-HM_EXTERN NSString * const HMActionSetTypeWakeUp NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+
+HM_EXTERN NSString * const HMActionSetTypeWakeUp API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Type for builtin action set Sleep.
  */
-HM_EXTERN NSString * const HMActionSetTypeSleep NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMActionSetTypeSleep API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Type for builtin action set HomeDeparture.
  */
-HM_EXTERN NSString * const HMActionSetTypeHomeDeparture NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMActionSetTypeHomeDeparture API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Type for builtin action set HomeArrival.
  */
-HM_EXTERN NSString * const HMActionSetTypeHomeArrival NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMActionSetTypeHomeArrival API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Type for user-defined action sets.
  */
-HM_EXTERN NSString * const HMActionSetTypeUserDefined NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMActionSetTypeUserDefined API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Type for trigger-owned action sets.
@@ -119,6 +122,6 @@ HM_EXTERN NSString * const HMActionSetTypeUserDefined NS_AVAILABLE_IOS(9_0) __WA
  *             as part of the home. An action set of this type cannot be executed,
  *             renamed, or associated with a different trigger.
  */
-HM_EXTERN NSString * const HMActionSetTypeTriggerOwned __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMActionSetTypeTriggerOwned API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 NS_ASSUME_NONNULL_END

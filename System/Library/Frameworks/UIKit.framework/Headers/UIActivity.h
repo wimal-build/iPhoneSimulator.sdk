@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIActivity.h>)
 //
 //  UIActivity.h
 //  UIKit
 //
-//  Copyright 2012-2017 Apple Inc. All rights reserved.
+//  Copyright 2012-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class UIImage, UIViewController;
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIActivityType NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIActivityType NS_TYPED_EXTENSIBLE_ENUM;
 #else
 typedef NSString * UIActivityType;
 #endif
@@ -75,3 +76,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIActivity : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIActivity.h>
+#endif

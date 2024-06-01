@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPinchGestureRecognizer.h>)
 //
 //  UIPinchGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -22,3 +23,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIPinchGestureRecognize
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPinchGestureRecognizer.h>
+#endif

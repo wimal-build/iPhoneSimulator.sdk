@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMAccessoryProfile.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @discussion Provides an interface to interact with a Camera in an Accessory.
  */
-__IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCameraProfile : HMAccessoryProfile
 
 - (instancetype)init NS_UNAVAILABLE;

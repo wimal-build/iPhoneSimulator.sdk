@@ -1,14 +1,16 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIWebView.h>)
 //
 //  UIWebView.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDataDetectors.h>
 #import <UIKit/UIScrollView.h>
+#import <Availability.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +21,7 @@ typedef NS_ENUM(NSInteger, UIWebViewNavigationType) {
     UIWebViewNavigationTypeReload,
     UIWebViewNavigationTypeFormResubmitted,
     UIWebViewNavigationTypeOther
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIWebPaginationMode) {
     UIWebPaginationModeUnpaginated,
@@ -27,17 +29,17 @@ typedef NS_ENUM(NSInteger, UIWebPaginationMode) {
     UIWebPaginationModeTopToBottom,
     UIWebPaginationModeBottomToTop,
     UIWebPaginationModeRightToLeft
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 typedef NS_ENUM(NSInteger, UIWebPaginationBreakingMode) {
     UIWebPaginationBreakingModePage,
     UIWebPaginationBreakingModeColumn
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
 
 @class UIWebViewInternal;
 @protocol UIWebViewDelegate;
 
-NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate> 
+UIKIT_EXTERN API_DEPRECATED("No longer supported; please adopt WKWebView.", ios(2.0, 12.0)) API_UNAVAILABLE(tvos, macos) @interface UIWebView : UIView <NSCoding, UIScrollViewDelegate>
 
 @property (nullable, nonatomic, assign) id <UIWebViewDelegate> delegate;
 
@@ -86,14 +88,18 @@ NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIWebView : UIView <NSC
 @property (nonatomic) BOOL allowsLinkPreview NS_AVAILABLE_IOS(9_0); // default is NO
 @end
 
-__TVOS_PROHIBITED @protocol UIWebViewDelegate <NSObject>
+API_UNAVAILABLE(tvos) @protocol UIWebViewDelegate <NSObject>
 
 @optional
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
-- (void)webViewDidStartLoad:(UIWebView *)webView;
-- (void)webViewDidFinishLoad:(UIWebView *)webView;
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType API_DEPRECATED("No longer supported.", ios(2.0, 12.0));
+- (void)webViewDidStartLoad:(UIWebView *)webView API_DEPRECATED("No longer supported.", ios(2.0, 12.0));
+- (void)webViewDidFinishLoad:(UIWebView *)webView API_DEPRECATED("No longer supported.", ios(2.0, 12.0));
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error API_DEPRECATED("No longer supported.", ios(2.0, 12.0));
 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIWebView.h>
+#endif

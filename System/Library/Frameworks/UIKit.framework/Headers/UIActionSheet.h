@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIActionSheet.h>)
 //
 //  UIActionSheet.h
 //  UIKit
 //
-//  Copyright 2010-2017 Apple Inc. All rights reserved.
+//  Copyright 2010-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -79,3 +80,7 @@ __TVOS_PROHIBITED
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIActionSheet.h>
+#endif

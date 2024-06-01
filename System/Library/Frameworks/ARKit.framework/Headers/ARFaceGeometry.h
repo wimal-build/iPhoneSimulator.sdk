@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion The face geometry will have a constant number of triangles
  and vertices, updating only the vertex positions from frame to frame.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARFaceGeometry : NSObject<NSSecureCoding, NSCopying>
 
 /**
@@ -31,7 +31,7 @@ The number of mesh vertices of the geometry.
 /**
  The mesh vertices of the geometry.
  */
-@property (nonatomic, readonly) const vector_float3 *vertices NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) const simd_float3 *vertices NS_REFINED_FOR_SWIFT;
 
 /**
  The number of texture coordinates of the face geometry.
@@ -41,7 +41,7 @@ The number of mesh vertices of the geometry.
 /**
  The texture coordinates of the geometry.
  */
-@property (nonatomic, readonly) const vector_float2 *textureCoordinates NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) const simd_float2 *textureCoordinates NS_REFINED_FOR_SWIFT;
 
 /**
  The number of triangles of the face geometry.
@@ -72,7 +72,7 @@ The number of mesh vertices of the geometry.
 /**
  A SceneKit geometry representing a face.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARSCNFaceGeometry : SCNGeometry
 
 /**

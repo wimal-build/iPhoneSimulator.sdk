@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSParagraphStyle.h>)
 //
 //  NSParagraphStyle.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018, Apple Inc. All rights reserved.
 //
 // NSParagraphStyle and NSMutableParagraphStyle hold paragraph style information
 // NSTextTab holds information about a single tab stop
@@ -15,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // NSTextTab
-typedef NSString * NSTextTabOptionKey NS_STRING_ENUM;
+typedef NSString * NSTextTabOptionKey NS_TYPED_ENUM;
 UIKIT_EXTERN NSTextTabOptionKey const NSTabColumnTerminatorsAttributeName NS_AVAILABLE(10_0, 7_0); // An attribute for NSTextTab options.  The value is NSCharacterSet.  The character set is used to determine the tab column terminating character.  The tab and newline characters are implied even if not included in the character set.
 
 NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextTab : NSObject <NSCopying, NSCoding, NSSecureCoding>
@@ -106,3 +107,7 @@ NS_CLASS_AVAILABLE(10_0, 6_0) @interface NSMutableParagraphStyle : NSParagraphSt
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSParagraphStyle.h>
+#endif

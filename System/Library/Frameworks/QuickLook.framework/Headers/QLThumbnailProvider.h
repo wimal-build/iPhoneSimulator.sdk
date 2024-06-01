@@ -5,6 +5,10 @@
 //  Copyright 2016 Apple Inc. All rights reserved.
 //
 
+#if !defined(USE_PUBLIC_QUICKLOOK_HEADERS) && __has_include(<QuickLookSupport/QLThumbnailProvider.h>)
+#import <QuickLookSupport/QLThumbnailProvider.h>
+#else
+
 #import <Foundation/Foundation.h>
 #import <QuickLook/QLBase.h>
 
@@ -29,3 +33,5 @@ NS_CLASS_AVAILABLE_IOS(11_0) QL_EXPORT @interface QLThumbnailProvider : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 88EB9084-C7B4-3574-9B8D-B233C7963975', 'x86_64: DD735D8F-4AE2-396E-8E5C-300631E17F03' ]
+uuids:           [ 'i386: 88EB9084-C7B4-3574-9B8D-B233C7963975', 'x86_64: 55E1D5CB-903B-3845-A49C-9341B5646758' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/GSS.framework/GSS
 objc-constraint: none

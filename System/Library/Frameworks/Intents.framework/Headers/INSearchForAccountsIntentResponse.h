@@ -18,6 +18,8 @@ typedef NS_ENUM(NSInteger, INSearchForAccountsIntentResponseCode) {
     INSearchForAccountsIntentResponseCodeFailureRequiringAppLaunch,
     INSearchForAccountsIntentResponseCodeFailureCredentialsUnverified,
     INSearchForAccountsIntentResponseCodeFailureAccountNotFound,
+    INSearchForAccountsIntentResponseCodeFailureTermsAndConditionsAcceptanceRequired API_AVAILABLE(ios(12.0), watchos(5.0)),
+    INSearchForAccountsIntentResponseCodeFailureNotEligible API_AVAILABLE(ios(12.0), watchos(5.0)),
 } API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN

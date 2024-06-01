@@ -1,12 +1,15 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextInputTraits.h>)
 //
 //  UITextInputTraits.h
 //  UIKit
 //
-//  Copyright (c) 2006-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 //
 // UITextAutocapitalizationType
@@ -145,10 +148,20 @@ typedef NS_ENUM(NSInteger, UIReturnKeyType) {
 };
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UITextContentType NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UITextContentType NS_TYPED_ENUM;
 #else
 typedef NSString * UITextContentType;
 #endif
+
+NS_CLASS_AVAILABLE_IOS(12_0) @interface UITextInputPasswordRules : NSObject <NSSecureCoding, NSCopying>
+
+@property (nonatomic,readonly) NSString *passwordRulesDescriptor;
+
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
++ (instancetype)passwordRulesWithDescriptor:(NSString *)passwordRulesDescriptor;
+
+@end
 
 //
 // UITextInputTraits
@@ -173,7 +186,14 @@ typedef NSString * UITextContentType;
 @property(nonatomic,getter=isSecureTextEntry) BOOL secureTextEntry;       // default is NO
 
 // The textContentType property is to provide the keyboard with extra information about the semantic intent of the text document.
-@property(nonatomic,copy) UITextContentType textContentType NS_AVAILABLE_IOS(10_0); // default is nil
+@property(null_unspecified,nonatomic,copy) UITextContentType textContentType NS_AVAILABLE_IOS(10_0); // default is nil
+
+// The passwordRules property is used to communicate requirements for passwords for your service
+// to ensure iOS can generate compatible passwords for users. It only works when secureTextEntry
+// is YES. You do not need to use this property if the passwords that iOS generates are already
+// compatible with your service. You can learn more about the purpose of and syntax for these rules
+// on the Password Rules documentation guide.
+@property(nullable,nonatomic,copy) UITextInputPasswordRules *passwordRules NS_AVAILABLE_IOS(12_0); // default is nil
 
 @end
 
@@ -203,4 +223,12 @@ UIKIT_EXTERN UITextContentType const UITextContentTypeURL                       
 UIKIT_EXTERN UITextContentType const UITextContentTypeCreditCardNumber          NS_AVAILABLE_IOS(10_0);
 UIKIT_EXTERN UITextContentType const UITextContentTypeUsername                  NS_AVAILABLE_IOS(11_0);
 UIKIT_EXTERN UITextContentType const UITextContentTypePassword                  NS_AVAILABLE_IOS(11_0);
+UIKIT_EXTERN UITextContentType const UITextContentTypeNewPassword               NS_AVAILABLE_IOS(12_0);
+UIKIT_EXTERN UITextContentType const UITextContentTypeOneTimeCode               NS_AVAILABLE_IOS(12_0);
 
+
+NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITextInputTraits.h>
+#endif

@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <GLKit/GLKitBase.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -55,7 +55,9 @@ typedef NS_ENUM(GLint, GLKViewDrawableMultisample)
 #pragma mark GLKView
 #pragma mark -
 
-NS_CLASS_AVAILABLE(NA, 5_0)
+
+OPENGLES_DEPRECATED(ios(5.0,12.0), tvos(9.0,12.0))
+API_UNAVAILABLE(macos)
 @interface GLKView : UIView <NSCoding>
 {
 

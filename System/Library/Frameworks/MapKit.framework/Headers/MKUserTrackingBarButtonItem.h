@@ -5,8 +5,11 @@
 //  Copyright (c) 2010-2014, Apple Inc. All rights reserved.
 //
 
-#import <UIKit/UIBarButtonItem.h>
 #import <MapKit/MKFoundation.h>
+
+#if MK_SUPPORTS_VIEW_CLASSES
+
+#import <UIKit/UIBarButtonItem.h>
 
 @class MKMapView;
 
@@ -21,3 +24,5 @@ NS_CLASS_AVAILABLE(NA, 5_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif // MK_SUPPORTS_VIEW_CLASSES

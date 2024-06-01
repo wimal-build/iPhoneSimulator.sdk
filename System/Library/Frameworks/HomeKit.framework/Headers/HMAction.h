@@ -4,19 +4,20 @@
 //  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @brief This class is used to represent a generic action.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMAction : NSObject
 
 /*!
  * @brief A unique identifier for the action.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 @end
 

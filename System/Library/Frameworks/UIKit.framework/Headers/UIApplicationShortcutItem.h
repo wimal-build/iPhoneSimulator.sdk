@@ -1,11 +1,13 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIApplicationShortcutItem.h>)
 //
 //  UIApplicationShortcutItem.h
 //  UIKit
 //
-//  Copyright © 2015-2017 Apple Inc. All rights reserved.
+//  Copyright © 2015-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,9 +43,9 @@ typedef NS_ENUM(NSInteger, UIApplicationShortcutIconType) {
     UIApplicationShortcutIconTypeShuffle        NS_ENUM_AVAILABLE_IOS(9_1),
     UIApplicationShortcutIconTypeAudio          NS_ENUM_AVAILABLE_IOS(9_1),
     UIApplicationShortcutIconTypeUpdate         NS_ENUM_AVAILABLE_IOS(9_1)
-} NS_ENUM_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED;
+} API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos);
 
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
 @interface UIApplicationShortcutIcon : NSObject <NSCopying>
 
 // Create an icon using a system-defined image.
@@ -56,11 +58,11 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
 @interface UIApplicationShortcutItem : NSObject <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithType:(NSString *)type localizedTitle:(NSString *)localizedTitle localizedSubtitle:(nullable NSString *)localizedSubtitle icon:(nullable UIApplicationShortcutIcon *)icon userInfo:(nullable NSDictionary *)userInfo NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithType:(NSString *)type localizedTitle:(NSString *)localizedTitle localizedSubtitle:(nullable NSString *)localizedSubtitle icon:(nullable UIApplicationShortcutIcon *)icon userInfo:(nullable NSDictionary<NSString *, id <NSSecureCoding>> *)userInfo NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithType:(NSString *)type localizedTitle:(NSString *)localizedTitle;
 
 // An application-specific string that identifies the type of action to perform.
@@ -77,7 +79,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
+UIKIT_EXTERN API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
 @interface UIMutableApplicationShortcutItem : UIApplicationShortcutItem
 
 // An application-specific string that identifies the type of action to perform.
@@ -95,3 +97,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIApplicationShortcutItem.h>
+#endif

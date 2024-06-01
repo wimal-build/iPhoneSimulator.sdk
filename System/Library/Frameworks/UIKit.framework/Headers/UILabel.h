@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILabel.h>)
 //
 //  UILabel.h
 //  UIKit
 //
-//  Copyright (c) 2006-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2006-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -67,6 +68,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSize
 @property(nonatomic) CGFloat preferredMaxLayoutWidth NS_AVAILABLE_IOS(6_0);
 
 
+// If YES, the UILabel will scroll its text while any of its immediate or distant superviews become focused. Also, lineBreakMode, adjustsFontSizeToFitWidth, and allowsDefaultTighteningForTruncation are ignored.
+@property (nonatomic) BOOL enablesMarqueeWhenAncestorFocused API_AVAILABLE(tvos(12.0)) API_UNAVAILABLE(ios, watchos);
+
+
 // deprecated:
 
 @property(nonatomic) CGFloat minimumFontSize NS_DEPRECATED_IOS(2_0, 6_0) __TVOS_PROHIBITED; // deprecated - use minimumScaleFactor. default is 0.0
@@ -77,3 +82,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UILabel : UIView <NSCoding, UIContentSize
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UILabel.h>
+#endif

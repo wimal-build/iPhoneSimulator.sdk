@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPrinter.h>)
 //
 //  UIPrinter.h
 //  UIKit
 //
-//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -122,3 +123,7 @@ typedef NS_OPTIONS(NSInteger, UIPrinterJobTypes) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPrinter.h>
+#endif

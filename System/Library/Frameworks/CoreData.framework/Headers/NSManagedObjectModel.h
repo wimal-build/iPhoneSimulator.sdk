@@ -1,7 +1,7 @@
 /*
     NSManagedObjectModel.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -21,7 +21,7 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 @interface NSManagedObjectModel : NSObject <NSCoding, NSCopying, NSFastEnumeration> {
 }
 
-+ (nullable NSManagedObjectModel *)mergedModelFromBundles:(nullable NSArray<NSBundle *> *)bundles;    // looks up all models in the specified bundles and merges them; if nil is specified as argument, uses the main bundle
++ (nullable NSManagedObjectModel *)mergedModelFromBundles:(nullable NSArray<NSBundle *> *)bundles;  // looks up all models in the specified bundles and merges them; if nil is specified as argument, uses the main bundle
 
 + (nullable NSManagedObjectModel *)modelByMergingModels:(nullable NSArray<NSManagedObjectModel *> *)models;    // combines multiple models (typically from different frameworks) into one
 

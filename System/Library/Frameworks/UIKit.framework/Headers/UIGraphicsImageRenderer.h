@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGraphicsImageRenderer.h>)
 //
 //  UIGraphicsImageRenderer.h
 //  UIKit
 //
-//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIGraphicsRenderer.h>
@@ -14,17 +15,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^UIGraphicsImageDrawingActions)(UIGraphicsImageRendererContext *rendererContext) NS_AVAILABLE_IOS(10_0);
 
+typedef NS_ENUM(NSInteger, UIGraphicsImageRendererFormatRange) {
+    UIGraphicsImageRendererFormatRangeUnspecified = -1,
+    UIGraphicsImageRendererFormatRangeAutomatic = 0,
+    UIGraphicsImageRendererFormatRangeExtended,
+    UIGraphicsImageRendererFormatRangeStandard
+} NS_ENUM_AVAILABLE_IOS(12_0);
 
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRendererFormat : UIGraphicsRendererFormat
 
 @property (nonatomic) CGFloat scale; // display scale of the context. The preferredFormat uses the scale most appropriate for the main screen's current configuration.
 @property (nonatomic) BOOL opaque; // indicates the bitmap context will draw fully opaque. The preferredFormat sets this to NO.
-@property (nonatomic) BOOL prefersExtendedRange; // indicates the bitmap context should draw into a context capable of rendering extended color images. The preferredFormat sets this according to the main screen's current configuration.
+@property (nonatomic) BOOL prefersExtendedRange NS_DEPRECATED_IOS(10_0, 12_0, "Use the preferredRange property instead"); // indicates the bitmap context should draw into a context capable of rendering extended color images. The preferredFormat sets this according to the main screen's current configuration.
+
+@property (nonatomic) UIGraphicsImageRendererFormatRange preferredRange NS_AVAILABLE_IOS(12_0);
 
 // Returns a format optimized for the specified trait collection, taking into account properties such as displayScale and displayGamut.
 // Traits that are not specified will be ignored, with their corresponding format properties defaulting to the values in preferredFormat.
 + (instancetype)formatForTraitCollection:(UITraitCollection *)traitCollection NS_AVAILABLE_IOS(11_0);
-
 @end
 
 NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRendererContext : UIGraphicsRendererContext
@@ -46,3 +54,7 @@ NS_CLASS_AVAILABLE_IOS(10_0) @interface UIGraphicsImageRenderer : UIGraphicsRend
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIGraphicsImageRenderer.h>
+#endif

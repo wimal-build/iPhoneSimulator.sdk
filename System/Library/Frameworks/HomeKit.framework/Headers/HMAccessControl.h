@@ -6,13 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
  *  @abstract   The HMAccessControl class represents a generic access control.
  */
-API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2))
+API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2)) API_UNAVAILABLE(macos)
 @interface HMAccessControl : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

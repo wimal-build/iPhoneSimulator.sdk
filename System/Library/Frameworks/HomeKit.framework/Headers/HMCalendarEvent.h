@@ -5,13 +5,14 @@
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMTimeEvent.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @brief This class is used to represent a calendar event.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMCalendarEvent : HMTimeEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -40,7 +41,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
 /*!
  * @brief This class is used to represent a calendar event.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMMutableCalendarEvent : HMCalendarEvent
 
 - (instancetype)init NS_UNAVAILABLE;

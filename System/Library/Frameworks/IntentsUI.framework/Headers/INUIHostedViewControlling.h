@@ -16,17 +16,19 @@
 typedef NS_ENUM(NSUInteger, INUIHostedViewContext) {
     INUIHostedViewContextSiriSnippet,
     INUIHostedViewContextMapsCard,
-} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos);
 
 typedef NS_ENUM(NSUInteger, INUIInteractiveBehavior) {
     INUIInteractiveBehaviorNone,
     INUIInteractiveBehaviorNextView, // Show UI representing navigation to a new view, such as a navigation chevron
     INUIInteractiveBehaviorLaunch, // Show UI representing a launch to leave the context, such as a button
     INUIInteractiveBehaviorGenericAction, // Show UI representing a generic follow-on action within the context, such as a large tap target
-} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macosx);
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macosx, watchos, tvos);
 
 NS_ASSUME_NONNULL_BEGIN
 
+API_AVAILABLE(ios(10.0))
+API_UNAVAILABLE(macosx, watchos, tvos)
 @protocol INUIHostedViewControlling <NSObject>
 
 @optional
@@ -41,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @see  INInteraction
  */
-- (void)configureWithInteraction:(INInteraction *)interaction context:(INUIHostedViewContext)context completion:(void (^)(CGSize desiredSize))completion API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+- (void)configureWithInteraction:(INInteraction *)interaction context:(INUIHostedViewContext)context completion:(void (^)(CGSize desiredSize))completion;
 
 /*!
  @abstract Perform configuration of UI based on the provided INInteraction and INParameter objects.
@@ -56,16 +58,16 @@ NS_ASSUME_NONNULL_BEGIN
  @see  INParameter
  @see  INInteraction
  */
-- (void)configureViewForParameters:(NSSet <INParameter *> *)parameters ofInteraction:(INInteraction *)interaction interactiveBehavior:(INUIInteractiveBehavior)interactiveBehavior context:(INUIHostedViewContext)context completion:(void (^)(BOOL success, NSSet <INParameter *> *configuredParameters, CGSize desiredSize))completion API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macosx);
+- (void)configureViewForParameters:(NSSet <INParameter *> *)parameters ofInteraction:(INInteraction *)interaction interactiveBehavior:(INUIInteractiveBehavior)interactiveBehavior context:(INUIHostedViewContext)context completion:(void (^)(BOOL success, NSSet <INParameter *> *configuredParameters, CGSize desiredSize))completion API_AVAILABLE(ios(11.0));
 
 @end
 
 @interface NSExtensionContext (INUIHostedViewControlling)
 
-@property (nonatomic, assign, readonly) CGSize hostedViewMinimumAllowedSize API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
-@property (nonatomic, assign, readonly) CGSize hostedViewMaximumAllowedSize API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx);
+@property (nonatomic, assign, readonly) CGSize hostedViewMinimumAllowedSize API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos);
+@property (nonatomic, assign, readonly) CGSize hostedViewMaximumAllowedSize API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(macosx, watchos, tvos);
 
-- (NSString *)interfaceParametersDescription API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macosx);
+- (NSString *)interfaceParametersDescription API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macosx, watchos, tvos);
 
 @end
 

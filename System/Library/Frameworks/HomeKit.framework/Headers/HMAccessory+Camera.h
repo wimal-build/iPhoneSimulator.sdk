@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMAccessory.h>
 
 @class HMCameraProfile;
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  *             an HMCameraProfile object. If the accessory does not contain a camera, this property
  *             will be nil.
  */
-@property(readonly, copy, nonatomic, nullable) NSArray<HMCameraProfile *> *cameraProfiles __IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+@property(readonly, copy, nonatomic, nullable) NSArray<HMCameraProfile *> *cameraProfiles API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 @end
 

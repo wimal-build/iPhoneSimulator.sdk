@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Discussion:
  *      Contains a single altimeter measurement.
  */
-NS_CLASS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
 @interface CMAltitudeData : CMLogItem
 
 /*

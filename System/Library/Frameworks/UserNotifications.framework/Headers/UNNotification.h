@@ -11,14 +11,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-__IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0)
+__IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __OSX_AVAILABLE(10.14)
 @interface UNNotification : NSObject <NSCopying, NSSecureCoding>
 
 // The date displayed on the notification.
-@property (nonatomic, readonly, copy) NSDate *date;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSDate *date;
 
 // The notification request that caused the notification to be delivered.
-@property (nonatomic, readonly, copy) UNNotificationRequest *request;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) UNNotificationRequest *request;
 
 - (instancetype)init NS_UNAVAILABLE;
 

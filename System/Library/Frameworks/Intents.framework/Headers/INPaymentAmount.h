@@ -6,13 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <Intents/INAmountType.h>
 
 @class INCurrencyAmount;
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(10.3), watchos(3.2)) API_UNAVAILABLE(macosx)
+API_AVAILABLE(ios(10.3), watchos(3.2))
+API_UNAVAILABLE(macosx)
 @interface INPaymentAmount : NSObject <NSCopying, NSSecureCoding>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -22,7 +24,7 @@ API_AVAILABLE(ios(10.3), watchos(3.2)) API_UNAVAILABLE(macosx)
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INCurrencyAmount *amount;
 
-@property (readonly, NS_NONATOMIC_IOSONLY) INAmountType amountType;
+@property (readonly, assign, NS_NONATOMIC_IOSONLY) INAmountType amountType;
 
 @end
 

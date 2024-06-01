@@ -19,12 +19,8 @@ API_UNAVAILABLE(macosx)
 // Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedDateSearchType:(INDateSearchType)resolvedDateSearchType NS_SWIFT_NAME(success(with:));
 
-+ (instancetype)successWithResolvedValue:(INDateSearchType)resolvedValue NS_SWIFT_UNAVAILABLE("Please use 'success(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+successWithResolvedDateSearchType:", ios(11.0, 11.0), watchos(4.0, 4.0));
-
 // This resolution result is to ask Siri to confirm if this is the value with which the user wants to continue.
 + (instancetype)confirmationRequiredWithDateSearchTypeToConfirm:(INDateSearchType)dateSearchTypeToConfirm NS_SWIFT_NAME(confirmationRequired(with:));
-
-+ (instancetype)confirmationRequiredWithValueToConfirm:(INDateSearchType)valueToConfirm NS_SWIFT_UNAVAILABLE("Please use 'confirmationRequired(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+confirmationRequiredWithDateSearchTypeToConfirm:", ios(11.0, 11.0), watchos(4.0, 4.0));
 
 @end
 

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextPasteDelegate.h>)
 //
 //  UITextPasteDelegate.h
 //  UIKit Framework
 //
-//  Copyright © 2017 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -115,7 +116,7 @@ UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos)
 // These will be the default attributes that will
 // be applied to plain strings when they are provided.
 // You can use these to make your own attributed string if you want.
-@property (nonatomic, readonly) NSDictionary<NSString *, id> *defaultAttributes;
+@property (nonatomic, readonly) NSDictionary<NSAttributedStringKey, id> *defaultAttributes;
 
 // provide a plain string representation result from this NSItemProvider's data
 - (void)setStringResult:(NSString*)string;
@@ -140,3 +141,7 @@ UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos)
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITextPasteDelegate.h>
+#endif

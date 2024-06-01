@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A9FCC99A-209C-348E-BB79-0A29A5FCB82B', 'x86_64: 5C5E99F8-3E0F-3024-B6E3-3C87BF6D091B' ]
+uuids:           [ 'i386: A9FCC99A-209C-348E-BB79-0A29A5FCB82B', 'x86_64: 86060660-D45A-3AA0-A233-A45AB9B876A6' ]
 platform:        ios
 install-name:    '/usr/lib/libc++.1.dylib'
-current-version: 400.9.1
+current-version: 400.9.4
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -67,9 +67,14 @@ exports:
                        __ZTv0_n12_NSt3__19strstreamD0Ev, __ZTv0_n12_NSt3__19strstreamD1Ev ]
     weak-def-symbols: [ __ZdaPvm, __ZdlPvm ]
   - archs:           [ x86_64 ]
-    symbols:         [ __ZNKSt3__18messagesIcE6do_getEliiRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+    symbols:         [ __ZNKSt12bad_any_cast4whatEv, __ZNKSt12experimental15fundamentals_v112bad_any_cast4whatEv, 
+                       __ZNKSt18bad_variant_access4whatEv, __ZNKSt19bad_optional_access4whatEv, 
+                       __ZNKSt3__18messagesIcE6do_getEliiRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
                        __ZNKSt3__18messagesIcE8do_closeEl, __ZNKSt3__18messagesIwE6do_getEliiRKNS_12basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEE, 
-                       __ZNKSt3__18messagesIwE8do_closeEl, __ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE, 
+                       __ZNKSt3__18messagesIwE8do_closeEl, __ZNSt12experimental19bad_optional_accessD0Ev, 
+                       __ZNSt12experimental19bad_optional_accessD1Ev, __ZNSt12experimental19bad_optional_accessD2Ev, 
+                       __ZNSt19bad_optional_accessD0Ev, __ZNSt19bad_optional_accessD1Ev, 
+                       __ZNSt19bad_optional_accessD2Ev, __ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE, 
                        __ZNSt3__112strstreambuf6__initEPclS1_, __ZNSt3__112strstreambufC1EPKal, 
                        __ZNSt3__112strstreambufC1EPKcl, __ZNSt3__112strstreambufC1EPKhl, 
                        __ZNSt3__112strstreambufC1EPalS1_, __ZNSt3__112strstreambufC1EPclS1_, 
@@ -109,6 +114,12 @@ exports:
                        __ZNSt3__16chrono12system_clock9to_time_tERKNS0_10time_pointIS1_NS0_8durationIxNS_5ratioILl1ELl1000000EEEEEEE, 
                        __ZTCNSt3__114basic_iostreamIcNS_11char_traitsIcEEEE16_NS_13basic_ostreamIcS2_EE, 
                        __ZTCNSt3__19strstreamE16_NS_13basic_ostreamIcNS_11char_traitsIcEEEE, 
+                       __ZTINSt12experimental15fundamentals_v112bad_any_castE, __ZTINSt12experimental19bad_optional_accessE, 
+                       __ZTISt12bad_any_cast, __ZTISt18bad_variant_access, __ZTISt19bad_optional_access, 
+                       __ZTSNSt12experimental15fundamentals_v112bad_any_castE, __ZTSNSt12experimental19bad_optional_accessE, 
+                       __ZTSSt12bad_any_cast, __ZTSSt18bad_variant_access, __ZTSSt19bad_optional_access, 
+                       __ZTVNSt12experimental15fundamentals_v112bad_any_castE, __ZTVNSt12experimental19bad_optional_accessE, 
+                       __ZTVSt12bad_any_cast, __ZTVSt18bad_variant_access, __ZTVSt19bad_optional_access, 
                        __ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev, 
                        __ZThn16_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev, 
                        __ZThn16_NSt3__19strstreamD0Ev, __ZThn16_NSt3__19strstreamD1Ev, 

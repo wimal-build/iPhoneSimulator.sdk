@@ -12,6 +12,7 @@
 #import <CoreNFC/NFCReaderSession.h>
 #import <CoreNFC/NFCTag.h>
 #import <CoreNFC/NFCNDEFReaderSession.h>
+#import <CoreNFC/NSUserActivity+CoreNFC.h>
 #if __has_include(<CoreNFC/NFCISO15693Tag.h>)
 #import <CoreNFC/NFCISO15693Tag.h>
 #endif

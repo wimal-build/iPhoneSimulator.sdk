@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFocusGuide.h>)
 //
 //  UIFocusGuide.h
 //  UIKit
 //
-//  Copyright © 2015-2017 Apple Inc. All rights reserved.
+//  Copyright © 2015-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UILayoutGuide.h>
@@ -27,3 +28,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UIFocusGuide : UILayoutGuide
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIFocusGuide.h>
+#endif

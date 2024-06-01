@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIMenuController.h>)
 //
 //  UIMenuController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -59,3 +60,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) __TVOS_PROHIBITED @interface UIMenuItem : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIMenuController.h>
+#endif

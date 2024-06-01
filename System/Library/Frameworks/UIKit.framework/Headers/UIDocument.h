@@ -1,12 +1,14 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDocument.h>)
 //
 //  UIDocument.h
 //  UIKit
 //
-//  Copyright (c) 1997-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 1997-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
+#import <UIKit/UIUserActivity.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -184,10 +186,14 @@ NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED @interface UIDocument : NSObject <
 
 UIKIT_EXTERN NSString* const NSUserActivityDocumentURLKey NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 
-@interface UIDocument (ActivityContinuation)
+@interface UIDocument (ActivityContinuation) <UIUserActivityRestoring>
 @property (nonatomic, strong, nullable) NSUserActivity *userActivity NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 - (void)updateUserActivityState:(NSUserActivity *)userActivity NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 - (void)restoreUserActivityState:(NSUserActivity *)userActivity NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED;
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIDocument.h>
+#endif

@@ -19,12 +19,12 @@ typedef NS_OPTIONS(NSUInteger, MPMediaPlaylistAttribute) {
     MPMediaPlaylistAttributeOnTheGo = (1 << 0), // if set, the playlist was created on a device rather than synced from iTunes
     MPMediaPlaylistAttributeSmart   = (1 << 1),
     MPMediaPlaylistAttributeGenius  = (1 << 2)
-} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos, watchos);
 
 // An MPMediaPlaylist is a collection of related MPMediaItems in an MPMediaLibrary.
 // Playlists have a unique identifier which persists across application launches.
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPMediaPlaylist : MPMediaItemCollection
 
 #pragma mark - Properties
@@ -57,7 +57,7 @@ MP_EXTERN NSString * const MPMediaPlaylistPropertyAuthorDisplayName MP_API(ios(9
 @end
 
 MP_API(ios(9.3))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPMediaPlaylistCreationMetadata : NSObject
 
 - (id)init NS_UNAVAILABLE;

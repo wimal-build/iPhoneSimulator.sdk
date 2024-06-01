@@ -5,6 +5,8 @@
 //  Copyright 2012 Apple, Inc. All rights reserved.
 //
 
+#include <TargetConditionals.h>
+#if TARGET_OS_IOS
 #import <AVKit/AVPlayerViewController.h>
 
 @interface AVPlayerViewController (iAdPreroll)
@@ -51,3 +53,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+#endif

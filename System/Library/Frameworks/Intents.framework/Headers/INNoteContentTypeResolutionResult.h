@@ -19,12 +19,8 @@ API_UNAVAILABLE(macosx)
 // Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedNoteContentType:(INNoteContentType)resolvedNoteContentType NS_SWIFT_NAME(success(with:));
 
-+ (instancetype)successWithResolvedValue:(INNoteContentType)resolvedValue NS_SWIFT_UNAVAILABLE("Please use 'success(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+successWithResolvedNoteContentType:", ios(11.0, 11.0), watchos(4.0, 4.0));
-
 // This resolution result is to ask Siri to confirm if this is the value with which the user wants to continue.
 + (instancetype)confirmationRequiredWithNoteContentTypeToConfirm:(INNoteContentType)noteContentTypeToConfirm NS_SWIFT_NAME(confirmationRequired(with:));
-
-+ (instancetype)confirmationRequiredWithValueToConfirm:(INNoteContentType)valueToConfirm NS_SWIFT_UNAVAILABLE("Please use 'confirmationRequired(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+confirmationRequiredWithNoteContentTypeToConfirm:", ios(11.0, 11.0), watchos(4.0, 4.0));
 
 @end
 

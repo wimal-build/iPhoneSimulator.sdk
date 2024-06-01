@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFontDescriptor.h>)
 //
 //  UIFontDescriptor.h
 //  UIKit
 //
-//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -47,14 +48,14 @@ typedef NS_OPTIONS(uint32_t, UIFontDescriptorSymbolicTraits) {
 
 typedef NSUInteger UIFontDescriptorClass;
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIFontTextStyle NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIFontTextStyle NS_TYPED_ENUM;
 #else
 typedef NSString * UIFontTextStyle;
 #endif
-typedef NSString * UIFontDescriptorAttributeName NS_EXTENSIBLE_STRING_ENUM;
-typedef NSString * UIFontDescriptorTraitKey NS_STRING_ENUM;
-typedef NSString * UIFontDescriptorFeatureKey NS_EXTENSIBLE_STRING_ENUM;
-typedef CGFloat UIFontWeight _NS_TYPED_EXTENSIBLE_ENUM;
+typedef NSString * UIFontDescriptorAttributeName NS_TYPED_ENUM;
+typedef NSString * UIFontDescriptorTraitKey NS_TYPED_ENUM;
+typedef NSString * UIFontDescriptorFeatureKey NS_TYPED_EXTENSIBLE_ENUM;
+typedef CGFloat UIFontWeight NS_TYPED_EXTENSIBLE_ENUM;
 
 @class NSMutableDictionary, NSDictionary, NSArray, NSSet, UITraitCollection;
 
@@ -124,7 +125,7 @@ UIKIT_EXTERN UIFontDescriptorAttributeName const UIFontDescriptorTextStyleAttrib
     
 // Font traits keys
 // This key is used with a trait dictionary to get the symbolic traits value as an NSNumber.
-UIKIT_EXTERN UIFontDescriptorAttributeName const UIFontSymbolicTrait NS_AVAILABLE_IOS(7_0);
+UIKIT_EXTERN UIFontDescriptorTraitKey const UIFontSymbolicTrait NS_AVAILABLE_IOS(7_0);
 
 // This key is used with a trait dictionary to get the normalized weight value as an NSNumber. The valid value range is from -1.0 to 1.0. The value of 0.0 corresponds to the regular or medium font weight.
 UIKIT_EXTERN UIFontDescriptorTraitKey const UIFontWeightTrait NS_AVAILABLE_IOS(7_0);
@@ -155,7 +156,7 @@ UIKIT_EXTERN UIFontDescriptorFeatureKey const UIFontFeatureTypeIdentifierKey NS_
 UIKIT_EXTERN UIFontDescriptorFeatureKey const UIFontFeatureSelectorIdentifierKey NS_AVAILABLE_IOS(7_0);
 
 // Font text styles, semantic descriptions of the intended use for a font returned by +[UIFont preferredFontForTextStyle:]
-UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleLargeTitle API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
+UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleLargeTitle API_AVAILABLE(ios(11.0), watchos(5.0)) API_UNAVAILABLE(tvos);
 UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleTitle1 NS_AVAILABLE_IOS(9_0);
 UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleTitle2 NS_AVAILABLE_IOS(9_0);
 UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleTitle3 NS_AVAILABLE_IOS(9_0);
@@ -169,3 +170,7 @@ UIKIT_EXTERN UIFontTextStyle const UIFontTextStyleCaption2 NS_AVAILABLE_IOS(7_0)
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIFontDescriptor.h>
+#endif

@@ -21,14 +21,18 @@ extern PKPaymentNetwork const PKPaymentNetworkCarteBancaires API_DEPRECATED("Use
 extern PKPaymentNetwork const PKPaymentNetworkCartesBancaires API_AVAILABLE(ios(11.2), watchos(4.2));
 extern PKPaymentNetwork const PKPaymentNetworkChinaUnionPay API_AVAILABLE(ios(9.2), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkDiscover API_AVAILABLE(ios(9.0), watchos(3.0));
+extern PKPaymentNetwork const PKPaymentNetworkEftpos API_AVAILABLE(ios(12.0), watchos(5.0));
+extern PKPaymentNetwork const PKPaymentNetworkElectron API_AVAILABLE(ios(12.0), watchos(5.0));
 extern PKPaymentNetwork const PKPaymentNetworkIDCredit API_AVAILABLE(ios(10.3), watchos(3.2));
 extern PKPaymentNetwork const PKPaymentNetworkInterac API_AVAILABLE(ios(9.2), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkJCB API_AVAILABLE(ios(10.1), watchos(3.1));
+extern PKPaymentNetwork const PKPaymentNetworkMaestro API_AVAILABLE(ios(12.0), watchos(5.0));
 extern PKPaymentNetwork const PKPaymentNetworkMasterCard API_AVAILABLE(ios(8.0), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkPrivateLabel API_AVAILABLE(ios(9.0), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkQuicPay API_AVAILABLE(ios(10.3), watchos(3.2));
 extern PKPaymentNetwork const PKPaymentNetworkSuica API_AVAILABLE(ios(10.1), watchos(3.1));
 extern PKPaymentNetwork const PKPaymentNetworkVisa API_AVAILABLE(ios(8.0), watchos(3.0));
+extern PKPaymentNetwork const PKPaymentNetworkVPay API_AVAILABLE(ios(12.0), watchos(5.0));
 
 typedef NSString * PKContactField NS_STRING_ENUM;
 extern PKContactField const PKContactFieldPostalAddress API_AVAILABLE(ios(11.0), watchos(4.0));
@@ -62,7 +66,10 @@ typedef NS_ENUM(NSInteger, PKPaymentButtonType) {
     PKPaymentButtonTypeBuy,
     PKPaymentButtonTypeSetUp API_AVAILABLE(ios(9.0), watchos(3.0)),
     PKPaymentButtonTypeInStore API_AVAILABLE(ios(10.0), watchos(3.0)),
-    PKPaymentButtonTypeDonate  API_AVAILABLE(ios(10.2), watchos(3.2))
+    PKPaymentButtonTypeDonate  API_AVAILABLE(ios(10.2), watchos(3.2)),
+    PKPaymentButtonTypeCheckout  API_AVAILABLE(ios(12.0), watchos(5.0)),
+    PKPaymentButtonTypeBook  API_AVAILABLE(ios(12.0), watchos(5.0)),
+    PKPaymentButtonTypeSubscribe  API_AVAILABLE(ios(12.0), watchos(5.0))
 } API_AVAILABLE(ios(8.3), watchos(3.0));
 
 #endif // PKCONSTANTS_H

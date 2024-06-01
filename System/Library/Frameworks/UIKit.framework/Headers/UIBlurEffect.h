@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIBlurEffect.h>)
 //
 //  UIBlurEffect.h
 //  UIKit
 //
-//  Copyright © 2016-2017 Apple Inc. All rights reserved.
+//  Copyright © 2016-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIVisualEffect.h>
@@ -26,3 +27,7 @@ NS_CLASS_AVAILABLE_IOS(8.0) @interface UIBlurEffect : UIVisualEffect
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIBlurEffect.h>
+#endif

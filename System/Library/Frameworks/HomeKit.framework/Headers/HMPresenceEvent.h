@@ -4,6 +4,7 @@
 //  Copyright (c) 2017 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMEvent.h>
 #import <HomeKit/HMPresenceEventDefines.h>
 
@@ -12,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief This class is used to represent the presence of users in a home.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMPresenceEvent : HMEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -44,7 +45,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
 /*!
  * @brief This class is used to represent the presence of users in a home.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMMutablePresenceEvent : HMPresenceEvent
 
 - (instancetype)init NS_UNAVAILABLE;

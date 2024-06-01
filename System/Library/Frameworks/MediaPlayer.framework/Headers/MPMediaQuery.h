@@ -24,11 +24,11 @@ typedef NS_ENUM(NSInteger, MPMediaGrouping) {
     MPMediaGroupingGenre,
     MPMediaGroupingPlaylist,
     MPMediaGroupingPodcastTitle
-} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos, watchos);
 
 // MPMediaQuery represents a collection of items or playlists determined by a chain of MPMediaPredicate objects.
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPMediaQuery : NSObject <NSSecureCoding, NSCopying>
 
 - (instancetype)initWithFilterPredicates:(nullable NSSet<MPMediaPredicate *> *)filterPredicates NS_DESIGNATED_INITIALIZER;
@@ -71,7 +71,7 @@ MP_PROHIBITED(tvos, macos)
 // See the concrete subclass MPMediaPropertyPredicate for filtering options.
 
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPMediaPredicate : NSObject <NSSecureCoding> {}
 @end
 
@@ -82,10 +82,10 @@ MP_PROHIBITED(tvos, macos)
 typedef NS_ENUM(NSInteger, MPMediaPredicateComparison) {
     MPMediaPredicateComparisonEqualTo,
     MPMediaPredicateComparisonContains
-} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos);
+} MP_API(ios(3.0)) MP_PROHIBITED(tvos, macos, watchos);
 
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPMediaPropertyPredicate : MPMediaPredicate
 
 + (MPMediaPropertyPredicate *)predicateWithValue:(nullable id)value forProperty:(NSString *)property; // comparisonType is MPMediaPredicateComparisonEqualTo

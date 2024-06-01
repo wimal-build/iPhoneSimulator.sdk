@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStackView.h>)
 //
 //  UIStackView.h
 //  UIKit
 //
-//  Copyright © 2015-2017 Apple Inc. All rights reserved.
+//  Copyright © 2015-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
@@ -228,3 +229,7 @@ and a stack with a vertical axis is a column of arrangedSubviews.
 
 @end
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIStackView.h>
+#endif

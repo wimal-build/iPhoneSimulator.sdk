@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark ARSKViewDelegate
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @protocol ARSKViewDelegate <SKViewDelegate, ARSessionObserver>
 @optional
 
@@ -78,7 +78,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  
  @discussion The view draws the camera background, and projects and maps anchors to nodes.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARSKView : SKView
 
 /**

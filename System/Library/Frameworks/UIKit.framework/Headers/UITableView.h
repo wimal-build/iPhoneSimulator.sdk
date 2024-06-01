@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITableView.h>)
 //
 //  UITableView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -309,7 +310,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableView : UIScrollView <NSCoding, UID
 @property (nonatomic, strong, nullable) UIColor *separatorColor UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED; // default is the standard separator gray
 @property (nonatomic, copy, nullable) UIVisualEffect *separatorEffect NS_AVAILABLE_IOS(8_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED; // effect to apply to table separators
 
-@property (nonatomic) BOOL cellLayoutMarginsFollowReadableWidth NS_AVAILABLE_IOS(9_0); // if cell margins are derived from the width of the readableContentGuide.
+@property (nonatomic) BOOL cellLayoutMarginsFollowReadableWidth NS_AVAILABLE_IOS(9_0); // if cell layout margins are derived from the width of the readableContentGuide. default is NO.
 @property (nonatomic) BOOL insetsContentViewsToSafeArea API_AVAILABLE(ios(11.0), tvos(11.0)); // default value is YES
 
 @property (nonatomic, strong, nullable) UIView *tableHeaderView;                           // accessory view for above row content. default is nil. not to be confused with section header
@@ -641,3 +642,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos)
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITableView.h>
+#endif

@@ -29,7 +29,7 @@ API_AVAILABLE(ios(11.3))
 /**
  The mesh vertices of the geometry.
  */
-@property (nonatomic, readonly) const vector_float3 *vertices NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) const simd_float3 *vertices NS_REFINED_FOR_SWIFT;
 
 /**
  The number of texture coordinates of the geometry.
@@ -39,7 +39,7 @@ API_AVAILABLE(ios(11.3))
 /**
  The texture coordinates of the geometry.
  */
-@property (nonatomic, readonly) const vector_float2 *textureCoordinates NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) const simd_float2 *textureCoordinates NS_REFINED_FOR_SWIFT;
 
 /**
  The number of triangles of the geometry.
@@ -59,7 +59,7 @@ API_AVAILABLE(ios(11.3))
 /**
  The vertices of the geometry's outermost boundary.
  */
-@property (nonatomic, readonly) const vector_float3 *boundaryVertices NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) const simd_float3 *boundaryVertices NS_REFINED_FOR_SWIFT;
 
 /** Unavailable */
 - (instancetype)init NS_UNAVAILABLE;

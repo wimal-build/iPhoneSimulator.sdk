@@ -1,7 +1,8 @@
 //
 //  SCNSceneRenderer.h
+//  SceneKit
 //
-//  Copyright (c) 2012-2017 Apple Inc. All rights reserved.
+//  Copyright © 2012-2018 Apple Inc. All rights reserved.
 //
 
 #import <SceneKit/SceneKitTypes.h>
@@ -57,7 +58,7 @@ typedef NS_OPTIONS(NSUInteger, SCNDebugOptions) {
     SCNDebugOptionShowSkeletons     API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0)) = 1 << 7, //show skinning bones
     SCNDebugOptionShowCreases       API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0)) = 1 << 8, //show subdivision creases
     SCNDebugOptionShowConstraints   API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0)) = 1 << 9, //show slider constraint
-    SCNDebugOptionShowCameras       API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0)) = 1 << 10 //show cameras
+    SCNDebugOptionShowCameras       API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0)) = 1 << 10, //show cameras
 } API_AVAILABLE(macos(10.11), ios(9.0));
 
 /*! @protocol SCNSceneRenderer
@@ -93,7 +94,7 @@ typedef NS_OPTIONS(NSUInteger, SCNDebugOptions) {
  @property delegate
  @abstract Specifies the renderer delegate.
  */
-@property(nonatomic, assign, nullable) id <SCNSceneRendererDelegate> delegate;
+@property(nonatomic, weak, nullable) id <SCNSceneRendererDelegate> delegate;
 
 /*!
  @method hitTest:options:
@@ -271,7 +272,7 @@ typedef NS_OPTIONS(NSUInteger, SCNDebugOptions) {
  @property audioEnvironmentNode
  @abstract Contains the instance of audio environment node used by the scene to spacialize sounds.
  */
-@property(nonatomic, readonly) AVAudioEnvironmentNode *audioEnvironmentNode API_AVAILABLE(macos(10.11), ios(9.0)) __WATCHOS_PROHIBITED;
+@property(nonatomic, readonly) AVAudioEnvironmentNode *audioEnvironmentNode API_AVAILABLE(macos(10.11), ios(9.0)) API_UNAVAILABLE(watchos);
 
 /*!
  @property audioListener

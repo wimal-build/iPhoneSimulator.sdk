@@ -34,11 +34,11 @@ typedef NS_ENUM(NSUInteger, MTLBlendFactor) {
     MTLBlendFactorOneMinusBlendColor = 12,
     MTLBlendFactorBlendAlpha = 13,
     MTLBlendFactorOneMinusBlendAlpha = 14,
-    MTLBlendFactorSource1Color              NS_AVAILABLE(10_12, 10_11) = 15,
-    MTLBlendFactorOneMinusSource1Color      NS_AVAILABLE(10_12, 10_11) = 16,
-    MTLBlendFactorSource1Alpha              NS_AVAILABLE(10_12, 10_11) = 17,
-    MTLBlendFactorOneMinusSource1Alpha      NS_AVAILABLE(10_12, 10_11) = 18,
-} NS_ENUM_AVAILABLE(10_11, 8_0);
+    MTLBlendFactorSource1Color              API_AVAILABLE(macos(10.12), ios(10.11)) = 15,
+    MTLBlendFactorOneMinusSource1Color      API_AVAILABLE(macos(10.12), ios(10.11)) = 16,
+    MTLBlendFactorSource1Alpha              API_AVAILABLE(macos(10.12), ios(10.11)) = 17,
+    MTLBlendFactorOneMinusSource1Alpha      API_AVAILABLE(macos(10.12), ios(10.11)) = 18,
+} API_AVAILABLE(macos(10.11), ios(8.0));
 
 typedef NS_ENUM(NSUInteger, MTLBlendOperation) {
     MTLBlendOperationAdd = 0,
@@ -46,7 +46,7 @@ typedef NS_ENUM(NSUInteger, MTLBlendOperation) {
     MTLBlendOperationReverseSubtract = 2,
     MTLBlendOperationMin = 3,
     MTLBlendOperationMax = 4,
-} NS_ENUM_AVAILABLE(10_11, 8_0);
+} API_AVAILABLE(macos(10.11), ios(8.0));
 
 typedef NS_OPTIONS(NSUInteger, MTLColorWriteMask) {
     MTLColorWriteMaskNone  = 0,
@@ -55,42 +55,42 @@ typedef NS_OPTIONS(NSUInteger, MTLColorWriteMask) {
     MTLColorWriteMaskBlue  = 0x1 << 1,
     MTLColorWriteMaskAlpha = 0x1 << 0,
     MTLColorWriteMaskAll   = 0xf
-} NS_ENUM_AVAILABLE(10_11, 8_0);
+} API_AVAILABLE(macos(10.11), ios(8.0));
 
 typedef NS_ENUM(NSUInteger, MTLPrimitiveTopologyClass) {
     MTLPrimitiveTopologyClassUnspecified = 0,
     MTLPrimitiveTopologyClassPoint = 1,
     MTLPrimitiveTopologyClassLine = 2,
     MTLPrimitiveTopologyClassTriangle = 3,
-} NS_ENUM_AVAILABLE(10_11, NA);
+} API_AVAILABLE(macos(10.11), ios(12.0));
 
 typedef NS_ENUM(NSUInteger, MTLTessellationPartitionMode) {
     MTLTessellationPartitionModePow2 = 0,
     MTLTessellationPartitionModeInteger = 1,
     MTLTessellationPartitionModeFractionalOdd = 2,
     MTLTessellationPartitionModeFractionalEven = 3,
-} NS_ENUM_AVAILABLE(10_12, 10_0);
+} API_AVAILABLE(macos(10.12), ios(10.0));
 
 typedef NS_ENUM(NSUInteger, MTLTessellationFactorStepFunction) {
     MTLTessellationFactorStepFunctionConstant = 0,
     MTLTessellationFactorStepFunctionPerPatch = 1,
     MTLTessellationFactorStepFunctionPerInstance = 2,
     MTLTessellationFactorStepFunctionPerPatchAndPerInstance = 3,
-} NS_ENUM_AVAILABLE(10_12, 10_0);
+} API_AVAILABLE(macos(10.12), ios(10.0));
 
 typedef NS_ENUM(NSUInteger, MTLTessellationFactorFormat) {
     MTLTessellationFactorFormatHalf = 0,
-} NS_ENUM_AVAILABLE(10_12, 10_0);
+} API_AVAILABLE(macos(10.12), ios(10.0));
 
 typedef NS_ENUM(NSUInteger, MTLTessellationControlPointIndexType) {
     MTLTessellationControlPointIndexTypeNone = 0,
     MTLTessellationControlPointIndexTypeUInt16 = 1,
     MTLTessellationControlPointIndexTypeUInt32 = 2,
-} NS_ENUM_AVAILABLE(10_12, 10_0);
+} API_AVAILABLE(macos(10.12), ios(10.0));
 
 @class MTLRenderPipelineColorAttachmentDescriptorArray;
 
-NS_CLASS_AVAILABLE(10_11, 8_0)
+MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @interface MTLRenderPipelineColorAttachmentDescriptor : NSObject <NSCopying>
 
 /*! Pixel format.  Defaults to MTLPixelFormatInvalid */
@@ -125,15 +125,15 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @end
 
 
-NS_CLASS_AVAILABLE(10_11, 8_0)
+MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @interface MTLRenderPipelineReflection : NSObject
 
 @property (nullable, readonly) NSArray <MTLArgument *> *vertexArguments;
 @property (nullable, readonly) NSArray <MTLArgument *> *fragmentArguments;
-@property (nullable, readonly) NSArray <MTLArgument *> *tileArguments NS_AVAILABLE_IOS(11_0);
+@property (nullable, readonly) NSArray <MTLArgument *> *tileArguments API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 @end
 
-NS_CLASS_AVAILABLE(10_11, 8_0)
+MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @interface MTLRenderPipelineDescriptor : NSObject <NSCopying>
 
 @property (nullable, copy, nonatomic) NSString *label;
@@ -157,18 +157,20 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @property (nonatomic) MTLPixelFormat depthAttachmentPixelFormat;
 @property (nonatomic) MTLPixelFormat stencilAttachmentPixelFormat;
 
-@property (readwrite, nonatomic) MTLPrimitiveTopologyClass inputPrimitiveTopology NS_AVAILABLE(10_11, NA);
+@property (readwrite, nonatomic) MTLPrimitiveTopologyClass inputPrimitiveTopology API_AVAILABLE(macos(10.11), ios(12.0));
 
-@property (readwrite, nonatomic) MTLTessellationPartitionMode tessellationPartitionMode NS_AVAILABLE(10_12, 10_0);
-@property (readwrite, nonatomic) NSUInteger maxTessellationFactor NS_AVAILABLE(10_12, 10_0);
-@property (readwrite, nonatomic, getter = isTessellationFactorScaleEnabled) BOOL tessellationFactorScaleEnabled NS_AVAILABLE(10_12, 10_0);
-@property (readwrite, nonatomic) MTLTessellationFactorFormat tessellationFactorFormat NS_AVAILABLE(10_12, 10_0);
-@property (readwrite, nonatomic) MTLTessellationControlPointIndexType tessellationControlPointIndexType NS_AVAILABLE(10_12, 10_0);
-@property (readwrite, nonatomic) MTLTessellationFactorStepFunction tessellationFactorStepFunction NS_AVAILABLE(10_12, 10_0);
-@property (readwrite, nonatomic) MTLWinding tessellationOutputWindingOrder NS_AVAILABLE(10_12, 10_0);
+@property (readwrite, nonatomic) MTLTessellationPartitionMode tessellationPartitionMode API_AVAILABLE(macos(10.12), ios(10.0));
+@property (readwrite, nonatomic) NSUInteger maxTessellationFactor API_AVAILABLE(macos(10.12), ios(10.0));
+@property (readwrite, nonatomic, getter = isTessellationFactorScaleEnabled) BOOL tessellationFactorScaleEnabled API_AVAILABLE(macos(10.12), ios(10.0));
+@property (readwrite, nonatomic) MTLTessellationFactorFormat tessellationFactorFormat API_AVAILABLE(macos(10.12), ios(10.0));
+@property (readwrite, nonatomic) MTLTessellationControlPointIndexType tessellationControlPointIndexType API_AVAILABLE(macos(10.12), ios(10.0));
+@property (readwrite, nonatomic) MTLTessellationFactorStepFunction tessellationFactorStepFunction API_AVAILABLE(macos(10.12), ios(10.0));
+@property (readwrite, nonatomic) MTLWinding tessellationOutputWindingOrder API_AVAILABLE(macos(10.12), ios(10.0));
 
-@property (readonly) MTLPipelineBufferDescriptorArray *vertexBuffers NS_AVAILABLE(10_13, 11_0);
-@property (readonly) MTLPipelineBufferDescriptorArray *fragmentBuffers NS_AVAILABLE(10_13, 11_0);
+@property (readonly) MTLPipelineBufferDescriptorArray *vertexBuffers API_AVAILABLE(macos(10.13), ios(11.0));
+@property (readonly) MTLPipelineBufferDescriptorArray *fragmentBuffers API_AVAILABLE(macos(10.13), ios(11.0));
+
+@property (readwrite, nonatomic) BOOL supportIndirectCommandBuffers API_AVAILABLE(macos(10.14), ios(12.0));
 
 /*!
  @method reset
@@ -184,7 +186,7 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
  
  @discussion MTLRenderPipelineState is a compiled render pipeline and can be set on a MTLRenderCommandEncoder.
  */
-NS_AVAILABLE(10_11, 8_0)
+API_AVAILABLE(macos(10.11), ios(8.0))
 @protocol MTLRenderPipelineState <NSObject>
 
 @property (nullable, readonly) NSString *label;
@@ -194,13 +196,13 @@ NS_AVAILABLE(10_11, 8_0)
  @property maxTotalThreadsPerThreadgroup
  @abstract The maximum total number of threads that can be in a single threadgroup.
  */
-@property (readonly) NSUInteger maxTotalThreadsPerThreadgroup NS_AVAILABLE_IOS(11_0);
+@property (readonly) NSUInteger maxTotalThreadsPerThreadgroup API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 
 /*!
  @property threadgroupSizeMatchesTileSize
  @abstract Returns true when the pipeline state requires a threadgroup size equal to the tile size
  */
-@property (readonly) BOOL threadgroupSizeMatchesTileSize NS_AVAILABLE_IOS(11_0);
+@property (readonly) BOOL threadgroupSizeMatchesTileSize API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 
 
 
@@ -208,17 +210,20 @@ NS_AVAILABLE(10_11, 8_0)
  @property imageblockSampleLength
  @brief Returns imageblock memory length used by a single sample when rendered using this pipeline.
  */
-@property (readonly) NSUInteger imageblockSampleLength NS_AVAILABLE_IOS(11_0);
+@property (readonly) NSUInteger imageblockSampleLength API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 
 /*!
  @method imageblockMemoryLengthForDimensions:sampleCount:
  @brief Returns imageblock memory length for given image block dimensions. Dimensions must be valid tile dimensions.
  */
-- (NSUInteger)imageblockMemoryLengthForDimensions:(MTLSize)imageblockDimensions NS_AVAILABLE_IOS(11_0);
+- (NSUInteger)imageblockMemoryLengthForDimensions:(MTLSize)imageblockDimensions API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+
+
+@property (readonly) BOOL supportIndirectCommandBuffers API_AVAILABLE(macos(10.14), ios(12.0));
 
 @end
 
-NS_CLASS_AVAILABLE(10_11, 8_0)
+MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @interface MTLRenderPipelineColorAttachmentDescriptorArray : NSObject
 
 /* Individual attachment state access */
@@ -230,7 +235,7 @@ NS_CLASS_AVAILABLE(10_11, 8_0)
 @end
 
 
-NS_CLASS_AVAILABLE_IOS(11_0)
+MTL_EXPORT API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos)
 @interface MTLTileRenderPipelineColorAttachmentDescriptor : NSObject <NSCopying>
 
 /*! Pixel format.  Defaults to MTLPixelFormatInvalid */
@@ -238,7 +243,7 @@ NS_CLASS_AVAILABLE_IOS(11_0)
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(11_0)
+MTL_EXPORT API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos)
 @interface MTLTileRenderPipelineColorAttachmentDescriptorArray : NSObject
 
 /* Individual tile attachment state access */
@@ -249,14 +254,14 @@ NS_CLASS_AVAILABLE_IOS(11_0)
 
 @end
 
-NS_CLASS_AVAILABLE_IOS(11_0)
+MTL_EXPORT API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos)
 @interface MTLTileRenderPipelineDescriptor : NSObject <NSCopying>
 
 /*!
  @property label:
  @abstract The descriptor label.
  */
-@property (copy, nonatomic) NSString *label;
+@property (copy, nonatomic, nullable) NSString *label;
 
 /*!
  @property tileFunction:
@@ -278,7 +283,13 @@ NS_CLASS_AVAILABLE_IOS(11_0)
  */
 @property (readwrite, nonatomic) BOOL threadgroupSizeMatchesTileSize;
 
-@property (readonly) MTLPipelineBufferDescriptorArray *tileBuffers NS_AVAILABLE_IOS(11_0);
+@property (readonly) MTLPipelineBufferDescriptorArray *tileBuffers API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
+
+/*!
+ @property maxTotalThreadsPerThreadgroup
+ @abstract Optional property. Set the maxTotalThreadsPerThreadgroup. If it is not set, returns zero.
+ */
+@property (readwrite, nonatomic) NSUInteger maxTotalThreadsPerThreadgroup API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos);
 
 - (void)reset;
 

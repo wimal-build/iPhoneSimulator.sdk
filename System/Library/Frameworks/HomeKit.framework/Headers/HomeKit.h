@@ -1,7 +1,9 @@
-// HomeKit.h
-// HomeKit
 //
-// Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  HomeKit.h
+//  HomeKit
+//
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
+//
 
 #import <HomeKit/HMHomeManager.h>
 #import <HomeKit/HMAccessoryBrowser.h>
@@ -42,9 +44,8 @@
 #import <HomeKit/HMPresenceEventDefines.h>
 #import <HomeKit/HMAccessorySetupPayload.h>
 
-#if __has_include(<UIKit/UIView.h>)
 #import <HomeKit/HMCameraView.h>
-#endif
+
 #import <HomeKit/HMAccessory+Camera.h>
 #import <HomeKit/HMCameraProfile.h>
 #import <HomeKit/HMCameraControl.h>

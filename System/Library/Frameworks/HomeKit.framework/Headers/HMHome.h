@@ -1,7 +1,9 @@
-// HMHome.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMHome.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
@@ -34,7 +36,7 @@ typedef NS_ENUM(NSUInteger, HMHomeHubState)
     HMHomeHubStateNotAvailable = 0,
     HMHomeHubStateConnected,
     HMHomeHubStateDisconnected
-} NS_ENUM_AVAILABLE_IOS(11_0);
+} API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Represents a home.
@@ -44,7 +46,7 @@ typedef NS_ENUM(NSUInteger, HMHomeHubState)
  *             all the rooms, zones, service groups, users, triggers, and action sets in
  *             the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMHome : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -72,7 +74,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief A unique identifier for the home.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief This method is used to change the name of the home.
@@ -83,7 +85,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 
@@ -104,7 +106,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes an accessory from the home.
@@ -115,7 +117,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Assigns a new room for the accessory.
@@ -131,7 +133,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)assignAccessory:(HMAccessory *)accessory toRoom:(HMRoom *)room completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)assignAccessory:(HMAccessory *)accessory toRoom:(HMRoom *)room completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Queries all services that match the specified types.
@@ -156,7 +158,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)unblockAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)unblockAccessory:(HMAccessory *)accessory completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Find nearby accessories and add them to the home. During this process, each of the accessories added
@@ -166,7 +168,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addAndSetupAccessoriesWithCompletionHandler:(void (^)(NSError * __nullable error))completion __IOS_AVAILABLE(10_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addAndSetupAccessoriesWithCompletionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Add accessory with the given setup payload to the home.
@@ -176,7 +178,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addAndSetupAccessoriesWithPayload:(HMAccessorySetupPayload *)payload completionHandler:(void (^)(NSArray<HMAccessory *>* __nullable accessories, NSError * __nullable error))completion API_AVAILABLE(ios(11.3)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addAndSetupAccessoriesWithPayload:(HMAccessorySetupPayload *)payload completionHandler:(void (^)(NSArray<HMAccessory *>* __nullable accessories, NSError * __nullable error))completion API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(watchos, tvos);
 
 @end
 
@@ -186,12 +188,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief HMUser object representing the current user of the home.
  */
-@property(readonly, strong, nonatomic) HMUser *currentUser NS_AVAILABLE_IOS(9_0);
+@property(readonly, strong, nonatomic) HMUser *currentUser API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Array of HMUser objects that represent all users associated with the home.
  */
-@property(readonly, copy, nonatomic) NSArray<HMUser *> *users NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+@property(readonly, copy, nonatomic) NSArray<HMUser *> *users API_DEPRECATED("No longer supported.", ios(8.0, 9.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Presents a view controller to manage users of the home.
@@ -204,7 +206,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   will be nil on success. If the user does not have administrator privileges the error code will be set to
  *                   HMErrorCodeInsufficientPrivileges.
  */
-- (void)manageUsersWithCompletionHandler:(void (^)(NSError * __nullable error))completion NS_AVAILABLE_IOS(9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)manageUsersWithCompletionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Adds a user to the home.
@@ -215,7 +217,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   will be nil on success. The userInfo dictionary will contain the HMUserFailedAccessoriesKey which provides
  *                   more details on the accessories that failed to add the user.
  */
-- (void)addUserWithCompletionHandler:(void (^)(HMUser * __nullable user, NSError * __nullable error))completion NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addUserWithCompletionHandler:(void (^)(HMUser * __nullable user, NSError * __nullable error))completion API_DEPRECATED_WITH_REPLACEMENT("-manageUsersWithCompletionHandler:", ios(8.0, 9.0)) API_UNAVAILABLE(macos, watchos, tvos);
 
 /*!
  * @brief Removes a user from the home.
@@ -227,12 +229,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   will be nil on success. The userInfo dictionary will contain the HMUserFailedAccessoriesKey which provides
  *                   more details on the accessories that failed to remove the user.
  */
-- (void)removeUser:(HMUser *)user completionHandler:(void (^)(NSError * __nullable error))completion NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeUser:(HMUser *)user completionHandler:(void (^)(NSError * __nullable error))completion API_DEPRECATED_WITH_REPLACEMENT("-manageUsersWithCompletionHandler:", ios(8.0, 9.0)) API_UNAVAILABLE(macos, watchos, tvos);
 
 /*!
  * @brief Retrieve the access level of the user associated with the home.
  */
-- (HMHomeAccessControl *)homeAccessControlForUser:(HMUser *)user NS_AVAILABLE_IOS(9_0);
+- (HMHomeAccessControl *)homeAccessControlForUser:(HMUser *)user API_AVAILABLE(ios(9.0));
 
 @end
 
@@ -254,7 +256,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addRoomWithName:(NSString *)roomName completionHandler:(void (^)(HMRoom * __nullable room, NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addRoomWithName:(NSString *)roomName completionHandler:(void (^)(HMRoom * __nullable room, NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes a room from the home. 
@@ -269,7 +271,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeRoom:(HMRoom *)room completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeRoom:(HMRoom *)room completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method returns a room that represents the entire home. This can be used to assign a room
@@ -299,7 +301,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addZoneWithName:(NSString *)zoneName completionHandler:(void (^)(HMZone * __nullable zone, NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addZoneWithName:(NSString *)zoneName completionHandler:(void (^)(HMZone * __nullable zone, NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes a zone from the home.
@@ -310,7 +312,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeZone:(HMZone *)zone completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeZone:(HMZone *)zone completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 
@@ -332,7 +334,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addServiceGroupWithName:(NSString *)serviceGroupName completionHandler:(void (^)(HMServiceGroup * __nullable group, NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addServiceGroupWithName:(NSString *)serviceGroupName completionHandler:(void (^)(HMServiceGroup * __nullable group, NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes a service group from the home.
@@ -343,7 +345,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeServiceGroup:(HMServiceGroup *)group completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeServiceGroup:(HMServiceGroup *)group completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 
@@ -365,7 +367,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addActionSetWithName:(NSString *)actionSetName completionHandler:(void (^)(HMActionSet * __nullable actionSet, NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addActionSetWithName:(NSString *)actionSetName completionHandler:(void (^)(HMActionSet * __nullable actionSet, NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes an existing action set from the home.
@@ -376,7 +378,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeActionSet:(HMActionSet *)actionSet completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Executes all the actions within an action set.
@@ -398,7 +400,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @return Reference to the built-in action set corresponding to type argument,
  *         nil if no matching action set is found.
  */
-- (nullable HMActionSet *)builtinActionSetOfType:(NSString *)actionSetType NS_AVAILABLE_IOS(9_0);
+- (nullable HMActionSet *)builtinActionSetOfType:(NSString *)actionSetType API_AVAILABLE(ios(9.0));
 
 @end
 
@@ -424,7 +426,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes a trigger from the home. If the trigger is active, they are automatically deactivated.
@@ -435,7 +437,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeTrigger:(HMTrigger *)trigger completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 
@@ -444,7 +446,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @brief This delegate receives update on the various accessories, action sets, groups and triggers 
  *        managed in the home.
  */
-NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @protocol HMHomeDelegate <NSObject>
 
 @optional
@@ -753,6 +755,6 @@ NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *             corresponding to the dictionary key is an NSError that provides more details on the
  *             underlying error for that accessory.
  */
-HM_EXTERN NSString * const HMUserFailedAccessoriesKey NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMUserFailedAccessoriesKey API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 NS_ASSUME_NONNULL_END

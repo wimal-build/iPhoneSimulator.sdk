@@ -521,7 +521,7 @@ CF_ENUM(OSStatus)
 extern OSStatus
 AudioConverterNew(      const AudioStreamBasicDescription * inSourceFormat,
                         const AudioStreamBasicDescription * inDestinationFormat,
-                        AudioConverterRef __nullable * __nonnull outAudioConverter)      __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+                        AudioConverterRef __nullable * __nonnull outAudioConverter)      API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 //-----------------------------------------------------------------------------
@@ -551,7 +551,7 @@ AudioConverterNewSpecific(  const AudioStreamBasicDescription * inSourceFormat,
                             UInt32                              inNumberClassDescriptions,
                             const AudioClassDescription *       inClassDescriptions,
                             AudioConverterRef __nullable * __nonnull outAudioConverter)
-                                                                                __OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_0);
+                                                                                API_AVAILABLE(macos(10.4), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -563,7 +563,7 @@ AudioConverterNewSpecific(  const AudioStreamBasicDescription * inSourceFormat,
     @result     An OSStatus result code.
 */
 extern OSStatus
-AudioConverterDispose(  AudioConverterRef   inAudioConverter)                   __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+AudioConverterDispose(  AudioConverterRef   inAudioConverter)                   API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -581,7 +581,7 @@ AudioConverterDispose(  AudioConverterRef   inAudioConverter)                   
 */
 
 extern OSStatus
-AudioConverterReset(    AudioConverterRef   inAudioConverter)                   __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+AudioConverterReset(    AudioConverterRef   inAudioConverter)                   API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -602,7 +602,7 @@ extern OSStatus
 AudioConverterGetPropertyInfo(  AudioConverterRef           inAudioConverter,
                                 AudioConverterPropertyID    inPropertyID,
                                 UInt32 * __nullable         outSize,
-                                Boolean * __nullable        outWritable)        __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+                                Boolean * __nullable        outWritable)        API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -624,7 +624,7 @@ extern OSStatus
 AudioConverterGetProperty(  AudioConverterRef           inAudioConverter,
                             AudioConverterPropertyID    inPropertyID,
                             UInt32 *                    ioPropertyDataSize,
-                            void *                      outPropertyData)        __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+                            void *                      outPropertyData)        API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -645,7 +645,7 @@ extern OSStatus
 AudioConverterSetProperty(  AudioConverterRef           inAudioConverter,
                             AudioConverterPropertyID    inPropertyID,
                             UInt32                      inPropertyDataSize,
-                            const void *                inPropertyData)         __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+                            const void *                inPropertyData)         API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -724,7 +724,7 @@ AudioConverterFillBuffer(   AudioConverterRef               inAudioConverter,
                             UInt32 *                        ioOutputDataSize,
                             void *                          outOutputData)
                             
-                                __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_1,__MAC_10_5, __IPHONE_NA, __IPHONE_NA);
+                                API_DEPRECATED("no longer supported", macos(10.1, 10.5)) API_UNAVAILABLE(ios, watchos, tvos);
 #endif // !TARGET_OS_IPHONE
 
 //-----------------------------------------------------------------------------
@@ -758,7 +758,7 @@ AudioConverterConvertBuffer(    AudioConverterRef               inAudioConverter
                                 UInt32                          inInputDataSize,
                                 const void *                    inInputData,
                                 UInt32 *                        ioOutputDataSize,
-                                void *                          outOutputData)  __OSX_AVAILABLE_STARTING(__MAC_10_1,__IPHONE_2_0);
+                                void *                          outOutputData)  API_AVAILABLE(macos(10.1), ios(2.0), watchos(2.0), tvos(9.0));
 
 //-----------------------------------------------------------------------------
 /*!
@@ -844,7 +844,7 @@ AudioConverterFillComplexBuffer(    AudioConverterRef                   inAudioC
                                     UInt32 *                            ioOutputDataPacketSize,
                                     AudioBufferList *                   outOutputData,
                                     AudioStreamPacketDescription * __nullable outPacketDescription)
-                                                                                __OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+                                                                                API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 //-----------------------------------------------------------------------------
@@ -873,7 +873,7 @@ AudioConverterConvertComplexBuffer( AudioConverterRef               inAudioConve
                                     UInt32                          inNumberPCMFrames,
                                     const AudioBufferList *         inInputData,
                                     AudioBufferList *               outOutputData)
-                                                                                __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_5_0);
+                                                                                API_AVAILABLE(macos(10.7), ios(5.0), watchos(2.0), tvos(9.0));
 
 #if defined(__cplusplus)
 }

@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 typedef NS_ENUM(NSInteger, SFAuthenticationError) {
     SFAuthenticationErrorCanceledLogin = 1,
-} API_AVAILABLE(ios(11.0));
+} API_DEPRECATED("Use ASWebAuthenticationSessionErrorCode instead", ios(11.0, 12.0));
 
-SF_EXTERN NSString * const SFAuthenticationErrorDomain API_AVAILABLE(ios(11.0));
+SF_EXTERN NSString * const SFAuthenticationErrorDomain API_DEPRECATED_WITH_REPLACEMENT("ASWebAuthenticationSessionErrorDomain", ios(11.0, 12.0));
 
 typedef void (^SFAuthenticationCompletionHandler)(NSURL *_Nullable callbackURL, NSError *_Nullable error) NS_SWIFT_NAME(SFAuthenticationSession.CompletionHandler);
 
@@ -44,7 +44,7 @@ typedef void (^SFAuthenticationCompletionHandler)(NSURL *_Nullable callbackURL, 
  The app can cancel the session by calling -[SFAuthenticationSession cancel]. This will also dismiss the view controller that
  is showing the web service's login page.
  */
-SF_EXTERN API_AVAILABLE(ios(11.0))
+SF_EXTERN API_DEPRECATED_WITH_REPLACEMENT("ASWebAuthenticationSession", ios(11.0, 12.0))
 @interface SFAuthenticationSession : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

@@ -25,8 +25,8 @@ API_AVAILABLE(ios(6.0))
 /* controller should be presented with -presentViewController:animated:completion:
  pass should be a pass you want the user to add.
  */
-- (instancetype)initWithPass:(PKPass *)pass;
-- (instancetype)initWithPasses:(NSArray<PKPass *> *)passes API_AVAILABLE(ios(7.0));
+- (nullable instancetype)initWithPass:(PKPass *)pass;
+- (nullable instancetype)initWithPasses:(NSArray<PKPass *> *)passes API_AVAILABLE(ios(7.0));
 + (BOOL)canAddPasses API_AVAILABLE(ios(8.0));
 
 @property(nonatomic,assign,nullable) id <PKAddPassesViewControllerDelegate> delegate;

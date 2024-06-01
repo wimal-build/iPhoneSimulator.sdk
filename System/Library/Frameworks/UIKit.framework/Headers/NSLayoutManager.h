@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSLayoutManager.h>)
 //
 //  NSLayoutManager.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -22,14 +23,14 @@ typedef NS_ENUM(NSInteger, NSTextLayoutOrientation) {
     NSTextLayoutOrientationVertical = 1, // Lines rendered vertically, grow right to left
 } NS_ENUM_AVAILABLE(10_7, 7_0);
 
-typedef NS_ENUM(NSInteger, NSGlyphProperty) {
+typedef NS_OPTIONS(NSInteger, NSGlyphProperty) {
     NSGlyphPropertyNull = (1 << 0), // null glyph ignored for layout and display
     NSGlyphPropertyControlCharacter = (1 << 1), // control character such as tab, attachment, etc that has special behavior associated with
     NSGlyphPropertyElastic = (1 << 2), // glyphs with elastic glyph width behavior such as white spaces
     NSGlyphPropertyNonBaseCharacter = (1 << 3) // glyphs with combining properties. typically characters in Unicode Mn class.
 } NS_ENUM_AVAILABLE(10_11, 7_0);
 
-typedef NS_ENUM(NSInteger, NSControlCharacterAction) {
+typedef NS_OPTIONS(NSInteger, NSControlCharacterAction) {
     NSControlCharacterActionZeroAdvancement = (1 << 0), // glyphs with this action are filtered out from layout (notShownAttribute == YES)
     NSControlCharacterActionWhitespace = (1 << 1), // the width for glyphs with this action are determined by -layoutManager:boundingBoxForControlGlyphAtIndex:forTextContainer:proposedLineFragment:glyphPosition:characterIndex: if the method is implemented; otherwise, same as NSControlCharacterZeroAdvancementAction
     NSControlCharacterActionHorizontalTab = (1 << 2), // Treated as tab character
@@ -105,6 +106,9 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSLayoutManager : NSObject <NSCoding>
 
 // Even if non-contiguous layout is allowed, it may not always be used, and there may not always be layout holes.  This method returns YES if there might currently be non-contiguous portions of the text laid out.
 @property (readonly, NS_NONATOMIC_IOSONLY) BOOL hasNonContiguousLayout NS_AVAILABLE(10_5, 7_0);
+
+// When YES, enables internal security analysis for malicious inputs and activates defensive behaviors. By enabling this functionality, it's possible certain text such as a very long paragraph might result in unexpected layout. NO by default.
+@property BOOL limitsLayoutForSuspiciousContents API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0));
 
 
 
@@ -362,3 +366,7 @@ enum {
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSLayoutManager.h>
+#endif

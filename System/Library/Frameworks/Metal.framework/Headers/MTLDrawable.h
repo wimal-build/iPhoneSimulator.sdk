@@ -22,7 +22,7 @@ typedef void (^MTLDrawablePresentedHandler)(id<MTLDrawable>);
  @protocol MTLDrawable
  @abstract All "drawable" objects (such as those coming from CAMetalLayer) are expected to conform to this protocol
  */
-NS_AVAILABLE(10_11, 8_0)
+API_AVAILABLE(macos(10.11), ios(8.0))
 @protocol MTLDrawable <NSObject>
 
 /* Present this drawable as soon as possible */
@@ -36,27 +36,27 @@ NS_AVAILABLE(10_11, 8_0)
  @abstract Present this drawable while setting a minimum duration in seconds before allowing this drawable to appear on the display.
  @param duration Duration in seconds before this drawable is allowed to appear on the display
  */
-- (void)presentAfterMinimumDuration:(CFTimeInterval)duration NS_AVAILABLE_IOS(10_3);
+- (void)presentAfterMinimumDuration:(CFTimeInterval)duration API_AVAILABLE(ios(10.3)) API_UNAVAILABLE(macos);
 
 /*!
  @method addPresentedHandler
  @abstract Add a block to be called when this drawable is presented on screen.
  */
-- (void)addPresentedHandler:(MTLDrawablePresentedHandler)block NS_AVAILABLE_IOS(10_3);
+- (void)addPresentedHandler:(MTLDrawablePresentedHandler)block API_AVAILABLE(ios(10.3)) API_UNAVAILABLE(macos);
 
 /*!
  @property presentedTime
  @abstract The host time that this drawable was presented on screen.
  @discussion Returns 0 if a frame has not been presented or has been skipped.
  */
-@property(nonatomic, readonly) CFTimeInterval presentedTime NS_AVAILABLE_IOS(10_3);
+@property(nonatomic, readonly) CFTimeInterval presentedTime API_AVAILABLE(ios(10.3)) API_UNAVAILABLE(macos);
 
 /*!
  @property drawableID
  @abstract The monotonically incremented ID for all MTLDrawable objects created from the same CAMetalLayer object.
   @discussion The value starts from 0.
 */
-@property (nonatomic, readonly) NSUInteger drawableID NS_AVAILABLE_IOS(10_3);
+@property (nonatomic, readonly) NSUInteger drawableID API_AVAILABLE(ios(10.3)) API_UNAVAILABLE(macos);
 
 @end
 NS_ASSUME_NONNULL_END

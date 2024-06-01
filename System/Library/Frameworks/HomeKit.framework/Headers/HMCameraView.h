@@ -6,17 +6,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
-#import <UIKit/UIKit.h>
+#if __has_include(<UIKit/UIView.h>)
 
 @class HMCameraSource;
+
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract This view can render a camera source.
  */
-__IOS_AVAILABLE(10_0) __WATCHOS_PROHIBITED __TVOS_AVAILABLE(10_0)
+
+API_AVAILABLE(ios(10.0), tvos(10.0)) API_UNAVAILABLE(watchos)
 @interface HMCameraView : UIView
 
 /*!
@@ -27,3 +31,5 @@ __IOS_AVAILABLE(10_0) __WATCHOS_PROHIBITED __TVOS_AVAILABLE(10_0)
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

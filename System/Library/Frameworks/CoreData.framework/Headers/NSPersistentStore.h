@@ -1,7 +1,7 @@
 /*
     NSPersistentStore.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -72,7 +72,7 @@ API_AVAILABLE(macosx(10.5),ios(3.0))
 - (void)willRemoveFromPersistentStoreCoordinator:(nullable NSPersistentStoreCoordinator *)coordinator;
 
 /* Return the Core Spotlight exporter if one exists for this store. The exporter
- can be set as part of the store options when it is added to the coordinator. */
+    can be set as part of the store options when it is added to the coordinator. */
 @property (nonatomic, readonly) NSCoreDataCoreSpotlightDelegate *coreSpotlightExporter API_AVAILABLE(macosx(10.13),ios(11.0)) API_UNAVAILABLE(tvos,watchos);
 
 @end

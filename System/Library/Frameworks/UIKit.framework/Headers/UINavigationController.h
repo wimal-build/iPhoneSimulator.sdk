@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINavigationController.h>)
 //
 //  UINavigationController.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -133,3 +134,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationController : UIViewController
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UINavigationController.h>
+#endif

@@ -16,6 +16,9 @@ typedef NS_ENUM(NSInteger, INVisualCodeType) {
     INVisualCodeTypeContact,
     INVisualCodeTypeRequestPayment,
     INVisualCodeTypeSendPayment,
+    INVisualCodeTypeTransit API_AVAILABLE(ios(12.0), watchos(5.0)),
+    INVisualCodeTypeBus API_AVAILABLE(ios(12.0), watchos(5.0)),
+    INVisualCodeTypeSubway API_AVAILABLE(ios(12.0), watchos(5.0)),
 } API_AVAILABLE(ios(11.0), watchos(4.0)) API_UNAVAILABLE(macosx);
 
 #endif // INVisualCodeType_h

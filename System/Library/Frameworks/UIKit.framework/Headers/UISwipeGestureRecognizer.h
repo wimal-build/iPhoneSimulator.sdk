@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UISwipeGestureRecognizer.h>)
 //
 //  UISwipeGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -33,3 +34,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISwipeGestureRecognizer : UIGestureRecog
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UISwipeGestureRecognizer.h>
+#endif

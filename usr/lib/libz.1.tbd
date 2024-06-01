@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 21BE9505-D81D-3729-83AA-844C0BEEE287', 'x86_64: 85D4504D-B0E8-332C-8CCB-D7B7EDEDAE37' ]
+uuids:           [ 'i386: 21BE9505-D81D-3729-83AA-844C0BEEE287', 'x86_64: 1829D440-A461-3F31-831C-31BDD0C49521' ]
 platform:        ios
 install-name:    /usr/lib/libz.1.dylib
 current-version: 1.2.11
@@ -18,8 +18,8 @@ exports:
                        _gzgetc, _gzgetc_, _gzgets, _gzoffset, _gzopen, _gzprintf, 
                        _gzputc, _gzputs, _gzread, _gzrewind, _gzseek, _gzsetparams, 
                        _gztell, _gzungetc, _gzvprintf, _gzwrite, _inflate, _inflateBack, 
-                       _inflateBackEnd, _inflateBackInit_, _inflateCopy, _inflateEnd, 
-                       _inflateGetDictionary, _inflateGetHeader, _inflateInit2_, 
+                       _inflateBackEnd, _inflateBackInit_, _inflateCodesUsed, _inflateCopy, 
+                       _inflateEnd, _inflateGetDictionary, _inflateGetHeader, _inflateInit2_, 
                        _inflateInit_, _inflateMark, _inflatePrime, _inflateReset, 
                        _inflateReset2, _inflateResetKeep, _inflateSetDictionary, 
                        _inflateSync, _inflateSyncPoint, _inflateUndermine, _inflateValidate, 

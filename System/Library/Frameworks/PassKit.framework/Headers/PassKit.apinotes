@@ -51,3 +51,18 @@ SwiftVersions:
     - Selector: 'buttonWithType:style:'
       MethodKind: Class
       Availability: available
+- Version: 4
+  Classes:
+  - Name: PKPass
+    Methods:
+    - Selector: "initWithData:error:"
+      MethodKind: Instance
+      NullabilityOfRet: N
+  - Name: PKAddPassesViewController
+    Methods:
+    - Selector: "initWithPass:"
+      MethodKind: Instance
+      NullabilityOfRet: N
+    - Selector: "initWithPasses:"
+      MethodKind: Instance
+      NullabilityOfRet: N

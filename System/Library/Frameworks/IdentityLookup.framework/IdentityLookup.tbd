@@ -1,14 +1,19 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 05D59412-3DDE-373C-8FC5-455F9C48A75A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 18F41C95-7D5D-3EA1-9944-CE06DA036500' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/IdentityLookup.framework/IdentityLookup
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _ILMessageFilterErrorDomain, _ILMessageFilterExtensionPointIdentifier, 
+    symbols:         [ _ILClassificationUIExtensionPointIdentifier, _ILDefaultLog, 
+                       _ILMessageFilterErrorDomain, _ILMessageFilterExtensionPointIdentifier, 
                        _ILMessageFilterPrivateErrorDomain ]
-    objc-classes:    [ ILMessageFilter, ILMessageFilterExtension, ILMessageFilterExtensionContext, 
+    objc-classes:    [ ILCallClassificationRequest, ILCallCommunication, ILClassification, 
+                       ILClassificationController, ILClassificationReportRequest, 
+                       ILClassificationRequest, ILClassificationResponse, ILCommunication, 
+                       ILMessageClassificationRequest, ILMessageCommunication, ILMessageFilter, 
+                       ILMessageFilterExtension, ILMessageFilterExtensionContext, 
                        ILMessageFilterExtensionHostContext, ILMessageFilterQueryRequest, 
                        ILMessageFilterQueryResponse, ILMessageFilterReportRequest, 
                        ILNetworkResponse ]

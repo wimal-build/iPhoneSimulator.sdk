@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIWindow.h>)
 //
 //  UIWindow.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef CGFloat UIWindowLevel;
+typedef CGFloat UIWindowLevel NS_TYPED_EXTENSIBLE_ENUM;
 
 @class UIEvent, UIScreen, NSUndoManager, UIViewController;
 
@@ -75,3 +76,7 @@ UIKIT_EXTERN NSString *const UIKeyboardCenterEndUserInfoKey     NS_DEPRECATED_IO
 UIKIT_EXTERN NSString *const UIKeyboardBoundsUserInfoKey        NS_DEPRECATED_IOS(2_0, 3_2) __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIWindow.h>
+#endif

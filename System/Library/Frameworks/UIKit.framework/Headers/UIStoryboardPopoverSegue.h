@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStoryboardPopoverSegue.h>)
 //
 //  UIStoryboardPopoverSegue.h
 //  UIKit
 //
-//  Copyright 2011-2017 Apple Inc. All rights reserved.
+//  Copyright 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIStoryboardSegue.h>
@@ -19,3 +20,7 @@ NS_CLASS_DEPRECATED_IOS(5_0, 9_0, "Access destinationViewController.popoverPrese
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIStoryboardPopoverSegue.h>
+#endif

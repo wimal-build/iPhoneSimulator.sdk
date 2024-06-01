@@ -5,12 +5,10 @@
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Photos/PhotosTypes.h>
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
-
-#import <Photos/PhotosDefines.h>
-
-#import "PhotosTypes.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

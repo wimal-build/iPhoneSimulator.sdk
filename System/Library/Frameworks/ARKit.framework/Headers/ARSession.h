@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class ARAnchor;
 @class ARCamera;
 @class ARFrame;
+@class ARWorldMap;
 @protocol ARSessionDelegate;
+@protocol MTLTexture;
 
 /**
  Set of options for running the session.
@@ -21,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  Providing no options will result in the default behavior of resuming tracking
  from the last known position and keeping all existing anchors.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 typedef NS_OPTIONS(NSUInteger, ARSessionRunOptions) {
     /** The session will reset tracking. */
     ARSessionRunOptionResetTracking           = (1 << 0),
@@ -33,13 +35,13 @@ typedef NS_OPTIONS(NSUInteger, ARSessionRunOptions) {
 /**
  The ARSession class configures and runs different Augmented Reality techniques on a device.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARSession : NSObject
 
 /**
  A delegate for receiving ARSession updates.
  */
-@property (nonatomic, weak) id <ARSessionDelegate> delegate;
+@property (nonatomic, weak, nullable) id <ARSessionDelegate> delegate;
 
 /**
  The dispatch queue on which the delegate calls are performed.
@@ -102,7 +104,39 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  @param relativeTransform The rotation, translation and scale from the current world origin
  to the desired world origin.
  */
-- (void)setWorldOrigin:(matrix_float4x4)relativeTransform NS_SWIFT_NAME(setWorldOrigin(relativeTransform:)) API_AVAILABLE(ios(11.3));
+- (void)setWorldOrigin:(simd_float4x4)relativeTransform NS_SWIFT_NAME(setWorldOrigin(relativeTransform:)) API_AVAILABLE(ios(11.3));
+
+/**
+ Copies the current state of the world being tracked by the session.
+ @discussion A world map is only provided when running an ARWorldTrackingConfiguration.
+ @param completionHandler The completion handler to call when the get has completed. This handler is executed
+ on the session's delegate queue. The completion handler takes the following parameters:
+ worldMap - The current world map or nil if unavailable.
+ error - An error that indicates why the world map is unavailable, or nil if a world map was provided.
+ */
+- (void)getCurrentWorldMapWithCompletionHandler:(void (^)(ARWorldMap * _Nullable worldMap, NSError * _Nullable error))completionHandler API_AVAILABLE(ios(12.0));
+
+/**
+ Creates a new reference object from scanned features within the provided bounds.
+ 
+ @discussion Reference objects can be stored and used to track 3D objects from previously scanned data.
+ Creation requires that an ARObjectScanningConfiguration is used so that sufficient features are scanned.
+ @param transform The transformation matrix that defines the rotation and translation of the bounds in
+ world coordinates. This will be used as the reference object's transform, defining its coordinate space.
+ @param center The center of the object's bounds in the transform's coordinate space. A zero vector will
+ define the object's origin centered within its extent.
+ @param extent The extent of the object's bounds in the transform's coordinate space. This defines the bounds'
+ size in each dimension.
+ @param completionHandler The completion handler to call when the creation has completed. This handler is executed
+ on the session's delegate queue. The completion handler takes the following parameters:
+ referenceObject - The reference object created or nil if unavailable.
+ error - An error that indicates why creation failed, or nil if a reference object was provided.
+ */
+- (void)createReferenceObjectWithTransform:(simd_float4x4)transform
+                                     center:(simd_float3)center
+                                     extent:(simd_float3)extent
+                          completionHandler:(void (^)(ARReferenceObject * _Nullable referenceObject, NSError * _Nullable error))completionHandler
+NS_SWIFT_NAME(createReferenceObject(transform:center:extent:completionHandler:)) API_AVAILABLE(ios(12.0));
 
 @end
 
@@ -110,7 +144,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 #pragma mark - ARSessionObserver
 
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @protocol ARSessionObserver <NSObject>
 
 @optional
@@ -183,7 +217,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 #pragma mark - ARSessionDelegate
 
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @protocol ARSessionDelegate <ARSessionObserver>
 
 @optional

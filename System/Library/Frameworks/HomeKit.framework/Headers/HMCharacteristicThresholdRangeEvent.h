@@ -1,9 +1,12 @@
-// HMCharacteristicNumberRangeEvent.h
-// HomeKit
 //
-// Copyright (c) 2017 Apple Inc. All rights reserved.
+//  HMCharacteristicNumberRangeEvent.h
+//  HomeKit
+//
+//  Copyright (c) 2017 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class represents an event when a characteristic's value falls within the specified 
  * number range.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMCharacteristicThresholdRangeEvent : HMEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -50,7 +53,7 @@ API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
  * @brief This class represents an event when a characteristic's value falls within the specified
  * number range.
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMMutableCharacteristicThresholdRangeEvent : HMCharacteristicThresholdRangeEvent
 
 - (instancetype)init NS_UNAVAILABLE;

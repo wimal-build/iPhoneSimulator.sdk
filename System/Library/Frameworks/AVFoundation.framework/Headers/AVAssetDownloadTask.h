@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
 
-	Copyright 2015-2016 Apple Inc. All rights reserved.
+	Copyright 2015-2018 Apple Inc. All rights reserved.
 
 */
 
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 				The value for this key should be a NSNumber.
  @discussion	By default, the highest media bitrate will be selected for download.
 */
-AVF_EXPORT NSString *const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey NS_AVAILABLE_IOS(9_0);
+AVF_EXPORT NSString *const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos, watchos);
 
 /*!
  @constant		AVAssetDownloadTaskMediaSelectionKey
@@ -31,7 +31,7 @@ AVF_EXPORT NSString *const AVAssetDownloadTaskMinimumRequiredMediaBitrateKey NS_
 				The value for this key should be an AVMediaSelection.
  @discussion	By default, media selections for AVAssetDownloadTask will be automatically selected.
 */
-AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey NS_AVAILABLE_IOS(9_0);
+AVF_EXPORT NSString *const AVAssetDownloadTaskMediaSelectionKey API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(macos, tvos, watchos);
 
 /*!
  @class			AVAssetDownloadTask

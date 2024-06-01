@@ -1,11 +1,13 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: 588ED1AC-B606-3F2E-943A-716FD1646685' ]
+uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: 99F2396A-C0DF-387D-8812-CD01A9E94E8B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Social.framework/Social
 current-version: 87
 objc-constraint: none
 exports:         
+  - archs:           [ i386 ]
+    objc-classes:    [ SLYahooClient, SLYahooOAuth2TokenRequest, SLYahooOAuth2TokenResponse ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _SLErrorDomain, _SLFacebookEnvironmentDidChangeNotification, 
                        _SLFacebookErrorDomain, _SLFacebookGraphAPIShouldUseBetaKey, 
@@ -13,12 +15,13 @@ exports:
                        _SLFacebookLikeInfoFriendsKey, _SLFacebookLikeInfoGlobalCountKey, 
                        _SLFacebookLikeInfoMeKey, _SLFacebookPreferencesAppID, _SLFacebookRESTAPIShouldUseBetaKey, 
                        _SLFacebookVideoUploadSupportEnabledKey, _SLFlickrErrorDomain, 
-                       _SLHideNetworkActivityIndicatorNotification, _SLLinkedInEnvironmentDidChangeNotification, 
-                       _SLLinkedInIgnoreAccessRequests, _SLLinkedInPreferencesAppID, 
-                       _SLLogLevelKey, _SLOpenGraphNodeChanged, _SLOutputLevelKey, 
-                       _SLServiceMain, _SLServiceTypeFacebook, _SLServiceTypeFacebookInternal, 
-                       _SLServiceTypeFlickr, _SLServiceTypeLinkedIn, _SLServiceTypeLinkedInInternal, 
-                       _SLServiceTypeSinaWeibo, _SLServiceTypeSinaWeiboInternal, 
+                       _SLGoogleAuthCodeVerifierKey, _SLGoogleAuthRecievedOpenURLKey, 
+                       _SLGoogleAuthRecievedOpenURLNotification, _SLHideNetworkActivityIndicatorNotification, 
+                       _SLLinkedInEnvironmentDidChangeNotification, _SLLinkedInIgnoreAccessRequests, 
+                       _SLLinkedInPreferencesAppID, _SLLogLevelKey, _SLOpenGraphNodeChanged, 
+                       _SLOutputLevelKey, _SLServiceMain, _SLServiceTypeFacebook, 
+                       _SLServiceTypeFacebookInternal, _SLServiceTypeFlickr, _SLServiceTypeLinkedIn, 
+                       _SLServiceTypeLinkedInInternal, _SLServiceTypeSinaWeibo, _SLServiceTypeSinaWeiboInternal, 
                        _SLServiceTypeTencentWeibo, _SLServiceTypeTencentWeiboInternal, 
                        _SLServiceTypeTudou, _SLServiceTypeTwitter, _SLServiceTypeTwitterInternal, 
                        _SLServiceTypeVimeo, _SLServiceTypeYouku, _SLShowNetworkActivityIndicatorNotification, 
@@ -66,13 +69,12 @@ exports:
                        SLSystemConfigManager, SLTencentWeiboServerInterface, SLTencentWeiboSession, 
                        SLTencentWeiboUserRecord, SLTwitterRequest, SLTwitterReverseAuthRequest, 
                        SLTwitterSession, SLTwitterUserRecord, SLURLAttachment, SLVideoAttachment, 
+                       SLWebClient, SLWebOAuth2TokenRequest, SLWebOAuth2TokenResponse, 
                        SLWeiboServerInterface, SLWeiboSession, SLWeiboUserRecord, 
-                       SLYahooAuthFlowController, SLYahooClient, SLYahooLoginTokenRequest, 
-                       SLYahooLoginTokenResponse, SLYahooOAuth2MigrationRequest, 
-                       SLYahooOAuth2MigrationResponse, SLYahooOAuth2TokenRequest, 
-                       SLYahooOAuth2TokenResponse, SLYahooWebAuthController, SLYahooWebAuthIdentity, 
-                       SLYouTubeAuthFlowController, SL_OOPAWebViewController, _SLAuthHostExtensionContext, 
-                       _SLAuthHostViewController ]
+                       SLYahooAuthFlowController, SLYahooLoginTokenRequest, SLYahooLoginTokenResponse, 
+                       SLYahooOAuth2MigrationRequest, SLYahooOAuth2MigrationResponse, 
+                       SLYahooWebAuthController, SLYahooWebAuthIdentity, SLYouTubeAuthFlowController, 
+                       SL_OOPAWebViewController, _SLAuthHostExtensionContext, _SLAuthHostViewController ]
     objc-ivars:      [ SLFacebookLoginInfoViewController._footerView, SLFacebookLoginRequest._account, 
                        SLFacebookRegistrationRequest._registrationInfo, SLSheetPhotoAlbumImageView._frameLayer, 
                        SLSheetPhotoAlbumImageView._glossLayer, SLSystemConfigManager._applySkipCount, 

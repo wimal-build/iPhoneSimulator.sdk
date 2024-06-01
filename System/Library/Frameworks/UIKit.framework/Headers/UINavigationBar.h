@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UINavigationBar.h>)
 //
 //  UINavigationBar.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -112,3 +113,7 @@ vertically if necessary when the navigation bar is in the position UIBarPosition
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UINavigationBar.h>
+#endif

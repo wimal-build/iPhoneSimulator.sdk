@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// to browse the media content offered by the application, as well as a delegate,
 /// which allows the media player to relay non-media remote playback commands to the application.
 MP_API(ios(7.1))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPPlayableContentManager : NSObject
 
 @property (nonatomic, weak, nullable) id<MPPlayableContentDataSource> dataSource;

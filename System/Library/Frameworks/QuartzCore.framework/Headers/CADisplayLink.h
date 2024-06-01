@@ -1,6 +1,6 @@
 /* CoreAnimation - CADisplayLink.h
 
-   Copyright (c) 2009-2017, Apple Inc.
+   Copyright (c) 2009-2018, Apple Inc.
    All rights reserved. */
 
 #import <QuartzCore/CABase.h>
@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Class representing a timer bound to the display vsync. **/
 
-CA_CLASS_AVAILABLE_IOS(3.1, 9.0, 2.0)
+API_AVAILABLE(macos(10.14), ios(3.1), watchos(2.0), tvos(9.0))
 @interface CADisplayLink : NSObject
 {
 @private
@@ -53,7 +53,8 @@ CA_CLASS_AVAILABLE_IOS(3.1, 9.0, 2.0)
 
 /* The next timestamp that the client should target their render for. */
 
-@property(readonly, nonatomic) CFTimeInterval targetTimestamp CA_AVAILABLE_IOS_STARTING(10.0, 10.0, 3.0);
+@property(readonly, nonatomic) CFTimeInterval targetTimestamp
+    API_AVAILABLE(macos(10.14), ios(10.0), watchos(3.0), tvos(10.0));
 
 /* When true the object is prevented from firing. Initial state is
  * false. */
@@ -68,15 +69,16 @@ CA_CLASS_AVAILABLE_IOS(3.1, 9.0, 2.0)
  * DEPRECATED - use preferredFramesPerSecond. */
 
 @property(nonatomic) NSInteger frameInterval
-  CA_AVAILABLE_BUT_DEPRECATED_IOS (3.1, 10.0, 9.0, 10.0, 2.0, 3.0, "use preferredFramesPerSecond");
+  API_DEPRECATED("preferredFramesPerSecond", ios(3.1, 10.0), 
+                 watchos(2.0, 3.0), tvos(9.0, 10.0));
 
-/* Defines the desired callback rate in frames-per-second for this
- * display link. The default value is 60. If set to zero, the
- * display link will fire at the native cadence of the display hardware.
- * The display link will make a best-effort attempt at issuing callbacks
- * at the requested rate. */
+/* Defines the desired callback rate in frames-per-second for this display
+ * link. If set to zero, the default value, the display link will fire at the
+ * native cadence of the display hardware. The display link will make a
+ * best-effort attempt at issuing callbacks at the requested rate. */
 
-@property(nonatomic) NSInteger preferredFramesPerSecond CA_AVAILABLE_IOS_STARTING(10.0, 10.0, 3.0);
+@property(nonatomic) NSInteger preferredFramesPerSecond
+    API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 @end
 

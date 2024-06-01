@@ -258,5 +258,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0) @interface ADBannerView : UIView
 
 @end
 
+CGSize ADClampedBannerSize(CGSize size);
+
 NS_ASSUME_NONNULL_END
 

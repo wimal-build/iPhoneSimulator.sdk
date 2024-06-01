@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITapGestureRecognizer.h>)
 //
 //  UITapGestureRecognizer.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -25,3 +26,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UITapGestureRecognizer : UIGestureRecogni
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITapGestureRecognizer.h>
+#endif

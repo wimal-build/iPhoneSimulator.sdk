@@ -1,4 +1,4 @@
-framework module FileProvider {
+framework module FileProvider [system] {
     umbrella header "FileProvider.h"
 
     export *

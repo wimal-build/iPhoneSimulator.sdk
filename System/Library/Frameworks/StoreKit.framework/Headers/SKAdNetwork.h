@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-SK_EXTERN_CLASS_AVAILABLE(11_3) @interface SKAdNetwork : NSObject
+SK_EXTERN_CLASS_AVAILABLE_IOS(11_3) __TVOS_PROHIBITED @interface SKAdNetwork : NSObject
 
 // Participating apps should call this on launch to complete the install+open action associated with a product view
 + (void)registerAppForAdNetworkAttribution NS_AVAILABLE_IOS(11_3);

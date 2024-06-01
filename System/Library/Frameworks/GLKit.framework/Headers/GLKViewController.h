@@ -18,7 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark GLKViewController
 #pragma mark -
 
-NS_CLASS_AVAILABLE(NA, 5_0)
+OPENGLES_DEPRECATED(ios(5.0,12.0), tvos(9.0,12.0))
+API_UNAVAILABLE(macos)
 @interface GLKViewController : UIViewController <NSCoding, GLKViewDelegate>
 {
     

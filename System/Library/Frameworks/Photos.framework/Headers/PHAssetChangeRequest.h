@@ -11,7 +11,11 @@
 #import <Photos/PHContentEditingOutput.h>
 #import <Photos/PhotosDefines.h>
 
+#if TARGET_OS_OSX
+@class NSImage;
+#else
 @class UIImage;
+#endif
 @class CLLocation;
 @class PHAssetResource;
 @class PHObjectPlaceholder;
@@ -25,7 +29,11 @@ PHOTOS_CLASS_AVAILABLE_IOS_TVOS(8_0, 10_0) @interface PHAssetChangeRequest : NSO
 #pragma mark - Creating Assets
 
 // Basic asset creation. For finer-grained control, see PHAssetCreationRequest.
+#if TARGET_OS_OSX
++ (instancetype)creationRequestForAssetFromImage:(NSImage *)image;
+#else
 + (instancetype)creationRequestForAssetFromImage:(UIImage *)image;
+#endif
 + (nullable instancetype)creationRequestForAssetFromImageAtFileURL:(NSURL *)fileURL;
 + (nullable instancetype)creationRequestForAssetFromVideoAtFileURL:(NSURL *)fileURL;
 

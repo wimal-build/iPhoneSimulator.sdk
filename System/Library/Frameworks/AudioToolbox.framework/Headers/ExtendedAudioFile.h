@@ -237,7 +237,7 @@ CF_ENUM(OSStatus) {
 */
 extern OSStatus
 ExtAudioFileOpenURL(		CFURLRef 					inURL,
-							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)	__OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_1);
+							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)	API_AVAILABLE(macos(10.5), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileWrapAudioFileID
@@ -262,7 +262,7 @@ extern OSStatus
 ExtAudioFileWrapAudioFileID(AudioFileID					inFileID,
 							Boolean						inForWriting,
 							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileCreateWithURL
@@ -300,7 +300,7 @@ ExtAudioFileCreateWithURL(	CFURLRef							inURL,
 							const AudioChannelLayout * __nullable inChannelLayout,
                     		UInt32								inFlags,
 							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)
-																			__OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.5), ios(2.1), watchos(2.0), tvos(9.0));
 																			
 #if !TARGET_OS_IPHONE
 /*!
@@ -320,7 +320,7 @@ ExtAudioFileCreateWithURL(	CFURLRef							inURL,
 */
 extern OSStatus
 ExtAudioFileOpen(			const struct FSRef *		inFSRef,
-							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)	__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4,__MAC_10_6,__IPHONE_NA,__IPHONE_NA);
+							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)	API_DEPRECATED("no longer supported", macos(10.4, 10.6)) API_UNAVAILABLE(ios, watchos, tvos);
 
 /*!
 	@function   ExtAudioFileCreateNew
@@ -357,7 +357,7 @@ ExtAudioFileCreateNew(		const struct FSRef *				inParentDir,
 							const AudioStreamBasicDescription * inStreamDesc,
 							const AudioChannelLayout * __nullable inChannelLayout,
 							ExtAudioFileRef __nullable * __nonnull outExtAudioFile)
-																			__OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4,__MAC_10_6,__IPHONE_NA,__IPHONE_NA);
+																			API_DEPRECATED("no longer supported", macos(10.4, 10.6)) API_UNAVAILABLE(ios, watchos, tvos);
 #endif
 
 /*!
@@ -373,7 +373,7 @@ ExtAudioFileCreateNew(		const struct FSRef *				inParentDir,
 */
 extern OSStatus
 ExtAudioFileDispose(		ExtAudioFileRef				inExtAudioFile)		
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 
 //==================================================================================================
@@ -412,7 +412,7 @@ extern OSStatus
 ExtAudioFileRead(			ExtAudioFileRef			inExtAudioFile,
 							UInt32 *				ioNumberFrames,
 							AudioBufferList *		ioData)					
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileWrite
@@ -436,7 +436,7 @@ extern OSStatus
 ExtAudioFileWrite(			ExtAudioFileRef			inExtAudioFile,
 							UInt32					inNumberFrames,
 							const AudioBufferList * ioData)					
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileWriteAsync
@@ -471,7 +471,7 @@ extern OSStatus
 ExtAudioFileWriteAsync(		ExtAudioFileRef			inExtAudioFile,
 							UInt32					inNumberFrames,
 							const AudioBufferList * __nullable ioData)
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileSeek
@@ -496,7 +496,7 @@ ExtAudioFileWriteAsync(		ExtAudioFileRef			inExtAudioFile,
 extern OSStatus
 ExtAudioFileSeek(			ExtAudioFileRef			inExtAudioFile,
 							SInt64					inFrameOffset)			
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileTell
@@ -515,7 +515,7 @@ ExtAudioFileSeek(			ExtAudioFileRef			inExtAudioFile,
 extern OSStatus
 ExtAudioFileTell(			ExtAudioFileRef			inExtAudioFile,
 							SInt64 *				outFrameOffset)			
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 //==================================================================================================
 //	Property Access
@@ -544,7 +544,7 @@ ExtAudioFileGetPropertyInfo(ExtAudioFileRef			inExtAudioFile,
 							ExtAudioFilePropertyID	inPropertyID,
 							UInt32 * __nullable		outSize,
 							Boolean * __nullable	outWritable)
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileGetProperty
@@ -568,7 +568,7 @@ ExtAudioFileGetProperty(	ExtAudioFileRef			inExtAudioFile,
 							ExtAudioFilePropertyID	inPropertyID,
 							UInt32 *				ioPropertyDataSize,
 							void *					outPropertyData)
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 /*!
 	@function   ExtAudioFileSetProperty
@@ -591,7 +591,7 @@ ExtAudioFileSetProperty(	ExtAudioFileRef			inExtAudioFile,
 							ExtAudioFilePropertyID	inPropertyID,
 							UInt32					inPropertyDataSize,
 							const void *			inPropertyData)			
-																			__OSX_AVAILABLE_STARTING(__MAC_10_4,__IPHONE_2_1);
+																			API_AVAILABLE(macos(10.4), ios(2.1), watchos(2.0), tvos(9.0));
 
 CF_ASSUME_NONNULL_END
 

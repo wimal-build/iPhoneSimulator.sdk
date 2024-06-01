@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIBezierPath.h>)
 //
 //  UIBezierPath.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -93,3 +94,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIBezierPath : NSObject<NSCopying, NSSecu
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIBezierPath.h>
+#endif

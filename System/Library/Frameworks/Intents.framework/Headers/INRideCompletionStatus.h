@@ -6,14 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "INRideFeedbackTypeOptions.h"
+#import <Intents/INRideFeedbackTypeOptions.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class INCurrencyAmount;
 
-API_AVAILABLE(macosx(10.12), ios(10.0), watchos(3.2))
+API_AVAILABLE(ios(10.0), watchos(3.2))
+API_UNAVAILABLE(macosx)
 @interface INRideCompletionStatus: NSObject <NSCopying, NSSecureCoding>
 
 - (instancetype)init NS_UNAVAILABLE;

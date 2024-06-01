@@ -5,6 +5,7 @@
 //  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <WatchKit/WKDefines.h>
 

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPresentationController.h>)
 //
 //  UIPresentationController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -116,3 +117,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UIPresentationController : NSObject <UIAp
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIPresentationController.h>
+#endif

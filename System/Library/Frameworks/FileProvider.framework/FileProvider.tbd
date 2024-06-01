@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 85A6A3C4-72A8-3B35-A9A6-4278DC5E56AD' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A19DCCFF-13A2-343C-806C-78FEFD2DE71B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/FileProvider.framework/FileProvider
 objc-constraint: none
@@ -32,22 +32,29 @@ exports:
                        _FPActionDelete, _FPActionDownload, _FPActionDuplicate, _FPActionEvict, 
                        _FPActionFavorite, _FPActionImportHere, _FPActionRename, _FPActionReparent, 
                        _FPActionTag, _FPActionTrash, _FPActionUntrash, _FPBookmarkableStringFromDocumentURL, 
-                       _FPBookmarkableStringFromIdentifiers, _FPCFGetAttributeValuesForItem, 
-                       _FPClientLacksEntitlement, _FPDXPCInterface, _FPDidUpdateAlternateContentsDocumentForDocumentAtURL, 
+                       _FPBookmarkableStringFromIdentifiers, _FPCFCopyAttributeValuesForItem, 
+                       _FPCFGetAttributeValuesForItem, _FPClientLacksEntitlement, 
+                       _FPCreateBookmarkableStringFromDocumentURL, _FPCreateCrossDeviceItemIDForItemAtURL, 
+                       _FPCreateCrossDeviceItemIDForItemID, _FPCreateDocumentURLFromBookmarkableString, 
+                       _FPCrossDeviceItemIDForItemAtURL, _FPCrossDeviceItemIDForItemID, 
+                       _FPDXPCInterface, _FPDidUpdateAlternateContentsDocumentForDocumentAtURL, 
                        _FPDocumentURLFromBookmarkableString, _FPDocumentURLFromUniversalBookmarkableString, 
                        _FPErrorVariantCopy, _FPErrorVariantMove, _FPErrorVariantOpen, 
                        _FPErrorVariantRemove, _FPErrorVariantRename, _FPEvictItem, 
                        _FPExtendBookmarkForDocumentURL, _FPFetchAlternateContentsURLForDocumentURL, 
                        _FPFileProviderFetchProxyFactoryEndpointForMessageInterface, 
                        _FPFileProviderMessageInterfacesForItemAtURL, _FPFileProviderServiceEndpointCreatingForItemAtURL, 
+                       _FPGetItemIDFromCrossDeviceItemID, _FPGetItemURLForCrossDeviceItemID, 
                        _FPGetTagsDataForTags, _FPGetTagsFromTagsData, _FPInvalidBookmarkableStringError, 
                        _FPInvalidParameterError, _FPInvalidProtocolError, _FPInvalidURLError, 
-                       _FPIsFileProviderBookmark, _FPItemNotFoundError, _FPItemPropertyNamesByURLResourceKey, 
-                       _FPMarkAsFileProviderBookmark, _FPNotFoundError, _FPNotFoundErrorURL, 
-                       _FPNotImplementedError, _FPNotPermittedError, _FPOriginalDocumentURL, 
-                       _FPParseBookmarkableString, _FPPartialErrorsByItemIdentifiers, 
-                       _FPPartialErrorsByURL, _FPPluginOperationFailedError, _FPProxyNotFoundError, 
-                       _FPRegisterFileProvidersForFileCoordination, _FPRegisterFileProvidersForUser, 
+                       _FPIsFileProviderBookmark, _FPItemIDFromCrossDeviceItemID, 
+                       _FPItemNotFoundError, _FPItemPropertyNamesByURLResourceKey, 
+                       _FPItemURLForCrossDeviceItemID, _FPMarkAsFileProviderBookmark, 
+                       _FPNotFoundError, _FPNotFoundErrorURL, _FPNotImplementedError, 
+                       _FPNotPermittedError, _FPOriginalDocumentURL, _FPParseBookmarkableString, 
+                       _FPPartialErrorsByItemIdentifiers, _FPPartialErrorsByURL, 
+                       _FPPluginOperationFailedError, _FPProxyNotFoundError, _FPRegisterFileProvidersForFileCoordination, 
+                       _FPRegisterFileProvidersForUser, _FPRegisterFileProvidersForUserAtURLs, 
                        _FPSetAlternateContentsURLOnDocumentURL, _FPSpotlightIndexDidChangeNotification, 
                        _FPThumbnailFormatBRUndecorated, _FPThumbnailFormatLICachedBitmap, 
                        _FPURLIsInFileProvider, _FPURLMightBeInFileProvider, _FPURLResourceKeysByItemPropertyNames, 

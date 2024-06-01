@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPreviewInteraction.h>)
 //
 //  UIPreviewInteraction.h
 //  UIKit
 //
-//  Copyright (c) 2015-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2015-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -42,3 +43,7 @@ UIKIT_CLASS_AVAILABLE_IOS_ONLY(10_0) @interface UIPreviewInteraction : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPreviewInteraction.h>
+#endif

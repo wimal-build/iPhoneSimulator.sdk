@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIUserNotificationSettings.h>)
 //
 //  UIUserNotificationSettings.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -134,3 +135,7 @@ NS_CLASS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's UNNotifica
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIUserNotificationSettings.h>
+#endif

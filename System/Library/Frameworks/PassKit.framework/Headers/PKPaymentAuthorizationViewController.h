@@ -148,7 +148,7 @@ NS_CLASS_AVAILABLE_MAC(10_12)
 + (BOOL)canMakePaymentsUsingNetworks:(NSArray<PKPaymentNetwork> *)supportedNetworks capabilities:(PKMerchantCapability)capabilties API_AVAILABLE(ios(9.0));
 
 // The view controller's delegate.
-@property (nonatomic, assign, nullable) id<PKPaymentAuthorizationViewControllerDelegate> delegate;
+@property (nonatomic, weak, nullable) id<PKPaymentAuthorizationViewControllerDelegate> delegate;
 
 // Initializes and returns a newly created view controller for the supplied payment.
 // It is your responsibility to present and dismiss the view controller using the

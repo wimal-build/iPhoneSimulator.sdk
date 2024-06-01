@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDataDetectors.h>)
 //
 //  UIDataDetectors.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,4 +19,8 @@ typedef NS_OPTIONS(NSUInteger, UIDataDetectorTypes) {
 
     UIDataDetectorTypeNone          = 0,               // Disable detection
     UIDataDetectorTypeAll           = NSUIntegerMax    // Enable all types, including types that may be added later
-} __TVOS_PROHIBITED;
+} API_UNAVAILABLE(tvos);
+
+#else
+#import <UIKitCore/UIDataDetectors.h>
+#endif

@@ -1,7 +1,9 @@
-// HMAccessory.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMAccessory.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
@@ -23,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  *             one relationship between a physical accessory and an object of this
  *             class. An accessory is composed of one or more services.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMAccessory : NSObject
 
 /*!
@@ -39,12 +41,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *
  * @discussion Use uniqueIdentifier to obtain the identifier for this object.
  */
-@property(readonly, copy, nonatomic) NSUUID *identifier NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+@property(readonly, copy, nonatomic) NSUUID *identifier API_DEPRECATED("No longer supported.", ios(8.0, 9.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief A unique identifier for the accessory.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Delegate object that receives updates on the state of the accessory.
@@ -71,7 +73,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @discussion Use uniqueIdentifiersForBridgedAccessories to obtain the identifiers for the
  *             bridged accessories.
  */
-@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *identifiersForBridgedAccessories NS_DEPRECATED_IOS(8_0, 9_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *identifiersForBridgedAccessories API_DEPRECATED("No longer supported.", ios(8.0, 9.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief If this accessory is a bridge, this property is an array of NSUUID objects that,
@@ -85,12 +87,12 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                  - An accessory behind a bridge would have its 'bridged' property set to TRUE and
  *                    its 'uniqueIdentifiersForBridgedAccessories' property set to nil.
  */
-@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *uniqueIdentifiersForBridgedAccessories NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic, nullable) NSArray<NSUUID *> *uniqueIdentifiersForBridgedAccessories API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Category information for the accessory. 
  */
-@property(readonly, strong, nonatomic) HMAccessoryCategory *category NS_AVAILABLE_IOS(9_0);
+@property(readonly, strong, nonatomic) HMAccessoryCategory *category API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Room containing the accessory.
@@ -144,7 +146,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method is used to have an accessory identify itself.
@@ -162,7 +164,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @brief This defines the protocol for a delegate to receive updates about
  *        different aspects of an accessory
  */
-NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @protocol HMAccessoryDelegate <NSObject>
 
 @optional

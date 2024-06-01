@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIScrollView.h>)
 //
 //  UIScrollView.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -38,13 +39,15 @@ typedef NS_ENUM(NSInteger, UIScrollViewContentInsetAdjustmentBehavior) {
     UIScrollViewContentInsetAdjustmentAlways, // contentInset is always adjusted by the scroll view's safeAreaInsets
 } API_AVAILABLE(ios(11.0),tvos(11.0));
 
-UIKIT_EXTERN const CGFloat UIScrollViewDecelerationRateNormal NS_AVAILABLE_IOS(3_0);
-UIKIT_EXTERN const CGFloat UIScrollViewDecelerationRateFast NS_AVAILABLE_IOS(3_0);
+typedef CGFloat UIScrollViewDecelerationRate NS_TYPED_ENUM;
+
+UIKIT_EXTERN const UIScrollViewDecelerationRate UIScrollViewDecelerationRateNormal NS_AVAILABLE_IOS(3_0);
+UIKIT_EXTERN const UIScrollViewDecelerationRate UIScrollViewDecelerationRateFast NS_AVAILABLE_IOS(3_0);
 
 @class UIEvent, UIImageView, UIPanGestureRecognizer, UIPinchGestureRecognizer;
 @protocol UIScrollViewDelegate;
 
-NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding>
+NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding, UIFocusItemScrollableContainer>
 
 @property(nonatomic)         CGPoint                      contentOffset;                  // default CGPointZero
 @property(nonatomic)         CGSize                       contentSize;                    // default CGSizeZero
@@ -85,7 +88,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding>
 @property(nonatomic)         BOOL                         showsVerticalScrollIndicator;   // default YES. show indicator while we are tracking. fades out after tracking
 @property(nonatomic)         UIEdgeInsets                 scrollIndicatorInsets;          // default is UIEdgeInsetsZero. adjust indicators inside of insets
 @property(nonatomic)         UIScrollViewIndicatorStyle   indicatorStyle;                 // default is UIScrollViewIndicatorStyleDefault
-@property(nonatomic)         CGFloat                      decelerationRate NS_AVAILABLE_IOS(3_0);
+@property(nonatomic)         UIScrollViewDecelerationRate decelerationRate NS_AVAILABLE_IOS(3_0);
 @property(nonatomic)         UIScrollViewIndexDisplayMode indexDisplayMode API_AVAILABLE(tvos(10.2));
 
 - (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;  // animate at constant velocity to new offset
@@ -190,3 +193,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding>
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIScrollView.h>
+#endif

@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeResult) {
     MFMailComposeResultSaved,
     MFMailComposeResultSent,
     MFMailComposeResultFailed
-} API_AVAILABLE(ios(3.0));
+} API_AVAILABLE(ios(3.0)) ;
 
 /*!
     @const      MFMailComposeErrorDomain
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeResult) {
                 MFMailCompose API.  Valid error code values are declared in the <tt>MFMailComposeErrorCode</tt>
                 space.
 */
-extern NSErrorDomain const MFMailComposeErrorDomain API_AVAILABLE(ios(3.0));
+extern NSErrorDomain const MFMailComposeErrorDomain API_AVAILABLE(ios(3.0)) ;
 
 /*!
     @enum       MFMailComposeErrorCode
@@ -52,7 +52,7 @@ extern NSErrorDomain const MFMailComposeErrorDomain API_AVAILABLE(ios(3.0));
 typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
     MFMailComposeErrorCodeSaveFailed,
     MFMailComposeErrorCodeSendFailed
-} API_AVAILABLE(ios(3.0));
+} API_AVAILABLE(ios(3.0)) ;
 
 @protocol MFMailComposeViewControllerDelegate;
 
@@ -65,7 +65,7 @@ typedef NS_ENUM(NSInteger, MFMailComposeErrorCode) {
                  of the user's composition completion and how they chose to complete the operation.<p>Prior to use, clients
                  should verify the user has set up the device for sending email via <tt>+[MFMailComposeViewController canSendMail]</tt>.
 */
-API_AVAILABLE(ios(3.0))
+API_AVAILABLE(ios(3.0)) 
 @interface MFMailComposeViewController : UINavigationController
 {
 @private
@@ -182,9 +182,8 @@ API_AVAILABLE(ios(3.0))
     @param      error        NSError indicating the failure reason if failure did occur.  This will be <tt>nil</tt> if
                              result did not indicate failure.
 */
-- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(nullable NSError *)error;
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(nullable NSError *)error ;
 
 @end
 
 NS_ASSUME_NONNULL_END
-

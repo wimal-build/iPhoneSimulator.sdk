@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextInput.h>)
 //
 //  UITextInput.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -53,7 +54,7 @@ typedef NS_ENUM(NSInteger, UITextLayoutDirection) {
     UITextLayoutDirectionDown
 };
 
-typedef NSInteger UITextDirection;
+typedef NSInteger UITextDirection NS_TYPED_ENUM;
 
 typedef NS_ENUM(NSInteger, UITextWritingDirection) {
     UITextWritingDirectionNatural = -1,
@@ -116,7 +117,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
  * inserts it from the current selection. */ 
 
 @property (nullable, nonatomic, readonly) UITextRange *markedTextRange; // Nil if no marked text.
-@property (nullable, nonatomic, copy) NSDictionary *markedTextStyle; // Describes how the marked text should be drawn.
+@property (nullable, nonatomic, copy) NSDictionary<NSAttributedStringKey, id> *markedTextStyle; // Describes how the marked text should be drawn.
 - (void)setMarkedText:(nullable NSString *)markedText selectedRange:(NSRange)selectedRange; // selectedRange is a range within the markedText
 - (void)unmarkText;
 
@@ -150,7 +151,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 /* Geometry used to provide, for example, a correction rect. */
 - (CGRect)firstRectForRange:(UITextRange *)range;
 - (CGRect)caretRectForPosition:(UITextPosition *)position;
-- (NSArray *)selectionRectsForRange:(UITextRange *)range NS_AVAILABLE_IOS(6_0);       // Returns an array of UITextSelectionRects
+- (NSArray<UITextSelectionRect *> *)selectionRectsForRange:(UITextRange *)range NS_AVAILABLE_IOS(6_0);       // Returns an array of UITextSelectionRects
 
 /* Hit testing. */
 - (nullable UITextPosition *)closestPositionToPoint:(CGPoint)point;
@@ -163,7 +164,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 
 /* Text styling information can affect, for example, the appearance of a correction rect.
  * Returns a dictionary containing NSAttributedString keys. */
-- (nullable NSDictionary<NSString *,id> *)textStylingAtPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction;
+- (nullable NSDictionary<NSAttributedStringKey, id> *)textStylingAtPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction;
 
 /* To be implemented if there is not a one-to-one correspondence between text positions within range and character offsets into the associated string. */
 - (nullable UITextPosition *)positionWithinRange:(UITextRange *)range atCharacterOffset:(NSInteger)offset;
@@ -298,3 +299,7 @@ NS_CLASS_AVAILABLE_IOS(4_2) @interface UITextInputMode : NSObject <NSSecureCodin
 UIKIT_EXTERN NSNotificationName const UITextInputCurrentInputModeDidChangeNotification NS_AVAILABLE_IOS(4_2);
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITextInput.h>
+#endif

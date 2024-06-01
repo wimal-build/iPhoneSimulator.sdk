@@ -1,7 +1,7 @@
 /*
     NSManagedObjectContext.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -63,7 +63,7 @@ COREDATA_EXTERN id NSOverwriteMergePolicy API_AVAILABLE(macosx(10.4),ios(3.0));
 COREDATA_EXTERN id NSRollbackMergePolicy API_AVAILABLE(macosx(10.4),ios(3.0));    
 
 typedef NS_ENUM(NSUInteger, NSManagedObjectContextConcurrencyType) {
-    NSConfinementConcurrencyType  API_DEPRECATED( "Use another NSManagedObjectContextConcurrencyType", macosx(10.4,10.11), ios(3.0,9.0)) = 0x00,
+    NSConfinementConcurrencyType API_DEPRECATED( "Use another NSManagedObjectContextConcurrencyType", macosx(10.4,10.11), ios(3.0,9.0)) = 0x00,
     NSPrivateQueueConcurrencyType		= 0x01,
     NSMainQueueConcurrencyType			= 0x02
 } API_AVAILABLE(macosx(10.7), ios(5.0));
@@ -78,10 +78,10 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 
 /* asynchronously performs the block on the context's queue.  Encapsulates an autorelease pool and a call to processPendingChanges */
 - (void)performBlock:(void (^)(void))block API_AVAILABLE(macosx(10.7),ios(5.0));
-    
+
 /* synchronously performs the block on the context's queue.  May safely be called reentrantly.  */
 - (void)performBlockAndWait:(void (NS_NOESCAPE ^)(void))block API_AVAILABLE(macosx(10.7),ios(5.0));
-    
+
 /* coordinator which provides model and handles persistency (multiple contexts can share a coordinator) */
 @property (nullable, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
@@ -103,7 +103,7 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 - (__kindof NSManagedObject *)objectWithID:(NSManagedObjectID *)objectID;
 
 /* returns the object for the specified ID if it is already registered in the context, or faults the object into the context.  It might perform I/O if the data is uncached.  If the object cannot be fetched, or does not exist, or cannot be faulted, it returns nil.  Unlike -objectWithID: it never returns a fault.  */
-- (nullable __kindof NSManagedObject *)existingObjectWithID:(NSManagedObjectID*)objectID error:(NSError**)error API_AVAILABLE(macosx(10.6),ios(3.0));
+- (nullable __kindof NSManagedObject*)existingObjectWithID:(NSManagedObjectID*)objectID error:(NSError**)error API_AVAILABLE(macosx(10.6),ios(3.0));
 
 // method to fetch objects from the persistent stores into the context (fetch request defines the entity and predicate as well as a sort order for the objects); context will match the results from persistent stores with current changes in the context (so inserted objects are returned even if they are not persisted yet); to fetch a single object with an ID if it is not guaranteed to exist and thus -objectWithObjectID: cannot be used, one would create a predicate like [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForKeyPath:@"objectID"] rightExpression:[NSExpression expressionForConstantValue:<object id>] modifier:NSPredicateModifierDirect type:NSEqualToPredicateOperatorType options:0]
 - (nullable NSArray *)executeFetchRequest:(NSFetchRequest *)request error:(NSError **)error;
@@ -188,25 +188,22 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 + (void)mergeChangesFromRemoteContextSave:(NSDictionary*)changeNotificationData intoContexts:(NSArray<NSManagedObjectContext*> *)contexts API_AVAILABLE(macosx(10.11),ios(9.0));
 
 /* Return the query generation currently in use by this context. Will be one of the following:
- * - nil, default value
- * - this context is not using generational querying
- * - an opaque token
- * - specifies the generation of data this context is vending
+ * - nil, default value => this context is not using generational querying
+ * - an opaque token => specifies the generation of data this context is vending
  *
  * All child contexts will return nil.
  */
 @property (nullable, nonatomic, strong, readonly) NSQueryGenerationToken *queryGenerationToken API_AVAILABLE(macosx(10.12),ios(10.0),tvos(10.0),watchos(3.0));
 
 /* Set the query generation this context should use. Must be one of the following values:
- * - nil
- * - this context will not use generational querying
- * - the value returned by +[NSQueryGenerationToken currentQueryGenerationToken]
- * - this context will pin itself to the generation of the database when it first loads data
- * - the result of calling -[NSManagedObjectContext queryGenerationToken] on another managed object context
- * - this context will be set to whatever query generation the original context is currently using;
+ * - nil => this context will not use generational querying
+ * - the value returned by +[NSQueryGenerationToken currentQueryGenerationToken] => this context will pin itself to the generation of the database when it first loads data
+ * - the result of calling -[NSManagedObjectContext queryGenerationToken] on another managed object context => this context will be set to whatever query generation the original context is currently using;
  *
  * Query generations are for fetched data only; they are not used during saving. If a pinned context saves,
- * its query generation will be updated after the save.
+ * its query generation will be updated after the save. Executing a NSBatchUpdateRequest or NSBatchDeleteRequest 
+ * will not cause the query generation to advance, since these do not otherwise consider or affect the 
+ * managed object context's content.
  *
  * All nested contexts will defer to their parent context’s data. It is a programmer error to try to set
  * the queryGenerationToken on a child context.
@@ -220,13 +217,13 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 - (BOOL)setQueryGenerationFromToken:(nullable NSQueryGenerationToken *)generation error:(NSError **)error API_AVAILABLE(macosx(10.12),ios(10.0),tvos(10.0),watchos(3.0));
 
 /* Whether the context automatically merges changes saved to its coordinator or parent context. Setting this property to YES when the context is pinned to a non-current query generation is not supported.
-*/
+ */
 @property (nonatomic) BOOL automaticallyMergesChangesFromParent API_AVAILABLE(macosx(10.12),ios(10.0),tvos(10.0),watchos(3.0));
-    
+
 /* Set the author for the context, this will be used as an identifier in the Persistent History Transactions (NSPersistentHistoryTransaction)
  */
 @property (nullable, copy) NSString *transactionAuthor API_AVAILABLE(macosx(10.13),ios(11.0),tvos(11.0),watchos(4.0));
-    
+
 @end
 
 NS_ASSUME_NONNULL_END

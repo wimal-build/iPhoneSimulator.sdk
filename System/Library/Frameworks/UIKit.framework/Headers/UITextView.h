@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextView.h>)
 //
 //  UITextView.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +15,7 @@
 #import <UIKit/UITextInput.h>
 #import <UIKit/UIKitDefines.h>
 #import <UIKit/UIDataDetectors.h>
-#import <UIKit/UITextInteraction.h>
+#import <UIKit/UITextItemInteraction.h>
 #import <UIKit/UIContentSizeCategoryAdjusting.h>
 #import <UIKit/UITextPasteConfigurationSupporting.h>
 
@@ -60,7 +61,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput, U
 
 @property(nonatomic) BOOL allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0); // defaults to NO
 @property(null_resettable,copy) NSAttributedString *attributedText NS_AVAILABLE_IOS(6_0);
-@property(nonatomic,copy) NSDictionary<NSString *, id> *typingAttributes NS_AVAILABLE_IOS(6_0); // automatically resets when the selection changes
+@property(nonatomic,copy) NSDictionary<NSAttributedStringKey, id> *typingAttributes NS_AVAILABLE_IOS(6_0); // automatically resets when the selection changes
 
 - (void)scrollRangeToVisible:(NSRange)range;
 
@@ -86,7 +87,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextView : UIScrollView <UITextInput, U
 @property(nonatomic,readonly,strong) NSTextStorage *textStorage NS_AVAILABLE_IOS(7_0);
 
 // Style for links
-@property(null_resettable, nonatomic, copy) NSDictionary<NSString *, id> *linkTextAttributes NS_AVAILABLE_IOS(7_0);
+@property(null_resettable, nonatomic, copy) NSDictionary<NSAttributedStringKey,id> *linkTextAttributes NS_AVAILABLE_IOS(7_0);
 
 @end
 
@@ -102,3 +103,7 @@ UIKIT_EXTERN NSNotificationName const UITextViewTextDidChangeNotification;
 UIKIT_EXTERN NSNotificationName const UITextViewTextDidEndEditingNotification;
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITextView.h>
+#endif

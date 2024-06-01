@@ -1,9 +1,12 @@
-// HMTimerTrigger.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMTimerTrigger.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMTrigger.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -13,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @discussion This class represents a trigger that is based on timers.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMTimerTrigger : HMTrigger
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -48,7 +51,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
                     fireDate:(NSDate *)fireDate
                     timeZone:(nullable NSTimeZone *)timeZone
                   recurrence:(nullable NSDateComponents *)recurrence
-          recurrenceCalendar:(nullable NSCalendar *)recurrenceCalendar NS_DESIGNATED_INITIALIZER __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+          recurrenceCalendar:(nullable NSCalendar *)recurrenceCalendar NS_DESIGNATED_INITIALIZER API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Specifies when, in an absolute time, the trigger should fire the first time.
@@ -98,7 +101,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   error will be nil on success. HMErrorCodeDateMustBeOnSpecifiedBoundaries will
  *                   be returned if the fireDate includes a seconds value other than 0.
  */
-- (void)updateFireDate:(NSDate *)fireDate completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateFireDate:(NSDate *)fireDate completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method is used to change the time zone of the fire date of a timer trigger.
@@ -110,7 +113,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request,
  *                   error will be nil on success.
  */
-- (void)updateTimeZone:(nullable NSTimeZone *)timeZone completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateTimeZone:(nullable NSTimeZone *)timeZone completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method is used to change the recurrence interval for a timer trigger.
@@ -130,7 +133,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   greater than 5 weeks. *                   error will be nil on success.
  */
 - (void)updateRecurrence:(nullable NSDateComponents *)recurrence
-       completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+       completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 

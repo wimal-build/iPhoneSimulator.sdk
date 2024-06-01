@@ -10,7 +10,8 @@
 @class CLLocation;
 @class INImage;
 
-NS_CLASS_AVAILABLE(NA, 10_0) __TVOS_PROHIBITED __WATCHOS_AVAILABLE(3_0)
+API_AVAILABLE(ios(10.0), watchos(3.0))
+API_UNAVAILABLE(macosx)
 @interface INRideVehicle : NSObject <NSCopying, NSSecureCoding>
 
 @property (readwrite, copy, nullable, NS_NONATOMIC_IOSONLY) CLLocation *location; // The course of this location is significant; see below.

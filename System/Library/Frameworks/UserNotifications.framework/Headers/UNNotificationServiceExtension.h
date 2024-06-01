@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-__IOS_AVAILABLE(10.0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
+__IOS_AVAILABLE(10.0) __OSX_AVAILABLE(10.14) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @interface UNNotificationServiceExtension : NSObject
 
 // Call contentHandler with the modified notification content to deliver. If the handler is not called before the service's time expires then the unmodified notification will be delivered.

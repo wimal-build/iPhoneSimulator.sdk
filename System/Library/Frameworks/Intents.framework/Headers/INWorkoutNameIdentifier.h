@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <Intents/IntentsDefines.h>
 
-typedef NSString *INWorkoutNameIdentifier NS_STRING_ENUM;
+typedef NSString *INWorkoutNameIdentifier NS_TYPED_ENUM;
 
 INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierRun NS_SWIFT_NAME(INWorkoutNameIdentifier.run) API_AVAILABLE(ios(10.2), watchos(3.2)) API_UNAVAILABLE(macosx);
 INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierSit NS_SWIFT_NAME(INWorkoutNameIdentifier.sit) API_AVAILABLE(ios(10.2), watchos(3.2)) API_UNAVAILABLE(macosx);
@@ -28,3 +28,6 @@ INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierIndoorrun NS
 INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierIndoorcycle NS_SWIFT_NAME(INWorkoutNameIdentifier.indoorcycle) API_AVAILABLE(ios(10.2), watchos(3.2)) API_UNAVAILABLE(macosx);
 INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierIndoorwalk NS_SWIFT_NAME(INWorkoutNameIdentifier.indoorwalk) API_AVAILABLE(ios(10.2), watchos(3.2)) API_UNAVAILABLE(macosx);
 INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierExercise NS_SWIFT_NAME(INWorkoutNameIdentifier.exercise) API_AVAILABLE(ios(10.2), watchos(3.2)) API_UNAVAILABLE(macosx);
+INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierHike NS_SWIFT_NAME(INWorkoutNameIdentifier.hike) API_AVAILABLE(ios(12.0), watchos(5.0)) API_UNAVAILABLE(macosx);
+INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierHighIntensityIntervalTraining NS_SWIFT_NAME(INWorkoutNameIdentifier.highIntensityIntervalTraining) API_AVAILABLE(ios(12.0), watchos(5.0)) API_UNAVAILABLE(macosx);
+INTENTS_EXTERN INWorkoutNameIdentifier const INWorkoutNameIdentifierSwim NS_SWIFT_NAME(INWorkoutNameIdentifier.swim) API_AVAILABLE(ios(12.0), watchos(5.0)) API_UNAVAILABLE(macosx);

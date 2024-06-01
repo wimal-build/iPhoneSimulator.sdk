@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStoryboard.h>)
 //
 //  UIStoryboard.h
 //  UIKit
 //
-//  Copyright 2011-2017 Apple Inc. All rights reserved.
+//  Copyright 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,3 +24,7 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface UIStoryboard : NSObject {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIStoryboard.h>
+#endif

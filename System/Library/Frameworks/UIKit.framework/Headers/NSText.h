@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSText.h>)
 //
 //  NSText.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /* Values for NSTextAlignment */
 typedef NS_ENUM(NSInteger, NSTextAlignment) {
     NSTextAlignmentLeft      = 0,    // Visually left aligned
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE && !0
     NSTextAlignmentCenter    = 1,    // Visually centered
     NSTextAlignmentRight     = 2,    // Visually right aligned
 #else /* !TARGET_OS_IPHONE */
@@ -28,6 +29,7 @@ typedef NS_ENUM(NSInteger, NSTextAlignment) {
 } NS_ENUM_AVAILABLE_IOS(6_0);
 
 #if __has_include(<CoreText/CTParagraphStyle.h>)
+UIKIT_SWIFT_FORWARD_DECLARE(typedef CF_ENUM(uint8_t, CTTextAlignment))
 UIKIT_EXTERN CTTextAlignment NSTextAlignmentToCTTextAlignment(NSTextAlignment nsTextAlignment) NS_AVAILABLE_IOS(6_0);
 UIKIT_EXTERN NSTextAlignment NSTextAlignmentFromCTTextAlignment(CTTextAlignment ctTextAlignment) NS_AVAILABLE_IOS(6_0);
 #endif
@@ -40,3 +42,7 @@ typedef NS_ENUM(NSInteger, NSWritingDirection) {
 } NS_ENUM_AVAILABLE_IOS(6_0);
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSText.h>
+#endif

@@ -1,7 +1,9 @@
-// HMService.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMService.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
@@ -19,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  *             A service is composed of one or more characteristics that can be 
  *             modified.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMService : NSObject
 
 /*!
@@ -35,7 +37,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief The localized description of the service.
  */
-@property(readonly, copy, nonatomic) NSString *localizedDescription NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSString *localizedDescription API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Name for the service.
@@ -62,7 +64,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 /*!
  * @brief A unique identifier for the service.
  */
-@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier NS_AVAILABLE_IOS(9_0);
+@property(readonly, copy, nonatomic) NSUUID *uniqueIdentifier API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Indicates if this service supports user interaction or not.
@@ -70,14 +72,14 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @discussion Applications should use this property to filter out services that the users
  *             should not directly interact with, e.g. HMServiceTypeAccessoryInformation.
  */
-@property(readonly, getter=isUserInteractive, nonatomic) BOOL userInteractive NS_AVAILABLE_IOS(9_0);
+@property(readonly, getter=isUserInteractive, nonatomic) BOOL userInteractive API_AVAILABLE(ios(9.0));
 
 /*!
  * @brief Indicates if this services is the primary service.
  *
  * @discussion Applications should use this property to show the primary service on the accessory.
  */
-@property(readonly, getter=isPrimaryService, nonatomic) BOOL primaryService NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+@property(readonly, getter=isPrimaryService, nonatomic) BOOL primaryService API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 /*!
  * @brief Array of HMService objects that represents all the services that the service links to.
@@ -85,7 +87,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @discussion Applications should use this property to show logical grouping of services on the accessory.
  *             linkedServices will be nil when the service does not link to any other services.
  */
-@property(readonly, copy, nonatomic) NSArray<HMService *> * __nullable linkedServices NS_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+@property(readonly, copy, nonatomic) NSArray<HMService *> * __nullable linkedServices API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
 
 /*!
  * @brief This method is used to change the name of the service.
@@ -98,7 +100,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateName:(NSString *)name completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method is used to set up the service type of the device connected to a contact sensor, switch or an outlet.
@@ -119,7 +121,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateAssociatedServiceType:(nullable NSString *)serviceType completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateAssociatedServiceType:(nullable NSString *)serviceType completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 @end
 

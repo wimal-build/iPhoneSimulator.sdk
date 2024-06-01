@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* callbacks to the GKPeerPickerController delegate
  */
+NS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController along with MCBrowserViewControllerDelegate from the MultipeerConnectivity framework") 
 @protocol GKPeerPickerControllerDelegate <NSObject>
 
 @optional
@@ -75,7 +76,7 @@ NS_CLASS_DEPRECATED_IOS(3_0, 7_0, "Use MCBrowserViewController from the Multipee
 
 /* The delegate receives notifications when the user interacts with the picker interface. If this property is nil, the picker is dismissed immediately if you try to show it.
  */
-@property(nonatomic, nullable, assign) id<GKPeerPickerControllerDelegate> delegate;
+@property(nonatomic, nullable, assign) id<GKPeerPickerControllerDelegate> delegate NS_DEPRECATED_IOS(3_0, 7_0) ;
 
 /* Show the picker.
  */

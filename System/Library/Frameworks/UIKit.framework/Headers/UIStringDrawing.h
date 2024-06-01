@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStringDrawing.h>)
 //
 //  UIStringDrawing.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -86,3 +87,7 @@ typedef NS_ENUM(NSInteger, UIBaselineAdjustment) {
 - (CGSize)drawAtPoint:(CGPoint)point forWidth:(CGFloat)width withFont:(UIFont *)font minFontSize:(CGFloat)minFontSize actualFontSize:(CGFloat *)actualFontSize lineBreakMode:(NSLineBreakMode)lineBreakMode baselineAdjustment:(UIBaselineAdjustment)baselineAdjustment NS_DEPRECATED_IOS(2_0, 7_0, "Use -drawInRect:withAttributes:") __TVOS_PROHIBITED;
 
 @end
+
+#else
+#import <UIKitCore/UIStringDrawing.h>
+#endif

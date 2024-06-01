@@ -14,7 +14,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NS_CLASS_AVAILABLE(NA, 10_0) __TVOS_PROHIBITED __WATCHOS_AVAILABLE(3_0)
+API_AVAILABLE(ios(10.0), watchos(3.0))
+API_UNAVAILABLE(macosx)
 @interface INRideOption : NSObject <NSCopying, NSSecureCoding>
 
 - (instancetype)init NS_UNAVAILABLE;

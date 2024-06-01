@@ -23,6 +23,18 @@ typedef NS_ENUM(NSUInteger, MSMessagesAppPresentationStyle) {
 } NS_ENUM_AVAILABLE_IOS(10_0);
 
 
+/*!
+ @enum       MSMessagesAppPresentationContext
+ @abstract   Describes the context for which the extension was launched
+ @constant   MSMessagesAppPresentationContextMessages   The extension was launched for presentation in Messages
+ @constant   MSMessagesAppPresentationContextMedia      The extension was launched for presentation over media content, such as a photo or camera feed
+ */
+typedef NS_ENUM(NSUInteger, MSMessagesAppPresentationContext) {
+    MSMessagesAppPresentationContextMessages,
+    MSMessagesAppPresentationContextMedia,
+} NS_ENUM_AVAILABLE_IOS(12_0);
+
+
 NS_AVAILABLE_IOS(11_0)
 @protocol MSMessagesAppTranscriptPresentation
 
@@ -51,6 +63,12 @@ NS_CLASS_AVAILABLE_IOS(10_0)
  @abstract   Get the presentation extension's current presentation style.
  */
 @property (nonatomic, assign, readonly) MSMessagesAppPresentationStyle presentationStyle;
+
+/*!
+ @property   presentationContext
+ @abstract   The context for which the extension was launched
+ */
+@property (nonatomic, readonly) MSMessagesAppPresentationContext presentationContext NS_AVAILABLE_IOS(12_0);
 
 /*!
  @method     requestPresentationStyle:
@@ -103,7 +121,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @method     willSelectMessage:conversation:
  @abstract   Informs the extension that a new message will be selected in the conversation.
- @discussion This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript`.
+ @discussion This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript` or the `presentationContext` is `MSMessagesAppPresentationContextMedia`.
  @param      message    The message selected.
  @param      conversation    The conversation.
  */
@@ -112,7 +130,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @method     didSelectMessage:conversation:
  @abstract   Informs the extension that a new message has been selected in the conversation.
- @discussion This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript`.
+ @discussion This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript` or the `presentationContext` is `MSMessagesAppPresentationContextMedia`.
  @param      message    The message selected.
  @param      conversation    The conversation.
  */
@@ -121,7 +139,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @method     didReceiveMessage:conversation:
  @abstract   Informs the extension that a new message has arrived.
- @discussion This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript`.
+ @discussion This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript` or the `presentationContext` is `MSMessagesAppPresentationContextMedia`.
  @param      message    The message received.
  @param      conversation    The conversation.
  */
@@ -130,7 +148,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @method     didStartSendingMessage:conversation:
  @abstract   Informs the extension that the message send has been triggered.
- @discussion This is called when a user interaction with Messages start the message send process. It does not guarantee the message will be successfully sent or delivered. This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript`.
+ @discussion This is called when a user interaction with Messages start the message send process. It does not guarantee the message will be successfully sent or delivered. This method will not be called when the `presentationStyle` is `MSMessagesAppPresentationStyleTranscript` or the `presentationContext` is `MSMessagesAppPresentationContextMedia`.
  @param      message    The message being sent.
  @param      conversation    The conversation the message belongs to.
  */
@@ -139,7 +157,7 @@ NS_CLASS_AVAILABLE_IOS(10_0)
 /*!
  @method     didCancelSendingMessage:conversation:
  @abstract   Informs the extension that the user has removed the message from the input field.
- @discussion This method will not be called when the `presentationStyle` is MSMessagesAppPresentationStyleTranscript.
+ @discussion This method will not be called when the `presentationStyle` is MSMessagesAppPresentationStyleTranscript or the `presentationContext` is `MSMessagesAppPresentationContextMedia`.
  @param      message    The message sent.
  @param      conversation    The conversation.
  */

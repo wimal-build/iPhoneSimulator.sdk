@@ -180,7 +180,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 /*!
  @property      duration
  @abstract      The length of time that a workout was recording
- @discussion    The duration is derived from the start an end date of the workout, and takes into account periods that the 
+ @discussion    The duration is derived from the start and end dates of the workout and takes into account periods that the
                 workout was paused. Periods that the workout was paused are based off of the workoutEvents property.
  */
 @property (readonly, assign) NSTimeInterval duration;

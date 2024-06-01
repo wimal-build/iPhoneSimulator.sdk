@@ -5,7 +5,6 @@
 //  Copyright © 2016-2017 Apple Inc. All rights reserved.
 //
 
-#import <Availability.h>
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 

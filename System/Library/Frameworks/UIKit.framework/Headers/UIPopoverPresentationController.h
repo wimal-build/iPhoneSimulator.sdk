@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverPresentationController.h>)
 //
 //  UIPopoverPresentationController.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIPresentationController.h>
@@ -71,3 +72,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED @interface UIPopoverPresentationCo
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPopoverPresentationController.h>
+#endif

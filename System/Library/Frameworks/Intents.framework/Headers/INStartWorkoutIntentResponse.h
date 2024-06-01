@@ -15,8 +15,8 @@ typedef NS_ENUM(NSInteger, INStartWorkoutIntentResponseCode) {
     INStartWorkoutIntentResponseCodeFailureRequiringAppLaunch,
     INStartWorkoutIntentResponseCodeFailureOngoingWorkout,
     INStartWorkoutIntentResponseCodeFailureNoMatchingWorkout,
-    INStartWorkoutIntentResponseCodeSuccess NS_EXTENSION_UNAVAILABLE("INStartWorkoutIntentResponseCodeSuccess is not available to extensions. This can only be returned from the app.") API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos),
     INStartWorkoutIntentResponseCodeHandleInApp API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos),
+    INStartWorkoutIntentResponseCodeSuccess NS_EXTENSION_UNAVAILABLE("INStartWorkoutIntentResponseCodeSuccess is not available to extensions. This can only be returned from the app.") API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos),
 } API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 NS_ASSUME_NONNULL_BEGIN

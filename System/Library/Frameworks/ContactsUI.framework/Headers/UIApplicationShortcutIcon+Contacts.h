@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+API_AVAILABLE(ios(9.0)) API_UNAVAILABLE(tvos) API_UNAVAILABLE(macos)
 @interface UIApplicationShortcutIcon (ContactsUI)
 
 + (instancetype)iconWithContact:(CNContact *)contact;

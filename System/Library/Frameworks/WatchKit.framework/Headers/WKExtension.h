@@ -8,6 +8,8 @@
 #if TARGET_OS_WATCH
 
 #import <WatchKit/WKDefines.h>
+#import <WatchKit/WKInterfaceController.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -35,7 +37,8 @@ typedef NS_ENUM(NSInteger, WKApplicationState) {
 } WK_AVAILABLE_WATCHOS_ONLY(3.0);
 @property (nonatomic, readonly) WKApplicationState applicationState WK_AVAILABLE_WATCHOS_ONLY(3.0);
 @property (nonatomic, readonly) BOOL isApplicationRunningInDock WK_AVAILABLE_WATCHOS_ONLY(4.0);
-@property (nonatomic, getter=isAutorotating) BOOL autorotating WK_AVAILABLE_WATCHOS_ONLY(4.0);	  // default is NO
+@property (nonatomic, getter=isAutorotating) BOOL autorotating WK_AVAILABLE_WATCHOS_ONLY(4.0);	  // enables autorotation, default is NO
+@property (nonatomic, readonly, getter=isAutorotated) BOOL autorotated WK_AVAILABLE_WATCHOS_ONLY(4.2);  // is the UI currently autorotated?
 
 // when frontmostTimeoutExtended is YES, default time for "ON SCREEN WAKE SHOW LAST APP" setting of 2 minutes will be extended to 8 minutes for this app
 @property (nonatomic, getter=isFrontmostTimeoutExtended) BOOL frontmostTimeoutExtended WK_AVAILABLE_WATCHOS_ONLY(4.0);
@@ -64,7 +67,7 @@ WK_AVAILABLE_WATCHOS_ONLY(2.0)
 
 - (void)handleBackgroundTasks:(NSSet <WKRefreshBackgroundTask *> *)backgroundTasks WK_AVAILABLE_WATCHOS_ONLY(3.0);
 
-- (void)deviceOrientationDidChange WK_AVAILABLE_WATCHOS_ONLY(4.0); // called when WKInterfaceDeviceWristLocation or WKInterfaceDeviceCrownOrientation changes
+- (void)deviceOrientationDidChange WK_AVAILABLE_WATCHOS_ONLY(4.0); // called when WKInterfaceDeviceWristLocation, WKInterfaceDeviceCrownOrientation, or autorotated value changes
 
 // deprecated
 - (void)handleActionWithIdentifier:(nullable NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification WK_DEPRECATED_WATCHOS(2.0, 3.0, "use UNUserNotificationCenterDelegate");

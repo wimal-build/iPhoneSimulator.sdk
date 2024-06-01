@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextDragURLPreviews.h>)
 //
 //  UITextDragURLPreviews.h
 //  UIKit
 //
-//  Copyright © 2017 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -39,3 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITextDragURLPreviews.h>
+#endif

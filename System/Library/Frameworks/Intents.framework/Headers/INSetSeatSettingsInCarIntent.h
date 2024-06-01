@@ -15,6 +15,8 @@
 @class INCarSeatResolutionResult;
 @class INIntegerResolutionResult;
 @class INRelativeSettingResolutionResult;
+@class INSpeakableString;
+@class INSpeakableStringResolutionResult;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,7 +29,8 @@ API_UNAVAILABLE(watchos, macosx)
                         enableMassage:(nullable NSNumber *)enableMassage
                                  seat:(INCarSeat)seat
                                 level:(nullable NSNumber *)level
-                 relativeLevelSetting:(INRelativeSetting)relativeLevelSetting NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT;
+                 relativeLevelSetting:(INRelativeSetting)relativeLevelSetting
+                              carName:(nullable INSpeakableString *)carName NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT API_AVAILABLE(ios(12.0));
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *enableHeating NS_REFINED_FOR_SWIFT;
 
@@ -40,6 +43,8 @@ API_UNAVAILABLE(watchos, macosx)
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *level NS_REFINED_FOR_SWIFT;
 
 @property (readonly, assign, NS_NONATOMIC_IOSONLY) INRelativeSetting relativeLevelSetting;
+
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INSpeakableString *carName API_AVAILABLE(ios(12.0));
 
 @end
 
@@ -111,6 +116,9 @@ API_UNAVAILABLE(watchos, macosx)
 
 - (void)resolveRelativeLevelSettingForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *)intent
                     withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveRelativeLevelSetting(for:with:));
+
+- (void)resolveCarNameForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *)intent
+                    withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveCarName(for:with:)) API_AVAILABLE(ios(12.0));
 
 @end
 

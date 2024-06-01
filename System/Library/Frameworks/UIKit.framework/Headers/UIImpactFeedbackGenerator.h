@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIImpactFeedbackGenerator.h>)
 //
 //  UIImpactFeedbackGenerator.h
 //  UIKit
 //
-//  Copyright © 2016-2017 Apple Inc. All rights reserved.
+//  Copyright © 2016-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIFeedbackGenerator.h>
@@ -26,3 +27,7 @@ UIKIT_CLASS_AVAILABLE_IOS_ONLY(10_0) @interface UIImpactFeedbackGenerator : UIFe
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIImpactFeedbackGenerator.h>
+#endif

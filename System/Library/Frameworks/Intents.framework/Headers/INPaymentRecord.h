@@ -9,17 +9,17 @@
 
 #import <Intents/INPaymentStatus.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @class INCurrencyAmount;
-@class INImage;
 @class INPaymentMethod;
 @class INPerson;
 
-API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx)
+NS_ASSUME_NONNULL_BEGIN
+
+API_AVAILABLE(ios(10.0), watchos(3.2))
+API_UNAVAILABLE(macosx)
 @interface INPaymentRecord : NSObject <NSCopying, NSSecureCoding>
 
-- (id)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 - (nullable instancetype)initWithPayee:(nullable INPerson *)payee
                                  payer:(nullable INPerson *)payer
@@ -40,16 +40,13 @@ API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx)
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INPerson *payer;
 
-// The currency amount of the payment being sent or received.
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INCurrencyAmount *currencyAmount;
 
-// The payment method being used.
-@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INPaymentMethod *paymentMethod;
-
-// Note of the payment being sent or received.
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *note;
 
 @property (readonly, assign, NS_NONATOMIC_IOSONLY) INPaymentStatus status;
+
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INPaymentMethod *paymentMethod;
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INCurrencyAmount *feeAmount;
 

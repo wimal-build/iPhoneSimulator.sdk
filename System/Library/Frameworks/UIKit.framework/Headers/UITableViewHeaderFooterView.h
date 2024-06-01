@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITableViewHeaderFooterView.h>)
 //
 //  UITableViewHeaderFooterView.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -30,3 +31,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UITableViewHeaderFooterView : UIView
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITableViewHeaderFooterView.h>
+#endif

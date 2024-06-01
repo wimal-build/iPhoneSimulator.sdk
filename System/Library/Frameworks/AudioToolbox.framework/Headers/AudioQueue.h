@@ -371,7 +371,7 @@ CF_ENUM(UInt32) {
 */
 CF_ENUM(AudioQueuePropertyID) {
     kAudioQueueProperty_ChannelAssignments      = 'aqca'
-} __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0);
+} API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
 #endif // TARGET_OS_IPHONE
 
 /*!
@@ -879,7 +879,7 @@ AudioQueueNewOutput(                const AudioStreamBasicDescription *inFormat,
                                     CFRunLoopRef __nullable         inCallbackRunLoop,
                                     CFStringRef __nullable          inCallbackRunLoopMode,
                                     UInt32                          inFlags,
-                                    AudioQueueRef __nullable * __nonnull outAQ)          __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueRef __nullable * __nonnull outAQ)          API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -925,7 +925,7 @@ AudioQueueNewInput(                 const AudioStreamBasicDescription *inFormat,
                                     CFRunLoopRef __nullable         inCallbackRunLoop,
                                     CFStringRef __nullable          inCallbackRunLoopMode,
                                     UInt32                          inFlags,
-                                    AudioQueueRef __nullable * __nonnull outAQ)          __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueRef __nullable * __nonnull outAQ)          API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 #if defined(__BLOCKS__)
 /*!
@@ -1016,7 +1016,7 @@ AudioQueueNewInputWithDispatchQueue(AudioQueueRef __nullable * __nonnull outAQ,
 */
 extern OSStatus
 AudioQueueDispose(                  AudioQueueRef           inAQ, 
-                                    Boolean                 inImmediate)            __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    Boolean                 inImmediate)            API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 #pragma mark -
 #pragma mark Buffer Management
@@ -1045,7 +1045,7 @@ AudioQueueDispose(                  AudioQueueRef           inAQ,
 extern OSStatus
 AudioQueueAllocateBuffer(           AudioQueueRef           inAQ,
                                     UInt32                  inBufferByteSize,
-                                    AudioQueueBufferRef __nullable * __nonnull outBuffer)              __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueBufferRef __nullable * __nonnull outBuffer)              API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueAllocateBufferWithPacketDescriptions
@@ -1072,7 +1072,7 @@ AudioQueueAllocateBufferWithPacketDescriptions(
                                     AudioQueueRef           inAQ,
                                     UInt32                  inBufferByteSize,
                                     UInt32                  inNumberPacketDescriptions,
-                                    AudioQueueBufferRef __nullable * __nonnull outBuffer)              __OSX_AVAILABLE_STARTING(__MAC_10_6,__IPHONE_2_0);
+                                    AudioQueueBufferRef __nullable * __nonnull outBuffer)              API_AVAILABLE(macos(10.6), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueFreeBuffer
@@ -1091,7 +1091,7 @@ AudioQueueAllocateBufferWithPacketDescriptions(
 */
 extern OSStatus
 AudioQueueFreeBuffer(               AudioQueueRef           inAQ,
-                                    AudioQueueBufferRef     inBuffer)           __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueBufferRef     inBuffer)           API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 
@@ -1125,7 +1125,7 @@ extern OSStatus
 AudioQueueEnqueueBuffer(            AudioQueueRef                       inAQ,
                                     AudioQueueBufferRef                 inBuffer,
                                     UInt32                              inNumPacketDescs,
-                                    const AudioStreamPacketDescription * __nullable inPacketDescs)      __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    const AudioStreamPacketDescription * __nullable inPacketDescs)      API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueEnqueueBufferWithParameters
@@ -1198,7 +1198,7 @@ AudioQueueEnqueueBufferWithParameters(
                                     UInt32                                       inNumParamValues,
                                     const AudioQueueParameterEvent * __nullable  inParamValues,
                                     const AudioTimeStamp * __nullable            inStartTime,
-                                    AudioTimeStamp * __nullable                  outActualStartTime)     __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioTimeStamp * __nullable                  outActualStartTime)     API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 #pragma mark -
 #pragma mark Queue Control
@@ -1221,7 +1221,7 @@ AudioQueueEnqueueBufferWithParameters(
 */
 extern OSStatus
 AudioQueueStart(                    AudioQueueRef                     inAQ,
-                                    const AudioTimeStamp * __nullable inStartTime)        __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    const AudioTimeStamp * __nullable inStartTime)        API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueuePrime
@@ -1251,7 +1251,7 @@ AudioQueueStart(                    AudioQueueRef                     inAQ,
 extern OSStatus
 AudioQueuePrime(                    AudioQueueRef           inAQ,
                                     UInt32                  inNumberOfFramesToPrepare,
-                                    UInt32 * __nullable     outNumberOfFramesPrepared)  __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    UInt32 * __nullable     outNumberOfFramesPrepared)  API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueStop
@@ -1280,7 +1280,7 @@ AudioQueuePrime(                    AudioQueueRef           inAQ,
 */
 extern OSStatus
 AudioQueueStop(                     AudioQueueRef           inAQ,
-                                    Boolean                 inImmediate)            __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    Boolean                 inImmediate)            API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueuePause
@@ -1293,7 +1293,7 @@ AudioQueueStop(                     AudioQueueRef           inAQ,
     @result     An OSStatus result code.
 */
 extern OSStatus
-AudioQueuePause(                    AudioQueueRef           inAQ)       __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+AudioQueuePause(                    AudioQueueRef           inAQ)       API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueFlush
@@ -1316,7 +1316,7 @@ AudioQueuePause(                    AudioQueueRef           inAQ)       __OSX_AV
     @result     An OSStatus result code.
 */
 extern OSStatus
-AudioQueueFlush(                    AudioQueueRef           inAQ)            __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+AudioQueueFlush(                    AudioQueueRef           inAQ)            API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueReset
@@ -1339,7 +1339,7 @@ AudioQueueFlush(                    AudioQueueRef           inAQ)            __O
     @result     An OSStatus result code.
 */
 extern OSStatus
-AudioQueueReset(                    AudioQueueRef           inAQ)            __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+AudioQueueReset(                    AudioQueueRef           inAQ)            API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 #pragma mark -
 #pragma mark Parameter Management
@@ -1367,7 +1367,7 @@ AudioQueueReset(                    AudioQueueRef           inAQ)            __O
 extern OSStatus
 AudioQueueGetParameter(             AudioQueueRef               inAQ,
                                     AudioQueueParameterID       inParamID,
-                                    AudioQueueParameterValue *  outValue)       __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueParameterValue *  outValue)       API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueSetParameter
@@ -1385,7 +1385,7 @@ AudioQueueGetParameter(             AudioQueueRef               inAQ,
 extern OSStatus
 AudioQueueSetParameter(             AudioQueueRef               inAQ,
                                     AudioQueueParameterID       inParamID,
-                                    AudioQueueParameterValue    inValue)        __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueParameterValue    inValue)        API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
                                                                         
 #pragma mark -
@@ -1414,7 +1414,7 @@ extern OSStatus
 AudioQueueGetProperty(              AudioQueueRef           inAQ,
                                     AudioQueuePropertyID    inID,
                                     void *                  outData,
-                                    UInt32 *                ioDataSize)             __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    UInt32 *                ioDataSize)             API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueSetProperty
@@ -1436,7 +1436,7 @@ extern OSStatus
 AudioQueueSetProperty(              AudioQueueRef           inAQ,
                                     AudioQueuePropertyID    inID,
                                     const void *            inData,
-                                    UInt32                  inDataSize)             __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    UInt32                  inDataSize)             API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -1456,7 +1456,7 @@ AudioQueueSetProperty(              AudioQueueRef           inAQ,
 extern OSStatus
 AudioQueueGetPropertySize(          AudioQueueRef           inAQ,
                                     AudioQueuePropertyID    inID,
-                                    UInt32 *                outDataSize)            __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    UInt32 *                outDataSize)            API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueAddPropertyListener
@@ -1481,7 +1481,7 @@ extern OSStatus
 AudioQueueAddPropertyListener(      AudioQueueRef                   inAQ,
                                     AudioQueuePropertyID            inID,
                                     AudioQueuePropertyListenerProc  inProc,
-                                    void * __nullable               inUserData)     __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    void * __nullable               inUserData)     API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueRemovePropertyListener
@@ -1502,7 +1502,7 @@ extern OSStatus
 AudioQueueRemovePropertyListener(   AudioQueueRef                   inAQ,
                                     AudioQueuePropertyID            inID,
                                     AudioQueuePropertyListenerProc  inProc,
-                                    void * __nullable               inUserData)     __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    void * __nullable               inUserData)     API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
                                     
 
@@ -1527,7 +1527,7 @@ AudioQueueRemovePropertyListener(   AudioQueueRef                   inAQ,
 */
 extern OSStatus
 AudioQueueCreateTimeline(           AudioQueueRef           inAQ,
-                                    AudioQueueTimelineRef __nullable * __nonnull outTimeline)            __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueTimelineRef __nullable * __nonnull outTimeline)            API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueDisposeTimeline
@@ -1545,7 +1545,7 @@ AudioQueueCreateTimeline(           AudioQueueRef           inAQ,
 */
 extern OSStatus
 AudioQueueDisposeTimeline(          AudioQueueRef           inAQ,
-                                    AudioQueueTimelineRef   inTimeline)             __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioQueueTimelineRef   inTimeline)             API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueGetCurrentTime
@@ -1576,7 +1576,7 @@ extern OSStatus
 AudioQueueGetCurrentTime(           AudioQueueRef                    inAQ,
                                     AudioQueueTimelineRef __nullable inTimeline,
                                     AudioTimeStamp * __nullable      outTimeStamp,
-                                    Boolean * __nullable             outTimelineDiscontinuity)       __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    Boolean * __nullable             outTimelineDiscontinuity)       API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueDeviceGetCurrentTime
@@ -1596,7 +1596,7 @@ AudioQueueGetCurrentTime(           AudioQueueRef                    inAQ,
 */
 extern OSStatus
 AudioQueueDeviceGetCurrentTime(     AudioQueueRef           inAQ,
-                                    AudioTimeStamp *        outTimeStamp)      __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioTimeStamp *        outTimeStamp)      API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueDeviceTranslateTime
@@ -1629,7 +1629,7 @@ AudioQueueDeviceGetCurrentTime(     AudioQueueRef           inAQ,
 extern OSStatus
 AudioQueueDeviceTranslateTime(      AudioQueueRef           inAQ,
                                     const AudioTimeStamp *  inTime,
-                                    AudioTimeStamp *        outTime)        __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    AudioTimeStamp *        outTime)        API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueDeviceGetNearestStartTime
@@ -1647,7 +1647,7 @@ AudioQueueDeviceTranslateTime(      AudioQueueRef           inAQ,
 extern OSStatus
 AudioQueueDeviceGetNearestStartTime(AudioQueueRef           inAQ,
                                     AudioTimeStamp *        ioRequestedStartTime,
-                                    UInt32                  inFlags)        __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    UInt32                  inFlags)        API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 #pragma mark -
 #pragma mark Offline Rendering
@@ -1678,7 +1678,7 @@ extern OSStatus
 AudioQueueSetOfflineRenderFormat(   AudioQueueRef                                  inAQ,
                                     const AudioStreamBasicDescription * __nullable inFormat,
                                     const AudioChannelLayout * __nullable          inLayout)
-																		__OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+																		API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueOfflineRender
@@ -1701,7 +1701,7 @@ extern OSStatus
 AudioQueueOfflineRender(            AudioQueueRef           inAQ,
                                     const AudioTimeStamp *  inTimestamp,
                                     AudioQueueBufferRef     ioBuffer,
-                                    UInt32                  inNumberFrames)     __OSX_AVAILABLE_STARTING(__MAC_10_5,__IPHONE_2_0);
+                                    UInt32                  inNumberFrames)     API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 #pragma mark -
 #pragma mark Processing Taps
@@ -1769,7 +1769,7 @@ AudioQueueProcessingTapNew(         AudioQueueRef                   inAQ,
                                     UInt32 *                        outMaxFrames,
                                     AudioStreamBasicDescription *   outProcessingFormat,
                                     AudioQueueProcessingTapRef __nullable * __nonnull outAQTap)
-                                        __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_6_0);
+                                        API_AVAILABLE(macos(10.7), ios(6.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueProcessingTapDispose
@@ -1785,7 +1785,7 @@ AudioQueueProcessingTapNew(         AudioQueueRef                   inAQ,
 */
 extern OSStatus 
 AudioQueueProcessingTapDispose(     AudioQueueProcessingTapRef      inAQTap)
-                                        __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_6_0);
+                                        API_AVAILABLE(macos(10.7), ios(6.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueProcessingTapGetSourceAudio
@@ -1825,7 +1825,7 @@ AudioQueueProcessingTapGetSourceAudio(
                                     AudioQueueProcessingTapFlags *  outFlags,
                                     UInt32 *                        outNumberFrames,
                                     AudioBufferList *               ioData)
-                                        __OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_6_0);
+                                        API_AVAILABLE(macos(10.7), ios(6.0), watchos(2.0), tvos(9.0));
 
 /*!
     @function   AudioQueueProcessingTapGetQueueTime
@@ -1853,7 +1853,7 @@ extern OSStatus
 AudioQueueProcessingTapGetQueueTime(    AudioQueueProcessingTapRef  inAQTap,
                                         Float64 *                   outQueueSampleTime,
                                         UInt32 *                    outQueueFrameCount)
-                                        __OSX_AVAILABLE_STARTING(__MAC_10_8,__IPHONE_6_0);
+                                        API_AVAILABLE(macos(10.8), ios(6.0), watchos(2.0), tvos(9.0));
 
 #ifdef __cplusplus
 }

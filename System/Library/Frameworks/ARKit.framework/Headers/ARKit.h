@@ -19,12 +19,16 @@
 #import <ARKit/ARLightEstimate.h>
 #import <ARKit/ARPointCloud.h>
 #import <ARKit/ARReferenceImage.h>
+#import <ARKit/ARReferenceObject.h>
 #import <ARKit/ARVideoFormat.h>
+#import <ARKit/ARWorldMap.h>
 
 #import <ARKit/ARAnchor.h>
+#import <ARKit/AREnvironmentProbeAnchor.h>
 #import <ARKit/ARFaceAnchor.h>
 #import <ARKit/ARFaceGeometry.h>
 #import <ARKit/ARImageAnchor.h>
+#import <ARKit/ARObjectAnchor.h>
 #import <ARKit/ARPlaneAnchor.h>
 #import <ARKit/ARPlaneGeometry.h>
 

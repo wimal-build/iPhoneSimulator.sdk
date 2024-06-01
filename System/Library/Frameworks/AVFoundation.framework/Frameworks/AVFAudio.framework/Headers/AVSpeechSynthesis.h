@@ -6,8 +6,12 @@
  Copyright 2013-2015 Apple Inc. All rights reserved.
  */
 
+#if !0
+
 #import <AVFoundation/AVBase.h>
 #import <Foundation/Foundation.h>
+
+#ifdef __OBJC2__
 
 @class AVAudioSessionChannelDescription;
 
@@ -16,23 +20,23 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, AVSpeechBoundary) {
     AVSpeechBoundaryImmediate,
     AVSpeechBoundaryWord
-} NS_ENUM_AVAILABLE_IOS(7_0);
+} NS_ENUM_AVAILABLE(10_14, 7_0);
 
 typedef NS_ENUM(NSInteger, AVSpeechSynthesisVoiceQuality) {
     AVSpeechSynthesisVoiceQualityDefault = 1,
     AVSpeechSynthesisVoiceQualityEnhanced
-} NS_ENUM_AVAILABLE_IOS(9_0);
+} NS_ENUM_AVAILABLE(10_14, 9_0);
 
-AVF_EXPORT const float AVSpeechUtteranceMinimumSpeechRate NS_AVAILABLE_IOS(7_0);
-AVF_EXPORT const float AVSpeechUtteranceMaximumSpeechRate NS_AVAILABLE_IOS(7_0);
-AVF_EXPORT const float AVSpeechUtteranceDefaultSpeechRate NS_AVAILABLE_IOS(7_0);
+AVF_EXPORT const float AVSpeechUtteranceMinimumSpeechRate API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
+AVF_EXPORT const float AVSpeechUtteranceMaximumSpeechRate API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
+AVF_EXPORT const float AVSpeechUtteranceDefaultSpeechRate API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
 
 // Use the Alex identifier with voiceWithIdentifier:. If the voice is present on the system,
 // an AVSpeechSynthesisVoice will be returned. Alex is en-US only.
-AVF_EXPORT NSString *const AVSpeechSynthesisVoiceIdentifierAlex NS_AVAILABLE_IOS(9_0);
+AVF_EXPORT NSString *const AVSpeechSynthesisVoiceIdentifierAlex API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0), macos(10.14));
 
 //NSString, containing International Phonetic Alphabet (IPA) symbols. Controls pronunciation of a certain word or phrase, e.g. a proper name.
-AVF_EXPORT NSString *const AVSpeechSynthesisIPANotationAttribute API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
+AVF_EXPORT NSString *const AVSpeechSynthesisIPANotationAttribute API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0), macos(10.14));
 
 @protocol AVSpeechSynthesizerDelegate;
 
@@ -45,7 +49,7 @@ AVF_EXPORT NSString *const AVSpeechSynthesisIPANotationAttribute API_AVAILABLE(i
  Retrieve a voice by specifying the language code your text should be spoken in, or by using voiceWithIdentifier
  for a known voice identifier.
  */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_14, 7_0)
 @interface AVSpeechSynthesisVoice : NSObject<NSSecureCoding>
 
 + (NSArray<AVSpeechSynthesisVoice *> *)speechVoices;
@@ -74,12 +78,12 @@ NS_CLASS_AVAILABLE_IOS(7_0)
  Passing in an invalid identifier will return nil.
  Returns nil if the identifier is valid, but the voice is not available on device (i.e. not yet downloaded by the user).
  */
-+ (nullable AVSpeechSynthesisVoice *)voiceWithIdentifier:(NSString *)identifier NS_AVAILABLE_IOS(9_0);
++ (nullable AVSpeechSynthesisVoice *)voiceWithIdentifier:(NSString *)identifier API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0), macos(10.14));
 
 @property(nonatomic, readonly) NSString *language;
-@property(nonatomic, readonly) NSString *identifier NS_AVAILABLE_IOS(9_0);
-@property(nonatomic, readonly) NSString *name NS_AVAILABLE_IOS(9_0);
-@property(nonatomic, readonly) AVSpeechSynthesisVoiceQuality quality NS_AVAILABLE_IOS(9_0);
+@property(nonatomic, readonly) NSString *identifier API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0), macos(10.14));
+@property(nonatomic, readonly) NSString *name API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0), macos(10.14));
+@property(nonatomic, readonly) AVSpeechSynthesisVoiceQuality quality API_AVAILABLE(ios(9.0), watchos(2.0), tvos(9.0), macos(10.14));
 
 @end
 
@@ -91,20 +95,20 @@ NS_CLASS_AVAILABLE_IOS(7_0)
  @discussion
  To start speaking, specify the AVSpeechSynthesisVoice and the string to be spoken, then optionally change the rate, pitch or volume if desired.
  */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_14, 7_0)
 @interface AVSpeechUtterance : NSObject<NSCopying, NSSecureCoding>
 
 + (instancetype)speechUtteranceWithString:(NSString *)string;
-+ (instancetype)speechUtteranceWithAttributedString:(NSAttributedString *)string API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
++ (instancetype)speechUtteranceWithAttributedString:(NSAttributedString *)string API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0), macos(10.14));
 
 - (instancetype)initWithString:(NSString *)string;
-- (instancetype)initWithAttributedString:(NSAttributedString *)string API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
+- (instancetype)initWithAttributedString:(NSAttributedString *)string API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0), macos(10.14));
 
 /* If no voice is specified, the system's default will be used. */
 @property(nonatomic, retain, nullable) AVSpeechSynthesisVoice *voice;
 
 @property(nonatomic, readonly) NSString *speechString;
-@property(nonatomic, readonly) NSAttributedString *attributedSpeechString API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
+@property(nonatomic, readonly) NSAttributedString *attributedSpeechString API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0), macos(10.14));
 
 /* Setting these values after a speech utterance has been enqueued will have no effect. */
 
@@ -126,7 +130,7 @@ NS_CLASS_AVAILABLE_IOS(7_0)
  @discussion
  Create an instance of AVSpeechSynthesizer to start generating synthesized speech by using AVSpeechUtterance objects.
  */
-NS_CLASS_AVAILABLE_IOS(7_0)
+NS_CLASS_AVAILABLE(10_14, 7_0)
 @interface AVSpeechSynthesizer : NSObject
 
 @property(nonatomic, weak, nullable) id<AVSpeechSynthesizerDelegate> delegate;
@@ -148,7 +152,7 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 // Specify the audio channels to be used for synthesized speech as described by the channel descriptions in AVAudioSession's current route.
 // Speech audio will be replicated to each specified channel.
 // Default is nil, which implies system defaults.
-@property(nonatomic, retain, nullable) NSArray<AVAudioSessionChannelDescription *> *outputChannels API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0));
+@property(nonatomic, retain, nullable) NSArray<AVAudioSessionChannelDescription *> *outputChannels API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0), macos(10.14));
 
 @end
 
@@ -160,14 +164,17 @@ NS_CLASS_AVAILABLE_IOS(7_0)
 @protocol AVSpeechSynthesizerDelegate <NSObject>
 
 @optional
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance;
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance;
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didPauseSpeechUtterance:(AVSpeechUtterance *)utterance;
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didContinueSpeechUtterance:(AVSpeechUtterance *)utterance;
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *)utterance;
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didPauseSpeechUtterance:(AVSpeechUtterance *)utterance API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didContinueSpeechUtterance:(AVSpeechUtterance *)utterance API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *)utterance API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
 
-- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance;
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance API_AVAILABLE(ios(7.0), watchos(1.0), tvos(7.0), macos(10.14));
 @end
 
 NS_ASSUME_NONNULL_END
 
+#endif // __OBJC2__
+
+#endif // !TARGET_OS_BRIDGE

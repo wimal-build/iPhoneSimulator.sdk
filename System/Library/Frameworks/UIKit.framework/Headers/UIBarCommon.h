@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIBarCommon.h>)
 //
 //  UIBarCommon.h
 //  UIKit
 //
-//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -46,3 +47,7 @@ typedef NS_ENUM(NSInteger, UIBarPosition) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIBarCommon.h>
+#endif

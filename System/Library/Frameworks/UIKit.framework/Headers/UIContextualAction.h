@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIContextualAction.h>)
 //
 //  UIContextualAction.h
 //  UIKit
 //
-//  Copyright © 2017 Apple Inc. All rights reserved.
+//  Copyright © 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,9 +32,13 @@ UIKIT_EXTERN API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos)
 @property (nonatomic, copy, readonly) UIContextualActionHandler handler;
 
 @property (nonatomic, copy, nullable) NSString *title;
-@property (nonatomic, copy, nullable) UIColor *backgroundColor; // a default background color is set from the action style
+@property (nonatomic, copy, null_resettable) UIColor *backgroundColor; // a default background color is set from the action style
 @property (nonatomic, copy, nullable) UIImage *image;
 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIContextualAction.h>
+#endif

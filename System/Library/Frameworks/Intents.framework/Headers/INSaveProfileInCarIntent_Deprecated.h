@@ -5,8 +5,6 @@
 //  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
 //
 
-#if (defined(TARGET_OS_WATCH) && !TARGET_OS_WATCH)
-
 #import <Intents/INSaveProfileInCarIntent.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,5 +19,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  A light estimate representing the light in the scene.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARLightEstimate : NSObject
 
 /**
@@ -41,7 +41,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  A directional light estimate representing the light intensity and direction in the scene.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARDirectionalLightEstimate : ARLightEstimate
 
 /**
@@ -55,7 +55,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  The primary direction of light.
  */
-@property (nonatomic, readonly) vector_float3 primaryLightDirection;
+@property (nonatomic, readonly) simd_float3 primaryLightDirection;
 
 /**
  The intensity of light in the primary direction.

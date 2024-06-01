@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityElement.h>)
 //
 //  UIAccessibilityElement.h
 //  UIAccessibility
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -40,3 +41,7 @@ NS_CLASS_AVAILABLE_IOS(3_0) @interface UIAccessibilityElement : NSObject<UIAcces
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIAccessibilityElement.h>
+#endif

@@ -5,9 +5,10 @@
 //  Copyright 2008 Apple, Inc. All rights reserved.
 //
 
+#import <MediaPlayer/MediaPlayerDefines.h>
+#if MP_HAS_UIVIEW
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <MediaPlayer/MediaPlayerDefines.h>
 #import <MediaPlayer/MPMediaItem.h>
 #import <MediaPlayer/MPMediaItemCollection.h>
 
@@ -18,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 // MPMediaPickerController is a UIViewController for visually selecting media items.
 // To display it, present it modally on an existing view controller.
 MP_API(ios(3.0))
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @interface MPMediaPickerController : UIViewController
 
 - (instancetype)initWithMediaTypes:(MPMediaType)mediaTypes NS_DESIGNATED_INITIALIZER;
@@ -36,7 +37,7 @@ MP_PROHIBITED(tvos)
 
 @end
 
-MP_PROHIBITED(tvos)
+MP_PROHIBITED(tvos, watchos)
 @protocol MPMediaPickerControllerDelegate<NSObject>
 @optional
 
@@ -46,5 +47,5 @@ MP_PROHIBITED(tvos)
 - (void)mediaPickerDidCancel:(MPMediaPickerController *)mediaPicker;
 
 @end
-
 NS_ASSUME_NONNULL_END
+#endif

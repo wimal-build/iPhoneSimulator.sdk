@@ -20,6 +20,10 @@
  * 
  * @APPLE_LICENSE_HEADER_END@
  */
+
+#ifndef _MACHO_ARM64_RELOC_H_
+#define _MACHO_ARM64_RELOC_H_
+
 /*
  * Relocation types used in the arm64 implementation.
  */
@@ -39,3 +43,6 @@ enum reloc_type_arm64
                                      //  scaled by r_length
     ARM64_RELOC_ADDEND 		  // must be followed by PAGE21 or PAGEOFF12
 };
+
+#endif /* #ifndef _MACHO_ARM64_RELOC_H_ */
+

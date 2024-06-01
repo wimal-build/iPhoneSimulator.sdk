@@ -1,14 +1,14 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSAttributedString.h>)
 //
 //  NSAttributedString.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSAttributedString.h>
 #import <Foundation/NSItemProvider.h>
 #import <UIKit/UIKitDefines.h>
-
 @class NSAttributedString;
 @class NSFileWrapper;
 @class NSURL;
@@ -45,20 +45,21 @@ UIKIT_EXTERN NSAttributedStringKey const NSVerticalGlyphFormAttributeName NS_AVA
 
 
 /************************ Attribute values ************************/
-// This defines currently supported values for NSUnderlineStyleAttributeName and NSStrikethroughStyleAttributeName. NSUnderlineStyle*, NSUnderlinePattern*, and NSUnderlineByWord are or'ed together to produce an underline style.
-typedef NS_ENUM(NSInteger, NSUnderlineStyle) {
+// This defines currently supported values for NSUnderlineStyleAttributeName and NSStrikethroughStyleAttributeName. These values are or'ed together to produce an underline style.
+// Underlines will be drawn with a solid pattern by default, so NSUnderlineStylePatternSolid does not need to be specified.
+typedef NS_OPTIONS(NSInteger, NSUnderlineStyle) {
     NSUnderlineStyleNone                                    = 0x00,
     NSUnderlineStyleSingle                                  = 0x01,
     NSUnderlineStyleThick NS_ENUM_AVAILABLE(10_0, 7_0)      = 0x02,
     NSUnderlineStyleDouble NS_ENUM_AVAILABLE(10_0, 7_0)     = 0x09,
 
-    NSUnderlinePatternSolid NS_ENUM_AVAILABLE(10_0, 7_0)      = 0x0000,
-    NSUnderlinePatternDot NS_ENUM_AVAILABLE(10_0, 7_0)        = 0x0100,
-    NSUnderlinePatternDash NS_ENUM_AVAILABLE(10_0, 7_0)       = 0x0200,
-    NSUnderlinePatternDashDot NS_ENUM_AVAILABLE(10_0, 7_0)    = 0x0300,
-    NSUnderlinePatternDashDotDot NS_ENUM_AVAILABLE(10_0, 7_0) = 0x0400,
+    NSUnderlineStylePatternSolid NS_ENUM_AVAILABLE(10_0, 7_0)      = 0x0000,
+    NSUnderlineStylePatternDot NS_ENUM_AVAILABLE(10_0, 7_0)        = 0x0100,
+    NSUnderlineStylePatternDash NS_ENUM_AVAILABLE(10_0, 7_0)       = 0x0200,
+    NSUnderlineStylePatternDashDot NS_ENUM_AVAILABLE(10_0, 7_0)    = 0x0300,
+    NSUnderlineStylePatternDashDotDot NS_ENUM_AVAILABLE(10_0, 7_0) = 0x0400,
 
-    NSUnderlineByWord NS_ENUM_AVAILABLE(10_0, 7_0)            = 0x8000
+    NSUnderlineStyleByWord NS_ENUM_AVAILABLE(10_0, 7_0)            = 0x8000
 } NS_ENUM_AVAILABLE(10_0, 6_0);
 
 // NSWritingDirectionFormatType values used by NSWritingDirectionAttributeName. It is or'ed with either NSWritingDirectionLeftToRight or NSWritingDirectionRightToLeft. Can specify the formatting controls defined by Unicode Bidirectional Algorithm.
@@ -68,7 +69,7 @@ typedef NS_ENUM(NSInteger, NSWritingDirectionFormatType) {
 } NS_ENUM_AVAILABLE(10_11, 9_0);
 
 // NSTextEffectAttributeName values
-typedef NSString * NSTextEffectStyle NS_STRING_ENUM;
+typedef NSString * NSTextEffectStyle NS_TYPED_ENUM;
 UIKIT_EXTERN NSTextEffectStyle const NSTextEffectLetterpressStyle NS_AVAILABLE(10_10, 7_0);
 
 
@@ -83,7 +84,7 @@ UIKIT_EXTERN NSTextEffectStyle const NSTextEffectLetterpressStyle NS_AVAILABLE(1
 
 /************************ Document formats ************************/
 
-typedef NSString * NSAttributedStringDocumentType NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * NSAttributedStringDocumentType NS_TYPED_EXTENSIBLE_ENUM;
 
 // Supported document types for the NSDocumentTypeDocumentAttribute key in the document attributes dictionary.
 UIKIT_EXTERN NSAttributedStringDocumentType const NSPlainTextDocumentType NS_AVAILABLE(10_0, 7_0);
@@ -91,13 +92,13 @@ UIKIT_EXTERN NSAttributedStringDocumentType const NSRTFTextDocumentType  NS_AVAI
 UIKIT_EXTERN NSAttributedStringDocumentType const NSRTFDTextDocumentType NS_AVAILABLE(10_0, 7_0);
 UIKIT_EXTERN NSAttributedStringDocumentType const NSHTMLTextDocumentType  NS_AVAILABLE(10_0, 7_0);
 
-typedef NSString * NSTextLayoutSectionKey NS_STRING_ENUM;
+typedef NSString * NSTextLayoutSectionKey NS_TYPED_ENUM;
 
 // Keys for NSLayoutOrientationSectionsAttribute.
 UIKIT_EXTERN NSTextLayoutSectionKey const NSTextLayoutSectionOrientation NS_AVAILABLE(10_7, 7_0); // NSNumber containing NSTextLayoutOrientation value. default: NSTextLayoutOrientationHorizontal
 UIKIT_EXTERN NSTextLayoutSectionKey const NSTextLayoutSectionRange NS_AVAILABLE(10_7, 7_0); // NSValue containing NSRange representing a character range. default: a range covering the whole document
 
-typedef NSString * NSAttributedStringDocumentAttributeKey NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * NSAttributedStringDocumentAttributeKey NS_TYPED_EXTENSIBLE_ENUM;
 
 // Keys for options and document attributes dictionaries.  They are in and out document properties used by both read/write methods.
 
@@ -128,7 +129,7 @@ UIKIT_EXTERN NSAttributedStringDocumentAttributeKey const NSDefaultTabIntervalDo
 UIKIT_EXTERN NSAttributedStringDocumentAttributeKey const NSTextLayoutSectionsAttribute NS_AVAILABLE(10_7, 7_0);  // NSArray of dictionaries.  Each dictionary describing a layout orientation section.  The dictionary can have two attributes: NSTextLayoutSectionOrientation and NSTextLayoutSectionRange.  When there is a gap between sections, it's assumed to have NSTextLayoutOrientationHorizontal.
 
 
-typedef NSString * NSAttributedStringDocumentReadingOptionKey NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * NSAttributedStringDocumentReadingOptionKey NS_TYPED_EXTENSIBLE_ENUM;
 
 UIKIT_EXTERN NSAttributedStringDocumentReadingOptionKey const NSDocumentTypeDocumentOption;  // @"DocumentType", NSString indicating a document type to be forced when loading the document, specified as one of the NSDocumentTypeDocumentAttribute constants listed above
 UIKIT_EXTERN NSAttributedStringDocumentReadingOptionKey const NSDefaultAttributesDocumentOption;  // @"DefaultAttributes", for plain text only; NSDictionary containing attributes to be applied to plain files
@@ -162,12 +163,20 @@ UIKIT_EXTERN NSAttributedStringDocumentReadingOptionKey const NSCharacterEncodin
 - (BOOL)containsAttachmentsInRange:(NSRange)range NS_AVAILABLE(10_11, 9_0);
 @end
 
-
-@interface NSAttributedString (UINSItemProvider) <NSItemProviderReading, NSItemProviderWriting>
-
+@interface NSAttributedString (NSAttributedString_ItemProvider) <NSItemProviderReading, NSItemProviderWriting>
 @end
 
+
 /************************ Deprecated ************************/
+// NSUnderlineByWord and the NSUnderlinePattern* values are soft deprecated starting with macOS 10.14/iOS 12 and will be officially deprecated in a future release.  Please use the NSUnderlineStyle* equivalents instead.
+// Underlines will be drawn with a solid pattern by default, so NSUnderlinePatternSolid does not need to be specified.
+static const NSUnderlineStyle NSUnderlinePatternSolid = NSUnderlineStylePatternSolid;
+static const NSUnderlineStyle NSUnderlinePatternDot = NSUnderlineStylePatternDot;
+static const NSUnderlineStyle NSUnderlinePatternDash = NSUnderlineStylePatternDash;
+static const NSUnderlineStyle NSUnderlinePatternDashDot = NSUnderlineStylePatternDashDot;
+static const NSUnderlineStyle NSUnderlinePatternDashDotDot = NSUnderlineStylePatternDashDotDot;
+static const NSUnderlineStyle NSUnderlineByWord = NSUnderlineStyleByWord;
+
 
 typedef NS_ENUM(NSInteger, NSTextWritingDirection) {
     NSTextWritingDirectionEmbedding     = (0 << 1),
@@ -182,3 +191,7 @@ typedef NS_ENUM(NSInteger, NSTextWritingDirection) {
 - (BOOL)readFromFileURL:(NSURL *)url options:(NSDictionary *)opts documentAttributes:(NSDictionary* __nullable * __nullable)dict error:(NSError **)error NS_DEPRECATED_IOS(7_0, 9_0, "Use -readFromURL:options:documentAttributes:error: instead") __TVOS_PROHIBITED;
 @end
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSAttributedString.h>
+#endif

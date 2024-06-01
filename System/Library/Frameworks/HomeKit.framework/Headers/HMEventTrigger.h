@@ -1,11 +1,12 @@
 //
-// HMEventTrigger.h
-// HomeKit
+//  HMEventTrigger.h
+//  HomeKit
 //
-// Copyright (c) 2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2015 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMTrigger.h>
 #import <HomeKit/HMEventTriggerActivationState.h>
 #import <HomeKit/HMSignificantTimeEvent.h>
@@ -25,17 +26,17 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @brief Specifies the key path for a characteristic in a NSPredicate
  */
-HM_EXTERN NSString * const HMCharacteristicKeyPath NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMCharacteristicKeyPath API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Specifies the key path for a characteristic value in a NSPredicate
  */
-HM_EXTERN NSString * const HMCharacteristicValueKeyPath NS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+HM_EXTERN NSString * const HMCharacteristicValueKeyPath API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief Specifies the key path for a presence event in a NSPredicate
  */
-HM_EXTERN NSString * const HMPresenceKeyPath API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
+HM_EXTERN NSString * const HMPresenceKeyPath API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -43,7 +44,7 @@ HM_EXTERN NSString * const HMPresenceKeyPath API_AVAILABLE(ios(11.0), watchos(4.
  *
  * @discussion This class represents a trigger that is based on events.
  */
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMEventTrigger : HMTrigger
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -63,7 +64,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  */
 - (instancetype)initWithName:(NSString *)name
                       events:(NSArray<HMEvent *> *)events
-                   predicate:(nullable NSPredicate *)predicate __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+                   predicate:(nullable NSPredicate *)predicate API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Initializes a new event trigger object.
@@ -87,7 +88,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
                       events:(NSArray<HMEvent *> *)events
                    endEvents:(nullable NSArray<HMEvent *> *)endEvents
                  recurrences:(nullable NSArray<NSDateComponents *> *)recurrences
-                   predicate:(nullable NSPredicate *)predicate API_AVAILABLE(ios(11.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+                   predicate:(nullable NSPredicate *)predicate API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief The events associated with the trigger.
@@ -132,7 +133,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)addEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion API_DEPRECATED("Use updateEvents:completionHandler: instead", ios(9.0, 11.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)addEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion API_DEPRECATED("Use updateEvents:completionHandler: instead", ios(9.0, 11.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Removes the specified event from the event trigger.
@@ -143,7 +144,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)removeEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion API_DEPRECATED("Use updateEvents:completionHandler: instead", ios(9.0, 11.0))  __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)removeEvent:(HMEvent *)event completionHandler:(void (^)(NSError * __nullable error))completion API_DEPRECATED("Use updateEvents:completionHandler: instead", ios(9.0, 11.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Updates the set of events in the event trigger.
@@ -154,7 +155,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateEvents:(NSArray<HMEvent *> *)events completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateEvents:(NSArray<HMEvent *> *)events completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Updates the set of events in the event trigger.
@@ -165,7 +166,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateEndEvents:(NSArray<HMEvent *> *)endEvents completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateEndEvents:(NSArray<HMEvent *> *)endEvents completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method replaces the predicate used to evaluate execution of the action sets associated with the trigger.
@@ -176,7 +177,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request,
  *                   error will be nil on success. 
  */
-- (void)updatePredicate:(nullable NSPredicate *)predicate completionHandler:(void (^)(NSError * __nullable error))completion __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updatePredicate:(nullable NSPredicate *)predicate completionHandler:(void (^)(NSError * __nullable error))completion API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method replaces the recurrences which secifies the days of the week when the trigger is to be evaluated.
@@ -187,7 +188,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request,
  *                   error will be nil on success.
  */
-- (void)updateRecurrences:(nullable NSArray<NSDateComponents *> *)recurrences completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateRecurrences:(nullable NSArray<NSDateComponents *> *)recurrences completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief This method is used to update whether the event trigger repeats or not.
@@ -198,7 +199,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateExecuteOnce:(BOOL)executeOnce completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateExecuteOnce:(BOOL)executeOnce completionHandler:(void (^)(NSError * __nullable error))completion API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 @end
 

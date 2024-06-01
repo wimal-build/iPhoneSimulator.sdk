@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGestureRecognizerSubclass.h>)
 //
 //  UIGestureRecognizerSubclass.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIGestureRecognizer.h>
@@ -58,3 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIGestureRecognizerSubclass.h>
+#endif

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIDevice.h>)
 //
 //  UIDevice.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -41,6 +42,14 @@ static inline BOOL UIDeviceOrientationIsPortrait(UIDeviceOrientation orientation
 
 static inline BOOL UIDeviceOrientationIsLandscape(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
     return ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
+}
+
+static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsFlat(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+    return ((orientation) == UIDeviceOrientationFaceUp || (orientation) == UIDeviceOrientationFaceDown);
+}
+
+static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsValidInterfaceOrientation(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+    return ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown || (orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
 }
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject 
@@ -100,3 +109,7 @@ UIKIT_EXTERN NSNotificationName const UIDeviceBatteryLevelDidChangeNotification 
 UIKIT_EXTERN NSNotificationName const UIDeviceProximityStateDidChangeNotification NS_AVAILABLE_IOS(3_0);
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIDevice.h>
+#endif

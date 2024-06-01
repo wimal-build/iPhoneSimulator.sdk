@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: 2B60B11A-E82A-3086-BB8F-FE458563895A' ]
+uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: D03F372D-A80A-33EF-A051-D8A84BCFB0C5' ]
 platform:        ios
 install-name:    /usr/lib/libmecabra.dylib
-current-version: 779.7.5
+current-version: 779.15.23
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -50,10 +50,10 @@ exports:
                        _MecabraContextSetGeometryModel, _MecabraContextSetOption, 
                        _MecabraContextSetRightContextFromString, _MecabraContextSetShuangpinType, 
                        _MecabraContextSetTextContentType, _MecabraConversionCandidateCreate, 
-                       _MecabraCopyEmojiCharacterArrayForString, _MecabraCopyLearningDictionaryNames, 
-                       _MecabraCreate, _MecabraCreateASCIIFromInputKeyString, _MecabraCreateASCIIStringFromCangjie, 
-                       _MecabraCreateASCIIStringFromWubixing, _MecabraCreateAlternateWordArrayForWordAtIndex, 
-                       _MecabraCreateArrayWithContentOfLegacyPhraseLearningDictionary, 
+                       _MecabraCopyEmojiCharacterArrayForString, _MecabraCopyEmojiCharacterArrayForStringWithReading, 
+                       _MecabraCopyLearningDictionaryNames, _MecabraCreate, _MecabraCreateASCIIFromInputKeyString, 
+                       _MecabraCreateASCIIStringFromCangjie, _MecabraCreateASCIIStringFromWubixing, 
+                       _MecabraCreateAlternateWordArrayForWordAtIndex, _MecabraCreateArrayWithContentOfLegacyPhraseLearningDictionary, 
                        _MecabraCreateArrayWithContentOfPhraseLearningDictionary, 
                        _MecabraCreateCandidateFromContextString, _MecabraCreateCangjieStringFromASCII, 
                        _MecabraCreateCustomDebugInfo, _MecabraCreateFacemarkCandidates, 
@@ -91,9 +91,19 @@ exports:
                        _MecabraWordPropertiesGetProperty, _MecabraWordPropertiesGetSortedRadicalList, 
                        _MecabraWordPropertiesRelease, _MecabraWorkingSetAddString, 
                        _MecabraWorkingSetContainsString, _ReadingLookupDictionaryBuild, 
-                       _ReverseDictionaryBuild, _SeaweedChineseDictionaryBuild, _kMecabraAssetDataFilePathsKey, 
-                       _kMecabraAssetDataRegionIdentifierKey, _kMecabraCandidateAttributeIsEndingWithPunctuation, 
-                       _kMecabraContextOptionHistorySimulation, _kMecabraContextOptionSuppressSensitiveWords, 
+                       _ReverseDictionaryBuild, _SeaweedChineseDictionaryBuild, _kFacemarkCategoryAngry, 
+                       _kFacemarkCategoryAnimal, _kFacemarkCategoryCrying, _kFacemarkCategoryDecorative, 
+                       _kFacemarkCategoryGreeting, _kFacemarkCategoryHappy, _kFacemarkCategoryIdeographic, 
+                       _kFacemarkCategoryMotion, _kFacemarkCategoryOthers, _kFacemarkCategoryRecentlyUsed, 
+                       _kFacemarkCategoryRelaxed, _kFacemarkCategoryTroubled, _kMecabraAnalysisStringForFacemark, 
+                       _kMecabraAssetDataFilePathsKey, _kMecabraAssetDataRegionIdentifierKey, 
+                       _kMecabraCandidateAttributeIsEndingWithPunctuation, _kMecabraContextOptionHistorySimulation, 
+                       _kMecabraContextOptionSuppressSensitiveWords, _kMecabraCreationCustomAdditionalDictionaryDirectoriesKey, 
+                       _kMecabraCreationCustomDynamicLanguageModelDirectoryKey, _kMecabraCreationCustomLearningDictionaryDirectoryKey, 
+                       _kMecabraCreationCustomStaticLanguageModelBundleKey, _kMecabraCreationCustomSystemDictionaryDirectoryKey, 
+                       _kMecabraCreationDynamicLanguageModelEnabledKey, _kMecabraCreationInputMethodTypeKey, 
+                       _kMecabraCreationLearningEnabledKey, _kMecabraCreationLiteModeKey, 
+                       _kMecabraCreationSyncLearningDataKey, _kMecabraCreationUseSpecialSymbolKey, 
                        _kMecabraTraditionalChineseArchitectureDictionary, _kMecabraTraditionalChineseBiologyDictionary, 
                        _kMecabraTraditionalChineseBuddhismDictionary, _kMecabraTraditionalChineseChineseMedicineDictionary, 
                        _kMecabraTraditionalChineseCommerceDictionary, _kMecabraTraditionalChineseCommunicationsDictionary, 

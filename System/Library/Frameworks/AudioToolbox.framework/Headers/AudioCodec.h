@@ -799,6 +799,7 @@ CF_ENUM(UInt32)
 	@constant		kAudioCodecUnsupportedFormatError
 	@constant		kAudioCodecStateError
 	@constant		kAudioCodecNotEnoughBufferSpaceError
+	@constant		kAudioCodecBadDataError
 */
 CF_ENUM(OSStatus)
 {
@@ -809,7 +810,8 @@ CF_ENUM(OSStatus)
 	kAudioCodecIllegalOperationError				= 'nope',
 	kAudioCodecUnsupportedFormatError				= '!dat',
 	kAudioCodecStateError							= '!stt',
-	kAudioCodecNotEnoughBufferSpaceError			= '!buf'
+	kAudioCodecNotEnoughBufferSpaceError			= '!buf',
+	kAudioCodecBadDataError							= 'bada'
 };
 
 
@@ -841,7 +843,7 @@ extern OSStatus
 AudioCodecGetPropertyInfo(	AudioCodec				inCodec,
 							AudioCodecPropertyID	inPropertyID,
 							UInt32* __nullable		outSize,
-							Boolean* __nullable		outWritable)		__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+							Boolean* __nullable		outWritable)		API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -866,7 +868,7 @@ extern OSStatus
 AudioCodecGetProperty(	AudioCodec				inCodec,
 						AudioCodecPropertyID	inPropertyID,
 						UInt32*					ioPropertyDataSize,
-						void*					outPropertyData)		__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+						void*					outPropertyData)		API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -889,7 +891,7 @@ extern OSStatus
 AudioCodecSetProperty(	AudioCodec				inCodec,
 						AudioCodecPropertyID	inPropertyID,
 						UInt32					inPropertyDataSize,
-						const void*				inPropertyData)			__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+						const void*				inPropertyData)			API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 //=============================================================================
@@ -924,7 +926,7 @@ AudioCodecInitialize(	AudioCodec										inCodec,
 						const AudioStreamBasicDescription* __nullable	inOutputFormat,
 						const void*	__nullable							inMagicCookie,
 						UInt32											inMagicCookieByteSize)
-																		__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+																		API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -940,7 +942,7 @@ AudioCodecInitialize(	AudioCodec										inCodec,
 	@result			The OSStatus value
 */
 extern OSStatus
-AudioCodecUninitialize(AudioCodec inCodec)								__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+AudioCodecUninitialize(AudioCodec inCodec)								API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -977,7 +979,7 @@ AudioCodecAppendInputData(	AudioCodec										inCodec,
 							UInt32*											ioInputDataByteSize,
 							UInt32*											ioNumberPackets,
 							const AudioStreamPacketDescription*	__nullable	inPacketDescription)
-																		__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+																		API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 
 /*!
@@ -1016,7 +1018,7 @@ AudioCodecProduceOutputPackets(	AudioCodec									inCodec,
 								UInt32*										ioNumberPackets,
 								AudioStreamPacketDescription* __nullable	outPacketDescription,
 								UInt32*										outStatus)
-																		__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+																		API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 extern OSStatus
 AudioCodecAppendInputBufferList(	AudioCodec							inCodec,
@@ -1024,7 +1026,7 @@ AudioCodecAppendInputBufferList(	AudioCodec							inCodec,
 									UInt32*								ioNumberPackets,
 									const AudioStreamPacketDescription*	__nullable	inPacketDescription,
 									UInt32*								outBytesConsumed)
-																		__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+																		API_AVAILABLE(macos(10.7), ios(4.0), watchos(2.0), tvos(9.0));
 
 extern OSStatus
 AudioCodecProduceOutputBufferList(	AudioCodec									inCodec,
@@ -1032,7 +1034,7 @@ AudioCodecProduceOutputBufferList(	AudioCodec									inCodec,
 									UInt32*										ioNumberPackets,
 									AudioStreamPacketDescription* __nullable	outPacketDescription,
 									UInt32*										outStatus)
-																		__OSX_AVAILABLE_STARTING(__MAC_10_7,__IPHONE_4_0);
+																		API_AVAILABLE(macos(10.7), ios(4.0), watchos(2.0), tvos(9.0));
 
 /*!
 	@function		AudioCodecReset
@@ -1046,7 +1048,7 @@ AudioCodecProduceOutputBufferList(	AudioCodec									inCodec,
 	@result			the OSStatus value
 */
 extern OSStatus
-AudioCodecReset(AudioCodec inCodec)										__OSX_AVAILABLE_STARTING(__MAC_10_2,__IPHONE_2_0);
+AudioCodecReset(AudioCodec inCodec)										API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0));
 
 //=====================================================================================================================
 typedef OSStatus

@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class CXAction;
+@class CXCallAction;
 @class CXCallUpdate;
 @class CXProvider;
 @class CXProviderConfiguration;

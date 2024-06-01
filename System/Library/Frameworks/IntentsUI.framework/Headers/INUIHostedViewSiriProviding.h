@@ -5,8 +5,12 @@
 //  Copyright (c) 2016 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
+API_AVAILABLE(ios(10.0))
+API_UNAVAILABLE(macosx, watchos, tvos)
 @protocol INUIHostedViewSiriProviding <NSObject>
 
 @optional

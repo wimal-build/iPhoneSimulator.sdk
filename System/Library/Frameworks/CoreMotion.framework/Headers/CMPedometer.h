@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  *      object contains a step count. On supported platforms it also contains
  *      distance, flights of stairs, pace, and cadence.
  */
-NS_CLASS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 8_0) API_UNAVAILABLE(tvos)
 @interface CMPedometerData : NSObject <NSSecureCoding, NSCopying>
 
 /*
@@ -141,7 +141,7 @@ NS_CLASS_AVAILABLE(NA, 8_0) __TVOS_PROHIBITED
 typedef NS_ENUM(NSInteger, CMPedometerEventType) {
 	CMPedometerEventTypePause,
 	CMPedometerEventTypeResume
-} NS_ENUM_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED;
+} NS_ENUM_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos);
 
 /*
  *  CMPedometerEvent
@@ -149,7 +149,7 @@ typedef NS_ENUM(NSInteger, CMPedometerEventType) {
  *  Discussion:
  *      An event marking the change in user's pedestrian activity.
  */
-NS_CLASS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos)
 @interface CMPedometerEvent : NSObject <NSSecureCoding, NSCopying>
 
 /*
@@ -177,7 +177,7 @@ NS_CLASS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED
  *      Typedef of block to be invoked when pedometer data is available. Error
  *      types are defined in "CMError.h".
  */
-typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error) __TVOS_PROHIBITED;
+typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, NSError * __nullable error) API_UNAVAILABLE(tvos);
 
 /*
  *  CMPedometerEventHandler
@@ -186,7 +186,7 @@ typedef void (^CMPedometerHandler)(CMPedometerData * __nullable pedometerData, N
  *      Typedef of block that will be invoked when pedometer event is available.
  *      Error types are defined in "CMError.h".
  */
-typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerEvent, NSError * __nullable error) NS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_PROHIBITED;
+typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerEvent, NSError * __nullable error) NS_AVAILABLE(NA, 10_0) __WATCHOS_AVAILABLE(3_0) API_UNAVAILABLE(tvos);
 
 /*
  *  CMPedometer
@@ -204,7 +204,7 @@ typedef void (^CMPedometerEventHandler)(CMPedometerEvent * __nullable pedometerE
  *      updates can be stopped by calling stopPedometerUpdates.
  *
  */
-NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
 @interface CMPedometer : NSObject
 
 /*

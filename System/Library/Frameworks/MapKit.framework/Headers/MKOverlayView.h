@@ -5,10 +5,13 @@
 //  Copyright (c) 2010-2014, Apple Inc. All rights reserved.
 //
 
+#import <MapKit/MKFoundation.h>
+
+#if MK_SUPPORTS_VIEW_CLASSES
+
 #import <UIKit/UIKit.h>
 #import <MapKit/MKGeometry.h>
 #import <MapKit/MKOverlay.h>
-#import <MapKit/MKFoundation.h>
 
 
 // Prefer MKOverlayRenderer
@@ -50,3 +53,5 @@ NS_CLASS_AVAILABLE(NA, 4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 // returns the approximate width in points of roads at the specified zoomScale.
 // The result of this function is suitable for use with CGContextSetLineWidth.
 MK_EXTERN CGFloat MKRoadWidthAtZoomScale(MKZoomScale zoomScale) NS_AVAILABLE(10_9, 4_0) __WATCHOS_PROHIBITED;
+
+#endif // MK_SUPPORTS_VIEW_CLASSES

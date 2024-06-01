@@ -1,14 +1,16 @@
-// HMError.h
-// HomeKit
 //
-// Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//  HMError.h
+//  HomeKit
+//
+//  Copyright (c) 2014-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-HM_EXTERN NSString * const HMErrorDomain NS_AVAILABLE_IOS(8_0);
+HM_EXTERN NSString * const HMErrorDomain API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos);
 
 /*!
  * @brief This enumeration describes the possible error constants that can be
@@ -98,18 +100,19 @@ typedef NS_ENUM(NSInteger, HMErrorCode) {
     HMErrorCodeMissingEntitlement                      = 80,
     HMErrorCodeCannotUnblockNonBridgeAccessory         = 81,
     HMErrorCodeDeviceLocked                            = 82,
-    HMErrorCodeCannotRemoveBuiltinActionSet            NS_ENUM_AVAILABLE_IOS(9_0) = 83,
-    HMErrorCodeLocationForHomeDisabled                 NS_ENUM_AVAILABLE_IOS(9_0) = 84,
-    HMErrorCodeNotAuthorizedForLocationServices        NS_ENUM_AVAILABLE_IOS(9_0) = 85,
-    HMErrorCodeReferToUserManual                       NS_ENUM_AVAILABLE_IOS(9_3) = 86,
-    HMErrorCodeInvalidOrMissingAuthorizationData       NS_ENUM_AVAILABLE_IOS(10) = 87,
-    HMErrorCodeBridgedAccessoryNotReachable            NS_ENUM_AVAILABLE_IOS(10) = 88,
-    HMErrorCodeNotAuthorizedForMicrophoneAccess        NS_ENUM_AVAILABLE_IOS(10) = 89,
-    HMErrorCodeIncompatibleNetwork                     NS_ENUM_AVAILABLE_IOS(10_2) = 90,
-    HMErrorCodeNoHomeHub                               NS_ENUM_AVAILABLE_IOS(11_0) = 91,
-    HMErrorCodeNoCompatibleHomeHub                     NS_ENUM_AVAILABLE_IOS(11_0) = 92,
-    HMErrorCodeIncompatibleAccessory                   NS_ENUM_AVAILABLE_IOS(11_3) = 93,
-    HMErrorCodeIncompatibleHomeHub                     API_DEPRECATED_WITH_REPLACEMENT("HMErrorCodeNoCompatibleHomeHub", ios(11.0, 11.0), watchos(4.0, 4.0), tvos(11.0, 11.0)) = HMErrorCodeNoCompatibleHomeHub,
-} NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+    HMErrorCodeCannotRemoveBuiltinActionSet            API_AVAILABLE(ios(9.0)) = 83,
+    HMErrorCodeLocationForHomeDisabled                 API_AVAILABLE(ios(9.0)) = 84,
+    HMErrorCodeNotAuthorizedForLocationServices        API_AVAILABLE(ios(9.0)) = 85,
+    HMErrorCodeReferToUserManual                       API_AVAILABLE(ios(9.3)) = 86,
+    HMErrorCodeInvalidOrMissingAuthorizationData       API_AVAILABLE(ios(10.0)) = 87,
+    HMErrorCodeBridgedAccessoryNotReachable            API_AVAILABLE(ios(10.0)) = 88,
+    HMErrorCodeNotAuthorizedForMicrophoneAccess        API_AVAILABLE(ios(10.0)) = 89,
+    HMErrorCodeIncompatibleNetwork                     API_AVAILABLE(ios(10.2)) = 90,
+    HMErrorCodeNoHomeHub                               API_AVAILABLE(ios(11.0)) = 91,
+    HMErrorCodeNoCompatibleHomeHub                     API_AVAILABLE(ios(11.0)) = 92,
+    HMErrorCodeIncompatibleAccessory                   API_AVAILABLE(ios(11.3)) = 93,
+    HMErrorCodeIncompatibleHomeHub                     API_DEPRECATED_WITH_REPLACEMENT("HMErrorCodeNoCompatibleHomeHub", ios(11.0, 11.0), watchos(4.0, 4.0), tvos(11.0, 11.0)) API_UNAVAILABLE(macos) = HMErrorCodeNoCompatibleHomeHub,
+    HMErrorCodeObjectWithSimilarNameExists             API_AVAILABLE(ios(12.0)) = 95,
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 NS_ASSUME_NONNULL_END

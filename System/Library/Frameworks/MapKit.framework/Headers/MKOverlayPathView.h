@@ -5,10 +5,13 @@
 //  Copyright (c) 2010-2014, Apple Inc. All rights reserved.
 //
 
+#import <MapKit/MKFoundation.h>
+
+#if MK_SUPPORTS_VIEW_CLASSES
+
 #import <UIKit/UIKit.h>
 
 #import <MapKit/MKOverlayView.h>
-#import <MapKit/MKFoundation.h>
 
 // Prefer MKOverlayPathRenderer
 NS_CLASS_AVAILABLE(NA, 4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
@@ -40,3 +43,5 @@ NS_CLASS_AVAILABLE(NA, 4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 - (void)fillPath:(CGPathRef)path inContext:(CGContextRef)context NS_DEPRECATED_IOS(4_0, 7_0);
 
 @end
+
+#endif // MK_SUPPORTS_VIEW_CLASSES

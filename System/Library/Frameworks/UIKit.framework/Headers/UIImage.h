@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIImage.h>)
 //
 //  UIImage.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -172,7 +173,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIImage : NSObject <NSSecureCoding>
 @interface CIImage(UIKitAdditions)
 
 - (nullable instancetype)initWithImage:(UIImage *)image NS_AVAILABLE_IOS(5_0);
-- (nullable instancetype)initWithImage:(UIImage *)image options:(nullable NSDictionary *)options NS_AVAILABLE_IOS(5_0);
+- (nullable instancetype)initWithImage:(UIImage *)image options:(nullable NSDictionary<CIImageOption, id> *)options NS_AVAILABLE_IOS(5_0);
 
 @end
 #endif
@@ -182,3 +183,7 @@ UIKIT_EXTERN  NSData * __nullable UIImageJPEGRepresentation(UIImage * __nonnull 
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIImage.h>
+#endif

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFocus.h>)
 //
 //  UIFocus.h
 //  UIKit
 //
-//  Copyright © 2015-2017 Apple Inc. All rights reserved.
+//  Copyright © 2015-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,7 +11,8 @@
 #import <UIKit/UIFocusAnimationCoordinator.h>
 #import <UIKit/UIKitDefines.h>
 
-@class UIView, UIFocusUpdateContext;
+@class UIView, UIFocusUpdateContext, UIFocusMovementHint;
+@protocol UICoordinateSpace, UIFocusItemContainer;
 
 typedef NS_OPTIONS(NSUInteger, UIFocusHeading) {
     UIFocusHeadingNone          = 0,
@@ -23,7 +25,7 @@ typedef NS_OPTIONS(NSUInteger, UIFocusHeading) {
 } NS_ENUM_AVAILABLE_IOS(9_0);
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIFocusSoundIdentifier NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIFocusSoundIdentifier NS_TYPED_EXTENSIBLE_ENUM;
 #else
 typedef NSString * UIFocusSoundIdentifier;
 #endif
@@ -39,10 +41,19 @@ NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIFocusEnvironment <NSObject>
 /// Preferred focus environments can include focusable and non-focusable items, in addition to non-item environments. Returning an empty array is equivalent to returning an array containing only 'self'.
 @property (nonatomic, copy, readonly) NSArray<id<UIFocusEnvironment>> *preferredFocusEnvironments;
 
+/// The parent focus environment of this environment, or nil if no parent exists.
+/// NOTE: If you implement this method, you must return a non-nil value for parent focus environment, otherwise your focus environment will not participate in focus interactions.
+@property (nonatomic, weak, readonly, nullable) id<UIFocusEnvironment> parentFocusEnvironment NS_SWIFT_NAME(parentFocusEnvironment) API_AVAILABLE(tvos(12.0), ios(12.0));
+
+/// The container of any child focus items in this focus environment, or nil if no container exists.
+@property (nonatomic, readonly, nullable) id<UIFocusItemContainer> focusItemContainer API_AVAILABLE(tvos(12.0), ios(12.0));
+
 /// Marks this environment as needing a focus update, which if accepted will attempt to reset focus to this environment, or one of its preferred focus environments, on the next update cycle. If this environment does not currently contain the focused item, then calling this method has no effect. If a parent of this environment is also requesting focus, then this environment's request is rejected in favor of the parent's.
+/// NOTE: If you provide your own implementation, it must call `[[UIFocusSystem focusSystemForEnvironment:self] requestFocusUpdateToEnvironment:self]`;
 - (void)setNeedsFocusUpdate;
 
 /// Forces focus to be updated immediately. If there is an environment that has requested a focus update via -setNeedsFocusUpdate, and the request was accepted, then focus will be updated to that environment or one of its preferred focus environments.
+/// NOTE: If you provide your own implementation, it must call `[[UIFocusSystem focusSystemForEnvironment:self] updateFocusIfNeeded];`.
 - (void)updateFocusIfNeeded;
 
 /// Asks whether the system should allow a focus update to occur.
@@ -65,7 +76,6 @@ NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIFocusEnvironment <NSObject>
 
 
 /// Objects conforming to UIFocusItem are considered capable of participating in focus. Only UIFocusItems can ever be focused.
-/// NOTE: This protocol is not currently meant to be conformed to by third-party classes.
 NS_CLASS_AVAILABLE_IOS(10_0) @protocol UIFocusItem <UIFocusEnvironment>
 
 /// Indicates whether or not this item is currently allowed to become focused.
@@ -75,6 +85,48 @@ NS_CLASS_AVAILABLE_IOS(10_0) @protocol UIFocusItem <UIFocusEnvironment>
 #else
 - (BOOL)canBecomeFocused;
 #endif
+
+/// The geometric frame of this item, represented in the `coordinateSpace` of the UIFocusItemContainer in which it is contained.
+@property (nonatomic, readonly) CGRect frame API_AVAILABLE(tvos(12.0), ios(12.0));
+
+@optional
+
+/// Called whenever this focus item is hinting to the user a focus movement might occur.
+/// The provided object is mutated by the focus engine whenever the user's finger moves.
+- (void)didHintFocusMovement:(UIFocusMovementHint *)hint;
+
+@end
+
+
+/// Objects conforming to UIFocusItemContainer are responsible for providing which focus items they
+/// contain and where they are.
+NS_CLASS_AVAILABLE_IOS(12_0) @protocol UIFocusItemContainer <NSObject>
+
+/// The coordinate space of the focus items contained in this container. The focus items returned by focusItemsInRect: should report their frames in this coordinate space.
+/// If you are implementing this protocol, you may find it convenient to return the UIScreen as your coordinate space, and ensure that your contained items report their frames in screen space.
+/// Similarly, you might find that your focus items' containing UIView or UIWindow is the most convenient coordinate space to use.
+/// You may also choose to implement your own object that conforms to UICoordinateSpace, if that is the most natural solution for your architecture.
+@property (nonatomic, readonly) id<UICoordinateSpace> coordinateSpace;
+
+/// Returns an array of all focus items within this container that intersect with the provided rect. `rect` is expressed in `coordinateSpace`.
+- (NSArray<id<UIFocusItem>> *)focusItemsInRect:(CGRect)rect;
+
+@end
+
+
+/// Objects conforming to UIFocusItemScrollableContainer are updated accordingly to ensure the
+/// focused item remains visible on the screen.
+NS_CLASS_AVAILABLE_IOS(12_0) @protocol UIFocusItemScrollableContainer <UIFocusItemContainer>
+
+/// The current content offset of this scrollable container. If the scrollable container has a `bounds` property, `bounds.origin` must be equal to `contentOffset`.
+@property (nonatomic, readwrite) CGPoint contentOffset;
+
+/// The total size of the content contained by this container. If this size exceeds the size of
+/// this container's visible size, then scrolling is possible.
+@property (nonatomic, readonly) CGSize contentSize;
+
+/// The visible size of this scrollable container.
+@property (nonatomic, readonly) CGSize visibleSize;
 
 @end
 
@@ -117,3 +169,7 @@ UIKIT_EXTERN UIFocusSoundIdentifier const UIFocusSoundIdentifierNone API_AVAILAB
 UIKIT_EXTERN UIFocusSoundIdentifier const UIFocusSoundIdentifierDefault API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios, watchos);
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIFocus.h>
+#endif

@@ -20,10 +20,31 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ A value describing the world mapping status for the area visible in a given frame.
+ */
+API_AVAILABLE(ios(12.0))
+typedef NS_ENUM(NSInteger, ARWorldMappingStatus) {
+    /** World mapping is not available. */
+    ARWorldMappingStatusNotAvailable,
+    
+    /** World mapping is available but has limited features.
+     For the device's current position, the session’s world map is not recommended for relocalization. */
+    ARWorldMappingStatusLimited,
+    
+    /** World mapping is actively extending the map with the user's motion.
+     The world map will be relocalizable for previously visited areas but is still being updated for the current space. */
+    ARWorldMappingStatusExtending,
+    
+    /** World mapping has adequately mapped the visible area.
+     The map can be used to relocalize for the device's current position. */
+    ARWorldMappingStatusMapped
+} NS_SWIFT_NAME(ARFrame.WorldMappingStatus);
+
+/**
  An object encapsulating the state of everything being tracked for a given moment in time.
  @discussion The model provides a snapshot of all data needed to render a given frame.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARFrame : NSObject <NSCopying>
 
 /**
@@ -69,6 +90,13 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  @discussion The feature points are only provided for configurations using world tracking.
  */
 @property (nonatomic, strong, nullable, readonly) ARPointCloud *rawFeaturePoints;
+
+/**
+ The status of world mapping for the area visible to the frame.
+ @discussion This can be used to identify the state of the world map for the visible area and if additional scanning
+ should be done before saving a world map.
+ */
+@property (nonatomic, readonly) ARWorldMappingStatus worldMappingStatus API_AVAILABLE(ios(12.0));
 
 /**
  Searches the frame for objects corresponding to a point in the captured image.

@@ -1,9 +1,12 @@
-// HMNumberRange.h
-// HomeKit
 //
-// Copyright (c) 2017 Apple Inc. All rights reserved.
+//  HMNumberRange.h
+//  HomeKit
+//
+//  Copyright (c) 2017 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -11,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class describes a range of numbers: [min, max]
  *
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMNumberRange : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

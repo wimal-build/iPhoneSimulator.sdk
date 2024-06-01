@@ -25,6 +25,7 @@
 #import <CoreMotion/CMMotionActivity.h>
 #import <CoreMotion/CMMotionActivityManager.h>
 #import <CoreMotion/CMMotionManager.h>
+#import <CoreMotion/CMMovementDisorderManager.h>
 #import <CoreMotion/CMPedometer.h>
 #import <CoreMotion/CMStepCounter.h>
 #import <CoreMotion/CMSensorRecorder.h>

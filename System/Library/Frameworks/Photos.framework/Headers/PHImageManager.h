@@ -6,9 +6,10 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
-#import <UIKit/UIKit.h>
 #import <Photos/PhotosTypes.h>
-#import <Photos/PhotosDefines.h>
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#endif
 
 @class PHAsset;
 @class PHLivePhoto;

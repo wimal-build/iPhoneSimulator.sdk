@@ -19,17 +19,11 @@ API_UNAVAILABLE(macosx)
 // Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedNotebookItemType:(INNotebookItemType)resolvedNotebookItemType NS_SWIFT_NAME(success(with:));
 
-+ (instancetype)successWithResolvedValue:(INNotebookItemType)resolvedValue NS_SWIFT_UNAVAILABLE("Please use 'success(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+successWithResolvedNotebookItemType:", ios(11.0, 11.0), watchos(4.0, 4.0));
-
 // This resolution result is to ask Siri to disambiguate between the provided values.
 + (instancetype)disambiguationWithNotebookItemTypesToDisambiguate:(NSArray<NSNumber *> *)notebookItemTypesToDisambiguate NS_REFINED_FOR_SWIFT;
 
-+ (instancetype)disambiguationWithValuesToDisambiguate:(NSArray<NSNumber *> *)valuesToDisambiguate NS_REFINED_FOR_SWIFT API_DEPRECATED_WITH_REPLACEMENT("+disambiguationWithNotebookItemTypesToDisambiguate:", ios(11.0, 11.0), watchos(4.0, 4.0));
-
 // This resolution result is to ask Siri to confirm if this is the value with which the user wants to continue.
 + (instancetype)confirmationRequiredWithNotebookItemTypeToConfirm:(INNotebookItemType)notebookItemTypeToConfirm NS_SWIFT_NAME(confirmationRequired(with:));
-
-+ (instancetype)confirmationRequiredWithValueToConfirm:(INNotebookItemType)valueToConfirm NS_SWIFT_UNAVAILABLE("Please use 'confirmationRequired(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+confirmationRequiredWithNotebookItemTypeToConfirm:", ios(11.0, 11.0), watchos(4.0, 4.0));
 
 @end
 

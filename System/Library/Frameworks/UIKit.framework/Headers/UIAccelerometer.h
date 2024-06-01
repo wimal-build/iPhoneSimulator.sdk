@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccelerometer.h>)
 //
 //  UIAccelerometer.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -46,3 +47,7 @@ NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the Core
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIAccelerometer.h>
+#endif

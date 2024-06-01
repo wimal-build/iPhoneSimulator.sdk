@@ -1,24 +1,18 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01869FD1-C282-3807-AE19-2EBC43204D3A', 'x86_64: F9FBDB9E-EB5A-3205-9889-50A3CCFAFA97' ]
+uuids:           [ 'i386: 01869FD1-C282-3807-AE19-2EBC43204D3A', 'x86_64: 83A10DE4-E5DA-302E-9B17-42A8DD7F8B87' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-current-version: 425.60.2
+current-version: 425.202.1
 objc-constraint: none
 exports:         
+  - archs:           [ i386 ]
+    symbols:         [ _LocalAuthenticationVersionNumber, _LocalAuthenticationVersionString ]
+    objc-classes:    [ LAClient ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _LAAvailableMechanisms, _LAContextCreate, _LAContextGetTypeID, 
-                       _LACopyACMContext, _LACopyCurrentContext, _LACopyExternalizedContext, 
-                       _LACopyResultOfPolicyEvaluation, _LACreateNewContextWithACMContext, 
-                       _LACreateNewContextWithACMContextInSession, _LAErrorDomain, 
+    symbols:         [ _LAAvailableMechanisms, _LACopyExternalizedContext, _LAErrorDomain, 
                        _LAErrorInfoBiometryType, _LAErrorInfoTCCServerPrompt, _LAErrorInfoTCCService, 
-                       _LAErrorSubcodeKey, _LAEvaluateACL, _LAEvaluateAndUpdateACL, 
-                       _LAEvaluatePolicy, _LAExecuteBlockWithContext, _LAFingerDatabaseHash, 
-                       _LAIsCredentialSet, _LAPasswordRetryTime, _LASetCredential, 
-                       _LATouchIDAuthenticationMaximumAllowableReuseDuration, _LAUpdateAccessControlAfterEvaluation, 
-                       _LocalAuthenticationVersionNumber, _LocalAuthenticationVersionString, 
-                       _cStringFromCFString, _coreauthd_create_message, _coreauthd_message_no_error, 
-                       _coreauthd_message_with_reply_sync, _coreauthd_send_sync_and_do, 
-                       _kLACurrentContextKey, _makeCFError, _makeCFErrorWithUserInfo ]
-    objc-classes:    [ LAClient, LAContext ]
+                       _LAErrorSubcodeKey, _LAFingerDatabaseHash, _LAPasswordRetryTime, 
+                       _LATouchIDAuthenticationMaximumAllowableReuseDuration ]
+    objc-classes:    [ LAContext ]
 ...

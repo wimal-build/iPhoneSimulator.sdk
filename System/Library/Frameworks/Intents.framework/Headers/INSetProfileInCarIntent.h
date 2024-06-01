@@ -9,6 +9,8 @@
 #import <Intents/INIntentResolutionResult.h>
 
 @class INIntegerResolutionResult;
+@class INSpeakableString;
+@class INSpeakableStringResolutionResult;
 @class INStringResolutionResult;
 @class INBooleanResolutionResult;
 
@@ -20,13 +22,16 @@ API_UNAVAILABLE(watchos, macosx)
 
 - (instancetype)initWithProfileNumber:(nullable NSNumber *)profileNumber
                           profileName:(nullable NSString *)profileName
-                       defaultProfile:(nullable NSNumber *)defaultProfile NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT API_AVAILABLE(ios(10.2));
+                       defaultProfile:(nullable NSNumber *)defaultProfile
+                              carName:(nullable INSpeakableString *)carName NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT API_AVAILABLE(ios(12.0));
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *profileNumber NS_REFINED_FOR_SWIFT;
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *profileName API_AVAILABLE(ios(10.2));
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *defaultProfile NS_REFINED_FOR_SWIFT;
+
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INSpeakableString *carName API_AVAILABLE(ios(12.0));
 
 @end
 
@@ -86,6 +91,9 @@ API_UNAVAILABLE(watchos, macosx)
 
 - (void)resolveProfileNameForSetProfileInCar:(INSetProfileInCarIntent *)intent
                     withCompletion:(void (^)(INStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveProfileName(for:with:)) API_AVAILABLE(ios(10.2));
+
+- (void)resolveCarNameForSetProfileInCar:(INSetProfileInCarIntent *)intent
+                    withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveCarName(for:with:)) API_AVAILABLE(ios(12.0));
 
 - (void)resolveDefaultProfileForSetProfileInCar:(INSetProfileInCarIntent *)intent
                                  withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveDefaultProfile(forSetProfileInCar:with:)) API_DEPRECATED("The property doesn't need to be resolved", ios(10.0, 11.0));

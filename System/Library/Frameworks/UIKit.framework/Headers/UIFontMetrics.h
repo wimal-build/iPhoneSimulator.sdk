@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFontMetrics.h>)
 //
 //  UIFontMetrics.h
 //  UIKit
 //
-//  Copyright (c) 2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2017-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -33,3 +34,7 @@ UIKIT_EXTERN API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0))
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIFontMetrics.h>
+#endif

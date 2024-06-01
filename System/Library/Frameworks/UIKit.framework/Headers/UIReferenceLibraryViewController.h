@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIReferenceLibraryViewController.h>)
 //
 //  UIReferenceLibraryViewController.h
 //  UIKit
 //
-//  Copyright 2011-2017 Apple Inc. All rights reserved.
+//  Copyright 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -27,3 +28,7 @@ NS_CLASS_AVAILABLE_IOS(5_0) __TVOS_PROHIBITED
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIReferenceLibraryViewController.h>
+#endif

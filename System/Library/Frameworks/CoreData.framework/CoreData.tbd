@@ -1,21 +1,26 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C524AB1D-7228-33D0-B40B-BE6E45E4DF1D', 'x86_64: DE294808-6981-31A8-BE57-9E02916812CC' ]
+uuids:           [ 'i386: C524AB1D-7228-33D0-B40B-BE6E45E4DF1D', 'x86_64: F401DB1D-B433-318D-8CA1-FD83C0B27289' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreData.framework/CoreData
-current-version: 851
+current-version: 865
 objc-constraint: none
 exports:         
+  - archs:           [ i386 ]
+    symbols:         [ _NSAutomaticMigrationUseDocumentDestinationOption, _NSPersistentStoreCoordinatorDidImportExternalRecordsNotification, 
+                       _NSPersistentStoreUbiquitousSeedStoreURLKey, __NSManagedObjectContextObjectsDidChangePrivateNotification ]
+    objc-classes:    [ NSPullChangeHistoryRequest, _NSPersistenceUtilities ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _NSAddedPersistentStoresKey, _NSAffectedObjectsErrorKey, _NSAffectedStoresErrorKey, 
-                       _NSAutomaticMigrationUseDocumentDestinationOption, _NSBinaryStoreInsecureDecodingCompatibilityOption, 
-                       _NSBinaryStoreSecureDecodingClasses, _NSBinaryStoreType, _NSCKRecordIDAttributeName, 
-                       _NSCKRecordSystemFieldsAttributeName, _NSCloudKitMirroringDelegateDidResetSyncNotificationName, 
+                       _NSBinaryStoreInsecureDecodingCompatibilityOption, _NSBinaryStoreSecureDecodingClasses, 
+                       _NSBinaryStoreType, _NSCKRecordIDAttributeName, _NSCKRecordSystemFieldsAttributeName, 
+                       _NSCloudKitMirroringDelegateDidResetSyncNotificationName, 
                        _NSCloudKitMirroringDelegateIgnoredPropertyKey, _NSCloudKitMirroringDelegateResetSyncReasonKey, 
                        _NSCloudKitMirroringDelegateWillResetSyncNotificationName, 
                        _NSCoreDataCoreSpotlightExporter, _NSCoreDataVersionNumber, 
                        _NSDeletedObjectIDsKey, _NSDeletedObjectsKey, _NSDetailedErrorsKey, 
-                       _NSErrorMergePolicy, _NSIgnorePersistentStoreVersioningOption, 
+                       _NSErrorMergePolicy, _NSFetchRequestLimitSubstitutionKey, 
+                       _NSFetchRequestOffsetSubstitutionKey, _NSIgnorePersistentStoreVersioningOption, 
                        _NSInMemoryStoreType, _NSInferMappingModelAutomaticallyOption, 
                        _NSInsertedObjectIDsKey, _NSInsertedObjectsKey, _NSInvalidatedAllObjectsKey, 
                        _NSInvalidatedObjectIDsKey, _NSInvalidatedObjectsKey, _NSManagedObjectContextDidMergeChangesObjectIDsNotification, 
@@ -26,11 +31,10 @@ exports:
                        _NSMigratePersistentStoresAutomaticallyOption, _NSMigrationDestinationObjectKey, 
                        _NSMigrationEntityMappingKey, _NSMigrationEntityPolicyKey, 
                        _NSMigrationManagerKey, _NSMigrationPropertyMappingKey, _NSMigrationSourceObjectKey, 
-                       _NSOverwriteMergePolicy, _NSPersistentHistoryTombstoneAttributes, 
+                       _NSOverwriteMergePolicy, _NSPersistentHistoryTokenKey, _NSPersistentHistoryTombstoneAttributes, 
                        _NSPersistentHistoryTrackingEntitiesToExclude, _NSPersistentHistoryTrackingEntitiesToInclude, 
-                       _NSPersistentHistoryTrackingKey, _NSPersistentStoreConnectionPoolMaxSizeKey, 
-                       _NSPersistentStoreCoordinatorDidImportExternalRecordsNotification, 
-                       _NSPersistentStoreCoordinatorStoresDidChangeNotification, 
+                       _NSPersistentHistoryTrackingKey, _NSPersistentHistoryUseContextObjectsForDeletes, 
+                       _NSPersistentStoreConnectionPoolMaxSizeKey, _NSPersistentStoreCoordinatorStoresDidChangeNotification, 
                        _NSPersistentStoreCoordinatorStoresWillChangeNotification, 
                        _NSPersistentStoreCoordinatorWillRemoveStoreNotification, 
                        _NSPersistentStoreDidImportUbiquitousContentChangesNotification, 
@@ -38,11 +42,12 @@ exports:
                        _NSPersistentStoreForceLightweightMigrationOption, _NSPersistentStoreMirroringDelegateOptionKey, 
                        _NSPersistentStoreMirroringOptionsKey, _NSPersistentStoreOSCompatibility, 
                        _NSPersistentStoreOrderKeyUpdateNotification, _NSPersistentStoreRebuildFromUbiquitousContentOption, 
+                       _NSPersistentStoreRemoteChangeNotification, _NSPersistentStoreRemoteChangeNotificationOptionKey, 
                        _NSPersistentStoreRemoveUbiquitousMetadataOption, _NSPersistentStoreSaveConflictsErrorKey, 
                        _NSPersistentStoreTimeoutOption, _NSPersistentStoreTypeKey, 
-                       _NSPersistentStoreUbiquitousContainerIdentifierKey, _NSPersistentStoreUbiquitousContentNameKey, 
-                       _NSPersistentStoreUbiquitousContentURLKey, _NSPersistentStoreUbiquitousPeerTokenOption, 
-                       _NSPersistentStoreUbiquitousSeedStoreURLKey, _NSPersistentStoreUbiquitousTransitionTypeKey, 
+                       _NSPersistentStoreURLKey, _NSPersistentStoreUbiquitousContainerIdentifierKey, 
+                       _NSPersistentStoreUbiquitousContentNameKey, _NSPersistentStoreUbiquitousContentURLKey, 
+                       _NSPersistentStoreUbiquitousPeerTokenOption, _NSPersistentStoreUbiquitousTransitionTypeKey, 
                        _NSPersistentStoreUnlinkDestroyOption, _NSReadOnlyPersistentStoreOption, 
                        _NSRefreshedObjectIDsKey, _NSRefreshedObjectsKey, _NSRemotePersistentStoreDidChangeNotification, 
                        _NSRemovedPersistentStoresKey, _NSRollbackMergePolicy, _NSSQLiteAnalyzeOption, 
@@ -56,29 +61,29 @@ exports:
                        _NSXPCStoreDaemonizeKey, _NSXPCStoreEntitlementNamesKey, _NSXPCStorePostUpdateNotificationsKey, 
                        _NSXPCStoreServerEndpointFactoryKey, _NSXPCStoreServiceNameKey, 
                        _NSXPCStoreSkipModelCheckKey, _NSXPCStoreType, __NSBackgroundThreadConfinementConcurrencyType, 
-                       __NSManagedObjectContextObjectsDidChangePrivateNotification, 
                        __NSTriggerModifiedObjectIDsKey, __NSTriggerModifiedObjectsKey ]
     objc-classes:    [ NSAsynchronousFetchRequest, NSAsynchronousFetchResult, NSAtomicStore, 
                        NSAtomicStoreCacheNode, NSAttributeDescription, NSBatchDeleteRequest, 
                        NSBatchDeleteResult, NSBatchUpdateRequest, NSBatchUpdateResult, 
                        NSCachingFetchRequest, NSCloudKitMirroringDelegate, NSCloudKitMirroringDelegateOptions, 
-                       NSCloudKitMirroringExportRequest, NSCloudKitMirroringImportRequest, 
-                       NSCloudKitMirroringRequest, NSCloudKitMirroringRequestOptions, 
-                       NSCloudKitMirroringResetZoneRequest, NSCloudKitMirroringResult, 
-                       NSConstraintConflict, NSCoreDataCoreSpotlightDelegate, NSEntityDescription, 
-                       NSEntityMapping, NSEntityMigrationPolicy, NSExpressionDescription, 
-                       NSFetchIndexDescription, NSFetchIndexElementDescription, NSFetchRequest, 
-                       NSFetchRequestExpression, NSFetchedPropertyDescription, NSFetchedResultsController, 
-                       NSIncrementalStore, NSIncrementalStoreNode, NSKnownKeysDictionary, 
-                       NSKnownKeysMappingStrategy, NSManagedImmutableObject, NSManagedObject, 
-                       NSManagedObjectContext, NSManagedObjectID, NSManagedObjectModel, 
-                       NSMappingModel, NSMergeConflict, NSMergePolicy, NSMigrationManager, 
-                       NSPersistentContainer, NSPersistentHistoryChange, NSPersistentHistoryChangeRequest, 
-                       NSPersistentHistoryResult, NSPersistentHistoryToken, NSPersistentHistoryTransaction, 
+                       NSCloudKitMirroringExportRequest, NSCloudKitMirroringFetchRecordsRequest, 
+                       NSCloudKitMirroringImportRequest, NSCloudKitMirroringRequest, 
+                       NSCloudKitMirroringRequestOptions, NSCloudKitMirroringResetZoneRequest, 
+                       NSCloudKitMirroringResult, NSConstraintConflict, NSCoreDataCoreSpotlightDelegate, 
+                       NSEntityDescription, NSEntityMapping, NSEntityMigrationPolicy, 
+                       NSExpressionDescription, NSFetchIndexDescription, NSFetchIndexElementDescription, 
+                       NSFetchRequest, NSFetchRequestExpression, NSFetchedPropertyDescription, 
+                       NSFetchedResultsController, NSIncrementalStore, NSIncrementalStoreNode, 
+                       NSKnownKeysDictionary, NSKnownKeysMappingStrategy, NSManagedImmutableObject, 
+                       NSManagedObject, NSManagedObjectContext, NSManagedObjectID, 
+                       NSManagedObjectModel, NSMappingModel, NSMergeConflict, NSMergePolicy, 
+                       NSMigrationManager, NSPersistentContainer, NSPersistentHistoryChange, 
+                       NSPersistentHistoryChangeRequest, NSPersistentHistoryResult, 
+                       NSPersistentHistoryToken, NSPersistentHistoryTransaction, 
                        NSPersistentStore, NSPersistentStoreAsynchronousResult, NSPersistentStoreCoordinator, 
                        NSPersistentStoreDescription, NSPersistentStoreRequest, NSPersistentStoreResult, 
-                       NSPropertyDescription, NSPropertyMapping, NSPullChangeHistoryRequest, 
-                       NSQueryGenerationToken, NSRelationshipDescription, NSSaveChangesRequest, 
-                       NSXPCStore, NSXPCStoreConnectionInfo, NSXPCStoreServer, NSXPCStoreServerConnectionContext, 
-                       NSXPCStoreServerRequestHandlingPolicy, _NSPersistenceUtilities ]
+                       NSPropertyDescription, NSPropertyMapping, NSQueryGenerationToken, 
+                       NSRelationshipDescription, NSSaveChangesRequest, NSXPCStore, 
+                       NSXPCStoreConnectionInfo, NSXPCStoreServer, NSXPCStoreServerConnectionContext, 
+                       NSXPCStoreServerRequestHandlingPolicy ]
 ...

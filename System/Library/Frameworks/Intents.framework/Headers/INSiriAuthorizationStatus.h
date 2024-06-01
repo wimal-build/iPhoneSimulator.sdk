@@ -8,6 +8,8 @@
 #ifndef INSiriAuthorizationStatus_h
 #define INSiriAuthorizationStatus_h
 
+#import <Foundation/Foundation.h>
+
 /*
  *  INSiriAuthorizationStatus
  *

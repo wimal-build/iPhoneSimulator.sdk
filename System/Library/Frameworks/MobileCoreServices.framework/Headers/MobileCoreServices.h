@@ -1,11 +1,9 @@
-/*	
-	MobileCoreServices.h
-	Copyright (c) 2009, Apple Inc. All rights reserved.
-*/
+/*
+	File:      MobileCoreServices/MobileCoreServices.h
+ 
+	Contains:  Master include for MobileCoreServices
+ 
+	Copyright: (c) 1999-2018 Apple Inc. All rights reserved. 
+ */
 
-#ifndef __MOBILECORESERVICES__
-
-#include <MobileCoreServices/UTCoreTypes.h>
-#include <MobileCoreServices/UTType.h>
-
-#endif /* __MOBILECORESERVICES__ */
+#import <CoreServices/CoreServices.h>

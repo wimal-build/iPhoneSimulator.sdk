@@ -31,6 +31,8 @@ HK_EXTERN NSString * const HKErrorDomain API_AVAILABLE(ios(8.0), watchos(2.0));
  @constant  HKErrorUserCanceled                 The user canceled the operation.
  @constant  HKErrorAnotherWorkoutSessionStarted Another workout session was started by this or another application.
  @constant  HKErrorUserExitedWorkoutSession     User exited the application while a workout session was running.
+ @constant  HKErrorRequiredAuthorizationDenied  The user has not granted the application authorization to access
+                                                required data types.
  */
 typedef NS_ENUM(NSInteger, HKErrorCode) {
     HKNoError = 0,
@@ -43,6 +45,7 @@ typedef NS_ENUM(NSInteger, HKErrorCode) {
     HKErrorUserCanceled,
     HKErrorAnotherWorkoutSessionStarted     API_AVAILABLE(ios(9.0), watchos(2.0)),
     HKErrorUserExitedWorkoutSession         API_AVAILABLE(ios(9.0), watchos(2.0)),
+    HKErrorRequiredAuthorizationDenied      API_AVAILABLE(ios(12.0), watchos(5.0)),
 } API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /*!
@@ -70,6 +73,21 @@ typedef NS_ENUM(NSInteger, HKAuthorizationStatus) {
     HKAuthorizationStatusSharingDenied,
     HKAuthorizationStatusSharingAuthorized,
 } API_AVAILABLE(ios(8.0), watchos(2.0));
+
+/*!
+ @enum      HKAuthorizationRequestStatus
+ @abstract  This enumerated type is used to indicate whether it is necessary to request authorization from the user.
+ 
+ @constant  HKAuthorizationRequestStatusUnknown         The authorization request status could not be determined because
+                                                        an error occurred.
+ @constant  HKAuthorizationRequestStatusShouldRequest   The application should request authorization from the user.
+ @constant  HKAuthorizationRequestStatusUnnecessary     Requesting authorization from the user is unnecessary.
+ */
+typedef NS_ENUM(NSInteger, HKAuthorizationRequestStatus) {
+    HKAuthorizationRequestStatusUnknown = 0,
+    HKAuthorizationRequestStatusShouldRequest,
+    HKAuthorizationRequestStatusUnnecessary,
+} API_AVAILABLE(ios(12.0), watchos(5.0));
 
 /*!
  @enum       HKBiologicalSex
@@ -198,7 +216,8 @@ typedef NS_ENUM(NSInteger, HKCategoryValueMenstrualFlow) {
     HKCategoryValueMenstrualFlowUnspecified = 1,
     HKCategoryValueMenstrualFlowLight,
     HKCategoryValueMenstrualFlowMedium,
-    HKCategoryValueMenstrualFlowHeavy
+    HKCategoryValueMenstrualFlowHeavy,
+    HKCategoryValueMenstrualFlowNone API_AVAILABLE(ios(12.0), watchos(5.0)),
 } API_AVAILABLE(ios(9.0), watchos(2.0));
 
 /*!

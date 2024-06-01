@@ -24,7 +24,7 @@ typedef NS_OPTIONS(NSUInteger, SKCloudServiceCapability) {
     SKCloudServiceCapabilityAddToCloudMusicLibrary         = 1 << 8,
 } NS_AVAILABLE_IOS(9_3);
 
-SK_EXTERN_CLASS_AVAILABLE(9_3) @interface SKCloudServiceController : NSObject
+SK_EXTERN_CLASS_AVAILABLE_IOS(9_3) @interface SKCloudServiceController : NSObject
 
 + (SKCloudServiceAuthorizationStatus)authorizationStatus;
 + (void)requestAuthorization:(void(^)(SKCloudServiceAuthorizationStatus status))handler;

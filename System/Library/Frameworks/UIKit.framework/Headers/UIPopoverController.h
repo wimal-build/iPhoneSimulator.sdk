@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverController.h>)
 //
 //  UIPopoverController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 
@@ -96,3 +97,7 @@ NS_CLASS_DEPRECATED_IOS(3_2, 9_0, "UIPopoverController is deprecated. Popovers a
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPopoverController.h>
+#endif

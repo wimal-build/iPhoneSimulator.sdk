@@ -36,6 +36,11 @@ typedef NS_OPTIONS(NSUInteger, INPhotoAttributeOptions) {
     INPhotoAttributeOptionMonoFilter = (1UL << 21),
     INPhotoAttributeOptionFadeFilter = (1UL << 22),
     INPhotoAttributeOptionProcessFilter = (1UL << 23),
-} API_AVAILABLE(ios(10.0), watchos(3.2));
+    INPhotoAttributeOptionPortraitPhoto API_AVAILABLE(ios(12.0), watchos(5.0), macosx(10.14)) = (1UL << 24),
+    INPhotoAttributeOptionLivePhoto API_AVAILABLE(ios(12.0), watchos(5.0), macosx(10.14)) = (1UL << 25),
+    INPhotoAttributeOptionLoopPhoto API_AVAILABLE(ios(12.0), watchos(5.0), macosx(10.14)) = (1UL << 26),
+    INPhotoAttributeOptionBouncePhoto API_AVAILABLE(ios(12.0), watchos(5.0), macosx(10.14)) = (1UL << 27),
+    INPhotoAttributeOptionLongExposurePhoto API_AVAILABLE(ios(12.0), watchos(5.0), macosx(10.14)) = (1UL << 28),
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 #endif // INPhotoAttributeOptions_h

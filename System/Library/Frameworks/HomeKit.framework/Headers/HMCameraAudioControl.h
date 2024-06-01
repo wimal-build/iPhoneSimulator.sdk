@@ -6,12 +6,13 @@
 //
 
 #import <HomeKit/HMCameraControl.h>
+#import <HomeKit/HMDefines.h>
 
 @class HMCharacteristic;
 
 NS_ASSUME_NONNULL_BEGIN
 
-__IOS_AVAILABLE(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMCameraAudioControl : HMCameraControl
 
 - (instancetype)init NS_UNAVAILABLE;

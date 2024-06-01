@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIScreenMode.h>)
 //
 //  UIScreenMode.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,3 +16,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UIScreenMode : NSObject
 @property(readonly,nonatomic) CGFloat pixelAspectRatio; // The aspect ratio of a single pixel. The ratio is defined as X/Y.
 
 @end
+
+#else
+#import <UIKitCore/UIScreenMode.h>
+#endif

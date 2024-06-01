@@ -15,13 +15,5 @@ framework module UIKit [extern_c] {
       header "UIGraphicsRendererSubclass.h"
       export *
   }
-
-  framework module DocumentManager {
-	  umbrella header "DocumentManager.h"
-	  export *
-	  module * {
-          export *
-	  }
-  }
 }
 

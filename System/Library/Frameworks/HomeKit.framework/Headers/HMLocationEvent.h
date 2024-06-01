@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 #import <HomeKit/HMEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class represents an event that is evaluated based on entry to and/or
  *        exit from a Region
  */
-NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
+API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos)
 @interface HMLocationEvent : HMEvent <NSCopying, NSMutableCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -28,7 +29,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *
  * @return Instance object representing the location event.
  */
-- (instancetype)initWithRegion:(CLRegion *)region __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (instancetype)initWithRegion:(CLRegion *)region API_UNAVAILABLE(watchos, tvos);
 
 /*!
  * @brief Region on which events are triggered based on the properties notifyOnEntry and notifyOnExit.
@@ -45,7 +46,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   The NSError provides more information on the status of the request, error
  *                   will be nil on success.
  */
-- (void)updateRegion:(CLRegion *)region completionHandler:(void (^)(NSError * __nullable error))completion NS_DEPRECATED_IOS(9_0, 11_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+- (void)updateRegion:(CLRegion *)region completionHandler:(void (^)(NSError * __nullable error))completion API_DEPRECATED("No longer supported.", ios(9.0, 11.0)) API_UNAVAILABLE(watchos, tvos);
 
 @end
 
@@ -54,7 +55,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  * @brief This class represents an event that is evaluated based on entry to and/or
  *        exit from a Region
  */
-API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0))
+API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0)) API_UNAVAILABLE(macos)
 @interface HMMutableLocationEvent : HMLocationEvent
 
 - (instancetype)init NS_UNAVAILABLE;

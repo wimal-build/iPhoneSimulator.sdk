@@ -35,3 +35,4 @@
 #define PHOTOS_ENUM_AVAILABLE_IOS_TVOS(_ios, _tvos)     PHOTOS_AVAILABLE_IOS_TVOS(_ios, _tvos)
 #define PHOTOS_ENUM_AVAILABLE_IOS_TVOS_OSX(_ios, _tvos, _osx)          PHOTOS_AVAILABLE_IOS_TVOS_OSX(_ios, _tvos, _osx)
 #define PHOTOS_ENUM_AVAILABLE_IOS_WATCHOS_TVOS(_ios, _watchos, _tvos)  PHOTOS_AVAILABLE_IOS_WATCHOS_TVOS(_ios, _watchos, _tvos)
+

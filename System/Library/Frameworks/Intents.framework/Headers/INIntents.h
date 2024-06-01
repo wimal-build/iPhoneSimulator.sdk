@@ -26,6 +26,8 @@
 #import <Intents/INResumeWorkoutIntent.h>
 #import <Intents/INStartWorkoutIntent.h>
 
+#import <Intents/INPlayMediaIntent.h>
+
 #import <Intents/INSetRadioStationIntent.h>
 
 #import <Intents/INSearchForMessagesIntent.h>

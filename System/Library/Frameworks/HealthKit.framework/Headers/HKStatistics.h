@@ -25,10 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
  
  @constant      HKStatisticsOptionNone
  @constant      HKStatisticsOptionSeparateBySource
- @constant      HKStatisticsOptionDiscreteAverage   Calculate averageQuantity when creating statistics.
- @constant      HKStatisticsOptionDiscreteMin       Calculate minQuantity when creating statistics.
- @constant      HKStatisticsOptionDiscreteMax       Calculate maxQuantity when creating statistics.
- @constant      HKStatisticsOptionCumulativeSum     Calculate sumQuantity when creating statistics.
+ @constant      HKStatisticsOptionDiscreteAverage      Calculate averageQuantity when creating statistics.
+ @constant      HKStatisticsOptionDiscreteMin          Calculate minQuantity when creating statistics.
+ @constant      HKStatisticsOptionDiscreteMax          Calculate maxQuantity when creating statistics.
+ @constant      HKStatisticsOptionCumulativeSum        Calculate sumQuantity when creating statistics.
+ @constant      HKStatisticsOptionDiscreteMostRecent   Calculate mostRecentQuantity when creating statistics.
  */
 typedef NS_OPTIONS(NSUInteger, HKStatisticsOptions) {
     HKStatisticsOptionNone              		= 0,
@@ -37,6 +38,7 @@ typedef NS_OPTIONS(NSUInteger, HKStatisticsOptions) {
     HKStatisticsOptionDiscreteMin               = 1 << 2,
     HKStatisticsOptionDiscreteMax               = 1 << 3,
     HKStatisticsOptionCumulativeSum             = 1 << 4,
+    HKStatisticsOptionDiscreteMostRecent API_AVAILABLE(ios(12.0), watchos(5.0))  = 1 << 5,
 } API_AVAILABLE(ios(8.0), watchos(2.0));
 
 /*!
@@ -93,6 +95,33 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
  @abstract      Returns the maximum quantity in the time period represented by the receiver.
  */
 - (nullable HKQuantity *)maximumQuantity;
+
+/*!
+ @method        mostRecentQuantityForSource:
+ @abstract      Returns the most recent quantity for the given source in the time period represented by the receiver.
+ @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
+ */
+- (nullable HKQuantity *)mostRecentQuantityForSource:(HKSource *)source API_AVAILABLE(ios(12.0), watchos(5.0));
+
+/*!
+ @method        mostRecentQuantity
+ @abstract      Returns the most recent quantity in the time period represented by the receiver.
+ */
+- (nullable HKQuantity *)mostRecentQuantity API_AVAILABLE(ios(12.0), watchos(5.0));
+
+/*!
+ @method        mostRecentQuantityDateIntervalForSource:
+ @abstract      Returns the date interval of the most recent quantity for the given source in the time period
+                represented by the receiver.
+ @discussion    If HKStatisticsOptionSeparateBySource is not specified, then this will always be nil.
+ */
+- (nullable NSDateInterval *)mostRecentQuantityDateIntervalForSource:(HKSource *)source API_AVAILABLE(ios(12.0), watchos(5.0));
+
+/*!
+ @method        mostRecentQuantityDateInterval
+ @abstract      Returns the date interval of the most recent quantity in the time period represented by the receiver.
+ */
+- (nullable NSDateInterval *)mostRecentQuantityDateInterval API_AVAILABLE(ios(12.0), watchos(5.0));
 
 /* Cumulative Quantities */
 

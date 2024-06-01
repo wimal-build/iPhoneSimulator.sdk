@@ -1,8 +1,8 @@
 //
-// HMDefines.h
-// HomeKit
+//  HMDefines.h
+//  HomeKit
 //
-//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//      Copyright (c) 2013-2015 Apple Inc. All rights reserved.
 //
 
 #ifndef HM_EXTERN
@@ -12,3 +12,4 @@
 #define HM_EXTERN   extern __attribute__((visibility ("default")))
 #endif
 #endif
+

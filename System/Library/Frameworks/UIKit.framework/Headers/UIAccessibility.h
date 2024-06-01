@@ -1,9 +1,10 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibility.h>)
 
 //
 //  UIAccessibility.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -211,13 +212,13 @@ UIKIT_EXTERN UIBezierPath *UIAccessibilityConvertPathToScreenCoordinates(UIBezie
 - (BOOL)accessibilityElementIsFocused NS_AVAILABLE_IOS(4_0);
 
 // Returns a set of identifier keys indicating which technology is focused on this object
-- (nullable NSSet<NSString *> *)accessibilityAssistiveTechnologyFocusedIdentifiers NS_AVAILABLE_IOS(9_0);
+- (nullable NSSet<UIAccessibilityAssistiveTechnologyIdentifier> *)accessibilityAssistiveTechnologyFocusedIdentifiers NS_AVAILABLE_IOS(9_0);
 
 // Returns the element that is currently focused by an assistive technology.
 // default = nil.
 // Pass in a specific identifier (e.g. UIAccessibilityNotificationVoiceOverIdentifier) in order to choose the focused element for a specific product.
 // If no argument is used, the function will returned the element that was most recently focused.
-UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(NSString * __nullable assistiveTechnologyIdentifier) NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN __nullable id UIAccessibilityFocusedElement(UIAccessibilityAssistiveTechnologyIdentifier __nullable assistiveTechnologyIdentifier) NS_AVAILABLE_IOS(9_0);
 
 @end
 
@@ -385,63 +386,63 @@ UIKIT_EXTERN NSNotificationName const UIAccessibilityVoiceOverStatusDidChangeNot
 
 // Returns whether system audio is mixed down from stereo to mono.
 UIKIT_EXTERN BOOL UIAccessibilityIsMonoAudioEnabled(void) NS_AVAILABLE_IOS(5_0);
-UIKIT_EXTERN NSString *const UIAccessibilityMonoAudioStatusDidChangeNotification NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityMonoAudioStatusDidChangeNotification NS_AVAILABLE_IOS(5_0);
 
 // Returns whether the system preference for closed captioning is enabled.
 UIKIT_EXTERN BOOL UIAccessibilityIsClosedCaptioningEnabled(void) NS_AVAILABLE_IOS(5_0);
-UIKIT_EXTERN NSString *const UIAccessibilityClosedCaptioningStatusDidChangeNotification NS_AVAILABLE_IOS(5_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityClosedCaptioningStatusDidChangeNotification NS_AVAILABLE_IOS(5_0);
 
 // Returns whether the system preference for invert colors is enabled.
 UIKIT_EXTERN BOOL UIAccessibilityIsInvertColorsEnabled(void) NS_AVAILABLE_IOS(6_0);
-UIKIT_EXTERN NSString *const UIAccessibilityInvertColorsStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityInvertColorsStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
 
 // Returns whether the app is running under Guided Access mode.
 UIKIT_EXTERN BOOL UIAccessibilityIsGuidedAccessEnabled(void) NS_AVAILABLE_IOS(6_0);
-UIKIT_EXTERN NSString *const UIAccessibilityGuidedAccessStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityGuidedAccessStatusDidChangeNotification NS_AVAILABLE_IOS(6_0);
 
 // Returns whether the system preference for bold text is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsBoldTextEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilityBoldTextStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityBoldTextStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for grayscale is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsGrayscaleEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilityGrayscaleStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityGrayscaleStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for reduce transparency is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsReduceTransparencyEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilityReduceTransparencyStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityReduceTransparencyStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for reduce motion is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsReduceMotionEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilityReduceMotionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityReduceMotionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for darker colors is enabled
 UIKIT_EXTERN BOOL UIAccessibilityDarkerSystemColorsEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 /*
  Use UIAccessibilityIsSwitchControlRunning() to determine if Switch Control is running.
  Listen for UIAccessibilitySwitchControlStatusDidChangeNotification to know when Switch Control starts or stops.
 */
 UIKIT_EXTERN BOOL UIAccessibilityIsSwitchControlRunning(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilitySwitchControlStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilitySwitchControlStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for Speak Selection is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsSpeakSelectionEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilitySpeakSelectionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilitySpeakSelectionStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for Speak Screen is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsSpeakScreenEnabled(void) NS_AVAILABLE_IOS(8_0);
-UIKIT_EXTERN NSString *const UIAccessibilitySpeakScreenStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilitySpeakScreenStatusDidChangeNotification NS_AVAILABLE_IOS(8_0);
 
 // Returns whether the system preference for Shake to Undo is enabled
 UIKIT_EXTERN BOOL UIAccessibilityIsShakeToUndoEnabled(void) NS_AVAILABLE_IOS(9_0);
-UIKIT_EXTERN NSString *const UIAccessibilityShakeToUndoDidChangeNotification NS_AVAILABLE_IOS(9_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityShakeToUndoDidChangeNotification NS_AVAILABLE_IOS(9_0);
 
 // Returns whether the system preference for AssistiveTouch is enabled.
 // This always returns false if Guided Access is not enabled.
 UIKIT_EXTERN BOOL UIAccessibilityIsAssistiveTouchRunning(void) NS_AVAILABLE_IOS(10_0);
-UIKIT_EXTERN NSString *const UIAccessibilityAssistiveTouchStatusDidChangeNotification NS_AVAILABLE_IOS(10_0);
+UIKIT_EXTERN NSNotificationName const UIAccessibilityAssistiveTouchStatusDidChangeNotification NS_AVAILABLE_IOS(10_0);
 
 /*
  Use UIAccessibilityRequestGuidedAccessSession() to request this app be locked into or released
@@ -460,6 +461,10 @@ typedef NS_OPTIONS(NSUInteger, UIAccessibilityHearingDeviceEar) {
 
 // Returns the current pairing status of MFi hearing aids
 UIKIT_EXTERN UIAccessibilityHearingDeviceEar UIAccessibilityHearingDevicePairedEar(void) NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
-UIKIT_EXTERN NSString *const UIAccessibilityHearingDevicePairedEarDidChangeNotification NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
+UIKIT_EXTERN NSNotificationName const UIAccessibilityHearingDevicePairedEarDidChangeNotification NS_AVAILABLE_IOS(10_0) __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIAccessibility.h>
+#endif

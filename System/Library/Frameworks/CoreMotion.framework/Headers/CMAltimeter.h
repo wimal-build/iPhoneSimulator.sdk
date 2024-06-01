@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Discussion:
  *    Typedef of block to be invoked when the device's altitude is updated.
  */
-typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSError * __nullable error) NS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED;
+typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSError * __nullable error) NS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos);
 
 /*
  *  CMAltimeter
@@ -27,7 +27,7 @@ typedef void (^CMAltitudeHandler)(CMAltitudeData * __nullable altitudeData, NSEr
  *  Discussion:
  *		CMAltimeter provides information about the altitude of the device.
  */
-NS_CLASS_AVAILABLE(NA,8_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA,8_0) API_UNAVAILABLE(tvos)
 @interface CMAltimeter : NSObject
 
 /*

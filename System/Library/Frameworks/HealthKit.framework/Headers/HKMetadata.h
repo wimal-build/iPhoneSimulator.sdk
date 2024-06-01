@@ -2,7 +2,7 @@
 //  HKMetadata.h
 //  HealthKit
 //
-//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <HealthKit/HKDefines.h>
@@ -461,5 +461,30 @@ HK_EXTERN NSString * const HKMetadataKeyElevationAscended API_AVAILABLE(ios(11.2
  workout, workout segments or distance samples.
  */
 HK_EXTERN NSString * const HKMetadataKeyElevationDescended API_AVAILABLE(ios(11.2), watchos(4.2));
+
+/*!
+ @constant      HKMetadataKeyFitnessMachineDuration
+ @abstract      Represents the workout duration as displayed by a GymKit connected fitness machine.
+ @discussion    The expected value type is an HKQuantity object compatible with a time unit. This key may be set on an
+                HKWorkout object to represent the duration of the workout as displayed by a GymKit connected fitness
+                machine.
+ */
+HK_EXTERN NSString * const HKMetadataKeyFitnessMachineDuration API_AVAILABLE(ios(12.0), watchos(5.0));
+
+/*!
+ @constant      HKMetadataKeyIndoorBikeDistance
+ @abstract      Represents the distance covered during an indoor bike workout.
+ @discussion    The expected value type is an HKQuantity object compatible with a length unit. This key may be set on an
+                HKWorkout object to represent the distance covered during an indoor bike workout.
+ */
+HK_EXTERN NSString * const HKMetadataKeyIndoorBikeDistance API_AVAILABLE(ios(12.0), watchos(5.0));
+
+/*!
+ @constant      HKMetadataKeyCrossTrainerDistance
+ @abstract      Represents the distance covered during a cross trainer workout.
+ @discussion    The expected value type is an HKQuantity object compatible with a length unit. This key may be set on an
+                HKWorkout object to represent the distance covered during a cross trainer workout.
+ */
+HK_EXTERN NSString * const HKMetadataKeyCrossTrainerDistance API_AVAILABLE(ios(12.0), watchos(5.0));
 
 NS_ASSUME_NONNULL_END

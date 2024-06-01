@@ -6,8 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MapKit/MKCircle.h>
 #import <MapKit/MKFoundation.h>
+
+#if MK_SUPPORTS_VIEW_CLASSES
+
+#import <MapKit/MKCircle.h>
 #import <MapKit/MKOverlayPathView.h>
 
 // Prefer MKCircleRenderer
@@ -19,3 +22,5 @@ NS_CLASS_AVAILABLE(NA, 4_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED
 @property (nonatomic, readonly) MKCircle *circle NS_DEPRECATED_IOS(4_0, 7_0);
 
 @end
+
+#endif // MK_SUPPORTS_VIEW_CLASSES

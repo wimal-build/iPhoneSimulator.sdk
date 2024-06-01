@@ -86,9 +86,8 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * @method lookupAdConversionDetails:
  *
  * @param completionHandler
- * A block which will be called with the app purchase date and the date at which
- * the user saw an iAd for the app. If no conversion has been tracked, or if
- * Limit Ad Tracking is enabled on the device, both dates will be nil.
+ * This method is deprecated.
+ * A block will be called with iAdImpressionDate = nil
  *
  * The handler will be called on an arbitrary queue.
  *

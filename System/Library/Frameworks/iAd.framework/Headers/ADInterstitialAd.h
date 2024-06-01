@@ -201,5 +201,15 @@ NS_CLASS_DEPRECATED_IOS(4_3, 10_0) @interface ADInterstitialAd : NSObject
 
 @end
 
+@interface ADInterstitialAdPresentationViewController : UIViewController
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+- (id)initForInterstitialAd:(ADInterstitialAd *)interstitialAd;
+#pragma clang diagnostic pop
+- (BOOL)shouldTestVisibilityAtPoint:(CGPoint)point;
+
+@end
+
 NS_ASSUME_NONNULL_END
 

@@ -2,7 +2,7 @@
 //  HKQuantitySample.h
 //  HealthKit
 //
-//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <HealthKit/HKSample.h>
@@ -19,8 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKQuantitySample : HKSample
 
-@property (readonly, strong) HKQuantityType *quantityType;
-@property (readonly, strong) HKQuantity *quantity;
+@property (readonly, copy) HKQuantityType *quantityType;
+@property (readonly, copy) HKQuantity *quantity;
+
+/*!
+ @property      count
+ @abstract      The number of individual values making up the receiver's quantity.
+ @discussion    Requests for the individual series quantities can be made using HKQuantitySeriesSampleQuery.
+ */
+@property (readonly, assign) NSInteger count API_AVAILABLE(ios(12.0), watchos(5.0));
 
 /*!
  @method        quantitySampleWithType:quantity:startDate:endDate:

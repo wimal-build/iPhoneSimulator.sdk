@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollectionViewCell.h>)
 //
 //  UICollectionViewCell.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIView.h>
@@ -78,3 +79,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewCell : UICollectionReusab
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UICollectionViewCell.h>
+#endif

@@ -3,7 +3,7 @@
 
 	Framework:  AVFoundation
 
-	Copyright 2017 Apple Inc. All rights reserved.
+	Copyright 2017-2018 Apple Inc. All rights reserved.
 
 */
 
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion	Certain display modes are more suitable for certain types of content.
  */
 
-API_AVAILABLE(macos(NA), ios(NA), watchos(NA), tvos(11.2))
+API_AVAILABLE(tvos(11.2)) API_UNAVAILABLE(ios) API_UNAVAILABLE(macos, watchos)
 @interface AVDisplayCriteria : NSObject <NSCopying>
 {
 @private

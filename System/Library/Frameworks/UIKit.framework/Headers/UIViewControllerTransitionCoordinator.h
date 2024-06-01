@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIViewControllerTransitionCoordinator.h>)
 //
 //  UIViewControllerTransitionCoordinator.h
 //  UIKit
 //
-//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,8 +14,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UITransitionContextViewControllerKey NS_EXTENSIBLE_STRING_ENUM;
-typedef NSString * UITransitionContextViewKey NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UITransitionContextViewControllerKey NS_TYPED_ENUM;
+typedef NSString * UITransitionContextViewKey NS_TYPED_ENUM;
 #else
 typedef NSString * UITransitionContextViewControllerKey;
 typedef NSString * UITransitionContextViewKey;
@@ -176,3 +177,7 @@ typedef NSString * UITransitionContextViewKey;
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIViewControllerTransitionCoordinator.h>
+#endif

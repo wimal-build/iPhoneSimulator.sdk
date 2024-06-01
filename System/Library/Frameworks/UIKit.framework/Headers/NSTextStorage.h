@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSTextStorage.h>)
 //
 //  NSTextStorage.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -108,3 +109,7 @@ UIKIT_EXTERN NSNotificationName const NSTextStorageDidProcessEditingNotification
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSTextStorage.h>
+#endif

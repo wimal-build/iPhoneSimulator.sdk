@@ -1,11 +1,11 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 81D613A1-6A05-37BA-A4EB-1336E9C617B5', 'x86_64: 2005C619-EDA0-3374-83F9-2EC33429F0A0' ]
+uuids:           [ 'i386: 81D613A1-6A05-37BA-A4EB-1336E9C617B5', 'x86_64: 41AACEA6-B2EB-33B2-89E2-067033AC8C86' ]
 platform:        ios
 install-name:    /usr/lib/libcmph.dylib
 objc-constraint: none
 exports:         
-  - archs:           [ i386, x86_64 ]
+  - archs:           [ i386 ]
     symbols:         [ ___cmph_dump, ___cmph_load, ___config_destroy, ___config_new, 
                        _bdz_config_destroy, _bdz_config_new, _bdz_config_set_b, _bdz_config_set_hashfuncs, 
                        _bdz_destroy, _bdz_dump, _bdz_load, _bdz_lookup_table, _bdz_new, 
@@ -36,20 +36,8 @@ exports:
                        _chd_search, _chd_search_packed, _check_primality, _chm_config_destroy, 
                        _chm_config_new, _chm_config_set_hashfuncs, _chm_destroy, 
                        _chm_dump, _chm_load, _chm_new, _chm_pack, _chm_packed_size, 
-                       _chm_search, _chm_search_packed, _cmph_config_destroy, _cmph_config_new, 
-                       _cmph_config_set_algo, _cmph_config_set_b, _cmph_config_set_graphsize, 
-                       _cmph_config_set_hashfuncs, _cmph_config_set_keys_per_bin, 
-                       _cmph_config_set_memory_availability, _cmph_config_set_mphf_fd, 
-                       _cmph_config_set_tmp_dir, _cmph_config_set_verbosity, _cmph_destroy, 
-                       _cmph_dump, _cmph_hash_names, _cmph_io_byte_vector_adapter, 
-                       _cmph_io_byte_vector_adapter_destroy, _cmph_io_nlfile_adapter, 
-                       _cmph_io_nlfile_adapter_destroy, _cmph_io_nlnkfile_adapter, 
-                       _cmph_io_nlnkfile_adapter_destroy, _cmph_io_struct_vector_adapter, 
-                       _cmph_io_struct_vector_adapter_destroy, _cmph_io_vector_adapter, 
-                       _cmph_io_vector_adapter_destroy, _cmph_load, _cmph_names, 
-                       _cmph_new, _cmph_pack, _cmph_packed_size, _cmph_search, _cmph_search_packed, 
-                       _cmph_size, _compressed_rank_destroy, _compressed_rank_dump, 
-                       _compressed_rank_generate, _compressed_rank_get_space_usage, 
+                       _chm_search, _chm_search_packed, _compressed_rank_destroy, 
+                       _compressed_rank_dump, _compressed_rank_generate, _compressed_rank_get_space_usage, 
                        _compressed_rank_init, _compressed_rank_load, _compressed_rank_pack, 
                        _compressed_rank_packed_size, _compressed_rank_query, _compressed_rank_query_packed, 
                        _compressed_seq_destroy, _compressed_seq_dump, _compressed_seq_generate, 
@@ -83,4 +71,17 @@ exports:
                        _vqueue_print, _vqueue_remove, _vstack_destroy, _vstack_empty, 
                        _vstack_new, _vstack_pop, _vstack_push, _vstack_reserve, _vstack_size, 
                        _vstack_top ]
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _cmph_config_destroy, _cmph_config_new, _cmph_config_set_algo, 
+                       _cmph_config_set_b, _cmph_config_set_graphsize, _cmph_config_set_hashfuncs, 
+                       _cmph_config_set_keys_per_bin, _cmph_config_set_memory_availability, 
+                       _cmph_config_set_mphf_fd, _cmph_config_set_tmp_dir, _cmph_config_set_verbosity, 
+                       _cmph_destroy, _cmph_dump, _cmph_hash_names, _cmph_io_byte_vector_adapter, 
+                       _cmph_io_byte_vector_adapter_destroy, _cmph_io_nlfile_adapter, 
+                       _cmph_io_nlfile_adapter_destroy, _cmph_io_nlnkfile_adapter, 
+                       _cmph_io_nlnkfile_adapter_destroy, _cmph_io_struct_vector_adapter, 
+                       _cmph_io_struct_vector_adapter_destroy, _cmph_io_vector_adapter, 
+                       _cmph_io_vector_adapter_destroy, _cmph_load, _cmph_names, 
+                       _cmph_new, _cmph_pack, _cmph_packed_size, _cmph_search, _cmph_search_packed, 
+                       _cmph_size ]
 ...

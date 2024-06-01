@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollectionViewTransitionLayout.h>)
 //
 //  UICollectionView.h
 //  UIKit
 //
-//  Copyright (c) 2012-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2012-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UICollectionViewLayout.h>
@@ -30,3 +31,7 @@ NS_ASSUME_NONNULL_END
 
 
 
+
+#else
+#import <UIKitCore/UICollectionViewTransitionLayout.h>
+#endif

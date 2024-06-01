@@ -8,7 +8,7 @@
 
 /*
  *  CMError
- *  
+ *
  *  Discussion:
  *    Error returned as code to NSError from CoreMotion.
  */

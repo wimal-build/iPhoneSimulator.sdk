@@ -18,6 +18,8 @@
 @class INDoubleResolutionResult;
 @class INIntegerResolutionResult;
 @class INRelativeSettingResolutionResult;
+@class INSpeakableString;
+@class INSpeakableStringResolutionResult;
 @class INTemperatureResolutionResult;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,7 +38,8 @@ API_UNAVAILABLE(watchos, macosx)
           relativeFanSpeedSetting:(INRelativeSetting)relativeFanSpeedSetting
                       temperature:(nullable NSMeasurement<NSUnitTemperature *> *)temperature
        relativeTemperatureSetting:(INRelativeSetting)relativeTemperatureSetting
-                      climateZone:(INCarSeat)climateZone NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT;
+                      climateZone:(INCarSeat)climateZone
+                          carName:(nullable INSpeakableString *)carName NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT API_AVAILABLE(ios(12.0));
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *enableFan NS_REFINED_FOR_SWIFT;
 
@@ -59,6 +62,8 @@ API_UNAVAILABLE(watchos, macosx)
 @property (readonly, assign, NS_NONATOMIC_IOSONLY) INRelativeSetting relativeTemperatureSetting;
 
 @property (readonly, assign, NS_NONATOMIC_IOSONLY) INCarSeat climateZone;
+
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INSpeakableString *carName API_AVAILABLE(ios(12.0));
 
 @end
 
@@ -145,6 +150,9 @@ API_UNAVAILABLE(watchos, macosx)
 
 - (void)resolveClimateZoneForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
                     withCompletion:(void (^)(INCarSeatResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveClimateZone(for:with:));
+
+- (void)resolveCarNameForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *)intent
+                    withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveCarName(for:with:)) API_AVAILABLE(ios(12.0));
 
 @end
 

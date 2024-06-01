@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITabBarController.h>)
 //
 //  UITabBarController.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -77,3 +78,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITabBarController : UIViewController <UI
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITabBarController.h>
+#endif

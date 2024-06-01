@@ -21,7 +21,7 @@ typedef CIImage * _Nullable (^PHLivePhotoFrameProcessingBlock)(id <PHLivePhotoFr
 
 typedef NSString * const PHLivePhotoEditingOption NS_STRING_ENUM;
 
-NS_AVAILABLE(12_0, 10_0)
+NS_AVAILABLE(10_12, 10_0)
 @interface PHLivePhotoEditingContext : NSObject
 
 /// Initializer from the specified live photo input

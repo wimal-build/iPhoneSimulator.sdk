@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: 9B0501DB-BFA7-3AD2-9B34-F81964EFFFFB' ]
+uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: 39FAA7B2-E667-3C97-AE1F-CB64DEE0F261' ]
 platform:        ios
 install-name:    /usr/lib/libAWDSupport.dylib
 objc-constraint: none
@@ -65,9 +65,11 @@ exports:
                        __ZN29LibraryMetadataLoaderDelegate24readDeviceConfigMetadataEv, 
                        __ZN29LibraryMetadataLoaderDelegate9parseDataENSt3__14pairIPKhmEE, 
                        __ZN29LibraryMetadataLoaderDelegateD0Ev, __ZN29LibraryMetadataLoaderDelegateD1Ev, 
-                       __ZN29LibraryMetadataLoaderDelegateD2Ev, __ZN3awd21kAWDMetricInfoUnknownE, 
-                       __ZN3awd7reflect18ProtobufWriterBase11writeIndentEv, __ZN3awd7reflect18ProtobufWriterBase16writeSimpleFieldEPKcRKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE, 
+                       __ZN29LibraryMetadataLoaderDelegateD2Ev, __ZN3awd15serializeMetricERKN6google8protobuf11MessageLiteEj, 
+                       __ZN3awd21kAWDMetricInfoUnknownE, __ZN3awd7reflect18ProtobufWriterBase11writeIndentEv, 
+                       __ZN3awd7reflect18ProtobufWriterBase16writeSimpleFieldEPKcRKNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE, 
                        __ZN3awd7reflect18ProtobufWriterBase18sGetBytesHexStringEPKvm, 
+                       __ZN3awd8protobuf9skipFieldERN6google8protobuf2io16CodedInputStreamENS_7reflect8WireTypeE, 
                        __ZN5boost10filesystem11path_traits8dispatchERKNS0_15directory_entryERNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEE, 
                        __ZN5boost10filesystem11path_traits8dispatchERKNS0_15directory_entryERNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEERKNS5_7codecvtIwc11__mbstate_tEE, 
                        __ZN5boost10filesystem4path11m_normalizeEv, __ZN5boost10filesystem4path15remove_filenameEv, 
@@ -199,7 +201,9 @@ exports:
                        __Z21sConvertTriggerToJsonRKNSt3__110shared_ptrI17AwdMetadataLoaderEEPKhm, 
                        __Z40sCreateAwdMetadataLoaderForXpcConversionv, __Z41sCreateAwdMetadataLoaderForJsonConversionv, 
                        __ZN32BestChoiceMetadataLoaderDelegate14getMetricIndexEv, 
-                       __ZN3awd14GetProtobufTagEPKhm, __ZN3awd7reflect13getPackedTypeENS0_4TypeE, 
+                       __ZN3awd14GetProtobufTagEPKhm, __ZN3awd15serializeMetricERKN20wireless_diagnostics6google8protobuf11MessageLiteEj, 
+                       __ZN3awd15serializeMetricERKN2PB4BaseEj, __ZN3awd7reflect13getPackedTypeENS0_4TypeE, 
+                       __ZN3awd8protobuf9skipFieldERN20wireless_diagnostics6google8protobuf2io16CodedInputStreamENS_7reflect8WireTypeE, 
                        __ZNK14MetadataHandle10getMessageEv, __ZNK14MetadataHandle7getEnumEv, 
                        __ZNK14MetadataHandle8getFieldEv, __ZNK17AwdMetadataLoader14getMetricIndexEv ]
     weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
@@ -239,9 +243,8 @@ exports:
                        __ZN32BestChoiceMetadataLoaderDelegateC1Ev, __ZN32BestChoiceMetadataLoaderDelegateC2Ev, 
                        __ZN32BestChoiceMetadataLoaderDelegateD0Ev, __ZN32BestChoiceMetadataLoaderDelegateD1Ev, 
                        __ZN32BestChoiceMetadataLoaderDelegateD2Ev, __ZN3awd14GetProtobufTagERKNSt3__16vectorIhNS0_9allocatorIhEEEE, 
-                       __ZN3awd15getAWDTimestampEv, __ZN3awd15serializeMetricERKN6google8protobuf11MessageLiteEj, 
-                       __ZN3awd18timevalToTimestampER7timeval, __ZN3awd20createTagForProtobufEjm, 
-                       __ZN3awd21tagSerializedProtobufEjRNSt3__16vectorIhNS0_9allocatorIhEEEE, 
+                       __ZN3awd15getAWDTimestampEv, __ZN3awd18timevalToTimestampER7timeval, 
+                       __ZN3awd20createTagForProtobufEjm, __ZN3awd21tagSerializedProtobufEjRNSt3__16vectorIhNS0_9allocatorIhEEEE, 
                        __ZN3awd23getComponentForMetricIdEj, __ZN3awd27AwddStartedNotificationNameE, 
                        __ZN3awd29AwddStartedNotificationObjectE, __ZN3awd7reflect15getDecodingTypeENS0_4TypeENS0_8WireTypeE, 
                        __ZN3awd7reflect15getUnpackedTypeENS0_4TypeE, __ZN3awd7reflect18getWireTypeForTypeENS0_4TypeE, 
@@ -255,7 +258,6 @@ exports:
                        __ZN3awd8protobuf15NumberConverterILNS_7reflect4TypeE5EE6encodeEx, 
                        __ZN3awd8protobuf15NumberConverterILNS_7reflect4TypeE8EE6decodeEy, 
                        __ZN3awd8protobuf15NumberConverterILNS_7reflect4TypeE8EE6encodeEi, 
-                       __ZN3awd8protobuf9skipFieldERN6google8protobuf2io16CodedInputStreamENS_7reflect8WireTypeE, 
                        __ZNK14MetadataHelper14getBuiltinTypeE14MetadataHandle, __ZNK14MetadataHelper18descendIntoMessageE14MetadataHandle, 
                        __ZNK14MetadataHelper23resolveSubfieldInHandleE14MetadataHandlej, 
                        __ZNK14MetadataHelper8getFieldE14MetadataHandle, __ZNK17AwdMetadataLoader22getComponentsAvailableEv, 

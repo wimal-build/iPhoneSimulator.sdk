@@ -20,6 +20,8 @@ API_AVAILABLE(ios(8.3))
 
 - (instancetype)initWithPaymentButtonType:(PKPaymentButtonType)type paymentButtonStyle:(PKPaymentButtonStyle)style API_AVAILABLE(ios(9.0)) NS_DESIGNATED_INITIALIZER;
 
+@property (nonatomic, assign) CGFloat cornerRadius API_AVAILABLE(ios(12.0));
+
 @end
 
 NS_ASSUME_NONNULL_END

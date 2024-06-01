@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSShadow.h>)
 //
 //  NSShadow.h
 //  UIKit
 //
-//  Copyright (c) 2002-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2002-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  To set a shadow on an NSAttributedString use it as a value for NSShadowAttributeName.
  */
 
-NS_CLASS_AVAILABLE_IOS(6_0) @interface NSShadow : NSObject <NSCopying, NSCoding>
+NS_CLASS_AVAILABLE_IOS(6_0) @interface NSShadow : NSObject <NSCopying, NSSecureCoding>
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
@@ -27,3 +28,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface NSShadow : NSObject <NSCopying, NSCoding>
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSShadow.h>
+#endif

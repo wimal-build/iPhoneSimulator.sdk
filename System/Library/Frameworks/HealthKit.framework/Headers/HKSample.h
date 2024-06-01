@@ -2,7 +2,7 @@
 //  HKSample.h
 //  HealthKit
 //
-//  Copyright (c) 2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <HealthKit/HKObject.h>
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 @interface HKSample : HKObject
 
-@property (readonly, strong) HKSampleType *sampleType;
+@property (readonly, copy) HKSampleType *sampleType;
 
 @property (readonly, strong) NSDate *startDate;
 @property (readonly, strong) NSDate *endDate;

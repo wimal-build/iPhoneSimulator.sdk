@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILocalizedIndexedCollation.h>)
 //
 //  UILocalizedIndexedCollation.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -38,3 +39,7 @@ NS_CLASS_AVAILABLE_IOS(3_0) @interface UILocalizedIndexedCollation : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UILocalizedIndexedCollation.h>
+#endif

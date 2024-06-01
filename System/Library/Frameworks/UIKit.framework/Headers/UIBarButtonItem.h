@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIBarButtonItem.h>)
 //
 //  UIBarButtonItem.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -126,3 +127,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIBarButtonItem : UIBarItem <NSCoding>
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UIBarButtonItem.h>
+#endif

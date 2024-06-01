@@ -2,7 +2,7 @@
 //  HKHealthStore.h
 //  HealthKit
 //
-//  Copyright (c) 2013-2014 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
 
 #import <HealthKit/HKDefines.h>
@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class HKSourceRevision;
 @class HKUnit;
 @class HKWorkout;
+@class HKWorkoutBuilder;
 @class HKWorkoutConfiguration;
 @class HKWorkoutSession;
 
@@ -40,6 +41,16 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 before attempting to use other parts of the framework.
  */
 + (BOOL)isHealthDataAvailable;
+
+/*!
+ @method        supportsHealthRecords
+ @abstract      Returns YES if the Health Records feature is available.
+ @discussion    The Health Records feature is not available in all regions but may be present in unsupported regions
+                if accounts have already been configured. This can change as accounts are modified during device
+                restore or synchronization.
+                Call supportsHealthRecords before attempting to request authorization for any clinical types.
+ */
+- (BOOL)supportsHealthRecords API_AVAILABLE(ios(12.0)) __WATCHOS_PROHIBITED;
 
 /*!
  @method        authorizationStatusForType:
@@ -67,6 +78,18 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 - (void)requestAuthorizationToShareTypes:(nullable NSSet<HKSampleType *> *)typesToShare
                                readTypes:(nullable NSSet<HKObjectType *> *)typesToRead
                               completion:(void (^)(BOOL success, NSError * _Nullable error))completion;
+
+/*!
+ @method        getRequestStatusForAuthorizationToShareTypes:readTypes:completion:
+ @abstract      Determines whether requesting authorization for the given types is necessary.
+ @discussion    Applications may call this method to determine whether the user would be prompted for authorization if
+                the same collections of types are passed to requestAuthorizationToShareTypes:readTypes:completion:.
+                This determination is performed asynchronously and its completion will be executed on an arbitrary
+                background queue.
+ */
+- (void)getRequestStatusForAuthorizationToShareTypes:(NSSet<HKSampleType *> *)typesToShare
+                                           readTypes:(NSSet<HKObjectType *> *)typesToRead
+                                          completion:(void (^)(HKAuthorizationRequestStatus requestStatus, NSError * _Nullable error))completion API_AVAILABLE(ios(12.0), watchos(5.0));
 
 /*!
  @method        handleAuthorizationForExtensionWithCompletion:
@@ -238,7 +261,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
  @discussion    This method will asynchronously begin a workout session. The methods on the session's delegate will be 
                 called when the session has successfully started or fails to start.
  */
-- (void)startWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(2.0)) API_UNAVAILABLE(ios);
+- (void)startWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's start method", watchos(2.0, 5.0)) __IOS_PROHIBITED;
 
 /*!
  @method        endWorkoutSession:
@@ -247,7 +270,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 transition to HKWorkoutSessionStateEnded. Once a workout session is ended, it cannot be reused to start
                 a new workout session.
  */
-- (void)endWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(2.0)) API_UNAVAILABLE(ios);
+- (void)endWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's end method", watchos(2.0, 5.0)) __IOS_PROHIBITED;
 
 /*!
  @method        pauseWorkoutSession:
@@ -256,7 +279,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 will transition to HKWorkoutSessionStatePaused. An HKWorkoutEventTypePause will be generated and
                 delivered to the workout session's delegate.
  */
-- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(3.0)) API_UNAVAILABLE(ios);
+- (void)pauseWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's pause method", watchos(2.0, 5.0)) __IOS_PROHIBITED;
 
 /*!
  @method        resumeWorkoutSession:
@@ -265,7 +288,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 will transition to HKWorkoutSessionStateRunning. An HKWorkoutEventTypeResume will be generated and
                 delivered to the workout session's delegate.
  */
-- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession API_AVAILABLE(watchos(3.0)) API_UNAVAILABLE(ios);
+- (void)resumeWorkoutSession:(HKWorkoutSession *)workoutSession API_DEPRECATED("Use HKWorkoutSession's resume method", watchos(2.0, 5.0)) __IOS_PROHIBITED;
 
 /*!
  @method        startWatchAppWithWorkoutConfiguration:completion:
@@ -276,6 +299,13 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
                 this configuration object to create an HKWorkoutSession and start it with -startWorkoutSession:.
  */
 - (void)startWatchAppWithWorkoutConfiguration:(HKWorkoutConfiguration *)workoutConfiguration completion:(void (^)(BOOL success, NSError * _Nullable error))completion API_AVAILABLE(ios(10.0)) API_UNAVAILABLE(watchos);
+
+/*!
+ @method        recoverActiveWorkoutSessionWithCompletion:
+ @abstract      Recovers an active workout session after a client crash. If no session is available to be re-attached,
+                nil will be returned. If an error occurs, session will be nil and error will be set appropriately.
+ */
+- (void)recoverActiveWorkoutSessionWithCompletion:(void (^)(HKWorkoutSession * _Nullable session, NSError * _Nullable error))completion API_AVAILABLE(watchos(5.0)) __IOS_PROHIBITED;
 
 @end
 

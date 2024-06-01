@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITouch.h>)
 //
 //  UITouch.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -30,7 +31,8 @@ typedef NS_ENUM(NSInteger, UIForceTouchCapability) {
 typedef NS_ENUM(NSInteger, UITouchType) {
     UITouchTypeDirect,                       // A direct touch from a finger (on a screen)
     UITouchTypeIndirect,                     // An indirect touch (not a screen)
-    UITouchTypeStylus NS_AVAILABLE_IOS(9_1), // A touch from a stylus
+    UITouchTypePencil NS_AVAILABLE_IOS(9_1), // Add pencil name variant
+    UITouchTypeStylus NS_AVAILABLE_IOS(9_1) = UITouchTypePencil, // A touch from a stylus (deprecated name, use pencil)
 } NS_ENUM_AVAILABLE_IOS(9_0);
 
 typedef NS_OPTIONS(NSInteger, UITouchProperties) {
@@ -96,3 +98,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITouch : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITouch.h>
+#endif

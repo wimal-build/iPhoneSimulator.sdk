@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4F517D50-DB30-3EA3-9AB4-06AC6474FD1B', 'x86_64: 73E93331-3E72-36FA-BC0C-ECA06E15DBE7' ]
+uuids:           [ 'i386: 4F517D50-DB30-3EA3-9AB4-06AC6474FD1B', 'x86_64: F810F3AB-2291-3C52-B397-F873ED40B181' ]
 platform:        ios
 install-name:    /usr/lib/libMobileGestalt.dylib
 objc-constraint: none
@@ -13,10 +13,11 @@ exports:
                        _MGIsQuestionValid, _MGRegisterForBulkUpdates, _MGRegisterForUpdates, 
                        _MGSetAnswer, _MGSetLogHandler, __MGCacheValid, __MGClearInProcessCache, 
                        __MGCopyDeviceDescription, __MGCopyIteratedDeviceDescription, 
-                       __MGIterateDevices, __MGLog, __MGPrintIteratedDeviceDescription, 
-                       __MGServerCopyAnswerWithError, __MGSetServer, __MGWaitForDevices, 
-                       __MGWriteCache, _kMGQDiskUsageAmountDataAvailable, _kMGQDiskUsageAmountDataReserved, 
-                       _kMGQDiskUsageAmountRestoreAvailable, _kMGQDiskUsageTotalDataAvailable, 
-                       _kMGQDiskUsageTotalDataCapacity, _kMGQDiskUsageTotalDiskCapacity, 
-                       _kMGQDiskUsageTotalSystemAvailable, _kMGQDiskUsageTotalSystemCapacity ]
+                       __MGGetFastPathLog, __MGIterateDevices, __MGLog, __MGPrintIteratedDeviceDescription, 
+                       __MGServerCopyAnswerWithError, __MGServerQuestionIsPlatform, 
+                       __MGSetServer, __MGWaitForDevices, __MGWriteCache, _kMGQDiskUsageAmountDataAvailable, 
+                       _kMGQDiskUsageAmountDataReserved, _kMGQDiskUsageAmountRestoreAvailable, 
+                       _kMGQDiskUsageTotalDataAvailable, _kMGQDiskUsageTotalDataCapacity, 
+                       _kMGQDiskUsageTotalDiskCapacity, _kMGQDiskUsageTotalSystemAvailable, 
+                       _kMGQDiskUsageTotalSystemCapacity ]
 ...

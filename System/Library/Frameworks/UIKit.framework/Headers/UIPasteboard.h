@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPasteboard.h>)
 //
 //  UIPasteboard.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #if UIKIT_STRING_ENUMS
-typedef NSString * UIPasteboardName NS_EXTENSIBLE_STRING_ENUM;
+typedef NSString * UIPasteboardName NS_TYPED_EXTENSIBLE_ENUM;
 #else
 typedef NSString * UIPasteboardName;
 #endif
@@ -73,14 +74,14 @@ NS_CLASS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED __WATCHOS_PROHIBITED @interface UI
 - (BOOL)containsPasteboardTypes:(NSArray<NSString *> *)pasteboardTypes inItemSet:(nullable NSIndexSet *)itemSet;
 - (nullable NSIndexSet *)itemSetWithPasteboardTypes:(NSArray<NSString *> *)pasteboardTypes;
 - (nullable NSArray *)valuesForPasteboardType:(NSString *)pasteboardType inItemSet:(nullable NSIndexSet *)itemSet;
-- (nullable NSArray *)dataForPasteboardType:(NSString *)pasteboardType inItemSet:(nullable NSIndexSet *)itemSet;
+- (nullable NSArray<NSData *> *)dataForPasteboardType:(NSString *)pasteboardType inItemSet:(nullable NSIndexSet *)itemSet;
 
 // Direct access
 
 @property(nonatomic,copy) NSArray<NSDictionary<NSString *, id> *> *items;
 - (void)addItems:(NSArray<NSDictionary<NSString *, id> *> *)items;
 
-typedef NSString * UIPasteboardOption NS_EXTENSIBLE_STRING_ENUM NS_AVAILABLE_IOS(10_0);
+typedef NSString * UIPasteboardOption NS_TYPED_ENUM NS_AVAILABLE_IOS(10_0);
 
 UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionExpirationDate __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0) NS_SWIFT_NAME(UIPasteboardOption.expirationDate); // Value: NSDate.
 UIKIT_EXTERN UIPasteboardOption const UIPasteboardOptionLocalOnly __TVOS_PROHIBITED __WATCHOS_PROHIBITED NS_AVAILABLE_IOS(10_0) NS_SWIFT_NAME(UIPasteboardOption.localOnly); // Value: NSNumber, boolean.
@@ -129,3 +130,7 @@ UIKIT_EXTERN NSString * const UIPasteboardTypeAutomatic __TVOS_PROHIBITED __WATC
 
 NS_ASSUME_NONNULL_END
     
+
+#else
+#import <UIKitCore/UIPasteboard.h>
+#endif

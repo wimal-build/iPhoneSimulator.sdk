@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, INMessageAttribute) {
     INMessageAttributeUnread,
     INMessageAttributeFlagged,
     INMessageAttributeUnflagged,
-    INMessageAttributePlayed API_AVAILABLE(ios(11.0), watchos(4.0), macosx(10.13)),
-} API_AVAILABLE(ios(10.0), watchos(3.2), macosx(10.12));
+    INMessageAttributePlayed API_AVAILABLE(ios(11.0), watchos(4.0)),
+} API_AVAILABLE(ios(10.0), watchos(3.2)) API_UNAVAILABLE(macosx);
 
 #endif // INMessageAttribute_h

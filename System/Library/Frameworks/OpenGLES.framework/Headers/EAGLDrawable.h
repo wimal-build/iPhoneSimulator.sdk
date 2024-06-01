@@ -6,6 +6,7 @@
 #define _EAGL_DRAWABLE_H_
 
 #include <OpenGLES/EAGL.h>
+#include <OpenGLES/OpenGLESAvailability.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,7 +39,8 @@ EAGL_EXTERN NSString * const kEAGLColorFormatSRGBA8 NS_AVAILABLE_IOS(7_0);
 /************************************************************************/
 /* EAGLDrawable Interface                                               */
 /************************************************************************/
-@protocol EAGLDrawable
+
+@protocol EAGLDrawable 
 
 /* Contains keys from kEAGLDrawableProperty* above */
 @property(nullable, copy) NSDictionary<NSString*, id>* drawableProperties;
@@ -46,6 +48,7 @@ EAGL_EXTERN NSString * const kEAGLColorFormatSRGBA8 NS_AVAILABLE_IOS(7_0);
 @end
 
 /* Extends EAGLContext interface */
+OPENGLES_DEPRECATED(ios(2.0, 12.0), tvos(9.0, 12.0))
 @interface EAGLContext (EAGLContextDrawableAdditions)
 
 /* Attaches an EAGLDrawable as storage for the OpenGL ES renderbuffer object bound to <target> */

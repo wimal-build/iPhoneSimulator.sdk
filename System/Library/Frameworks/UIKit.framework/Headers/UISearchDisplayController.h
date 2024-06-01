@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UISearchDisplayController.h>)
 //
 //  UISearchDisplayController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -68,3 +69,7 @@ __TVOS_PROHIBITED
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UISearchDisplayController.h>
+#endif

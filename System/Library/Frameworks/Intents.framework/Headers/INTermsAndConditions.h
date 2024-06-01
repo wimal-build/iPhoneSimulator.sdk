@@ -8,6 +8,8 @@
 //
 // http://mapsconnect.apple.com/info/extensions
 
+#import <Foundation/Foundation.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(10.0))

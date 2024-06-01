@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityZoom.h>)
 //
 //  UIAccessibilityZoom.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -27,3 +28,7 @@ UIKIT_EXTERN void UIAccessibilityZoomFocusChanged(UIAccessibilityZoomType type, 
 UIKIT_EXTERN void UIAccessibilityRegisterGestureConflictWithZoom(void) NS_AVAILABLE_IOS(5_0);
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIAccessibilityZoom.h>
+#endif

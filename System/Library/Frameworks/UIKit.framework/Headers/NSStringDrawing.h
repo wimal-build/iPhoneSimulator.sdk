@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSStringDrawing.h>)
 //
 //  NSStringDrawing.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSString.h>
@@ -64,8 +65,12 @@ typedef NS_OPTIONS(NSInteger, NSStringDrawingOptions) {
 
 /************************ Deprecated ************************/
 @interface NSStringDrawingContext (NSStringDrawingContextDeprecated)
-@property (nonatomic) CGFloat minimumTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
-@property (nonatomic, readonly) CGFloat actualTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+@property (nonatomic) CGFloat minimumTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED API_UNAVAILABLE(macos);
+@property (nonatomic, readonly) CGFloat actualTrackingAdjustment NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED API_UNAVAILABLE(macos);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSStringDrawing.h>
+#endif

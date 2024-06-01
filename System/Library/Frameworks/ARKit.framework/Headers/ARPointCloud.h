@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARPointCloud : NSObject <NSSecureCoding>
 
 /**
@@ -21,7 +21,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  The 3D points comprising the point cloud.
  */
-@property (nonatomic, readonly) const vector_float3 *points NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly) const simd_float3 *points NS_REFINED_FOR_SWIFT;
 
 /**
  The 3D point identifiers comprising the point cloud.

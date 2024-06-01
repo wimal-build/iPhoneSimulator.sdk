@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIFeedbackGenerator.h>)
 //
 //  UIFeedbackGenerator.h
 //  UIKit
 //
-//  Copyright © 2016-2017 Apple Inc. All rights reserved.
+//  Copyright © 2016-2018 Apple Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKitDefines.h>
@@ -19,3 +20,7 @@ UIKIT_CLASS_AVAILABLE_IOS_ONLY(10_0) @interface UIFeedbackGenerator : NSObject
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIFeedbackGenerator.h>
+#endif

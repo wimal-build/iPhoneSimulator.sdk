@@ -1,19 +1,12 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D06E0660-428B-3A4E-AF7F-3392A9E4994D', 'x86_64: F2A3C04B-B58A-3336-8226-07EB955662E8' ]
+uuids:           [ 'i386: D06E0660-428B-3A4E-AF7F-3392A9E4994D', 'x86_64: A68506DC-BA2F-3A48-AEFA-ACF78941C61E' ]
 platform:        ios
 install-name:    /usr/lib/libobjc.A.dylib
 current-version: 228
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
-    symbols:         [ _objc_msgLookupSuper, _objc_msgLookupSuper_stret ]
-  - archs:           [ x86_64 ]
-    symbols:         [ __objc_getClassForTag, __objc_registerTaggedPointerClass, 
-                       _objc_msgLookup_fp2ret, _objc_msgSendSuper2_fixup, _objc_msgSendSuper2_stret_fixup, 
-                       _objc_msgSend_fixup, _objc_msgSend_fp2ret, _objc_msgSend_fp2ret_debug, 
-                       _objc_msgSend_fp2ret_fixup, _objc_msgSend_fpret_fixup, _objc_msgSend_stret_fixup ]
-  - archs:           [ i386, x86_64 ]
     symbols:         [ '$ld$hide$os2.0$_OBJC_CLASS_$_NSObject', '$ld$hide$os2.0$_OBJC_IVAR_$_NSObject.isa', 
                        '$ld$hide$os2.0$_OBJC_METACLASS_$_NSObject', '$ld$hide$os2.1$_OBJC_CLASS_$_NSObject', 
                        '$ld$hide$os2.1$_OBJC_IVAR_$_NSObject.isa', '$ld$hide$os2.1$_OBJC_METACLASS_$_NSObject', 
@@ -32,7 +25,15 @@ exports:
                        '$ld$hide$os5.0$_OBJC_CLASS_$_NSObject', '$ld$hide$os5.0$_OBJC_IVAR_$_NSObject.isa', 
                        '$ld$hide$os5.0$_OBJC_METACLASS_$_NSObject', '$ld$hide$os5.1$_OBJC_CLASS_$_NSObject', 
                        '$ld$hide$os5.1$_OBJC_IVAR_$_NSObject.isa', '$ld$hide$os5.1$_OBJC_METACLASS_$_NSObject', 
-                       _NXCompareHashTables, _NXCompareMapTables, _NXCopyHashTable, 
+                       __class_setIvarLayoutAccessor, __object_getIvarLayout, _gdb_objc_messenger_breakpoints, 
+                       _objc_msgLookupSuper, _objc_msgLookupSuper_stret, _objc_setMultithreaded ]
+  - archs:           [ x86_64 ]
+    symbols:         [ __objc_getClassForTag, __objc_registerTaggedPointerClass, 
+                       _objc_msgLookup_fp2ret, _objc_msgSendSuper2_fixup, _objc_msgSendSuper2_stret_fixup, 
+                       _objc_msgSend_fixup, _objc_msgSend_fp2ret, _objc_msgSend_fp2ret_debug, 
+                       _objc_msgSend_fp2ret_fixup, _objc_msgSend_fpret_fixup, _objc_msgSend_stret_fixup ]
+  - archs:           [ i386, x86_64 ]
+    symbols:         [ _NXCompareHashTables, _NXCompareMapTables, _NXCopyHashTable, 
                        _NXCountHashTable, _NXCountMapTable, _NXCreateHashTable, _NXCreateHashTableFromZone, 
                        _NXCreateMapTable, _NXCreateMapTableFromZone, _NXEmptyHashTable, 
                        _NXFreeHashTable, _NXFreeMapTable, _NXHashGet, _NXHashInsert, 
@@ -44,18 +45,18 @@ exports:
                        _NXResetMapTable, _NXStrHash, _NXStrIsEqual, _NXStrPrototype, 
                        _NXStrStructKeyPrototype, _NXStrValueMapPrototype, _OBJC_EHTYPE_id, 
                        ___objc_personality_v0, __class_getIvarMemoryManagement, __class_isFutureClass, 
-                       __class_setIvarLayoutAccessor, __objcInit, __objc_atfork_child, 
-                       __objc_atfork_parent, __objc_atfork_prepare, __objc_autoreleasePoolPop, 
-                       __objc_autoreleasePoolPrint, __objc_autoreleasePoolPush, __objc_deallocOnMainThreadHelper, 
-                       __objc_empty_cache, __objc_empty_vtable, __objc_flush_caches, 
-                       __objc_getFreedObjectClass, __objc_init, __objc_msgForward, 
-                       __objc_msgForward_stret, __objc_rootAlloc, __objc_rootAllocWithZone, 
-                       __objc_rootAutorelease, __objc_rootDealloc, __objc_rootFinalize, 
-                       __objc_rootHash, __objc_rootInit, __objc_rootIsDeallocating, 
+                       __objcInit, __objc_atfork_child, __objc_atfork_parent, __objc_atfork_prepare, 
+                       __objc_autoreleasePoolPop, __objc_autoreleasePoolPrint, __objc_autoreleasePoolPush, 
+                       __objc_deallocOnMainThreadHelper, __objc_empty_cache, __objc_empty_vtable, 
+                       __objc_flush_caches, __objc_getFreedObjectClass, __objc_init, 
+                       __objc_msgForward, __objc_msgForward_stret, __objc_rootAlloc, 
+                       __objc_rootAllocWithZone, __objc_rootAutorelease, __objc_rootDealloc, 
+                       __objc_rootFinalize, __objc_rootHash, __objc_rootInit, __objc_rootIsDeallocating, 
                        __objc_rootRelease, __objc_rootReleaseWasZero, __objc_rootRetain, 
                        __objc_rootRetainCount, __objc_rootTryRetain, __objc_rootZone, 
-                       __objc_setBadAllocHandler, __object_getIvarLayout, __protocol_getMethodTypeEncoding, 
-                       _class_addIvar, _class_addMethod, _class_addProperty, _class_addProtocol, 
+                       __objc_setBadAllocHandler, __objc_setClassCopyFixupHandler, 
+                       __protocol_getMethodTypeEncoding, _class_addIvar, _class_addMethod, 
+                       _class_addMethodsBulk, _class_addProperty, _class_addProtocol, 
                        _class_conformsToProtocol, _class_copyIvarList, _class_copyMethodList, 
                        _class_copyPropertyList, _class_copyProtocolList, _class_createInstance, 
                        _class_createInstances, _class_getClassMethod, _class_getClassVariable, 
@@ -64,9 +65,9 @@ exports:
                        _class_getMethodImplementation_stret, _class_getName, _class_getProperty, 
                        _class_getSuperclass, _class_getVersion, _class_getWeakIvarLayout, 
                        _class_isMetaClass, _class_lookupMethod, _class_replaceMethod, 
-                       _class_replaceProperty, _class_respondsToMethod, _class_respondsToSelector, 
-                       _class_setIvarLayout, _class_setSuperclass, _class_setVersion, 
-                       _class_setWeakIvarLayout, _gdb_class_getClass, _gdb_objc_messenger_breakpoints, 
+                       _class_replaceMethodsBulk, _class_replaceProperty, _class_respondsToMethod, 
+                       _class_respondsToSelector, _class_setIvarLayout, _class_setSuperclass, 
+                       _class_setVersion, _class_setWeakIvarLayout, _gdb_class_getClass, 
                        _gdb_objc_realized_classes, _gdb_object_getClass, _imp_getBlock, 
                        _imp_implementationWithBlock, _imp_removeBlock, _instrumentObjcMessageSends, 
                        _ivar_getName, _ivar_getOffset, _ivar_getTypeEncoding, _method_copyArgumentType, 
@@ -78,16 +79,17 @@ exports:
                        _objc_allocateProtocol, _objc_autorelease, _objc_autoreleasePoolPop, 
                        _objc_autoreleasePoolPush, _objc_autoreleaseReturnValue, _objc_begin_catch, 
                        _objc_clear_deallocating, _objc_constructInstance, _objc_copyClassList, 
-                       _objc_copyClassNamesForImage, _objc_copyCppObjectAtomic, _objc_copyImageNames, 
-                       _objc_copyProtocolList, _objc_copyStruct, _objc_copyWeak, 
-                       _objc_debug_class_rw_data_mask, _objc_debug_indexed_isa_index_mask, 
-                       _objc_debug_indexed_isa_index_shift, _objc_debug_indexed_isa_magic_mask, 
-                       _objc_debug_indexed_isa_magic_value, _objc_debug_isa_class_mask, 
-                       _objc_debug_isa_magic_mask, _objc_debug_isa_magic_value, _objc_debug_taggedpointer_classes, 
-                       _objc_debug_taggedpointer_ext_classes, _objc_debug_taggedpointer_ext_mask, 
-                       _objc_debug_taggedpointer_ext_payload_lshift, _objc_debug_taggedpointer_ext_payload_rshift, 
-                       _objc_debug_taggedpointer_ext_slot_mask, _objc_debug_taggedpointer_ext_slot_shift, 
-                       _objc_debug_taggedpointer_mask, _objc_debug_taggedpointer_payload_lshift, 
+                       _objc_copyClassNamesForImage, _objc_copyClassNamesForImageHeader, 
+                       _objc_copyCppObjectAtomic, _objc_copyImageNames, _objc_copyProtocolList, 
+                       _objc_copyStruct, _objc_copyWeak, _objc_debug_class_rw_data_mask, 
+                       _objc_debug_indexed_isa_index_mask, _objc_debug_indexed_isa_index_shift, 
+                       _objc_debug_indexed_isa_magic_mask, _objc_debug_indexed_isa_magic_value, 
+                       _objc_debug_isa_class_mask, _objc_debug_isa_magic_mask, _objc_debug_isa_magic_value, 
+                       _objc_debug_taggedpointer_classes, _objc_debug_taggedpointer_ext_classes, 
+                       _objc_debug_taggedpointer_ext_mask, _objc_debug_taggedpointer_ext_payload_lshift, 
+                       _objc_debug_taggedpointer_ext_payload_rshift, _objc_debug_taggedpointer_ext_slot_mask, 
+                       _objc_debug_taggedpointer_ext_slot_shift, _objc_debug_taggedpointer_mask, 
+                       _objc_debug_taggedpointer_obfuscator, _objc_debug_taggedpointer_payload_lshift, 
                        _objc_debug_taggedpointer_payload_rshift, _objc_debug_taggedpointer_slot_mask, 
                        _objc_debug_taggedpointer_slot_shift, _objc_destroyWeak, _objc_destructInstance, 
                        _objc_disposeClassPair, _objc_duplicateClass, _objc_ehtype_vtable, 
@@ -110,7 +112,7 @@ exports:
                        _objc_retainAutoreleasedReturnValue, _objc_retainBlock, _objc_retain_autorelease, 
                        _objc_retainedObject, _objc_setAssociatedObject, _objc_setEnumerationMutationHandler, 
                        _objc_setExceptionMatcher, _objc_setExceptionPreprocessor, 
-                       _objc_setForwardHandler, _objc_setMultithreaded, _objc_setProperty, 
+                       _objc_setForwardHandler, _objc_setHook_getImageName, _objc_setProperty, 
                        _objc_setProperty_atomic, _objc_setProperty_atomic_copy, _objc_setProperty_nonatomic, 
                        _objc_setProperty_nonatomic_copy, _objc_setUncaughtExceptionHandler, 
                        _objc_should_deallocate, _objc_storeStrong, _objc_storeWeak, 

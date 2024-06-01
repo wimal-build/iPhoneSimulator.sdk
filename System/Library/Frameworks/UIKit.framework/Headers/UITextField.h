@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITextField.h>)
 //
 //  UITextField.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -58,7 +59,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 @property(nullable, nonatomic,strong) UIFont                 *font;                 // default is nil. use system font 12 pt
 @property(nonatomic)        NSTextAlignment         textAlignment;        // default is NSLeftTextAlignment
 @property(nonatomic)        UITextBorderStyle       borderStyle;          // default is UITextBorderStyleNone. If set to UITextBorderStyleRoundedRect, custom background images are ignored.
-@property(nonatomic,copy)   NSDictionary<NSString *, id>           *defaultTextAttributes NS_AVAILABLE_IOS(7_0); // applies attributes to the full range of text. Unset attributes act like default values.
+@property(nonatomic,copy)   NSDictionary<NSAttributedStringKey,id> *defaultTextAttributes NS_AVAILABLE_IOS(7_0); // applies attributes to the full range of text. Unset attributes act like default values.
 
 @property(nullable, nonatomic,copy)   NSString               *placeholder;          // default is nil. string is drawn 70% gray
 @property(nullable, nonatomic,copy)   NSAttributedString     *attributedPlaceholder NS_AVAILABLE_IOS(6_0); // default is nil
@@ -71,7 +72,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITextField : UIControl <UITextInput, NSC
 
 @property(nonatomic,readonly,getter=isEditing) BOOL editing;
 @property(nonatomic) BOOL allowsEditingTextAttributes NS_AVAILABLE_IOS(6_0); // default is NO. allows editing text attributes with style operations and pasting rich text
-@property(nullable, nonatomic,copy) NSDictionary<NSString *, id> *typingAttributes NS_AVAILABLE_IOS(6_0); // automatically resets when the selection changes
+@property(nullable, nonatomic,copy) NSDictionary<NSAttributedStringKey,id> *typingAttributes NS_AVAILABLE_IOS(6_0); // automatically resets when the selection changes
 
 
 // You can supply custom views which are displayed at the left or right
@@ -148,3 +149,7 @@ UIKIT_EXTERN NSString *const UITextFieldDidEndEditingReasonKey NS_AVAILABLE_IOS(
 
 NS_ASSUME_NONNULL_END
 
+
+#else
+#import <UIKitCore/UITextField.h>
+#endif

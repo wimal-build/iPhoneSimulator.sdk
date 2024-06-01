@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 287B4944-D8B0-3ECE-945F-576FBA15C4E1', 'x86_64: 5C9CEB71-C095-3AC0-932A-00AE8B5D10EC' ]
+uuids:           [ 'i386: 287B4944-D8B0-3ECE-945F-576FBA15C4E1', 'x86_64: 30332C90-52C6-34DC-9AAE-04764287E8B6' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreAudio.framework/CoreAudio
 objc-constraint: none
@@ -29,10 +29,10 @@ exports:
                        _AudioObjectAddPropertyListenerBlock, _AudioObjectAddPropertyListenerInternal, 
                        _AudioObjectCreate, _AudioObjectExists, _AudioObjectGetPropertyData, 
                        _AudioObjectGetPropertyDataSize, _AudioObjectHasProperty, 
-                       _AudioObjectIsPropertySettable, _AudioObjectPropertiesChanged, 
-                       _AudioObjectRemovePropertyListener, _AudioObjectRemovePropertyListenerBlock, 
-                       _AudioObjectSetPropertyData, _AudioObjectShow, _AudioObjectsPublishedAndDied, 
-                       _AudioStreamAddPropertyListener, _AudioStreamGetProperty, 
-                       _AudioStreamGetPropertyInfo, _AudioStreamRemovePropertyListener, 
+                       _AudioObjectIsOnListenerThread, _AudioObjectIsPropertySettable, 
+                       _AudioObjectPropertiesChanged, _AudioObjectRemovePropertyListener, 
+                       _AudioObjectRemovePropertyListenerBlock, _AudioObjectSetPropertyData, 
+                       _AudioObjectShow, _AudioObjectsPublishedAndDied, _AudioStreamAddPropertyListener, 
+                       _AudioStreamGetProperty, _AudioStreamGetPropertyInfo, _AudioStreamRemovePropertyListener, 
                        _AudioStreamSetProperty ]
 ...

@@ -19,14 +19,12 @@
 #import <CoreMIDI/MIDIServices.h>
 #import <Foundation/Foundation.h>
 
+#define MIDINETWORKSESSION_AVAILABLE API_AVAILABLE(ios(4.2)) API_UNAVAILABLE(macos, watchos, tvos)
+
 NS_ASSUME_NONNULL_BEGIN
 
-#ifndef MIDI_EXPORT
-#define MIDI_EXPORT __attribute__((visibility("default")))
-#endif
-
 /* This is the Bonjour service type. */
-MIDI_EXPORT extern NSString *const MIDINetworkBonjourServiceType __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
+OS_EXPORT NSString *const MIDINetworkBonjourServiceType MIDINETWORKSESSION_AVAILABLE;
 
 /*
 	These are NSNotifications posted by MIDINetworkSession objects. 
@@ -35,8 +33,8 @@ MIDI_EXPORT extern NSString *const MIDINetworkBonjourServiceType __OSX_AVAILABLE
 	MIDINetworkNotificationSessionDidChange signifies that other aspects of the session changed,
 	such as the connection list, connection policy, etc.
 */
-MIDI_EXPORT extern NSString *const MIDINetworkNotificationContactsDidChange __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
-MIDI_EXPORT extern NSString *const MIDINetworkNotificationSessionDidChange __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_4_2);
+OS_EXPORT NSString *const MIDINetworkNotificationContactsDidChange MIDINETWORKSESSION_AVAILABLE;
+OS_EXPORT NSString *const MIDINetworkNotificationSessionDidChange MIDINETWORKSESSION_AVAILABLE;
 
 
 /* __________________________________________________________________________________________________
@@ -57,7 +55,7 @@ typedef NS_ENUM(NSUInteger, MIDINetworkConnectionPolicy) {
 	-	address (IP address or hostname) and UDP port
 	-	netServiceName and netServiceDomain
 */
-MIDI_EXPORT NS_CLASS_AVAILABLE(NA, 4_2)
+OS_EXPORT MIDINETWORKSESSION_AVAILABLE
 @interface MIDINetworkHost : NSObject {
 @private
     void *_imp;
@@ -67,11 +65,11 @@ MIDI_EXPORT NS_CLASS_AVAILABLE(NA, 4_2)
 + (instancetype)hostWithName: (NSString *)name netServiceName: (NSString *)netServiceName netServiceDomain: (NSString *)netServiceDomain;
 - (BOOL)hasSameAddressAs: (MIDINetworkHost *)other;
 
-@property(nonatomic,readonly,retain) NSString *name;				/* user's tag */
-@property(nonatomic,readonly,retain) NSString *address;				/* IP address or hostname */
+@property(nonatomic,readonly) NSString *name;				/* user's tag */
+@property(nonatomic,readonly) NSString *address;			/* IP address or hostname */
 @property(nonatomic,readonly) NSUInteger port;						/* UDP port */
-@property(nonatomic,readonly,retain,nullable) NSString *netServiceName;		/* NSNetService name */
-@property(nonatomic,readonly,retain,nullable) NSString *netServiceDomain;	/* NSNetService domain */
+@property(nonatomic,readonly,nullable) NSString *netServiceName;	/* NSNetService name */
+@property(nonatomic,readonly,nullable) NSString *netServiceDomain;	/* NSNetService domain */
 @end
 
 /*__________________________________________________________________________________________________
@@ -79,13 +77,13 @@ MIDI_EXPORT NS_CLASS_AVAILABLE(NA, 4_2)
 
 	Add a connection to a session to connect to the remote host; remove it to disconnect.
 */
-MIDI_EXPORT NS_CLASS_AVAILABLE(NA, 4_2)
+OS_EXPORT MIDINETWORKSESSION_AVAILABLE
 @interface MIDINetworkConnection : NSObject {
 @private
     void *_imp;
 }
 + (instancetype)connectionWithHost: (MIDINetworkHost *)host;
-@property(nonatomic,retain,readonly) MIDINetworkHost *host;
+@property(nonatomic,readonly) MIDINetworkHost *host;
 @end
 
 /* __________________________________________________________________________________________________
@@ -95,7 +93,7 @@ MIDI_EXPORT NS_CLASS_AVAILABLE(NA, 4_2)
 	have any number of connections. Output is broadcast to all connections; input from multiple
 	connections is merged.
 */
-MIDI_EXPORT NS_CLASS_AVAILABLE(NA, 4_2)
+OS_EXPORT MIDINETWORKSESSION_AVAILABLE
 @interface MIDINetworkSession : NSObject {
 @private
     void *_imp;

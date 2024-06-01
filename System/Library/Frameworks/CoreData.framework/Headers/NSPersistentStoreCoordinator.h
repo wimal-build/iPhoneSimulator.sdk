@@ -1,7 +1,7 @@
 /*
     NSPersistentStoreCoordinator.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -103,7 +103,7 @@ COREDATA_EXTERN NSString * const NSStoreModelVersionIdentifiersKey API_AVAILABLE
 
 /* Key to represent the earliest version of MacOS X the persistent store should support.  Backward compatibility may preclude some features.  The numeric values are defined in AvailabilityMacros.h
 */
-COREDATA_EXTERN NSString * const NSPersistentStoreOSCompatibility API_AVAILABLE(macosx(10.5),ios(3.0));
+COREDATA_EXTERN NSString * const NSPersistentStoreOSCompatibility API_AVAILABLE(macosx(10.5),ios(3.0));    
 
 /* User info key specifying the maximum connection pool size that should be used on a store that supports concurrent request handling, the value should be an NSNumber. The connection pool size determines the number of requests a store can handle concurrently, and should be a function of how many contexts are attempting to access store data at any time. Generally, application developers should not set this, and should use the default value. The default connection pool size is implementation dependent and may vary by store type and/or platform.
  */
@@ -112,6 +112,7 @@ COREDATA_EXTERN NSString * const NSPersistentStoreConnectionPoolMaxSizeKey API_A
 /* Spotlight indexing and external record support keys */
 
 COREDATA_EXTERN NSString * const NSCoreDataCoreSpotlightExporter API_AVAILABLE(macosx(10.13),ios(11.0)) API_UNAVAILABLE(tvos,watchos);
+
 
 /* store option for the destroy... and replace... to indicate that the store file should be destroyed even if the operation might be unsafe (overriding locks
  */
@@ -191,21 +192,22 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 
 /* Registers the specified NSPersistentStore subclass for the specified store type string.  This method must be invoked before a custom subclass of NSPersistentStore can be loaded into a persistent store coordinator.  Passing nil for the store class argument will unregister the specified store type.
 */
-+ (void)registerStoreClass:(Class)storeClass forStoreType:(NSString *)storeType API_AVAILABLE(macosx(10.5),ios(3.0));
++ (void)registerStoreClass:(Class _Nullable)storeClass forStoreType:(NSString *)storeType API_AVAILABLE(macosx(10.5),ios(3.0));
 
 /* Allows to access the metadata stored in a persistent store without warming up a CoreData stack; the guaranteed keys in this dictionary are NSStoreTypeKey and NSStoreUUIDKey. If storeType is nil, Core Data will guess which store class should be used to get/set the store file's metadata. 
  */
 + (nullable NSDictionary<NSString *, id> *)metadataForPersistentStoreOfType:(NSString*)storeType URL:(NSURL *)url options:(nullable NSDictionary *)options error:(NSError **)error API_AVAILABLE(macosx(10.9),ios(7.0));
 + (BOOL)setMetadata:(nullable NSDictionary<NSString *, id> *)metadata forPersistentStoreOfType:(NSString*)storeType URL:(NSURL*)url options:(nullable NSDictionary*)options error:(NSError**)error API_AVAILABLE(macosx(10.9),ios(7.0));
+
     
-/* Used for save as - performance may vary depending on the type of old and new store; the old store is usually removed from the coordinator by the migration operation, and therefore is no longer a useful reference after invoking this method
+/* Used for save as - performance may vary depending on the type of old and new store; the old store is usually removed from the coordinator by the migration operation, and therefore is no longer a useful reference after invoking this method 
 */
 - (nullable NSPersistentStore *)migratePersistentStore:(NSPersistentStore *)store toURL:(NSURL *)URL options:(nullable NSDictionary *)options withType:(NSString *)storeType error:(NSError **)error;
 
 /* delete or truncate the target persistent store in accordance with the store class's requirements.  It is important to pass similar options as addPersistentStoreWithType: ... SQLite stores will honor file locks, journal files, journaling modes, and other intricacies.  It is not possible to unlink a database file safely out from underneath another thread or process, so this API performs a truncation.  Other stores will default to using NSFileManager.
  */
 - (BOOL)destroyPersistentStoreAtURL:(NSURL *)url withType:(NSString *)storeType options:(nullable NSDictionary *)options error:(NSError**)error API_AVAILABLE(macosx(10.11),ios(9.0));
-    
+
 /* copy or overwrite the target persistent store in accordance with the store class's requirements.  It is important to pass similar options as addPersistentStoreWithType: ... SQLite stores will honor file locks, journal files, journaling modes, and other intricacies.  Other stores will default to using NSFileManager.
  */
 - (BOOL)replacePersistentStoreAtURL:(NSURL *)destinationURL destinationOptions:(nullable NSDictionary *)destinationOptions withPersistentStoreFromURL:(NSURL *)sourceURL sourceOptions:(nullable NSDictionary *)sourceOptions storeType:(NSString *)storeType error:(NSError**)error API_AVAILABLE(macosx(10.11),ios(9.0));
@@ -216,18 +218,24 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 /* synchronously performs the block on the coordinator's queue.  May safely be called reentrantly. Encapsulates an autorelease pool. */
 - (void)performBlockAndWait:(void (NS_NOESCAPE ^)(void))block  API_AVAILABLE(macosx(10.10),ios(8.0));
 
+ /*
+  *   DEPRECATED
+  */
+    
+    
 - (void)lock API_DEPRECATED( "Use -performBlockAndWait: instead", macosx(10.4,10.10), ios(3.0,8.0));
 - (void)unlock API_DEPRECATED( "Use -performBlockAndWait: instead", macosx(10.4,10.10), ios(3.0,8.0));
 - (BOOL)tryLock API_DEPRECATED( "Use -performBlock: instead", macosx(10.4,10.10), ios(3.0,8.0));
-
+    
 + (nullable NSDictionary<NSString *, id> *)metadataForPersistentStoreOfType:(nullable NSString *)storeType URL:(NSURL *)url error:(NSError **)error API_DEPRECATED("Use -metadataForPersistentStoreOfType:URL:options:error: and pass in an options dictionary matching addPersistentStoreWithType", macosx(10.5,10.11), ios(3.0,9.0));
-    
+
 + (BOOL)setMetadata:(nullable NSDictionary<NSString *, id> *)metadata forPersistentStoreOfType:(nullable NSString *)storeType URL:(NSURL*)url error:(NSError **)error API_DEPRECATED("Use  -setMetadata:forPersistentStoreOfType:URL:options:error: and pass in an options dictionary matching addPersistentStoreWithType", macosx(10.5,10.11), ios(3.0,9.0));
-    
-    /*
-     Delete all ubiquitous content for all peers for the persistent store at the given URL and also delete the local store file. storeOptions should contain the options normally passed to addPersistentStoreWithType:URL:options:error. Errors may be returned as a result of file I/O, iCloud network or iCloud account issues.
-     */
-    + (BOOL)removeUbiquitousContentAndPersistentStoreAtURL:(NSURL *)storeURL options:(nullable NSDictionary *)options error:(NSError**)error API_DEPRECATED("Please see the release notes and Core Data documentation.", macosx(10.7,10.12), ios(5.0,10.0));
+
+/*
+ Delete all ubiquitous content for all peers for the persistent store at the given URL and also delete the local store file. storeOptions should contain the options normally passed to addPersistentStoreWithType:URL:options:error. Errors may be returned as a result of file I/O, iCloud network or iCloud account issues.
+ */
++ (BOOL)removeUbiquitousContentAndPersistentStoreAtURL:(NSURL *)storeURL options:(nullable NSDictionary *)options error:(NSError**)error API_DEPRECATED("Please see the release notes and Core Data documentation.", macosx(10.7,10.12), ios(5.0,10.0));
+
 
 @end
 
@@ -286,3 +294,4 @@ COREDATA_EXTERN NSString * const NSPersistentStoreRebuildFromUbiquitousContentOp
     
 
 NS_ASSUME_NONNULL_END
+

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * const UNErrorDomain __IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0);
+extern NSString * const UNErrorDomain __IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __OSX_AVAILABLE(10.14);
 
 typedef NS_ENUM(NSInteger, UNErrorCode) {
     UNErrorCodeNotificationsNotAllowed = 1,
@@ -21,4 +21,4 @@ typedef NS_ENUM(NSInteger, UNErrorCode) {
     
     UNErrorCodeNotificationInvalidNoDate = 1400,
     UNErrorCodeNotificationInvalidNoContent,
-} __IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0);
+} __IOS_AVAILABLE(10.0) __TVOS_AVAILABLE(10.0) __WATCHOS_AVAILABLE(3.0) __OSX_AVAILABLE(10.14);

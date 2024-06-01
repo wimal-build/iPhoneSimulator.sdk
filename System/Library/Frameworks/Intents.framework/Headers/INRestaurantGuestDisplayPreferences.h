@@ -8,6 +8,8 @@
 //
 // http://mapsconnect.apple.com/info/extensions
 
+#import <Foundation/Foundation.h>
+
 API_AVAILABLE(ios(10.0))
 API_UNAVAILABLE(macosx, watchos)
 @interface INRestaurantGuestDisplayPreferences : NSObject <NSSecureCoding, NSCopying>

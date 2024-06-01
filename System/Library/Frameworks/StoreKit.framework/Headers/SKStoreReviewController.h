@@ -5,13 +5,13 @@
 //  Copyright © 2016 Apple Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <StoreKit/StoreKitDefines.h>
-#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /** Controller class to request a review from the current user */
-SK_EXTERN_CLASS_AVAILABLE(10_3) __TVOS_UNAVAILABLE @interface SKStoreReviewController : NSObject
+SK_EXTERN_CLASS_AVAILABLE(10_14, 10_3) __TVOS_UNAVAILABLE @interface SKStoreReviewController : NSObject
 
 /** Request StoreKit to ask the user for an app review. This may or may not show any UI.
  *

@@ -8,7 +8,24 @@
 #ifndef Photos_PhotosTypes_h
 #define Photos_PhotosTypes_h
 
+#import <Foundation/Foundation.h>
 #import <Photos/PhotosDefines.h>
+
+#if TARGET_OS_OSX
+typedef CF_ENUM( int16_t, FigEXIFCustomRenderedValue ) {
+    kFigEXIFCustomRenderedValue_NotCustom                        = 0,
+    kFigEXIFCustomRenderedValue_Custom                            = 1,
+    // CustomRendered values above 1 are defined in the Exif spec as "Reserved"
+    kFigEXIFCustomRenderedValue_HDRImage                        = 2, // Set on the HDR sbuf metadata when "Keep Normal Photo" is off
+    kFigEXIFCustomRenderedValue_HDRPlusEV0_HDRImage                = 3, // Set on the HDR sbuf metadata when "Keep Normal Photo" is on
+    kFigEXIFCustomRenderedValue_HDRPlusEV0_EV0Image                = 4, // Set on the EV0 sbuf metadata when "Keep Normal Photo" is on
+    // Leaving a hole here, reserved for some future HDR hotness, maybe
+    kFigEXIFCustomRenderedValue_PanoramaImage                    = 6,
+    kFigEXIFCustomRenderedValue_SDOFImage                        = 7, // Set on the SDOF sbuf metadata when only an SDOF is requested
+    kFigEXIFCustomRenderedValue_SDOFPlusOriginal_SDOFImage        = 8, // Set on the SDOF sbuf metadata when both an SDOF and an original are requested
+    kFigEXIFCustomRenderedValue_SDOFPlusOriginal_OriginalImage    = 9, // Set on the original sbuf metadata when both an SDOF and an original are requested
+};
+#endif
 
 #pragma mark - PHCollectionListTypes
 

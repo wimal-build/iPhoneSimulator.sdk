@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPopoverSupport.h>)
 //
 //  UIPopoverSupport.h
 //  UIKit
 //
-//  Copyright (c) 2014-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2014-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -28,3 +29,7 @@ typedef NS_OPTIONS(NSUInteger, UIPopoverArrowDirection) {
 
 @end
 
+
+#else
+#import <UIKitCore/UIPopoverSupport.h>
+#endif

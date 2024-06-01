@@ -6,6 +6,9 @@
 //
 
 #import <MapKit/MKFoundation.h>
+
+#if MK_SUPPORTS_VIEW_CLASSES
+
 #import <MapKit/MKAnnotationView.h>
 #import <MapKit/MKTypes.h>
 
@@ -29,3 +32,5 @@ NS_CLASS_AVAILABLE_IOS(11_0) __TVOS_AVAILABLE(11_0) __WATCHOS_PROHIBITED
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif // MK_SUPPORTS_VIEW_CLASSES

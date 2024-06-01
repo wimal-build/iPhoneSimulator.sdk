@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UISplitViewController.h>)
 //
 //  UISplitViewController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -149,3 +150,7 @@ NS_CLASS_AVAILABLE_IOS(3_2) @interface UISplitViewController : UIViewController
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UISplitViewController.h>
+#endif

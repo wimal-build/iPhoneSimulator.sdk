@@ -9,7 +9,6 @@
 // http://mapsconnect.apple.com/info/extensions
 
 #import <Intents/INIntent.h>
-#import <Intents/INIntentResolutionResult.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

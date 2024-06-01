@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILayoutGuide.h>)
 //
 //  UILayoutGuide.h
 //  UIKit
 //
-//  Copyright © 2015-2017 Apple Inc. All rights reserved.
+//  Copyright © 2015-2018 Apple Inc. All rights reserved.
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -54,3 +55,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 
 @end
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UILayoutGuide.h>
+#endif

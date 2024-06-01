@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSTextContainer.h>)
 //
 //  NSTextContainer.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017, Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018, Apple Inc. All rights reserved.
 //
 
 #import <Foundation/NSObject.h>
@@ -69,3 +70,7 @@ NS_CLASS_AVAILABLE(10_0, 7_0) @interface NSTextContainer : NSObject <NSCoding, N
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSTextContainer.h>
+#endif

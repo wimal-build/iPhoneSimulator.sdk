@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <WatchKit/WKDefines.h>
 #import <WatchKit/WKInterfaceObject.h>
+#import <WatchKit/WKInterfaceController.h>
 
 @class WKImage;
 

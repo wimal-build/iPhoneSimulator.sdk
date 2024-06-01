@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D289D2E6-6ECC-3CFC-A3C6-AB87248C72BA', 'x86_64: 135C2DC9-7A30-3080-BABF-6F23FC38D381' ]
+uuids:           [ 'i386: D289D2E6-6ECC-3CFC-A3C6-AB87248C72BA', 'x86_64: 48738271-8337-3BE7-8E01-CA357F9FFC8C' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreVideo.framework/CoreVideo
 current-version: 1.5
@@ -37,13 +37,14 @@ exports:
                        _CVPixelBufferGetHeightOfPlane, _CVPixelBufferGetPixelFormatType, 
                        _CVPixelBufferGetPlaneCount, _CVPixelBufferGetTypeID, _CVPixelBufferGetWidth, 
                        _CVPixelBufferGetWidthOfPlane, _CVPixelBufferIsCompatibleWithAttributes, 
-                       _CVPixelBufferIsPlanar, _CVPixelBufferLockBaseAddress, _CVPixelBufferPoolCreate, 
-                       _CVPixelBufferPoolCreatePixelBuffer, _CVPixelBufferPoolCreatePixelBufferWithAuxAttributes, 
-                       _CVPixelBufferPoolFlush, _CVPixelBufferPoolGetAttributes, 
-                       _CVPixelBufferPoolGetMaxBufferAge, _CVPixelBufferPoolGetMinBufferCount, 
-                       _CVPixelBufferPoolGetPixelBufferAttributes, _CVPixelBufferPoolGetTypeID, 
-                       _CVPixelBufferPoolPreAllocate, _CVPixelBufferPoolPrefetchPages, 
-                       _CVPixelBufferPoolRelease, _CVPixelBufferPoolRetain, _CVPixelBufferPoolSetMaxBufferAge, 
+                       _CVPixelBufferIsPlanar, _CVPixelBufferLockBaseAddress, _CVPixelBufferPoolCopyIOSurfaceCreationProperties, 
+                       _CVPixelBufferPoolCreate, _CVPixelBufferPoolCreatePixelBuffer, 
+                       _CVPixelBufferPoolCreatePixelBufferWithAuxAttributes, _CVPixelBufferPoolFlush, 
+                       _CVPixelBufferPoolGetAttributes, _CVPixelBufferPoolGetMaxBufferAge, 
+                       _CVPixelBufferPoolGetMinBufferCount, _CVPixelBufferPoolGetPixelBufferAttributes, 
+                       _CVPixelBufferPoolGetTypeID, _CVPixelBufferPoolPreAllocate, 
+                       _CVPixelBufferPoolPrefetchPages, _CVPixelBufferPoolRelease, 
+                       _CVPixelBufferPoolRetain, _CVPixelBufferPoolSetMaxBufferAge, 
                        _CVPixelBufferPoolSetMinBufferCount, _CVPixelBufferRelease, 
                        _CVPixelBufferRetain, _CVPixelBufferUnlockBaseAddress, _CVPixelBufferWasAllocatedFromPool, 
                        _CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes, 
@@ -116,10 +117,11 @@ exports:
                        _kCVPixelFormatComponentRange, _kCVPixelFormatComponentRange_FullRange, 
                        _kCVPixelFormatComponentRange_VideoRange, _kCVPixelFormatComponentRange_WideRange, 
                        _kCVPixelFormatComponents, _kCVPixelFormatConstant, _kCVPixelFormatContainsAlpha, 
-                       _kCVPixelFormatContainsRGB, _kCVPixelFormatContainsYCbCr, 
-                       _kCVPixelFormatExactRatioBetweenBytesPerRowOfPlanes, _kCVPixelFormatFillExtendedPixelsCallback, 
-                       _kCVPixelFormatFourCC, _kCVPixelFormatHorizontalSubsampling, 
-                       _kCVPixelFormatName, _kCVPixelFormatOpenGLCompatibility, _kCVPixelFormatOpenGLESCompatibility, 
+                       _kCVPixelFormatContainsGrayscale, _kCVPixelFormatContainsRGB, 
+                       _kCVPixelFormatContainsYCbCr, _kCVPixelFormatExactRatioBetweenBytesPerRowOfPlanes, 
+                       _kCVPixelFormatFillExtendedPixelsCallback, _kCVPixelFormatFourCC, 
+                       _kCVPixelFormatHorizontalSubsampling, _kCVPixelFormatName, 
+                       _kCVPixelFormatOpenGLCompatibility, _kCVPixelFormatOpenGLESCompatibility, 
                        _kCVPixelFormatOpenGLFormat, _kCVPixelFormatOpenGLInternalFormat, 
                        _kCVPixelFormatOpenGLType, _kCVPixelFormatPlanes, _kCVPixelFormatQDCompatibility, 
                        _kCVPixelFormatVerticalSubsampling, _kCVZeroTime ]

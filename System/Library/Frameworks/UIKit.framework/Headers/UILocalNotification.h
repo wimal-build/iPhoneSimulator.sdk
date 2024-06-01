@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UILocalNotification.h>)
 //
 //  UILocalNotification.h
 //  UIKit
 //
-//  Copyright (c) 2007-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -61,3 +62,7 @@ NS_CLASS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's UNNotifica
 UIKIT_EXTERN NSString *const UILocalNotificationDefaultSoundName NS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's +[UNNotificationSound defaultSound]") __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UILocalNotification.h>
+#endif

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGeometry.h>)
 //
 //  UIGeometry.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 
@@ -11,6 +12,9 @@
 #import <UIKit/UIKitDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+UIKIT_SWIFT_FORWARD_DECLARE(@class NSCoder)
+UIKIT_SWIFT_FORWARD_DECLARE(struct CGRect)
 
 typedef struct UIEdgeInsets {
     CGFloat top, left, bottom, right;  // specify amount to inset (positive) for each of the edges. values can be negative to 'outset'
@@ -73,9 +77,9 @@ UIKIT_STATIC_INLINE BOOL UIOffsetEqualToOffset(UIOffset offset1, UIOffset offset
 }
 
 #if UIKIT_REMOVE_ZERO_FROM_SWIFT
-UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero NS_SWIFT_UNAVAILABLE("Use UIEdgeInsets.zero instead");
+UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero;
 UIKIT_EXTERN const NSDirectionalEdgeInsets NSDirectionalEdgeInsetsZero API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0));
-UIKIT_EXTERN const UIOffset UIOffsetZero NS_SWIFT_UNAVAILABLE("Use UIOffset.zero instead");
+UIKIT_EXTERN const UIOffset UIOffsetZero;
 #else
 UIKIT_EXTERN const UIEdgeInsets UIEdgeInsetsZero;
 UIKIT_EXTERN const NSDirectionalEdgeInsets NSDirectionalEdgeInsetsZero;
@@ -156,3 +160,7 @@ UIKIT_EXTERN UIOffset UIOffsetFromString(NSString *string);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIGeometry.h>
+#endif

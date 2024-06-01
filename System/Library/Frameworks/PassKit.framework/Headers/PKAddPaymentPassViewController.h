@@ -19,6 +19,11 @@ typedef NS_ENUM(NSInteger, PKAddPaymentPassError) {
     PKAddPaymentPassErrorSystemCancelled
 } API_AVAILABLE(ios(9.0));
 
+typedef NS_ENUM(NSInteger, PKAddPaymentPassStyle) {
+    PKAddPaymentPassStylePayment,
+    PKAddPaymentPassStyleAccess
+} API_AVAILABLE(ios(12.0));
+
 API_AVAILABLE(ios(9.0))
 @interface PKAddPaymentPassRequestConfiguration : NSObject
 
@@ -36,6 +41,7 @@ API_AVAILABLE(ios(9.0))
 /* Display Properties:
  *  At least one of cardholder name or primary account suffix must be supplied.
  */
+@property (nonatomic, assign) PKAddPaymentPassStyle style API_AVAILABLE(ios(12.0));
 @property (nonatomic, copy, nullable) NSString *cardholderName;
 @property (nonatomic, copy, nullable) NSString *primaryAccountSuffix;
 

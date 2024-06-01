@@ -5,14 +5,15 @@
 //  Copyright 2008-2010 Apple, Inc. All rights reserved.
 //
 
+#import <MediaPlayer/MediaPlayerDefines.h>
+#if MP_HAS_UIVIEW
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <MediaPlayer/MediaPlayerDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 MP_API(ios(2.0))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @interface MPVolumeView : UIView <NSCoding>
 
 @property (nonatomic) BOOL showsVolumeSlider MP_API(ios(4.2)); // Default is YES.
@@ -55,9 +56,10 @@ MP_PROHIBITED(tvos, macos)
 @end
 
 // Posted when the wirelessRoutesAvailable property changes.
-MP_EXTERN NSString * const MPVolumeViewWirelessRoutesAvailableDidChangeNotification MP_API(ios(7.0)) MP_PROHIBITED(tvos);
+MP_EXTERN NSString * const MPVolumeViewWirelessRoutesAvailableDidChangeNotification MP_API(ios(7.0)) MP_PROHIBITED(tvos, watchos);
 
 // Posted when the wirelessRouteActive property changes.
-MP_EXTERN NSString * const MPVolumeViewWirelessRouteActiveDidChangeNotification MP_API(ios(7.0)) MP_PROHIBITED(tvos);
+MP_EXTERN NSString * const MPVolumeViewWirelessRouteActiveDidChangeNotification MP_API(ios(7.0)) MP_PROHIBITED(tvos, watchos);
 
 NS_ASSUME_NONNULL_END
+#endif

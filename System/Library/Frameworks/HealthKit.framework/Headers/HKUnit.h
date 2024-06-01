@@ -29,6 +29,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 // J                (joules)  [Energy]
 // K                (kelvin)  [Temperature]
 // S                (siemens) [Electrical Conductance]
+// Hz               (hertz)   [Frequency]
 // mol<molar mass>  (moles)   [Mass] <molar mass> is the number of grams per mole. For example, mol<180.1558>
 
 // SI units can be prefixed as follows:
@@ -87,7 +88,7 @@ HK_EXTERN API_AVAILABLE(ios(8.0), watchos(2.0))
 // [Scalar]
 // count = 1
 // %     = 1/100
-
+//
 
 // Units can be combined using multiplication (. or *) and division (/), and raised to integral powers (^).
 // For simplicity, only a single '/' is allowed in a unit string, and multiplication is evaluated first.
@@ -195,7 +196,7 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 @end
 
 /* Electrical Conductance Units */
-@interface HKUnit(Conductance)
+@interface HKUnit (Conductance)
 + (instancetype)siemenUnitWithMetricPrefix:(HKMetricPrefix)prefix;     // S
 + (instancetype)siemenUnit; // S
 @end
@@ -210,7 +211,6 @@ typedef NS_ENUM(NSInteger, HKMetricPrefix) {
 + (instancetype)countUnit;      // count
 + (instancetype)percentUnit;    // % (0.0 - 1.0)
 @end
-
 
 @interface HKUnit (Math)
 - (HKUnit *)unitMultipliedByUnit:(HKUnit *)unit;

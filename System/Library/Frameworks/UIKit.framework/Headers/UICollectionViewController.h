@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UICollectionViewController.h>)
 //
 //  UICollectionViewController.h
 //  UIKit
 //
-//  Copyright (c) 2011-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -20,7 +21,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewController : UIViewContro
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
-@property (nullable, nonatomic, strong) __kindof UICollectionView *collectionView;
+@property (null_resettable, nonatomic, strong) __kindof UICollectionView *collectionView;
 
 // Defaults to YES, and if YES, any selection is cleared in viewWillAppear:
 // This property has no effect if the useLayoutToLayoutNavigationTransitions property is set to YES
@@ -42,3 +43,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface UICollectionViewController : UIViewContro
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UICollectionViewController.h>
+#endif

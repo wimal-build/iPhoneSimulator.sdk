@@ -1,5 +1,6 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/NSLayoutAnchor.h>)
 /*	NSLayoutAnchor.h
-	Copyright (c) 2015-2017, Apple Inc. All rights reserved.
+	Copyright (c) 2015-2018, Apple Inc. All rights reserved.
 */
 
 #import <Foundation/Foundation.h>
@@ -108,3 +109,7 @@ NS_CLASS_AVAILABLE_IOS(9_0)
 - (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(NSLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
 @end
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/NSLayoutAnchor.h>
+#endif

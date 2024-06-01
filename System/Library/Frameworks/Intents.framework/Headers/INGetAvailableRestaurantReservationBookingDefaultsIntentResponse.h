@@ -25,8 +25,8 @@ API_UNAVAILABLE(macosx, watchos)
 
 @property (readonly, NS_NONATOMIC_IOSONLY) NSUInteger defaultPartySize; // default party size for an available bookings request
 @property (readonly, copy, NS_NONATOMIC_IOSONLY) NSDate *defaultBookingDate; // default booking time for an available bookings request
-@property (nullable, NS_NONATOMIC_IOSONLY) NSNumber *maximumPartySize;
-@property (nullable, NS_NONATOMIC_IOSONLY) NSNumber *minimumPartySize;
+@property (copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *maximumPartySize;
+@property (copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *minimumPartySize;
 @property (copy, NS_NONATOMIC_IOSONLY) INImage *providerImage;
 
 - (instancetype)initWithDefaultPartySize:(NSUInteger)defaultPartySize defaultBookingDate:(NSDate *)defaultBookingDate code:(INGetAvailableRestaurantReservationBookingDefaultsIntentResponseCode)code userActivity:(nullable NSUserActivity *)userActivity NS_DESIGNATED_INITIALIZER;

@@ -40,7 +40,7 @@ typedef struct {
  *    Contains a single accelerometer measurement.
  *
  */
-NS_CLASS_AVAILABLE(NA,4_0) __TVOS_PROHIBITED
+NS_CLASS_AVAILABLE(NA,4_0) API_UNAVAILABLE(tvos)
 @interface CMAccelerometerData : CMLogItem
 {
 @private

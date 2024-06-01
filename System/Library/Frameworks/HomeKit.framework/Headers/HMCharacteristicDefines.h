@@ -1,7 +1,11 @@
-// HMCharacteristicDefines.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMCharacteristicDefines.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
+
+#import <HomeKit/HMDefines.h>
 
 /*!
  * @group Characteristic Valid Values
@@ -24,7 +28,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueDoorState) {
     HMCharacteristicValueDoorStateOpening,
     HMCharacteristicValueDoorStateClosing,
     HMCharacteristicValueDoorStateStopped,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueHeatingCooling
@@ -39,7 +43,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueHeatingCooling) {
     HMCharacteristicValueHeatingCoolingHeat,
     HMCharacteristicValueHeatingCoolingCool,
     HMCharacteristicValueHeatingCoolingAuto,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueRotationDirection
@@ -50,7 +54,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueHeatingCooling) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueRotationDirection) {
     HMCharacteristicValueRotationDirectionClockwise = 0,
     HMCharacteristicValueRotationDirectionCounterClockwise,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueTemperatureUnit
@@ -61,7 +65,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueRotationDirection) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueTemperatureUnit) {
     HMCharacteristicValueTemperatureUnitCelsius = 0,
     HMCharacteristicValueTemperatureUnitFahrenheit,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueLockMechanismState
@@ -76,7 +80,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismState) {
     HMCharacteristicValueLockMechanismStateSecured,
     HMCharacteristicValueLockMechanismStateJammed,
     HMCharacteristicValueLockMechanismStateUnknown,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueLockMechanismLastKnownAction
@@ -105,7 +109,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismLastKnownAction) {
     HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout,
     HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement,
     HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement,
-} NS_ENUM_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(8.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -117,7 +121,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLockMechanismLastKnownAction) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueAirParticulateSize) {
     HMCharacteristicValueAirParticulateSize2_5 = 0,
     HMCharacteristicValueAirParticulateSize10,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -137,7 +141,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueAirQuality) {
     HMCharacteristicValueAirQualityFair,
     HMCharacteristicValueAirQualityInferior,
     HMCharacteristicValueAirQualityPoor,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -151,7 +155,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValuePositionState) {
     HMCharacteristicValuePositionStateClosing = 0,
     HMCharacteristicValuePositionStateOpening,
     HMCharacteristicValuePositionStateStopped,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -169,7 +173,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentSecuritySystemState) {
     HMCharacteristicValueCurrentSecuritySystemStateNightArm,
     HMCharacteristicValueCurrentSecuritySystemStateDisarmed,
     HMCharacteristicValueCurrentSecuritySystemStateTriggered,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -185,7 +189,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetSecuritySystemState) {
     HMCharacteristicValueTargetSecuritySystemStateAwayArm,
     HMCharacteristicValueTargetSecuritySystemStateNightArm,
     HMCharacteristicValueTargetSecuritySystemStateDisarm,
-} NS_ENUM_AVAILABLE_IOS(9_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(9.0), watchos(2.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueBatteryStatus
@@ -196,7 +200,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetSecuritySystemState) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueBatteryStatus) {
     HMCharacteristicValueBatteryStatusNormal = 0,
     HMCharacteristicValueBatteryStatusLow,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueJammedStatus
@@ -207,7 +211,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueBatteryStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueJammedStatus) {
     HMCharacteristicValueJammedStatusNone = 0,
     HMCharacteristicValueJammedStatusJammed,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueTamperStatus
@@ -218,7 +222,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueJammedStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueTamperedStatus) {
     HMCharacteristicValueTamperedStatusNone = 0,
     HMCharacteristicValueTamperedStatusTampered,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueLeakDetectionStatus
@@ -229,7 +233,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTamperedStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueLeakStatus) {
     HMCharacteristicValueLeakStatusNone = 0,
     HMCharacteristicValueLeakStatusDetected,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueSmokeDetectionStatus
@@ -240,7 +244,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLeakStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueSmokeDetectionStatus) {
     HMCharacteristicValueSmokeDetectionStatusNone = 0,
     HMCharacteristicValueSmokeDetectionStatusDetected,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueChargingState
@@ -252,8 +256,8 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSmokeDetectionStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueChargingState) {
     HMCharacteristicValueChargingStateNone = 0,
     HMCharacteristicValueChargingStateInProgress,
-    HMCharacteristicValueChargingStateNotChargeable NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1),
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+    HMCharacteristicValueChargingStateNotChargeable  API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)),  
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -265,7 +269,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueChargingState) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueContactState) {
     HMCharacteristicValueContactStateDetected = 0,
     HMCharacteristicValueContactStateNone,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueStatusFault
@@ -276,7 +280,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueContactState) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueStatusFault) {
     HMCharacteristicValueStatusFaultNoFault = 0,
     HMCharacteristicValueStatusFaultGeneralFault,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCarbonMonoxideDetectionStatus
@@ -287,7 +291,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueStatusFault) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueCarbonMonoxideDetectionStatus) {
     HMCharacteristicValueCarbonMonoxideDetectionStatusNotDetected = 0,
     HMCharacteristicValueCarbonMonoxideDetectionStatusDetected,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCarbonDioxideDetectionStatus
@@ -298,7 +302,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCarbonMonoxideDetectionStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueCarbonDioxideDetectionStatus) {
     HMCharacteristicValueCarbonDioxideDetectionStatusNotDetected = 0,
     HMCharacteristicValueCarbonDioxideDetectionStatusDetected,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueOccupancyStatus
@@ -309,7 +313,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCarbonDioxideDetectionStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueOccupancyStatus) {
     HMCharacteristicValueOccupancyStatusNotOccupied = 0,
     HMCharacteristicValueOccupancyStatusOccupied,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueSecuritySystemAlarmType
@@ -320,7 +324,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueOccupancyStatus) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueSecuritySystemAlarmType) {
     HMCharacteristicValueSecuritySystemAlarmTypeNoAlarm = 0,
     HMCharacteristicValueSecuritySystemAlarmTypeUnknown,
-} NS_ENUM_AVAILABLE_IOS(10_0) __WATCHOS_AVAILABLE(3_0) __TVOS_AVAILABLE(10_0);
+} API_AVAILABLE(ios(10.0), watchos(3.0), tvos(10.0)) API_UNAVAILABLE(macos);
 
 
 /*!
@@ -332,7 +336,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSecuritySystemAlarmType) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueLockPhysicalControlsState) {
     HMCharacteristicValueLockPhysicalControlsStateNotLocked = 0,
     HMCharacteristicValueLockPhysicalControlsStateLocked,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCurrentAirPurifierState
@@ -345,7 +349,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentAirPurifierState) {
     HMCharacteristicValueCurrentAirPurifierStateInactive = 0,
     HMCharacteristicValueCurrentAirPurifierStateIdle,
     HMCharacteristicValueCurrentAirPurifierStateActive,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueTargetAirPurifierState
@@ -356,7 +360,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentAirPurifierState) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetAirPurifierState) {
     HMCharacteristicValueTargetAirPurifierStateManual = 0,
     HMCharacteristicValueTargetAirPurifierStateAutomatic,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCurrentSlatState
@@ -369,7 +373,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentSlatState) {
     HMCharacteristicValueCurrentSlatStateStationary = 0,
     HMCharacteristicValueCurrentSlatStateJammed,
     HMCharacteristicValueCurrentSlatStateOscillating,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueSlatType
@@ -380,7 +384,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentSlatState) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueSlatType) {
     HMCharacteristicValueSlatTypeHorizontal = 0,
     HMCharacteristicValueSlatTypeVertical,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueFilterChange
@@ -391,7 +395,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSlatType) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueFilterChange) {
     HMCharacteristicValueFilterChangeNotNeeded = 0,
     HMCharacteristicValueFilterChangeNeeded,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCurrentFanState
@@ -404,7 +408,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentFanState) {
     HMCharacteristicValueCurrentFanStateInactive = 0,
     HMCharacteristicValueCurrentFanStateIdle,
     HMCharacteristicValueCurrentFanStateActive,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueTargetFanState
@@ -415,7 +419,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentFanState) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetFanState) {
     HMCharacteristicValueTargetFanStateManual = 0,
     HMCharacteristicValueTargetFanStateAutomatic,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCurrentHeaterCoolerState
@@ -430,7 +434,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentHeaterCoolerState) {
     HMCharacteristicValueCurrentHeaterCoolerStateIdle,
     HMCharacteristicValueCurrentHeaterCoolerStateHeating,
     HMCharacteristicValueCurrentHeaterCoolerStateCooling,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueTargetHeaterCoolerState
@@ -443,7 +447,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetHeaterCoolerState) {
     HMCharacteristicValueTargetHeaterCoolerStateAutomatic = 0,
     HMCharacteristicValueTargetHeaterCoolerStateHeat,
     HMCharacteristicValueTargetHeaterCoolerStateCool,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueCurrentHumidifierDehumidifierState
@@ -458,7 +462,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueCurrentHumidifierDehumidifierSta
     HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle,
     HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying,
     HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueTargetHumidifierDehumidifierState
@@ -471,7 +475,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetHumidifierDehumidifierStat
     HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic = 0,
     HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify,
     HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueSwingMode
@@ -482,7 +486,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueTargetHumidifierDehumidifierStat
 typedef NS_ENUM(NSInteger, HMCharacteristicValueSwingMode) {
     HMCharacteristicValueSwingModeDisabled = 0,
     HMCharacteristicValueSwingModeEnabled,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueActivationState
@@ -493,7 +497,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueSwingMode) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueActivationState) {
     HMCharacteristicValueActivationStateInactive = 0,
     HMCharacteristicValueActivationStateActive,
-} NS_ENUM_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+} API_AVAILABLE(ios(10.2), watchos(3.1.1), tvos(10.1)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueInputEvent
@@ -506,7 +510,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueInputEvent) {
     HMCharacteristicValueInputEventSinglePress = 0,
     HMCharacteristicValueInputEventDoublePress,
     HMCharacteristicValueInputEventLongPress,
-} NS_ENUM_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+} API_AVAILABLE(ios(10.3), watchos(3.2), tvos(10.2)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueLabelNamespace
@@ -517,7 +521,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueInputEvent) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueLabelNamespace) {
     HMCharacteristicValueLabelNamespaceDot = 0,
     HMCharacteristicValueLabelNamespaceNumeral,
-} NS_ENUM_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+} API_AVAILABLE(ios(10.3), watchos(3.2), tvos(10.2)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueProgramMode
@@ -530,7 +534,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueProgramMode) {
     HMCharacteristicValueProgramModeNotScheduled = 0,
     HMCharacteristicValueProgramModeScheduled,
     HMCharacteristicValueProgramModeScheduleOverriddenToManual,
-} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueUsageState
@@ -541,7 +545,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueProgramMode) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueUsageState) {
     HMCharacteristicValueUsageStateNotInUse = 0,
     HMCharacteristicValueUsageStateInUse,
-} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueValveType
@@ -556,7 +560,7 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueValveType) {
     HMCharacteristicValueValveTypeIrrigation,
     HMCharacteristicValueValveTypeShowerHead,
     HMCharacteristicValueValveTypeWaterFaucet,
-} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2)) API_UNAVAILABLE(macos);
 
 /*!
  @enum      HMCharacteristicValueConfigurationState
@@ -567,4 +571,4 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueValveType) {
 typedef NS_ENUM(NSInteger, HMCharacteristicValueConfigurationState) {
     HMCharacteristicValueConfigurationStateNotConfigured = 0,
     HMCharacteristicValueConfigurationStateConfigured,
-} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2)) API_UNAVAILABLE(macos);

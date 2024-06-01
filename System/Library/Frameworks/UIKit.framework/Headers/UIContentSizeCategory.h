@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIContentSizeCategory.h>)
 //
 //  UIContentSizeCategory.h
 //  UIKit
 //
-//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString * UIContentSizeCategory NS_STRING_ENUM NS_AVAILABLE_IOS(7_0);
+typedef NSString * UIContentSizeCategory NS_TYPED_ENUM NS_AVAILABLE_IOS(7_0);
 
 // Content size category constants
 
@@ -38,3 +39,7 @@ UIKIT_EXTERN BOOL UIContentSizeCategoryIsAccessibilityCategory(UIContentSizeCate
 UIKIT_EXTERN NSComparisonResult UIContentSizeCategoryCompareToCategory(UIContentSizeCategory lhs, UIContentSizeCategory rhs) API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0)) NS_REFINED_FOR_SWIFT;
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIContentSizeCategory.h>
+#endif

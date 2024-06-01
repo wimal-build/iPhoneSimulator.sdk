@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPress.h>)
 //
 //  UIPress.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -44,3 +45,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface UIPress : NSObject
 // For analog buttons, returns a value between 0 and 1.  Digital buttons return 0 or 1.
 @property(nonatomic, readonly) CGFloat force;
 @end
+
+#else
+#import <UIKitCore/UIPress.h>
+#endif

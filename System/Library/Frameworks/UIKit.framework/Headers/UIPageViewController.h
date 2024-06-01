@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIPageViewController.h>)
 //
 //  UIPageViewController.h
 //  UIKit
 //
-//  Copyright 2011-2017 Apple Inc. All rights reserved.
+//  Copyright 2011-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIViewController.h>
@@ -31,22 +32,24 @@ typedef NS_ENUM(NSInteger, UIPageViewControllerTransitionStyle) {
     UIPageViewControllerTransitionStyleScroll = 1 // Navigate between views by scrolling.
 };
 
+typedef NSString * UIPageViewControllerOptionsKey NS_TYPED_ENUM;
+
 // Key for specifying spine location in options dictionary argument to initWithTransitionStyle:navigationOrientation:options:.
 // Value should be a 'UIPageViewControllerSpineLocation' wrapped in an NSNumber.
 // Only valid for use with page view controllers with transition style 'UIPageViewControllerTransitionStylePageCurl'.
-UIKIT_EXTERN NSString * const UIPageViewControllerOptionSpineLocationKey;
+UIKIT_EXTERN UIPageViewControllerOptionsKey const UIPageViewControllerOptionSpineLocationKey;
 
 // Key for specifying spacing between pages in options dictionary argument to initWithTransitionStyle:navigationOrientation:options:.
 // Value should be a CGFloat wrapped in an NSNumber. Default is '0'.
 // Only valid for use with page view controllers with transition style 'UIPageViewControllerTransitionStyleScroll'.
-UIKIT_EXTERN NSString * const UIPageViewControllerOptionInterPageSpacingKey NS_AVAILABLE_IOS(6_0);
+UIKIT_EXTERN UIPageViewControllerOptionsKey const UIPageViewControllerOptionInterPageSpacingKey NS_AVAILABLE_IOS(6_0);
 
 @protocol UIPageViewControllerDelegate, UIPageViewControllerDataSource;
 
 NS_CLASS_AVAILABLE_IOS(5_0) @interface UIPageViewController : UIViewController {
 }
 
-- (instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(nullable NSDictionary<NSString *, id> *)options NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(nullable NSDictionary<UIPageViewControllerOptionsKey, id> *)options NS_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder *)coder NS_DESIGNATED_INITIALIZER;
 
 @property (nullable, nonatomic, weak) id <UIPageViewControllerDelegate> delegate;
@@ -110,3 +113,7 @@ NS_CLASS_AVAILABLE_IOS(5_0) @interface UIPageViewController : UIViewController {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIPageViewController.h>
+#endif

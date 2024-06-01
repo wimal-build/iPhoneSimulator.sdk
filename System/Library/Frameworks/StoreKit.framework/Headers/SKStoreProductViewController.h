@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SKStoreProductViewControllerDelegate;
 
 /* View controller to display iTunes Store product information */
-SK_EXTERN_CLASS_AVAILABLE(6_0) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController
+SK_EXTERN_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface SKStoreProductViewController : UIViewController
 
 // Delegate for product page events
-@property(nonatomic, assign, nullable) id <SKStoreProductViewControllerDelegate> delegate NS_AVAILABLE_IOS(6_0);
+@property(nonatomic, weak, nullable) id <SKStoreProductViewControllerDelegate> delegate NS_AVAILABLE_IOS(6_0);
 
 // Load product view for the product with the given parameters.  See below for parameters (SKStoreProductParameter*).
 // Block is invoked when the load finishes.

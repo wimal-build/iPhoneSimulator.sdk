@@ -19,12 +19,8 @@ API_UNAVAILABLE(macosx)
 // Use +notRequired to continue with a 'nil' value.
 + (instancetype)successWithResolvedLocationSearchType:(INLocationSearchType)resolvedLocationSearchType NS_SWIFT_NAME(success(with:));
 
-+ (instancetype)successWithResolvedValue:(INLocationSearchType)resolvedValue NS_SWIFT_UNAVAILABLE("Please use 'success(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+successWithResolvedLocationSearchType:", ios(11.0, 11.0), watchos(4.0, 4.0));
-
 // This resolution result is to ask Siri to confirm if this is the value with which the user wants to continue.
 + (instancetype)confirmationRequiredWithLocationSearchTypeToConfirm:(INLocationSearchType)locationSearchTypeToConfirm NS_SWIFT_NAME(confirmationRequired(with:));
-
-+ (instancetype)confirmationRequiredWithValueToConfirm:(INLocationSearchType)valueToConfirm NS_SWIFT_UNAVAILABLE("Please use 'confirmationRequired(with:)' instead.") API_DEPRECATED_WITH_REPLACEMENT("+confirmationRequiredWithLocationSearchTypeToConfirm:", ios(11.0, 11.0), watchos(4.0, 4.0));
 
 @end
 

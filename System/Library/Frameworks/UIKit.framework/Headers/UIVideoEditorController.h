@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIVideoEditorController.h>)
 //
 //  UIVideoEditorController.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc.. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc.. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -38,3 +39,7 @@ __TVOS_PROHIBITED @protocol UIVideoEditorControllerDelegate<NSObject>
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIVideoEditorController.h>
+#endif

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIImagePickerController.h>)
 //
 //  UIImagePickerController.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -50,17 +51,19 @@ typedef NS_ENUM(NSInteger, UIImagePickerControllerImageURLExportPreset) {
     UIImagePickerControllerImageURLExportPresetCurrent
 } NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;
 
+typedef NSString * UIImagePickerControllerInfoKey NS_TYPED_ENUM;
+
 // info dictionary keys
-UIKIT_EXTERN NSString *const UIImagePickerControllerMediaType __TVOS_PROHIBITED;      // an NSString (UTI, i.e. kUTTypeImage)
-UIKIT_EXTERN NSString *const UIImagePickerControllerOriginalImage __TVOS_PROHIBITED;  // a UIImage
-UIKIT_EXTERN NSString *const UIImagePickerControllerEditedImage __TVOS_PROHIBITED;    // a UIImage
-UIKIT_EXTERN NSString *const UIImagePickerControllerCropRect __TVOS_PROHIBITED;       // an NSValue (CGRect)
-UIKIT_EXTERN NSString *const UIImagePickerControllerMediaURL __TVOS_PROHIBITED;       // an NSURL
-UIKIT_EXTERN NSString *const UIImagePickerControllerReferenceURL        NS_DEPRECATED_IOS(4_1, 11_0, "Replace with public API: UIImagePickerControllerPHAsset") __TVOS_PROHIBITED;  // an NSURL that references an asset in the AssetsLibrary framework
-UIKIT_EXTERN NSString *const UIImagePickerControllerMediaMetadata       NS_AVAILABLE_IOS(4_1) __TVOS_PROHIBITED;  // an NSDictionary containing metadata from a captured photo
-UIKIT_EXTERN NSString *const UIImagePickerControllerLivePhoto NS_AVAILABLE_IOS(9_1) __TVOS_PROHIBITED;  // a PHLivePhoto
-UIKIT_EXTERN NSString *const UIImagePickerControllerPHAsset NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // a PHAsset
-UIKIT_EXTERN NSString *const UIImagePickerControllerImageURL NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // an NSURL
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaType __TVOS_PROHIBITED;      // an NSString (UTI, i.e. kUTTypeImage)
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerOriginalImage __TVOS_PROHIBITED;  // a UIImage
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerEditedImage __TVOS_PROHIBITED;    // a UIImage
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerCropRect __TVOS_PROHIBITED;       // an NSValue (CGRect)
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaURL __TVOS_PROHIBITED;       // an NSURL
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerReferenceURL        NS_DEPRECATED_IOS(4_1, 11_0, "Replace with public API: UIImagePickerControllerPHAsset") __TVOS_PROHIBITED;  // an NSURL that references an asset in the AssetsLibrary framework
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerMediaMetadata       NS_AVAILABLE_IOS(4_1) __TVOS_PROHIBITED;  // an NSDictionary containing metadata from a captured photo
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerLivePhoto NS_AVAILABLE_IOS(9_1) __TVOS_PROHIBITED;  // a PHLivePhoto
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerPHAsset NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // a PHAsset
+UIKIT_EXTERN UIImagePickerControllerInfoKey const UIImagePickerControllerImageURL NS_AVAILABLE_IOS(11_0) __TVOS_PROHIBITED;  // an NSURL
 
 NS_CLASS_AVAILABLE_IOS(2_0) __TVOS_PROHIBITED @interface UIImagePickerController : UINavigationController <NSCoding>
 
@@ -110,8 +113,8 @@ __TVOS_PROHIBITED @protocol UIImagePickerControllerDelegate<NSObject>
 // The picker does not dismiss itself; the client dismisses it in these callbacks.
 // The delegate will receive one or the other, but not both, depending whether the user
 // confirms or cancels.
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0);
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info;
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<UIImagePickerControllerInfoKey, id> *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0);
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> *)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker;
 
 @end
@@ -129,3 +132,7 @@ UIKIT_EXTERN BOOL UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(NSString *videoP
 UIKIT_EXTERN void UISaveVideoAtPathToSavedPhotosAlbum(NSString *videoPath, __nullable id completionTarget, __nullable SEL completionSelector, void * __nullable contextInfo) NS_AVAILABLE_IOS(3_1) __TVOS_PROHIBITED;
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIImagePickerController.h>
+#endif

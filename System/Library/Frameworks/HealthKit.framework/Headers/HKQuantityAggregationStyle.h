@@ -2,8 +2,10 @@
 //  HKQuantityAggregationStyle.h
 //  HealthKit
 //
-//  Copyright (c) 2013-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2013-2018 Apple Inc. All rights reserved.
 //
+
+#import <Foundation/Foundation.h>
 
 /*!
  @enum          HKQuantityAggregationStyle

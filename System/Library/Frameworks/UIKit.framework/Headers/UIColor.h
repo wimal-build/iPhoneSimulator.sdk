@@ -1,16 +1,17 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIColor.h>)
 //
 //  UIColor.h
 //  UIKit
 //
-//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKitDefines.h>
 #if __has_include(<CoreImage/CoreImage.h>)
 #import <CoreImage/CoreImage.h>
 #endif
-#import <UIKit/UIKitDefines.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -123,3 +124,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIColor : NSObject <NSSecureCoding, NSCop
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIColor.h>
+#endif

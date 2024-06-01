@@ -14,7 +14,7 @@
 /**
  Option set of hit-test result types.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 typedef NS_OPTIONS(NSUInteger, ARHitTestResultType) {
     /** Result type from intersecting the nearest feature point. */
     ARHitTestResultTypeFeaturePoint                                        = (1 << 0),
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  A result of an intersection found during a hit-test.
  */
-API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.0))
 @interface ARHitTestResult : NSObject
 
 /**
@@ -57,13 +57,13 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  The transformation matrix that defines the intersection’s rotation, translation and scale
  relative to the anchor or nearest feature point.
  */
-@property (nonatomic, readonly) matrix_float4x4 localTransform;
+@property (nonatomic, readonly) simd_float4x4 localTransform;
 
 /**
  The transformation matrix that defines the intersection’s rotation, translation and scale
  relative to the world.
  */
-@property (nonatomic, readonly) matrix_float4x4 worldTransform;
+@property (nonatomic, readonly) simd_float4x4 worldTransform;
 
 /**
  The anchor that the hit-test intersected.

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UITableViewController.h>)
 //
 //  UITableViewController.h
 //  UIKit
 //
-//  Copyright (c) 2008-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2008-2018 Apple Inc. All rights reserved.
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewController.h>
@@ -30,3 +31,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UITableViewController : UIViewController 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UITableViewController.h>
+#endif

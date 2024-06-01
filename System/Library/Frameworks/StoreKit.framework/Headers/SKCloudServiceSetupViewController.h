@@ -17,7 +17,7 @@ typedef NSString * SKCloudServiceSetupMessageIdentifier NS_STRING_ENUM;
 @protocol SKCloudServiceSetupViewControllerDelegate;
 
 /// View controller to allow user to setup iTunes Store account for cloud service, such as Apple Music subscription.
-SK_EXTERN_CLASS_AVAILABLE(10_1) __TVOS_PROHIBITED @interface SKCloudServiceSetupViewController : UIViewController
+SK_EXTERN_CLASS_AVAILABLE_IOS(10_1) __TVOS_PROHIBITED @interface SKCloudServiceSetupViewController : UIViewController
 
 /// Optional delegate.
 @property (nonatomic, nullable, weak) id <SKCloudServiceSetupViewControllerDelegate> delegate;

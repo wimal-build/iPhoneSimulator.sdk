@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <HealthKit/HKDefines.h>
+#import <HealthKit/HKFHIRResource.h>
 #import <HealthKit/HKWorkout.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -308,6 +309,32 @@ typedef NS_OPTIONS(NSUInteger, HKQueryOptions) {
                 year, month, and day components in the gregorian calendar.
  */
 + (NSPredicate *)predicateForActivitySummariesBetweenStartDateComponents:(NSDateComponents *)startDateComponents endDateComponents:(NSDateComponents *)endDateComponents API_AVAILABLE(ios(9.3), watchos(2.2));
+
+@end
+
+@interface HKQuery (HKClinicalRecordPredicates)
+
+/*!
+ @method        predicateForClinicalRecordsWithFHIRResourceType:
+ @abstract      Creates a predicate for use with HKQuery subclasses.
+ @discussion    Creates a query predicate that matches HKClinicalRecords with a specific FHIR resource type.
+ 
+ @param         resourceType    The FHIR resource type.
+ */
++ (NSPredicate *)predicateForClinicalRecordsWithFHIRResourceType:(HKFHIRResourceType)resourceType API_AVAILABLE(ios(12.0)) __WATCHOS_PROHIBITED;
+
+/*!
+ @method        predicateForClinicalRecordsFromSource:withFHIRResourceType:identifier:
+ @abstract      Creates a predicate for use with HKQuery subclasses.
+ @discussion    Creates a query predicate that matches HKClinicalRecords for a given source, FHIR resource type, and FHIR identifier.
+ 
+ @param         source          The source.
+ @param         resourceType    The FHIR resource type.
+ @param         identifier      The FHIR identifier.
+ */
++ (NSPredicate *)predicateForClinicalRecordsFromSource:(HKSource *)source
+                                      FHIRResourceType:(HKFHIRResourceType)resourceType
+                                            identifier:(NSString *)identifier API_AVAILABLE(ios(12.0)) __WATCHOS_PROHIBITED;
 
 @end
 

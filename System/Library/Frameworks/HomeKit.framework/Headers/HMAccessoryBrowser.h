@@ -1,9 +1,12 @@
-// HMAccessoryBrowser.h
-// HomeKit
 //
-// Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//  HMAccessoryBrowser.h
+//  HomeKit
+//
+//  Copyright (c) 2013-2015 Apple Inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief This class is used to discover new accessories in the home
  *        that have never been paired with and therefore not part of the home.
  */
-NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, watchos, tvos) 
 @interface HMAccessoryBrowser : NSObject
 
 /*!
@@ -63,7 +66,7 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
 /*!
  * @brief This delegate receives updates about new accessories in the home.
  */
-NS_AVAILABLE_IOS(8_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+API_AVAILABLE(ios(8.0)) API_UNAVAILABLE(macos, watchos, tvos) 
 @protocol HMAccessoryBrowserDelegate <NSObject>
 
 @optional

@@ -100,6 +100,7 @@ CB_EXTERN NSString * const CBConnectPeripheralOptionNotifyOnDisconnectionKey;
  */
 CB_EXTERN NSString * const CBConnectPeripheralOptionNotifyOnNotificationKey NS_AVAILABLE(10_13, 6_0);
 
+
 /*!
  *  @const CBConnectPeripheralOptionStartDelayKey
  *

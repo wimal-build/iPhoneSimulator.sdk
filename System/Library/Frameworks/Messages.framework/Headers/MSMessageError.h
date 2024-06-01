@@ -24,4 +24,5 @@ typedef NS_ENUM(NSInteger, MSMessageErrorCode) {
     MSMessageErrorCodeURLExceedsMaxSize,
     MSMessageErrorCodeSendWithoutRecentInteraction NS_ENUM_AVAILABLE_IOS(11_0),
     MSMessageErrorCodeSendWhileNotVisible NS_ENUM_AVAILABLE_IOS(11_0),
+    MSMessageErrorCodeAPIUnavailableInPresentationContext NS_ENUM_AVAILABLE_IOS(12_0),
 } NS_ENUM_AVAILABLE_IOS(10_0);

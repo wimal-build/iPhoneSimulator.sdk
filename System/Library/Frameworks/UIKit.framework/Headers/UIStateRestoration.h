@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIStateRestoration.h>)
 /*
  *  UIStateRestoration.h
  *  UIKit
  *
- *  Copyright 2012-2017 Apple Inc. All rights reserved.
+ *  Copyright 2012-2018 Apple Inc. All rights reserved.
  *
  */
 
@@ -36,7 +37,7 @@ UIKIT_EXTERN NSString *const UIApplicationStateRestorationSystemVersionKey NS_AV
 
 // A class must implement this protocol if it is specified as the restoration class of a UIViewController.
 @protocol UIViewControllerRestoration
-+ (nullable UIViewController *) viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder;
++ (nullable UIViewController *) viewControllerWithRestorationIdentifierPath:(NSArray<NSString *> *)identifierComponents coder:(NSCoder *)coder;
 @end
 
 @protocol UIDataSourceModelAssociation
@@ -84,3 +85,7 @@ UIKIT_EXTERN NSString *const UIApplicationStateRestorationSystemVersionKey NS_AV
 NS_ASSUME_NONNULL_END
 
 
+
+#else
+#import <UIKitCore/UIStateRestoration.h>
+#endif

@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIActivityItemProvider.h>)
 //
 //  UIActivityItemProvider.h
 //  UIKit
 //
-//  Copyright 2012-2017 Apple Inc. All rights reserved.
+//  Copyright 2012-2018 Apple Inc. All rights reserved.
 //
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -45,3 +46,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) __TVOS_PROHIBITED @interface UIActivityItemProvider 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIActivityItemProvider.h>
+#endif

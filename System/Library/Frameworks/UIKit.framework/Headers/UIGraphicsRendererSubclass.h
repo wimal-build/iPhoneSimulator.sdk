@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIGraphicsRendererSubclass.h>)
 //
 //  UIGraphicsRendererSubclass.h
 //  UIKit
 //
-//  Copyright (c) 2016-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2016-2018 Apple Inc. All rights reserved.
 //
 
 #import <UIKit/UIGraphicsRenderer.h>
@@ -32,3 +33,7 @@ typedef void (^UIGraphicsDrawingActions)(__kindof UIGraphicsRendererContext *ren
 @end
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIGraphicsRendererSubclass.h>
+#endif

@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  An anchor representing an image in the world.
  */
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
-@interface ARImageAnchor : ARAnchor
+API_AVAILABLE(ios(11.3))
+@interface ARImageAnchor : ARAnchor <ARTrackable>
 
 /**
  Reference to the detected image.
@@ -23,7 +23,8 @@ API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
 @property (nonatomic, strong, readonly) ARReferenceImage *referenceImage;
 
 /** Unavailable */
-- (instancetype)initWithTransform:(matrix_float4x4)transform NS_UNAVAILABLE;
+- (instancetype)initWithTransform:(simd_float4x4)transform NS_UNAVAILABLE;
+- (instancetype)initWithName:(NSString *)name transform:(simd_float4x4)transform NS_UNAVAILABLE;
 
 @end
 

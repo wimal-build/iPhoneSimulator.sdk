@@ -1,21 +1,22 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: D1ECFB48-90B4-3665-999F-03B22AD35A42' ]
+uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: 84A743D2-543D-3F35-9AA4-C542CDFDE14B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Accelerate
 current-version: 4
 objc-constraint: none
 exports:         
+  - archs:           [ i386 ]
+    re-exports:      [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib ]
   - archs:           [ i386, x86_64 ]
     re-exports:      [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage, 
-                       /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib, 
                        /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: 4BB6B0B2-4C40-3DD0-AE47-99C26918C861' ]
+uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: D8D22A04-CCDD-392B-B358-F15DD769B79C' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-current-version: 417
+current-version: 506.19
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -179,6 +180,10 @@ exports:
                        _vImageCopyBuffer, _vImageCreateCGImageFromBuffer, _vImageCreateGammaFunction, 
                        _vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction, 
                        _vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction, 
+                       _vImageDeepmapDecode, _vImageDeepmapDecodeScratchBufferSize, 
+                       _vImageDeepmapDecodeStreamCreate, _vImageDeepmapDecodeStreamProcess, 
+                       _vImageDeepmapDecodeStreamRelease, _vImageDeepmapDecodeStreamScratchBufferSize, 
+                       _vImageDeepmapEncode, _vImageDeepmapEncodeCreateBuffer, _vImageDeepmapPixelSize, 
                        _vImageDestroyGammaFunction, _vImageDestroyResamplingFilter, 
                        _vImageDilate_ARGB8888, _vImageDilate_ARGBFFFF, _vImageDilate_Planar8, 
                        _vImageDilate_PlanarF, _vImageEndsInContrastStretch_ARGB8888, 
@@ -293,7 +298,7 @@ exports:
                        _vImageVerticalShear_XRGB2101010W ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: CCB04DDB-271B-37DC-9ED8-3B7DE2C92D1F' ]
+uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: B3EFD255-E5B2-3244-B880-5A33AFE506E2' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
 objc-constraint: none
@@ -374,21 +379,23 @@ exports:
                        _ztpmv_, _ztpsv_, _ztrmm_, _ztrmv_, _ztrsm_, _ztrsv_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: 8FF94CA4-EE6F-377C-AE9D-C5685D93D91F' ]
+uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: F145D8A7-0748-3101-8A4C-EF7B767944E1' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
 objc-constraint: none
-parent-umbrella: vecLib
 exports:         
+  - archs:           [ x86_64 ]
+    allowable-clients: [ vecLib ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _BNNSApplyVectorActivationLayer, _BNNSFilterApply, _BNNSFilterApplyBatch, 
-                       _BNNSFilterCreateConvolutionLayer, _BNNSFilterCreateConvolutionWeightsTensorConversionLayer, 
+    symbols:         [ _BNNSApplyVectorActivationLayer, _BNNSDequantize, _BNNSFilterApply, 
+                       _BNNSFilterApplyBatch, _BNNSFilterCreateConvolutionLayer, 
+                       _BNNSFilterCreateConvolutionWeightsTensorConversionLayer, 
                        _BNNSFilterCreateFullyConnectedLayer, _BNNSFilterCreateImageTensorConversionLayer, 
                        _BNNSFilterCreatePoolingLayer, _BNNSFilterCreateTensorConvolutionLayer, 
                        _BNNSFilterCreateVectorActivationLayer, _BNNSFilterDestroy ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: B0760CBF-1EFB-3E50-9158-61486066BB25' ]
+uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: F0AEAF47-62C4-3998-9C1E-E9E87401A6E8' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib
 objc-constraint: none
@@ -640,12 +647,13 @@ exports:
                        _zunmrq_, _zunmrz_, _zunmtr_, _zupgtr_, _zupmtr_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: 779FAC1B-9F58-30B7-B634-90FFB8A3BBC2' ]
+uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: 6B909AD6-71F6-35F1-97FF-610E7DB1561B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib
 objc-constraint: none
-parent-umbrella: vecLib
 exports:         
+  - archs:           [ x86_64 ]
+    allowable-clients: [ vecLib ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _la_add_attributes, _la_diagonal_matrix_from_vector, _la_difference, 
                        _la_elementwise_product, _la_identity_matrix, _la_inner_product, 
@@ -663,22 +671,153 @@ exports:
                        _la_vector_to_double_buffer, _la_vector_to_float_buffer ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: 57390FB3-49F7-3226-9852-62C702199795' ]
+uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: 30BAA841-86FD-375B-904C-9338C5EF497A' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib
 objc-constraint: none
-parent-umbrella: vecLib
 exports:         
+  - archs:           [ x86_64 ]
+    allowable-clients: [ vecLib ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _quadrature_integrate ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F4B67424-B162-30E9-B631-B6C6DCB13518' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8544942E-BFD0-38ED-9E56-D906E03C6061' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib
 objc-constraint: none
 exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ __Z10SparseLSMR17SparseLSMROptions, __Z10SparseLSMRv, __Z11SparseGMRES18SparseGMRESOptions, 
+                       __Z11SparseGMRESv, __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseMatrix_FloatS1_, 
+                       __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseMatrix_FloatS1_32SparseOpaquePreconditioner_Float, 
+                       __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseMatrix_FloatS1_i, 
+                       __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseVector_FloatS1_, 
+                       __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseVector_FloatS1_32SparseOpaquePreconditioner_Float, 
+                       __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseVector_FloatS1_i, 
+                       __Z11SparseSolve21SparseIterativeMethod19SparseMatrix_Double18DenseMatrix_DoubleS1_, 
+                       __Z11SparseSolve21SparseIterativeMethod19SparseMatrix_Double18DenseMatrix_DoubleS1_33SparseOpaquePreconditioner_Double, 
+                       __Z11SparseSolve21SparseIterativeMethod19SparseMatrix_Double18DenseMatrix_DoubleS1_i, 
+                       __Z11SparseSolve21SparseIterativeMethod19SparseMatrix_Double18DenseVector_DoubleS1_, 
+                       __Z11SparseSolve21SparseIterativeMethod19SparseMatrix_Double18DenseVector_DoubleS1_33SparseOpaquePreconditioner_Double, 
+                       __Z11SparseSolve21SparseIterativeMethod19SparseMatrix_Double18DenseVector_DoubleS1_i, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE17DenseMatrix_FloatS1_ES1_S1_, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE17DenseMatrix_FloatS1_ES1_S1_32SparseOpaquePreconditioner_Float, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE17DenseVector_FloatS1_ES1_S1_, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE17DenseVector_FloatS1_ES1_S1_32SparseOpaquePreconditioner_Float, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE18DenseMatrix_DoubleS1_ES1_S1_, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE18DenseMatrix_DoubleS1_ES1_S1_33SparseOpaquePreconditioner_Double, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE18DenseVector_DoubleS1_ES1_S1_, 
+                       __Z11SparseSolve21SparseIterativeMethodU13block_pointerFvb15CBLAS_TRANSPOSE18DenseVector_DoubleS1_ES1_S1_33SparseOpaquePreconditioner_Double, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseMatrix_Float, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseMatrix_FloatPv, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseMatrix_FloatS0_, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseMatrix_FloatS0_Pv, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseVector_Float, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseVector_FloatPv, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseVector_FloatS0_, 
+                       __Z11SparseSolve27SparseOpaqueSubfactor_Float17DenseVector_FloatS0_Pv, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseMatrix_Double, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseMatrix_DoublePv, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseMatrix_DoubleS0_, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseMatrix_DoubleS0_Pv, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseVector_Double, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseVector_DoublePv, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseVector_DoubleS0_, 
+                       __Z11SparseSolve28SparseOpaqueSubfactor_Double18DenseVector_DoubleS0_Pv, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseMatrix_Float, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseMatrix_FloatPv, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseMatrix_FloatS0_, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseMatrix_FloatS0_Pv, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseVector_Float, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseVector_FloatPv, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseVector_FloatS0_, 
+                       __Z11SparseSolve31SparseOpaqueFactorization_Float17DenseVector_FloatS0_Pv, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseMatrix_Double, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseMatrix_DoublePv, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseMatrix_DoubleS0_, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseMatrix_DoubleS0_Pv, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseVector_Double, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseVector_DoublePv, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseVector_DoubleS0_, 
+                       __Z11SparseSolve32SparseOpaqueFactorization_Double18DenseVector_DoubleS0_Pv, 
+                       __Z12SparseFactor33SparseOpaqueSymbolicFactorization18SparseMatrix_Float, 
+                       __Z12SparseFactor33SparseOpaqueSymbolicFactorization18SparseMatrix_Float26SparseNumericFactorOptions, 
+                       __Z12SparseFactor33SparseOpaqueSymbolicFactorization18SparseMatrix_Float26SparseNumericFactorOptionsPvS2_, 
+                       __Z12SparseFactor33SparseOpaqueSymbolicFactorization19SparseMatrix_Double, 
+                       __Z12SparseFactor33SparseOpaqueSymbolicFactorization19SparseMatrix_Double26SparseNumericFactorOptions, 
+                       __Z12SparseFactor33SparseOpaqueSymbolicFactorization19SparseMatrix_Double26SparseNumericFactorOptionsPvS2_, 
+                       __Z12SparseFactorh18SparseMatrix_Float, __Z12SparseFactorh18SparseMatrix_Float27SparseSymbolicFactorOptions26SparseNumericFactorOptions, 
+                       __Z12SparseFactorh19SparseMatrix_Double, __Z12SparseFactorh19SparseMatrix_Double27SparseSymbolicFactorOptions26SparseNumericFactorOptions, 
+                       __Z12SparseFactorh21SparseMatrixStructure, __Z12SparseFactorh21SparseMatrixStructure27SparseSymbolicFactorOptions, 
+                       __Z12SparseRetain27SparseOpaqueSubfactor_Float, __Z12SparseRetain28SparseOpaqueSubfactor_Double, 
+                       __Z12SparseRetain31SparseOpaqueFactorization_Float, __Z12SparseRetain32SparseOpaqueFactorization_Double, 
+                       __Z12SparseRetain33SparseOpaqueSymbolicFactorization, __Z13SparseCleanup18SparseMatrix_Float, 
+                       __Z13SparseCleanup19SparseMatrix_Double, __Z13SparseCleanup27SparseOpaqueSubfactor_Float, 
+                       __Z13SparseCleanup28SparseOpaqueSubfactor_Double, __Z13SparseCleanup31SparseOpaqueFactorization_Float, 
+                       __Z13SparseCleanup32SparseOpaqueFactorization_Double, __Z13SparseCleanup32SparseOpaquePreconditioner_Float, 
+                       __Z13SparseCleanup33SparseOpaquePreconditioner_Double, __Z13SparseCleanup33SparseOpaqueSymbolicFactorization, 
+                       __Z13SparseIterate21SparseIterativeMethodiPKbPvU13block_pointerFvb15CBLAS_TRANSPOSE17DenseMatrix_FloatS4_ES4_S4_S4_, 
+                       __Z13SparseIterate21SparseIterativeMethodiPKbPvU13block_pointerFvb15CBLAS_TRANSPOSE17DenseMatrix_FloatS4_ES4_S4_S4_32SparseOpaquePreconditioner_Float, 
+                       __Z13SparseIterate21SparseIterativeMethodiPKbPvU13block_pointerFvb15CBLAS_TRANSPOSE18DenseMatrix_DoubleS4_ES4_S4_S4_, 
+                       __Z13SparseIterate21SparseIterativeMethodiPKbPvU13block_pointerFvb15CBLAS_TRANSPOSE18DenseMatrix_DoubleS4_ES4_S4_S4_33SparseOpaquePreconditioner_Double, 
+                       __Z14SparseMultiply18SparseMatrix_Float17DenseMatrix_FloatS0_, 
+                       __Z14SparseMultiply18SparseMatrix_Float17DenseVector_FloatS0_, 
+                       __Z14SparseMultiply19SparseMatrix_Double18DenseMatrix_DoubleS0_, 
+                       __Z14SparseMultiply19SparseMatrix_Double18DenseVector_DoubleS0_, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseMatrix_Float, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseMatrix_FloatPv, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseMatrix_FloatS0_, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseMatrix_FloatS0_Pv, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseVector_Float, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseVector_FloatPv, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseVector_FloatS0_, 
+                       __Z14SparseMultiply27SparseOpaqueSubfactor_Float17DenseVector_FloatS0_Pv, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseMatrix_Double, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseMatrix_DoublePv, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseMatrix_DoubleS0_, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseMatrix_DoubleS0_Pv, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseVector_Double, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseVector_DoublePv, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseVector_DoubleS0_, 
+                       __Z14SparseMultiply28SparseOpaqueSubfactor_Double18DenseVector_DoubleS0_Pv, 
+                       __Z14SparseMultiplyd19SparseMatrix_Double18DenseMatrix_DoubleS0_, 
+                       __Z14SparseMultiplyd19SparseMatrix_Double18DenseVector_DoubleS0_, 
+                       __Z14SparseMultiplyf18SparseMatrix_Float17DenseMatrix_FloatS0_, 
+                       __Z14SparseMultiplyf18SparseMatrix_Float17DenseVector_FloatS0_, 
+                       __Z14SparseRefactor18SparseMatrix_FloatP31SparseOpaqueFactorization_Float, 
+                       __Z14SparseRefactor18SparseMatrix_FloatP31SparseOpaqueFactorization_Float26SparseNumericFactorOptions, 
+                       __Z14SparseRefactor18SparseMatrix_FloatP31SparseOpaqueFactorization_Float26SparseNumericFactorOptionsPv, 
+                       __Z14SparseRefactor18SparseMatrix_FloatP31SparseOpaqueFactorization_FloatPv, 
+                       __Z14SparseRefactor19SparseMatrix_DoubleP32SparseOpaqueFactorization_Double, 
+                       __Z14SparseRefactor19SparseMatrix_DoubleP32SparseOpaqueFactorization_Double26SparseNumericFactorOptions, 
+                       __Z14SparseRefactor19SparseMatrix_DoubleP32SparseOpaqueFactorization_Double26SparseNumericFactorOptionsPv, 
+                       __Z14SparseRefactor19SparseMatrix_DoubleP32SparseOpaqueFactorization_DoublePv, 
+                       __Z17SparseMultiplyAdd18SparseMatrix_Float17DenseMatrix_FloatS0_, 
+                       __Z17SparseMultiplyAdd18SparseMatrix_Float17DenseVector_FloatS0_, 
+                       __Z17SparseMultiplyAdd19SparseMatrix_Double18DenseMatrix_DoubleS0_, 
+                       __Z17SparseMultiplyAdd19SparseMatrix_Double18DenseVector_DoubleS0_, 
+                       __Z17SparseMultiplyAddd19SparseMatrix_Double18DenseMatrix_DoubleS0_, 
+                       __Z17SparseMultiplyAddd19SparseMatrix_Double18DenseVector_DoubleS0_, 
+                       __Z17SparseMultiplyAddf18SparseMatrix_Float17DenseMatrix_FloatS0_, 
+                       __Z17SparseMultiplyAddf18SparseMatrix_Float17DenseVector_FloatS0_, 
+                       __Z18SparseGetTranspose18SparseMatrix_Float, __Z18SparseGetTranspose19SparseMatrix_Double, 
+                       __Z18SparseGetTranspose27SparseOpaqueSubfactor_Float, __Z18SparseGetTranspose28SparseOpaqueSubfactor_Double, 
+                       __Z18SparseGetTranspose31SparseOpaqueFactorization_Float, 
+                       __Z18SparseGetTranspose32SparseOpaqueFactorization_Double, 
+                       __Z21SparseCreateSubfactorh31SparseOpaqueFactorization_Float, 
+                       __Z21SparseCreateSubfactorh32SparseOpaqueFactorization_Double, 
+                       __Z23SparseConjugateGradient15SparseCGOptions, __Z23SparseConjugateGradientv, 
+                       __Z23SparseConvertFromOpaqueP14sparse_m_float, __Z23SparseConvertFromOpaqueP15sparse_m_double, 
+                       __Z24SparseGetStateSize_Float21SparseIterativeMethodbiii, 
+                       __Z25SparseGetStateSize_Double21SparseIterativeMethodbiii, 
+                       __Z26SparseCreatePreconditioneri18SparseMatrix_Float, __Z26SparseCreatePreconditioneri19SparseMatrix_Double, 
+                       __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKd, 
+                       __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKdPvS4_, 
+                       __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKf, 
+                       __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKfPvS4_ ]
   - archs:           [ i386, x86_64 ]
+    allowable-clients: [ vecLib ]
     symbols:         [ __SparseCGIterate_Double, __SparseCGIterate_Float, __SparseCGSolve_Double, 
                        __SparseCGSolve_Float, __SparseConvertFromCoordinate_Double, 
                        __SparseConvertFromCoordinate_Float, __SparseConvertFromOpaque_Double, 
@@ -706,12 +845,13 @@ exports:
                        __SparseTrap ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: 70EE3E93-D461-379C-99C4-E5452F836A24' ]
+uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: 0C00C8E6-E96C-3BBA-8103-F24BA9E029E4' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib
 objc-constraint: none
-parent-umbrella: vecLib
 exports:         
+  - archs:           [ x86_64 ]
+    allowable-clients: [ Sparse, vecLib ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _sparse_commit, _sparse_elementwise_norm_double, _sparse_elementwise_norm_float, 
                        _sparse_extract_block_double, _sparse_extract_block_float, 
@@ -746,10 +886,10 @@ exports:
                        _sparse_vector_triangular_solve_dense_float ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: E233ECF4-FF51-3FFA-A4F3-F0A79FDAB073' ]
+uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: 6C3BBA05-A19A-3E12-9171-B577835FF440' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
-current-version: 622.50.5
+current-version: 671.200.22
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -885,10 +1025,10 @@ exports:
                        _vDSP_zvsub, _vDSP_zvsubD, _vDSP_zvzsml, _vDSP_zvzsmlD ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: 89317ECA-178A-33A6-9414-F088027AEB55' ]
+uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: 2CFB7A08-24D9-306E-A1B6-E561F0EB49BB' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
-current-version: 622.50.5
+current-version: 671.200.22
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -958,10 +1098,10 @@ exports:
                        _vvtanpif_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: 93690AA9-FA28-3CEF-8B3E-490CD2FC624B' ]
+uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: A2002D83-CC54-377C-BFE2-BAE0B5B6FE66' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib
-current-version: 622.50.5
+current-version: 671.200.22
 objc-constraint: none
 exports:         
   - archs:           [ x86_64 ]

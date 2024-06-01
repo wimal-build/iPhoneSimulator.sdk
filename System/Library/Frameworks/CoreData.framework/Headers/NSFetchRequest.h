@@ -1,7 +1,7 @@
 /*
     NSFetchRequest.h
     Core Data
-    Copyright (c) 2004-2017, Apple Inc.
+    Copyright (c) 2004-2018, Apple Inc.
     All rights reserved.
 */
 
@@ -44,7 +44,8 @@ typedef NS_OPTIONS(NSUInteger, NSFetchRequestResultType) {
 @end
 
 API_AVAILABLE(macosx(10.4),ios(3.0))
-@interface NSFetchRequest<__covariant ResultType:id<NSFetchRequestResult>> : NSPersistentStoreRequest <NSCoding>
+@interface NSFetchRequest<__covariant ResultType:id<NSFetchRequestResult>> : NSPersistentStoreRequest <NSCoding> {
+}
 
 + (instancetype)fetchRequestWithEntityName:(NSString*)entityName API_AVAILABLE(macosx(10.7),ios(4.0));
 
@@ -127,8 +128,8 @@ API_AVAILABLE(macosx(10.4),ios(3.0))
 typedef void (^NSPersistentStoreAsynchronousFetchResultCompletionBlock)(NSAsynchronousFetchResult *result);
 
 API_AVAILABLE(macosx(10.10),ios(8.0))
-@interface NSAsynchronousFetchRequest<ResultType:id<NSFetchRequestResult>> : NSPersistentStoreRequest
-
+@interface NSAsynchronousFetchRequest<ResultType:id<NSFetchRequestResult>> : NSPersistentStoreRequest {
+}
 @property (strong, readonly) NSFetchRequest<ResultType> * fetchRequest;
 @property (nullable, strong, readonly) NSPersistentStoreAsynchronousFetchResultCompletionBlock completionBlock;
 @property (nonatomic) NSInteger estimatedResultCount;

@@ -6,8 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <HomeKit/HMDefines.h>
 
-API_AVAILABLE(ios(11.3)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos) 
 @interface HMAccessorySetupPayload : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

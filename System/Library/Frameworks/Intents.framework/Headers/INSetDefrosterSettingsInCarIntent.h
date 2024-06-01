@@ -12,6 +12,8 @@
 
 @class INBooleanResolutionResult;
 @class INCarDefrosterResolutionResult;
+@class INSpeakableString;
+@class INSpeakableStringResolutionResult;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,11 +22,14 @@ API_UNAVAILABLE(watchos, macosx)
 @interface INSetDefrosterSettingsInCarIntent : INIntent
 
 - (instancetype)initWithEnable:(nullable NSNumber *)enable
-                     defroster:(INCarDefroster)defroster NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT;
+                     defroster:(INCarDefroster)defroster
+                       carName:(nullable INSpeakableString *)carName NS_DESIGNATED_INITIALIZER NS_REFINED_FOR_SWIFT API_AVAILABLE(ios(12.0));
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSNumber *enable NS_REFINED_FOR_SWIFT;
 
 @property (readonly, assign, NS_NONATOMIC_IOSONLY) INCarDefroster defroster;
+
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INSpeakableString *carName API_AVAILABLE(ios(12.0));
 
 @end
 
@@ -84,6 +89,9 @@ API_UNAVAILABLE(watchos, macosx)
 
 - (void)resolveDefrosterForSetDefrosterSettingsInCar:(INSetDefrosterSettingsInCarIntent *)intent
                     withCompletion:(void (^)(INCarDefrosterResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveDefroster(for:with:));
+
+- (void)resolveCarNameForSetDefrosterSettingsInCar:(INSetDefrosterSettingsInCarIntent *)intent
+                    withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveCarName(for:with:)) API_AVAILABLE(ios(12.0));
 
 @end
 

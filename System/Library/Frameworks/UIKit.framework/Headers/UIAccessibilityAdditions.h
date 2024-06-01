@@ -1,8 +1,9 @@
+#if USE_UIKIT_PUBLIC_HEADERS || !__has_include(<UIKitCore/UIAccessibilityAdditions.h>)
 //
 //  UIAccessibilityAdditions.h
 //  UIKit
 //
-//  Copyright (c) 2009-2017 Apple Inc. All rights reserved.
+//  Copyright (c) 2009-2018 Apple Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -62,3 +63,7 @@ __TVOS_PROHIBITED
 
 
 NS_ASSUME_NONNULL_END
+
+#else
+#import <UIKitCore/UIAccessibilityAdditions.h>
+#endif

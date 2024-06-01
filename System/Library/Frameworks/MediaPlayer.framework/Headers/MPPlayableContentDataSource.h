@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// systems in a meaningful way, so that features like user interfaces and play
 /// queues can be setup automatically.
 MP_API(ios(7.1))
-MP_PROHIBITED(tvos, macos)
+MP_PROHIBITED(tvos, macos, watchos)
 @protocol MPPlayableContentDataSource <NSObject>
 @optional
 
@@ -42,7 +42,7 @@ MP_PROHIBITED(tvos, macos)
 /// to be retrieved.
 /// Client applications should always call the completion handler after loading
 /// has finished, if this method is implemented.
-- (void)contentItemForIdentifier:(NSString *)identifier completionHandler:(void(^)(MPContentItem *__nullable, NSError * __nullable))completionHandler MP_API(ios(10.0)) MP_PROHIBITED(tvos, macos);
+- (void)contentItemForIdentifier:(NSString *)identifier completionHandler:(void(^)(MPContentItem *__nullable, NSError * __nullable))completionHandler MP_API(ios(10.0)) MP_PROHIBITED(tvos, macos, watchos);
 
 @required
 /// Returns the number of child nodes at the specified index path. In a virtual
