@@ -869,6 +869,8 @@ Tags:
   SwiftName: UIAccessibility.HearingDeviceEar
 - Name: UIGuidedAccessRestrictionState
   SwiftName: UIAccessibility.GuidedAccessRestrictionState
+- Name: UIGuidedAccessErrorCode
+  SwiftName: UIAccessibility.GuidedAccessError
 Typedefs:
 - Name: NSAttributedStringDocumentAttributeKey
   SwiftName: NSAttributedString.DocumentAttributeKey
@@ -888,6 +890,8 @@ Typedefs:
   SwiftName: UIFontDescriptor.TraitKey
 - Name: UIFontDescriptorFeatureKey
   SwiftName: UIFontDescriptor.FeatureKey
+- Name: UIFontDescriptorSystemDesign
+  SwiftName: UIFontDescriptor.SystemDesign
 - Name: UIFontWeight
   SwiftName: UIFont.Weight
 # Swift 4.2 Renames
@@ -1471,6 +1475,8 @@ Globals:
   SwiftName: tabBar
 - Name: UITrackingRunLoopMode
   SwiftName: tracking
+- Name: UIGuidedAccessErrorDomain
+  SwiftName: UIAccessibility.guidedAccessErrorDomain
 Functions:
 - Name: UIInterfaceOrientationIsPortrait
   SwiftName: "getter:UIInterfaceOrientation.isPortrait(self:)"
@@ -1592,6 +1598,8 @@ Functions:
   SwiftName: "getter:UIAccessibility.isSpeakSelectionEnabled()"
 - Name: UIGuidedAccessRestrictionStateForIdentifier
   SwiftName: "UIAccessibility.guidedAccessRestrictionState(forIdentifier:)"
+- Name: UIGuidedAccessConfigureAccessibilityFeatures
+  SwiftName: "UIAccessibility.configureForGuidedAccess(features:enabled:completionHandler:)"
 SwiftVersions:
 #
 # Swift 4 and below specific conversions

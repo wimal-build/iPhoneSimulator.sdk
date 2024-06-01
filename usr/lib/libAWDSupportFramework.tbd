@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3B72D78C-F8B1-3572-89C5-583895F0DEDA', 'x86_64: 719C4BE7-546A-344B-9982-E56D97D51A5E' ]
+uuids:           [ 'i386: 3B72D78C-F8B1-3572-89C5-583895F0DEDA', 'x86_64: EF3626AE-3930-349B-AA96-1D7754F4390F' ]
 platform:        ios
 install-name:    /usr/lib/libAWDSupportFramework.dylib
 objc-constraint: none
@@ -69,9 +69,10 @@ exports:
                        AWDCFNetworkTaskMetrics._didCompleteWithError, AWDCFNetworkTaskMetrics._error, 
                        AWDCFNetworkTaskMetrics._has, AWDCFNetworkTaskMetrics._isBackground, 
                        AWDCFNetworkTaskMetrics._numberOfRedirects, AWDCFNetworkTaskMetrics._numberOfRetries, 
-                       AWDCFNetworkTaskMetrics._taskResume, AWDCFNetworkTaskMetrics._taskType, 
-                       AWDCFNetworkTaskMetrics._timestamp, AWDCFNetworkTaskMetrics._transactionMetrics, 
-                       AWDCFNetworkTaskMetrics._underlyingError, AWDCFNetworkTaskMetrics._underlyingErrorDomain, 
+                       AWDCFNetworkTaskMetrics._schedulingTier, AWDCFNetworkTaskMetrics._taskResume, 
+                       AWDCFNetworkTaskMetrics._taskType, AWDCFNetworkTaskMetrics._timestamp, 
+                       AWDCFNetworkTaskMetrics._transactionMetrics, AWDCFNetworkTaskMetrics._underlyingError, 
+                       AWDCFNetworkTaskMetrics._underlyingErrorDomain, AWDCFNetworkTaskMetrics._unused, 
                        AWDCFNetworkTransactionMetrics._connectionUUID, AWDCFNetworkTransactionMetrics._has, 
                        AWDCFNetworkTransactionMetrics._isRedirected, AWDCFNetworkTransactionMetrics._networkLoadType, 
                        AWDCFNetworkTransactionMetrics._networkProtocolName, AWDCFNetworkTransactionMetrics._requestEnd, 

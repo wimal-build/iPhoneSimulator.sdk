@@ -26,7 +26,7 @@ MP_PROHIBITED(tvos, macos, watchos)
 @property (nonatomic, readonly) MPPlayableContentManagerContext *context MP_API(ios(8.4));
 
 /// Tells the content manager which MPContentItems are currently playing based on their identifiers.
-@property (nonatomic, strong) NSArray<NSString *> *nowPlayingIdentifiers MP_API(ios(10.0));
+@property (nonatomic, copy) NSArray<NSString *> *nowPlayingIdentifiers MP_API(ios(10.0));
 
 /// Returns the application's instance of the content manager.
 + (instancetype)sharedContentManager;

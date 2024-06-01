@@ -57,6 +57,10 @@ typedef NSString * UIFontDescriptorTraitKey NS_TYPED_ENUM;
 typedef NSString * UIFontDescriptorFeatureKey NS_TYPED_EXTENSIBLE_ENUM;
 typedef CGFloat UIFontWeight NS_TYPED_EXTENSIBLE_ENUM;
 
+typedef NSString * UIFontDescriptorSystemDesign NS_TYPED_ENUM;
+UIKIT_EXTERN UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignDefault API_AVAILABLE(watchos(5.2)) API_UNAVAILABLE(ios, tvos);
+UIKIT_EXTERN UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignRounded API_AVAILABLE(watchos(5.2)) API_UNAVAILABLE(ios, tvos);
+
 @class NSMutableDictionary, NSDictionary, NSArray, NSSet, UITraitCollection;
 
 NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, NSSecureCoding>
@@ -101,6 +105,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface UIFontDescriptor : NSObject <NSCopying, N
 - (UIFontDescriptor *)fontDescriptorWithFamily:(NSString *)newFamily;
 
 - (nullable UIFontDescriptor *)fontDescriptorWithSymbolicTraits:(UIFontDescriptorSymbolicTraits)symbolicTraits; // Returns a new font descriptor reference in the same family with the given symbolic traits, or nil if none found in the system.
+- (nullable UIFontDescriptor *)fontDescriptorWithDesign:(UIFontDescriptorSystemDesign)design API_AVAILABLE(watchos(5.2)) API_UNAVAILABLE(ios, tvos); // Returns a new font descriptor reference with the given design, or nil if no match is found in the system.
 
 
 @end

@@ -33,18 +33,18 @@ typedef NS_ENUM(NSInteger, CLSContextType) {
     CLSContextTypeAudio,
     CLSContextTypeVideo,
 
-} API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
+} API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
 
-typedef NSString * CLSContextTopic NS_STRING_ENUM API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
+typedef NSString * CLSContextTopic NS_STRING_ENUM API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
 
-CLS_EXTERN CLSContextTopic const CLSContextTopicMath API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicScience API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicLiteracyAndWriting API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicWorldLanguage API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicSocialScience API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicComputerScienceAndEngineering API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicArtsAndMusic API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
-CLS_EXTERN CLSContextTopic const CLSContextTopicHealthAndFitness API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicMath API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicScience API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicLiteracyAndWriting API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicWorldLanguage API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicSocialScience API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicComputerScienceAndEngineering API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicArtsAndMusic API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+CLS_EXTERN CLSContextTopic const CLSContextTopicHealthAndFitness API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
 
 
 /*!
@@ -55,7 +55,7 @@ CLS_EXTERN CLSContextTopic const CLSContextTopicHealthAndFitness API_AVAILABLE(i
                 (2) Activity, holds user generated data that pertains to this context.
 
  */
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @interface CLSContext : CLSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -71,7 +71,7 @@ API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
  @abstract      Alternative deep link URL using universal links.
  @discussion    If your app supports universal links, you can supply them here to link the content this context represents.
  */
-@property (nullable, nonatomic, strong) NSURL *universalLinkURL API_AVAILABLE(ios(11.4)) API_UNAVAILABLE(macos, watchos, tvos);
+@property (nullable, nonatomic, strong) NSURL *universalLinkURL API_AVAILABLE(ios(11.4)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  @abstract      Type of this context

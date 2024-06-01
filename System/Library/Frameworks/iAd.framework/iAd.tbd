@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D7C396A4-787B-33D1-8E7E-5A5B74161757', 'x86_64: 4D262A9E-E183-3A7C-982A-7E55A7F12998' ]
+uuids:           [ 'i386: D7C396A4-787B-33D1-8E7E-5A5B74161757', 'x86_64: 0DAFCE44-4BC2-3248-B31D-3F9E5832AB81' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/iAd.framework/iAd
 objc-constraint: none
@@ -15,8 +15,8 @@ exports:
                        _kADViewDefaultHeight ]
     objc-classes:    [ ADAdActionPublicAttributes, ADAdImpressionPublicAttributes, 
                        ADAdSpaceConfiguration, ADAdSpaceEventInfo, ADCircularCountdownView, 
-                       ADMRAIDAction, ADPrivacyRemoteViewController, ADPrivacyViewController, 
-                       ADRemoteActionViewController, ADTVInterstitialMediaViewController, 
+                       ADMRAIDAction, ADPrivacyButton, ADPrivacyRemoteViewController, 
+                       ADPrivacyViewController, ADRemoteActionViewController, ADTVInterstitialMediaViewController, 
                        ADTVMediaButton, ADTVMediaControlsView, ADTVMediaControlsViewController, 
                        ADTVMediaCountdownView, ADTVMediaSkipView, ADTVPrerollController, 
                        ADTVPrerollVideoView, ADTapGestureTimer ]
@@ -44,9 +44,9 @@ exports:
                        ADNSURLSessionDemultiplexer, ADNSURLSessionDemultiplexerManager, 
                        ADNSURLSessionTaskInfo, ADOptInManager, ADPlayer, ADPolicyEngine, 
                        ADPrerollBottomBar, ADPrerollButton, ADPrerollController, 
-                       ADPrerollSlider, ADPrerollTopBar, ADPrerollView, ADPrivacyButton, 
-                       ADPrivacyDetailsAttributes, ADProgressView, ADRemoteSigningService, 
-                       ADSession, ADSoftLinking, ADSubscriptionEvent, ADTapGestureRecognizer, 
+                       ADPrerollSlider, ADPrerollTopBar, ADPrerollView, ADPrivacyDetailsAttributes, 
+                       ADPrivacyMarker, ADProgressView, ADRemoteSigningService, ADSession, 
+                       ADSoftLinking, ADSubscriptionEvent, ADTapGestureRecognizer, 
                        ADUserDeviceUtilities, ADVideoAssetURLProtocol, ADVolumeSlider, 
                        ADW3CDateParser, ADWebView, ADWebViewActionViewController, 
                        ADWebViewGestureRecognizer, ADWebViewManager, ADWebViewURLProxyProtocol, 

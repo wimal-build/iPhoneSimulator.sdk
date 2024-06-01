@@ -346,6 +346,32 @@ typedef NS_ENUM(NSUInteger, AVAudioSessionRouteSharingPolicy)
 };
 
 /*!
+ @enum AVAudioSessionPromptStyle values
+ @abstract
+     The prompt style is a hint to sessions that use AVAudioSessionModeVoicePrompt to modify the type of
+     prompt they play in response to other audio activity on the system, such as Siri or phone calls.
+     Sessions that issue voice prompts are encouraged to pay attention to changes in the prompt style and
+     modify their prompts in response. Apple encourages the use of non-verbal prompts when the Short
+     style is requested.
+ @constant AVAudioSessionPromptStyleNone
+     Indicates that another session is actively using microphone input and would be negatively impacted
+     by having prompts play at that time. For example if Siri is recognizing speech, having navigation or
+     exercise prompts play, could interfere with its ability to accurately recognize the user’s speech.
+     Client sessions should refrain from playing any prompts while the prompt style is None.
+ @constant AVAudioSessionPromptStyleShort
+     Indicates one of three states: Siri is active but not recording, voicemail playback is active, or
+     voice call is active. Short, non-verbal versions of prompts should be used.
+ @constant AVAudioSessionPromptStyleNormal
+     Indicates that normal (long, verbal) versions of prompts may be used.
+ */
+typedef NS_ENUM(NSUInteger, AVAudioSessionPromptStyle)
+{
+    AVAudioSessionPromptStyleNone = 'none',
+    AVAudioSessionPromptStyleShort = 'shrt',
+    AVAudioSessionPromptStyleNormal = 'nrml',
+};
+
+/*!
 	@enum AVAudioSession error codes
 	@abstract   These are the error codes returned from the AVAudioSession API.
 	@constant   AVAudioSessionErrorCodeNone
@@ -510,6 +536,11 @@ Note: This property is closely related to AVAudioSessionSilenceSecondaryAudioHin
 /* Get the set of input ports that are available for routing. Note that this property only applies to the session's current category and mode.
    For example, if the session's current category is AVAudioSessionCategoryPlayback, there will be no available inputs.  */
 @property (readonly, nullable) NSArray<AVAudioSessionPortDescription *> *availableInputs API_AVAILABLE(ios(7.0), watchos(2.0), tvos(9.0)) API_UNAVAILABLE(macos);
+
+/* The prompt style is a hint to sessions using AVAudioSessionModeVoicePrompt to alter the type of prompts they issue in
+ response to other audio activity on the system, such as Siri and phone calls. This property is key-value observable.
+ */
+@property(readonly) AVAudioSessionPromptStyle promptStyle API_AVAILABLE(ios(12.2), watchos(5.2), tvos(12.2)) API_UNAVAILABLE(macos);
 
 @end
 

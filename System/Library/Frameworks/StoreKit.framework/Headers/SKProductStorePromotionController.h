@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class SKProduct;
 
-typedef NS_ENUM(NSInteger, SKProductStorePromotionVisibility) {
+typedef NS_CLOSED_ENUM(NSInteger, SKProductStorePromotionVisibility) {
     SKProductStorePromotionVisibilityDefault,
     SKProductStorePromotionVisibilityShow,
     SKProductStorePromotionVisibilityHide,

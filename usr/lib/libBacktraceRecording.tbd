@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4238CA04-A3AD-3D87-AB79-57F1D919D195', 'x86_64: 2F065671-AEB4-3E32-88C4-F4E2C39B7E23' ]
+uuids:           [ 'i386: 4238CA04-A3AD-3D87-AB79-57F1D919D195', 'x86_64: 31C20C8C-3647-3644-865C-AD3E3F7275C5' ]
 platform:        ios
 install-name:    /usr/lib/libBacktraceRecording.dylib
 objc-constraint: none

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E2E8D814-420B-3D6C-B92A-91B414CAC808' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8921CFB0-9FD7-3A61-AF8E-D52874D3AD02' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
-current-version: 121.1.1
+current-version: 121.4.3
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -12,14 +12,14 @@ exports:
                        /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix, 
                        /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork, 
                        /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector ]
-    symbols:         [ _MPSHintTemporaryMemoryHighWaterMark, _MPSSetHeapCacheDuration, 
-                       _MPSSupportsMTLDevice ]
+    symbols:         [ _MPSGetPreferredDevice, _MPSHintTemporaryMemoryHighWaterMark, 
+                       _MPSSetHeapCacheDuration, _MPSSupportsMTLDevice ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 84BA25A5-1A38-3CFD-B88D-673311ADA8C9' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C38BCC0B-16D5-3CB6-8405-E2889BB2EA4E' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore
-current-version: 121.1.1
+current-version: 121.4.3
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -90,10 +90,10 @@ exports:
                        MPSVirtualImage ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2E658299-4A80-348C-936F-977798DE20F2' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 527C847E-2B5B-3668-BB96-FE78CA3E2B0A' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage
-current-version: 121.1.1
+current-version: 121.4.3
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -124,10 +124,10 @@ exports:
                        MPSImageTranspose, MPSMatrixCopyToImage, MPSUnaryImageKernel ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A4B975CF-2604-31DF-A75E-83BD15CC9C31' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9228FF13-785D-39CF-9EF5-D2F3041A31B7' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix
-current-version: 121.1.1
+current-version: 121.4.3
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -145,10 +145,10 @@ exports:
                        MPSTemporaryMatrix, MPSTemporaryVector, MPSVector, MPSVectorDescriptor ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1FCA6083-69A9-30A2-B428-20050F878748' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D42FA34B-A31B-3733-B116-CE7398A41D71' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork
-current-version: 121.1.1
+current-version: 121.4.3
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         
@@ -244,10 +244,10 @@ exports:
                        MPSRNNSingleGateDescriptor ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 45AA6BA3-5F2C-3769-AC60-37F35B6E3647' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 89D3C629-F5D4-351F-A15C-A9385D0FA835' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector
-current-version: 121.1.1
+current-version: 121.4.3
 objc-constraint: none
 parent-umbrella: MetalPerformanceShaders
 exports:         

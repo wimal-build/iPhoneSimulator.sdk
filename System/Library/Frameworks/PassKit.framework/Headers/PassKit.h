@@ -55,4 +55,13 @@
 #if __has_include(<PassKit/PKAddPaymentPassViewController.h>)
 #import <PassKit/PKAddPaymentPassViewController.h>
 #endif
-#endif // TARGET_OS_IPHONE
+#if __has_include(<PassKit/PKDisbursementVoucher.h>)
+#import <PassKit/PKDisbursementVoucher.h>
+#endif
+#if __has_include(<PassKit/PKDisbursementRequest.h>)
+#import <PassKit/PKDisbursementRequest.h>
+#endif
+#if __has_include(<PassKit/PKDisbursementAuthorizationController.h>)
+#import <PassKit/PKDisbursementAuthorizationController.h>
+#endif
+#endif // TARGET_OS_IPHONE || TARGET_OS_OSX

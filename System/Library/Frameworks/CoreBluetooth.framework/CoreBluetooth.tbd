@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FF300334-6967-3105-B558-E470B2DAF748', 'x86_64: F5121429-8CA8-3C93-A830-323C99370B67' ]
+uuids:           [ 'i386: FF300334-6967-3105-B558-E470B2DAF748', 'x86_64: 3D9CD996-52C3-3CD1-838C-F2D78E25DCE6' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 objc-constraint: none
@@ -59,20 +59,23 @@ exports:
                        _CBUUIDContinuityCharacteristicString, _CBUUIDContinuityServiceString, 
                        _CBUUIDCurrentTimeCharacteristicString, _CBUUIDCurrentTimeServiceString, 
                        _CBUUIDCyclingSpeedAndCadenceServiceString, _CBUUIDDeviceInformationServiceString, 
-                       _CBUUIDDeviceNameString, _CBUUIDFirmwareRevisionStringCharacteristicString, 
-                       _CBUUIDGenericAccessProfileString, _CBUUIDGenericAttributeProfileString, 
-                       _CBUUIDGlucoseServiceString, _CBUUIDHIDControlPointCharacteristicString, 
-                       _CBUUIDHIDInformationCharacteristicString, _CBUUIDHardwareRevisionStringCharacteristicString, 
-                       _CBUUIDHealthThermometerServiceString, _CBUUIDHeartRateServiceString, 
-                       _CBUUIDHumanInterfaceDeviceServiceString, _CBUUIDIEEERegulatoryCertificationDataList, 
-                       _CBUUIDL2CAPPSMCharacteristicString, _CBUUIDLocalTimeInformationCharacteristicString, 
-                       _CBUUIDManufacturerNameStringCharacteristicString, _CBUUIDModelNumberStringCharacteristicString, 
-                       _CBUUIDPeripheralPreferredConnectionParametersString, _CBUUIDPeripheralPrivacyFlagString, 
-                       _CBUUIDPnPIDCharacteristicString, _CBUUIDProtocolModeCharacteristicString, 
-                       _CBUUIDReconnectionAddressString, _CBUUIDReportCharacteristicString, 
-                       _CBUUIDReportMapCharacteristicString, _CBUUIDReportReferenceDescriptorString, 
-                       _CBUUIDSerialNumberStringCharacteristicString, _CBUUIDServerCharacteristicConfigurationString, 
-                       _CBUUIDServiceChangedString, _CBUUIDSoftwareRevisionStringCharacteristicString, 
+                       _CBUUIDDeviceNameString, _CBUUIDDoAPServiceString, _CBUUIDEventIndicatorCharacteristicString, 
+                       _CBUUIDFirmwareRevisionStringCharacteristicString, _CBUUIDGenericAccessProfileString, 
+                       _CBUUIDGenericAttributeProfileString, _CBUUIDGlucoseServiceString, 
+                       _CBUUIDHIDControlPointCharacteristicString, _CBUUIDHIDInformationCharacteristicString, 
+                       _CBUUIDHardwareRevisionStringCharacteristicString, _CBUUIDHealthThermometerServiceString, 
+                       _CBUUIDHeartRateServiceString, _CBUUIDHumanInterfaceDeviceServiceString, 
+                       _CBUUIDIEEERegulatoryCertificationDataList, _CBUUIDL2CAPPSMCharacteristicString, 
+                       _CBUUIDLocalTimeInformationCharacteristicString, _CBUUIDManufacturerNameStringCharacteristicString, 
+                       _CBUUIDModelNumberStringCharacteristicString, _CBUUIDPeripheralPreferredConnectionParametersString, 
+                       _CBUUIDPeripheralPrivacyFlagString, _CBUUIDPnPIDCharacteristicString, 
+                       _CBUUIDProtocolModeCharacteristicString, _CBUUIDReconnectionAddressString, 
+                       _CBUUIDReportCharacteristicString, _CBUUIDReportMapCharacteristicString, 
+                       _CBUUIDReportReferenceDescriptorString, _CBUUIDSelectedCodecCharacteristicString, 
+                       _CBUUIDSendDataCharacteristicString, _CBUUIDSerialNumberStringCharacteristicString, 
+                       _CBUUIDServerCharacteristicConfigurationString, _CBUUIDServiceChangedString, 
+                       _CBUUIDSoftwareRevisionStringCharacteristicString, _CBUUIDStartStreamingCharacteristicString, 
+                       _CBUUIDStopStreamingCharacteristicString, _CBUUIDSupportedCodecsCharacteristicString, 
                        _CBUUIDSystemIDCharacteristicString ]
     objc-classes:    [ BTDevicePicker, CBATTRequest, CBAttribute, CBCentral, CBCentralManager, 
                        CBCharacteristic, CBDescriptor, CBL2CAPChannel, CBManager, 

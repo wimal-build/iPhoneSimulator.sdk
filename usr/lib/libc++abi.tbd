@@ -1,12 +1,13 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F94927EA-7D30-39F5-945B-9E36B189B546', 'x86_64: 1FC319B3-5125-3D57-8ADE-8A833F45B031' ]
+uuids:           [ 'i386: F94927EA-7D30-39F5-945B-9E36B189B546', 'x86_64: F3CDFD08-FAC0-351D-A11F-2C11936AEB50' ]
 platform:        ios
 install-name:    '/usr/lib/libc++abi.dylib'
 current-version: 400.17
 objc-constraint: none
 exports:         
   - archs:           [ x86_64 ]
+    symbols:         [ __ZTIDu, __ZTIPDu, __ZTIPKDu, __ZTSDu, __ZTSPDu, __ZTSPKDu ]
     weak-def-symbols: [ __ZdaPvSt11align_val_t, __ZdaPvSt11align_val_tRKSt9nothrow_t, 
                         __ZdaPvm, __ZdaPvmSt11align_val_t, __ZdlPvSt11align_val_t, 
                         __ZdlPvSt11align_val_tRKSt9nothrow_t, __ZdlPvm, __ZdlPvmSt11align_val_t, 

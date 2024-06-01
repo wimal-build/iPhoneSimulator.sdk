@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 58153343-0841-3907-970E-1EC0F3D6A1EA' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4CA694FA-51C5-3BBE-8229-F2AAD3B27E00' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
 current-version: 1.15.19

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4A7AA980-C1DE-3875-83B3-4599EB659C41' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7F7F1CA2-BE2A-3C71-A071-73B6BD87E534' ]
 platform:        ios
 install-name:    /usr/lib/libAudioStatistics.dylib
 objc-constraint: none

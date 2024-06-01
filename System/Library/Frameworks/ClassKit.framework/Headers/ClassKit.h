@@ -15,3 +15,4 @@
 #import <ClassKit/CLSQuantityItem.h>
 #import <ClassKit/CLSDataStore.h>
 #import <ClassKit/NSUserActivity+CLSDeepLinks.h>
+#import <ClassKit/CLSContextProvider.h>

@@ -20,7 +20,7 @@
 #import <UIKit/UIAccessibilityElement.h>
 #import <UIKit/UIAccessibilityIdentification.h>
 #import <UIKit/UIAccessibilityZoom.h>
-#import <UIKit/UIGuidedAccessRestrictions.h>
+#import <UIKit/UIGuidedAccess.h>
 #import <UIKit/UIAccessibilityLocationDescriptor.h>
 
 NS_ASSUME_NONNULL_BEGIN

@@ -66,7 +66,7 @@
  */
 
 #ifndef _DNS_SD_H
-#define _DNS_SD_H 8800035
+#define _DNS_SD_H 8805201
 
 #ifdef  __cplusplus
 extern "C" {

@@ -23,9 +23,11 @@ extern PKPaymentNetwork const PKPaymentNetworkChinaUnionPay API_AVAILABLE(ios(9.
 extern PKPaymentNetwork const PKPaymentNetworkDiscover API_AVAILABLE(ios(9.0), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkEftpos API_AVAILABLE(ios(12.0), watchos(5.0));
 extern PKPaymentNetwork const PKPaymentNetworkElectron API_AVAILABLE(ios(12.0), watchos(5.0));
+extern PKPaymentNetwork const PKPaymentNetworkElo API_AVAILABLE(macos(10.14.2), ios(12.1.1), watchos(5.1.2));
 extern PKPaymentNetwork const PKPaymentNetworkIDCredit API_AVAILABLE(ios(10.3), watchos(3.2));
 extern PKPaymentNetwork const PKPaymentNetworkInterac API_AVAILABLE(ios(9.2), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkJCB API_AVAILABLE(ios(10.1), watchos(3.1));
+extern PKPaymentNetwork const PKPaymentNetworkMada API_AVAILABLE(macos(10.14.2), ios(12.1.1), watchos(5.1.2));
 extern PKPaymentNetwork const PKPaymentNetworkMaestro API_AVAILABLE(ios(12.0), watchos(5.0));
 extern PKPaymentNetwork const PKPaymentNetworkMasterCard API_AVAILABLE(ios(8.0), watchos(3.0));
 extern PKPaymentNetwork const PKPaymentNetworkPrivateLabel API_AVAILABLE(ios(9.0), watchos(3.0));

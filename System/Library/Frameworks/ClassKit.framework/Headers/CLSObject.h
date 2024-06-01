@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion    See @c CLSContext for more details.
  */
 
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @interface CLSObject : NSObject <NSSecureCoding>
 
 /*!

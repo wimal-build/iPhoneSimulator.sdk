@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: 6C5B348C-B4DA-36F0-A706-D9FA1EF0DEEF' ]
+uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: 56A4B939-014F-35CA-85E5-B791586DEE23' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreMotion.framework/CoreMotion
-current-version: 2245.8.12
+current-version: 2245.12.30
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -28,7 +28,10 @@ exports:
                        _CMCompassCalibrationData, _CMDatabaseType, _CMDeviceHasOriginalBackCamera, 
                        _CMDyskinesiaResultsKey, _CMErrorDomain, _CMErrorMessage, 
                        _CMExerciseMinuteDataArray, _CMExerciseMinuteRecordId, _CMExerciseMinuteSourceId, 
-                       _CMExerciseMinuteStartDate, _CMExtensions, _CMFallDataCollectionConfigurationKey, 
+                       _CMExerciseMinuteStartDate, _CMExtensions, _CMFallConfigUserAge, 
+                       _CMFallConfigUserMets, _CMFallDataCollectionConfigurationKey, 
+                       _CMFallImpactAlertThreshold, _CMFallImpactLoggingHeartRateThreshold, 
+                       _CMFallImpactLoggingHighResolutionSensorDataThreshold, _CMFallImpactLoggingStatsThreshold, 
                        _CMFallLastReplyAopTimestamp, _CMFallSetStatsEnabled, _CMFallSetStatsNameOfCurrentFile, 
                        _CMFallSetStatsNumberOfAvailableFiles, _CMFallSetStatsSizeOfCurrentFile, 
                        _CMFallStatsMode, _CMFallStatsSensorRecordingActive, _CMFallStatsSimulateFall, 

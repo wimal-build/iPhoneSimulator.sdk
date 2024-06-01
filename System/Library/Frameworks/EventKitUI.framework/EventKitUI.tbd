@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: D67ADADF-42A0-38FB-975C-4096BE78F7C1' ]
+uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 1472033A-BC36-3D34-A0D7-F1E0EBA5AEAA' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/EventKitUI.framework/EventKitUI
 objc-constraint: none
@@ -128,23 +128,23 @@ exports:
                        _CalendarPreferencesNotification_ViewedTimeZoneAutomatic, 
                        _CalendarPreferencesNotification_WeekStart, _CalendarTitleWithDotAttributedString, 
                        _CanSeeAttendeeStatuses, _CancelRegionMargin, _CarImage, _CarImage_Occurrences, 
-                       _CompareEKCalendars, _CompareEKEvents, _CreateAceEventFromEKEvent, 
-                       _CurrentLocaleRequiresUnabbrevatedMonthNames, _DarkLineWhiteValue, 
-                       _DarkenWhiteIfNeeded, _DayRangeForOccurenceDates, _DeclinedColorDotImage, 
-                       _DeclinedColorDotImageHighlighted, _DeclinedEventBackgroundPattern, 
-                       _DecomposedAttendeeName, _DisclosureIndicatorImage, _DisplayAddressForIdentity, 
-                       _DisplayShortStringForIdentityWithDecomposedName, _DisplayStringForIdentity, 
-                       _DisplayStringForIdentityWithDecomposedName, _DraggedEventShadowColor, 
-                       _DraggedEventShadowOffset, _DrawPDFPageInRect, _EKCalendarChooserHeaderViewReuseIdentifier, 
-                       _EKCalendarItemEditorDidUpdateSubitemsNotification, _EKCalendarSyncHash, 
-                       _EKDayOccurrenceViewDidEndSelectionNotification, _EKDayTimeViewHourWidthChangedNotification, 
-                       _EKDayViewController_ScrollDidEndAnimationNotification, _EKDocumentQuickLookWillEndNotification, 
-                       _EKEventCommonPartStatDisplayTestsAndSpecificTest, _EKEventDetailsDidFinishLoadingAttendeesNotification, 
-                       _EKEventDisplaysAsDeclined, _EKEventDisplaysAsNeedsReply, 
-                       _EKEventDisplaysAsTentative, _EKEventEditViewControllerDidAppear, 
-                       _EKEventParticipantStatusForDisplay, _EKEventViewControllerDidAppearNotification, 
-                       _EKUIApplicationFrame, _EKUIAttendeeUtils_AttendeeHasResponded, 
-                       _EKUIAttendeeUtils_ShouldConsiderAttendeeForConflictChecking, 
+                       _CompareEKCalendars, _CompareEKEvents, _CompareEKEventsWithPreloadedTitles, 
+                       _CreateAceEventFromEKEvent, _CurrentLocaleRequiresUnabbrevatedMonthNames, 
+                       _DarkLineWhiteValue, _DarkenWhiteIfNeeded, _DayRangeForOccurenceDates, 
+                       _DeclinedColorDotImage, _DeclinedColorDotImageHighlighted, 
+                       _DeclinedEventBackgroundPattern, _DecomposedAttendeeName, 
+                       _DisclosureIndicatorImage, _DisplayAddressForIdentity, _DisplayShortStringForIdentityWithDecomposedName, 
+                       _DisplayStringForIdentity, _DisplayStringForIdentityWithDecomposedName, 
+                       _DraggedEventShadowColor, _DraggedEventShadowOffset, _DrawPDFPageInRect, 
+                       _EKCalendarChooserHeaderViewReuseIdentifier, _EKCalendarItemEditorDidUpdateSubitemsNotification, 
+                       _EKCalendarSyncHash, _EKDayOccurrenceViewDidEndSelectionNotification, 
+                       _EKDayTimeViewHourWidthChangedNotification, _EKDayViewController_ScrollDidEndAnimationNotification, 
+                       _EKDocumentQuickLookWillEndNotification, _EKEventCommonPartStatDisplayTestsAndSpecificTest, 
+                       _EKEventDetailsDidFinishLoadingAttendeesNotification, _EKEventDisplaysAsDeclined, 
+                       _EKEventDisplaysAsNeedsReply, _EKEventDisplaysAsTentative, 
+                       _EKEventEditViewControllerDidAppear, _EKEventParticipantStatusForDisplay, 
+                       _EKEventViewControllerDidAppearNotification, _EKUIApplicationFrame, 
+                       _EKUIAttendeeUtils_AttendeeHasResponded, _EKUIAttendeeUtils_ShouldConsiderAttendeeForConflictChecking, 
                        _EKUIAttendeeUtils_ShouldCountAttendeeAsConflicted, _EKUIContainedControllerIdealWidth, 
                        _EKUICurrentHeightSizeClassIsCompact, _EKUICurrentHeightSizeClassIsRegular, 
                        _EKUICurrentWidthSizeClassIsCompact, _EKUICurrentWidthSizeClassIsRegular, 

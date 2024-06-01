@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 3D49C8C0-B6D9-3450-8F35-FB02B8526DA0' ]
+uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 4A3E527F-531D-3091-A2E0-470BB0CD04DC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-current-version: 1245.9.2
+current-version: 1251.12
 compatibility-version: 64
 objc-constraint: none
 exports:         
@@ -1370,7 +1370,8 @@ exports:
                        _kCGColorBlack, _kCGColorClear, _kCGColorConversionBlackPointCompensation, 
                        _kCGColorConversionTRCSize, _kCGColorSpaceACESCGLinear, _kCGColorSpaceAdobeRGB1998, 
                        _kCGColorSpaceDCIP3, _kCGColorSpaceDisplayP3, _kCGColorSpaceExtendedGray, 
-                       _kCGColorSpaceExtendedLinearGray, _kCGColorSpaceExtendedLinearSRGB, 
+                       _kCGColorSpaceExtendedLinearDisplayP3, _kCGColorSpaceExtendedLinearGray, 
+                       _kCGColorSpaceExtendedLinearITUR_2020, _kCGColorSpaceExtendedLinearSRGB, 
                        _kCGColorSpaceExtendedSRGB, _kCGColorSpaceGenericCMYK, _kCGColorSpaceGenericGray, 
                        _kCGColorSpaceGenericGrayGamma2_2, _kCGColorSpaceGenericLab, 
                        _kCGColorSpaceGenericRGB, _kCGColorSpaceGenericRGBLinear, 

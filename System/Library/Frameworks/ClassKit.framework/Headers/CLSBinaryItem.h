@@ -14,12 +14,13 @@ typedef NS_ENUM(NSInteger, CLSBinaryValueType) {
     CLSBinaryValueTypeTrueFalse = 0,
     CLSBinaryValueTypePassFail,
     CLSBinaryValueTypeYesNo,
-} API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos);
+    CLSBinaryValueTypeCorrectIncorrect API_AVAILABLE(ios(12.2)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos),
+} API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
 
 /*!
  @abstract      CLSBinaryItem represents user generated information that is true or false, pass or fail, yes or no.
  */
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @interface CLSBinaryItem : CLSActivityItem
 
 /*!

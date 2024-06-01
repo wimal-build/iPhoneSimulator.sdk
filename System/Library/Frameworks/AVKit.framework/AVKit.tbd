@@ -1,13 +1,15 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: 2C6B5981-7FF1-3866-B761-7A4B0DD966B7' ]
+uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: C6FB6DFC-5F3F-3256-9544-72205D24E47B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVKit.framework/AVKit
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _AVAsynchronousLocalizedString, _AVBundle, _AVDisableUserIdleDisplaySleep, 
-                       _AVEnableUserIdleDisplaySleep, _AVKitErrorDomain, _AVLocalizedErrorWithCode, 
+                       _AVEnableUserIdleDisplaySleep, _AVKitErrorDomain, _AVKitMetadataIdentifierExternalContentIdentifier, 
+                       _AVKitMetadataIdentifierExternalUserProfileIdentifier, _AVKitMetadataIdentifierPlaybackProgress, 
+                       _AVKitMetadataIdentifierServiceIdentifier, _AVLocalizedErrorWithCode, 
                        _AVLocalizedString, _AVLocalizedStringFromTable, _AVMediaSelectionAutoOption, 
                        _AVMediaSelectionOffOption, _AVMicaPackageNameRoutePickerCircularGlyph, 
                        _AVMicaPackageNameRoutePickerSquareGlyph, _AVMicaPackageNameVolumeGlyph, 
@@ -30,9 +32,9 @@ exports:
                        _AVNowPlayingInfoControllerDidReceiveStopCommandEventNotification, 
                        _AVPlayerControllerCurrentTimeJumpedNotification, _AVPlayerControllerDidSeekChapterChapterKey, 
                        _AVPlayerControllerDidSeekChapterNotification, _AVPlayerControllerPlaybackDidEndNotification, 
-                       _AVRoutePickerGlyphStateNameActive, _AVRoutePickerGlyphStateNameInactive, 
-                       _AVSecondScreenConnectionActiveDidChangeNotification, _AVSecondScreenConnectionPlayingDidChangeNotification, 
-                       _AVSecondScreenConnectionPreferredDisplayCriteriaDidChangeNotification, 
+                       _AVPlayerItemAVKitDataDidChangeNotification, _AVRoutePickerGlyphStateNameActive, 
+                       _AVRoutePickerGlyphStateNameInactive, _AVSecondScreenConnectionActiveDidChangeNotification, 
+                       _AVSecondScreenConnectionPlayingDidChangeNotification, _AVSecondScreenConnectionPreferredDisplayCriteriaDidChangeNotification, 
                        _AVSecondScreenConnectionReadyToConnectDidChangeNotification, 
                        _AVSecondScreenDebugHUDEnabled, _AVSecondScreenDidBecomeAvailableNotification, 
                        _AVSecondScreenDidDisconnectNotification, _AVSecondScreenSupportsExternalHDR, 
@@ -54,8 +56,8 @@ exports:
                        AVPlaybackControlsView, AVPlaybackControlsVisibilityController, 
                        AVPlaybackControlsVisibilityControllerItem, AVPlaybackControlsVisibilityControllerItemInfo, 
                        AVPlayerContentTransitioningView, AVPlayerController, AVPlayerControllerTimeResolver, 
-                       AVPlayerLayerAndContentOverlayContainerView, AVPlayerView, 
-                       AVPlayerViewController, AVPlayerViewControllerAnimationCoordinator, 
+                       AVPlayerItemAVKitData, AVPlayerLayerAndContentOverlayContainerView, 
+                       AVPlayerView, AVPlayerViewController, AVPlayerViewControllerAnimationCoordinator, 
                        AVPlayerViewControllerContentView, AVPlayerViewControllerCustomControlsView, 
                        AVPlayerViewControllerCustomControlsViewLayoutMarginsGuideProvidingView, 
                        AVProxyKVOObserver, AVRouteDetectorCoordinator, AVRoutePickerView, 

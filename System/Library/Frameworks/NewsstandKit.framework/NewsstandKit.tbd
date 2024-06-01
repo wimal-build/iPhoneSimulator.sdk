@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9975E71C-5EDD-3B18-A4D5-C7C075B0B929', 'x86_64: ECBC5F93-D5AD-3003-9A18-AB86B534EEA0' ]
+uuids:           [ 'i386: 9975E71C-5EDD-3B18-A4D5-C7C075B0B929', 'x86_64: D1D1666C-7E12-3284-A295-0D60AA208D84' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/NewsstandKit.framework/NewsstandKit
 objc-constraint: none

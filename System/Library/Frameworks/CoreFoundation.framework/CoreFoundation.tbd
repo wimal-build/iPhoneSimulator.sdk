@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: 80ACDA5E-AD72-3857-AF41-395941288C21' ]
+uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: E2F07E7B-E0FE-3CAC-8E17-3AB6A1042C54' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-current-version: 1560.10
+current-version: 1570.15
 compatibility-version: 150
 objc-constraint: none
 exports:         
@@ -674,14 +674,14 @@ exports:
                        __CFPreferencesSetAccessRestricted, __CFPreferencesSetAppCloudSyncEnabled, 
                        __CFPreferencesSetAppValueWithContainer, __CFPreferencesSetAppValueWithContainerAndConfiguration, 
                        __CFPreferencesSetBackupDisabled, __CFPreferencesSetDaemonCacheEnabled, 
-                       __CFPreferencesSetValueWithContainer, __CFPreferencesSynchronizeWithContainer, 
-                       __CFPreferencesWriteDomainDictionaryToPath, __CFPreferencesWriteManagedDomain, 
-                       __CFPreferencesWriteManagedDomainForUser, __CFPreferencesWriteUserPreferencesWithCorrectOwner, 
-                       __CFPrefsCopyAppDictionary, __CFPrefsCopyAppDictionaryWithContainer, 
-                       __CFPrefsCopyDescriptionOfAllSearchLists, __CFPrefsCopyUserForContainer, 
-                       __CFPrefsDumpDescriptionOfAllSearchLists, __CFPrefsEnableWritingToExternalAppCloudPreferences, 
-                       __CFPrefsExtractQuadrupleFromPathIfPossible, __CFPrefsGenerateDirectoryURLForTriplet_testing, 
-                       __CFPrefsImpersonateApplicationWithIdentifierAndAuditToken, 
+                       __CFPreferencesSetFileProtectionClass, __CFPreferencesSetValueWithContainer, 
+                       __CFPreferencesSynchronizeWithContainer, __CFPreferencesWriteDomainDictionaryToPath, 
+                       __CFPreferencesWriteManagedDomain, __CFPreferencesWriteManagedDomainForUser, 
+                       __CFPreferencesWriteUserPreferencesWithCorrectOwner, __CFPrefsCopyAppDictionary, 
+                       __CFPrefsCopyAppDictionaryWithContainer, __CFPrefsCopyDescriptionOfAllSearchLists, 
+                       __CFPrefsCopyUserForContainer, __CFPrefsDumpDescriptionOfAllSearchLists, 
+                       __CFPrefsEnableWritingToExternalAppCloudPreferences, __CFPrefsExtractQuadrupleFromPathIfPossible, 
+                       __CFPrefsGenerateDirectoryURLForTriplet_testing, __CFPrefsImpersonateApplicationWithIdentifierAndAuditToken, 
                        __CFPrefsImpersonateApplicationWithIdentifierAndContainerDataPath, 
                        __CFPrefsImpersonateApplicationWithIdentifierAndPID, __CFPrefsInterruptConnectionOnceEachMessage, 
                        __CFPrefsRegisterUserDefaultsInstance, __CFPrefsRegisterUserDefaultsInstanceWithCloudConfigurationURL, 

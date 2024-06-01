@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-AS_EXTERN API_AVAILABLE(ios(12.0))
+AS_EXTERN API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos)
 NSErrorDomain const ASWebAuthenticationSessionErrorDomain;
 
 /*! @enum ASWebAuthenticationSessionErrorCode
@@ -21,7 +21,7 @@ NSErrorDomain const ASWebAuthenticationSessionErrorDomain;
  */
 typedef NS_ERROR_ENUM(ASWebAuthenticationSessionErrorDomain, ASWebAuthenticationSessionErrorCode) {
     ASWebAuthenticationSessionErrorCodeCanceledLogin = 1,
-} API_AVAILABLE(ios(12.0));
+} API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos);
 
 typedef void (^ASWebAuthenticationSessionCompletionHandler)(NSURL *_Nullable callbackURL, NSError *_Nullable error) NS_SWIFT_NAME(ASWebAuthenticationSession.CompletionHandler);
 
@@ -48,7 +48,7 @@ typedef void (^ASWebAuthenticationSessionCompletionHandler)(NSURL *_Nullable cal
  The app can cancel the session by calling -[ASWebAuthenticationSession cancel]. This will also dismiss the view controller that
  is showing the web service's login page.
  */
-AS_EXTERN API_AVAILABLE(ios(12.0))
+AS_EXTERN API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos)
 @interface ASWebAuthenticationSession : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;

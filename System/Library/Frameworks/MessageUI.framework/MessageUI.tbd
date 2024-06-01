@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A245CB39-B6B8-39A1-B653-3FD4535483BF', 'x86_64: AFE4501A-E166-3041-A24B-630C6BA453BB' ]
+uuids:           [ 'i386: A245CB39-B6B8-39A1-B653-3FD4535483BF', 'x86_64: 554765A8-EDE4-394E-A64B-E7480D816A19' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MessageUI.framework/MessageUI
-current-version: 3445.100.42
+current-version: 3445.104.7
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

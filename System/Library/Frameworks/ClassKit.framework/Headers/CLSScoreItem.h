@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract      CLSScoreItem represents user generated score information.
  */
 
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @interface CLSScoreItem : CLSActivityItem
 
 /*!

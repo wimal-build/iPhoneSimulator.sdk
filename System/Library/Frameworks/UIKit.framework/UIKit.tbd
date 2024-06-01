@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: C9C0B972-5616-3213-96C3-8FD355DE0066' ]
+uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: A981CA84-A6B5-3113-9575-E2482946CD68' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UIKit.framework/UIKit
 current-version: 61000
@@ -1407,10 +1407,10 @@ exports:
                        /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2EF7D401-05E4-3AC1-BF8A-F3700661BC6A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0369DA98-937F-3253-A749-920F3FA6DFA6' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager
-current-version: 68.100.38
+current-version: 68.100.44
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -1453,16 +1453,16 @@ exports:
                        DOCExtensionInterface, DOCFlexibleBarButtonItem, DOCFullDocumentManagerViewController, 
                        DOCItem, DOCKeyCommandRegistry, DOCLightDocumentManagerViewController, 
                        DOCLocationsBarButtonItem, DOCPromisedItem, DOCRemoteBarButton, 
-                       DOCSearchContext, DOCSourceSearchingContext, DOCSourceViewController, 
-                       DOCTagChainView, DOCTargetSelectionBrowserViewController, 
+                       DOCRemoteViewController, DOCSearchContext, DOCSourceSearchingContext, 
+                       DOCSourceViewController, DOCTagChainView, DOCTargetSelectionBrowserViewController, 
                        DOCTransitionUtils, UIDocumentBrowserAction, UIDocumentBrowserTransitionController, 
                        UIDocumentBrowserViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: 2D96A110-37B9-3FE3-B8D3-52608FF10199' ]
+uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: 49C07382-810E-37CA-AA6D-CCE08A51ACC3' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-current-version: 552.1
+current-version: 553
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -1610,6 +1610,7 @@ exports:
                        _UIFontDescriptorFixedAdvanceAttribute, _UIFontDescriptorMatrixAttribute, 
                        _UIFontDescriptorNameAttribute, _UIFontDescriptorOpticalSizeAttribute, 
                        _UIFontDescriptorPostScriptNameAttribute, _UIFontDescriptorSizeAttribute, 
+                       _UIFontDescriptorSystemDesignDefault, _UIFontDescriptorSystemDesignRounded, 
                        _UIFontDescriptorTextStyleAttribute, _UIFontDescriptorTraitsAttribute, 
                        _UIFontDescriptorVariationAttribute, _UIFontDescriptorVisibleNameAttribute, 
                        _UIFontDesignDefault, _UIFontDesignTrait, _UIFontFeatureSelectorIdentifierKey, 
@@ -1713,7 +1714,7 @@ exports:
                        _NSCachedAttributedString._runs ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2DB941E0-513E-3750-9278-C8AFB85CB3C0' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2E773D57-D12B-34F5-BA2E-2AA7D6DC219D' ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
 current-version: 61000
@@ -2258,16 +2259,18 @@ exports:
                        _UIGraphicsEndPDFContext, _UIGraphicsGetCurrentContext, _UIGraphicsGetImageFromCurrentImageContext, 
                        _UIGraphicsGetPDFContextBounds, _UIGraphicsPopContext, _UIGraphicsPushContext, 
                        _UIGraphicsSetPDFContextDestinationForRect, _UIGraphicsSetPDFContextURLForRect, 
-                       _UIGuidedAccessRestrictionStateForIdentifier, _UIHUDWindowLevel, 
-                       _UIHourFormat, _UIIBApplicationInitialize, _UIITunesStoreResolvedURLForHTTPURL, 
-                       _UIImageDataWriteToSavedPhotosAlbum, _UIImageGetBlackCloseButton, 
-                       _UIImageGetBlackCloseButtonPressed, _UIImageGetButtonBarDefaultBackground, 
-                       _UIImageGetButtonBarPressedIndicator, _UIImageGetContactAddButton, 
-                       _UIImageGetContactAddButtonPressed, _UIImageGetDarkInfoButton, 
-                       _UIImageGetLCDBackground, _UIImageGetLightInfoButton, _UIImageGetNavigationBarAddButton, 
-                       _UIImageGetNavigationBarBackArrow, _UIImageGetPartialPressedUnreadIndicator, 
-                       _UIImageGetPartialUnreadIndicator, _UIImageGetPinstripe, _UIImageGetPressedUnreadIndicator, 
-                       _UIImageGetTableNext, _UIImageGetTableNextButton, _UIImageGetTableNextButtonPressed, 
+                       _UIGuidedAccessConfigureAccessibilityFeatures, _UIGuidedAccessErrorDomain, 
+                       _UIGuidedAccessRestrictionStateForIdentifier, _UIGuidedAccessSetConfigureAccessibilityFeaturesEnabledCallback, 
+                       _UIHUDWindowLevel, _UIHourFormat, _UIIBApplicationInitialize, 
+                       _UIITunesStoreResolvedURLForHTTPURL, _UIImageDataWriteToSavedPhotosAlbum, 
+                       _UIImageGetBlackCloseButton, _UIImageGetBlackCloseButtonPressed, 
+                       _UIImageGetButtonBarDefaultBackground, _UIImageGetButtonBarPressedIndicator, 
+                       _UIImageGetContactAddButton, _UIImageGetContactAddButtonPressed, 
+                       _UIImageGetDarkInfoButton, _UIImageGetLCDBackground, _UIImageGetLightInfoButton, 
+                       _UIImageGetNavigationBarAddButton, _UIImageGetNavigationBarBackArrow, 
+                       _UIImageGetPartialPressedUnreadIndicator, _UIImageGetPartialUnreadIndicator, 
+                       _UIImageGetPinstripe, _UIImageGetPressedUnreadIndicator, _UIImageGetTableNext, 
+                       _UIImageGetTableNextButton, _UIImageGetTableNextButtonPressed, 
                        _UIImageGetTableNextSelected, _UIImageGetTableSelectionBackground, 
                        _UIImageGetTextFieldClearButton, _UIImageGetTextFieldClearButtonDisabled, 
                        _UIImageGetTextFieldClearButtonPressed, _UIImageGetUnreadIndicator, 
@@ -2893,9 +2896,10 @@ exports:
                        __UIDynamicAnimationUnitSizeRotationRadians, __UIDynamicAnimationUnitSizeScale, 
                        __UIDynamicAnimationUnitSizeTranslation, __UIEffectiveSourceDataOwnerForReportedDataOwner, 
                        __UIExtensionElectionStateIsIgnore, __UIFocusEngineGestureDidBeginNotification, 
-                       __UIFocusSystemEnabledStateDidChangeNotification, __UIFromValueForAnimation, 
-                       __UIGestureRecognizerStateString, __UIGestureStudyInteractionMetadataDeviceOrientation, 
-                       __UIGestureStudyInteractionMetadataHasAttention, __UIGestureStudyInteractionMetadataProximitySensorIsCovered, 
+                       __UIFocusFastScrollingIndexBarPlaceholderTitle, __UIFocusSystemEnabledStateDidChangeNotification, 
+                       __UIFromValueForAnimation, __UIGestureRecognizerStateString, 
+                       __UIGestureStudyInteractionMetadataDeviceOrientation, __UIGestureStudyInteractionMetadataHasAttention, 
+                       __UIGestureStudyInteractionMetadataProximitySensorIsCovered, 
                        __UIGestureStudyInteractionMetadataTimeSinceWake, __UIGetAnimationCurveSpline, 
                        __UIGetDefaultSpringParameters, __UIGetLookupBackgroundEffect, 
                        __UIGetTintedBackButtonImage, __UIGetTintedCircularButtonDefaultBlueColor, 
@@ -2907,7 +2911,8 @@ exports:
                        __UIGraphicsBeginImageContextOpaque, __UIGraphicsBeginLetterpress, 
                        __UIGraphicsBeginLetterpressContext, __UIGraphicsDrawIntoImageContextWithOptions, 
                        __UIGraphicsEndLetterpressContext, __UIGraphicsEndLetterpressWithStyle, 
-                       __UIGraphicsLetterpressPadding, __UIHostedWindowDidRegisterScrollToTopViewNotificationName, 
+                       __UIGraphicsLetterpressPadding, __UIHorizontalIndexTitleBarHeight, 
+                       __UIHostedWindowDidRegisterScrollToTopViewNotificationName, 
                        __UIHostedWindowDidUnregisterScrollToTopViewNotificationName, 
                        __UIHostedWindowDidUpdateCurrentTintViewNotificationName, 
                        __UIHostedWindowScrollToTopNotificationViewKey, __UIImageGetActivityBookmark, 
@@ -3097,7 +3102,7 @@ exports:
                        UIAutonomousSingleAppModeConfiguration, UIAutonomousSingleAppModeSession, 
                        UIBarButtonItem, UIBarButtonItemGroup, UIBarItem, UIBezierPath, 
                        UIBlurEffect, UIButton, UICalloutBar, UICalloutView, UICheckeredPatternView, 
-                       UIClassSwapper, UIClassicController, UIClickInteraction, UICloudSharingController, 
+                       UIClassSwapper, UIClassicController, UICloudSharingController, 
                        UICollectionLayoutGeometry, UICollectionLayoutGeometryAttribute, 
                        UICollectionLayoutGeometryGroupAttribute, UICollectionLayoutGeometryGroupConfiguration, 
                        UICollectionLayoutGeometryGroupItemAttribute, UICollectionLayoutGeometryGroupItemConfiguration, 
@@ -3250,13 +3255,13 @@ exports:
                        _UIBatteryView, _UIBlendingHighlightView, _UIBlurThroughEffect, 
                        _UIBoundingTextRectsSolver, _UIButtonBar, _UIButtonFeedbackGenerator, 
                        _UIButtonFeedbackGeneratorConfiguration, _UICAPackageView, 
-                       _UICanvas, _UIClickFeedbackGenerator, _UICollectionViewCompositionLayout, 
-                       _UICollectionViewCompositionLayoutInvalidationContext, _UICollectionViewControllerLayoutToLayoutTransition, 
-                       _UICompatibilityTextView, _UICompatibilityTextViewPrintFormatter, 
-                       _UIContentUnavailableView, _UIContinuousFeedback, _UICoreUICatalogColorWrapper, 
-                       _UICurrentContextPresentationController, _UICustomBlurEffect, 
-                       _UIDataTransferMonitor, _UIDataTransferRequest, _UIDiscreteFeedback, 
-                       _UIDocumentPickerAuxiliaryOption, _UIDocumentPickerNSURLWrapper, 
+                       _UICanvas, _UIClickFeedbackGenerator, _UIClickInteraction, 
+                       _UICollectionViewCompositionLayout, _UICollectionViewCompositionLayoutInvalidationContext, 
+                       _UICollectionViewControllerLayoutToLayoutTransition, _UICompatibilityTextView, 
+                       _UICompatibilityTextViewPrintFormatter, _UIContentUnavailableView, 
+                       _UIContinuousFeedback, _UICoreUICatalogColorWrapper, _UICurrentContextPresentationController, 
+                       _UICustomBlurEffect, _UIDataTransferMonitor, _UIDataTransferRequest, 
+                       _UIDiscreteFeedback, _UIDocumentPickerAuxiliaryOption, _UIDocumentPickerNSURLWrapper, 
                        _UIDocumentPickerRemoteViewController, _UIDragBadge, _UIDragFeedbackGenerator, 
                        _UIDragFeedbackGeneratorConfiguration, _UIDragSetDownAnimation, 
                        _UIDragSnappingFeedbackGenerator, _UIDragSnappingFeedbackGeneratorConfiguration, 

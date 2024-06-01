@@ -24,6 +24,11 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @property (nullable, nonatomic, strong) CPImageSet *symbolSet;
 
 /**
+ junctionImage is a @c UIImage used to display a junction for the maneuver.
+ */
+@property (nullable, nonatomic, strong) UIImage *junctionImage;
+
+/**
  instructionVariants is an array of @c NSString representing the instruction for this maneuver, arranged from most to least preferred. You must provide at least one variant.
  The variant strings should be provided as localized, displayable content.
  */

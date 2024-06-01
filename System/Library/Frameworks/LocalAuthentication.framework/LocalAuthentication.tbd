@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01869FD1-C282-3807-AE19-2EBC43204D3A', 'x86_64: 684E7A3E-0101-3384-8E5D-A9E9B24CE8A8' ]
+uuids:           [ 'i386: 01869FD1-C282-3807-AE19-2EBC43204D3A', 'x86_64: BCAB2B02-35FA-388A-964F-6854DAFD5486' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
-current-version: 425.222.1
+current-version: 425.250.11
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

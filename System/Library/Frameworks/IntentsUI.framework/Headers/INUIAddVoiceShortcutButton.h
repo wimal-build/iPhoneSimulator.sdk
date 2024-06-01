@@ -38,6 +38,12 @@ API_UNAVAILABLE(watchos, macosx, tvos)
 @property (nonatomic, weak) id<INUIAddVoiceShortcutButtonDelegate> delegate;
 @property (nonatomic, strong, nullable) INShortcut *shortcut;
 
+/*!
+ @abstract A custom corner radius for the @c INUIAddVoiceShortcutButton.
+ @discussion If the provided corner radius is greater than half of the button’s height, it will be capped at half of the button’s height.
+ */
+@property (nonatomic, assign) CGFloat cornerRadius API_AVAILABLE(ios(13.0));
+
 @end
 
 NS_ASSUME_NONNULL_END

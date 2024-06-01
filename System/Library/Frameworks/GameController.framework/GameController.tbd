@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: 09BB8C4D-1F1E-3CAE-9DE8-68D746C92FEF' ]
+uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: FED8CC50-0E07-315E-929E-66B8668453F6' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/GameController.framework/GameController
 objc-constraint: none
@@ -8,10 +8,13 @@ exports:
   - archs:           [ i386, x86_64 ]
     symbols:         [ _GCApplicationSupportsBackgroundInput, _GCCommonGetPreferencesBooleanValue, 
                        _GCControllerDidConnectNotification, _GCControllerDidDisconnectNotification, 
-                       _GCControllerManagerInit, _GCControllerManagerInitXPC, _GCExtendedGamepadSnapShotDataV100FromNSData, 
-                       _GCGamepadSnapShotDataV100FromNSData, _GCMicroGamepadSnapShotDataV100FromNSData, 
-                       _NSDataFromGCExtendedGamepadSnapShotDataV100, _NSDataFromGCGamepadSnapShotDataV100, 
-                       _NSDataFromGCMicroGamepadSnapShotDataV100, __GCHIDEventCallback, 
+                       _GCControllerManagerInit, _GCControllerManagerInitXPC, _GCCurrentExtendedGamepadSnapshotDataVersion, 
+                       _GCCurrentMicroGamepadSnapshotDataVersion, _GCExtendedGamepadSnapShotDataV100FromNSData, 
+                       _GCExtendedGamepadSnapshotDataFromNSData, _GCGamepadSnapShotDataV100FromNSData, 
+                       _GCMicroGamepadSnapShotDataV100FromNSData, _GCMicroGamepadSnapshotDataFromNSData, 
+                       _NSDataFromGCExtendedGamepadSnapShotDataV100, _NSDataFromGCExtendedGamepadSnapshotData, 
+                       _NSDataFromGCGamepadSnapShotDataV100, _NSDataFromGCMicroGamepadSnapShotDataV100, 
+                       _NSDataFromGCMicroGamepadSnapshotData, __GCHIDEventCallback, 
                        _clamp, _kGCCommonFullPreferencesPath, _kGCCommonPreferencesUser, 
                        _threadRunLoopSourceCallback ]
     objc-classes:    [ GCController, GCControllerAxisInput, GCControllerButtonInput, 

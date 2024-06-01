@@ -487,4 +487,13 @@ HK_EXTERN NSString * const HKMetadataKeyIndoorBikeDistance API_AVAILABLE(ios(12.
  */
 HK_EXTERN NSString * const HKMetadataKeyCrossTrainerDistance API_AVAILABLE(ios(12.0), watchos(5.0));
 
+/*!
+ @constant      HKMetadataKeyHeartRateEventThreshold
+ @abstract      Represents the threshold heart rate that triggered a heart rate event.
+ @discussion    The expected value is an HKQuantity object with a compatible unit (e.g. count/min).
+                This key will be set on heart rate event samples of type HKCategoryTypeIdentifierHighHeartRateEvent and
+                HKCategoryTypeIdentifierLowHeartRateEvent.
+ */
+HK_EXTERN NSString * const HKMetadataKeyHeartRateEventThreshold API_AVAILABLE(ios(12.2), watchos(5.2));
+
 NS_ASSUME_NONNULL_END

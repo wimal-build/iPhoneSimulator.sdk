@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: 27CABD47-E94C-38BF-BCF0-D4EE6AD4687E' ]
+uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: 122DA4F3-D0CF-36B5-B825-13D7BD5D4C31' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreText.framework/CoreText
 objc-constraint: none
@@ -281,9 +281,9 @@ exports:
                        _kCTFontSystemCondensedThin, _kCTFontSystemCondensedUltraLight, 
                        _kCTFontTrackAttribute, _kCTFontTrademarkNameKey, _kCTFontTraitsAttribute, 
                        _kCTFontUIFontDesignAlternate, _kCTFontUIFontDesignCompact, 
-                       _kCTFontUIFontDesignDefault, _kCTFontUIFontDesignRounded, 
-                       _kCTFontUIFontDesignTrait, _kCTFontURLAttribute, _kCTFontUniqueNameKey, 
-                       _kCTFontUserInstalledAttribute, _kCTFontVariationAttribute, 
+                       _kCTFontUIFontDesignCompactRounded, _kCTFontUIFontDesignDefault, 
+                       _kCTFontUIFontDesignRounded, _kCTFontUIFontDesignTrait, _kCTFontURLAttribute, 
+                       _kCTFontUniqueNameKey, _kCTFontUserInstalledAttribute, _kCTFontVariationAttribute, 
                        _kCTFontVariationAxesAttribute, _kCTFontVariationAxisDefaultValueKey, 
                        _kCTFontVariationAxisHiddenKey, _kCTFontVariationAxisIdentifierKey, 
                        _kCTFontVariationAxisMaximumValueKey, _kCTFontVariationAxisMinimumValueKey, 

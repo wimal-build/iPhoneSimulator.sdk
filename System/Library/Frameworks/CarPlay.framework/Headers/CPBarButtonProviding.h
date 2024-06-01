@@ -29,6 +29,8 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
  */
 @property (nonatomic, strong) NSArray<CPBarButton *> *trailingNavigationBarButtons;
 
+@property (nonatomic, strong, nullable) CPBarButton *backButton;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EC6FDA5D-CCFC-35CD-A597-0F54B6AB4D29', 'x86_64: 85DF0984-19CD-345A-9761-E566CAD30B03' ]
+uuids:           [ 'i386: EC6FDA5D-CCFC-35CD-A597-0F54B6AB4D29', 'x86_64: ED3587A7-176C-3D43-98CC-71E1D88DB819' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CFNetwork.framework/CFNetwork
-current-version: 975.0.3
+current-version: 978.0.7
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -975,6 +975,6 @@ exports:
                        NSURLSessionStreamTask, NSURLSessionTask, NSURLSessionTaskDependency, 
                        NSURLSessionTaskDependencyDescription, NSURLSessionTaskDependencyTree, 
                        NSURLSessionTaskMetrics, NSURLSessionTaskTransactionMetrics, 
-                       NSURLSessionUploadTask, _NSCFServer, __NSCFURLSessionTaskInfo, 
-                       __NSCFURLSessionXPC, __NSURLSessionStatistics ]
+                       NSURLSessionUploadTask, _NSCFServer, __NSCFTaskPerformanceTiming, 
+                       __NSCFURLSessionTaskInfo, __NSCFURLSessionXPC, __NSURLSessionStatistics ]
 ...

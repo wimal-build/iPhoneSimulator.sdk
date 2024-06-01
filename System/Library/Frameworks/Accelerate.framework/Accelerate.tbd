@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: D847D97D-AFE8-3911-8D1D-41236E7BB277' ]
+uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: A078960D-99EC-39F1-9BF4-499AD48AE356' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Accelerate
 current-version: 4
@@ -13,10 +13,10 @@ exports:
                        /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: D441163A-ABCB-3174-8073-369860BC48EA' ]
+uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: 9AF8DE59-87B6-3531-B71C-867AAEC8F1E6' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
-current-version: 506.19
+current-version: 506.20
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -298,7 +298,7 @@ exports:
                        _vImageVerticalShear_XRGB2101010W ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: 5C5DA326-EEA6-3D71-BCAD-9D3771CA8DBB' ]
+uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: 21CC1EA7-BD34-30CD-9FBA-2C13C7549F51' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
 objc-constraint: none
@@ -379,7 +379,7 @@ exports:
                        _ztpmv_, _ztpsv_, _ztrmm_, _ztrmv_, _ztrsm_, _ztrsv_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: A2E92A24-8B74-3EA5-AD68-51094B6E259E' ]
+uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: 52C264E1-6BA9-39EA-AB83-316FA03A400A' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
 objc-constraint: none
@@ -395,7 +395,7 @@ exports:
                        _BNNSFilterCreateVectorActivationLayer, _BNNSFilterDestroy ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: 60909267-BF6C-3A84-B2D3-E4F105EA4B85' ]
+uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: 618B94F5-A3A2-3B58-AA4D-8397843C93BE' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib
 objc-constraint: none
@@ -647,7 +647,7 @@ exports:
                        _zunmrq_, _zunmrz_, _zunmtr_, _zupgtr_, _zupmtr_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: 482268F6-F714-3CBE-9ED6-0059B47A54CC' ]
+uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: 16AA8953-8305-378C-9E0B-CC82B588B089' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib
 objc-constraint: none
@@ -671,7 +671,7 @@ exports:
                        _la_vector_to_double_buffer, _la_vector_to_float_buffer ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: 8AE027FE-E7F0-3610-BB1F-AE3250958EB7' ]
+uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: 3748C7C3-EDEC-3AFB-B16E-8B45A4F28CBF' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib
 objc-constraint: none
@@ -682,7 +682,7 @@ exports:
     symbols:         [ _quadrature_integrate ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C7E0F322-FC6F-3F90-A2A6-72672300EFA1' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 097DD771-9EBE-3F4C-889E-12E10E32ED10' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib
 objc-constraint: none
@@ -845,7 +845,7 @@ exports:
                        __SparseTrap ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: D397BAED-FBC0-3B32-AE5A-00CA1FD482CA' ]
+uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: C77F8F55-1C34-308D-AF75-B35D73B0F415' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib
 objc-constraint: none
@@ -886,10 +886,10 @@ exports:
                        _sparse_vector_triangular_solve_dense_float ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: 33A1FE80-E4C1-307E-ACC5-7337A217A96A' ]
+uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: 3BD4C5EE-5C01-310B-AFBE-07F4DAE636D1' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
-current-version: 671.220.1
+current-version: 671.250.4
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -1025,10 +1025,10 @@ exports:
                        _vDSP_zvsub, _vDSP_zvsubD, _vDSP_zvzsml, _vDSP_zvzsmlD ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: 6C5EB649-5935-3F7D-8A3A-FDBB70880D03' ]
+uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: FE3572F6-8E89-32C7-8C54-8006A0BB7E71' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
-current-version: 671.220.1
+current-version: 671.250.4
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -1098,10 +1098,10 @@ exports:
                        _vvtanpif_ ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: 520D399E-9ECC-30AC-9B10-2DD1673CEF7C' ]
+uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: 02AE9543-A349-39FB-83F5-552828E31015' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib
-current-version: 671.220.1
+current-version: 671.250.4
 objc-constraint: none
 exports:         
   - archs:           [ x86_64 ]

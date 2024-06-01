@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8FD9E0D6-6077-3453-95E3-F25BE24C72CA' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7D7EDDD2-F26D-3C4C-9484-A88404373C42' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ClassKit.framework/ClassKit
-current-version: 142.1
+current-version: 144.0.27
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -46,22 +46,25 @@ exports:
                        _CLSProgressClasses, _CLSProgressdBundleIdentifier, _CLSQueryInterface, 
                        _CLSReportClasses, _CLSRosterClasses, _CLSSaveResponseInterface, 
                        _CLSSettingsVisibilityDidChangeNotification, _CLSShareTypeFromString, 
-                       _CLSSignificantBackingStoreChangeNotification, _CLSUbiquitousContainerID, 
-                       _CLSUserActivityActionType, _CLSUserActivityItemIdentifier, 
-                       _CLSXPCDictionaryUpdateWithDictionary, _NSStringFromAuthorizationStatus, 
-                       _NSStringFromBinaryValueType, _NSStringFromContextType, _NSStringFromDevMode, 
-                       _NSStringFromFavoriteType, _NSStringFromHandoutAttachmentCompletionStatus, 
-                       _NSStringFromHandoutAttachmentType, _NSStringFromHandoutPublishingState, 
-                       _NSStringFromHandoutState, _NSStringFromPermissionType, _NSStringFromShareType, 
-                       _PDServerMachServiceName, _clsNotificationQueue, _ic, _kUTTypeCLSContext ]
+                       _CLSSignificantBackingStoreChangeNotification, _CLSStudentClassMembershipChangedDarwinNotificationName, 
+                       _CLSUbiquitousContainerID, _CLSUserActivityActionType, _CLSUserActivityItemIdentifier, 
+                       _CLSUserDefaultPersistProgressData, _CLSXPCDictionaryUpdateWithDictionary, 
+                       _NSStringFromAuthorizationStatus, _NSStringFromBinaryValueType, 
+                       _NSStringFromContextType, _NSStringFromDevMode, _NSStringFromFavoriteType, 
+                       _NSStringFromHandoutAttachmentCompletionStatus, _NSStringFromHandoutAttachmentType, 
+                       _NSStringFromHandoutPublishingState, _NSStringFromHandoutState, 
+                       _NSStringFromPermissionType, _NSStringFromShareType, _PDServerMachServiceName, 
+                       _clsNotificationQueue, _ic, _kUTTypeCLSContext ]
     objc-classes:    [ CLSActivity, CLSActivityItem, CLSActivityReport, CLSActivityReportItem, 
                        CLSAggregatedValue, CLSAsset, CLSAssetUploadObserver, CLSAuthTree, 
                        CLSBinaryItem, CLSBinaryReportItem, CLSClass, CLSClassMember, 
-                       CLSContext, CLSCurrentUser, CLSDataObserver, CLSDataStore, 
-                       CLSEndpointConnection, CLSEntitlements, CLSFavorite, CLSGraph, 
-                       CLSHandout, CLSHandoutAttachment, CLSHandoutRecipient, CLSHandoutReportItem, 
-                       CLSObject, CLSPerson, CLSQuantityItem, CLSQuantityReportItem, 
-                       CLSQuery, CLSRange, CLSReportItem, CLSSaveResponse, CLSScoreItem, 
-                       CLSScoreReportItem, CLSSettingsVisibilityController, CLSTimeInterval, 
+                       CLSContext, CLSContextProviderExtensionContext, CLSContextProviderExtensionHostContext, 
+                       CLSContextProviderService, CLSContextProviderServiceFinder, 
+                       CLSCurrentUser, CLSDataObserver, CLSDataStore, CLSEndpointConnection, 
+                       CLSEntitlements, CLSFavorite, CLSGraph, CLSHandout, CLSHandoutAttachment, 
+                       CLSHandoutRecipient, CLSHandoutReportItem, CLSObject, CLSPerson, 
+                       CLSQuantityItem, CLSQuantityReportItem, CLSQuery, CLSRange, 
+                       CLSReportItem, CLSSaveResponse, CLSScoreItem, CLSScoreReportItem, 
+                       CLSSettingsVisibilityController, CLSTimeInterval, CLSUserDefaults, 
                        CLSUtil, CLSUtilityService ]
 ...

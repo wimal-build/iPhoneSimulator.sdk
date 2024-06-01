@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: CF3D1D57-11DB-3FE2-8993-2A62FE7AB5BA' ]
+uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 32B90D8A-BF01-3199-8511-C786EEAFD010' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/AVFoundation
 current-version: 2
@@ -847,13 +847,15 @@ exports:
                        _AVContentAuthorizationInfoPlayInfoKey, _AVContentAuthorizationInfoSessionIDKey, 
                        _AVContentKeyRequestProtocolVersionsKey, _AVContentKeyRequestRetryReasonReceivedObsoleteContentKey, 
                        _AVContentKeyRequestRetryReasonReceivedResponseWithExpiredLease, 
-                       _AVContentKeyRequestRetryReasonTimedOut, _AVContentKeySystemClearKey, 
-                       _AVContentKeySystemFairPlayStreaming, _AVCoreAnimationBeginTimeAtZero, 
-                       _AVErrorDeviceKey, _AVErrorDiscontinuityFlagsKey, _AVErrorExceptionKey, 
-                       _AVErrorFileSizeKey, _AVErrorFileTypeKey, _AVErrorMediaSubTypeKey, 
-                       _AVErrorMediaTypeKey, _AVErrorPIDKey, _AVErrorPersistentTrackIDKey, 
-                       _AVErrorPresentationTimeStampKey, _AVErrorRecordingSuccessfullyFinishedKey, 
-                       _AVErrorTimeKey, _AVExternalDeviceElectronicTollCollectionStateChangedNotification, 
+                       _AVContentKeyRequestRetryReasonTimedOut, _AVContentKeySessionServerPlaybackContextOptionProtocolVersions, 
+                       _AVContentKeySessionServerPlaybackContextOptionServerChallenge, 
+                       _AVContentKeySystemClearKey, _AVContentKeySystemFairPlayStreaming, 
+                       _AVCoreAnimationBeginTimeAtZero, _AVErrorDeviceKey, _AVErrorDiscontinuityFlagsKey, 
+                       _AVErrorExceptionKey, _AVErrorFileSizeKey, _AVErrorFileTypeKey, 
+                       _AVErrorMediaSubTypeKey, _AVErrorMediaTypeKey, _AVErrorPIDKey, 
+                       _AVErrorPersistentTrackIDKey, _AVErrorPresentationTimeStampKey, 
+                       _AVErrorRecordingSuccessfullyFinishedKey, _AVErrorTimeKey, 
+                       _AVExternalDeviceElectronicTollCollectionStateChangedNotification, 
                        _AVExternalDeviceFeatureEnhancedRequestCarUI, _AVExternalDeviceLimitedUIChangedNotification, 
                        _AVExternalDeviceLimitedUIElementJapanMaps, _AVExternalDeviceLimitedUIElementMusicLists, 
                        _AVExternalDeviceLimitedUIElementNonMusicLists, _AVExternalDeviceLimitedUIElementSoftKeyboard, 
@@ -1201,6 +1203,7 @@ exports:
                        _AVOutputContextDestinationChangeCancellationReasonAuthorizationSkipped, 
                        _AVOutputContextDestinationChangeInitiatedNotification, _AVOutputContextDestinationChangeKey, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceInUse, 
+                       _AVOutputContextDeviceConnectionFailureReasonDeviceNotConnectedToInternet, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceOutOfRange, 
                        _AVOutputContextDeviceConnectionFailureReasonNotAPeerInHomeGroup, 
                        _AVOutputContextDeviceGroupControlOptionCancelAddDeviceIfAuthRequired, 
@@ -1209,6 +1212,7 @@ exports:
                        _AVOutputContextManagerOutputDeviceKey, _AVOutputContextOutputDeviceDidChangeNotification, 
                        _AVOutputContextOutputDevicesDidChangeNotification, _AVOutputContextProvidesControlForAllVolumeFeaturesDidChangeNotification, 
                        _AVOutputContextSetOutputDeviceCancelIfAuthRequiredKey, _AVOutputContextSetOutputDevicePasswordKey, 
+                       _AVOutputContextSetOutputDeviceSuppressUserInteractionOnSenderOnlyKey, 
                        _AVOutputContextTypeAudio, _AVOutputContextTypeGroupControl, 
                        _AVOutputContextTypeScreen, _AVOutputContextTypeSharedAudioPresentation, 
                        _AVOutputContextTypeSharedSystemAudio, _AVOutputContextTypeSharedSystemScreen, 
@@ -1597,7 +1601,7 @@ exports:
                        AVMutableMetadataItem._mutablePriv ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: F69CB0FD-A21C-3912-A8F7-7916CF9E6F75' ]
+uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: E2BD6C3F-4C9C-365B-8001-D217D91D51C5' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio
 objc-constraint: none
@@ -1607,24 +1611,25 @@ exports:
                        _AVAudioBitRateStrategy_Variable, _AVAudioBitRateStrategy_VariableConstrained, 
                        _AVAudioEngineConfigurationChangeNotification, _AVAudioFileTypeKey, 
                        _AVAudioRemoteInputBufferGainKey, _AVAudioRemoteInputBufferSpeexFrameQualitiesKey, 
-                       _AVAudioSessionActivationAccessibilityPreferenceKey, _AVAudioSessionActivationCallDirectionKey, 
-                       _AVAudioSessionActivationDeviceUIDKey, _AVAudioSessionActivationTriggerKey, 
-                       _AVAudioSessionCategoryAlarm, _AVAudioSessionCategoryAmbient, 
-                       _AVAudioSessionCategoryAudioProcessing, _AVAudioSessionCategoryEmergencyAlert, 
-                       _AVAudioSessionCategoryEmergencyAlert_CanBeMuted, _AVAudioSessionCategoryFindMyDevice, 
-                       _AVAudioSessionCategoryFindMyPhone, _AVAudioSessionCategoryMultiRoute, 
-                       _AVAudioSessionCategoryPhoneCall, _AVAudioSessionCategoryPlayAndRecord, 
-                       _AVAudioSessionCategoryPlayback, _AVAudioSessionCategoryPlaybackNoSpeaker, 
-                       _AVAudioSessionCategoryRecord, _AVAudioSessionCategoryRingtone, 
-                       _AVAudioSessionCategoryRingtonePreview, _AVAudioSessionCategorySoloAmbient, 
-                       _AVAudioSessionCategoryTTYCall, _AVAudioSessionCategoryVoiceCommand, 
-                       _AVAudioSessionCategoryVoiceMail, _AVAudioSessionCategoryVoiceOver, 
-                       _AVAudioSessionCategoryWaterEjection, _AVAudioSessionInterruptionNotification, 
-                       _AVAudioSessionInterruptionOptionKey, _AVAudioSessionInterruptionTypeKey, 
-                       _AVAudioSessionInterruptionWasSuspendedKey, _AVAudioSessionInterruptorNameKey, 
-                       _AVAudioSessionLocationLower, _AVAudioSessionLocationUpper, 
-                       _AVAudioSessionMediaServicesWereLostNotification, _AVAudioSessionMediaServicesWereResetNotification, 
-                       _AVAudioSessionModeDefault, _AVAudioSessionModeGameChat, _AVAudioSessionModeHearingAccessibility, 
+                       _AVAudioRemoteInputStartTimeKey, _AVAudioSessionActivationAccessibilityPreferenceKey, 
+                       _AVAudioSessionActivationCallDirectionKey, _AVAudioSessionActivationDeviceUIDKey, 
+                       _AVAudioSessionActivationTriggerKey, _AVAudioSessionCategoryAlarm, 
+                       _AVAudioSessionCategoryAmbient, _AVAudioSessionCategoryAudioProcessing, 
+                       _AVAudioSessionCategoryEmergencyAlert, _AVAudioSessionCategoryEmergencyAlert_CanBeMuted, 
+                       _AVAudioSessionCategoryFindMyDevice, _AVAudioSessionCategoryFindMyPhone, 
+                       _AVAudioSessionCategoryMultiRoute, _AVAudioSessionCategoryPhoneCall, 
+                       _AVAudioSessionCategoryPlayAndRecord, _AVAudioSessionCategoryPlayback, 
+                       _AVAudioSessionCategoryPlaybackNoSpeaker, _AVAudioSessionCategoryRecord, 
+                       _AVAudioSessionCategoryRingtone, _AVAudioSessionCategoryRingtonePreview, 
+                       _AVAudioSessionCategorySoloAmbient, _AVAudioSessionCategoryTTYCall, 
+                       _AVAudioSessionCategoryVoiceCommand, _AVAudioSessionCategoryVoiceMail, 
+                       _AVAudioSessionCategoryVoiceOver, _AVAudioSessionCategoryWaterEjection, 
+                       _AVAudioSessionInterruptionNotification, _AVAudioSessionInterruptionOptionKey, 
+                       _AVAudioSessionInterruptionTypeKey, _AVAudioSessionInterruptionWasSuspendedKey, 
+                       _AVAudioSessionInterruptorNameKey, _AVAudioSessionLocationLower, 
+                       _AVAudioSessionLocationUpper, _AVAudioSessionMediaServicesWereLostNotification, 
+                       _AVAudioSessionMediaServicesWereResetNotification, _AVAudioSessionModeDefault, 
+                       _AVAudioSessionModeGameChat, _AVAudioSessionModeHearingAccessibility, 
                        _AVAudioSessionModeLivePhoto, _AVAudioSessionModeLocatePhone, 
                        _AVAudioSessionModeMeasurement, _AVAudioSessionModeMoviePlayback, 
                        _AVAudioSessionModeRaw, _AVAudioSessionModeSOS, _AVAudioSessionModeSpatialRecording, 
@@ -1664,9 +1669,10 @@ exports:
                        _AVSpeechUtteranceMaximumSpeechRate, _AVSpeechUtteranceMinimumSpeechRate, 
                        _AVVoiceActivationDeviceIDKey, _AVVoiceActivationModeKey, 
                        _AVVoiceControllerATVRemoteInputRoute, _AVVoiceControllerAlertBehavior, 
-                       _AVVoiceControllerMetricAudioSessionSetActiveTime, _AVVoiceControllerMetricAudioSessionSetInactiveTime, 
-                       _AVVoiceControllerMetricDataBeginHostTime, _AVVoiceControllerMetricDataDurationMilliSeconds, 
-                       _AVVoiceControllerMetricDataEndHostTime, _AVVoiceControllerNoRecordRoute, 
+                       _AVVoiceControllerBluetoothDoAPRoute, _AVVoiceControllerMetricAudioSessionSetActiveTime, 
+                       _AVVoiceControllerMetricAudioSessionSetInactiveTime, _AVVoiceControllerMetricDataBeginHostTime, 
+                       _AVVoiceControllerMetricDataDurationMilliSeconds, _AVVoiceControllerMetricDataEndHostTime, 
+                       _AVVoiceControllerNoRecordRoute, _AVVoiceControllerRemoteInputJarvisRoute, 
                        _AVVoiceControllerStartTimeKey ]
     objc-classes:    [ AVAudioBuffer, AVAudioChannelLayout, AVAudioCompressedBuffer, 
                        AVAudioConnectionPoint, AVAudioConverter, AVAudioDeviceTest, 

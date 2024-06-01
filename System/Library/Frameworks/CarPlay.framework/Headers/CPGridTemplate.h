@@ -20,6 +20,7 @@ API_AVAILABLE(ios(12.0)) API_UNAVAILABLE(macos, watchos, tvos)
  A grid template presenting more than 4 buttons will balance the buttons between 2 rows.
  */
 - (instancetype)initWithTitle:(nullable NSString *)title gridButtons:(NSArray <CPGridButton *> *)gridButtons;
+
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 

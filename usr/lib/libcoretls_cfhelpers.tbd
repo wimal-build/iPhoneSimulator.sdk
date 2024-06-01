@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8B54755C-0947-349A-B76D-F977B921C9E6', 'x86_64: 29F7C1A9-CAB5-3A7C-B955-B449095221A7' ]
+uuids:           [ 'i386: 8B54755C-0947-349A-B76D-F977B921C9E6', 'x86_64: 8D7FEA42-DD6B-31E6-AB27-BB934CA22788' ]
 platform:        ios
 install-name:    /usr/lib/libcoretls_cfhelpers.dylib
 current-version: 155.220.1

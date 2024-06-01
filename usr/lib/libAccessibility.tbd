@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: 2997C325-EC38-39BF-8B64-CF010668A260' ]
+uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: DE55CCCE-BE58-39A3-AF0C-7726D9C75098' ]
 platform:        ios
 install-name:    /usr/lib/libAccessibility.dylib
 objc-constraint: none
@@ -96,8 +96,8 @@ exports:
                        __AXSEnhanceTextLegibilityEnabled, __AXSEnhanceTextTrackingEnabled, 
                        __AXSExtendedKeyboardPredictionsEnabled, __AXSForceAllowWebScaling, 
                        __AXSForcePreferenceUpdate, __AXSForceTouchEnabled, __AXSForceTouchSensitivity, 
-                       __AXSGetUSBRMDisablers, __AXSGrayscaleEnabled, __AXSGrayscaleSetEnabled, 
-                       __AXSGreenRedFilterEnabled, __AXSGreenRedFilterSetEnabled, 
+                       __AXSForceTouchTimeDuration, __AXSGetUSBRMDisablers, __AXSGrayscaleEnabled, 
+                       __AXSGrayscaleSetEnabled, __AXSGreenRedFilterEnabled, __AXSGreenRedFilterSetEnabled, 
                        __AXSGuidedAccessEnabled, __AXSGuidedAccessEnabledByManagedConfiguration, 
                        __AXSGuidedAccessHasPasscode, __AXSGuidedAccessRequiresApplicationAccessibility, 
                        __AXSGuidedAccessSetEnabled, __AXSGuidedAccessSetEnabledByManagedConfiguration, 
@@ -139,8 +139,9 @@ exports:
                        __AXSSetEnhanceBackgroundContrastEnabled, __AXSSetEnhanceTextLegibilityEnabled, 
                        __AXSSetEnhanceTextTrackingEnabled, __AXSSetForceAllowWebScaling, 
                        __AXSSetForceTouchEnabled, __AXSSetForceTouchSensitivity, 
-                       __AXSSetHighContrastFocusIndicatorsEnabled, __AXSSetHomeButtonAssistant, 
-                       __AXSSetInPerformanceTestMode, __AXSSetInUnitTestMode, __AXSSetIncreaseButtonLegibility, 
+                       __AXSSetForceTouchTimeDuration, __AXSSetHighContrastFocusIndicatorsEnabled, 
+                       __AXSSetHomeButtonAssistant, __AXSSetInPerformanceTestMode, 
+                       __AXSSetInUnitTestMode, __AXSSetIncreaseButtonLegibility, 
                        __AXSSetKeyRepeatDelay, __AXSSetKeyRepeatEnabled, __AXSSetKeyRepeatInterval, 
                        __AXSSetLeftRightAudioBalance, __AXSSetLetterFeedbackEnabled, 
                        __AXSSetLocalizationCaptionModeEnabled, __AXSSetLogValidationErrors, 
@@ -216,12 +217,12 @@ exports:
                        _kAXSDisplayFilterForceUpdateNotification, _kAXSEarpieceNoiseCancellationEnabledNotification, 
                        _kAXSEarpieceNoiseCancellationPreference, _kAXSEnhanceBackgroundContrastChangedNotification, 
                        _kAXSEnhanceTextLegibilityChangedNotification, _kAXSForceTouchEnabledPreferenceNotification, 
-                       _kAXSForceTouchSensitivityChangedNotification, _kAXSGrayscaleEnabledNotification, 
-                       _kAXSGuidedAccessActivateNotification, _kAXSGuidedAccessEnabledNotification, 
-                       _kAXSGuidedAccessEnabledPreference, _kAXSGuidedAccessHasPasscodeNotification, 
-                       _kAXSGuidedAccessHasPasscodePreference, _kAXSGuidedAccessStartBlockingEventsInSpringBoard, 
-                       _kAXSGuidedAccessStopBlockingEventsInSpringBoard, _kAXSHearingAidComplianceNotification, 
-                       _kAXSHearingAidRingtoneStreamPreferenceChangedNotification, 
+                       _kAXSForceTouchSensitivityChangedNotification, _kAXSForceTouchTimingChangedNotification, 
+                       _kAXSGrayscaleEnabledNotification, _kAXSGuidedAccessActivateNotification, 
+                       _kAXSGuidedAccessEnabledNotification, _kAXSGuidedAccessEnabledPreference, 
+                       _kAXSGuidedAccessHasPasscodeNotification, _kAXSGuidedAccessHasPasscodePreference, 
+                       _kAXSGuidedAccessStartBlockingEventsInSpringBoard, _kAXSGuidedAccessStopBlockingEventsInSpringBoard, 
+                       _kAXSHearingAidComplianceNotification, _kAXSHearingAidRingtoneStreamPreferenceChangedNotification, 
                        _kAXSHearingDevicePairedEarsPreferenceChangedNotification, 
                        _kAXSHighContrastFocusIndicatorsEnabledNotification, _kAXSHomeButtonAssistantChangedNotification, 
                        _kAXSHomeClickEnabledNotification, _kAXSHomeClickSpeedChangedNotification, 

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C25C5CC7-7B43-35DD-851C-4C33D9B87B1C' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B5B88D26-1047-3236-B02B-D78831FF9C3B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreServices.framework/CoreServices
-current-version: 935.2
+current-version: 943.1
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -95,17 +95,18 @@ exports:
                        __AppleIDUpdateLinkedIdentityProvisioningWithBlock, __CSAddAppleIDAccount, 
                        __CSAddAppleIDAccountUsingCompletionBlock, __CSBackToMyMacCopyDomain, 
                        __CSBackToMyMacCopyDomains, __CSCopyAccountIdentifierForAppleIDCertificate, 
-                       __CSCopyAccountInfoForAppleID, __CSCopyAccountStatusForAppleID, 
-                       __CSCopyAppleIDAccountForAppleIDCertificate, __CSCopyAppleIDAccounts, 
-                       __CSCopyCommentForServerName, __CSCopyDefaultSharingSecIdentities, 
+                       __CSCopyAccountIdentifierForAppleIDCertificateChain, __CSCopyAccountInfoForAppleID, 
+                       __CSCopyAccountStatusForAppleID, __CSCopyAppleIDAccountForAppleIDCertificate, 
+                       __CSCopyAppleIDAccounts, __CSCopyCommentForServerName, __CSCopyDefaultSharingSecIdentities, 
                        __CSCopyLocalHostnameForComputerName, __CSCopySecIdentityForAppleID, 
-                       __CSCreateAppleIDIdentityWithCertificate, __CSCreateAppleIDIdentityWithNameAndAccountIdentifier, 
-                       __CSCreatePosixNameFromString, __CSDeviceSupportsAirDrop, 
-                       __CSDisassociateWireless, __CSEnableWirelessP2P, __CSGetAppleIDIdentityAuthority, 
-                       __CSIdentityAuthenticateUsingCertificate, __CSIdentityAuthenticateUsingCertificateChain, 
-                       __CSIdentityAuthorityCopyIdentityWithName, __CSIdentityUpdateLinkedIdentityProvisioning, 
-                       __CSIsComputerToComputerEnabled, __CSIsWirelessAccessPointEnabled, 
-                       __CSIsWirelessP2PEnabled, __CSLinkCurrentUserToAppleIDWithVerifiedAccountIdentifier, 
+                       __CSCreateAppleIDIdentityWithCertificate, __CSCreateAppleIDIdentityWithCertificateChain, 
+                       __CSCreateAppleIDIdentityWithNameAndAccountIdentifier, __CSCreatePosixNameFromString, 
+                       __CSDeviceSupportsAirDrop, __CSDisassociateWireless, __CSEnableWirelessP2P, 
+                       __CSGetAppleIDIdentityAuthority, __CSIdentityAuthenticateUsingCertificate, 
+                       __CSIdentityAuthenticateUsingCertificateChain, __CSIdentityAuthorityCopyIdentityWithName, 
+                       __CSIdentityUpdateLinkedIdentityProvisioning, __CSIsComputerToComputerEnabled, 
+                       __CSIsWirelessAccessPointEnabled, __CSIsWirelessP2PEnabled, 
+                       __CSLinkCurrentUserToAppleIDWithVerifiedAccountIdentifier, 
                        __CSLinkUserToAppleID, __CSRemoveAppleIDAccount, __CSUnlinkCurrentUserFromAppleID, 
                        __LSAdvertisementBytesKind, __LSAppRemovalServiceXPCInterface, 
                        __LSAppStateBlockedKey, __LSAppStateInstalledKey, __LSAppStatePlaceholderKey, 

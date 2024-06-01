@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @protocol CLSDataStoreDelegate <NSObject>
 
 @required
@@ -38,7 +38,7 @@ API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
 /*!
  @abstract      The data store maintains and syncs your app's contexts.
  */
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @interface CLSDataStore : NSObject
 
 /*!
@@ -77,9 +77,15 @@ API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
   */
 - (void)saveWithCompletion:(nullable void(^)(NSError * _Nullable error))completion;
 
+/*!
+ @abstract      Complete all assigned actvities.
+ @discussion    Marks all of the currently active assigned activities for this contextPath as complete.
+ */
+- (void)completeAllAssignedActivitiesMatching:(NSArray<NSString *> *)contextPath API_AVAILABLE(ios(12.2)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos);
+
 @end
 
-API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos, watchos, tvos)
+API_AVAILABLE(ios(11.3)) API_UNAVAILABLE(macos) API_UNAVAILABLE(watchos, tvos)
 @interface CLSDataStore (Contexts)
 
 
