@@ -101,7 +101,8 @@ API_AVAILABLE(ios(11.0)) __TVOS_UNAVAILABLE
 
 
 #pragma mark -
-__TVOS_UNAVAILABLE @protocol UIDocumentBrowserViewControllerDelegate <NSObject>
+API_AVAILABLE(ios(11.0)) __TVOS_UNAVAILABLE
+@protocol UIDocumentBrowserViewControllerDelegate <NSObject>
 
 @optional
 

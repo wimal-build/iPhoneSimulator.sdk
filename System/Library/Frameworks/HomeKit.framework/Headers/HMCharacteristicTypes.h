@@ -685,4 +685,40 @@ HM_EXTERN NSString * const HMCharacteristicTypeHumidifierThreshold NS_AVAILABLE_
  */
 HM_EXTERN NSString * const HMCharacteristicTypeColorTemperature API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
+/*!
+ * @brief Characteristic type for program mode. The value of the characteristic is one of the values defined
+ *        for HMCharacteristicValueProgramMode.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeProgramMode API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ * @brief Characteristic type for in use. The value of the characteristic is one of the values
+ *        defined for HMCharacteristicValueUsageState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeInUse API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ * @brief Characteristic type for set duration. The value of the characteristic is an int value in
+ *        seconds.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeSetDuration API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));;
+
+/*!
+ * @brief Characteristic type for remaining duration. The value of the characteristic is an int value in
+ *        seconds.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeRemainingDuration API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));;
+
+/*!
+ * @brief Characteristic type for valve type. The value of the characteristic is one of the values
+ *        defined for HMCharacteristicValueValveType.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeValveType API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));;
+
+/*!
+ * @brief Characteristic type for is-configured. The value of the characteristic is one of the values
+ *        defined for HMCharacteristicValueConfigurationState.
+ */
+HM_EXTERN NSString * const HMCharacteristicTypeIsConfigured API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));;
+
 NS_ASSUME_NONNULL_END

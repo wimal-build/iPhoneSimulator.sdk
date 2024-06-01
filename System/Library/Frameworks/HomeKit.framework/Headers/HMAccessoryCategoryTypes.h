@@ -128,3 +128,18 @@ HM_EXTERN NSString * const HMAccessoryCategoryTypeAirHumidifier NS_AVAILABLE_IOS
  * @brief Category type for Air Dehumidifier.
  */
 HM_EXTERN NSString * const HMAccessoryCategoryTypeAirDehumidifier NS_AVAILABLE_IOS(10_2) __WATCHOS_AVAILABLE(3_1_1) __TVOS_AVAILABLE(10_1);
+
+/*!
+ * @brief Category type for Sprinkler.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeSprinkler API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ * @brief Category type for Faucet.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeFaucet API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ * @brief Category type for Shower Head.
+ */
+HM_EXTERN NSString * const HMAccessoryCategoryTypeShowerHead API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));

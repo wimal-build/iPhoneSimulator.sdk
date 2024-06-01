@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4F517D50-DB30-3EA3-9AB4-06AC6474FD1B', 'x86_64: 76F41F26-38C5-3D29-9030-50F62B42DCF6' ]
+uuids:           [ 'i386: 4F517D50-DB30-3EA3-9AB4-06AC6474FD1B', 'x86_64: 9742A08A-2480-34B6-A2C1-91708BA39645' ]
 platform:        ios
 install-name:    /usr/lib/libMobileGestalt.dylib
 objc-constraint: none

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: D2CB09AD-50C2-36E9-AB91-E80B108B8478' ]
+uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: 423E6A8E-820E-37A0-88D9-72FE27088EAA' ]
 platform:        ios
 install-name:    /usr/lib/libmecabra.dylib
-current-version: 779.5.3
+current-version: 779.7.5
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

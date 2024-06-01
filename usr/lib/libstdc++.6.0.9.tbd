@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 24B05C02-BEB4-3F88-921E-D956DA68536B', 'x86_64: CB009157-C377-33A6-80D0-889BDD15AF97' ]
+uuids:           [ 'i386: 24B05C02-BEB4-3F88-921E-D956DA68536B', 'x86_64: 90AB33B6-923F-3BE1-AFEA-85F53ED75EB0' ]
 platform:        ios
 install-name:    '/usr/lib/libstdc++.6.dylib'
 current-version: 104.2

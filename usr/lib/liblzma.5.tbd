@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8FA59696-9793-394D-861B-0BA51C4241E1', 'x86_64: 96F77129-FF2D-3B81-963C-646A89EDC1C8' ]
+uuids:           [ 'i386: 8FA59696-9793-394D-861B-0BA51C4241E1', 'x86_64: 2B66CA4D-F3FA-38E0-8689-EB4AAFF3DA48' ]
 platform:        ios
 install-name:    /usr/lib/liblzma.5.dylib
 current-version: 6.3

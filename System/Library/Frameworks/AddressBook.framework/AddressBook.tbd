@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: D231B0C7-C12F-32CA-B299-484BD1C849DF' ]
+uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: FACEC186-F310-3AF2-BD80-6B27676816CB' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AddressBook.framework/AddressBook
 objc-constraint: none

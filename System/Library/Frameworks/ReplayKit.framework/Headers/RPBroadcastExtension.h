@@ -89,6 +89,13 @@ API_AVAILABLE(ios(11.0),tvos(11.0))
 extern NSString *const RPVideoSampleOrientationKey;
 
 /*!
+ @key RPApplicationInfoBundleIdentifierKey
+ @abstract Use this key to retrieve bundle identifier from dictionary provided by broadcastAnnotatedWithApplicationInfo
+ */
+API_AVAILABLE(ios(11.2)) API_UNAVAILABLE(tvos)
+extern NSString *const RPApplicationInfoBundleIdentifierKey;
+
+/*!
  @class RPBroadcastSampleHandler
  @abstract Subclass this class to handle CMSampleBuffer objects as they are captured by ReplayKit. To enable this mode of handling, set the RPBroadcastProcessMode in the extension's info.plist to RPBroadcastProcessModeSampleBuffer.
  */
@@ -108,6 +115,11 @@ API_AVAILABLE(ios(10.0),tvos(10.0))
 
 /*! @abstract Method is called when the RPBroadcastController finishBroadcast method is called from the broadcasting application. */
 - (void)broadcastFinished;
+
+/*! @abstract Method is called when broadcast is started from Control Center and provides extension information about the first application opened or used during the broadcast.
+    @param applicationInfo Dictionary that contains information about the first application opened or used buring the broadcast.
+ */
+- (void)broadcastAnnotatedWithApplicationInfo:(NSDictionary *)applicationInfo API_AVAILABLE(ios(11.2)) API_UNAVAILABLE(tvos);
 
 /*! @abstract Method is called as video and audio data become available during a broadcast session and is delivered as CMSampleBuffer objects.
     @param sampleBuffer CMSampleBuffer object which contains either video or audio data.

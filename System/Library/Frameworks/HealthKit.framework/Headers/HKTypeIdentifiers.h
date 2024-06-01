@@ -38,6 +38,7 @@ HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierPushCount API_A
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceSwimming API_AVAILABLE(ios(10.0), watchos(3.0));           // Length,                      Cumulative
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierSwimmingStrokeCount API_AVAILABLE(ios(10.0), watchos(3.0));        // Scalar(Count),               Cumulative
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierVO2Max API_AVAILABLE(ios(11.0), watchos(4.0));                     // ml/(kg*min)                  Discrete
+HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceDownhillSnowSports API_AVAILABLE(ios(11.2), watchos(4.2)); // Length,                      Cumulative
 
 // Vitals
 HK_EXTERN HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeartRate API_AVAILABLE(ios(8.0), watchos(2.0));                   // Scalar(Count)/Time,          Discrete

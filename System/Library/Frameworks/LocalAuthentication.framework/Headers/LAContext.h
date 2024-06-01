@@ -12,30 +12,41 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, LAPolicy)
 {
-    /// Device owner was authenticated using a biometric method (Touch ID).
+    /// Device owner is going to be authenticated using a biometric method (Touch ID or Face ID).
     ///
-    /// @discussion Touch ID authentication is required. If Touch ID is not available or not enrolled,
-    ///             policy evaluation will fail. If Touch ID is locked out, passcode is required as
-    ///             the first step to unlock the Touch ID.
+    /// @discussion Biometric authentication is required. If the biometry is not available, not enrolled,
+    ///             or locked out, then the evaluation of this policy will fail with LAErrorBiometryNotAvailable,
+    ///             LAErrorBiometryNotEnrolled or LAErrorBiometryLockout. Biometry can't be used without a passcode,
+    ///             i.e. when biometry is available, enrolled and not locked out but passcode is not set, then
+    ///             the evaluation will fail with LAErrorPasscodeNotSet.
     ///
     ///             Touch ID authentication dialog contains a cancel button with default title "Cancel"
-    ///             which can be customized using localizedCancelTitle property and a fallback button with
+    ///             which can be customized using localizedCancelTitle property, and a fallback button with
     ///             default title "Enter Password" which can be customized using localizedFallbackTitle
     ///             property. Fallback button is initially hidden and shows up after first unsuccessful
-    ///             Touch ID attempt. Tapping cancel button or fallback button causes evaluatePolicy call
-    ///             to fail, returning a distinct error code.
+    ///             Touch ID attempt. Tapping either button causes evaluatePolicy call to fail, returning
+    ///             a distinct error code: LAErrorUserCancel or LAErrorUserFallback.
+    ///
+    ///             Face ID authentication begins with animating HUD. If it succeeds at first attempt,
+    ///             the HUD will disappear and no other UI is shown. If the first attempt fails, then
+    ///             LocalAuthentication will show a dialog with two buttons: "Cancel" and "Try Face ID Again".
+    ///             After second failure, the buttons are "Cancel" and "Enter Password" with the same
+    //              semantics as in the case of Touch ID.
     ///
     ///             Biometric authentication will get locked after 5 unsuccessful attempts. After that,
-    ///             users have to unlock it by entering passcode.
+    ///             users have to unlock it by entering passcode. The passcode can be entered either at
+    ///             Lock Screen or even in app by the means of LAPolicyDeviceOwnerAuthentication.
+    ///             The Lock Screen unlock is preferred user experience because we generaly don't want users to
+    ///             enter their passcode at app's request.
     LAPolicyDeviceOwnerAuthenticationWithBiometrics NS_ENUM_AVAILABLE(10_12_2, 8_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0) = kLAPolicyDeviceOwnerAuthenticationWithBiometrics,
 
-    /// Device owner was authenticated by Touch ID or device passcode.
+    /// Device owner is going to be authenticated by biometry or device passcode.
     ///
-    /// @discussion Touch ID or passcode authentication is required. If Touch ID is available, enrolled and
-    ///             not locked out, user is asked for it first, otherwise they are asked to enter device
-    ///             passcode. If passcode is not enabled, policy evaluation will fail.
+    /// @discussion Biometric or passcode authentication is required. If the biometry is available, enrolled and
+    ///             not locked out, users are asked for it first. Otherwise they are asked to enter device
+    ///             passcode. If passcode is not enabled, policy evaluation will fail with LAErrorPasscodeNotSet.
     ///
-    ///             Touch ID authentication dialog behaves similarly as the one used by
+    ///             Biometric authentication dialog behaves similarly as the one used by
     ///             LAPolicyDeviceOwnerAuthenticationWithBiometrics. However, instead of "Enter Password"
     ///             button there is "Enter Passcode" button which, when tapped, switches the authentication
     ///             method and allows users to enter device passcode.
@@ -60,8 +71,9 @@ NS_CLASS_AVAILABLE(10_10, 8_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0)
 /// Determines if a particular policy can be evaluated.
 ///
 /// @discussion Policies can have certain requirements which, when not satisfied, would always cause
-///             the policy evaluation to fail. Examples can be a passcode set or a fingerprint
-///             enrolled with Touch ID. This method allows easy checking for such conditions.
+///             the policy evaluation to fail - e.g. a passcode set, a fingerprint
+///             enrolled with Touch ID or a face set up with Face ID. This method allows easy checking
+///             for such conditions.
 ///
 ///             Applications should consume the returned value immediately and avoid relying on it
 ///             for an extensive period of time. At least, it is guaranteed to stay valid until the
@@ -106,11 +118,21 @@ NS_CLASS_AVAILABLE(10_10, 8_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0)
 ///
 /// @param localizedReason Application reason for authentication. This string must be provided in correct
 ///                        localization and should be short and clear. It will be eventually displayed in
-///                        the authentication dialog subtitle. A name of the calling application will be
-///                        displayed in title, so it should not be duplicated here.
+///                        the authentication dialog subtitle for Touch ID or passcode. The name of the
+///                        calling application will be displayed in title, so it should not be duplicated here.
+///
+///                        This parameter is ignored by Face ID authentication. Therefore, you should
+///                        make sure that users are already aware of the need and reason for Face ID
+///                        authentication before they have triggered the policy evaluation.
 ///
 /// @warning localizedReason parameter is mandatory and the call will throw NSInvalidArgumentException if
 ///          nil or empty string is specified.
+///
+/// @warning Applications should also supply NSFaceIDUsageDescription key in the Info.plist. This key identifies
+///          a string value that contains a message to be displayed to users when the app is trying to use
+///          Face ID for the first time. Users can choose to allow or deny the use of Face ID by the app before
+///          the first use or later in Face ID privacy settings. When the use of Face ID is denied, evaluations
+///          will fail with LAErrorBiometryNotAvailable.
 ///
 /// @see LAError
 ///
@@ -217,8 +239,12 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 ///
 /// @param localizedReason Application reason for authentication. This string must be provided in correct
 ///                        localization and should be short and clear. It will be eventually displayed in
-///                        the authentication dialog subtitle. A name of the calling application will be
-///                        displayed in title, so it should not be duplicated here.
+///                        the authentication dialog subtitle for Touch ID or passcode. The name of the
+///                        calling application will be displayed in title, so it should not be duplicated here.
+///
+///                        This parameter is ignored by Face ID authentication. Therefore, you should
+///                        make sure that users are already aware of the need and reason for Face ID
+///                        authentication before they have triggered the policy evaluation.
 ///
 /// @param reply Reply block that is executed when access control evaluation finishes.
 ///              success Reply parameter that is YES if the access control has been evaluated successfully or
@@ -228,6 +254,12 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 ///
 /// @warning localizedReason parameter is mandatory and the call will throw NSInvalidArgumentException if
 ///          nil or empty string is specified.
+///
+/// @warning Applications should also supply NSFaceIDUsageDescription key in the Info.plist. This key identifies
+///          a string value that contains a message to be displayed to users when the app is trying to use
+///          Face ID for the first time. Users can choose to allow or deny the use of Face ID by the app before
+///          the first use or later in Face ID privacy settings. When the use of Face ID is denied, evaluations
+///          will fail with LAErrorBiometryNotAvailable.
 - (void)evaluateAccessControl:(SecAccessControlRef)accessControl
                     operation:(LAAccessControlOperation)operation
               localizedReason:(NSString *)localizedReason
@@ -235,8 +267,8 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
                         NS_AVAILABLE(10_11, 9_0) __WATCHOS_AVAILABLE(3.0) __TVOS_UNAVAILABLE;
 
 /// Fallback button title.
-/// @discussion Allows fallback button title customization. A default title "Enter Password" is used when
-///             this property is left nil. If set to empty string, the button will be hidden.
+/// @discussion Allows fallback button title customization. If set to empty string, the button will be hidden.
+///             A default title "Enter Password" is used when this property is left nil.
 @property (nonatomic, nullable, copy) NSString *localizedFallbackTitle;
 
 /// Cancel button title.
@@ -256,27 +288,28 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 
 /// Contains policy domain state.
 ///
-/// @discussion  This property is set only when evaluatePolicy is called and succesful Touch ID authentication
+/// @discussion  This property is set only when evaluatePolicy is called and succesful Touch ID or Face ID authentication
 ///              was performed, or when canEvaluatePolicy succeeds for a biometric policy.
 ///              It stays nil for all other cases.
-///              If finger database was modified (fingers were removed or added), evaluatedPolicyDomainState
+///              If biometric database was modified (fingers or faces were removed or added), evaluatedPolicyDomainState
 ///              data will change. Nature of such database changes cannot be determined
 ///              but comparing data of evaluatedPolicyDomainState after different evaluatePolicy
 ///              will reveal the fact database was changed between calls.
-/// @warning Please note that the value returned by this property can also change between OS versions even if
-///          there was no change of the enrolled fingerprints.
+///
+/// @warning Please note that the value returned by this property can change exceptionally between major OS versions even if
+///          the state of biometry has not changed.
 @property (nonatomic, nullable, readonly) NSData *evaluatedPolicyDomainState NS_AVAILABLE(10_11, 9_0) __WATCHOS_UNAVAILABLE __TVOS_UNAVAILABLE;
 
-/// Time interval for accepting a successful Touch ID device unlock (on the lock screen) from the past.
+/// Time interval for accepting a successful Touch ID or Face ID device unlock (on the lock screen) from the past.
 ///
 /// @discussion This property can be set with a time interval in seconds. If the device was successfully unlocked by
-///             Touch ID within this time interval, then Touch ID authentication on this context will succeed
-///             automatically and the reply block will be called without prompting user for Touch ID.
+///             biometry within this time interval, then biometric authentication on this context will succeed
+///             automatically and the reply block will be called without prompting user for Touch ID or Face ID.
 ///
-///             The default value is 0, meaning that no previous TouchID unlock can be reused.
+///             The default value is 0, meaning that no previous biometric unlock can be reused.
 ///
-///             This property is meant only for reusing Touch ID matches from the device lock screen.
-///             It does not allow reusing previous Touch ID matches in application or between applications.
+///             This property is meant only for reusing biometric matches from the device lock screen.
+///             It does not allow reusing previous biometric matches in application or between applications.
 ///
 ///             The maximum supported interval is 5 minutes and setting the value beyond 5 minutes does not increase
 ///             the accepted interval.
@@ -300,27 +333,28 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 ///
 ///             If this property is used with a LocalAuthentication evaluation, it will eventually fail with
 ///             LAErrorNotInteractive instead of displaying the authentication UI.
-@property (nonatomic) BOOL interactionNotAllowed;
+@property (nonatomic) BOOL interactionNotAllowed API_AVAILABLE(macos(10.13), ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 
 typedef NS_ENUM(NSInteger, LABiometryType)
 {
     /// The device does not support biometry.
-    LABiometryNone,
+    LABiometryTypeNone API_AVAILABLE(macos(10.13.2), ios(11.2)),
+    LABiometryNone API_DEPRECATED_WITH_REPLACEMENT("LABiometryTypeNone", macos(10.13, 10.13.2), ios(11.0, 11.2)) = LABiometryTypeNone,
     
     /// The device supports Touch ID.
     LABiometryTypeTouchID,
     
     /// The device supports Face ID.
-    LABiometryTypeFaceID,
-} NS_ENUM_AVAILABLE(NA, 11_0) __WATCHOS_UNAVAILABLE __TVOS_UNAVAILABLE;
+    LABiometryTypeFaceID API_UNAVAILABLE(macos),
+} API_AVAILABLE(macos(10.13.2), ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 
 /// Indicates the type of the biometry supported by the device.
 ///
 /// @discussion  This property is set only when canEvaluatePolicy succeeds for a biometric policy.
-///              The default value is LABiometryNone.
-@property (nonatomic, readonly) LABiometryType biometryType NS_AVAILABLE(NA, 11_0) __WATCHOS_UNAVAILABLE __TVOS_UNAVAILABLE;
+///              The default value is LABiometryTypeNone.
+@property (nonatomic, readonly) LABiometryType biometryType API_AVAILABLE(macos(10.13.2), ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
 
 @end

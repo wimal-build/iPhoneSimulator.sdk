@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 22F2471A-A6D5-3ABC-AD7B-B3BFC343ADE9', 'x86_64: 924E06C7-E5FE-3FAB-BC74-2DFD075919D1' ]
+uuids:           [ 'i386: 22F2471A-A6D5-3ABC-AD7B-B3BFC343ADE9', 'x86_64: 79B7B358-EB7E-3CCD-B857-212FFB37A822' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MapKit.framework/MapKit
 current-version: 14
@@ -19,10 +19,10 @@ exports:
     objc-ivars:      [ _MKMapView._defaultLocationTimer, _MKPlaceHeaderBackgroundView._backgroundType, 
                        _MKPlaceHeaderBackgroundView._mapItem, _MKUserLocationView._marker ]
   - archs:           [ x86_64 ]
-    objc-ivars:      [ _MKAnnotationView._annotation, _MKAnnotationView._collisionFrame, 
-                       _MKAnnotationView._customFeatureAnnotation, _MKAnnotationView._displayPriority, 
-                       _MKUserLocationView._accuracyContainerLayer, _MKUserLocationView._navigationPuckMarker, 
-                       _MKUserLocationView._puckLayer ]
+    objc-ivars:      [ _MKAnnotationView._annotation, _MKAnnotationView._clusteringIdentifier, 
+                       _MKAnnotationView._collisionFrame, _MKAnnotationView._customFeatureAnnotation, 
+                       _MKAnnotationView._displayPriority, _MKUserLocationView._accuracyContainerLayer, 
+                       _MKUserLocationView._navigationPuckMarker, _MKUserLocationView._puckLayer ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _ImageForShieldDataSourceTypeShouldBeFlipped, _MKAddressDictionaryFromCLPlacemark, 
                        _MKAddressDictionaryFromContactsDictionary, _MKAddressDictionaryFromPostalAddress, 

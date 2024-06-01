@@ -8,7 +8,24 @@
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKitDefines.h>
 
+@class SKProductDiscount;
+
+typedef NS_ENUM(NSUInteger, SKProductPeriodUnit) {
+    SKProductPeriodUnitDay,
+    SKProductPeriodUnitWeek,
+    SKProductPeriodUnitMonth,
+    SKProductPeriodUnitYear
+} NS_SWIFT_NAME(SKProduct.PeriodUnit);
+
 NS_ASSUME_NONNULL_BEGIN
+
+SK_EXTERN_CLASS_AVAILABLE(11_2) @interface SKProductSubscriptionPeriod : NSObject
+
+@property(nonatomic, readonly) NSUInteger numberOfUnits;
+
+@property(nonatomic, readonly) SKProductPeriodUnit unit;
+
+@end
 
 SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProduct : NSObject {
 @private
@@ -33,6 +50,10 @@ SK_EXTERN_CLASS_AVAILABLE(3_0) @interface SKProduct : NSObject {
 
 // Version of the downloadable content
 @property(nonatomic, readonly) NSString *downloadContentVersion NS_AVAILABLE_IOS(6_0);
+
+@property(nonatomic, readonly, nullable) SKProductSubscriptionPeriod *subscriptionPeriod NS_AVAILABLE_IOS(11_2);
+
+@property(nonatomic, readonly, nullable) SKProductDiscount *introductoryPrice NS_AVAILABLE_IOS(11_2);
 
 @end
 

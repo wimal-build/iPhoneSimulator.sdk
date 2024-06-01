@@ -210,4 +210,19 @@ HM_EXTERN NSString * const HMServiceTypeSlats NS_AVAILABLE_IOS(10_2) __WATCHOS_A
  */
 HM_EXTERN NSString * const HMServiceTypeLabel NS_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
 
+/*!
+ * @brief Service type for irrigation system.
+ */
+HM_EXTERN NSString * const HMServiceTypeIrrigationSystem API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ * @brief Service type for valve.
+ */
+HM_EXTERN NSString * const HMServiceTypeValve API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ * @brief Service type for faucet.
+ */
+HM_EXTERN NSString * const HMServiceTypeFaucet API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
 NS_ASSUME_NONNULL_END

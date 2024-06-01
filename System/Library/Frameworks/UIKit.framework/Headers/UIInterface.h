@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, UITraitEnvironmentLayoutDirection) {
 } NS_ENUM_AVAILABLE_IOS(10_0);
 
 typedef NS_ENUM(NSInteger, UIDisplayGamut) {
-    UIDisplayGamutUnspecified = -1,
+    UIDisplayGamutUnspecified = -1, // UIKit will not set this anymore, instead a sensible default is chosen based on the device capabilities and settings always
     UIDisplayGamutSRGB,
     UIDisplayGamutP3
 } NS_ENUM_AVAILABLE_IOS(10_0);

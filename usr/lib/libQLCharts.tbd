@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0280902C-32CA-31D3-A332-2954B53739F5', 'x86_64: A1379968-7AF6-3BEB-A947-62416CA1451E' ]
+uuids:           [ 'i386: 0280902C-32CA-31D3-A332-2954B53739F5', 'x86_64: EA6A892B-BC65-3685-8776-BB3B8FA0F25E' ]
 platform:        ios
 install-name:    /usr/lib/libQLCharts.dylib
-current-version: 257
+current-version: 257.2
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

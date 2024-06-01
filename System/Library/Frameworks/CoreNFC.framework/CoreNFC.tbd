@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3D61283D-959F-33CA-A7D2-D017069118D1' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F5144E75-BE12-3BF1-BBC3-DAFF85A295DB' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreNFC.framework/CoreNFC
 objc-constraint: none

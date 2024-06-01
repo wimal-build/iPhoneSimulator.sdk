@@ -38,7 +38,8 @@ API_UNAVAILABLE(macosx)
                      location:(nullable CLPlacemark *)location
            locationSearchType:(INLocationSearchType)locationSearchType
                      dateTime:(nullable INDateComponentsRange *)dateTime
-               dateSearchType:(INDateSearchType)dateSearchType NS_DESIGNATED_INITIALIZER;
+               dateSearchType:(INDateSearchType)dateSearchType
+       notebookItemIdentifier:(nullable NSString *)notebookItemIdentifier NS_DESIGNATED_INITIALIZER API_AVAILABLE(ios(11.2), watchos(4.2));
 
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INSpeakableString *title;
 
@@ -55,6 +56,8 @@ API_UNAVAILABLE(macosx)
 @property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) INDateComponentsRange *dateTime;
 
 @property (readonly, assign, NS_NONATOMIC_IOSONLY) INDateSearchType dateSearchType;
+
+@property (readonly, copy, nullable, NS_NONATOMIC_IOSONLY) NSString *notebookItemIdentifier API_AVAILABLE(ios(11.2), watchos(4.2));
 
 @end
 

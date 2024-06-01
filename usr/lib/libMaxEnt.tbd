@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 63DA1644-C6EA-356D-8994-58F6AEC2B956' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A74EFA30-44D5-3323-9BCA-2E4D6433DBA5' ]
 platform:        ios
 install-name:    /usr/lib/libMaxEnt.dylib
 objc-constraint: none

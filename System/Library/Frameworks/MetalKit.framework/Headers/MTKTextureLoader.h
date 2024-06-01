@@ -205,7 +205,8 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
  @method newTexturesWithNames:scaleFactor:bundle:options:completionHandler:
  @abstract Asynchronously create Metal textures and load image data from a given texture or image
            asset names
- @param name A texture or image asset names
+ @param names An array texture or image asset names.  If an error occurs while loading a texture,
+              the corresponding index in the returned array contain [NSNull null]
  @param scaleFactor scale factor of the texture to retrieve from the asset catalog.  Typically the
                     value retrieved from -[UIView contentScale] or -[NSWindow backingScaleFactor].
  @param bundle Resource bundle in which the assets are located.  Main bundle used if nil.
@@ -280,10 +281,14 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 /*!
  @method newTexturesWithContentsOfURLs:options:completionHandler:
  @abstract Synchronously create an array of Metal textures and load image data from the files at URLs
- @return An array of MTLTextures of the same length and in the same order as the requested array of paths. If an error occurs while loading a texture, the corresponding array index will contain NSNull.
+ @return An array of MTLTextures of the same length and in the same order as the requested array of
+         paths.  If an error occurs while loading a texture, the corresponding array index will
+         contain [NSNull null].
  @param URLs Locations of image files from which to create the textures
  @param options Dictonary of MTKTextureLoaderOptions, which will be used for every texture loaded
- @param error Pointer to an autoreleased NSError object which will be set if an error occurred. Will be null if all of the textures are loaded successfully, or will correspond to one of the textures which failed to load.
+ @param error Pointer to an autoreleased NSError object which will be set if an error occurred.
+              Will be null if all of the textures are loaded successfully, or will correspond to
+              one of the textures which failed to load.
  */
 - (NSArray <id <MTLTexture>> * __nonnull)newTexturesWithContentsOfURLs:(nonnull NSArray <NSURL *> *)URLs
                                                                options:(nullable NSDictionary <MTKTextureLoaderOption, id> *)options

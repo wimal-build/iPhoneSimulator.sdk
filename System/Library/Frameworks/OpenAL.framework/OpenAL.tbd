@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: 48000563-8D4B-3169-BCD0-C2CE73264435' ]
+uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: 1B41F921-FE39-3590-8ED8-71E27F9A90B3' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/OpenAL.framework/OpenAL
 objc-constraint: none

@@ -15,6 +15,7 @@ HM_EXTERN NSString * const HMErrorDomain NS_AVAILABLE_IOS(8_0);
  *        returned from the the HomeKit APIs.
  */
 typedef NS_ENUM(NSInteger, HMErrorCode) {
+    HMErrorCodeUnexpectedError                         API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2)) = -1,
     HMErrorCodeAlreadyExists                           = 1,
     HMErrorCodeNotFound                                = 2,
     HMErrorCodeInvalidParameter                        = 3,

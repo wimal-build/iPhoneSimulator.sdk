@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D06E0660-428B-3A4E-AF7F-3392A9E4994D', 'x86_64: 74531961-A8D5-341A-BA5F-898C8825C023' ]
+uuids:           [ 'i386: D06E0660-428B-3A4E-AF7F-3392A9E4994D', 'x86_64: 914C0AA3-58A8-3B8F-BECA-2F5A9309DE22' ]
 platform:        ios
 install-name:    /usr/lib/libobjc.A.dylib
 current-version: 228

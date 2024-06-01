@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADDA75B9-764A-387D-81E9-39CCE6592628', 'x86_64: BFA0305A-9363-3D4D-93FC-9027CBF9A82E' ]
+uuids:           [ 'i386: ADDA75B9-764A-387D-81E9-39CCE6592628', 'x86_64: 3CB99FFF-8C3B-303C-AB73-E91A4A872B78' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Intents.framework/Intents
 objc-constraint: none
@@ -10,7 +10,7 @@ exports:
                        _INIntentSlotValueRedactedValueFromPaymentAmountValue, __INIntentSlotValueTransformFromDateTimeRangeValue, 
                        __INIntentSlotValueTransformFromLocationValue, __INIntentSlotValueTransformToDateTimeRangeValue, 
                        __INIntentSlotValueTransformToLocationValue, __INVocabularyStringTypeFromString ]
-    objc-classes:    [ _INImageCache ]
+    objc-classes:    [ _INCacheableObjectManager, _INImageCache ]
     objc-ivars:      [ __INPBSearchCallHistoryIntentResponse._unknownFields ]
   - archs:           [ x86_64 ]
     objc-ivars:      [ __INPBPlayAudioMessageIntentResponse._unknownFields, __INPBPlayVoicemailIntentResponse._unknownFields, 
@@ -93,11 +93,11 @@ exports:
                        _INHomeKitDomainGetIntentDescriptionWithType, _INHomeKitDomainGetIntentResponseDescriptionWithDataClass, 
                        _INHomeKitDomainGetIntentResponseDescriptionWithFacadeClass, 
                        _INHomeKitDomainGetIntentResponseDescriptionWithName, _INHomeKitDomainGetIntentResponseDescriptionWithType, 
-                       _INIntentCreate, _INIntentErrorDomain, _INIntentResponseCreate, 
-                       _INIntentResponseIsAutoSendFailure, _INIntentSchemaGetIntentDescriptionWithDataClass, 
-                       _INIntentSchemaGetIntentDescriptionWithFacadeClass, _INIntentSchemaGetIntentDescriptionWithName, 
-                       _INIntentSchemaGetIntentDescriptionWithType, _INIntentSchemaGetIntentNames, 
-                       _INIntentSchemaGetIntentResponseDescriptionWithDataClass, 
+                       _INIntentCreate, _INIntentErrorDomain, _INIntentResolutionResultErrorDomain, 
+                       _INIntentResponseCreate, _INIntentResponseIsAutoSendFailure, 
+                       _INIntentSchemaGetIntentDescriptionWithDataClass, _INIntentSchemaGetIntentDescriptionWithFacadeClass, 
+                       _INIntentSchemaGetIntentDescriptionWithName, _INIntentSchemaGetIntentDescriptionWithType, 
+                       _INIntentSchemaGetIntentNames, _INIntentSchemaGetIntentResponseDescriptionWithDataClass, 
                        _INIntentSchemaGetIntentResponseDescriptionWithFacadeClass, 
                        _INIntentSchemaGetIntentResponseDescriptionWithName, _INIntentSchemaGetIntentResponseDescriptionWithType, 
                        _INIntentSchemaGetIntentResponseNames, _INIntentSchemaGetIntentResponseTypes, 
@@ -330,6 +330,7 @@ exports:
                        _INTaskStatusHasBackingType, _INTaskTypeGetBackingType, _INTaskTypeGetFacadeType, 
                        _INTaskTypeGetName, _INTaskTypeHasBackingType, _INThisProcessHasAssistantdEntitlement, 
                        _INThisProcessHasEntitlement, _INThisProcessHasSiriDeveloperEntitlement, 
+                       _INThisProcessIsAssistantd, _INThisProcessIsSystemProcess, 
                        _INTransferMoneyIntentResponseCodeGetName, _INTriggerMethodGetBackingType, 
                        _INTriggerMethodGetFacadeType, _INTriggerMethodGetName, _INTriggerMethodHasBackingType, 
                        _INUserActivityDeserializeFromBackingStore, _INUserActivityDeserializeFromData, 
@@ -491,11 +492,10 @@ exports:
                        _INBalanceAmount, _INBalanceTypeResolutionResult, _INBillDetails, 
                        _INBillPayee, _INBillPayeeResolutionResult, _INBillTypeResolutionResult, 
                        _INBookRestaurantReservationIntent, _INBookRestaurantReservationIntentResponse, 
-                       _INBooleanResolutionResult, _INCache, _INCacheableObjectManager, 
-                       _INCallCapabilityOptionsResolutionResult, _INCallDestinationTypeResolutionResult, 
-                       _INCallRecord, _INCallRecordTypeOptionsResolutionResult, _INCallRecordTypeResolutionResult, 
-                       _INCancelRideIntent, _INCancelRideIntentResponse, _INCancelWorkoutIntent, 
-                       _INCancelWorkoutIntentResponse, _INCarAirCirculationModeResolutionResult, 
+                       _INBooleanResolutionResult, _INCache, _INCallCapabilityOptionsResolutionResult, 
+                       _INCallDestinationTypeResolutionResult, _INCallRecord, _INCallRecordTypeOptionsResolutionResult, 
+                       _INCallRecordTypeResolutionResult, _INCancelRideIntent, _INCancelRideIntentResponse, 
+                       _INCancelWorkoutIntent, _INCancelWorkoutIntentResponse, _INCarAirCirculationModeResolutionResult, 
                        _INCarAudioSourceResolutionResult, _INCarDefrosterResolutionResult, 
                        _INCarSeatResolutionResult, _INCarSignalOptionsResolutionResult, 
                        _INConfigureHomeIntent, _INConfigureHomeIntentResponse, _INControlHomeIntent, 
@@ -505,7 +505,8 @@ exports:
                        _INDateComponentsRangeResolutionResult, _INDateComponentsResolutionResult, 
                        _INDateSearchTypeResolutionResult, _INDoubleResolutionResult, 
                        _INEndWorkoutIntent, _INEndWorkoutIntentResponse, _INExtension, 
-                       _INExtensionContext, _INExtensionContextHost, _INGetAvailableRestaurantReservationBookingDefaultsIntent, 
+                       _INExtensionContext, _INExtensionContextHost, _INExtensionContextSlotResolutionResult, 
+                       _INGetAvailableRestaurantReservationBookingDefaultsIntent, 
                        _INGetAvailableRestaurantReservationBookingDefaultsIntentResponse, 
                        _INGetAvailableRestaurantReservationBookingsIntent, _INGetAvailableRestaurantReservationBookingsIntentResponse, 
                        _INGetCarLockStatusIntent, _INGetCarLockStatusIntentResponse, 

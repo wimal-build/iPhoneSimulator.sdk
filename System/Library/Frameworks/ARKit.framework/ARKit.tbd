@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E385A57C-843D-38D1-AE0C-A3DFD92F219C' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1597DC5B-4B6D-3A0A-BA45-90CD38CE3365' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ARKit.framework/ARKit
 objc-constraint: none
@@ -47,7 +47,7 @@ exports:
                        _ARFrontFacingImageSensorFrameRateUserDefaultsKey, _ARFrontFacingImageSensorISOUserDefaultsKey, 
                        _ARFrontFacingImageSensorResolutionUserDefaultsKey, _ARFrontFacingImageSensorWhiteBalanceUserDefaultsKey, 
                        _ARHitTestResultTypeEstimatedVerticalPlane, _ARIsBuiltInCameraTypeAvailable, 
-                       _ARKitBuildVersionNumber, _ARLocalizedString, _ARMatrix3x3Description, 
+                       _ARKitBuildVersionString, _ARLocalizedString, _ARMatrix3x3Description, 
                        _ARMatrix3x3FromArray, _ARMatrix3x3FromMatrix4x4, _ARMatrix3x3FromNSData, 
                        _ARMatrix3x3MakeRotation, _ARMatrix4x3FromNSData, _ARMatrix4x4Description, 
                        _ARMatrix4x4FromNSData, _ARMatrix4x4FromRotationAndTranslation, 
@@ -62,11 +62,11 @@ exports:
                        _ARRenderingToVisionCoordinateTransform, _ARSCNDebugOptionShowFeaturePoints, 
                        _ARSCNDebugOptionShowWorldOrigin, _ARSensorDataTypesToString, 
                        _ARSessionDidPauseDarwinNotification, _ARSessionDidRunDarwinNotification, 
-                       _ARSphericalHarmonicsByApplyingRotation, _ARSphericalHarmonicsByFlippingZAxis, 
-                       _ARSphericalHarmonicsDataWithAmbientLight, _ARSphericalHarmonicsDataWithCoefficients, 
-                       _ARSphericalHarmonicsDotProduct, _ARSphericalHarmonicsWithDirection, 
-                       _ARTrackingStateReasonToString, _ARTrackingStateToString, 
-                       _ARUnWrapFixedPointUnsigned13_3_OneComponent16Buffer_Depth32BitsBuffer, 
+                       _ARSessionRunOptionsToString, _ARSphericalHarmonicsByApplyingRotation, 
+                       _ARSphericalHarmonicsByFlippingZAxis, _ARSphericalHarmonicsDataWithAmbientLight, 
+                       _ARSphericalHarmonicsDataWithCoefficients, _ARSphericalHarmonicsDotProduct, 
+                       _ARSphericalHarmonicsWithDirection, _ARTrackingStateReasonToString, 
+                       _ARTrackingStateToString, _ARUnWrapFixedPointUnsigned13_3_OneComponent16Buffer_Depth32BitsBuffer, 
                        _ARUnWrapOneComponent16BufferDepth32BitsBuffer, _ARVector3Description, 
                        _ARVector3FromArray, _ARVector3ScalarMultiplication, _ARViewToCameraImageTransform, 
                        _ARVisionToRenderingCoordinateTransform, _ARWorldToCameraTransformFromCMRotationMatrix, 

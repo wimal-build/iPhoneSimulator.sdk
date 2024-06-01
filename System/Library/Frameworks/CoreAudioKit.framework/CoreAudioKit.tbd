@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9653A3FA-63EF-34E5-8F84-0B31D803E3E5', 'x86_64: F0B91E8E-053E-3611-AEF1-8860C6225C2B' ]
+uuids:           [ 'i386: 9653A3FA-63EF-34E5-8F84-0B31D803E3E5', 'x86_64: 725995D5-759A-3FC9-943D-72394DD48D20' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreAudioKit.framework/CoreAudioKit
 objc-constraint: none

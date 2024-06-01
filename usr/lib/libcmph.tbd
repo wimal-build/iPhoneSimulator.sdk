@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 81D613A1-6A05-37BA-A4EB-1336E9C617B5', 'x86_64: 1331CDE2-6438-3329-A298-3A8FBA48F098' ]
+uuids:           [ 'i386: 81D613A1-6A05-37BA-A4EB-1336E9C617B5', 'x86_64: DF3E55F1-1251-3952-AAF3-A097A0F594EA' ]
 platform:        ios
 install-name:    /usr/lib/libcmph.dylib
 objc-constraint: none

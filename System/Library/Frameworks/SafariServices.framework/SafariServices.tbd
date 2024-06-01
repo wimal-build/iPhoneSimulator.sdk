@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: 766EE502-386D-3225-991A-A2F8C218A383' ]
+uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: 9AA72B20-2356-3B40-A6D3-F871792D532D' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/SafariServices.framework/SafariServices
 objc-constraint: none

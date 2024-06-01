@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 83F3FB78-DEE2-3B47-8A34-D07072CF8C22', 'x86_64: DDDF9C9B-66B3-3AB5-A5F1-72333480DDBD' ]
+uuids:           [ 'i386: 83F3FB78-DEE2-3B47-8A34-D07072CF8C22', 'x86_64: 476290C8-67BE-3890-8A95-D2E548CCAFAC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CloudKit.framework/CloudKit
-current-version: 719
+current-version: 735
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -72,6 +72,7 @@ exports:
                        _CKPIDIsStillAlive, _CKPagesShareURLSlug, _CKPartialErrorsByItemIDKey, 
                        _CKProductName, _CKProductType, _CKProductVersion, _CKPushEnvironmentServerPreferred, 
                        _CKQoSClassFromNSQualityOfService, _CKQoSIsBackground, _CKQueryOperationMaximumResults, 
+                       _CKRawhideContainerIdentifierPrefix, _CKRawhideKeyRollingContainerIdentifier, 
                        _CKRecordAccessGrantedKey, _CKRecordAccessKey, _CKRecordChangedErrorAncestorRecordKey, 
                        _CKRecordChangedErrorClientRecordKey, _CKRecordChangedErrorServerRecordKey, 
                        _CKRecordCreationDateKey, _CKRecordCreatorUserRecordIDKey, 
@@ -95,12 +96,12 @@ exports:
                        _CKStringWithObject, _CKStringWithSet, _CKStringsAreBothNilOrEqual, 
                        _CKTTYCallHistoryContainerIdentifier, _CKTabIndentAtDepth, 
                        _CKTemporaryDirectory, _CKTernaryFromBOOL, _CKTopLevelUnderlyingErrorCodes, 
-                       _CKTriggerAutoBugCaptureWithFormatSignature, _CKValidateKeyName, 
-                       _CKValidateRecordArrayValue, _CKValueIsAcceptableClass, _CKValueIsAcceptablePredicateClass, 
-                       _CKVettingURLSlug, _CKWalletContainerIdentifierPrefix, _CKWarnForIncorrectServiceIdentity, 
-                       _CKWarnForInvalidApplicationIdentifier, _CKWeakLinkClass, 
-                       _CKWeakLinkSymbol, _CKWebSharingBaseTokenKey, _CKWebSharingIsReadOnly, 
-                       _CKWebSharingIsShared, _CKWebSharingOperationShareActionKey, 
+                       _CKTriggerAutoBugCaptureWithFormatSignature, _CKTriggerClientSideAutoBugCaptureWithFormatSignature, 
+                       _CKValidateKeyName, _CKValidateRecordArrayValue, _CKValueIsAcceptableClass, 
+                       _CKValueIsAcceptablePredicateClass, _CKVettingURLSlug, _CKWalletContainerIdentifierPrefix, 
+                       _CKWarnForIncorrectServiceIdentity, _CKWarnForInvalidApplicationIdentifier, 
+                       _CKWeakLinkClass, _CKWeakLinkSymbol, _CKWebSharingBaseTokenKey, 
+                       _CKWebSharingIsReadOnly, _CKWebSharingIsShared, _CKWebSharingOperationShareActionKey, 
                        _CKWebSharingOperationShareBaseTokenKey, _CKWebSharingOperationSharingKeyKey, 
                        _CKWebSharingOperationWasSharedKey, _CKWebSharingOperationWasUnsharedKey, 
                        _CKWebSharingProtectionDataKey, _CKXPCSuitableError, _CKiADContainerIdentifier, 

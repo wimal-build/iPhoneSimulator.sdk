@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7D568B5F-0772-31A2-ACAA-207A8143F831', 'x86_64: 4FAC3122-D59A-33B4-B2F8-74C994B7B5F4' ]
+uuids:           [ 'i386: 7D568B5F-0772-31A2-ACAA-207A8143F831', 'x86_64: 813AFE90-8601-34C5-BDB3-0CF717B429EC' ]
 platform:        ios
 install-name:    /usr/lib/libnetwork.dylib
 objc-constraint: none
@@ -218,12 +218,13 @@ exports:
                        _nw_pac_resolver_cancel, _nw_pac_resolver_create_with_script, 
                        _nw_pac_resolver_create_with_url, _nw_pac_resolver_endpoint_is_pac_url, 
                        _nw_pac_resolver_start, _nw_protocol_coretls_dispose, _nw_protocol_coretls_identifier, 
-                       _nw_protocol_http2_transport_identifier, _nw_protocol_ipv4_identifier, 
-                       _nw_protocol_ipv6_identifier, _nw_protocol_rawip_dispose, 
-                       _nw_protocol_rawip_identifier, _nw_protocol_recorder_identifier, 
-                       _nw_protocol_shoes_identifier, _nw_protocol_socket_dispose, 
-                       _nw_protocol_socksv4_identifier, _nw_protocol_socksv5_identifier, 
-                       _nw_protocol_tls_apply, _nw_protocol_tls_set_client_queue, 
+                       _nw_protocol_http2_transport_identifier, _nw_protocol_http2_transport_parameters_set_connection_receive_window_size, 
+                       _nw_protocol_http2_transport_parameters_set_stream_receive_window_size, 
+                       _nw_protocol_ipv4_identifier, _nw_protocol_ipv6_identifier, 
+                       _nw_protocol_rawip_dispose, _nw_protocol_rawip_identifier, 
+                       _nw_protocol_recorder_identifier, _nw_protocol_shoes_identifier, 
+                       _nw_protocol_socket_dispose, _nw_protocol_socksv4_identifier, 
+                       _nw_protocol_socksv5_identifier, _nw_protocol_tls_apply, _nw_protocol_tls_set_client_queue, 
                        _nw_protocol_tls_set_message_handler, _nw_protocol_tls_set_prepare_handler, 
                        _nw_protocol_udp_identifier, _nw_proxy_key_host, _nw_proxy_key_pac_script, 
                        _nw_proxy_key_pac_url, _nw_proxy_key_password, _nw_proxy_key_port, 

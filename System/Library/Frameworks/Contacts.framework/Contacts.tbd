@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: CBEEB067-24AF-392F-A44F-A406CD2169BE' ]
+uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 795C43D8-FD0B-3571-AE17-FBAB1807B9C3' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Contacts.framework/Contacts
 current-version: 0
@@ -116,9 +116,9 @@ exports:
                        _CNContactRelation, _CNContactRelationsDescription, _CNContactStore, 
                        _CNContactTypeDescription, _CNContactVCardSerialization, _CNContactsEnvironment, 
                        _CNContactsLoggerProvider, _CNContactsLogging, _CNContactsUserDefaults, 
-                       _CNContainer, _CNContainerPermissions, _CNCreationDateDescription, 
-                       _CNCropRectDescription, _CNDataMapperContactStore, _CNDate, 
-                       _CNDatesDescription, _CNDepartmentDescription, _CNDraggingContact, 
+                       _CNContainer, _CNContainerPermissions, _CNCoreSpotlightSearch, 
+                       _CNCreationDateDescription, _CNCropRectDescription, _CNDataMapperContactStore, 
+                       _CNDate, _CNDatesDescription, _CNDepartmentDescription, _CNDraggingContact, 
                        _CNEmailAddressesDescription, _CNErrorFactory, _CNFamilyNameDescription, 
                        _CNFavorites, _CNFavoritesEntry, _CNFullscreenImageDataDescription, 
                        _CNGivenNameDescription, _CNGroup, _CNIOSLegacyIdentifierDescription, 
@@ -148,7 +148,8 @@ exports:
                        _CNTCCServices, _CNTestSmartFetcher, _CNTextAlertDescription, 
                        _CNThumbnailImageDataDescription, _CNUrlAddressesDescription, 
                        _CNValueOrigin, _CNXPCDataMapper, _CNiOSAddressBook, _CNiOSAddressBookDataMapper, 
-                       __CNContactsLogger, __CNRegulatoryLogger, __CNSpotlightIndexingLogger ]
+                       _CNiOSEncodedPeopleFetcher, __CNContactsLogger, __CNRegulatoryLogger, 
+                       __CNSpotlightIndexingLogger ]
     objc-ivars:      [ _CNContainer._accountIdentifier, _CNContainer._enabled, _CNContainer._iOSLegacyIdentifier, 
                        _CNContainer._identifier, _CNContainer._name, _CNContainer._permissions, 
                        _CNContainer._snapshot, _CNContainer._type, _CNContainerPermissions._canCreateContacts, 

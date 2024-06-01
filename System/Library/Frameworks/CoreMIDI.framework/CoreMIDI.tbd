@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D3F92F6D-990B-34A3-942E-5B61495D66E7', 'x86_64: CE8142A6-4A3F-366E-AFBB-0576A81684E3' ]
+uuids:           [ 'i386: D3F92F6D-990B-34A3-942E-5B61495D66E7', 'x86_64: AE5F4D0E-531A-36AC-98A6-E84EC6391CE4' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
 current-version: 69

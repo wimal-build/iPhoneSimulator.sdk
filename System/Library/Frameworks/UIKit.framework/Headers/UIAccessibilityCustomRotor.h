@@ -90,7 +90,7 @@ NS_CLASS_AVAILABLE_IOS(10_0) @interface UIAccessibilityCustomRotor : NSObject
 
 // The system rotor type that was optionally used during initialization.
 // default = UIAccessibilityCustomSystemRotorTypeNone
-@property (nonatomic, readonly) UIAccessibilityCustomSystemRotorType systemRotorType;
+@property (nonatomic, readonly) UIAccessibilityCustomSystemRotorType systemRotorType NS_AVAILABLE_IOS(11_0);
 
 @end
 

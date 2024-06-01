@@ -23,6 +23,10 @@ typedef NS_ENUM(NSInteger, RPRecordingErrorCode) {
     RPRecordingErrorEntitlements = -5810, // Recording failed due to missing entitlements
     RPRecordingErrorActivePhoneCall = -5811, // Recording unable to to record due to active phone call
     RPRecordingErrorFailedToSave = -5812, // Failed to save recording to camera roll
-    RPRecordingErrorCarPlay = -5813 // Failed to start recording due to carplay being active
-    
+    RPRecordingErrorCarPlay = -5813, // Failed to start recording due to carplay being active
+    RPRecordingErrorFailedApplicationConnectionInvalid = -5814, // Failed during recording application connection invalid
+    RPRecordingErrorFailedApplicationConnectionInterrupted = -5815, // Failed during recording appliation connection interrupted
+    RPRecordingErrorFailedNoMatchingApplicationContext = -5816, // Failed during recording context id does not match application
+    RPRecordingErrorFailedMediaServicesFailure = -5817, // Failed during recording due to mediaservices failure
+    RPRecordingErrorVideoMixingFailure = -5818 // Failed during recording due to audio/video mixing failure
 };

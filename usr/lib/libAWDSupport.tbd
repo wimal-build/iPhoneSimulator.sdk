@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: 66948849-D36B-3ED5-8758-E7084AE0D0BC' ]
+uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: F38E0DFB-D851-3736-9C96-3D784788899C' ]
 platform:        ios
 install-name:    /usr/lib/libAWDSupport.dylib
 objc-constraint: none

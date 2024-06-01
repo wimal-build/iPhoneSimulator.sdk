@@ -530,6 +530,10 @@ Enumerators:
   SwiftName: addMovieHeaderToDestination
 - Name: AVMusicSequenceLoadSMF_ChannelsToTracks
   SwiftName: smfChannelsToTracks
+- Name: AVPlayerHDRModeHDR10
+  SwiftName: hdr10
+- Name: AVPlayerHDRModeHLG
+  SwiftName: hlg
 Tags:
 - Name: AVCaptureAutoFocusRangeRestriction
   SwiftName: AVCaptureDevice.AutoFocusRangeRestriction
@@ -563,6 +567,8 @@ Tags:
   SwiftName: AVDepthData.Quality
 - Name: AVError
   NSErrorDomain: AVFoundationErrorDomain
+- Name: AVPlayerHDRMode
+  SwiftName: AVPlayer.HDRMode
 Typedefs:
 - Name: AVCaptureDeviceTransportControlsSpeed
   SwiftName: AVCaptureDevice.TransportControlsSpeed

@@ -198,3 +198,4 @@ FOUNDATION_EXPORT const unsigned char IntentsVersionString[];
 #import <Intents/INSearchForMessagesIntent_Deprecated.h>
 #import <Intents/INSendMessageIntent_Deprecated.h>
 #import <Intents/INSetProfileInCarIntent_Deprecated.h>
+#import <Intents/INSearchForNotebookItemsIntent_Deprecated.h>

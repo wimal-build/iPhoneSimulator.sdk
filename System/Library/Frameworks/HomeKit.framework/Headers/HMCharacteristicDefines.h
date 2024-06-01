@@ -518,3 +518,53 @@ typedef NS_ENUM(NSInteger, HMCharacteristicValueLabelNamespace) {
     HMCharacteristicValueLabelNamespaceDot = 0,
     HMCharacteristicValueLabelNamespaceNumeral,
 } NS_ENUM_AVAILABLE_IOS(10_3) __WATCHOS_AVAILABLE(3_2) __TVOS_AVAILABLE(10_2);
+
+/*!
+ @enum      HMCharacteristicValueProgramMode
+ 
+ @constant  HMCharacteristicValueProgramModeNotScheduled                No programs scheduled.
+ @constant  HMCharacteristicValueProgramModeScheduled                   Program scheduled.
+ @constant  HMCharacteristicValueProgramModeScheduleOverriddenToManual  Schedule currently overridden to manual mode.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueProgramMode) {
+    HMCharacteristicValueProgramModeNotScheduled = 0,
+    HMCharacteristicValueProgramModeScheduled,
+    HMCharacteristicValueProgramModeScheduleOverriddenToManual,
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ @enum      HMCharacteristicValueUsageState
+ 
+ @constant  HMCharacteristicValueUsageStateNotInUse        Not in use.
+ @constant  HMCharacteristicValueUsageStateInUse           Currently in use.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueUsageState) {
+    HMCharacteristicValueUsageStateNotInUse = 0,
+    HMCharacteristicValueUsageStateInUse,
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ @enum      HMCharacteristicValueValveType
+ 
+ @constant  HMCharacteristicValueValveTypeGenericValve    Generic Valve.
+ @constant  HMCharacteristicValueValveTypeIrrigation      Irrigation.
+ @constant  HMCharacteristicValueValveTypeShowerHead      Shower Head.
+ @constant  HMCharacteristicValueValveTypeWaterFaucet     Water Faucet.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueValveType) {
+    HMCharacteristicValueValveTypeGenericValve = 0,
+    HMCharacteristicValueValveTypeIrrigation,
+    HMCharacteristicValueValveTypeShowerHead,
+    HMCharacteristicValueValveTypeWaterFaucet,
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));
+
+/*!
+ @enum      HMCharacteristicValueConfigurationState
+ 
+ @constant  HMCharacteristicValueConfigurationStateNotConfigured   Not Configured.
+ @constant  HMCharacteristicValueConfigurationStateConfigured      Configured.
+ */
+typedef NS_ENUM(NSInteger, HMCharacteristicValueConfigurationState) {
+    HMCharacteristicValueConfigurationStateNotConfigured = 0,
+    HMCharacteristicValueConfigurationStateConfigured,
+} API_AVAILABLE(ios(11.2), watchos(4.2), tvos(11.2));

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: 22F71994-C6C3-328E-8A8B-B5A9937F4DA7' ]
+uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: C8A7BFBB-73C4-3643-A10E-A3C2C8739598' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreText.framework/CoreText
 objc-constraint: none

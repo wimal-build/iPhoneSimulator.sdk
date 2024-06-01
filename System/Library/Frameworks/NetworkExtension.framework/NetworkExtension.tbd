@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: F0E52265-D9BC-3727-AE6A-49B6080E6361' ]
+uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: D1557EA4-59D5-3384-8A4F-0FF6B8A98980' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/NetworkExtension.framework/NetworkExtension
 objc-constraint: none
@@ -60,7 +60,8 @@ exports:
                        _NEHelperCacheSetDomainDictionaries, _NEHelperCacheSetRoutes, 
                        _NEHelperCopyAggregatePathRules, _NEHelperCopyAppInfo, _NEHelperCopyPerAppDomains, 
                        _NEHelperCopyResponse, _NEHelperGetIKESocket, _NEHelperGetKernelControlSocket, 
-                       _NEHelperGetNECPSessionFD, _NEHelperGetPFKeySocket, _NEHelperInterfaceRemoveAddress, 
+                       _NEHelperGetKernelControlSocketExtended, _NEHelperGetNECPSessionFD, 
+                       _NEHelperGetPFKeySocket, _NEHelperInterfaceRemoveAddress, 
                        _NEHelperInterfaceSetAddress, _NEHelperInterfaceSetMTU, _NEHelperInterfaceSetOption, 
                        _NEHelperSendRequest, _NEHelperSettingsSetArray, _NEHelperSettingsSetBool, 
                        _NEHelperSettingsSetNumber, _NEIPSecDBAddLarvalSA, _NEIPSecDBAddPolicy, 
@@ -140,9 +141,10 @@ exports:
                        _NEVirtualInterfaceCopyRoutes, _NEVirtualInterfaceCopyStatistics, 
                        _NEVirtualInterfaceCopyVPNServerAddress, _NEVirtualInterfaceCreate, 
                        _NEVirtualInterfaceCreateChannel, _NEVirtualInterfaceCreateFromSocket, 
-                       _NEVirtualInterfaceDisableChannel, _NEVirtualInterfaceDupSocket, 
-                       _NEVirtualInterfaceEnableChannelAndGetNexusInstance, _NEVirtualInterfaceEnableFlowswitch, 
-                       _NEVirtualInterfaceEnableProcessUUID, _NEVirtualInterfaceGetDNSSupplementalMatchDomainsNoSearch, 
+                       _NEVirtualInterfaceCreateNexus, _NEVirtualInterfaceDisableChannel, 
+                       _NEVirtualInterfaceDupSocket, _NEVirtualInterfaceEnableChannelAndGetNexusInstance, 
+                       _NEVirtualInterfaceEnableFlowswitch, _NEVirtualInterfaceEnableProcessUUID, 
+                       _NEVirtualInterfaceGetDNSSupplementalMatchDomainsNoSearch, 
                        _NEVirtualInterfaceGetMaxPendingPackets, _NEVirtualInterfaceGetReadAutomatically, 
                        _NEVirtualInterfaceGetType, _NEVirtualInterfaceInvalidate, 
                        _NEVirtualInterfaceIsPrimary, _NEVirtualInterfaceReadyToRead, 

@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, UIButtonType) {
     UIButtonTypeInfoDark,
     UIButtonTypeContactAdd,
     
-    UIButtonTypePlain API_AVAILABLE(tvos(11.0)) __IOS_PROHIBITED __WATCHOS_PROHIBITED, // standard system button without the blurred background view
+    UIButtonTypePlain API_AVAILABLE(tvos(11.0)) API_UNAVAILABLE(ios, watchos), // standard system button without the blurred background view
     
     UIButtonTypeRoundedRect = UIButtonTypeSystem   // Deprecated, use UIButtonTypeSystem instead
 };

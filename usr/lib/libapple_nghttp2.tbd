@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 806BF563-B63A-39C5-967F-5AAF1931B19B' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 02655715-DA34-39BA-9F7C-EF71B70F9DAF' ]
 platform:        ios
 install-name:    /usr/lib/libapple_nghttp2.dylib
 current-version: 1.24

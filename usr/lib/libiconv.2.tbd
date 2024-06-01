@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 22C3724B-1C0A-3DD2-BD48-89BC101FCDEF', 'x86_64: 5C5FB713-58B0-382C-806A-E991A8E9C978' ]
+uuids:           [ 'i386: 22C3724B-1C0A-3DD2-BD48-89BC101FCDEF', 'x86_64: 9AC3FB68-00CB-3536-A616-1C4B1F6928B3' ]
 platform:        ios
 install-name:    /usr/lib/libiconv.2.dylib
 current-version: 7

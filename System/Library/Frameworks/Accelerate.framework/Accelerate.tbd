@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: AECCD378-1E96-3F06-89C2-91FF28B84570' ]
+uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: 63F97F0F-41D1-3C1A-8ADA-5F69BBCB9EE1' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accelerate.framework/Accelerate
 current-version: 4

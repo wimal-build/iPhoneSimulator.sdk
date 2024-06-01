@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 8266A922-899F-309C-895B-76BA1BDFC2EA' ]
+uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 84DA4F56-B055-370B-AA38-DF4492FBA532' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-current-version: 1125.2.1
+current-version: 1129.2.1
 compatibility-version: 64
 objc-constraint: none
 exports:         
@@ -1263,9 +1263,10 @@ exports:
                        _cmap_yylex_init, _cmap_yyparse, _cmap_yypop_buffer_state, 
                        _cmap_yypush_buffer_state, _cmap_yyrealloc, _cmap_yyrestart, 
                        _cmap_yyscan, _cmap_yyset_debug, _cmap_yyset_extra, _cmap_zapf_table, 
-                       _computeATRRecord, _cp_layout_create, _create_provider, _crossing_count, 
-                       _decode_create, _decode_data, _decode_destroy, _direct_componentProvider_callbacks, 
-                       _filterAngles, _fs_error, _function_evaluate_float, _get_x_inflections_2, 
+                       _computeATRRecord, _cp_layout_create, _create_debug_string, 
+                       _create_provider, _crossing_count, _decode_create, _decode_data, 
+                       _decode_destroy, _direct_componentProvider_callbacks, _filterAngles, 
+                       _fs_error, _function_evaluate_float, _get_x_inflections_2, 
                        _get_x_inflections_3, _get_y_inflections_2, _get_y_inflections_3, 
                        _handle_bad_byte_ptr_retain_count, _identity_cmap_table, _identity_cmap_table_count, 
                        _japanese_cmap_table, _japanese_cmap_table_count, _jbig2_create_state, 

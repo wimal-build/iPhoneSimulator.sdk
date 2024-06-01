@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: AA42C5E1-F77A-399B-A487-7A77E7CFF4A2' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: 31303046-98B6-32C9-B946-FF67BC9B66CA' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/WebKit.framework/WebKit
-current-version: 604.3.5
+current-version: 604.4.7
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -70,18 +70,19 @@ exports:
                        _WKBundleBackForwardListItemCopyURL, _WKBundleBackForwardListItemGetTypeID, 
                        _WKBundleBackForwardListItemHasCachedPageExpired, _WKBundleBackForwardListItemIsInPageCache, 
                        _WKBundleBackForwardListItemIsSame, _WKBundleBackForwardListItemIsTargetItem, 
-                       _WKBundleClearAllDatabases, _WKBundleCreateWKDataFromUInt8Array, 
-                       _WKBundleDOMWindowExtensionCreate, _WKBundleDOMWindowExtensionGetFrame, 
-                       _WKBundleDOMWindowExtensionGetScriptWorld, _WKBundleDOMWindowExtensionGetTypeID, 
-                       _WKBundleFileHandleCreateWithPath, _WKBundleFileHandleGetTypeID, 
-                       _WKBundleFrameAllowsFollowingLink, _WKBundleFrameCallShouldCloseOnWebView, 
-                       _WKBundleFrameClearOpener, _WKBundleFrameContainsAnyFormControls, 
-                       _WKBundleFrameContainsAnyFormElements, _WKBundleFrameCopyChildFrames, 
-                       _WKBundleFrameCopyCounterValue, _WKBundleFrameCopyInnerText, 
-                       _WKBundleFrameCopyLayerTreeAsText, _WKBundleFrameCopyMIMETypeForResourceWithURL, 
-                       _WKBundleFrameCopyName, _WKBundleFrameCopyProvisionalURL, 
-                       _WKBundleFrameCopySecurityOrigin, _WKBundleFrameCopySuggestedFilenameForResourceWithURL, 
-                       _WKBundleFrameCopyURL, _WKBundleFrameCopyWebArchive, _WKBundleFrameCopyWebArchiveFilteringSubframes, 
+                       _WKBundleClearAllDatabases, _WKBundleClearResourceLoadStatistics, 
+                       _WKBundleCreateWKDataFromUInt8Array, _WKBundleDOMWindowExtensionCreate, 
+                       _WKBundleDOMWindowExtensionGetFrame, _WKBundleDOMWindowExtensionGetScriptWorld, 
+                       _WKBundleDOMWindowExtensionGetTypeID, _WKBundleFileHandleCreateWithPath, 
+                       _WKBundleFileHandleGetTypeID, _WKBundleFrameAllowsFollowingLink, 
+                       _WKBundleFrameCallShouldCloseOnWebView, _WKBundleFrameClearOpener, 
+                       _WKBundleFrameContainsAnyFormControls, _WKBundleFrameContainsAnyFormElements, 
+                       _WKBundleFrameCopyChildFrames, _WKBundleFrameCopyCounterValue, 
+                       _WKBundleFrameCopyInnerText, _WKBundleFrameCopyLayerTreeAsText, 
+                       _WKBundleFrameCopyMIMETypeForResourceWithURL, _WKBundleFrameCopyName, 
+                       _WKBundleFrameCopyProvisionalURL, _WKBundleFrameCopySecurityOrigin, 
+                       _WKBundleFrameCopySuggestedFilenameForResourceWithURL, _WKBundleFrameCopyURL, 
+                       _WKBundleFrameCopyWebArchive, _WKBundleFrameCopyWebArchiveFilteringSubframes, 
                        _WKBundleFrameCreateHitTestResult, _WKBundleFrameFocus, _WKBundleFrameForJavaScriptContext, 
                        _WKBundleFrameGetContentBounds, _WKBundleFrameGetDocumentBackgroundColor, 
                        _WKBundleFrameGetFrameLoadState, _WKBundleFrameGetJavaScriptContext, 
@@ -183,14 +184,14 @@ exports:
                        _WKBundleRemoveOriginAccessWhitelistEntry, _WKBundleRemoveUserScript, 
                        _WKBundleRemoveUserScripts, _WKBundleRemoveUserStyleSheet, 
                        _WKBundleRemoveUserStyleSheets, _WKBundleReportException, 
-                       _WKBundleResetOriginAccessWhitelists, _WKBundleScriptWorldClearWrappers, 
-                       _WKBundleScriptWorldCopyName, _WKBundleScriptWorldCreateWorld, 
-                       _WKBundleScriptWorldGetTypeID, _WKBundleScriptWorldMakeAllShadowRootsOpen, 
-                       _WKBundleScriptWorldNormalWorld, _WKBundleSetAllowFileAccessFromFileURLs, 
-                       _WKBundleSetAllowStorageAccessFromFileURLS, _WKBundleSetAllowUniversalAccessFromFileURLs, 
-                       _WKBundleSetAsyncFrameScrollingEnabled, _WKBundleSetAsynchronousSpellCheckingEnabled, 
-                       _WKBundleSetAuthorAndUserStylesEnabled, _WKBundleSetClient, 
-                       _WKBundleSetDatabaseQuota, _WKBundleSetFrameFlatteningEnabled, 
+                       _WKBundleResetOriginAccessWhitelists, _WKBundleResourceLoadStatisticsNotifyObserver, 
+                       _WKBundleScriptWorldClearWrappers, _WKBundleScriptWorldCopyName, 
+                       _WKBundleScriptWorldCreateWorld, _WKBundleScriptWorldGetTypeID, 
+                       _WKBundleScriptWorldMakeAllShadowRootsOpen, _WKBundleScriptWorldNormalWorld, 
+                       _WKBundleSetAllowFileAccessFromFileURLs, _WKBundleSetAllowStorageAccessFromFileURLS, 
+                       _WKBundleSetAllowUniversalAccessFromFileURLs, _WKBundleSetAsyncFrameScrollingEnabled, 
+                       _WKBundleSetAsynchronousSpellCheckingEnabled, _WKBundleSetAuthorAndUserStylesEnabled, 
+                       _WKBundleSetClient, _WKBundleSetDatabaseQuota, _WKBundleSetFrameFlatteningEnabled, 
                        _WKBundleSetJavaScriptCanAccessClipboard, _WKBundleSetMinimumLogicalFontSize, 
                        _WKBundleSetPopupBlockingEnabled, _WKBundleSetPrivateBrowsingEnabled, 
                        _WKBundleSetSpatialNavigationEnabled, _WKBundleSetTabKeyCyclesThroughElements, 

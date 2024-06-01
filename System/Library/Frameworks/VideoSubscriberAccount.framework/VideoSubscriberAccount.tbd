@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: 6BA45D13-EDBD-3409-9490-E25D6E68A11A' ]
+uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: A31A4F2E-12D7-3E03-94B3-B8CDB8F7C543' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
-current-version: 215.4
+current-version: 238.1
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

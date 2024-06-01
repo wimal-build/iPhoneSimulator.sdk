@@ -1,6 +1,6 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C55F6023-FA69-3006-B93E-7F6AC997ED03', 'x86_64: 0CE76BD1-8200-3B80-9800-CD92000DE152' ]
+uuids:           [ 'i386: C55F6023-FA69-3006-B93E-7F6AC997ED03', 'x86_64: 2E9D044A-1242-392E-8EA3-65B158E1D3A3' ]
 platform:        ios
 install-name:    /usr/lib/libcoretls.dylib
 current-version: 155

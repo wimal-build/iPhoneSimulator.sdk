@@ -1,9 +1,9 @@
 --- !tapi-tbd-v2
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4F59D247-B5D0-32BC-8369-349064587671', 'x86_64: A6D3C539-30FC-3D4C-A3EE-B69FD2825085' ]
+uuids:           [ 'i386: 4F59D247-B5D0-32BC-8369-349064587671', 'x86_64: 6A7A4581-C0C8-3136-8723-2690CD0A9B35' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-current-version: 963
+current-version: 963.30.1
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]

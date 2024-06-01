@@ -414,4 +414,52 @@ typedef NS_ENUM(NSInteger, HKVO2MaxTestType) {
  */
 HK_EXTERN NSString * const HKMetadataKeyVO2MaxTestType API_AVAILABLE(ios(11.0), watchos(4.0));
 
+/*!
+ @constant      HKMetadataKeyAverageSpeed
+ @abstract      Represents the average speed for a workout segment or distance sample.
+ @discussion    This represents the average speed when moving so it may not match the value of distance/time for a
+ distance sample.
+ 
+ The expected value type is an HKQuantity object compatible with a speed unit (e.g. m/s). This key may be
+ set on quantity samples of type HKQuantityTypeIdentifierDistanceDownhillSnowSports or a workout segment
+ representing a skiing run.
+ */
+HK_EXTERN NSString * const HKMetadataKeyAverageSpeed API_AVAILABLE(ios(11.2), watchos(4.2));
+
+/*!
+ @constant      HKMetadataKeyMaximumSpeed
+ @abstract      Represents the maximum speed for a workout segment or distance sample.
+ @discussion    The expected value type is an HKQuantity object compatible with a speed unit (e.g. m/s). This key may be
+ set on quantity samples of type HKQuantityTypeIdentifierDistanceDownhillSnowSports or a workout segment
+ representing a skiing run.
+ */
+HK_EXTERN NSString * const HKMetadataKeyMaximumSpeed API_AVAILABLE(ios(11.2), watchos(4.2));
+
+/*!
+ @constant      HKMetadataKeyAlpineSlopeGrade
+ @abstract      Represents the grade of a ski run.
+ @discussion    Alpine slope grade is measured in percent where 100% grade is a 45 degree slope.
+ 
+ The expected value type is an HKQuantity object compatible with percent unit. This key may be set on
+ quantity samples of type HKQuantityTypeIdentifierDistanceDownhillSnowSports or a workout segment
+ representing a skiing run.
+ */
+HK_EXTERN NSString * const HKMetadataKeyAlpineSlopeGrade API_AVAILABLE(ios(11.2), watchos(4.2));
+
+/*!
+ @constant      HKMetadataKeyElevationAscended
+ @abstract      Represents the cumulative elevation ascent during a workout.
+ @discussion    The expected value type is an HKQuantity object compatible with length unit. This key may be set on a
+ workout, workout segments or distance samples.
+ */
+HK_EXTERN NSString * const HKMetadataKeyElevationAscended API_AVAILABLE(ios(11.2), watchos(4.2));
+
+/*!
+ @constant      HKMetadataKeyElevationDescended
+ @abstract      Represents the cumulative elevation descent during a workout.
+ @discussion    The expected value type is an HKQuantity object compatible with length unit. This key may be set on a
+ workout, workout segments or distance samples.
+ */
+HK_EXTERN NSString * const HKMetadataKeyElevationDescended API_AVAILABLE(ios(11.2), watchos(4.2));
+
 NS_ASSUME_NONNULL_END
