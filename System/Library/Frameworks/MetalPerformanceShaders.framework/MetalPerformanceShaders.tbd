@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 18CBF84C-5775-3F18-BD34-A32C8344F0AC' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9E237D7C-A58D-38C3-B71E-6651D00E81A8' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders'
-current-version: 122.2
+current-version: 122.5.5
 exports:         
   - archs:           [ i386, x86_64 ]
     re-exports:      [ '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore', 
@@ -16,10 +16,10 @@ exports:
                        _MPSSetHeapCacheDuration, _MPSSupportsMTLDevice ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 98786CED-9766-30C6-9718-ED744CAC39BC' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 54CD75F9-FF00-3231-A05D-59058970B8D6' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore'
-current-version: 122.2
+current-version: 122.5.5
 exports:         
   - archs:           [ x86_64 ]
     symbols:         [ __Z21MPSDecrementReadCountP17MPSTemporaryImage, __Z21MPSDecrementReadCountP18MPSTemporaryMatrix, 
@@ -107,10 +107,10 @@ exports:
                        MPSTemporaryVector, MPSVector, MPSVectorDescriptor, MPSVirtualImage ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 89286A32-BC5D-356B-BB0F-53C3DFF7C8D1' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F47B6240-1D10-362D-A972-3F9962DB4C8B' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage'
-current-version: 122.2
+current-version: 122.5.5
 exports:         
   - archs:           [ x86_64 ]
     objc-ivars:      [ MPSBinaryImageKernel._encode, MPSBinaryImageKernel._encodeData, 
@@ -122,17 +122,17 @@ exports:
     objc-classes:    [ MPSBinaryImageKernel, MPSImageAdd, MPSImageAreaMax, MPSImageAreaMin, 
                        MPSImageArithmetic, MPSImageBilinearScale, MPSImageBox, MPSImageBox3D, 
                        MPSImageConversion, MPSImageConvolution, MPSImageCopyToMatrix, 
-                       MPSImageDilate, MPSImageDivide, MPSImageErode, MPSImageEuclideanDistanceTransform, 
-                       MPSImageFindKeypoints, MPSImageGaussianBlur, MPSImageGaussianPyramid, 
-                       MPSImageGuidedFilter, MPSImageHistogram, MPSImageHistogramEqualization, 
-                       MPSImageHistogramSpecification, MPSImageIntegral, MPSImageIntegralOfSquares, 
-                       MPSImageLanczosScale, MPSImageLaplacian, MPSImageLaplacianPyramid, 
-                       MPSImageLaplacianPyramidAdd, MPSImageLaplacianPyramidSubtract, 
-                       MPSImageMedian, MPSImageMultiply, MPSImageNormalizedHistogram, 
-                       MPSImageReduceColumnMax, MPSImageReduceColumnMean, MPSImageReduceColumnMin, 
-                       MPSImageReduceColumnSum, MPSImageReduceRowMax, MPSImageReduceRowMean, 
-                       MPSImageReduceRowMin, MPSImageReduceRowSum, MPSImageSobel, 
-                       MPSImageSpatioTemporalGuidedFilter, MPSImageSpatioTemporalGuidedFilterDescriptor, 
+                       MPSImageDilate, MPSImageDivide, MPSImageEDLines, MPSImageErode, 
+                       MPSImageEuclideanDistanceTransform, MPSImageFindKeypoints, 
+                       MPSImageGaussianBlur, MPSImageGaussianPyramid, MPSImageGuidedFilter, 
+                       MPSImageHistogram, MPSImageHistogramEqualization, MPSImageHistogramSpecification, 
+                       MPSImageIntegral, MPSImageIntegralOfSquares, MPSImageLanczosScale, 
+                       MPSImageLaplacian, MPSImageLaplacianPyramid, MPSImageLaplacianPyramidAdd, 
+                       MPSImageLaplacianPyramidSubtract, MPSImageMedian, MPSImageMultiply, 
+                       MPSImageNormalizedHistogram, MPSImageReduceColumnMax, MPSImageReduceColumnMean, 
+                       MPSImageReduceColumnMin, MPSImageReduceColumnSum, MPSImageReduceRowMax, 
+                       MPSImageReduceRowMean, MPSImageReduceRowMin, MPSImageReduceRowSum, 
+                       MPSImageSobel, MPSImageSpatioTemporalGuidedFilter, MPSImageSpatioTemporalGuidedFilterDescriptor, 
                        MPSImageStatisticsMean, MPSImageStatisticsMeanAndVariance, 
                        MPSImageStatisticsMinAndMax, MPSImageSubtract, MPSImageTent, 
                        MPSImageThresholdBinary, MPSImageThresholdBinaryInverse, MPSImageThresholdToZero, 
@@ -140,10 +140,10 @@ exports:
                        MPSImageTranspose, MPSMatrixCopyToImage, MPSUnaryImageKernel ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 92755010-4B77-31C8-9B95-BD0EF93A9B56' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A5E1B8A8-CD17-368A-AD6E-0AAC0D5CF5F2' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix'
-current-version: 122.2
+current-version: 122.5.5
 exports:         
   - archs:           [ x86_64 ]
     symbols:         [ __Z21MPSDecrementReadCountP18MPSTemporaryMatrix, __Z21MPSDecrementReadCountP18MPSTemporaryVector ]
@@ -158,7 +158,7 @@ exports:
                        MPSMatrixSolveTriangular, MPSMatrixUnaryKernel, MPSMatrixVectorMultiplication ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 20F7156A-86FC-3917-A508-82BE1C31D645' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 75B3CE00-CEF8-33B5-A894-E8D7F7E34D14' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray'
 exports:         
@@ -230,10 +230,10 @@ exports:
                        MPSNDArrayXOR, MPSNDArrayXORPrimaryGradient, MPSNDArrayXORSecondaryGradient ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7EEC7C1E-BCAE-3ADF-8F9D-671608A993C7' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EAAB3354-1F8D-3169-BE25-870BBB2F2B54' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork'
-current-version: 122.2
+current-version: 122.5.5
 exports:         
   - archs:           [ i386, x86_64 ]
     allowable-clients: [ MetalPerformanceShaders ]
@@ -336,10 +336,10 @@ exports:
                        MPSRNNRecurrentImageState, MPSRNNRecurrentMatrixState, MPSRNNSingleGateDescriptor ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B037736B-3F99-345A-867A-20C279567937' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0377814E-468A-3321-AD43-FA4D137F3E87' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector'
-current-version: 122.2
+current-version: 122.5.5
 exports:         
   - archs:           [ i386, x86_64 ]
     allowable-clients: [ MetalPerformanceShaders ]

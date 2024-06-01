@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: CC0CAA58-78AD-3869-BF13-771972E7DC33' ]
+uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: 64B8B457-0A34-3A80-8F91-DD1A983ED794' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Social.framework/Social'
 current-version: 87

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0D760A25-CE1B-370A-A302-8D0435E99427', 'x86_64: 3410C67B-1403-338D-9649-E64F37015183' ]
+uuids:           [ 'i386: 0D760A25-CE1B-370A-A302-8D0435E99427', 'x86_64: 24FA2A54-FE9E-335A-892E-2A0D962B28B1' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CallKit.framework/CallKit'
 exports:         
@@ -31,10 +31,10 @@ exports:
                        CXJoinCallAction, CXLabeledHandle, CXPlayDTMFCallAction, CXProvider, 
                        CXProviderConfiguration, CXProviderExtensionContext, CXProviderExtensionHostContext, 
                        CXProviderExtensionVendorContext, CXPullCallAction, CXRemoveVoicemailAction, 
-                       CXSendMMIOrUSSDCodeAction, CXSenderIdentity, CXSetGroupCallAction, 
-                       CXSetHeldCallAction, CXSetMutedCallAction, CXSetPlayedVoicemailAction, 
-                       CXSetRelayingCallAction, CXSetSendingVideoCallAction, CXSetTTYTypeCallAction, 
-                       CXSetTrashedVoicemailAction, CXSetVideoPresentationSizeCallAction, 
+                       CXSandboxExtendedURL, CXSendMMIOrUSSDCodeAction, CXSenderIdentity, 
+                       CXSetGroupCallAction, CXSetHeldCallAction, CXSetMutedCallAction, 
+                       CXSetPlayedVoicemailAction, CXSetRelayingCallAction, CXSetSendingVideoCallAction, 
+                       CXSetTTYTypeCallAction, CXSetTrashedVoicemailAction, CXSetVideoPresentationSizeCallAction, 
                        CXSetVideoPresentationStateCallAction, CXStartCallAction, 
                        CXTransaction, CXTransactionGroup, CXTransactionManager, CXVoicemail, 
                        CXVoicemailAction, CXVoicemailController, CXVoicemailControllerHost, 

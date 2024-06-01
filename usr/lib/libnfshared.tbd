@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4E61BD2E-3607-302E-94E6-B4F98832C9B8' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6B523AFA-4C7B-3072-A64B-F191C9ED03E3' ]
 platform:        ios
 install-name:    '/usr/lib/libnfshared.dylib'
 exports:         

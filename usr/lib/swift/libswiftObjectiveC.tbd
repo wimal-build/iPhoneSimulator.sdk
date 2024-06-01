@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22', 'x86_64: 7E23648E-0603-343F-968E-6E159E878C82' ]
+uuids:           [ 'i386: 9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22', 'x86_64: D6CA18EE-3517-3DF0-A14F-FCB826BF5CFE' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftObjectiveC.dylib'
 current-version: 0
@@ -34,6 +34,8 @@ exports:
                        '_$s10ObjectiveC6NSZoneVMn', '_$s10ObjectiveC6NSZoneVN', '_$s10ObjectiveC8ObjCBoolV11descriptionSSvg', 
                        '_$s10ObjectiveC8ObjCBoolV11descriptionSSvpMV', '_$s10ObjectiveC8ObjCBoolV12customMirrors0E0Vvg', 
                        '_$s10ObjectiveC8ObjCBoolV12customMirrors0E0VvpMV', '_$s10ObjectiveC8ObjCBoolV14booleanLiteralACSb_tcfC', 
+                       '_$s10ObjectiveC8ObjCBoolV6_valueSbvM', '_$s10ObjectiveC8ObjCBoolV6_valueSbvg', 
+                       '_$s10ObjectiveC8ObjCBoolV6_valueSbvpMV', '_$s10ObjectiveC8ObjCBoolV6_valueSbvs', 
                        '_$s10ObjectiveC8ObjCBoolV9boolValueSbvg', '_$s10ObjectiveC8ObjCBoolV9boolValueSbvpMV', 
                        '_$s10ObjectiveC8ObjCBoolVMa', '_$s10ObjectiveC8ObjCBoolVMn', 
                        '_$s10ObjectiveC8ObjCBoolVN', '_$s10ObjectiveC8ObjCBoolVs17CustomReflectableAAMc', 

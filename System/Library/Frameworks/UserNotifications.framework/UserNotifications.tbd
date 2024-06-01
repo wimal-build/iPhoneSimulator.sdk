@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CE38C631-B119-3BC5-AF68-C1739DA40E68', 'x86_64: 70C3E89C-6EC5-3525-AE91-11E393E8110F' ]
+uuids:           [ 'i386: CE38C631-B119-3BC5-AF68-C1739DA40E68', 'x86_64: 96C9C8C1-31DC-3369-9805-7AA272356ADD' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/UserNotifications.framework/UserNotifications'
 exports:         

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 45CD6CAE-F72C-318D-BB93-A22DE3D762DC' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C7518874-2D53-3889-A7AA-53E15519491F' ]
 platform:        ios
 install-name:    '/usr/lib/libperfcheck.dylib'
 exports:         

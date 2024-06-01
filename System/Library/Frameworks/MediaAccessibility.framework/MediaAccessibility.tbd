@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A3F0262-7FEE-3E05-AF6D-CC633CA44BBC', 'x86_64: 0477BD35-C5E4-3339-BD80-9F20C010932C' ]
+uuids:           [ 'i386: 2A3F0262-7FEE-3E05-AF6D-CC633CA44BBC', 'x86_64: D573BE97-1DB5-3149-A22C-4D33B1CB963D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility'
 current-version: 62
@@ -123,8 +123,9 @@ exports:
                        _MADisplayFilterPrefSuspendNotifications, _MADisplayFilterSetGain, 
                        _MADisplayFilterSetMatrix, _MADisplayFilterSetPostOffsets, 
                        _MADisplayFilterSetReduceWhitePoint, _MAImageCaptioningCopyCaption, 
-                       _MAImageCaptioningCopyMetadataTagPath, _MAImageCaptioningSetCaption, 
-                       _MALegibleOutputDidOutputAttributedStrings, _MALegibleOutputDidOutputAttributedStringsRegisterCallback, 
+                       _MAImageCaptioningCopyCaptionWithSource, _MAImageCaptioningCopyMetadataTagPath, 
+                       _MAImageCaptioningSetCaption, _MALegibleOutputDidOutputAttributedStrings, 
+                       _MALegibleOutputDidOutputAttributedStringsRegisterCallback, 
                        _MAMediaCharacteristicDescribesMusicAndSoundForAccessibility, 
                        _MAMediaCharacteristicDescribesVideoForAccessibility, _MAMediaCharacteristicTranscribesSpokenDialogForAccessibility, 
                        _MATestingCopyProfileIDs, _MAXCaptionAppearanceBehaviorCopyBackgroundColor, 

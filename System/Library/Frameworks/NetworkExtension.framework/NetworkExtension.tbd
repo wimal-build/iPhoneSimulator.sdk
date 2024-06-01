@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: 203EF812-ABBE-3130-AE8C-AA59886B239B' ]
+uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: EABF1802-E827-3D9C-B174-8076A2BB2C37' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension'
 exports:         
@@ -363,7 +363,7 @@ exports:
                        NEExtensionAppProxyProviderHostContext, NEExtensionPacketTunnelProviderContext, 
                        NEExtensionPacketTunnelProviderHostContext, NEExtensionProviderHostContext, 
                        NEExtensionTunnelProviderContext, NEExtensionTunnelProviderHostContext, 
-                       NEFilterAbsoluteVerdict, NEFilterBlockPage, NEFilterControlExtensionProviderContext, 
+                       NEFilterBlockPage, NEFilterControlExtensionProviderContext, 
                        NEFilterControlExtensionProviderHostContext, NEFilterDataExtensionProviderHostContext, 
                        NEFilterExtensionProviderContext, NEFilterExtensionProviderHostContext, 
                        NEIPCHandle, NEIPCWrapper, NEProfilePayloadAOVPN, NEProfilePayloadBaseVPN, 
@@ -493,8 +493,8 @@ exports:
                        _NEVirtualInterfaceUpdateAdHocService, _NEVirtualInterfaceUpdateAdHocServiceReturnChanges, 
                        _NEVirtualInterfaceWriteIPPacket, _NEVirtualInterfaceWriteIPPayload, 
                        _NEVirtualInterfaceWriteMultipleIPPackets, _NEVirtualInterfaceWriteMultipleIPPayloads, 
-                       _NEVirtualInterfaceWriteMultipleIPPayloadsFromArray, _g_ne_read_uuid_cache, 
-                       _g_ne_uuid_cache_hit, _g_provider_host_primary_neagent_instance_id, 
+                       _NEVirtualInterfaceWriteMultipleIPPayloadsFromArray, _g_cfil_flow_uuid_template, 
+                       _g_ne_read_uuid_cache, _g_ne_uuid_cache_hit, _g_provider_host_primary_neagent_instance_id, 
                        _g_provider_host_secondary_neagent_instance_id, _inputNotification2String, 
                        _isa_neclass, _isa_nsarray, _isa_nsdata, _isa_nsdictionary, 
                        _isa_nsnull, _isa_nsnumber, _isa_nsset, _isa_nsstring, _isa_nsurl, 
@@ -603,15 +603,16 @@ exports:
                        _ne_session_should_disable_nexus, _ne_session_type_to_string, 
                        _ne_session_use_ikev2provider, _nehelper_copy_connection, 
                        _nehelper_queue, _nw_utun_protocol_identifier, _trimURL ]
-    objc-classes:    [ NEAOVPN, NEAOVPNException, NEAOVPNNetworkAgent, NEAppInfo, 
-                       NEAppInfoCache, NEAppProxyFlow, NEAppProxyProvider, NEAppProxyProviderContainer, 
-                       NEAppProxyProviderManager, NEAppProxyTCPFlow, NEAppProxyUDPFlow, 
-                       NEAppRule, NEAppVPNNetworkAgent, NEConfiguration, NEConfigurationManager, 
-                       NEContentFilter, NEContentFilterNetworkAgent, NEDNSPacket, 
-                       NEDNSProxy, NEDNSProxyManager, NEDNSProxyProvider, NEDNSProxyProviderProtocol, 
-                       NEDNSProxySettings, NEDNSQuery, NEDNSResourceRecord, NEDNSSettings, 
-                       NEEvaluateConnectionRule, NEExtensionProviderContext, NEFileHandle, 
-                       NEFileHandleMaintainer, NEFilterBrowserFlow, NEFilterControlProvider, 
+    objc-classes:    [ NEAOVPN, NEAOVPNException, NEAOVPNNetworkAgent, NEAccountIdentifiers, 
+                       NEAppInfo, NEAppInfoCache, NEAppProxyFlow, NEAppProxyProvider, 
+                       NEAppProxyProviderContainer, NEAppProxyProviderManager, NEAppProxyTCPFlow, 
+                       NEAppProxyUDPFlow, NEAppRule, NEAppVPNNetworkAgent, NEConfiguration, 
+                       NEConfigurationManager, NEContentFilter, NEContentFilterNetworkAgent, 
+                       NEDNSPacket, NEDNSProxy, NEDNSProxyManager, NEDNSProxyProvider, 
+                       NEDNSProxyProviderProtocol, NEDNSProxySettings, NEDNSQuery, 
+                       NEDNSResourceRecord, NEDNSSettings, NEEvaluateConnectionRule, 
+                       NEExtensionProviderContext, NEFileHandle, NEFileHandleMaintainer, 
+                       NEFilterAbsoluteVerdict, NEFilterBrowserFlow, NEFilterControlProvider, 
                        NEFilterControlVerdict, NEFilterDataExtensionProviderContext, 
                        NEFilterDataProvider, NEFilterDataVerdict, NEFilterFlow, NEFilterManager, 
                        NEFilterNewFlowVerdict, NEFilterPacketContext, NEFilterPacketProvider, 

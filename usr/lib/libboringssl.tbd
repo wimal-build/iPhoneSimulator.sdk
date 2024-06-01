@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2A2C0B46-2DE9-3C56-BE6D-21A7AA0F1469' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8297E70C-2427-3E97-BA76-ED6341E1BC62' ]
 platform:        ios
 install-name:    '/usr/lib/libboringssl.dylib'
 current-version: 0

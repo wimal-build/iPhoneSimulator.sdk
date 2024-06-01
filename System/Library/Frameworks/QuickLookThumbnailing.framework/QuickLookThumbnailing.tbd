@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7BF7B28A-7D80-36B1-AD65-CADFA0FA70A0' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C3EAABDE-B19A-3422-A612-7EDEB2B83654' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing'
 current-version: 0
@@ -15,10 +15,10 @@ exports:
                        QLThumbnailItem._downloadStatus, QLThumbnailItem._fileExtensionHandle, 
                        QLThumbnailItem._fileExtensionToken, QLThumbnailItem._overriddenContentType, 
                        QLThumbnailItem._url, QLThumbnailItem._urlWrapperForExtension, 
-                       QLThumbnailMetadata._baseline, QLThumbnailMetadata._inlinePreviewMode, 
-                       QLThumbnailServiceProxy._connection, QLThumbnailServiceProxy._indexProxy, 
-                       QLThumbnailServiceProxy._proxy, QLThumbnailStoreRetrievalOperation._addition, 
-                       QLThumbnailStoreRetrievalOperation._allowsThumbnailGeneration, 
+                       QLThumbnailItem._urlWrapperForParentDirectory, QLThumbnailMetadata._baseline, 
+                       QLThumbnailMetadata._inlinePreviewMode, QLThumbnailServiceProxy._connection, 
+                       QLThumbnailServiceProxy._indexProxy, QLThumbnailServiceProxy._proxy, 
+                       QLThumbnailStoreRetrievalOperation._addition, QLThumbnailStoreRetrievalOperation._allowsThumbnailGeneration, 
                        QLThumbnailStoreRetrievalOperation._destinationURL, QLThumbnailStoreRetrievalOperation._documentURL, 
                        QLThumbnailStoreRetrievalOperation._error, QLThumbnailStoreRetrievalOperation._executing, 
                        QLThumbnailStoreRetrievalOperation._finished, QLThumbnailStoreRetrievalOperation._generateThumbnailsAtBackgroundPriority, 
@@ -38,13 +38,14 @@ exports:
                        _QLImageCreateForDefaultThumbnailGenerationFromData, _QLShouldUseExtendedRangeForContextWithColorspace, 
                        _QLTCreateCGContext, _QLTCreateCGContextWithSize, _QLTGetDefaultCacheLocation, 
                        _QLTImageClassWithError, _QLTInitLogging, _QLTPrefersExtendedRange, 
-                       _QLThumbnailAdditionMetadataKey, _QLThumbnailErrorDomain, 
-                       _QLThumbnailGenerationRequestRepresentationTypeNone, _QLThumbnailHostContexErrorDomain, 
-                       _QLThumbnailMetadataContentRectKey, _QLThumbnailMetadataFileNamesDictionaryKey, 
-                       _QLThumbnailMetadataFileVersion2Key, _QLThumbnailMetadataFileVersionKey, 
-                       _QLThumbnailMetadataFlavorKey, _QLThumbnailMetadataQLPropertiesKey, 
-                       _QLThumbnailRepresentationTypeToString, _QLThumbnailRequestOperationRepresentationTypeNone, 
-                       _QLThumbnailsServiceErrorDomain, _QL_SANDBOX_READ, __QLComputeValuesForCGContextCreationWithSizeAndScale, 
+                       _QLTSandboxWrapperForParentURLOf, _QLThumbnailAdditionMetadataKey, 
+                       _QLThumbnailErrorDomain, _QLThumbnailGenerationRequestRepresentationTypeNone, 
+                       _QLThumbnailHostContexErrorDomain, _QLThumbnailMetadataContentRectKey, 
+                       _QLThumbnailMetadataFileNamesDictionaryKey, _QLThumbnailMetadataFileVersion2Key, 
+                       _QLThumbnailMetadataFileVersionKey, _QLThumbnailMetadataFlavorKey, 
+                       _QLThumbnailMetadataQLPropertiesKey, _QLThumbnailRepresentationTypeToString, 
+                       _QLThumbnailRequestOperationRepresentationTypeNone, _QLThumbnailsServiceErrorDomain, 
+                       _QL_SANDBOX_READ, __QLComputeValuesForCGContextCreationWithSizeAndScale, 
                        __QLCopyResourcePropertyForKey, __QLSetResourcePropertyForKey, 
                        _allSupportedRequestOperationRepresentationTypes, _allSupportedRequestRepresentationTypes, 
                        _kQLSupportedInController, _kQLThumbnailCacheFileName, _kQLThumbnailPropertyIconFlavorKey, 

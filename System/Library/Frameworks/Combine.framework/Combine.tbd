@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C396CD52-F673-3CA5-9E04-F7753973C9CF' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6A3209D2-108F-3A1F-8F07-739298BFC056' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Combine.framework/Combine'
-current-version: 132.10
+current-version: 134.102
 compatibility-version: 0
 exports:         
   - archs:           [ x86_64 ]
@@ -964,7 +964,6 @@ exports:
                        '_$s7Combine14AnyCancellableC4hash4intoys6HasherVz_tF', '_$s7Combine14AnyCancellableC5store2inyShyACGz_tF', 
                        '_$s7Combine14AnyCancellableC5store2inyxz_tSmRzAC7ElementRtzlF', 
                        '_$s7Combine14AnyCancellableC6cancelyyF', '_$s7Combine14AnyCancellableC9hashValueSivg', 
-                       '_$s7Combine14AnyCancellableC9hashValueSivgTj', '_$s7Combine14AnyCancellableC9hashValueSivgTq', 
                        '_$s7Combine14AnyCancellableC9hashValueSivpMV', '_$s7Combine14AnyCancellableCAA0C0AAMc', 
                        '_$s7Combine14AnyCancellableCAA0C0AAWP', '_$s7Combine14AnyCancellableCMa', 
                        '_$s7Combine14AnyCancellableCMm', '_$s7Combine14AnyCancellableCMn', 

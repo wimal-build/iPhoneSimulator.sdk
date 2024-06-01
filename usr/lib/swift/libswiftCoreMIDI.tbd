@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6C04EFEE-F228-397F-B85E-FB1810C84521' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F8C7246C-B63A-3B7A-BE3B-278C82C83EEB' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCoreMIDI.dylib'
 current-version: 0

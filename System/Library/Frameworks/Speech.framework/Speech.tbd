@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8A74B56B-CF67-36E4-9D27-B6667B4458E9', 'x86_64: BDB5777A-C6F4-3EE9-9CB4-05F1C48E8601' ]
+uuids:           [ 'i386: 8A74B56B-CF67-36E4-9D27-B6667B4458E9', 'x86_64: 63ACC537-8E1E-3BFD-BE2C-542A196EF52D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Speech.framework/Speech'
 exports:         

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: 3969743A-3BF6-35F0-AC5B-0FCBBDBBFC6D' ]
+uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: 4ED72E30-7416-3397-AEA6-04F77D1BB52B' ]
 platform:        ios
 install-name:    '/usr/lib/libmecabra.dylib'
-current-version: 883
+current-version: 883.10
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _MecabraAnalysisContextAddCandidate, _MecabraAnalysisContextAdjust, 

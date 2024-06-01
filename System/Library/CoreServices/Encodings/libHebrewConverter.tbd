@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C97C2731-57DC-375A-961C-32E03DE37070', 'x86_64: E85830B2-3652-3610-A117-6FDACD877534' ]
+uuids:           [ 'i386: C97C2731-57DC-375A-961C-32E03DE37070', 'x86_64: AEBEB4EE-1175-3EA4-AD32-BE8501C3B871' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libHebrewConverter.dylib'
 current-version: 76

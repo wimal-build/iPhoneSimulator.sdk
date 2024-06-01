@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: E6D7F88C-F884-3345-ADE3-F667737BCA56' ]
+uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: 5FE68B2D-13EF-3F0C-A20C-5E0669612BED' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity'
-current-version: 163
+current-version: 166
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _AGPSessionCopyDetailedDescription, _AGPSessionCreate, _AGPSessionEvent, 

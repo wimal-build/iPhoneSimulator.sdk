@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D2554067-ABEC-3DAA-A0A2-C11FD7CB18D8', 'x86_64: C07077DF-1E0C-3E95-94E0-47B2AC26C2C3' ]
+uuids:           [ 'i386: D2554067-ABEC-3DAA-A0A2-C11FD7CB18D8', 'x86_64: CF841BC7-D3CF-328B-9290-E1F76FBD7BE4' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight'
 exports:         

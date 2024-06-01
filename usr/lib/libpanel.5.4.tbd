@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4AB217DC-89EE-378F-A706-E3C7BB3F600C', 'x86_64: FB62D3EC-DF4B-36F7-9845-C2AEBEEB6AF7' ]
+uuids:           [ 'i386: 4AB217DC-89EE-378F-A706-E3C7BB3F600C', 'x86_64: 81C7A4B0-D306-3F78-8FCE-A89E6677CC4E' ]
 platform:        ios
 install-name:    '/usr/lib/libpanel.5.4.dylib'
 current-version: 5.4

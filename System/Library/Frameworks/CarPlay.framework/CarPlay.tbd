@@ -1,22 +1,25 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 71A094B5-AD50-3605-B3E5-0AC9C1666D6F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: BE2E9F9A-6BFC-3F6D-9E09-237CD2CE399E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CarPlay.framework/CarPlay'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _CPColorMeetsContrastRequirement, _CPContrastRatioForColors, 
-                       _CPContrastingColorForColor, _CPGuidanceStyleForColor, _CPLuminanceForColor, 
-                       _CPMaximumListItemImageSize, _CPSStringFromBOOL, _CPSanitizedBackgroundColor, 
-                       _CPTemplateApplicationSceneSessionRoleApplication, _kCPGridTemplateMaximumItems ]
+                       _CPContrastingColorForColor, _CPCurrentProcessHasMapsEntitlement, 
+                       _CPGuidanceStyleForColor, _CPLuminanceForColor, _CPMaximumListItemImageSize, 
+                       _CPSStringFromBOOL, _CPSanitizedBackgroundColor, _CPTemplateApplicationDashboardSceneSessionRoleApplication, 
+                       _CPTemplateApplicationSceneSessionRoleApplication, _kCPGridTemplateMaximumItems, 
+                       _kCPSMapsEntitlementKey ]
     objc-classes:    [ CPActionSheetTemplate, CPAlertAction, CPAlertTemplate, CPBarButton, 
-                       CPEndpointListenerWrapper, CPGridButton, CPGridTemplate, CPImageSet, 
-                       CPInterfaceController, CPListItem, CPListSection, CPListTemplate, 
-                       CPManeuver, CPMapButton, CPMapTemplate, CPNavigationAlert, 
-                       CPNavigationSession, CPRequestEndpointAction, CPRouteChoice, 
-                       CPSearchTemplate, CPSessionConfiguration, CPTemplate, CPTemplateApplicationScene, 
+                       CPDashboardButton, CPDashboardController, CPEndpointListenerWrapper, 
+                       CPGridButton, CPGridTemplate, CPImageSet, CPInterfaceController, 
+                       CPListItem, CPListSection, CPListTemplate, CPManeuver, CPMapButton, 
+                       CPMapTemplate, CPNavigationAlert, CPNavigationSession, CPRequestEndpointAction, 
+                       CPRouteChoice, CPSearchTemplate, CPSessionConfiguration, CPTemplate, 
+                       CPTemplateApplicationDashboardScene, CPTemplateApplicationScene, 
                        CPTravelEstimates, CPTrip, CPTripPreviewTextConfiguration, 
                        CPUIMutableTemplateApplicationSceneSettings, CPUITemplateApplicationSceneSettings, 
-                       CPUITemplateApplicationSceneSpecification, CPVoiceControlState, 
-                       CPVoiceControlTemplate, CPWindow ]
+                       CPUITemplateApplicationSceneSpecification, CPUITemplateDashboardSceneSpecification, 
+                       CPVoiceControlState, CPVoiceControlTemplate, CPWindow ]
 ...

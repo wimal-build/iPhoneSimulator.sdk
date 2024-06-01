@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: C023392A-E398-3BB5-A224-D095DE2E812A' ]
+uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: FF6AB00B-D6E6-3A24-8427-28801419C4CC' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreText.framework/CoreText'
 exports:         

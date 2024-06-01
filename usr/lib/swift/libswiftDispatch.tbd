@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 67FCF36D-CDB4-3516-A246-47E18A05FA51', 'x86_64: 1D813524-1742-3918-881B-E4D1D6899738' ]
+uuids:           [ 'i386: 67FCF36D-CDB4-3516-A246-47E18A05FA51', 'x86_64: 626E87D3-4E98-3B90-BC4C-1F552F6C57D5' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftDispatch.dylib'
 current-version: 0

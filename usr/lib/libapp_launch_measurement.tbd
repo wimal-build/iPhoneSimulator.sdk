@@ -1,12 +1,13 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4E479C40-715E-31D6-BC28-01BAFA80B712' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1F3D6070-E724-3FEA-8DD7-CC6F9AC8F378' ]
 platform:        ios
 install-name:    '/usr/lib/libapp_launch_measurement.dylib'
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _alm_app_did_present, _alm_app_extended_launch_end, _alm_app_will_launch, 
-                       _alm_app_will_launch_with_signpost_id, _alm_clear_responsive_launch_bailed, 
+                       _alm_app_will_launch_with_details, _alm_app_will_launch_with_signpost_id, 
+                       _alm_build_version_string, _alm_clear_responsive_launch_bailed, 
                        _alm_execute_when_main_queue_idle, _alm_execute_when_measurement_complete, 
                        _alm_legacy_app_regular_or_extended_launch_end, _alm_stop_tracking_responsive_launch ]
 ...

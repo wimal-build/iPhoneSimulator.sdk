@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D6AC706D-FA5F-3092-A33F-C35BC9686052', 'x86_64: 989DCC4E-B238-3422-A599-5EF914F568F6' ]
+uuids:           [ 'i386: D6AC706D-FA5F-3092-A33F-C35BC9686052', 'x86_64: 1064287B-B699-30E6-B493-D18B980DBCB5' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Foundation.framework/Foundation'
-current-version: 1673.126
+current-version: 1675.129
 compatibility-version: 300
 exports:         
   - archs:           [ i386 ]
@@ -893,6 +893,7 @@ exports:
                        __NSPersonNameComponentPhoneticGivenNameKeyPath, __NSPersonNameComponentPhoneticMiddleNameKeyPath, 
                        __NSPersonNameComponentPhoneticNicknameKeyPath, __NSPersonNameComponentPhoneticPrefixKeyPath, 
                        __NSPersonNameComponentPhoneticSuffixKeyPath, __NSPrintForDebugger, 
+                       __NSProgressRemoteLocalizedAdditionalDescriptionKey, __NSProgressRemoteLocalizedDescriptionKey, 
                        __NSRaiseError, __NSReadExtendedAttributesFromFileDescriptor, 
                        __NSRequestConcreteObject, __NSRuleNodeAppendDebugDescription, 
                        __NSSetExceptionRaiser, __NSSetLogCStringFunction, __NSSetUsingKeyValueSetter, 

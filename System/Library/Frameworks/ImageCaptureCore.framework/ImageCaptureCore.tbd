@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1AB23389-8660-3B4F-913C-485E8C868695' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 06D9D9B1-EAE3-33EE-B96D-14078FF0026C' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore'
 exports:         
@@ -15,13 +15,15 @@ exports:
                        _ICDeleteErrorFileMissing, _ICDeleteErrorReadOnly, _ICDeleteFailed, 
                        _ICDeleteSuccessful, _ICDeviceCanEjectOrDisconnect, _ICDownloadSidecarFiles, 
                        _ICDownloadsDirectoryURL, _ICEnumerationChronologicalOrder, 
-                       _ICErrorDomain, _ICImageSourceShouldCache, _ICImageSourceThumbnailMaxPixelSize, 
-                       _ICLoggingDomain, _ICLoggingLevel, _ICMetadataBrevity, _ICMetadataBrevityEssential, 
-                       _ICOverwrite, _ICPreferencesDomain, _ICSaveAsFilename, _ICSavedAncillaryFiles, 
+                       _ICEnumerationPrioritizeSpeed, _ICErrorDomain, _ICImageSourceShouldCache, 
+                       _ICImageSourceThumbnailMaxPixelSize, _ICLoggingDomain, _ICLoggingLevel, 
+                       _ICMetadataBrevity, _ICMetadataBrevityEssential, _ICOverwrite, 
+                       _ICPreferencesDomain, _ICSaveAsFilename, _ICSavedAncillaryFiles, 
                        _ICSavedFilename, _ICStatusNotificationKey, _ICTransportTypeExFAT, 
                        _ICTransportTypeMassStorage, _ICTransportTypeTCPIP, _ICTransportTypeUSB, 
-                       ___ICLogDateString, ___ICLogTypeEnabled, ___ICOSLogCreate, 
-                       ___ICReadPrefs, __gICOSLog ]
+                       ___ICAddDecodedErrorToDict, ___ICLogDateString, ___ICLogTypeEnabled, 
+                       ___ICLongValueToErrorString, ___ICOSLogCreate, ___ICReadPrefs, 
+                       ___ICValueToErrorString, __gICOSLog ]
     objc-classes:    [ ICAccessManager, ICCameraDevice, ICCameraFile, ICCameraFolder, 
                        ICCameraItem, ICDevice, ICDeviceBrowser ]
 ...

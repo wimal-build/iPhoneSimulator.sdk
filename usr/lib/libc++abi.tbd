@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F94927EA-7D30-39F5-945B-9E36B189B546', 'x86_64: 1705C8CD-CCDD-3151-8B58-A95DB055BCE9' ]
+uuids:           [ 'i386: F94927EA-7D30-39F5-945B-9E36B189B546', 'x86_64: FF7F87CD-2EB0-3D68-AF21-F6FECE8C60A1' ]
 platform:        ios
 install-name:    '/usr/lib/libc++abi.dylib'
-current-version: 800.6
+current-version: 902
 exports:         
   - archs:           [ i386 ]
     symbols:         [ __ZNKSt16bad_array_length4whatEv, __ZNSt16bad_array_lengthC1Ev, 
@@ -11,10 +11,7 @@ exports:
                        __ZNSt16bad_array_lengthD1Ev, __ZNSt16bad_array_lengthD2Ev, 
                        __ZTISt16bad_array_length, __ZTSSt16bad_array_length, __ZTVSt16bad_array_length ]
   - archs:           [ x86_64 ]
-    symbols:         [ __ZN10__cxxabiv119__getExceptionClassEPK17_Unwind_Exception, 
-                       __ZN10__cxxabiv119__setExceptionClassEP17_Unwind_Exceptiony, 
-                       __ZN10__cxxabiv121__isOurExceptionClassEPK17_Unwind_Exception, 
-                       __ZTIDu, __ZTIPDu, __ZTIPKDu, __ZTSDu, __ZTSPDu, __ZTSPKDu ]
+    symbols:         [ __ZTIDu, __ZTIPDu, __ZTIPKDu, __ZTSDu, __ZTSPDu, __ZTSPKDu ]
     weak-def-symbols: [ __ZdaPvSt11align_val_t, __ZdaPvSt11align_val_tRKSt9nothrow_t, 
                         __ZdaPvm, __ZdaPvmSt11align_val_t, __ZdlPvSt11align_val_t, 
                         __ZdlPvSt11align_val_tRKSt9nothrow_t, __ZdlPvm, __ZdlPvmSt11align_val_t, 

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 72975735-ED0B-3F5F-9C76-BAC9732F5BDA', 'x86_64: 0689B7E3-E535-3D38-BF04-92400FADE66C' ]
+uuids:           [ 'i386: 72975735-ED0B-3F5F-9C76-BAC9732F5BDA', 'x86_64: E89B2B70-8DA4-3E67-BCFC-2C50FF570DBC' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory'
 exports:         

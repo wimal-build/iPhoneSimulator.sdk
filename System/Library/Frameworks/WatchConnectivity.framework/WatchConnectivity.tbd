@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 64313CFD-1AD3-3648-B028-C9507A90DAC4', 'x86_64: 22297757-6B8F-3865-95CB-9E2DD233F707' ]
+uuids:           [ 'i386: 64313CFD-1AD3-3648-B028-C9507A90DAC4', 'x86_64: 6249F397-AE51-3648-B677-0343A80D7E97' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/WatchConnectivity.framework/WatchConnectivity'
 current-version: 187.2

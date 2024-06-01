@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F238A56E-3AA0-3897-9B0E-73E7A1642958', 'x86_64: F234CB1D-BEE8-3E5D-A92C-B8F676D466CF' ]
+uuids:           [ 'i386: F238A56E-3AA0-3897-9B0E-73E7A1642958', 'x86_64: 3943EF20-0041-3EA3-8CF6-08D426429DB8' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libCyrillicConverter.dylib'
 current-version: 76

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 5A362D5C-CB82-393E-9A22-3FB5D1CC086C', 'x86_64: 16DB3DD2-BD3A-3C18-B503-72713C95C8D1' ]
+uuids:           [ 'i386: 5A362D5C-CB82-393E-9A22-3FB5D1CC086C', 'x86_64: 62D11176-4721-3CBE-B095-A76B1D91E972' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libSimplifiedChineseConverter.dylib'
 current-version: 76

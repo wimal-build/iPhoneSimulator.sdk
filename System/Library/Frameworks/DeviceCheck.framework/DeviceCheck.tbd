@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7EE75317-811D-3AF2-8F8B-FCEF77AB73DE' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A36D970B-45D0-38CF-8FED-F87D0717C5DE' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck'
 exports:         

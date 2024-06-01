@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: 1287EDE0-8D30-3231-B997-FD73F082CFF2' ]
+uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: B8BCEFF8-DA2A-36B1-90C6-5175411ED9BF' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GameKit.framework/GameKit'
-current-version: 665.11
+current-version: 665.26
 exports:         
   - archs:           [ i386 ]
     re-exports:      [ '/System/Library/PrivateFrameworks/GameCenter.framework/GameCenter' ]
@@ -33,7 +33,7 @@ exports:
                        _kGameCenterGameCenterVersionString ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: D520D7B7-5863-39D1-973F-371E9F5CC314' ]
+uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: 9A675A2B-19C9-3AB4-85C3-2DA74702C1E6' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:         
@@ -396,7 +396,7 @@ exports:
                        _GKStateMachine._validTransitions ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: CF3E9381-26BD-3CEB-9E39-F8645075D214' ]
+uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: 5EFB8033-8EE0-3C4E-A9AE-7543C0BEB12D' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 exports:         
@@ -592,7 +592,7 @@ exports:
                        GKUITheme._resourceCache ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: DF8DA1CB-CB98-3460-89E2-059094B8B135' ]
+uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: C324C143-3CBA-3191-8E35-45842E97DB93' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:         

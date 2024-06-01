@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4B1258D6-63B4-303C-9979-B76DD332DA43', 'x86_64: 6AAE40CF-1207-37D0-9F6D-17716B85CF58' ]
+uuids:           [ 'i386: 4B1258D6-63B4-303C-9979-B76DD332DA43', 'x86_64: A59857B6-8D72-35CC-8EDE-D61CA254E151' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftContacts.dylib'
 current-version: 0

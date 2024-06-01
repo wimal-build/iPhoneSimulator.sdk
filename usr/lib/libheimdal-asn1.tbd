@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6F271AE7-E916-379B-B746-84C44BB12724', 'x86_64: B599F974-B49A-3A75-A094-999AF1083661' ]
+uuids:           [ 'i386: 6F271AE7-E916-379B-B746-84C44BB12724', 'x86_64: 9FFE3FEC-730B-3C9C-B68F-9F2EED2EA584' ]
 platform:        ios
 install-name:    '/usr/lib/libheimdal-asn1.dylib'
 exports:         

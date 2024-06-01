@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 524846F0-0624-3EF9-8933-ACA4D0029805' ]
+uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 5E8F1477-05BD-3C38-B5DD-2763730A128C' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Contacts.framework/Contacts'
 current-version: 0
@@ -77,12 +77,12 @@ exports:
                        _CNContainerIdentifierKey, _CNContainerLastSyncDateKey, _CNContainerMeIdentifierKey, 
                        _CNContainerNameKey, _CNContainerPermissionsKey, _CNContainerRestrictionsKey, 
                        _CNContainerSnapshotKey, _CNContainerTypeKey, _CNDataMapperServiceName, 
-                       _CNDowntimeWhitelistDidChangeNotification, _CNErrorDomain, 
-                       _CNErrorUserInfoAffectedRecordIdentifiersKey, _CNErrorUserInfoAffectedRecordsKey, 
-                       _CNErrorUserInfoKeyPathsKey, _CNErrorUserInfoValidationErrorsKey, 
-                       _CNFavoritesChangedExternallyNotification, _CNFavoritesChangedNotification, 
-                       _CNFavoritesEntryIdentityChangedNotification, _CNGroupCreationDateKey, 
-                       _CNGroupExternalIdentifierKey, _CNGroupExternalModificationTagKey, 
+                       _CNDowntimeWhitelistAllowed, _CNDowntimeWhitelistDidChangeNotification, 
+                       _CNDowntimeWhitelistDisallowed, _CNErrorDomain, _CNErrorUserInfoAffectedRecordIdentifiersKey, 
+                       _CNErrorUserInfoAffectedRecordsKey, _CNErrorUserInfoKeyPathsKey, 
+                       _CNErrorUserInfoValidationErrorsKey, _CNFavoritesChangedExternallyNotification, 
+                       _CNFavoritesChangedNotification, _CNFavoritesEntryIdentityChangedNotification, 
+                       _CNGroupCreationDateKey, _CNGroupExternalIdentifierKey, _CNGroupExternalModificationTagKey, 
                        _CNGroupExternalRepresentationKey, _CNGroupExternalUUIDKey, 
                        _CNGroupIOSLegacyIdentifierKey, _CNGroupIdentifierKey, _CNGroupModificationDateKey, 
                        _CNGroupNameKey, _CNGroupSnapshotKey, _CNHomeLabel, _CNHomePageLabel, 

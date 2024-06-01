@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 0ED7BA34-8915-34A2-81A3-0E63393F3B48' ]
+uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 6061C685-75CB-3D59-AA03-307A76EED217' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/EventKitUI.framework/EventKitUI'
 exports:         
@@ -52,9 +52,10 @@ exports:
                        EKCalendarItemEditorTableView, EKCalendarItemRecurrenceEndCell, 
                        EKCalendarPublishingEditItem, EKCalendarShareesEditItem, EKCalendarTitleEditItem, 
                        EKDayOccurrenceContentView, EKDayTimeContentView, EKDayViewContentGeometryDelegate, 
-                       EKDayViewWithGutters, EKDeclinedCalendarItemInfo, EKEventAttachmentCellController, 
-                       EKEventAttendeeDetailGroup, EKEventAutocompleteResultsEditItem, 
-                       EKEventDeleteButtonEditItem, EKEventDetailGroup, EKEventDetailLocationDisambiguationContentViewController, 
+                       EKDayViewItemPath, EKDayViewWithGutters, EKDeclinedCalendarItemInfo, 
+                       EKEventAttachmentCellController, EKEventAttendeeDetailGroup, 
+                       EKEventAutocompleteResultsEditItem, EKEventDeleteButtonEditItem, 
+                       EKEventDetailGroup, EKEventDetailLocationDisambiguationContentViewController, 
                        EKEventDetailLocationDisambiguationViewController, EKEventDetailPredictedLocationCell, 
                        EKEventDetailRecurrenceCell, EKEventDetailTitleCell, EKEventDetailsHighlightControl, 
                        EKEventEditItem, EKEventEditableDetailGroup, EKEventEstimatedTravelTimeResultCell, 
@@ -314,17 +315,18 @@ exports:
                        EKCalendarInfo, EKCalendarShareePicker, EKCurrentTimeMarkerView, 
                        EKDayOccurrenceContentPayload, EKDayOccurrencePayloadProvider, 
                        EKDayOccurrenceResizeHandleView, EKDayOccurrenceState, EKDayOccurrenceStringGenerator, 
-                       EKDayOccurrenceTravelTimeView, EKDayOccurrenceView, EKDayOccurrenceViewIterator, 
-                       EKDayPreviewController, EKDayTimeView, EKDayView, EKDayViewContent, 
-                       EKDayViewContentItem, EKDayViewController, EKDayViewItemPath, 
-                       EKEventDetailCell, EKEventEditViewController, EKEventEditor, 
-                       EKEventGestureController, EKEventViewController, EKExpandingTextView, 
-                       EKGroupInfo, EKICSPreviewController, EKIdentityViewController, 
-                       EKLazyDrawingLayer, EKLegacyUIListHeaderCell, EKLegacyUIListHeaderCellContentView, 
-                       EKParticipantForDisplay, EKShareePickerViewController, EKShareeViewController, 
-                       EKStrikethroughLabel, EKStringFactory, EKTextViewWithLabelTextMetrics, 
-                       EKUIAccountErrorDisplayer, EKUIAccountErrorsPETTracker, EKUIAccountRefresher, 
-                       EKUIAlarm, EKUIAutocompletePendingSearch, EKUIAutocompleteSearchController, 
+                       EKDayOccurrenceTravelTimeView, EKDayOccurrenceView, EKDayOccurrenceViewFontUtils, 
+                       EKDayOccurrenceViewIterator, EKDayPreviewController, EKDayTimeView, 
+                       EKDayView, EKDayViewContent, EKDayViewContentItem, EKDayViewController, 
+                       EKEventCreationGestureController, EKEventDetailCell, EKEventEditViewController, 
+                       EKEventEditor, EKEventGestureController, EKEventViewController, 
+                       EKExpandingTextView, EKGroupInfo, EKICSPreviewController, 
+                       EKIdentityViewController, EKLazyDrawingLayer, EKLegacyUIListHeaderCell, 
+                       EKLegacyUIListHeaderCellContentView, EKParticipantForDisplay, 
+                       EKShareePickerViewController, EKShareeViewController, EKStrikethroughLabel, 
+                       EKStringFactory, EKTextViewWithLabelTextMetrics, EKUIAccountErrorDisplayer, 
+                       EKUIAccountErrorsPETTracker, EKUIAccountRefresher, EKUIAlarm, 
+                       EKUIAutocompletePendingSearch, EKUIAutocompleteSearchController, 
                        EKUIAutocompleteSearchResult, EKUIBlurryView, EKUICellContentView, 
                        EKUICellContentViewWithPrimaryAndSecondaryFonts, EKUICenteredTextTableViewCell, 
                        EKUIConstrainedFontUtilities, EKUIConstrainedFontsTableViewCell, 
