@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8C4EA2AB-65F8-3B2C-A4DA-A0C5A4407AE1', 'x86_64: 334A07D1-1DC8-3097-9603-DE9EC0D0B46D' ]
+uuids:           [ 'i386: 8C4EA2AB-65F8-3B2C-A4DA-A0C5A4407AE1', 'x86_64: 37A6A56C-31F4-39A2-9055-776A3687AB8F' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit'
 current-version: 275
@@ -713,9 +713,9 @@ exports:
                        _kOSKextDiagnosticFileAccessKey, _kOSKextDiagnosticFileNotFoundKey, 
                        _kOSKextDiagnosticIdentifierOrVersionTooLongKey, _kOSKextDiagnosticIneligibleInSafeBoot, 
                        _kOSKextDiagnosticInfoKeyIneligibleForDriverKit, _kOSKextDiagnosticKernelComponentNotInterfaceKey, 
-                       _kOSKextDiagnosticKextIneligibleForDriverKit, _kOSKextDiagnosticMissingPropertyKey, 
-                       _kOSKextDiagnosticNoExplicitKernelDependencyKey, _kOSKextDiagnosticNoFileKey, 
-                       _kOSKextDiagnosticNonAppleKextDeclaresPrivateKPIDependencyKey, 
+                       _kOSKextDiagnosticKextIneligibleForDriverKit, _kOSKextDiagnosticMissingDesignatedKernelClass, 
+                       _kOSKextDiagnosticMissingPropertyKey, _kOSKextDiagnosticNoExplicitKernelDependencyKey, 
+                       _kOSKextDiagnosticNoFileKey, _kOSKextDiagnosticNonAppleKextDeclaresPrivateKPIDependencyKey, 
                        _kOSKextDiagnosticNonuniqueIOResourcesMatchKey, _kOSKextDiagnosticNotABundleKey, 
                        _kOSKextDiagnosticNotSignedKey, _kOSKextDiagnosticOSBundleRequiredValueIneligibleForDriverKit, 
                        _kOSKextDiagnosticOwnerPermissionKey, _kOSKextDiagnosticPersonalityHasDifferentBundleIdentifierKey, 

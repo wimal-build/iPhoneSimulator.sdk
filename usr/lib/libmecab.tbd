@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EA6EA6DB-C7BB-30E6-9F87-0CBA4BA6A68F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9BCEC256-08AA-32B9-ADD8-9D2EA5ADD72A' ]
 platform:        ios
 install-name:    '/usr/lib/libmecab.dylib'
-current-version: 875.1
+current-version: 878
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _mecab_cost_train, _mecab_destroy, _mecab_dict_gen, _mecab_dict_index, 

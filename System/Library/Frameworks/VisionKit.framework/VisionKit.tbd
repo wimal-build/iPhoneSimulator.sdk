@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 013EA5F9-1904-316E-A923-323FC41BC6EF' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9792FFB1-B290-38BB-B357-76573C170765' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/VisionKit.framework/VisionKit'
 exports:         

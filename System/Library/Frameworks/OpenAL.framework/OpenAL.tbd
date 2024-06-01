@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: 46A33C15-02E1-3EF7-9038-99424B8D5844' ]
+uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: D680F36C-D516-390F-A6A1-AD6FFD5DBE9B' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/OpenAL.framework/OpenAL'
 exports:         

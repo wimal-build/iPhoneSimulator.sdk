@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: B26299D5-CE71-3ABA-B15D-D0E17F6AA823' ]
+uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 159F017E-2A1F-3070-854F-0AA3388BAA47' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Photos.framework/Photos'
-current-version: 3502.24.190
+current-version: 3602.23.180
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _PHAdjustmentDataOpaqueFormatIdentifier, _PHAssertPredicateContainsNoManagedObjects, 
@@ -196,23 +196,23 @@ exports:
                        PHFaceprint, PHFetchOptions, PHFetchResult, PHFetchResultChangeDetails, 
                        PHImageCache, PHImageDecoder, PHImageDecoderAsyncDecodeRequestHandle, 
                        PHImageDisplaySpec, PHImageIODecoder, PHImageManager, PHImageManagerRequestTracer, 
-                       PHImageRequestBehaviorSpec, PHImageRequestOptions, PHImageResourceChooser, 
-                       PHImportAsset, PHImportAssetDataRequest, PHImportAssetDataResponse, 
-                       PHImportAssetFilePresenter, PHImportController, PHImportDeviceAsset, 
-                       PHImportDuplicateChecker, PHImportDuplicateInfo, PHImportException, 
-                       PHImportExceptionRecorder, PHImportOptions, PHImportRecord, 
-                       PHImportResults, PHImportSession, PHImportSource, PHImportTimer, 
-                       PHImportTimerCollection, PHImportUrlSource, PHImporter, PHKeyword, 
-                       PHKeywordChangeRequest, PHLibraryChangeRequest, PHLivePhoto, 
-                       PHLivePhotoEditingContext, PHLivePhotoExportSession, PHLivePhotoExportSessionOptions, 
-                       PHLivePhotoRequestOptions, PHLocallyAvailableResourceBag, 
-                       PHManualFetchResult, PHMemory, PHMemoryChangeRequest, PHMemoryFeature, 
-                       PHMemoryGenerationOptions, PHMoment, PHMomentChangeRequest, 
-                       PHMomentList, PHMomentShare, PHMomentShareChangeRequest, PHMomentShareParticipant, 
-                       PHMomentShareParticipantChangeRequest, PHMomentSharePreview, 
-                       PHObject, PHObjectChangeDetails, PHObjectDeleteRequest, PHObjectPLAdapter, 
-                       PHObjectPlaceholder, PHObjectReference, PHPerformChangesRequest, 
-                       PHPersistentChangeFetchRequest, PHPersistentChangeFetchResult, 
+                       PHImageRequestBehaviorSpec, PHImageRequestContext, PHImageRequestOptions, 
+                       PHImageResourceChooser, PHImportAsset, PHImportAssetDataRequest, 
+                       PHImportAssetDataResponse, PHImportAssetFilePresenter, PHImportController, 
+                       PHImportDeviceAsset, PHImportDuplicateChecker, PHImportDuplicateInfo, 
+                       PHImportException, PHImportExceptionRecorder, PHImportOptions, 
+                       PHImportRecord, PHImportResults, PHImportSession, PHImportSource, 
+                       PHImportTimer, PHImportTimerCollection, PHImportUrlSource, 
+                       PHImporter, PHKeyword, PHKeywordChangeRequest, PHLibraryChangeRequest, 
+                       PHLivePhoto, PHLivePhotoEditingContext, PHLivePhotoExportSession, 
+                       PHLivePhotoExportSessionOptions, PHLivePhotoRequestOptions, 
+                       PHLocallyAvailableResourceBag, PHManualFetchResult, PHMediaRequestContext, 
+                       PHMemory, PHMemoryChangeRequest, PHMemoryFeature, PHMemoryGenerationOptions, 
+                       PHMoment, PHMomentChangeRequest, PHMomentList, PHMomentShare, 
+                       PHMomentShareChangeRequest, PHMomentShareParticipant, PHMomentShareParticipantChangeRequest, 
+                       PHMomentSharePreview, PHObject, PHObjectChangeDetails, PHObjectDeleteRequest, 
+                       PHObjectPLAdapter, PHObjectPlaceholder, PHObjectReference, 
+                       PHPerformChangesRequest, PHPersistentChangeFetchRequest, PHPersistentChangeFetchResult, 
                        PHPersistentChangeToken, PHPerson, PHPersonChangeRequest, 
                        PHPersonDeleteRequest, PHPersonPLAdapter, PHPersonReference, 
                        PHPersonResetManager, PHPersonSuggestion, PHPhotoLibrary, 

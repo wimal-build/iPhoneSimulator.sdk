@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1B902B83-989C-3FA0-A587-476FCD5F3AF2', 'x86_64: BAA774F4-90B9-3248-9C1C-59AB06303A20' ]
+uuids:           [ 'i386: 1B902B83-989C-3FA0-A587-476FCD5F3AF2', 'x86_64: 2ACD2E3C-7316-341D-91F0-AD0214AC0242' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreMedia.framework/CoreMedia'
 exports:         
@@ -2098,16 +2098,16 @@ exports:
                        _kFigDepthPrivateMetadataAttachmentKey_PortraitScoreIsHigh, 
                        _kFigDispatchQueueCFDictionaryValueCallbacks, _kFigEndPointPlaybackSessionKey_ShouldProvideFPSSecureStop, 
                        _kFigEndpointActivateOptionKey_ApplicationDisplayID, _kFigEndpointActivateOptionKey_AvoidAuthPrompt, 
-                       _kFigEndpointActivateOptionKey_ClientPID, _kFigEndpointActivateOptionKey_ForAdminControl, 
-                       _kFigEndpointActivateOptionKey_IsAddOperation, _kFigEndpointActivateOptionKey_IsPerAppDisplay, 
-                       _kFigEndpointActivateOptionKey_PrimaryUsage, _kFigEndpointActivateOptionKey_RemoteScreenSender, 
-                       _kFigEndpointActivateOptionKey_RoutingContextUUID, _kFigEndpointActivateOptionKey_SilentConnection, 
-                       _kFigEndpointActivateOptionKey_SilentSender, _kFigEndpointAggregateKey_SubEndpoint, 
-                       _kFigEndpointAggregateKey_SubEndpointActivationSeed, _kFigEndpointAggregateNotificationKey_SubEndpointID, 
-                       _kFigEndpointAggregateNotification_EndpointAdded, _kFigEndpointAggregateNotification_EndpointRemoved, 
-                       _kFigEndpointAggregateProperty_EnableLocalPlayback, _kFigEndpointAggregateProperty_LocalPlaybackIsEnabled, 
-                       _kFigEndpointAggregateProperty_LocalPlaybackVolume, _kFigEndpointAudioSinkProperty_BufferDurationMS, 
-                       _kFigEndpointAudioSinkProperty_SupportsHighAccuracyTimestamps, 
+                       _kFigEndpointActivateOptionKey_ClientPID, _kFigEndpointActivateOptionKey_EnableSplitter, 
+                       _kFigEndpointActivateOptionKey_ForAdminControl, _kFigEndpointActivateOptionKey_IsAddOperation, 
+                       _kFigEndpointActivateOptionKey_IsPerAppDisplay, _kFigEndpointActivateOptionKey_PrimaryUsage, 
+                       _kFigEndpointActivateOptionKey_RemoteScreenSender, _kFigEndpointActivateOptionKey_RoutingContextUUID, 
+                       _kFigEndpointActivateOptionKey_SilentConnection, _kFigEndpointActivateOptionKey_SilentSender, 
+                       _kFigEndpointAggregateKey_SubEndpoint, _kFigEndpointAggregateKey_SubEndpointActivationSeed, 
+                       _kFigEndpointAggregateNotificationKey_SubEndpointID, _kFigEndpointAggregateNotification_EndpointAdded, 
+                       _kFigEndpointAggregateNotification_EndpointRemoved, _kFigEndpointAggregateProperty_EnableLocalPlayback, 
+                       _kFigEndpointAggregateProperty_LocalPlaybackIsEnabled, _kFigEndpointAggregateProperty_LocalPlaybackVolume, 
+                       _kFigEndpointAudioSinkProperty_BufferDurationMS, _kFigEndpointAudioSinkProperty_SupportsHighAccuracyTimestamps, 
                        _kFigEndpointAuthenticationType_MFiSAP, _kFigEndpointAuthenticationType_None, 
                        _kFigEndpointAuthorizationType_None, _kFigEndpointAuthorizationType_PIN, 
                        _kFigEndpointAuthorizationType_Password, _kFigEndpointBatteryLevel_Case, 
@@ -2461,6 +2461,7 @@ exports:
                        _kFigMotionAttachmentsSampleBufferProcessorMetadata_VideoStabilizationDigitalZoomFactor, 
                        _kFigMotionAttachmentsSampleBufferProcessorTuningParameters_ISPMotionDataGroupDelay, 
                        _kFigNetworkHistoryCreateOption_BytesReceivedMaxResolution, 
+                       _kFigNetworkHistoryCreateOption_ContributesToGlobalHistory, 
                        _kFigNetworkHistoryCreateOption_MaxWindowSize, _kFigPKDCPECryptorKeyRequestDataKey_AirPlayPlaybackSessionID, 
                        _kFigPKDCPECryptorKeyRequestDataKey_ApplicationCertificate, 
                        _kFigPKDCPECryptorKeyRequestDataKey_AssetIdentifier, _kFigPKDCPECryptorKeyRequestDataKey_CustomURLRequestID, 

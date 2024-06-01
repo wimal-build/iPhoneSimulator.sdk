@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: A299F60E-B372-3511-AD42-8DAA029C49C1' ]
+uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: 46549487-4A20-3A7F-98BF-75C518168E05' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuartzCore.framework/QuartzCore'
 current-version: 1.11
@@ -22,22 +22,23 @@ exports:
                        _CABackingStoreCollectBlocking, _CABackingStoreCopyCGImage, 
                        _CABackingStoreCopyTintColor, _CABackingStoreCreate, _CABackingStoreEndUpdate, 
                        _CABackingStoreGetTypeID, _CABackingStoreGetUpdateRegion, 
-                       _CABackingStoreInvalidate, _CABackingStoreIsPurged, _CABackingStoreIsVolatile, 
-                       _CABackingStoreRetainFrontTexture, _CABackingStoreSetColorSpace, 
-                       _CABackingStoreSetVolatile, _CABackingStoreSetVolatileOptions, 
-                       _CABackingStoreUpdate, _CAClearDebugOptions, _CACodingImageFormat, 
-                       _CAColorMatrixConcat, _CAColorMatrixIdentity, _CAColorMatrixMakeBrightness, 
-                       _CAColorMatrixMakeColorSourceOver, _CAColorMatrixMakeContrast, 
-                       _CAColorMatrixMakeMultiplyColor, _CAColorMatrixMakeSaturation, 
-                       _CACurrentMediaTime, _CADebugLayerRelease, _CADecrementDebugValue, 
-                       _CAEncodeBackingStores, _CAEncodeLayerTree, _CAEncodeLayerTreeToFile, 
-                       _CAEncodeLayerTreeToFileWithInfo, _CAEncodeLayerTreeWithInfo, 
-                       _CAGetCurrentImageBytes, _CAGetDebugFlags, _CAGetDebugMessage, 
-                       _CAGetDebugMessageColor, _CAGetDebugOption, _CAGetDebugValue, 
-                       _CAGetDebugValueFloat, _CAGetFrameCounter, _CAGetLUTFile, 
-                       _CAGetMaximumImageBytes, _CAGetTransactionCounter, _CAIOSurfaceContextVTable, 
-                       _CAIOSurfaceCreateDefault, _CAImageProviderCreate, _CAImageProviderDraw, 
-                       _CAImageProviderGetFillColor, _CAImageProviderGetFlags, _CAImageProviderGetImageHeight, 
+                       _CABackingStoreHasVerticalPadding, _CABackingStoreInvalidate, 
+                       _CABackingStoreIsPurged, _CABackingStoreIsVolatile, _CABackingStoreRetainFrontTexture, 
+                       _CABackingStoreSetColorSpace, _CABackingStoreSetVolatile, 
+                       _CABackingStoreSetVolatileOptions, _CABackingStoreUpdate, 
+                       _CAClearDebugOptions, _CACodingImageFormat, _CAColorMatrixConcat, 
+                       _CAColorMatrixIdentity, _CAColorMatrixMakeBrightness, _CAColorMatrixMakeColorSourceOver, 
+                       _CAColorMatrixMakeContrast, _CAColorMatrixMakeMultiplyColor, 
+                       _CAColorMatrixMakeSaturation, _CACurrentMediaTime, _CADebugLayerRelease, 
+                       _CADecrementDebugValue, _CAEncodeBackingStores, _CAEncodeLayerTree, 
+                       _CAEncodeLayerTreeToFile, _CAEncodeLayerTreeToFileWithInfo, 
+                       _CAEncodeLayerTreeWithInfo, _CAGetCurrentImageBytes, _CAGetDebugFlags, 
+                       _CAGetDebugMessage, _CAGetDebugMessageColor, _CAGetDebugOption, 
+                       _CAGetDebugValue, _CAGetDebugValueFloat, _CAGetFrameCounter, 
+                       _CAGetLUTFile, _CAGetMaximumImageBytes, _CAGetTransactionCounter, 
+                       _CAIOSurfaceContextVTable, _CAIOSurfaceCreateDefault, _CAIOSurfaceWriteToFile, 
+                       _CAImageProviderCreate, _CAImageProviderDraw, _CAImageProviderGetFillColor, 
+                       _CAImageProviderGetFlags, _CAImageProviderGetImageHeight, 
                        _CAImageProviderGetImageWidth, _CAImageProviderGetLODBias, 
                        _CAImageProviderGetLODCount, _CAImageProviderGetLODHeight, 
                        _CAImageProviderGetLODScale, _CAImageProviderGetLODWidth, 

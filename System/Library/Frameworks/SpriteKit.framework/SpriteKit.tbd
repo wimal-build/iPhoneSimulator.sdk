@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D4B395B-77BC-3FF0-AC6D-828A619404FE', 'x86_64: CAE57D94-8521-3C36-B2A6-C153C44345EF' ]
+uuids:           [ 'i386: 8D4B395B-77BC-3FF0-AC6D-828A619404FE', 'x86_64: D734EC35-4061-3361-BC51-6C39E4F64E41' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SpriteKit.framework/SpriteKit'
-current-version: 25.30
+current-version: 25.32
 exports:         
   - archs:           [ i386 ]
     objc-classes:    [ SKTwoSidedNode ]

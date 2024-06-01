@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F2F63001-9170-37A5-9943-EAFBB9F84426', 'x86_64: 71FB7F38-B0FE-3F8F-871B-70A6E6438BB0' ]
+uuids:           [ 'i386: F2F63001-9170-37A5-9943-EAFBB9F84426', 'x86_64: 29E6721D-2D82-3366-BB2B-1AA0C8FD006A' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Metal.framework/Metal'
-current-version: 211.47
+current-version: 211.50
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _MTLAddDeviceClass, _MTLCopyAllDevices, _MTLUseInterpose, 

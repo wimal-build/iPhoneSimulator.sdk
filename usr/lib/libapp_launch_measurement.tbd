@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 146E2696-0644-3D40-B56F-581B00BA9D83' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 37984766-9C0B-3CDC-9DC6-5F5758F40B36' ]
 platform:        ios
 install-name:    '/usr/lib/libapp_launch_measurement.dylib'
 exports:         

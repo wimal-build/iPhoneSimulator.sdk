@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: FC5830C2-BAA8-38B4-8C2E-66153CB11D17' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 87C261EC-C8C1-34E8-9078-CB26E0ED130B' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreML.framework/CoreML'
 exports:         

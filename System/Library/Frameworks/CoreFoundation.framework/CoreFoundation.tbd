@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: 35102762-15FC-36B0-8CC6-E7AD3AE7993D' ]
+uuids:           [ 'i386: 3C857498-91CB-35AE-8F82-198416A634A0', 'x86_64: C6873D0F-288A-35AD-96B0-399933F6FEBB' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation'
-current-version: 1665.15
+current-version: 1670.10
 compatibility-version: 150
 exports:         
   - archs:           [ i386 ]
@@ -697,8 +697,8 @@ exports:
                        __CFPreferencesCopyPathForManagedDomain, __CFPreferencesCopyValueNoCache, 
                        __CFPreferencesCopyValueWithContainer, __CFPreferencesFlushCachesForIdentifier, 
                        __CFPreferencesGetAppBooleanValueWithContainer, __CFPreferencesGetAppIntegerValueWithContainer, 
-                       __CFPreferencesHasAppCloudValue, __CFPreferencesHasAppValue, 
-                       __CFPreferencesIsManaged, __CFPreferencesManagementStatusChangedForDomains, 
+                       __CFPreferencesGetBooleanValueWithValue, __CFPreferencesHasAppCloudValue, 
+                       __CFPreferencesHasAppValue, __CFPreferencesIsManaged, __CFPreferencesManagementStatusChangedForDomains, 
                        __CFPreferencesNotifyOfImpendingUserDeletion, __CFPreferencesPostValuesChangedInDomains, 
                        __CFPreferencesRegisterStandardUserDefaultsExists, __CFPreferencesRemoveSuitePreferencesFromAppWithContainer, 
                        __CFPreferencesSetAccessRestricted, __CFPreferencesSetAppCloudSyncEnabled, 

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: B0D48F5A-B75F-3C7D-B956-A94B80B1D5F5' ]
+uuids:           [ 'i386: D10B5D37-6D84-32AC-AF2F-D22EBD9B6DB8', 'x86_64: 26CCFD9C-2B23-3838-9847-4DF5FCB527A1' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/EventKitUI.framework/EventKitUI'
 exports:         
@@ -337,17 +337,18 @@ exports:
                        EKUILabeledAvatarView, EKUILargeTextUtilities, EKUILocationSearchResultCell, 
                        EKUIMapsUtilities, EKUIMiniMonthView, EKUIOccurrenceCarplayFontProvider, 
                        EKUIOccurrenceCarplayTableViewCell, EKUIOccurrenceCellContentView, 
-                       EKUIOccurrenceTableViewCell, EKUIOccurrenceWidgetCellContentView, 
-                       EKUIOccurrenceWidgetTableViewCell, EKUIOverlayCalendarSignificantDatesProvider, 
-                       EKUIPreviewViewController, EKUIProposedTimeEventViewController, 
-                       EKUIReadonlyEventViewController, EKUIRecurrenceAlertController, 
-                       EKUIRecurrenceRuleBuilder, EKUISemiConstantCache, EKUITableViewCell, 
-                       EKUITableViewCellWithPrimaryAndSecondaryFonts, EKUITestCase, 
-                       EKUITextAndHeaderItem, EKUITodayCirclePulseView, EKUIVisualEffectView, 
-                       EKUIYearMonthView, LocalEditViewControllerTestCase, LocalEventViewControllerTestCase, 
-                       OccurrenceCacheDataSource, OccurrenceCacheSearchDataSource, 
-                       PreferencesDeleteButtonView, PreferencesDoubleTwoPartValueCell, 
-                       PreferencesMultiLineCell, PreferencesTableControlCell, PreferencesTwoPartValueCell, 
+                       EKUIOccurrenceMeasurementUtilities, EKUIOccurrenceTableViewCell, 
+                       EKUIOccurrenceWidgetCellContentView, EKUIOccurrenceWidgetTableViewCell, 
+                       EKUIOverlayCalendarSignificantDatesProvider, EKUIPreviewViewController, 
+                       EKUIProposedTimeEventViewController, EKUIReadonlyEventViewController, 
+                       EKUIRecurrenceAlertController, EKUIRecurrenceRuleBuilder, 
+                       EKUISemiConstantCache, EKUITableViewCell, EKUITableViewCellWithPrimaryAndSecondaryFonts, 
+                       EKUITestCase, EKUITextAndHeaderItem, EKUITodayCirclePulseView, 
+                       EKUIVisualEffectView, EKUIYearMonthView, LocalEditViewControllerTestCase, 
+                       LocalEventViewControllerTestCase, OccurrenceCacheDataSource, 
+                       OccurrenceCacheSearchDataSource, PreferencesDeleteButtonView, 
+                       PreferencesDoubleTwoPartValueCell, PreferencesMultiLineCell, 
+                       PreferencesTableControlCell, PreferencesTwoPartValueCell, 
                        PreferencesValueCell, ScrollSpringFactory, SingleToolbarItemContainerView, 
                        SpringFactory, SubtitleCellWithAdditionalDetail, TwoPartTextLabel ]
     objc-ivars:      [ CalendarAccountsController._accountStore, CalendarAccountsController._lastStoreListingRefreshDates, 

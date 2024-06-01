@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 685F1294-30E4-3763-A0AE-EC7B054FDD21', 'x86_64: F23F445C-FC29-33BE-A2EB-568F15840928' ]
+uuids:           [ 'i386: 685F1294-30E4-3763-A0AE-EC7B054FDD21', 'x86_64: B43FD4DD-2177-3242-A721-6558BAC2875C' ]
 platform:        ios
 install-name:    '/usr/lib/libAXSafeCategoryBundle.dylib'
 exports:         

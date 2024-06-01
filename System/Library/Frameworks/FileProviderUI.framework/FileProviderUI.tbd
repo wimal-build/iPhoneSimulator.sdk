@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 07260043-E632-3CAD-8B6B-E8A809A81261' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5774E7F7-9E2A-3DE3-A4AE-802565FA4498' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/FileProviderUI.framework/FileProviderUI'
 current-version: 26

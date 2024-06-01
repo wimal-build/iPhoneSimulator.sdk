@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D0693F1E-FAEA-34CA-9AC9-95B76B0B6564', 'x86_64: 76F36593-7C1D-35C8-93D4-33D89F7E1B27' ]
+uuids:           [ 'i386: D0693F1E-FAEA-34CA-9AC9-95B76B0B6564', 'x86_64: DDB7D92E-ACC4-3690-9B9D-677BDE079464' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftSpriteKit.dylib'
 current-version: 0

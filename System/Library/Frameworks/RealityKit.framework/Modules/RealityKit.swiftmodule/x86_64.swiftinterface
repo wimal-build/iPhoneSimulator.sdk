@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.2.259.50 clang-1100.2.32.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -swift-version 5 -enforce-exclusivity=checked -O -enable-library-evolution -module-name RealityKit
+// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.2.259.70 clang-1100.2.32.1)
+// swift-module-flags: -target x86_64-apple-ios13.1-simulator -enable-objc-interop -swift-version 5 -enforce-exclusivity=checked -O -enable-library-evolution -module-name RealityKit
 import Combine
 import CoreGraphics
 import CoreText
@@ -98,7 +98,9 @@ public class __RKEntityLookAtCameraAction : RealityKit.__RKEntityAction {
 }
 public class __RealityFileURLResolver {
   public static let shared: RealityKit.__RealityFileURLResolver
+  weak public static var weakShared: RealityKit.__RealityFileURLResolver?
   public init()
+  @objc deinit
   final public let assetPathPrefix: Swift.String
   public var schemePrefix: Swift.String {
     get
@@ -111,7 +113,6 @@ public class __RealityFileURLResolver {
   public func createSchemePrefix(with realityFileName: Swift.String) -> Swift.String
   public func createSubAssetPath(with assetName: Swift.String) -> Swift.String
   public func createFullSchemePath(group: Swift.String, name: Swift.String) -> Swift.String
-  @objc deinit
 }
 extension SIMD3 where Scalar == Swift.Float {
   @inlinable internal static var one: Swift.SIMD3<Swift.Float> {
@@ -1793,6 +1794,7 @@ open class ARView : RealityKit.ARViewBase {
   }
   open func __didInitializeEngine()
   public var __disableComposition: Swift.Bool
+  public var __nonARKitDevices: Swift.Bool
   @objc deinit
   public func __handleTapAtPoint(point: CoreGraphics.CGPoint)
   public struct DebugOptions : Swift.OptionSet {
@@ -2005,7 +2007,6 @@ public enum SynchronizationEvents {
   }
 }
 extension Scene {
-  @discardableResult
   public func subscribe<E>(to event: E.Type, on sourceObject: RealityKit.EventSource? = nil, _ handler: @escaping (E) -> Swift.Void) -> Combine.Cancellable where E : RealityKit.Event
   public func publisher<E>(for event: E.Type, on sourceObject: RealityKit.EventSource? = nil) -> RealityKit.Scene.Publisher<E> where E : RealityKit.Event
 }
@@ -2070,9 +2071,7 @@ public struct __REAssetBundle {
     get
   }
   public func sceneAsset(for sceneDescriptor: RealityKit.__REAssetBundle.AssetMap.SceneDescriptor) -> RealityKit.__REAsset?
-  public static var temporaryURL: Foundation.URL {
-    get
-  }
+  public static var temporaryURL: Foundation.URL
   public func write(to url: Foundation.URL) throws
   public func __write(to url: Foundation.URL, fromEngineQueue: Swift.Bool = true) throws
   public func __write(to url: Foundation.URL, with options: RealityKit.__REAssetBundle.QueueOptions, compressionLevel: Swift.Int? = 1, progress: Foundation.Progress? = nil) throws
@@ -2416,6 +2415,7 @@ extension simd_float4x4 {
 }
 public struct __RKScenePhysics {
   public var gravity: Swift.SIMD3<Swift.Float>
+  public var adaptiveTimeStep: Swift.Bool
   public class Registration {
     final public let componentType: Swift.OpaquePointer
     @objc deinit
@@ -2424,6 +2424,10 @@ public struct __RKScenePhysics {
 }
 extension Scene {
   public var __gravity: Swift.SIMD3<Swift.Float>? {
+    get
+    set
+  }
+  public var __adaptiveTimeStep: Swift.Bool? {
     get
     set
   }

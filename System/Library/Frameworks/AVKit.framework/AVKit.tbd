@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: 6681C857-6375-3C53-A293-854B4B5011DF' ]
+uuids:           [ 'i386: A8DE01C0-71C8-335D-B83E-7EEFD5A96668', 'x86_64: EFBE1376-A060-3979-AC45-407EE81C5042' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AVKit.framework/AVKit'
 exports:         

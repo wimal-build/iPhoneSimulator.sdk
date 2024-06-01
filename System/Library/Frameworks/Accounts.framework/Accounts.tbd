@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FB3E76E1-1E84-3771-81EF-81DDEEF54B0C', 'x86_64: 47D03BDD-C3A5-3CD3-8E0D-909329869F00' ]
+uuids:           [ 'i386: FB3E76E1-1E84-3771-81EF-81DDEEF54B0C', 'x86_64: 845F0DE6-CA21-31EF-A64A-2D0255CF9B99' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Accounts.framework/Accounts'
 exports:         
@@ -114,7 +114,7 @@ exports:
                        _ACTencentWeiboAppIdKeyDeprecated, _ACTencentWeiboClientConsumerKey, 
                        _ACTokenExpiryDateKey, _ACTokenKey, _ACYahooXYMPKICookieCrumbKey, 
                        _ACYahooXYMPKICookieTKey, _ACYahooXYMPKICookieYKey, _ACYahooXYMPKITokenKey, 
-                       __ACLogSystem, __ACSignpostCreate, __ACSignpostGetNanoseconds, 
+                       __ACLogSystem, __ACPLogSystem, __ACSignpostCreate, __ACSignpostGetNanoseconds, 
                        __ACSignpostLogSystem, _createACAccountWithASAccountProperties, 
                        _createACAccountWithASAccountPropertiesAndACAccountType, _kACAccountIdentifier, 
                        _kACAllowedSSLCertificatesKey, _kACDAllAccountsAccessEntitlement, 
@@ -195,7 +195,7 @@ exports:
                        ACDManagedAccessOptionsKey, ACDManagedAccount, ACDManagedAccountProperty, 
                        ACDManagedAccountType, ACDManagedAuthorization, ACDManagedCredentialItem, 
                        ACDManagedDataclass, ACDPropertyEncryption, ACDataclassAction, 
-                       ACManagedDefaults, ACMutableTrackedSet, ACOAuthSigner, ACRateLimiter, 
-                       ACRemoteAccountStoreInterface, ACRemoteAccountStoreSession, 
+                       ACManagedDefaults, ACMutableTrackedSet, ACOAuthSigner, ACPersonaManager, 
+                       ACRateLimiter, ACRemoteAccountStoreInterface, ACRemoteAccountStoreSession, 
                        ACSystemConfigManager, ACTrackedSet, ACZeroingString ]
 ...

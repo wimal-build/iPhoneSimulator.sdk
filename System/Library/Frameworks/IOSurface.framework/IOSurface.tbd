@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4A9404A0-185B-3AA5-A673-BFD85BAA7BF0' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 706B6AD3-9767-3C82-8740-975269268583' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/IOSurface.framework/IOSurface'
 exports:         

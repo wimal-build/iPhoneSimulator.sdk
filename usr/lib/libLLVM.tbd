@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B8DADB17-BF07-3D77-9208-860AE20504C5', 'x86_64: 7E52AED4-EF36-317F-B71A-FE343D86B4B3' ]
+uuids:           [ 'i386: B8DADB17-BF07-3D77-9208-860AE20504C5', 'x86_64: 2C8E026E-DD30-3AED-B281-C0B15AC3BD6E' ]
 platform:        ios
 install-name:    '/usr/lib/libLLVM.dylib'
-current-version: 3902.55
+current-version: 3902.56
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _ConvertUTF16toUTF32, _ConvertUTF16toUTF8, _ConvertUTF32toUTF16, 

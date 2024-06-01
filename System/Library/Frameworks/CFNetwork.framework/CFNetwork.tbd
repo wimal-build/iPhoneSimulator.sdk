@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EC6FDA5D-CCFC-35CD-A597-0F54B6AB4D29', 'x86_64: 7614B44B-2D02-352F-B853-C63CBE0C4E3B' ]
+uuids:           [ 'i386: EC6FDA5D-CCFC-35CD-A597-0F54B6AB4D29', 'x86_64: 3E0B4879-E116-3FF3-B2C0-BBCBDE735F99' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CFNetwork.framework/CFNetwork'
 current-version: 0
@@ -770,21 +770,22 @@ exports:
                        __CFURLStorageSessionCreateWithData, __CFURLStorageSessionGetTypeID, 
                        __CFURLWriteDataAndPropertiesToResource, __CreateCanonicalURL, 
                        __ExtractCStringfromCFStringRef, __NSServerConfigurationOutboundConnectionProxyDictionary, 
-                       __NSServerConfigurationSOCKS5ServerCredentials, ___AuthBrokerMain, 
-                       ___CFNetworkAgentMessageProcessorMain, ___CFTubeSetTubeTypeNotifier, 
-                       ___createCachedResponseFromParts, __kATSAllowsArbitraryLoadsForMediaKey, 
-                       __kCFHTTPCookiePolicyPropertyIsTopLevelNavigation, __kCFHTTPCookiePolicyPropertySiteForCookies, 
-                       __kCFHTTPServerAllInterfacesIdentifier, __kCFHTTPServerAllowAnonymousServer, 
-                       __kCFHTTPServerBoundInterfaceIdentifier, __kCFHTTPServerConnectionClientTrust, 
-                       __kCFHTTPServerConnectionMaxRequestBufferSize, __kCFHTTPServerConnectionPeer, 
-                       __kCFHTTPServerConnectionPeerCerts, __kCFHTTPServerConnectionServer, 
-                       __kCFHTTPServerErrorDomain, __kCFHTTPServerFailingRequest, 
-                       __kCFHTTPServerFailingResponse, __kCFHTTPServerHTTPServiceType, 
-                       __kCFHTTPServerIdleTimeout, __kCFHTTPServerKeychain, __kCFHTTPServerName, 
-                       __kCFHTTPServerRequestConnection, __kCFHTTPServerRequestHTTPVersion, 
-                       __kCFHTTPServerRequestHeaderOrderKey, __kCFHTTPServerRequestHeaderValuesKey, 
-                       __kCFHTTPServerRequestHeaders, __kCFHTTPServerRequestMethod, 
-                       __kCFHTTPServerRequestPath, __kCFHTTPServerRequestURL, __kCFHTTPServerRequireClientCertificate, 
+                       __NSServerConfigurationSOCKS5ServerCredentials, __NSURLErrorWebSocketHandshakeFailureReasonKey, 
+                       ___AuthBrokerMain, ___CFNetworkAgentMessageProcessorMain, 
+                       ___CFTubeSetTubeTypeNotifier, ___createCachedResponseFromParts, 
+                       __kATSAllowsArbitraryLoadsForMediaKey, __kCFHTTPCookiePolicyPropertyIsTopLevelNavigation, 
+                       __kCFHTTPCookiePolicyPropertySiteForCookies, __kCFHTTPServerAllInterfacesIdentifier, 
+                       __kCFHTTPServerAllowAnonymousServer, __kCFHTTPServerBoundInterfaceIdentifier, 
+                       __kCFHTTPServerConnectionClientTrust, __kCFHTTPServerConnectionMaxRequestBufferSize, 
+                       __kCFHTTPServerConnectionPeer, __kCFHTTPServerConnectionPeerCerts, 
+                       __kCFHTTPServerConnectionServer, __kCFHTTPServerErrorDomain, 
+                       __kCFHTTPServerFailingRequest, __kCFHTTPServerFailingResponse, 
+                       __kCFHTTPServerHTTPServiceType, __kCFHTTPServerIdleTimeout, 
+                       __kCFHTTPServerKeychain, __kCFHTTPServerName, __kCFHTTPServerRequestConnection, 
+                       __kCFHTTPServerRequestHTTPVersion, __kCFHTTPServerRequestHeaderOrderKey, 
+                       __kCFHTTPServerRequestHeaderValuesKey, __kCFHTTPServerRequestHeaders, 
+                       __kCFHTTPServerRequestMethod, __kCFHTTPServerRequestPath, 
+                       __kCFHTTPServerRequestURL, __kCFHTTPServerRequireClientCertificate, 
                        __kCFHTTPServerResponseConnection, __kCFHTTPServerResponseMessage, 
                        __kCFHTTPServerResponseRequest, __kCFHTTPServerSSLSettings, 
                        __kCFHTTPServerServerIdentity, __kCFHTTPServerServerTrustChain, 

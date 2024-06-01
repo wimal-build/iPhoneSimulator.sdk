@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 359401C9-A1E9-31F6-917C-3E33805E4362' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E7506D0D-5648-3137-8ABD-D035C71CD81E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing'
 current-version: 0
@@ -42,11 +42,12 @@ exports:
                        _QLThumbnailMetadataFileVersion2Key, _QLThumbnailMetadataFileVersionKey, 
                        _QLThumbnailMetadataFlavorKey, _QLThumbnailMetadataQLPropertiesKey, 
                        _QLThumbnailRepresentationTypeToString, _QLThumbnailRequestOperationRepresentationTypeNone, 
-                       _QLThumbnailsServiceErrorDomain, _QL_SANDBOX_READ, __QLCopyResourcePropertyForKey, 
-                       __QLSetResourcePropertyForKey, _allSupportedRequestOperationRepresentationTypes, 
-                       _allSupportedRequestRepresentationTypes, _kQLThumbnailCacheFileName, 
-                       _kQLThumbnailPropertyIconFlavorKey, _kQLThumbnailPropertyInlinePreviewModeKey, 
-                       _kQLThumbnailPropertyYBaselineKey, _qltLogHandles ]
+                       _QLThumbnailsServiceErrorDomain, _QL_SANDBOX_READ, __QLComputeValuesForCGContextCreationWithSizeAndScale, 
+                       __QLCopyResourcePropertyForKey, __QLSetResourcePropertyForKey, 
+                       _allSupportedRequestOperationRepresentationTypes, _allSupportedRequestRepresentationTypes, 
+                       _kQLThumbnailCacheFileName, _kQLThumbnailPropertyIconFlavorKey, 
+                       _kQLThumbnailPropertyInlinePreviewModeKey, _kQLThumbnailPropertyYBaselineKey, 
+                       _qltLogHandles ]
     objc-classes:    [ QLAsynchronousOperation, QLCacheBasicFileIdentifier, QLCacheBasicVersionedFileIdentifier, 
                        QLCacheFileIdentifier, QLCacheFileProviderFileIdentifier, 
                        QLCacheFileProviderVersionedFileIdentifier, QLCacheVersionedFileIdentifier, 

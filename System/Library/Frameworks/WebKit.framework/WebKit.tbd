@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: 668CAD16-879F-3A27-BE57-157A3C35CD3A' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: 5034EFAA-8342-3CFB-BB9E-0D3EC660DF3F' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/WebKit.framework/WebKit'
-current-version: 608.1.48
+current-version: 608.2.5
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _DatabaseServiceInitializer, _WKBundleFileHandleGetTypeID, 
@@ -568,15 +568,15 @@ exports:
                        _WKPreferencesGetSuppressesIncrementalRendering, _WKPreferencesGetSyntheticEditingCommandsEnabled, 
                        _WKPreferencesGetTabToLinksEnabled, _WKPreferencesGetTabsToLinks, 
                        _WKPreferencesGetTelephoneNumberParsingEnabled, _WKPreferencesGetTextAreasAreResizable, 
-                       _WKPreferencesGetTextAutosizingEnabled, _WKPreferencesGetThreadedScrollingEnabled, 
-                       _WKPreferencesGetTiledScrollingIndicatorVisible, _WKPreferencesGetTypeID, 
-                       _WKPreferencesGetUniversalAccessFromFileURLsAllowed, _WKPreferencesGetUseGiantTiles, 
-                       _WKPreferencesGetUserInterfaceDirectionPolicy, _WKPreferencesGetUserTimingEnabled, 
-                       _WKPreferencesGetVideoPlaybackRequiresUserGesture, _WKPreferencesGetViewGestureDebuggingEnabled, 
-                       _WKPreferencesGetVisibleDebugOverlayRegions, _WKPreferencesGetWebAnimationsCSSIntegrationEnabled, 
-                       _WKPreferencesGetWebAnimationsEnabled, _WKPreferencesGetWebArchiveDebugModeEnabled, 
-                       _WKPreferencesGetWebAudioEnabled, _WKPreferencesGetWebAuthenticationEnabled, 
-                       _WKPreferencesGetWebAuthenticationLocalAuthenticatorEnabled, 
+                       _WKPreferencesGetTextAutosizingEnabled, _WKPreferencesGetTextAutosizingUsesIdempotentMode, 
+                       _WKPreferencesGetThreadedScrollingEnabled, _WKPreferencesGetTiledScrollingIndicatorVisible, 
+                       _WKPreferencesGetTypeID, _WKPreferencesGetUniversalAccessFromFileURLsAllowed, 
+                       _WKPreferencesGetUseGiantTiles, _WKPreferencesGetUserInterfaceDirectionPolicy, 
+                       _WKPreferencesGetUserTimingEnabled, _WKPreferencesGetVideoPlaybackRequiresUserGesture, 
+                       _WKPreferencesGetViewGestureDebuggingEnabled, _WKPreferencesGetVisibleDebugOverlayRegions, 
+                       _WKPreferencesGetWebAnimationsCSSIntegrationEnabled, _WKPreferencesGetWebAnimationsEnabled, 
+                       _WKPreferencesGetWebArchiveDebugModeEnabled, _WKPreferencesGetWebAudioEnabled, 
+                       _WKPreferencesGetWebAuthenticationEnabled, _WKPreferencesGetWebAuthenticationLocalAuthenticatorEnabled, 
                        _WKPreferencesGetWebGLEnabled, _WKPreferencesGetWebRTCLegacyAPIEnabled, 
                        _WKPreferencesGetWebRTCMDNSICECandidatesEnabled, _WKPreferencesGetWebSQLDisabled, 
                        _WKPreferencesGetWebSecurityEnabled, _WKPreferencesGetWebShareEnabled, 
@@ -680,9 +680,9 @@ exports:
                        _WKPreferencesSetSyntheticEditingCommandsEnabled, _WKPreferencesSetTabToLinksEnabled, 
                        _WKPreferencesSetTabsToLinks, _WKPreferencesSetTelephoneNumberParsingEnabled, 
                        _WKPreferencesSetTextAreasAreResizable, _WKPreferencesSetTextAutosizingEnabled, 
-                       _WKPreferencesSetThreadedScrollingEnabled, _WKPreferencesSetTiledScrollingIndicatorVisible, 
-                       _WKPreferencesSetUniversalAccessFromFileURLsAllowed, _WKPreferencesSetUseGiantTiles, 
-                       _WKPreferencesSetUseLegacyTextAlignPositionedElementBehavior, 
+                       _WKPreferencesSetTextAutosizingUsesIdempotentMode, _WKPreferencesSetThreadedScrollingEnabled, 
+                       _WKPreferencesSetTiledScrollingIndicatorVisible, _WKPreferencesSetUniversalAccessFromFileURLsAllowed, 
+                       _WKPreferencesSetUseGiantTiles, _WKPreferencesSetUseLegacyTextAlignPositionedElementBehavior, 
                        _WKPreferencesSetUserInterfaceDirectionPolicy, _WKPreferencesSetUserTimingEnabled, 
                        _WKPreferencesSetVideoPlaybackRequiresUserGesture, _WKPreferencesSetViewGestureDebuggingEnabled, 
                        _WKPreferencesSetVisibleDebugOverlayRegions, _WKPreferencesSetWebAnimationsCSSIntegrationEnabled, 
@@ -859,10 +859,10 @@ exports:
                        _WKWebsiteDataStore, _WKWebsiteDataStoreConfiguration, _WKWebsitePolicies ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: 2B271F54-9D02-3D25-9B5D-47DAEEAD8002' ]
+uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: E4E32123-A75C-351D-AD67-69FC45040DE4' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
-current-version: 608.1.48
+current-version: 608.2.5
 exports:         
   - archs:           [ i386 ]
     objc-classes:    [ DOMDOMTokenList, DOMNodeFilter, WebCoreScrollView, WebPluginController ]

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: BE32721A-7FDE-3152-ADB4-3413016ACD23', 'x86_64: 8EC22888-2DD8-311D-A45B-7964CA163FCA' ]
+uuids:           [ 'i386: BE32721A-7FDE-3152-ADB4-3413016ACD23', 'x86_64: FD989A45-4CF9-320A-AE2E-6FC083751788' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ReplayKit.framework/ReplayKit'
 exports:         

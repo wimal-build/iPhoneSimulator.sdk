@@ -1,20 +1,11 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0114CCA5-4D0D-3B50-8332-AA27E2444D2F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7BF2D920-C7ED-3532-A9E3-CB6D7937F7BD' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/PencilKit.framework/PencilKit'
 exports:         
   - archs:           [ i386, x86_64 ]
-    symbols:         [ '$ld$install_name$os11.0$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os11.1$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os11.2$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os11.3$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os11.4$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os12.0$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os12.1$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os12.2$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       '$ld$install_name$os12.3$/System/Library/PrivateFrameworks/PencilKit.framework/PencilKit', 
-                       _PKAppleDrawingTypeIdentifier, _PKAppleStrokeSelectionTypeIdentifier, 
+    symbols:         [ _PKAppleDrawingTypeIdentifier, _PKAppleStrokeSelectionTypeIdentifier, 
                        _PKAttachmentViewDefaultDrawingWidth, _PKClipperScaling, _PKDidSelectStrokesNotification, 
                        _PKHandwritingFeedbackActivityType, _PKInkBlueComponentProperty, 
                        _PKInkColorProperty, _PKInkGreenComponentProperty, _PKInkIdentifierCharcoal, 

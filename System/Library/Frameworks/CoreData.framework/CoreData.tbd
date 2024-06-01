@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C524AB1D-7228-33D0-B40B-BE6E45E4DF1D', 'x86_64: F745DE70-CA97-3A0E-9388-F7E6089029A4' ]
+uuids:           [ 'i386: C524AB1D-7228-33D0-B40B-BE6E45E4DF1D', 'x86_64: 36DBD905-00EB-3FC4-B234-9BE10182F991' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreData.framework/CoreData'
-current-version: 962.1
+current-version: 968
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _NSAutomaticMigrationUseDocumentDestinationOption, _NSPersistentStoreCoordinatorDidImportExternalRecordsNotification, 

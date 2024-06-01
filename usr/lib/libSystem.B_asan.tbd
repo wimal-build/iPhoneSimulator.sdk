@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: AC0FFFDB-52BD-39A9-8644-00A6438179B0' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2C23F4CF-5114-32F6-A53B-98B05E63DBD3' ]
 platform:        ios
 install-name:    '/usr/lib/libSystem.B.dylib'
 current-version: 1281
@@ -34,7 +34,7 @@ exports:
                        _libSystem_atfork_prepare, _mach_init_routine ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AC9701E-3F42-3829-BD24-AF0B40C20845', 'x86_64: AAB39ED8-4B0F-37CA-9426-3F6CB68F8747' ]
+uuids:           [ 'i386: 7AC9701E-3F42-3829-BD24-AF0B40C20845', 'x86_64: 03194C62-ACD1-3187-B822-41C38A29E128' ]
 platform:        ios
 install-name:    '/usr/lib/system/libcache.dylib'
 current-version: 83
@@ -56,7 +56,7 @@ exports:
                        _cache_value_make_purgeable_cb ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4ACE1E70-E6F5-3DFC-A8AD-6484E1C9BA9C', 'x86_64: 30CDAF69-7D07-323B-96BF-A4F4AF9B6032' ]
+uuids:           [ 'i386: 4ACE1E70-E6F5-3DFC-A8AD-6484E1C9BA9C', 'x86_64: 063C1A3B-7A58-355F-98E9-9717D3160F02' ]
 platform:        ios
 install-name:    '/usr/lib/system/libcommonCrypto.dylib'
 current-version: 60165
@@ -140,7 +140,7 @@ exports:
                        _kCCRandomDefault, _kCCRandomDevRandom ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0DDBD7DA-B601-3D90-9960-0FA44B980F4D', 'x86_64: CABA40ED-01E9-3925-8346-66DE0F642CCF' ]
+uuids:           [ 'i386: 0DDBD7DA-B601-3D90-9960-0FA44B980F4D', 'x86_64: 6B90476E-11F4-30D5-A879-97E91B860A76' ]
 platform:        ios
 install-name:    '/usr/lib/system/libcompiler_rt.dylib'
 current-version: 101.1
@@ -323,7 +323,7 @@ exports:
                        _atomic_signal_fence, _atomic_thread_fence ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00ADAD73-89CA-3C79-BB5B-8BC020077ABC', 'x86_64: CC6BE044-648E-3A2D-BA17-ECEC8CA8672C' ]
+uuids:           [ 'i386: 00ADAD73-89CA-3C79-BB5B-8BC020077ABC', 'x86_64: 051DAD9C-AE46-37C2-9F0C-934CF04532E3' ]
 platform:        ios
 install-name:    '/usr/lib/system/libcopyfile.dylib'
 exports:         
@@ -335,10 +335,10 @@ exports:
                        _xattr_name_with_flags, _xattr_name_without_flags, _xattr_preserve_for_intent ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A63A9FF4-7120-3068-855B-67664E399969', 'x86_64: 3B44CD2B-5750-3F4F-BDEA-4E5568CD3D2A' ]
+uuids:           [ 'i386: A63A9FF4-7120-3068-855B-67664E399969', 'x86_64: 52CDA5DB-7CE5-38E8-9A41-E78BE459CDAD' ]
 platform:        ios
 install-name:    '/usr/lib/system/libcorecrypto.dylib'
-current-version: 866.0.2
+current-version: 866.0.9
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -547,10 +547,10 @@ exports:
                        _fipspost_post, _fipspost_trace_vtable ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0F904697-8E4C-3B70-8658-A7D5973409AA', 'x86_64: CE9EC189-8176-37A8-ACE0-6277EBB199DF' ]
+uuids:           [ 'i386: 0F904697-8E4C-3B70-8658-A7D5973409AA', 'x86_64: 953CC983-5516-3598-B502-662EFC0CB944' ]
 platform:        ios
 install-name:    '/usr/lib/system/libdispatch.dylib'
-current-version: 1173.0.1
+current-version: 1173.0.3
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -684,10 +684,10 @@ exports:
                        OS_dispatch_workloop, OS_object, OS_voucher ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6510E287-0ABF-32FD-9AC5-5CF2BF1137F8', 'x86_64: 0498B127-D0A9-37FC-9E38-E0B77D9E63F8' ]
+uuids:           [ 'i386: 6510E287-0ABF-32FD-9AC5-5CF2BF1137F8', 'x86_64: 1AEC5D4B-B0FE-359C-A42C-B54E628A27BC' ]
 platform:        ios
 install-name:    '/usr/lib/system/libdyld.dylib'
-current-version: 731.4
+current-version: 732.1
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -728,10 +728,10 @@ exports:
                        _dyld_shared_cache_some_image_overridden, _environ, dyld_stub_binder ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DCB66768-50DF-33C0-9B93-2863273F0C78', 'x86_64: C2DAFB46-6DFA-3254-9C10-F1AB431AD07E' ]
+uuids:           [ 'i386: DCB66768-50DF-33C0-9B93-2863273F0C78', 'x86_64: 2688DF80-852C-3E10-BA4F-C7ACF7819489' ]
 platform:        ios
 install-name:    '/usr/lib/system/liblaunch.dylib'
-current-version: 1738.0.3
+current-version: 1738.0.16
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -777,10 +777,10 @@ exports:
                        _vproc_transaction_end, _vprocmgr_lookup_vproc ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 25811EB3-E68D-385F-B1C5-9356057F0E02', 'x86_64: 817989D7-FDC4-33B2-BD43-C7739FC908D4' ]
+uuids:           [ 'i386: 25811EB3-E68D-385F-B1C5-9356057F0E02', 'x86_64: 6A432D2F-D2A5-34A3-9BEB-38CB327AE0D6' ]
 platform:        ios
 install-name:    '/usr/lib/system/libmacho.dylib'
-current-version: 949
+current-version: 949.0.1
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -824,7 +824,7 @@ exports:
                        _swap_x86_thread_state64 ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B01EFDA0-DAC7-3012-8BE7-21AC3885B753', 'x86_64: 24840052-6E98-3E7C-B30F-DCFF421189BC' ]
+uuids:           [ 'i386: B01EFDA0-DAC7-3012-8BE7-21AC3885B753', 'x86_64: B295C929-A03C-3164-A00D-76AB64AB0899' ]
 platform:        ios
 install-name:    '/usr/lib/system/libremovefile.dylib'
 current-version: 48
@@ -838,10 +838,10 @@ exports:
                        _removefile_state_free, _removefile_state_get, _removefile_state_set ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: BF84113B-046D-35A0-B62D-C957CF69CFE6', 'x86_64: E24805EC-D60F-375E-9ED0-E3F498C17B9C' ]
+uuids:           [ 'i386: BF84113B-046D-35A0-B62D-C957CF69CFE6', 'x86_64: F13DC777-7B7A-345B-AA6A-53841669B83A' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_asl.dylib'
-current-version: 377
+current-version: 377.0.1
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -917,7 +917,7 @@ exports:
                        _setlogmask, _syslog, _vsyslog ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D780BB92-A01C-34F4-B25E-F21600EB5D66', 'x86_64: 96EE3EB2-B571-321A-BF56-3A9F4CF6FA7D' ]
+uuids:           [ 'i386: D780BB92-A01C-34F4-B25E-F21600EB5D66', 'x86_64: DCD17D87-D52D-319A-BA98-AC3C1888D82E' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_blocks.dylib'
 current-version: 73
@@ -933,10 +933,10 @@ exports:
                        __NSConcreteStackBlock, __NSConcreteWeakBlockVariable ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8905BA62-494B-3D96-8CDC-452DC631FFA5', 'x86_64: 51AB96BF-81B6-3E55-99E2-10F9E0A4FF39' ]
+uuids:           [ 'i386: 8905BA62-494B-3D96-8CDC-452DC631FFA5', 'x86_64: C5099BB6-68FD-3D5E-969E-A6B4F63E7E6C' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_c.dylib'
-current-version: 1353.0.2
+current-version: 1353.0.10
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -1137,8 +1137,8 @@ exports:
                        _regexec, _regfree, _register_printf_domain_function, _register_printf_domain_render_std, 
                        _regncomp, _regncomp_l, _regnexec, _regwcomp, _regwcomp_l, 
                        _regwexec, _regwncomp, _regwncomp_l, _regwnexec, _remove, 
-                       _remque, _rewind, _rewinddir, _rindex, _sbrk, _scandir, _scandir_b, 
-                       _scanf, _scanf_l, _seed48, _seekdir, _send, '_send$NOCANCEL', 
+                       _remque, _rewind, _rewinddir, _rindex, _rpmatch, _sbrk, _scandir, 
+                       _scandir_b, _scanf, _scanf_l, _seed48, _seekdir, _send, '_send$NOCANCEL', 
                        _setbuf, _setbuffer, _setenv, _sethostid, _sethostname, _setipv4sourcefilter, 
                        _setkey, _setlinebuf, _setlocale, _setlogin, _setmode, _setpgrp, 
                        _setprogname, _setrgid, _setruid, _setsourcefilter, _setstate, 
@@ -1214,10 +1214,10 @@ exports:
                        _wscanf, _wscanf_l, _wtmpxname, _xprintf, _xprintf_exec, mcount ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E588984C-360F-3688-865B-12F7A82577B5', 'x86_64: 90CD812B-2F83-3B8D-A4B2-92CFADBB540F' ]
+uuids:           [ 'i386: E588984C-360F-3688-865B-12F7A82577B5', 'x86_64: 6E2BEC57-A9D3-3209-9913-181C635111A6' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_configuration.dylib'
-current-version: 1061
+current-version: 1061.0.2
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -1235,7 +1235,7 @@ exports:
                        _nwi_state_get_reachability_flags, _nwi_state_release ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1F3BC52A-54CF-3FB5-99AA-7FF97CA592A3', 'x86_64: EB1BD674-5827-3AE1-9B81-D4B67B0C53FF' ]
+uuids:           [ 'i386: 1F3BC52A-54CF-3FB5-99AA-7FF97CA592A3', 'x86_64: C4FD2115-EC6E-3911-B266-1258934492EA' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_containermanager.dylib'
 parent-umbrella: System
@@ -1251,10 +1251,12 @@ exports:
   - archs:           [ i386, x86_64 ]
     symbols:         [ _CONTAINER_CURRENT_MOBILE_UID, _CONTAINER_INSTALLATION_UID, 
                        _CONTAINER_NOTIFY_CLEANUP_COMPLETE, _CONTAINER_NOTIFY_REBOOT_CLEANUP_COMPLETE, 
-                       _CONTAINER_SYSTEM_UID, __container_init, _container_copy_code_signing_info_for_identifier, 
+                       _CONTAINER_NOTIFY_USER_INVALIDATED, _CONTAINER_SYSTEM_UID, 
+                       __container_init, _container_copy_code_signing_info_for_identifier, 
                        _container_copy_info, _container_copy_info_value_for_key, 
-                       _container_copy_object, _container_copy_path, _container_create_or_lookup, 
-                       _container_create_or_lookup_app_group_paths, _container_create_or_lookup_app_group_paths_for_current_user, 
+                       _container_copy_object, _container_copy_path, _container_copy_persona_unique_strings, 
+                       _container_create_or_lookup, _container_create_or_lookup_app_group_paths, 
+                       _container_create_or_lookup_app_group_paths_for_current_user, 
                        _container_create_or_lookup_for_current_user, _container_create_or_lookup_group_container_paths_for_current_user, 
                        _container_create_or_lookup_path, _container_create_or_lookup_path_for_current_user, 
                        _container_create_or_lookup_system_group_paths, _container_create_or_lookup_user_managed_assets_path, 
@@ -1266,7 +1268,7 @@ exports:
                        _container_delete_with_uid_class_and_identifier, _container_disk_usage, 
                        _container_free_array_of_containers, _container_free_object, 
                        _container_get_all_with_class, _container_get_all_with_class_for_current_user, 
-                       _container_get_identifier, _container_get_persona_unique_string, 
+                       _container_get_class, _container_get_identifier, _container_get_persona_unique_string, 
                        _container_group_container_identifiers_for_current_user, _container_invalidate_code_signing_cache, 
                        _container_is_transient, _container_perform_data_migration, 
                        _container_perform_data_migration_for_current_user, _container_process_restored_container, 
@@ -1278,10 +1280,10 @@ exports:
                        _container_user_managed_assets_path, _container_user_managed_assets_relative_path ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 514806F5-7669-3C78-9614-2A3A7CA78F4E', 'x86_64: F55F7005-83B9-3A62-A624-B2EEC188BBD2' ]
+uuids:           [ 'i386: 514806F5-7669-3C78-9614-2A3A7CA78F4E', 'x86_64: 2720237F-F447-3914-A576-B2A23D618EB2' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
-current-version: 112.1
+current-version: 114
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -1294,7 +1296,7 @@ exports:
                        _sysdir_start_search_path_enumeration, _sysdir_start_search_path_enumeration_private ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 75DD3094-18E0-3CE0-92B4-8FE7147CAC1D' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0A1C1B9A-2C17-3846-84F5-3103FD196F9C' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_darwin.dylib'
 parent-umbrella: System
@@ -1320,10 +1322,10 @@ exports:
                        _zsnprintf_np ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9BD2C371-FBE1-389A-AFA6-0AE129F510CF', 'x86_64: 5E6097FE-47C9-313F-8A8D-5FB8C269E57D' ]
+uuids:           [ 'i386: 9BD2C371-FBE1-389A-AFA6-0AE129F510CF', 'x86_64: 4AF6CDC4-4730-3B8A-8A4F-87B243D34176' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
-current-version: 1096
+current-version: 1096.0.2
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -1348,7 +1350,7 @@ exports:
                        _TXTRecordSetValue ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0828B669-5C4D-3EE5-9845-17E855569A72' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: DF758CD5-FE82-32B2-9710-50820D8C356D' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
 current-version: 17
@@ -1358,7 +1360,7 @@ exports:
     symbols:         [ __os_feature_enabled_impl ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B444B89A-A4C0-365F-9A20-9D51844DDB4F', 'x86_64: F67D8908-6469-319F-809D-6D3566C80F14' ]
+uuids:           [ 'i386: B444B89A-A4C0-365F-9A20-9D51844DDB4F', 'x86_64: 0CDBBFD4-9CB5-3BA1-B54A-DC57871CF8E7' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_info.dylib'
 parent-umbrella: System
@@ -1949,7 +1951,7 @@ exports:
                        _write, _writev ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 526494EB-5D11-369E-A63D-A1B45773DDDE', 'x86_64: 46925B15-1A4D-3FD1-86BE-0BE134FDA521' ]
+uuids:           [ 'i386: 526494EB-5D11-369E-A63D-A1B45773DDDE', 'x86_64: 9671BB46-D1D2-378C-937C-78D8B8313CE1' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_m.dylib'
 current-version: 3178
@@ -2033,7 +2035,7 @@ exports:
                        _tgammaf, _tgammal, _trunc, _truncf, _truncl, _y0, _y1, _yn ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3005CDAF-88F0-38C0-A28F-841F518EBA97', 'x86_64: 7DA4DAF1-D851-3A68-8210-84BC36459EE6' ]
+uuids:           [ 'i386: 3005CDAF-88F0-38C0-A28F-841F518EBA97', 'x86_64: DE9A9270-5CF0-30BE-ACA0-445B882081DA' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_malloc.dylib'
 current-version: 283
@@ -2089,7 +2091,7 @@ exports:
                        _valloc, _vfree, _zeroify_scalable_zone ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 22BB0ADE-3A6E-343A-88FD-94F0C11E5867', 'x86_64: 4AE32957-A877-36D2-94EB-27C92E06B3EC' ]
+uuids:           [ 'i386: 22BB0ADE-3A6E-343A-88FD-94F0C11E5867', 'x86_64: 81DC0759-6E43-35FC-B9E5-E4F395F6F1A8' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_notify.dylib'
 current-version: 241
@@ -2297,10 +2299,11 @@ exports:
                        _thread_chkstk_darwin, _thread_start ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B4F5DA93-46B1-37CD-A078-14726323EE36', 'x86_64: 2647995B-BC38-3C8B-9523-56173D1D6AE0' ]
+uuids:           [ 'i386: B4F5DA93-46B1-37CD-A078-14726323EE36', 'x86_64: F0312522-0C27-38C4-BBB7-08E34800FCBC' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sandbox.dylib'
-current-version: 1217.0.3
+current-version: 1217.0.23
+parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _IOS_SANDBOX_EXECUTABLE, _IOS_SANDBOX_SYSTEM_CONTAINER, _IOS_SANDBOX_SYSTEM_GROUP, 
@@ -2345,8 +2348,10 @@ exports:
                        _sandbox_init_from_pid, _sandbox_init_with_extensions, _sandbox_init_with_parameters, 
                        _sandbox_issue_extension, _sandbox_issue_fs_extension, _sandbox_issue_fs_rw_extension, 
                        _sandbox_issue_mach_extension, _sandbox_note, _sandbox_passthrough_access, 
-                       _sandbox_query_approval_policy_for_path, _sandbox_reference_release, 
-                       _sandbox_reference_retain_by_audit_token, _sandbox_release_fs_extension, 
+                       _sandbox_proc_getcontainer, _sandbox_proc_getprofilename, 
+                       _sandbox_query_approval_policy_for_path, _sandbox_query_user_intent_for_process_with_audit_token, 
+                       _sandbox_reference_release, _sandbox_reference_retain_by_audit_token, 
+                       _sandbox_release_fs_extension, _sandbox_requests_integrity_protection_for_preference_domain, 
                        _sandbox_set_container_path_for_application_group, _sandbox_set_container_path_for_application_group_with_persona, 
                        _sandbox_set_container_path_for_signing_id, _sandbox_set_container_path_for_signing_id_with_persona, 
                        _sandbox_spawnattrs_getcontainer, _sandbox_spawnattrs_getprofilename, 
@@ -2354,7 +2359,7 @@ exports:
                        _sandbox_spawnattrs_setprofilename, _sandbox_suspend, _sandbox_unsuspend ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CAA59D7B-F145-3FCC-B899-186B85E2A7ED', 'x86_64: F5AD45B7-71B6-3E23-BC3A-F6F6E76FC0D2' ]
+uuids:           [ 'i386: CAA59D7B-F145-3FCC-B899-186B85E2A7ED', 'x86_64: A49E2797-CB79-3BA6-A9C0-26D99E89C68D' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sim_kernel.dylib'
 current-version: 211
@@ -2401,7 +2406,7 @@ exports:
                        _work_interval_instance_update ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6B9C8FC8-90B5-3CB2-AA12-81A1A629C25E', 'x86_64: 72EDBA74-5137-31EC-8588-6BF4568E16CE' ]
+uuids:           [ 'i386: 6B9C8FC8-90B5-3CB2-AA12-81A1A629C25E', 'x86_64: 46FA1FFC-C7DC-3879-8959-8746E87D6F6A' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sim_kernel_host.dylib'
 current-version: 211
@@ -2445,7 +2450,7 @@ exports:
                        ___interposition_sim_system_work_interval_instance_update ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 207D9CF8-C3D5-3B1F-9A9E-021F167FFFAA', 'x86_64: C6171111-3B5A-31E3-86AC-8BCCEAA3DB73' ]
+uuids:           [ 'i386: 207D9CF8-C3D5-3B1F-9A9E-021F167FFFAA', 'x86_64: 25F4A7F7-CB41-361A-9613-C07DD0D9A102' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sim_platform.dylib'
 current-version: 211
@@ -2469,7 +2474,7 @@ exports:
                        _os_unfair_lock_lock_with_options, _os_unfair_recursive_lock_lock_with_options ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C2CE4D3C-B55D-349C-8EB2-7A71E4EDBD15', 'x86_64: 064BCC83-E85A-3265-A855-33D2EC3A033B' ]
+uuids:           [ 'i386: C2CE4D3C-B55D-349C-8EB2-7A71E4EDBD15', 'x86_64: 88C6710D-1971-323E-A82F-258F730092E1' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sim_platform_host.dylib'
 current-version: 211
@@ -2500,7 +2505,7 @@ exports:
                        ___interposition_sim_system_os_unfair_recursive_lock_lock_with_options ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C7755093-B451-3759-B503-6484CF0D99C2', 'x86_64: 872F585E-BE08-3ACE-86F1-24D775074265' ]
+uuids:           [ 'i386: C7755093-B451-3759-B503-6484CF0D99C2', 'x86_64: 75596C53-E1F7-326B-A904-62A3792E6B71' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sim_pthread.dylib'
 current-version: 211
@@ -2526,7 +2531,7 @@ exports:
                        _pthread_stack_frame_decode_np ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D6773FC8-D925-3922-BE8B-789BE35DDC27', 'x86_64: EBE37410-0840-369E-9B9D-793526B23DDF' ]
+uuids:           [ 'i386: D6773FC8-D925-3922-BE8B-789BE35DDC27', 'x86_64: 1412F50A-8FD4-3DA0-B8DE-59948D090379' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_sim_pthread_host.dylib'
 current-version: 211
@@ -2547,10 +2552,10 @@ exports:
                        ___interposition_sim_system_pthread_stack_frame_decode_np ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AAE3FBF7-06A6-3E8B-B227-4F2966E704AC', 'x86_64: DAD01DE1-09E9-3A4F-A475-0C806478F1E2' ]
+uuids:           [ 'i386: AAE3FBF7-06A6-3E8B-B227-4F2966E704AC', 'x86_64: 688FC9CE-7A56-3C69-83D1-74789D373C06' ]
 platform:        ios
 install-name:    '/usr/lib/system/libsystem_trace.dylib'
-current-version: 1147.0.1
+current-version: 1147.0.3
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]
@@ -2608,7 +2613,7 @@ exports:
     objc-classes:    [ OS_os_log ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6D3D8BDA-B543-32B4-B118-A646F2688187', 'x86_64: D49C0183-D235-35FB-B3C0-14F521DA4BF5' ]
+uuids:           [ 'i386: 6D3D8BDA-B543-32B4-B118-A646F2688187', 'x86_64: 0F903496-E823-350F-A4A2-956A4A66B56C' ]
 platform:        ios
 install-name:    '/usr/lib/system/libunwind.dylib'
 current-version: 128.2
@@ -2630,10 +2635,10 @@ exports:
                        _unw_regname, _unw_resume, _unw_set_fpreg, _unw_set_reg, _unw_step ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 44A745E0-1D73-3560-AC8C-3660040A82E3', 'x86_64: 9A486F3D-BBFA-36F2-9105-42A059A13A8A' ]
+uuids:           [ 'i386: 44A745E0-1D73-3560-AC8C-3660040A82E3', 'x86_64: F7198349-D49E-3BBE-A8A4-1D26D4517C5B' ]
 platform:        ios
 install-name:    '/usr/lib/system/libxpc.dylib'
-current-version: 1738.0.3
+current-version: 1738.0.16
 parent-umbrella: System
 exports:         
   - archs:           [ i386 ]

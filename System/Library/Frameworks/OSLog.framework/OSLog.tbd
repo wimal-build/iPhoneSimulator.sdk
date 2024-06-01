@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7BC052F2-741F-3E12-81A3-CF02A43966E7' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 021E68EE-45CD-361D-A20E-24A5A149C670' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/OSLog.framework/OSLog'
-current-version: 1147.0.1
+current-version: 1147.0.3
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ __catalog_create, __catalog_create_with_chunk, __catalog_destroy, 

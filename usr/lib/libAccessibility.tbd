@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: 9487CD00-756C-3B42-8650-15AE8CD9F850' ]
+uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: D2B26499-0903-3F92-82C4-5254740795F2' ]
 platform:        ios
 install-name:    '/usr/lib/libAccessibility.dylib'
 exports:         
@@ -62,22 +62,22 @@ exports:
   - archs:           [ i386, x86_64 ]
     symbols:         [ _AXBeginListeningToUserDefaultsChanges, _AXCPCopySharedResourcesPreferencesDomainForDomain, 
                        _AXCPSharedResourcesDirectory, _AXDisallowsUIBasedAccessibilityFeatures, 
-                       _AXLocalizedStringForLocale, _AXNSLocalizedStringForLocale, 
+                       _AXLocalizationForLocale, _AXLocalizedStringForLocale, _AXNSLocalizedStringForLocale, 
                        _AXRetrieveSupportedAccessibilityLanguages, _AXSAccessibilityUtilitiesPath, 
                        _AXSVoltaDataDirectory, __AXClearIMPCachesNotification, __AXDarkenSystemColors, 
-                       __AXSAXInspectorEnabled, __AXSAXInspectorSetEnabled, __AXSAccessibilityCopyiTunesPreference, 
-                       __AXSAccessibilityEnabled, __AXSAccessibilityGetBooleaniTunesPreference, 
-                       __AXSAccessibilityHasNoticedOpaqueTouchDevice, __AXSAccessibilityPreferenceDomain, 
-                       __AXSAccessibilitySetiTunesPreference, __AXSAllowOpaqueTouchGestures, 
-                       __AXSAppleTVRemoteUsesSimpleGestures, __AXSApplicationAccessibilityEnabled, 
-                       __AXSApplicationAccessibilitySetEnabled, __AXSAssistiveTouchEnabled, 
-                       __AXSAssistiveTouchHardwareEnabled, __AXSAssistiveTouchRepairIncarnationModeEnabled, 
-                       __AXSAssistiveTouchScannerEnabled, __AXSAssistiveTouchScannerSetEnabled, 
-                       __AXSAssistiveTouchSetEnabled, __AXSAssistiveTouchSetHardwareEnabled, 
-                       __AXSAssistiveTouchSetRepairIncarnationModeEnabled, __AXSAssistiveTouchSetUIEnabled, 
-                       __AXSAssistiveTouchUIEnabled, __AXSAttentionAwarenessFeaturesEnabled, 
-                       __AXSAuditInspectionModeEnabled, __AXSAutoBrightnessEnabled, 
-                       __AXSAutomationEnabled, __AXSAutomationFauxCollectionViewCellsEnabled, 
+                       __AXSAXInspectorEnabled, __AXSAXInspectorSetEnabled, __AXSAccessibilityBundlesPath, 
+                       __AXSAccessibilityCopyiTunesPreference, __AXSAccessibilityEnabled, 
+                       __AXSAccessibilityGetBooleaniTunesPreference, __AXSAccessibilityHasNoticedOpaqueTouchDevice, 
+                       __AXSAccessibilityPreferenceDomain, __AXSAccessibilitySetiTunesPreference, 
+                       __AXSAllowOpaqueTouchGestures, __AXSAppleTVRemoteUsesSimpleGestures, 
+                       __AXSApplicationAccessibilityEnabled, __AXSApplicationAccessibilitySetEnabled, 
+                       __AXSAssistiveTouchEnabled, __AXSAssistiveTouchHardwareEnabled, 
+                       __AXSAssistiveTouchRepairIncarnationModeEnabled, __AXSAssistiveTouchScannerEnabled, 
+                       __AXSAssistiveTouchScannerSetEnabled, __AXSAssistiveTouchSetEnabled, 
+                       __AXSAssistiveTouchSetHardwareEnabled, __AXSAssistiveTouchSetRepairIncarnationModeEnabled, 
+                       __AXSAssistiveTouchSetUIEnabled, __AXSAssistiveTouchUIEnabled, 
+                       __AXSAttentionAwarenessFeaturesEnabled, __AXSAuditInspectionModeEnabled, 
+                       __AXSAutoBrightnessEnabled, __AXSAutomationEnabled, __AXSAutomationFauxCollectionViewCellsEnabled, 
                        __AXSAutomationFauxTableViewCellsEnabled, __AXSAutomationHitpointWarpingEnabled, 
                        __AXSAutomationLocalizedStringLookupInfoEnabled, __AXSAutomationLocalizedStringLookupInfoSetEnabled, 
                        __AXSAutomationPreferredLocalization, __AXSAutomationSetFauxCollectionViewCellsEnabled, 

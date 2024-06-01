@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3DEBC634-8C9B-323E-B903-FD1F697AC01B' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F8924AD4-E541-3792-822E-97E643EB8CF4' ]
 platform:        ios
 install-name:    '/usr/lib/libAudioToolboxUtility.dylib'
 exports:         

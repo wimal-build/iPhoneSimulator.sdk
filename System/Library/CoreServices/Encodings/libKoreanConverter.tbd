@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6E85C113-EEF7-3009-96B9-695BA504E3A4', 'x86_64: 40BEEF89-03AA-3012-9206-C1C6EBE72EDE' ]
+uuids:           [ 'i386: 6E85C113-EEF7-3009-96B9-695BA504E3A4', 'x86_64: A780E2D2-DD9B-352C-8FE5-BD0117640B50' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libKoreanConverter.dylib'
 current-version: 76

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: F884B757-61A0-3FB2-9D46-E441B3AC815A' ]
+uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: B01AB068-5F65-3160-A18E-8BEEE82C3EC0' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer'
 exports:         
@@ -187,6 +187,7 @@ exports:
                        _MPClientRadioControllerGetXPCInterface, _MPCloudControllerCanShowCloudDownloadButtonsDidChangeNotification, 
                        _MPCloudControllerCanShowCloudTracksDidChangeNotification, 
                        _MPCloudControllerCloudAddToPlaylistBehaviorDidChangeNotification, 
+                       _MPCloudControllerCloudLibraryFailureDidChangeNotification, 
                        _MPCloudControllerEnableCloudLibraryOptionMergeWithCloudLibrary, 
                        _MPCloudControllerEnableCloudLibraryOptionStartInitialImport, 
                        _MPCloudControllerErrorDomain, _MPCloudControllerGetSagaOnDiskDatabaseRevision, 
@@ -436,7 +437,8 @@ exports:
                        _MPModelPropertyGenreName, _MPModelPropertyHomeSharingAssetAvailable, 
                        _MPModelPropertyHomeSharingAssetProtectedContentSupportStorageFileURL, 
                        _MPModelPropertyHomeSharingAssetURL, _MPModelPropertyLyricsHasStoreLyrics, 
-                       _MPModelPropertyLyricsTTML, _MPModelPropertyLyricsText, _MPModelPropertyMediaClipPreviewArtwork, 
+                       _MPModelPropertyLyricsHasTimeSyncedLyrics, _MPModelPropertyLyricsTTML, 
+                       _MPModelPropertyLyricsText, _MPModelPropertyMediaClipPreviewArtwork, 
                        _MPModelPropertyMediaClipTitle, _MPModelPropertyMovieArtwork, 
                        _MPModelPropertyMovieDescriptionText, _MPModelPropertyMovieDownloadedDate, 
                        _MPModelPropertyMovieDuration, _MPModelPropertyMovieEditorialArtwork, 
@@ -615,8 +617,9 @@ exports:
                        _MPNowPlayingContentItemUserInfoKeyArtworkTemplateDictionary, 
                        _MPNowPlayingContentItemUserInfoKeyArtworkURL, _MPNowPlayingContentItemUserInfoKeyContainerUniqueID, 
                        _MPNowPlayingContentItemUserInfoKeyEndTime, _MPNowPlayingContentItemUserInfoKeyHasStoreLyrics, 
-                       _MPNowPlayingContentItemUserInfoKeyIsLibraryEligible, _MPNowPlayingContentItemUserInfoKeyIsLoading, 
-                       _MPNowPlayingContentItemUserInfoKeyIsPlaceholder, _MPNowPlayingContentItemUserInfoKeyPodcastEpisodeShareURL, 
+                       _MPNowPlayingContentItemUserInfoKeyHasTimeSyncedLyrics, _MPNowPlayingContentItemUserInfoKeyIsLibraryEligible, 
+                       _MPNowPlayingContentItemUserInfoKeyIsLoading, _MPNowPlayingContentItemUserInfoKeyIsPlaceholder, 
+                       _MPNowPlayingContentItemUserInfoKeyPodcastEpisodeShareURL, 
                        _MPNowPlayingContentItemUserInfoKeyPodcastEpisodeStreamURL, 
                        _MPNowPlayingContentItemUserInfoKeyPodcastFeedURL, _MPNowPlayingContentItemUserInfoKeyPodcastShareURL, 
                        _MPNowPlayingContentItemUserInfoKeyPodcastSupportsSubscription, 
@@ -666,6 +669,7 @@ exports:
                        _MPRestrictionsMonitorAllowsAccountModificationDidChangeNotification, 
                        _MPRestrictionsMonitorAllowsDeletionDidChangeNotification, 
                        _MPRestrictionsMonitorAllowsExplicitContentDidChangeNotification, 
+                       _MPRestrictionsMonitorAllowsMusicSubscriptionDidChangeNotification, 
                        _MPRestrictionsMonitorAllowsRadioPurchasesDidChangeNotification, 
                        _MPRestrictionsMonitorAllowsStorePurchasesDidChangeNotification, 
                        _MPRouteDiscoveryModeDescription, _MPRouteDiscoveryModeFromMRDiscoveryMode, 
@@ -785,13 +789,14 @@ exports:
                        _SSVMediaContentTasteItemTasteTypeToMPMediaEntityLikedState, 
                        __MPAVRouteConnectionDidConnectNotification, __MPAVRouteConnectionDidInvalidateNotification, 
                        __MPContentItemDidChangeNotification, __MPContentItemDidChangeUserInfoKeyDeltaItem, 
-                       __MPContentItemDidChangeUserInfoKeyDeltaRequest, __MPModelPropertyPlaylistEntryArtwork, 
-                       __MPModelPropertySongTrackCount, __MPMoviePlayerPlaybackRateDidChangeNotification, 
-                       __MPMoviePlayerReadyForDisplayDidChangeNotification, __MPMusicPlayerControllerArtworkDidChangeNotification, 
-                       __MPNowPlayingCollectionInfoCollectionTypeAlbum, __MPNowPlayingCollectionInfoCollectionTypePlaylist, 
-                       __MPNowPlayingCollectionInfoCollectionTypeRadio, __MPNowPlayingCollectionInfoKeyCollectionType, 
-                       __MPNowPlayingCollectionInfoKeyIdentifiers, __MPNowPlayingCollectionInfoKeyTitle, 
-                       __MPNowPlayingContentItemsDidChangeNotification, __MPNowPlayingInfoCenterPlaybackQueueDidChangeNotification, 
+                       __MPContentItemDidChangeUserInfoKeyDeltaRequest, __MPContentItemDidChangeUserInfoKeyImmediately, 
+                       __MPModelPropertyPlaylistEntryArtwork, __MPModelPropertySongTrackCount, 
+                       __MPMoviePlayerPlaybackRateDidChangeNotification, __MPMoviePlayerReadyForDisplayDidChangeNotification, 
+                       __MPMusicPlayerControllerArtworkDidChangeNotification, __MPNowPlayingCollectionInfoCollectionTypeAlbum, 
+                       __MPNowPlayingCollectionInfoCollectionTypePlaylist, __MPNowPlayingCollectionInfoCollectionTypeRadio, 
+                       __MPNowPlayingCollectionInfoKeyCollectionType, __MPNowPlayingCollectionInfoKeyIdentifiers, 
+                       __MPNowPlayingCollectionInfoKeyTitle, __MPNowPlayingContentItemsDidChangeNotification, 
+                       __MPNowPlayingInfoCenterPlaybackQueueDidChangeNotification, 
                        __MPNowPlayingInfoCenterPlaybackStateDidChangeNotification, 
                        __MPNowPlayingInfoPropertyAlbumiTunesStoreAdamIdentifier, 
                        __MPNowPlayingInfoPropertyAppMetrics, __MPNowPlayingInfoPropertyArtistiTunesStoreAdamIdentifier, 

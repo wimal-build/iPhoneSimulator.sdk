@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 68017FAA-DCE1-31DE-B07D-193E528607D5', 'x86_64: CA676A41-D7AE-359C-8428-EFF60B0F319B' ]
+uuids:           [ 'i386: 68017FAA-DCE1-31DE-B07D-193E528607D5', 'x86_64: D37F56DA-7A56-3C97-BEA8-C4FC01299454' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/HealthKit.framework/HealthKit'
 exports:         
@@ -415,12 +415,12 @@ exports:
                        _HKQuantityTypeIdentifierUVExposure, _HKQuantityTypeIdentifierVO2Max, 
                        _HKQuantityTypeIdentifierWaistCircumference, _HKQuantityTypeIdentifierWalkingHeartRateAverage, 
                        _HKQueryActivationStateToString, _HKReadAuthorizationOverrideEntitlement, 
-                       _HKRequiredReadAuthorizationTypeIdentifiersKey, _HKResearchStudySourceEntitlement, 
-                       _HKSafeDivision, _HKSafeObject, _HKSampleSortIdentifierEndDate, 
-                       _HKSampleSortIdentifierMostRecentEndDate, _HKSampleSortIdentifierMostRecentStartDate, 
-                       _HKSampleSortIdentifierStartDate, _HKSampleTypeActivityKey, 
-                       _HKSampleTypeAudioExposureMinimumSampleDuration, _HKSampleTypeMaximumSampleDuration, 
-                       _HKSemanticVersionCompare, _HKSemanticVersionFromString, _HKSemanticVersionIsUnknown, 
+                       _HKRequiredReadAuthorizationTypeIdentifiersKey, _HKSafeDivision, 
+                       _HKSafeObject, _HKSampleSortIdentifierEndDate, _HKSampleSortIdentifierMostRecentEndDate, 
+                       _HKSampleSortIdentifierMostRecentStartDate, _HKSampleSortIdentifierStartDate, 
+                       _HKSampleTypeActivityKey, _HKSampleTypeAudioExposureMinimumSampleDuration, 
+                       _HKSampleTypeMaximumSampleDuration, _HKSemanticVersionCompare, 
+                       _HKSemanticVersionFromString, _HKSemanticVersionIsUnknown, 
                        _HKSemanticVersionUnknown, _HKSemanticVersionsEqual, _HKSensitiveLogItem, 
                        _HKSeries123AtrialFibrillationDetectionSupportedDeviceRegions, 
                        _HKSeries123AtrialFibrillationDetectionSupportedStateForDeviceRegionAndWatchOSVersion, 
@@ -626,10 +626,11 @@ exports:
                        _kHKDefaultFirstDayOfFitnessWeek, _kHKDefaultFirstDayOfSleepWeek, 
                        _kHKDefaultLastDayOfFitnessWeek, _kHKDefaultUserWeightKG, 
                        _kHKDynamicAchievementDefinitionChangedNotification, _kHKFirstDayOfFitnessWeekDidChangeNotification, 
-                       _kHKFirstDayOfFitnessWeekPreferencesKey, _kHKHealthAppBadgesDidUpdateNotification, 
-                       _kHKHealthAppBundleIdentifier, _kHKHealthAppDaemonBundleIdentifier, 
-                       _kHKHealthCloudSharingDisabledDateKey, _kHKHealthCloudSharingDomain, 
-                       _kHKHealthDaemonActiveWorkoutServersDidUpdateNotification, 
+                       _kHKFirstDayOfFitnessWeekPreferencesKey, _kHKHAKeyCompletedBuddyVersion, 
+                       _kHKHAKeyCurrentBuddyVersion, _kHKHAKeyMinutesUntilFeedIsStale, 
+                       _kHKHealthAppBadgesDidUpdateNotification, _kHKHealthAppBundleIdentifier, 
+                       _kHKHealthAppDaemonBundleIdentifier, _kHKHealthCloudSharingDisabledDateKey, 
+                       _kHKHealthCloudSharingDomain, _kHKHealthDaemonActiveWorkoutServersDidUpdateNotification, 
                        _kHKHealthDaemonDidFinishLaunchingNotification, _kHKHealthPrivacyServiceBundleIdentifier, 
                        _kHKHealthSettingsShowMedicalIDOnWatchKey, _kHKHealthdBundleIdentifier, 
                        _kHKHeartAgeGatingAge, _kHKHeartRateKeyBradycardiaThresholdBPM, 
@@ -637,8 +638,7 @@ exports:
                        _kHKHeartRateKeyEnableStationaryDiscordanceDetection, _kHKHeartRateKeyStationaryDiscordanceMinimumBPM, 
                        _kHKHeartRateNotificationsPreferencesDomain, _kHKHeartRhythmDefaultsDomain, 
                        _kHKInternalSettingsKeyCHRHideTTR, _kHKInternalSettingsKeyCHRHideUnknownRecords, 
-                       _kHKInternalSettingsKeyCloudSyncEnabled, _kHKInternalSettingsKeyCompletedBuddyVersion, 
-                       _kHKInternalSettingsKeyCurrentBuddyVersion, _kHKInternalSettingsKeyEnableVideoPlayback, 
+                       _kHKInternalSettingsKeyCloudSyncEnabled, _kHKInternalSettingsKeyEnableVideoPlayback, 
                        _kHKInternalSettingsKeyForceBuddy, _kHKInternalSettingsKeyHealthCloudCHRStudyEnvironment, 
                        _kHKInternalSettingsKeyLastCloudSyncDateCheckEnabled, _kHKInternalSettingsKeyManateeEnabledForHSA2Accounts, 
                        _kHKInternalSettingsKeySpringboardVisibilityDefault, _kHKInternalSettingsKeySpringboardVisibilityNotification, 

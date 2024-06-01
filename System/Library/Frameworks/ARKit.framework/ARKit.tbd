@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CE0F560E-FAAD-3853-A3A3-CE89EC1EE118' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0C8E2D4E-5323-3C03-B93F-5067CF84D9CA' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ARKit.framework/ARKit'
 exports:         
@@ -129,7 +129,8 @@ exports:
                        _ARPresentationBackFacingImageSensorFrameRateUserDefaultsKey, 
                        _ARPresentationCACThresholdValue, _ARPresentationCompositorForceDisabled, 
                        _ARPresentationDisableRenderDecouplingKey, _ARPresentationEnableCACKey, 
-                       _ARPresentationForceDisplayMode, _ARPresentationForceWornModeSupported, 
+                       _ARPresentationForceDisplayMode, _ARPresentationForceHeldModeSupported, 
+                       _ARPresentationForceWornModeSupported, _ARPresentationFrameDropSoundEnabled, 
                        _ARPresentationInitCustomCompositorQueue, _ARPresentationMinVsyncsPerFrameKey, 
                        _ARPresentationMinimumThermalNotificationHysterisisWindow, 
                        _ARPresentationOverrideCACThreshold, _ARPresentationPerQuadCAC, 
@@ -163,10 +164,11 @@ exports:
                        _ARSessionFeaturePointAccumulationCount, _ARSessionForceRecordingDefaultsKey, 
                        _ARSessionMirroredFrameOutputUserDefaultsKey, _ARSessionQATracingEnabledUserDefaultsKey, 
                        _ARSessionQATracingForceQuitAppUserDefaultsKey, _ARSessionQATracingFramesLabelOffsetUserDefaultsKey, 
-                       _ARSessionQATracingScreenRecordingDefaultsKey, _ARSessionRecordingFilePathDefaultsKey, 
-                       _ARSessionReplayFilePathManuallyUserDefaultsKey, _ARSessionReplayFilePathUserDefaultsKey, 
-                       _ARSessionRunOptionsToString, _ARSessionUseIOKitUserDefaultsKey, 
-                       _ARSkeletonJointNameHead, _ARSkeletonJointNameLeftFoot, _ARSkeletonJointNameLeftHand, 
+                       _ARSessionQATracingScreenCustomScreenRecorderSTAR, _ARSessionQATracingScreenRecordingDefaultsKey, 
+                       _ARSessionRecordingFilePathDefaultsKey, _ARSessionReplayFilePathManuallyUserDefaultsKey, 
+                       _ARSessionReplayFilePathUserDefaultsKey, _ARSessionRunOptionsToString, 
+                       _ARSessionUseIOKitUserDefaultsKey, _ARSkeletonJointNameHead, 
+                       _ARSkeletonJointNameLeftFoot, _ARSkeletonJointNameLeftHand, 
                        _ARSkeletonJointNameLeftShoulder, _ARSkeletonJointNameRightFoot, 
                        _ARSkeletonJointNameRightHand, _ARSkeletonJointNameRightShoulder, 
                        _ARSkeletonJointNameRoot, _ARSphericalHarmonicsByApplyingRotation, 

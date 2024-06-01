@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DE751FE0-B1ED-3CF8-A3B2-62A102EB35CC', 'x86_64: 545B0AAA-976F-3871-99F0-54F497A63C07' ]
+uuids:           [ 'i386: DE751FE0-B1ED-3CF8-A3B2-62A102EB35CC', 'x86_64: 36498D98-F5A9-374D-A604-7713AA8084C9' ]
 platform:        ios
 install-name:    '/usr/lib/libutil.dylib'
 exports:         

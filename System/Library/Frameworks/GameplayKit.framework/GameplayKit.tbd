@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: 6B5D9AEA-BDD4-3605-8C44-04D6A0C2B501' ]
+uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: 58CF4D30-3420-32A6-9B54-E7F2DF078BF5' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GameplayKit.framework/GameplayKit'
 current-version: 89

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B50311D7-0542-3B3D-AB3D-485F0D917BED', 'x86_64: 61177E8B-E9C5-38A8-A0E9-B822EF619DFF' ]
+uuids:           [ 'i386: B50311D7-0542-3B3D-AB3D-485F0D917BED', 'x86_64: AE457A0D-5AA8-3A99-B802-A471CDEBC6FE' ]
 platform:        ios
 install-name:    '/usr/lib/libMobileGestaltExtensions.dylib'
 exports:         

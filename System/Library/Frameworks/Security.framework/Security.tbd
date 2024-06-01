@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: A076F26A-CBB9-3E87-A096-3D1E6F5D0EE0' ]
+uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: C9CC53B4-FC7A-33AA-8002-F91C5064CA44' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Security.framework/Security'
-current-version: 59306.0.3
+current-version: 59306.0.53
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _DERDecodeItem, _DEROidCompare, _SOSAccountPeerGotInSync, 
@@ -672,10 +672,11 @@ exports:
                        _SecTrustEvaluateAsync, _SecTrustEvaluateAsyncWithError, _SecTrustEvaluateFastAsync, 
                        _SecTrustEvaluateLeafOnly, _SecTrustEvaluateWithError, _SecTrustFlushResponseCache, 
                        _SecTrustGetAssetVersionNumber, _SecTrustGetCertificateAtIndex, 
-                       _SecTrustGetCertificateCount, _SecTrustGetDetails, _SecTrustGetKeychainsAllowed, 
-                       _SecTrustGetNetworkFetchAllowed, _SecTrustGetTrustExceptionsArray, 
-                       _SecTrustGetTrustResult, _SecTrustGetTrustStoreVersionNumber, 
-                       _SecTrustGetTypeID, _SecTrustGetVerifyTime, _SecTrustIsExpiredOnly, 
+                       _SecTrustGetCertificateCount, _SecTrustGetDetails, _SecTrustGetExceptionResetCount, 
+                       _SecTrustGetKeychainsAllowed, _SecTrustGetNetworkFetchAllowed, 
+                       _SecTrustGetTrustExceptionsArray, _SecTrustGetTrustResult, 
+                       _SecTrustGetTrustStoreVersionNumber, _SecTrustGetTypeID, _SecTrustGetVerifyTime, 
+                       _SecTrustIncrementExceptionResetCount, _SecTrustIsExpiredOnly, 
                        _SecTrustOTAPKIGetUpdatedAsset, _SecTrustOTASecExperimentCopyAsset, 
                        _SecTrustOTASecExperimentGetUpdatedAsset, _SecTrustReportNetworkingAnalytics, 
                        _SecTrustReportTLSAnalytics, _SecTrustSerialize, _SecTrustSetAnchorCertificates, 

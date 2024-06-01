@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 675763CF-270A-3F42-A3EB-710229F100E9' ]
+uuids:           [ 'i386: 1BA26A5E-287A-3B89-954E-7EE3ABFC4884', 'x86_64: 6EE52293-A342-3E80-A711-C85FB2320FDE' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics'
-current-version: 1348.1.1
+current-version: 1348.4
 compatibility-version: 64
 exports:         
   - archs:           [ i386 ]
@@ -1031,14 +1031,14 @@ exports:
                        _CGFontCreateWithName, _CGFontCreateWithPlatformFont, _CGFontCreateWithPlatformFontAndVariation, 
                        _CGFontCreateWithVariations, _CGFontDBAddFont, _CGFontDBAddFontReferencesAtPath, 
                        _CGFontDBAddFontsAtPath, _CGFontDBAddFontsFromPlist, _CGFontDBAddFontsInDirectory, 
-                       _CGFontDBApplyFunction, _CGFontDBCreate, _CGFontDBCreatePlist, 
-                       _CGFontDBGetFontWithName, _CGFontDBGetLocal, _CGFontDBPurgeFont, 
-                       _CGFontDBRelease, _CGFontDBRemoveFont, _CGFontDBSetInitializer, 
-                       _CGFontDefaultAllowsFontSmoothing, _CGFontDefaultGetAntialiasingStyle, 
-                       _CGFontDefaultGetSmoothingContrast, _CGFontDefaultGetSmoothingStyle, 
-                       _CGFontFinderApplyFunction, _CGFontFinderCopyAllURLs, _CGFontFinderCopyURLForName, 
-                       _CGFontFinderCopyURLForPlatformFont, _CGFontFinderCreate, 
-                       _CGFontFinderCreateFontWithName, _CGFontFinderCreateFontWithPlatformFont, 
+                       _CGFontDBApplyFunction, _CGFontDBCopyFontWithName, _CGFontDBCreate, 
+                       _CGFontDBCreatePlist, _CGFontDBGetFontWithName, _CGFontDBGetLocal, 
+                       _CGFontDBPurgeFont, _CGFontDBRelease, _CGFontDBRemoveFont, 
+                       _CGFontDBSetInitializer, _CGFontDefaultAllowsFontSmoothing, 
+                       _CGFontDefaultGetAntialiasingStyle, _CGFontDefaultGetSmoothingContrast, 
+                       _CGFontDefaultGetSmoothingStyle, _CGFontFinderApplyFunction, 
+                       _CGFontFinderCopyAllURLs, _CGFontFinderCopyURLForName, _CGFontFinderCopyURLForPlatformFont, 
+                       _CGFontFinderCreate, _CGFontFinderCreateFontWithName, _CGFontFinderCreateFontWithPlatformFont, 
                        _CGFontFinderGetDefault, _CGFontFinderRelease, _CGFontFinderRetain, 
                        _CGFontFinderSetDefault, _CGFontGetAscent, _CGFontGetCIDsForGlyphs, 
                        _CGFontGetCapHeight, _CGFontGetContainingBoundingBoxForGlyphs, 

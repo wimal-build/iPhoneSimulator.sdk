@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1F1017B5-3EF2-3749-ADBA-7C3313DC2C76' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4286ED32-DE24-313C-8E50-0A499B2EBE82' ]
 platform:        ios
 install-name:    '/usr/lib/libffi.dylib'
 current-version: 25

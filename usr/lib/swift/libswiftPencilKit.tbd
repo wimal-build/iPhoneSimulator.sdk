@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C5C17F23-F021-3BD3-BD0A-3CD64F953336' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EEF86621-E807-3CFA-AB01-70488385CC76' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftPencilKit.dylib'
 current-version: 0

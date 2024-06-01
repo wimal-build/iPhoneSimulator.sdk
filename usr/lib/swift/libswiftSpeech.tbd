@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6A401A80-6ABB-3546-B3A7-CE2F3F683547' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 56FF0BAC-3613-3523-ABA6-CF6AD00C8340' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftSpeech.dylib'
 current-version: 0

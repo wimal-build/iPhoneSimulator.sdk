@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADF9743D-D79A-39E8-80F1-2B867D8B6DF5', 'x86_64: 27C57804-A737-3171-9FC1-4D52457279F7' ]
+uuids:           [ 'i386: ADF9743D-D79A-39E8-80F1-2B867D8B6DF5', 'x86_64: 7092AB8E-0ECD-37C0-967D-A979FC466BDE' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/IntentsUI.framework/IntentsUI'
 exports:         

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A013C6E-E53F-3E50-B935-EA897A6E2263', 'x86_64: 0978C134-A3FC-3B85-9CE2-7FC857DD1B90' ]
+uuids:           [ 'i386: 2A013C6E-E53F-3E50-B935-EA897A6E2263', 'x86_64: 00C314AA-C6E9-3764-B978-E4CB47D58433' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftNetwork.dylib'
 current-version: 0

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: CE556BEF-0710-39CF-AC1E-D34B3429EEE0' ]
+uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: 71AF0C63-34DB-37DC-8EAD-12C17B908E22' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension'
 exports:         
@@ -444,7 +444,8 @@ exports:
                        _NEPolicyDelete, _NEPolicyDeleteAll, _NEPolicyLockSessionToProcess, 
                        _NEPolicyPersistDropAllFeature, _NEPolicyRegisterService, 
                        _NEPolicySessionDupSocket, _NEPolicySetDispatchQueue, _NEPolicySetDropPriorityLevel, 
-                       _NEPolicySetSessionPriority, _NEPolicyUnregisterService, _NERemoveValueFromIntKeyedDictionary, 
+                       _NEPolicySetLayer2DefaultDrop, _NEPolicySetSessionPriority, 
+                       _NEPolicyUnregisterService, _NERemoveValueFromIntKeyedDictionary, 
                        _NERepeatingEventCreate, _NERepeatingEventGetIntervalInMilliseconds, 
                        _NERepeatingEventGetTimesFired, _NERepeatingEventRelease, 
                        _NEResourcesCopyContentFilterExclusionList, _NEResourcesCopyLocalizedNSString, 

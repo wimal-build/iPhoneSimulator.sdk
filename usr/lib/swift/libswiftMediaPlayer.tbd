@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 58AFC9B5-8E99-3012-BC17-2A8560794EA9', 'x86_64: 73349B19-3075-345A-B93D-090696E30DA6' ]
+uuids:           [ 'i386: 58AFC9B5-8E99-3012-BC17-2A8560794EA9', 'x86_64: 8F9A4F38-BE87-3A11-A02C-AB88D394371F' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftMediaPlayer.dylib'
 current-version: 0

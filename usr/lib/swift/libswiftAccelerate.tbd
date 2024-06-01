@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 139F2C9B-FC40-3BF0-A7F8-E62C0943B72B', 'x86_64: CA68E3BB-B416-3279-93C8-3F71F11E0F1D' ]
+uuids:           [ 'i386: 139F2C9B-FC40-3BF0-A7F8-E62C0943B72B', 'x86_64: 2DB72A55-5CEB-3437-836B-39943D9E5AA4' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftAccelerate.dylib'
 current-version: 0

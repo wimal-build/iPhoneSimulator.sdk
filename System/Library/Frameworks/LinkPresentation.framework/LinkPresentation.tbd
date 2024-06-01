@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A17CC703-E52C-3212-86DC-AB14BC9A028B' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 624CEBEA-E6AB-3733-9E61-B09B84E9D214' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation'
-current-version: 118.3
+current-version: 119.10
 exports:         
   - archs:           [ i386, x86_64 ]
     re-exports:      [ '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting' ]
@@ -38,10 +38,10 @@ exports:
                        LPiTunesMediaTVSeasonMetadata ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 33243AFD-FAC9-383F-8E1B-58D0BCEB2601' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 16E181B6-D2B6-3E03-9EFA-98DF518E534A' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
-current-version: 118.3
+current-version: 119.10
 exports:         
   - archs:           [ i386, x86_64 ]
     objc-classes:    [ URLFormattingTestingOverrides ]
