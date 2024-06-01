@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F2F63001-9170-37A5-9943-EAFBB9F84426', 'x86_64: 29E6721D-2D82-3366-BB2B-1AA0C8FD006A' ]
+uuids:           [ 'i386: F2F63001-9170-37A5-9943-EAFBB9F84426', 'x86_64: 72DA61D0-5A04-3DBF-9AB6-72DE06B7AFA3' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Metal.framework/Metal'
-current-version: 211.50
+current-version: 213.2.3
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _MTLAddDeviceClass, _MTLCopyAllDevices, _MTLUseInterpose, 
@@ -89,11 +89,11 @@ exports:
                        _MTLCreateSystemDefaultDevice, _MTLDataTypeGetAlignment, _MTLDataTypeGetComponentCount, 
                        _MTLDataTypeGetComponentType, _MTLDataTypeGetShaderTypeName, 
                        _MTLDataTypeGetSignedType, _MTLDataTypeGetSize, _MTLDataTypeGetVectorDataType, 
-                       _MTLDataTypeString, _MTLDebugValidateMTLPixelFormat, _MTLFailureTypeGetEnabled, 
-                       _MTLFailureTypeGetErrorModeType, _MTLFailureTypeSetErrorModeType, 
-                       _MTLFeatureSetSupportsSamplingFromPixelFormat, _MTLGPUFamilySupportsSamplingFromPixelFormat, 
-                       _MTLGetGPUFamilyFromFeatureSet, _MTLGetReportFailureBlock, 
-                       _MTLGetShaderCachePath, _MTLGetTextureLevelInfoForDevice, 
+                       _MTLDataTypeString, _MTLDebugValidateMTLPixelFormat, _MTLDispatchListAppendBlock, 
+                       _MTLDispatchListApply, _MTLFailureTypeGetEnabled, _MTLFailureTypeGetErrorModeType, 
+                       _MTLFailureTypeSetErrorModeType, _MTLFeatureSetSupportsSamplingFromPixelFormat, 
+                       _MTLGPUFamilySupportsSamplingFromPixelFormat, _MTLGetGPUFamilyFromFeatureSet, 
+                       _MTLGetReportFailureBlock, _MTLGetShaderCachePath, _MTLGetTextureLevelInfoForDevice, 
                        _MTLGetTextureLevelInfoForDeviceWithOptions, _MTLGetWarningMode, 
                        _MTLHazardTrackingModeString, _MTLLibraryErrorDomain, _MTLLibraryPerformanceKeyCachedLibrary, 
                        _MTLLibraryPerformanceKeyCoreImageSPI, _MTLLibraryPerformanceKeyFunctionNames, 

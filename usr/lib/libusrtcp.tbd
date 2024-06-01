@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EEB64C5D-E7E6-3006-B8AC-C83365F77E88' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 062A898C-B54B-36F0-BB25-D942F9850900' ]
 platform:        ios
 install-name:    '/usr/lib/libusrtcp.dylib'
 exports:         

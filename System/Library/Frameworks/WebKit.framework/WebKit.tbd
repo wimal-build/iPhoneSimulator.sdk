@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: 5034EFAA-8342-3CFB-BB9E-0D3EC660DF3F' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: D43A0C7D-93F9-3A48-B95A-BFBB22602ECC' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/WebKit.framework/WebKit'
-current-version: 608.2.5
+current-version: 608.3.10
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _DatabaseServiceInitializer, _WKBundleFileHandleGetTypeID, 
@@ -213,10 +213,11 @@ exports:
                        _WKContextClearCachedCredentials, _WKContextClearCurrentModifierStateForTesting, 
                        _WKContextClearPluginClientPolicies, _WKContextClearSupportedPlugins, 
                        _WKContextClearVisitedLinks, _WKContextConfigurationAlwaysKeepAndReuseSwappedProcesses, 
-                       _WKContextConfigurationCopyApplicationCacheDirectory, _WKContextConfigurationCopyDiskCacheDirectory, 
-                       _WKContextConfigurationCopyIndexedDBDatabaseDirectory, _WKContextConfigurationCopyInjectedBundlePath, 
-                       _WKContextConfigurationCopyLocalStorageDirectory, _WKContextConfigurationCopyMediaKeysStorageDirectory, 
-                       _WKContextConfigurationCopyOverrideLanguages, _WKContextConfigurationCopyResourceLoadStatisticsDirectory, 
+                       _WKContextConfigurationCopyApplicationCacheDirectory, _WKContextConfigurationCopyCustomClassesForParameterCoder, 
+                       _WKContextConfigurationCopyDiskCacheDirectory, _WKContextConfigurationCopyIndexedDBDatabaseDirectory, 
+                       _WKContextConfigurationCopyInjectedBundlePath, _WKContextConfigurationCopyLocalStorageDirectory, 
+                       _WKContextConfigurationCopyMediaKeysStorageDirectory, _WKContextConfigurationCopyOverrideLanguages, 
+                       _WKContextConfigurationCopyResourceLoadStatisticsDirectory, 
                        _WKContextConfigurationCopyWebSQLDatabaseDirectory, _WKContextConfigurationCreate, 
                        _WKContextConfigurationCreateWithLegacyOptions, _WKContextConfigurationDiskCacheSizeOverride, 
                        _WKContextConfigurationFullySynchronousModeIsAllowedForTesting, 
@@ -224,8 +225,9 @@ exports:
                        _WKContextConfigurationPrewarmsProcessesAutomatically, _WKContextConfigurationProcessSwapsOnNavigation, 
                        _WKContextConfigurationProcessSwapsOnWindowOpenWithOpener, 
                        _WKContextConfigurationSetAlwaysKeepAndReuseSwappedProcesses, 
-                       _WKContextConfigurationSetApplicationCacheDirectory, _WKContextConfigurationSetDiskCacheDirectory, 
-                       _WKContextConfigurationSetDiskCacheSizeOverride, _WKContextConfigurationSetFullySynchronousModeIsAllowedForTesting, 
+                       _WKContextConfigurationSetApplicationCacheDirectory, _WKContextConfigurationSetCustomClassesForParameterCoder, 
+                       _WKContextConfigurationSetDiskCacheDirectory, _WKContextConfigurationSetDiskCacheSizeOverride, 
+                       _WKContextConfigurationSetFullySynchronousModeIsAllowedForTesting, 
                        _WKContextConfigurationSetIgnoreSynchronousMessagingTimeoutsForTesting, 
                        _WKContextConfigurationSetIndexedDBDatabaseDirectory, _WKContextConfigurationSetInjectedBundlePath, 
                        _WKContextConfigurationSetLocalStorageDirectory, _WKContextConfigurationSetMediaKeysStorageDirectory, 
@@ -775,6 +777,7 @@ exports:
                        _WKWebsiteDataStoreRemoveFetchCacheForOrigin, _WKWebsiteDataStoreSetPerOriginStorageQuota, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsDebugMode, _WKWebsiteDataStoreSetResourceLoadStatisticsDebugModeWithCompletionHandler, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsEnabled, _WKWebsiteDataStoreSetResourceLoadStatisticsPrevalentResourceForDebugMode, 
+                       _WKWebsiteDataStoreSetResourceLoadStatisticsShouldDowngradeReferrerForTesting, 
                        _WKWebsiteDataStoreSetServiceWorkerRegistrationDirectory, 
                        _WKWebsiteDataStoreSetStatisticsCacheMaxAgeCap, _WKWebsiteDataStoreSetStatisticsCrossSiteLoadWithLinkDecoration, 
                        _WKWebsiteDataStoreSetStatisticsGrandfathered, _WKWebsiteDataStoreSetStatisticsGrandfatheringTime, 
@@ -859,10 +862,10 @@ exports:
                        _WKWebsiteDataStore, _WKWebsiteDataStoreConfiguration, _WKWebsitePolicies ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: E4E32123-A75C-351D-AD67-69FC45040DE4' ]
+uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: FB9136CC-8FB1-3C0D-9BC4-22FAB76A4511' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
-current-version: 608.2.5
+current-version: 608.3.10
 exports:         
   - archs:           [ i386 ]
     objc-classes:    [ DOMDOMTokenList, DOMNodeFilter, WebCoreScrollView, WebPluginController ]

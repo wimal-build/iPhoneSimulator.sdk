@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: 46D68739-185A-3F20-9B4C-100420536C10' ]
+uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: C023392A-E398-3BB5-A224-D095DE2E812A' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreText.framework/CoreText'
 exports:         
@@ -211,8 +211,9 @@ exports:
                        _CTWriteDescriptionDictionaryToFile, __CTClearFontFallbacksCache, 
                        __CTCopyDefaultFontFallbacksDictionary, __CTEnumerateScriptRanges, 
                        __CTFontCreateWithNameAndSymbolicTraits, __CTGetCharacterClass, 
-                       __CTGetEmojiFontName, __CTGlyphInfoGetBaseString, __CTGlyphInfoGetFont, 
-                       __CTGlyphInfoGetGlyph, ___CTInitialize, _kCTBackgroundColorAttributeName, 
+                       __CTGetEmojiFontName, __CTGetFrameworkBundleForLocalization, 
+                       __CTGlyphInfoGetBaseString, __CTGlyphInfoGetFont, __CTGlyphInfoGetGlyph, 
+                       __CTSetFrameworkBundleForLocalization, ___CTInitialize, _kCTBackgroundColorAttributeName, 
                        _kCTBaselineAttributeName, _kCTBaselineClassAttributeName, 
                        _kCTBaselineClassHanging, _kCTBaselineClassIdeographicCentered, 
                        _kCTBaselineClassIdeographicHigh, _kCTBaselineClassIdeographicLow, 
@@ -286,18 +287,19 @@ exports:
                        _kCTFontQuickdrawFamilyNameKey, _kCTFontQuickdrawStyleKey, 
                        _kCTFontReferenceURLAttribute, _kCTFontRegistrationScopeAttribute, 
                        _kCTFontRegistrationUserInfoAttribute, _kCTFontSampleTextNameKey, 
-                       _kCTFontSearchDomainAttribute, _kCTFontSizeAttribute, _kCTFontSlantTrait, 
-                       _kCTFontStyleNameAttribute, _kCTFontStyleNameKey, _kCTFontSubFamilyNameKey, 
-                       _kCTFontSymbolicTrait, _kCTFontSystemAlternate, _kCTFontSystemAlternateBlack, 
-                       _kCTFontSystemAlternateBlackItalic, _kCTFontSystemAlternateBold, 
-                       _kCTFontSystemAlternateBoldItalic, _kCTFontSystemAlternateDemi, 
-                       _kCTFontSystemAlternateDemiItalic, _kCTFontSystemAlternateHeavy, 
-                       _kCTFontSystemAlternateHeavyItalic, _kCTFontSystemAlternateItalic, 
-                       _kCTFontSystemAlternateLight, _kCTFontSystemAlternateLightItalic, 
-                       _kCTFontSystemAlternateMedium, _kCTFontSystemAlternateMediumItalic, 
-                       _kCTFontSystemAlternateThin, _kCTFontSystemAlternateThinItalic, 
-                       _kCTFontSystemAlternateUltraLight, _kCTFontSystemAlternateUltraLightItalic, 
-                       _kCTFontSystemCondensed, _kCTFontSystemCondensedBlack, _kCTFontSystemCondensedBold, 
+                       _kCTFontSearchDomainAttribute, _kCTFontSizeAttribute, _kCTFontSizeCategoryAttribute, 
+                       _kCTFontSlantTrait, _kCTFontStyleNameAttribute, _kCTFontStyleNameKey, 
+                       _kCTFontSubFamilyNameKey, _kCTFontSymbolicTrait, _kCTFontSystemAlternate, 
+                       _kCTFontSystemAlternateBlack, _kCTFontSystemAlternateBlackItalic, 
+                       _kCTFontSystemAlternateBold, _kCTFontSystemAlternateBoldItalic, 
+                       _kCTFontSystemAlternateDemi, _kCTFontSystemAlternateDemiItalic, 
+                       _kCTFontSystemAlternateHeavy, _kCTFontSystemAlternateHeavyItalic, 
+                       _kCTFontSystemAlternateItalic, _kCTFontSystemAlternateLight, 
+                       _kCTFontSystemAlternateLightItalic, _kCTFontSystemAlternateMedium, 
+                       _kCTFontSystemAlternateMediumItalic, _kCTFontSystemAlternateThin, 
+                       _kCTFontSystemAlternateThinItalic, _kCTFontSystemAlternateUltraLight, 
+                       _kCTFontSystemAlternateUltraLightItalic, _kCTFontSystemCondensed, 
+                       _kCTFontSystemCondensedBlack, _kCTFontSystemCondensedBold, 
                        _kCTFontSystemCondensedDemi, _kCTFontSystemCondensedHeavy, 
                        _kCTFontSystemCondensedLight, _kCTFontSystemCondensedMedium, 
                        _kCTFontSystemCondensedThin, _kCTFontSystemCondensedUltraLight, 

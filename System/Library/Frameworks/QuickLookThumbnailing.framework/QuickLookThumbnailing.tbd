@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E7506D0D-5648-3137-8ABD-D035C71CD81E' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7BF7B28A-7D80-36B1-AD65-CADFA0FA70A0' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing'
 current-version: 0
@@ -30,11 +30,13 @@ exports:
                        QLURLHandler._externalResourcesToken, QLURLHandler._fileExtensionHandle, 
                        QLURLHandler._fileExtensionToken, QLURLHandler._fileURL, QLURLHandler._isAccessingSecurityScope, 
                        QLURLHandler._needsAccessToExternalResources, QLURLHandler._physicalFileExtensionHandle, 
-                       QLURLHandler._physicalFileExtensionToken, QLURLHandler._sandboxType ]
+                       QLURLHandler._physicalFileExtensionToken, QLURLHandler._sandboxType, 
+                       QLUTIAnalyzer._contentType ]
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _QLCreateCGImageWithData, _QLExternalThumbnailCacheDatabaseErrorDomain, 
-                       _QLExternalThumbnailCacheErrorDomain, _QLImageCreateForDefaultThumbnailGenerationFromData, 
-                       _QLTCreateCGContextWithSize, _QLTGetDefaultCacheLocation, 
+    symbols:         [ _QLCreateCGImageWithData, _QLCreateColorSpaceForThumbnailExtension, 
+                       _QLExternalThumbnailCacheDatabaseErrorDomain, _QLExternalThumbnailCacheErrorDomain, 
+                       _QLImageCreateForDefaultThumbnailGenerationFromData, _QLShouldUseExtendedRangeForContextWithColorspace, 
+                       _QLTCreateCGContext, _QLTCreateCGContextWithSize, _QLTGetDefaultCacheLocation, 
                        _QLTImageClassWithError, _QLTInitLogging, _QLTPrefersExtendedRange, 
                        _QLThumbnailAdditionMetadataKey, _QLThumbnailErrorDomain, 
                        _QLThumbnailGenerationRequestRepresentationTypeNone, _QLThumbnailHostContexErrorDomain, 
@@ -45,7 +47,7 @@ exports:
                        _QLThumbnailsServiceErrorDomain, _QL_SANDBOX_READ, __QLComputeValuesForCGContextCreationWithSizeAndScale, 
                        __QLCopyResourcePropertyForKey, __QLSetResourcePropertyForKey, 
                        _allSupportedRequestOperationRepresentationTypes, _allSupportedRequestRepresentationTypes, 
-                       _kQLThumbnailCacheFileName, _kQLThumbnailPropertyIconFlavorKey, 
+                       _kQLSupportedInController, _kQLThumbnailCacheFileName, _kQLThumbnailPropertyIconFlavorKey, 
                        _kQLThumbnailPropertyInlinePreviewModeKey, _kQLThumbnailPropertyYBaselineKey, 
                        _qltLogHandles ]
     objc-classes:    [ QLAsynchronousOperation, QLCacheBasicFileIdentifier, QLCacheBasicVersionedFileIdentifier, 
@@ -59,5 +61,6 @@ exports:
                        QLThumbnailGenerator, QLThumbnailHostContext, QLThumbnailItem, 
                        QLThumbnailMetadata, QLThumbnailProvider, QLThumbnailReply, 
                        QLThumbnailRepresentation, QLThumbnailRequestOperation, QLThumbnailServiceProxy, 
-                       QLThumbnailStoreRetrievalOperation, QLThumbnailVersion, QLURLHandler ]
+                       QLThumbnailStoreRetrievalOperation, QLThumbnailVersion, QLURLHandler, 
+                       QLUTIAnalyzer ]
 ...

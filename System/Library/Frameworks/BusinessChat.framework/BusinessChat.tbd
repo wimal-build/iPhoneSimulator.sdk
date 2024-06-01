@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C5052A3D-D665-3130-809D-551E5F3EA891' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 35D8A17E-976E-3AA4-B835-A1B5EF082B85' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/BusinessChat.framework/BusinessChat'
 exports:         
@@ -23,8 +23,8 @@ exports:
                        _kCryptorErrorDomain ]
     objc-classes:    [ BCApplePayManager, BCAuthenticationLabels, BCAuthenticationManager, 
                        BCAuthenticationRequest, BCAuthenticationResponse, BCChatAction, 
-                       BCChatButton, BCCryptor, BCError, BCImage, BCImageStore, BCInternalAuthenticationManager, 
-                       BCInternalAuthenticationRequest, BCInternalAuthenticationResponse, 
-                       BCLogger, BCMessage, BCMessageData, BCMessageInfo, BCOAuth2Parameters, 
-                       BCWebViewController ]
+                       BCChatButton, BCConstants, BCCryptor, BCError, BCImage, BCImageStore, 
+                       BCInternalAuthenticationManager, BCInternalAuthenticationRequest, 
+                       BCInternalAuthenticationResponse, BCLogger, BCMessage, BCMessageData, 
+                       BCMessageInfo, BCOAuth2Parameters, BCWebViewController ]
 ...

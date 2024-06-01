@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 159F017E-2A1F-3070-854F-0AA3388BAA47' ]
+uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 858C5C9A-E2B9-39AF-8FF0-2EB041D985AF' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Photos.framework/Photos'
-current-version: 3602.23.180
+current-version: 3612.27.220
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _PHAdjustmentDataOpaqueFormatIdentifier, _PHAssertPredicateContainsNoManagedObjects, 
@@ -69,8 +69,9 @@ exports:
                        _PHAssetExportRequestAlternatePhotoURLKey, _PHAssetExportRequestCopyFileURL, 
                        _PHAssetExportRequestCreateOutputDirectory, _PHAssetExportRequestCustomAccessibilityLabelForAsset, 
                        _PHAssetExportRequestCustomDateForAssetWithOptions, _PHAssetExportRequestError, 
-                       _PHAssetExportRequestErrorDomain, _PHAssetExportRequestFullSizePhotoURLKey, 
-                       _PHAssetExportRequestFullSizeVideoURLKey, _PHAssetExportRequestLocationMetadataOperationForAssetWithOptions, 
+                       _PHAssetExportRequestErrorDomain, _PHAssetExportRequestFilenameForAsset, 
+                       _PHAssetExportRequestFullSizePhotoURLKey, _PHAssetExportRequestFullSizeVideoURLKey, 
+                       _PHAssetExportRequestLocationMetadataOperationForAssetWithOptions, 
                        _PHAssetExportRequestMediaFormatConversionManager, _PHAssetExportRequestNeedsColorSpaceConversionForAssetWithOptions, 
                        _PHAssetExportRequestNeedsCustomAccessibilityLabelBakedInForAssetWithOptions, 
                        _PHAssetExportRequestOriginalAdjustmentDataFileURLKey, _PHAssetExportRequestPerformMediaConversion, 
@@ -81,20 +82,21 @@ exports:
                        _PHAssetLocationCoordinatesAreEqual, _PHAssetMediaAnalysisStringWithSingleAudioClassification, 
                        _PHAssetMediaAnalysisStringsWithMultipleAudioClassifications, 
                        _PHAssetMediaSubtypesDebugDescription, _PHAssetMediaTypeDebugDescription, 
-                       _PHAssetOriginalLocationForAsset, _PHAssetPlaybackStyleDebugDescription, 
-                       _PHAssetPlaybackVariationDebugDescription, _PHAssetPropertySetAdjustment, 
-                       _PHAssetPropertySetAesthetic, _PHAssetPropertySetAnalysisState, 
-                       _PHAssetPropertySetComments, _PHAssetPropertySetCore, _PHAssetPropertySetCuration, 
-                       _PHAssetPropertySetDescription, _PHAssetPropertySetDestinationAssetCopy, 
-                       _PHAssetPropertySetFaceWorker, _PHAssetPropertySetGridMetadata, 
-                       _PHAssetPropertySetIdentifier, _PHAssetPropertySetImageManager, 
-                       _PHAssetPropertySetImport, _PHAssetPropertySetKeywords, _PHAssetPropertySetLocalDate, 
+                       _PHAssetOriginalCreationDateForAsset, _PHAssetOriginalLocationForAsset, 
+                       _PHAssetPlaybackStyleDebugDescription, _PHAssetPlaybackVariationDebugDescription, 
+                       _PHAssetPropertySetAdjustment, _PHAssetPropertySetAesthetic, 
+                       _PHAssetPropertySetAnalysisState, _PHAssetPropertySetComments, 
+                       _PHAssetPropertySetCore, _PHAssetPropertySetCuration, _PHAssetPropertySetDescription, 
+                       _PHAssetPropertySetDestinationAssetCopy, _PHAssetPropertySetFaceWorker, 
+                       _PHAssetPropertySetGridMetadata, _PHAssetPropertySetIdentifier, 
+                       _PHAssetPropertySetImageManager, _PHAssetPropertySetImport, 
+                       _PHAssetPropertySetKeywords, _PHAssetPropertySetLocalDate, 
                        _PHAssetPropertySetMediaAnalysis, _PHAssetPropertySetOriginalMetadata, 
                        _PHAssetPropertySetPhotoIris, _PHAssetPropertySetPhotosInfoPanelExtended, 
                        _PHAssetPropertySetPhotosOneUp, _PHAssetPropertySetPlacesCore, 
                        _PHAssetPropertySetSceneAnalysis, _PHAssetPropertySetSceneprint, 
                        _PHAssetPropertySetUserActivity, _PHAssetReferenceType, _PHAssetResourceAnalysisTypeDescription, 
-                       _PHAvailabilityRequestCanDownloadKey, _PHAvailabilityRequestURLExpirationKey, 
+                       _PHAvailabilityRequestDownloadDidFailKey, _PHAvailabilityRequestURLExpirationKey, 
                        _PHBatchFetchingArrayBatchSizeOptionKey, _PHBatchFetchingArrayCacheSizeOptionKey, 
                        _PHBatchFetchingArrayFetchedObjectClassOptionKey, _PHBatchFetchingArrayPropertyHintOptionKey, 
                        _PHChooserListContinueEnumerating, _PHChooserListMoveFirst, 
@@ -143,7 +145,8 @@ exports:
                        _PHPhotosHighlightVisibilityStateIsVisibleInMonth, _PHQueryTransformExpressionConstantValue, 
                        _PHResourceDownloadRequestAdjustmentBaseFullSizePhotoURLKey, 
                        _PHResourceDownloadRequestAdjustmentBasePairedVideoURLKey, 
-                       _PHResourceDownloadRequestAdjustmentBaseVideoURLKey, _PHResourceDownloadRequestAdjustmentDataURLKey, 
+                       _PHResourceDownloadRequestAdjustmentBaseVideoURLKey, _PHResourceDownloadRequestAdjustmentDataBlobURLKey, 
+                       _PHResourceDownloadRequestAdjustmentDataBlobUTIKey, _PHResourceDownloadRequestAdjustmentDataURLKey, 
                        _PHResourceDownloadRequestAdjustmentDataUTIKey, _PHResourceDownloadRequestAlternatePhotoURLKey, 
                        _PHResourceDownloadRequestErrorDomain, _PHResourceDownloadRequestFullSizePhotoURLKey, 
                        _PHResourceDownloadRequestFullSizeVideoURLKey, _PHResourceDownloadRequestOriginalAdjustmentDataURLKey, 

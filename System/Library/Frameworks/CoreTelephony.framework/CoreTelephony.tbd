@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DF73425C-6876-3347-9359-77900FBA1F08', 'x86_64: 279815B9-8F5A-328C-B8E6-7DE127DEF395' ]
+uuids:           [ 'i386: DF73425C-6876-3347-9359-77900FBA1F08', 'x86_64: 0E908FC3-1EED-318E-B98E-D8D8BAF3035F' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony'
 current-version: 0
@@ -375,8 +375,8 @@ exports:
                        __CTServerConnectionGetXpcConnection, __CTServerConnectionHandleReply, 
                        __CTServerConnectionHideDataIndicator, __CTServerConnectionHideRatIndicator, 
                        __CTServerConnectionICloudAccountReset, __CTServerConnectionInjectCellBroadcastMessage, 
-                       __CTServerConnectionInstallCarrierBundle, __CTServerConnectionIsAnyCallActiveOrHeld, 
-                       __CTServerConnectionIsCDMAInternationalRoamingSettingAllowed, 
+                       __CTServerConnectionInjectCellBroadcastMessageWithWac, __CTServerConnectionInstallCarrierBundle, 
+                       __CTServerConnectionIsAnyCallActiveOrHeld, __CTServerConnectionIsCDMAInternationalRoamingSettingAllowed, 
                        __CTServerConnectionIsDataAttached, __CTServerConnectionIsDataAttachedForPreferredDataSIM, 
                        __CTServerConnectionIsDefaultConnection, __CTServerConnectionIsEmergencyNumber, 
                        __CTServerConnectionIsEmergencyNumberWithWhitelistIncluded, 

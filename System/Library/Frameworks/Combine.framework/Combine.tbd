@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 317004A6-6178-3168-BAAA-791318908F0A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C396CD52-F673-3CA5-9E04-F7753973C9CF' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Combine.framework/Combine'
 current-version: 132.10

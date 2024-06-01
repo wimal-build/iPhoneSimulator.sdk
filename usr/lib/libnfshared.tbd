@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3174EAC3-79D3-33C3-B712-F016940FEDA6' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4E61BD2E-3607-302E-94E6-B4F98832C9B8' ]
 platform:        ios
 install-name:    '/usr/lib/libnfshared.dylib'
 exports:         
@@ -24,6 +24,7 @@ exports:
                        _resetAWDLoadStackExceptionCount ]
     objc-classes:    [ NFAWDLogger, NFCurrency, NFJSONEncoder, NFMSEIParser, NFMemoryObserver, 
                        NFNdefMessageInternal, NFNdefRecordInternal, NFPowerAssertion, 
-                       NFPowerObserver, NFPreferenceObserver, NFPropertyCoder, NFRunScriptParameters, 
-                       NFTLV, NFTagInternal, NFTimer, NFWeakReference ]
+                       NFPowerObserver, NFPreferenceObserver, NFPropertyCoder, NFReaderSessionConfig, 
+                       NFRunScriptParameters, NFTLV, NFTagInternal, NFTimer, NFVASPassConfig, 
+                       NFWeakReference ]
 ...

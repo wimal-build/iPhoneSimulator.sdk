@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D289D2E6-6ECC-3CFC-A3C6-AB87248C72BA', 'x86_64: 87D2EAAE-D933-3527-8293-FA8077249B44' ]
+uuids:           [ 'i386: D289D2E6-6ECC-3CFC-A3C6-AB87248C72BA', 'x86_64: B2149C53-C53F-3DEB-8C7D-B0A48DAACBA1' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreVideo.framework/CoreVideo'
 current-version: 1.5

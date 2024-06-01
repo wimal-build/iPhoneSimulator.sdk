@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: 87FBE84E-6D5F-3029-AB16-58088DF02D16' ]
+uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: 1287EDE0-8D30-3231-B997-FD73F082CFF2' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GameKit.framework/GameKit'
-current-version: 665.2
+current-version: 665.11
 exports:         
   - archs:           [ i386 ]
     re-exports:      [ '/System/Library/PrivateFrameworks/GameCenter.framework/GameCenter' ]
@@ -33,7 +33,7 @@ exports:
                        _kGameCenterGameCenterVersionString ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: 537D8CAE-2A0B-3142-99AC-577F011613E6' ]
+uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: D520D7B7-5863-39D1-973F-371E9F5CC314' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:         
@@ -396,7 +396,7 @@ exports:
                        _GKStateMachine._validTransitions ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: 1A60410A-8343-3D45-A9C5-4673A4F1B708' ]
+uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: CF3E9381-26BD-3CEB-9E39-F8645075D214' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 exports:         
@@ -444,49 +444,49 @@ exports:
                        _GKExtensionMessageDashboardAssetNames, _GKExtensionMessageLeaderboardNames, 
                        _GKExtensionMessageLeaderboardSetNames, _GKExtensionMessageParamKey, 
                        _GKExtensionMessagePlayerID, _GKExtensionMessagePlayerInternal, 
-                       _GKFixedHeightSentinel, _GKFriendCodeKey, _GKFriendSupportPageURLKey, 
-                       _GKGameCenterExtensionIsValidEntitlement, _GKGameCenterExtensionPointName, 
-                       _GKGetEnabledNotifications, _GKGetNotificationCenterEnabled, 
-                       _GKGridLayoutKeyContentBoxMetricKey, _GKGridLayoutKeyHeaderMetricKey, 
-                       _GKGridLayoutKeyPlaceholderMetricKey, _GKGridLayoutKeySearchBarMetricKey, 
-                       _GKGridLayoutKeySearchPlaceholderMetricKey, _GKGridLayoutKeySegmentedBoxMetricKey, 
-                       _GKGridLayoutKeySegmentedControlMetricKey, _GKGridLayoutKeyShowMoreMetricKey, 
-                       _GKHostedAuthenticateModeKey, _GKInvalidReferenceZPosition, 
-                       _GKIsAvatarEditingSupported, _GKLoadStateContentLoaded, _GKLoadStateError, 
-                       _GKLoadStateInitial, _GKLoadStateLoadingContent, _GKLoadStateNoContent, 
-                       _GKLoadStateRefreshingContent, _GKMatchmakerExtensionBundleIdentifier, 
-                       _GKPingDaemon, _GKRectDivideYIntoThreeConsumingMiddle, _GKRectEnforceMinimumHeight, 
-                       _GKRectsCenterXInRect, _GKRectsCenterYInRect, _GKRemoteUIAliasKey, 
-                       _GKRemoteUIAltDSIDKey, _GKRemoteUIAppleIDKey, _GKRemoteUIApplyThemeKey, 
-                       _GKRemoteUIAuthCancelURL, _GKRemoteUIAuthErrorMessage, _GKRemoteUIAuthOKURL, 
-                       _GKRemoteUIAuthPassword, _GKRemoteUIAuthTitle, _GKRemoteUIAuthTokenKey, 
-                       _GKRemoteUIAuthUserName, _GKRemoteUIErrorDomain, _GKRemoteUIFirstNameKey, 
-                       _GKRemoteUIIsAuthenticatedKey, _GKRemoteUILastNameKey, _GKRemoteUILayoutStyleKey, 
-                       _GKRemoteUIPlayerIDKey, _GKRemoteUIPushTokenKey, _GKRemoteUIShouldAllowNearbyMultiplayer, 
-                       _GKSentFriendRequestNotificationName, _GKSentFriendRequestPlayerListKey, 
-                       _GKServiceInterfaceController, _GKServiceViewControllerCreatedNotification, 
-                       _GKServiceViewControllerNewHostPIDKey, _GKSetNotificationCenterEnabled, 
-                       _GKSetNotificationsEnabled, _GKSwipeStateAnimatingOpen, _GKSwipeStateAnimatingShut, 
-                       _GKSwipeStateEditing, _GKSwipeStateNothing, _GKSwipeStateTracking, 
-                       _GKTerminateDaemon, _GKTournamentExtensionBundleIdentifier, 
-                       _GKTurnBasedMatchmakerExtensionBundleIdentifier, _GKViewServiceCurrentGameKey, 
-                       _GKViewServiceHostPIDKey, _GKViewServiceLocalPlayerKey, _GKViewServiceStatusBarHeightKey, 
-                       _IntegralPositionForBounds, _MAX_HUES, __GKInterfaceOrientationName, 
-                       __GKIsClientAppUsingRTL, __GKIsRemoteUIUsingPadIdiom, __GKShortVCDescription, 
-                       __GKVector3IsVector3Zero, __gkRangeFromToDescription, _kCellResuseIdentifier, 
-                       _kFooterResuseIdentifier ]
+                       _GKExtensionProtocolSecureCodedClasses, _GKFixedHeightSentinel, 
+                       _GKFriendCodeKey, _GKFriendSupportPageURLKey, _GKGameCenterExtensionIsValidEntitlement, 
+                       _GKGameCenterExtensionPointName, _GKGetEnabledNotifications, 
+                       _GKGetNotificationCenterEnabled, _GKGridLayoutKeyContentBoxMetricKey, 
+                       _GKGridLayoutKeyHeaderMetricKey, _GKGridLayoutKeyPlaceholderMetricKey, 
+                       _GKGridLayoutKeySearchBarMetricKey, _GKGridLayoutKeySearchPlaceholderMetricKey, 
+                       _GKGridLayoutKeySegmentedBoxMetricKey, _GKGridLayoutKeySegmentedControlMetricKey, 
+                       _GKGridLayoutKeyShowMoreMetricKey, _GKHostedAuthenticateModeKey, 
+                       _GKInvalidReferenceZPosition, _GKIsAvatarEditingSupported, 
+                       _GKLoadStateContentLoaded, _GKLoadStateError, _GKLoadStateInitial, 
+                       _GKLoadStateLoadingContent, _GKLoadStateNoContent, _GKLoadStateRefreshingContent, 
+                       _GKMatchmakerExtensionBundleIdentifier, _GKPingDaemon, _GKRectDivideYIntoThreeConsumingMiddle, 
+                       _GKRectEnforceMinimumHeight, _GKRectsCenterXInRect, _GKRectsCenterYInRect, 
+                       _GKRemoteUIAliasKey, _GKRemoteUIAltDSIDKey, _GKRemoteUIAppleIDKey, 
+                       _GKRemoteUIApplyThemeKey, _GKRemoteUIAuthCancelURL, _GKRemoteUIAuthErrorMessage, 
+                       _GKRemoteUIAuthOKURL, _GKRemoteUIAuthPassword, _GKRemoteUIAuthTitle, 
+                       _GKRemoteUIAuthTokenKey, _GKRemoteUIAuthUserName, _GKRemoteUIErrorDomain, 
+                       _GKRemoteUIFirstNameKey, _GKRemoteUIIsAuthenticatedKey, _GKRemoteUILastNameKey, 
+                       _GKRemoteUILayoutStyleKey, _GKRemoteUIPlayerIDKey, _GKRemoteUIPushTokenKey, 
+                       _GKRemoteUIShouldAllowNearbyMultiplayer, _GKSentFriendRequestNotificationName, 
+                       _GKSentFriendRequestPlayerListKey, _GKServiceInterfaceController, 
+                       _GKServiceViewControllerCreatedNotification, _GKServiceViewControllerNewHostPIDKey, 
+                       _GKSetNotificationCenterEnabled, _GKSetNotificationsEnabled, 
+                       _GKSwipeStateAnimatingOpen, _GKSwipeStateAnimatingShut, _GKSwipeStateEditing, 
+                       _GKSwipeStateNothing, _GKSwipeStateTracking, _GKTerminateDaemon, 
+                       _GKTournamentExtensionBundleIdentifier, _GKTurnBasedMatchmakerExtensionBundleIdentifier, 
+                       _GKViewServiceCurrentGameKey, _GKViewServiceHostPIDKey, _GKViewServiceLocalPlayerKey, 
+                       _GKViewServiceStatusBarHeightKey, _IntegralPositionForBounds, 
+                       _MAX_HUES, __GKInterfaceOrientationName, __GKIsClientAppUsingRTL, 
+                       __GKIsRemoteUIUsingPadIdiom, __GKShortVCDescription, __GKVector3IsVector3Zero, 
+                       __gkRangeFromToDescription, _kCellResuseIdentifier, _kFooterResuseIdentifier ]
     objc-classes:    [ GKAccountRemoteUIController, GKAchievementDataSource, GKAchievementIconView, 
                        GKAchievementSharingInfo, GKAchievementViewController, GKAcquireFocusWorkaroundView, 
                        GKAggregateCollectionViewWrapper, GKAggregateMapping, GKAuthenticateExtensionHostContext, 
-                       GKAuthenticateHostViewController, GKAvatarContainerView, GKAvatarImageBrush, 
-                       GKBackgroundTileImageView, GKBadgedGameIconBrush, GKBaseBubbleWithTextControl, 
-                       GKBaseComposeController, GKBaseComposeHeaderField, GKBaseGameCell, 
-                       GKBasePlayerCell, GKBasicCollectionViewController, GKBasicCollectionViewDataSource, 
-                       GKBrush, GKBrushList, GKBubbleControl, GKBubbleFlowAnimator, 
-                       GKBubbleFlowBubbleControl, GKBubbleFlowContainerView, GKBubbleFlowOverlayView, 
-                       GKBubbleFlowRootViewController, GKBubbleLayout, GKBubbleMeshAnimator, 
-                       GKBubblePathAnimator, GKBubbleSet, GKBubbleShape, GKBubbleView, 
-                       GKButton, GKButtonView, GKButtonWithContentSizeCorrected2, 
+                       GKAuthenticateHostViewController, GKAvatarContainerView, GKAvatarImage, 
+                       GKAvatarImageBrush, GKBackgroundTileImageView, GKBadgedGameIconBrush, 
+                       GKBaseBubbleWithTextControl, GKBaseComposeController, GKBaseComposeHeaderField, 
+                       GKBaseGameCell, GKBasePlayerCell, GKBasicCollectionViewController, 
+                       GKBasicCollectionViewDataSource, GKBrush, GKBrushList, GKBubbleControl, 
+                       GKBubbleFlowAnimator, GKBubbleFlowBubbleControl, GKBubbleFlowContainerView, 
+                       GKBubbleFlowOverlayView, GKBubbleFlowRootViewController, GKBubbleLayout, 
+                       GKBubbleMeshAnimator, GKBubblePathAnimator, GKBubbleSet, GKBubbleShape, 
+                       GKBubbleView, GKButton, GKButtonView, GKButtonWithContentSizeCorrected2, 
                        GKCancelSwipeToEditGestureRecognizer, GKCellSelectedBackgroundView, 
                        GKCenteringScrollView, GKChallengeComposeController, GKChallengeDataSource, 
                        GKChallengeEventHandlerUIDelegate, GKChallengeIssueExtensionHostContext, 
@@ -592,7 +592,7 @@ exports:
                        GKUITheme._resourceCache ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: 2B982C07-FA76-3631-AF60-0BBCC18DBCDE' ]
+uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: DF8DA1CB-CB98-3460-89E2-059094B8B135' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:         

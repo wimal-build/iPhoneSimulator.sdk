@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7D568B5F-0772-31A2-ACAA-207A8143F831', 'x86_64: 8FC9D12C-7716-3232-BD78-E45741A0B13B' ]
+uuids:           [ 'i386: 7D568B5F-0772-31A2-ACAA-207A8143F831', 'x86_64: AD4CE22B-F6F2-34C5-8145-553E00F1D26E' ]
 platform:        ios
 install-name:    '/usr/lib/libnetwork.dylib'
 exports:         
@@ -660,6 +660,7 @@ exports:
                        _nw_parameters_set_service_class, _nw_parameters_set_should_trust_invalid_certificates, 
                        _nw_parameters_set_sleep_keepalive_interval, _nw_parameters_set_source_application, 
                        _nw_parameters_set_source_application_by_bundle_id, _nw_parameters_set_source_application_by_bundle_id_internal, 
+                       _nw_parameters_set_source_application_by_external_bundle_id, 
                        _nw_parameters_set_ssl_cipher_suites, _nw_parameters_set_tfo, 
                        _nw_parameters_set_tfo_no_cookie, _nw_parameters_set_tls, 
                        _nw_parameters_set_tls13_enabled, _nw_parameters_set_tls_enforce_ev, 

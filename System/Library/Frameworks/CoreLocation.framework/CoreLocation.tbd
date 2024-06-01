@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: 92626881-3E2A-3CEE-902E-BF8D51D0C68E' ]
+uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: B170AE12-01DE-3B02-A3E2-DB65516AAE56' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreLocation.framework/CoreLocation'
-current-version: 2387.0.5
+current-version: 2388.0.21
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _CLClientClearNvramData, _CLClientCreate, _CLClientEnableNmeaOutput, 
@@ -76,6 +76,7 @@ exports:
                        _kCLLocationAccuracyNearestTenMeters, _kCLLocationAccuracyThreeKilometers, 
                        _kCLLocationCoordinate2DInvalid, _kCLLocationIntegrityHigh, 
                        _kCLLocationIntegrityLow, _kCLLocationIntegrityMedium, _kCLLocationIntegrityNone, 
+                       _kCLPolygonalRegionMaxVertices, _kCLPolygonalRegionMinVertices, 
                        _kInvalidMacAddress ]
     objc-classes:    [ CLAssertion, CLBeacon, CLBeaconIdentityConstraint, CLBeaconRegion, 
                        CLCircularRegion, CLEmergencyEnablementAssertion, CLFloor, 
@@ -85,6 +86,7 @@ exports:
                        CLSimulationManager, CLStateTracker, CLVehicleHeading, CLVehicleSpeed, 
                        CLVisit, _CLLSLHeading, _CLLSLHeadingEstimation, _CLLSLHeadingSupplInfo, 
                        _CLLSLLocation, _CLLSLLocationCoordinate, _CLLSLMapRoadSegment, 
-                       _CLLocationGroundAltitude, _CLPlaceInference, _CLRangingPeer, 
-                       _CLRangingPeerDistance, _CLVIOEstimation ]
+                       _CLLocationGroundAltitude, _CLPlaceInference, _CLPolygonalRegion, 
+                       _CLRangingPeer, _CLRangingPeerDistance, _CLVIOEstimation, 
+                       _CLVertex ]
 ...

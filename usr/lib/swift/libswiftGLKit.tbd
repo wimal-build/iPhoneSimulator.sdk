@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B59D91AC-1FF3-35D3-A569-A335D5973F85', 'x86_64: 75C7B6F5-94E3-37C7-8311-DBD34D2CDD10' ]
+uuids:           [ 'i386: B59D91AC-1FF3-35D3-A569-A335D5973F85', 'x86_64: 76F0DC40-A103-3443-9061-3CB505590AF1' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftGLKit.dylib'
 current-version: 0

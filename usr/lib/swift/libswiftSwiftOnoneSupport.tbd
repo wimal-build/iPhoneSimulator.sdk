@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 95803EA1-6E91-3418-9479-0EA6FD322DE5', 'x86_64: DDE647AC-001D-35CD-9052-BAEF709F3673' ]
+uuids:           [ 'i386: 95803EA1-6E91-3418-9479-0EA6FD322DE5', 'x86_64: 1C358EC3-3EE3-3224-906A-793D7DABFE22' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftSwiftOnoneSupport.dylib'
 current-version: 1100.2.255

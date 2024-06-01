@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A5CCE06-7AAD-3814-9C9E-34B95EEF6BD7', 'x86_64: 97C6B436-D0BE-3F3A-B2A1-D5C263EE35D2' ]
+uuids:           [ 'i386: 2A5CCE06-7AAD-3814-9C9E-34B95EEF6BD7', 'x86_64: 66BE2FC5-E2ED-356E-B268-850885D46254' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ContactsUI.framework/ContactsUI'
 current-version: 33
@@ -32,10 +32,11 @@ exports:
                        _CNUIIsContacts, _CNUIIsDDActionsService, _CNUIIsFaceTime, 
                        _CNUIIsFirstParty, _CNUIIsMessages, _CNUIIsMobilePhone, _CNUIIsWatchCompanion, 
                        _CNUILogAvatarView, _CNUILogContactCard, _CNUILogContactList, 
-                       _CNUIPixelAlignedPoint, _CNUIPixelAlignedRect, _CNUIPixelAlignedSize, 
-                       _CNUIRoundToViewScale, _CNUISetLoggingBlock, _CNUISetUseSiriLocalization, 
-                       _CNUIShouldUseSiriLocalization, __CNUILog, _kCNActionViewMaxLabelWidth, 
-                       _kCNActionViewPlatterSize, _kCNTransportButtonSize ]
+                       _CNUILogContactPhotoPicker, _CNUIPixelAlignedPoint, _CNUIPixelAlignedRect, 
+                       _CNUIPixelAlignedSize, _CNUIRoundToViewScale, _CNUISetLoggingBlock, 
+                       _CNUISetUseSiriLocalization, _CNUIShouldUseSiriLocalization, 
+                       __CNUILog, _kCNActionViewMaxLabelWidth, _kCNActionViewPlatterSize, 
+                       _kCNTransportButtonSize ]
     objc-classes:    [ CNActionItem, CNActionView, CNActionsView, CNAvatarCardController, 
                        CNAvatarImageRenderer, CNAvatarImageRendererSettings, CNAvatarImageRenderingScope, 
                        CNAvatarView, CNAvatarViewController, CNAvatarViewControllerSettings, 
@@ -56,8 +57,9 @@ exports:
                        CNMeCardSharingResult, CNMeCardSharingSettingsViewController, 
                        CNMonogrammer, CNMultipleUnknownContactsViewController, CNPhotoPickerViewController, 
                        CNPostalAddressEditorNavigationController, CNPropertyGroupItem, 
-                       CNQuickAction, CNQuickActionsView, CNStarkCardViewController, 
-                       CNStarkContactViewController, CNStarkContactsBrowserViewController, 
+                       CNQuickAction, CNQuickActionsView, CNSharingProfileOnboardingAudienceViewController, 
+                       CNSharingProfileOnboardingFlowManager, CNSharingProfileOnboardingPhotoSelectionViewController, 
+                       CNStarkCardViewController, CNStarkContactViewController, CNStarkContactsBrowserViewController, 
                        CNStarkContactsListViewController, CNTransportButton, CNUIColorRepository, 
                        CNUIContactsEnvironment, CNUIDataCollector, CNUIDraggingContacts, 
                        CNUIFamilyMemberContactsController, CNUIFamilyMemberDowntimeContactPickerController, 

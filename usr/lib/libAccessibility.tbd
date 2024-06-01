@@ -1,13 +1,15 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: D2B26499-0903-3F92-82C4-5254740795F2' ]
+uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: 3E23C0C2-C272-304D-9A8E-A0DD7F92A535' ]
 platform:        ios
 install-name:    '/usr/lib/libAccessibility.dylib'
 exports:         
   - archs:           [ i386 ]
     symbols:         [ __AXSAccessibilityEnablers, __AXSAssistiveTouchAlwaysShowMenu, 
                        __AXSAssistiveTouchSetAlwaysShowMenu, __AXSContextKitContextEnabled, 
-                       __AXSForceAllowWebScaling, __AXSHomeClickSensitivity, __AXSReportScreenshots, 
+                       __AXSForceAllowWebScaling, __AXSHearingAidEarIndependenceEnabled, 
+                       __AXSHearingAidEarIndependenceSetEnabled, __AXSHearingCopyPairedUUIDs, 
+                       __AXSHearingSetPairedUUIDs, __AXSHomeClickSensitivity, __AXSReportScreenshots, 
                        __AXSSetContextKitContextEnabled, __AXSSetForceAllowWebScaling, 
                        __AXSSetHomeClickSensitivity, __AXSSetReportScreenshots, __AXSVideosPreferenceDomain, 
                        __AXSZoomTouchToSpeakEnabled, __AXSZoomTouchToSpeakSetEnabled, 
@@ -111,12 +113,10 @@ exports:
                        __AXSGuidedAccessSetHasPasscode, __AXSGuidedAccessStartSession, 
                        __AXSHandleHomeButtonPressSwallowedForGuidedAccess, __AXSHandleTripleClickHomeButtonPress, 
                        __AXSHearingAidComplianceEnabled, __AXSHearingAidComplianceSetEnabled, 
-                       __AXSHearingAidEarIndependenceEnabled, __AXSHearingAidEarIndependenceSetEnabled, 
                        __AXSHearingAidRingtoneStreamingEnabled, __AXSHearingAidRingtoneStreamingSetEnabled, 
-                       __AXSHearingCopyPairedUUIDs, __AXSHearingDevicePairedEars, 
-                       __AXSHearingSetDevicePairedEars, __AXSHearingSetPairedUUIDs, 
-                       __AXSHighContrastFocusIndicatorsEnabled, __AXSHomeButtonAssistant, 
-                       __AXSHomeButtonRestingUnlock, __AXSHomeButtonRestingUnlockEverSet, 
+                       __AXSHearingAidsPaired, __AXSHearingAidsSetPaired, __AXSHearingDevicePairedEars, 
+                       __AXSHearingSetDevicePairedEars, __AXSHighContrastFocusIndicatorsEnabled, 
+                       __AXSHomeButtonAssistant, __AXSHomeButtonRestingUnlock, __AXSHomeButtonRestingUnlockEverSet, 
                        __AXSHomeButtonSetRestingUnlock, __AXSHomeClickEnabled, __AXSHomeClickSetSpeed, 
                        __AXSHomeClickSpeed, __AXSInDataMigrationMode, __AXSInPerformanceTestMode, 
                        __AXSInUnitTestMode, __AXSIncreaseButtonLegibility, __AXSInvertColorsDisplaySetEnabled, 

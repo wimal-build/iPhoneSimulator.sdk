@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: 71AF0C63-34DB-37DC-8EAD-12C17B908E22' ]
+uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: 203EF812-ABBE-3130-AE8C-AA59886B239B' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension'
 exports:         
@@ -377,8 +377,8 @@ exports:
                        _NEAddIntToArray, _NEAddIntToDictionary, _NEAddPortToDictionary, 
                        _NEAddValueToIntKeyedDictionary, _NEAddressRangeIsContainedInAddressRange, 
                        _NEAppProxyErrorDomain, _NEAppendIntToArray, _NEAuditTokenForPID, 
-                       _NECertificateDateIsValid, _NECertificateStatusToString, _NECompareAddresses, 
-                       _NECopyAuditPortForAuditToken, _NECopyBootstrapPortForPID, 
+                       _NECertificateDateIsValid, _NECertificateStatusToString, _NECheckConfigurationUserUUID, 
+                       _NECompareAddresses, _NECopyAuditPortForAuditToken, _NECopyBootstrapPortForPID, 
                        _NECopyConsoleUserUUID, _NECopyInterfaceAddress, _NECopySigningIdentifierForPID, 
                        _NECopySigningIdentifierForXPCMessage, _NECopySynthesizedIPv6Address, 
                        _NECopyUserUUIDFromEUID, _NECopyUserUUIDFromXPCEUID, _NECreateAddressDataFromString, 
@@ -407,7 +407,7 @@ exports:
                        _NEGetIntFromArray, _NEGetIntFromDictionary, _NEGetInterfaceType, 
                        _NEGetNullUUID, _NEGetPortFromAddress, _NEGetPrefixForAddressRange, 
                        _NEGetPrefixForAddressRangeStrings, _NEGetPrefixForIPv4NetmaskString, 
-                       _NEGetPrefixForIPv6NetmaskString, _NEGetValueFromIntArray, 
+                       _NEGetPrefixForIPv6NetmaskString, _NEGetRootUUID, _NEGetValueFromIntArray, 
                        _NEGetValueFromIntKeyedDictionary, _NEGetValueWithType, _NEHotspotConfigurationErrorDomain, 
                        _NEIKEv2AttributeTypeCreateString, _NEIKEv2AuthenticationMethodCreateString, 
                        _NEIKEv2CreateChildSAModeString, _NEIKEv2CreateError, _NEIKEv2CreateErrorAuthentication, 
@@ -652,8 +652,8 @@ exports:
                        NEPolicyRouteRule, NEPolicySession, NEPolicySessionFileHandle, 
                        NEProcessInfo, NEProfileIngestion, NEProfileIngestionPayloadInfo, 
                        NEProfilePayloadBase, NEProfilePayloadContentFilter, NEProvider, 
-                       NEProxyConfigurationNetworkAgent, NEProxyServer, NEProxySettings, 
-                       NETransparentProxyManager, NETransparentProxyNetworkSettings, 
+                       NEProviderServer, NEProxyConfigurationNetworkAgent, NEProxyServer, 
+                       NEProxySettings, NETransparentProxyManager, NETransparentProxyNetworkSettings, 
                        NETunnelNetworkSettings, NETunnelProvider, NETunnelProviderManager, 
                        NETunnelProviderProtocol, NETunnelProviderSession, NEUserNotification, 
                        NEUtilConfigurationClient, NEVPN, NEVPNApp, NEVPNConnection, 

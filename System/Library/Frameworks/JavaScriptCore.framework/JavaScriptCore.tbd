@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 7F4416C2-22AE-3256-A8ED-EFFD2502B41A' ]
+uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: CB0F7A7A-8ED7-3BBB-A412-47CEA0C8C2CD' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore'
-current-version: 608.2.5
+current-version: 608.3.10
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _WTFInstallReportBacktraceOnCrashHook, _WTFSetCrashHook, _WebCoreWebThreadRunSync, 
@@ -721,7 +721,7 @@ exports:
                        __ZN3JSC11VMInspector13dumpCallFrameEPNS_9ExecStateEj, __ZN3JSC11VMInspector13dumpRegistersEPNS_9ExecStateE, 
                        __ZN3JSC11VMInspector14dumpCellMemoryEPNS_6JSCellE, __ZN3JSC11VMInspector16isValidCodeBlockEPNS_9ExecStateEPNS_9CodeBlockE, 
                        __ZN3JSC11VMInspector17codeBlockForFrameEPNS_9ExecStateEj, 
-                       __ZN3JSC11VMInspector22dumpCellMemoryToStreamEPNS_6JSCellERN3WTF11PrintStreamE, 
+                       __ZN3JSC11VMInspector18dumpSubspaceHashesEPNS_2VME, __ZN3JSC11VMInspector22dumpCellMemoryToStreamEPNS_6JSCellERN3WTF11PrintStreamE, 
                        __ZN3JSC11VMInspector23currentThreadOwnsJSLockEPNS_9ExecStateE, 
                        __ZN3JSC11VMInspector2gcEPNS_9ExecStateE, __ZN3JSC11VMInspector6edenGCEPNS_9ExecStateE, 
                        __ZN3JSC11VMInspector8isInHeapEPNS_4HeapEPv, __ZN3JSC11VMInspector9dumpStackEPNS_9ExecStateEj, 

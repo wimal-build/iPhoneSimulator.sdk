@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1EF6A61D-2D91-31CE-B48B-771ABA79222A', 'x86_64: A2822934-F56F-3E17-8DC7-F77556C7B8FE' ]
+uuids:           [ 'i386: 1EF6A61D-2D91-31CE-B48B-771ABA79222A', 'x86_64: 76D24F1A-4F2E-3BFD-94BB-A8C0D13FFC0F' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Network.framework/Network'
 exports:         

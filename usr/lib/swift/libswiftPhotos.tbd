@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EA0CD531-C0F0-3E84-BF9D-65D8A4A3F96E', 'x86_64: 60405564-D827-3CBF-AF75-78AF3D872E10' ]
+uuids:           [ 'i386: EA0CD531-C0F0-3E84-BF9D-65D8A4A3F96E', 'x86_64: 71F6F8C9-FE85-3DC6-8DF1-EA91C7D070C2' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftPhotos.dylib'
 current-version: 0

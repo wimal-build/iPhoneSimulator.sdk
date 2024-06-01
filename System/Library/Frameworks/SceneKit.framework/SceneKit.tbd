@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 24E649BE-E40F-3080-AC36-71FA52F17912', 'x86_64: DF4985F2-7158-3A37-BF18-69FDC5980200' ]
+uuids:           [ 'i386: 24E649BE-E40F-3080-AC36-71FA52F17912', 'x86_64: C892BE49-ECB8-3379-921D-2F4F7109F0A4' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SceneKit.framework/SceneKit'
-current-version: 540
+current-version: 540.3
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _C3DAnimationManagerContainsSceneTimeBasedAnimation, _C3DAnimationManagerIsEmpty, 

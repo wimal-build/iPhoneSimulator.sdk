@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3AA5907C-4816-3749-8429-69D631ECCF91', 'x86_64: D587DCE3-F652-3CD3-B1F8-3528ABC4CCC4' ]
+uuids:           [ 'i386: 3AA5907C-4816-3749-8429-69D631ECCF91', 'x86_64: 884E61AD-BDB4-326B-AF2A-D7705A58997F' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftsimd.dylib'
 current-version: 0

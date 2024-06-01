@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4A41891B-F383-38F2-9DBC-6602BD6BAFE1' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1AB23389-8660-3B4F-913C-485E8C868695' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore'
 exports:         
@@ -22,6 +22,6 @@ exports:
                        _ICTransportTypeMassStorage, _ICTransportTypeTCPIP, _ICTransportTypeUSB, 
                        ___ICLogDateString, ___ICLogTypeEnabled, ___ICOSLogCreate, 
                        ___ICReadPrefs, __gICOSLog ]
-    objc-classes:    [ ICCameraDevice, ICCameraFile, ICCameraFolder, ICCameraItem, 
-                       ICDevice, ICDeviceBrowser ]
+    objc-classes:    [ ICAccessManager, ICCameraDevice, ICCameraFile, ICCameraFolder, 
+                       ICCameraItem, ICDevice, ICDeviceBrowser ]
 ...

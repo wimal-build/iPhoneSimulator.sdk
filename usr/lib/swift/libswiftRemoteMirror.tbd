@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E86E91E5-53DF-3604-A7DC-FC4189783849' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6829F9F4-7A13-317E-B3A3-6E0794AA258C' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftRemoteMirror.dylib'
 current-version: 1100.2.255
@@ -150,6 +150,7 @@ exports:
                        __ZN5swift8Demangle9Demangler30demangleRetroactiveConformanceEv, 
                        __ZN5swift8Demangle9Demangler31popDependentProtocolConformanceEv, 
                        __ZN5swift8Demangle9Demangler32demanglePrivateContextDescriptorEv, 
+                       __ZN5swift8Demangle9Demangler33demangleDependentConformanceIndexEv, 
                        __ZN5swift8Demangle9Demangler33popDependentAssociatedConformanceEv, 
                        __ZN5swift8Demangle9Demangler35demangleConcreteProtocolConformanceEv, 
                        __ZN5swift8Demangle9Demangler40demangleDependentProtocolConformanceRootEv, 

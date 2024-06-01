@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FA1710E4-822F-3729-B3D2-702147BB9917', 'x86_64: BE1093D1-B956-32A3-9D93-995668CA9AFE' ]
+uuids:           [ 'i386: FA1710E4-822F-3729-B3D2-702147BB9917', 'x86_64: C14E44C5-DF35-3964-9DD9-C38D577071A6' ]
 platform:        ios
 install-name:    '/usr/lib/libicucore.A.dylib'
 current-version: 64.2
@@ -484,7 +484,7 @@ exports:
                        __ZN3icu12CurrencyUnitC2ERKNS_11MeasureUnitER10UErrorCode, 
                        __ZN3icu12CurrencyUnitC2Ev, __ZN3icu12FixedDecimalD0Ev, __ZN3icu12FixedDecimalD1Ev, 
                        __ZN3icu12FixedDecimalD2Ev, __ZN3icu12NumberFormat11setCurrencyEPKDsR10UErrorCode, 
-                       __ZN3icu12NumberFormat15setRoundingModeENS0_13ERoundingModeE, 
+                       __ZN3icu12NumberFormat15setDateSettingsEv, __ZN3icu12NumberFormat15setRoundingModeENS0_13ERoundingModeE, 
                        __ZN3icu12PatternProps12isIdentifierEPKDsi, __ZN3icu12PatternProps14skipIdentifierEPKDsi, 
                        __ZN3icu12PatternProps14skipWhiteSpaceEPKDsi, __ZN3icu12PatternProps14skipWhiteSpaceERKNS_13UnicodeStringEi, 
                        __ZN3icu12PatternProps14trimWhiteSpaceEPKDsRi, __ZN3icu12ResourceSinkD0Ev, 
@@ -493,7 +493,7 @@ exports:
                        __ZN3icu13BreakIteratorC2ERKS0_, __ZN3icu13BreakIteratoraSERKS0_, 
                        __ZN3icu13DecimalFormat10setLenientEa, __ZN3icu13DecimalFormat11setCurrencyEPKDs, 
                        __ZN3icu13DecimalFormat11setCurrencyEPKDsR10UErrorCode, __ZN3icu13DecimalFormat12touchNoErrorEv, 
-                       __ZN3icu13DecimalFormat15setRoundingModeENS_12NumberFormat13ERoundingModeE, 
+                       __ZN3icu13DecimalFormat15setDateSettingsEv, __ZN3icu13DecimalFormat15setRoundingModeENS_12NumberFormat13ERoundingModeE, 
                        __ZN3icu13DecimalFormat15setupFastFormatEv, __ZN3icu13DecimalFormat17setDFSShallowCopyEa, 
                        __ZN3icu13DecimalFormat18setMultiplierScaleEi, __ZN3icu13DecimalFormat18setParseNoExponentEa, 
                        __ZN3icu13DecimalFormat18setSignAlwaysShownEa, __ZN3icu13DecimalFormat19fieldPositionHelperERKNS_6number15FormattedNumberERNS_13FieldPositionEiR10UErrorCode, 

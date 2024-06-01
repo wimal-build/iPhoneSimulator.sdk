@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2D9D2082-BAEE-39A6-A6AC-A11098EFB7FF', 'x86_64: 1D30FE27-320E-34A4-B842-3F4B5EDEF5C7' ]
+uuids:           [ 'i386: 2D9D2082-BAEE-39A6-A6AC-A11098EFB7FF', 'x86_64: 72940438-F4C3-3DF7-B682-7A08DCCEDAD5' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetalKit.framework/MetalKit'
-current-version: 138
+current-version: 141
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _MTKTextureLoaderOptionCubeFromVerticalTexture, _MetalKitVersionNumber, 

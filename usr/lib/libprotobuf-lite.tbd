@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 24182874-E312-3003-B32A-004AAD209B4B' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C5270203-D251-37DB-B0BB-0CF682629C76' ]
 platform:        ios
 install-name:    '/usr/lib/libprotobuf-lite.dylib'
 exports:         

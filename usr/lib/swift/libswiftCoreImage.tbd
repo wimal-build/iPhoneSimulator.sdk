@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 832EF493-3957-356C-8ADB-E303B45817D8', 'x86_64: BF28BBEB-5E2D-3B72-A284-023096187CCF' ]
+uuids:           [ 'i386: 832EF493-3957-356C-8ADB-E303B45817D8', 'x86_64: 4D8B144F-95E2-3258-B485-119C0FA5E558' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCoreImage.dylib'
 current-version: 0

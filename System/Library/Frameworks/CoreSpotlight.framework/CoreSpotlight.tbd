@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D2554067-ABEC-3DAA-A0A2-C11FD7CB18D8', 'x86_64: C802C711-8A0E-35B8-9742-6D158BEBE602' ]
+uuids:           [ 'i386: D2554067-ABEC-3DAA-A0A2-C11FD7CB18D8', 'x86_64: C07077DF-1E0C-3E95-94E0-47B2AC26C2C3' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight'
 exports:         
@@ -189,7 +189,7 @@ exports:
                        _MDSearchQueryErrorDomain, _MDSearchQueryOptionFetchAttributes, 
                        _MDSearchQueryOptionGrouped, _MDSearchQueryOptionMaxCount, 
                        _MDSearchQueryOptionRankingQueries, __MDIndexExtensionsLoadedNotification, 
-                       __MDPlainTextFromHTMLData, _csindex_xpc_dictionary_decode_status_with_error, 
+                       __MDPlainTextFromHTMLData, _addExtensionToken, _csindex_xpc_dictionary_decode_status_with_error, 
                        _csindex_xpc_dictionary_encode_status_with_error, _csquery_xpc_dictionary_decode_status_with_error, 
                        _csquery_xpc_dictionary_encode_status, _csquery_xpc_dictionary_encode_status_with_error, 
                        _hasInternalCSEntitlement, _hasPrivateIndexUnsandboxEntitlement, 

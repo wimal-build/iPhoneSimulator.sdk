@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 599E4592-2459-34EA-BF6F-46D9321A630E', 'x86_64: E479F30B-F47F-31DE-8013-3411DEDB3DEF' ]
+uuids:           [ 'i386: 599E4592-2459-34EA-BF6F-46D9321A630E', 'x86_64: F1C677CA-F7AE-3D3F-8074-28928761B793' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Twitter.framework/Twitter'
 current-version: 164

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B85F837A-8D98-3B30-9A4D-AC2EBCA4221C', 'x86_64: DCF50E63-E086-3D5F-B08E-4B9B6A97F504' ]
+uuids:           [ 'i386: B85F837A-8D98-3B30-9A4D-AC2EBCA4221C', 'x86_64: 919CE19A-607F-3805-86FA-E572E438526B' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libThaiConverter.dylib'
 current-version: 76

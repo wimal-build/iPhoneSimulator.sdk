@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 756733B1-5F8D-3485-A944-B6E3904301AA', 'x86_64: 1CEEFE46-FFC6-3E68-BAF2-A15ECF681DFE' ]
+uuids:           [ 'i386: 756733B1-5F8D-3485-A944-B6E3904301AA', 'x86_64: 8EADCB17-940F-3444-8CAE-E6218F068238' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCallKit.dylib'
 current-version: 0

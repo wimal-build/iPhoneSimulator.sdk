@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3B2AB505-72C1-32DC-A3E7-59A06C3DFBD8', 'x86_64: B9210E03-E167-36CD-90EA-F199383B151B' ]
+uuids:           [ 'i386: 3B2AB505-72C1-32DC-A3E7-59A06C3DFBD8', 'x86_64: DE10FEB0-76EC-3D62-BFD6-40B3DA1212FE' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftMetalKit.dylib'
 current-version: 0
