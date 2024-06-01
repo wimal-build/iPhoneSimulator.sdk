@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 86389C8A-6BFC-3229-AA45-D2512EB77045', 'x86_64: 8A40ACC8-E2E1-3C3C-B611-21EF3D816E05' ]
+uuids:           [ 'i386: 86389C8A-6BFC-3229-AA45-D2512EB77045', 'x86_64: 8A8CD37B-F806-3370-96BF-E63C14A5B77C' ]
 platform:        ios
 install-name:    /usr/lib/liblangid.dylib
 objc-constraint: none

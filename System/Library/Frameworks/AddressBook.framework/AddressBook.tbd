@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: FACEC186-F310-3AF2-BD80-6B27676816CB' ]
+uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: 9DB05148-EEC2-3232-96EF-EACD645D3702' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AddressBook.framework/AddressBook
 objc-constraint: none
@@ -460,33 +460,33 @@ exports:
                        _kABUserActivityUserInfoVersionKey, _moveRecordsToSource, 
                        _releaseThreadHandle, _releaseTokenizationSortKeys, _removeSyncImagesFromSource, 
                        _sourceContainsPerson, _timerInterval ]
-    objc-classes:    [ _ABAnyValuePredicate, _ABCCallbackInvoker, _ABChangeStoreInfo, 
-                       _ABChangeStoreRowInfo, _ABDataCollection, _ABDynamicLoader, 
-                       _ABFavoritesEntry, _ABFavoritesListManager, _ABFavoritesLookupChangeRecord, 
-                       _ABGroupMembershipPredicate, _ABNamePredicate, _ABPersonLinker, 
-                       _ABPhoneFormatting, _ABPhonePredicate, _ABPredicate, _ABSearchOperation, 
-                       _ABServerSearchPredicate, _ABTCC, _ABUtils, _ABVCardActivityAlertEscapingSerializationStrategy, 
-                       _ABVCardActivityAlertQuotingSerializationStrategy, _ABVCardActivityAlertScanner, 
-                       _ABVCardActivityAlertSerialization, _ABVCardActivityAlertSerializer, 
-                       _ABVCardCardDAVExporter, _ABVCardCardDAVParser, _ABVCardCardDAVRecord, 
-                       _ABVCardCardDAVValueSetter, _ABVCardDateScanner, _ABVCardExporter, 
-                       _ABVCardLexer, _ABVCardParameter, _ABVCardParser, _ABVCardPersonValueSetter, 
-                       _ABVCardRecord, _ABVCardValueSetter, _ABVCardWatchdogTimer, 
-                       _ABValuePredicate, __ABVCardTimeProvider ]
-    objc-ivars:      [ _ABCCallbackInvoker.ab, _ABCCallbackInvoker.cb, _ABCCallbackInvoker.context, 
-                       _ABFavoritesLookupChangeRecord.abDatabaseUUID, _ABFavoritesLookupChangeRecord.identifier, 
-                       _ABFavoritesLookupChangeRecord.label, _ABFavoritesLookupChangeRecord.name, 
-                       _ABFavoritesLookupChangeRecord.uid, _ABFavoritesLookupChangeRecord.value, 
-                       _ABVCardDateScanner._position, _ABVCardDateScanner._string, 
-                       _ABVCardLexer._activeTokenSets, _ABVCardLexer._bytes, _ABVCardLexer._cursor, 
-                       _ABVCardLexer._data, _ABVCardLexer._errorCount, _ABVCardLexer._length, 
-                       _ABVCardLexer._peakedPoint, _ABVCardLexer._timer, _ABVCardLexer._unicode, 
-                       _ABVCardParameter._grouping, _ABVCardParameter._name, _ABVCardParameter._primary, 
-                       _ABVCardParameter._types, _ABVCardParameter._value, _ABVCardParser._cropRectChecksum, 
-                       _ABVCardParser._cropRectHeight, _ABVCardParser._cropRectWidth, 
-                       _ABVCardParser._cropRectX, _ABVCardParser._cropRectY, _ABVCardParser._valueSetter, 
-                       _ABVCardPersonValueSetter._person, _ABVCardPersonValueSetter._properties, 
-                       _ABVCardRecord._properties, _ABVCardRecord._record ]
+    objc-classes:    [ ABAnyValuePredicate, ABCCallbackInvoker, ABChangeStoreInfo, 
+                       ABChangeStoreRowInfo, ABDataCollection, ABDynamicLoader, ABFavoritesEntry, 
+                       ABFavoritesListManager, ABFavoritesLookupChangeRecord, ABGroupMembershipPredicate, 
+                       ABNamePredicate, ABPersonLinker, ABPhoneFormatting, ABPhonePredicate, 
+                       ABPredicate, ABSearchOperation, ABServerSearchPredicate, ABTCC, 
+                       ABUtils, ABVCardActivityAlertEscapingSerializationStrategy, 
+                       ABVCardActivityAlertQuotingSerializationStrategy, ABVCardActivityAlertScanner, 
+                       ABVCardActivityAlertSerialization, ABVCardActivityAlertSerializer, 
+                       ABVCardCardDAVExporter, ABVCardCardDAVParser, ABVCardCardDAVRecord, 
+                       ABVCardCardDAVValueSetter, ABVCardDateScanner, ABVCardExporter, 
+                       ABVCardLexer, ABVCardParameter, ABVCardParser, ABVCardPersonValueSetter, 
+                       ABVCardRecord, ABVCardValueSetter, ABVCardWatchdogTimer, ABValuePredicate, 
+                       _ABVCardTimeProvider ]
+    objc-ivars:      [ ABCCallbackInvoker.ab, ABCCallbackInvoker.cb, ABCCallbackInvoker.context, 
+                       ABFavoritesLookupChangeRecord.abDatabaseUUID, ABFavoritesLookupChangeRecord.identifier, 
+                       ABFavoritesLookupChangeRecord.label, ABFavoritesLookupChangeRecord.name, 
+                       ABFavoritesLookupChangeRecord.uid, ABFavoritesLookupChangeRecord.value, 
+                       ABVCardDateScanner._position, ABVCardDateScanner._string, 
+                       ABVCardLexer._activeTokenSets, ABVCardLexer._bytes, ABVCardLexer._cursor, 
+                       ABVCardLexer._data, ABVCardLexer._errorCount, ABVCardLexer._length, 
+                       ABVCardLexer._peakedPoint, ABVCardLexer._timer, ABVCardLexer._unicode, 
+                       ABVCardParameter._grouping, ABVCardParameter._name, ABVCardParameter._primary, 
+                       ABVCardParameter._types, ABVCardParameter._value, ABVCardParser._cropRectChecksum, 
+                       ABVCardParser._cropRectHeight, ABVCardParser._cropRectWidth, 
+                       ABVCardParser._cropRectX, ABVCardParser._cropRectY, ABVCardParser._valueSetter, 
+                       ABVCardPersonValueSetter._person, ABVCardPersonValueSetter._properties, 
+                       ABVCardRecord._properties, ABVCardRecord._record ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _ABAddressBookAddRecord, _ABAddressBookCopyArrayOfAllGroups, 
                        _ABAddressBookCopyArrayOfAllGroupsInSource, _ABAddressBookCopyArrayOfAllPeople, 
@@ -577,8 +577,8 @@ exports:
                        _kABPersonSpouseLabel, _kABPersonSuffixProperty, _kABPersonURLProperty, 
                        _kABSourceNameProperty, _kABSourceTypeProperty, _kABWorkLabel, 
                        _socialProfileFromURL, _socialProfileURLForServiceAndUsername ]
-    objc-classes:    [ _ABSAddressBook, _ABSAddressBookContextStorage, _ABSAddressBookSettings, 
-                       _ABSBulkFaultHandler, _ABSCallbackInvoker, _ABSChangeCallbacks, 
-                       _ABSConstantsMapping, _ABSGroup, _ABSMultiValue, _ABSPerson, 
-                       _ABSPublicABCNCompatibility, _ABSSource ]
+    objc-classes:    [ ABSAddressBook, ABSAddressBookContextStorage, ABSAddressBookSettings, 
+                       ABSBulkFaultHandler, ABSCallbackInvoker, ABSChangeCallbacks, 
+                       ABSConstantsMapping, ABSGroup, ABSMultiValue, ABSPerson, ABSPublicABCNCompatibility, 
+                       ABSSource ]
 ...

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C476129C-F286-3F0B-89A4-1A808775E4DE', 'x86_64: 141873AC-D773-3648-90AD-A68083607D34' ]
+uuids:           [ 'i386: C476129C-F286-3F0B-89A4-1A808775E4DE', 'x86_64: AC360429-EE60-37C3-88E7-D2EE14CF3317' ]
 platform:        ios
 install-name:    /usr/lib/libAXSpeechManager.dylib
 objc-constraint: none
@@ -12,5 +12,5 @@ exports:
                        _AXSiriMaleVoiceIdentifier, _AXSpeechLanguageCanonicalFormToGeneralLanguage, 
                        _AXSpeechTransformText, _AXSpeechTransformTextWithLanguage, 
                        _VOTBundle, __AXSpeechReplaceEmoticons, _isSpeakableEmojiString ]
-    objc-classes:    [ _AXEmojiUtilities, _AXSpeechAction, _AXSpeechManager, _AXSpeechThread ]
+    objc-classes:    [ AXEmojiUtilities, AXSpeechAction, AXSpeechManager, AXSpeechThread ]
 ...

@@ -14,8 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 MP_API(ios(10.1))
 MP_PROHIBITED(tvos)
-@interface MPMusicPlayerQueueDescriptor : NSObject<NSSecureCoding>
-
+@interface MPMusicPlayerQueueDescriptor : NSObject
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 @end
 
 MP_API(ios(10.1))
@@ -25,9 +26,9 @@ MP_PROHIBITED(tvos)
 - (instancetype)initWithQuery:(MPMediaQuery *)query;
 - (instancetype)initWithItemCollection:(MPMediaItemCollection *)itemCollection;
 
-@property (nonatomic, copy, readonly) MPMediaQuery *query;
-@property (nonatomic, strong, readonly) MPMediaItemCollection *itemCollection;
-@property (nonatomic, strong, nullable) MPMediaItem *startItem;
+@property (nonatomic, readonly, copy) MPMediaQuery *query;
+@property (nonatomic, readonly, strong) MPMediaItemCollection *itemCollection;
+@property (nonatomic, nullable, strong) MPMediaItem *startItem;
 
 - (void)setStartTime:(NSTimeInterval)startTime forItem:(MPMediaItem *)mediaItem;
 - (void)setEndTime:(NSTimeInterval)endTime forItem:(MPMediaItem *)mediaItem;
@@ -40,8 +41,8 @@ MP_PROHIBITED(tvos)
 
 - (instancetype)initWithStoreIDs:(NSArray<NSString *> *)storeIDs;
 
-@property (nonatomic, copy, nullable) NSArray<NSString *> *storeIDs;
-@property (nonatomic, copy, nullable) NSString *startItemID;
+@property (nonatomic, nullable, copy) NSArray<NSString *> *storeIDs;
+@property (nonatomic, nullable, copy) NSString *startItemID;
 
 - (void)setStartTime:(NSTimeInterval)startTime forItemWithStoreID:(NSString *)storeID;
 - (void)setEndTime:(NSTimeInterval)endTime forItemWithStoreID:(NSString *)storeID;
@@ -50,12 +51,11 @@ MP_PROHIBITED(tvos)
 
 MP_API(ios(11.0))
 MP_PROHIBITED(tvos)
-@interface MPMusicPlayerPlayParameters : NSObject<NSSecureCoding>
+@interface MPMusicPlayerPlayParameters : NSObject
 
-- (instancetype)init NS_UNAVAILABLE;
 - (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
-@property (nonatomic, copy, readonly) NSDictionary<NSString *, id> *dictionary;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> *dictionary;
 
 @end
 
@@ -63,11 +63,10 @@ MP_API(ios(11.0))
 MP_PROHIBITED(tvos)
 @interface MPMusicPlayerPlayParametersQueueDescriptor : MPMusicPlayerQueueDescriptor
 
-- (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithPlayParametersQueue:(NSArray<MPMusicPlayerPlayParameters *> *)playParametersQueue;
 
 @property (nonatomic, copy) NSArray<MPMusicPlayerPlayParameters *> *playParametersQueue;
-@property (nonatomic, strong, nullable) MPMusicPlayerPlayParameters *startItemPlayParameters;
+@property (nonatomic, nullable, strong) MPMusicPlayerPlayParameters *startItemPlayParameters;
 
 - (void)setStartTime:(NSTimeInterval)startTime forItemWithPlayParameters:(MPMusicPlayerPlayParameters *)playParameters;
 - (void)setEndTime:(NSTimeInterval)endTime forItemWithPlayParameters:(MPMusicPlayerPlayParameters *)playParameters;

@@ -16,7 +16,8 @@ typedef NS_ENUM(NSInteger, CNErrorCode)
     CNErrorCodeDataAccessError = 2,
     
     CNErrorCodeAuthorizationDenied = 100,
-    
+    CNErrorCodeNoAccessableWritableContainers NS_ENUM_AVAILABLE(10_13_3, 11_3) = 101,
+
     CNErrorCodeRecordDoesNotExist = 200,
     CNErrorCodeInsertedRecordAlreadyExists = 201,
     CNErrorCodeContainmentCycle = 202,

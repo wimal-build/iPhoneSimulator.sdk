@@ -129,6 +129,11 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
 @property (nullable, readonly, copy, nonatomic) NSString *firmwareVersion API_AVAILABLE(ios(11.0), watchos(4.0), tvos(11.0));
 
 /*!
+ *  @abstract   Indicates if the accessory supports the identify action.
+ */
+@property (readonly) BOOL supportsIdentify API_AVAILABLE(ios(11.3), watchos(4.3), tvos(11.3));
+
+/*!
  * @brief This method is used to change the name of the accessory.
  *
  * @param name New name for the accessory.

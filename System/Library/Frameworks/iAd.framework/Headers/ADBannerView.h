@@ -9,6 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma clang system_header
+
 /*!
  * @const ADErrorDomain
  *

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8DED1303-C655-3F07-9536-2FCEF679B73B', 'x86_64: AB857523-3517-3BB9-BD30-45C91430B7D2' ]
+uuids:           [ 'i386: 8DED1303-C655-3F07-9536-2FCEF679B73B', 'x86_64: 56FDA053-3114-3D1E-AFCB-6ED2BF46F545' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/WatchKit.framework/WatchKit
 objc-constraint: none
@@ -10,10 +10,9 @@ exports:
                        _SPGizmoAppEndBackgroundGlanceUpdate, _SPGlanceUpdatedDarwinNotification, 
                        _SPInterfaceGlanceBeginUpdateProperty, _SPInterfaceGlanceEndUpdateProperty, 
                        _SPIsValidImageFilePath, _SPRunningAppIsWorkout, _SPRunningAppPID ]
-    objc-classes:    [ _SPInterfaceButton, _SPInterfaceGroup, _SPInterfaceImageView, 
-                       _SPInterfaceLabel, _SPInterfaceList, _SPInterfaceMapView, 
-                       _SPInterfaceObject, _SPInterfaceSlider, _SPInterfaceSwitch, 
-                       _SPLogs, _SPUtils ]
+    objc-classes:    [ SPInterfaceButton, SPInterfaceGroup, SPInterfaceImageView, 
+                       SPInterfaceLabel, SPInterfaceList, SPInterfaceMapView, SPInterfaceObject, 
+                       SPInterfaceSlider, SPInterfaceSwitch, SPLogs, SPUtils ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _AccessibilityHintPropertyKey, _AccessibilityIdentifierPropertyKey, 
                        _AccessibilityIsElementPropertyKey, _AccessibilityLabelPropertyKey, 
@@ -194,8 +193,8 @@ exports:
                        _SPProtoCacheSyncDataReadFrom, _SPProtoObjectMessageReadFrom, 
                        _SPProtoSockPuppetMessageReadFrom, _SPProtoSockPuppetObjectReadFrom, 
                        _SPProtoSockPuppetPlistReadFrom, _SPRemoteNotificationForceStaticKey, 
-                       _SPRunningWatchKitAppsDidChangeNotification, _SPSecureServiceIdentifierKey, 
-                       _SPServerActivateCommand, _SPServerActivateDataConnectionCommand, 
+                       _SPRemoteNotificationSentFromXcodeKey, _SPRunningWatchKitAppsDidChangeNotification, 
+                       _SPSecureServiceIdentifierKey, _SPServerActivateCommand, _SPServerActivateDataConnectionCommand, 
                        _SPServerApplicationInfoKey, _SPServerApplicationKilledCommand, 
                        _SPServerApplicationTerminatedCommand, _SPServerCommandKey, 
                        _SPServerControllerKey, _SPServerDataKey, _SPServerDeactivateCommand, 
@@ -256,9 +255,10 @@ exports:
                        __WKValidatedAttributedString, __applicationAccessibilityChanged, 
                        _cancelWaitForPairing, _getXcodeSupportRemoteObjectProxy, 
                        _isRunningOnMainQueue, _main, _spUtils_SPURLQueryAllowedCharacterSet, 
-                       _spUtils_UIColorFromString, _spUtils_appExtensionFirstUnlock, 
-                       _spUtils_companionConnectionClientIdentifier, _spUtils_deserializeObject, 
-                       _spUtils_dispatchAsyncToMainThread, _spUtils_dispatchSyncToMainThread, 
+                       _spUtils_UIColorFromString, _spUtils_allowedClassesForUserActivity, 
+                       _spUtils_appExtensionFirstUnlock, _spUtils_companionConnectionClientIdentifier, 
+                       _spUtils_deserializeObject, _spUtils_dispatchAsyncToMainThread, 
+                       _spUtils_dispatchSyncToMainThread, _spUtils_gizmoUsesLegacyNSArchiver, 
                        _spUtils_isApplicationCompanionConnectionClientIdentifier, 
                        _spUtils_isComplicationCompanionConnectionClientIdentifier, 
                        _spUtils_isNotificationCompanionConnectionClientIdentifier, 
@@ -267,30 +267,30 @@ exports:
                        _spUtils_machTimeString, _spUtils_serializeObject, _spUtils_subclassForObjectOverridesSelectorFromSuperclass, 
                        _spUtils_uniqueNumber, _wk_bg_app_refresh_log, _wk_default_log, 
                        _wk_extension_loading_log ]
-    objc-classes:    [ _SPAssetCacheAssets, _SPAssetCacheClientCache, _SPAssetCacheSyncData, 
-                       _SPCacheAsset, _SPCacheMessage, _SPColorWrapper, _SPCompanionAppServerProtocolStub, 
-                       _SPCompanionAssetCache, _SPComplicationData, _SPDeviceConnection, 
-                       _SPError, _SPExtensionDaemonManager, _SPFont, _SPLocalServerProtocolStub, 
-                       _SPPluginDelegate, _SPProtoAudioFilePlayerAsset, _SPProtoAudioFilePlayerAssetUpdateMetaData, 
-                       _SPProtoAudioFilePlayerCurrentTime, _SPProtoAudioFilePlayerItem, 
-                       _SPProtoAudioFilePlayerItemSetCurrentTime, _SPProtoAudioFilePlayerMessage, 
-                       _SPProtoAudioFilePlayerStatus, _SPProtoAudioFilePlayerUpdateContainedIdentifier, 
-                       _SPProtoAudioFileQueuePlayer, _SPProtoAudioFileQueuePlayerSetItems, 
-                       _SPProtoAudioFileQueuePlayerSetRate, _SPProtoCacheAsset, _SPProtoCacheAssets, 
-                       _SPProtoCacheMessage, _SPProtoCacheSyncData, _SPProtoObjectMessage, 
-                       _SPProtoSerializer, _SPProtoSockPuppetMessage, _SPProtoSockPuppetObject, 
-                       _SPProtoSockPuppetPlist, _SPRemoteInterface, _SPRemoteInterfaceKeyedArchiverDelegate, 
-                       _SPRemoteInterfaceOpenParentRequest, _SPStockComplicationData, 
-                       _SPStockListComplicationData, _SPWeatherComplicationData, 
-                       _SPXcodeSupport, _WKAccessibilityImageRegion, _WKApplicationProxy, 
-                       _WKError, _WKImage, _WKInterfaceButton, _WKInterfaceController, 
-                       _WKInterfaceDate, _WKInterfaceDevice, _WKInterfaceGroup, _WKInterfaceHMCamera, 
-                       _WKInterfaceHealth, _WKInterfaceImage, _WKInterfaceLabel, 
-                       _WKInterfaceMap, _WKInterfaceObject, _WKInterfacePaymentButton, 
-                       _WKInterfaceSeparator, _WKInterfaceSlider, _WKInterfaceSwitch, 
-                       _WKInterfaceTable, _WKInterfaceTimer, _WKPlaceholderGestureRecognizer, 
-                       _WKSPInterfaceButton, _WKSPInterfaceGroup, _WKSPInterfaceImageView, 
-                       _WKSPInterfaceLabel, _WKSPInterfaceList, _WKSPInterfaceMapView, 
-                       _WKSPInterfaceObject, _WKSPInterfaceSlider, _WKSPInterfaceSwitch, 
-                       _WKUserNotificationInterfaceController, __WKInterfaceTablePlaceholderRow ]
+    objc-classes:    [ SPAssetCacheAssets, SPAssetCacheClientCache, SPAssetCacheSyncData, 
+                       SPCacheAsset, SPCacheMessage, SPColorWrapper, SPCompanionAppServerProtocolStub, 
+                       SPCompanionAssetCache, SPComplicationData, SPDeviceConnection, 
+                       SPError, SPExtensionDaemonManager, SPFont, SPLocalServerProtocolStub, 
+                       SPPluginDelegate, SPProtoAudioFilePlayerAsset, SPProtoAudioFilePlayerAssetUpdateMetaData, 
+                       SPProtoAudioFilePlayerCurrentTime, SPProtoAudioFilePlayerItem, 
+                       SPProtoAudioFilePlayerItemSetCurrentTime, SPProtoAudioFilePlayerMessage, 
+                       SPProtoAudioFilePlayerStatus, SPProtoAudioFilePlayerUpdateContainedIdentifier, 
+                       SPProtoAudioFileQueuePlayer, SPProtoAudioFileQueuePlayerSetItems, 
+                       SPProtoAudioFileQueuePlayerSetRate, SPProtoCacheAsset, SPProtoCacheAssets, 
+                       SPProtoCacheMessage, SPProtoCacheSyncData, SPProtoObjectMessage, 
+                       SPProtoSerializer, SPProtoSockPuppetMessage, SPProtoSockPuppetObject, 
+                       SPProtoSockPuppetPlist, SPRemoteInterface, SPRemoteInterfaceKeyedArchiverDelegate, 
+                       SPRemoteInterfaceOpenParentRequest, SPStockComplicationData, 
+                       SPStockListComplicationData, SPWeatherComplicationData, SPXcodeSupport, 
+                       WKAccessibilityImageRegion, WKApplicationProxy, WKError, WKImage, 
+                       WKInterfaceButton, WKInterfaceController, WKInterfaceDate, 
+                       WKInterfaceDevice, WKInterfaceGroup, WKInterfaceHMCamera, 
+                       WKInterfaceHealth, WKInterfaceImage, WKInterfaceLabel, WKInterfaceMap, 
+                       WKInterfaceObject, WKInterfacePaymentButton, WKInterfaceSeparator, 
+                       WKInterfaceSlider, WKInterfaceSwitch, WKInterfaceTable, WKInterfaceTimer, 
+                       WKPlaceholderGestureRecognizer, WKSPInterfaceButton, WKSPInterfaceGroup, 
+                       WKSPInterfaceImageView, WKSPInterfaceLabel, WKSPInterfaceList, 
+                       WKSPInterfaceMapView, WKSPInterfaceObject, WKSPInterfaceSlider, 
+                       WKSPInterfaceSwitch, WKUserNotificationInterfaceController, 
+                       _WKInterfaceTablePlaceholderRow ]
 ...

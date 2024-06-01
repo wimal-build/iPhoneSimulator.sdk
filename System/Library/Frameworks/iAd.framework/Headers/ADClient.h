@@ -46,6 +46,13 @@ extern NSString * const ADClientErrorDomain;
  * The device has Limit Ad Tracking enabled. It will not be possible to recieve
  * attribution details for app purchases made on this device.
  *
+ * @const ADClientErrorMissingData
+ * The downloaded app received a payload lacking enough data to perform an
+ * Attribution Check.
+ *
+ * @const ADClientErrorCorruptResponse
+ * The response received from the Attribution Server was corrupt.
+ *
  * @discussion
  * Error codes for NSErrors passed to the completionHandler block
  * when calling the requestAttributionDetailsWithBlock method.
@@ -53,6 +60,8 @@ extern NSString * const ADClientErrorDomain;
 typedef NS_ENUM(NSInteger, ADClientError) {
     ADClientErrorUnknown = 0,
     ADClientErrorLimitAdTracking = 1,
+    ADClientErrorMissingData = 2,
+    ADClientErrorCorruptResponse = 3
 };
 
 /*!
@@ -87,7 +96,7 @@ typedef NS_ENUM(NSInteger, ADClientError) {
  * Provides a way for an app to determine when an iAd was shown to the user
  * which resulted in the user's purchase of the app.
  */
-- (void)lookupAdConversionDetails:(void (^)(NSDate *appPurchaseDate, NSDate * _Nullable iAdImpressionDate))completionHandler NS_DEPRECATED_IOS(8_0, 9_0, "Use requestAttributionDetailsWithBlock instead.");
+- (void)lookupAdConversionDetails:(void (^)(NSDate * _Nullable appPurchaseDate, NSDate * _Nullable iAdImpressionDate))completionHandler NS_DEPRECATED_IOS(8_0, 9_0, "Use requestAttributionDetailsWithBlock instead.");
 
 /*!
  * @method requestAttributionDetailsWithBlock:

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A9FCC99A-209C-348E-BB79-0A29A5FCB82B', 'x86_64: B6B7D470-5AE2-34BB-B953-3EC8206C48F3' ]
+uuids:           [ 'i386: A9FCC99A-209C-348E-BB79-0A29A5FCB82B', 'x86_64: F587A22C-6B8E-3808-A919-45BE50770AD8' ]
 platform:        ios
 install-name:    '/usr/lib/libc++.1.dylib'
 current-version: 400.9.1

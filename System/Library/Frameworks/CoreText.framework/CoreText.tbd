@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: C8A7BFBB-73C4-3643-A10E-A3C2C8739598' ]
+uuids:           [ 'i386: 3F7A4584-6FF2-301C-ABF0-D7A59FA69CB3', 'x86_64: 81E58ADE-10BC-35C6-810F-2B31729891D4' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreText.framework/CoreText
 objc-constraint: none
@@ -320,9 +320,9 @@ exports:
                        _kFOFontNameKey, _kFOFontNamesArrayKey, _kFOFontVersionKey, 
                        _kFOLanguageKey, _kFOMatrixKey, _kFOStringKey, _kFOTypeKey, 
                        _kFOUnicodeCharSetKey, _kFOcmapOverrideKey ]
-    objc-classes:    [ _CTGlyphStorageInterface ]
-    objc-ivars:      [ _CTGlyphStorageInterface._absorbedCounts, _CTGlyphStorageInterface._advances, 
-                       _CTGlyphStorageInterface._glyphCount, _CTGlyphStorageInterface._glyphs, 
-                       _CTGlyphStorageInterface._origins, _CTGlyphStorageInterface._props, 
-                       _CTGlyphStorageInterface._stringIndexes ]
+    objc-classes:    [ CTGlyphStorageInterface ]
+    objc-ivars:      [ CTGlyphStorageInterface._absorbedCounts, CTGlyphStorageInterface._advances, 
+                       CTGlyphStorageInterface._glyphCount, CTGlyphStorageInterface._glyphs, 
+                       CTGlyphStorageInterface._origins, CTGlyphStorageInterface._props, 
+                       CTGlyphStorageInterface._stringIndexes ]
 ...

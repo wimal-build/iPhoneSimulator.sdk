@@ -1,23 +1,21 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3490D6B6-DA19-383C-83DB-E4FC1FB9AF89', 'x86_64: 476293CD-B880-3672-A7B6-BC0FEF1C2B75' ]
+uuids:           [ 'i386: 3490D6B6-DA19-383C-83DB-E4FC1FB9AF89', 'x86_64: 172E772A-07C3-3F36-BD95-D6A0EE9DBC54' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ModelIO.framework/ModelIO
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
-    objc-classes:    [ _MDLBlendShapeChannel, _MDLBlendShapeDeformer, _MDLPrimitive ]
+    objc-classes:    [ MDLBlendShapeChannel, MDLBlendShapeDeformer, MDLPrimitive ]
   - archs:           [ x86_64 ]
-    objc-ivars:      [ _MDLAnimatedValue._interpolation, _MDLAnimatedValue._timeSampledData, 
-                       _MDLMatrix4x4Array._data ]
+    objc-ivars:      [ MDLAnimatedValue._interpolation, MDLAnimatedValue._timeSampledData, 
+                       MDLMatrix4x4Array._data ]
     weak-def-symbols: [ __ZTIFNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEmE, 
-                        __ZTIN5boost16bad_lexical_castE, __ZTIN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, 
                         __ZTINSt3__114default_deleteINS_11basic_regexIcNS_12regex_traitsIcEEEEEE, 
                         __ZTINSt3__114default_deleteINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEE, 
                         __ZTINSt3__114default_deleteIbEE, __ZTINSt3__114default_deleteIdEE, 
                         __ZTINSt3__114default_deleteIiEE, __ZTIPFNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEmE, 
                         __ZTSFNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEmE, 
-                        __ZTSN5boost16bad_lexical_castE, __ZTSN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, 
                         __ZTSNSt3__114default_deleteINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEE, 
                         __ZTSNSt3__114default_deleteIbEE, __ZTSNSt3__114default_deleteIdEE, 
                         __ZTSNSt3__114default_deleteIfEE, __ZTSNSt3__114default_deleteIiEE, 
@@ -164,29 +162,28 @@ exports:
                        _kUTType3dObject, _kUTTypeAlembic, _kUTTypePolygon, _kUTTypeStereolithography, 
                        _kUTTypeUniversalSceneDescription, _sampleTextureAtRay, _sampleTextureDataAtRay, 
                        _sampleTextureDataAtRayMipMapped ]
-    objc-classes:    [ _MDLAnimatedMatrix4x4, _MDLAnimatedQuaternionArray, _MDLAnimatedScalar, 
-                       _MDLAnimatedScalarArray, _MDLAnimatedValue, _MDLAnimatedVector2, 
-                       _MDLAnimatedVector3, _MDLAnimatedVector3Array, _MDLAnimatedVector4, 
-                       _MDLAnimationBindComponent, _MDLAreaLight, _MDLAsset, _MDLBundleAssetResolver, 
-                       _MDLCamera, _MDLCheckerboardTexture, _MDLColorSwatchTexture, 
-                       _MDLInteractiveCameraController, _MDLLight, _MDLLightProbe, 
-                       _MDLMaterial, _MDLMaterialProperty, _MDLMaterialPropertyConnection, 
-                       _MDLMaterialPropertyGraph, _MDLMaterialPropertyNode, _MDLMatrix4x4Array, 
-                       _MDLMesh, _MDLMeshBufferAllocatorDefault, _MDLMeshBufferData, 
-                       _MDLMeshBufferDataAllocator, _MDLMeshBufferMap, _MDLMeshBufferZoneDefault, 
-                       _MDLMorphDeformer, _MDLNoiseTexture, _MDLNormalMapTexture, 
-                       _MDLObject, _MDLObjectContainer, _MDLPackedJointAnimation, 
-                       _MDLPathAssetResolver, _MDLPhotometricLight, _MDLPhysicallyPlausibleLight, 
-                       _MDLPhysicallyPlausibleScatteringFunction, _MDLRelativeAssetResolver, 
-                       _MDLScatteringFunction, _MDLScene, _MDLSkeleton, _MDLSkinDeformer, 
-                       _MDLSkyCubeTexture, _MDLStereoscopicCamera, _MDLSubmesh, _MDLSubmeshTopology, 
-                       _MDLTexture, _MDLTextureFilter, _MDLTextureSampler, _MDLTransform, 
-                       _MDLTransformMatrixOp, _MDLTransformRotateOp, _MDLTransformRotateXOp, 
-                       _MDLTransformRotateYOp, _MDLTransformRotateZOp, _MDLTransformScaleOp, 
-                       _MDLTransformStack, _MDLTransformTranslateOp, _MDLURLTexture, 
-                       _MDLVertexAttribute, _MDLVertexAttributeData, _MDLVertexBufferLayout, 
-                       _MDLVertexDescriptor, _MDLVolumeGrid, _MDLVoxelArray ]
-    objc-ivars:      [ _MDLTransform._transform ]
+    objc-classes:    [ MDLAnimatedMatrix4x4, MDLAnimatedQuaternionArray, MDLAnimatedScalar, 
+                       MDLAnimatedScalarArray, MDLAnimatedValue, MDLAnimatedVector2, 
+                       MDLAnimatedVector3, MDLAnimatedVector3Array, MDLAnimatedVector4, 
+                       MDLAnimationBindComponent, MDLAreaLight, MDLAsset, MDLBundleAssetResolver, 
+                       MDLCamera, MDLCheckerboardTexture, MDLColorSwatchTexture, 
+                       MDLInteractiveCameraController, MDLLight, MDLLightProbe, MDLMaterial, 
+                       MDLMaterialProperty, MDLMaterialPropertyConnection, MDLMaterialPropertyGraph, 
+                       MDLMaterialPropertyNode, MDLMatrix4x4Array, MDLMesh, MDLMeshBufferAllocatorDefault, 
+                       MDLMeshBufferData, MDLMeshBufferDataAllocator, MDLMeshBufferMap, 
+                       MDLMeshBufferZoneDefault, MDLMorphDeformer, MDLNoiseTexture, 
+                       MDLNormalMapTexture, MDLObject, MDLObjectContainer, MDLPackedJointAnimation, 
+                       MDLPathAssetResolver, MDLPhotometricLight, MDLPhysicallyPlausibleLight, 
+                       MDLPhysicallyPlausibleScatteringFunction, MDLRelativeAssetResolver, 
+                       MDLScatteringFunction, MDLScene, MDLSkeleton, MDLSkinDeformer, 
+                       MDLSkyCubeTexture, MDLStereoscopicCamera, MDLSubmesh, MDLSubmeshTopology, 
+                       MDLTexture, MDLTextureFilter, MDLTextureSampler, MDLTransform, 
+                       MDLTransformMatrixOp, MDLTransformRotateOp, MDLTransformRotateXOp, 
+                       MDLTransformRotateYOp, MDLTransformRotateZOp, MDLTransformScaleOp, 
+                       MDLTransformStack, MDLTransformTranslateOp, MDLURLTexture, 
+                       MDLVertexAttribute, MDLVertexAttributeData, MDLVertexBufferLayout, 
+                       MDLVertexDescriptor, MDLVolumeGrid, MDLVoxelArray ]
+    objc-ivars:      [ MDLTransform._transform ]
     weak-def-symbols: [ __ZTIFvRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEE, 
                         __ZTIFvRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_E, 
                         __ZTIN5boost16exception_detail10clone_baseE, __ZTIN5boost16exception_detail19error_info_injectorINS_7bad_getEEE, 

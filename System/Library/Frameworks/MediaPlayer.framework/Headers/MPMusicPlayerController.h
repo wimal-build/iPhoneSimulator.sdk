@@ -60,7 +60,8 @@ MP_PROHIBITED(tvos)
 /// Playing media items with the systemMusicPlayer will replace the user's current Music state.
 @property (class, readonly) MPMusicPlayerController<MPSystemMusicPlayerController> *systemMusicPlayer;
 
-@property (class, readonly) MPMusicPlayerController *iPodMusicPlayer MP_DEPRECATED_WITH_REPLACEMENT("systemMusicPlayer", ios(3.0, 8.0));
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 // Returns the current playback state of the music player
 @property (nonatomic, readonly) MPMusicPlaybackState playbackState;
@@ -116,15 +117,17 @@ MP_PROHIBITED(tvos)
 - (void)beginGeneratingPlaybackNotifications;
 - (void)endGeneratingPlaybackNotifications;
 
+@property (class, readonly) MPMusicPlayerController *iPodMusicPlayer MP_DEPRECATED_WITH_REPLACEMENT("systemMusicPlayer", ios(3.0, 8.0));
+
 @end
 
 // Posted when the playback state changes, either programatically or by the user.
-MP_EXTERN NSString * const MPMusicPlayerControllerPlaybackStateDidChangeNotification MP_PROHIBITED(tvos);
+MP_EXTERN NSNotificationName const MPMusicPlayerControllerPlaybackStateDidChangeNotification MP_PROHIBITED(tvos);
 
 // Posted when the currently playing media item changes.
-MP_EXTERN NSString * const MPMusicPlayerControllerNowPlayingItemDidChangeNotification MP_PROHIBITED(tvos);
+MP_EXTERN NSNotificationName const MPMusicPlayerControllerNowPlayingItemDidChangeNotification MP_PROHIBITED(tvos);
 
 // Posted when the current volume changes.
-MP_EXTERN NSString * const MPMusicPlayerControllerVolumeDidChangeNotification MP_PROHIBITED(tvos);
+MP_EXTERN NSNotificationName const MPMusicPlayerControllerVolumeDidChangeNotification MP_PROHIBITED(tvos);
 
 NS_ASSUME_NONNULL_END

@@ -1,13 +1,13 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: 00512927-011F-333C-AC96-A7E681B774B7' ]
+uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: 687378A5-26B8-3EB9-899C-798BF15366FF' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity
-current-version: 150
+current-version: 150.1
 objc-constraint: none
 exports:         
   - archs:           [ x86_64 ]
-    objc-ivars:      [ _MCSessionStream._source ]
+    objc-ivars:      [ MCSessionStream._source ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _AGPSessionCopyDetailedDescription, _AGPSessionCreate, _AGPSessionEvent, 
                        _AGPSessionMaximumSegmentSize, _AGPSessionRelease, _AGPSessionSendTo, 
@@ -46,24 +46,23 @@ exports:
                        _mcadvertiser_log, _mcadvertiser_ui_log, _mcbrowser_log, _mcbrowser_ui_log, 
                        _mcdp_log, _mcdpc_log, _mcpid_log, _mcs_log, _ospfParseOption, 
                        _ospfVerifyOptions, _ospf_log ]
-    objc-classes:    [ _AWDMultipeerSessionMaxPeersInfo, _AWDMultipeerSessionPeerConnectivityInfo, 
-                       _MCAdvertiserAssistant, _MCAlertController, _MCBrowserViewController, 
-                       _MCNearbyDiscoveryPeer, _MCNearbyDiscoveryPeerConnection, 
-                       _MCNearbyPeerTableViewCell, _MCNearbyPeerTableViewHeader, 
-                       _MCNearbyServiceAdvertiser, _MCNearbyServiceBrowser, _MCNearbyServiceUtils, 
-                       _MCPeerID, _MCPeerIDInternal, _MCResourceDownloader, _MCResourceProgressObserver, 
-                       _MCSession, _MCSessionPeerConnectionData, _MCSessionPeerState, 
-                       _MCSessionStream ]
-    objc-ivars:      [ _AWDMultipeerSessionMaxPeersInfo._bundleID, _AWDMultipeerSessionMaxPeersInfo._has, 
-                       _AWDMultipeerSessionMaxPeersInfo._maxPeersCount, _AWDMultipeerSessionMaxPeersInfo._sessionID, 
-                       _AWDMultipeerSessionMaxPeersInfo._timestamp, _AWDMultipeerSessionPeerConnectivityInfo._authentication, 
-                       _AWDMultipeerSessionPeerConnectivityInfo._channelPriority, 
-                       _AWDMultipeerSessionPeerConnectivityInfo._encryption, _AWDMultipeerSessionPeerConnectivityInfo._has, 
-                       _AWDMultipeerSessionPeerConnectivityInfo._interfaceType, _AWDMultipeerSessionPeerConnectivityInfo._remoteAuthentication, 
-                       _AWDMultipeerSessionPeerConnectivityInfo._sessionID, _AWDMultipeerSessionPeerConnectivityInfo._timeAll, 
-                       _AWDMultipeerSessionPeerConnectivityInfo._timeDTLS, _AWDMultipeerSessionPeerConnectivityInfo._timeICE, 
-                       _AWDMultipeerSessionPeerConnectivityInfo._timeOSPF, _AWDMultipeerSessionPeerConnectivityInfo._timestamp, 
-                       _MCNearbyPeerTableViewHeader._spinner, _MCNearbyPeerTableViewHeader._text ]
+    objc-classes:    [ AWDMultipeerSessionMaxPeersInfo, AWDMultipeerSessionPeerConnectivityInfo, 
+                       MCAdvertiserAssistant, MCAlertController, MCBrowserViewController, 
+                       MCNearbyDiscoveryPeer, MCNearbyDiscoveryPeerConnection, MCNearbyPeerTableViewCell, 
+                       MCNearbyPeerTableViewHeader, MCNearbyServiceAdvertiser, MCNearbyServiceBrowser, 
+                       MCNearbyServiceUtils, MCPeerID, MCPeerIDInternal, MCResourceDownloader, 
+                       MCResourceProgressObserver, MCSession, MCSessionPeerConnectionData, 
+                       MCSessionPeerState, MCSessionStream ]
+    objc-ivars:      [ AWDMultipeerSessionMaxPeersInfo._bundleID, AWDMultipeerSessionMaxPeersInfo._has, 
+                       AWDMultipeerSessionMaxPeersInfo._maxPeersCount, AWDMultipeerSessionMaxPeersInfo._sessionID, 
+                       AWDMultipeerSessionMaxPeersInfo._timestamp, AWDMultipeerSessionPeerConnectivityInfo._authentication, 
+                       AWDMultipeerSessionPeerConnectivityInfo._channelPriority, 
+                       AWDMultipeerSessionPeerConnectivityInfo._encryption, AWDMultipeerSessionPeerConnectivityInfo._has, 
+                       AWDMultipeerSessionPeerConnectivityInfo._interfaceType, AWDMultipeerSessionPeerConnectivityInfo._remoteAuthentication, 
+                       AWDMultipeerSessionPeerConnectivityInfo._sessionID, AWDMultipeerSessionPeerConnectivityInfo._timeAll, 
+                       AWDMultipeerSessionPeerConnectivityInfo._timeDTLS, AWDMultipeerSessionPeerConnectivityInfo._timeICE, 
+                       AWDMultipeerSessionPeerConnectivityInfo._timeOSPF, AWDMultipeerSessionPeerConnectivityInfo._timestamp, 
+                       MCNearbyPeerTableViewHeader._spinner, MCNearbyPeerTableViewHeader._text ]
     weak-def-symbols: [ __ZTI13AGPSetElement, __ZTI20AGPReceiveSetElement, __ZTI20AGPSendingSetElement, 
                         __ZTI24AGPAssociationSetElement, __ZTS13AGPSetElement, __ZTS20AGPReceiveSetElement, 
                         __ZTS20AGPSendingSetElement, __ZTS24AGPAssociationSetElement ]

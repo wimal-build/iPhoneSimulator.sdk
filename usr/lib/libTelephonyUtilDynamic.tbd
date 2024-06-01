@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 619466EB-0339-325D-B98B-95D1CDDBB5D2', 'x86_64: 2BB48127-38E0-3CF9-89D4-6EF7C4CAED7E' ]
+uuids:           [ 'i386: 619466EB-0339-325D-B98B-95D1CDDBB5D2', 'x86_64: 6401E7B3-FA8B-35CC-BE20-5248DAC6CAB9' ]
 platform:        ios
 install-name:    /usr/lib/libTelephonyUtilDynamic.dylib
 objc-constraint: none

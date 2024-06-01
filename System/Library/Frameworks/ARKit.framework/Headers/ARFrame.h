@@ -38,10 +38,9 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 
 /**
  The frame’s captured depth data.
- 
  @discussion Depth data is only provided with face tracking on frames where depth data was captured.
  */
-@property (nonatomic, strong, readonly, nullable) AVDepthData *capturedDepthData;
+@property (nonatomic, strong, nullable, readonly) AVDepthData *capturedDepthData;
 
 /**
  A timestamp identifying the depth data.

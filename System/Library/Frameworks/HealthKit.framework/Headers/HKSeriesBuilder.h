@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
                 Concrete subclasses generate the actual HKSeriesSample objects.
  */
 HK_EXTERN
-@interface HKSeriesBuilder : NSObject <NSSecureCoding>
+@interface HKSeriesBuilder : NSObject
 
 /*!
  @method        discard

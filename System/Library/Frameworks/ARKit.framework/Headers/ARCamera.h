@@ -43,6 +43,9 @@ typedef NS_ENUM(NSInteger, ARTrackingStateReason) {
     
     /** Tracking is limited due to a lack of features visible to the camera. */
     ARTrackingStateReasonInsufficientFeatures,
+    
+    /** Tracking is limited due to a relocalization in progress. */
+    ARTrackingStateReasonRelocalizing API_AVAILABLE(ios(11.3)),
 } NS_REFINED_FOR_SWIFT;
 
 
@@ -100,6 +103,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 
 /**
  The projection matrix of the camera.
+ @discussion The projection matrix assumes no far clipping plane limit.
 */
 @property (nonatomic, readonly) matrix_float4x4 projectionMatrix;
 
@@ -117,6 +121,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  Creates a projection matrix for the camera given rendering parameters.
  
  @discussion The projection matrix returned provides an aspect fill for the provided viewport size and orientation.
+             If zFar is set to 0, an infinite projection matrix will be returned.
  @param orientation Viewport orientation.
  @param viewportSize Viewport size.
  @param zNear Near depth limit.

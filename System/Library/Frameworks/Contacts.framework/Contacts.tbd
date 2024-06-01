@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 795C43D8-FD0B-3571-AE17-FBAB1807B9C3' ]
+uuids:           [ 'i386: E96658E4-DE03-34AF-8760-9B96E7E850FD', 'x86_64: 96FD23B5-DD44-3AF3-9B96-FFD3E75CB5FC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Contacts.framework/Contacts
 current-version: 0
@@ -10,10 +10,10 @@ exports:
   - archs:           [ i386 ]
     symbols:         [ _CNBundleIdentifier, _CNContactsXPCServiceName, _CNContentType, 
                        _CNCoreSpotlightIsFullIndexingKey ]
-    objc-classes:    [ _CNChangeHistory, _CNChangeHistoryItem ]
+    objc-classes:    [ CNChangeHistory, CNChangeHistoryItem ]
   - archs:           [ x86_64 ]
-    objc-ivars:      [ _CNContactKeyVector._bitBuckets, _CNDataMapperContactStore._logger, 
-                       _CNDataMapperContactStore._mapper ]
+    objc-ivars:      [ CNContactKeyVector._bitBuckets, CNDataMapperContactStore._logger, 
+                       CNDataMapperContactStore._mapper ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _CNActionBundleIdentifierCalendar, _CNActionBundleIdentifierContacts, 
                        _CNActionBundleIdentifierFaceTime, _CNActionBundleIdentifierFindMyFriends, 
@@ -106,54 +106,54 @@ exports:
                        _CNSocialProfileUserIdentifierKey, _CNSocialProfileUsernameKey, 
                        _CNTelephonyServiceName, _CNVCardDisplayNamesType, _CNWorkLabel, 
                        _sIsMultiValueContactProperty ]
-    objc-classes:    [ _CN, _CNAbstractActivityAlertDescription, _CNAccount, _CNActivityAlert, 
-                       _CNBirthdayDescription, _CNCalendarURIsDescription, _CNCallAlertDescription, 
-                       _CNChangeHistoryAnchor, _CNChangeHistoryContactChange, _CNChangeHistoryFetchRequest, 
-                       _CNChangeHistoryGroupChange, _CNChangeHistoryResult, _CNChangesNotifier, 
-                       _CNCompoundMultiValuePropertyDescription, _CNContact, _CNContactChangesNotifier, 
-                       _CNContactFetchRequest, _CNContactFormatter, _CNContactKeyVector, 
-                       _CNContactMatchInfo, _CNContactMatchSummarizer, _CNContactProperty, 
-                       _CNContactRelation, _CNContactRelationsDescription, _CNContactStore, 
-                       _CNContactTypeDescription, _CNContactVCardSerialization, _CNContactsEnvironment, 
-                       _CNContactsLoggerProvider, _CNContactsLogging, _CNContactsUserDefaults, 
-                       _CNContainer, _CNContainerPermissions, _CNCoreSpotlightSearch, 
-                       _CNCreationDateDescription, _CNCropRectDescription, _CNDataMapperContactStore, 
-                       _CNDate, _CNDatesDescription, _CNDepartmentDescription, _CNDraggingContact, 
-                       _CNEmailAddressesDescription, _CNErrorFactory, _CNFamilyNameDescription, 
-                       _CNFavorites, _CNFavoritesEntry, _CNFullscreenImageDataDescription, 
-                       _CNGivenNameDescription, _CNGroup, _CNIOSLegacyIdentifierDescription, 
-                       _CNImageDataAvailableDescription, _CNImageDataDescription, 
-                       _CNIndexRequestHandler, _CNInstantMessageAddress, _CNInstantMessageAddressesDescription, 
-                       _CNInternalIdentifierDescription, _CNJobTitleDescription, 
-                       _CNLabeledValue, _CNLaunchServicesRemoteAdapter, _CNLinkIdentifierDescription, 
-                       _CNMapsDataDescription, _CNMiddleNameDescription, _CNModificationDateDescription, 
-                       _CNMultiValuePropertyDescription, _CNMutableContact, _CNMutableContactKeyVector, 
-                       _CNMutableContainer, _CNMutableGroup, _CNMutableInstantMessageAddress, 
-                       _CNMutablePostalAddress, _CNMutableSocialProfile, _CNNamePrefixDescription, 
-                       _CNNameSuffixDescription, _CNNicknameNameDescription, _CNNonGregorianBirthdayDescription, 
-                       _CNNoteDescription, _CNOrganizationNameDescription, _CNPerContactPropertyKeyDescriptor, 
-                       _CNPermissivePolicy, _CNPhoneNumber, _CNPhoneNumbersDescription, 
-                       _CNPhonemeDataDescription, _CNPhoneticFamilyNameDescription, 
-                       _CNPhoneticGivenNameDescription, _CNPhoneticMiddleNameDescription, 
-                       _CNPhoneticOrganizationNameDescription, _CNPolicy, _CNPostalAddress, 
-                       _CNPostalAddressFormatter, _CNPostalAddressesDescription, 
-                       _CNPredicate, _CNPredicateValidator, _CNPreferredApplePersonaIdentifierDescription, 
-                       _CNPreferredForImageDescription, _CNPreferredForNameDescription, 
-                       _CNPreferredLikenessSourceDescription, _CNPreviousFamilyNameDescription, 
-                       _CNPronunciationFamilyNameDescription, _CNPronunciationGivenNameDescription, 
-                       _CNPropertyDescription, _CNReputationHandle, _CNReputationStore, 
-                       _CNSaveRequest, _CNSectionForSortingByFamilyNameDescription, 
-                       _CNSectionForSortingByGivenNameDescription, _CNSocialProfile, 
-                       _CNSocialProfilesDescription, _CNSuggestedSaveRequest, _CNTCC, 
-                       _CNTCCServices, _CNTestSmartFetcher, _CNTextAlertDescription, 
-                       _CNThumbnailImageDataDescription, _CNUrlAddressesDescription, 
-                       _CNValueOrigin, _CNXPCDataMapper, _CNiOSAddressBook, _CNiOSAddressBookDataMapper, 
-                       _CNiOSEncodedPeopleFetcher, __CNContactsLogger, __CNRegulatoryLogger, 
-                       __CNSpotlightIndexingLogger ]
-    objc-ivars:      [ _CNContainer._accountIdentifier, _CNContainer._enabled, _CNContainer._iOSLegacyIdentifier, 
-                       _CNContainer._identifier, _CNContainer._name, _CNContainer._permissions, 
-                       _CNContainer._snapshot, _CNContainer._type, _CNContainerPermissions._canCreateContacts, 
-                       _CNContainerPermissions._canCreateGroups, _CNContainerPermissions._canDeleteContacts, 
-                       _CNGroup._creationDate, _CNGroup._iOSLegacyIdentifier, _CNGroup._identifier, 
-                       _CNGroup._modificationDate, _CNGroup._name, _CNGroup._snapshot ]
+    objc-classes:    [ CN, CNAbstractActivityAlertDescription, CNAccount, CNActivityAlert, 
+                       CNBirthdayDescription, CNCalendarURIsDescription, CNCallAlertDescription, 
+                       CNChangeHistoryAnchor, CNChangeHistoryContactChange, CNChangeHistoryFetchRequest, 
+                       CNChangeHistoryGroupChange, CNChangeHistoryResult, CNChangesNotifier, 
+                       CNCompoundMultiValuePropertyDescription, CNContact, CNContactChangesNotifier, 
+                       CNContactFetchRequest, CNContactFormatter, CNContactKeyVector, 
+                       CNContactMatchInfo, CNContactMatchSummarizer, CNContactProperty, 
+                       CNContactRelation, CNContactRelationsDescription, CNContactStore, 
+                       CNContactTypeDescription, CNContactVCardSerialization, CNContactsEnvironment, 
+                       CNContactsLoggerProvider, CNContactsLogging, CNContactsUserDefaults, 
+                       CNContainer, CNContainerPermissions, CNCoreSpotlightSearch, 
+                       CNCreationDateDescription, CNCropRectDescription, CNDataMapperContactStore, 
+                       CNDate, CNDatesDescription, CNDepartmentDescription, CNDraggingContact, 
+                       CNEmailAddressesDescription, CNErrorFactory, CNFamilyNameDescription, 
+                       CNFavorites, CNFavoritesEntry, CNFullscreenImageDataDescription, 
+                       CNGivenNameDescription, CNGroup, CNIOSLegacyIdentifierDescription, 
+                       CNImageDataAvailableDescription, CNImageDataDescription, CNIndexRequestHandler, 
+                       CNInstantMessageAddress, CNInstantMessageAddressesDescription, 
+                       CNInternalIdentifierDescription, CNJobTitleDescription, CNLabeledValue, 
+                       CNLaunchServicesRemoteAdapter, CNLinkIdentifierDescription, 
+                       CNMapsDataDescription, CNMiddleNameDescription, CNModificationDateDescription, 
+                       CNMultiValuePropertyDescription, CNMutableContact, CNMutableContactKeyVector, 
+                       CNMutableContainer, CNMutableGroup, CNMutableInstantMessageAddress, 
+                       CNMutablePostalAddress, CNMutableSocialProfile, CNNamePrefixDescription, 
+                       CNNameSuffixDescription, CNNicknameNameDescription, CNNonGregorianBirthdayDescription, 
+                       CNNoteDescription, CNOrganizationNameDescription, CNPerContactPropertyKeyDescriptor, 
+                       CNPermissivePolicy, CNPhoneNumber, CNPhoneNumbersDescription, 
+                       CNPhonemeDataDescription, CNPhoneticFamilyNameDescription, 
+                       CNPhoneticGivenNameDescription, CNPhoneticMiddleNameDescription, 
+                       CNPhoneticOrganizationNameDescription, CNPolicy, CNPostalAddress, 
+                       CNPostalAddressFormatter, CNPostalAddressesDescription, CNPredicate, 
+                       CNPredicateValidator, CNPreferredApplePersonaIdentifierDescription, 
+                       CNPreferredForImageDescription, CNPreferredForNameDescription, 
+                       CNPreferredLikenessSourceDescription, CNPreviousFamilyNameDescription, 
+                       CNPronunciationFamilyNameDescription, CNPronunciationGivenNameDescription, 
+                       CNPropertyDescription, CNReputationHandle, CNReputationStore, 
+                       CNSaveRequest, CNSectionForSortingByFamilyNameDescription, 
+                       CNSectionForSortingByGivenNameDescription, CNSocialProfile, 
+                       CNSocialProfilesDescription, CNSuggestedSaveRequest, CNTCC, 
+                       CNTCCServices, CNTestSmartFetcher, CNTextAlertDescription, 
+                       CNThumbnailImageDataDescription, CNUrlAddressesDescription, 
+                       CNValueOrigin, CNXPCDataMapper, CNiOSAddressBook, CNiOSAddressBookDataMapper, 
+                       CNiOSEncodedPeopleFetcher, _CNContactsLogger, _CNRegulatoryLogger, 
+                       _CNSpotlightIndexingLogger ]
+    objc-ivars:      [ CNContainer._accountIdentifier, CNContainer._enabled, CNContainer._iOSLegacyIdentifier, 
+                       CNContainer._identifier, CNContainer._name, CNContainer._permissions, 
+                       CNContainer._snapshot, CNContainer._type, CNContainerPermissions._canCreateContacts, 
+                       CNContainerPermissions._canCreateGroups, CNContainerPermissions._canDeleteContacts, 
+                       CNGroup._creationDate, CNGroup._iOSLegacyIdentifier, CNGroup._identifier, 
+                       CNGroup._modificationDate, CNGroup._name, CNGroup._snapshot ]
 ...

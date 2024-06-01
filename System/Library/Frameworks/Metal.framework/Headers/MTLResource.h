@@ -133,13 +133,18 @@ typedef NS_ENUM(NSUInteger, MTLStorageMode)
  they are also passed directly into MTLBuffer creation methods.
 */
 
-#define MTLResourceCPUCacheModeShift 0
-#define MTLResourceCPUCacheModeMask  (0xfUL << MTLResourceCPUCacheModeShift)
-#define MTLResourceStorageModeShift  4
-#define MTLResourceStorageModeMask   (0xfUL << MTLResourceStorageModeShift)
+#define MTLResourceCPUCacheModeShift            0
+#define MTLResourceCPUCacheModeMask             (0xfUL << MTLResourceCPUCacheModeShift)
 
-#define MTLResourceHazardTrackingModeShift  8
-#define MTLResourceHazardTrackingModeMask   (0x1UL << MTLResourceHazardTrackingModeShift)
+#define MTLResourceStorageModeShift             4
+#define MTLResourceStorageModeMask              (0xfUL << MTLResourceStorageModeShift)
+
+#define MTLResourceHazardTrackingModeShift      8
+#define MTLResourceHazardTrackingModeMask       (0x1UL << MTLResourceHazardTrackingModeShift)
+
+#define MTLResourceReservedPrivateBitsShift     16
+#define MTLResourceReservedPrivateBit1         (0x1UL << MTLResourceReservedPrivateBitsShift)
+#define MTLResourceReservedPrivateBitsMask     (0xfUL << MTLResourceReservedPrivateBitsShift)
 
 typedef NS_OPTIONS(NSUInteger, MTLResourceOptions)
 {

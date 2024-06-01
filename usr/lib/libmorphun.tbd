@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B9EB1AA0-152C-35C1-B167-6194CC122473' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5A7632B2-4355-37BF-BDA9-E8AD2D454C8E' ]
 platform:        ios
 install-name:    /usr/lib/libmorphun.dylib
 objc-constraint: none

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6ECEA8F7-663D-3BAF-A674-66E5F2CBBF9A', 'x86_64: 3220726C-0BF6-37BD-8B81-83AEB8938221' ]
+uuids:           [ 'i386: 6ECEA8F7-663D-3BAF-A674-66E5F2CBBF9A', 'x86_64: 44C9EBF0-6825-382D-A051-B18BD9476317' ]
 platform:        ios
 install-name:    /usr/lib/libprotobuf.dylib
 objc-constraint: none
@@ -365,9 +365,8 @@ exports:
                        __ZTVN6google8protobuf7ClosureE, __ZTVN6google8protobuf8internal12FieldSkipperE, 
                        __ZTVN6google8protobuf8internal15ExtensionFinderE, __ZTVN6google8protobuf8internal16FunctionClosure0E, 
                        __ZTVN6google8protobuf8internal24GeneratedExtensionFinderE ]
-  - archs:           [ x86_64 ]
-    re-exports:      [ /usr/lib/libprotobuf-lite.dylib ]
   - archs:           [ i386, x86_64 ]
+    re-exports:      [ /usr/lib/libprotobuf-lite.dylib ]
     symbols:         [ __ZN6google8protobuf10ReflectionD0Ev, __ZN6google8protobuf10ReflectionD1Ev, 
                        __ZN6google8protobuf10ReflectionD2Ev, __ZN6google8protobuf10SimpleDtoaEd, 
                        __ZN6google8protobuf10SimpleFtoaEf, __ZN6google8protobuf10SimpleItoaEi, 

@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(macosx(10.13), ios(11.0), watchos(4.0))
-@interface INSpatialEventTrigger : NSObject
+@interface INSpatialEventTrigger : NSObject <NSSecureCoding>
 
 - (instancetype)initWithPlacemark:(CLPlacemark *)placemark event:(INSpatialEvent)event;
 

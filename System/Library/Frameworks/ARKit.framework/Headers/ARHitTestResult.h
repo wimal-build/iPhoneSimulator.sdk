@@ -17,16 +17,22 @@
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 typedef NS_OPTIONS(NSUInteger, ARHitTestResultType) {
     /** Result type from intersecting the nearest feature point. */
-    ARHitTestResultTypeFeaturePoint              = (1 << 0),
+    ARHitTestResultTypeFeaturePoint                                        = (1 << 0),
     
     /** Result type from intersecting a horizontal plane estimate, determined for the current frame. */
-    ARHitTestResultTypeEstimatedHorizontalPlane  = (1 << 1),
+    ARHitTestResultTypeEstimatedHorizontalPlane                            = (1 << 1),
+    
+    /** Result type from intersecting a vertical plane estimate, determined for the current frame. */
+    ARHitTestResultTypeEstimatedVerticalPlane API_AVAILABLE(ios(11.3))     = (1 << 2),
     
     /** Result type from intersecting with an existing plane anchor. */
-    ARHitTestResultTypeExistingPlane             = (1 << 3),
+    ARHitTestResultTypeExistingPlane                                       = (1 << 3),
     
     /** Result type from intersecting with an existing plane anchor, taking into account the plane’s extent. */
-    ARHitTestResultTypeExistingPlaneUsingExtent  = (1 << 4),
+    ARHitTestResultTypeExistingPlaneUsingExtent                            = (1 << 4),
+    
+    /** Result type from intersecting with an existing plane anchor, taking into account the plane’s geometry. */
+    ARHitTestResultTypeExistingPlaneUsingGeometry API_AVAILABLE(ios(11.3)) = (1 << 5),
 } NS_SWIFT_NAME(ARHitTestResult.ResultType);
 
 NS_ASSUME_NONNULL_BEGIN

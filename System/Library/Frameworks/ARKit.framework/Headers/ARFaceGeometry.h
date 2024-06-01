@@ -17,9 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  An object representing the geometry of a face.
+ @discussion The face geometry will have a constant number of triangles
+ and vertices, updating only the vertex positions from frame to frame.
  */
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
-@interface ARFaceGeometry : NSObject<NSCopying>
+@interface ARFaceGeometry : NSObject<NSSecureCoding, NSCopying>
 
 /**
 The number of mesh vertices of the geometry.
@@ -74,16 +76,16 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @interface ARSCNFaceGeometry : SCNGeometry
 
 /**
- Creates a new face geometry using a metal device.
+ Creates a new face geometry using a Metal device.
  
- @param device A metal device.
- @return A new face geometry
+ @param device A Metal device.
+ @return A new face geometry.
  */
 + (nullable instancetype)faceGeometryWithDevice:(id<MTLDevice>)device;
 
 
 /**
- Creates a new face geometry using a metal device.
+ Creates a new face geometry using a Metal device.
  
  @discussion By default the regions between the eye lids as well as the region
  between the lips are not covered by geometry. For using the face geometry as an
@@ -93,7 +95,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  @param fillMesh Whether to fill in additional geometry into the
  gaps between the eye lids as well as into the gap between the lips.
  
- @return A new face geometry
+ @return A new face geometry.
  */
 + (nullable instancetype)faceGeometryWithDevice:(id<MTLDevice>)device
                               fillMesh:(BOOL)fillMesh;
@@ -113,4 +115,3 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @end
 
 NS_ASSUME_NONNULL_END
-

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 80B1CB12-B6F3-390C-9906-0ACAA109F68F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 867646E4-CAE4-3B70-AF56-FA451B5EBF5E' ]
 platform:        ios
 install-name:    /usr/lib/libeasyperf.dylib
 objc-constraint: none

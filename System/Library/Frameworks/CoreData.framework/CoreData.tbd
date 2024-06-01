@@ -1,9 +1,9 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C524AB1D-7228-33D0-B40B-BE6E45E4DF1D', 'x86_64: 09C6B91D-ADF1-3F23-A575-7142CCE6FDD6' ]
+uuids:           [ 'i386: C524AB1D-7228-33D0-B40B-BE6E45E4DF1D', 'x86_64: 39082697-9FE9-309A-B14B-FB4EC7298640' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreData.framework/CoreData
-current-version: 849.2
+current-version: 851
 objc-constraint: none
 exports:         
   - archs:           [ i386, x86_64 ]
@@ -58,29 +58,27 @@ exports:
                        _NSXPCStoreSkipModelCheckKey, _NSXPCStoreType, __NSBackgroundThreadConfinementConcurrencyType, 
                        __NSManagedObjectContextObjectsDidChangePrivateNotification, 
                        __NSTriggerModifiedObjectIDsKey, __NSTriggerModifiedObjectsKey ]
-    objc-classes:    [ _NSAsynchronousFetchRequest, _NSAsynchronousFetchResult, _NSAtomicStore, 
-                       _NSAtomicStoreCacheNode, _NSAttributeDescription, _NSBatchDeleteRequest, 
-                       _NSBatchDeleteResult, _NSBatchUpdateRequest, _NSBatchUpdateResult, 
-                       _NSCachingFetchRequest, _NSCloudKitMirroringDelegate, _NSCloudKitMirroringDelegateOptions, 
-                       _NSCloudKitMirroringExportRequest, _NSCloudKitMirroringImportRequest, 
-                       _NSCloudKitMirroringRequest, _NSCloudKitMirroringRequestOptions, 
-                       _NSCloudKitMirroringResetZoneRequest, _NSCloudKitMirroringResult, 
-                       _NSConstraintConflict, _NSCoreDataCoreSpotlightDelegate, _NSEntityDescription, 
-                       _NSEntityMapping, _NSEntityMigrationPolicy, _NSExpressionDescription, 
-                       _NSFetchIndexDescription, _NSFetchIndexElementDescription, 
-                       _NSFetchRequest, _NSFetchRequestExpression, _NSFetchedPropertyDescription, 
-                       _NSFetchedResultsController, _NSIncrementalStore, _NSIncrementalStoreNode, 
-                       _NSKnownKeysDictionary, _NSKnownKeysMappingStrategy, _NSManagedImmutableObject, 
-                       _NSManagedObject, _NSManagedObjectContext, _NSManagedObjectID, 
-                       _NSManagedObjectModel, _NSMappingModel, _NSMergeConflict, 
-                       _NSMergePolicy, _NSMigrationManager, _NSPersistentContainer, 
-                       _NSPersistentHistoryChange, _NSPersistentHistoryChangeRequest, 
-                       _NSPersistentHistoryResult, _NSPersistentHistoryToken, _NSPersistentHistoryTransaction, 
-                       _NSPersistentStore, _NSPersistentStoreAsynchronousResult, 
-                       _NSPersistentStoreCoordinator, _NSPersistentStoreDescription, 
-                       _NSPersistentStoreRequest, _NSPersistentStoreResult, _NSPropertyDescription, 
-                       _NSPropertyMapping, _NSPullChangeHistoryRequest, _NSQueryGenerationToken, 
-                       _NSRelationshipDescription, _NSSaveChangesRequest, _NSXPCStore, 
-                       _NSXPCStoreConnectionInfo, _NSXPCStoreServer, _NSXPCStoreServerConnectionContext, 
-                       _NSXPCStoreServerRequestHandlingPolicy, __NSPersistenceUtilities ]
+    objc-classes:    [ NSAsynchronousFetchRequest, NSAsynchronousFetchResult, NSAtomicStore, 
+                       NSAtomicStoreCacheNode, NSAttributeDescription, NSBatchDeleteRequest, 
+                       NSBatchDeleteResult, NSBatchUpdateRequest, NSBatchUpdateResult, 
+                       NSCachingFetchRequest, NSCloudKitMirroringDelegate, NSCloudKitMirroringDelegateOptions, 
+                       NSCloudKitMirroringExportRequest, NSCloudKitMirroringImportRequest, 
+                       NSCloudKitMirroringRequest, NSCloudKitMirroringRequestOptions, 
+                       NSCloudKitMirroringResetZoneRequest, NSCloudKitMirroringResult, 
+                       NSConstraintConflict, NSCoreDataCoreSpotlightDelegate, NSEntityDescription, 
+                       NSEntityMapping, NSEntityMigrationPolicy, NSExpressionDescription, 
+                       NSFetchIndexDescription, NSFetchIndexElementDescription, NSFetchRequest, 
+                       NSFetchRequestExpression, NSFetchedPropertyDescription, NSFetchedResultsController, 
+                       NSIncrementalStore, NSIncrementalStoreNode, NSKnownKeysDictionary, 
+                       NSKnownKeysMappingStrategy, NSManagedImmutableObject, NSManagedObject, 
+                       NSManagedObjectContext, NSManagedObjectID, NSManagedObjectModel, 
+                       NSMappingModel, NSMergeConflict, NSMergePolicy, NSMigrationManager, 
+                       NSPersistentContainer, NSPersistentHistoryChange, NSPersistentHistoryChangeRequest, 
+                       NSPersistentHistoryResult, NSPersistentHistoryToken, NSPersistentHistoryTransaction, 
+                       NSPersistentStore, NSPersistentStoreAsynchronousResult, NSPersistentStoreCoordinator, 
+                       NSPersistentStoreDescription, NSPersistentStoreRequest, NSPersistentStoreResult, 
+                       NSPropertyDescription, NSPropertyMapping, NSPullChangeHistoryRequest, 
+                       NSQueryGenerationToken, NSRelationshipDescription, NSSaveChangesRequest, 
+                       NSXPCStore, NSXPCStoreConnectionInfo, NSXPCStoreServer, NSXPCStoreServerConnectionContext, 
+                       NSXPCStoreServerRequestHandlingPolicy, _NSPersistenceUtilities ]
 ...

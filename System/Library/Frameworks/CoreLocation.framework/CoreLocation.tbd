@@ -1,9 +1,9 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: A81DDC68-5CF4-39C8-8C5C-FF31996EAA28' ]
+uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: AC710596-6048-3A11-960F-1D6BC8EBB923' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreLocation.framework/CoreLocation
-current-version: 2237.0.22
+current-version: 2245.0.41
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
@@ -67,12 +67,12 @@ exports:
                        _kCLLocationAccuracyNearestTenMeters, _kCLLocationAccuracyThreeKilometers, 
                        _kCLLocationCoordinate2DInvalid, _kCLLocationIntegrityHigh, 
                        _kCLLocationIntegrityLow, _kCLLocationIntegrityMedium, _kCLLocationIntegrityNone ]
-    objc-classes:    [ _CLAssertion, _CLBeacon, _CLBeaconRegion, _CLCircularRegion, 
-                       _CLEmergencyEnablementAssertion, _CLFloor, _CLGeocoder, _CLHarvester, 
-                       _CLHeading, _CLInUseAssertion, _CLLocation, _CLLocationIndependenceAssertion, 
-                       _CLLocationManager, _CLLocationManagerRoutine, _CLLocationMatchInfo, 
-                       _CLLocationSmoother, _CLPlacemark, _CLPredictedApplication, 
-                       _CLRegion, _CLSimulationManager, _CLStateTracker, _CLTilesManagerClient, 
-                       _CLVehicleHeading, _CLVehicleSpeed, _CLVisit, __CLMicroLocation, 
-                       __CLMicroLocationResult, __CLRangingPeer, __CLRangingPeerDistance ]
+    objc-classes:    [ CLAssertion, CLBeacon, CLBeaconRegion, CLCircularRegion, CLEmergencyEnablementAssertion, 
+                       CLFloor, CLGeocoder, CLHarvester, CLHeading, CLInUseAssertion, 
+                       CLLocation, CLLocationIndependenceAssertion, CLLocationManager, 
+                       CLLocationManagerRoutine, CLLocationMatchInfo, CLLocationSmoother, 
+                       CLPlacemark, CLPredictedApplication, CLRegion, CLSimulationManager, 
+                       CLStateTracker, CLTilesManagerClient, CLVehicleHeading, CLVehicleSpeed, 
+                       CLVisit, _CLMicroLocation, _CLMicroLocationResult, _CLRangingPeer, 
+                       _CLRangingPeerDistance ]
 ...

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
-@interface ARPointCloud : NSObject
+@interface ARPointCloud : NSObject <NSSecureCoding>
 
 /**
  The number of points in the point cloud.

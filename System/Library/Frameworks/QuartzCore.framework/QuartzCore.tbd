@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: A2C559DB-8E5D-364F-84B1-561A43056917' ]
+uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: D1F4030E-33CB-321E-9637-6D1F6A964FC5' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/QuartzCore.framework/QuartzCore
 current-version: 1.11
@@ -40,7 +40,8 @@ exports:
                        _CAImageQueueDeleteBuffer, _CAImageQueueFlush, _CAImageQueueGetCapacity, 
                        _CAImageQueueGetDisplayMask, _CAImageQueueGetDisplayTime, 
                        _CAImageQueueGetDisplayedPixelCount, _CAImageQueueGetFlags, 
-                       _CAImageQueueGetFramebufferID, _CAImageQueueGetHeight, _CAImageQueueGetLastUpdateHostTime, 
+                       _CAImageQueueGetFramebufferID, _CAImageQueueGetGPURegistryID, 
+                       _CAImageQueueGetHeight, _CAImageQueueGetLastUpdateHostTime, 
                        _CAImageQueueGetLatestTime, _CAImageQueueGetReleasedImageInfo, 
                        _CAImageQueueGetTimeStamp, _CAImageQueueGetTimes, _CAImageQueueGetTypeID, 
                        _CAImageQueueGetUnconsumedImageCount, _CAImageQueueGetVBLInfo, 
@@ -159,13 +160,14 @@ exports:
                        _kCAContextSecure, _kCADepthNormalizationAverage, _kCADepthNormalizationHeight, 
                        _kCADepthNormalizationMax, _kCADepthNormalizationMin, _kCADepthNormalizationNone, 
                        _kCADepthNormalizationWidth, _kCADisplayAuto, _kCADisplayClonedFrameCount, 
-                       _kCADisplayDeviceName, _kCADisplayDolbyVision, _kCADisplayDolbyVisionNative, 
-                       _kCADisplayDolbyVisionTunneled, _kCADisplayFrameCount, _kCADisplayHDR10YCbCr420, 
-                       _kCADisplayHDR10YCbCr420LimitedRange, _kCADisplayHDR10YCbCr422, 
-                       _kCADisplayHDR10YCbCr422LimitedRange, _kCADisplayId, _kCADisplayInsetBounds, 
-                       _kCADisplayModeDolby, _kCADisplayModeGamutBT2020, _kCADisplayModeGamutP3, 
-                       _kCADisplayModeGamutSRGB, _kCADisplayModeHDR10, _kCADisplayModeHLG, 
-                       _kCADisplayModeSDR, _kCADisplayName, _kCADisplayNone, _kCADisplayOrientationRotation0, 
+                       _kCADisplayDeviceName, _kCADisplayDolbyVision, _kCADisplayDolbyVisionLowLatency, 
+                       _kCADisplayDolbyVisionNative, _kCADisplayDolbyVisionTunneled, 
+                       _kCADisplayFrameCount, _kCADisplayHDR10YCbCr420, _kCADisplayHDR10YCbCr420LimitedRange, 
+                       _kCADisplayHDR10YCbCr422, _kCADisplayHDR10YCbCr422LimitedRange, 
+                       _kCADisplayId, _kCADisplayInsetBounds, _kCADisplayModeDolby, 
+                       _kCADisplayModeGamutBT2020, _kCADisplayModeGamutP3, _kCADisplayModeGamutSRGB, 
+                       _kCADisplayModeHDR10, _kCADisplayModeHLG, _kCADisplayModeSDR, 
+                       _kCADisplayName, _kCADisplayNone, _kCADisplayOrientationRotation0, 
                        _kCADisplayOrientationRotation180, _kCADisplayOrientationRotation270, 
                        _kCADisplayOrientationRotation90, _kCADisplayRGBFullRange, 
                        _kCADisplayRGBLimitedRange, _kCADisplayScaleContent, _kCADisplaySkippedClonedFrameCount, 
@@ -264,25 +266,24 @@ exports:
                        _kCAWindowServerTVMode_PAL_BGHID, _kCAWindowServerTVSignalType_Component, 
                        _kCAWindowServerTVSignalType_Composite, _kCAWindowServerTVSignalType_Digital, 
                        _kCAWindowServerTVSignalType_None ]
-    objc-classes:    [ _CAAnimation, _CAAnimationGroup, _CABackdropLayer, _CABasicAnimation, 
-                       _CABehavior, _CAContext, _CADisplay, _CADisplayAttributes, 
-                       _CADisplayLink, _CADisplayMode, _CADistanceFieldLayer, _CADynamicsBehavior, 
-                       _CAEAGLLayer, _CAEmitterBehavior, _CAEmitterCell, _CAEmitterLayer, 
-                       _CAFilter, _CAForceField, _CAGradientLayer, _CAKeyframeAnimation, 
-                       _CALayer, _CALayerHost, _CALight, _CALinearMaskLayer, _CAMLParser, 
-                       _CAMLWriter, _CAMatchMoveAnimation, _CAMediaTimingFunction, 
-                       _CAMeshTransform, _CAMutableMeshTransform, _CAPackage, _CAPortalLayer, 
-                       _CAPresentationModifier, _CAPresentationModifierGroup, _CAPropertyAnimation, 
-                       _CARenderer, _CAReplicatorLayer, _CAScrollLayer, _CAShapeLayer, 
-                       _CASmoothedTextLayer, _CASpring, _CASpringAnimation, _CAState, 
-                       _CAStateAddAnimation, _CAStateAddElement, _CAStateController, 
-                       _CAStateElement, _CAStateRemoveAnimation, _CAStateRemoveElement, 
-                       _CAStateSetValue, _CAStateTransition, _CAStateTransitionElement, 
-                       _CATextLayer, _CATiledLayer, _CATransaction, _CATransactionCompletionItem, 
-                       _CATransformLayer, _CATransition, _CAValueFunction, _CAWindowServer, 
-                       _CAWindowServerDisplay ]
-    objc-ivars:      [ _CAStateAddElement._beforeObject, _CAStateAddElement._keyPath, 
-                       _CAStateAddElement._object, _CAStateElement._source, _CAStateElement._target, 
-                       _CAStateRemoveElement._keyPath, _CAStateRemoveElement._object, 
-                       _CAValueFunction._impl, _CAValueFunction._string ]
+    objc-classes:    [ CAAnimation, CAAnimationGroup, CABackdropLayer, CABasicAnimation, 
+                       CABehavior, CAContext, CADisplay, CADisplayAttributes, CADisplayLink, 
+                       CADisplayMode, CADistanceFieldLayer, CADynamicsBehavior, CAEAGLLayer, 
+                       CAEmitterBehavior, CAEmitterCell, CAEmitterLayer, CAFilter, 
+                       CAForceField, CAGradientLayer, CAKeyframeAnimation, CALayer, 
+                       CALayerHost, CALight, CALinearMaskLayer, CAMLParser, CAMLWriter, 
+                       CAMatchMoveAnimation, CAMediaTimingFunction, CAMeshTransform, 
+                       CAMutableMeshTransform, CAPackage, CAPortalLayer, CAPresentationModifier, 
+                       CAPresentationModifierGroup, CAPropertyAnimation, CARenderer, 
+                       CAReplicatorLayer, CAScrollLayer, CAShapeLayer, CASmoothedTextLayer, 
+                       CASpring, CASpringAnimation, CAState, CAStateAddAnimation, 
+                       CAStateAddElement, CAStateController, CAStateElement, CAStateRemoveAnimation, 
+                       CAStateRemoveElement, CAStateSetValue, CAStateTransition, 
+                       CAStateTransitionElement, CATextLayer, CATiledLayer, CATransaction, 
+                       CATransactionCompletionItem, CATransformLayer, CATransition, 
+                       CAValueFunction, CAWindowServer, CAWindowServerDisplay ]
+    objc-ivars:      [ CAStateAddElement._beforeObject, CAStateAddElement._keyPath, 
+                       CAStateAddElement._object, CAStateElement._source, CAStateElement._target, 
+                       CAStateRemoveElement._keyPath, CAStateRemoveElement._object, 
+                       CAValueFunction._impl, CAValueFunction._string ]
 ...

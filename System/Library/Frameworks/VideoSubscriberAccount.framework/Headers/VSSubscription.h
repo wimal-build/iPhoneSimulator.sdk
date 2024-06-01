@@ -66,6 +66,16 @@ VS_EXPORT
 /// Only provide values that are used in your availability feed's tier restrictions.
 @property (nonatomic, copy, null_resettable) NSArray<NSString *> *tierIdentifiers;
 
+/// Identifies the billing group associated with the subscription.  May be used,
+/// for example, to restrict content availability based on the proximity of the
+/// billing address to a specific venue.
+@property (nonatomic, copy, nullable) NSString *billingIdentifier
+#if TARGET_OS_IPHONE
+API_AVAILABLE(ios(11.3), tvos(11.3));
+#else
+;
+#endif // TARGET_OS_IPHONE
+
 @end
 
 NS_ASSUME_NONNULL_END

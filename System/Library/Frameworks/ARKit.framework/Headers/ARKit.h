@@ -18,12 +18,15 @@
 #import <ARKit/ARHitTestResult.h>
 #import <ARKit/ARLightEstimate.h>
 #import <ARKit/ARPointCloud.h>
+#import <ARKit/ARReferenceImage.h>
+#import <ARKit/ARVideoFormat.h>
 
 #import <ARKit/ARAnchor.h>
-#import <ARKit/ARPlaneAnchor.h>
-
 #import <ARKit/ARFaceAnchor.h>
 #import <ARKit/ARFaceGeometry.h>
+#import <ARKit/ARImageAnchor.h>
+#import <ARKit/ARPlaneAnchor.h>
+#import <ARKit/ARPlaneGeometry.h>
 
 #import <ARKit/ARSCNView.h>
 #import <ARKit/ARSKView.h>

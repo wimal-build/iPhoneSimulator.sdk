@@ -5,6 +5,7 @@
 //  Copyright 2009 Apple, Inc. All rights reserved.
 //
 
+#import <StoreKit/SKAdNetwork.h>
 #import <StoreKit/SKCloudServiceController.h>
 #import <StoreKit/SKCloudServiceSetupViewController.h>
 #import <StoreKit/SKDownload.h>

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 806E8754-BE82-33F1-ADC5-C665F2028F24', 'x86_64: C6252119-9043-3F0E-AE49-C12824BC8B3D' ]
+uuids:           [ 'i386: 806E8754-BE82-33F1-ADC5-C665F2028F24', 'x86_64: 2D38ACE6-BE41-3809-9B47-06B2F9F41516' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/OpenGLES.framework/OpenGLES
 objc-constraint: none
@@ -153,6 +153,6 @@ exports:
                        _kEAGLContextPropertySharedWithCompute, _kEAGLContextPropertySharegroup, 
                        _kEAGLContextPropertyVisibleInDebugTools, _kEAGLDrawablePropertyColorFormat, 
                        _kEAGLDrawablePropertyRetainedBacking ]
-    objc-classes:    [ _EAGLContext, _EAGLSharegroup ]
-    objc-ivars:      [ _EAGLContext._private ]
+    objc-classes:    [ EAGLContext, EAGLSharegroup ]
+    objc-ivars:      [ EAGLContext._private ]
 ...

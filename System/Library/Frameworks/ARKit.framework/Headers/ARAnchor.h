@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  Object representing a physical location and orientation in 3D space.
  */
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
-@interface ARAnchor : NSObject <NSCopying>
+@interface ARAnchor : NSObject <NSCopying, NSSecureCoding>
 
 /**
  Unique identifier of the anchor.
@@ -37,6 +37,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 + (instancetype)new NS_UNAVAILABLE;
 
 @end
+
 
 /**
  A real world object or location in the scene that is being tracked.

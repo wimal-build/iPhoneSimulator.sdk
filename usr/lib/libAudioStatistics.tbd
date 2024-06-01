@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1B9DC26D-393E-39A4-8A35-7719FB29908F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CEB205FC-518D-30CD-8823-550D7599F30B' ]
 platform:        ios
 install-name:    /usr/lib/libAudioStatistics.dylib
 objc-constraint: none
@@ -11,5 +11,5 @@ exports:
                        _CAReportingClientSendSingleMessage, _CAReportingClientSetAudioServiceType, 
                        _CAReportingClientStartReporter, _CAReportingClientStopReporter, 
                        _CreateSharedCAReportingClient ]
-    objc-classes:    [ _CAReporter, _CAReportingClient ]
+    objc-classes:    [ CAReporter, CAReportingClient ]
 ...

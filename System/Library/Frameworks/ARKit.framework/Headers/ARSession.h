@@ -96,6 +96,14 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  */
 - (void)removeAnchor:(ARAnchor *)anchor NS_SWIFT_NAME(remove(anchor:));
 
+/**
+ Sets the world origin of the session to be at the position and orientation
+ specified by the provided transform.
+ @param relativeTransform The rotation, translation and scale from the current world origin
+ to the desired world origin.
+ */
+- (void)setWorldOrigin:(matrix_float4x4)relativeTransform NS_SWIFT_NAME(setWorldOrigin(relativeTransform:)) API_AVAILABLE(ios(11.3));
+
 @end
 
 
@@ -141,10 +149,26 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  
  @discussion A session will continue running from the last known state once
  the interruption has ended. If the device has moved, anchors will be misaligned.
- To avoid this, some applications may want to reset tracking (see ARSessionRunOptions).
+ To avoid this, some applications may want to reset tracking (see ARSessionRunOptions)
+ or attempt to relocalize (see `-[ARSessionObserver sessionShouldAttemptRelocalization:]`).
  @param session The session that was interrupted.
  */
 - (void)sessionInterruptionEnded:(ARSession *)session;
+
+/**
+ This is called after a session resumes from a pause or interruption to determine
+ whether or not the session should attempt to relocalize.
+ 
+ @discussion To avoid misaligned anchors, apps may wish to attempt a relocalization after
+ a session pause or interruption. If YES is returned: the session will begin relocalizing
+ and tracking state will switch to limited with reason relocalizing. If successful, the
+ session's tracking state will return to normal. Because relocalization depends on
+ the user's location, it can run indefinitely. Apps that wish to give up on relocalization
+ may call run with `ARSessionRunOptionResetTracking` at any time.
+ @param session The session to relocalize.
+ @return Return YES to begin relocalizing.
+ */
+- (BOOL)sessionShouldAttemptRelocalization:(ARSession *)session API_AVAILABLE(ios(11.3));
 
 /**
  This is called when the session outputs a new audio sample buffer.

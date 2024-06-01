@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 678DEA2C-E33F-3144-95AD-2C62DCA19D27', 'x86_64: 3E4EFE04-624F-3181-8649-406324B4A96C' ]
+uuids:           [ 'i386: 678DEA2C-E33F-3144-95AD-2C62DCA19D27', 'x86_64: 61096886-3ED9-34B3-BF8C-1CCAF4948BD1' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreImage.framework/CoreImage
 current-version: 5
@@ -19,18 +19,18 @@ exports:
                        _tempTint_to_XYZ, _tempTint_to_matrix, _tempTint_to_xy, _xy_to_d50_matrix, 
                        _xy_to_tempTint, _xy_to_xy_matrix, _xyz_to_adobe_rgb_matrix, 
                        _xyz_to_rgb_matrix ]
-    objc-ivars:      [ _CIQRCodeFeature.messageString ]
+    objc-ivars:      [ CIQRCodeFeature.messageString ]
   - archs:           [ x86_64 ]
-    objc-ivars:      [ _CIAztecCodeDescriptor.dataCodewordCount, _CIAztecCodeDescriptor.errorCorrectedPayload, 
-                       _CIAztecCodeDescriptor.isCompact, _CIAztecCodeDescriptor.layerCount, 
-                       _CIDataMatrixCodeDescriptor.columnCount, _CIDataMatrixCodeDescriptor.eccVersion, 
-                       _CIDataMatrixCodeDescriptor.errorCorrectedPayload, _CIDataMatrixCodeDescriptor.rowCount, 
-                       _CIPDF417CodeDescriptor.columnCount, _CIPDF417CodeDescriptor.errorCorrectedPayload, 
-                       _CIPDF417CodeDescriptor.isCompact, _CIPDF417CodeDescriptor.rowCount, 
-                       _CIQRCodeDescriptor.errorCorrectedPayload, _CIQRCodeDescriptor.errorCorrectionLevel, 
-                       _CIQRCodeDescriptor.maskPattern, _CIQRCodeDescriptor.symbolVersion, 
-                       _CIQRCodeFeature.symbolDescriptor, _CIRenderDestination._priv, 
-                       _CIRenderInfo._priv, _CIRenderTask._priv ]
+    objc-ivars:      [ CIAztecCodeDescriptor.dataCodewordCount, CIAztecCodeDescriptor.errorCorrectedPayload, 
+                       CIAztecCodeDescriptor.isCompact, CIAztecCodeDescriptor.layerCount, 
+                       CIDataMatrixCodeDescriptor.columnCount, CIDataMatrixCodeDescriptor.eccVersion, 
+                       CIDataMatrixCodeDescriptor.errorCorrectedPayload, CIDataMatrixCodeDescriptor.rowCount, 
+                       CIPDF417CodeDescriptor.columnCount, CIPDF417CodeDescriptor.errorCorrectedPayload, 
+                       CIPDF417CodeDescriptor.isCompact, CIPDF417CodeDescriptor.rowCount, 
+                       CIQRCodeDescriptor.errorCorrectedPayload, CIQRCodeDescriptor.errorCorrectionLevel, 
+                       CIQRCodeDescriptor.maskPattern, CIQRCodeDescriptor.symbolVersion, 
+                       CIQRCodeFeature.symbolDescriptor, CIRenderDestination._priv, 
+                       CIRenderInfo._priv, CIRenderTask._priv ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _CIDetectorAccuracy, _CIDetectorAccuracyHigh, _CIDetectorAccuracyLow, 
                        _CIDetectorAspectRatio, _CIDetectorBetterEyeLocs, _CIDetectorDetectDiacritics, 
@@ -154,28 +154,27 @@ exports:
                        _kCISamplerWrapPeriodic, _kCISupportedDecoderVersionsKey, 
                        _kCIUIParameterSet, _kCIUISetAdvanced, _kCIUISetBasic, _kCIUISetDevelopment, 
                        _kCIUISetIntermediate ]
-    objc-classes:    [ _CIAztecCodeDescriptor, _CIBarcodeDescriptor, _CIBitmapContext, 
-                       _CIBlendKernel, _CIBurstImageSet, _CIColor, _CIColorKernel, 
-                       _CIContext, _CIContextCache, _CIDataMatrixCodeDescriptor, 
-                       _CIDetector, _CIFaceFeature, _CIFeature, _CIFilter, _CIFilterShape, 
-                       _CIImage, _CIImageAccumulator, _CIImageProcessorKernel, _CIKernel, 
-                       _CIPDF417CodeDescriptor, _CIQRCodeDescriptor, _CIQRCodeFeature, 
-                       _CIRectangleFeature, _CIRenderDestination, _CIRenderInfo, 
-                       _CIRenderTask, _CISampler, _CITextFeature, _CIVector, _CIWarpKernel ]
-    objc-ivars:      [ _CIBitmapContext._bcpriv, _CIBurstImageSet._priv, _CIColor._pad, 
-                       _CIColor._priv, _CIContext._priv, _CIFaceFeature.bounds, _CIFaceFeature.faceAngle, 
-                       _CIFaceFeature.hasFaceAngle, _CIFaceFeature.hasLeftEyePosition, 
-                       _CIFaceFeature.hasMouthPosition, _CIFaceFeature.hasRightEyePosition, 
-                       _CIFaceFeature.hasSmile, _CIFaceFeature.hasTrackingFrameCount, 
-                       _CIFaceFeature.hasTrackingID, _CIFaceFeature.leftEyeClosed, 
-                       _CIFaceFeature.leftEyePosition, _CIFaceFeature.mouthPosition, 
-                       _CIFaceFeature.rightEyeClosed, _CIFaceFeature.rightEyePosition, 
-                       _CIFaceFeature.trackingFrameCount, _CIFaceFeature.trackingID, 
-                       _CIFilter._priv, _CIFilterShape._pad, _CIFilterShape._priv, 
-                       _CIImage._priv, _CIImageAccumulator._state, _CIKernel._priv, 
-                       _CIQRCodeFeature.bottomLeft, _CIQRCodeFeature.bottomRight, 
-                       _CIQRCodeFeature.bounds, _CIQRCodeFeature.topLeft, _CIQRCodeFeature.topRight, 
-                       _CIRectangleFeature.bottomLeft, _CIRectangleFeature.bottomRight, 
-                       _CIRectangleFeature.bounds, _CIRectangleFeature.topLeft, _CIRectangleFeature.topRight, 
-                       _CISampler._priv, _CIVector._count, _CIVector._u ]
+    objc-classes:    [ CIAztecCodeDescriptor, CIBarcodeDescriptor, CIBitmapContext, 
+                       CIBlendKernel, CIBurstImageSet, CIColor, CIColorKernel, CIContext, 
+                       CIContextCache, CIDataMatrixCodeDescriptor, CIDetector, CIFaceFeature, 
+                       CIFeature, CIFilter, CIFilterShape, CIImage, CIImageAccumulator, 
+                       CIImageProcessorKernel, CIKernel, CIPDF417CodeDescriptor, 
+                       CIQRCodeDescriptor, CIQRCodeFeature, CIRectangleFeature, CIRenderDestination, 
+                       CIRenderInfo, CIRenderTask, CISampler, CITextFeature, CIVector, 
+                       CIWarpKernel ]
+    objc-ivars:      [ CIBitmapContext._bcpriv, CIBurstImageSet._priv, CIColor._pad, 
+                       CIColor._priv, CIContext._priv, CIFaceFeature.bounds, CIFaceFeature.faceAngle, 
+                       CIFaceFeature.hasFaceAngle, CIFaceFeature.hasLeftEyePosition, 
+                       CIFaceFeature.hasMouthPosition, CIFaceFeature.hasRightEyePosition, 
+                       CIFaceFeature.hasSmile, CIFaceFeature.hasTrackingFrameCount, 
+                       CIFaceFeature.hasTrackingID, CIFaceFeature.leftEyeClosed, 
+                       CIFaceFeature.leftEyePosition, CIFaceFeature.mouthPosition, 
+                       CIFaceFeature.rightEyeClosed, CIFaceFeature.rightEyePosition, 
+                       CIFaceFeature.trackingFrameCount, CIFaceFeature.trackingID, 
+                       CIFilter._priv, CIFilterShape._pad, CIFilterShape._priv, CIImage._priv, 
+                       CIImageAccumulator._state, CIKernel._priv, CIQRCodeFeature.bottomLeft, 
+                       CIQRCodeFeature.bottomRight, CIQRCodeFeature.bounds, CIQRCodeFeature.topLeft, 
+                       CIQRCodeFeature.topRight, CIRectangleFeature.bottomLeft, CIRectangleFeature.bottomRight, 
+                       CIRectangleFeature.bounds, CIRectangleFeature.topLeft, CIRectangleFeature.topRight, 
+                       CISampler._priv, CIVector._count, CIVector._u ]
 ...

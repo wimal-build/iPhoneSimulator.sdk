@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 44FB865B-F85B-362E-8077-0CEEC221E895' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 32440464-7AD2-3043-BA87-08EC9FC32197' ]
 platform:        ios
 install-name:    /usr/lib/libboringssl.dylib
 current-version: 0
@@ -18,7 +18,8 @@ exports:
                        _CRYPTO_get_ex_new_index, _CRYPTO_library_init, _CRYPTO_new_ex_data, 
                        _CRYPTO_refcount_dec_and_test_zero, _CRYPTO_refcount_inc, 
                        _CRYPTO_set_ex_data, _DH_get_2048_256, _DH_size, _DTLS_method, 
-                       _ECDH_compute_key, _ECDSA_do_verify, _EC_GROUP_free, _EC_GROUP_new_by_curve_name, 
+                       _ECDH_compute_key, _ECDSA_SIG_free, _ECDSA_SIG_new, _ECDSA_do_sign, 
+                       _ECDSA_do_verify, _EC_GROUP_free, _EC_GROUP_new_by_curve_name, 
                        _EC_KEY_check_key, _EC_KEY_free, _EC_KEY_generate_key, _EC_KEY_get0_group, 
                        _EC_KEY_get0_public_key, _EC_KEY_new, _EC_KEY_new_by_curve_name, 
                        _EC_KEY_set_group, _EC_KEY_set_public_key, _EC_POINT_free, 
@@ -40,9 +41,9 @@ exports:
                        _EVP_sha256, _EVP_sha384, _EVP_sha512, _HMAC, _HMAC_CTX_cleanup, 
                        _HMAC_CTX_init, _HMAC_Final, _HMAC_Init_ex, _HMAC_Update, 
                        _OPENSSL_cleanse, _PEM_read_bio_PrivateKey, _PKCS5_PBKDF2_HMAC_SHA1, 
-                       _RAND_bytes, _RSA_default_method, _SHA256_Final, _SHA256_Init, 
-                       _SHA256_Update, _SSL_CIPHER_get_id, _SSL_CTX_clear_mode, _SSL_CTX_clear_options, 
-                       _SSL_CTX_enable_ocsp_stapling, _SSL_CTX_enable_signed_cert_timestamps, 
+                       _RAND_bytes, _RSA_default_method, _SHA256, _SHA256_Final, 
+                       _SHA256_Init, _SHA256_Update, _SSL_CIPHER_get_id, _SSL_CTX_clear_mode, 
+                       _SSL_CTX_clear_options, _SSL_CTX_enable_ocsp_stapling, _SSL_CTX_enable_signed_cert_timestamps, 
                        _SSL_CTX_flush_sessions, _SSL_CTX_free, _SSL_CTX_get_client_CA_list, 
                        _SSL_CTX_get_mode, _SSL_CTX_get_tmp_dh, _SSL_CTX_new, _SSL_CTX_sess_set_new_cb, 
                        _SSL_CTX_set0_chain, _SSL_CTX_set1_curves, _SSL_CTX_set_alpn_protos, 
@@ -69,12 +70,12 @@ exports:
                        _SSL_get_error, _SSL_get_ex_data, _SSL_get_mode, _SSL_get_peer_cert_chain, 
                        _SSL_get_server_random, _SSL_get_servername, _SSL_get_session, 
                        _SSL_get_tmp_dh, _SSL_in_false_start, _SSL_is_dtls, _SSL_new, 
-                       _SSL_read, _SSL_session_reused, _SSL_set0_chain, _SSL_set1_curves, 
-                       _SSL_set_alpn_protos, _SSL_set_bio, _SSL_set_cert_cb, _SSL_set_cipher_list, 
-                       _SSL_set_client_CA_list, _SSL_set_ex_data, _SSL_set_max_proto_version, 
-                       _SSL_set_max_version, _SSL_set_min_proto_version, _SSL_set_min_version, 
-                       _SSL_set_mode, _SSL_set_mtu, _SSL_set_ocsp_response, _SSL_set_options, 
-                       _SSL_set_private_key_method, _SSL_set_psk_client_callback, 
+                       _SSL_peek, _SSL_read, _SSL_session_reused, _SSL_set0_chain, 
+                       _SSL_set1_curves, _SSL_set_alpn_protos, _SSL_set_bio, _SSL_set_cert_cb, 
+                       _SSL_set_cipher_list, _SSL_set_client_CA_list, _SSL_set_ex_data, 
+                       _SSL_set_max_proto_version, _SSL_set_max_version, _SSL_set_min_proto_version, 
+                       _SSL_set_min_version, _SSL_set_mode, _SSL_set_mtu, _SSL_set_ocsp_response, 
+                       _SSL_set_options, _SSL_set_private_key_method, _SSL_set_psk_client_callback, 
                        _SSL_set_psk_server_callback, _SSL_set_renegotiate_mode, _SSL_set_session, 
                        _SSL_set_shutdown, _SSL_set_tlsext_host_name, _SSL_set_tmp_dh, 
                        _SSL_set_verify, _SSL_shutdown, _SSL_state, _SSL_use_certificate, 

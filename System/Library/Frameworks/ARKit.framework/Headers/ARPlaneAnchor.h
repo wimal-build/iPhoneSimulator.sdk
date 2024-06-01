@@ -10,15 +10,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ARPlaneGeometry;
+
 /**
  A value describing the alignment of a plane anchor.
  */
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 typedef NS_ENUM(NSInteger, ARPlaneAnchorAlignment) {
     /** A plane that is horizontal with respect to gravity. */
-    ARPlaneAnchorAlignmentHorizontal
-
+    ARPlaneAnchorAlignmentHorizontal,
+    
+    /** A plane that is vertical with respect to gravity. */
+    ARPlaneAnchorAlignmentVertical API_AVAILABLE(ios(11.3))
 } NS_SWIFT_NAME(ARPlaneAnchor.Alignment);
+
 
 /**
  An anchor representing a planar surface in the world.
@@ -41,6 +46,11 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
  The extent of the plane in the anchor’s coordinate space.
  */
 @property (nonatomic, readonly) vector_float3 extent;
+
+/**
+ Geometry of the plane in the anchor's coordinate space.
+ */
+@property (nonatomic, strong, readonly) ARPlaneGeometry *geometry API_AVAILABLE(ios(11.3));
 
 /** Unavailable */
 - (instancetype)initWithTransform:(matrix_float4x4)transform NS_UNAVAILABLE;

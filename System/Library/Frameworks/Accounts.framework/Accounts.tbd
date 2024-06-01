@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FB3E76E1-1E84-3771-81EF-81DDEEF54B0C', 'x86_64: A78FEF9C-1D54-3758-A84D-540687782382' ]
+uuids:           [ 'i386: FB3E76E1-1E84-3771-81EF-81DDEEF54B0C', 'x86_64: 0CA1ADF2-01B5-3D21-AF54-9AEF2D7A6323' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/Accounts.framework/Accounts
 objc-constraint: none
@@ -73,18 +73,19 @@ exports:
                        _ACFindMyiPhoneTokenKey, _ACGrandslamApplicationIdentifierKey, 
                        _ACGrandslamTokenIdentifierKey, _ACHSATokenKey, _ACHeartbeatTokenKey, 
                        _ACKeepPasswordsAround, _ACLinkedInAppIdKeyDeprecated, _ACLinkedInPermissionsKeyDeprecated, 
-                       _ACLiverpoolContainerIdKey, _ACLogLevelKey, _ACMapsTokenKey, 
-                       _ACMigrationDidFinishDarwinNotification, _ACOAuthTokenKey, 
-                       _ACOAuthTokenNoSyncKey, _ACOAuthTokenNoSyncSeparator, _ACOAuthTokenSecretKey, 
-                       _ACOldPasswordKey, _ACOutputLevelKey, _ACPasswordKey, _ACPasswordResetTokenBackupKey, 
-                       _ACPasswordResetTokenKey, _ACPropertyKeyAuthenticated, _ACPropertyKeyCredential, 
-                       _ACPropertyKeyEnabledDataclasses, _ACPropertyKeyProvisionedDataclasses, 
-                       _ACPurposeKey, _ACRawPasswordKey, _ACRemoteDeviceCommandAddAccount, 
-                       _ACRemoteDeviceCommandDeleteAccount, _ACRemoteDeviceCommandDeleteAllAccounts, 
-                       _ACRemoteDeviceCommandFetchAccounts, _ACRemoteDeviceCommandInvalidateFetchedAccountsCache, 
-                       _ACRemoteDeviceCommandShowCredentialPrompt, _ACRemoteDeviceCommandUpdateAccount, 
-                       _ACRemoteDeviceCommandUpdateAccountCredential, _ACRemoteDeviceOptionAskForReply, 
-                       _ACShouldSuppressPromptsKey, _ACTencentWeiboAppIdKey, _ACTencentWeiboAppIdKeyDeprecated, 
+                       _ACLiverpoolContainerIdKey, _ACLogLevelKey, _ACMDMServerAuthTokenKey, 
+                       _ACMapsTokenKey, _ACMigrationDidFinishDarwinNotification, 
+                       _ACOAuthTokenKey, _ACOAuthTokenNoSyncKey, _ACOAuthTokenNoSyncSeparator, 
+                       _ACOAuthTokenSecretKey, _ACOldPasswordKey, _ACOutputLevelKey, 
+                       _ACPasswordKey, _ACPasswordResetTokenBackupKey, _ACPasswordResetTokenKey, 
+                       _ACPropertyKeyAuthenticated, _ACPropertyKeyCredential, _ACPropertyKeyEnabledDataclasses, 
+                       _ACPropertyKeyProvisionedDataclasses, _ACPurposeKey, _ACRawPasswordKey, 
+                       _ACRemoteDeviceCommandAddAccount, _ACRemoteDeviceCommandDeleteAccount, 
+                       _ACRemoteDeviceCommandDeleteAllAccounts, _ACRemoteDeviceCommandFetchAccounts, 
+                       _ACRemoteDeviceCommandInvalidateFetchedAccountsCache, _ACRemoteDeviceCommandShowCredentialPrompt, 
+                       _ACRemoteDeviceCommandUpdateAccount, _ACRemoteDeviceCommandUpdateAccountCredential, 
+                       _ACRemoteDeviceOptionAskForReply, _ACShouldSuppressPromptsKey, 
+                       _ACTencentWeiboAppIdKey, _ACTencentWeiboAppIdKeyDeprecated, 
                        _ACTencentWeiboClientConsumerKey, _ACTokenExpiryDateKey, _ACTokenKey, 
                        _ACYahooXYMPKICookieCrumbKey, _ACYahooXYMPKICookieTKey, _ACYahooXYMPKICookieYKey, 
                        _ACYahooXYMPKITokenKey, __ACLogSystem, _createACAccountWithASAccountProperties, 
@@ -160,11 +161,11 @@ exports:
                        _kAccountDataclassSiri, _kAccountDataclassSmartDefaults, _kAccountDataclassUbiquity, 
                        _kAccountMigrationLockFilename, _serializeSecCertificates, 
                        _serializeSecTrust, _unserializeSecCertificates, _unserializeSecTrust ]
-    objc-classes:    [ _ACAccount, _ACAccountCredential, _ACAccountMigrationLock, 
-                       _ACAccountStore, _ACAccountStoreClientSideListener, _ACAccountType, 
-                       _ACCredentialItem, _ACDAccountStoreInterface, _ACDManagedAccessOptionsKey, 
-                       _ACDManagedAccount, _ACDManagedAccountProperty, _ACDManagedAccountType, 
-                       _ACDManagedAuthorization, _ACDManagedCredentialItem, _ACDManagedDataclass, 
-                       _ACDPropertyEncryption, _ACDataclassAction, _ACManagedDefaults, 
-                       _ACOAuthSigner, _ACRemoteAccountStoreSession, _ACSystemConfigManager ]
+    objc-classes:    [ ACAccount, ACAccountCredential, ACAccountMigrationLock, ACAccountStore, 
+                       ACAccountStoreClientSideListener, ACAccountType, ACCredentialItem, 
+                       ACDAccountStoreInterface, ACDManagedAccessOptionsKey, ACDManagedAccount, 
+                       ACDManagedAccountProperty, ACDManagedAccountType, ACDManagedAuthorization, 
+                       ACDManagedCredentialItem, ACDManagedDataclass, ACDPropertyEncryption, 
+                       ACDataclassAction, ACManagedDefaults, ACOAuthSigner, ACRemoteAccountStoreSession, 
+                       ACSystemConfigManager, ACZeroingString ]
 ...

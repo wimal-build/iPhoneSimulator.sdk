@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class HMTrigger;
 @class HMUser;
 @class HMHomeAccessControl;
+@class HMAccessorySetupPayload;
 
 @protocol HMHomeDelegate;
 
@@ -166,6 +167,16 @@ NS_CLASS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0)
  *                   will be nil on success.
  */
 - (void)addAndSetupAccessoriesWithCompletionHandler:(void (^)(NSError * __nullable error))completion __IOS_AVAILABLE(10_0) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+
+/*!
+ * @brief Add accessory with the given setup payload to the home.
+ *
+ * @param completion Block that is invoked once the request is processed.
+ *                   Accessories provides the list of added accessories.
+ *                   The NSError provides more information on the status of the request, error
+ *                   will be nil on success.
+ */
+- (void)addAndSetupAccessoriesWithPayload:(HMAccessorySetupPayload *)payload completionHandler:(void (^)(NSArray<HMAccessory *>* __nullable accessories, NSError * __nullable error))completion API_AVAILABLE(ios(11.3)) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
 
 @end
 

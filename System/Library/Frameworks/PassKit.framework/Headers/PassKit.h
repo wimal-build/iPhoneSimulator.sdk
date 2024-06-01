@@ -15,6 +15,9 @@
 #import <PassKit/PKLabeledValue.h>
 #endif
 #import <PassKit/PKContact.h>
+#if __has_include(<PassKit/PKTransitPassProperties.h>)
+#import <PassKit/PKTransitPassProperties.h>
+#endif
 #if __has_include(<PassKit/PKSuicaPassProperties.h>)
 #import <PassKit/PKSuicaPassProperties.h>
 #endif

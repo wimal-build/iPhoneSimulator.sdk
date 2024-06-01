@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 58B2D18A-CA77-347D-BE24-C9A3E1C748F9', 'x86_64: 79B3EE42-798B-32B0-BC43-D61B777813D0' ]
+uuids:           [ 'i386: 58B2D18A-CA77-347D-BE24-C9A3E1C748F9', 'x86_64: 8322458B-5BB7-31D9-815A-BFEF3A7D04FC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 current-version: 492
@@ -238,10 +238,10 @@ exports:
                        _kSoundCheck_MaxPerceivedPowerCoeffKey, _kSoundCheck_MaxPerceivedPowerMsecKey, 
                        _kSoundCheck_PeakAmplitudeKey, _kSoundCheck_PeakAmplitudeMsecKey, 
                        _tkqMjk4y ]
-    objc-classes:    [ _AUAudioUnit, _AUAudioUnitBus, _AUAudioUnitBusArray, _AUAudioUnitPreset, 
-                       _AUAudioUnitV2Bridge, _AUHostExtensionContext, _AUParameter, 
-                       _AUParameterGroup, _AUParameterNode, _AUParameterTree, _AURemoteExtensionContext, 
-                       _AVHapticEvent, _AVHapticParameterCurveValue, _AVHapticPlayer, 
-                       _AVHapticPlayerChannel, _AVHapticSequence, _AudioComponentRegistrar, 
-                       _InterAppAudioApp, _InterAppAudioGroup ]
+    objc-classes:    [ AUAudioUnit, AUAudioUnitBus, AUAudioUnitBusArray, AUAudioUnitPreset, 
+                       AUAudioUnitV2Bridge, AUHostExtensionContext, AUParameter, 
+                       AUParameterGroup, AUParameterNode, AUParameterTree, AURemoteExtensionContext, 
+                       AVHapticEvent, AVHapticParameterCurveValue, AVHapticPlayer, 
+                       AVHapticPlayerChannel, AVHapticSequence, AudioComponentRegistrar, 
+                       InterAppAudioApp, InterAppAudioGroup ]
 ...

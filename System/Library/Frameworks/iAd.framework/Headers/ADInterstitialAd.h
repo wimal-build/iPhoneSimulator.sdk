@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma clang system_header
+
 #define IAD_DEPRECATED_IOS_MSG(_iosIntro, _iosDep, _msg) \
     __OSX_AVAILABLE_BUT_DEPRECATED_MSG(__MAC_NA, __MAC_NA, __IPHONE_##_iosIntro, __IPHONE_##_iosDep, _msg)
 

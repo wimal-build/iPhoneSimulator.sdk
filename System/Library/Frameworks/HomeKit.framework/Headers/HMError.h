@@ -108,6 +108,7 @@ typedef NS_ENUM(NSInteger, HMErrorCode) {
     HMErrorCodeIncompatibleNetwork                     NS_ENUM_AVAILABLE_IOS(10_2) = 90,
     HMErrorCodeNoHomeHub                               NS_ENUM_AVAILABLE_IOS(11_0) = 91,
     HMErrorCodeNoCompatibleHomeHub                     NS_ENUM_AVAILABLE_IOS(11_0) = 92,
+    HMErrorCodeIncompatibleAccessory                   NS_ENUM_AVAILABLE_IOS(11_3) = 93,
     HMErrorCodeIncompatibleHomeHub                     API_DEPRECATED_WITH_REPLACEMENT("HMErrorCodeNoCompatibleHomeHub", ios(11.0, 11.0), watchos(4.0, 4.0), tvos(11.0, 11.0)) = HMErrorCodeNoCompatibleHomeHub,
 } NS_AVAILABLE_IOS(8_0) __WATCHOS_AVAILABLE(2_0) __TVOS_AVAILABLE(10_0);
 

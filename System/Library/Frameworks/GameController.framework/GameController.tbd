@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: C32F57E9-27AC-3DEA-A671-FB8366827EAD' ]
+uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: F4AD6107-FDC6-33C7-9A44-2679BE5E0283' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/GameController.framework/GameController
 objc-constraint: none
@@ -14,16 +14,15 @@ exports:
                        _NSDataFromGCMicroGamepadSnapShotDataV100, __GCHIDEventCallback, 
                        _clamp, _kGCCommonFullPreferencesPath, _kGCCommonPreferencesUser, 
                        _threadRunLoopSourceCallback ]
-    objc-classes:    [ _GCController, _GCControllerAxisInput, _GCControllerButtonInput, 
-                       _GCControllerCBDelegate, _GCControllerDirectionPad, _GCControllerElement, 
-                       _GCControllerMBDelegate, _GCControllerSFDelegate, _GCEventViewController, 
-                       _GCExtendedGamepad, _GCExtendedGamepadSnapshot, _GCGamepad, 
-                       _GCGamepadSnapshot, _GCMicroGamepad, _GCMicroGamepadSnapshot, 
-                       _GCMotion, __GCCControllerHIDServiceInfo, __GCController, 
-                       __GCControllerManager, __GCMicroGamepadSnapshot ]
-    objc-ivars:      [ _GCControllerCBDelegate._centralManager, _GCControllerCBDelegate._completionHandler, 
-                       _GCControllerCBDelegate._connectedPeripherals, _GCControllerCBDelegate._foundPeripherals, 
-                       _GCControllerMBDelegate._discoveryAgent, _GCControllerMBDelegate._pairingAgent, 
-                       _GCControllerMBDelegate._session, _GCControllerMBDelegate._timer, 
-                       _GCControllerSFDelegate._activity ]
+    objc-classes:    [ GCController, GCControllerAxisInput, GCControllerButtonInput, 
+                       GCControllerCBDelegate, GCControllerDirectionPad, GCControllerElement, 
+                       GCControllerMBDelegate, GCControllerSFDelegate, GCEventViewController, 
+                       GCExtendedGamepad, GCExtendedGamepadSnapshot, GCGamepad, GCGamepadSnapshot, 
+                       GCMicroGamepad, GCMicroGamepadSnapshot, GCMotion, _GCCControllerHIDServiceInfo, 
+                       _GCController, _GCControllerManager, _GCMicroGamepadSnapshot ]
+    objc-ivars:      [ GCControllerCBDelegate._centralManager, GCControllerCBDelegate._completionHandler, 
+                       GCControllerCBDelegate._connectedPeripherals, GCControllerCBDelegate._foundPeripherals, 
+                       GCControllerMBDelegate._discoveryAgent, GCControllerMBDelegate._pairingAgent, 
+                       GCControllerMBDelegate._session, GCControllerMBDelegate._timer, 
+                       GCControllerSFDelegate._activity ]
 ...

@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D3F92F6D-990B-34A3-942E-5B61495D66E7', 'x86_64: AE5F4D0E-531A-36AC-98A6-E84EC6391CE4' ]
+uuids:           [ 'i386: D3F92F6D-990B-34A3-942E-5B61495D66E7', 'x86_64: 16B75CEB-AF18-3D6C-B446-DB7D249290ED' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
 current-version: 69
@@ -56,6 +56,5 @@ exports:
                        _kMIDIPropertyTransmitsBankSelectMSB, _kMIDIPropertyTransmitsClock, 
                        _kMIDIPropertyTransmitsMTC, _kMIDIPropertyTransmitsNotes, 
                        _kMIDIPropertyTransmitsProgramChanges, _kMIDIPropertyUniqueID ]
-    objc-classes:    [ _BLEMIDIAccessor, _MIDINetworkConnection, _MIDINetworkHost, 
-                       _MIDINetworkSession ]
+    objc-classes:    [ BLEMIDIAccessor, MIDINetworkConnection, MIDINetworkHost, MIDINetworkSession ]
 ...

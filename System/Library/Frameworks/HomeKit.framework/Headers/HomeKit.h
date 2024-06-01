@@ -40,6 +40,7 @@
 #import <HomeKit/HMEventTriggerActivationState.h>
 #import <HomeKit/HMSignificantEvents.h>
 #import <HomeKit/HMPresenceEventDefines.h>
+#import <HomeKit/HMAccessorySetupPayload.h>
 
 #if __has_include(<UIKit/UIView.h>)
 #import <HomeKit/HMCameraView.h>

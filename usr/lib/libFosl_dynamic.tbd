@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 5C77CB9F-C702-378F-AC41-56492BEB29DD', 'x86_64: 6628EA4A-F279-3D9C-B3F4-3D5BD022CBFB' ]
+uuids:           [ 'i386: 5C77CB9F-C702-378F-AC41-56492BEB29DD', 'x86_64: BE669073-0B16-363F-9C76-4516108F669A' ]
 platform:        ios
 install-name:    /usr/lib/libFosl_dynamic.dylib
 current-version: 0

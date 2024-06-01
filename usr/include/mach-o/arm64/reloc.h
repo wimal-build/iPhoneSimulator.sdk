@@ -37,5 +37,5 @@ enum reloc_type_arm64
     ARM64_RELOC_TLVP_LOAD_PAGE21, // pc-rel distance to page of TLVP slot
     ARM64_RELOC_TLVP_LOAD_PAGEOFF12, // offset within page of TLVP slot,
                                      //  scaled by r_length
-    ARM64_RELOC_ADDEND		  // must be followed by PAGE21 or PAGEOFF12
+    ARM64_RELOC_ADDEND 		  // must be followed by PAGE21 or PAGEOFF12
 };

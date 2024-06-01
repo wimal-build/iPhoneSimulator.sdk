@@ -28,6 +28,9 @@ typedef NS_ERROR_ENUM(ARErrorDomain, ARErrorCode) {
     
     /** World tracking has encountered a fatal error. */
     ARErrorCodeWorldTrackingFailed        = 200,
+    
+    /** Invalid reference image */
+    ARErrorCodeInvalidReferenceImage        API_AVAILABLE(ios(11.3)) = 300,
 };
 
 NS_ASSUME_NONNULL_END

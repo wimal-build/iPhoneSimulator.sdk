@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ARReferenceImage;
+@class ARVideoFormat;
+
 /**
  Enum constants for indicating the world alignment.
  */
@@ -33,10 +36,13 @@ typedef NS_ENUM(NSInteger, ARWorldAlignment) {
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 typedef NS_OPTIONS(NSUInteger, ARPlaneDetection) {
     /** No plane detection is run. */
-    ARPlaneDetectionNone        = 0,
+    ARPlaneDetectionNone                              = 0,
     
     /** Plane detection determines horizontal planes in the scene. */
-    ARPlaneDetectionHorizontal  = (1 << 0),
+    ARPlaneDetectionHorizontal                        = (1 << 0),
+    
+    /** Plane detection determines vertical planes in the scene. */
+    ARPlaneDetectionVertical API_AVAILABLE(ios(11.3)) = (1 << 1)
 } NS_SWIFT_NAME(ARWorldTrackingConfiguration.PlaneDetection);
 
 
@@ -49,7 +55,18 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 /**
  Determines whether this device supports the ARConfiguration.
  */
-@property(class, nonatomic, readonly) BOOL isSupported;
+@property (class, nonatomic, readonly) BOOL isSupported;
+
+/**
+ A list of supported video formats for this configuration and device.
+ @discussion The first element in the list is the default format for session output.
+ */
+@property (class, nonatomic, strong, readonly) NSArray<ARVideoFormat *> *supportedVideoFormats API_AVAILABLE(ios(11.3));
+
+/**
+ Video format of the session output.
+ */
+@property (nonatomic, strong, readwrite) ARVideoFormat *videoFormat API_AVAILABLE(ios(11.3));
 
 /**
  Determines how the coordinate system should be aligned with the world.
@@ -87,11 +104,23 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @interface ARWorldTrackingConfiguration : ARConfiguration
 
 /**
+ Enable or disable continuous auto focus.
+ @discussion Enabled by default.
+ */
+@property (nonatomic, readwrite, getter=isAutoFocusEnabled) BOOL autoFocusEnabled API_AVAILABLE(ios(11.3));
+
+/**
  Type of planes to detect in the scene.
  @discussion If set, new planes will continue to be detected and updated over time. Detected planes will be added to the session as
  ARPlaneAnchor objects. In the event that two planes are merged, the newer plane will be removed. Defaults to ARPlaneDetectionNone.
  */
 @property (nonatomic, readwrite) ARPlaneDetection planeDetection;
+
+/**
+ Images to detect in the scene.
+ @discussion If set the session will attempt to detect the specified images. When an image is detected an ARImageAnchor will be added to the session.
+ */
+@property (nonatomic, copy, nullable, readwrite) NSSet<ARReferenceImage *> *detectionImages API_AVAILABLE(ios(11.3));
 
 - (instancetype)init;
 + (instancetype)new NS_SWIFT_UNAVAILABLE("Use init() instead");
@@ -107,10 +136,17 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 @interface AROrientationTrackingConfiguration : ARConfiguration
 
+/**
+ Enable or disable continuous auto focus.
+ @discussion Enabled by default.
+ */
+@property (nonatomic, readwrite, getter=isAutoFocusEnabled) BOOL autoFocusEnabled API_AVAILABLE(ios(11.3));
+
 - (instancetype)init;
 + (instancetype)new NS_SWIFT_UNAVAILABLE("Use init() instead");
 
 @end
+
 
 /**
  A configuration for running face tracking.

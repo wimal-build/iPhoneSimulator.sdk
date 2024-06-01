@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: BA727140-906E-3682-B9DD-BC133150CAF9' ]
+uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: 392F95B3-15C2-3FC3-8E41-4C3546B73511' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/GameplayKit.framework/GameplayKit
 objc-constraint: none
@@ -301,30 +301,30 @@ exports:
                        _lqMapOverAllObjectsInBin, _lqMapOverAllObjectsInLocality, 
                        _lqMapOverAllObjectsInLocalityClipped, _lqMapOverAllOutsideObjects, 
                        _lqRemoveAllObjects, _lqRemoveFromBin, _lqUpdateForNewLocation ]
-    objc-classes:    [ _GKARC4RandomSource, _GKAbsoluteValueNoiseModifier, _GKAddNoiseModifier, 
-                       _GKAgent, _GKAgent2D, _GKAgent3D, _GKBehavior, _GKBillowNoiseSource, 
-                       _GKBlendNoiseModifier, _GKCheckerboardNoiseSource, _GKCircleObstacle, 
-                       _GKClampNoiseModifier, _GKCoherentNoiseSource, _GKComponent, 
-                       _GKComponentSystem, _GKCompositeBehavior, _GKConstantNoiseSource, 
-                       _GKConstantPowerNoiseModifier, _GKCurveNoiseModifier, _GKCustomClassUnarchiver, 
-                       _GKCylindersNoiseSource, _GKDecisionNode, _GKDecisionTree, 
-                       _GKDisplaceNoiseModifier, _GKEntity, _GKGaussianDistribution, 
-                       _GKGoal, _GKGraph, _GKGraphNode, _GKGraphNode2D, _GKGraphNode3D, 
-                       _GKGridGraph, _GKGridGraphNode, _GKHybridStrategist, _GKInvertNoiseModifier, 
-                       _GKLinearCongruentialRandomSource, _GKMaximumNoiseModifier, 
-                       _GKMersenneTwisterRandomSource, _GKMeshGraph, _GKMinimumNoiseModifier, 
-                       _GKMinmaxStrategist, _GKMonteCarloStrategist, _GKMoveNoiseModifier, 
-                       _GKMultiplyNoiseModifier, _GKNSPredicateRule, _GKNoise, _GKNoiseMap, 
-                       _GKNoiseModifier, _GKNoiseSource, _GKNoiseSourceUtils, _GKObstacle, 
-                       _GKObstacleGraph, _GKOctree, _GKOctreeNode, _GKPath, _GKPerlinNoiseSource, 
-                       _GKPolygonObstacle, _GKPowerNoiseModifier, _GKQuadtree, _GKQuadtreeNode, 
-                       _GKRTree, _GKRandomDistribution, _GKRandomSource, _GKRidgedNoiseSource, 
-                       _GKRotateNoiseModifier, _GKRule, _GKRuleSystem, _GKSCNNodeComponent, 
-                       _GKSKNodeComponent, _GKScaleNoiseModifier, _GKScene, _GKShuffledDistribution, 
-                       _GKSphereObstacle, _GKSpheresNoiseSource, _GKState, _GKStateMachine, 
-                       _GKSystemArc4RandomSource, _GKTerraceNoiseModifier, _GKTurbulenceNoiseModifier, 
-                       _GKVoronoiNoiseSource, __GKBlockRule, __GKNSPredicateRule ]
-    objc-ivars:      [ _GKNoiseModifier._inputModules ]
+    objc-classes:    [ GKARC4RandomSource, GKAbsoluteValueNoiseModifier, GKAddNoiseModifier, 
+                       GKAgent, GKAgent2D, GKAgent3D, GKBehavior, GKBillowNoiseSource, 
+                       GKBlendNoiseModifier, GKCheckerboardNoiseSource, GKCircleObstacle, 
+                       GKClampNoiseModifier, GKCoherentNoiseSource, GKComponent, 
+                       GKComponentSystem, GKCompositeBehavior, GKConstantNoiseSource, 
+                       GKConstantPowerNoiseModifier, GKCurveNoiseModifier, GKCustomClassUnarchiver, 
+                       GKCylindersNoiseSource, GKDecisionNode, GKDecisionTree, GKDisplaceNoiseModifier, 
+                       GKEntity, GKGaussianDistribution, GKGoal, GKGraph, GKGraphNode, 
+                       GKGraphNode2D, GKGraphNode3D, GKGridGraph, GKGridGraphNode, 
+                       GKHybridStrategist, GKInvertNoiseModifier, GKLinearCongruentialRandomSource, 
+                       GKMaximumNoiseModifier, GKMersenneTwisterRandomSource, GKMeshGraph, 
+                       GKMinimumNoiseModifier, GKMinmaxStrategist, GKMonteCarloStrategist, 
+                       GKMoveNoiseModifier, GKMultiplyNoiseModifier, GKNSPredicateRule, 
+                       GKNoise, GKNoiseMap, GKNoiseModifier, GKNoiseSource, GKNoiseSourceUtils, 
+                       GKObstacle, GKObstacleGraph, GKOctree, GKOctreeNode, GKPath, 
+                       GKPerlinNoiseSource, GKPolygonObstacle, GKPowerNoiseModifier, 
+                       GKQuadtree, GKQuadtreeNode, GKRTree, GKRandomDistribution, 
+                       GKRandomSource, GKRidgedNoiseSource, GKRotateNoiseModifier, 
+                       GKRule, GKRuleSystem, GKSCNNodeComponent, GKSKNodeComponent, 
+                       GKScaleNoiseModifier, GKScene, GKShuffledDistribution, GKSphereObstacle, 
+                       GKSpheresNoiseSource, GKState, GKStateMachine, GKSystemArc4RandomSource, 
+                       GKTerraceNoiseModifier, GKTurbulenceNoiseModifier, GKVoronoiNoiseSource, 
+                       _GKBlockRule, _GKNSPredicateRule ]
+    objc-ivars:      [ GKNoiseModifier._inputModules ]
     weak-def-symbols: [ __ZTI11GKCQuadTreeI8NSObjectE, __ZTI13GKCOctreeNodeI8NSObjectE, 
                         __ZTI15GKCQuadTreeNodeI8NSObjectE, __ZTI15GKSimpleVehicle, 
                         __ZTI9GKCOctreeI8NSObjectE, __ZTIN10ClipperLib16clipperExceptionE, 

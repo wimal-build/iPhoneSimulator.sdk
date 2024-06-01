@@ -37,6 +37,7 @@ API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(macos, watchos, tvos)
 
 @end
 
+
 /**
  A directional light estimate representing the light intensity and direction in the scene.
  */

@@ -2,7 +2,7 @@
 //  CTCellularData.h
 //  CFTelephony
 //
-//  Copyright © 2015 Apple Inc. All rights reserved.
+//  Copyright (c) 2015 Apple Inc. All rights reserved.
 //
 
 #import <CoreTelephony/CoreTelephonyDefines.h>

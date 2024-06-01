@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 046CA89F-EA71-3DA6-AD67-B6CC16CAB62D', 'x86_64: 69633D0E-D665-3E42-AE22-9451A09707F6' ]
+uuids:           [ 'i386: 046CA89F-EA71-3DA6-AD67-B6CC16CAB62D', 'x86_64: 6F619BE4-8B0E-323D-81BE-77878525A9BD' ]
 platform:        ios
 install-name:    /usr/lib/libbsm.0.dylib
 objc-constraint: none

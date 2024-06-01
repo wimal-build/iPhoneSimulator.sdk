@@ -1,14 +1,14 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: A31A4F2E-12D7-3E03-94B3-B8CDB8F7C543' ]
+uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: ED5DA083-26E7-3765-9DF4-4AD769796F15' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
-current-version: 238.1
+current-version: 260.0.1
 objc-constraint: none
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _VSStoreProviderResponseKeyAppStoreIdentifier, _VSSubscriptionFetchOptionIncludeUninstalledApps ]
-    objc-classes:    [ _VSBundlePrivacyInfo, _VSCookieServer, _VSDemoProviderServer ]
+    objc-classes:    [ VSBundlePrivacyInfo, VSCookieServer, VSDemoProviderServer ]
   - archs:           [ i386, x86_64 ]
     symbols:         [ _VSAccountProviderAuthenticationSchemeSAML, _VSAccountStoreDidChangeNotification, 
                        _VSActiveSubscriptionsDidChangeNotification, _VSAllKnownTemplateElements, 
@@ -49,10 +49,10 @@ exports:
                        _VSStoreProviderResponseKeyRoot, _VSStoreProviderResponseKeyVendorIdentifier, 
                        _VSStoreURLBagKeyAllIdentityProviderApps, _VSStoreURLBagKeyIdentityProviderApps, 
                        _VSStoreURLBagKeyIdentityProviders, _VSStoreURLBagKeyMaxFeaturedProviders, 
-                       _VSStoreURLBagKeyVerificationStateReset, _VSSubscriptionFetchOptionCreationDateInterval, 
-                       _VSSubscriptionFetchOptionEarliestExpirationDate, _VSSubscriptionFetchOptionExcludeUninstalledApps, 
-                       _VSSubscriptionFetchOptionSourceKind, _VSSubscriptionFetchOptionSources, 
-                       _VSSubscriptionFetchOptionSubscriberIdentifierHashModifier, 
+                       _VSStoreURLBagKeySoleProviderFeatureEnabled, _VSStoreURLBagKeyVerificationStateReset, 
+                       _VSSubscriptionFetchOptionCreationDateInterval, _VSSubscriptionFetchOptionEarliestExpirationDate, 
+                       _VSSubscriptionFetchOptionExcludeUninstalledApps, _VSSubscriptionFetchOptionSourceKind, 
+                       _VSSubscriptionFetchOptionSources, _VSSubscriptionFetchOptionSubscriberIdentifierHashModifier, 
                        _VSSubscriptionFetchOptionSubscriptionInfo, _VSSubscriptionFetchOptionsForAppWithBundleIdentifier, 
                        _VSSubscriptionFetchOptionsForBundleIdentifiersAndDomainNames, 
                        _VSSubscriptionFetchOptionsForInfoFromAppWithBundleIdentifier, 
@@ -61,27 +61,25 @@ exports:
                        _VSValueTransformerBindingOption, _VSValueTypeCopyWithZone, 
                        _VSValueTypeDescription, _VSValueTypeEncodeWithCoder, _VSValueTypeHash, 
                        _VSValueTypeInit, _VSValueTypeInitWithCoder, _VSValueTypeIsEqual ]
-    objc-classes:    [ _VSAccount, _VSAccountChannels, _VSAccountChannelsCenter, 
-                       _VSAccountChannelsSaveOperation, _VSAccountManager, _VSAccountManagerResult, 
-                       _VSAccountMetadata, _VSAccountMetadataRequest, _VSAccountProviderResponse, 
-                       _VSAccountSaveOperation, _VSAccountSerializationCenter, _VSAccountStore, 
-                       _VSAppChannelsFilter, _VSAppInstallationOperation, _VSAsyncOperation, 
-                       _VSAuditToken, _VSBackgroundTask, _VSBlockBasedValueTransformer, 
-                       _VSCasePreservingString, _VSCompoundValueTransformer, _VSDelayOperation, 
-                       _VSDeveloperAttribute, _VSDeveloperIdentityProviderChangeOperation, 
-                       _VSDeveloperIdentityProviderFetchAllOperation, _VSDevice, 
-                       _VSErrorRecoveryAttempterDelegate, _VSErrorRecoveryOption, 
-                       _VSExpressionEvaluator, _VSFailable, _VSFailableValueTransformer, 
-                       _VSFileWriteOperation, _VSIdentityProvider, _VSIdentityProviderAvailabilityInfoCenter, 
-                       _VSIdentityProviderFetchAllAppsOperation, _VSIdentityProviderFetchAppsOperation, 
-                       _VSKeyPathBasedTreeNode, _VSOpaqueAuthenticationToken, _VSOptional, 
-                       _VSPersistentStorage, _VSPreferences, _VSPrivacyConsentVoucher, 
-                       _VSPrivacyFacade, _VSRemoteNotifier, _VSRestrictionsCenter, 
-                       _VSReverseValueTransformer, _VSSAMLAuthenticationToken, _VSSecurityTask, 
-                       _VSSemaphore, _VSStateMachine, _VSStoreAuthenticationNotificationOperation, 
-                       _VSStoreRequest, _VSStoreRequestOperation, _VSStoreURLBag, 
-                       _VSSubscription, _VSSubscriptionRegistrationCenter, _VSSubscriptionSource, 
-                       _VSTimeoutOperation, _VSTreeNode, _VSValueType, _VSValueTypeProperty, 
-                       _VSVerificationDataOperation, _VSVerificationStateResetOperation, 
-                       _VSViewServiceResponse, _VSViewServiceXPCInterface, _VSWeakForwardingTarget ]
+    objc-classes:    [ VSAccount, VSAccountChannels, VSAccountChannelsCenter, VSAccountChannelsSaveOperation, 
+                       VSAccountManager, VSAccountManagerResult, VSAccountMetadata, 
+                       VSAccountMetadataRequest, VSAccountProviderResponse, VSAccountSaveOperation, 
+                       VSAccountSerializationCenter, VSAccountStore, VSAppChannelsFilter, 
+                       VSAppInstallationOperation, VSAsyncOperation, VSAuditToken, 
+                       VSBackgroundTask, VSBlockBasedValueTransformer, VSCasePreservingString, 
+                       VSCompoundValueTransformer, VSDelayOperation, VSDeveloperAttribute, 
+                       VSDeveloperIdentityProviderChangeOperation, VSDeveloperIdentityProviderFetchAllOperation, 
+                       VSDevice, VSErrorRecoveryAttempterDelegate, VSErrorRecoveryOption, 
+                       VSExpressionEvaluator, VSFailable, VSFailableValueTransformer, 
+                       VSFileWriteOperation, VSIdentityProvider, VSIdentityProviderAvailabilityInfoCenter, 
+                       VSIdentityProviderFetchAllAppsOperation, VSIdentityProviderFetchAppsOperation, 
+                       VSKeyPathBasedTreeNode, VSOpaqueAuthenticationToken, VSOptional, 
+                       VSPersistentStorage, VSPreferences, VSPrivacyConsentVoucher, 
+                       VSPrivacyFacade, VSRemoteNotifier, VSRestrictionsCenter, VSReverseValueTransformer, 
+                       VSSAMLAuthenticationToken, VSSecurityTask, VSSemaphore, VSStateMachine, 
+                       VSStoreAuthenticationNotificationOperation, VSStoreRequest, 
+                       VSStoreRequestOperation, VSStoreURLBag, VSSubscription, VSSubscriptionRegistrationCenter, 
+                       VSSubscriptionSource, VSTimeoutOperation, VSTreeNode, VSValueType, 
+                       VSValueTypeProperty, VSVerificationDataOperation, VSVerificationStateResetOperation, 
+                       VSViewServiceResponse, VSViewServiceXPCInterface, VSWeakForwardingTarget ]
 ...

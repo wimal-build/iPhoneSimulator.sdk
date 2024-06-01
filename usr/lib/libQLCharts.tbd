@@ -1,6 +1,6 @@
---- !tapi-tbd-v2
+--- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0280902C-32CA-31D3-A332-2954B53739F5', 'x86_64: EA6A892B-BC65-3685-8776-BB3B8FA0F25E' ]
+uuids:           [ 'i386: 0280902C-32CA-31D3-A332-2954B53739F5', 'x86_64: C6FA0579-0DA8-380F-BAF1-B1FB16C057C2' ]
 platform:        ios
 install-name:    /usr/lib/libQLCharts.dylib
 current-version: 257.2
@@ -156,5 +156,5 @@ exports:
                        _kOIChartStockType, _kOIChartStrokeColorKey, _kOIChartStrokeWidthKey, 
                        _kOIChartSurfaceType, _kOIChartTextColorKey, _kOIChartTitleAreaKey, 
                        _kOIChartTitleKey, _kOIChartUseShadowsKey, _kOIChartXYType ]
-    objc-classes:    [ _OIPieChartRenderer, _OIPieSliceCGRenderer ]
+    objc-classes:    [ OIPieChartRenderer, OIPieSliceCGRenderer ]
 ...

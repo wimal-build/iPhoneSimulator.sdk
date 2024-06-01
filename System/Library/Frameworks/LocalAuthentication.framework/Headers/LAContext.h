@@ -121,9 +121,12 @@ NS_CLASS_AVAILABLE(10_10, 8_0) __WATCHOS_AVAILABLE(3.0) __TVOS_AVAILABLE(10.0)
 ///                        the authentication dialog subtitle for Touch ID or passcode. The name of the
 ///                        calling application will be displayed in title, so it should not be duplicated here.
 ///
-///                        This parameter is ignored by Face ID authentication. Therefore, you should
-///                        make sure that users are already aware of the need and reason for Face ID
-///                        authentication before they have triggered the policy evaluation.
+///                        This parameter is mostly ignored by Face ID authentication. Face ID will show
+///                        generic instructions unless a customized fallback title is provided in
+///                        localizedFallbackTitle property. For that case, it will show the authentication
+///                        reason so that the instructions can be made consistent with the custom button
+///                        title. Therefore, you should make sure that users are already aware of the need
+///                        and reason for Face ID authentication before they have triggered the policy evaluation.
 ///
 /// @warning localizedReason parameter is mandatory and the call will throw NSInvalidArgumentException if
 ///          nil or empty string is specified.
@@ -242,9 +245,12 @@ typedef NS_ENUM(NSInteger, LAAccessControlOperation)
 ///                        the authentication dialog subtitle for Touch ID or passcode. The name of the
 ///                        calling application will be displayed in title, so it should not be duplicated here.
 ///
-///                        This parameter is ignored by Face ID authentication. Therefore, you should
-///                        make sure that users are already aware of the need and reason for Face ID
-///                        authentication before they have triggered the policy evaluation.
+///                        This parameter is mostly ignored by Face ID authentication. Face ID will show
+///                        generic instructions unless a customized fallback title is provided in
+///                        localizedFallbackTitle property. For that case, it will show the authentication
+///                        reason so that the instructions can be made consistent with the custom button
+///                        title. Therefore, you should make sure that users are already aware of the need
+///                        and reason for Face ID authentication before they have triggered the policy evaluation.
 ///
 /// @param reply Reply block that is executed when access control evaluation finishes.
 ///              success Reply parameter that is YES if the access control has been evaluated successfully or
@@ -352,7 +358,7 @@ typedef NS_ENUM(NSInteger, LABiometryType)
 
 /// Indicates the type of the biometry supported by the device.
 ///
-/// @discussion  This property is set only when canEvaluatePolicy succeeds for a biometric policy.
+/// @discussion  This property is set when canEvaluatePolicy has been called for a biometric policy.
 ///              The default value is LABiometryTypeNone.
 @property (nonatomic, readonly) LABiometryType biometryType API_AVAILABLE(macos(10.13.2), ios(11.0)) API_UNAVAILABLE(watchos, tvos);
 
