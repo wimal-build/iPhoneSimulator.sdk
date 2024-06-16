@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 635DF843-65BB-3D69-8072-16CB2DD64001' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5061D74C-6093-38A9-AC9F-E5654A9EF11A' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCoreML.dylib'
 current-version: 0

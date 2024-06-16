@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: 2BAE597C-29F5-38EA-9A58-86466B51D744' ]
+uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: 200CCB71-B463-3C47-AC79-36CCC6E54E81' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount'
-current-version: 331.60.4
+current-version: 331.70.6
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _VSEntitlementNameBulletinService, _VSStoreProviderResponseKeyAppStoreIdentifier, 
@@ -13,7 +13,7 @@ exports:
   - archs:           [ i386, x86_64 ]
     symbols:         [ _VSAccountProviderAuthenticationSchemeAPI, _VSAccountProviderAuthenticationSchemeSAML, 
                        _VSAccountStoreDidChangeNotification, _VSActiveSubscriptionsDidChangeNotification, 
-                       _VSAllKnownTemplateElements, _VSBundleURLForProcessIdentifier, 
+                       _VSAllKnownTemplateElements, _VSBuddyBundleID, _VSBundleURLForProcessIdentifier, 
                        _VSCheckAccessOptionPrompt, _VSCheckEntitlementForTask, _VSDataCompressionValueTransformerName, 
                        _VSDefaultLogObject, _VSDeveloperServiceDidChangeNotification, 
                        _VSDeveloperServiceInterface, _VSDeveloperServiceProvidersDidChangeNotification, 
@@ -97,8 +97,8 @@ exports:
                        VSSAMLAuthenticationToken, VSSecurityTask, VSSemaphore, VSSetTopBoxProfile, 
                        VSStateMachine, VSStateTransition, VSStoreRequest, VSStoreRequestOperation, 
                        VSStoreURLBag, VSStoreURLBagLoadOperation, VSSubscription, 
-                       VSSubscriptionRegistrationCenter, VSSubscriptionSource, VSTimeoutOperation, 
-                       VSTreeNode, VSValueType, VSValueTypeProperty, VSVerificationDataOperation, 
-                       VSVerificationStateResetOperation, VSViewServiceResponse, 
-                       VSViewServiceXPCInterface, VSWeakForwardingTarget ]
+                       VSSubscriptionRegistrationCenter, VSSubscriptionSource, VSTestSetupPreparationOperation, 
+                       VSTimeoutOperation, VSTreeNode, VSValueType, VSValueTypeProperty, 
+                       VSVerificationDataOperation, VSVerificationStateResetOperation, 
+                       VSViewServiceResponse, VSViewServiceXPCInterface, VSWeakForwardingTarget ]
 ...

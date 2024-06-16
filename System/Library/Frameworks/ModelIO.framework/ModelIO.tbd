@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3490D6B6-DA19-383C-83DB-E4FC1FB9AF89', 'x86_64: 5C56E625-CB46-3333-AC1D-EB1A3EAD226E' ]
+uuids:           [ 'i386: 3490D6B6-DA19-383C-83DB-E4FC1FB9AF89', 'x86_64: C020D72E-E306-3CD9-A856-2C3F57B6121E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ModelIO.framework/ModelIO'
-current-version: 217.43
+current-version: 217.45
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _MDLCopyAttributeBytes, _MDLCopyAttributeData, _MDLFormatVertexData, 

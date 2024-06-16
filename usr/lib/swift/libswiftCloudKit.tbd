@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 27DB2BC1-4803-37EB-954C-6676EB20CA54', 'x86_64: A8014B89-2612-3B2C-B3A1-9230A7B9C485' ]
+uuids:           [ 'i386: 27DB2BC1-4803-37EB-954C-6676EB20CA54', 'x86_64: FCF67FCA-9CD8-395F-AAB9-5A626AF3A987' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCloudKit.dylib'
 current-version: 0

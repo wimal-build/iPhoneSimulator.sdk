@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9D64E5B3-2A59-366A-8D46-E0378CA67666', 'x86_64: C0F9B3C0-79FE-3806-8128-A635BCF1B06D' ]
+uuids:           [ 'i386: 9D64E5B3-2A59-366A-8D46-E0378CA67666', 'x86_64: 8399F108-BFDF-3364-A6C7-2FCBE1597B42' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/HomeKit.framework/HomeKit'
-current-version: 621.6.6
+current-version: 621.7.3
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _HMBridgePutAccessoryInAssociateMode, _HMBridgePutAccessoryInDisassociateMode, 

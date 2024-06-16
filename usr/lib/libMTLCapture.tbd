@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4D0456ED-F367-3B14-AA2E-DC8696F30A36' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EE55CCC7-0122-3116-98E1-88DDC54F420A' ]
 platform:        ios
 install-name:    '/usr/lib/libMTLCapture.dylib'
 current-version: 198.30.10

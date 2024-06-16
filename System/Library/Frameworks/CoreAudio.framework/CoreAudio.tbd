@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 287B4944-D8B0-3ECE-945F-576FBA15C4E1', 'x86_64: A7C84694-E66F-37F8-B34A-104DD55F406F' ]
+uuids:           [ 'i386: 287B4944-D8B0-3ECE-945F-576FBA15C4E1', 'x86_64: 21AC1B5A-00C0-3719-8F3B-D7DED2C18641' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreAudio.framework/CoreAudio'
 exports:         

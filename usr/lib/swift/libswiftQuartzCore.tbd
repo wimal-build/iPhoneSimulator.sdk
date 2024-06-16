@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 594AB6A6-70ED-3039-8F02-6B404A7E061D', 'x86_64: BA97089E-8DC9-3AAC-A671-304630C0E598' ]
+uuids:           [ 'i386: 594AB6A6-70ED-3039-8F02-6B404A7E061D', 'x86_64: 4BE5C383-A590-3437-A57D-B1F58B395B7A' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftQuartzCore.dylib'
 current-version: 0

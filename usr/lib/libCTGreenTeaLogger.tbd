@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2201A391-86D9-3513-B170-C799B68C858A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 97E7DAE2-281D-3EF1-B42E-4972B5D03C7A' ]
 platform:        ios
 install-name:    '/usr/lib/libCTGreenTeaLogger.dylib'
 exports:         

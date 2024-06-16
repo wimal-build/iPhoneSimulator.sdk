@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A5CCE06-7AAD-3814-9C9E-34B95EEF6BD7', 'x86_64: A9571BAE-293A-3B7B-A95D-4596D8F2559D' ]
+uuids:           [ 'i386: 2A5CCE06-7AAD-3814-9C9E-34B95EEF6BD7', 'x86_64: 5619DC98-6BB3-3A81-BDA1-04E708991775' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ContactsUI.framework/ContactsUI'
 current-version: 33

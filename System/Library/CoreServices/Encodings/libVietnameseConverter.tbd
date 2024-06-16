@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4C26112F-99E8-37DE-8FA5-D545A4E75F91', 'x86_64: F3FF4F56-5262-3E14-9EC3-C34F640974E9' ]
+uuids:           [ 'i386: 4C26112F-99E8-37DE-8FA5-D545A4E75F91', 'x86_64: 511BA04F-B4C2-3255-9F3F-4B18A4D0F44A' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libVietnameseConverter.dylib'
 current-version: 76

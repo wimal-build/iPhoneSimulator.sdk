@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 570F9886-7C17-30FE-83C9-13F06D60A2F3' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6B00AE92-195D-31C8-B429-58C0DD625F34' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SwiftUI.framework/SwiftUI'
 exports:         

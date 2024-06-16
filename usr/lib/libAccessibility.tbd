@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: E483FB26-0EEB-39AA-BEEE-CCADCAB27A22' ]
+uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: C32A8B07-D490-3837-8EA9-DF6D43318B92' ]
 platform:        ios
 install-name:    '/usr/lib/libAccessibility.dylib'
 exports:         

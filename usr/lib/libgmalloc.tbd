@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 451B2E49-CDFE-3DC6-A302-2A3168D9CE65', 'x86_64: 56A91D83-C1FB-38D9-A0BB-3724E22DFE65' ]
+uuids:           [ 'i386: 451B2E49-CDFE-3DC6-A302-2A3168D9CE65', 'x86_64: 0A367500-AA4D-3404-B75B-8A9984CCEB88' ]
 platform:        ios
 install-name:    '/usr/lib/libgmalloc.dylib'
 exports:         

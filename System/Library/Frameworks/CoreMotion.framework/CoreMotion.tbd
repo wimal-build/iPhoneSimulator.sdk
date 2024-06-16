@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: 4407A7E2-91A1-329D-A5B3-5099B0B11B0D' ]
+uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: DCD4632D-CC01-3409-917A-A504B48CA208' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreMotion.framework/CoreMotion'
-current-version: 2394.0.31
+current-version: 2394.0.33
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _CMCaptureModeData, _CMWorkoutKeyEventDate, _CMWorkoutKeyLocation, 

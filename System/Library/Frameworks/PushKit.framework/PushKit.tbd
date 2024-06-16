@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 271D424C-8FB3-3257-B673-2B8C464C1670', 'x86_64: A2F703AD-328B-388B-A074-CAD6C7BEE9CD' ]
+uuids:           [ 'i386: 271D424C-8FB3-3257-B673-2B8C464C1670', 'x86_64: E7ED9D34-3CB3-3353-AD62-AC696DFA4E36' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/PushKit.framework/PushKit'
 exports:         

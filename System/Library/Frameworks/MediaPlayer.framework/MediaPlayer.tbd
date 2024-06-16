@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: FBCC8FD3-14BD-3DB2-9543-F2E5A8C818F7' ]
+uuids:           [ 'i386: 6288223E-9363-324E-9DD3-999E5ECACCE8', 'x86_64: 047EE1D3-6ED5-3077-8449-14240C7B4251' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer'
 exports:         

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6B0985F4-1108-3315-9203-816E5D634A8B' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C7531B11-8F27-3378-96E4-6B29B36CE9CE' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices'
-current-version: 609.2.9
+current-version: 609.3.5
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _ASAuthorizationAppleIDProviderCredentialRevokedNotification, 

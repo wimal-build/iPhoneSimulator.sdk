@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A4135715-C63F-3E6F-B1BE-22F9F6C3AAE2', 'x86_64: D1E955C9-47C1-3C53-8B94-1936F8020132' ]
+uuids:           [ 'i386: A4135715-C63F-3E6F-B1BE-22F9F6C3AAE2', 'x86_64: 6450EA25-8D4C-315E-A4E7-C9628026CAD4' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/NotificationCenter.framework/NotificationCenter'
 exports:         

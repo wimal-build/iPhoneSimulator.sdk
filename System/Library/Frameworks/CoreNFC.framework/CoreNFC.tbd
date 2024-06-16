@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F1674888-1854-36A1-BAA3-CEFE268A2E86' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9A4FC52A-2EDD-3B0E-8A82-A8D3560B0D90' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreNFC.framework/CoreNFC'
 exports:         

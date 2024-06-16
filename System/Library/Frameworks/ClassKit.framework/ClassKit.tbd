@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 74617430-3DFD-32FF-8F06-47481AB0C312' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2168248E-E5F1-31F2-ABE3-09D7A19BE696' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ClassKit.framework/ClassKit'
-current-version: 145.5.15
+current-version: 145.6.1
 exports:         
   - archs:           [ i386, x86_64 ]
     symbols:         [ _CLSAdoptPersonaUniqueIdentifier, _CLSAppleContactsPrivateEntitlement, 

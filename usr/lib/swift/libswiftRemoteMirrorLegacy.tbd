@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1FD5D6AA-6D3E-3424-8353-4CBCC599B82D' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: B300E970-384C-3F85-84FF-E09AEE2120B8' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftRemoteMirrorLegacy.dylib'
 current-version: 902.0.52

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E2AF092D-E69E-3E2B-A672-76C4021611F3', 'x86_64: 193FBACB-E075-360B-AF20-3A800399FC6B' ]
+uuids:           [ 'i386: E2AF092D-E69E-3E2B-A672-76C4021611F3', 'x86_64: B9A944A0-64CD-3A3B-8056-67D936C4E91D' ]
 platform:        ios
 install-name:    '/usr/lib/libChineseTokenizer.dylib'
 current-version: 34

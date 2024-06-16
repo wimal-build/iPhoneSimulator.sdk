@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: FFE381AC-96BF-3AFC-9804-C251039D8B45' ]
+uuids:           [ 'i386: A3450FFB-5ABC-3EE0-A072-34449D970D94', 'x86_64: C6C5AB5F-CF79-3CD0-8762-0D71CE5F7BE8' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/WebKit.framework/WebKit'
-current-version: 609.2.9
+current-version: 609.3.5
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _DatabaseServiceInitializer, _WKBundleBackForwardListItemIsInPageCache, 
@@ -826,10 +826,11 @@ exports:
                        _WKWebsiteDataStoreSetResourceLoadStatisticsShouldDowngradeReferrerForTesting, 
                        _WKWebsiteDataStoreSetServiceWorkerRegistrationDirectory, 
                        _WKWebsiteDataStoreSetStatisticsCacheMaxAgeCap, _WKWebsiteDataStoreSetStatisticsCrossSiteLoadWithLinkDecoration, 
-                       _WKWebsiteDataStoreSetStatisticsGrandfathered, _WKWebsiteDataStoreSetStatisticsGrandfatheringTime, 
-                       _WKWebsiteDataStoreSetStatisticsHasHadUserInteraction, _WKWebsiteDataStoreSetStatisticsIsRunningTest, 
-                       _WKWebsiteDataStoreSetStatisticsLastSeen, _WKWebsiteDataStoreSetStatisticsMaxStatisticsEntries, 
-                       _WKWebsiteDataStoreSetStatisticsMergeStatistic, _WKWebsiteDataStoreSetStatisticsMinimumTimeBetweenDataRecordsRemoval, 
+                       _WKWebsiteDataStoreSetStatisticsExpiredStatistic, _WKWebsiteDataStoreSetStatisticsGrandfathered, 
+                       _WKWebsiteDataStoreSetStatisticsGrandfatheringTime, _WKWebsiteDataStoreSetStatisticsHasHadUserInteraction, 
+                       _WKWebsiteDataStoreSetStatisticsIsRunningTest, _WKWebsiteDataStoreSetStatisticsLastSeen, 
+                       _WKWebsiteDataStoreSetStatisticsMaxStatisticsEntries, _WKWebsiteDataStoreSetStatisticsMergeStatistic, 
+                       _WKWebsiteDataStoreSetStatisticsMinimumTimeBetweenDataRecordsRemoval, 
                        _WKWebsiteDataStoreSetStatisticsNotifyPagesWhenDataRecordsWereScanned, 
                        _WKWebsiteDataStoreSetStatisticsNotifyPagesWhenTelemetryWasCaptured, 
                        _WKWebsiteDataStoreSetStatisticsPrevalentResource, _WKWebsiteDataStoreSetStatisticsPruneEntriesDownTo, 
@@ -911,10 +912,10 @@ exports:
                        _WKWebsiteDataStore, _WKWebsiteDataStoreConfiguration, _WKWebsitePolicies ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: EDE9EE2D-EB3B-3AD5-A107-2DABCA3FCBD1' ]
+uuids:           [ 'i386: 9011AFAD-D99A-3728-AA1E-85E9398C1CA1', 'x86_64: A6DBAE01-D9C6-3981-8861-0E3694761ADC' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
-current-version: 609.2.9
+current-version: 609.3.5
 exports:         
   - archs:           [ i386 ]
     objc-classes:    [ DOMDOMTokenList, DOMNodeFilter, WebCoreScrollView, WebPluginController ]

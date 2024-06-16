@@ -1,15 +1,24 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6E0E686A-87FD-3394-8148-9A1583CA94CA' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 27BC0FC6-51AB-36CB-9357-B22DB289F32C' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
 current-version: 0
 compatibility-version: 0
 exports:         
   - archs:           [ i386, x86_64 ]
-    symbols:         [ _ENErrorDomain, _ENErrorF, _ENNestedErrorF, _ENRPIDerive, 
-                       _ENTEKGenerate, _ENXPCGetNextClientID ]
-    objc-classes:    [ ENExposureConfiguration, ENExposureDetectionClientSession, 
-                       ENExposureDetectionSession, ENExposureDetectionSummary, ENExposureInfo, 
-                       ENFile, ENManager, ENSimulator, ENTemporaryExposureKey, ENUserAlert ]
+    symbols:         [ _ENAEMCrypt, _ENAEMKDerive, _ENCompareDiagnosisReportTypes, 
+                       _ENDataVaultPath, _ENErrorDomain, _ENErrorF, _ENLocalizedString, 
+                       _ENNestedErrorF, _ENRPIDerive, _ENRPIDeriveBatch, _ENRPIKDerive, 
+                       _ENTEKGenerate, _ENUICreateRemotePresentationController, _ENUIHostViewControllerInterface, 
+                       _ENUIRemoteViewControllerInterface, _ENXPCDecodeSecureObject, 
+                       _ENXPCEncodeSecureObject, _ENXPCGetNextClientID ]
+    objc-classes:    [ ENArchive, ENExposureConfiguration, ENExposureDaySummary, 
+                       ENExposureDetectionClientSession, ENExposureDetectionSession, 
+                       ENExposureDetectionSummary, ENExposureInfo, ENExposureNotification, 
+                       ENExposureSummaryItem, ENExposureWindow, ENFile, ENManager, 
+                       ENProtobufCoder, ENRegion, ENRegionConfiguration, ENRegionServerConfiguration, 
+                       ENRegionServerExposureRiskClassification, ENRegionServerExposureRiskConfiguration, 
+                       ENRemotePresentationRequest, ENScanInstance, ENSignature, 
+                       ENSignatureFile, ENSimulator, ENTemporaryExposureKey, ENUserAlert ]
 ...

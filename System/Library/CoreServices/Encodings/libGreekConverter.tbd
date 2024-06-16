@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6CFBB972-0786-39E9-BBDA-A4DF434FDC7B', 'x86_64: 9BD31481-FA9F-39E8-A89B-B7BC87C4F2F7' ]
+uuids:           [ 'i386: 6CFBB972-0786-39E9-BBDA-A4DF434FDC7B', 'x86_64: 9A4CF9B0-DE7C-3DF3-85C9-BD640647B705' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libGreekConverter.dylib'
 current-version: 76

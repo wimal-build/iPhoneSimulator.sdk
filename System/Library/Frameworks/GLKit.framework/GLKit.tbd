@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4CDCCBFE-99E9-3A7B-A4B7-D601B5549AEC', 'x86_64: 2066A0A2-582A-3176-B284-AF7E074287A2' ]
+uuids:           [ 'i386: 4CDCCBFE-99E9-3A7B-A4B7-D601B5549AEC', 'x86_64: 6ACBB05E-71C3-371E-A172-6AD2A7B9093E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GLKit.framework/GLKit'
 current-version: 106

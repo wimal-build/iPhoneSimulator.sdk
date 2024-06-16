@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: 46D97A27-C9EA-3CCC-848F-27BE29C826E5' ]
+uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: 941FD183-D5B3-3F97-8F70-93403367581A' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GameController.framework/GameController'
 exports:         
@@ -20,8 +20,9 @@ exports:
                        _NSDataFromGCMicroGamepadSnapShotDataV100, _NSDataFromGCMicroGamepadSnapshotData, 
                        _USBControllerClassForVendorAndProduct, _VendorNameForATVProfile, 
                        __GCHIDEventCallback, _clamp, _currentProcessHasEntitlement, 
-                       _doesDescriptorConformToSpec, _elementRangesMatch, _gc_isInternalBuild, 
-                       _getGCHIDLogger, _getInterfaceNumberForDevice, _isDeviceAppleB239Digitizer, 
+                       _currentProcessIsGameControllerDaemon, _doesDescriptorConformToSpec, 
+                       _elementRangesMatch, _gc_isInternalBuild, _getGCHIDLogger, 
+                       _getInterfaceNumberForDevice, _isDeviceAppleB239Digitizer, 
                        _isDeviceAppleControlCenterRemote, _isDeviceAppleEmbeddedBluetoothButtons, 
                        _isDeviceAppleSiriRemote, _isDeviceDualShock4, _isDeviceMFiAuthenticated, 
                        _isDeviceMotionLite, _isDeviceXboxOne, _s_cbDelegate, _s_cbDelegateQueue, 

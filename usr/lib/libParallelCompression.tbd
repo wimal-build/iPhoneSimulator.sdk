@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A299EA65-AC70-34CD-B157-9A4ECE22F485' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3D445605-43C6-3607-AD5C-8FDDE193C587' ]
 platform:        ios
 install-name:    '/usr/lib/libParallelCompression.dylib'
 exports:         

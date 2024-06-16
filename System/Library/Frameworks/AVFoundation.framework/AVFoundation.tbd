@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 2932F2A8-7764-3105-852E-973EC4849324' ]
+uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 722403D4-66C6-3B91-88D2-5EE7D4A1DE68' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/AVFoundation'
 current-version: 2
@@ -996,9 +996,10 @@ exports:
                        _AVMediaCharacteristicDescribesMusicAndSoundForAccessibility, 
                        _AVMediaCharacteristicDescribesVideoForAccessibility, _AVMediaCharacteristicDubbedTranslation, 
                        _AVMediaCharacteristicEasyToRead, _AVMediaCharacteristicFrameBased, 
-                       _AVMediaCharacteristicIsAuxiliaryContent, _AVMediaCharacteristicIsMainProgramContent, 
-                       _AVMediaCharacteristicIsOriginalContent, _AVMediaCharacteristicLanguageTranslation, 
-                       _AVMediaCharacteristicLegible, _AVMediaCharacteristicTranscribesSpokenDialogForAccessibility, 
+                       _AVMediaCharacteristicHasLanguageDisplayNameAsName, _AVMediaCharacteristicIsAuxiliaryContent, 
+                       _AVMediaCharacteristicIsMainProgramContent, _AVMediaCharacteristicIsOriginalContent, 
+                       _AVMediaCharacteristicLanguageTranslation, _AVMediaCharacteristicLegible, 
+                       _AVMediaCharacteristicTranscribesSpokenDialogForAccessibility, 
                        _AVMediaCharacteristicUsesWideGamutColorSpace, _AVMediaCharacteristicVisual, 
                        _AVMediaCharacteristicVoiceOverTranslation, _AVMediaSubtypeDescriptionStringForFormatDescription, 
                        _AVMediaSubtypesForAC3, _AVMediaSubtypesForEnhancedAC3, _AVMediaTypeAudio, 
@@ -1559,7 +1560,7 @@ exports:
                        AVMutableMetadataItem._mutablePriv ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: 7022CDB8-8358-370A-B147-2906A117F1FD' ]
+uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: 66B9E7CC-B252-3FD9-BEF4-C1E6224A0674' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio'
 exports:         

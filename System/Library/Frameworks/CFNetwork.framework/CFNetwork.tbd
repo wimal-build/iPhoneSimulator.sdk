@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EC6FDA5D-CCFC-35CD-A597-0F54B6AB4D29', 'x86_64: 3339F030-6BA8-372C-B21A-D8129698CE90' ]
+uuids:           [ 'i386: EC6FDA5D-CCFC-35CD-A597-0F54B6AB4D29', 'x86_64: B95A1333-0527-370E-AD42-D15E2B38F36C' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CFNetwork.framework/CFNetwork'
 current-version: 0

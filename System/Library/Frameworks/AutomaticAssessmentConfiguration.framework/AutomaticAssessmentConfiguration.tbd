@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 85BA32AA-1A58-3AB9-9255-D626F9BA75E4' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 391F0F5D-8771-3DC6-BFF8-31796858CD25' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration'
 exports:         
