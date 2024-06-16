@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           86675ED9-5AAA-32E0-9029-B2E3126460C4
+  - target:          arm64-ios-simulator
+    value:           27BF9670-9DA3-3BC0-A5B8-0AB20C1376AE
+install-name:    '/System/Library/PrivateFrameworks/FMIPSiriActions.framework/FMIPSiriActions'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LogCategory_Unspecified ]
+    objc-classes:    [ FMIPLocateIntent, FMIPLocateIntentResponse, FMIPPlaySoundIntent, 
+                       FMIPPlaySoundIntentResponse ]
+...

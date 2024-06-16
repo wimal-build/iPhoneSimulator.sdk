@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D4C25B80-9A95-364F-A770-2FB01DF63BF3
+  - target:          arm64-ios-simulator
+    value:           CBD333C1-0BFE-39F5-8603-88FEACA0C1DA
+install-name:    '/System/Library/PrivateFrameworks/SchoolTimeSettingsUI.framework/SchoolTimeSettingsUI'
+allowable-clients:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ SchoolTimePhoneSettings, SchoolTimeSetup, SchoolTimeTests, 
+                       SchoolTimeWatchSettings ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSStringFromSCLSettingsViewModelScheduleType, _SCLListControllerCellEditingStyleKey, 
+                       _SCLListControllerEditingEnabledKey, _SCLListControllerTrailingSwipeActionsConfigurationKey, 
+                       _SCLLogHistoryViewed, _SCLLogViewModelCommit, _SCLSettingsViewModelScheduleTypeHasRepeatSchedule, 
+                       _SCLTimeIntervalTableViewCellConstrainingIntervalKey, _SCLTimeIntervalTableViewCellDateConverterKey, 
+                       _SCLTimeIntervalTableViewCellPickerStateHandlerKey, _SCLTimeIntervalTableViewCellPickerStateKey, 
+                       _SCLTimeIntervalTableViewCellScheduleTimeFormatterKey, _SchoolTimeSettingsUIVersionNumber, 
+                       _SchoolTimeSettingsUIVersionString ]
+    objc-classes:    [ SCLActiveSpecifierDataSource, SCLAddTimeTableViewCell, SCLCustomDayDataSource, 
+                       SCLCustomDayEditorSource, SCLCustomDayViewController, SCLDaySettingsSpecifierSource, 
+                       SCLHistoryDayDataSource, SCLHistoryDaysDataSource, SCLHistoryItemView, 
+                       SCLListViewController, SCLMultilineTableViewCell, SCLPhoneSettingsViewController, 
+                       SCLSettingsViewModel, SCLSingleGroupTableView, SCLSpecifierDataSource, 
+                       SCLTimeIntervalDataSource, SCLTimeIntervalModel, SCLTimeIntervalTableViewCell, 
+                       SCLTimePickerTableViewCell, SCLTitleSubtitleTableViewCell, 
+                       SCLUnlockCountTableViewCell, SCLUnlockHistoryItemFormatter, 
+                       SCLUnlockHistoryTableViewCell ]
+...

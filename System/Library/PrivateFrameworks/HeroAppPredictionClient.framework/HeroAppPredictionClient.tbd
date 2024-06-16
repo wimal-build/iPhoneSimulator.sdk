@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           B4CA7AF6-9668-39ED-A3FA-5D8E1BD0E687
+  - target:          arm64-ios-simulator
+    value:           54B66C5F-2406-3E07-9F6B-44D59CFBF1E2
+install-name:    '/System/Library/PrivateFrameworks/HeroAppPredictionClient.framework/HeroAppPredictionClient'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ ATXPBHeroAppPrediction._adamId, ATXPBHeroAppPrediction._bundleId, 
+                       ATXPBHeroAppPrediction._clipMetadata, ATXPBHeroAppPrediction._has, 
+                       ATXPBHeroAppPrediction._isTouristApp, ATXPBHeroAppPrediction._latitude, 
+                       ATXPBHeroAppPrediction._latitudeAtPredictionTime, ATXPBHeroAppPrediction._longitude, 
+                       ATXPBHeroAppPrediction._longitudeAtPredictionTime, ATXPBHeroAppPrediction._radius, 
+                       ATXPBHeroAppPrediction._rank, ATXPBHeroAppPrediction._score, 
+                       ATXPBHeroAppPrediction._urlHash ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ATXHeroAppPredictionXPCInterface, _ATXPBHeroAppPredictionReadFrom, 
+                       _HeroAppPredictionClientVersionNumber, _HeroAppPredictionClientVersionString, 
+                       _kATXHeroAppDecodeErrorCode, _kATXHeroAppDecodeErrorDomain, 
+                       _kATXHeroAppDefaultIsTouristApp, _kATXHeroAppDefaultLatitudeAndLongitude, 
+                       _kATXHeroAppDefaultRadius, _kATXHeroAppDefaultRank, _kATXHeroAppPredictionXPCInterfaceMachServiceName, 
+                       _kATXHeroAppScoreNotSet, _kATXHeroAppUninstalledOrUnknownAdamId, 
+                       _kATXHeroAppUninstalledOrUnknownBundleId ]
+    objc-classes:    [ ATXHeroAppPrediction, ATXHeroAppPredictionClient, ATXPBHeroAppPrediction ]
+...

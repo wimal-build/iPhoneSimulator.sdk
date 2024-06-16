@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2797F2A7-FD5F-3AB3-81A4-04EFC58EBBAF
+  - target:          arm64-ios-simulator
+    value:           02E97494-2ECA-3B98-B4CB-07B0625C4110
+install-name:    '/System/Library/PrivateFrameworks/HealthHearingDaemon.framework/HealthHearingDaemon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HDHeadphoneAudioExposureMinimumumcCollectionInterval, _HDHeadphoneExposureBucketStartStepSize, 
+                       _HDHeadphoneExposureFirstBucketEndAfterNow, _HDHeadphoneExposureFirstBucketStartBeforeNow, 
+                       _HDHeadphoneExposureSevenDayDoseInterval, _HDHeadphoneExposureStatisticsCacheSize, 
+                       _HDHeadphoneExposureStatisticsMinumumCacheSize, _HDHearingKeyValueDomain, 
+                       _HDHearingPluginDatabaseSchemaName, _HDHearingPluginSyncSchemaIdentifier ]
+    objc-classes:    [ HDHeadphoneAudioExposureCalculatorCache, HDHeadphoneAudioExposureControlServer, 
+                       HDHeadphoneAudioExposureStatisticsBucket, HDHeadphoneAudioExposureStatisticsEntity, 
+                       HDHeadphoneAudioExposureStatisticsManager, HDHeadphoneAudioExposureStatisticsSnapshot, 
+                       HDHeadphoneDoseManager, HDHeadphoneDoseMetadataStore, HDHeadphoneExposureSampleBatch, 
+                       HDHearingPlugin, HDHearingPluginProtectedDatabaseSchema, HDHearingPluginUnprotectedDatabaseSchema ]
+...

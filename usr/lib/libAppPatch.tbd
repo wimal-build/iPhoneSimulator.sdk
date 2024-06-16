@@ -1,9 +1,15 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F6651821-4446-31D8-8080-667073D74CAF', 'x86_64: 76141050-0924-3CCF-9B57-B1582E7F5448' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A69CDC78-0F06-3283-BE28-F4AFD1BA701A
+  - target:          x86_64-ios-simulator
+    value:           08AFF3AB-DCEA-3B63-87C6-AC9D0B3A74DF
+  - target:          arm64-ios-simulator
+    value:           8958C57D-8A34-32A2-B754-E54A3A0BD5D5
 install-name:    '/usr/lib/libAppPatch.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MIApplyAppPatch ]
 ...

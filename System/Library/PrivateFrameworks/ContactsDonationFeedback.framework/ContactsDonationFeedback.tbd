@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D39D1243-2209-336C-ABD1-CA58468496FF
+  - target:          arm64-ios-simulator
+    value:           D97918B5-9043-361D-BC6E-695A5000F21F
+install-name:    '/System/Library/PrivateFrameworks/ContactsDonationFeedback.framework/ContactsDonationFeedback'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ContactsDonationFeedbackVersionNumber, _ContactsDonationFeedbackVersionString, 
+                       _kCDFErrorDomain, _kCDFInsufficientValuesToHashError, _kCDFMissingIdentifierError, 
+                       _kCDFUnhandledValueTypeError ]
+    objc-classes:    [ CDFDonationFeedbackStore, CNDFDonationStringCollector ]
+...

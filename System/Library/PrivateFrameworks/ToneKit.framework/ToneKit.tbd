@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           5E2D1371-5F11-3211-8099-48A03C6AF81D
+  - target:          x86_64-ios-simulator
+    value:           EFDDE66B-964B-3E04-8255-80695B6E97FC
+  - target:          arm64-ios-simulator
+    value:           5D096AB0-9918-358B-A67E-C957E741DEC1
+install-name:    '/System/Library/PrivateFrameworks/ToneKit.framework/ToneKit'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _TKBackdropViewOverlayBlendModeFromUIBackdropViewOverlayBlendMode, 
+                       _TKDisplayLinkManagerDefaultFrameInterval, _TKFloatCeilForScale, 
+                       _TKFloatEqualToFloat, _TKFloatFloorForScale, _TKFloatGetSafeScaleForValue, 
+                       _TKFloatGreaterThanOrEqualToFloat, _TKFloatLessThanOrEqualToFloat, 
+                       _TKFloatRoundForScale, _TKPointGetDistanceToPoint, _UIBackdropViewOverlayBlendModeFromTKBackdropViewOverlayBlendMode ]
+    objc-classes:    [ TKDisplayLinkManager, TKDisplayLinkManagerObserver, TKDownloadIndicatorView, 
+                       TKLabelContainerView, TKPickerDividerItem, TKPickerDividerTableViewCell, 
+                       TKPickerItem, TKPickerRowItem, TKPickerSectionItem, TKPickerSelectableItem, 
+                       TKPickerTableViewCell, TKStyleProvider, TKToneClassicsPickerItem, 
+                       TKToneClassicsTableViewController, TKTonePickerController, 
+                       TKTonePickerItem, TKTonePickerSectionItem, TKTonePickerTableView, 
+                       TKTonePickerTableViewCellLayoutManager, TKTonePickerViewController, 
+                       TKUIKitConstants, TKVibrationInterfaceUtilities, TKVibrationPickerTableViewCell, 
+                       TKVibrationPickerViewController, TKVibrationRecorderContentViewController, 
+                       TKVibrationRecorderProgressDotImageView, TKVibrationRecorderProgressView, 
+                       TKVibrationRecorderRippleRingLayer, TKVibrationRecorderRippleTouchContext, 
+                       TKVibrationRecorderRippleView, TKVibrationRecorderTouchSurface, 
+                       TKVibrationRecorderTouchSurfaceRecordedDataWrapper, TKVibrationRecorderView, 
+                       TKVibrationRecorderViewController, TKVibratorController ]
+...

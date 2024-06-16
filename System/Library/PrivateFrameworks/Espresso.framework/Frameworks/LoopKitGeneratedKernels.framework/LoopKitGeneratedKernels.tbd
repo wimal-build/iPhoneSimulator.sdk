@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           0750E454-0B75-321F-BA65-A8BFA3DFD36D
+  - target:          arm64-ios-simulator
+    value:           28228054-82EB-389F-8F93-AEC64AF988BF
+install-name:    '@rpath/LoopKitGeneratedKernels.framework/LoopKitGeneratedKernels'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    symbols:         [ __Z3foov ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LoopKitGeneratedKernelsVersionNumber, _LoopKitGeneratedKernelsVersionString ]
+...

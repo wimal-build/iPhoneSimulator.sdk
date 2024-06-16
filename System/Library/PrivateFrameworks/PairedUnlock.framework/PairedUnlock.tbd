@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           69E7F944-BE42-3367-AA09-C5EF1D9B5626
+  - target:          x86_64-ios-simulator
+    value:           B127BE90-A1DD-348B-BB16-8A15E596C524
+  - target:          arm64-ios-simulator
+    value:           D6715FF9-BD6B-3316-89D5-FB04D8214005
+install-name:    '/System/Library/PrivateFrameworks/PairedUnlock.framework/PairedUnlock'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _PUDefaultsDomain, _PUDefaultsKeyIsUnlockOnly, _PUDefaultsKeyShouldDisableOnlyRemoteUnlock, 
+                       _PUKeyStoreAccessGroup, _PUKeyStoreServiceName, _PUKeyStoreUnlockOnlyPasscodeLabel, 
+                       _PUPasscodeActionServerMachServiceName, _PUPeerKeyPairIdentifier, 
+                       _PUPeerKeyToken, _PUPeerKeyTokenKey, _PUProtoDidGetPasscodeStateReadFrom, 
+                       _PUProtoDidUnlockReadFrom, _PUProtoGetPasscodeStateReadFrom, 
+                       _PUProtoRemoveLockoutReadFrom, _PUProtoRequestCompletedReadFrom, 
+                       _PUProtoRequestDisableOnlyRemoteUnlockReadFrom, _PUProtoSetShouldNotifyNextUnlockReadFrom, 
+                       _PUProtoStartPasscodeActionReadFrom, _PUUnlockingErrorDomain, 
+                       __copyNamedKeyOrData, _copyNamedKey, _copyNamedKeyData, _createAndStoreKeyWithData, 
+                       _deleteNamedKey, _encryptOrDecryptDataWithKey, _generateAndStoreKeyPairWithName, 
+                       _verifyAccessGroup ]
+    objc-classes:    [ PUKeyStore, PUPasscodeState, PUPeer, PUProtoDidGetPasscodeState, 
+                       PUProtoDidUnlock, PUProtoGetPasscodeState, PUProtoRemoveLockout, 
+                       PUProtoRequestCompleted, PUProtoRequestDisableOnlyRemoteUnlock, 
+                       PUProtoSetShouldNotifyNextUnlock, PUProtoStartPasscodeAction ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PURemoteActionToString, _kPUDidRemoveLockoutNotification, 
+                       _pu_log ]
+    objc-classes:    [ PUConnection, PUError, PURemoteDeviceState, PURemotePasscodePolicy ]
+...

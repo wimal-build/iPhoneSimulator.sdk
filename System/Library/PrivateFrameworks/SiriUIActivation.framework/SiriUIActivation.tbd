@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           5821FE7C-1B68-3FF8-9EC6-FB26719E4EC9
+  - target:          arm64-ios-simulator
+    value:           FBBB94C8-D5DF-3971-838B-229DE200A844
+install-name:    '/System/Library/PrivateFrameworks/SiriUIActivation.framework/SiriUIActivation'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ SiriPresentationViewController._instrumentationDismissalState ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SiriUIActivationVersionNumber, _SiriUIActivationVersionString ]
+    objc-classes:    [ SASGuideMonitor, SASHIDGenerator, SiriPresentationPineBoardMainScreenViewController, 
+                       SiriPresentationSpringBoardMainScreenViewController, SiriPresentationViewController ]
+...

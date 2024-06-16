@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           AE540E50-7E0A-38DA-906C-8C532402F102
+  - target:          arm64-ios-simulator
+    value:           7E5786C7-6988-3910-8EE1-F49392ADF320
+install-name:    '/System/Library/PrivateFrameworks/LocalAuthenticationPrivateUI.framework/LocalAuthenticationPrivateUI'
+exports:
+  - targets:         [ x86_64-ios-simulator ]
+    weak-symbols:    [ __ZTISt11logic_error, __ZTISt12length_error, __ZTISt9exception, 
+                       __ZTSSt11logic_error, __ZTSSt12length_error, __ZTSSt9exception ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LAUIPhysicalButtonNormalizedFrame ]
+    objc-classes:    [ LAUIAuthenticationView, LAUICheckmarkLayer, LAUIHorizontalArrowView, 
+                       LAUIPearlGlyphLabel, LAUIPearlGlyphView, LAUIPearlGlyphViewAutoLayoutWrapper, 
+                       LAUIPhysicalButtonView, LAUIRadialPingView ]
+...

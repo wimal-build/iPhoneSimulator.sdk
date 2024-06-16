@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D7933FDB-5312-3C7E-9743-A54D469830B0' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           6532D936-2379-3DA1-8B85-BD82D84DE8F6
+  - target:          arm64-ios-simulator
+    value:           0A1A96D0-8A4A-3E46-AD34-8F513F26649D
 install-name:    '/System/Library/Frameworks/CoreServices.framework/CoreServices'
-current-version: 1069.25
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 1116.2
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices', 
                        '$ld$install_name$os10.1$/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices', 
                        '$ld$install_name$os10.2$/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices', 
@@ -116,24 +122,26 @@ exports:
                        __LSCopyUserActivityDomainNamesForBundleID, __LSCreateDatabaseLookupStringFromHashedBytesForAdvertising, 
                        __LSCreateDeviceTypeIdentifierWithModelCode, __LSCreateDeviceTypeIdentifierWithModelCodeAndColorComponents, 
                        __LSCreateHashedBytesForAdvertisingFromString, __LSCreatePackageExtensionsArray, 
-                       __LSDatabaseCopyURLForUser, __LSDebugAdvertismentValue, __LSDisplayData, 
-                       __LSGetStatus, __LSGetVersionFromString, __LSHandlerRankAlternate, 
-                       __LSHandlerRankDefault, __LSHandlerRankNone, __LSHandlerRankOwner, 
-                       __LSIconDictionarySupportsAssetCatalogs, __LSRegisterFilePropertyProvider, 
-                       __LSServerMain, __LSSetDatabaseIsSeeded, __LSURLBindingReasonKey, 
-                       __LSUserActivityContainsFileProviderURLKey, __LSUserActivityContainsUnsynchronizedCloudDocsKey, 
-                       __LSUserActivityOptionInvalidateAfterFetchKey, __LSVersionNumberCompare, 
-                       __LSVersionNumberCopyStringRepresentation, __LSVersionNumberGetBugFixComponent, 
-                       __LSVersionNumberGetCurrentSystemVersion, __LSVersionNumberGetMajorComponent, 
-                       __LSVersionNumberGetMinorComponent, __LSVersionNumberGetStringRepresentation, 
-                       __LSVersionNumberHash, __LSWriteApplicationPlaceholderToURL, 
-                       __UTCopyDeclaredTypeIdentifiers, __UTTypeCopyDescriptionLocalizationDictionary, 
-                       __UTTypeCopyDynamicIdentifiersForTags, __UTTypeCopyGlyphName, 
-                       __UTTypeCopyIconName, __UTTypeCopyKindStringDictionaryForNonMaterializedItem, 
+                       __LSDatabaseContextSetDetachProxyObjects, __LSDatabaseCopyURLForUser, 
+                       __LSDebugAdvertismentValue, __LSDisplayData, __LSGetStatus, 
+                       __LSGetVersionFromString, __LSHandlerRankAlternate, __LSHandlerRankDefault, 
+                       __LSHandlerRankNone, __LSHandlerRankOwner, __LSIconDictionarySupportsAssetCatalogs, 
+                       __LSMakeVersionNumber, __LSPersistentIdentifierCompare, __LSPersistentIdentifierGetDebugDescription, 
+                       __LSRegisterFilePropertyProvider, __LSServerMain, __LSSetDatabaseIsSeeded, 
+                       __LSSetDefaultWebBrowserWithBundleIdentifierAndVersion, __LSSetSchemeHandler, 
+                       __LSURLBindingReasonKey, __LSUserActivityContainsFileProviderURLKey, 
+                       __LSUserActivityContainsUnsynchronizedCloudDocsKey, __LSUserActivityOptionInvalidateAfterFetchKey, 
+                       __LSVersionNumberCompare, __LSVersionNumberCopyStringRepresentation, 
+                       __LSVersionNumberGetBugFixComponent, __LSVersionNumberGetCurrentSystemVersion, 
+                       __LSVersionNumberGetMajorComponent, __LSVersionNumberGetMinorComponent, 
+                       __LSVersionNumberGetStringRepresentation, __LSVersionNumberHash, 
+                       __LSWriteApplicationPlaceholderToURL, __UTCopyDeclaredTypeIdentifiers, 
+                       __UTTypeCopyDescriptionLocalizationDictionary, __UTTypeCopyDynamicIdentifiersForTags, 
+                       __UTTypeCopyGlyphName, __UTTypeCopyIconName, __UTTypeCopyKindStringDictionaryForNonMaterializedItem, 
                        __UTTypeCopyKindStringForNonMaterializedItem, __UTTypeCopyPedigree, 
-                       __UTTypeCopyPedigreeSet, __UTTypeCreateSuggestedFilename, 
-                       __UTTypeGetStatus, __UTTypeHash, __UTTypeIdentifierIsValid, 
-                       __UTTypeIsWildcard, __UTTypePrecachePropertiesOfIdentifiers, 
+                       __UTTypeCopyPedigreeSet, __UTTypeCreateDynamicIdentifierForTaggedPointerObject, 
+                       __UTTypeCreateSuggestedFilename, __UTTypeGetStatus, __UTTypeHash, 
+                       __UTTypeIdentifierIsValid, __UTTypeIsWildcard, __UTTypePrecachePropertiesOfIdentifiers, 
                        ___LSDefaultsGetSharedInstance, __kCSAppleIDAccountAllEmailAddresses, 
                        __kCSAppleIDAccountAppleID, __kCSAppleIDAccountCertificateExpirationDate, 
                        __kCSAppleIDAccountCertificateSerialNumber, __kCSAppleIDAccountFirstName, 
@@ -200,13 +208,18 @@ exports:
                        _kUTTypeVideo, _kUTTypeVolume, _kUTTypeWaveformAudio, _kUTTypeWebArchive, 
                        _kUTTypeWindowsExecutable, _kUTTypeX509Certificate, _kUTTypeXML, 
                        _kUTTypeXMLPropertyList, _kUTTypeXPCService, _kUTTypeZipArchive ]
-    objc-classes:    [ LSAppLink, LSApplicationProxy, LSApplicationWorkspace, LSApplicationWorkspaceObserver, 
-                       LSBundleInfoCachedValues, LSBundleProxy, LSDocumentProxy, 
-                       LSEnumerator, LSExtensionPoint, LSPlugInKitProxy, LSPlugInQuery, 
-                       LSPlugInQueryWithIdentifier, LSPlugInQueryWithQueryDictionary, 
-                       LSPlugInQueryWithURL, LSResourceProxy, LSVPNPluginProxy, NSUserActivity, 
+    objc-classes:    [ LSAppLink, LSApplicationExtensionRecord, LSApplicationProxy, 
+                       LSApplicationRecord, LSApplicationWorkspace, LSApplicationWorkspaceObserver, 
+                       LSBundleInfoCachedValues, LSBundleProxy, LSBundleRecord, LSClaimBinding, 
+                       LSClaimBindingConfiguration, LSClaimRecord, LSDatabaseContext, 
+                       LSDocumentProxy, LSEnumerator, LSExtensionPoint, LSExtensionPointRecord, 
+                       LSPlugInKitProxy, LSPlugInQuery, LSPlugInQueryWithIdentifier, 
+                       LSPlugInQueryWithQueryDictionary, LSPlugInQueryWithURL, LSPropertyList, 
+                       LSRecord, LSResourceProxy, LSVPNPluginProxy, UTTypeRecord, 
                        _LSApplicationState, _LSDefaults, _LSDiskUsage, _LSDisplayNameConstructor, 
                        _LSLazyPropertyList, _LSOpenConfiguration, _LSQuery, _LSQueryContext, 
-                       _LSQueryResult, _LSStringLocalizer, _LSURLOverride, _UTType, 
-                       _UTTypeQuery ]
+                       _LSQueryResult, _LSRecordEnumerator, _LSStringLocalizer, _LSURLOverride ]
+reexports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ NSUserActivity ]
 ...

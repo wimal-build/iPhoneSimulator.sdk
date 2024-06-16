@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           FBB37E22-AE1F-3020-B319-7D325CEE2D2E
+  - target:          x86_64-ios-simulator
+    value:           3D47E315-B386-3CE3-AB0B-80FDCA12571A
+  - target:          arm64-ios-simulator
+    value:           342E1D66-84D2-350A-BC8D-3DA1D7530B6E
+install-name:    '/usr/lib/system/libremovefile.dylib'
+current-version: 49.0.1
+parent-umbrella:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    umbrella:        System
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ ___removefileVersionNumber, ___removefileVersionString, ___removefile_process_file ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ ___removefile_init_random, ___removefile_random_char, ___removefile_randomize_buffer, 
+                       ___removefile_rename_unlink, ___removefile_sunlink, ___removefile_tree_walker, 
+                       _removefile, _removefile_cancel, _removefile_state_alloc, 
+                       _removefile_state_free, _removefile_state_get, _removefile_state_set, 
+                       _removefileat ]
+...

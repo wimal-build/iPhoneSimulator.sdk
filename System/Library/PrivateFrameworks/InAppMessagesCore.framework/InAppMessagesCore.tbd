@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DF15B654-CD02-3AC6-8A62-4BD08638F7E6
+  - target:          arm64-ios-simulator
+    value:           C79790E8-26B1-31C7-93B7-41124716392A
+install-name:    '/System/Library/PrivateFrameworks/InAppMessagesCore.framework/InAppMessagesCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IAMApplicationDidBecomeActiveEventName, _IAMLogCategoryDefault, 
+                       _IAMLogCategoryDefault_Oversize, _IAMWebProcessShouldDismissPresentationBeforeOpen, 
+                       _IAMWebProcessShouldDismissPresentationBeforePerformingAction, 
+                       _InAppMessagesCoreVersionNumber, _InAppMessagesCoreVersionString ]
+    objc-classes:    [ IAMAction, IAMApplicationDidBecomeActiveEvent, IAMContent, 
+                       IAMCountableEvent, IAMEvent, IAMFigaroEvent, IAMImage, IAMImpression, 
+                       IAMMessage, IAMPresentationPolicy, IAMTempTestMessages, IAMValueEvent ]
+...

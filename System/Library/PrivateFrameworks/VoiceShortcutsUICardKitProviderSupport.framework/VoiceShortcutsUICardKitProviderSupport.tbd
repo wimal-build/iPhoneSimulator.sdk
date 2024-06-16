@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           ED26EA59-C53D-3B1D-A409-855F360A44F8
+  - target:          arm64-ios-simulator
+    value:           F62B485B-D412-3359-AAEE-7A394749C2D1
+install-name:    '/System/Library/PrivateFrameworks/VoiceShortcutsUICardKitProviderSupport.framework/VoiceShortcutsUICardKitProviderSupport'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _VoiceShortcutsUICardKitProviderSupportVersionNumber, _VoiceShortcutsUICardKitProviderSupportVersionString ]
+    objc-classes:    [ VSUIActionStatusView, VSUIAsyncLoadingCard, VSUICKPEntryPoint, 
+                       VSUIPerformActionCardProvider, VSUIPerformActionCardViewController, 
+                       VSUIProgressCardViewController, VSUIVoiceShortcutCard, _VSUIActionStatusErrorView ]
+...

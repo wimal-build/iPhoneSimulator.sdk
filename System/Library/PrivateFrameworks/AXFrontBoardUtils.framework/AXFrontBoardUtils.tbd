@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4D2E4CEC-B773-313B-AE0E-4D0D6F63A763
+  - target:          arm64-ios-simulator
+    value:           CD39CE1C-6BD6-3644-BE38-C4061D41DA40
+install-name:    '/System/Library/PrivateFrameworks/AXFrontBoardUtils.framework/AXFrontBoardUtils'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AXApplicationNameLabelForBundleIdentifier, _AXFrontBoardCategoriesDidInstallNotification, 
+                       _AXFrontBoardFBSceneManager, _AXFrontBoardFocusedAppPID, _AXFrontBoardFocusedAppPIDs, 
+                       _AXFrontBoardFocusedAppPIDsIgnoringSiri, _AXFrontBoardFocusedAppProcess, 
+                       _AXFrontBoardFocusedAppProcessExcludingSiri, _AXFrontBoardFocusedAppProcesses, 
+                       _AXFrontBoardFocusedAppProcessesExcludingSiri, _AXFrontBoardFocusedApps, 
+                       _AXFrontBoardIsSystemAppShowingAlert, _AXFrontBoardIsSystemAppUINonExclusive, 
+                       _AXFrontBoardPurpleBuddyPID, _AXFrontBoardRebootDevice, _AXFrontBoardRunningAppPIDs, 
+                       _AXFrontBoardRunningAppProcesses, _AXFrontBoardSpeakThisAppPIDForPoint, 
+                       _AXFrontBoardSpeakThisAppPIDs, _AXFrontBoardSystemAppPID, 
+                       _AXFrontBoardSystemAppProcess, _AXFrontBoardUtilsVersionNumber, 
+                       _AXFrontBoardUtilsVersionString, _AXFrontBoardVisibleAppProcesses, 
+                       _AXIsPurpleBuddyFrontmost, _AXSpokenNameLabelForBundleURL, 
+                       _AXValidateFocusedAppsNotification, __AXFrontBoardFilterFrontmostAppProcessesAndScenesForSiri, 
+                       __stringForValidationEvent ]
+    objc-classes:    [ AXFBFakeProcess, AXFBFakeProcessState, AXFrontBoardProcessWatcher ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           B52F1E54-59BE-366B-B991-7A9E479EED68
+  - target:          arm64-ios-simulator
+    value:           408314C7-F906-32F8-A873-9DF21A5DF2C3
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework/SoftwareUpdateSettings'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ SUSSoftwareUpdateReleaseNotesDetail._releaseNotes ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __SUSLoggingFacility ]
+    objc-classes:    [ SUSSoftwareUpdateAnimatedIcon, SUSSoftwareUpdateLicenseViewController, 
+                       SUSSoftwareUpdateReleaseNotesDetail, SUSSoftwareUpdateTableView, 
+                       SUSSoftwareUpdateTermsManager, SUSSoftwareUpdateTitleCell ]
+...

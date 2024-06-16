@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           11EA397E-DE4C-3F73-A674-144B0B1F4493
+  - target:          arm64-ios-simulator
+    value:           86CC01F2-4B4E-3A1F-8F9B-F45DE51CAFF5
+install-name:    '/System/Library/PrivateFrameworks/ClockComplications.framework/ClockComplications'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ClockComplicationsVersionNumber, _ClockComplicationsVersionString ]
+    objc-classes:    [ CLKCBundleComplication, CLKCComplication, CLKCComplicationBundleDataSource, 
+                       CLKCComplicationBundleDataSourceContainer, CLKCComplicationDataSource ]
+...

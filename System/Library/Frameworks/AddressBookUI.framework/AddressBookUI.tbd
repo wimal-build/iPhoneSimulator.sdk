@@ -1,12 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ED2B144A-7E77-393C-8126-5FE6761D7577', 'x86_64: 258AAF9B-C870-35AC-BB2D-E44E5E786BAF' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0602CBDC-D446-3E1A-B806-D45AA8698E4A
+  - target:          x86_64-ios-simulator
+    value:           369F91D1-7482-32A6-B17E-AFB7F9F76DC7
+  - target:          arm64-ios-simulator
+    value:           39ABB463-3400-33C2-9FBB-DB9611D66A02
 install-name:    '/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI'
 current-version: 33
-exports:         
-  - archs:           [ i386 ]
-    re-exports:      [ '/System/Library/Frameworks/Contacts.framework/Contacts' ]
+reexported-libraries:
+  - targets:         [ i386-ios-simulator ]
+    libraries:       [ '/System/Library/Frameworks/Contacts.framework/Contacts' ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _ABAccountIdentifierGlobal, _ABAccountIdentifierLocal, _ABAccountIdentifierSearchPrefix, 
                        _ABAccountPrimarySourceNameForPerson, _ABAccountSourceIsICloud, 
                        _ABAddressBookBundle, _ABAddressBookGetDefaultRotationContentSettings, 
@@ -185,7 +193,7 @@ exports:
                        ABUITextView._informParentOfContentSizeChange, ABUITextView._isHighlighted, 
                        ABUITextView._lastContentHeight, ABUITextView._parent, ABUITextView._pinnedCursorPosition, 
                        ABUITextView._savedTextColor, ABUITextView._shadowColor, ABUITextView._shadowOffset ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ABCreateStringWithAddressDictionary, _ABPersonBirthdayProperty, 
                        _ABPersonDatesProperty, _ABPersonDepartmentNameProperty, _ABPersonEmailAddressesProperty, 
                        _ABPersonFamilyNameProperty, _ABPersonGivenNameProperty, _ABPersonInstantMessageAddressesProperty, 

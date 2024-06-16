@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7939BA57-1A18-368B-81BF-88FCD379A28A
+  - target:          x86_64-ios-simulator
+    value:           BF612A2E-FEDA-3A7B-AD2E-9F3828C6AA55
+  - target:          arm64-ios-simulator
+    value:           BE86C61E-6F37-3AC9-81E7-8D2C5BA6CA70
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DALDAP.framework/DALDAP'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kLDAPScopeBase, _kLDAPScopeOneLevel, _kLDAPScopeSubtree, 
+                       _kLDAPSearchContextScopeKey, _kLDAPSearchContextSearchBaseKey, 
+                       _kLDAPSearchContextSearchDescriptionKey ]
+    objc-classes:    [ LDAPAccount, LDAPGetDefaultSearchBaseTask, LDAPLocalDBHelper, 
+                       LDAPSearchSettings, LDAPSearchTask, LDAPTask ]
+...

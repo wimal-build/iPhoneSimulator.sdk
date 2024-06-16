@@ -1,11 +1,15 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0394DDAD-3EF9-3CE1-AD6E-6A7C97D14EEA' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           468B6123-6EE5-347C-BC00-DE2EBE77FF44
 install-name:    '/usr/lib/swift/libswiftRemoteMirrorLegacy.dylib'
 current-version: 902.0.52
-exports:         
-  - archs:           [ x86_64 ]
+exports:
+  - targets:         [ x86_64-ios-simulator ]
     symbols:         [ __Z15getTypeInfoKindRKN5swift10reflection8TypeInfoE, __ZN5swift10reflection13OpaqueTypeRef3getEv, 
                        __ZN5swift10reflection13OpaqueTypeRef9SingletonE, __ZN5swift10reflection13TypeConverter11getTypeInfoEPKNS0_7TypeRefE, 
                        __ZN5swift10reflection13TypeConverter12hasFixedSizeEPKNS0_7TypeRefE, 
@@ -136,7 +140,7 @@ exports:
                        __ZNK5swift10reflection8TypeInfo4dumpEv, __ZNR5swift8Demangle16DemanglerPrinterlsEx, 
                        __ZNR5swift8Demangle16DemanglerPrinterlsEy, __ZTVN5swift8Demangle11NodeFactoryE, 
                        __ZTVN5swift8Demangle9DemanglerE ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _swift_reflection_addReflectionInfo, _swift_reflection_childOfInstance, 
                        _swift_reflection_childOfMetadata, _swift_reflection_childOfTypeRef, 
                        _swift_reflection_createReflectionContext, _swift_reflection_demangle, 

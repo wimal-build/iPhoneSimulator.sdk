@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C210A5B4-F680-3FFD-ABD4-1A505E29EB1D
+  - target:          arm64-ios-simulator
+    value:           4581401F-34B1-33BE-AE19-0D9BFE0A0876
+install-name:    '/System/Library/PrivateFrameworks/AppSSO.framework/AppSSO'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SOAuthorizationOperationConfigurationRemoved, _SOAuthorizationOptionInitiatingAction, 
+                       _SOAuthorizationOptionInitiatorOrigin, _SOAuthorizationOptionRemovedProfileExtensionBundleIdentifier, 
+                       _SOAuthorizationOptionUserActionInitiated, _SODebugConfigurationKeyAssociatedDomainsValidated, 
+                       _SODebugConfigurationKeyConfig, _SODebugConfigurationKeyPlugins, 
+                       _SODebugConfigurationKeyRealms, _SODebugConfigurationKeyRequestQueue, 
+                       _SODebugConfigurationKeyServerConfigVersion, _SODebugConfigurationKeySignatureValidated, 
+                       _SOErrorDomain, _SOErrorSubcodeKey, _SONotificationExtensionsChanged, 
+                       _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ SOAuthorization, SOAuthorizationCredential, SOAuthorizationHints, 
+                       SOAuthorizationParameters, SOAuthorizationRequest, SOAuthorizationRequestParameters, 
+                       SOConfigurationHost, SOConfigurationManager, SODebugHints, 
+                       SOExtension, SOExtensionManager, SOPreferences, SORequestQueue, 
+                       SORequestQueueItem ]
+...

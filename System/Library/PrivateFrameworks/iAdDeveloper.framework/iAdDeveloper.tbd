@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7E3AC9C5-CA5C-3156-A9D5-2DCF42343B01
+  - target:          x86_64-ios-simulator
+    value:           646ADA0C-261D-3EF2-9D36-8007D59DB637
+  - target:          arm64-ios-simulator
+    value:           A9BB2C42-E09E-3449-93D0-04CC031F8905
+install-name:    '/System/Library/PrivateFrameworks/iAdDeveloper.framework/iAdDeveloper'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ __ADFSEventsCallback, _kADCreativeTypeAudio, _kADCreativeTypeDouble, 
+                       _kADCreativeTypeFlexible, _kADCreativeTypeFullscreen, _kADCreativeTypeLarge, 
+                       _kADCreativeTypeMediumRectangle, _kADCreativeTypeNative, _kADCreativeTypePreroll, 
+                       _kADCreativeTypeSeminative, _kADCreativeTypeStandard, _kADCreativeTypeVideo ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ ADAdServerManifestManager, ADAdServerManifestRecord, ADEmbeddedAdServer, 
+                       HTSHTTPMessage, HTSHTTPMessageRequest, HTSHTTPMessageResponse, 
+                       HTSHTTPServer, HTSHTTPServerConnection ]
+...

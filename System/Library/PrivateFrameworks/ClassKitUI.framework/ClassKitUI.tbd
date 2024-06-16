@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DC1D1A0B-D8FB-3D83-BBAD-CB676C3EBC85
+  - target:          arm64-ios-simulator
+    value:           992A6D71-4898-3290-BA33-8F5665101555
+install-name:    '/System/Library/PrivateFrameworks/ClassKitUI.framework/ClassKitUI'
+current-version: 146.0.70
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ CLSNotificationBanner, CLSNotificationBannerDisplayManager ]
+...

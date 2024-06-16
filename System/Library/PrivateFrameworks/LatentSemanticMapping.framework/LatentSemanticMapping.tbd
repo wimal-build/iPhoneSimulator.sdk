@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           F146BD92-887F-361F-8871-2A3357FA1376
+  - target:          x86_64-ios-simulator
+    value:           987DF60B-F1D1-33F8-808D-25577CC6E80A
+  - target:          arm64-ios-simulator
+    value:           97A9B7BF-2066-37AE-8D8A-57DDECB79DAB
+install-name:    '/System/Library/PrivateFrameworks/LatentSemanticMapping.framework/LatentSemanticMapping'
+current-version: 2.12.5
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LSMMapAddCategory, _LSMMapAddText, _LSMMapAddTextWithWeight, 
+                       _LSMMapApplyClusters, _LSMMapCompile, _LSMMapCompileWithBlock, 
+                       _LSMMapCopyToken, _LSMMapCopyWord, _LSMMapCreate, _LSMMapCreateClusters, 
+                       _LSMMapCreateFromURL, _LSMMapCreateSRLanguageModel, _LSMMapCreateTextLanguageModel, 
+                       _LSMMapCreateWordArray, _LSMMapFindToken, _LSMMapFindWord, 
+                       _LSMMapGetCategoryCount, _LSMMapGetIndexingPower, _LSMMapGetProperties, 
+                       _LSMMapGetTokenCount, _LSMMapGetTypeID, _LSMMapSetProperties, 
+                       _LSMMapSetStopWords, _LSMMapStartTraining, _LSMMapWriteToStream, 
+                       _LSMMapWriteToURL, _LSMResultCopyToken, _LSMResultCopyTokenCluster, 
+                       _LSMResultCopyWord, _LSMResultCopyWordCluster, _LSMResultCreate, 
+                       _LSMResultGetCategory, _LSMResultGetCount, _LSMResultGetScore, 
+                       _LSMResultGetTypeID, _LSMTextAddToken, _LSMTextAddWord, _LSMTextAddWords, 
+                       _LSMTextCreate, _LSMTextGetTypeID ]
+...

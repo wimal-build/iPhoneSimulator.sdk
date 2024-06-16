@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           22D03BE9-EC8C-3035-BF92-7F1B7DFE0D04
+  - target:          arm64-ios-simulator
+    value:           B5482139-DCAA-35BF-9515-A6AF1792A6B2
+install-name:    '/System/Library/PrivateFrameworks/C2.framework/C2'
+current-version: 569
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ C2MetricOperationGroupOptions, C2MetricOperationOptions, C2MetricOptions, 
+                       C2MetricRequestOptions, C2NetworkingDelegateURLSession, C2NetworkingDelegateURLSessionDataTask, 
+                       C2ReportMetrics, C2RequestManager, C2RequestOptions, C2Session, 
+                       C2SessionCallbackMetrics, C2SessionGroup, C2SessionPool, C2SessionTask ]
+...

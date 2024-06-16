@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           CCE868AD-9B95-3026-A5B2-FF301460AFD4
+  - target:          arm64-ios-simulator
+    value:           C7145B11-3943-37D6-8807-56A9024FCFE8
+install-name:    '/System/Library/PrivateFrameworks/PhoneNumberResolver.framework/PhoneNumberResolver'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PNRErrorDomain, _PhoneNumberResolverVersionNumber, _PhoneNumberResolverVersionString, 
+                       _kPNRPhoneNumberCountryKey, _kPNRPhoneNumberKey ]
+    objc-classes:    [ PNRPhoneNumberResolutionResult, PNRPhoneNumberResolutionResultSet, 
+                       PNRPhoneNumberResolver, PNRResourceManager, PNRStringsFileReaderResult, 
+                       PNRUtils ]
+...

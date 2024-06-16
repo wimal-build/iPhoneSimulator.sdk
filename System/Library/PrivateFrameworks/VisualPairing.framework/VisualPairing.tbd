@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           68000553-4AFB-3128-8240-F5495690564B
+  - target:          arm64-ios-simulator
+    value:           904C54B9-FF16-34C0-A432-F014755ECC99
+install-name:    '/System/Library/PrivateFrameworks/VisualPairing.framework/VisualPairing'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ VPPresenterView, VPScannerView, VPScannerViewController, VPSpatialTutorialContentView ]
+  - targets:         [ arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _convertUV2SignalSpace_Hx16W_N64, _convertUVDownsample_2x2_2Hx16W_N64, 
+                       _convertUVDownsample_3x3_3Hx24W_N64, _convertUVDownsample_4x4_4Hx32W_N64, 
+                       _downsample_2x2_2Hx32W_N64, _downsample_3x3_3Hx24W_N64, _downsample_4x4_4Hx32W_N64, 
+                       _downsample_5x5_5Hx15W_N64, _downsample_6x6_6Hx48W_N64 ]
+...

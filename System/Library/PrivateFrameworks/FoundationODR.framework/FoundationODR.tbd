@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           1884C1C6-067C-3EB3-A03C-781208942BFE
+  - target:          x86_64-ios-simulator
+    value:           469BB694-101E-36DF-A749-996CC217B227
+  - target:          arm64-ios-simulator
+    value:           1BA75847-1F06-3C26-AA5F-36E4256D84A9
+install-name:    '/System/Library/PrivateFrameworks/FoundationODR.framework/FoundationODR'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _FoundationODRVersionNumber, _FoundationODRVersionString ]
+...

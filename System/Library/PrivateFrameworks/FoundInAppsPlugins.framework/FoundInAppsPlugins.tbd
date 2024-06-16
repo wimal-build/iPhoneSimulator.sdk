@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           FDC1F436-BF1C-314A-86FB-5F52E08B208A
+  - target:          arm64-ios-simulator
+    value:           6E0866AF-C163-39E2-A44E-D34434F8D942
+install-name:    '/System/Library/PrivateFrameworks/FoundInAppsPlugins.framework/FoundInAppsPlugins'
+current-version: 1115
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FoundInAppsPluginsVersionNumber, _FoundInAppsPluginsVersionString ]
+    objc-classes:    [ FIAPHistoricalDataRequest, FIAPResult ]
+...

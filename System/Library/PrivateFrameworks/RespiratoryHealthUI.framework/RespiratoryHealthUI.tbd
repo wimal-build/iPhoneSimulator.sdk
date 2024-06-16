@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           BBED220F-1C11-3813-853E-AFAB663E8A82
+  - target:          arm64-ios-simulator
+    value:           7EE832EE-F4AE-3DDA-93B8-87D32F56F75E
+install-name:    '/System/Library/PrivateFrameworks/RespiratoryHealthUI.framework/RespiratoryHealthUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ HKRPOnboardingPairViewController, HKRPOnboardingSettingsViewController, 
+                       HKRPOnboardingViewControllerFactory, HKRPWatchAppInstaller, 
+                       RespiratoryHealthHeroView ]
+...

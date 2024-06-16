@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           E30A3303-B6C3-3F11-8743-4875E4DCE3AC
+  - target:          x86_64-ios-simulator
+    value:           07E091D8-F1B7-3FEF-89C9-0FEDC4609B35
+  - target:          arm64-ios-simulator
+    value:           D1DDE1D8-99F9-3712-B3B7-DBBC05A7FDB9
+install-name:    '/System/Library/PrivateFrameworks/WatchReplies.framework/WatchReplies'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _WRBundle, _WRDeviceLanguage, _WRLocalizedCategoryString, 
+                       _WRLocalizedStringForLanguage, _WRSmartRepliesMarker, _WatchRepliesVersionNumber, 
+                       _WatchRepliesVersionString, __WRCannedRepliesStore_handleStoreChange ]
+    objc-classes:    [ WRCalendarReplyStoreInfo, WRCannedRepliesStore, WRCannedRepliesViewController, 
+                       WRCannedReply, WRMailReplyStoreInfo, WRMessagesReplyStoreInfo, 
+                       WRPhoneReplyStoreInfo, WRReplyStoreInfo, WRThirdPartyReplyStoreInfo ]
+...

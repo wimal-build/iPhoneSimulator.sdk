@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A703A85C-1252-33D3-9479-92C7FE314A36
+  - target:          x86_64-ios-simulator
+    value:           76CD465A-5947-3EE8-ADD4-5D5003014FBC
+  - target:          arm64-ios-simulator
+    value:           52E98E6A-2355-3CDF-891B-91BF755AAC05
+install-name:    '/System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ INFObject ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IFMergeDictionaries, _IntentsFoundationVersionNumber, _IntentsFoundationVersionString ]
+    objc-classes:    [ IFObjectHasher, INFGrammarCollection, INFPartOfSpeech, INFSentence, 
+                       INFSentenceToken ]
+...

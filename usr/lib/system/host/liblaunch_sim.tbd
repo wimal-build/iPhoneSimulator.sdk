@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos, arm64-macos ]
+uuids:
+  - target:          x86_64-macos
+    value:           AB0A610C-1E3E-3E77-AA4F-E4EA4E5A06A4
+  - target:          arm64-macos
+    value:           ED8CD566-0697-370B-914C-781982165DD9
+install-name:    '@iphonesimulator14.0-2038.0.15/usr/lib/system/host/liblaunch_sim.dylib'
+current-version: 2038.0.15
+exports:
+  - targets:         [ x86_64-macos, arm64-macos ]
+    symbols:         [ __xpc_spawnattr_binprefs_pack, __xpc_spawnattr_binprefs_size, 
+                       __xpc_spawnattr_binprefs_unpack, __xpc_spawnattr_pack_string, 
+                       __xpc_spawnattr_pack_string_fragment, __xpc_spawnattr_unpack_string, 
+                       __xpc_spawnattr_unpack_strings, _launch_sim_bind_session_to_port, 
+                       _launch_sim_find_endpoint, _launch_sim_getenv, _launch_sim_register_endpoint, 
+                       _launch_sim_set_death_handler, _launch_sim_spawn, _launch_sim_unregister_endpoint, 
+                       _launch_sim_waitpid, _xpc_binprefs_add, _xpc_binprefs_alloc, 
+                       _xpc_binprefs_copy, _xpc_binprefs_count, _xpc_binprefs_cpu_subtype, 
+                       _xpc_binprefs_cpu_type, _xpc_binprefs_init, _xpc_binprefs_is_noop, 
+                       _xpc_binprefs_set_psattr ]
+...

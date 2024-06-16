@@ -1,18 +1,24 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01869FD1-C282-3807-AE19-2EBC43204D3A', 'x86_64: 9A9A1157-F6B9-32D4-88C2-28CEF4AAC241' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           1F073184-B5E7-3DE5-BC89-95CBF7CAA755
+  - target:          x86_64-ios-simulator
+    value:           BAD2AD61-8B1F-362D-82EF-A34014710E7C
+  - target:          arm64-ios-simulator
+    value:           04E4BE80-5BB1-3681-A4C6-DB2DC777A421
 install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication'
-current-version: 693.140.3
-exports:         
-  - archs:           [ i386 ]
+current-version: 827.0.6
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _LAFingerDatabaseHash, _LocalAuthenticationVersionNumber, 
                        _LocalAuthenticationVersionString ]
     objc-classes:    [ LAClient ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _LAAvailableMechanisms, _LABiometryDatabaseHash, _LACopyExternalizedContext, 
                        _LAErrorDomain, _LAErrorInfoBiometryType, _LAErrorInfoTCCServerPrompt, 
                        _LAErrorInfoTCCService, _LAErrorSubcodeKey, _LAPasswordRetryTime, 
-                       _LATouchIDAuthenticationMaximumAllowableReuseDuration ]
-    objc-classes:    [ LAContext ]
+                       _LAStorageErrorDomain, _LATouchIDAuthenticationMaximumAllowableReuseDuration ]
+    objc-classes:    [ LAContext, LAStorage ]
 ...

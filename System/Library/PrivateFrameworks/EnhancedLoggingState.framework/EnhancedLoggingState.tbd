@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2EA6D408-6804-3BF1-B7C4-CD0BAE5F54B9
+  - target:          arm64-ios-simulator
+    value:           8DEB70B0-A4A8-32DF-BFED-6A689A84684B
+install-name:    '/System/Library/PrivateFrameworks/EnhancedLoggingState.framework/EnhancedLoggingState'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ELSDefaultConsent, _ELSDefaultDates, _ELSDefaultFollowUpOptions, 
+                       _ELSDefaultIdentifiersToRetry, _ELSDefaultMetadata, _ELSDefaultQueue, 
+                       _ELSDefaultRetriesRemaining, _ELSDefaultStatus, _ELSDefaultUploadCompletedPercentage, 
+                       _ELSDidBatchUpdate, _ELSDidUpdateStatus, _ELSDomain, _ELSEventRecordCKRecordType, 
+                       _ELSEventRecordEvent, _ELSEventRecordNotFound, _ELSEventRecordSession, 
+                       _ELSEventRecordSessionKey, _ELSEventTypeAllCollectionsFinished, 
+                       _ELSEventTypeAskedForEnrollConsent, _ELSEventTypeAskedForUploadConsent, 
+                       _ELSEventTypeCancelledByUser, _ELSEventTypeCollectionCancelled, 
+                       _ELSEventTypeCollectionFinishedWithFiles, _ELSEventTypeCollectionFinishedWithoutFiles, 
+                       _ELSEventTypeCollectionStarted, _ELSEventTypeCompressionFailed, 
+                       _ELSEventTypeCompressionFinished, _ELSEventTypeCompressionStarted, 
+                       _ELSEventTypeEndedWithIssueDidNotOccur, _ELSEventTypeEndedWithIssueDidOccur, 
+                       _ELSEventTypeEnrollConsentApproved, _ELSEventTypeEnrollConsentApprovedWithReview, 
+                       _ELSEventTypeEnrollConsentDenied, _ELSEventTypeExtensionNotFound, 
+                       _ELSEventTypeFailedSavingRecord, _ELSEventTypeIssueDidNotOccurRetry, 
+                       _ELSEventTypeSessionCleanup, _ELSEventTypeUploadConsentApproved, 
+                       _ELSEventTypeUploadConsentApprovedCellular, _ELSEventTypeUploadConsentDenied, 
+                       _ELSEventTypeUploadFailed, _ELSEventTypeUploadFinished, _ELSEventTypeUploadStarted, 
+                       _ELSFollowUpOptionFrequency, _ELSFollowUpOptionUseSpringBoardNotification, 
+                       _ELSLogHandleForCategory, _ELSMetadataDeviceSerialNumber, 
+                       _ELSMetadataDeviceType, _ELSMetadataEnrollmentTicketNumber, 
+                       _ELSMetadataGigafilesToken, _ELSMetadataPayload, _ELSMetadataUserAppleID, 
+                       _ELSParameterCommand, _ELSParameterPayload, _ELSParameterPayloadsDict, 
+                       _ELSParameterRetries, _ELSSubDefaultDatesEnd, _ELSSubDefaultDatesStart, 
+                       _ELSSubDefaultQueueEntryExecuteAfterDuration, _ELSSubDefaultQueueEntryName, 
+                       _ELSSubDefaultQueueEntryParameters, _ELSSubDefaultQueueEntryRetry, 
+                       _ELSSubDefaultQueueEntryType, _ELSUserInfoKey, _kELSClientEntitlement ]
+    objc-classes:    [ ELSEntitlementUtilities, ELSEvent, ELSManager, ELSQueueEntry, 
+                       ELSSnapshot, ELSWhitelist, ELSWhitelistEntry ]
+...

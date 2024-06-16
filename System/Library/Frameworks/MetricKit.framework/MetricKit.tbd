@@ -1,16 +1,25 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0D09C8F9-F3D0-3F0C-92CC-9D6D9A392AD4' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           E31F506C-4FE2-35A8-A854-6114766F1227
+  - target:          arm64-ios-simulator
+    value:           30268E08-1763-3619-849C-D10B1408A065
 install-name:    '/System/Library/Frameworks/MetricKit.framework/MetricKit'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MetricKitVersionNumber, _MetricKitVersionString ]
-    objc-classes:    [ MXAppLaunchMetric, MXAppResponsivenessMetric, MXAppRunTimeMetric, 
-                       MXAverage, MXCPUMetric, MXCellularConditionMetric, MXDiskIOMetric, 
-                       MXDisplayMetric, MXFramerateMetric, MXGPUMetric, MXHistogram, 
-                       MXHistogramBucket, MXLocationActivityMetric, MXMemoryMetric, 
-                       MXMetaData, MXMetric, MXMetricManager, MXMetricPayload, MXNetworkTransferMetric, 
-                       MXResourceExceptionMetric, MXSignpostIntervalData, MXSignpostMetric, 
+    objc-classes:    [ MXAnimationMetric, MXAppExitMetric, MXAppLaunchMetric, MXAppResponsivenessMetric, 
+                       MXAppRunTimeMetric, MXAverage, MXBackgroundExitData, MXCPUExceptionDiagnostic, 
+                       MXCPUMetric, MXCallStackFrame, MXCallStackThread, MXCallStackTree, 
+                       MXCellularConditionMetric, MXCrashDiagnostic, MXDiagnostic, 
+                       MXDiagnosticPayload, MXDiskIOMetric, MXDiskWriteExceptionDiagnostic, 
+                       MXDisplayMetric, MXForegroundExitData, MXGPUMetric, MXHangDiagnostic, 
+                       MXHistogram, MXHistogramBucket, MXLocationActivityMetric, 
+                       MXMemoryMetric, MXMetaData, MXMetric, MXMetricManager, MXMetricPayload, 
+                       MXNetworkTransferMetric, MXSignpostIntervalData, MXSignpostMetric, 
                        MXUnitAveragePixelLuminance, MXUnitSignalBars ]
 ...

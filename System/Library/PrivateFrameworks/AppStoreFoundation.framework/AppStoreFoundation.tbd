@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EB91CFD7-6419-356E-9A90-57354D3C951B
+  - target:          arm64-ios-simulator
+    value:           1822B159-D039-39B5-9422-9E2043967CE1
+install-name:    '/System/Library/PrivateFrameworks/AppStoreFoundation.framework/AppStoreFoundation'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ ASFIAPItem, ASFReceipt ]
+...

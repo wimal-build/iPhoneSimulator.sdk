@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           35BCAF77-06DE-302B-A5CA-EC3E73F59412
+  - target:          x86_64-ios-simulator
+    value:           87628746-EFCF-3D7E-9DD2-84A47B50C38C
+  - target:          arm64-ios-simulator
+    value:           139C2445-E5F6-3614-A93B-7E9F7831ADC0
+install-name:    '/usr/lib/system/libsystem_blocks.dylib'
+current-version: 78
+parent-umbrella:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    umbrella:        System
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _system_blocksVersionNumber, _system_blocksVersionString ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _Block_size, __Block_copy, __Block_extended_layout, __Block_has_signature, 
+                       __Block_isDeallocating, __Block_layout, __Block_object_assign, 
+                       __Block_object_dispose, __Block_release, __Block_signature, 
+                       __Block_tryRetain, __Block_use_RR2, __Block_use_stret, __NSConcreteAutoBlock, 
+                       __NSConcreteFinalizingBlock, __NSConcreteGlobalBlock, __NSConcreteMallocBlock, 
+                       __NSConcreteStackBlock, __NSConcreteWeakBlockVariable ]
+...

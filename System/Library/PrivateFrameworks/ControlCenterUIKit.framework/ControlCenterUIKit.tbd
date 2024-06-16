@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           EB4375BC-400C-3861-8399-C9689E3A8CD6
+  - target:          x86_64-ios-simulator
+    value:           876BDE2E-02FE-35D7-8502-0EA0F236E986
+  - target:          arm64-ios-simulator
+    value:           546ED48E-79E7-3506-A244-6E8DD3DFC81A
+install-name:    '/System/Library/PrivateFrameworks/ControlCenterUIKit.framework/ControlCenterUIKit'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _ControlCenterUIKitBundle, _kCCUIControlCenterBaseMaterialBlurGroupName ]
+    objc-classes:    [ CCUIControlCenterButton, CCUIControlCenterLabel, CCUIControlCenterSlider, 
+                       CCUIControlCenterVisualEffect, CCUIPunchOutMask ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ CCUIAppLauncherViewController._assetProvider, CCUIToggleViewController._glyphImage, 
+                       CCUIToggleViewController._glyphImageView, CCUIToggleViewController._glyphPackageDescription, 
+                       CCUIToggleViewController._glyphState, CCUIToggleViewController._selectedColor, 
+                       CCUIToggleViewController._selectedGlyphImage ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CCUIAffineTransformBetweenInterfaceOrientations, _CCUIAlertCompactPresentationMargin, 
+                       _CCUIAlertCompactPresentationTopMarginForOrientation, _CCUIAppLaunchOriginControlCenter, 
+                       _CCUICompactModuleColumns, _CCUICompactModuleContinuousCornerRadius, 
+                       _CCUIConfigureForGroupRendering, _CCUIDefaultExpandedContentModuleFullWidth, 
+                       _CCUIDefaultExpandedContentModuleWidth, _CCUIEdgeInsetsRTLSwap, 
+                       _CCUIExpandedModuleContinuousCornerRadius, _CCUIExpandedModuleEdgeInsets, 
+                       _CCUIIsPortrait, _CCUIItemEdgeSize, _CCUILayoutEdgeInsets, 
+                       _CCUILayoutEdgeInsetsForcePortrait, _CCUILayoutGutter, _CCUILayoutShouldBePortrait, 
+                       _CCUILogAnimationRunner, _CCUILogModuleInstance, _CCUILogUserInterface, 
+                       _CCUIMaximumExpandedContentModuleHeight, _CCUIPunchOutRootLayers, 
+                       _CCUIReferenceScreenBounds, _CCUIRegisterControlCenterLogging, 
+                       _CCUIScreenBounds, _CCUISliderExpandedContentModuleHeight, 
+                       _CCUISliderExpandedContentModuleWidth, _CCUISliderExpandedModuleContinuousCornerRadius, 
+                       _ControlCenterUIKitVersionNumber, _ControlCenterUIKitVersionString, 
+                       _kCCUIGlyphStateDefault ]
+    objc-classes:    [ CCUIAppLauncherModule, CCUIAppLauncherViewController, CCUIAppShortcutMenuModuleItem, 
+                       CCUIBaseSliderView, CCUIButtonModuleView, CCUIButtonModuleViewController, 
+                       CCUICAPackageDescription, CCUICAPackageView, CCUIContentModuleContext, 
+                       CCUIContentModuleDetailAnimationController, CCUIContentModuleDetailClickPresentationInteractionManager, 
+                       CCUIContentModuleDetailClickPresentationTransition, CCUIContentModuleDetailPresentationController, 
+                       CCUIContentModuleDetailTransitioningDelegate, CCUIContentModulePresentationContext, 
+                       CCUIContinuousSliderView, CCUIControlCenterMaterialView, CCUICustomContentModuleBackgroundViewController, 
+                       CCUILabeledRoundButton, CCUILabeledRoundButtonViewController, 
+                       CCUIMenuModuleItem, CCUIMenuModuleItemView, CCUIMenuModuleStackView, 
+                       CCUIMenuModuleViewController, CCUIModuleSliderView, CCUIRoundButton, 
+                       CCUISliderModuleBackgroundViewController, CCUIStatusUpdate, 
+                       CCUISteppedSliderView, CCUIToggleModule, CCUIToggleViewController ]
+...

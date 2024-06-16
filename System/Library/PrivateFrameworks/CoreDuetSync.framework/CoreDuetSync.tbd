@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           1B1CA216-B311-383D-9DD9-0EC496521560
+  - target:          arm64-ios-simulator
+    value:           6009055B-FC51-3A22-8CC6-B969398A8CD6
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetSync.framework/CoreDuetSync'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ _DKSync3Coordinator, _DKSyncCoordinatorFactory ]
+...

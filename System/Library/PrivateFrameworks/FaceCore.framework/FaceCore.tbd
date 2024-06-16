@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           76E02108-E2C0-35D9-9DD7-05BAED338FEA
+  - target:          x86_64-ios-simulator
+    value:           8CA50097-BAEF-3CF0-8E58-1B6FB0D9AD15
+  - target:          arm64-ios-simulator
+    value:           4161CA12-E049-30EA-92B4-9600A5C8F214
+install-name:    '/System/Library/PrivateFrameworks/FaceCore.framework/FaceCore'
+current-version: 4.1.2
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _FCRFaceLandmarkContour, _FCRFaceLandmarkEyeLeft, _FCRFaceLandmarkEyeRight, 
+                       _FCRFaceLandmarkEyebrowLeft, _FCRFaceLandmarkEyebrowRight, 
+                       _FCRFaceLandmarkLipLower, _FCRFaceLandmarkLipUpper, _FCRFaceLandmarkMouth, 
+                       _FCRFaceLandmarkNose, _FCRFaceLandmarkNoseCenter, _FCRFaceLandmarkNoseTip ]
+    objc-classes:    [ FCRImage, FCRLandmark ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FCRDetectionParamDetectionRegion, _FCRDetectionParamEnhancedEyesAndMouthLocalization, 
+                       _FCRDetectionParamInitialAngle, _FCRDetectionParamUseSmallMemoryFootprint, 
+                       _FCRExtractionParamEnhancedEyesAndMouthLocalization, _FCRExtractionParamExtractBlink, 
+                       _FCRExtractionParamExtractFaceBlur, _FCRExtractionParamExtractFaceprint, 
+                       _FCRExtractionParamExtractLandmarkPoints, _FCRExtractionParamExtractSmile, 
+                       _FCRExtractionParamInitialAngle, _FCRFaceBlurScore, _FCRFaceBlurred, 
+                       _FCRFaceDetectionParameters, _FCRFaceDetectorErrorDomain, 
+                       _FCRFaceExpressionLeftEyeClosed, _FCRFaceExpressionLeftEyeClosedScore, 
+                       _FCRFaceExpressionRightEyeClosed, _FCRFaceExpressionRightEyeClosedScore, 
+                       _FCRFaceExpressionSmile, _FCRFaceExpressionSmileScore, _FCRFastFaceDetectionParameters, 
+                       _FCRKeypointTrackingParameters, _FCRPreciseDetectionParameters, 
+                       _FCRSetupParamDetectProfiles, _FCRSetupParamDetectorType, 
+                       _FCRSetupParamDetectorTypeFaceDetection, _FCRSetupParamDetectorTypeFastFaceDetection, 
+                       _FCRSetupParamDetectorTypePreciseFaceDetection, _FCRSetupParamMinFaceSize, 
+                       _FCRSetupParamNumberOfAngles, _FCRSetupParamTrackingType, 
+                       _FCRSetupParamTrackingTypeKeypoints, _FCRSetupParamTrackingTypeNone, 
+                       _FCRSetupParamTrackingTypeStandard, _FCRStandardTrackingParameters ]
+    objc-classes:    [ FCRFace, FCRFaceDetector ]
+...

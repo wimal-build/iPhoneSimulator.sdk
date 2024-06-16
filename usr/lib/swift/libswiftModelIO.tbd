@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 12BABBCC-2F11-3DFB-BBA6-6442C479B1E5', 'x86_64: 13BA4B75-4298-3FED-8F9D-3BC5441FBAE6' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           12BABBCC-2F11-3DFB-BBA6-6442C479B1E5
+  - target:          x86_64-ios-simulator
+    value:           D7EA6DED-411E-32D1-8D87-4BA5F2C1D0ED
+  - target:          arm64-ios-simulator
+    value:           0C80E6FF-BE90-3441-A3C8-83349DABF030
 install-name:    '/usr/lib/swift/libswiftModelIO.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftModelIO.dylib', '$ld$install_name$os10.1$@rpath/libswiftModelIO.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftModelIO.dylib', '$ld$install_name$os10.3$@rpath/libswiftModelIO.dylib', 
                        '$ld$install_name$os11.0$@rpath/libswiftModelIO.dylib', '$ld$install_name$os11.1$@rpath/libswiftModelIO.dylib', 

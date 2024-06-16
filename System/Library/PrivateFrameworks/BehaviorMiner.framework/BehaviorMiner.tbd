@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           42833F58-5983-3720-912D-1F61A9D20D40
+  - target:          arm64-ios-simulator
+    value:           EB8267AA-C98C-3A72-9A4E-6F0944ADC62A
+install-name:    '/System/Library/PrivateFrameworks/BehaviorMiner.framework/BehaviorMiner'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BMAutomationSuggestionsConfig, _BMCreateShortcutFilter, _BMErrorDomain, 
+                       _BMEventInterval, _BMHourSlotForHourOfDay, _BMIsNotAppExtension, 
+                       _BMItemNormalizedValueFromValue, _BMItemValueFromNormalizedValue, 
+                       _BMLog, _BMMaxPhotoPeople, _BMMaxPhotoScenes, _BMStorageURLForDomain, 
+                       _BMTemporalItemsForDate, _BehaviorMinerVersionNumber, _BehaviorMinerVersionString, 
+                       _hourOfDaySlotDuration ]
+    objc-classes:    [ BMAprioriPatternMiner, BMBasketExtractor, BMBehaviorDatabaseMetadata, 
+                       BMBehaviorRetriever, BMBehaviorStorage, BMCoreRoutineProvider, 
+                       BMDatedBasket, BMEvent, BMEventExtractor, BMInteractionProvider, 
+                       BMItem, BMItemMO, BMItemType, BMManagedObjectConverter, BMMiningTask, 
+                       BMMiningTaskConfig, BMRetrievalFilter, BMRule, BMRuleExtractor, 
+                       BMRuleMO ]
+...

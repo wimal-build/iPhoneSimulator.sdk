@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4F59D247-B5D0-32BC-8369-349064587671', 'x86_64: AC8F27FA-8EBA-3888-BFE3-726A36DFA719' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3012A817-94FA-3E86-9327-7D683BC4302F
+  - target:          x86_64-ios-simulator
+    value:           F1E62492-9E32-386C-BF27-5D76C46B01EB
+  - target:          arm64-ios-simulator
+    value:           2139F4F4-93D4-336F-9541-3703DDE732FF
 install-name:    '/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration'
-current-version: 1061.140.1
-exports:         
-  - archs:           [ i386 ]
+current-version: 1109.0.4
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _SCDynamicStoreCopyLocation, _SCDynamicStoreNotifySignal, 
                        _SCLOG, _SCLoggerCreate, _SCLoggerGetFlags, _SCLoggerLog, 
                        _SCLoggerSetFlags, _SCLoggerVLog, _SCNetworkCheckReachabilityByAddress, 
@@ -19,7 +25,7 @@ exports:
                        ___SCNetworkConnectionMaskIPv6Address, ___SCNetworkConnectionUsingNetworkExtension, 
                        ___crashreporter_info__, _kSCEntNetActiveDuringSleepRequested, 
                        _kSCEntNetActiveDuringSleepSupported ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CNCopyCurrentNetworkInfo, _CNCopySupportedInterfaces, _CNMarkPortalOffline, 
                        _CNMarkPortalOnline, _CNSetSupportedSSIDs, _DHCPClientPreferencesCopyApplicationOptions, 
                        _DHCPClientPreferencesSetApplicationOptions, _DHCPInfoGetLeaseExpirationTime, 
@@ -196,7 +202,8 @@ exports:
                        __SCNetworkInterfaceIsApplePreconfigured, __SCNetworkInterfaceIsBluetoothP2P, 
                        __SCNetworkInterfaceIsBluetoothPAN, __SCNetworkInterfaceIsBluetoothPAN_NAP, 
                        __SCNetworkInterfaceIsBuiltin, __SCNetworkInterfaceIsCarPlay, 
-                       __SCNetworkInterfaceIsHiddenConfiguration, __SCNetworkInterfaceIsPhysicalEthernet, 
+                       __SCNetworkInterfaceIsHiddenConfiguration, __SCNetworkInterfaceIsHiddenInterface, 
+                       __SCNetworkInterfaceIsPhysicalEthernet, __SCNetworkInterfaceIsQoSMarkingProfileInstalled, 
                        __SCNetworkInterfaceIsTethered, __SCNetworkInterfaceIsThunderbolt, 
                        __SCNetworkInterfaceIsTrustRequired, __SCNetworkMigrationAreConfigurationsIdentical, 
                        __SCNetworkProtocolCompare, __SCNetworkServiceCompare, __SCNetworkServiceCopyActive, 
@@ -237,9 +244,9 @@ exports:
                        _kSCDynamicStorePropNetServiceIDs, _kSCDynamicStorePropSetupCurrentSet, 
                        _kSCDynamicStorePropSetupLastUpdated, _kSCDynamicStoreUseHostServer, 
                        _kSCDynamicStoreUseSessionKeys, _kSCEntNet6to4, _kSCEntNetAirPort, 
-                       _kSCEntNetAppLayer, _kSCEntNetCommCenter, _kSCEntNetDHCP, 
-                       _kSCEntNetDNS, _kSCEntNetEAPOL, _kSCEntNetEthernet, _kSCEntNetFireWire, 
-                       _kSCEntNetIPSec, _kSCEntNetIPv4, _kSCEntNetIPv4ARPCollision, 
+                       _kSCEntNetAppLayer, _kSCEntNetCaptivePortal, _kSCEntNetCommCenter, 
+                       _kSCEntNetDHCP, _kSCEntNetDNS, _kSCEntNetEAPOL, _kSCEntNetEthernet, 
+                       _kSCEntNetFireWire, _kSCEntNetIPSec, _kSCEntNetIPv4, _kSCEntNetIPv4ARPCollision, 
                        _kSCEntNetIPv4PortInUse, _kSCEntNetIPv4RouterARPAlive, _kSCEntNetIPv4RouterARPFailure, 
                        _kSCEntNetIPv6, _kSCEntNetIPv6RouterExpired, _kSCEntNetIdleRoute, 
                        _kSCEntNetInterface, _kSCEntNetInterfaceActiveDuringSleepRequested, 
@@ -270,11 +277,12 @@ exports:
                        _kSCPropNetAirPortAuthPassword, _kSCPropNetAirPortAuthPasswordEncryption, 
                        _kSCPropNetAirPortJoinMode, _kSCPropNetAirPortPowerEnabled, 
                        _kSCPropNetAirPortPreferredNetwork, _kSCPropNetAirPortSavePasswords, 
-                       _kSCPropNetCommCenterAllowNetworkAccess, _kSCPropNetCommCenterAvailable, 
-                       _kSCPropNetDNSConfirmedServiceID, _kSCPropNetDNSDomainName, 
-                       _kSCPropNetDNSOptions, _kSCPropNetDNSSearchDomains, _kSCPropNetDNSSearchOrder, 
-                       _kSCPropNetDNSServerAddresses, _kSCPropNetDNSServerPort, _kSCPropNetDNSServerTimeout, 
-                       _kSCPropNetDNSServiceIdentifier, _kSCPropNetDNSSortList, _kSCPropNetDNSSupplementalMatchDomains, 
+                       _kSCPropNetCaptivePortalURL, _kSCPropNetCommCenterAllowNetworkAccess, 
+                       _kSCPropNetCommCenterAvailable, _kSCPropNetDNSConfirmedServiceID, 
+                       _kSCPropNetDNSDomainName, _kSCPropNetDNSOptions, _kSCPropNetDNSSearchDomains, 
+                       _kSCPropNetDNSSearchOrder, _kSCPropNetDNSServerAddresses, 
+                       _kSCPropNetDNSServerPort, _kSCPropNetDNSServerTimeout, _kSCPropNetDNSServiceIdentifier, 
+                       _kSCPropNetDNSSortList, _kSCPropNetDNSSupplementalMatchDomains, 
                        _kSCPropNetDNSSupplementalMatchDomainsNoSearch, _kSCPropNetDNSSupplementalMatchOrders, 
                        _kSCPropNetEthernetCapabilityAV, _kSCPropNetEthernetCapabilityJUMBO_MTU, 
                        _kSCPropNetEthernetCapabilityLRO, _kSCPropNetEthernetCapabilityRXCSUM, 

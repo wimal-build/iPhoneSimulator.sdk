@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           66CAA7F6-5C61-33F3-89B6-66AC403FC3A7
+  - target:          x86_64-ios-simulator
+    value:           76830414-8966-3A8F-8B02-DCBC5D606612
+  - target:          arm64-ios-simulator
+    value:           5D5FDF33-16CB-3BBB-AF06-6AACF01DFF8B
+install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/ModuleBase.framework/ModuleBase'
+current-version: 827.0.6
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _ModuleBaseVersionNumber, _ModuleBaseVersionString ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ AuthenticationInProgress, AuthenticationManager, ContextPlugin, 
+                       MechanismManager, Module, RemoteContext ]
+...

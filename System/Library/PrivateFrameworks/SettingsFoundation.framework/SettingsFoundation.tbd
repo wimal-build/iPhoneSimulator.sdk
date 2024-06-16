@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           346DDD54-C588-3D82-A76B-C89B9E7FA016
+  - target:          arm64-ios-simulator
+    value:           E211F214-8C3D-3F27-977D-B88C2E936E60
+install-name:    '/System/Library/PrivateFrameworks/SettingsFoundation.framework/SettingsFoundation'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SFAcknowledgementsDocumentFilePath, _SFAppTintColor, _SFAudioAccessoryAcknowledgementsDocumentFilePath, 
+                       _SFAudioAccessoryLicenseFilePath, _SFAudioAccessoryLicenseVersionNumber, 
+                       _SFAudioAccessoryWarrantyFilePath, _SFBuiltInAppsDocumentFilePath, 
+                       _SFBuiltInRegulatoryImageForModelAndVariant, _SFDeviceSupportsFall2019OrLaterELabel, 
+                       _SFIndiaBISNumber, _SFIndiaBISRegulatoryImage, _SFIsAppWithBundleIDInstalled, 
+                       _SFIsRegulatoryImageFromLockdown, _SFKillProcessNamed, _SFLicenseFilePath, 
+                       _SFLicenseVersionNumber, _SFLocalizableWAPIStringKeyForKey, 
+                       _SFLocalizedMultipickerStringForKey, _SFLocalizedStringFromTableInBundleForLanguage, 
+                       _SFLogForCategory, _SFObjectAndOffsetForURLPair, _SFPerformSelector, 
+                       _SFPerformSelector2, _SFPreferencesAppChangedRestrictionsEnabledStateNotification, 
+                       _SFPreferencesAppResetNetworkSettingsNotification, _SFPreferencesAppResetPrivacyWarningsNotification, 
+                       _SFProcessIDForProcessNamed, _SFRFExposureDocumentHTMLString, 
+                       _SFRegulatoryImage, _SFRoHSComplianceDocumentFilePath, _SFRuntimeAbsoluteFilePathForPath, 
+                       _SFSelectedTintedImageFromMask, _SFShouldShowAlertMark, _SFShouldShowBuiltInApps, 
+                       _SFShouldShowEyesightWarning, _SFShouldShowIndiaBIS, _SFShouldShowMonthOfManufacture, 
+                       _SFShouldShowRoHSCompliance, _SFShouldShowYearOfManufacture, 
+                       _SFTerminateProcessNamed, _SFTintedImageFromMask, _SFURLPairObjectKey, 
+                       _SFURLPairOffsetItemKey, _SFURLPairOffsetValueKey, _SFWarrantyFilePath ]
+    objc-classes:    [ SFRegulatoryCertificationsView, SFRestrictionsController, 
+                       SFRestrictionsPasscodeController ]
+...

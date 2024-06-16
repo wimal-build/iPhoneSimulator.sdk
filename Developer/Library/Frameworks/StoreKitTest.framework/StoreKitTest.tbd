@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C6B1661A-109D-3FD9-AE2B-4F35454EC8AC
+  - target:          arm64-ios-simulator
+    value:           584AE40F-B8E8-3F27-87D9-D773D4EA99A8
+install-name:    '/Developer/Library/Frameworks/StoreKitTest.framework/StoreKitTest'
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SKTestErrorDomain ]
+    objc-classes:    [ SKTestSession, SKTestTransaction ]
+...

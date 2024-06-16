@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C421B674-E554-3635-ACAD-C95CD51769B3
+  - target:          arm64-ios-simulator
+    value:           BEAE21DF-E8FE-31DA-8C3A-DCDEA34651F1
+install-name:    '/System/Library/PrivateFrameworks/LinguisticData.framework/LinguisticData'
+current-version: 399
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LDCopyLocaleIdentifierOverrideForLocaleIdentifier, _LDCreateMobileAssetType, 
+                       _LDCreateSystemLexiconCompatibilityVersion, _LDEnumerateAssetDataItems, 
+                       _kLDAssetTypeCharacterLanguageModel, _kLDAssetTypeContinuousPathModel, 
+                       _kLDAssetTypeDeltaLexicon, _kLDAssetTypeEventDetectionModel, 
+                       _kLDAssetTypeIntentDetectionModel, _kLDAssetTypeLanguageIdentificationModel, 
+                       _kLDAssetTypeLanguageModel, _kLDAssetTypeLexicon, _kLDAssetTypeMorphologicalAnalyzer, 
+                       _kLDAssetTypeMultilingualModel, _kLDAssetTypeNaturalLanguageSearchModel, 
+                       _kLDAssetTypePOSTaggingModel, _kLDAssetTypePolarityModel, 
+                       _kLDAssetTypeProactiveGrammar, _kLDAssetTypeSearchQueryLanguageModel, 
+                       _kLDAssetTypeSpellcheckerData, _kLDAssetTypeTokenizationModel, 
+                       _kLDAssetTypeTransliterationModel ]
+...

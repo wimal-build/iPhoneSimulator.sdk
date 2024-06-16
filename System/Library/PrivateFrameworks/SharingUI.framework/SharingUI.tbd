@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           10AC76CE-EC88-3C7E-B4E6-A61A56AB120B
+  - target:          arm64-ios-simulator
+    value:           40A05A3B-F317-33C7-B001-0880E048A1D6
+install-name:    '/System/Library/PrivateFrameworks/SharingUI.framework/SharingUI'
+current-version: 1564.6
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SFAdjustmentFiltersForAssetTypeAndURL, _SFAirDropActivityMaxPreviewsKey, 
+                       _SFFontForTextStyleWithAdditionalSymbolicTraits, _SFFontForTextStyleWithAdditionalSymbolicTraitsOfSize, 
+                       _SFImageStackFromImages, _SFMathAddToValueWithRubberbanding, 
+                       _SFMathClamp, _SFMathClampedMap, _SFMathClampedProgress, _SFMathMap, 
+                       _SFMathProgress, _SFMathRubberband, _SFMathTransition, _SFMathUnrubberband, 
+                       _SFPlaybackTimeRangesFromFeaturesTimeURL, _SFRoundToScreen, 
+                       _SFScaleAndRotateImage, _SFSpringConvertDampingRatioResponseToStiffnessDamping, 
+                       _SFSpringConvertMassStiffnessDampingToDampingRatioResponse, 
+                       _SFSpringConvertMassStiffnessDampingToStiffnessDamping, _SFSpringConvertStiffnessDampingToDampingRatioResponse, 
+                       _SFVisualEffectViewWrapperForView, _activityImageForCurrentTraitCollectionWithName ]
+    objc-classes:    [ SFAdjustedImageView, SFAirDropActivityViewController, SFAirDropDiscoveryController, 
+                       SFAirDropPayload, SFAirDropViewController, SFAppContent, SFCAPackageView, 
+                       SFCircleProgressView, SFHighlightButton, SFMediaPlayerItem, 
+                       SFMediaPlayerView, SFPersonCollectionViewCell, SFPersonImageView, 
+                       SFShareAudioViewController, SFSharedAudioDeviceInfo ]
+...

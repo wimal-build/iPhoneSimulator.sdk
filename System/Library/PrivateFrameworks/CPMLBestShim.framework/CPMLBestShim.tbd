@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           155E29F2-97AF-3D43-9390-6BE6E679EE65
+  - target:          x86_64-ios-simulator
+    value:           59BB471D-6A4A-374B-8901-99CB71562152
+  - target:          arm64-ios-simulator
+    value:           6BF97E76-7F47-3CBC-8613-B0DB4CB00F9F
+install-name:    '/System/Library/PrivateFrameworks/CPMLBestShim.framework/CPMLBestShim'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _kCPMLCondfidence ]
+    objc-classes:    [ CPMLBestBadgeShim ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kCPMLAppTitle, _kCPMLAppType, _kCPMLAppUsageTime, _kCPMLBTCondition, 
+                       _kCPMLBundleID, _kCPMLChangeCount, _kCPMLConfidence, _kCPMLConnectStatus, 
+                       _kCPMLDeviceType, _kCPMLEmergenceHalfLife, _kCPMLEmergenceTime, 
+                       _kCPMLEventSunrise, _kCPMLEventSunset, _kCPMLEventTime, _kCPMLExpertProposal, 
+                       _kCPMLExpertProposalMoot, _kCPMLExpertProposalNoDetail, _kCPMLExpertType, 
+                       _kCPMLExpertTypeByEmergence, _kCPMLExpertTypeByEventTime, 
+                       _kCPMLExpertTypeByPrediction, _kCPMLExpertUniqueX1, _kCPMLExpertUniqueX2, 
+                       _kCPMLExpertUniqueX3, _kCPMLLastModifiedDate, _kCPMLRadioCondition, 
+                       _kCPMLTimeSinceLastUsed, _kCPMLUUID, _kCPMLWifiCondition ]
+    objc-classes:    [ CPMLBestAppShim, CPMLBestShim, CPMLBestShimContext ]
+...

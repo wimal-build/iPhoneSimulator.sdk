@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2A5B1F44-4F5F-372C-8030-5D41F1EF3F1C
+  - target:          arm64-ios-simulator
+    value:           16962C74-CDD7-3859-9784-D48149872516
+install-name:    '/System/Library/PrivateFrameworks/AppPredictionUI.framework/AppPredictionUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _APUIAppIconImageLoaderIconSize, _APUIAppIconImageLoaderProtocol, 
+                       _APUIBundleIdReplacementFor, _APUIDeviceSupportsForceTouch, 
+                       _APUIIsDeviceLocked, _APUIIsIntentFromSystemApp, _APUIIsInternalBuild, 
+                       _APUIPointImageOfColor, _APUIRegisterCardKitProvidersIfNeeded, 
+                       _APUIRegisterCardServicesIfNeeded, _APUIThisProcessIsSpringBoard, 
+                       _AppPredictionUIVersionNumber, _AppPredictionUIVersionString, 
+                       _kAPUICardServiceIdentifier ]
+    objc-classes:    [ APUIActionCardRequest, APUIActionCardUtils, APUIActionCardViewConfig, 
+                       APUIActionPlatterView, APUIAppIconImageLoader, APUIBoldTrayButton, 
+                       APUICardRequestSatisfactionCriteria, APUICardService, APUIIntentHandlingViewController, 
+                       APUILongLookViewController, APUIShortLookViewController, APUITVIntentHandler, 
+                       APUITrayButton, APUIWFLIntentController, _APUIActionCardInfo, 
+                       _APUICardRequestCompactSatisfactionCriteria, _APUICardRequestCustomIntentSatisfactionCriteria ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A94FA03D-A069-39FC-8AE0-730D45408968
+  - target:          x86_64-ios-simulator
+    value:           7DF6BB28-1F46-30C8-983D-CDDFE2C9F94B
+  - target:          arm64-ios-simulator
+    value:           CCADB4B9-8078-3EF0-9BC2-EB0AF93DD625
+install-name:    '/System/Library/PrivateFrameworks/FTClientServices.framework/FTClientServices'
+current-version: 800
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _FTCLogPrefix ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FTCServiceAvailabilityAvailabilityKey, _FTCServiceAvailabilityDidChangeNotification, 
+                       _FTCServiceAvailabilityServiceTypeKey, _FTCServiceNameCalling, 
+                       _FTCServiceNameFaceTime, _FTCServiceNameForServiceType, _FTCServiceNameMadrid, 
+                       _FTCServiceNameiMessage, _FTCServiceTypeForServiceName ]
+    objc-classes:    [ FTCServiceAvailabilityCenter ]
+...

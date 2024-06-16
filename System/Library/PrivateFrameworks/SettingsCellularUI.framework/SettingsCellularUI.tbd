@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           51437312-CE1E-3019-86E4-FC87FE6D549B
+  - target:          arm64-ios-simulator
+    value:           028F978C-A83D-3814-87ED-E313AA563082
+install-name:    '/System/Library/PrivateFrameworks/SettingsCellularUI.framework/SettingsCellularUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ PSUICellularRoamingController._cdmaRoamingSpecifier, PSUICellularRoamingController._dataRoamingSpecifier, 
+                       PSUICellularRoamingController._voiceRoamingSpecifier ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PSCDMARoamingSpecifiers, _PSDataRoamingSpecifierForService, 
+                       _PSDataRoamingSpecifiers, _PSEUInternetSpecifiers, _PSIsCDMARoamingEnabled, 
+                       _PSIsCDMARoamingOptionAvailable, _PSIsDataRoamingEnabled, 
+                       _PSIsDataRoamingEnabledForService, _PSIsDataRoamingOptionAvailable, 
+                       _PSIsEUInternetEnabled, _PSIsVoiceRoamingEnabled, _PSIsVoiceRoamingOptionAvailable, 
+                       _PSMaxDataRateChangedNotification, _PSRoamingSubMenuSpecifiers, 
+                       _PSSetCDMARoamingEnabled, _PSSetDataRoamingEnabled, _PSSetDataRoamingEnabledForService, 
+                       _PSSetEUInternetEnabled, _PSSetVoiceRoamingEnabled, _PSShouldIncludeMMSFooterNote, 
+                       _PSUICellularPlanChanged, _PSUIFormatDataUsage, _PSUIFormatPlanStatusForPlan, 
+                       _PSUIGetPlanSubscriptionStatus, _PSUIPRLVersionChanged ]
+    objc-classes:    [ CTUIWirelessUsageAndAppPolicyController, PSUIAppDataUsageGroup, 
+                       PSUICellularController, PSUICellularPlanManagerCache, PSUICellularPlanUniversalReference, 
+                       PSUICellularRoamingController, PSUICoreTelephonyCarrierBundleCache, 
+                       PSUICoreTelephonyRegistrationCache, PSUICoreTelephonySubscriberCache ]
+...

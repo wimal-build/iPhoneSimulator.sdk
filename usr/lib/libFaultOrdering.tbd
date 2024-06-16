@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           53959B8C-DDA8-3811-977F-BCCE7D8C8D8D
+  - target:          arm64-ios-simulator
+    value:           D9BA16CD-1448-3F59-9CB5-5CB8D3A81759
+install-name:    '/usr/lib/libFaultOrdering.dylib'
+...

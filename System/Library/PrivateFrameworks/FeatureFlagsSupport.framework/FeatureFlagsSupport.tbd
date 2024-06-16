@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           907DEA5F-B90A-3BA6-9AA1-CA3554241E4C
+  - target:          arm64-ios-simulator
+    value:           84CDB06C-2FAB-39B6-85D4-E573C0A3AE8D
+install-name:    '/System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/FeatureFlagsSupport'
+current-version: 28.0.1
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ FFConfiguration, FFFeatureAttribute, FFFeatureState ]
+...

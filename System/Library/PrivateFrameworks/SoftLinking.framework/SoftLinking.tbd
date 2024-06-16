@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           BD4FED8C-CA8C-3C22-9134-075317BEE3C6
+  - target:          arm64-ios-simulator
+    value:           ED4AEA03-59FA-31D5-9948-93D246A1ED69
+install-name:    '/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking'
+current-version: 37
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __sl_dlopen_audited ]
+...

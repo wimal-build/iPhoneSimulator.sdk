@@ -1,6 +1,12 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0BD50522-A4DB-38A3-A5A0-2270FEF8E15D', 'x86_64: 068919AD-6A13-32BA-80E3-137E08D38AEB' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           44E2AEA4-A257-33EC-8604-C1260C92178C
+  - target:          x86_64-ios-simulator
+    value:           D9693253-8166-3A81-A68C-077214011BCC
+  - target:          arm64-ios-simulator
+    value:           2E5E07EA-7E65-3BEF-A02E-449207E38B49
 install-name:    '/usr/lib/libLeaksAtExit.dylib'
 ...

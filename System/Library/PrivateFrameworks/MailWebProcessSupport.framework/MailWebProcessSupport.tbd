@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           6F78D9EC-1CF4-3395-B32F-AD3CEBDFEB27
+  - target:          arm64-ios-simulator
+    value:           31E66551-DBFB-3E27-8BA8-F1848B331C8D
+install-name:    '/System/Library/PrivateFrameworks/MailWebProcessSupport.framework/MailWebProcessSupport'
+current-version: 3654.0.3
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kBodyFieldSource, _kBodyFieldSourceLength, _kConstantsSource, 
+                       _kConstantsSourceLength, _kDocumentExtrasSource, _kDocumentExtrasSourceLength, 
+                       _kElementExtrasSource, _kElementExtrasSourceLength, _kHTMLDocumentExtrasSource, 
+                       _kHTMLDocumentExtrasSourceLength, _kHTMLElementExtrasSource, 
+                       _kHTMLElementExtrasSourceLength, _kNodeExtrasSource, _kNodeExtrasSourceLength, 
+                       _kRangeExtrasSource, _kRangeExtrasSourceLength ]
+    objc-classes:    [ MSComposeBundlePageController ]
+...

@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           1A4B8E4B-06C6-39BE-B871-C4015686CDBF
+  - target:          arm64-ios-simulator
+    value:           1B9F4F3F-AF3E-3CF7-AF2D-B242AF68FEA2
+install-name:    '/System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CRSUIBannerRevocationReasonHomeButton, _CRSUIBannerRevocationReasonTouchOutsideDismiss, 
+                       _CRSUIBannerShouldBorrowScreenKey, _CRSUICarPlayTestAppSetClusterScreenCornerMaskImage, 
+                       _CRSUICarPlayTestAppSetMainScreenCornerMaskImage, _CRSUIDashboardWidgetWindowFocusHighlightColorDidChangeNotification, 
+                       _CRSUILogForCategory, _CRSUIWallpaperBlackDynamic, _CRSUIWallpaperBlueGreenDynamic, 
+                       _CRSUIWallpaperChangedNotification, _CRSUIWallpaperCreamDynamic, 
+                       _CRSUIWallpaperRedBlueDynamic, _CRSUIWallpaperRedDynamic, 
+                       _CRSUIWallpaperSolidBlack, _CRSUIWallpaperSolidDynamic, _CRSUIWindowMapStyleChangedNotification, 
+                       _CarPlayUIServicesVersionNumber, _CarPlayUIServicesVersionString ]
+    objc-classes:    [ CRSDashboardFocusableItem, CRSUIApplicationSceneSettings, 
+                       CRSUIApplicationSceneSettingsDiffInspector, CRSUIApplicationSceneSpecification, 
+                       CRSUIDashboardWidgetSceneSettings, CRSUIDashboardWidgetSceneSpecification, 
+                       CRSUIDashboardWidgetWindow, CRSUIInstrumentClusterSceneSettings, 
+                       CRSUIInstrumentClusterSceneSpecification, CRSUIMutableApplicationSceneSettings, 
+                       CRSUIMutableDashboardWidgetSceneSettings, CRSUIMutableInstrumentClusterSceneSettings, 
+                       CRSUIMutableProxyApplicationSceneSettings, CRSUIMutableTemplateDashboardWidgetSceneSettings, 
+                       CRSUIProxyApplicationSceneSettings, CRSUIProxyApplicationSceneSpecification, 
+                       CRSUIStatusBarStyleAssertion, CRSUIStatusBarStyleAssertionData, 
+                       CRSUIStatusBarStyleService, CRSUIStatusBarStyleSpecification, 
+                       CRSUITemplateDashboardWidgetSceneSettings, CRSUITemplateDashboardWidgetSceneSpecification, 
+                       CRSUIUserActivityBSActionsHandler, CRSUIWallpaper, CRSUIWallpaperPreferences, 
+                       CRSUIWindow ]
+...

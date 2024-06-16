@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           96A04802-5F14-3828-B564-128C4D908930
+  - target:          arm64-ios-simulator
+    value:           7612F532-FBBB-3868-8070-9BC49E63088F
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityFocusEngine.framework/AccessibilityFocusEngine'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AccessibilityFocusEngineVersionNumber, _AccessibilityFocusEngineVersionString ]
+    objc-classes:    [ AXFocusManager ]
+...

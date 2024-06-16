@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           9A6D31C1-4D40-3824-9886-7FC35A6FD164
+  - target:          arm64-ios-simulator
+    value:           FAC6AAC1-5479-3B1B-BEA1-2414EA1FC2AD
+install-name:    '/usr/lib/log/liblog_signpost.telemetry.dylib'
+current-version: 53
+...

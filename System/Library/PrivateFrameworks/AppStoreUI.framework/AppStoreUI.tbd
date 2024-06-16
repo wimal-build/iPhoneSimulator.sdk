@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7A6DB62D-F535-3CBA-8733-BA6899420F53
+  - target:          x86_64-ios-simulator
+    value:           923C207A-BD87-358B-B48F-C1CB993A0328
+  - target:          arm64-ios-simulator
+    value:           C0A7D10A-A0B6-31BF-A59F-F42E29A67757
+install-name:    '/System/Library/PrivateFrameworks/AppStoreUI.framework/AppStoreUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ASAppStoreUIBundle ]
+    objc-classes:    [ ASClientController, ASPurchaseBatch, ASViewControllerFactory ]
+...

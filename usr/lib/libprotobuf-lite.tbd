@@ -1,10 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CD8EB54B-CF33-310F-8489-F19638D3C241' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           148B8795-F3CD-39BA-B750-172179A9045D
+  - target:          arm64-ios-simulator
+    value:           0C6DB30B-9D70-32C8-AA1D-F4CD7D6ED72A
 install-name:    '/usr/lib/libprotobuf-lite.dylib'
-exports:         
-  - archs:           [ x86_64 ]
+exports:
+  - targets:         [ x86_64-ios-simulator ]
+    symbols:         [ __ZN20wireless_diagnostics6google8protobuf13StringAppendVEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcP13__va_list_tag ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __ZN20wireless_diagnostics6google8protobuf11LogSilencerC1Ev, 
                        __ZN20wireless_diagnostics6google8protobuf11LogSilencerC2Ev, 
                        __ZN20wireless_diagnostics6google8protobuf11LogSilencerD1Ev, 
@@ -27,7 +35,6 @@ exports:
                        __ZN20wireless_diagnostics6google8protobuf13SStringPrintfEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcz, 
                        __ZN20wireless_diagnostics6google8protobuf13SetLogHandlerEPFvNS1_8LogLevelEPKciRKNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEE, 
                        __ZN20wireless_diagnostics6google8protobuf13StringAppendFEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcz, 
-                       __ZN20wireless_diagnostics6google8protobuf13StringAppendVEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcP13__va_list_tag, 
                        __ZN20wireless_diagnostics6google8protobuf14FatalExceptionD0Ev, 
                        __ZN20wireless_diagnostics6google8protobuf14FatalExceptionD1Ev, 
                        __ZN20wireless_diagnostics6google8protobuf14FatalExceptionD2Ev, 
@@ -477,4 +484,6 @@ exports:
                        __ZTVN20wireless_diagnostics6google8protobuf8internal15ExtensionFinderE, 
                        __ZTVN20wireless_diagnostics6google8protobuf8internal16FunctionClosure0E, 
                        __ZTVN20wireless_diagnostics6google8protobuf8internal24GeneratedExtensionFinderE ]
+  - targets:         [ arm64-ios-simulator ]
+    symbols:         [ __ZN20wireless_diagnostics6google8protobuf13StringAppendVEPNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPKcPc ]
 ...

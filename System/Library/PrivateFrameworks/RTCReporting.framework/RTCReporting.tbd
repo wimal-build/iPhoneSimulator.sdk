@@ -1,0 +1,52 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           40B6DA61-09DC-395B-9EC4-66367E691970
+  - target:          x86_64-ios-simulator
+    value:           15D05593-41DB-394B-BC0F-D238D121808E
+  - target:          arm64-ios-simulator
+    value:           14A2941C-52A4-35D1-9F3D-4A824158C5F4
+install-name:    '/System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _RTCReportingNewHierarchyTokenFromParentToken, _RTCReportingSendMsg, 
+                       _RTCReportingSetLogMsgBlock, _RTCReportingSetServer, _RTCReportingSetServerInfo, 
+                       _RTCReportingSetUserInfoDict, _asl, _aslMsg, _kRTCReportingDefaultsDomain, 
+                       _kRTCReportingDefaultsKeyUUIDOverrideDNU, _kRTCReportingDefaultsKeyUUIDRespectDNU, 
+                       _validateMessageWithCategory, _validateMessageWithDictionary, 
+                       _validateSessionInfo ]
+    objc-classes:    [ RTCReportingLogging ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ RTCReportingDeallocNotifier._delegate, RTCSecureHierarchyToken._level, 
+                       RTCSecureHierarchyToken._token ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RTCReportingCloseEphemeralSessionWithSessionId, _RTCReportingCreateEphemeralSessionWithSessionInfo, 
+                       _RTCReportingCreateHierarchyTokenFromParentToken, _RTCReportingFetchStatesWithUserInfo, 
+                       _RTCReportingFlushMessages, _RTCReportingFlushMessagesWithCompletion, 
+                       _RTCReportingInitWithSessionInfo, _RTCReportingInitWithSessionInfoDict, 
+                       _RTCReportingSendMessageWithDictionary, _RTCReportingSendMessageWithError, 
+                       _RTCReportingSendOneMessageWithDictionary, _RTCReportingSetMessageBlock, 
+                       _RTCReportingStartConfiguration, _RTCReportingUpdateSharedDataForKey, 
+                       _RTCReportingUpdateSharedDataWithDictionary, _RTCReportingUploadLogWithArray, 
+                       _kRTCReportingBackendAWD, _kRTCReportingBackendDashboard, 
+                       _kRTCReportingBackendHTTPPost, _kRTCReportingBackendHTTPPost2, 
+                       _kRTCReportingBackendHTTPPost3, _kRTCReportingBackendPowerlog, 
+                       _kRTCReportingBackendQRS, _kRTCReportingBackendUploadServer, 
+                       _kRTCReportingErrorDomain, _kRTCReportingHierarchyTokenLevel, 
+                       _kRTCReportingHierarchyTokenTokenID, _kRTCReportingLogDataData, 
+                       _kRTCReportingLogDataEndTime, _kRTCReportingLogDataStartTime, 
+                       _kRTCReportingMessageParametersCategory, _kRTCReportingMessageParametersFlag, 
+                       _kRTCReportingMessageParametersPayload, _kRTCReportingMessageParametersType, 
+                       _kRTCReportingSessionInfoBatchEvent, _kRTCReportingSessionInfoClientBundleID, 
+                       _kRTCReportingSessionInfoClientType, _kRTCReportingSessionInfoClientVersion, 
+                       _kRTCReportingSessionInfoContainsRealtimeEvents, _kRTCReportingSessionInfoEnableFlag, 
+                       _kRTCReportingSessionInfoEphemeralSessionID, _kRTCReportingSessionInfoHierarchyToken, 
+                       _kRTCReportingSessionInfoRequireUserInfo, _kRTCReportingSessionInfoSessionID, 
+                       _kRTCReportingUserInfoClientName, _kRTCReportingUserInfoServiceName ]
+    objc-classes:    [ RTCReporting, RTCReportingAggregationObject, RTCReportingDeallocNotifier, 
+                       RTCSecureHierarchyToken, UpdateAndReportServices ]
+    objc-ivars:      [ RTCReportingAggregationObject._aggregationBlock, UpdateAndReportServices._block, 
+                       UpdateAndReportServices._report, UpdateAndReportServices._update ]
+...

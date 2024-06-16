@@ -1,0 +1,76 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           66A8E87A-76B1-3A2C-9E86-8755A3BD5CD1
+  - target:          x86_64-ios-simulator
+    value:           96E171A1-C253-3C78-8331-BFAE96B0F140
+  - target:          arm64-ios-simulator
+    value:           BAB450D0-5793-3830-8830-D1D02D07F6F8
+install-name:    '/System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _APSAssert, _APSConnectionInterruptedHandlerBlock, _APSConnectionInvalidationHandlerBlock, 
+                       _APSCopyValueForKey, _APSCreateMIGServerSource, _APSCreateMIGServerSourceWithContext, 
+                       _APSGetBooleanValueForKey, _APSGetContextForCalloutCurrentMIGServerSource, 
+                       _APSGetMachPortForMIGServerSource, _APSIncomingMessageFromStorageKey, 
+                       _APSIncomingMessageLastMessageFromStorageKey, _APSIncomingMessageTimestampKey, 
+                       _APSIncomingMessageTokenKey, _APSMessageCorrelationIdentifierKey, 
+                       _APSMessageGUIDKey, _APSMessageIdentifierKey, _APSMessageTopicKey, 
+                       _APSMessageUserInfoKey, _APSOutgoingMessageCancelledKey, _APSOutgoingMessageCriticalKey, 
+                       _APSOutgoingMessageIDKey, _APSOutgoingMessagePayloadFormatKey, 
+                       _APSOutgoingMessagePayloadLengthKey, _APSOutgoingMessagePriorityKey, 
+                       _APSOutgoingMessageSendDateKey, _APSOutgoingMessageSendInterfaceKey, 
+                       _APSOutgoingMessageSenderTokenNameKey, _APSOutgoingMessageSentKey, 
+                       _APSOutgoingMessageTimedOutKey, _APSOutgoingMessageTimeoutKey, 
+                       _APSOutgoingMessageTimestampKey, _APSPrefBundleIdentifier, 
+                       _APSSetValueForKey, _APSSynchronize, _APSXPCLog, _APSXPCSetLogBlock, 
+                       _ConnectionDeliver_server, _ConnectionDeliver_server_routine, 
+                       __APSConnectionDeliver_subsystem, __APSJWStringToCharPtr, 
+                       __APSPingClient, _aps_connection_event_handler ]
+    objc-classes:    [ APSFileLogging, APSMultiUserFS, APSMultiUserMode, _APSLogFileCompressor ]
+    objc-ivars:      [ _APSLogFileCompressor._archivers ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ APSDNSRequest._environment, APSDNSRequest._flags, APSDNSRequest._hostname, 
+                       APSDNSRequest._requestStartTime, APSDNSRequest._responseBlock, 
+                       APSDNSRequest._timeout, APSDNSResponse._hostname, APSDNSResponse._ipv4Address, 
+                       APSDNSResponse._ipv6Address, APSIncomingMessage._checkpointTrace, 
+                       APSOutgoingMessage._checkpointTrace, APSTaskClient._clientQueue, 
+                       APSTaskClient._connection, APSTaskClient._environment, APSTaskClient._outstandingDNSRequests ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _APSAlert, _APSBundleIdentifier, _APSCachedIPKey, _APSCarrierNameKey, 
+                       _APSClientIdentityUpdatedNotification, _APSConnectionInitiateEntitlement, 
+                       _APSConnectionOverrideNamedDelegatePort, _APSConnectionSystemProcessEntitlement, 
+                       _APSCreateDictionaryFromXPCObject, _APSCreateXPCObjectFromDictionary, 
+                       _APSCriticalWakeEntitlement, _APSDarkWakeEntitlement, _APSDataForPropertyList, 
+                       _APSDecodeDictionary, _APSDefaultTokenName, _APSDefaultUserID, 
+                       _APSDemoHostsKey, _APSEncodeDictionary, _APSEnvironmentDemo, 
+                       _APSEnvironmentDevelopment, _APSEnvironmentProduction, _APSEnvironmentQA2, 
+                       _APSError, _APSErrorDomain, _APSForceKeepAliveV1Key, _APSGetEnableCriticalReliability, 
+                       _APSGetEnableStatusNotifications, _APSGetEnabledTopicsFromXPCDictionary, 
+                       _APSGetIgnoredTopicsFromXPCDictionary, _APSGetNonWakingTopicsFromXPCDictionary, 
+                       _APSGetOpportunisticTopicsFromXPCDictionary, _APSGetUsesAppLaunchStats, 
+                       _APSGetXPCArrayFromDictionary, _APSGetXPCBoolFromDictionary, 
+                       _APSGetXPCConnectionContext, _APSGetXPCDataFromDictionary, 
+                       _APSGetXPCDictionaryFromDictionary, _APSGetXPCDoubleFromDictionary, 
+                       _APSGetXPCIntFromDictionary, _APSGetXPCNSUIntegerFromDictionary, 
+                       _APSGetXPCStringFromDictionary, _APSHexStringFromNSData, _APSIncomingMessagePriorityString, 
+                       _APSInsertBoolsToXPCDictionary, _APSInsertDatasToXPCDictionary, 
+                       _APSInsertDoublesToXPCDictionary, _APSInsertEnabledTopicsToXPCDictionary, 
+                       _APSInsertIgnoredTopicsToXPCDictionary, _APSInsertIntsToXPCDictionary, 
+                       _APSInsertNSArraysToXPCDictionary, _APSInsertNSDictionariesToXPCDictionary, 
+                       _APSInsertNSStringsToXPCDictionary, _APSInsertNSUIntegersToXPCDictionary, 
+                       _APSInsertNonWakingTopicsToXPCDictionary, _APSInsertOpportunisticTopicsToXPCDictionary, 
+                       _APSIsST, _APSLaunchdJobLabel, _APSNSDataFromHexString, _APSPerAppTokenAppIdsKey, 
+                       _APSPersistentTopicsKey, _APSPowerLog, _APSPrettyPrintCollection, 
+                       _APSPropertyListFromNSData, _APSPushWakeEntitlement, _APSSafeArrayOfStrings, 
+                       _APSSetXPCConnectionContext, _APSSystemUsersKey, _APSUnderlyingError, 
+                       _APSUsesAppLaunchStatsKey, _APSXPCConfigureConnection, _APSXPCConnectionSetEventHandlers, 
+                       _APSXPCCreateConnectionForService, _APSXPCCreateConnectionForServiceWithQueue, 
+                       _APSXPCCreateServerConnection, _APSXPCMessageTypeKey, _kAPSTaskClientServiceName ]
+    objc-classes:    [ APSAccessCheck, APSConnection, APSDNSRequest, APSDNSResponse, 
+                       APSIncomingMessage, APSIncomingMessageCheckpointTrace, APSLog, 
+                       APSMessage, APSOutgoingMessage, APSOutgoingMessageCheckpointTrace, 
+                       APSTaskClient ]
+...

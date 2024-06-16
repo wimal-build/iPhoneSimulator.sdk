@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           911AEE19-6B45-37D8-B453-47E025EDF6EC
+  - target:          x86_64-ios-simulator
+    value:           008F154A-2B04-3DA8-A738-2ACA23B9A0BF
+  - target:          arm64-ios-simulator
+    value:           36E21A48-73A7-3C07-A205-339D0D5D6856
+install-name:    '/System/Library/PrivateFrameworks/Catalyst.framework/Catalyst'
+current-version: 7
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ CATEvent ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CATAssertIsNotQueue, _CATAssertIsQueue, _CATErrorDomain, 
+                       _CATErrorWithCodeAndUserInfo, _CATErrorWithDomainCodeAndUserInfo, 
+                       _CATFormattedStringForKey, _CATGetCatalystQueue, _CATLocalizedKey, 
+                       _CATSetCatalystQueue, _CATUnlocalizedKey ]
+    objc-classes:    [ CATAddress, CATArbitrator, CATBatchRemoteTaskOperation, CATBlockOperationObserver, 
+                       CATCollectionController, CATEndPoint, CATMessage, CATMutableTaskProgress, 
+                       CATNetworkReachability, CATNotificationMessage, CATOperation, 
+                       CATOperationQueue, CATProperty, CATRemoteConnection, CATRemoteConnectionSocketOptions, 
+                       CATRemoteConnectionTrustDecision, CATRemoteTaskOperation, 
+                       CATRemoteTransport, CATSerialOperationQueue, CATSessionMessage, 
+                       CATSessionMessageDidInvalidate, CATSessionMessageInvalidate, 
+                       CATSessionMessageResume, CATSessionMessageResumed, CATSocket, 
+                       CATState, CATStateMachine, CATStateMachineEvent, CATTaskBlockServer, 
+                       CATTaskClient, CATTaskMessage, CATTaskMessageCancel, CATTaskMessageError, 
+                       CATTaskMessageFetchProgress, CATTaskMessageIncrementalProgress, 
+                       CATTaskMessageProgressUpdate, CATTaskMessageStart, CATTaskOperation, 
+                       CATTaskProgress, CATTaskRequest, CATTaskResultObject, CATTaskServer, 
+                       CATTaskSession, CATTransition, CATTransport, CATXPCTransport ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           785CE4B3-8B4B-39EB-91DF-2A1AA71D9451
+  - target:          x86_64-ios-simulator
+    value:           D9497795-8475-3139-804B-3290BCFCE964
+  - target:          arm64-ios-simulator
+    value:           457492A1-8F3F-375A-A27A-0D8ACA340F75
+install-name:    '/System/Library/Frameworks/OpenGLES.framework/libCoreFSCache.dylib'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _fscache_maps_async ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _fscache_close, _fscache_element_get_data, _fscache_find_and_retain, 
+                       _fscache_get_cache_keys, _fscache_insert_and_retain, _fscache_open, 
+                       _fscache_open_with_key, _fscache_print_status, _fscache_release, 
+                       _fscache_remove_all, _fscache_remove_and_release, _fscache_retain, 
+                       _fscache_sync, _fscache_sync_element ]
+...

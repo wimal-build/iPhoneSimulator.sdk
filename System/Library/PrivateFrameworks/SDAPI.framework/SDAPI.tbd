@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3F569B77-348C-37E8-B9DA-C5827492685C
+  - target:          x86_64-ios-simulator
+    value:           33C13490-4645-370A-847B-1C2EF221FF7C
+  - target:          arm64-ios-simulator
+    value:           C383451F-955D-3B99-86AC-F0757730A0E6
+install-name:    '/System/Library/PrivateFrameworks/SDAPI.framework/SDAPI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SDApi_HasErrored, _SDApi_Initialize, _SDParamSetHolder_Delete, 
+                       _SDParamSetHolder_NewFromFile, _SDParamSetParam_GetHandle, 
+                       _SDParamSetParam_GetType, _SDParamSetParam_SetBoolValue, _SDParamSetParam_SetDoubleValue, 
+                       _SDParamSetParam_SetEnumValue, _SDParamSetParam_SetIntValue, 
+                       _SDParamSetParam_SetStringValue, _SDParamSet_GetHandle, _SDRecog_GuessPronsNonAcoustic, 
+                       _SDState_GetAllowedWordCollations, _SDState_GetHandle, _SDVoc_Delete, 
+                       _SDVoc_GetAllowedWordCollations, _SDVoc_GetCollationName, 
+                       _SDVoc_GetColls, _SDVoc_GetInfo, _SDVoc_New, _SDVoc_Save, 
+                       _SDVoc_SetAllowedWordCollations, _SDWord_DeleteList, _SDWord_GetHumanReadableProns, 
+                       _SDWord_New, _TPApi_Initialize, _TPItn_Close, _TPItn_DeleteResult, 
+                       _TPItn_GetResultAlignment, _TPItn_GetResultText, _TPItn_Open, 
+                       _TPItn_WordSequenceToResult, _TPLexicon_Close, _TPLexicon_GetHeadClone, 
+                       _TPLexicon_GetInfo, _TPLexicon_Open, _TPToken_Close, _TPToken_DeleteResult, 
+                       _TPToken_GetResultData, _TPToken_GetResultInfo, _TPToken_Open, 
+                       _TPToken_Tokenize ]
+...

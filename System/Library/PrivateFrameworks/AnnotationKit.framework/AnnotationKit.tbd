@@ -1,0 +1,45 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           16F06EC3-705F-324B-A04A-D77ED6C9CCC1
+  - target:          x86_64-ios-simulator
+    value:           7065D29F-B8B5-33FB-9E6C-CA2DDDEF1CA5
+  - target:          arm64-ios-simulator
+    value:           CDB700F9-5ACF-3D4F-AA1D-B9DFD5EB1A25
+install-name:    '/System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AKAdornmentZPositionOffset, _AKAnnotationChangeObjectKey, 
+                       _AKAnnotationLayerSetupCompleteNotification, _AKAnnotationPropertiesChangedNotification, 
+                       _AKAnnotationsAddedOrRemovedNotification, _AKAttributeControllerInkDidChangeNotification, 
+                       _AKChildAnnotationUUIDAssociatedObjectKey, _AKContentScrollViewEndScrollOrMagnifyNotification, 
+                       _AKContentScrollViewVisibleRectChangeNotification, _AKControllerDrawingGestureRecognizerNeedsDependencyUpdate, 
+                       _AKControllerWillSaveNotification, _AKControllerWillTeardownNotification, 
+                       _AKDidEndEditingTextAnnotationNotification, _AKEditingTextAnnotationKey, 
+                       _AKLog, _AKParentAnnotationUUIDAssociatedObjectKey, _AKPointOfInterestRadius_Handle_Alternate, 
+                       _AKPointOfInterestSize_Handle, _AKPointOfInterestSize_LargestHandleSize, 
+                       _AKQuadrilateralCreateDictionaryRepresentation, _AKQuadrilateralMakeWithDictionaryRepresentation, 
+                       _AKRawDataForCoder, _AKSelectionChangedNotification, _AKSelectionChangedPageModelControllerKey, 
+                       _AKSidecarMarkupGetApplicationFromDictionary, _AKStatisticsDocumentTypeImage, 
+                       _AKStatisticsDocumentTypePDF, _AKWillBeginEditingTextAnnotationNotification, 
+                       _AKZeroQuadrilateral ]
+    objc-classes:    [ AKActionController, AKAnnotation, AKAnnotationEventHandler, 
+                       AKAnnotationPointOfInterestHelper, AKAnnotationRenderer, AKArrowAnnotation, 
+                       AKArrowShapeAnnotation, AKAttributeController, AKBorderMaskAnnotation, 
+                       AKController, AKControllerForTesting, AKCropAnnotation, AKDoodleAnnotation, 
+                       AKGeometryHelper, AKHeartAnnotation, AKHighlightAnnotation, 
+                       AKImageAnnotation, AKInkAnnotation, AKInkAnnotation2, AKInkSignatureView, 
+                       AKLayerPresentationManager, AKLoupeAnnotation, AKMainEventHandler, 
+                       AKModelController, AKNoteAnnotation, AKOvalAnnotation, AKOverlayView, 
+                       AKPageController, AKPageControllerForTesting, AKPageModelController, 
+                       AKPolygonAnnotation, AKPopupAnnotation, AKRectAnnotation, 
+                       AKRectangularShapeAnnotation, AKRedactionRectAnnotation, AKSecureSerializationHelper, 
+                       AKShapeAnnotation, AKSidecarController, AKSignature, AKSignatureAnnotation, 
+                       AKSignatureView, AKSparseMutableControllerArray, AKSpeechBubbleAnnotation, 
+                       AKStarAnnotation, AKStarAnnotationRenderer, AKStrokedAnnotation, 
+                       AKTextAnnotationAttributeHelper, AKTextBoxAnnotation, AKTextFieldAnnotation, 
+                       AKThoughtBubbleAnnotation, AKToolbarView, AKToolbarViewController, 
+                       AKTriangleAnnotation, AKUndoController ]
+...

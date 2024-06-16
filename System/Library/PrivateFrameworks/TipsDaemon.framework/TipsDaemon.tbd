@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           9C609A29-383D-32CD-8D7C-F12EC861DB06
+  - target:          arm64-ios-simulator
+    value:           F7519AB2-1A98-3388-88B8-F1392DB655E5
+install-name:    '/System/Library/PrivateFrameworks/TipsDaemon.framework/TipsDaemon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _TPSContextualEventSinceDateGracePeriod, _TPSDeliveryPreconditionRootKey, 
+                       _TPSTipsManagerErrorDomain, _TipsDaemonVersionNumber, _TipsDaemonVersionString ]
+    objc-classes:    [ TPSAnalyticsEventProcessedUsageEvents, TPSAnalyticsHistoricTipsDataProcessor, 
+                       TPSAnalyticsProcessingController, TPSAnalyticsProcessor, TPSAnalyticsUsageEventsProcessor, 
+                       TPSAnalyticsUsageInfo, TPSAppStoreRegionValidation, TPSAppStoreRegionsCondition, 
+                       TPSAppleArcadeValidation, TPSAppleCardSetupValidation, TPSApplePayActivationValidation, 
+                       TPSApplePayPeerValidation, TPSApplePaySetupValidation, TPSBetaUserValidation, 
+                       TPSBlockValidation, TPSBluetoothChecker, TPSCapability, TPSCloudAccountChecker, 
+                       TPSCloudAccountValidation, TPSCloudBackupValidation, TPSCloudController, 
+                       TPSCloudDeviceInfo, TPSCloudDeviceValidation, TPSCloudDevicesCondition, 
+                       TPSCloudDriveValidation, TPSCloudFindMyValidation, TPSCloudMusicCatalogPlaybackValidation, 
+                       TPSCloudPhotoLibraryValidation, TPSCondition, TPSContextualCondition, 
+                       TPSContextualEventValidation, TPSContextualInfo, TPSContextualRule, 
+                       TPSCustomCapabilityValidationBuilder, TPSDeliveryNotification, 
+                       TPSDeliveryPrecondition, TPSDeviceCapability, TPSDeviceCapabilityCondition, 
+                       TPSDeviceCapabilityValidation, TPSDeviceValidation, TPSDevicesCondition, 
+                       TPSDiscoverabilityController, TPSDualSimValidation, TPSEventsHistoryController, 
+                       TPSExcludeAppsValidation, TPSExtendedKeyboardValidation, TPSGestaltValidation, 
+                       TPSHRAccountInfoStatusValidation, TPSHandwritingKeyboardValidation, 
+                       TPSHeySiriValidation, TPSHomeAccessoriesValidation, TPSHomeSetupValidation, 
+                       TPSInclusivityCondition, TPSInclusivityInfo, TPSInclusivityValidation, 
+                       TPSInstalledAppInfo, TPSInstalledAppsCondition, TPSInstalledAppsValidation, 
+                       TPSInstalledKeyboardValidation, TPSKeyboardUtilities, TPSMedicalIDValidation, 
+                       TPSMultiLanguageValidation, TPSNRDeviceCapability, TPSNRDeviceCapabilityCondition, 
+                       TPSNRDeviceCapabilityValidation, TPSNRElectrocardiogramValidation, 
+                       TPSNRFallDetectionValidation, TPSNotificationCache, TPSNotificationController, 
+                       TPSPairedCarPlayValidation, TPSPairedDeviceValidation, TPSPairedDevicesCondition, 
+                       TPSPairedHomePodValidation, TPSPairedWatchValidation, TPSPeopleSuggestionValidation, 
+                       TPSPreferredLanguageValidation, TPSProactiveSuggestion, TPSRegionsCondition, 
+                       TPSRegionsValidation, TPSScreenTimeCloudValidation, TPSScreenTimeValidation, 
+                       TPSSiriEnabledValidation, TPSSiriLanguageValidation, TPSSiriLanguagesCondition, 
+                       TPSSiriSystemLanguageMatchValidation, TPSSpatialAudioValidation, 
+                       TPSTargetingCache, TPSTargetingValidateOperation, TPSTargetingValidation, 
+                       TPSTargetingValidator, TPSTinkerValidation, TPSTipsManager, 
+                       TPSUserNotification, TPSUserTypeCondition, TPSUserTypesValidation, 
+                       TPSWelcomeDocument ]
+...

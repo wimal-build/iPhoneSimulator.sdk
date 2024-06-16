@@ -1,11 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 06F7F3C2-5D89-364F-95CF-C9051BFD4CE2' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F7C1BE81-9C94-3333-A45A-B8910A871D85
+  - target:          arm64-ios-simulator
+    value:           B214998C-32C6-3C64-8E74-C0EA193693D6
 install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration'
-exports:         
-  - archs:           [ i386, x86_64 ]
-    symbols:         [ _AEAssessmentErrorDomain, _AEError, _AEErrorUnderlyingError, 
-                       _AEErrorUserInfo ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AEAssessmentErrorDomain ]
     objc-classes:    [ AEAssessmentConfiguration, AEAssessmentSession ]
 ...

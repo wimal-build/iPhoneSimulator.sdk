@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           531C376C-F2FF-3272-BE13-55BF99C48BB3
+  - target:          arm64-ios-simulator
+    value:           5C381530-128E-3587-958C-55F7ECABF5E9
+install-name:    '/System/Library/PrivateFrameworks/PDS.framework/PDS'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PDSCDCacheErrorDomain, _PDSInternalClientIDEntitlementKey, 
+                       _PDSInternalDaemonMachServiceName, _PDSInternalToolEntitlementKey, 
+                       _PDSInternalWildcardClientID, _PDSRegistrarErrorDomain, _PDSStringForEntryState, 
+                       _PDSUserErrorDomain, _PDSXPCErrorDomain, _pds_defaultLog, 
+                       _pds_oversizedLog ]
+    objc-classes:    [ PDSEntry, PDSRegistrar, PDSRegistration, PDSRemoteRegistry, 
+                       PDSUser, PDSXPCAdapter, PDSXPCConnector, PDSXPCInterface ]
+...

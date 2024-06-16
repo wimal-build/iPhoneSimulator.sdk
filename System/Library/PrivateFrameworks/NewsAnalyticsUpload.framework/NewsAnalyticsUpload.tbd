@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           ACB44252-4895-3B69-9D62-D7A54F2B51CA
+  - target:          arm64-ios-simulator
+    value:           5A677246-E8D0-3085-B558-787AB05869E0
+install-name:    '/System/Library/PrivateFrameworks/NewsAnalyticsUpload.framework/NewsAnalyticsUpload'
+allowable-clients:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ News, NewsAnalytics, NewsAnalyticsUploadTests, NewsServices, 
+                       NewsServicesInternal, Stocks, newsd ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NAUAnalyticsEnvelopeTrackerContentTypeIsSupported, _NDAnalyticsEntryCanBeUploaded, 
+                       _NDAnalyticsEntryDeliveryWindow, _NDAnalyticsEntryDeliveryWindowEarlierDate, 
+                       _NDAnalyticsEnvelopeContentTypesFromEntries, _NDAnalyticsEnvelopeStoreEntriesFromStringRepresentations, 
+                       _NDAnalyticsEnvelopeStoreStringRepresentationsOfEntries, _NDAnalyticsEnvelopeSubmissionDatesByContentType, 
+                       _NDSharedClientLog, _NDSharedServiceLog, _NewsAnalyticsUploadVersionNumber, 
+                       _NewsAnalyticsUploadVersionString ]
+    objc-classes:    [ NAUAnalyticsEnvelopeTracker, NDAnalyticsEnvelopeManager, NDAnalyticsEnvelopeStore, 
+                       NDAnalyticsEnvelopeStoreEntry, NDAnalyticsPayloadAssembler, 
+                       NDAnalyticsPayloadInfo, NDAnalyticsPayloadUploader, NDAnalyticsUploadScheduler, 
+                       NDAppConfigAnalyticsPayloadAssemblerConfigProvider ]
+...

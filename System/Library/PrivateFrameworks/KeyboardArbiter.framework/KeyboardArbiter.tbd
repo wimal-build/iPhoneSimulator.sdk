@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           DDD95BCA-6B6D-3608-BD00-20B79B1E88DD
+  - target:          x86_64-ios-simulator
+    value:           9CD5DC88-C3E9-3E7C-B2B2-7E40C1992DA3
+  - target:          arm64-ios-simulator
+    value:           134FE605-7935-39A3-A096-0CD10DC9346D
+install-name:    '/System/Library/PrivateFrameworks/KeyboardArbiter.framework/KeyboardArbiter'
+current-version: 3987.0.109
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ __UIKeyboardArbiter_ForSpringBoard_WorkspaceIdentifier ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __UIArbiterLog, __UIKeyboardArbiter_SceneIdentifier ]
+    objc-classes:    [ _UIKeyboardArbiter, _UIKeyboardArbiter_ForSpringBoard ]
+...

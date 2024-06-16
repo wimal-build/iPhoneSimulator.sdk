@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C89898AF-23A8-3C01-B7F0-BA2785BF93EE
+  - target:          x86_64-ios-simulator
+    value:           C758ED77-1435-3BF7-9DD4-1274C7FC564D
+  - target:          arm64-ios-simulator
+    value:           5E15D764-7918-3ABE-A498-6703E757BF76
+install-name:    '/System/Library/PrivateFrameworks/BaseBoardUI.framework/BaseBoardUI'
+current-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BSIntervalInterpolatorInvertUIRubberBanding, _BSIntervalInterpolatorUIRubberBanding, 
+                       _BSUIBaseBoardUIVersionNumber, _BSUIBaseBoardUIVersionString, 
+                       _BSUIConstrainValueToIntervalWithRubberBand, _BSUIConstrainValueWithRubberBand, 
+                       _BSUIInvertRubberBandValue, _BSUIInvertRubberBandValueForInterval, 
+                       _BSUISurfaceImageWithColorSpaceAndDrawBlock, _BSUISurfaceWithColorSpaceAndDrawBlock, 
+                       __BSUI_Private_IsN84 ]
+    objc-classes:    [ BSUIAnimationFactory, BSUIAnimationFactoryDomain, BSUIAnimationFactorySettings, 
+                       BSUIBackdropView, BSUICAPackageView, BSUIDateLabelFactory, 
+                       BSUIDefaultDateLabel, BSUIEmojiLabelView, BSUIFontProvider, 
+                       BSUIMappedImageCache, BSUIMappedImageCacheFuture, BSUIMappedImageCacheOptions, 
+                       BSUIMappedSurfaceImage, BSUIRelativeDateLabel, BSUIResolutionClass, 
+                       BSUIScrollView, _BSUIAnimationAttributesFactory ]
+...

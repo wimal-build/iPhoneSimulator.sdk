@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4238CA04-A3AD-3D87-AB79-57F1D919D195', 'x86_64: 3B44BA5A-4D75-38BB-80EE-246FAAA369C5' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           B2529A94-A3DC-3298-BAED-0AC0F940E5D9
+  - target:          x86_64-ios-simulator
+    value:           94200FE9-F532-3336-9D5A-D2B4330CEAD7
+  - target:          arm64-ios-simulator
+    value:           45381F7F-280B-3A43-A25E-E03516FDAF21
 install-name:    '/usr/lib/libBacktraceRecording.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___introspection_dispatch_get_queues, ___introspection_dispatch_item_info_data_offset, 
                        ___introspection_dispatch_item_info_version, ___introspection_dispatch_queue_get_pending_items, 
                        ___introspection_dispatch_queue_info_data_offset, ___introspection_dispatch_queue_info_version, 

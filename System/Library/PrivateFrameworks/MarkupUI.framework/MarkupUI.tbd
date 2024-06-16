@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           B925BA42-CFAF-3BF7-B390-D2A4486F5E0B
+  - target:          x86_64-ios-simulator
+    value:           26B3A6B9-2A39-3806-BC67-E873F4B30C05
+  - target:          arm64-ios-simulator
+    value:           CC76F775-C37B-31DD-875C-60FCE7FDB7C9
+install-name:    '/System/Library/PrivateFrameworks/MarkupUI.framework/MarkupUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MUAnimationIconImage, _MUAnimationMaskRect, _MUAnimationSourceRect, 
+                       _MUAnimationTargetRect, _MUDisplayAsFullScreen, _MUEncryptPrivateMetadata, 
+                       _MUFileDisplayName ]
+    objc-classes:    [ MUCGPDFAnnotationAdaptor, MUCGPDFNukeAndPaveWriter, MUContentViewController, 
+                       MUImageContentViewController, MUImageDownsamplingUtilities, 
+                       MUPDFContentViewController, MURemoteViewController, MarkupViewController ]
+...

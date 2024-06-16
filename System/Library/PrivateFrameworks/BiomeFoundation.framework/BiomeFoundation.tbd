@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           45270192-4FB9-3BB0-822D-82F8015CF598
+  - target:          arm64-ios-simulator
+    value:           4578AE97-A183-33D6-94BE-370568A0B891
+install-name:    '/System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BMAbsoluteTimeFromCFAbsoluteTime, _BMAbsoluteTimeFromContinuousTime, 
+                       _BMAbsoluteTimeGetCurrent, _BMAbsoluteTimeGetOffsets, _BMAbsoluteTimeInitWithSyntheticStart, 
+                       _BMAbsoluteTimeSetSyntheticStartFromRemoteTime, _BMAbsoluteTimeToCFAbsoluteTime, 
+                       _BMArbitraryTimestampToCFAbsoluteTime, _BiomeFoundationVersionNumber, 
+                       _BiomeFoundationVersionString, ___biome_log_create, ___biome_log_create_for_category ]
+    objc-classes:    [ BMCoreAnalyticsEvents ]
+...

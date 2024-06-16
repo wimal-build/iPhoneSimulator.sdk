@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EBB2E46A-02D6-320B-AA7A-7EB99A82AAB6
+  - target:          arm64-ios-simulator
+    value:           806FED95-C566-346C-8FF6-71426D826539
+install-name:    '/System/Library/PrivateFrameworks/GraphVisualizer.framework/GraphVisualizer'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ GVNode.h, GVNode.inNodes, GVNode.inPriority, GVNode.index, 
+                       GVNode.next, GVNode.outNodes, GVNode.outPriority, GVNode.prev, 
+                       GVNode.rank, GVNode.w, GVNode.x, GVNode.y ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ GVEdge, GVGraph, GVInternalRenderer, GVLayout, GVNode ]
+...

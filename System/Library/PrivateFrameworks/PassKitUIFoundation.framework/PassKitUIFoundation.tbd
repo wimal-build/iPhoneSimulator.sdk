@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           97CFA6E7-21DD-3FF8-8858-4862489368CD
+  - target:          x86_64-ios-simulator
+    value:           844896E2-BA18-3C08-B981-D5BA4D9D35B6
+  - target:          arm64-ios-simulator
+    value:           1235A3BA-89EC-3916-9314-06B24319C048
+install-name:    '/System/Library/PrivateFrameworks/PassKitUIFoundation.framework/PassKitUIFoundation'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ PKCheckGlyphLayer ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PKGlyphViewSize, _PKMatrixForRotationAroundXAxis, _PKMatrixForRotationAroundYAxis, 
+                       _PKMatrixForScale, _PKMatrixIdentity ]
+    objc-classes:    [ PK3DCardView, PKAuthenticator, PKAuthenticatorEvaluationRequest, 
+                       PKAuthenticatorEvaluationResponse, PKCategoryVisualizationCardView, 
+                       PKDisplayLinkTargetProxy, PKFingerprintGlyphView, PKGlyphView, 
+                       PKMotionManager, PKPassFaceViewCategoryVisualizationRendererState, 
+                       PKPassFaceViewRendererState, PKPaymentRemoteInstrumentThumbnailView, 
+                       PKPeerPayment3DCharacter, PKPeerPayment3DScene, PKPeerPayment3DStore, 
+                       PKPeerPayment3DTextView, PKPhoneGlyphLayer, PKRenderLoop, 
+                       PKUISpringAnimationFactory ]
+...

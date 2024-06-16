@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0DA86DC7-7ACB-3C27-8FB4-27B4B11E1B25
+  - target:          x86_64-ios-simulator
+    value:           5671F9F3-DCC3-3ACB-BD14-F3D1F34D864C
+  - target:          arm64-ios-simulator
+    value:           534C2242-0AB2-31D3-A414-CB44F969B555
+install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/MechanismBase.framework/MechanismBase'
+current-version: 827.0.6
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _MechanismBaseVersionNumber, _MechanismBaseVersionString ]
+    objc-classes:    [ MechanismUI ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ ACMContextRecord, MechanismACM, MechanismBase, MechanismContext, 
+                       MechanismKofN, MechanismKofNReorganizer, RemoteUIManager, 
+                       RemoteUIParams ]
+...

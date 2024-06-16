@@ -1,0 +1,52 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           649C023B-F070-3158-B530-FB3C37F746C5
+  - target:          x86_64-ios-simulator
+    value:           E1FCC860-AF74-3414-939A-0EC7A74BBA5D
+  - target:          arm64-ios-simulator
+    value:           4898A289-48FD-3566-809D-4A2D38B0C85B
+install-name:    '/System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage'
+current-version: 322
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _GSAdditionCreationDisplayNameKey, _GSAdditionCreationInfoValidate, 
+                       _GSAdditionCreationKeepFileIDKey, _GSAdditionCreationNameKey, 
+                       _GSAdditionCreationNameSpaceKey, _GSAdditionCreationOnDuplicateKey, 
+                       _GSAdditionCreationOptionsKey, _GSAdditionCreationPOSIXNameKey, 
+                       _GSAdditionCreationUserInfoKey, _GSAdditionFieldNameSpaceKey, 
+                       _GSAdditionFieldOptionsKey, _GSAdditionFieldSizeKey, _GSAdditionFieldURLKey, 
+                       _GSArchiveTree, _GSDaemonConnectionClose, _GSDaemonInterface, 
+                       _GSDaemonProxy, _GSDocumentVersionsNameSpace, _GSGenerationalStorageErrorDomain, 
+                       _GSGetDocumentID, _GSLibraryAddGenerationWithOptionsByCopyingFile, 
+                       _GSLibraryAddGenerationWithOptionsByMovingFile, _GSLibraryCopyAllGenerationsInfos, 
+                       _GSLibraryCopyGeneration, _GSLibraryCopyGenerationInfoDictionary, 
+                       _GSLibraryCopyGenerationInfoValueForKey, _GSLibraryCopyGenerationInfos, 
+                       _GSLibraryCopyGenerationNames, _GSLibraryCopyGenerationOriginalDisplayName, 
+                       _GSLibraryCopyURLForGeneration, _GSLibraryCreateClientManaged, 
+                       _GSLibraryDestroyClientManaged, _GSLibraryDocumentDidSafeSave, 
+                       _GSLibraryDocumentWillSafeSave, _GSLibraryGetGenerationOptions, 
+                       _GSLibraryGetOrAllocateDocumentId, _GSLibraryGetStorageOptions, 
+                       _GSLibraryHasGenerationsForPaths, _GSLibraryInternalStatGeneration, 
+                       _GSLibraryPrivateTransferGenerationToClientName, _GSLibraryRemoveGenerations, 
+                       _GSLibraryResolveDocumentId2, _GSLibraryRestoreGeneration, 
+                       _GSLibrarySetGenerationInfoValueForKey, _GSLibrarySetGenerationOptions, 
+                       _GSLibrarySetGenerationOriginalDisplayName, _GSLibrarySetStorageOptions, 
+                       _GSLibraryTransferDocumentId, _GSMergeInfoValueDictionary, 
+                       _GSMutableInfoDictionary, _GSSetGenerationOptions, _GSSetInfoDictionary, 
+                       _GSSetOriginalDisplayName, _GSSetOriginalPOSIXName, _GSTrackDocument, 
+                       _GSUbiquitousConflictsNameSpace, __BeforePathRemove, __GSError, 
+                       __GSErrorForErrno, __GSErrorForStatus, __GSIsDocumentRevision, 
+                       __GSOpenByID, __GSSimVolRoot, __PathRename, __PathResolve, 
+                       __RemoveSubTrees, __RemoveTree, __SetBirthTimeSpecForFD, _get_volume_uuid, 
+                       _kGSLibraryErrorDomain, _mountpoint_url, _real_url ]
+    objc-classes:    [ GSAddition, GSDaemonProxySync, GSDocumentIdentifier, GSPermanentStorage, 
+                       GSStagingPrefix, GSStorageManager, GSTemporaryStorage ]
+    objc-ivars:      [ GSDaemonProxySync._error, GSDaemonProxySync._result, GSDaemonProxySync._target, 
+                       GSDocumentIdentifier.deviceID, GSDocumentIdentifier.documentID, 
+                       GSDocumentIdentifier.volumeUUID, GSStagingPrefix._deviceID, 
+                       GSStagingPrefix._extension, GSStagingPrefix._path, GSStagingPrefix._pathComponents, 
+                       GSStagingPrefix._sandboxHandle, GSStagingPrefix._volumeUUID ]
+...

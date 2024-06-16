@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DC89AD49-A38C-3C5B-92C6-2930BA52819B
+  - target:          arm64-ios-simulator
+    value:           FFB30ECB-D8C6-3C4D-9D72-50EC4D8FEB10
+install-name:    '/usr/lib/log/liblog_geo.dylib'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _OSLogCopyFormattedString, _OSStateCreateStringWithData ]
+...

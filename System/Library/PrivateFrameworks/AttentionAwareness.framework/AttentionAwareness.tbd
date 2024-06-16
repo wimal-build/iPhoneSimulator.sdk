@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           25E6E047-5892-3011-98FD-6911A2DAB041
+  - target:          arm64-ios-simulator
+    value:           FAF9E74D-9CFE-3255-9F8E-103A5846D6AC
+install-name:    '/System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness'
+current-version: 84
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __AWAttentionServiceEventFilterFactory ]
+    objc-classes:    [ AWAttentionAwarenessClient, AWAttentionAwarenessConfiguration, 
+                       AWAttentionEvent, AWAttentionLostEvent, AWFaceDetectAttentionEvent, 
+                       AWRemoteAttentionEvent ]
+...

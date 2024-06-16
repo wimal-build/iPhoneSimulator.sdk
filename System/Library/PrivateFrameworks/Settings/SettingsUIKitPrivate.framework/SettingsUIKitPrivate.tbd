@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           51DF5E9A-E0B5-309C-86F7-45FDECD0B862
+  - target:          arm64-ios-simulator
+    value:           35A160A1-6049-34BA-B00D-74325CC3558D
+install-name:    '/System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework/SettingsUIKitPrivate'
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryC010thirdPartyA22ControllerForSpecifier9specifierSo06UIViewH0CSo11PSSpecifierC_tFZ', 
+                       '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryC010thirdPartyA22ControllerForSpecifier9specifierSo06UIViewH0CSo11PSSpecifierC_tFZTq', 
+                       '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryCACycfC', 
+                       '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryCACycfc', 
+                       '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryCMa', '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryCMn', 
+                       '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryCN', '_$s20SettingsUIKitPrivate22SUIKPControllerFactoryCfD', 
+                       '_$s7SwiftUI11ColorSchemeO20SettingsUIKitPrivateE2idACvg', 
+                       '_$s7SwiftUI11ColorSchemeO20SettingsUIKitPrivateE2idACvpMV', 
+                       '_$s7SwiftUI11ColorSchemeOs12Identifiable20SettingsUIKitPrivateMc', 
+                       '_$s7SwiftUI19ContentSizeCategoryO20SettingsUIKitPrivateE11descriptionSSvg', 
+                       '_$s7SwiftUI19ContentSizeCategoryO20SettingsUIKitPrivateE11descriptionSSvpMV', 
+                       '_$s7SwiftUI19ContentSizeCategoryO20SettingsUIKitPrivateE2idACvg', 
+                       '_$s7SwiftUI19ContentSizeCategoryO20SettingsUIKitPrivateE2idACvpMV', 
+                       '_$s7SwiftUI19ContentSizeCategoryOs12Identifiable20SettingsUIKitPrivateMc', 
+                       '_$s7SwiftUI19ContentSizeCategoryOs23CustomStringConvertible20SettingsUIKitPrivateMc', 
+                       '_$sSo11PSSpecifierC20SettingsUIKitPrivateE16objectWillChangeSo20NSNotificationCenterC10FoundationE9PublisherVvg', 
+                       '_$sSo11PSSpecifierC20SettingsUIKitPrivateE16objectWillChangeSo20NSNotificationCenterC10FoundationE9PublisherVvpMV', 
+                       '_$sSo11PSSpecifierC20SettingsUIKitPrivateE2idSSvg', '_$sSo11PSSpecifierC20SettingsUIKitPrivateE2idSSvpMV', 
+                       '_$sSo11PSSpecifierC7Combine16ObservableObject20SettingsUIKitPrivateMc', 
+                       '_$sSo11PSSpecifierCs12Identifiable20SettingsUIKitPrivateMc', 
+                       '_$sSo21PSSpecifierControllerC20SettingsUIKitPrivateE16objectWillChangeSo20NSNotificationCenterC10FoundationE9PublisherVvg', 
+                       '_$sSo21PSSpecifierControllerC20SettingsUIKitPrivateE16objectWillChangeSo20NSNotificationCenterC10FoundationE9PublisherVvpMV', 
+                       '_$sSo21PSSpecifierControllerC7Combine16ObservableObject20SettingsUIKitPrivateMc' ]
+    objc-classes:    [ _TtC20SettingsUIKitPrivate22SUIKPControllerFactory ]
+...

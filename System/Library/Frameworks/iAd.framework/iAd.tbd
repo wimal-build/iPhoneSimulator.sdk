@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D7C396A4-787B-33D1-8E7E-5A5B74161757', 'x86_64: 910C7586-980B-3399-B318-91E414E71D2D' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           6B078F5F-D1B1-34E7-B8C4-1A2ED289331A
+  - target:          x86_64-ios-simulator
+    value:           9A8C1CA1-5580-3A38-994D-74228D61EDEF
+  - target:          arm64-ios-simulator
+    value:           0C27E28E-3835-3EB6-9023-CB818D3AD4E6
 install-name:    '/System/Library/Frameworks/iAd.framework/iAd'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _ADClassicMode, _ADClientSegmentDataErrorDomain, _ADCreateScreenImageWithOrientation, 
                        _ADCreativeTypeShouldCycle, _ADCreativeViewErrorDomain, _ADFrameForInterstitialWithClampedSize, 
                        _ADLandscapeBannerSize, _ADPortraitBannerSize, _ADPrivacyViewControllerErrorDomain, 
@@ -19,7 +25,7 @@ exports:
                        ADTVMediaButton, ADTVMediaControlsView, ADTVMediaControlsViewController, 
                        ADTVMediaCountdownView, ADTVMediaSkipView, ADTVPrerollController, 
                        ADTVPrerollVideoView, ADTapGestureTimer ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ADBannerContentSizeIdentifier320x50, _ADBannerContentSizeIdentifier480x32, 
                        _ADBannerContentSizeIdentifierLandscape, _ADBannerContentSizeIdentifierPortrait, 
                        _ADCanStealControllerForCreativeType, _ADClampedBannerSize, 

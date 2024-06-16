@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 806E8754-BE82-33F1-ADC5-C665F2028F24', 'x86_64: 57F13368-094E-3B63-AB6A-310ED610F3F9' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           5E8890CC-DEAE-3C90-8DB5-79E1592E2259
+  - target:          x86_64-ios-simulator
+    value:           87FC5651-BFF7-315D-94CD-C60E541E9004
+  - target:          arm64-ios-simulator
+    value:           F8C89182-C8BD-399D-8E2E-9E4AAE8A8AD0
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/OpenGLES'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _EAGLGetCurrentMacroContextPrivate, _EAGLGetVersion, _GLCBackDispatch, 
                        _GLCFrontDispatch, _GLCGetProfilerStorage, _GLCRestoreDispatch, 
                        _GLCRestoreDispatchFunction, _GLCSelectDispatchBounded, _GLCSelectDispatchFunction, 

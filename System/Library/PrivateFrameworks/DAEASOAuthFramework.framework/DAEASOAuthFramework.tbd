@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           D51FE430-36AE-310B-9423-490758325342
+  - target:          x86_64-ios-simulator
+    value:           DD7BAD70-930E-37BA-B5B5-2505ECE2AD88
+  - target:          arm64-ios-simulator
+    value:           9B320AD8-8846-38DB-99EC-9FA0E9DCCF47
+install-name:    '/System/Library/PrivateFrameworks/DAEASOAuthFramework.framework/DAEASOAuthFramework'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _JWTClockSkew ]
+    objc-classes:    [ DAEASOAuthClient, DAEASOAuthFlowController, DAEASOAuthIdentity, 
+                       DAEASOAuthJWTValidator, DAEASOAuthMigrationRequest, DAEASOAuthPKCEChallenge, 
+                       DAEASOAuthRequest, DAEASOAuthTokenRefreshResponse, DAEASOAuthTokenRequest, 
+                       DAEASOAuthTokenResponse, DAEASOAuthWebViewController, DAEASOpenIDMetadataRequest, 
+                       DAEASOpenIDMetadataResponse, DAExchangeOAuthFlowController, 
+                       DAOAuthSafariViewController ]
+...

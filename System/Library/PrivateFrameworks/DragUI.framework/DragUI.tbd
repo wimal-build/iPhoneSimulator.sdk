@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           8A5E8EA9-AF77-38D9-A7A0-DB384CC9EC13
+  - target:          arm64-ios-simulator
+    value:           430DC33F-5DA7-3E7C-8896-58B25F60AC82
+install-name:    '/System/Library/PrivateFrameworks/DragUI.framework/DragUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ DRPasteAnnouncementEndpoint._localizedName ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _DRLogTarget, _DRPasteAnnouncementAccessibilityValueKey, _DRPasteAnnouncementEntitlement, 
+                       _DRPasteAnnouncementServiceName ]
+    objc-classes:    [ DRPasteAnnouncement, DRPasteAnnouncementApplicationEndpoint, 
+                       DRPasteAnnouncementContinuityEndpoint, DRPasteAnnouncementEndpoint ]
+...

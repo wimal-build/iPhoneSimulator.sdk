@@ -1,47 +1,61 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1D19A48E-DBBF-391C-BCE6-5D00717056B1', 'x86_64: 19915973-BB06-379E-8CC4-7796F9130925' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A3CEFFE5-1579-3843-9E3C-200BF4CB0BB3
+  - target:          x86_64-ios-simulator
+    value:           67D3B2DC-B7E8-36C0-BA8B-1677519A41BA
+  - target:          arm64-ios-simulator
+    value:           BADE55FD-B8FD-3F59-AD4E-9F7288E1B788
 install-name:    '/System/Library/Frameworks/Social.framework/Social'
 current-version: 87
-exports:         
-  - archs:           [ i386 ]
-    symbols:         [ _SLOpenGraphNodeChanged ]
-    objc-classes:    [ SLGoogleAuthFlowController, SLGoogleClient, SLGoogleUserInfoRequest, 
-                       SLGoogleWebAuthIdentity, SLLastAccountManager, SLOpenGraphNode, 
-                       SLRemoteServicePlistLoader, SLSheetAction, SLYahooAuthFlowController, 
-                       SLYahooClient, SLYahooOAuth2TokenRequest, SLYahooOAuth2TokenResponse, 
-                       SLYahooWebAuthIdentity, SLYouTubeAuthFlowController ]
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _SLFacebookErrorDomain, _SLFlickrErrorDomain, _SLOpenGraphNodeChanged, 
+                       _SLTencentWeiboAPIErrorAPILimitDomain, _SLTencentWeiboAPIErrorAuthorizationDomain, 
+                       _SLTencentWeiboAPIErrorCodeKey, _SLTencentWeiboAPIErrorDomain, 
+                       _SLTencentWeiboAPIErrorFakeUserDomain, _SLTencentWeiboAPIErrorInternalServerDomain, 
+                       _SLTencentWeiboAPIErrorMessageKey, _SLTencentWeiboAPIErrorParameterDomain, 
+                       _SLTencentWeiboAPIErrorTypeKey, _SLTencentWeiboAPIErrorUserDomain, 
+                       _SLTencentWeiboErrorDomain, _SLTwitterErrorDomain, _WEErrorDomain ]
+    objc-classes:    [ SLAggregateLogger, SLAssetDataProvider, SLFacebookAlbumManager, 
+                       SLFacebookAuthorizationRequest, SLFacebookBatchResponse, SLFacebookComposeViewController, 
+                       SLFacebookLoginInfoViewController, SLFacebookLoginRequest, 
+                       SLFacebookPermissionDescriptionRequest, SLFacebookPlaceManager, 
+                       SLFacebookPost, SLFacebookPostPrivacyCategory, SLFacebookPostPrivacyManager, 
+                       SLFacebookPostPrivacySetting, SLFacebookRegistrationInfo, 
+                       SLFacebookRegistrationRequest, SLFacebookRenewTokenRequest, 
+                       SLFacebookResponse, SLFacebookUpload, SLGoogleAuthFlowController, 
+                       SLGoogleClient, SLGoogleUserInfoRequest, SLGoogleWebAuthIdentity, 
+                       SLInternalTencentWeiboRequest, SLLastAccountManager, SLOpenGraphNode, 
+                       SLRemoteServicePlistLoader, SLSheetAction, SLTencentWeiboServerInterface, 
+                       SLTencentWeiboSession, SLTencentWeiboUserRecord, SLTwitterRequest, 
+                       SLTwitterReverseAuthRequest, SLTwitterSession, SLTwitterUserRecord, 
+                       SLWeiboServerInterface, SLWeiboSession, SLWeiboUserRecord, 
+                       SLYahooAuthFlowController, SLYahooClient, SLYahooOAuth2TokenRequest, 
+                       SLYahooOAuth2TokenResponse, SLYahooWebAuthIdentity, SLYouTubeAuthFlowController ]
+    objc-ivars:      [ SLFacebookLoginInfoViewController._footerView, SLFacebookLoginRequest._account, 
+                       SLFacebookRegistrationRequest._registrationInfo ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SLAttachmentPayloadIsAssetLibraryURL, _SLAttachmentPayloadIsVideoFileURL, 
                        _SLCreateThumbnailImageForImageData, _SLDownSampledImageData, 
                        _SLErrorDomain, _SLFacebookEnvironmentDidChangeNotification, 
-                       _SLFacebookErrorDomain, _SLFacebookGraphAPIShouldUseBetaKey, 
-                       _SLFacebookIgnoreAccessRequests, _SLFacebookLikeInfoFriendCountKey, 
-                       _SLFacebookLikeInfoFriendsKey, _SLFacebookLikeInfoGlobalCountKey, 
-                       _SLFacebookLikeInfoMeKey, _SLFacebookPostPrivacyManagerErrorDomain, 
+                       _SLFacebookGraphAPIShouldUseBetaKey, _SLFacebookIgnoreAccessRequests, 
+                       _SLFacebookLikeInfoFriendCountKey, _SLFacebookLikeInfoFriendsKey, 
+                       _SLFacebookLikeInfoGlobalCountKey, _SLFacebookLikeInfoMeKey, 
                        _SLFacebookPreferencesAppID, _SLFacebookRESTAPIShouldUseBetaKey, 
-                       _SLFacebookVideoUploadSupportEnabledKey, _SLFlickrErrorDomain, 
-                       _SLHideNetworkActivityIndicatorNotification, _SLLinkedInEnvironmentDidChangeNotification, 
-                       _SLLinkedInIgnoreAccessRequests, _SLLinkedInPreferencesAppID, 
-                       _SLLogLevelKey, _SLOutputLevelKey, _SLServiceMain, _SLServiceTypeFacebook, 
-                       _SLServiceTypeFacebookInternal, _SLServiceTypeFlickr, _SLServiceTypeLinkedIn, 
-                       _SLServiceTypeLinkedInInternal, _SLServiceTypeSinaWeibo, _SLServiceTypeSinaWeiboInternal, 
+                       _SLFacebookVideoUploadSupportEnabledKey, _SLHideNetworkActivityIndicatorNotification, 
+                       _SLLinkedInEnvironmentDidChangeNotification, _SLLinkedInIgnoreAccessRequests, 
+                       _SLLinkedInPreferencesAppID, _SLLogLevelKey, _SLOutputLevelKey, 
+                       _SLServiceMain, _SLServiceTypeFacebook, _SLServiceTypeFacebookInternal, 
+                       _SLServiceTypeFlickr, _SLServiceTypeLinkedIn, _SLServiceTypeLinkedInInternal, 
+                       _SLServiceTypeSinaWeibo, _SLServiceTypeSinaWeiboInternal, 
                        _SLServiceTypeTencentWeibo, _SLServiceTypeTencentWeiboInternal, 
                        _SLServiceTypeTudou, _SLServiceTypeTwitter, _SLServiceTypeTwitterInternal, 
                        _SLServiceTypeVimeo, _SLServiceTypeYouku, _SLShowNetworkActivityIndicatorNotification, 
-                       _SLSocialFrameworkBundle, _SLTencentWeiboAPIError, _SLTencentWeiboAPIErrorAPILimitDomain, 
-                       _SLTencentWeiboAPIErrorAuthorizationDomain, _SLTencentWeiboAPIErrorAuthorizationError, 
-                       _SLTencentWeiboAPIErrorCode, _SLTencentWeiboAPIErrorCodeKey, 
-                       _SLTencentWeiboAPIErrorDomain, _SLTencentWeiboAPIErrorFakeUserDomain, 
-                       _SLTencentWeiboAPIErrorInternalServerDomain, _SLTencentWeiboAPIErrorInternalServerError, 
-                       _SLTencentWeiboAPIErrorMessageKey, _SLTencentWeiboAPIErrorParameterDomain, 
-                       _SLTencentWeiboAPIErrorParameterError, _SLTencentWeiboAPIErrorTypeKey, 
-                       _SLTencentWeiboAPIErrorUserDomain, _SLTencentWeiboAccessError, 
-                       _SLTencentWeiboAccountCreationError, _SLTencentWeiboError, 
-                       _SLTencentWeiboErrorDomain, _SLTencentWeiboLoginError, _SLTencentWeiboRevokeError, 
-                       _SLTwitterErrorDomain, _SLUserDataDirectory, _SLUserLibraryDirectory, 
-                       _WEErrorDomain, __SLAttachmentURLForAsset, __SLLog, __kSLPlugInAttributeSocialKey, 
+                       _SLSocialFrameworkBundle, _SLUserDataDirectory, _SLUserLibraryDirectory, 
+                       __SLAttachmentURLForAsset, __SLLog, __kSLPlugInAttributeSocialKey, 
                        __kSLServiceAccountTypeIdentifierKey, __kSLServiceActivityViewIconKey, 
                        __kSLServiceAddDeviceClassToRequestsKey, __kSLServiceAuthenticationStyleKey, 
                        __kSLServiceInfoDictKey, __kSLServiceLocalizedNameKey, __kSLServiceMaximumImageCountKey, 
@@ -49,49 +63,34 @@ exports:
                        __kSLServiceMaximumVideoCountKey, __kSLServiceMaximumVideoDataSizeKey, 
                        __kSLServiceMaximumVideoTimeLimitKey, __kSLServiceSupportedImageAssetURLSchemes, 
                        __kSLServiceSupportedVideoAssetURLSchemes, __kSLServiceTargetRegionIsChinaKey, 
-                       __kSLServiceTypeIdentifierKey, __kSLServiceXPCConnectionName, 
-                       _kSLFacebookPlaceManagerErrorDomain ]
-    objc-classes:    [ SLAOLWebAuthController, SLAOLWebClient, SLAggregateLogger, 
-                       SLAssetDataProvider, SLAttachment, SLAuthExtensionContext, 
+                       __kSLServiceTypeIdentifierKey, __kSLServiceXPCConnectionName ]
+    objc-classes:    [ SLAOLWebAuthController, SLAOLWebClient, SLAttachment, SLAuthExtensionContext, 
                        SLBatchRequest, SLComposeServiceViewController, SLComposeSheetConfigurationItem, 
                        SLComposeViewController, SLDataMigrationController, SLDatabase, 
-                       SLExternalServiceGatekeeper, SLFacebookAlbum, SLFacebookAlbumChooserViewController, 
-                       SLFacebookAlbumManager, SLFacebookAlbumTableViewCell, SLFacebookAudienceTableViewController, 
-                       SLFacebookAuthorizationRequest, SLFacebookBatchResponse, SLFacebookComposeViewController, 
-                       SLFacebookFriendList, SLFacebookGraphUtils, SLFacebookLoginInfoViewController, 
-                       SLFacebookLoginRequest, SLFacebookPermissionDescriptionRequest, 
-                       SLFacebookPlace, SLFacebookPlaceManager, SLFacebookPost, SLFacebookPostPrivacyCategory, 
-                       SLFacebookPostPrivacyManager, SLFacebookPostPrivacySetting, 
-                       SLFacebookRegistrationInfo, SLFacebookRegistrationRequest, 
-                       SLFacebookRenewTokenRequest, SLFacebookRequest, SLFacebookResponse, 
-                       SLFacebookSession, SLFacebookUpload, SLGoogleLegacyTokenMigrationCodeResponse, 
+                       SLExternalServiceGatekeeper, SLFacebookAlbum, SLFacebookGraphUtils, 
+                       SLFacebookPlace, SLFacebookRequest, SLFacebookSession, SLGoogleLegacyTokenMigrationCodeResponse, 
                        SLGoogleLegacyTokenMigrationRequest, SLGoogleLegacyTokenMigrationResponse, 
                        SLGoogleLegacyTokenMigrationTokenResponse, SLGoogleOAuth2TokenRequest, 
                        SLGoogleOAuth2TokenResponse, SLGoogleUserInfoResponse, SLGoogleWebAuthController, 
                        SLGoogleWebAuthRequest, SLGoogleWebClient, SLGuaranteedRemoteCall, 
-                       SLImageAttachment, SLImageDownsampling, SLInternalTencentWeiboRequest, 
-                       SLLegacyGooglePlusUserInfoResponse, SLManagedObject, SLMicroBlogAccountsTableViewController, 
-                       SLMicroBlogComposeViewController, SLMicroBlogMentionsViewController, 
-                       SLMicroBlogStatus, SLMicroBlogUserRecord, SLNetworkReachabilityWarning, 
-                       SLPlace, SLRemoteService, SLRemoteSession, SLRemoteSessionProxy, 
-                       SLRequest, SLRequestBodyInputStream, SLRequestMultiPart, SLRequestMultiPartInputStream, 
-                       SLSafeLocationManagerDelegate, SLService, SLServiceListener, 
-                       SLSheetContentView, SLSheetImagePreviewView, SLSheetNavigationController, 
-                       SLSheetPhotoAlbumImageView, SLSheetPlaceSearchController, 
+                       SLImageAttachment, SLImageDownsampling, SLLegacyGooglePlusUserInfoResponse, 
+                       SLManagedObject, SLMicroBlogAccountsTableViewController, SLMicroBlogComposeViewController, 
+                       SLMicroBlogMentionsViewController, SLMicroBlogStatus, SLMicroBlogUserRecord, 
+                       SLNetworkReachabilityWarning, SLPlace, SLRemoteService, SLRemoteSession, 
+                       SLRemoteSessionProxy, SLRequest, SLRequestBodyInputStream, 
+                       SLRequestMultiPart, SLRequestMultiPartInputStream, SLSafeLocationManagerDelegate, 
+                       SLService, SLServiceListener, SLSheetContentView, SLSheetImagePreviewView, 
+                       SLSheetNavigationController, SLSheetPhotoAlbumImageView, SLSheetPlaceSearchController, 
                        SLSheetPlaceViewController, SLSheetPreviewImageSource, SLSheetTextComposeView, 
-                       SLSystemConfigManager, SLTencentWeiboServerInterface, SLTencentWeiboSession, 
-                       SLTencentWeiboUserRecord, SLTwitterRequest, SLTwitterReverseAuthRequest, 
-                       SLTwitterSession, SLTwitterUserRecord, SLURLAttachment, SLURLPreviewGenerator, 
+                       SLSystemConfigManager, SLURLAttachment, SLURLPreviewGenerator, 
                        SLVideoAttachment, SLWebAuthController, SLWebAuthFlowController, 
                        SLWebAuthIdentity, SLWebTokenHandlerController, SLWebUserInfoResponse, 
-                       SLWeiboServerInterface, SLWeiboSession, SLWeiboUserRecord, 
                        SLYahooLoginTokenRequest, SLYahooLoginTokenResponse, SLYahooOAuth2MigrationRequest, 
                        SLYahooOAuth2MigrationResponse, SLYahooWebAuthController, 
                        SLYahooWebAuthRequest, SLYahooWebClient, SLYahooWebOAuth2TokenRequest, 
                        SLYahooWebOAuth2TokenResponse, SL_OOPAWebViewController, _SLAuthHostExtensionContext, 
                        _SLAuthHostViewController ]
-    objc-ivars:      [ SLFacebookLoginInfoViewController._footerView, SLFacebookLoginRequest._account, 
-                       SLFacebookRegistrationRequest._registrationInfo, SLSheetPhotoAlbumImageView._frameLayer, 
-                       SLSheetPhotoAlbumImageView._glossLayer, SLSystemConfigManager._applySkipCount, 
-                       SLSystemConfigManager._notifyForExternalChangeOnly, SLSystemConfigManager._prefs ]
+    objc-ivars:      [ SLSheetPhotoAlbumImageView._frameLayer, SLSheetPhotoAlbumImageView._glossLayer, 
+                       SLSystemConfigManager._applySkipCount, SLSystemConfigManager._notifyForExternalChangeOnly, 
+                       SLSystemConfigManager._prefs ]
 ...

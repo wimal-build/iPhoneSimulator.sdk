@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           980DA373-8DDF-32CD-AF8B-B621440AFB04
+  - target:          arm64-ios-simulator
+    value:           249E0590-3568-36CD-8C7A-3892FB4F46F1
+install-name:    '/usr/lib/log/liblog_IOHIDFamily.dylib'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _OSLogCopyFormattedString, _getEventDescription ]
+...

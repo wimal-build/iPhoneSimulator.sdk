@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           66CA5AD5-C862-394F-BF63-FF760FFB1A4B
+  - target:          arm64-ios-simulator
+    value:           36B68DA3-50E5-3D83-98DB-820163537BF6
+install-name:    '/System/Library/PrivateFrameworks/FeedbackLogger.framework/FeedbackLogger'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FLErrorDomain, _FLGetBootSessionUUID, _FLSignpostLoggingInit, 
+                       _FL_LOG_SIGNPOSTS, _FeedbackLoggerVersionNumber, _FeedbackLoggerVersionString, 
+                       _flLogForObject ]
+    objc-classes:    [ BatchMetadata, FLLogger, FLLoggingContext, FLSQLitePersistence ]
+...

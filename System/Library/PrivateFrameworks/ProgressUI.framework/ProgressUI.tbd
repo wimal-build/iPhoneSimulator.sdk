@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           29AC13C4-99B9-3057-A1EF-81576175CA4B
+  - target:          x86_64-ios-simulator
+    value:           73C2E765-4B24-35C3-AB91-5C6E00D390B7
+  - target:          arm64-ios-simulator
+    value:           2D0F80A8-F136-3F59-AE87-65856503CD87
+install-name:    '/System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kPUIDefaultContextLevel ]
+    objc-classes:    [ PUIFramebufferSizeChangeNotifier, PUIProgressWindow ]
+...

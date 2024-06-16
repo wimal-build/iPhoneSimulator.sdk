@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           15C524E1-D0A3-3132-B60B-011011A2E983
+  - target:          arm64-ios-simulator
+    value:           B5E41CF8-9449-320E-AC46-0892A20F1D20
+install-name:    '/System/Library/PrivateFrameworks/SpeakThisServices.framework/SpeakThisServices'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _STSErrorDomain, _STSMessageKeyAppPointX, _STSMessageKeyAppPointY, 
+                       _STSMessageKeyKBFrame, _STSMessageKeyOptions, _STSMessageReplyKeyErrorCode ]
+    objc-classes:    [ SpeakThisServices ]
+...

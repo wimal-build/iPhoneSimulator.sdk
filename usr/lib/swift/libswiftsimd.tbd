@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3AA5907C-4816-3749-8429-69D631ECCF91', 'x86_64: 46ABB38D-55AA-3878-9B00-99621CA707C5' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3AA5907C-4816-3749-8429-69D631ECCF91
+  - target:          x86_64-ios-simulator
+    value:           6A5B1E86-8C02-3D15-B201-FF5F1730FC05
+  - target:          arm64-ios-simulator
+    value:           B27F7F29-06CD-3931-B845-76DD44DC527F
 install-name:    '/usr/lib/swift/libswiftsimd.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 1.3
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftsimd.dylib', '$ld$install_name$os10.1$@rpath/libswiftsimd.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftsimd.dylib', '$ld$install_name$os10.3$@rpath/libswiftsimd.dylib', 
                        '$ld$install_name$os11.0$@rpath/libswiftsimd.dylib', '$ld$install_name$os11.1$@rpath/libswiftsimd.dylib', 

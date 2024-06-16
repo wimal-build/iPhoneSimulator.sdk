@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 619466EB-0339-325D-B98B-95D1CDDBB5D2', 'x86_64: 5D422DC4-7F30-3656-BF81-77FD822C6E5E' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           961EC9C2-0BED-39C2-A53E-B65433CA149A
+  - target:          x86_64-ios-simulator
+    value:           CA47FE2A-3B5B-360C-B2EE-1435D61A6511
+  - target:          arm64-ios-simulator
+    value:           5217F7E2-68C8-3F1B-B9ED-B062C982BF66
 install-name:    '/usr/lib/libTelephonyUtilDynamic.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZN3ctu12AslLogWriter12setMsgParamsERKNSt3__13mapINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES8_NS1_4lessIS8_EENS6_INS1_4pairIKS8_S8_EEEEEE, 
                        __ZN3ctu12AslLogWriter14DUMMY_FACILITYE, __ZN3ctu12AslLogWriter14START_TIME_NOWE, 
                        __ZN3ctu12AslLogWriter17CT_START_TIME_KEYE, __ZN3ctu12AslLogWriter5closeEv, 
@@ -19,10 +25,9 @@ exports:
                        __ZN3ctu15RestModuleState6createEON8dispatch5queueEONSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE, 
                        __ZN3ctu15RestModuleState7connectEON3xpc10connectionE, __ZN3ctu15RestModuleStateC1EON8dispatch5queueEONSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE, 
                        __ZN3ctu15RestModuleStateC2EON8dispatch5queueEONSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE, 
-                       __ZN3ctu15add_logging_tagEN8dispatch5queueE, __ZN3ctu16LogMessageBuffer17vCreateWithFormatEPKcPc, 
-                       __ZN3ctu16LogMessageBuffer19vCreateWithNSFormatEP8NSStringPc, 
-                       __ZN3ctu16LogMessageBuffer7vprintfEPKcPc, __ZN3ctu16ScopedLogFlusherC1ERKNSt3__110shared_ptrINS_9LogServerEEENS1_6chrono8durationIxNS1_5ratioILx1ELx1000EEEEE, 
+                       __ZN3ctu15add_logging_tagEN8dispatch5queueE, __ZN3ctu16ScopedLogFlusherC1ERKNSt3__110shared_ptrINS_9LogServerEEENS1_6chrono8durationIxNS1_5ratioILx1ELx1000EEEEE, 
                        __ZN3ctu16ScopedLogFlusherC2ERKNSt3__110shared_ptrINS_9LogServerEEENS1_6chrono8durationIxNS1_5ratioILx1ELx1000EEEEE, 
+                       __ZN3ctu18XpcJetsamAssertion11addActivityENSt3__18weak_ptrINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEE, 
                        __ZN3ctu21maybe_add_logging_tagEN8dispatch5queueE, __ZN3ctu22ConnectionRestResource16lookupConnectionERKN3xpc10connectionE, 
                        __ZN3ctu23get_current_logging_tagEv, __ZN3ctu2cf12convert_copyERPK10__CFStringPKcmPK13__CFAllocator, 
                        __ZN3ctu2cf12convert_copyERPK10__CFStringRKNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEmPK13__CFAllocator, 
@@ -46,8 +51,41 @@ exports:
                        __ZNK3ctu4rest12XpcConnector4pushERKN3xpc6objectES5_, __ZNK3ctu4rest12XpcConnector4sendEPKcRKN3xpc6objectES7_, 
                        __ZNK3ctu4rest12XpcConnector5flushERKN8dispatch5groupE, __ZNK3ctu4rest12XpcConnector6notifyERKN3xpc6objectES5_, 
                        __ZTIN3ctu12AslLogWriterE, __ZTSN3ctu12AslLogWriterE, __ZTVN3ctu12AslLogWriterE ]
-    weak-def-symbols: [ __ZTSNSt3__114default_deleteIN3ctu12AslLogWriterEEE ]
-  - archs:           [ x86_64 ]
+    weak-symbols:    [ __ZTSNSt3__114default_deleteIN3ctu12AslLogWriterEEE ]
+  - targets:         [ x86_64-ios-simulator ]
+    symbols:         [ __ZN3ctu16LogMessageBuffer17vCreateWithFormatEPKcP13__va_list_tag, 
+                       __ZN3ctu16LogMessageBuffer19vCreateWithNSFormatEP8NSStringP13__va_list_tag, 
+                       __ZN3ctu16LogMessageBuffer7vprintfEPKcP13__va_list_tag ]
+    weak-symbols:    [ __ZTIN3ctu4rest17RestConnectorSinkINS_20RestDispatchListenerEEE, 
+                       __ZTIN3ctu4rest21RestConnectorDelegateINS_15RestModuleStateEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu15RestXpcListenerEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu20RestDispatchListenerEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu4rest16RestXpcConnectorEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu4rest21RestDispatchConnectorEEE, 
+                       __ZTSN3ctu4rest17RestConnectorSinkINS_20RestDispatchListenerEEE, 
+                       __ZTSN3ctu4rest21RestConnectorDelegateINS_15RestModuleStateEEE, 
+                       __ZTSNSt3__114default_deleteIN3ctu15RestXpcListenerEEE, __ZTSNSt3__114default_deleteIN3ctu18XpcJetsamAssertionEEE, 
+                       __ZTSNSt3__114default_deleteIN3ctu20RestDispatchListenerEEE, 
+                       __ZTSNSt3__114default_deleteIN3ctu4rest16RestXpcConnectorEEE, 
+                       __ZTSNSt3__114default_deleteIN3ctu4rest21RestDispatchConnectorEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu15RestXpcListenerEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu20RestDispatchListenerEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu4rest16RestXpcConnectorEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu4rest21RestDispatchConnectorEEE ]
+  - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
+    weak-symbols:    [ __ZTIN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE, 
+                       __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTINSt3__117bad_function_callE, __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu6LoggerEEE, __ZTINSt3__123enable_shared_from_thisIN3ctu9LogServerEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu9XpcClientEEE, 
+                       __ZTINSt3__123enable_shared_from_thisIN3ctu9XpcServerEEE, 
+                       __ZTSN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE, 
+                       __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTSNSt3__117bad_function_callE, __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu6LoggerEEE, __ZTSNSt3__123enable_shared_from_thisIN3ctu9LogServerEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu9XpcClientEEE, 
+                       __ZTSNSt3__123enable_shared_from_thisIN3ctu9XpcServerEEE ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __ZN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEED0Ev, 
                        __ZN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEED1Ev, 
                        __ZN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEED2Ev, 
@@ -78,10 +116,9 @@ exports:
                        __ZN3ctu15RestXpcListener6createEN3xpc10connectionEN8dispatch5queueE, 
                        __ZN3ctu15RestXpcListenerC1EN3xpc10connectionEN8dispatch5queueE, 
                        __ZN3ctu15RestXpcListenerC2EN3xpc10connectionEN8dispatch5queueE, 
-                       __ZN3ctu16LogMessageBuffer17vCreateWithFormatEPKcP13__va_list_tag, 
-                       __ZN3ctu16LogMessageBuffer19vCreateWithNSFormatEP8NSStringP13__va_list_tag, 
-                       __ZN3ctu16LogMessageBuffer7vprintfEPKcP13__va_list_tag, __ZN3ctu16ScopedLogFlusherC1ERKNSt3__110shared_ptrINS_9LogServerEEENS1_6chrono8durationIxNS1_5ratioILl1ELl1000EEEEE, 
+                       __ZN3ctu16ScopedLogFlusherC1ERKNSt3__110shared_ptrINS_9LogServerEEENS1_6chrono8durationIxNS1_5ratioILl1ELl1000EEEEE, 
                        __ZN3ctu16ScopedLogFlusherC2ERKNSt3__110shared_ptrINS_9LogServerEEENS1_6chrono8durationIxNS1_5ratioILl1ELl1000EEEEE, 
+                       __ZN3ctu18XpcJetsamAssertion11addActivityENSt3__18weak_ptrINS0_8ActivityEEE, 
                        __ZN3ctu20PropertyRestResource23handleDroppedConnectionERNS_19RestResourceContextERKNS_8PathViewERKNSt3__110shared_ptrINS_22RestResourceConnectionEEE, 
                        __ZN3ctu20RestDispatchListener15createConnectorEv, __ZN3ctu20RestDispatchListener17handleClientErrorEPKNS_4rest23RestConnectorSourceBaseEN3xpc6objectE, 
                        __ZN3ctu20RestDispatchListener19handleClientMessageENSt3__110shared_ptrIKNS_4rest23RestConnectorSourceBaseEEEN3xpc4dictE, 
@@ -200,23 +237,7 @@ exports:
                        __ZThn40_N3ctu20RestDispatchListener28handleClientMessageWithReplyENSt3__110shared_ptrIKNS_4rest23RestConnectorSourceBaseEEEN3xpc4dictENS1_8functionIFvNS7_6objectEEEE, 
                        __ZThn64_N3ctu6Logger18getTrackedLogLevelEv, __ZThn64_N3ctu6Logger19updateTrackedConfigENS_8LogLevelE, 
                        __ZThn64_N3ctu6Logger20getTrackedLoggerNameEv ]
-    weak-def-symbols: [ __ZTIN3ctu4rest17RestConnectorSinkINS_20RestDispatchListenerEEE, 
-                        __ZTIN3ctu4rest21RestConnectorDelegateINS_15RestModuleStateEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu15RestXpcListenerEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu20RestDispatchListenerEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu4rest16RestXpcConnectorEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu4rest21RestDispatchConnectorEEE, 
-                        __ZTSN3ctu4rest17RestConnectorSinkINS_20RestDispatchListenerEEE, 
-                        __ZTSN3ctu4rest21RestConnectorDelegateINS_15RestModuleStateEEE, 
-                        __ZTSNSt3__114default_deleteIN3ctu15RestXpcListenerEEE, __ZTSNSt3__114default_deleteIN3ctu18XpcJetsamAssertionEEE, 
-                        __ZTSNSt3__114default_deleteIN3ctu20RestDispatchListenerEEE, 
-                        __ZTSNSt3__114default_deleteIN3ctu4rest16RestXpcConnectorEEE, 
-                        __ZTSNSt3__114default_deleteIN3ctu4rest21RestDispatchConnectorEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu15RestXpcListenerEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu20RestDispatchListenerEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu4rest16RestXpcConnectorEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu4rest21RestDispatchConnectorEEE ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __ZN3ctu10LogMessageC1ENS_9TimeStampENS_8LogLevelENSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEOS9_ONS3_6vectorIS9_NS7_IS9_EEEE, 
                        __ZN3ctu10LogMessageC2ENS_9TimeStampENS_8LogLevelENSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEOS9_ONS3_6vectorIS9_NS7_IS9_EEEE, 
                        __ZN3ctu10LogMessageD0Ev, __ZN3ctu10LogMessageD1Ev, __ZN3ctu10LogMessageD2Ev, 
@@ -315,8 +336,7 @@ exports:
                        __ZN3ctu16TreeRestResource23handleMessage_DumpStateERNS_19RestResourceContextENS_8PathViewE, 
                        __ZN3ctu18ResultIsEmptyErrorC1Ev, __ZN3ctu18ResultIsEmptyErrorC2Ev, 
                        __ZN3ctu18ResultIsEmptyErrorD0Ev, __ZN3ctu18ResultIsEmptyErrorD1Ev, 
-                       __ZN3ctu18ResultIsEmptyErrorD2Ev, __ZN3ctu18XpcJetsamAssertion11addActivityENSt3__18weak_ptrINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEE, 
-                       __ZN3ctu18XpcJetsamAssertion14createActivityENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE, 
+                       __ZN3ctu18ResultIsEmptyErrorD2Ev, __ZN3ctu18XpcJetsamAssertion14createActivityENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE, 
                        __ZN3ctu18XpcJetsamAssertion17getAssertionCountEv, __ZN3ctu18XpcJetsamAssertion21create_default_globalEv, 
                        __ZN3ctu18XpcJetsamAssertion6tidyUpEv, __ZN3ctu18XpcJetsamAssertionC1Ev, 
                        __ZN3ctu18XpcJetsamAssertionC2Ev, __ZN3ctu18appendLeftoverBitsERNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEmPKc, 
@@ -662,16 +682,7 @@ exports:
                        __ZTVN3ctu7GestaltE, __ZTVN3ctu9LogServerE, __ZTVN3ctu9LogWriterE, 
                        __ZTVN3ctu9XpcClientE, __ZTVN3ctu9XpcServerE, ___TUAssertGetReason, 
                        ___TUAssertTrigger ]
-    weak-def-symbols: [ __ZTIN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE, 
-                        __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTINSt3__117bad_function_callE, __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu6LoggerEEE, __ZTINSt3__123enable_shared_from_thisIN3ctu9LogServerEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu9XpcClientEEE, 
-                        __ZTINSt3__123enable_shared_from_thisIN3ctu9XpcServerEEE, 
-                        __ZTSN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE, 
-                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__117bad_function_callE, __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu6LoggerEEE, __ZTSNSt3__123enable_shared_from_thisIN3ctu9LogServerEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu9XpcClientEEE, 
-                        __ZTSNSt3__123enable_shared_from_thisIN3ctu9XpcServerEEE ]
+  - targets:         [ arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __ZN3ctu16LogMessageBuffer17vCreateWithFormatEPKcPc, __ZN3ctu16LogMessageBuffer19vCreateWithNSFormatEP8NSStringPc, 
+                       __ZN3ctu16LogMessageBuffer7vprintfEPKcPc ]
 ...

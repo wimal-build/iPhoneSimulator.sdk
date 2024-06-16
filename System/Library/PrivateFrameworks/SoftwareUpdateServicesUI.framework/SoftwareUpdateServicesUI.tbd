@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3B98243F-9AE4-3FA4-B2C0-2CB2393183B4
+  - target:          x86_64-ios-simulator
+    value:           0D737F54-54E9-3771-A2B8-13603A2D2076
+  - target:          arm64-ios-simulator
+    value:           22566565-7187-39EB-B558-EB72F095A573
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateServicesUI.framework/SoftwareUpdateServicesUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SUSUICLIToolConnectionName, _SUSUIControllerConnectionName, 
+                       _SUSUICreateInstallationKeybagWithSecret, _SUSUICreateInstallationKeybagWithSecretAndHandler, 
+                       _SUSUILog, _SUSUILogAuthenticationUI, _SUSUILogEmergencyCallUI, 
+                       _SUSUILogKeybagInterface, _SUSUILogPostUpdateAlert, _SUSUIPreferencesChangedNotification, 
+                       _SUSUIRequiresAlertPresentationAfterUpdate, _SUSUISettingsBundleIdentifier, 
+                       _SUSUISetupAssistantNeedsToRun, _SoftwareUpdateServicesUIVersionNumber, 
+                       _SoftwareUpdateServicesUIVersionString, _kSUSUIPreferencesID ]
+    objc-classes:    [ SUSUIAuthenticationAlertAction, SUSUIAuthenticationInterface, 
+                       SUSUICommandLineToolClient, SUSUIControllerClient, SUSUIExternalSettingsAppDefaults, 
+                       SUSUIFakeDocumentation, SUSUIFakeSUAutoInstallForecast, SUSUIFakeSUAutoInstallOperation, 
+                       SUSUIFakeSUDescriptor, SUSUIFakeSUDownload, SUSUIFakeSUDownloadMetadata, 
+                       SUSUIFakeSUOperationProgress, SUSUIPreferences, SUSUIRemoteEmergencyCallAlertAction, 
+                       SUSUISoftwareUpdateDefaults ]
+...

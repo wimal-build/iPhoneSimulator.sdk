@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9975E71C-5EDD-3B18-A4D5-C7C075B0B929', 'x86_64: EE09F954-8BA6-3798-8751-B8628D5D5FBC' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           F9FAF96F-1CEF-3CB7-BDC9-50304DF21012
+  - target:          x86_64-ios-simulator
+    value:           420994B4-F293-39B8-8D48-9E205D3FDCD5
+  - target:          arm64-ios-simulator
+    value:           A9DF1749-382F-3009-A4EF-7C7352F76ED2
 install-name:    '/System/Library/Frameworks/NewsstandKit.framework/NewsstandKit'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _NKIssueDownloadCompletedNotification ]
     objc-classes:    [ NKAssetDownload, NKIssue, NKLibrary ]
 ...

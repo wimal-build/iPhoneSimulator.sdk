@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           6063D98A-2A2C-3D2E-BB5C-CA110EABEEF0
+  - target:          x86_64-ios-simulator
+    value:           6B80068E-3849-3525-8EC9-61ECFB90F7DF
+  - target:          arm64-ios-simulator
+    value:           13DF10BB-2F43-3E4E-8057-BDF3B9378389
+install-name:    '/System/Library/PrivateFrameworks/DictionaryUI.framework/DictionaryUI'
+current-version: 33
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _DUDefinitionElementKeyHeadword, _DUDefinitionElementKeyPartOfSpeech, 
+                       _DUDefinitionElementKeyPronunciation, _DUDefinitionElementKeyRecordID, 
+                       _DUDefinitionElementKeySenses, _DUDefinitionElementKeySyllabifiedHeadword, 
+                       _DictionaryUIVersionNumber, _DictionaryUIVersionString ]
+    objc-classes:    [ DUDefinitionDictionary, DUDefinitionValue, DUDictionaryManager, 
+                       DUEntryViewController ]
+...

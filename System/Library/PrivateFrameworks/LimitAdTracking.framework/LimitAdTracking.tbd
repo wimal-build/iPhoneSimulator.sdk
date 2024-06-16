@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           A7C91B3E-442B-3F3B-9394-F7B836A02973
+  - target:          arm64-ios-simulator
+    value:           8F69F787-96E9-39C7-8DAA-4ACFE91833AF
+install-name:    '/System/Library/PrivateFrameworks/LimitAdTracking.framework/LimitAdTracking'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LimitAdTrackingVersionNumber, _LimitAdTrackingVersionString ]
+    objc-classes:    [ ADTrackingTransparency ]
+...

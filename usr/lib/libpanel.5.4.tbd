@@ -1,14 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4AB217DC-89EE-378F-A706-E3C7BB3F600C', 'x86_64: 2E43309F-2987-31C7-8EE1-D08855AB5AB8' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           CE711B09-753D-309E-8C20-52A0E91A8156
+  - target:          x86_64-ios-simulator
+    value:           134A09AA-B5A0-3042-992C-FABF63A8F608
+  - target:          arm64-ios-simulator
+    value:           5538FCAA-D6BA-39A3-80F7-E2B102505276
 install-name:    '/usr/lib/libpanel.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___panel_5_4VersionNumber, ___panel_5_4VersionString ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _bottom_panel, _del_panel, _hide_panel, _move_panel, _new_panel, 
                        _panel_above, _panel_below, _panel_hidden, _panel_userptr, 
                        _panel_window, _replace_panel, _set_panel_userptr, _show_panel, 

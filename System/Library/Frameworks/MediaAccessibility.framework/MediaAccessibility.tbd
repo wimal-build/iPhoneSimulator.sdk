@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A3F0262-7FEE-3E05-AF6D-CC633CA44BBC', 'x86_64: 631336BD-78DB-3548-946D-05F69BFE4C76' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           CAA83DF7-5285-3081-B8C0-A23A71E55674
+  - target:          x86_64-ios-simulator
+    value:           368DD872-38BE-39FF-B117-A0EE6C74D2A2
+  - target:          arm64-ios-simulator
+    value:           41C313A2-9086-3568-9738-A481AFAFFB50
 install-name:    '/System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility'
 current-version: 62
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _MAPreferenceAddPublicWriteableKey, _MAPreferenceInitializeIfNeeded, 
                        _MAPreferenceSynchronizeDomains, _MAPreferencesCopyBoolean, 
                        _MAPreferencesCopyColor, _MAPreferencesCopyFont, _MAPreferencesCopyFontDescriptor, 
@@ -38,7 +44,7 @@ exports:
                        _kMADisplayFilterPrefBrightnessIntensityDefault, _kMADisplayFilterPrefGreenColorIntensityDefault, 
                        _kMADisplayFilterPrefRedColorIntensityDefault, _kMADisplayFilterPrefReduceWhitePointIntensityDefault, 
                        _kMADisplayFilterPrefSingleColorIntensityDefault, _kMADisplayFilterPrefWarmthIntensityDefault ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MAAudibleMediaCopyPreferredCharacteristics, _MAAudibleMediaPrefCopyPreferDescriptiveVideo, 
                        _MAAudibleMediaPrefResetAll, _MAAudibleMediaPrefSetPreferDescriptiveVideo, 
                        _MACaptionAppearanceAddPreferredLanguage, _MACaptionAppearanceAddSelectedLanguage, 
@@ -53,17 +59,17 @@ exports:
                        _MACaptionAppearanceGetRelativeCharacterSize, _MACaptionAppearanceGetShowCaptions, 
                        _MACaptionAppearanceGetShowCaptionsWhenAvailable, _MACaptionAppearanceGetStrokeWidth, 
                        _MACaptionAppearanceGetTextEdgeStyle, _MACaptionAppearanceGetWindowOpacity, 
-                       _MACaptionAppearanceGetWindowRoundedCornerRadius, _MACaptionAppearancePrefCopyActiveProfileID, 
-                       _MACaptionAppearancePrefCopyBackgroundColor, _MACaptionAppearancePrefCopyBackgroundOpacity, 
-                       _MACaptionAppearancePrefCopyDisplayType, _MACaptionAppearancePrefCopyFontDescriptorForStyle, 
-                       _MACaptionAppearancePrefCopyFontForStyle, _MACaptionAppearancePrefCopyFontSpecifiedByUserForStyle, 
-                       _MACaptionAppearancePrefCopyForegroundColor, _MACaptionAppearancePrefCopyForegroundOpacity, 
-                       _MACaptionAppearancePrefCopyPreferAccessibleCaptions, _MACaptionAppearancePrefCopyPreferredLanguages, 
-                       _MACaptionAppearancePrefCopyProfileIDs, _MACaptionAppearancePrefCopyProfileName, 
-                       _MACaptionAppearancePrefCopyProfileOrder, _MACaptionAppearancePrefCopyRelativeCharacterSize, 
-                       _MACaptionAppearancePrefCopyShowCaptionsWhenAvailable, _MACaptionAppearancePrefCopySystemLanguage, 
-                       _MACaptionAppearancePrefCopyTextEdgeStyle, _MACaptionAppearancePrefCopyUsesAppleLookAndFeel, 
-                       _MACaptionAppearancePrefCopyVideoOverrideBackgroundColor, 
+                       _MACaptionAppearanceGetWindowRoundedCornerRadius, _MACaptionAppearanceMacBuddySettingsToTransfer, 
+                       _MACaptionAppearancePrefCopyActiveProfileID, _MACaptionAppearancePrefCopyBackgroundColor, 
+                       _MACaptionAppearancePrefCopyBackgroundOpacity, _MACaptionAppearancePrefCopyDisplayType, 
+                       _MACaptionAppearancePrefCopyFontDescriptorForStyle, _MACaptionAppearancePrefCopyFontForStyle, 
+                       _MACaptionAppearancePrefCopyFontSpecifiedByUserForStyle, _MACaptionAppearancePrefCopyForegroundColor, 
+                       _MACaptionAppearancePrefCopyForegroundOpacity, _MACaptionAppearancePrefCopyPreferAccessibleCaptions, 
+                       _MACaptionAppearancePrefCopyPreferredLanguages, _MACaptionAppearancePrefCopyProfileIDs, 
+                       _MACaptionAppearancePrefCopyProfileName, _MACaptionAppearancePrefCopyProfileOrder, 
+                       _MACaptionAppearancePrefCopyRelativeCharacterSize, _MACaptionAppearancePrefCopyShowCaptionsWhenAvailable, 
+                       _MACaptionAppearancePrefCopySystemLanguage, _MACaptionAppearancePrefCopyTextEdgeStyle, 
+                       _MACaptionAppearancePrefCopyUsesAppleLookAndFeel, _MACaptionAppearancePrefCopyVideoOverrideBackgroundColor, 
                        _MACaptionAppearancePrefCopyVideoOverrideBackgroundOpacity, 
                        _MACaptionAppearancePrefCopyVideoOverrideFontForStyle, _MACaptionAppearancePrefCopyVideoOverrideForegroundColor, 
                        _MACaptionAppearancePrefCopyVideoOverrideForegroundOpacity, 
@@ -85,9 +91,9 @@ exports:
                        _MACaptionAppearancePrefSetPreferredLanguages, _MACaptionAppearancePrefSetProfileName, 
                        _MACaptionAppearancePrefSetProfileOrder, _MACaptionAppearancePrefSetRelativeCharSize, 
                        _MACaptionAppearancePrefSetRelativeCharacterSize, _MACaptionAppearancePrefSetShowCaptionsWhenAvailable, 
-                       _MACaptionAppearancePrefSetSystemLanguageOverride, _MACaptionAppearancePrefSetTextEdgeStyle, 
-                       _MACaptionAppearancePrefSetUsesAppleLookAndFeel, _MACaptionAppearancePrefSetVideoOverrideBackgroundColor, 
-                       _MACaptionAppearancePrefSetVideoOverrideBackgroundOpacity, 
+                       _MACaptionAppearancePrefSetSystemLanguageOverride, _MACaptionAppearancePrefSetTempProfileID, 
+                       _MACaptionAppearancePrefSetTextEdgeStyle, _MACaptionAppearancePrefSetUsesAppleLookAndFeel, 
+                       _MACaptionAppearancePrefSetVideoOverrideBackgroundColor, _MACaptionAppearancePrefSetVideoOverrideBackgroundOpacity, 
                        _MACaptionAppearancePrefSetVideoOverrideFontForStyle, _MACaptionAppearancePrefSetVideoOverrideForegroundColor, 
                        _MACaptionAppearancePrefSetVideoOverrideForegroundOpacity, 
                        _MACaptionAppearancePrefSetVideoOverrideRelativeCharSize, 
@@ -95,6 +101,8 @@ exports:
                        _MACaptionAppearancePrefSetVideoOverrideTextEdgeStyle, _MACaptionAppearancePrefSetVideoOverrideWindowColor, 
                        _MACaptionAppearancePrefSetVideoOverrideWindowOpacity, _MACaptionAppearancePrefSetWindowColor, 
                        _MACaptionAppearancePrefSetWindowOpacity, _MACaptionAppearancePrefSetWindowRoundedCornerRadius, 
+                       _MACaptionAppearancePrefTempProfileIDClassic, _MACaptionAppearancePrefTempProfileIDDefault, 
+                       _MACaptionAppearancePrefTempProfileIDLargeText, _MACaptionAppearancePrefTempProfileIDOutlineText, 
                        _MACaptionAppearanceSetDidDisplayCaptionsCallback, _MACaptionAppearanceSetDisplayType, 
                        _MACaptionAppearanceSetShowCaptions, _MACaptionFontAttributeStrokeWidth, 
                        _MADisplayFilterCombine, _MADisplayFilterCopySystemFilter, 
@@ -126,7 +134,7 @@ exports:
                        _MAImageCaptioningCopyCaptionWithSource, _MAImageCaptioningCopyMetadataTagPath, 
                        _MAImageCaptioningSetCaption, _MALegibleOutputDidOutputAttributedStrings, 
                        _MALegibleOutputDidOutputAttributedStringsRegisterCallback, 
-                       _MAMediaCharacteristicDescribesMusicAndSoundForAccessibility, 
+                       _MAMacBuddySettingsToTransfer, _MAMediaCharacteristicDescribesMusicAndSoundForAccessibility, 
                        _MAMediaCharacteristicDescribesVideoForAccessibility, _MAMediaCharacteristicTranscribesSpokenDialogForAccessibility, 
                        _MATestingCopyProfileIDs, _MAXCaptionAppearanceBehaviorCopyBackgroundColor, 
                        _MAXCaptionAppearanceBehaviorCopyBackgroundOpacity, _MAXCaptionAppearanceBehaviorCopyFontForStyle, 

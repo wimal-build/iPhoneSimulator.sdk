@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           68A58DD4-2F8D-3814-A4BF-C711E1743DA5
+  - target:          arm64-ios-simulator
+    value:           75BC7A4C-15AA-3103-A651-A5C5FD8758CA
+install-name:    '/System/Library/PrivateFrameworks/Eyedropper.framework/Eyedropper'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ColorAnalyzerKMeansMaxIterations, _ColorAnalyzerSimilarColorsMinDistance, 
+                       _ColorApproxEqualToColor, _ColorCombineColors, _ColorDistanceToColor, 
+                       _ColorDivide, _ColorEqualToColor, _ColorMake, _ColorMakeWithColor, 
+                       _ColorUIColor, _ColorZero, _EDLensEdgeMargin, _EDLensHoverCenterViewColorBrightnessTolerance, 
+                       _EDLensHoverCircleRadius, _EDLensPanProjectionTime, _EDLensPetalCircleRadius, 
+                       _EDLensPixelBoxesPerDimension, _EDLensPositionIsCorner, _EDLensPositionIsEdge, 
+                       _EDLensProjectedOffscreenPercentCancelTrigger, _EDLensRingInset, 
+                       _EyedropperVersionNumber, _EyedropperVersionString ]
+    objc-classes:    [ EDAppDelegate, EDColorAnalyzer, EDGridView, EDLensView, EDWindow, 
+                       EDWindowRootViewController ]
+...

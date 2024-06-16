@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           ABD8D2B2-600A-31E2-B584-5FEF0D65C646
+  - target:          x86_64-ios-simulator
+    value:           A406934A-AD62-3E96-ADD3-BD117DDF53FB
+  - target:          arm64-ios-simulator
+    value:           EB72DFAD-2232-3C6A-A9E1-00102F32ABFA
+install-name:    '/System/Library/PrivateFrameworks/Spotlight.framework/Spotlight'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _kSPContentAuxiliarySubtitleKey, _kSPContentAuxiliaryTitleKey, 
+                       _kSPContentCategoryKey, _kSPContentContentKey, _kSPContentExternalIDKey, 
+                       _kSPContentSubtitleKey, _kSPContentSummaryKey, _kSPContentTitleKey ]
+    objc-classes:    [ SPSpotlightManager ]
+    objc-ivars:      [ SPSpotlightManager._displayID ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ SPGeneralQueryTask._didReceiveCompleteCallback, SPGeneralQueryTask._mutableSections, 
+                       SPGeneralQueryTask._mutableSessionEntityString, SPGeneralQueryTask._newQuery, 
+                       SPGeneralQueryTask._query, SPGeneralQueryTask._session, SPGeneralQueryTask._started, 
+                       SPGeneralQueryTask._token, SPQueryTask._delayedResponse, SPQueryTask._dispatchQueue, 
+                       SPQueryTask._queryProcessor, SPQueryTask._showMoreInAppInfo, 
+                       SPQueryTask._supportedAppScopes, SPQueryTask._unsafeState ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SPAppStoreSearchURLFromQuery, _SPWebSearchURLFromQuery, _createDedupeDicts ]
+    objc-classes:    [ SPClientSession, SPGeneralQueryTask, SPQueryResponse, SPQueryTask, 
+                       SPSafariObserver, SPSuggestionsQueryTask, SPZKWSearchQueryTask, 
+                       SPZKWSession ]
+...

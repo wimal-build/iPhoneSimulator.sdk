@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           6A01126B-1F1D-3A0E-AEB0-0C3CE8AC37B7
+  - target:          x86_64-ios-simulator
+    value:           27319067-D6C2-3C2D-9D5E-05660C468C50
+  - target:          arm64-ios-simulator
+    value:           F922948E-66CB-3667-B53B-C003790E0691
+install-name:    '/System/Library/PrivateFrameworks/PairingProximity.framework/PairingProximity'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _PPNearbyWatchBulletinProviderServiceName ]
+    objc-classes:    [ PPNearbyWatchBulletinProvider ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PPDeviceWasDiscoveredNotification, _PPDiscoveredDeviceAdvertisingName, 
+                       _PPDiscoveredDeviceRSSIValue, _PPDiscoveryLimitBridge, _PairingProximityVersionNumber, 
+                       _PairingProximityVersionString, _kBridgeDomain, _kGizmoPeripheralService, 
+                       _pbb_accountsignin_log, _pbb_activation_log, _pbb_bridge_log, 
+                       _pbb_discover_log, _pbb_manualunpairing_log, _pbb_mobileasset_log, 
+                       _pbb_setup_log, _pbb_setupflow_log, _pbb_shared_log ]
+    objc-classes:    [ PPDiscoveryManager, PPNearbyWatchNotifier ]
+...

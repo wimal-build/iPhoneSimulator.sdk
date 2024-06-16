@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           A2FFC035-67C8-33DA-8F26-243CA27B510A
+  - target:          arm64-ios-simulator
+    value:           A2F62D0A-BA1F-3AE6-AF61-C66EFFD86F4A
+install-name:    '/usr/lib/log/liblog_SystemConfiguration.dylib'
+current-version: 1109.0.4
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _OSLogCopyFormattedString, _OSStateCreateStringWithData ]
+...

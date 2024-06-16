@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: BE32721A-7FDE-3152-ADB4-3413016ACD23', 'x86_64: 191F1972-3367-3B66-B6C6-D442F425A338' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A3C53C12-0C5E-32A8-B077-F7EE2946E309
+  - target:          x86_64-ios-simulator
+    value:           EF6C3044-38A1-341B-87B6-FED5E686B814
+  - target:          arm64-ios-simulator
+    value:           3FFF06B1-22A1-3448-B978-C339A9015AF6
 install-name:    '/System/Library/Frameworks/ReplayKit.framework/ReplayKit'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _RPScreenRecorderRequiredFreeSpace, _RPScreenRecorderTempDirectory, 
                        _RPStoreInfoAppNameKey, _RPStoreInfoAuthorKey, _RPStoreInfoBundleIDKey, 
                        _RPStoreInfoCategoriesKey, _RPStoreInfoItemURLKey, _RPVideoOverlayBackgroundMaskImageName, 
@@ -14,26 +20,21 @@ exports:
     objc-classes:    [ RPPassThroughView, RPPictureInPictureController, RPPictureInPictureViewController, 
                        RPPictureInPictureWindow, RPSharedConstants, RPSystemRecordingIndicatorWindow, 
                        RPYouTubeActivityProgressOverlay ]
-  - archs:           [ i386, x86_64 ]
-    symbols:         [ _RPApplicationInfoBundleIdentifierKey, _RPBroadcastPickerExtensionBundleIdentifierKey, 
-                       _RPBroadcastPickerExtensionMicrophoneButtonKey, _RPRecordingErrorDomain, 
-                       _RPVideoEditorExtensionAppNameKey, _RPVideoEditorExtensionBundleIdentifierKey, 
-                       _RPVideoEditorExtensionFileAttachmentKey, _RPVideoEditorExtensionMoviePathKey, 
-                       _RPVideoEditorExtensionOverrideShareMessageKey, _RPVideoEditorExtensionOverrideTintColorKey, 
-                       _RPVideoSampleOrientationKey, _ReplayKitVersionNumber, _ReplayKitVersionString, 
-                       _audioBufferListFromData, _createEmptyAudioSampleBufferWithTimeInterval, 
-                       _decodeAudioSampleBuffer, _encodeAudioSampleBuffer ]
-    objc-classes:    [ RPAppAudioCaptureManager, RPBroadcastActivityExtensionHostContext, 
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RPApplicationInfoBundleIdentifierKey, _RPLogSetLogLevel, 
+                       _RPRecordingErrorDomain, _RPVideoEditorExtensionAppNameKey, 
+                       _RPVideoEditorExtensionBundleIdentifierKey, _RPVideoEditorExtensionFileAttachmentKey, 
+                       _RPVideoEditorExtensionMoviePathKey, _RPVideoEditorExtensionOverrideShareMessageKey, 
+                       _RPVideoEditorExtensionOverrideTintColorKey, _RPVideoSampleOrientationKey, 
+                       _ReplayKitVersionNumber, _ReplayKitVersionString, ___RPLogLevel ]
+    objc-classes:    [ RPAudioMixUtility, RPBroadcastActivityExtensionHostContext, 
                        RPBroadcastActivityHostViewController, RPBroadcastActivityViewController, 
                        RPBroadcastConfiguration, RPBroadcastController, RPBroadcastExtensionHostContext, 
-                       RPBroadcastExtensionProxy, RPBroadcastHandler, RPBroadcastHostViewController, 
-                       RPBroadcastMP4ClipHandler, RPBroadcastPickerExtensionHostContext, 
-                       RPBroadcastPickerHostViewController, RPBroadcastPickerStandaloneViewController, 
-                       RPBroadcastSampleHandler, RPBroadcastViewController, RPDaemonProxy, 
-                       RPExtensionContext, RPExtensionHostContext, RPFlatVideoOverlayButton, 
-                       RPHighFidelityVideoOverlayButton, RPModalPresentationWindow, 
-                       RPPipView, RPPipViewController, RPPreviewViewController, RPScreenRecorder, 
-                       RPStoreInfo, RPStoreManager, RPSystemBroadcastPickerView, 
-                       RPSystemBroadcastPickerViewController, RPTouchPassthroughView, 
-                       RPVideoEditorExtensionHostContext, RPVideoEditorHostViewController ]
+                       RPBroadcastHandler, RPBroadcastHostViewController, RPBroadcastMP4ClipHandler, 
+                       RPBroadcastSampleHandler, RPDaemonProxy, RPExtensionContext, 
+                       RPExtensionHostContext, RPFlatVideoOverlayButton, RPHighFidelityVideoOverlayButton, 
+                       RPModalPresentationWindow, RPPipView, RPPipViewController, 
+                       RPPreviewViewController, RPScreenRecorder, RPStoreInfo, RPStoreManager, 
+                       RPSystemBroadcastPickerView, RPVideoEditorExtensionHostContext, 
+                       RPVideoEditorHostViewController ]
 ...

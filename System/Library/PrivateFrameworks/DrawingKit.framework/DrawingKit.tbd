@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C4DD9A20-7E52-316B-9B89-E9E0ED569EA1
+  - target:          x86_64-ios-simulator
+    value:           289D4123-D1CD-3CEF-9E92-F88691131825
+  - target:          arm64-ios-simulator
+    value:           2A25C646-55A8-3A1C-9E46-B3A960F72610
+install-name:    '/System/Library/PrivateFrameworks/DrawingKit.framework/DrawingKit'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CGPointIsUnrepresentable, _CGRectIsUnrepresentable, _DKDistanceBetweenPoints, 
+                       _DKDrawingIsValid, _DKInkViewTouchesBeganNotification, _DKInkViewTouchesEndedLocationInViewUserInfoKey, 
+                       _DKInkViewTouchesEndedNotification, _DKIsDarkMode, _DKRenderPointWidthForPoint, 
+                       _HW_CGRectFromIntegralData, _HW_CGSizeFromIntegralData, _HW_DataFromIntegralCGRect, 
+                       _HW_DataFromIntegralCGSize, _HW_FloatFromUInt16, _HW_MillisFromNSTimeInterval, 
+                       _HW_NSTimeIntervalFromMillis, _HW_UInt16FromFloat, _MaxForceValue, 
+                       _MaxVelocityValue, _NSStringFromVectorFloat4 ]
+    objc-classes:    [ DKDrawing, DKDrawingStroke, DKDrawingStrokePoint, DKInkThumbnailRenderer, 
+                       DKInkView, HWEncoding, HWHandwritingItem ]
+...

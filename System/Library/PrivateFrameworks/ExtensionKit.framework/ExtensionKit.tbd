@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           14744B93-FDFC-3C8C-A9C2-EE0811E2B2E1
+  - target:          arm64-ios-simulator
+    value:           AA5BE09B-61F9-3C39-A2DE-4851D4AB95D1
+install-name:    '/System/Library/PrivateFrameworks/ExtensionKit.framework/ExtensionKit'
+current-version: 17.3
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _EXExtensionIsPredicateSafeToExecuteWithObject, _EXExtensionIsSafeKeyPathForObject, 
+                       _EXExtensionMain, _EXGetExtensionClass, _EXGetExtensionContextInternalClass, 
+                       _EXGetExtensionContextVendorClass ]
+    objc-classes:    [ EXSwiftUI_Subsystem ]
+...

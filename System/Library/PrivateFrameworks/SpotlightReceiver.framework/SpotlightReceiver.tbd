@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3F837C4B-A008-3627-BF5B-DB7B2633A478
+  - target:          x86_64-ios-simulator
+    value:           36FBCDBF-54C8-3F62-BE4C-B79A77CBFD00
+  - target:          arm64-ios-simulator
+    value:           5C5D1923-A25C-3611-881E-E9E46D6DBB5F
+install-name:    '/System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _CSCoderArrayCount ]
+    objc-classes:    [ SpotlightReceiverDelegate, SpotlightReceiverSetupInfo ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SpotlightReceiverEntitlement, _SpotlightReceiverRegister, 
+                       _SpotlightReceiverVersionNumber, _SpotlightReceiverVersionString, 
+                       _SpotlightSenderEntitlement ]
+    objc-classes:    [ CSRecieverConnection ]
+...

@@ -1,10 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8F7F035C-BE0A-308C-BE4A-9DED5EE298FD' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           7548EF04-AB78-3FE8-BABE-61D02E49EF67
+  - target:          arm64-ios-simulator
+    value:           2D30482C-DF12-3336-AF2E-918F96101804
 install-name:    '/System/Library/Frameworks/CryptoTokenKit.framework/CryptoTokenKit'
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 487.0.1
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _TKClientTokenServerPortName, _TKEntitlementSlotType, _TKErrorDomain, 
                        _TKNotifyNameFirstSlot, _TKProtocolSlotClientName, _TKProtocolSlotRegistryName, 
                        _TKProtocolTokenPairingNotificationName, _TKRegisterOptionRemoveObjects, 
@@ -16,7 +24,7 @@ exports:
                        _TKSmartCardSlotStateKey, _TKTokenClassDriverApplicationIDKey, 
                        _TKTokenClassDriverClassIDKey, _TKTokenClassDriverClassNameKey, 
                        _TKTokenTypeKey, _TKTokenWatcherServerStartedNotification, 
-                       _TKTransportSlotName, _TKUnderlyingAKSErrorKey ]
+                       _TKTransportSlotName, _TKUnderlyingAKSErrorKey, _kTKTokenAccessUserPromptInfo ]
     objc-classes:    [ TKBERTLVRecord, TKClientToken, TKClientTokenAdvertisedItem, 
                        TKClientTokenObject, TKClientTokenSession, TKCompactTLVRecord, 
                        TKSharedResource, TKSharedResourceSlot, TKSimpleTLVRecord, 
@@ -27,6 +35,7 @@ exports:
                        TKSmartCardUserInteractionForConfirmation, TKSmartCardUserInteractionForPINOperation, 
                        TKSmartCardUserInteractionForSecurePINChange, TKSmartCardUserInteractionForSecurePINVerification, 
                        TKSmartCardUserInteractionForStringEntry, TKTLVRecord, TKToken, 
+                       TKTokenAccessRegistry, TKTokenAccessRequest, TKTokenAccessUserPromptInfo, 
                        TKTokenAuthOperation, TKTokenBaseContext, TKTokenConfiguration, 
                        TKTokenConfigurationConnection, TKTokenConfigurationTransaction, 
                        TKTokenDriver, TKTokenDriverConfiguration, TKTokenID, TKTokenKeyAlgorithm, 

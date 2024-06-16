@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4474DA63-9FCB-3388-AC07-3EAA9E3CD27A
+  - target:          arm64-ios-simulator
+    value:           9A3B4F47-EE12-3119-A925-0EE073C18B91
+install-name:    '/System/Library/PrivateFrameworks/FSEvents.framework/FSEvents'
+current-version: 1290
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FSEventStreamCopyDescription, _FSEventStreamCopyPathsBeingWatched, 
+                       _FSEventStreamCreate, _FSEventStreamCreateRelativeToDevice, 
+                       _FSEventStreamFlushAsync, _FSEventStreamFlushSync, _FSEventStreamGetDeviceBeingWatched, 
+                       _FSEventStreamGetLatestEventId, _FSEventStreamInvalidate, 
+                       _FSEventStreamRelease, _FSEventStreamRetain, _FSEventStreamScheduleWithRunLoop, 
+                       _FSEventStreamSetDispatchQueue, _FSEventStreamSetExclusionPaths, 
+                       _FSEventStreamShow, _FSEventStreamStart, _FSEventStreamStop, 
+                       _FSEventStreamUnscheduleFromRunLoop, _FSEventsCopyUUIDForDevice, 
+                       _FSEventsGetCurrentEventId, _FSEventsGetLastEventIdForDeviceBeforeTime, 
+                       _FSEventsPurgeEventsForDeviceUpToEventId ]
+...

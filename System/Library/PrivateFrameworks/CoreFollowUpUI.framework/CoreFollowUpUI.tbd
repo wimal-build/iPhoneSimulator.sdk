@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D68D5314-3840-3D9B-9338-F9E8B5032CA3
+  - target:          arm64-ios-simulator
+    value:           110CA412-6A15-3DCC-82A3-448C2A0FDEA1
+install-name:    '/System/Library/PrivateFrameworks/CoreFollowUpUI.framework/CoreFollowUpUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CoreFollowUpUIVersionNumber, _CoreFollowUpUIVersionString, 
+                       _SPYGLASS_START_USING_ICLOUD_UID, _SPYGLASS_VERIFY_PRIMARY_EMAIL_UID, 
+                       _SPYGLASS_VERIFY_TERMS_UID, _createFollowUpSubtitle, _createFollowUpTitle ]
+    objc-classes:    [ FLExtensionContext, FLExtensionViewController, FLFollowUpActionHandler, 
+                       FLHeaderCell, FLHostViewController, FLNetworkObserver, FLNetworkStatePrompter, 
+                       FLPreferencesController, FLPreferencesFollowUpItemListViewController, 
+                       FLSpecifierTapHandler, FLViewExtensionLoader, _FLNetworkObserverBlock ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           AEA69B70-3F90-3769-AA47-4E74F4656685
+  - target:          arm64-ios-simulator
+    value:           299622E4-32D5-39EA-AF4B-A1F5B578D431
+install-name:    '/System/Library/PrivateFrameworks/ShazamKitUI.framework/ShazamKitUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ SHListeningLayer ]
+...

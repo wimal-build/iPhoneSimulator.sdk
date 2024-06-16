@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           31F38446-9CA5-3943-963C-719B68E03337
+  - target:          x86_64-ios-simulator
+    value:           DBBA578D-DBEA-3951-A32F-5A2BB8DD656D
+  - target:          arm64-ios-simulator
+    value:           7D285EE7-EA81-32A8-996B-F6FDEFA3434E
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAIMAPNotes.framework/DAIMAPNotes'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ DAIMAPNotesAccount ]
+...

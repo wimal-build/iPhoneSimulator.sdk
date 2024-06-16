@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           E11A5B16-0A45-3B4B-A191-3C414B35689D
+  - target:          arm64-ios-simulator
+    value:           A0E69FF6-AB9A-300E-A150-6D1606CC5076
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libmetal_timestamp.dylib'
+current-version: 31001.40
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _getMetalTimeStamp ]
+...

@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A590A8AE-DDB2-3CA1-B147-1DCBD0192421
+  - target:          x86_64-ios-simulator
+    value:           05FC4D76-9ABF-397F-B4BD-14A62041D94F
+  - target:          arm64-ios-simulator
+    value:           51C08194-646E-3C4F-9F0D-482F9671D4CD
+install-name:    '/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ HLPHelpUsageController, HLPURLDataCache, HLPURLDataCacheController, 
+                       HLPURLImageCacheController, HLPURLSession, HLPURLSessionTaskHandlers ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HLPAnalyticsKeyBookID, _HLPAnalyticsKeyBookVersion, _HLPAnalyticsKeyExternalURL, 
+                       _HLPAnalyticsKeyFromTopic, _HLPAnalyticsKeyMode, _HLPAnalyticsKeyProduct, 
+                       _HLPAnalyticsKeyProductVersion, _HLPAnalyticsKeySession, _HLPAnalyticsKeySource, 
+                       _HLPAnalyticsKeyTopic, _HLPAnalyticsNullValue, _HLPAnalyticsSessionCounterContentViewed, 
+                       _HLPAnalyticsViewModeDark, _HLPAnalyticsViewModeLight, _HLPAnalyticsViewModeUnspecified, 
+                       _HLPAnalyticsViewSourceTypeDeepLink, _HLPAnalyticsViewSourceTypeHistoryBack, 
+                       _HLPAnalyticsViewSourceTypeHistoryForward, _HLPAnalyticsViewSourceTypeLanding, 
+                       _HLPAnalyticsViewSourceTypeReload, _HLPAnalyticsViewSourceTypeSearch, 
+                       _HLPAnalyticsViewSourceTypeTOC, _HLPAnalyticsViewSourceTypeTopicLink, 
+                       _HLPAnalyticsViewSourceTypeUndefined, _HLPHelpKitAnalyticsPrefix, 
+                       _HLPLogForCategory, _HelpKitVersionNumber, _HelpKitVersionString, 
+                       _TPSURLSessionAuthInteractivityInteractive, _TPSURLSessionAuthInteractivitySilentOnly, 
+                       _TPSURLSessionAuthInteractivitySilentPreferred, __allowedClassesForIndexArchive, 
+                       _analyticsViewModeFromInterfaceStyle, _gHLPHelpTopicViewSpacerWidth, 
+                       _kHLPHelpBookLocaleListName, _kHLPHelpBookPreferredLanguageOverride, 
+                       _kHLPHelpTableOfContentCellPadding, _kHLPHelpTableOfContentCellSectionImageSize, 
+                       _kHLPHelpTopicViewControllerLastTopicHistoryItem, _kHLPHyphenationFactorAccessibility, 
+                       _kHLPHyphenationFactorDefault, _kHLPReachabilityChangedNotification, 
+                       _kTPSReachabilityChangedNotification ]
+    objc-classes:    [ HLPAnalyticsEvent, HLPAnalyticsEventContentViewed, HLPAnalyticsEventController, 
+                       HLPAnalyticsEventSearchUsed, HLPAnalyticsEventTOCUsed, HLPCommonDefines, 
+                       HLPHelpBookController, HLPHelpItem, HLPHelpLoadingView, HLPHelpLocale, 
+                       HLPHelpLocaleController, HLPHelpSearchIndexController, HLPHelpSearchResult, 
+                       HLPHelpSearchResultTableViewController, HLPHelpSectionItem, 
+                       HLPHelpTableOfContentCell, HLPHelpTableOfContentViewController, 
+                       HLPHelpTopicHistoryItem, HLPHelpTopicItem, HLPHelpTopicViewController, 
+                       HLPHelpViewController, HLPLoadInfo, HLPReachability, HLPReachabilityManager, 
+                       HLPRemoteDataController, TPSCommonDefines, TPSDataCache, TPSDataCacheController, 
+                       TPSFileCacheController, TPSImageCacheController, TPSJSONCacheController, 
+                       TPSReachability, TPSReachabilityManager, TPSStringCacheController, 
+                       TPSURLSessionACAuthContext, TPSURLSessionACAuthHandler, TPSURLSessionHandler, 
+                       TPSURLSessionItem, TPSURLSessionManager, TPSURLSessionTask, 
+                       TPSVideoCacheController ]
+...

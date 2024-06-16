@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A351F64F-8F9E-3A7B-BCE1-F03293AAB36F
+  - target:          x86_64-ios-simulator
+    value:           368F522A-EBC3-31D3-A869-2BDBDCAE5969
+  - target:          arm64-ios-simulator
+    value:           4E2EC52A-4CA8-35D9-8203-9FADDB2F133B
+install-name:    '/System/Library/PrivateFrameworks/NanoUniverse.framework/NanoUniverse'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _NUMapFile, _NUProgramInit, _NUProgramValidate, _NUUnmapFile, 
+                       __Z13NULoadTextureP8NSString, __Z13NULoadTexturePK9NUMemFile, 
+                       __Z23NULoadTextureFromMemoryPKhj, ___NUCheckGLError ]
+    objc-classes:    [ NUPortal ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NULoadMtlTextureFromMemory, _NULoggingObjectForDomain, _NanoUniverseVersionNumber, 
+                       _NanoUniverseVersionString, __Z10UMQuatMakeDv3_f, __Z10UMQuatMakeDv3_fS_S_, 
+                       __Z10UMQuatMakefff, __Z11UMTranslate8float4x4Dv3_f, __Z11UMTranspose8float3x3, 
+                       __Z14UMFloat3x3Make6UMQuat, __Z14UMFloat3x3MakeDv3_fS_S_, 
+                       __Z19UMFloat4x4MakeOrthoffffff, __Z19UMFloat4x4MakeScaleDv3_f, 
+                       __Z19UMFloat4x4MakeScalef, __Z20UMFloat4x4MakeLookAtDv3_fS_S_, 
+                       __Z21UMFloat4x4MakeRotateXf, __Z21UMFloat4x4MakeRotateZf, 
+                       __Z23UMFloat4x4MakeTranslateDv3_f, __Z25UMFloat4x4MakePerspectiveffff, 
+                       __Z5UMMul6UMQuatS_, __Z5UMMul8float3x3Dv3_f, __Z5UMMul8float3x3S_, 
+                       __Z5UMMul8float4x4Dv4_f, __Z5UMMul8float4x4S_, __Z7UMSlerp6UMQuatS_f, 
+                       __Z8UMNegate8float3x3, _kUMFloat4x4Identity, _kUMFloat4x4Zero ]
+    objc-classes:    [ NUAnimation, NUMetalQuad, NURenderer, NUResources, NUScene, 
+                       NUSpheroid, NUView, _NUGeometry ]
+...

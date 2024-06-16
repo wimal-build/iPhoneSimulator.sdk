@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           27F7CCA3-3741-36EF-8BFE-05C7BDA538E4
+  - target:          arm64-ios-simulator
+    value:           0855F030-2627-32FE-8D29-FBE1BB0DF45D
+install-name:    '/System/Library/PrivateFrameworks/InternationalSupport.framework/InternationalSupport'
+current-version: 59
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _InternationalSupportVersionNumber, _InternationalSupportVersionString ]
+    objc-classes:    [ ISUtilities ]
+...

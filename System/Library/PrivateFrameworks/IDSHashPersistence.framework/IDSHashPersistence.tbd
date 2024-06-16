@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           BA7084B3-53BC-373C-96BF-8E8515E37A6A
+  - target:          x86_64-ios-simulator
+    value:           71997937-CB20-353C-952A-0A6DB136173A
+  - target:          arm64-ios-simulator
+    value:           065092A4-9D40-385B-9565-7EC063C1D07E
+install-name:    '/System/Library/PrivateFrameworks/IDSHashPersistence.framework/IDSHashPersistence'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ IDSMessageHashStore ]
+...

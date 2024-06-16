@@ -1,16 +1,22 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: C5CA84D0-34F9-3040-BC8D-79D6D36C2875' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           96180D47-0669-3034-BD86-5579E9B1B436
+  - target:          x86_64-ios-simulator
+    value:           07721573-8BA0-38DA-A13D-4A8A36D70BA1
+  - target:          arm64-ios-simulator
+    value:           3C7136A3-0608-30F2-A774-C129871BA772
 install-name:    '/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount'
-current-version: 331.70.6
-exports:         
-  - archs:           [ i386 ]
+current-version: 364.0.3
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _VSEntitlementNameBulletinService, _VSStoreProviderResponseKeyAppStoreIdentifier, 
                        _VSSubscriptionFetchOptionIncludeUninstalledApps ]
     objc-classes:    [ VSBundlePrivacyInfo, VSCookieServer, VSDemoProviderServer, 
                        VSDeveloperAttribute, VSStoreAuthenticationNotificationOperation ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _VSAccountProviderAuthenticationSchemeAPI, _VSAccountProviderAuthenticationSchemeSAML, 
                        _VSAccountStoreDidChangeNotification, _VSActiveSubscriptionsDidChangeNotification, 
                        _VSAllKnownTemplateElements, _VSBuddyBundleID, _VSBundleURLForProcessIdentifier, 
@@ -81,8 +87,8 @@ exports:
                        VSAccountManager, VSAccountManagerResult, VSAccountMetadata, 
                        VSAccountMetadataRequest, VSAccountProviderResponse, VSAccountSaveOperation, 
                        VSAccountSerializationCenter, VSAccountStore, VSAppChannelsFilter, 
-                       VSAppInstallationInfoCenter, VSAppInstallationOperation, VSAsyncOperation, 
-                       VSAuditToken, VSBackgroundTask, VSBlockBasedValueTransformer, 
+                       VSAppInstallationInfoCenter, VSAppInstallationOperation, VSApplicationBootURLOperation, 
+                       VSAsyncOperation, VSAuditToken, VSBackgroundTask, VSBlockBasedValueTransformer, 
                        VSCasePreservingString, VSCompoundValueTransformer, VSDelayOperation, 
                        VSDeveloperIdentityProviderChangeOperation, VSDeveloperIdentityProviderFetchAllOperation, 
                        VSDeveloperSettings, VSDeveloperSettingsFetchOperation, VSDeveloperSettingsUpdateOperation, 

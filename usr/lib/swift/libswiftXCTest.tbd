@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C1BBD39E-AF42-3A40-A21A-016A4AA987C4', 'x86_64: 4D7F3222-63F1-3489-A348-8D96900C43D7' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C1BBD39E-AF42-3A40-A21A-016A4AA987C4
+  - target:          x86_64-ios-simulator
+    value:           11E7FF13-999B-36F3-8EAC-1DDFCD72B8B8
+  - target:          arm64-ios-simulator
+    value:           28418E86-1563-3297-A199-0E0559ED50F3
 install-name:    '/usr/lib/swift/libswiftXCTest.dylib'
 current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+swift-abi-version: 7
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '_$s6XCTest12XCTAssertNil__4file4lineyypSgyKXK_SSyXKs12StaticStringVSutF', 
                        '_$s6XCTest13XCTAssertTrue__4file4lineySbyKXK_SSyXKs12StaticStringVSutF', 
                        '_$s6XCTest14XCTAssertEqual__8accuracy_4file4lineyxyKXK_xyKXKxSSyXKs12StaticStringVSutSFRzlF', 

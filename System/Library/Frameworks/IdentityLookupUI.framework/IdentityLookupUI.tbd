@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 18CE1D7E-1C64-30C1-8832-C7AD479464DD' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C8C1C8D9-A2BE-366B-8EF7-BE19EC2A8475
+  - target:          arm64-ios-simulator
+    value:           73126500-3327-3CD8-8139-9AD16CDDF0F1
 install-name:    '/System/Library/Frameworks/IdentityLookupUI.framework/IdentityLookupUI'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     objc-classes:    [ ILClassificationUIExtensionContext, ILClassificationUIExtensionHostContext, 
                        ILClassificationUIExtensionHostViewController, ILClassificationUIExtensionViewController ]
 ...

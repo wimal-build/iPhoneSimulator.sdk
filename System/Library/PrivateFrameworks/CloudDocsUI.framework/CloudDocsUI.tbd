@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           F0D69E06-FB90-3846-9C12-45649FFB6C50
+  - target:          x86_64-ios-simulator
+    value:           C91E27BE-0629-365C-A8BF-F16F69B9CC5E
+  - target:          arm64-ios-simulator
+    value:           50C2D24C-A274-33C4-8864-AAF85DA9E9D8
+install-name:    '/System/Library/PrivateFrameworks/CloudDocsUI.framework/CloudDocsUI'
+current-version: 160
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BRCompareImages, _BRFormatPhoneNumber, _BRLayerSnapshot, 
+                       _BRSnapshotOfView, _BRUITestSharingControllerUIValidationMessageName, 
+                       _BRUITestViewHierarchyLayerSnapshot, _BRUITestViewHierarchyRecursiveDescription, 
+                       _CDAddLocalizedSuffixForType, __CDAdaptLocalizedStringForItemType, 
+                       __UIDocumentListControllerPresentOSAlert, __UIDocumentPickerCollectionViewCompactIconTrait, 
+                       __UIDocumentPickerCollectionViewListModeTrait, __UIDocumentPickerCollectionViewTightMarginsTrait, 
+                       __UIDocumentPickerDescriptorCloudEnabledStatusDidChange, __UIDocumentPickerManageIdentifier, 
+                       __UIDocumentPickerModelModifiedThumbnailKey, __UIDocumentPickerModelUpdatedNotification, 
+                       __UIDocumentPickerModelUpdatedNotificationChangesKey, __UIDocumentPickerModelUpdatedNotificationModelKey, 
+                       __UIDocumentPickerUnavailableIdentifier, __UIDocumentPickerUserDefaultsEnabledKey, 
+                       __UIDocumentPickerUserDefaultsKey, __UIDocumentPickerUserDefaultsOrderKey, 
+                       _cdui_default_log, _cdui_perf_log ]
+    objc-classes:    [ BRGeometry, BRObservableFile, BRUITestDiagnostic, BRUITestMessageCenter, 
+                       _UIDocumentListController, _UIDocumentPickerCloudDirectoryObserver, 
+                       _UIDocumentPickerContainerItem, _UIDocumentPickerRootContainerModel, 
+                       _UIDocumentPickerURLContainerModel, _UIDocumentSearchListController, 
+                       _UIDocumentTargetSelectionController, _UIPreferredContentSizeRelayingNavigationController, 
+                       _UIViewServiceViewController ]
+...

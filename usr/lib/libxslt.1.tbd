@@ -1,12 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 86E9DA49-FF72-344F-874C-DC5F018A044C', 'x86_64: 142446BD-97BF-34AA-8EC9-9DD51CA1455F' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           BA06859C-7A93-3E6F-9410-B4FBB45355AB
+  - target:          x86_64-ios-simulator
+    value:           0C897970-4844-3453-A1DE-2F352298095A
+  - target:          arm64-ios-simulator
+    value:           AF2B3414-B058-39E7-9D1E-A0B7B8294034
 install-name:    '/usr/lib/libxslt.1.dylib'
 current-version: 3.26
 compatibility-version: 3
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _xsltComputingGlobalVarMarker, _xsltCopyTree, _xsltDefaultTrace ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _xslAddCall, _xslDebugStatus, _xslDropCall, _xslHandleDebugger, 
                        _xsltAddKey, _xsltAddStackElemList, _xsltAddTemplate, _xsltAllocateExtra, 
                        _xsltAllocateExtraCtxt, _xsltApplyAttributeSet, _xsltApplyImports, 
@@ -17,19 +25,17 @@ exports:
                        _xsltCheckExtURI, _xsltCheckRead, _xsltCheckWrite, _xsltChoose, 
                        _xsltCleanupGlobals, _xsltCleanupTemplates, _xsltComment, 
                        _xsltCompileAttr, _xsltCompilePattern, _xsltComputeSortResult, 
-                       _xsltComputingGlobalVarMarker, _xsltCopy, _xsltCopyNamespace, 
-                       _xsltCopyNamespaceList, _xsltCopyOf, _xsltCopyTextString, 
-                       _xsltCopyTree, _xsltCreateRVT, _xsltDebug, _xsltDebugDumpExtensions, 
+                       _xsltCopy, _xsltCopyNamespace, _xsltCopyNamespaceList, _xsltCopyOf, 
+                       _xsltCopyTextString, _xsltCreateRVT, _xsltDebug, _xsltDebugDumpExtensions, 
                        _xsltDebugGetDefaultTrace, _xsltDebugSetDefaultTrace, _xsltDecimalFormatGetByName, 
-                       _xsltDefaultSortFunction, _xsltDefaultTrace, _xsltDoSortFunction, 
-                       _xsltDocDefaultLoader, _xsltDocumentComp, _xsltDocumentElem, 
-                       _xsltDocumentFunction, _xsltDocumentSortFunction, _xsltElement, 
-                       _xsltElementAvailableFunction, _xsltEngineVersion, _xsltEvalAVT, 
-                       _xsltEvalAttrValueTemplate, _xsltEvalGlobalVariables, _xsltEvalOneUserParam, 
-                       _xsltEvalStaticAttrValueTemplate, _xsltEvalTemplateString, 
-                       _xsltEvalUserParams, _xsltEvalXPathPredicate, _xsltEvalXPathString, 
-                       _xsltEvalXPathStringNs, _xsltExtElementLookup, _xsltExtMarker, 
-                       _xsltExtModuleElementLookup, _xsltExtModuleElementPreComputeLookup, 
+                       _xsltDefaultSortFunction, _xsltDoSortFunction, _xsltDocDefaultLoader, 
+                       _xsltDocumentComp, _xsltDocumentElem, _xsltDocumentFunction, 
+                       _xsltDocumentSortFunction, _xsltElement, _xsltElementAvailableFunction, 
+                       _xsltEngineVersion, _xsltEvalAVT, _xsltEvalAttrValueTemplate, 
+                       _xsltEvalGlobalVariables, _xsltEvalOneUserParam, _xsltEvalStaticAttrValueTemplate, 
+                       _xsltEvalTemplateString, _xsltEvalUserParams, _xsltEvalXPathPredicate, 
+                       _xsltEvalXPathString, _xsltEvalXPathStringNs, _xsltExtElementLookup, 
+                       _xsltExtMarker, _xsltExtModuleElementLookup, _xsltExtModuleElementPreComputeLookup, 
                        _xsltExtModuleFunctionLookup, _xsltExtModuleTopLevelLookup, 
                        _xsltExtensionInstructionResultFinalize, _xsltExtensionInstructionResultRegister, 
                        _xsltFindDocument, _xsltFindElemSpaceHandling, _xsltFindTemplate, 

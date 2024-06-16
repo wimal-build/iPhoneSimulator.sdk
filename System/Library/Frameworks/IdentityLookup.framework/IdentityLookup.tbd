@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A3C9B22E-1B26-307F-9AED-3996F48FD2C9' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           3BB3BA8D-B2A8-39CC-B599-AF8D8ACDF0C5
+  - target:          arm64-ios-simulator
+    value:           4133B845-35D3-3B8C-B909-1DD6EB53E619
 install-name:    '/System/Library/Frameworks/IdentityLookup.framework/IdentityLookup'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ILClassificationUIExtensionPointIdentifier, _ILDefaultLog, 
                        _ILMessageFilterErrorDomain, _ILMessageFilterExtensionPointIdentifier, 
                        _ILMessageFilterPrivateErrorDomain ]

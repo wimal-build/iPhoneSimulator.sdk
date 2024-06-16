@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           4C29A298-C47F-3FED-89AB-B03FAB69787E
+  - target:          x86_64-ios-simulator
+    value:           D1A44834-F6BE-3E8D-B4FE-35685EE1C690
+  - target:          arm64-ios-simulator
+    value:           69549209-7B17-335F-80A5-899D954D1ECE
+install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
+current-version: 1310.0.72
+parent-umbrella:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    umbrella:        System
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _ConvertHeaderBytes, _VersionString_SCCS_libdnssd, _get_rdata, 
+                       _get_string, _get_uint16, _get_uint32, _put_rdata, _put_string, 
+                       _put_uint16, _put_uint32 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _DNSServiceAddRecord, _DNSServiceBrowse, _DNSServiceBrowserCreate, 
+                       _DNSServiceConstructFullName, _DNSServiceCreateConnection, 
+                       _DNSServiceCreateDelegateConnection, _DNSServiceDiscoveryDeallocate, 
+                       _DNSServiceDiscoveryMachPort, _DNSServiceDiscovery_handleReply, 
+                       _DNSServiceEnumerateDomains, _DNSServiceGetAddrInfo, _DNSServiceGetPID, 
+                       _DNSServiceGetProperty, _DNSServiceNATPortMappingCreate, _DNSServiceProcessResult, 
+                       _DNSServiceQueryRecord, _DNSServiceReconfirmRecord, _DNSServiceRefDeallocate, 
+                       _DNSServiceRefSockFD, _DNSServiceRegister, _DNSServiceRegisterRecord, 
+                       _DNSServiceRemoveRecord, _DNSServiceResolve, _DNSServiceResolverResolve, 
+                       _DNSServiceSetDefaultDomainForUser, _DNSServiceSetDispatchQueue, 
+                       _DNSServiceSetResolverDefaults, _DNSServiceSleepKeepalive, 
+                       _DNSServiceSleepKeepalive_sockaddr, _DNSServiceUpdateRecord, 
+                       _PeerConnectionRelease, _TXTRecordContainsKey, _TXTRecordCreate, 
+                       _TXTRecordDeallocate, _TXTRecordGetBytesPtr, _TXTRecordGetCount, 
+                       _TXTRecordGetItemAtIndex, _TXTRecordGetLength, _TXTRecordGetValuePtr, 
+                       _TXTRecordRemoveValue, _TXTRecordSetValue ]
+...

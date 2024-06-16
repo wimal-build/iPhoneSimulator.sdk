@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2D9D2082-BAEE-39A6-A6AC-A11098EFB7FF', 'x86_64: 3EC7393C-CDD0-31E3-97D6-7AA4879D44E4' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C76B0FD8-49B1-3DE1-8CAA-29E9B6EC6DC6
+  - target:          x86_64-ios-simulator
+    value:           C4678F2F-2087-3630-997F-580CE79142E3
+  - target:          arm64-ios-simulator
+    value:           275FD244-AD08-372B-A688-4A50930EA73B
 install-name:    '/System/Library/Frameworks/MetalKit.framework/MetalKit'
-current-version: 141
-exports:         
-  - archs:           [ i386 ]
+current-version: 147.1
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _MTKTextureLoaderOptionCubeFromVerticalTexture, _MetalKitVersionNumber, 
                        _MetalKitVersionString, _PVR3SizedFormat, __MTKModelErrorWithCode, 
                        __MTKModelErrorWithCodeAndErrorString, __MTKModelErrorWithCodeAndUserInfo, 
@@ -17,7 +23,7 @@ exports:
     objc-classes:    [ MTKMeshBufferHolder, MTKMeshBufferZone, MTKTextureLoaderData, 
                        MTKTextureLoaderImageIO, MTKTextureLoaderKTX, MTKTextureLoaderMDL, 
                        MTKTextureLoaderPVR, MTKTextureLoaderPVR3, MTKTextureUploader ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MTKMetalVertexDescriptorFromModelIO, _MTKMetalVertexDescriptorFromModelIOWithError, 
                        _MTKMetalVertexFormatFromModelIO, _MTKModelErrorDomain, _MTKModelErrorKey, 
                        _MTKModelIOVertexDescriptorFromMetal, _MTKModelIOVertexDescriptorFromMetalWithError, 

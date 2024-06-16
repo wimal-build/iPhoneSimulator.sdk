@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B687E8E6-F148-30C5-B79D-BDF41002E820', 'x86_64: 16140F41-8345-3998-A1C3-FA706554570A' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           8F2BCB1F-4BA9-30CA-83B6-C9969D107788
+  - target:          x86_64-ios-simulator
+    value:           276CEE79-A651-3B1D-B39A-445B1951A808
+  - target:          arm64-ios-simulator
+    value:           DFC84D36-113B-3C71-9710-E44924F42682
 install-name:    '/System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity'
-current-version: 166
-exports:         
-  - archs:           [ i386 ]
+current-version: 171
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _AGPSessionCopyDetailedDescription, _AGPSessionCreate, _AGPSessionEvent, 
                        _AGPSessionMaximumSegmentSize, _AGPSessionRelease, _AGPSessionSendTo, 
                        _AGPSessionStatistics, _AWDMultipeerSessionMaxPeersInfoReadFrom, 
@@ -57,10 +63,10 @@ exports:
                        AWDMultipeerSessionPeerConnectivityInfo._timeDTLS, AWDMultipeerSessionPeerConnectivityInfo._timeICE, 
                        AWDMultipeerSessionPeerConnectivityInfo._timeOSPF, AWDMultipeerSessionPeerConnectivityInfo._timestamp, 
                        MCNearbyPeerTableViewHeader._spinner, MCNearbyPeerTableViewHeader._text ]
-    weak-def-symbols: [ __ZTI13AGPSetElement, __ZTI20AGPReceiveSetElement, __ZTI20AGPSendingSetElement, 
-                        __ZTI24AGPAssociationSetElement, __ZTS13AGPSetElement, __ZTS20AGPReceiveSetElement, 
-                        __ZTS20AGPSendingSetElement, __ZTS24AGPAssociationSetElement ]
-  - archs:           [ i386, x86_64 ]
+    weak-symbols:    [ __ZTI13AGPSetElement, __ZTI20AGPReceiveSetElement, __ZTI20AGPSendingSetElement, 
+                       __ZTI24AGPAssociationSetElement, __ZTS13AGPSetElement, __ZTS20AGPReceiveSetElement, 
+                       __ZTS20AGPSendingSetElement, __ZTS24AGPAssociationSetElement ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MCErrorDomain, _kMCSessionMaximumNumberOfPeers, _kMCSessionMinimumNumberOfPeers ]
     objc-classes:    [ MCAdvertiserAssistant, MCBrowserViewController, MCNearbyServiceAdvertiser, 
                        MCNearbyServiceBrowser, MCPeerID, MCSession ]

@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           18FFC829-C8C7-38B9-B759-F426321780CD
+  - target:          x86_64-ios-simulator
+    value:           2EF7CF3B-80EC-3AEE-9227-6066067547F6
+  - target:          arm64-ios-simulator
+    value:           546FD8E3-0FFE-3BB4-98F9-831637D6A580
+install-name:    '/System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ AIDAServiceContext._aaSignInFlowControllerDelegate, AIDAServiceContext._aaSignOutFlowControllerDelegate, 
+                       AIDAServiceContext._authenticationResults, AIDAServiceContext._cdpUiProvider, 
+                       AIDAServiceContext._operationUIPermissions, AIDAServiceContext._shouldForceOperation, 
+                       AIDAServiceContext._signInContexts, AIDAServiceContext._signOutContexts, 
+                       AIDAServiceContext._viewController ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AIDAAccountPropertyAltDSID, _AIDAAccountPropertyDSID, _AIDACoderErrorKey, 
+                       _AIDACoderSuccessKey, _AIDACoderTypeKey, _AIDAErrorDomain, 
+                       _AIDAServiceTypeCloud, _AIDAServiceTypeFaceTime, _AIDAServiceTypeGameCenter, 
+                       _AIDAServiceTypeMessages, _AIDAServiceTypeStore, _AppleIDAuthenticationAppleIDSettingsTokenIdentifier, 
+                       _AppleIDAuthenticationPBTokenIdentifier, _AppleIDAuthenticationServicesKey, 
+                       _AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier, 
+                       _AppleIDAuthenticationiCloudSettingsTokenIdentifier, __AIDALogSystem, 
+                       __AIDASignpostCreate, __AIDASignpostGetNanoseconds, __AIDASignpostLogSystem, 
+                       _kAIDADirectoryForServiceOwners, _kAuthenticationAlternateDSIDKey, 
+                       _kDeviceProvisioningMIDKey, _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, 
+                       _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey ]
+    objc-classes:    [ AIDAAccountManager, AIDAMutableServiceContext, AIDAServiceContext, 
+                       AIDAServiceOperationResult, AIDAServiceOwnersManager ]
+...

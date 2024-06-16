@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: E6C2ED2B-FE2E-3909-BA9C-256FBF472B03' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           93A5DB9D-2B4C-3BE7-AD4F-FCD4BACAB31F
+  - target:          arm64-ios-simulator
+    value:           11508888-E894-3B10-BED7-D484E494ADBB
 install-name:    '/usr/lib/libCTGreenTeaLogger.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ct_green_tea_logger_create, _ct_green_tea_logger_create_static, 
                        _ct_green_tea_logger_destroy, _ct_green_tea_logging_enabled, 
                        _getCTGreenTeaOsLogHandle, _kCTGreenTeaMessageDeleteLoggingFormat, 

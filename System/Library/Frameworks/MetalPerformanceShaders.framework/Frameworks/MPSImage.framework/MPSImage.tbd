@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           0E290C97-36CC-3C10-8ADA-FD0125FF9BAC
+  - target:          arm64-ios-simulator
+    value:           B865D373-9F74-3FEE-8BFF-BBB0158D0B82
+install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage'
+current-version: 124.0.27
+allowable-clients:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ MPSNeuralNetwork, MetalPerformanceShaders ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ MPSBinaryImageKernel._encode, MPSBinaryImageKernel._encodeData, 
+                       MPSUnaryImageKernel._encode, MPSUnaryImageKernel._encodeData, 
+                       MPSUnaryImageKernel._getPreferredTileSize ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MPSSubTileEncode ]
+    objc-classes:    [ MPSBinaryImageKernel, MPSImageAdd, MPSImageAreaMax, MPSImageAreaMin, 
+                       MPSImageArithmetic, MPSImageBilinearScale, MPSImageBox, MPSImageBox3D, 
+                       MPSImageCanny, MPSImageConversion, MPSImageConvolution, MPSImageCopyToMatrix, 
+                       MPSImageDilate, MPSImageDivide, MPSImageEDLines, MPSImageErode, 
+                       MPSImageEuclideanDistanceTransform, MPSImageFindKeypoints, 
+                       MPSImageGaussianBlur, MPSImageGaussianPyramid, MPSImageGuidedFilter, 
+                       MPSImageHistogram, MPSImageHistogramEqualization, MPSImageHistogramSpecification, 
+                       MPSImageIntegral, MPSImageIntegralOfSquares, MPSImageLanczosScale, 
+                       MPSImageLaplacian, MPSImageLaplacianPyramid, MPSImageLaplacianPyramidAdd, 
+                       MPSImageLaplacianPyramidSubtract, MPSImageMedian, MPSImageMultiply, 
+                       MPSImageNormalizedHistogram, MPSImageReduceColumnMax, MPSImageReduceColumnMean, 
+                       MPSImageReduceColumnMin, MPSImageReduceColumnSum, MPSImageReduceRowMax, 
+                       MPSImageReduceRowMean, MPSImageReduceRowMin, MPSImageReduceRowSum, 
+                       MPSImageScreenTelemetry, MPSImageSobel, MPSImageSpatioTemporalGuidedFilter, 
+                       MPSImageSpatioTemporalGuidedFilterDescriptor, MPSImageStatisticsMean, 
+                       MPSImageStatisticsMeanAndVariance, MPSImageStatisticsMinAndMax, 
+                       MPSImageSubtract, MPSImageTent, MPSImageThresholdBinary, MPSImageThresholdBinaryInverse, 
+                       MPSImageThresholdToZero, MPSImageThresholdToZeroInverse, MPSImageThresholdTruncate, 
+                       MPSImageTranspose, MPSMatrixCopyToImage, MPSUnaryImageKernel ]
+...

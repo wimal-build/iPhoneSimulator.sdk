@@ -1,14 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DE751FE0-B1ED-3CF8-A3B2-62A102EB35CC', 'x86_64: C879B2CB-FFE0-3853-8A63-F35EFF3667F2' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A2F69256-3804-38B7-9102-E4CCB9C4182A
+  - target:          x86_64-ios-simulator
+    value:           9A3B0436-90F5-3E45-965E-7FB0D6CB231D
+  - target:          arm64-ios-simulator
+    value:           3B3B1A3D-5617-3C0E-A9BE-94B58FDCCFC2
 install-name:    '/usr/lib/libutil.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
-    symbols:         [ _freemntopts, _getmnt_silent, _getmntoptnum, _getmntopts, 
-                       _getmntoptstr, _humanize_number, _pidfile_close, _pidfile_open, 
-                       _pidfile_remove, _pidfile_write, _realhostname, _realhostname_sa, 
-                       _reexec_to_match_kernel, _reexec_to_match_lp64ness, _tzlink, 
-                       _wipefs_alloc, _wipefs_except_blocks, _wipefs_free, _wipefs_include_blocks, 
-                       _wipefs_wipe ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _expand_number, _freemntopts, _getmnt_silent, _getmntoptnum, 
+                       _getmntopts, _getmntoptstr, _humanize_number, _pidfile_close, 
+                       _pidfile_open, _pidfile_remove, _pidfile_write, _realhostname, 
+                       _realhostname_sa, _reexec_to_match_kernel, _reexec_to_match_lp64ness, 
+                       _tzlink, _wipefs_alloc, _wipefs_except_blocks, _wipefs_free, 
+                       _wipefs_include_blocks, _wipefs_wipe ]
 ...

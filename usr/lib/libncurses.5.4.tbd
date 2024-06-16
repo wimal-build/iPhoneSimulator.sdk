@@ -1,15 +1,21 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FEB20B48-86EF-3069-A68B-0B268EEDF670', 'x86_64: 61C8A252-9F47-34FE-968E-13B048639BC5' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           90282660-B52F-3123-AFEC-9AE4CC4669B8
+  - target:          x86_64-ios-simulator
+    value:           55218192-5C9E-32F9-892D-22E55E7E0F36
+  - target:          arm64-ios-simulator
+    value:           699C4A5E-CE02-3975-9F61-086F251849CB
 install-name:    '/usr/lib/libncurses.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___ncurses_5_4VersionNumber, ___ncurses_5_4VersionString, 
                        __nc_hashed_db, __nc_memmove, __nc_varargs, __nc_vsscanf ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _BC, _COLORS, _COLOR_PAIR, _COLOR_PAIRS, _COLS, _ESCDELAY, 
                        _LINES, _PAIR_NUMBER, _PC, _SP, _TABSIZE, _UP, __nc_access, 
                        __nc_add_to_try, __nc_align_termtype, __nc_basename, __nc_baudrate, 

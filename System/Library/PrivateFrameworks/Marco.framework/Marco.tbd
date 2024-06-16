@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           1D0539F3-2A29-3431-9195-DD67DCFA4AAF
+  - target:          x86_64-ios-simulator
+    value:           D7F4916D-7046-37EA-85ED-2B0799A15B9C
+  - target:          arm64-ios-simulator
+    value:           A3F4B791-1805-3F26-B879-19E63D1DB340
+install-name:    '/System/Library/PrivateFrameworks/Marco.framework/Marco'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MarcoAction, _MarcoActionWithUserInfo, _MarcoAddCallMetric, 
+                       _MarcoAddCallMetric_Double, _MarcoAddCallMetric_Float, _MarcoAddCallMetric_Int, 
+                       _MarcoAddCallMetric_Short, _MarcoAddLogFile, _MarcoBeginSession, 
+                       _MarcoCanLogMadridMessageBodies, _MarcoCanLogMadridMessageBodiesCF, 
+                       _MarcoConnect, _MarcoDiconnect, _MarcoEndSession, _MarcoEvent, 
+                       _MarcoLog, _MarcoLogCallInfo, _MarcoLogLocalPreview, _MarcoLogLocalPreviewEvent, 
+                       _MarcoLogMadrid, _MarcoLogMadridCF, _MarcoLogMadridCF_V, _MarcoLogMadridEvent, 
+                       _MarcoLogMadridEventCF, _MarcoLogMadridEventCF_V, _MarcoLogMadridLevel, 
+                       _MarcoLogMadridLevelCF_V, _MarcoLogRegistration, _MarcoLoggingStringForMessageData, 
+                       _MarcoMadridLogLevel, _MarcoNoteCheckpoint, _MarcoNoteQuality, 
+                       _MarcoPerformSnapshot, _MarcoPulse, _MarcoSetFailureReason, 
+                       _MarcoSetInitiator, _MarcoSetRecipient, _MarcoShouldLog, _MarcoShouldLogCallMetric, 
+                       _MarcoShouldLogCheckpoints, _MarcoShouldLogLocalPreview, _MarcoShouldLogMadrid, 
+                       _MarcoShouldLogMadridCF, _MarcoShouldLogMadridEvent, _MarcoShouldLogMadridEventCF, 
+                       _MarcoShouldLogMadridLevel, _MarcoShouldLogMadridLevelCF, 
+                       _MarcoShouldLogQuality, _MarcoShouldLogRegistration, _MarcoStartPing, 
+                       _MarcoSyncLoggingsPreferences, _MarcoWarnLocalPreview, _MarcoWarnMadrid, 
+                       _MarcoWarnMadridCF, _MarcoWarnMadridCF_V, _MarcoWarnRegistration ]
+...

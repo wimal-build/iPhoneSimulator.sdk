@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0CB5DD05-558E-35D4-B233-818FF2796487
+  - target:          x86_64-ios-simulator
+    value:           C41309B2-D5D7-3CA7-8A98-6AFA11478446
+  - target:          arm64-ios-simulator
+    value:           937056F7-A0BB-365D-9DCF-C46FA730CB81
+install-name:    '/System/Library/PrivateFrameworks/CertUI.framework/CertUI'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _CertUILoggingWithCategory, _CertUI_CPLog_os_trace, __CertUINewLog ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CertUILoggingInitialize, __CertUILogObjects, _kCertUIMessagingCenterActualName, 
+                       _kCertUIMessagingCenterRelayName, _kCertUIPresentTrustInfoMessage, 
+                       _kCertUIServiceTypeHTTPS, _kCertUIServiceTypeIMAP, _kCertUIServiceTypeLDAP, 
+                       _kCertUIServiceTypeLDAPS, _kCertUIServiceTypePOP3, _kCertUIServiceTypeSMTP, 
+                       _kCertUIServiceTypeSSH, _kCertUITrustAllowCertificateTrustKey, 
+                       _kCertUITrustDigestKey, _kCertUITrustExpirationKey, _kCertUITrustHostnameKey, 
+                       _kCertUITrustIsRootCertificateKey, _kCertUITrustIssuerKey, 
+                       _kCertUITrustPromptOptionsAllowCertificateTrustKey, _kCertUITrustPromptOptionsShowCertificateDetailsKey, 
+                       _kCertUITrustPromptOptionsShowContinueKey, _kCertUITrustPropertiesKey, 
+                       _kCertUITrustPurposeKey, _kCertUITrustResponseKey, _kCertUITrustShowCertificateDetailsKey, 
+                       _kCertUITrustShowContinueKey, _kCertUITrustSubtitleKey, _kCertUITrustTitleKey ]
+    objc-classes:    [ CertUIConnectionDelegate, CertUIPrompt, CertUITrustManager, 
+                       CertUIUtilities ]
+    objc-ivars:      [ CertUIConnectionDelegate._connectionDisplayName, CertUIConnectionDelegate._delegateRespondsTo, 
+                       CertUIConnectionDelegate._forwardingDelegate, CertUIConnectionDelegate._trustManager, 
+                       CertUIPrompt._connectionDisplayName, CertUIPrompt._host, CertUIPrompt._responseBlock, 
+                       CertUIPrompt._service, CertUIPrompt._trust, CertUITrustManager._access ]
+...

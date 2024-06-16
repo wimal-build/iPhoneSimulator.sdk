@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           50425C9F-E7A6-3E16-B8C2-7718A7B8A5A5
+  - target:          arm64-ios-simulator
+    value:           BCC9C2EA-3151-3A81-9A14-B1474AED583B
+install-name:    '/System/Library/PrivateFrameworks/PDSAgent.framework/PDSAgent'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PDSClientVersionNumber, _PDSCurrentServerEnvironment, _PDSProtoBatchRegisterReqReadFrom, 
+                       _PDSProtoBatchRegisterRespReadFrom, _PDSProtoGSTokenAuthReadFrom, 
+                       _PDSProtoMapEntryReadFrom, _PDSProtoTopicReadFrom, _PDSProtoUserAuthReadFrom, 
+                       _PDSProtoUserPushTokenReadFrom, _PDSProtoUserPushTokenRegRequestReadFrom, 
+                       _PDSProtoUserPushTokenRegResponseReadFrom, _PDSProtocolVersionNumber, 
+                       _PDSStringForServerEnvironment ]
+    objc-classes:    [ PDSBag, PDSCDCacheContainer, PDSConfiguration, PDSCoordinator, 
+                       PDSDaemon, PDSDaemonListener, PDSEntryStore, PDSInternalDaemonListener, 
+                       PDSProtoBatchRegisterReq, PDSProtoBatchRegisterResp, PDSProtoGSTokenAuth, 
+                       PDSProtoMapEntry, PDSProtoTopic, PDSProtoUserAuth, PDSProtoUserPushToken, 
+                       PDSProtoUserPushTokenRegRequest, PDSProtoUserPushTokenRegResponse, 
+                       PDSRegisterMessage, PDSRequest, PDSRequestInfo, PDSRequestQueue, 
+                       PDSResponse, PDSUserTracker, PDSXPCClient, PDSXPCServer ]
+...

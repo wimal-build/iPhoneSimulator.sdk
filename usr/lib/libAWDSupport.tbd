@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A510599B-3AF9-3367-9695-52D933887CD3', 'x86_64: 6B07F210-0FCF-36D9-BFB8-F55FF40BE8D6' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           FC317946-E3E3-357D-A89D-7DD7661497AE
+  - target:          x86_64-ios-simulator
+    value:           73849E58-BEAD-30DE-9813-D8E040583A2F
+  - target:          arm64-ios-simulator
+    value:           BE096DC3-7DDE-3F90-BC1E-A1072786FBEF
 install-name:    '/usr/lib/libAWDSupport.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __Z12getHexStringy, __Z12getHexStringym, __Z14getStringVargsPKcz, 
                        __Z15getMetricStringR24MetricFileMetadataHelperj, __Z16getTriggerStringR24MetricFileMetadataHelperj, 
                        __Z19sConvertMetricToXpcRKNSt3__110shared_ptrI17AwdMetadataLoaderEERKNS_6vectorIhNS_9allocatorIhEEEE, 
@@ -181,19 +187,26 @@ exports:
                        __ZTVN10awdprofile14MetadataHeaderE, __ZTVN10awdprofile5FieldE, 
                        __ZTVN10awdprofile7EnumDefE, __ZTVN10awdprofile8MetadataE, 
                        __ZTVN10awdprofile9EnumValueE, __ZTVN5boost10filesystem6detail18utf8_codecvt_facetE ]
-    weak-def-symbols: [ __ZTIN5boost10filesystem16filesystem_errorE, __ZTIN5boost12noncopyable_11noncopyableE, 
-                        __ZTIN5boost6detail15sp_counted_baseE, __ZTIN5boost6detail17sp_counted_impl_pINS_10filesystem16filesystem_error5m_impEEE, 
-                        __ZTIN5boost6detail17sp_counted_impl_pINS_10filesystem6detail11dir_itr_impEEE, 
-                        __ZTIN5boost6system12system_errorE, __ZTIN5boost6system14error_categoryE, 
-                        __ZTINSt3__120__shared_ptr_emplaceI17AwdMetadataLoaderNS_9allocatorIS1_EEEE, 
-                        __ZTINSt3__120__shared_ptr_emplaceIN10awdprofile8MetadataENS_9allocatorIS2_EEEE, 
-                        __ZTSN5boost10filesystem16filesystem_errorE, __ZTSN5boost12noncopyable_11noncopyableE, 
-                        __ZTSN5boost6detail15sp_counted_baseE, __ZTSN5boost6detail17sp_counted_impl_pINS_10filesystem16filesystem_error5m_impEEE, 
-                        __ZTSN5boost6detail17sp_counted_impl_pINS_10filesystem6detail11dir_itr_impEEE, 
-                        __ZTSN5boost6system12system_errorE, __ZTSN5boost6system14error_categoryE, 
-                        __ZTSNSt3__120__shared_ptr_emplaceI17AwdMetadataLoaderNS_9allocatorIS1_EEEE, 
-                        __ZTSNSt3__120__shared_ptr_emplaceIN10awdprofile8MetadataENS_9allocatorIS2_EEEE ]
-  - archs:           [ x86_64 ]
+    weak-symbols:    [ __ZTIN5boost10filesystem16filesystem_errorE, __ZTIN5boost12noncopyable_11noncopyableE, 
+                       __ZTIN5boost6detail15sp_counted_baseE, __ZTIN5boost6detail17sp_counted_impl_pINS_10filesystem16filesystem_error5m_impEEE, 
+                       __ZTIN5boost6detail17sp_counted_impl_pINS_10filesystem6detail11dir_itr_impEEE, 
+                       __ZTIN5boost6system12system_errorE, __ZTIN5boost6system14error_categoryE, 
+                       __ZTINSt3__120__shared_ptr_emplaceI17AwdMetadataLoaderNS_9allocatorIS1_EEEE, 
+                       __ZTINSt3__120__shared_ptr_emplaceIN10awdprofile8MetadataENS_9allocatorIS2_EEEE, 
+                       __ZTSN5boost10filesystem16filesystem_errorE, __ZTSN5boost12noncopyable_11noncopyableE, 
+                       __ZTSN5boost6detail15sp_counted_baseE, __ZTSN5boost6detail17sp_counted_impl_pINS_10filesystem16filesystem_error5m_impEEE, 
+                       __ZTSN5boost6detail17sp_counted_impl_pINS_10filesystem6detail11dir_itr_impEEE, 
+                       __ZTSN5boost6system12system_errorE, __ZTSN5boost6system14error_categoryE, 
+                       __ZTSNSt3__120__shared_ptr_emplaceI17AwdMetadataLoaderNS_9allocatorIS1_EEEE, 
+                       __ZTSNSt3__120__shared_ptr_emplaceIN10awdprofile8MetadataENS_9allocatorIS2_EEEE ]
+  - targets:         [ x86_64-ios-simulator ]
+    weak-symbols:    [ __ZTI17AwdMetadataLoader, __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTS17AwdMetadataLoader, __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __Z14sGetMetricNameRKNSt3__110shared_ptrI17AwdMetadataLoaderEEj, 
                        __Z19sConvertMetricToXpcRKNSt3__110shared_ptrI17AwdMetadataLoaderEEPKhm, 
                        __Z20sConvertMetricToJsonRKNSt3__110shared_ptrI17AwdMetadataLoaderEEPKhm, 
@@ -208,15 +221,7 @@ exports:
                        __ZN3awd7reflect13getPackedTypeENS0_4TypeE, __ZN3awd8protobuf9skipFieldERN20wireless_diagnostics6google8protobuf2io16CodedInputStreamENS_7reflect8WireTypeE, 
                        __ZNK14MetadataHandle10getMessageEv, __ZNK14MetadataHandle7getEnumEv, 
                        __ZNK14MetadataHandle8getFieldEv, __ZNK17AwdMetadataLoader14getMetricIndexEv ]
-    weak-def-symbols: [ __ZTI17AwdMetadataLoader, __ZTIN5boost6system14error_category12std_categoryE, 
-                        __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTS17AwdMetadataLoader, __ZTSN5boost6system14error_category12std_categoryE, 
-                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                        __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __Z14sDumpMetricLogNSt3__110shared_ptrI17AwdMetadataLoaderEEPKvm10DumpFormat, 
                        __Z15sDumpMetricFileNSt3__110shared_ptrI17AwdMetadataLoaderEEPKvm10DumpFormat, 
                        __Z19sResolveMetricNamesRKNSt3__110shared_ptrI17AwdMetadataLoaderEERKNS_13unordered_setINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashISB_EENS_8equal_toISB_EENS9_ISB_EEEE, 

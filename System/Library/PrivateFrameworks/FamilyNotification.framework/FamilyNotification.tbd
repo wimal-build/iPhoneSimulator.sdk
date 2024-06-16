@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           3B9B4ED4-7C4F-3B32-8067-FF5D686A5FA8
+  - target:          arm64-ios-simulator
+    value:           54790FDA-D47B-3E37-827F-CD4060461921
+install-name:    '/System/Library/PrivateFrameworks/FamilyNotification.framework/FamilyNotification'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __FALogSystem ]
+    objc-classes:    [ FAFamilyNotification, FAFamilyNotifier ]
+...

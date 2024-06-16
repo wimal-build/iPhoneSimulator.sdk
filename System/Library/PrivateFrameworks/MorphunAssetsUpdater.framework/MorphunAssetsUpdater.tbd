@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4B27F03D-196F-3870-8E34-9E7710AC9BFD
+  - target:          arm64-ios-simulator
+    value:           F0B4D805-1665-3193-B071-9ADC11021F17
+install-name:    '/System/Library/PrivateFrameworks/MorphunAssetsUpdater.framework/MorphunAssetsUpdater'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MorphunAssetsUpdaterVersionNumber, _MorphunAssetsUpdaterVersionString ]
+    objc-classes:    [ ForceUpdateMessage, GetAssetPathsMessage, MorphunAssetsUpdater ]
+...

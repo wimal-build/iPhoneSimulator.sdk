@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C842D723-569F-386D-B181-8D0A6FBA3F14
+  - target:          x86_64-ios-simulator
+    value:           60A8C0AF-B5C9-35BA-8416-536A76B3BC6B
+  - target:          arm64-ios-simulator
+    value:           1A2124A8-C0A8-3086-9E79-18943E3CF8AD
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DACardDAV'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kDACardDAVAccountAltDSID, _kDACardDAVAccountAppleID ]
+    objc-classes:    [ CardDAVAccount, CardDAVDelegateInfo, CardDAVDelegateManager, 
+                       CardDAVLocalDBHelper, CardDAVPropertiesHelper, CardDAVVCardItem, 
+                       CardDAVVCardItemABImplementation, CardDAVVCardItemCNImplementation, 
+                       CardDAViCloudDelegateInfoProvider, DAABLegacyContact, DAABLegacyGroup, 
+                       DAContactsContact, DAContactsGroup ]
+...

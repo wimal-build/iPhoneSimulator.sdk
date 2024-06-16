@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           CF14EDBE-C0EE-3AC2-BCCF-AB26A62CFAE6
+  - target:          x86_64-ios-simulator
+    value:           B0279DA9-24B4-3DE7-BE07-DEADB2200E61
+  - target:          arm64-ios-simulator
+    value:           5E70A203-164E-3338-BF32-41BA05C04053
+install-name:    '/System/Library/PrivateFrameworks/IMTranscoding.framework/IMTranscoding'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IMTranscodeContextResponseDuration, _IMTranscodeErrorDomain ]
+    objc-classes:    [ IMTranscodeController ]
+...

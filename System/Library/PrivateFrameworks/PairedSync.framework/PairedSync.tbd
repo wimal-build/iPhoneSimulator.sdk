@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           45BAEF17-0C1D-3A5D-BB2D-D11D114C1EE0
+  - target:          x86_64-ios-simulator
+    value:           28588E6C-DCA4-3DF4-8285-BBE85D2F8DCD
+  - target:          arm64-ios-simulator
+    value:           87CF6DB9-B6C2-3FC4-AC9A-9E1A5C576885
+install-name:    '/System/Library/PrivateFrameworks/PairedSync.framework/PairedSync'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSStringFromPSYDeviceSyncState, _NSStringFromPSYSyncSessionActivityState, 
+                       _NSStringFromPSYSyncSessionState, _NSStringfromPSYSyncSessionType, 
+                       _PSYActivityProgressXPCInterface, _PSYActivityXPCInterface, 
+                       _PSYConnectionXPCInterface, _PSYDaemonDidLaunchDarwinNotification, 
+                       _PSYDeviceSyncDidCompleteDarwinNotification, _PSYErrorDomain, 
+                       _PSYErrorForCode, _PSYGetClientListDirectory, _PSYGetPreferredActivityOrdering, 
+                       _PSYInitialSyncStateMachServiceName, _PSYLastSyncSwitchIDNotification, 
+                       _PSYPairedSyncDomainName, _PSYPairingIDMigrationCountDictionaryKey, 
+                       _PSYProgressClientXPCInterface, _PSYProgressServerXPCInterface, 
+                       _PSYSyncSessionObserverXPCInterface, _PSYSyncSessionProviderXPCInterface, 
+                       _PSYSyncStateObserverXPCInterface, _PSYSyncStateProviderXPCInterface, 
+                       _PSYToolInterfaceXPCInterface, _psd_log, _psy_log ]
+    objc-classes:    [ PSYActivityInfo, PSYConnection, PSYDeviceSyncStateEntry, PSYInitialSyncStateObserver, 
+                       PSYOptions, PSYProgressObserver, PSYServiceSyncSession, PSYSyncCoordinator, 
+                       PSYSyncOptions, PSYSyncSession, PSYSyncSessionActivity, PSYSyncSessionObserver, 
+                       PSYSyncSessionUpdate, PSYTestInput ]
+...

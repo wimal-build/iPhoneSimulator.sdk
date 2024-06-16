@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2077289D-EAC9-349C-94CA-39E13D9FA541
+  - target:          arm64-ios-simulator
+    value:           785ED835-FAD0-3569-A0A9-34EEBA8D24CF
+install-name:    '/System/Library/PrivateFrameworks/StorageSettings.framework/StorageSettings'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _STFormattedShortDate, _STFormattedSize, _STFrameworkImage, 
+                       _STFrameworkLocStr, _STLoadHeaderIconForApp, _STLoadHeaderIconForAppID, 
+                       _STLoadTableIconForApp, _STLoadTableIconForAppID, _STLog, 
+                       _STLogDuration, _STLogSize, _STMCMDataContainersFromAppProxyWithPersonas, 
+                       _STMakeDirPath, _STPerformWithEnterprisePersona, _STPersonaCopyPersonaUniqueStrings, 
+                       _STPersonasAreSupported, _STSharedSizingQueue, _STSizeOfPath, 
+                       _STSizeOfSystemVolume, _STSizeOfURL, _STStorageAppKey, _STStorageAppsUpdatedNotification, 
+                       _STStorageFPItemKey, _STStorageIconKey, _STStorageInfoKey, 
+                       _STStorageItemPercentViewedKey, _STStorageItemURLKey, _STStorageLastUsedDateKey, 
+                       _STStorageLog, _STStoragePluginReloadTipsNotification, _STStoragePurgeableChangedNotification, 
+                       _STStorageSizeKey, _STStorageTipActivatingStringKey, _STStorageTipEnableButtonTitleKey, 
+                       _STStorageTipEventualGainKey, _STStorageTipImmediateGainKey, 
+                       _STStorageTipKindActionKey, _STStorageTipKindKey, _STStorageTipKindOptionKey, 
+                       _STStorageTipPercentKey, _STStorageTipReloadNotification, 
+                       _STStorageTipRepresentedAppKey, _STStorageTitleKey, _STStorageUsageChangedNotification, 
+                       _STStorageVersionTitleDisabledKey, _UsageGroupMediaType, _UsageGroupShowAll, 
+                       _UsageGroupShowAllSpecifier, _UsageGroupSpecifiers, _UsageMPTranslationName, 
+                       _UsageMediaAudioBooks, _UsageMediaAudioCourses, _UsageMediaAudioPodcasts, 
+                       _UsageMediaKindKey, _UsageMediaMyPhotoStream, _UsageMediaPhotoLibrary, 
+                       _UsageMediaSharedPhotoStream, _UsageMediaSyncedFromiTunes, 
+                       _UsageMediaVideoCourses, _UsageMediaVideoPodcasts, __CacheSizeForAppIdentifier ]
+    objc-classes:    [ STMAppDynamicSizeCacheEntry, STMAppDynamicSizer, STMAppPurgeableSizeCacheEntry, 
+                       STMAppPurgeableSizer, STMAppSizer, STMAppStaticSizeCacheEntry, 
+                       STMAppStaticSizer, STMSizeCache, STMSizeCacheEntry, STMSizeCacheEvent, 
+                       STMSizer, STStorageActionTip, STStorageActionTipItem, STStorageApp, 
+                       STStorageAppCell, STStorageAppHeaderCell, STStorageCacheDelete, 
+                       STStorageItemCell, STStorageOptionTip, STStoragePlugin, STStorageProgressView, 
+                       STStorageTableCell, STStorageTip, STStorageTipCell, STStorageTipInfoCell, 
+                       STUsagePseudoApp ]
+...

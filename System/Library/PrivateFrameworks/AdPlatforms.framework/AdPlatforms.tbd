@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DBBCFD2B-1CB1-3E92-A5D6-D3D6ED6AC94C
+  - target:          arm64-ios-simulator
+    value:           5DE6A2B5-0F42-3451-8915-D28F155A705F
+install-name:    '/System/Library/PrivateFrameworks/AdPlatforms.framework/AdPlatforms'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AdPlatformsVersionNumber, _AdPlatformsVersionString ]
+    objc-classes:    [ ADAttribution, ADStatusConditionRateLimitedObject, ADStatusConditions, 
+                       ADStatusConditionsImpl ]
+...

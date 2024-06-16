@@ -1,19 +1,25 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D4B395B-77BC-3FF0-AC6D-828A619404FE', 'x86_64: 748BD34F-6918-3C0D-AA73-EF8E6CDAC67D' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           AD98A976-1FC5-326E-B1EC-8702CEAEDF51
+  - target:          x86_64-ios-simulator
+    value:           F3770315-B305-3359-9C52-E62C512DF282
+  - target:          arm64-ios-simulator
+    value:           BE25FA7B-5899-35C2-9A90-62CC3F73988F
 install-name:    '/System/Library/Frameworks/SpriteKit.framework/SpriteKit'
-current-version: 25.36
-exports:         
-  - archs:           [ i386 ]
+current-version: 43
+exports:
+  - targets:         [ i386-ios-simulator ]
     objc-classes:    [ SKTwoSidedNode ]
     objc-ivars:      [ SKFieldNode._animationSpeed, SKFieldNode._field, SKFieldNode._region, 
                        SKFieldNode._smoothness, SKFieldNode._texture, SKNode._actions, 
                        SKNode._attributeValues, SKNode._children, SKNode._constraints, 
                        SKNode._info, SKNode._keyedActions, SKNode._keyedSubSprites, 
                        SKNode._name, SKNode._parent, SKNode._skcNode, SKNode._userData ]
-    weak-def-symbols: [ __ZTINSt3__117bad_function_callE, __ZTSNSt3__117bad_function_callE ]
-  - archs:           [ i386, x86_64 ]
+    weak-symbols:    [ __ZTINSt3__117bad_function_callE, __ZTSNSt3__117bad_function_callE ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SKComponentRGBABlack, _SKComponentRGBABlue, _SKComponentRGBAClear, 
                        _SKComponentRGBAGreen, _SKComponentRGBARed, _SKComponentRGBAWhite, 
                        _SKGLPrintError, _SKGLPrintFramebufferStatus, _SKGLPrintState, 

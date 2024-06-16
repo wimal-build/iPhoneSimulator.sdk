@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           48F8B060-79D1-302E-BA2C-81D5EB691800
+  - target:          arm64-ios-simulator
+    value:           2174324D-FEBE-3D54-B946-6863DF777364
+install-name:    '/System/Library/PrivateFrameworks/CombineCocoa.framework/CombineCocoa'
+current-version: 235.101
+...

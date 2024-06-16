@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F67628EC-6511-3392-B81D-34392F3647DE
+  - target:          arm64-ios-simulator
+    value:           AFB2A18E-3A0E-33C5-8FA2-B69501915AC7
+install-name:    '/System/Library/PrivateFrameworks/CloudKitCodeProtobuf.framework/CloudKitCodeProtobuf'
+current-version: 950
+swift-abi-version: 7
+...

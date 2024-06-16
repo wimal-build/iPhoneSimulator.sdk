@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           70DF0D73-7749-3692-BD0A-E4660A08A094
+  - target:          x86_64-ios-simulator
+    value:           43BFD2E7-95A4-3E24-8FFA-7BD5A225716C
+  - target:          arm64-ios-simulator
+    value:           ABA63E21-2EE6-36D4-9362-C54C324F40C3
+install-name:    '/System/Library/PrivateFrameworks/FindMyDeviceUI.framework/FindMyDeviceUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ FMDUIFMIPiCloudSettingsViewController ]
+...

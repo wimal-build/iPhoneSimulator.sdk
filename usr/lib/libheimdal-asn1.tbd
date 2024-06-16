@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6F271AE7-E916-379B-B746-84C44BB12724', 'x86_64: 820006A0-DC46-3627-8EF3-08FDD0E1A301' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7F6EABD4-299B-3381-8B5B-00DBFE7BF13E
+  - target:          x86_64-ios-simulator
+    value:           E58899E3-72A8-3AEB-9F56-A426BAE68288
+  - target:          arm64-ios-simulator
+    value:           B707C759-4BFC-38C5-A8EE-90615B5D442D
 install-name:    '/usr/lib/libheimdal-asn1.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ ___crashreporter_info__, __asn1_bmember_isset_bit, __asn1_bmember_put_bit, 
                        __asn1_copy, __asn1_copy_top, __asn1_decode, __asn1_decode_top, 
                        __asn1_encode, __asn1_free, __asn1_free_top, __asn1_length, 

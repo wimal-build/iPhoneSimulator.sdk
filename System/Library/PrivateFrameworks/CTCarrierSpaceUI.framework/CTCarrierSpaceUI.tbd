@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           E3F61A2F-A8B1-3875-B299-7FFF1CA95D7B
+  - target:          arm64-ios-simulator
+    value:           CB2004E9-8B97-3C52-9C34-62CD969FAD2B
+install-name:    '/System/Library/PrivateFrameworks/CTCarrierSpaceUI.framework/CTCarrierSpaceUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ CTCarrierSpaceUIPlanPurchaseWebViewController ]
+...

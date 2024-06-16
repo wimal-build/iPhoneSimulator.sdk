@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           387791F2-D4B7-3F42-8497-151C30F3ECD9
+  - target:          arm64-ios-simulator
+    value:           C32C8BAE-A40F-37D5-BC29-D8E99AA92A06
+install-name:    '/System/Library/PrivateFrameworks/ClipUIServices.framework/ClipUIServices'
+current-version: 20.20
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CPSBannerContainerViewBannerHasAccessibilityFocusKeyPath, 
+                       _CPSBannerContainerViewBannerHiddenKeyPath, _CPSBannerContainerViewTrackingBannerDismissGestureKeyPath ]
+    objc-classes:    [ CPSAppAttributionBanner, CPSBannerContainerView, CPSClipOverlayViewController, 
+                       CPSLaunchViewController, CPSLocationConsentViewController ]
+...

@@ -1,23 +1,29 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F94927EA-7D30-39F5-945B-9E36B189B546', 'x86_64: BFC39B23-349A-3C4C-A88B-CF532590FF36' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A0CE5F93-DB50-3D60-93D7-3F276F66501F
+  - target:          x86_64-ios-simulator
+    value:           27785569-237E-3241-A070-77A7997E8AD0
+  - target:          arm64-ios-simulator
+    value:           501FB48D-FEE1-30CD-8471-79B6F96BCE3D
 install-name:    '/usr/lib/libc++abi.dylib'
-current-version: 902
-exports:         
-  - archs:           [ i386 ]
+current-version: 904.4
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZNKSt16bad_array_length4whatEv, __ZNSt16bad_array_lengthC1Ev, 
                        __ZNSt16bad_array_lengthC2Ev, __ZNSt16bad_array_lengthD0Ev, 
                        __ZNSt16bad_array_lengthD1Ev, __ZNSt16bad_array_lengthD2Ev, 
                        __ZTISt16bad_array_length, __ZTSSt16bad_array_length, __ZTVSt16bad_array_length ]
-  - archs:           [ x86_64 ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __ZTIDu, __ZTIPDu, __ZTIPKDu, __ZTSDu, __ZTSPDu, __ZTSPKDu ]
-    weak-def-symbols: [ __ZdaPvSt11align_val_t, __ZdaPvSt11align_val_tRKSt9nothrow_t, 
-                        __ZdaPvm, __ZdaPvmSt11align_val_t, __ZdlPvSt11align_val_t, 
-                        __ZdlPvSt11align_val_tRKSt9nothrow_t, __ZdlPvm, __ZdlPvmSt11align_val_t, 
-                        __ZnamSt11align_val_t, __ZnamSt11align_val_tRKSt9nothrow_t, 
-                        __ZnwmSt11align_val_t, __ZnwmSt11align_val_tRKSt9nothrow_t ]
-  - archs:           [ i386, x86_64 ]
+    weak-symbols:    [ __ZdaPvSt11align_val_t, __ZdaPvSt11align_val_tRKSt9nothrow_t, 
+                       __ZdaPvm, __ZdaPvmSt11align_val_t, __ZdlPvSt11align_val_t, 
+                       __ZdlPvSt11align_val_tRKSt9nothrow_t, __ZdlPvm, __ZdlPvmSt11align_val_t, 
+                       __ZnamSt11align_val_t, __ZnamSt11align_val_tRKSt9nothrow_t, 
+                       __ZnwmSt11align_val_t, __ZnwmSt11align_val_tRKSt9nothrow_t ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __ZNKSt10bad_typeid4whatEv, __ZNKSt11logic_error4whatEv, __ZNKSt13bad_exception4whatEv, 
                        __ZNKSt13runtime_error4whatEv, __ZNKSt20bad_array_new_length4whatEv, 
                        __ZNKSt8bad_cast4whatEv, __ZNKSt9bad_alloc4whatEv, __ZNKSt9exception4whatEv, 
@@ -109,9 +115,9 @@ exports:
                        ___cxa_vec_cctor, ___cxa_vec_cleanup, ___cxa_vec_ctor, ___cxa_vec_delete, 
                        ___cxa_vec_delete2, ___cxa_vec_delete3, ___cxa_vec_dtor, ___cxa_vec_new, 
                        ___cxa_vec_new2, ___cxa_vec_new3, ___dynamic_cast, ___gxx_personality_v0 ]
-    weak-def-symbols: [ __ZTISt11range_error, __ZTISt12domain_error, __ZTISt12length_error, 
-                        __ZTISt12out_of_range, __ZTISt14overflow_error, __ZTISt15underflow_error, 
-                        __ZTISt16invalid_argument, __ZdaPv, __ZdaPvRKSt9nothrow_t, 
-                        __ZdlPv, __ZdlPvRKSt9nothrow_t, __Znam, __ZnamRKSt9nothrow_t, 
-                        __Znwm, __ZnwmRKSt9nothrow_t ]
+    weak-symbols:    [ __ZTISt11range_error, __ZTISt12domain_error, __ZTISt12length_error, 
+                       __ZTISt12out_of_range, __ZTISt14overflow_error, __ZTISt15underflow_error, 
+                       __ZTISt16invalid_argument, __ZdaPv, __ZdaPvRKSt9nothrow_t, 
+                       __ZdlPv, __ZdlPvRKSt9nothrow_t, __Znam, __ZnamRKSt9nothrow_t, 
+                       __Znwm, __ZnwmRKSt9nothrow_t ]
 ...

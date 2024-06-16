@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6BBF1BE8-22F7-333F-93F8-9F95CCE938A2' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           5EADFD01-D05B-34C6-ABAB-E3FE90699678
+  - target:          arm64-ios-simulator
+    value:           F7A79199-9E4F-3092-8765-2498491D6A05
 install-name:    '/usr/lib/libperfcheck.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ep_session_begin, _ep_session_config_with_argstr, _ep_session_create, 
                        _ep_session_destroy, _ep_session_end, _ep_session_process, 
                        _ep_session_set_perfdata_file, _ep_session_set_procpid, _ep_session_set_testname, 

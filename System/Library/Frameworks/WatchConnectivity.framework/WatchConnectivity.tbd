@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 64313CFD-1AD3-3648-B028-C9507A90DAC4', 'x86_64: 33F64B0A-CB29-38C9-AA89-CF8A6B5F2013' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           BA43EB43-A746-3FE5-90D7-8BF0372BEF32
+  - target:          x86_64-ios-simulator
+    value:           1B2A7351-096D-35F6-9C77-23399BF9E53B
+  - target:          arm64-ios-simulator
+    value:           43796B6D-BEF6-384E-BC1D-D9F7F436AD78
 install-name:    '/System/Library/Frameworks/WatchConnectivity.framework/WatchConnectivity'
-current-version: 187.2
-exports:         
-  - archs:           [ i386 ]
+current-version: 198
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _LZ4_compress, _LZ4_compressBound, _LZ4_compress_continue, 
                        _LZ4_compress_default, _LZ4_compress_destSize, _LZ4_compress_fast, 
                        _LZ4_compress_fast_continue, _LZ4_compress_fast_extState, 
@@ -26,7 +32,7 @@ exports:
                        _WatchConnectivityVersionNumber, _WatchConnectivityVersionString, 
                        _isAllowedFileForProcess ]
     objc-classes:    [ WCQueuedMessage ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _WCApplicationContextFileName, _WCApplicationSupportURLInContainer, 
                        _WCCheckFileAndConsumeSandboxTokenForProcessID, _WCCheckFileAndCreateExtensionForProcess, 
                        _WCCompactStringFromCollection, _WCComplicationUserInfoIDFileName, 

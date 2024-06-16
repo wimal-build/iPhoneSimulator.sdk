@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D20A570D-B85B-3EC1-8223-DC95DE6F715E
+  - target:          arm64-ios-simulator
+    value:           DFF9E2C4-EE99-38D0-9309-3247D0D99471
+install-name:    '/System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CTCellularPlanLocalInfoError, _SIMSetupSupportVersionNumber, 
+                       _SIMSetupSupportVersionString, _TSPlanIconESIM, _TSPlanIconPSIM, 
+                       _TSUserInfoCarrierNameKey, _TSUserInfoConfirmationCodeRequiredKey, 
+                       _TSUserInfoEidKey, _TSUserInfoFlowTypeKey, _TSUserInfoIccidKey, 
+                       _TSUserInfoImei2Key, _TSUserInfoImeiKey, _TSUserInfoMeidKey, 
+                       _TSUserInfoRequireSetupDebugKey, _TSUserInfoSubscriptionContextKey, 
+                       _TSUserInfoWebsheetPostdataKey, _TSUserInfoWebsheetRequestTypeKey, 
+                       _TSUserInfoWebsheetURLKey ]
+    objc-classes:    [ TSActivationFlowWithSimSetupFlow, TSAddCellularPlanViewController, 
+                       TSCellularPlanCardInfoViewController, TSCellularPlanConfirmationCodeViewController, 
+                       TSCellularPlanLabelPickerTableViewController, TSCellularPlanLabelTableViewCell, 
+                       TSCellularPlanLabelsViewController, TSCellularPlanManagerCache, 
+                       TSCellularPlanQRCodeScannerView, TSCellularPlanRemapTableViewCell, 
+                       TSCellularPlanRemapViewController, TSCellularPlanScanTransferViewController, 
+                       TSCellularPlanTableViewCell, TSCellularPlanTransferItemCell, 
+                       TSCellularPlanUserConsentViewController, TSCellularPlanUsesDataSwitchCell, 
+                       TSCellularPlanUsesTableViewCell, TSCellularPlanUsesViewController, 
+                       TSCellularSetupLoadingView, TSCellularSetupLoadingViewController, 
+                       TSCoreTelephonyClientCache, TSFlowHelper, TSIDSSubscriptionSelector, 
+                       TSNavigationBarSpinnerManager, TSPhysicalTransferViewController, 
+                       TSRemotePlanSignUpFlow, TSSIMSetupFlow, TSSIMSetupPublicApiInstallFlow, 
+                       TSSetupAssistantSIMSetupFlow, TSSpinnerNavigationBarItem, 
+                       TSTransferFlow, TSTransferFlowModel, TSTransferListViewController, 
+                       TSTransferredViewController, TSURLRequestFactory, TSUserConsentPadViewController, 
+                       TSUserConsentViewController, TSUserResponseFlow, TSUtilities, 
+                       TSWebsheetSignupFlow, TSWebsheetViewController ]
+...

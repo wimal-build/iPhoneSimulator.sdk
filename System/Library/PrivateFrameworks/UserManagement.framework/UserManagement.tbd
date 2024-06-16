@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           873B940D-7B99-3F00-BF3D-8EDF3747ED5D
+  - target:          x86_64-ios-simulator
+    value:           8B12E81B-F180-323C-8BED-C41B00C97F66
+  - target:          arm64-ios-simulator
+    value:           34118693-BE46-3BE6-A081-CCF167C4C1BF
+install-name:    '/System/Library/PrivateFrameworks/UserManagement.framework/UserManagement'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _UserManagementVersionNumber, _UserManagementVersionString, 
+                       __ADClientPushValueForDistributionKey ]
+    objc-classes:    [ UMAbort, UMError, UMLog, UMLogMessage, UMQueue, UMXPCServer ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _UMErrorPasscodeBackOffInterval, _UMUserManagerErrorDomain, 
+                       _kDebugErrorCausingLogoutKey, _kErrorCausingLogoutKey, _kHasManagedCredentials, 
+                       _kLanguagesKey, _kPasscodeTypeKey, _kUMEducationNumberOfUsersKey, 
+                       _kUMEducationUserSizeKey, _kUMUserPersonaBundleIDsKey, _kUMUserPersonaDisabledKey, 
+                       _kUMUserPersonaDisplayNameKey, _kUMUserPersonaIDKey, _kUMUserPersonaNickNameKey, 
+                       _kUMUserPersonaPathKey, _kUMUserPersonaTypeKey, _kUMUserPersonaUniqueStringKey, 
+                       _kUMUserPersonaUserGIDKey, _kUMUserPersonaUserODUUIDKey, _kUMUserPersonaUserUIDKey, 
+                       _kUMUserSessionForcedProvisionTypeKey, _kUMUserSessionProvisionTypeEducation, 
+                       _kUMUserSessionProvisionTypeGuestUser, _kUMUserSessionProvisionTypeKey ]
+    objc-classes:    [ UMMobileKeyBag, UMMutableUser, UMTask, UMUser, UMUserManager, 
+                       UMUserMutablePersona, UMUserPersona, UMUserPersonaAttributes, 
+                       UMUserPersonaContext, UMUserSwitchBlockingTask, UMUserSwitchContext, 
+                       UMUserSyncTask ]
+...

@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 451B2E49-CDFE-3DC6-A302-2A3168D9CE65', 'x86_64: 9FDF689E-D43E-36AC-B539-31AE22C199EA' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0536DE41-6DD8-38AB-A857-5C40BBBAF615
+  - target:          x86_64-ios-simulator
+    value:           D9336DA8-9995-365B-B992-40080A83000B
+  - target:          arm64-ios-simulator
+    value:           4EEA90BE-EB5F-3F19-83DA-55511E324C6E
 install-name:    '/usr/lib/libgmalloc.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _GM_malloc_fork_child, _GM_malloc_fork_parent, _GM_malloc_fork_prepare, 
                        _GMcalloc, _GMfree, _GMmalloc, _GMmalloc_create_zone, _GMmalloc_default_purgeable_zone, 
                        _GMmalloc_default_zone, _GMmalloc_good_size, _GMmalloc_make_nonpurgeable, 

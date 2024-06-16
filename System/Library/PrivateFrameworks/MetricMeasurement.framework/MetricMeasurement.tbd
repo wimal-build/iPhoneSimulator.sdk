@@ -1,0 +1,41 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C7EF0BBC-04A6-309D-91EB-CE851E2ED2C8
+  - target:          arm64-ios-simulator
+    value:           9C10CC7C-8F64-35DE-937B-7514579B9C63
+install-name:    '/System/Library/PrivateFrameworks/MetricMeasurement.framework/MetricMeasurement'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MXMAttributeNameOSSignpostCategory, _MXMAttributeNameOSSignpostIdentifier, 
+                       _MXMAttributeNameOSSignpostName, _MXMAttributeNameOSSignpostSubsystem, 
+                       _MXMAttributeNameOSSignpostTelemetryNumber1Name, _MXMAttributeNameOSSignpostTelemetryNumber2Name, 
+                       _MXMAttributeNameOSSignpostTelemetryString1Name, _MXMAttributeNameOSSignpostTelemetryString1Value, 
+                       _MXMAttributeNameOSSignpostTelemetryString2Name, _MXMAttributeNameOSSignpostTelemetryString2Value, 
+                       _MXMAttributeNameProcessIdentifier, _MXMAttributeNameProcessName, 
+                       _MXMAttributeNameThreadIdentifier, _MXMAutomaticDefault, _MXMCPUMetricIdentifier, 
+                       _MXMDiskMetricIdentifier, _MXMInstrumentOptionEnableParallelizedSampling, 
+                       _MXMInstrumentOptionIterationCount, _MXMInstrumentOptionKickOffThreadIdentifier, 
+                       _MXMInstrumentOptionPerformanceTraceEnabled, _MXMInstrumentOptionQuiesceCpuIdlePercent, 
+                       _MXMInstrumentOptionQuiesceCpuIdleTimeLimit, _MXMInstrumentOptionScheduleKickOffOnNewThread, 
+                       _MXMMemoryMetricIdentifier, _MXMMetricIdentifierClock, _MXMMetricIdentifierOSSignpost, 
+                       _MXMNetworkMetricIdentifier, _MetricMeasurementVersionNumber, 
+                       _MetricMeasurementVersionString, __MXMGetInstrumentsLog, __MXMGetLog, 
+                       _kMXMOSLogProbeDidUpdateConnectedDevicesList ]
+    objc-classes:    [ MXMCPUMetric, MXMClockMetric, MXMClockSampleTag, MXMDiskMetric, 
+                       MXMDisplayDescriptor, MXMDisplayProbe_iphoneOS_Internal, MXMInstrument, 
+                       MXMMachUtils, MXMMemoryMetric, MXMMetric, MXMMutableSampleData, 
+                       MXMMutableSampleSet, MXMNetworkMetric, MXMOSLogDeviceStore_Internal, 
+                       MXMOSLogDevice_Internal, MXMOSLogProbe, MXMOSSignpostMetric, 
+                       MXMOSSignpostProbe, MXMOSSignpostSampleTag, MXMProbe, MXMProbeDisplay, 
+                       MXMProxyMetric, MXMProxyProbe, MXMProxyServiceManager, MXMResourceProbe, 
+                       MXMSample, MXMSampleAttribute, MXMSampleAttributeFilter, MXMSampleData, 
+                       MXMSampleFilter, MXMSampleSet, MXMSampleTag, MXMSampleTagFilter, 
+                       MXMSampleTimeSeries, MXMSystemProbe, MXMSystemSampleTag, MXMUnitCycle, 
+                       MXMUnitFrame, MXMUnitHitch, MXMUnitInstruction, MXMUnitMemory, 
+                       MXMUnitPacket, MXMUtilizationSampleTag, MXMVirtualMachineProbe ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4651A7A8-B9CB-38BA-A612-B5D7B34A2E8F
+  - target:          arm64-ios-simulator
+    value:           4FB35198-E91A-3CB6-8D69-FE2EFC15EE9A
+install-name:    '/System/Library/PrivateFrameworks/RespiratoryHealth.framework/RespiratoryHealth'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HKRPBloodOxygenAppBundleIdentifier, _HKRPLocalizedString, 
+                       _HKRPShouldInstallOxygenSaturationWatchAppOnPairedWatch, _HKRPShouldSkipHardwareCheck, 
+                       _HKRPStringFromHKRPOxygenSaturationSessionEndReason, _HKRPUserDefaultsHasCompletedOnboardingKey, 
+                       _HKRespiratoryPluginIdentifier, __HDRPOxygenSaturationSessionServerIdentifier ]
+    objc-classes:    [ HKRPOxygenSaturationAvailability, HKRPOxygenSaturationOnboardingCache, 
+                       HKRPOxygenSaturationOnboardingCacher, HKRPOxygenSaturationOnboardingManager, 
+                       HKRPOxygenSaturationSession, HKRPOxygenSaturationSettings, 
+                       HKRPUserDefaultsSyncProvider, HKRPWatchAppInstallability ]
+...

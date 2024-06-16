@@ -1,10 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6ECEA8F7-663D-3BAF-A674-66E5F2CBBF9A', 'x86_64: 40D9F880-CFAD-3CEB-A9A8-0E40F8E127A7' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           B8ECA00A-1FD3-3598-B003-B978F49164E8
+  - target:          x86_64-ios-simulator
+    value:           D316E5C7-4083-3DB4-9403-3692DAB0FAF4
+  - target:          arm64-ios-simulator
+    value:           ED3407DB-1521-35B1-BFF4-601BB0371EF8
 install-name:    '/usr/lib/libprotobuf.dylib'
-exports:         
-  - archs:           [ i386 ]
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/usr/lib/libprotobuf-lite.dylib' ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZN6google8protobuf10ReflectionD0Ev, __ZN6google8protobuf10ReflectionD1Ev, 
                        __ZN6google8protobuf10ReflectionD2Ev, __ZN6google8protobuf10SimpleDtoaEd, 
                        __ZN6google8protobuf10SimpleFtoaEf, __ZN6google8protobuf10SimpleItoaEi, 
@@ -1381,11 +1390,16 @@ exports:
                        __ZTVN6google8protobuf8internal26GeneratedMessageReflectionE, 
                        __ZTVN6google8protobuf8internal27UnknownFieldSetFieldSkipperE, 
                        __ZTVN6google8protobuf8internal29DescriptorPoolExtensionFinderE ]
-    weak-def-symbols: [ __ZTIN6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
-                        __ZTIN6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE, 
-                        __ZTSN6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
-                        __ZTSN6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE ]
-  - archs:           [ x86_64 ]
+    weak-symbols:    [ __ZTIN6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
+                       __ZTIN6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE, 
+                       __ZTSN6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
+                       __ZTSN6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE ]
+  - targets:         [ x86_64-ios-simulator ]
+    weak-symbols:    [ __ZTIN20wireless_diagnostics6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
+                       __ZTIN20wireless_diagnostics6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE, 
+                       __ZTSN20wireless_diagnostics6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
+                       __ZTSN20wireless_diagnostics6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __ZN20wireless_diagnostics6google8protobuf10ReflectionD0Ev, 
                        __ZN20wireless_diagnostics6google8protobuf10ReflectionD1Ev, 
                        __ZN20wireless_diagnostics6google8protobuf10ReflectionD2Ev, 
@@ -2726,10 +2740,4 @@ exports:
                        __ZTVN20wireless_diagnostics6google8protobuf7MessageE, __ZTVN20wireless_diagnostics6google8protobuf8internal26GeneratedMessageReflectionE, 
                        __ZTVN20wireless_diagnostics6google8protobuf8internal27UnknownFieldSetFieldSkipperE, 
                        __ZTVN20wireless_diagnostics6google8protobuf8internal29DescriptorPoolExtensionFinderE ]
-    weak-def-symbols: [ __ZTIN20wireless_diagnostics6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
-                        __ZTIN20wireless_diagnostics6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE, 
-                        __ZTSN20wireless_diagnostics6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE, 
-                        __ZTSN20wireless_diagnostics6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE ]
-  - archs:           [ i386, x86_64 ]
-    re-exports:      [ '/usr/lib/libprotobuf-lite.dylib' ]
 ...

@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           79CB6E01-E74F-30F8-8A6E-89FC436326D0
+  - target:          arm64-ios-simulator
+    value:           AE37BF9B-7191-38E3-B037-E532C962D85F
+install-name:    '/System/Library/PrivateFrameworks/SleepHealthDaemon.framework/SleepHealthDaemon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ HDSHPluginServer, HDSHProfileExtension, HDSHSleepDaySummaryBuilder, 
+                       HDSHSleepDaySummaryEnumerator, HDSHSleepDaySummaryQueryServer, 
+                       HDSHSleepHealthDaemonPlugin, HDSHSleepHealthDaemonTestPlugin ]
+...

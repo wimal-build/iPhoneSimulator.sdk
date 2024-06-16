@@ -1,0 +1,45 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F1465731-4E60-37F0-A12C-ED494E528724
+  - target:          arm64-ios-simulator
+    value:           3B2D5139-2AF0-36E7-A509-6FCE25C2881C
+install-name:    '/System/Library/PrivateFrameworks/InAppMessages.framework/InAppMessages'
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/System/Library/PrivateFrameworks/InAppMessagesCore.framework/InAppMessagesCore' ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IAMWebMessageErrorDomain, _InAppMessagesVersionNumber, _InAppMessagesVersionString ]
+    objc-classes:    [ IAMChangedContextPropertiesTriggerContext, IAMEvaluator, IAMICMessageEntryProvider, 
+                       IAMICMessageMetadataStorage, IAMICPropertyStorage, IAMICStorageProvider, 
+                       IAMImpressionManager, IAMMessageCoordinator, IAMMessageEntryManager, 
+                       IAMMessageGroup, IAMModalTarget, IAMModalViewController, IAMModalWebMessageViewController, 
+                       IAMPresentingModalMessageContext, IAMReceivedEventTriggerContext, 
+                       IAMStorageCoordinator, IAMTriggerKey, IAMWebMessageController, 
+                       IAMWebMessagePresentationCoordinator, IAMWebView ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DF15B654-CD02-3AC6-8A62-4BD08638F7E6
+  - target:          arm64-ios-simulator
+    value:           C79790E8-26B1-31C7-93B7-41124716392A
+install-name:    '/System/Library/PrivateFrameworks/InAppMessagesCore.framework/InAppMessagesCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IAMApplicationDidBecomeActiveEventName, _IAMLogCategoryDefault, 
+                       _IAMLogCategoryDefault_Oversize, _IAMWebProcessShouldDismissPresentationBeforeOpen, 
+                       _IAMWebProcessShouldDismissPresentationBeforePerformingAction, 
+                       _InAppMessagesCoreVersionNumber, _InAppMessagesCoreVersionString ]
+    objc-classes:    [ IAMAction, IAMApplicationDidBecomeActiveEvent, IAMContent, 
+                       IAMCountableEvent, IAMEvent, IAMFigaroEvent, IAMImage, IAMImpression, 
+                       IAMMessage, IAMPresentationPolicy, IAMTempTestMessages, IAMValueEvent ]
+...

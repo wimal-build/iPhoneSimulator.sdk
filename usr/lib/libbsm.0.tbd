@@ -1,12 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 046CA89F-EA71-3DA6-AD67-B6CC16CAB62D', 'x86_64: 92912433-F8A6-30EE-9DA9-52844A6FDEFE' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           EF5427CC-1A6E-3417-940C-9291E148C51D
+  - target:          x86_64-ios-simulator
+    value:           D3C82353-D6CA-3829-836D-A4CB5439C19A
+  - target:          arm64-ios-simulator
+    value:           E268168E-8334-3409-8038-5C63A294A60F
 install-name:    '/usr/lib/libbsm.0.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _audit_set_terminal_host, _audit_set_terminal_port ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _au_bsm_to_domain, _au_bsm_to_errno, _au_bsm_to_fcntl_cmd, 
                        _au_bsm_to_socket_type, _au_close, _au_close_buffer, _au_close_token, 
                        _au_close_with_errors, _au_domain_to_bsm, _au_errno_to_bsm, 

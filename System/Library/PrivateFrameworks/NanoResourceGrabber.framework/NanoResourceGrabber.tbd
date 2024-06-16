@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C356085C-9A89-3EF6-919D-7DB9DFE1E6BC
+  - target:          x86_64-ios-simulator
+    value:           60D5A648-9186-3EE2-8473-D6258E765349
+  - target:          arm64-ios-simulator
+    value:           BB41E8C6-E6BA-32A4-A3AF-47DA02288711
+install-name:    '/System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _binaryToHex ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NRGGetActivePairedDevice, _NRGGetActivePairedDeviceStorePath, 
+                       _NRGResourcePropertyFilePathSuffix, _NRGResourcePropertyIconVariant, 
+                       _NRGWaitForActivePairedDeviceStorePath, _kNRGResourceType, 
+                       _mapLIIconVariantToNRG, _mapNRGIconVariantToLI, _nrg_daemon_log, 
+                       _nrg_framework_log ]
+    objc-classes:    [ NRGResourceCache, NanoResourceGrabber ]
+...

@@ -1,16 +1,22 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1D4F2837-7440-32B2-AE09-2058F5F57816', 'x86_64: 6C389EE1-37B2-3EBD-A071-F9C8F886560A' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           375689B5-29B8-34D7-AC98-59ED5B1CEBA4
+  - target:          x86_64-ios-simulator
+    value:           ED298D7F-0F30-3089-8929-33B13B78417C
+  - target:          arm64-ios-simulator
+    value:           713A057D-51D7-3718-89AF-C288843584D4
 install-name:    '/System/Library/Frameworks/HealthKitUI.framework/HealthKitUI'
-exports:         
-  - archs:           [ i386 ]
-    symbols:         [ _HKRingPercentageValueNoRing ]
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _HKRingPercentageValueNoRing, _HKScrollPerformanceOptionCategoryKey ]
     objc-classes:    [ HKAnimatableObject, HKAnimatableObjectPropertyAnimation, HKCGPointPropertyAnimation, 
                        HKFloatPropertyAnimation, HKMetricColors, HKRingGroupController, 
                        HKRingsView, _HKAnimatableProperty, _HKIcon, _HKRing ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _HKGLViewSnapshottingDidEndNotification, _HKGLViewSnapshottingWillBeginNotification, 
-                       _HKHealthKitUIFrameworkBundle, _HKScrollPerformanceOptionCategoryKey ]
+                       _HKHealthKitUIFrameworkBundle ]
     objc-classes:    [ HKActivityRingView, HKGLView ]
 ...

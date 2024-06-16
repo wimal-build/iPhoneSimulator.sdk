@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B0B3BC57-4767-3E98-B9DC-822C07881160', 'x86_64: 9346D046-2F72-3B74-A4E8-DB74D76FF4C8' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A99C589F-FD6F-3933-BB1E-A225366470C4
+  - target:          x86_64-ios-simulator
+    value:           C5FDE2A7-F484-3C5D-90D2-95E1C94FF3D1
+  - target:          arm64-ios-simulator
+    value:           B2B5C2EE-1427-319B-91F4-45A7C14DF580
 install-name:    '/System/Library/Frameworks/OpenAL.framework/OpenAL'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _alBuffer3f, _alBuffer3i, _alBufferData, _alBufferf, _alBufferfv, 
                        _alBufferi, _alBufferiv, _alDeleteBuffers, _alDeleteSources, 
                        _alDisable, _alDistanceModel, _alDopplerFactor, _alDopplerVelocity, 

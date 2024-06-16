@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           8B5E2385-A621-3707-B31D-A0D2D04847E6
+  - target:          arm64-ios-simulator
+    value:           5A73434C-B383-3047-B77C-001C30B2518E
+install-name:    '/System/Library/PrivateFrameworks/ManagedConfigurationUI.framework/ManagedConfigurationUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ MCInstallProfileViewController, MCItemSummaryCell, MCProfileSummaryCell, 
+                       MCProfileTitlePageViewController, MCProfileTitlePageViewModel, 
+                       MCProfileViewController, MCSectionBasedTableViewController, 
+                       MCUIBundleController, MCUIDataManager, MCUIDismissalAwareNavigationController, 
+                       MCUINavigationViewController, MCUIProfile, MCUITableViewController, 
+                       MCUIUserEnrollmentAccountSpecifierProvider, MCUIViewController ]
+...

@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D90F2E38-B3F1-350D-8924-AEA5E31AE2C8
+  - target:          arm64-ios-simulator
+    value:           9C33D291-5B4C-3DF2-B3C8-35500955410E
+install-name:    '/System/Library/PrivateFrameworks/NanoWeatherComplicationsCompanion.framework/NanoWeatherComplicationsCompanion'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NWCComplicationFamilyDescription, _NWCDemoAirQualityObservations, 
+                       _NWCDemoChanceRainNowObservations, _NWCDemoFiveHourChanceRainHourlyForecastedConditions, 
+                       _NWCDemoFiveHourHourlyForecastedConditions, _NWCDemoLocation, 
+                       _NWCDemoNowObservations, _NWCDemoSevenDayDailyForecastedConditions, 
+                       _NWCDemoTodayForecastedConditions, _NWCDisplayNameForLocation, 
+                       _NWCGlyphPrefixedTextProvider, _NWCHighLowFormattedStringFromDailyForecastedConditions, 
+                       _NWCHourlyDateEnumeration, _NWCHourlyForecastMetadata_HourlyForecastEntryModels, 
+                       _NWCHourlyForecastMetadata_LocationTimeZone, _NWCIsCurrentLocaleNonLatin, 
+                       _NWCLocalizationBundle, _NWCLocalizedImageNamed, _NWCLocalizedString, 
+                       _NWCMaxHourlyCountInDay, _NWCPlaceholderDailyConditionsStartingAtDate, 
+                       _NWCPlaceholderHourlyConditionsStartingAtDate, _NWMLocaleCurrentNumberSystem, 
+                       _NanoWeatherAppBundleID ]
+    objc-classes:    [ NWCAirQualityTemplateFormatter, NWCCBundle, NWCColor, NWCCompanionAirQualityDataSource, 
+                       NWCCompanionBaseDataSource, NWCCompanionConditionsDataSource, 
+                       NWCCompanionUltravioletIndexDataSource, NWCCompanionWeatherDataSource, 
+                       NWCCompanionWindDataSource, NWCConditionsTemplateFormatter, 
+                       NWCEntryModel, NWCFiveHourForecastConditionGlyphView, NWCFiveHourForecastPrecipitationView, 
+                       NWCFiveHourForecastView, NWCHourlyForecastConditionGlyphView, 
+                       NWCHourlyForecastView, NWCTemperatureModel, NWCUltravioletIndexTemplateFormatter, 
+                       NWCWeatherTemplateFormatter, NWCWindTemplateFormatter, NWMPrecipitationFormatter, 
+                       NWMTemperatureFormatter ]
+...

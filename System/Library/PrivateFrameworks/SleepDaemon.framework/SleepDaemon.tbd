@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           9800E8A9-420E-300E-AE01-ED6A83887711
+  - target:          arm64-ios-simulator
+    value:           E2CF3CBE-1093-3110-B6E6-661AA7945314
+install-name:    '/System/Library/PrivateFrameworks/SleepDaemon.framework/SleepDaemon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HDSPAnalyticsDailyReportSummaryDayCount, _HDSPBundleID, _HDSPCurrentDataVersion, 
+                       _HDSPDataVersionKey, _HDSPDeviceWasUnlocked, _HDSPDiagnosticNotification, 
+                       _HDSPHealthKitModelMigrationVersionKey, _HDSPLocalizedCoachingString, 
+                       _HDSPLocalizedCoachingVariantString, _HDSPLocalizedOneDayCoachingVariantString, 
+                       _HDSPLocalizedOneWeekCoachingVariantString, _HDSPLocalizedString, 
+                       _HDSPLocalizedTwoWeekCoachingVariantString, _HDSPMTAlarmClass, 
+                       _HDSPMTAlarmManagerClass, _HDSPMTAlarmManagerStateResetString, 
+                       _HDSPMTMutableAlarmClass, _HDSPMTSoundClass, _HDSPMobileTimerModelMigrationVersionKey, 
+                       _HDSPPowerSourceNotification, _HDSPQuietSourceForSource, _HDSPSleepDetectedActivity, 
+                       _HDSPSleepSessionEndRequest, _HDSPWakeUpResultsNotificationAttemptDuration, 
+                       _HDSPWakeUpResultsNotificationDaySummaryCount, _HDSPWakeUpResultsNotificationErrorDomain, 
+                       _HDSPWakeUpResultsNotificationMaxVariantLastNightDuration, 
+                       _HDSPWakeUpResultsNotificationMaxVariantOneWeekDuration, _HDSPWakeUpResultsNotificationMaxVariantTwoWeekDuration ]
+    objc-classes:    [ HDSPAnalyticsDailyReportBuilder, HDSPAnalyticsManager, HDSPAssertionManager, 
+                       HDSPChargingReminderManager, HDSPChargingReminderStateMachine, 
+                       HDSPContextStoreManager, HDSPDevicePowerMonitor, HDSPDeviceUnlockMonitor, 
+                       HDSPDiagnostics, HDSPDistributedNotificationCenter, HDSPDoNotDisturbManager, 
+                       HDSPEnvironment, HDSPEnvironmentStateMachine, HDSPGoodMorningAlertManager, 
+                       HDSPGoodMorningAlertStateMachine, HDSPMobileTimerBridge, HDSPNotificationListener, 
+                       HDSPPhoneReadyProvider, HDSPSetSleepModeIDSMessage, HDSPSimulatorReadyProvider, 
+                       HDSPSleepActionManager, HDSPSleepAlarmManager, HDSPSleepDaemon, 
+                       HDSPSleepEventList, HDSPSleepEventScheduler, HDSPSleepLockScreenManager, 
+                       HDSPSleepLockScreenStateMachine, HDSPSleepModeBedtimeState, 
+                       HDSPSleepModeManager, HDSPSleepModeManualBedtimeState, HDSPSleepModeOffState, 
+                       HDSPSleepModeWindDownState, HDSPSleepNotificationManager, 
+                       HDSPSleepScheduleModelManager, HDSPSleepScheduleModelMigrationManager, 
+                       HDSPSleepScheduleStateCoordinator, HDSPSleepSession, HDSPSleepSessionInterval, 
+                       HDSPSleepSessionManager, HDSPSleepStorage, HDSPSleepStoreServer, 
+                       HDSPSleepTrackingManager, HDSPSpringboardMonitor, HDSPSystemMonitor, 
+                       HDSPTimeAsleepTracker, HDSPTimeAsleepTrackerStateMachine, 
+                       HDSPTimeInBedTracker, HDSPWakeDetectionManager, HDSPWakeUpResultsNotificationDelayingForTrackingState, 
+                       HDSPWakeUpResultsNotificationDisabledState, HDSPWakeUpResultsNotificationNeedsProtectedDataState, 
+                       HDSPWakeUpResultsNotificationNotifiedState, HDSPWakeUpResultsNotificationQueryingState, 
+                       HDSPWakeUpResultsNotificationStateMachine, HDSPWakeUpResultsNotificationStateMachineState, 
+                       HDSPWakeUpResultsNotificationWaitingForRetryState, HDSPWakeUpResultsNotificationWaitingForWakeUpState, 
+                       HDSPWatchOnWristMonitor, HDSPWatchReadyProvider ]
+...

@@ -1,0 +1,55 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           659BFC4E-F21B-3892-9933-00E6A6EC5032
+  - target:          x86_64-ios-simulator
+    value:           2E713701-34AB-3154-BF2C-924498D5AC87
+  - target:          arm64-ios-simulator
+    value:           847B1FA8-3EFF-3533-B63F-4AB215689FA5
+install-name:    '/System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities'
+current-version: 800
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _CUTCurrentBacktraceHasSelector, _CUTLogBacktrace, _CUTLogBacktraceToDepth, 
+                       _CUTPrintf, __CUTAlwaysLog, __CUTLog, __CUTLogCategoryFromMessage, 
+                       __CUTLogForceEnable, __CUTLogForceEnableCategory, __CUTLogForceEnableEverything, 
+                       __CUTLogForceWriteToStdout, __CUTLogLevel, __CUTLogMessageFromMessage, 
+                       __CUTSyncLoggingSettings, __CUTWarn, __CUTWillLog ]
+    objc-ivars:      [ CUTPowerAssertion._assertion, CUTPowerAssertion._identifier, 
+                       CUTPowerAssertion._stack ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ CUTCheckpoint._frozen, CUTPowerAssertion._internal, CUTResult._inError, 
+                       CUTResult._inValue, CUTResult._state ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CUTAuditTokenTaskHasEntitlement, _CUTCreateDictionaryFromXPCObject, 
+                       _CUTCreateXPCObjectFromDictionary, _CUTDataForPropertyList, 
+                       _CUTGetMainBundle, _CUTGetMainBundleIdentifier, _CUTGetXPCBoolFromDictionary, 
+                       _CUTGetXPCConnectionContext, _CUTGetXPCDataFromDictionary, 
+                       _CUTGetXPCDoubleFromDictionary, _CUTGetXPCIntFromDictionary, 
+                       _CUTGetXPCStringFromDictionary, _CUTInsertBoolsToXPCDictionary, 
+                       _CUTInsertDatasToXPCDictionary, _CUTInsertDoublesToXPCDictionary, 
+                       _CUTInsertIntsToXPCDictionary, _CUTInsertNSStringsToXPCDictionary, 
+                       _CUTIsInternalInstall, _CUTMapObjectProperties, _CUTProcessNameForPid, 
+                       _CUTPropertyListFromNSData, _CUTReportingBatchingIntervalDefault, 
+                       _CUTReportingErrorDomain, _CUTSafeArrayOfStrings, _CUTSetXPCConnectionContext, 
+                       _CUTTemporaryPath, _CUTWeakLinkClass, _CUTWeakLinkSymbol, 
+                       _CUTWiFiManagerMaxMeasurementErrorKey, _CUTWiFiManagerPMDurationKey, 
+                       _CUTWiFiManagerSSIDKey, _CUTWiFiManagerTotalDurationKey, _CUTXPCAlert, 
+                       _CUTXPCAlertv, _CUTXPCConfigureConnection, _CUTXPCConnectionSetEventHandlers, 
+                       _CUTXPCCreateConnectionForService, _CUTXPCCreateConnectionForServiceWithQueue, 
+                       _CUTXPCCreateServerConnection, _cut_arc_os_release, _cut_backtrace, 
+                       _cut_log_group_generation, _cut_non_arc_os_release ]
+    objc-classes:    [ CUTAsyncReducer, CUTAsyncReducerState, CUTCheckpoint, CUTCheckpointInstant, 
+                       CUTCheckpointRange, CUTCheckpointSignpost, CUTCheckpointTrace, 
+                       CUTDeferredTaskQueue, CUTFileCopier, CUTNetworkInterfaceListener, 
+                       CUTPowerAssertion, CUTPowerMonitor, CUTPromise, CUTPromiseSeal, 
+                       CUTReachability, CUTReporting, CUTResult, CUTTelephonyManager, 
+                       CUTUnsafePromise, CUTUnsafePromiseSeal, CUTWeakReference, 
+                       CUTWiFiManager ]
+    objc-ivars:      [ CUTNetworkInterfaceListener._IPv4Addresses, CUTNetworkInterfaceListener._IPv6Addresses, 
+                       CUTNetworkInterfaceListener._cellState, CUTNetworkInterfaceListener._delegateMap, 
+                       CUTNetworkInterfaceListener._delegateQueue, CUTNetworkInterfaceListener._dynamicStore, 
+                       CUTNetworkInterfaceListener._wifiState ]
+...

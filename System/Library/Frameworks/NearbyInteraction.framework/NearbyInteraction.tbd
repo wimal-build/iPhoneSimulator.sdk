@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           CDF58B26-3BAC-3B29-B681-365B11F6D246
+  - target:          arm64-ios-simulator
+    value:           0B2B6FE1-A755-35D1-BE59-E2526A76347B
+install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable, _NINearbyObjectDirectionNotAvailable, 
+                       _NINearbyObjectDirectionNotAvailable_Private, _NINearbyObjectDistanceNotAvailable, 
+                       _NINearbyObjectDistanceNotAvailable_Private, _NINearbyObjectElevationNotAvailable, 
+                       _NINearbyObjectQuaternionNotAvailable ]
+    objc-classes:    [ NIConfiguration, NIDiscoveryToken, NINearbyObject, NINearbyPeerConfiguration, 
+                       NISession ]
+...

@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2D11DE83-CE9A-3EEA-BF3A-18EA550EF2AC', 'x86_64: 55C0D155-0577-3D34-B172-83D53B14CB23' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           CFA2FFA8-C4DF-3F8A-9B8B-DBE34B916A76
+  - target:          x86_64-ios-simulator
+    value:           85E1C3E0-7828-372A-909D-908EEB2F1B7D
+  - target:          arm64-ios-simulator
+    value:           07EB0B82-9A7B-3ACB-A94B-B11515F00AED
 install-name:    '/System/Library/Frameworks/GameplayKit.framework/GameplayKit'
-current-version: 89
-exports:         
-  - archs:           [ i386 ]
+current-version: 95
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _GameplayKitVersionNumber, _GameplayKitVersionString, __Z11orientationDv2_fS_S_, 
                        __Z11pointOnLineDv2_fS_S_, __Z14__voronoiNoiseDv3_fffa, __Z16MakeVectorFloat2ff, 
                        __Z16MakeVectorFloat3fff, __Z16getCoherentNoiseDv3_dDv3_ii, 
@@ -268,24 +274,24 @@ exports:
                        GKScaleNoiseModifier, GKTerraceNoiseModifier, GKTurbulenceNoiseModifier, 
                        _GKBlockRule, _GKNSPredicateRule ]
     objc-ivars:      [ GKNoiseModifier._inputModules ]
-    weak-def-symbols: [ __ZTI11GKCQuadTreeI8NSObjectE, __ZTI13GKCOctreeNodeI8NSObjectE, 
-                        __ZTI15GKCQuadTreeNodeI8NSObjectE, __ZTI15GKSimpleVehicle, 
-                        __ZTI9GKCOctreeI8NSObjectE, __ZTIN10ClipperLib16clipperExceptionE, 
-                        __ZTIN10ClipperLib8PolyNodeE, __ZTIN9OpenSteer14AbstractPlugInE, 
-                        __ZTIN9OpenSteer15AbstractVehicleE, __ZTIN9OpenSteer15LocalSpaceMixinINS_15AbstractVehicleEEE, 
-                        __ZTIN9OpenSteer15LocalSpaceMixinINS_18AbstractLocalSpaceEEE, 
-                        __ZTIN9OpenSteer17SphericalObstacleE, __ZTIN9OpenSteer17SteerLibraryMixinINS_15LocalSpaceMixinINS_15AbstractVehicleEEEEE, 
-                        __ZTIN9OpenSteer18AbstractLocalSpaceE, __ZTIN9OpenSteer7PathwayE, 
-                        __ZTIN9OpenSteer8ObstacleE, __ZTS11GKCQuadTreeI8NSObjectE, 
-                        __ZTS13GKCOctreeNodeI8NSObjectE, __ZTS15GKCQuadTreeNodeI8NSObjectE, 
-                        __ZTS15GKSimpleVehicle, __ZTS9GKCOctreeI8NSObjectE, __ZTSN10ClipperLib16clipperExceptionE, 
-                        __ZTSN10ClipperLib8PolyNodeE, __ZTSN9OpenSteer14AbstractPlugInE, 
-                        __ZTSN9OpenSteer15AbstractVehicleE, __ZTSN9OpenSteer15LocalSpaceMixinINS_15AbstractVehicleEEE, 
-                        __ZTSN9OpenSteer15LocalSpaceMixinINS_18AbstractLocalSpaceEEE, 
-                        __ZTSN9OpenSteer17SphericalObstacleE, __ZTSN9OpenSteer17SteerLibraryMixinINS_15LocalSpaceMixinINS_15AbstractVehicleEEEEE, 
-                        __ZTSN9OpenSteer18AbstractLocalSpaceE, __ZTSN9OpenSteer7PathwayE, 
-                        __ZTSN9OpenSteer8ObstacleE ]
-  - archs:           [ i386, x86_64 ]
+    weak-symbols:    [ __ZTI11GKCQuadTreeI8NSObjectE, __ZTI13GKCOctreeNodeI8NSObjectE, 
+                       __ZTI15GKCQuadTreeNodeI8NSObjectE, __ZTI15GKSimpleVehicle, 
+                       __ZTI9GKCOctreeI8NSObjectE, __ZTIN10ClipperLib16clipperExceptionE, 
+                       __ZTIN10ClipperLib8PolyNodeE, __ZTIN9OpenSteer14AbstractPlugInE, 
+                       __ZTIN9OpenSteer15AbstractVehicleE, __ZTIN9OpenSteer15LocalSpaceMixinINS_15AbstractVehicleEEE, 
+                       __ZTIN9OpenSteer15LocalSpaceMixinINS_18AbstractLocalSpaceEEE, 
+                       __ZTIN9OpenSteer17SphericalObstacleE, __ZTIN9OpenSteer17SteerLibraryMixinINS_15LocalSpaceMixinINS_15AbstractVehicleEEEEE, 
+                       __ZTIN9OpenSteer18AbstractLocalSpaceE, __ZTIN9OpenSteer7PathwayE, 
+                       __ZTIN9OpenSteer8ObstacleE, __ZTS11GKCQuadTreeI8NSObjectE, 
+                       __ZTS13GKCOctreeNodeI8NSObjectE, __ZTS15GKCQuadTreeNodeI8NSObjectE, 
+                       __ZTS15GKSimpleVehicle, __ZTS9GKCOctreeI8NSObjectE, __ZTSN10ClipperLib16clipperExceptionE, 
+                       __ZTSN10ClipperLib8PolyNodeE, __ZTSN9OpenSteer14AbstractPlugInE, 
+                       __ZTSN9OpenSteer15AbstractVehicleE, __ZTSN9OpenSteer15LocalSpaceMixinINS_15AbstractVehicleEEE, 
+                       __ZTSN9OpenSteer15LocalSpaceMixinINS_18AbstractLocalSpaceEEE, 
+                       __ZTSN9OpenSteer17SphericalObstacleE, __ZTSN9OpenSteer17SteerLibraryMixinINS_15LocalSpaceMixinINS_15AbstractVehicleEEEEE, 
+                       __ZTSN9OpenSteer18AbstractLocalSpaceE, __ZTSN9OpenSteer7PathwayE, 
+                       __ZTSN9OpenSteer8ObstacleE ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _GKClosestPointsBetweenLineSegments, _GKDoesCircleIntersectLine, 
                        _GKDoesCircleIntersectLineSegment, _GKDoesCircleIntersectPolygon, 
                        _GKGetCircleToLineIntersectionPoints, _GKGetCircleToLineSegmentIntersectionPoints, 

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EA8123B4-DDAA-36EF-A26F-3235D8EF62DC
+  - target:          arm64-ios-simulator
+    value:           600E8374-4F39-350B-AB0F-FBD0DA7A81B6
+install-name:    '/System/Library/PrivateFrameworks/ContextKit.framework/ContextKit'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CKContextKitNotification_ConfigurationUpdate, _ContextKitErrorDomain, 
+                       _ContextKitVersionNumber, _ContextKitVersionString ]
+    objc-classes:    [ CKContextClient, CKContextCompleter, CKContextCountedItem, 
+                       CKContextGlobals, CKContextRequest, CKContextResponse, CKContextResult, 
+                       CKContextSemaphore, CKContextXPCClient ]
+...

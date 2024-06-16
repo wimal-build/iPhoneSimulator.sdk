@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 02B7A55B-3E00-3092-91BF-E20D37FAFD25', 'x86_64: 4D064A90-9FAC-35DC-BBC6-09D8EB4D85E3' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           02B7A55B-3E00-3092-91BF-E20D37FAFD25
+  - target:          x86_64-ios-simulator
+    value:           7AEFD157-40D4-33DA-B2CE-FDCE90E60AA2
+  - target:          arm64-ios-simulator
+    value:           706B3329-E8CE-36AA-B8EA-1486DFCE68B2
 install-name:    '/usr/lib/swift/libswiftHomeKit.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 714.0.4
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftHomeKit.dylib', '$ld$install_name$os10.1$@rpath/libswiftHomeKit.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftHomeKit.dylib', '$ld$install_name$os10.3$@rpath/libswiftHomeKit.dylib', 
                        '$ld$install_name$os11.0$@rpath/libswiftHomeKit.dylib', '$ld$install_name$os11.1$@rpath/libswiftHomeKit.dylib', 

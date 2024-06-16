@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4C04C400-B797-33FB-B75C-F39A51792008
+  - target:          arm64-ios-simulator
+    value:           F446B5AF-3E63-3A9E-914B-97D4BD04E0FD
+install-name:    '/System/Library/PrivateFrameworks/HomeKitCore.framework/HomeKitCore'
+current-version: 714.0.4
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/System/Library/Frameworks/HomeKit.framework/HomeKit' ]
+...

@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 14809522-F179-3E8B-9300-859EA44A0F85', 'x86_64: BD7B424B-60FD-30AC-8C1F-72954D7DE9A9' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           D965F2AC-12CA-3138-A7AF-AD1508992AFB
+  - target:          x86_64-ios-simulator
+    value:           736322C6-07C1-38F2-84F5-902985CA697B
+  - target:          arm64-ios-simulator
+    value:           33EE750F-2CCA-305C-9DC0-6B09B74006AA
 install-name:    '/usr/lib/libThaiTokenizer.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _CreateTransitionArrayFromTrie, _GetChunk, _GetTokenizedSegmentedPoints, 
                        _GetTokenizedStrings, _MAXCHUNKSIZE, _MAXUNKCHOICE, _MAXWORDCHOICE, 
                        _MAXWORDSIZE, _ReleaseTransitionTable, _SINGLECHARUNKSCORE, 
@@ -14,7 +20,7 @@ exports:
                        _isNumber, _isPunct, _isPunctAll, _isThai, _isThaiBreakChar, 
                        _isThaiConsonant, _isThaiEndingChar, _isThaiLeadingChar, _isThaiLeadingCharAtIndex, 
                        _isThaiPunct, _isThaiVowel, _isWhiteSpace, _mergeAcronym ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ThaiTokenizerAdvanceToNextToken, _ThaiTokenizerCreate, _ThaiTokenizerDestroy, 
                        _ThaiTokenizerGetCurrentTokenRange, _ThaiTokenizerGoToTokenAtIndex, 
                        _ThaiTokenizerSetString, _ThaiTokenizerSetStringWithRange ]

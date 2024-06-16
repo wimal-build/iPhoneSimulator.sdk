@@ -1,13 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 86389C8A-6BFC-3229-AA45-D2512EB77045', 'x86_64: 459E3A76-BEF4-3E98-88DF-42ACFE49A1D8' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           B7587CD6-C08E-3740-942A-498AEA6A51D3
+  - target:          x86_64-ios-simulator
+    value:           BF2F799B-AFD5-3E4B-ACCE-BB2BCD30F24A
+  - target:          arm64-ios-simulator
+    value:           D7046018-950D-39AF-848B-2413121FBA5C
 install-name:    '/usr/lib/liblangid.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __env, __env_mutex, __langid_create_with_datapath_internal, 
                        __langid_dispose_internal, __langid_env_create, __langid_env_dispose ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _langid_consume_string, _langid_create, _langid_create_with_datapath, 
                        _langid_dispose, _langid_global_dispose, _langid_highest_score, 
                        _langid_identify, _langid_identify_bufsize, _langid_identify_withbuf, 

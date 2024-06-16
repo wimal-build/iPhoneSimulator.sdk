@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           53296732-004F-38A4-B788-5912BA92B79C
+  - target:          x86_64-ios-simulator
+    value:           7DF6A290-6397-39A4-A31E-A7ED83FE3B5E
+  - target:          arm64-ios-simulator
+    value:           9E51BFF9-D4B5-3A6B-86CF-F8062747967F
+install-name:    '/System/Library/PrivateFrameworks/IMSharedUI.framework/IMSharedUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IMAnonymizeContentAndContacts, _IMAnonymizeContentAndContactsDidChangeNotification, 
+                       _IMAttachmentLogSubtype, _IMAudioSessionControllerSessionNotificationOptionsKey, 
+                       _IMAudioSessionControllerSessionOptionsWillChangeNotification, 
+                       _IMBalloonDescriptorEqualsBalloonDescriptor, _IMBalloonDescriptorZero, 
+                       _IMFullScreenEffectPreferredFrameInterval, _IMFullscreenEffectManagerUpdatesPlaying, 
+                       _IMFullscreenEffectsBundlePath, _IMReceiverPlaybackDelayRaise, 
+                       _IMReceiverPlaybackDelayTap, _IMSetAnonymizeContentAndContacts, 
+                       _IMSharedUIBundle, _IMSharedUIBundleID, _IMSharedUIVersionNumber, 
+                       _IMSharedUIVersionString, _IMURLForResourceFromSharedUIBundle, 
+                       _NSStringFromIMBalloonAttributes, _NSStringFromIMBalloonDescriptor, 
+                       _NSStringFromIMBalloonShape, _NSStringFromIMBalloonStyle, 
+                       _NSStringFromIMBalloonVisibleOrientation, _NSStringFromIMColorType, 
+                       _NSStringFromIMRectCorner, _NSStringFromIMTailShape, _NSStringFromIMTranscriptOrientation, 
+                       _kCKThinkingDotsOpacityDefault ]
+    objc-classes:    [ IMAudioController, IMAudioController_iOS, IMAudioPlayer, IMAudioSessionController, 
+                       IMAudioSessionController_iOS, IMChatTranscriptItemExtendedLayoutAttributes, 
+                       IMChatTranscriptItemLayoutAttributes, IMChatTranscriptLayoutEngine, 
+                       IMChatTranscriptLayoutSpecification, IMConversationListTypingIndicatorLayer, 
+                       IMDisplayLink, IMDisplayLink_iOS, IMDynamicGradientLayer, 
+                       IMFullScreenEffect, IMFullScreenEffectBundleManager, IMFullScreenEffectManager, 
+                       IMFullScreenEffectPlayer, IMFullScreenEffectSoundPlayer, IMFullscreenEffectFilter, 
+                       IMInternalAVAudioPlayer, IMSharedUI, IMTranscriptBubbleSizeCache, 
+                       IMTypingIndicatorLayer, _IMTranscriptBubbleSizeCacheEntry ]
+...

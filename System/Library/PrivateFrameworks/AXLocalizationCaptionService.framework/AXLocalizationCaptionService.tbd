@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           123AC8D3-9E18-3F97-8793-EFE6D3B0AA10
+  - target:          arm64-ios-simulator
+    value:           A254F272-59C1-337E-A003-7652408BCE62
+install-name:    '/System/Library/PrivateFrameworks/AXLocalizationCaptionService.framework/AXLocalizationCaptionService'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ AXLocalizationCaptionService ]
+...

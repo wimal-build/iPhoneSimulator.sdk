@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4961E5A2-ED29-359F-9F59-C3CFD2EB6147
+  - target:          arm64-ios-simulator
+    value:           B212216D-2F3C-337C-9432-CFFE6A21D588
+install-name:    '/System/Library/PrivateFrameworks/RenderBox.framework/RenderBox'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ RBFill._data, RBFill._heap ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RBColorBlack, _RBColorClear, _RBColorEqualToColor, _RBColorFromCGColor, 
+                       _RBColorFromComponents, _RBColorFromLinear, _RBColorMake, 
+                       _RBColorMakeLinear, _RBColorModeWorkingColorSpace, _RBColorToLinear, 
+                       _RBColorWhite, _RBDrawableStatisticsEMACostEstimate, _RBDrawableStatisticsEMARenderTime, 
+                       _RBDrawableStatisticsEMASubmitTime, _RBDrawableStatisticsFramesRendered, 
+                       _RBDrawableStatisticsFramesSubmitted, _RBDrawableStatisticsMaxCostEstimate, 
+                       _RBDrawableStatisticsMaxRenderTime, _RBDrawableStatisticsMaxSubmitTime, 
+                       _RBDrawableStatisticsMinCostEstimate, _RBDrawableStatisticsMinRenderTime, 
+                       _RBDrawableStatisticsMinSubmitTime, _RBDrawableStatisticsTotalCostEstimate, 
+                       _RBDrawableStatisticsTotalRenderTime, _RBDrawableStatisticsTotalSubmitTime, 
+                       _RBImageMakeCGImage, _RBImageMakeCUIVectorGlyph, _RBImageMakeIOSurface, 
+                       _RBImageMakeMTLTexture, _RBImageMakeRBSurface, _RBImageSimpleTransform, 
+                       _RBImageTransform, _RBLayerCopyImageClearColor, _RBLayerCopyImageClearsBackground, 
+                       _RBLayerCopyImageColorMode, _RBLayerCopyImageOpaque, _RBLayerCopyImagePromotesFramebuffer, 
+                       _RBLayerCopyImageScale, _RBStrokeBoundingRect, _RBTiledImageTransform, 
+                       _RBXMLParserErrorDomain, _RBXMLParserLinearColors, _RBXMLParserPreferredColorSpace, 
+                       _RBXMLRecorderInstall, _RBXMLRecorderStart, _RBXMLRecorderStop ]
+    objc-classes:    [ RBDevice, RBDisplayList, RBDrawable, RBFill, RBLayer, RBMetalRenderState, 
+                       RBShape, RBStrokeAccumulator, RBSurface, RBXMLParser ]
+...

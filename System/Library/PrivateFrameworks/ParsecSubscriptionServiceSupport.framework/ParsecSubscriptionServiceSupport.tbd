@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           FB4C45AD-E819-39E2-9ADD-991408405E9F
+  - target:          x86_64-ios-simulator
+    value:           DCD4BAD3-E580-3DAD-A9C4-9E09AFE83D78
+  - target:          arm64-ios-simulator
+    value:           3664E193-C2AE-3A33-846E-D1DB2C8C8AC4
+install-name:    '/System/Library/PrivateFrameworks/ParsecSubscriptionServiceSupport.framework/ParsecSubscriptionServiceSupport'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ParsecSubscriptionServiceSupportVersionNumber, _ParsecSubscriptionServiceSupportVersionString ]
+    objc-classes:    [ PSSSSubscriptionManager, PSSSSubscriptionManagerInternal ]
+...

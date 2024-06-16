@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           1AA13B50-A748-380D-B6E1-9204025D0AAA
+  - target:          x86_64-ios-simulator
+    value:           4936B84A-B47D-3113-AA7C-663D04E5361B
+  - target:          arm64-ios-simulator
+    value:           6B5FCA66-E95A-3905-9C4D-81D44E360107
+install-name:    '/System/Library/PrivateFrameworks/OAuth.framework/OAuth'
+current-version: 25
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _OAAuthTokenKey, _OAConsumerKeyKey, _OANonceKey, _OASignatureKey, 
+                       _OASignatureMethodKey, _OATimestampKey, _OAVersionKey, _oauth_version ]
+    objc-classes:    [ OACredential, OAHMAC_SHA1Signer, OAPlainTextSigner, OAURLRequestSigner ]
+    objc-ivars:      [ OACredential._consumerKey, OACredential._consumerSecret, OACredential._oauthToken, 
+                       OACredential._oauthTokenSecret, OAURLRequestSigner._credential, 
+                       OAURLRequestSigner._signatureMethod ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           048152F7-ED79-3893-AA03-EDCEEC4680A7
+  - target:          arm64-ios-simulator
+    value:           FD687279-950B-3455-B8D2-61DDB81F1691
+install-name:    '/System/Library/PrivateFrameworks/Osprey.framework/Osprey'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ OspreyChannel, OspreyConnectionMetrics, OspreyConnectionPreferences, 
+                       OspreyGRPCStreamingContext, OspreyKeychain, OspreyMessageProducer, 
+                       OspreyMethodCall, OspreyMutableRequest, OspreyPreferences, 
+                       OspreyRequest, OspreyService, OspreyUnaryMethodCall ]
+...

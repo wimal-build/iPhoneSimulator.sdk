@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           24A684B5-033B-3D8E-A6EE-68FBAC7BDB58
+  - target:          arm64-ios-simulator
+    value:           A98EF452-D669-3047-A311-BB6EBEB59582
+install-name:    '/System/Library/PrivateFrameworks/IOKitten.framework/IOKitten'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IOErrorDomain, _IOKAppPowerStateInterest, _IOKAudioPlane, 
+                       _IOKBusyInterest, _IOKDeviceTreePlane, _IOKFireWirePlane, 
+                       _IOKFirstMatchNotification, _IOKFirstPublishNotification, 
+                       _IOKGeneralInterest, _IOKMatchedNotification, _IOKPMAssertionTypeNetworkClientActive, 
+                       _IOKPMAssertionTypePreventDiskIdle, _IOKPMAssertionTypePreventUserIdleDisplaySleep, 
+                       _IOKPMAssertionTypePreventUserIdleSleep, _IOKPowerPlane, _IOKPriorityPowerStateInterest, 
+                       _IOKPublishNotification, _IOKServicePlane, _IOKTerminatedNotification, 
+                       _IOKUSBPlane, _IOKWillTerminateNotification, _IOKittenVersionNumber, 
+                       _IOKittenVersionString ]
+    objc-classes:    [ IOKConnection, IOKInterestNotification, IOKInterestNotificationRef, 
+                       IOKIterator, IOKMatchingNotification, IOKMatchingNotificationRef, 
+                       IOKNotificationPort, IOKObject, IOKPowerManager, IOKPowerManagerPowerAssertion, 
+                       IOKPowerNotifier, IOKRegistryEntry, IOKService, IORegistryIterator ]
+...

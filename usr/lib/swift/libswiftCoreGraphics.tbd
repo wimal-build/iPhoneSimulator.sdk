@@ -1,19 +1,28 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 171C6838-205F-3797-B480-71F8C86729CB', 'x86_64: 055569F8-BD61-3F8B-93FD-A8BE1728BD56' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           171C6838-205F-3797-B480-71F8C86729CB
+  - target:          x86_64-ios-simulator
+    value:           77C1BC7B-4DCF-3B50-8986-7C6476210F14
+  - target:          arm64-ios-simulator
+    value:           F0B48604-38BC-3FC7-9528-E18ACE0246EE
 install-name:    '/usr/lib/swift/libswiftCoreGraphics.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386 ]
+current-version: 2
+swift-abi-version: 7
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ '_$s12CoreGraphics7CGFloatV12floatLiteralACSf_tcfC', '_$s12CoreGraphics7CGFloatV6nativeSfvM', 
                        '_$s12CoreGraphics7CGFloatV6nativeSfvg', '_$s12CoreGraphics7CGFloatV6nativeSfvpMV', 
                        '_$s12CoreGraphics7CGFloatV6nativeSfvs' ]
-  - archs:           [ x86_64 ]
+  - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ '_$s12CoreGraphics7CGFloatVyACs7Float80VcfC' ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]
     symbols:         [ '_$s12CoreGraphics7CGFloatV12floatLiteralACSd_tcfC', '_$s12CoreGraphics7CGFloatV6nativeSdvM', 
                        '_$s12CoreGraphics7CGFloatV6nativeSdvg', '_$s12CoreGraphics7CGFloatV6nativeSdvpMV', 
                        '_$s12CoreGraphics7CGFloatV6nativeSdvs' ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftCoreGraphics.dylib', 
                        '$ld$install_name$os10.1$@rpath/libswiftCoreGraphics.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftCoreGraphics.dylib', 
@@ -179,12 +188,11 @@ exports:
                        '_$s12CoreGraphics7CGFloatVs27ExpressibleByIntegerLiteralAAMc', 
                        '_$s12CoreGraphics7CGFloatVs7CVarArgAAMc', '_$s12CoreGraphics7CGFloatVyA2CcfC', 
                        '_$s12CoreGraphics7CGFloatVyACSdcfC', '_$s12CoreGraphics7CGFloatVyACSfcfC', 
-                       '_$s12CoreGraphics7CGFloatVyACs7Float80VcfC', '_$s12CoreGraphics7signbitySiAA7CGFloatVF', 
-                       '_$s12CoreGraphics8copysignyAA7CGFloatVAD_ADtF', '_$s12CoreGraphics8isfiniteySbAA7CGFloatVF', 
-                       '_$s12CoreGraphics8isnormalySbAA7CGFloatVF', '_$s12CoreGraphics9nearbyintyAA7CGFloatVADF', 
-                       '_$s12CoreGraphics9nextafteryAA7CGFloatVAD_ADtF', '_$sSd12CoreGraphicsEySdAA7CGFloatVcfC', 
-                       '_$sSf12CoreGraphicsEySfAA7CGFloatVcfC', '_$sSi12CoreGraphicsEySiAA7CGFloatVcfC', 
-                       '_$sSo10CGColorRefa12CoreGraphics01_A14InitTrampolineACMc', 
+                       '_$s12CoreGraphics7signbitySiAA7CGFloatVF', '_$s12CoreGraphics8copysignyAA7CGFloatVAD_ADtF', 
+                       '_$s12CoreGraphics8isfiniteySbAA7CGFloatVF', '_$s12CoreGraphics8isnormalySbAA7CGFloatVF', 
+                       '_$s12CoreGraphics9nearbyintyAA7CGFloatVADF', '_$s12CoreGraphics9nextafteryAA7CGFloatVAD_ADtF', 
+                       '_$sSd12CoreGraphicsEySdAA7CGFloatVcfC', '_$sSf12CoreGraphicsEySfAA7CGFloatVcfC', 
+                       '_$sSi12CoreGraphicsEySiAA7CGFloatVcfC', '_$sSo10CGColorRefa12CoreGraphics01_A14InitTrampolineACMc', 
                        '_$sSo10CGColorRefa12CoreGraphics01_A14InitTrampolineACWP', 
                        '_$sSo10CGColorRefa12CoreGraphicsE10componentsSayAC7CGFloatVGSgvg', 
                        '_$sSo10CGColorRefa12CoreGraphicsE10componentsSayAC7CGFloatVGSgvpMV', 

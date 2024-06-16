@@ -1,0 +1,77 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           711EA93C-2A89-3012-9A7D-CB691FEE6984
+  - target:          x86_64-ios-simulator
+    value:           577DB40B-F40B-3AA9-8838-2B635A8CAFDC
+  - target:          arm64-ios-simulator
+    value:           F0ACDF15-C091-3D7F-8B7B-F53BCE7465B8
+install-name:    '/System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _TLAlertInterruptionOptionsMake, _TLAlertTopicAppNotificationRemote, 
+                       _TLAlertTopicSystemNotificationBluetoothLowEnergy, __TLAssertShouldAbort, 
+                       _kToneGUIDKey, _kTonePIDKey ]
+    objc-classes:    [ TLAlertActivationController ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSStringFromTLAlertOverridePolicy, _NSStringFromTLAlertPlaybackCompletionType, 
+                       _NSStringFromTLAlertType, _NSStringFromTLToneImportStatusCode, 
+                       _NSStringFromTLWatchAlertPolicy, _TLAlertErrorDomain, _TLAlertOverridePolicyFromString, 
+                       _TLAlertPlaybackCompletionTypeFromString, _TLAlertTopicActivityFriendsGoalAttained, 
+                       _TLAlertTopicActivityGoalAttained, _TLAlertTopicActivityGoalBehind, 
+                       _TLAlertTopicAlarmGoToSleep, _TLAlertTopicAlarmNightstand, 
+                       _TLAlertTopicAlarmWakeUp, _TLAlertTopicAppNotificationCriticalAlert, 
+                       _TLAlertTopicAppNotificationFirstParty, _TLAlertTopicHandwashingReminder, 
+                       _TLAlertTopicHandwashingSessionEnd, _TLAlertTopicHandwashingSessionProgressTapHaptics, 
+                       _TLAlertTopicHandwashingSessionProgressVibeHaptics, _TLAlertTopicHandwashingSessionStart, 
+                       _TLAlertTopicHealthUrgent, _TLAlertTopicIncomingCallFaceTimeGroupInvitation, 
+                       _TLAlertTopicIncomingCallFaceTimeParticipantJoined, _TLAlertTopicNewMailThreaded, 
+                       _TLAlertTopicNewMailVIP, _TLAlertTopicPassbookGeofence, _TLAlertTopicPassbookNFCScanComplete, 
+                       _TLAlertTopicPhotosNotificationMemory, _TLAlertTopicPhotosNotificationSharingPost, 
+                       _TLAlertTopicSOSButtonChordingTimeout, _TLAlertTopicSOSCountdownPreannounce, 
+                       _TLAlertTopicSOSCountdownTick, _TLAlertTopicSOSDialStart, 
+                       _TLAlertTopicSleepWakeDetection, _TLAlertTopicSystemNotificationBackgroundMicUsage, 
+                       _TLAlertTopicSystemNotificationDoorbell, _TLAlertTopicSystemNotificationFindMyDevice, 
+                       _TLAlertTopicSystemNotificationGeneric, _TLAlertTopicSystemNotificationHeadphoneAudioExposure, 
+                       _TLAlertTopicTextMessageAcknowledgmentExclamation, _TLAlertTopicTextMessageAcknowledgmentHaHa, 
+                       _TLAlertTopicTextMessageAcknowledgmentHeart, _TLAlertTopicTextMessageAcknowledgmentQuestionMark, 
+                       _TLAlertTopicTextMessageAcknowledgmentThumbsDown, _TLAlertTopicTextMessageAcknowledgmentThumbsUp, 
+                       _TLAlertTopicTextMessageInConversation, _TLAlertTopicWalkieTalkieActiveEnd, 
+                       _TLAlertTopicWalkieTalkieActiveStart, _TLAlertTypeFromString, 
+                       _TLAttentionAwarenessEffectParametersMake, _TLLocalizedString, 
+                       _TLLogGeneral, _TLLogPlayback, _TLLogToneManagement, _TLLogVibrationManagement, 
+                       _TLServiceAgentIdentifier, _TLServiceAgentPreferencesDomain, 
+                       _TLServiceCommunicationErrorDomain, _TLServicePersistenceErrorDomain, 
+                       _TLServiceValidationErrorDomain, _TLToneIdentifierNone, _TLToneImportStatusCodeFromString, 
+                       _TLVibrationIdentifierNone, _TLVibrationManagerUserGeneratedVibrationsDidChangeNotification, 
+                       _TLVibrationUserGeneratedVibrationPatternIdentifierPrefix, 
+                       _TLVibrationUserGeneratedVibrationPatternsDictionaryKeyName, 
+                       _TLVibrationUserGeneratedVibrationPatternsDictionaryKeyPattern, 
+                       _TLWatchAlertPolicyFromString, __TLAlertOverridePolicyDidChangeNotification, 
+                       __TLAlertTopicIncomingCallDeemphasized, __TLAlertTypeGetHumanReadableDescription, 
+                       __TLAlertTypeValidateConsistencyOfEnumeration, __TLAlertWatchPrefersSalientToneAndVibrationDidChangeNotification, 
+                       __TLToneManagerContentsChangedNotification, __TLVibrationPatternAtomsKey, 
+                       __TLVibrationPatternIntensityKey, __TLVibrationPatternLoopedKey, 
+                       __TLVibrationPatternOffDurationKey, __TLVibrationPatternOnDurationKey, 
+                       __TLVibrationPatternVibePatternKey, __TLVibrationSynchronizedVibrationPatternIdentifierPrefix, 
+                       _kSystemSoundID_InvalidTone, _kSystemSoundID_NoneTone, _kToneAlbumKey, 
+                       _kToneArtistKey, _kToneArtworkFileKey, _kToneDurationKey, 
+                       _kToneFileExtensionKey, _kToneGenreKey, _kToneGloballyUniqueIdentifierKey, 
+                       _kToneMediaKindAlertTone, _kToneMediaKindKey, _kToneMediaKindRingtone, 
+                       _kTonePrivateKey, _kToneProtectedContentKey, _kTonePurchasedKey, 
+                       _kToneStoreFrontIdentifierKey, _kToneStoreItemIdentifierKey, 
+                       _kToneSyncIdentifierKey, _kToneTitleKey ]
+    objc-classes:    [ TLAccessQueue, TLAlert, TLAlertActivationAssertion, TLAlertConfiguration, 
+                       TLAlertContext, TLAlertController, TLAlertPlaybackCompletionContext, 
+                       TLAlertPlaybackPolicy, TLAlertQueuePlayerController, TLAlertStoppingOptions, 
+                       TLAlertSystemSoundContext, TLAlertSystemSoundController, TLAlertTone, 
+                       TLAttentionAwarenessEffectAudioTapContext, TLAttentionAwarenessEffectCoordinator, 
+                       TLAttentionAwarenessEffectProcessor, TLAttentionAwarenessObserver, 
+                       TLBacklight, TLCapabilitiesManager, TLContentProtectionStateObserver, 
+                       TLITunesTone, TLPreferencesUtilities, TLSilentModeController, 
+                       TLSystemApplication, TLSystemSound, TLToneImportResponse, 
+                       TLToneManager, TLToneStoreDownload, TLToneStoreDownloadStoreServicesController, 
+                       TLVibrationManager, TLVibrationPattern, TLVibrationPersistenceUtilities ]
+...

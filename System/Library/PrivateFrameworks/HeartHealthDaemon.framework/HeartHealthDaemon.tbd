@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2434E3C9-D4EC-30FE-BC5D-C40206700D19
+  - target:          arm64-ios-simulator
+    value:           645E729B-91C0-3D9D-A35E-8B7F9F66DDD8
+install-name:    '/System/Library/PrivateFrameworks/HeartHealthDaemon.framework/HeartHealthDaemon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kHLPowerLogActionConnected, _kHLPowerLogActionDisconnected, 
+                       _kHLPowerLogActionKey, _kHLPowerLogActionStartActive, _kHLPowerLogActionStartPassive, 
+                       _kHLPowerLogActionStopUpdates, _kHLPowerLogBundleIdentifierKey, 
+                       _kHLPowerLogEvent, _kHLPowerLogPIDKey ]
+    objc-classes:    [ HDHRDailyHeartRateManager, HDHRHealthLiteDataCollector, HDHRNotificationManager, 
+                       HDHeartRateProfileExtension ]
+...

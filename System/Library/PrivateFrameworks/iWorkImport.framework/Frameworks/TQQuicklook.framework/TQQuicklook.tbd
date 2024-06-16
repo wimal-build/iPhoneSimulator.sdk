@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           A63823FE-AC6D-3DD9-9026-F3E894136198
+  - target:          arm64-ios-simulator
+    value:           4340B25C-D530-3546-AD15-36556C9E0159
+install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TQQuicklook.framework/TQQuicklook'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ TQQuicklook.mBaseAppDelegate, TQQuicklook.mDocument, TQQuicklook.mExporter, 
+                       TQQuicklook.mPassphrase, TQQuicklook.mPath, TQQuicklook.mTemporaryDirectory ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ TQQuicklook ]
+...

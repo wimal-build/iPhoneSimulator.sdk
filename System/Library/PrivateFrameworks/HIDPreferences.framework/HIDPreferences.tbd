@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           8DF5107A-5F1A-301C-A5A7-29E5EA7DDA5D
+  - target:          arm64-ios-simulator
+    value:           6B731F62-23CA-3B1D-8849-A72F94778733
+install-name:    '/System/Library/PrivateFrameworks/HIDPreferences.framework/HIDPreferences'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HIDPreferencesCopy, _HIDPreferencesCopyDomain, _HIDPreferencesCopyMultiple, 
+                       _HIDPreferencesSet, _HIDPreferencesSetDomain, _HIDPreferencesSetMultiple, 
+                       _HIDPreferencesSynchronize, _HIDPreferencesVersionNumber, 
+                       _HIDPreferencesVersionString ]
+    objc-classes:    [ HIDPreferences, HIDPreferencesHelperClient, HIDPreferencesHelperListener ]
+...

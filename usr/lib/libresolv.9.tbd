@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D31F167E-6E80-3771-9960-66088B5F3BFF', 'x86_64: 959D8B11-165E-3304-80DD-0E3FA88F627E' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           071F8D58-FBF5-3661-A553-1292D0A2FD21
+  - target:          x86_64-ios-simulator
+    value:           88250CA1-2C56-39B3-BEE4-4B955D43D5BC
+  - target:          arm64-ios-simulator
+    value:           452FA5FA-0AD3-30BA-88BB-1681384B482C
 install-name:    '/usr/lib/libresolv.9.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___libresolv_9VersionNumber, ___libresolv_9VersionString, 
                        ___res_nsearch_list_2, ___res_opcodes, ___res_p_cert_syms, 
                        ___res_p_class_syms, ___res_p_key_syms, ___res_p_rcode_syms, 
@@ -23,7 +29,7 @@ exports:
                        _res_interrupt_request, _res_interrupt_requests_disable, _res_interrupt_requests_enable, 
                        _res_next_word, _res_nquery_2, _res_nquerydomain_2, _res_nsearch_2, 
                        _res_query_mDNSResponder, _res_state_new, _res_vinit_from_file ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ ___res_9_p_type_syms, __res_9_h_errno_set, __res_9_ns_flagdata, 
                        _dns_all_server_addrs, _dns_async_cancel, _dns_async_handle_reply, 
                        _dns_async_receive, _dns_async_send, _dns_async_start, _dns_class_number, 

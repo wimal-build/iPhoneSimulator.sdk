@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           B2004DB3-3349-3222-A2B6-1F391B722BCE
+  - target:          arm64-ios-simulator
+    value:           36094F9F-3919-3FD8-91CE-B2309011433C
+install-name:    '/System/Library/PrivateFrameworks/LockoutUI.framework/LockoutUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LOErrorDomain, _LOErrorResponsePinErrorKey, _LOErrorResponseUserInfoKey, 
+                       _LOLockoutUIVersionNumber, _LOLockoutUIVersionString ]
+    objc-classes:    [ LOViewController ]
+...

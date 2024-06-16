@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           091470DD-46C1-3401-9E40-8FB1961948DE
+  - target:          arm64-ios-simulator
+    value:           B5BD51C9-8D0D-35D1-8ACE-C9A406F8CD39
+install-name:    '/System/Library/PrivateFrameworks/RevealCore.framework/RevealCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RevealCoreVersionNumber, _RevealCoreVersionString ]
+    objc-classes:    [ RVDocumentContext, RVItem, RVSelection ]
+...

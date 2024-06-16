@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4F517D50-DB30-3EA3-9AB4-06AC6474FD1B', 'x86_64: 4110F7FE-1949-3981-B319-28435CCCA116' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A2AD5B8C-3C38-34CA-A118-51601F272AFF
+  - target:          x86_64-ios-simulator
+    value:           7815A4EC-629D-3650-8292-C63AC6B61D53
+  - target:          arm64-ios-simulator
+    value:           414EC0D7-F284-3C9D-948A-BA5482DCC03D
 install-name:    '/usr/lib/libMobileGestalt.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MGCancelNotifications, _MGCopyAnswer, _MGCopyAnswerWithError, 
                        _MGCopyMultipleAnswers, _MGGetBoolAnswer, _MGGetFloat32Answer, 
                        _MGGetProductType, _MGGetSInt32Answer, _MGGetSInt64Answer, 
@@ -14,8 +20,9 @@ exports:
                        __MGCacheValid, __MGClearInProcessCache, __MGCopyDeviceDescription, 
                        __MGCopyIteratedDeviceDescription, __MGGetFastPathLog, __MGIterateDevices, 
                        __MGLog, __MGPrintIteratedDeviceDescription, __MGRebuildCache, 
-                       __MGServerCopyAnswerWithError, __MGServerQuestionIsPlatform, 
-                       __MGSetServer, __MGWaitForDevices, __MGWriteCache, _kMGQDiskUsageAmountDataAvailable, 
+                       __MGRebuildCache4PurpleRestore, __MGServerCopyAnswerWithError, 
+                       __MGServerQuestionIsPlatform, __MGSetServer, __MGWaitForDevices, 
+                       __MGWriteCache, __MGWriteCacheOnHelper, _is_restore_os, _kMGQDiskUsageAmountDataAvailable, 
                        _kMGQDiskUsageAmountDataReserved, _kMGQDiskUsageAmountRestoreAvailable, 
                        _kMGQDiskUsageTotalDataAvailable, _kMGQDiskUsageTotalDataCapacity, 
                        _kMGQDiskUsageTotalDiskCapacity, _kMGQDiskUsageTotalSystemAvailable, 

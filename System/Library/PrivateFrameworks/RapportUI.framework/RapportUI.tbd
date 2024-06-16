@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           708DFF89-CA16-3968-BB16-FC36206143DD
+  - target:          arm64-ios-simulator
+    value:           5CD45F5A-D9A2-37C3-9466-4C5A8CF4403C
+install-name:    '/System/Library/PrivateFrameworks/RapportUI.framework/RapportUI'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RPImageForDeviceModel, _RPUILocalizedString, _RPUILocalizedStringF, 
+                       _RPUILocalizedStringV ]
+    objc-classes:    [ RPPINEntryView, RPPairingManagerUIController, RPPairingPromptViewController, 
+                       RPPairingShowViewController, RPPairingUIController ]
+...

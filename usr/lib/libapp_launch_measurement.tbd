@@ -1,13 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2061E482-E949-3CA5-8994-D7F161AA602F' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           3418A090-CA0F-3704-BF9A-CEDD6ABBAD81
+  - target:          arm64-ios-simulator
+    value:           D8727DEE-D7E5-34E1-B513-ADC5ED0C9A50
 install-name:    '/usr/lib/libapp_launch_measurement.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
-    symbols:         [ _alm_app_did_present, _alm_app_extended_launch_end, _alm_app_will_launch, 
-                       _alm_app_will_launch_with_details, _alm_app_will_launch_with_signpost_id, 
-                       _alm_build_version_string, _alm_clear_responsive_launch_bailed, 
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _alm_app_did_present, _alm_app_extended_launch_end, _alm_app_measurement_ongoing, 
+                       _alm_app_will_launch, _alm_app_will_launch_with_details, _alm_app_will_launch_with_signpost_id, 
+                       _alm_build_launch_info, _alm_build_version_string, _alm_clear_responsive_launch_bailed, 
                        _alm_execute_when_main_queue_idle, _alm_execute_when_measurement_complete, 
-                       _alm_legacy_app_regular_or_extended_launch_end, _alm_stop_tracking_responsive_launch ]
+                       _alm_has_reached_launch_milestone, _alm_legacy_app_regular_or_extended_launch_end, 
+                       _alm_reset_launch_milestone, _alm_stop_tracking_responsive_launch ]
 ...

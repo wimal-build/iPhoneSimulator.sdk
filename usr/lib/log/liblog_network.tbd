@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           9AA6AB9E-A5F9-347D-9F23-A8308BE80B10
+  - target:          x86_64-ios-simulator
+    value:           13760104-05C0-3188-96CF-1D54EDAA8672
+  - target:          arm64-ios-simulator
+    value:           CFE7DD07-F808-341C-9C55-A7957B838E15
+install-name:    '/usr/lib/log/liblog_network.dylib'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ ___networkVersionNumber, ___networkVersionString ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _OSLogCopyFormattedString ]
+...

@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2A2B1BA4-9EAB-35D7-9C47-FAE541007045
+  - target:          arm64-ios-simulator
+    value:           F814D15E-F9E6-3410-A90B-98AF036AE9E0
+install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib'
+exports:
+  - targets:         [ x86_64-ios-simulator ]
+    weak-symbols:    [ __ZTI11CAException, __ZTINSt3__111regex_errorE, __ZTINSt3__117bad_function_callE, 
+                       __ZTISt11logic_error, __ZTISt12length_error, __ZTISt12out_of_range, 
+                       __ZTISt13runtime_error, __ZTISt9bad_alloc, __ZTISt9exception, 
+                       __ZTS11CAException, __ZTSNSt3__111regex_errorE, __ZTSNSt3__117bad_function_callE, 
+                       __ZTSSt11logic_error, __ZTSSt12length_error, __ZTSSt12out_of_range, 
+                       __ZTSSt13runtime_error, __ZTSSt9bad_alloc, __ZTSSt9exception ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AUBandpassFactory, _AUConverterFactory, _AUDeferredRendererFactory, 
+                       _AUDelayFactory, _AUDistortionFactory, _AUDynamicsProcessorFactory, 
+                       _AUGenericOutputFactory, _AUHapticSynthFactory, _AUHighShelfFilterFactory, 
+                       _AUHipassFactory, _AULopassFactory, _AULowShelfFilterFactory, 
+                       _AUMatrixMixerFactory, _AUMatrixReverbLiteFactory, _AUMergerFactory, 
+                       _AUMultiChannelMixerFactory, _AUMultiSplitterFactory, _AUNewPitchFactory, 
+                       _AUNewTimePitchFactory, _AUNotQuiteSoSimpleTimeFactory, _AUParametricEQFactory, 
+                       _AUPeakLimiterFactory, _AUSampleDelayFactory, _AUSimpleTimeFactory, 
+                       _AUSpecialPurposeSweepFilterFactory, _AUSplitterFactory, _AUVarispeedFactory, 
+                       _AudioOutputUnitPublish_Impl, _MIDISynthFactory, _RegisterAudioUnits_Instruments, 
+                       _RegisterAudioUnits_Toolbox, _SamplerFactory ]
+...

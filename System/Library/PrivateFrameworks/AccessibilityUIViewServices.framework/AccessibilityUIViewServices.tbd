@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F6769ACB-6194-36C4-A06F-BB24CE21B1C8
+  - target:          arm64-ios-simulator
+    value:           02C95107-6F12-3A8F-A05A-8392B5D74B86
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityUIViewServices.framework/AccessibilityUIViewServices'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ AXCACCorrectionsService, AXCACCustomCommandEditorService, 
+                       AXVSBaseService, AXVSVoiceOverItemChooserService ]
+...

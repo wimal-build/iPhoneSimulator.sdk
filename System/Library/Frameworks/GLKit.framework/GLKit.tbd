@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4CDCCBFE-99E9-3A7B-A4B7-D601B5549AEC', 'x86_64: B441544B-2106-3BC1-94D0-8189E0D60818' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C3395947-17EA-325E-914D-CE00C5AF37FE
+  - target:          x86_64-ios-simulator
+    value:           ADFAC63B-8E60-3949-B9AE-D032A05917E3
+  - target:          arm64-ios-simulator
+    value:           B7156F96-C6F7-3B9E-9131-F4D8B100DE1C
 install-name:    '/System/Library/Frameworks/GLKit.framework/GLKit'
-current-version: 106
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 124
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _GLKMathProject, _GLKMathUnproject, _GLKMatrix3Identity, _GLKMatrix3Invert, 
                        _GLKMatrix3InvertAndTranspose, _GLKMatrix4Identity, _GLKMatrix4Invert, 
                        _GLKMatrix4InvertAndTranspose, _GLKMatrixStackCreate, _GLKMatrixStackGetMatrix2, 

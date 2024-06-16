@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EB1949AD-3B40-3D6C-B98C-2B5561149B64
+  - target:          arm64-ios-simulator
+    value:           88B851A3-4B26-31A6-A399-6FB0CED69C47
+install-name:    '/System/Library/PrivateFrameworks/InputTranscoder.framework/InputTranscoder'
+current-version: 55
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ITCandidateEnumerateTokenIDs, _ITCandidateGetScore, _ITCandidateGetSources, 
+                       _ITCandidateGetString, _ITCandidateGetStrokedPath, _ITCandidateIsCompletion, 
+                       _ITDecoderClearNeuralNetworkBuffer, _ITDecoderCreate, _ITDecoderEnumerateCandidates, 
+                       _ITDecoderSetLinguisticContext, _ITKeyInfoNull, _ITTouchTranscoderAddLexicon, 
+                       _ITTouchTranscoderClearNeuralNetworkBuffer, _ITTouchTranscoderCreateSession, 
+                       _ITTouchTranscoderCreateWithKeyboardLayout, _ITTouchTranscoderSessionAddEvent, 
+                       _ITTouchTranscoderSessionEnumerateCandidates, _ITTouchTranscoderSessionSetLinguisticContext, 
+                       _ITTouchTranscoderSessionSetPrefix, _ITTouchTranscoderSupportsLocale, 
+                       _ITTouchTranscoderSupportsLocaleAndLayout, _ITTouchTranscoderUpdateKeyboardLayout, 
+                       _kITCandidateSourceDynamicLexicon, _kITCandidateSourceStaticLexicon, 
+                       _kITDecoderLocaleKey, _kITDecoderResourceDirectoryKey, _kITTouchTranscoderBundleURLKey, 
+                       _kITTouchTranscoderKeyboardLayoutNameKey, _kITTouchTranscoderLocaleKey ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           315528E4-01A7-389A-849E-19653593C903
+  - target:          x86_64-ios-simulator
+    value:           9C410FFE-7A67-3457-BE75-512814E903C1
+  - target:          arm64-ios-simulator
+    value:           E7A800D0-7645-352E-8616-193E39D4A618
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib'
+allowable-clients:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _quadrature_integrate ]
+...

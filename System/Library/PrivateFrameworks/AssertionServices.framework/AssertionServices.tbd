@@ -1,0 +1,62 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A50F8416-F9FE-3481-BFF1-669AFAA8DB12
+  - target:          x86_64-ios-simulator
+    value:           0B599ABC-FC9D-362B-88C3-199A4E9A0F84
+  - target:          arm64-ios-simulator
+    value:           36D83E53-E532-3EFE-B15F-D6685FF1677D
+install-name:    '/System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices'
+current-version: 505.0.12
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _BKSAppWatchdogServerPort, _BKSApplicationStateActivationReasonKey, 
+                       _BKSApplicationStateMessageBundleID, _BKSApplicationStateMessageContent, 
+                       _BKSApplicationStateMessageElevatedPriority, _BKSApplicationStateMessageInterestedBundleIDs, 
+                       _BKSApplicationStateMessageInterestedStates, _BKSApplicationStateMessageKeyToRetrieve, 
+                       _BKSApplicationStateMessageProcessID, _BKSApplicationStateMessageType, 
+                       _BKSApplicationStateServerRegisteredNotifyKey, _BKSProcessAssertionEventKey, 
+                       _BKSProcessAssertionMessageTypeKey, _BKSProcessAssertionResultKey, 
+                       _BKSProcessAssertionServiceName, _BKSProcessExitReasonErrorKey, 
+                       _BKSProcessExitReasonForLaunchdExitReason, _BKSProcessInfoServiceMessageKeyArray, 
+                       _BKSProcessInfoServiceMessageKeyBool, _BKSProcessInfoServiceMessageKeyEndpoint, 
+                       _BKSProcessInfoServiceMessageKeyError, _BKSProcessInfoServiceMessageKeyExitContext, 
+                       _BKSProcessInfoServiceMessageKeyInt, _BKSProcessInfoServiceMessageKeyJobSpecification, 
+                       _BKSProcessInfoServiceMessageKeyMessageType, _BKSProcessInfoServiceMessageKeyProcessHandle, 
+                       _BKSProcessInfoServiceMessageKeyString, _BKSProcessInfoServiceMessageKeyVisibility, 
+                       _BKSProcessInfoServiceName, _BKSProcessJobLabelErrorKey, __BKSAppWatchdogAddAssertionForProcess ]
+    objc-classes:    [ BKSProcessAssertionClient, BKSProcessAssertionCreateEvent, 
+                       BKSProcessAssertionDestroyEvent, BKSProcessAssertionEvent, 
+                       BKSProcessAssertionUpdateEvent, BKSProcessClient ]
+    objc-ivars:      [ BKSProcess._bootstrapped, BKSProcess._bundleID, BKSProcess._callOutQueue, 
+                       BKSProcess._client, BKSProcess._jobLabel, BKSProcess._jobSpec, 
+                       BKSProcess._lastExitContext, BKSProcess._queue ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AssertionServicesVersionNumber, _AssertionServicesVersionString, 
+                       _BKLaunchdJobApplicationLabelPrefix, _BKLaunchdJobSystemShellLabelPrefix, 
+                       _BKSApplicationNotificationStateChanged, _BKSApplicationStateAll, 
+                       _BKSApplicationStateAppIsFrontmostKey, _BKSApplicationStateDisplayIDKey, 
+                       _BKSApplicationStateExitCodeKey, _BKSApplicationStateExitReasonKey, 
+                       _BKSApplicationStateExtensionKey, _BKSApplicationStateHostPIDKey, 
+                       _BKSApplicationStateKey, _BKSApplicationStateMostElevatedStateForProcessIDKey, 
+                       _BKSApplicationStateProcessIDKey, _BKSApplicationStateRunningReasonAssertionIdentifierKey, 
+                       _BKSApplicationStateRunningReasonAssertionNotificationKey, 
+                       _BKSApplicationStateRunningReasonAssertionReasonKey, _BKSApplicationStateRunningReasonsKey, 
+                       _BKSAssertionErrorDescription, _BKSAssertionErrorDomain, _BKSProcessAssertionBackgroundTimeRemaining, 
+                       _BKSProcessAssertionSetExpirationHandler, _BKSProcessDiagnosticReportTypeDescription, 
+                       _BKSProcessErrorDomain, _BKSProcessExtensionPropertyBundleID, 
+                       _BKSProcessVisibilityIsForeground, _BKSProcessVisibilityMax, 
+                       _BKSTerminationAssertionActiveEfficacyForBundleIdentifier, 
+                       _BKSTerminationAssertionEfficacyDescription, _BKSTerminationAssertionHeldForBundleIdentifier, 
+                       _BKSTerminationAssertionRegisterObserver, _BKSTerminationAssertionUnregisterObserver, 
+                       _BKSWatchdogAssertionCreateForPID, _BKSWatchdogAssertionGetTypeID, 
+                       _NSStringFromBKSProcessErrorCode, _NSStringFromBKSProcessExitReason, 
+                       _NSStringFromBKSProcessTaskState, _NSStringFromBKSProcessVisibility, 
+                       _RBSProcessLegacyStateDescriptor ]
+    objc-classes:    [ BKSApplicationStateMonitor, BKSAssertion, BKSLaunchdJobSpecification, 
+                       BKSProcess, BKSProcessAssertion, BKSProcessExitContext, BKSTerminationAssertion, 
+                       BKSTerminationAssertionObserverManager, BKSTerminationContext, 
+                       BKSWorkspace ]
+...

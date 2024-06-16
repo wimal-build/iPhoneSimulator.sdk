@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           E3709382-C634-3057-BD81-3EC8EF131B75
+  - target:          arm64-ios-simulator
+    value:           9EFDBB40-61F7-31EF-94E9-A8F7F48FC732
+install-name:    '/System/Library/PrivateFrameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AVSpeechSynthesisVoiceIdentifierFred, _AVSpeechSynthesisVoiceIdentifierVictoria ]
+    objc-classes:    [ AXSettingsVoiceAssetManager, AXSpeechAssetMonitorHelper, AXSpeechPronunciationHelper, 
+                       AXSpeechPronunciationOptions ]
+...

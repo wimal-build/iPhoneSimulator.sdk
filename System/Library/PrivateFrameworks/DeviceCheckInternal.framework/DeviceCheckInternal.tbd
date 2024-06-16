@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EBE712F9-D63A-3FC9-8572-4E37B5C23947
+  - target:          arm64-ios-simulator
+    value:           5F5E5284-0EA4-366D-82A4-FB52D271558D
+install-name:    '/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/DeviceCheckInternal'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ DCCryptoProxyImpl, DCDDeviceMetadata, DCXPCActivityController ]
+...

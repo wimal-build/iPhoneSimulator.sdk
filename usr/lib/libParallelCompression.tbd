@@ -1,16 +1,22 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 90E5D649-73F7-3C6B-B8A3-71622010FE56' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           3A43C27D-7BB9-37B6-83B4-23827E466B09
+  - target:          arm64-ios-simulator
+    value:           0EB600EF-385E-3E81-92FA-0591EB804A8A
 install-name:    '/usr/lib/libParallelCompression.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
-    symbols:         [ _BXDiff5, _BXDiff5Large, _BXDiff5WithIndividualPatches, _BXPatch5, 
-                       _BXPatch5InPlace, _BXPatch5Large, _BXPatch5WithFlags, _BXPatchFile, 
-                       _DirectoryDiff, _DirectoryPatch, _ISparseArchiveStreamCreate, 
-                       _ISparseArchiveStreamDestroy, _ISparseArchiveStreamRead, _PCompressFilter, 
-                       _PackagePatch, _ParallelArchiveCheckAndFix, _ParallelArchiveCombine, 
-                       _ParallelArchiveConvert, _ParallelArchiveECCFixBuffer, _ParallelArchiveECCFixFileSegment, 
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BXDiff5, _BXDiff5WithIndividualPatches, _BXPatch5, _BXPatch5InPlace, 
+                       _BXPatch5WithFlags, _BXPatchFile, _DirectoryDiff, _DirectoryPatch, 
+                       _ISparseArchiveStreamCreate, _ISparseArchiveStreamDestroy, 
+                       _ISparseArchiveStreamRead, _PCompressFilter, _PackagePatch, 
+                       _ParallelArchiveCheckAndFix, _ParallelArchiveCombine, _ParallelArchiveConvert, 
+                       _ParallelArchiveECCFixBuffer, _ParallelArchiveECCFixFileSegment, 
                        _ParallelArchiveECCGenerateFromBuffer, _ParallelArchiveECCGenerateFromFileSegment, 
                        _ParallelArchiveExtract, _ParallelArchiveExtractClones, _ParallelArchiveExtractSubtree, 
                        _ParallelArchiveFilesystemCreate, _ParallelArchiveFilesystemDestroy, 
@@ -26,7 +32,11 @@ exports:
                        _ParallelArchiveSearch, _ParallelArchiveSort, _ParallelArchiveVerifyDir, 
                        _ParallelArchiveWriteDirContents, _ParallelArchiveWriteEntryData, 
                        _ParallelArchiveWriteEntryHeader, _ParallelArchiveWriterCreate, 
-                       _ParallelArchiveWriterDestroy, _ParallelCompressionDecode, 
+                       _ParallelArchiveWriterCreateLegacy, _ParallelArchiveWriterDestroy, 
+                       _ParallelCompressionAFSCCompress, _ParallelCompressionAFSCFixupMetadata, 
+                       _ParallelCompressionAFSCGetMetadata, _ParallelCompressionAFSCStreamClose, 
+                       _ParallelCompressionAFSCStreamOpen, _ParallelCompressionAFSCStreamWrite, 
+                       _ParallelCompressionAFSCUseMaxEmbeddedSize, _ParallelCompressionDecode, 
                        _ParallelCompressionEncode, _ParallelCompressionEnterThreadErrorContext, 
                        _ParallelCompressionFileClose, _ParallelCompressionFileOpen, 
                        _ParallelCompressionFileRead, _ParallelCompressionFileSeek, 

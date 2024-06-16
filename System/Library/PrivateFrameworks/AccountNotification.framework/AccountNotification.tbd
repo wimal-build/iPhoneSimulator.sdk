@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           5E9429C9-75C9-39E3-BA31-0A268735BC42
+  - target:          x86_64-ios-simulator
+    value:           E0C868A9-2412-3FD3-AF19-8404E74E3A6D
+  - target:          arm64-ios-simulator
+    value:           A80DED7E-0964-30B5-A6AD-32FA478317F2
+install-name:    '/System/Library/PrivateFrameworks/AccountNotification.framework/AccountNotification'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ANAccountNotificationClientEntitlement, _ANAccountNotificationManagerEntitlement, 
+                       _ANDaemonMachServiceName, _AccountNotificationVersionNumber, 
+                       _AccountNotificationVersionString, __ANLogSystem ]
+    objc-classes:    [ ANAccountNotification, ANAccountNotifier, ANClientCallbackInterface, 
+                       ANDaemonInterface, ANManagedAccountNotification, ANManagedNotificationAction, 
+                       ANNotificationAction, ANSectionSubtypeDescriptor ]
+...

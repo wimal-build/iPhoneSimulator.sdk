@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           AD6A3187-B428-3767-B189-7B8888B357A0
+  - target:          x86_64-ios-simulator
+    value:           8859C17C-475D-3540-BA00-6E777C6D7E6A
+  - target:          arm64-ios-simulator
+    value:           5D13D16C-BDE6-3FA5-8EA9-78369B5249F8
+install-name:    '/System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    symbols:         [ __ZN2AD8Database15cautiously_stepEP12sqlite3_stmt, __ZN2AD8Database9isCorruptEv ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ADClientAddValueForScalarKey, _ADClientBatchKeys, _ADClientCheckpoint, 
+                       _ADClientClearDistributionKey, _ADClientClearScalarKey, _ADClientCommit, 
+                       _ADClientDayChanged, _ADClientDebug, _ADClientGetLogsMessages, 
+                       _ADClientIsEnabled, _ADClientPushValueForDistributionKey, 
+                       _ADClientSendBarrier, _ADClientSetLogsMessages, _ADClientSetValueForDistributionKey, 
+                       _ADClientSetValueForScalarKey, _ADClientSignificantTimeChanged, 
+                       _ADContainerPath, _ADDatabaseUtilitiesCleanUpCorruption, _ADDaysSince1970, 
+                       _ADGetDBSize, _ADIsInternalDevice, _ADMachAbsoluteTimeIntervalToCFTimeInterval, 
+                       _ADMonotonicTimeGetCurrent, _ADPushTimeIntervalForDistributionKeySinceStartTime, 
+                       _ADPushTimeIntervalForDistributionKeyTimingBlock, _ADReapDatabaseCorruption, 
+                       _ADRecordDatabaseCorruption, _ADTimeBlock, __ZN2AD8Database11newDatabaseEPKcb, 
+                       __ZN2AD8Database12deleteScalarEPKci, __ZN2AD8Database12insertScalarEPKcix, 
+                       __ZN2AD8Database12lookupScalarEPKciRx, __ZN2AD8Database12updateScalarEix, 
+                       __ZN2AD8Database13RowIDNotFoundE, __ZN2AD8Database13schemaVersionEv, 
+                       __ZN2AD8Database16beginTransactionEv, __ZN2AD8Database16executeStatementEPKc, 
+                       __ZN2AD8Database16prepareStatementEPKc, __ZN2AD8Database17commitTransactionEv, 
+                       __ZN2AD8Database17scalarsWithPrefixEPKciiU13block_pointerFvS2_ixPbE, 
+                       __ZN2AD8Database18appendDistributionEPKciid, __ZN2AD8Database18deleteDistributionEPKci, 
+                       __ZN2AD8Database18lookupDistributionEPKci, __ZN2AD8Database20DistributionIterator12getNextValueEPiPd, 
+                       __ZN2AD8Database20DistributionIteratorC1EPS0_i, __ZN2AD8Database20DistributionIteratorC2EPS0_i, 
+                       __ZN2AD8Database20DistributionIteratorD1Ev, __ZN2AD8Database20DistributionIteratorD2Ev, 
+                       __ZN2AD8Database20createTablesVersion1Ev, __ZN2AD8Database20initializeConnectionEv, 
+                       __ZN2AD8Database23distributionsWithPrefixEPKciiU13block_pointerFvS2_iRNS0_20DistributionIteratorEPbE, 
+                       __ZN2AD8Database24prepareAndCacheStatementEPKc, __ZN2AD8Database24upgradeSchemaVersion1to2Ev, 
+                       __ZN2AD8Database27performMigrationIfNecessaryEv, __ZN2AD8Database29deleteAllValuesOnOrBeforeDateEi, 
+                       __ZN2AD8Database4initEPKcb, __ZN2AD8DatabaseC1Ev, __ZN2AD8DatabaseC2Ev, 
+                       __ZN2AD8DatabaseD1Ev, __ZN2AD8DatabaseD2Ev ]
+...

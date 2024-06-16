@@ -1,23 +1,35 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1A81D8B4-3C01-3FB2-A38E-A67FE5031580', 'x86_64: 4B055114-6E30-3494-8573-7A567EDB4AC7' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           E8FEF114-877D-31F0-8613-FE2306DF8C37
+  - target:          x86_64-ios-simulator
+    value:           54CA01E0-D1B7-302A-9D69-E77B0D2F4A45
+  - target:          arm64-ios-simulator
+    value:           E85351DA-2273-3A50-9AE5-A16D3741EA13
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Accelerate'
 current-version: 4
-exports:         
-  - archs:           [ i386 ]
-    re-exports:      [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib' ]
-  - archs:           [ i386, x86_64 ]
-    re-exports:      [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage', 
+reexported-libraries:
+  - targets:         [ i386-ios-simulator ]
+    libraries:       [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib' ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage', 
                        '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib' ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DBA5BA90-C926-3BE3-9AF4-E01B1CA9A03A', 'x86_64: 52AF6981-044D-3AA8-92ED-24BF02E5BF08' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           403DDAFD-578A-31CB-88AD-F62A88732854
+  - target:          x86_64-ios-simulator
+    value:           CE046DA0-6D60-3B8F-B4E3-C826C8568A08
+  - target:          arm64-ios-simulator
+    value:           33ECE077-6FC0-32EE-B215-B569B27F8A91
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage'
-current-version: 524.2.1
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 540
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _Init_vImage, _SetvImageThreadCount, _SetvImageThreadState, 
                        _SetvImageVectorAvailable, __vImage_TempBuffer_Enable_Legacy, 
                        _kvImageConstDecodeArray0, _kvImageDecodeArray_16Q12Format, 
@@ -118,24 +130,27 @@ exports:
                        _vImageConvert_Indexed2toPlanar8, _vImageConvert_Indexed4toPlanar8, 
                        _vImageConvert_Planar16FtoPlanar8, _vImageConvert_Planar16FtoPlanarF, 
                        _vImageConvert_Planar16Q12toARGB16F, _vImageConvert_Planar16Q12toARGB8888, 
-                       _vImageConvert_Planar16Q12toRGB16F, _vImageConvert_Planar16Q12toRGB888, 
-                       _vImageConvert_Planar16UtoARGB16U, _vImageConvert_Planar16UtoPlanar8_dithered, 
-                       _vImageConvert_Planar16UtoRGB16U, _vImageConvert_Planar1toPlanar8, 
-                       _vImageConvert_Planar2toPlanar8, _vImageConvert_Planar4toPlanar8, 
-                       _vImageConvert_Planar8To16U, _vImageConvert_Planar8ToARGBFFFF, 
-                       _vImageConvert_Planar8ToBGRX8888, _vImageConvert_Planar8ToBGRXFFFF, 
-                       _vImageConvert_Planar8ToXRGB8888, _vImageConvert_Planar8ToXRGBFFFF, 
-                       _vImageConvert_Planar8toARGB1555, _vImageConvert_Planar8toARGB8888, 
-                       _vImageConvert_Planar8toIndexed1, _vImageConvert_Planar8toIndexed2, 
-                       _vImageConvert_Planar8toIndexed4, _vImageConvert_Planar8toPlanar1, 
-                       _vImageConvert_Planar8toPlanar16F, _vImageConvert_Planar8toPlanar2, 
-                       _vImageConvert_Planar8toPlanar4, _vImageConvert_Planar8toPlanarF, 
+                       _vImageConvert_Planar16Q12toPlanarNt, _vImageConvert_Planar16Q12toRGB16F, 
+                       _vImageConvert_Planar16Q12toRGB888, _vImageConvert_Planar16UtoARGB16U, 
+                       _vImageConvert_Planar16UtoPlanar8_dithered, _vImageConvert_Planar16UtoRGB16U, 
+                       _vImageConvert_Planar1toPlanar8, _vImageConvert_Planar2toPlanar8, 
+                       _vImageConvert_Planar4toPlanar8, _vImageConvert_Planar8To16U, 
+                       _vImageConvert_Planar8ToARGBFFFF, _vImageConvert_Planar8ToBGRX8888, 
+                       _vImageConvert_Planar8ToBGRXFFFF, _vImageConvert_Planar8ToXRGB8888, 
+                       _vImageConvert_Planar8ToXRGBFFFF, _vImageConvert_Planar8toARGB1555, 
+                       _vImageConvert_Planar8toARGB8888, _vImageConvert_Planar8toIndexed1, 
+                       _vImageConvert_Planar8toIndexed2, _vImageConvert_Planar8toIndexed4, 
+                       _vImageConvert_Planar8toPlanar1, _vImageConvert_Planar8toPlanar16F, 
+                       _vImageConvert_Planar8toPlanar2, _vImageConvert_Planar8toPlanar4, 
+                       _vImageConvert_Planar8toPlanarF, _vImageConvert_Planar8toPlanarN, 
                        _vImageConvert_Planar8toRGB565, _vImageConvert_Planar8toRGB888, 
                        _vImageConvert_PlanarFToARGB8888, _vImageConvert_PlanarFToBGRX8888, 
                        _vImageConvert_PlanarFToBGRXFFFF, _vImageConvert_PlanarFToXRGB8888, 
                        _vImageConvert_PlanarFToXRGBFFFF, _vImageConvert_PlanarFtoARGBFFFF, 
                        _vImageConvert_PlanarFtoPlanar16F, _vImageConvert_PlanarFtoPlanar8, 
-                       _vImageConvert_PlanarFtoPlanar8_dithered, _vImageConvert_PlanarFtoRGBFFF, 
+                       _vImageConvert_PlanarFtoPlanar8_dithered, _vImageConvert_PlanarFtoPlanarN, 
+                       _vImageConvert_PlanarFtoRGBFFF, _vImageConvert_PlanarNtoPlanar16Q12t, 
+                       _vImageConvert_PlanarNtoPlanar8, _vImageConvert_PlanarNtoPlanarF, 
                        _vImageConvert_PlanarToChunky8, _vImageConvert_PlanarToChunkyF, 
                        _vImageConvert_RGB16UToARGB2101010, _vImageConvert_RGB16UToARGB8888, 
                        _vImageConvert_RGB16UtoARGB16U, _vImageConvert_RGB16UtoBGRA16U, 
@@ -166,18 +181,18 @@ exports:
                        _vImageConvert_XRGB2101010_A8ToARGB8888, _vImageConvert_XRGB2101010_A8ToARGBFFFF, 
                        _vImageConvert_XRGB8888ToPlanar8, _vImageConvert_XRGBFFFFToPlanarF, 
                        _vImageConvert_YpCbCrToARGB_GenerateConversion, _vImageConverter_CreateForCGToCVImageFormat, 
-                       _vImageConverter_CreateForCVToCGImageFormat, _vImageConverter_CreateWithCGColorConverter, 
-                       _vImageConverter_CreateWithCGImageFormat, _vImageConverter_CreateWithColorSyncCodeFragment, 
-                       _vImageConverter_GetDestinationBufferOrder, _vImageConverter_GetNumberOfDestinationBuffers, 
-                       _vImageConverter_GetNumberOfSourceBuffers, _vImageConverter_GetSourceBufferOrder, 
-                       _vImageConverter_MustOperateOutOfPlace, _vImageConverter_Print, 
-                       _vImageConverter_Release, _vImageConverter_Retain, _vImageConvolveMultiKernel_ARGB8888, 
-                       _vImageConvolveMultiKernel_ARGBFFFF, _vImageConvolveWithBias_ARGB8888, 
-                       _vImageConvolveWithBias_ARGBFFFF, _vImageConvolveWithBias_Planar8, 
-                       _vImageConvolveWithBias_PlanarF, _vImageConvolve_ARGB8888, 
-                       _vImageConvolve_ARGBFFFF, _vImageConvolve_Planar8, _vImageConvolve_PlanarF, 
-                       _vImageCopyBuffer, _vImageCreateCGImageFromBuffer, _vImageCreateGammaFunction, 
-                       _vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction, 
+                       _vImageConverter_CreateForCVToCGImageFormat, _vImageConverter_CreateWithCGColorConversionInfo, 
+                       _vImageConverter_CreateWithCGColorConverter, _vImageConverter_CreateWithCGImageFormat, 
+                       _vImageConverter_CreateWithColorSyncCodeFragment, _vImageConverter_GetDestinationBufferOrder, 
+                       _vImageConverter_GetNumberOfDestinationBuffers, _vImageConverter_GetNumberOfSourceBuffers, 
+                       _vImageConverter_GetSourceBufferOrder, _vImageConverter_MustOperateOutOfPlace, 
+                       _vImageConverter_Print, _vImageConverter_Release, _vImageConverter_Retain, 
+                       _vImageConvolveMultiKernel_ARGB8888, _vImageConvolveMultiKernel_ARGBFFFF, 
+                       _vImageConvolveWithBias_ARGB8888, _vImageConvolveWithBias_ARGBFFFF, 
+                       _vImageConvolveWithBias_Planar8, _vImageConvolveWithBias_PlanarF, 
+                       _vImageConvolve_ARGB8888, _vImageConvolve_ARGBFFFF, _vImageConvolve_Planar8, 
+                       _vImageConvolve_PlanarF, _vImageCopyBuffer, _vImageCreateCGImageFromBuffer, 
+                       _vImageCreateGammaFunction, _vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction, 
                        _vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction, 
                        _vImageDecodeVectorHalf, _vImageDeepmap2Decode, _vImageDeepmap2DecodeScratchBufferSize, 
                        _vImageDeepmap2DecodeStreamCreate, _vImageDeepmap2DecodeStreamProcess, 
@@ -189,7 +204,8 @@ exports:
                        _vImageDeepmapEncode, _vImageDeepmapEncodeCreateBuffer, _vImageDeepmapPixelSize, 
                        _vImageDestroyGammaFunction, _vImageDestroyResamplingFilter, 
                        _vImageDilate_ARGB8888, _vImageDilate_ARGBFFFF, _vImageDilate_Planar8, 
-                       _vImageDilate_PlanarF, _vImageEncodeVectorHalf, _vImageEncodeVectorOptionsCreate, 
+                       _vImageDilate_PlanarF, _vImageDownScale_CbCr8, _vImageDownScale_Planar8, 
+                       _vImageEncodeVectorHalf, _vImageEncodeVectorOptionsCreate, 
                        _vImageEncodeVectorOptionsFree, _vImageEncodeVectorOptionsSetQuantization, 
                        _vImageEndsInContrastStretch_ARGB8888, _vImageEndsInContrastStretch_ARGBFFFF, 
                        _vImageEndsInContrastStretch_Planar8, _vImageEndsInContrastStretch_PlanarF, 
@@ -197,36 +213,38 @@ exports:
                        _vImageEqualization_Planar8, _vImageEqualization_PlanarF, 
                        _vImageErode_ARGB8888, _vImageErode_ARGBFFFF, _vImageErode_Planar8, 
                        _vImageErode_PlanarF, _vImageExtractChannel_ARGB16U, _vImageExtractChannel_ARGB8888, 
-                       _vImageExtractChannel_ARGBFFFF, _vImageFlatten_ARGB16Q12, 
-                       _vImageFlatten_ARGB16U, _vImageFlatten_ARGB8888, _vImageFlatten_ARGB8888ToRGB888, 
-                       _vImageFlatten_ARGBFFFF, _vImageFlatten_ARGBFFFFToRGBFFF, 
-                       _vImageFlatten_BGRA8888ToRGB888, _vImageFlatten_BGRAFFFFToRGBFFF, 
-                       _vImageFlatten_RGBA16Q12, _vImageFlatten_RGBA16U, _vImageFlatten_RGBA8888, 
-                       _vImageFlatten_RGBA8888ToRGB888, _vImageFlatten_RGBAFFFF, 
-                       _vImageFlatten_RGBAFFFFToRGBFFF, _vImageGamma_Planar8toPlanarF, 
-                       _vImageGamma_PlanarF, _vImageGamma_PlanarFtoPlanar8, _vImageGaussianBoxDiffConvolve_Planar8, 
-                       _vImageGetResamplingFilterExtent, _vImageGetResamplingFilterSize, 
-                       _vImageGradientSobel_Planar8to16S, _vImageHistogramCalculation_ARGB8888, 
-                       _vImageHistogramCalculation_ARGBFFFF, _vImageHistogramCalculation_Planar8, 
-                       _vImageHistogramCalculation_PlanarF, _vImageHistogramSpecification_ARGB8888, 
-                       _vImageHistogramSpecification_ARGBFFFF, _vImageHistogramSpecification_Planar8, 
-                       _vImageHistogramSpecification_PlanarF, _vImageHorizontalReflect_ARGB16S, 
-                       _vImageHorizontalReflect_ARGB16U, _vImageHorizontalReflect_ARGB8888, 
-                       _vImageHorizontalReflect_ARGBFFFF, _vImageHorizontalReflect_Planar16U, 
-                       _vImageHorizontalReflect_Planar8, _vImageHorizontalReflect_PlanarF, 
-                       _vImageHorizontalShearD_ARGB16S, _vImageHorizontalShearD_ARGB16U, 
-                       _vImageHorizontalShearD_ARGB8888, _vImageHorizontalShearD_ARGBFFFF, 
-                       _vImageHorizontalShearD_Planar8, _vImageHorizontalShearD_PlanarF, 
-                       _vImageHorizontalShear_ARGB16S, _vImageHorizontalShear_ARGB16U, 
-                       _vImageHorizontalShear_ARGB8888, _vImageHorizontalShear_ARGBFFFF, 
-                       _vImageHorizontalShear_CbCr16U, _vImageHorizontalShear_CbCr8, 
-                       _vImageHorizontalShear_Planar16S, _vImageHorizontalShear_Planar16U, 
-                       _vImageHorizontalShear_Planar8, _vImageHorizontalShear_PlanarF, 
-                       _vImageHorizontalShear_XRGB2101010W, _vImageInterpolatedLookupTable_PlanarF, 
-                       _vImageInvert_16U, _vImageInvert_8, _vImageInvert_F, _vImageLinearTransform_16Q12to8, 
+                       _vImageExtractChannel_ARGBFFFF, _vImageExtract_444YpCbCrA10To420Yp10P32_CbCr10P32, 
+                       _vImageExtract_444YpCbCrA10To420Yp10_CbCr10, _vImageExtract_444YpCbCrA8To420Yp8_CbCr8, 
+                       _vImageFlatten_ARGB16Q12, _vImageFlatten_ARGB16U, _vImageFlatten_ARGB8888, 
+                       _vImageFlatten_ARGB8888ToRGB888, _vImageFlatten_ARGBFFFF, 
+                       _vImageFlatten_ARGBFFFFToRGBFFF, _vImageFlatten_BGRA8888ToRGB888, 
+                       _vImageFlatten_BGRAFFFFToRGBFFF, _vImageFlatten_RGBA16Q12, 
+                       _vImageFlatten_RGBA16U, _vImageFlatten_RGBA8888, _vImageFlatten_RGBA8888ToRGB888, 
+                       _vImageFlatten_RGBAFFFF, _vImageFlatten_RGBAFFFFToRGBFFF, 
+                       _vImageGamma_Planar8toPlanarF, _vImageGamma_PlanarF, _vImageGamma_PlanarFtoPlanar8, 
+                       _vImageGaussianBoxDiffConvolve_Planar8, _vImageGetResamplingFilterExtent, 
+                       _vImageGetResamplingFilterSize, _vImageGradientSobel_Planar8to16S, 
+                       _vImageHistogramCalculation_ARGB8888, _vImageHistogramCalculation_ARGBFFFF, 
+                       _vImageHistogramCalculation_Planar8, _vImageHistogramCalculation_PlanarF, 
+                       _vImageHistogramSpecification_ARGB8888, _vImageHistogramSpecification_ARGBFFFF, 
+                       _vImageHistogramSpecification_Planar8, _vImageHistogramSpecification_PlanarF, 
+                       _vImageHorizontalReflect_ARGB16S, _vImageHorizontalReflect_ARGB16U, 
+                       _vImageHorizontalReflect_ARGB8888, _vImageHorizontalReflect_ARGBFFFF, 
+                       _vImageHorizontalReflect_Planar16U, _vImageHorizontalReflect_Planar8, 
+                       _vImageHorizontalReflect_PlanarF, _vImageHorizontalShearD_ARGB16S, 
+                       _vImageHorizontalShearD_ARGB16U, _vImageHorizontalShearD_ARGB8888, 
+                       _vImageHorizontalShearD_ARGBFFFF, _vImageHorizontalShearD_Planar8, 
+                       _vImageHorizontalShearD_PlanarF, _vImageHorizontalShear_ARGB16S, 
+                       _vImageHorizontalShear_ARGB16U, _vImageHorizontalShear_ARGB8888, 
+                       _vImageHorizontalShear_ARGBFFFF, _vImageHorizontalShear_CbCr16U, 
+                       _vImageHorizontalShear_CbCr8, _vImageHorizontalShear_Planar16S, 
+                       _vImageHorizontalShear_Planar16U, _vImageHorizontalShear_Planar8, 
+                       _vImageHorizontalShear_PlanarF, _vImageHorizontalShear_XRGB2101010W, 
+                       _vImageInterpolatedLookupTable_PlanarF, _vImageInvert_16U, 
+                       _vImageInvert_8, _vImageInvert_F, _vImageLinearTransform_16Q12to8, 
                        _vImageLinearTransform_16Uto8, _vImageLinearTransform_16UtoF, 
                        _vImageLinearTransform_8to16Q12, _vImageLinearTransform_8to16U, 
-                       _vImageLinearTransform_8toF, _vImageLinearTransform_Fto16U, 
+                       _vImageLinearTransform_8toF, _vImageLinearTransform_F, _vImageLinearTransform_Fto16U, 
                        _vImageLinearTransform_Fto8, _vImageLookupTable_8to64U, _vImageLookupTable_Planar16, 
                        _vImageLookupTable_Planar8toPlanar128, _vImageLookupTable_Planar8toPlanar16, 
                        _vImageLookupTable_Planar8toPlanar24, _vImageLookupTable_Planar8toPlanar48, 
@@ -281,10 +299,20 @@ exports:
                        _vImageScale_ARGBFFFF, _vImageScale_CbCr16U, _vImageScale_CbCr8, 
                        _vImageScale_Planar16S, _vImageScale_Planar16U, _vImageScale_Planar8, 
                        _vImageScale_PlanarF, _vImageScale_XRGB2101010W, _vImageSelectChannels_ARGB8888, 
-                       _vImageSelectChannels_ARGBFFFF, _vImageSymmetricPiecewiseGamma_Planar16Q12, 
+                       _vImageSelectChannels_ARGBFFFF, _vImageSepConvolve_Planar16U, 
+                       _vImageSepConvolve_Planar8, _vImageSepConvolve_Planar8to16U, 
+                       _vImageSepConvolve_PlanarF, _vImageSymmetricPiecewiseGamma_Planar16Q12, 
                        _vImageSymmetricPiecewiseGamma_PlanarF, _vImageSymmetricPiecewisePolynomial_PlanarF, 
                        _vImageTableLookUp_ARGB8888, _vImageTableLookUp_Planar8, _vImageTentConvolve_ARGB8888, 
-                       _vImageTentConvolve_Planar8, _vImageUnpremultiplyData_ARGB16Q12, 
+                       _vImageTentConvolve_Planar8, _vImageTransformHLGLuminanceScaling_Planar16Q12, 
+                       _vImageTransformHLGLuminanceScaling_PlanarF, _vImageTransformHLGSceneReferredMapping_Planar16Q12, 
+                       _vImageTransformHLGSceneReferredMapping_PlanarF, _vImageTransformPQToneMapping_Planar16Q12, 
+                       _vImageTransformPQToneMapping_PlanarF, _vImageTransformTRCParametric_Planar16Q12, 
+                       _vImageTransformTRCParametric_PlanarF, _vImageTransformTRC_HLG_EOTF_Planar16Q12, 
+                       _vImageTransformTRC_HLG_EOTF_PlanarF, _vImageTransformTRC_HLG_OETF_Planar16Q12, 
+                       _vImageTransformTRC_HLG_OETF_PlanarF, _vImageTransformTRC_PQ_EOTF_Planar16Q12, 
+                       _vImageTransformTRC_PQ_EOTF_PlanarF, _vImageTransformTRC_PQ_OETF_Planar16Q12, 
+                       _vImageTransformTRC_PQ_OETF_PlanarF, _vImageUnpremultiplyData_ARGB16Q12, 
                        _vImageUnpremultiplyData_ARGB16U, _vImageUnpremultiplyData_ARGB8888, 
                        _vImageUnpremultiplyData_ARGBFFFF, _vImageUnpremultiplyData_Planar8, 
                        _vImageUnpremultiplyData_PlanarF, _vImageUnpremultiplyData_RGBA16Q12, 
@@ -302,26 +330,33 @@ exports:
                        _vImageVerticalShear_Planar16S, _vImageVerticalShear_Planar16U, 
                        _vImageVerticalShear_Planar8, _vImageVerticalShear_PlanarF, 
                        _vImageVerticalShear_XRGB2101010W ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 12747F8E-CA6F-355E-8991-D26FEEC91998', 'x86_64: D4455376-1126-361C-AC81-E190D98CE320' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3182025A-E7D9-3F1D-9918-9FE8AEE6C9A6
+  - target:          x86_64-ios-simulator
+    value:           BB9E76D8-3A2E-3616-AD9B-13224D13A5AA
+  - target:          arm64-ios-simulator
+    value:           639BC2EE-3C8A-3456-85C3-28530BDF3BF1
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _appleblas_i16gemm, _appleblas_i8gemm ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _APL_dgemm, _APL_dgemm_LU, _APL_dgemm_QR, _APL_dsyrk, _APL_dtrsm, 
                        _APL_sgemm, _APL_sgemm_LU, _APL_sgemm_QR, _APL_ssyrk, _APL_strsm, 
-                       _APPLE_NTHREADS, _ATLU_DestroyThreadMemory, _SetBLASParamErrorProc, 
-                       _appleblas_dgeadd, _appleblas_sgeadd, _catlas_caxpby, _catlas_cset, 
-                       _catlas_daxpby, _catlas_dset, _catlas_saxpby, _catlas_sset, 
-                       _catlas_zaxpby, _catlas_zset, _caxpy_, _cblas_caxpy, _cblas_ccopy, 
-                       _cblas_cdotc_sub, _cblas_cdotu_sub, _cblas_cgbmv, _cblas_cgemm, 
-                       _cblas_cgemv, _cblas_cgerc, _cblas_cgeru, _cblas_chbmv, _cblas_chemm, 
-                       _cblas_chemv, _cblas_cher, _cblas_cher2, _cblas_cher2k, _cblas_cherk, 
-                       _cblas_chpmv, _cblas_chpr, _cblas_chpr2, _cblas_crotg, _cblas_cscal, 
-                       _cblas_csrot, _cblas_csscal, _cblas_cswap, _cblas_csymm, _cblas_csyr2k, 
+                       _APPLE_NTHREADS, _ATLU_DestroyThreadMemory, _BLASStateRelease, 
+                       _BLASStateRetain, _SetBLASParamErrorProc, _appleblas_dgeadd, 
+                       _appleblas_sgeadd, _catlas_caxpby, _catlas_cset, _catlas_daxpby, 
+                       _catlas_dset, _catlas_saxpby, _catlas_sset, _catlas_zaxpby, 
+                       _catlas_zset, _caxpy_, _cblas_caxpy, _cblas_ccopy, _cblas_cdotc_sub, 
+                       _cblas_cdotu_sub, _cblas_cgbmv, _cblas_cgemm, _cblas_cgemv, 
+                       _cblas_cgerc, _cblas_cgeru, _cblas_chbmv, _cblas_chemm, _cblas_chemv, 
+                       _cblas_cher, _cblas_cher2, _cblas_cher2k, _cblas_cherk, _cblas_chpmv, 
+                       _cblas_chpr, _cblas_chpr2, _cblas_crotg, _cblas_cscal, _cblas_csrot, 
+                       _cblas_csscal, _cblas_cswap, _cblas_csymm, _cblas_csyr2k, 
                        _cblas_csyrk, _cblas_ctbmv, _cblas_ctbsv, _cblas_ctpmv, _cblas_ctpsv, 
                        _cblas_ctrmm, _cblas_ctrmv, _cblas_ctrsm, _cblas_ctrsv, _cblas_dasum, 
                        _cblas_daxpy, _cblas_dcopy, _cblas_ddot, _cblas_dgbmv, _cblas_dgemm, 
@@ -382,38 +417,72 @@ exports:
                        _zher2k_, _zher_, _zherk_, _zhpmv_, _zhpr2_, _zhpr_, _zrotg_, 
                        _zscal_, _zswap_, _zsymm_, _zsyr2k_, _zsyrk_, _ztbmv_, _ztbsv_, 
                        _ztpmv_, _ztpsv_, _ztrmm_, _ztrmv_, _ztrsm_, _ztrsv_ ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7C0EBB9-93CE-3C46-BD34-B5999E8C8357', 'x86_64: 4B12A7D0-57D9-3248-A0F1-22C881781C88' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           B3D70DEF-1C75-3930-8556-EBC018FA4AA6
+  - target:          x86_64-ios-simulator
+    value:           CB94A98B-E912-34DD-997E-DF47D19C4278
+  - target:          arm64-ios-simulator
+    value:           754A05EF-2AB2-319F-B4EF-A744C2F42481
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib'
-exports:         
-  - archs:           [ x86_64 ]
-    allowable-clients: [ vecLib ]
-  - archs:           [ i386, x86_64 ]
-    symbols:         [ _BNNSApplyVectorActivationLayer, _BNNSBatchNormFilterApplyBackwardBatch, 
-                       _BNNSBatchNormFilterApplyBatch, _BNNSClearNetwork, _BNNSDequantize, 
+allowable-clients:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BNNSApplyMultiheadAttention, _BNNSApplyMultiheadAttentionBackward, 
+                       _BNNSApplyVectorActivationLayer, _BNNSArithmeticFilterApplyBackwardBatch, 
+                       _BNNSArithmeticFilterApplyBatch, _BNNSBatchNormFilterApplyBackwardBatch, 
+                       _BNNSBatchNormFilterApplyBatch, _BNNSClearNetwork, _BNNSCompareTensor, 
+                       _BNNSComputeLSTMTrainingCacheCapacity, _BNNSCopy, _BNNSDequantize, 
                        _BNNSDirectApplyActivationBatch, _BNNSDirectApplyBroadcastMatMul, 
                        _BNNSDirectApplyConvolutionBatch, _BNNSDirectApplyFullyConnectedBatch, 
-                       _BNNSDirectApplyLossBatch, _BNNSDirectApplyPoolingBatch, _BNNSDirectApplyTransposedConvolutionBatch, 
-                       _BNNSFilterApply, _BNNSFilterApplyBackwardBatch, _BNNSFilterApplyBatch, 
+                       _BNNSDirectApplyInTopK, _BNNSDirectApplyLSTMBatch, _BNNSDirectApplyLSTMBatchBackward, 
+                       _BNNSDirectApplyLSTMBatchTrainingCaching, _BNNSDirectApplyLossBatch, 
+                       _BNNSDirectApplyPoolingBatch, _BNNSDirectApplyReduction, _BNNSDirectApplyTopK, 
+                       _BNNSDirectApplyTransposedConvolutionBatch, _BNNSFilterApply, 
+                       _BNNSFilterApplyBackwardBatch, _BNNSFilterApplyBackwardTwoInputBatch, 
+                       _BNNSFilterApplyBatch, _BNNSFilterApplyTwoInput, _BNNSFilterApplyTwoInputBatch, 
                        _BNNSFilterCreateConvolutionLayer, _BNNSFilterCreateFullyConnectedLayer, 
                        _BNNSFilterCreateFusedLayer, _BNNSFilterCreateLayerActivation, 
-                       _BNNSFilterCreateLayerBatchNorm, _BNNSFilterCreateLayerConvolution, 
-                       _BNNSFilterCreateLayerFullyConnected, _BNNSFilterCreateLayerLoss, 
-                       _BNNSFilterCreateLayerOptimizer, _BNNSFilterCreateLayerPooling, 
-                       _BNNSFilterCreateLayerSparseFullyConnected, _BNNSFilterCreateLayerTransposedConvolution, 
+                       _BNNSFilterCreateLayerArithmetic, _BNNSFilterCreateLayerBatchNorm, 
+                       _BNNSFilterCreateLayerBroadcastMatMul, _BNNSFilterCreateLayerConvolution, 
+                       _BNNSFilterCreateLayerDepthwiseConvolution, _BNNSFilterCreateLayerDropout, 
+                       _BNNSFilterCreateLayerFullyConnected, _BNNSFilterCreateLayerGram, 
+                       _BNNSFilterCreateLayerGroupNorm, _BNNSFilterCreateLayerInstanceNorm, 
+                       _BNNSFilterCreateLayerLayerNorm, _BNNSFilterCreateLayerLoss, 
+                       _BNNSFilterCreateLayerMultiheadAttention, _BNNSFilterCreateLayerNormalization, 
+                       _BNNSFilterCreateLayerPadding, _BNNSFilterCreateLayerPermute, 
+                       _BNNSFilterCreateLayerPooling, _BNNSFilterCreateLayerReduction, 
+                       _BNNSFilterCreateLayerResize, _BNNSFilterCreateLayerSparseFullyConnected, 
+                       _BNNSFilterCreateLayerTensorContraction, _BNNSFilterCreateLayerTransposedConvolution, 
                        _BNNSFilterCreatePoolingLayer, _BNNSFilterCreateVectorActivationLayer, 
-                       _BNNSFilterDestroy, _BNNSFunctionGRUFusedGates, _BNNSFusedFilterApplyBackwardBatch, 
-                       _BNNSFusedFilterApplyBatch, _BNNSInitGumbel, _BNNSLossFilterApplyBatch, 
-                       _BNNSOptimizerFilterApply, _BNNSSetNetwork ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1DF4930D-6E0C-312D-B079-BCB872689D86', 'x86_64: 6365148D-C18F-3A65-9FF1-D68DC587D2B3' ]
-platform:        ios
+                       _BNNSFilterDestroy, _BNNSFilterGetState, _BNNSFilterGetStateSize, 
+                       _BNNSFilterSetState, _BNNSFunctionGRUFusedGates, _BNNSFusedFilterApplyBackwardBatch, 
+                       _BNNSFusedFilterApplyBatch, _BNNSGetPointer, _BNNSGroupNormFilterApplyBackwardBatch, 
+                       _BNNSGroupNormFilterApplyBatch, _BNNSInitGumbel, _BNNSInstanceNormFilterApplyBackwardBatch, 
+                       _BNNSInstanceNormFilterApplyBatch, _BNNSLayerNormFilterApplyBackwardBatch, 
+                       _BNNSLayerNormFilterApplyBatch, _BNNSLossFilterApplyBackwardBatch, 
+                       _BNNSLossFilterApplyBatch, _BNNSNormalizationFilterApplyBackwardBatch, 
+                       _BNNSNormalizationFilterApplyBatch, _BNNSOptimizerStep, _BNNSPermuteFilterApplyBackwardBatch, 
+                       _BNNSPermuteFilterApplyBatch, _BNNSPoolingFilterApplyBackwardBatch, 
+                       _BNNSPoolingFilterApplyBatch, _BNNSSetNetwork, _BNNSTranspose ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           6238D5A4-BF29-37CD-A905-AFEF01E590FB
+  - target:          x86_64-ios-simulator
+    value:           234FEFA1-A60F-35EB-81A6-4D264DAA2CE0
+  - target:          arm64-ios-simulator
+    value:           1A01987C-B4D9-382B-8610-9B230B41A557
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _cbdsqr_, _cgbbrd_, _cgbcon_, _cgbequ_, _cgbequb_, _cgbrfs_, 
                        _cgbsv_, _cgbsvx_, _cgbtf2_, _cgbtrf_, _cgbtrs_, _cgebak_, 
                        _cgebal_, _cgebd2_, _cgebrd_, _cgecon_, _cgeequ_, _cgeequb_, 
@@ -658,15 +727,22 @@ exports:
                        _zungrq_, _zungtr_, _zunm2l_, _zunm2r_, _zunmbr_, _zunmhr_, 
                        _zunml2_, _zunmlq_, _zunmql_, _zunmqr_, _zunmr2_, _zunmr3_, 
                        _zunmrq_, _zunmrz_, _zunmtr_, _zupgtr_, _zupmtr_ ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B5741672-EC1C-3288-A42F-EA1DDB9306FE', 'x86_64: EF8F5C16-A728-3257-8DE5-5E09964A37FE' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           269B55A9-70E6-3A6E-B666-3D4D20E78158
+  - target:          x86_64-ios-simulator
+    value:           5C61E003-32C5-340C-BE4A-15030555668A
+  - target:          arm64-ios-simulator
+    value:           79B753DC-A06F-3B42-A193-8CCFA48C3763
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib'
-exports:         
-  - archs:           [ x86_64 ]
-    allowable-clients: [ vecLib ]
-  - archs:           [ i386, x86_64 ]
+allowable-clients:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _la_add_attributes, _la_diagonal_matrix_from_vector, _la_difference, 
                        _la_elementwise_product, _la_identity_matrix, _la_inner_product, 
                        _la_matrix_cols, _la_matrix_from_double_buffer, _la_matrix_from_double_buffer_nocopy, 
@@ -681,23 +757,39 @@ exports:
                        _la_vector_from_matrix_diagonal, _la_vector_from_matrix_row, 
                        _la_vector_from_splat, _la_vector_length, _la_vector_slice, 
                        _la_vector_to_double_buffer, _la_vector_to_float_buffer ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A72D6E8C-214F-318C-AC5F-4A6CD1C140CC', 'x86_64: 0B5EA016-8295-3FA4-87B2-9F1ABE398EAE' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           315528E4-01A7-389A-849E-19653593C903
+  - target:          x86_64-ios-simulator
+    value:           9C410FFE-7A67-3457-BE75-512814E903C1
+  - target:          arm64-ios-simulator
+    value:           E7A800D0-7645-352E-8616-193E39D4A618
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib'
-exports:         
-  - archs:           [ x86_64 ]
-    allowable-clients: [ vecLib ]
-  - archs:           [ i386, x86_64 ]
+allowable-clients:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _quadrature_integrate ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 65C6C520-A52A-3589-8CD5-82E952788778' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           CE73D3DB-AC30-39E4-9763-8DE87C97CD8F
+  - target:          arm64-ios-simulator
+    value:           13A7A6BF-A2B6-36CC-808E-40BAC4BE3112
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib'
-exports:         
-  - archs:           [ x86_64 ]
+allowable-clients:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]
     symbols:         [ __Z10SparseLSMR17SparseLSMROptions, __Z10SparseLSMRv, __Z11SparseGMRES18SparseGMRESOptions, 
                        __Z11SparseGMRESv, __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseMatrix_FloatS1_, 
                        __Z11SparseSolve21SparseIterativeMethod18SparseMatrix_Float17DenseMatrix_FloatS1_32SparseOpaquePreconditioner_Float, 
@@ -828,8 +920,7 @@ exports:
                        __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKdPvS4_, 
                        __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKf, 
                        __Z27SparseConvertFromCoordinateiilh18SparseAttributes_tPKiS1_PKfPvS4_ ]
-  - archs:           [ i386, x86_64 ]
-    allowable-clients: [ vecLib ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __SparseAMD, __SparseAMDWorkspaceSize, __SparseCGIterate_Double, 
                        __SparseCGIterate_Float, __SparseCGSolve_Double, __SparseCGSolve_Float, 
                        __SparseCOLAMD, __SparseCOLAMDWorkspaceSize, __SparseConvertFromCoordinate_Double, 
@@ -856,15 +947,22 @@ exports:
                        __SparseSolveSubfactor_Float, __SparseSpMV_Double, __SparseSpMV_Float, 
                        __SparseSymbolicFactorQR, __SparseSymbolicFactorSymmetric, 
                        __SparseTrap ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D255D53-4386-3206-9CA6-479905331206', 'x86_64: E607B5C0-6BBB-3B2E-851E-6A24D3828C24' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           98B5AF62-E37E-35BC-9142-35571AB878EC
+  - target:          x86_64-ios-simulator
+    value:           FF6866E7-5B8F-3123-B9F8-CC4A9D84E699
+  - target:          arm64-ios-simulator
+    value:           A2A7F669-1D07-3F23-B658-CB3252D8040B
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib'
-exports:         
-  - archs:           [ x86_64 ]
-    allowable-clients: [ Sparse, vecLib ]
-  - archs:           [ i386, x86_64 ]
+allowable-clients:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ Sparse, vecLib ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _sparse_commit, _sparse_elementwise_norm_double, _sparse_elementwise_norm_float, 
                        _sparse_extract_block_double, _sparse_extract_block_float, 
                        _sparse_extract_sparse_column_double, _sparse_extract_sparse_column_float, 
@@ -896,14 +994,20 @@ exports:
                        _sparse_vector_add_with_scale_dense_double, _sparse_vector_add_with_scale_dense_float, 
                        _sparse_vector_norm_double, _sparse_vector_norm_float, _sparse_vector_triangular_solve_dense_double, 
                        _sparse_vector_triangular_solve_dense_float ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8B2327D8-18D6-3F05-A7F4-B2F5ECF20E2A', 'x86_64: 11EB317A-2010-3673-A660-115CB77F6848' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0F7FC3DF-29F5-327B-AF6B-445EBCCE2F00
+  - target:          x86_64-ios-simulator
+    value:           F5D9A24F-8494-3190-AD00-ED892B90CA30
+  - target:          arm64-ios-simulator
+    value:           D00ED052-7F1B-3343-BCFD-9578BC497DAF
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib'
-current-version: 735.140.1
-exports:         
-  - archs:           [ i386 ]
+current-version: 760
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _FFTCSForPFAs, _FFTCSForPFAv, _HasCharacteristic, _conv, _convD, 
                        _create_fftsetup, _create_fftsetupD, _ctoz, _ctozD, _destroy_fftsetup, 
                        _destroy_fftsetupD, _dotpr, _dotprD, _f3x3, _f3x3D, _f5x5, 
@@ -926,7 +1030,7 @@ exports:
                        _zrdotprD, _zrvadd, _zrvaddD, _zrvmul, _zrvmulD, _zrvsub, 
                        _zrvsubD, _ztoc, _ztocD, _zvadd, _zvaddD, _zvcma, _zvcmaD, 
                        _zvmul, _zvmulD, _zvsub, _zvsubD ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _vDSP_DCT_CreateSetup, _vDSP_DCT_Execute, _vDSP_DFT_CreateSetup, 
                        _vDSP_DFT_DestroySetup, _vDSP_DFT_DestroySetupD, _vDSP_DFT_Execute, 
                        _vDSP_DFT_ExecuteD, _vDSP_DFT_zop, _vDSP_DFT_zop_CreateSetup, 
@@ -1034,14 +1138,20 @@ exports:
                        _vDSP_zvmov, _vDSP_zvmovD, _vDSP_zvmul, _vDSP_zvmulD, _vDSP_zvneg, 
                        _vDSP_zvnegD, _vDSP_zvphas, _vDSP_zvphasD, _vDSP_zvsma, _vDSP_zvsmaD, 
                        _vDSP_zvsub, _vDSP_zvsubD, _vDSP_zvzsml, _vDSP_zvzsmlD ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC70CAD4-BEC7-318A-A210-1BD7F3AEC766', 'x86_64: EE1A48CF-99BC-342A-952D-AEDFE0565AB8' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           59B48FF4-7823-3A3E-8EB5-DBD159F23CB6
+  - target:          x86_64-ios-simulator
+    value:           993524A0-41A4-3D4B-BE46-1F7546FF477C
+  - target:          arm64-ios-simulator
+    value:           610B2A1A-8449-3795-82A1-36307160525F
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib'
-current-version: 735.140.1
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 760
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _VVACOS, _VVACOSF, _VVACOSF_, _VVACOSH, _VVACOSHF, _VVACOSHF_, 
                        _VVACOSH_, _VVACOS_, _VVASIN, _VVASINF, _VVASINF_, _VVASINH, 
                        _VVASINHF, _VVASINHF_, _VVASINH_, _VVASIN_, _VVATAN, _VVATAN2, 
@@ -1106,17 +1216,24 @@ exports:
                        _vvsqrtf, _vvsqrtf_, _vvtan, _vvtan_, _vvtanf, _vvtanf_, _vvtanh, 
                        _vvtanh_, _vvtanhf, _vvtanhf_, _vvtanpi, _vvtanpi_, _vvtanpif, 
                        _vvtanpif_ ]
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADCAF4D4-2931-329A-B7FF-0D9A2D552BCC', 'x86_64: 2E4D20E2-002D-3EAD-9E19-C2C651F8EC43' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           718827AE-4833-305A-832B-55A1300E716D
+  - target:          x86_64-ios-simulator
+    value:           0CDBA1A2-76DF-36DD-B658-70FE118DF290
+  - target:          arm64-ios-simulator
+    value:           E01C82C4-B543-31DE-9F49-D2FC7E11CAA2
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib'
-current-version: 735.140.1
-exports:         
-  - archs:           [ x86_64 ]
-    allowable-clients: [ Accelerate ]
-  - archs:           [ i386, x86_64 ]
-    re-exports:      [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib', 
+current-version: 760
+allowable-clients:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ Accelerate ]
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib', 
                        '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib', 
                        '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib', 
                        '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib', 

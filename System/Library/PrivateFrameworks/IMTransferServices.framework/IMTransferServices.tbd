@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           AB9F2B88-5820-3BB5-8C82-C9E4FF47A633
+  - target:          x86_64-ios-simulator
+    value:           F9DC1C61-8C01-3D7B-A66F-0081D05A19F2
+  - target:          arm64-ios-simulator
+    value:           29B455AB-9C97-3944-8DB3-412CB69CE30F
+install-name:    '/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferServices'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IMTransferServicesErrorDomain ]
+    objc-classes:    [ IMTransferServicesCompressionController, IMTransferServicesController ]
+    objc-ivars:      [ IMTransferServicesCompressionController._blockMap ]
+...

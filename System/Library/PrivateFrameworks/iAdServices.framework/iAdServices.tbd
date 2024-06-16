@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           1E2BB044-B377-389D-B04E-19E532639B49
+  - target:          x86_64-ios-simulator
+    value:           8829A742-FB4B-3D01-830B-278FBD4918EE
+  - target:          arm64-ios-simulator
+    value:           56C2C7B5-8FC8-3715-87E3-243DA2609331
+install-name:    '/System/Library/PrivateFrameworks/iAdServices.framework/iAdServices'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _ADAdSheetAvailableNotification, _ADAdSheetClassicUnavailableNotification, 
+                       _ADAdSheetClientAvailableNotification, _AdSheetCacheCapacity, 
+                       _AdSheetIdentifier, _AdSheetRemoteWindowContextKey, __QWAPIHostPattern, 
+                       __appleHostPattern ]
+    objc-classes:    [ ADAdSheetConnection, ADAdSheetProxy, ADAnalytics ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ADBKSApplicationStateDescription, _ADClientGlobalStateChangedNotification, 
+                       _ADClientSegmentDataErrorDomain, _ADDefaultsBundleID, _ADErrorDomain, 
+                       _ADInternalErrorCode, _ADInternalErrorDomain, _ADInternalServerFailureCode, 
+                       _ADLocationPermissionCacheURL, _ADLogBarrier, _ADMakeCacheSubdirectory, 
+                       _ADPlaceholderAccountID, _ADSerialWorkQueueName, _ADSessionUnexpectedCloseError, 
+                       _ADShouldProxyRequestToHost, _ADWebViewProxyURLSchemeHTTP, 
+                       _ADWebViewProxyURLSchemeHTTPS, _AdServicesDaemonIdentifier, 
+                       _AdServingDaemonCacheCapacity, __ADLog, _isInternalInstall, 
+                       _kADVideoAdvertisingIdentifier, _kADVideoURLSchemeHTTP, _kADVideoURLSchemeHTTPS, 
+                       _kADViewDefaultHeight, _kADViewDefaultWidth ]
+    objc-classes:    [ ADAdActionPublicAttributes, ADAdImpressionPublicAttributes, 
+                       ADAdServingDaemonConnection, ADAdSpaceConfiguration, ADAdSpaceEventInfo, 
+                       ADDefaults, ADDeviceInfo, ADMRAIDAction, ADSInternalPoint, 
+                       ADSInternalRect, ADSInternalSize, ADSerialWorkQueue, ADServiceUtilities ]
+...

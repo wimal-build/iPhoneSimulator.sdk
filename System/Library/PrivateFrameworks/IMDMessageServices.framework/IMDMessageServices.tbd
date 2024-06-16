@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           5B6AD0D7-2ED8-3508-8468-1BBD4E18EF19
+  - target:          x86_64-ios-simulator
+    value:           44123746-013A-3CE2-9F1C-3B1D2FCCB866
+  - target:          arm64-ios-simulator
+    value:           7E6E1DBE-1CDF-341E-8496-FF537E1E7B97
+install-name:    '/System/Library/PrivateFrameworks/IMDMessageServices.framework/IMDMessageServices'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IMDMessageServicesCallbackIntervalKey, _IMDMessageServicesExpireStateDictionaryKey, 
+                       _IMDMessageServicesExpireStateKey, _IMDMessageServicesExpireStateShouldDeleteKey, 
+                       _IMDMessageServicesFlagsKey, _IMDMessageServicesRoutingDictionaryKey, 
+                       _IMDMessageServicesServiceKey, _IMDMessageServicesUpdateDowngradePropertiesKey, 
+                       _IMDMessageServicesWatchdogDictionaryKey, _IMDMessageServicesWatchdogShouldFailSendKey ]
+    objc-classes:    [ IMDMessageServicesCenter ]
+...

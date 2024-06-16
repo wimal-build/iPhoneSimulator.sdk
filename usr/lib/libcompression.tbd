@@ -1,13 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6FBE9FBA-C149-3F33-9794-A2B3338B8A19', 'x86_64: 5270CFE1-71F5-34AC-BFCD-A7AF09DE6882' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           1194AF61-275F-3890-8958-75DA57A455B5
+  - target:          x86_64-ios-simulator
+    value:           86DBBF72-BF63-3D4D-AB48-27BB9398AA5A
+  - target:          arm64-ios-simulator
+    value:           37E27483-EF21-360B-BFF1-D6E964F3E3B0
 install-name:    '/usr/lib/libcompression.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _compression_stream_build_shared_dict, _compression_stream_init_with_options, 
                        _compression_stream_op_data_size ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _compression_decode_buffer, _compression_decode_scratch_buffer_size, 
                        _compression_encode_buffer, _compression_encode_scratch_buffer_size, 
                        _compression_stream_destroy, _compression_stream_get_decode_state_size, 

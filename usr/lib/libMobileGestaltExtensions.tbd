@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B50311D7-0542-3B3D-AB3D-485F0D917BED', 'x86_64: 3C04AC52-3C26-3262-BC67-124C0B3FBE13' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           4713FDB8-17CE-3DBE-B82B-EDAA947620B1
+  - target:          x86_64-ios-simulator
+    value:           03C6D79E-4C9F-30E5-B9EB-EB8C1657829C
+  - target:          arm64-ios-simulator
+    value:           BB601054-1FCC-3834-985C-A8ADB7A6ED0D
 install-name:    '/usr/lib/libMobileGestaltExtensions.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __MGSSetLazyFuncs ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __MGSCopyLocalizedString ]
 ...

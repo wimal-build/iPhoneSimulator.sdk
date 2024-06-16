@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AA965CA5-19FA-3270-9EB3-E6D838703FAA', 'x86_64: F938A727-9FCC-3EC1-9D48-CAFD5063AB58' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           BB765594-BEB8-3637-AB9E-A1124D8138A4
+  - target:          x86_64-ios-simulator
+    value:           4A394DE4-0738-311A-9DA7-A59A27C3B685
+  - target:          arm64-ios-simulator
+    value:           D5DFE0ED-553F-349F-B650-0715B5C8C423
 install-name:    '/usr/lib/libmecabra.dylib'
-current-version: 883.11
-exports:         
-  - archs:           [ i386 ]
+current-version: 924
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _MecabraAnalysisContextAddCandidate, _MecabraAnalysisContextAdjust, 
                        _MecabraAnalysisContextCreate, _MecabraAnalysisContextGetCandidateContext, 
                        _MecabraAnalysisContextGetCandidateContextSurfaceString, _MecabraAnalysisContextGetStringContext, 
@@ -17,7 +23,7 @@ exports:
                        _MecabraLatticeFanoutForNodeAtIndex, _MecabraLatticeNumberOfNodes, 
                        _MecabraLatticeReadingRangeForNodeAtIndex, _MecabraLatticeRelease, 
                        _MecabraLatticeSurfaceStringForNodeAtIndex ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _BurstTrieCompile, _EmojiDictionaryCompile, _IndexedSearchDictionaryBuild, 
                        _MecabraAcceptCandidate, _MecabraAcceptInlineCandidates, _MecabraAdaptToTokenizedText, 
                        _MecabraAdaptToTokenizedTextWithEffectiveTime, _MecabraAdaptToUntokenizedText, 
@@ -28,23 +34,26 @@ exports:
                        _MecabraCandidateCopySyllableLengthArrayInConvertedAnalysisString, 
                        _MecabraCandidateCopySyllableLengthArrayInDictionaryReading, 
                        _MecabraCandidateGetAnalysisString, _MecabraCandidateGetAttributes, 
-                       _MecabraCandidateGetConvertedAnalysisString, _MecabraCandidateGetDictionaryReading, 
-                       _MecabraCandidateGetKind, _MecabraCandidateGetLMProbability, 
-                       _MecabraCandidateGetLastPrefixValue, _MecabraCandidateGetLcAttrAtIndex, 
+                       _MecabraCandidateGetBaseCost, _MecabraCandidateGetConvertedAnalysisString, 
+                       _MecabraCandidateGetCostAtIndex, _MecabraCandidateGetDictionaryReading, 
+                       _MecabraCandidateGetKind, _MecabraCandidateGetKindAtIndex, 
+                       _MecabraCandidateGetLMProbability, _MecabraCandidateGetLastPrefixValue, 
+                       _MecabraCandidateGetLcAttrAtIndex, _MecabraCandidateGetMatchPenalty, 
                        _MecabraCandidateGetMatchType, _MecabraCandidateGetMatchedLengthType, 
                        _MecabraCandidateGetNextPhraseBoundary, _MecabraCandidateGetRangeOfWordAtIndex, 
                        _MecabraCandidateGetRcAttrAtIndex, _MecabraCandidateGetSurface, 
                        _MecabraCandidateGetTrieValueAtIndex, _MecabraCandidateGetType, 
                        _MecabraCandidateGetWeight, _MecabraCandidateGetWordCount, 
                        _MecabraCandidateGetWordDictionaryReadingLengthAtIndex, _MecabraCandidateGetWordLengthAtIndex, 
-                       _MecabraCandidateGetWordReadingLengthAtIndex, _MecabraCandidateIsAutocorrectionCandidate, 
-                       _MecabraCandidateIsBilingualCandidate, _MecabraCandidateIsEmojiCandidate, 
-                       _MecabraCandidateIsExtensionCandidate, _MecabraCandidateIsFuzzyMatchCandidate, 
+                       _MecabraCandidateGetWordReadingLengthAtIndex, _MecabraCandidateGetWubixingType, 
+                       _MecabraCandidateIsAutocorrectionCandidate, _MecabraCandidateIsBilingualCandidate, 
+                       _MecabraCandidateIsEmojiCandidate, _MecabraCandidateIsExtensionCandidate, 
+                       _MecabraCandidateIsExtensionForCandidateBar, _MecabraCandidateIsFuzzyMatchCandidate, 
                        _MecabraCandidateIsLearningDictionaryCandidate, _MecabraCandidateIsOTAWordlistCandidate, 
                        _MecabraCandidateIsPartialCandidate, _MecabraCandidateIsPersonName, 
                        _MecabraCandidateIsPredictionCandidate, _MecabraCandidateIsRegionalCandidate, 
-                       _MecabraCandidateIsUserWordCandidate, _MecabraCandidateRelease, 
-                       _MecabraCandidateRetain, _MecabraCandidateSetDisplayString, 
+                       _MecabraCandidateIsUserWordCandidate, _MecabraCandidateIsWubixingConvertedByPinyin, 
+                       _MecabraCandidateRelease, _MecabraCandidateRetain, _MecabraCandidateSetDisplayString, 
                        _MecabraCandidateWordAtIndexIsFromSystemDictionary, _MecabraCangjieCodeIsValid, 
                        _MecabraClearLearningDictionaries, _MecabraContextAddCandidate, 
                        _MecabraContextAddInlineCandidate, _MecabraContextCreateMutable, 
@@ -71,31 +80,38 @@ exports:
                        _MecabraCreatePinyinSyllableArray, _MecabraCreateRemainingGestures, 
                        _MecabraCreateSyllableSequences, _MecabraCreateTypeGesture, 
                        _MecabraCreateWithAdditionalDictionariesAndOptions, _MecabraCreateWithOptions, 
-                       _MecabraCreateWubixingStringFromASCII, _MecabraDeclareEndOfSentence, 
-                       _MecabraDeleteCandidateFromLearningDictionary, _MecabraDeleteEntryFromLearningDictionary, 
-                       _MecabraEnumerateSyllabifiedStringLengths, _MecabraFlushDynamicData, 
-                       _MecabraGestureAddKeyAndLoglikelihoodPair, _MecabraGetDebuggingLog, 
-                       _MecabraGetInputCodeForCharacters, _MecabraGetInputKeys, _MecabraGetLastOfflineAdaptationTime, 
+                       _MecabraCreateWubixingCodesFromSurface, _MecabraCreateWubixingStringFromASCII, 
+                       _MecabraDeclareEndOfSentence, _MecabraDeleteCandidateFromLearningDictionary, 
+                       _MecabraDeleteEntryFromLearningDictionary, _MecabraEnumerateSyllabifiedStringLengths, 
+                       _MecabraFlushDynamicData, _MecabraGestureAddKeyAndLoglikelihoodPair, 
+                       _MecabraGetConversionEngine, _MecabraGetDebuggingLog, _MecabraGetInputCodeForCharacters, 
+                       _MecabraGetInputKeys, _MecabraGetLastOfflineAdaptationTime, 
                        _MecabraGetLengthForContextString, _MecabraGetMaximalCharacterInputCodeLength, 
-                       _MecabraGetNextCandidate, _MecabraHandleMemoryPressure, _MecabraInputKeyPropertiesCreateASCIIFromInputKeyString, 
-                       _MecabraInputKeyPropertiesCreateInputKeyFromASCIIString, _MecabraInputKeyPropertiesGetInputKeys, 
-                       _MecabraPerformMaintenance, _MecabraPredictionAcceptCandidate, 
-                       _MecabraPredictionAcceptCandidateWithContext, _MecabraPredictionAnalyze, 
-                       _MecabraPredictionAnalyzeWithContext, _MecabraPredictionGetNextCandidate, 
-                       _MecabraPreheatResources, _MecabraProactiveCandidateCreate, 
-                       _MecabraRelease, _MecabraRemoveSpecialtyDictionary, _MecabraResetLearningDictionaries, 
-                       _MecabraReverseConvertedRomajiCreateFromKanaString, _MecabraRevertLearningForCandidate, 
-                       _MecabraSaveLearningDictionaries, _MecabraSetAdditionalConversionDictionaries, 
+                       _MecabraGetNextCandidate, _MecabraGetRNNLMProbabilities, _MecabraHandleMemoryPressure, 
+                       _MecabraInputKeyPropertiesCreateASCIIFromInputKeyString, _MecabraInputKeyPropertiesCreateInputKeyFromASCIIString, 
+                       _MecabraInputKeyPropertiesGetInputKeys, _MecabraInputStringCreateForSentencePiece, 
+                       _MecabraJapaneseCopyParameters, _MecabraJapaneseLMCreate, 
+                       _MecabraJapaneseLMIsValid, _MecabraJapaneseLMRelease, _MecabraJapaneseLMRerankCandidates, 
+                       _MecabraJapaneseLMRerankerCreate, _MecabraJapaneseLMRerankerRelease, 
+                       _MecabraJapaneseUpdateParameters, _MecabraPerformMaintenance, 
+                       _MecabraPredictionAcceptCandidate, _MecabraPredictionAcceptCandidateWithContext, 
+                       _MecabraPredictionAnalyze, _MecabraPredictionAnalyzeWithContext, 
+                       _MecabraPredictionGetNextCandidate, _MecabraPreheatResources, 
+                       _MecabraProactiveCandidateCreate, _MecabraRelease, _MecabraRemoveSpecialtyDictionary, 
+                       _MecabraResetLearningDictionaries, _MecabraReverseConvertedRomajiCreateFromKanaString, 
+                       _MecabraRevertLearningForCandidate, _MecabraSaveLearningDictionaries, 
+                       _MecabraSentencePieceIDsCreateForCandidate, _MecabraSetAdditionalConversionDictionaries, 
                        _MecabraSetAddressBookNamePhoneticPairs, _MecabraSetAssetDataItemsForType, 
                        _MecabraSetBuildDynamicDictionariesAsynchronously, _MecabraSetCandidateOrderAdjustment, 
                        _MecabraSetDebuggingLogEnabled, _MecabraSetDynamicLanguageModelAppContext, 
                        _MecabraSetFuzzyPinyinPairs, _MecabraSetUserWordKeyPairs, 
-                       _MecabraSpecialtyDictionaryCreateWithData, _MecabraSpecialtyDictionaryCreateWithEntries, 
-                       _MecabraSpecialtyDictionaryEnumerateEntries, _MecabraSpecialtyDictionaryGetData, 
-                       _MecabraSpecialtyDictionaryRelease, _MecabraSyllablesCreateWithString, 
-                       _MecabraSyllablesGetSyllableAtIndex, _MecabraSyllablesGetSyllableCount, 
-                       _MecabraSyllablesGetSyllableTypeAtIndex, _MecabraSyllablesRelease, 
-                       _MecabraWaitForAsyncDataLoading, _MecabraWordPropertiesCreate, 
+                       _MecabraSetWubixingStandard, _MecabraSpecialtyDictionaryCreateWithData, 
+                       _MecabraSpecialtyDictionaryCreateWithEntries, _MecabraSpecialtyDictionaryEnumerateEntries, 
+                       _MecabraSpecialtyDictionaryGetData, _MecabraSpecialtyDictionaryRelease, 
+                       _MecabraSyllablesCreateWithString, _MecabraSyllablesGetSyllableAtIndex, 
+                       _MecabraSyllablesGetSyllableCount, _MecabraSyllablesGetSyllableTypeAtIndex, 
+                       _MecabraSyllablesRelease, _MecabraWaitForAsyncDataLoading, 
+                       _MecabraWaitForLanguageSpecificAsyncDataLoading, _MecabraWordPropertiesCreate, 
                        _MecabraWordPropertiesGetProperty, _MecabraWordPropertiesGetSortedRadicalList, 
                        _MecabraWordPropertiesRelease, _MecabraWorkingSetAddString, 
                        _MecabraWorkingSetContainsString, _ReadingLookupDictionaryBuild, 
@@ -114,9 +130,9 @@ exports:
                        _kMecabraCreationCustomDynamicLanguageModelDirectoryKey, _kMecabraCreationCustomLearningDictionaryDirectoryKey, 
                        _kMecabraCreationCustomStaticLanguageModelBundleKey, _kMecabraCreationCustomSystemDictionaryDirectoryKey, 
                        _kMecabraCreationDynamicLanguageModelEnabledKey, _kMecabraCreationInputMethodTypeKey, 
-                       _kMecabraCreationLSTMModeKey, _kMecabraCreationLearningEnabledKey, 
-                       _kMecabraCreationLiteModeKey, _kMecabraCreationSyncLearningDataKey, 
-                       _kMecabraCreationUseSpecialSymbolKey, _kMecabraTraditionalChineseArchitectureDictionary, 
+                       _kMecabraCreationLearningEnabledKey, _kMecabraCreationLiteModeKey, 
+                       _kMecabraCreationSyncLearningDataKey, _kMecabraCreationUseSpecialSymbolKey, 
+                       _kMecabraCreationWubixingStandardKey, _kMecabraTraditionalChineseArchitectureDictionary, 
                        _kMecabraTraditionalChineseBiologyDictionary, _kMecabraTraditionalChineseBuddhismDictionary, 
                        _kMecabraTraditionalChineseChineseMedicineDictionary, _kMecabraTraditionalChineseCommerceDictionary, 
                        _kMecabraTraditionalChineseCommunicationsDictionary, _kMecabraTraditionalChineseComputerDictionary, 

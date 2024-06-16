@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           24F054B1-175F-3C13-839C-83AA31F0FFFA
+  - target:          arm64-ios-simulator
+    value:           999B804C-18B4-37E7-BC38-4B8D01D9FFBB
+install-name:    '/System/Library/PrivateFrameworks/SiriUICardKitProviderSupport.framework/SiriUICardKitProviderSupport'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SCKPProviderIdentifier, _SiriUICardKitProviderSupportVersionNumber, 
+                       _SiriUICardKitProviderSupportVersionString ]
+    objc-classes:    [ SCKPCardSectionViewProvider, SCKPInteractiveCardSectionViewController, 
+                       SCKPMediaControlCardSectionView, SCKPMediaControlCardSectionViewController, 
+                       SCKPProvider ]
+...

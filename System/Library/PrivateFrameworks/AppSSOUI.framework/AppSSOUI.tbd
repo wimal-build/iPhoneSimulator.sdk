@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           1701DBA6-7FC6-323B-A8AA-3725FEC45ADE
+  - target:          arm64-ios-simulator
+    value:           D1B991DD-4AE3-3DCB-9866-CF94419B8813
+install-name:    '/System/Library/PrivateFrameworks/AppSSOUI.framework/AppSSOUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ SOUIAuthorizationViewController ]
+...

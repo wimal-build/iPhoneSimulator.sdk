@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: C343A2BB-6959-332B-A63C-2403B2CE45C3' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           DC7E3628-617C-33A1-86FC-3288A057CC34
+  - target:          x86_64-ios-simulator
+    value:           3DA18859-1288-3636-A95B-2BD6B2F158F8
+  - target:          arm64-ios-simulator
+    value:           0E61E8AF-FB2E-363F-B0F6-643818A244CC
 install-name:    '/System/Library/Frameworks/AddressBook.framework/AddressBook'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _ABAccountAddTypeToCache, _ABAccountClass, _ABAccountCopyIdentifier, 
                        _ABAccountCopyInternalUUID, _ABAccountCreate, _ABAccountNameForProperty, 
                        _ABAccountProperties, _ABAccountRecordIsFromFacebookSource, 
@@ -320,9 +326,10 @@ exports:
                        _ABTokenListGetTokenCollationKeyLengthAtIndex, _ABTokenListGetTokenEndByteOffsetAtIndex, 
                        _ABTokenListGetTokenRangeAtIndex, _ABTokenListGetTokenStartByteOffsetAtIndex, 
                        _ABTokenListPopulateFromString, _ABTokenListRemoveAllTokens, 
-                       _ABUnknownTypeCallbacks, _ABUnlock, __ABBundle, __ABCCreateCFStringFromDate, 
-                       __ABCCreateDateFromCFString, __ABCCreateSingleStringValue, 
-                       __ABCDBContextCopyPersonUIDsWithMultivaluePropertyLike, __ABCDBContextCopyPersonUIDsWithMultivaluePropertyLikeIncludingLabels, 
+                       _ABUnknownTypeCallbacks, _ABUnlock, _ABValidateAlternateBirthday, 
+                       __ABBundle, __ABCCreateCFStringFromDate, __ABCCreateDateFromCFString, 
+                       __ABCCreateSingleStringValue, __ABCDBContextCopyPersonUIDsWithMultivaluePropertyLike, 
+                       __ABCDBContextCopyPersonUIDsWithMultivaluePropertyLikeIncludingLabels, 
                        __ABCGetActualDefaultSource, __ABCGuidMethods, __ABCLoadSingleData, 
                        __ABCLoadSingleString, __ABCMultiSaveDatas, __ABCMultiSaveStrings, 
                        __ABCPersonInvalidateImageCallback, __ABCPostDatabaseChangedNotification, 
@@ -336,10 +343,11 @@ exports:
                        __ABStringContainsNonLatinCharacters, __CopyPeopleAndMultiValuePropertiesMatchingNameWithCancellationCallback, 
                        __CopyPersonUIDsForPhoneNumber, __FindUIDsMatchingPhoneNumbers, 
                        __PersonUIDForPhoneNumber, __PersonUIDWithValueForMultivalueProperty, 
-                       __SortPeople, __appendSearchKeys, __arrayValueForPhoneNumberInDictionary, 
-                       __clearChangesForClient, __copyArrayOfPreferredNamePeopleForOptionalGroupsAndSourcesWithSortOrdering, 
+                       __SortPeople, ___thumbnailPropertiesOnce, __appendSearchKeys, 
+                       __arrayValueForPhoneNumberInDictionary, __clearChangesForClient, 
+                       __copyArrayOfPreferredNamePeopleForOptionalGroupsAndSourcesWithSortOrdering, 
                        __copyExtraSortKeysForOrganizationIfNotNull, __copySortKeysForStringAndTransformedStringIfNotNull, 
-                       __createMutableDBDirectory, __createUTF8StringFromCFString, 
+                       __createDictionaryFromFile, __createMutableDBDirectory, __createUTF8StringFromCFString, 
                        __darwinNotificationCancellationCount, __entityChangesExistWithSequenceNumberAfterRecordID, 
                        __hasClientWithIdentifier, __intValueForPhoneNumberInDictionary, 
                        __iteratePeopleWithCallbacksRowHandler, __lastSaveAbsoluteTime, 
@@ -350,6 +358,7 @@ exports:
                        __moveRecordsInTableToSource, __removeSyncImagesFromSource, 
                        __runPhoneQueryWithContextForNumber, __saveCount, __setImageDataWithCropRect, 
                        __setIntValueForPhoneNumberInDictionary, __setValueForPhoneNumberInDictionary, 
+                       __socialProfileServiceFromURL, __socialProfileUsernameFromURL, 
                        __stringValueForPhoneNumberInDictionary, __updatePreferredImageForPerson, 
                        _appendSQLInitSingleValuePropertyString, _appendTokenizations, 
                        _bindTokenizations, _copyCurrentThreadHandle, _correctUnsupportedLabels, 
@@ -476,7 +485,7 @@ exports:
                        ABVCardParser._cropRectX, ABVCardParser._cropRectY, ABVCardParser._valueSetter, 
                        ABVCardPersonValueSetter._person, ABVCardPersonValueSetter._properties, 
                        ABVCardRecord._properties, ABVCardRecord._record ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ABAddressBookAddRecord, _ABAddressBookCopyArrayOfAllGroups, 
                        _ABAddressBookCopyArrayOfAllGroupsInSource, _ABAddressBookCopyArrayOfAllPeople, 
                        _ABAddressBookCopyArrayOfAllPeopleInSource, _ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering, 
@@ -528,15 +537,9 @@ exports:
                        _ABPersonSetImageData, _ABPersonSetSoundIdentifierForMultiValueIdentifier, 
                        _ABPersonUnlink, _ABRecordCopyCompositeName, _ABRecordCopyValue, 
                        _ABRecordGetAddressBook, _ABRecordGetRecordID, _ABRecordGetRecordType, 
-                       _ABRecordRemoveValue, _ABRecordSetValue, _ABSAddressBookDefaultAlternateDatabaseDirectory, 
-                       _ABSAddressBookErrorDomain, _ABSAddressBookGetTypeID, _ABSCreateThumbnailDataAndCropRectFromImageData, 
-                       _ABSInvokeAllLocalCallbacksNotification, _ABSIsAPILogEnabled, 
-                       _ABSIsLogEnabled, _ABSLogCategoryAPI, _ABSLogCategoryGlobal, 
-                       _ABSLoggingContext, _ABSMultiValueGetTypeID, _ABSPeoplePickerPrefs, 
-                       _ABSPersonConstantsInitialize, _ABSRecordGetTypeID, _ABSourceCreate, 
-                       _ABValidateAlternateBirthday, ___thumbnailPropertiesOnce, 
-                       __createDictionaryFromFile, __socialProfileServiceFromURL, 
-                       __socialProfileUsernameFromURL, _completedSocialProfileFromSocialProfile, 
+                       _ABRecordRemoveValue, _ABRecordSetValue, _ABSAddressBookErrorDomain, 
+                       _ABSCreateThumbnailDataAndCropRectFromImageData, _ABSPeoplePickerPrefs, 
+                       _ABSourceCreate, _completedSocialProfileFromSocialProfile, 
                        _kABGroupNameProperty, _kABHomeLabel, _kABOtherLabel, _kABPersonAddressCityKey, 
                        _kABPersonAddressCountryCodeKey, _kABPersonAddressCountryKey, 
                        _kABPersonAddressProperty, _kABPersonAddressStateKey, _kABPersonAddressStreetKey, 
@@ -576,8 +579,7 @@ exports:
                        _kABSourceNameProperty, _kABSourceTypeProperty, _kABWorkLabel, 
                        _socialProfileFromURL, _socialProfileURLForServiceAndUsername ]
     objc-classes:    [ ABSAddressBook, ABSAddressBookContextStorage, ABSAddressBookSettings, 
-                       ABSAssistantManager, ABSBulkFaultHandler, ABSBundle, ABSCallbackInvoker, 
-                       ABSChangeCallbacks, ABSConstantsMapping, ABSDynamicLoader, 
-                       ABSGroup, ABSMultiValue, ABSPerson, ABSPublicABCNCompatibility, 
+                       ABSAssistantManager, ABSBulkFaultHandler, ABSBundle, ABSDynamicLoader, 
+                       ABSPerson, ABSPersonFetchRequest, ABSPublicABCNCompatibility, 
                        ABSSource, ABSVCardRecord ]
 ...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           01998E39-2345-3431-9098-C685F77ECF6B
+  - target:          arm64-ios-simulator
+    value:           D7EDF9FE-8759-315D-93EC-FAED36EB0E43
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libComposeFilters.dylib'
+current-version: 31001.40
+exports:
+  - targets:         [ x86_64-ios-simulator ]
+    weak-symbols:    [ __ZTINSt3__110__function6__baseIFbRKN4llvm11GlobalValueEEEE, 
+                       __ZTSNSt3__110__function6__baseIFbRKN4llvm11GlobalValueEEEE ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _composeImageFilterFunctionsFromModulesSPI, _composeImageFilterFunctionsSPI ]
+...

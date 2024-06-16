@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DBCA0169-03B4-3008-91B5-6CECECC29482
+  - target:          arm64-ios-simulator
+    value:           9888154B-FFF4-3EA5-B5E1-9D94DBCA6F2B
+install-name:    '/System/Library/PrivateFrameworks/SystemStatusServer.framework/SystemStatusServer'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ STTelephonyCarrierBundleInfo._LTEConnectionShows4G, STTelephonyCarrierBundleInfo._carrierName, 
+                       STTelephonyCarrierBundleInfo._customerServicePhoneNumber, 
+                       STTelephonyCarrierBundleInfo._disabledApplicationIDs, STTelephonyCarrierBundleInfo._homeCountryCode, 
+                       STTelephonyCarrierBundleInfo._reinitiatingActivationDisabled, 
+                       STTelephonyMobileEquipmentInfo._CSN, STTelephonyMobileEquipmentInfo._ICCID, 
+                       STTelephonyMobileEquipmentInfo._IMEI, STTelephonyMobileEquipmentInfo._MEID, 
+                       STTelephonyMobileEquipmentInfo._bootstrapICCID, STTelephonySubscriptionInfo._SIMLabel, 
+                       STTelephonySubscriptionInfo._SIMStatus, STTelephonySubscriptionInfo._callForwardingIndicator, 
+                       STTelephonySubscriptionInfo._cellularRegistrationStatus, STTelephonySubscriptionInfo._dataConnectionType, 
+                       STTelephonySubscriptionInfo._identifier, STTelephonySubscriptionInfo._lastKnownNetworkCountryCode, 
+                       STTelephonySubscriptionInfo._maxSignalStrengthBars, STTelephonySubscriptionInfo._networkReselectionNeeded, 
+                       STTelephonySubscriptionInfo._operatorName, STTelephonySubscriptionInfo._preferredForDataConnections, 
+                       STTelephonySubscriptionInfo._providingDataConnection, STTelephonySubscriptionInfo._registeredWithoutCellular, 
+                       STTelephonySubscriptionInfo._registrationRejectionCauseCode, 
+                       STTelephonySubscriptionInfo._registrationStatus, STTelephonySubscriptionInfo._shortSIMLabel, 
+                       STTelephonySubscriptionInfo._signalStrengthBars ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _STEntitledDomainsForEntitlementValue, _STStatusDomainNameForEntitlementValue, 
+                       _STSystemStatusLogTelephonyState, _STTelephonyCachedBooleanDebugName, 
+                       _STTelephonyCallForwardingIndicatorDebugName, _STTelephonyDataConnectionTypeDebugName, 
+                       _STTelephonyRegistrationStatusDebugName, _SystemStatusServerVersionNumber, 
+                       _SystemStatusServerVersionString ]
+    objc-classes:    [ STMutableTelephonyCarrierBundleInfo, STMutableTelephonyMobileEquipmentInfo, 
+                       STMutableTelephonySubscriptionInfo, STStatusDomainPublisherXPCClientHandle, 
+                       STStatusDomainPublisherXPCClientListener, STStatusDomainXPCClientHandle, 
+                       STStatusDomainXPCClientListener, STStatusServer, STTelephonyCarrierBundleInfo, 
+                       STTelephonyMobileEquipmentInfo, STTelephonyStateProvider, 
+                       STTelephonyStatusDomainDataProvider, STTelephonySubscriptionContext, 
+                       STTelephonySubscriptionInfo ]
+...

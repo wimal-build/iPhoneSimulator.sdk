@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           A6D41ABB-5F86-3A97-9B60-F34ADF4A60F7
+  - target:          arm64-ios-simulator
+    value:           C4F8FE49-88BD-3F08-92AD-712BFF16D09D
+install-name:    '/System/Library/PrivateFrameworks/AppPredictionUIFoundation.framework/AppPredictionUIFoundation'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AppPredictionUIFoundationVersionNumber, _AppPredictionUIFoundationVersionString ]
+    objc-classes:    [ APUIActionContextMenu ]
+...

@@ -1,0 +1,54 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           30F74C9E-D7D5-32CC-9AC0-7B2661CE0908
+  - target:          arm64-ios-simulator
+    value:           A221A681-1C26-3F0C-8148-CED5A026EF56
+install-name:    '/System/Library/PrivateFrameworks/TrackingAvoidance.framework/TrackingAvoidance'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSJSONSerializationNSStringErrorDomain, _TACLVisitConfidenceToString, 
+                       _TAEventsLog, _TAGeoNavigationListenerStateToString, _TAGeoTransportTypeToString, 
+                       _TALocationOfInterestTypeToString, _TAOutgoingRequestsAdditionalScanningKey, 
+                       _TAOutgoingRequestsInterVisitMetricsDonationKey, _TAOutgoingRequestsPeopleDensityKey, 
+                       _TAOutgoingRequestsVisitMetricsDonationKey, _TAPrivateVehicleClassificationReasonEnumToString, 
+                       _TARegisterLogs, _TASPAdvertisementTypeToString, _TAStatusLog, 
+                       _TASystemStateTypeToString, _TAUserActivityTypeToString, _TAVehicularOperatorStateToString, 
+                       _TAVehicularStateToString, _kTAAnalyticsManagerEnableSubmissionKey, 
+                       _kTAEventBufferCapacityKey, _kTAEventBufferTimeIntervalOfRetentionKey, 
+                       _kTAFilterGeneralDurationOfConsiderationKey, _kTAFilterGeneralThresholdOfLocationRelevanceKey, 
+                       _kTAFilterGeneralThresholdOfSignificantDistanceKey, _kTAFilterGeneralThresholdOfSignificantDurationKey, 
+                       _kTAFilterSingleVisitEnabledLoiTypesKey, _kTAFilterVisitsMaxSuspiciousDurationKey, 
+                       _kTAFilterVisitsMinInterVisitDistanceKey, _kTAFilterVisitsMinNSigmaKey, 
+                       _kTANotificationThrottleHoursKey, _kTANotificationThrottleMaxPerPeriodKey, 
+                       _kTAPeopleDensityEnabledKey, _kTAPersistenceIntervalKey, _kTAPersistenceManagerDirectoryKey, 
+                       _kTAPersistenceManagerStoreFileNameKey, _kTAScanInterVisitScanDelayKey, 
+                       _kTAScanMaxDailyRequestsKey, _kTAScanMaxInterVisitRequestsKey, 
+                       _kTAScanMinInterVisitDisplayOnDurationKey, _kTAScanMinVisitEntryDisplayOnDurationKey, 
+                       _kTAScanRequestReasonKey, _kTATrackingAvoidanceEnabledKey ]
+    objc-classes:    [ TAAggressiveScanState, TAAnalyticsManager, TAAnalyticsManagerSettings, 
+                       TACLVisit, TACircularBuffer, TACoreAnalyticMetricManager, 
+                       TADeviceInformation, TADeviceRecord, TADeviceRecordSettings, 
+                       TADisplayOnCalculator, TADominantUserActivity, TAEventBuffer, 
+                       TAEventBufferSettings, TAFilterGeneral, TAFilterGeneralSettings, 
+                       TAFilterKnownDevices, TAFilterObservationAggregator, TAFilterSingleVisit, 
+                       TAFilterSingleVisitSettings, TAFilterVisits, TAFilterVisitsSettings, 
+                       TAGeneralDetectionMetrics, TAGeoNavigationNotification, TAInterVisitMetricPerDevice, 
+                       TAInterVisitMetricPerDeviceSettings, TAInterVisitMetricsSnapshot, 
+                       TAInterVisitSummary, TALocationLite, TALocationOfInterest, 
+                       TAMetricsDetection, TAMetricsInterVisit, TAMetricsVisit, TAOutgoingRequests, 
+                       TAPeopleDensityResult, TAPersistenceManager, TAPersistenceManagerSettings, 
+                       TAPersistenceStore, TAPrivateVehicleClassificationReason, 
+                       TAReplay, TASPAdvertisement, TAScanRequest, TAScanRequestSettings, 
+                       TASettings, TASingleDeviceRecord, TASingleVisitDetectionMetrics, 
+                       TAStagedSuspiciousDevice, TAStore, TASuspiciousDevice, TASystemState, 
+                       TATrackingAvoidanceService, TATrackingAvoidanceServiceManager, 
+                       TATrackingAvoidanceServiceSettings, TATrackingAvoidanceServiceStateContext, 
+                       TAUserActivity, TAVehicleCategory, TAVehicleCategoryLogic, 
+                       TAVehicleStateNotification, TAVisitDetectionMetrics, TAVisitSnapshot, 
+                       TAVisitState, TAVisitStateSettings ]
+...

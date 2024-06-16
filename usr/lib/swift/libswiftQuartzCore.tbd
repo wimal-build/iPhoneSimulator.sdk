@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 594AB6A6-70ED-3039-8F02-6B404A7E061D', 'x86_64: F7D356D1-2605-3621-A256-6E732016B669' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           594AB6A6-70ED-3039-8F02-6B404A7E061D
+  - target:          x86_64-ios-simulator
+    value:           2EAEA2A6-187C-3F16-9D48-8C885A5873FB
+  - target:          arm64-ios-simulator
+    value:           AAFC97A1-876C-3098-86F9-2F297B97368B
 install-name:    '/usr/lib/swift/libswiftQuartzCore.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftQuartzCore.dylib', 
                        '$ld$install_name$os10.1$@rpath/libswiftQuartzCore.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftQuartzCore.dylib', 

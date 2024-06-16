@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           BABC3B44-3F64-3C74-BF6B-380569C3D423
+  - target:          x86_64-ios-simulator
+    value:           375E0A26-F996-322C-8710-A4FBD4ABDB21
+  - target:          arm64-ios-simulator
+    value:           A9C129FE-0595-3BEF-A463-32FCDF97A2CF
+install-name:    '/System/Library/PrivateFrameworks/Futhark.framework/Futhark'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _FKGlyphRender, _FKGlyphSetDerivedProperties, _FKRecognizeGlyph ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ FKTextDetector._memoryUsage, FKTextDetector._recognizer, FKTextDetector._roi, 
+                       FKTextDetector._size ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FKCCMatchGetConfidence, _FKComponentPrint, _FKGetBuildAPIVersion, 
+                       _FKGetBuildGitHash, _FKGetBuildTimestamp, _FKGetFrameworkVersion, 
+                       _FKPrintLinesegList, _FKPrintRender, _FKRecognizeConcomp, 
+                       _FKSeqMatchGetConfidence, _FutharkVersionNumber, _FutharkVersionString ]
+    objc-classes:    [ FKTextCandidate, FKTextDetector, FKTextFeature ]
+    objc-ivars:      [ FKTextDetector._sessions, FKTextDetector._timeBinarizer, FKTextDetector._timeConcomps, 
+                       FKTextDetector._timeDownscale, FKTextDetector._timeRecognizer, 
+                       FKTextDetector._timeSequences, FKTextFeature._backingIndex, 
+                       FKTextFeature._scale, FKTextFeature._session ]
+...

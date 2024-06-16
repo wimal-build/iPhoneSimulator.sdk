@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           75809573-0F81-34FD-9C4F-F9572F6E4165
+  - target:          arm64-ios-simulator
+    value:           B2EDB624-FD2D-3016-BF18-B895F179B0C1
+install-name:    '/System/Library/PrivateFrameworks/TransparencyDetailsView.framework/TransparencyDetailsView'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ADTransparencyViewControllerErrorDomain, _NewsTransparencyViewControllerErrorDomain, 
+                       _TransparencyDetailsViewVersionNumber, _TransparencyDetailsViewVersionString, 
+                       _UserTransparencyViewControllerErrorDomain ]
+    objc-classes:    [ ADTransparencyViewController, NewsTransparencyViewController, 
+                       TDVHomeButtonHandler, UserTransparencyViewController ]
+...

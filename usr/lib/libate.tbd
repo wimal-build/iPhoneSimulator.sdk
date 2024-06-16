@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0DF8639C-2CCF-3862-B16D-AFC4BE59D920' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           3B3C310E-C12A-352F-9838-EC9C4397B643
+  - target:          arm64-ios-simulator
+    value:           466CF81C-23DA-36A2-86DC-CDE8D81A5CCE
 install-name:    '/usr/lib/libate.dylib'
-current-version: 3.0.1
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 3.0.4
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _at_block_format_convert_to_MTLPixelFormat, _at_block_format_to_MTLPixelFormat, 
                        _at_block_get_features, _at_encoder_compress_texels, _at_encoder_create, 
                        _at_encoder_decompress_texels, _at_encoder_get_block_address, 

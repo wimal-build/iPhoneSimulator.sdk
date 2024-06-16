@@ -1,13 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 55A05D88-1D0A-3672-8CB8-564ED2D28F26', 'x86_64: 143D5B4F-94F1-390D-913D-39ED8942A53A' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7BBC6353-31D3-3C06-9456-70CF083D4400
+  - target:          x86_64-ios-simulator
+    value:           FC320B98-8BA9-3401-BB35-5ECFAC6FECEE
+  - target:          arm64-ios-simulator
+    value:           B80DA713-7C1D-3EC4-85A6-FABD55E6C78A
 install-name:    '/usr/lib/libgermantok.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___gt_mutex, _btrie_build, _btrie_close, _btrie_common_prefix_search, 
                        _btrie_data, _btrie_exact_match_search, _btrie_open, _btrie_prefix_match_search, 
                        _btrie_wildcard_match_search ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _germantok_tokenize ]
 ...

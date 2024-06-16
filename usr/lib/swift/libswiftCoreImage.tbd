@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 832EF493-3957-356C-8ADB-E303B45817D8', 'x86_64: D1A242AA-931A-3C74-8B1D-2A9272CF9B90' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           832EF493-3957-356C-8ADB-E303B45817D8
+  - target:          x86_64-ios-simulator
+    value:           2E4CCB1E-9EE1-3873-889D-7E46FF02F73A
+  - target:          arm64-ios-simulator
+    value:           35FD2A56-74A1-3732-B08E-080F53A6A05B
 install-name:    '/usr/lib/swift/libswiftCoreImage.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftCoreImage.dylib', 
                        '$ld$install_name$os10.1$@rpath/libswiftCoreImage.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftCoreImage.dylib', 

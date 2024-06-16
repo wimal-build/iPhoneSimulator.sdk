@@ -1,12 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8FA59696-9793-394D-861B-0BA51C4241E1', 'x86_64: 1937D0A5-88ED-3BE2-8F10-B2929A4AF853' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           E8ACB3A5-BB06-39FE-AA58-771879BEFA18
+  - target:          x86_64-ios-simulator
+    value:           0036279C-6882-3D98-AD1A-C94F16B3D5E8
+  - target:          arm64-ios-simulator
+    value:           E55DE08E-ED7B-37B3-80FF-DC798A5076AC
 install-name:    '/usr/lib/liblzma.5.dylib'
 current-version: 6.3
 compatibility-version: 6
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _lzma_5VersionNumber, _lzma_5VersionString, _lzma_alloc, _lzma_alone_decoder_init, 
                        _lzma_block_decoder_init, _lzma_block_encoder_init, _lzma_bufcpy, 
                        _lzma_check_finish, _lzma_check_init, _lzma_check_update, 
@@ -39,7 +45,7 @@ exports:
                        _lzma_simple_x86_decoder_init, _lzma_simple_x86_encoder_init, 
                        _lzma_stream_decoder_init, _lzma_stream_encoder_init, _lzma_strm_init, 
                        _tuklib_physmem ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _lzma_alone_decoder, _lzma_alone_encoder, _lzma_auto_decoder, 
                        _lzma_block_buffer_bound, _lzma_block_buffer_decode, _lzma_block_buffer_encode, 
                        _lzma_block_compressed_size, _lzma_block_decoder, _lzma_block_encoder, 

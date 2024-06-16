@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           BD7D12F9-684C-3FAF-986B-F49221C9BCC2
+  - target:          arm64-ios-simulator
+    value:           F575C3A2-9613-3AAC-9FA1-4FABCB9BCDE4
+install-name:    '/System/Library/PrivateFrameworks/IMAssistantCore.framework/IMAssistantCore'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _IMAssistantChatIdentifierFromConversationIdentifier, _IMAssistantContinuityChatsKey, 
+                       _IMAssistantContinuityHandlesKey, _IMAssistantCoreInstantMessageServiceBusinessChat, 
+                       _IMAssistantMessageHandlerErrorDomain, __IMAssistantCoreGeneralSignpostLogHandle, 
+                       __IMAssistantCoreSearchForMessageSignpostLogHandle, __IMAssistantCoreSendMessageSignpostLogHandle ]
+    objc-classes:    [ IMAssistantAudioPlayer, IMAssistantChatParticipant, IMAssistantHandleFromContact, 
+                       IMAssistantINMessageConverter, IMAssistantIntentHandler, IMAssistantMessageAttributeOptions, 
+                       IMAssistantMessageHandler, IMAssistantMessageHandlerDefaultDataSource, 
+                       IMAssistantMessagePlayAudioHandler, IMAssistantMessagePlayMessageSoundHandler, 
+                       IMAssistantMessageQueryHandler, IMAssistantMessageReadAttributeSanitizer, 
+                       IMAssistantMessageSearchChatParticipant, IMAssistantMessageSearchHandler, 
+                       IMAssistantMessageSendHandler, IMAssistantMessageSetAttributeHandler, 
+                       IMAssistantRelevantChatMatchingRecipients ]
+...

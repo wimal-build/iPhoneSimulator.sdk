@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           5BC45E9B-E321-3F57-8EA2-BFA17EBDB74A
+  - target:          x86_64-ios-simulator
+    value:           4BAE055A-A7FA-3FF1-AAE6-166B12A57CA2
+  - target:          arm64-ios-simulator
+    value:           D3CE757D-BD64-3400-9505-A90AED26B826
+install-name:    '/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _TUIAnalyticsEmojiSearchCharactersDeleted, _TUIAnalyticsEmojiSearchCharactersInserted, 
+                       _TUIAnalyticsEmojiSearchClearActions, _TUIAnalyticsEmojiSearchEmojiInserted, 
+                       _TUIAnalyticsEmojiSearchInitialCharacters, _TUIAnalyticsEmojiSearchSession, 
+                       _TUIAnalyticsEventPrefix, _TUICandidateArrowButtonImageNameExtendArrow, 
+                       _TUICandidateKindCustomHeader, _TUICandidateKindDummyCandidate, 
+                       _TUICandidateKindGroupHeader, _TUICandidateKindLine, _TUICandidateKindSlottedCellSeparator, 
+                       _TUICandidateLayoutAutofillExtraCellWidth, _TUICandidateViewAnimationDuration, 
+                       _TUIDictationTitle, _TUIEmojiSearchTextFieldBackgroundViewAnimationDuration, 
+                       _TUIEmojiVariantSelectorBubbleRadius, _TUIKeyboardDisplayNameFromIdentifier, 
+                       _TUIKeyboardTitle, _TUIPointIntegralWithScale, _TUIRectIntegralWithScale, 
+                       _TUIScreenScaleForView, __TextInputBundlesRoot, __TextInputUIBundle, 
+                       _kBarButtonWidth, _kMagnifyingGlassInsetAmount ]
+    objc-classes:    [ FieldSpecTuple, ShapeView, TUIAnalyticsSession, TUIAssistantButtonBarGroupView, 
+                       TUIAssistantButtonBarView, TUIAutofillExtraCandidateCell, 
+                       TUIButtonBarGroupSet, TUIButtonBarItemView, TUICandidateArrowButton, 
+                       TUICandidateBackdropView, TUICandidateBaseCell, TUICandidateCell, 
+                       TUICandidateCollectionView, TUICandidateGrid, TUICandidateGroupHeader, 
+                       TUICandidateInlineTextView, TUICandidateLabel, TUICandidateLayout, 
+                       TUICandidateLayoutAttributes, TUICandidateLine, TUICandidateSlottedSeparator, 
+                       TUICandidateSortControl, TUICandidateView, TUIEmojiSearchAnalyticsSession, 
+                       TUIEmojiSearchInputView, TUIEmojiSearchInputViewController, 
+                       TUIEmojiSearchResultCollectionViewCell, TUIEmojiSearchResultsCollectionViewController, 
+                       TUIEmojiSearchSource, TUIEmojiSearchTextField, TUIEmojiSearchTextFieldBackgroundView, 
+                       TUIEmojiSearchTextFieldPortalView, TUIEmojiSearchView, TUIEmojiVariantCell, 
+                       TUIEmojiVariantSelectorView, TUIKBGraphSerialization, TUIKeyboardBackendController, 
+                       TUIKeyboardInputManagerMux, TUIKeyboardLayoutFactory, TUIPlaceholderCandidate, 
+                       TUIPredictionCellButton, TUIPredictionView, TUIPredictionViewCell, 
+                       TUIPredictionViewStackContentView, TUIPredictionViewStackView, 
+                       TUIPreferencesController, TUIProactiveCandidateCell, TUISuggestedInputMode, 
+                       TUISuggestionCandidateCell, TUISystemInputAssistantLayout, 
+                       TUISystemInputAssistantLayoutSplit, TUISystemInputAssistantLayoutStandard, 
+                       TUISystemInputAssistantLayoutViewSet, TUISystemInputAssistantPageView, 
+                       TUISystemInputAssistantView, TUITypedStringCandidate, TouchExclusionView, 
+                       _InvertibleFlowLayout ]
+...

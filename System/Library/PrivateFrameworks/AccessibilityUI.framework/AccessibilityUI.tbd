@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           A6AB8826-2491-3A5F-B82C-DC7CD5E912C5
+  - target:          arm64-ios-simulator
+    value:           22F5B7C9-3EE4-3692-9CD2-61A26F9339E3
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityUI.framework/AccessibilityUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ AXUIClient, AXUIClientConnection ]
+...

@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3B2AB505-72C1-32DC-A3E7-59A06C3DFBD8', 'x86_64: 91C2F191-B1EE-3FCC-A1E7-DE51D2A1BFE0' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3B2AB505-72C1-32DC-A3E7-59A06C3DFBD8
+  - target:          x86_64-ios-simulator
+    value:           C64AA0F4-01FB-37CB-8566-18D22043E8ED
+  - target:          arm64-ios-simulator
+    value:           7D8E779A-AA21-383B-AB74-10A87C08A062
 install-name:    '/usr/lib/swift/libswiftMetalKit.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 1.2
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftMetalKit.dylib', '$ld$install_name$os10.1$@rpath/libswiftMetalKit.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftMetalKit.dylib', '$ld$install_name$os10.3$@rpath/libswiftMetalKit.dylib', 
                        '$ld$install_name$os11.0$@rpath/libswiftMetalKit.dylib', '$ld$install_name$os11.1$@rpath/libswiftMetalKit.dylib', 

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           482F5414-E22D-3838-B19B-18C0DD5C6C13
+  - target:          arm64-ios-simulator
+    value:           3DF94EEB-96C7-3A52-B2AC-3F92FC1F1D8D
+install-name:    '/System/Library/PrivateFrameworks/BackBoardHIDEventProcessors.framework/BackBoardHIDEventProcessors'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BKLogAccelerometer, _BKLogBootUI, _BKLogButton, _BKLogDisplayAnnotations, 
+                       _BKLogGenericGesture, _BKLogHID, _BKLogIdleTimer, _BKLogKeyPresses, 
+                       _BKLogKeyboard, _BKLogMotionEvents, _BKLogRenderOverlay, _BKLogSendHIDEvent, 
+                       _BKLogSystemAppSentinel, _BKLogTouchDeliveryPolicy, _BKLogTouchEvents, 
+                       _BackBoardHIDEventProcessorsVersionNumber, _BackBoardHIDEventProcessorsVersionString ]
+    objc-classes:    [ BKHIDBiometricEventProcessor, BKHIDGameControllerEventProcessor, 
+                       BKHIDGenericGestureEventProcessor, BKHIDPointerEventProcessor, 
+                       BKHIDPointerEventRecord, BKHIDScrollEventProcessor, BKHIDVendorDefinedEventProcessor ]
+...

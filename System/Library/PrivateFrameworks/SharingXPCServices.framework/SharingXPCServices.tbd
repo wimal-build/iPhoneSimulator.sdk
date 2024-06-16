@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           5CE498E6-402D-344D-947D-683155A32664
+  - target:          arm64-ios-simulator
+    value:           0DCEEA31-1447-3A92-9872-33E9297FBA42
+install-name:    '/System/Library/PrivateFrameworks/SharingXPCServices.framework/SharingXPCServices'
+current-version: 1564.6
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SharingXPCServicesVersionNumber, _SharingXPCServicesVersionString ]
+...

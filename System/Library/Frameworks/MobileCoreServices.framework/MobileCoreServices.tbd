@@ -1,11 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3DE0E92C-0A96-3FFA-9534-FC12B21DAFB6', 'x86_64: EA005900-E740-3477-A209-D8B5CE333BD1' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           2A6269D7-1AEE-340A-AABE-80C64D145602
+  - target:          x86_64-ios-simulator
+    value:           03D5C0E1-72A7-342A-B26C-565450331B02
+  - target:          arm64-ios-simulator
+    value:           A80AA83E-B28E-3C9F-8214-557786FFBDBB
 install-name:    '/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices'
-current-version: 1069.25
-exports:         
-  - archs:           [ i386 ]
+current-version: 1116.2
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/System/Library/Frameworks/CoreServices.framework/CoreServices' ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _CSIdentityAuthorityCopyLocalizedName, _CSIdentityAuthorityGetTypeID, 
                        _CSIdentityCreateCopy, _CSIdentityCreatePersistentReference, 
                        _CSIdentityGetAuthority, _CSIdentityGetClass, _CSIdentityGetFullName, 
@@ -184,7 +193,6 @@ exports:
                        _LSAppLinkPlugIn, _LSApplicationState, _LSDefaults, _LSDiskUsage, 
                        _LSQuery, _LSQueryContext, _LSQueryResult, _LSStringLocalizer, 
                        _UTType, _UTTypeQuery ]
-  - archs:           [ i386, x86_64 ]
-    re-exports:      [ '/System/Library/Frameworks/CoreServices.framework/CoreServices' ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MobileCoreServicesVersionNumber, _MobileCoreServicesVersionString ]
 ...

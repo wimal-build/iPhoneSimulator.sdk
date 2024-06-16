@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           423C4156-4435-305C-995C-248808E9A4B7
+  - target:          arm64-ios-simulator
+    value:           4AC4A92A-D4CD-3AF0-9CE3-DEA31E8F46F7
+install-name:    '/System/Library/PrivateFrameworks/CoreSuggestionsML.framework/CoreSuggestionsML'
+current-version: 1115
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CoreSuggestionsMLVersionNumber, _CoreSuggestionsMLVersionString, 
+                       _SGRepairString, _markFilteredQuery, _perRecipientCountUpsertQuery ]
+    objc-classes:    [ SGConversationTracker, SGConversationTurn, SGCustomResponsesParameters, 
+                       SGDefaultAssets, SGLanguageDetection, SGLazyInit, SGMessagePair, 
+                       SGMessagePairIterator, SGModelAsset, SGModelFeatures, SGModelHyperparameters, 
+                       SGModelSampler, SGModelSource, SGNestedArray, SGPipelineTransformer, 
+                       SGQuickResponse, SGQuickResponsesCategoryScore, SGQuickResponsesClassScore, 
+                       SGQuickResponsesClassificationModel, SGQuickResponsesClassificationParameters, 
+                       SGQuickResponsesConfig, SGQuickResponsesDatabase, SGQuickResponsesDistributingCount, 
+                       SGQuickResponsesEngagementDeltas, SGQuickResponsesInference, 
+                       SGQuickResponsesModel, SGQuickResponsesModelRules, SGQuickResponsesPersonalization, 
+                       SGQuickResponsesPredictionParameters, SGQuickResponsesRanking, 
+                       SGQuickResponsesRecords, SGQuickResponsesReplies, SGQuickResponsesReplyModel, 
+                       SGQuickResponsesReplyOption, SGQuickResponsesReplyRecord, 
+                       SGQuickResponsesScoring, SGQuickResponsesStore, SGQuickResponsesTransformerInstance, 
+                       SGRandomization, SGSelectiveTransformer, SGStringLabelingTransformer, 
+                       SGStringPreprocessingTransformer, SGStringPreprocessor, SGTextLabelTransformer, 
+                       SGTokenJoiningTransformer ]
+...

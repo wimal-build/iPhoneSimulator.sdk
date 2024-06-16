@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           652D729B-BAAE-3AB4-A10B-7C42DEB3185E
+  - target:          arm64-ios-simulator
+    value:           2EB523B9-372D-37B4-B2B3-617B6B0820EA
+install-name:    '/System/Library/PrivateFrameworks/SensorKitUI.framework/SensorKitUI'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SRFollowUpEnableSKIdentifier ]
+    objc-classes:    [ SRAuthorizationCategoryDetailCell, SRAuthorizationCategoryGroupViewController, 
+                       SRAuthorizationCell, SRAuthorizationGroup, SRAuthorizationPromptPresentationController, 
+                       SRFollowUp, SRRemoteAuthorizationPromptViewController, SRResearchDataPerCategoryViewController, 
+                       SRSampleViewController ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           854D8C6C-5D72-32E6-B505-3ABCB77ACE87
+  - target:          arm64-ios-simulator
+    value:           B1D93553-12E8-3E3E-9AFE-24CDED7C5B0C
+install-name:    '/System/Library/PrivateFrameworks/HealthMenstrualCyclesDaemon.framework/HealthMenstrualCyclesDaemon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HDMCKeyValueDomain ]
+    objc-classes:    [ HDMCAnalysisManager, HDMCAnalysisQueryServer, HDMCDaySummaryBuilder, 
+                       HDMCDaySummaryEnumerator, HDMCDaySummaryObserverQueryServer, 
+                       HDMCDaySummaryQueryServer, HDMCNotification, HDMCNotificationManager, 
+                       HDMCPluginServer, HDMCProfileExtension, HDMCSymptomHistoryBuilder ]
+...

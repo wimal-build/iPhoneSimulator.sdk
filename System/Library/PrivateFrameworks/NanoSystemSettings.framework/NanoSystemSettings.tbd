@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           9BE64684-B2F0-3519-838A-330D6CEC2178
+  - target:          x86_64-ios-simulator
+    value:           A4497CBF-C5FE-3B01-9BDF-7846255436A2
+  - target:          arm64-ios-simulator
+    value:           4E405ED7-FE1C-309E-AFF3-3DE7EA48B5B2
+install-name:    '/System/Library/PrivateFrameworks/NanoSystemSettings.framework/NanoSystemSettings'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSSAirplaneModeSettingsChangedNotification, _NSSFileTransferProgressChangedNotification, 
+                       _NSSLoggingDaemonObjectInit, _NSSLoggingFrameworkObjectInit, 
+                       _NSSOSTransactionComplete, _NSSOSTransactionCreate, _NSSShouldRun, 
+                       _kNSSAKDeviceKey, _kNSSAboutAppsKey, _kNSSAboutAvailableStorageKey, 
+                       _kNSSAboutBatteryCurrentCapacityKey, _kNSSAboutBatteryIsChargingKey, 
+                       _kNSSAboutPhotosKey, _kNSSAboutPurgableStorageKey, _kNSSAboutSongsKey, 
+                       _kNSSAboutUserDeletableStorageKey, _kNSSAccountAltDSIDKey, 
+                       _kNSSAccountDSIDKey, _kNSSAccountIdentifierKey, _kNSSAccountIsAuthenticatedKey, 
+                       _kNSSAccountIsManagedKey, _kNSSAccountIsPrimaryiCloudAccountKey, 
+                       _kNSSAccountTypeKey, _kNSSAccountUsernameKey, _kNSSAccountsKey, 
+                       _kNSSAirplaneModeBluetoothKey, _kNSSAirplaneModeCellularKey, 
+                       _kNSSAirplaneModeWifiKey, _kNSSLegalDocumentsBuiltinAppsKey, 
+                       _kNSSLegalDocumentsLegalNoticesKey, _kNSSLegalDocumentsLicenseKey, 
+                       _kNSSLegalDocumentsSarStatementKey, _kNSSLegalDocumentsSarUrlAddedKey, 
+                       _kNSSLocalesInfoAvailableLocaleIdentifiers, _kNSSLocalesInfoDefaultCalendars, 
+                       _kNSSLocalesInfoDefaultNumberingSystems, _kNSSLocalesInfoSupportedCalendars, 
+                       _kNSSLocalesInfoSystemLanguagesKey, _kNSSProfilesConfigurationProfilesInfoKey, 
+                       _kNSSProfilesMDMProfileInfoKey, _kNSSUsageAppsKey, _kNSSUsageAudioCoursesKey, 
+                       _kNSSUsageAudioPodcastsKey, _kNSSUsageAudiobooksKey, _kNSSUsageAvailableStorageKey, 
+                       _kNSSUsageBatteryTrustedKey, _kNSSUsageBundlesKey, _kNSSUsageCameraRollKey, 
+                       _kNSSUsageHomeVideosKey, _kNSSUsageMovieRentalsKey, _kNSSUsageMoviesKey, 
+                       _kNSSUsageMusicBundleIdKey, _kNSSUsageMusicVideosKey, _kNSSUsagePartiallyChargedKey, 
+                       _kNSSUsagePhotoLibraryKey, _kNSSUsagePhotoStreamKey, _kNSSUsagePhotosBundleIdKey, 
+                       _kNSSUsagePodcastsBundleIdKey, _kNSSUsageSongsKey, _kNSSUsageStandbyKey, 
+                       _kNSSUsageTvShowsKey, _kNSSUsageUsageKey, _kNSSUsageUsedStorageKey, 
+                       _kNSSUsageVideoCoursesKey, _kNSSUsageVideoPodcastsKey, _kNSSiCloudAccountsKey, 
+                       _kNSSiCloudIdentifierKey, _kNSSiCloudIsAuthenticatedKey, _kNSSiCloudPersonIDKey, 
+                       _kNSSiCloudUsernameKey, _nss_daemon_log, _nss_framework_log ]
+    objc-classes:    [ NSSManager, NSSUsageApp, NSSUsageBundle, NSSUsageBundleCategory ]
+...

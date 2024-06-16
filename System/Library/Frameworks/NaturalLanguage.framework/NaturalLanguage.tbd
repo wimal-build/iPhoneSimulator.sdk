@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3B05EFF3-BB8C-30D4-BB1C-9F63C657DFBC' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           90FEB588-0C80-3E27-9267-5893397297D7
+  - target:          arm64-ios-simulator
+    value:           1C3D8D6E-0F2B-3165-93AE-7C644A5C99A8
 install-name:    '/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage'
-current-version: 57
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 84
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _NLAssetsHaveChangedNotification, _NLLanguageAmharic, _NLLanguageArabic, 
                        _NLLanguageArmenian, _NLLanguageBengali, _NLLanguageBulgarian, 
                        _NLLanguageBurmese, _NLLanguageCatalan, _NLLanguageCherokee, 
@@ -33,10 +39,11 @@ exports:
                        _NLModelConfigurationOptionsKeyUseCRF, _NLModelConfigurationOptionsKeyUseMaxEnt, 
                        _NLModelConfigurationOptionsKeyUseRNN, _NLModelConfigurationOptionsKeyUseTransfer, 
                        _NLModelEmbeddingTypeCustom, _NLModelEmbeddingTypeDynamic, 
-                       _NLModelEmbeddingTypeStatic, _NLModelWritingOptionsKeyAtomicWrite, 
-                       _NLModelWritingOptionsKeyInputFeatureName, _NLModelWritingOptionsKeyOutputFeatureName, 
-                       _NLNaturalLanguageErrorDomain, _NLPClassifierModelCopyData, 
-                       _NLPClassifierModelCopyPredictedLabelForText, _NLPClassifierModelCopyTestResults, 
+                       _NLModelEmbeddingTypeStatic, _NLModelTrainerOptionsKeyMaximumIterations, 
+                       _NLModelWritingOptionsKeyAtomicWrite, _NLModelWritingOptionsKeyInputFeatureName, 
+                       _NLModelWritingOptionsKeyOutputFeatureName, _NLNaturalLanguageErrorDomain, 
+                       _NLPClassifierModelCopyData, _NLPClassifierModelCopyPredictedLabelForText, 
+                       _NLPClassifierModelCopyPredictedLabelHypothesesForText, _NLPClassifierModelCopyTestResults, 
                        _NLPClassifierModelCreateTrainedModelWithData, _NLPClassifierModelCreateWithData, 
                        _NLPClassifierModelCreateWithURL, _NLPClassifierModelGetCurrentRevision, 
                        _NLPClassifierModelGetRevision, _NLPClassifierModelIsRevisionSupported, 
@@ -49,35 +56,40 @@ exports:
                        _NLPGazetteerModelCreateWithURL, _NLPGazetteerModelGetCurrentRevision, 
                        _NLPGazetteerModelGetRevision, _NLPGazetteerModelIsRevisionSupported, 
                        _NLPGazetteerModelWriteCoreMLModelToURLWithOptions, _NLPSequenceModelCopyData, 
-                       _NLPSequenceModelCopyPredictedLabelsForTokens, _NLPSequenceModelCopyPredictedTokensAndLabelsForText, 
-                       _NLPSequenceModelCopyTestResults, _NLPSequenceModelCreateTrainedModelWithData, 
-                       _NLPSequenceModelCreateWithData, _NLPSequenceModelCreateWithURL, 
-                       _NLPSequenceModelGetCurrentRevision, _NLPSequenceModelGetRevision, 
-                       _NLPSequenceModelIsRevisionSupported, _NLPSequenceModelWriteCoreMLModelToURL, 
-                       _NLPSequenceModelWriteCoreMLModelToURLWithOptions, _NLPSequenceModelWriteToURL, 
-                       _NLTagAdjective, _NLTagAdverb, _NLTagClassifier, _NLTagCloseParenthesis, 
-                       _NLTagCloseQuote, _NLTagConjunction, _NLTagDash, _NLTagDeterminer, 
-                       _NLTagIdiom, _NLTagInterjection, _NLTagNoun, _NLTagNumber, 
-                       _NLTagOpenParenthesis, _NLTagOpenQuote, _NLTagOrganizationName, 
-                       _NLTagOther, _NLTagOtherPunctuation, _NLTagOtherWhitespace, 
-                       _NLTagOtherWord, _NLTagParagraphBreak, _NLTagParticle, _NLTagPersonalName, 
-                       _NLTagPlaceName, _NLTagPreposition, _NLTagPronoun, _NLTagPunctuation, 
-                       _NLTagSchemeLanguage, _NLTagSchemeLemma, _NLTagSchemeLexicalClass, 
-                       _NLTagSchemeNameType, _NLTagSchemeNameTypeOrLexicalClass, 
+                       _NLPSequenceModelCopyPredictedLabelArraysForTokenArrays, _NLPSequenceModelCopyPredictedLabelHypothesesForTokens, 
+                       _NLPSequenceModelCopyPredictedLabelsForTokens, _NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText, 
+                       _NLPSequenceModelCopyPredictedTokensAndLabelsForText, _NLPSequenceModelCopyTestResults, 
+                       _NLPSequenceModelCreateTrainedModelWithData, _NLPSequenceModelCreateWithData, 
+                       _NLPSequenceModelCreateWithURL, _NLPSequenceModelGetCurrentRevision, 
+                       _NLPSequenceModelGetRevision, _NLPSequenceModelIsRevisionSupported, 
+                       _NLPSequenceModelWriteCoreMLModelToURL, _NLPSequenceModelWriteCoreMLModelToURLWithOptions, 
+                       _NLPSequenceModelWriteToURL, _NLTagAdjective, _NLTagAdverb, 
+                       _NLTagAnger, _NLTagClassifier, _NLTagCloseParenthesis, _NLTagCloseQuote, 
+                       _NLTagConjunction, _NLTagDash, _NLTagDeterminer, _NLTagFear, 
+                       _NLTagHappiness, _NLTagIdiom, _NLTagInterjection, _NLTagLove, 
+                       _NLTagNoun, _NLTagNumber, _NLTagOpenParenthesis, _NLTagOpenQuote, 
+                       _NLTagOrganizationName, _NLTagOther, _NLTagOtherEmotion, _NLTagOtherPunctuation, 
+                       _NLTagOtherWhitespace, _NLTagOtherWord, _NLTagParagraphBreak, 
+                       _NLTagParticle, _NLTagPersonalName, _NLTagPlaceName, _NLTagPreposition, 
+                       _NLTagPronoun, _NLTagPunctuation, _NLTagSadness, _NLTagSchemeEmotionalState, 
+                       _NLTagSchemeInternalClass, _NLTagSchemeLanguage, _NLTagSchemeLemma, 
+                       _NLTagSchemeLexicalClass, _NLTagSchemeNameType, _NLTagSchemeNameTypeOrLexicalClass, 
                        _NLTagSchemeScript, _NLTagSchemeSentimentScore, _NLTagSchemeTokenType, 
-                       _NLTagSchemeWordEmbedding, _NLTagSentenceTerminator, _NLTagVerb, 
-                       _NLTagWhitespace, _NLTagWord, _NLTagWordJoiner, _kNLPAlgorithmCRF, 
-                       _kNLPAlgorithmKey, _kNLPAlgorithmMaxEnt, _kNLPAlgorithmRNN, 
-                       _kNLPAlgorithmTransfer, _kNLPEmbeddingDataKey, _kNLPEmbeddingModelKey, 
-                       _kNLPEmbeddingTypeCustom, _kNLPEmbeddingTypeDynamic, _kNLPEmbeddingTypeKey, 
-                       _kNLPEmbeddingTypeStatic, _kNLPEmbeddingURLKey, _kNLPInputFeatureNameKey, 
-                       _kNLPLabelArrayKey, _kNLPLabelKey, _kNLPLanguageKey, _kNLPOutputFeatureNameKey, 
-                       _kNLPRevisionKey, _kNLPStringKey, _kNLPTokenArrayKey, _kNLPTokenRangeLengthArrayKey, 
-                       _kNLPTokenRangeLocationArrayKey, _kNLPUseCRFKey, _kNLPUseMaxEntKey, 
-                       _kNLPUseNeuralNetworkKey, _kNLPUseRNNKey, _kNLPUseTransferKey ]
-    objc-classes:    [ NLClassifierModel, NLClassifierModelDataInstance, NLDataInstance, 
-                       NLDataProvider, NLDataSet, NLEmbedding, NLGazetteer, NLLanguageModel, 
-                       NLLanguageRecognizer, NLLexicon, NLLexiconCursor, NLLexiconEntry, 
-                       NLModel, NLModelConfiguration, NLModelTrainer, NLSequenceModel, 
-                       NLSequenceModelDataInstance, NLTagger, NLTokenizer ]
+                       _NLTagSchemeWordEmbedding, _NLTagSentenceTerminator, _NLTagSurprise, 
+                       _NLTagVerb, _NLTagWhitespace, _NLTagWord, _NLTagWordJoiner, 
+                       _kNLPAlgorithmCRF, _kNLPAlgorithmKey, _kNLPAlgorithmMaxEnt, 
+                       _kNLPAlgorithmRNN, _kNLPAlgorithmTransfer, _kNLPEmbeddingDataKey, 
+                       _kNLPEmbeddingModelKey, _kNLPEmbeddingTypeCustom, _kNLPEmbeddingTypeDynamic, 
+                       _kNLPEmbeddingTypeKey, _kNLPEmbeddingTypeStatic, _kNLPEmbeddingURLKey, 
+                       _kNLPInputFeatureNameKey, _kNLPLabelArrayKey, _kNLPLabelHypothesesArrayKey, 
+                       _kNLPLabelKey, _kNLPLanguageKey, _kNLPMaximumIterationsKey, 
+                       _kNLPOutputFeatureNameKey, _kNLPRevisionKey, _kNLPStringKey, 
+                       _kNLPTokenArrayKey, _kNLPTokenRangeLengthArrayKey, _kNLPTokenRangeLocationArrayKey, 
+                       _kNLPUseCRFKey, _kNLPUseMaxEntKey, _kNLPUseNeuralNetworkKey, 
+                       _kNLPUseRNNKey, _kNLPUseTransferKey ]
+    objc-classes:    [ NLCFROLanguageRecognizer, NLClassifierModel, NLClassifierModelDataInstance, 
+                       NLDataInstance, NLDataProvider, NLDataSet, NLEmbedding, NLGazetteer, 
+                       NLLanguageModel, NLLanguageRecognizer, NLLexicon, NLLexiconCursor, 
+                       NLLexiconEntry, NLModel, NLModelConfiguration, NLModelTrainer, 
+                       NLSequenceModel, NLSequenceModelDataInstance, NLTagger, NLTokenizer ]
 ...

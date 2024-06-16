@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           94CA801C-BB3A-3732-A0A7-A613EC1632FC
+  - target:          arm64-ios-simulator
+    value:           73392CF1-7A1C-35FA-A37D-0AA97FCCA3D9
+install-name:    '/System/Library/PrivateFrameworks/SocialServices.framework/SocialServices'
+current-version: 87
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ SLGoogleAuthController ]
+...

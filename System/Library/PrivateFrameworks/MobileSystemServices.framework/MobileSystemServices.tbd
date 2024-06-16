@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           31F94AA6-41A3-3F65-9482-D2054BE05D4A
+  - target:          x86_64-ios-simulator
+    value:           A8978163-3A6D-3CF3-97C0-060971969301
+  - target:          arm64-ios-simulator
+    value:           C606A405-A4DA-3788-8685-73BC78E6A038
+install-name:    '/System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _levelNames ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MOCreateCFTypeFromSerializedBuffer, _MOCreateSerializedData, 
+                       _MOLogClose, _MOLogEnableDiskLogging, _MOLogGetLogLevel, _MOLogOpen, 
+                       _MOLogSetLogLevel, _MOLogWrite, _MOLogWriteV, _MOXPCTransportClose, 
+                       _MOXPCTransportOpen, _MOXPCTransportReceiveMessage, _MOXPCTransportResume, 
+                       _MOXPCTransportRunTransactionalTask, _MOXPCTransportSendMessage, 
+                       _MOXPCTransportSendMessageOnConnection, _MOXPCTransportSetConnectionAuthHandler, 
+                       _MOXPCTransportSetMessageHandler ]
+...

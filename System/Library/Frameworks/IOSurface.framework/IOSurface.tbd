@@ -1,35 +1,42 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 7902AB6B-D7D9-33D2-8917-22B81F9AE257' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           FBFD54F9-0C55-35ED-86A6-FDE8329D581F
+  - target:          arm64-ios-simulator
+    value:           118F329F-D382-3106-9612-9D64C98D5043
 install-name:    '/System/Library/Frameworks/IOSurface.framework/IOSurface'
-exports:         
-  - archs:           [ x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]
     objc-ivars:      [ IOSurfaceSharedEvent._eventPort, IOSurfaceSharedEvent._globalTraceObjectID, 
                        IOSurfaceSharedEventListener._dispatchQueue, IOSurfaceSharedEventListener._notificationPort ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _IOSurfaceAlignProperty, _IOSurfaceAllowsPixelSizeCasting, 
                        _IOSurfaceBindAccel, _IOSurfaceBindAccelOnPlane, _IOSurfaceCopyAllValues, 
                        _IOSurfaceCopyDataValueBytes, _IOSurfaceCopyValue, _IOSurfaceCreate, 
-                       _IOSurfaceCreateMachPort, _IOSurfaceCreateXPCObject, _IOSurfaceDecrementUseCount, 
-                       _IOSurfaceFlushProcessorCaches, _IOSurfaceGetAllocSize, _IOSurfaceGetBaseAddress, 
-                       _IOSurfaceGetBaseAddressOfPlane, _IOSurfaceGetBitDepthOfComponentOfPlane, 
-                       _IOSurfaceGetBitOffsetOfComponentOfPlane, _IOSurfaceGetBulkAttachments, 
-                       _IOSurfaceGetBytesPerElement, _IOSurfaceGetBytesPerElementOfPlane, 
-                       _IOSurfaceGetBytesPerRow, _IOSurfaceGetBytesPerRowOfPlane, 
-                       _IOSurfaceGetCacheMode, _IOSurfaceGetDetachModeCode, _IOSurfaceGetElementHeight, 
-                       _IOSurfaceGetElementHeightOfPlane, _IOSurfaceGetElementWidth, 
-                       _IOSurfaceGetElementWidthOfPlane, _IOSurfaceGetHeight, _IOSurfaceGetHeightOfPlane, 
-                       _IOSurfaceGetID, _IOSurfaceGetIndexedTimestamp, _IOSurfaceGetNameOfComponentOfPlane, 
+                       _IOSurfaceCreateMachPort, _IOSurfaceCreateMachPortWithOptions, 
+                       _IOSurfaceCreateXPCObject, _IOSurfaceDecrementUseCount, _IOSurfaceFlushProcessorCaches, 
+                       _IOSurfaceGetAllocSize, _IOSurfaceGetBaseAddress, _IOSurfaceGetBaseAddressOfPlane, 
+                       _IOSurfaceGetBitDepthOfComponentOfPlane, _IOSurfaceGetBitOffsetOfComponentOfPlane, 
+                       _IOSurfaceGetBulkAttachments, _IOSurfaceGetBytesPerElement, 
+                       _IOSurfaceGetBytesPerElementOfPlane, _IOSurfaceGetBytesPerRow, 
+                       _IOSurfaceGetBytesPerRowOfPlane, _IOSurfaceGetCacheMode, _IOSurfaceGetDetachModeCode, 
+                       _IOSurfaceGetElementHeight, _IOSurfaceGetElementHeightOfPlane, 
+                       _IOSurfaceGetElementWidth, _IOSurfaceGetElementWidthOfPlane, 
+                       _IOSurfaceGetHeight, _IOSurfaceGetHeightOfPlane, _IOSurfaceGetID, 
+                       _IOSurfaceGetIndexedTimestamp, _IOSurfaceGetNameOfComponentOfPlane, 
                        _IOSurfaceGetNumberOfComponentsOfPlane, _IOSurfaceGetOffsetOfPlane, 
                        _IOSurfaceGetPixelFormat, _IOSurfaceGetPlaneCount, _IOSurfaceGetPropertyAlignment, 
                        _IOSurfaceGetPropertyMaximum, _IOSurfaceGetProtectionOptions, 
                        _IOSurfaceGetRangeOfComponentOfPlane, _IOSurfaceGetRegistryID, 
                        _IOSurfaceGetSeed, _IOSurfaceGetSeedOfPlane, _IOSurfaceGetSizeOfPlane, 
-                       _IOSurfaceGetSubsampling, _IOSurfaceGetTileFormat, _IOSurfaceGetTypeID, 
-                       _IOSurfaceGetTypeOfComponentOfPlane, _IOSurfaceGetUseCount, 
-                       _IOSurfaceGetWidth, _IOSurfaceGetWidthOfPlane, _IOSurfaceGetYCbCrMatrix, 
-                       _IOSurfaceIncrementUseCount, _IOSurfaceInitDetachModeCode, 
+                       _IOSurfaceGetSubsampling, _IOSurfaceGetTileFormat, _IOSurfaceGetTraceID, 
+                       _IOSurfaceGetTypeID, _IOSurfaceGetTypeOfComponentOfPlane, 
+                       _IOSurfaceGetUseCount, _IOSurfaceGetWidth, _IOSurfaceGetWidthOfPlane, 
+                       _IOSurfaceGetYCbCrMatrix, _IOSurfaceIncrementUseCount, _IOSurfaceInitDetachModeCode, 
                        _IOSurfaceIsDisplayable, _IOSurfaceIsInUse, _IOSurfaceIsSysMemOnly, 
                        _IOSurfaceIsTiled, _IOSurfaceLock, _IOSurfaceLockPlane, _IOSurfaceLog, 
                        _IOSurfaceLookup, _IOSurfaceLookupFromMachPort, _IOSurfaceLookupFromXPCObject, 
@@ -68,7 +75,9 @@ exports:
                        _kIOSurfaceChromaSubsampling_422, _kIOSurfaceClassName, _kIOSurfaceCleanAperture, 
                        _kIOSurfaceCleanApertureHeight, _kIOSurfaceCleanApertureHorizontalOffset, 
                        _kIOSurfaceCleanApertureVerticalOffset, _kIOSurfaceCleanApertureWidth, 
-                       _kIOSurfaceClientAddress, _kIOSurfaceColorPrimaries, _kIOSurfaceColorPrimaries_DCI_P3, 
+                       _kIOSurfaceClientAddress, _kIOSurfaceClientAddressOffset, 
+                       _kIOSurfaceClientAddressRanges, _kIOSurfaceClientDirection, 
+                       _kIOSurfaceColorPrimaries, _kIOSurfaceColorPrimaries_DCI_P3, 
                        _kIOSurfaceColorPrimaries_EBU_3213, _kIOSurfaceColorPrimaries_ITU_R_2020, 
                        _kIOSurfaceColorPrimaries_ITU_R_709_2, _kIOSurfaceColorPrimaries_JEDEC_P22, 
                        _kIOSurfaceColorPrimaries_P3_D65, _kIOSurfaceColorPrimaries_SMPTE_C, 
@@ -77,11 +86,15 @@ exports:
                        _kIOSurfaceFieldCount, _kIOSurfaceFieldDetail, _kIOSurfaceFieldDetail_SpatialFirstLineEarly, 
                        _kIOSurfaceFieldDetail_SpatialFirstLineLate, _kIOSurfaceFieldDetail_TemporalBottomFirst, 
                        _kIOSurfaceFieldDetail_TemporalTopFirst, _kIOSurfaceGammaLevel, 
+                       _kIOSurfaceHDRImageStatisticsInfoFiltered, _kIOSurfaceHDRImageStatisticsInfoRaw, 
+                       _kIOSurfaceHDRImageStatisticsInfoTransferFunction, _kIOSurfaceHDRImageStatisticsInfo_Average, 
+                       _kIOSurfaceHDRImageStatisticsInfo_Maximum, _kIOSurfaceHDRImageStatisticsInfo_Minimum, 
                        _kIOSurfaceHeight, _kIOSurfaceICCProfile, _kIOSurfaceIsDisplayable, 
-                       _kIOSurfaceIsGlobal, _kIOSurfaceMapCacheAttribute, _kIOSurfaceName, 
-                       _kIOSurfaceNonPurgeable, _kIOSurfaceOffset, _kIOSurfacePixelAspectRatio, 
-                       _kIOSurfacePixelAspectRatioHorizontalSpacing, _kIOSurfacePixelAspectRatioVerticalSpacing, 
-                       _kIOSurfacePixelCastingAllowed, _kIOSurfacePixelFormat, _kIOSurfacePixelSizeCastingAllowed, 
+                       _kIOSurfaceIsGlobal, _kIOSurfaceIsPrivate, _kIOSurfaceMapCacheAttribute, 
+                       _kIOSurfaceName, _kIOSurfaceNonPurgeable, _kIOSurfaceOffset, 
+                       _kIOSurfacePixelAspectRatio, _kIOSurfacePixelAspectRatioHorizontalSpacing, 
+                       _kIOSurfacePixelAspectRatioVerticalSpacing, _kIOSurfacePixelCastingAllowed, 
+                       _kIOSurfacePixelFormat, _kIOSurfacePixelSizeCastingAllowed, 
                        _kIOSurfacePlaneBase, _kIOSurfacePlaneBitsPerElement, _kIOSurfacePlaneBytesPerElement, 
                        _kIOSurfacePlaneBytesPerRow, _kIOSurfacePlaneComponentBitDepths, 
                        _kIOSurfacePlaneComponentBitOffsets, _kIOSurfacePlaneComponentNames, 

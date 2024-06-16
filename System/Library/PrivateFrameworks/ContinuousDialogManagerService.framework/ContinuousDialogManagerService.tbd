@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2EA54F55-382E-3218-BD63-9CE0DE2B4E22
+  - target:          arm64-ios-simulator
+    value:           13960745-07B0-31FA-A331-223DFA3EAF8C
+install-name:    '/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/ContinuousDialogManagerService'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CDMAssetTypeEmbeddedNL, _CDMDefaultsDomain, _CDMIsReadyForLocale, 
+                       _CDMLogContext, _CDMLogInitIfNeeded, _CDMLoggingCategory, 
+                       _CDMLoggingSubsystem, _CDMSetupXPCClientErrorCodeXPCError, 
+                       _CDMSetupXPCClientErrorDomain, _CDMXPCClientErrorCodeXPCError, 
+                       _CDMXPCClientErrorDomain, _ContinuousDialogManagerServiceVersionNumber, 
+                       _ContinuousDialogManagerServiceVersionString ]
+    objc-classes:    [ CDMSetupXPCClient, CDMXPCClient ]
+...

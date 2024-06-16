@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EBDD16E8-43D4-3FF1-B36A-483508634B36
+  - target:          arm64-ios-simulator
+    value:           47435640-D4E8-3BB7-9A24-ABDF6D580BD0
+install-name:    '/System/Library/PrivateFrameworks/SiriObservation.framework/SiriObservation'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SOAlarmKey, _SOAlarmRepeatScheduleGetFromNames, _SOAlarmRepeatScheduleGetNames, 
+                       _SOAlarmRepeatScheduleValidate, _SOAlarmsSnapshotKey, _SOErrorDomain, 
+                       _SOTimerKey, _SOTimerStateGetFromName, _SOTimerStateGetIsValid, 
+                       _SOTimerStateGetIsValidAndSpecified, _SOTimerStateGetName, 
+                       _SOTimerTypeGetFromName, _SOTimerTypeGetIsValid, _SOTimerTypeGetIsValidAndSpecified, 
+                       _SOTimerTypeGetName, _SOTimersSnapshotKey, _SiriObservationVersionNumber, 
+                       _SiriObservationVersionString ]
+    objc-classes:    [ SOAlarm, SOAlarmsPublisher, SOAlarmsSnapshot, SOPublisherCache, 
+                       SOTimer, SOTimersPublisher, SOTimersSnapshot, _SOAlarmMutation, 
+                       _SOAlarmsSnapshotMutation, _SOTimerMutation, _SOTimersSnapshotMutation ]
+...

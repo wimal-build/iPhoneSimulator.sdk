@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C73F81FE-7C62-3FFB-AAA3-915196A7ABCC
+  - target:          arm64-ios-simulator
+    value:           9E5E3956-7CC3-32DE-A77B-FF62AB77E5AC
+install-name:    '/System/Library/PrivateFrameworks/AppSSOCore.framework/AppSSOCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SOAuthorizationOptionCoreNoUserInterface, _SOErrorDomain, 
+                       _SOErrorSubcodeKey, _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ SOAuthorizationCore, SOAuthorizationCredentialCore, SOAuthorizationHintsCore, 
+                       SOAuthorizationParametersCore, SOAuthorizationRequestParametersCore, 
+                       SOConfiguration, SOConfigurationClient, SOConfigurationVersion, 
+                       SOErrorHelper, SOFullProfile, SOInternalProtocols, SOServiceConnection, 
+                       SOUtils ]
+...

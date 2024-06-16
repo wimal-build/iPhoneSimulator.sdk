@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           70C6D6B2-6745-36B8-B776-EB740CE87C36
+  - target:          arm64-ios-simulator
+    value:           3224ADF1-8E51-3152-ACEB-82180C61FF33
+install-name:    '/System/Library/PrivateFrameworks/RTTUtilities.framework/RTTUtilities'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AXTTYIsTextHeldForRTTCall, _AXTTYMessageKeyCallID, _AXTTYMessageKeyContactID, 
+                       _AXTTYMessageKeyContactPathSearchAction, _AXTTYMessageKeyContactSearchAction, 
+                       _AXTTYMessageKeyConversation, _AXTTYMessageKeyConversationUpdates, 
+                       _AXTTYMessageKeyDeleteAction, _AXTTYMessageKeyIsVisible, _AXTTYMessageKeyMediaActions, 
+                       _AXTTYMessageKeyReadAction, _AXTTYMessageKeyRemoteConversationUpdates, 
+                       _AXTTYMessageKeyResult, _AXTTYMessageKeySenderType, _AXTTYMessageKeyServerSettingsUpdateAction, 
+                       _AXTTYMessageKeyServiceMessageUpdates, _AXTTYMessageKeySetVisibleServiceUpdate, 
+                       _AXTTYMessageKeySettingsKey, _AXTTYMessageKeyUUID, _AXTTYMessageKeyValue, 
+                       _AXTTYMessageKeyWriteAction, _AXTTYPreferredTransportMethodChangedNotification, 
+                       _AXTTYTextStreamToken, _RTTGenerateUserNotificationForContact, 
+                       _RTTRemoveUserNotifications, _RTTRequestNotificationAuthorization, 
+                       _RTTServiceUpdateOptionsKeyContactName, _RTTServiceUpdateTypeDowngrade, 
+                       _RTTServiceUpdateTypeEnded, _RTTServiceUpdateTypeMuted, _RTTServiceUpdateTypeOnHold, 
+                       _RTTServiceUpdateTypeRemoteInterrupt, _RTTServiceUpdateTypeUnmuted, 
+                       _RTTSetDownlinkMute, _RTTUtilitiesVersionNumber, _RTTUtilitiesVersionString, 
+                       _accessibilityRTTUtilitiesBundle, _kAXSRTTSettingsVersionPreference, 
+                       _kAXSTTYHardwareEnabledPreference, _kAXSTTYIncomingCallsTTYPreference, 
+                       _kAXSTTYPreferredRelayNumberPreference, _kAXSTTYShouldBeRealtimePreference, 
+                       _kAXSTTYSoftwareEnabledPreference, _ttyLocString, _ttyLocStringAndLocale ]
+    objc-classes:    [ AXRTTSettingsListenerHelper, AXTTYSimulatorSubscriptionContext, 
+                       RTTCall, RTTController, RTTConversation, RTTDatabaseManager, 
+                       RTTDictionaryManager, RTTNanoSettings, RTTRemoteCall, RTTServer, 
+                       RTTServiceUpdate, RTTSettings, RTTTelephonyUtilities, RTTUtterance, 
+                       TTYContactList, TTYHistory ]
+...

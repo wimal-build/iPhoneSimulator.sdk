@@ -1,0 +1,66 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           9D0CE68E-87B9-3C49-B97B-FB3117B283B0
+  - target:          x86_64-ios-simulator
+    value:           678D52D7-8867-3643-BB49-124E11698C66
+  - target:          arm64-ios-simulator
+    value:           C910E128-C7F4-32AC-8000-2BE723868479
+install-name:    '/System/Library/PrivateFrameworks/WebInspector.framework/WebInspector'
+current-version: 610.1.28
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ RWIProtocolCSSNamedFlow, RWIProtocolCSSRegion ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    symbols:         [ __ZN9Inspector17toJSONDoubleArrayEP7NSArray, __ZN9Inspector17toJSONObjectArrayEP7NSArray, 
+                       __ZN9Inspector17toJSONStringArrayEP7NSArray, __ZN9Inspector17toObjCStringArrayEOKN3WTF6RefPtrINS0_8JSONImpl5ArrayENS0_13DumbPtrTraitsIS3_EEEE, 
+                       __ZN9Inspector17toObjCStringArrayEPKN3WTF8JSONImpl5ArrayE, 
+                       __ZN9Inspector17toObjCStringArrayERKN3WTF8JSONImpl5ArrayE, 
+                       __ZN9Inspector18toJSONIntegerArrayEP7NSArray, __ZN9Inspector18toObjCIntegerArrayEOKN3WTF6RefPtrINS0_8JSONImpl5ArrayENS0_13DumbPtrTraitsIS3_EEEE, 
+                       __ZN9Inspector18toObjCIntegerArrayEPKN3WTF8JSONImpl5ArrayE, 
+                       __ZN9Inspector18toObjCIntegerArrayERKN3WTF8JSONImpl5ArrayE, 
+                       __ZN9Inspector22toJSONStringArrayArrayEP7NSArray ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RWIAutomationAvailabilityFromString, _RWINSStringFromAutomationAvailability, 
+                       _RWIProtocolInspectorFrontendConnectedNotification, _RWIProtocolInspectorFrontendDisconnectedNotification ]
+    objc-classes:    [ RWIDriverConfiguration, RWIDriverState, RWIProtocolCSSComputedStyleProperty, 
+                       RWIProtocolCSSDomainEventDispatcher, RWIProtocolCSSGrouping, 
+                       RWIProtocolCSSInheritedStyleEntry, RWIProtocolCSSMedia, RWIProtocolCSSProperty, 
+                       RWIProtocolCSSPropertyInfo, RWIProtocolCSSPseudoIdMatches, 
+                       RWIProtocolCSSRule, RWIProtocolCSSRuleId, RWIProtocolCSSRuleMatch, 
+                       RWIProtocolCSSSelector, RWIProtocolCSSSelectorList, RWIProtocolCSSShorthandEntry, 
+                       RWIProtocolCSSSourceRange, RWIProtocolCSSStyle, RWIProtocolCSSStyleAttribute, 
+                       RWIProtocolCSSStyleId, RWIProtocolCSSStyleSheetBody, RWIProtocolCSSStyleSheetHeader, 
+                       RWIProtocolConfiguration, RWIProtocolConsoleCallFrame, RWIProtocolConsoleChannel, 
+                       RWIProtocolConsoleDomainEventDispatcher, RWIProtocolConsoleMessage, 
+                       RWIProtocolConsoleStackTrace, RWIProtocolDOMAccessibilityProperties, 
+                       RWIProtocolDOMDataBinding, RWIProtocolDOMDomainEventDispatcher, 
+                       RWIProtocolDOMEventListener, RWIProtocolDOMHighlightConfig, 
+                       RWIProtocolDOMNode, RWIProtocolDOMRGBAColor, RWIProtocolDOMStorageDomainEventDispatcher, 
+                       RWIProtocolDOMStorageStorageId, RWIProtocolDebuggerAssertPauseReason, 
+                       RWIProtocolDebuggerBreakpointAction, RWIProtocolDebuggerBreakpointOptions, 
+                       RWIProtocolDebuggerBreakpointPauseReason, RWIProtocolDebuggerCSPViolationPauseReason, 
+                       RWIProtocolDebuggerCallFrame, RWIProtocolDebuggerFunctionDetails, 
+                       RWIProtocolDebuggerLocation, RWIProtocolDebuggerProbeSample, 
+                       RWIProtocolDebuggerScope, RWIProtocolGenericTypesSearchMatch, 
+                       RWIProtocolInspector, RWIProtocolJSONObject, RWIProtocolNetworkCachedResource, 
+                       RWIProtocolNetworkDomainEventDispatcher, RWIProtocolNetworkHeaders, 
+                       RWIProtocolNetworkInitiator, RWIProtocolNetworkMetrics, RWIProtocolNetworkRequest, 
+                       RWIProtocolNetworkResourceTiming, RWIProtocolNetworkResponse, 
+                       RWIProtocolNetworkWebSocketFrame, RWIProtocolNetworkWebSocketRequest, 
+                       RWIProtocolNetworkWebSocketResponse, RWIProtocolPageCookie, 
+                       RWIProtocolPageDomainEventDispatcher, RWIProtocolPageFrame, 
+                       RWIProtocolPageFrameResource, RWIProtocolPageFrameResourceTree, 
+                       RWIProtocolPageSearchResult, RWIProtocolRuntimeBasicBlock, 
+                       RWIProtocolRuntimeCallArgument, RWIProtocolRuntimeCollectionEntry, 
+                       RWIProtocolRuntimeEntryPreview, RWIProtocolRuntimeErrorRange, 
+                       RWIProtocolRuntimeExecutionContextDescription, RWIProtocolRuntimeInternalPropertyDescriptor, 
+                       RWIProtocolRuntimeObjectPreview, RWIProtocolRuntimePropertyDescriptor, 
+                       RWIProtocolRuntimePropertyPreview, RWIProtocolRuntimeRemoteObject, 
+                       RWIProtocolRuntimeStructureDescription, RWIProtocolRuntimeTypeDescription, 
+                       RWIProtocolRuntimeTypeLocation, RWIProtocolRuntimeTypeSet, 
+                       RWIProtocolSecurity, RWIProtocolSecurityCertificate, RWIProtocolSecurityConnection, 
+                       RWIRelay, RWIRelayDelegateIOS ]
+...

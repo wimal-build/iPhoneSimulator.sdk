@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0C31951E-1A0E-3120-B4F7-D9C20BEE9696', 'x86_64: EA65CE09-07A8-3A0D-9437-CE35D3F87266' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0C31951E-1A0E-3120-B4F7-D9C20BEE9696
+  - target:          x86_64-ios-simulator
+    value:           D4B2F51D-F181-349D-9D5D-2BAC0C57CF2E
+  - target:          arm64-ios-simulator
+    value:           9F42763C-D59F-35F4-9162-0A36DE05DBF1
 install-name:    '/usr/lib/swift/libswiftCoreAudio.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 1.1
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftCoreAudio.dylib', 
                        '$ld$install_name$os10.1$@rpath/libswiftCoreAudio.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftCoreAudio.dylib', 

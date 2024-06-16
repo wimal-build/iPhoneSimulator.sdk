@@ -1,12 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 271D424C-8FB3-3257-B673-2B8C464C1670', 'x86_64: 472C8B35-4450-3E2F-9639-4A4471811F71' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7B08755D-542C-3EE9-A3B2-21335320D189
+  - target:          x86_64-ios-simulator
+    value:           ECC11068-3760-34F5-9F71-212C93F8C45E
+  - target:          arm64-ios-simulator
+    value:           59DAE5FE-0A51-357E-A1EF-D40F0A191229
 install-name:    '/System/Library/Frameworks/PushKit.framework/PushKit'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _PushKitVersionNumber, _PushKitVersionString ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _PKPushIncomingCallReportedNotification, _PKPushTypeComplication, 
                        _PKPushTypeFileProvider, _PKPushTypeUserNotifications, _PKPushTypeVoIP ]
     objc-classes:    [ PKPushCredentials, PKPushPayload, PKPushRegistry, PKUserNotificationsRemoteNotificationServiceConnection ]

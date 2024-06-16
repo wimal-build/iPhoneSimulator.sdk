@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           1809D2EB-FF83-3FDA-93A0-B3E8934A68CF
+  - target:          arm64-ios-simulator
+    value:           0DCA13C9-B93D-31D4-9712-AE98E0ED0C5D
+install-name:    '/System/Library/PrivateFrameworks/MessageProtection.framework/MessageProtection'
+current-version: 224.0.3
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NGMEncryptedAttributeKTGossipData, _SecExposeStream, _SecMPComputePaddingForStorage, 
+                       _SecMPCopyProtectedMsgHash, _SecMPFIAppendSerialization, _SecMPFIAppendSignature, 
+                       _SecMPFICopyProtClass, _SecMPFIPurgeAllFromKeychain, _SecMPFIPurgeFromKeychain, 
+                       _SecMPFIUpdateProtClass, _SecMPFullIdentityCreate, _SecMPFullIdentityCreateFromData, 
+                       _SecMPFullIdentityCreateFromRefs, _SecMPFullIdentityCreateOTRSessionWith, 
+                       _SecMPFullIdentityCreateOTRSessionWithFlags, _SecMPFullIdentityCreateWithAccess, 
+                       _SecMPFullIdentityCreateWithAccessProtClass, _SecMPFullIdentityCreateWithProtClass, 
+                       _SecMPPIAppendSerialization, _SecMPPublicIdentityCopyFromPrivate, 
+                       _SecMPPublicIdentityCreateFromData, _SecMPSignAndProtectMessage, 
+                       _SecMPVerifyAndExposeMessage, _SecMWCopyUnwrappedSessionSeed, 
+                       _SecMWCopyWrappedSessionSeedForIdentities, _SecMWCreateEphemeralDeviceIdentity, 
+                       _SecMWCreateSessionSalt, _SecMWCreateSessionSeed, _SecProtectStream ]
+    objc-classes:    [ NGMFullDeviceIdentity, NGMKeyRollingTicket, NGMMessageHasher, 
+                       NGMProtocolVersion, NGMPublicDeviceIdentity, NGMReplayManager, 
+                       NGMRollingBitmaskBuffer, NGMTimeBasedEvaluations, SecMessageLegacyFullIdentity, 
+                       SecMessageLegacyPublicIdentity ]
+...

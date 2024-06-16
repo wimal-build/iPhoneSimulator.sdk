@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           3D7B79DC-E625-3418-AE53-95D92EB0BEF5
+  - target:          x86_64-ios-simulator
+    value:           E7066804-6F50-3B59-A620-F54CEFB90141
+  - target:          arm64-ios-simulator
+    value:           ED96AD35-EB5E-32FC-8251-A35B8BCE0383
+install-name:    '/System/Library/PrivateFrameworks/EmojiKit.framework/EmojiKit'
+current-version: 23
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ EMKLayoutManager, EMKTextView ]
+...

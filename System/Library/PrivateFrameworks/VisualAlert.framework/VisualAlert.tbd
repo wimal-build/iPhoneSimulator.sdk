@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           2130AB97-FAC2-395A-84C7-68CF5F2A74B5
+  - target:          x86_64-ios-simulator
+    value:           59578F87-D5ED-39EF-839B-8D049B9AC942
+  - target:          arm64-ios-simulator
+    value:           0878E2C3-4E49-37B3-87B3-3D2C894D72C7
+install-name:    '/System/Library/PrivateFrameworks/VisualAlert.framework/VisualAlert'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ AXNotificationHandler ]
+    objc-ivars:      [ AXNotificationHandler._dispatcher, AXNotificationHandler._notificationName, 
+                       AXNotificationHandler._observerIdentifier, AXNotificationHandler._target, 
+                       AXNotificationHandler._valid ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ VISAXNotificationHandler._dispatcher, VISAXNotificationHandler._notificationName, 
+                       VISAXNotificationHandler._observerIdentifier, VISAXNotificationHandler._target, 
+                       VISAXNotificationHandler._valid ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ AXAutoForwardingLocalNotificationHandler, AXDistributedNotificationHandler, 
+                       AXLocalNotificationHandler, AXTelephonyNotificationHandler, 
+                       AXVisualAlertManager, VISAXNotificationHandler ]
+    objc-ivars:      [ AXAutoForwardingLocalNotificationHandler._possibleHandlers, 
+                       AXAutoForwardingLocalNotificationHandler._possibleHandlersCount, 
+                       AXLocalNotificationHandler._opaqueObserver ]
+...

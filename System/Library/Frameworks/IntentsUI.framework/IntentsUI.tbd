@@ -1,19 +1,25 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ADF9743D-D79A-39E8-80F1-2B867D8B6DF5', 'x86_64: AD9BEF7F-E579-3851-9625-5EF05272D38D' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           B1063DBA-B32F-3A50-807A-81060F5343DE
+  - target:          x86_64-ios-simulator
+    value:           EE1FB372-7E12-33BA-A5EE-D456CD38E4EA
+  - target:          arm64-ios-simulator
+    value:           7D8F7043-8F7B-3CDD-B212-C34139E87103
 install-name:    '/System/Library/Frameworks/IntentsUI.framework/IntentsUI'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _INUIRemoteViewControllerErrorDomain, _INUIVoiceShortcutExtensionItemBundleURLKey, 
                        _INUIVoiceShortcutExtensionItemSandboxExtensionDataKey, _IntentsUIVersionNumber, 
                        _IntentsUIVersionString, __INUIRemoteViewControllerErrorDomain, 
                        __INUIUtilitiesBestFittingSizeForSizeBySystemVersionDictionary ]
     objc-classes:    [ INUIAddVoiceShortcutButton, INUIAddVoiceShortcutViewController, 
-                       INUIAppIntentDeliverer, INUIEditVoiceShortcutViewController, 
-                       INUIExtensionRequestInfo, INUIExtensionViewControllerConfiguration, 
-                       INUIImageLoader, INUIImageServiceConnection, INUIImageSizeProvider, 
-                       INUIInterfaceSection, INUIPortableImageLoaderHelper, INUIRemoteViewController, 
-                       INUISearchFoundationImageAdapter, INUIVoiceShortcutXPCInterface, 
-                       _INUIExtensionContextState ]
+                       INUIAppIntentDeliverer, INUIAppIntentForwardingActionExecutor, 
+                       INUIEditVoiceShortcutViewController, INUIExtensionRequestInfo, 
+                       INUIExtensionViewControllerConfiguration, INUIImageLoader, 
+                       INUIImageServiceConnection, INUIImageSizeProvider, INUIInterfaceSection, 
+                       INUIPortableImageLoaderHelper, INUIRemoteViewController, INUISearchFoundationImageAdapter, 
+                       INUIVoiceShortcutXPCInterface, _INUIExtensionContextState ]
 ...

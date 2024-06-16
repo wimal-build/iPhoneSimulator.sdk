@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           7D88A796-CF9B-3A44-8FEC-72403E94E62B
+  - target:          arm64-ios-simulator
+    value:           61A99096-036E-3665-9534-6A2C04C948AF
+install-name:    '/System/Library/PrivateFrameworks/SettingsCellular.framework/SettingsCellular'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CSLogForCategory, _PSPerAppNetworkDataAccessPolicyChangedNotification, 
+                       _PSSimIsMissing, _PSSimStatusChangedToReadyNotification, _kCellularSettingsLogSubsystem, 
+                       _kPSWirelessDataUsageCacheRefreshedNotification, _kPSWirelessDataUsageChangedNotification, 
+                       _kPSWirelessDataUsageOtherDevicesKey ]
+    objc-classes:    [ Logger, PSAppCellularUsageSpecifier, PSAppDataUsagePolicyCache, 
+                       PSAppDataUsagePolicySwitchSpecifier, PSAppDataUsagePolicyTernaryControlSpecifier, 
+                       PSBillingPeriodSelectorSpecifier, PSCellularManagementCache, 
+                       PSDataUsageSpecifier, PSDataUsageStatisticsCache, PSSimStatusCache, 
+                       PSWatchOnlyAppCellularUsageSpecifier ]
+...

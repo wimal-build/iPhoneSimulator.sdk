@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           FDECADA0-7DAF-38A4-976E-EDDED55A5110
+  - target:          arm64-ios-simulator
+    value:           B00DD992-1172-303E-B22F-203B5532FEBC
+install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/SimpleKeyExchange.framework/SimpleKeyExchange'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _SKEState_CopyBlob, _SKEState_CopyBlobSync, _SKEState_CopySecretKey, 
+                       _SKEState_CopySecretKeySync, _SKEState_Create, _SKEState_Destroy, 
+                       _SKEState_Release, _SKEState_SetBlob, _SecKeyExchangeAbortSession, 
+                       _SecKeyExchangeCopyPeerCert, _SecKeyExchangeCopyPeerName, 
+                       _SecKeyExchangeCopySharedSecret, _SecKeyExchangeGetPeerAbortReason, 
+                       _SecKeyExchangeGetPeerCertStatus, _SecKeyExchangeGetPeerSecTrust, 
+                       _SecKeyExchangeNegotiationStatus, _SecKeyExchangeNodeCreateAsInitiator, 
+                       _SecKeyExchangeNodeCreateAsResponder, _SecKeyExchangeNodeRelease, 
+                       _SecKeyExchangeUpdate ]
+...

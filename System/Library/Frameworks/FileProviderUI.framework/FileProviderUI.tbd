@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: BEB17028-CDAC-3E2E-A9C7-CFF2FF8178D0' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F5791E0C-DABE-3FE2-AA77-5AC762428353
+  - target:          arm64-ios-simulator
+    value:           1FA9361E-F1FC-3603-8DCF-F481C3A60211
 install-name:    '/System/Library/Frameworks/FileProviderUI.framework/FileProviderUI'
-current-version: 29
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 35
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _FPUIActionIdentifierAuthenticate, _FPUIActionViewControllerErrorDomain, 
                        _FPUIActionViewControllerNavigationBarDoneButtonIdentifier, 
                        _FPUIActionViewControllerNavigationBarIdentifier, _FPUIAuthenticationProviderDomainIdentifier, 

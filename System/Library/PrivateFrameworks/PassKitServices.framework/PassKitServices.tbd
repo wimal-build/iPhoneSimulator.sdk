@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F91E8535-AE2F-3341-AB8C-2A464F6AABF5
+  - target:          arm64-ios-simulator
+    value:           9387893F-29E7-3D13-B428-BBCCB3B756AC
+install-name:    '/System/Library/PrivateFrameworks/PassKitServices.framework/PassKitServices'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ PKServicePaymentTransactionImageGenerator ]
+...

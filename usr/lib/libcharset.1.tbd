@@ -1,13 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FD92A58D-C382-3EF3-97FC-E3C661A09F7E', 'x86_64: 051DECE5-DA98-3062-B5D7-1BD69E976C3F' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0E6FFB32-6C43-3021-BF14-1900BA8BBA9F
+  - target:          x86_64-ios-simulator
+    value:           CB86CBC2-39B1-3C61-B670-F81606DFD3CC
+  - target:          arm64-ios-simulator
+    value:           3BDEEF30-30B4-3D22-9DD2-666ABF5556A6
 install-name:    '/usr/lib/libcharset.1.dylib'
 current-version: 2
 compatibility-version: 2
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___charset_1VersionNumber, ___charset_1VersionString, _libcharset_relocate ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _libcharset_set_relocation_prefix, _locale_charset ]
 ...

@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           4E571BFD-E36C-3FBB-A0D8-C273A4E15B5A
+  - target:          x86_64-ios-simulator
+    value:           8459A798-D22D-38E3-A28F-6B47F35AA095
+  - target:          arm64-ios-simulator
+    value:           E013D4C8-14E0-3D47-9B78-3B4CBB8B5FF7
+install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _EndpointDetectorInterface_registerAUForOSXDevelopment, _PListReaderInterface_GetSerializedFloat32DataFromDict, 
+                       _PListReaderInterface_GetSerializedFloat32DataFromDict_II, 
+                       _PListReaderInterface_GetValueFromDict, _PListReaderInterface_ReadPListFromFile, 
+                       _VAD3ConfigurationInterface_DecodeFull, _VAD3ConfigurationInterface_DecodeState, 
+                       _VAD3ConfigurationInterface_DecodeStateTm, _VAD3ConfigurationInterface_DecodeStateTm_II, 
+                       _VAD3ConfigurationInterface_DecodeTiming, _VAD3ConfigurationInterface_EncodeFull, 
+                       _VAD3ConfigurationInterface_EncodeState, _VAD3ConfigurationInterface_EncodeStateTm, 
+                       _VAD3ConfigurationInterface_EncodeStateTm_II, _VAD3ConfigurationInterface_EncodeTiming, 
+                       _VAD3ConfigurationInterface_GetCategoryDimensions, _VAD3ConfigurationInterface_GetCategoryName, 
+                       _VAD3ConfigurationInterface_GetCategoryValueName, _VAD3ConfigurationInterface_GetFullCategoryDimension, 
+                       _VAD3ConfigurationInterface_GetFullInterleavedDimension, _VAD3ConfigurationInterface_GetFullTimingDimension, 
+                       _VAD3ConfigurationInterface_GetInterleavedCategoryAndTimingDimensions, 
+                       _VAD3ConfigurationInterface_GetNumCategories, _VAD3ConfigurationInterface_GetNumCategoryValues, 
+                       _VAD3ConfigurationInterface_GetTimingDimensions, _VAD3ConfigurationInterface_GetTimingModelOrder, 
+                       _VAD3ConfigurationInterface_IsInitialized ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ABHelperCreateDescriptionFromASBD, _ABHelperCreateDescriptionFromAudioUnit, 
+                       _ABHelperCreateDescriptionFromDSPGraph, _ABHelperCreateDescriptionFromDSPGraphBox, 
+                       _ABHelperIsABTestModeOn, _ABHelperWriteJSONFileFromDescription, 
+                       _DNNVAD_CreateInstance, _DNNVAD_DestroyInstance, _DNNVAD_GetSpeechProbabilityHardValue, 
+                       _DNNVAD_GetSpeechProbabilitySoftValue, _DNNVAD_Initialize, 
+                       _DNNVAD_IsInitialized, _DNNVAD_Process, _DNNVAD_Uninitialize, 
+                       _GetAudioDSPManager, _RegisterAudioUnits_Analyzer, _RegisterAudioUnits_Internal, 
+                       _RegisterAudioUnits_InternalUnsearchable, _RegisterPublicAudioUnits, 
+                       _gVoiceProcessorSPI ]
+...

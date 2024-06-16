@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           441E5400-86B3-3776-B47C-27563F40391D
+  - target:          x86_64-ios-simulator
+    value:           B132DEC6-5D11-3FBD-B225-6A930FEC4D61
+  - target:          arm64-ios-simulator
+    value:           C726613B-1F4B-3B90-B458-BA88DBBE96B6
+install-name:    '/System/Library/PrivateFrameworks/TextureIO.framework/TextureIO'
+current-version: 3.10.9
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-ivars:      [ TXRAssetCatalogFileAttributes._origin ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ TXRAssetCatalogFileAttributes._exifOrientation, TXRAssetCatalogSet._cubemap ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ TXRArrayElement, TXRAssetCatalogConfig, TXRAssetCatalogFileAttributes, 
+                       TXRAssetCatalogMipFileAttributes, TXRAssetCatalogSet, TXRDataConverter, 
+                       TXRDataScaler, TXRDefaultBufferAllocator, TXRImage, TXRImageIndependent, 
+                       TXRImageInfo, TXRMipmapLevel, TXROptions, TXRPixelFormatInfo, 
+                       TXRTexture, TXRTextureInfo ]
+    objc-ivars:      [ TXRArrayElement._faces, TXRAssetCatalogConfig._baseFileAttributes, 
+                       TXRAssetCatalogConfig._displayColorSpace, TXRAssetCatalogConfig._fileAttributesList, 
+                       TXRAssetCatalogConfig._graphicsFeatureSet, TXRAssetCatalogConfig._idiom, 
+                       TXRAssetCatalogConfig._memory, TXRAssetCatalogConfig._mipmapOption, 
+                       TXRAssetCatalogConfig._pixelFormat, TXRAssetCatalogConfig._scaleFactor, 
+                       TXRAssetCatalogConfig._texture, TXRAssetCatalogFileAttributes._colorSpace, 
+                       TXRAssetCatalogFileAttributes._fileFormat, TXRAssetCatalogMipFileAttributes._face, 
+                       TXRAssetCatalogMipFileAttributes._level, TXRAssetCatalogSet._configs, 
+                       TXRAssetCatalogSet._interpretation, TXRAssetCatalogSet._name, 
+                       TXRAssetCatalogSet._origin, TXRImage._buffer, TXRImage._bytesPerImage, 
+                       TXRImage._bytesPerRow, TXRImage._offset, TXRMipmapLevel._elements, 
+                       TXRTexture._alphaInfo, TXRTexture._bufferAllocator, TXRTexture._cubemap, 
+                       TXRTexture._dimensions, TXRTexture._mipmapLevels, TXRTexture._pixelFormat ]
+...

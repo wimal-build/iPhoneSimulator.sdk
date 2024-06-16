@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           E6EDF8C2-D46A-3490-9B77-6E65865162C0
+  - target:          x86_64-ios-simulator
+    value:           BB38F4EF-E092-317B-B172-C233CFDE5F35
+  - target:          arm64-ios-simulator
+    value:           809C4E94-F40A-367C-9613-844AAFEC1113
+install-name:    '/System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons'
+current-version: 372
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _LIGetStyleFallbackContainer, _LIUncompressedBitmapFormatID, 
+                       __LICopyIconURLsForBundleWithFiles, __LICopyImagesForIconURLs, 
+                       __LICopyImagesForIconURLsFilteringForVariant, __copyDefaultIconImages, 
+                       __copyDefaultIconURLs, __copyMessagesDefaultIconImages, __copyNanoDefaultIconImages, 
+                       _copyImagesForIconURLsFilteringForVariant, _outputVisibleImageBoundsForVariant ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    symbols:         [ __Z10x_align_tomm, __Z14x_power_of_twom, __Z21CA_CFDictionaryCreatev, 
+                       __Z21CA_CFDictionarySetIntP14__CFDictionaryPK10__CFStringi, 
+                       __Z22CA_CFDictionarySetBoolP14__CFDictionaryPK10__CFStringb ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _LIBytesNeededForGhostlyImageOfSize, _LIBytesPerRowForGhostlyImageOfWidth, 
+                       _LICopyBestImageForVariantFromBundle, _LICopyBestImageForVariantFromImages, 
+                       _LICopyIconPathsFromBundle, _LICopyIconPathsFromBundleForStyles, 
+                       _LICreateCachedUncompressedDataFromImage, _LICreateDefaultAppClipIcon, 
+                       _LICreateDefaultIcon, _LICreateDeviceAppropriateHomeScreenIconImageFromBundle, 
+                       _LICreateGhostlyVersion, _LICreateGhostlyVersionWithDataWrapper, 
+                       _LICreateIconForBundle, _LICreateIconForBundleAndDisplayGamut, 
+                       _LICreateIconForImage, _LICreateIconForImages, _LICreateIconFromCachedBitmap, 
+                       _LICreateIconOverlay, _LICreateImageFromCachedUncompressedData, 
+                       _LICreateImageFromUncompressedBitmapData, _LICreateUncompressedBitmapDataFromImage, 
+                       _LICreateUncompressedBitmapDataFromImageWithOptions, _LIExpectedImageInputSizeForVariant, 
+                       _LIGetHeaderForUncompressedBitmapData, _LIGetIconVariantDimensionsForStyle, 
+                       _LIGetImageInfoFromCachedUncompressedData, _LIIconContinuousCornerRadiusForVariant, 
+                       _LIIconOutputScaleForVariant, _LIIconOutputSizeForVariant, 
+                       _LIIconOutputVisibleImageBoundsForVariant, _LISideInsetForHomeScreenVariant, 
+                       _LITopInsetForHomeScreenVariant, __LICGImageWriteAsPNGToFilePath, 
+                       __LICGPathCreateContinuousRoundedRect, __LICreateIconDataForBundleURLWithIconName, 
+                       __LICreateIconDataForBundleURLWithIconNameWithOptions, __LICreateIconDataForContainersWithIconsDictionary, 
+                       __LICreateIconDataForContainersWithIconsDictionaryAndPreferredIconNameWithOptions, 
+                       __LICreateIconForBundleWithIconsDictionaryAndContainers, __copyAppClipDefaultIconImages ]
+    objc-classes:    [ LICacheClearScheduler ]
+...

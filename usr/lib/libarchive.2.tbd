@@ -1,12 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EE18AB36-5DE5-397F-977B-FA79D8623911', 'x86_64: 38992F2D-2971-302E-876D-8203F8728A0F' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           329C169E-5D6A-3819-A088-8C66566893B9
+  - target:          x86_64-ios-simulator
+    value:           E1688B86-091A-3458-A309-4435475AC314
+  - target:          arm64-ios-simulator
+    value:           7777C391-87C1-3F6D-A4A1-4EEDA69D1286
 install-name:    '/usr/lib/libarchive.2.dylib'
 current-version: 9.2
 compatibility-version: 9
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___archive_2VersionNumber, ___archive_2VersionString, ___archive_check_child, 
                        ___archive_check_magic, ___archive_create_child, ___archive_entry_acl_parse_w, 
                        ___archive_errx, ___archive_parse_options, ___archive_read_ahead, 
@@ -21,7 +27,7 @@ exports:
                        _archive_api_version, _archive_read_data_into_buffer, _archive_read_set_filter_options, 
                        _archive_read_set_format_options, _archive_version, _archive_version_stamp, 
                        _archive_write_set_compressor_options, _archive_write_set_format_options ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _archive_bzlib_version, _archive_clear_error, _archive_compression, 
                        _archive_compression_name, _archive_copy_error, _archive_entry_acl, 
                        _archive_entry_acl_add_entry, _archive_entry_acl_add_entry_w, 

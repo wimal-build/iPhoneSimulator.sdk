@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           9F2DF5BD-DD30-3253-94B1-6AE349B0839F
+  - target:          arm64-ios-simulator
+    value:           5B08DEF9-2CF6-3926-BEAF-516F2225297E
+install-name:    '/System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HKHRHeartHealthBundle, _HKHeartRateLocalizedString, _HKHeartRatePluginIdentifier, 
+                       __HKHeartRateSettingsLocalizationTable, __HKHeartSettingsBradycardiaThresholdHeartRateDefault, 
+                       __HKHeartSettingsBradycardiaThresholdNumberOfMinutes, __HKHeartSettingsTachycardiaThresholdHeartRateDefault, 
+                       __HKHeartSettingsTachycardiaThresholdNumberOfMinutes ]
+    objc-classes:    [ _HKHeartSettingsUtilities ]
+...

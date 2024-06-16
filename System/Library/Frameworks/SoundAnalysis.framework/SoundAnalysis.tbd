@@ -1,20 +1,36 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C5C0B583-997C-3CE1-99A6-0501E4224AE6' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           3D5EB388-4427-35BC-8111-3CA3239CAB6E
+  - target:          arm64-ios-simulator
+    value:           2EE1F512-C56E-3DB3-B1BF-0ECDDAE041AB
 install-name:    '/System/Library/Frameworks/SoundAnalysis.framework/SoundAnalysis'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SNErrorDomain, _SNSoundIdentifierApplause, _SNSoundIdentifierBabble, 
-                       _SNSoundIdentifierCheering, _SNSoundIdentifierDistressedBaby, 
-                       _SNSoundIdentifierLaughter, _SNSoundIdentifierMusic, _SNSoundIdentifierSpeech, 
-                       _SNVGGishFeatureEmbeddingCustomModelName, _SNVGGishFrontEndProcessingCustomModelName ]
-    objc-classes:    [ SNAudioFileAnalyzer, SNAudioOffsetResult, SNAudioStreamAnalyzer, 
-                       SNClassification, SNClassificationResult, SNClassifySoundRequest, 
-                       SNCreateFeaturePrintRequest, SNDetectSignalThresholdRequest, 
-                       SNDetectSoundRequest, SNDetectSpeechUtteranceRequest, SNDetectionResult, 
-                       SNDirectionOfArrivalResult, SNEstimateAudioOffsetRequest, 
-                       SNEstimateDirectionOfArrivalRequest, SNFeaturePrint, SNLKFSResult, 
-                       SNMeasureLKFSRequest, SNNullRequest, SNNullResult, SNResultsCollector, 
-                       SNSignalThresholdResult, SNSpeechUtteranceResult ]
+                       _SNSoundIdentifierBeep, _SNSoundIdentifierBuzzer, _SNSoundIdentifierCatMeow, 
+                       _SNSoundIdentifierCheering, _SNSoundIdentifierDingBell, _SNSoundIdentifierDistressedBaby, 
+                       _SNSoundIdentifierDogBark, _SNSoundIdentifierDoorKnock, _SNSoundIdentifierDoorbell, 
+                       _SNSoundIdentifierFireAlarm, _SNSoundIdentifierLaughter, _SNSoundIdentifierMusic, 
+                       _SNSoundIdentifierShouting, _SNSoundIdentifierSmokeAlarm, 
+                       _SNSoundIdentifierSpeech, _SNVGGishFeatureEmbeddingCustomModelName, 
+                       _SNVGGishFrontEndProcessingCustomModelName ]
+    objc-classes:    [ SNAudioCorrelationResult, SNAudioFileAnalyzer, SNAudioOffsetResult, 
+                       SNAudioStreamAnalyzer, SNClassification, SNClassificationResult, 
+                       SNClassifySoundRequest, SNCopyFilesRequest, SNCorrelateAudioRequest, 
+                       SNCreateFeaturePrintRequest, SNDaemon, SNDeleteFilesRequest, 
+                       SNDetectSignalThresholdRequest, SNDetectSoundRequest, SNDetectSpeechUtteranceRequest, 
+                       SNDetectionResult, SNDirectionOfArrivalResult, SNDiscoverFileServerRequest, 
+                       SNEstimateAudioOffsetRequest, SNEstimateDirectionOfArrivalRequest, 
+                       SNEstimateSpeechDistanceRequest, SNEstimateSpeechEmotionRequest, 
+                       SNFeaturePrint, SNFileCopyingResult, SNFileDeletionResult, 
+                       SNFileListingResult, SNFileServerDiscoveryResult, SNFileServerInfo, 
+                       SNFileSystem, SNLKFSResult, SNListFilesRequest, SNMeasureLKFSRequest, 
+                       SNNullRequest, SNNullResult, SNResultsCollector, SNResultsPrinter, 
+                       SNSignalThresholdResult, SNSpeechDistanceResult, SNSpeechEmotionResult, 
+                       SNSpeechUtteranceResult, SNSystemAudioAnalyzer ]
 ...

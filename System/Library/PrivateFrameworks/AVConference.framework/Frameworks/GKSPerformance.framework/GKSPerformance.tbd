@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           A3BFB7BC-AC1A-346A-9686-F05062D6BEA4
+  - target:          arm64-ios-simulator
+    value:           E74ACC3E-9004-3376-8B98-61226E498B6E
+install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/GKSPerformance.framework/GKSPerformance'
+...

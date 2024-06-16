@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           FC08EAAB-CC3C-3FFF-9F1E-414379CBE2A8
+  - target:          x86_64-ios-simulator
+    value:           5069CC8D-2B5C-3C32-A84A-2E0CFB9F85AA
+  - target:          arm64-ios-simulator
+    value:           82A76785-D095-318D-8070-79DC1FE00663
+install-name:    '/System/Library/PrivateFrameworks/MediaStream.framework/MediaStream'
+current-version: 302.0.220
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _kMSASNoWakeServiceName, _kMSDoNothingCFTypeDictionaryValueCallbacks, 
+                       _kMSNoWakeMachServiceName ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MSAlbumSharingInitialize, _MSMSLocalizedString, _MSMediaStreamInitialize, 
+                       _MediaStreamVersionNumber, _MediaStreamVersionString, _XPCSetLogBlocks, 
+                       __MSASSetDaemon, __MSSetDaemon, __XPCLog, __XPCShouldLog, 
+                       _kMSASConnectionErrorDomain, _kMSASServiceName, _kMSAuthenticationManagerDidReceiveAuthenticationChangeNotification, 
+                       _kMSBatteryPowerMonitorExternalPowerSourceChangedNotification, 
+                       _kMSCServerSideConfigurationDidChangeNotification, _kMSCXPCReplyError, 
+                       _kMSCXPCReplyRetval, _kMSIDSFacility, _kMSIdleStateDidChangeNotification, 
+                       _kMSMMCSFacility, _kMSMachServiceName, _kMSPerfFacility, _kMSPhotoStreamFacility, 
+                       _kMSPowerBudgetDidBeginAllowingFileTransferNotification, _kMSPowerBudgetDidEndAllowingFileTransferNotification, 
+                       _kMSServerSideConfigurationDidChangeNotification, _kMSSharedStreamFacility, 
+                       _kMSmstreamdErrorDomain, _kMSmstreamdFacility, _kXPCSequenceKey ]
+    objc-classes:    [ MSAMNotificationInfo, MSASConnection, MSASPlatformImplementation, 
+                       MSAlertManager, MSAuthenticationManager, MSBatteryPowerMonitor, 
+                       MSClientSidePauseContext, MSConnection, MSMSPlatform, MSPBTimerContext, 
+                       MSPauseManager, MSPowerAssertionManager, MSPowerBudget, XPCClientConnection, 
+                       XPCNSClientConnection, XPCNSRequest, XPCNSServiceConnection, 
+                       XPCNSServiceListener, XPCRequest, XPCServiceConnection, XPCServiceListener ]
+...

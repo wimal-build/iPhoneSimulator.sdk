@@ -1,0 +1,58 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           4427FD0C-AEB3-33BA-B12C-0E3B566D7659
+  - target:          arm64-ios-simulator
+    value:           F16047F3-22CC-39C2-B3A8-0B3A6AD5417C
+install-name:    '/System/Library/PrivateFrameworks/QuickLookSupport.framework/QuickLookSupport'
+current-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ QLPlatformImage._cgImage, QLPlatformImage._cleanupDataBlock, 
+                       QLPlatformImage._orientation, QLPlatformImage._scale, QLThumbnailUTICache._itemTypeCache, 
+                       QLThumbnailUTICache._synchronizationQueue, QLZipArchive._archive, 
+                       QLZipArchive._data, QLZipArchive._fileWrapper, QLZipArchive._url, 
+                       QLZipArchiveEntry._archive, QLZipArchiveEntry._data, QLZipArchiveEntry._entry, 
+                       QLZipArchiveEntry._error ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _QLAdaptSizeInSize, _QLAdaptSizeOutSize, _QLAdaptSizeToRect, 
+                       _QLAdaptSizeToRectWithRounding, _QLAdjustRectInRect, _QLCreateMallocedBitmapContextWithSize, 
+                       _QLCreateMallocedBitmapContextWithSizeAndColorSpace, _QLDrawPDFPageWithMinimumDimension, 
+                       _QLFrameworkBundle, _QLGetPDFDrawRect, _QLGetPDFDrawRectWithMinimumDimension, 
+                       _QLGuessEncodingForTextFileAtURL, _QLGuessEncodingForTextFileFromData, 
+                       _QLPreviewCopyEmbeddedIWorkThumbnailDataInData, _QLPreviewCopyEmbeddedIWorkThumbnailDataInFile, 
+                       _QLPreviewCopyEmbeddedPDF, _QLSInitLogging, _QLSThumbnailSizeIsSufficientForLowQuality, 
+                       _QLScaledImageFromImageURL, _QLScaledPlatformImageFromImageSource, 
+                       _QLThumbnailingImageIOCreateImageSourceFromData, _QLThumbnailingImageIOCreateThumbnailFromData, 
+                       _QLThumbnailingImageIOCreateThumbnailOfMinimumSizeWithImageSource, 
+                       _QLThumbnailingImageIOCreateThumbnailOfMinimumSizeWithImageSourceAndContentType, 
+                       _QLThumbnailingImageIOGetSizeFromImageSourceAtIndex, _QLUTIManagerTypeIsInternallyClaimedType, 
+                       _QLUTIManagerTypeIsInternallySupportedType, __QLDictionaryCGFloatValueForKey, 
+                       __QLDictionaryFloatValueForKey, __QLDictionaryIntValueForKey, 
+                       __QLDictionarySInt32ValueForKey, __QLDictionarySetCGFloatValueForKey, 
+                       __QLDictionarySetFloatValueForKey, __QLDictionarySetIntValueForKey, 
+                       __QLDictionarySetSInt32ValueForKey, __QLDictionarySetValueForKeyIfExists, 
+                       __QLDictionaryValueForKey, __QLMachDispatchIncomingMessageAndReplyIfNecessary, 
+                       __QLMachGetMachPortCount, __QLMachGetMinimumSequenceNumber, 
+                       __QLMachPortKeyCallbacks, __QLMachRegisterForNoSenders, __QLMachUnregisterForNoSenders, 
+                       __QLSDictionaryBooleanValueForKey, __QLSDictionaryGetPointValueForKey, 
+                       __QLSDictionaryGetRectValueForKey, __QLSDictionaryGetSizeValueForKey, 
+                       __QLSDictionarySetBooleanValueForKey, __QLSDictionarySetPointValueForKey, 
+                       __QLSDictionarySetRectValueForKey, __QLSDictionarySetSizeValueForKey, 
+                       __QLThumbnailComputeBaselineFromData, __qlsLogHandle, _kQLExtensionMinimumThumbnailDimensionKey, 
+                       _kQLExtensionPointIdentifierPreview, _kQLExtensionPointIdentifierThumbnail, 
+                       _kQLExtensionSupportedContentTypesKey, _kQLExtensionSupportsInteractiveThumbnailBadgesKey, 
+                       _kQLExtensionSupportsSearchableItemsKey, _kQLExtensionWantsExternalResourcesEntitlement, 
+                       _kQLSThumbnailOptionIconModeKey, _kQLSThumbnailOptionScaleFactorKey ]
+    objc-classes:    [ QLCoreSpotlightExtensionPreview, QLExtension, QLExtensionManager, 
+                       QLExtensionManagerCache, QLExtensionPreview, QLExtensionThumbnailGenerator, 
+                       QLPlatformImage, QLThumbnailUTICache, QLURLExtensionPreview, 
+                       QLUTIManager, QLZipArchive, QLZipArchiveEntry ]
+reexports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ QLUTIAnalyzer ]
+...

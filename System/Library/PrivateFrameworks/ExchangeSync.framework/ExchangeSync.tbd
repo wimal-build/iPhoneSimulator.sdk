@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           5DD9EE5C-1958-3E0A-8034-D86A44629C40
+  - target:          arm64-ios-simulator
+    value:           E3649BD6-D5AF-3E48-9010-B2D3C30A12E3
+install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/ExchangeSync'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ ESAccountClassNames._accountClassName, ESAccountClassNames._agentClassName, 
+                       ESAccountClassNames._clientAccountClassName, ESAccountClassNames._daemonAccountClassName, 
+                       ESUserNotificationInfo._groupIdentifier, ESUserNotificationInfo._handler ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ESIsRunningInExchangeSyncD, _kDAAccountDidDiscoverHost, _kDAAccountDiscoveredHost, 
+                       _kDAClientNameForChangeInsertion, _kDAExchangeOAuthJWKSData, 
+                       _kDAExchangeOAuthJWKSDataCachMaxTimeInterval, _kDAExchangeOAuthJWKSDataCacheDate, 
+                       _kDAExchangeOAuthJWKSURI, _kDAExchangeOAuthTokenIssuer, _kDAExchangeOAuthVersion, 
+                       _kESExchangePasswordPromptDate, _kGenericDAAccountType, _kGenericDAAccountWithLoggingType, 
+                       _kSubCalCalendarStoreExternalId, _setESIsRunningInExchangeSyncD ]
+    objc-classes:    [ ESAccount, ESAccountActor, ESAccountClassNames, ESAccountLoader, 
+                       ESLocalDBHelper, ESLocalDBWatcher, ESUserNotificationInfo, 
+                       ESUserNotificationUtilities ]
+...

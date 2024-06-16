@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           95F6B3DE-745D-3256-8857-FAC48BCF0447
+  - target:          arm64-ios-simulator
+    value:           DE8F0660-7971-33D9-9079-63DCE592B79B
+install-name:    '/System/Library/PrivateFrameworks/NLPLearner.framework/NLPLearner'
+current-version: 34
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _trainMLPModelForDES ]
+    objc-classes:    [ PFLBackgroundRunner ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           108CE9E4-8FC9-3F08-A956-FBDC22FB6238
+  - target:          arm64-ios-simulator
+    value:           00E0A22A-BB24-3940-B2F4-497E27A92A8E
+install-name:    '/System/Library/PrivateFrameworks/RelativeMotion.framework/RelativeMotion'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _kRMErrorDomain ]
+    objc-classes:    [ RMAttitude, RMAudioListenerPoseManager, RMDummyData, RMDummyDataManager, 
+                       RMInternalServiceClient, RMLogItem, RMMediaSession, RMMediaSessionOptions, 
+                       RMPose, RMRelativeMotionManager ]
+...

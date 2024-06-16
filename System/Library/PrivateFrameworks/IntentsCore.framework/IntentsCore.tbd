@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           9390D1CA-1812-3736-AD44-719700310132
+  - target:          x86_64-ios-simulator
+    value:           C2E0F298-8EC8-313D-86FA-3A4ABB0D603B
+  - target:          arm64-ios-simulator
+    value:           7E757D7A-3E45-39AD-AE5C-3EB46194DA3C
+install-name:    '/System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ INCSchemaManager, INCWatchdogTimer ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _INCDecodeHashedRouteUIDs, _INCDeserializeNSUserActivityData, 
+                       _INCExtensionErrorDomain, _INCExtensionTransactionStateTypeGetName, 
+                       _INCGetCurrentGroupDeviceUIDs, _INCNativeMessagesAppBundleIdentifier, 
+                       _INCRouteAudioToAirplayOutputDevices, _INCRouteAudioToAirplayOutputDevicesForAudioSession, 
+                       _INCSerializeNSUserActivity, _IntentsCoreVersionNumber, _IntentsCoreVersionString ]
+    objc-classes:    [ INCAppLaunchRequest, INCAppProxy, INCChronoIntentProvider, 
+                       INCChronoOptions, INCExecutionInfo, INCExecutionInfoResolver, 
+                       INCExtensionConnection, INCExtensionError, INCExtensionManager, 
+                       INCExtensionPlugInBundleManager, INCExtensionProxy, INCExtensionRequest, 
+                       INCExtensionTransaction, INCExtensionTransactionState, INCIntentDefaultValueProvider, 
+                       INCIntentExecutionInfo, INCIntentExecutionInfoResolver, INCLocalExtensionRegistry, 
+                       INCUserActivityExecutionInfo, INCWidgetIntentProvider, INCWidgetOptions ]
+...

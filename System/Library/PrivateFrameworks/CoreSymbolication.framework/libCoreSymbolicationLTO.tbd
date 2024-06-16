@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           7389DA46-A5E3-319B-86E3-8DEAEBC2E909
+  - target:          arm64-ios-simulator
+    value:           ED89F31F-E707-3910-954B-36D490591B09
+install-name:    '/System/Library/PrivateFrameworks/CoreSymbolication.framework/libCoreSymbolicationLTO.dylib'
+current-version: 64540.89.1
+allowable-clients:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    clients:         [ '!' ]
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _Create, _Dispose, _Handler, _Initialize ]
+...

@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7E76D10B-0DE2-39BD-95D2-7D0801D57C3E
+  - target:          x86_64-ios-simulator
+    value:           FBC43D9C-3632-376D-994B-6D7ED3817B20
+  - target:          arm64-ios-simulator
+    value:           9C8BDD78-C7F0-3A28-8C63-87968624765A
+install-name:    '/System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _BFFCountryScanCompletedNotification ]
+    objc-classes:    [ BFFLocaleDataSource, BFFLocationController, BFFPreferencesController ]
+    objc-ivars:      [ BFFLocationController._aliasDict, BFFLocationController._guessedCountries, 
+                       BFFLocationController._guessedCountryFromTelephony, BFFLocationController._validCountries ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ BFFBarButtonSpinnerView._spinner ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _BFFFlowSkipIdentifierAppleID, _BFFFlowSkipIdentifierApplePay, 
+                       _BFFFlowSkipIdentifierPasscode, _BFFFlowSkipIdentifierSiri, 
+                       _BFFFlowSkipIdentifierTouchID, _BFFIsiPad, _BFFIsiPhone, _BFFPointImageOfColor, 
+                       _BFFRoundRectToPixel, _BFFRoundToPixel, _SetupIsInternalInstall, 
+                       __BFFCGFloatByDeviceHeight, __BFFHeaderTextStyle, __BFFHeightByDeviceSize, 
+                       __BFFWidthByDeviceSize, _isDeviceXL, _lf_post ]
+    objc-classes:    [ BFFBarButtonSpinnerView, BFFCapabilities, BFFComplexPasscodeInputView, 
+                       BFFContinueButton, BFFFlow, BFFFlowSkipController, BFFFlowStarter, 
+                       BFFLinkLabelFooterView, BFFNavBarSpinnerManager, BFFNavigationController, 
+                       BFFPaneHeaderView, BFFPaneHeaderView_RemoteUI, BFFPasscodeCreationManager, 
+                       BFFPasscodeInputView, BFFPasscodeView, BFFPasscodeViewController, 
+                       BFFProgressView, BFFSimplePasscodeInputView, BFFSpinnerController, 
+                       BFFSplashController, BFFStyle, BFFTimeRemainingController, 
+                       BFFTitleView, BFFWindow ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           209C31AB-E7E9-31F7-A803-DB0B47AD916B
+  - target:          arm64-ios-simulator
+    value:           9D1D4C1A-0C4A-3A97-BC0E-D2FFA79BA355
+install-name:    '/System/Library/PrivateFrameworks/AACCore.framework/AACCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AECoreError, _AECoreErrorDomain, _AECoreErrorUserInfo, _AELocalizedStringFromTableInBundle, 
+                       _AEPolicySessionFailedToActivateSubsystemsKey, _AEPolicySessionFailedToDeactivateSubsystemsKey ]
+    objc-classes:    [ AEActivePolicySession, AELocalizedErrorDescriptions, AEOSGestalt, 
+                       AEOptionMirror, AEPerformancePrimitivesProvider, AEPolicyBundle, 
+                       AEPreferencesProvider, AERSingleAppModeConfiguration, AERSingleAppModePrimitivesProvider ]
+...

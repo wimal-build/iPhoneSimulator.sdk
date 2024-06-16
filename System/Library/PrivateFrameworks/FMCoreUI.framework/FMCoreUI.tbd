@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0AA38FD3-1C39-33DA-8A91-7BE89A1DC000
+  - target:          x86_64-ios-simulator
+    value:           9A6F35BF-8CDE-33A1-A05D-3188A55EAC0E
+  - target:          arm64-ios-simulator
+    value:           FC132825-10A5-370F-A554-A95F03E11B28
+install-name:    '/System/Library/PrivateFrameworks/FMCoreUI.framework/FMCoreUI'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    objc-classes:    [ FMDynamicTypeButton, FMDynamicTypeLabel, FMDynamicTypeTextField, 
+                       FMDynamicTypeTextView ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FMShortcutItemIdentifierKey ]
+    objc-classes:    [ FMAccuracyOverlay, FMAnnotationView, FMAppShortcutManager, 
+                       FMAttributedStringRenderer, FMAttributedStringRendererOptions, 
+                       FMBlurView, FMBorderedButton, FMBorderedField, FMBorderedView, 
+                       FMBottomPaneSegue, FMDistanceBadge, FMFixedSizeView, FMHairlineConstraint, 
+                       FMHorizontalRule, FMLeftPaneSegue, FMMapGestureRecognizer, 
+                       FMMapView, FMObservingCell, FMPaneSegue, FMRightPaneSegue, 
+                       FMRule, FMSlidingPaneViewController, FMTitleView, FMTitleViewCenteringNavigationBar, 
+                       FMTopPaneSegue, FMVerticalRule, FMViewController, FM_Workaround_30408319_Button ]
+...

@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           8626EBE4-366E-3BF1-AD41-86808ABC47A4
+  - target:          x86_64-ios-simulator
+    value:           E3CD9330-DA76-31E8-A023-912AC00C0DBE
+  - target:          arm64-ios-simulator
+    value:           984D7C3E-56A5-3DB5-9182-BE8F45CF4F48
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/FontServices'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FSFontCopyFontNamesForFamily, _FSFontCopyFonts, _FSFontIsHidden, 
+                       _FSFontPickerSupportDone, _FSFontPickerSupportFontChangeNotification, 
+                       _FSFontPickerSupportFontSelected, _FSFontPickerSupportListenerEndpoint, 
+                       _FSFontPickerSupportSetup, _FSFontProviderRegisterFonts, _FSFontProviderRegisteredFontsInfo, 
+                       _FSFontProviderRequestFonts, _FSFontProviderSynchronizeFontAsset, 
+                       _FSFontProviderUnregisterFonts, _FSLog, _FSLog_Debug, _FSLog_Error, 
+                       _FSWebKitHostSupportCreateEndpoint, _FSWebKitProcessSupport, 
+                       _FontProviderDidChangeDistributedNotification, _FontProviderErrorDomain, 
+                       _FontProviderErrorIdentifierKey, _FontServicesVersionNumber, 
+                       _FontServicesVersionString, _GSFontNotificationAddedKey, _GSFontNotificationFontKindKey, 
+                       _GSFontNotificationURLsKey, _IsApplicationIdentifierWhiteListedForFontEnumeration, 
+                       _IsPathConfigurationProfileFontFile, _IsPathFontAssetFontFile, 
+                       _IsPathRegisteredFontAssetFontFile, _IsPathUserInstalledFontFile, 
+                       _RegisteredFontAssetFileDirectoryPath, _RegisteredFontAssetFileDirectoryURL, 
+                       _SandboxExtensionsForPathsAndAuditToken, _UserInstalledFontFileDirectoryPath, 
+                       _UserInstalledFontFileDirectoryURL, _XTCopyAvailableFontURLs, 
+                       _XTCopyFontWithName, __deleteAppFontsDialogHandler, __kCTFontFamilyNameAttribute, 
+                       __kCTFontIgnoreURLLocationAttribute, __kCTFontNameAttribute, 
+                       __kCTFontRegistrationUserInfo, __kCTFontURLAttribute, _kFSLogFSUserFontManager, 
+                       _kFSLogFontProvider, _kFSLogFontProviderLoader, _kFSLogFontProviderManager, 
+                       _kFSLogFontServices, _kFSLogFontServicesDaemon, _kFSLogFontServicesDaemonManager, 
+                       _kFSLogUserFontManager, _kFSWebKitSupportParamLocallyActivatedFontsKey, 
+                       _kFSWebKitSupportParamUserInstalledFontsKey, _kFontAssetPathPrefix, 
+                       _kFontProviderErrorUserInfoFontInfoParameterIndexesKey, _kFontProviderInfoParameterIndexesKey ]
+    objc-classes:    [ DeleteAppFontsDialogHandler, FSUserFontManager, FSUserFontServicesManager, 
+                       FSWebKitHostSupportManager, FSWebKitProcessSupportHandler, 
+                       FSWebKitProcessSupportManager, FontPickerSupportHandler, FontPickerSupporter, 
+                       FontProviderManager, FontServicesDaemonManager ]
+...

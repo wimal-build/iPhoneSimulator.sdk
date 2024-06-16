@@ -1,13 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C55F6023-FA69-3006-B93E-7F6AC997ED03', 'x86_64: 05881450-400F-311C-83E6-F2A033780885' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7E73970B-71F6-332B-90EA-A2251018C19E
+  - target:          x86_64-ios-simulator
+    value:           FB3D0569-C7AB-3931-9E5F-1303A9E85196
+  - target:          arm64-ios-simulator
+    value:           ACE8B6B2-7799-376E-9DF9-A25C967CE607
 install-name:    '/usr/lib/libcoretls.dylib'
-current-version: 167
-exports:         
-  - archs:           [ i386 ]
+current-version: 169
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___ssl_debug, _coretlsVersionNumber, _coretlsVersionString ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CipherSuiteCount, _CurvesCount, _KnownCipherSuites, _KnownCurves, 
                        _KnownSigAlgs, _SigAlgsCount, _Ssl3Callouts, _Tls12Callouts, 
                        _Tls1Callouts, _sslCipherSuiteGetKeyExchangeMethod, _sslCipherSuiteGetKeydataSize, 

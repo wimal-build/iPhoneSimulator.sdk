@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           DB139F76-FA93-3E2A-B23C-A6427598366F
+  - target:          arm64-ios-simulator
+    value:           6BC2BF14-EBD4-3B60-B0CF-A7DD699445E0
+install-name:    '/System/Library/PrivateFrameworks/HIDAnalytics.framework/HIDAnalytics'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HIDAnalyticsEventActivate, _HIDAnalyticsEventAddField, _HIDAnalyticsEventAddHistogramField, 
+                       _HIDAnalyticsEventCancel, _HIDAnalyticsEventCreate, _HIDAnalyticsEventSetIntegerValueForField, 
+                       _HIDAnalyticsHistogramEventCreate, _HIDAnalyticsHistogramEventSetIntegerValue, 
+                       _HIDAnalyticsVersionNumber, _HIDAnalyticsVersionString ]
+    objc-classes:    [ HIDAnalyticsEvent, HIDAnalyticsEventField, HIDAnalyticsHistogramEvent, 
+                       HIDAnalyticsHistogramEventField, HIDAnalyticsReporter ]
+...

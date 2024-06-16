@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           231F1FCF-CE0E-3D7A-B899-407CF1B65F72
+  - target:          arm64-ios-simulator
+    value:           EEE9BA85-8E59-34C3-8199-BDD37CBF8328
+install-name:    '/System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ WiFiAwareDataSession, WiFiAwareDataSessionIssueReport, WiFiAwareDatapathConfiguration, 
+                       WiFiAwareDiscoveryResult, WiFiAwarePublishConfiguration, WiFiAwarePublishDatapathConfiguration, 
+                       WiFiAwarePublishDatapathSecurityConfiguration, WiFiAwarePublishDatapathServiceSpecificInfo, 
+                       WiFiAwarePublishServiceSpecificInfo, WiFiAwarePublisher, WiFiAwarePublisherDataSessionHandle, 
+                       WiFiAwareSubscribeConfiguration, WiFiAwareSubscriber, WiFiMACAddress ]
+...

@@ -1,0 +1,111 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           52AB4FE7-5E34-35D1-8D3E-C971E957F37A
+  - target:          x86_64-ios-simulator
+    value:           05DAD6AB-7ECE-3638-A79C-EE697263F0DC
+  - target:          arm64-ios-simulator
+    value:           58CEBCC7-2BFE-3843-874E-4CAA438A78CF
+install-name:    '/System/Library/PrivateFrameworks/SpringBoardUI.framework/SpringBoardUI'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _BBLocalized, _NCInteractiveNotificationActionContextLaunchURLKey, 
+                       _SBApplicationURLDidOpenNotification, _SBApplicationURLWillOpenNotification, 
+                       _SBBulletinCellButtonWidth, _SBBulletinIsPluginAction, _SBBulletinLaunchOriginToResonseOrigin, 
+                       _SBBulletinResponseOriginBanner, _SBBulletinResponseOriginDefault, 
+                       _SBBulletinResponseOriginList, _SBBulletinResponseOriginLockScreen, 
+                       _SBBulletinResponseOriginModalAlert, _SBBulletinResponseOriginNotificationCenterOnLockScreen, 
+                       _SBBulletinResponseOriginStark, _SBBulletinResponseOriginToLaunchOrigin, 
+                       _SBDisplayDidDeactivateNotification, _SBDisplayDidLaunchNotification, 
+                       _SBDisplayWillActivateNotification, _SBMarkLockedBulletinsAsReadNotification, 
+                       _SBPluginFullscreenAlertDidAnimateInNotification, _SBUIBannerTargetDequeueContextFromSourcesWithCheck, 
+                       _SBUIBannerViewHeightForTargetIdiom, _SBUIIconForceTouchViewControllerDismissAnimationSettings, 
+                       _SBUIIconForceTouchViewControllerLayoutIsCompact, _SBUIIconForceTouchViewControllerLayoutIsFullWidth, 
+                       _SBUIIconForceTouchViewControllerLayoutIsLandscape, _SBUIIconForceTouchViewControllerLayoutIsPortrait, 
+                       _SBUISetUserAgent, _SBUISpringAnimationSettingsWithSpeed, 
+                       _SBUIStarkBannerViewButtonCornerRadius, _kSBNotificationKeyApplicationURL, 
+                       _kSBNotificationKeyCurrentVolume, _kSBNotificationKeyDisplaySuspended, 
+                       _kSBUIBannerDefaultPriority ]
+    objc-classes:    [ SBBulletinEvent, SBLockScreenPluginInCallAction, SBRemoteAlertController, 
+                       SBRemoteAlertServer, SBUIActionViewVibrantStyling, SBUIAppIconForceTouchController, 
+                       SBUIAppIconForceTouchControllerDataProvider, SBUIAppIconForceTouchShortcutViewController, 
+                       SBUIBannerAction, SBUIBannerContext, SBUIBannerItem, SBUIBannerTargetManager, 
+                       SBUIBannerTargetProxy, SBUIForceTouchGestureRecognizer, SBUIFullscreenAlertController, 
+                       SBUIIconForceTouchController, SBUIIconForceTouchControllerDataProvider, 
+                       SBUIIconForceTouchIconViewWrapperView, SBUIIconForceTouchViewController, 
+                       SBUIIconForceTouchVisualEffectView, SBUIIconForceTouchWrapperViewController, 
+                       SBUIScene, SBUISlidingFullscreenAlertController, SBUIStarkBannerViewButton, 
+                       SBUIWorkspace ]
+    objc-ivars:      [ SBBulletinEvent._bulletinID, SBBulletinEvent._feed, SBBulletinEvent._handler, 
+                       SBUIFullscreenAlertController._activationContext, SBUIFullscreenAlertController._animationStartTime, 
+                       SBUIFullscreenAlertController._pendingDeactivationInvocation, 
+                       SBUIFullscreenAlertController._shouldAnimateIn, SBUISlidingFullscreenAlertController._animatingIn, 
+                       SBUISlidingFullscreenAlertController._animatingOut, SBUISlidingFullscreenAlertController._bottomBar, 
+                       SBUISlidingFullscreenAlertController._topBar ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSStringFromLockScreenCapabilities, _NSStringFromLockScreenElement, 
+                       _NSStringFromLockScreenEvent, _NSStringFromLockScreenPluginBackgroundStyle, 
+                       _NSStringFromLockScreenPluginNotificationBehavior, _NSStringFromLockScreenPluginPresentationStyle, 
+                       _NSStringFromLockSource, _NSStringFromSBAlertItemPresentationState, 
+                       _NSStringFromSBSceneViewDisplayMode, _NSStringFromSBUIBackgroundStyle, 
+                       _NSStringFromUnlockIntent, _NSStringFromUnlockSource, _SBActiveCallStateChangedNotification, 
+                       _SBAirplaneModeControllerAirplaneModeDidChangeNotification, 
+                       _SBAirplaneModeControllerDidProcessAirplaneModeChangeNotification, 
+                       _SBAirplaneModeControllerWillProcessAirplaneModeChangeNotification, 
+                       _SBAlertItemDidPrepareNewAlertControllerNotification, _SBAlertItemIsUserDeactivate, 
+                       _SBApplicationNetworkFlagsChangedNotification, _SBAwayViewPluginActivatingForRemoteEvent, 
+                       _SBAwayViewPluginActivationReasonKey, _SBBacklightAboutToUndimNotification, 
+                       _SBBacklightChangeSourceKey, _SBBacklightFadeFinishedNotification, 
+                       _SBBacklightLevelChangedNotification, _SBBacklightNewFactorKey, 
+                       _SBBacklightOldFactorKey, _SBBacklightResetLockScreenIdleTimerNotification, 
+                       _SBBacklightWillTurnOnWhileUILockedNotification, _SBBannerWillAnimateDismissalNotification, 
+                       _SBBannerWillAnimateRevealNotification, _SBCallCountChangedNotification, 
+                       _SBDeviceLockStateChangedNotification, _SBFeaturesShouldBeLockedForRemoteLockNotification, 
+                       _SBHeadsetButtonUpNotification, _SBHomescreenIconsDidAppearNotification, 
+                       _SBHomescreenIconsWillAppearNotification, _SBIncomingCallPendingNotification, 
+                       _SBLiftToWakeGestureDetectedNotification, _SBLockButtonPressedNotification, 
+                       _SBLockScreenCapabilityAllExcept, _SBLogAppIconForceTouch, 
+                       _SBMenuButtonPressedNotification, _SBNetworkTetheringStateChangedNotification, 
+                       _SBOrientationLockChangedNotification, _SBProximityDidChangeNotification, 
+                       _SBRingerChangedNotification, _SBStringFromAlertItemDeactivateReason, 
+                       _SBTelephonyDaemonRestartNotification, _SBTelephonyManagerAirplaneModeDidChangeNotification, 
+                       _SBTelephonyManagerDidProcessAirplaneModeChangeNotification, 
+                       _SBTelephonyManagerWillProcessAirplaneModeChangeNotification, 
+                       _SBTestingConfigureNextAssistantRecognitionStrings, _SBTestingConfigureNextVoiceRecognitionAudioInputPathsNotification, 
+                       _SBUIConvertLockSourceToBacklightChangeSource, _SBUIConvertUnlockSourceToBacklightChangeSource, 
+                       _SBUIFlashlightLevelDefault, _SBUIFrameworkBundleID, _SBUIGetBackdropSettingsForBackgroundStyle, 
+                       _SBUIGetUserAgent, _SBUIHasBlurForBackgroundStyle, _SBUIHasHIDRingerSwitch, 
+                       _SBUILaunchOptionKeyAllowUnlock, _SBUILaunchOptionKeyPNGLess, 
+                       _SBUIPluginActivationSettingsDidChangeNotification, _SBUIPluginContextOptionBundleId, 
+                       _SBUIPluginContextOptionSupportsCarFullScreen, _SBUIPluginStringForActivationEvent, 
+                       _SBUIPluginVisibilityDidChangeNotification, _SBUIRingerSwitchBehaviorDidChangeNotification, 
+                       _SBUIUnlockSourceIsUserAction, _SBUIUseHIDRingerAsOrientationLock, 
+                       _SBUserEventOccurredNotification, _SBVolumeChangedNotification, 
+                       _SBWiFiDeviceAttachedNotification, _SBWifiManagerCurrentDeviceDidChangeNotification, 
+                       _SBWifiManagerDevicePresenceDidChangeNotification, _SBWifiManagerPowerStateDidChangeNotification, 
+                       _SpringBoardUIBundle, _kSBNotificationKeyAnimationDuration, 
+                       _kSBNotificationKeyBundleIdentifier, _kSBNotificationKeyDeviceLockState, 
+                       _kSBNotificationKeyDisplayIdentifier, _kSBNotificationKeyFrame, 
+                       _kSBNotificationKeyHeadsetButtonLongPress, _kSBNotificationKeyLocalNotification, 
+                       _kSBNotificationKeyPreferenceChangedKey, _kSBNotificationKeyState ]
+    objc-classes:    [ SBAlertControllerVisualStyle, SBAlertItem, SBAwayViewPluginController, 
+                       SBCrossfadeView, SBExternalIndigoDefaults, SBLockScreenElementOverride, 
+                       SBLockScreenLegibilitySettings, SBLockScreenModalViewFactory, 
+                       SBLockScreenPluginAction, SBLockScreenPluginAppearanceContext, 
+                       SBLockScreenPluginApplicationAction, SBLockScreenPluginCallAction, 
+                       SBLockScreenPluginContext, SBLockScreenPluginEmergencyDialerAction, 
+                       SBLockScreenPluginMutableAppearanceContext, SBLockScreenPluginPresentation, 
+                       SBLockScreenTimerDialView, SBMutableLockScreenPluginPresentation, 
+                       SBOrientationTransformWrapperView, SBSceneHandle, SBSceneHandleBlockObserver, 
+                       SBSceneView, SBUIAction, SBUIActionKeylineView, SBUIActionPlatterViewController, 
+                       SBUIActionView, SBUIActionViewLabel, SBUIBackgroundView, SBUIChevronView, 
+                       SBUICoronaAnimationController, SBUIFlashlightController, SBUILockScreenDisableAssertion, 
+                       SBUIPluginActivationContext, SBUIPluginAppearanceContext, 
+                       SBUIPluginController, SBUISearchUtilities, SBUISound, SBUIViewFloatSpringProperty, 
+                       SpringBoardUI, _SBAlertController, _SBAlertItemHeaderViewController, 
+                       _SBOrientationTransformedContentView, _SBSceneHandleObserverBehavior, 
+                       _SBSceneHandleObserverToken ]
+    objc-ivars:      [ SBUIPluginController._host, SBUIPluginController._isVisible ]
+...

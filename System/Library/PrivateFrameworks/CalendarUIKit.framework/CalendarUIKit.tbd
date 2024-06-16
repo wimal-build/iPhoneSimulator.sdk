@@ -1,0 +1,67 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           4185D96F-A2E6-314D-BB16-F451AB8ECB97
+  - target:          x86_64-ios-simulator
+    value:           51098AA2-1DE7-335B-9125-ECD100BE8A3B
+  - target:          arm64-ios-simulator
+    value:           AA2F6366-A80E-3419-B5FC-E446C5F91D19
+install-name:    '/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit'
+current-version: 0
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _CUIKEventDescriptionWasInvalidatedNotification, _kCUIKLogFacility ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CUIKBundle, _CUIKCalendarNCDescriptionProfile, _CUIKCalendarNCTitleProfile, 
+                       _CUIKCalendarNoboDescriptionProfile, _CUIKCalendarNoboTitleProfile, 
+                       _CUIKCreateStripedImage, _CUIKCreateStripedUIImage, _CUIKDecomposedAttendeeName, 
+                       _CUIKDescriptorForRequiredKeysForLabeledDisplayString, _CUIKDisplayShortStringForIdentityWithDecomposedName, 
+                       _CUIKDisplayStringForIdentityWithDecomposedName, _CUIKDisplayStringForNotificationIdentity, 
+                       _CUIKEtaAttributes, _CUIKEventTimeDetectorResultAllDayKey, 
+                       _CUIKEventTimeDetectorResultEndDateKey, _CUIKEventTimeDetectorResultStartDateKey, 
+                       _CUIKEventTimeDetectorResultTimeZoneKey, _CUIKEventTimeDetectorResultTitleKey, 
+                       _CUIKFloatFloorForScale, _CUIKLaunchURLForEvent, _CUIKLaunchURLForEventInvitation, 
+                       _CUIKLaunchURLForInbox, _CUIKLiveEditNotification, _CUIKLogInitIfNeeded, 
+                       _CUIKMessageStringForEventInvitationNotification, _CUIKMessageStringForNotification, 
+                       _CUIKMessageStringsForEventInvitationNotification, _CUIKNS_Autocomplete_Log, 
+                       _CUIKNS_Continuity_Log, _CUIKNS_DateStrings_Log, _CUIKNS_EditingContext_Log, 
+                       _CUIKNS_Log, _CUIKNotificationDescriptionKeyAction, _CUIKNotificationDescriptionKeyApp, 
+                       _CUIKNotificationDescriptionKeyComment, _CUIKNotificationDescriptionKeyConflict, 
+                       _CUIKNotificationDescriptionKeyConflictEventRange, _CUIKNotificationDescriptionKeyDate, 
+                       _CUIKNotificationDescriptionKeyError, _CUIKNotificationDescriptionKeyHintCancelled, 
+                       _CUIKNotificationDescriptionKeyImportantAttendee, _CUIKNotificationDescriptionKeyMultipleComments, 
+                       _CUIKNotificationDescriptionKeyPerson, _CUIKNotificationDescriptionKeyRecurrence, 
+                       _CUIKNotificationDescriptionKeySecondPerson, _CUIKNotificationDescriptionKeyTimeProposals, 
+                       _CUIKParticipantDisplaySort, _CUIKScreenScale, _CalShortDisplayStringForNotificationIdentity, 
+                       __ContactForIdentityInProvider, _attributedStateGlyph, _attributedStatusGlyph, 
+                       _calUIKitSubsystem, _colorForParticipationState, _glyphWithAttributes, 
+                       _gylphForCUIKParticipantDisplayImageState, _gylphNameForCUIKParticipantDisplayImageState, 
+                       _kCUIKLogHandle, _stateForParticipationStatus ]
+    objc-classes:    [ CUIKApplicationIconUtilities, CUIKAttendeeDescriptionGenerator, 
+                       CUIKAttendeeHeuristics, CUIKAvailabilityDescriptionGenerator, 
+                       CUIKCalendarApplicationIcon, CUIKCalendarDescriptionGenerator, 
+                       CUIKContactDescriptionGenerator, CUIKCreateOperation, CUIKDateDescriptionGenerator, 
+                       CUIKDateStrings, CUIKDefaultAlarmPreferences, CUIKDefaultIconGenerator, 
+                       CUIKDeleteOperation, CUIKDescriptionGenerator, CUIKEditingContext, 
+                       CUIKEditingContextGroup, CUIKEditingManager, CUIKEventDescriptionGenerator, 
+                       CUIKEventHeuristics, CUIKEventSuggestionGenerator, CUIKEventTimeDetector, 
+                       CUIKIcon, CUIKIconDrawObject, CUIKIconDrawingObject, CUIKInviteeDescriptionGenerator, 
+                       CUIKLocationDescriptionGenerator, CUIKMessageStrings, CUIKNotificationDescriptionGenerator, 
+                       CUIKObjectGroup, CUIKOverlayCalendar, CUIKPhoneNumberDescriptionGenerator, 
+                       CUIKRecents, CUIKRecurrenceRuleDescriptionGenerator, CUIKResliceOperation, 
+                       CUIKRevertOperation, CUIKSaveOperation, CUIKSingleDayTimelineLayout, 
+                       CUIKSingleDayTimelineLayoutPartition, CUIKSingleDayTimelineOccurrenceBucket, 
+                       CUIKSplashScreenStrings, CUIKSuggestionCoalescedInfo, CUIKSuggestionDescriptionGenerator, 
+                       CUIKTTLDescriptionGeneratorUtilities, CUIKTimeToLeaveDescriptionGenerator, 
+                       CUIKTravelAdvisoryDescriptionUtilities, CUIKTravelAdvisoryUtilities, 
+                       CUIKUndeleteFutureOperation, CUIKUndoManager, CUIKUnrevertOperation, 
+                       CUIKUnsliceOperation, CUIKUserActivity, CUIKUserActivityCalendarDate, 
+                       CUIKUserActivityCalendarEvent, CUIKUserActivityNewEvent, CUIKUserActivityRemindersListCategory, 
+                       CUIKUserActivityRemindersListDate, CUIKUserActivityRemindersListScheduled, 
+                       CUIKUserActivityRemindersListSharedInvitation, CUIKUserActivityTomorrow, 
+                       CUIKUserActivityWithSource, CUIKUserOperation, CUIKiCloudKVStore, 
+                       EKPostSliceDescription, EKSeriesDetails, EKSliceDescription, 
+                       EKUndoSliceOutcome ]
+...

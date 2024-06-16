@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           B395920F-D693-3517-B696-A1AA255AA0E1
+  - target:          arm64-ios-simulator
+    value:           D9A1C9B6-4F99-3E0D-92FF-C457E97B3699
+install-name:    '/System/Library/PrivateFrameworks/PrototypeToolsUI.framework/PrototypeToolsUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _PTUIClientInterface, _PTUIEditingServerDidReloadDomainsNotification, 
+                       _PTUIEditingServerDidReloadTestRecipesNotification, _PTUIMachService, 
+                       _PTUINumericKeypadIsNeeded, _PTUINumericKeypadSetNeededWithWindow, 
+                       _PTUIServerInterface, _PrototypeToolsUIVersionNumber, _PrototypeToolsUIVersionString ]
+    objc-classes:    [ PTUIButtonRowTableViewCell, PTUIChoiceRowTableViewCell, PTUIChoiceViewController, 
+                       PTUIDrillDownRowTableViewCell, PTUIEditFloatRowTableViewCell, 
+                       PTUIEditRowTableViewCell, PTUIEditStringRowTableViewCell, 
+                       PTUIEditingServer, PTUIModuleController, PTUINumericKeypad, 
+                       PTUIPaddedHeaderLabel, PTUIPresentViewControllerRowAction, 
+                       PTUIPushViewControllerRowAction, PTUIRowTableViewCell, PTUISettingsController, 
+                       PTUISliderRowTableViewCell, PTUISwitchRowTableViewCell, _KeypadButton, 
+                       _KeypadDismissButton, _PTUIChoiceCell ]
+...

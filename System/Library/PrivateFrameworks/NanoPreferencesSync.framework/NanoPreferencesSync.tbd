@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           5C9BD890-5B23-3D79-A044-9CE2BD0423EC
+  - target:          x86_64-ios-simulator
+    value:           FDA137B9-80A8-38DA-92B2-EC45A03B18A5
+  - target:          arm64-ios-simulator
+    value:           2076ECA1-53A4-3952-8DB3-F82714502279
+install-name:    '/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NPSHasCompletedInitialSync, _NPSLoggingDaemonObjectInit, 
+                       _NPSLoggingDomainAccessorObjectInit, _NPSLoggingFrameworkObjectInit, 
+                       _NPSManagedConfigurationClientID, _NPSShouldRun, _kNPSInitialSyncCompletionDarwinNotification, 
+                       _kNPSInitialSyncKey, _kNPSPathComponentsToBackupFolderWithinPairingDataStore, 
+                       _kNanoPreferencesSyncDomain, _nps_daemon_log, _nps_domain_accessor_log, 
+                       _nps_framework_log ]
+    objc-classes:    [ NPSDomainAccessor, NPSDomainAccessorFilePresenter, NPSDomainAccessorInternal, 
+                       NPSDomainAccessorUtils, NPSManager, NPSPrefPlistProtectedUtil, 
+                       NPSPrefPlistSizeUtil ]
+...

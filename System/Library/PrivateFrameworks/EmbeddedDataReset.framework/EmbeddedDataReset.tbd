@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           BBE3610E-4344-3E8B-8F77-16FCA93DE258
+  - target:          arm64-ios-simulator
+    value:           6882EA56-A79F-36C9-B81A-6A90DD1525B3
+install-name:    '/System/Library/PrivateFrameworks/EmbeddedDataReset.framework/EmbeddedDataReset'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ DDRResetOptions, DDRResetRequest, DDRResetService ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           87D1B5E6-8A4B-3DAD-8BEA-B55CD99A565F
+  - target:          arm64-ios-simulator
+    value:           7AC612FD-536B-3462-9222-0A4EA38807E8
+install-name:    '/System/Library/PrivateFrameworks/TipKit.framework/TipKit'
+current-version: 0
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _TipKitVersionNumber, _TipKitVersionString, _kTPKContentViewFrameworkBundle ]
+    objc-classes:    [ TPKContent, TPKContentController, TPKContentView, TPKContentViewController, 
+                       TPKTipContent, TPKTipContentCollectionHeaderView, TPKTipContentCollectionViewCell, 
+                       TPKTipContentHintView, TPKTipContentTableViewCell ]
+...

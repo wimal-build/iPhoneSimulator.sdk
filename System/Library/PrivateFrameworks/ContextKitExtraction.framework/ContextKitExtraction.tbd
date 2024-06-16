@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D877EA33-A2BD-3ADD-AC7B-DF2C1FE94C16
+  - target:          arm64-ios-simulator
+    value:           5AE605FF-7960-3AD9-B3A2-E7B2A731169F
+install-name:    '/System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ContextKitExtractionVersionNumber, _ContextKitExtractionVersionString ]
+    objc-classes:    [ CKContextContentProvider, CKContextContentProviderManager, 
+                       CKContextContentProviderUIScene, CKContextDonation, CKContextDonationItem, 
+                       CKContextExecutor ]
+...

@@ -1,0 +1,62 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           88F0A884-DB25-3584-864B-2D391FE4472B
+  - target:          arm64-ios-simulator
+    value:           0F0FE13A-D970-36FC-B1AB-442CE2198027
+install-name:    '/System/Library/PrivateFrameworks/MobileMailUI.framework/MobileMailUI'
+current-version: 3654.0.3
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _MFActivityTypeMailQuicklook, _MFActivityTypeMarkupDocument, 
+                       _MFActivityTypeQuicklook, _MFActivityTypeSaveAllAttachments, 
+                       _MFActivityTypeSaveToCameraRoll, _MFErrorPageMarkupFormat, 
+                       _MFMessageContentViewDidAppear, _MFMessageContentViewDidFinishFirstPaint, 
+                       _MFMessageContentViewDidFinishFirstPaintErrorKey, _MFMessageContentViewDidFinishFirstPaintMessageKey, 
+                       _MailApplicationAutoFetchStart, _MailApplicationAutoFetchStop, 
+                       _MailApplicationDidChangeAccountDisplayName, _MailApplicationDidChangeAccounts, 
+                       _MailApplicationDidChangeAccountsKeyAccountIdentifiers, _MailApplicationDidChangeAccountsKeyPreviousAccountIdentifiers, 
+                       _MailApplicationDidChangeConversationOrder, _MailApplicationDidChangeConversationViewCollapseReadMessagesNotification, 
+                       _MailApplicationDidChangeConversationViewIncludesRelatedMessages, 
+                       _MailApplicationDidChangePreviewLinesNotification, _MailApplicationDidChangeRemoteImageLoading, 
+                       _MailApplicationDidChangeShowToCCNotification, _MailApplicationDidChangeSwipeActions, 
+                       _MailApplicationDidFinishLaunching, _MailApplicationMemoryWarningNotification, 
+                       _MailApplicationProtectedDataDidBecomeAvailable, _MailApplicationProtectedDataForMailboxWasReconciled, 
+                       _MailApplicationProtectedDataWasReconciled, _MailApplicationProtectedDataWillBecomeUnavailable, 
+                       _MailApplicationStatusBarProgressDidHideNotification, _MailApplicationsDisableThreadingKeyChanged, 
+                       _MailInternalSettingsDidChange, _MailNavigationControllerAnimatedKey, 
+                       _MailNavigationControllerDidShowViewControllerNotification, 
+                       _MailNavigationControllerNewViewControllerKey, _MailNavigationControllerPreviousViewControllerKey, 
+                       _MailNavigationControllerWillShowViewControllerNotification, 
+                       _MailSceneNameComposeScene, _MailSceneNameConversationScene, 
+                       _MailSceneNameMainScene, _MailSceneSessionInfoActiveDraftIdentifier, 
+                       _SharedMailboxControllerBadgeCountDidChangeNotification, _SharedNetworkControllerBadgeCountKey, 
+                       _kAttachmentViewSupportSource, _kAttachmentViewSupportSourceLength, 
+                       _kMessageContentViewSource, _kMessageContentViewSourceLength, 
+                       _kMessageReformattingSource, _kMessageReformattingSourceLength ]
+    objc-classes:    [ ContentItemMarkupGenerator, ConversationFooterViewDisplayMetrics, 
+                       MFAddressAtomStatusManager, MFBlockedSenderBannerView, MFCardAction, 
+                       MFConversationItemFooterView, MFConversationItemRoundButton, 
+                       MFFlagColorCardAction, MFGradientView, MFHasMoreContentBannerView, 
+                       MFInternalSettingsCache, MFLoadBlockedContentBannerView, MFMailDropBannerView, 
+                       MFMessageContentURLProtocol, MFMessageContentView, MFMessageDisplayMetrics, 
+                       MFMessageDisplayMetricsCompact, MFMessageDisplayMetricsRegular, 
+                       MFMessageHeaderView, MFMessageHeaderViewBlock, MFQuotedContentAttribution, 
+                       MFReadableContentMarginCalculator, MFSuggestionBannerView, 
+                       MFUserScriptLibrary, MFWKWebViewFactory, MFWebViewDictionary, 
+                       MFWebViewLoadingController, MessageActivityViewController, 
+                       MessageAttachmentActionGenerator, MessageContentItemRepresentationTask, 
+                       MessageContentItemsHelper, MessageContentRepresentationRequest, 
+                       MessageContentRepresentationRequestDelegate, MessageHeaderViewModel, 
+                       MessageItemViewModel, MessageMarkupDocumentActivity, MessagePrintQuicklookableAttachmentActivity, 
+                       MessageQuicklookImageAttachmentsActivity, MessageSaveAllAttachmentsActivity, 
+                       MessageSaveImageAttachmentActivity, MessageSaveToCameraRollActivity, 
+                       MessageSaveVideoAttachmentActivity, SeparatorLayer, VIPManager, 
+                       _MFMessageContentResizeWrapperView, _MFMessageContentViewScriptHandler, 
+                       _MFPartiallyDownloadedBannerView, _MFPlainTextBannerView, 
+                       _MFTapPreventingRecognizer ]
+...

@@ -1,18 +1,29 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D7AE146E-1F1E-37F6-B105-8B080AB863DD' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           06612367-BF88-38AD-8FEC-8005C3997EBD
+  - target:          arm64-ios-simulator
+    value:           C9D55FDE-761C-3199-88A2-105F641783B5
 install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices'
-current-version: 609.3.5
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 610.1.28
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ASAuthorizationAppleIDProviderCredentialRevokedNotification, 
                        _ASAuthorizationErrorDomain, _ASAuthorizationOperationImplicit, 
                        _ASAuthorizationOperationLogin, _ASAuthorizationOperationLogout, 
-                       _ASAuthorizationOperationRefresh, _ASAuthorizationScopeEmail, 
-                       _ASAuthorizationScopeFullName, _ASCredentialIdentityStoreErrorDomain, 
-                       _ASExtensionErrorDomain, _ASWebAuthenticationSessionErrorDomain ]
-    objc-classes:    [ ASAuthorization, ASAuthorizationAppleIDButton, ASAuthorizationAppleIDCredential, 
+                       _ASAuthorizationOperationRefresh, _ASAuthorizationProviderAuthorizationOperationConfigurationRemoved, 
+                       _ASAuthorizationScopeEmail, _ASAuthorizationScopeFullName, 
+                       _ASCredentialIdentityStoreErrorDomain, _ASExtensionErrorDomain, 
+                       _ASExtensionLocalizedFailureReasonErrorKey, _ASWebAuthenticationSessionErrorDomain ]
+    objc-classes:    [ ASAccountAuthenticationModificationController, ASAccountAuthenticationModificationExtensionContext, 
+                       ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest, 
+                       ASAccountAuthenticationModificationRequest, ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest, 
+                       ASAccountAuthenticationModificationViewController, ASAuthorization, 
+                       ASAuthorizationAppleIDButton, ASAuthorizationAppleIDCredential, 
                        ASAuthorizationAppleIDProvider, ASAuthorizationAppleIDRequest, 
                        ASAuthorizationController, ASAuthorizationOpenIDRequest, ASAuthorizationPasswordProvider, 
                        ASAuthorizationPasswordRequest, ASAuthorizationProviderExtensionAuthorizationRequest, 
@@ -21,8 +32,8 @@ exports:
                        ASCredentialIdentityStore, ASCredentialIdentityStoreState, 
                        ASCredentialProviderExtensionContext, ASCredentialProviderViewController, 
                        ASCredentialServiceIdentifier, ASPasswordCredential, ASPasswordCredentialIdentity, 
-                       ASWebAuthenticationSession, _ASCredentialListViewController, 
-                       _ASCredentialProviderExtensionConfigurationViewController, 
-                       _ASCredentialProviderExtensionHostContext, _ASExtensionViewController, 
-                       _ASIncomingCallObserver, _ASPasswordCredentialAuthenticationViewController ]
+                       ASWebAuthenticationSession, _ASAccountAuthenticationModificationExtensionManager, 
+                       _ASAccountAuthenticationModificationHostViewController, _ASAccountAuthenticationModificationRemoteViewController, 
+                       _ASCredentialListViewController, _ASCredentialProviderExtensionConfigurationViewController, 
+                       _ASExtensionViewController, _ASIncomingCallObserver, _ASPasswordCredentialAuthenticationViewController ]
 ...

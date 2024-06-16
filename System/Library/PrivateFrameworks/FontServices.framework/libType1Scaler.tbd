@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           4C2DD4C2-78D6-3EBF-9483-705DB9EAAC81
+  - target:          x86_64-ios-simulator
+    value:           0A040F07-FAEF-3FC6-859D-3E5BCA86D92A
+  - target:          arm64-ios-simulator
+    value:           6C90103C-4B90-30A9-AED8-E452165528D5
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libType1Scaler.dylib'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _T1GetPSFontEncoding, _T1GetSynthesisData, _T1ReleaseSynthesisData, 
+                       _Type1ScalerOpen ]
+...

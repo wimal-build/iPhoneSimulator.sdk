@@ -1,0 +1,69 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           CA8DA179-D931-3621-8648-BF875191DAEE
+  - target:          arm64-ios-simulator
+    value:           5B7D5323-7C99-331D-AAAC-E895C2C1CF50
+install-name:    '/System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ ATXPBInfoSuggestion._appBundleIdentifier, ATXPBInfoSuggestion._archivedIntent, 
+                       ATXPBInfoSuggestion._archivedMetadata, ATXPBInfoSuggestion._clientModelId, 
+                       ATXPBInfoSuggestion._confidenceLevel, ATXPBInfoSuggestion._criterion, 
+                       ATXPBInfoSuggestion._endDate, ATXPBInfoSuggestion._has, ATXPBInfoSuggestion._layouts, 
+                       ATXPBInfoSuggestion._relevanceScore, ATXPBInfoSuggestion._sourceIdentifier, 
+                       ATXPBInfoSuggestion._startDate, ATXPBInfoSuggestion._suggestionIdentifier, 
+                       ATXPBInfoSuggestion._widgetBundleIdentifier, ATXPBInfoSuggestion._widgetKind, 
+                       ATXPBProactiveSuggestion._clientModelSpecification, ATXPBProactiveSuggestion._executableSpecification, 
+                       ATXPBProactiveSuggestion._scoreSpecification, ATXPBProactiveSuggestion._uiSpecification, 
+                       ATXPBProactiveSuggestion._uuidString, ATXPBProactiveSuggestionClientModelSpecification._clientModelId, 
+                       ATXPBProactiveSuggestionClientModelSpecification._clientModelVersion, 
+                       ATXPBProactiveSuggestionClientModelSpecification._engagementResetPolicy, 
+                       ATXPBProactiveSuggestionClientModelSpecification._has, ATXPBProactiveSuggestionExecutableSpecification._executable, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableClassString, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableDescription, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableIdentifier, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableObjectHash, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableType, 
+                       ATXPBProactiveSuggestionExecutableSpecification._has, ATXPBProactiveSuggestionLayoutConfig._applicableLayoutType, 
+                       ATXPBProactiveSuggestionLayoutConfig._has, ATXPBProactiveSuggestionScoreSpecification._has, 
+                       ATXPBProactiveSuggestionScoreSpecification._rawScore, ATXPBProactiveSuggestionScoreSpecification._suggestedConfidenceCategory, 
+                       ATXPBProactiveSuggestionUISpecification._allowedOnHomeScreen, 
+                       ATXPBProactiveSuggestionUISpecification._allowedOnLockscreen, 
+                       ATXPBProactiveSuggestionUISpecification._allowedOnSpotlight, 
+                       ATXPBProactiveSuggestionUISpecification._has, ATXPBProactiveSuggestionUISpecification._preferredLayoutConfigs, 
+                       ATXPBProactiveSuggestionUISpecification._reason, ATXPBProactiveSuggestionUISpecification._shouldClearOnEngagement, 
+                       ATXPBProactiveSuggestionUISpecification._subtitle, ATXPBProactiveSuggestionUISpecification._title ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ATXInfoSuggestionXPCInterface, _ATXPBInfoSuggestionReadFrom, 
+                       _ATXPBProactiveSuggestionClientModelSpecificationReadFrom, 
+                       _ATXPBProactiveSuggestionExecutableSpecificationReadFrom, 
+                       _ATXPBProactiveSuggestionLayoutConfigReadFrom, _ATXPBProactiveSuggestionReadFrom, 
+                       _ATXPBProactiveSuggestionScoreSpecificationReadFrom, _ATXPBProactiveSuggestionUISpecificationReadFrom, 
+                       _ATXProactiveSuggestionClientModelXPCInterface, _ProactiveSuggestionClientModelVersionNumber, 
+                       _ProactiveSuggestionClientModelVersionString, _kATXClientModelRefreshBlendingLayerDarwinNotificationName, 
+                       _kATXInfoSuggestionKeyAppBundleIdentifier, _kATXInfoSuggestionKeyApplicableLayouts, 
+                       _kATXInfoSuggestionKeyClientModelId, _kATXInfoSuggestionKeyConfidenceLevel, 
+                       _kATXInfoSuggestionKeyCriterion, _kATXInfoSuggestionKeyEndDate, 
+                       _kATXInfoSuggestionKeyIntent, _kATXInfoSuggestionKeyIntentDescription, 
+                       _kATXInfoSuggestionKeyMetadata, _kATXInfoSuggestionKeyRelevanceScore, 
+                       _kATXInfoSuggestionKeySourceIdentifier, _kATXInfoSuggestionKeyStartDate, 
+                       _kATXInfoSuggestionKeySuggestionIdentifier, _kATXInfoSuggestionKeyWidgetBundleIdentifier, 
+                       _kATXInfoSuggestionKeyWidgetKind, _kATXInfoSuggestionXPCInterfaceMachServiceName, 
+                       _kATXProactiveSuggestionClientModelXPCInterfaceMachServiceName ]
+    objc-classes:    [ ATXCustomIntentDescription, ATXInfoSuggestion, ATXInfoSuggestionFeedbackClient, 
+                       ATXInfoTimelineDonationClient, ATXInfoTimelineEntry, ATXInfoTimelineEntryRelevance, 
+                       ATXMemoryPressureMonitor, ATXPBInfoSuggestion, ATXPBProactiveSuggestion, 
+                       ATXPBProactiveSuggestionClientModelSpecification, ATXPBProactiveSuggestionExecutableSpecification, 
+                       ATXPBProactiveSuggestionLayoutConfig, ATXPBProactiveSuggestionScoreSpecification, 
+                       ATXPBProactiveSuggestionUISpecification, ATXProactiveCardSuggestionClient, 
+                       ATXProactiveSuggestion, ATXProactiveSuggestionClientModel, 
+                       ATXProactiveSuggestionClientModelSpecification, ATXProactiveSuggestionExecutableSpecification, 
+                       ATXProactiveSuggestionLayoutConfig, ATXProactiveSuggestionScoreSpecification, 
+                       ATXProactiveSuggestionUISpecification, ATXTimelineEntryToInfoSuggestionMapping, 
+                       ATXTimelineRelevanceAbuseControlOutcome ]
+...

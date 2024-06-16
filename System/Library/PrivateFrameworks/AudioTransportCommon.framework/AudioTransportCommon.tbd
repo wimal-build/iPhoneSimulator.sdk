@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           2563BF59-A0FB-398B-AB99-5DE901A23A62
+  - target:          arm64-ios-simulator
+    value:           45476BFE-D34C-30AD-AB1E-03FFF778446A
+install-name:    '/System/Library/PrivateFrameworks/AudioTransportCommon.framework/AudioTransportCommon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AudioTransportCommonVersionNumber, _AudioTransportCommonVersionString ]
+    objc-classes:    [ ATCIOA2Device, ATCIOA2Stream, ATCIOA2StreamFormat ]
+...

@@ -1,11 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A9FCC99A-209C-348E-BB79-0A29A5FCB82B', 'x86_64: 173BF1F0-51E3-3CCD-A532-ACD7393D8C58' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           7CE1FBA8-3A82-3977-82FA-F43B16743317
+  - target:          x86_64-ios-simulator
+    value:           9E6E2846-57F0-3F7A-893D-3F6540D7C803
+  - target:          arm64-ios-simulator
+    value:           1F08BEF1-3DDD-3A6D-9AEC-930B7D525BB9
 install-name:    '/usr/lib/libc++.1.dylib'
-current-version: 902
-exports:         
-  - archs:           [ i386 ]
+current-version: 904.4
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/usr/lib/libc++abi.dylib' ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZNKSt3__18messagesIcE6do_getEiiiRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
                        __ZNKSt3__18messagesIcE8do_closeEi, __ZNKSt3__18messagesIwE6do_getEiiiRKNS_12basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEE, 
                        __ZNKSt3__18messagesIwE8do_closeEi, __ZNSt3__111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILx1ELx1000000000EEEEE, 
@@ -65,8 +74,22 @@ exports:
                        __ZTv0_n12_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev, 
                        __ZTv0_n12_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev, 
                        __ZTv0_n12_NSt3__19strstreamD0Ev, __ZTv0_n12_NSt3__19strstreamD1Ev ]
-    weak-def-symbols: [ __ZdaPvm, __ZdlPvm ]
-  - archs:           [ x86_64 ]
+    weak-symbols:    [ __ZdaPvm, __ZdlPvm ]
+  - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ __ZTINSt3__110__time_getE, __ZTINSt3__110__time_putE, __ZTINSt3__110ctype_baseE, 
+                       __ZTINSt3__110money_baseE, __ZTINSt3__111__money_getIcEE, 
+                       __ZTINSt3__111__money_getIwEE, __ZTINSt3__111__money_putIcEE, 
+                       __ZTINSt3__111__money_putIwEE, __ZTINSt3__112codecvt_baseE, 
+                       __ZTINSt3__113messages_baseE, __ZTINSt3__114__num_get_baseE, 
+                       __ZTINSt3__114__num_put_baseE, __ZTINSt3__118__time_get_storageIcEE, 
+                       __ZTINSt3__118__time_get_storageIwEE, __ZTINSt3__120__time_get_c_storageIcEE, 
+                       __ZTINSt3__120__time_get_c_storageIwEE, __ZTINSt3__19__num_getIcEE, 
+                       __ZTINSt3__19__num_getIwEE, __ZTINSt3__19__num_putIcEE, __ZTINSt3__19__num_putIwEE, 
+                       __ZTINSt3__19time_baseE, __ZTSNSt3__110ctype_baseE, __ZTSNSt3__110money_baseE, 
+                       __ZTSNSt3__112codecvt_baseE, __ZTSNSt3__113messages_baseE, 
+                       __ZTSNSt3__19__num_getIcEE, __ZTSNSt3__19__num_getIwEE, __ZTSNSt3__19__num_putIcEE, 
+                       __ZTSNSt3__19__num_putIwEE, __ZTSNSt3__19time_baseE ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __ZNKSt12bad_any_cast4whatEv, __ZNKSt12experimental15fundamentals_v112bad_any_cast4whatEv, 
                        __ZNKSt18bad_variant_access4whatEv, __ZNKSt19bad_optional_access4whatEv, 
                        __ZNKSt3__14__fs10filesystem18directory_iterator13__dereferenceEv, 
@@ -122,7 +145,13 @@ exports:
                        __ZNSt3__115basic_streambufIwNS_11char_traitsIwEEE6xsputnEPKwl, 
                        __ZNSt3__115basic_streambufIwNS_11char_traitsIwEEE9pubsetbufEPwl, 
                        __ZNSt3__118condition_variable15__do_timed_waitERNS_11unique_lockINS_5mutexEEENS_6chrono10time_pointINS5_12system_clockENS5_8durationIxNS_5ratioILl1ELl1000000000EEEEEEE, 
-                       __ZNSt3__14__fs10filesystem10__absoluteERKNS1_4pathEPNS_10error_codeE, 
+                       __ZNSt3__120__libcpp_atomic_waitEPVKNS_17__cxx_atomic_implIxNS_22__cxx_atomic_base_implIxEEEEx, 
+                       __ZNSt3__120__libcpp_atomic_waitEPVKvx, __ZNSt3__123__cxx_atomic_notify_allEPVKNS_17__cxx_atomic_implIxNS_22__cxx_atomic_base_implIxEEEE, 
+                       __ZNSt3__123__cxx_atomic_notify_allEPVKv, __ZNSt3__123__cxx_atomic_notify_oneEPVKNS_17__cxx_atomic_implIxNS_22__cxx_atomic_base_implIxEEEE, 
+                       __ZNSt3__123__cxx_atomic_notify_oneEPVKv, __ZNSt3__123__libcpp_atomic_monitorEPVKNS_17__cxx_atomic_implIxNS_22__cxx_atomic_base_implIxEEEE, 
+                       __ZNSt3__123__libcpp_atomic_monitorEPVKv, __ZNSt3__131__arrive_barrier_algorithm_baseEPNS_24__barrier_algorithm_baseEh, 
+                       __ZNSt3__132__destroy_barrier_algorithm_baseEPNS_24__barrier_algorithm_baseE, 
+                       __ZNSt3__134__construct_barrier_algorithm_baseERl, __ZNSt3__14__fs10filesystem10__absoluteERKNS1_4pathEPNS_10error_codeE, 
                        __ZNSt3__14__fs10filesystem10hash_valueERKNS1_4pathE, __ZNSt3__14__fs10filesystem11__canonicalERKNS1_4pathEPNS_10error_codeE, 
                        __ZNSt3__14__fs10filesystem11__copy_fileERKNS1_4pathES4_NS1_12copy_optionsEPNS_10error_codeE, 
                        __ZNSt3__14__fs10filesystem11__file_sizeERKNS1_4pathEPNS_10error_codeE, 
@@ -197,8 +226,7 @@ exports:
                        __ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED0Ev, 
                        __ZTv0_n24_NSt3__114basic_iostreamIcNS_11char_traitsIcEEED1Ev, 
                        __ZTv0_n24_NSt3__19strstreamD0Ev, __ZTv0_n24_NSt3__19strstreamD1Ev ]
-  - archs:           [ i386, x86_64 ]
-    re-exports:      [ '/usr/lib/libc++abi.dylib' ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __ZNKSt16nested_exception14rethrow_nestedEv, __ZNKSt3__110__time_put8__do_putEPcRS1_PK2tmcc, 
                        __ZNKSt3__110__time_put8__do_putEPwRS1_PK2tmcc, __ZNKSt3__110error_code7messageEv, 
                        __ZNKSt3__110moneypunctIcLb0EE11do_groupingEv, __ZNKSt3__110moneypunctIcLb0EE13do_neg_formatEv, 
@@ -1082,21 +1110,16 @@ exports:
                        __ZTCNSt3__114basic_iostreamIcNS_11char_traitsIcEEEE0_NS_13basic_istreamIcS2_EE, 
                        __ZTCNSt3__19strstreamE0_NS_13basic_istreamIcNS_11char_traitsIcEEEE, 
                        __ZTCNSt3__19strstreamE0_NS_14basic_iostreamIcNS_11char_traitsIcEEEE, 
-                       __ZTINSt3__110__time_getE, __ZTINSt3__110__time_putE, __ZTINSt3__110ctype_baseE, 
-                       __ZTINSt3__110istrstreamE, __ZTINSt3__110money_baseE, __ZTINSt3__110moneypunctIcLb0EEE, 
+                       __ZTINSt3__110istrstreamE, __ZTINSt3__110moneypunctIcLb0EEE, 
                        __ZTINSt3__110moneypunctIcLb1EEE, __ZTINSt3__110moneypunctIwLb0EEE, 
                        __ZTINSt3__110moneypunctIwLb1EEE, __ZTINSt3__110ostrstreamE, 
-                       __ZTINSt3__111__money_getIcEE, __ZTINSt3__111__money_getIwEE, 
-                       __ZTINSt3__111__money_putIcEE, __ZTINSt3__111__money_putIwEE, 
-                       __ZTINSt3__111regex_errorE, __ZTINSt3__112bad_weak_ptrE, __ZTINSt3__112codecvt_baseE, 
-                       __ZTINSt3__112ctype_bynameIcEE, __ZTINSt3__112ctype_bynameIwEE, 
-                       __ZTINSt3__112future_errorE, __ZTINSt3__112strstreambufE, 
-                       __ZTINSt3__112system_errorE, __ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE, 
-                       __ZTINSt3__113basic_istreamIwNS_11char_traitsIwEEEE, __ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE, 
-                       __ZTINSt3__113basic_ostreamIwNS_11char_traitsIwEEEE, __ZTINSt3__113messages_baseE, 
+                       __ZTINSt3__111regex_errorE, __ZTINSt3__112bad_weak_ptrE, __ZTINSt3__112ctype_bynameIcEE, 
+                       __ZTINSt3__112ctype_bynameIwEE, __ZTINSt3__112future_errorE, 
+                       __ZTINSt3__112strstreambufE, __ZTINSt3__112system_errorE, 
+                       __ZTINSt3__113basic_istreamIcNS_11char_traitsIcEEEE, __ZTINSt3__113basic_istreamIwNS_11char_traitsIwEEEE, 
+                       __ZTINSt3__113basic_ostreamIcNS_11char_traitsIcEEEE, __ZTINSt3__113basic_ostreamIwNS_11char_traitsIwEEEE, 
                        __ZTINSt3__114__codecvt_utf8IDiEE, __ZTINSt3__114__codecvt_utf8IDsEE, 
-                       __ZTINSt3__114__codecvt_utf8IwEE, __ZTINSt3__114__num_get_baseE, 
-                       __ZTINSt3__114__num_put_baseE, __ZTINSt3__114__shared_countE, 
+                       __ZTINSt3__114__codecvt_utf8IwEE, __ZTINSt3__114__shared_countE, 
                        __ZTINSt3__114basic_iostreamIcNS_11char_traitsIcEEEE, __ZTINSt3__114codecvt_bynameIDic11__mbstate_tEE, 
                        __ZTINSt3__114codecvt_bynameIDsc11__mbstate_tEE, __ZTINSt3__114codecvt_bynameIcc11__mbstate_tEE, 
                        __ZTINSt3__114codecvt_bynameIwc11__mbstate_tEE, __ZTINSt3__114collate_bynameIcEE, 
@@ -1115,11 +1138,9 @@ exports:
                        __ZTINSt3__117__assoc_sub_stateE, __ZTINSt3__117__widen_from_utf8ILm16EEE, 
                        __ZTINSt3__117__widen_from_utf8ILm32EEE, __ZTINSt3__117moneypunct_bynameIcLb0EEE, 
                        __ZTINSt3__117moneypunct_bynameIcLb1EEE, __ZTINSt3__117moneypunct_bynameIwLb0EEE, 
-                       __ZTINSt3__117moneypunct_bynameIwLb1EEE, __ZTINSt3__118__time_get_storageIcEE, 
-                       __ZTINSt3__118__time_get_storageIwEE, __ZTINSt3__119__shared_weak_countE, 
+                       __ZTINSt3__117moneypunct_bynameIwLb1EEE, __ZTINSt3__119__shared_weak_countE, 
                        __ZTINSt3__120__codecvt_utf8_utf16IDiEE, __ZTINSt3__120__codecvt_utf8_utf16IDsEE, 
-                       __ZTINSt3__120__codecvt_utf8_utf16IwEE, __ZTINSt3__120__time_get_c_storageIcEE, 
-                       __ZTINSt3__120__time_get_c_storageIwEE, __ZTINSt3__15ctypeIcEE, 
+                       __ZTINSt3__120__codecvt_utf8_utf16IwEE, __ZTINSt3__15ctypeIcEE, 
                        __ZTINSt3__15ctypeIwEE, __ZTINSt3__16locale5facetE, __ZTINSt3__17codecvtIDic11__mbstate_tEE, 
                        __ZTINSt3__17codecvtIDsc11__mbstate_tEE, __ZTINSt3__17codecvtIcc11__mbstate_tEE, 
                        __ZTINSt3__17codecvtIwc11__mbstate_tEE, __ZTINSt3__17collateIcEE, 
@@ -1133,22 +1154,19 @@ exports:
                        __ZTINSt3__18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
                        __ZTINSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTINSt3__18time_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
-                       __ZTINSt3__19__num_getIcEE, __ZTINSt3__19__num_getIwEE, __ZTINSt3__19__num_putIcEE, 
-                       __ZTINSt3__19__num_putIwEE, __ZTINSt3__19basic_iosIcNS_11char_traitsIcEEEE, 
-                       __ZTINSt3__19basic_iosIwNS_11char_traitsIwEEEE, __ZTINSt3__19money_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
+                       __ZTINSt3__19basic_iosIcNS_11char_traitsIcEEEE, __ZTINSt3__19basic_iosIwNS_11char_traitsIwEEEE, 
+                       __ZTINSt3__19money_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTINSt3__19money_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
                        __ZTINSt3__19money_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTINSt3__19money_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
-                       __ZTINSt3__19strstreamE, __ZTINSt3__19time_baseE, __ZTSNSt3__110ctype_baseE, 
-                       __ZTSNSt3__110istrstreamE, __ZTSNSt3__110money_baseE, __ZTSNSt3__110moneypunctIcLb0EEE, 
+                       __ZTINSt3__19strstreamE, __ZTSNSt3__110istrstreamE, __ZTSNSt3__110moneypunctIcLb0EEE, 
                        __ZTSNSt3__110moneypunctIcLb1EEE, __ZTSNSt3__110moneypunctIwLb0EEE, 
                        __ZTSNSt3__110moneypunctIwLb1EEE, __ZTSNSt3__110ostrstreamE, 
-                       __ZTSNSt3__111regex_errorE, __ZTSNSt3__112bad_weak_ptrE, __ZTSNSt3__112codecvt_baseE, 
-                       __ZTSNSt3__112ctype_bynameIcEE, __ZTSNSt3__112ctype_bynameIwEE, 
-                       __ZTSNSt3__112future_errorE, __ZTSNSt3__112strstreambufE, 
-                       __ZTSNSt3__112system_errorE, __ZTSNSt3__113basic_istreamIcNS_11char_traitsIcEEEE, 
-                       __ZTSNSt3__113basic_istreamIwNS_11char_traitsIwEEEE, __ZTSNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE, 
-                       __ZTSNSt3__113basic_ostreamIwNS_11char_traitsIwEEEE, __ZTSNSt3__113messages_baseE, 
+                       __ZTSNSt3__111regex_errorE, __ZTSNSt3__112bad_weak_ptrE, __ZTSNSt3__112ctype_bynameIcEE, 
+                       __ZTSNSt3__112ctype_bynameIwEE, __ZTSNSt3__112future_errorE, 
+                       __ZTSNSt3__112strstreambufE, __ZTSNSt3__112system_errorE, 
+                       __ZTSNSt3__113basic_istreamIcNS_11char_traitsIcEEEE, __ZTSNSt3__113basic_istreamIwNS_11char_traitsIwEEEE, 
+                       __ZTSNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE, __ZTSNSt3__113basic_ostreamIwNS_11char_traitsIwEEEE, 
                        __ZTSNSt3__114basic_iostreamIcNS_11char_traitsIcEEEE, __ZTSNSt3__114collate_bynameIcEE, 
                        __ZTSNSt3__114collate_bynameIwEE, __ZTSNSt3__114error_categoryE, 
                        __ZTSNSt3__115basic_streambufIcNS_11char_traitsIcEEEE, __ZTSNSt3__115basic_streambufIwNS_11char_traitsIwEEEE, 
@@ -1173,14 +1191,13 @@ exports:
                        __ZTSNSt3__18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
                        __ZTSNSt3__18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTSNSt3__18time_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
-                       __ZTSNSt3__19__num_getIcEE, __ZTSNSt3__19__num_getIwEE, __ZTSNSt3__19__num_putIcEE, 
-                       __ZTSNSt3__19__num_putIwEE, __ZTSNSt3__19basic_iosIcNS_11char_traitsIcEEEE, 
-                       __ZTSNSt3__19basic_iosIwNS_11char_traitsIwEEEE, __ZTSNSt3__19money_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
+                       __ZTSNSt3__19basic_iosIcNS_11char_traitsIcEEEE, __ZTSNSt3__19basic_iosIwNS_11char_traitsIwEEEE, 
+                       __ZTSNSt3__19money_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTSNSt3__19money_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
                        __ZTSNSt3__19money_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTSNSt3__19money_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
-                       __ZTSNSt3__19strstreamE, __ZTSNSt3__19time_baseE, __ZTSSt16nested_exception, 
-                       __ZTTNSt3__110istrstreamE, __ZTTNSt3__110ostrstreamE, __ZTTNSt3__113basic_istreamIcNS_11char_traitsIcEEEE, 
+                       __ZTSNSt3__19strstreamE, __ZTSSt16nested_exception, __ZTTNSt3__110istrstreamE, 
+                       __ZTTNSt3__110ostrstreamE, __ZTTNSt3__113basic_istreamIcNS_11char_traitsIcEEEE, 
                        __ZTTNSt3__113basic_istreamIwNS_11char_traitsIwEEEE, __ZTTNSt3__113basic_ostreamIcNS_11char_traitsIcEEEE, 
                        __ZTTNSt3__113basic_ostreamIwNS_11char_traitsIwEEEE, __ZTTNSt3__114basic_iostreamIcNS_11char_traitsIcEEEE, 
                        __ZTTNSt3__19strstreamE, __ZTVNSt3__110istrstreamE, __ZTVNSt3__110moneypunctIcLb0EEE, 
@@ -1233,5 +1250,5 @@ exports:
                        __ZTVNSt3__19money_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE, 
                        __ZTVNSt3__19money_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE, 
                        __ZTVNSt3__19strstreamE, __ZTVSt16nested_exception ]
-    weak-def-symbols: [ __ZTISt16nested_exception ]
+    weak-symbols:    [ __ZTISt16nested_exception ]
 ...

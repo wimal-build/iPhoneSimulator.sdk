@@ -1,0 +1,86 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           EBDFBDA9-CB34-39BA-812E-607502E3AFCE
+  - target:          x86_64-ios-simulator
+    value:           04D6CA14-0593-3261-9FAC-97C53EA22381
+  - target:          arm64-ios-simulator
+    value:           4FB6C2C0-376A-3DDD-836C-674923FE8DFC
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/DataAccess'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _kDATaskManagerUnitTestFakePowerIdentifier ]
+    objc-classes:    [ ASTrafficLogger, DAConvertCRtoCRLFStream ]
+    objc-ivars:      [ ASTrafficLogger._didFlushLogs, ASTrafficLogger._isOutgoingTraffic, 
+                       ASTrafficLogger._lookasideFileHandle, ASTrafficLogger._lookasideFilePath, 
+                       DAConvertCRtoCRLFStream._clientCallback, DAConvertCRtoCRLFStream._clientContext, 
+                       DAConvertCRtoCRLFStream._delegate, DAConvertCRtoCRLFStream._intendToStream, 
+                       DAConvertCRtoCRLFStream._lastByteCopiedWasCR, DAConvertCRtoCRLFStream._mimeData, 
+                       DAConvertCRtoCRLFStream._openEventSent, DAConvertCRtoCRLFStream._postflightData, 
+                       DAConvertCRtoCRLFStream._preflightData, DAConvertCRtoCRLFStream._readOffset, 
+                       DAConvertCRtoCRLFStream._rls, DAConvertCRtoCRLFStream._streamStatus, 
+                       DAConvertCRtoCRLFStream._totalLength, DAConvertCRtoCRLFStream._trafficLogger, 
+                       DAUserNotificationInfo._groupIdentifier, DAUserNotificationInfo._handler ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    objc-ivars:      [ DAAccount._continueCount, DAAccount._isFetchingAutomatically, 
+                       DAAccount._xpcActivity, DAActivity._account, DATaskManager._daActivity ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _DAAccountFolderContentsChangedNotification, _DAAccountFolderHierarchyChangedNotification, 
+                       _DAAccountFolderHierarchyNeedsUpdateNotification, _DAAccountFolderHierarchyNeedsUpdateRequireChangedFoldersNotification, 
+                       _DAAccountFolderUpdatedWithNoChangesNotification, _DAAccountPushedFolderPreferencesChangedNotification, 
+                       _DAAccountValidationDomain, _DACalendarBundleIdentifier, _DAContactsBundleIdentifier, 
+                       _DAGetSyncImageForPerson, _DAIsRunningInDataAccessD, _DAMigrationIsNeeded, 
+                       _DAModelString, _DAPhoneBundleIdentifier, _DAProductString, 
+                       _DAReListenForAccounts, _DAStringFromCalEntityType, _DAUpdateMigrationVersion, 
+                       _DAUserAgent, _DAWeakLinkClass, _DAWeakLinkSymbol, __DASecCopyIdentityFromPersist, 
+                       __DASecDeleteIdentityByPersistentRef, __DASecIdentityCopySSLClientAuthenticationChain, 
+                       _acDataclassForDADataclass, _acDataclassesForDADataclasses, 
+                       _addNullRunLoopSourceForRunLoopAndModes, _appBundleIDsForDADataclasses, 
+                       _areDADiagnosticsEnabled, _daDataclassForACDataclass, _daDataclassesForACDataclasses, 
+                       _daDeviceID, _dataaccess_get_global_queue, _flockWithProcessAssertion, 
+                       _kDAAccountDoNotSaveReason, _kDAAccountEmailAddress, _kDAAccountHost, 
+                       _kDAAccountIdentifiersToIgnoreForUniquenessCheck, _kDAAccountOldKeychainURLs, 
+                       _kDAAccountPersistentUUID, _kDAAccountPersistentUUIDOldKey, 
+                       _kDAAccountPort, _kDAAccountPrincipalPath, _kDAAccountSavePreflighted, 
+                       _kDAAccountStolenDisplayUsername, _kDAAccountUseSSL, _kDAAccountUseTrustedSSLCertificate, 
+                       _kDAAccountVersion2Key, _kDAAccountWasUpgradedFromLegacyAccount, 
+                       _kDAClientNameForChangeInsertion, _kDADidAutodiscoverKey, 
+                       _kDAEASEndPointFQDN, _kDAEncryptionIdentityPersistentReference, 
+                       _kDAExchangeOAuthSupportedKey, _kDAExchangeOAuthURI, _kDAExchangeTokenRequestURI, 
+                       _kDAIdentityPersist, _kDAIdentityPersistIsManagedByProfile, 
+                       _kDAPowerLogCalendarItemsDownloadedEventName, _kDAPowerLogCalendarItemsUploadedEventName, 
+                       _kDAPowerLogContainerID, _kDAPowerLogNumberOfItemsChanged, 
+                       _kDAPowerLogSyncAccountClass, _kDAPowerLogSyncAccountID, _kDAPowerLogSyncAccountName, 
+                       _kDAPowerLogSyncEndEventName, _kDAPowerLogSyncStartEventName, 
+                       _kDASigningIdentityPersistentReference, _kDATrustSettingsExceptions, 
+                       _kGenericDAAccountType, _kGenericDAAccountWithLoggingType, 
+                       _kSubCalCalendarStoreExternalId, _runLoopModesToPerformDelayedSelectorsIn, 
+                       _setDAIsRunningInDataAccessD, _sharedDAAccountStore, _statusAndErrorIndicatePersistentFolderSyncFailure, 
+                       _statusAndErrorIndicateWeShouldTurnOnReachability, _walkUpDAErrorChain ]
+    objc-classes:    [ ASAccountActor, ContactFolderItemsSyncContext, DAABLegacyAccount, 
+                       DAABLegacyContainer, DAAccount, DAAccountChangeHandler, DAAccountChangeUpdaterAccountStoreWrapper, 
+                       DAAccountClassNames, DAAccountLoader, DAAccountMonitor, DAAccountUpgrader, 
+                       DAAction, DAActivity, DAAggDReporter, DAAnalyticsReporter, 
+                       DABabysitter, DAContactsAccountProvider, DAContactsBasedAccount, 
+                       DAContactsContainer, DAContainerProvider, DADataHandler, DADraftMessageRequest, 
+                       DAEditPropertyAction, DAFolder, DAKeychain, DALocalDBGateKeeper, 
+                       DALocalDBHelper, DALocalDBWatcher, DAMailMessage, DAMailboxDeleteMessageRequest, 
+                       DAMailboxFetchMessageRequest, DAMailboxFetchSearchResultRequest, 
+                       DAMailboxGetUpdatesRequest, DAMailboxRequest, DAMailboxSetFlagsRequest, 
+                       DAMessageFetchAttachmentRequest, DAMessageMoveRequest, DAMoveAction, 
+                       DAMoveResponse, DAPowerAssertionManager, DAPriorityManager, 
+                       DAPriorityRequest, DAResolveRecipientsRequest, DAResolvedRecipient, 
+                       DAResponse, DARunLoopRegistry, DAStoreSyncStatusUpdater, DATaskManager, 
+                       DATrafficLogger, DATransaction, DATransactionMonitor, DATrustHandler, 
+                       DAUserNotificationInfo, DAUserNotificationUtilities, DAWaiterWrapper, 
+                       DAiCalendarLogger, EventsFolderItemsSyncContext, _DAABLegacyContainerProvider, 
+                       _DAContactsAccountABLegacyProvider, _DAContactsAccountContactsProvider, 
+                       _DAContactsContainerProvider ]
+    objc-ivars:      [ DAAccount._taskManager, DAAccountClassNames._accountClassName, 
+                       DAAccountClassNames._agentClassName, DAAccountClassNames._clientAccountClassName, 
+                       DAAccountClassNames._daemonAccountClassName, DADataHandler._container, 
+                       DATaskManager._account, DATaskManager._transaction, DAWaiterWrapper._completionHandler, 
+                       DAWaiterWrapper._dataclasses, DAWaiterWrapper._waiter, DAWaiterWrapper._waiterNum ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           66E39DA4-8665-3C85-AA0A-9C2647ED9A9E
+  - target:          arm64-ios-simulator
+    value:           A2EFB413-7C2F-3E38-8534-F5CBA78B7297
+install-name:    '/System/Library/PrivateFrameworks/CARDNDUI.framework/CARDNDUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CARDNDUIVersionNumber, _CARDNDUIVersionString ]
+    objc-classes:    [ CARDNDLearnMoreViewController, _CARLearnMoreViewController ]
+...

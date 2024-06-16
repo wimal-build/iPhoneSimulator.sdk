@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           02C8C25A-608B-3C37-AC09-A44142E49DAD
+  - target:          arm64-ios-simulator
+    value:           79C08EB4-FF31-3A22-9A7E-0FEBA7550EAE
+install-name:    '/System/Library/PrivateFrameworks/TVUIKit.framework/TVUIKit'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ _TVCarouselView, _TVContentRating, _TVContentRatingBadgeManager, 
+                       _TVContentRatingSystemUtilities, _TVContentRatingTextBadgeView ]
+...

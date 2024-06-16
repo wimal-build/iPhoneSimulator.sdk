@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           35295C4C-226B-3E05-8CB7-0209991CE6B4
+  - target:          arm64-ios-simulator
+    value:           FD11414D-45C8-329D-B1F1-0C5593B42027
+install-name:    '/System/Library/PrivateFrameworks/TouchML.framework/TouchML'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _TMLAttributedStringForMarkdown, _TouchML_init, _kTMLRuntimeFinalizeSignal, 
+                       _kTMLRuntimeInitializeSignal ]
+    objc-classes:    [ TMLAspect, TMLBlock, TMLContext, TMLExceptionHandler, TMLJSONObject, 
+                       TMLJSONSchema, TMLObjectFinalizer, TMLRuntimeObject, TMLTypes, 
+                       TMLWeakReferenceObject ]
+...

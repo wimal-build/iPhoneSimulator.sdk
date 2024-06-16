@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22', 'x86_64: E7224805-CB30-3944-9E23-9A888DDDC851' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22
+  - target:          x86_64-ios-simulator
+    value:           98C0010B-87A0-3A49-BD6E-18428DB0F599
+  - target:          arm64-ios-simulator
+    value:           67F38CD0-E32A-3BF4-8A58-BD4D87C44E84
 install-name:    '/usr/lib/swift/libswiftObjectiveC.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftObjectiveC.dylib', 
                        '$ld$install_name$os10.1$@rpath/libswiftObjectiveC.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftObjectiveC.dylib', 

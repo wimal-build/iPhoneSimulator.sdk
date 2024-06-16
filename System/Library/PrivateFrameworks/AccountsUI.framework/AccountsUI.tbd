@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           E58FDC99-3FFE-312D-B6F5-967F896705BB
+  - target:          x86_64-ios-simulator
+    value:           9CB5DEB9-7E80-38C5-A79F-E29B46F7C9F0
+  - target:          arm64-ios-simulator
+    value:           3F742CC6-0AC9-3551-87F5-D4BC227407A4
+install-name:    '/System/Library/PrivateFrameworks/AccountsUI.framework/AccountsUI'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ACUIAccountCollectionSpecifiersKey, _ACUIAccountCollectionTitleKey, 
+                       _ACUIAccountIdentifierKey, _ACUIAccountKey, _ACUIAccountPropertyDisplayUsername, 
+                       _ACUIAccountSetupDidFinish, _ACUIAccountSimpleDisplayNameKey, 
+                       _ACUIAlreadyShowedEnableAndDeleteKey, _ACUIDescriptionFromEmailAddress, 
+                       _ACUIForceMailSetupKey, _ACUIIsMultiUserMode, __ACUILogSystem, 
+                       _kAccountsUIFakeDataclassStockholm ]
+    objc-classes:    [ ACUIAccountCollectionLinkCell, ACUIAccountCollectionViewController, 
+                       ACUIAccountConfigurationViewController, ACUIAccountOperationsHelper, 
+                       ACUIAccountSummaryCell, ACUIAccountViewProvidersManager, ACUIAddAccountViewController, 
+                       ACUIAddMailAccountViewController, ACUIAppDescription, ACUIAppInstallCell, 
+                       ACUIAppInstaller, ACUIDataclassActionPicker, ACUIDataclassConfigurationViewController, 
+                       ACUIIdentityPickerViewController, ACUILinkButton, ACUILinkButtonFooterView, 
+                       ACUILocalization, ACUISettingsPluginManager, ACUISetupViewController, 
+                       ACUISpinnerTitle, ACUITextWithLinkButtonFooterView, ACUIViewController ]
+...

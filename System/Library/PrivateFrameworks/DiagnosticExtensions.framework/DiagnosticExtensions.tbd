@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A19AFD2A-3314-3AB8-A972-D09CFB3B1F7A
+  - target:          x86_64-ios-simulator
+    value:           D398FD6D-1144-3AE8-9793-7ED56725CB39
+  - target:          arm64-ios-simulator
+    value:           9BE40FD7-517A-352D-9E6C-4429C532BC63
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _DELoggingInit ]
+    objc-classes:    [ DEManagedDefaults ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _DEExtensionTrackerEarliestExpirationDateKey, _DEExtensionTrackerExpirationDateKey, 
+                       _DEExtensionTrackerSessionsKey, _DEExtensionTrackerUserDefaultsKey, 
+                       _DEExtensionTrackerXPCActivityDateKey, _DEExtensionTrackerXPCActivityKey, 
+                       _DEUtilsValidateConnection, _DEUtilsValidateDestination, _DiagnosticExtensionsVersionNumber, 
+                       _DiagnosticExtensionsVersionString, _pgrep, _signal_USR2 ]
+    objc-classes:    [ DEArchive, DEArchiveReader, DEArchiver, DEAttachmentGroup, 
+                       DEAttachmentItem, DEAttachmentItemSandboxExtensionHandle, 
+                       DEExtension, DEExtensionContext, DEExtensionHostContext, DEExtensionManager, 
+                       DEExtensionProvider, DEExtensionTracker, DELogMover, DELogging, 
+                       DEUtils, DiagnosticExtensions_Subsystem ]
+...

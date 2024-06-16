@@ -1,14 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3954EF16-7EB0-3DE9-AD28-4B2DAC60171D', 'x86_64: 03BF8B2A-B4C5-3BAF-A7E4-9D86F510FA7A' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           4480BC0E-D3DF-3613-9D87-6B92EF931419
+  - target:          x86_64-ios-simulator
+    value:           7D10DC8E-7C73-3481-B979-54BF08A757F2
+  - target:          arm64-ios-simulator
+    value:           FD1BD7D6-31F8-3E56-85F4-2B216BD6990A
 install-name:    '/usr/lib/libform.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___form_5_4VersionNumber, ___form_5_4VersionString ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _TYPE_ALNUM, _TYPE_ALPHA, _TYPE_ENUM, _TYPE_INTEGER, _TYPE_IPV4, 
                        _TYPE_NUMERIC, _TYPE_REGEXP, __nc_Copy_Argument, __nc_Copy_Type, 
                        __nc_Default_Field, __nc_Default_FieldType, __nc_Default_Form, 

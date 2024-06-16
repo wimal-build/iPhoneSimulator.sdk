@@ -1,12 +1,23 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 287B4944-D8B0-3ECE-945F-576FBA15C4E1', 'x86_64: 68C5133F-6129-3601-8DF8-A81624389304' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           ED57F217-F2A3-337C-9DF5-309C7C0270FD
+  - target:          x86_64-ios-simulator
+    value:           7BE68EC6-FC11-3BB6-8F17-0604AAB8367C
+  - target:          arm64-ios-simulator
+    value:           DE144A10-ABD3-31F0-8E97-C1E47CDBF43A
 install-name:    '/System/Library/Frameworks/CoreAudio.framework/CoreAudio'
-exports:         
-  - archs:           [ x86_64 ]
-    symbols:         [ __ZN4AMCP11run_new_halEv ]
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]
+    symbols:         [ __ZN4AMCP13Feature_Flags11run_new_halEv, __ZN4AMCP13Feature_Flags12host_asp_oopEv, 
+                       __ZN4AMCP13Feature_Flags15set_run_new_halEb, __ZN4AMCP13Feature_Flags16set_host_asp_oopEb, 
+                       __ZN4AMCP13Feature_Flags17event_link_oop_ioEv, __ZN4AMCP13Feature_Flags19collect_io_perfdataEv, 
+                       __ZN4AMCP13Feature_Flags20internal_drivers_oopEv, __ZN4AMCP13Feature_Flags21set_event_link_oop_ioEb, 
+                       __ZN4AMCP13Feature_Flags22allow_mcp_and_hal_coexEv, __ZN4AMCP13Feature_Flags23set_collect_io_perfdataEb, 
+                       __ZN4AMCP13Feature_Flags24set_internal_drivers_oopEb, __ZN4AMCP13Feature_Flags26set_allow_mcp_and_hal_coexEb ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _AudioConvertHostTimeToNanos, _AudioConvertNanosToHostTime, 
                        _AudioDeviceAddIOProc, _AudioDeviceAddPropertyListener, _AudioDeviceCreateIOProcID, 
                        _AudioDeviceCreateIOProcIDWithBlock, _AudioDeviceCreateIOProcIDWithClockedBlock, 
@@ -17,9 +28,13 @@ exports:
                        _AudioDeviceRead, _AudioDeviceRemoveIOProc, _AudioDeviceRemovePropertyListener, 
                        _AudioDeviceRun, _AudioDeviceSetProperty, _AudioDeviceStart, 
                        _AudioDeviceStartAtTime, _AudioDeviceStop, _AudioDeviceTranslateTime, 
-                       _AudioDeviceWrite, _AudioGetCurrentHostTime, _AudioGetHostClockFrequency, 
-                       _AudioGetHostClockMinimumTimeDelta, _AudioHardwareAddPropertyListener, 
-                       _AudioHardwareAddRunLoopSource, _AudioHardwareBeMaster, _AudioHardwareClaimAudioDeviceID, 
+                       _AudioDeviceWrite, _AudioDriverPlugInClose, _AudioDriverPlugInDeviceGetProperty, 
+                       _AudioDriverPlugInDeviceGetPropertyInfo, _AudioDriverPlugInDeviceSetProperty, 
+                       _AudioDriverPlugInOpen, _AudioDriverPlugInStreamGetProperty, 
+                       _AudioDriverPlugInStreamGetPropertyInfo, _AudioDriverPlugInStreamSetProperty, 
+                       _AudioGetCurrentHostTime, _AudioGetHostClockFrequency, _AudioGetHostClockMinimumTimeDelta, 
+                       _AudioHardwareAddPropertyListener, _AudioHardwareAddRunLoopSource, 
+                       _AudioHardwareBeMaster, _AudioHardwareClaimAudioDeviceID, 
                        _AudioHardwareClaimAudioStreamID, _AudioHardwareCreateAggregateDevice, 
                        _AudioHardwareDestroyAggregateDevice, _AudioHardwareDevicePropertyChanged, 
                        _AudioHardwareDevicesCreated, _AudioHardwareDevicesDied, _AudioHardwareGetProperty, 

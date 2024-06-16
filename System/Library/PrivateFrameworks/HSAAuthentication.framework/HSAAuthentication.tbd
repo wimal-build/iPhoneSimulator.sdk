@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           BD21D515-3BA0-382B-95C9-539E1A7164CB
+  - target:          x86_64-ios-simulator
+    value:           612CD8A6-308F-3A43-9FF3-ECA8EF15A199
+  - target:          arm64-ios-simulator
+    value:           CC221218-B5CA-30CE-8DA0-0E2F52E3723E
+install-name:    '/System/Library/PrivateFrameworks/HSAAuthentication.framework/HSAAuthentication'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _HSAAuthenticationProcessIncomingMessage, _HSAAuthenticationRegisterIncomingAuthenticationTokenBlockWithIdentifier, 
+                       _HSAAuthenticationUnregisterIncomingAuthenticationTokenBlockWithIdentifier ]
+    objc-classes:    [ HSAAuthenticationServer ]
+...

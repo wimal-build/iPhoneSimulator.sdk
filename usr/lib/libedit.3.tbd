@@ -1,12 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EA0AEBB5-8CFF-39FC-A301-F1090FBC6C13', 'x86_64: 0DFCF3AA-1FEA-3B43-824C-D05A789D6A26' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           AE5FC0DC-9F24-37FD-805C-F48D151F48A0
+  - target:          x86_64-ios-simulator
+    value:           38171E3F-D860-3F25-B9C7-8C1853F080B5
+  - target:          arm64-ios-simulator
+    value:           48A7B57B-EDC7-3B60-B0C7-70EE97EA7F8D
 install-name:    '/usr/lib/libedit.3.dylib'
 current-version: 3
 compatibility-version: 2
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ ___ct_decode_string, ___ct_encode_string, ___edit_3VersionNumber, 
                        ___edit_3VersionString, _c__next_word, _c__prev_word, _c_delafter, 
                        _c_delafter1, _c_delbefore, _c_delbefore1, _c_gets, _c_hmatch, 
@@ -71,7 +77,7 @@ exports:
                        _vi_to_column, _vi_to_history_line, _vi_to_next_char, _vi_to_prev_char, 
                        _vi_undo, _vi_undo_line, _vi_yank, _vi_yank_end, _vi_zero, 
                        _wcsdup ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __el_fn_complete, __el_fn_sh_complete, __rl_abort_internal, 
                        __rl_print_completions_horizontally, __rl_qsort_string_compare, 
                        _add_history, _clear_history, _completion_matches, _current_history, 

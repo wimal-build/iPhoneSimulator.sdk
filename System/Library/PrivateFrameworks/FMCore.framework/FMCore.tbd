@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           0B21D6F3-BFCB-3117-81E7-3E0AC196A88C
+  - target:          x86_64-ios-simulator
+    value:           6AC95436-D117-3654-A937-D85BD12314BE
+  - target:          arm64-ios-simulator
+    value:           9D272C1D-FB09-351D-9AD4-192FF504A618
+install-name:    '/System/Library/PrivateFrameworks/FMCore.framework/FMCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _FMCommandHTTPMethodDelete, _FMCommandHTTPMethodGet, _FMCommandHTTPMethodPost, 
+                       _FMCommandHTTPMethodPut, _FMCommandRedirectedNotification, 
+                       _FMDataClassFMF, _FMDataClassFMFAppHostNameKey, _FMDataClassFMIP, 
+                       _FMDistanceCalculatorMeasurementSystemChangedNotification, 
+                       _FMLocalNetworkStatusChangedNotification, _FMLocalNetworkStatusKey, 
+                       _FMOwnerAccountErrorDomain, _kFMReachabilityChangedNotification, 
+                       _nanosecondTimestamp ]
+    objc-classes:    [ FMAPSHandler, FMAlertManager, FMCommandBase, FMDaemon, FMDispatchTimer, 
+                       FMDistanceCalculator, FMJSONCommand, FMKeychainManager, FMLocationShifter, 
+                       FMLocationShifterItem, FMNanoIDSManager, FMNetworkMonitor, 
+                       FMOwnerAccount, FMPastDateComponentsFormatter, FMReachability, 
+                       FMRelativeDateFormatter, FMRunLoopMonitor, FMServerInteractionController, 
+                       FMStateCapture, FMStopwatch, FMSystemInfo, FMSystemVersionNumber, 
+                       FMWeakWrapper, FMXPCNotificationsUtil, FMXPCTransactionManager ]
+...

@@ -1,11 +1,17 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 24E649BE-E40F-3080-AC36-71FA52F17912', 'x86_64: 3EB152F7-A942-38F0-8F88-45981DC6E3C2' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           ED115D90-1F37-3A0F-9A48-0463B1544420
+  - target:          x86_64-ios-simulator
+    value:           53EF0A45-479A-396E-BE5D-69B32E1AB9B7
+  - target:          arm64-ios-simulator
+    value:           6007D09B-D94B-35F7-AA77-F5D647981AEE
 install-name:    '/System/Library/Frameworks/SceneKit.framework/SceneKit'
-current-version: 540.9
-exports:         
-  - archs:           [ i386 ]
+current-version: 555
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _C3DAnimationManagerContainsSceneTimeBasedAnimation, _C3DAnimationManagerIsEmpty, 
                        _C3DCopyInstanceVariables, _C3DCreateDataWithContentOfURL, 
                        _C3DCreateImageSourceWithURL, _C3DEngineContextSetRenderingOptionForKey, 
@@ -58,7 +64,7 @@ exports:
                        SCNPhysicsCustomField, SCNPhysicsDragField, SCNPhysicsLinearGravityField, 
                        SCNPhysicsMagneticField, SCNPhysicsNoiseField, SCNPhysicsRadialGravityField, 
                        SCNPhysicsSpringField, SCNPhysicsTurbulenceField, SCNPhysicsVortexField ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _C3DGetFileDecryptionCallbacks, _C3DSetFileDecryptionCallbacks, 
                        _SCNAnimationCommitOnCompletion, _SCNBindingValueTransformerKey, 
                        _SCNCaptureDeviceOutputConsumerOptionContainsAlpha, _SCNConsistencyElementIDErrorKey, 

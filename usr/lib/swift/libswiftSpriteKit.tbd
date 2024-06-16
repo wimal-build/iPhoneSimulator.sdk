@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D0693F1E-FAEA-34CA-9AC9-95B76B0B6564', 'x86_64: 9FFA597E-1B38-3D5C-AED0-16821A400885' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           D0693F1E-FAEA-34CA-9AC9-95B76B0B6564
+  - target:          x86_64-ios-simulator
+    value:           B6B13836-6643-3F06-90EE-2E281300F36C
+  - target:          arm64-ios-simulator
+    value:           3EDF04F1-829A-3DCE-9F7D-8096ABFC241C
 install-name:    '/usr/lib/swift/libswiftSpriteKit.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 1.1
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftSpriteKit.dylib', 
                        '$ld$install_name$os10.1$@rpath/libswiftSpriteKit.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftSpriteKit.dylib', 
@@ -34,6 +41,7 @@ exports:
                        '_$sSo18SKWarpGeometryGridC9SpriteKitE26replacingBySourcePositions9positionsABSays5SIMD2VySfGG_tF', 
                        '_$sSo18SKWarpGeometryGridC9SpriteKitE31replacingByDestinationPositions9positionsABSays5SIMD2VySfGG_tF', 
                        '_$sSo18SKWarpGeometryGridC9SpriteKitE7columns4rows15sourcePositions011destinationI0ABSi_SiSays5SIMD2VySfGGAKtcfC', 
+                       '_$sSo18SKWarpGeometryGridC9SpriteKitE7columns4rows15sourcePositions011destinationI0ABSi_SiSays5SIMD2VySfGGAKtcfc', 
                        '_$sSo9SKTextureC9SpriteKitE25customPlaygroundQuickLooks01_efG0Ovg', 
                        '_$sSo9SKTextureC9SpriteKitE25customPlaygroundQuickLooks01_efG0OvpMV', 
                        '_$sSo9SKTextureCs30_CustomPlaygroundQuickLookable9SpriteKitMc', 

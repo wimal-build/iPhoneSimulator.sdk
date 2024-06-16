@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 756733B1-5F8D-3485-A944-B6E3904301AA', 'x86_64: 5F49E422-4078-3C8D-8713-2297C97D5CC6' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           756733B1-5F8D-3485-A944-B6E3904301AA
+  - target:          x86_64-ios-simulator
+    value:           9BB7AC38-8148-36F2-9B74-60395A6DF76E
+  - target:          arm64-ios-simulator
+    value:           09CEB5E0-16A0-3E5A-A8BD-CC3CB71A8DC6
 install-name:    '/usr/lib/swift/libswiftCallKit.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 2
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftCallKit.dylib', '$ld$install_name$os10.1$@rpath/libswiftCallKit.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftCallKit.dylib', '$ld$install_name$os10.3$@rpath/libswiftCallKit.dylib', 
                        '$ld$install_name$os11.0$@rpath/libswiftCallKit.dylib', '$ld$install_name$os11.1$@rpath/libswiftCallKit.dylib', 

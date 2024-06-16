@@ -1,10 +1,16 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4E9E27D7-7E62-3E76-9C72-6B205A3CE827' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           C847F215-0EB0-3D31-AD9F-4943A281B95E
+  - target:          arm64-ios-simulator
+    value:           9693A906-76CC-3554-9079-07F6DB2B4816
 install-name:    '/usr/lib/libnetworkextension.dylib'
-exports:         
-  - archs:           [ i386, x86_64 ]
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ne_filter_allocate_globals, _ne_filter_copy_connection, _ne_filter_crypto_generate_client_key, 
                        _ne_filter_crypto_init_client, _ne_filter_crypto_init_master, 
                        _ne_filter_crypto_sign_data, _ne_filter_crypto_validate_data, 

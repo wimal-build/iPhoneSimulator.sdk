@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           85413629-7A45-30B1-AED5-A89D06EE9C4B
+  - target:          arm64-ios-simulator
+    value:           EC292590-4507-3A5F-9363-B419FE1B0068
+install-name:    '/System/Library/PrivateFrameworks/RecapPerformanceTesting.framework/RecapPerformanceTesting'
+current-version: 17
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _RPTAmplitudeFromPagesOfView, _RPTAxisFromScrollDirection, 
+                       _RPTCGPointAdvanceInDirectionByAmount, _RPTCGRectGetMidpoint, 
+                       _RPTContentSizeAlongAxis, _RPTContentSizeInDirection, _RPTExcludeSystemRegionsFromRect, 
+                       _RPTExcludeSystemRegionsFromView, _RPTGetBoundsForView, _RPTOppositeDirectionFrom, 
+                       _RPTPredominantAxisOfContentOf, _RPTQuadrantOfContentOffsetFor, 
+                       _RPTSizeAlongAxis, _RPTViewFrameInScreenSpace ]
+    objc-classes:    [ RPTDirectionalSwipeTestParameters, RPTGroupScrollTestParameters, 
+                       RPTPagingScrollTestParameters, RPTScrollViewTestParameters, 
+                       RPTTestRunner ]
+...

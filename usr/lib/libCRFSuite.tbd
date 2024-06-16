@@ -1,12 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A1D58B1-37E3-31F8-89E4-3D7380FEB623', 'x86_64: 70E8E96B-02A7-30AA-9C7D-61C824B16E5B' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           CBE4F6DF-4342-3A0D-9183-9F0D11970DB5
+  - target:          x86_64-ios-simulator
+    value:           D9195D04-04E6-3FCD-AD29-443461C7654E
+  - target:          arm64-ios-simulator
+    value:           BA150FB7-0D64-33BD-977F-2246F75654E2
 install-name:    '/usr/lib/libCRFSuite.dylib'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _crfsuite_dictionary_create_instance ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _crf_content_copy, _crf_content_init, _crf_content_set, _crf_create_instance, 
                        _crf_data_append, _crf_data_finish, _crf_data_init, _crf_data_maxlength, 
                        _crf_data_totalitems, _crf_evaluation_init, _crf_item_append_content, 

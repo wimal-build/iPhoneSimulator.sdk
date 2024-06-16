@@ -1,11 +1,18 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: EA0CD531-C0F0-3E84-BF9D-65D8A4A3F96E', 'x86_64: 0F515B0B-5D4E-37B6-A913-2883F740368E' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           EA0CD531-C0F0-3E84-BF9D-65D8A4A3F96E
+  - target:          x86_64-ios-simulator
+    value:           4DB33C2F-07E1-33F0-B729-B7A1D6B57A36
+  - target:          arm64-ios-simulator
+    value:           626174C9-FD5E-3358-8CA8-E580D8B97196
 install-name:    '/usr/lib/swift/libswiftPhotos.dylib'
-current-version: 0
-exports:         
-  - archs:           [ i386, x86_64 ]
+current-version: 302.0.220
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftPhotos.dylib', '$ld$install_name$os10.1$@rpath/libswiftPhotos.dylib', 
                        '$ld$install_name$os10.2$@rpath/libswiftPhotos.dylib', '$ld$install_name$os10.3$@rpath/libswiftPhotos.dylib', 
                        '$ld$install_name$os11.0$@rpath/libswiftPhotos.dylib', '$ld$install_name$os11.1$@rpath/libswiftPhotos.dylib', 

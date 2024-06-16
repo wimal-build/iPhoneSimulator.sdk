@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           5A936286-9936-312F-887C-AA69E1740ABD
+  - target:          arm64-ios-simulator
+    value:           2E9D8B51-4804-3AE6-B8AB-F9A4F6288AEF
+install-name:    '/System/Library/PrivateFrameworks/AOPHaptics.framework/AOPHaptics'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AOPHapticsActionKey, _AOPHapticsGainKey, _AOPHapticsOutputTypeKey, 
+                       _AOPHapticsPreSilenceDurationKey, _AOPHapticsPriorityKey, 
+                       _AOPHapticsRequestTimestampKey, _AOPHapticsSlotIndexKey ]
+    objc-classes:    [ AOPHapticsController ]
+...

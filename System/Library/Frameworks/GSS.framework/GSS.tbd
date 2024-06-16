@@ -1,13 +1,19 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 88EB9084-C7B4-3574-9B8D-B233C7963975', 'x86_64: 552650B1-FC9B-3919-B441-80E60F61CF39' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           ED1160A6-04E0-3E2C-A37F-B90111FD08DD
+  - target:          x86_64-ios-simulator
+    value:           5C7C80E5-AAE3-3700-ABA7-AB5D152173AD
+  - target:          arm64-ios-simulator
+    value:           4A42647D-F7C0-3979-804C-20F92A48E4F9
 install-name:    '/System/Library/Frameworks/GSS.framework/GSS'
-exports:         
-  - archs:           [ i386 ]
+exports:
+  - targets:         [ i386-ios-simulator ]
     symbols:         [ _decode_NegotiationToken, _decode_NegotiationTokenWin, _free_NegotiationToken, 
                        _free_NegotiationTokenWin ]
-  - archs:           [ i386, x86_64 ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _GSSCheckNTLMReflection, _GSSCreateCredentialFromUUID, _GSSCreateError, 
                        _GSSCreateName, _GSSCredCopyName, _GSSCredGetLifetime, _GSSCredentialCopyName, 
                        _GSSCredentialCopyUUID, _GSSCredentialGetLifetime, _GSSItemAdd, 

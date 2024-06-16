@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           CA47FF78-95A3-38D5-B13A-6DC0CD115446
+  - target:          arm64-ios-simulator
+    value:           34B01F85-E37E-3D23-9C4C-B05C4FF366D1
+install-name:    '/System/Library/PrivateFrameworks/AudioAnalytics.framework/AudioAnalytics'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AudioAnalyticsVersionNumber, _AudioAnalyticsVersionString ]
+...

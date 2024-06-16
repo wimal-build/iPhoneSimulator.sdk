@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           02D9E69F-AA85-36FD-AB73-74037E1A1032
+  - target:          arm64-ios-simulator
+    value:           6F35FB3B-A021-30BD-94D6-0CAFB1DE5AF1
+install-name:    '/System/Library/PrivateFrameworks/AdPlatformsCommon.framework/AdPlatformsCommon'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _APDefaultsBundleID, _APDiagnosticsSubmissionAllowed, _APLogForCategory, 
+                       _APSimulateCrash, _AdPlatformsCommonVersionNumber, _AdPlatformsCommonVersionString, 
+                       _kAPAutomationLoggingEnabled, _kAPMetricAreNetworkDatesKey, 
+                       _kAPMetricClientBundleIdentifierKey, _kAPMetricClientInfoKey, 
+                       _kAPMetricContentIdentifierKey, _kAPMetricContextIdentifierKey, 
+                       _kAPMetricDeviceIdentifierKey, _kAPMetricDeviceModel, _kAPMetricIdentifierKey, 
+                       _kAPMetricInternalMessageRateKey, _kAPMetricInternalPropertiesKey, 
+                       _kAPMetricMetricKey, _kAPMetricOS, _kAPMetricOSBuild, _kAPMetricOSVersion, 
+                       _kAPMetricOptionsKey, _kAPMetricPropertiesKey, _kAPMetricRouteKey, 
+                       _kAPMetricTimestampKey, _kAPMetricUserIdentifierKey, _kAPServerEnvironmentKey, 
+                       _kAPServerEnvironmentProduction, _kAPServerEnvironmentProductionBaseURL, 
+                       _kAPServerEnvironmentQE1, _kAPServerEnvironmentQE1BaseURL, 
+                       _kAPServerEnvironmentQE2, _kAPServerEnvironmentQE2BaseURL, 
+                       _kAPServerEnvironmentQE3, _kAPServerEnvironmentQE3BaseURL, 
+                       _kAPServerEnvironmentQE4, _kAPServerEnvironmentQE4BaseURL ]
+    objc-classes:    [ APClientInfo, APContentData, APContentDepiction, APContext, 
+                       APControllerRequesterCoordinator, APLocationInfo, APLocationManager, 
+                       APMescalSigning, APMescalSigningRequestor, APMetric, APMetricDaemonDelivery, 
+                       APMetricNotificationRegistrar, APOrderedMutableDictionary, 
+                       APPCControllerRequester, APRepresentationData, APSupportedSecureEncodedClass, 
+                       APTapAction, APUnfairLock, APUnfairRecursiveLock, APXPCActionRequester, 
+                       APXPCConnection, APXPCListenerManager, APXPCRemoteConnection, 
+                       MetricsModuleCommon ]
+...

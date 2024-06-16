@@ -1,0 +1,68 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           C7DAB283-184D-36A9-B83B-9161426D79FC
+  - target:          x86_64-ios-simulator
+    value:           B3D63EBF-69AE-31F6-838A-B89C8E08F678
+  - target:          arm64-ios-simulator
+    value:           86D03641-D55D-394E-AE3F-4A0E2A46AD8B
+install-name:    '/System/Library/PrivateFrameworks/CoreTime.framework/CoreTime'
+current-version: 282
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _CORETIME_DATA_FACILITY, _CORETIME_TEXT_FACILITY, _CoreTimeVersionNumber, 
+                       _CoreTimeVersionString, _TMAirplaneModeChanged, _TMCFNotificationCenterAddObserver, 
+                       _TMCmdFromName, _TMCommandNameFromCmd, _TMCommonCFAbsoluteTimeToTimeval, 
+                       _TMCommonCFTimeIntervalToTimeval, _TMCommonCalculateGCD, _TMCommonCalculateMachTimeIntervalInSeconds, 
+                       _TMCommonConvertTicksToSeconds, _TMCommonElapsedIntervalInSeconds, 
+                       _TMCommonGetKernelMonotonicClock, _TMCommonGetKernelMonotonicClockResolution, 
+                       _TMCommonIsValidMcc, _TMCommonIsValidNetworkOffset, _TMCommonIsValidTime, 
+                       _TMCommonPropagateError, _TMCommonPropagateSourceError, _TMCommonPropagateSourceTime, 
+                       _TMCommonTimevalToCFAbsoluteTime, _TMIsLocationTimeZoneActive, 
+                       _TMLogMachKey, _TMLogRTCSecondsKey, _TMLogSourceKey, _TMLogTypeKey, 
+                       _TMLogUTCSecondsKey, _TMLogUncertaintySecondsKey, _TMProvideNetworkTimeZone, 
+                       _TMSetReferenceUnreliable, _TMSourceBBTimeTagging, _TMSourceBBTimeTransfer, 
+                       _TMSourceBBUnknown, _TMSourceComputed, _TMSourceFilesystemTimestamp, 
+                       _TMSourceGnss, _TMSourceGnssValidPos, _TMSourceLocationAndNetwork, 
+                       _TMSourceNameFromSrc, _TMSourceTMLSSourceComputed, _TMSourceTMLSSourceDevice, 
+                       _TMSourceTMLSSourceUser, _TMSourceUnknown, _TMSrcFromName, 
+                       __TMCommonGetKernelMonotonicClock, __TMCommonKernelMonotonicClockOffset, 
+                       __TMCommonSyncKernelMonotonicClock, __TMConnectionQueue, __TMCopyConnection, 
+                       __TMGetReferenceSource, __TMGetSystemSource, __TMReleaseConnection, 
+                       __TMResetToFirstLaunch, __TMSetSimulatedMcc, _kProviderFiltered, 
+                       _kProviderTiered, _kReferenceTimeNotification, _kSourceAbsoluteNanoTimeKey, 
+                       _kSourceAvailabilityKey, _kSourceBBTimeTagging, _kSourceBBTimeTransfer, 
+                       _kSourceBBUnknown, _kSourceCdma, _kSourceComputed, _kSourceDstActiveKey, 
+                       _kSourceErrorKey, _kSourceFilesystemTimestamp, _kSourceGnss, 
+                       _kSourceGnssValidPos, _kSourceGps, _kSourceHarvestServer, 
+                       _kSourceIdentifierKey, _kSourceLocation, _kSourceLocationAndNetwork, 
+                       _kSourceLocationContributionKey, _kSourceLocationServer, _kSourceMachTimeAfterKey, 
+                       _kSourceMachTimeKey, _kSourceMccKey, _kSourceMobileLockdown, 
+                       _kSourceNameKey, _kSourceNanoErrorKey, _kSourceNetworkContributionKey, 
+                       _kSourceNitz, _kSourceNtp, _kSourceNtpLowConfidence, _kSourceNtpPacket, 
+                       _kSourceRTCConversionErrorKey, _kSourceReliabilityKey, _kSourceResetKey, 
+                       _kSourceRtcKey, _kSourceSfErrorKey, _kSourceSfKey, _kSourceTMLSSourceComputed, 
+                       _kSourceTMLSSourceDevice, _kSourceTMLSSourceUser, _kSourceTimeKey, 
+                       _kSourceTimeZoneKey, _kSourceTimeZoneOffsetKey, _kSourceUnknown, 
+                       _kSourceiTunesServer, _kSystemTimeNotification, _kSystemTimeZoneNotification, 
+                       _kTMMonotonicClockDrift, _kTimedResetNotification ]
+    objc-classes:    [ _TMBlockDebugger ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _TMBBTimeActiveNotification, _TMConfirmTimeZone, _TMConvertTicksToSeconds, 
+                       _TMCopyComputedTimeZone, _TMFetchNTP, _TMGetBAFinderTime, 
+                       _TMGetKernelMonotonicClock, _TMGetRTCResetCount, _TMGetReferenceTime, 
+                       _TMGetTrustedInterval, _TMIsAutomaticTimeEnabled, _TMIsAutomaticTimeZoneEnabled, 
+                       _TMIsBBTimeActive, _TMIsTimeZoneConfirmed, _TMLocationTimeZoneActiveNotification, 
+                       _TMProvideBBTime, _TMProvideCellularTimeZone, _TMSetAuthenticatedSourceTime, 
+                       _TMSetAutomaticTimeEnabled, _TMSetAutomaticTimeZoneEnabled, 
+                       _TMSetManualTime, _TMSetSourceAvailable, _TMSetSourceTime, 
+                       _TMSetSourceTimeZone, _TMSetSourceUnavailable, _TMSetupTime, 
+                       _TMSetupTimeZone, _TMSourceAPNS, _TMSourceAirPlay, _TMSourceCdma, 
+                       _TMSourceGps, _TMSourceHarvestServer, _TMSourceLocation, _TMSourceLocationServer, 
+                       _TMSourceMobileLockdown, _TMSourceNitz, _TMSourceNtp, _TMSourceNtpLowConfidence, 
+                       _TMSourceNtpPacket, _TMSourceProxBuddy, _TMSourceiTunesServer, 
+                       _TMTimeZoneConfirmedNotification ]
+    objc-classes:    [ TMTime, TMTimeZone ]
+...

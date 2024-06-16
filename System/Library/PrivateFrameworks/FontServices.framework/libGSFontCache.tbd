@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A6609D2C-FF66-3B49-BEE8-95174B4A8E12
+  - target:          x86_64-ios-simulator
+    value:           BD07AF6B-CC7E-3DA4-9B7B-ACB96B32717D
+  - target:          arm64-ios-simulator
+    value:           D169FC95-98C4-3CDC-92D3-A0E3ADC35D54
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache.dylib'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _GSFontCacheGetData, _GSFontCacheGetDictionary ]
+...

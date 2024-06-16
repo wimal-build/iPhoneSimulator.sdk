@@ -1,27 +1,41 @@
---- !tapi-tbd-v3
-archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F017ABF6-5F4D-32E0-BB56-DCD5A7113DE4' ]
-platform:        ios
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           D5FBEF0D-6430-3BE4-BA84-EBDB5A9B93C0
+  - target:          arm64-ios-simulator
+    value:           D213A998-B839-3BA6-AFEC-4BC7354E8508
 install-name:    '/System/Library/Frameworks/VisionKit.framework/VisionKit'
-exports:         
-  - archs:           [ i386, x86_64 ]
+reexported-libraries:
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+    libraries:       [ '/System/Library/PrivateFrameworks/DocumentCamera.framework/DocumentCamera' ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           F5941DA8-4351-3740-87FB-CD16707F1B8D
+  - target:          arm64-ios-simulator
+    value:           2F49C913-9CF2-3A93-A3C5-0A1E4D982AC0
+install-name:    '/System/Library/PrivateFrameworks/DocumentCamera.framework/DocumentCamera'
+current-version: 74
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _DCScanWasDeletedNotification, _DCTransformFromImageOrientation, 
                        _dc_clockwiseRotationsFromUpToMatchOrientation, _dc_counterClockwiseRotationsFromUpToMatchOrientation, 
                        _dc_nonLocalizedOrientationNameForType, _dc_orientationFromNonLocalizedName, 
-                       _kDCBlackWhiteFilter, _kDCColorFilter, _kDCDocCamFilterUsageCount, 
-                       _kDCDocCamMarkUpUIAppearanceCount, _kDCDocCamPagesScannedAutoInAutoModeCount, 
-                       _kDCDocCamPagesScannedManualInAutoModeCount, _kDCDocCamPagesScannedManualModeCount, 
-                       _kDCDocCamRecropUIAppearanceCount, _kDCDocCamReorderedPageCount, 
-                       _kDCDocCamReselectFilterUIAppearanceCount, _kDCDocCamSharedAsPDFCount, 
-                       _kDCGrayscaleFilter, _kDCPhotoFilter, _kDCScanDocumentUIAppearanceCount, 
-                       _kDCSwitchControl, _kDCVoiceOver, _kICDocCamImageQuadPerspectiveCorrectImageInset, 
-                       _kMaximumPagePerScanSession, _kVNDocumentCameraScansCreatedCount ]
-    objc-classes:    [ DCAnalyticsReporterBase, DCDocumentCameraViewServiceSession, 
-                       DCDocumentEditorViewController, DCNotesSPI, DCSettings, DCUsageAnalyticsReporter, 
-                       ICDocCamDocumentInfo, ICDocCamDocumentInfoCollection, ICDocCamExtractedDocumentNavigationController, 
-                       ICDocCamExtractedDocumentViewController, ICDocCamFilterViewController, 
-                       ICDocCamImageCache, ICDocCamImageFilters, ICDocCamImageQuad, 
-                       ICDocCamImageQuadEditImageView, ICDocCamImageQuadEditViewController, 
+                       _kICDocCamImageQuadPerspectiveCorrectImageInset, _kMaximumPagePerScanSession ]
+    objc-classes:    [ DCDocumentCameraViewController, DCDocumentCameraViewServiceSession, 
+                       DCDocumentEditorViewController, DCNotesSPI, DCScannedDocument, 
+                       DCSettings, ICDocCamDocumentInfo, ICDocCamDocumentInfoCollection, 
+                       ICDocCamExtractedDocumentNavigationController, ICDocCamExtractedDocumentViewController, 
+                       ICDocCamFilterViewController, ICDocCamImageCache, ICDocCamImageFilters, 
+                       ICDocCamImageQuad, ICDocCamImageQuadEditImageView, ICDocCamImageQuadEditViewController, 
                        ICDocCamNavigationController, ICDocCamRecropTransitionAnimator, 
                        ICDocCamRenamePrompt, ICDocCamScanCache, ICDocCamScanCacheItem, 
                        ICDocCamThumbnailContainerView, ICDocCamViewController, VNDocumentCameraScan, 

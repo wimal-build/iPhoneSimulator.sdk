@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           DC8E9728-AB3B-37C4-94A6-21678CEB5BF5
+  - target:          x86_64-ios-simulator
+    value:           54AF8599-7A07-3725-9452-30FCC1ED5165
+  - target:          arm64-ios-simulator
+    value:           0D58336B-0C2E-3247-AED6-423D98B87866
+install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGLImage.dylib'
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ _gl_mallocZone ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _glgCompress, _glgConvertPixelHeightToBlocks, _glgConvertPixelWidthToBlocks, 
+                       _glgConvertPixels, _glgConvertType, _glgCreateProcessor, _glgDecompress, 
+                       _glgDestroyProcessor, _glgGetCompressedBlockBytes, _glgGetCompressedBlockHeight, 
+                       _glgGetCompressedBlockWidth, _glgGetCompressedImageBytes, 
+                       _glgGetCompressedMinBlockDimensions, _glgGetPixelSize, _glgInitializeLibrary, 
+                       _glgPixelCenters, _glgProcessPixelsWithProcessor, _glgSaveImageToFile, 
+                       _glgSaveImageToFileGLG, _glgSetTakeLock, _glgTerminateLibrary ]
+...

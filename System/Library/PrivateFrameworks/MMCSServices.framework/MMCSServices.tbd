@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           A9066173-67C9-3C8E-8B12-05FFBC1B85BF
+  - target:          x86_64-ios-simulator
+    value:           41112512-DD72-3073-9C14-C5421DFA3901
+  - target:          arm64-ios-simulator
+    value:           3C7D7ED9-E678-348E-BDFF-443969EED723
+install-name:    '/System/Library/PrivateFrameworks/MMCSServices.framework/MMCSServices'
+current-version: 800
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _failReasonStringForMMCSError, _parseMMCSError ]
+    objc-classes:    [ MMCSController, MMCSGetFile, MMCSPutFile, MMCSRequestorContext, 
+                       MMCSSimpleFile ]
+...

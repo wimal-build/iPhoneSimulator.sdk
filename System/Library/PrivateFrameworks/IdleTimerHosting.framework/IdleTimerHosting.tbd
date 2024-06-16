@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           EB17CDB8-1D1E-3905-B1C6-5343A6AF7CF9
+  - target:          arm64-ios-simulator
+    value:           3B6A7A82-10B7-321D-B274-5EB2B43D96B7
+install-name:    '/System/Library/PrivateFrameworks/IdleTimerHosting.framework/IdleTimerHosting'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ITLogIdleTimer, _ITLoggingSubsystem, _IdleTimerHostingVersionNumber, 
+                       _IdleTimerHostingVersionString ]
+    objc-classes:    [ ITAttentionAwareIdleTimer, ITAttentionAwarenessClient, ITAttentionAwarenessContext, 
+                       ITIdleTimeout, ITIdleTimerDescriptor ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           17F20AB6-65DB-3396-AC30-47DB429185B9
+  - target:          arm64-ios-simulator
+    value:           1B54D100-33A2-3FC1-8002-CC30B5ACD79D
+install-name:    '/System/Library/PrivateFrameworks/MTLCompiler.framework/libMTLCompilerHelper.dylib'
+exports:
+  - targets:         [ x86_64-ios-simulator ]
+    weak-symbols:    [ __ZTI26MTLCompilerHelperInterface, __ZTI28MTLCompilerBuiltInFileReader, 
+                       __ZTS26MTLCompilerHelperInterface, __ZTS28MTLCompilerBuiltInFileReader ]
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _createCompilerHelper, _deleteCompilerHelper ]
+...

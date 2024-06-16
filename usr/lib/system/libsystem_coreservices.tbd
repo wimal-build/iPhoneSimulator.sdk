@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           28CDC4DF-7A1A-33C4-A4C0-D7D9EF21C912
+  - target:          x86_64-ios-simulator
+    value:           4A427F5C-6AE8-3EFA-9EA6-E209C81DF7F2
+  - target:          arm64-ios-simulator
+    value:           921B975D-3566-3A25-AB91-E8B5A46BCA74
+install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
+current-version: 125.2
+parent-umbrella:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+    umbrella:        System
+exports:
+  - targets:         [ i386-ios-simulator ]
+    symbols:         [ ___user_local_mkdir_p ]
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _NSGetNextSearchPathEnumeration, _NSStartSearchPathEnumeration, 
+                       _NSStartSearchPathEnumerationPrivate, ___user_local_dirname, 
+                       __dirhelper, __get_user_dir_suffix, __libcoreservices_fork_child, 
+                       __set_user_dir_suffix, _sysdir_get_next_search_path_enumeration, 
+                       _sysdir_start_search_path_enumeration, _sysdir_start_search_path_enumeration_private ]
+...

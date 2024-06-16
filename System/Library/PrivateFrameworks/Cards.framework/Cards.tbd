@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           957E4E26-02A8-386B-9666-3154CDFE03D9
+  - target:          arm64-ios-simulator
+    value:           7D27E6C6-9F8E-3583-97B7-8460EFC9FA65
+install-name:    '/System/Library/PrivateFrameworks/Cards.framework/Cards'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _CRContextCards, _CRErrorCodeGetName, _CRErrorDomain, _CRJSContextErrorDomain, 
+                       _CRJSObjectBackingObjectPropertyName, _CRLogContextCards, 
+                       _CRLogInitIfNeeded, _CRLoggingSubsystem, _CardsVersionNumber, 
+                       _CardsVersionString, __CRSystemRootDirectory ]
+    objc-classes:    [ CRBasicAsyncCardReceiptFeedback, CRBasicAsyncCardRequestFeedback, 
+                       CRBasicCard, CRBasicCardSection, CRBasicCardSectionViewAppearanceFeedback, 
+                       CRBasicCardSectionViewDisappearanceFeedback, CRBasicPayloadCommand, 
+                       CRBeganEditingCommand, CRBundleManager, CRCardMocks, CRError, 
+                       CRHandleIntentCommand, CRInvocationChain, CRJSContext, CRJSObject, 
+                       CRMockAsyncCard, CRNextCardCommand, CRPBSerialization, CRProtocolRestrictedInvocationChain, 
+                       CRPunchoutCommand, CRRequestUserConfirmationCommand, CRSFCardLoader, 
+                       CRSFCardSectionUtilities, CRUpdateProgressCommand ]
+...

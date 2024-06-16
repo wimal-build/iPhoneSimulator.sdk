@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           9F7448CB-0D3C-3E2B-A99A-68FDE0578D51
+  - target:          arm64-ios-simulator
+    value:           7058341C-0DFC-31DD-81D3-0FF265333C9E
+install-name:    '/System/Library/PrivateFrameworks/ReminderKitUI.framework/ReminderKitUI'
+current-version: 282
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ReminderKitUIVersionNumber, _ReminderKitUIVersionString ]
+    objc-classes:    [ REMReminderCreationContext, REMReminderCreationRemoteViewController, 
+                       REMReminderCreationViewController ]
+...

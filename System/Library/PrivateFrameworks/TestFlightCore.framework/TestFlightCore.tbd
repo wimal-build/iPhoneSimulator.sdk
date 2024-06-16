@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           51BD6B40-8EA9-3F7E-B12D-DBDC0708C309
+  - target:          arm64-ios-simulator
+    value:           23A4E4BC-6C9E-34A9-8099-961EF38EF92F
+install-name:    '/System/Library/PrivateFrameworks/TestFlightCore.framework/TestFlightCore'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    objc-classes:    [ TFBetaAppLaunchScreenProvider, TFBetaApplicationProxy, TFBetaLaunchHandle, 
+                       TFBetaLaunchHandleConfiguration, TFFeedbackHandle, TFFeedbackHandleConfiguration, 
+                       TFFeedbackSession, TFLocale ]
+...

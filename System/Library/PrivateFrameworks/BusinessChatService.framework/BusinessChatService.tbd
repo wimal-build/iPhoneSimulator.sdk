@@ -1,0 +1,51 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           051560E4-BD79-3EDC-A44B-63A861C04CFD
+  - target:          arm64-ios-simulator
+    value:           21570732-BE23-323A-81B9-C19AE7E03CE8
+install-name:    '/System/Library/PrivateFrameworks/BusinessChatService.framework/BusinessChatService'
+exports:
+  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _ABSLogCommon, _ABSLoggingSubsystem, _BCSCacheEntitlement, 
+                       _BCSPrefetchEntitlement, _NSStringFromBCSType, _kBCBusinessChatMachServiceName, 
+                       _kBCBusinessChatServiceName, _kBCBusinessChatViewServiceName, 
+                       _kBCChatSuggestRemoteViewController, _kBCSBusinessItemKey, 
+                       _kBCSDefaultsChatSuggestCustomApiKey, _kBCSDefaultsChatSuggestCustomContainerId, 
+                       _kBCSDefaultsChatSuggestCustomEnvironment, _kBCSDefaultsChatSuggestCustomMessagesIdentifier, 
+                       _kBCSDefaultsChatSuggestICloudStagingMode, _kBCSDefaultsChatSuggestSkipDiskCaching, 
+                       _kBCSDefaultsChatSuggestSkipEdgeCaching, _kBCSDefaultsChatSuggestSkipInMemoryCaching, 
+                       _kBCSDefaultsLinkCustomApiKey, _kBCSDefaultsLinkCustomContainerId, 
+                       _kBCSDefaultsLinkCustomEnvironment, _kBCSDefaultsLinkICloudStagingMode, 
+                       _kBCSDefaultsLinkSkipDiskCaching, _kBCSDefaultsLinkSkipEdgeCaching, 
+                       _kBCSHashServiceSHA256DigestLength, _kBCSOpenHoursDayOfWeekKey, 
+                       _kBCSOpenHoursFromKey, _kBCSOpenHoursHoursRangesKey, _kBCSOpenHoursSecondsInDay, 
+                       _kBCSOpenHoursTimeRangeKey, _kBCSOpenHoursToKey ]
+    objc-classes:    [ BCSBloomFilterAndConfigPrefetcher, BCSBloomFilterExtractor, 
+                       BCSBusinessItem, BCSBusinessItemIdentifier, BCSBusinessItemMemoryCache, 
+                       BCSBusinessItemPersistentStore, BCSBusinessLinkContentItem, 
+                       BCSBusinessLinkFetchMetric, BCSBusinessLinkHashFetchMetric, 
+                       BCSBusinessLinkRegisteredMetric, BCSBusinessQueryController, 
+                       BCSBusinessQueryService, BCSCacheManager, BCSCallToActionItem, 
+                       BCSChatSuggestController, BCSChatSuggestFetchMetric, BCSChatSuggestRegisteredMetric, 
+                       BCSCloudKitQueryProvider, BCSCoalesceHelper, BCSCoalesceObjectBloomFilterAndConfig, 
+                       BCSCoalesceObjectConfig, BCSCoalesceObjectItems, BCSCoalesceObjectShard, 
+                       BCSConfigItem, BCSConfigPrefetchMetric, BCSConfigPrefetcher, 
+                       BCSConfigRemoteFetch, BCSConfigResolutionMetric, BCSConfigResolver, 
+                       BCSFeatureFlagArbiter, BCSFlagMeasurement, BCSHashService, 
+                       BCSICloudServerEnvironment, BCSIconController, BCSItem, BCSItemCache, 
+                       BCSItemResolutionMetric, BCSItemResolver, BCSLinkItem, BCSLinkItemIdentifier, 
+                       BCSLinkItemPersistentStore, BCSLocaleHelper, BCSMeasurement, 
+                       BCSMeasurementFactory, BCSMegashardPrefetchMetric, BCSMetric, 
+                       BCSMetricFactory, BCSOpenHours, BCSOperationGroupFactory, 
+                       BCSPersistentBusinessItemObject, BCSPersistentStore, BCSPhoneNumberFormatter, 
+                       BCSPhoneNumberNormalizer, BCSQueryChopper, BCSQueryOperationFactory, 
+                       BCSRemoteFetch, BCSRemoteFetchCloudKit, BCSShardIdentifier, 
+                       BCSShardItem, BCSShardItemPersistentStore, BCSShardResolutionMetric, 
+                       BCSShardResolver, BCSTimingMeasurement, BCSURLNormalizer, 
+                       BCSUserDefaults, BCSVisibilityItem ]
+...
